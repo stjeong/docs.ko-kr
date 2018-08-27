@@ -3,16 +3,16 @@ title: '샘플 XML 파일: 네임스페이스의 Customers 및 Orders2'
 ms.date: 07/20/2015
 ms.assetid: 2da1c474-f658-4dca-a457-c35ef5ba4aff
 ms.openlocfilehash: 53ad3633361772dc4a9be337df7ae2e1b8a60a5a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337212"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42929718"
 ---
-# <a name="sample-xml-file-customers-and-orders-in-a-namespace"></a><span data-ttu-id="58fa6-102">샘플 XML 파일: 네임스페이스의 Customers 및 Orders</span><span class="sxs-lookup"><span data-stu-id="58fa6-102">Sample XML File: Customers and Orders in a Namespace</span></span>
-<span data-ttu-id="58fa6-103">다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="58fa6-103">The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.</span></span> <span data-ttu-id="58fa6-104">이 파일에는 고객과 주문이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="58fa6-104">This file contains customers and orders.</span></span> <span data-ttu-id="58fa6-105">XML은 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="58fa6-105">The XML is in a namespace.</span></span>  
+# <a name="sample-xml-file-customers-and-orders-in-a-namespace"></a><span data-ttu-id="da1e7-102">샘플 XML 파일: 네임스페이스의 Customers 및 Orders</span><span class="sxs-lookup"><span data-stu-id="da1e7-102">Sample XML File: Customers and Orders in a Namespace</span></span>
+<span data-ttu-id="da1e7-103">다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="da1e7-103">The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.</span></span> <span data-ttu-id="da1e7-104">이 파일에는 고객과 주문이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da1e7-104">This file contains customers and orders.</span></span> <span data-ttu-id="da1e7-105">XML은 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="da1e7-105">The XML is in a namespace.</span></span>  
   
-## <a name="customersordersinnamespacexml"></a><span data-ttu-id="58fa6-106">CustomersOrdersInNamespace.xml</span><span class="sxs-lookup"><span data-stu-id="58fa6-106">CustomersOrdersInNamespace.xml</span></span>  
+## <a name="customersordersinnamespacexml"></a><span data-ttu-id="da1e7-106">CustomersOrdersInNamespace.xml</span><span class="sxs-lookup"><span data-stu-id="da1e7-106">CustomersOrdersInNamespace.xml</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -430,5 +430,5 @@ ms.locfileid: "33337212"
 </Root>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="58fa6-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="58fa6-107">See Also</span></span>  
- [<span data-ttu-id="58fa6-108">샘플 XML 문서(LINQ to XML)</span><span class="sxs-lookup"><span data-stu-id="58fa6-108">Sample XML Documents (LINQ to XML)</span></span>](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+## <a name="see-also"></a><span data-ttu-id="da1e7-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="da1e7-107">See Also</span></span>  
+ [<span data-ttu-id="da1e7-108">샘플 XML 문서(LINQ to XML)</span><span class="sxs-lookup"><span data-stu-id="da1e7-108">Sample XML Documents (LINQ to XML)</span></span>](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
