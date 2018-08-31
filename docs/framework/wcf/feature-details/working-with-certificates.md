@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: 62bf3ce4bc7a0ff8109ec34fba77dd854c7679b8
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: f56445e9bdd030d591f9fc6300f9a24d330dbc20
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34697120"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43257372"
 ---
 # <a name="working-with-certificates"></a>인증서 작업
 WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반적으로 X.509 디지털 인증서를 사용하여 클라이언트 및 서버를 인증하고, 암호화하고, 메시지에 디지털 서명합니다. 이 항목에서는 X.509 디지털 인증서 기능과 WCF에서 인증서 기능을 사용하는 방법을 간략하게 설명하며, 이러한 개념을 자세히 설명하거나 WCF 및 인증서를 사용하여 일반 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.  
@@ -102,9 +102,9 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
  인증서에 대한 일반적인 질문은 사용할 인증서와 그 이유에 대한 것입니다. 대답은 클라이언트를 프로그래밍하는지 서비스를 프로그래밍하는지에 따라 달라집니다. 다음 정보에서는 일반적인 지침을 제공하며 이러한 질문에 대한 세부적인 대답은 아닙니다.  
   
 ### <a name="service-certificates"></a>서비스 인증서  
- 서비스 인증서의 주요 작업은 클라이언트에 서버를 인증하는 것입니다. 클라이언트에서 서버를 인증할 때 초기 검사 중 하나는 **주체** 필드의 값을 서비스를 연결하는 데 사용된 URI(Uniform Resource Identifier)와 비교하는 것입니다. 두 항목의 DNS가 일치해야 합니다. 예를 들어, 서비스의 URI가 “http://www.contoso.com/endpoint/”이면 **주체** 필드에도 “www.contoso.com” 값이 포함되어 있어야 합니다.  
+ 서비스 인증서의 주요 작업은 클라이언트에 서버를 인증하는 것입니다. 클라이언트에서 서버를 인증할 때 초기 검사 중 하나는 **주체** 필드의 값을 서비스를 연결하는 데 사용된 URI(Uniform Resource Identifier)와 비교하는 것입니다. 두 항목의 DNS가 일치해야 합니다. 예를 들어, 서비스의 URI가 `http://www.contoso.com/endpoint/` 해당 **주체** 필드의 값이 있어야도 `www.contoso.com`합니다.  
   
- 필드는 값을 나타내는 이니셜 접두사가 붙은 여러 값을 포함할 수 있습니다. 가장 일반적으로 이니셜 "CN"은 common name(일반 이름)을 나타냅니다(예: "CN = www.contoso.com"). **주체** 필드를 비워둘 수도 있습니다. 이 경우 **주체 대체 이름** 필드는 **DNS 이름** 값을 포함할 수 있습니다.  
+ 필드는 값을 나타내는 이니셜 접두사가 붙은 여러 값을 포함할 수 있습니다. 가장 일반적으로 이니셜은 "CN" 일반 이름에 대 한 예를 들어 `CN = www.contoso.com`합니다. **주체** 필드를 비워둘 수도 있습니다. 이 경우 **주체 대체 이름** 필드는 **DNS 이름** 값을 포함할 수 있습니다.  
   
  또한 인증서의 **용도** 필드 값은 “서버 인증” 또는 “클라이언트 인증”과 같은 적절한 값을 포함해야 합니다.  
   
