@@ -17,18 +17,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: d1cc754fcf7d1defa815bb0a74b7c2b4a6909478
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999395"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43255286"
 ---
-# <a name="getmethodorigin-function"></a><span data-ttu-id="4d0da-103">GetMethodOrigin 함수</span><span class="sxs-lookup"><span data-stu-id="4d0da-103">GetMethodOrigin function</span></span>
-<span data-ttu-id="4d0da-104">메서드 선언 되는 클래스를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-104">Determines the class in which a method is declared.</span></span>
+# <a name="getmethodorigin-function"></a><span data-ttu-id="7e3a9-103">GetMethodOrigin 함수</span><span class="sxs-lookup"><span data-stu-id="7e3a9-103">GetMethodOrigin function</span></span>
+<span data-ttu-id="7e3a9-104">메서드 선언 되는 클래스를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-104">Determines the class in which a method is declared.</span></span>
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
-## <a name="syntax"></a><span data-ttu-id="4d0da-105">구문</span><span class="sxs-lookup"><span data-stu-id="4d0da-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7e3a9-105">구문</span><span class="sxs-lookup"><span data-stu-id="7e3a9-105">Syntax</span></span>  
   
 ```  
 HRESULT GetMethodOrigin (
@@ -39,44 +39,44 @@ HRESULT GetMethodOrigin (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="4d0da-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="4d0da-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7e3a9-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="7e3a9-106">Parameters</span></span>
 
 `vFunc`  
-<span data-ttu-id="4d0da-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-107">[in] This parameter is unused.</span></span>
+<span data-ttu-id="7e3a9-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-107">[in] This parameter is unused.</span></span>
 
 `ptr`  
-<span data-ttu-id="4d0da-108">[in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="4d0da-108">[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.</span></span>
+<span data-ttu-id="7e3a9-108">[in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-108">[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.</span></span>
 
 `wszMethodName`  
-<span data-ttu-id="4d0da-109">[in] 소유 하는 클래스를 요청 하는 개체에 대 한 메서드의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-109">[in] The name of the method for the object whose owning class is being requested.</span></span> 
+<span data-ttu-id="7e3a9-109">[in] 소유 하는 클래스를 요청 하는 개체에 대 한 메서드의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-109">[in] The name of the method for the object whose owning class is being requested.</span></span> 
 
 `pstrClassName`  
-<span data-ttu-id="4d0da-110">[out] 메서드를 소유 하는 클래스의 이름을 받습니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-110">[out] Receives the name of the class that owns the method.</span></span>
+<span data-ttu-id="7e3a9-110">[out] 메서드를 소유 하는 클래스의 이름을 받습니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-110">[out] Receives the name of the class that owns the method.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="4d0da-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="4d0da-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7e3a9-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="7e3a9-111">Return value</span></span>
 
-<span data-ttu-id="4d0da-112">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="4d0da-112">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
+<span data-ttu-id="7e3a9-112">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="7e3a9-112">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
 
-|<span data-ttu-id="4d0da-113">상수</span><span class="sxs-lookup"><span data-stu-id="4d0da-113">Constant</span></span>  |<span data-ttu-id="4d0da-114">값</span><span class="sxs-lookup"><span data-stu-id="4d0da-114">Value</span></span>  |<span data-ttu-id="4d0da-115">설명</span><span class="sxs-lookup"><span data-stu-id="4d0da-115">Description</span></span>  |
+|<span data-ttu-id="7e3a9-113">상수</span><span class="sxs-lookup"><span data-stu-id="7e3a9-113">Constant</span></span>  |<span data-ttu-id="7e3a9-114">값</span><span class="sxs-lookup"><span data-stu-id="7e3a9-114">Value</span></span>  |<span data-ttu-id="7e3a9-115">설명</span><span class="sxs-lookup"><span data-stu-id="7e3a9-115">Description</span></span>  |
 |---------|---------|---------|
-|`WBEM_E_NOT_FOUND` | <span data-ttu-id="4d0da-116">0x80041002</span><span class="sxs-lookup"><span data-stu-id="4d0da-116">0x80041002</span></span> | <span data-ttu-id="4d0da-117">지정된 된 메서드를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-117">The specified method was not found.</span></span> |
-|`WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="4d0da-118">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="4d0da-118">0x80041008</span></span> | <span data-ttu-id="4d0da-119">하나 이상의 매개 변수가 올바르지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-119">One or more parameters are not valid.</span></span> |
-|`WBEM_S_NO_ERROR` | <span data-ttu-id="4d0da-120">0</span><span class="sxs-lookup"><span data-stu-id="4d0da-120">0</span></span> | <span data-ttu-id="4d0da-121">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-121">The function call was successful.</span></span>  |
+|`WBEM_E_NOT_FOUND` | <span data-ttu-id="7e3a9-116">0x80041002</span><span class="sxs-lookup"><span data-stu-id="7e3a9-116">0x80041002</span></span> | <span data-ttu-id="7e3a9-117">지정된 된 메서드를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-117">The specified method was not found.</span></span> |
+|`WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="7e3a9-118">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="7e3a9-118">0x80041008</span></span> | <span data-ttu-id="7e3a9-119">하나 이상의 매개 변수가 올바르지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-119">One or more parameters are not valid.</span></span> |
+|`WBEM_S_NO_ERROR` | <span data-ttu-id="7e3a9-120">0</span><span class="sxs-lookup"><span data-stu-id="7e3a9-120">0</span></span> | <span data-ttu-id="7e3a9-121">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-121">The function call was successful.</span></span>  |
   
-## <a name="remarks"></a><span data-ttu-id="4d0da-122">설명</span><span class="sxs-lookup"><span data-stu-id="4d0da-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7e3a9-122">설명</span><span class="sxs-lookup"><span data-stu-id="7e3a9-122">Remarks</span></span>
 
-<span data-ttu-id="4d0da-123">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::GetMethodOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) 메서드.</span><span class="sxs-lookup"><span data-stu-id="4d0da-123">This function wraps a call to the [IWbemClassObject::GetMethodOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) method.</span></span>
+<span data-ttu-id="7e3a9-123">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::GetMethodOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) 메서드.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-123">This function wraps a call to the [IWbemClassObject::GetMethodOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) method.</span></span>
 
-<span data-ttu-id="4d0da-124">클래스는 하나 이상의 기본 클래스에서 메서드를 상속할 수 있습니다, 되므로 개발자는 종종 지정된 된 메서드에 정의 되어 있는 클래스를 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-124">Because a class can inherit methods from one or more base classes, developers often want to determine the class in which a given method is defined.</span></span>
+<span data-ttu-id="7e3a9-124">클래스는 하나 이상의 기본 클래스에서 메서드를 상속할 수 있습니다, 되므로 개발자는 종종 지정된 된 메서드에 정의 되어 있는 클래스를 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-124">Because a class can inherit methods from one or more base classes, developers often want to determine the class in which a given method is defined.</span></span>
 
-<span data-ttu-id="4d0da-125">`pstrClassName` 유효한 매개 변수를 가리키지 해야 `BSTR` 이기 때문에 함수를 호출 하기 전에 `out` 매개 변수;이 함수에서 반환 된 후 포인터 할당이 해제 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4d0da-125">The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.</span></span>
+<span data-ttu-id="7e3a9-125">`pstrClassName` 유효한 매개 변수를 가리키지 해야 `BSTR` 이기 때문에 함수를 호출 하기 전에 `out` 매개 변수;이 함수에서 반환 된 후 포인터 할당이 해제 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-125">The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="4d0da-126">요구 사항</span><span class="sxs-lookup"><span data-stu-id="4d0da-126">Requirements</span></span>  
-<span data-ttu-id="4d0da-127">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="4d0da-127">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="7e3a9-126">요구 사항</span><span class="sxs-lookup"><span data-stu-id="7e3a9-126">Requirements</span></span>  
+<span data-ttu-id="7e3a9-127">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="7e3a9-127">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4d0da-128">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="4d0da-128">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="7e3a9-128">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="7e3a9-128">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="4d0da-129">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="4d0da-129">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="7e3a9-129">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="7e3a9-129">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4d0da-130">참고자료</span><span class="sxs-lookup"><span data-stu-id="4d0da-130">See also</span></span>  
-[<span data-ttu-id="4d0da-131">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="4d0da-131">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="7e3a9-130">참고자료</span><span class="sxs-lookup"><span data-stu-id="7e3a9-130">See also</span></span>  
+[<span data-ttu-id="7e3a9-131">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="7e3a9-131">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
