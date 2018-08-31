@@ -6,24 +6,24 @@ helpviewer_keywords:
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c9b7508c6e751f83fdc16a700ad68aa7de36e497
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 04e7368a6b6a4453f2dd07c7afdc0bffa7473ed1
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33285137"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42929680"
 ---
 # <a name="using-static-directive-c-reference"></a>using 정적 지시문(C# 참조)
 
-`using static` 지시문은 형식 이름을 지정하지 않고 정적 멤버에 액세스할 수 있는 형식을 지정합니다. 사용되는 구문은 다음과 같습니다.
+`using static` 지시문은 형식 이름을 지정하지 않고 정적 멤버 및 중첩 형식에 액세스할 수 있는 형식을 지정합니다. 사용되는 구문은 다음과 같습니다.
 
 ```csharp
-using static <fully-qualified-type-name>
+using static <fully-qualified-type-name>;
 ```
 
-여기서 *fully-qualified-type-name*은 형식 이름을 지정하지 않고 정적 멤버를 참조할 수 있는 형식의 이름입니다. 정규화된 형식 이름(전체 네임스페이스 및 형식 이름)을 제공하지 않으면 C#은 컴파일러 오류 CS0246, "'<type-name>' 형식 또는 네임스페이스 이름을 찾을 수 없습니다."를 생성합니다.
+여기서 *fully-qualified-type-name*은 형식 이름을 지정하지 않고 정적 멤버 및 중첩 형식을 참조할 수 있는 형식의 이름입니다. 정규화된 형식 이름(전체 네임스페이스 및 형식 이름)을 제공하지 않으면 C#은 컴파일러 오류 [CS0246](../compiler-messages/cs0246.md), "'type/namespace' 형식 또는 네임스페이스 이름을 찾을 수 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인합니다."를 생성합니다.
 
-`using static` 지시문은 정적 멤버가 있는 모든 형식에 적용됩니다(인스턴스 멤버가 있는 경우에도). 그러나 인스턴스 멤버는 형식 인스턴스를 통해서만 호출할 수 있습니다.
+`using static` 지시문은 정적 멤버(또는 중첩 형식)가 있는 모든 형식에 적용됩니다(인스턴스 멤버가 있는 경우에도). 그러나 인스턴스 멤버는 형식 인스턴스를 통해서만 호출할 수 있습니다.
 
 `using static` 지시문은 C# 6에서 도입되었습니다.
 
@@ -53,9 +53,9 @@ using static <fully-qualified-type-name>
 
 ## <a name="see-also"></a>참고 항목
 
-[using 지시문](using-directive.md)   
-[C# 참조](../../../csharp/language-reference/index.md)   
-[C# 키워드](../../../csharp/language-reference/keywords/index.md)   
-[네임스페이스 사용](../../../csharp/programming-guide/namespaces/using-namespaces.md)   
-[네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)   
-[네임스페이스](../../../csharp/programming-guide/namespaces/index.md)   
+- [using 지시문](using-directive.md)
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [네임스페이스 사용](../../../csharp/programming-guide/namespaces/using-namespaces.md)
+- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)

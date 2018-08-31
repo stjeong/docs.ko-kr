@@ -3,12 +3,12 @@ title: 값 형식과 참조 의미 체계
 description: 구조 복사를 안전하게 최소화하는 언어 기능 이해
 ms.date: 11/10/2017
 ms.custom: mvc
-ms.openlocfilehash: 0646a7fbc01ed76883fb6b16ce04006049ef054a
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: f241219994d7a03192a4aea69b912bf1ac5ed29c
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34566282"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42930651"
 ---
 # <a name="reference-semantics-with-value-types"></a>값 형식과 참조 의미 체계
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 27d97d38c903cbb33097db0e109758d98527e00f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 14c046094db52f2db55bb095839d354c7e6c691e
+ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591939"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42912044"
 ---
 # <a name="chaining-tasks-by-using-continuation-tasks"></a>연속 작업을 사용하여 작업 연결
 비동기 프로그래밍에서는 한 비동기 작업이 완료 시 두 번째 작업을 호출하고 해당 작업에 데이터를 전달하는 것이 일반적입니다. 일반적으로 이 작업은 콜백 메서드를 통해 수행되었습니다. 작업 병렬 라이브러리에서는 *연속 작업*이 동일한 기능을 제공합니다. 연속 작업(연속이라고도 함)은 선행 작업이 완료될 때 다른 작업( *선행*이라고 함)이 호출하는 비동기 작업입니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "33591939"
  연속 작업 자체는 <xref:System.Threading.Tasks.Task> 이며 작업이 시작된 스레드를 차단하지 않습니다. 연속 작업이 완료될 때까지 차단하려면 <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> 메서드를 호출합니다.  
   
 ## <a name="creating-a-continuation-for-a-single-antecedent"></a>단일 선행 작업에 대한 연속 작업 만들기  
- <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> 메서드를 호출하여 선행 작업이 완료되었을 때 실행되는 연속 작업을 만듭니다. 다음 예제에서는 기본 패턴을 보여 줍니다(이해하기 쉽도록 예외 처리는 생략됨). 현재 요일의 이름을 나타내는 `taskA`개체를 반환하는 선행 작업 <xref:System.DayOfWeek> 를 실행합니다. 선행 작업이 완료되면 연속 작업 `taskB`에 선행 작업이 전달되고 해당 결과를 포함하는 문자열을 표시합니다.  
+ <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> 메서드를 호출하여 선행 작업이 완료되었을 때 실행되는 연속 작업을 만듭니다. 다음 예제에서는 기본 패턴을 보여줍니다(이해하기 쉽도록 예외 처리는 생략됨). 현재 요일의 이름을 나타내는 `taskA`개체를 반환하는 선행 작업 <xref:System.DayOfWeek> 를 실행합니다. 선행 작업이 완료되면 연속 작업 `continuation`에 선행 작업이 전달되고 해당 결과를 포함하는 문자열을 표시합니다.  
   
  [!code-csharp[TPL_Continuations#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/simple1.cs#1)]
  [!code-vb[TPL_Continuations#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/simple1.vb#1)]  

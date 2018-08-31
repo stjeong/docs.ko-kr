@@ -4,12 +4,12 @@ description: .NET에서 서버 앱을 구축할 때 고려해야 할 .NET 구현
 author: cartermp
 ms.author: mairaw
 ms.date: 06/19/2018
-ms.openlocfilehash: a9eaeae515041ee1d99ede5b004ecc85e453de2d
-ms.sourcegitcommit: 640cee8fc5d256cdd80e5b80240469feac10499e
+ms.openlocfilehash: 541bcdf69d658fd37271169c028fb64611a35655
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298190"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42934535"
 ---
 # <a name="choosing-between-net-core-and-net-framework-for-server-apps"></a>서버 앱에 대해 .NET Core와 .NET Framework 중에 선택
 
@@ -102,8 +102,8 @@ Docker 컨테이너는 고유한 Linux 또는 Windows 인프라나 [Azure Contai
 일부 Microsoft 또는 타사 플랫폼에서는 .NET Core를 지원하지 않습니다. 예를 들어 Service Fabric Stateful Reliable Services 및 Service Fabric Reliable Actors와 같은 일부 Azure Services에는 .NET Framework가 필요합니다. 일부 다른 서비스에서는 .NET Core에서 사용할 수 없는 SDK를 제공합니다. 현재 Azure Services는 모두 .NET Core를 사용하므로 이 상황은 전환되고 있습니다. 그 동안에는 클라이언트 SDK 대신 상응하는 REST API를 항상 사용할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
- [ASP.NET 및 ASP.NET Core 중에서 선택](/aspnet/core/choose-aspnet-framework)  
- [.NET Core 가이드](../core/index.md)  
+
+ [ASP.NET 및 ASP.NET Core 중에서 선택](/aspnet/core/choose-aspnet-framework) [대상 프레임워크](frameworks.md) [.NET Core 가이드](../core/index.md)  
  [.NET Framework에서 .NET Core로 이식](../core/porting/index.md)  
  [Docker 가이드의 .NET Framework](../framework/docker/index.md)  
  [.NET 구성 요소 개요](components.md)  

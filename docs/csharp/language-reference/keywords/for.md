@@ -1,5 +1,5 @@
 ---
-title: for(C# 참조)
+title: C# for 문
 ms.date: 06/13/2018
 f1_keywords:
 - for
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - for keyword [C#]
 ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
-ms.openlocfilehash: beac7727c8ce83d8ea20f0fc578f80ceef3053e7
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: c6ef926d6fb2c79b7b7f71c3b24b86a7ab057c88
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36208007"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42930952"
 ---
 # <a name="for-c-reference"></a>for(C# 참조)
 
 `for` 문은 지정된 부울 식이 `true`로 평가되는 동안 명령문 또는 명령문 블록을 실행합니다.
 
 `for` 문 블록 내 원하는 지점에서 [break](break.md) 문을 사용하여 루프를 중단하거나 [continue](continue.md) 문을 사용하여 루프의 다음 반복을 한 단계 실행할 수 있습니다. [goto](goto.md), [return](return.md) 또는 [throw](throw.md) 문으로 `for` 루프를 종료할 수도 있습니다.
-  
+
 ## <a name="structure-of-the-for-statement"></a>`for` 문의 구조
 
 `for` 문은 *initializer*, *condition* 및 *iterator* 섹션을 정의합니다.
-  
+
 ```csharp
-for (initializer; condition; iterator)  
-    body  
+for (initializer; condition; iterator)
+    body
 ```
 
 세 개의 섹션은 모두 선택 사항입니다. 루프의 본문은 명령문 또는 명령문 블록입니다.
@@ -45,11 +45,11 @@ for (initializer; condition; iterator)
 
   - [assignment](../operators/assignment-operator.md) 문
 
-  - 메서드 호출  
+  - 메서드 호출
 
-  - 접두사 또는 후위 [increment](../operators/increment-operator.md) 식(예: `++i` 또는`i++`)  
+  - 접두사 또는 후위 [increment](../operators/increment-operator.md) 식(예: `++i` 또는`i++`)
 
-  - 접두사 또는 후위 [decrement](../operators/decrement-operator.md) 식(예: `--i` 또는`i--`)  
+  - 접두사 또는 후위 [decrement](../operators/decrement-operator.md) 식(예: `--i` 또는`i--`)
 
   - [new](new-operator.md) 키워드를 사용하여 개체 만들기
 
@@ -73,15 +73,15 @@ i < 5
 
 ### <a name="the-iterator-section"></a>*iterator* 섹션
 
-*iterator* 섹션은 루프의 본문을 반복할 때마다 수행되는 작업을 정의합니다. *iterator* 섹션에는 쉼표로 구분된 다음 명령문 식이 0개 이상 포함됩니다.  
+*iterator* 섹션은 루프의 본문을 반복할 때마다 수행되는 작업을 정의합니다. *iterator* 섹션에는 쉼표로 구분된 다음 명령문 식이 0개 이상 포함됩니다.
 
 - [assignment](../operators/assignment-operator.md) 문
 
-- 메서드 호출  
+- 메서드 호출
 
-- 접두사 또는 후위 [increment](../operators/increment-operator.md) 식(예: `++i` 또는`i++`)  
+- 접두사 또는 후위 [increment](../operators/increment-operator.md) 식(예: `++i` 또는`i++`)
 
-- 접두사 또는 후위 [decrement](../operators/decrement-operator.md) 식(예: `--i` 또는`i--`)  
+- 접두사 또는 후위 [decrement](../operators/decrement-operator.md) 식(예: `--i` 또는`i--`)
 
 - [new](new-operator.md) 키워드를 사용하여 개체 만들기
 
@@ -96,23 +96,23 @@ i++
 ## <a name="examples"></a>예제
 
 다음 예제에서는 *initializer* 섹션에서 외부 루프 변수에 값 할당, *initializer* 및 *iterator* 섹션에서 메서드 호출, *iterator* 섹션에서 두 변수의 값 변경과 같이 `for` 문 섹션의 여러 가지 덜 일반적인 사용법을 보여 줍니다. **Run**을 선택하여 예제 코드를 실행합니다. 그런 다음, 코드를 수정하고 다시 실행할 수 있습니다.
-  
+
 [!code-csharp-interactive[not typical for loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#6)]
-  
+
 다음 예제에서는 무한 `for` 루프를 정의합니다.
-  
+
 [!code-csharp[infinite for loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#7)]
-  
-## <a name="c-language-specification"></a>C# 언어 사양  
+
+## <a name="c-language-specification"></a>C# 언어 사양
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-  
+
 ## <a name="see-also"></a>참고 항목
 
-[for 문(C# 언어 사양)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)  
-[C# 참조](../index.md)  
-[C# 프로그래밍 가이드](../../programming-guide/index.md)  
-[C# 키워드](index.md)  
-[foreach, in](foreach-in.md)  
-[for 문(C++)](/cpp/cpp/for-statement-cpp)  
-[반복 문](iteration-statements.md)
+- [for 문(C# 언어 사양)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 키워드](index.md)
+- [foreach, in](foreach-in.md)
+- [for 문(C++)](/cpp/cpp/for-statement-cpp)
+- [반복 문](iteration-statements.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - float keyword [C#]
 - floating-point numbers [C#], float keyword
 ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
-ms.openlocfilehash: 9500aceed62904e68d6b7ee8bec569d12103bb18
-ms.sourcegitcommit: f9e38d31288fe5962e6be5b0cc286da633482873
+ms.openlocfilehash: 98f89ba3d79f7679b69ce10fd875b3caf69c5257
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37028242"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42932912"
 ---
 # <a name="float-c-reference"></a>float(C# 참조)
 
@@ -21,7 +21,7 @@ ms.locfileid: "37028242"
 
 |형식|근사 범위|전체 자릿수|.NET 형식|  
 |----------|-----------------------|---------------|-------------------------|  
-|`float`|-3.4 × 10<sup>38</sup> to +3.4 × 10<sup>38</sup>|7개의 자릿수|<xref:System.Single?displayProperty=nameWithType>|  
+|`float`|±1.5 x 10<sup>−45</sup> ~ ±3.4 x 10<sup>38</sup>|7개의 자릿수|<xref:System.Single?displayProperty=nameWithType>|  
 
 ## <a name="literals"></a>리터럴
 
@@ -37,9 +37,9 @@ float x = 3.5F;
 
 식에서 숫자 정수 형식과 부동 소수점 형식을 함께 사용할 수 있습니다. 이 경우 정수 형식이 부동 소수점 형식으로 변환됩니다. 식의 계산은 다음 규칙에 따라 수행됩니다.
 
-- 부동 소수점 형식 중 하나가 [double](double.md)이면 식은 [double](double.md) 또는 [bool](bool.md)(관계형 식이나 부울 식의 경우)로 계산됩니다.
+- 부동 소수점 형식 중 하나가 [double](double.md)이면 식은 같음에 대한 관계형 비교 또는 비교에서 [double](double.md) 또는 [bool](bool.md)로 계산됩니다.
 
-- 식에 [double](double.md) 형식이 없으면 `float` 또는 [bool](bool.md)(관계형 식이나 부울 식의 경우)로 계산됩니다.
+- 식에 [double](double.md) 형식이 없는 경우 식은 같음에 대한 관계형 비교 또는 비교에서 `float` 또는 [bool](bool.md)로 계산됩니다.
 
 부동 소수점 식에는 다음과 같은 값 집합이 포함될 수 있습니다.
 
@@ -65,12 +65,12 @@ float x = 3.5F;
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Single>  
-[C# 참조](../index.md)  
-[C# 프로그래밍 가이드](../../programming-guide/index.md)  
-[캐스팅 및 형식 변환](../../programming-guide/types/casting-and-type-conversions.md)  
-[C# 키워드](index.md)  
-[정수 계열 형식 표](integral-types-table.md)  
-[기본 제공 형식 표](built-in-types-table.md)  
-[암시적 숫자 변환 표](implicit-numeric-conversions-table.md)  
-[명시적 숫자 변환 표](explicit-numeric-conversions-table.md)  
+- <xref:System.Single>  
+- [C# 참조](../index.md)  
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
+- [캐스팅 및 형식 변환](../../programming-guide/types/casting-and-type-conversions.md)  
+- [C# 키워드](index.md)  
+- [정수 계열 형식 표](integral-types-table.md)  
+- [기본 제공 형식 표](built-in-types-table.md)  
+- [암시적 숫자 변환 표](implicit-numeric-conversions-table.md)  
+- [명시적 숫자 변환 표](explicit-numeric-conversions-table.md)  

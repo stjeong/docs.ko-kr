@@ -5,12 +5,12 @@ ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: f163de89a3edbf3a4ca8509fdecd10f1aa1adf1b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bdeb0e92dca723b64ee82b70f58fe910fd0c2edb
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396794"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42931052"
 ---
 # <a name="certificate-selection-and-validation"></a>인증서 선택 및 유효성 검사
 <xref:System.Net> 클래스는 SSL(Secure Sockets Layer) 연결에 대한 <xref:System.Security.Cryptography.X509Certificates>를 선택하고 유효성을 검사하는 여러 가지 방법을 지원합니다. 클라이언트는 서버에 인증하기 위해 하나 이상의 인증서를 선택할 수 있습니다. 서버는 인증을 위해 클라이언트 인증서에 하나 이상의 특정 특성이 있도록 요구할 수 있습니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "33396794"
   
  *Winhttpcertcfg.exe* 도구는 클라이언트 인증서를 구성하는 데 사용할 수 있습니다. *Winhttpcertcfg.exe* 도구는 Windows Server 2003 Resource Kit의 도구 중 하나로 제공됩니다. www.microsoft.com에서 Windows Server 2003 Resource Kit 도구의 일부로 다운로드할 수도 있습니다.  
   
- *HttpCfg.exe* 도구는 <xref:System.Net.HttpListener> 클래스에 대한 서버 인증서를 구성하는 데 사용할 수 있습니다. *HttpCfg.exe* 도구는 Windows Server 2003 및 Windows XP 서비스 팩 2 지원 도구 중 하나로 제공됩니다. *HttpCfg.exe* 및 기타 지원 도구는 Windows Server 2003 또는 Windows XP에 기본적으로 설치되지 않습니다. Windows Server 2003. 지원 도구는 Windows Server 2003 CD-ROM에 있는 다음 폴더와 파일을 통해 별도로 설치됩니다.  
+*HttpCfg.exe* 도구는 <xref:System.Net.HttpListener> 클래스에 대한 서버 인증서를 구성하는 데 사용할 수 있습니다. *HttpCfg.exe* 도구는 Windows Server 2003 및 Windows XP 서비스 팩 2 지원 도구 중 하나로 제공됩니다. *HttpCfg.exe* 및 기타 지원 도구는 Windows Server 2003 또는 Windows XP에 기본적으로 설치되지 않습니다. Windows Server 2003. 지원 도구는 Windows Server 2003 CD-ROM에 있는 다음 폴더와 파일을 통해 별도로 설치됩니다.  
   
  \Support\Tools\Suptools.msi  
   

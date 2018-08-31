@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
 manager: douge
-ms.openlocfilehash: c33b8badcacd4e228d70f8e770d4bf27144c29eb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 73f61ee3358edf50c11ae10ee53650c66b1c1400
+ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33520515"
+ms.lasthandoff: 08/25/2018
+ms.locfileid: "42925804"
 ---
 # <a name="walkthrough-creating-a-windows-service-application-in-the-component-designer"></a>연습: 구성 요소 디자이너에서 Windows 서비스 응용 프로그램 만들기
 이 문서에서는 이벤트 로그에 메시지를 쓰는 간단한 Windows 서비스 응용 프로그램을 Visual Studio에서 만드는 방법을 보여 줍니다. 서비스를 만들고 사용하기 위해 수행하는 기본적인 단계는 다음과 같습니다.  
@@ -161,7 +161,7 @@ ms.locfileid: "33520515"
   
 <a name="BK_SetStatus"></a>   
 ## <a name="setting-service-status"></a>서비스 상태 설정  
- 서비스는 서비스 제어 관리자에 상태를 보고합니다. 따라서 사용자는 서비스가 정상적으로 작동 중인지를 확인할 수 있습니다. 기본적으로 <xref:System.ServiceProcess.ServiceBase> 에서 상속되는 서비스는 중지됨, 일시 중지됨, 실행 중 등의 제한적인 상태 설정 집합을 보고합니다. 서비스를 시작하는 데 시간이 다소 걸리는 경우에는 시작 보류 중 상태를 보고하면 도움이 될 수 있습니다. 또한 Windows [SetServiceStatus 함수](http://msdn.microsoft.com/library/windows/desktop/ms686241.aspx)를 호출하는 코드를 추가하여 시작 보류 중 및 중지 보류 중 상태 설정을 구현할 수도 있습니다.  
+ 서비스는 서비스 제어 관리자에 상태를 보고합니다. 따라서 사용자는 서비스가 정상적으로 작동 중인지를 확인할 수 있습니다. 기본적으로 <xref:System.ServiceProcess.ServiceBase> 에서 상속되는 서비스는 중지됨, 일시 중지됨, 실행 중 등의 제한적인 상태 설정 집합을 보고합니다. 서비스를 시작하는 데 시간이 다소 걸리는 경우에는 시작 보류 중 상태를 보고하면 도움이 될 수 있습니다. 또한 Windows [SetServiceStatus 함수](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus)를 호출하는 코드를 추가하여 시작 보류 중 및 중지 보류 중 상태 설정을 구현할 수도 있습니다.  
   
 #### <a name="to-implement-service-pending-status"></a>서비스 보류 중 상태를 구현하려면  
   
@@ -225,7 +225,7 @@ ms.locfileid: "33520515"
     End Structure  
     ```  
   
-3.  이제 `MyNewService` 클래스에서 플랫폼 호출을 사용하여 [SetServiceStatus 함수](http://msdn.microsoft.com/library/windows/desktop/ms686241.aspx) 를 선언합니다.  
+3.  이제 `MyNewService` 클래스에서 플랫폼 호출을 사용하여 [SetServiceStatus 함수](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus)를 선언합니다.  
   
     ```csharp  
     [DllImport("advapi32.dll", SetLastError=true)]  
@@ -271,7 +271,7 @@ ms.locfileid: "33520515"
 6.  (선택 사항) <xref:System.ServiceProcess.ServiceBase.OnStop%2A> 메서드에 대해 이 절차를 반복합니다.  
   
 > [!CAUTION]
->  서비스의 작업이 시작되고 나면 [서비스 제어 관리자](http://msdn.microsoft.com/library/windows/desktop/ms685150.aspx) 는 `dwWaitHint` 프로시저의 `dwCheckpoint` 및 [dwCheckpoint](http://msdn.microsoft.com/library/windows/desktop/ms685996.aspx) 멤버를 사용하여 Windows 서비스가 종료될 때까지 기다릴 시간을 결정합니다. <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 및 <xref:System.ServiceProcess.ServiceBase.OnStop%2A> 메서드가 오랫동안 실행되는 경우 서비스는 증분된 `dwCheckPoint` 값을 포함하여 [SetServiceStatus](http://msdn.microsoft.com/library/windows/desktop/ms686241.aspx)를 다시 호출하여 시간을 더 요청할 수 있습니다.  
+>  [서비스 제어 관리자](/windows/desktop/Services/service-control-manager)는 [SERVICE_STATUS 구조체](/windows/desktop/api/winsvc/ns-winsvc-_service_status)의 `dwWaitHint` 및 `dwCheckpoint` 멤버를 사용하여 Windows 서비스가 시작 또는 종료될 때까지 기다릴 시간을 결정합니다. <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 및 <xref:System.ServiceProcess.ServiceBase.OnStop%2A> 메서드가 오랫동안 실행되는 경우 서비스는 증분된 `dwCheckPoint` 값을 포함하여 [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus)를 다시 호출하여 시간을 더 요청할 수 있습니다.  
   
 <a name="BK_AddInstallers"></a>   
 ## <a name="adding-installers-to-the-service"></a>서비스에 설치 관리자 추가  

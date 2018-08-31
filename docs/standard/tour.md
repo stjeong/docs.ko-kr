@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 05/22/2017
 ms.technology: dotnet-standard
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.openlocfilehash: de5ff06e660d3c4e976c10043a7ebc72d102cff5
-ms.sourcegitcommit: c217b067985905cb21eafc5dd9a83568d7ff4e45
+ms.openlocfilehash: f9b4e3d885725afc4181256e02e3b174318e3ece
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36314645"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42931555"
 ---
 # <a name="tour-of-net"></a>.NET 둘러보기
 
@@ -79,7 +79,7 @@ Microsoft는 C#, F# 및 VB(Visual Basic)라는 세 가지 .NET 언어를 적극�
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
-C#, VB 및 F#은 지역 *형식 유추*를 지원합니다. 형식 유추는 컴파일러가 오른쪽에 있는 식에서 왼쪽에 있는 식의 형식을 유추함을 의미합니다. 형식 안전성이 손상되거나 무시되는 것은 아닙니다. 결과 형식은 강력한 형식이며 수반되는 모든 특성을 포함합니다. 이전 예제에서 `dog` 및 `cat`은 형식 유추를 도입하도록 다시 작성하고 나머지는 변경하지 않습니다.
+C#, VB 및 F#은 지역 *형식 유추*를 지원합니다. 형식 유추는 컴파일러가 오른쪽에 있는 식에서 왼쪽에 있는 식의 형식을 유추함을 의미합니다. 형식 안전성이 손상되거나 무시되는 것은 아닙니다. 결과 형식은 강력한 형식이며 수반되는 모든 특성을 포함합니다. 이전 예제에서 `dog`는 형식 유추를 도입하도록 다시 작성하고 나머지는 변경하지 않습니다.
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 

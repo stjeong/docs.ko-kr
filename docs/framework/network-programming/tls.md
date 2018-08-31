@@ -13,12 +13,12 @@ helpviewer_keywords:
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
 author: blowdart
-ms.openlocfilehash: 41814129d038f8cb1ab98db0c7a4e0cbd7e7cd54
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: adde8f3bd387a3e283ae1c3cd69e42b12b443b8c
+ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397262"
+ms.lasthandoff: 08/25/2018
+ms.locfileid: "42925506"
 ---
 # <a name="transport-layer-security-tls-best-practices-with-the-net-framework"></a>.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례
 
@@ -119,7 +119,7 @@ WCF는 .NET Framework의 나머지와 동일한 네트워킹 스택을 사용합
 
 WCF 프레임워크는 프로토콜 버전을 명시적으로 구성하지 않는 한 TLS 1.2까지 사용 가능한 가장 높은 프로토콜을 자동으로 선택합니다. 자세한 내용은 이전 섹션 [인증서 자격 증명과 함께 전송 보안을 사용하는 WCF TCP 전송의 경우](#wcf-tcp-cert)를 참조하세요.
 
-### <a name="for-net-framework-35---451-and-not-wcf"></a>WCF가 아니고 .NET Framework 3.5~4.5.1인 경우
+### <a name="for-net-framework-35---452-and-not-wcf"></a>WCF가 아니고 .NET Framework 3.5~4.5.2인 경우
 
 앱을 .NET Framework 4.7 이상 버전으로 업그레이드하는 것이 좋습니다. 업그레이드할 수 없는 경우에는 다음 단계를 수행합니다. 향후 특정 시점에 .NET Framework 4.7 이상 버전으로 업그레이드할 때까지 응용 프로그램이 작동하지 않을 수 있습니다.
 

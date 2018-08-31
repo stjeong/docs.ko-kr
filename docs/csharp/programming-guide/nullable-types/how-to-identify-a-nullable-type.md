@@ -1,51 +1,39 @@
 ---
-title: '방법: Nullable 형식 식별(C# 프로그래밍 가이드)'
-ms.date: 07/20/2015
+title: '방법: nullable 형식 식별(C# 프로그래밍 가이드)'
+description: 형식이 nullable 형식이거나 인스턴스가 nullable 형식인지 여부를 확인하는 방법 알아보기
+ms.date: 08/06/2018
 helpviewer_keywords:
 - nullable types [C#], identifying
 ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387
-ms.openlocfilehash: f3ac4ebd77fc92a133eb326919d5ba55264ced97
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bb7ab2b8c13c2b8b4b6cd60e7959a391cd7e75c1
+ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333185"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42754958"
 ---
-# <a name="how-to-identify-a-nullable-type-c-programming-guide"></a>방법: Nullable 형식 식별(C# 프로그래밍 가이드)
-C# [typeof](../../../csharp/language-reference/keywords/typeof.md) 연산자를 사용하여 Nullable 형식을 나타내는 <xref:System.Type> 개체를 만들 수 있습니다.  
+# <a name="how-to-identify-a-nullable-type-c-programming-guide"></a>방법: nullable 형식 식별(C# 프로그래밍 가이드)
+
+다음 코드 예제에서는 <xref:System.Type?displayProperty=nameWithType> 인스턴스가 nullable 형식을 나타내는지 여부를 확인하는 방법을 보여줍니다.
+
+[!code-csharp-interactive[whether Type is nullable](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#1)]
+
+예제에서 보여주는 것과 같이 [typeof](../../language-reference/keywords/typeof.md) 연산자를 사용하여 <xref:System.Type?displayProperty=nameWithType> 개체를 만듭니다.  
   
-```  
-System.Type type = typeof(int?);  
-```  
+인스턴스가 있는지 nullable 형식인지 여부를 확인하려는 경우 위의 코드로 테스트되도록 <xref:System.Type> 인스턴스를 가져오는 데 <xref:System.Object.GetType%2A?displayProperty=nameWithType> 메서드를 사용하지 마십시오. nullable 형식의 인스턴스에서 <xref:System.Object.GetType%2A?displayProperty=nameWithType> 메서드를 호출하는 경우 인스턴스는 <xref:System.Object>로 [boxing](using-nullable-types.md#boxing-and-unboxing)됩니다. nullable 형식의 Null이 아닌 인스턴스의 boxing은 기본 형식 값의 boxing과 동일하며, <xref:System.Object.GetType%2A>는 nullable 형식의 기본 형식을 나타내는 <xref:System.Type> 개체를 반환합니다.
+
+[!code-csharp-interactive[GetType example](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#2)]
+
+인스턴스가 nullable 형식인지 여부를 확인하는 데 [is](../../language-reference/keywords/is.md) 연산자를 사용하지 마십시오. 다음 예제에서 보여주는 것과 같이 nullable 형식의 인스턴스 형식과 `is` 연산자를 사용하는 해당 기본 형식을 구분할 수 없습니다.
+
+[!code-csharp-interactive[is operator example](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#3)]
+
+다음 예제에서 제공된 코드를 사용하여 인스턴스가 nullable 형식인지 여부를 확인할 수 있습니다.
+
+[!code-csharp-interactive[whether an instance is of a nullable type](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#4)]
   
- <xref:System.Reflection> 네임스페이스의 클래스와 메서드를 사용하여 Nullable 형식을 나타내는 <xref:System.Type> 개체를 생성할 수도 있습니다. 그러나 <xref:System.Object.GetType%2A> 메서드 또는 `is` 연산자를 사용하여 런타임에 Nullable 변수에서 형식 정보를 가져오려고 하면 그 결과로 Nullable 형식 자체가 아니라 내부 형식을 나타내는 <xref:System.Type> 개체가 생성됩니다.  
-  
- Nullable 형식에서 `GetType`을 호출하면 형식이 <xref:System.Object>로 암시적으로 변환될 때 boxing 작업이 수행됩니다. 따라서 <xref:System.Object.GetType%2A>은 항상 Nullable 형식이 아니라 내부 형식을 나타내는 <xref:System.Type> 개체를 반환합니다.  
-  
-```  
-int? i = 5;  
-Type t = i.GetType();  
-Console.WriteLine(t.FullName); //"System.Int32"  
-```  
-  
- C# [is](../../../csharp/language-reference/keywords/is.md) 연산자도 Nullable 내부 형식에서 작동합니다. 따라서 `is`를 사용하여 변수가 Nullable 형식인지 여부를 확인할 수 없습니다. 다음 예제에서는 `is` 연산자가 Nullable\<int> 변수를 int 형식으로 처리함을 보여 줍니다.  
-  
-```  
-static void Main(string[] args)  
-{  
-  int? i = 5;  
-  if (i is int) // true  
-    //…  
-}  
-```  
-  
-## <a name="example"></a>예  
- 다음 코드를 사용하여 <xref:System.Type> 개체가 Nullable 형식을 나타내는지 여부를 확인할 수 있습니다. 이 항목의 앞부분에서 설명한 것처럼 이 코드는 <xref:System.Object.GetType%2A> 호출에서 `Type` 개체가 반환된 경우 항상 false를 반환합니다.  
-  
-```  
-if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>)) {…}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)  
- [Nullable 형식 boxing](../../../csharp/programming-guide/nullable-types/boxing-nullable-types.md)
+## <a name="see-also"></a>참고 항목
+
+[Nullable 형식](index.md)  
+[nullable 형식 사용](using-nullable-types.md)  
+<xref:System.Nullable.GetUnderlyingType%2A>  

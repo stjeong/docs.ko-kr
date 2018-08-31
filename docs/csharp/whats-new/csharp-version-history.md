@@ -3,12 +3,12 @@ title: C#의 역사 - C# 가이드
 description: 이 언어의 초창기 버전은 어떤 모습이었으며 이후 어떻게 변했는가?
 author: erikdietrich
 ms.date: 09/20/2017
-ms.openlocfilehash: 227cb2899a509d56910a2a07533a2178f53ef818
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 90f480d7b25ebe308d1f1cb3d4c117f36f7dd9bf
+ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404595"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42752202"
 ---
 # <a name="the-history-of-c"></a>C#의 역사 #
 
@@ -105,7 +105,11 @@ C# 버전 4.0은 버전 3.0의 혁신적인 상태를 유지하느라 힘든 시
 C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한 거의 모든 노력은 다른 획기적인 언어 개념인 비동기 프로그래밍을 위한 `async` 및 `await` 모델로 옮겨 갔습니다.  다음은 주요 기능 목록입니다.
 
 - [비동기 멤버](../async.md)
-- [호출자 정보 특성](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
+- [호출자 정보 특성](../programming-guide/concepts/caller-information.md)
+
+### <a name="see-also"></a>참고 항목
+
+* [코드 프로젝트: C# 5.0에서 호출자 정보 특성](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 호출자 정보 특성을 사용하면 엄청난 양의 상용구 리플렉션 코드를 사용하지 않고도 실행 중인 컨텍스트에 대한 정보를 쉽게 검색할 수 있습니다. 진단 및 로깅 작업의 용도는 매우 다양합니다.
 

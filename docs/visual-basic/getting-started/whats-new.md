@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 09a113130d29336ecabb52095ca7f5809f5f0ade
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ae29553b6a431c3f20f0e5e34614842946532a9b
+ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592550"
+ms.lasthandoff: 08/25/2018
+ms.locfileid: "42925613"
 ---
 # <a name="whats-new-for-visual-basic"></a>Visual Basic의 새로운 기능
 
@@ -23,33 +23,33 @@ ms.locfileid: "33592550"
   
 ## <a name="current-version"></a>현재 버전
 
-Visual Basic 15.5   
+Visual Basic 15.5 / Visual Studio 2017 버전 15.5  
 새로운 기능은 [Visual Basic 15.5](#visual-basic-155)를 참조하세요.
 
 ## <a name="previous-versions"></a>이전 버전
 
-Visual Basic 15.3   
+Visual Basic 15.3 / Visual Studio 2017 버전 15.3  
 새로운 기능은 [Visual Basic 15.3](#visual-basic-153)을 참조하세요.
 
-Visual Basic 2017   
+Visual Basic 2017 / Visual Studio 2017  
 새로운 기능은 [Visual Basic 2017](#visual-basic-2017)을 참조하세요.
 
-Visual Basic / Visual Studio .NET 2015   
+Visual Basic / Visual Studio 2015   
 새로운 기능은 [Visual Basic 14](#visual-basic-14)를 참조하세요.
 
-Visual Basic / Visual Studio .NET 2013  
+Visual Basic / Visual Studio 2013  
 .NET 컴파일러 플랫폼("Roslyn")의 기술 미리 보기
 
-Visual Basic / Visual Studio .NET 2012   
+Visual Basic / Visual Studio 2012   
 `Async` 및 `await` 키워드, 반복기, 호출자 정보 특성
 
-Visual Basic, Visual Studio .NET 2010   
+Visual Basic, Visual Studio 2010   
 자동으로 구현된 속성, 컬렉션 이니셜라이저, 암시적 줄 연속, 동적, 제네릭 공변성(Covariance)/반공변성(Contravariance), 전역 네임스페이스 액세스
 
-Visual Basic / Visual Studio .NET 2008   
+Visual Basic / Visual Studio 2008   
 LINQ(통합 언어 쿼리), XML 리터럴, 지역 형식 유추, 개체 이니셜라이저, 익명 형식, 확장 메서드, 로컬 `var` 형식 유추, 람다 식, `if` 연산자, 부분 메서드(Partial Method), nullable 값 형식  
 
-Visual Basic / Visual Studio .NET 2005   
+Visual Basic / Visual Studio 2005   
 `My` 형식 및 도우미 형식(앱, 컴퓨터, 파일 시스템, 네트워크에 액세스)
 
 Visual Basic / Visual Studio .NET 2003   
@@ -123,7 +123,7 @@ Visual Basic의 튜플 지원을 사용하면 튜플을 신속하게 정의하�
 
 자세한 내용은 [바이트](../language-reference/data-types/byte-data-type.md#literal-assignments), [정수](../language-reference/data-types/integer-data-type.md#literal-assignments), [Long](../language-reference/data-types/long-data-type.md#literal-assignments), [Short](../language-reference/data-types/short-data-type.md#literal-assignments), [SByte](../language-reference/data-types/sbyte-data-type.md#literal-assignments), [UInteger](../language-reference/data-types/uinteger-data-type.md#literal-assignments), [ULong](../language-reference/data-types/ulong-data-type.md#literal-assignments) 및 [UShort](../language-reference/data-types/ushort-data-type.md#literal-assignments) 데이터 형식의 "리터럴 할당" 섹션을 참조하세요.
 
-**C# 참조 반환 값 지원**
+[**C# 참조 반환 값 지원**](../programming-guide/language-features/procedures/ref-return-values.md)
 
 C# 7.0부터 C#에서 참조 반환 값을 지원합니다. 즉, 호출하는 메서드가 참조로 반환된 값을 받을 때 참조 값을 변경할 수 있습니다. Visual Basic에서 참조 반환 값이 있는 메서드를 작성할 수는 없지만 참조 반환 값을 사용하고 수정할 수 있습니다.
 
@@ -159,25 +159,25 @@ C# 7.0부터 C#에서 참조 반환 값을 지원합니다. 즉, 호출하는 �
 [다중 선 문자열 리터럴](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
  문자열 리터럴에 줄 바꿈 시퀀스가 포함될 수 있습니다.  `<xml><![CDATA[...text with newlines...]]></xml>.Value` 사용과 관련된 이전 작업은 더 이상 필요하지 않습니다.  
   
-설명  
+**설명**  
 암시적 줄 연속 뒤, 이니셜라이저 식 내부 및 LINQ 식 항 사이에 주석을 입력할 수 있습니다.  
   
- 더 효율적인 정규화된 이름 확인  
+**더 효율적인 정규화된 이름 확인**  
  `Threading.Thread.Sleep(1000)`과 같은 코드가 제공된 경우 이전에는 Visual Basic에서 "Threading" 네임스페이스를 조회하고 System.Threading 및 System.Windows.Threading 간에 모호하다는 사실을 발견한 후 오류를 보고했습니다.  이제 Visual Basic에서는 두 가지 가능한 네임스페이스를 함께 고려합니다.  완성 목록을 표시하는 경우 Visual Studio 편집기에서 두 형식의 멤버가 모두 완성 목록에 나열됩니다.  
   
- 연도가 먼저 나오는 날짜 리터럴  
+ **연도가 먼저 나오는 날짜 리터럴**  
  yyyy-mm-dd 형식(`#2015-03-17 16:10 PM#`)의 날짜 리터럴을 사용할 수 있습니다.  
   
- 읽기 전용 인터페이스 속성  
+ **읽기 전용 인터페이스 속성**  
  읽기/쓰기 속성을 사용하여 읽기 전용 인터페이스 속성을 구현할 수 있습니다.  이러한 인터페이스는 최소 기능을 보장하며 구현 클래스에서 속성이 설정되도록 허용하는 것을 차단하지 않습니다.  
   
  [TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)  
  코드를 더 읽기 쉽게 만들기 위해 `IsNot`과 함께 `TypeOf`를 사용할 수 있습니다.  
   
- [#Disable Warning \<ID> 및 #Enable Warning \<ID>](../../visual-basic/language-reference/directives/directives.md)  
+ [#Disable Warning \<ID> 및 #Enable Warning \<ID>](../../visual-basic/language-reference/directives/index.md)  
  소스 파일 내의 영역에 대한 특정 경고를 사용하지 않거나 사용하도록 설정할 수 있습니다.  
   
- XML 문서 주석 향상  
+ **XML 문서 주석 향상**  
  문서 주석을 작성하면 편집기의 효율성을 높이고 매개 변수 이름의 유효성 검사, `crefs`(제네릭, 연산자 등)의 적절한 처리, 색 지정 및 리팩터링에 대한 지원을 제공할 수 있습니다.  
   
  [부분 모듈 및 인터페이스 정의](../../visual-basic/language-reference/modifiers/partial.md)  
@@ -186,13 +186,13 @@ C# 7.0부터 C#에서 참조 반환 값을 지원합니다. 즉, 호출하는 �
  [메서드 본문 내의 #Region 지시문](../../visual-basic/language-reference/directives/region-directive.md)  
  #Region…#End Region 구분 기호를 파일의 원하는 위치, 함수 내부 및 여러 함수 본문을 포괄하여 입력할 수 있습니다.  
   
- [Overrides 정의는 암시적으로 Overloads임](../../visual-basic/language-reference/modifiers/overrides.md)  
+ [Overrides 정의는 암시적으로 overloads임](../../visual-basic/language-reference/modifiers/overrides.md)  
  `Overrides` 한정자를 정의에 추가하면 일반적인 경우에 더 적은 코드를 입력할 수 있도록 컴파일러에서 암시적으로 `Overloads`를 추가합니다.  
   
- 특성 인수에서 허용되는 CObj  
+ **특성 인수에서 허용되는 CObj**  
  이전에는 컴파일러에서 CObj(...)가 특성 생성에서 사용될 때 상수가 아니라는 오류를 제공했습니다.  
   
- 여러 인터페이스의 모호한 메서드 선언 및 사용  
+ **여러 인터페이스의 모호한 메서드 선언 및 사용**  
  이전에는 다음 코드에서 `IMock`을 선언하거나 `GetDetails`를 호출하지 못하게 하는 오류가 발생했습니다(이러한 항목이 C#에서 선언된 경우).  
   
 ```vb  

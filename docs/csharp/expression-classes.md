@@ -3,22 +3,22 @@ title: 식 트리를 지원하는 프레임워크 형식
 description: 식 트리를 지원하는 프레임워크 형식, 식 트리 만들기, 식 트리 API 작업을 위한 기술에 대해 알아봅니다.
 ms.date: 06/20/2016
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
-ms.openlocfilehash: 3110f2a9534085aba95fcb5c8e76f66229e79f86
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 687b521c52c1ca380a12e18469b5f66000049d3c
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33214947"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42934794"
 ---
 # <a name="framework-types-supporting-expression-trees"></a>식 트리를 지원하는 프레임워크 형식
 
 [이전 -- 식 트리 설명](expression-trees-explained.md)
 
 .NET Core 프레임워크에는 식 트리에서 작동하는 클래스 목록이 많습니다.
-전체 목록은 [여기](/dotnet/core/api/System.Linq.Expressions)에서 확인할 수 있습니다.
+전체 목록은 <xref:System.Linq.Expressions>에서 확인할 수 있습니다.
 전체 목록을 실행하는 대신 프레임워크 클래스가 어떻게 디자인되었는지 살펴보겠습니다.
 
-언어 디자인에서 식이란 값을 계산하고 반환하는 코드의 본문입니다. 식은 매우 간단할 수 있습니다. 상수 식 `1`은 상수 값 1을 반환합니다. 식은 더 복잡할 수도 있습니다. `(-B + Math.Sqrt(B*B + 4 * A * C)) / (2 * A)` 식은 2차 방정식의 근을 반환합니다(방정식에 솔루션이 있는 경우).  
+언어 디자인에서 식이란 값을 계산하고 반환하는 코드의 본문입니다. 식은 매우 간단할 수 있습니다. 상수 식 `1`은 상수 값 1을 반환합니다. 식은 더 복잡할 수도 있습니다. `(-B + Math.Sqrt(B*B - 4 * A * C)) / (2 * A)` 식은 2차 방정식의 근을 반환합니다(방정식에 솔루션이 있는 경우).  
 
 ## <a name="it-all-starts-with-systemlinqexpression"></a>모두 System.Linq.Expression으로 시작
 

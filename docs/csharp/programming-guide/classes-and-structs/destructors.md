@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, finalizers
 - finalizers [C#]
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
-ms.openlocfilehash: fc15818883736015419f8599d482185bbab5120a
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 5d1860a5703c79bd77331cfd821c3bff69f317ff
+ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37960519"
+ms.lasthandoff: 08/25/2018
+ms.locfileid: "42925820"
 ---
 # <a name="finalizers-c-programming-guide"></a>종료자(C# 프로그래밍 가이드)
 종료자는 클래스의 인스턴스를 소멸하는 데 사용됩니다.  
@@ -57,7 +57,9 @@ protected override void Finalize()
 > [!NOTE]
 >  빈 종료자는 사용할 수 없습니다. 클래스에 종료자가 포함되어 있으면 `Finalize` 큐에서 항목이 생성됩니다. 종료자를 호출하면 가비지 수집기가 호출되어 큐를 처리합니다. 종료자가 비어 있으면 성능이 불필요하게 저하됩니다.  
   
- 종료자가 호출되는 시기는 가비지 수집기에 의해 결정되기 때문에 프로그래머가 제어할 수 없습니다. 가비지 수집기는 응용 프로그램에서 더 이상 사용되지 않는 개체를 확인합니다. 개체를 종료할 수 있는 것으로 판단되면 종료자(있는 경우)를 호출하고 개체를 저장하는 데 사용된 메모리를 회수합니다. 종료자는 프로그램이 종료될 때도 호출됩니다.  
+ 종료자가 호출되는 시기는 가비지 수집기에 의해 결정되기 때문에 프로그래머가 제어할 수 없습니다. 가비지 수집기는 응용 프로그램에서 더 이상 사용되지 않는 개체를 확인합니다. 개체를 종료할 수 있는 것으로 판단되면 종료자(있는 경우)를 호출하고 개체를 저장하는 데 사용된 메모리를 회수합니다. 
+ 
+ .NET Framework 응용 프로그램에서(.NET Core 응용 프로그램에서가 아닌) 프로그램이 종료될 때 종료자도 호출됩니다. 
   
  <xref:System.GC.Collect%2A>를 호출하여 강제로 가비지 수집할 수 있지만 대부분의 경우 성능 문제가 발생할 수 있으므로 방지해야 합니다.  
   

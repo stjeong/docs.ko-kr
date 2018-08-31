@@ -1,7 +1,7 @@
 ---
 title: 기본값 표(C# 참조)
-description: 기본 생성자에서 반환한 값 형식의 기본값에 대해 알아봅니다.
-ms.date: 07/20/2015
+description: C# 값 형식의 기본 값은 무엇인지 알아봅니다.
+ms.date: 08/23/2018
 helpviewer_keywords:
 - constructors [C#], return values
 - keywords [C#], new
@@ -11,28 +11,16 @@ helpviewer_keywords:
 - variables [C#], value types
 - constructors [C#], default constructor
 - types [C#], default constructor return values
-ms.openlocfilehash: 634a55304534b4269487f29be1fbb4930f51d8ca
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 184a9f42ddd3654a81aef0b7ce35e404de2d4bb9
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218792"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42935841"
 ---
 # <a name="default-values-table-c-reference"></a>기본값 표(C# 참조)
 
-다음 표는 기본 생성자에서 반환한 값 형식의 기본값을 보여 줍니다. 기본 생성자는 다음과 같이 `new` 연산자를 사용하여 호출됩니다.
-
-```csharp
-int myInt = new int();
-```
-
-위의 문은 다음에 오는 문과 동일한 효과가 있습니다.
-
-```csharp
-int myInt = 0;
-```
-
-C#에서는 초기화되지 않은 변수를 사용할 수 없음에 유의하세요.
+다음 표는 [값 형식](value-types.md)의 기본값을 보여줍니다.
 
 |값 형식|기본값|
 |----------------|-------------------|
@@ -41,7 +29,7 @@ C#에서는 초기화되지 않은 변수를 사용할 수 없음에 유의하�
 |[char](char.md)|'\0'|
 |[decimal](decimal.md)|0M|
 |[double](double.md)|0.0D|
-|[enum](enum.md)|식 (E)0으로 생성한 값이며 여기서 E는 열거형 식별자입니다.|
+|[enum](enum.md)|식 `(E)0`로 생성한 값이며 여기서 `E`는 열거형 식별자입니다.|
 |[float](float.md)|0.0F|
 |[int](int.md)|0|
 |[long](long.md)|0L|
@@ -52,10 +40,36 @@ C#에서는 초기화되지 않은 변수를 사용할 수 없음에 유의하�
 |[ulong](ulong.md)|0|
 |[ushort](ushort.md)|0|
 
+## <a name="remarks"></a>설명
+
+C#에서 초기화되지 않은 변수를 사용할 수 없습니다. 해당 형식의 기본값을 사용하여 변수를 초기화할 수 있습니다. 또한 형식의 기본 값을 사용하여 메서드의 [선택적 인수](../../programming-guide/classes-and-structs/named-and-optional-arguments.md#optional-arguments)의 기본값을 지정할 수도 있습니다.
+
+[기본값 식](../../programming-guide/statements-expressions-operators/default-value-expressions.md)을 사용하여 다음 예제와 같이 형식의 기본값을 생성합니다.
+
+```csharp
+int a = default(int);
+```
+
+C# 7.1부터 [`default` 리터럴](../../programming-guide/statements-expressions-operators/default-value-expressions.md#default-literal-and-type-inference)을 사용하여 해당 형식의 기본값으로 변수를 초기화할 수 있습니다.
+
+```csharp
+int a = default;
+```
+
+기본 생성자 또는 암시적 기본 생성자를 사용하여 다음 예제와 같이 값 형식의 기본값을 생성할 수도 있습니다. 생성자에 대한 자세한 내용은 [생성자](../../programming-guide/classes-and-structs/constructors.md) 문서를 참조하세요.
+
+```csharp
+int a = new int();
+```
+
+모든 [참조 형식](reference-types.md)의 기본값은 `null`입니다. [nullable 형식](../../programming-guide/nullable-types/index.md)의 기본값은 <xref:System.Nullable%601.HasValue%2A> 속성은 `false`이고 <xref:System.Nullable%601.Value%2A> 속성은 정의되지 않은 인스턴스입니다.
+
 ## <a name="see-also"></a>참고 항목
- [C# 참조](../index.md)  
- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
- [값 형식 표](value-types-table.md)  
- [값 형식](value-types.md)  
- [기본 제공 형식 표](built-in-types-table.md)  
- [형식 참조 테이블](reference-tables-for-types.md)
+
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 키워드](index.md)
+- [형식 참조 테이블](reference-tables-for-types.md)
+- [값 형식](value-types.md)
+- [값 형식 표](value-types-table.md)
+- [기본 제공 형식 표](built-in-types-table.md)
