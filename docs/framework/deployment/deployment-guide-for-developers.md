@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 14bb5cd242a45b98a23a9d807b22aa4487d2591e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 869d64902c53e20667907b99276b9f8c6f3a2e20
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392192"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42932851"
 ---
 # <a name="net-framework-deployment-guide-for-developers"></a>개발자를 위한 .NET Framework 배포 가이드
 이 항목에서는 앱과 함께 .NET Framework 4.5에서 [!INCLUDE[net_current](../../../includes/net-current-version.md)]까지의 모든 .NET Framework 버전을 설치하려는 개발자를 위한 정보를 제공합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "33392192"
 
 - [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 포인트 릴리스는 [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]에서 증분 방식으로 빌드됩니다. [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]가 설치되어 있는 시스템에 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 또는 해당 포인트 릴리스를 설치하면 버전 4 어셈블리가 새 버전으로 바뀝니다.
 
-- 앱에서 Microsoft [번외 패키지](http://msdn.microsoft.com/library/dn151288\(v=vs.110\).aspx) 를 참조하는 경우 어셈블리가 앱 패키지에 포함됩니다.
+- 앱에서 Microsoft [번외 패키지](../get-started/the-net-framework-and-out-of-band-releases.md) 를 참조하는 경우 어셈블리가 앱 패키지에 포함됩니다.
 
 - [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 포인트 릴리스를 설치하려면 관리자 권한이 있어야 합니다.
 
@@ -80,7 +80,7 @@ ms.locfileid: "33392192"
 |다운로드 크기|작게(대상 플랫폼의 설치 관리자만 포함) *|크게*|
 |언어 팩|포함됨**|반드시 [별도로 설치](#chain_langpack)합니다. 그러지 않으면, 모든 운영 체제를 대상으로 하는 패키지를 사용합니다.|
 |배포 방법|모든 메서드 지원:<br /><br />- [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [WiX(Windows Installer XML)](#wix)<br />- [수동 설치](#installing_manually)<br />- [사용자 지정 설치(연결)](#chaining)|모든 메서드 지원:<br /><br /> - [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [WiX(Windows Installer XML)](#wix)<br />- [수동 설치](#installing_manually)<br />- [사용자 지정 설치(연결)](#chaining)|
-|ClickOnce 배포를 위한 다운로드 위치|Microsoft 다운로드 센터:<br /><br /> - [.NET Framework 4.7.1](http://go.microsoft.com/fwlink/?LinkId=852092) <br/> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825298) <br/> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780596)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671728)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528222)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/?LinkId=397703)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310158)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|사용자의 서버 또는 Microsoft 다운로드 센터:<br /><br /> - [.NET Framework 4.7.1](http://go.microsoft.com/fwlink/?LinkId=852104)<br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825302)<br /> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780600)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671743)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528232)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/p/?LinkId=397706)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310159)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|
+|ClickOnce 배포를 위한 다운로드 위치|Microsoft 다운로드 센터:<br /><br /> - [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkId=863262) <br/> - [.NET Framework 4.7.1](http://go.microsoft.com/fwlink/?LinkId=852092) <br/> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825298) <br/> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780596)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671728)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528222)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/?LinkId=397703)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310158)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|사용자의 서버 또는 Microsoft 다운로드 센터:<br /><br /> - [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkId=863265)<br /> - [.NET Framework 4.7.1](http://go.microsoft.com/fwlink/?LinkId=852104)<br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825302)<br /> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780600)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671743)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528232)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/p/?LinkId=397706)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310159)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|
 
  \* 오프라인 설치 관리자는 모든 대상 플랫폼의 구성 요소를 포함하기 때문에 더 큽니다. 설치 프로그램의 실행을 마치면 Windows 운영 체제에서는 사용한 설치 관리자만 캐시합니다. 설치 후에 오프라인 설치 관리자를 삭제하는 경우 사용된 디스크 공간은 웹 설치 관리자에서 사용하는 것과 동일합니다. 앱의 설치 프로그램을 만드는 데 사용하는 도구(예: [InstallAware](#installaware-deployment) 또는 [InstallShield](#installshield-deployment))가 설치 후에 제거되는 설치 파일 폴더를 제공하는 경우 오프라인 설치 관리자를 설치 폴더에 저장하여 자동으로 삭제할 수 있습니다.
 
@@ -247,14 +247,14 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |버전|릴리스 DWORD의 값|
 |-------------|--------------------------------|
-|.NET Framework 4.7.2가 Windows 10 2018년 4월 업데이트에 설치됨|461808|
-|Windows 10 2018년 4월 업데이트 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.2|461814|
-|Windows 10 Fall Creators Update에 설치된 .NET Framework 4.7.1|461308|
-|Windows 10 Fall Creators Update 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.1|461310|
+|Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803에 설치된 .NET Framework 4.7.2|461808|
+|Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.2|461814|
+|Windows 10 Fall Creators Update 및 Windows Server, 버전 1709에 설치된 .NET Framework 4.7.1|461308|
+|Windows 10 Fall Creators Update 및 Windows Server, 버전 1709 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.1|461310|
 |.NET Framework 4.7이 Windows 10 크리에이터 업데이트에 설치됨|460798|
 |Windows 10 크리에이터스 업데이트 이외의 모든 OS 버전에 설치된 .NET Framework 4.7|460805|
-|Windows 10 Anniversary Edition에 설치된[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] |394802|
-|Windows 10 Anniversary Edition 이외의 다른 모든 OS 버전에 설치된[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] |394806|
+|Windows 10 Anniversary Edition 및Windows Server 2016에 설치된 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
+|Windows 10 Anniversary Edition 및 Windows Server 2016 이외의 다른 모든 OS 버전에 설치된 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394806|
 |Windows 10 11월 업데이트에 설치된[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] |394254|
 |Windows 10 11월 업데이트 이외의 다른 모든 OS 버전에 설치된[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] |394271|
 |Windows 10에 설치된[!INCLUDE[net_v46](../../../includes/net-v46-md.md)] |393295|
