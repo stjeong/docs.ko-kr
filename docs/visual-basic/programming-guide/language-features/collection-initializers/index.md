@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
-ms.openlocfilehash: 20bf9b263a349f327f12d1f3c7753fb9f34436e2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e844a673f1a60d5a151a6ae612d4af7a6712eef4
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33654218"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332554"
 ---
 # <a name="collection-initializers-visual-basic"></a>컬렉션 이니셜라이저(Visual Basic)
 *컬렉션 이니셜라이저*는 컬렉션을 만들고 값의 초기 집합으로 채울 수 있도록 하는 약식 구문을 제공합니다. 컬렉션 이니셜라이저는 알려진 값(예: 메뉴 옵션 또는 범주 목록, 숫자 값의 초기 집합, 일 또는 월 이름과 같은 문자열의 정적 목록 또는 유효성 검사에 사용되는 상태 목록과 같은 지리적 위치)의 집합에서 컬렉션을 만드는 경우에 유용합니다.  
   
- 항목 컬렉션에 대한 자세한 내용은 [컬렉션](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)을 참조하세요.  
+ 항목 컬렉션에 대한 자세한 내용은 [컬렉션](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)을 참조하세요.  
   
  `From` 키워드 뒤에 중괄호(`{}`)를 사용하여 컬렉션 이니셜라이저를 식별합니다. 이것은 [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)에서 설명된 배열 리터럴 구문과 비슷합니다. 다음 예제에서는 컬렉션 이니셜라이저를 사용하여 컬렉션을 만드는 다양한 방법을 보여 줍니다.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "33654218"
 |[방법: 컬렉션 이니셜라이저에 사용되는 컬렉션 만들기](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)|`IEnumerable`을 구현하는 컬렉션 클래스에 `Add` 메서드를 포함하여 컬렉션 이니셜라이저를 사용할 수 있도록 설정하는 방법을 보여 줍니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [컬렉션](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+ [컬렉션](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
  [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [개체 이니셜라이저: 명명된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
  [New 연산자](../../../../visual-basic/language-reference/operators/new-operator.md)  

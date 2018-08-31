@@ -2,12 +2,12 @@
 title: WorkflowHostingEndpoint 다시 시작 책갈피
 ms.date: 03/30/2017
 ms.assetid: a708064f-50b0-4751-b44e-d5410d08d451
-ms.openlocfilehash: 3af31af17e0c362beb8ba4b9b0479de59cab8ef3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8b435a50801e03ec6ed00bcfef3c7e9198a7e7e5
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33515677"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332163"
 ---
 # <a name="workflowhostingendpoint-resume-bookmark"></a>WorkflowHostingEndpoint 다시 시작 책갈피
 이 샘플에서는 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint>를 <xref:System.ServiceModel.Activities.WorkflowServiceHost>와 함께 사용하여 워크플로 인스턴스를 만드는 방법을 보여 줍니다.  
@@ -28,13 +28,13 @@ ms.locfileid: "33515677"
   
 1.  솔루션을 빌드합니다.  
   
-2.  응용 프로그램을 실행합니다. 워크플로 인스턴스를 만들 때 인스턴스 ID를 포함하는 메시지가 `CreationEndpoint` 콘솔에 표시됩니다. "Hello World!" 메시지 가 성공적으로 다시 시작 책갈피의 워크플로 통해 인쇄 됩니다.  
+2.  응용 프로그램을 실행합니다. 워크플로 인스턴스를 만들 때 인스턴스 ID를 포함하는 메시지가 `CreationEndpoint` 콘솔에 표시됩니다. "Hello World!" 메시지 성공적으로 다시 시작 책갈피에서 워크플로로 출력 됩니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Execution\ResumeBookmarkEndpoint`

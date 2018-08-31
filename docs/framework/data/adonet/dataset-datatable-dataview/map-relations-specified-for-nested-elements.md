@@ -2,17 +2,17 @@
 title: 중첩된 요소에 지정된 관계 매핑
 ms.date: 03/30/2017
 ms.assetid: 24a2d3e5-4af7-4f9a-ab7a-fe6684c9e4fe
-ms.openlocfilehash: e1fde0ef585621a6821838613a7e77dedf7042b1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0346ba04fd8af6b5abc81fe994dd40f9a6a37c1d
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32756698"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332470"
 ---
 # <a name="map-relations-specified-for-nested-elements"></a>중첩된 요소에 지정된 관계 매핑
-스키마를 포함할 수 있습니다는 **msdata: relationship** 주석을 명시적으로 스키마의 두 요소 간의 매핑을 지정 합니다. 에 지정 된 두 요소가 **msdata: relationship** 스키마에서 중첩 될 수 있지만 될 필요가 없습니다. 매핑 프로세스를 사용 하 여 **msdata: relationship** 두 열 간의 기본 키/외래 키 관계를 생성 하는 스키마에 있습니다.  
+스키마를 포함할 수는 **msdata: relationship** 스키마의 두 요소 간의 매핑을 명시적으로 지정 하는 주석입니다. 에 지정 된 두 요소 **msdata: relationship** 스키마에서 중첩 될 수 있지만 될 필요가 없습니다. 사용 하 여 매핑 프로세스 **msdata: relationship** 두 열 간에 기본 키/외래 키 관계를 생성 하려면 스키마에 있습니다.  
   
- 다음 예제는 XML 스키마를 보여 줍니다.는 **OrderDetail** 의 자식 요소 **순서**합니다. **msdata: relationship** 이 부모-자식 관계를 식별 하 고 지정 하는 **OrderNumber** 열이 결과 **순서** 테이블이 관련 되어는 **OrderNo** 열이 결과 **OrderDetail** 테이블입니다.  
+ 다음 예제는 XML 스키마를 보여 줍니다.는 **OrderDetail** 의 자식 요소입니다 **순서**합니다. **msdata: relationship** 이 부모-자식 관계를 식별 하 고 지정 합니다 **OrderNumber** 결과 열의 **순서** 테이블이 관련 되어를 **OrderNo** 결과 열의 **OrderDetail** 테이블입니다.  
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""   
@@ -54,14 +54,14 @@ ms.locfileid: "32756698"
   
  XML 스키마 매핑 프로세스에서는 <xref:System.Data.DataSet>에 다음 항목을 만듭니다.  
   
--   **순서** 및 **OrderDetail** 테이블입니다.  
+-   **순서** 와 **OrderDetail** 테이블입니다.  
   
     ```  
     Order(OrderNumber, EmpNumber)  
     OrderDetail(OrderNo, ItemNo)  
     ```  
   
--   간의 관계는 **순서** 및 **OrderDetail** 테이블입니다. **Nested** 이 관계에 대 한 속성이로 설정 되어 **True** 때문에 **순서** 및 **OrderDetail** 스키마에서 요소가 중첩 .  
+-   간의 관계는 **순서** 하 고 **OrderDetail** 테이블입니다. **중첩** 이 관계에 대 한 속성 **True** 때문에 **순서** 하 고 **OrderDetail** 요소가 스키마에서 중첩 .  
   
     ```  
     ParentTable: Order  
@@ -77,4 +77,4 @@ ms.locfileid: "32756698"
 ## <a name="see-also"></a>참고 항목  
  [XSD(XML 스키마)에서 데이터 집합 관계 생성](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
  [데이터 집합 제약 조건에 XSD(XML 스키마) 제약 조건 매핑](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

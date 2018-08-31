@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Basic code, data types
 - data types [Visual Basic], improving speed with
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
-ms.openlocfilehash: 855e32463284604fc27d4b73331ae48967dddefb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 83c3d9976f61513165e917da73dd50e846db3e83
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33650454"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330947"
 ---
 # <a name="data-types-in-visual-basic"></a>Visual Basic의 데이터 형식
 프로그래밍 요소의 *데이터 형식*은 사용할 수 있는 데이터의 종류 및 데이터를 저장하는 방식을 의미합니다. 데이터 형식은 컴퓨터 메모리에 저장할 수 있거나 식의 계산에 사용되는 모든 값에 적용됩니다. 모든 변수, 리터럴, 상수, 열거형, 속성, 프로시저 매개 변수, 프로시저 인수 및 프로시저 반환 값은 데이터 형식을 가집니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33650454"
 |프로시저 인수|호출 코드에서 지정합니다. 각 인수는 이미 선언된 프로그래밍 요소이거나 선언된 요소를 포함하는 식입니다.<br /><br /> `subString = Left(`  `inputString`  `,`   `5`  `)`|  
 |프로시저 반환 값|[Function 문](../../../../visual-basic/language-reference/statements/function-statement.md) 또는 [Operator 문](../../../../visual-basic/language-reference/statements/operator-statement.md)에서 지정합니다.<br /><br /> `Function convert(ByVal b As Byte)`  `As String`|  
   
- Visual Basic 데이터 형식 목록은 [데이터 형식](../../../../visual-basic/language-reference/data-types/data-type-summary.md)을 참조하세요.  
+ Visual Basic 데이터 형식 목록은 [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
@@ -44,5 +44,5 @@ ms.locfileid: "33650454"
  [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [튜플](tuples.md)     
  [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
  [데이터 형식의 효율적 사용](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

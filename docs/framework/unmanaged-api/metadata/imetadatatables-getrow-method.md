@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 954b4df6b341e18c5a995b57541a72e236278c45
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d24dbcbdd8b0ed0736f7b59564cf72dffaa5a8f8
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33449597"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43331335"
 ---
 # <a name="imetadatatablesgetrow-method"></a>IMetaDataTables::GetRow 메서드
-지정 된 행 인덱스에 지정된 된 테이블 인덱스에 있는 테이블에 행을 가져옵니다.  
+지정된 된 테이블 인덱스에 있는 표에 지정 된 행 인덱스에 행을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,10 +48,10 @@ HRESULT GetRow (
  [out] 행에 대 한 포인터에 대 한 포인터입니다.  
   
 ## <a name="remarks"></a>설명  
- 권장 하지는 않습니다이 메서드를 사용 하 여 일관 된 결과 반환 하지 않습니다. GUID 테이블에 대 한 내용은 "II: 메타 데이터 정의 및 의미" 인프라 CLI (공용 언어) 설명서를 참조 합니다. 이 설명서는 온라인으로 제공됩니다. MSDN의 [ECMA C# 및 공용 언어 인프라 표준](http://go.microsoft.com/fwlink/?LinkID=99212) 및 Ecma International 웹 사이트의 [표준 ECMA-335 - CLI(공용 언어 인프라)](http://go.microsoft.com/fwlink/?LinkID=65552)를 참조하세요.  
+ 바람직하지 않습니다이 메서드를 사용 하 여 일관 된 결과 반환 하지 않습니다. GUID 테이블에 대 한 내용은 "II: 메타 데이터 정의 및 의미" 공용 언어 인프라 (CLI) 설명서를 참조 하세요. 이 설명서는 온라인으로 제공됩니다. MSDN의 [ECMA C# 및 공용 언어 인프라 표준](https://go.microsoft.com/fwlink/?LinkID=99212) 및 Ecma International 웹 사이트의 [표준 ECMA-335 - CLI(공용 언어 인프라)](https://go.microsoft.com/fwlink/?LinkID=65552)를 참조하세요.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** Cor.h  
   

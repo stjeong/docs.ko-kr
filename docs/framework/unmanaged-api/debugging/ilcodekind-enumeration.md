@@ -14,12 +14,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0881b3903200c023cfa2fe32bf89f62234da29c3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: a02c26b72fc7039a5050ee369043f081c32cd7ec
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424029"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43331389"
 ---
 # <a name="ilcodekind-enumeration"></a>ILCodeKind 열거형
 [.NET Framework 4.5.2 이상 버전에서 지원됨]  
@@ -43,18 +43,18 @@ typedef enum ILCodeKind {
 |`ILCODE_REJIT_IL`|디버거가 ReJIT 계측의 정보에 액세스할 수 있습니다.|  
   
 ## <a name="remarks"></a>설명  
- 멤버는 `ILCodeKind` 열거형에 전달 될 수는 [EnumerateLocalVariablesEx](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md) 및 [GetLocalVariableEx](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md) 디버거가 프로파일러에 추가 된 변수에 액세스할 수 있는지 여부를 확인 하는 메서드 ReJIT 계측 하 고는 [GetCodeEx](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md) 계측 된 IL 디버거에 액세스할 수 있는지 여부를 결정 하는 메서드.  
+ 멤버는 `ILCodeKind` 열거를 전달할 수는 [EnumerateLocalVariablesEx](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md) 및 [GetLocalVariableEx](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md) 디버거가 프로파일러에 추가 된 변수에 액세스할 수 있는지를 확인 하는 방법 ReJIT 계측 하 고는 [GetCodeEx](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md) 계측 된 IL 디버거 액세스할 수 있는지 여부를 결정 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [디버깅 열거형](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
  [ICorDebugILFrame4 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)  
- [방법 가이드는 ReJIT:](http://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
+ [ReJIT: 방법 가이드](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)

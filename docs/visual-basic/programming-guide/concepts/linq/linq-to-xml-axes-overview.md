@@ -2,17 +2,17 @@
 title: LINQ to XML 축 개요(Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 9161f151-cfa8-4408-94ba-08a9ba3a486d
-ms.openlocfilehash: 9164dcff118c5fa3d15a5fe673b2174a4002e9d6
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: d7d881564abfdaba6cb7efa8fb92849e48c6fa4c
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43000311"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332176"
 ---
 # <a name="linq-to-xml-axes-overview-visual-basic"></a>LINQ to XML 축 개요(Visual Basic)
 XML 트리를 만들거나 XML 문서를 XML 트리에 로드한 후 XML 트리를 쿼리하여 요소와 특성을 찾고 해당 값을 검색할 수 있습니다. *축 메서드*(*축*)를 통해 컬렉션을 검색합니다. 일부 축은 <xref:System.Xml.Linq.XElement> 컬렉션을 반환하는 <xref:System.Xml.Linq.XDocument> 및 <xref:System.Collections.Generic.IEnumerable%601> 클래스의 메서드이고, 일부 축은 <xref:System.Xml.Linq.Extensions> 클래스의 확장 메서드입니다. 확장명 메서드로 구현되는 축은 컬렉션에 대해 작동하고 컬렉션을 반환합니다.  
   
- [XElement 클래스 개요](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec)에 설명된 대로 <xref:System.Xml.Linq.XElement> 개체는 단일 요소 노드를 나타냅니다. 요소의 내용은 복합 요소(구조화된 내용이라고도 함)이거나 단순 요소일 수 있습니다. 단순 요소는 비어 있거나 값을 포함할 수 있습니다. 노드에 구조화된 내용이 포함되어 있으면 다양한 축 메서드를 사용하여 하위 요소의 열거형을 검색할 수 있습니다. 가장 일반적으로 사용되는 축 메서드는 <xref:System.Xml.Linq.XContainer.Elements%2A> 및 <xref:System.Xml.Linq.XContainer.Descendants%2A>입니다.  
+ [XElement 클래스 개요](https://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec)에 설명된 대로 <xref:System.Xml.Linq.XElement> 개체는 단일 요소 노드를 나타냅니다. 요소의 내용은 복합 요소(구조화된 내용이라고도 함)이거나 단순 요소일 수 있습니다. 단순 요소는 비어 있거나 값을 포함할 수 있습니다. 노드에 구조화된 내용이 포함되어 있으면 다양한 축 메서드를 사용하여 하위 요소의 열거형을 검색할 수 있습니다. 가장 일반적으로 사용되는 축 메서드는 <xref:System.Xml.Linq.XContainer.Elements%2A> 및 <xref:System.Xml.Linq.XContainer.Descendants%2A>입니다.  
   
  컬렉션을 반환하는 축 메서드 외에도 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리에서 일반적으로 사용하는 두 메서드가 있습니다. <xref:System.Xml.Linq.XContainer.Element%2A> 메서드는 단일 <xref:System.Xml.Linq.XElement>를 반환합니다. <xref:System.Xml.Linq.XElement.Attribute%2A> 메서드는 단일 <xref:System.Xml.Linq.XAttribute>를 반환합니다.  
   

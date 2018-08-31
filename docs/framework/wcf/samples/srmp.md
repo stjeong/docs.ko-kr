@@ -2,29 +2,29 @@
 title: SRMP
 ms.date: 03/30/2017
 ms.assetid: cf37078c-dcb4-45e0-acaf-2f196521b226
-ms.openlocfilehash: c746897666ae78844df35c2989c803d852c3f70e
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 62075cccfa8ff2c6a181d633756a5f9bc8969932
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805501"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43331272"
 ---
 # <a name="srmp"></a>SRMP
 이 샘플에서는 HTTP를 통해 MSMQ(메시지 큐)를 사용하여 트랜잭션된 대기 중인 통신을 수행하는 방법을 보여 줍니다.  
   
  대기 중인 통신에서 클라이언트는 큐를 사용하여 서비스와 통신합니다. 좀더 정확하게 말하면 클라이언트는 큐에 메시지를 보내고, 서비스는 큐에서 보낸 메시지를 받습니다. 따라서 서비스와 클라이언트가 동시에 실행되고 있지 않더라도 큐를 사용하여 통신할 수 있습니다.  
   
- MSMQ는 HTTP 사용(HTTPS 사용 포함)을 통해 큐에 메시지를 보낼 수 있게 합니다. 이 예제에서는 Windows Communication Foundation (WCF)를 사용 하 여 대기 중인 통신을 HTTP를 통해 메시지를 전송 하는 방법을 보여 줍니다. MSMQ는 HTTP를 통한 통신에 사용되는 SOAP 기반 프로토콜인 SRMP라는 프로토콜을 사용합니다.  
+ MSMQ는 HTTP 사용(HTTPS 사용 포함)을 통해 큐에 메시지를 보낼 수 있게 합니다. 이 예에서는 Windows Communication Foundation (WCF)를 사용 하 여 대기 중인 통신을 HTTP를 통해 메시지를 보내는 방법을 보여 줍니다. MSMQ는 HTTP를 통한 통신에 사용되는 SOAP 기반 프로토콜인 SRMP라는 프로토콜을 사용합니다.  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-3.  지침에 따라 단일 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+3.  단일 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
-4.  이 샘플을 실행 하기 전에 **Windows 구성 요소 추가/제거**, MSMQ가 설치 되어 있는지 확인 하십시오. HTTP 지원과 함께 합니다. HTTP 지원을 설치하면 IIS(인터넷 정보 서비스)가 자동으로 설치되고 MSMQ용 IIS에서 프로토콜 지원이 추가됩니다.  
+4.  샘플을 실행 하기 전에 **Windows 구성 요소 추가/제거**, MSMQ가 설치 되어 있는지 확인 합니다. HTTP 지원과 함께 합니다. HTTP 지원을 설치하면 IIS(인터넷 정보 서비스)가 자동으로 설치되고 MSMQ용 IIS에서 프로토콜 지원이 추가됩니다.  
   
 5.  HTTP를 통신에 사용하도록 하려면 MSMQ를 강화된 모드에서 실행할 수 있도록 설정합니다. 이렇게 하면 컴퓨터에서 호스트되는 큐에 보내는 어떠한 메시지도 HTTP가 아닌 전송을 사용하여 도달할 수 없습니다.  
   
@@ -32,13 +32,13 @@ ms.locfileid: "33805501"
   
 7.  서비스를 실행합니다.  
   
-8.  클라이언트를 실행합니다. localhost 대신 컴퓨터 이름이나 IP 주소를 가리키도록 끝점 주소를 변경해야 합니다. 클라이언트는 메시지를 보내고 종료합니다.  
+8.  클라이언트를 실행합니다. localhost 대신 컴퓨터 이름이나 IP 주소를 가리키도록 엔드포인트 주소를 변경해야 합니다. 클라이언트는 메시지를 보내고 종료합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  이 샘플을 실행하려면 MSMQ 외에 서비스와 클라이언트 컴퓨터 둘 다에 IIS가 설치되어 있어야 합니다.  
   
 ## <a name="demonstrates"></a>세부 항목  
- 샘플 WCF 전송 HTTP를 통해 MSMQ를 사용 하 여 메시지 큐에 대기 합니다. 이를 SRMP 메시징이라고도 합니다. 대기 중인 메시지를 보낼 경우 보내는 컴퓨터의 MSMQ는 TCP 또는 HTTP 전송을 통해 수신 큐 관리자에게 메시지를 전송합니다. 사용자는 SRMP를 선택하여 큐 전송을 위한 전송 프로토콜로 HTTP가 사용된다는 것을 나타냅니다. SRMP 보안에서는 HTTPS 사용이 허용됩니다.  
+ 샘플 WCF 전송 하는 방법을 보여 줍니다 HTTP를 통해 MSMQ를 사용 하 여 메시지 큐에 대기 합니다. 이를 SRMP 메시징이라고도 합니다. 대기 중인 메시지를 보낼 경우 보내는 컴퓨터의 MSMQ는 TCP 또는 HTTP 전송을 통해 수신 큐 관리자에게 메시지를 전송합니다. 사용자는 SRMP를 선택하여 큐 전송을 위한 전송 프로토콜로 HTTP가 사용된다는 것을 나타냅니다. SRMP 보안에서는 HTTPS 사용이 허용됩니다.  
   
 ## <a name="example"></a>예제  
  이 샘플 코드는 트랜잭션된 샘플에 기반을 둡니다. SRMP를 사용하여 큐에 메시지를 보내고 큐에서 메시지를 받는 방법은 네이티브 프로토콜을 사용하여 메시지를 보내고 받는 방법과 동일합니다.  
@@ -92,7 +92,7 @@ OrderDetails
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\SRMP`  
   

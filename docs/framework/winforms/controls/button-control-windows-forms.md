@@ -5,12 +5,12 @@ helpviewer_keywords:
 - buttons
 - Button control [Windows Forms]
 ms.assetid: d38bc40c-8040-4f19-9e88-2c665b0ab80b
-ms.openlocfilehash: d7eef53967962804033334750b9f3230b95a949d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a2f421afe8e64b38851b3063c7091d9ee105ade9
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33525089"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332021"
 ---
 # <a name="button-control-windows-forms"></a>Button 컨트롤(Windows Forms)
 사용자는 Windows Forms `Button` 컨트롤을 클릭하여 작업을 수행할 수 있습니다. `Button` 컨트롤은 텍스트와 이미지를 둘 다 표시할 수 있습니다. 단추를 클릭하면 눌렀다 놓는 것처럼 표시됩니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "33525089"
  [Windows Forms Button 컨트롤 선택 방법](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  
  단추를 선택하는 방법을 나열합니다.  
   
- 또한 참조 [하는 방법: 디자이너의 적용 단추 사용 하 여 Windows Forms 단추를 지정](../../../../docs/framework/winforms/controls/designate-a-wf-button-as-the-accept-button-using-the-designer.md) 및 [하는 방법: 디자이너의 취소 단추 사용 하 여 Windows Forms 단추를 지정](../../../../docs/framework/winforms/controls/designate-a-wf-button-as-the-cancel-button-using-the-designer.md)합니다.  
+ 도 참조 하세요 [방법: 디자이너를 수락 단추 사용 하 여 Windows Forms 단추를 지정](../../../../docs/framework/winforms/controls/designate-a-wf-button-as-the-accept-button-using-the-designer.md) 및 [방법: 지정 Windows Forms 단추를 취소 단추를 사용 하 여 디자이너](../../../../docs/framework/winforms/controls/designate-a-wf-button-as-the-cancel-button-using-the-designer.md)합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.Button> 클래스  
@@ -41,4 +41,4 @@ ms.locfileid: "33525089"
  [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  사용 방법에 대한 정보 링크를 포함하는 Windows Forms 컨트롤의 전체 목록을 제공합니다.  
   
- 또한 참조 [대화 상자에 사용자 입력](http://msdn.microsoft.com/library/63ad8645-6842-45e8-b215-73f778e29a55) 및 [하는 방법: 대화 상자 닫기 및 사용자 입력 유지](http://msdn.microsoft.com/library/9e118fad-3bf4-4f70-a3de-a0cda2b0229d)합니다.
+ 도 참조 하세요 [대화 상자에 사용자 입력](https://msdn.microsoft.com/library/63ad8645-6842-45e8-b215-73f778e29a55) 하 고 [방법: 대화 상자 닫기 및 사용자 입력 유지](https://msdn.microsoft.com/library/9e118fad-3bf4-4f70-a3de-a0cda2b0229d)합니다.

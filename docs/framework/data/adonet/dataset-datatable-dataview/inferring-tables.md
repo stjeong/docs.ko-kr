@@ -2,15 +2,15 @@
 title: 테이블 유추
 ms.date: 03/30/2017
 ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
-ms.openlocfilehash: b14cbc39b02136ac7f226faf2636a69ac072f529
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 38709f91e01c7f85d9e8482bdd49bc0892121f09
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32757829"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332855"
 ---
 # <a name="inferring-tables"></a>테이블 유추
-XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO.NET에서는 우선 테이블을 나타내는 XML 요소를 결정합니다. 다음 XML 구조에 대 한 테이블의 결과 **DataSet** 스키마:  
+XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO.NET에서는 우선 테이블을 나타내는 XML 요소를 결정합니다. 다음 XML 구조에 대 한 테이블의 결과 **데이터 집합** 스키마:  
   
 -   특성이 있는 요소  
   
@@ -32,7 +32,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  **데이터 집합:** DocumentElement  
   
- **Table:** Element1  
+ **테이블:** Element1  
   
 |attr1|Element1_Text|  
 |-----------|--------------------|  
@@ -54,13 +54,13 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  **데이터 집합:** DocumentElement  
   
- **Table:** Element1  
+ **테이블:** Element1  
   
 |ChildElement1|  
 |-------------------|  
 |Text1|  
   
- 문서 요소 또는 루트 요소는 열로 유추되는 특성이나 자식 요소를 갖고 있는 경우 유추된 테이블이 됩니다. 문서 요소에 특성이 나 열으로 유추 되는 자식 요소가 있는 경우 요소도 유추 됩니다는 **DataSet**합니다. 예를 들어, 다음과 같은 XML을 가정해 봅시다.  
+ 문서 요소 또는 루트 요소는 열로 유추되는 특성이나 자식 요소를 갖고 있는 경우 유추된 테이블이 됩니다. 문서 요소가 없는 특성과 열으로 유추 되는 자식 요소가 없는 요소도 유추 됩니다는 **데이터 집합**합니다. 예를 들어, 다음과 같은 XML을 가정해 봅시다.  
   
 ```xml  
 <DocumentElement>  
@@ -73,7 +73,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  **데이터 집합:** NewDataSet  
   
- **Table:** DocumentElement  
+ **테이블:** DocumentElement  
   
 |Element1|Element2|  
 |--------------|--------------|  
@@ -87,11 +87,11 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
 </DocumentElement>  
 ```  
   
- 위 유추 과정에서 생성 한 **DataSet** "Element1" 이라는 테이블이 포함 된 "DocumentElement" 라는  
+ 유추 과정에서 생성 된 **데이터 집합** "Element1." 라는 테이블을 포함 하는 "DocumentElement" 라는  
   
  **데이터 집합:** DocumentElement  
   
- **Table:** Element1  
+ **테이블:** Element1  
   
 |attr1|attr2|  
 |-----------|-----------|  
@@ -111,7 +111,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  **데이터 집합:** DocumentElement  
   
- **Table:** Element1  
+ **테이블:** Element1  
   
 |Element1_Text|  
 |--------------------|  
@@ -124,4 +124,4 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
  [XML에서 데이터 집합 스키마 정보 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)  
  [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
  [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

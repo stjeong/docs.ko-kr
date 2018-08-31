@@ -2,12 +2,12 @@
 title: 기본 유효성 검사
 ms.date: 03/30/2017
 ms.assetid: ba1343cc-aaab-4ade-b0c0-1dd5063bf4ad
-ms.openlocfilehash: db7db339d0b7bfd756d8ba22fb8488b8f7ecfa3c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 74d99e2d426e9ea5701fad80418fdf019112cc9e
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33514088"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43332735"
 ---
 # <a name="basic-validation"></a>기본 유효성 검사
 이 샘플은 `CreateProduct` 인수가 `Cost` 인수보다 작거나 같은지 확인하는 `Price` 활동으로 이루어져 있습니다.  
@@ -40,6 +40,6 @@ ms.locfileid: "33514088"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Validation\BasicValidation`
