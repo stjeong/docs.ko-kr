@@ -7,26 +7,26 @@ helpviewer_keywords:
 - controls [Windows Forms], positioning
 - controls [Windows Forms], aligning
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
-ms.openlocfilehash: 6520aef7d04694b6fcd7f50da84a2a9cea6e7b64
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 44bbf2503087a0e8b7f178b1c7b7fe65b50496d8
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33528592"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43253226"
 ---
 # <a name="how-to-align-multiple-controls-on-windows-forms"></a>방법: Windows Forms에서 여러 컨트롤 맞춤
-Windows 기반 응용 프로그램의 사용자 인터페이스 (UI)의 레이아웃을 표준화 하는 단일 명령으로 컨트롤 그룹을 배치할 수 있습니다.  
+Windows 기반 응용 프로그램의 사용자 인터페이스 (UI) 레이아웃 표준화를 단일 명령 사용 하 여 컨트롤의 그룹을 배치할 수 있습니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ### <a name="to-align-multiple-controls-on-a-form"></a>폼에 여러 컨트롤을 맞추려면  
   
-1.  에 배치 하려면 컨트롤을 포함 하 여 양식을 엽니다는 **Windows Forms 디자이너**합니다.  
+1.  컨트롤의 위치를 포함 하는 폼을 엽니다는 **Windows Forms 디자이너**합니다.  
   
-2.  선택한 첫 번째 컨트롤은 다른 해야 맞출 수 있는 기본 컨트롤에 오도록 정렬 하려는 컨트롤을 선택 합니다.  
+2.  선택한 첫 번째 컨트롤을 다른 맞춰야 할 기본 컨트롤 되도록 정렬 하려면 컨트롤을 선택 합니다.  
   
-3.  에 **형식** 메뉴에서 **맞춤**를 사용할 수 있는 7 개 중 하나를 클릭 합니다.  
+3.  에 **형식** 메뉴에서 **맞춤**, 사용할 수 있는 7 개 중 하나를 클릭 하 고 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)  

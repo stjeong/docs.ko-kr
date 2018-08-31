@@ -9,19 +9,19 @@ helpviewer_keywords:
 - inheritance [Windows Forms], forms
 - Windows Forms, inheritance
 ms.assetid: cb3e1c0f-3d2a-4cdc-b0d1-c92eae567ffb
-ms.openlocfilehash: ce938d922560c96b5ce3c76756d409af5858492d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 275ae52a36ed9766e2569bd6c8ecdea78ea56e0b
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33522904"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43255084"
 ---
 # <a name="how-to-inherit-windows-forms"></a>방법: Windows Forms 상속
 기본 폼에서 상속해서 새 Windows Forms를 만드는 것은 필요할 때마다 폼을 전체적으로 다시 만드는 프로세스를 거치지 않고 최선의 노력을 되풀이하는 편리한 방법입니다.  
   
  디자인 타임에서 **상속 선택** 대화 상자를 사용하여 양식을 상속하는 방법과 상속된 컨트롤의 보안 수준을 시각적으로 구분하는 방법에 대한 자세한 내용은 [방법: 상속 선택 대화 상자를 사용하여 양식 상속](../../../../docs/framework/winforms/advanced/how-to-inherit-forms-using-the-inheritance-picker-dialog-box.md)을 참조하세요.  
   
- **참고** 양식을 상속받으려면 해당 양식이 포함된 파일 또는 네임스페이스가 실행 파일 또는 DLL로 빌드되었어야 합니다. 프로젝트를 빌드하려면 **빌드** 메뉴에서 **빌드**를 선택합니다. 또한 네임스페이스에 대한 참조는 폼을 상속하는 클래스에 추가되어야 합니다. 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+ **참고** 양식을 상속받으려면 해당 양식이 포함된 파일 또는 네임스페이스가 실행 파일 또는 DLL로 빌드되었어야 합니다. 프로젝트를 빌드하려면 **빌드** 메뉴에서 **빌드**를 선택합니다. 또한 네임스페이스에 대한 참조는 폼을 상속하는 클래스에 추가되어야 합니다. 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ### <a name="to-inherit-a-form-programmatically"></a>폼을 프로그래밍 방식으로 상속하려면 다음을 수행합니다.  
   

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - schemaImporterExtensions element
 - <schemaImporterExtensions> element
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
-ms.openlocfilehash: c9f4f6800c2718c3b2c2b9b5b2b6d97e1114dbcb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8bcd8abb138c645f61bf833b49cda2631d1778dd
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581331"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43255631"
 ---
 # <a name="ltschemaimporterextensionsgt-element"></a>&lt;schemaImporterExtensions&gt; 요소
 <xref:System.Xml.Serialization.XmlSchemaImporter>에서 XSD 형식을 .NET Framework 형식으로 매핑하는 데 사용되는 형식을 포함합니다. 구성 파일에 대한 자세한 내용은 [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)를 참조하세요.  
@@ -21,14 +21,14 @@ ms.locfileid: "33581331"
 ```xml  
 <schemaImporterExtensions>  
     <!-- Add types -->  
-</SchemaImporterExtension>  
+</schemaImporterExtensions>  
 ```  
   
 ## <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<xmlSchemaImporterExtensions>에 대한 \<add> 요소](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)|<xref:System.Xml.Serialization.XmlSchemaImporter>에서 매핑을 만들기 위해 사용하는 형식을 추가합니다.|  
+|[\<추가 > 요소에 대 한 \<schemaImporterExtensions >](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)|<xref:System.Xml.Serialization.XmlSchemaImporter>에서 매핑을 만들기 위해 사용하는 형식을 추가합니다.|  
   
 ## <a name="parent-elements"></a>부모 요소  
   
@@ -47,7 +47,7 @@ ms.locfileid: "33581331"
         System.Web.Mobile, Version - 2.0.0.0, Culture = neutral,   
         PublicKeyToken = b03f5f6f11d40a3a" />  
     </schemaImporterExtensions>  
-/system.sxml.serializaiton>  
+</system.xml.serialization>  
 ```  
   
 ## <a name="see-also"></a>참고 항목  
@@ -55,5 +55,5 @@ ms.locfileid: "33581331"
  <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
  [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)  
  [\<dateTimeSerialization> 요소](../../../docs/standard/serialization/datetimeserialization-element.md)  
- [\<xmlSchemaImporterExtensions>에 대한 \<add> 요소](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
+ [\<추가 > 요소에 대 한 \<schemaImporterExtensions >](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
  [\<system.xml.serialization> 요소](../../../docs/standard/serialization/system-xml-serialization-element.md)

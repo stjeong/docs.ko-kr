@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: d1cc754fcf7d1defa815bb0a74b7c2b4a6909478
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999395"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43255286"
 ---
 # <a name="getmethodorigin-function"></a>GetMethodOrigin 함수
 메서드 선언 되는 클래스를 결정 합니다.

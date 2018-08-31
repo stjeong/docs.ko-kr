@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 33c73e58be39a7f1ffa9300947c3ee552231adab
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754447"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43257495"
 ---
 # <a name="endenumeration-function"></a>EndEnumeration 함수
 에 대 한 호출을 시작 하는 열거형 시퀀스를 종료 합니다 [BeginEnumeration 함수](beginenumeration.md)합니다.  

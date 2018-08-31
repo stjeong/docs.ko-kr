@@ -11,11 +11,11 @@ helpviewer_keywords:
 - WCF Data Services, customizing feeds
 ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ms.openlocfilehash: 0b83369a00cdd21b64c53834a7f6e7bcea09a26a
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199175"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43258565"
 ---
 # <a name="feed-customization-wcf-data-services"></a>피드 사용자 지정(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용 하 여는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 데이터 피드로 노출 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 데이터 피드의 Atom 및 개체 JSON (JavaScript Notation) 형식을 지원합니다. Atom 피드를 사용 하는 경우 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 같은 엔터티 및 관계를 HTTP 메시지의 본문에 포함 될 수 있는 XML 형식으로 데이터를 serialize 하는 표준 방법을 제공 합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 엔터티에 포함 된 데이터 및 Atom 요소 간의 기본 엔터티 속성 매핑을 정의 합니다. 자세한 내용은 [OData: Atom 형식](http://go.microsoft.com/fwlink/?LinkID=185794)합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "39199175"
  사용자 지정 데이터 서비스 공급자를 사용하여 정의된 데이터 모델의 피드 사용자 지정은 데이터 모델의 엔터티 형식을 나타내는 <xref:System.Data.Services.Providers.ResourceType.AddEntityPropertyMappingAttribute%2A>의 <xref:System.Data.Services.Providers.ResourceType>를 호출하여 리소스 형식에 대해 정의됩니다. 자세한 내용은 [사용자 지정 데이터 서비스 공급자](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)합니다.  
   
 ## <a name="consuming-custom-feeds"></a>사용자 지정 피드 사용  
- 응용 프로그램을 직접 사용을 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드에 있어야 모든 사용자 지정된 요소와 특성을 반환 된 피드의 처리 합니다. 데이터 서비스 공급자에 관계없이 데이터 모델에 사용자 지정 피드를 구현한 경우 `$metadata` 끝점은 사용자 지정 피드 정보를 데이터 서비스에서 반환된 CSDL에 사용자 지정 피드 특성으로 반환합니다. 사용 하는 경우는 **서비스 참조 추가** 대화 상자 또는 [datasvcutil.exe](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md) 클라이언트 데이터 서비스 클래스, 사용자 지정된 피드 특성이 요청 하는 데 사용 됩니다 및 응답을 생성 하는 도구 데이터 서비스를 올바르게 처리 됩니다.  
+ 응용 프로그램을 직접 사용을 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드에 있어야 모든 사용자 지정된 요소와 특성을 반환 된 피드의 처리 합니다. 데이터 서비스 공급자에 관계없이 데이터 모델에 사용자 지정 피드를 구현한 경우 `$metadata` 엔드포인트는 사용자 지정 피드 정보를 데이터 서비스에서 반환된 CSDL에 사용자 지정 피드 특성으로 반환합니다. 사용 하는 경우는 **서비스 참조 추가** 대화 상자 또는 [datasvcutil.exe](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md) 클라이언트 데이터 서비스 클래스, 사용자 지정된 피드 특성이 요청 하는 데 사용 됩니다 및 응답을 생성 하는 도구 데이터 서비스를 올바르게 처리 됩니다.  
   
 ## <a name="feed-customization-considerations"></a>피드 사용자 지정 고려 사항  
  사용자 지정 피드 매핑을 정의할 때는 다음을 고려해야 합니다.  

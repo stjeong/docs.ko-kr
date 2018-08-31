@@ -11,11 +11,11 @@ helpviewer_keywords:
 - errors [Visual Basic], simulating
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
 ms.openlocfilehash: 84fce92183228cbfa5554a3ba45770a86e83bff5
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199481"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43253518"
 ---
 # <a name="error-statement"></a>Error 문
 오류의 발생을 시뮬레이션 합니다.  
@@ -49,7 +49,7 @@ Error errornumber
 > [!NOTE]
 >  일부 Visual Basic 호스트 응용 프로그램 개체를 만들 수 없습니다. 클래스 및 개체를 만들 수 있는지 확인 하려면 호스트 응용 프로그램의 설명서를 참조 하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `Error` 문의 오류 번호 11을 생성 합니다.  
   
 ```  

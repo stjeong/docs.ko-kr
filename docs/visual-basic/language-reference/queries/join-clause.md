@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Join clause [Visual Basic]
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 ms.openlocfilehash: b1551583079c66d1bf5f6963a42d5d24e518fff3
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933869"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43255299"
 ---
 # <a name="join-clause-visual-basic"></a>Join 절(Visual Basic)
 두 컬렉션을 단일 컬렉션으로 결합합니다. 조인 연산은 일치 하는 키 기준으로 하며 사용 하 여 `Equals` 연산자입니다.  
@@ -56,12 +56,12 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
   
  사용할 수는 `Group Join` 절을 단일 계층 구조 컬렉션으로 결합할 수 있습니다. 비슷합니다는 `LEFT OUTER JOIN` sql에서입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 고객 목록을 고객의 주문을 결합할 암시적 조인을 수행 합니다.  
   
  [!code-vb[VbSimpleQuerySamples#13](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_1.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제를 사용 하 여 두 컬렉션 조인 된 `Join` 절.  
   
  [!code-vb[VbSimpleQuerySamples#12](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_2.vb)]  
@@ -74,7 +74,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
   
  `cmd (5136), Command Window`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제를 사용 하 여 두 컬렉션 조인 된 `Join` 두 개의 키 열을 사용 하 여 절.  
   
  [!code-vb[VbSimpleQuerySamples#17](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_3.vb)]  

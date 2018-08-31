@@ -7,12 +7,12 @@ helpviewer_keywords:
 - attributes [Windows Forms], control properties
 - attributes [Windows Forms], classes
 ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
-ms.openlocfilehash: e06836e53a69394ad899bedc8e545dbff9b9c29d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 272ce198a61e0d1bbe9c44514aaf51db72f5d04c
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33525780"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43257925"
 ---
 # <a name="attributes-in-windows-forms-controls"></a>Windows Forms 컨트롤의 특성
 .NET Framework는 사용자 지정 컨트롤 및 구성 요소의 멤버에 적용할 수 있는 다양한 특성을 제공합니다. 이러한 특성 중 일부는 클래스의 런타임 동작에 영향을 주고, 다른 일부는 디자인 타임 동작에 영향을 줍니다.  
@@ -24,10 +24,10 @@ ms.locfileid: "33525780"
 |---------------|-----------------|  
 |<xref:System.ComponentModel.AmbientValueAttribute>|속성이 다른 소스에서 값을 가져오도록 속성에 전달할 값을 지정합니다. 이를 *앰비언스*라고 합니다.|  
 |<xref:System.ComponentModel.BrowsableAttribute>|속성 또는 이벤트를 **속성** 창에 표시할지 여부를 지정합니다.|  
-|<xref:System.ComponentModel.CategoryAttribute>|속성 또는에 표시 될 때 이벤트를 그룹화 할 범주의 이름을 지정는 <xref:System.Windows.Forms.PropertyGrid> 컨트롤을 설정할 <xref:System.Windows.Forms.PropertySort.Categorized> 모드입니다.|  
+|<xref:System.ComponentModel.CategoryAttribute>|속성 또는 이벤트에 표시 될 때를 그룹화 할 범주의 이름을 지정 된 <xref:System.Windows.Forms.PropertyGrid> 컨트롤을 설정할 <xref:System.Windows.Forms.PropertySort.Categorized> 모드입니다.|  
 |<xref:System.ComponentModel.DefaultValueAttribute>|속성의 기본값을 지정합니다.|  
 |<xref:System.ComponentModel.DescriptionAttribute>|속성 또는 이벤트에 대한 설명을 지정합니다.|  
-|<xref:System.ComponentModel.DisplayNameAttribute>|인수를 사용하지 않는 속성, 이벤트 또는 `public``void` 메서드에 대한 표시 이름을 지정합니다.|  
+|<xref:System.ComponentModel.DisplayNameAttribute>|인수를 사용하지 않는 속성, 이벤트 또는 `public void` 메서드에 대한 표시 이름을 지정합니다.|  
 |<xref:System.ComponentModel.EditorAttribute>|속성을 변경하는 데 사용할 편집기를 지정합니다.|  
 |<xref:System.ComponentModel.EditorBrowsableAttribute>|속성 또는 메서드를 편집기에서 볼 수 있도록 지정합니다.|  
 |<xref:System.ComponentModel.Design.HelpKeywordAttribute>|클래스나 멤버의 컨텍스트 키워드를 지정합니다.|  

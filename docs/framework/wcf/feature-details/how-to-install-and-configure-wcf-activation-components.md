@@ -4,29 +4,29 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: f362bd1e4a644488e85cdeca674d46ca340bde05
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cd792c2c26898cd3dfd7b52d865fa83636c426eb
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33491750"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43253975"
 ---
 # <a name="how-to-install-and-configure-wcf-activation-components"></a>방법: WCF Activation 구성 요소 설치 및 구성
-이 항목에서는에 Windows Process Activation Service (WAS 라고도 함)를 설정 하는 데 필요한 단계를 설명 [!INCLUDE[wv](../../../../includes/wv-md.md)] 네트워크 프로토콜을 HTTP를 통해 통신 하지 않는 서비스를 호스팅하려면 Windows Communication Foundation (WCF). 다음 단원에서는 이 구성 단계에 대해 간략히 설명합니다.  
+이 항목에서는에 Windows Process Activation Service (WAS 라고도 함)을 설정 하는 데 필요한 단계를 설명 [!INCLUDE[wv](../../../../includes/wv-md.md)] HTTP를 통해 통신 하지 않는 서비스 네트워크 프로토콜을 Windows Communication Foundation (WCF)를 호스트 합니다. 다음 단원에서는 이 구성 단계에 대해 간략히 설명합니다.  
   
 -   설치 (또는 설치를 확인) WCF activation 구성 요소입니다.  
   
 -   HTTP가 아닌 프로토콜을 지원하도록 WAS를 구성합니다. 다음 절차에서는 TCP 활성화를 위해 [!INCLUDE[wv](../../../../includes/wv-md.md)]를 구성합니다.  
   
- 설치 하 고 WAS 구성 참조 후 [하는 방법: WAS에서 WCF 서비스 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md) 를 WAS를 사용 하는 HTTP가 아닌 끝점을 노출 하는 WCF 서비스를 만드는 절차에 대 한 합니다.  
+ WAS를 설치 및 구성을 확인 한 후 [방법: WAS에서 WCF 서비스 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md) 여 WAS를 사용 하는 HTTP가 아닌 끝점을 노출 하는 WCF 서비스를 만드는 절차에 대 한 합니다.  
   
 ### <a name="to-install-the-wcf-non-http-activation-components"></a>WCF Non-HTTP Activation 구성 요소를 설치하려면  
   
-1.  클릭는 **시작** 단추를 선택한 다음 클릭 **제어판**합니다.  
+1.  클릭 합니다 **시작** 단추를 클릭 한 다음 클릭 **제어판**합니다.  
   
-2.  클릭 **프로그램**, 클릭 하 고 **프로그램 및 기능**합니다.  
+2.  클릭 **프로그램**를 클릭 하 고 **프로그램 및 기능**합니다.  
   
-3.  에 **작업** 메뉴를 클릭 하 여 **Windows 기능 설정 또는 해제**합니다.  
+3.  에 **태스크** 메뉴에서 클릭 **설정할 Windows 기능 사용 /** 합니다.  
   
 4.  [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] 노드를 찾아서 선택한 다음 확장합니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "33491750"
     ```  
   
     > [!NOTE]
-    >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다. 이 명령을 사용 하 여 /\<*WCF 응용 프로그램*> 응용 프로그램에 모두 사용 하 여 액세스할 수 http://localhost  */ \<WCF 응용 프로그램 >* 및 net.tcp:// localhost /*\<WCF 응용 프로그램 >* 합니다.  
+    >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다. 이 명령을 사용 하는 /\<*WCF 응용 프로그램*> 응용 프로그램에 모두 사용 하 여 액세스할 수 `http://localhost/<WCF Application>` 고 `net.tcp://localhost/<WCF Application>`입니다.
   
      이 샘플에 대해 추가한 net.tcp 사이트 바인딩을 제거합니다.  
   

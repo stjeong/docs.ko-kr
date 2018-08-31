@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 846d41c31687df98b019f103e42cf586a23d8ff1
-ms.sourcegitcommit: 43924acbdbb3981d103e11049bbe460457d42073
+ms.openlocfilehash: bf5604472331f336c427ded36fc1666f16310ea2
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34457570"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43254355"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>대형 응답성 .NET Framework 응용 프로그램 작성
 이 문서에서는 규모가 큰 .NET Framework 앱이나 파일 또는 데이터베이스와 같이 많은 양의 데이터를 처리하는 앱의 성능을 향상시키기 위한 팁을 제공합니다. 이러한 팁은 C# 및 Visual Basic 컴파일러를 관리 코드로 다시 작성하면서 수집되었으며, C# 컴파일러의 실제 몇 가지 예를 포함하고 있습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "34457570"
   
  최종 사용자는 앱과 상호 작용할 때 앱이 응답성을 유지할 것을 기대합니다.  입력이나 명령 처리가 차단되어서는 안 됩니다.  사용자가 입력을 계속하면 도움말은 신속하게 나타나거나 표시되지 않아야 합니다.  앱은 앱이 느리다고 느끼게 하는 오랜 계산으로 UI 스레드를 차단하는 것을 피해야 합니다.  
   
- Roslyn 컴파일러에 대 한 자세한 내용은 참조는 [dotnet/roslyn](https://github.com/dotnet/roslyn) GitHub의 리포지토리 합니다.
+ Roslyn 컴파일러에 대 한 자세한 내용은 참조는 [dotnet/roslyn](https://github.com/dotnet/roslyn) github 리포지토리.
  <!-- TODO: replace with link to Roslyn conceptual docs once that's published -->
   
 ## <a name="just-the-facts"></a>팩트  
@@ -196,7 +196,7 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
 // etc...  
 ```  
   
- `WriteFormattedDocComment()`의 첫 번째 버전에서는 배열, 여러 부분 문자열 및 잘라낸 부분 문자열과 함께 빈 `params` 배열을 할당했습니다.  또한 첫 번째 버전에서는 `"///"`를 확인했습니다.  수정된 코드에서는 인덱싱만 사용하며 아무것도 할당하지 않습니다.  수정된 코드에서는 공백이 아닌 첫 번째 문자를 찾은 다음, 문자를 한 자씩 확인하여 문자열이 `"///"`로 시작하는지 여부를 확인합니다.  새 코드에서는 `IndexOfFirstNonWhiteSpaceChar` 대신 <xref:System.String.TrimStart%2A>을 사용하여 공백이 아닌 문자가 있는 첫 번째 인덱스(지정된 시작 인덱스 뒤)를 반환합니다.  해결 방법이 완벽하지는 않지만 완벽한 솔루션을 위해 유사한 해결 방법을 적용하는 방법을 확인할 수 있습니다.  코드 전체에 이 접근 방식을 적용하여 `WriteFormattedDocComment()`에서 모든 할당을 제거할 수 있습니다.  
+ `WriteFormattedDocComment()`의 첫 번째 버전에서는 배열, 여러 부분 문자열 및 잘라낸 부분 문자열과 함께 빈 `params` 배열을 할당했습니다.  또한 첫 번째 버전에서는 `"///"`를 확인했습니다.  수정된 코드에서는 인덱싱만 사용하며 아무것도 할당하지 않습니다.  수정된 코드에서는 공백이 아닌 첫 번째 문자를 찾은 다음, 문자를 한 자씩 확인하여 문자열이 `"///"`로 시작하는지 여부를 확인합니다.  새 코드를 사용 하 여 `IndexOfFirstNonWhiteSpaceChar` 대신 <xref:System.String.TrimStart%2A> 발생 하는 공백이 아닌 문자는 지정 된 시작 인덱스) (이후 첫 번째 인덱스를 반환할 합니다.  해결 방법이 완벽하지는 않지만 완벽한 솔루션을 위해 유사한 해결 방법을 적용하는 방법을 확인할 수 있습니다.  코드 전체에 이 접근 방식을 적용하여 `WriteFormattedDocComment()`에서 모든 할당을 제거할 수 있습니다.  
   
  **예제 4: StringBuilder**  
   
@@ -277,7 +277,7 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
  이 간단한 캐싱 전략은 크기 한도를 포함하므로 좋은 캐시 디자인을 준수합니다.  그러나 이제는 원본보다 코드가 많아져 유지 관리 비용이 더 듭니다.  성능 문제를 발견한 경우에만 캐싱 전략을 채택해야 하며, PerfView에 <xref:System.Text.StringBuilder> 할당이 중요한 기여 요소라는 사실이 표시되어 있습니다.  
   
 ### <a name="linq-and-lambdas"></a>LINQ 및 람다  
- LINQ(Language-Integrated Query) 및 람다 식을 사용하는 것은 나중에 코드가 성능에 중요한 영향을 미치는 경우 다시 작성해야 하는 생산성 기능 사용의 좋은 예입니다.  
+언어 통합 쿼리 (LINQ), 람다 식과 함께에서는 예제는 생산성 기능입니다. 그러나 사용 시간이 지남에 따라 성능에 상당한 영향을 미칠 수 있습니다 하 고 코드를 다시 작성 해야 할 수 있습니다.
   
  **예제 5: 람다, List\<T> 및 IEnumerable\<T>**  
   
@@ -305,7 +305,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- 첫 번째 줄에서 [람다 식](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)`s => s.Name == name`[은 ](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx)지역 변수 `name`을 닫습니다.  즉, 이 코드에서는 `predicate`를 유지하는 [대리자](~/docs/csharp/language-reference/keywords/delegate.md)에 대한 개체를 할당할 뿐만 아니라 `name`의 값을 캡처하는 환경을 유지하기 위한 정적 클래스를 할당합니다.  컴파일러는 다음과 같은 코드를 생성합니다.  
+ 첫 번째 줄에는 [람다 식](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [를](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) 지역 변수 `name`합니다.  즉, 이 코드에서는 `predicate`를 유지하는 [대리자](~/docs/csharp/language-reference/keywords/delegate.md)에 대한 개체를 할당할 뿐만 아니라 `name`의 값을 캡처하는 환경을 유지하기 위한 정적 클래스를 할당합니다.  컴파일러는 다음과 같은 코드를 생성합니다.  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  
@@ -412,7 +412,7 @@ class Compilation { /*...*/
   
  **예제 6에 대한 해결 방법**  
   
- 완료 된 제거 하려면 <xref:System.Threading.Tasks.Task> 할당을 완료 된 결과로 Task 개체를 캐시할 수 있습니다.  
+ 완료 된 제거할 <xref:System.Threading.Tasks.Task> 할당 완료 된 결과로 Task 개체를 캐시할 수 있습니다.  
   
 ```csharp  
 class Compilation { /*...*/  
@@ -462,12 +462,12 @@ class Compilation { /*...*/
 -   결국은 모두 할당에 관련된 문제임 – 이 부분이 바로 컴파일러 플랫폼 팀이 새 컴파일러의 성능을 향상시키기 위해 대부분의 시간을 사용하는 부분입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [이 항목의 표현의 비디오](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
+ [이 항목의 프레젠테이션 비디오](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
  [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
  [성능](../../../docs/framework/performance/index.md)  
  [.NET 성능 팁](http://msdn.microsoft.com/library/ms973839.aspx)  
  [Windows Phone 성능 분석 도구](http://msdn.microsoft.com/magazine/hh781024.aspx)  
- [Visual Studio 프로파일러를 사용한 응용 프로그램 병목 지점 찾기](http://msdn.microsoft.com/magazine/cc337887.aspx)  
+ [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](http://msdn.microsoft.com/magazine/cc337887.aspx)  
  [채널 9 PerfView 자습서](http://channel9.msdn.com/Series/PerfView-Tutorial)  
- [상위 수준 성능 팁](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
- [GitHub의 리포지토리 dotnet/roslyn](https://github.com/dotnet/roslyn)
+ [개괄적인 성능 팁](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
+ [GitHub의 dotnet/roslyn 리포지토리](https://github.com/dotnet/roslyn)

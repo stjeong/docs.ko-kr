@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b8b579c2c3ae22469706326ee17109b8e39dab60
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 479f9f639548eb81351d1df3f8f08b29b393cba1
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33650792"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43257251"
 ---
 # <a name="-moduleassemblyname"></a>-moduleassemblyname
 이 모듈이 속할 어셈블리의 이름을 지정합니다.  
@@ -28,29 +28,29 @@ ms.locfileid: "33650792"
   
 |용어|정의|  
 |---|---|  
-|`assembly_name`|이 모듈의 포함 될 하는 어셈블리의 이름입니다.|  
+|`assembly_name`|이 모듈에 포함 될 어셈블리의 이름입니다.|  
   
 ## <a name="remarks"></a>설명  
- 컴파일러 프로세스는 `-moduleassemblyname` 경우에만 옵션은 `-target:module` 옵션이 지정 되었습니다. 이 모듈을 만들려면 컴파일러가 합니다. 컴파일러에서 생성 된 모듈은 지정 된 어셈블리에만 유효는 `-moduleassemblyname` 옵션입니다. 다른 어셈블리에 모듈을 배치 하는 경우 런타임 오류가 발생 합니다.  
+ 컴파일러 프로세스를 `-moduleassemblyname` 경우에만 옵션을 `-target:module` 옵션이 지정 되었습니다. 이렇게 하면 컴파일러는 모듈을 만듭니다. 컴파일러에서 생성 된 모듈은 지정 된 어셈블리에만 유효 합니다 `-moduleassemblyname` 옵션입니다. 다른 어셈블리에 모듈을 배치 하는 경우 런타임 오류가 발생 합니다.  
   
  `-moduleassemblyname` 옵션 다음에 해당할 경우에 필요 합니다.  
   
--   모듈의 데이터 형식에 액세스 해야 하는 `Friend` 는 참조 된 어셈블리의 형식입니다.  
+-   모듈의 데이터 형식에 대 한 액세스에 필요한를 `Friend` 참조 된 어셈블리의 형식입니다.  
   
--   참조 된 어셈블리에 모듈이 빌드될 어셈블리에 friend 어셈블리 액세스를 부여 합니다.  
+-   참조 된 어셈블리에 모듈을 빌드는 어셈블리를 friend 어셈블리 액세스 권한을 부여한 합니다.  
   
- 모듈을 만드는 방법에 대 한 자세한 내용은 참조 [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)합니다. Friend 어셈블리에 대 한 자세한 내용은 참조 [Friend 어셈블리](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)합니다.  
+ 모듈을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)합니다. Friend 어셈블리에 대 한 자세한 내용은 참조 하세요. [Friend 어셈블리](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)합니다.  
   
 > [!NOTE]
->  `-moduleassemblyname` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 없습니다; 가능 하다는 명령 프롬프트에서 컴파일할 때만 합니다.  
+>  `-moduleassemblyname` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 없는 경우 즉, 사용할 수 있는 명령 프롬프트에서 컴파일할 때만 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 다중 파일 어셈블리 빌드](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)  
  [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-대상 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
+ [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
  [-main](../../../visual-basic/reference/command-line-compiler/main.md)  
  [-참조 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
  [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
  [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Friend 어셈블리](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)
+ [Friend 어셈블리](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)

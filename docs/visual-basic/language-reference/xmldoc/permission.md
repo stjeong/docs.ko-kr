@@ -1,18 +1,18 @@
 ---
-title: '&lt;사용 권한&gt; (Visual Basic)'
+title: '&lt;권한&gt; (Visual Basic)'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - <permission> XML tag
 - permission XML tag
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
-ms.openlocfilehash: 4fafebf94be350951672f01f2d17bd00d4bab69a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bcec5d968f5d0c5400c28e772df151b164888a47
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33601997"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43257437"
 ---
-# <a name="ltpermissiongt-visual-basic"></a>&lt;사용 권한&gt; (Visual Basic)
+# <a name="ltpermissiongt-visual-basic"></a>&lt;권한&gt; (Visual Basic)
 멤버에 대 한 필요한 사용 권한을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -29,14 +29,14 @@ ms.locfileid: "33601997"
  멤버 액세스 권한에 대한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
- 사용 하 여는 `<permission>` 태그를 멤버의 액세스를 설명 합니다. 사용 된 <xref:System.Security.PermissionSet> 클래스 멤버에 대 한 액세스를 지정할 수 있습니다.  
+ 사용 된 `<permission>` 멤버에 대 한 액세스를 문서화 하는 태그입니다. 사용 된 <xref:System.Security.PermissionSet> 멤버에 대 한 액세스를 지정 하는 클래스입니다.  
   
  [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
   
 ## <a name="example"></a>예제  
- 사용 하 여이 예제는 `<permission>` 태그를 설명 하는 <xref:System.Security.Permissions.FileIOPermission> 에 필요한는 `ReadFile` 메서드.  
+ 이 예에서는 `<permission>` 태그를 설명 하는 <xref:System.Security.Permissions.FileIOPermission> 에 필요한는 `ReadFile` 메서드.  
   
  [!code-vb[VbVbcnXmlDocComments#7](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/permission_1.vb)]  
   
 ## <a name="see-also"></a>참고 항목  
- [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+ [XML 주석 태그](../../../visual-basic/language-reference/xmldoc/index.md)

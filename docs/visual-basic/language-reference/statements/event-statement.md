@@ -19,11 +19,11 @@ helpviewer_keywords:
 - declaring user-defined events
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
 ms.openlocfilehash: 5ae25cbca73f7c8e767cad0ac332d77c306724a1
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245438"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43256806"
 ---
 # <a name="event-statement"></a>Event 문
 사용자 정의된 이벤트를 선언합니다.  
@@ -93,7 +93,7 @@ End Event
   
  대부분의 경우 이 항목의 구문 섹션에 있는 첫 번째 구문을 이벤트 선언에 사용할 수 있습니다. 그러나 일부 시나리오에서는 이벤트의 세부 동작을 더 많이 제어해야 합니다. 이 항목의 구문 섹션에 있는 마지막 구문에서는 `Custom` 키워드를 사용하여 사용자 지정 이벤트를 정의할 수 있도록 함으로써 해당 제어를 제공합니다. 사용자 지정 이벤트에서는 코드가 이벤트에서 이벤트 처리기를 추가하거나 제거할 때 또는 코드에서 이벤트를 발생시킬 때 수행되는 동작을 정확히 지정합니다. 예제를 참조 하세요. [방법: 절약 메모리를 사용자 지정 이벤트 선언](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md) 및 [방법: 선언 사용자 지정 이벤트를 차단을 방지](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 이벤트를 사용하여 10초부터 0초까지 카운트 다운합니다. 코드는 여러 가지 이벤트 관련 메서드, 속성 및 문을 보여 줍니다. 여기에는 `RaiseEvent` 문이 포함됩니다.  
   
  이벤트를 발생시키는 클래스는 이벤트 소스이고 이벤트를 처리하는 메서드는 이벤트 처리기입니다. 이벤트 소스는 생성되는 이벤트에 대해 여러 개의 처리기를 사용할 수 있습니다. 클래스에서 이벤트를 발생시키면 해당 이벤트는 개체의 해당 인스턴스에 대해 이벤트를 처리하도록 선택한 모든 클래스에서 발생됩니다.  

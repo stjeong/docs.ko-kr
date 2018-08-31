@@ -15,12 +15,12 @@ helpviewer_keywords:
 - literals [Visual Basic], Date
 - '# specifier for Date literals'
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
-ms.openlocfilehash: b7827206d6e145b559d9716df5ec4a98ac4ea0b5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 32bd0912b0bae3340cffed010fc67431d0efb376
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591822"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43252949"
 ---
 # <a name="date-data-type-visual-basic"></a>Date 데이터 형식(Visual Basic)
 0001년 1월 1일부터 9999년 12월 31일까지의 날짜와 오전 12:00:00(자정)부터 오후 11:59:59.9999999까지의 시간을 나타내는 IEEE 64비트(8비트) 값을 보유합니다. 각 증분은 일반 달력에서 1년 1월 1일 시작 이후 경과된 시간의 100나노초를 나타냅니다. 최대값은 10000년 1월 1일 시작 이전 100나노초를 나타냅니다.  
@@ -76,7 +76,7 @@ Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.DateTime?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
  [표준 날짜 및 시간 형식 문자열](../../../standard/base-types/standard-date-and-time-format-strings.md)  
  [사용자 지정 날짜 및 시간 형식 문자열](../../../standard/base-types/custom-date-and-time-format-strings.md)  
  [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
