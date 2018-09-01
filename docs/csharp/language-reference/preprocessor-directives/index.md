@@ -7,12 +7,12 @@ helpviewer_keywords:
 - preprocessor directives [C#]
 - keywords [C#], preprocessor directives
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
-ms.openlocfilehash: 63a7bdb6d36794e0380ca84443926338fe926e4d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1c0a97cabce347be0bc9367f3d090a1fc699db19
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279921"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43422003"
 ---
 # <a name="c-preprocessor-directives"></a>C# 전처리기 지시문
 이 단원에서는 다음 C# 전처리기 지시문에 대한 정보를 제공합니다.
@@ -39,5 +39,6 @@ ms.locfileid: "33279921"
 전처리기 지시문은 한 줄에서 유일한 명령이어야 합니다.
 
 ## <a name="see-also"></a>참고 항목
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 07b19c062d314fe3280d9ebed818b484ff9d1b13
-ms.sourcegitcommit: c217b067985905cb21eafc5dd9a83568d7ff4e45
+ms.openlocfilehash: aef77e6f2ec572ec0969166770aaf617cc933d67
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36314752"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43387775"
 ---
 # <a name="get-started-with-the-net-framework"></a>.NET Framework 시작
 
@@ -69,7 +69,7 @@ Windows 8 이전 버전에서 .NET Framework를 제거하려는 경우에는 항
 
 1. 운영 체제에 사전 설치되지 않은 경우, 앱의 대상이 되는 .NET Framework 버전을 설치합니다. 최신 프로덕션 버전은 .NET Framework 4.7.2입니다. 이는 Windows 10 2018년 4월 업데이트에 사전 설치되어 있으며 이전 버전의 Windows 운영 체제에서 다운로드할 수 있습니다. .NET Framework 시스템 요구 사항은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하십시오. 다른 버전의 .NET Framework 설치에 대한 자세한 내용은 [설치 가이드](../../../docs/framework/install/guide-for-developers.md)를 참조하십시오. 추가 .NET Framework 패키지는 대역 외로 릴리스됩니다. 즉, 모든 일반 또는 예약된 릴리스 주기를 벗어난 롤링 방식으로 릴리스됩니다. 이러한 패키지에 대한 자세한 내용은 [.NET Framework 및 번외 릴리스](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)를 참조하십시오.
 
-2. 앱을 개발하는 데 사용하는 .NET Framework에서 지원하는 언어를 선택합니다. Microsoft의 [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md) 및 C++/CLI를 포함한 많은 언어를 사용할 수 있습니다. (.NET Framework용 앱을 개발할 수 있는 프로그래밍 언어는 [CLI(공용 언어 인프라) 사양](http://go.microsoft.com/fwlink/?LinkId=199862)을 준수합니다.)
+2. 앱을 개발하는 데 사용하는 .NET Framework에서 지원하는 언어를 선택합니다. Microsoft의 [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md) 및 C++/CLI를 포함한 많은 언어를 사용할 수 있습니다. (.NET Framework용 앱을 개발할 수 있는 프로그래밍 언어는 [CLI(공용 언어 인프라) 사양](https://go.microsoft.com/fwlink/?LinkId=199862)을 준수합니다.)
 
 3. 앱을 만드는 데 사용되며 선택된 프로그래밍 언어를 지원하는 개발 환경을 선택하고 설치합니다. .NET Framework 앱의 Microsoft IDE(통합 개발 환경)은 [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)입니다. 많은 버전을 사용 가능합니다.
 

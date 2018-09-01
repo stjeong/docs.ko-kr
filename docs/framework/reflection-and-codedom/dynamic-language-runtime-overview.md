@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 09cd345daffa2418b33f032e8bab47c81e2a8526
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 5a4645efc9276429cbdb0812f1ca501c89ea5dbb
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "33397288"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43393769"
 ---
 # <a name="dynamic-language-runtime-overview"></a>동적 언어 런타임 개요
 DLR(*동적 언어 런타임*)은 동적 언어에 대한 서비스 집합을 CLR(공용 언어 런타임)에 추가하는 런타임 환경입니다. DLR을 사용하면 .NET Framework에서 실행할 동적 언어를 개발하고 정적 형식의 언어에 동적 기능을 추가하기가 간편해집니다.  
@@ -52,7 +52,7 @@ DLR(*동적 언어 런타임*)은 동적 언어에 대한 서비스 집합을 CL
   
 -   IronPython. [GitHub](https://github.com/IronLanguages/ironpython2) 웹 사이트에서 오픈 소스 소프트웨어로 제공됩니다.  
   
--   IronRuby. [RubyForge](http://go.microsoft.com/fwlink/?LinkId=141044) 웹 사이트에서 오픈 소스 소프트웨어로 제공됩니다.  
+-   IronRuby. [RubyForge](https://go.microsoft.com/fwlink/?LinkId=141044) 웹 사이트에서 오픈 소스 소프트웨어로 제공됩니다.  
   
 ## <a name="primary-dlr-advantages"></a>기본 DLR 장점  
  DLR은 다음과 같은 장점을 제공합니다.  
@@ -80,7 +80,7 @@ DLR 아키텍처
   
  DLR은 동적 언어 지원을 개선하기 위해 서비스 집합을 CLR에 추가합니다. 이러한 서비스에는 다음 항목이 포함됩니다.  
   
--   식 트리. DLR은 식 트리를 사용하여 언어 의미 체계를 나타냅니다. 이 목적으로 DLR은 제어 흐름, 할당 및 기타 언어 모델링 노드를 포함하도록 LINQ 식 트리를 확장했습니다. 자세한 내용은 [식 트리](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)를 참조하세요.  
+-   식 트리. DLR은 식 트리를 사용하여 언어 의미 체계를 나타냅니다. 이 목적으로 DLR은 제어 흐름, 할당 및 기타 언어 모델링 노드를 포함하도록 LINQ 식 트리를 확장했습니다. 자세한 내용은 [식 트리](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)를 참조하세요.  
   
 -   호출 사이트 캐싱. *동적 호출 사이트*는 코드에서 동적 개체에 대해 `a + b` 또는 `a.b()` 같은 작업을 수행하는 위치입니다. DLR은 `a` 및 `b`의 특징(대개 이러한 개체의 형식)과 작업 정보를 캐시합니다. 해당 작업이 이전에 수행된 적이 있으면 DLR은 빠른 디스패치를 위해 캐시에서 모든 필요한 정보를 검색합니다.  
   
@@ -95,5 +95,5 @@ DLR 아키텍처
  <xref:System.Dynamic.ExpandoObject>  
  <xref:System.Dynamic.DynamicObject>  
  [공용 언어 런타임](../../../docs/standard/clr.md)  
- [식 트리](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)  
+ [식 트리](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)  
  [연습: 동적 개체 만들기 및 사용](~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

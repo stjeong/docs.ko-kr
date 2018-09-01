@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1f950779514975a3ee76af76506c7579e046537f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 323dfe7d68f5a6f6274ce23f82e25a337956b23c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393187"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43386430"
 ---
 # <a name="managed-extensibility-framework-mef"></a>MEF(Managed Extensibility Framework)
 이 항목에서는 .NET Framework 4에 도입된 Managed Extensibility Framework에 대해 간략하게 설명합니다.  
@@ -62,10 +62,10 @@ ms.locfileid: "33393187"
 ## <a name="simplecalculator-an-example-application"></a>SimpleCalculator: 예제 응용 프로그램  
  MEF에서 수행할 수 있는 작업을 확인하는 가장 간단한 방법은 간단한 MEF 응용 프로그램을 빌드하는 것입니다. 이 예제에서는 SimpleCalculator라는 매우 간단한 계산기를 빌드합니다. SimpleCalculator에서는 "5+3" 또는 "6-2"와 같은 형식의 기본적인 산술 명령을 수락하고 정답을 반환하는 콘솔 응용 프로그램을 만들려고 합니다. MEF를 사용하면 응용 프로그램 코드를 변경하지 않고도 새 연산자를 추가할 수 있습니다.  
   
- 이 예제의 전체 코드를 다운로드하려면 [SimpleCalculator sample](http://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e)(SimpleCalculator 샘플)을 참조하세요.  
+ 이 예제의 전체 코드를 다운로드하려면 [SimpleCalculator sample](https://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e)(SimpleCalculator 샘플)을 참조하세요.  
   
 > [!NOTE]
->  SimpleCalculator는 사용 방식을 보여주는 실제 시나리오를 제공하기보다는 MEF의 개념과 구문을 제시하는 데 사용됩니다. MEF의 이점을 가장 효율적으로 활용할 수 있는 대부분의 응용 프로그램은 SimpleCalculator보다 복잡합니다. 보다 포괄적인 예제는 GitHub에서 [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef)를 참조하세요.
+>  SimpleCalculator는 사용 방식을 보여 주는 실제 시나리오를 제공하기보다는 MEF의 개념과 구문을 제시하는 데 사용됩니다. MEF의 이점을 가장 효율적으로 활용할 수 있는 대부분의 응용 프로그램은 SimpleCalculator보다 복잡합니다. 보다 포괄적인 예제는 GitHub에서 [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef)를 참조하세요.
   
  먼저 [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)]에서 `SimpleCalculator`라는 새 콘솔 응용 프로그램 프로젝트를 만듭니다. 그런 다음 MEF가 상주하는 System.ComponentModel.Composition 어셈블리에 대한 참조를 추가합니다. Module1.vb나 Program.cs를 열고 System.ComponentModel.Composition 및 System.ComponentModel.Composition.Hosting에 대해 `Imports` 또는 `using` 문을 추가합니다. 이 두 네임스페이스는 확장 가능한 응용 프로그램을 개발하는 데 필요한 MEF 형식을 포함합니다. Visual Basic에서 `Public` 모듈을 선언하는 줄에 `Module1` 키워드를 추가합니다.  
   
@@ -471,6 +471,6 @@ public class Mod : SimpleCalculator.IOperation
   
 <a name="where_do_i_go_now"></a>   
 ## <a name="where-do-i-go-now"></a>다음 단계  
- 이 예제의 전체 코드를 다운로드하려면 [SimpleCalculator sample](http://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e)(SimpleCalculator 샘플)을 참조하세요.  
+ 이 예제의 전체 코드를 다운로드하려면 [SimpleCalculator sample](https://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e)(SimpleCalculator 샘플)을 참조하세요.  
   
- 코드 예제에 대한 자세한 내용은 [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkId=144282)를 참조하세요. MEF 형식 목록은 <xref:System.ComponentModel.Composition?displayProperty=nameWithType> 네임스페이스를 참조하세요.
+ 코드 예제에 대한 자세한 내용은 [Managed Extensibility Framework](https://go.microsoft.com/fwlink/?LinkId=144282)를 참조하세요. MEF 형식 목록은 <xref:System.ComponentModel.Composition?displayProperty=nameWithType> 네임스페이스를 참조하세요.

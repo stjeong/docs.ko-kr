@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a6c86870bf0089c25d402cf8f28a513e953ef28f
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 628c571ce645710482a29c813adb4fe1a59fd349
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933705"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400184"
 ---
 # <a name="cross-platform-development-with-the-portable-class-library"></a>이식 가능한 클래스 라이브러리로 크로스 플랫폼 개발
 Visual Studio의 .NET Framework 이식 가능한 클래스 라이브러리 프로젝트 형식으로 Microsoft 플랫폼용 플랫폼 간 앱 및 라이브러리를 신속하고 쉽게 빌드할 수 있습니다.  
@@ -25,7 +25,7 @@ Visual Studio의 .NET Framework 이식 가능한 클래스 라이브러리 프�
   
  Visual Studio에서 이식 가능한 클래스 라이브러리 프로젝트를 만든 다음 해당 프로젝트 개발을 시작한 후에도 대상 플랫폼을 변경할 수 있습니다. Visual Studio는 새 어셈블리로 라이브러리를 컴파일하여 코드에서 변경해야 하는 내용을 식별할 수 있도록 합니다.  
   
- 이 문서에서는 Visual Studio에서의 앱 개발에 대해 설명할 뿐만 아니라 Xamarin과 같은 다른 도구로 앱 및 라이브러리를 개발하는 데 사용할 수 있는 이식 가능한 클래스 라이브러리 참조 어셈블리도 제공합니다. 이러한 앱 및 라이브러리는 Microsoft 이외 플랫폼의 모든 .NET Framework 기반 런타임에서 사용할 수 있습니다. 참조 어셈블리에 대 한 자세한 내용은 블로그 항목을 참조 하세요 [이식 가능한 클래스 라이브러리 (PCL) 이제 모든 플랫폼에서 사용할 수 있는](http://blogs.msdn.com/b/dotnet/archive/2013/10/14/portable-class-library-pcl-now-available-on-all-platforms.aspx)합니다. 참조 어셈블리를 다운로드 하려면 [Microsoft.NET 이식 가능한 라이브러리 참조 어셈블리](http://www.microsoft.com/download/details.aspx?id=40727) Microsoft 다운로드 센터에서. Xamarin을 사용 하 여 어셈블리를 사용 하는 방법에 대 한 자세한 내용은 블로그 항목을 참조 하세요 [PCL 및.NET NuGet 라이브러리를 이제](http://blogs.msdn.com/b/dotnet/archive/2013/11/13/pcl-and-net-nuget-libraries-are-now-enabled-for-xamarin.aspx)합니다.  
+ 이 문서에서는 Visual Studio에서의 앱 개발에 대해 설명할 뿐만 아니라 Xamarin과 같은 다른 도구로 앱 및 라이브러리를 개발하는 데 사용할 수 있는 이식 가능한 클래스 라이브러리 참조 어셈블리도 제공합니다. 이러한 앱 및 라이브러리는 Microsoft 이외 플랫폼의 모든 .NET Framework 기반 런타임에서 사용할 수 있습니다. 참조 어셈블리에 대 한 자세한 내용은 블로그 항목을 참조 하세요 [이식 가능한 클래스 라이브러리 (PCL) 이제 모든 플랫폼에서 사용할 수 있는](https://blogs.msdn.com/b/dotnet/archive/2013/10/14/portable-class-library-pcl-now-available-on-all-platforms.aspx)합니다. 참조 어셈블리를 다운로드 하려면 [Microsoft.NET 이식 가능한 라이브러리 참조 어셈블리](https://www.microsoft.com/download/details.aspx?id=40727) Microsoft 다운로드 센터에서. Xamarin을 사용 하 여 어셈블리를 사용 하는 방법에 대 한 자세한 내용은 블로그 항목을 참조 하세요 [PCL 및.NET NuGet 라이브러리를 이제](https://blogs.msdn.com/b/dotnet/archive/2013/11/13/pcl-and-net-nuget-libraries-are-now-enabled-for-xamarin.aspx)합니다.  
   
  Visual Studio에서는 이식 가능한 클래스 라이브러리로 개발하는 데 도움이 되는 템플릿을 제공합니다. 사용 중인 Visual Studio의 버전에 따라 사용 가능한 템플릿 및 메뉴가 이 문서에서 설명하는 것과 다를 수 있습니다.  
   
@@ -110,7 +110,7 @@ Visual Studio 2013 업데이트 2의 이식 가능한 클래스 라이브러리 
   
  대상을 변경하면 프로젝트 개발에 사용할 수 있는 API가 선택에 맞춰 변경됩니다. Visual Studio에서는 대상 변경의 결과로 발생할 수 있는 오류 및 경고를 보고합니다.  
   
- Visual Studio에서 변경을 수행 하기 전에 어셈블리의 이식성을 평가 하려는 경우, 사용할 수는 [.NET 이식성 분석기](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)합니다.  
+ Visual Studio에서 변경을 수행 하기 전에 어셈블리의 이식성을 평가 하려는 경우, 사용할 수는 [.NET 이식성 분석기](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)합니다.  
   
  메뉴 옵션은 사용 중인 Visual Studio 버전에 따라 달라집니다.  
   
@@ -224,6 +224,6 @@ Visual Studio 2012의 대상 변경 대화 상자
 ## <a name="see-also"></a>참고 항목  
  [MVVM과 함께 이식 가능한 클래스 라이브러리 사용](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)  
  [여러 플랫폼을 대상으로 하는 라이브러리의 앱 리소스](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)  
- [.NET 이식성 분석기](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
+ [.NET 이식성 분석기](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
  [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
  [배포](../../../docs/framework/deployment/net-framework-applications.md)

@@ -4,12 +4,12 @@ description: .NET Core CLI(명령줄 인터페이스) 도구 및 기능에 대�
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.openlocfilehash: e6519ef560026899344c7fc36d91c2409cf1df9d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0ef69f98171da98b50aae4cdd2f5f88f37ad0c63
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33217934"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403408"
 ---
 # <a name="net-core-command-line-interface-cli-tools"></a>.NET Core CLI(명령줄 인터페이스) 도구
 
@@ -119,7 +119,6 @@ dotnet build --output /build_output
 dotnet /build_output/my_app.dll
 ```
 
-
 ---
 
 ### <a name="driver"></a>드라이버
@@ -140,7 +139,7 @@ dotnet /build_output/my_app.dll
 
 ### <a name="options"></a>옵션
 
-명령줄에서 전달하는 옵션은 호출되는 명령에 대한 옵션입니다. 예를 들어 `dotnet publish --output /build_output`을 실행하면 `--output` 옵션 및 해당 값이 `publish` 명령에 전달됩니다. 
+명령줄에서 전달하는 옵션은 호출되는 명령에 대한 옵션입니다. 예를 들어 `dotnet publish --output /build_output`을 실행하면 `--output` 옵션 및 해당 값이 `publish` 명령에 전달됩니다.
 
 ## <a name="migration-from-projectjson"></a>project.json에서 마이그레이션
 
@@ -148,5 +147,5 @@ Preview 2 도구를 사용하여 *project.json* 기반 프로젝트를 생성하
 
 ## <a name="see-also"></a>참고 항목
 
- [dotnet/CLI GitHub 리포지토리](https://github.com/dotnet/cli/)  
- [.NET Core 설치 가이드](https://aka.ms/dotnetcoregs)  
+* [dotnet/CLI GitHub 리포지토리](https://github.com/dotnet/cli/)  
+* [.NET Core 설치 가이드](https://aka.ms/dotnetcoregs)  

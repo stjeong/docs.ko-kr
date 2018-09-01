@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 2686d0db966192606656167d6e505f34ded333f6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f38ed31748560292753789e38595a5e30f6ea08a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396531"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404610"
 ---
 # <a name="deploying-the-net-framework-and-applications"></a>.NET Framework 및 응용 프로그램 배포
 이 문서는 응용 프로그램과 함께 .NET Framework 배포를 시작하는 데 도움이 됩니다. 대부분의 정보는 개발자, OEM 및 엔터프라이즈 관리자를 위한 것입니다. 컴퓨터에 .NET Framework를 설치하려는 사용자는 [.NET Framework 설치](~/docs/framework/install/index.md)를 읽어야 합니다.  
@@ -58,13 +58,13 @@ ms.locfileid: "33396531"
   
 -   .NET Framework 배포(OEM 및 관리자용):  
   
-    -   [Windows ADK(평가 및 배포 키트)](http://go.microsoft.com/fwlink/p/?LinkId=254976)  
+    -   [Windows ADK(평가 및 배포 키트)](https://go.microsoft.com/fwlink/p/?LinkId=254976)  
   
     -   [관리자 가이드](../../../docs/framework/deployment/guide-for-administrators.md)  
   
  **서비스**  
   
--   일반적인 내용은 [.NET Framework 블로그](http://go.microsoft.com/fwlink/p/?LinkId=254977)를 참조하세요.  
+-   일반적인 내용은 [.NET Framework 블로그](https://go.microsoft.com/fwlink/p/?LinkId=254977)를 참조하세요.  
   
 -   [버전 검색](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)  
   

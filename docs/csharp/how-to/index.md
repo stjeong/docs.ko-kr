@@ -2,12 +2,12 @@
 title: 방법 문서(C# 가이드)
 description: 유용한 팁 및 간단하고 집중된 코드 샘플의 컬렉션
 ms.date: 12/20/2017
-ms.openlocfilehash: db3ba1982a26097c3d69ba91493164c8f2371be9
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 86e245873c8316cc4ddd52fe59a06f2cac648e6c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999565"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43421199"
 ---
 # <a name="how-to-c"></a>방법(C#)
 
@@ -21,7 +21,7 @@ C# 가이드의 방법 섹션에서 일반적인 질문에 대한 빠른 답변�
 - [메서드에 구조체를 전달하는 것과 클래스를 전달하는 것의 차이점에 대해 알아보세요](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [람다 식을 사용하는 방법입니다](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md).
 - [전역 네임스페이스 별칭을 사용하여 형식 이름 충돌을 해결합니다](../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md).
-- [연산자 오버로드를 사용합니다](../programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md).
+- [연산자 오버로드를 사용합니다](../language-reference/keywords/operator.md).
 - [사용자 지정 확장 메서드를 구현하고 호출합니다](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
 - C# 프로그래머조차도 [VB에서 `My` 네임스페이스를 사용](../programming-guide/namespaces/how-to-use-the-my-namespace.md)하려 할 수 있습니다.
 - [확장 메서드를 사용하여 `enum` 형식에 대해 새 메서드를 만듭니다](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).

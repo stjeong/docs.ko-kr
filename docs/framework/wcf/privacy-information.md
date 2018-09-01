@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WCF, privacy information
 - privacy information [WCF]
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-ms.openlocfilehash: e278b28e5c0015eeab549b04d3870dfa247a57ed
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 9c2a8d89fc62f8e3e0ce17f13604a6ba05df1a6f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "33808873"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395067"
 ---
 # <a name="windows-communication-foundation-privacy-information"></a>Windows Communication Foundation 개인 정보 취급 방침
 Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할 것을 약속합니다. 버전 3.0, Windows Communication Foundation (WCF)를 사용 하 여 응용 프로그램을 빌드할 때 응용 프로그램의 최종 사용자가 개인 정보 보호를 달라질 수 있습니다. 예를 들어 응용 프로그램에서 사용자 연락처 정보를 명시적으로 수집하거나, 정보를 요청하거나 인터넷을 통해 정보를 웹 사이트로 보낼 수 있습니다. 응용 프로그램에 Microsoft 기술을 포함하는 경우 해당 기술의 동작이 개인 정보 보호에 영향을 줄 수 있습니다. WCF 보내지 않습니다 모든 정보를 Microsoft 응용 프로그램에서 우리에 게 보낼 사용자 또는 최종 사용자가 선택 하지 않으면.  
@@ -24,9 +24,9 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
 ## <a name="messaging"></a>메시징  
  각 WCF 메시지에 메시지 대상을 지정 하는 주소 헤더가 이동한 위치 회신 해야 합니다.  
   
- 끝점 주소의 주소 구성 요소는 끝점을 식별하는 URI(Uniform Resource Identifier)입니다. 주소는 네트워크 주소나 논리 주소일 수 있습니다. 주소에는 컴퓨터 이름(호스트 이름, 정규화된 도메인 이름) 및 IP 주소가 포함될 수 있습니다. 끝점 주소에는 각 주소를 구분하는 데 사용되는 임시 주소 지정을 위한 GUID(고유한 전역 식별자) 또는 GUID 컬렉션이 포함될 수도 있습니다. 각 메시지에는 GUID인 메시지 ID가 포함되어 있습니다. 이 기능은 WS-Addressing 참조 표준을 준수합니다.  
+ 엔드포인트 주소의 주소 구성 요소는 엔드포인트를 식별하는 URI(Uniform Resource Identifier)입니다. 주소는 네트워크 주소나 논리 주소일 수 있습니다. 주소에는 컴퓨터 이름(호스트 이름, 정규화된 도메인 이름) 및 IP 주소가 포함될 수 있습니다. 엔드포인트 주소에는 각 주소를 구분하는 데 사용되는 임시 주소 지정을 위한 GUID(고유한 전역 식별자) 또는 GUID 컬렉션이 포함될 수도 있습니다. 각 메시지에는 GUID인 메시지 ID가 포함되어 있습니다. 이 기능은 WS-Addressing 참조 표준을 준수합니다.  
   
- WCF 메시징 레이어는 로컬 컴퓨터에 개인 정보를 기록 하지 않습니다. 그러나 끝점 이름에 개인 이름을 사용하거나 끝점의 웹 서비스 기술 언어에 개인 정보를 포함하지만 클라이언트에 https를 사용하여 WSDL에 액세스하도록 요구하지 않는 경우 등 서비스 개발자가 이러한 정보를 노출하는 서비스를 만든 경우 네트워크 수준에서 개인 정보를 전파할 수도 있습니다. 또한 개발자가 실행 되는 경우는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 도구의 출력의 개인 정보를 노출 하는 끝점에 대 한 도구에는 해당 정보를 포함할 수 있습니다 하 고 출력 파일에 기록 됩니다는 로컬 하드 디스크입니다.  
+ WCF 메시징 레이어는 로컬 컴퓨터에 개인 정보를 기록 하지 않습니다. 그러나 엔드포인트 이름에 개인 이름을 사용하거나 엔드포인트의 웹 서비스 기술 언어에 개인 정보를 포함하지만 클라이언트에 https를 사용하여 WSDL에 액세스하도록 요구하지 않는 경우 등 서비스 개발자가 이러한 정보를 노출하는 서비스를 만든 경우 네트워크 수준에서 개인 정보를 전파할 수도 있습니다. 또한 개발자가 실행 되는 경우는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 도구의 출력의 개인 정보를 노출 하는 끝점에 대 한 도구에는 해당 정보를 포함할 수 있습니다 하 고 출력 파일에 기록 됩니다는 로컬 하드 디스크입니다.  
   
 ## <a name="hosting"></a>호스팅  
  WCF에서의 호스팅 기능을 필요에 따라 시작 하거나 여러 응용 프로그램 간에 포트 공유를 사용 하도록 응용 프로그램을 수 있습니다. WCF 응용 프로그램에서 인터넷 정보 서비스 (IIS)를 유사한 호스팅될 수 [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)]입니다.  
@@ -42,7 +42,7 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
 -   전송 보안을 사용하는 경우 HTTP 인증 체계(기본, 다이제스트, 협상, Negotiate, Windows 통합 인증, NTLM, 없음 및 익명) 같은 일반적인 전송 인증 메커니즘과 폼 인증을 통해 인증이 수행됩니다.  
   
- 인증을 통해 통신하는 끝점 간에 보안 세션이 설정될 수 있습니다. 세션은 보안 세션의 수명 동안 지속되는 GUID로 식별됩니다. 다음 표에서는 보관되는 데이터와 위치를 보여 줍니다.  
+ 인증을 통해 통신하는 엔드포인트 간에 보안 세션이 설정될 수 있습니다. 세션은 보안 세션의 수명 동안 지속되는 GUID로 식별됩니다. 다음 표에서는 보관되는 데이터와 위치를 보여 줍니다.  
   
 |데이터|저장소|  
 |----------|-------------|  
@@ -61,7 +61,7 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  트랜잭션 전파에 사용된 트랜잭션 헤더에는 GUID인 트랜잭션 ID 또는 인리스트먼트 ID가 포함될 수도 있습니다.  
   
- 트랜잭션 기능은 MSDTC(Microsoft Distributed Transaction Coordinator) 트랜잭션 관리자(Windows 구성 요소)를 사용하여 트랜잭션 상태를 관리합니다. 트랜잭션 관리자 간의 통신은 기본적으로 암호화됩니다. 트랜잭션 관리자는 끝점 참조, 트랜잭션 ID 및 인리스트먼트 ID를 지속적 상태의 일부로 기록할 수 있습니다. 이 상태의 수명은 트랜잭션 관리자의 로그 파일 수명에 의해 결정됩니다. MSDTC 서비스는 이 로그를 소유하고 유지 관리합니다.  
+ 트랜잭션 기능은 MSDTC(Microsoft Distributed Transaction Coordinator) 트랜잭션 관리자(Windows 구성 요소)를 사용하여 트랜잭션 상태를 관리합니다. 트랜잭션 관리자 간의 통신은 기본적으로 암호화됩니다. 트랜잭션 관리자는 엔드포인트 참조, 트랜잭션 ID 및 인리스트먼트 ID를 지속적 상태의 일부로 기록할 수 있습니다. 이 상태의 수명은 트랜잭션 관리자의 로그 파일 수명에 의해 결정됩니다. MSDTC 서비스는 이 로그를 소유하고 유지 관리합니다.  
   
  트랜잭션 기능은 WS-Coordination 및 WS-Atomic Transaction 표준을 구현합니다.  
   
@@ -402,5 +402,5 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
  WSDL(웹 서비스 기술 언어)에는 포트 정의가 들어 있습니다. 각 포트에는 끝점 주소와 응용 프로그램에서 사용하는 서비스를 나타내는 바인딩이 있습니다. 구성을 사용하여 WSDL 노출을 해제할 수 있습니다. 컴퓨터에는 정보가 보관되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation](http://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)  
+ [Windows Communication Foundation](https://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)  
  [보안](../../../docs/framework/wcf/feature-details/security.md)

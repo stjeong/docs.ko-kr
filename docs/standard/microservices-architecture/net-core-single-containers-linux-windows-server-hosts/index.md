@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/27/2018
-ms.openlocfilehash: 56c41a51cddeca6c74b09710f9536195a6a88904
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 45be99a86a52ed450b795ca5f91c01ab82c7da47
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404501"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43388630"
 ---
 # <a name="deploying-single-container-based-net-core-web-applications-on-linux-or-windows-nano-server-hosts"></a>Linux 또는 Windows Nano 서버 호스트에 단일 컨테이너 기반 .NET Core 웹 응용 프로그램 배포
 
@@ -41,7 +41,7 @@ _간단한 웹 응용 프로그램의 모놀리식 배포에 대해 Docker 컨�
 
 이 응용 프로그램은 카탈로그 저장소에 대해 SQL Server 데이터베이스를 사용합니다. 컨테이너 기반 배포에서 이 모놀리식 응용 프로그램은 마이크로 서비스 기반 응용 프로그램과 동일한 데이터 저장소에 액세스할 수 있습니다. 이 응용 프로그램은 모놀리식 응용 프로그램과 함께 컨테이너에서 SQL Server를 실행할 수 있도록 구성됩니다. 프로덕션 환경에서 SQL Server는 Docker 호스트 외부의 고가용성 컴퓨터에서 실행됩니다. 편의를 위해 개발 또는 테스트 환경에서는 고유한 컨테이너에서 SQL Server를 실행하는 것이 좋습니다.
 
-초기 기능 집합에서는 카탈로그 검색 기능만 사용할 수 있습니다. 업데이트하면 컨테이너화된 응용 프로그램의 전체 기능 집합을 사용할 수 있습니다. 고급 모놀리식 웹 응용 프로그램 아키텍처는 [ASP.NET 웹 응용 프로그램 아키텍처 사례](https://aka.ms/webappebook) 전자책과 관련 [eShopOnWeb 샘플 응용 프로그램](http://aka.ms/WebAppArchitecture)에서 설명됩니다.
+초기 기능 집합에서는 카탈로그 검색 기능만 사용할 수 있습니다. 업데이트하면 컨테이너화된 응용 프로그램의 전체 기능 집합을 사용할 수 있습니다. 고급 모놀리식 웹 응용 프로그램 아키텍처는 [ASP.NET 웹 응용 프로그램 아키텍처 사례](https://aka.ms/webappebook) 전자책과 관련 [eShopOnWeb 샘플 응용 프로그램](https://aka.ms/WebAppArchitecture)에서 설명됩니다.
 
 ## <a name="docker-support"></a>Docker 지원
 
