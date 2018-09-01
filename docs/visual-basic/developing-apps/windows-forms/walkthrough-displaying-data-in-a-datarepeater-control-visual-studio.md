@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DataRepeater, walkthrough
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
 ms.openlocfilehash: 8e64a819e9670a29e97140a32c81f5ff9006f83e
-ms.sourcegitcommit: 2ad7d06f4f469b5d8a5280ac0e0289a81867fc8e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35231514"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43388554"
 ---
 # <a name="walkthrough-displaying-data-in-a-datarepeater-control-visual-studio"></a>연습: DataRepeater 컨트롤의 데이터 표시(Visual Studio)
 이 연습에서는 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 컨트롤의 바인딩된 데이터를 표시하는 작업을 처음부터 끝까지 보여 주는 기본 시나리오를 제공합니다.  
@@ -88,7 +88,7 @@ ms.locfileid: "35231514"
   
          또는  
   
-    -   **새 연결** 을 클릭하여 새 데이터 연결을 구성합니다. 자세한 내용은 참조 [새 연결 추가](/visualstudio/data-tools/add-new-connections)합니다.  
+    -   **새 연결** 을 클릭하여 새 데이터 연결을 구성합니다. 자세한 내용은 [새 연결 추가](/visualstudio/data-tools/add-new-connections)합니다.  
   
 5.  데이터베이스에 암호가 필요하면 중요한 데이터를 포함하는 옵션을 선택하고 **다음**을 클릭합니다.  
   

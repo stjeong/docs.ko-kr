@@ -5,12 +5,12 @@ helpviewer_keywords:
 - StatusStrip control [Windows Forms]
 - status bars
 ms.assetid: eb1e59da-0a48-4ce5-af7d-13b8e75af4b1
-ms.openlocfilehash: b3d7a1c68dbaa29c83bd066a8cb3ed2775672d98
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 157db8b9fbbbb6e1c6af41b4cf3903f4a762d763
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33534504"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385728"
 ---
 # <a name="statusstrip-control"></a>StatusStrip 컨트롤
 Windows Forms `StatusStrip` 컨트롤은 폼에서 응용 프로그램이 다양한 종류의 상태 정보를 표시할 수 있는, 대개 창 아래쪽에 표시되는 영역으로 사용됩니다. `StatusStrip` 컨트롤에는 일반적으로 상태를 나타내는 텍스트 또는 아이콘을 표시하는 `ToolStripStatusLabel` 컨트롤이 그 위에 있거나 프로세스 완료 상태를 그래픽으로 표시하는 <xref:System.Windows.Forms.ToolStripProgressBar>가 포함됩니다.  
@@ -22,7 +22,7 @@ Windows Forms `StatusStrip` 컨트롤은 폼에서 응용 프로그램이 다양
  [방법: StatusStrip에서 대화형으로 Spring 속성 사용](../../../../docs/framework/winforms/controls/how-to-use-the-spring-property-interactively-in-a-statusstrip.md)  
  `Spring` 속성을 사용하여 `StatusStrip`에서 `ToolStripStatusLabel`을 가운데 정렬하는 방법을 보여 줍니다.  
   
- 또한 참조 [StatusStrip 항목 컬렉션 편집기](http://msdn.microsoft.com/library/ms233631\(v=vs.110\)), [StatusStrip 항목 컬렉션 편집기](http://msdn.microsoft.com/library/ms233642\(v=vs.110\))합니다.  
+ 도 참조 하세요 [StatusStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/ms233631\(v=vs.110\))하십시오 [StatusStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/ms233642\(v=vs.110\))합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.StatusStrip>  

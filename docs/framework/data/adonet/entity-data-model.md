@@ -2,12 +2,12 @@
 title: 엔터티 데이터 모델
 ms.date: 03/30/2017
 ms.assetid: 2dda3d5b-4582-4ba0-a91d-fcd7a1498137
-ms.openlocfilehash: bb3c529a19ca96ea5695061fb1b612f9179899be
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e76527b497434ada06762fcab931522fffa2a16b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32765245"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385596"
 ---
 # <a name="entity-data-model"></a>엔터티 데이터 모델
 EDM(엔터티 데이터 모델)은 저장된 폼에 관계없이 데이터 구조를 설명하는 개념 집합입니다. EDM은 Peter Chen이 1976년에 설명한 엔터티-관계 모델에서 차용하지만 엔터티-관계 모델을 기반으로 하여 기존의 사용을 확장합니다.  
@@ -17,7 +17,7 @@ EDM(엔터티 데이터 모델)은 저장된 폼에 관계없이 데이터 구�
  `conceptual model`은 엔터티 및 관계로서의 특정 데이터 구조 표현이며, 일반적으로 EDM의 개념을 구현하는 DSL(Domain-Specific Language)에서 정의됩니다. [개념 스키마 정의 언어 (CSDL)](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md) 은 이러한 도메인 특정 언어의 예입니다. 개념적 모델에서 설명되는 엔터티와 관계를 응용 프로그램의 개체 및 연결 추상화로 간주할 수 있습니다. 이렇게 하면 개발자가 저장소 스키마에 대해 염려하지 않고 개념적 모델에 집중할 수 있으며 효율성과 유지 관리 기능을 고려하여 코드를 작성할 수 있습니다. 한편, 저장소 스키마 디자이너는 효율적인 데이터 액세스, 저장 및 확장성에 집중할 수 있습니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
- 이 단원의 항목에서는 엔터티 데이터 모델의 개념에 대해 설명합니다. EDM을 구현하는 모든 DSL에는 여기에 설명된 개념이 포함되어야 합니다. [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) CSDL을 사용 하 여 개념적 모델을 정의 합니다. 자세한 내용은 참조 [CSDL 사양](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)합니다.  
+ 이 단원의 항목에서는 엔터티 데이터 모델의 개념에 대해 설명합니다. EDM을 구현하는 모든 DSL에는 여기에 설명된 개념이 포함되어야 합니다. 유의 합니다 [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) CSDL을 사용 하 여 개념적 모델을 정의 합니다. 자세한 내용은 [CSDL 사양](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)합니다.  
   
  [엔터티 데이터 모델의 주요 개념](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
   
@@ -62,6 +62,6 @@ EDM(엔터티 데이터 모델)은 저장된 폼에 관계없이 데이터 구�
  [참조 무결성 제약 조건](../../../../docs/framework/data/adonet/referential-integrity-constraint.md)  
   
 ## <a name="see-also"></a>참고 항목  
- [ADO.NET 엔터티 데이터 모델 도구](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
- [.edmx 파일 개요](http://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)  
+ [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
+ [.edmx 파일 개요](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)  
  [CSDL 사양](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)

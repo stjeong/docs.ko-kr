@@ -1,5 +1,5 @@
 ---
-title: '#Region 지시문'
+title: '#Region 지시문 (Visual Basic)'
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Region
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - region directive (#region)
 - '#Region keyword [Visual Basic]'
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
-ms.openlocfilehash: d25871140ef0674c013fc70d1306b2b4d0858556
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 204b53751fce4f9a3e038ae7c44634522d54657c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33588437"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385374"
 ---
 # <a name="region-directive"></a>#Region 지시문
 Visual Basic 파일에서 코드 섹션을 축소하고 숨깁니다.  
@@ -35,7 +35,7 @@ Visual Basic 파일에서 코드 섹션을 축소하고 숨깁니다.
 |`#End Region`|`#Region` 블록을 종료합니다.|  
   
 ## <a name="remarks"></a>설명  
- `#Region` 지시문을 사용하면 Visual Studio 코드 편집기의 개요 기능을 사용할 때 확장하거나 축소할 코드 블록을 지정할 수 있습니다. 배치할 수 있습니다 또는 *중첩*, 비슷한 영역을 그룹화 하 여 다른 영역 들 내 합니다.  
+ `#Region` 지시문을 사용하면 Visual Studio 코드 편집기의 개요 기능을 사용할 때 확장하거나 축소할 코드 블록을 지정할 수 있습니다. 배치할 수 있습니다 또는 *중첩*, 비슷한 영역을 함께 그룹화 할 다른 지역 내의 영역입니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 `#Region` 지시문을 사용합니다.  

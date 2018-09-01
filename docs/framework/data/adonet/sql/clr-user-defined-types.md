@@ -2,12 +2,12 @@
 title: CLR 사용자 정의 형식
 ms.date: 03/30/2017
 ms.assetid: 9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2
-ms.openlocfilehash: 344245ea7c67d7b5363c17bb42e2606ca11142bf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4ea415a348375c52e42ddf26ea09a74e7de5e355
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357584"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43388725"
 ---
 # <a name="clr-user-defined-types"></a>CLR 사용자 정의 형식
 Microsoft SQL Server에서는 Microsoft .NET Framework CLR(공용 언어 런타임)로 구현된 UDT(사용자 정의 형식)를 지원합니다. CLR은 SQL Server에 통합되어 있으며 이 메커니즘을 통해 데이터베이스의 형식 시스템을 확장할 수 있습니다. UDT는 SQL Server 데이터 형식 시스템에 대한 사용자 확장성 및 구조적 복합 형식을 정의할 수 있는 기능을 제공합니다.  
@@ -18,12 +18,12 @@ Microsoft SQL Server에서는 Microsoft .NET Framework CLR(공용 언어 런타�
   
 -   다른 관련 서버 기능과의 밀접한 통합. 고유한 UDT를 정의하고 나면 열 정의를 포함한 SQL Server에 시스템 형식을 사용할 수 있는 경우 모든 컨텍스트에 사용할 수 있으며 변수, 매개 변수, 함수 결과, 커서, 트리거 및 복제로도 사용할 수 있습니다.  
   
- 자세한 내용을 보려면 현재 사용하고 있는 SQL Server 버전에 해당하는 SQL Server 온라인 설명서 버전을 참조하세요.  
+ 자세한 내용은 참조는 [SQL Server 설명서](/sql) 사용 중인 SQL Server의 버전에 대 한 합니다.
   
- **SQL Server 온라인 설명서**  
+ **SQL Server 설명서**
   
-1.  [CLR 사용자 정의 형식](http://go.microsoft.com/fwlink/?LinkId=98366)  
+1. [CLR 사용자 정의 형식](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
-## <a name="see-also"></a>참고 항목  
- [관리 코드에서 SQL Server 2005 개체 만들기](http://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료  
+
+[ADO.NET 개요](../ado-net-overview.md)  

@@ -8,27 +8,27 @@ helpviewer_keywords:
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: fb48ae39d269f21a7120ecf143dc4c4680efe39d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a070800ea15c5a7f16b52ca69c7e454c92618e1a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33499091"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43384930"
 ---
 # <a name="windows-communication-foundation-security"></a>Windows Communication Foundation 보안
-이 단원의 항목에서는 Windows Communication Foundation (WCF) 보안 기능 및 보안 메시지를 사용 하는 방법에 설명 합니다.  
+이 섹션의에서 항목에서는 Windows Communication Foundation (WCF) 보안 기능 및 보안 메시지를 유용 하 게 활용 하는 방법을 설명 합니다.  
   
- Windows Server AppFabric 및 보안에 대 한 자세한 내용은 참조 [Windows Server AppFabric 보안 모델](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
+ Windows Server AppFabric 및 보안에 대 한 자세한 내용은 참조 하세요. [Windows Server AppFabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- WCF의 보안 기능에 설명합니다.  
+ WCF의 보안 기능을 설명합니다.  
   
  [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
  기본 용어와 WCF 보안에 사용 되는 개념을 설명 합니다.  
   
  [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
- 시나리오와 WCF로 구성할 수는 토폴로지를 설명 합니다.  
+ 시나리오 및 WCF를 사용 하 여 구성할 수 있습니다 하는 토폴로지를 설명 합니다.  
   
  [보안 동작](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  보안에 영향을 주는 WCF 동작에 대한 개요를 제공합니다(예: 자격 증명 설정).  
@@ -49,7 +49,7 @@ ms.locfileid: "33499091"
  페더레이션 기본 사항 및 페더레이션 서버와 통신하는 클라이언트를 만드는 방법을 설명합니다.  
   
  [부분 신뢰](../../../../docs/framework/wcf/feature-details/partial-trust.md)  
- 부분적으로 신뢰할 수 있는 실행 하는 경우 부분적으로 신뢰할 수 있는 시나리오 및 제한 사항 WCF 실행 하는 방법에 설명 합니다.  
+ 부분적으로 신뢰할 수 있는 실행 될 때 WCF 제한 사항 및 부분적으로 신뢰할 수 있는 시나리오를 실행 하는 방법에 설명 합니다.  
   
  [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
  보안 이벤트를 감사하는 방법을 설명합니다.  

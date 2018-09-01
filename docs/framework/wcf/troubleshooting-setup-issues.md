@@ -2,15 +2,15 @@
 title: 설치 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
-ms.openlocfilehash: 3c750aa4f9a4ec4750aa24ffcd685c9c349a45a7
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 0270bd8c1006b39805e3486c4fef0cb379089ea8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33806515"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43390081"
 ---
 # <a name="troubleshooting-setup-issues"></a>설치 문제 해결
-이 항목에서는 Windows Communication Foundation (WCF) 설치 문제를 해결 하는 방법에 설명 합니다.  
+이 항목에서는 Windows Communication Foundation (WCF)가 설치 문제를 해결 하는 방법을 설명 합니다.  
   
 ## <a name="some-windows-communication-foundation-registry-keys-are-not-repaired-by-performing-an-msi-repair-operation-on-the-net-framework-30"></a>일부 Windows Communication Foundation 레지스트리 키를 .NET Framework 3.0에서 MSI 복구 작업을 수행하여 복구할 수 없음  
  다음과 같은 레지스트리 키를 삭제한 경우 이 문제가 발생합니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "33806515"
   
 -   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC Bridge 3.0.0.0  
   
- 시작 하는.NET Framework 3.0 설치 관리자를 사용 하 여 복구를 실행 하는 경우에 키 다시 생성 되지 않습니다는 **프로그램 추가/제거** 애플릿을 **제어판**합니다. 해당 키를 다시 만들려면 .NET Framework 3.0을 제거하고 다시 설치해야 합니다.  
+ 시작 하는.NET Framework 3.0 설치 관리자를 사용 하 여 복구를 실행 하는 경우 키를 다시 생성 되지 않습니다 합니다 **프로그램 추가/제거** 애플릿에서 **제어판**합니다. 해당 키를 다시 만들려면 .NET Framework 3.0을 제거하고 다시 설치해야 합니다.  
   
 ## <a name="wmi-service-corruption-blocks-installation-of-the-windows-communication-foundation-wmi-provider-during-installation-of-net-framework-30-package"></a>.NET Framework 3.0 패키지 설치 시 WMI 서비스 손상으로 인해 Windows Communication Foundation WMI 공급자가 설치되지 않음  
  WMI 서비스 손상으로 인해 Windows Communication Foundation WMI 공급자가 설치되지 않을 수 있습니다. 설치 시 Windows Communication Foundation 설치 관리자가 mofcomp.exe 구성 요소를 사용하여 WCF .mof 파일을 등록할 수 없습니다. 다음과 같은 증상이 있습니다.  
@@ -52,22 +52,22 @@ ms.locfileid: "33806515"
   
  위에 설명한 문제를 해결하려면 다음 단계를 수행해야 합니다.  
   
-1.  실행 [WMI 진단 유틸리티의 버전 2.0](http://go.microsoft.com/fwlink/?LinkId=94685) WMI 서비스를 복구 합니다. 이 도구를 사용 하는 방법에 대 한 자세한 내용은 참조는 [WMI 진단 유틸리티](http://go.microsoft.com/fwlink/?LinkId=94686) 항목입니다.  
+1.  실행할 [WMI Diagnosis Utility의 버전 2.0](https://go.microsoft.com/fwlink/?LinkId=94685) WMI 서비스를 복구 합니다. 이 도구를 사용 하는 방법에 대 한 자세한 내용은 참조는 [WMI Diagnosis Utility](https://go.microsoft.com/fwlink/?LinkId=94686) 항목입니다.  
   
- 사용 하 여.NET Framework 3.0 설치를 복구는 **프로그램 추가/제거** 에 애플릿을 **제어판**,.NET Framework 3.0를 제거/다시 설치 하 합니다.  
+ 사용 하 여.NET Framework 3.0 설치를 복구 합니다 **프로그램 추가/제거** 애플릿을에 있는 **제어판**, 또는.NET Framework 3.0를 제거/다시 설치 하 합니다.  
   
 ## <a name="repairing-net-framework-30-after-net-framework-35-installation-removes-configuration-elements-introduced-by-net-framework-35-in-machineconfig"></a>.NET Framework 3.5 설치 후 .NET Framework 3.0을 복구하면 machine.config에서 .NET Framework 3.5에 의해 추가된 구성 요소가 제거됨  
- [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]를 설치한 후 .NET Framework 3.0을 복구하면 machine.config에서 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]에 의해 추가된 구성 요소가 제거됩니다. 그러나 web.config는 그대로 유지됩니다. 해결 방법은 복구 하는 것 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] ARP, 또는 사용을 통해 이후에 [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) 와 `/c` 전환 합니다.  
+ [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]를 설치한 후 .NET Framework 3.0을 복구하면 machine.config에서 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]에 의해 추가된 구성 요소가 제거됩니다. 그러나 web.config는 그대로 유지됩니다. 복구 하려면이 문제를 해결 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] ARP, 또는 사용을 통해이 [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) 사용 하 여는 `/c` 전환 합니다.  
   
- [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) %windir%\Microsoft.NET\framework\v3.5\ 또는 %windir%\Microsoft.NET\framework64\v3.5\에서 찾을 수  
+ [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) %windir%\Microsoft.NET\framework\v3.5\ 또는 %windir%\Microsoft.NET\framework64\v3.5\에서 찾을 수 있습니다  
   
 ## <a name="configure-iis-properly-for-wcfwf-webhost-after-installing-net-framework-35"></a>.NET Framework 3.5 설치 후 WCF/WF Webhost에 대해 IIS를 올바로 구성  
- 때 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 추가 WCF 관련 IIS 구성 설정을 구성 하지 못한, 설치 로그에 오류를 기록 하 고 계속 합니다. 필요한 구성 설정이 없기 때문에 WorkflowServices 응용 프로그램을 실행할 수 없습니다. 예를 들어 xoml 또는 규칙 서비스를 로드하지 못할 수 있습니다.  
+ 때 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 추가 WCF 관련 IIS 구성 설정을 구성 하려면 설치 실패, 설치 로그에서 오류를 기록 하 고 계속 합니다. 필요한 구성 설정이 없기 때문에 WorkflowServices 응용 프로그램을 실행할 수 없습니다. 예를 들어 xoml 또는 규칙 서비스를 로드하지 못할 수 있습니다.  
   
- 문제를 해결 하려면 사용 하 여가이 문제는 [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) 와 `/c` 컴퓨터에서 IIS 스크립트 맵을 구성 하는 스위치입니다. [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) %windir%\Microsoft.NET\framework\v3.5\ 또는 %windir%\Microsoft.NET\framework64\v3.5\에서 찾을 수  
+ 문제를 해결 하려면이 문제를 사용 하 여는 [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) 사용 하 여는 `/c` 제대로 컴퓨터에 IIS 스크립트 맵을 구성으로 전환 합니다. [워크플로 서비스 등록 도구 (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) %windir%\Microsoft.NET\framework\v3.5\ 또는 %windir%\Microsoft.NET\framework64\v3.5\에서 찾을 수 있습니다  
   
 ## <a name="could-not-load-type-systemservicemodelactivationhttpmodule-from-assembly-systemservicemodel-version-3000-cultureneutral-publickeytokenb77a5c561934e089"></a>‘System.ServiceModel, Version 3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089’ 어셈블리에서 ‘System.ServiceModel.Activation.HttpModule’ 형식을 로드할 수 없습니다.  
- 이 오류가 발생 하는 경우 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 가 설치 되어 다음 WCF HTTP 활성화를 사용할 수 있습니다. 이 문제를 해결하려면 [!INCLUDE[vs2010](../../../includes/vs2010-md.md)] 명령 프롬프트에서 다음 명령줄을 실행합니다.  
+ 이 오류가 발생 하는 경우 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 되어 및 WCF HTTP 활성화가 사용 하는 다음입니다. 이 문제를 해결하려면 [!INCLUDE[vs2010](../../../includes/vs2010-md.md)] 명령 프롬프트에서 다음 명령줄을 실행합니다.  
   
 ```Output  
 aspnet_regiis.exe -i -enable  

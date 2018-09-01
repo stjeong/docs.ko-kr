@@ -10,18 +10,18 @@ helpviewer_keywords:
 - inheritance [Windows Forms], walkthroughs
 - custom controls [Windows Forms], inheritance
 ms.assetid: fb58d7c8-b702-4478-ad31-b00cae118882
-ms.openlocfilehash: a6b1e78d17d952590510bdda80bf802ccc094285
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6c70de1bf6a5340b6f5b2c652110ed9be5536665
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33541439"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389982"
 ---
 # <a name="walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic"></a>연습: Visual Basic을 사용하여 Windows Forms 컨트롤에서 상속
-Visual Basic의 경우 사용을 통해 강력한 사용자 지정 컨트롤을 만들 수 있습니다 *상속*합니다. 상속을 통해 표준 Windows Forms 컨트롤의 모든 고유 기능을 유지하면서 사용자 지정 기능을 통합하는 컨트롤을 만들 수 있습니다. 이 연습에서는 `ValueButton`이라는 간단한 상속된 컨트롤을 만듭니다. 이 단추는 표준 Windows Forms에서 기능을 상속 <xref:System.Windows.Forms.Button> 컨트롤을 호출 하는 사용자 지정 속성을 노출 합니다 `ButtonValue`합니다.  
+Visual Basic을 사용 하 여을 통해 강력한 사용자 지정 컨트롤을 만들 수 있습니다 *상속*합니다. 상속을 통해 표준 Windows Forms 컨트롤의 모든 고유 기능을 유지하면서 사용자 지정 기능을 통합하는 컨트롤을 만들 수 있습니다. 이 연습에서는 `ValueButton`이라는 간단한 상속된 컨트롤을 만듭니다. 이 단추는 표준 Windows Forms에서 기능을 상속 <xref:System.Windows.Forms.Button> 컨트롤을 호출 하는 사용자 지정 속성을 노출 합니다 `ButtonValue`합니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ## <a name="creating-the-project"></a>프로젝트 만들기  
  새 프로젝트를 만들 때는 루트 네임스페이스, 어셈블리 이름 및 프로젝트 이름을 설정하기 위해 이름을 지정하고 기본 구성 요소가 올바른 네임스페이스에 있는지 확인합니다.  
@@ -30,7 +30,7 @@ Visual Basic의 경우 사용을 통해 강력한 사용자 지정 컨트롤을 
   
 1.  **파일** 메뉴에서 **새로 만들기**를 가리키고 **프로젝트**를 선택하여 **새 프로젝트** 대화 상자를 엽니다.  
   
-2.  선택 된 **Windows Forms 컨트롤 라이브러리** Visual Basic 프로젝트 및 형식 목록에서 프로젝트 템플릿을 `ValueButtonLib` 에 **이름** 상자.  
+2.  선택 합니다 **Windows Forms 컨트롤 라이브러리** 형식과 Visual Basic 프로젝트의 목록에서 프로젝트 템플릿을 `ValueButtonLib` 에 **이름** 상자입니다.  
   
      프로젝트 이름, `ValueButtonLib`는 기본적으로 루트 네임스페이스에도 할당됩니다. 루트 네임스페이스는 어셈블리에서 구성 요소의 이름을 정규화하는 데 사용됩니다. 예를 들어 두 어셈블리에서 `ValueButton`이라는 구성 요소를 제공하면 `ValueButtonLib.ValueButton`을 사용하여 `ValueButton` 구성 요소를 지정할 수 있습니다. 자세한 내용은 [Visual Basic의 네임스페이스](~/docs/visual-basic/programming-guide/program-structure/namespaces.md)를 참조하세요.  
   
@@ -40,13 +40,13 @@ Visual Basic의 경우 사용을 통해 강력한 사용자 지정 컨트롤을 
   
 5.  **ValueButton.vb** 노드를 열어 디자이너에서 생성한 코드 파일인 **ValueButton.Designer.vb**를 표시합니다. **코드 편집기**에서 이 파일을 엽니다.  
   
-6.  찾을 `Class` 문, `Partial Public Class ValueButton`,이 컨트롤에서 상속 된 형식을 변경 하 고 <xref:System.Windows.Forms.UserControl> 를 <xref:System.Windows.Forms.Button>합니다. 이렇게 하면 상속 된 컨트롤의 모든 기능을 상속는 <xref:System.Windows.Forms.Button> 제어 합니다.  
+6.  찾을 합니다 `Class` 문을 `Partial Public Class ValueButton`,이 컨트롤에서 상속 된 형식을 변경 <xref:System.Windows.Forms.UserControl> 에 <xref:System.Windows.Forms.Button>입니다. 이렇게 하면 상속 된 컨트롤의 모든 기능을 상속 합니다 <xref:System.Windows.Forms.Button> 제어 합니다.  
   
-7.  찾습니다는 `InitializeComponent` 메서드 및 remove 할당 하는 줄은 <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> 속성입니다. 이 속성에 존재 하지 않습니다는 <xref:System.Windows.Forms.Button> 제어 합니다.  
+7.  찾을 합니다 `InitializeComponent` 메서드 및 할당 하는 줄을 제거 합니다 <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> 속성입니다. 이 속성에 없는 경우는 <xref:System.Windows.Forms.Button> 제어 합니다.  
   
 8.  **파일** 메뉴에서 **모두 저장**을 선택하여 프로젝트를 저장합니다.  
   
-     비주얼 디자이너는 더 이상 사용할 수 없습니다. 때문에 <xref:System.Windows.Forms.Button> 디자이너에서 모양을 수정할 수 없는, 컨트롤은 자체 그리기를 수행 합니다. 시각적 표시는 정확히 같을 수에서 상속 된 클래스의 (즉, <xref:System.Windows.Forms.Button>)는 코드에서 수정 하지 않는 한 합니다.  
+     비주얼 디자이너는 더 이상 사용할 수 없습니다. 때문에 <xref:System.Windows.Forms.Button> 디자이너에서 모양을 수정할 수 없는, 컨트롤은 고유한 그리기를 수행 합니다. 시각적 표시는 정확히 동일 하며 상속한 클래스와 (즉, <xref:System.Windows.Forms.Button>) 코드를 수정 하지 않는 한 합니다.  
   
 > [!NOTE]
 >  UI 요소가 없는 구성 요소를 디자인 화면에 계속 추가할 수 있습니다.  
@@ -122,7 +122,7 @@ Visual Basic의 경우 사용을 통해 강력한 사용자 지정 컨트롤을 
   
 5.  `ButtonValue` 속성을 `5`으로 설정합니다.  
   
-6.  에 **모든 Windows Forms** 탭은 **도구 상자**, 두 번 클릭 **레이블** 추가 하는 <xref:System.Windows.Forms.Label> 컨트롤을 폼입니다.  
+6.  에 **모든 Windows Forms** 탭 합니다 **도구 상자**, 두 번 클릭 **레이블** 추가할를 <xref:System.Windows.Forms.Label> 컨트롤을 폼입니다.  
   
 7.  폼 가운데에 레이블을 다시 배치합니다.  
   
@@ -151,4 +151,4 @@ Visual Basic의 경우 사용을 통해 강력한 사용자 지정 컨트롤을 
  [방법: 도구 상자 항목 선택 대화 상자에 컨트롤 표시](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)  
  [.NET Framework에서 사용자 지정 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
  [상속 기본 사항 (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
- [구성 요소 제작 연습](http://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)
+ [구성 요소 제작 연습](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)

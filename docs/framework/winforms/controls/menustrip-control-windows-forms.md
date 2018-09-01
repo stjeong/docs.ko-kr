@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MenuStrip control [Windows Forms]
 - menus
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
-ms.openlocfilehash: eb4ea812318e5a7df6a1bffefa5d47bf2c929f2c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 03328b324399c7500f2cf3a8b6ab12c843115e29
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33540192"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385122"
 ---
 # <a name="menustrip-control-windows-forms"></a>MenuStrip 컨트롤(Windows Forms)
 이 컨트롤은 응용 프로그램 명령을 그룹화하고 더 쉽게 액세스할 수 있도록 설정합니다.  
@@ -55,19 +55,19 @@ ms.locfileid: "33540192"
  [방법: MDI 응용 프로그램의 자동 메뉴 병합 설정](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)  
  런타임에 자동으로 메뉴 항목을 병합하는 방법을 설명합니다.  
   
--   [MenuStrip 항목 컬렉션 편집기](http://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
+-   [MenuStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
   
--   [방법: ToolStripMenuItems 복사](http://msdn.microsoft.com/library/ms171653\(v=vs.110\))  
+-   [방법: ToolStripMenuItems 복사](how-to-copy-toolstripmenuitems.md)  
   
--   [방법: 디자이너를 사용하여 ToolStripMenuItems 숨기기](http://msdn.microsoft.com/library/ms171658\(v=vs.110\))  
+-   [방법: 디자이너를 사용하여 ToolStripMenuItems 숨기기](how-to-hide-toolstripmenuitems-using-the-designer.md)  
   
--   [방법: 디자이너를 사용하여 ToolStripMenuItems를 사용하지 않도록 설정](http://msdn.microsoft.com/library/ms171656\(v=vs.110\))  
+-   [방법: 디자이너를 사용하여 ToolStripMenuItems를 사용하지 않도록 설정](how-to-disable-toolstripmenuitems-using-the-designer.md)  
   
--   [방법: ToolStripMenuItems 이동](http://msdn.microsoft.com/library/ms171660\(v=vs.110\))  
+-   [방법: ToolStripMenuItems 이동](how-to-move-toolstripmenuitems.md)  
   
--   [연습: 폼에 표준 메뉴 항목 제공](http://msdn.microsoft.com/library/ms233662\(v=vs.110\))  
+-   [연습: 폼에 표준 메뉴 항목 제공](walkthrough-providing-standard-menu-items-to-a-form.md)  
   
--   [MenuStrip 작업 대화 상자](http://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
+-   [MenuStrip 작업 대화 상자](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.MenuStrip>  

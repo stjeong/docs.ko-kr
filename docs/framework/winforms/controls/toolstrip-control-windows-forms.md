@@ -5,12 +5,12 @@ helpviewer_keywords:
 - toolbars [Windows Forms]
 - ToolStrip control [Windows Forms]
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
-ms.openlocfilehash: 49bf94959b2efb19ff6e3a273f4cd09905089b31
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 72ce238fdcbdcb81fc710a21d1675de67f4adc15
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33540708"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43393552"
 ---
 # <a name="toolstrip-control-windows-forms"></a>ToolStrip 컨트롤(Windows Forms)
 <xref:System.Windows.Forms.ToolStrip> 컨트롤은 Windows Forms 응용 프로그램에서 메뉴, 컨트롤 및 사용자 정의 컨트롤을 호스트할 수 있는 도구 모음입니다.  
@@ -68,22 +68,22 @@ ms.locfileid: "33540708"
  <xref:System.Windows.Forms.ToolStrip> 컨트롤과 메뉴 병합을 지원하는 MDI 폼을 만드는 방법을 설명합니다.  
   
  [방법: 전문적인 스타일의 ToolStrip 컨트롤 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-professionally-styled-toolstrip-control.md)  
- 사용 하는 방법에 설명 된 <xref:System.Windows.Forms.ToolStripProfessionalRenderer> 모방 하는 합성 컨트롤을 만드는 클래스는 **탐색 창** Microsoft® Outlook®에서 제공 합니다.  
+ 사용 하는 방법에 설명 합니다 <xref:System.Windows.Forms.ToolStripProfessionalRenderer> 과 비슷한 복합 컨트롤을 만들 클래스를 **탐색 창** Microsoft® Outlook®에서 제공 합니다.  
   
  [방법: 사용자 지정 ToolStripRenderer 구현](../../../../docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md)  
  <xref:System.Windows.Forms.ToolStripRenderer>에서 파생된 클래스를 구현하여 <xref:System.Windows.Forms.ToolStrip> 컨트롤의 모양을 사용자 지정하는 방법을 설명합니다.  
   
--   [방법: 디자이너를 사용 하 여 표준 항목을 포함 하는 기본 Windows Forms ToolStrip 만들기](http://msdn.microsoft.com/library/571c1z99\(v=vs.110\))  
+-   [방법: 디자이너를 사용 하 여 표준 항목을 사용 하 여 기본 Windows Forms ToolStrip 만들기](https://msdn.microsoft.com/library/571c1z99\(v=vs.110\))  
   
--   [방법: ToolStripContainer의 ToolStrip을 폼으로 이동](http://msdn.microsoft.com/library/ms171701\(v=vs.110\))  
+-   [방법: ToolStripContainer의 ToolStrip을 폼으로 이동](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)  
   
--   [연습: 전문적인 스타일의 ToolStrip 컨트롤 만들기](http://msdn.microsoft.com/library/ms233664\(v=vs.110\))  
+-   [연습: 전문적인 스타일의 ToolStrip 컨트롤 만들기](walkthrough-creating-a-professionally-styled-toolstrip-control.md)  
   
--   [연습: 메뉴 병합 및 ToolStrip 컨트롤을 사용하여 MDI 폼 만들기](http://msdn.microsoft.com/library/ms233676\(v=vs.110\))  
+-   [연습: 메뉴 병합 및 ToolStrip 컨트롤을 사용하여 MDI 폼 만들기](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)  
   
--   [ToolStrip 작업 대화 상자](http://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
+-   [ToolStrip 작업 대화 상자](https://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
   
--   [ToolStrip 항목 컬렉션 편집기](http://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
+-   [ToolStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.ToolStrip> 클래스  

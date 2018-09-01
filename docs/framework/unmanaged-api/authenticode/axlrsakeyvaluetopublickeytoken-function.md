@@ -10,14 +10,15 @@ api_type:
 ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7ef73f0f7599fdff887437756a5995591fd8ec89
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e09391af9b5d71cfa423b3bf1a2b307117d0dee1
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33402413"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385889"
 ---
-# <a name="axlrsakeyvaluetopublickeytoken-function"></a>_AxlRSAKeyValueToPublicKeyToken 함수
+# <a name="axlrsakeyvaluetopublickeytoken-function"></a>\_AxlRSAKeyValueToPublicKeyToken 함수
+
 모듈러스 및 지수를 강력한 이름 공개 키 토큰으로 변환합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -30,12 +31,12 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 );  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+### <a name="parameters"></a>매개 변수  
  `pModulusBlob`  
- [in] Base64 인코딩된 모듈러스 blob (에서 \<모듈러스 > 요소).  참조는 [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) 구조입니다.  
+ [in] Base64로 인코딩된 모듈러스 blob (에서 \<모듈러스 > 요소).  참조 된 [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) 구조입니다.  
   
  `pExponentBlob`  
- [in] Base64 인코딩된 지 수 blob (에서 \<지 수 > 요소). 참조는 [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) 구조입니다.  
+ [in] Base64로 인코딩된 지 수 blob (에서 \<지 수 > 요소). 참조 된 [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) 구조입니다.  
   
  `ppwszPublicKeyToken`  
  [out] 16진수로 인코딩된 공개 키 토큰을 받는 WCHAR *에 대한 포인터입니다.  

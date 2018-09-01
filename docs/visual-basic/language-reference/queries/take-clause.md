@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Take clause [Visual Basic]
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
 ms.openlocfilehash: bfaccf470d93a6a72451e7ad8b41e8dbb1171c71
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932472"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43387622"
 ---
 # <a name="take-clause-visual-basic"></a>Take 절(Visual Basic)
 컬렉션의 시작 위치에서 지정된 수의 연속 요소를 반환합니다.  
@@ -37,7 +37,7 @@ Take count
   
  사용할 수는 `TakeWhile` 절 제공 된 조건에 따라 특정 요소에만 반환 되도록 지정할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 합니다 `Take` 절과 함께 `Skip` 페이지의 쿼리에서 데이터를 반환 하는 절. GetCustomers 함수 사용을 `Skip` 절까지을 건너뛰고 고객 목록에서 값을 사용 하 여 제공 된 시작 인덱스는 `Take` 절 해당 인덱스 값에서 시작 하는 고객의 페이지를 반환 합니다.  
   
  [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  

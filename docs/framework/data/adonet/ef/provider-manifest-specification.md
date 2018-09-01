@@ -2,12 +2,12 @@
 title: 공급자 매니페스트 지정
 ms.date: 03/30/2017
 ms.assetid: bb450b47-8951-4f99-9350-26f05a4d4e46
-ms.openlocfilehash: 02faee9ad69bd75f4df608b9a4767560945c7bb3
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 9875f0ce8d7b10532d7545c05d58ab43146120f0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767143"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43387304"
 ---
 # <a name="provider-manifest-specification"></a>공급자 매니페스트 지정
 이 단원에서는 데이터 저장소 공급자가 데이터 저장소의 형식 및 함수를 지원하는 방법에 대해 설명합니다.  
@@ -23,9 +23,9 @@ ms.locfileid: "32767143"
   
  공급자 매니페스트는 데이터 저장소에 대한 연결을 열 필요 없이 디자인 타임에 도구를 통해 로드할 수 있어야 합니다.  
   
- [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 가 대/소문자 구분, 하지만 기본 데이터 저장소 되지 않을 수 있습니다. EDM 아티팩트(식별자, 형식 이름 등)가 매니페스트에서 정의되고 사용되는 경우 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 대/소문자 구분을 사용해야 합니다. 대/소문자를 구분할 수 있는 데이터 저장소 요소가 공급자 매니페스트에 나타나는 경우 해당 대/소문자 구분이 공급자 매니페스트에서 유지 관리되어야 합니다.  
+ [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 대/소문자를 구분 하지만 기본 데이터 저장소 되지 않을 수 있습니다. EDM 아티팩트(식별자, 형식 이름 등)가 매니페스트에서 정의되고 사용되는 경우 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 대/소문자 구분을 사용해야 합니다. 대/소문자를 구분할 수 있는 데이터 저장소 요소가 공급자 매니페스트에 나타나는 경우 해당 대/소문자 구분이 공급자 매니페스트에서 유지 관리되어야 합니다.  
   
- [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 모든 데이터 공급자에 대한 공급자 매니페스트를 요구합니다. 공급자가 없는 공급자를 사용 하려는 경우와 매니페스트는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], 오류가 발생 합니다.  
+ [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 모든 데이터 공급자에 대한 공급자 매니페스트를 요구합니다. 공급자 없는 공급자를 사용 하려는 경우 사용 하 여 매니페스트를 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], 오류가 표시 됩니다.  
   
  다음 표에서는 공급자 상호 작용을 통해 예외가 발생하는 경우 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 throw되는 예외의 종류에 대해 설명합니다.  
   
@@ -39,7 +39,7 @@ ms.locfileid: "32767143"
  공급자는 다음 시나리오를 지원해야 합니다.  
   
 ### <a name="writing-a-provider-with-symmetric-type-mapping"></a>대칭 형식 매핑을 사용하여 공급자 작성  
- 에 대 한 공급자를 작성할 수 있습니다는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 각 저장소 형식이 매핑됩니다 매핑 방향에 관계 없이 단일 EDM 형식입니다. EDM 형식에 해당하는 가장 단순한 매핑이 있는 공급자 형식의 경우 형식 시스템이 단순하거나 EDM 형식과 일치하기 때문에 대칭 솔루션을 사용할 수 있습니다.  
+ 공급자를 작성할 수는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 각 저장소 형식이 매핑 방향에 관계 없이 단일 EDM 형식에 매핑되는 위치입니다. EDM 형식에 해당하는 가장 단순한 매핑이 있는 공급자 형식의 경우 형식 시스템이 단순하거나 EDM 형식과 일치하기 때문에 대칭 솔루션을 사용할 수 있습니다.  
   
  해당 도메인의 단순성을 사용하고 정적 선언적 공급자 매니페스트를 생성할 수 있습니다.  
   
@@ -91,7 +91,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ```  
   
 #### <a name="using-a-provider-manifest-token"></a>공급자 매니페스트 토큰 사용  
- 오프라인 시나리오의 경우 토큰이 SSDL 표현에서 선택됩니다. SSDL을 사용 하면 한 ProviderManifestToken를 지정할 수 있습니다 (참조 [스키마 요소 (SSDL)](http://msdn.microsoft.com/library/fec75ae4-7f16-4421-9265-9dac61509222) 자세한 정보에 대 한). 예를 들어, 연결을 열 수 없는 경우 SSDL에는 매니페스트에 대한 정보를 지정하는 공급자 매니페스트 토큰이 있습니다.  
+ 오프라인 시나리오의 경우 토큰이 SSDL 표현에서 선택됩니다. SSDL에서는 ProviderManifestToken을 지정할 수 있습니다 (참조 [스키마 요소 (SSDL)](https://msdn.microsoft.com/library/fec75ae4-7f16-4421-9265-9dac61509222) 자세한). 예를 들어, 연결을 열 수 없는 경우 SSDL에는 매니페스트에 대한 정보를 지정하는 공급자 매니페스트 토큰이 있습니다.  
   
 ```  
 public DbProviderManifest GetProviderManifest(string manifestToken);  

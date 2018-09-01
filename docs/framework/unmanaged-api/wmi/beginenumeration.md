@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 08406f7d93671b406b3c7cd8719a7a0e5e423184
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930632"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43392359"
 ---
 # <a name="beginenumeration-function"></a>BeginEnumeration 함수
 열거형의 시작 부분에 다시 열거자를 다시 설정합니다.  

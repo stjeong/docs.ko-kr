@@ -2,12 +2,12 @@
 title: NetDataContractSerializer의 기능을 공급하기 위해 DataContractSerializer 및 DataContractResolver를 사용
 ms.date: 03/30/2017
 ms.assetid: 1376658f-f695-45f7-a7e0-94664e9619ff
-ms.openlocfilehash: a9dde936f2daff669aabe36c5f03203a472d435c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b86ac822e7ce7f0b18962fe48adbb1c26d7259dd
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33502221"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43394301"
 ---
 # <a name="using-datacontractserializer-and-datacontractresolver-to-provide-the-functionality-of-netdatacontractserializer"></a>NetDataContractSerializer의 기능을 공급하기 위해 DataContractSerializer 및 DataContractResolver를 사용
 이 샘플에서는 <xref:System.Runtime.Serialization.DataContractSerializer>와 적절한 <xref:System.Runtime.Serialization.DataContractResolver>를 함께 사용하여 <xref:System.Runtime.Serialization.NetDataContractSerializer>와 동일한 기능을 제공하는 방법을 보여 줍니다. 이를 위해 적절한 <xref:System.Runtime.Serialization.DataContractResolver>를 만드는 방법과 이를 <xref:System.Runtime.Serialization.DataContractSerializer>에 추가하는 방법을 보여 줍니다.  
@@ -61,11 +61,11 @@ class MyDataContractResolver : DataContractResolver
   
 2.  솔루션 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  
   
-3.  에 **솔루션 속성 페이지** 대화 아래 **공용 속성**, **시작 프로젝트**선택, **여러 개의 시작 프로젝트:** 합니다.  
+3.  에 **솔루션 속성 페이지** 대화 상자 아래에 있는 **공용 속성**, **시작 프로젝트**를 선택 **여러 개의 시작 프로젝트:**.  
   
-4.  옆에 **DCSwithDCR** 프로젝트를 **시작** 에서 **동작** 드롭다운입니다.  
+4.  옆에 **DCSwithDCR** 프로젝트 선택 **시작** 에서 **작업** 드롭다운 합니다.  
   
-5.  옆에 **NetDCS** 프로젝트를 **시작** 에서 **동작** 드롭다운입니다.  
+5.  옆에 **NetDCS** 프로젝트 선택 **시작** 에서 **작업** 드롭다운 합니다.  
   
 6.  클릭 **확인** 는 대화 상자를 닫습니다.  
   
@@ -78,7 +78,7 @@ class MyDataContractResolver : DataContractResolver
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\NetDcSasDcSwithDCR`  
   

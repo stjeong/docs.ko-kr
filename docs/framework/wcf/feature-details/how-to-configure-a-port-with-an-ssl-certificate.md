@@ -9,19 +9,19 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: c3cede1eb90b963f4c0b567a8df48925bca9b02d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e0595bcbd3dcae7977c8734b7d3858df2412c962
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33494831"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395308"
 ---
 # <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>방법: SSL 인증서를 사용하여 포트 구성
-와 Windows Communication Foundation (WCF) 자체 호스팅된 서비스를 만들 때의 <xref:System.ServiceModel.WSHttpBinding> 전송 보안을 사용 하 클래스, X.509 인증서로 포트도 구성 해야 합니다. 자체 호스트된 서비스를 만들지 않는 경우에는 IIS(인터넷 정보 서비스)에서 서비스를 호스트할 수 있습니다. 자세한 내용은 참조 [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)합니다.  
+사용 하 여 자체 호스팅된 Windows Communication Foundation (WCF) 서비스를 만들 때의 <xref:System.ServiceModel.WSHttpBinding> 클래스를 사용 하 여 전송 보안, X.509 인증서로 포트를 구성 해야 합니다. 자체 호스트된 서비스를 만들지 않는 경우에는 IIS(인터넷 정보 서비스)에서 서비스를 호스트할 수 있습니다. 자세한 내용은 [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)합니다.  
   
  포트를 구성하려면 컴퓨터에서 실행하는 운영 체제에 따라 다른 도구를 사용해야 합니다.  
   
- [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 또는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]를 실행하는 경우 HttpCfg.exe 도구를 사용합니다. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]에는 이 도구가 함께 설치됩니다. 와 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]에서 도구를 다운로드할 수 있습니다 [Windows XP 서비스 팩 2 지원 도구](http://go.microsoft.com/fwlink/?LinkId=88606)합니다. 자세한 내용은 참조 [Httpcfg 개요](http://go.microsoft.com/fwlink/?LinkId=88605)합니다. [Windows 지원 도구 설명서](http://go.microsoft.com/fwlink/?LinkId=94840) Httpcfg.exe 도구에 대 한 구문에 설명 합니다.  
+ [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 또는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]를 실행하는 경우 HttpCfg.exe 도구를 사용합니다. [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]에는 이 도구가 함께 설치됩니다. 사용 하 여 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]에서 도구를 다운로드할 수 있습니다 [Windows XP 서비스 팩 2 지원 도구](https://go.microsoft.com/fwlink/?LinkId=88606)합니다. 자세한 내용은 [Httpcfg 개요](https://go.microsoft.com/fwlink/?LinkId=88605)합니다. 합니다 [Windows 지원 도구 설명서](https://go.microsoft.com/fwlink/?LinkId=94840) Httpcfg.exe 도구에 대 한 구문을 설명 합니다.  
   
  [!INCLUDE[wv](../../../../includes/wv-md.md)]를 실행하는 경우 이미 설치되어 있는 Netsh.exe 도구를 사용합니다.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "33494831"
   
 ### <a name="to-determine-how-ports-are-configured"></a>포트의 구성 방법을 확인하려면  
   
-1.  [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 또는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]를 HttpCfg.exe 도구를 사용 하 여 현재 포트 구성을 보려면 사용 하 여는 **쿼리** 및 **ssl** 스위치, 다음 예제와 같이 합니다.  
+1.  [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 또는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)], HttpCfg.exe 도구를 사용 하 여 현재 포트 구성을 보려면를 사용 하 여는 **쿼리** 및 **ssl** 다음 예와에서 같이 전환 합니다.  
   
     ```  
     httpcfg query ssl  
@@ -55,9 +55,9 @@ ms.locfileid: "33494831"
   
 ### <a name="to-get-a-certificates-thumbprint"></a>인증서의 지문을 가져오려면  
   
-1.  인증서 MMC 스냅인을 사용하여 클라이언트 인증 용도의 X.509 인증서를 찾습니다. 자세한 내용은 참조 [하는 방법: MMC 스냅인을 사용 하 여 보기 인증서](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)합니다.  
+1.  인증서 MMC 스냅인을 사용하여 클라이언트 인증 용도의 X.509 인증서를 찾습니다. 자세한 내용은 [방법: MMC 스냅인을 사용하여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)를 참조하세요.  
   
-2.  인증서의 지문에 액세스합니다. 자세한 내용은 참조 [하는 방법: 인증서의 지문을 검색](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)합니다.  
+2.  인증서의 지문에 액세스합니다. 자세한 내용은 [방법: 인증서의 지문 검색](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)합니다.  
   
 3.  인증서의 지문을 메모장 등의 텍스트 편집기에 복사합니다.  
   
@@ -71,9 +71,9 @@ ms.locfileid: "33494831"
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  
     ```  
   
-    -   **-i** 스위치는 구문이 `IP`:`port` 및 컴퓨터의 포트 8012에 인증서를 설정 하도록 도구에 지시 합니다. 선택적으로, 번호 앞에 있는 4개의 0을 컴퓨터의 실제 IP 주소로 대체할 수 있습니다.  
+    -   합니다 **-i** 스위치는 구문이 `IP`:`port` 와 도구를 컴퓨터의 포트 8012에 인증서를 설정 하도록 지시 합니다. 선택적으로, 번호 앞에 있는 4개의 0을 컴퓨터의 실제 IP 주소로 대체할 수 있습니다.  
   
-    -   **-h** 스위치는 인증서의 지문을 지정 합니다.  
+    -   합니다 **-h** 스위치는 인증서의 지문을 지정 합니다.  
   
 2.  [!INCLUDE[wv](../../../../includes/wv-md.md)]에서 다음 예제와 같이 Netsh.exe 도구를 사용합니다.  
   
@@ -81,11 +81,11 @@ ms.locfileid: "33494831"
     netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}   
     ```  
   
-    -   **certhash** 매개 변수는 인증서의 지문을 지정 합니다.  
+    -   합니다 **certhash** 매개 변수는 인증서의 지문을 지정 합니다.  
   
-    -   **다음과 유사** 매개 변수는 IP 주소 및 포트를 지정 하 고과 똑같이 작동은 **-i** 설명한 Httpcfg.exe 도구의 스위치입니다.  
+    -   **ipport** 매개 변수는 IP 주소 및 포트를 지정 하 고과 똑같이 작동 합니다 **-i** 설명한 Httpcfg.exe 도구의 스위치입니다.  
   
-    -   **appid** 매개 변수는 소유 응용 프로그램을 식별 하는 데 사용할 수 있는 GUID입니다.  
+    -   합니다 **appid** 매개 변수는 소유 응용 프로그램을 식별 하는 데 사용할 수 있는 GUID입니다.  
   
 ### <a name="to-bind-an-ssl-certificate-to-a-port-number-and-support-client-certificates"></a>SSL 인증서를 포트 번호에 바인딩하고 클라이언트 인증서를 지원하려면  
   
@@ -95,7 +95,7 @@ ms.locfileid: "33494831"
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6 -f 2  
     ```  
   
-     **-f** 스위치는 구문이 `n` 여기서 n은 1에서 7 사이의 숫자입니다. 위의 예제와 같이 값 2를 사용하면 전송 계층에서 클라이언트 인증서가 활성화됩니다. 값 3을 사용하면 클라이언트 인증서가 활성화되고 해당 인증서가 Windows 계정에 매핑됩니다. 다른 값의 동작에 대한 자세한 내용은 HttpCfg.exe 도움말을 참조하세요.  
+     합니다 **-f** 스위치는 구문이 `n` 여기서 n은 1에서 7 사이의 숫자입니다. 위의 예제와 같이 값 2를 사용하면 전송 계층에서 클라이언트 인증서가 활성화됩니다. 값 3을 사용하면 클라이언트 인증서가 활성화되고 해당 인증서가 Windows 계정에 매핑됩니다. 다른 값의 동작에 대한 자세한 내용은 HttpCfg.exe 도움말을 참조하세요.  
   
 2.  [!INCLUDE[wv](../../../../includes/wv-md.md)]에서 전송 계층에서 X.509 인증서를 사용하여 인증하는 클라이언트를 지원하려면 위의 절차를 수행하되 다음 예제처럼 추가 매개 변수를 사용합니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "33494831"
     httpcfg query ssl>myMachinePorts.txt  
     ```  
   
-2.  [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 또는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]를 사용 하 여 HttpCfg.exe 도구를 사용 하 여는 **삭제** 및 **ssl** 키워드입니다. 사용 하 여는 **-i** 지정 하는 스위치는 `IP`:`port` 번호 및 **-h** 지문이 지정 하는 스위치입니다.  
+2.  [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 또는 [!INCLUDE[wxp](../../../../includes/wxp-md.md)]에서 HttpCfg.exe 도구를 사용 하 여 합니다 **삭제** 및 **ssl** 키워드. 사용 하 여를 **-i** 스위치를 지정 합니다 `IP`:`port` 번호 및 **-h** 지문을 지정 하는 스위치.  
   
     ```  
     httpcfg delete ssl -i 0.0.0.0:8005 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  

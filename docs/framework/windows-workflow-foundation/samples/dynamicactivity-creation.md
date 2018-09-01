@@ -2,12 +2,12 @@
 title: DynamicActivity 만들기
 ms.date: 03/30/2017
 ms.assetid: d8ebe82f-98c8-4452-aed7-2c60a512b097
-ms.openlocfilehash: 93435be69f90ca0b74dae6b934cb145fabb7afff
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 270066fafd5c71b2a720ca305433159c172872aa
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518105"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385263"
 ---
 # <a name="dynamicactivity-creation"></a>DynamicActivity 만들기
 이 샘플에서는 <xref:System.Activities.DynamicActivity> 활동을 사용하여 런타임에 활동을 만드는 두 가지 방법을 보여 줍니다.  
@@ -112,13 +112,13 @@ DynamicActivity act = new DynamicActivity()
 </Activity>  
 ```  
   
- [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]에서 XAML을 시각적으로 만들 수 있습니다. Visual Studio 프로젝트에 포함 되어 있는 경우에 "빌드 작업"을 "None" 컴파일할 하지 않도록 설정 해야 합니다. 그런 다음 아래와 같은 호출을 사용하여 동적으로 XAML을 로드할 수 있습니다.  
+ [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]에서 XAML을 시각적으로 만들 수 있습니다. Visual Studio 프로젝트에 포함 된 경우에 "빌드 작업"을 "None" 컴파일할 하지 못하도록 설정 해야 합니다. 그런 다음 아래와 같은 호출을 사용하여 동적으로 XAML을 로드할 수 있습니다.  
   
 ```  
 Activity act2 = ActivityXamlServices.Load(@"FindAverage.xaml");  
 ```  
   
- 프로그래밍 방식으로 만들거나 XAML 워크플로를 로드하여 만든 <xref:System.Activities.DynamicActivity> 인스턴스를 다음 코드 예제에서와 같이 사용할 수 있습니다. 에 전달 된 "작동"는 점에 유의 하십시오는 `WorkflowInvoker.Invoke` 된 "act" <xref:System.Activities.Activity> 첫 번째 코드 예제에 정의 합니다.  
+ 프로그래밍 방식으로 만들거나 XAML 워크플로를 로드하여 만든 <xref:System.Activities.DynamicActivity> 인스턴스를 다음 코드 예제에서와 같이 사용할 수 있습니다. 전달할 "역할"을 참고 합니다 `WorkflowInvoker.Invoke` 된 "act" <xref:System.Activities.Activity> 첫 번째 코드 예제에 정의 된 합니다.  
   
 ```  
 IDictionary<string, object> results = WorkflowInvoker.Invoke(act, new Dictionary<string, object> { { "Numbers", numbers } });  
@@ -143,6 +143,6 @@ Console.WriteLine("The average calculated using the code activity is = " + resul
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\DynamicActivity\DynamicActivityCreation`

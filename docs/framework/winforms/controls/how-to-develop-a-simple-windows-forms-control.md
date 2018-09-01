@@ -9,15 +9,15 @@ helpviewer_keywords:
 - custom controls [Windows Forms], creating simple controls using code
 - Control class [Windows Forms], Windows Forms
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
-ms.openlocfilehash: 04cedc0df60ef95acb79b651ddcbcbb34ae5e920
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 07a4de944e36b0be1a6196d08df33c4f3ab24bcc
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33539668"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43387040"
 ---
 # <a name="how-to-develop-a-simple-windows-forms-control"></a>방법: 간단한 Windows Forms 컨트롤 개발
-이 섹션에서는 사용자 지정 Windows Forms 컨트롤을 작성하는 주요 단계를 설명합니다. 이 연습에서 개발 된 간단한 컨트롤의 맞춤을 사용 하는 <xref:System.Windows.Forms.Control.Text%2A> 변경할 속성입니다. 이벤트를 발생시키거나 처리하지 않습니다.  
+이 섹션에서는 사용자 지정 Windows Forms 컨트롤을 작성하는 주요 단계를 설명합니다. 이 연습에서 개발한 간단한 컨트롤의 맞춤을 사용 하면 해당 <xref:System.Windows.Forms.Control.Text%2A> 변경할 속성입니다. 이벤트를 발생시키거나 처리하지 않습니다.  
   
 ### <a name="to-create-a-simple-custom-control"></a>간단한 사용자 지정 컨트롤을 만들려면  
   
@@ -31,22 +31,22 @@ ms.locfileid: "33539668"
     ```  
   
     ```csharp  
-    public class FirstControl:Control{}  
+    public class FirstControl:Control {}  
     ```  
   
-2.  속성을 정의합니다. (필요는 없습니다 속성을 정의 하는 컨트롤에서 많은 속성을 상속 하기 때문에 <xref:System.Windows.Forms.Control> 클래스 하지만 대부분의 사용자 지정 컨트롤 일반적으로 수행 추가 속성을 정의 합니다.) 라는 속성을 정의 하는 다음 코드 조각 `TextAlignment` 하 `FirstControl` 사용 하 여의 표시 형식을 지정 하는 <xref:System.Windows.Forms.Control.Text%2A> 속성에서 상속 <xref:System.Windows.Forms.Control>합니다. 속성을 정의하는 방법에 대한 자세한 내용은 [속성 개요](http://msdn.microsoft.com/library/8f1a1ff1-0f05-40e0-bfdf-80de8fff7d52)를 참조하세요.  
+2.  속성을 정의합니다. (필요는 없습니다 속성을 정의 하는 컨트롤에서 여러 속성을 상속 하기 때문에 <xref:System.Windows.Forms.Control> 하지만 대부분의 사용자 지정 컨트롤이 일반적으로 추가 속성을 정의 합니다.) 라는 속성을 정의 하는 다음 코드 조각 `TextAlignment` 하는 `FirstControl` 사용 하 여의 표시 형식을 지정 하는 <xref:System.Windows.Forms.Control.Text%2A> 속성에서 상속 됩니다 <xref:System.Windows.Forms.Control>합니다. 속성을 정의하는 방법에 대한 자세한 내용은 [속성 개요](https://msdn.microsoft.com/library/8f1a1ff1-0f05-40e0-bfdf-80de8fff7d52)를 참조하세요.  
   
      [!code-csharp[System.Windows.Forms.FirstControl#3](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/CS/FirstControl.cs#3)]
      [!code-vb[System.Windows.Forms.FirstControl#3](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/VB/FirstControl.vb#3)]  
   
-     컨트롤의 시각적 표시를 변경 하는 속성을 설정 하는 경우 호출 해야는 <xref:System.Windows.Forms.Control.Invalidate%2A> 메서드 컨트롤을 다시 그리도록 합니다. <xref:System.Windows.Forms.Control.Invalidate%2A> 기본 클래스에 정의 된 <xref:System.Windows.Forms.Control>합니다.  
+     컨트롤의 시각적 표시를 변경 하는 속성을 설정 하면 호출 해야 합니다는 <xref:System.Windows.Forms.Control.Invalidate%2A> 메서드 컨트롤을 다시 그리도록 합니다. <xref:System.Windows.Forms.Control.Invalidate%2A> 기본 클래스에 정의 된 <xref:System.Windows.Forms.Control>합니다.  
   
-3.  보호 된 재정의 <xref:System.Windows.Forms.Control.OnPaint%2A> 에서 상속 된 <xref:System.Windows.Forms.Control> 사용자 컨트롤에 렌더링 논리를 제공 합니다. 재정의 하지 않을 경우 <xref:System.Windows.Forms.Control.OnPaint%2A>, 컨트롤 자체를 그릴 수 없습니다. 다음 코드 조각에는 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드 표시는 <xref:System.Windows.Forms.Control.Text%2A> 속성에서 상속 <xref:System.Windows.Forms.Control> 로 지정 된 맞춤으로는 `alignmentValue` 필드입니다.  
+3.  보호 된 재정의 <xref:System.Windows.Forms.Control.OnPaint%2A> 에서 상속 된 메서드 <xref:System.Windows.Forms.Control> 컨트롤에 렌더링 논리를 제공 합니다. 재정의 하지 않을 경우 <xref:System.Windows.Forms.Control.OnPaint%2A>, 컨트롤이 자신을 그릴 수 없습니다. 다음 코드 조각에서 합니다 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드 표시 합니다 <xref:System.Windows.Forms.Control.Text%2A> 속성에서 상속 됩니다 <xref:System.Windows.Forms.Control> 에서 지정 된 맞춤을 사용 하 여는 `alignmentValue` 필드.  
   
      [!code-csharp[System.Windows.Forms.FirstControl#4](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/CS/FirstControl.cs#4)]
      [!code-vb[System.Windows.Forms.FirstControl#4](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/VB/FirstControl.vb#4)]  
   
-4.  컨트롤의 특성을 제공합니다. 특성을 사용하면 시각적 디자이너가 디자인 타임에 컨트롤과 해당 속성 및 이벤트를 적절하게 표시할 수 있습니다. 다음 코드 조각은 `TextAlignment` 속성에 특성을 적용합니다. Visual Studio와 같은 디자이너에는 <xref:System.ComponentModel.CategoryAttribute.Category%2A> (코드 조각에 표시) 하는 특성을 사용 하면 속성 논리 범주 아래에 표시 합니다. <xref:System.ComponentModel.DescriptionAttribute.Description%2A> 특성 맨 아래에 표시 될 설명 문자열을 사용 하면는 **속성** 창 때는 `TextAlignment` 속성을 선택 합니다. 특성에 대한 자세한 내용은 [구성 요소에 대한 디자인 타임 특성](http://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3)을 참조하세요.  
+4.  컨트롤의 특성을 제공합니다. 특성을 사용하면 시각적 디자이너가 디자인 타임에 컨트롤과 해당 속성 및 이벤트를 적절하게 표시할 수 있습니다. 다음 코드 조각은 `TextAlignment` 속성에 특성을 적용합니다. Visual Studio와 같은 디자이너는 <xref:System.ComponentModel.CategoryAttribute.Category%2A> (코드 조각에 표시 됨) 특성을 사용 하면 속성을 논리 범주 아래에 표시 합니다. <xref:System.ComponentModel.DescriptionAttribute.Description%2A> 특성을 사용 하면 설명이 포함 된 문자열의 맨 아래에 표시 되는 **속성** 창 때는 `TextAlignment` 속성을 선택 합니다. 특성에 대한 자세한 내용은 [구성 요소에 대한 디자인 타임 특성](https://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3)을 참조하세요.  
   
      [!code-csharp[System.Windows.Forms.FirstControl#5](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/CS/FirstControl.cs#5)]
      [!code-vb[System.Windows.Forms.FirstControl#5](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/VB/FirstControl.vb#5)]  
@@ -69,7 +69,7 @@ ms.locfileid: "33539668"
   
          `/t:library` 컴파일러 옵션은 사용자가 만드는 어셈블리가 실행 파일이 아니라 라이브러리임을 컴파일러에 알립니다. `/out` 옵션은 어셈블리의 경로 및 이름을 지정합니다. `/r` 옵션은 코드에 의해 참조되는 어셈블리의 이름을 제공합니다. 이 예제에서는 응용 프로그램에서만 사용할 수 있는 전용 어셈블리를 만들 수 있습니다. 따라서 응용 프로그램의 디렉터리에 저장해야 합니다. 배포하기 위한 컨트롤을 패키징하고 배포하는 방법에 대한 자세한 내용은 [배포](../../../../docs/framework/deployment/index.md)를 참조하세요.  
   
- 다음 샘플은 `FirstControl`의 코드를 보여 줍니다. 컨트롤은 네임스페이스 `CustomWinControls`에서 따옴표로 묶입니다. 네임스페이스는 관련된 형식의 논리적 그룹화를 제공합니다. 새로운 또는 기존 네임스페이스에서 컨트롤을 만들 수 있습니다. C#에서 `using` 선언(Visual Basic의 경우 `Imports`)을 사용하면 형식의 정규화된 이름을 사용하지 않고 네임스페이스에서 형식에 액세스할 수 있습니다. 다음 예제에서는 `using` 선언에는 코드가 클래스에 액세스할 수 있도록 허용 <xref:System.Windows.Forms.Control> 에서 <xref:System.Windows.Forms?displayProperty=nameWithType> 간단 하 게 <xref:System.Windows.Forms.Control> 정규화 된 이름을 사용 하는 대신 <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다.  
+ 다음 샘플은 `FirstControl`의 코드를 보여 줍니다. 컨트롤은 네임스페이스 `CustomWinControls`에서 따옴표로 묶입니다. 네임스페이스는 관련된 형식의 논리적 그룹화를 제공합니다. 새로운 또는 기존 네임스페이스에서 컨트롤을 만들 수 있습니다. C#에서 `using` 선언(Visual Basic의 경우 `Imports`)을 사용하면 형식의 정규화된 이름을 사용하지 않고 네임스페이스에서 형식에 액세스할 수 있습니다. 다음 예제에서는 `using` 선언을 클래스에 액세스 하는 코드를 사용 하면 <xref:System.Windows.Forms.Control> 에서 <xref:System.Windows.Forms?displayProperty=nameWithType> 간단 <xref:System.Windows.Forms.Control> 정규화 된 이름을 사용 하는 대신 <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다.  
   
  [!code-csharp[System.Windows.Forms.FirstControl#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/CS/FirstControl.cs#1)]
  [!code-vb[System.Windows.Forms.FirstControl#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/VB/FirstControl.vb#1)]  
@@ -91,7 +91,7 @@ ms.locfileid: "33539668"
     csc -r:CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll SimpleForm.cs  
     ```  
   
-     CustomWinControls.dll 클래스를 포함 하는 어셈블리는 `FirstControl`합니다. 이 어셈블리는 액세스하는 양식의 소스 파일과 동일한 디렉터리에 있어야 합니다(SimpleForm.cs 또는 SimpleForms.vb).  
+     CustomWinControls.dll은 클래스를 포함 하는 어셈블리 `FirstControl`합니다. 이 어셈블리는 액세스하는 양식의 소스 파일과 동일한 디렉터리에 있어야 합니다(SimpleForm.cs 또는 SimpleForms.vb).  
   
 3.  다음 명령을 사용하여 SimpleForm.exe를 실행합니다.  
   

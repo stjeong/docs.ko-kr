@@ -1,5 +1,5 @@
 ---
-title: My.Computer.FileSystem 개체
+title: My.Computer.FileSystem 개체 (Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
 - FileSystem module
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Seek function
 - FileOpen function
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
-ms.openlocfilehash: 111dde90912e586c92da4ed9f5be50d15a75485b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 05d849afb50a3b1c4eeecc3db26170bacc3517df
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33594372"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43390930"
 ---
 # <a name="mycomputerfilesystem-object"></a>My.Computer.FileSystem 개체
 드라이브, 파일 및 디렉터리를 사용하기 위한 속성 및 메서드를 제공합니다.  
   
 ## <a name="remarks"></a>설명  
- 메서드 및 속성에 대 한 내용은 `My.Computer.FileSystem` 개체, 참조 <xref:Microsoft.VisualBasic.FileIO.FileSystem>합니다.  
+ 메서드 및 속성에 대 한 자세한 합니다 `My.Computer.FileSystem` 개체를 참조 하십시오 <xref:Microsoft.VisualBasic.FileIO.FileSystem>합니다.  
   
- 자세한 내용은 참조 [Visual Basic을 사용한 파일 액세스](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)합니다.  
+ 자세한 내용은 [Visual Basic을 사용한 파일 액세스](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)합니다.  
   
 > [!NOTE]
 >  클래스를 사용할 수도 있습니다는 <xref:System.IO?displayProperty=nameWithType> 드라이브, 파일 및 디렉터리를 사용 하려면 네임 스페이스입니다.  

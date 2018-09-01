@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 77debed932b78ae0aa1d8eebf54bd2d3bfbfea7a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a01da268a8347e93982604520f9dcb1d4e91327d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591966"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389627"
 ---
 # <a name="walkthrough-creating-a-cryptographic-application"></a>연습: 암호화 응용 프로그램 만들기
 이 연습에서는 콘텐츠를 암호화 및 암호 해독하는 방법을 보여 줍니다. 코드 예제는 Windows Forms 응용 프로그램용으로 설계되었습니다. 이 응용 프로그램은 스마트 카드 사용과 같은 실제 시나리오를 보여 주지 않습니다. 대신, 암호화 및 암호 해독의 기초를 보여 줍니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "33591966"
 ## <a name="creating-a-windows-forms-application"></a>Windows Forms 응용 프로그램 만들기  
  이 연습의 대다수 코드 예제는 단추 컨트롤에 대한 이벤트 처리기로 설계되었습니다. 다음 표에서는 샘플 응용 프로그램에 필요한 컨트롤 및 코드 예제와 일치하는 데 필요한 이름을 보여 줍니다.  
   
-|Control|이름|텍스트 속성(필요에 따라)|  
+|Control|name|텍스트 속성(필요에 따라)|  
 |-------------|----------|---------------------------------|  
 |<xref:System.Windows.Forms.Button>|`buttonEncryptFile`|파일 암호화|  
 |<xref:System.Windows.Forms.Button>|`buttonDecryptFile`|파일 암호 해독|  
@@ -82,7 +82,7 @@ ms.locfileid: "33591966"
  [!code-vb[CryptoWalkThru#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#2)]  
   
 ## <a name="encrypting-a-file"></a>파일 암호화  
- 이 작업에는 두 가지 방법:에 대 한 이벤트 처리기 메서드는 `Encrypt File` 단추 (`buttonEncryptFile_Click`) 및 `EncryptFile` 메서드. 첫 번째 메서드는 파일을 선택할 수 있는 대화 상자를 표시하고 암호화를 수행하는 두 번째 메서드에 파일 이름을 전달합니다.  
+ 이 작업에는:에 대 한 이벤트 처리기 메서드를 `Encrypt File` 단추 (`buttonEncryptFile_Click`) 및 `EncryptFile` 메서드. 첫 번째 메서드는 파일을 선택할 수 있는 대화 상자를 표시하고 암호화를 수행하는 두 번째 메서드에 파일 이름을 전달합니다.  
   
  암호화된 콘텐츠, 키 및 IV가 모두 하나의 <xref:System.IO.FileStream>에 저장되며, 이를 암호화 패키지라고 합니다.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "33591966"
  [!code-vb[CryptoWalkThru#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#5)]  
   
 ## <a name="decrypting-a-file"></a>파일 암호 해독  
- 이 작업에는 `Decrypt File` 단추에 대한 이벤트 처리기 메서드(`buttonEncryptFile_Click`) 및 `DecryptFile` 메서드의 두 메서드가 필요합니다. 첫 번째 메서드는 파일을 선택할 수 있는 대화 상자를 표시하고 암호 해독을 수행하는 두 번째 메서드에 파일 이름을 전달합니다.  
+ 이 작업에는 `Decrypt File` 단추에 대한 이벤트 처리기 메서드(`buttonDecryptFile_Click`) 및 `DecryptFile` 메서드의 두 메서드가 필요합니다. 첫 번째 메서드는 파일을 선택할 수 있는 대화 상자를 표시하고 암호 해독을 수행하는 두 번째 메서드에 파일 이름을 전달합니다.  
   
  `Decrypt` 메서드는 다음 작업을 수행합니다.  
   

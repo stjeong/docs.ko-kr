@@ -7,17 +7,17 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: f56445e9bdd030d591f9fc6300f9a24d330dbc20
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: d0e54aeda1ee51fe7ba87c3ac69c556ea25e320f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43257372"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395453"
 ---
 # <a name="working-with-certificates"></a>인증서 작업
 WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반적으로 X.509 디지털 인증서를 사용하여 클라이언트 및 서버를 인증하고, 암호화하고, 메시지에 디지털 서명합니다. 이 항목에서는 X.509 디지털 인증서 기능과 WCF에서 인증서 기능을 사용하는 방법을 간략하게 설명하며, 이러한 개념을 자세히 설명하거나 WCF 및 인증서를 사용하여 일반 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.  
   
- 간단히 말해서 디지털 인증서는 공개 키 암호화 사용을 통해 전자 트랜잭션에 참여하는 각각의 상대방에 대해 유효성을 확인하고 인증하는 디지털 인증서, 인증 기관 및 기타 등록 기관의 시스템인 PKI(*공개 키 인프라*)의 일부입니다. 인증 기관은 인증서를 발급하며 각 인증서에는 *주체*(인증서가 발급되는 엔터티), 유효 날짜(인증서의 유효 기간), 발급자(인증서를 발급한 엔터티), 공개 키 등과 같은 데이터를 포함하는 필드 집합이 있습니다. WCF에서 이러한 각 속성은 <xref:System.IdentityModel.Claims.Claim>으로 처리되며, 각 클레임은 ID와 권한의 두 가지 형식으로 세분화됩니다. X.509 인증서에 대한 자세한 내용은[X.509 공개 키 인증서](http://go.microsoft.com/fwlink/?LinkId=209952)를 참조하세요. WCF에서 클레임 및 권한 부여에 대한 자세한 내용은 [ID 모델을 사용하여 클레임 및 권한 부여 관리](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)를 참조하세요. PKI 구현에 대한 자세한 내용은 [Windows Server 2008 R2 - 인증서 서비스](http://go.microsoft.com/fwlink/?LinkId=209949)를 참조하세요.  
+ 간단히 말해서 디지털 인증서는 공개 키 암호화 사용을 통해 전자 트랜잭션에 참여하는 각각의 상대방에 대해 유효성을 확인하고 인증하는 디지털 인증서, 인증 기관 및 기타 등록 기관의 시스템인 PKI(*공개 키 인프라*)의 일부입니다. 인증 기관은 인증서를 발급하며 각 인증서에는 *주체*(인증서가 발급되는 엔터티), 유효 날짜(인증서의 유효 기간), 발급자(인증서를 발급한 엔터티), 공개 키 등과 같은 데이터를 포함하는 필드 집합이 있습니다. WCF에서 이러한 각 속성은 <xref:System.IdentityModel.Claims.Claim>으로 처리되며, 각 클레임은 ID와 권한의 두 가지 형식으로 세분화됩니다. X.509 인증서에 대한 자세한 내용은[X.509 공개 키 인증서](https://go.microsoft.com/fwlink/?LinkId=209952)를 참조하세요. WCF에서 클레임 및 권한 부여에 대한 자세한 내용은 [ID 모델을 사용하여 클레임 및 권한 부여 관리](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)를 참조하세요. PKI 구현에 대한 자세한 내용은 [Windows Server 2008 R2 - 인증서 서비스](https://go.microsoft.com/fwlink/?LinkId=209949)를 참조하세요.  
   
  인증서의 기본 기능은 인증서 소유자의 ID를 다른 엔터티에 인증하는 것입니다. 인증서는 소유자의 *공개 키*를 포함하고, 소유자는 개인 키를 보유합니다. 공개 키를 사용하여 인증서 소유자에게 보내는 메시지를 암호화할 수 있습니다. 소유자만 개인 키에 액세스할 수 있으므로 소유자만이 해당 메시지를 해독할 수 있습니다.  
   
@@ -42,7 +42,7 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
   
 -   **개인**. 이 저장소는 컴퓨터 사용과 연관된 인증서에 사용됩니다. 일반적으로 이 저장소는 신뢰할 수 있는 루트 인증 기관 저장소에 있는 인증 기관 인증서 중 하나에서 발급한 인증서에 사용됩니다. 또한 여기에 있는 인증서는 응용 프로그램에서 자체 발급하고 신뢰할 수 있습니다.  
   
- 인증서 저장소에 대한 자세한 내용은 [인증서 저장소](http://go.microsoft.com/fwlink/?LinkId=88912)를 참조하세요.  
+ 인증서 저장소에 대한 자세한 내용은 [인증서 저장소](https://go.microsoft.com/fwlink/?LinkId=88912)를 참조하세요.  
   
 ### <a name="selecting-a-store"></a>저장소 선택  
  인증서를 저장할 위치는 서비스 또는 클라이언트가 실행되는 방법과 시기에 따라 달라집니다. 다음과 같은 일반 규칙이 적용됩니다.  
@@ -52,7 +52,7 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
 -   서비스 또는 클라이언트가 사용자 계정에서 실행되는 응용 프로그램인 경우 **현재 사용자** 저장소를 사용합니다.  
   
 ### <a name="accessing-stores"></a>저장소 액세스  
- 저장소는 컴퓨터에 있는 폴더처럼 ACL(액세스 제어 목록)에 의해 보호됩니다. IIS(인터넷 정보 서비스)에 의해 호스팅되는 서비스를 만들 경우 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 프로세스가 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 계정에서 실행됩니다. 이 계정은 서비스에 사용되는 인증서가 들어 있는 저장소에 대한 액세스 권한이 있어야 합니다. 각각의 주 저장소는 기본 액세스 목록으로 보호되지만, 목록을 수정할 수 있습니다. 저장소 액세스를 위한 개별 역할을 만들 경우 해당 역할에 액세스 권한을 부여해야 합니다. WinHttpCertConfig.exe 도구를 사용하여 액세스 목록을 수정하는 방법에 대한 자세한 내용은 [방법: 개발 중 사용할 임시 인증서 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)를 참조하세요. IIS에서 클라이언트 인증서 사용에 대한 자세한 내용은 [ASP.NET 웹 응용 프로그램에서 인증을 위해 클라이언트 인증서를 사용하여 웹 서비스를 호출하는 방법](http://go.microsoft.com/fwlink/?LinkId=88914)을 참조하세요.  
+ 저장소는 컴퓨터에 있는 폴더처럼 ACL(액세스 제어 목록)에 의해 보호됩니다. IIS(인터넷 정보 서비스)에 의해 호스팅되는 서비스를 만들 경우 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 프로세스가 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 계정에서 실행됩니다. 이 계정은 서비스에 사용되는 인증서가 들어 있는 저장소에 대한 액세스 권한이 있어야 합니다. 각각의 주 저장소는 기본 액세스 목록으로 보호되지만, 목록을 수정할 수 있습니다. 저장소 액세스를 위한 개별 역할을 만들 경우 해당 역할에 액세스 권한을 부여해야 합니다. WinHttpCertConfig.exe 도구를 사용하여 액세스 목록을 수정하는 방법에 대한 자세한 내용은 [방법: 개발 중 사용할 임시 인증서 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)를 참조하세요. IIS에서 클라이언트 인증서 사용에 대한 자세한 내용은 [ASP.NET 웹 응용 프로그램에서 인증을 위해 클라이언트 인증서를 사용하여 웹 서비스를 호출하는 방법](https://go.microsoft.com/fwlink/?LinkId=88914)을 참조하세요.  
   
 ## <a name="chain-trust-and-certificate-authorities"></a>신뢰 체인 및 인증 기관  
  인증서는 개별 인증서가 인증서를 발급한 CA에 연결되는 계층 구조에 만들어집니다. 이 링크는 CA의 인증서로 연결됩니다. CA 인증서는 원래 CA의 인증서를 발급한 CA로 연결됩니다. 이 프로세스는 루트 CA의 인증서에 도달할 때까지 반복됩니다. 루트 CA의 인증서는 본질적으로 신뢰할 수 있는 인증서입니다.  
@@ -146,9 +146,9 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
  구성을 사용하여 인증서를 설정할 수도 있습니다. 서비스를 만들 경우 인증서를 포함한 자격 증명이 [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md)에서 지정됩니다. 클라이언트를 프로그래밍할 경우 인증서가 [\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md)에서 지정됩니다.  
   
 ## <a name="mapping-a-certificate-to-a-user-account"></a>사용자 계정에 인증서 매핑  
- IIS 및 Active Directory에는 Windows 사용자 계정에 인증서를 매핑하는 기능이 있습니다. 기능에 대한 자세한 내용은 [사용자 계정에 인증서 매핑](http://go.microsoft.com/fwlink/?LinkId=88917)을 참조하세요.  
+ IIS 및 Active Directory에는 Windows 사용자 계정에 인증서를 매핑하는 기능이 있습니다. 기능에 대한 자세한 내용은 [사용자 계정에 인증서 매핑](https://go.microsoft.com/fwlink/?LinkId=88917)을 참조하세요.  
   
- Active Directory 매핑 사용에 대한 자세한 내용은 [디렉터리 서비스 매핑을 사용하여 클라이언트 인증서 매핑](http://go.microsoft.com/fwlink/?LinkId=88918)을 참조하세요.  
+ Active Directory 매핑 사용에 대한 자세한 내용은 [디렉터리 서비스 매핑을 사용하여 클라이언트 인증서 매핑](https://go.microsoft.com/fwlink/?LinkId=88918)을 참조하세요.  
   
  이 기능을 사용하여 <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> 클래스의 <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> 속성을 `true`로 설정할 수 있습니다. 다음 코드에 표시된 것처럼 구성에서 [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) 요소의 `mapClientCertificateToWindowsAccount` 특성을 `true`로 설정할 수 있습니다.  
   

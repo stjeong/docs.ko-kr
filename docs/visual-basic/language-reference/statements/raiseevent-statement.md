@@ -11,11 +11,11 @@ helpviewer_keywords:
 - event handlers, connecting events to
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 ms.openlocfilehash: ef4dce290a7a7f6340b15aa4083cd40518e37d0d
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245219"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43388409"
 ---
 # <a name="raiseevent-statement"></a>RaiseEvent 문
 클래스, 폼 또는 문서의 모듈 수준에서 선언한 이벤트를 트리거합니다.  
@@ -50,7 +50,7 @@ RaiseEvent eventname[( argumentlist )]
 > [!NOTE]
 >  사용자 지정 이벤트를 정의 하 여 이벤트의 기본 동작을 변경할 수 있습니다. 사용자 지정 이벤트에 대 한 합니다 `RaiseEvent` 문은 호출 이벤트의 `RaiseEvent` 접근자입니다. 사용자 지정 이벤트에 대 한 자세한 내용은 참조 하세요. [이벤트 연결 문으로](../../../visual-basic/language-reference/statements/event-statement.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 이벤트를 사용하여 10초부터 0초까지 카운트 다운합니다. 코드는 다양 한 이벤트 관련 메서드, 속성 및 포함 하 여 문을 보여 줍니다는 `RaiseEvent` 문입니다.  
   
  이벤트를 발생시키는 클래스는 이벤트 소스이고 이벤트를 처리하는 메서드는 이벤트 처리기입니다. 이벤트 소스는 생성되는 이벤트에 대해 여러 개의 처리기를 사용할 수 있습니다. 클래스에서 이벤트를 발생시키면 해당 이벤트는 개체의 해당 인스턴스에 대해 이벤트를 처리하도록 선택한 모든 클래스에서 발생됩니다.  
@@ -65,7 +65,7 @@ RaiseEvent eventname[( argumentlist )]
   
  [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_2.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `Form1`에 대한 코드에 다음 코드를 추가합니다. 같은 존재할 수 있는 모든 중복 프로시저 바꿉니다 `Form_Load`, 또는 `Button_Click`합니다.  
   
  [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_3.vb)]  

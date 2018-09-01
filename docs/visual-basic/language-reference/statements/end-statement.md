@@ -15,11 +15,11 @@ helpviewer_keywords:
 - execution [Visual Basic], stopping
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
 ms.openlocfilehash: 8fd489dc9f12f7e80ef2dd49c6e2dee6c28ae761
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199405"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395724"
 ---
 # <a name="end-statement"></a>End 문
 실행을 즉시 종료 됩니다.  
@@ -47,7 +47,7 @@ End
   
  뒤에 키워드를 추가 하는 경우 [끝 \<키워드 > 문을](../../../visual-basic/language-reference/statements/end-keyword-statement.md) 적절 한 프로시저 또는 블록 정의의 끝을 나타냅니다. 예를 들어 `End Function` 의 정의 종료 한 `Function` 프로시저입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `End` 문을 사용자가 요청할 경우 코드 실행을 종료 합니다.  
   
  [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/end-statement_1.vb)]  

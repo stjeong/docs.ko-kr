@@ -9,19 +9,19 @@ helpviewer_keywords:
 - MenuStrip control [Windows Forms], appending
 - MDI [Windows Forms], merging menu items
 ms.assetid: ab70c936-b452-4653-b417-17be57bb795b
-ms.openlocfilehash: 048add340a81856cd30482c52c93c76bbf6181f8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bfce2e5c787bd18321d1203286e98d8f75cbf173
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529557"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43386080"
 ---
 # <a name="how-to-append-a-menustrip-to-an-mdi-parent-window-windows-forms"></a>방법: MDI 부모 창에 MenuStrip 추가(Windows Forms)
 일부 응용 프로그램에서는 MDI(다중 문서 인터페이스) 자식 창의 종류가 MDI 부모 창과 다를 수 있습니다. 예를 들어 MDI 부모는 스프레드시트이고 MDI 자식은 차트일 수 있습니다. 이 경우 다른 종류의 MDI 자식 창이 활성화될 때 MDI 부모 메뉴의 내용을 MDI 자식 메뉴의 내용으로 업데이트하려고 합니다.  
   
  다음 절차에서는 <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction> 및 <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> 속성을 사용하여 MDI 자식 메뉴를 MDI 부모 메뉴에 추가합니다. MDI 자식 창을 닫으면 MDI 부모에서 추가된 메뉴가 제거됩니다.  
   
- 또한 참조 [다중 문서 MDI (인터페이스) 응용 프로그램](http://msdn.microsoft.com/library/xyhh2e7e\(v=vs.110\))합니다.  
+ 도 참조 하세요 [다중 문서 MDI (인터페이스) 응용 프로그램](https://msdn.microsoft.com/library/xyhh2e7e\(v=vs.110\))합니다.  
   
 ### <a name="to-append-a-menu-item-to-an-mdi-parent"></a>MDI 부모에 메뉴 항목을 추가하려면  
   

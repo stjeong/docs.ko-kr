@@ -2,20 +2,20 @@
 title: '디자인 패턴: 목록 기반 게시-구독'
 ms.date: 03/30/2017
 ms.assetid: f4257abc-12df-4736-a03b-0731becf0fd4
-ms.openlocfilehash: ee05be76607975bd771c0e6f83c242ad944251df
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2807cc8cc197ff39417e3b6375ebbd595cf73c54
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33506534"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43387548"
 ---
 # <a name="design-patterns-list-based-publish-subscribe"></a>디자인 패턴: 목록 기반 게시-구독
-이 샘플에서는 Windows Communication Foundation (WCF) 프로그램으로 구현 된 목록 기반 게시-구독 패턴을 보여 줍니다.  
+이 샘플 Windows Communication Foundation (WCF) 프로그램으로 구현 된 목록 기반 게시-구독 패턴을 보여 줍니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
   
- 목록 기반 게시-구독 디자인 패턴에서 Microsoft 패턴 및 규칙 게시 설명 [통합 패턴](http://go.microsoft.com/fwlink/?LinkId=95894)합니다. 게시-구독 패턴에서는 정보 항목을 구독한 받는 사람 컬렉션으로 정보를 전달합니다. 목록 기반 게시-구독에서는 구독자 목록을 유지 관리합니다. 공유할 정보가 있으면 목록에 있는 각 구독자에게 복사본이 전송됩니다. 이 샘플에서는 필요할 때마다 클라이언트에서 구독하거나 구독 취소할 수 있는 동적 목록 기반 게시-구독 패턴을 보여 줍니다.  
+ Microsoft Patterns & Practices 게시에 설명 되어 목록 기반 게시-구독 디자인 패턴 [통합 패턴](https://go.microsoft.com/fwlink/?LinkId=95894)합니다. 게시-구독 패턴에서는 정보 항목을 구독한 받는 사람 컬렉션으로 정보를 전달합니다. 목록 기반 게시-구독에서는 구독자 목록을 유지 관리합니다. 공유할 정보가 있으면 목록에 있는 각 구독자에게 복사본이 전송됩니다. 이 샘플에서는 필요할 때마다 클라이언트에서 구독하거나 구독 취소할 수 있는 동적 목록 기반 게시-구독 패턴을 보여 줍니다.  
   
  List-based Publish-Subscribe 샘플은 클라이언트, 서비스 및 데이터 소스 프로그램으로 구성됩니다. 둘 이상의 클라이언트와 둘 이상의 데이터 소스 프로그램이 실행될 수 있습니다. 클라이언트에서는 서비스를 구독하고 알림을 수신하며 구독을 취소합니다. 데이터 소스 프로그램에서는 현재 모든 구독자와 공유할 정보를 서비스로 보냅니다.  
   
@@ -112,7 +112,7 @@ public class PriceChangeEventArgs : EventArgs
   
 ### <a name="to-set-up-and-build-the-sample"></a>샘플을 설치하고 빌드하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
@@ -120,17 +120,17 @@ public class PriceChangeEventArgs : EventArgs
   
 1.  다음 주소를 입력 하 여 브라우저를 사용 하는 서비스에 액세스할 수 있는지 테스트: http://localhost/servicemodelsamples/service.svc합니다. 확인 페이지가 응답으로 표시됩니다.  
   
-2.  \Client\bin에서 Client.exe를 실행\\, 언어별 폴더의 합니다. 클라이언트 콘솔 창에 클라이언트 동작이 표시됩니다. 여러 클라이언트가 시작됩니다.  
+2.  \Client\bin에서 Client.exe를 실행\\, 언어별 폴더입니다. 클라이언트 콘솔 창에 클라이언트 동작이 표시됩니다. 여러 클라이언트가 시작됩니다.  
   
-3.  \Datasource\bin에서 Datasource.exe를 실행\\, 언어별 폴더의 합니다. 데이터 소스 동작이 콘솔 창에 표시됩니다. 데이터 소스에서 서비스로 정보를 보내면 각 클라이언트로 전달되어야 합니다.  
+3.  \Datasource\bin에서 Datasource.exe를 실행\\, 언어별 폴더입니다. 데이터 소스 동작이 콘솔 창에 표시됩니다. 데이터 소스에서 서비스로 정보를 보내면 각 클라이언트로 전달되어야 합니다.  
   
-4.  클라이언트, 데이터 원본 및 서비스 프로그램 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트, 데이터 원본 및 서비스 프로그램을 전달할 수 없는 경우 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 ### <a name="to-run-the-sample-across-machines"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
 1.  서비스 컴퓨터를 설정합니다.  
   
-    1.  서비스 컴퓨터에서 ServiceModelSamples라는 가상 디렉터리를 만듭니다. 일괄 처리 파일에서 Setupvroot.bat는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) 디스크 디렉터리 및 가상 디렉터리를 만드는 데 사용할 수 있습니다.  
+    1.  서비스 컴퓨터에서 ServiceModelSamples라는 가상 디렉터리를 만듭니다. 배치 파일에서 Setupvroot.bat 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) 디스크 디렉터리와 가상 디렉터리를 만드는 데 사용할 수 있습니다.  
   
     2.  %SystemDrive%\Inetpub\wwwroot\servicemodelsamples에서 서비스 컴퓨터의 ServiceModelSamples 가상 디렉터리로 서비스 프로그램 파일을 복사합니다. \bin 디렉터리에 파일을 포함해야 합니다.  
   
@@ -140,13 +140,13 @@ public class PriceChangeEventArgs : EventArgs
   
     1.  언어별 폴더의 \client\bin\ 폴더에서 클라이언트 프로그램 파일을 클라이언트 컴퓨터로 복사합니다.  
   
-    2.  각 클라이언트 구성 파일에서 끝점 정의의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 주소에서 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
+    2.  각 클라이언트 구성 파일에서 엔드포인트 정의의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 주소에서 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
   
 3.  데이터 소스 컴퓨터를 설정합니다.  
   
     1.  언어별 폴더의 \datasource\bin\ 폴더에서 데이터 소스 프로그램 파일을 데이터 소스 컴퓨터로 복사합니다.  
   
-    2.  데이터 소스 구성 파일에서 끝점 정의의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 주소에서 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
+    2.  데이터 소스 구성 파일에서 엔드포인트 정의의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 주소에서 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
   
 4.  클라이언트 컴퓨터의 명령 프롬프트에서 Client.exe를 실행합니다.  
   
@@ -157,7 +157,7 @@ public class PriceChangeEventArgs : EventArgs
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DesignPatterns/ListBasedPublishSubscribe`  
   

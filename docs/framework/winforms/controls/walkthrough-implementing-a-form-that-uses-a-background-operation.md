@@ -15,12 +15,12 @@ helpviewer_keywords:
 - threading [Windows Forms], background operations
 - background operations
 ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
-ms.openlocfilehash: 428dae2d10cd0f49a337c5b0439c5dcc72f83432
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: 435bc1c04bfd2f9b8a94ff8151369b5ef2fae6f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43257385"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385874"
 ---
 # <a name="walkthrough-implementing-a-form-that-uses-a-background-operation"></a>연습: 백그라운드 작업을 사용하는 폼 구현
 를 완료 하려면 시간이 오래 걸리는 작업을 해야 하 고 원하지 않는 사용자 인터페이스 (UI) 응답을 중지 하거나 사용할 수 있습니다 "중단" 하는 경우는 <xref:System.ComponentModel.BackgroundWorker> 다른 스레드에서 작업을 실행 하는 클래스입니다.  
@@ -57,7 +57,7 @@ ms.locfileid: "43257385"
   
 5.  첫 번째 이름 바꾸기 <xref:System.Windows.Forms.Button> 제어 `startAsyncButton` 설정 된 <xref:System.Windows.Forms.Control.Text%2A> 속성을 `Start Async`입니다. 두 번째 이름을 바꿀 <xref:System.Windows.Forms.Button> 컨트롤 `cancelAsyncButton`를 설정 합니다 <xref:System.Windows.Forms.Control.Text%2A> 속성을 `Cancel Async`합니다. 설정 해당 <xref:System.Windows.Forms.Control.Enabled%2A> 속성을 `false`입니다.  
   
-6.  둘 다에 대해 이벤트 처리기를 만들고 합니다 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Click> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용하여 이벤트 처리기 만들기](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)를 참조하세요.  
+6.  둘 다에 대해 이벤트 처리기를 만들고 합니다 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Click> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용하여 이벤트 처리기 만들기](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)를 참조하세요.  
   
 7.  끌어서를 <xref:System.Windows.Forms.Label> 에서 제어 합니다 **도구 상자** 폼 하 고 이름을 `resultLabel`입니다.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "43257385"
   
 #### <a name="to-implement-asynchronous-event-handlers"></a>비동기 이벤트 처리기를 구현하려면  
   
-1.  에 **속성** 창 사용 하 여를 <xref:System.ComponentModel.BackgroundWorker> 구성 요소가 여전히 선택를 클릭 합니다 **이벤트** 단추. 두 번 클릭 합니다 <xref:System.ComponentModel.BackgroundWorker.DoWork> 및 <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> 이벤트를 이벤트 처리기를 만듭니다. 이벤트 처리기를 사용하는 방법에 대한 자세한 내용은 [방법: 디자이너를 사용하여 이벤트 처리기 만들기](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)를 참조하세요.  
+1.  에 **속성** 창 사용 하 여를 <xref:System.ComponentModel.BackgroundWorker> 구성 요소가 여전히 선택를 클릭 합니다 **이벤트** 단추. 두 번 클릭 합니다 <xref:System.ComponentModel.BackgroundWorker.DoWork> 및 <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> 이벤트를 이벤트 처리기를 만듭니다. 이벤트 처리기를 사용하는 방법에 대한 자세한 내용은 [방법: 디자이너를 사용하여 이벤트 처리기 만들기](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)를 참조하세요.  
   
 2.  사용자 폼에서 `ComputeFibonacci`라는 새 메서드를 만듭니다. 이 메서드는 실제 작업을 수행하며 백그라운드에서 실행됩니다. 이 코드는 피보나치 알고리즘의 재귀적 구현을 보여 줍니다. 이는 매우 비효율적이며, 큰 숫자를 완성하는 데 기하급수적으로 긴 시간이 소요됩니다. 여기서는 응용 프로그램에서 오랜 지연을 유발할 수 있는 작업을 보여 주기 위해 설명 용도로 사용됩니다.  
   
@@ -166,8 +166,8 @@ ms.locfileid: "43257385"
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ComponentModel.BackgroundWorker>  
  [관리되는 스레딩을 구현하는 최선의 방법](../../../../docs/standard/threading/managed-threading-best-practices.md)  
- [구성 요소에서 다중 스레딩](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- [빌드에 없음: Visual Basic의 다중 스레딩](http://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
+ [구성 요소에서 다중 스레딩](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [빌드에 없음: Visual Basic의 다중 스레딩](https://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
  [방법: 배경 작업을 사용하는 양식 구현](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
  [연습: 백그라운드에서 작업 실행](../../../../docs/framework/winforms/controls/walkthrough-running-an-operation-in-the-background.md)  
  [BackgroundWorker 구성 요소](../../../../docs/framework/winforms/controls/backgroundworker-component.md)

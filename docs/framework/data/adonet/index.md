@@ -2,12 +2,12 @@
 title: ADO.NET
 ms.date: 03/30/2017
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
-ms.openlocfilehash: 5869cbe62f8f3dd1b81dd176cf95a4a0a5491967
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 59828e988659b9fc5644ff801f77171103630660
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32765440"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43388224"
 ---
 # <a name="adonet"></a>ADO.NET
 ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를 노출하는 클래스 집합입니다. ADO.NET은 분산된 데이터 공유 응용 프로그램을 만들기 위한 다양한 구성 요소를 제공합니다. 또한 관계형, XML 및 응용 프로그램 데이터에 대한 액세스를 제공하는 .NET Framework의 핵심 부분입니다. ADO.NET은 응용 프로그램, 도구, 언어 또는 인터넷 브라우저에서 사용되는 중간 계층 비즈니스 개체 및 프런트 엔드 데이터베이스 클라이언트 만들기를 포함하여 다양한 개발 요구 사항을 지원합니다.  
@@ -19,7 +19,7 @@ ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를
  [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)  
  ADO.NET의 디자인 및 구성 요소에 대해 소개합니다.  
   
- [Entity Framework](http://go.microsoft.com/fwlink/?LinkID=213876)  
+ [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=213876)  
  Entity Framework를 사용하여 응용 프로그램을 만드는 방법에 대해 설명합니다.  
   
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
@@ -44,10 +44,10 @@ ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를
  .NET Framework Data Provider for Oracle과 관련된 기능 및 동작을 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [네이티브 및 .NET Framework 코드의 PAVE 보안](http://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
+ [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
  Visual Studio, .NET Framework 및 암호화의 보안 관련 항목에 대한 링크를 제공합니다.  
   
- [LINQ(Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ(Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
  LINQ 항목 및 샘플에 대한 링크를 제공합니다.  
   
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
@@ -64,4 +64,4 @@ ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 데이터 액세스](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

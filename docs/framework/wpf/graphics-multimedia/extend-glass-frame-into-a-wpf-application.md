@@ -11,11 +11,11 @@ helpviewer_keywords:
 - glass frames [WPF], extending into applications
 ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
 ms.openlocfilehash: 93eda6d6a13d6a510f2aeb06ab1c66d0cd40927f
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931542"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43384301"
 ---
 # <a name="extend-glass-frame-into-a-wpf-application"></a>투명 효과 프레임을 WPF 응용 프로그램으로 확장
 이 항목을 확장 하는 방법에 설명 합니다 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] Windows Presentation Foundation (WPF) 응용 프로그램의 클라이언트 영역에 투명 효과 프레임입니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "42931542"
 > [!NOTE]
 >  이 예제는 투명 효과가 사용되도록 설정된 DWM(바탕 화면 창 관리자)를 실행하는 [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] 컴퓨터에서만 작동합니다. [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] Home Basic Edition에서는 투명 효과를 지원하지 않습니다. 일반적으로 [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)]의 다른 버전에서 투명 효과로 렌더링되는 영역은 불투명하게 렌더링됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 그림에서는 Internet Explorer 7의 주소 표시줄로 확장되는 투명 효과 프레임을 보여 줍니다.  
   
  **주소 표시줄 뒤로 투명 효과 프레임이 확장된 Internet Explorer**  
@@ -64,7 +64,7 @@ public static extern int DwmExtendFrameIntoClientArea(
   
  [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea)는 프레임을 클라이언트 영역으로 확장하는 DWM 함수입니다. 이 함수는 창 핸들 및 [MARGINS](/windows/desktop/api/uxtheme/ns-uxtheme-_margins) 구조체의 두 매개 변수를 사용합니다. [MARGINS](/windows/desktop/api/uxtheme/ns-uxtheme-_margins)는 프레임을 클라이언트 영역으로 얼마나 추가로 확장해야 하는지를 나타내는 데 사용됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) 함수를 사용하려면 창 핸들을 가져와야 합니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]에서 창 핸들을 가져올 수 있습니다 합니다 <xref:System.Windows.Interop.HwndSource.Handle%2A> 의 속성을 <xref:System.Windows.Interop.HwndSource>. 다음 예제에서는 프레임은 확장을 클라이언트 영역으로에 <xref:System.Windows.FrameworkElement.Loaded> 창의 이벤트입니다.  
   
 ```csharp  
@@ -108,7 +108,7 @@ void OnLoaded(object sender, RoutedEventArgs e)
 }  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제는 프레임이 클라이언트 영역으로 확장되는 간단한 창을 보여 줍니다. 프레임은 두 가지를 포함 하는 위쪽 테두리 뒤로 확장 됩니다 <xref:System.Windows.Controls.TextBox> 개체입니다.  
   
 ```xaml  

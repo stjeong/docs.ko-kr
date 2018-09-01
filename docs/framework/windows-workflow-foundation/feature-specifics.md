@@ -2,24 +2,24 @@
 title: Windows Workflow Foundation 기능 특성
 ms.date: 03/30/2017
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
-ms.openlocfilehash: 0f9bc81609379414ce022499e20791073d259cdc
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: b18c6dd76762f4495ac475cd3dfa4e1995733b59
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33809864"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43386093"
 ---
 # <a name="windows-workflow-foundation-feature-specifics"></a>Windows Workflow Foundation 기능 특성
 [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)]에서는 Windows Workflow Foundation에 많은 기능을 추가합니다. 이 문서에서는 여러 새로운 기능을 설명하고 이러한 기능이 유용할 수 있는 시나리오에 대한 세부 정보를 제공합니다.  
   
 ## <a name="messaging-activities"></a>메시징 활동  
- 메시징 활동 (<xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.ReceiveReply>) 워크플로와에서 WCF 메시지를 받거나 보내기 위해 사용 됩니다.  <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 활동은 표준 WCF 웹 서비스와 마찬가지로 WSDL을 통해 노출 되는 Windows Communication Foundation (WCF) 서비스 작업을 형성 하는 데 사용 됩니다.  <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply> WCF와 유사한 웹 서비스를 사용 하는 데 사용 됩니다 <xref:System.ServiceModel.ChannelFactory>; **서비스 참조 추가** 미리 구성 된 활동을 생성 하는 Workflow Foundation에 대 한 환경도 있습니다.  
+ 메시징 활동 (<xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>를 <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.ReceiveReply>) 워크플로에서 WCF 메시지를 송수신 하는 데 사용 됩니다.  <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 활동 표준 WCF 웹 서비스와 마찬가지로 WSDL을 통해 노출 되는 Windows Communication Foundation (WCF) 서비스 작업을 만드는 데 사용 됩니다.  <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply> 유사한 WCF 웹 서비스를 사용 하는 데 사용 됩니다 <xref:System.ServiceModel.ChannelFactory>입니다 **서비스 참조 추가** Workflow foundation의 미리 구성 된 작업을 생성 하는 환경도 있습니다.  
   
 ### <a name="getting-started-with-messaging-activities"></a>메시징 작업 시작  
   
 -   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다. <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 쌍이 캔버스에 배치됩니다.  
   
--   선택한 프로젝트를 마우스 오른쪽 단추로 클릭 **서비스 참조 추가**합니다.  기존 WSDL 웹 서비스를 가리키고 클릭 **확인**합니다.  생성 된 활동이 표시 프로젝트를 빌드합니다 (사용 하 여 구현 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply>) 도구 상자에 있습니다.  
+-   프로젝트를 마우스 오른쪽 단추로 클릭 **서비스 참조 추가**합니다.  기존 웹 서비스 WSDL 가리키고 클릭 **확인**합니다.  생성된 된 활동을 표시 하려면 프로젝트를 빌드합니다 (사용 하 여 구현 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply>) 도구 상자에 있습니다.  
   
 -   이러한 작업에 대한 샘플은 다음 단원에서 확인할 수 있습니다.  
   
@@ -27,19 +27,19 @@ ms.locfileid: "33809864"
   
     -   시나리오: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
   
--   [개념 설명서](http://go.microsoft.com/fwlink/?LinkId=204801)  
+-   [개념 설명서](https://go.microsoft.com/fwlink/?LinkId=204801)  
   
--   [메시징 활동 디자이너 문서](http://go.microsoft.com/fwlink/?LinkId=204802)  
+-   [메시징 작업 디자이너 설명서](https://go.microsoft.com/fwlink/?LinkId=204802)  
   
 ### <a name="messaging-activities-example-scenario"></a>메시징 작업 예제 시나리오  
- A `BestPriceFinder` 특정 경로 대 한 최상의 티켓 가격을 검색 하기 위해 여러 airline 서비스 서비스를 호출 합니다.  이 시나리오를 구현 가격 요청을 받고, 가격 백 엔드 서비스에서 검색 한 가격이 가격 요청에 회신 하 메시지 활동을 사용 해야 합니다.  또한 해야 최상의 가격을 계산 하기 위한 비즈니스 논리를 만드는 다른 기본 제공 활동을 사용할 수 있습니다.  
+ `BestPriceFinder` 특정 경로 대 한 최상의 티켓 가격을 찾기 위해 여러 항공사 서비스 서비스를 호출 합니다.  이 시나리오를 구현 해야 메시지 작업을 사용 하 여 가격 요청을 받고, 백 엔드 서비스에서 가격을 검색, 최상의 가격으로 가격 요청에 회신 하를 수 있습니다.  또한 해야 하므로 최상의 가격을 계산 하는 것에 대 한 비즈니스 논리를 만드는 다른 기본 제공 활동을 사용 하 합니다.  
   
 ## <a name="workflowservicehost"></a>WorkflowServiceHost  
- <xref:System.ServiceModel.WorkflowServiceHost> 는 여러 인스턴스, 구성 및 WCF 메시징 (워크플로가 호스팅되기 위해 메시징을 사용할 필요 없지만)를 지 원하는 기본 제공 워크플로 호스트입니다.  서비스 동작의 집합을 통해 지속성, 추적 및 인스턴스 제어와 통합됩니다.  WCF의 동일 하 게 <xref:System.ServiceModel.ServiceHost>, <xref:System.ServiceModel.WorkflowServiceHost> 콘솔/WinForms/WPF 응용 프로그램 또는 Windows 서비스에서 자체 호스트 되거나 (.xamlx 파일로) 웹 호스트 될 수 IIS 또는 WAS에서 합니다.  
+ <xref:System.ServiceModel.WorkflowServiceHost> 여러 인스턴스, 구성 및 WCF 메시징 (워크플로가 호스팅되기 위해 메시징을 사용할 필요 하지 않음) 하지만 지 원하는 기본 제공 워크플로 호스트 됩니다.  서비스 동작의 집합을 통해 지속성, 추적 및 인스턴스 제어와 통합됩니다.  WCF의와 마찬가지로 <xref:System.ServiceModel.ServiceHost>, <xref:System.ServiceModel.WorkflowServiceHost> 콘솔/WinForms/WPF 응용 프로그램 또는 Windows 서비스에서 자체 호스트 되거나 (.xamlx 파일로) 웹 호스트 될 수 IIS 또는 WAS에서.  
   
 ### <a name="getting-started-with-workflow-service-host"></a>워크플로 서비스 호스트 시작  
   
--   Visual Studio 2010에서는 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다:이 프로젝트 사용 하도록 설정 됩니다 <xref:System.ServiceModel.WorkflowServiceHost> 웹 호스트 환경에서 합니다.  
+-   Visual Studio 2010에서 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다:이 프로젝트 사용 하도록 설정 됩니다 <xref:System.ServiceModel.WorkflowServiceHost> 웹 호스트 환경에서.  
   
 -   메시징이 아닌 워크플로를 호스트하려면 메시지를 기반으로 하는 인스턴스를 만들 사용자 지정 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint>를 추가합니다.  
   
@@ -55,10 +55,10 @@ ms.locfileid: "33809864"
   
     -   응용 프로그램: [인스턴스 관리를 일시 중단](../../../docs/framework/windows-workflow-foundation/samples/suspended-instance-management.md)  
   
--   [WorkflowServiceHost 개념 문서](http://go.microsoft.com/fwlink/?LinkId=204807)  
+-   [WorkflowServiceHost 개념 설명서](https://go.microsoft.com/fwlink/?LinkId=204807)  
   
 ### <a name="workflowservicehost-scenario"></a>WorkflowServiceHost 시나리오  
- BestPriceFinder 서비스 특정 경로 대 한 최상의 티켓 가격을 검색 하려면 여러 airline 서비스 호출 합니다.  이 시나리오를 구현 해야 합니다에서 워크플로 호스팅 <xref:System.ServiceModel.WorkflowServiceHost>합니다.  메시지 활동 가격 요청을 수신 하 고 백 엔드 서비스에서 가격을 검색 한 다음이 가격이 가격 요청에 회신을 사용할 것입니다.  
+ BestPriceFinder 서비스는 특정 경로 대 한 최상의 티켓 가격을 찾기 위해 여러 항공사 서비스를 호출 합니다.  이 시나리오를 구현 해야 하므로의 워크플로 호스트 <xref:System.ServiceModel.WorkflowServiceHost>합니다.  메시지 작업 가격 요청을 수신 하 고, 백 엔드 서비스에서 가격을 검색, 최상의 가격으로 가격 요청에 회신에 사용할 것입니다.  
   
 ## <a name="correlation"></a>상관 관계  
  상관 관계는 다음 두 가지 중 하나입니다.  
@@ -73,9 +73,9 @@ ms.locfileid: "33809864"
   
 -   메시지를 그룹화하는 데 사용되는 상관 관계의 예로 메시지를 그룹화하는 요청-회신 상관 관계가 있습니다.  
   
-    -   에 <xref:System.ServiceModel.Activities.Receive> 활동을 클릭 하는 <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> 속성 추가 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 위의 1 단계에서 만든 CorrelationHandle을 사용 하 여 합니다.  
+    -   에 <xref:System.ServiceModel.Activities.Receive> 활동을 클릭 합니다 <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> 속성 추가 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 위의 첫 번째 단계에서 만든 CorrelationHandle을 사용 하 여.  
   
-    -   만들기는 <xref:System.ServiceModel.Activities.SendReply> 마우스 오른쪽 단추로 클릭 하 여 활동의 <xref:System.ServiceModel.Activities.Receive> "SendReply 만들기"를 클릭 하 고 있습니다. 워크플로에서 <xref:System.ServiceModel.Activities.Receive> 작업 뒤에 이 작업을 붙여 넣습니다.  
+    -   만들기를 <xref:System.ServiceModel.Activities.SendReply> 마우스 오른쪽 단추로 클릭 하 여 활동은 <xref:System.ServiceModel.Activities.Receive> "SendReply 만들기"를 클릭 합니다. 워크플로에서 <xref:System.ServiceModel.Activities.Receive> 작업 뒤에 이 작업을 붙여 넣습니다.  
   
 -   데이터를 서비스 인스턴스에 매핑하는 예로 데이터(예: 주문 ID)를 특정 워크플로 인스턴스에 매핑하는 콘텐츠 기반 상관 관계가 있습니다.  
   
@@ -87,37 +87,37 @@ ms.locfileid: "33809864"
   
     -   시나리오: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
   
-    -   [상관 관계 개념 문서](http://go.microsoft.com/fwlink/?LinkId=204939)  
+    -   [상관 관계 개념 설명서](https://go.microsoft.com/fwlink/?LinkId=204939)  
   
 ### <a name="correlation-scenario"></a>상관 관계 시나리오  
- 주문 처리 워크플로의 새 주문 만들기 및 프로세스에 있는 기존 주문 업데이트를 처리 하는 데 사용 됩니다.  이 시나리오를 구현 해야 합니다에서 워크플로 호스팅 <xref:System.ServiceModel.WorkflowServiceHost> 메시징 활동을 사용 하 고 있습니다.  또한 필요에 따라 상관 관계는 `orderId` 에 업데이트를 올바른 워크플로에 내용이 있는지 확인 합니다.  
+ 새 주문 만들기 및 진행 중인 기존 주문을 업데이트를 처리 하는 주문 처리 워크플로 사용 됩니다.  이 시나리오를 구현 해야 하므로의 워크플로 호스트 <xref:System.ServiceModel.WorkflowServiceHost> 메시징 활동을 사용 합니다.  또한 상관 관계에 따라 필요는 `orderId` 에 올바른 워크플로가 업데이트 되도록 합니다.  
   
 ## <a name="simplified-configuration"></a>단순화된 구성  
- WCF 구성 스키마는 복잡 하며 기능 찾기 어려운 많은 사용자를 제공 합니다. [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)], 초점을 WCF 사용자가 다음 기능을 통해 서비스를 구성할 수 있도록 지원 합니다.  
+ WCF 구성 스키마 복잡 하며 기능 찾기 어려운 여러 사용자를 제공 합니다. [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)], WCF 사용자에 게 다음 기능을 통해 해당 서비스를 구성할 수 있도록 지원에 집중 했습니다.  
   
--   서비스별 명시적 구성의 필요성을 제거합니다. 구성 하지 않으면 \<서비스 > 끝점 집합이 서비스 계약 및 서비스 기준 주소 하나에 자동으로 추가 됩니다 한 다음 모든 끝점에 프로그래밍 방식으로 서비스 및 서비스에 대 한 요소를 정의 하지 않습니다 서비스에 의해 구현 됩니다.  
+-   서비스별 명시적 구성의 필요성을 제거합니다. 구성 하지 않은 경우 \<서비스 > 끝점 집합에 자동으로 추가할 서비스 기본 주소 및 계약 당 하나의 서비스에 다음 서비스 및 서비스에 대 한 요소는 모든 끝점에 프로그래밍 방식으로 정의 하지 않습니다 서비스에 의해 구현 됩니다.  
   
 -   사용자가 명시적 구성 없이 서비스에 적용될 WCF 바인딩 및 동작의 기본값을 정의할 수 있도록 합니다.  
   
--   표준 끝점은 하나 이상의 끝점 속성(주소, 바인딩 및 계약)에 대한 고정 값이 있는 미리 구성된 다시 사용 가능 끝점을 정의하며 사용자 지정 속성 정의를 허용합니다.  
+-   표준 엔드포인트는 하나 이상의 엔드포인트 속성(주소, 바인딩 및 계약)에 대한 고정 값이 있는 미리 구성된 다시 사용 가능 엔드포인트를 정의하며 사용자 지정 속성 정의를 허용합니다.  
   
--   마지막으로 <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> 구성이 있는 선택 되거나 응용 프로그램 도메인 로드 시간 후에 변경할 시나리오에서 유용 WCF 클라이언트 구성을 중앙에서 관리할 수 있습니다.  
+-   마지막으로 <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> 구성이 있는 선택 되거나 응용 프로그램 도메인 로드 시간 후에 변경 하는 시나리오에서 유용 WCF 클라이언트 구성의 중앙 관리를 수행할 수 있습니다.  
   
 ### <a name="getting-started"></a>시작  
   
--   [Wcf 4.0 개발자 가이드](http://go.microsoft.com/fwlink/?LinkId=204940)  
+-   [Wcf 4.0 개발자 가이드](https://go.microsoft.com/fwlink/?LinkId=204940)  
   
--   [구성 채널 팩터리](http://go.microsoft.com/fwlink/?LinkId=204941)  
+-   [구성 채널 팩터리](https://go.microsoft.com/fwlink/?LinkId=204941)  
   
--   [표준 끝점 요소](http://go.microsoft.com/fwlink/?LinkId=204942)  
+-   [표준 끝점 요소](https://go.microsoft.com/fwlink/?LinkId=204942)  
   
--   [향상 된 서비스 구성에서.Net Framework 4](http://go.microsoft.com/fwlink/?LinkId=204943)  
+-   [서비스 구성 개선 사항.net에서 Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)  
   
--   [.NET 4의에서 일반적인 사용자 실수: WF/WCF 서비스 구성 이름 입력 오류](http://go.microsoft.com/fwlink/?LinkId=204944)  
+-   [.NET 4의에서 일반적인 사용자 실수: WF/WCF 서비스 구성 이름을 잘못 입력](https://go.microsoft.com/fwlink/?LinkId=204944)  
   
 ### <a name="simplified-configuration-scenarios"></a>단순화된 구성 시나리오  
   
--   숙련 된 ASMX 개발자는 WCF를 사용 하 여 시작 하려고 합니다. 그러나 WCF 너무 복잡 한 것 같습니다. 구성 파일을 작성하는 데 필요한 모든 정보는 무엇입니까? .NET 4에서는 구성 파일을 전혀 사용하지 않을 수도 있습니다.  
+-   숙련된 된 ASMX 개발자는 WCF를 사용 하 여 시작 하려고 합니다. 그러나 WCF는 너무 복잡 한 것 같습니다. 구성 파일을 작성하는 데 필요한 모든 정보는 무엇입니까? .NET 4에서는 구성 파일을 전혀 사용하지 않을 수도 있습니다.  
   
 -   기존의 WCF 서비스 집합은 구성 및 유지 관리가 매우 어려웠습니다. 구성 파일에는 수천 줄의 XML 코드가 있으며 수정하는 것이 매우 위험합니다. 관리하기 쉽도록 코드 양을 줄이기 위한 도움이 필요합니다.  
   
@@ -130,13 +130,13 @@ ms.locfileid: "33809864"
   
 -   사용자가 회선의 serialization 인스턴스 크기를 더 작게 만들기 위해 회선에 표시할 xsi:type을 지정할 수 없었습니다.  
   
- [DataContractResolver](../../../docs/framework/wcf/samples/datacontractresolver.md) .NET 4.5에서 이러한 문제를 해결 합니다.  
+ 합니다 [DataContractResolver](../../../docs/framework/wcf/samples/datacontractresolver.md) .NET 4.5에서 이러한 문제를 해결 합니다.  
   
 ### <a name="getting-started"></a>시작  
   
--   [데이터 계약 확인자 API 설명서](http://go.microsoft.com/fwlink/?LinkId=204946)  
+-   [데이터 계약 확인자 API 설명서](https://go.microsoft.com/fwlink/?LinkId=204946)  
   
--   [데이터 계약 확인자를 소개합니다.](http://go.microsoft.com/fwlink/?LinkId=204947)  
+-   [데이터 계약 확인자 소개](https://go.microsoft.com/fwlink/?LinkId=204947)  
   
 -   샘플:  
   
@@ -182,7 +182,7 @@ ms.locfileid: "33809864"
     -   [순서도 활동 디자이너](/visualstudio/workflow-designer/flowchart-activity-designers)  
   
 ### <a name="flowchart-scenarios"></a>순서도 시나리오  
- 순서도 작업을 사용하여 추측 게임을 구현할 수 있습니다. 추측 게임은 매우 단순합니다. 컴퓨터가 임의 숫자를 선택하고 플레이어가 해당 숫자를 추측해야 합니다. 플레이어가 각 추측을 제출, 그 컴퓨터에는 힌트 (예: "시도 낮은 수치로") 표시 됩니다. 플레이어가 7회 미만의 시도에서 숫자를 찾으면 컴퓨터에서 특별한 축하 화면이 표시됩니다. 다음 절차 작업의 조합을 통해 이 게임을 구현할 수 있습니다.  
+ 순서도 작업을 사용하여 추측 게임을 구현할 수 있습니다. 추측 게임은 매우 단순합니다. 컴퓨터가 임의 숫자를 선택하고 플레이어가 해당 숫자를 추측해야 합니다. 플레이어가 각 추측을 제출 하는 경우 컴퓨터 (예: "시도 낮은 숫자를") 힌트를 표시 합니다. 플레이어가 7회 미만의 시도에서 숫자를 찾으면 컴퓨터에서 특별한 축하 화면이 표시됩니다. 다음 절차 작업의 조합을 통해 이 게임을 구현할 수 있습니다.  
   
 -   <xref:System.Activities.Statements.Sequence>  
   
@@ -217,7 +217,7 @@ ms.locfileid: "33809864"
   
 ### <a name="procedural-activity-scenarios"></a>절차 작업 시나리오  
   
--   <xref:System.Activities.Statements.Parallel>: 인트라넷 문서 관리 시스템에 문서 승인 워크플로가 있습니다. 여러 부서의 사용자가 문서를 승인해야 인트라넷에 게시할 수 있습니다. 승인;에 대 한 설정 된 주문 하지 않으므로 문서가 "승인 보류 중" 단계에 있는 동안 언제 든 지 수행 될 수 있습니다. 사용자가 검토를 위해 문서를 전송하면 직속 관리자, 인트라넷 관리자 및 내부 통신 관리자가 문서를 승인해야 합니다.  
+-   <xref:System.Activities.Statements.Parallel>: 인트라넷 문서 관리 시스템에 문서 승인 워크플로가 있습니다. 여러 부서의 사용자가 문서를 승인해야 인트라넷에 게시할 수 있습니다. 승인; 설정 된 순서는 없습니다. 문서가 "승인 보류 중" 단계에 있는 동안 언제 든 지 발생할 수 있습니다. 사용자가 검토를 위해 문서를 전송하면 직속 관리자, 인트라넷 관리자 및 내부 통신 관리자가 문서를 승인해야 합니다.  
   
 -   <xref:System.Activities.Statements.ParallelForEach%601>: WF 응용 프로그램이 대기업 내의 회사 구매를 관리합니다. 회사 규칙은 모든 구매 작업을 계획하기 전에 3개 공급업체를 평가하도록 규정합니다. 구매 부서의 직원이 회사 공급업체 목록에서 3개 공급업체를 선택합니다. 공급업체를 선택하고 알린 후 회사는 합리적 제안서를 기다립니다. 제안서는 임의 순서로 도착할 수 있습니다. WF에서 이 시나리오를 구현하기 위해 공급업체 컬렉션을 반복하고 합리적 제안서를 요청하는 <xref:System.Activities.Statements.ParallelForEach%601>를 사용합니다. 모든 제안이 수집된 후 최상의 제안이 선택되고 표시됩니다.  
   
@@ -273,7 +273,7 @@ ms.locfileid: "33809864"
  사용자에게 입력을 요청하는 메시지를 표시해야 합니다. 정상적인 상황에서는 개발자가 <xref:System.Console.ReadLine%2A>과 같은 메서드 호출을 사용하여 사용자 입력을 요청합니다. 이 설치와 관련된 문제는 사용자가 입력할 때까지 프로그램이 기다린다는 것입니다. 이 시나리오에서는 차단 작업의 차단을 해제하기 위해 시간 제한이 필요합니다. 일반적인 시나리오에서는 지정된 기간 내에 작업을 완료해야 합니다. 차단 작업 시간 초과는 Pick에서 많은 값을 추가하는 시나리오입니다.  
   
 ## <a name="wcf-routing-service"></a>WCF 라우팅 서비스  
- 라우팅 서비스는 일반 소프트웨어 라우터 WCFmessages 클라이언트와 서비스 사이의 흐름 방식을 제어할 수 있도록 하도록 설계 되었습니다.  라우팅 서비스에서 수 있습니다 클라이언트 서비스에서를 분리 하기 위한 구성 측면에서 훨씬 더 자유롭게를 제공 하 지원할 수 있고 있는지 유연성 서비스를 호스트 하는 방법을 고려 하는 경우.  .NET 3.5에서 클라이언트 및 서비스 된 밀접 하 게; 클라이언트의 모든 통신 하기 위해 필요 하 고 있던 위치 서비스에 대해 알고 해야 했습니다. 또한 .NET Framework 3.5의 WCF에는 다음과 같은 제한이 있었습니다.  
+ 라우팅 서비스는 일반 소프트웨어 클라이언트와 서비스 사이 WCFmessages 흐름 방식을 제어할 수 있는 라우터 되도록 설계 되었습니다.  라우팅 서비스 수 있습니다 서비스에서 클라이언트를 분리 구성 측면에서 훨씬 더 자유롭게 제공 하는 유연 해야 서비스를 호스트 하는 방법을 고려 하는 경우를 지원할 수 있습니다.  .NET 3.5에서는 클라이언트 및 서비스 된 밀접 하 게; 클라이언트가 서비스와 통신 하는 데 필요한 것 이며 있던 위치 모두에 대해 알아야 했습니다. 또한 .NET Framework 3.5의 WCF에는 다음과 같은 제한이 있었습니다.  
   
 -   이 논리를 클라이언트 프로그램에 하드 코딩해야 했으므로 오류 처리가 복잡했습니다.  
   
@@ -287,7 +287,7 @@ ms.locfileid: "33809864"
   
 2.  프로토콜 브리징(전송 및 메시지)  
   
-3.  오류 처리(라우터가 통신 예외를 catch하고 백업 끝점으로 장애 조치됨)  
+3.  오류 처리(라우터가 통신 예외를 catch하고 백업 엔드포인트로 장애 조치됨)  
   
 4.  <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601> 및 라우팅 구성의 동적(메모리 내) 업데이트  
   
@@ -297,7 +297,7 @@ ms.locfileid: "33809864"
   
 2.  샘플: [라우팅 서비스 &#91;WCF 샘플&#93;](../../../docs/framework/wcf/samples/routing-services.md)  
   
-3.  블로그: [라우팅 규칙!](http://go.microsoft.com/fwlink/?LinkId=204956)  
+3.  블로그: [라우팅 규칙!](https://go.microsoft.com/fwlink/?LinkId=204956)  
   
 ### <a name="routing-scenarios"></a>라우팅 시나리오  
  라우팅 서비스는 다음과 같은 시나리오에서 유용합니다.  
@@ -321,7 +321,7 @@ ms.locfileid: "33809864"
   
 2.  임시: 클라이언트가 멀티캐스트 메시지를 사용하여 서비스를 찾습니다.  
   
- 또한 검색 메시지는 네트워크 프로토콜에 관계없이 작동하므로 모드 요구 사항을 지원하는 모든 프로토콜에서 사용할 수 있습니다. 예를 들어 검색 UDP 채널 또는 멀티 캐스트 메시징 지 원하는 다른 네트워크를 통해 멀티 캐스트 메시지를 보낼 수 있습니다.  이러한 디자인 포인트를 검색 솔루션을 구체적으로 적용할 수 있도록 기능 유연성과 결합 합니다.  
+ 또한 검색 메시지는 네트워크 프로토콜에 관계없이 작동하므로 모드 요구 사항을 지원하는 모든 프로토콜에서 사용할 수 있습니다. 예를 들어 검색 UDP 채널이 나 멀티 캐스트 메시징을 지 원하는 다른 네트워크를 통해 멀티 캐스트 메시지를 보낼 수 있습니다.  이러한 디자인 요소는 검색 솔루션에 맞게 조정할 수 있도록 기능 유연성과 결합 합니다.  
   
 ### <a name="getting-started"></a>시작  
   
@@ -333,7 +333,7 @@ ms.locfileid: "33809864"
  서비스를 사용할 수 있게 될 시기를 알 수 없기 때문에 개발자가 끝점을 하드 코딩하는 대신 런타임에 서비스를 선택하려고 합니다. 응용 프로그램 구성 요소 간에 분리, 견고성 및 자동 구성이 더 필요합니다.  
   
 ## <a name="tracking"></a>추적  
- 워크플로 추적 된 워크플로 인스턴스 실행에 대 한 정보를 제공 합니다.  추적 이벤트는 워크플로에서 워크플로 내의 작업을 실행할 때와 워크플로 인스턴스 수준에서 내보내집니다. 추적 레코드를 구독하려면 워크플로 추적 참가자를 워크플로 호스트에 추가해야 합니다. 추적 레코드는 추적 프로필을 사용하여 필터링됩니다. .NET Framework에서는 ETW(Windows용 이벤트 추적) 추적 참가자를 제공하며 machine.config 파일에 기본 프로필이 설치됩니다.  
+ 워크플로 추적 워크플로 인스턴스 실행에 대 한 정보를 제공 합니다.  추적 이벤트를 워크플로 인스턴스 수준 및 워크플로 내의 작업이 실행 될 때 워크플로에서 내보냅니다. 추적 레코드를 구독하려면 워크플로 추적 참가자를 워크플로 호스트에 추가해야 합니다. 추적 레코드는 추적 프로필을 사용하여 필터링됩니다. .NET Framework에서는 ETW(Windows용 이벤트 추적) 추적 참가자를 제공하며 machine.config 파일에 기본 프로필이 설치됩니다.  
   
 ### <a name="getting-started"></a>시작  
   
@@ -343,7 +343,7 @@ ms.locfileid: "33809864"
   
     1.  기본 프로필이 사용됩니다.  
   
-    2.  이벤트 뷰어를 열고 다음 노드에서 분석 채널을 사용 하도록 설정: **이벤트 뷰어**, **Applications and Services Logs**, **Microsoft**, **Windows** , **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택 **로그 사용**합니다.  
+    2.  이벤트 뷰어를 열고 다음 노드에서 분석 채널을 사용 하도록 설정: **이벤트 뷰어**를 **Applications and Services Logs**하십시오 **Microsoft**, **Windows** 하십시오 **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택한 **로그 사용**합니다.  
   
     3.  워크플로 서비스를 실행합니다.  
   

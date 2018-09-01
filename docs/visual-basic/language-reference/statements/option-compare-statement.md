@@ -1,5 +1,5 @@
 ---
-title: Option Compare 문
+title: Option Compare 문 (Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Compare
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - Option Compare statement [Visual Basic]
 - text [Visual Basic], comparing
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-ms.openlocfilehash: 675ad649650d9fbc6f2c0f1dc689aa682ca6103c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 32664dc3be98a9d5a2e6a7d61790c18ae5d3795d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33605305"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385109"
 ---
 # <a name="option-compare-statement"></a>Option Compare 문
 문자열 데이터를 비교할 때 사용할 기본 비교 방법을 선언합니다.  
@@ -59,7 +59,7 @@ Option Compare { Binary | Text }
  `(A=a) < (À = à) < (B=b) < (E=e) < (Ê = ê) < (Z=z) < (Ø = ø)`  
   
 ## <a name="when-an-option-compare-statement-is-not-present"></a>Option Compare 문이 없는 경우  
- 소스 코드에 포함 되어 있지 않으면는 `Option Compare` 문는 **Option Compare** 에 설정 된 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 사용 됩니다. 으로 지정한 설정이 명령줄 컴파일러를 사용 하는 경우는 [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) 컴파일러 옵션을 사용 합니다.  
+ 소스 코드에 없는 경우는 `Option Compare` 문을 **Option Compare** 에 설정 합니다 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 사용 됩니다. 명령줄 컴파일러를 사용 하 여 설정을 지정 합니다 [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) 컴파일러 옵션을 사용 합니다.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -69,13 +69,13 @@ Option Compare { Binary | Text }
   
 2.  **컴파일** 탭을 클릭합니다.  
   
-3.  값을 설정는 **Option Compare** 상자입니다.  
+3.  값을 설정 합니다 **Option Compare** 상자입니다.  
   
- 프로젝트를 만들 때는 **Option Compare** 에 설정 된 **컴파일** 탭으로 설정 됩니다는 **Option Compare** 에서 설정는 **옵션** 대화 상자입니다. 이 설정을 변경 하려면는 **도구** 메뉴를 클릭 하 여 **옵션**합니다. **옵션** 대화 상자에서 **프로젝트 및 솔루션**을 확장하고 **VB 기본값**을 클릭합니다. 초기 기본 설정은 **VB 기본값** 은 **이진**합니다.  
+ 프로젝트를 만들 때를 **Option Compare** 에 설정 합니다 **컴파일** 탭으로 설정 됩니다는 **Option Compare** 에서 설정를 **옵션** 대화 상자입니다. 이 설정을 변경 하는 **도구** 메뉴에서 클릭 **옵션**합니다. **옵션** 대화 상자에서 **프로젝트 및 솔루션**을 확장하고 **VB 기본값**을 클릭합니다. 초기 기본 설정은 **VB 기본값** 됩니다 **이진**합니다.  
   
 #### <a name="to-set-option-compare-on-the-command-line"></a>명령줄에서 Option Compare를 설정하려면  
   
--   포함 된 [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) 컴파일러 옵션에는 **vbc** 명령 합니다.  
+-   포함 된 [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) 컴파일러 옵션을 **vbc** 명령.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Option Compare` 문을 사용하여 이진 비교를 기본 문자열 비교 방법으로 설정합니다. 이 코드를 사용하려면 `Option Compare Binary` 문의 주석 처리를 제거하여 소스 파일 맨 위에 삽입합니다.  
@@ -95,7 +95,7 @@ Option Compare { Binary | Text }
  <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
  [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
  [비교 연산자](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Visual Basic의 비교 연산자](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
+ [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
  [Like 연산자](../../../visual-basic/language-reference/operators/like-operator.md)  
  [문자열 함수](../../../visual-basic/language-reference/functions/string-functions.md)  
  [Option Explicit 문](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  

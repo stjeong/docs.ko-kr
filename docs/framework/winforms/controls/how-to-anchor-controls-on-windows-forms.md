@@ -13,11 +13,11 @@ helpviewer_keywords:
 - controls [Windows Forms], positioning
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
 ms.openlocfilehash: c7658eb11e0d9e28c93b0a4b72a248cc42bc705f
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253752"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389857"
 ---
 # <a name="how-to-anchor-controls-on-windows-forms"></a>방법: Windows Forms에서 컨트롤 고정
 런타임 시를 조정할 수 있는 폼을 디자인 하는 경우 폼에서 컨트롤의 크기를 조정 하 고 위치가 적절 해야 합니다. 폼을 사용 하 여 동적으로 컨트롤 크기 조정에 사용할 수는 <xref:System.Windows.Forms.Control.Anchor%2A> Windows Forms 컨트롤의 속성입니다. <xref:System.Windows.Forms.Control.Anchor%2A> 속성은 컨트롤에 대 한 앵커 위치를 정의 합니다. 컨트롤을 폼에 고정 하 고 폼의 크기를 조정할 때 컨트롤 컨트롤 앵커 위치 사이의 거리를 유지 합니다. 예를 들어 있는 경우는 <xref:System.Windows.Forms.TextBox> 폼 크기가 조정 됩니다, 왼쪽, 오른쪽 및 폼의 아래쪽 가장자리에 고정 되는 컨트롤을 <xref:System.Windows.Forms.TextBox> 컨트롤의 크기가 조정 가로로 폼의 오른쪽과 왼쪽된 로부터 같은 거리에 유지 되도록 합니다. 또한 컨트롤 세로 위치가 조정 해당 위치는 항상 폼의 아래쪽 가장자리 로부터 같은 거리에 있도록 합니다. 컨트롤을 고정 하지 않으면 폼의 크기를 조정 하 고 폼의 가장자리를 기준으로 컨트롤의 위치 변경 됩니다.  

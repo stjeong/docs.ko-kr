@@ -2,24 +2,24 @@
 title: 엔터티 활동
 ms.date: 03/30/2017
 ms.assetid: c04f7413-7fb8-40c6-819e-dc92b145b62e
-ms.openlocfilehash: 96301c15b849749299e744a435068c3ec9be2e3a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 03bd0e42c70f1226558d492bcb3b2cfa5c7010f2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519138"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385806"
 ---
 # <a name="entity-activities"></a>엔터티 활동
-이 샘플에서는 Windows Workflow Foundation와 ADO.NET Entity Framework를 사용 하 여 데이터 액세스를 단순화 하는 방법을 보여 줍니다.  
+이 샘플에는 Windows Workflow Foundation을 사용 하 여 데이터 액세스를 간소화 하기 위해 ADO.NET Entity Framework를 사용 하는 방법을 보여 줍니다.  
   
- ADO.NET Entity Framework를 사용하면 개발자가 고객, 주문서, 주문 세부 사항 및 이러한 엔터티 사이의 관계 같은 도메인별 개체, 속성 및 관계의 형태로 데이터를 다룰 수 있습니다. 이를 위해 ADO.NET Entity Framework에서는 관계형 저장소 스키마에 대해 직접 프로그래밍하는 대신 개념적 응용 프로그램 모델에 대해 프로그래밍할 수 있는 추상화 수준을 제공합니다. ADO.NET Entity Framework 참조에 대 한 자세한 내용은 [ADO.NET Entity Framework](http://go.microsoft.com/fwlink/?LinkId=165549)합니다.  
+ ADO.NET Entity Framework를 사용하면 개발자가 고객, 주문서, 주문 세부 사항 및 이러한 엔터티 사이의 관계 같은 도메인별 개체, 속성 및 관계의 형태로 데이터를 다룰 수 있습니다. 이를 위해 ADO.NET Entity Framework에서는 관계형 저장소 스키마에 대해 직접 프로그래밍하는 대신 개념적 응용 프로그램 모델에 대해 프로그래밍할 수 있는 추상화 수준을 제공합니다. ADO.NET Entity Framework 참조에 대 한 자세한 내용은 [ADO.NET Entity Framework](https://go.microsoft.com/fwlink/?LinkId=165549)합니다.  
   
 ## <a name="sample-details"></a>샘플 세부 정보  
  이 샘플에는 `Northwind` 데이터베이스가 사용되며 `Northwind` 데이터베이스를 만들고 제거하기 위한 스크립트(Setup.cmd 및 Cleanup.cmd)가 포함됩니다. 이 샘플의 프로젝트에는 `Northwind` 데이터베이스를 기반으로 하는 엔터티 데이터 모델이 포함됩니다. 프로젝트에 포함되어 있는 `Northwind.edmx` 파일을 열면 모델을 찾을 수 있습니다. 이는 ADO.NET Entity Framework를 사용하여 액세스할 수 있는 개체의 모양을 정의하는 모델입니다.  
   
  이 샘플에 포함되어 있는 활동은 다음과 같습니다.  
   
--   `EntitySQLQuery`: `EntitySQLQuery` 활동을 사용하면 Entity SQL 쿼리 문자열을 기반으로 데이터베이스에서 개체를 검색할 수 있습니다. Entity SQL은 SQL과 유사하며 저장소로부터 독립적인 언어입니다. 이를 사용하면 모델이나 도메인의 일부인 엔터티와 개념적 모델을 기반으로 쿼리를 지정할 수 있습니다. Entity SQL 언어에 대 한 자세한 내용은 참조 [Entity SQL 언어](http://go.microsoft.com/fwlink/?LinkId=165646)합니다.  
+-   `EntitySQLQuery`: `EntitySQLQuery` 활동을 사용하면 Entity SQL 쿼리 문자열을 기반으로 데이터베이스에서 개체를 검색할 수 있습니다. Entity SQL은 SQL과 유사하며 저장소로부터 독립적인 언어입니다. 이를 사용하면 모델이나 도메인의 일부인 엔터티와 개념적 모델을 기반으로 쿼리를 지정할 수 있습니다. Entity SQL 언어에 대 한 자세한 내용은 참조 하세요. [Entity SQL 언어](https://go.microsoft.com/fwlink/?LinkId=165646)합니다.  
   
 -   `EntityLinqQuery`: 이 활동을 사용하면 LINQ 쿼리나 조건자를 기반으로 데이터베이스에서 개체를 검색할 수 있습니다.  
   
@@ -252,6 +252,6 @@ return new ObjectContextScope
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\EntityActivities`

@@ -10,16 +10,16 @@ ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: f2eb6d1b54e9565df1401c4a1d20698ff795f896
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: 4b846dfdd7c19a515c759fbeac1762cb47ca8876
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43258579"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395480"
 ---
 # <a name="textpattern-and-embedded-objects-overview"></a>TextPattern 및 포함 개체 개요
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 개요에서는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 에서 포함된 개체 또는 자식 요소를 텍스트 문서나 컨테이너 내에서 노출하는 방법을 설명합니다.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "43258579"
   
  텍스트 범위의 내용을 이동해야 하는 경우 <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> 메서드가 성공적으로 실행되려면 백그라운드에서 일련의 단계를 거쳐야 합니다.  
   
-1.  텍스트 범위가 정규화됩니다. 다시 말해서, 텍스트 범위가 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 엔드포인트에서 중복 제거 범위로 축소되어 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트가 불필요해집니다. 이 단계는 텍스트 범위에 걸쳐 있는 경우 모호성을 제거 하는 데 필요한 <xref:System.Windows.Automation.Text.TextUnit> 경계: 예를 들어 "{The U} RL [ http://www.microsoft.com ](http://www.microsoft.com) 텍스트에 포함 된" 위치 "{0}" 및 "}"는 텍스트 범위 끝점입니다.  
+1.  텍스트 범위가 정규화됩니다. 다시 말해서, 텍스트 범위가 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 엔드포인트에서 중복 제거 범위로 축소되어 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트가 불필요해집니다. 이 단계는 텍스트 범위에 걸쳐 있는 경우 모호성을 제거 하는 데 필요한 <xref:System.Windows.Automation.Text.TextUnit> 경계: 예를 들어 "{The U} RL [ http://www.microsoft.com ](https://www.microsoft.com) 텍스트에 포함 된" 위치 "{0}" 및 "}"는 텍스트 범위 끝점입니다.  
   
 2.  결과 범위가 <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> 내에서 뒤쪽으로 옮겨져 요청된 <xref:System.Windows.Automation.Text.TextUnit> 경계의 시작 부분으로 이동하게 됩니다.  
   
@@ -71,7 +71,7 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
 ### <a name="hyperlink"></a>하이퍼링크  
  **예제 1 - 포함된 텍스트 하이퍼링크가 들어 있는 텍스트 범위**  
   
- {0} URL [ http://www.microsoft.com ](http://www.microsoft.com) 텍스트에 포함 된}.  
+ {0} URL [ http://www.microsoft.com ](https://www.microsoft.com) 텍스트에 포함 된}.  
   
 |호출되는 메서드|결과|  
 |-------------------|------------|  
@@ -92,7 +92,7 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
   
  **예 3-텍스트 컨테이너의 콘텐츠를 부분적으로 걸쳐 있는 텍스트 범위입니다. 텍스트 컨테이너에는 포함 된 텍스트 하이퍼링크가 텍스트 범위에 속하지 않습니다.**  
   
- {URL} [ http://www.microsoft.com ](http://www.microsoft.com) 텍스트에 포함 됩니다.  
+ {URL} [ http://www.microsoft.com ](https://www.microsoft.com) 텍스트에 포함 됩니다.  
   
 |호출되는 메서드|결과|  
 |-------------------|------------|  
@@ -159,4 +159,4 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
  [UI 자동화를 사용하여 포함 개체에 액세스](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)  
  [UI 자동화를 사용하여 표의 콘텐츠 노출](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)  
  [UI 자동화를 사용하여 텍스트 이동](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)  
- [TextPattern 검색 및 선택 샘플](http://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
+ [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)

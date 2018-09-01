@@ -2,15 +2,15 @@
 title: 사용자 지정 Demux
 ms.date: 03/30/2017
 ms.assetid: fc54065c-518e-4146-b24a-0fe00038bfa7
-ms.openlocfilehash: e88672f152b87740feef1345b3eac213916a1527
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 1542743a6e1658bad162d7ee9ca73e6b9b0444e2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805566"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395663"
 ---
 # <a name="custom-demux"></a>사용자 지정 Demux
-이 샘플에서는 MSMQ 메시지 헤더 매핑할 수 있는 방법을 다양 한 서비스 작업에 Windows Communication Foundation (WCF) 사용 하는 서비스를 보여 줍니다. <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> 에서처럼 하나의 서비스 작업을 사용 하 여 제한 되지 않습니다는 [ 메시지 큐를 Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md) 및 [메시지 큐에 Windows Communication Foundation](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md) 샘플입니다.  
+이 샘플에서는 MSMQ 메시지 헤더 매핑할 수 있는 방법을 다양 한 서비스 작업에는 Windows Communication Foundation (WCF) 사용 하는 서비스 설명 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> 에 설명 된 대로 하나의 서비스 작업을 사용 하도록 제한 되지는 [ 메시지 큐를 Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md) 하 고 [Windows Communication Foundation에서 메시지 큐로](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md) 샘플입니다.  
   
  이 샘플의 서비스는 자체적으로 호스트되는 콘솔 응용 프로그램으로서 이를 사용하여 대기 중인 메시지를 받는 서비스를 확인할 수 있습니다.  
   
@@ -109,7 +109,7 @@ public static void Main()
  MSMQ 큐 이름은 구성 파일의 appSettings 섹션에 지정됩니다.  
   
 > [!NOTE]
->  큐 이름은 로컬 컴퓨터에 점(.)을, 그 경로에는 백슬래시 구분 기호를 사용합니다. WCF 끝점 주소는 msmq.formatname 체계를 지정 하 고 로컬 컴퓨터로 localhost를 사용 합니다. 이 체계를 따르는 주소는 MSMQ 형식 이름 주소 지정 지침에 따라 형식이 올바르게 지정된 큐 주소입니다.  
+>  큐 이름은 로컬 컴퓨터에 점(.)을, 그 경로에는 백슬래시 구분 기호를 사용합니다. WCF 끝점 주소는 msmq.formatname 체계를 지정 하 고 로컬 컴퓨터에 대 한 localhost를 사용 합니다. 이 체계를 따르는 주소는 MSMQ 형식 이름 주소 지정 지침에 따라 형식이 올바르게 지정된 큐 주소입니다.  
   
 ```xml  
 <appSettings>  
@@ -119,7 +119,7 @@ public static void Main()
 ```  
   
 > [!NOTE]
->  이 샘플을 설치 해야 [메시지 큐](http://go.microsoft.com/fwlink/?LinkId=95143)합니다.  
+>  이 샘플을 설치 해야 [메시지 큐](https://go.microsoft.com/fwlink/?LinkId=95143)합니다.  
   
  서비스를 시작하고 클라이언트를 실행합니다.  
   
@@ -154,7 +154,7 @@ Purchase Order 28fc457a-1a56-4fe0-9dde-156965c21ed6 is canceled
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  서비스가 처음 실행되는 경우 서비스에서는 큐가 있는지 확인하고 큐가 없으면 큐를 만듭니다. 서비스를 처음 실행하여 큐를 만들거나 MSMQ 큐 관리자를 통해 큐를 만들 수 있습니다. Windows 2008에서 큐를 만들려면 다음 단계를 수행하세요.  
   
@@ -162,15 +162,15 @@ Purchase Order 28fc457a-1a56-4fe0-9dde-156965c21ed6 is canceled
   
     2.  확장 된 **기능** 탭 합니다.  
   
-    3.  마우스 오른쪽 단추로 클릭 **개인 메시지 큐**를 선택 하 고 **새로**, **개인 큐**합니다.  
+    3.  마우스 오른쪽 단추로 클릭 **개인 메시지 큐**, 선택한 **새로 만들기**합니다 **개인 큐**합니다.  
   
-    4.  확인 된 **트랜잭션** 상자입니다.  
+    4.  확인 합니다 **트랜잭션** 상자입니다.  
   
-    5.  입력 `ServiceModelSamplesTransacted` 새 큐의 이름으로 합니다.  
+    5.  입력 `ServiceModelSamplesTransacted` 새 대기열의 이름으로 합니다.  
   
 3.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-4.  지침에 따라 단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+4.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 ### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -189,10 +189,10 @@ Purchase Order 28fc457a-1a56-4fe0-9dde-156965c21ed6 is canceled
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\CustomDemux`  
   
 ## <a name="see-also"></a>참고 항목  
  [WCF의 큐](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [메시지 큐](http://go.microsoft.com/fwlink/?LinkId=95143)
+ [메시지 큐](https://go.microsoft.com/fwlink/?LinkId=95143)

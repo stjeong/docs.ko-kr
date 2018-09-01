@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 81c0f8b4-ce35-4716-8651-b642d40648a2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cd07707b5a80ec0980fc50b27caddf0a24398fd1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 4b9f54c7c57d122ac1214b9f31cc4e1d1cddd71c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400447"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43392181"
 ---
 # <a name="axlauthenticodesignerinfo-structure"></a>AXL_AUTHENTICODE_SIGNER_INFO 구조
 Authenticode 서명자 정보를 정의합니다.  
@@ -38,7 +38,7 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`pwszHash`|해시입니다.|  
 |`pwszDescription`|설명입니다.|  
 |`pwszDescriptionUrl`|설명의 URL입니다.|  
-|`pChainContext`|서명자의 체인 컨텍스트입니다. 참조는 [CERT_CONTEXT](http://msdn.microsoft.com/library/windows/desktop/aa377189.aspx) 구조입니다.|  
+|`pChainContext`|서명자의 체인 컨텍스트입니다. 참조 된 [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) 구조입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d6aa8474-7bde-48f7-949d-20dc38a1625b
-ms.openlocfilehash: c58f64dba0bceb4a35c67e16193a6627837436e0
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c1ebe2d735924c559f450f4041884dc9845e4fe0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767130"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396087"
 ---
 # <a name="adding-data-to-a-datatable"></a>DataTable에 데이터 추가
-<xref:System.Data.DataTable>을 만들고 열 및 제약 조건을 사용하여 해당 테이블의 구조를 정의한 후에는 새 데이터 행을 테이블에 추가할 수 있습니다. 새 행을 추가하려면 새 변수의 형식을 <xref:System.Data.DataRow>로 선언합니다. 새 **DataRow** 개체를 호출 하는 경우 반환 된 <xref:System.Data.DataTable.NewRow%2A> 메서드. **DataTable** 만듭니다는 **DataRow** 기반 개체는 테이블의 구조에 정의 된 대로 <xref:System.Data.DataColumnCollection>합니다.  
+<xref:System.Data.DataTable>을 만들고 열 및 제약 조건을 사용하여 해당 테이블의 구조를 정의한 후에는 새 데이터 행을 테이블에 추가할 수 있습니다. 새 행을 추가하려면 새 변수의 형식을 <xref:System.Data.DataRow>로 선언합니다. 새 **DataRow** 를 호출 하면 개체가 반환 되는 <xref:System.Data.DataTable.NewRow%2A> 메서드. **DataTable** 만듭니다 합니다 **DataRow** 개체에 정의 된 대로 테이블의 구조를 기반 합니다 <xref:System.Data.DataColumnCollection>합니다.  
   
- 다음 예제에서는를 호출 하 여 새 행을 만드는 방법을 **NewRow** 메서드.  
+ 다음 예제에서는 호출 하 여 새 행을 만들 하는 방법에 설명 합니다 **NewRow** 메서드.  
   
 ```vb  
 Dim workRow As DataRow = workTable.NewRow()  
@@ -37,7 +37,7 @@ workRow["CustLName"] = "Smith";
 workRow[1] = "Smith";  
 ```  
   
- 새 행에 데이터를 삽입 한 후는 **추가** 메서드를 사용 하는 행을 추가 하는 <xref:System.Data.DataRowCollection>다음 코드에 표시 합니다.  
+ 데이터가 새 행을 삽입 한 후 합니다 **추가** 메서드는 행을 추가할 데는 <xref:System.Data.DataRowCollection>다음 코드에 표시 된 합니다.  
   
 ```vb  
 workTable.Rows.Add(workRow)  
@@ -47,7 +47,7 @@ workTable.Rows.Add(workRow)
 workTable.Rows.Add(workRow);  
 ```  
   
- 호출할 수도 있습니다는 **추가** 로 형식화 된 값의 배열에 전달 하 여 새 행을 추가 하는 방법을 <xref:System.Object>다음 예제에 나온 것 처럼 합니다.  
+ 호출할 수도 있습니다는 **추가** 로 형식화 된 값의 배열 전달 하 여 새 행을 추가 하는 방법 <xref:System.Object>다음 예제에서와 같이 합니다.  
   
 ```vb  
 workTable.Rows.Add(new Object() {1, "Smith"})  
@@ -57,9 +57,9 @@ workTable.Rows.Add(new Object() {1, "Smith"})
 workTable.Rows.Add(new Object[] {1, "Smith"});  
 ```  
   
- 형식의 값 배열을 전달 **개체**을 **추가** 메서드 테이블에 새 행을 만들고 개체 배열에 있는 값에 해당 열 값을 설정 합니다. 배열 값은 테이블에 나타나는 순서에 따라 해당 열과 순서대로 대응합니다.  
+ 형식의 값 배열을 전달 **개체**에 **추가** 메서드 테이블 내에서 새 행을 만들고 개체 배열 값에 해당 열 값을 설정 합니다. 배열 값은 테이블에 나타나는 순서에 따라 해당 열과 순서대로 대응합니다.  
   
- 다음 예제에서는 10 개의 행 새로 만든 추가 **고객** 테이블입니다.  
+ 다음 예제에서는 새로 만든에 10 개의 행을 추가 **고객** 테이블입니다.  
   
 ```vb  
 Dim workRow As DataRow  
@@ -91,4 +91,4 @@ for (int i = 0; i <= 9; i++)
  <xref:System.Data.DataRowCollection>  
  <xref:System.Data.DataTable>  
  [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

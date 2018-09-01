@@ -5,22 +5,22 @@ helpviewer_keywords:
 - certificates [WCF], creating temporary certificates
 - temporary certificates [WCF]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.openlocfilehash: 8310e7c465d0e3494482b6a38a7b2a67b67ae842
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d3b051c7ea152606721388ea35b6f508eada1c5d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33495369"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385179"
 ---
 # <a name="how-to-create-temporary-certificates-for-use-during-development"></a>방법: 개발 중 사용할 임시 인증서 만들기
-보안 서비스 또는 Windows Communication Foundation (WCF)를 사용 하 여 클라이언트를 개발 때 자격 증명으로 사용할 X.509 인증서를 제공 하는 경우가 있습니다. 일반적으로 인증서는 루트 인증 기관이 컴퓨터의 신뢰할 수 있는 루트 인증 기관 저장소에 있는 인증서 체인의 일부입니다. 인증서 체인을 사용하면 일반적으로 루트 인증 기관이 조직 또는 비즈니스 사업부에 있는 인증서 집합의 범위를 지정할 수 있습니다. 개발 시 이를 에뮬레이트하려면 보안 요구 사항에 맞는 두 개의 인증서를 만듭니다. 첫 번째 인증서는 신뢰할 수 있는 루트 인증 기관 저장소에 있는 자체 서명된 인증서이고, 두 번째 인증서는 첫 번째 인증서에서 만들어지고 로컬 컴퓨터 위치의 개인 저장소나 현재 사용자 위치의 개인 저장소에 있습니다. 이 항목에서는 [SDK에서 제공하는](http://go.microsoft.com/fwlink/?LinkId=248185)인증서 작성 도구(MakeCert.exe) [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 를 사용하여 이러한 두 인증서를 만드는 단계를 안내합니다.  
+보안 서비스 또는 Windows Communication Foundation (WCF)를 사용 하 여 클라이언트를 개발할 때 자격 증명으로 사용할 X.509 인증서를 제공 하는 데 필요한 경우가 있습니다. 일반적으로 인증서는 루트 인증 기관이 컴퓨터의 신뢰할 수 있는 루트 인증 기관 저장소에 있는 인증서 체인의 일부입니다. 인증서 체인을 사용하면 일반적으로 루트 인증 기관이 조직 또는 비즈니스 사업부에 있는 인증서 집합의 범위를 지정할 수 있습니다. 개발 시 이를 에뮬레이트하려면 보안 요구 사항에 맞는 두 개의 인증서를 만듭니다. 첫 번째 인증서는 신뢰할 수 있는 루트 인증 기관 저장소에 있는 자체 서명된 인증서이고, 두 번째 인증서는 첫 번째 인증서에서 만들어지고 로컬 컴퓨터 위치의 개인 저장소나 현재 사용자 위치의 개인 저장소에 있습니다. 이 항목에서는 사용 하 여 이러한 두 인증서를 만드는 단계를 안내 합니다 [인증서 작성 도구 (MakeCert.exe)](https://go.microsoft.com/fwlink/?LinkId=248185)에서 제공 하는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] SDK.  
   
 > [!IMPORTANT]
 >  인증서 작성 도구가 생성하는 인증서는 테스트 용도로만 제공됩니다. 서비스 또는 클라이언트를 배포할 때는 인증 기관에서 제공하는 적절한 인증서를 사용해야 합니다. 조직의 [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 인증서 서버나 타사 인증서일 수 있습니다.  
 >   
->  기본적으로는 [Makecert.exe (인증서 작성 도구)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d) 해당 루트 기관 라고 하는 인증서를 만들며 "루트 에이전시 **."** 라고 하는 인증서를 만듭니다. "루트 에이전시"는 신뢰할 수 있는 루트 인증 기관 저장소에 없으므로 해당 인증서를 신뢰할 수 없습니다. 신뢰할 수 있는 루트 인증 기관 저장소에 배치되는 자체 서명된 인증서를 만들면 배포 환경을 보다 근접하게 시뮬레이션하는 개발 환경을 만들 수 있습니다.  
+>  기본적으로 [Makecert.exe (인증서 작성 도구)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d) 루트 인증 기관이 라고 하는 인증서를 만듭니다 "루트 에이전시 **."** 라고 하는 인증서를 만듭니다. "루트 에이전시"는 신뢰할 수 있는 루트 인증 기관 저장소에 없으므로 해당 인증서를 신뢰할 수 없습니다. 신뢰할 수 있는 루트 인증 기관 저장소에 배치되는 자체 서명된 인증서를 만들면 배포 환경을 보다 근접하게 시뮬레이션하는 개발 환경을 만들 수 있습니다.  
   
- 만들기 및 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 [인증서 작업](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다. 자격 증명으로 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 [보안 서비스와 클라이언트](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)합니다. Microsoft Authenticode 기술을 사용하는 방법에 대한 자습서는 [Authenticode Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=88919)를 참조하십시오.  
+ 인증서 만들기 및 사용에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다. 자격 증명으로 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)합니다. Microsoft Authenticode 기술 사용에 대 한 자습서를 참조 하세요 [Authenticode Overviews and Tutorials](https://go.microsoft.com/fwlink/?LinkId=88919)합니다.  
   
 ### <a name="to-create-a-self-signed-root-authority-certificate-and-export-the-private-key"></a>자체 서명된 루트 인증 기관 인증서를 만들고 개인 키를 내보내려면  
   
@@ -63,7 +63,7 @@ ms.locfileid: "33495369"
   
 #### <a name="to-install-a-self-signed-certificate-in-the-trusted-root-certification-authorities"></a>신뢰할 수 있는 루트 인증 기관에 자체 서명된 인증서를 설치하려면  
   
-1.  인증서 스냅인을 엽니다. 자세한 내용은 참조 [하는 방법: MMC 스냅인을 사용 하 여 보기 인증서](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)합니다.  
+1.  인증서 스냅인을 엽니다. 자세한 내용은 [방법: MMC 스냅인을 사용하여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)를 참조하세요.  
   
 2.  인증서를 저장할 폴더( **로컬 컴퓨터** 또는 **현재 사용자**)를 엽니다.  
   
@@ -92,7 +92,7 @@ ms.locfileid: "33495369"
     </bindings>  
     ```  
   
- 인증서는 사용자의 저장소에서 찾을 수 이며 SubjectName 필드에서 "CohoWinery" 값을 검색 하 여 찾을 수를 지정 하는 클라이언트에 대 한 구성 파일에 다음 XML을 사용  
+ 클라이언트에 대 한 구성 파일에서 인증서 사용자의 저장소에서 발견 되어 SubjectName 필드 값 "CohoWinery."를 검색 하 여 찾을 수를 지정 하려면 다음 XML을 사용  
   
 ```xml  
 <behaviors>  

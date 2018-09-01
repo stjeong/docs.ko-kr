@@ -6,12 +6,12 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: 44fbf35ee4ab5a0c4763269808f0817a33d05b40
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 83a1b7629672c6a74fd29ce698a6b8e6e152b1da
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42998439"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43387636"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>LINQ 쿼리 처음 작성(Visual Basic)
 *쿼리*는 데이터 소스에서 데이터를 검색하는 식입니다. 쿼리는 전용된 쿼리 언어로 표현 됩니다. 시간이 지남에 따라 다른 언어가 개발 되었습니다 다양 한 유형의 데이터 원본에 대 한 예를 들어, 관계형 데이터베이스에 대 한 SQL 및 XML에 대 한 XQuery입니다. 이렇게 하면 응용 프로그램 개발자가 각 유형의 데이터 원본 또는 지원 되는 데이터 형식에 대 한 새 쿼리 언어를 배울 필요 합니다.  
@@ -57,7 +57,7 @@ Dim db As New DataContext("C:\Northwind\Northwnd.mdf")
 Dim customers As Table(Of Customer) = db.GetTable(Of Customer)  
 ```  
   
- 특정 형식의 데이터 소스를 만드는 방법에 대한 자세한 내용은 다양한 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자에 대한 설명서를 참조하세요. (이러한 공급자 목록은 참조 하세요 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).) 기본 규칙은 간단 합니다:는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 소스는 제네릭을 지 원하는 모든 개체 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 인터페이스에서 상속 된 합니다.  
+ 특정 형식의 데이터 소스를 만드는 방법에 대한 자세한 내용은 다양한 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자에 대한 설명서를 참조하세요. (이러한 공급자 목록은 참조 하세요 [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).) 기본 규칙은 간단 합니다:는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 소스는 제네릭을 지 원하는 모든 개체 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 인터페이스에서 상속 된 합니다.  
   
 > [!NOTE]
 >  같은 형식의 <xref:System.Collections.ArrayList> 제네릭이 아닌 지 <xref:System.Collections.IEnumerable> 인터페이스를 사용할 수도 있습니다 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 원본입니다. 사용 하는 예는 <xref:System.Collections.ArrayList>를 참조 하세요 [하는 방법: LINQ (Visual Basic)를 사용 하 여 ArrayList 쿼리](how-to-query-an-arraylist-with-linq.md).  

@@ -2,17 +2,17 @@
 title: 채용 프로세스
 ms.date: 03/30/2017
 ms.assetid: d5fcacbb-c884-4b37-a5d6-02b1b8eec7b4
-ms.openlocfilehash: 87327692e35e9386dab4cf906ab33cbe08d73fdd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 41f5508ea5805581282389e0731a00dde7796bc0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519765"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396322"
 ---
 # <a name="hiring-process"></a>채용 프로세스
 이 샘플에서는 워크플로 서비스로 호스트되는 두 개의 워크플로와 메시징 활동을 사용하여 비즈니스 프로세스를 구현하는 방법을 보여 줍니다. 이 워크플로는 Contoso, Inc라는 가상 회사의 IT 인프라 중 일부입니다.  
   
- `HiringRequest`로 구현된 <xref:System.Activities.Statements.Flowchart> 워크플로 프로세스는 조직에 있는 여러 관리자의 권한 부여를 요구합니다. 이 목표를 달성 하기 워크플로가 (이 경우, 받은 편지함 서비스 및 일반 Windows Communication Foundation (WCF) 서비스로 구현 된 조직 데이터 서비스)에서 조직의 다른 기존 서비스를 사용 합니다.  
+ `HiringRequest`로 구현된 <xref:System.Activities.Statements.Flowchart> 워크플로 프로세스는 조직에 있는 여러 관리자의 권한 부여를 요구합니다. 이 목표를 달성 하려면 워크플로 조직 (여기서, 받은 편지함 서비스를 및 일반 Windows Communication Foundation (WCF) 서비스를 구현 하는 조직 데이터 서비스)에서 다른 기존 서비스를 사용 합니다.  
   
  `ResumeRequest`로 구현된 <xref:System.Activities.Statements.Sequence> 워크플로에서는 Contoso의 외부 채용 웹 사이트에 직원 모집 공고를 게시하고 이력서 접수를 관리합니다. 직원 모집 공고는 마감 시한이 되거나 Contoso의 담당자가 삭제할 때까지 일정 기간 동안 외부 웹 사이트에서 볼 수 있습니다.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "33519765"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
   
@@ -112,14 +112,14 @@ ms.locfileid: "33519765"
 |-------------|-----------------|-------------|  
 |Flowchart|비즈니스 프로세스는 순서도로 표현되며, 이 순서도 설명은 화이트보드에 비즈니스를 그리는 방식과 동일하게 프로세스를 표현합니다.|HiringRequestService|  
 |워크플로 서비스|프로세스 정의가 포함된 순서도는 서비스에서 호스트됩니다. 이 예에서는 서비스가 콘솔 응용 프로그램에서 호스트됩니다.|HiringRequestService|  
-|메시징 활동|순서도는 다음 두 가지 방식으로 메시징 활동을 사용합니다.<br /><br /> 대상 (각 승인 단계에서 결정 사항 및 관련된 정보를 수신) 하는 사용자 로부터 정보를 가져옵니다.<br />대상 (InboxService 및 OrgDataService 서비스 참조를 통해 사용 되는) 다른 기존 서비스와 상호 작용 합니다.|HiringRequestService|  
-|내용 기반 상관 관계|승인 메시지는 채용 요청의 ID 속성과 상관 관계가 있습니다.<br /><br /> -프로세스가 시작 되 면 상관 관계 핸들이 요청 ID로 초기화 됩니다.<br />-들어오는 승인 메시지 (각 승인 메시지의 첫 번째 매개 변수는 요청의 ID)의 ID에 연결 합니다.|HiringRequestService/ResumeRequestService|  
-|사용자 지정 활동(선언적 및 코드 기반)|이 샘플에는 다음과 같은 몇 가지 사용자 지정 활동이 있습니다.<br /><br /> -   `SaveActionTracking`:이 활동에서 사용자 지정 <xref:System.Activities.Tracking.TrackingRecord> (사용 하 여 <xref:System.Activities.NativeActivityContext.Track%2A>). 이 활동은 <xref:System.Activities.NativeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.<br />-   `GetEmployeesByPositionTypes`:이 활동은 직무 종류 Id 목록을 받아 Contoso에서 해당 직무를가지고 있는 직원의 목록을 반환 합니다. 이 활동은 활동 디자이너를 사용하여 선언적으로 작성되었습니다.<br />-   `SaveHiringRequestInfo`:이 활동의 정보를 저장 한 `HiringRequest` (사용 하 여 `HiringRequestRepository.Save`). 이 활동은 <xref:System.Activities.CodeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.|HiringRequestService|  
+|메시징 활동|순서도는 다음 두 가지 방식으로 메시징 활동을 사용합니다.<br /><br /> 사용자 (각 승인 단계에서의 결정과 관련된 정보를 수신)에 게에서 정보를 가져옵니다 간.<br />-하려면 (InboxService 및 OrgDataService, 서비스 참조를 통해 사용) 다른 기존 서비스와 상호 작용 합니다.|HiringRequestService|  
+|내용 기반 상관 관계|승인 메시지는 채용 요청의 ID 속성과 상관 관계가 있습니다.<br /><br /> -프로세스가 시작 될 때 상관 관계 핸들이 요청 ID를 사용 하 여 초기화 됩니다.<br />-해당 id (각 승인 메시지의 첫 번째 매개 변수는 요청의 ID) 들어오는 승인 메시지 상호 연결 합니다.|HiringRequestService/ResumeRequestService|  
+|사용자 지정 활동(선언적 및 코드 기반)|이 샘플에는 다음과 같은 몇 가지 사용자 지정 활동이 있습니다.<br /><br /> -   `SaveActionTracking`:이 활동에서 사용자 지정 <xref:System.Activities.Tracking.TrackingRecord> (사용 하 여 <xref:System.Activities.NativeActivityContext.Track%2A>). 이 활동은 <xref:System.Activities.NativeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.<br />-   `GetEmployeesByPositionTypes`:이 활동의 직무 종류 Id 목록을 받고 Contoso에서 해당 직무를가지고 있는 직원의 목록을 반환 합니다. 이 활동은 활동 디자이너를 사용하여 선언적으로 작성되었습니다.<br />-   `SaveHiringRequestInfo`:이 활동의 정보를 저장 한 `HiringRequest` (사용 하 여 `HiringRequestRepository.Save`). 이 활동은 <xref:System.Activities.CodeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.|HiringRequestService|  
 |시스템 제공 SQL Server 지속성|순서도 프로세스 정의를 호스트하는 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 인스턴스는 시스템 제공 SQL Server 지속성을 사용하도록 구성됩니다.|HiringRequestService/ResumeRequestService|  
 |사용자 지정 추적|샘플에는 `HiringRequestProcess`의 기록을 저장하는 사용자 지정 추적 참가자가 포함되어 있으며, 이 참가자는 어떤 조치가 취해졌는지와 조치를 취한 사람 및 시기를 기록합니다. 소스 코드는 HiringRequestService의 Tracking 폴더에 있습니다.|HiringRequestService|  
 |ETW 추적|시스템 제공 ETW 추적은 HiringRequestService 서비스의 App.config 파일에 구성되어 있습니다.|HiringRequestService|  
 |활동의 컴퍼지션|프로세스 정의는 <xref:System.Activities.Activity>의 자유 컴퍼지션을 사용합니다. 순서도에는 다른 활동과 함께 여러 개의 시퀀스 활동 및 병렬 활동이 포함되어 있습니다.|HiringRequestService|  
-|병렬 활동|-   <xref:System.Activities.Statements.ParallelForEach%601> (두 명의 HR 관리자의 승인 단계를 기다리는 중) 병렬로 CEO 및 HR 관리자의 수신함에 등록 하는 데 사용 됩니다.<br />-   <xref:System.Activities.Statements.Parallel> 완료 됨 및 거부 된 단계에서 몇 가지 정리 작업을 수행 하는 데 사용|HiringRequestService|  
+|병렬 활동|-   <xref:System.Activities.Statements.ParallelForEach%601> (두 명의 HR 관리자의 승인 단계를 기다리는 중) 병렬로 CEO 및 HR 관리자의 수신함에 있는 등록에 사용 됩니다.<br />-   <xref:System.Activities.Statements.Parallel> 완료 됨 및 거부 된 단계에서 일부 정리 작업을 수행 하는 데 사용 됩니다.|HiringRequestService|  
 |모델 취소|순서도는 <xref:System.Activities.Statements.CancellationScope>를 사용하여 취소 동작을 만들며, 몇 가지 정리 작업을 수행합니다.|HiringRequestService|  
 |고객 지속성 참가자|`HiringRequestPersistenceParticipant`는 워크플로 변수의 데이터를 Contoso HR 데이터베이스에 저장된 테이블에 저장합니다.|HiringRequestService|  
 |워크플로 서비스|`ResumeRequestService`는 워크플로 서비스를 사용하여 구현됩니다. 워크플로 정의와 서비스 정보는 ResumeRequestService.xamlx에 포함되어 있습니다. 서비스는 지속성과 추적을 사용하도록 구성됩니다.|ResumeRequestService|  
@@ -149,9 +149,9 @@ ms.locfileid: "33519765"
   
 1.  관리자 권한으로 Visual Studio를 실행합니다. HiringRequest.sln을 엽니다.  
   
-2.  솔루션을 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 선택 **속성**합니다.  
+2.  솔루션을 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 선택한 **속성**합니다.  
   
-3.  옵션을 선택 **여러 개의 시작 프로젝트** 설정 하 고는 **CareersWebSite**, **InternalClient**, **HiringRequestService**, 및 **ResumeRequestService** 를 **시작**합니다. 둡니다 **ContosoHR**, **InboxService**, 및 **OrgService** n o n입니다.  
+3.  옵션을 선택 **여러 개의 시작 프로젝트** 설정 된 **CareersWebSite**를 **InternalClient**, **HiringRequestService**, 및 **ResumeRequestService** 하 **시작**합니다. 둡니다 **ContosoHR**를 **InboxService**, 및 **OrgService** None으로 합니다.  
   
 4.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다. 빌드가 성공적으로 수행되었는지 확인합니다.  
   
@@ -159,19 +159,19 @@ ms.locfileid: "33519765"
   
 1.  솔루션을 빌드한 후 Ctrl+F5를 눌러 디버깅 없이 실행합니다. 모든 서비스가 시작되었는지 확인합니다.  
   
-2.  마우스 오른쪽 단추로 클릭 **InternalClient** 선택 고 솔루션에서 **브라우저에서 보기**합니다. `InternalClient`의 기본 페이지가 표시됩니다. 서비스가 실행되고 있는지 확인한 다음 링크를 클릭합니다.  
+2.  마우스 오른쪽 단추로 클릭 **InternalClient** 한 다음 선택한 솔루션 **브라우저에서 보기**합니다. `InternalClient`의 기본 페이지가 표시됩니다. 서비스가 실행되고 있는지 확인한 다음 링크를 클릭합니다.  
   
-3.  **HiringRequest** 모듈이 표시 됩니다. 여기에서 자세히 설명된 시나리오를 따르면 됩니다.  
+3.  합니다 **HiringRequest** 모듈이 표시 됩니다. 여기에서 자세히 설명된 시나리오를 따르면 됩니다.  
   
 4.  `HiringRequest`가 완료되면 `ResumeRequest`를 시작할 수 있습니다. 여기에서 자세히 설명된 시나리오를 따르면 됩니다.  
   
 5.  `ResumeRequest`가 게시되면 공용 웹 사이트인 Contoso 직원 채용 사이트에서 볼 수 있습니다. 직원 모집 공고 내용을 보고 지원하려면 직원 채용 사이트로 이동합니다.  
   
-6.  마우스 오른쪽 단추로 클릭 **CareersWebSite** 고 솔루션에서 **브라우저에서 보기**합니다.  
+6.  마우스 오른쪽 단추로 클릭 **CareersWebSite** 선택한 솔루션 **브라우저에서 보기**합니다.  
   
-7.  로 돌아가 `InternalClient` 마우스 오른쪽 단추로 클릭 하 여 **InternalClient** 솔루션에서 선택 하 고 **브라우저에서 보기**합니다.  
+7.  로 다시 이동 합니다 `InternalClient` 마우스 오른쪽 단추로 클릭 하 여 **InternalClient** 솔루션에서 선택 하 고 **브라우저에서 보기**합니다.  
   
-8.  이동 하는 **job Postings** 클릭 하 여 섹션은 **Job Postings** 받은 편지함 최상위 메뉴에 링크 합니다. 여기에서 자세히 설명된 시나리오를 따르면 됩니다.  
+8.  로 이동 합니다 **JobPostings** 섹션을 클릭 하 여 합니다 **Job Postings** 수신함 최상위 메뉴에서 링크 합니다. 여기에서 자세히 설명된 시나리오를 따르면 됩니다.  
   
 ## <a name="scenarios"></a>시나리오  
   
@@ -179,7 +179,7 @@ ms.locfileid: "33519765"
   
 1.  Michael Alexander(소프트웨어 엔지니어)는 C# 업무 경력이 3년 이상인 Software Engineer in Test(SDET)를 엔지니어링 부서에 채용하기 위해 새로운 직무를 요청하려고 합니다.  
   
-2.  만든 후 요청 Michael의 받은 편지함에 표시 (클릭 **새로 고침** 요청이 표시 되지 않으면) Michael의 관리자 인 Peter Brehm의 승인을 기다리는 합니다.  
+2.  만들어진 요청 Michael의 받은 편지함에 표시 (클릭 **새로 고침** 요청이 표시 되지 않으면) Michael의 관리자 인 Peter Brehm의 승인을 대기 합니다.  
   
 3.  Peter는 Michael의 요청에 대한 조치를 취하려고 합니다. Peter는 직무에 C# 사용 경력이 3년이 아닌 5년 경력이 필요하다고 판단하고 자신의 의견을 다시 보내 검토하도록 합니다.  
   
@@ -195,9 +195,9 @@ ms.locfileid: "33519765"
   
 ### <a name="start-resume-request"></a>이력서 요청 시작  
   
-1.  이제는 작업 대기 중 이며 외부 웹 사이트에 게시 될 수 (클릭 하면 볼 수는 **Job Postings** 링크)입니다. 현재 직무를 종료하고 게시하는 HR 담당자가 직무에 대한 처리를 담당합니다.  
+1.  사용자를 적용할 수 있는 외부 웹 사이트에 게시 될 직무가 기다리고 이제 (클릭 하면 볼 수 있습니다 합니다 **Job Postings** 링크). 현재 직무를 종료하고 게시하는 HR 담당자가 직무에 대한 처리를 담당합니다.  
   
-2.  HR 직무를 편집 하려고 (클릭 하 여는 **편집** 링크) 60 분의 제한 시간을 설정 하 여 (실제로이 일 수 며칠 또는 몇 주). 시간 제한을 통해 지정한 시간에 따라 외부 웹 사이트에서 직무를 중단할 수 있습니다.  
+2.  HR 직무를 편집 하려는 (클릭 하 여 합니다 **편집** 링크) 60 분의 제한 시간을 설정 하 여 (실제로 때문일 일 또는 주). 시간 제한을 통해 지정한 시간에 따라 외부 웹 사이트에서 직무를 중단할 수 있습니다.  
   
 3.  편집한 직무를 저장 한 후에 표시 된 **Receiving Resumes** 탭 (새 작업 위치를 확인 하려면 웹 페이지 새로 고침).  
   
@@ -205,17 +205,17 @@ ms.locfileid: "33519765"
   
 1.  외부 웹 사이트에 직무가 표시되어야 합니다. 구직하려는 지원자는 이 직무에 지원하고 이력서를 제출할 수 있습니다.  
   
-2.  Job Postings List 서비스로 돌아가면를 볼 수 있습니다"이력서" 지금까지 수집 된입니다.  
+2.  Job Postings List 서비스로 돌아가면를 볼 수 있습니다"다시 시작" 지금 수집 된입니다.  
   
 3.  HR에서는 적합한 지원자를 찾은 때와 같은 경우 이력서 접수를 중지할 수도 있습니다.  
   
 ## <a name="troubleshooting"></a>문제 해결  
   
-1.  Visual Studio를 관리자 권한으로 실행 되 고 확인 합니다.  
+1.  관리자 권한으로 Visual Studio를 실행 하는 있는지 확인 합니다.  
   
 2.  솔루션이 제대로 빌드되지 않으면 다음 내용을 확인합니다.  
   
-    -   에 대 한 참조 `ContosoHR` 에서 누락 되지 않았는지는 `InternalClient` 또는 `CareersWebSite` 프로젝트.  
+    -   에 대 한 참조가 `ContosoHR` 에서 누락 되지 않았는지 여부는 `InternalClient` 또는 `CareersWebSite` 프로젝트입니다.  
   
 3.  솔루션이 제대로 실행되지 않으면 다음 내용을 확인합니다.  
   
@@ -225,7 +225,7 @@ ms.locfileid: "33519765"
   
         1.  App_WebReferences 폴더를 엽니다.  
   
-        2.  마우스 오른쪽 단추로 클릭 **Contoso** 선택 **웹/서비스 참조 업데이트**합니다.  
+        2.  마우스 오른쪽 단추로 클릭 **Contoso** 선택한 **웹/서비스 참조 업데이트**합니다.  
   
         3.  Visual Studio에서 CTRL + SHIFT + B를 눌러 솔루션을 다시 빌드하십시오.  
   

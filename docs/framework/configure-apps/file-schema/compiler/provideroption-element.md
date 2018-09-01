@@ -11,19 +11,19 @@ ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: fa3410cc2c8812c59528676bfad6cd7e887c5f73
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 75cc2003a88cc7be467b9062c37b6b5d9eb82f53
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746399"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43388486"
 ---
 # <a name="ltprovideroptiongt-element"></a>&lt;providerOption&gt; 요소
 언어 공급자에 대 한 컴파일러 버전 특성을 지정합니다.  
   
  \<구성 요소 >  
 \<system.codedom Element>  
-\<컴파일러 요소 >  
+\<compilers 요소 >  
 \<컴파일러 > 요소  
 \<providerOption > 요소  
   
@@ -43,8 +43,8 @@ ms.locfileid: "32746399"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`name`|필수 특성입니다.<br /><br /> 옵션;의 이름을 지정합니다. 예를 들어 "CompilerVersion"가 있습니다.|  
-|`value`|필수 특성입니다.<br /><br /> 옵션;에 대 한 값을 지정합니다. 예를 들어 "v3.5"가 있습니다.|  
+|`name`|필수 특성입니다.<br /><br /> 옵션의 이름을 지정합니다. 예를 들어, "CompilerVersion"가 있습니다.|  
+|`value`|필수 특성입니다.<br /><br /> 옵션의 값을 지정합니다. 예를 들어, "v3.5"가 있습니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -55,20 +55,20 @@ ms.locfileid: "32746399"
 |-------------|-----------------|  
 |[\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |[\<system.codedom > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|사용 가능한 언어 공급자에 대한 컴파일러 구성 설정을 지정합니다.|  
-|[\<컴파일러 > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|컴파일러 구성 요소;에 대 한 컨테이너 0 개 이상 포함 되어 있는 `<compiler>` 요소입니다.|  
+|[\<컴파일러 > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|컴파일러 구성 요소에 대 한 컨테이너 0 개 이상 포함 `<compiler>` 요소입니다.|  
 |[\<compiler> 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)|언어 공급자에 대한 컴파일러 구성 특성을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- .NET Framework 버전 3.5 코드 문서 개체 모델 (CodeDOM) 코드 공급자를 지원할 수 있습니다 공급자별 옵션 사용 하 여는 `<providerOption>` 요소입니다.  
+ .NET Framework 버전 3.5에서 코드 문서 개체 모델 (CodeDOM) 코드 공급자를 지원할 수 있습니다 공급자별 옵션 사용 하 여는 `<providerOption>` 요소입니다.  
   
- .NET Framework 3.5는.NET Framework 2.0 어셈블리 업데이트를 포함 하 고 새 형식을 포함 하는 새 버전 3.5 어셈블리를 제공 합니다. Microsoft C# 및 Visual Basic 코드 공급자는.NET Framework 2.0 어셈블리에 포함 되어 있지만 컴파일러 버전 3.5 지원 하도록 업데이트 되었습니다. 기본적으로 업데이트 된 코드 공급자 버전 2.0 컴파일러에 대 한 코드를 생성합니다. 사용할 수는 `<providerOption>` 3.5를 대상 컴파일러 버전을 변경 하는 요소입니다. 이 작업을 수행 하려면 "CompilerVersion"를 지정 하는 `name` 특성과 "v3.5"에 대 한는 `value` 특성입니다. 소문자 "v" 버전 번호를 앞에 야 합니다.  
+ .NET Framework 3.5는 업데이트 된.NET Framework 2.0 어셈블리를 포함 하 고 새 형식을 포함 하는 새 버전 3.5 어셈블리를 제공 합니다. Microsoft C# 및 Visual Basic 코드 공급자를.NET Framework 2.0 어셈블리에 포함 되어 있지만 버전 3.5 컴파일러를 지원 하도록 업데이트 되었습니다. 기본적으로 업데이트 된 코드 공급자는 버전 2.0 컴파일러에 대 한 코드를 생성합니다. 사용할 수는 `<providerOption>` 3.5를 대상 컴파일러 버전을 변경 하는 요소입니다. 이 작업을 수행 하려면 "CompilerVersion"를 지정 하는 `name` 특성과 "v3.5"에 대 한는 `value` 특성입니다. 소문자 "v"를 사용 하 여 버전 번호를 빨라야 합니다.  
   
- 가능 버전 사양을 글로벌 추가 하 여는 `<providerOption>` 요소는.NET Framework 2.0 Machine.config 또는 루트 Web.config 파일입니다. Machine.config 파일에 3.5로 기본 컴파일러 버전을 업데이트 하는 경우 변경할 수 있습니다 응용 프로그램별 별로 2.0으로 다시 사용 하 여는 `<providerOption>` 응용 프로그램 구성 파일의 요소입니다.  
+ 가능 버전 사양을 전역 추가 하 여는 `<providerOption>` .NET Framework 2.0 Machine.config 또는 루트 Web.config 파일에는 요소입니다. 3.5 합니다 Machine.config 파일의 기본 컴파일러 버전을 업데이트 하는 경우 변경할 수 있습니다 2.0 응용 프로그램 기준으로 사용 하 여는 `<providerOption>` 응용 프로그램 구성 파일의 요소입니다.  
   
- CodeDOM 코드 공급자 구현자를 취하는 생성자를 제공 하 여 사용자 지정 옵션을 처리할 수는 `providerOptions` 형식의 매개 변수 <xref:System.Collections.Generic.IDictionary%602>합니다.  
+ CodeDOM 코드 공급자 구현자는 생성자를 제공 하 여 사용자 지정 옵션을 처리할 수는 `providerOptions` 형식의 매개 변수 <xref:System.Collections.Generic.IDictionary%602>합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 C# 코드 공급자의 버전 3.5를 사용할지를 지정 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 C# 코드 공급자의 버전 3.5를 사용할지를 지정 하는 방법에 설명 합니다.  
   
 ```xml  
 <configuration>  
@@ -98,4 +98,4 @@ ms.locfileid: "32746399"
  [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [\<컴파일러 > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)  
  [정규화된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)  
- [요소 (ASP.NET 설정 스키마) 컴파일에 대 한 컴파일러에 대 한 컴파일러](http://msdn.microsoft.com/library/f7d6b078-5d42-4134-b3f7-62e1aba1df1e)
+ [컴파일 (ASP.NET 설정 스키마)에 대 한 컴파일러에 대 한 compiler 요소](https://msdn.microsoft.com/library/f7d6b078-5d42-4134-b3f7-62e1aba1df1e)

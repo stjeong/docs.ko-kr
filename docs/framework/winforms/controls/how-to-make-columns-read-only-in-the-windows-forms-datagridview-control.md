@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data grids [Windows Forms], read-only columns
 - DataGridView control [Windows Forms], read-only columns
 ms.assetid: 2bb73ebb-1a55-4362-9fda-e50574c087d5
-ms.openlocfilehash: 1ea4fdb6d38464993672c9aa98d8866812d21972
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a8b5c0f9492941cf0e01e016d9fb097e1df44d2e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532098"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389717"
 ---
 # <a name="how-to-make-columns-read-only-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 열을 읽기 전용으로 설정
-일부 데이터는 편집할 수 없습니다. <xref:System.Windows.Forms.DataGridView> 컨트롤에서 열의 <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> 속성 값은 사용자가 해당 열의 셀을 편집할 수 있는지 여부를 결정합니다. 완전히 읽기 전용 컨트롤을 확인 하는 방법에 대 한 정보를 참조 하십시오. [하는 방법: Windows Forms DataGridView 컨트롤에서 방지 행 추가 및 삭제](../../../../docs/framework/winforms/controls/prevent-row-addition-and-deletion-datagridview.md)합니다.  
+일부 데이터는 편집할 수 없습니다. <xref:System.Windows.Forms.DataGridView> 컨트롤에서 열의 <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> 속성 값은 사용자가 해당 열의 셀을 편집할 수 있는지 여부를 결정합니다. 완전히 읽기 전용 컨트롤을 확인 하는 방법에 대 한 정보를 참조 하세요 [방법: 행 추가 및 삭제 금지 Windows Forms DataGridView 컨트롤에서](../../../../docs/framework/winforms/controls/prevent-row-addition-and-deletion-datagridview.md)합니다.  
   
- Visual Studio에서는 이 작업이 지원됩니다.  또한 참조 [하는 방법: 열을 읽기 전용은 Windows Forms DataGridView 컨트롤 사용 하 여 디자이너에서](http://msdn.microsoft.com/library/xd4k3c7e\(v=vs.110\))합니다.  
+ Visual Studio에서는 이 작업이 지원됩니다.  도 참조 하세요 [방법: 열을 읽기 전용은 Windows Forms DataGridView 컨트롤 사용 하 여 디자이너에서](https://msdn.microsoft.com/library/xd4k3c7e\(v=vs.110\))합니다.  
   
 ### <a name="to-make-a-column-read-only-programmatically"></a>프로그래밍 방식으로 열을 읽기 전용으로 설정하려면  
   

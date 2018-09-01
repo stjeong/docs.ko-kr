@@ -19,12 +19,12 @@ helpviewer_keywords:
 - data type conversion [Visual Basic], exceptions during conversion
 - conversions [Visual Basic], widening
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
-ms.openlocfilehash: e574c20ec259953fea4b11d8f65e546373a4fe8c
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: ad49e5443016dc4fed57be4a991df9f6d6095b55
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332576"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43391396"
 ---
 # <a name="widening-and-narrowing-conversions-visual-basic"></a>확대 변환과 축소 변환(Visual Basic)
 형식 변환 사용 하 여 중요 한 고려 대상 데이터 형식의 범위 내에서 변환의 결과 인지 됩니다.  
@@ -114,5 +114,5 @@ shape = square
  [문자열과 다른 형식 사이의 변환](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
  [방법: Visual Basic에서 다른 형식으로 변환할 개체](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
  [배열 규칙](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
  [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

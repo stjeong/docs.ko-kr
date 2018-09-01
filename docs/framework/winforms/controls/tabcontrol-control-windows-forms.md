@@ -10,12 +10,12 @@ helpviewer_keywords:
 - property pages [Windows Forms], creating
 - tab dialog boxes
 ms.assetid: 915091af-93ac-4d3d-8283-738dd2d21ea7
-ms.openlocfilehash: 91a9930a3678e08fc0e46335f1eb95330bd171a8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 75f0fc416ad29137c119b571acd658a7e56fc009
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33536763"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43384956"
 ---
 # <a name="tabcontrol-control-windows-forms"></a>TabControl 컨트롤(Windows Forms)
 Windows Forms `TabControl`은 파일 캐비닛의 폴더 집합에 노트북 또는 레이블의 구분선과 같은 여러 탭을 표시합니다. 탭에는 사진 및 기타 컨트롤이 포함될 수 있습니다. `TabControl`을 사용하여 속성 페이지를 만듭니다.  
@@ -36,7 +36,7 @@ Windows Forms `TabControl`은 파일 캐비닛의 폴더 집합에 노트북 또
  [방법: 탭 페이지 사용 안 함](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  
  사용자 자격 증명에 따라 탭 페이지에 대한 액세스를 제한하는 방법을 설명합니다.  
   
- 참조도 [하는 방법: 추가 및 제거는 디자이너를 사용 하 여 Windows Forms TabControl에서 탭](http://msdn.microsoft.com/library/ms233654\(v=vs.110\)), [하는 방법: 탭 페이지를 사용 하 여 디자이너 컨트롤 추가](http://msdn.microsoft.com/library/ms233668\(v=vs.110\))  
+ 도 참조 하세요 [방법: 탭 추가 및 제거 사용 하 여 Windows Forms TabControl 디자이너](add-and-remove-tabs-with-wf-tabcontrol-using-the-designer.md), [방법:는 탭 페이지를 사용 하 여 디자이너에 컨트롤 추가](how-to-add-a-control-to-a-tab-page-using-the-designer.md)  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.TabControl> 클래스  

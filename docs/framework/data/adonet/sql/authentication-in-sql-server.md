@@ -2,12 +2,12 @@
 title: SQL Server에서 인증
 ms.date: 05/22/2018
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
-ms.openlocfilehash: 85f441d2181d434ec9fccca5841296106d0d7e3f
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: 8d7fcb149059c06b7875663e4df5272312121c87
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754504"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43394097"
 ---
 # <a name="authentication-in-sql-server"></a>SQL Server에서 인증
 SQL Server에서는 Windows 인증 모드와 혼합 모드의 두 가지 인증 모드를 지원합니다.  
@@ -83,4 +83,4 @@ SQL Server에서는 Windows 인증 모드와 혼합 모드의 두 가지 인증 
  [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
  [데이터 소스에 연결](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
  [연결 문자열](../../../../../docs/framework/data/adonet/connection-strings.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

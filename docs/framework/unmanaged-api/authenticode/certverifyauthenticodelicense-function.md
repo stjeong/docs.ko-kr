@@ -10,12 +10,12 @@ api_type:
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d79a8c5bc204b6479741c32c47e6b41ff873a1bc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1c10d5f363d454a64f9052315514e896f90f7081
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33406925"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43386144"
 ---
 # <a name="certverifyauthenticodelicense-function"></a>CertVerifyAuthenticodeLicense 함수
 Authenticode XrML 라이선스의 유효성을 확인합니다.  
@@ -35,7 +35,7 @@ HRESULT CertVerifyAuthenticodeLicense (
  `pLicenseBlob`  
  [in] 확인할 Authenticode XrML 라이선스입니다.  
   
- 참조는 [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) 구조입니다.  
+ 참조 된 [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) 구조입니다.  
   
  `dwFlags`  
  [in] 선택적 항목으로, 다음 값의 조합입니다.  
@@ -53,12 +53,12 @@ HRESULT CertVerifyAuthenticodeLicense (
 -   AXL_TRUST_MICROSOFT_ROOT_ONLY  
   
  `pSignerInfo`  
- [out] 서명자의 정보를 받는 데 사용되는 매개 변수입니다. 라이선스가 서명되지 않은 경우에는 `dwError` 가 TRUST_E_NOSIGNATURE로 설정됩니다. 사용 하 여 리소스를 해제 해야 하는 호출자의는 [CertFreeAuthenticodeSignerInfo](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodesignerinfo-function.md) 함수 후 사용 합니다.  
+ [out] 서명자의 정보를 받는 데 사용되는 매개 변수입니다. 라이선스가 서명되지 않은 경우에는 `dwError` 가 TRUST_E_NOSIGNATURE로 설정됩니다. 호출자를 사용 하 여 리소스를 해제 하는 것은 [CertFreeAuthenticodeSignerInfo](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodesignerinfo-function.md) 사용 후 함수입니다.  
   
  참조 [AXL_AUTHENTICODE_SIGNER_INFO 구조](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-signer-info-structure.md)합니다.  
   
  `pTimestamperInfo`  
- [out] 타임스탬퍼 정보(있는 경우)를 받으려는 경우 설정합니다. 라이선스에 타임스탬프가 적용되지 않은 경우에는 `dwError` 가 TRUST_E_NOSIGNATURE로 설정됩니다. 사용 하 여 리소스를 해제 해야 하는 호출자의는 [CertFreeAuthenticodeTimestamperInfo](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodetimestamperinfo-function.md) 함수 후 사용 합니다.  
+ [out] 타임스탬퍼 정보(있는 경우)를 받으려는 경우 설정합니다. 라이선스에 타임스탬프가 적용되지 않은 경우에는 `dwError` 가 TRUST_E_NOSIGNATURE로 설정됩니다. 호출자를 사용 하 여 리소스를 해제 하는 것은 [CertFreeAuthenticodeTimestamperInfo](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodetimestamperinfo-function.md) 사용 후 함수입니다.  
   
  참조 [AXL_AUTHENTICODE_TIMESTAMPER_INFO 구조](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md)합니다.  
   

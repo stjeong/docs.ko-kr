@@ -11,40 +11,40 @@ helpviewer_keywords:
 - MenuStrip control [Windows Forms], arranging items
 - ToolStripMenuItems [Windows Forms], cutting and pasting
 ms.assetid: cab9e03e-4edd-4c25-b3e3-bd1edc602bd9
-ms.openlocfilehash: 5cfaf87a59d27678cfb786633ed4c9a9f66bac76
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 69ef2bbaa05155532887897a0aef79a778594169
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33534910"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43384902"
 ---
 # <a name="how-to-move-toolstripmenuitems"></a>방법: ToolStripMenuItems 이동
-디자인 타임에 이동할 수 있습니다 최상위 메뉴 전체와 해당 메뉴 항목을 다른 위치로 <xref:System.Windows.Forms.MenuStrip>합니다. 최상위 메뉴 간에 개별 메뉴 항목을 이동 하거나 메뉴 내에서 메뉴 항목의 위치를 변경할 수도 있습니다.  
+디자인 타임으로 이동할 수 있습니다 최상위 메뉴 전체와 해당 메뉴 항목을 다른 위치로 <xref:System.Windows.Forms.MenuStrip>합니다. 최상위 메뉴 간에 개별 메뉴 항목을 이동 하거나 메뉴에서 메뉴 항목의 위치를 변경할 수도 있습니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
-### <a name="to-move-a-top-level-menu-and-its-menu-items-to-another-top-level-location"></a>최상위 메뉴와 해당 메뉴 항목을 다른 최상위 위치로 이동 하려면  
+### <a name="to-move-a-top-level-menu-and-its-menu-items-to-another-top-level-location"></a>최상위 메뉴와 메뉴 항목을 다른 최상위 위치로 이동 하려면  
   
-1.  클릭 하 고 이동 하려는 메뉴에서 마우스 왼쪽된 단추를 누른 채 합니다.  
+1.  클릭 하 고 이동 하려는 메뉴에서 마우스 왼쪽된 단추를 길게 누른 키를 누릅니다.  
   
-2.  원하는 새 위치 앞에 있는 최상위 메뉴에 삽입 포인터를 끌어서 마우스 왼쪽된 단추를 놓습니다.  
+2.  원하는 새 위치 앞에 있는 최상위 메뉴에 삽입 포인터를 끌어서 왼쪽된 마우스 단추를 놓습니다.  
   
-     선택한 메뉴 삽입 지점의 오른쪽으로 이동 합니다.  
+     선택한 메뉴 삽입 지점의 오른쪽으로 이동합니다.  
   
-### <a name="to-move-a-top-level-menu-and-its-menu-items-to-a-drop-down-location"></a>드롭다운 위치에 최상위 메뉴와 해당 메뉴 항목을 이동 하려면  
+### <a name="to-move-a-top-level-menu-and-its-menu-items-to-a-drop-down-location"></a>최상위 메뉴와 메뉴 항목을 드롭다운 위치에 이동 하려면  
   
-1.  이동 하 고 CTRL + x 또는 메뉴를 마우스 오른쪽 단추로 클릭 하 고 선택 하려는 메뉴를 마우스 왼쪽 단추로 클릭 **잘라내기** 바로 가기 메뉴에서.  
+1.  이동 및 CTRL + x를 또는 메뉴를 마우스 오른쪽 단추로 클릭 하 고 선택 하려는 메뉴를 마우스 왼쪽 단추로 클릭 **잘라내기** 바로 가기 메뉴에서.  
   
-2.  대상 최상위 메뉴에서 원하는 새 위치 위에 있는 메뉴 항목을 마우스 왼쪽 단추로 클릭 하 고 CTRL + V를 또는 원하는 새 위치 위에 있는 메뉴 항목을 마우스 오른쪽 단추로 클릭 하 고 선택 **붙여넣기** 바로 가기 메뉴에서.  
+2.  대상 최상위 메뉴에서 원하는 새 위치 위에 있는 메뉴 항목을 마우스 왼쪽 단추로 클릭 하 고 CTRL + v를 또는 원하는 새 위치 위에 있는 메뉴 항목을 마우스 오른쪽 단추로 클릭 하 고 선택 **붙여넣기** 바로 가기 메뉴에서.  
   
      잘라낸 메뉴는 선택한 메뉴 항목 뒤에 삽입 됩니다.  
   
-### <a name="to-move-a-menu-item-within-a-menu-using-the-items-collection-editor"></a>항목 컬렉션 편집기를 사용 하 여 메뉴 내에서 메뉴 항목을 이동 하려면  
+### <a name="to-move-a-menu-item-within-a-menu-using-the-items-collection-editor"></a>항목 컬렉션 편집기를 사용 하 여 메뉴에서 메뉴 항목을 이동 하려면  
   
 1.  이동 하려는 메뉴 항목을 포함 하는 메뉴를 마우스 오른쪽 단추로 클릭 합니다.  
   
-2.  바로 가기 메뉴에서 선택 **편집 DropDownItems**합니다.  
+2.  바로 가기 메뉴에서 선택 **DropDownItems 편집**합니다.  
   
 3.  에 **항목 컬렉션 편집기**를 이동 하려는 메뉴 항목을 마우스 왼쪽 단추로 클릭 합니다.  
   
@@ -52,23 +52,23 @@ ms.locfileid: "33534910"
   
 5.  **확인**을 클릭합니다.  
   
-### <a name="to-move-a-menu-item-within-a-menu-using-the-keyboard"></a>키보드를 사용 하 여 메뉴 내에서 메뉴 항목을 이동 하려면  
+### <a name="to-move-a-menu-item-within-a-menu-using-the-keyboard"></a>키보드를 사용 하 여 메뉴에서 메뉴 항목을 이동 하려면  
   
-1.  키를 누른 ALT 키를 합니다.  
+1.  누른 ALT 키를 보유 합니다.  
   
-2.  이동 하려는 메뉴 항목에 마우스 왼쪽된 단추를 클릭 하 여.  
+2.  클릭 하 고 마우스 왼쪽된 단추를 이동 하려는 메뉴 항목에 저장 합니다.  
   
-3.  메뉴 항목을 새 위치로 끌어서 마우스 왼쪽된 단추를 놓습니다.  
+3.  메뉴 항목을 새 위치로 끌어서 왼쪽된 마우스 단추를 놓습니다.  
   
 ### <a name="to-move-a-menu-item-to-another-menu"></a>다른 메뉴에 메뉴 항목을 이동 하려면  
   
-1.  메뉴 항목을 이동 하 고 CTRL + x 또는 메뉴 항목을 마우스 오른쪽 단추로 클릭 하 고 선택 하려면 마우스 왼쪽 단추로 클릭 **잘라내기** 바로 가기 메뉴에서.  
+1.  이동 하 고 CTRL + x를 또는 메뉴 항목을 마우스 오른쪽 단추로 클릭 하 고 선택 하려는 메뉴 항목을 마우스 왼쪽 단추로 클릭 **잘라내기** 바로 가기 메뉴에서.  
   
-2.  잘라낸 메뉴 항목이 포함 된 메뉴를 클릭 합니다.  
+2.  잘라낸 메뉴 항목을 포함 하는 메뉴를 마우스 왼쪽 단추로 클릭 합니다.  
   
 3.  원하는 새 위치 앞에 있는 메뉴 항목을 마우스 왼쪽 단추로 클릭 하 고 CTRL + V를 누르거나 선택한 원하는 새 위치 앞에 있는 메뉴 항목을 마우스 오른쪽 단추로 클릭 **붙여넣기** 바로 가기 메뉴에서.  
   
-     잘라낸 메뉴 항목이 선택된 된 메뉴 항목 뒤에 삽입 됩니다.  
+     잘라낸 메뉴 항목이 선택한 메뉴 항목 뒤에 삽입 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Forms.MenuStrip>  
