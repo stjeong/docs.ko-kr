@@ -1,5 +1,5 @@
 ---
-title: '#다음과 같은 경우... Then... #Else 지시문'
+title: '#다음과 같은 경우... Then... #Else 지시문 (Visual Basic)'
 ms.date: 04/11/2018
 f1_keywords:
 - vb.#EndIf
@@ -20,17 +20,17 @@ helpviewer_keywords:
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 69ce56d770de5f004f204b1764fd51d948ba92c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 05aac9109e49897d1c4dbbad60d807eb3e47798d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591083"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43423205"
 ---
-# <a name="ifthenelse-directives"></a><span data-ttu-id="00aae-102">#If...Then...#Else 지시문</span><span class="sxs-lookup"><span data-stu-id="00aae-102">#If...Then...#Else Directives</span></span>
-<span data-ttu-id="00aae-103">Visual Basic 코드의 선택 된 블록을 조건부로 컴파일합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-103">Conditionally compiles selected blocks of Visual Basic code.</span></span>  
+# <a name="ifthenelse-directives"></a><span data-ttu-id="f5e33-102">#If...Then...#Else 지시문</span><span class="sxs-lookup"><span data-stu-id="f5e33-102">#If...Then...#Else Directives</span></span>
+<span data-ttu-id="f5e33-103">선택한 Visual Basic 코드 블록을을 조건부로 컴파일합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-103">Conditionally compiles selected blocks of Visual Basic code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="00aae-104">구문</span><span class="sxs-lookup"><span data-stu-id="00aae-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="f5e33-104">구문</span><span class="sxs-lookup"><span data-stu-id="f5e33-104">Syntax</span></span>  
   
 ```  
 #If expression Then  
@@ -45,27 +45,27 @@ ms.locfileid: "33591083"
 #End If  
 ```  
   
-## <a name="parts"></a><span data-ttu-id="00aae-105">요소</span><span class="sxs-lookup"><span data-stu-id="00aae-105">Parts</span></span>  
+## <a name="parts"></a><span data-ttu-id="f5e33-105">요소</span><span class="sxs-lookup"><span data-stu-id="f5e33-105">Parts</span></span>  
  `expression`  
- <span data-ttu-id="00aae-106">에 필요한 `#If` 및 `#ElseIf` 문, 선택적 다른 곳입니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-106">Required for `#If` and `#ElseIf` statements, optional elsewhere.</span></span> <span data-ttu-id="00aae-107">조건부 컴파일러 상수, 리터럴 및 연산자 계산 되는 하나 이상의 구성 하는 모든 식, `True` 또는 `False`합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-107">Any expression, consisting exclusively of one or more conditional compiler constants, literals, and operators, that evaluates to `True` or `False`.</span></span>  
+ <span data-ttu-id="f5e33-106">에 필요한 `#If` 및 `#ElseIf` 선택적 문을 다른 곳입니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-106">Required for `#If` and `#ElseIf` statements, optional elsewhere.</span></span> <span data-ttu-id="f5e33-107">만으로 구성 된 하나 이상의 조건부 컴파일러 상수, 리터럴 및 연산자 계산 되는 식일 `True` 또는 `False`합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-107">Any expression, consisting exclusively of one or more conditional compiler constants, literals, and operators, that evaluates to `True` or `False`.</span></span>  
   
  `statements`  
- <span data-ttu-id="00aae-108">에 필요한 `#If` 문 블록에서는 선택적 다른 곳입니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-108">Required for `#If` statement block, optional elsewhere.</span></span> <span data-ttu-id="00aae-109">Visual Basic 프로그램 줄 또는 컴파일러 지시문과 관련 된 식은로 평가 되 면 컴파일되는 `True`합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-109">Visual Basic program lines or compiler directives that are compiled if the associated expression evaluates to `True`.</span></span>  
+ <span data-ttu-id="f5e33-108">에 필요한 `#If` 문 블록에서는 선택적 다른 곳입니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-108">Required for `#If` statement block, optional elsewhere.</span></span> <span data-ttu-id="f5e33-109">Visual Basic 프로그램 선 또는 연결 된 식이 계산 되는 경우 컴파일되는 컴파일러 지시문 `True`합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-109">Visual Basic program lines or compiler directives that are compiled if the associated expression evaluates to `True`.</span></span>  
   
  `#End If`  
- <span data-ttu-id="00aae-110">종료는 `#If` 문 블록입니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-110">Terminates the `#If` statement block.</span></span>  
+ <span data-ttu-id="f5e33-110">종료는 `#If` 문 블록입니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-110">Terminates the `#If` statement block.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="00aae-111">설명</span><span class="sxs-lookup"><span data-stu-id="00aae-111">Remarks</span></span>  
- <span data-ttu-id="00aae-112">동작은 화면에는 `#If...Then...#Else` 지시문 동일 하 게의 표시는 `If...Then...Else` 문.</span><span class="sxs-lookup"><span data-stu-id="00aae-112">On the surface, the behavior of the `#If...Then...#Else` directives appears the same as that of the `If...Then...Else` statements.</span></span> <span data-ttu-id="00aae-113">그러나는 `#If...Then...#Else` 지시문은 컴파일러에 의해 컴파일되는 내용을 반면 평가 `If...Then...Else` 문 실행 시 조건을 평가 합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-113">However, the `#If...Then...#Else` directives evaluate what is compiled by the compiler, whereas the `If...Then...Else` statements evaluate conditions at run time.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="f5e33-111">설명</span><span class="sxs-lookup"><span data-stu-id="f5e33-111">Remarks</span></span>  
+ <span data-ttu-id="f5e33-112">동작 화면에서를 `#If...Then...#Else` 지시문 동일 하 게와 표시는 `If...Then...Else` 문.</span><span class="sxs-lookup"><span data-stu-id="f5e33-112">On the surface, the behavior of the `#If...Then...#Else` directives appears the same as that of the `If...Then...Else` statements.</span></span> <span data-ttu-id="f5e33-113">그러나 합니다 `#If...Then...#Else` 지시문은 컴파일러에 의해 컴파일되는 내용을 반면 평가 `If...Then...Else` 문은 런타임에 조건을 평가 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-113">However, the `#If...Then...#Else` directives evaluate what is compiled by the compiler, whereas the `If...Then...Else` statements evaluate conditions at run time.</span></span>  
   
- <span data-ttu-id="00aae-114">조건부 컴파일 여러 플랫폼에 대해 동일한 프로그램을 컴파일하는 데 주로 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-114">Conditional compilation is typically used to compile the same program for different platforms.</span></span> <span data-ttu-id="00aae-115">방지 하기 위해 사용 되는 실행 파일에 표시 되는 코드를 디버깅 합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-115">It is also used to prevent debugging code from appearing in an executable file.</span></span> <span data-ttu-id="00aae-116">조건부 컴파일 타임에 제외 된 코드에서에서 완전히 생략 최종 실행 파일 때문에 크기 또는 성능에 영향을 주지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-116">Code excluded during conditional compilation is completely omitted from the final executable file, so it has no effect on size or performance.</span></span>  
+ <span data-ttu-id="f5e33-114">조건부 컴파일은 일반적으로 다양 한 플랫폼에 대 한 동일한 프로그램을 컴파일하는 데 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-114">Conditional compilation is typically used to compile the same program for different platforms.</span></span> <span data-ttu-id="f5e33-115">방지 하기 위해 사용 되는 실행 파일에 표시 되는 코드를 디버깅 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-115">It is also used to prevent debugging code from appearing in an executable file.</span></span> <span data-ttu-id="f5e33-116">조건부 컴파일 중에 제외 되는 코드 크기 또는 성능에 영향을 주지 것이 아니므로 완전히 최종 실행 파일에서 생략 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-116">Code excluded during conditional compilation is completely omitted from the final executable file, so it has no effect on size or performance.</span></span>  
   
- <span data-ttu-id="00aae-117">모든 평가 결과 상관 없이 모든 식을 사용 하 여 평가 됩니다 `Option Compare Binary`합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-117">Regardless of the outcome of any evaluation, all expressions are evaluated using `Option Compare Binary`.</span></span> <span data-ttu-id="00aae-118">`Option Compare` 문은 식에 영향을 주지 않습니다 `#If` 및 `#ElseIf` 문.</span><span class="sxs-lookup"><span data-stu-id="00aae-118">The `Option Compare` statement does not affect expressions in `#If` and `#ElseIf` statements.</span></span>  
+ <span data-ttu-id="f5e33-117">모든 평가의 결과 관계 없이 모든 식을 사용 하 여 평가 됩니다 `Option Compare Binary`합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-117">Regardless of the outcome of any evaluation, all expressions are evaluated using `Option Compare Binary`.</span></span> <span data-ttu-id="f5e33-118">합니다 `Option Compare` 문 식에 영향을 주지 않습니다 `#If` 및 `#ElseIf` 문입니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-118">The `Option Compare` statement does not affect expressions in `#If` and `#ElseIf` statements.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="00aae-119">한 줄 형식이 없으므로 `#If`, `#Else`, `#ElseIf`, 및 `#End If` 지시문 존재 합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-119">No single-line form of the `#If`, `#Else`, `#ElseIf`, and `#End If` directives exists.</span></span> <span data-ttu-id="00aae-120">다른 코드 지시문와 같은 줄에 나타날 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-120">No other code can appear on the same line as any of the directives.</span></span> 
+>  <span data-ttu-id="f5e33-119">없는 한 줄 형식의 합니다 `#If`, `#Else`, `#ElseIf`, 및 `#End If` 지시문 존재 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-119">No single-line form of the `#If`, `#Else`, `#ElseIf`, and `#End If` directives exists.</span></span> <span data-ttu-id="f5e33-120">다른 코드가 없어야 지시문와 동일한 줄에 나타날 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-120">No other code can appear on the same line as any of the directives.</span></span> 
 
-<span data-ttu-id="00aae-121">조건부 컴파일 블록 내에서 문을 완료 논리 문 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-121">The statements within a conditional compilation block must be complete logical statements.</span></span> <span data-ttu-id="00aae-122">예를 들어 함수의 특성만 조건에 따라 컴파일할 수 없습니다 하지만 조건에 따라 특성 함께 함수를 선언할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-122">For example, you cannot conditionally compile only the attributes of a function, but you can conditionally declare the function along with its attributes:</span></span>
+<span data-ttu-id="f5e33-121">조건부 컴파일 블록 내에서 문을 논리 문을 완료 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-121">The statements within a conditional compilation block must be complete logical statements.</span></span> <span data-ttu-id="f5e33-122">예를 들어 함수의 특성만 조건부로 컴파일할 수 없습니다 있지만 특성과 함께 함수를 조건적으로 선언할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-122">For example, you cannot conditionally compile only the attributes of a function, but you can conditionally declare the function along with its attributes:</span></span>
 
 ```vb
    #If DEBUG Then
@@ -77,15 +77,15 @@ ms.locfileid: "33591083"
    #End If
 ```
 
-## <a name="example"></a><span data-ttu-id="00aae-123">예제</span><span class="sxs-lookup"><span data-stu-id="00aae-123">Example</span></span>
- <span data-ttu-id="00aae-124">사용 하 여이 예제는 `#If...Then...#Else` 구문을 특정 문의 컴파일 여부를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="00aae-124">This example uses the `#If...Then...#Else` construct to determine whether to compile certain statements.</span></span>  
+## <a name="example"></a><span data-ttu-id="f5e33-123">예제</span><span class="sxs-lookup"><span data-stu-id="f5e33-123">Example</span></span>
+ <span data-ttu-id="f5e33-124">이 예제에서는 `#If...Then...#Else` 구문을 특정 문은 컴파일 여부를 결정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5e33-124">This example uses the `#If...Then...#Else` construct to determine whether to compile certain statements.</span></span>  
   
  [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="00aae-125">참고 항목</span><span class="sxs-lookup"><span data-stu-id="00aae-125">See Also</span></span>  
-[<span data-ttu-id="00aae-126">#Const 지시문</span><span class="sxs-lookup"><span data-stu-id="00aae-126">#Const Directive</span></span>](../../../visual-basic/language-reference/directives/const-directive.md)  
-[<span data-ttu-id="00aae-127">If...Then...Else 문</span><span class="sxs-lookup"><span data-stu-id="00aae-127">If...Then...Else Statement</span></span>](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
-<span data-ttu-id="00aae-128">[조건부 컴파일](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md) </span><span class="sxs-lookup"><span data-stu-id="00aae-128">[Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md) </span></span>  
+## <a name="see-also"></a><span data-ttu-id="f5e33-125">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f5e33-125">See Also</span></span>  
+[<span data-ttu-id="f5e33-126">#Const 지시문</span><span class="sxs-lookup"><span data-stu-id="f5e33-126">#Const Directive</span></span>](../../../visual-basic/language-reference/directives/const-directive.md)  
+[<span data-ttu-id="f5e33-127">If...Then...Else 문</span><span class="sxs-lookup"><span data-stu-id="f5e33-127">If...Then...Else Statement</span></span>](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
+<span data-ttu-id="f5e33-128">[조건부 컴파일](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md) </span><span class="sxs-lookup"><span data-stu-id="f5e33-128">[Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md) </span></span>  
 <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>   
 
 

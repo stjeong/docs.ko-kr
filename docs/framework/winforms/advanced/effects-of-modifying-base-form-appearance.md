@@ -8,24 +8,24 @@ helpviewer_keywords:
 - base forms
 - inheritance [Windows Forms], forms
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
-ms.openlocfilehash: 7ba4a78395bb93caa1d1d86dc135825ca2a58845
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: adaf9224fd340c6ea4342e2591806a7c877e83ff
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33520554"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43423785"
 ---
-# <a name="effects-of-modifying-a-base-form39s-appearance"></a><span data-ttu-id="93aba-102">기본 양식의 모양 수정 효과</span><span class="sxs-lookup"><span data-stu-id="93aba-102">Effects of Modifying a Base Form&#39;s Appearance</span></span>
-<span data-ttu-id="93aba-103">응용 프로그램을 개발하는 동안 프로젝트(또는 다른 프로젝트)에 있는 다른 양식을 상속하는 기본 양식의 모양을 변경해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-103">During application development, you may often need to change the appearance of the base form from which other forms in the project (or in other projects) are inheriting.</span></span>  
+# <a name="effects-of-modifying-a-base-form39s-appearance"></a><span data-ttu-id="44c74-102">기본 양식의 모양 수정 효과</span><span class="sxs-lookup"><span data-stu-id="44c74-102">Effects of Modifying a Base Form&#39;s Appearance</span></span>
+<span data-ttu-id="44c74-103">응용 프로그램을 개발하는 동안 프로젝트(또는 다른 프로젝트)에 있는 다른 양식을 상속하는 기본 양식의 모양을 변경해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-103">During application development, you may often need to change the appearance of the base form from which other forms in the project (or in other projects) are inheriting.</span></span>  
   
- <span data-ttu-id="93aba-104">디자인 타임에서 기본 양식의 모양 변경(속성 설정 또는 컨트롤의 더하기와 빼기)은 기본 양식을 포함하는 프로젝트를 빌드할 때 상속된 양식에 반영됩니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-104">At design time, changes to the base form's appearance (be it the setting of properties or the addition and subtraction of controls) are reflected on inherited forms when the project containing the base form is built.</span></span> <span data-ttu-id="93aba-105">단순히 기본 양식에 대한 변경 내용을 저장하기에는 충분하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-105">It is not sufficient for you to simply save the changes to the base form.</span></span> <span data-ttu-id="93aba-106">프로젝트를 빌드하려면 **빌드** 메뉴에서 **빌드**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-106">To build a project, choose **Build** from the **Build** menu.</span></span>  
+ <span data-ttu-id="44c74-104">디자인 타임에서 기본 양식의 모양 변경(속성 설정 또는 컨트롤의 더하기와 빼기)은 기본 양식을 포함하는 프로젝트를 빌드할 때 상속된 양식에 반영됩니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-104">At design time, changes to the base form's appearance (be it the setting of properties or the addition and subtraction of controls) are reflected on inherited forms when the project containing the base form is built.</span></span> <span data-ttu-id="44c74-105">단순히 기본 양식에 대한 변경 내용을 저장하기에는 충분하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-105">It is not sufficient for you to simply save the changes to the base form.</span></span> <span data-ttu-id="44c74-106">프로젝트를 빌드하려면 **빌드** 메뉴에서 **빌드**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-106">To build a project, choose **Build** from the **Build** menu.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="93aba-107">표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-107">The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition.</span></span> <span data-ttu-id="93aba-108">설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-108">To change your settings, choose **Import and Export Settings** on the **Tools** menu.</span></span> <span data-ttu-id="93aba-109">자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="93aba-109">For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).</span></span>  
+>  <span data-ttu-id="44c74-107">표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-107">The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition.</span></span> <span data-ttu-id="44c74-108">설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-108">To change your settings, choose **Import and Export Settings** on the **Tools** menu.</span></span> <span data-ttu-id="44c74-109">자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="44c74-109">For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).</span></span>  
   
- <span data-ttu-id="93aba-110">런타임 시 기본 양식에 대한 수정은 이미 인스턴스화된 상속된 양식에 아무 영향도 미치지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="93aba-110">Modifications made to the base form at run time have no affect on inherited forms that are already instantiated.</span></span>  
+ <span data-ttu-id="44c74-110">런타임 시 기본 양식에 대한 수정은 이미 인스턴스화된 상속된 양식에 아무 영향도 미치지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="44c74-110">Modifications made to the base form at run time have no affect on inherited forms that are already instantiated.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="93aba-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="93aba-111">See Also</span></span>  
- [<span data-ttu-id="93aba-112">base</span><span class="sxs-lookup"><span data-stu-id="93aba-112">base</span></span>](~/docs/csharp/language-reference/keywords/base.md)  
- [<span data-ttu-id="93aba-113">방법: Windows Forms 상속</span><span class="sxs-lookup"><span data-stu-id="93aba-113">How to: Inherit Windows Forms</span></span>](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  
- [<span data-ttu-id="93aba-114">Windows Forms 시각적 개체 상속</span><span class="sxs-lookup"><span data-stu-id="93aba-114">Windows Forms Visual Inheritance</span></span>](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
+## <a name="see-also"></a><span data-ttu-id="44c74-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="44c74-111">See Also</span></span>  
+ [<span data-ttu-id="44c74-112">base</span><span class="sxs-lookup"><span data-stu-id="44c74-112">base</span></span>](~/docs/csharp/language-reference/keywords/base.md)  
+ [<span data-ttu-id="44c74-113">방법: Windows Forms 상속</span><span class="sxs-lookup"><span data-stu-id="44c74-113">How to: Inherit Windows Forms</span></span>](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  
+ [<span data-ttu-id="44c74-114">Windows Forms 시각적 개체 상속</span><span class="sxs-lookup"><span data-stu-id="44c74-114">Windows Forms Visual Inheritance</span></span>](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)

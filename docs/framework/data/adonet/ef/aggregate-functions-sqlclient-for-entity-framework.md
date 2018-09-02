@@ -2,49 +2,230 @@
 title: 집계 함수(Entity Framework용 SqlClient)
 ms.date: 03/30/2017
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b
-ms.openlocfilehash: 558e9f8480dd69e2277603e9bb1013acfbc29467
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 8ed9a58da9914724fe312876d6594cb526f2e0e9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32763399"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43452901"
 ---
-# <a name="aggregate-functions-sqlclient-for-entity-framework"></a><span data-ttu-id="7fccc-102">집계 함수(Entity Framework용 SqlClient)</span><span class="sxs-lookup"><span data-stu-id="7fccc-102">Aggregate Functions (SqlClient for Entity Framework)</span></span>
-<span data-ttu-id="7fccc-103">.NET Framework Data Provider for SQL Server(SqlClient)에서는 집계 함수를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-103">The .NET Framework Data Provider for SQL Server (SqlClient) provides aggregate functions.</span></span> <span data-ttu-id="7fccc-104">집계 함수는 입력 값 집합에 대해 계산을 수행하여 하나의 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-104">Aggregate functions perform calculations on a set of input values and return a value.</span></span> <span data-ttu-id="7fccc-105">이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-105">These functions are in the SqlServer namespace, which is available when you use SqlClient.</span></span> <span data-ttu-id="7fccc-106">공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-106">A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.</span></span>  
+# <a name="aggregate-functions-sqlclient-for-entity-framework"></a><span data-ttu-id="8ca48-102">집계 함수(Entity Framework용 SqlClient)</span><span class="sxs-lookup"><span data-stu-id="8ca48-102">Aggregate Functions (SqlClient for Entity Framework)</span></span>
+<span data-ttu-id="8ca48-103">.NET Framework Data Provider for SQL Server(SqlClient)에서는 집계 함수를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-103">The .NET Framework Data Provider for SQL Server (SqlClient) provides aggregate functions.</span></span> <span data-ttu-id="8ca48-104">집계 함수는 입력 값 집합에 대해 계산을 수행하여 하나의 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-104">Aggregate functions perform calculations on a set of input values and return a value.</span></span> <span data-ttu-id="8ca48-105">이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-105">These functions are in the SqlServer namespace, which is available when you use SqlClient.</span></span> <span data-ttu-id="8ca48-106">공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-106">A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.</span></span>  
   
- <span data-ttu-id="7fccc-107">다음 표에서는 SqlClient 집계 함수를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-107">The following table shows the SqlClient aggregate functions.</span></span>  
+ <span data-ttu-id="8ca48-107">SqlClient 집계 함수는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-107">The following are the SqlClient aggregate functions.</span></span>  
+
+## <a name="avgexpression"></a><span data-ttu-id="8ca48-108">AVG(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-108">AVG(expression)</span></span>
+
+<span data-ttu-id="8ca48-109">컬렉션에 포함된 값의 평균을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-109">Returns the average of the values in a collection.</span></span> <span data-ttu-id="8ca48-110">Null 값은 무시됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-110">Null values are ignored.</span></span>
+
+<span data-ttu-id="8ca48-111">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-111">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-112">`Int32`, `Int64`, `Double` 및 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-112">An `Int32`, `Int64`, `Double`, and `Decimal`.</span></span>
+
+<span data-ttu-id="8ca48-113">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-113">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-114">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-114">The type of `expression`.</span></span>
+
+<span data-ttu-id="8ca48-115">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-115">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_AVG](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_avg)]
+ [!code-sql[DP EntityServices Concepts#SQLSERVER_AVG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_avg)]
+
+## <a name="checksumaggcollection"></a><span data-ttu-id="8ca48-116">CHECKSUM_AGG(collection)</span><span class="sxs-lookup"><span data-stu-id="8ca48-116">CHECKSUM_AGG(collection)</span></span>
+ 
+ <span data-ttu-id="8ca48-117">컬렉션에 있는 값의 체크섬을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-117">Returns the checksum of the values in a collection.</span></span> <span data-ttu-id="8ca48-118">Null 값은 무시됩니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-118">Null values are ignored.</span></span>
+ 
+ <span data-ttu-id="8ca48-119">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-119">**Arguments**</span></span>
+ 
+ <span data-ttu-id="8ca48-120">컬렉션 (`Int32`).</span><span class="sxs-lookup"><span data-stu-id="8ca48-120">A Collection(`Int32`).</span></span>
+ 
+ <span data-ttu-id="8ca48-121">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-121">**Return Value**</span></span>
+ 
+ <span data-ttu-id="8ca48-122">`Int32`입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-122">An `Int32`.</span></span>
+ 
+ <span data-ttu-id="8ca48-123">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-123">**Example**</span></span>
+ 
+ [!code-csharp[DP EntityServices Concepts#SQLSERVER_CHECKSUM](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_checksum)]
+ [!code-sql[DP EntityServices Concepts#SQLSERVER_CHECKSUM](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_checksum)]
+   
+## <a name="countexpression"></a><span data-ttu-id="8ca48-124">COUNT(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-124">COUNT(expression)</span></span>
+
+<span data-ttu-id="8ca48-125">컬렉션의 항목 수를 `Int32`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-125">Returns the number of items in a collection as an `Int32`.</span></span>
+
+<span data-ttu-id="8ca48-126">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-126">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-127">컬렉션\<T >, 여기서 T는 다음 형식 중 하나:</span><span class="sxs-lookup"><span data-stu-id="8ca48-127">A Collection\<T>, where T is one of the following types:</span></span>
+
+|   |   |   |   |
+|---|---|---|---|
+|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
+|`Time`|`String`|`Binary`|<span data-ttu-id="8ca48-128">`Guid` (SQL Server 2000에서는 반환 되지 않음)</span><span class="sxs-lookup"><span data-stu-id="8ca48-128">`Guid` (not returned in SQL Server 2000)</span></span>|
+
+<span data-ttu-id="8ca48-129">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-129">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-130">`Int32`입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-130">An `Int32`.</span></span>
+
+<span data-ttu-id="8ca48-131">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-131">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_count)]
+<span data-ttu-id="8ca48-132">[! 코드 sql[DP EntityServices 개념 &#40; SQLSERVER_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)</span><span class="sxs-lookup"><span data-stu-id="8ca48-132">[!code-sql[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)</span></span>
+ 
+## <a name="countbigexpression"></a><span data-ttu-id="8ca48-133">COUNT_BIG(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-133">COUNT_BIG(expression)</span></span>
+ 
+ <span data-ttu-id="8ca48-134">컬렉션의 항목 수를 `bigint`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-134">Returns the number of items in a collection as a `bigint`.</span></span>
+ 
+ <span data-ttu-id="8ca48-135">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-135">**Arguments**</span></span>
+ 
+ <span data-ttu-id="8ca48-136">여기서 T는 다음 형식 중 하나는 Collection(T):</span><span class="sxs-lookup"><span data-stu-id="8ca48-136">A Collection(T), where T is one of the following types:</span></span>
+ 
+ |   |   |   |   |
+|---|---|---|---|
+|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
+|`Time`|`String`|`Binary`|<span data-ttu-id="8ca48-137">`Guid` (SQL Server 2000에서는 반환 되지 않음)</span><span class="sxs-lookup"><span data-stu-id="8ca48-137">`Guid` (not returned in SQL Server 2000)</span></span>|
+
+<span data-ttu-id="8ca48-138">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-138">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-139">`Int64`입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-139">An `Int64`.</span></span>
+
+<span data-ttu-id="8ca48-140">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-140">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNTBIG](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_countbig)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_COUNTBIG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_countbig)]
+
+## <a name="maxexpression"></a><span data-ttu-id="8ca48-141">MAX(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-141">MAX(expression)</span></span>
+
+<span data-ttu-id="8ca48-142">컬렉션의 최대값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-142">Returns the maximum value the collection.</span></span>
+
+<span data-ttu-id="8ca48-143">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-143">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-144">여기서 T는 다음 형식 중 하나는 Collection(T):</span><span class="sxs-lookup"><span data-stu-id="8ca48-144">A Collection(T), where T is one of the following types:</span></span> 
+
+|   |   |   |   |
+|---|---|---|---|
+|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
+|`Time`|`String`|`Binary`||
+
+<span data-ttu-id="8ca48-145">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-145">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-146">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-146">The type of `expression`.</span></span>
+
+<span data-ttu-id="8ca48-147">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-147">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_MAX](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_max)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_MAX](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_max)]
+
+## <a name="minexpression"></a><span data-ttu-id="8ca48-148">MIN(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-148">MIN(expression)</span></span>
+
+<span data-ttu-id="8ca48-149">컬렉션의 최소값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-149">Returns the minimum value in a collection.</span></span>
+
+<span data-ttu-id="8ca48-150">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-150">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-151">여기서 T는 다음 형식 중 하나는 Collection(T):</span><span class="sxs-lookup"><span data-stu-id="8ca48-151">A Collection(T), where T is one of the following types:</span></span> 
+
+|   |   |   |   |
+|---|---|---|---|
+|`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
+|`Time`|`String`|`Binary`||
+
+<span data-ttu-id="8ca48-152">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-152">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-153">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-153">The type of `expression`.</span></span>
+
+<span data-ttu-id="8ca48-154">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-154">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_MIN](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_min)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_MIN](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_min)]
+
+## <a name="stdevexpression"></a><span data-ttu-id="8ca48-155">STDEV(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-155">STDEV(expression)</span></span>
+
+<span data-ttu-id="8ca48-156">지정한 식의 모든 값에 대한 통계적 표준 편차를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-156">Returns the statistical standard deviation of all values in the specified expression.</span></span>
+
+<span data-ttu-id="8ca48-157">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-157">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-158">컬렉션 (`Double`).</span><span class="sxs-lookup"><span data-stu-id="8ca48-158">A Collection(`Double`).</span></span>
+
+<span data-ttu-id="8ca48-159">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-159">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-160">`Double`</span><span class="sxs-lookup"><span data-stu-id="8ca48-160">A `Double`.</span></span>
+
+<span data-ttu-id="8ca48-161">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-161">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_STDEV](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_stdev)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_STDEV](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_stdev)]
+
+## <a name="stdevpexpression"></a><span data-ttu-id="8ca48-162">STDEVP(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-162">STDEVP(expression)</span></span>
+
+<span data-ttu-id="8ca48-163">지정한 식에 있는 모든 값의 모집단에 대한 통계적 표준 편차를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-163">Returns the statistical standard deviation for the population for all values in the specified expression.</span></span>
+
+<span data-ttu-id="8ca48-164">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-164">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-165">컬렉션 (`Double`).</span><span class="sxs-lookup"><span data-stu-id="8ca48-165">A Collection(`Double`).</span></span>
+
+<span data-ttu-id="8ca48-166">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-166">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-167">`Double`</span><span class="sxs-lookup"><span data-stu-id="8ca48-167">A `Double`.</span></span>
+
+<span data-ttu-id="8ca48-168">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-168">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_STDEVP](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_stdevp)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_STDEVP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_stdevp)]
+
+## <a name="sumexpression"></a><span data-ttu-id="8ca48-169">SUM(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-169">SUM(expression)</span></span>
+
+<span data-ttu-id="8ca48-170">컬렉션에 있는 모든 값의 합계를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-170">Returns the sum of all the values in the collection.</span></span>
+
+<span data-ttu-id="8ca48-171">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-171">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-172">여기서 T는 다음 형식 중 하나는 Collection(T): `Int32`, `Int64`를 `Double`, `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-172">A Collection(T) where T is one of the following types: `Int32`, `Int64`, `Double`, `Decimal`.</span></span>
+
+<span data-ttu-id="8ca48-173">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-173">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-174">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-174">The type of `expression`.</span></span>
+
+<span data-ttu-id="8ca48-175">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-175">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_SUM](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_sum)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_SUM](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_sum)]
+
+## <a name="varexpression"></a><span data-ttu-id="8ca48-176">VAR(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-176">VAR(expression)</span></span>
+
+<span data-ttu-id="8ca48-177">지정한 식에 있는 모든 값의 통계적 분산을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-177">Returns the statistical variance of all values in the specified expression.</span></span>
+
+<span data-ttu-id="8ca48-178">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-178">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-179">컬렉션 (`Double`).</span><span class="sxs-lookup"><span data-stu-id="8ca48-179">A Collection(`Double`).</span></span>
+
+<span data-ttu-id="8ca48-180">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-180">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-181">`Double`</span><span class="sxs-lookup"><span data-stu-id="8ca48-181">A `Double`.</span></span>
+
+<span data-ttu-id="8ca48-182">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-182">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_VAR](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_var)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_VAR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_var)]
+
+## <a name="varpexpression"></a><span data-ttu-id="8ca48-183">VARP(expression)</span><span class="sxs-lookup"><span data-stu-id="8ca48-183">VARP(expression)</span></span>
+
+<span data-ttu-id="8ca48-184">지정한 식에 있는 모든 값의 모집단에 대한 통계적 분산을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="8ca48-184">Returns the statistical variance for the population for all values in the specified expression.</span></span>
+
+<span data-ttu-id="8ca48-185">**인수**</span><span class="sxs-lookup"><span data-stu-id="8ca48-185">**Arguments**</span></span>
+
+<span data-ttu-id="8ca48-186">컬렉션 (`Double`).</span><span class="sxs-lookup"><span data-stu-id="8ca48-186">A Collection(`Double`).</span></span>
+
+<span data-ttu-id="8ca48-187">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="8ca48-187">**Return Value**</span></span>
+
+<span data-ttu-id="8ca48-188">`Double`</span><span class="sxs-lookup"><span data-stu-id="8ca48-188">A `Double`.</span></span>
+
+<span data-ttu-id="8ca48-189">**예제**</span><span class="sxs-lookup"><span data-stu-id="8ca48-189">**Example**</span></span>
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_VARP](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_varp)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_VARP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_varp)] 
   
-|<span data-ttu-id="7fccc-108">함수</span><span class="sxs-lookup"><span data-stu-id="7fccc-108">Function</span></span>|<span data-ttu-id="7fccc-109">설명</span><span class="sxs-lookup"><span data-stu-id="7fccc-109">Description</span></span>|  
-|--------------|-----------------|  
-|<span data-ttu-id="7fccc-110">`AVG(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-110">`AVG(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-111">컬렉션에 포함된 값의 평균을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-111">Returns the average of the values in a collection.</span></span><br /><br /> <span data-ttu-id="7fccc-112">Null 값은 무시됩니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-112">Null values are ignored.</span></span><br /><br /> <span data-ttu-id="7fccc-113">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-113">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-114">`Int32`, `Int64`, `Double` 및 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-114">An `Int32`, `Int64`, `Double`, and `Decimal`.</span></span><br /><br /> <span data-ttu-id="7fccc-115">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-115">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-116">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-116">The type of `expression`.</span></span><br /><br /> <span data-ttu-id="7fccc-117">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-117">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_AVG](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_avg)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_AVG](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_avg)]|  
-|<span data-ttu-id="7fccc-118">`CHECKSUM_AGG(` `collection` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-118">`CHECKSUM_AGG(` `collection` `)`</span></span>|<span data-ttu-id="7fccc-119">컬렉션에 있는 값의 체크섬을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-119">Returns the checksum of the values in a collection.</span></span><br /><br /> <span data-ttu-id="7fccc-120">Null 값은 무시됩니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-120">Null values are ignored.</span></span><br /><br /> <span data-ttu-id="7fccc-121">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-121">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-122">컬렉션(`Int32`)입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-122">A Collection (`Int32`).</span></span><br /><br /> <span data-ttu-id="7fccc-123">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-123">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-124">`Int32`입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-124">An `Int32`.</span></span><br /><br /> <span data-ttu-id="7fccc-125">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-125">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_CHECKSUM](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_checksum)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_CHECKSUM](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_checksum)]|  
-|<span data-ttu-id="7fccc-126">`COUNT(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-126">`COUNT(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-127">컬렉션의 항목 수를 `Int32`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-127">Returns the number of items in a collection as an `Int32`.</span></span><br /><br /> <span data-ttu-id="7fccc-128">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-128">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-129">Collection(T)이며 여기서 T는</span><span class="sxs-lookup"><span data-stu-id="7fccc-129">A Collection (T) where T is one of the following types:</span></span><br /><br /> <span data-ttu-id="7fccc-130">`Guid`(SQL Server 2000에서는 반환되지 않음),</span><span class="sxs-lookup"><span data-stu-id="7fccc-130">`Guid` (not returned in SQL Server 2000),</span></span><br /><br /> <span data-ttu-id="7fccc-131">`Boolean`, `Double`, `DateTime`, `DateTimeOffset`, `Time`, `String` 또는 `Binary`</span><span class="sxs-lookup"><span data-stu-id="7fccc-131">`Boolean`, `Double`, `DateTime`, `DateTimeOffset`, `Time`, `String`, or `Binary`.</span></span><br /><br /> <span data-ttu-id="7fccc-132">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-132">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-133">`Int32`입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-133">An `Int32`.</span></span><br /><br /> <span data-ttu-id="7fccc-134">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-134">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNT](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_count)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_COUNT](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)]|  
-|<span data-ttu-id="7fccc-135">`COUNT_BIG(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-135">`COUNT_BIG(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-136">컬렉션의 항목 수를 `bigint`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-136">Returns the number of items in a collection as a `bigint`.</span></span><br /><br /> <span data-ttu-id="7fccc-137">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-137">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-138">Collection(T)이며 여기서 T는</span><span class="sxs-lookup"><span data-stu-id="7fccc-138">A Collection (T) where T is one of the following types:</span></span><br /><br /> <span data-ttu-id="7fccc-139">`Guid`(SQL Server 2000에서는 반환되지 않음), `Boolean`, `Double`, `DateTime`, `DateTimeOffset`, `Time`, `String` 또는 `Binary`</span><span class="sxs-lookup"><span data-stu-id="7fccc-139">`Guid` (not returned in SQL Server 2000), `Boolean`, `Double`, `DateTime`, `DateTimeOffset`, `Time`, `String`, or `Binary`.</span></span><br /><br /> <span data-ttu-id="7fccc-140">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-140">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-141">`Int64`입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-141">An `Int64`.</span></span><br /><br /> <span data-ttu-id="7fccc-142">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-142">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_COUNTBIG](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_countbig)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_COUNTBIG](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_countbig)]|  
-|<span data-ttu-id="7fccc-143">`MAX(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-143">`MAX(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-144">컬렉션의 최대값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-144">Returns the maximum value the collection.</span></span><br /><br /> <span data-ttu-id="7fccc-145">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-145">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-146">컬렉션(T)이며, 여기서 T는 `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`, `Binary` 형식 중 하나입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-146">A Collection (T) where T is one of the following types: `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`, `Binary`.</span></span><br /><br /> <span data-ttu-id="7fccc-147">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-147">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-148">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-148">The type of `expression`.</span></span><br /><br /> <span data-ttu-id="7fccc-149">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-149">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_MAX](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_max)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_MAX](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_max)]|  
-|<span data-ttu-id="7fccc-150">`MIN(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-150">`MIN(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-151">컬렉션의 최소값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-151">Returns the minimum value in a collection.</span></span><br /><br /> <span data-ttu-id="7fccc-152">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-152">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-153">컬렉션(T)이며, 여기서 T는 `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String` 형식 중 하나입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-153">A Collection (T) where T is one of the following types: `Byte`, `Int16`, `Int32`, `Int64`, `Byte`, `Single`, `Double`, `Decimal`, `DateTime`, `DateTimeOffset`, `Time`, `String`,</span></span><br /><br /> <span data-ttu-id="7fccc-154">`Binary`.</span><span class="sxs-lookup"><span data-stu-id="7fccc-154">`Binary`.</span></span><br /><br /> <span data-ttu-id="7fccc-155">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-155">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-156">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-156">The type of `expression`.</span></span><br /><br /> <span data-ttu-id="7fccc-157">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-157">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_MIN](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_min)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_MIN](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_min)]|  
-|<span data-ttu-id="7fccc-158">`STDEV(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-158">`STDEV(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-159">지정한 식의 모든 값에 대한 통계적 표준 편차를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-159">Returns the statistical standard deviation of all values in the specified expression.</span></span><br /><br /> <span data-ttu-id="7fccc-160">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-160">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-161">컬렉션(`Double`)입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-161">A Collection (`Double`).</span></span><br /><br /> <span data-ttu-id="7fccc-162">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-162">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-163">`Double`</span><span class="sxs-lookup"><span data-stu-id="7fccc-163">A `Double`.</span></span><br /><br /> <span data-ttu-id="7fccc-164">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-164">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_STDEV](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_stdev)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_STDEV](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_stdev)]|  
-|<span data-ttu-id="7fccc-165">`STDEVP(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-165">`STDEVP(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-166">지정한 식에 있는 모든 값의 모집단에 대한 통계적 표준 편차를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-166">Returns the statistical standard deviation for the population for all values in the specified expression.</span></span><br /><br /> <span data-ttu-id="7fccc-167">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-167">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-168">컬렉션(`Double`)입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-168">A Collection (`Double`).</span></span><br /><br /> <span data-ttu-id="7fccc-169">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-169">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-170">`Double`</span><span class="sxs-lookup"><span data-stu-id="7fccc-170">A `Double`.</span></span><br /><br /> <span data-ttu-id="7fccc-171">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-171">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_STDEVP](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_stdevp)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_STDEVP](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_stdevp)]|  
-|<span data-ttu-id="7fccc-172">`SUM(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-172">`SUM(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-173">컬렉션에 있는 모든 값의 합계를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-173">Returns the sum of all the values in the collection.</span></span><br /><br /> <span data-ttu-id="7fccc-174">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-174">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-175">컬렉션(T)이며, 여기서 T는 `Int32`, `Int64`, `Double`, `Decimal` 형식 중 하나입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-175">A Collection (T) where T is one of the following types: `Int32`, `Int64`, `Double`, `Decimal`.</span></span><br /><br /> <span data-ttu-id="7fccc-176">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-176">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-177">`expression`의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-177">The type of `expression`.</span></span><br /><br /> <span data-ttu-id="7fccc-178">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-178">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_SUM](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_sum)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_SUM](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_sum)]|  
-|<span data-ttu-id="7fccc-179">`VAR(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-179">`VAR(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-180">지정한 식에 있는 모든 값의 통계적 분산을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-180">Returns the statistical variance of all values in the specified expression.</span></span><br /><br /> <span data-ttu-id="7fccc-181">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-181">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-182">컬렉션(`Double`)입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-182">A Collection (`Double`).</span></span><br /><br /> <span data-ttu-id="7fccc-183">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-183">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-184">`Double`</span><span class="sxs-lookup"><span data-stu-id="7fccc-184">A `Double`.</span></span><br /><br /> <span data-ttu-id="7fccc-185">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-185">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_VAR](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_var)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_VAR](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_var)]|  
-|<span data-ttu-id="7fccc-186">`VARP(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="7fccc-186">`VARP(` `expression` `)`</span></span>|<span data-ttu-id="7fccc-187">지정한 식에 있는 모든 값의 모집단에 대한 통계적 분산을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-187">Returns the statistical variance for the population for all values in the specified expression.</span></span><br /><br /> <span data-ttu-id="7fccc-188">**인수**</span><span class="sxs-lookup"><span data-stu-id="7fccc-188">**Arguments**</span></span><br /><br /> <span data-ttu-id="7fccc-189">컬렉션(`Double`)입니다.</span><span class="sxs-lookup"><span data-stu-id="7fccc-189">A Collection (`Double`).</span></span><br /><br /> <span data-ttu-id="7fccc-190">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="7fccc-190">**Return Value**</span></span><br /><br /> <span data-ttu-id="7fccc-191">`Double`</span><span class="sxs-lookup"><span data-stu-id="7fccc-191">A `Double`.</span></span><br /><br /> <span data-ttu-id="7fccc-192">**예제**</span><span class="sxs-lookup"><span data-stu-id="7fccc-192">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_VARP](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_varp)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_VARP](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_varp)]|  
+## <a name="see-also"></a><span data-ttu-id="8ca48-190">참고자료</span><span class="sxs-lookup"><span data-stu-id="8ca48-190">See also</span></span>
+
+<span data-ttu-id="8ca48-191">SqlClient에서 지원하는 집계 함수에 대한 자세한 내용은 SqlClient 공급자 매니페스트에 지정한 SQL Server 버전의 설명서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="8ca48-191">For more information about the aggregate functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:</span></span>  
   
- <span data-ttu-id="7fccc-193">SqlClient에서 지원하는 집계 함수에 대한 자세한 내용은 SqlClient 공급자 매니페스트에 지정한 SQL Server 버전의 설명서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="7fccc-193">For more information about the aggregate functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:</span></span>  
-  
-|<span data-ttu-id="7fccc-194">SQL Server 2000</span><span class="sxs-lookup"><span data-stu-id="7fccc-194">SQL Server 2000</span></span>|<span data-ttu-id="7fccc-195">SQL Server 2005</span><span class="sxs-lookup"><span data-stu-id="7fccc-195">SQL Server 2005</span></span>|<span data-ttu-id="7fccc-196">SQL Server 2008</span><span class="sxs-lookup"><span data-stu-id="7fccc-196">SQL Server 2008</span></span>|  
-|---------------------|---------------------|---------------------|  
-|[<span data-ttu-id="7fccc-197">집계 함수 (Transact SQL)</span><span class="sxs-lookup"><span data-stu-id="7fccc-197">Aggregate Functions (Transact-SQL)</span></span>](http://go.microsoft.com/fwlink/?LinkId=115906)|[<span data-ttu-id="7fccc-198">집계 함수 (Transact SQL)</span><span class="sxs-lookup"><span data-stu-id="7fccc-198">Aggregate Functions (Transact-SQL)</span></span>](http://go.microsoft.com/fwlink/?LinkID=115903)|[<span data-ttu-id="7fccc-199">집계 함수 (Transact SQL)</span><span class="sxs-lookup"><span data-stu-id="7fccc-199">Aggregate Functions (Transact-SQL)</span></span>](http://go.microsoft.com/fwlink/?LinkId=115907)|  
-  
-## <a name="see-also"></a><span data-ttu-id="7fccc-200">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7fccc-200">See Also</span></span>  
- [<span data-ttu-id="7fccc-201">Entity SQL 언어</span><span class="sxs-lookup"><span data-stu-id="7fccc-201">Entity SQL Language</span></span>](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)  
- [<span data-ttu-id="7fccc-202">집계 정식 함수</span><span class="sxs-lookup"><span data-stu-id="7fccc-202">Aggregate Canonical Functions</span></span>](../../../../../docs/framework/data/adonet/ef/language-reference/aggregate-canonical-functions.md)
+<span data-ttu-id="8ca48-192">**SQL Server 2005**: [집계 함수 (TRANSACT-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms173454(v=sql.90))</span><span class="sxs-lookup"><span data-stu-id="8ca48-192">**SQL Server 2005**: [Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms173454(v=sql.90))</span></span>  
+<span data-ttu-id="8ca48-193">**SQL Server 2008 이상**: [집계 함수 (TRANSACT-SQL)](/sql/t-sql/functions/aggregate-functions-transact-sql)</span><span class="sxs-lookup"><span data-stu-id="8ca48-193">**SQL Server 2008 and later**:  [Aggregate Functions (Transact-SQL)](/sql/t-sql/functions/aggregate-functions-transact-sql)</span></span>  
+[<span data-ttu-id="8ca48-194">Entity SQL 언어</span><span class="sxs-lookup"><span data-stu-id="8ca48-194">Entity SQL Language</span></span>](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)  
+[<span data-ttu-id="8ca48-195">집계 정식 함수</span><span class="sxs-lookup"><span data-stu-id="8ca48-195">Aggregate Canonical Functions</span></span>](../../../../../docs/framework/data/adonet/ef/language-reference/aggregate-canonical-functions.md)

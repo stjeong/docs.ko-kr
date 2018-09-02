@@ -16,19 +16,19 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cd4559663194cb845fb0cc040e1f6739e38caa0e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1d019c67849197cd24171ff607e60e9f08d5ff70
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33461145"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43451625"
 ---
-# <a name="nextmethod-function"></a><span data-ttu-id="b4e6c-103">NextMethod 함수</span><span class="sxs-lookup"><span data-stu-id="b4e6c-103">NextMethod function</span></span>
-<span data-ttu-id="b4e6c-104">에 대 한 호출으로 시작 하는 열거형의 다음 메서드를 검색 [BeginMethodEnumeration](beginmethodenumeration.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-104">Retrieves the next method in an enumeration that begins with a call to [BeginMethodEnumeration](beginmethodenumeration.md).</span></span>  
+# <a name="nextmethod-function"></a><span data-ttu-id="1651e-103">NextMethod 함수</span><span class="sxs-lookup"><span data-stu-id="1651e-103">NextMethod function</span></span>
+<span data-ttu-id="1651e-104">에 대 한 호출을 시작 하는 열거형의 다음 메서드를 검색 [BeginMethodEnumeration](beginmethodenumeration.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-104">Retrieves the next method in an enumeration that begins with a call to [BeginMethodEnumeration](beginmethodenumeration.md).</span></span>  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## <a name="syntax"></a><span data-ttu-id="b4e6c-105">구문</span><span class="sxs-lookup"><span data-stu-id="b4e6c-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="1651e-105">구문</span><span class="sxs-lookup"><span data-stu-id="1651e-105">Syntax</span></span>  
   
 ```  
 HRESULT NextMethod (
@@ -41,52 +41,52 @@ HRESULT NextMethod (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="b4e6c-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="b4e6c-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="1651e-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="1651e-106">Parameters</span></span>
 
 `vFunc`  
-<span data-ttu-id="b4e6c-107">[in] 이 매개 변수를 사용 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-107">[in] This parameter is unused.</span></span>
+<span data-ttu-id="1651e-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-107">[in] This parameter is unused.</span></span>
 
 `ptr`  
-<span data-ttu-id="b4e6c-108">[in] 에 대 한 포인터는 [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-108">[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.</span></span>
+<span data-ttu-id="1651e-108">[in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="1651e-108">[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.</span></span>
 
 `lFlags`  
-<span data-ttu-id="b4e6c-109">[in] 예약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-109">[in] Reserved.</span></span> <span data-ttu-id="b4e6c-110">이 매개 변수는 0 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-110">This parameter must be 0.</span></span>
+<span data-ttu-id="1651e-109">[in] 예약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-109">[in] Reserved.</span></span> <span data-ttu-id="1651e-110">이 매개 변수는 0 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-110">This parameter must be 0.</span></span>
 
 `pName`  
-<span data-ttu-id="b4e6c-111">[out] 가리키는 포인터가 `null` 호출 하기 전에.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-111">[out] A pointer that points to `null` prior to the call.</span></span> <span data-ttu-id="b4e6c-112">함수가 반환 하는 경우, 새 주소 `BSTR` 메서드 이름이 들어 있는입니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-112">When the function returns, the address of a new `BSTR` that contains the method name.</span></span> 
+<span data-ttu-id="1651e-111">[out] 가리키는 포인터 `null` 호출 하기 전에 합니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-111">[out] A pointer that points to `null` prior to the call.</span></span> <span data-ttu-id="1651e-112">반환 될 때 함수의 새 주소 `BSTR` 메서드 이름이 들어 있는입니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-112">When the function returns, the address of a new `BSTR` that contains the method name.</span></span> 
 
 `ppSignatureIn`  
-<span data-ttu-id="b4e6c-113">[out] 에 대 한 포인터를 받는 포인터는 [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) 를 포함 하는 `in` 메서드의 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-113">[out] A pointer that receives a pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) that contains the `in` parameters for the method.</span></span> 
+<span data-ttu-id="1651e-113">[out] 에 대 한 포인터를 받는 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 포함 하는 `in` 메서드의 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-113">[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `in` parameters for the method.</span></span> 
 
 `ppSignatureOut`  
-<span data-ttu-id="b4e6c-114">[out] 에 대 한 포인터를 받는 포인터는 [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) 를 포함 하는 `out` 메서드의 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-114">[out] A pointer that receives a pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) that contains the `out` parameters for the method.</span></span> 
+<span data-ttu-id="1651e-114">[out] 에 대 한 포인터를 받는 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 포함 하는 `out` 메서드의 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-114">[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `out` parameters for the method.</span></span> 
 
-## <a name="return-value"></a><span data-ttu-id="b4e6c-115">반환 값</span><span class="sxs-lookup"><span data-stu-id="b4e6c-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1651e-115">반환 값</span><span class="sxs-lookup"><span data-stu-id="1651e-115">Return value</span></span>
 
-<span data-ttu-id="b4e6c-116">이 함수에서 반환 되는 다음 값에 정의 된는 *WbemCli.h* 헤더 파일 또는 있습니다를 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="b4e6c-116">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
+<span data-ttu-id="1651e-116">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="1651e-116">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
 
-|<span data-ttu-id="b4e6c-117">상수</span><span class="sxs-lookup"><span data-stu-id="b4e6c-117">Constant</span></span>  |<span data-ttu-id="b4e6c-118">값</span><span class="sxs-lookup"><span data-stu-id="b4e6c-118">Value</span></span>  |<span data-ttu-id="b4e6c-119">설명</span><span class="sxs-lookup"><span data-stu-id="b4e6c-119">Description</span></span>  |
+|<span data-ttu-id="1651e-117">상수</span><span class="sxs-lookup"><span data-stu-id="1651e-117">Constant</span></span>  |<span data-ttu-id="1651e-118">값</span><span class="sxs-lookup"><span data-stu-id="1651e-118">Value</span></span>  |<span data-ttu-id="1651e-119">설명</span><span class="sxs-lookup"><span data-stu-id="1651e-119">Description</span></span>  |
 |---------|---------|---------|
-| `WBEM_E_UNEXPECTED` | <span data-ttu-id="b4e6c-120">0x8004101d</span><span class="sxs-lookup"><span data-stu-id="b4e6c-120">0x8004101d</span></span> | <span data-ttu-id="b4e6c-121">에 대 한 호출이 했습니다는 [ `BeginEnumeration` ](beginenumeration.md) 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-121">There was no call to the [`BeginEnumeration`](beginenumeration.md) function.</span></span> |
-| `WBEM_S_NO_ERROR` | <span data-ttu-id="b4e6c-122">0</span><span class="sxs-lookup"><span data-stu-id="b4e6c-122">0</span></span> | <span data-ttu-id="b4e6c-123">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-123">The function call was successful.</span></span>  |
-| `WBEM_S_NO_MORE_DATA` | <span data-ttu-id="b4e6c-124">0x40005</span><span class="sxs-lookup"><span data-stu-id="b4e6c-124">0x40005</span></span> | <span data-ttu-id="b4e6c-125">열거형에 더 많은 속성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-125">There are no more properties in the enumeration.</span></span> |
+| `WBEM_E_UNEXPECTED` | <span data-ttu-id="1651e-120">0x8004101d</span><span class="sxs-lookup"><span data-stu-id="1651e-120">0x8004101d</span></span> | <span data-ttu-id="1651e-121">에 대 한 호출이 없습니다 합니다 [ `BeginEnumeration` ](beginenumeration.md) 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-121">There was no call to the [`BeginEnumeration`](beginenumeration.md) function.</span></span> |
+| `WBEM_S_NO_ERROR` | <span data-ttu-id="1651e-122">0</span><span class="sxs-lookup"><span data-stu-id="1651e-122">0</span></span> | <span data-ttu-id="1651e-123">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-123">The function call was successful.</span></span>  |
+| `WBEM_S_NO_MORE_DATA` | <span data-ttu-id="1651e-124">0x40005</span><span class="sxs-lookup"><span data-stu-id="1651e-124">0x40005</span></span> | <span data-ttu-id="1651e-125">열거형에 더 많은 속성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-125">There are no more properties in the enumeration.</span></span> |
   
-## <a name="remarks"></a><span data-ttu-id="b4e6c-126">설명</span><span class="sxs-lookup"><span data-stu-id="b4e6c-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1651e-126">설명</span><span class="sxs-lookup"><span data-stu-id="1651e-126">Remarks</span></span>
 
-<span data-ttu-id="b4e6c-127">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::NextMethod](https://msdn.microsoft.com/library/aa391454(v=vs.85).aspx) 메서드.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-127">This function wraps a call to the [IWbemClassObject::NextMethod](https://msdn.microsoft.com/library/aa391454(v=vs.85).aspx) method.</span></span>
+<span data-ttu-id="1651e-127">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::NextMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) 메서드.</span><span class="sxs-lookup"><span data-stu-id="1651e-127">This function wraps a call to the [IWbemClassObject::NextMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) method.</span></span>
 
-<span data-ttu-id="b4e6c-128">호출 하 여 열거형 시퀀스를 시작 하는 호출자에 게는 [BeginMethodEnumeration](beginmethodenumeration.md) 함수 및 함수 반환 될 때까지 다음 [NextMethod] 함수를 호출 `WBEM_S_NO_MORE_DATA`합니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-128">The caller begins the enumeration sequence by calling the [BeginMethodEnumeration](beginmethodenumeration.md) function, and then calls the [NextMethod] function until the function returns `WBEM_S_NO_MORE_DATA`.</span></span> <span data-ttu-id="b4e6c-129">호출자가 호출 하 여 시퀀스를 완료 하는 필요에 따라 [EndMethodEnumeration](endmethodenumeration.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-129">Optionally, the caller finishes the sequence by calling [EndMethodEnumeration](endmethodenumeration.md).</span></span> <span data-ttu-id="b4e6c-130">호출자에 게 해지할 수 있습니다 열거형 초기 호출 하 여 [EndMethodEnumeration](endmethodenumeration.md) 언제 든 지 합니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-130">The caller may terminate the enumeration early by calling [EndMethodEnumeration](endmethodenumeration.md) at any time.</span></span>
+<span data-ttu-id="1651e-128">호출자가 호출 하 여 열거형 시퀀스를 시작 합니다 [BeginMethodEnumeration](beginmethodenumeration.md) 함수 및 함수 반환 될 때까지 [NextMethod] 함수 호출 `WBEM_S_NO_MORE_DATA`합니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-128">The caller begins the enumeration sequence by calling the [BeginMethodEnumeration](beginmethodenumeration.md) function, and then calls the [NextMethod] function until the function returns `WBEM_S_NO_MORE_DATA`.</span></span> <span data-ttu-id="1651e-129">호출자가 호출 하 여 시퀀스를 완료 하는 필요에 따라 [EndMethodEnumeration](endmethodenumeration.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-129">Optionally, the caller finishes the sequence by calling [EndMethodEnumeration](endmethodenumeration.md).</span></span> <span data-ttu-id="1651e-130">호출자에 게 해지할 수 있습니다 열거형 초기 호출 하 여 [EndMethodEnumeration](endmethodenumeration.md) 언제 든 지 합니다.</span><span class="sxs-lookup"><span data-stu-id="1651e-130">The caller may terminate the enumeration early by calling [EndMethodEnumeration](endmethodenumeration.md) at any time.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b4e6c-131">예제</span><span class="sxs-lookup"><span data-stu-id="b4e6c-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1651e-131">예제</span><span class="sxs-lookup"><span data-stu-id="1651e-131">Example</span></span>
 
-<span data-ttu-id="b4e6c-132">C + + 예제에 대 한 참조는 [IWbemClassObject::NextMethod](https://msdn.microsoft.com/library/aa391454(v=vs.85).aspx) 메서드.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-132">For a C++ example, see the [IWbemClassObject::NextMethod](https://msdn.microsoft.com/library/aa391454(v=vs.85).aspx) method.</span></span>
+<span data-ttu-id="1651e-132">C + + 예제를 참조 합니다 [IWbemClassObject::NextMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) 메서드.</span><span class="sxs-lookup"><span data-stu-id="1651e-132">For a C++ example, see the [IWbemClassObject::NextMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) method.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="b4e6c-133">요구 사항</span><span class="sxs-lookup"><span data-stu-id="b4e6c-133">Requirements</span></span>  
- <span data-ttu-id="b4e6c-134">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b4e6c-134">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="1651e-133">요구 사항</span><span class="sxs-lookup"><span data-stu-id="1651e-133">Requirements</span></span>  
+ <span data-ttu-id="1651e-134">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="1651e-134">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="b4e6c-135">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="b4e6c-135">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="1651e-135">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="1651e-135">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="b4e6c-136">**.NET framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="b4e6c-136">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="1651e-136">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="1651e-136">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b4e6c-137">참고자료</span><span class="sxs-lookup"><span data-stu-id="b4e6c-137">See also</span></span>  
-[<span data-ttu-id="b4e6c-138">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="b4e6c-138">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="1651e-137">참고자료</span><span class="sxs-lookup"><span data-stu-id="1651e-137">See also</span></span>  
+[<span data-ttu-id="1651e-138">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="1651e-138">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
