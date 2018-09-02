@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Windows Forms, modifying keyboard input
 - keyboards [Windows Forms], keyboard input
 ms.assetid: 626d3712-d866-4988-bcda-a2d5b36ec0ba
-ms.openlocfilehash: 726444e1decb3e03989317431e1f8c4a5fc4a697
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c109615b9a0eb61d18f7f44e3248d2b24934ee5f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33540292"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43420529"
 ---
 # <a name="how-to-modify-keyboard-input-to-a-standard-control"></a>방법: 표준 컨트롤로 키보드 입력 수정
 Windows Forms는 키보드 입력을 사용 및 수정할 수 있는 기능을 제공합니다. 키 사용은 메시지 큐 아래의 다른 메서드 및 이벤트가 키 값을 수신하지 않도록 메서드 또는 이벤트 처리기 내에서 키를 처리하는 것을 가리킵니다. 키 수정은 메시지 큐 아래의 메서드 및 이벤트 처리기가 다른 키 값을 수신하도록 키 값을 수정하는 것을 가리킵니다. 이 항목에서는 이러한 작업을 수행하는 방법을 보여 줍니다.  
@@ -49,7 +49,7 @@ Windows Forms는 키보드 입력을 사용 및 수정할 수 있는 기능을 �
   
 -   Windows 메시지를 처리하는 <xref:System.Windows.Forms.Control> 메서드를 재정의하고, WM_KEYDOWN 또는 WM_SYSKEYDOWN 메시지를 검색하고, <xref:System.Windows.Forms.Message> 매개 변수의 <xref:System.Windows.Forms.Message.WParam%2A> 속성을 문자가 아닌 새 키를 나타내는 <xref:System.Windows.Forms.Keys> 값으로 설정합니다.  
   
-     다음 코드 예제에서는 컨트롤의 <xref:System.Windows.Forms.Control.PreProcessMessage%2A> 메서드를 재정의하여 F1-F9 키를 검색하고 F3 키 누름을 F1로 수정하는 방법을 보여 줍니다. 대 한 자세한 내용은 <xref:System.Windows.Forms.Control> 키보드 메시지를 가로채기 위해 재정의할 수 있는 메서드 참조 [Windows Forms 응용 프로그램에서 사용자 입력](../../../docs/framework/winforms/user-input-in-a-windows-forms-application.md) 및 [키보드 입력 작동 방식](../../../docs/framework/winforms/how-keyboard-input-works.md)합니다.  
+     다음 코드 예제에서는 컨트롤의 <xref:System.Windows.Forms.Control.PreProcessMessage%2A> 메서드를 재정의하여 F1-F9 키를 검색하고 F3 키 누름을 F1로 수정하는 방법을 보여 줍니다. 에 대 한 자세한 <xref:System.Windows.Forms.Control> 키보드 메시지를 가로채기 위해 재정의할 수 있는 메서드를 참조 하세요 [Windows Forms 응용 프로그램에서 사용자 입력](../../../docs/framework/winforms/user-input-in-a-windows-forms-application.md) 하 고 [키보드 입력 작동 방식](../../../docs/framework/winforms/how-keyboard-input-works.md)합니다.  
   
      [!code-csharp[System.Windows.Forms.KeyBoardInput#12](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.KeyboardInput/CS/form1.cs#12)]
      [!code-vb[System.Windows.Forms.KeyBoardInput#12](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.KeyboardInput/VB/form1.vb#12)]  
@@ -65,7 +65,7 @@ Windows Forms는 키보드 입력을 사용 및 수정할 수 있는 기능을 �
   
 -   System, System.Drawing 및 System.Windows.Forms 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 정보를 참조 하십시오. [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 또는 [사용한 명령줄 빌드 csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수도 있습니다.  [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](http://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.  
+ Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows Forms 응용 프로그램의 키보드 입력](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)  

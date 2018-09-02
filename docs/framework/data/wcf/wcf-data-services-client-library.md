@@ -6,23 +6,23 @@ helpviewer_keywords:
 - DataServiceQuery class, about DataServiceQuery class
 - DataServiceContext class, about DataServiceContext class
 ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
-ms.openlocfilehash: 95ca3ab8768b59b52640cfd17d230a544a8b2052
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4f389530b287d1c7a11a88972ef948347d3ea533
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365516"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43421597"
 ---
 # <a name="wcf-data-services-client-library"></a>WCF Data Services 클라이언트 라이브러리
-HTTP 요청을 보내고 데이터 서비스에서 반환하는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 피드를 처리할 수 있는 응용 프로그램은 모두 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 기반 데이터 서비스와 상호 작용할 수 있습니다. 이 상호 운용성을 통해 광범위한 웹 사용 응용 프로그램에서 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 기반 서비스에 액세스할 수 있습니다. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용할 때 다양 한 프로그래밍 환경을 제공 하는 클라이언트 라이브러리가 포함 되어 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] .NET Framework 또는 Silverlight 기반 응용 프로그램에서 피드입니다.  
+HTTP 요청을 보내고 데이터 서비스에서 반환하는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 피드를 처리할 수 있는 응용 프로그램은 모두 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 기반 데이터 서비스와 상호 작용할 수 있습니다. 이 상호 운용성을 통해 광범위한 웹 사용 응용 프로그램에서 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 기반 서비스에 액세스할 수 있습니다. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용 하면 다양 한 프로그래밍 환경을 제공 하는 클라이언트 라이브러리가 포함 되어 있습니다 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] .NET Framework 또는 Silverlight 기반 응용 프로그램에서 피드 합니다.  
   
- 클라이언트 라이브러리의 두 가지 주요 클래스는 <xref:System.Data.Services.Client.DataServiceContext> 클래스와 <xref:System.Data.Services.Client.DataServiceQuery%601> 클래스입니다. <xref:System.Data.Services.Client.DataServiceContext> 클래스는 지정한 데이터 서비스에 대해 지원되는 작업을 캡슐화합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 서비스는 상태 비저장 특성을 갖지만 컨텍스트는 그렇지 않습니다. 따라서 사용할 수는 <xref:System.Data.Services.Client.DataServiceContext> 변경 관리 등의 기능을 지원 하기 위해 데이터 서비스와의 상호 작용 간에 클라이언트에서 상태를 유지 관리 하는 클래스입니다. 또한 이 클래스는 ID를 관리하고 변경 내용을 추적합니다. <xref:System.Data.Services.Client.DataServiceQuery%601> 클래스는 특정 엔터티 집합에 대한 쿼리를 나타냅니다.  
+ 클라이언트 라이브러리의 두 가지 주요 클래스는 <xref:System.Data.Services.Client.DataServiceContext> 클래스와 <xref:System.Data.Services.Client.DataServiceQuery%601> 클래스입니다. <xref:System.Data.Services.Client.DataServiceContext> 클래스는 지정한 데이터 서비스에 대해 지원되는 작업을 캡슐화합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 서비스는 상태 비저장 특성을 갖지만 컨텍스트는 그렇지 않습니다. 따라서 사용할 수는 <xref:System.Data.Services.Client.DataServiceContext> 변경 관리 등의 기능을 지원 하기 위해 데이터 서비스와의 상호 작용 간에 클라이언트에서 상태를 유지 하는 클래스입니다. 또한 이 클래스는 ID를 관리하고 변경 내용을 추적합니다. <xref:System.Data.Services.Client.DataServiceQuery%601> 클래스는 특정 엔터티 집합에 대한 쿼리를 나타냅니다.  
   
- 이 단원에서는 클라이언트 라이브러리를 사용하여 .NET Framework 클라이언트 응용 프로그램에서 데이터에 액세스하고 변경하는 방법에 대해 설명합니다. 사용 하는 방법에 대 한 자세한 내용은 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] Silverlight 기반 응용 프로그램의 경우 클라이언트 라이브러리 참조 [WCF Data Services (Silverlight)](http://go.microsoft.com/fwlink/?LinkId=186016)합니다. 다른 클라이언트 라이브러리를 사용할 수 있도록 하는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 다른 종류의 응용 프로그램에서 피드입니다. 자세한 내용은 참조는 [OData SDK](http://go.microsoft.com/fwlink/?LinkID=185796)합니다.  
+ 이 단원에서는 클라이언트 라이브러리를 사용하여 .NET Framework 클라이언트 응용 프로그램에서 데이터에 액세스하고 변경하는 방법에 대해 설명합니다. 사용 하는 방법에 대 한 자세한 내용은 합니다 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] Silverlight 기반 응용 프로그램의 경우 클라이언트 라이브러리 참조 [WCF Data Services (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=186016)합니다. 다른 클라이언트 라이브러리를 사용할 수 있는 사용할 수 있도록 하는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 다른 종류의 응용 프로그램에서 피드 합니다. 자세한 내용은 참조는 [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185796)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [데이터 서비스 클라이언트 라이브러리 생성](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)  
- 클라이언트 라이브러리와 기반으로 하는 클라이언트 데이터 서비스 클래스를 생성 하는 방법에 설명 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드입니다.  
+ 클라이언트 라이브러리 및 기반으로 하는 클라이언트 데이터 서비스 클래스를 생성 하는 방법에 설명 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드 합니다.  
   
  [데이터 서비스 쿼리](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
  클라이언트 라이브러리를 사용하여 .NET Framework 기반 응용 프로그램에서 데이터 서비스를 쿼리하는 방법에 대해 설명합니다.  
@@ -40,7 +40,7 @@ HTTP 요청을 보내고 데이터 서비스에서 반환하는 [!INCLUDE[ssODat
  클라이언트 라이브러리를 사용하여 여러 요청을 데이터 서비스에 단일 일괄 처리로 보내는 방법에 대해 설명합니다.  
   
  [컨트롤에 데이터 바인딩](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)  
- 컨트롤에 바인딩하는 방법에 설명 된 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 데이터 서비스에서 반환 된 피드의 합니다.  
+ 컨트롤을 바인딩하는 방법을 설명 합니다는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드 데이터 서비스에서 반환 합니다.  
   
  [서비스 작업 호출](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md)  
  클라이언트 라이브러리를 사용하여 서비스 작업을 호출하는 방법에 대해 설명합니다.  

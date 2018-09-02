@@ -2,12 +2,12 @@
 title: ReceiveContext 사용 WCF 채널
 ms.date: 03/30/2017
 ms.assetid: d990d119-7321-4b8c-852b-10256f59f9b0
-ms.openlocfilehash: 3e5ac914ae4d0c97ed617ea4a8d5a893ec740179
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d7f80d0874606129876fbf7dfa30c0327680b922
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33502936"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43442748"
 ---
 # <a name="receivecontext-enabled-wcf-channels"></a>ReceiveContext 사용 WCF 채널
 이 샘플에서는 <xref:System.ServiceModel.Channels.ReceiveContext> 사용 WCF 채널의 유용성을 보여 줍니다. 이 샘플에서는 NetMSMQ 채널을 사용하여 두 수의 곱을 찾기 위한 서비스를 구현합니다.  
@@ -19,7 +19,7 @@ ms.locfileid: "33502936"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\ReceiveContextProductGenerator`  
   
@@ -31,23 +31,23 @@ ms.locfileid: "33502936"
   
         1.  **서버 관리자**, 클릭 **기능**합니다.  
   
-        2.  아래의 오른쪽 창에서 **기능 요약**, 클릭 **기능 추가**합니다.  
+        2.  오른쪽 창의 **기능 요약**, 클릭 **추가 기능**합니다.  
   
         3.  결과 창에서 확장 **메시지 큐**합니다.  
   
-        4.  확장 **메시지 대기열 서비스**합니다.  
+        4.  확장 **큐 서비스 메시지**합니다.  
   
-        5.  클릭 **디렉터리 서비스 통합** (컴퓨터에 대 한 도메인에 가입)를 클릭 하 고 **HTTP 지원**합니다.  
+        5.  클릭 **디렉터리 서비스 통합** (컴퓨터에 대 한 도메인에 가입)를 클릭 하 고 **HTTP 지원을**합니다.  
   
-        6.  클릭 **다음**, 클릭 하 고 **설치**합니다.  
+        6.  클릭 **다음**를 클릭 하 고 **설치**합니다.  
   
     2.  [!INCLUDE[wv](../../../../includes/wv-md.md)]에 MSMQ를 설치하려면  
   
         1.  **제어판**을 엽니다.  
   
-        2.  클릭 **프로그램** 차례로 선택한 다음 **프로그램 및 기능**, 클릭 **Windows 기능 사용을 설정 및 해제**합니다.  
+        2.  클릭 **프로그램** 차례로 **프로그램 및 기능**, 클릭 **Windows 기능 사용 안 함 설정 및 해제**합니다.  
   
-        3.  확장 **Microsoft Message Queue (MSMQ) Server**, 확장 **Microsoft Message Queue (MSMQ) Server Core**, 한 후 설치 하려면 다음과 같은 메시지 큐 기능에 대 한 확인란을 선택 합니다.  
+        3.  확장 **Microsoft Message Queue (MSMQ) Server**, 확장 **Microsoft Message Queue (MSMQ) Server Core**를 선택한 다음 설치 하려면 다음 메시지 큐 기능 확인란:  
   
             -   메시지 큐 서버  
   
@@ -57,7 +57,7 @@ ms.locfileid: "33502936"
   
         4.  **확인**을 클릭합니다.  
   
-        5.  컴퓨터를 다시 시작 하는 메시지가 클릭 **확인** 설치를 완료 합니다.  
+        5.  컴퓨터 다시 시작 하 라는 메시지가 나타나면 클릭 **확인** 설치를 완료 합니다.  
   
 2.  컴퓨터에 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]이 설치되어 있는지 확인합니다.  
   

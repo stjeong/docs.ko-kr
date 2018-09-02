@@ -5,11 +5,11 @@ helpviewer_keywords:
 - strings [Visual Basic], Nothing
 ms.assetid: 261380af-2024-4ecf-823b-43b1034d92cd
 ms.openlocfilehash: d03781209f0f9b021d540bd251c6c6025ad21422
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754224"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43425213"
 ---
 # <a name="nothing-and-strings-in-visual-basic"></a>Visual Basic의 Nothing 및 문자열
 Visual Basic 런타임 및 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 평가 `Nothing` 다르게는 문자열입니다.  

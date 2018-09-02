@@ -2,12 +2,12 @@
 title: 컬렉션 활동 사용
 ms.date: 03/30/2017
 ms.assetid: e1977cf8-1695-4071-b946-7046fe39601e
-ms.openlocfilehash: 3c30a7fb46d9b155ec645a7b6845715d808d63b6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a92208583ddf1c0d5d85b5af6a250a15ac8851b9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33516602"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43422629"
 ---
 # <a name="using-collection-activities"></a>컬렉션 활동 사용
 이 샘플에서는 <xref:System.Activities.Statements.AddToCollection%601> 인터페이스를 구현하는 클래스를 사용하여 <xref:System.Activities.Statements.ClearCollection%601>, <xref:System.Activities.Statements.ExistsInCollection%601>, <xref:System.Activities.Statements.RemoveFromCollection%601> 및 <xref:System.Collections.ICollection> 컬렉션 활동을 사용하는 방법과 컬렉션을 반복하여 컬렉션의 각 요소 내용을 출력하는 사용자 지정 활동을 만드는 방법을 보여 줍니다. `PrintCollection`이라는 사용자 지정 활동은 `Numbers`라는 컬렉션의 항목 멤버를 콘솔에 출력합니다.  
@@ -25,8 +25,8 @@ ms.locfileid: "33516602"
   
 |솔루션|설명|기본 파일|  
 |-|-|-|  
-|CodedWorkflow|컬렉션 활동을 프로그래밍 방식으로 호출하는 방법을 보여 주는 샘플 클라이언트 응용 프로그램입니다.|**PrintCollection.cs**: 콘솔에 컬렉션의 모든 항목이 인쇄 하는 도우미 활동입니다.<br /><br /> **Program.cs**: 프로그래밍 방식으로 일련의 컬렉션 활동이 포함 되 고이 실행 하는 시퀀스 활동을 작성 합니다.|  
-|DesignerWorkflow|컬렉션 활동을 워크플로 디자이너에서 선언적으로 사용하는 방법을 보여 주는 샘플 클라이언트 응용 프로그램입니다.|**CollectionWorkflow.xaml**: 컬렉션 활동을 사용 하는 디자이너를 통해 선언적으로 만든 워크플로입니다.<br /><br /> **PrintCollection.cs**: 콘솔에 컬렉션의 모든 항목이 인쇄 하는 도우미 활동입니다.<br /><br /> **Program.cs**: CollectionWorkflow.xaml에서 설명 하는 워크플로 호출 합니다.|  
+|CodedWorkflow|컬렉션 활동을 프로그래밍 방식으로 호출하는 방법을 보여 주는 샘플 클라이언트 응용 프로그램입니다.|**PrintCollection.cs**: 콘솔에 컬렉션의 모든 항목 인쇄 하는 도우미 활동입니다.<br /><br /> **Program.cs**: 프로그래밍 방식으로 일련의 컬렉션 활동을 포함 하 고이 실행 하는 sequence 활동을 작성 합니다.|  
+|DesignerWorkflow|컬렉션 활동을 워크플로 디자이너에서 선언적으로 사용하는 방법을 보여 주는 샘플 클라이언트 응용 프로그램입니다.|**CollectionWorkflow.xaml**: 컬렉션 활동을 사용 하는 디자이너를 사용 하 여 선언적으로 만든 워크플로.<br /><br /> **PrintCollection.cs**: 콘솔에 컬렉션의 모든 항목 인쇄 하는 도우미 활동입니다.<br /><br /> **Program.cs**: CollectionWorkflow.xaml에서 설명 하는 워크플로 호출 합니다.|  
   
  이 데모에서는 `Numbers`이라는 사용자 정의된 활동을 통해 `PrintCollection` 컬렉션의 항목 멤버가 콘솔에 출력됩니다.  
   
@@ -43,6 +43,6 @@ ms.locfileid: "33516602"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\Collection`

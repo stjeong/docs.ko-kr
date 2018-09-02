@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8a857523b15631aa9c112c9c0d208d96b0ec0d4a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 47ed75d377814a740edece2b6a69e44acbd8ef0c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396461"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43424374"
 ---
 # <a name="ltpropertygt-element-net-native"></a>&lt;속성&gt; 요소(.NET 네이티브)
 런타임 리플렉션 정책을 속성에 적용합니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "33396461"
   
  이 파일은 `All` 클래스에 대해 `Activate` 값을 `Book` 정책에 적용합니다. 따라서 리플렉션을 통해 클래스 생성자에 액세스할 수 있습니다. `Browse`에 대한 `Book` 정책은 부모 네임스페이스에서 상속됩니다. 이 정책은 런타임에 메타데이터를 사용할 수 있도록 하는 `Required Public`으로 설정됩니다.  
   
- 다음은 예제의 소스 코드입니다. `outputBlock` 변수는 [TextBlock](http://msdn.microsoft.com/library/windows.ui.xaml.controls.textblock.aspx) 제어를 나타냅니다.  
+ 다음은 예제의 소스 코드입니다. `outputBlock` 변수는 [TextBlock](https://msdn.microsoft.com/library/windows.ui.xaml.controls.textblock.aspx) 제어를 나타냅니다.  
   
  [!code-csharp[ProjectN_Reflection#6](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/property1.cs#6)]  
   

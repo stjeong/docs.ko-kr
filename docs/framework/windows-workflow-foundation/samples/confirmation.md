@@ -2,12 +2,12 @@
 title: 확인
 ms.date: 03/30/2017
 ms.assetid: 8637aeaf-ac9e-49b8-93f4-da15dee45277
-ms.openlocfilehash: 334ac362333565626dd2bb8dcaede27fbab16f33
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: caa712aa52da01ce44335a361fd6c9f5215316bf
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518848"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43419492"
 ---
 # <a name="confirmation"></a>확인
 이 샘플에서는 <xref:System.Activities.Statements.CompensableActivity>의 사용 및 확인과 관련된 일반적인 네 개의 시나리오를 보여 주고, 네 개의 워크플로를 실행하여 확인하는 방법을 보여 줍니다. 이 샘플은 선언적 버전과 명령적 버전으로 사용할 수 있습니다.   
@@ -32,13 +32,13 @@ ms.locfileid: "33518848"
   
 3.  다음 출력을 확인합니다.  
   
- **명시적 확인: workflowCompensableActivity1 시작: BodyCompensableActivity2: BodyCompensableActivity1: workflowCompensableActivity2의 확인 HandlerEnd: 확인 HandlerExplicit 보정: 시작 workflowCompensableActivity1: BodyCompensableActivity2: BodyCompensableActivity1: workflowCompensableActivity2의 보정 HandlerEnd: 확인 HandlerCustom 확인 처리기: 시작 workflowCompensableActivity1의: BodyCompensableActivity2: BodyCompensableActivity3: workflowCompensableActivity1의 BodyEnd: 확인 HandlerCompensableActivity2: 확인 HandlerCompensableActivity3: 확인 처리기에서 확인 HandlerVariable 액세스: WorkflowCompensableActivity1의 시작: BodyCompensableActivity1: 합계가: 15CompensableActivity2: BodyCompensableActivity2:는 sumCompensableActivity2 추가 7: 합은 이제: workflowCompensableActivity2의 22End: 확인 HandlerCompensableActivity1: 확인 HandlerCompensableActivity2: 합계가: 22CompensableActivity2: 12를 뺀 후 합은 이제: 10Press ENTER를 종료 합니다.**  
+ **WorkflowCompensableActivity1 명시적 확인: Start: BodyCompensableActivity2: BodyCompensableActivity1: workflowCompensableActivity2의 확인 HandlerEnd: 확인 HandlerExplicit 보정: 시작 workflowCompensableActivity1: BodyCompensableActivity2: BodyCompensableActivity1: workflowCompensableActivity2의 보정 HandlerEnd: 확인 HandlerCustom 확인 처리기: Start workflowCompensableActivity1입니다. BodyCompensableActivity2: BodyCompensableActivity3: workflowCompensableActivity1의 BodyEnd: 확인 HandlerCompensableActivity2: 확인 HandlerCompensableActivity3: 확인 처리기에 대 한 확인 HandlerVariable 액세스: WorkflowCompensableActivity1 시작과: BodyCompensableActivity1: 합계가: 15CompensableActivity2: BodyCompensableActivity2:는 sumCompensableActivity2 추가 7: 합계는 이제: workflowCompensableActivity2의 22End: 확인 HandlerCompensableActivity1: 확인 HandlerCompensableActivity2: 합계가: 22CompensableActivity2: 12를 뺀 후 합계는 이제: 10Press ENTER를 종료 합니다.**  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Compensation\Confirmation`

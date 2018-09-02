@@ -2,16 +2,16 @@
 title: 비동기 프로그래밍
 ms.date: 03/30/2017
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-ms.openlocfilehash: 29324a07ffdaf99d1b7631ad8e94e773ed509fcc
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0c5c3f52f6afa0e1fa48d33167feabeb8d5b76f5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32759909"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43425727"
 ---
 # <a name="asynchronous-programming"></a>비동기 프로그래밍
 
-이 항목에서는의 비동기 프로그래밍에 대 한 지원을 설명는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 에 도입 된 비동기 프로그래밍 기능을 지 원하는 향상 된 기능을 포함 하 여 Data Provider for SQL Server (SqlClient) [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
+이 항목에서는의 비동기 프로그래밍에 대 한 지원을 설명 합니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 에 도입 된 비동기 프로그래밍 기능을 지원 하려고 하는 향상 된 기능을 비롯 하 여 SQL Server (SqlClient)에 대 한 데이터 공급자 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
   
 ## <a name="legacy-asynchronous-programming"></a>레거시 비동기 프로그래밍  
  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 이전에 SqlClient의 비동기 프로그래밍은 다음 메서드 및 `Asynchronous Processing=true` 연결 속성을 사용하여 수행되었습니다.  
@@ -31,19 +31,19 @@ ms.locfileid: "32759909"
   
  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서 도입된 비동기 프로그래밍 기능에 대한 자세한 내용은 다음을 참조하세요.  
   
-- [C#에서 비동기 프로그래밍](../../../csharp/async.md)
+- [C#의 비동기 프로그래밍](../../../csharp/async.md)
 
 - [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
 
-- [.NET 4.5 (파트 1)에서 SqlDataReader의 새로운 비동기 메서드 사용](https://blogs.msdn.microsoft.com/adonet/2012/04/20/using-sqldatareaders-new-async-methods-in-net-4-5/)
+- [.NET (1 부) 4.5에서에서 SqlDataReader의 새로운 비동기 메서드를 사용 하 여](https://blogs.msdn.microsoft.com/adonet/2012/04/20/using-sqldatareaders-new-async-methods-in-net-4-5/)
 
-- [SqlDataReader의 새로운 비동기 메서드를 사용 하 여.net 4.5 (2 부)](https://blogs.msdn.microsoft.com/adonet/2012/07/15/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples/)
+- [.NET (2 부) 4.5에서에서 SqlDataReader의 새로운 비동기 메서드를 사용 하 여](https://blogs.msdn.microsoft.com/adonet/2012/07/15/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples/)
  
  사용자 인터페이스가 응답하지 않거나 서버가 확장되지 않을 경우 코드를 좀 더 비동기화해야 할 수 있습니다.  기존에는 비동기 코드를 작성하려면 비동기 작업이 완료될 때 발생하는 논리를 표현하기 위한 콜백 설치 과정(연속이라고도 함)이 필요했습니다. 이로 인해 비동기 코드의 구조는 동기 코드에 비해 복잡했습니다.  
   
  이제 콜백을 사용하거나 코드를 분할하지 않고도 여러 메서드나 람다 식에서 비동기 메서드를 호출할 수 있습니다.  
   
- `async` 한정자는 메서드가 비동기 메서드임을 나타냅니다. `async` 메서드를 호출하면 작업이 반환됩니다. 경우는 `await` 연산자에는 작업에 적용 되는 경우 현재 메서드가 즉시 종료 됩니다. 작업이 끝나면 동일한 메서드에서 실행이 재개됩니다.
+ `async` 한정자는 메서드가 비동기 메서드임을 나타냅니다. `async` 메서드를 호출하면 작업이 반환됩니다. 경우는 `await` 연산자가 작업에 적용 되어, 현재 메서드가 즉시 종료 됩니다. 작업이 끝나면 동일한 메서드에서 실행이 재개됩니다.
   
 > [!WARNING]
 >  응용 프로그램에서 `Context Connection` 연결 문자열 키워드도 사용하는 경우에는 비동기 호출이 지원되지 않습니다.  
@@ -86,7 +86,7 @@ ms.locfileid: "32759909"
   
 -   <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>  
   
- 다른 비동기 멤버가 추가 된 지원 하기 [SqlClient 스트리밍 지원](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)합니다.  
+ 지원 하기 위해 다른 비동기 멤버도 추가 되었습니다 [SqlClient 스트리밍 지원](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)합니다.  
   
 ### <a name="synchronous-to-asynchronous-connection-open"></a>비동기에서 동기로의 연결 열기  
  새 비동기 기능을 사용하도록 기존 응용 프로그램을 업그레이드할 수 있습니다. 예를 들어 응용 프로그램이 동기 연결 알고리즘을 사용하며, 데이터베이스에 연결할 때마다 UI 스레드를 차단하고 연결 후에는 방금 로그인한 사용자를 다른 사용자에게 알리는 저장 프로시저를 호출한다고 가정해 봅니다.  
@@ -172,7 +172,7 @@ class A {
 ### <a name="using-the-base-provider-model-and-the-new-asynchronous-feature"></a>기본 공급자 모델 및 새로운 비동기 기능 사용  
  다른 데이터베이스에 연결하고 쿼리를 실행할 수 있는 도구를 만들어야 하는 경우가 있습니다. 이러한 경우 기본 공급자 모델과 새로운 비동기 기능을 사용할 수 있습니다.  
   
- 서버에서 분산 트랜잭션을 사용하기 위해 MSDTC(Microsoft Distributed Transaction Coordinator)를 사용하도록 설정해야 합니다. MSDTC를 사용 하도록 설정 하는 방법에 대 한 정보를 참조 하십시오. [웹 서버에서 MSDTC를 사용 하는 방법을](http://msdn.microsoft.com/library/dd327979.aspx)합니다.  
+ 서버에서 분산 트랜잭션을 사용하기 위해 MSDTC(Microsoft Distributed Transaction Coordinator)를 사용하도록 설정해야 합니다. MSDTC를 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [웹 서버에서 MSDTC를 사용 하는 방법을](https://msdn.microsoft.com/library/dd327979.aspx)합니다.  
   
 ```csharp
 using System;  
@@ -627,10 +627,10 @@ namespace SqlBulkCopyAsyncCodeSample {
 ```  
   
 ## <a name="asynchronously-using-multiple-commands-with-mars"></a>MARS를 사용하여 여러 명령을 비동기적으로 사용  
- 이 예제에서는 단일 연결을 열어 고 **AdventureWorks** 데이터베이스입니다. <xref:System.Data.SqlClient.SqlCommand> 개체를 사용하면 <xref:System.Data.SqlClient.SqlDataReader>가 만들어집니다. 판독기를 사용하면 두 번째 <xref:System.Data.SqlClient.SqlDataReader>가 열리고 첫 번째 <xref:System.Data.SqlClient.SqlDataReader>의 데이터가 두 번째 판독기의 WHERE 절에 대한 입력으로 사용됩니다.  
+ 이 예제에서는 단일 연결을 엽니다는 **AdventureWorks** 데이터베이스입니다. <xref:System.Data.SqlClient.SqlCommand> 개체를 사용하면 <xref:System.Data.SqlClient.SqlDataReader>가 만들어집니다. 판독기를 사용하면 두 번째 <xref:System.Data.SqlClient.SqlDataReader>가 열리고 첫 번째 <xref:System.Data.SqlClient.SqlDataReader>의 데이터가 두 번째 판독기의 WHERE 절에 대한 입력으로 사용됩니다.  
   
 > [!NOTE]
->  다음 예제에서는 샘플을 사용 하 여 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다. 샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다. 사용자 환경의 필요에 따라 연결 문자열을 수정합니다.  
+>  다음 예제에서는 샘플 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다. 샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다. 사용자 환경의 필요에 따라 연결 문자열을 수정합니다.  
   
 ```csharp
 using System;  
@@ -697,12 +697,12 @@ class Class1 {
 ```  
   
 ## <a name="asynchronously-reading-and-updating-data-with-mars"></a>MARS를 사용하여 비동기적으로 데이터 읽기 및 업데이트  
- MARS를 사용하면 하나의 연결을 둘 이상의 보류 중인 작업과 함께 읽기 작업 및 DML(데이터 조작 언어) 작업 모두에 사용할 수 있습니다. 이 기능을 사용하면 응용 프로그램에서 연결 사용 오류를 처리할 필요가 없습니다. 또한 MARS는 일반적으로 더 많은 리소스를 사용하는 서버측 커서의 사용자를 대체할 수 있습니다. 마지막으로 여러 작업이 단일 연결에서 실행 수, 있으므로 사용 하지 않아도 동일한 트랜잭션 컨텍스트를 공유 수 **sp_getbindtoken** 및 **sp_bindsession** 시스템 저장 프로시저입니다.  
+ MARS를 사용하면 하나의 연결을 둘 이상의 보류 중인 작업과 함께 읽기 작업 및 DML(데이터 조작 언어) 작업 모두에 사용할 수 있습니다. 이 기능을 사용하면 응용 프로그램에서 연결 사용 오류를 처리할 필요가 없습니다. 또한 MARS는 일반적으로 더 많은 리소스를 사용하는 서버측 커서의 사용자를 대체할 수 있습니다. 마지막으로, 단일 연결에서 여러 작업 실행 될 수, 있으므로 사용 하지 않아도 동일한 트랜잭션 컨텍스트를 공유할 수 있습니다 **sp_getbindtoken** 하 고 **sp_bindsession** 시스템 저장 절차입니다.  
   
- 다음 콘솔 응용 프로그램에서는 두 개의 <xref:System.Data.SqlClient.SqlDataReader> 개체와 MARS가 활성화된 세 개의 <xref:System.Data.SqlClient.SqlCommand> 개체 및 하나의 <xref:System.Data.SqlClient.SqlConnection> 개체를 함께 사용하는 방법을 보여 줍니다. 첫 번째 명령 개체에서는 신용 등급이 5인 공급업체 목록을 검색합니다. 두 번째 명령 개체는 <xref:System.Data.SqlClient.SqlDataReader>에서 제공한 공급업체 ID를 사용하여 두 번째 <xref:System.Data.SqlClient.SqlDataReader>와 함께 특정 공급업체의 모든 제품을 로드합니다. 각 제품 레코드에는 두 번째 <xref:System.Data.SqlClient.SqlDataReader>에서 액세스합니다. 새로운 결정 하는 계산을 수행 하는 **OnOrderQty** 이어야 합니다. 세 번째 명령 개체는 다음 업데이트 하는 데는 **ProductVendor** 새 값이 있는 테이블입니다. 이 전체 프로세스가 단일 트랜잭션에서 발생하며 프로세스가 끝나면 롤백됩니다.  
+ 다음 콘솔 응용 프로그램에서는 두 개의 <xref:System.Data.SqlClient.SqlDataReader> 개체와 MARS가 활성화된 세 개의 <xref:System.Data.SqlClient.SqlCommand> 개체 및 하나의 <xref:System.Data.SqlClient.SqlConnection> 개체를 함께 사용하는 방법을 보여 줍니다. 첫 번째 명령 개체에서는 신용 등급이 5인 공급업체 목록을 검색합니다. 두 번째 명령 개체는 <xref:System.Data.SqlClient.SqlDataReader>에서 제공한 공급업체 ID를 사용하여 두 번째 <xref:System.Data.SqlClient.SqlDataReader>와 함께 특정 공급업체의 모든 제품을 로드합니다. 각 제품 레코드에는 두 번째 <xref:System.Data.SqlClient.SqlDataReader>에서 액세스합니다. 새로운 결정할 계산을 수행 **OnOrderQty** 이어야 합니다. 세 번째 명령 개체는 다음 업데이트 하는 데는 **ProductVendor** 새 값이 있는 테이블입니다. 이 전체 프로세스가 단일 트랜잭션에서 발생하며 프로세스가 끝나면 롤백됩니다.  
   
 > [!NOTE]
->  다음 예제에서는 샘플을 사용 하 여 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다. 샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다. 사용자 환경의 필요에 따라 연결 문자열을 수정합니다.  
+>  다음 예제에서는 샘플 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다. 샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다. 사용자 환경의 필요에 따라 연결 문자열을 수정합니다.  
   
 ```csharp
 using System;  

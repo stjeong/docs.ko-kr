@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 09bfa08589bda68258883e6f080392f534e8c5df
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a444b7eace18fa579324f540e8cf7537c420a6a8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365880"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43425758"
 ---
 # <a name="code-contracts"></a>코드 계약
 코드 계약을 통해 코드에서 사전 조건, 사후 조건 및 개체 고정을 지정할 수 있습니다. 사전 조건은 메서드 또는 속성을 입력할 때 충족해야 하는 요구 사항입니다. 사후 조건은 메서드 또는 속성 코드가 종료될 때의 예상을 설명합니다. 개체 고정은 양호한 상태인 클래스의 예상 상태를 설명합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "33365880"
   
  계약 클래스에 있는 대부분의 메서드는 조건부로 컴파일됩니다. 즉, `#define` 지시문을 사용하여 특수 기호 CONTRACTS_FULL을 정의하는 경우에만 컴파일러가 이러한 메서드 호출을 내보냅니다. CONTRACTS_FULL을 사용하면 `#ifdef` 지시문을 사용하지 않고 코드에서 계약을 작성할 수 있습니다. 일부는 계약을 포함하고 일부는 계약을 포함하지 않는 다양한 빌드를 생성할 수 있습니다.  
   
- 코드 계약을 사용하기 위한 도구 및 자세한 지침은 MSDN DevLabs 웹 사이트의 [코드 계약](http://go.microsoft.com/fwlink/?LinkId=152461)을 참조하세요.  
+ 코드 계약을 사용하기 위한 도구 및 자세한 지침은 MSDN DevLabs 웹 사이트의 [코드 계약](https://go.microsoft.com/fwlink/?LinkId=152461)을 참조하세요.  
   
 ## <a name="preconditions"></a>사전 조건  
  <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType> 메서드를 사용하여 사전 조건을 표현할 수 있습니다. 사전 조건은 메서드가 호출될 때의 상태를 지정합니다. 일반적으로 유효한 매개 변수 값을 지정하는 데 사용됩니다. 사전 조건에 언급된 모든 멤버는 최소한 메서드 자체만큼 액세스 가능해야 합니다. 그러지 않으면 메서드의 일부 호출자가 사전 조건을 이해하지 못할 수 있습니다. 조건에 파생 작업이 없어야 합니다. 실패한 사전 조건의 런타임 동작은 런타임 분석기에 의해 결정됩니다.  

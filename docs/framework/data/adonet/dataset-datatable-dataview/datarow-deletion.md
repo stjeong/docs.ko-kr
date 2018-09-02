@@ -5,21 +5,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c34f531d-4b9b-4071-b2d7-342c402aa586
-ms.openlocfilehash: 128c41e1906b17e7f42458e8a5f1b3d3ec9cc449
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e7e687dfa6af47161be9d26054eb58f319a5099d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32757517"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43425598"
 ---
 # <a name="datarow-deletion"></a>DataRow 삭제
-두 가지가 삭제 하는 데 사용할 수는 <xref:System.Data.DataRow> 에서 개체는 <xref:System.Data.DataTable> 개체:는 **제거** 의 메서드는 <xref:System.Data.DataRowCollection> 개체 및 <xref:System.Data.DataRow.Delete%2A> 의 메서드는 **DataRow**개체입니다. 반면는 <xref:System.Data.DataRowCollection.Remove%2A> 메서드 삭제는 **DataRow** 에서 **DataRowCollection**, <xref:System.Data.DataRow.Delete%2A> 메서드는 삭제할 행을 표시만 합니다. 응용 프로그램 호출 때 실제 제거는 **AcceptChanges** 메서드. <xref:System.Data.DataRow.Delete%2A>를 사용하면 행을 실제로 삭제하기 전에 삭제 표시된 행을 프로그래밍 방식으로 확인할 수 있습니다. 삭제 표시된 행의 <xref:System.Data.DataRow.RowState%2A> 속성은 <xref:System.Data.DataRow.Delete%2A>로 설정됩니다.  
+두 가지 방법을 삭제 하는 데 사용할 수는 <xref:System.Data.DataRow> 에서 개체를 <xref:System.Data.DataTable> 개체:는 **제거** 메서드를 <xref:System.Data.DataRowCollection> 개체 및 <xref:System.Data.DataRow.Delete%2A> 메서드의 **DataRow**개체입니다. 반면 합니다 <xref:System.Data.DataRowCollection.Remove%2A> 메서드를 **DataRow** 에서 **DataRowCollection**, <xref:System.Data.DataRow.Delete%2A> 메서드는 삭제할 행을 표시만 합니다. 응용 프로그램 호출 때 실제 제거 합니다 **AcceptChanges** 메서드. <xref:System.Data.DataRow.Delete%2A>를 사용하면 행을 실제로 삭제하기 전에 삭제 표시된 행을 프로그래밍 방식으로 확인할 수 있습니다. 삭제 표시된 행의 <xref:System.Data.DataRow.RowState%2A> 속성은 <xref:System.Data.DataRow.Delete%2A>로 설정됩니다.  
   
  <xref:System.Data.DataRow.Delete%2A> 개체를 반복하는 동안에는 foreach 루프에서 <xref:System.Data.DataRowCollection.Remove%2A> 또는 <xref:System.Data.DataRowCollection>가 호출되지 않아야 합니다. <xref:System.Data.DataRow.Delete%2A> 또는 <xref:System.Data.DataRowCollection.Remove%2A>는 컬렉션의 상태를 수정하지 않습니다.  
   
- 사용 하는 경우는 <xref:System.Data.DataSet> 또는 **DataTable** 함께에서 **DataAdapter** 및 사용 하 여 관계형 데이터 원본에서 **삭제** 의 메서드는  **DataRow** 행을 제거 합니다. **삭제** 메서드는 해당 행을 표시 **Deleted** 에 **DataSet** 또는 **DataTable** 되지만 제거 되지는 않습니다. 대신,는 **DataAdapter** 로 표시 된 행을 발견 하면 **Deleted**, 실행의 **DeleteCommand** 데이터 소스에서 행을 삭제 하는 메서드. 행 수 다음 영구적으로 제거를 사용 하 여 **AcceptChanges** 메서드. 사용 하는 경우 **제거** 행을 삭제 하려면 해당 행은 테이블에서 완전히 제거 되지만 **DataAdapter** 데이터 소스에서 행을 삭제 하지 것입니다.  
+ 사용 하는 경우는 <xref:System.Data.DataSet> 또는 **DataTable** 와 함께에서 **DataAdapter** 및 관계형 데이터 원본을 사용 하 여를 **삭제** 메서드를  **DataRow** 행을 제거 합니다. **삭제** 메서드는 해당 행을 표시 **Deleted** 에 **데이터 집합** 또는 **DataTable** 되지만 제거 되지는 않습니다. 대신, 합니다 **DataAdapter** 로 표시 된 행을 발견 하면 **삭제 됨**, 실행 해당 **DeleteCommand** 데이터 원본에서 행을 삭제 하는 방법. 행 후 영구적으로 제거할 수를 사용 하 여 **AcceptChanges** 메서드. 사용 하는 경우 **제거할** 행을 삭제 하려면 해당 행이 테이블에서 완전히 제거 되지만 **DataAdapter** 데이터 소스에서 행을 삭제 하지 것입니다.  
   
- **제거** 의 메서드는 **DataRowCollection** 사용는 **DataRow** 인수로 서 다음 예제와 같이 컬렉션에서 제거 합니다.  
+ **제거** 메서드를 **DataRowCollection** 사용을 **DataRow** 인수로 다음 예제에서와 같이 컬렉션에서 제거 합니다.  
   
 ```vb  
 workTable.Rows.Remove(workRow)  
@@ -29,7 +29,7 @@ workTable.Rows.Remove(workRow)
 workTable.Rows.Remove(workRow);  
 ```  
   
- 반대로 다음 예제에서는 호출 하는 방법을 **삭제** 에서 메서드는 **DataRow** 변경 하려면 해당 **RowState** 를 **Deleted** .  
+ 반면, 다음 예제에서는 호출 하는 방법에 설명 합니다 **삭제** 메서드를를 **DataRow** 변경 하려면 해당 **RowState** 를 **Deleted** .  
   
 ```vb  
 workRow.Delete  
@@ -39,14 +39,14 @@ workRow.Delete
 workRow.Delete();  
 ```  
   
- 행 삭제로 표시 되 고 호출 하는 경우는 **AcceptChanges** 의 메서드는 **DataTable** 개체에서 행이 제거 되는 **DataTable**합니다. 반대로, 호출 하는 경우 **RejectChanges**, **RowState** 행의 되돌아갑니다로 표시 되기 전에 **Deleted**합니다.  
+ 행 삭제로 표시 되 고 호출 하는 경우는 **AcceptChanges** 메서드의 **DataTable** 개체에서 행이 제거 되는 **DataTable**합니다. 반대로, 호출 하는 경우 **RejectChanges**의 **RowState** 행의 되돌아갑니다로 표시 되기 전에 **Deleted**합니다.  
   
 > [!NOTE]
->  경우는 **RowState** 의 **DataRow** 은 **Added**, 테이블에만 추가 되 것을 의미 하 고으로 표시 되어 있어 **Deleted**는 테이블에서 제거 합니다.  
+>  경우는 **RowState** 의 **DataRow** 은 **Added**, 테이블에만 추가 되었습니다 의미 및 것으로 표시 됩니다 **Deleted**, 것 테이블에서 제거 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Data.DataRow>  
  <xref:System.Data.DataRowCollection>  
  <xref:System.Data.DataTable>  
  [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

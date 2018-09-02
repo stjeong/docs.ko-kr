@@ -10,11 +10,11 @@ helpviewer_keywords:
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 ms.openlocfilehash: fe200add4e29fe4bbe0fdf335dcd94107b8ff1eb
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932594"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43425640"
 ---
 # <a name="return-statement-visual-basic"></a>Return 문(Visual Basic)
 호출한 코드로 제어가 되돌아갑니다를 `Function`, `Sub`를 `Get`를 `Set`, 또는 `Operator` 프로시저입니다.  
@@ -41,7 +41,7 @@ Return expression
 > [!NOTE]
 >  코드를 `Finally` 블록 실행를 `Return` 문에서 `Try` 또는 `Catch` 만난 전에 블록은 `Return` 문을 실행 합니다. A `Return` 에 문의 포함할 수 없습니다는 `Finally` 블록입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `Return` 문을 여러 번 절차는 다른 작업을 수행 하지 않아도 되는 경우 호출 코드에 반환 합니다.  
   
  [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  

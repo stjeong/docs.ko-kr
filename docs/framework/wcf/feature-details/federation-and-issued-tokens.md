@@ -6,15 +6,15 @@ helpviewer_keywords:
 - issued tokens [WCF]
 - federation [WCF], issued tokens
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
-ms.openlocfilehash: b6a5411b74b53cb5e3b18cced7fd8fc09e9a9676
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bdbd5c49197b65816da9b0f2c87d97afb893d79f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33491579"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43420212"
 ---
 # <a name="federation-and-issued-tokens"></a>페더레이션 및 발급된 토큰
-와 WCF Windows Communication Foundation (), Ws-federation 및 Ws-trust 사양을 구현 하는 서비스와 안전 하 게 통신 하는 클라이언트를 만들 수 있습니다. 사양은 XML, SOAP 및 WSDL(웹 서비스 기술 언어)을 사용하여 여러 신뢰 영역 간에 인증 및 권한을 사용할 수 있는 메커니즘을 제공합니다.  
+사용 하 여 Windows Communication Foundation (WCF), Ws-federation 및 Ws-trust 사양을 구현 하는 서비스를 사용 하 여 안전 하 게 통신 하는 클라이언트를 만들 수 있습니다. 사양은 XML, SOAP 및 WSDL(웹 서비스 기술 언어)을 사용하여 여러 신뢰 영역 간에 인증 및 권한을 사용할 수 있는 메커니즘을 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [페더레이션](../../../../docs/framework/wcf/feature-details/federation.md)  
@@ -64,4 +64,4 @@ ms.locfileid: "33491579"
 ## <a name="see-also"></a>참고 항목  
  [권한 부여](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
  [사용자 지정 토큰](../../../../docs/framework/wcf/extending/custom-tokens.md)  
- [Windows Server App Fabric에 대 한 보안 모델](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

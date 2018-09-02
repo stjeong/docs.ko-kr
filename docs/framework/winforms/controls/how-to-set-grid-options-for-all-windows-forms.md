@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, grid options in designer
 - Windows Forms Designer
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
-ms.openlocfilehash: f1779752cea467cbd7ee25235821ca99fc5cbdb5
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: ef6dc80bc00e2582b514bff7fe3e9c5d6d5770e6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253354"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43420986"
 ---
 # <a name="how-to-set-grid-options-for-all-windows-forms"></a>방법: 모든 Windows Forms에 대한 모눈 옵션 설정
 Visual Studio 개발 환경에서 작업 하는 데 익숙해지면 모든 폼과 작업할 프로젝트에 대 한 기본 Windows Forms 디자이너에서 설정할 수 있습니다.  
@@ -31,7 +31,7 @@ Visual Studio 개발 환경에서 작업 하는 데 익숙해지면 모든 폼�
   
 ## <a name="see-also"></a>참고 항목  
  [연습: Windows Forms에서 맞춤선을 사용하여 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
- [일반적으로 Windows Forms 디자이너, 옵션 대화 상자](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
+ [일반적으로 Windows Forms 디자이너, 옵션 대화 상자](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
  [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)  
  [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)  
  [Windows Forms에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)  

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - interface implementation [Visual Basic], Implements statement
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
 ms.openlocfilehash: 805813506b957afb326c71ee4bbb15837726e4e5
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42907998"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43425952"
 ---
 # <a name="implements-statement"></a>Implements 문
 인터페이스 또는 클래스에서 구현 해야 하는 인터페이스 멤버의 경우 또는 나타나는 구조 정의 하나 이상 지정 합니다.  
@@ -43,14 +43,14 @@ Implements interfacename.interfacemember [, ...]
   
  클래스를 사용할 수 있습니다 [개인](../../../visual-basic/language-reference/modifiers/private.md) 속성 프로시저 하며 이러한 멤버의 구현을 인터페이스의 형식으로 선언 된 변수를 구현 하는 클래스의 인스턴스로 캐스팅 액세스할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법의 `Implements` 인터페이스의 멤버를 구현 하는 문입니다. 라는 인터페이스가 정의 `ICustomerInfo` 이벤트, 속성 및 프로시저를 사용 하 여 합니다. 클래스 `customerInfo` 인터페이스에 정의 된 모든 멤버를 구현 합니다.  
   
  [!code-vb[VbVbalrStatements#33](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_1.vb)]  
   
  클래스 `customerInfo` 사용 하는 `Implements` 클래스의 모든 멤버를 구현 함을 나타내기 위해 별도 소스 코드 줄에서 문은 `ICustomerInfo` 인터페이스입니다. 각 멤버는 클래스에서 사용 하 여는 `Implements` 키워드는 인터페이스 멤버를 구현 함을 나타내려면 멤버 선언의 일부로 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 두 절차 앞의 예제에서 구현 된 인터페이스를 사용 하는 방법을 보여 줍니다. 구현을 테스트 하려면 다음이 절차 호출 프로젝트에 추가 된 `testImplements` 프로시저입니다.  
   
  [!code-vb[VbVbalrStatements#34](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_2.vb)]  

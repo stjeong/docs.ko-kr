@@ -2,15 +2,15 @@
 title: 아키텍처 및 디자인
 ms.date: 03/30/2017
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
-ms.openlocfilehash: c2e8ff5f21a2941d75b21915552e6935a1423978
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5a0d8aac401a3485bc5f158bcda893ad9ab424e8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766870"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43419606"
 ---
 # <a name="architecture-and-design"></a>아키텍처 및 디자인
-SQL 생성 모듈은 [샘플 공급자](http://go.microsoft.com/fwlink/?LinkId=180616) 명령 트리를 나타내는 식 트리 방문자로 구현 됩니다. 생성은 식 트리에 대한 단일 패스로 수행됩니다.  
+SQL 생성 모듈은 [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616) 명령 트리를 나타내는 식 트리의 방문자로 구현 됩니다. 생성은 식 트리에 대한 단일 패스로 수행됩니다.  
   
  트리의 노드는 아래쪽에서 위쪽으로 처리됩니다. 먼저 중간 구조인 SqlSelectStatement 또는 SqlBuilder가 생성되며, 둘 다 ISqlFragment를 구현합니다. 그런 다음 이 구조에서 SQL 문 문자열이 생성됩니다. 중간 구조를 사용하는 이유는 두 가지입니다.  
   
@@ -25,7 +25,7 @@ SQL 생성 모듈은 [샘플 공급자](http://go.microsoft.com/fwlink/?LinkId=1
  두 번째 단계에서는 실제 문자열을 생성하는 동안 별칭의 이름이 바뀝니다.  
   
 ## <a name="data-structures"></a>데이터 구조  
- 이 섹션에 사용 되는 형식에 설명 된 [샘플 공급자](http://go.microsoft.com/fwlink/?LinkId=180616) SQL 문을 작성 하는 데 사용 하 합니다.  
+ 이 섹션에 사용 되는 형식을 설명 합니다 [샘플 공급자](https://go.microsoft.com/fwlink/?LinkId=180616) 사용 하 여 SQL 문을 작성 합니다.  
   
 ### <a name="isqlfragment"></a>ISqlFragment  
  이 단원에서는 다음 두 가지 용도로 사용되는 ISqlFragment 인터페이스를 구현하는 클래스를 살펴봅니다.  
@@ -52,7 +52,7 @@ internal sealed class SqlBuilder : ISqlFragment {
 ```  
   
 #### <a name="sqlselectstatement"></a>SqlSelectStatement  
- Sqlselectstatement는 "SELECT... 모양의 정식 SQL SELECT 문 보낸 사람.. WHERE... 기준으로 그룹화 하는 중... ORDER BY "입니다.  
+ SqlSelectStatement "SELECT... 모양의 정식 SQL SELECT 문을 나타냅니다. 보낸 사람.. WHERE... 그룹화 기준... ORDER BY "입니다.  
   
  각 SQL 절은 StringBuilder에 의해 표현됩니다. 또한 Distinct가 지정되었는지 여부와 문이 맨 위에 있는지 여부를 추적합니다. 문이 맨 위에 없는 경우 문에 TOP 절이 없으면 ORDER BY 절이 생략됩니다.  
   
@@ -212,13 +212,13 @@ private bool IsParentAJoin{get}
 ### <a name="input-alias-redirecting"></a>입력 별칭 리디렉션  
  입력 별칭 리디렉션은 기호 테이블을 사용하여 수행됩니다.  
   
- 첫 번째 예제를 참조 입력된 별칭 리디렉션을 설명, [명령 트리-모범 사례에서에서 sql 문을 생성](../../../../../docs/framework/data/adonet/ef/generating-sql-from-command-trees-best-practices.md)합니다.  이 예제에서 "a"는 프로젝션에서 "b"로 리디렉션되어야 합니다.  
+ 입력된 별칭 리디렉션을 설명, 참조의 첫 번째 예제 [명령 트리-모범 사례에서에서 sql 문을 생성](../../../../../docs/framework/data/adonet/ef/generating-sql-from-command-trees-best-practices.md)합니다.  이 예제에서 "a"는 프로젝션에서 "b"로 리디렉션되어야 합니다.  
   
  SqlSelectStatement 개체가 만들어지면 노드의 입력인 익스텐트가 SqlSelectStatement의 From 속성에 삽입됩니다. 기호(<symbol_b>)가 이 익스텐트를 나타내기 위해 입력 바인딩 이름("b")을 기반으로 만들어지며 "AS  " + <symbol_b>가 FROM 절에 추가됩니다.  이 기호는 FromExtents 속성에도 추가됩니다.  
   
  이 기호는 입력 바인딩 이름을 해당 기호에 연결하기 위해 기호 테이블에도 추가됩니다("b", <symbol_b>).  
   
- 이후의 노드는 이 SqlSelectStatement를 다시 사용하는 경우 입력 바인딩 이름을 해당 기호에 연결하기 위해 기호 테이블에 항목을 추가합니다. 예제에서는 입력된 바인딩 이름이 "a" 인 DbProjectExpression은 SqlSelectStatement를 다시 사용 하 고 추가 ("a", \< symbol_b >) 테이블에 있습니다.  
+ 이후의 노드는 이 SqlSelectStatement를 다시 사용하는 경우 입력 바인딩 이름을 해당 기호에 연결하기 위해 기호 테이블에 항목을 추가합니다. 이 예에서 입력된 바인딩 이름이 "a" 인 DbProjectExpression은 SqlSelectStatement를 다시 사용 하 고 추가 ("a", \< symbol_b >) 테이블에 있습니다.  
   
  식에서 SqlSelectStatement를 다시 사용하는 노드의 입력 바인딩 이름을 참조하는 경우 이 참조는 기호 테이블을 사용하여 올바른 리디렉션된 기호로 확인됩니다. "a"를 나타내는 DbVariableReferenceExpression을 방문하는 동안 "a.x"의 "a"가 확인될 때 기호 <symbol_b>로 확인됩니다.  
   
@@ -324,7 +324,7 @@ ORDER BY sk1, sk2, ...
 <leftSqlSelectStatement> <setOp> <rightSqlSelectStatement>  
 ```  
   
- 여기서 \<leftSqlSelectStatement > 및 \<rightSqlSelectStatement > 각 입력을 방문 하 여 가져온 Sqlselectstatement는 및 \<setOp >는 해당 작업 (UNION ALL 예:).  
+ 여기서 \<leftSqlSelectStatement > 및 \<rightSqlSelectStatement >는 각 입력을 방문 하 여 가져온 sqlselectstatement이 고 및 \<setOp >는 해당 연산 (UNION ALL 예를 들어).  
   
 ### <a name="dbscanexpression"></a>DbScanExpression  
  다른 조인의 왼쪽 자식인 조인에 대한 입력으로 조인 컨텍스트에서 방문되는 경우 DbScanExpression은 정의 쿼리, 테이블 또는 뷰인 해당 대상의 대상 SQL과 함께 SqlBuilder를 반환합니다. 그렇지 않은 경우에는 해당 대상과 일치하도록 FROM 필드가 설정되어 새 SqlSelectStatement가 만들어집니다.  

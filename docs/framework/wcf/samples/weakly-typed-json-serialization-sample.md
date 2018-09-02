@@ -2,17 +2,17 @@
 title: 약한형 JSON Serialization 샘플
 ms.date: 03/30/2017
 ms.assetid: 0b30e501-4ef5-474d-9fad-a9d559cf9c52
-ms.openlocfilehash: 294c00bd18b5fabba5baa20770fd593031a98994
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 07166b89729fed7911cb842313269e420ae401b7
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805722"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43417814"
 ---
 # <a name="weakly-typed-json-serialization-sample"></a>약한형 JSON Serialization 샘플
 사용자 정의 형식을 지정된 통신 형식으로 serialize하거나 통신 형식을 사용자 정의 형식으로 다시 deserialize할 경우 서비스와 클라이언트 모두에서 지정된 사용자 정의 형식을 사용할 수 있어야 합니다. 보통 이렇게 하기 위해 이 사용자 정의 형식에 <xref:System.Runtime.Serialization.DataContractAttribute> 특성을 적용하고 해당 멤버에 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성을 적용합니다. 이 메커니즘은 [How to: Serialize and Deserialize JSON Data](../../../../docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md)항목에 설명된 대로 JSON(JavaScript Object Notation) 개체로 작업하는 경우에도 적용됩니다.  
   
- 일부 시나리오에서는 Windows Communication Foundation (WCF) 서비스 또는 클라이언트 서비스 또는 개발자의 제어 범위 밖에 있는 클라이언트에 의해 생성 된 JSON 개체에 액세스 해야 합니다. 더 많은 웹 서비스 공개적으로 JSON Api를 노출 WCF 개발자가 임의의 JSON 개체를 deserialize 하는 로컬 사용자 정의 형식을 구성에 대 한 변경이 불가능 될 수 있습니다. 이 샘플에서는 WCF 개발자가 사용자 정의 형식을 만들지 않고 deserialize 된 임의의 JSON 개체로 작업할 수 있도록 하는 메커니즘을 제공 합니다. 컴파일할 때에는 JSON 개체가 deserialize되는 형식을 알 수 없기 때문에 JSON 개체의 *약한 형식의 serialization* 이라고 합니다.  
+ 일부 시나리오에서는 Windows Communication Foundation (WCF) 서비스 또는 클라이언트를 서비스 또는 개발자의 제어의 바깥쪽에 클라이언트에서 생성 된 JSON 개체를 액세스 해야 합니다. 더 많은 웹 서비스에서 공개적으로 JSON Api를 노출 하는 대로 실익이 없어질 수도 있습니다 WCF 개발자가 임의의 JSON 개체를 deserialize 하는 로컬 사용자 정의 형식을 생성 합니다. 이 샘플에서는 WCF 개발자가 사용자 정의 형식을 만들지 않고 deserialize 된 임의의 JSON 개체로 작업할 수 있도록 하는 메커니즘을 제공 합니다. 컴파일할 때에는 JSON 개체가 deserialize되는 형식을 알 수 없기 때문에 JSON 개체의 *약한 형식의 serialization* 이라고 합니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "33805722"
 {"personal": {"name": "Paul", "age": 23, "height": 1.7, "isSingle": true, "luckyNumbers": [5,17,21]}, "favoriteBands": ["Band ABC", "Band XYZ"]}  
 ```  
   
- 이 개체를 deserialize 하려면 WCF 클라이언트에서 다음 사용자 정의 형식을 구현 해야 합니다.  
+ 이 개체를 deserialize 하려면 WCF 클라이언트는 다음 사용자 정의 형식 구현 해야 합니다.  
   
 ```  
 [DataContract]  
@@ -110,7 +110,7 @@ XmlDictionaryReader reader = channel.GetMemberProfile().GetReaderAtBodyContents(
 JsonObject json = new JsonObject(reader);  
 ```  
   
- `JsonObject` 생성자는 <xref:System.Xml.XmlDictionaryReader>메서드를 통해 얻을 수 있는 <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> 를 받습니다. 판독기에는 클라이언트에서 받는 JSON 메시지의 XML 표현이 포함되어 있습니다. 자세한 내용은 항목을 참조 하십시오. [JSON 간 매핑 및 XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)합니다.  
+ `JsonObject` 생성자는 <xref:System.Xml.XmlDictionaryReader>메서드를 통해 얻을 수 있는 <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> 를 받습니다. 판독기에는 클라이언트에서 받는 JSON 메시지의 XML 표현이 포함되어 있습니다. 자세한 내용은 항목을 참조 하세요 [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)합니다.  
   
  프로그램에서는 다음이 출력됩니다.  
   
@@ -125,7 +125,7 @@ My favorite bands are Band ABC and Band XYZ.
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)에 설명된 대로 WeaklyTypedJson.sln 솔루션을 빌드합니다.  
   
@@ -136,7 +136,7 @@ My favorite bands are Band ABC and Band XYZ.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Ajax\WeaklyTypedJson`  
   

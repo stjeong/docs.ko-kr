@@ -6,12 +6,12 @@ helpviewer_keywords:
 - bugreport compiler option [Visual Basic]
 - /bugreport compiler option [Visual Basic]
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
-ms.openlocfilehash: 0383a5e369ee4a8146764c13b2f12f48ebe52190
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: e8366e1050217f3d993d510683252728aba0c3d9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934579"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43452650"
 ---
 # <a name="-bugreport"></a>-bugreport
 버그 보고서를 파일로 작성할 때는 사용할 수 있는 파일을 만듭니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "42934579"
 > [!NOTE]
 >  `/bugreport` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 없는 경우 즉, 사용 가능한 명령줄에서 컴파일할 때만 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 컴파일합니다 `T2.vb` 파일에서 모든 버그 보고 정보를 저장 하 고 `Problem.txt`입니다.  
   
 ```  
@@ -65,4 +65,4 @@ vbc -bugreport:problem.txt t2.vb
  [-디버그 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)  
  [-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)  
  [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [securityPolicy (ASP.NET 설정 스키마)에 대 한 trustLevel 요소](http://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369)
+ [securityPolicy (ASP.NET 설정 스키마)에 대 한 trustLevel 요소](https://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369)

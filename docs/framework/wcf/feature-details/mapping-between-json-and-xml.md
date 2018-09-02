@@ -2,12 +2,12 @@
 title: JSON과 XML 간의 매핑
 ms.date: 03/30/2017
 ms.assetid: 22ee1f52-c708-4024-bbf0-572e0dae64af
-ms.openlocfilehash: e8cc356a30d11a6f07cf4444efbeda2faf5b0471
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 079ca9cebefcc96bffdb0ec4601a675ed83adefe
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931471"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43421725"
 ---
 # <a name="mapping-between-json-and-xml"></a>JSON과 XML 간의 매핑
 <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>에서 생성된 판독기 및 작성기는 JSON(JavaScript Object Notation) 콘텐츠를 통해 XML API를 제공합니다. JSON은 JavaScript 개체 리터럴의 하위 집합을 사용하여 데이터를 인코딩합니다. JSON 콘텐츠 되는 판독기와 기록기가 팩터리에서 생성 된 수도 있습니다를 사용 하 여 Windows Communication Foundation (WCF) 응용 프로그램에서 송수신 되는 <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> 또는 <xref:System.ServiceModel.WebHttpBinding>합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "42931471"
  또한 예제의 JSON 메시지를 WCF에서 받은 기록, 하는 경우는 앞의 로그의 XML 조각은 표시 됩니다.  
   
 ## <a name="mapping-between-json-and-the-xml-infoset"></a>JSON과 XML Infoset 간의 매핑  
- 에 설명 된 대로 매핑을 JSON 간에 공식적 [RFC 4627](http://go.microsoft.com/fwlink/?LinkId=98808) (특정 제한 제외 완화 및 특정 제한과 추가 된 기타) 및 XML infoset (및 텍스트가 아닌 XML)으로 설명 된 [XML 정보 설정](http://go.microsoft.com/fwlink/?LinkId=98809) 합니다. 이 항목의 정의 대 한 참조 *정보 항목* 및 [대괄호] 안에 있는 필드입니다.  
+ 에 설명 된 대로 매핑을 JSON 간에 공식적 [RFC 4627](https://go.microsoft.com/fwlink/?LinkId=98808) (특정 제한 제외 완화 및 특정 제한과 추가 된 기타) 및 XML infoset (및 텍스트가 아닌 XML)으로 설명 된 [XML 정보 설정](https://go.microsoft.com/fwlink/?LinkId=98809) 합니다. 이 항목의 정의 대 한 참조 *정보 항목* 및 [대괄호] 안에 있는 필드입니다.  
   
  빈 JSON 문서는 빈 XML 문서를에 매핑되고 빈 XML 문서가 빈 JSON 문서에 매핑됩니다. XML과 JSON 간 매핑에서에 대해 앞 공백 및 후행 공백을 문서 뒤을 허용 되지 않습니다.  
   

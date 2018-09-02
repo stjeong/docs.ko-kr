@@ -2,15 +2,15 @@
 title: 텍스트 파일 사용 추적
 ms.date: 03/30/2017
 ms.assetid: 56a82682-73c2-4b91-a206-4d8bb12c561b
-ms.openlocfilehash: aa59ab8304c68873c938f42fc585be883b234ecc
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 19b4d544bc1d1c5bc9ebfa51b4ba28eb82c525d0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805800"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43422891"
 ---
 # <a name="tracking-using-a-text-file"></a>텍스트 파일 사용 추적
-이 샘플에서는 사용자 지정 추적 참가자를 만들어 추적에서 Windows WF (Workflow Foundation)를 확장 하는 방법을 보여 줍니다. 추적 참가자는 추적 레코드를 내보낼 때 런타임에서 추적 레코드를 받는 .NET Framework 클래스입니다. 시나리오에 필요한 대상에 추적 이벤트를 전송하는 추적 참가자를 만들 수 있습니다. 예를 들어 ETW(Windows용 이벤트 추적) 추적 참가자는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 일부로 제공됩니다. 이 샘플의 추적 참가자는 XML 형식의 레코드를 텍스트 파일에 기록합니다.  
+이 샘플에는 사용자 지정 추적 참가자를 만들어에서 Windows WF (Workflow Foundation) 추적을 확장 하는 방법을 보여 줍니다. 추적 참가자는 추적 레코드를 내보낼 때 런타임에서 추적 레코드를 받는 .NET Framework 클래스입니다. 시나리오에 필요한 대상에 추적 이벤트를 전송하는 추적 참가자를 만들 수 있습니다. 예를 들어 ETW(Windows용 이벤트 추적) 추적 참가자는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 일부로 제공됩니다. 이 샘플의 추적 참가자는 XML 형식의 레코드를 텍스트 파일에 기록합니다.  
   
 ## <a name="sample-details"></a>샘플 세부 정보  
  추적 참가자의 유용성과 견고성을 최적화하려면 추적 참가자를 런타임에 올바르게 연결하기 위한 몇 가지 추가 단계를 완료해야 합니다. 다음 표에서는 이 샘플에서 최선의 방법을 따르는 추적 참가자를 만드는 데 사용된 클래스에 대해 설명합니다.  
@@ -18,7 +18,7 @@ ms.locfileid: "33805800"
 |클래스|설명|  
 |-----------|-----------------|  
 |`TextFileTrackingExtensionElement`|<xref:System.ServiceModel.Configuration.BehaviorExtensionElement>는 텍스트 파일 추적 참가자를 구성하는 데 사용되는 구성 섹션을 정의하는 데 사용됩니다. 이 클래스를 사용하면 사용자가 표준 .NET Framework 구성 파일을 사용하여 로그 파일의 대상을 지정할 수 있습니다.|  
-|`TextFileTrackingBehavior`|WCF의 동작 확장을 런타임에 삽입할 수 있도록 합니다. 이 동작은 서비스가 시작될 때 추적 참가자를 서비스에 추가합니다.|  
+|`TextFileTrackingBehavior`|WCF의 동작을 런타임에 확장을 삽입 하는 사용자를 수 있습니다. 이 동작은 서비스가 시작될 때 추적 참가자를 서비스에 추가합니다.|  
 |`TextFileTrackingParticipant`|런타임에 추적 참가자를 받아 로그 파일에 XML로 저장하는 추적 참가자입니다.|  
   
 ## <a name="behavior-extension-elements-configuration"></a>동작 확장 요소 구성  
@@ -53,7 +53,7 @@ ms.locfileid: "33805800"
   
 4.  브라우저에서 StockPriceService.xamlx를 클릭합니다.  
   
-5.  브라우저 표시는 **StockPriceService** 로컬 서비스 wsdl 주소가 포함 된 페이지가 있습니다. 이 주소를 복사합니다.  
+5.  브라우저 표시 합니다 **StockPriceService** 로컬 서비스 wsdl 주소가 포함 된 페이지가 있습니다. 이 주소를 복사합니다.  
   
      로컬 서비스 wsdl 주소의 예로 http://localhost:53797/StockPriceService.xamlx?wsdl합니다.  
   
@@ -69,27 +69,27 @@ ms.locfileid: "33805800"
   
 11. WCF 테스트 클라이언트를 사용하여 서비스를 테스트합니다.  
   
-    1.  WCF 테스트 클라이언트에서 두 번 클릭 **getstockprice ()** 아래는 **IStockPriceService** 노드.  
+    1.  WCF 테스트 클라이언트에서 두 번 클릭 **getstockprice ()** 아래의 합니다 **IStockPriceService** 노드.  
   
-         **getstockprice ()** 메서드가 매개 변수를 사용 하 고 오른쪽 창에 나타납니다.  
+         합니다 **getstockprice ()** 메서드 매개 변수 하나를 사용 하 여 오른쪽 창에 표시 됩니다.  
   
     2.  매개 변수 값으로 Contoso를 입력합니다.  
   
-    3.  클릭 **호출**합니다.  
+    3.  클릭 **호출할**합니다.  
   
 12. 응용 프로그램 데이터 디렉터리에 있는 로그 파일(%APPDATA%\trackingRecords.log)에서 추적된 이벤트를 참조하세요.  
   
     > [!NOTE]
-    >  % APPDATA %는 %SystemDrive%\Users 확인 되는 환경 변수\\< 사용자 이름\>에 \AppData\Roaming [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], 또는 Windows Server 2008.  
+    >  % APPDATA %는 %SystemDrive%\Users로 확인 되는 환경 변수\\< 사용자 이름\>에서 \AppData\Roaming [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], 또는 Windows Server 2008.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\TextFileTracking`  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

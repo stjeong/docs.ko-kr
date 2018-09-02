@@ -2,18 +2,18 @@
 title: SQL Server에서 소유권 및 사용자와 스키마 분리
 ms.date: 03/30/2017
 ms.assetid: 242830c1-31b5-4427-828c-cc22ff339f30
-ms.openlocfilehash: 69d0c0dee6141b80908c8cdc36dfe21ff318f423
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7b1cda211fdc89732afa8eed1eaaf2c98309a969
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358409"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43421579"
 ---
 # <a name="ownership-and-user-schema-separation-in-sql-server"></a>SQL Server에서 소유권 및 사용자와 스키마 분리
 SQL Server 보안의 주요 개념은 개체 소유자에게 취소할 수 없는 개체 관리 권한이 있다는 것입니다. 개체 소유자의 권한을 제거할 수 없으며 사용자가 데이터베이스의 개체를 소유하는 경우 데이터베이스에서 사용자를 삭제할 수 없습니다.  
   
 ## <a name="user-schema-separation"></a>사용자 스키마 분리  
- 사용자 스키마 분리를 통해 데이터베이스 개체 권한을 더욱 유연하게 관리할 수 있습니다. A *스키마* 는 별도 네임 스페이스에 개체를 그룹화 수 있는 데이터베이스 개체에 대 한 명명 된 컨테이너입니다. 예를 들어, AdventureWorks 샘플 데이터베이스에는 Production, Sales 및 HumanResources에 대한 스키마가 들어 있습니다.  
+ 사용자 스키마 분리를 통해 데이터베이스 개체 권한을 더욱 유연하게 관리할 수 있습니다. A *스키마* 컨테이너인 명명 된 데이터베이스 개체에 대해 별도 네임 스페이스에 그룹 개체에 있습니다. 예를 들어, AdventureWorks 샘플 데이터베이스에는 Production, Sales 및 HumanResources에 대한 스키마가 들어 있습니다.  
   
  개체를 참조하는 4부분으로 구성된 명명 구문은 스키마 이름을 지정합니다.  
   
@@ -55,7 +55,7 @@ Server.Database.DatabaseSchema.DatabaseObject
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[사용자와 스키마 분리](http://msdn.microsoft.com/library/ms190387.aspx) SQL Server 온라인 설명서의|사용자 스키마 분리에서 도입된 변경 내용을 설명합니다. 새 동작, 소유권에 대한 영향, 카탈로그 뷰 및 권한이 포함되어 있습니다.|  
+|[사용자와 스키마 분리](https://msdn.microsoft.com/library/ms190387.aspx) SQL Server 온라인 설명서의|사용자 스키마 분리에서 도입된 변경 내용을 설명합니다. 새 동작, 소유권에 대한 영향, 카탈로그 뷰 및 권한이 포함되어 있습니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
@@ -63,4 +63,4 @@ Server.Database.DatabaseSchema.DatabaseObject
  [SQL Server에서 인증](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)  
  [SQL Server의 서버 및 데이터베이스 역할](../../../../../docs/framework/data/adonet/sql/server-and-database-roles-in-sql-server.md)  
  [SQL Server에서 권한 부여 및 권한](../../../../../docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

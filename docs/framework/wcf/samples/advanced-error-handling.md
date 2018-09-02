@@ -2,22 +2,22 @@
 title: 고급 오류 처리
 ms.date: 03/30/2017
 ms.assetid: ed54b687-78af-4eda-8507-9fd081bdea1a
-ms.openlocfilehash: 723b1ca9c2fa771d8bc3f337d9c4fde8c9632c68
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 72fb9885408759f5781501b548f81625d258d13c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33810085"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43423434"
 ---
 # <a name="advanced-error-handling"></a>고급 오류 처리
-이 샘플 Windows Communication Foundation (WCF) 라우팅 서비스를 보여 줍니다. 라우팅 서비스는 쉽게 응용 프로그램에 내용 기반 라우터를 포함 하는 WCF 구성 요소입니다. 이 샘플에서는 라우팅 서비스가 트랜잭션과 멀티캐스트 같은 보다 복잡한 다른 메시징 개념을 사용하여 오류에서 적절하게 복구하는 방법을 보여 줍니다.  
+이 샘플에서는 Windows Communication Foundation (WCF) 라우팅 서비스를 보여 줍니다. 라우팅 서비스는 쉽게 응용 프로그램에 내용 기반 라우터를 포함 하는 WCF 구성 요소입니다. 이 샘플에서는 라우팅 서비스가 트랜잭션과 멀티캐스트 같은 보다 복잡한 다른 메시징 개념을 사용하여 오류에서 적절하게 복구하는 방법을 보여 줍니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\RoutingServices\AdvancedErrorHandling`  
   
@@ -29,11 +29,11 @@ ms.locfileid: "33810085"
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
 1.  > [!IMPORTANT]
-    >  이 샘플을 실행하기 전에 MSMQ를 설치합니다. MSMQ가 설치되어 있지 않은 경우 이 샘플을 실행하면 예외 메시지가 반환됩니다. MSMQ를 설치 하기 위한 지침을 찾을 수 있습니다 [설치 메시지 큐 (MSMQ)](http://go.microsoft.com/fwlink/?LinkId=166437)합니다.  
+    >  이 샘플을 실행하기 전에 MSMQ를 설치합니다. MSMQ가 설치되어 있지 않은 경우 이 샘플을 실행하면 예외 메시지가 반환됩니다. MSMQ를 설치 하기 위한 지침을 찾을 수 있습니다 [메시지 큐 (MSMQ) 설치](https://go.microsoft.com/fwlink/?LinkId=166437)합니다.  
   
      [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]에서 AdvancedErrorHandling.sln을 엽니다.  
   
-2.  키를 눌러 **F5** 또는 **CTRL + SHIFT + B** Visual Studio에서.  
+2.  키를 눌러 **F5** 하거나 **CTRL + SHIFT + B** Visual Studio에서.  
   
     1.  Ctrl+Shift+B를 사용하여 응용 프로그램을 빌드하는 경우에는 ./RoutingService/bin/debug/RoutingService.exe에서 응용 프로그램을 시작해야 합니다.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "33810085"
  이 샘플에서는 라우팅 서비스에서 트랜잭션 및 받기 컨텍스트와 같은 고급 메시징 기능을 처리하고 이러한 기능을 올바른 처리 오류 처리 시나리오의 일부로 사용하는 방법을 보여 줍니다.  
   
 ### <a name="real-world-scenario"></a>실제 시나리오  
- Contoso에서는 라우팅 서비스를 통한 트랜잭션 수신을 사용하여 오류가 발생하더라도 필요한 모든 서비스에서 정보를 받을 수 있도록 하려고 합니다. 또한 메시지를 배달할 수 없으면 오류 처리 논리가 사용되는 경우라도 오류가 올바르게 자동 처리되고 보고되도록 하려고 합니다. 이를 위해 필요한 경우 라우팅 서비스가 특정 끝점으로 장애 조치되도록 구성하며, 라우팅 서비스에서는 트랜잭션/수신 컨텍스트의 작성, 완료 및 롤백/중단을 포함하여 오류 상황을 처리합니다.  
+ Contoso에서는 라우팅 서비스를 통한 트랜잭션 수신을 사용하여 오류가 발생하더라도 필요한 모든 서비스에서 정보를 받을 수 있도록 하려고 합니다. 또한 메시지를 배달할 수 없으면 오류 처리 논리가 사용되는 경우라도 오류가 올바르게 자동 처리되고 보고되도록 하려고 합니다. 이를 위해 필요한 경우 라우팅 서비스가 특정 엔드포인트로 장애 조치되도록 구성하며, 라우팅 서비스에서는 트랜잭션/수신 컨텍스트의 작성, 완료 및 롤백/중단을 포함하여 오류 상황을 처리합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 호스팅 및 지 속성 샘플](http://go.microsoft.com/fwlink/?LinkId=193961)
+ [AppFabric 호스팅 및 지 속성 샘플](https://go.microsoft.com/fwlink/?LinkId=193961)

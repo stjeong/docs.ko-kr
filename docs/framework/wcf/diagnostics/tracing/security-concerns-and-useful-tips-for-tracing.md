@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 664785bc97574eff73dc1c2be64f407641df6b00
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ccb16a0996386f3518bc52e95c1892c56e8bbad2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33484571"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43420834"
 ---
 # <a name="security-concerns-and-useful-tips-for-tracing"></a>보안 고려 사항 및 추적에 대한 유용한 정보
 이 항목에서는 WebHost를 사용할 때의 유용한 팁뿐만 아니라 중요한 정보가 노출되지 않도록 보호할 수 있는 방법에 대해 설명합니다.  
@@ -86,9 +86,9 @@ ms.locfileid: "33484571"
   
  변경 내용은 응용 프로그램이 시작되거나 다시 시작되어야만 적용됩니다. 두 개의 특성이 모두 `true`로 설정된 경우에 시작 시 이벤트가 기록됩니다. `logKnownPii`가 `true`로 설정되어 있지만 `enableLoggingKnownPii`는 `false`인 경우에도 이벤트가 기록됩니다.  
   
- PII 로깅에 대 한 자세한 내용은 참조 하십시오. [PII 보안 잠금](../../../../../docs/framework/wcf/samples/pii-security-lockdown.md) 샘플.  
+ PII 로깅에 대 한 자세한 내용은 참조 하세요. [PII 보안 잠금](../../../../../docs/framework/wcf/samples/pii-security-lockdown.md) 샘플입니다.  
   
- 컴퓨터 관리자와 응용 프로그램 배포자는 이러한 두 개의 스위치를 사용할 때 특별히 주의를 기울여야 합니다. PII 로깅을 사용하도록 설정하면 보안 키와 PII가 기록됩니다. PII 로깅을 사용하지 않도록 설정해도 중요한 데이터와 응용 프로그램별 데이터는 메시지 헤더 및 본문에 기록됩니다. 개인 정보 및 PII 노출 되지 않도록 보호 하기에 보다 철저 한 논의 알려면 [사용자 개인 정보 보호](http://go.microsoft.com/fwlink/?LinkID=94647)합니다.  
+ 컴퓨터 관리자와 응용 프로그램 배포자는 이러한 두 개의 스위치를 사용할 때 특별히 주의를 기울여야 합니다. PII 로깅을 사용하도록 설정하면 보안 키와 PII가 기록됩니다. PII 로깅을 사용하지 않도록 설정해도 중요한 데이터와 응용 프로그램별 데이터는 메시지 헤더 및 본문에 기록됩니다. 개인 정보 및 PII 노출 되지 않도록 보호에 대 한 더 상세히 논의 참조 하세요 [사용자 개인 정보 보호](https://go.microsoft.com/fwlink/?LinkID=94647)합니다.  
   
  또한, 연결 지향 전송에 대한 연결마다 한 번, 그리고 그렇지 않게 전송된 메시지마다 한 번 메시지 발신자의 IP 주소가 기록됩니다. 이 작업은 발신자의 동의 없이 수행됩니다. 그러나 이 로깅은 Information 또는 Verbose 추적 수준에서만 발생하며 이러한 수준은 라이브 디버깅을 제외하고 프로덕션에서 기본 추적 수준 또는 권장 추적 수준이 아닙니다.  
   

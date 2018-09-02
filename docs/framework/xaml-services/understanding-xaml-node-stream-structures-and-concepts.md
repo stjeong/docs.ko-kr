@@ -6,12 +6,12 @@ helpviewer_keywords:
 - nodes [XAML Services], XAML node stream
 - XAML [XAML Services], XAML node streams
 ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
-ms.openlocfilehash: fc27426e4d48ae519fc743c8a4f7eb3d1e6a4e81
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 100de0a897538527b76b1a53cf40d59a8804d3ae
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33566654"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43423246"
 ---
 # <a name="understanding-xaml-node-stream-structures-and-concepts"></a>XAML 노드 스트림 구조 및 개념 이해
 .NET Framework XAML 서비스에 구현된 XAML 판독기와 XAML 작성기는 XAML 노드 스트림의 디자인 개념을 기반으로 합니다. XAML 노드 스트림은 XAML 노드 집합의 개념화입니다. 이 개념화에서 XAML 프로세서는 한 번에 하나씩 XAML의 노드 관계 구조를 처리합니다. 언제든지 하나의 현재 레코드 또는 현재 위치만 열린 XAML 노드 스트림에 있으며 API는 대부분 해당 위치에서 사용할 수 있는 정보만 보고합니다. XAML 노드 스트림의 현재 노드는 개체, 멤버 또는 값으로 설명될 수 있습니다. XAML을 XAML 노드 스트림으로 처리하여 XAML 판독기는 XAML 작성기와 통신하고 XAML을 포함하는 경로 로드 또는 경로 저장 작업 중에 프로그램이 XAML 노드 스트림을 보거나, 상호 작용하거나, 콘텐츠를 변경할 수 있게 할 수 있습니다. XAML 판독기/작성기 API 디자인 및 XAML 노드 스트림 개념은 이전의 관련된 판독기/작성기 디자인 및 개념과 비슷합니다(예: [!INCLUDE[TLA#tla_xmldom](../../../includes/tlasharptla-xmldom-md.md)] , <xref:System.Xml.XmlReader> 및 <xref:System.Xml.XmlWriter> 클래스). 이 항목에서는 XAML 노드 스트림 개념과 XAML 노드 수준에서 XAML 표현과 상호 작용하는 루틴을 작성하는 방법을 설명합니다.  
@@ -80,7 +80,7 @@ while (xxr.Read()) {
  XAML 노드 루프가 아닌 다른 방법으로 XAML 표현을 사용할 수 있습니다. 예를 들어 인덱싱된 노드를 읽을 수 있거나 특히 `x:Name`, `x:Uid`또는 다른 식별자를 통해 노드에 직접 액세스하는 XAML 판독기가 있을 수 있습니다. .NET framework XAML 서비스는 전체 구현을 제공하지 않고 서비스 및 지원 형식을 통해 제안 패턴을 제공합니다. 자세한 내용은 <xref:System.Xaml.IXamlIndexingReader> 및 <xref:System.Xaml.XamlNodeList>를 참조하세요.  
   
 > [!TIP]
->  Microsoft는 Microsoft XAML Toolkit이라는 번외 릴리스도 생성합니다. 이 번외 릴리스는 아직 시험판 단계입니다. 그러나 시험판 구성 요소를 사용하려는 경우 Microsoft XAML Toolkit에서 XAML 도구 및 XAML 정적 분석을 위한 몇 가지 흥미로운 리소스를 제공합니다. Microsoft XAML Toolkit에는 XAML DOM API, FxCop 분석 지원 및 Silverlight용 XAML 스키마 컨텍스트가 포함됩니다. 자세한 내용은 [Microsoft XAML Toolkit](http://code.msdn.microsoft.com/XAML)을 참조하세요.  
+>  Microsoft는 Microsoft XAML Toolkit이라는 번외 릴리스도 생성합니다. 이 번외 릴리스는 아직 시험판 단계입니다. 그러나 시험판 구성 요소를 사용하려는 경우 Microsoft XAML Toolkit에서 XAML 도구 및 XAML 정적 분석을 위한 몇 가지 흥미로운 리소스를 제공합니다. Microsoft XAML Toolkit에는 XAML DOM API, FxCop 분석 지원 및 Silverlight용 XAML 스키마 컨텍스트가 포함됩니다. 자세한 내용은 [Microsoft XAML Toolkit](https://code.msdn.microsoft.com/XAML)합니다.  
   
 <a name="working_with_the_current_node"></a>   
 ## <a name="working-with-the-current-node"></a>현재 노드 작업  

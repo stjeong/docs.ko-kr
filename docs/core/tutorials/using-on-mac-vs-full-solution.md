@@ -4,12 +4,12 @@ description: 이 항목에서는 재사용 가능한 라이브러리 및 단위 
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.openlocfilehash: f8dfbb712957d22e5b4aa16920e7b003a79c4444
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 17d7cc5b085b4d47ebf1e5ed9a766be9d5d8b01f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "36314700"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43457045"
 ---
 # <a name="building-a-complete-net-core-solution-on-macos-using-visual-studio-for-mac"></a>Visual Studio for Mac을 사용하여 macOS에서 완전한 .NET Core 솔루션 빌드
 
@@ -95,7 +95,7 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
            public void IgnoreCasing()
            {
                var wordCount = WordCount.GetWordCount("Jack", "Jack jack");
-   
+
                Assert.NotEqual(2, wordCount);
            }
        }
@@ -117,7 +117,7 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
    ![단위 테스트 패널 고정 아이콘](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
 
 1. **모두 실행** 단추를 클릭합니다.
-   
+
    테스트가 실패합니다. 이것은 올바른 결과입니다. 테스트 메서드는 `inputString`, "Jack"의 2개 인스턴스가 `GetWordCount` 메서드에 제공된 문자열 "Jack jack"에서 반환되지 않음을 어설션합니다. 단어의 대/소문자가 `GetWordCount` 메서드에서 제외되었으므로 두 개의 인스턴스가 반환됩니다. 2가 2와 *과 같지 않다는* 어설션은 실패합니다. 이것은 올바른 결과이며 테스트 논리는 적합합니다.
 
    ![테스트 실패](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
@@ -135,8 +135,8 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
    [InlineData(0, "Ting", "Does not appear in the string.")]
    [InlineData(1, "Ting", "Ting appears once.")]
    [InlineData(2, "Ting", "Ting appears twice with Ting.")]
-   public void CountInstancesCorrectly(int count, 
-                                       string searchWord, 
+   public void CountInstancesCorrectly(int count,
+                                       string searchWord,
                                        string inputString)
    {
        Assert.NotEqual(count, WordCount.GetWordCount(searchWord,
@@ -145,7 +145,7 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
    ```
 
    `CountInstancesCorrectly`는 `GetWordCount` 메서드가 올바르게 계산하는지 확인합니다. `InlineData`는 확인할 개수, 검색 단어 및 입력 문자열을 제공합니다. 테스트 메서드는 데이터의 각 줄에 대해 한 번만 실행됩니다. 데이터에 포함된 개수가 올바르며 해당 값이 `GetWordCount` 메서드에 의해 반환된 개수와 일치한다는 것을 알더라도 `Assert.NotEqual`을 사용하여 먼저 실패를 어설션하는지 한 번 더 확인합니다. 의도적으로 이 테스트가 실패하도록 하는 단계를 수행하는 일이 처음에는 시간 낭비처럼 보일 수 있지만 먼저 실패하여 테스트의 논리를 검토하는 일은 테스트 논리에서 중요한 확인 작업입니다. 실패할 것으로 예상했는데 통과한 테스트 메서드가 나타날 때 테스트 논리에서 버그가 발견되었습니다. 테스트 메서드를 만들 때마다 이 단계를 수행하는 것은 가치 있는 일입니다.
-   
+
 1. 파일을 저장하고 테스트를 다시 실행합니다. 대/소문자 구분 테스트는 통과하지만 세 가지 계산 테스트는 실패합니다. 이것은 예상하던 동작입니다.
 
    ![테스트 실패](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
@@ -192,4 +192,4 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
 
 ## <a name="see-also"></a>참고 항목
 
-[Mac용 Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-mac-relnotes)
+* [Mac용 Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-mac-relnotes)

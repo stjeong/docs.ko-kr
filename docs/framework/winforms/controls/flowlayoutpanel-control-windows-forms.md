@@ -6,12 +6,12 @@ helpviewer_keywords:
 - layout [Windows Forms]
 - Windows Forms, arranging contents
 ms.assetid: 630c9305-9ecf-4f99-94f9-ddf06de82713
-ms.openlocfilehash: c164a77314f7127056e2367e7e9c4fac331d723d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 714613253c5d3e90750f4ffad1cab34064995877
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33524402"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43418054"
 ---
 # <a name="flowlayoutpanel-control-windows-forms"></a>FlowLayoutPanel 컨트롤(Windows Forms)
 `FlowLayoutPanel` 컨트롤은 수평 또는 수직 방향으로 내용을 정렬합니다. 컨트롤 내용을 한 행에서 다음 행으로 또는 한 열에서 다음 열로 줄 바꿈할 수 있습니다. 또는 컨트롤 내용이 줄 바꿈되는 대신 잘릴 수 있습니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "33524402"
  [방법: FlowLayoutPanel 컨트롤의 자식 컨트롤 고정 및 도킹](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)  
  <xref:System.Windows.Forms.Control.Anchor%2A> 및 <xref:System.Windows.Forms.Control.Dock%2A> 속성을 사용하여 <xref:System.Windows.Forms.FlowLayoutPanel> 컨트롤의 자식 컨트롤을 고정 및 도킹하는 방법을 설명합니다.  
   
- 또한 참조 [연습: Windows Forms 사용 하 여 FlowLayoutPanel에서 컨트롤 정렬](http://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\))합니다.  
+ 도 참조 하세요 [연습: Windows Forms FlowLayoutPanel을 사용 하 여 컨트롤 정렬](https://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\))합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.FlowLayoutPanel>  

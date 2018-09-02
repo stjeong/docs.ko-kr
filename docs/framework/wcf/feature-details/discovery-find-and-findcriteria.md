@@ -2,15 +2,15 @@
 title: 찾기 및 FindCriteria
 ms.date: 03/30/2017
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
-ms.openlocfilehash: 70739647ac5904159b71121e86aa98e92981d4ab
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b2f679879bd3a32e770aa934f715dd70b4a2b5f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33495322"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43423325"
 ---
 # <a name="discovery-find-and-findcriteria"></a>찾기 및 FindCriteria
-찾기 작업은 하나 이상의 서비스를 검색하는 클라이언트에 의해 시작되며 검색 작업의 주요 동작 중 하나입니다. 찾기를 수행하면 네트워크를 통해 WS-Discovery Probe 메시지가 보내집니다. 지정된 조건과 일치하는 서비스는 WS-Discovery ProbeMatch 메시지를 사용하여 응답합니다. 검색 메시지에 대 한 자세한 내용은 참조는 [Ws-discovery 사양의](http://go.microsoft.com/fwlink/?LinkID=122347)합니다.  
+찾기 작업은 하나 이상의 서비스를 검색하는 클라이언트에 의해 시작되며 검색 작업의 주요 동작 중 하나입니다. 찾기를 수행하면 네트워크를 통해 WS-Discovery Probe 메시지가 보내집니다. 지정된 조건과 일치하는 서비스는 WS-Discovery ProbeMatch 메시지를 사용하여 응답합니다. 검색 메시지에 대 한 자세한 내용은 참조는 [Ws-discovery 사양](https://go.microsoft.com/fwlink/?LinkID=122347)합니다.  
   
 ## <a name="discoveryclient"></a>DiscoveryClient  
  <xref:System.ServiceModel.Discovery.DiscoveryClient> 클래스는 찾기 작업을 수행하는 메커니즘을 제공하고 검색 클라이언트 작업을 손쉽게 수행할 수 있게 합니다. 여기에는 동기(블로킹) 찾기를 수행하는 <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> 메서드와 비동기(비블로킹) 찾기를 시작하는 <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> 메서드가 포함됩니다. 두 메서드는 모두 <xref:System.ServiceModel.Discovery.FindCriteria> 매개 변수를 사용하며 <xref:System.ServiceModel.Discovery.FindResponse> 개체를 통해 결과를 사용자에게 제공합니다.  
@@ -20,15 +20,15 @@ ms.locfileid: "33495322"
   
  검색 조건은 다음과 같습니다.  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - 선택적 요소로서, 검색할 서비스의 계약 이름이거나 서비스를 검색할 때 일반적으로 사용되는 조건입니다. 둘 이상의 계약 이름이 지정되면 모든 계약과 일치하는 서비스 끝점만 응답합니다. wcf에서 끝점 수 하나의 계약만 지원할 참고 합니다.  
+-   <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - 선택적 요소로서, 검색할 서비스의 계약 이름이거나 서비스를 검색할 때 일반적으로 사용되는 조건입니다. 둘 이상의 계약 이름이 지정되면 모든 계약과 일치하는 서비스 엔드포인트만 응답합니다. wcf에서 끝점 수 하나의 계약만 지원할 참고 합니다.  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - 선택적 요소로서, 개별 서비스 끝점을 분류하는 데 사용되는 절대 URI입니다. 여러 끝점이 동일한 계약을 노출하는 상태에서 끝점의 하위 집합을 검색하려는 경우 이 조건을 사용할 수 있습니다. 둘 이상의 범위가 지정되면 모든 범위와 일치하는 서비스 끝점만 응답합니다.  
+-   <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - 선택적 요소로서, 개별 서비스 엔드포인트를 분류하는 데 사용되는 절대 URI입니다. 여러 엔드포인트가 동일한 계약을 노출하는 상태에서 엔드포인트의 하위 집합을 검색하려는 경우 이 조건을 사용할 수 있습니다. 둘 이상의 범위가 지정되면 모든 범위와 일치하는 서비스 엔드포인트만 응답합니다.  
   
--   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Probe 메시지의 범위와 끝점의 범위를 일치시키는 동안 사용할 일치 알고리즘을 지정합니다. 다음과 같은 다섯 가지 범위 일치 규칙이 지원됩니다.  
+-   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Probe 메시지의 범위와 엔드포인트의 범위를 일치시키는 동안 사용할 일치 알고리즘을 지정합니다. 다음과 같은 다섯 가지 범위 일치 규칙이 지원됩니다.  
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType>는 기본 대/소문자 구분 문자열 비교를 수행합니다.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> 일치 항목 세그먼트로 구분 하 여 "/"입니다. 에 대 한 검색 http://contoso/building1 범위를 가진 서비스 이름과 일치 http://contoso/building/floor1합니다. 일치 하지 않는 참고 http://contoso/building100 마지막 두 세그먼트가 일치 하지 않습니다.  
+    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> 세그먼트 일치 하는 항목 구분 하 여 "/"입니다. 에 대 한 검색 http://contoso/building1 범위를 사용 하 여 서비스와 일치 http://contoso/building/floor1합니다. 일치 하지 않는 참고 http://contoso/building100 마지막 두 세그먼트가 일치 하지 않으므로 합니다.  
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType>는 LDAP URL을 사용하여 세그먼트별로 범위를 일치시킵니다.  
   

@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
-ms.openlocfilehash: c6b3151a95f949100e10e630da848e34ebbf1187
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 25d7f49644996d87ddb5d191dc313916c0ca6fbb
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764400"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43423911"
 ---
 # <a name="working-with-data-definition-language"></a>데이터 정의 언어로 작업
-부터는 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 버전 4는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 데이터 정의 언어 (DDL)를 지원 합니다. 이렇게 하면 연결 문자열 및 저장소(SSDL) 모델의 메타데이터를 기반으로 데이터베이스 인스턴스를 만들거나 삭제할 수 있습니다.  
+부터 합니다 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 버전 4는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] DDL (데이터 정의 언어)을 지원 합니다. 이렇게 하면 연결 문자열 및 저장소(SSDL) 모델의 메타데이터를 기반으로 데이터베이스 인스턴스를 만들거나 삭제할 수 있습니다.  
   
  <xref:System.Data.Objects.ObjectContext>의 다음 메서드는 연결 문자열과 SSDL 콘텐츠를 사용하여 데이터베이스를 만들거나 삭제하고, 데이터베이스가 있는지 확인하며, 생성된 DDL 스크립트를 확인합니다.  
   
@@ -40,11 +40,11 @@ ms.locfileid: "32764400"
   
 2.  응용 프로그램에 기존 모델을 추가합니다.  
   
-    1.  이라는 빈 모델 추가 `SchoolModel`합니다. 빈 모델을 만들려면 참조는 [하는 방법: 새.edmx 파일을 만들](http://msdn.microsoft.com/library/beb8189e-e51c-4051-839c-9902c224abf2) 항목입니다.  
+    1.  이라는 빈 모델을 추가 `SchoolModel`합니다. 빈 모델을 만들려면 다음을 참조 합니다 [방법: 새.edmx 파일을 만들](https://msdn.microsoft.com/library/beb8189e-e51c-4051-839c-9902c224abf2) 항목입니다.  
   
      SchoolModel.edmx 파일이 프로젝트에 추가됩니다.  
   
-    1.  개념, 저장소를 복사 하 고에서 School 모델에 대 한 콘텐츠를 매핑하는 [School 모델](http://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac) 항목입니다.  
+    1.  개념적, 저장소, 복사 및 매핑에서 School 모델에 대 한 콘텐츠를 [School 모델](https://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac) 항목입니다.  
   
     2.  SchoolModel.edmx 파일을 열고 콘텐츠를 `edmx:Runtime` 태그 안에 붙여 넣습니다.  
   

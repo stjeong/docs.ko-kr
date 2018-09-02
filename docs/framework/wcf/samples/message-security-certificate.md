@@ -6,15 +6,15 @@ helpviewer_keywords:
 ms.assetid: 909333b3-35ec-48f0-baff-9a50161896f6
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 769827d10139a659971890a452227b650e89ba20
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b556cb7a0ac518957f449dd266cab6968b07e357
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33508451"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43421327"
 ---
 # <a name="message-security-certificate"></a>메시지 보안 인증서
-이 샘플에서는 클라이언트에 대해 X.509 v3 인증서를 통한 WS-Security 인증을 사용하며 서버의 X.509 v3 인증서를 사용한 서버 인증을 수행해야 하는 응용 프로그램의 구현 방법을 보여 줍니다. 이 샘플에서는 클라이언트와 서버 간의 모든 응용 프로그램 메시지가 서명 및 암호화되도록 기본 설정을 사용합니다. 이 샘플에 따라는 [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) 인터넷 정보 서비스 (IIS)에서 호스팅하는 서비스 라이브러리 및 클라이언트 콘솔 프로그램으로 구성 됩니다. 이 서비스는 요청-회신 통신 패턴을 정의하는 계약을 구현합니다.  
+이 샘플에서는 클라이언트에 대해 X.509 v3 인증서를 통한 WS-Security 인증을 사용하며 서버의 X.509 v3 인증서를 사용한 서버 인증을 수행해야 하는 응용 프로그램의 구현 방법을 보여 줍니다. 이 샘플에서는 클라이언트와 서버 간의 모든 응용 프로그램 메시지가 서명 및 암호화되도록 기본 설정을 사용합니다. 이 샘플은 기반 합니다 [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) 인터넷 정보 서비스 (IIS)에서 호스팅되는 서비스 라이브러리 및 클라이언트 콘솔 프로그램으로 구성 됩니다. 이 서비스는 요청-회신 통신 패턴을 정의하는 계약을 구현합니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -35,7 +35,7 @@ public class CalculatorService : ICalculator
 }  
 ```  
   
- 서비스에서는 서비스와 통신하기 위한 하나의 끝점과 WS-MetadataExchange 프로토콜을 사용하여 서비스의 WSDL 문서를 노출하기 위한 하나의 끝점을 노출하며 이러한 끝점은 구성 파일(Web.config)을 사용하여 정의합니다. 끝점은 하나의 주소, 바인딩 및 계약으로 구성됩니다. 표준 바인딩이 구성 된 [ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) 기본적으로 메시지 보안을 사용 하는 요소입니다. 이 샘플에서는 클라이언트 인증을 요구하도록 `clientCredentialType` 특성을 Certificate로 설정합니다.  
+ 서비스에서는 서비스와 통신하기 위한 하나의 엔드포인트와 WS-MetadataExchange 프로토콜을 사용하여 서비스의 WSDL 문서를 노출하기 위한 하나의 엔드포인트를 노출하며 이러한 엔드포인트는 구성 파일(Web.config)을 사용하여 정의합니다. 엔드포인트는 하나의 주소, 바인딩 및 계약으로 구성됩니다. 표준 바인딩이 구성 된 [ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) 기본적으로 메시지 보안을 사용 하는 요소입니다. 이 샘플에서는 클라이언트 인증을 요구하도록 `clientCredentialType` 특성을 Certificate로 설정합니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -86,7 +86,7 @@ public class CalculatorService : ICalculator
   </system.serviceModel>  
 ```  
   
- 동작에서는 클라이언트가 서비스를 인증할 때 사용되는 서비스의 자격 증명을 지정합니다. 서버 인증서 주체 이름에 지정 되는 `findValue` 특성에 [ \<serviceCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) 요소입니다.  
+ 동작에서는 클라이언트가 서비스를 인증할 때 사용되는 서비스의 자격 증명을 지정합니다. 에 서버 인증서의 주체 이름은 지정 되는 `findValue` 특성을 [ \<serviceCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) 요소입니다.  
   
 ```xml  
 <!--For debugging purposes, set the includeExceptionDetailInFaults attribute to true.-->  
@@ -119,7 +119,7 @@ public class CalculatorService : ICalculator
     </behaviors>  
 ```  
   
- 클라이언트 끝점 구성은 서비스 끝점의 절대 주소, 바인딩 및 계약으로 구성됩니다. 클라이언트 바인딩은 적절한 보안 모드 및 인증 모드를 사용하여 구성됩니다. 다중 컴퓨터 구성에서 실행할 경우 서비스 끝점 주소를 적절하게 변경해야 합니다.  
+ 클라이언트 엔드포인트 구성은 서비스 엔드포인트의 절대 주소, 바인딩 및 계약으로 구성됩니다. 클라이언트 바인딩은 적절한 보안 모드 및 인증 모드를 사용하여 구성됩니다. 다중 컴퓨터 구성에서 실행할 경우 서비스 엔드포인트 주소를 적절하게 변경해야 합니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -204,7 +204,7 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.  
 ```  
   
- Message Security 샘플에 포함된 Setup.bat 배치 파일을 사용하면 인증서 기반 보안이 필요한 자체 호스팅 응용 프로그램을 실행하도록 관련 인증서가 있는 클라이언트와 서버를 구성할 수 있습니다. 이 배치 파일을 세 가지 모드로 실행할 수 있습니다. 형식이 단일 컴퓨터 모드에서 실행 하려면 **setup.bat** Visual Studio 명령 프롬프트에서, 서비스 모드 유형에 대 한 **setup.bat service**; 및 클라이언트 모드 형식에 대 한 **setup.bat client** . 다중 컴퓨터 구성에서 샘플을 실행할 경우 클라이언트 및 서버 모드를 사용합니다. 자세한 내용은 이 항목의 끝에 있는 설치 절차를 참조하세요. 다음 부분에는 적절한 구성으로 실행되게 수정할 수 있도록 배치 파일의 다양한 섹션에 대한 간략한 개요가 소개되어 있습니다.  
+ Message Security 샘플에 포함된 Setup.bat 배치 파일을 사용하면 인증서 기반 보안이 필요한 자체 호스팅 응용 프로그램을 실행하도록 관련 인증서가 있는 클라이언트와 서버를 구성할 수 있습니다. 이 배치 파일을 세 가지 모드로 실행할 수 있습니다. 단일 컴퓨터 모드 형식에서 실행 되도록 **setup.bat** Visual Studio 명령 프롬프트에서, 서비스 모드 유형 **setup.bat service**; 및 클라이언트 모드 유형 **setup.bat client** . 다중 컴퓨터 구성에서 샘플을 실행할 경우 클라이언트 및 서버 모드를 사용합니다. 자세한 내용은 이 항목의 끝에 있는 설치 절차를 참조하세요. 다음 부분에는 적절한 구성으로 실행되게 수정할 수 있도록 배치 파일의 다양한 섹션에 대한 간략한 개요가 소개되어 있습니다.  
   
 -   클라이언트 인증서 만들기  
   
@@ -219,7 +219,7 @@ Press <ENTER> to terminate client.
   
 -   서버의 신뢰할 수 있는 인증서 저장소에 클라이언트 인증서 설치  
   
-     배치 파일의 다음 줄에서는 서버에서 관련된 신뢰 여부를 결정할 수 있도록 서버의 TrustedPeople 저장소에 클라이언트 인증서를 복사합니다. TrustedPeople 저장소에 설치 된 인증서에 대 한 Windows Communication Foundation (WCF) 서비스에서 신뢰 하려면 순서에 클라이언트 인증서 유효성 검사 모드 설정 해야 `PeerOrChainTrust` 또는 `PeerTrust`합니다. 구성 파일을 사용하여 이 작업을 수행하는 방법을 보려면 앞서 소개된 서비스 구성 샘플을 참조하십시오.  
+     배치 파일의 다음 줄에서는 서버에서 관련된 신뢰 여부를 결정할 수 있도록 서버의 TrustedPeople 저장소에 클라이언트 인증서를 복사합니다. 순서로 TrustedPeople 저장소에 설치 된 인증서에 대 한 Windows Communication Foundation (WCF) 서비스에서 신뢰 하려면 클라이언트 인증서 유효성 검사 모드 설정 해야 합니다 `PeerOrChainTrust` 또는 `PeerTrust`합니다. 구성 파일을 사용하여 이 작업을 수행하는 방법을 보려면 앞서 소개된 서비스 구성 샘플을 참조하십시오.  
   
     ```bat
     echo ************  
@@ -271,20 +271,20 @@ Press <ENTER> to terminate client.
     >  미국 영어 버전이 아닌 Windows 버전을 사용하는 경우 Setup.bat 파일을 편집하여 "NT AUTHORITY\NETWORK SERVICE" 계정 이름을 해당 국가별 계정 이름으로 바꿔야 합니다.  
   
 > [!NOTE]
->  이 배치 파일에서 사용되는 도구는 C:\Program Files\Microsoft Visual Studio 8\Common7\tools 또는 C:\Program Files\Microsoft SDKs\Windows\v6.0\bin에 있습니다. 이러한 디렉터리 중 하나가 시스템 경로에 있어야 합니다. Visual Studio가 설치된 경우 경로에 이 디렉터리를 포함하는 가장 쉬운 방법은 Visual Studio 명령 프롬프트를 여는 것입니다. 클릭 **시작**를 선택한 후 **모든 프로그램**, **Visual Studio 2012**, **도구**합니다. 이 명령 프롬프트에는 이미 구성된 적절한 경로가 있습니다. 그렇지 않을 경우 해당 디렉터리를 경로에 수동으로 추가해야 합니다.  
+>  이 배치 파일에서 사용되는 도구는 C:\Program Files\Microsoft Visual Studio 8\Common7\tools 또는 C:\Program Files\Microsoft SDKs\Windows\v6.0\bin에 있습니다. 이러한 디렉터리 중 하나가 시스템 경로에 있어야 합니다. Visual Studio가 설치된 경우 경로에 이 디렉터리를 포함하는 가장 쉬운 방법은 Visual Studio 명령 프롬프트를 여는 것입니다. 클릭 **시작**를 선택한 후 **프로그램도**, **Visual Studio 2012**, **도구**합니다. 이 명령 프롬프트에는 이미 구성된 적절한 경로가 있습니다. 그렇지 않을 경우 해당 디렉터리를 경로에 수동으로 추가해야 합니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\MessageSecurity`  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
@@ -295,11 +295,11 @@ Press <ENTER> to terminate client.
     > [!NOTE]
     >  Setup.bat 배치 파일은 Visual Studio 명령 프롬프트에서 실행 되도록 설계 되었습니다. PATH 환경 변수는 SDK가 설치되는 디렉터리를 가리켜야 합니다. 이 환경 변수는Visual Studio 명령 프롬프트(2010) 내에서 자동으로 설정됩니다.  
   
-2.  브라우저를 사용 하 여 주소를 입력 하 여 서비스에 대 한 액세스 확인 `http://localhost/servicemodelsamples/service.svc`합니다.  
+2.  브라우저의 주소를 입력 하 여 서비스에 대 한 액세스 확인 `http://localhost/servicemodelsamples/service.svc`합니다.  
   
 3.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
   
-4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 ### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -311,15 +311,15 @@ Press <ENTER> to terminate client.
   
 4.  클라이언트 프로그램 파일을 클라이언트 컴퓨터의 클라이언트 디렉터리로 복사합니다. Setup.bat, Cleanup.bat 및 ImportServiceCert.bat 파일도 클라이언트로 복사합니다.  
   
-5.  서버에서 실행 **setup.bat service** 관리자 권한으로 Visual Studio 명령 프롬프트에서입니다. 실행 **setup.bat** 와 **서비스** 인수는 컴퓨터의 정규화 된 도메인 이름으로 서비스 인증서를 만들고 되어 Service.cer 이라는 파일로 서비스 인증서를 내보냅니다.  
+5.  서버에서 실행 **setup.bat service** 관리자 권한으로 Visual Studio 명령 프롬프트에서. 실행 중인 **setup.bat** 사용 하 여 합니다 **서비스** 인수가 컴퓨터의 정규화 된 도메인 이름 서비스 인증서를 만들고 Service.cer 이라는 파일로 서비스 인증서를 내보냅니다.  
   
-6.  새로운 인증서 이름을 반영 되도록 Web.config를 편집 (에 `findValue` 특성에 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) 컴퓨터의 정규화 된 도메인 이름과 같습니다.  
+6.  새 인증서 이름을 반영 되도록 Web.config를 편집 (에 `findValue` 특성을 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) 컴퓨터의 정규화 된 도메인 이름으로 같습니다.  
   
 7.  서비스 디렉터리에서 클라이언트 컴퓨터의 클라이언트 디렉터리로 Service.cer 파일을 복사합니다.  
   
-8.  클라이언트에서 실행 **setup.bat client** 관리자 권한으로 Visual Studio 명령 프롬프트에서입니다. 실행 **setup.bat** 와 **클라이언트** 인수 client.com 이라는 클라이언트 인증서를 만들고 클라이언트 인증서 Client.cer 이라는 파일로 내보냅니다.  
+8.  클라이언트에서 실행할 **setup.bat client** 관리자 권한으로 Visual Studio 명령 프롬프트에서. 실행 중인 **setup.bat** 사용 하 여 합니다 **클라이언트** 인수 하면 client.com 이라는 클라이언트 인증서를 만들고 클라이언트 인증서를 Client.cer 이라는 파일로 내보냅니다.  
   
-9. 클라이언트 컴퓨터의 Client.exe.config 파일에서 끝점의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 이렇게 하려면 localhost를 서버의 정규화된 도메인 이름으로 바꿉니다.  
+9. 클라이언트 컴퓨터의 Client.exe.config 파일에서 엔드포인트의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 이렇게 하려면 localhost를 서버의 정규화된 도메인 이름으로 바꿉니다.  
   
 10. 클라이언트 디렉터리에서 서버의 서비스 디렉터리로 Client.cer 파일을 복사합니다.  
   
@@ -327,13 +327,13 @@ Press <ENTER> to terminate client.
   
 12. 서버에서 관리자 권한으로 Visual Studio 명령 프롬프트를 열고 ImportClientCert.bat를 실행합니다. 이 작업은 Client.cer 파일의 클라이언트 인증서를 LocalMachine - TrustedPeople 저장소로 가져옵니다.  
   
-13. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+13. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 ### <a name="to-clean-up-after-the-sample"></a>샘플 실행 후 정리를 수행하려면  
   
 -   샘플 실행을 완료한 후 샘플 폴더에서 Cleanup.bat를 실행합니다.  
   
     > [!NOTE]
-    >  다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하는 Windows Communication Foundation (WCF) 샘플을 실행 한 경우 CurrentUser-TrustedPeople 저장소에에서 설치 된 서비스 인증서의 선택을 취소 해야 합니다. 이를 수행하려면 `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 명령을 사용합니다(예: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`).  
+    >  다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하는 Windows Communication Foundation (WCF) 샘플을 실행 하는 경우에 CurrentUser-TrustedPeople 저장소에에서 설치 된 서비스 인증서를 선택 취소 해야 합니다. 이를 수행하려면 `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 명령을 사용합니다(예: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`).  
   
 ## <a name="see-also"></a>참고 항목
