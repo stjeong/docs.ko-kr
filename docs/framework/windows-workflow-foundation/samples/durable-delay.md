@@ -2,12 +2,12 @@
 title: Durable Delay
 ms.date: 03/30/2017
 ms.assetid: 220ec240-b958-430c-81ff-b734a6aa97ae
-ms.openlocfilehash: 5307b8144e17f91cd3ba8c2e385492f86c167820
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2a7692e28d60232913ae5d11a90025e59664c0e5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33516024"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406578"
 ---
 # <a name="durable-delay"></a>Durable Delay
 이 샘플에서는 지속적 지연을 사용하는 방법을 보여 줍니다. 지속적 지연은 지연되는 동안 워크플로를 영구적인 장치에 유지하는 지연입니다. 샘플 워크플로에는 지연으로 구분되는 콘솔 대상의 두 메시지가 포함되어 있습니다. 지연이 트리거되면 워크플로가 언로드된 다음 메모리에 다시 로드되기 전에 워크플로 인스턴스 저장소에서 5초 동안 기다립니다.  
@@ -17,9 +17,9 @@ ms.locfileid: "33516024"
   
  다음 목록에서는 초기화 중 워크플로 서비스에 의한 설정 과정을 자세히 설명합니다.  
   
-1.  주소는 서비스 호스트를 만듭니다 (http://localhost:8080/Client)합니다.  
+1.  주소를 사용 하 여 서비스 호스트를 만듭니다 (http://localhost:8080/Client)합니다.  
   
-2.  워크플로 내의 <xref:System.ServiceModel.Activities.Receive> 활동과 통신할 수 있도록 서비스 호스트에 끝점을 만듭니다.  
+2.  워크플로 내의 <xref:System.ServiceModel.Activities.Receive> 활동과 통신할 수 있도록 서비스 호스트에 엔드포인트를 만듭니다.  
   
 3.  SQL 인스턴스 저장소를 설정합니다.  
   
@@ -33,7 +33,7 @@ ms.locfileid: "33516024"
   
     1.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트를 엽니다.  
   
-    2.  로 이동 된 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 디렉터리 (C:\Windows\Microsoft.NET\Framework\v4 합니다. X\\).  
+    2.  이동 된 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 디렉터리 (C:\Windows\Microsoft.NET\Framework\v4 합니다. X\\).  
   
     3.  WorkflowManagementService.exe.config 파일을 편집하고 다음 연결 문자열을 <`database`> 요소 내에 추가합니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "33516024"
   
     5.  Setup.cmd.를 실행합니다.  
   
-2.  실행 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 마우스 오른쪽 단추로 클릭 하 여 승격 된 권한을 사용 하는 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 아이콘을 선택 하면 **관리자 권한으로 실행**합니다.  
+2.  실행 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 권한 마우스 오른쪽 단추로 클릭 하 여 합니다 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 아이콘과 선택 **관리자 권한으로 실행**합니다.  
   
 3.  Delay.sln 솔루션 파일을 엽니다.  
   
@@ -66,6 +66,6 @@ ms.locfileid: "33516024"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\DurableDelay`

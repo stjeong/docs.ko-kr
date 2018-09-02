@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fe7c1eddd67e678e7086d948efb854a6b4b52f6e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7cfd90c5d38be788125af3bafe1e9ba034e9b957
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33539493"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400382"
 ---
 # <a name="how-to-create-a-windows-forms-application-from-the-command-line"></a>방법: 명령줄에서 Windows Forms 응용 프로그램 만들기
-다음 절차에서는 명령줄에서 Windows Forms 응용 프로그램을 만들고 실행하기 위해 완료해야 하는 기본 단계를 설명합니다. Visual Studio에서는 이러한 절차가 광범위하게 지원됩니다.  또한 참조 [연습: 간단한 Windows Form 만들기](http://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\))합니다.  
+다음 절차에서는 명령줄에서 Windows Forms 응용 프로그램을 만들고 실행하기 위해 완료해야 하는 기본 단계를 설명합니다. Visual Studio에서는 이러한 절차가 광범위하게 지원됩니다.  도 참조 하세요 [연습: 간단한 Windows Form 만들기](https://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\))합니다.  
   
 ## <a name="procedure"></a>프로시저  
   
@@ -44,9 +44,9 @@ ms.locfileid: "33539493"
   
 4.  클래스에 `Main` 메서드를 추가합니다.  
   
-    1.  적용 된 <xref:System.STAThreadAttribute> C# `Main` Windows Forms 응용 프로그램을 지정 하는 메서드는 단일 스레드 아파트 합니다. (특성 때문 필요 하지 않습니다 Visual basic에서는 기본적으로 단일 스레드 아파트 모델을 사용 하 여 Visual Basic을 사용 하 여 개발 Windows forms 응용 프로그램입니다.)  
+    1.  적용 된 <xref:System.STAThreadAttribute> C# `Main` Windows Forms 응용 프로그램을 지정 하는 메서드는 단일 스레드 아파트를 합니다. (특성 필요 없는 Visual basic에서는 기본적으로 단일 스레드 아파트 모델을 사용 하 여 Visual Basic을 사용 하 여 개발한 Windows forms 응용 프로그램 때문입니다.)  
   
-    2.  호출 <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> 운영 체제 스타일 응용 프로그램을 적용할 수 있습니다.  
+    2.  호출 <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> 응용 프로그램에 운영 체제 스타일을 적용 합니다.  
   
     3.  폼 인스턴스를 만들고 실행합니다.  
   
@@ -68,9 +68,9 @@ ms.locfileid: "33539493"
 3.  명령 프롬프트에서 다음을 입력 합니다. `Form1.exe`  
   
 ## <a name="adding-a-control-and-handling-an-event"></a>컨트롤 추가 및 이벤트 처리  
- 이전 절차의 단계에서는 컴파일 및 실행되는 기본 Windows Form을 만드는 방법만 보여 주었습니다. 다음 절차에서는 컨트롤을 만들고 폼에 추가한 다음 컨트롤에 대한 이벤트를 처리하는 방법을 보여 줍니다. Windows Forms에 추가할 수 있는 컨트롤에 대 한 자세한 내용은 참조 [Windows Forms 컨트롤](../../../docs/framework/winforms/controls/index.md)합니다.  
+ 이전 절차의 단계에서는 컴파일 및 실행되는 기본 Windows Form을 만드는 방법만 보여 주었습니다. 다음 절차에서는 컨트롤을 만들고 폼에 추가한 다음 컨트롤에 대한 이벤트를 처리하는 방법을 보여 줍니다. Windows Forms를 추가할 수 있는 컨트롤에 대 한 자세한 내용은 참조 [Windows Forms 컨트롤](../../../docs/framework/winforms/controls/index.md)합니다.  
   
- Windows Forms 응용 프로그램을 만드는 방법을 이해하는 것은 물론 이벤트 기반 프로그래밍 및 사용자 입력을 처리하는 방법도 이해해야 합니다. 자세한 내용은 참조 [Windows Forms에서 이벤트 처리기 만들기](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md), 및 [사용자 입력 처리](../../../docs/framework/winforms/controls/handling-user-input.md)  
+ Windows Forms 응용 프로그램을 만드는 방법을 이해하는 것은 물론 이벤트 기반 프로그래밍 및 사용자 입력을 처리하는 방법도 이해해야 합니다. 자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md), 및 [사용자 입력 처리](../../../docs/framework/winforms/controls/handling-user-input.md)  
   
 #### <a name="to-declare-a-button-control-and-handle-its-click-event"></a>단추 컨트롤을 선언하고 해당 click 이벤트를 처리하려면  
   

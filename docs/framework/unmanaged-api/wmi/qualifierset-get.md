@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f1bc57ab45a0452d9e3a50f0ab2de786ad73204a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e8c10a680f1caffd583097b16c046729fe10b140
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33458649"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415396"
 ---
 # <a name="qualifiersetget-function"></a>QualifierSet_Get 함수
 지정된 된 명명 된 한정자를 가져옵니다.  
@@ -44,43 +44,43 @@ HRESULT QualifierSet_Get (
 ## <a name="parameters"></a>매개 변수
 
 `vFunc`   
-[in] 이 매개 변수를 사용 하지 않습니다.
+[in] 이 매개 변수 사용 되지 않습니다.
 
 `ptr`   
-[in] 에 대 한 포인터는 [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) 인스턴스.
+[in] 에 대 한 포인터를 [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) 인스턴스.
 
 `wszName`   
-[in] 해당 값이 요청 한정자의 이름입니다.
+[in] 해당 값이 요청 된 한정자의 이름입니다.
 
 `lFlags`   
 [in] 예약 되어 있습니다. 이 매개 변수는 0 이어야 합니다.
 
 `pVal`   
-[out] 성공 하면 올바른 형식 및 한정자 값입니다. 함수가 실패 하면는 `VARIANT` 가리키는 `pVal` 수정 되지 않습니다. 이 매개 변수가 `null`, 매개 변수는 무시 됩니다.
+[out] 성공 하면 올바른 형식 및 한정자 값입니다. 함수가 실패 한 경우는 `VARIANT` 가리키는 `pVal` 수정 되지 않습니다. 이 매개 변수가 `null`, 매개 변수는 무시 됩니다.
 
 `plFlavor`   
-[out] 요청 된 한정자에 대 한 한정자 버전 비트를 수신 하는 LONG에 대 한 포인터입니다. 버전 정보는 원하지 않을 경우이 매개 변수 수 `null`합니다. 
+[out] 요청 된 한정자에 대 한 한정자 flavor 비트를 수신 하는 긴 포인터입니다. 버전 정보는 적절 하지 않으면이 매개 변수 수 `null`입니다. 
 
 ## <a name="return-value"></a>반환 값
 
-이 함수에서 반환 되는 다음 값에 정의 된는 *WbemCli.h* 헤더 파일 또는 있습니다를 정의할 수 상수로 코드:
+이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 올바르지 않습니다. |
+|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 한정자가 없습니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
 
-이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::Get](https://msdn.microsoft.com/library/aa391867(v=vs.85).aspx) 메서드.
+이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) 메서드.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** WMINet_Utils.idl  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>참고자료  
 [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

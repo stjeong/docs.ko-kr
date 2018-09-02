@@ -2,12 +2,12 @@
 title: '&lt;behaviorExtensions&gt;'
 ms.date: 03/30/2017
 ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9
-ms.openlocfilehash: bb59ceeb478d0324fddc98a206a00dbd170b5ac9
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: d025497956715913923e839cb6c482f44f96babb
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32749584"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415794"
 ---
 # <a name="ltbehaviorextensionsgt"></a>&lt;behaviorExtensions&gt;
 동작 확장을 사용하면 사용자 정의 동작 요소를 만들 수 있습니다. 이러한 요소는 표준 WCF(Windows Communication Foundation) 동작 요소 구성과 함께 사용할 수 있습니다. `behaviorExtensions` 섹션은 구성에 사용할 수 있도록 요소를 정의합니다. 다음은 일반적인 동작 확장 예제입니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "32749584"
   
  공격자는 CLR 검색 순서를 탐색하고 허가되지 않은 코드를 실행할 수 있습니다. 정규화된(강력한) 이름을 사용하면 형식이 고유하게 식별되며 시스템 보안이 강화됩니다.  
   
- 자세한 내용은 참조 [런타임에서 어셈블리를 찾는 방법을](http://go.microsoft.com/fwlink/?LinkId=95336) 및 <xref:System.AppDomain.TypeResolve>합니다.  
+ 자세한 내용은 [런타임 어셈블리를 찾는 방법](https://go.microsoft.com/fwlink/?LinkId=95336) 고 <xref:System.AppDomain.TypeResolve>입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>  

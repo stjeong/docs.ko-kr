@@ -2,11 +2,12 @@
 title: 파일이 현재 읽기용으로 열려 있습니다.
 ms.date: 07/20/2015
 ms.assetid: 7f662a68-021a-4432-947a-6bde48061257
-ms.openlocfilehash: 32b774dd8128c021884d17ef0f7c431d1d707d16
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 34bde86c0939d78921fcba277a44d4ae52bc64a4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400948"
 ---
 # <a name="the-file-is-currently-open-for-reading"></a>파일이 현재 읽기용으로 열려 있습니다.
 현재 읽기용으로 열려 있는 파일에 액세스하려고 했습니다.  
@@ -17,6 +18,6 @@ ms.lasthandoff: 05/04/2018
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Security.Permissions.FileIOPermission>  
- [방법: Visual Basic에서 파일에 대 한 정보 가져오기](http://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)  
+ [방법: Visual Basic에서 파일에 대 한 정보 가져오기](https://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)  
  [방법: 텍스트 파일에서 읽기](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)  
  [방법: 이진 파일에서 읽기](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)

@@ -2,12 +2,12 @@
 title: SQL Server 공용 언어 런타임 통합
 ms.date: 03/30/2017
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
-ms.openlocfilehash: 7451ed06e8a7c9797c66fd81734eb8b6b3b81f12
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5f6c1dcccaddeadb65e6fc949960b0232d00ed81
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355739"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406647"
 ---
 # <a name="sql-server-common-language-runtime-integration"></a>SQL Server 공용 언어 런타임 통합
 SQL Server 2005에는 .NET Framework for Microsoft Windows의 CLR(공용 언어 런타임) 구성 요소가 통합되어 있습니다. 따라서 Microsoft Visual Basic .NET 및 Microsoft Visual C#을 비롯하여 모든 .NET Framework 언어를 사용하여 저장 프로시저, 트리거, 사용자 정의 형식, 사용자 정의 함수, 사용자 정의 집계 및 스트리밍 테이블 반환 함수를 작성할 수 있습니다. <xref:Microsoft.SqlServer.Server> 네임스페이스에는 관리 코드에서 Microsoft SQL Server 환경과 상호 작용할 수 있도록 하는 새로운 API(응용 프로그래밍 인터페이스) 집합이 들어 있습니다.  
@@ -18,7 +18,7 @@ SQL Server 2005에는 .NET Framework for Microsoft Windows의 CLR(공용 언어 
   
  **SQL Server 온라인 설명서**  
   
-1.  [공용 언어 런타임 (CLR) 통합 프로그래밍 개요](http://go.microsoft.com/fwlink/?LinkId=115240)  
+1.  [공용 언어 런타임 (CLR) 통합 프로그래밍 개요](https://go.microsoft.com/fwlink/?LinkId=115240)  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [SQL Server CLR 통합 소개](../../../../../docs/framework/data/adonet/sql/introduction-to-sql-server-clr-integration.md)  
@@ -44,5 +44,5 @@ SQL Server 2005에는 .NET Framework for Microsoft Windows의 CLR(공용 언어 
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [관리 코드에서 SQL Server 2005 개체 만들기](http://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [관리 코드에서 SQL Server 2005 개체 만들기](https://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

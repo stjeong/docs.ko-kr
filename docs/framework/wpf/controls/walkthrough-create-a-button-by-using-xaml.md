@@ -5,11 +5,11 @@ helpviewer_keywords:
 - buttons [WPF]
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 ms.openlocfilehash: 96d54efbabbd95a24f1fb7118305ddbff4dfd110
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935408"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415826"
 ---
 # <a name="walkthrough-create-a-button-by-using-xaml"></a>연습: XAML을 사용하여 단추 만들기
 이 연습의 목적은 Windows Presentation Foundation (WPF) 응용 프로그램에서 사용 하기 위해 애니메이션된 단추를 만드는 방법에 알아봅니다. 이 연습에서는 스타일 및 템플릿을 사용 하 여 코드의 재사용 및 단추 선언에서 단추 논리의 분리 허용 하는 사용자 지정된 단추 리소스를 만듭니다. 이 연습에 완전히 기록 됩니다 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]합니다.  
@@ -361,7 +361,7 @@ ms.locfileid: "42935408"
   
      F5 키를 눌러 응용 프로그램을 실행 하 여 단추 중 하나를 클릭 합니다. 포커스를 여전히 있기 때문에 클릭 한 후 단추를 강조 표시에 유지 된다는 것을 확인 합니다. 또 다른 단추를 클릭 하면 마지막 손실 하는 동안 새 단추 포커스를 얻습니다.  
   
-4.  **추가 대 한 애니메이션** <xref:System.Windows.UIElement.MouseEnter> **하 고** <xref:System.Windows.UIElement.MouseLeave> **:** 다음 일부 애니메이션 트리거를 추가 했습니다.   내에 다음 태그를 추가 합니다 `ControlTemplate.Triggers` 블록입니다.  
+4.  **추가 대 한 애니메이션** <xref:System.Windows.UIElement.MouseEnter> **하 고** <xref:System.Windows.UIElement.MouseLeave> **:** 다음 일부 애니메이션 트리거를 추가 했습니다. 내에 다음 태그를 추가 합니다 `ControlTemplate.Triggers` 블록입니다.  
   
     ```  
     <!-- Animations that start when mouse enters and leaves button. -->  

@@ -2,17 +2,17 @@
 title: 추적 형식 요약
 ms.date: 03/30/2017
 ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
-ms.openlocfilehash: e3bc66753dd44e1dc4c7417caf593820300f69a5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 73777df2b58b14947c416ce409bcb42d439499ec
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33486044"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403845"
 ---
 # <a name="trace-type-summary"></a>추적 형식 요약
-[Source Levels](http://go.microsoft.com/fwlink/?LinkID=94943) 다양 한 추적 수준을 정의: 중요, 오류, 경고, 정보 및 Verbose에 대 한 설명 제공는 `ActivityTracing` 플래그의 출력을 토글하 경계와 동작 전송 이벤트를 추적 합니다.  
+[Source Levels](https://go.microsoft.com/fwlink/?LinkID=94943) 다양 한 추적 수준을 정의: 중요, 오류, 경고, 정보 및 Verbose 등에 대 한 설명을 제공 합니다 `ActivityTracing` 플래그의 출력을 토글하는 경계와 동작 전송 이벤트를 추적 합니다.  
   
- 또한 검토할 수 있습니다 [TraceEventType](http://go.microsoft.com/fwlink/?LinkId=95169) 에서 내보낼 수 있는 추적 형식에 대 한 <xref:System.Diagnostics>합니다.  
+ 또한 검토할 수 있습니다 [TraceEventType](https://go.microsoft.com/fwlink/?LinkId=95169) 에서 내보낼 수 있는 추적의 형식에 대 한 <xref:System.Diagnostics>합니다.  
   
  다음 표에서는 가장 중요한 항목을 보여 줍니다.  
   

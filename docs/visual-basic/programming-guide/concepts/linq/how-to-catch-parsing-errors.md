@@ -3,11 +3,11 @@ title: '방법: Catch 구문 분석 오류 (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 22e9068e-ea58-447b-816e-cd1852c11787
 ms.openlocfilehash: aa72b914d4640410a4d47ba49e774dcee31a54c0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643524"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406550"
 ---
 # <a name="how-to-catch-parsing-errors-visual-basic"></a>방법: Catch 구문 분석 오류 (Visual Basic)
 이 항목에서는 잘못 구성되었거나 유효하지 않은 XML을 검색하는 방법을 보여 줍니다.  
@@ -42,4 +42,4 @@ The 'Contacts' start tag on line 1 does not match the end tag of 'Contcts'. Line
  <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>, <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>, <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType> 및 <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType> 메서드가 throw할 수 있는 예외에 대한 자세한 내용은 <xref:System.Xml.XmlReader> 문서를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [XML 구문 분석 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)
+ [(Visual Basic) XML 구문 분석](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)

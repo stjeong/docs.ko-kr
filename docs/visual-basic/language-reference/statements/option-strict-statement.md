@@ -12,11 +12,11 @@ helpviewer_keywords:
 - implicit conversions [Visual Basic]
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
 ms.openlocfilehash: ac8f6fa2ebd2f8d846c3662184c83a83477e2311
-ms.sourcegitcommit: 875ecc3ab2437e299b1d50076bd9b878fa8c64de
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43238552"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403791"
 ---
 # <a name="option-strict-statement"></a>Long
 암시적 데이터 형식 변환을 확대 변환 으로만 제한 하 고 런타임에 바인딩을 허용 하지 않습니다.에 이어지는 암시적 형식 지정을 허용 하지 않습니다는 `Object` 형식입니다.  

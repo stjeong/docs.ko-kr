@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e5de4388f4d3c4117ed71abd9741d2616638038d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 21a373b946c3ce9f4606e870ae10e23a63398bc9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397509"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406371"
 ---
 # <a name="example-troubleshooting-dynamic-programming"></a>예: 동적 프로그래밍 문제 해결
 > [!NOTE]
->  이 항목은 시험판 소프트웨어인 .NET Native Developer Preview를 참조합니다. 이 Preview 버전은 [Microsoft Connect 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=394611)에서 다운로드할 수 있습니다(등록 필요).  
+>  이 항목은 시험판 소프트웨어인 .NET Native Developer Preview를 참조합니다. 이 Preview 버전은 [Microsoft Connect 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=394611)에서 다운로드할 수 있습니다(등록 필요).  
   
  [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인을 사용하여 개발한 앱에서 발생하는 모든 메타데이터 조회 오류로 인해 예외가 throw되지는 않으며,  앱에서 예기치 않은 방식으로 나타나는 오류도 있습니다.  다음 예제에서는 null 개체를 참조하여 발생하는 액세스 위반을 보여 줍니다.  
   

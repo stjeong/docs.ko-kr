@@ -7,12 +7,12 @@ helpviewer_keywords:
 - keyboard shortcuts [Windows Forms], controls
 - Windows Forms controls, labels
 ms.assetid: 6eaf868c-819f-4131-8f59-048e20c286f7
-ms.openlocfilehash: 0b75a4f59cdba4ff732a92996086b77bc65cf46c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a5504095814cdfc04699bf24b9b96191e94b22c3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33535517"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43409022"
 ---
 # <a name="labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them"></a>개별 Windows Forms 컨트롤 레이블 지정 및 바로 가기 제공
 Windows Forms에 추가된 컨트롤에는 사용자 환경을 더욱 특수화하는 데 사용되는 속성 및 메서드가 있습니다. 사용자의 요구에 맞게 사용자 인터페이스를 사용자 지정하는 것은 잘 설계된 Windows 응용 프로그램에 매우 중요합니다.  
@@ -34,4 +34,4 @@ Windows Forms에 추가된 컨트롤에는 사용자 환경을 더욱 특수화�
  [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)  
  컨트롤로 수행할 수 있는 기타 기본 작업에 대한 링크입니다.  
   
- 참조도 [하는 방법: 액세스 키에 대 한 Windows Forms 컨트롤 사용 하 여 작성 디자이너](http://msdn.microsoft.com/library/ms233673\(v=vs.110\)), [하는 방법: 디자이너를 사용 하 여 Windows Forms 컨트롤에서 텍스트 표시 설정](http://msdn.microsoft.com/library/ms233665\(v=vs.110\)), [하는 방법: 이미지 설정 표시 하 여 Windows Forms 디자이너를 사용 하 여 컨트롤](http://msdn.microsoft.com/library/ms233656\(v=vs.110\))합니다.
+ 도 참조 하세요 [방법: 만들 액세스 키에 대 한 Windows Forms 컨트롤 디자이너를 사용 하](how-to-create-access-keys-for-windows-forms-controls-using-the-designer.md)를 [방법: 디자이너를 사용 하 여 Windows Forms 컨트롤에서 텍스트 표시 설정](how-to-set-the-text-displayed-by-a-windows-forms-control-using-the-designer.md), [방법: 이미지 설정 표시 되는 Windows Forms 디자이너를 사용 하 여 컨트롤](how-to-set-the-image-displayed-by-a-windows-forms-control-using-the-designer.md)합니다.

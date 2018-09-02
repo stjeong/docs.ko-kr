@@ -2,12 +2,12 @@
 title: X.509 Certificate Validator
 ms.date: 03/30/2017
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
-ms.openlocfilehash: 911b6db28f89f7a4266ef1b23246020cd0381ada
-ms.sourcegitcommit: 2ad7d06f4f469b5d8a5280ac0e0289a81867fc8e
+ms.openlocfilehash: e54f79046113e5f1a1a1cc065606fd5b706b49ac
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35231530"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402354"
 ---
 # <a name="x509-certificate-validator"></a>X.509 Certificate Validator
 이 샘플에서는 사용자 지정 X.509 인증서 유효성 검사기를 구현하는 방법을 보여 줍니다. 이 방법은 기본 제공되는 X.509 인증서 유효성 검사기 중에서 응용 프로그램의 요구 사항에 적절한 것이 없는 경우에 유용합니다. 이 샘플에서는 자체 발급된 인증서를 승인하는 사용자 지정 유효성 검사기가 있는 서비스를 보여 줍니다. 그런 인증서를 사용하여 클라이언트가 서비스에 인증합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "35231530"
   
 -   서버의 X.509 인증서를 사용하여 서버를 인증하는 방법  
   
- 서비스에서는 서비스와의 통신에 사용할 수 있는 단일 끝점을 노출하며, 이 끝점은 App.config 구성 파일을 사용하여 정의합니다. 끝점은 하나의 주소, 바인딩 및 계약으로 구성됩니다. 표준 바인딩이 구성 된 `wsHttpBinding` 사용 하 여 기본적으로 `WSSecurity` 및 클라이언트 인증서 인증 합니다. 서비스 동작에서는 클라이언트 X.509 인증서의 유효성을 검사하기 위한 사용자 지정 모드와 유효성 검사기 클래스의 형식을 지정합니다. 동작에서는 serviceCertificate 요소를 사용하여 서버 인증서도 지정합니다. 서버 인증서에 동일한 값을 포함 하는 `SubjectName` 로 `findValue` 에 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)합니다.  
+ 서비스에서는 서비스와의 통신에 사용할 수 있는 단일 엔드포인트를 노출하며, 이 엔드포인트는 App.config 구성 파일을 사용하여 정의합니다. 엔드포인트는 하나의 주소, 바인딩 및 계약으로 구성됩니다. 표준 바인딩이 구성 된 `wsHttpBinding` 는 기본적으로 사용 `WSSecurity` 및 클라이언트 인증서 인증 합니다. 서비스 동작에서는 클라이언트 X.509 인증서의 유효성을 검사하기 위한 사용자 지정 모드와 유효성 검사기 클래스의 형식을 지정합니다. 동작에서는 serviceCertificate 요소를 사용하여 서버 인증서도 지정합니다. 서버 인증서에 대 한 동일한 값을 포함 해야 합니다 `SubjectName` 으로 `findValue` 에 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
   
 ```xml  
   <system.serviceModel>  
@@ -94,7 +94,7 @@ ms.locfileid: "35231530"
       </system.serviceModel>  
 ```  
   
- 클라이언트 끝점 구성은 구성 이름, 서비스 끝점의 절대 주소, 바인딩 및 계약으로 구성됩니다. 클라이언트 바인딩에는 적절한 모드 및 메시지 `clientCredentialType`이 구성됩니다.  
+ 클라이언트 엔드포인트 구성은 구성 이름, 서비스 엔드포인트의 절대 주소, 바인딩 및 계약으로 구성됩니다. 클라이언트 바인딩에는 적절한 모드 및 메시지 `clientCredentialType`이 구성됩니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -302,7 +302,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 #### <a name="to-set-up-and-build-the-sample"></a>샘플을 설치하고 빌드하려면  
   
-1.  지침에 따라 솔루션을 빌드하려면 [Windows Communication Foundation 샘플 빌드](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
+1.  지침에 따라 솔루션을 빌드하려면 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
 2.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행하려면 다음 지침을 사용합니다.  
   
@@ -317,7 +317,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 3.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
   
-4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 #### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -329,15 +329,15 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 4.  클라이언트 프로그램 파일을 클라이언트 컴퓨터의 클라이언트 디렉터리로 복사합니다. Setup.bat, Cleanup.bat 및 ImportServiceCert.bat 파일도 클라이언트로 복사합니다.  
   
-5.  서버에서 관리자 권한으로 Visual Studio 명령 프롬프트를 열고 `setup.bat service`를 실행합니다. 실행 `setup.bat` 와 `service` 인수 서비스 인증서를 만듭니다 computerand 내보내기의 정규화 된 도메인 이름 서비스 인증서를 Service.cer 이라는 파일로 내보내집니다.  
+5.  서버에서 관리자 권한으로 Visual Studio 명령 프롬프트를 열고 `setup.bat service`를 실행합니다. 실행 중인 `setup.bat` 사용 하 여는 `service` 인수 서비스 인증서를 사용 하 여 만듭니다 computerand 내보내기의 정규화 된 도메인 이름 서비스 인증서를 Service.cer 이라는 파일로 내보내집니다.  
   
-6.  새 인증서 이름을 반영 하도록 Service.exe.config 편집 (에 `findValue` 특성에 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) 컴퓨터의 정규화 된 도메인 이름과 같습니다. 컴퓨터 이름을 변경할 수도 \<서비스 > /\<baseAddresses > localhost에서 서비스 컴퓨터의 정규화 된 이름에 요소입니다.  
+6.  새 인증서 이름을 반영 되도록 Service.exe.config를 편집 (에서 `findValue` 특성을 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) 컴퓨터의 정규화 된 도메인 이름으로 같습니다. 컴퓨터 이름을 변경할 수도 합니다 \<서비스 > /\<baseAddresses > localhost에서 서비스 컴퓨터의 정규화 된 이름으로 요소입니다.  
   
 7.  서비스 디렉터리에서 클라이언트 컴퓨터의 클라이언트 디렉터리로 Service.cer 파일을 복사합니다.  
   
 8.  클라이언트에서 관리자 권한으로 Visual Studio 명령 프롬프트를 열고 `setup.bat client`를 실행합니다. `setup.bat` 인수를 사용하여 `client`를 실행하면 client.com이라는 클라이언트 인증서가 생성되어 Client.cer이라는 파일로 내보내집니다.  
   
-9. 클라이언트 컴퓨터의 Client.exe.config 파일에서 끝점의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 이렇게 하려면 localhost를 서버의 정규화된 도메인 이름으로 바꿉니다.  
+9. 클라이언트 컴퓨터의 Client.exe.config 파일에서 엔드포인트의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 이렇게 하려면 localhost를 서버의 정규화된 도메인 이름으로 바꿉니다.  
   
 10. 클라이언트 디렉터리에서 서버의 서비스 디렉터리로 Client.cer 파일을 복사합니다.  
   
@@ -347,13 +347,13 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 13. 서버 컴퓨터의 명령 프롬프트 창에서 Service.exe를 실행합니다.  
   
-14. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+14. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 #### <a name="to-clean-up-after-the-sample"></a>샘플 실행 후 정리를 수행하려면  
   
 1.  샘플 실행을 완료했으면 샘플 폴더에서 Cleanup.bat를 실행합니다. 그러면 인증서 저장소에서 서버 및 클라이언트 인증서가 제거됩니다.  
   
 > [!NOTE]
->  다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하는 Windows Communication Foundation (WCF) 샘플을 실행 한 경우 CurrentUser-TrustedPeople 저장소에에서 설치 된 서비스 인증서의 선택을 취소 해야 합니다. 이를 수행하려면 `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 명령을 사용합니다(예: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`).  
+>  다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하는 Windows Communication Foundation (WCF) 샘플을 실행 하는 경우에 CurrentUser-TrustedPeople 저장소에에서 설치 된 서비스 인증서를 선택 취소 해야 합니다. 이를 수행하려면 `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 명령을 사용합니다(예: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`).  
   
 ## <a name="see-also"></a>참고 항목

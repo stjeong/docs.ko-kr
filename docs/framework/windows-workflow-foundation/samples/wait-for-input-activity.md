@@ -2,15 +2,15 @@
 title: 입력 대기 활동
 ms.date: 03/30/2017
 ms.assetid: d58c344e-9ee8-4ce2-b199-75b3fe45237f
-ms.openlocfilehash: 750a217699abe8b2eb2eaaa364002137d335a41a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2e878e8c91c5da12a68da848694ce790896517c7
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518999"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43401211"
 ---
 # <a name="wait-for-input-activity"></a>입력 대기 활동
-이 샘플은 워크플로에 명명된 책갈피를 만드는 방법을 보여 줍니다. Windows WF (Workflow Foundation)는 선언적 책갈피 작성에 대 한 활동을 제공 하지 않습니다. 따라서 워크플로에 책갈피가 필요하면 책갈피를 만드는 사용자 지정 활동을 작성해야 합니다. 이 샘플에 정의되어 있는 `WaitForInput` 활동에서 이러한 기능을 제공하므로 사용자가 워크플로 내에 선언적으로 책갈피를 만들 수 있습니다.  
+이 샘플은 워크플로에 명명된 책갈피를 만드는 방법을 보여 줍니다. Windows WF (Workflow Foundation)에서 선언적 책갈피 작성을 위한 작업을 제공 하지 않습니다. 따라서 워크플로에 책갈피가 필요하면 책갈피를 만드는 사용자 지정 활동을 작성해야 합니다. 이 샘플에 정의되어 있는 `WaitForInput` 활동에서 이러한 기능을 제공하므로 사용자가 워크플로 내에 선언적으로 책갈피를 만들 수 있습니다.  
   
 ## <a name="projects-in-this-sample"></a>이 샘플의 프로젝트  
   
@@ -57,6 +57,6 @@ ms.locfileid: "33518999"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\WaitForInput`

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - types [Visual Basic], user-defined
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
 ms.openlocfilehash: 9377d889f56049720ab10439582300913f5cbb37
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42998970"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416443"
 ---
 # <a name="structure-statement"></a>Structure 문
 구조의 이름을 선언 하 고 변수, 속성, 이벤트 및 구조를 구성 하는 프로시저의 정의 소개 합니다.  

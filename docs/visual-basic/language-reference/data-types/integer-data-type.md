@@ -23,14 +23,14 @@ helpviewer_keywords:
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1846153375b19b773fedaf056a009f28ab94a4d5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dc780cc845bfa6ef52fc9973ef3617d621167af1
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591731"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415987"
 ---
-# <a name="integer-data-type-visual-basic"></a>Integer 데이터 형식 (Visual Basic)
+# <a name="integer-data-type-visual-basic"></a>정수 데이터 형식 (Visual Basic)
 -2,147,483,648에서 2,147,483,647까지의 값 범위에 속하는 부호 있는 32비트(4바이트) 정수를 저장합니다.  
   
 ## <a name="remarks"></a>설명
@@ -40,20 +40,20 @@ ms.locfileid: "33591731"
 
 ## <a name="literal-assignments"></a>리터럴 할당
 
-선언 하 고 초기화는 `Integer` 10 진 리터럴, 16 진수 리터럴을 8 진수 리터럴을 할당 (부터는 Visual Basic 2017) 이진 리터럴 또는 변수입니다. 정수 리터럴이 `Integer` 범위를 벗어나는 경우(즉 <xref:System.Int32.MinValue?displayProperty=nameWithType>보다 작거나 <xref:System.Int32.MaxValue?displayProperty=nameWithType>보다 큰 경우) 컴파일 오류가 발생합니다.
+선언 하 고 초기화할 수 있습니다는 `Integer` 변수 (Visual Basic 2017부터) 이진 리터럴을 또는 10 진수 리터럴, 16 진수 리터럴, 8 진수 리터럴을 할당 합니다. 정수 리터럴이 `Integer` 범위를 벗어나는 경우(즉 <xref:System.Int32.MinValue?displayProperty=nameWithType>보다 작거나 <xref:System.Int32.MaxValue?displayProperty=nameWithType>보다 큰 경우) 컴파일 오류가 발생합니다.
 
 다음 예제에서는 10진수, 16진수 및 이진 리터럴로 표현된 16,342와 같은 정수가 `Integer` 값에 할당됩니다.
 
 [!code-vb[integer](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#Int)]  
 
 > [!NOTE]
-> 접두사를 사용 `&h` 또는 `&H` 를 나타내는 16 진수 리터럴을, 접두사 `&b` 또는 `&B` 이진 리터럴와 접두사를 나타내기 위해 `&o` 또는 `&O` 8 진수 리터럴을 나타냅니다. 10진수 리터럴에는 접두사가 없습니다.
+> 접두사를 사용할 `&h` 또는 `&H` 16 진수 리터럴, 접두사를 나타내는 `&b` 또는 `&B` 이진 리터럴 및 접두사를 나타내는 `&o` 또는 `&O` 8 진수 리터럴을 나타냅니다. 10진수 리터럴에는 접두사가 없습니다.
 
-Visual Basic 2017 부터는 사용할 수도 있습니다는 밑줄 문자 `_`, 가독성을 향상 시키기 위해 숫자 구분 기호,으로 다음 예제와 같이 보여 줍니다.
+Visual Basic 2017부터 사용할 수도 있습니다 밑줄 문자 `_`, 가독성 향상을 위해 숫자 구분 기호를 다음 예제와 같이 보여 줍니다.
 
 [!code-vb[integer](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#IntS)]  
 
-Visual Basic 15.5 부터는 사용할 수도 있습니다는 밑줄 문자 (`_`)는 접두사와 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
+Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
 
 ```vb
 Dim number As Integer = &H_C305_F860
@@ -61,7 +61,7 @@ Dim number As Integer = &H_C305_F860
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-숫자 리터럴을 포함할 수는 `I` [형식 문자](../../programming-guide\language-features\data-types/type-characters.md) 를 표시 하는 `Integer` 다음 예제와 같이 데이터 형식입니다.
+숫자 리터럴을 포함할 수도 있습니다는 `I` [문자를 입력](../../programming-guide\language-features\data-types/type-characters.md) 나타내기 위해는 `Integer` 다음 예제와 같이 데이터 형식입니다.
 
 ```vb
 Dim number = &H_035826I
@@ -69,7 +69,7 @@ Dim number = &H_035826I
 
 ## <a name="programming-tips"></a>프로그래밍 팁
 
--   **Interop 고려 사항입니다.** Automation 또는 COM 개체와 같은.NET Framework에 대해 작성 되지 않은 구성 요소와 상호 작용 하는 경우에 유의 해야 `Integer` 은 다른 환경에서 다른 데이터 너비 (16 비트)입니다. 이러한 구성 요소에 16비트 인수를 전달하는 경우 새 Visual Basic 코드에서 이 인수를 `Short` 대신 `Integer`로 선언하십시오.  
+-   **Interop 고려 사항입니다.** 자동화 개체나 COM 개체와 같은.NET Framework 용으로 작성 되지 구성 요소와 상호 작용 하는 경우에 유의 해야 `Integer` 다른 환경에서 다른 데이터 너비 (16 비트)에 있습니다. 이러한 구성 요소에 16비트 인수를 전달하는 경우 새 Visual Basic 코드에서 이 인수를 `Short` 대신 `Integer`로 선언하십시오.  
   
 -   **확대 합니다.** `Integer` 데이터 형식은 `Long`, `Decimal`, `Single` 또는 `Double`로 확대 변환됩니다. 이는 `Integer` 오류 발생 없이 <xref:System.OverflowException?displayProperty=nameWithType>를 이러한 형식 중 하나로 변환할 수 있음을 의미합니다.  
   
@@ -98,7 +98,7 @@ k = 5.5
 ## <a name="see-also"></a>참고자료
 
 <xref:System.Int32?displayProperty=nameWithType>   
- [데이터 형식](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
  [Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Short 데이터 형식](../../../visual-basic/language-reference/data-types/short-data-type.md)  
  [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

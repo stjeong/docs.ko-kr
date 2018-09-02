@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: bf5604472331f336c427ded36fc1666f16310ea2
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: 4c90e914273de9f9121a979accdb4798b31e05cb
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43254355"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43418967"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>대형 응답성 .NET Framework 응용 프로그램 작성
 이 문서에서는 규모가 큰 .NET Framework 앱이나 파일 또는 데이터베이스와 같이 많은 양의 데이터를 처리하는 앱의 성능을 향상시키기 위한 팁을 제공합니다. 이러한 팁은 C# 및 Visual Basic 컴파일러를 관리 코드로 다시 작성하면서 수집되었으며, C# 컴파일러의 실제 몇 가지 예를 포함하고 있습니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "43254355"
  앱의 핵심 사용자 환경 또는 시나리오에 대한 성능 목표를 설정하고 성능을 측정하기 위한 테스트를 작성해야 합니다.  과학적인 방법을 적용하여 실패 테스트를 조사합니다. 즉, 프로필을 사용하여 사용자를 안내하고, 문제가 무엇일지 가설을 세우고, 실험이나 코드 변경으로 가설을 테스트합니다.  정기 테스트로 시간의 흐름에 따른 기준 성능 측정값을 설정하여 성능 저하를 일으키는 변경 내용을 구분할 수 있습니다.  엄격한 방식으로 성능 작업에 접근하면 불필요한 코드 업데이트로 시간을 낭비하는 일이 없습니다.  
   
 ### <a name="fact-3-good-tools-make-all-the-difference"></a>팩트 3: 좋은 도구가 모든 차별화를 이뤄냄  
- 좋은 도구를 사용하면 가장 큰 성능 문제(CPU, 메모리 또는 디스크)에 신속하게 파고들어 해당 병목 현상을 일으키는 코드를 찾을 수 있습니다.  Microsoft는 [Visual Studio 프로파일러](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone 분석 도구](http://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f) 및 [PerfView](http://www.microsoft.com/download/details.aspx?id=28567)와 같은 다양한 성능 도구를 제공합니다.  
+ 좋은 도구를 사용하면 가장 큰 성능 문제(CPU, 메모리 또는 디스크)에 신속하게 파고들어 해당 병목 현상을 일으키는 코드를 찾을 수 있습니다.  Microsoft는 [Visual Studio 프로파일러](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone 분석 도구](https://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f) 및 [PerfView](https://www.microsoft.com/download/details.aspx?id=28567)와 같은 다양한 성능 도구를 제공합니다.  
   
  PerfView는 디스크 I/O, GC 이벤트 및 메모리와 같은 깊이 있는 문제에 집중하는 데 도움을 주는 놀랄 만큼 강력한 도구로서 무료입니다.  성능 관련 ETW([Windows용 이벤트 추적](../../../docs/framework/wcf/samples/etw-tracing.md)) 이벤트를 캡처하여 앱, 프로세스, 스택 및 스레드 단위 정보를 쉽게 볼 수 있습니다.  PerfView는 앱에서 할당하는 메모리의 양과 종류뿐만 아니라 함수 또는 호출 스택으로 인해 메모리가 할당되는 양이 어느 정도인지를 보여 줍니다. 자세한 내용은 도구에 포함된 다양한 도움말 항목, 데모 및 비디오(예: Channel 9의 [PerfView 자습서](http://channel9.msdn.com/Series/PerfView-Tutorial))를 참조하세요.  
   
@@ -281,7 +281,7 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
   
  **예제 5: 람다, List\<T> 및 IEnumerable\<T>**  
   
- 이 예제에서는 이름 문자열이 제공될 경우 [LINQ 및 기능 스타일 코드](http://blogs.msdn.com/b/charlie/archive/2007/01/26/anders-hejlsberg-on-linq-and-functional-programming.aspx)를 사용하여 컴파일러 모델에서 기호를 찾습니다.  
+ 이 예제에서는 이름 문자열이 제공될 경우 [LINQ 및 기능 스타일 코드](https://blogs.msdn.com/b/charlie/archive/2007/01/26/anders-hejlsberg-on-linq-and-functional-programming.aspx)를 사용하여 컴파일러 모델에서 기호를 찾습니다.  
   
 ```csharp  
 class Symbol {  
@@ -305,7 +305,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- 첫 번째 줄에는 [람다 식](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [를](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) 지역 변수 `name`합니다.  즉, 이 코드에서는 `predicate`를 유지하는 [대리자](~/docs/csharp/language-reference/keywords/delegate.md)에 대한 개체를 할당할 뿐만 아니라 `name`의 값을 캡처하는 환경을 유지하기 위한 정적 클래스를 할당합니다.  컴파일러는 다음과 같은 코드를 생성합니다.  
+ 첫 번째 줄에는 [람다 식](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [를](https://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) 지역 변수 `name`합니다.  즉, 이 코드에서는 `predicate`를 유지하는 [대리자](~/docs/csharp/language-reference/keywords/delegate.md)에 대한 개체를 할당할 뿐만 아니라 `name`의 값을 캡처하는 환경을 유지하기 위한 정적 클래스를 할당합니다.  컴파일러는 다음과 같은 코드를 생성합니다.  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  
@@ -362,7 +362,7 @@ public Symbol FindMatchingSymbol(string name)
  이 코드에서는 LINQ 확장 메서드, 람다 또는 열거자를 사용하지 않으며 할당도 발생하지 않습니다.  컴파일러가 `symbols` 컬렉션이 <xref:System.Collections.Generic.List%601>이고, boxing을 피하기 위한 올바른 형식을 사용하여 결과 열거자(구조)를 로컬 변수에 바인딩할 수 있다는 사실을 알 수 있기 때문에 할당이 없습니다.  이 함수의 원래 버전은 C#의 표현 기능과 .NET Framework의 생산성을 보여 주는 좋은 예였습니다.  보다 효율적인 이 새 버전은 유지 관리할 복잡할 코드를 추가하지 않고 이러한 품질을 유지합니다.  
   
 ### <a name="async-method-caching"></a>비동기 메서드 캐싱  
- 다음 예제에서는 [async](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) 메서드에 캐시된 결과를 사용하려고 할 때 발생하는 일반적인 문제를 보여 줍니다.  
+ 다음 예제에서는 [async](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) 메서드에 캐시된 결과를 사용하려고 할 때 발생하는 일반적인 문제를 보여 줍니다.  
   
  **예제 6: 비동기 메서드의 캐싱**  
   
@@ -465,9 +465,9 @@ class Compilation { /*...*/
  [이 항목의 프레젠테이션 비디오](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
  [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
  [성능](../../../docs/framework/performance/index.md)  
- [.NET 성능 팁](http://msdn.microsoft.com/library/ms973839.aspx)  
- [Windows Phone 성능 분석 도구](http://msdn.microsoft.com/magazine/hh781024.aspx)  
- [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](http://msdn.microsoft.com/magazine/cc337887.aspx)  
+ [.NET 성능 팁](https://msdn.microsoft.com/library/ms973839.aspx)  
+ [Windows Phone 성능 분석 도구](https://msdn.microsoft.com/magazine/hh781024.aspx)  
+ [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)  
  [채널 9 PerfView 자습서](http://channel9.msdn.com/Series/PerfView-Tutorial)  
- [개괄적인 성능 팁](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
+ [개괄적인 성능 팁](https://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
  [GitHub의 dotnet/roslyn 리포지토리](https://github.com/dotnet/roslyn)

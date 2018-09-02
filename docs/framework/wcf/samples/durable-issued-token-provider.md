@@ -2,22 +2,22 @@
 title: 영속 제공된 토큰 공급자
 ms.date: 03/30/2017
 ms.assetid: 76fb27f5-8787-4b6a-bf4c-99b4be1d2e8b
-ms.openlocfilehash: 145faaae709119708240863f85eb5352fb2c5a1b
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 7def23a00e42e134d8c0b9bd911710917681ad31
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33807553"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404879"
 ---
 # <a name="durable-issued-token-provider"></a>영속 제공된 토큰 공급자
 이 샘플에서는 사용자 지정 클라이언트가 발급한 토큰 공급자를 구현하는 방법을 보여 줍니다.  
   
 ## <a name="discussion"></a>토론  
- Windows Communication Foundation (WCF)에 토큰 공급자는 보안 인프라에 자격 증명을 제공 하는 데 사용 됩니다. 일반적으로 토큰 공급자는 대상을 검사하고 적절한 자격 증명을 발급하여 보안 인프라에서 메시지의 보안을 유지할 수 있도록 합니다. WCF와 함께 제공 되는 [!INCLUDE[infocard](../../../../includes/infocard-md.md)] 토큰 공급자입니다. 사용자 지정 토큰 공급자는 다음과 같은 경우에 유용합니다.  
+ 토큰 공급자를 Windows Communication Foundation (WCF)에서 보안 인프라에 자격 증명을 제공 됩니다. 일반적으로 토큰 공급자는 대상을 검사하고 적절한 자격 증명을 발급하여 보안 인프라에서 메시지의 보안을 유지할 수 있도록 합니다. WCF와 함께 제공 되는 [!INCLUDE[infocard](../../../../includes/infocard-md.md)] 토큰 공급자입니다. 사용자 지정 토큰 공급자는 다음과 같은 경우에 유용합니다.  
   
 -   기본 제공 토큰 공급자가 작동하지 않는 자격 증명 저장소가 있는 경우  
   
--   WCF 클라이언트 자격 증명을 사용 하는 경우에 세부 정보를 제공 하는 사용자 지점에서 자격 증명을 변형에 대 한 사용자 지정 메커니즘을 제공 하려면.  
+-   WCF 클라이언트 자격 증명을 사용 하는 경우에 세부 정보를 제공 하는 사용자 지점에서 자격 증명을 변형에 대 한 사용자 고유의 사용자 지정 메커니즘을 제공 하려면.  
   
 -   사용자 지정 토큰을 빌드하고 있는 경우  
   
@@ -36,7 +36,7 @@ ms.locfileid: "33807553"
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
   
- 이 샘플에서는 사용 하는 ICalculator 계약을 노출 된 [ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)합니다. 다음 코드에서는 클라이언트에서의 바인딩 구성을 보여 줍니다.  
+ 이 샘플 사용 하 여 ICalculator 계약을 노출 합니다 [ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)합니다. 다음 코드에서는 클라이언트에서의 바인딩 구성을 보여 줍니다.  
   
 ```xml  
 <bindings>
@@ -80,7 +80,7 @@ ms.locfileid: "33807553"
 </bindings>  
 ```  
   
- `security`의 `wsFederationHttpBinding` 요소에서 `mode` 값은 사용해야 하는 보안 모드를 구성합니다. 이 샘플에서는 메시지 보안이 사용되므로 `message`의 `wsFederationHttpBinding` 요소 안에 `security`의 `wsFederationHttpBinding` 요소가 지정됩니다. `issuerMetadata`의 `wsFederationHttpBinding` 요소 안에서 `message`의 `wsFederationHttpBinding` 요소는 보안 토큰 서비스에 대한 메타데이터를 검색하는 데 사용할 수 있는 끝점의 주소와 ID를 지정합니다.  
+ `security`의 `wsFederationHttpBinding` 요소에서 `mode` 값은 사용해야 하는 보안 모드를 구성합니다. 이 샘플에서는 메시지 보안이 사용되므로 `message`의 `wsFederationHttpBinding` 요소 안에 `security`의 `wsFederationHttpBinding` 요소가 지정됩니다. `issuerMetadata`의 `wsFederationHttpBinding` 요소 안에서 `message`의 `wsFederationHttpBinding` 요소는 보안 토큰 서비스에 대한 메타데이터를 검색하는 데 사용할 수 있는 엔드포인트의 주소와 ID를 지정합니다.  
   
  다음 코드에서는 서비스의 동작을 보여 줍니다.  
   
@@ -107,10 +107,10 @@ ms.locfileid: "33807553"
   
  `issuedTokenAuthentication` 요소 내부의 `serviceCredentials` 요소를 사용하면 서비스에서는 인증 과정 중 클라이언트가 제시할 수 있는 토큰에 대한 제약 조건을 지정할 수 있습니다. 이 구성은 주체 이름이 CN=STS인 인증서에 의해 서명된 토큰을 서비스에서 수락하도록 지정합니다.  
   
- 보안 토큰 서비스는 표준 wsHttpBinding을 사용하여 단일 끝점을 노출합니다. 보안 토큰 서비스는 클라이언트의 토큰 요청에 응답하며, 클라이언트가 Windows 계정을 사용하여 인증하는 경우 클라이언트의 사용자 이름을 발급된 토큰의 클레임으로 포함하는 토큰을 발급합니다. 토큰을 만드는 동안 보안 토큰 서비스는 CN=STS 인증서에 연결된 개인 키를 사용하여 토큰에 서명합니다. 또한 대칭 키를 만들고 CN=localhost 인증서와 연관된 공개 키를 사용하여 이를 암호화합니다. 보안 토큰 서비스는 토큰을 클라이언트에 반환하면서 대칭 키도 반환합니다. 클라이언트는 발급된 토큰을 계산기 서비스에 제공하고 대칭 키로 메시지에 서명하여 해당 키를 알고 있음을 증명합니다.  
+ 보안 토큰 서비스는 표준 wsHttpBinding을 사용하여 단일 엔드포인트를 노출합니다. 보안 토큰 서비스는 클라이언트의 토큰 요청에 응답하며, 클라이언트가 Windows 계정을 사용하여 인증하는 경우 클라이언트의 사용자 이름을 발급된 토큰의 클레임으로 포함하는 토큰을 발급합니다. 토큰을 만드는 동안 보안 토큰 서비스는 CN=STS 인증서에 연결된 개인 키를 사용하여 토큰에 서명합니다. 또한 대칭 키를 만들고 CN=localhost 인증서와 연관된 공개 키를 사용하여 이를 암호화합니다. 보안 토큰 서비스는 토큰을 클라이언트에 반환하면서 대칭 키도 반환합니다. 클라이언트는 발급된 토큰을 계산기 서비스에 제공하고 대칭 키로 메시지에 서명하여 해당 키를 알고 있음을 증명합니다.  
   
 ## <a name="custom-client-credentials-and-token-provider"></a>사용자 지정 클라이언트 자격 증명 및 토큰 공급자  
- 다음 단계는 발급 된 토큰 사용자 지정 토큰 공급자를 개발 및 WCF와 통합 하는 방법을 보여 줍니다: 보안 합니다.  
+ 다음 단계에서는 발급 된 토큰 캐시는 사용자 지정 토큰 공급자를 개발 하 고 WCF와 통합 하는 방법을 보여줍니다: 보안 합니다.  
   
 #### <a name="to-develop-a-custom-token-provider"></a>사용자 지정 토큰 공급자를 개발하려면  
   
@@ -235,7 +235,7 @@ ms.locfileid: "33807553"
   
 1.  Setup.cmd 파일을 실행하여 필요한 인증서를 만듭니다.  
   
-2.  지침에 따라 솔루션을 빌드하려면 [Windows Communication Foundation 샘플 빌드](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다. 솔루션의 모든 프로젝트가 빌드되는지 확인합니다(Shared, RSTRSTR, Service, SecurityTokenService 및 Client).  
+2.  지침에 따라 솔루션을 빌드하려면 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다. 솔루션의 모든 프로젝트가 빌드되는지 확인합니다(Shared, RSTRSTR, Service, SecurityTokenService 및 Client).  
   
 3.  Service.exe 및 SecurityTokenService.exe가 모두 관리자 권한으로 실행되는지 확인합니다.  
   
@@ -250,7 +250,7 @@ ms.locfileid: "33807553"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\DurableIssuedTokenProvider`  
   

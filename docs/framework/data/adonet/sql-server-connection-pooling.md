@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
-ms.openlocfilehash: 79749f5e593fbf4ea282cc5c8000be88098b702f
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: f416ae8252d9991905da7eeaf4ce6398ff0e7461
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874597"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406498"
 ---
 # <a name="sql-server-connection-pooling-adonet"></a>SQL Server 연결 풀링(ADO.NET)
 데이터베이스 서버에 연결하는 과정은 일반적으로 시간이 많이 걸리는 여러 단계로 이루어져 있습니다. 즉, 소켓이나 명명된 파이프 같은 실제 채널을 설정하고 서버와의 초기 핸드셰이크를 발생시키며 연결 문자열 정보를 구문 분석할 뿐 아니라 서버에 연결을 인증하고 현재 트랜잭션에 인리스트먼트하기 위해 검사를 실행해야 하는 등의 단계를 거쳐야 합니다.  
@@ -124,7 +124,7 @@ using (SqlConnection connection = new SqlConnection(
 ```  
   
 ## <a name="application-roles-and-connection-pooling"></a>응용 프로그램 역할 및 연결 풀링  
- `sp_setapprole` 시스템 저장 프로시저를 호출하여 SQL Server 응용 프로그램 역할을 활성화한 후에는 해당 연결의 보안 컨텍스트를 다시 설정할 수 없습니다. 그러나 풀링이 활성화된 경우 연결이 풀로 반환되고 풀링된 연결이 다시 사용될 때 오류가 발생합니다. 자세한 내용은 기술 자료 문서를 참조 하세요. "[OLE DB 리소스 풀링의 SQL 응용 프로그램 역할 오류](http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
+ `sp_setapprole` 시스템 저장 프로시저를 호출하여 SQL Server 응용 프로그램 역할을 활성화한 후에는 해당 연결의 보안 컨텍스트를 다시 설정할 수 없습니다. 그러나 풀링이 활성화된 경우 연결이 풀로 반환되고 풀링된 연결이 다시 사용될 때 오류가 발생합니다. 자세한 내용은 기술 자료 문서를 참조 하세요. "[OLE DB 리소스 풀링의 SQL 응용 프로그램 역할 오류](https://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### <a name="application-role-alternatives"></a>응용 프로그램 역할의 대안  
  응용 프로그램 역할 대신 사용할 수 있는 보안 메커니즘을 사용하는 것이 좋습니다. 자세한 내용은 [SQL Server의 응용 프로그램 역할 만들기](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md)합니다.  
@@ -133,4 +133,4 @@ using (SqlConnection connection = new SqlConnection(
  [연결 풀링](../../../../docs/framework/data/adonet/connection-pooling.md)  
  [SQL Server 및 ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
  [성능 카운터](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

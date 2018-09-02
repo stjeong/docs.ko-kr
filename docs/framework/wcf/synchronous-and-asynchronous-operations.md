@@ -8,12 +8,12 @@ helpviewer_keywords:
 - service contracts [WCF], synchronous operations
 - service contracts [WCF], asynchronous operations
 ms.assetid: db8a51cb-67e6-411b-9035-e5821ed350c9
-ms.openlocfilehash: 8f2d962f40f2b56b1d1dda68129f477e4277ae1d
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: c2948cf76f7763eae51689973346965bc6c720a8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34728354"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404218"
 ---
 # <a name="synchronous-and-asynchronous-operations"></a>동기 및 비동기 작업
 이 항목에서는 비동기 서비스 작업의 구현 및 호출에 대해 설명합니다.  
@@ -56,7 +56,7 @@ ms.locfileid: "34728354"
 3.  IAsyncResult 비동기 패턴  
   
 #### <a name="task-based-asynchronous-pattern"></a>작업 기반 비동기 패턴  
- 작업 기반 비동기 패턴은 가장 쉽고 단순하기 때문에 비동기 작업을 구현하는 데 가장 선호하는 방법입니다. 이 방법을 사용하려면 서비스 작업을 구현하고 반환 형식으로 Task\<T>를 지정하면 됩니다. 여기서, T는 논리 연산에서 반환하는 형식입니다. 예:  
+ 작업 기반 비동기 패턴은 가장 쉽고 단순하기 때문에 비동기 작업을 구현하는 데 가장 선호하는 방법입니다. 이 방법을 사용하려면 서비스 작업을 구현하고 반환 형식으로 Task\<T>를 지정하면 됩니다. 여기서, T는 논리 연산에서 반환하는 형식입니다. 예를 들어:  
   
 ```csharp  
 public class SampleService:ISampleService   
@@ -73,7 +73,7 @@ public class SampleService:ISampleService
 }  
 ```  
   
- 논리 연산에서는 문자열을 반환하므로 SampleMethodTaskAsync 작업은 Task\<string>을 반환합니다. 작업 기반 비동기 패턴에 대한 자세한 내용은 [작업 기반 비동기 패턴](http://go.microsoft.com/fwlink/?LinkId=232504)을 참조하세요.  
+ 논리 연산에서는 문자열을 반환하므로 SampleMethodTaskAsync 작업은 Task\<string>을 반환합니다. 작업 기반 비동기 패턴에 대한 자세한 내용은 [작업 기반 비동기 패턴](https://go.microsoft.com/fwlink/?LinkId=232504)을 참조하세요.  
   
 > [!WARNING]
 >  작업 기반 비동기 패턴을 사용할 경우 작업 완료를 대기하는 동안 예외가 발생하면 T:System.AggregateException이 throw될 수 있습니다. 클라이언트 또는 서비스에서 이 예외가 발생할 수 있습니다.  
@@ -107,7 +107,7 @@ public class AsyncExample
 }  
 ```  
   
- 이벤트 기반 비동기 패턴에 대한 자세한 내용은 [이벤트 기반 비동기 패턴](http://go.microsoft.com/fwlink/?LinkId=232515)을 참조하세요.  
+ 이벤트 기반 비동기 패턴에 대한 자세한 내용은 [이벤트 기반 비동기 패턴](https://go.microsoft.com/fwlink/?LinkId=232515)을 참조하세요.  
   
 #### <a name="iasyncresult-asynchronous-pattern"></a>IAsyncResult 비동기 패턴  
  [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 비동기 프로그래밍 패턴을 사용하고 `<Begin>` 속성이 <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>로 설정된 `true` 메서드를 표시하여 서비스 작업을 비동기 방식으로 구현할 수 있습니다. 이 경우 비동기 작업은 동기 작업과 동일한 형태로 메타데이터에 노출됩니다. 즉, 요청 메시지와 관련 응답 메시지가 포함된 단일 작업으로 노출됩니다. 그런 다음 클라이언트 프로그래밍 모델에서는 둘 중 하나를 선택할 수 있습니다. 즉, 서비스가 호출될 때 요청-응답 메시지 교환이 발생하는 한 이 패턴을 동기 작업이나 비동기 작업으로 나타낼 수 있습니다.  

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - LINQ [Visual Basic], writing queries
 - writing LINQ queries [Visual Basic]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
-ms.openlocfilehash: beb192f6b136455cb1adcb6cf2616578b63fcebf
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 2f641d04b53d2e80985defcd6bd9a4882004fd97
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245741"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415477"
 ---
 # <a name="walkthrough-writing-queries-in-visual-basic"></a>연습: Visual Basic에서 쿼리 작성
 이 연습에서는 쓸 Visual Basic 언어 기능을 사용 하는 방법을 보여 줍니다. [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 쿼리 식입니다. 이 연습에서는 학생 개체의 목록에 쿼리를 만드는 방법, 쿼리를 실행 하는 방법 및 수정 하는 방법을 보여 줍니다. 쿼리 개체 이니셜라이저, 지역 형식 유추 및 익명 형식을 비롯 한 여러 기능을 통합 합니다.  
@@ -134,11 +134,11 @@ ms.locfileid: "39245741"
 ## <a name="additional-information"></a>추가 정보  
  특정 유형에 대 한 설명서와 샘플을 읽을 준비가 쿼리 작업의 기본 개념에 익숙한 후 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 에서 관심 있는 공급자:  
   
- [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)  
+ [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)  
   
  [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
- [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)  
+ [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)  
   
  [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
@@ -150,4 +150,4 @@ ms.locfileid: "39245741"
  [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
  [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/queries.md)
+ [쿼리](../../../../visual-basic/language-reference/queries/index.md)

@@ -11,15 +11,15 @@ ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 5879614fd34fe645899f1b95f41e9b0675418292
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 564cef8ae53bf4a455a2e8032a296aa36e309917
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32742639"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402201"
 ---
 # <a name="ltperformancecountergt-element-network-settings"></a>&lt;performanceCounter&gt; 요소 (네트워크 설정)
-네트워킹 성능 카운터를 사용 하지 않도록 설정 하거나 사용 합니다.  
+네트워킹 성능 카운터를 사용할지 설정 합니다.  
   
  \<configuration>  
 \<system.net>  
@@ -41,7 +41,7 @@ ms.locfileid: "32742639"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`enabled`|네트워킹 성능 카운터를 사용할 수 있는지 여부를 지정 합니다. 기본값은 `false`입니다.|  
+|`enabled`|네트워킹 성능 카운터 사용 되는지 여부를 지정 합니다. 기본값은 `false`입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -55,14 +55,14 @@ ms.locfileid: "32742639"
 ## <a name="remarks"></a>설명  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
- 네트워킹 성능 카운터를 사용하려면 구성 파일에서 사용하도록 설정해야 합니다. 구성 파일의 단일 설정을 통해 모든 네트워킹 성능 카운터를 사용하거나 사용하지 않도록 설정합니다. 개별 네트워킹 성능 카운터를 사용하거나 사용하지 않도록 설정할 수는 없습니다. 특정 네트워킹 성능 카운터에 대 한 자세한 내용은 참조 하십시오. [네트워킹 성능 카운터](http://msdn.microsoft.com/library/d1860235-f643-46ae-846c-ff0ed8b0e3cd)합니다.  
+ 네트워킹 성능 카운터를 사용하려면 구성 파일에서 사용하도록 설정해야 합니다. 구성 파일의 단일 설정을 통해 모든 네트워킹 성능 카운터를 사용하거나 사용하지 않도록 설정합니다. 개별 네트워킹 성능 카운터를 사용하거나 사용하지 않도록 설정할 수는 없습니다. 특정 네트워킹 성능 카운터에 대 한 자세한 내용은 참조 하세요. [네트워킹 성능 카운터](https://msdn.microsoft.com/library/d1860235-f643-46ae-846c-ff0ed8b0e3cd)합니다.  
   
  기본값은 해당 네트워킹 성능 카운터가 비활성화 되었습니다.  
   
- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType> 속성의 현재 값을 가져오는 데 사용할 수는 **활성화** 해당 구성 파일에서 특성입니다.  
+ 합니다 <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType> 속성의 현재 값을 가져오는 데 사용할 수는 **사용 하도록 설정** 해당 구성 파일에서 특성입니다.  
   
 ## <a name="example"></a>예제  
- 구성 하는 방법을 보여 주는 다음 예제는 <xref:System.Net> 및 관련 네임 스페이스 네트워킹 성능 카운터를 사용 하도록 합니다.  
+ 다음 예제에서는 구성 하는 방법의 <xref:System.Net> 및 관련 네트워킹 성능 카운터를 사용 하도록 설정 하려면 네임 스페이스입니다.  
   
 ```xml  
 <configuration>  
@@ -80,4 +80,4 @@ ms.locfileid: "32742639"
  <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
  <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
  [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
- [네트워킹 성능 카운터](http://msdn.microsoft.com/library/d1860235-f643-46ae-846c-ff0ed8b0e3cd)
+ [네트워킹 성능 카운터](https://msdn.microsoft.com/library/d1860235-f643-46ae-846c-ff0ed8b0e3cd)

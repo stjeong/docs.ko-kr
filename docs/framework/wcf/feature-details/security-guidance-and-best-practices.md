@@ -6,15 +6,15 @@ helpviewer_keywords:
 ms.assetid: 79e4e6f7-0c00-4045-b0f0-e6a7c37c7788
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 498e05b7b9cfb3b7ea5e2c37e029d19ddae63b55
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 95836865bcf8908583e3a5c347bfcef805997fdc
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33497505"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43407627"
 ---
 # <a name="security-guidance-and-best-practices"></a>보안 지침 및 최선의 방법
-이 섹션의 항목에 대 한 지침 및 보안 Windows Communication Foundation (WCF) 응용 프로그램을 만들 때 고려해 야 할 항목을 표시 합니다. Windows Server AppFabric 및 보안 참조에 대 한 자세한 내용은 [보안 모델에 대 한 Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
+이 섹션의 항목에 대 한 지침 및 보안 Windows Communication Foundation (WCF) 응용 프로그램을 만들 때 고려해 야 할 항목을 제공 합니다. Windows Server AppFabric 및 보안 참조에 대 한 자세한 내용은 [보안 모델에 대 한 Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
   
 ## <a name="in-this-section"></a>이 섹션의 내용  
  [보안을 위한 최선의 방법](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)  
@@ -28,4 +28,4 @@ ms.locfileid: "33497505"
   
 ## <a name="see-also"></a>참고 항목  
  [기본 WCF 프로그래밍](../../../../docs/framework/wcf/basic-wcf-programming.md)  
- [Windows Server App Fabric에 대 한 보안 모델](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

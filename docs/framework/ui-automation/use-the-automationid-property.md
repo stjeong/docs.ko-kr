@@ -12,16 +12,16 @@ ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: bd5985dd531b13ca91efd9c0aa7987ff6a57e56a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 84aa8dd866d5870d8cd4e6c8c4951fa1e49a4052
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33401042"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400268"
 ---
 # <a name="use-the-automationid-property"></a>AutomationID 속성 사용
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 항목에는 <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> 를 사용하여 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 내에서 요소를 찾는 방법과 시기를 보여주는 시나리오와 샘플 코드가 있습니다.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "33401042"
   
 #### <a name="use-a-persistent-path-to-return-to-a-previously-identified-automationelement"></a>영구 경로를 사용하여 이전에 식별된 AutomationElement로 돌아가기  
   
--   간단한 테스트 스크립트에서 견고한 레코드 및 재생 유틸리티에 이르기까지, 클라이언트 응용 프로그램은 파일 열기 대화 상자 또는 메뉴 항목 등과 같이 현재 인스턴스화되지 않아서 UI 자동화 트리에 존재하지 않는 요소에 액세스해야 할 수 있습니다. 이러한 요소는 AutomationID, 컨트롤 패턴 및 이벤트 수신기와 같은 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 속성을 사용하여 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 작업의 특정 시퀀스를 재현하거나 “재생”해야만 인스턴스화할 수 있습니다. 참조 [스크립트 생성기 샘플 테스트](http://msdn.microsoft.com/library/028467fd-2980-4691-9522-0131dcef23a0) 사용 하는 예제에 대 한 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 사용자와 상호 작용에 따라 테스트 스크립트를 생성 하는 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]합니다.  
+-   간단한 테스트 스크립트에서 견고한 레코드 및 재생 유틸리티에 이르기까지, 클라이언트 응용 프로그램은 파일 열기 대화 상자 또는 메뉴 항목 등과 같이 현재 인스턴스화되지 않아서 UI 자동화 트리에 존재하지 않는 요소에 액세스해야 할 수 있습니다. 이러한 요소는 AutomationID, 컨트롤 패턴 및 이벤트 수신기와 같은 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 속성을 사용하여 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 작업의 특정 시퀀스를 재현하거나 “재생”해야만 인스턴스화할 수 있습니다. 참조 [테스트 Script Generator Sample](https://msdn.microsoft.com/library/028467fd-2980-4691-9522-0131dcef23a0) 사용 하는 예제에 대 한 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 사용자와 상호 작용에 따라 테스트 스크립트를 생성 하는 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]합니다.  
   
  [!code-csharp[UIAAutomationID_snip#UIAWorkerThread](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAAutomationID_snip/CSharp/FindByAutomationID.xaml.cs#uiaworkerthread)]
  [!code-vb[UIAAutomationID_snip#UIAWorkerThread](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAAutomationID_snip/VisualBasic/FindByAutomationID.xaml.vb#uiaworkerthread)]  

@@ -2,15 +2,15 @@
 title: 트랜잭션된 큐
 ms.date: 03/30/2017
 ms.assetid: b1b011dd-5e0b-482c-9bb0-9d8727038f14
-ms.openlocfilehash: b125158a113079d87eb6926393d5a2b5fe326824
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: db6a9686334eefb02b9360827a23ca8363127eb5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519683"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408817"
 ---
 # <a name="transacted-queues"></a>트랜잭션된 큐
-이 샘플에서는 큐와 트랜잭션을의 Windows WF (Workflow Foundation)를 안정적이 고 확장 가능한 서비스를 만드는 통합 하는 방법을 보여 줍니다. A <!--zz <xref:System.Activities.TransactionScope>--> `System.Activities.TransactionScope` 클라이언트 워크플로에서 사용 하 여 트랜잭션 중인 큐로 메시지를 보내는 데 사용 된 <xref:System.ServiceModel.NetMsmqBinding>합니다. 서버에서는 큐로부터 메시지를 받고 동일한 트랜잭션을 진행 중인 워크플로의 상태를 업데이트하기 위해 <xref:System.ServiceModel.Activities.TransactedReceiveScope>를 사용합니다.  
+이 샘플에는 큐와 트랜잭션을에서 Windows WF (Workflow Foundation) 확장 가능 하며 안정적인 서비스를 만드는 통합 하는 방법을 보여 줍니다. A <!--zz <xref:System.Activities.TransactionScope>--> `System.Activities.TransactionScope` 클라이언트 워크플로에서 사용 하 여 트랜잭션 중인 큐에 메시지를 보내는 데 사용 된 <xref:System.ServiceModel.NetMsmqBinding>합니다. 서버에서는 큐로부터 메시지를 받고 동일한 트랜잭션을 진행 중인 워크플로의 상태를 업데이트하기 위해 <xref:System.ServiceModel.Activities.TransactedReceiveScope>를 사용합니다.  
   
 ## <a name="demonstrates"></a>세부 항목  
  <xref:System.Activities.Statements.TransactionScope>, <xref:System.ServiceModel.Activities.TransactedReceiveScope>, <xref:System.ServiceModel.NetMsmqBinding>, <xref:System.ServiceModel.Activities.Receive> 및 내용 기반 상관 관계  
@@ -24,7 +24,7 @@ ms.locfileid: "33519683"
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  MSMQ를 설치하고 구성합니다. 참조 [메시지 큐 설치](http://go.microsoft.com/fwlink/?LinkId=178526) 대 한 자세한 내용은 합니다.  
+1.  MSMQ를 설치하고 구성합니다. 참조 [메시지 큐 설치](https://go.microsoft.com/fwlink/?LinkId=178526) 세부 정보에 대 한 합니다.  
   
 2.  명령줄에서 다음 명령을 실행하여 MSDTC가 실행되고 있는지 확인합니다. `net start msdtc`  
   
@@ -35,6 +35,6 @@ ms.locfileid: "33519683"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\Transactions\TransactedQueues`

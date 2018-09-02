@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -l compiler option [Visual Basic]
 - /l compiler option [Visual Basic]
 ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
-ms.openlocfilehash: 95c528c4d686c44d0d77d1f55833be75ab14f8bf
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 91eba53eb8094e55af09d406515dad16fc71937d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931892"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405304"
 ---
 # <a name="-link-visual-basic"></a>-링크 (Visual Basic)
 컴파일러에서 지정된 어셈블리의 COM 형식 정보를 현재 컴파일하고 있는 프로젝트에 사용할 수 있도록 합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "42931892"
 |`fileList`|필수. 쉼표로 구분된 어셈블리 파일 이름 목록입니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다.|  
   
 ## <a name="remarks"></a>설명  
- `-link` 옵션을 사용하면 포함된 형식 정보가 있는 응용 프로그램을 배포할 수 있습니다. 그러면 응용 프로그램은 런타임 어셈블리에 대한 참조를 요구하지 않고 포함된 형식 정보를 구현하는 형식을 런타임 어셈블리에서 사용할 수 있습니다. 다양한 버전의 런타임 어셈블리가 게시된 경우 포함된 형식 정보를 포함하는 응용 프로그램은 다시 컴파일하지 않아도 다양한 버전에서 사용할 수 있습니다. 예제를 보려면 [연습: 관리되는 어셈블리의 형식 포함](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)을 참조하세요.  
+ `-link` 옵션을 사용하면 포함된 형식 정보가 있는 응용 프로그램을 배포할 수 있습니다. 그러면 응용 프로그램은 런타임 어셈블리에 대한 참조를 요구하지 않고 포함된 형식 정보를 구현하는 형식을 런타임 어셈블리에서 사용할 수 있습니다. 다양한 버전의 런타임 어셈블리가 게시된 경우 포함된 형식 정보를 포함하는 응용 프로그램은 다시 컴파일하지 않아도 다양한 버전에서 사용할 수 있습니다. 예제를 보려면 [연습: 관리되는 어셈블리의 형식 포함](https://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)을 참조하세요.  
   
  `-link` 옵션을 사용하면 COM interop를 사용하여 작업할 때 특히 유용합니다. 응용 프로그램에 대상 컴퓨터의 PIA(주 interop 어셈블리)가 더 이상 필요하지 않도록 COM 형식을 포함할 수 있습니다. `-link` 옵션은 참조된 interop 어셈블리의 COM 형식 정보를 컴파일된 결과 코드에 포함하도록 컴파일러에 지시합니다. COM 형식은 CLSID(GUID) 값으로 식별됩니다. 따라서 동일한 CLSID 값을 갖는 동일한 COM 형식이 설치된 대상 컴퓨터에서 응용 프로그램을 실행할 수 있습니다. Microsoft Office를 자동화하는 응용 프로그램이 좋은 예입니다. Office와 같은 응용 프로그램은 일반적으로 여러 버전에서 동일한 CLSID 값을 유지하지 때문에 .NET Framework 4 이상이 대상 컴퓨터에 설치되어 있고 응용 프로그램이 참조된 COM 형식에 포함된 메서드, 속성 또는 이벤트를 사용하는 한 응용 프로그램에서 참조된 COM 형식을 사용할 수 있습니다.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "42931892"
   
  [!code-vb[VbLinkCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/link_5.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 명령줄은 소스 파일을 컴파일하 `OfficeApp.vb` 참조 어셈블리 및 `COMData1.dll` 하 고 `COMData2.dll` 되려면 `OfficeApp.exe`합니다.  
   
 ```console  
@@ -87,7 +87,7 @@ vbc -link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.vb
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [연습: 관리되는 어셈블리의 형식 포함](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
+ [연습: 관리되는 어셈블리의 형식 포함](https://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
  [-참조 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
  [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
  [-libpath](../../../visual-basic/reference/command-line-compiler/libpath.md)  

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1776f48f-9bea-41f6-83a4-c990c7a2c991
-ms.openlocfilehash: 2f705df810e7f3653589ca776a69bbe592458833
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 83450e6ace33e89ddd263a1514f74f4d4e231cf7
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365555"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405805"
 ---
 # <a name="sqlcommand-execution-with-a-sqlnotificationrequest"></a>SqlNotificationRequest를 사용하여 SqlCommand 실행
 데이터가 서버에서 반입된 후 변경될 때 알림을 생성하도록 <xref:System.Data.SqlClient.SqlCommand>를 구성할 수 있으며 쿼리가 다시 실행된 경우 결과 집합은 달라질 수 있습니다. 이 기능은 서버에 사용자 지정 알림 큐를 사용하려는 경우나 활성 개체를 유지하지 않으려는 경우에 유용합니다.  
@@ -72,4 +72,4 @@ command.ExecuteReader();
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

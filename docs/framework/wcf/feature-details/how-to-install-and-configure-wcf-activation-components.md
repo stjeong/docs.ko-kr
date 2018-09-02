@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: cd792c2c26898cd3dfd7b52d865fa83636c426eb
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: 8b516bb4603f33828069b5356676d8b35dc961d2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253975"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408672"
 ---
 # <a name="how-to-install-and-configure-wcf-activation-components"></a>방법: WCF Activation 구성 요소 설치 및 구성
 이 항목에서는에 Windows Process Activation Service (WAS 라고도 함)을 설정 하는 데 필요한 단계를 설명 [!INCLUDE[wv](../../../../includes/wv-md.md)] HTTP를 통해 통신 하지 않는 서비스 네트워크 프로토콜을 Windows Communication Foundation (WCF)를 호스트 합니다. 다음 단원에서는 이 구성 단계에 대해 간략히 설명합니다.  
@@ -104,4 +104,4 @@ ms.locfileid: "43253975"
  [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)  
  [MSMQ 활성화](../../../../docs/framework/wcf/samples/msmq-activation.md)  
  [NamedPipe 활성화](../../../../docs/framework/wcf/samples/namedpipe-activation.md)  
- [Windows Server App Fabric 호스팅 기능](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

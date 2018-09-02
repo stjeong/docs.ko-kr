@@ -2,12 +2,12 @@
 title: '&lt;webSocketSettings&gt;'
 ms.date: 03/30/2017
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
-ms.openlocfilehash: 84aee31b6c15beb32732f89eae7c3d176f57971d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e5f34dca83c8d3d08d27fb72bee5af2a89ac6b9f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32754839"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416430"
 ---
 # <a name="ltwebsocketsettingsgt"></a>&lt;webSocketSettings&gt;
 WebSocket 설정을 지정하는 데 사용되는 구성 요소입니다.  
@@ -67,7 +67,7 @@ WebSocket 설정을 지정하는 데 사용되는 구성 요소입니다.
 |\<netHttpBinding>|NetHttpBinding을 지정합니다.|  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 \<webSocketSettings > 요소입니다.  
+ 다음 예제에서는 사용 하는 방법의 \<webSocketSettings > 요소입니다.  
   
 ```xml  
 <netHttpBinding>  
@@ -92,5 +92,5 @@ WebSocket 설정을 지정하는 데 사용되는 구성 요소입니다.
  <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

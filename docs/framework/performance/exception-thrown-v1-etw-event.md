@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 0d3da389-6b7b-40f6-a877-fac546d6019c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: dafa5846f779276ab81e8e30e7c7a50b9fbff853
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 865b7b16d5807bd9161855f453128a63c84eab96
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393857"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400824"
 ---
 # <a name="exception-thrownv1-etw-event"></a>예외가 throw된 V1 ETW 이벤트
 이 이벤트는 throw된 예외에 대한 정보를 캡처합니다.  
@@ -36,8 +36,8 @@ ms.locfileid: "33393857"
 |예외 형식|win:UnicodeString|예외 형식, 예: `System.NullReferenceException`.|  
 |예외 메시지|win:UnicodeString|실제 예외 메시지입니다.|  
 |EIPCodeThrow|win:Pointer|예외가 발생한 명령 포인터입니다.|  
-|ExceptionHR|win:UInt32|예외 [HRESULT](http://go.microsoft.com/fwlink/?LinkId=179679)입니다.|  
-|ExceptionFlags|win:UInt16|0x01: HasInnerException(Visual Basic 설명서에서 [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md) 참조).<br /><br /> 0x02: IsNestedException.<br /><br /> 0x04: IsRethrownException.<br /><br /> 0x08: IsCorruptedStateException(프로세스 상태가 손상됨을 나타냄, MSDN에서 [손상된 상태 예외 처리](http://go.microsoft.com/fwlink/?LinkId=179681) 참조).<br /><br /> 0x10: IsCLSCompliant(<xref:System.Exception>에서 파생된 예외는 CLS와 호환됨, 그러지 않으면 CLS와 호환되지 않음).|  
+|ExceptionHR|win:UInt32|예외 [HRESULT](https://go.microsoft.com/fwlink/?LinkId=179679)입니다.|  
+|ExceptionFlags|win:UInt16|0x01: HasInnerException(Visual Basic 설명서에서 [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md) 참조).<br /><br /> 0x02: IsNestedException.<br /><br /> 0x04: IsRethrownException.<br /><br /> 0x08: IsCorruptedStateException(프로세스 상태가 손상됨을 나타냄, MSDN에서 [손상된 상태 예외 처리](https://go.microsoft.com/fwlink/?LinkId=179681) 참조).<br /><br /> 0x10: IsCLSCompliant(<xref:System.Exception>에서 파생된 예외는 CLS와 호환됨, 그러지 않으면 CLS와 호환되지 않음).|  
 |ClrInstanceID|win:UInt16|CLR 또는 CoreCLR 인스턴스에 대한 고유 ID입니다.|  
   
 ## <a name="see-also"></a>참고 항목  

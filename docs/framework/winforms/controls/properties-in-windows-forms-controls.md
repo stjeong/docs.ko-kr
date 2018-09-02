@@ -6,15 +6,15 @@ helpviewer_keywords:
 - controls [Windows Forms], properties
 - properties [Windows Forms]
 ms.assetid: 2785279b-fb57-4937-8f6b-2050e475db6f
-ms.openlocfilehash: aa7d8be158f4e0a7b2b95bf02cb0d1e173041f59
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 37db3f16a17acc7f3a6e594bd284ba368801e70a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33538131"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43419066"
 ---
 # <a name="properties-in-windows-forms-controls"></a>Windows Forms 컨트롤의 속성
-Windows Forms 컨트롤 속성 폼을 여러 기본 클래스를 상속 <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다. 여기에 속성 같은 <xref:System.Windows.Forms.Control.Font%2A>, <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Bounds%2A>, <xref:System.Windows.Forms.Control.ClientRectangle%2A>, <xref:System.Windows.Forms.Control.DisplayRectangle%2A>, <xref:System.Windows.Forms.Control.Enabled%2A>, <xref:System.Windows.Forms.Control.Focused%2A>, <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Width%2A>, <xref:System.Windows.Forms.Control.Visible%2A>, <xref:System.Windows.Forms.Control.AutoSize%2A>, 및 다른 많은 요인을 합니다. 상속 된 속성에 대 한 세부 정보를 참조 하십시오. <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다.  
+Windows Forms 컨트롤을 기본 클래스를 많은 속성 양식을 상속 <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다. 와 같은 속성을 포함 <xref:System.Windows.Forms.Control.Font%2A>, <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Bounds%2A>, <xref:System.Windows.Forms.Control.ClientRectangle%2A>를 <xref:System.Windows.Forms.Control.DisplayRectangle%2A>, <xref:System.Windows.Forms.Control.Enabled%2A>를 <xref:System.Windows.Forms.Control.Focused%2A>, <xref:System.Windows.Forms.Control.Height%2A>를 <xref:System.Windows.Forms.Control.Width%2A>, <xref:System.Windows.Forms.Control.Visible%2A>, <xref:System.Windows.Forms.Control.AutoSize%2A>를 등입니다. 상속 된 속성에 대 한 세부 정보를 참조 하세요. <xref:System.Windows.Forms.Control?displayProperty=nameWithType>합니다.  
   
  컨트롤에서 상속된 속성을 재정의하고 새 속성을 정의할 수도 있습니다.  
   
@@ -39,17 +39,17 @@ Windows Forms 컨트롤 속성 폼을 여러 기본 클래스를 상속 <xref:Sy
  복합 컨트롤을 구현하기 위한 기본 클래스를 설명합니다.  
   
  <xref:System.ComponentModel.TypeConverterAttribute>  
- 지정 하는 특성에 설명 된 <xref:System.ComponentModel.TypeConverter> 사용자 지정 속성 형식에 대해 사용 하도록 합니다.  
+ 지정 하는 특성에 설명 합니다 <xref:System.ComponentModel.TypeConverter> 사용자 지정 속성 형식에 대해 사용 하도록 합니다.  
   
  <xref:System.ComponentModel.EditorAttribute>  
- 지정 하는 특성에 설명 된 <xref:System.Drawing.Design.UITypeEditor> 사용자 지정 속성에 사용할 합니다.  
+ 지정 하는 특성에 설명 합니다 <xref:System.Drawing.Design.UITypeEditor> 사용자 지정 속성에 대해 사용 하도록 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [Windows Forms 컨트롤의 특성](../../../../docs/framework/winforms/controls/attributes-in-windows-forms-controls.md)  
  사용자 지정 컨트롤 및 구성 요소의 속성이나 다른 멤버에 적용할 수 있는 특성을 설명합니다.  
   
- [구성 요소의 디자인 타임 특성](http://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3)  
+ [구성 요소의 디자인 타임 특성](https://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3)  
  비주얼 디자이너에서 디자인 타임에 올바르게 표시되도록 구성 요소 및 컨트롤에 적용할 메타데이터 특성을 나열합니다.  
   
- [디자인 타임 지원 확장](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [디자인 타임 지원 확장](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
  디자인 타임 지원을 제공하는 편집기 및 디자이너와 같은 클래스를 구현하는 방법을 설명합니다.

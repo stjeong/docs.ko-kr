@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4a489e05435ce160c65e936f448688d69b3a965f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 8ca958f8472d7f7e1a44ad4ab237f582f92713c3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33435263"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402740"
 ---
 # <a name="iclrstrongnamegethashfromblob-method"></a>ICLRStrongName::GetHashFromBlob 메서드
-지정된 된 해시 알고리즘을 사용 하 여 지정 된 메모리 주소에서 어셈블리의 해시를 가져옵니다.  
+지정된 된 해시 알고리즘을 사용 하 여 지정 된 메모리 주소에 어셈블리의 해시를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,7 +45,7 @@ HRESULT GetHashFromBlob (
  [in] 해시할 메모리 블록의 주소에 대 한 포인터입니다.  
   
  `cchBlob`  
- [in] 메모리 블록의 길이 (바이트)를 합니다.  
+ [in] 메모리 블록의 길이 (바이트) 합니다.  
   
  `piHashAlg`  
  [out에서] 해시 알고리즘을 지정 하는 상수입니다. 기본 알고리즘에 0을 사용 합니다.  
@@ -54,22 +54,22 @@ HRESULT GetHashFromBlob (
  [out] 반환 된 해시 버퍼입니다.  
   
  `cchHash`  
- [in] 요청된 된 최대 크기의 `pbHash`합니다.  
+ [in] 요청 된 최대 크기인 `pbHash`합니다.  
   
  `pchHash`  
- [out] 반환 된 바이트 단위로 크기 `pbHash`합니다.  
+ [out] 반환 된 바이트의 크기, `pbHash`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- `S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값 (참조 [일반적인 HRESULT 값](http://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).  
+ `S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** MetaHost.h  
   
  **라이브러리:** MSCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [ICLRStrongName 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

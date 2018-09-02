@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 576079e4-debe-4ab5-9204-fcbe2ca7a5e2
-ms.openlocfilehash: ab866356e979ec6c041d12620cfb6abfc8928668
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 073cd3a57f254f639fac44900ff6bf022e1fb165
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33364881"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408401"
 ---
 # <a name="enabling-multiple-active-result-sets"></a>MARS(Multiple Active Result Sets) 사용
 MARS(Multiple Active Result Sets)는 단일 연결에서 여러 배치를 실행할 수 있도록 하는 SQL Server의 기능입니다. SQL Server에 MARS가 활성화되어 있으면 명령 개체를 사용할 때마다 연결에 세션이 추가됩니다.  
@@ -21,7 +21,7 @@ MARS(Multiple Active Result Sets)는 단일 연결에서 여러 배치를 실행
 ## <a name="enabling-and-disabling-mars-in-the-connection-string"></a>연결 문자열에서 MARS 활성화 및 비활성화  
   
 > [!NOTE]
->  샘플을 사용 하는 다음 연결 문자열에서는 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다. 제공된 연결 문자열은 데이터베이스가 MSSQL1이라는 서버에 설치되었다고 가정합니다. 사용자 환경의 필요에 따라 연결 문자열을 수정합니다.  
+>  샘플을 사용 하는 다음 연결 문자열 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다. 제공된 연결 문자열은 데이터베이스가 MSSQL1이라는 서버에 설치되었다고 가정합니다. 사용자 환경의 필요에 따라 연결 문자열을 수정합니다.  
   
  MARS 기능은 기본적으로 비활성화되어 있으며 연결 문자열에 "MultipleActiveResultSets=True" 키워드 쌍을 추가하여 활성화할 수 있습니다. MARS를 활성화하는 유일한 유효 값은 "True"입니다. 다음 예제에서는 SQL Server의 인스턴스에 연결하는 방법과 MARS를 활성화하도록 지정하는 방법을 설명합니다.  
   
@@ -62,7 +62,7 @@ string connectionString = "Data Source=MSSQL1;" +
  SELECT 문 내부의 WAITFOR 문은 첫 번째 행이 생성될 때까지 기다리는 동안 트랜잭션을 만들지 않습니다. 즉, WAITFOR 문이 대기 중인 경우에는 동일한 연결에서 다른 배치를 실행할 수 없습니다.  
   
 ### <a name="mars-session-cache"></a>MARS 세션 캐시  
- MARS가 활성화된 연결이 열리면 논리 세션이 만들어져 오버헤드가 추가됩니다. 오버 헤드를 최소화 하 고 성능을 향상 하려면 **SqlClient** 연결 내에서 MARS 세션을 캐시 합니다. 캐시에는 최대 10개의 MARS 세션이 포함되며 이 값은 사용자가 조정할 수 없습니다. 세션 제한에 도달하면 새 세션이 만들어지며, 이때 오류는 생성되지 않습니다. 캐시와 캐시에 포함된 세션은 각 연결을 기준으로 하므로 여러 연결에서 공유되지 않습니다. 세션이 해제되면 풀의 상한에 도달할 때까지 풀로 반환됩니다. 캐시 풀이 꽉 차면 세션이 닫힙니다. MARS 세션은 만료되지 않으며 연결 개체가 삭제될 때 정리되기만 합니다. MARS 세션 캐시는 미리 로드되지 않고 응용 프로그램에 추가 세션이 필요할 때 로드됩니다.  
+ MARS가 활성화된 연결이 열리면 논리 세션이 만들어져 오버헤드가 추가됩니다. 오버 헤드를 최소화 하 여 성능 향상 **SqlClient** 연결 내에서 MARS 세션 캐시 합니다. 캐시에는 최대 10개의 MARS 세션이 포함되며 이 값은 사용자가 조정할 수 없습니다. 세션 제한에 도달하면 새 세션이 만들어지며, 이때 오류는 생성되지 않습니다. 캐시와 캐시에 포함된 세션은 각 연결을 기준으로 하므로 여러 연결에서 공유되지 않습니다. 세션이 해제되면 풀의 상한에 도달할 때까지 풀로 반환됩니다. 캐시 풀이 꽉 차면 세션이 닫힙니다. MARS 세션은 만료되지 않으며 연결 개체가 삭제될 때 정리되기만 합니다. MARS 세션 캐시는 미리 로드되지 않고 응용 프로그램에 추가 세션이 필요할 때 로드됩니다.  
   
 ### <a name="thread-safety"></a>스레드로부터의 안전성  
  MARS 작업은 스레드로부터 안전하지 않습니다.  
@@ -90,7 +90,7 @@ string connectionString = "Data Source=MSSQL1;" +
 ### <a name="parallel-execution"></a>병렬 실행  
  MARS를 사용하더라도 한 응용 프로그램의 여러 연결에 대한 모든 요구 사항은 유지됩니다. 응용 프로그램에서 서버에 대한 명령의 실질적인 병렬 실행이 필요한 경우에는 여러 개의 연결을 사용해야 합니다.  
   
- 예를 들어, 다음과 같은 시나리오를 가정해 봅시다. 두 개의 명령 개체, 즉 결과 집합을 처리하기 위한 명령 개체와 데이터를 업데이트하기 위한 명령 개체를 만듭니다. 이들 개체는 MARS를 통해 일반 연결을 공유합니다. 이 시나리오는 `Transaction`합니다.`Commit` 업데이트를 수행 하지 못하므로 다음과 같은 예외가 발생 첫 번째 명령 개체에서 모든 결과 읽을 때까지:  
+ 예를 들어, 다음과 같은 시나리오를 가정해 봅시다. 두 개의 명령 개체, 즉 결과 집합을 처리하기 위한 명령 개체와 데이터를 업데이트하기 위한 명령 개체를 만듭니다. 이들 개체는 MARS를 통해 일반 연결을 공유합니다. 이 시나리오에서는 `Transaction`합니다.`Commit` 예외가 생성 된 첫 번째 명령 개체의 모든 결과 읽은 때까지 업데이트에 실패 합니다.  
   
  메시지: 다른 세션에서 사용 중인 트랜잭션 컨텍스트  
   
@@ -113,4 +113,4 @@ string connectionString = "Data Source=MSSQL1;" +
   
 ## <a name="see-also"></a>참고 항목  
  [MARS(Multiple Active Result Sets)](../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

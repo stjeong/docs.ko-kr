@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 271b6889-3454-46ff-96ab-9feb15e742ee
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 459d74f3faf9fab4cba047a87ccff77d193e9026
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 17650e06cb505dd778a9c0980c2a32fda8099cb4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399567"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43407575"
 ---
 # <a name="how-to-enable-wif-tracing"></a>방법: WIF 추적 사용
 ## <a name="applies-to"></a>적용 대상  
@@ -19,7 +19,7 @@ ms.locfileid: "33399567"
 -   ASP.NET® Web Forms  
   
 ## <a name="summary"></a>요약  
- 이 방법은 ASP.NET 응용 프로그램에서 WIF 추적을 사용하도록 설정하기 위한 자세한 단계별 프로시저를 제공합니다. 또한 추적 수신기 및 로그가 제대로 작동하는지 확인하기 위해 응용 프로그램을 테스트하는 방법에 대한 지침을 제공합니다. 이 방법 설명에 보안 토큰 서비스(STS)를 만들기 위한 자세한 지침은 없으며, 그 대신 ID 및 액세스 도구와 함께 제공되는 개발 STS를 사용합니다. 개발 STS가 실제 인증을 수행하는 것은 아니며, 테스트 목적으로만 사용됩니다. 이 방법을 완료하려면 ID 및 액세스 도구를 설치해야 합니다. [ID 및 액세스 도구](http://go.microsoft.com/fwlink/?LinkID=245849)에서 다운로드할 수 있습니다.  
+ 이 방법은 ASP.NET 응용 프로그램에서 WIF 추적을 사용하도록 설정하기 위한 자세한 단계별 프로시저를 제공합니다. 또한 추적 수신기 및 로그가 제대로 작동하는지 확인하기 위해 응용 프로그램을 테스트하는 방법에 대한 지침을 제공합니다. 이 방법 설명에 보안 토큰 서비스(STS)를 만들기 위한 자세한 지침은 없으며, 그 대신 ID 및 액세스 도구와 함께 제공되는 개발 STS를 사용합니다. 개발 STS가 실제 인증을 수행하는 것은 아니며, 테스트 목적으로만 사용됩니다. 이 방법을 완료하려면 ID 및 액세스 도구를 설치해야 합니다. [ID 및 액세스 도구](https://go.microsoft.com/fwlink/?LinkID=245849)에서 다운로드할 수 있습니다.  
   
 > [!IMPORTANT]
 >  WS-Federation 프로토콜을 사용하는 수동 응용 프로그램에 WIF 추적을 사용하면 응용 프로그램이 DoS(서비스 거부) 공격에 노출되거나 악의적인 주체에게 정보가 공개될 가능성이 있습니다. 여기에는 수동 RP 및 수동 STS가 둘 다 포함됩니다. 따라서 프로덕션 환경에서는 수동 RP 또는 STS에 WIF 추적을 사용하지 않는 것이 좋습니다.  

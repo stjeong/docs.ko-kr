@@ -7,15 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - WPF application [WPF], building
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
-ms.openlocfilehash: 1bb092ed74a2c4c67be9a52d9cab25dc98520a01
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 89ceb39b08250bc400eed6ca8f8c24013446b453
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33549385"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43417293"
 ---
 # <a name="building-a-wpf-application-wpf"></a>WPF 응용 프로그램 빌드(WPF)
-Windows Presentation Foundation (WPF) 응용 프로그램으로 빌드할 수 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 실행 파일 (.exe), 라이브러리 (.dll) 또는 두 가지 유형의 어셈블리의 조합입니다. 이 항목에서는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램을 빌드하는 방법과 빌드 프로세스의 주요 단계에 대해 설명합니다.  
+Windows Presentation Foundation (WPF) 응용 프로그램으로 빌드할 수 있습니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 실행 파일 (.exe), 라이브러리 (.dll) 또는 두 어셈블리 형식의 조합입니다. 이 항목에서는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램을 빌드하는 방법과 빌드 프로세스의 주요 단계에 대해 설명합니다.  
   
   
 <a name="Building_a_WPF_Application_using_Command_Line"></a>   
@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) 응용 프로그램으로 빌드할 수 [!
   
 -   MSBuild(Microsoft Build Engine). 응용 프로그램에 코드 및 XAML 파일 외에 MSBuild 프로젝트 파일이 포함되어야 합니다. 자세한 내용은 "MSBuild"를 참조하세요.  
   
--   Visual Studio. Visual Studio는 MSBuild를 사용하여 WPF 응용 프로그램을 컴파일하고 UI를 만들기 위한 비주얼 디자이너를 포함하는 통합 개발 환경입니다. 자세한 내용은 [Visual Studio에서 응용 프로그램 개발](http://msdn.microsoft.com/library/97490c1b-a247-41fb-8f2c-bc4c201eff68) 및 [WPF 디자이너](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)를 참조하세요.  
+-   Visual Studio. Visual Studio는 MSBuild를 사용하여 WPF 응용 프로그램을 컴파일하고 UI를 만들기 위한 비주얼 디자이너를 포함하는 통합 개발 환경입니다. 자세한 내용은 [Visual Studio에서 응용 프로그램 개발](https://msdn.microsoft.com/library/97490c1b-a247-41fb-8f2c-bc4c201eff68) 하 고 [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)합니다.  
   
 <a name="The_Windows_Presentation_Foundation_Build_Pipeline"></a>   
 ## <a name="wpf-build-pipeline"></a>WPF 빌드 파이프라인  
@@ -50,7 +50,7 @@ Windows Presentation Foundation (WPF) 응용 프로그램으로 빌드할 수 [!
   
 <a name="Resolving_references"></a>   
 ### <a name="resolving-references"></a>참조 확인  
- 빌드 프로세스는 응용 프로그램 프로젝트를 빌드하는 데 필요한 어셈블리를 찾아서 바인딩합니다. 이 논리는 `ResolveAssemblyReference` 작업에 포함되어 있습니다. 프로젝트 파일에서 `Reference`로 선언된 모든 어셈블리는 시스템에 이미 설치된 어셈블리의 메타데이터 및 검색 경로에 대한 정보와 함께 작업에 제공됩니다. 이 작업은 어셈블리를 찾고 설치된 어셈블리의 메타데이터를 사용하여 출력 매니페스트에 표시할 필요 없는 이러한 코어 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 어셈블리를 필터링합니다. 이 작업의 목적은 ClickOnce 매니페스트에서 중복되는 정보를 방지하는 것입니다. 예를 들어 PresentationFramework.dll의 특징으로 간주 될 수 있으므로 응용 프로그램 빌드하는에 대 한는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 또한 및 모든 이후 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 어셈블리는.NET Framework가 있는 모든 컴퓨터에서 동일한 위치에 존재 설치 매니페스트에 모든.NET Framework 참조 어셈블리에 있는 모든 정보를 포함 하려면 않아도가 됩니다.  
+ 빌드 프로세스는 응용 프로그램 프로젝트를 빌드하는 데 필요한 어셈블리를 찾아서 바인딩합니다. 이 논리는 `ResolveAssemblyReference` 작업에 포함되어 있습니다. 프로젝트 파일에서 `Reference`로 선언된 모든 어셈블리는 시스템에 이미 설치된 어셈블리의 메타데이터 및 검색 경로에 대한 정보와 함께 작업에 제공됩니다. 이 작업은 어셈블리를 찾고 설치된 어셈블리의 메타데이터를 사용하여 출력 매니페스트에 표시할 필요 없는 이러한 코어 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 어셈블리를 필터링합니다. 이 작업의 목적은 ClickOnce 매니페스트에서 중복되는 정보를 방지하는 것입니다. 예를 들어 PresentationFramework.dll의 대표로 간주 될 수 있으므로 응용 프로그램 용으로 빌드된 합니다 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 또한 및 모든 이후 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 어셈블리가.NET Framework에 있는 모든 컴퓨터에 동일한 위치에 있는 설치 된 경우 매니페스트의 모든.NET Framework 참조 어셈블리에 대 한 모든 정보를 포함할 필요가 없습니다.  
   
 <a name="Markup_Compilation___Pass_1"></a>   
 ### <a name="markup-compilationpass-1"></a>태그 컴파일 - 패스 1  
@@ -64,9 +64,9 @@ Windows Presentation Foundation (WPF) 응용 프로그램으로 빌드할 수 [!
   
 3.  새 partial 클래스의 CodeDOM 표현이 만들어져서 obj\Release 폴더에 복사됩니다.  
   
- 또한 모든 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 파일에 대해 언어별 코드 파일이 생성됩니다. 예를 들어 Page1.xaml 페이지 Visual Basic 프로젝트에 대해 한 Page1.g.vb 생성 됩니다. Page1.g.cs Page1.xaml 페이지는 C# 프로젝트에 대해 생성 됩니다. 파일 이름에 ".g"가 있으면 파일이 태그 파일(예: `Page` 또는 `Window`)의 최상위 수준 요소에 대한 partial 클래스 선언을 포함하여 생성된 코드라는 의미입니다. 클래스 선언에서 `partial` C# 한정자 (`Extends` Visual Basic의) 나타내려면 클래스를 다른 위치에 대 한 다른 선언, 일반적으로 코드 숨김 파일에서는 Page1.xaml.cs 합니다.  
+ 또한 모든 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 파일에 대해 언어별 코드 파일이 생성됩니다. 예를 들어, Visual Basic 프로젝트의 Page1.xaml 페이지에 대 한는 Page1.g.vb 생성 됩니다. C# 프로젝트에서의 Page1.xaml 페이지에 대해서는 Page1.g.cs 생성 됩니다. 파일 이름에 ".g"가 있으면 파일이 태그 파일(예: `Page` 또는 `Window`)의 최상위 수준 요소에 대한 partial 클래스 선언을 포함하여 생성된 코드라는 의미입니다. 사용 하는 클래스를 선언 합니다 `partial` C# 한정자 (`Extends` Visual Basic의) 클래스를 다른 위치에 대 한 다른 선언이 나타내기 위해 일반적으로 코드 숨김 파일 Page1.xaml.cs 합니다.  
   
- 해당 기본 클래스에서 확장 되는 partial 클래스 (같은 <xref:System.Windows.Controls.Page> 페이지에 대 한) 구현 하 고는 <xref:System.Windows.Markup.IComponentConnector?displayProperty=nameWithType> 인터페이스. <xref:System.Windows.Markup.IComponentConnector> 인터페이스에는 구성 요소를 초기화 하 고 이름과 이벤트 내용에 있는 요소를 연결 하는 메서드가 있습니다. 결과적으로 생성된 코드 파일에는 다음과 같은 메서드 구현이 있습니다.  
+ 해당 기본 클래스에서 확장 하는 partial 클래스 (같은 <xref:System.Windows.Controls.Page> 페이지에 대 한) 구현 및는 <xref:System.Windows.Markup.IComponentConnector?displayProperty=nameWithType> 인터페이스입니다. <xref:System.Windows.Markup.IComponentConnector> 인터페이스에는 구성 요소를 초기화 하 고 이름 및 해당 콘텐츠 내의 요소에서 이벤트를 연결 하는 방법이 있습니다. 결과적으로 생성된 코드 파일에는 다음과 같은 메서드 구현이 있습니다.  
   
 ```csharp  
 public void InitializeComponent() {  
@@ -98,7 +98,7 @@ Public Sub InitializeComponent() _
 End Sub  
 ```  
   
- 기본적으로 동일한 태그 컴파일을 실행 <xref:System.AppDomain> 로 [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] 엔진입니다. 따라서 성능이 크게 향상됩니다. 이 동작은 `AlwaysCompileMarkupFilesInSeparateDomain` 속성을 통해 전환할 수 있습니다. 이 모든 참조 어셈블리를 언로드하는 별도 언로드의 이점이 <xref:System.AppDomain>합니다.  
+ 기본적으로 동일한 실행 됩니다 태그 컴파일 <xref:System.AppDomain> 으로 [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] 엔진입니다. 따라서 성능이 크게 향상됩니다. 이 동작은 `AlwaysCompileMarkupFilesInSeparateDomain` 속성을 통해 전환할 수 있습니다. 이 경우 별도 언로드하여 모든 참조 어셈블리를 언로드할 <xref:System.AppDomain>합니다.  
   
 <a name="Pass_2_of_Markup_Compilation"></a>   
 ### <a name="markup-compilationpass-2"></a>태그 컴파일 - 패스 2  
@@ -124,7 +124,7 @@ End Sub
   
  이러한 매니페스트 파일은 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]에 대해 항상 만들어집니다. 설치된 응용 프로그램의 경우 프로젝트 파일에서 `GenerateManifests` 속성 값이 `true`로 지정되지 않는 한 만들어지지 않습니다.  
   
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] 두 개의 추가적인 권한인 일반적인 인터넷 영역 응용 프로그램에 할당 된 사용 권한만 가져오기: <xref:System.Security.Permissions.WebBrowserPermission> 및 <xref:System.Security.Permissions.MediaPermission>합니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 빌드 시스템은 응용 프로그램 매니페스트에서 이러한 사용 권한을 선언합니다.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] 일반적인 인터넷 영역 응용 프로그램에 할당 된 사용 권한만 급 두 개의 추가 권한을 얻습니다: <xref:System.Security.Permissions.WebBrowserPermission> 고 <xref:System.Security.Permissions.MediaPermission>입니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 빌드 시스템은 응용 프로그램 매니페스트에서 이러한 사용 권한을 선언합니다.  
   
 <a name="Incremental_Build_Support"></a>   
 ## <a name="incremental-build-support"></a>증분 빌드 지원  
@@ -148,7 +148,7 @@ End Sub
   
     -   프로젝트에서 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]이 `Page`로 선언된 경우: [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]에 로컬로 정의된 형식 참조가 없는 경우 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 및 모든 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 페이지를 로컬 참조와 함께 다시 컴파일합니다. [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]에 로컬 참조가 있는 경우 모든 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 페이지를 로컬 참조와 함께 다시 컴파일합니다.  
   
-    -   경우 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 로 선언 `ApplicationDefinition` 프로젝트의: 모두를 다시 컴파일하십시오 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 페이지 (이유: 각 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 에 대 한 참조에는 <xref:System.Windows.Application> 변경 있을 수 있는 형식).  
+    -   경우 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 로 선언 된 `ApplicationDefinition` 프로젝트에서: 모든 recompile [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 페이지 (이유: 각 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 참조 하는 <xref:System.Windows.Application> 형식 변경 된 경우).  
   
 -   프로젝트 파일에서 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 파일 대신 응용 프로그램 정의로 코드 파일을 선언한 경우:  
   

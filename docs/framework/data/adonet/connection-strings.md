@@ -2,12 +2,12 @@
 title: ADO.NET의 연결 문자열
 ms.date: 03/30/2017
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
-ms.openlocfilehash: 03d768430139fa1078f39b470403abcf75dd83a8
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b4e057cab4c562fc51893631c35d66409e1c3731
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32757218"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43399871"
 ---
 # <a name="connection-strings-in-adonet"></a>ADO.NET의 연결 문자열
 .NET Framework 2.0에서는 연결 문자열 작성기 클래스에 새로운 키워드를 추가하는 기능을 비롯하여 연결 문자열로 작업하는 데 사용할 수 있는 새로운 기능을 지원합니다. 이러한 기능을 사용하여 런타임에 유효한 연결 문자열을 작성할 수 있습니다.  
@@ -39,4 +39,4 @@ ms.locfileid: "32757218"
   
 ## <a name="see-also"></a>참고 항목  
  [데이터 소스에 연결](/cpp/data/odbc/connecting-to-a-data-source)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

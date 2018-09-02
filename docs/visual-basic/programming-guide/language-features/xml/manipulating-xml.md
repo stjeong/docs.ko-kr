@@ -7,11 +7,11 @@ helpviewer_keywords:
 - XML [Visual Basic], manipulating
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
 ms.openlocfilehash: 7fd111f5e885de3389b8f93002db22b48c4edd45
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931106"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43417450"
 ---
 # <a name="manipulating-xml-in-visual-basic"></a>Visual Basic에서 XML 조작
 사용할 수 있습니다 *XML 리터럴을* 문자열, 파일, 스트림 등 외부 소스에서 XML을 로드 합니다. 사용할 수 있습니다 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] XML을 조작 하 여 사용 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] XML을 쿼리하고 있습니다.  

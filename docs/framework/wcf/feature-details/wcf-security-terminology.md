@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 8024abdab01b2df151a6c0c2f5760e85ae119fd4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 72a2ea1393daa7435ae233d1e420cf88b6f5b6af
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33508308"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402418"
 ---
 # <a name="wcf-security-terminology"></a>WCF 보안 용어
 보안을 설명할 때 사용되는 일부 용어는 생소할 수 있습니다. 이 항목에서는 일부 보안 용어에 대해 간략하게 설명하며, 모든 항목을 포괄적으로 설명하지는 않습니다.  
   
- Windows Communication Foundation (WCF) 설명서에서 사용 되는 용어에 대 한 자세한 내용은 참조 [기본적인 Windows Communication Foundation 개념](../../../../docs/framework/wcf/fundamental-concepts.md)합니다.  
+ Windows Communication Foundation (WCF) 설명서에서 사용 되는 용어에 대 한 자세한 내용은 참조 하세요. [기본적인 Windows Communication Foundation 개념](../../../../docs/framework/wcf/fundamental-concepts.md)합니다.  
   
  ACL(액세스 제어 목록 - Access Control List)  
  개체에 적용되는 보안 보호 목록입니다. 개체는 파일, 프로세스 또는 이벤트이거나 보안 설명자를 가진 모든 대상을 가리킵니다. ACL의 항목은 ACE(액세스 제어 항목)이며 임의 ACL과 시스템 ACL의 두 가지 종류가 있습니다.  
@@ -30,10 +30,10 @@ ms.locfileid: "33508308"
  리소스에 대한 액세스 및 권한을 제어하는 행위입니다. 예를 들어, 특정 그룹의 멤버에게는 파일 읽기를 허용하고, 다른 그룹의 멤버에게는 파일 변경만 허용합니다.  
   
  CA(인증 기관) 인증서  
- 서버 및 클라이언트 인증 인증서를 해당 인증서를 요청하는 서버와 클라이언트에 발급하는 CA를 식별합니다. 디지털 서명에 사용 된 공개 키를 포함 하므로 것도 라고는 *서명 인증서*합니다. CA가 루트 기관인, 하는 경우 CA 인증서 수로 간주는 *루트 인증서*합니다. 또한 종종로 알려진는 *사이트 인증서*합니다.  
+ 서버 및 클라이언트 인증 인증서를 해당 인증서를 요청하는 서버와 클라이언트에 발급하는 CA를 식별합니다. 디지털 서명에 사용 되는 공개 키를 포함 하므로 이라고 하는 *서명 인증서*합니다. CA는 루트 기관 인 경우 CA 인증서 수로 간주는 *루트 인증서*합니다. 또한 라고도 *사이트 인증서*합니다.  
   
  CA 계층 구조  
- CA 계층 구조에는 여러 CA가 포함되어 있습니다. 각 CA에서 인증 계층의 상위 수준의 다른 CA는 계층의 최상위까지 라고도 되도록 구성 된 *루트 기관*에 도달 합니다.  
+ CA 계층 구조에는 여러 CA가 포함되어 있습니다. 각 CA가 인증 계층의 상위 수준의 다른 CA 계층의 최상위까지 라고도 되도록 구성 되어 합니다 *루트 기관*에 도달 합니다.  
   
  인증서  
  엔터티 및 엔터티의 공개 키에 대한 정보를 포함하여 두 정보 부분을 함께 바인딩하는 디지털 서명된 문입니다. 인증서는 인증 기관이라는 신뢰할 수 있는 조직(또는 엔터티)에서 엔터티가 정확한지 확인한 이후에 발급됩니다.  
@@ -65,7 +65,7 @@ ms.locfileid: "33508308"
  세션 키를 안전하게 저장하여 사용자끼리 교환할 수 있도록 암호화하는 데 사용되는 공개/개인 키 쌍입니다.  
   
  hash  
- 임의 크기의 데이터에 수학적 함수(해시 알고리즘 참조)를 적용하여 구하는 고정된 크기의 숫자 값입니다. 일반적으로 데이터 라고 하는 임의의 데이터를 포함 한 *nonce*합니다. 서비스와 클라이언트는 모두 nonce를 교환하므로 결과가 더 복잡해집니다. 결과 라고도 *메시지 다이제스트*합니다. 해시 값을 보내는 것이 암호와 같은 중요한 데이터를 보내는 것보다 더 안전합니다. 이는 암호가 암호화되어 있는 경우에도 마찬가지입니다. 해시 발신자와 수신자가 수신된 해시를 확인할 수 있도록 해시 알고리즘과 nonce에 동의해야 합니다.  
+ 임의 크기의 데이터에 수학적 함수(해시 알고리즘 참조)를 적용하여 구하는 고정된 크기의 숫자 값입니다. 데이터는 일반적으로 라고 하는 임의 데이터를 포함 한 *nonce*합니다. 서비스와 클라이언트는 모두 nonce를 교환하므로 결과가 더 복잡해집니다. 결과 라고도 *메시지 다이제스트*합니다. 해시 값을 보내는 것이 암호와 같은 중요한 데이터를 보내는 것보다 더 안전합니다. 이는 암호가 암호화되어 있는 경우에도 마찬가지입니다. 해시 발신자와 수신자가 수신된 해시를 확인할 수 있도록 해시 알고리즘과 nonce에 동의해야 합니다.  
   
  해시 알고리즘  
  메시지 또는 세션 키와 같은 데이터의 일부에 대한 해시 값을 생성하는 데 사용되는 알고리즘입니다. 일반적인 해시 알고리즘은 MD2, MD4, MD5, SHA-1 등입니다.  
@@ -92,7 +92,7 @@ ms.locfileid: "33508308"
  암호화 메시지 구문 표준입니다. 디지털 서명 및 암호화와 같은 암호화 기법을 적용할 수 있는 데이터에 대한 일반 구문입니다. 또한 인증서 또는 인증서 해지 목록과 기타 메시지 특성(예: 타임스탬프)을 메시지에 배포하는 구문을 제공합니다.  
   
  일반 텍스트  
- 암호화되지 않은 메시지입니다. 일반 텍스트 메시지는 라고도 *보냄* 메시지입니다.  
+ 암호화되지 않은 메시지입니다. 일반 텍스트 메시지는 라고도 *일반 텍스트* 메시지입니다.  
   
  권한  
  시스템 종료, 장치 드라이버 로드, 시스템 시간 변경 등과 같은 다양한 시스템 관련 작업을 수행할 수 있는 권한입니다. 사용자의 액세스 토큰에는 사용자 또는 사용자 그룹이 보유하는 권한 목록이 포함되어 있습니다.  
@@ -175,10 +175,10 @@ ms.locfileid: "33508308"
  지정된 파일의 신뢰 여부를 결정하는 소프트웨어입니다. 이 결정은 파일과 연결된 인증서를 기반으로 수행됩니다.  
   
  UPN(User Principal Name)  
- 사용자 계정 이름 (라고도 *사용자 로그온 이름*) 및 사용자 계정이 있는 도메인을 식별 하는 도메인 이름입니다. Windows 도메인에 로그온하는 표준 사용법입니다. 형식은: someone@example.com (경우와 전자 메일 주소).  
+ 사용자 계정 이름 (라고도 합니다 *사용자 로그온 이름*) 및 사용자 계정이 있는 도메인을 식별 하는 도메인 이름입니다. Windows 도메인에 로그온하는 표준 사용법입니다. 형식은: someone@example.com (의 경우 전자 메일 주소).  
   
 > [!NOTE]
->  표준 UPN 형식 외에 WCF cohowinery.com\someone 예를 들어 하위 형태로 Upn을 허용합니다.  
+>  표준 UPN 형식 외에도 WCF cohowinery.com\someone 예를 들어, 하위 수준 형태로 Upn을 허용합니다.  
   
  X.509  
  필수 부분을 정의하는 인증서에 대한 국제 승인 표준입니다.  
@@ -186,4 +186,4 @@ ms.locfileid: "33508308"
 ## <a name="see-also"></a>참고 항목  
  [기본적인 Windows Communication Foundation 개념](../../../../docs/framework/wcf/fundamental-concepts.md)  
  [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Windows Server App Fabric에 대 한 보안 모델](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

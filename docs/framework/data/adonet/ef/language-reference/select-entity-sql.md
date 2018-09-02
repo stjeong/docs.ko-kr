@@ -3,11 +3,11 @@ title: SELECT(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 9a33bd0d-ded1-41e7-ba3c-305502755e3b
 ms.openlocfilehash: 93eea5d539e943c57ed7c6236caa854486ac238e
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933855"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402652"
 ---
 # <a name="select-entity-sql"></a>SELECT(Entity SQL)
 쿼리 결과로 반환될 요소를 지정합니다.  
@@ -91,7 +91,7 @@ SELECT * FROM T1, T2
 SELECT a1, a2 FROM T1 AS a1, T2 AS a2  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 Entity SQL 쿼리에서는 SELECT 연산자를 사용하여 쿼리에서 반환될 요소를 지정합니다. 쿼리는 AdventureWorks Sales 모델을 기반으로 합니다. 이 쿼리를 컴파일하고 실행하려면 다음 단계를 수행하세요.  
   
 1.  [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)의 절차를 따릅니다.  

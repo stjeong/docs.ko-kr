@@ -14,12 +14,12 @@ helpviewer_keywords:
 - classes [WPF], mapping namespaces to
 - namespaces [WPF]
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
-ms.openlocfilehash: dbf9c9c16488a58a07aa29d16b3d00dd83c7c232
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9e93d3cd417d0d075fcebb8327ec51799884f8d6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33549398"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416113"
 ---
 # <a name="xaml-namespaces-and-namespace-mapping-for-wpf-xaml"></a>WPF XAML을 위한 XAML 네임스페이스 및 네임스페이스 매핑
 이 항목에서는 WPF XAML 파일의 루트 태그에서 주로 찾을 수 있는 두 XAML 네임스페이스 매핑과 그 용도에 대해 자세하게 설명합니다. 또한 고유한 코드나 별도의 어셈블리에 정의된 요소에 사용할 수 있도록 유사한 매핑을 생성하는 방법에 대해서도 설명합니다.  
@@ -50,9 +50,9 @@ ms.locfileid: "33549398"
   
  `clr-namespace:` 요소로 노출되는 공용 형식을 포함하는 어셈블리 내에서 선언된 CLR 네임스페이스입니다.  
   
- `assembly=` 참조된 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 네임스페이스 일부 또는 전체를 포함하는 어셈블리입니다. 이 값은 일반적으로 경로가 아니라 어셈블리의 이름이며 .dll 또는 .exe와 같은 확장명을 포함하지 않습니다. 해당 어셈블리의 경로는 매핑하려는 XAML을 포함하는 프로젝트 파일에서 프로젝트 참조로 설정해야 합니다. 버전 관리 및 강력한 이름 서명 통합 하기 위해는 `assembly` 값일 수는 문자열에 정의 된 대로 <xref:System.Reflection.AssemblyName>, 16 진수 간단한 문자열입니다.  
+ `assembly=` 참조된 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 네임스페이스 일부 또는 전체를 포함하는 어셈블리입니다. 이 값은 일반적으로 경로가 아니라 어셈블리의 이름이며 .dll 또는 .exe와 같은 확장명을 포함하지 않습니다. 해당 어셈블리의 경로는 매핑하려는 XAML을 포함하는 프로젝트 파일에서 프로젝트 참조로 설정해야 합니다. 버전 관리 및 강력한 이름 서명을 통합 하기 위해 합니다 `assembly` 값일 수는 문자열에 정의 된 대로 <xref:System.Reflection.AssemblyName>, 간단한 문자열 이름 대신 합니다.  
   
- `clr-namespace` 토큰과 해당 값을 구분하는 문자는 콜론(:)이지만, `assembly` 토큰과 해당 값을 구분하는 문자는 등호(=)입니다. 이 두 토큰 간을 구분하는 데 사용되는 문자는 세미콜론입니다. 또한 선언에는 공백을 포함하면 안 됩니다.  
+ `clr-namespace` 토큰과 해당 값을 구분하는 문자는 콜론(:)이지만, `assembly` 토큰과 해당 값을 구분하는 문자는 등호(=)입니다. 이 두 토큰 간을 구분하는 데 사용되는 문자는 세미콜론입니다. 또한 없는 공백을 어디서 나 선언에서.  
   
 ### <a name="a-basic-custom-mapping-example"></a>기본 사용자 지정 매핑 예제  
  다음 코드에서는 예제 사용자 지정 클래스를 정의합니다.  
@@ -106,9 +106,9 @@ End Namespace
   
 <a name="Mapping_CLR_Namespaces_to_XML_Namespaces_in_an"></a>   
 ## <a name="mapping-clr-namespaces-to-xml-namespaces-in-an-assembly"></a>CLR 네임스페이스를 어셈블리의 XML 네임스페이스에 매핑  
- WPF는 여러 CLR 네임스페이스를 단일 XAML 네임스페이스에 매핑하기 위해 XAML 프로세서에서 사용되는 CLR 특성을 정의합니다. 이 특성을 <xref:System.Windows.Markup.XmlnsDefinitionAttribute>, 어셈블리를 생성 하는 소스 코드에서 어셈블리 수준에 배치 됩니다. WPF 어셈블리의 소스 코드에서이 특성을 사용 하 여와 같은 다양 한 공통 네임 스페이스를 매핑할 <xref:System.Windows> 및 <xref:System.Windows.Controls>을 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] 네임 스페이스입니다.  
+ WPF는 여러 CLR 네임스페이스를 단일 XAML 네임스페이스에 매핑하기 위해 XAML 프로세서에서 사용되는 CLR 특성을 정의합니다. 이 특성을 <xref:System.Windows.Markup.XmlnsDefinitionAttribute>, 어셈블리를 생성 하는 소스 코드에서 어셈블리 수준에 배치 됩니다. WPF 어셈블리 소스 코드와 같은 다양 한 공통 네임 스페이스를 매핑하려면이 특성을 사용 <xref:System.Windows> 하 고 <xref:System.Windows.Controls>를 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] 네임 스페이스입니다.  
   
- <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 두 개의 매개 변수: XML/XAML 네임 스페이스 이름 및 CLR 네임 스페이스 이름입니다. 둘 이상의 <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 동일한 XML 네임 스페이스에 여러 CLR 네임 스페이스를 매핑할 존재할 수 있습니다. 매핑한 후에는 partial 클래스의 코드 숨김 페이지에서 적절한 `using` 문을 사용하여 정규화된 이름 없이도 이러한 네임스페이스의 멤버를 참조할 수 있습니다. 자세한 내용은 <xref:System.Windows.Markup.XmlnsDefinitionAttribute>을 참조하십시오.  
+ <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 두 개의 매개 변수: XML/XAML 네임 스페이스 이름과 CLR 네임 스페이스 이름입니다. 둘 이상의 <xref:System.Windows.Markup.XmlnsDefinitionAttribute> 동일한 XML 네임 스페이스에 여러 CLR 네임 스페이스를 매핑할 수 있습니다. 매핑한 후에는 partial 클래스의 코드 숨김 페이지에서 적절한 `using` 문을 사용하여 정규화된 이름 없이도 이러한 네임스페이스의 멤버를 참조할 수 있습니다. 자세한 내용은 <xref:System.Windows.Markup.XmlnsDefinitionAttribute>을 참조하십시오.  
   
 ## <a name="designer-namespaces-and-other-prefixes-from-xaml-templates"></a>XAML 템플릿의 디자이너 네임스페이스 및 기타 접두사  
  여러 가지 WPF XAML 개발 환경 및/또는 디자인 도구를 사용하는 경우 XAML 태그 내에 다른 XAML 네임스페이스 및 접두사가 정의되어 있을 수 있습니다.  
@@ -118,24 +118,24 @@ End Namespace
  매핑되는 또 다른 접두사로 `mc:`이 있을 수 있습니다. `mc:`은 태그 호환성을 위해 사용되며, XAML에 반드시 필요하지는 않은 태그 호환성 패턴을 활용합니다. 일정 범위 내에서 태그 호환성 기능은 프레임워크 간 또는 지원 구현의 여러 경계를 넘어 XAML을 교환하는 데 사용될 수 있으며, XAML 스키마 컨텍스트 간에 작업하고 디자이너에서 제한된 모드에 대해 호환성을 제공하는 데 사용될 수 있습니다. 태그 호환성 개념 및 이 개념과 WPF의 관련성에 대한 자세한 내용은 [태그 호환성(mc:) 언어 기능](../../../../docs/framework/wpf/advanced/markup-compatibility-mc-language-features.md)을 참조하세요.  
   
 ## <a name="wpf-and-assembly-loading"></a>WPF 및 어셈블리 로딩  
- WPF는 XAML 스키마 컨텍스트와의 개념을 CLR 정의 사용 하는 WPF 응용 프로그램 모델와 통합 되어 <xref:System.AppDomain>합니다. 다음 순서 대로 XAML 스키마 컨텍스트 WPF 사용법에 따라 런타임 또는 디자인 타임에 형식을 찾을 또는 어셈블리를 로드 하는 방법을 해석 하는 방법을 설명 <xref:System.AppDomain> 및 기타 요인입니다.  
+ WPF의 XAML 스키마 컨텍스트를 CLR 정의 개념을 사용 하는 WPF 응용 프로그램 모델을 사용 하 여 통합 <xref:System.AppDomain>합니다. 다음 순서 대로 XAML 스키마 컨텍스트 어셈블리를 로드 하거나 요소의 WPF 사용법에 따라 런타임 또는 디자인 타임에 형식을 찾을 방법을 해석 하는 방법에 대해 설명 합니다. <xref:System.AppDomain> 및 기타 요인입니다.  
   
-1.  반복은 <xref:System.AppDomain>, 해당 이름의 모든 요소를 일치 하는 이미 로드 된 어셈블리를 찾고, 로드 된 어셈블리에서 가장 최근에 시작 합니다.  
+1.  반복 된 <xref:System.AppDomain>이름의 모든 요소와 일치 하는 이미 로드 된 어셈블리를 찾고, 로드 된 어셈블리에서 가장 최근에 시작 합니다.  
   
-2.  이름이 정규화 된 경우 호출 <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> 정규화 된 이름에서.  
+2.  이름이 정규화 된 경우 호출 <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> 정규화 된 이름에 있습니다.  
   
 3.  약식 이름 + 정규화된 이름의 공개 키 토큰이 로드한 태그의 소스 어셈블리와 일치하는 경우 이 어셈블리를 반환합니다.  
   
-4.  짧은 이름 + 공개 키 토큰을 사용 하 여 호출 <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>합니다.  
+4.  약식 이름 + 공개 키 토큰을 사용 하 여 호출 <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>합니다.  
   
-5.  이름을 정규화 되지 않은 경우 호출 <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>합니다.  
+5.  이름 정규화 되지 않은, 경우 호출 <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>합니다.  
   
  느슨한 XAML에서는 로드할 소스 어셈블리가 없으므로 3단계가 사용되지 않습니다.  
   
- WPF (XamlBuildTask를 통해 생성 된)에 대 한 컴파일된 XAML에서 이미 로드 된 어셈블리를 사용 하지 않는 <xref:System.AppDomain> (1 단계). 또한 XamlBuildTask 출력에서 이름이 정규화되지 않아서는 안되므로 5단계가 적용되지 않습니다.  
+ (XamlBuildTask를 통해 생성 함) WPF 용 컴파일된 XAML에서 이미 로드 된 어셈블리를 사용 하지 않는 <xref:System.AppDomain> (1 단계). 또한 XamlBuildTask 출력에서 이름이 정규화되지 않아서는 안되므로 5단계가 적용되지 않습니다.  
   
  BAML도 정규화되지 않은 어셈블리 이름을 포함해서는 안되지만 PresentationBuildTask를 통해 생성된 컴파일된 BAML에서는 모든 단계를 사용합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [XML 네임 스페이스 이해](http://go.microsoft.com/fwlink/?LinkId=98069)  
+ [XML 네임 스페이스 이해](https://go.microsoft.com/fwlink/?LinkId=98069)  
  [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

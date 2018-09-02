@@ -2,12 +2,12 @@
 title: 하나가 (Visual Basic) 완료 되 면 남은 비동기 작업 취소
 ms.date: 07/20/2015
 ms.assetid: c928b5a1-622f-4441-8baf-adca1dde197f
-ms.openlocfilehash: baf18ed4c2a4693f0765358d9f9a56842991cf29
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: 5dab0c4aa14710fe78d2473675aea8b8c8bb73b9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34728341"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402259"
 ---
 # <a name="cancel-remaining-async-tasks-after-one-is-complete-visual-basic"></a>하나가 (Visual Basic) 완료 되 면 남은 비동기 작업 취소
 <xref:System.Threading.CancellationToken>과 함께 <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> 메서드를 사용하면 한 작업이 완료될 때 나머지 작업을 모두 취소할 수 있습니다. `WhenAny` 메서드는 작업의 컬렉션인 인수를 사용합니다. 메서드는 모든 작업을 시작하고 단일 작업을 반환합니다. 컬렉션의 임의 작업이 완료되면 단일 작업이 완료됩니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "34728341"
   
 2.  메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션**을 선택합니다.  
   
-3.  에 **프로젝트 열기** 대화 상자, 하면 압축을 푼 샘플 코드가 저장 된 폴더를 연 다음 AsyncFineTuningVB에 대 한 솔루션 (.sln) 파일을 엽니다.  
+3.  에 **프로젝트 열기** 대화 상자에서 압축을 해제 하는 샘플 코드를 포함 하는 폴더를 연 다음 AsyncFineTuningVB에 대 한 솔루션 (.sln) 파일을 엽니다.  
   
 4.  **솔루션 탐색기**에서 **CancelAfterOneTask** 프로젝트에 대한 바로 가기 메뉴를 열고 **시작 프로젝트로 설정**을 선택합니다.  
   
@@ -34,14 +34,14 @@ ms.locfileid: "34728341"
   
 6.  프로그램을 여러 번 실행하여 다른 다운로드가 먼저 완료되는지 확인합니다.  
   
- 프로젝트를 다운로드 하지 않으려면 하는 경우이 항목의 끝에 MainWindow.xaml.vb 파일을 검토할 수 있습니다.  
+ 프로젝트를 다운로드 하지 않으려는 경우에이 항목의 끝에서 MainWindow.xaml.vb 파일을 검토할 수 있습니다.  
   
 ## <a name="building-the-example"></a>예제 빌드  
- 개발 하는 프로젝트에 추가 하는이 항목의 예제 [비동기 작업 또는 작업 목록 취소](http://msdn.microsoft.com/library/d6e4e801-df64-4705-98fc-df725a577fb0) 작업 목록 취소 합니다. **취소** 단추는 명시적으로 사용되지 않지만 예제에서는 같은 UI를 사용합니다.  
+ 이 항목의 예제에서 개발 된 프로젝트에 추가 [비동기 작업 또는 작업 목록 취소](https://msdn.microsoft.com/library/d6e4e801-df64-4705-98fc-df725a577fb0) 작업 목록을 취소 합니다. **취소** 단추는 명시적으로 사용되지 않지만 예제에서는 같은 UI를 사용합니다.  
   
  직접 예제를 빌드하려면 "예제 다운로드" 섹션의 지침을 단계별로 따르되, **CancelAListOfTasks**를 **시작 프로젝트**로 선택합니다. 이 항목의 변경 내용을 해당 프로젝트에 추가합니다.  
   
- MainWindow.xaml.vb 파일에는 **CancelAListOfTasks** 프로젝트에서 각 웹 사이트에 대 한 처리 단계에서 루프의 이동 하 여 전환을 시작 `AccessTheWebAsync` 다음 비동기 메서드.  
+ MainWindow.xaml.vb 파일에는 **CancelAListOfTasks** 프로젝트를에서 루프의 각 웹 사이트에 대 한 처리 단계를 이동 하 여 전환을 시작 `AccessTheWebAsync` 다음 비동기 메서드로 합니다.  
   
 ```vb  
 ' ***Bundle the processing steps for a website into one async method.  
@@ -103,7 +103,7 @@ resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:
  프로그램을 여러 번 실행하여 다른 다운로드가 먼저 완료되는지 확인합니다.  
   
 ## <a name="complete-example"></a>완성된 예제  
- 다음 코드는 예제에 대 한 전체 MainWindow.xaml.vb 또는 MainWindow.xaml.cs 파일입니다. 별표는 이 예제에 대해 추가된 요소를 표시합니다.  
+ 다음 코드는 예제의 전체 MainWindow.xaml.vb 또는 MainWindow.xaml.cs 파일입니다. 별표는 이 예제에 대해 추가된 요소를 표시합니다.  
   
  <xref:System.Net.Http>에 대한 참조를 추가해야 합니다.  
   

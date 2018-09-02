@@ -2,15 +2,15 @@
 title: 배달 못 한 편지 큐
 ms.date: 03/30/2017
 ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
-ms.openlocfilehash: 9f92aeb02d997820fa2955419a3cdcf1c4369b45
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4f30e9486c8798e3610e13e6abe1c2612c70b69f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33507983"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43417135"
 ---
 # <a name="dead-letter-queues"></a>배달 못 한 편지 큐
-이 샘플에서는 배달에 실패한 메시지를 처리하는 방법을 보여 줍니다. 에 따라 결정 된 [트랜잭션 된 MSMQ 바인딩](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) 샘플. 이 샘플에서는 `netMsmqBinding` 바인딩을 사용합니다. 이 서비스는 자체적으로 호스트되는 콘솔 응용 프로그램으로서 이를 사용하여 서비스에서 대기된 메시지를 받는 것을 볼 수 있습니다.  
+이 샘플에서는 배달에 실패한 메시지를 처리하는 방법을 보여 줍니다. 기반이 되는 [트랜잭션 된 MSMQ 바인딩](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) 샘플입니다. 이 샘플에서는 `netMsmqBinding` 바인딩을 사용합니다. 이 서비스는 자체적으로 호스트되는 콘솔 응용 프로그램으로서 이를 사용하여 서비스에서 대기된 메시지를 받는 것을 볼 수 있습니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -49,7 +49,7 @@ public interface IOrderProcessor
 }  
 ```
 
- 이 샘플에서 서비스 코드의입니다는 [트랜잭션 된 MSMQ 바인딩](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)합니다.  
+ 샘플의 서비스 코드의 임을 합니다 [트랜잭션 된 MSMQ 바인딩](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)합니다.  
   
  서비스와의 통신은 트랜잭션 범위 내에서 수행됩니다. 서비스는 큐에서 메시지를 읽고 작업을 수행한 후 작업 결과를 표시합니다. 응용 프로그램도 배달 못 한 메시지에 대해 배달 못 한 편지 큐를 만듭니다.  
 
@@ -169,7 +169,7 @@ public void SubmitPurchaseOrder(PurchaseOrder po)
 }
 ```
 
- 배달 못 한 편지 큐의 메시지는 메시지를 처리하고 있는 서비스로 주소가 지정되는 메시지입니다. 따라서 배달 못 한 메시지 서비스가 큐에서 메시지를 읽으면, Windows Communication Foundation (WCF) 채널 계층은 끝점에서 불일치를 발견 및 메시지를 디스패치하지 않습니다. 이 경우 메시지의 주소는 주문 처리 서비스로 지정되지만 배달 못 한 메시지 서비스에서 해당 메시지를 받습니다. 다른 끝점으로 주소가 지정된 메시지를 받으려면 모든 주소와 일치하는 주소 필터를 `ServiceBehavior`에 지정합니다. 이 구성은 배달 못 한 편지 큐에서 읽은 메시지를 성공적으로 처리하기 위해 필요합니다.  
+ 배달 못 한 편지 큐의 메시지는 메시지를 처리하고 있는 서비스로 주소가 지정되는 메시지입니다. 따라서 배달 못 한 편지 메시지 서비스가 큐에서 메시지를 읽고, Windows Communication Foundation (WCF) 채널 계층 끝점에서 불일치를 발견 및 메시지를 디스패치하지 않습니다. 이 경우 메시지의 주소는 주문 처리 서비스로 지정되지만 배달 못 한 메시지 서비스에서 해당 메시지를 받습니다. 다른 엔드포인트로 주소가 지정된 메시지를 받으려면 모든 주소와 일치하는 주소 필터를 `ServiceBehavior`에 지정합니다. 이 구성은 배달 못 한 편지 큐에서 읽은 메시지를 성공적으로 처리하기 위해 필요합니다.  
   
  이 샘플에서 배달 못 한 메시지 서비스는 실패의 원인이 메시지 시간 초과인 경우 메시지를 다시 보냅니다. 다른 모든 원인에 대해서는 다음 샘플 코드와 같이 배달 오류를 표시합니다.  
 
@@ -310,7 +310,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  서비스가 처음 실행되는 경우 서비스에서는 큐가 있는지 확인하고 큐가 없으면 큐를 만듭니다. 서비스를 처음 실행하여 큐를 만들거나 MSMQ 큐 관리자를 통해 큐를 만들 수 있습니다. Windows 2008에서 큐를 만들려면 다음 단계를 수행하세요.  
   
@@ -318,15 +318,15 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
   
     2.  확장 된 **기능** 탭 합니다.  
   
-    3.  마우스 오른쪽 단추로 클릭 **개인 메시지 큐**를 선택 하 고 **새로**, **개인 큐**합니다.  
+    3.  마우스 오른쪽 단추로 클릭 **개인 메시지 큐**, 선택한 **새로 만들기**합니다 **개인 큐**합니다.  
   
-    4.  확인 된 **트랜잭션** 상자입니다.  
+    4.  확인 합니다 **트랜잭션** 상자입니다.  
   
-    5.  입력 `ServiceModelSamplesTransacted` 새 큐의 이름으로 합니다.  
+    5.  입력 `ServiceModelSamplesTransacted` 새 대기열의 이름으로 합니다.  
   
 3.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-4.  에서 샘플을 실행 단일 컴퓨터 또는 다중 컴퓨터 구성 변경 큐 이름을 적절 하 게 하는 컴퓨터의 전체 이름으로 localhost를 바꿉니다 및의 지침에 따라 [WindowsCommunicationFoundation샘플실행](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4.  에서 샘플을 실행는 단일 컴퓨터 또는 다중 컴퓨터 구성 변경 큐 이름을 적절 하 게 localhost를 컴퓨터의 전체 이름을 바꿉니다 하의 지침에 따라 [WindowsCommunicationFoundation샘플실행](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 ### <a name="to-run-the-sample-on-a-computer-joined-to-a-workgroup"></a>작업 그룹에 가입된 컴퓨터에서 샘플을 실행하려면  
   
@@ -357,7 +357,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  
   

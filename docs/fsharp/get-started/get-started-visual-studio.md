@@ -2,12 +2,12 @@
 title: 'Visual Studio에서 F # 시작'
 description: 'Visual Studio를 사용 하 여 F #을 사용 하는 방법에 알아봅니다.'
 ms.date: 07/03/2018
-ms.openlocfilehash: a4a12a322d7e5144f2d720541f6ef65ca12737dd
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 3dac8466501338873aeb308ceac9274a7934a8a9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874717"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415736"
 ---
 # <a name="get-started-with-f-in-visual-studio"></a>Visual Studio에서 F # 시작
 
@@ -47,7 +47,7 @@ val square: x:int -> int
 
 ## <a name="running-your-code"></a>코드 실행
 
-코드를 실행 하 고 키를 눌러 결과 볼 수 있습니다 **ctrl-f5**합니다.  이 디버깅 하지 않고 프로그램을 실행 및 결과 볼 수 있습니다.  선택할 수 있습니다 합니다 **디버깅할** 최상위 메뉴 항목 Visual Studio에서 선택한 **디버깅 하지 않고 시작**합니다.
+코드를 실행 하 고 키를 눌러 결과 볼 수 있습니다 **Ctrl**+**F5**합니다.  이 디버깅 하지 않고 프로그램을 실행 하 고 결과 볼 수 있습니다.  선택할 수 있습니다 합니다 **디버깅할** 최상위 메뉴 항목 Visual Studio에서 선택한 **디버깅 하지 않고 시작**합니다.
 
 이제 Visual Studio를 나타나게 하는 콘솔 창에 출력 한 다음을 표시 됩니다.
 
@@ -62,4 +62,8 @@ val square: x:int -> int
 이미 않았다면 체크 아웃 합니다 [F # 둘러보기](../tour.md), F # 언어의 핵심 기능 중 일부를 포함 합니다.  F #의 기능 중 일부의 개요를 제공 하 고 Visual Studio로 복사 하 고 실행할 수 있는 충분 한 코드 샘플을 제공 합니다.  도 유용한 외부 리소스 사용할 수 있습니다에 표시 된 [F # 가이드](../index.md)합니다.
 
 ## <a name="see-also"></a>참고자료
- [F # 둘러보기](../tour.md) [F # 언어 참조](../language-reference/index.md) [형식 유추](../language-reference/type-inference.md) [기호 및 연산자 참조](../language-reference/symbol-and-operator-reference/index.md)
+
+- [F# 둘러보기](../tour.md)
+- [F # 언어 참조](../language-reference/index.md)
+- [형식 유추](../language-reference/type-inference.md)
+- [기호 및 연산자 참조](../language-reference/symbol-and-operator-reference/index.md)

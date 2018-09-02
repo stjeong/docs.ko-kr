@@ -2,12 +2,12 @@
 title: SQLStoreExtensibility
 ms.date: 03/30/2017
 ms.assetid: 5da1b5a3-f144-41ba-b9c4-02818b28b15d
-ms.openlocfilehash: 37c83a9c1062fe074e41ec5db211fd513355c045
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f49d05244cf9f65a8e06f39c7e40391aaebd9f77
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518488"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408767"
 ---
 # <a name="sqlstoreextensibility"></a>SQLStoreExtensibility
 이 샘플에서는 SQL 워크플로 인스턴스 저장소에서 승격된 속성을 사용하고 구성하는 방법을 보여 줍니다. SQL 워크플로 인스턴스 저장소는 인스턴스 저장소의 SQL 기반 구현이며, 이 저장소를 사용하면 인스턴스가 SQL Server 또는 SQL Server Express 데이터베이스 간에 인스턴스 상태를 저장하고 로드할 수 있습니다. 저장소 확장성 기능을 사용하면 사용자가 인스턴스 저장소에 저장되는 속성을 정의할 수 있습니다. 이러한 속성은 승격된 속성 뷰에 표시되며 사용자는 이 뷰에서 속성을 쿼리할 수 있습니다.  
@@ -48,11 +48,11 @@ ms.locfileid: "33518488"
     > [!WARNING]
     >  SQL Server의 기본 인스턴스가 아닌 인스턴스에 데이터베이스를 설치한 경우 솔루션을 빌드하기 전에 코드에서 연결 문자열을 업데이트합니다.  
   
-3.  프로젝트의 bin 디렉터리 (\WF\Basic\Persistence\SqlStoreExtensibility\bin\Debug)로 이동 하 여 관리자 권한으로 샘플을 실행 [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)]SqlStoreExtensibility.exe를 마우스 오른쪽 단추로 클릭 하 고 선택 하면 **계정으로 실행 관리자**합니다.  
+3.  프로젝트의 bin 디렉터리 (\WF\Basic\Persistence\SqlStoreExtensibility\bin\Debug)로 이동 하 여 관리자 권한으로 샘플을 실행 [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)]SqlStoreExtensibility.exe를 마우스 오른쪽 단추로 클릭 하 고 선택 **으로 실행 관리자**합니다.  
   
 ### <a name="to-verify-the-sample-is-working-correctly"></a>샘플이 올바르게 작동하고 있는지 확인하려면  
   
-1.  SQL Server Management Studio를 사용 하 여 선택 하 여 인스턴스 테이블의 내용을 보려면 **데이터베이스**, **InstanceStore**, 차례로  **System.ServiceModel.Activities.DurableInstancing.InstanceTable** 개체 탐색기에서 마우스 오른쪽 단추로 클릭 **System.ServiceModel.Activities.DurableInstancing.InstanceTable** 선택 **상위 1000 개 행 선택**합니다. SQL Server Management Studio에 대 한 자세한 내용은 참조 하세요. [SQL Server Management Studio 소개](http://go.microsoft.com/fwlink/?LinkId=165645)  
+1.  SQL Server Management Studio를 사용 하 여 인스턴스 테이블의 내용을 선택 하 여 보려는 **데이터베이스**, **InstanceStore**를 차례로  **System.ServiceModel.Activities.DurableInstancing.InstanceTable** 개체 탐색기에서 마우스 오른쪽 단추로 클릭 **System.ServiceModel.Activities.DurableInstancing.InstanceTable** 를선택합니다. **상위 1000 개의 행 선택**합니다. SQL Server Management Studio에 대 한 자세한 내용은 참조 하세요. [SQL Server Management Studio 소개](https://go.microsoft.com/fwlink/?LinkId=165645)  
   
 2.  나열된 워크플로 인스턴스를 확인합니다.  
   
@@ -60,7 +60,7 @@ ms.locfileid: "33518488"
   
 4.  아래 표시 된 카운터 값을 관찰 **CountStatus**합니다.  
   
-5.  스크립트를 여러 번 실행 볼 수는 **CountStats** 값 변경 합니다.  
+5.  스크립트를 몇 번 실행 참조 하는 **CountStats** 변경 값입니다.  
   
 6.  Enter 키를 눌러 워크플로 응용 프로그램을 종료합니다.  
   
@@ -73,11 +73,11 @@ ms.locfileid: "33518488"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Persistence\SQLStoreExtensibility`  
   
 ## <a name="see-also"></a>참고 항목  
  [워크플로 유지](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)  
  [워크플로 서비스](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
- [AppFabric 호스팅 및 지 속성 샘플](http://go.microsoft.com/fwlink/?LinkId=193961)
+ [AppFabric 호스팅 및 지 속성 샘플](https://go.microsoft.com/fwlink/?LinkId=193961)

@@ -12,16 +12,16 @@ ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: f84f31f2a2022d42bc62d0a72d4f44282e60753b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3e24d9bebc891ecdae9d3a68d700d053194374ce
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33403772"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408206"
 ---
 # <a name="return-properties-from-a-ui-automation-provider"></a>UI 자동화 공급자에서 속성 반환
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 항목에는 UI 자동화 공급자가 클라이언트 응용 프로그램에 요소의 속성을 반환할 수 있는 방법을 보여주는 샘플 코드가 있습니다.  
   

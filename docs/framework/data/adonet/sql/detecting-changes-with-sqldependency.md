@@ -5,18 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e6a58316-f005-4477-92e1-45cc2eb8c5b4
-ms.openlocfilehash: a25afbe0124f7870df886a1e26e0df2a0716b205
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 63d6a17e5aaf3e5d39ed0eda288e75c071be4d73
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360192"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405436"
 ---
 # <a name="detecting-changes-with-sqldependency"></a>SqlDependency로 변경 내용 감지
 <xref:System.Data.SqlClient.SqlDependency> 개체를 <xref:System.Data.SqlClient.SqlCommand>와 연결하여 쿼리 결과가 원래 검색한 결과와 달라지는 시기를 검색할 수 있습니다. 또한 연결된 명령에 대한 결과가 변경될 때 발생하는 `OnChange` 이벤트에 대리자를 할당할 수도 있습니다. 명령을 실행하기 전에 먼저 <xref:System.Data.SqlClient.SqlDependency>와 해당 명령을 연결해야 합니다. `HasChanges`의 <xref:System.Data.SqlClient.SqlDependency> 속성을 사용하여 쿼리 결과가 데이터를 처음 검색했을 때의 결과와 달라졌는지 확인할 수도 있습니다.  
   
 ## <a name="security-considerations"></a>보안 고려 사항  
- 종속성 인프라는 원본으로 사용하는 데이터가 특정 명령에 대해 변경된 경우 알림을 받기 위해 <xref:System.Data.SqlClient.SqlConnection>가 호출되면 열리는 <xref:System.Data.SqlClient.SqlDependency.Start%2A>을 사용합니다. 클라이언트가 `SqlDependency.Start` 호출을 시작할 수 있는지 여부는 <xref:System.Data.SqlClient.SqlClientPermission>의 사용 및 코드 액세스 보안 특성을 통해 제어됩니다. 자세한 내용은 참조 [쿼리 알림을 사용 하도록 설정](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md) 및 [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)합니다.  
+ 종속성 인프라는 원본으로 사용하는 데이터가 특정 명령에 대해 변경된 경우 알림을 받기 위해 <xref:System.Data.SqlClient.SqlConnection>가 호출되면 열리는 <xref:System.Data.SqlClient.SqlDependency.Start%2A>을 사용합니다. 클라이언트가 `SqlDependency.Start` 호출을 시작할 수 있는지 여부는 <xref:System.Data.SqlClient.SqlClientPermission>의 사용 및 코드 액세스 보안 특성을 통해 제어됩니다. 자세한 내용은 [쿼리 알림을 사용 하도록 설정](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md) 하 고 [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)합니다.  
   
 ### <a name="example"></a>예제  
  다음 단계에서는 종속성을 선언하고, 명령을 실행하고, 결과 집합이 변경될 때 알림을 받는 방법을 설명합니다.  
@@ -94,7 +94,7 @@ void SomeMethod()
   
         // Create a dependency and associate it with the SqlCommand.  
         SqlDependency dependency=new SqlDependency(command);  
-        // Maintain the refence in a class member.  
+        // Maintain the reference in a class member.  
   
         // Subscribe to the SqlDependency event.  
         dependency.OnChange+=new  
@@ -124,4 +124,4 @@ void Termination()
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

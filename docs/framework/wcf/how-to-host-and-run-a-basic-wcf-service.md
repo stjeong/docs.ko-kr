@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF services [WCF]
 - WCF services [WCF], running
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-ms.openlocfilehash: f1c56ed83fa214cf781a833e05642635ac24b0c5
-ms.sourcegitcommit: d8bf4976eafe3289275be3811e7cb721bfff7e1e
+ms.openlocfilehash: e2bf16bd07c7ac9d918a4ae95d7f4aa185d436ec
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753502"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404673"
 ---
 # <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>방법: 기본 Windows Communication Foundation 서비스 호스트 및 실행
 WCF(Windows Communication Foundation) 응용 프로그램을 만드는 데 필요한 6가지 작업 중 세 번째 작업입니다. 6가지 모든 작업에 대한 개요는 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md) 항목을 참조하세요.  
@@ -151,22 +151,28 @@ WCF(Windows Communication Foundation) 응용 프로그램을 만드는 데 필�
   
     2.  2단계 - 서비스를 호스팅할 <xref:System.ServiceModel.ServiceHost> 클래스의 인스턴스를 만듭니다. 생성자는 서비스 계약을 구현하는 클래스 형식과 서비스의 기본 주소, 두 가지 매개 변수를 사용합니다.  
   
-    3.  3단계 - 새 <xref:System.ServiceModel.Description.ServiceEndpoint> 인스턴스를 만듭니다. 서비스 끝점은 주소, 바인딩 및 서비스 계약으로 구성되어 있습니다. 따라서 <xref:System.ServiceModel.Description.ServiceEndpoint> 생성자는 서비스 계약 인터페이스 형식, 바인딩 및 주소를 사용합니다. 서비스 계약은 사용자가 정의한 `ICalculator`이며 서비스 형식에 구현합니다. 이 예제에 사용된 바인딩은 WS-* 사양을 따르는 끝점에 연결하는 데 사용되는 기본 바인딩인 <xref:System.ServiceModel.WSHttpBinding>입니다. WCF 바인딩에 대한 자세한 내용은 [WCF 바인딩 개요](../../../docs/framework/wcf/bindings-overview.md)를 참조하세요. 끝점을 식별하기 위해 주소가 기본 주소에 추가됩니다. 이 코드에 지정된 주소가 “CalculatorService”이므로 엔드포인트의 정규화된 주소는 `"http://localhost:8000/GettingStarted/CalculatorService"`입니다. .NET Framework 4.0 이상을 사용할 경우 서비스 엔드포인트를 추가하는 것은 선택 사항입니다. 이러한 버전에서 코드 또는 구성에 끝점이 추가되지 않으면 WCF가 기본 주소의 각 결합에 기본 끝점 하나씩을 추가하고 서비스에서 구현한 계약을 추가합니다. 기본 엔드포인트에 대한 자세한 내용은 [엔드포인트 주소 지정](../../../docs/framework/wcf/specifying-an-endpoint-address.md)을 참조하세요. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)을 참조하세요.  
+    3.  3단계 - 새 <xref:System.ServiceModel.Description.ServiceEndpoint> 인스턴스를 만듭니다. 서비스 엔드포인트는 주소, 바인딩 및 서비스 계약으로 구성되어 있습니다. 따라서 <xref:System.ServiceModel.Description.ServiceEndpoint> 생성자는 서비스 계약 인터페이스 형식, 바인딩 및 주소를 사용합니다. 서비스 계약은 사용자가 정의한 `ICalculator`이며 서비스 형식에 구현합니다. 이 예제에 사용된 바인딩은 WS-* 사양을 따르는 엔드포인트에 연결하는 데 사용되는 기본 바인딩인 <xref:System.ServiceModel.WSHttpBinding>입니다. WCF 바인딩에 대한 자세한 내용은 [WCF 바인딩 개요](../../../docs/framework/wcf/bindings-overview.md)를 참조하세요. 엔드포인트를 식별하기 위해 주소가 기본 주소에 추가됩니다. 끝점에 대 한 정규화 된 주소 이므로이 코드에서 지정 된 주소는 "CalculatorService" `"http://localhost:8000/GettingStarted/CalculatorService"`합니다.  
   
         > [!IMPORTANT]
-        >  .NET Framework 4 이상을 사용할 때 서비스 끝점 추가는 선택 사항입니다. 이러한 버전에서 코드 또는 구성에 끝점이 추가되지 않으면 WCF가 기본 주소의 각 결합에 기본 끝점 하나씩을 추가하고 서비스에서 구현한 계약을 추가합니다. 기본 엔드포인트에 대한 자세한 내용은 [엔드포인트 주소 지정](../../../docs/framework/wcf/specifying-an-endpoint-address.md)을 참조하세요. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)을 참조하세요.  
+        >  .NET Framework 4 이상을 사용할 때 서비스 엔드포인트 추가는 선택 사항입니다. 이러한 버전에서 코드 또는 구성에 엔드포인트가 추가되지 않으면 WCF가 기본 주소의 각 결합에 기본 엔드포인트 하나씩을 추가하고 서비스에서 구현한 계약을 추가합니다. 기본 엔드포인트에 대한 자세한 내용은 [엔드포인트 주소 지정](../../../docs/framework/wcf/specifying-an-endpoint-address.md)을 참조하세요. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)을 참조하세요.  
   
     4.  4단계 - 메타데이터 교환을 사용하도록 설정합니다. 클라이언트는 메타데이터 교환을 사용하여 서비스 작업을 호출하는 데 사용되는 프록시를 생성합니다. 메타데이터 교환을 활성화하려면 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 인스턴스를 만들고 해당 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정한 다음, 동작을 <xref:System.ServiceModel.ServiceHost> 인스턴스의 <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` 컬렉션에 추가합니다.  
   
     5.  5단계 - <xref:System.ServiceModel.ServiceHost>를 열어 들어오는 메시지를 수신합니다. 코드는 사용자가 Enter를 누를 때까지 기다립니다. 이를 수행하지 않으면 응용 프로그램이 즉시 닫히고 서비스가 종료합니다. 또한 사용된 try/catch 블록도 주의하십시오. <xref:System.ServiceModel.ServiceHost>를 인스턴스화한 후에는 나머지 코드가 try/catch 블록에 배치됩니다. <xref:System.ServiceModel.ServiceHost>에서 throw된 예외를 안전하게 catch하는 방법에 대한 자세한 내용은 [Using 문 사용 시 문제 회피](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)를 참조하세요.  
   
+> [!IMPORTANT]
+> 코드에서 변경한 내용을 반영 하도록 GettingStartedLib에서 App.config를 편집 합니다. 
+> 1. 줄 14를 변경 합니다. `<service name="GettingStartedLib.CalculatorService">`
+> 2. 줄 17을 변경 합니다. `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
+> 3. 22 줄을 변경 합니다. `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
+        
 ### <a name="to-verify-the-service-is-working"></a>서비스가 작동하는지 확인하려면  
   
 1.  [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 GettingStartedHost 콘솔 응용 프로그램을 실행합니다. [!INCLUDE[wv](../../../includes/wv-md.md)]에서 실행하면서 나중에 운영 체제에서 실행하는 경우 서비스를 관리자 권한으로 실행해야 합니다. Visual Studio가 관리자 권한으로 실행되었기 때문에 GettingStartedHost도 관리자 권한으로 실행됩니다. 또한 관리자 권한으로 서비스를 실행하는 새 명령 프롬프트를 시작하고 해당 명령 프롬프트 내에서 service.exe를 실행할 수 있습니다.  
   
 2.  Internet Explorer를 열고 서비스의 디버그 페이지인 `http://localhost:8000/GettingStarted/CalculatorService`를 찾습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에는 자습서의 이전 단계의 서비스 계약과 구현이 포함되어 있으며 콘솔 응용 프로그램에서 서비스를 호스팅합니다.  
   
  이를 명령줄 컴파일러로 컴파일하려면 IService1.cs 및 Service1.cs를 `System.ServiceModel.dll`을 참조하는 클래스 라이브러리로 컴파일합니다. 그리고 Program.cs를 콘솔 응용 프로그램으로 컴파일합니다.  

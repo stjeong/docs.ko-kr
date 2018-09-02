@@ -2,12 +2,12 @@
 title: 도구 상자 서비스
 ms.date: 03/30/2017
 ms.assetid: 742212d0-445e-41ed-9739-9ee848ce7f1b
-ms.openlocfilehash: 0b3ea56d28d202bd8356fea1783b6675a708631d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0b21f10c763f3f82591f947eb4cc48cf90f4ac79
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33516193"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406464"
 ---
 # <a name="toolbox-service"></a>도구 상자 서비스
 이 샘플에서는 워크플로 컨텍스트를 기반으로 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 도구 상자 활동을 업데이트하는 방법을 보여 줍니다. 이 샘플에는 사용자 지정 활동이 선택되었는지 여부에 따라 도구 상자 내용을 변경하는 워크플로가 포함되어 있습니다.  
@@ -39,19 +39,19 @@ public interface IActivityToolboxService
   
 3.  Workflow.xaml 파일을 엽니다.  
   
-4.  추가 **CustomActivity** 끌어서 도구 상자에서 삭제 합니다. 추가 도구 상자 범주가 라는: **새 WF 범주** 추가 활동이 포함 된 **할당**합니다.  
+4.  추가 된 **CustomActivity** 끌어서 도구 상자에서 삭제 합니다. 추가 도구 상자 범주를 호출 하는: **새 WF 범주** 추가 활동과 **할당**합니다.  
   
-5.  선택 취소 합니다. 이제는 **CustomActivity** 다른 활동을 끌어 여 합니다.  
+5.  이제 선택 취소 합니다 **CustomActivity** 다른 활동으로 끌어 합니다.  
   
-6.  항목 **할당** 범주의 **새 WF 범주** 의 도구 상자에서 제거 됩니다. 또한 범주에 더 이상 남은 항목이 없으므로 범주도 제거됩니다.  
+6.  항목 **할당할** 범주의 **새 WF 범주** 의 도구 상자에서 제거 됩니다. 또한 범주에 더 이상 남은 항목이 없으므로 범주도 제거됩니다.  
   
-7.  선택 된 **CustomActivity** 다시와 범주 및 **할당** 활동이 다시 추가 됩니다.  
+7.  선택 된 **CustomActivity** 다시 및 범주 및 **할당** 활동이 다시 추가 됩니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\IActivityToolboxService`

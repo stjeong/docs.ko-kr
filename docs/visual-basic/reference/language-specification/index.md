@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Basic code, specifications
 - specifications, Visual Basic
 ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
-ms.openlocfilehash: cfdf6945be3f440013716694e633e7ca9c064729
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6708ad107a2ee5b4ba2896d811c103ed49b476b8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33648670"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403830"
 ---
 # <a name="visual-basic-language-specification"></a>Visual Basic 언어 사양
-Visual Basic 언어 사양은 Visual Basic 문법 및 구문에 대 한 모든 질문에 대 한 답변에 대 한 신뢰할 수 있는 소스입니다. Visual Basic 참조 설명서에서 다루지 않은 여러 항목을 포함 하 여 언어에 대 한 자세한 정보가 있습니다.  
+Visual Basic 언어 사양 Visual Basic 문법 및 구문에 대 한 모든 질문에 대 한 답변에 대 한 믿을 만한 원본 됩니다. Visual Basic 참조 설명서에서 다루지 않은 여러 항목을 포함 하 여 언어에 대 한 자세한 정보가 있습니다.  
   
- 이 사양은 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=188623)에서 제공됩니다.  
+ 이 사양은 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkId=188623)에서 제공됩니다.  
   
 이 사이트에는 [VB 11 사양](../../../../_vblang/spec/introduction.md)이 들어 있습니다. 이 사양은 [dotnet/vblang GitHub 리포지토리](https://github.com/dotnet/vblang/blob/master/spec/README.md)에 포함된 Markdown 파일에서 빌드됩니다.
 

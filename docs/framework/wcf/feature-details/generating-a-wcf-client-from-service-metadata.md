@@ -2,12 +2,12 @@
 title: 서비스 메타데이터에서 WCF 클라이언트 생성
 ms.date: 03/30/2017
 ms.assetid: 27f8f545-cc44-412a-b104-617e0781b803
-ms.openlocfilehash: 55034868b465b63dca3ca28238d81b348d9d6893
-ms.sourcegitcommit: f9e38d31288fe5962e6be5b0cc286da633482873
+ms.openlocfilehash: 78804eb7f4139280e7d72c5a45aa0ae4cc3c2d77
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37027930"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403694"
 ---
 # <a name="generating-a-wcf-client-from-service-metadata"></a>서비스 메타데이터에서 WCF 클라이언트 생성
 이 항목에서는 Svcutil.exe의 여러 가지 스위치를 사용하여 메타데이터 문서에서 클라이언트를 생성하는 방법에 대해 설명합니다.  
@@ -18,9 +18,9 @@ ms.locfileid: "37027930"
   
 -   `/mex`가 추가된 제공된 주소에 대한 MEX 요청  
   
--   한 DISCO 요청 (사용 하는 [DiscoveryClientProtocol](http://go.microsoft.com/fwlink/?LinkId=94777) ASP.NET 웹 서비스에서) 주어진된 주소에 있습니다.  
+-   DISCO 요청 (사용 하는 [DiscoveryClientProtocol](https://go.microsoft.com/fwlink/?LinkId=94777) ASP.NET 웹 서비스에서) 제공 된 주소입니다.  
   
- Svcutil.exe는 WSDL(웹 서비스 기술 언어)을 기반으로 하는 클라이언트 또는 서비스로부터 받은 정책 파일을 생성합니다. 사용자 계정 이름 (UPN) 사용 하 여 사용자 이름을 연결 하 여 생성 됩니다 "\@" 다음 정규화 된 도메인 이름 (FQDN)을 추가 합니다. 그러나 Active Directory에 등록 한 사용자의이 형식은 올바르지 않으며 도구에서 생성 한 UPN으로 인해 다음과 같은 오류 메시지와 함께 Kerberos 인증의는 실패: **로그온 시도가 실패 했습니다.** 이 문제를 해결하려면 이 도구에서 생성한 클라이언트 파일을 수동으로 수정합니다.  
+ Svcutil.exe는 WSDL(웹 서비스 기술 언어)을 기반으로 하는 클라이언트 또는 서비스로부터 받은 정책 파일을 생성합니다. 사용자 계정 이름 (UPN) 사용자 이름 앞에 연결 하 여 생성 됩니다 "\@" 다음 정규화 된 도메인 이름 (FQDN)을 추가 합니다. 그러나 Active Directory에 등록 된 사용자에 대 한 형식이으로 유효 하지 않으며 다음 오류 메시지와 함께 Kerberos 인증에 오류가 발생 하는 도구를 생성 하는 UPN: **로그온 시도가 실패 했습니다.** 이 문제를 해결하려면 이 도구에서 생성한 클라이언트 파일을 수동으로 수정합니다.  
   
 ```  
 svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>  
@@ -30,7 +30,7 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/reference:\<파일 경로 >**|지정한 어셈블리에서 형식을 참조합니다. 클라이언트를 생성할 때 이 옵션을 사용하여 가져오는 메타데이터를 나타내는 형식이 포함될 수 있는 어셈블리를 지정합니다.<br /><br /> 약식: `/r`|  
+|**참조:\<파일 경로 >**|지정한 어셈블리에서 형식을 참조합니다. 클라이언트를 생성할 때 이 옵션을 사용하여 가져오는 메타데이터를 나타내는 형식이 포함될 수 있는 어셈블리를 지정합니다.<br /><br /> 약식: `/r`|  
 |**/excludeType:\<type>**|참조된 계약 형식에서 제외할 정규화된 형식 이름 또는 정규화된 어셈블리 형식 이름을 지정합니다.<br /><br /> 약식: `/et`|  
   
 ## <a name="choosing-a-serializer"></a>Serializer 선택  
@@ -47,7 +47,7 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/language:\<language>**|코드 생성에 사용할 프로그래밍 언어를 지정합니다. Machine.config 파일에 등록된 언어 이름 또는 <xref:System.CodeDom.Compiler.CodeDomProvider>에서 상속된 클래스의 정규화된 이름을 입력합니다.<br /><br /> 값: c#, cs, csharp, vb, vbs, visualbasic, vbscript, javascript, c++, mc, cpp<br /><br /> 기본값: csharp<br /><br /> 약식: `/l`<br /><br /> 자세한 내용은 참조 [CodeDomProvider 클래스](http://go.microsoft.com/fwlink/?LinkId=94778)합니다.|  
+|**/language:\<language>**|코드 생성에 사용할 프로그래밍 언어를 지정합니다. Machine.config 파일에 등록된 언어 이름 또는 <xref:System.CodeDom.Compiler.CodeDomProvider>에서 상속된 클래스의 정규화된 이름을 입력합니다.<br /><br /> 값: c#, cs, csharp, vb, vbs, visualbasic, vbscript, javascript, c++, mc, cpp<br /><br /> 기본값: csharp<br /><br /> 약식: `/l`<br /><br /> 자세한 내용은 [CodeDomProvider 클래스](https://go.microsoft.com/fwlink/?LinkId=94778)합니다.|  
   
 ## <a name="choosing-a-namespace-for-the-client"></a>클라이언트에 대한 네임스페이스 선택  
   

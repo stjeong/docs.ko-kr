@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d4461667bdb47d410c857b4ac2c9dd268438a02f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 21ab18cded2b9a16fe2520547287198d3cfe6b74
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744020"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416776"
 ---
 # <a name="ltgccpugroupgt-element"></a>&lt;GCCpuGroup&gt; 요소
 가비지 수집에서 여러 CPU 그룹을 지원할지를 지정합니다.  
@@ -41,8 +41,8 @@ ms.locfileid: "32744020"
   
 |값|설명|  
 |-----------|-----------------|  
-|`false`|가비지 수집 여러 CPU 그룹을 지원 하지 않습니다. 이 값이 기본값입니다.|  
-|`true`|가비지 수집이 서버 가비지 수집이 사용 되는 경우 여러 CPU 그룹을 지원 합니다.|  
+|`false`|가비지 수집에서 여러 CPU 그룹을 지원 하지 않습니다. 이 값이 기본값입니다.|  
+|`true`|가비지 수집이 서버 가비지 수집을 사용 하는 경우 여러 CPU 그룹을 지원 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -55,13 +55,13 @@ ms.locfileid: "32744020"
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 때 컴퓨터에 여러 CPU 그룹 및 서버 가비지 수집이 설정 되었는지 (참조는 [ \<gcServer >](../../../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) 요소),이 요소를 사용 하도록 설정을 모든 CPU 그룹에서 가비지 수집을 확장 하 고 모든 코어를 사용 합니다. 힙을 분산와 만들 때 계정입니다.  
+ 컴퓨터에 여러 CPU 그룹이 시간과 서버 가비지 컬렉션이 설정 되었는지 (참조를 [ \<gcServer >](../../../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) 요소), 모든 CPU 그룹에 걸쳐 가비지 컬렉션을 확장 하 고 모든 코어에는이 요소를 사용 하도록 설정 계정 만들기 및 힙 분산 하는 경우입니다.  
   
 > [!NOTE]
->  이 요소는 가비지 수집 스레드만 적용 됩니다. 런타임에서 모든 CPU 그룹 사용자 스레드를 분산 시킬 수 있도록,도 설정 해야는 [< Thread_UseAllCpuGroups >](../../../../../docs/framework/configure-apps/file-schema/runtime/thread-useallcpugroups-element.md) 요소입니다.  
+>  이 요소는 가비지 수집 스레드에만 적용 됩니다. 런타임이 모든 CPU 그룹에 사용자 스레드를 분산할 수 있도록 설정할 수도 있습니다는 [< Thread_UseAllCpuGroups >](../../../../../docs/framework/configure-apps/file-schema/runtime/thread-useallcpugroups-element.md) 요소입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 여러 CPU 그룹에 대 한 가비지 컬렉션을 사용 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 여러 CPU 그룹에 대 한 가비지 수집을 사용 하도록 설정 하는 방법을 보여 줍니다.  
   
 ```xml  
 <configuration>  
@@ -75,5 +75,5 @@ ms.locfileid: "32744020"
 ## <a name="see-also"></a>참고 항목  
  [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [방법: 동시 가비지 수집을 사용 하지 않도록 설정](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
+ [방법: 동시 가비지 수집을 사용 하지 않도록 설정](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
  [워크스테이션 및 서버 가비지 수집](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)

@@ -9,11 +9,11 @@ ms.assetid: a7fe83a2-a6d8-460c-8dad-79a8f433f501
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: d093b8ce4413a375e79eec239be37e83ac674d05
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42929945"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43417651"
 ---
 # <a name="-errorreport"></a>-errorreport
 
@@ -47,7 +47,7 @@ Visual Basic 컴파일러에서 내부 컴파일러 오류를 보고 하는 방�
 > [!NOTE]
 > `-errorreport` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 있는 명령줄에서 컴파일할 경우에 사용할 수 있는 것입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 컴파일하려고 시도 `T2.vb`, 한 컴파일러에 내부 컴파일러 오류가 발생 하는 경우 Microsoft로 오류 보고서를 보낼 것인지 묻습니다.
 

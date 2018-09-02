@@ -14,18 +14,18 @@ helpviewer_keywords:
 - OnRender method [WPF], overriding
 - Panel control [WPF], overriding OnRender method
 ms.assetid: 57397834-a085-4e36-90ab-416fad98f341
-ms.openlocfilehash: e591bc195d3b0ba58002bda42ddb3e9ed35d312e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8f3b65bdfe96efdc57c6b8d30991439d3bdb0bc5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33554874"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404438"
 ---
 # <a name="how-to-override-the-panel-onrender-method"></a>방법: Panel의 OnRender 메서드 재정의
-재정의 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Panel.OnRender%2A> 방식의 <xref:System.Windows.Controls.Panel> 레이아웃 요소를 사용자 지정 그래픽 효과 추가 하기 위해 합니다.  
+재정의 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Panel.OnRender%2A> 메서드의 <xref:System.Windows.Controls.Panel> 레이아웃 요소를 사용자 지정 그래픽 효과 추가 하려면.  
   
 ## <a name="example"></a>예제  
- 사용 된 <xref:System.Windows.Controls.Panel.OnRender%2A> 그래픽 효과 렌더링된 된 패널 요소를 추가 하기 위해 메서드. 예를 들어 사용자 지정 테두리 또는 배경 효과 추가 하려면이 메서드를 사용할 수 있습니다. A <xref:System.Windows.Media.DrawingContext> 개체 도형, 텍스트, 이미지 또는 비디오를 그리기 위한 메서드를 제공 하는 인수로 전달 됩니다. 결과적으로,이 방법은 패널 개체의 사용자 지정 하는 데 유용 합니다.  
+ 사용 된 <xref:System.Windows.Controls.Panel.OnRender%2A> 그래픽 효과 렌더링된 panel 요소를 추가 하기 위해 메서드. 예를 들어, 사용자 지정 테두리 또는 배경 효과 추가 하려면이 메서드를 사용할 수 있습니다. <xref:System.Windows.Media.DrawingContext> 개체는 도형, 텍스트, 이미지 또는 비디오를 그리기 위한 메서드를 제공 하는 인수로 전달 됩니다. 결과적으로,이 메서드는 패널 개체의 사용자 지정에 유용 합니다.  
   
  [!code-csharp[LightWeightCustomPanel#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LightWeightCustomPanel/CSharp/OffsetPanel.cs#1)]
  [!code-vb[LightWeightCustomPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LightWeightCustomPanel/visualbasic/offsetpanel.vb#1)]  
@@ -33,5 +33,5 @@ ms.locfileid: "33554874"
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Controls.Panel>  
  [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [방사형 패널 사용자 지정 예제](http://go.microsoft.com/fwlink/?LinkID=159982)  
+ [사용자 지정 방사형 패널 샘플](https://go.microsoft.com/fwlink/?LinkID=159982)  
  [방법 항목](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)

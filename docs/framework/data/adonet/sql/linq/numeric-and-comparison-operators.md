@@ -2,12 +2,12 @@
 title: 숫자 및 비교 연산자
 ms.date: 03/30/2017
 ms.assetid: 25b4a26a-06f2-4f80-87a9-76705ed46197
-ms.openlocfilehash: a1ce13225d72b4286982434d52998a1913814abb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a7a455730860e2b11a5ceff5a70934502b312e19
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352183"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43401917"
 ---
 # <a name="numeric-and-comparison-operators"></a>숫자 및 비교 연산자
 산술 및 비교 연산자는 CLR(공용 언어 런타임) 예외에서 다음과 같이 예상대로 동작합니다.  
@@ -59,5 +59,5 @@ ms.locfileid: "33352183"
   
 ## <a name="see-also"></a>참고 항목  
  [데이터 형식 및 함수](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)  
- [C# 연산자](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)  
+ [C# 연산자](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)  
  [연산자](../../../../../visual-basic/language-reference/operators/index.md)

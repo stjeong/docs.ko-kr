@@ -29,12 +29,12 @@ helpviewer_keywords:
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6d7b12004efce76f9ac591f18fd0f4e06fdd7fd0
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: dd0fef0e8a2c4b94cd5dd7beb140e669c52a07a8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934953"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416962"
 ---
 # <a name="profiling-overview"></a>프로파일링 개요
 <a name="top"></a> 프로파일러는 다른 응용 프로그램의 실행을 모니터링 하는 도구입니다. CLR(공용 언어 런타임) 프로파일러는 프로 파일링 API를 사용하여 CLR에서 메시지를 받고 보내는 함수로 구성된 DLL(동적 연결 라이브러리)입니다. 프로파일러 DLL은 런타임에 CLR에 의해 로드됩니다.  
@@ -209,7 +209,7 @@ ms.locfileid: "42934953"
 ### <a name="stack-snapshot"></a>스택 스냅숏  
  스택 스냅숏은 한 순간의 스레드 스택 추적입니다. 프로파일링 API는 스택에서 관리되는 함수의 추적을 지원하지만 관리되지 않는 함수의 추적은 프로파일러의 자체 스택 워크에 맡깁니다.  
   
- 관리 되는 스택 워크에 프로파일러를 프로그래밍 하는 방법에 대 한 자세한 내용은 참조는 [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) 이 설명서의 메서드 및 [Profiler Stack Walking.NET Framework 2.0 in에서: Basics and Beyond](http://go.microsoft.com/fwlink/?LinkId=73638)합니다.
+ 관리 되는 스택 워크에 프로파일러를 프로그래밍 하는 방법에 대 한 자세한 내용은 참조는 [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) 이 설명서의 메서드 및 [Profiler Stack Walking.NET Framework 2.0 in에서: Basics and Beyond](https://go.microsoft.com/fwlink/?LinkId=73638)합니다.
   
 ### <a name="shadow-stack"></a>섀도 스택  
  스냅숏 메서드를 너무 자주 사용하면 성능 문제가 빠르게 발생할 수 있습니다. 프로파일러를 사용 하 여 섀도 스택을 빌드 대신 해야 스택 추적을 자주 수행 하려는 경우는 [FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md), [FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)합니다 [FunctionTailcall2](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md), 및 [ICorProfilerCallback2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md) 예외 콜백을 합니다. 섀도 스택은 항상 최신 상태이며 스택 스냅숏이 필요할 때마다 저장소로 빠르게 복사될 수 있습니다.  

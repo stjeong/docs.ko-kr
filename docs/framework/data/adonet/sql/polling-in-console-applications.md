@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 4ff084d5-5956-4db1-8e18-c5a66b000882
-ms.openlocfilehash: 4fc9a787aa03af311ed219f0831a4d0e41544be8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6b0d298e1959ff2fdcd46a9f218eb980671407be
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33363395"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416710"
 ---
 # <a name="polling-in-console-applications"></a>콘솔 응용 프로그램에서 폴링
 ADO.NET에서 비동기 작업을 수행하면 다른 스레드에서 다른 작업을 수행하는 동안 한 스레드에서 시간이 많이 걸리는 데이터베이스 작업을 시작할 수 있습니다. 그러나 대부분은 결국 데이터베이스 작업을 완료할 때까지 응용 프로그램을 계속 실행할 수 없는 지점에 이르게 됩니다. 이 경우 비동기 작업을 폴링하여 작업의 완료 여부를 확인하면 도움이 됩니다.  
@@ -18,7 +18,7 @@ ADO.NET에서 비동기 작업을 수행하면 다른 스레드에서 다른 작
  <xref:System.IAsyncResult.IsCompleted%2A> 속성을 사용하면 작업의 완료 여부를 확인할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 콘솔 응용 프로그램 내에서 데이터를 업데이트는 **AdventureWorks** 예제 데이터베이스에서 작업은 비동기적으로 수행 합니다. 이 예제에서는 장기 실행 프로세스를 에뮬레이션하기 위해 명령 텍스트에 WAITFOR 문을 삽입합니다. 일반적으로는 명령을 느린 속도로 실행하지 않겠지만 이 경우 그렇게 하면 보다 손쉽게 비동기 작업을 확인할 수 있습니다.  
+ 다음 콘솔 응용 프로그램 내에서 데이터를 업데이트 합니다 **AdventureWorks** 샘플 데이터베이스에서 해당 작업을 비동기적으로 수행 합니다. 이 예제에서는 장기 실행 프로세스를 에뮬레이션하기 위해 명령 텍스트에 WAITFOR 문을 삽입합니다. 일반적으로는 명령을 느린 속도로 실행하지 않겠지만 이 경우 그렇게 하면 보다 손쉽게 비동기 작업을 확인할 수 있습니다.  
   
 ```vb  
 Imports System  
@@ -192,4 +192,4 @@ class Class1
   
 ## <a name="see-also"></a>참고 항목  
  [비동기 작업](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

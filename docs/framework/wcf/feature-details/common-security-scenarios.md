@@ -6,12 +6,12 @@ helpviewer_keywords:
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 0fb51ea0624c4fa686e4e99ffb9c30decedfea10
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 220795488d6e4bedf40e0764040470c18d3a3b48
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33490905"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402784"
 ---
 # <a name="common-security-scenarios"></a>일반적인 보안 시나리오
 이 단원의 항목에서는 많은 수의 가능한 클라이언트 및 서비스 보안 구성을 카탈로그로 만듭니다. 구성은 요소 수에 따라 다릅니다. 예를 들어 서비스 또는 클라이언트가 인트라넷에 있는지, 보안이 Windows에서 제공되는지 아니면 HTTPS와 같은 전송에 의해 제공되는지에 따라 달라집니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "33490905"
  보안되지 않은 공용 클라이언트 및 서비스의 예입니다.  
   
  [보안이 설정되지 않은 인트라넷 클라이언트 및 서비스](../../../../docs/framework/wcf/feature-details/intranet-unsecured-client-and-service.md)  
- 기본 Windows Communication Foundation (WCF) 서비스는 WCF 응용 프로그램에 보안 사설망에 정보를 제공 하기 위해 개발.  
+ WCF 응용 프로그램에 안전한 개인 네트워크에서 정보를 제공 하는 기본 Windows Communication Foundation (WCF) 서비스를 개발 했습니다.  
   
  [기본 인증을 사용하는 전송 보안](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)  
  클라이언트는 해당 응용 프로그램을 통해 사용자 지정 인증을 사용하여 로그온할 수 있습니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "33490905"
  인증서를 사용하여 보안하는 클라이언트 및 서비스를 보여 줍니다.  
   
  [익명 클라이언트를 사용하는 메시지 보안](../../../../docs/framework/wcf/feature-details/message-security-with-an-anonymous-client.md)  
- 클라이언트와 서비스는 WCF 메시지 보안 적용을 보여 줍니다.  
+ 클라이언트와 WCF 메시지 보안에 의해 보호 되는 서비스를 보여 줍니다.  
   
  [사용자 이름 클라이언트를 사용하는 메시지 보안](../../../../docs/framework/wcf/feature-details/message-security-with-a-user-name-client.md)  
  클라이언트는 도메인 사용자 이름 및 암호를 사용하여 클라이언트가 로그온할 수 있도록 허용하는 Windows Forms 응용 프로그램입니다.  
@@ -83,4 +83,4 @@ ms.locfileid: "33490905"
   
 ## <a name="see-also"></a>참고 항목  
  [보안 지침 및 최선의 방법](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
- [Windows Server App Fabric에 대 한 보안 모델](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+ [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

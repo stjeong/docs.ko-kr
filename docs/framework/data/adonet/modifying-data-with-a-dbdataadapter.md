@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e35c7f9e-648b-4fcc-9361-d365c3e42c9a
-ms.openlocfilehash: 851c724d354b0e819ca320c32e98249f2ec66506
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0e38bc663d3c2143703ba178eb8ac420bb1baa08
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32765843"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400548"
 ---
 # <a name="modifying-data-with-a-dbdataadapter"></a>DbDataAdapter로 데이터 수정
 <xref:System.Data.Common.DbProviderFactory.CreateDataAdapter%2A> 개체의 <xref:System.Data.Common.DbProviderFactory> 메서드를 사용하면 팩터리를 만들 때 지정한 기본 데이터 공급자에 대해 강력한 형식의 <xref:System.Data.Common.DbDataAdapter> 개체를 얻을 수 있습니다. 그런 다음 <xref:System.Data.Common.DbCommandBuilder>를 사용하여 데이터를 <xref:System.Data.DataSet>에서 데이터 소스로 삽입하고, 업데이트하고, 삭제하는 명령을 만들 수 있습니다.  
@@ -46,4 +46,4 @@ ms.locfileid: "32765843"
  [DbProviderFactory](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
  [DbProviderFactory 가져오기](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)  
  [DbConnection, DbCommand 및 DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

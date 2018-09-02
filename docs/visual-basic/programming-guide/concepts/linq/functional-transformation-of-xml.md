@@ -1,15 +1,15 @@
 ---
-title: (Visual Basic) XML의 함수 변형
+title: XML (Visual Basic)의 함수 변환
 ms.date: 07/20/2015
 ms.assetid: fdbe5b91-f457-4b4e-a11b-def4bdd77bab
-ms.openlocfilehash: c268f414d720bb71866c35de367e9f452f02c5ab
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 25e5d743b983badaefa3012b8839e4b039419ee9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33644435"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403910"
 ---
-# <a name="functional-transformation-of-xml-visual-basic"></a>(Visual Basic) XML의 함수 변형
+# <a name="functional-transformation-of-xml-visual-basic"></a>XML (Visual Basic)의 함수 변환
 이 항목에서는 XML 문서를 수정하는 순수 함수 변환 방법에 대해 설명하고 이 방법을 절차적 방법과 대조합니다.  
   
 ## <a name="modifying-an-xml-document"></a>XML 문서 수정  
@@ -26,13 +26,13 @@ ms.locfileid: "33644435"
 ### <a name="xml-functional-transformational-technologies"></a>XML 함수 변환 기술  
  Microsoft는 XML 문서에서 사용할 수 있는 두 가지 함수 변환 기술인 XSLT와 LINQ to XML을 제공합니다. XSLT는 <xref:System.Xml.Xsl>이라는 관리되는 네임스페이스와 MSXML의 네이티브 COM 구현에서 지원됩니다. XSLT가 XML 문서를 조작하는 강력한 기술이긴 하지만 XSLT 언어 및 지원 API와 같은 특수화된 영역의 전문 지식을 필요로 합니다.  
   
- LINQ to XML은 C# 또는 Visual Basic 코드에서 표현이 다양하고 강력한 방법으로 순수 함수 변환을 코딩하는 데 필요한 도구를 제공합니다. 예를 들어, LINQ to XML 설명서의 많은 예제에서는 순수 함수 방법을 사용합니다. 또한는 [자습서: WordprocessingML 문서 (Visual Basic)에서 내용 조작](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md) 자습서 사용 LINQ to XML 함수 방법은 Microsoft Word 문서에서 정보를 조작 합니다.  
+ LINQ to XML은 C# 또는 Visual Basic 코드에서 표현이 다양하고 강력한 방법으로 순수 함수 변환을 코딩하는 데 필요한 도구를 제공합니다. 예를 들어, LINQ to XML 설명서의 많은 예제에서는 순수 함수 방법을 사용합니다. 또한 합니다 [자습서: WordprocessingML 문서 (Visual Basic)에서 내용 조작](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md) 자습서를 사용 하 여 LINQ to XML 함수형 방법에서 Microsoft Word 문서에서 정보를 조작 합니다.  
   
  LINQ to XML과 다른 Microsoft XML 기술의 비교에 대한 자세한 내용은 [LINQ to XML과 기타 XML 기술 비교](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)를 참조하세요.  
   
- XSLT는 소스 문서의 구조가 불규칙적인 경우 문서 중심적인 변환에 권장되는 도구입니다. 그러나 LINQ to XML도 문서 중심적 변환을 수행할 수 있습니다. 자세한 내용은 참조 [하는 방법: XSLT 스타일 (Visual Basic)에서 XML 트리를 변형 LINQ를 사용 하 여 주석을](../../../../visual-basic/programming-guide/concepts/linq/how-to-use-annotation-trees-to-transform-linq-to-xml-trees-in-an-xslt-style.md)합니다.  
+ XSLT는 소스 문서의 구조가 불규칙적인 경우 문서 중심적인 변환에 권장되는 도구입니다. 그러나 LINQ to XML도 문서 중심적 변환을 수행할 수 있습니다. 자세한 내용은 [방법: 변환 LINQ to XML 트리 (Visual Basic) XSLT 스타일에서 주석을 사용 하 여](../../../../visual-basic/programming-guide/concepts/linq/how-to-use-annotation-trees-to-transform-linq-to-xml-trees-in-an-xslt-style.md)입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [순수 함수 변환 (Visual Basic) 소개](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
  [LINQ to XML과 기타 XML 기술 비교](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)  
- [LINQ to XML과 기타 XML 기술 비교](http://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)
+ [LINQ to XML과 기타 XML 기술 비교](https://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)

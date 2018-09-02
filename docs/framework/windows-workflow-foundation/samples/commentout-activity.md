@@ -2,12 +2,12 @@
 title: CommentOut 활동
 ms.date: 03/30/2017
 ms.assetid: 340204c3-f827-45fb-870e-55e2ac457ca5
-ms.openlocfilehash: 7847f4e1d77c2927a27be6b83f4016a22e4e3b32
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3e9f6945755bd60c551674ea8a3471a9f612da52
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33515198"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404752"
 ---
 # <a name="commentout-activity"></a>CommentOut 활동
 이 샘플에서는 다른 활동을 사실상 주석으로 처리하여 실행 경로에서 제거하는 사용자 지정 활동을 작성하는 방법을 보여 줍니다.  
@@ -58,6 +58,6 @@ public sealed class CommentOut : CodeActivity
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\CommentOut`

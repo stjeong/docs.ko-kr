@@ -13,11 +13,11 @@ helpviewer_keywords:
 - declarations [Visual Basic], namespaces
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
 ms.openlocfilehash: 28016763b2cef2e8b8954f486bbbdb6930b5364c
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245241"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43417414"
 ---
 # <a name="namespace-statement"></a>Namespace 문
 네임 스페이스의 이름을 선언 하 고 해당 네임 스페이스에서 컴파일되도록 선언 뒤에 오는 소스 코드가 있습니다.  
@@ -75,22 +75,22 @@ End Namespace
   
  네임 스페이스에 대 한 액세스 또는 프로시저 한정자 또는 다른 한정자를 적용할 수 없습니다. 형식이 아니기 때문에 이러한 한정자는 의미가 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 다른 중첩 된 두 개의 네임 스페이스를 선언 합니다.  
   
  [!code-vb[VbVbalrStatements#43](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_1.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 단일 줄에 여러 개의 중첩 된 네임 스페이스를 선언 하 고 앞의 예와 동일 합니다.  
   
  [!code-vb[VbVbalrStatements#41](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_2.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 이전 예제에서 정의 된 클래스에 액세스 합니다.  
   
  [!code-vb[VbVbalrStatements#42](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_3.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 새 제네릭 목록 클래스의 기본 구조를 정의 하 고 추가 <xref:System.Collections.Generic?displayProperty=nameWithType> 네임 스페이스입니다.  
   
 ```vb  

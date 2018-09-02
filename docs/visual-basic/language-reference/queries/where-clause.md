@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Where clause [Visual Basic]
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
 ms.openlocfilehash: de7b4bf3e7dc1145b7e95197c7bd05c66acdabd6
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934332"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406782"
 ---
 # <a name="where-clause-visual-basic"></a>Where 절(Visual Basic)
 쿼리에 대 한 필터링 조건을 지정합니다.  
@@ -35,12 +35,12 @@ Where condition
   
  내에서 함수를 호출할 수는 `Where` 컬렉션의 현재 요소에서 계산 또는 값에 대 한 작업을 수행 하는 절. 함수 호출을 `Where` 절이 정의 된 경우 대신 액세스할 때 즉시 실행 될 쿼리를 발생할 수 있습니다. 쿼리 실행에 대 한 자세한 내용은 참조 하세요. [Your 첫 번째 LINQ 쿼리를 작성 하도록](../../../visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 쿼리 식에 사용을 `From` 범위 변수를 선언 하는 절 `cust` 각각에 대해 `Customer` 개체는 `customers` 컬렉션입니다. `Where` 절 범위 변수를 사용 하 여 지정된 된 지역에서 고객에 게 출력을 제한 합니다. `For Each` 루프는 쿼리 결과에서 각 고객의 회사 이름을 표시 합니다.  
   
  [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_1.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `And` 하 고 `Or` 의 논리 연산자는 `Where` 절.  
   
  [!code-vb[VbSimpleQuerySamples#31](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_2.vb)]  

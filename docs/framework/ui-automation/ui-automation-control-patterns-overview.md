@@ -8,16 +8,16 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 1b02618676a1162681c67d34a2c6f43def07893c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 73ac290c688436e7ce74e1baaf9f7dbbbecb66bf
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409028"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43418741"
 ---
 # <a name="ui-automation-control-patterns-overview"></a>UI 자동화 컨트롤 패턴 개요
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 개요에서는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 컨트롤 패턴을 소개합니다. 컨트롤 패턴은 컨트롤 형식 및 컨트롤의 모양에 관계없이 컨트롤의 기능을 분류하고 노출하는 방법을 제공합니다.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "33409028"
   
  UI 자동화 클라이언트는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 컨트롤 패턴 클래스의 메서드 및 속성에 액세스하고 이를 사용하여 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]에 대한 정보를 가져오거나 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]를 조작합니다. 이러한 컨트롤 패턴 클래스는 <xref:System.Windows.Automation> 네임스페이스(예: <xref:System.Windows.Automation.InvokePattern> 및 <xref:System.Windows.Automation.SelectionPattern>)에서 볼 수 있습니다.  
   
- 클라이언트 사용 하 여 <xref:System.Windows.Automation.AutomationElement> 메서드 (같은 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> 또는 <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType>) 또는 [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] 접근자에 액세스 하려면는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 패턴 속성에 있습니다. 각 컨트롤 패턴 클래스에 필드 멤버 (예를 들어 <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType>' 또는 <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType>)는 컨트롤 패턴을 식별 하 고에 대 한 매개 변수로 전달할 수 <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> 또는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> 에 대 한 패턴을 검색 하는 <xref:System.Windows.Automation.AutomationElement>합니다.  
+ 클라이언트가 사용 하 여 <xref:System.Windows.Automation.AutomationElement> 메서드 (같은 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> 또는 <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType>) 또는 [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] 액세스 하는 접근자를 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 패턴에 대 한 속성. 각 컨트롤 패턴 클래스에 필드 멤버 (예를 들어 <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType>' 또는 <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType>) 하 게 식별 하는 컨트롤 패턴을 매개 변수로 전달할 수 있습니다 <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> 또는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> 에 대 한 패턴을 검색할는 <xref:System.Windows.Automation.AutomationElement>합니다.  
   
 <a name="uiautomation_control_patterns_dynamic"></a>   
 ## <a name="dynamic-control-patterns"></a>동적 컨트롤 패턴  

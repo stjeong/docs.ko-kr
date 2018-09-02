@@ -9,20 +9,20 @@ helpviewer_keywords:
 - user controls [Windows Forms]
 - custom controls [Windows Forms]
 ms.assetid: e5a8e088-7ec8-4fd9-bcb3-9078fd134829
-ms.openlocfilehash: 267a56cbfd9025e2e20f1468535e5544146535a9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b58318a3e0e9881725d3c260251288c720fa4132
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529867"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406825"
 ---
 # <a name="developing-windows-forms-controls-at-design-time"></a>디자인 타임에 Windows Forms 컨트롤 개발
 .NET Framework는 컨트롤 제작자에게 다양한 컨트롤 제작 기술을 제공합니다. 제작자는 더 이상 기존 컨트롤의 컬렉션으로 작동하는 복합 컨트롤을 디자인하도록 제한되지 않습니다. 상속을 통해 기존의 복합 컨트롤 또는 Windows Forms 컨트롤에서 사용자 정의 컨트롤을 만들 수 있습니다. 또한 사용자 지정 그리기를 구현하는 사용자 정의 컨트롤을 디자인할 수 있습니다. 이러한 옵션을 사용하면 시각적 인터페이스의 디자인과 기능에 많은 유연성을 허용할 수 있습니다. 이러한 기능을 이용하려면 개체 지향 프로그래밍 개념을 잘 알고 있어야 합니다.  
   
 > [!NOTE]
->  상속을 철저 하 게 파악 필요는 없지만 하 게 찾을 수 있습니다 [상속 기본 사항 (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)합니다.  
+>  상속을 완전히 이해 해야 할 되지 않지만 유용할 수 고를 가리키도록 [상속 기본 사항 (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)합니다.  
   
- Web Forms에서 사용할 사용자 지정 컨트롤을 만들려면 [사용자 지정 ASP.NET 서버 컨트롤 개발](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef)을 참조하세요.  
+ Web Forms에서 사용할 사용자 지정 컨트롤을 만들려면 [사용자 지정 ASP.NET 서버 컨트롤 개발](https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef)을 참조하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [연습: Visual Basic에서 복합 컨트롤 제작](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md)  
@@ -41,7 +41,7 @@ ms.locfileid: "33529867"
  Windows Forms 컨트롤에서 스마트 태그 기능을 사용하는 방법을 보여 줍니다.  
   
  [연습: DesignerSerializationVisibilityAttribute를 사용하여 표준 형식의 컬렉션 serialize](../../../../docs/framework/winforms/controls/serializing-collections-designerserializationvisibilityattribute.md)  
- 사용 하는 방법을 보여 줍니다.는 <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=nameWithType> 컬렉션을 serialize 하는 특성입니다.  
+ 사용 하는 방법을 보여 줍니다는 <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=nameWithType> 컬렉션을 직렬화 하는 특성입니다.  
   
  [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버깅](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
  Windows Forms 컨트롤의 디자인 타임 동작을 디버그하는 방법을 보여 줍니다.  
@@ -65,13 +65,13 @@ ms.locfileid: "33529867"
  확장 컨트롤을 만드는 방법에 대해 간략하게 설명합니다.  
   
  [방법: 디자인 타임에 컨트롤을 양식의 가장자리에 맞춤](../../../../docs/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms-at-design-time.md)  
- 사용 하는 방법을 보여 줍니다.는 <xref:System.Windows.Forms.Control.Dock%2A> 속성을 사용자 컨트롤을 폼의 가장자리를 정렬 합니다.  
+ 사용 하는 방법을 보여 줍니다는 <xref:System.Windows.Forms.Control.Dock%2A> 컨트롤을 폼의 가장자리에 맞게 속성입니다.  
   
  [방법: 도구 상자 항목 선택 대화 상자에 컨트롤 표시](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)  
  **도구 상자 사용자 지정** 대화 상자에 표시되도록 컨트롤을 설치하는 절차를 보여 줍니다.  
   
  [방법: 컨트롤에 대한 도구 상자 비트맵 제공](../../../../docs/framework/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control.md)  
- 사용 하는 방법을 보여 줍니다.는 <xref:System.Drawing.ToolboxBitmapAttribute> 에 사용자 지정 컨트롤 옆에 있는 아이콘을 표시 하는 **도구 상자**합니다.  
+ 사용 하는 방법을 보여 줍니다 합니다 <xref:System.Drawing.ToolboxBitmapAttribute> 에서 사용자 지정 컨트롤 옆에 있는 아이콘을 표시 하는 **도구 상자**합니다.  
   
  [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)  
  **UserControl 테스트 컨테이너**를 사용하여 복합 컨트롤의 동작을 테스트하는 방법을 보여 줍니다.  

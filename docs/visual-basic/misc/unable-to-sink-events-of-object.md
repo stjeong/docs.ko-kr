@@ -4,11 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID96
 ms.assetid: e40b19a2-8100-43ff-a1a4-0ddee3cc7f9a
-ms.openlocfilehash: 441eb20a93fdd998dd08a4763cb9cff311f1287a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 46e8b41567820df24c5206a2acd8ac661faeed28
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405611"
 ---
 # <a name="unable-to-sink-events-of-object-because-the-object-is-already-firing-events-to-the-maximum-number-of-event-receivers-it-supports"></a>개체에서 지원하는 최대 개수의 이벤트 수신자로 이벤트를 발생시키고 있으므로 개체의 이벤트를 싱크할 수 없습니다.
 개체에서 지원하는 최대 이벤트 수신기 수가 초과되었습니다.  
@@ -18,5 +19,5 @@ ms.lasthandoff: 05/04/2018
 -   이벤트 수신기 수를 줄입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: COM 싱크에서 처리 하는 이벤트를 발생 시킵니다.](http://msdn.microsoft.com/library/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)  
+ [방법: COM 싱크에서 처리 하는 이벤트를 발생 시킵니다.](https://msdn.microsoft.com/library/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)  
  [연습: 이벤트 처리](../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)

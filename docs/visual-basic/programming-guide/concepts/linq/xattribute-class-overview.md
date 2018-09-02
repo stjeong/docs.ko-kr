@@ -3,11 +3,11 @@ title: XAttribute 클래스 개요 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 7781580a-9583-4a1b-ae1e-91c5936eb0b1
 ms.openlocfilehash: 08b8ebf31a39325c98023d4bb333f8e06bbdeb3f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33646967"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43406430"
 ---
 # <a name="xattribute-class-overview-visual-basic"></a>XAttribute 클래스 개요 (Visual Basic)
 특성은 요소와 연결된 이름/값 쌍입니다. <xref:System.Xml.Linq.XAttribute> 클래스는 XML 특성을 나타냅니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "33646967"
 |`XAttribute(XName name, object content)`|<xref:System.Xml.Linq.XAttribute> 개체를 만듭니다. `name` 인수는 특성의 이름을 지정하고, `content`는 특성의 내용을 지정합니다.|  
   
 ### <a name="creating-an-element-with-an-attribute"></a>특성을 사용하여 요소 만들기  
- 다음 코드는 XML 리터럴을 사용 하 여 Visual Basic의 특성을 포함 하는 요소를 보여 줍니다.  
+ 다음 코드에서는 XML 리터럴을 사용 하 여 Visual Basic의 특성을 포함 하는 요소를 보여 줍니다.  
   
 ```vb  
 Dim phone As XElement = <Phone Type="Home">555-555-5555</Phone>  

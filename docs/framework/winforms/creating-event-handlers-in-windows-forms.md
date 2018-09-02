@@ -8,12 +8,12 @@ helpviewer_keywords:
 - events [Windows Forms], event handlers
 - event handlers [Windows Forms]
 ms.assetid: 6514e530-c6b8-489c-a8d2-eda7b7072701
-ms.openlocfilehash: 96697fa54b569b6d1ce092ebfc76ef593f2ac66f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9095946d52360c69fd6c4dd6285039fb3e1874d5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33539156"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43401598"
 ---
 # <a name="creating-event-handlers-in-windows-forms"></a>Windows Forms에서 이벤트 처리기 만들기
 이벤트 처리기는 사용자가 단추를 클릭하거나 메시지 큐에서 메시지를 수신하는 등의 이벤트 발생 시 수행되는 작업을 결정하는 코드 내의 프로시저입니다. 이벤트가 발생하면 해당 이벤트를 수신하는 하나 이상의 이벤트 처리기가 실행됩니다. 이벤트는 여러 처리기에 할당될 수 있으며 특정 이벤트를 처리하는 메서드가 동적으로 변경될 수 있습니다. Windows Forms 디자이너를 사용하여 이벤트 처리기를 만들 수도 있습니다.  
@@ -34,7 +34,7 @@ ms.locfileid: "33539156"
  [Windows Forms에서의 이벤트 순서](../../../docs/framework/winforms/order-of-events-in-windows-forms.md)  
  Windows Forms 컨트롤에서 이벤트가 발생하는 순서에 대해 설명합니다.  
   
- [방법: 디자이너를 사용하여 이벤트 처리기 만들기](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)  
+ [방법: 디자이너를 사용하여 이벤트 처리기 만들기](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)  
  Windows Forms 디자이너를 사용하여 이벤트 처리기를 만드는 방법을 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
