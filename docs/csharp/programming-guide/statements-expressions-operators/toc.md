@@ -13,7 +13,6 @@
 ### [변환 연산자 사용](using-conversion-operators.md)
 ### [방법: 구조체 간의 사용자 정의 변환 구현](how-to-implement-user-defined-conversions-between-structs.md)
 ## [기본 값 식](default-value-expressions.md)
-## [방법: 연산자 오버로드를 사용하여 복소수 클래스 만들기](how-to-use-operator-overloading-to-create-a-complex-number-class.md)
 ## [같음 비교](equality-comparisons.md)
 ### [방법: 형식의 값 일치 정의](how-to-define-value-equality-for-a-type.md)
 ### [방법: 참조 같음(ID) 테스트](how-to-test-for-reference-equality-identity.md)
