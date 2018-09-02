@@ -5,37 +5,37 @@ helpviewer_keywords:
 - <summary> XML tag
 - summary XML tag
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
-ms.openlocfilehash: cf320b61a2ca1c54b22e3c3d31ae51d003366efd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5ef9b7a98503ff36174de4418ca7d599c365f5aa
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33602654"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43385712"
 ---
-# <a name="ltsummarygt-visual-basic"></a><span data-ttu-id="75c7f-102">&lt;요약&gt; (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="75c7f-102">&lt;summary&gt; (Visual Basic)</span></span>
-<span data-ttu-id="75c7f-103">멤버의 요약 정보를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-103">Specifies the summary of the member.</span></span>  
+# <a name="ltsummarygt-visual-basic"></a><span data-ttu-id="e0f31-102">&lt;요약&gt; (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="e0f31-102">&lt;summary&gt; (Visual Basic)</span></span>
+<span data-ttu-id="e0f31-103">멤버의 요약을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-103">Specifies the summary of the member.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="75c7f-104">구문</span><span class="sxs-lookup"><span data-stu-id="75c7f-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e0f31-104">구문</span><span class="sxs-lookup"><span data-stu-id="e0f31-104">Syntax</span></span>  
   
 ```xml  
 <summary>description</summary>  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="75c7f-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="75c7f-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="e0f31-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e0f31-105">Parameters</span></span>  
  `description`  
- <span data-ttu-id="75c7f-106">개체에 대한 요약입니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-106">A summary of the object.</span></span>  
+ <span data-ttu-id="e0f31-106">개체에 대한 요약입니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-106">A summary of the object.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="75c7f-107">설명</span><span class="sxs-lookup"><span data-stu-id="75c7f-107">Remarks</span></span>  
- <span data-ttu-id="75c7f-108">사용 된 `<summary>` 형식 또는 형식 멤버를 설명 하는 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-108">Use the `<summary>` tag to describe a type or a type member.</span></span> <span data-ttu-id="75c7f-109">[\<remarks>](../../../visual-basic/language-reference/xmldoc/remarks.md)를 사용하여 형식 설명에 보충 정보를 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-109">Use [\<remarks>](../../../visual-basic/language-reference/xmldoc/remarks.md) to add supplemental information to a type description.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="e0f31-107">설명</span><span class="sxs-lookup"><span data-stu-id="e0f31-107">Remarks</span></span>  
+ <span data-ttu-id="e0f31-108">사용 된 `<summary>` 형식 또는 형식 멤버를 설명 하는 태그입니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-108">Use the `<summary>` tag to describe a type or a type member.</span></span> <span data-ttu-id="e0f31-109">[\<remarks>](../../../visual-basic/language-reference/xmldoc/remarks.md)를 사용하여 형식 설명에 보충 정보를 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-109">Use [\<remarks>](../../../visual-basic/language-reference/xmldoc/remarks.md) to add supplemental information to a type description.</span></span>  
   
- <span data-ttu-id="75c7f-110">에 대 한 텍스트는 `<summary>` 태그가 유일한 소스 intellisense에서 유형에 대 한 정보는이 고 개체 브라우저에도 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-110">The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser.</span></span> <span data-ttu-id="75c7f-111">개체 브라우저에 대 한 정보를 참조 하십시오. [코드 구조 보기](/visualstudio/ide/viewing-the-structure-of-code)합니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-111">For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).</span></span>  
+ <span data-ttu-id="e0f31-110">에 대 한 텍스트는 `<summary>` 태그는 IntelliSense의 형식에 대 한 정보의 원본 및 개체 브라우저에도 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-110">The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser.</span></span> <span data-ttu-id="e0f31-111">개체 브라우저에 대 한 정보를 참조 하세요 [코드 구조 보기](/visualstudio/ide/viewing-the-structure-of-code)합니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-111">For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).</span></span>  
   
- <span data-ttu-id="75c7f-112">[/doc](../../../visual-basic/reference/command-line-compiler/doc.md)로 컴파일하여 문서 주석을 파일로 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-112">Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.</span></span>  
+ <span data-ttu-id="e0f31-112">[/doc](../../../visual-basic/reference/command-line-compiler/doc.md)로 컴파일하여 문서 주석을 파일로 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-112">Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="75c7f-113">예제</span><span class="sxs-lookup"><span data-stu-id="75c7f-113">Example</span></span>  
- <span data-ttu-id="75c7f-114">사용 하 여이 예제는 `<summary>` 태그를 설명 하는 `ResetCounter` 메서드 및 `Counter` 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="75c7f-114">This example uses the `<summary>` tag to describe the `ResetCounter` method and `Counter` property.</span></span>  
+## <a name="example"></a><span data-ttu-id="e0f31-113">예제</span><span class="sxs-lookup"><span data-stu-id="e0f31-113">Example</span></span>  
+ <span data-ttu-id="e0f31-114">이 예제에서는 합니다 `<summary>` 태그를 설명 하는 `ResetCounter` 메서드 및 `Counter` 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="e0f31-114">This example uses the `<summary>` tag to describe the `ResetCounter` method and `Counter` property.</span></span>  
   
  [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/summary_1.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="75c7f-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="75c7f-115">See Also</span></span>  
- [<span data-ttu-id="75c7f-116">XML 주석 태그</span><span class="sxs-lookup"><span data-stu-id="75c7f-116">XML Comment Tags</span></span>](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+## <a name="see-also"></a><span data-ttu-id="e0f31-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e0f31-115">See Also</span></span>  
+ [<span data-ttu-id="e0f31-116">XML 주석 태그</span><span class="sxs-lookup"><span data-stu-id="e0f31-116">XML Comment Tags</span></span>](../../../visual-basic/language-reference/xmldoc/index.md)
