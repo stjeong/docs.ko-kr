@@ -36,12 +36,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-ms.openlocfilehash: a33e058b41629a2f01f2162dadd7a5f965a82548
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: c13bdc47568aa8bbd934bb2b86410e17bbc485dc
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925555"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43397366"
 ---
 # <a name="generic-types-in-visual-basic-visual-basic"></a>Visual Basic의 제네릭 형식(Visual Basic)
 *제네릭 형식* 은 다양한 데이터 형식에 대해 동일한 기능을 수행하도록 조정되는 단일 프로그래밍 요소입니다. 제네릭 클래스 또는 프로시저를 정의할 때는 해당 기능을 수행하고자 하는 각 데이터 형식마다 별도의 버전을 정의할 필요가 없습니다.  
@@ -158,4 +158,4 @@ ms.locfileid: "42925555"
  [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
  [Object 데이터 형식](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
  [공 분산 및 반공 분산](../../concepts/covariance-contravariance/index.md)  
- [반복기](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)
+ [반복기](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)

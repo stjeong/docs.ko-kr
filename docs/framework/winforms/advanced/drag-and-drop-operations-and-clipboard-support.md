@@ -6,12 +6,12 @@ helpviewer_keywords:
 - drag and drop [Windows Forms], Windows Forms
 - Clipboard [Windows Forms], Windows Forms
 ms.assetid: 7cce79b6-5835-46fd-b690-73f12ad368b2
-ms.openlocfilehash: 05cc79abdeb41cd3bfb7db21ebb206eb309ad5d8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c2bb3c24298ffe5308af03c5af5bae697a22c33b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33522574"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43398634"
 ---
 # <a name="drag-and-drop-operations-and-clipboard-support"></a>끌어서 놓기 작업 및 클립보드 지원
 일련의 이벤트, 특히 <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragLeave> 및 <xref:System.Windows.Forms.Control.DragDrop> 이벤트를 처리하여 Windows 기반 응용 프로그램에서 사용자 끌어서 놓기 작업을 사용하도록 설정할 수 있습니다.  
@@ -42,4 +42,4 @@ ms.locfileid: "33522574"
  끌기 작업을 시작하는 데 중요한 메서드의 복잡성을 설명합니다.  
   
  <xref:System.Windows.Forms.Clipboard>  
- 또한 참조 [하는 방법: 활성 MDI 자식으로 데이터 전송](http://msdn.microsoft.com/library/y0hkh2c8\(v=vs.110\))합니다.
+ 도 참조 하세요 [방법: 활성 MDI 자식으로 데이터 전송](https://msdn.microsoft.com/library/y0hkh2c8\(v=vs.110\))합니다.

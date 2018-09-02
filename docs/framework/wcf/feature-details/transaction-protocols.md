@@ -2,20 +2,20 @@
 title: 트랜잭션 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 8841a9cf414ae94da7e63bd7312a3c541ab6de1b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2e4f464d88a63a0aad17982d0329971de4fc5a07
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33508444"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43398822"
 ---
 # <a name="transaction-protocols"></a>트랜잭션 프로토콜
 Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination 프로토콜을 구현 합니다.  
   
 |사양/문서|버전|링크|  
 |-----------------------------|-------------|----------|  
-|WS-Coordination|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96104](http://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96079](http://go.microsoft.com/fwlink/?LinkId=96079)|  
-|WS-AtomicTransaction|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96080](http://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> http://go.microsoft.com/fwlink/?LinkId=96081|  
+|WS-Coordination|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96104](https://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|WS-AtomicTransaction|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081|  
   
  이러한 프로토콜 사양에서의 상호 운용성은 응용 프로그램 간 및 트랜잭션 관리자 간 이렇게 두 가지 수준에서 필요합니다(다음 그림 참조) 사양은 두 가지 수준의 상호 운용성을 위한 메시지 형식 및 메시지 교환을 상세하게 설명합니다. 응용 프로그램 간의 교환을 위한 보안, 안정성 및 인코딩은 일반적인 응용 프로그램 교환을 위해 수행되는 것과 같은 방식으로 적용됩니다. 그러나 트랜잭션 관리자 간의 상호 운용성을 위해서는 특정한 바인딩에 대한 동의가 필요합니다. 이러한 부분은 일반적으로 사용자가 구성하지 않기 때문입니다.  
   
@@ -23,7 +23,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
  다음 그림에서는 두 개의 트랜잭션 관리자(트랜잭션 관리자 1, 트랜잭션 관리자 2)와 두 개의 응용 프로그램(응용 프로그램 1, 응용 프로그램 2) 간의 상호 운용성에 대해 설명합니다.  
   
- ![트랜잭션 프로토콜](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "했지만")  
+ ![트랜잭션 프로토콜](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
   
  한 명의 개시자(I)와 한 명의 참가자(P)가 있는 일반적인 WS-Coordination/WS-Atomic Transaction 시나리오를 예로 들어 봅니다. 개시자와 참가자는 둘 다 트랜잭션 관리자(각각 ITM과 PTM)를 가집니다. 이 항목에서는 2단계 커밋을 2PC라고 합니다.  
   
@@ -53,22 +53,22 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
 -   응용 프로그램 메시지  
   
- 처음 세 개의 메시지 클래스는 트랜잭션 관리자 메시지로 간주되며, 해당 바인딩 구성은 이 항목의 뒷부분에 있는 "응용 프로그램 메시지 교환"에서 설명합니다. 네 번째 메시지는 응용 프로그램 간 메시지이며, 이 항목의 뒷부분에 있는 "메시지 예제" 단원에서 설명합니다. 이러한 각 클래스에 대 한 WCF에서 사용 되는 프로토콜 바인딩에 대해 설명 합니다.  
+ 처음 세 개의 메시지 클래스는 트랜잭션 관리자 메시지로 간주되며, 해당 바인딩 구성은 이 항목의 뒷부분에 있는 "응용 프로그램 메시지 교환"에서 설명합니다. 네 번째 메시지는 응용 프로그램 간 메시지이며, 이 항목의 뒷부분에 있는 "메시지 예제" 단원에서 설명합니다. 이 섹션에서는 이러한 각 클래스에 대 한 WCF에서 사용 된 프로토콜 바인딩을 설명 합니다.  
   
  다음 XML 네임스페이스 및 관련 접두사는 이 문서 전체에서 사용됩니다.  
   
 |접두사|버전|네임스페이스 URI|  
 |------------|-------------|-------------------|  
-|s11||[http://go.microsoft.com/fwlink/?LinkId=96014](http://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|이전 버전 1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96022](http://go.microsoft.com/fwlink/?LinkId=96022)|  
-|wscoor|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96078](http://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96079](http://go.microsoft.com/fwlink/?LinkId=96079)|  
-|wsat|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96080](http://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96081](http://go.microsoft.com/fwlink/?LinkId=96081)|  
-|t|Pre-1.3<br /><br /> 1.3|[http://go.microsoft.com/fwlink/?LinkId=96082](http://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96100](http://go.microsoft.com/fwlink/?LinkId=96100)|  
-|o||[http://go.microsoft.com/fwlink/?LinkId=96101](http://go.microsoft.com/fwlink/?LinkId=96101)|  
-|xsd||[http://go.microsoft.com/fwlink/?LinkId=96102](http://go.microsoft.com/fwlink/?LinkId=96102)|  
+|s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
+|wsa|이전 버전 1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
+|wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
+|t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
+|o||[https://go.microsoft.com/fwlink/?LinkId=96101](https://go.microsoft.com/fwlink/?LinkId=96101)|  
+|xsd||[https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)|  
   
 ## <a name="transaction-manager-bindings"></a>트랜잭션 관리자 바인딩  
- R1001: 트랜잭션 관리자가 WS-AT 1.0 트랜잭션에 참가 하 해야 SOAP 1.1과 Ws-addressing 2004/08을 사용 Ws-atomic Transaction 및 Ws-coordination 메시지 교환을 합니다.  
+ R1001: 트랜잭션 관리자는 WS-AT 1.0 트랜잭션에 참여 하 고 사용 해야 SOAP 1.1과 Ws-addressing 2004/08 Ws-atomic Transaction 및 Ws-coordination 메시지 교환을 위해.  
   
  R1002: WS-AT 1.1 트랜잭션에 참여 중인 트랜잭션 관리자는 WS-Atomic Transaction 및 WS-Coordination 메시지 교환을 위해 SOAP 1.1과 WS-Addressing 2005/08을 사용해야 합니다.  
   
@@ -85,7 +85,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 -   B1112: DNS는 X.509 주체 이름을 확인한 시스템에서 각 발신자-수신자 쌍 간에 작동해야 합니다.  
   
 #### <a name="activation-and-registration-binding-configuration"></a>바인딩 구성 활성화 및 등록  
- WCF는 HTTPS를 통한 상관 관계와 함께 요청/회신 이중 바인딩이 필요 합니다. 요청/회신 메시지 교환 패턴의 상관 관계 및 설명에 대한 자세한 내용은 8단원 WS-Atomic Transaction을 참조하십시오.  
+ WCF는 HTTPS를 통해 상관 관계를 사용 하 여 요청/회신 이중 바인딩이 필요합니다. 요청/회신 메시지 교환 패턴의 상관 관계 및 설명에 대한 자세한 내용은 8단원 WS-Atomic Transaction을 참조하십시오.  
   
 #### <a name="2pc-protocol-binding-configuration"></a>2PC 프로토콜 바인딩 구성  
  WCF는 HTTPS를 통해 단방향 (데이터 그램) 메시지를 지원합니다. 메시지 간의 상관 관계는 구현 정보로 유지됩니다.  
@@ -101,7 +101,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 #### <a name="activation-message-binding-configuration"></a>활성화 메시지 바인딩 구성  
  활성화 메시지는 일반적으로 응용 프로그램과 해당 로컬 트랜잭션 관리자 간에 발생하기 때문에 대개 상호 운용성에 관여하지 않습니다.  
   
- B1221: WCF 이중 HTTPS 바인딩을 사용 하 여 (에 설명 된 [메시징 프로토콜](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) 활성화 메시지에 대 한 합니다. 요청 및 회신 메시지는 WS-AT 1.0용 WS-Addressing 2004/08 및 WS-AT 1.1용 WS-Addressing 2005/08을 사용하여 상호 관련됩니다.  
+ B1221: WCF에서는 이중 HTTPS 바인딩 (에서 설명한 [메시징 프로토콜](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) 활성화 메시지에 대 한 합니다. 요청 및 회신 메시지는 WS-AT 1.0용 WS-Addressing 2004/08 및 WS-AT 1.1용 WS-Addressing 2005/08을 사용하여 상호 관련됩니다.  
   
  8단원 WS-Atomic Transaction 사양에서는 상관 관계 및 메시지 교환 패턴에 대해 좀 더 자세히 설명합니다.  
   
@@ -109,21 +109,21 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
 -   R1223: 기존 코디네이션 컨텍스트 내에서 활성화가 수행되면 기존 컨텍스트와 연관된 `t:IssuedTokens`과 함께 `SecurityContextToken` 헤더가 `CreateCoordinationContext` 메시지에서 이동해야 합니다.  
   
- 새 `t:IssuedTokens` 에 나가는 연결에 대 한 헤더를 생성 해야 `wscoor:CreateCoordinationContextResponse` 메시지입니다.  
+ 새 `t:IssuedTokens` 나가는 연결에 대 한 헤더를 생성 해야 `wscoor:CreateCoordinationContextResponse` 메시지입니다.  
   
 #### <a name="registration-message-binding-configuration"></a>등록 메시지 바인딩 구성  
- B1231: WCF 이중 HTTPS 바인딩을 사용 하 여 (에 설명 된 [메시징 프로토콜](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). 요청 및 회신 메시지는 WS-AT 1.0용 WS-Addressing 2004/08 및 WS-AT 1.1용 WS-Addressing 2005/08을 사용하여 상호 관련됩니다.  
+ B1231: WCF에서는 이중 HTTPS 바인딩 (에서 설명한 [메시징 프로토콜](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). 요청 및 회신 메시지는 WS-AT 1.0용 WS-Addressing 2004/08 및 WS-AT 1.1용 WS-Addressing 2005/08을 사용하여 상호 관련됩니다.  
   
  8단원 WS-AtomicTransaction에서는 메시지 교환 패턴의 상관 관계 및 설명에 대해 좀 더 자세히 설명합니다.  
   
- R1232: 나가는 `wscoor:Register` 메시지를 사용 해야 합니다는 `IssuedTokenOverTransport` 에 설명 된 인증 모드 [보안 프로토콜](../../../../docs/framework/wcf/feature-details/security-protocols.md)합니다.  
+ R1232: 보내는 `wscoor:Register` 메시지를 사용 해야 합니다 `IssuedTokenOverTransport` 에 설명 된 인증 모드 [보안 프로토콜](../../../../docs/framework/wcf/feature-details/security-protocols.md)합니다.  
   
- `wsse:Timestamp` 요소를 사용 하 여 서명 해야 합니다는 `SecurityContextToken``STx` 발급 합니다. 이 서명은 특정 트랜잭션과 연관된 토큰을 소유했음을 나타내며, 트랜잭션에 등록된 참가자를 인증하는 데 사용합니다. RegistrationResponse 메시지는 HTTPS를 통해 다시 보내집니다.  
+ 합니다 `wsse:Timestamp` 요소를 사용 하 여 서명 해야 합니다는 `SecurityContextToken``STx` 발급 합니다. 이 서명은 특정 트랜잭션과 연관된 토큰을 소유했음을 나타내며, 트랜잭션에 등록된 참가자를 인증하는 데 사용합니다. RegistrationResponse 메시지는 HTTPS를 통해 다시 보내집니다.  
   
 #### <a name="2pc-protocol-binding-configuration"></a>2PC 프로토콜 바인딩 구성  
  WCF는 HTTPS를 통해 단방향 (데이터 그램) 메시지를 지원합니다. 메시지 간의 상관 관계는 구현 정보로 유지됩니다.  
   
- B1241: 구현은 지원 해야 `wsa:ReferenceParameters` WCF의 2PC 메시지 상관 관계를 달성 하기 위해 Ws-addressing에서 설명 된 대로 합니다.  
+ B1241: 구현에서 지원 해야 `wsa:ReferenceParameters` WCF의 2PC 메시지 상관 관계를 달성 하기 위해 Ws-addressing에서 설명 된 대로 합니다.  
   
 ## <a name="application-message-exchange"></a>응용 프로그램 메시지 교환  
  바인딩이 다음 보안 요구 사항을 만족하는 경우, 응용 프로그램에서는 응용 프로그램 간 메시지에 대해 특정 바인딩을 자유롭게 사용할 수 있습니다.  
@@ -132,9 +132,9 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
 -   R2002: `t:IssuedToken`의 무결성 및 기밀성이 제공되어야 합니다.  
   
- `CoordinationContext` 헤더에는 `wscoor:Identifier`가 포함됩니다. 정의 하는 동안 `xsd:AnyURI` 절대 곡선과 상대 Uri의 값만 다르고 WCF 지원만 `wscoor:Identifiers`는 절대 Uri입니다.  
+ `CoordinationContext` 헤더에는 `wscoor:Identifier`가 포함됩니다. 정의 하는 동안 `xsd:AnyURI` 절대 및 상대 Uri 사용할 수 있도록 WCF 지원 `wscoor:Identifiers`는 절대 Uri입니다.  
   
- B2003: 경우는 `wscoor:Identifier` 의 `wscoor:CoordinationContext` 가 상대 URI 이면 트랜잭션 WCF 서비스에서 오류가 반환 됩니다.  
+ B2003: 경우 합니다 `wscoor:Identifier` 의 `wscoor:CoordinationContext` 가 상대 URI 인 트랜잭션 WCF 서비스에서 오류가 반환 됩니다.  
   
 ## <a name="message-examples"></a>메시지 예제  
   
@@ -354,7 +354,7 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 ### <a name="registration-messages"></a>등록 메시지  
  다음 메시지는 등록 메시지입니다.  
   
-#### <a name="register-with-wscoor-10"></a>WSCoor 1.0로 등록  
+#### <a name="register-with-wscoor-10"></a>WSCoor 1.0 사용 하 여 등록  
   
 ```xml  
 <s:Envelope>  
@@ -544,7 +544,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 ### <a name="two-phase-commit-protocol-messages"></a>2단계 커밋 프로토콜 메시지  
  다음 메시지는 2PC(2단계 커밋) 프로토콜과 관련됩니다.  
   
-#### <a name="commit-with-wsat-10"></a>WSAT 1.0로 커밋  
+#### <a name="commit-with-wsat-10"></a>WSAT 1.0 사용 하 여 커밋  
   
 ```xml  
 <s:Envelope>  

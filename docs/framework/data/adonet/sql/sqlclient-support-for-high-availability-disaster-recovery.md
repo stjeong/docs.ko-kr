@@ -2,19 +2,19 @@
 title: 고가용성 및 재해 복구에 대한 SqlClient 지원
 ms.date: 03/30/2017
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
-ms.openlocfilehash: 001b99d7a7ec7dd7e483887ceeb0b2563a46da0a
-ms.sourcegitcommit: ed7b4b9b77d35e94a35a2634e8c874f46603fb2b
+ms.openlocfilehash: 258922a1541c4594ce2b4673d4d68c279087aef2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948526"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395857"
 ---
 # <a name="sqlclient-support-for-high-availability-disaster-recovery"></a>고가용성 및 재해 복구에 대한 SqlClient 지원
 이 항목에서는 고가용성, 재해 복구, AlwaysOn 가용성 그룹에 대한 SqlClient 지원([!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]에 추가됨)에 대해 설명합니다.  SQL Server 2012 AlwaysOn 가용성 그룹 기능이 추가 되었습니다. AlwaysOn 가용성 그룹에 대 한 자세한 내용은 SQL Server 온라인 설명서를 참조 합니다.  
   
- 이제의 가용성 그룹 수신기를 지정할 수 있습니다 (고가용성, 재해 복구) 가용성 그룹 (AG) 또는 연결 속성에 SQL Server 2012 장애 조치 클러스터 인스턴스. SqlClient 응용 프로그램이 장애 조치되는 AlwaysOn 데이터베이스에 연결되면 원래 연결이 끊어지고 응용 프로그램이 장애 조치 후 작업을 계속할 수 있도록 새 연결을 열어야 합니다.  
+ 이제 가용성 그룹 수신기를 지정할 수 있습니다 (고가용성, 재해 복구) 가용성 그룹 (AG) 또는 연결 속성에 SQL Server 2012 장애 조치 클러스터 인스턴스. SqlClient 응용 프로그램이 장애 조치되는 AlwaysOn 데이터베이스에 연결되면 원래 연결이 끊어지고 응용 프로그램이 장애 조치 후 작업을 계속할 수 있도록 새 연결을 열어야 합니다.  
   
- 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스를 연결 하지 않는 경우와 여러 IP 주소가 호스트 이름에 연결 되어 있는 경우 SqlClient가 DNS 항목과 연결 된 모든 IP 주소 순차적으로 반복 합니다. 이 경우 DNS 서버에서 반환된 첫 번째 IP 주소가 NIC(네트워크 인터페이스 카드)에 바인딩되지 않으면 시간이 많이 걸릴 수 있습니다. SqlClient 병렬로 모든 IP 주소에 대 한 연결을 시도 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 연결할 때 연결 시도 성공 하는 경우 드라이버는 보류 중인 모든 연결을 삭제 및 시도합니다.  
+ 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스를 연결 하지 및 여러 IP 주소는 호스트 이름에 연결 하는 경우 SqlClient가 DNS 항목과 연결 된 모든 IP 주소 순차적으로 반복 합니다. 이 경우 DNS 서버에서 반환된 첫 번째 IP 주소가 NIC(네트워크 인터페이스 카드)에 바인딩되지 않으면 시간이 많이 걸릴 수 있습니다. 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 연결할 때 SqlClient 병렬로 모든 IP 주소에 대 한 연결을 설정 하 고 연결 시도가 성공 하면 드라이버는 보류 중인 모든 연결을 삭제 시도합니다.  
   
 > [!NOTE]
 >  연결 제한 시간을 늘리고 연결 재시도 논리를 구현하면 응용 프로그램이 가용성 그룹에 연결될 가능성이 높아집니다. 그리고 장애 조치 때문에 연결되지 못할 수 있으므로 다시 연결될 때까지 실패한 연결을 다시 시도하는 연결 재시도 논리를 구현해야 합니다.  
@@ -32,26 +32,26 @@ ms.locfileid: "36948526"
 2.  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
->  설정 `MultiSubnetFailover` 를 `true` 으로 필요 하지 않습니다 [!INCLUDE[net_v461](../../../../../includes/net-v461-md.md)] 또는 이후 버전입니다.
+>  설정 `MultiSubnetFailover` 하 `true` 필요 하지 않습니다 [!INCLUDE[net_v461](../../../../../includes/net-v461-md.md)] 이상 버전.
   
 ## <a name="connecting-with-multisubnetfailover"></a>MultiSubnetFailover를 사용하여 연결  
- 항상 지정 `MultiSubnetFailover=True` SQL Server 2012 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 연결할 때. `MultiSubnetFailover` 모든 가용성 그룹 및 장애 조치 클러스터 인스턴스 또는 하 고 SQL Server 2012에서 단일 및 다중 서브넷 AlwaysOn 토폴로지에 대 한 장애 조치 시간을 크게 줄일 보다 빠르게 장애 조치할 수 있도록 합니다. 다중 서브넷 장애 조치가 수행되는 동안 클라이언트는 병렬로 연결을 시도합니다. 서브넷 장애 조치가 수행되는 동안 적극적으로 TCP 연결을 다시 시도합니다.  
+ 항상 지정 `MultiSubnetFailover=True` SQL Server 2012 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 연결할 때. `MultiSubnetFailover` 모든 가용성 그룹 및 또는 장애 조치 클러스터 인스턴스에 SQL Server 2012에는 단일 및 다중 서브넷 AlwaysOn 토폴로지에 대 한 장애 조치 시간을 크게 줄일 보다 빠르게 장애 조치할 수 있도록 합니다. 다중 서브넷 장애 조치가 수행되는 동안 클라이언트는 병렬로 연결을 시도합니다. 서브넷 장애 조치가 수행되는 동안 적극적으로 TCP 연결을 다시 시도합니다.  
   
- `MultiSubnetFailover` 응용 프로그램이 SQL Server 2012 장애 조치 클러스터 인스턴스 또는 가용성 그룹에 배포 되 고 SqlClient가 시도 하 여 주 SQL Server 인스턴스에서 데이터베이스에 연결을 시도 연결 속성을 나타냅니다 모든 IP 주소에 연결 합니다. 연결에 대해 `MultiSubnetFailover=True`가 지정되어 있으면 클라이언트는 운영 체제의 기본 TCP 재전송 간격보다 빠르게 TCP 연결을 다시 시도합니다. 따라서 AlwaysOn 가용성 그룹 또는 AlwaysOn 장애 조치 클러스터 인스턴스의 장애 조치 후 더 빠르게 다시 연결할 수 있으며, 이는 단일 및 다중 서브넷 가용성 그룹 또는 장애 조치 클러스터 인스턴스 모두에 적용됩니다.  
+ `MultiSubnetFailover` 는 응용 프로그램이 가용성 그룹 또는 SQL Server 2012 장애 조치 클러스터 인스턴스에 배포 되 고 SqlClient는 하려고 시도 하 여 주 SQL Server 인스턴스에서 데이터베이스에 연결 하려고 연결 속성을 나타냅니다 모든 IP 주소에 연결 합니다. 연결에 대해 `MultiSubnetFailover=True`가 지정되어 있으면 클라이언트는 운영 체제의 기본 TCP 재전송 간격보다 빠르게 TCP 연결을 다시 시도합니다. 따라서 AlwaysOn 가용성 그룹 또는 AlwaysOn 장애 조치 클러스터 인스턴스의 장애 조치 후 더 빠르게 다시 연결할 수 있으며, 이는 단일 및 다중 서브넷 가용성 그룹 또는 장애 조치 클러스터 인스턴스 모두에 적용됩니다.  
   
  SqlClient의 연결 문자열 키워드에 대한 자세한 내용은 <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>을 참조하십시오.  
   
- 지정 `MultiSubnetFailover=True` 때 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스 이외의 대상에 연결할 성능에 부정적인 영향이 있으며 지원 되지 않습니다.  
+ 지정 `MultiSubnetFailover=True` 경우 가용성 그룹 수신기 또는 SQL Server 2012 장애 조치 클러스터 인스턴스 이외의 항목에 연결할 성능이 저하 될 수 있습니다 하 고 지원 되지 않습니다.  
   
- SQL Server 2012 장애 조치 클러스터 인스턴스 또는 가용성 그룹에서 서버에 연결 하려면 다음 지침을 따르세요.  
+ SQL Server 2012 장애 조치 클러스터 인스턴스 또는 가용성 그룹에서 서버에 연결 하려면 다음 지침을 따르십시오.  
   
 -   단일 서브넷 또는 다중 서브넷에 연결할 때 `MultiSubnetFailover` 연결 속성을 사용합니다. 그러면 두 경우 모두 성능이 향상됩니다.  
   
 -   가용성 그룹에 연결하려면 가용성 그룹의 가용성 그룹 수신기를 연결 문자열의 서버로 지정합니다.  
   
--   SQL Server에 연결 하 여 64 개 이상의 IP 주소로 구성 된 인스턴스는 연결 오류가 발생 합니다.  
+-   SQL Server에 연결 하 여 64 개 IP 주소를 사용 하 여 구성 하는 인스턴스 연결 오류가 발생 합니다.  
   
--   사용 하는 응용 프로그램의 동작은 `MultiSubnetFailover` 연결 속성이 인증 형식에 따라 영향을 받지 않습니다: SQL Server 인증, Kerberos 인증 또는 Windows 인증.  
+-   사용 하는 응용 프로그램의 동작은 `MultiSubnetFailover` 연결 속성이 인증의 유형에 따라 영향을 받지 않습니다: SQL Server 인증, Kerberos 인증 또는 Windows 인증입니다.  
   
 -   장애 조치 시간을 수용하고 응용 프로그램 연결 재시도를 줄이도록 `Connect Timeout` 값을 늘립니다.  
   
@@ -68,7 +68,7 @@ ms.locfileid: "36948526"
  주 복제본이 읽기 전용 작업을 거부하도록 구성되어 있고 연결 문자열에 `ApplicationIntent=ReadOnly`가 포함되어 있으면 연결이 실패합니다.  
   
 ## <a name="upgrading-to-use-multi-subnet-clusters-from-database-mirroring"></a>데이터베이스 미러링에서 다중 서브넷 클러스터를 사용하도록 업그레이드  
- 연결 문자열에 <xref:System.ArgumentException> 및 `MultiSubnetFailover` 연결 키워드가 없거나 `Failover Partner`이고 TCP 이외의 프로토콜을 사용하는 경우 연결 오류(`MultiSubnetFailover=True`)가 발생합니다. 오류 (<xref:System.Data.SqlClient.SqlException>) 하는 경우에 발생 합니다 `MultiSubnetFailover` 사용 되 고 SQL Server에서 데이터베이스 미러링 쌍의 일부임을 나타내는 장애 조치 파트너 응답을 반환 합니다.  
+ 연결 문자열에 <xref:System.ArgumentException> 및 `MultiSubnetFailover` 연결 키워드가 없거나 `Failover Partner`이고 TCP 이외의 프로토콜을 사용하는 경우 연결 오류(`MultiSubnetFailover=True`)가 발생합니다. 오류 (<xref:System.Data.SqlClient.SqlException>) 경우에 발생 `MultiSubnetFailover` 는 SQL Server 데이터베이스 미러링 쌍의 일부임을 나타내는 장애 조치 파트너 응답을 반환 합니다.  
   
  현재 데이터베이스 미러링을 사용하는 SqlClient 응용 프로그램을 다중 서브넷 시나리오로 업그레이드하는 경우 `Failover Partner` 연결 속성을 제거하고 해당 속성을 `MultiSubnetFailover`로 설정된 `True`로 바꾼 다음 연결 문자열의 서버 이름을 가용성 그룹 수신기로 바꿉니다. 연결 문자열에 `Failover Partner` 및 `MultiSubnetFailover=True`를 사용하는 경우 드라이버에서 오류가 발생합니다. 그러나 연결 문자열에 `Failover Partner` 및 `MultiSubnetFailover=False` 또는 `ApplicationIntent=ReadWrite`를 사용하는 경우 응용 프로그램에서 데이터베이스 미러링을 사용합니다.  
   
@@ -98,4 +98,4 @@ ms.locfileid: "36948526"
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 기능 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

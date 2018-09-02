@@ -9,11 +9,11 @@ ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 4c77d063d64354bf4693ce82509f36be9d2e5b0c
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934481"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43399779"
 ---
 # <a name="-doc"></a>-문서
 XML 파일에 대해 문서 주석을 처리합니다.  
@@ -52,7 +52,7 @@ XML 파일에 대해 문서 주석을 처리합니다.
 |---|  
 |1.  **솔루션 탐색기**에서 프로젝트를 선택합니다. **프로젝트** 메뉴에서 **속성**을 클릭합니다. <br />2.  **컴파일** 탭을 클릭합니다.<br />3.  값을 설정 합니다 **XML 문서 파일 생성** 상자입니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  참조 [XML 사용 하 여 코드 문서화](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md) 샘플입니다.  
   
 ## <a name="see-also"></a>참고 항목  

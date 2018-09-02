@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ad20cf4528f5ca7d23f80570cc34712d33b74d93
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: aaf5103dfee366466ff701ce3669bbabb97233ac
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398081"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43397194"
 ---
 # <a name="lttypegt-element-net-native"></a>&lt;유형&gt; 요소(.NET 네이티브)
 클래스 또는 구조체와 같은 특정 형식에 런타임 정책을 적용합니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "33398081"
  제네릭 형식의 경우 해당 이름은 억음 악센트 기호(\`)와 제네릭 매개 변수의 수가 차례로 붙는 형식으로 데코레이팅됩니다. 예를 들어 <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> 클래스 `<Type>` 요소의 `Name` 특성은 `Name="System.Collections.Generic.List`1”`로 표시됩니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 리플렉션을 사용하여 <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> 클래스의 필드, 속성 및 메서드에 대한 정보를 표시합니다. 예제의 `b` 변수는 [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 컨트롤입니다. 이 예제에서는 형식 정보만 검색하므로 메타데이터 사용 가능 여부는 `Browse` 정책 설정에 의해 제어됩니다.  
+ 다음 예제에서는 리플렉션을 사용하여 <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> 클래스의 필드, 속성 및 메서드에 대한 정보를 표시합니다. 예제의 `b` 변수는 [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 컨트롤입니다. 이 예제에서는 형식 정보만 검색하므로 메타데이터 사용 가능 여부는 `Browse` 정책 설정에 의해 제어됩니다.  
   
  [!code-csharp[ProjectN_Reflection#3](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/browsegenerictype1.cs#3)]  
   
@@ -116,7 +116,7 @@ ms.locfileid: "33398081"
 ```  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 리플렉션을 사용하여 <xref:System.Reflection.PropertyInfo> 속성을 나타내는 <xref:System.String.Chars%2A?displayProperty=nameWithType> 개체를 검색합니다. 그런 다음 <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드를 사용하여 문자열에서 7번째 문자의 값을 검색하고 문자열의 모든 문자를 표시합니다. 예제의 `b` 변수는 [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 컨트롤입니다.  
+ 다음 예제에서는 리플렉션을 사용하여 <xref:System.Reflection.PropertyInfo> 속성을 나타내는 <xref:System.String.Chars%2A?displayProperty=nameWithType> 개체를 검색합니다. 그런 다음 <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드를 사용하여 문자열에서 7번째 문자의 값을 검색하고 문자열의 모든 문자를 표시합니다. 예제의 `b` 변수는 [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 컨트롤입니다.  
   
  [!code-csharp[ProjectN_Reflection#1](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/propertyinfo1.cs#1)]  
   

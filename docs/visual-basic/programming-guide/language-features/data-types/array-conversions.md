@@ -13,11 +13,11 @@ helpviewer_keywords:
 - object arrays
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 ms.openlocfilehash: 93e6365a70f52f730b016cd4d4ac9382baeeba55
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43255152"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396551"
 ---
 # <a name="array-conversions-visual-basic"></a>배열 변환(Visual Basic)
 다음 조건이 충족 되는 배열 형식 다른 배열 형식으로 변환할 수 있습니다.  

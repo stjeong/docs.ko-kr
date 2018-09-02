@@ -3,11 +3,11 @@ title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
 ms.openlocfilehash: 730b1188a95d0e35d7431d43884e867e5520585e
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930178"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396407"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 서비스 호스트를 생성하는 데 사용되는 팩터리를 호스트할 서비스 및 .svc 파일에 제공된 호스팅 코드에 액세스하거나 이를 컴파일하는 데 필요한 다른 프로그래밍 요소에 연결합니다.  
@@ -55,7 +55,7 @@ CodeBehind = "CodeBehind"%>
   
  예를 들어, AJAX 사용 끝점을 사용 하도록 설정 하려면 `MyService`, 지정는 <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> 의 값에 대 한는 `Factory` 기본값 대신 특성 <xref:System.ServiceModel.Activation.ServiceHostFactory>의 [ @ServiceHost ](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) 으로 지시문 다음 예제에 나와 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 <% @ServiceHost   

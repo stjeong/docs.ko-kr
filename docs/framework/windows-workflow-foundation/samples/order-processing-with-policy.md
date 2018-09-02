@@ -2,12 +2,12 @@
 title: 정책을 사용한 주문 처리
 ms.date: 03/30/2017
 ms.assetid: 66833724-dc36-4fad-86b0-59ffeaa3ba6a
-ms.openlocfilehash: 15e274a7a513a3208e3a54575dc354310743b731
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b927d8e7090f96b22c0510f9651070ab999c91be
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519420"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43398372"
 ---
 # <a name="order-processing-with-policy"></a>정책을 사용한 주문 처리
 Order Processing Policy 샘플에서는 Windows WF(Workflow Foundation )의 [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)]에 도입된 몇 가지 주요 기능을 보여 줍니다. 다음은 WF 규칙 엔진에 새로 추가된 기능입니다.  
@@ -24,7 +24,7 @@ Order Processing Policy 샘플에서는 Windows WF(Workflow Foundation )의 [!IN
  이 샘플에서는 번호가 매겨진 사용 가능한 항목 목록으로 구성된 고객 주문과 우편 번호를 입력하는 `OrderProcessingPolicy` 프로젝트를 보여 줍니다. 두 항목이 모두 올바르면 주문이 성공적으로 처리되고, 그렇지 않으면 정책에서 오버로드된 `+` 연산자와 미리 정의된 확장 메서드를 사용하여 사용자에게 오류를 알리는 오류 개체를 만듭니다.  
   
 > [!NOTE]
->  확장 메서드에 대 한 자세한 내용은 참조 [C# 버전 3.0 사양](http://go.microsoft.com/fwlink/?LinkId=95402)합니다.  
+>  확장 메서드에 대 한 자세한 내용은 참조 하세요. [C# 버전 3.0 사양](https://go.microsoft.com/fwlink/?LinkId=95402)합니다.  
   
  이 샘플은 다음과 같은 프로젝트로 구성됩니다.  
   
@@ -64,7 +64,7 @@ Order Processing Policy 샘플에서는 Windows WF(Workflow Foundation )의 [!IN
   
          이 규칙은 앞의 두 규칙에 의해 두 `OrderErrorCollection` 개체인 `invalidItemNumErrorCollection`과 `invalidIZipCodeErrorCollection`에 추가된 오류가 있는지 확인합니다. 오류가 있는 경우(`invalidItemNumErrorCollection` 또는 `invalidZipCodeErrorCollection`이 `null`이 아닌 경우) 규칙에서 다음 작업을 수행합니다.  
   
-        1.  호출 하는 오버 로드 된 `+` 연산자의 내용을 복사를 `invalidItemNumErrorCollection` 및 `invalidZipCodeErrorCollection` 에 `invalidOrdersCollection``OrderErrorCollection` 인스턴스.  
+        1.  오버 로드 된 호출 `+` 연산자의 내용을 복사할 `invalidItemNumErrorCollection` 및 `invalidZipCodeErrorCollection` 에 `invalidOrdersCollection``OrderErrorCollection` 인스턴스.  
   
         2.  `PrintOrderErrors`에서 `invalidOrdersCollection` 확장 메서드를 호출하고 `ErrorText`의 모든 `orderError` 개체에서 `invalidOrdersCollection` 속성을 출력합니다.  
   
@@ -140,6 +140,6 @@ Another Order? (Y/N): n
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Rules\Policy\OrderProcessingPolicy`

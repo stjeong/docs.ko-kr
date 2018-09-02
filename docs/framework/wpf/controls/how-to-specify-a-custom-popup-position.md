@@ -7,20 +7,20 @@ dev_langs:
 helpviewer_keywords:
 - Popup control [WPF], specifying custom position
 ms.assetid: 28c24f39-d3aa-4ee2-b950-384b4a5dab92
-ms.openlocfilehash: 8714cfa4f7e5bb0ca157ee9d551392571303f60e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e6e81a6e0819ba3eb39a1c568e6872414e671544
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33551741"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43397234"
 ---
 # <a name="how-to-specify-a-custom-popup-position"></a>방법: 사용자 지정 팝업 위치 지정
-에 대 한 사용자 지정 위치를 지정 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Primitives.Popup> 제어는 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성이로 설정 된 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>합니다.  
+이 예제에 대 한 사용자 지정 위치를 지정 하는 방법을 보여 줍니다를 <xref:System.Windows.Controls.Primitives.Popup> 시기를 제어 합니다 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성이 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>.  
   
 ## <a name="example"></a>예제  
- 때는 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성이 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>, <xref:System.Windows.Controls.Primitives.Popup> 호출의 정의 된 인스턴스는 <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> 위임 합니다. 대상 영역의 왼쪽된 위 모퉁이의 왼쪽된 위 모퉁이 기준으로 가능한 지점 집합을 반환 하는이 대리자는 <xref:System.Windows.Controls.Primitives.Popup>합니다. <xref:System.Windows.Controls.Primitives.Popup> 최상의 가시성을 제공 하는 지점에 배치 됩니다.  
+ 경우는 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성이로 설정 되어 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>, <xref:System.Windows.Controls.Primitives.Popup> 의 정의 된 인스턴스를 호출 합니다 <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> 대리자. 대상 영역의 왼쪽된 위 모퉁이와 왼쪽된 위 모퉁이 있는 가능한 점의 집합을 반환 하는이 대리자는 <xref:System.Windows.Controls.Primitives.Popup>합니다. <xref:System.Windows.Controls.Primitives.Popup> 최상의 가시성을 제공 하는 지점에 배치 됩니다.  
   
- 위치를 정의 하는 방법을 보여 주는 다음 예제는 <xref:System.Windows.Controls.Primitives.Popup> 설정 하 여는 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성을 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>합니다. 만들고 할당 하는 방법을 보여 줍니다는 <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> 배치 하기 위해 대리자는 <xref:System.Windows.Controls.Primitives.Popup>합니다.  두 콜백 대리자 반환 <xref:System.Windows.Controls.Primitives.CustomPopupPlacement> 개체입니다.  경우는 <xref:System.Windows.Controls.Primitives.Popup> 화면 가장자리에 첫 번째 위치에 의해 숨겨져는 <xref:System.Windows.Controls.Primitives.Popup> 두 번째 위치에 배치 됩니다.  
+ 다음 예제에서는 위치를 정의 하는 방법을 보여 줍니다는 <xref:System.Windows.Controls.Primitives.Popup> 설정 하 여 합니다 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성을 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>입니다. 또한 만들고 할당 하는 방법을 보여 줍니다는 <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> 배치 하기 위해 대리자는 <xref:System.Windows.Controls.Primitives.Popup>합니다.  두 콜백 대리자 반환 <xref:System.Windows.Controls.Primitives.CustomPopupPlacement> 개체입니다.  경우는 <xref:System.Windows.Controls.Primitives.Popup> 화면 가장자리에 첫 번째 위치에 의해 숨겨져는 <xref:System.Windows.Controls.Primitives.Popup> 두 번째 위치에 배치 됩니다.  
   
  [!code-xaml[PopupCustomPlacement#CustomPlacement](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml#customplacement)]  
   
@@ -30,7 +30,7 @@ ms.locfileid: "33551741"
  [!code-csharp[PopupCustomPlacement#DelegateDefinition](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegatedefinition)]
  [!code-vb[PopupCustomPlacement#DelegateDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegatedefinition)]  
   
- 전체 샘플을 참조 하십시오. [팝업 배치 샘플](http://go.microsoft.com/fwlink/?LinkID=160032)합니다.  
+ 전체 샘플을 참조 하세요 [Popup 배치 샘플](https://go.microsoft.com/fwlink/?LinkID=160032)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Controls.Primitives.Popup>  

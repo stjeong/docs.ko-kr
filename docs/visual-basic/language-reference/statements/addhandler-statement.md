@@ -1,5 +1,5 @@
 ---
-title: AddHandler 문
+title: AddHandler 문 (Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
 - vb.AddHandlerMethod
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - AddHandler statement [Visual Basic]
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
-ms.openlocfilehash: bc0dce442db9d62b9fbee857b6e711696ad87fb8
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: f731ff150bd901e325726fca5aa682ff1770f979
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936817"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396489"
 ---
 # <a name="addhandler-statement"></a>AddHandler 문
 런타임에 이벤트 처리기를 사용 하 여 이벤트를 연결합니다.  
@@ -41,7 +41,7 @@ AddHandler event, AddressOf eventhandler
 > [!NOTE]
 >  사용자 지정 이벤트에 대 한 합니다 `AddHandler` 문은 호출 이벤트의 `AddHandler` 접근자입니다. 사용자 지정 이벤트에 대 한 자세한 내용은 참조 하세요. [이벤트 연결 문으로](../../../visual-basic/language-reference/statements/event-statement.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
   
 ## <a name="see-also"></a>참고 항목  
