@@ -2,12 +2,12 @@
 title: 스레딩(C#)
 ms.date: 07/20/2015
 ms.assetid: 236d157d-37c0-4ee8-89fc-721e6c596325
-ms.openlocfilehash: 35f0ee3bfd67104d9eaab7c4dde7e35a28a374c5
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: ca5b2b2d38e72d3511a570c22a153e792a27a04a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934703"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43456917"
 ---
 # <a name="threading-c"></a>스레딩(C#)
 스레딩을 사용하면 C# 프로그램에서 동시 처리를 수행할 수 있으므로 한 번에 여러 작업을 진행할 수 있습니다. 예를 들어 스레딩을 사용하여 사용자의 입력을 모니터링하고, 백그라운드 작업을 수행하고, 동시 입력 스트림을 처리할 수 있습니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "42934703"
  이러한 클래스의 일부 또는 모두를 사용하여 여러 스레드 작업을 동기화할 수 있지만, 스레딩에 대한 일부 지원이 C# 언어에서 지원됩니다. 예를 들어 [Lock 문](../../../../csharp/language-reference/keywords/lock-statement.md)은 <xref:System.Threading.Monitor>를 암시적으로 사용하여 동기화 기능을 제공합니다.  
   
 > [!NOTE]
->  [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]부터는 <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 클래스, [PLINQ(병렬 LINQ)](https://msdn.microsoft.com/library/dd460688), <xref:System.Collections.Concurrent?displayProperty=nameWithType> 네임스페이스의 새로운 동시 컬렉션 클래스, 그리고 스레드가 아닌 작업 개념을 기반으로 하는 새로운 프로그래밍 모델로 인해 다중 스레드 프로그래밍이 매우 간소화되었습니다. 자세한 내용은 [병렬 프로그래밍](../../../../../docs/standard/parallel-programming/index.md)을 참조하세요.  
+>  [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]부터는 <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 클래스, [PLINQ(병렬 LINQ)](../../../../standard/parallel-programming/parallel-linq-plinq.md), <xref:System.Collections.Concurrent?displayProperty=nameWithType> 네임스페이스의 새로운 동시 컬렉션 클래스, 그리고 스레드가 아닌 작업 개념을 기반으로 하는 새로운 프로그래밍 모델로 인해 다중 스레드 프로그래밍이 매우 간소화되었습니다. 자세한 내용은 [병렬 프로그래밍](../../../../../docs/standard/parallel-programming/index.md)을 참조하세요.  
   
 ## <a name="related-topics"></a>관련 항목  
   
