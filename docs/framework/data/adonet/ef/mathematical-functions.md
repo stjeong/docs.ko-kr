@@ -2,49 +2,390 @@
 title: 수학 함수
 ms.date: 03/30/2017
 ms.assetid: b040c7cb-156d-40f2-9152-61065b18148c
-ms.openlocfilehash: 9dfd1faf9bdab995b19c38e32f64a88ed67cb280
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e6c58d781d7138f8295f2d0a2f0db110ad4b1dd6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766974"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43456453"
 ---
-# <a name="mathematical-functions"></a><span data-ttu-id="9dcf0-102">수학 함수</span><span class="sxs-lookup"><span data-stu-id="9dcf0-102">Mathematical Functions</span></span>
-<span data-ttu-id="9dcf0-103">.NET Framework Data Provider for SQL Server(SqlClient)에서는 인수로 제공된 입력 값에 대해 계산을 수행한 다음 숫자 값으로 된 결과를 반환하는 수치 연산 함수를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-103">The .NET Framework Data Provider for SQL Server (SqlClient) provides math functions that perform calculations on input values that are provided as arguments, and return a numeric value result.</span></span> <span data-ttu-id="9dcf0-104">이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-104">These functions are in the SqlServer namespace, which is available when you use SqlClient.</span></span> <span data-ttu-id="9dcf0-105">공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다. 다음 표에서는 SqlClient 수치 함수에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-105">A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.The following table describes the SqlClient math functions.</span></span>  
+# <a name="mathematical-functions"></a><span data-ttu-id="fc7f0-102">수학 함수</span><span class="sxs-lookup"><span data-stu-id="fc7f0-102">Mathematical Functions</span></span>
+
+<span data-ttu-id="fc7f0-103">.NET Framework Data Provider for SQL Server(SqlClient)에서는 인수로 제공된 입력 값에 대해 계산을 수행한 다음 숫자 값으로 된 결과를 반환하는 수치 연산 함수를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-103">The .NET Framework Data Provider for SQL Server (SqlClient) provides math functions that perform calculations on input values that are provided as arguments, and return a numeric value result.</span></span> <span data-ttu-id="fc7f0-104">이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-104">These functions are in the SqlServer namespace, which is available when you use SqlClient.</span></span> <span data-ttu-id="fc7f0-105">공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다. 다음 표에서는 SqlClient 수치 함수에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-105">A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.The following table describes the SqlClient math functions.</span></span>  
   
-|<span data-ttu-id="9dcf0-106">함수</span><span class="sxs-lookup"><span data-stu-id="9dcf0-106">Function</span></span>|<span data-ttu-id="9dcf0-107">설명</span><span class="sxs-lookup"><span data-stu-id="9dcf0-107">Description</span></span>|  
-|--------------|-----------------|  
-|<span data-ttu-id="9dcf0-108">`ABS(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-108">`ABS(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-109">절대 값 함수를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-109">Performs the absolute value function.</span></span><br /><br /> <span data-ttu-id="9dcf0-110">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-110">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-111">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-111">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-112">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-112">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-113">지정한 식의 절대 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-113">The absolute value of the specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-114">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-114">**Example**</span></span><br /><br /> `SqlServer.ABS(-2)`|  
-|<span data-ttu-id="9dcf0-115">`ACOS(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-115">`ACOS(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-116">지정한 식의 아크코사인 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-116">Returns the arccosine value of the specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-117">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-117">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-118">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-118">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-119">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-119">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-120">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-120">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-121">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-121">**Example**</span></span><br /><br /> `SqlServer.ACOS(.9)`|  
-|<span data-ttu-id="9dcf0-122">`ASIN(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-122">`ASIN(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-123">지정한 식의 아크사인 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-123">Returns the arcsine value of the specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-124">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-124">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-125">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-125">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-126">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-126">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-127">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-127">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-128">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-128">**Example**</span></span><br /><br /> `SqlServer.ASIN(.9)`|  
-|<span data-ttu-id="9dcf0-129">`ATAN(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-129">`ATAN(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-130">지정한 숫자 식의 아크탄젠트 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-130">Returns the arctangent value of the specified numeric expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-131">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-131">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-132">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-132">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-133">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-133">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-134">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-134">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-135">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-135">**Example**</span></span><br /><br /> `SqlServer.ATAN(9)`|  
-|<span data-ttu-id="9dcf0-136">`ATN2(` `expression`, `expression``)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-136">`ATN2(` `expression`, `expression``)`</span></span>|<span data-ttu-id="9dcf0-137">탄젠트 값이 지정한 두 숫자 식 사이에 속하는 각도를 라디안으로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-137">Returns the angle, in radians, whose tangent is between the two specified numeric expressions.</span></span><br /><br /> <span data-ttu-id="9dcf0-138">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-138">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-139">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-139">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-140">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-140">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-141">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-141">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-142">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-142">**Example**</span></span><br /><br /> `SqlServer.ATN2(9, 8)`|  
-|<span data-ttu-id="9dcf0-143">`CEILING(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-143">`CEILING(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-144">지정한 식을 해당 식보다 크거나 같은 가장 작은 정수로 변환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-144">Converts the specified expression to the smallest integer that is greater than or equal to it.</span></span><br /><br /> <span data-ttu-id="9dcf0-145">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-145">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-146">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-146">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-147">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-147">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-148">`Int32`, `Int64`, `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-148">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-149">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-149">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_CEILING](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_ceiling)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_CEILING](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_ceiling)]|  
-|<span data-ttu-id="9dcf0-150">`COS(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-150">`COS(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-151">라디안으로 지정된 각도의 삼각 코사인을 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-151">Calculates the trigonometric cosine of the specified angle in radians.</span></span><br /><br /> <span data-ttu-id="9dcf0-152">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-152">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-153">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-153">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-154">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-154">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-155">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-155">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-156">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-156">**Example**</span></span><br /><br /> `SqlServer.COS(45)`|  
-|<span data-ttu-id="9dcf0-157">`COT(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-157">`COT(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-158">지정된 각도의 삼각 코탄젠트를 라디안으로 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-158">Calculates the trigonometric cotangent of the specified angle in radians.</span></span><br /><br /> <span data-ttu-id="9dcf0-159">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-159">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-160">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-160">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-161">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-161">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-162">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-162">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-163">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-163">**Example**</span></span><br /><br /> `SqlServer.COT(60)`|  
-|<span data-ttu-id="9dcf0-164">`DEGREES(` `radians` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-164">`DEGREES(` `radians` `)`</span></span>|<span data-ttu-id="9dcf0-165">해당 각도를 도 단위로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-165">Returns the corresponding angle in degrees.</span></span><br /><br /> <span data-ttu-id="9dcf0-166">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-166">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-167">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-167">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-168">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-168">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-169">`Int32`, `Int64`, `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-169">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-170">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-170">**Example**</span></span><br /><br /> `SqlServer.DEGREES(3.1)`|  
-|<span data-ttu-id="9dcf0-171">`EXP(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-171">`EXP(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-172">지정한 숫자 식의 지수 값을 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-172">Calculates the exponential value of a specified numeric expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-173">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-173">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-174">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-174">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-175">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-175">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-176">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-176">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-177">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-177">**Example**</span></span><br /><br /> `SqlServer.EXP(1)`|  
-|<span data-ttu-id="9dcf0-178">`FLOOR(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-178">`FLOOR(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-179">지정한 식을 해당 식보다 작거나 같은 가장 큰 정수로 변환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-179">Converts the specified expression to the largest integer less than or equal to it.</span></span><br /><br /> <span data-ttu-id="9dcf0-180">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-180">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-181">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-181">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-182">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-182">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-183">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-183">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-184">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-184">**Example**</span></span><br /><br /> [!code-csharp[DP EntityServices Concepts#SQLSERVER_FLOOR](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_floor)]
- [!code-sql[DP EntityServices Concepts#SQLSERVER_FLOOR](../../../../../samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_floor)]|  
-|<span data-ttu-id="9dcf0-185">`LOG(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-185">`LOG(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-186">지정한 `float` 식의 자연 로그를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-186">Calculates the natural logarithm of the specified `float` expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-187">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-187">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-188">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-188">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-189">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-189">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-190">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-190">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-191">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-191">**Example**</span></span><br /><br /> `SqlServer.LOG(100)`|  
-|<span data-ttu-id="9dcf0-192">`LOG10(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-192">`LOG10(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-193">지정한 `Double` 식의 상용 로그를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-193">Returns the base-10 logarithm of the specified `Double` expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-194">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-194">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-195">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-195">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-196">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-196">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-197">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-197">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-198">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-198">**Example**</span></span><br /><br /> `SqlServer.LOG10(100)`|  
-|`PI()`|<span data-ttu-id="9dcf0-199">파이의 상수 값을 `Double`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-199">Returns the constant value of pi as a `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-200">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-200">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-201">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-201">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-202">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-202">**Example**</span></span><br /><br /> `SqlServer.PI()`|  
-|<span data-ttu-id="9dcf0-203">`POWER(` `numeric_expression, power_expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-203">`POWER(` `numeric_expression, power_expression` `)`</span></span>|<span data-ttu-id="9dcf0-204">지정한 숫자 식의 지정된 거듭제곱 값을 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-204">Calculates the value of a specified expression to a specified power.</span></span><br /><br /> <span data-ttu-id="9dcf0-205">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-205">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-206">`numeric_expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-206">`numeric_expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-207">`power_expression`: `Double`에 대해 계산할 거듭제곱을 나타내는 `numeric_expression`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-207">`power_expression`: A `Double` that represents the power to which to raise the `numeric_expression`.</span></span><br /><br /> <span data-ttu-id="9dcf0-208">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-208">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-209">지정한 `numeric_expression`에 지정한 `power_expression`을 거듭제곱한 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-209">The value of the specified `numeric_expression` to the specified `power_expression`.</span></span><br /><br /> <span data-ttu-id="9dcf0-210">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-210">**Example**</span></span><br /><br /> `SqlServer.POWER(2,7)`|  
-|<span data-ttu-id="9dcf0-211">`RADIANS(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-211">`RADIANS(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-212">각도를 라디안으로 변환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-212">Converts degrees to radians.</span></span><br /><br /> <span data-ttu-id="9dcf0-213">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-213">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-214">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-214">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-215">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-215">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-216">`Int32`, `Int64`,</span><span class="sxs-lookup"><span data-stu-id="9dcf0-216">An `Int32`, `Int64`,</span></span><br /><br /> <span data-ttu-id="9dcf0-217">`Double` 또는</span><span class="sxs-lookup"><span data-stu-id="9dcf0-217">`Double`, or</span></span><br /><br /> <span data-ttu-id="9dcf0-218">`Decimal`.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-218">`Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-219">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-219">**Example**</span></span><br /><br /> `SqlServer.RADIANS(360.0)`|  
-|<span data-ttu-id="9dcf0-220">`RAND(`[seed]`)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-220">`RAND(`[seed]`)`</span></span>|<span data-ttu-id="9dcf0-221">0에서 1 사이의 임의 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-221">Returns a random value from 0 through 1.</span></span><br /><br /> <span data-ttu-id="9dcf0-222">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-222">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-223">시드 값을 `Int32`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-223">Retruns the seed value as an `Int32`.</span></span> <span data-ttu-id="9dcf0-224">시드를 지정하지 않으면 SQL Server 데이터베이스 엔진에서 시드 값을 임의로 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-224">If the seed is not specified, the SQL Server Database Engine assigns a seed value at random.</span></span> <span data-ttu-id="9dcf0-225">지정된 특정 시드 값에 대해 반환되는 결과는 항상 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-225">For a specified seed value, the result returned is always the same.</span></span><br /><br /> <span data-ttu-id="9dcf0-226">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-226">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-227">0에서 1 사이의 임의 `Double` 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-227">A random `Double` value from 0 through 1.</span></span><br /><br /> <span data-ttu-id="9dcf0-228">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-228">**Example**</span></span><br /><br /> `SqlServer.RAND()`|  
-|<span data-ttu-id="9dcf0-229">`ROUND(` `numeric_expression, length` [ ,`function` ]`)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-229">`ROUND(` `numeric_expression, length` [ ,`function` ]`)`</span></span>|<span data-ttu-id="9dcf0-230">숫자 식을 지정한 길이나 전체 자릿수로 반올림하여 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-230">Returns a numeric expression, rounded to the specified length or precision.</span></span><br /><br /> <span data-ttu-id="9dcf0-231">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-231">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-232">`numeric_expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-232">`numeric_expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-233">`length`: `Int32`을 반올림할 전체 자릿수를 나타내는 `numeric_expression`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-233">`length`: An `Int32` that represents the precision to which `numeric_expression` is to be rounded.</span></span> <span data-ttu-id="9dcf0-234">`length`가 양수일 경우 `numeric_expression`은 `length`에서 지정한 소수 자릿수로 반올림됩니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-234">When `length` is a positive number, `numeric_expression` is rounded to the number of decimal positions specified by `length`.</span></span> <span data-ttu-id="9dcf0-235">`length`가 음수일 경우 `numeric_expression`은 `length`에서 지정한 대로 소수점의 왼쪽에서 반올림됩니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-235">When `length` is a negative number, `numeric_expression` is rounded on the left side of the decimal point, as specified by `length`.</span></span><br /><br /> <span data-ttu-id="9dcf0-236">`function`: (선택 사항)는 `Int32` 수행할 작업의 형식을 나타내는입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-236">`function`:(optional) An `Int32` that represents the type of operation to perform.</span></span> <span data-ttu-id="9dcf0-237">함수를 생략 하거나 값 0 (기본값) 이면 때 `numeric_expression` 반올림 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-237">When function is omitted or has a value of 0 (default), `numeric_expression` is rounded.</span></span> <span data-ttu-id="9dcf0-238">이외의 값 0을 지정 하면 `numeric_expression` 잘립니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-238">When a value other than 0 is specified, `numeric_expression` is truncated.</span></span><br /><br /> <span data-ttu-id="9dcf0-239">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-239">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-240">지정한 `numeric_expression`에 지정한 `power_expression`을 거듭제곱한 값입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-240">The value of the specified `numeric_expression` to the specified `power_expression`.</span></span><br /><br /> <span data-ttu-id="9dcf0-241">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-241">**Example**</span></span><br /><br /> `SqlServer.ROUND(748.58, -3)`|  
-|<span data-ttu-id="9dcf0-242">`SIGN(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-242">`SIGN(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-243">지정한 식의 양수(+1), 0 또는 음수(-1) 부호를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-243">Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-244">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-244">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-245">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-245">`expression`: `Int32`, `Int64`, `Double`, or `Decimal`</span></span><br /><br /> <span data-ttu-id="9dcf0-246">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-246">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-247">`Int32`, `Int64`, `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-247">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span><br /><br /> <span data-ttu-id="9dcf0-248">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-248">**Example**</span></span><br /><br /> `SqlServer.SIGN(-10)`|  
-|<span data-ttu-id="9dcf0-249">`SIN(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-249">`SIN(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-250">라디안으로 지정한 각도의 삼각 사인을 계산하여 `Double` 식을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-250">Calculates the trigonometric sine of the specified angle in radians, and returns a `Double` expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-251">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-251">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-252">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-252">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-253">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-253">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-254">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-254">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-255">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-255">**Example**</span></span><br /><br /> `SqlServer.SIN(20)`|  
-|<span data-ttu-id="9dcf0-256">`SQRT(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-256">`SQRT(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-257">지정한 식의 제곱근을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-257">Returns the square root of the specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-258">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-258">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-259">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-259">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-260">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-260">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-261">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-261">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-262">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-262">**Example**</span></span><br /><br /> `SqlServer.SQRT(3600)`|  
-|<span data-ttu-id="9dcf0-263">`SQUARE(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-263">`SQUARE(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-264">지정한 식의 제곱을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-264">Returns the square of the specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-265">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-265">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-266">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-266">`expression`: A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-267">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-267">**Return Value**</span></span><br /><br /> <span data-ttu-id="9dcf0-268">`Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-268">A `Double`.</span></span><br /><br /> <span data-ttu-id="9dcf0-269">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-269">**Example**</span></span><br /><br /> `SqlServer.SQUARE(25)`|  
-|<span data-ttu-id="9dcf0-270">`TAN(` `expression` `)`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-270">`TAN(` `expression` `)`</span></span>|<span data-ttu-id="9dcf0-271">지정한 식의 탄젠트를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-271">Calculates the tangent of a specified expression.</span></span><br /><br /> <span data-ttu-id="9dcf0-272">**인수**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-272">**Arguments**</span></span><br /><br /> <span data-ttu-id="9dcf0-273">`expression`: `Double`</span><span class="sxs-lookup"><span data-stu-id="9dcf0-273">`expression`: `Double`</span></span><br /><br /> <span data-ttu-id="9dcf0-274">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-274">**Return Value**</span></span><br /><br /> `Double`<br /><br /> <span data-ttu-id="9dcf0-275">**예제**</span><span class="sxs-lookup"><span data-stu-id="9dcf0-275">**Example**</span></span><br /><br /> `SqlServer.TAN(45.0)`|  
+## <a name="absexpression"></a><span data-ttu-id="fc7f0-106">ABS(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-106">ABS(expression)</span></span>
+
+<span data-ttu-id="fc7f0-107">절대 값 함수를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-107">Performs the absolute value function.</span></span>
+
+<span data-ttu-id="fc7f0-108">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-108">**Arguments**</span></span>
+
+<span data-ttu-id="fc7f0-109">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-109">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span>
+
+<span data-ttu-id="fc7f0-110">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-110">**Return Value**</span></span>
+
+<span data-ttu-id="fc7f0-111">지정한 식의 절대 값입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-111">The absolute value of the specified expression.</span></span>
+
+<span data-ttu-id="fc7f0-112">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-112">**Example**</span></span>
+
+`SqlServer.ABS(-2)`
+
+## <a name="acosexpression"></a><span data-ttu-id="fc7f0-113">ACOS(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-113">ACOS(expression)</span></span>
+
+<span data-ttu-id="fc7f0-114">지정한 식의 아크코사인 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-114">Returns the arccosine value of the specified expression.</span></span>
+
+<span data-ttu-id="fc7f0-115">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-115">**Arguments**</span></span>
+
+<span data-ttu-id="fc7f0-116">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-116">`expression`: A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-117">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-117">**Return Value**</span></span>
+
+<span data-ttu-id="fc7f0-118">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-118">A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-119">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-119">**Example**</span></span>
+
+`SqlServer.ACOS(.9)`
+
+## <a name="asinexpression"></a><span data-ttu-id="fc7f0-120">ASIN(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-120">ASIN(expression)</span></span>
+
+<span data-ttu-id="fc7f0-121">지정한 식의 아크사인 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-121">Returns the arcsine value of the specified expression.</span></span>
+
+<span data-ttu-id="fc7f0-122">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-122">**Arguments**</span></span>
+
+<span data-ttu-id="fc7f0-123">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-123">`expression`: A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-124">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-124">**Return Value**</span></span>
+
+<span data-ttu-id="fc7f0-125">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-125">A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-126">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-126">**Example**</span></span>
+
+`SqlServer.ASIN(.9)`
+
+## <a name="atanexpression"></a><span data-ttu-id="fc7f0-127">ATAN(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-127">ATAN(expression)</span></span>
+
+<span data-ttu-id="fc7f0-128">지정한 숫자 식의 아크탄젠트 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-128">Returns the arctangent value of the specified numeric expression.</span></span>
+
+<span data-ttu-id="fc7f0-129">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-129">**Arguments**</span></span>
+
+<span data-ttu-id="fc7f0-130">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-130">`expression`: A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-131">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-131">**Return Value**</span></span>
+
+<span data-ttu-id="fc7f0-132">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-132">A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-133">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-133">**Example**</span></span>
+
+`SqlServer.ATAN(9)`
+
+## <a name="atn2expression-expression"></a><span data-ttu-id="fc7f0-134">ATN2(expression, expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-134">ATN2(expression, expression)</span></span>
+
+<span data-ttu-id="fc7f0-135">탄젠트 값이 지정한 두 숫자 식 사이에 속하는 각도를 라디안으로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-135">Returns the angle, in radians, whose tangent is between the two specified numeric expressions.</span></span>
+
+<span data-ttu-id="fc7f0-136">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-136">**Arguments**</span></span>
+
+<span data-ttu-id="fc7f0-137">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-137">`expression`: A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-138">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-138">**Return Value**</span></span>
+
+<span data-ttu-id="fc7f0-139">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-139">A `Double`.</span></span>
+
+<span data-ttu-id="fc7f0-140">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-140">**Example**</span></span>
+
+`SqlServer.ATN2(9, 8)`
+ 
+## <a name="ceilingexpression"></a><span data-ttu-id="fc7f0-141">CEILING(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-141">CEILING(expression)</span></span>
+
+<span data-ttu-id="fc7f0-142">지정한 식을 해당 식보다 크거나 같은 가장 작은 정수로 변환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-142">Converts the specified expression to the smallest integer that is greater than or equal to it.</span></span>
+
+<span data-ttu-id="fc7f0-143">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-143">**Arguments**</span></span>
+
+<span data-ttu-id="fc7f0-144">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-144">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span>
+
+<span data-ttu-id="fc7f0-145">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-145">**Return Value**</span></span>
+
+<span data-ttu-id="fc7f0-146">`Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-146">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span>
+
+<span data-ttu-id="fc7f0-147">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-147">**Example**</span></span> 
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_CEILING](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_ceiling)]
+[!code-sql[DP EntityServices Concepts#SQLSERVER_CEILING](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_ceiling)]
+
+## <a name="cosexpression"></a><span data-ttu-id="fc7f0-148">COS(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-148">COS(expression)</span></span>
+
+<span data-ttu-id="fc7f0-149">라디안으로 지정된 각도의 삼각 코사인을 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-149">Calculates the trigonometric cosine of the specified angle in radians.</span></span> 
+
+<span data-ttu-id="fc7f0-150">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-150">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-151">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-151">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-152">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-152">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-153">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-153">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-154">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-154">**Example**</span></span> 
+
+`SqlServer.COS(45)`
+
+## <a name="cotexpression"></a><span data-ttu-id="fc7f0-155">COT(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-155">COT(expression)</span></span>
+
+<span data-ttu-id="fc7f0-156">지정된 각도의 삼각 코탄젠트를 라디안으로 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-156">Calculates the trigonometric cotangent of the specified angle in radians.</span></span> 
+
+<span data-ttu-id="fc7f0-157">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-157">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-158">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-158">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-159">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-159">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-160">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-160">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-161">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-161">**Example**</span></span> 
+
+`SqlServer.COT(60)`
   
- <span data-ttu-id="9dcf0-276">SqlClient에서 지원하는 수치 함수에 대한 자세한 내용은 SqlClient 공급자 매니페스트에 지정한 SQL Server 버전의 설명서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="9dcf0-276">For more information about the mathematical functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:</span></span>  
+## <a name="degreesradians"></a><span data-ttu-id="fc7f0-162">DEGREES(radians)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-162">DEGREES(radians)</span></span>
+
+<span data-ttu-id="fc7f0-163">해당 각도를 도 단위로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-163">Returns the corresponding angle in degrees.</span></span> 
+
+<span data-ttu-id="fc7f0-164">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-164">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-165">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-165">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span> 
+
+<span data-ttu-id="fc7f0-166">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-166">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-167">`Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-167">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span> 
+
+<span data-ttu-id="fc7f0-168">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-168">**Example**</span></span> 
+
+`SqlServer.DEGREES(3.1)`
+
+## <a name="expexpression"></a><span data-ttu-id="fc7f0-169">EXP(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-169">EXP(expression)</span></span>
+
+<span data-ttu-id="fc7f0-170">지정한 숫자 식의 지수 값을 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-170">Calculates the exponential value of a specified numeric expression.</span></span> 
+
+<span data-ttu-id="fc7f0-171">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-171">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-172">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-172">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-173">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-173">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-174">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-174">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-175">**예제** `SqlServer.EXP(1)`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-175">**Example** `SqlServer.EXP(1)`</span></span>
+
+## <a name="floorexpression"></a><span data-ttu-id="fc7f0-176">FLOOR(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-176">FLOOR(expression)</span></span>
+
+<span data-ttu-id="fc7f0-177">지정한 식을 해당 식보다 작거나 같은 가장 큰 정수로 변환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-177">Converts the specified expression to the largest integer less than or equal to it.</span></span> 
+
+<span data-ttu-id="fc7f0-178">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-178">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-179">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-179">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-180">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-180">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-181">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-181">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-182">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-182">**Example**</span></span> 
+
+[!code-csharp[DP EntityServices Concepts#SQLSERVER_FLOOR](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_floor)] 
+[!code-sql[DP EntityServices Concepts#SQLSERVER_FLOOR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_floor)]
+
+## <a name="logexpression"></a><span data-ttu-id="fc7f0-183">LOG(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-183">LOG(expression)</span></span>
+
+<span data-ttu-id="fc7f0-184">지정한 `float` 식의 자연 로그를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-184">Calculates the natural logarithm of the specified `float` expression.</span></span> 
+
+<span data-ttu-id="fc7f0-185">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-185">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-186">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-186">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-187">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-187">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-188">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-188">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-189">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-189">**Example**</span></span> 
+
+`SqlServer.LOG(100)`
+
+## <a name="log10expression"></a><span data-ttu-id="fc7f0-190">LOG10(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-190">LOG10(expression)</span></span>
+
+<span data-ttu-id="fc7f0-191">지정한 `Double` 식의 상용 로그를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-191">Returns the base-10 logarithm of the specified `Double` expression.</span></span> 
+
+<span data-ttu-id="fc7f0-192">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-192">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-193">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-193">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-194">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-194">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-195">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-195">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-196">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-196">**Example**</span></span> 
+
+`SqlServer.LOG10(100)`
+
+## <a name="pi"></a><span data-ttu-id="fc7f0-197">PI)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-197">PI()</span></span>
+
+<span data-ttu-id="fc7f0-198">파이의 상수 값을 `Double`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-198">Returns the constant value of pi as a `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-199">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-199">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-200">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-200">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-201">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-201">**Example**</span></span> 
+
+`SqlServer.PI()`
+
+## <a name="powernumericexpression-powerexpression"></a><span data-ttu-id="fc7f0-202">POWER (numeric_expression, power_expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-202">POWER(numeric_expression, power_expression)</span></span>
+
+<span data-ttu-id="fc7f0-203">지정한 숫자 식의 지정된 거듭제곱 값을 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-203">Calculates the value of a specified expression to a specified power.</span></span>
+
+<span data-ttu-id="fc7f0-204">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-204">**Arguments**</span></span> 
+
+|  |  |
+|--|--|
+|`numeric_expression`| <span data-ttu-id="fc7f0-205">`Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-205">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span>|
+|`power_expression`| <span data-ttu-id="fc7f0-206">`Double`에 대해 계산할 거듭제곱을 나타내는 `numeric_expression`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-206">A `Double` that represents the power to which to raise the `numeric_expression`.</span></span>| 
+
+<span data-ttu-id="fc7f0-207">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-207">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-208">지정한 `numeric_expression`에 지정한 `power_expression`을 거듭제곱한 값입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-208">The value of the specified `numeric_expression` to the specified `power_expression`.</span></span> 
+
+<span data-ttu-id="fc7f0-209">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-209">**Example**</span></span> 
+
+`SqlServer.POWER(2,7)`
+
+## <a name="radiansexpression"></a><span data-ttu-id="fc7f0-210">RADIANS(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-210">RADIANS(expression)</span></span>
+
+<span data-ttu-id="fc7f0-211">각도를 라디안으로 변환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-211">Converts degrees to radians.</span></span> 
+
+<span data-ttu-id="fc7f0-212">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-212">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-213">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-213">`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span> 
+
+<span data-ttu-id="fc7f0-214">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-214">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-215">`Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-215">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span> 
+
+<span data-ttu-id="fc7f0-216">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-216">**Example**</span></span> 
+
+`SqlServer.RADIANS(360.0)`
+
+## <a name="randseed"></a><span data-ttu-id="fc7f0-217">RAND([seed])</span><span class="sxs-lookup"><span data-stu-id="fc7f0-217">RAND([seed])</span></span>
+
+<span data-ttu-id="fc7f0-218">0에서 1 사이의 임의 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-218">Returns a random value from 0 through 1.</span></span> 
+
+<span data-ttu-id="fc7f0-219">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-219">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-220">시드 값으로는 `Int32`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-220">The seed value as an `Int32`.</span></span> <span data-ttu-id="fc7f0-221">시드를 지정하지 않으면 SQL Server 데이터베이스 엔진에서 시드 값을 임의로 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-221">If the seed is not specified, the SQL Server Database Engine assigns a seed value at random.</span></span> <span data-ttu-id="fc7f0-222">지정된 특정 시드 값에 대해 반환되는 결과는 항상 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-222">For a specified seed value, the result returned is always the same.</span></span>
+
+<span data-ttu-id="fc7f0-223">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-223">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-224">0에서 1 사이의 임의 `Double` 값입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-224">A random `Double` value from 0 through 1.</span></span> 
+
+<span data-ttu-id="fc7f0-225">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-225">**Example**</span></span> 
+
+`SqlServer.RAND()`
   
-|<span data-ttu-id="9dcf0-277">SQL Server 2000</span><span class="sxs-lookup"><span data-stu-id="9dcf0-277">SQL Server 2000</span></span>|<span data-ttu-id="9dcf0-278">SQL Server 2005</span><span class="sxs-lookup"><span data-stu-id="9dcf0-278">SQL Server 2005</span></span>|<span data-ttu-id="9dcf0-279">SQL Server 2008</span><span class="sxs-lookup"><span data-stu-id="9dcf0-279">SQL Server 2008</span></span>|  
-|---------------------|---------------------|---------------------|  
-|[<span data-ttu-id="9dcf0-280">수치 연산 함수 (Transact SQL)</span><span class="sxs-lookup"><span data-stu-id="9dcf0-280">Mathematical Functions (Transact-SQL)</span></span>](http://go.microsoft.com/fwlink/?LinkId=115913)|[<span data-ttu-id="9dcf0-281">수치 연산 함수 (Transact SQL)</span><span class="sxs-lookup"><span data-stu-id="9dcf0-281">Mathematical Functions (Transact-SQL)</span></span>](http://go.microsoft.com/fwlink/?LinkId=115911)|[<span data-ttu-id="9dcf0-282">수치 연산 함수 (Transact SQL)</span><span class="sxs-lookup"><span data-stu-id="9dcf0-282">Mathematical Functions (Transact-SQL)</span></span>](http://go.microsoft.com/fwlink/?LinkId=115912)|  
+## <a name="roundnumericexpression-lengthfunction"></a><span data-ttu-id="fc7f0-226">ROUND(numeric_expression, length[,function])</span><span class="sxs-lookup"><span data-stu-id="fc7f0-226">ROUND(numeric_expression, length[,function])</span></span>
+
+<span data-ttu-id="fc7f0-227">숫자 식을 지정한 길이나 전체 자릿수로 반올림하여 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-227">Returns a numeric expression, rounded to the specified length or precision.</span></span> 
+
+<span data-ttu-id="fc7f0-228">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-228">**Arguments**</span></span> 
+
+|  |  |
+|--|--|
+|`numeric_expression`| <span data-ttu-id="fc7f0-229">`Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-229">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span> 
+|`length`| <span data-ttu-id="fc7f0-230">`Int32`을 반올림할 전체 자릿수를 나타내는 `numeric_expression`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-230">An `Int32` that represents the precision to which `numeric_expression` is to be rounded.</span></span> <span data-ttu-id="fc7f0-231">`length`가 양수일 경우 `numeric_expression`은 `length`에서 지정한 소수 자릿수로 반올림됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-231">When `length` is a positive number, `numeric_expression` is rounded to the number of decimal positions specified by `length`.</span></span> <span data-ttu-id="fc7f0-232">`length`가 음수일 경우 `numeric_expression`은 `length`에서 지정한 대로 소수점의 왼쪽에서 반올림됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-232">When `length` is a negative number, `numeric_expression` is rounded on the left side of the decimal point, as specified by `length`.</span></span>|
+|`function` | <span data-ttu-id="fc7f0-233">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-233">Optional.</span></span> <span data-ttu-id="fc7f0-234">`Int32` 수행할 연산 형식을 나타내는입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-234">An `Int32` that represents the type of operation to perform.</span></span> <span data-ttu-id="fc7f0-235">함수를 생략 하거나 값이 0 (기본값) 일 때 `numeric_expression` 반올림 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-235">When function is omitted or has a value of 0 (default), `numeric_expression` is rounded.</span></span> <span data-ttu-id="fc7f0-236">이외의 값 0을 지정 하면 `numeric_expression` 잘립니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-236">When a value other than 0 is specified, `numeric_expression` is truncated.</span></span> |
+
+<span data-ttu-id="fc7f0-237">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-237">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-238">지정한 `numeric_expression`에 지정한 `power_expression`을 거듭제곱한 값입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-238">The value of the specified `numeric_expression` to the specified `power_expression`.</span></span>
+
+<span data-ttu-id="fc7f0-239">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-239">**Example**</span></span> 
+
+`SqlServer.ROUND(748.58, -3)`
+
+## <a name="signexpression"></a><span data-ttu-id="fc7f0-240">SIGN(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-240">SIGN(expression)</span></span> 
+
+<span data-ttu-id="fc7f0-241">지정한 식의 양수(+1), 0 또는 음수(-1) 부호를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-241">Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</span></span> 
+
+<span data-ttu-id="fc7f0-242">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-242">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-243">`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-243">`expression`: `Int32`, `Int64`, `Double`, or `Decimal`</span></span> 
+
+<span data-ttu-id="fc7f0-244">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-244">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-245">`Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-245">An `Int32`, `Int64`, `Double`, or `Decimal`.</span></span> 
+
+<span data-ttu-id="fc7f0-246">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-246">**Example**</span></span> 
+
+`SqlServer.SIGN(-10)`
+
+## <a name="sinexpression"></a><span data-ttu-id="fc7f0-247">SIN(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-247">SIN(expression)</span></span>
+
+<span data-ttu-id="fc7f0-248">라디안으로 지정한 각도의 삼각 사인을 계산하여 `Double` 식을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-248">Calculates the trigonometric sine of the specified angle in radians, and returns a `Double` expression.</span></span> 
+
+<span data-ttu-id="fc7f0-249">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-249">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-250">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-250">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-251">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-251">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-252">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-252">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-253">**예제** `SqlServer.SIN(20)`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-253">**Example** `SqlServer.SIN(20)`</span></span>
+
+## <a name="sqrtexpression"></a><span data-ttu-id="fc7f0-254">SQRT(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-254">SQRT(expression)</span></span>
+
+<span data-ttu-id="fc7f0-255">지정한 식의 제곱근을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-255">Returns the square root of the specified expression.</span></span> 
+
+<span data-ttu-id="fc7f0-256">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-256">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-257">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-257">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-258">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-258">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-259">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-259">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-260">**예제** `SqlServer.SQRT(3600)`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-260">**Example** `SqlServer.SQRT(3600)`</span></span>
+
+## <a name="squareexpression"></a><span data-ttu-id="fc7f0-261">SQUARE(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-261">SQUARE(expression)</span></span>
+
+<span data-ttu-id="fc7f0-262">지정한 식의 제곱을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-262">Returns the square of the specified expression.</span></span> 
+
+<span data-ttu-id="fc7f0-263">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-263">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-264">`expression`: `Double`입니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-264">`expression`: A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-265">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-265">**Return Value**</span></span> 
+
+<span data-ttu-id="fc7f0-266">`Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-266">A `Double`.</span></span> 
+
+<span data-ttu-id="fc7f0-267">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-267">**Example**</span></span> 
+
+`SqlServer.SQUARE(25)`
+
+## <a name="tanexpression"></a><span data-ttu-id="fc7f0-268">TAN(expression)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-268">TAN(expression)</span></span>
+
+<span data-ttu-id="fc7f0-269">지정한 식의 탄젠트를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-269">Calculates the tangent of a specified expression.</span></span>
+
+<span data-ttu-id="fc7f0-270">**인수**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-270">**Arguments**</span></span> 
+
+<span data-ttu-id="fc7f0-271">`expression`: `Double`</span><span class="sxs-lookup"><span data-stu-id="fc7f0-271">`expression`: `Double`</span></span> 
+
+<span data-ttu-id="fc7f0-272">**반환 값**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-272">**Return Value**</span></span> 
+
+`Double` 
+
+<span data-ttu-id="fc7f0-273">**예제**</span><span class="sxs-lookup"><span data-stu-id="fc7f0-273">**Example**</span></span> 
+
+`SqlServer.TAN(45.0)`
   
-## <a name="see-also"></a><span data-ttu-id="9dcf0-283">참고 항목</span><span class="sxs-lookup"><span data-stu-id="9dcf0-283">See Also</span></span>  
- [<span data-ttu-id="9dcf0-284">Entity Framework용 SqlClient 기능</span><span class="sxs-lookup"><span data-stu-id="9dcf0-284">SqlClient for Entity Framework Functions</span></span>](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)
+## <a name="see-also"></a><span data-ttu-id="fc7f0-274">참고자료</span><span class="sxs-lookup"><span data-stu-id="fc7f0-274">See also</span></span>
+
+<span data-ttu-id="fc7f0-275">SqlClient에서 지원하는 수치 함수에 대한 자세한 내용은 SqlClient 공급자 매니페스트에 지정한 SQL Server 버전의 설명서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fc7f0-275">For more information about the mathematical functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:</span></span>  
+  
+<span data-ttu-id="fc7f0-276">**SQL Server 2005:** [수치 연산 함수 (TRANSACT-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms177516(v=sql.90))</span><span class="sxs-lookup"><span data-stu-id="fc7f0-276">**SQL Server 2005:** [Mathematical Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms177516(v=sql.90))</span></span>  
+<span data-ttu-id="fc7f0-277">**SQL Server 2008:** [수치 연산 함수 (TRANSACT-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms177516(v=sql.100))</span><span class="sxs-lookup"><span data-stu-id="fc7f0-277">**SQL Server 2008:** [Mathematical Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms177516(v=sql.100))</span></span>  
+<span data-ttu-id="fc7f0-278">**SQL Server 2012 이상:** [수치 연산 함수 (TRANSACT-SQL)](/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-2017)</span><span class="sxs-lookup"><span data-stu-id="fc7f0-278">**SQL Server 2012 and later:** [Mathematical Functions (Transact-SQL)](/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-2017)</span></span>   
+
+ [<span data-ttu-id="fc7f0-279">Entity Framework용 SqlClient 기능</span><span class="sxs-lookup"><span data-stu-id="fc7f0-279">SqlClient for Entity Framework Functions</span></span>](sqlclient-for-ef-functions.md)
