@@ -2,15 +2,15 @@
 title: XAML의 WPF 및 WF 통합
 ms.date: 03/30/2017
 ms.assetid: a4f53b48-fc90-4315-bca0-ba009562f488
-ms.openlocfilehash: 2fb145a8511383c37be536a78522a256514c08c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 619f3b7ce2b854e27fe9229fd08727627ce37f1a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518192"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43455694"
 ---
 # <a name="wpf-and-wf-integration-in-xaml"></a>XAML의 WPF 및 WF 통합
-이 샘플에는 단일 XAML 문서에 Windows Presentation Foundation (WPF) 및 Windows WF (Workflow Foundation) 기능을 사용 하 여 응용 프로그램을 만드는 방법을 보여 줍니다. 이를 위해 샘플 Windows WF (Workflow Foundation) 및 XAML 확장성을 사용 합니다.  
+이 샘플에는 단일 XAML 문서에서 Windows Presentation Foundation (WPF) 및 Windows WF (Workflow Foundation) 기능을 사용 하는 응용 프로그램을 만드는 방법을 보여 줍니다. 이를 위해이 샘플에서는 Windows WF (Workflow Foundation) 및 XAML 확장성을 사용 합니다.  
   
 ## <a name="sample-details"></a>샘플 세부 정보  
  <xref:System.Activities.Statements.Sequence> 및 `ShowWindow`이라는 활동 시퀀스를 통해 조작되는 문자열 변수 두 개를 사용하여 ShowWindow.xaml 파일을 `WriteLine` 활동으로 deserialize합니다. <xref:System.Activities.Statements.WriteLine> 활동은 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성에 할당되는 식을 콘솔 창에 출력합니다. `ShowWindow` 활동은 해당 실행 논리의 일부로 [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] 창을 표시합니다. 이 창의 <xref:System.Activities.ActivityContext.DataContext%2A>에는 시퀀스에서 선언한 변수가 포함됩니다. `ShowWindow` 활동에 선언된 창의 컨트롤에서 데이터 바인딩을 사용하여 해당 변수를 조작합니다. 마지막으로, 창에 단추 컨트롤이 포함됩니다. 단추에 대한 `Click` 이벤트는 이름이 <xref:System.Activities.ActivityDelegate>인 `MarkupExtension` 활동이 포함된 `CloseWindow`에서 처리됩니다. `MarkUpExtension`은 포함된 활동을 호출하고, 이 활동은 컨텍스트에 따라 `x:Name`으로 식별되는 개체 및 해당 활동을 포함하는 창의 <xref:System.Activities.ActivityContext.DataContext%2A>를 제공합니다. 따라서 창의 이름을 참조하는 식을 사용하여 `CloseWindow.InArgument<Window>`를 바인딩할 수 있습니다.  
@@ -41,6 +41,6 @@ ms.locfileid: "33518192"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\WPFWFIntegration`

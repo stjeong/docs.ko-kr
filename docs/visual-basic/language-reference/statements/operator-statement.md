@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CType function [Visual Basic], Operator statement
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 ms.openlocfilehash: 69dea99cf71bd1e091116e54e244abfca291ffdb
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43255880"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43474066"
 ---
 # <a name="operator-statement"></a>Operator Statement
 연산자 기호, 피연산자 및 클래스 또는 구조체에서 연산자 프로시저를 정의 하는 코드를 선언 합니다.  

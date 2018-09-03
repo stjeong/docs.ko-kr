@@ -2,12 +2,12 @@
 title: WAS Activation 아키텍처
 ms.date: 03/30/2017
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
-ms.openlocfilehash: 0c91ebd605fbe503dd11da7167512648afd86449
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 64219649e7b743b7dd3a67673c3f2409aeeba486
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33497999"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43457162"
 ---
 # <a name="was-activation-architecture"></a>WAS Activation 아키텍처
 이 항목에서는 Windows Process Activation Service(WAS라고도 함)의 구성 요소를 항목별로 정리하고 설명합니다.  
@@ -30,11 +30,11 @@ ms.locfileid: "33497999"
  ![WAS 아키텍처](../../../../docs/framework/wcf/feature-details/media/wasarchitecture.gif "WASArchitecture")  
   
 ### <a name="listener-adapters"></a>수신기 어댑터  
- 수신기 어댑터는 수신 대기하는 네트워크 프로토콜을 사용하여 메시지를 받는 데 사용되는 네트워크 통신 논리를 구현하는 개별 Windows 서비스입니다. 다음 표에서 Windows Communication Foundation (WCF) 프로토콜의 수신기 어댑터를 나열합니다.  
+ 수신기 어댑터는 수신 대기하는 네트워크 프로토콜을 사용하여 메시지를 받는 데 사용되는 네트워크 통신 논리를 구현하는 개별 Windows 서비스입니다. 다음 표에서 Windows Communication Foundation (WCF) 프로토콜에 대 한 수신기 어댑터를 나열합니다.  
   
 |수신기 어댑터 서비스 이름|프로토콜|노트|  
 |-----------------------------------|--------------|-----------|  
-|W3SVC|http|IIS 7.0과 WCF 둘 다에 대해 HTTP 활성화를 제공 하는 일반적인 구성 요소입니다.|  
+|W3SVC|http|IIS 7.0 및 WCF HTTP 활성화를 제공 하는 일반적인 구성 요소입니다.|  
 |NetTcpActivator|net.tcp|NetTcpPortSharing 서비스에 따라 다릅니다.|  
 |NetPipeActivator|net.pipe||  
 |NetMsmqActivator|net.msmq|WCF 기반 메시지 큐 응용 프로그램과 함께 사용할 수 있습니다.|  
@@ -87,4 +87,4 @@ ms.locfileid: "33497999"
   
 ## <a name="see-also"></a>참고 항목  
  [WCF와 함께 사용하도록 WAS 구성](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)  
- [Windows Server App Fabric 호스팅 기능](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

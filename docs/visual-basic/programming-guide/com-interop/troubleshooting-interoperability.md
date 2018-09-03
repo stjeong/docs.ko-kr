@@ -16,12 +16,12 @@ helpviewer_keywords:
 - interoperability, sharing components
 - shared components, using with assemblies
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
-ms.openlocfilehash: 65005dbbe42f52b3159c8e595972dace3064f986
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 5b92eaf56e337b8a8128bb3a0706ecdb76177c0e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332670"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43472009"
 ---
 # <a name="troubleshooting-interoperability-visual-basic"></a>상호 운용성 문제 해결(Visual Basic)
 COM 및 관리 코드의 상호 운용 하는 경우는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], 다음과 같은 일반적인 문제 중 하나 이상을 발생할 수 있습니다.  
@@ -130,7 +130,7 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
  [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe(형식 라이브러리 내보내기)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
+ [Tlbexp.exe(형식 라이브러리 내보내기)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
  [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
  [Inherits 문](../../../visual-basic/language-reference/statements/inherits-statement.md)  
  [전역 어셈블리 캐시](../../../framework/app-domains/gac.md)

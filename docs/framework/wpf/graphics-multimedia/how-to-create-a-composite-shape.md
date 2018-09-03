@@ -9,15 +9,15 @@ helpviewer_keywords:
 - composite shapes [WPF]
 - graphics [WPF], composite shapes
 ms.assetid: 8e5c7ef4-d7ed-4c43-afc9-ca01325c300b
-ms.openlocfilehash: 6bb2a8a32938682af52343b971b840dbed16bcef
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9892120d13a067586dbf6472a6873b6a52c2d8b4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33559973"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43457085"
 ---
 # <a name="how-to-create-a-composite-shape"></a>방법: 복합 도형 만들기
-사용 하 여 복합 셰이프를 만드는 방법을 보여 주는이 예제 <xref:System.Windows.Media.Geometry> 개체 하 고 표시를 사용 하 여는 <xref:System.Windows.Shapes.Path> 요소입니다. 다음 예제에서는 <xref:System.Windows.Media.LineGeometry>, <xref:System.Windows.Media.EllipseGeometry>, 및 <xref:System.Windows.Media.RectangleGeometry> 함께 사용 되는 <xref:System.Windows.Media.GeometryGroup> 복합 셰이프를 만듭니다. 기 하 도형이 다음 사용 하 여 그려집니다는 <xref:System.Windows.Shapes.Path> 요소입니다.  
+이 예제에 사용 하 여 복합 셰이프를 만드는 방법을 보여 줍니다 <xref:System.Windows.Media.Geometry> 개체 및 표시를 사용 하 여를 <xref:System.Windows.Shapes.Path> 요소입니다. 다음 예에서 <xref:System.Windows.Media.LineGeometry>, <xref:System.Windows.Media.EllipseGeometry>, 및 <xref:System.Windows.Media.RectangleGeometry> 사용 되는 <xref:System.Windows.Media.GeometryGroup> 복합 도형 만들기를 합니다. 사용 하 여 하 도형이 그려지는 다음을 <xref:System.Windows.Shapes.Path> 요소입니다.  
   
 ## <a name="example"></a>예제  
  [!code-xaml[GeometrySample#19](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#19)]  
@@ -30,6 +30,6 @@ ms.locfileid: "33559973"
  ![GeometryGroup을 사용 하 여 만든 복합 기 하 도형을](../../../../docs/framework/wpf/graphics-multimedia/media/wcpsdk-graphicsmm-compositegeometryexample1.jpg "wcpsdk_graphicsmm_compositegeometryexample1")  
 복합 기 하 도형  
   
- 사용 하 여 다각형, 곡선된 세그먼트를 사용 하 여 셰이프 등의 더 복잡 한 도형을 만들 수는 <xref:System.Windows.Media.PathGeometry>합니다. 사용 하 여 도형을 만드는 방법을 보여 주는 예제는 <xref:System.Windows.Media.PathGeometry>, 참조 [PathGeometry를 사용 하 여 도형을 만드는](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)합니다.  이 예제에 사용 하 여 화면 모양을 렌더링 하는 있지만 <xref:System.Windows.Shapes.Path> 요소인 <xref:System.Windows.Media.Geometry> 개체의 내용을 설명 하기 위해 사용할 수도 있습니다는 <xref:System.Windows.Media.GeometryDrawing> 또는 <xref:System.Windows.Media.DrawingContext>합니다. 클리핑 및 적중 테스트에 사용 될 수 있습니다.  
+ 사용 하 여 곡선된 세그먼트를 사용 하 여 도형 다각형 등 보다 복잡 한 도형을 만들 수는 <xref:System.Windows.Media.PathGeometry>합니다. 사용 하 여 도형을 만드는 방법을 보여 주는 예제는 <xref:System.Windows.Media.PathGeometry>를 참조 하세요 [PathGeometry를 사용 하 여 도형 만들기](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)합니다.  이 예제에서 사용 하 여 화면 모양을 렌더링 하지만 <xref:System.Windows.Shapes.Path> 요소인 <xref:System.Windows.Media.Geometry> 개체의 내용을 설명 하기 위해 사용할 수도 있습니다는 <xref:System.Windows.Media.GeometryDrawing> 또는 <xref:System.Windows.Media.DrawingContext>합니다. 자르기 및 적중 테스트에 사용할 수도 있습니다.  
   
- 이 예제는 더 큰 샘플에 속합니다. 전체 샘플을 보려면 [기하 도형 샘플](http://go.microsoft.com/fwlink/?LinkID=159989)을 참조하세요.
+ 이 예제는 더 큰 샘플에 속합니다. 전체 샘플을 보려면 [기하 도형 샘플](https://go.microsoft.com/fwlink/?LinkID=159989)을 참조하세요.

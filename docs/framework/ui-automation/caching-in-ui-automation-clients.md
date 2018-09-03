@@ -8,24 +8,24 @@ ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: fa96a12c92703430482b765d625067fbf08c3477
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fd695678b8bb30418899786e9670bb8274f9d751
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33410314"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466411"
 ---
 # <a name="caching-in-ui-automation-clients"></a>UI 자동화 클라이언트의 캐싱
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 항목에서는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 및 컨트롤 패턴의 캐싱에 대해 설명합니다.  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 캐싱은 데이터의 프리페치를 의미합니다. 이렇게 하면 추가 크로스 프로세스와 통신하지 않고도 데이터에 액세스할 수 있습니다. 캐싱은 일반적으로 UI 자동화 클라이언트 응용 프로그램에서 속성 및 컨트롤 패턴을 일괄적으로 검색하는 데 사용됩니다. 필요에 따라 캐시에서 정보가 검색됩니다. 응용 프로그램은 일반적으로 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 에서 변경된 사항이 있음을 나타내는 이벤트에 대한 응답으로 캐시를 주기적으로 업데이트합니다.  
   
- 캐싱의 효율성 Windows Presentation Foundation (wpf) 및 서버 쪽 UI 자동화 공급자가 사용자 지정 컨트롤에 가장 두드러지게 합니다. [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 컨트롤의 기본 공급자와 같은 클라이언트 쪽 공급자에 액세스할 때는 캐싱의 효율성이 떨어집니다.  
+ Caching의 이점은 Windows Presentation Foundation (WPF) 컨트롤 및 서버 쪽 UI 자동화 공급자는 사용자 지정 컨트롤을 사용 하 여 가장 눈에 띄는입니다. [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 컨트롤의 기본 공급자와 같은 클라이언트 쪽 공급자에 액세스할 때는 캐싱의 효율성이 떨어집니다.  
   
- 캐싱은 응용 프로그램이 <xref:System.Windows.Automation.CacheRequest> 를 활성화한 다음 <xref:System.Windows.Automation.AutomationElement>를 반환하는 메서드 또는 속성을 사용하는 경우에 발생합니다. 예: <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>, <xref:System.Windows.Automation.AutomationElement.FindAll%2A> 메서드는 <xref:System.Windows.Automation.TreeWalker> 캐싱은 할 경우에; 클래스는 예외는 <xref:System.Windows.Automation.CacheRequest> 매개 변수로 지정 (예를 들어 <xref:System.Windows.Automation.TreeWalker.GetFirstChild%28System.Windows.Automation.AutomationElement%2CSystem.Windows.Automation.CacheRequest%29?displayProperty=nameWithType>합니다.  
+ 캐싱은 응용 프로그램이 <xref:System.Windows.Automation.CacheRequest> 를 활성화한 다음 <xref:System.Windows.Automation.AutomationElement>를 반환하는 메서드 또는 속성을 사용하는 경우에 발생합니다. 예: <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>, <xref:System.Windows.Automation.AutomationElement.FindAll%2A> 메서드를 <xref:System.Windows.Automation.TreeWalker> 클래스 예외는 경우에 수행 됩니다 캐싱를 <xref:System.Windows.Automation.CacheRequest> 매개 변수로 지정 됩니다 (예를 들어 <xref:System.Windows.Automation.TreeWalker.GetFirstChild%28System.Windows.Automation.AutomationElement%2CSystem.Windows.Automation.CacheRequest%29?displayProperty=nameWithType>합니다.  
   
  또한 캐싱은 <xref:System.Windows.Automation.CacheRequest> 가 활성화되어 있는 동안 이벤트를 구독할 때 발생합니다. 이벤트 소스로 이벤트 처리기에 전달된 <xref:System.Windows.Automation.AutomationElement> 에는 원래 <xref:System.Windows.Automation.CacheRequest>가 지정한 캐시된 속성 및 패턴이 포함됩니다. 이벤트를 구독한 이후의 <xref:System.Windows.Automation.CacheRequest> 변경 내용은 영향을 주지 않습니다.  
   
@@ -45,13 +45,13 @@ ms.locfileid: "33410314"
   
 <a name="Scope_of_the_Caching"></a>   
 ### <a name="scope-and-filtering-of-caching"></a>캐싱의 범위 및 필터링  
- 해당 속성 및 패턴을 설정 하 여 캐시에 원하는 요소를 지정할 수는 <xref:System.Windows.Automation.CacheRequest.TreeScope%2A?displayProperty=nameWithType> 요청을 활성화 하기 전에 속성입니다. 해당 범위는 요청이 활성 상태인 동안 검색 되는 요소를 기준으로 합니다. 예를 들어 <xref:System.Windows.Automation.TreeScope.Children>만 설정한 다음 <xref:System.Windows.Automation.AutomationElement>를 검색하는 경우, 요소의 자식 속성 및 패턴이 캐시되지만 요소 자체의 속성 및 패턴은 캐시되지 않습니다. 검색된 요소 자체에 캐시가 수행되도록 하려면 <xref:System.Windows.Automation.TreeScope.Element> 속성에 <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> 를 포함해야 합니다. 범위를 <xref:System.Windows.Automation.TreeScope.Parent> 또는 <xref:System.Windows.Automation.TreeScope.Ancestors>로 설정할 수 없습니다. 하지만 자식 요소가 캐시될 때 부모 요소를 캐시할 수 있습니다. 이 항목의 캐시된 자식 및 부모 검색을 참조하세요.  
+ 속성 및 패턴을 설정 하 여 캐시 하려는 요소를 지정할 수는 <xref:System.Windows.Automation.CacheRequest.TreeScope%2A?displayProperty=nameWithType> 요청을 활성화 하기 전에 속성입니다. 해당 범위는 요청이 활성 상태인 동안 검색 되는 요소를 기준으로 합니다. 예를 들어 <xref:System.Windows.Automation.TreeScope.Children>만 설정한 다음 <xref:System.Windows.Automation.AutomationElement>를 검색하는 경우, 요소의 자식 속성 및 패턴이 캐시되지만 요소 자체의 속성 및 패턴은 캐시되지 않습니다. 검색된 요소 자체에 캐시가 수행되도록 하려면 <xref:System.Windows.Automation.TreeScope.Element> 속성에 <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> 를 포함해야 합니다. 범위를 <xref:System.Windows.Automation.TreeScope.Parent> 또는 <xref:System.Windows.Automation.TreeScope.Ancestors>로 설정할 수 없습니다. 하지만 자식 요소가 캐시될 때 부모 요소를 캐시할 수 있습니다. 이 항목의 캐시된 자식 및 부모 검색을 참조하세요.  
   
- 캐싱 범위에 따라서도 <xref:System.Windows.Automation.CacheRequest.TreeFilter%2A?displayProperty=nameWithType> 속성입니다. 기본적으로, 캐싱은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리의 컨트롤 뷰에 나타나는 요소에 대해서만 수행됩니다. 하지만 모든 요소 또는 콘텐츠 뷰에 나타나는 요소에만 캐싱을 적용하도록 이 속성을 변경할 수 있습니다.  
+ 캐싱 범위에도 영향을 <xref:System.Windows.Automation.CacheRequest.TreeFilter%2A?displayProperty=nameWithType> 속성입니다. 기본적으로, 캐싱은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리의 컨트롤 뷰에 나타나는 요소에 대해서만 수행됩니다. 하지만 모든 요소 또는 콘텐츠 뷰에 나타나는 요소에만 캐싱을 적용하도록 이 속성을 변경할 수 있습니다.  
   
 <a name="Strength_of_the_Element_References"></a>   
 ### <a name="strength-of-the-element-references"></a>요소 참조의 장점  
- <xref:System.Windows.Automation.AutomationElement>를 검색할 때, 캐시되지 않은 속성 및 패턴을 비롯하여 해당 요소의 모든 속성 및 패턴에 대해 기본적으로 액세스할 수 있습니다. 하지만 효율성을 높이기 위해 <xref:System.Windows.Automation.CacheRequest.AutomationElementMode%2A> 의 <xref:System.Windows.Automation.CacheRequest> 속성을 <xref:System.Windows.Automation.AutomationElementMode.None>으로 설정하여 요소에 대한 참조가 캐시된 데이터만 나타내도록 지정할 수 있습니다. 이 경우, 검색된 요소의 캐시되지 않은 속성 및 패턴에는 액세스할 수 없습니다. 이는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> 또는 `Current` 의 <xref:System.Windows.Automation.AutomationElement> 속성이나 컨트롤 패턴을 통해 속성에 액세스할 수 없으며 <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> 또는 <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern%2A>를 사용하여 패턴을 검색할 수 없다는 의미입니다. 캐시 된 패턴에서와 같은 배열 속성을 검색 하는 메서드를 호출할 수 있습니다 <xref:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.GetSelection%2A?displayProperty=nameWithType>, 있지만 컨트롤에서와 같은 작업을 수행 하는 not <xref:System.Windows.Automation.InvokePattern.Invoke%2A?displayProperty=nameWithType>합니다.  
+ <xref:System.Windows.Automation.AutomationElement>를 검색할 때, 캐시되지 않은 속성 및 패턴을 비롯하여 해당 요소의 모든 속성 및 패턴에 대해 기본적으로 액세스할 수 있습니다. 하지만 효율성을 높이기 위해 <xref:System.Windows.Automation.CacheRequest.AutomationElementMode%2A> 의 <xref:System.Windows.Automation.CacheRequest> 속성을 <xref:System.Windows.Automation.AutomationElementMode.None>으로 설정하여 요소에 대한 참조가 캐시된 데이터만 나타내도록 지정할 수 있습니다. 이 경우, 검색된 요소의 캐시되지 않은 속성 및 패턴에는 액세스할 수 없습니다. 이는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> 또는 `Current` 의 <xref:System.Windows.Automation.AutomationElement> 속성이나 컨트롤 패턴을 통해 속성에 액세스할 수 없으며 <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> 또는 <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern%2A>를 사용하여 패턴을 검색할 수 없다는 의미입니다. 캐시 된 패턴에서와 같은 배열 속성을 검색 하는 메서드를 호출할 수 있습니다 <xref:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.GetSelection%2A?displayProperty=nameWithType>, 하지만 같은 컨트롤에 작업을 수행 하는 not <xref:System.Windows.Automation.InvokePattern.Invoke%2A?displayProperty=nameWithType>합니다.  
   
  개체를 완전히 참조할 필요가 없는 응용 프로그램의 예로는 화면 판독기가 있습니다. 이 응용 프로그램은 창에 있는 요소의 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A> 및 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType%2A> 속성을 프리페치하지만 <xref:System.Windows.Automation.AutomationElement> 개체 자체가 필요하지 않습니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "33410314"
 ## <a name="activating-the-cacherequest"></a>CacheRequest 활성화  
  캐싱은 현재 스레드에 대해 <xref:System.Windows.Automation.AutomationElement> 가 활성 상태일 때 <xref:System.Windows.Automation.CacheRequest> 개체가 검색되는 경우에만 수행됩니다. <xref:System.Windows.Automation.CacheRequest>를 활성화하는 방법은 두 가지입니다.  
   
- 일반적인 방법은 <xref:System.Windows.Automation.CacheRequest.Activate%2A>를 호출하는 것입니다. 이 메서드는 <xref:System.IDisposable>을 구현하는 개체를 반환합니다. <xref:System.IDisposable> 개체가 존재하는 한 이 요청은 활성 상태로 유지됩니다. 내에서 호출을 포함 하는 개체의 수명을 제어 하는 가장 쉬운 방법은 `using` (C#) 또는 `Using` 블록 (Visual Basic). 이렇게 하면 예외가 발생하더라도 요청이 스택에서 팝됩니다.  
+ 일반적인 방법은 <xref:System.Windows.Automation.CacheRequest.Activate%2A>를 호출하는 것입니다. 이 메서드는 <xref:System.IDisposable>을 구현하는 개체를 반환합니다. <xref:System.IDisposable> 개체가 존재하는 한 이 요청은 활성 상태로 유지됩니다. 개체의 수명을 제어 하는 가장 쉬운 방법은 내에서 호출을 포함 하는 것을 `using` (C#) 또는 `Using` 블록 (Visual Basic). 이렇게 하면 예외가 발생하더라도 요청이 스택에서 팝됩니다.  
   
  다른 방법으로는 <xref:System.Windows.Automation.CacheRequest.Push%2A>를 호출하는 것이며, 이 방법은 캐시 요청을 중첩할 때 유용합니다. 이렇게 하면 스택에 요청이 배치되고 활성화됩니다. 이 요청은 <xref:System.Windows.Automation.CacheRequest.Pop%2A>에 의해 스택에서 제거될 때까지 활성 상태로 유지됩니다. 다른 요청이 스택에 푸시되면 이 요청이 일시적으로 비활성 상태가 되고 스택 맨 위의 요청만 활성 상태로 유지됩니다.  
   
@@ -107,4 +107,4 @@ ms.locfileid: "33410314"
 ## <a name="see-also"></a>참고 항목  
  [클라이언트용 UI 자동화 이벤트](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
  [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [FetchTimer 샘플](http://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)
+ [FetchTimer 샘플](https://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)

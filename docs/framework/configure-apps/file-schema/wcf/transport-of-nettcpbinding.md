@@ -2,15 +2,15 @@
 title: '&lt;netTcpBinding&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6
-ms.openlocfilehash: 9369351e4e197f321feb4ae56939bec2a8280a64
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 8c2a0de73db2ec4a1c2150fc7e62b7a3a9f086bc
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752561"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43474007"
 ---
 # <a name="lttransportgt-of-ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;의 &lt;transport&gt;
-구성 된 끝점에 대 한 메시지 수준 보안 요구 사항 형식을 정의 하는 [ \<netTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)합니다.  
+구성 된 끝점에 대 한 메시지 수준 보안 요구 사항 형식을 정의 합니다 [ \<netTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)합니다.  
   
  \<system.ServiceModel>  
 \<바인딩 >  
@@ -48,7 +48,7 @@ ms.locfileid: "32752561"
 |---------------|-----------------|  
 |clientCredentialType|선택 사항입니다. 전송 보안을 사용하여 클라이언트 인증을 수행할 때 사용되는 자격 증명의 형식을 지정합니다.<br /><br /> -기본값은 `Windows`합니다.<br />-이 특성은 형식 <xref:System.ServiceModel.TcpClientCredentialType>합니다.|  
 |protectionLevel|선택 사항입니다. TCP 전송의 수준에 보안을 정의합니다. 메시지 서명은 메시지 전송 과정에서 제3자가 메시지를 위조할 수 있는 위험을 줄입니다. 암호화는 전송 과정에서 데이터 수준의 개인 정보 보호를 제공합니다.<br /><br /> 기본값은 `EncryptAndSign`입니다.|  
-|sslProtocols|지원되는 SslProtocols를 지정하는 SslProtocols 열거형 플래그 값입니다. 기본값은 Tls&#124;Tls11&#124;t l s 12입니다.|  
+|sslProtocols|지원되는 SslProtocols를 지정하는 SslProtocols 열거형 플래그 값입니다. 기본값은 Tls&#124;Tls11&#124;Tls12 합니다.|  
 |policyEnforcement|이 열거형은 <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>가 적용되는 경우를 지정합니다.<br /><br /> 1.  Never - 정책이 적용되지 않습니다(확장 보호가 사용되지 않음).<br />2.  WhenSupported – 클라이언트에서 확장 보호를 지원하는 경우에만 정책이 적용됩니다.<br />3.  Always – 정책이 항상 적용됩니다. 확장 보호를 지원하지 않는 클라이언트는 인증되지 않습니다.|  
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 특성  
@@ -65,7 +65,7 @@ ms.locfileid: "32752561"
 |-----------|-----------------|  
 |없음|보호되지 않습니다.|  
 |Sign|메시지가 서명됩니다.|  
-|EncryptAndSign|-메시지가 암호화 되 고 서명 합니다.|  
+|EncryptAndSign|-메시지가 암호화 되 고 서명 됩니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -74,7 +74,7 @@ ms.locfileid: "32752561"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)|보안 기능을 지정 된 [ \<netTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)합니다.|  
+|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)|보안 기능을 지정 합니다 [ \<netTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)합니다.|  
   
 ## <a name="remarks"></a>설명  
  SOAP 메시지의 무결성 및 기밀성과 상호 인증을 위해 전송 보안을 사용합니다. 바인딩에서 이 보안 모드를 선택하면 보안 전송을 사용하여 채널 스택이 구성되고 Windows(협상) 또는 SSL over TCP 같은 전송 보안을 사용하여 SOAP 메시지가 보안됩니다.  
@@ -87,5 +87,5 @@ ms.locfileid: "32752561"
  [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

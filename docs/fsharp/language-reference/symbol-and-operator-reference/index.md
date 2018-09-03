@@ -2,12 +2,12 @@
 title: 기호 및 연산자 참조(F#)
 description: '기호 및 F # 프로그래밍 언어에서 사용 되는 연산자에 알아봅니다.'
 ms.date: 04/04/2018
-ms.openlocfilehash: 79518b990f3a5c794f7658490bdadc2d5b985504
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a52fc7539027f0cf86a82223a5970d86d7ec60c5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33566706"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43457202"
 ---
 # <a name="symbol-and-operator-reference"></a>기호 및 연산자 참조
 
@@ -82,10 +82,10 @@ ms.locfileid: "33566706"
 |`=?`|[null 허용 연산자](nullable-operators.md)|<ul><li>우변이 nullable 형식이면 "같음" 연산을 계산합니다.<br /></li><ul/>|
 |`==`|해당 사항 없음.|<ul><li>F#에서 사용되지 않습니다. 같음 연산에는 `=`를 사용합니다.<br /></li><ul/>|
 |`>`|[산술 연산자](arithmetic-operators.md)|<ul><li>좌변이 우변보다 크면 `true`를 반환하고 작거나 같으면 `false`를 반환합니다.<br /></li><ul/>|
-|`>?`|[null 허용 연산자](nullable-operators.md)|<ul><li>우변이 nullable 형식이면 "보다 큼" 연산을 계산합니다.<br /></li><ul/>|
+|`>?`|[null 허용 연산자](nullable-operators.md)|<ul><li>우변이 nullable 형식이 면 "보다 큼" 작업을 계산 합니다.<br /></li><ul/>|
 |`>>`|[함수](../functions/index.md)|<ul><li>두 함수를 작성합니다(정방향 컴퍼지션 연산자).<br /></li><ul/>|
 |`>>>`|[비트 연산자](bitwise-operators.md)|<ul><li>좌변의 수량 비트를 우변에 지정된 자릿수만큼 우변으로 시프트합니다.<br /></li><ul/>|
-|`>=`|[산술 연산자](arithmetic-operators.md)|<ul><li>반환 `true` 좌 변이 우변과 오른쪽; 보다 크거나 같지 않으면, 반환 `false`합니다.<br /></li><ul/>|
+|`>=`|[산술 연산자](arithmetic-operators.md)|<ul><li>반환 `true` 왼쪽 오른쪽; 보다 크거나 그렇지 않은 경우 반환 `false`합니다.<br /></li><ul/>|
 |`>=?`|[null 허용 연산자](nullable-operators.md)|<ul><li>우변이 nullable 형식이면 "크거나 같음" 연산을 계산합니다.<br /></li><ul/>|
 |`?`|[매개 변수 및 인수](../parameters-and-arguments.md)|<ul><li>선택적 인수를 지정합니다.<br /></li><li>동적 메서드 및 속성 호출을 위한 연산자로 사용됩니다. 고유한 구현을 제공해야 합니다.<br /></li><ul/>|
 |`? ... <- ...`|추가 정보가 제공되지 않습니다.|<ul><li>동적 속성 설정 위한 연산자로 사용됩니다. 고유한 구현을 제공해야 합니다.<br /></li><ul/>|

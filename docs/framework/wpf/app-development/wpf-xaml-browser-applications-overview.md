@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XAML browser applications (XBAP)
 - browser-hosted applications [WPF]
 ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
-ms.openlocfilehash: cdd636a1854b891605abadaf31b1667e235eea92
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: 8121b6e8c5a136f5f89b59636a7cb7f15794164a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253200"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43462481"
 ---
 # <a name="wpf-xaml-browser-applications-overview"></a>WPF XAML 브라우저 응용 프로그램 개요
 <a name="introduction"></a>
@@ -35,7 +35,7 @@ ms.locfileid: "43253200"
   
 <a name="creating_a_new_xaml_browser_application_xbap"></a>   
 ## <a name="creating-a-new-xaml-browser-application-xbap"></a>새 XBAP(XAML 브라우저 응용 프로그램) 만들기  
- 새 XBAP 프로젝트를 만드는 가장 간단한 방법은 Microsoft Visual Studio를 사용 하 여 합니다. 새 프로젝트를 만들려면 템플릿 목록에서 **WPF 브라우저 응용 프로그램**을 선택합니다. 자세한 내용은 [방법: 새 WPF 브라우저 응용 프로그램 프로젝트 만들기](http://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f)를 참조하세요.  
+ 새 XBAP 프로젝트를 만드는 가장 간단한 방법은 Microsoft Visual Studio를 사용 하 여 합니다. 새 프로젝트를 만들려면 템플릿 목록에서 **WPF 브라우저 응용 프로그램**을 선택합니다. 자세한 내용은 [방법: 새 WPF 브라우저 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f)를 참조하세요.  
   
  XBAP 프로젝트를 실행하면 독립 실행형 창이 아닌 브라우저 창에서 열립니다. Visual Studio에서 XBAP를 디버깅 하면 응용 프로그램이 인터넷 영역 권한으로 실행 되 고 해당 권한을 초과 하는 경우에 따라서 보안 예외를 throw 합니다. 자세한 내용은 [보안](../../../../docs/framework/wpf/security-wpf.md) 및 [WPF 부분 신뢰 보안](../../../../docs/framework/wpf/wpf-partial-trust-security.md)을 참조하세요.  
   
@@ -92,7 +92,7 @@ ms.locfileid: "43253200"
   
 <a name="communicating_with_the_host_web_page"></a>   
 ## <a name="communicating-with-the-host-web-page"></a>호스트 웹 페이지와 통신  
- 응용 프로그램이 HTML 프레임에서 호스팅되는 경우 XBAP가 포함된 웹 페이지와 통신할 수 있습니다. 검색 하 여이 작업을 수행 합니다 <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> 속성의 <xref:System.Windows.Interop.BrowserInteropHelper>합니다. 이 속성은 HTML 창을 나타내는 스크립트 개체를 반환합니다. 그런 다음 정규 점(dot) 구문을 사용하여 [창 개체](http://go.microsoft.com/fwlink/?LinkId=160274)에서 속성, 메서드 및 이벤트에 액세스할 수 있습니다. 또한 스크립트 메서드 및 전역 변수에도 액세스할 수 있습니다. 다음 예제에서는 스크립트 개체를 검색하고 브라우저를 닫는 방법을 보여 줍니다.  
+ 응용 프로그램이 HTML 프레임에서 호스팅되는 경우 XBAP가 포함된 웹 페이지와 통신할 수 있습니다. 검색 하 여이 작업을 수행 합니다 <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> 속성의 <xref:System.Windows.Interop.BrowserInteropHelper>합니다. 이 속성은 HTML 창을 나타내는 스크립트 개체를 반환합니다. 그런 다음 정규 점(dot) 구문을 사용하여 [창 개체](https://go.microsoft.com/fwlink/?LinkId=160274)에서 속성, 메서드 및 이벤트에 액세스할 수 있습니다. 또한 스크립트 메서드 및 전역 변수에도 액세스할 수 있습니다. 다음 예제에서는 스크립트 개체를 검색하고 브라우저를 닫는 방법을 보여 줍니다.  
   
  [!code-csharp[XbapBrowserInterop#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml.cs#10)]
  [!code-vb[XbapBrowserInterop#10](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]  
@@ -176,7 +176,7 @@ ms.locfileid: "43253200"
 > [!NOTE]
 >  위의 표에 설명된 동작은 ClickOnce 신뢰 배포 모델을 따르지 않는 완전 신뢰 XBAP에 대한 것입니다.  
   
- 완전 신뢰 XBAP를 배포하는 데 ClickOnce 신뢰 배포 모델을 사용하는 것이 좋습니다. 이 모델을 통해 보안 영역에 관계없이 XBAP에 완전 신뢰를 자동으로 부여할 수 있으므로 사용자에게 확인 메시지가 표시되지 않습니다. 이 모델의 일부로, 신뢰할 수 있는 게시자의 인증서로 응용 프로그램을 서명해야 합니다. 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](/visualstudio/deployment/trusted-application-deployment-overview) 및 [코드 서명 소개](http://go.microsoft.com/fwlink/?LinkId=166327)를 참조하세요.  
+ 완전 신뢰 XBAP를 배포하는 데 ClickOnce 신뢰 배포 모델을 사용하는 것이 좋습니다. 이 모델을 통해 보안 영역에 관계없이 XBAP에 완전 신뢰를 자동으로 부여할 수 있으므로 사용자에게 확인 메시지가 표시되지 않습니다. 이 모델의 일부로, 신뢰할 수 있는 게시자의 인증서로 응용 프로그램을 서명해야 합니다. 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](/visualstudio/deployment/trusted-application-deployment-overview) 및 [코드 서명 소개](https://go.microsoft.com/fwlink/?LinkId=166327)를 참조하세요.  
   
 <a name="xbap_start_time_performance_considerations"></a>   
 ## <a name="xbap-start-time-performance-considerations"></a>XBAP 시작 시간 성능 고려 사항  

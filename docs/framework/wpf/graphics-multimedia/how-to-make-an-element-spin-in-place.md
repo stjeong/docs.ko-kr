@@ -5,22 +5,22 @@ helpviewer_keywords:
 - graphics [WPF], spinning elements
 - spinning elements [WPF]
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c
-ms.openlocfilehash: a37952af621c79d231b45a247c92d3576a533580
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 56385d7c31465e25f19486ea5cdaa8876cdb30ff
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33562513"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43461633"
 ---
 # <a name="how-to-make-an-element-spin-in-place"></a>방법: 현재 위치에서 요소가 회전하도록 만들기
-요소를 사용 하 여 회전 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.RotateTransform> 및 <xref:System.Windows.Media.Animation.DoubleAnimation>합니다.  
+이 예제에서는 요소를 사용 하 여 회전 하는 <xref:System.Windows.Media.RotateTransform> 및 <xref:System.Windows.Media.Animation.DoubleAnimation>합니다.  
   
- 다음 예제에서는 적용는 <xref:System.Windows.Media.RotateTransform> 에 <xref:System.Windows.UIElement.RenderTransform%2A> 요소의 속성입니다. 이 예제에서는 사용는 <xref:System.Windows.Media.Animation.DoubleAnimation> 애니메이션 효과를 줄의 <xref:System.Windows.Media.RotateTransform.Angle%2A> 의 <xref:System.Windows.Media.RotateTransform>합니다. 이 예제에서는 요소를 현재 위치에서 회전을 하려면 설정는 <xref:System.Windows.UIElement.RenderTransformOrigin%2A> 점 (0.5, 0.5)는 요소의 속성입니다.  
+ 다음 예제에서는 합니다 <xref:System.Windows.Media.RotateTransform> 에 <xref:System.Windows.UIElement.RenderTransform%2A> 요소의 속성입니다. 예제에서는 <xref:System.Windows.Media.Animation.DoubleAnimation> 애니메이션 효과를 주는 합니다 <xref:System.Windows.Media.RotateTransform.Angle%2A> 의 <xref:System.Windows.Media.RotateTransform>합니다. 이 예제에서는 요소 위치에 실행 되도록 설정 된 <xref:System.Windows.UIElement.RenderTransformOrigin%2A> 점 (0.5, 0.5) 요소의 속성입니다.  
   
 ## <a name="example"></a>예제  
  [!code-xaml[transformanimations_snip#11](../../../../samples/snippets/xaml/VS_Snippets_Wpf/transformanimations_snip/XAML/RotateAboutCenterExample.xaml#11)]  
   
- 더 많은 변환 예제를 포함 하는 전체 샘플을 참조 하십시오. [2 차원 변환은 샘플](http://go.microsoft.com/fwlink/?LinkID=158252)합니다.  
+ 추가 변환 예제를 포함 하는 전체 샘플을 참조 하세요 [2 차원 변환 샘플](https://go.microsoft.com/fwlink/?LinkID=158252)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  

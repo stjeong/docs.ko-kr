@@ -2,12 +2,12 @@
 title: SQL Server 데이터 형식 매핑
 ms.date: 03/30/2017
 ms.assetid: fafdc31a-f435-4cd3-883f-1dfadd971277
-ms.openlocfilehash: 26ba7aa730eb9c30cfeaf50c59d6b9721fe5857d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9bc2747dff7b6f2bffdca4186519f2a36083e5f0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33362467"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43456398"
 ---
 # <a name="sql-server-data-type-mappings"></a>SQL Server 데이터 형식 매핑
 SQL Server와 .NET Framework는 서로 다른 형식 시스템을 기반으로 합니다. 예를 들어 .NET Framework <xref:System.Decimal> 구조의 최대 자릿수는 28인 반면 SQL Server decimal 및 숫자 데이터 형식의 최대 자릿수는 38입니다. 데이터를 읽거나 쓸 때 데이터 무결성을 유지하기 위해 <xref:System.Data.SqlClient.SqlDataReader>는 <xref:System.Data.SqlTypes>의 개체를 반환하는 SQL Server 관련 형식화된 접근자 메서드 및 .NET Framework 형식을 반환하는 접근자 메서드를 노출합니다. SQL Server 형식 및 .NET Framework 형식 모두 <xref:System.Data.DbType> 데이터 형식을 지정할 때 사용할 수 있는 <xref:System.Data.SqlDbType> 및 <xref:System.Data.SqlClient.SqlParameter> 클래스에 열거형으로 표시됩니다.  
@@ -49,15 +49,16 @@ SQL Server와 .NET Framework는 서로 다른 형식 시스템을 기반으로 �
 |varchar|문자열<br /><br /> Char[]|<xref:System.Data.SqlDbType.VarChar>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlString%2A>|<xref:System.Data.DbType.AnsiString>, <xref:System.Data.DbType.String>|<xref:System.Data.SqlClient.SqlDataReader.GetString%2A><br /><br /> <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A>|  
 |xml|Xml|<xref:System.Data.SqlDbType.Xml>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlXml%2A>|<xref:System.Data.DbType.Xml>|없음|  
   
-<sup>1</sup> 설정할 수 없습니다.는 `DbType` 속성은 `SqlParameter` 를 `SqlDbType.Date`합니다.  
-<sup>2</sup> 의 기본 형식을 알고 있으면 형식화 된 특정 접근자를 사용 하 여는 `sql_variant`합니다.  
+<sup>1</sup> 설정할 수 없습니다 합니다 `DbType` 의 속성을 `SqlParameter` 에 `SqlDbType.Date`입니다.  
+<sup>2</sup> 의 기본 형식을 알고 있으면 형식화 된 특정 접근자를 사용 하 여 `sql_variant`입니다.  
   
-## <a name="sql-server-books-online-reference"></a>SQL Server 온라인 설명서 참조  
- SQL Server 데이터 형식에 대 한 자세한 내용은 참조 [데이터 형식 (데이터베이스 엔진)](http://go.microsoft.com/fwlink/?LinkID=107468)합니다.  
+## <a name="sql-server-documentation"></a>SQL Server 설명서
+
+SQL Server 데이터 형식에 대 한 자세한 내용은 참조 하세요. [데이터 형식 (Transact SQL)](/sql/t-sql/data-types/data-types-transact-sql)합니다.
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 데이터 형식 및 ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
  [SQL Server 이진 및 큰 값 데이터](../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
  [ADO.NET에서 데이터 형식 매핑](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
  [매개 변수 및 매개 변수 데이터 형식 구성](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

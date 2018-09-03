@@ -2,12 +2,12 @@
 title: 집계 쿼리
 ms.date: 03/30/2017
 ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
-ms.openlocfilehash: e4d5e0a9dc1ffb0bf1857fee788d46947f3901d4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1c8f6191cfb832a71bd32c60db492eafb8ca22ca
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358845"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43464155"
 ---
 # <a name="aggregate-queries"></a>집계 쿼리
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 `Average`, `Count`, `Max`, `Min` 및 `Sum` 집계 연산자가 지원됩니다. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 집계 연산자의 다음과 같은 특징에 유의하세요.  
@@ -18,11 +18,11 @@ ms.locfileid: "33358845"
   
 -   집계 쿼리는 일반적으로 컬렉션 대신 숫자를 반환합니다.  
   
-     자세한 내용은 참조 [집계 작업](http://msdn.microsoft.com/library/36d97c83-5de5-457d-971d-10a69365e7c4)합니다.  
+     자세한 내용은 [집계 작업](https://msdn.microsoft.com/library/36d97c83-5de5-457d-971d-10a69365e7c4)합니다.  
   
 -   익명 형식에 대해서 집계를 호출할 수 없습니다.  
   
- 다음 항목의 예제에서는 Northwind 샘플 데이터베이스를 사용합니다. 자세한 내용은 참조 [샘플 데이터베이스 다운로드](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)합니다.  
+ 다음 항목의 예제에서는 Northwind 샘플 데이터베이스를 사용합니다. 자세한 내용은 [샘플 데이터베이스 다운로드](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [숫자 시퀀스에서 평균 값 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-average-value-from-a-numeric-sequence.md)  

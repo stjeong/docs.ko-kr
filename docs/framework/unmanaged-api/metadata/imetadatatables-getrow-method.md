@@ -18,11 +18,11 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: d24dbcbdd8b0ed0736f7b59564cf72dffaa5a8f8
-ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43331335"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463954"
 ---
 # <a name="imetadatatablesgetrow-method"></a>IMetaDataTables::GetRow 메서드
 지정된 된 테이블 인덱스에 있는 표에 지정 된 행 인덱스에 행을 가져옵니다.  

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 3d51ba59-3adb-4ca4-bd33-5027531af687
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 0f2126a83e6a5638eb492bb2a529dbf4cdab1714
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 69c7e30168686eeb7d530b167b1f87c567c63874
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33408634"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463197"
 ---
 # <a name="how-to-debug-claims-aware-applications-and-services-using-wif-tracing"></a>방법: WIF 추적을 사용하여 클레임 인식 응용 프로그램 및 서비스 디버그
 ## <a name="applies-to"></a>적용 대상  
@@ -77,14 +77,14 @@ ms.locfileid: "33408634"
     </system.diagnostics>  
     ```  
   
-3.  위의 구성은 WIF에 자세한 추적 이벤트를 생성하고 *WIFTrace.e2e* 파일에 기록하도록 지시합니다. **switchValue** 스위치에 대한 값의 전체 목록은 [추적 구성](http://msdn.microsoft.com/library/ms733025.aspx) 항목에 있는 추적 수준 표를 참조하세요.  
+3.  위의 구성은 WIF에 자세한 추적 이벤트를 생성하고 *WIFTrace.e2e* 파일에 기록하도록 지시합니다. **switchValue** 스위치에 대한 값의 전체 목록은 [추적 구성](../wcf/diagnostics/tracing/configuring-tracing.md) 항목에 있는 추적 수준 표를 참조하세요.  
   
 ## <a name="step-2--analyze-wif-trace-files-using-trace-viewer-tool"></a>2단계 - 추적 뷰어 도구를 사용하여 WIF 추적 파일 분석  
  이 단계에서는 추적 뷰어 도구(SvcTraceViewer.exe)를 사용하여 WIF 추적 로그를 분석합니다.  
   
 #### <a name="to-analyze-wif-trace-logs-using-trace-viewer-tool-svctraceviewerexe"></a>추적 뷰어 도구(SvcTraceViewer.exe)를 사용하여 WIF 추적 로그를 분석하려면  
   
-1.  추적 뷰어 도구(SvcTraceViewer.exe)는 Windows SDK의 일부로 제공됩니다. Windows SDK를 아직 설치하지 않은 경우 [Windows SDK](http://www.microsoft.com/download/en/details.aspx?id=8279)에서 다운로드할 수 있습니다.  
+1.  추적 뷰어 도구(SvcTraceViewer.exe)는 Windows SDK의 일부로 제공됩니다. Windows SDK를 아직 설치하지 않은 경우 [Windows SDK](https://www.microsoft.com/download/en/details.aspx?id=8279)에서 다운로드할 수 있습니다.  
   
 2.  추적 뷰어 도구(SvcTraceViewer.exe)를 실행합니다. 일반적으로 설치 경로의 **Bin** 폴더에서 사용할 수 있습니다.  
   
@@ -105,8 +105,8 @@ ms.locfileid: "33408634"
   
 |**오류 ID**|**오류 메시지**|**오류를 해결하는 데 필요한 작업**|  
 |-|-|-|  
-|ID4175|보안 토큰의 발급자가 IssuerNameRegistry에서 인식되지 않았습니다.  이 발급자의 보안 토큰을 수락하려면 이 발급자에 대한 유효한 이름을 반환하도록 IssuerNameRegistry를 구성합니다.|MMC 스냅인에서 지문을 복사하고 *Web.config* 파일에 붙여넣으면 이 오류가 발생할 수 있습니다. 특히, 인증서 속성 창에서 복사하는 경우 텍스트 문자열에서 인쇄할 수 없는 추가 문자를 가져올 수 있습니다. 이 추가 문자로 인해 지문 일치가 실패 합니다. 지문을 올바르게 복사 하는 절차는 여기에서 확인할 수 있습니다. [http://msdn.microsoft.com/library/ff359102.aspx](http://msdn.microsoft.com/library/ff359102.aspx)|  
+|ID4175|보안 토큰의 발급자가 IssuerNameRegistry에서 인식되지 않았습니다.  이 발급자의 보안 토큰을 수락하려면 이 발급자에 대한 유효한 이름을 반환하도록 IssuerNameRegistry를 구성합니다.|MMC 스냅인에서 지문을 복사하고 *Web.config* 파일에 붙여넣으면 이 오류가 발생할 수 있습니다. 특히, 인증서 속성 창에서 복사하는 경우 텍스트 문자열에서 인쇄할 수 없는 추가 문자를 가져올 수 있습니다. 이 추가 문자로 인해 지문 일치가 실패 합니다. 합니다. 지문을 올바르게 복사 하는 절차는 여기에서 찾을 수 있습니다. [http://msdn.microsoft.com/library/ff359102.aspx](https://msdn.microsoft.com/library/ff359102.aspx)|  
   
 ## <a name="related-items"></a>관련 항목  
   
--   [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](http://msdn.microsoft.com/library/aa751795.aspx)
+-   [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](../wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

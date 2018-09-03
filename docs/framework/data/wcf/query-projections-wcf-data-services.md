@@ -10,15 +10,15 @@ helpviewer_keywords:
 - query projection [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
-ms.openlocfilehash: ca989c1cd7baa1eaeb10c65bd9ebef8e400968c3
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: d53892f9823474ea14640e352548b55432e7744b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43255224"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43461065"
 ---
 # <a name="query-projections-wcf-data-services"></a>쿼리 프로젝션(WCF Data Services)
-프로젝션에 메커니즘을 제공 합니다 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 엔터티의 특정 속성만 응답에서 반환 되는 지정 하 여 쿼리에서 반환 되는 피드의 데이터 양을 줄일 수 있습니다. 자세한 내용은 [OData: Select 시스템 쿼리 옵션 ($select)](http://go.microsoft.com/fwlink/?LinkId=186076)합니다.  
+프로젝션에 메커니즘을 제공 합니다 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 엔터티의 특정 속성만 응답에서 반환 되는 지정 하 여 쿼리에서 반환 되는 피드의 데이터 양을 줄일 수 있습니다. 자세한 내용은 [OData: Select 시스템 쿼리 옵션 ($select)](https://go.microsoft.com/fwlink/?LinkId=186076)합니다.  
   
  이 항목에서는 쿼리 프로젝션을 정의하는 방법, 엔터티 및 비 엔터티 형식에 대한 요구 사항, 프로젝션된 결과 업데이트 및 프로젝션된 형식 만들기에 대해 설명하고 몇 가지 프로젝션 고려 사항을 제시합니다.  
   

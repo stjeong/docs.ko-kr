@@ -2,51 +2,51 @@
 title: .NET Framework 4 워크플로에서 Interop 활동 사용
 ms.date: 03/30/2017
 ms.assetid: 9bb747f0-eb33-4f70-84cd-317382372dcd
-ms.openlocfilehash: 64e8aef01aefa23dc98b42ab835de097d6c222df
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 02eeaf5bb7ff484ba5982197fc395e247cd5a87f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33520229"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466727"
 ---
 # <a name="using-the-interop-activity-in-a-net-framework-4-workflow"></a>.NET Framework 4 워크플로에서 Interop 활동 사용
 [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)] 또는 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]를 사용하여 만든 활동은 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 활동을 통해 <xref:System.Activities.Statements.Interop> 워크플로에서 사용할 수 있습니다. 이 항목에서는 <xref:System.Activities.Statements.Interop> 활동 사용에 대해 간략하게 설명합니다.  
   
 > [!NOTE]
->  <xref:System.Activities.Statements.Interop> 워크플로 프로젝트에 없는 경우 활동은 워크플로 디자이너 도구 상자에 나타나지 않습니다 해당 **대상 프레임 워크** 으로 설정 **.NET Framework 4** 이상.  
+>  합니다 <xref:System.Activities.Statements.Interop> 워크플로 프로젝트에 없는 경우 활동이 workflow designer 도구 상자에 나타나지 않습니다 해당 **대상 프레임 워크** 로 설정 **.NET Framework 4** 이상.  
   
 ## <a name="using-the-interop-activity-in-net-framework-45-workflows"></a>.NET Framework 4.5 워크플로에서 Interop 활동 사용  
  이 항목에서는 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 활동을 포함하는 `DiscountCalculator` 활동 라이브러리를 만듭니다. `DiscountCalculator`는 구매량을 기준으로 할인을 계산하며 <xref:System.Workflow.Activities.SequenceActivity>를 포함하는 <xref:System.Workflow.Activities.PolicyActivity>로 구성됩니다.  
   
 > [!NOTE]
->  이 항목에서 만드는 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 활동은 <xref:System.Workflow.Activities.PolicyActivity>를 사용하여 활동 논리를 구현합니다. [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 워크플로에서 규칙을 사용하기 위해 사용자 지정 <xref:System.Activities.Statements.Interop> 활동이나 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 활동을 사용할 필요는 없습니다. 규칙을 사용 하는 예제에 대 한 한 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 워크플로 사용 하지 않고는 <xref:System.Activities.Statements.Interop> 활동 참조는 [.NET Framework 4.5에서 정책 작업](../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md) 샘플.  
+>  이 항목에서 만드는 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 활동은 <xref:System.Workflow.Activities.PolicyActivity>를 사용하여 활동 논리를 구현합니다. [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 워크플로에서 규칙을 사용하기 위해 사용자 지정 <xref:System.Activities.Statements.Interop> 활동이나 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 활동을 사용할 필요는 없습니다. 규칙을 사용 하는 예는 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 사용 하지 않고 워크플로 <xref:System.Activities.Statements.Interop> 활동 참조는 [.NET Framework 4.5의 정책 작업](../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md) 샘플.  
   
 #### <a name="to-create-the-net-framework-35-activity-library-project"></a>.NET Framework 3.5 활동 라이브러리 프로젝트를 만들려면  
   
-1.  열기 [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] 선택 **새로** 차례로 **프로젝트...** **파일** 메뉴.  
+1.  오픈 [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] 선택한 **새로 만들기** 차례로 **프로젝트...** **파일** 메뉴.  
   
-2.  확장 된 **기타 프로젝트 형식** 에서 노드는 **설치 된 템플릿** 창과 선택 **Visual Studio 솔루션**합니다.  
+2.  확장을 **기타 프로젝트 형식** 에서 노드를 **설치 된 템플릿** 창과 선택 **Visual Studio 솔루션**합니다.  
   
-3.  선택 **빈 솔루션** 에서 **Visual Studio 솔루션** 목록입니다. 형식 `PolicyInteropDemo` 에 **이름** 상자 한 클릭 **확인**합니다.  
+3.  선택 **빈 솔루션** 에서 합니다 **Visual Studio 솔루션** 목록입니다. 형식 `PolicyInteropDemo` 에 **이름** 상자 하 고 클릭 **확인**합니다.  
   
-4.  마우스 오른쪽 단추로 클릭 **PolicyInteropDemo** 에 **솔루션 탐색기** 선택 **추가** 차례로 **새 프로젝트...** .  
+4.  마우스 오른쪽 단추로 클릭 **PolicyInteropDemo** 에 **솔루션 탐색기** 선택한 **추가** 차례로 **새 프로젝트...** .  
   
     > [!TIP]
-    >  경우는 **솔루션 탐색기** 창이 표시, 선택 되지 않으면 **솔루션 탐색기** 에서 **보기** 메뉴.  
+    >  경우는 **솔루션 탐색기** 창이 표시, 선택 되지 않으면 **솔루션 탐색기** 에서 합니다 **뷰** 메뉴.  
   
-5.  에 **설치 된 템플릿** 목록에서 **Visual C#** 차례로 **워크플로**합니다. 선택 **.NET Framework 3.5** 선택 고.NET Framework 버전 드롭다운 목록에서 **워크플로 활동 라이브러리** 에서 **템플릿** 목록입니다.  
+5.  에 **설치 된 템플릿** 목록에서 **Visual C#** 차례로 **워크플로**합니다. 선택 **.NET Framework 3.5** .NET Framework 버전 드롭다운 목록에서 선택 **Workflow Activity Library** 에서 합니다 **템플릿** 목록입니다.  
   
-6.  형식 `PolicyActivityLibrary` 에 **이름** 상자 한 클릭 **확인**합니다.  
+6.  형식 `PolicyActivityLibrary` 에 **이름** 상자 하 고 클릭 **확인**합니다.  
   
-7.  마우스 오른쪽 단추로 클릭 **Activity1.cs** 에 **솔루션 탐색기** 선택 **삭제**합니다. **확인** 을 클릭하여 확인합니다.  
+7.  마우스 오른쪽 단추로 클릭 **Activity1.cs** 에 **솔루션 탐색기** 선택한 **삭제**합니다. **확인** 을 클릭하여 확인합니다.  
   
 #### <a name="to-create-the-discountcalculator-activity"></a>DiscountCalculator 활동을 만들려면  
   
-1.  마우스 오른쪽 단추로 클릭 **PolicyActivityLibrary** 에 **솔루션 탐색기** 선택 **추가** 차례로 **활동 중...** .  
+1.  마우스 오른쪽 단추로 클릭 **PolicyActivityLibrary** 에 **솔루션 탐색기** 선택한 **추가** 차례로 **작업 하는 중...** .  
   
-2.  선택 **활동 (코드 분리)** 에서 **Visual C# 항목** 목록입니다. 형식 `DiscountCalculator` 에 **이름** 상자 한 클릭 **확인**합니다.  
+2.  선택 **활동 (코드 분리)** 에서 합니다 **Visual C# 항목** 목록입니다. 형식 `DiscountCalculator` 에 **이름** 상자 하 고 클릭 **확인**합니다.  
   
-3.  마우스 오른쪽 단추로 클릭 **DiscountCalculator.xoml** 에 **솔루션 탐색기** 선택 **코드 보기**합니다.  
+3.  마우스 오른쪽 단추로 클릭 **DiscountCalculator.xoml** 에 **솔루션 탐색기** 선택한 **코드 보기**합니다.  
   
 4.  `DiscountCalculator` 클래스에 다음 세 가지 속성을 추가합니다.  
   
@@ -59,33 +59,33 @@ ms.locfileid: "33520229"
     }  
     ```  
   
-5.  마우스 오른쪽 단추로 클릭 **DiscountCalculator.xoml** 에 **솔루션 탐색기** 선택 **뷰 디자이너**합니다.  
+5.  마우스 오른쪽 단추로 클릭 **DiscountCalculator.xoml** 에 **솔루션 탐색기** 선택한 **뷰 디자이너**합니다.  
   
-6.  끌어서는 **정책** 활동을는 **Windows Workflow v3.0** 섹션은 **도구 상자** 놓습니다는 **DiscountCalculator** 활동 .  
+6.  끌어서를 **정책** 활동에서는 **Windows Workflow v3.0** 부분을 **도구 상자** 놓습니다를 **DiscountCalculator** 활동 .  
   
     > [!TIP]
-    >  경우는 **도구 상자** 창이 표시, 선택 되지 않으면 **도구 상자** 에서 **보기** 메뉴.  
+    >  경우는 **도구 상자** 창이 표시, 선택 되지 않으면 **도구 상자** 에서 합니다 **뷰** 메뉴.  
   
 #### <a name="to-configure-the-rules"></a>규칙을 구성하려면  
   
-1.  새로 추가 된 클릭 **정책** 활동을 아직 선택 하지 않은 경우 선택 합니다.  
+1.  새로 추가 된 클릭 **정책** 활동이 아직 선택 하지 않은 경우 선택 합니다.  
   
-2.  클릭는 **RuleSetReference** 속성에는 **속성** 창을 선택한 속성의 오른쪽에 줄임표 단추를 클릭 합니다.  
+2.  클릭 합니다 **RuleSetReference** 속성에는 **속성** 속성의 오른쪽에 줄임표 (...) 단추를 클릭 하 고 선택한 후에 창입니다.  
   
     > [!TIP]
-    >  경우는 **속성** 창이 표시 되지 않으면, 선택 **속성 창** 에서 **보기** 메뉴.  
+    >  경우는 **속성** 창이 표시 되지 않으면, 선택 **속성 창** 에서 합니다 **뷰** 메뉴.  
   
-3.  선택 **새로 만들기...** .  
+3.  선택 **새로 만들기 클릭...** .  
   
 4.  클릭 **규칙 추가**합니다.  
   
-5.  에 다음 식을 입력는 **조건** 상자입니다.  
+5.  에 다음 식을 입력 합니다 **조건을** 상자입니다.  
   
     ```  
     this.Subtotal >= 50 && this.Subtotal < 100  
     ```  
   
-6.  에 다음 식을 입력는 **Thenactions** 상자입니다.  
+6.  에 다음 식을 입력 합니다 **Thenactions** 상자입니다.  
   
     ```  
     this.DiscountPercent = 0.075  
@@ -93,13 +93,13 @@ ms.locfileid: "33520229"
   
 7.  클릭 **규칙 추가**합니다.  
   
-8.  에 다음 식을 입력는 **조건** 상자입니다.  
+8.  에 다음 식을 입력 합니다 **조건을** 상자입니다.  
   
     ```  
     this.Subtotal >= 100  
     ```  
   
-9. 에 다음 식을 입력는 **Thenactions** 상자입니다.  
+9. 에 다음 식을 입력 합니다 **Thenactions** 상자입니다.  
   
     ```  
     this.DiscountPercent = 0.15  
@@ -107,27 +107,27 @@ ms.locfileid: "33520229"
   
 10. 클릭 **규칙 추가**합니다.  
   
-11. 에 다음 식을 입력는 **조건** 상자입니다.  
+11. 에 다음 식을 입력 합니다 **조건을** 상자입니다.  
   
     ```  
     this.DiscountPercent > 0  
     ```  
   
-12. 에 다음 식을 입력는 **Thenactions** 상자입니다.  
+12. 에 다음 식을 입력 합니다 **Thenactions** 상자입니다.  
   
     ```  
     this.Total = this.Subtotal - this.Subtotal * this.DiscountPercent  
     ```  
   
-13. 에 다음 식을 입력는 **Else 작업** 상자입니다.  
+13. 에 다음 식을 입력 합니다 **Else 작업** 상자입니다.  
   
     ```  
     this.Total = this.Subtotal  
     ```  
   
-14. 클릭 **확인** 를 닫으려면는 **규칙 집합 편집기** 대화 상자.  
+14. 클릭 **확인** 닫으려면 합니다 **규칙 집합 편집기** 대화 상자.  
   
-15. 새로 작성 되어 있는지 확인 <xref:System.Workflow.Activities.Rules.RuleSet> 에서 선택한는 **이름** 목록으로 이동한 클릭 **확인**합니다.  
+15. 새로 만든 했는지 <xref:System.Workflow.Activities.Rules.RuleSet> 에서 선택한는 **이름** 목록 및 클릭 **확인**합니다.  
   
 16. Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
@@ -152,25 +152,25 @@ Rule3: IF this.DiscountPercent > 0
   
 #### <a name="to-create-the-host-application"></a>호스트 응용 프로그램을 만들려면  
   
-1.  마우스 오른쪽 단추로 클릭 **PolicyInteropDemo** 에 **솔루션 탐색기** 선택 **추가**, 차례로 **새 프로젝트...** .  
+1.  마우스 오른쪽 단추로 클릭 **PolicyInteropDemo** 에 **솔루션 탐색기** 선택한 **추가**를 차례로 **새 프로젝트...** .  
   
-2.  되도록 **.NET Framework 4.5** 을.NET Framework 버전 드롭다운 목록에서 선택 하 고 선택 **워크플로 콘솔 응용 프로그램** 에서 **Visual C# 항목** 목록입니다.  
+2.  했는지 **.NET Framework 4.5** 선택한.NET Framework 버전 드롭다운 목록에서 선택한 **워크플로 콘솔 응용 프로그램** 에서 합니다 **Visual C# 항목** 목록.  
   
-3.  형식 `PolicyInteropHost` 에 **이름** 상자 한 클릭 **확인**합니다.  
+3.  형식 `PolicyInteropHost` 에 **이름** 상자 하 고 클릭 **확인**합니다.  
   
-4.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택 **속성**합니다.  
+4.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택한 **속성**합니다.  
   
-5.  에 **대상 프레임 워크** 드롭 다운 목록에서에서 선택을 변경 **.NET Framework 4 Client Profile** 를 **.NET Framework 4.5**합니다. 클릭 **예** 를 확인 합니다.  
+5.  에 **대상 프레임 워크** 드롭 다운 목록에서 선택 항목을 변경 **.NET Framework 4 Client Profile** 에 **.NET Framework 4.5**합니다. 클릭 **예** 확인 합니다.  
   
-6.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택 **참조 추가...** .  
+6.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택한 **참조 추가...** .  
   
-7.  선택 **PolicyActivityLibrary** 에서 **프로젝트** 탭을 클릭 **확인**합니다.  
+7.  선택 **PolicyActivityLibrary** 에서 합니다 **프로젝트** 탭을 클릭 **확인**합니다.  
   
-8.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택 **참조 추가...** .  
+8.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택한 **참조 추가...** .  
   
-9. 선택 **System.Workflow.Activities**, **System.Workflow.ComponentModel**, 차례로 **System.Workflow.Runtime** 에서 **.NET**탭을 클릭 **확인**합니다.  
+9. 선택 **System.Workflow.Activities**를 **System.Workflow.ComponentModel**를 차례로 **System.Workflow.Runtime** 에서 **.NET**탭을 클릭 **확인**합니다.  
   
-10. 마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택 **시작 프로젝트로 설정**합니다.  
+10. 마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택한 **시작 프로젝트로 설정**합니다.  
   
 11. Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
@@ -179,7 +179,7 @@ Rule3: IF this.DiscountPercent > 0
   
 ##### <a name="to-use-the-interop-activity-in-code"></a>코드에서 Interop 활동을 사용하려면  
   
-1.  마우스 오른쪽 단추로 클릭 **Program.cs** 에 **솔루션 탐색기** 선택 **코드 보기**합니다.  
+1.  마우스 오른쪽 단추로 클릭 **Program.cs** 에 **솔루션 탐색기** 선택한 **코드 보기**합니다.  
   
 2.  파일 맨 위에 다음 `using` 문을 추가합니다.  
   
@@ -263,49 +263,49 @@ Rule3: IF this.DiscountPercent > 0
   
 ##### <a name="to-host-the-policyactivity-using-a-workflow-designer-created-workflow"></a>워크플로 디자이너에서 만든 워크플로를 사용하여 PolicyActivity를 호스트하려면  
   
-1.  마우스 오른쪽 단추로 클릭 **Workflow1.xaml** 에 **솔루션 탐색기** 선택 **삭제**합니다. **확인** 을 클릭하여 확인합니다.  
+1.  마우스 오른쪽 단추로 클릭 **Workflow1.xaml** 에 **솔루션 탐색기** 선택한 **삭제**합니다. **확인** 을 클릭하여 확인합니다.  
   
-2.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택 **추가**, **새 항목...** .  
+2.  마우스 오른쪽 단추로 클릭 **PolicyInteropHost** 에 **솔루션 탐색기** 선택한 **추가**, **새 항목...** .  
   
-3.  확장 된 **Visual C# 항목** 노드 선택한 **워크플로**합니다. 선택 **활동** 에서 **Visual C# 항목** 목록입니다.  
+3.  확장 된 **Visual C# 항목** 노드와 선택 **워크플로**합니다. 선택 **활동** 에서 합니다 **Visual C# 항목** 목록입니다.  
   
-4.  형식 `DiscountWorkflow` 에 **이름** 상자 한 클릭 **추가**합니다.  
+4.  형식 `DiscountWorkflow` 에 **이름** 상자 하 고 클릭 **추가**합니다.  
   
-5.  클릭는 **인수** 표시 하려면 워크플로 디자이너 왼쪽 아래에서 단추는 **인수** 창.  
+5.  클릭 합니다 **인수** 표시할 워크플로 디자이너의 왼쪽 아래 단추를 **인수** 창입니다.  
   
-6.  클릭 **인수 만들기**합니다.  
+6.  클릭 **인수를 만드는**합니다.  
   
-7.  형식 `Subtotal` 에 **이름** 상자 **에** 에서 **방향** 드롭다운 목록에서 선택 **Double** 는 에서**인수 형식이** 드롭 다운 고 enter 키를 눌러 인수를 저장 합니다.  
-  
-    > [!NOTE]
-    >  경우 **Double** 에 속하지 않는 **인수 형식이** 드롭 다운 목록 **형식 찾아보기...** , 형식 `System.Double` 에 **유형 이름** 고 클릭 **확인**합니다.  
-  
-8.  클릭 **인수 만들기**합니다.  
-  
-9. 형식 `DiscountPercent` 에 **이름** 상자 **아웃** 에서 **방향** 드롭다운 목록에서 선택 **Double** 는 에서**인수 형식이** 드롭 다운 고 enter 키를 눌러 인수를 저장 합니다.  
-  
-10. 클릭 **인수 만들기**합니다.  
-  
-11. 형식 `Total` 에 **이름** 상자 **아웃** 에서 **방향** 드롭다운 목록에서 선택 **Double** 는 에서**인수 형식이** 드롭 다운 고 enter 키를 눌러 인수를 저장 합니다.  
-  
-12. 클릭는 **인수** 를 닫으려면 워크플로 디자이너 왼쪽 아래에서 단추는 **인수** 창.  
-  
-13. 끌어서는 **시퀀스** 활동을는 **제어 흐름** 의 섹션은 **도구 상자** 워크플로 디자이너 화면에 놓습니다.  
-  
-14. 끌어서는 **Interop** 활동을는 **마이그레이션** 의 섹션에서 **도구 상자** 에 놓습니다는 **시퀀스** 활동입니다.  
-  
-15. 클릭는 **Interop** 활동에는 **찾아보려면 클릭...** 레이블을 입력 합니다. **DiscountCalculator** 에 **유형 이름** 고 클릭 **확인**합니다.  
+7.  형식 `Subtotal` 에 **이름** 상자에서 **에서** 에서 합니다 **방향** 드롭다운 목록에서 선택 **Double** 합니다 에서**인수 형식** 드롭다운 목록에서 enter 키를 눌러 인수를 저장 합니다.  
   
     > [!NOTE]
-    >  <xref:System.Activities.Statements.Interop> 활동이 워크플로에 추가되고 `DiscountCalculator` 형식이 해당 <xref:System.Activities.Statements.Interop.ActivityType%2A>으로 지정되면 <xref:System.Activities.Statements.Interop> 활동은 <xref:System.Activities.ArgumentDirection.In> 활동의 세 가지 공용 속성을 나타내는 <xref:System.Activities.ArgumentDirection.Out> 인수 세 개와 `DiscountCalculator` 인수 세 개를 노출합니다. <xref:System.Activities.ArgumentDirection.In> 인수 세 가지 공용 속성 및 3으로 동일한 이름을 사용할 <xref:System.Activities.ArgumentDirection.Out> 인수와 동일한 이름을 가진 **아웃** 속성 이름에 추가 합니다. 다음 단계에서는 이전 단계에서 만든 워크플로 인수가 <xref:System.Activities.Statements.Interop> 활동의 인수에 바인딩됩니다.  
+    >  하는 경우 **이중** 에 없는 경우 합니다 **인수 형식** 드롭 다운 목록에서 **형식 찾아보기...** , 형식 `System.Double` 에 **형식 이름** 상자를 선택한 클릭 **확인**합니다.  
   
-16. 형식 `DiscountPercent` 에 **VB 식 입력** 의 오른쪽에 상자는 **DiscountPercentOut** 속성과 TAB 키를 누릅니다.  
+8.  클릭 **인수를 만드는**합니다.  
   
-17. 형식 `Subtotal` 에 **VB 식 입력** 의 오른쪽에 상자는 **Subtotal** 속성과 TAB 키를 누릅니다.  
+9. 형식 `DiscountPercent` 에 **이름** 상자에서 **Out** 에서 합니다 **방향** 드롭다운 목록에서 선택 **Double** 합니다 에서**인수 형식** 드롭다운 목록에서 enter 키를 눌러 인수를 저장 합니다.  
   
-18. 형식 `Total` 에 **VB 식 입력** 의 오른쪽에 상자는 **TotalOut** 속성과 TAB 키를 누릅니다.  
+10. 클릭 **인수를 만드는**합니다.  
   
-19. 마우스 오른쪽 단추로 클릭 **Program.cs** 에 **솔루션 탐색기** 선택 **코드 보기**합니다.  
+11. 형식 `Total` 에 **이름** 상자에서 **Out** 에서 합니다 **방향** 드롭다운 목록에서 선택 **Double** 합니다 에서**인수 형식** 드롭다운 목록에서 enter 키를 눌러 인수를 저장 합니다.  
+  
+12. 클릭 합니다 **인수** 닫습니다 워크플로 디자이너의 왼쪽 아래 단추를 **인수** 창입니다.  
+  
+13. 끌어서를 **시퀀스** 활동에서를 **제어 흐름** 섹션의 **도구 상자** 워크플로 디자이너 화면에 놓습니다.  
+  
+14. 끌어서를 **Interop** 활동에서는 **마이그레이션** 부분을 **도구 상자** 놓습니다를 **시퀀스** 활동.  
+  
+15. 클릭 합니다 **Interop** 활동에는 **찾아보려면 클릭...** 레이블을 입력 합니다 **DiscountCalculator** 에 **유형 이름** 상자를 선택한 클릭 **확인**합니다.  
+  
+    > [!NOTE]
+    >  <xref:System.Activities.Statements.Interop> 활동이 워크플로에 추가되고 `DiscountCalculator` 형식이 해당 <xref:System.Activities.Statements.Interop.ActivityType%2A>으로 지정되면 <xref:System.Activities.Statements.Interop> 활동은 <xref:System.Activities.ArgumentDirection.In> 활동의 세 가지 공용 속성을 나타내는 <xref:System.Activities.ArgumentDirection.Out> 인수 세 개와 `DiscountCalculator` 인수 세 개를 노출합니다. <xref:System.Activities.ArgumentDirection.In> 인수는 세 가지 공용 속성 및 세 가지 동일한 이름을 가질 <xref:System.Activities.ArgumentDirection.Out> 인수에 사용 하 여 동일한 이름을 가진 **Out** 속성 이름에 추가 합니다. 다음 단계에서는 이전 단계에서 만든 워크플로 인수가 <xref:System.Activities.Statements.Interop> 활동의 인수에 바인딩됩니다.  
+  
+16. 형식 `DiscountPercent` 에 **VB 식 입력** 오른쪽의 상자에는 **DiscountPercentOut** 속성과 TAB 키를 누릅니다.  
+  
+17. 형식 `Subtotal` 에 **VB 식 입력** 오른쪽의 상자에는 **Subtotal** 속성과 TAB 키를 누릅니다.  
+  
+18. 형식 `Total` 에 **VB 식 입력** 오른쪽의 상자에는 **TotalOut** 속성과 TAB 키를 누릅니다.  
+  
+19. 마우스 오른쪽 단추로 클릭 **Program.cs** 에 **솔루션 탐색기** 선택한 **코드 보기**합니다.  
   
 20. 파일 맨 위에 다음 `using` 문을 추가합니다.  
   
@@ -359,11 +359,11 @@ Rule3: IF this.DiscountPercent > 0
   
 |규칙 기능|설명서|  
 |-------------------|-------------------|  
-|규칙 개요|[Windows Workflow Foundation 규칙 엔진 소개](http://go.microsoft.com/fwlink/?LinkID=152836)|  
-|RuleSet|[워크플로에서 Ruleset 사용](http://go.microsoft.com/fwlink/?LinkId=178516) 및 <xref:System.Workflow.Activities.Rules.RuleSet>|  
-|규칙 확인|[Ruleset의 규칙 평가](http://go.microsoft.com/fwlink/?LinkId=178517)|  
-|규칙 연결|[전방 연결 제어](http://go.microsoft.com/fwlink/?LinkId=178518) 및 [규칙의 전방 연결](http://go.microsoft.com/fwlink/?LinkId=178519)|  
-|규칙에서 컬렉션 처리|[규칙에서 컬렉션 처리](http://go.microsoft.com/fwlink/?LinkId=178520)|  
-|PolicyActivity 사용|[PolicyActivity 활동 사용](http://go.microsoft.com/fwlink/?LinkId=178521) 및 <xref:System.Workflow.Activities.PolicyActivity>|  
+|규칙 개요|[Windows Workflow Foundation 규칙 엔진 소개](https://go.microsoft.com/fwlink/?LinkID=152836)|  
+|RuleSet|[워크플로에서 Ruleset 사용](https://go.microsoft.com/fwlink/?LinkId=178516) 및 <xref:System.Workflow.Activities.Rules.RuleSet>|  
+|규칙 확인|[Ruleset의 규칙 확인](https://go.microsoft.com/fwlink/?LinkId=178517)|  
+|규칙 연결|[전방 연결 제어](https://go.microsoft.com/fwlink/?LinkId=178518) 고 [규칙의 전방 연결](https://go.microsoft.com/fwlink/?LinkId=178519)|  
+|규칙에서 컬렉션 처리|[규칙에서 컬렉션 처리](https://go.microsoft.com/fwlink/?LinkId=178520)|  
+|PolicyActivity 사용|[PolicyActivity 활동](https://go.microsoft.com/fwlink/?LinkId=178521) 및 <xref:System.Workflow.Activities.PolicyActivity>|  
   
- [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]에서 만든 워크플로는 선언적 활동 조건 및 [!INCLUDE[wf1](../../../includes/wf1-md.md)], <xref:System.Workflow.Activities.ConditionedActivityGroup> 등의 조건부 활동과 같은 <xref:System.Workflow.Activities.ReplicatorActivity>에서 제공하는 모든 규칙 기능을 사용하는 것은 아닙니다. 필요할 경우 [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)] 및 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]를 사용하여 만든 워크플로에 이 기능을 사용할 수 있습니다. 자세한 내용은 참조 [마이그레이션 지침](../../../docs/framework/windows-workflow-foundation/migration-guidance.md)합니다.
+ [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]에서 만든 워크플로는 선언적 활동 조건 및 [!INCLUDE[wf1](../../../includes/wf1-md.md)], <xref:System.Workflow.Activities.ConditionedActivityGroup> 등의 조건부 활동과 같은 <xref:System.Workflow.Activities.ReplicatorActivity>에서 제공하는 모든 규칙 기능을 사용하는 것은 아닙니다. 필요할 경우 [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)] 및 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]를 사용하여 만든 워크플로에 이 기능을 사용할 수 있습니다. 자세한 내용은 [마이그레이션 지침](../../../docs/framework/windows-workflow-foundation/migration-guidance.md)합니다.

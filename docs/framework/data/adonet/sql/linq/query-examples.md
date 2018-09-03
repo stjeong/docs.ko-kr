@@ -2,18 +2,18 @@
 title: 쿼리 예제
 ms.date: 03/30/2017
 ms.assetid: 137f8677-494c-4d49-95ce-c17742f2d01f
-ms.openlocfilehash: b7fe03a951b6b8cfccc0c0bc4a1ccfc90e903dc2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 38454890e05b00cd92bca909ce0c7975f5ef1f6e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33362629"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43464356"
 ---
 # <a name="query-examples"></a>쿼리 예제
-이 섹션에서는 일반적인 Visual Basic 및 C# 예제 제공 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 쿼리 합니다. Visual Studio를 사용 하는 개발자 예제 섹션에서 사용할 수 있는 샘플 솔루션에 더 많은 예제를 찾을 수 있습니다. 자세한 내용은 참조 [샘플](../../../../../../docs/framework/data/adonet/sql/linq/samples.md)합니다.  
+이 섹션에서는 일반적인 Visual Basic 및 C# 예제 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 쿼리 합니다. Visual Studio를 사용 하는 개발자 샘플 섹션에 제공 하는 샘플 솔루션에서 더 많은 예제를 찾을 수 있습니다. 자세한 내용은 [샘플](../../../../../../docs/framework/data/adonet/sql/linq/samples.md)합니다.  
   
 > [!IMPORTANT]
->  *db* 의 코드 예제에는 대개 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 설명서입니다. *db* 인스턴스의 것으로 간주 되는 *Northwind* 클래스에서 상속 하는 <xref:System.Data.Linq.DataContext>합니다.  
+>  *db* 의 코드 예제에서는 흔히 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 설명서. *db* 의 인스턴스로 간주 됩니다는 *Northwind* 클래스에서 상속 되는 <xref:System.Data.Linq.DataContext>합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [집계 쿼리](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)  
@@ -62,10 +62,10 @@ ms.locfileid: "33362629"
  `from`, `where` 및 `select` 절에서 외래 키 탐색 사용 예제를 제공합니다.  
   
  [프로젝션 작성](../../../../../../docs/framework/data/adonet/sql/linq/formulate-projections.md)  
- 결합의 예제를 제공 `select` 과 기타 기능 (예를 들어 *익명 형식*) 쿼리 투영을 만드는 합니다.  
+ 결합 예제를 제공 `select` 다른 기능과 함께 (예를 들어 *무명 형식을*) 쿼리 투영 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [표준 쿼리 연산자 개요](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
+ [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
  표준 쿼리 연산자의 개념을 설명합니다.  
   
  [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  

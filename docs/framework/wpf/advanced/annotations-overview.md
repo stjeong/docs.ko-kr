@@ -9,17 +9,17 @@ helpviewer_keywords:
 - documents [WPF], annotations
 - sticky notes [WPF]
 ms.assetid: 716bf474-29bd-4c74-84a4-8e0744bdad62
-ms.openlocfilehash: 80555ad714ffe5cab6722d2d6d45fb6a6bb45609
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 690ec5f2bca7c10aba291cdde6e8bc455e7fd43a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33540845"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463969"
 ---
 # <a name="annotations-overview"></a>주석 개요
 종이 문서에 메모나 설명을 적는 것은 당연하게 받아들이는 매우 일반적인 행동입니다. 이러한 메모나 설명은 나중에 참조하기 위해 관심 있는 항목을 강조 표시하거나 정보를 첨부하기 위해 문서에 추가하는 "주석"입니다. 인쇄된 문서에 메모를 적는 것은 간단하고 일반적이지만 전자 문서에 개인적인 주석을 추가하는 기능은 대개 가능하더라도 매우 제한적입니다.  
   
- 이 항목에서는 몇 가지 일반적인 유형의 주석, 특히 스티커 메모 및 강조 표시를 검토 하 고 보여 줍니다 방법을 [!INCLUDE[TLA#tla_caf](../../../../includes/tlasharptla-caf-md.md)] 이러한 유형의 Windows Presentation Foundation (WPF) 문서를 통해 응용 프로그램에 대 한 주석 컨트롤 볼 수 있습니다.  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 문서 보기 컨트롤을 지 원하는 주석이 포함 <xref:System.Windows.Controls.FlowDocumentReader> 및 <xref:System.Windows.Controls.FlowDocumentScrollViewer>에서 파생 된 컨트롤 뿐 <xref:System.Windows.Controls.Primitives.DocumentViewerBase> 같은 <xref:System.Windows.Controls.DocumentViewer> 및 <xref:System.Windows.Controls.FlowDocumentPageViewer>합니다.  
+ 이 항목에서는 몇 가지 일반적인 유형의 주석과 스티커 메모 및 강조 표시를 검토 하 고 보여 줍니다 방법을 [!INCLUDE[TLA#tla_caf](../../../../includes/tlasharptla-caf-md.md)] 이러한 유형의 Windows Presentation Foundation (WPF) 문서를 통해 응용 프로그램에서 주석 컨트롤 볼 수 있습니다.  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 주석을 지 원하는 문서 보기 컨트롤에 포함 <xref:System.Windows.Controls.FlowDocumentReader> 하 고 <xref:System.Windows.Controls.FlowDocumentScrollViewer>에서 파생 된 컨트롤 뿐 <xref:System.Windows.Controls.Primitives.DocumentViewerBase> 와 같은 <xref:System.Windows.Controls.DocumentViewer> 및 <xref:System.Windows.Controls.FlowDocumentPageViewer>.  
   
   
 <a name="caf1_type_stickynotes"></a>   
@@ -43,7 +43,7 @@ ms.locfileid: "33540845"
   
  ![강조 표시 주석](../../../../docs/framework/wpf/advanced/media/caf-callouts.png "CAF_Callouts")  
   
- 일반적으로 사용자가 일부 텍스트 또는 관심 있는 항목을 먼저 선택 하 고 표시 하려면 마우스 오른쪽 단추로 클릭 하 여 주석을 작성 한 <xref:System.Windows.Controls.ContextMenu> 주석 옵션입니다.  다음 예제와 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 선언 하는 데 사용할 수는 <xref:System.Windows.Controls.ContextMenu> 만들고 주석을 관리 하려면 사용자가 액세스할 수 있는 라우팅된 명령을 사용 합니다.  
+ 사용자는 일반적으로 주석 먼저 일부 텍스트 또는 관심 항목을 선택 하 고 표시 하려면 마우스 오른쪽 단추로 클릭 하 여 만들기는 <xref:System.Windows.Controls.ContextMenu> 주석 옵션입니다.  다음 예제와 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 선언 하는 데 사용할 수는 <xref:System.Windows.Controls.ContextMenu> 하려면 주석을 만들고 관리할 사용자가 액세스할 수 있는 라우팅된 명령으로 합니다.  
   
  [!code-xaml[DocViewerAnnotationsXps#CreateDeleteAnnotations](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml#createdeleteannotations)]  
   
@@ -62,7 +62,7 @@ ms.locfileid: "33540845"
  [!code-csharp[FlowDocumentAnnotatedViewer#Handler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/CSharp/Window1.xaml.cs#handler)]
  [!code-vb[FlowDocumentAnnotatedViewer#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/visualbasic/window1.xaml.vb#handler)]  
   
- 다른 예제 시나리오는 주석 및 전자 메일을 통해 문서 독자 간의 스티커 메모를 교환할 수 있도록 하는 응용 프로그램을 포함 합니다. 이러한 응용 프로그램은 이 기능을 통해 판독기에서 교환하는 주석이 포함된 페이지로 이동할 수 있습니다.  
+ 다른 예제 시나리오는 주석과 스티커 메모 전자 메일을 통해 문서 판독기 간에 교환할 수 있도록 하는 응용 프로그램을 포함 합니다. 이러한 응용 프로그램은 이 기능을 통해 판독기에서 교환하는 주석이 포함된 페이지로 이동할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Controls.Primitives.DocumentViewerBase>  
@@ -75,4 +75,4 @@ ms.locfileid: "33540845"
  [ContextMenu 개요](../../../../docs/framework/wpf/controls/contextmenu-overview.md)  
  [명령 개요](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
  [유동 문서 개요](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
- [방법: MenuItem에 명령 추가](http://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)
+ [방법: MenuItem에 명령 추가](https://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)

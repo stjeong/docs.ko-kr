@@ -4,17 +4,17 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - PrintForm component [Visual Basic]
 ms.assetid: 03de98b8-b54c-4764-91d7-83c64e974750
-ms.openlocfilehash: 6cb7cfe022b2b4d23f47a47ec70f08d5c0ccbc7e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 879d31c5a572689d84af6b2e46f3d33e1a8841c8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591410"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43472087"
 ---
 # <a name="printform-component-visual-basic"></a>PrintForm 구성 요소(Visual Basic)
-<xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> Visual basic의 경우 구성 요소를 사용 하면 런타임 시 Windows Form의 이미지를 인쇄할 수 있습니다. 해당 동작은 이전 Visual Basic 버전에서 `PrintForm` 메서드의 동작을 대체합니다.  
+<xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> Visual Basic에 대 한 구성 요소를 사용 하면 런타임에 Windows Form의 이미지를 인쇄할 수 있습니다. 해당 동작은 이전 Visual Basic 버전에서 `PrintForm` 메서드의 동작을 대체합니다.  
   
- PowerPack 컨트롤은 Visual Studio에 더 포함되지 않지만 [다운로드 센터](http://www.microsoft.com/en-us/download/details.aspx?id=25169)에서 다운로드할 수 있습니다.  
+ PowerPack 컨트롤은 더 이상 Visual Studio에 포함 되었지만 이러한에서 다운로드할 수 없습니다 합니다 [다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=25169)합니다.  
   
 ## <a name="printform-component-overview"></a>PrintForm 구성 요소 개요  
  Windows Forms에 대한 일반적인 시나리오는 용지 형식이나 보고서와 유사하게 형식이 지정되는 폼을 만들고 나서 폼 이미지를 인쇄하는 것입니다. <xref:System.Drawing.Printing.PrintDocument> 구성 요소를 사용하여 이 작업을 할 수 있지만 많은 코드가 필요합니다. <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> 구성 요소를 사용하면 <xref:System.Drawing.Printing.PrintDocument> 구성 요소를 사용하지 않고 폼 이미지를 프린터, 인쇄 미리 보기 창 또는 파일로 인쇄할 수 있습니다.  

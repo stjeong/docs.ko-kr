@@ -2,15 +2,15 @@
 title: 보안 고려 사항(Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
-ms.openlocfilehash: 337424395186532969734e0977ea111d8995a154
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 25d313f9c6f71d946ed8d9cc5db2e99dc84983b3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766623"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43456846"
 ---
 # <a name="security-considerations-entity-framework"></a>보안 고려 사항(Entity Framework)
-이 항목에서는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램의 개발, 배포 및 실행과 관련된 보안 고려 사항에 대해 설명합니다. 또한 보안 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램을 만들기 위한 권장 사항도 따라야 합니다. 자세한 내용은 참조 [보안 개요](../../../../../docs/framework/data/adonet/security-overview.md)합니다.  
+이 항목에서는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램의 개발, 배포 및 실행과 관련된 보안 고려 사항에 대해 설명합니다. 또한 보안 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램을 만들기 위한 권장 사항도 따라야 합니다. 자세한 내용은 [보안 개요](../../../../../docs/framework/data/adonet/security-overview.md)합니다.  
   
 ## <a name="general-security-considerations"></a>일반적인 보안 고려 사항  
  다음 보안 고려 사항은 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]를 사용하는 모든 응용 프로그램에 적용됩니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "32766623"
  로그온 작업 중에 사용자 암호를 기반으로 하는 정보가 기본 데이터 소스의 네트워크 라이브러리를 통해 서버로 전달됩니다. 악의적인 공급자가 사용자 자격 증명을 도용하거나, 악성 쿼리를 생성하거나, 결과 집합을 조작할 수 있습니다.  
   
 #### <a name="encrypt-your-connection-to-protect-sensitive-data"></a>연결을 암호화하여 중요한 데이터를 보호합니다.  
- [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 데이터 암호화를 직접 처리하지 않습니다. 사용자가 공용 네트워크를 통해 데이터에 액세스하는 경우 응용 프로그램에서 데이터 소스에 대해 암호화된 연결을 설정하여 보안을 강화해야 합니다. 자세한 내용은 데이터 소스의 보안 관련 설명서를 참조하세요. SQL Server 데이터 원본에 대 한 참조 [SQL Server 연결 암호화](http://go.microsoft.com/fwlink/?LinkId=119544)합니다.  
+ [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 데이터 암호화를 직접 처리하지 않습니다. 사용자가 공용 네트워크를 통해 데이터에 액세스하는 경우 응용 프로그램에서 데이터 소스에 대해 암호화된 연결을 설정하여 보안을 강화해야 합니다. 자세한 내용은 데이터 소스의 보안 관련 설명서를 참조하세요. SQL Server 데이터 원본에 대해서 [SQL Server 연결 암호화](https://go.microsoft.com/fwlink/?LinkId=119544)합니다.  
   
 #### <a name="secure-the-connection-string"></a>연결 문자열을 보호합니다.  
  응용 프로그램 보안의 가장 중요한 목표 중 하나는 데이터 소스에 대한 액세스를 보호하는 것입니다. 연결 문자열을 안전하게 보호하지 않거나 잘못 생성하면 이로 인해 보안상 취약한 부분이 생길 수 있습니다. 연결 정보를 일반 텍스트로 저장하거나 메모리에 유지하면 전체 시스템을 손상시킬 위험이 있습니다. 다음은 연결 문자열을 보호하기 위한 권장 방법입니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "32766623"
   
 -   보호되는 구성을 사용하여 구성 파일 섹션을 암호화합니다.  
   
-     ASP.NET에서는 구성 파일에서 중요한 정보를 암호화할 수 있도록 보호되는 구성이라는 기능을 제공합니다. 보호되는 구성은 원래 ASP.NET용으로 디자인된 것이지만 Windows 응용 프로그램의 구성 파일 섹션을 암호화하는 데도 사용할 수 있습니다. 에 대 한 자세한 설명은 새로운 보호 되는 구성 기능을 참조 하세요. [암호화 구성 정보를 사용 하 여 보호 되는 구성](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1)합니다.  
+     ASP.NET에서는 구성 파일에서 중요한 정보를 암호화할 수 있도록 보호되는 구성이라는 기능을 제공합니다. 보호되는 구성은 원래 ASP.NET용으로 디자인된 것이지만 Windows 응용 프로그램의 구성 파일 섹션을 암호화하는 데도 사용할 수 있습니다. 새 보호 된 구성 기능에 대 한 자세한 설명을 참조 하세요 [구성을 구성 정보 암호화를 사용 하 여 보호](https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1)합니다.  
   
 -   보안 구성 파일에 연결 문자열을 저장합니다.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "32766623"
   
 -   동적으로 연결을 만들 때는 연결 문자열 작성기를 사용합니다.  
   
-     런타임에 연결 문자열을 생성해야 하는 경우 <xref:System.Data.EntityClient.EntityConnectionStringBuilder> 클래스를 사용합니다. 이 문자열 작성기 클래스는 잘못된 입력 정보의 유효성을 검사하고 이스케이프하여 연결 문자열 삽입 공격을 방지합니다. 자세한 내용은 참조 [하는 방법: EntityConnection 연결 문자열 작성](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)합니다. 또한 적절한 문자열 작성기 클래스를 사용하여 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 연결 문자열의 일부인 데이터 소스 연결 문자열을 생성합니다. ADO.NET 공급자에 대 한 연결 문자열 작성기에 대 한 정보를 참조 하십시오. [연결 문자열 작성기](../../../../../docs/framework/data/adonet/connection-string-builders.md)합니다.  
+     런타임에 연결 문자열을 생성해야 하는 경우 <xref:System.Data.EntityClient.EntityConnectionStringBuilder> 클래스를 사용합니다. 이 문자열 작성기 클래스는 잘못된 입력 정보의 유효성을 검사하고 이스케이프하여 연결 문자열 삽입 공격을 방지합니다. 자세한 내용은 [방법: EntityConnection 연결 문자열 작성](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)합니다. 또한 적절한 문자열 작성기 클래스를 사용하여 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 연결 문자열의 일부인 데이터 소스 연결 문자열을 생성합니다. ADO.NET 공급자에 대 한 연결 문자열 작성기에 대 한 정보를 참조 하세요 [연결 문자열 작성기](../../../../../docs/framework/data/adonet/connection-string-builders.md)합니다.  
   
  자세한 내용은 [연결 정보 보호](../../../../../docs/framework/data/adonet/protecting-connection-information.md)를 참조하세요.  
   
@@ -73,7 +73,7 @@ ms.locfileid: "32766623"
   
 -   <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> 인터페이스를 사용하여 예외를 serialize할 수 있는 <xref:System.Runtime.Serialization.ISerializable>  
   
--   데이터베이스 연결을 열고와 같은 데이터베이스에 대해 명령을 실행할 수 있는 권한이 <xref:System.Data.SqlClient.SqlClientPermission> SQL Server 데이터베이스에 대 한 합니다.  
+-   데이터베이스 연결을 열고 같은 데이터베이스에 대해 명령을 실행할 수 있는 권한 <xref:System.Data.SqlClient.SqlClientPermission> SQL Server 데이터베이스에 대 한 합니다.  
   
  자세한 내용은 [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)을 참조하세요.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "32766623"
  [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 보안 권한을 적용하지 않으며, 신뢰 여부에 관계없이 프로세스의 모든 사용자 제공 데이터 개체 코드를 호출합니다. 클라이언트 인증 및 권한 부여가 데이터 저장소 및 해당 응용 프로그램에서 수행되는지 확인합니다.  
   
 #### <a name="restrict-access-to-all-configuration-files"></a>모든 구성 파일에 대한 액세스를 제한합니다.  
- 관리자는 enterprisesec.config, security.config, machine.conf 비롯 하 여 응용 프로그램에 대 한 구성을 지정 하는 모든 파일과 응용 프로그램 구성 파일에 쓰기 액세스를 제한 해야 \< *응용 프로그램* >. exe.config로 바뀝니다.  
+ 관리자는 enterprisesec.config, security.config, machine.conf 비롯 하 여 응용 프로그램에 대 한 구성을 지정 하는 모든 파일 및 응용 프로그램 구성 파일에 쓰기 권한을 제한 해야 \< *응용 프로그램* >..exe.config로 지정 합니다.  
   
  공급자 고정 이름은 app.config에서 수정할 수 있습니다. 클라이언트 응용 프로그램은 강력한 이름을 사용하여 표준 공급자 팩터리 모델을 통해 기본 공급자에 액세스해야 합니다.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "32766623"
   
      쿼리 조건자 및 매개 변수 이름에 사용되는 값에 악성 입력을 제공하여 [!INCLUDE[esql](../../../../../includes/esql-md.md)]에서 SQL 삽입 공격이 수행될 수 있습니다. SQL 삽입 공격의 위험을 방지하려면 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 명령 텍스트와 함께 사용자 입력을 결합하면 안 됩니다.  
   
-     [!INCLUDE[esql](../../../../../includes/esql-md.md)] 쿼리는 해당 리터럴이 허용되는 모든 곳에서 매개 변수를 허용합니다. 외부 에이전트에서 쿼리로 직접 리터럴을 삽입하는 대신 매개 변수가 있는 쿼리를 사용해야 합니다. 쿼리 작성기 메서드를 사용 하 여 안전 하 게 작성 고려해 야 [Entity SQL](http://msdn.microsoft.com/library/05685434-05e6-41c2-8d5e-8933b88a40b0)합니다.  
+     [!INCLUDE[esql](../../../../../includes/esql-md.md)] 쿼리는 해당 리터럴이 허용되는 모든 곳에서 매개 변수를 허용합니다. 외부 에이전트에서 쿼리로 직접 리터럴을 삽입하는 대신 매개 변수가 있는 쿼리를 사용해야 합니다. 쿼리 작성기 메서드를 사용 하 여 안전 하 게 작성도 고려해 야 [Entity SQL](https://msdn.microsoft.com/library/05685434-05e6-41c2-8d5e-8933b88a40b0)합니다.  
   
 -   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] 삽입 공격:  
   
@@ -113,7 +113,7 @@ ms.locfileid: "32766623"
   
 -   중첩된 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 쿼리  
   
- 사용자 입력을 허용하는 경우 해당 입력으로 인해 결과 집합이 시스템에서 처리할 수 있는 것보다 더 커지지 않도록 해야 합니다. 사용할 수도 있습니다는 <xref:System.Linq.Queryable.Take%2A> 에서 메서드 [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] 또는 [제한](../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) 연산자 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 결과 집합의 크기를 제한 합니다.  
+ 사용자 입력을 허용하는 경우 해당 입력으로 인해 결과 집합이 시스템에서 처리할 수 있는 것보다 더 커지지 않도록 해야 합니다. 사용할 수도 있습니다는 <xref:System.Linq.Queryable.Take%2A> 의 메서드 [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] 또는 [제한](../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) 연산자 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 결과 집합의 크기를 제한 하려면.  
   
 #### <a name="avoid-returning-iqueryable-results-when-exposing-methods-to-potentially-untrusted-callers"></a>신뢰할 수 없는 호출자에 메서드를 노출할 때 IQueryable 결과를 반환하지 않도록 합니다.  
  다음과 같은 이유로 신뢰할 수 없는 호출자에 노출되는 메서드에서 <xref:System.Linq.IQueryable%601> 형식을 반환하지 않도록 해야 합니다.  
@@ -132,7 +132,7 @@ ms.locfileid: "32766623"
  다음 보안 고려 사항은 엔터티 형식을 생성하고 사용할 때 적용됩니다.  
   
 #### <a name="do-not-share-an-objectcontext-across-application-domains"></a>응용 프로그램 도메인에서 ObjectContext를 공유하지 않습니다.  
- 둘 이상의 응용 프로그램 도메인과 <xref:System.Data.Objects.ObjectContext>를 공유하면 연결 문자열의 정보가 노출될 수 있습니다. 대신, serialized 개체 또는 개체 그래프를 다른 응용 프로그램 도메인으로 전송한 다음 해당 응용 프로그램 도메인의 <xref:System.Data.Objects.ObjectContext>에 개체를 연결해야 합니다. 자세한 내용은 참조 [개체 직렬화](http://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99)합니다.  
+ 둘 이상의 응용 프로그램 도메인과 <xref:System.Data.Objects.ObjectContext>를 공유하면 연결 문자열의 정보가 노출될 수 있습니다. 대신, serialized 개체 또는 개체 그래프를 다른 응용 프로그램 도메인으로 전송한 다음 해당 응용 프로그램 도메인의 <xref:System.Data.Objects.ObjectContext>에 개체를 연결해야 합니다. 자세한 내용은 [개체 직렬화](https://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99)합니다.  
   
 #### <a name="prevent-type-safety-violations"></a>형식 안전성을 위반하지 않도록 합니다.  
  형식 안전성을 위반하면 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 개체의 데이터 무결성을 보장할 수 없습니다. 형식 안전성 위반은 신뢰할 수 없는 응용 프로그램이 완전 신뢰 코드 액세스 보안을 사용하여 실행될 수 있도록 하는 경우에 발생할 수 있습니다.  
@@ -144,7 +144,7 @@ ms.locfileid: "32766623"
  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 응용 프로그램에서 경로를 사용할 때 다음 사항을 고려해야 합니다.  
   
 #### <a name="verify-whether-your-host-performs-path-checks"></a>호스트에서 경로 검사를 수행하는지 여부를 확인합니다.  
- 파이프 기호로 묶인 `|DataDirectory|` 대체 문자열을 사용하면 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)]에서 확인된 경로가 지원되는지 확인합니다. 예를 들어, ".."은 `DataDirectory` 뒤에 사용할 수 없습니다. 웹 응용 프로그램 루트 연산자(`~`)를 확인하기 위한 동일한 검사는 [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)]을 호스트하는 프로세스에서 수행됩니다. 이 확인을 수행 그러나 IIS 이외의 호스트는 확인 된 경로 지원 하는지을 확인 하지 않을 수도 있습니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램을 배포하는 호스트의 동작을 알고 있어야 합니다.  
+ 파이프 기호로 묶인 `|DataDirectory|` 대체 문자열을 사용하면 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)]에서 확인된 경로가 지원되는지 확인합니다. 예를 들어, ".."은 `DataDirectory` 뒤에 사용할 수 없습니다. 웹 응용 프로그램 루트 연산자(`~`)를 확인하기 위한 동일한 검사는 [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)]을 호스트하는 프로세스에서 수행됩니다. 이 확인을 수행 하는 IIS 그러나 IIS 이외의 호스트는 확인 된 경로 지원 하는지을 확인 하지 않을 수 있습니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램을 배포하는 호스트의 동작을 알고 있어야 합니다.  
   
 #### <a name="do-not-make-assumptions-about-resolved-path-names"></a>확인된 경로 이름에 대해 가정하지 않습니다.  
  루트 연산자(`~`) 및 `DataDirectory` 대체 문자열이 확인된 값이 응용 프로그램 런타임 동안 일정하게 유지되어야 하는 경우에도 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 호스트의 이러한 값 수정을 제한하지 않습니다.  

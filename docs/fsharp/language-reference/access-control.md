@@ -3,11 +3,11 @@ title: Access Control(F#)
 description: 'F # 프로그래밍 언어의 함수, 형식, 메서드 등의 프로그래밍 요소에 대 한 액세스를 제어 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 6b13ac03d2a4a6c53b53d4c790760f5d51b334ee
-ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43332241"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43456346"
 ---
 # <a name="access-control"></a>Access Control
 

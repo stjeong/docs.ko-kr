@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - denial of service [WCF]
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
-ms.openlocfilehash: 52a22d96e981ff10d444569465d8e74ddf890836
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d4f7ebf784ab02ecdd0203423157da5bef968a87
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33496115"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43457127"
 ---
 # <a name="denial-of-service"></a>서비스 거부
 서비스 거부는 시스템을 가득 채워 메시지를 처리할 수 없거나 메시지가 매우 느리게 처리되는 경우에 발생합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "33496115"
 ## <a name="auditing-event-log-can-be-filled"></a>감사 이벤트 로그가 채워질 수 있음  
  악의적인 사용자가 감사가 설정된 사실을 알고 있다면 잘못된 메시지를 보내 감사 항목이 기록되게 할 수 있습니다. 이런 식으로 감사 로그가 채워지면 감사 시스템이 실패합니다.  
   
- 이 문제를 완화하려면 <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> 속성을 `true`로 설정하고 이벤트 뷰어의 속성을 사용하여 감사 동작을 제어합니다. 이벤트 뷰어를 사용 하 여 보고 이벤트 로그를 관리 하는 방법에 대 한 자세한 내용은 참조 [이벤트 뷰어](http://go.microsoft.com/fwlink/?LinkId=186123)합니다. 자세한 내용은 참조 [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)합니다.  
+ 이 문제를 완화하려면 <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> 속성을 `true`로 설정하고 이벤트 뷰어의 속성을 사용하여 감사 동작을 제어합니다. 이벤트 뷰어를 사용 하 여 이벤트 로그 보기 및 관리에 대 한 자세한 내용은 참조 하세요. [이벤트 뷰어](https://go.microsoft.com/fwlink/?LinkId=186123)합니다. 자세한 내용은 [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)합니다.  
   
 ## <a name="invalid-implementations-of-iauthorizationpolicy-can-cause-service-hangs"></a>IAuthorizationPolicy의 잘못된 구현으로 인해 서비스가 중단될 수 있음  
  <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> 인터페이스의 잘못된 구현에서 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 메서드를 호출하면 서비스가 중단될 수 있습니다.  
@@ -52,16 +52,16 @@ ms.locfileid: "33496115"
  완화 방법: 신뢰할 수 있는 코드만 사용하세요. 즉, 직접 작성하고 테스트한 코드나 신뢰할 수 있는 공급자가 제공한 코드만 사용합니다. 신뢰할 수 없는 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 확장이 적절한 고려 없이 코드에 연결할 수 없도록 합니다. 이 내용은 서비스 구현에 사용되는 모든 확장에 적용됩니다. WCF는 확장성 지점을 사용 하 여 응용 프로그램 코드와 연결 된 외부 코드 구분을 만들지 않습니다.  
   
 ## <a name="kerberos-maximum-token-size-may-need-resizing"></a>Kerberos 최대 토큰 크기를 조정해야 할 수 있음  
- 클라이언트는 다수의 그룹(실제 개수는 그룹에 따라 다를 수 있지만 대략 900개)에 속해 있지만 메시지 헤더의 블록이 64KB를 초과할 때 문제가 발생할 수 있습니다. 이 경우 Microsoft 지원 문서에 설명 된 대로 최대 Kerberos 토큰 크기를 늘릴 수 있습니다 "[IIS에 연결할 버퍼가 부족 하 여 Internet Explorer Kerberos 인증이 작동 하지 않는다](http://go.microsoft.com/fwlink/?LinkId=89176)." 큰 Kerberos 토큰을 수용 하기 위해 최대 WCF 메시지 크기를 늘려야 할 수도 있습니다.  
+ 클라이언트는 다수의 그룹(실제 개수는 그룹에 따라 다를 수 있지만 대략 900개)에 속해 있지만 메시지 헤더의 블록이 64KB를 초과할 때 문제가 발생할 수 있습니다. 이런 경우 Microsoft 지원 문서에 설명 된 대로 최대 Kerberos 토큰 크기를 늘릴 수 있습니다 "[IIS에 연결할 버퍼가 부족 하 여 Internet Explorer Kerberos 인증이 작동 하지 않습니다](https://go.microsoft.com/fwlink/?LinkId=89176)." 보다 큰 Kerberos 토큰을 수용 하기 위해 최대 WCF 메시지 크기를 늘리려면도 해야 합니다.  
   
 ## <a name="autoenrollment-results-in-multiple-certificates-with-same-subject-name-for-machine"></a>자동 등록으로 인해 한 컴퓨터에 대해 동일한 주체 이름을 가진 여러 인증서가 발생함  
- *자동 등록* 는의 기능 [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 사용자 및 컴퓨터 인증서에 대 한 자동으로 등록할 수 있습니다. 이 기능을 사용하는 도메인에 컴퓨터가 있으면 새 컴퓨터가 네트워크에 참가할 때마다 용도가 클라이언트 인증인 X.509 인증서가 자동으로 만들어지고 로컬 컴퓨터의 개인 인증서 저장소에 삽입됩니다. 그러나 자동 등록은 캐시에 만드는 모든 인증서에 대해 동일한 주체 이름을 사용합니다.  
+ *자동 등록* 의 기능입니다 [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] 에 자동으로 사용자 및 컴퓨터 인증서를 등록 합니다. 이 기능을 사용하는 도메인에 컴퓨터가 있으면 새 컴퓨터가 네트워크에 참가할 때마다 용도가 클라이언트 인증인 X.509 인증서가 자동으로 만들어지고 로컬 컴퓨터의 개인 인증서 저장소에 삽입됩니다. 그러나 자동 등록은 캐시에 만드는 모든 인증서에 대해 동일한 주체 이름을 사용합니다.  
   
- 영향은 WCF 서비스를 자동으로 도메인에서 열리지 되지 않을 수 있습니다. 이 문제는 컴퓨터의 정규화된 DNS(Domain Name System) 이름을 포함하는 여러 인증서가 있어서 기본 서비스 X.509 자격 증명 검색 조건이 모호할 수 있기 때문에 발생합니다. 한 인증서는 자동 등록에서 시작되고 다른 인증서는 자체 서명된 인증서일 수 있습니다.  
+ WCF 서비스 자동 등록을 사용 하 여 도메인에서 열리지 하지 못할 수도 있음을 영향은입니다. 이 문제는 컴퓨터의 정규화된 DNS(Domain Name System) 이름을 포함하는 여러 인증서가 있어서 기본 서비스 X.509 자격 증명 검색 조건이 모호할 수 있기 때문에 발생합니다. 한 인증서는 자동 등록에서 시작되고 다른 인증서는 자체 서명된 인증서일 수 있습니다.  
   
- 이 완화 하려면 보다 정확 하 게 검색 조건에 사용 하 여 사용할 인증서를 정확히 참조는 [ \<serviceCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)합니다. 예를 들어 <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> 옵션을 사용하고 고유한 지문(해시)으로 인증서를 지정합니다.  
+ 이 문제를 완화에 보다 정확한 검색 조건을 사용 하 여 사용할 정확한 인증서 참조를 [ \<serviceCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)합니다. 예를 들어 <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> 옵션을 사용하고 고유한 지문(해시)으로 인증서를 지정합니다.  
   
- 자동 등록 기능에 대 한 자세한 내용은 참조 [Windows Server 2003의 인증서 자동 등록](http://go.microsoft.com/fwlink/?LinkId=95166)합니다.  
+ 자동 등록 기능에 대 한 자세한 내용은 참조 하세요. [Certificate Autoenrollment in Windows Server 2003](https://go.microsoft.com/fwlink/?LinkId=95166)합니다.  
   
 ## <a name="last-of-multiple-alternative-subject-names-used-for-authorization"></a>권한 부여에 사용되는 여러 개의 대체 주체 이름 중 마지막  
  드물지만 X.509 인증서에 여러 개의 대체 주체 이름이 포함된 경우 대체 주체 이름을 사용하여 권한을 부여하면 권한 부여가 실패할 수도 있습니다.  
@@ -69,13 +69,13 @@ ms.locfileid: "33496115"
 ## <a name="protect-configuration-files-with-acls"></a>ACL을 사용하여 구성 파일 보호  
  [!INCLUDE[infocard](../../../../includes/infocard-md.md)]에서 발급된 토큰에 대해 코드와 구성 파일에서 필수 및 선택적 클레임을 지정할 수 있습니다. 이로 인해 보안 토큰 서비스로 전송되는 `RequestSecurityToken` 메시지에 해당 요소가 내보내집니다. 공격자는 코드나 구성을 수정하여 필수 또는 선택적 클레임을 제거하고 보안 토큰 서비스가 대상 서비스에 대한 액세스를 허용하지 않는 토큰을 발급하게 할 수 있습니다.  
   
- 완화 방법: 구성 파일을 수정하려면 컴퓨터에 대한 액세스 권한이 필요합니다. 파일 ACL(액세스 제어 목록)을 사용하여 구성 파일에 보안을 설정합니다. WCF는 코드에 있어야 응용 프로그램 디렉터리 또는 전역 어셈블리 캐시 전에 구성에서 로드 되도록 이러한 코드는 허용 됩니다. 디렉터리 ACL을 사용하여 디렉터리에 보안을 설정합니다.  
+ 완화 방법: 구성 파일을 수정하려면 컴퓨터에 대한 액세스 권한이 필요합니다. 파일 ACL(액세스 제어 목록)을 사용하여 구성 파일에 보안을 설정합니다. WCF 구성에서 로드 되도록 이러한 코드는 허용 됩니다 전에 응용 프로그램 디렉터리나 전역 어셈블리 캐시에서 코드는 필요 합니다. 디렉터리 ACL을 사용하여 디렉터리에 보안을 설정합니다.  
   
 ## <a name="maximum-number-of-secure-sessions-for-a-service-is-reached"></a>서비스에 허용되는 보안 세션의 최대 개수  
  서비스에서 성공적으로 클라이언트를 인증하고 서비스와의 보안 세션이 설정된 경우 서비스는 클라이언트가 세션을 취소하거나 세션이 만료될 때까지 세션을 추적합니다. 설정된 각 세션은 서비스에 대해 허용되는 동시 활성 세션의 최대 개수 제한에 계산됩니다. 이 제한에 도달하면 하나 이상의 활성 세션이 만료되거나 클라이언트에 의해 취소될 때까지 해당 서비스와 새 세션을 만들려고 시도하는 클라이언트가 거부됩니다. 클라이언트는 서비스와 여러 세션을 만들 수 있으며, 이러한 세션의 각각이 제한에 계산됩니다.  
   
 > [!NOTE]
->  상태 저장 세션을 사용하는 경우 이전 단락의 내용이 적용되지 않습니다. 상태 저장 세션에 대 한 자세한 내용은 참조 [하는 방법: 보안 세션에 대 한 보안 컨텍스트 토큰 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)합니다.  
+>  상태 저장 세션을 사용하는 경우 이전 단락의 내용이 적용되지 않습니다. 상태 저장 세션에 대 한 자세한 내용은 참조 하세요. [방법: 보안 세션에 대 한 보안 컨텍스트 토큰 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)합니다.  
   
  이 문제를 완화하려면 <xref:System.ServiceModel.Channels.SecurityBindingElement> 클래스의 <xref:System.ServiceModel.Channels.SecurityBindingElement> 속성을 설정하여 활성 세션의 최대 개수와 세션의 최대 수명에 대해 제한을 설정합니다.  
   

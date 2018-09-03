@@ -2,15 +2,15 @@
 title: '연습: SQL 생성'
 ms.date: 03/30/2017
 ms.assetid: 16c38aaa-9927-4f3c-ab0f-81636cce57a3
-ms.openlocfilehash: ab08b404dc60483a39e5c6ae56d82b63932c3f3e
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5551eb4088e7529c61d5c517fed6877c23ae12f2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766324"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43472074"
 ---
 # <a name="walkthrough-sql-generation"></a>연습: SQL 생성
-이 항목에서는에서 SQL 생성이 생기는 [샘플 공급자](http://go.microsoft.com/fwlink/?LinkId=180616)합니다. 다음 Entity SQL 쿼리는 샘플 공급자에 포함된 모델을 사용합니다.  
+이 항목에서는 SQL 생성에서 발생 하는 방법을 보여 줍니다.는 [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616)합니다. 다음 Entity SQL 쿼리는 샘플 공급자에 포함된 모델을 사용합니다.  
   
 ```  
 SELECT  j1.ProductId, j1.ProductName, j1.CategoryName, j2.ShipCountry, j2.ProductId  
@@ -126,7 +126,7 @@ LEFT OUTER JOIN [dbo].[InternationalOrders] AS [Extent5] ON [Extent4].[OrderID] 
   
  ![Diagram](../../../../../docs/framework/data/adonet/ef/media/cd2afa99-7256-4c63-aaa9-c2d13f18a3d8.gif "cd2afa99-7256-4c63-aaa9-c2d13f18a3d8")  
   
- 다음으로, "false"가 IsParentAJoin 스택에 제공되고 조인 조건 Var(Extent1).CategoryID == Var(Extent2).CategoryID가 처리됩니다. 기호 테이블에서 조회한 후 Var(Extenent1)이 <symbol_Extent1>로 확인됩니다. 인스턴스가 단순한 기호로 Var(Extent1) 처리 한 결과로으로 확인 되므로 합니다. CategoryID과 함께 SqlBuilder \<symbol1 >. " CategoryID "가 반환 됩니다. 마찬가지로 비교의 다른 쪽이 처리되며, 조인 조건을 방문한 결과가 SelectStatement1의 FROM 절에 추가되고 "false" 값이 IsParentAJoin 스택에서 제공됩니다.  
+ 다음으로, "false"가 IsParentAJoin 스택에 제공되고 조인 조건 Var(Extent1).CategoryID == Var(Extent2).CategoryID가 처리됩니다. 기호 테이블에서 조회한 후 Var(Extenent1)이 <symbol_Extent1>로 확인됩니다. 인스턴스가 단순한 기호로 Var(Extent1) 처리의 결과로으로 확인 되므로 합니다. CategoryID과 함께 SqlBuilder \<symbol1 >. " CategoryID "가 반환 됩니다. 마찬가지로 비교의 다른 쪽이 처리되며, 조인 조건을 방문한 결과가 SelectStatement1의 FROM 절에 추가되고 "false" 값이 IsParentAJoin 스택에서 제공됩니다.  
   
  이를 통해 Join1이 완전히 처리되었으며 범위가 기호 테이블에서 제공됩니다.  
   

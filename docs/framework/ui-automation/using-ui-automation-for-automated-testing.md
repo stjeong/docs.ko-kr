@@ -9,16 +9,16 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 55795a0176f70925fd89fe6f8065dfa481f76a15
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2fe3d511b92ff055e80999fa498c24a44f771ebf
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33410087"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43457007"
 ---
 # <a name="using-ui-automation-for-automated-testing"></a>자동화된 테스트를 위해 UI 자동화 사용
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 개요에서는 자동화된 테스트 시나리오에서 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 이 프레임워크로서 프로그래밍 방식 액세스에 얼마나 유용한지에 대해 설명합니다.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "33410087"
   
 <a name="Implementing_UI_Automation"></a>   
 ### <a name="implementing-ui-automation"></a>UI 자동화 구현  
- 앞에서 언급했듯이, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서 제공되는 통합된 모델을 사용하지 않고 테스트 도구와 개발자는 프레임워크에서 컨트롤의 속성과 동작을 노출하기 위해서는 프레임워크 관련 정보를 알아야 합니다. 포함 하 여 여러 다른 UI 프레임 워크는 언제 든 지 Windows 운영 체제 내에서 표시 될 수 있으므로 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)], 여러 응용 프로그램을 테스트 하는 것이 어려울 수 있습니다 Windows Presentation Foundation (WPF) 컨트롤 풍부한입니다. 예를 들어, 다음 표에서는 단추 컨트롤과 연결된 이름 (또는 텍스트)를 검색하는 데 필요한 프레임워크 관련 속성 이름에 대해 간략하게 설명하고 해당되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 하나를 보여 줍니다.  
+ 앞에서 언급했듯이, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서 제공되는 통합된 모델을 사용하지 않고 테스트 도구와 개발자는 프레임워크에서 컨트롤의 속성과 동작을 노출하기 위해서는 프레임워크 관련 정보를 알아야 합니다. 포함 하 여 여러 다른 UI 프레임 워크는 언제 든 지 Windows 운영 체제 내에서 표시 될 수 있으므로 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)], 어려운 일 처럼 여러 응용 프로그램을 테스트할 수 있습니다 Windows Presentation Foundation (WPF) 컨트롤 비슷해 보이지만입니다. 예를 들어, 다음 표에서는 단추 컨트롤과 연결된 이름 (또는 텍스트)를 검색하는 데 필요한 프레임워크 관련 속성 이름에 대해 간략하게 설명하고 해당되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 하나를 보여 줍니다.  
   
 |UI 자동화 컨트롤 형식|UI 프레임워크|프레임워크 관련 속성|UI 자동화 속성|  
 |--------------------------------|------------------|---------------------------------|----------------------------|  
@@ -95,10 +95,10 @@ ms.locfileid: "33410087"
   
 |||  
 |-|-|  
-|UI 자동화 참조를 추가합니다.|다음은 UI 자동화 클라이언트에 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] dll이 필요한 이유입니다.<br /><br /> -에 대 한 액세스를 제공 하는 UIAutomationClient.dll은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클라이언트 쪽 Api입니다.<br />-Uiautomationclientsideprovider.dll은 자동화 하는 기능을 제공 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 컨트롤입니다. [UI Automation Support for Standard Controls](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md)을 참조하세요.<br />-에 정의 된 특정 형식에 대 한 액세스를 제공 하는 UIAutomationTypes.dll [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]합니다.|  
+|UI 자동화 참조를 추가합니다.|다음은 UI 자동화 클라이언트에 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] dll이 필요한 이유입니다.<br /><br /> -UIAutomationClient.dll에 대 한 액세스를 제공 합니다 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클라이언트 쪽 Api입니다.<br />-자동화 하는 기능을 제공 하는 UIAutomationClientSideProvider.dll [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 컨트롤입니다. [UI Automation Support for Standard Controls](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md)을 참조하세요.<br />-에 정의 된 특정 형식에 대 한 액세스를 제공 하는 UIAutomationTypes.dll [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]합니다.|  
 |<xref:System.Windows.Automation> 네임스페이스를 추가합니다.|이 네임스페이스에는 텍스트 처리를 제외하고 UI 자동화 클라이언트에서 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 의 기능을 사용하는 데 필요한 모든 것이 포함됩니다.|  
 |<xref:System.Windows.Automation.Text> 네임스페이스를 추가합니다.|이 네임스페이스에는 UI 자동화 클라이언트에서 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 텍스트 처리의 기능을 사용하는 데 필요한 모든 것이 포함됩니다.|  
-|필요한 컨트롤 찾기|자동화된 테스트 스크립트가 자동화 트리 내에서 필요한 컨트롤을 나타내는 UI 자동화 요소를 찾습니다.<br /><br /> 여러 가지 방법을 통해 코드를 사용하여 UI 자동화 요소를 가져올 수 있습니다.<br /><br /> -쿼리는 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 사용 하는 <xref:System.Windows.Automation.Condition> 문. 여기에는 일반적으로 언어 중립적인 <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> 가 사용됩니다. **참고:** 는 <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> 을 항목별로 정리할 수 Inspect.exe 같은 도구를 사용 하 여 가져올 수는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 컨트롤의 속성입니다. <br /><br /> -사용는 <xref:System.Windows.Automation.TreeWalker> 전체를 트래버스해야 하는 클래스 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 또는 해당 하위 집합입니다.<br />포커스를 추적 합니다.<br />-컨트롤 hWnd를 사용 합니다.<br />-마우스 커서의 위치와 같은 화면 위치를 사용 합니다.<br /><br /> [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)을 참조하세요.|  
+|필요한 컨트롤 찾기|자동화된 테스트 스크립트가 자동화 트리 내에서 필요한 컨트롤을 나타내는 UI 자동화 요소를 찾습니다.<br /><br /> 여러 가지 방법을 통해 코드를 사용하여 UI 자동화 요소를 가져올 수 있습니다.<br /><br /> -쿼리를 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 사용 하는 <xref:System.Windows.Automation.Condition> 문입니다. 여기에는 일반적으로 언어 중립적인 <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> 가 사용됩니다. **참고:** 는 <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> Inspect.exe 항목별로 정리할 수 있는 등의 도구를 사용 하 여 얻을 수 있습니다는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 컨트롤의 속성입니다. <br /><br /> -을 사용 합니다 <xref:System.Windows.Automation.TreeWalker> 전체를 통과 하는 클래스 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 또는 해당 하위 집합입니다.<br />-포커스를 추적 합니다.<br />-컨트롤의 hWnd를 사용 합니다.<br />-마우스 커서의 위치와 같은 화면 위치를 사용 합니다.<br /><br /> [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)을 참조하세요.|  
 |컨트롤 패턴 가져오기|컨트롤 패턴은 기능이 비슷한 컨트롤에 대한 일반적인 동작을 노출합니다.<br /><br /> 테스트가 필요한 컨트롤을 찾은 후에, 자동화된 테스트 스크립트는 UI 자동화 요소에서 필요한 컨트롤 패턴을 가져옵니다. 예를 들면, 일반적인 단추 기능에 대한 <xref:System.Windows.Automation.InvokePattern> 컨트롤 패턴 또는 창 기능에 대한 <xref:System.Windows.Automation.WindowPattern> 컨트롤 패턴이 있습니다.<br /><br /> [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)을 참조하세요.|  
 |UI 자동화|이제 자동화된 테스트 스크립트는 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 컨트롤 패턴이 노출하는 정보 및 기능을 사용하여 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 프레임워크에서 필요한 모든 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 를 제어할 수 있습니다.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "33410087"
 ## <a name="related-tools-and-technologies"></a>관련 도구 및 기술  
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]을 통해 자동화된 테스트를 지원하는 다양한 관련 도구 및 기술이 있습니다.  
   
--   Inspect.exe는는 [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)] 수집 하는 데 사용할 수 있는 응용 프로그램 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 공급자 및 클라이언트 개발 및 디버깅에 대 한 정보입니다. Inspect.exe에 포함 되어는 [!INCLUDE[TLA#tla_winfxsdk](../../../includes/tlasharptla-winfxsdk-md.md)]합니다.  
+-   Inspect.exe은는 [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)] 수집 하는 응용 프로그램 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 공급자 및 클라이언트 개발 및 디버깅에 대 한 정보입니다. Inspect.exe에 포함 된 [!INCLUDE[TLA#tla_winfxsdk](../../../includes/tlasharptla-winfxsdk-md.md)]합니다.  
   
 -   MSAABridge는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 정보를 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 클라이언트에 노출합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 을 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 에 브리징하는 주요 목표는 기존 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 클라이언트가 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]을 구현한 모든 프레임워크와 상호 작용하도록 하는 것입니다.  
   

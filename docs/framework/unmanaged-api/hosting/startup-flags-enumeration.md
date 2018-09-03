@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f4680187de7318a6438bf6a5e6bd7c5f3acd05c2
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43256780"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43474280"
 ---
 # <a name="startupflags-enumeration"></a>STARTUP_FLAGS 열거형
 CLR (공용 언어 런타임)의 시작 동작을 나타내는 값을 포함 합니다. 기본적으로 가비지 수집은 비 동시 및 전용 기본 클래스 라이브러리는 도메인 중립적인 영역에 로드 됩니다.  

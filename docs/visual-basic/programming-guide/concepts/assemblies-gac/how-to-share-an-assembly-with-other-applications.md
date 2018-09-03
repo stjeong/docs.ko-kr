@@ -1,14 +1,15 @@
 ---
-title: '방법: 다른 응용 프로그램 (Visual Basic) 프로그램과 어셈블리 공유'
+title: '방법: 다른 응용 프로그램 (Visual Basic)를 사용 하 여 어셈블리 공유'
 ms.date: 07/20/2015
 ms.assetid: 5388aedc-cb42-4622-8b70-8e701eee057a
-ms.openlocfilehash: 3a6a04a3aef5430eb65d0c1a7eb37f6afb9e5c86
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a7f6b49e8389108528c44d7464a2e68149dfa940
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466478"
 ---
-# <a name="how-to-share-an-assembly-with-other-applications-visual-basic"></a>방법: 다른 응용 프로그램 (Visual Basic) 프로그램과 어셈블리 공유
+# <a name="how-to-share-an-assembly-with-other-applications-visual-basic"></a>방법: 다른 응용 프로그램 (Visual Basic)를 사용 하 여 어셈블리 공유
 어셈블리는 전용이거나 공유될 수 있습니다. 기본적으로 대부분의 간단한 프로그램은 다른 응용 프로그램에서 사용되지 않으므로 전용 어셈블리로 구성됩니다.  
   
  다른 응용 프로그램과 어셈블리를 공유하려면 GAC([전역 어셈블리 캐시](../../../../framework/app-domains/gac.md))에 배치해야 합니다.  
@@ -23,7 +24,7 @@ ms.lasthandoff: 05/04/2018
   
 4.  전역 어셈블리 캐시에 어셈블리를 추가합니다. 자세한 내용은 [방법: 전역 어셈블리 캐시에 어셈블리 설치](../../../../framework/app-domains/how-to-install-an-assembly-into-the-gac.md)를 참조하세요.  
   
-5.  다른 응용 프로그램에서 어셈블리에 포함된 형식에 액세스합니다. 자세한 내용은 [방법: 강력한 이름의 어셈블리 참조](http://msdn.microsoft.com/library/4c6a406a-b5eb-44fa-b4ed-4e95bb95a813)를 참조하세요.  
+5.  다른 응용 프로그램에서 어셈블리에 포함된 형식에 액세스합니다. 자세한 내용은 [방법: 강력한 이름의 어셈블리 참조](https://msdn.microsoft.com/library/4c6a406a-b5eb-44fa-b4ed-4e95bb95a813)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [프로그래밍 개념](../../../../visual-basic/programming-guide/concepts/index.md) [어셈블리 및 전역 어셈블리 캐시 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  

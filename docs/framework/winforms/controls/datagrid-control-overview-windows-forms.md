@@ -20,12 +20,12 @@ helpviewer_keywords:
 - parent table navigation in DataGrid
 - child tables [Windows Forms], dataGrid control
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-ms.openlocfilehash: 1849fd0d81b00f1fa351d2a8cf1d2ed567e04401
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9f939175a77ff080b37491a36c15edbb8af15933
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529495"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43462466"
 ---
 # <a name="datagrid-control-overview-windows-forms"></a>DataGrid 컨트롤 개요(Windows Forms)
 > [!NOTE]
@@ -52,9 +52,9 @@ ms.locfileid: "33529495"
 ## <a name="binding-data-to-the-control"></a>컨트롤에 데이터 바인딩  
  <xref:System.Windows.Forms.DataGrid> 컨트롤이 작동하려면 디자인 타임에 <xref:System.Windows.Forms.DataGrid.DataSource%2A> 및 <xref:System.Windows.Forms.DataGrid.DataMember%2A> 속성을 사용하거나 런타임에 <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> 메서드를 사용하여 데이터 소스에 바인딩되어야 합니다. 이 바인딩을 통해 <xref:System.Windows.Forms.DataGrid>는 인스턴스화된 데이터 소스 개체(예: <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable>)를 가리킵니다. <xref:System.Windows.Forms.DataGrid> 컨트롤은 데이터에 대해 수행된 작업의 결과를 보여 줍니다. 대부분의 데이터 관련 작업은 <xref:System.Windows.Forms.DataGrid>가 아니라 데이터 소스를 통해 수행됩니다.  
   
- 바인딩된 데이터 집합의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:System.Windows.Forms.DataGrid> 컨트롤이 변경 내용을 반영합니다. 데이터 표 테이블 스타일과 열 스타일 있으면는 `ReadOnly` 속성이로 설정 `false`를 통해 데이터 집합의 데이터를 업데이트할 수 있습니다는 <xref:System.Windows.Forms.DataGrid> 제어 합니다.  
+ 바인딩된 데이터 집합의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:System.Windows.Forms.DataGrid> 컨트롤이 변경 내용을 반영합니다. 데이터 그리드 및 해당 표 스타일과 열 스타일 경우는 `ReadOnly` 속성이로 설정 `false`를 통해 데이터 집합의 데이터를 업데이트할 수 있습니다는 <xref:System.Windows.Forms.DataGrid> 컨트롤입니다.  
   
- 한 번에 하나의 테이블만 <xref:System.Windows.Forms.DataGrid>에 표시될 수 있습니다. 테이블 간에 부모-자식 관계가 정의된 경우 사용자가 관련 테이블 간에 이동하여 <xref:System.Windows.Forms.DataGrid> 컨트롤에 표시할 테이블을 선택할 수 있습니다. 바인딩에 대 한 내용은 <xref:System.Windows.Forms.DataGrid> 컨트롤을 한 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 디자인 타임 또는 런타임에 데이터 원본 참조 [하는 방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)합니다.  
+ 한 번에 하나의 테이블만 <xref:System.Windows.Forms.DataGrid>에 표시될 수 있습니다. 테이블 간에 부모-자식 관계가 정의된 경우 사용자가 관련 테이블 간에 이동하여 <xref:System.Windows.Forms.DataGrid> 컨트롤에 표시할 테이블을 선택할 수 있습니다. 바인딩에 대 한 정보에 대 한는 <xref:System.Windows.Forms.DataGrid> 컨트롤을 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 디자인 타임 또는 런타임 중 데이터 원본 참조 [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)합니다.  
   
  <xref:System.Windows.Forms.DataGrid>에 유효한 데이터 소스는 다음과 같습니다.  
   
@@ -90,14 +90,14 @@ ms.locfileid: "33529495"
 |관련된 여러 테이블.|테이블을 선택하는 데 사용할 트리 뷰가 표 형태 창에 표시되거나, 부모 테이블이 표 형태 창에 표시되도록 지정할 수 있습니다. 사용자는 부모 테이블의 레코드를 통해 관련된 자식 행을 탐색할 수 있습니다.|  
   
 > [!NOTE]
->  데이터 집합의 테이블은 <xref:System.Data.DataRelation>을 사용하여 관련됩니다.  또한 참조 [하이퍼링크 "http://msdn.microsoft.com/library/dbwcse3d(v=vs.110)" 데이터 집합의 관계](http://msdn.microsoft.com/library/dbwcse3d\(v=vs.110\)) 또는 [데이터 집합의 관계](http://msdn.microsoft.com/library/dbwcse3d\(v=vs.120\))합니다.  
+>  데이터 집합의 테이블은 <xref:System.Data.DataRelation>을 사용하여 관련됩니다.  도 참조 하세요 [HYPERLINK "http://msdn.microsoft.com/library/dbwcse3d(v=vs.110)" 데이터 집합의 관계](https://msdn.microsoft.com/library/dbwcse3d\(v=vs.110\)) 하거나 [데이터 집합의 관계](https://msdn.microsoft.com/library/dbwcse3d\(v=vs.120\)).  
   
  <xref:System.Windows.Forms.DataGrid> 컨트롤에서 테이블을 표시하고 <xref:System.Windows.Forms.DataGrid.AllowSorting%2A> 속성이 `true`로 설정된 경우 열 머리글을 클릭하여 데이터를 다시 정렬할 수 있습니다. 사용자가 행을 추가하고 셀을 편집할 수도 있습니다.  
   
  테이블 집합 간의 관계는 탐색의 부모/자식 구조를 사용하여 사용자에게 표시됩니다. 부모 테이블은 가장 높은 데이터 수준이고, 자식 테이블은 부모 테이블의 개별 목록에서 파생된 데이터 테이블입니다. 자식 테이블을 포함하는 각 부모 행에 확장기가 표시됩니다. 확장기를 클릭하면 자식 테이블에 대한 웹 형식의 링크 목록이 생성됩니다. 사용자가 링크를 선택하면 자식 테이블이 표시됩니다. 부모 행 표시/숨기기 아이콘을 클릭하면(![부모 행 표시&#47;숨기기 아이콘](../../../../docs/framework/winforms/controls/media/vbicon.gif "vbIcon")) 부모 표에 대한 정보를 숨기거나 사용자가 이전에 숨긴 경우 다시 표시됩니다. 사용자는 뒤로 단추를 클릭하여 이전에 표시된 테이블로 다시 이동할 수 있습니다.  
   
 ## <a name="columns-and-rows"></a>열과 행  
- <xref:System.Windows.Forms.DataGrid>는 <xref:System.Windows.Forms.DataGrid> 컨트롤의 <xref:System.Windows.Forms.DataGrid.TableStyles%2A> 속성에 포함된 <xref:System.Windows.Forms.DataGridTableStyle> 개체의 컬렉션으로 구성됩니다. 테이블 스타일은 <xref:System.Windows.Forms.DataGridTableStyle>의 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 속성에 포함된 <xref:System.Windows.Forms.DataGridColumnStyle> 개체의 컬렉션을 포함할 수 있습니다. 편집할 수는 <xref:System.Windows.Forms.DataGrid.TableStyles%2A> 및 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 를 통해 액세스 한 컬렉션 편집기를 사용 하 여 속성의 **속성** 창.  
+ <xref:System.Windows.Forms.DataGrid>는 <xref:System.Windows.Forms.DataGrid> 컨트롤의 <xref:System.Windows.Forms.DataGrid.TableStyles%2A> 속성에 포함된 <xref:System.Windows.Forms.DataGridTableStyle> 개체의 컬렉션으로 구성됩니다. 테이블 스타일은 <xref:System.Windows.Forms.DataGridTableStyle>의 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 속성에 포함된 <xref:System.Windows.Forms.DataGridColumnStyle> 개체의 컬렉션을 포함할 수 있습니다. 편집할 수 있습니다 합니다 <xref:System.Windows.Forms.DataGrid.TableStyles%2A> 및 <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 를 통해 액세스 한 컬렉션 편집기를 사용 하 여 속성을 **속성** 창.  
   
  <xref:System.Windows.Forms.DataGrid> 컨트롤과 연결된 <xref:System.Windows.Forms.DataGridTableStyle>은 <xref:System.Windows.Forms.GridTableStylesCollection>을 통해 모두 액세스할 수 있습니다. <xref:System.Windows.Forms.GridTableStylesCollection>은 디자이너에서 <xref:System.Windows.Forms.DataGridTableStyle> 컬렉션 편집기를 통해 또는 <xref:System.Windows.Forms.DataGrid> 컨트롤의 <xref:System.Windows.Forms.DataGrid.TableStyles%2A> 속성을 통해 프로그래밍 방식으로 편집할 수 있습니다.  
   
@@ -124,7 +124,7 @@ ms.locfileid: "33529495"
   
  테이블 스타일이 데이터 테이블과 관련이 있는 것처럼 열 스타일은 데이터 집합의 열과 관련이 있습니다. 각 테이블에 대해 한 번에 하나의 테이블 스타일만 정의될 수 있는 것처럼 특정 테이블 스타일에서 각 열에 대해 하나의 열 스타일만 정의될 수 있습니다. 이 관계는 열의 <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> 속성에서 정의됩니다.  
   
- 열 스타일을 추가 하지 않고 테이블 스타일을 만든 경우 런타임에 폼과 표를 만들 때 Visual Studio 기본 열 스타일을 추가 합니다. 그러나, 테이블 스타일을 만들 때 열 스타일을 추가한 경우에 Visual Studio에서 열 스타일을 만들지 않습니다. 또한 열 스타일을 정의하고 표 형태 창에 표시할 열을 포함하는 매핑 이름으로 할당해야 합니다.  
+ 열 스타일을 추가 하지 않고 테이블 스타일을 만든 경우 런타임에 폼과 표를 만들 때 Visual Studio에서 기본 열 스타일을 추가 합니다. 그러나 테이블 스타일을 만들 때 열 스타일을 추가한 경우에 Visual Studio는 열 스타일을 만들지 않습니다. 또한 열 스타일을 정의하고 표 형태 창에 표시할 열을 포함하는 매핑 이름으로 할당해야 합니다.  
   
  열 스타일을 할당하여 데이터 표에 포함할 열을 지정하며 열 스타일이 열에 할당되지 않았기 때문에 표 형태 창에 표시되지 않는 데이터 열을 데이터 집합에 포함할 수 있습니다. 그러나 데이터 열이 데이터 집합에 포함되었기 때문에 표시되지 않는 데이터를 프로그래밍 방식으로 편집할 수 있습니다.  
   

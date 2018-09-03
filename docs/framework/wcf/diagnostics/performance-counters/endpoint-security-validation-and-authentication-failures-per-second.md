@@ -1,17 +1,17 @@
 ---
-title: '끝점: Security Validation and Authentication Failures Per Second'
+title: '엔드포인트: Security Validation and Authentication Failures Per Second'
 ms.date: 03/30/2017
 ms.assetid: 89a70b90-d7e4-4b03-9b84-4dc88ce3d605
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: bc68f49326818f0e6687c06a38e5e51fd6960c9f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b857a608c6b485c384956e55247b6e02c49a8564
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33474736"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43465941"
 ---
-# <a name="endpoint-security-validation-and-authentication-failures-per-second"></a>끝점: Security Validation and Authentication Failures Per Second
+# <a name="endpoint-security-validation-and-authentication-failures-per-second"></a>엔드포인트: Security Validation and Authentication Failures Per Second
 카운터 이름: Security Validation and Authentication Failures Per Second  
   
 ## <a name="description"></a>설명  
@@ -31,6 +31,6 @@ ms.locfileid: "33474736"
   
 -   TLSNEGO/SPNEGO 핸드셰이크 중에 오류가 발생했습니다.  
   
- 이 카운터는 성능 카운터 형식 [PERF_COUNTER_COUNTER](http://go.microsoft.com/fwlink/?LinkID=94649), 값은 다음 수식을 사용 하 여 계산 됩니다.  
+ 이 카운터는 성능 카운터 형식 [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), 값은 다음 수식을 사용 하 여 계산 됩니다.  
   
  (N1-N0)/((D1-D0)/F)

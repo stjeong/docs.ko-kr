@@ -10,18 +10,18 @@ ms.assetid: 665b01b5-25f5-47a1-ab11-cffe8ebbf2a7
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 33a59c8866423e04c5f5174aa894f3489a0a552a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 95d383f44d84bb22e6fcc9fca159f8f5efa87434
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400434"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43465462"
 ---
 # <a name="ui-automation-clients-for-managed-code-how-to-topics"></a>관리 코드 방법 항목의 UI 자동화 클라이언트
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
- 이 섹션의 기능을 구현 하는 방법에 대 한 자세한 정보를 제공 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 클라이언트 응용 프로그램에서입니다.  
+ 이 섹션의 기능을 구현 하는 방법에 대 한 자세한 정보를 제공 합니다. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 클라이언트 응용 프로그램에서입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [속성 조건을 기반으로 UI 자동화 요소 찾기](../../../docs/framework/ui-automation/find-a-ui-automation-element-based-on-a-property-condition.md)  

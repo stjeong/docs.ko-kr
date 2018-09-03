@@ -9,11 +9,11 @@ ms.assetid: 140381b8-dc96-4ad5-ae11-792c9ed0be4d
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3764409f13a00f6d8a050bfbdd0f59e537a5ded3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33652720"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43456294"
 ---
 # <a name="-nostdlib-visual-basic"></a>-nostdlib (Visual Basic)
 컴파일러가를 자동으로 표준 라이브러리를 참조 하지 않습니다.  
@@ -25,16 +25,16 @@ ms.locfileid: "33652720"
 ```  
   
 ## <a name="remarks"></a>설명  
- `-nostdlib` 옵션 System.dll 어셈블리에 대 한 자동 참조를 제거 하 고 컴파일러가 Vbc.rsp 파일을 읽는 하지 않도록 합니다. Vbc.exe 파일과 동일한 디렉터리에 있는 Vbc.rsp 파일에서 자주 사용 되는 참조 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 어셈블리 및 가져오기는 `System` 및 `Microsoft.VisualBasic` 네임 스페이스입니다.  
+ `-nostdlib` 옵션 System.dll 어셈블리에 대 한 자동 참조를 제거 하 고 컴파일러에서 Vbc.rsp 파일을 읽을 수 없습니다. Vbc.exe 파일과 동일한 디렉터리에 위치한 Vbc.rsp 파일을 자주 사용 되는 참조 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 어셈블리 및 가져오기는 `System` 고 `Microsoft.VisualBasic` 네임 스페이스입니다.  
   
 > [!NOTE]
 >  Mscorlib.dll 및 Microsoft.VisualBasic.dll 어셈블리는 항상 참조 합니다.  
   
 > [!NOTE]
->  `-nostdlib` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 없습니다; 명령줄에서 컴파일할 경우에 사용할 수는 있습니다.  
+>  `-nostdlib` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 있는 명령줄에서 컴파일할 경우에 사용할 수 있는 것입니다.  
   
 ## <a name="example"></a>예제  
- 다음 코드에서는 `T2.vb` 표준 라이브러리를 참조 하지 않고 있습니다. 설정 해야 합니다는 `_MYTYPE` 조건부 컴파일 상수를 문자열 제거 하려면 "Empty"는 `My` 개체입니다.  
+ 다음 코드에서는 `T2.vb` 표준 라이브러리를 참조 하지 않고 있습니다. 설정 해야 합니다 `_MYTYPE` 조건부 컴파일 상수를 문자열 "Empty"를 제거 하는 `My` 개체.  
   
 ```console
 vbc -nostdlib -define:_MYTYPE=\"Empty\" T2.vb  

@@ -2,12 +2,12 @@
 title: 동적 업데이트
 ms.date: 03/30/2017
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-ms.openlocfilehash: f50c8e8ed7ebaab71421ff1615051d9b828d9e4b
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: dea930de2103a24aa48b1d0a31a3cbf5fc0ae26c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207523"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43455772"
 ---
 # <a name="dynamic-update"></a>동적 업데이트
 동적 업데이트는 워크플로 응용 프로그램 개발자가 지속형 워크플로 인스턴스의 워크플로 정의를 업데이트하기 위한 메커니즘을 제공합니다. 이를 통해 버그 수정 또는 새 요구 사항을 구현하거나 예기치 않은 변경 내용을 수용할 수 있습니다. 이 항목에서는 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에 도입된 동적 업데이트 기능에 대해 간략하게 설명합니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "36207523"
   
 1.  [동적 업데이트에 대 한 워크플로 정의 준비 합니다.](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Prepare)  
   
-2.  [원하는 변경 내용을 반영 하기 위해 워크플로 정의 업데이트 합니다.](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Update)  
+2.  [원하는 변경 내용을 반영 하도록 워크플로 정의 업데이트 합니다.](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Update)  
   
 3.  [업데이트 맵을 만듭니다.](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Create)  
   
@@ -34,7 +34,7 @@ ms.locfileid: "36207523"
  XAML 워크플로를 동적으로 업데이트할 수 있도록 준비하려면 해당 워크플로를 <xref:System.Activities.ActivityBuilder>에 로드한 후 <xref:System.Activities.ActivityBuilder>에 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType>를 전달합니다.  
   
 > [!NOTE]
->  Serialize 된 워크플로 작업에 대 한 자세한 내용은 및 <xref:System.Activities.ActivityBuilder>, 참조 [직렬화 워크플로 및 활동 xaml](../../../docs/framework/windows-workflow-foundation/serializing-workflows-and-activities-to-and-from-xaml.md)합니다.  
+>  Serialize 된 워크플로 작업에 대 한 자세한 내용은 및 <xref:System.Activities.ActivityBuilder>를 참조 하세요 [직렬화 워크플로 및 활동을 XAML에서](../../../docs/framework/windows-workflow-foundation/serializing-workflows-and-activities-to-and-from-xaml.md)합니다.  
   
  다음 예제에서는 여러 자식 활동과 `MortgageWorkflow`로 구성된 <xref:System.Activities.Statements.Sequence> 정의를 <xref:System.Activities.ActivityBuilder>에 로드한 후 동적 업데이트를 준비합니다. 메서드가 반환한 후 <xref:System.Activities.ActivityBuilder>는 원래 워크플로 정의와 복사본이 포함되어 있습니다.  
   
@@ -57,9 +57,9 @@ DynamicUpdateServices.PrepareForUpdate(ab);
 ```  
   
 > [!NOTE]
->  이 항목과 함께 제공 되는 샘플 코드를 다운로드 하려면 [동적 업데이트 샘플 코드](http://go.microsoft.com/fwlink/?LinkId=227905)합니다.  
+>  이 항목과 관련 된 샘플 코드를 다운로드 하려면 [동적 업데이트 샘플 코드](https://go.microsoft.com/fwlink/?LinkId=227905)합니다.  
   
-###  <a name="Update"></a> 원하는 변경 내용을 반영 하기 위해 워크플로 정의 업데이트 합니다.  
+###  <a name="Update"></a> 원하는 변경 내용을 반영 하도록 워크플로 정의 업데이트 합니다.  
  워크플로 정의를 업데이트할 준비가 되면 원하는 변경 작업을 수행할 수 있습니다. 활동 추가 또는 제거, 공용 변수 추가, 이동 또는 삭제, 인수 추가 또는 제거, 활동 대리자의 시그니처 변경 같은 작업을 수행할 수 있습니다. 실행 중인 활동을 제거하거나 실행 중인 대리자의 시그니처를 변경할 수는 없습니다. 이러한 변경 작업은 코드를 사용하거나 재호스트된 Workflow Designer를 사용하여 수행할 수 있습니다. 다음 예제에서는 이전 예제에서 사용한 `VerifyAppraisal`의 본문을 구성하는 Sequence에 사용자 지정 `MortgageWorkflow` 활동을 추가합니다.  
   
 ```csharp  
@@ -164,7 +164,7 @@ foreach (Guid id in ids)
  동적 업데이트를 적용한 후에는 워크플로 인스턴스를 다시 시작할 수 있습니다. 이때 새로 업데이트된 정의와 <xref:System.Activities.WorkflowIdentity>를 사용해야 합니다.  
   
 > [!NOTE]
->  작업에 대 한 자세한 내용은 <xref:System.Activities.WorkflowApplication> 및 <xref:System.Activities.WorkflowIdentity>, 참조 [및 버전 관리를 사용 하 여 WorkflowIdentity](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md)합니다.  
+>  작업에 대 한 자세한 내용은 <xref:System.Activities.WorkflowApplication> 하 고 <xref:System.Activities.WorkflowIdentity>를 참조 하세요 [를 사용 하 여 WorkflowIdentity 및 버전 관리](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
   
  다음 예제에서는 이전 예제에서 컴파일된 `MortgageWorkflow_v1.1.xaml` 워크플로를 업데이트된 워크플로 정의를 사용하여 로드하고 다시 시작합니다.  
   
@@ -191,4 +191,4 @@ wfApp.Load(InstanceId);
 ```  
   
 > [!NOTE]
->  이 항목과 함께 제공 되는 샘플 코드를 다운로드 하려면 [동적 업데이트 샘플 코드](http://go.microsoft.com/fwlink/?LinkId=227905)합니다.
+>  이 항목과 관련 된 샘플 코드를 다운로드 하려면 [동적 업데이트 샘플 코드](https://go.microsoft.com/fwlink/?LinkId=227905)합니다.

@@ -2,12 +2,12 @@
 title: ISOF(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5b2b0d34-d0a7-4bcd-baf2-58aa8456d00b
-ms.openlocfilehash: 7aecb8e2740ffd711278bfd5735c71c2dacf9c3c
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: dbea0c3a0087c88bf5ffda7b921764b8a0f9f21d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32762142"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43465449"
 ---
 # <a name="isof-entity-sql"></a>ISOF(Entity SQL)
 식의 형식이 지정된 형식 또는 그 하위 형식인지 여부를 확인합니다.  
@@ -35,7 +35,7 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
  `true`이 T 형식이며 T가 기본 형식이거나 `expression`의 파생 형식인 경우 `type`이고, `expression`이 런타임에 null인 경우 null이며, 그 이외의 경우 `false`입니다.  
   
 ## <a name="remarks"></a>설명  
- 식 `expression IS NOT OF (type)` 및 `expression IS NOT OF (ONLY type)` 구문상 동일 `NOT (expression IS OF (type))` 및 `NOT (expression IS OF (ONLY type))`각각.  
+ 식을 `expression IS NOT OF (type)` 하 고 `expression IS NOT OF (ONLY type)` 하는 구문은 동일 `NOT (expression IS OF (type))` 및 `NOT (expression IS OF (ONLY type))`각각.  
   
  다음 표에서는 일반 패턴 및 비교적 특수한 패턴에 대한 `IS OF` 연산자의 동작을 보여 줍니다. 공급자 호출 이전에 모든 예외가 클라이언트 측에서 throw됩니다.  
   
@@ -52,7 +52,7 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
 |RowType IS OF(RowType)|@FSHO2@throw|  
   
 ## <a name="example"></a>예제  
- 다음 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리에서는 IS OF 연산자를 사용하여 쿼리 식의 형식을 결정한 다음 TREAT 연산자를 사용하여 Course 형식의 개체를 OnsiteCourse 형식의 개체 컬렉션으로 변환합니다. 쿼리 기반는 [School 모델](http://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac)합니다.  
+ 다음 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리에서는 IS OF 연산자를 사용하여 쿼리 식의 형식을 결정한 다음 TREAT 연산자를 사용하여 Course 형식의 개체를 OnsiteCourse 형식의 개체 컬렉션으로 변환합니다. 쿼리의 기준이 되는 [School 모델](https://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac)합니다.  
   
  [!code-csharp[DP EntityServices Concepts 2#TREAT_ISOF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#treat_isof)]  
   

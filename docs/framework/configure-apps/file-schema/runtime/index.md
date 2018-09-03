@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6c517fe7736fd19fd93926d79ae5709b049adad1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a0df1f3bcf8941b5fe0a8fd19dfc7423e669a766
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747955"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43465618"
 ---
 # <a name="runtime-settings-schema"></a>런타임 설정 스키마
 런타임 설정은 공용 언어 런타임에서 .NET Framework를 대상으로 하는 응용 프로그램을 구성하는 데 사용됩니다.  
 
-## <a name="the-runtime-section-and-its-parent-and-child-elements"></a>\<런타임 > 섹션와 해당 부모 및 자식 요소
+## <a name="the-runtime-section-and-its-parent-and-child-elements"></a>\<런타임 > 섹션 및 해당 부모 및 자식 요소
   
 [\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
 &nbsp;&nbsp;[\<runtime>](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)  
@@ -75,7 +75,7 @@ ms.locfileid: "32747955"
 &nbsp;&nbsp;\<\runtime>  
 \<\configuration>
 
-## <a name="alphabetical-list-of-runtime-elements"></a>사전순 목록 \<런타임 > 요소
+## <a name="alphabetical-list-of-runtime-elements"></a>사전순으로 \<런타임 > 요소
 
 |요소|설명|  
 |-------------|-----------------|  
@@ -133,5 +133,5 @@ ms.locfileid: "32747955"
   
 ## <a name="see-also"></a>참고 항목  
  [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [방법: 동시 가비지 수집을 사용 하지 않도록 설정](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
+ [방법: 동시 가비지 수집을 사용 하지 않도록 설정](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
  [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ImageList component [Windows Forms]
 - image controls
 ms.assetid: 83b48634-782b-464d-9b7d-568dc6e0bef2
-ms.openlocfilehash: 68296328a574997d5211bbd26ea4ca40be926e75
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ce847507785b06874425e2efe678b86fc868507e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532940"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43464923"
 ---
 # <a name="imagelist-component-windows-forms"></a>ImageList 구성 요소(Windows Forms)
 Windows Forms `ImageList` 구성 요소는 컨트롤에 의해 표시될 수 있는 이미지를 저장하는 데 사용됩니다. 이미지 목록을 통해 일관된 단일 이미지 카탈로그에 대한 코드를 작성할 수 있습니다.  
@@ -22,7 +22,7 @@ Windows Forms `ImageList` 구성 요소는 컨트롤에 의해 표시될 수 있
  [방법: Windows Forms ImageList 구성 요소를 사용하여 이미지 추가 또는 제거](../../../../docs/framework/winforms/controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)  
  이미지 목록에서 이미지를 추가 및 제거하기 위한 지침을 제공합니다.  
   
- 또한 참조 [하는 방법: 디자이너와 ImageList 이미지 추가 또는 제거](http://msdn.microsoft.com/library/ms233674\(v=vs.110\))합니다.  
+ 도 참조 하세요 [방법: 디자이너를 사용 하 여 ImageList 이미지 추가 또는 제거](how-to-add-or-remove-imagelist-images-with-the-designer.md)합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.ImageList>  

@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 4de85eb310de70dc8fd61f7c06abca95ec267f87
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931417"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463093"
 ---
 # <a name="getcurrentapartmenttype-function"></a>GetCurrentApartmentType 함수
 호출자가 실행 하는 아파트의 유형을 검색 합니다.   

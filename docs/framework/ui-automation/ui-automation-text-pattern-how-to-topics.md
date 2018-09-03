@@ -11,18 +11,18 @@ ms.assetid: ca6ac045-7b21-4487-9379-59aa20909670
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: ae85b1184c6ed58d68a401870e509919ed2ad345
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 85cd0e4910fdef28721cfb4be341b74fcf1f3c1e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33407029"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466241"
 ---
 # <a name="ui-automation-text-pattern-how-to-topics"></a>UI 자동화 텍스트 패턴 방법 항목
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
- 이 섹션에는 UI 자동화 텍스트 패턴을 사용 하는 방법을 설명 하는 항목이 포함 되어 있습니다.  
+ 이 섹션에서는 UI 자동화 텍스트 패턴을 사용 하는 방법을 설명 하는 항목을 포함 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [UI 자동화를 사용하여 텍스트 상자에 콘텐츠 추가](../../../docs/framework/ui-automation/add-content-to-a-text-box-using-ui-automation.md)  

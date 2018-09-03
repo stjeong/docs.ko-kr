@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5a44819e8a8c0b07b3ffbfb2d92533cbdc558ef6
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 3909855db109938794fad3e0afc99d492009b81c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874746"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43461789"
 ---
 # <a name="migrating-your-windows-store-app-to-net-native"></a>Windows 스토어 앱을 .NET 네이티브로 마이그레이션
-.NET 네이티브 개발자의 컴퓨터 또는 Windows 스토어에서 앱의 정적 컴파일을 제공합니다. 이 기능은 장치의 [네이티브 이미지 생성기(Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) 또는 JIT(Just-In-Time) 컴파일러가 Windows 스토어 앱에 대해 수행하는 동적 컴파일과는 다릅니다. 다르기는 하지만.NET 네이티브 호환성을 유지 하려고 사용 하 여 합니다 [Windows 스토어 앱 용.NET](http://msdn.microsoft.com/library/windows/apps/br230302.aspx)합니다. 대부분의 경우.NET 네이티브를 사용 하 여.NET에 대 한 Windows 스토어 앱에서 작동 하는 것도 작동 합니다.  그러나 동작이 변경되는 경우도 있습니다. 이 문서는 다음 영역에서 표준 Windows 스토어 앱 용.NET 및.NET 네이티브 이러한 차이점에 설명 합니다.  
+.NET 네이티브 개발자의 컴퓨터 또는 Windows 스토어에서 앱의 정적 컴파일을 제공합니다. 이 기능은 장치의 [네이티브 이미지 생성기(Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) 또는 JIT(Just-In-Time) 컴파일러가 Windows 스토어 앱에 대해 수행하는 동적 컴파일과는 다릅니다. 다르기는 하지만.NET 네이티브 호환성을 유지 하려고 사용 하 여 합니다 [Windows 스토어 앱 용.NET](https://msdn.microsoft.com/library/windows/apps/br230302.aspx)합니다. 대부분의 경우.NET 네이티브를 사용 하 여.NET에 대 한 Windows 스토어 앱에서 작동 하는 것도 작동 합니다.  그러나 동작이 변경되는 경우도 있습니다. 이 문서는 다음 영역에서 표준 Windows 스토어 앱 용.NET 및.NET 네이티브 이러한 차이점에 설명 합니다.  
   
 -   [일반 런타임 차이점](#Runtime)  
   
@@ -79,7 +79,7 @@ ms.locfileid: "37874746"
   
 -   <xref:System.RuntimeFieldHandle> 및 <xref:System.RuntimeMethodHandle> 구조체에서는 public 멤버를 사용할 수 없습니다. 이러한 형식은 LINQ, 식 트리 및 정적 배열 초기화에서만 지원됩니다.  
   
--   <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> 및 <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType>의 기본 클래스는 숨겨진 멤버를 포함하므로 명시적으로 재정의하지 않아도 재정의될 수 있습니다. 이는 다른 [RuntimeReflectionExtensions.GetRuntime*](http://msdn.microsoft.com/library/system.reflection.runtimereflectionextensions_methods.aspx) 메서드에서도 마찬가지입니다.  
+-   <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> 및 <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType>의 기본 클래스는 숨겨진 멤버를 포함하므로 명시적으로 재정의하지 않아도 재정의될 수 있습니다. 다른 마찬가지 [runtimereflectionextensions.getruntime *](https://msdn.microsoft.com/library/system.reflection.runtimereflectionextensions_methods.aspx) 메서드.  
   
 -   byref 배열과 같은 특정 조합을 만들 때 <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> 및 <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType>에서 오류가 발생하지 않습니다.  
   
@@ -151,13 +151,13 @@ ms.locfileid: "37874746"
   
 -   형식에 <xref:System.Reflection.TypeInfo.GUID%2A?displayProperty=nameWithType> 특성을 적용하지 않으면 <xref:System.PlatformNotSupportedException> 속성이 <xref:System.Runtime.InteropServices.GuidAttribute> 예외를 throw합니다. GUID는 주로 COM 지원을 위해 사용됩니다.  
   
--   <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> 메서드.NET 네이티브의 간단한 날짜를 포함 하는 문자열을 올바르게 구문 분석 합니다. 그러나 Microsoft 기술 자료 문서 [KB2803771](http://support.microsoft.com/kb/2803771) 및 [KB2803755](http://support.microsoft.com/kb/2803755)에서 설명하는 날짜 및 시간 구문 분석 변경 내용과의 호환성은 유지되지 않습니다.  
+-   <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> 메서드.NET 네이티브의 간단한 날짜를 포함 하는 문자열을 올바르게 구문 분석 합니다. 그러나 날짜 호환성 변경 내용으로 유지 되지 않습니다 및 Microsoft 기술 자료 문서에 설명 된 시간 구문 분석 [KB2803771](https://support.microsoft.com/kb/2803771) 하 고 [KB2803755](https://support.microsoft.com/kb/2803755)합니다.  
   
 -   <xref:System.Numerics.BigInteger.ToString%2A?displayProperty=nameWithType> `("E")` .NET 네이티브에서 올바르게 반올림 됩니다. 일부 CLR 버전에서는 결과 문자열이 반올림되는 대신 잘립니다.  
   
 <a name="HttpClient"></a>   
 ### <a name="httpclient-differences"></a>HttpClient의 차이점  
- .NET 네이티브를 <xref:System.Net.Http.HttpClientHandler> 클래스는 내부적으로 WinINet을 사용 (통해 합니다 [HttpBaseProtocolFilter](http://msdn.microsoft.com/library/windows/apps/windows.web.http.filters.httpbaseprotocolfilter.aspx) 클래스) 대신를 <xref:System.Net.WebRequest> 및 <xref:System.Net.WebResponse> 표준.NET에 대 한 Windows 스토어 앱에서 사용 되는 클래스입니다.  WinINet은 <xref:System.Net.Http.HttpClientHandler> 클래스에서 지원하는 구성 옵션 중 일부만 지원합니다.  그 결과는 다음과 같습니다.  
+ .NET 네이티브를 <xref:System.Net.Http.HttpClientHandler> 클래스는 내부적으로 WinINet을 사용 (통해 합니다 [HttpBaseProtocolFilter](https://msdn.microsoft.com/library/windows/apps/windows.web.http.filters.httpbaseprotocolfilter.aspx) 클래스) 대신를 <xref:System.Net.WebRequest> 및 <xref:System.Net.WebResponse> 표준.NET에 대 한 Windows 스토어 앱에서 사용 되는 클래스입니다.  WinINet은 <xref:System.Net.Http.HttpClientHandler> 클래스에서 지원하는 구성 옵션 중 일부만 지원합니다.  그 결과는 다음과 같습니다.  
   
 -   기능 속성 중 일부 <xref:System.Net.Http.HttpClientHandler> 반환 `false` .NET 네이티브에서 반환 하는 반면 `true` .NET에 대 한 Windows 스토어 앱 용 표준입니다.  
   
@@ -167,11 +167,11 @@ ms.locfileid: "37874746"
   
  **프록시**  
   
- [HttpBaseProtocolFilter](http://msdn.microsoft.com/library/windows/apps/windows.web.http.filters.httpbaseprotocolfilter.aspx) 클래스는 요청별로 프록시의 구성 또는 재정의를 지원하지 않습니다.  즉, 시스템에서 구성한 프록시 서버 또는 프록시 서버가 값에 따라.NET 네이티브에서 모든 요청에 사용 된 <xref:System.Net.Http.HttpClientHandler.UseProxy%2A?displayProperty=nameWithType> 속성입니다.  Windows 스토어 앱용 .NET에서는 <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> 속성을 통해 프록시 서버가 정의됩니다.  설정에.NET 네이티브에 <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> 이외의 값으로 `null` throw를 <xref:System.PlatformNotSupportedException> 예외입니다.  <xref:System.Net.Http.HttpClientHandler.SupportsProxy%2A?displayProperty=nameWithType> 속성이 반환 `false` .NET 네이티브에서 반환 하는 반면 `true` Windows 스토어 용.NET Framework 앱 용 표준입니다.  
+ 합니다 [HttpBaseProtocolFilter](https://msdn.microsoft.com/library/windows/apps/windows.web.http.filters.httpbaseprotocolfilter.aspx) 구성 또는 재정의 요청 별로 프록시의 클래스를 지원 하지 않습니다.  즉, 시스템에서 구성한 프록시 서버 또는 프록시 서버가 값에 따라.NET 네이티브에서 모든 요청에 사용 된 <xref:System.Net.Http.HttpClientHandler.UseProxy%2A?displayProperty=nameWithType> 속성입니다.  Windows 스토어 앱용 .NET에서는 <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> 속성을 통해 프록시 서버가 정의됩니다.  설정에.NET 네이티브에 <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> 이외의 값으로 `null` throw를 <xref:System.PlatformNotSupportedException> 예외입니다.  <xref:System.Net.Http.HttpClientHandler.SupportsProxy%2A?displayProperty=nameWithType> 속성이 반환 `false` .NET 네이티브에서 반환 하는 반면 `true` Windows 스토어 용.NET Framework 앱 용 표준입니다.  
   
  **자동 리디렉션**  
   
- [HttpBaseProtocolFilter](http://msdn.microsoft.com/library/windows/apps/windows.web.http.filters.httpbaseprotocolfilter.aspx) 클래스는 구성되는 최대 자동 리디렉션 수를 허용하지 않습니다.  Windows 스토어 앱용 표준 .NET에서는 <xref:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections%2A?displayProperty=nameWithType> 속성의 기본값이 50이며, 이 값은 수정 가능합니다. .NET 네이티브에서이 속성의 값이 10 이며 throw를 수정 하는 동안는 <xref:System.PlatformNotSupportedException> 예외입니다.  합니다 <xref:System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration%2A?displayProperty=nameWithType> 속성이 반환 `false` .NET 네이티브에서 반환 하는 반면 `true` Windows 스토어 앱 용.NET에서에서.  
+ 합니다 [HttpBaseProtocolFilter](https://msdn.microsoft.com/library/windows/apps/windows.web.http.filters.httpbaseprotocolfilter.aspx) 클래스 자동 리디렉션 구성의 최대 수를 허용 하지 않습니다.  Windows 스토어 앱용 표준 .NET에서는 <xref:System.Net.Http.HttpClientHandler.MaxAutomaticRedirections%2A?displayProperty=nameWithType> 속성의 기본값이 50이며, 이 값은 수정 가능합니다. .NET 네이티브에서이 속성의 값이 10 이며 throw를 수정 하는 동안는 <xref:System.PlatformNotSupportedException> 예외입니다.  합니다 <xref:System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration%2A?displayProperty=nameWithType> 속성이 반환 `false` .NET 네이티브에서 반환 하는 반면 `true` Windows 스토어 앱 용.NET에서에서.  
   
  **자동 압축 풀기**  
   
@@ -217,9 +217,9 @@ ms.locfileid: "37874746"
 |<xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType>|  
 |<xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>|  
   
- <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> 지원으로 사용 하는 경우 등의 일부 시나리오에서 예외를 throw 하지만 [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) 또는 byref 변형 합니다.  
+ <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> 지원으로 사용 하는 경우 등의 일부 시나리오에서 예외를 throw 하지만 [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 또는 byref 변형 합니다.  
   
- [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) 지원에 대해 API가 더 이상 사용되지 않습니다.  
+ 사용 되지 않는 Api에 대 한 [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 지원:  
   
 |형식|멤버|  
 |----------|------------|  
@@ -318,7 +318,7 @@ ms.locfileid: "37874746"
   
     -   `BStr`  
   
-    -   [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509.aspx)  
+    -   [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)  
   
  그러나.NET 네이티브 지원 하지 않습니다 다음.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "37874746"
   
 -   관리되는 형식에서 <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType> 인터페이스 구현  
   
--   구현 된 [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) 인터페이스를 통해 관리 되는 형식에는 <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType> 특성입니다. 그러나 `IDispatch`를 통해 COM 개체를 호출할 수는 없으며 관리되는 개체는 `IDispatch`를 구현할 수 없습니다.  
+-   구현 된 [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 인터페이스를 통해 관리 되는 형식에는 <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType> 특성입니다. 그러나 `IDispatch`를 통해 COM 개체를 호출할 수는 없으며 관리되는 개체는 `IDispatch`를 구현할 수 없습니다.  
   
  리플렉션을 사용하여 플랫폼 호출 메서드를 호출할 수는 없습니다. 대신 다른 메서드에서 메서드 호출을 래핑하고 리플렉션을 사용해 래퍼를 호출하여 이 제한을 해결할 수 있습니다.  
   
@@ -400,7 +400,7 @@ ms.locfileid: "37874746"
   
  **Windows Communication Foundation (WCF) (System.ServiceModel.\*)**  
   
- 형식에는 [namespaces](http://msdn.microsoft.com/library/gg145010.aspx) .NET 네이티브에서 지원 되지 않습니다. 여기에는 다음과 같은 형식이 포함됩니다.  
+ 형식에는 [namespaces](https://msdn.microsoft.com/library/gg145010.aspx) .NET 네이티브에서 지원 되지 않습니다. 여기에는 다음과 같은 형식이 포함됩니다.  
   
 ||  
 |-|  
@@ -673,5 +673,5 @@ ms.locfileid: "37874746"
 ## <a name="see-also"></a>참고 항목  
  [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)  
  [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [.NET Windows 스토어 용 앱 개요](http://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
+ [.NET Windows 스토어 용 앱 개요](https://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
  [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

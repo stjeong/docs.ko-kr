@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c8c7042f7eee1ccd03d04cc20c5a0db83d986b0b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1149a3c3589cec0e952088a772ca036028c58ff5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33421920"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43470829"
 ---
 # <a name="icordebugmetadatalocatorgetmetadata-method"></a>ICorDebugMetaDataLocator::GetMetaData 메서드
 디버거가 요청한 작업을 완료하는 데 필요한 메타데이터가 포함된 모듈의 전체 경로를 반환하도록 디버거에 요청합니다.  
@@ -46,7 +46,7 @@ HRESULT GetMetaData(
  [in] 파일의 전체 경로를 나타내는 null로 종료된 문자열입니다. 전체 경로 사용할 수 없는 경우 이름 및 파일의 확장명 (*filename*. *확장*).  
   
  `dwImageTimeStamp`  
- [in] 이미지 PE 파일 헤더의 타임스탬프입니다. 이 매개 변수 기호 서버에 사용 될 수 있습니다 ([SymSrv](http://msdn.microsoft.com/library/cc266470.aspx)) 조회 합니다.  
+ [in] 이미지 PE 파일 헤더의 타임스탬프입니다. 이 매개 변수 기호 서버에 사용 될 수 있습니다 ([SymSrv](https://msdn.microsoft.com/library/cc266470.aspx)) 조회 합니다.  
   
  `dwImageSize`  
  [in] PE 파일 헤더의 이미지 크기입니다. 이 매개 변수는 SymSrv 조회에 사용될 수 있습니다.  
@@ -62,7 +62,7 @@ HRESULT GetMetaData(
  `wszPathBuffer`  
  [out] 디버거가 요청된 메타데이터를 포함한 파일의 전체 경로를 복사할 대상 버퍼에 대한 포인터입니다.  
   
- `ofReadOnly` 에서 플래그는 [CorOpenFlags](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) 열거형이이 파일의 메타 데이터에 대 한 읽기 전용 액세스를 요청 하는 데 사용 됩니다.  
+ 합니다 `ofReadOnly` 에서 플래그를 [CorOpenFlags](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) 열거형이이 파일의 메타 데이터에 대 한 읽기 전용 액세스를 요청 하는 데 사용 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 다음과 같은 특정 HRESULT뿐만 아니라 메서드 오류를 나타내는 HRESULT 오류도 반환합니다. 모든 기타 오류 HRESULT는 파일을 검색할 수 없음을 의미합니다.  
@@ -76,13 +76,13 @@ HRESULT GetMetaData(
  `wszImagePath`에 덤프부터 모듈의 전체 경로가 포함되면 이 매개 변수는 덤프가 수집된 컴퓨터의 경로를 지정합니다. 이 위치에 파일이 있을 수 없거나 같은 이름을 가진 잘못된 파일이 경로에 저장될 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [ICorDebugThread4 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)  

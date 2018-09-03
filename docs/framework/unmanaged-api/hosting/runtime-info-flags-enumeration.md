@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e544db23abf89a20bd2f7763cfdb1256ea4a326c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 09bd32172bcad298eebc2921461fdc953e9c6d6e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33441366"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43468295"
 ---
 # <a name="runtimeinfoflags-enumeration"></a>RUNTIME_INFO_FLAGS 열거형
-공용 언어 런타임 (CLR)에 대 한 정보를 반환 하는지를 나타내는 값을 포함 합니다.  
+CLR (공용 언어 런타임)에 대 한 정보를 반환할지 여부를 나타내는 값을 포함 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,17 +47,17 @@ typedef enum {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`RUNTIME_INFO_DONT_RETURN_DIRECTORY`|디렉터리 정보를 포함 하지 않아야 있는지 나타냅니다.|  
-|`RUNTIME_INFO_DONT_RETURN_VERSION`|버전 정보를 포함 하지 않아야 있는지 나타냅니다.|  
+|`RUNTIME_INFO_DONT_RETURN_DIRECTORY`|디렉터리 정보를 포함 하지 해야 함을 나타냅니다.|  
+|`RUNTIME_INFO_DONT_RETURN_VERSION`|버전 정보를 포함 하지 해야 함을 나타냅니다.|  
 |`RUNTIME_INFO_DONT_SHOW_ERROR_DIALOG`|실패 시 오류 대화 상자를 표시 되지 않음을 나타냅니다.|  
-|`RUNTIME_INFO_IGNORE_ERROR_MODE`|나타냅니다 호출의 효과 [SetErrorMode](http://go.microsoft.com/fwlink/p/?LinkId=255242) SEM_FAILCRITICALERRORS 플래그로 함수를 재정의 해야 합니다. 즉, 설치 대화 상자가 표시 되지 않고 오류 발생 시 표시 되어야 합니다.|  
-|`RUNTIME_INFO_REQUEST_AMD64`|런타임의 AMD 호환 버전에 대 한 정보에 대 한 요청을 나타냅니다.|  
-|`RUNTIME_INFO_REQUEST_IA64`|런타임의 IA 호환 버전에 대 한 정보에 대 한 요청을 나타냅니다.|  
-|`RUNTIME_INFO_REQUEST_X86`|런타임의 x86 호환 버전에 대 한 정보에 대 한 요청을 나타냅니다.|  
-|`RUNTIME_INFO_UPGRADE_VERSION`|버전 업그레이드 정보를 포함 해야 함을 나타냅니다.|  
+|`RUNTIME_INFO_IGNORE_ERROR_MODE`|나타내는 호출의 결과 [SetErrorMode](https://go.microsoft.com/fwlink/p/?LinkId=255242) SEM_FAILCRITICALERRORS 플래그를 사용 하 여 함수를 재정의 해야 합니다. 즉, 설치 대화 상자를 표시 되는 대신 실패 하면 표시 됩니다.|  
+|`RUNTIME_INFO_REQUEST_AMD64`|런타임의 AMD-64-호환 되는 버전 정보에 대 한 요청을 나타냅니다.|  
+|`RUNTIME_INFO_REQUEST_IA64`|런타임의 IA-64-호환 되는 버전 정보에 대 한 요청을 나타냅니다.|  
+|`RUNTIME_INFO_REQUEST_X86`|런타임의 x86 호환 버전 정보에 대 한 요청을 나타냅니다.|  
+|`RUNTIME_INFO_UPGRADE_VERSION`|버전 업그레이드 정보 포함 되어야 함을 나타냅니다.|  
   
 ## <a name="remarks"></a>설명  
- 다음 플랫폼 아키텍처 플래그 한 번에 하나만 지정된 될 수 있습니다 및 함께 사용할 수 없습니다.  
+ 다음 플랫폼 아키텍처 플래그를 한 번에 하나만 지정된 될 수 있습니다 및 함께 사용할 수 없습니다.  
   
 -   RUNTIME_INFO_REQUEST_IA64  
   
@@ -66,13 +66,13 @@ typedef enum {
 -   RUNTIME_INFO_REQUEST_X86  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** MSCorEE.h  
   
  **라이브러리:** MSCorEE.dll  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [호스팅 열거형](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

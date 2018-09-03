@@ -2,12 +2,12 @@
 title: FILESTREAM 데이터
 ms.date: 03/30/2017
 ms.assetid: bd8b845c-0f09-4295-b466-97ef106eefa8
-ms.openlocfilehash: fb7291fad15917614f5eebd31ad0e239c987a81d
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: eef03d171d288cb2bc62c3aaa477a95a5ce718c3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931402"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463171"
 ---
 # <a name="filestream-data"></a>FILESTREAM 데이터
 FILESTREAM 저장소 특성은 varbinary(max) 열에 저장된 이진(BLOB) 데이터에 사용됩니다. FILESTREAM 이전에는 이진 데이터를 저장하려면 특별한 처리가 필요했습니다. 텍스트 문서, 이미지 및 비디오 같이 구조화되지 않은 데이터는 대개 데이터베이스의 외부에 저장되어 관리가 어렵습니다.  
@@ -176,8 +176,8 @@ namespace FileStreamTest
 |-----------|-----------------|  
 |[FILESTREAM 저장소 디자인 및 구현](http://msdn2.microsoft.com/library/bb895234\(SQL.105\).aspx)|FILESTREAM 문서 및 관련 항목에 대한 링크를 제공합니다.|  
 |[FILESTREAM 개요](http://msdn2.microsoft.com/library/bb933993\(SQL.105\).aspx)|FILESTREAM 저장소를 사용해야 하는 경우 및 FILESTREAM 저장소가 SQL Server 데이터베이스 엔진을 NTFS 파일 시스템과 통합하는 방법에 대해 설명합니다.|  
-|[FILESTREAM 저장소 시작](http://msdn.microsoft.com/library/bb933995\(SQL.105\).aspx)|SQL Server 인스턴스에서 FILESTREAM을 사용하도록 설정하는 방법, 저장된 FILESTREAM 데이터에 데이터베이스와 테이블을 만드는 방법 및 FILESTREAM 데이터가 포함된 행을 조작하는 방법에 대해 설명합니다.|  
-|[클라이언트 응용 프로그램에서 FILESTREAM 저장소 사용](http://msdn.microsoft.com/library/bb933877\(SQL.105\).aspx)|FILESTREAM 데이터로 작업하기 위한 Win32 API 함수에 대해 설명합니다.|  
+|[FILESTREAM 저장소 시작](https://msdn.microsoft.com/library/bb933995\(SQL.105\).aspx)|SQL Server 인스턴스에서 FILESTREAM을 사용하도록 설정하는 방법, 저장된 FILESTREAM 데이터에 데이터베이스와 테이블을 만드는 방법 및 FILESTREAM 데이터가 포함된 행을 조작하는 방법에 대해 설명합니다.|  
+|[클라이언트 응용 프로그램에서 FILESTREAM 저장소 사용](https://msdn.microsoft.com/library/bb933877\(SQL.105\).aspx)|FILESTREAM 데이터로 작업하기 위한 Win32 API 함수에 대해 설명합니다.|  
 |[FILESTREAM 및 기타 SQL Server 기능](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|SQL Server의 다른 기능과 함께 FILESTREAM 데이터를 사용할 경우의 고려 사항, 지침 및 제한 사항을 제공합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
@@ -185,4 +185,4 @@ namespace FileStreamTest
  [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)  
  [SQL Server 이진 및 큰 값 데이터](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
