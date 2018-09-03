@@ -8,12 +8,12 @@ helpviewer_keywords:
 - types [C#], value types
 - C# language, value types
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
-ms.openlocfilehash: 17bbb0280c4db7d91e5d3cc3d3b6233b8db89cdc
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: 3bbaea9247d975c27ed6f49dedb749312f675296
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42754971"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43487067"
 ---
 # <a name="value-types-c-reference"></a>값 형식(C# 참조)
 값 형식은 다음 두 가지 기본 범주로 구성됩니다.  
@@ -97,11 +97,12 @@ Point p = new Point(); // Invoke default constructor for the struct.
   
  숫자 형식의 출력에 서식을 지정하는 방법에 대한 자세한 내용은 [숫자 결과 형식 지정 표](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [유형](../../../csharp/language-reference/keywords/types.md)  
- [형식 참조 테이블](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
- [참조 형식](../../../csharp/language-reference/keywords/reference-types.md)  
- [Nullable 형식](../../programming-guide/nullable-types/index.md)  
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [유형](../../../csharp/language-reference/keywords/types.md)  
+- [형식 참조 테이블](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
+- [참조 형식](../../../csharp/language-reference/keywords/reference-types.md)  
+- [Nullable 형식](../../programming-guide/nullable-types/index.md)  
