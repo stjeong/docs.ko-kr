@@ -1,6 +1,6 @@
 ---
 title: QualifierSet_EndEnumeration 함수 (관리 되지 않는 API 참조)
-description: QualifierSet_EndEnumeration 함수는 열거형을 종료 합니다.
+description: QualifierSet_EndEnumeration 함수 열거형을 종료합니다.
 ms.date: 11/06/2017
 api_name:
 - QualifierSet_EndEnumeration
@@ -16,19 +16,19 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0e24acdde486f377cc9187aac088ce7a611cd4eb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: dbf47dbfddac7d48b78c9d52969de1ef03385c15
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33460752"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486820"
 ---
-# <a name="qualifiersetendenumeration-function"></a><span data-ttu-id="e9b4d-103">QualifierSet_EndEnumeration 함수</span><span class="sxs-lookup"><span data-stu-id="e9b4d-103">QualifierSet_EndEnumeration function</span></span>
-<span data-ttu-id="e9b4d-104">열거형에 대 한 호출을 시작한 종료는 [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-104">Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.</span></span>  
+# <a name="qualifiersetendenumeration-function"></a><span data-ttu-id="dc46f-103">QualifierSet_EndEnumeration 함수</span><span class="sxs-lookup"><span data-stu-id="dc46f-103">QualifierSet_EndEnumeration function</span></span>
+<span data-ttu-id="dc46f-104">에 대 한 호출으로 시작 하는 열거형을 종료 합니다 [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="dc46f-104">Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.</span></span>  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## <a name="syntax"></a><span data-ttu-id="e9b4d-105">구문</span><span class="sxs-lookup"><span data-stu-id="e9b4d-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="dc46f-105">구문</span><span class="sxs-lookup"><span data-stu-id="dc46f-105">Syntax</span></span>  
   
 ```  
 HRESULT QualifierSet_EndEnumeration (
@@ -37,35 +37,35 @@ HRESULT QualifierSet_EndEnumeration (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="e9b4d-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e9b4d-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="dc46f-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="dc46f-106">Parameters</span></span>
 
 `vFunc`  
-<span data-ttu-id="e9b4d-107">[in] 이 매개 변수를 사용 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-107">[in] This parameter is unused.</span></span>
+<span data-ttu-id="dc46f-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="dc46f-107">[in] This parameter is unused.</span></span>
 
 `ptr`   
-<span data-ttu-id="e9b4d-108">[in] 에 대 한 포인터는 [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-108">[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.</span></span>
+<span data-ttu-id="dc46f-108">[in] 에 대 한 포인터를 [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="dc46f-108">[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="e9b4d-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="e9b4d-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="dc46f-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="dc46f-109">Return value</span></span>
 
-<span data-ttu-id="e9b4d-110">이 함수에서 반환 되는 다음 값에 정의 된 *WbemCli.h* 헤더 파일을 정의할 수는 상수로 코드에서:</span><span class="sxs-lookup"><span data-stu-id="e9b4d-110">The following value returned by this function is defined in the *WbemCli.h* header file, or you can define it as a constant in your code:</span></span>
+<span data-ttu-id="dc46f-110">이 함수에 의해 반환 되는 다음 값에 정의 되어는 *WbemCli.h* 헤더 파일을 정의할 수는 상수로 코드에서:</span><span class="sxs-lookup"><span data-stu-id="dc46f-110">The following value returned by this function is defined in the *WbemCli.h* header file, or you can define it as a constant in your code:</span></span>
 
-|<span data-ttu-id="e9b4d-111">상수</span><span class="sxs-lookup"><span data-stu-id="e9b4d-111">Constant</span></span>  |<span data-ttu-id="e9b4d-112">값</span><span class="sxs-lookup"><span data-stu-id="e9b4d-112">Value</span></span>  |<span data-ttu-id="e9b4d-113">설명</span><span class="sxs-lookup"><span data-stu-id="e9b4d-113">Description</span></span>  |
+|<span data-ttu-id="dc46f-111">상수</span><span class="sxs-lookup"><span data-stu-id="dc46f-111">Constant</span></span>  |<span data-ttu-id="dc46f-112">값</span><span class="sxs-lookup"><span data-stu-id="dc46f-112">Value</span></span>  |<span data-ttu-id="dc46f-113">설명</span><span class="sxs-lookup"><span data-stu-id="dc46f-113">Description</span></span>  |
 |---------|---------|---------|
-|`WBEM_S_NO_ERROR` | <span data-ttu-id="e9b4d-114">0</span><span class="sxs-lookup"><span data-stu-id="e9b4d-114">0</span></span> | <span data-ttu-id="e9b4d-115">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-115">The function call was successful.</span></span>  |
+|`WBEM_S_NO_ERROR` | <span data-ttu-id="dc46f-114">0</span><span class="sxs-lookup"><span data-stu-id="dc46f-114">0</span></span> | <span data-ttu-id="dc46f-115">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="dc46f-115">The function call was successful.</span></span>  |
   
-## <a name="remarks"></a><span data-ttu-id="e9b4d-116">설명</span><span class="sxs-lookup"><span data-stu-id="e9b4d-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dc46f-116">설명</span><span class="sxs-lookup"><span data-stu-id="dc46f-116">Remarks</span></span>
 
-<span data-ttu-id="e9b4d-117">이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::EndEnumeration](https://msdn.microsoft.com/library/aa391865(v=vs.85).aspx) 메서드.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-117">This function wraps a call to the [IWbemQualifierSet::EndEnumeration](https://msdn.microsoft.com/library/aa391865(v=vs.85).aspx) method.</span></span>
+<span data-ttu-id="dc46f-117">이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::EndEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration) 메서드.</span><span class="sxs-lookup"><span data-stu-id="dc46f-117">This function wraps a call to the [IWbemQualifierSet::EndEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration) method.</span></span>
 
-<span data-ttu-id="e9b4d-118">이 호출은 권장 되지만 필요 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-118">This call is recommended, but not required.</span></span> <span data-ttu-id="e9b4d-119">즉시 열거와 연결 된 리소스를 해제 합니다.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-119">It immediately releases resources associated with the enumeration.</span></span>
+<span data-ttu-id="dc46f-118">이 호출은 것이 좋지만 필요 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="dc46f-118">This call is recommended, but not required.</span></span> <span data-ttu-id="dc46f-119">열거형을 사용 하 여 연결 된 리소스를 즉시 해제 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc46f-119">It immediately releases resources associated with the enumeration.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="e9b4d-120">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e9b4d-120">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="dc46f-120">요구 사항</span><span class="sxs-lookup"><span data-stu-id="dc46f-120">Requirements</span></span>  
 
-<span data-ttu-id="e9b4d-121">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="e9b4d-121">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+<span data-ttu-id="dc46f-121">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="dc46f-121">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
-<span data-ttu-id="e9b4d-122">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="e9b4d-122">**Header:** WMINet_Utils.idl</span></span>  
+<span data-ttu-id="dc46f-122">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="dc46f-122">**Header:** WMINet_Utils.idl</span></span>  
   
-<span data-ttu-id="e9b4d-123">**.NET framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="e9b4d-123">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+<span data-ttu-id="dc46f-123">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="dc46f-123">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e9b4d-124">참고자료</span><span class="sxs-lookup"><span data-stu-id="e9b4d-124">See also</span></span>  
-[<span data-ttu-id="e9b4d-125">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="e9b4d-125">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="dc46f-124">참고자료</span><span class="sxs-lookup"><span data-stu-id="dc46f-124">See also</span></span>  
+[<span data-ttu-id="dc46f-125">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="dc46f-125">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
