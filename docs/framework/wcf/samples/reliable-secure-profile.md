@@ -4,35 +4,35 @@ ms.date: 03/30/2017
 ms.assetid: 921edc41-e91b-40f9-bde9-b6148b633e61
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 65523fcc1d08bd48a432e6cf599dfcb73ade8747
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: dfdafbcdc461c80192e310a86d5bff50f0885283
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805748"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486911"
 ---
 # <a name="reliable-secure-profile"></a>신뢰할 수 있는 보안 프로필
-이 샘플에서는 WCF를 구성 하는 방법을 보여 줍니다. 및 [Reliable Secure Profile](http://go.microsoft.com/fwlink/?LinkId=178140) (RSP). 이 샘플의 구현을 설명는 [연결 만들기](http://go.microsoft.com/fwlink/?LinkId=178141) 함께 신뢰할 수 있는 메시징 및 선택적으로 구성 될 수 있는 채널에 보안 채널을 신뢰할 수 있는 보안 바인딩을 만드는 사양을 기반으로 rsp 구성 합니다.  
+이 샘플에서는 WCF를 작성 하는 방법을 보여 줍니다. 및 [Reliable Secure Profile](https://go.microsoft.com/fwlink/?LinkId=178140) (RSP). 이 샘플의 구현을 보여 줍니다.는 [Make Connection](https://go.microsoft.com/fwlink/?LinkId=178141) 함께 신뢰할 수 있는 메시징 및 필요에 따라 구성할 수 있는 채널 RSP 사양에 따라 신뢰할 수 있는 보안 바인딩을 만들려면 보안 채널을 합니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\ReliableSecureProfile`  
   
 ## <a name="discussion"></a>토론  
- 이 샘플에서는 신뢰할 수 있는 비동기 양방향 메시지 교환 시나리오를 보여 줍니다. 서비스에는 이중 계약이 있으며 클라이언트에서는 이중 콜백 계약을 구현합니다. 클라이언트는 서비스에 대한 요청을 시작하며 해당 응답을 별도의 연결에서 받아야 합니다. 요청 메시지는 신뢰할 수 있는 상태로 보내집니다. 그러나 클라이언트 쪽에서는 수신 대기 끝점을 열지 않으려고 하므로 서비스에 대한 ‘Make Connection’ 요청으로 서비스를 폴링하여 이 ‘Make Connection’ 요청의 백 채널에서 응답을 다시 보냅니다. 이 샘플에서는 클라이언트에서 수신 대기 끝점을 노출하지 않고 방화벽 예외도 생성하지 않으면서 HTTP를 통해 신뢰할 수 있는 이중 보안 통신을 하는 방법을 보여 줍니다.  
+ 이 샘플에서는 신뢰할 수 있는 비동기 양방향 메시지 교환 시나리오를 보여 줍니다. 서비스에는 이중 계약이 있으며 클라이언트에서는 이중 콜백 계약을 구현합니다. 클라이언트는 서비스에 대한 요청을 시작하며 해당 응답을 별도의 연결에서 받아야 합니다. 요청 메시지는 신뢰할 수 있는 상태로 보내집니다. 그러나 클라이언트 쪽에서는 수신 대기 엔드포인트를 열지 않으려고 하므로 서비스에 대한 ‘Make Connection’ 요청으로 서비스를 폴링하여 이 ‘Make Connection’ 요청의 백 채널에서 응답을 다시 보냅니다. 이 샘플에서는 클라이언트에서 수신 대기 엔드포인트를 노출하지 않고 방화벽 예외도 생성하지 않으면서 HTTP를 통해 신뢰할 수 있는 이중 보안 통신을 하는 방법을 보여 줍니다.  
   
 ## <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  열기는 **ReliableSecureProfile** 솔루션입니다.  
+1.  엽니다는 **ReliableSecureProfile** 솔루션입니다.  
   
-2.  마우스 오른쪽 단추로 클릭는 **서비스** 프로젝트에서 **솔루션 탐색기**선택, **디버그**, **새 인스턴스 시작** 상황에 맞는 메뉴에서 합니다. 그러면 서비스 호스트가 시작됩니다.  
+2.  마우스 오른쪽 단추로 클릭 합니다 **서비스** 프로젝트 **솔루션 탐색기**를 선택 **디버그**를 **새 인스턴스 시작** 상황에 맞는 메뉴에서. 그러면 서비스 호스트가 시작됩니다.  
   
-3.  마우스 오른쪽 단추로 클릭는 **클라이언트** 프로젝트에서 **솔루션 탐색기**선택, **디버그**, **새 인스턴스 시작** 상황에 맞는 메뉴에서 합니다. 그러면 클라이언트가 시작됩니다.  
+3.  마우스 오른쪽 단추로 클릭 합니다 **클라이언트** 프로젝트 **솔루션 탐색기**를 선택 **디버그**를 **새 인스턴스 시작** 상황에 맞는 메뉴에서. 그러면 클라이언트가 시작됩니다.  
   
 4.  클라이언트 콘솔 창의 프롬프트에 임의의 문자열을 입력하고 Enter 키를 클릭합니다. 그러면 입력 문자열이 이 문자열의 해시를 계산하는 서비스로 보내집니다.  
   

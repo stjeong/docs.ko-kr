@@ -2,12 +2,12 @@
 title: 함수(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
-ms.openlocfilehash: c101032aed3e94e6bbf1d16319a616131fa6b60b
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 1c02583400f9092dcb5008239bfd1fd73c63c326
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32760676"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485549"
 ---
 # <a name="function-entity-sql"></a>함수(Entity SQL)
 Entity SQL 쿼리 명령의 범위에서 함수를 정의합니다.  
@@ -61,9 +61,9 @@ FUNCTION function-name
   
  `A()`  
   
- 자세한 내용은 참조 [하는 방법: 사용자 정의 함수를 호출](http://msdn.microsoft.com/library/ad131b86-8b4e-4747-8605-d4fc64fb9d02)합니다.  
+ 자세한 내용은 [방법: 사용자 정의 함수를 호출](https://msdn.microsoft.com/library/ad131b86-8b4e-4747-8605-d4fc64fb9d02)합니다.  
   
- 함수는 모델 자체에서도 선언할 수 있습니다. 모델에서 선언된 함수는 명령에서 인라인으로 선언된 함수와 동일한 방식으로 실행됩니다. 자세한 내용은 참조 [사용자 정의 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/user-defined-functions-entity-sql.md)합니다.  
+ 함수는 모델 자체에서도 선언할 수 있습니다. 모델에서 선언된 함수는 명령에서 인라인으로 선언된 함수와 동일한 방식으로 실행됩니다. 자세한 내용은 [사용자 정의 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/user-defined-functions-entity-sql.md)합니다.  
   
 ## <a name="example"></a>예제  
  다음 Entity SQL 명령에서는 정수 값을 사용하여 반환된 제품을 필터링하는 `Products` 함수를 정의합니다.  

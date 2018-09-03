@@ -1,15 +1,15 @@
 ---
-title: '방법: (XPath 및 LINQ to XML) 루트 요소 찾기 (Visual Basic)'
+title: '방법: 루트 요소 (XPath 및 LINQ to XML) 찾기 (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 72c3aed5-9522-4454-a876-2070aad13f2e
 ms.openlocfilehash: 112be85e8af8fbe31f62ef91db04de72a3793082
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33641090"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483673"
 ---
-# <a name="how-to-find-the-root-element-xpath-linq-to-xml-visual-basic"></a>방법: (XPath 및 LINQ to XML) 루트 요소 찾기 (Visual Basic)
+# <a name="how-to-find-the-root-element-xpath-linq-to-xml-visual-basic"></a>방법: 루트 요소 (XPath 및 LINQ to XML) 찾기 (Visual Basic)
 이 항목에서는 XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 루트 요소를 가져오는 방법을 보여 줍니다.  
   
  XPath 식은 다음과 같습니다.  
@@ -46,4 +46,4 @@ PurchaseOrders
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [LINQ to XML에 대 한 XPath 사용자 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+ [XPath 사용자 (Visual Basic)를 위한 LINQ to XML](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

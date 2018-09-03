@@ -21,11 +21,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 9ad328d484ba01e22557d7d23d1cfa21813de9c8
-ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43332749"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481971"
 ---
 # <a name="strongnameerrorinfo-function"></a>StrongNameErrorInfo 함수
 강력한 이름의 함수 중 하나에 의해 발생 하는 마지막 오류 코드를 가져옵니다.  

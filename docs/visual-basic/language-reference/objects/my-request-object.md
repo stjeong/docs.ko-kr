@@ -8,11 +8,11 @@ helpviewer_keywords:
 - My.Request object
 ms.assetid: 93d5f0e2-6b60-4a2c-8652-d90216f6ad10
 ms.openlocfilehash: f2c43afb723944293907d0efbb4cf3cc66a40e1e
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253505"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485614"
 ---
 # <a name="myrequest-object"></a>My.Request 개체
 요청된 페이지에 대한 <xref:System.Web.HttpRequest> 개체를 가져옵니다.  

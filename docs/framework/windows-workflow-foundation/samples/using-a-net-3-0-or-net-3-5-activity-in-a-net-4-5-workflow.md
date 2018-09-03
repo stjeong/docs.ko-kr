@@ -1,16 +1,16 @@
 ---
-title: .NET Framework 3.0 또는.NET Framework 3.5 활동을 사용 하 여.NET Framework 4.5 워크플로에서
+title: .NET Framework 4.5 워크플로에서.NET Framework 3.0 또는.NET Framework 3.5 활동을 사용 하 여
 ms.date: 03/30/2017
 ms.assetid: 6c53fd4c-5dd0-4fb4-ab6b-111302629548
-ms.openlocfilehash: ab2e93918617bd1ca21fb32878d446db0dd2ef16
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ec44e56a99660ba422c73bbbf00bf5ef6b7b61ff
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33514901"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486133"
 ---
-# <a name="using-a-net-framework-30-or-net-framework-35-activity-in-a-net-framework-45-workflow"></a>.NET Framework 3.0 또는.NET Framework 3.5 활동을 사용 하 여.NET Framework 4.5 워크플로에서
-<xref:System.Activities.Statements.Interop> 활동 내에서.NET Framework 3.0 Windows WF (Workflow Foundation) 작업을 실행할 수 있습니다는 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] 워크플로 합니다. 이 샘플에서는 <xref:System.Activities.Statements.Interop> 활동을 사용하여 문자열을 사용자 지정 [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] 활동에 인수로 전달하는 방법을 보여 줍니다.  
+# <a name="using-a-net-framework-30-or-net-framework-35-activity-in-a-net-framework-45-workflow"></a>.NET Framework 4.5 워크플로에서.NET Framework 3.0 또는.NET Framework 3.5 활동을 사용 하 여
+합니다 <xref:System.Activities.Statements.Interop> 활동 내에서.NET Framework 3.0 Windows WF (Workflow Foundation) 작업을 실행할 수는 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] 워크플로. 이 샘플에서는 <xref:System.Activities.Statements.Interop> 활동을 사용하여 문자열을 사용자 지정 [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] 활동에 인수로 전달하는 방법을 보여 줍니다.  
   
 ## <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
@@ -25,7 +25,7 @@ ms.locfileid: "33514901"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Migration\SimpleInterop`  
   

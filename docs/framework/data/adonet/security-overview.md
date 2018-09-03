@@ -2,12 +2,12 @@
 title: 보안 개요 2
 ms.date: 03/30/2017
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
-ms.openlocfilehash: 4e8d1502096dc452d21158e4fb3684298be9b982
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 18a7496d39cd08e8b340e23c57fcd10dae5ed281
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33361941"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481733"
 ---
 # <a name="security-overview"></a>보안 개요
 응용 프로그램 보안은 지속적인 프로세스입니다. 새로운 기술로 인해 앞으로 어떠한 공격이 가해질지 예측할 수 없기 때문에 개발자가 응용 프로그램이 모든 공격으로부터 안전하다고 장담하는 것은 불가능합니다. 반대로, 아직까지 아무도 시스템의 보안 허점을 발견(또는 발표)하지 않았더라도 허점이 없다고 할 수는 없습니다. 보안 계획은 프로젝트 디자인 단계에서 수립해야 하며 아울러 응용 프로그램의 수명이 다할 때까지 이러한 보안을 어떻게 유지할지도 계획해야 합니다.  
@@ -18,7 +18,7 @@ ms.locfileid: "33361941"
  보안을 마지막 단계에 구현하면 소프트웨어가 새로운 제한에 부딪혀 제 기능을 못하거나 예기치 않은 기능을 수용하기 위해 다시 작성되어야 하므로 버그가 많아집니다. 코드 한 줄을 수정할 때마다 새로운 버그가 발생할 가능성이 있습니다. 따라서 개발 프로세스 초기에 보안을 고려하여 새로운 기능 개발과 함께 진행할 수 있도록 해야 합니다.  
   
 ### <a name="threat-modeling"></a>위협 모델링  
- 노출되어 있는 모든 잠재적인 공격을 이해하지 못하면 시스템을 공격으로부터 보호할 수 없습니다. 보안 위협 평가 프로세스가 호출 *위협 모델링*, 가능성 및 ADO.NET 응용 프로그램의 보안 위험 그 결과 확인할 수 있어야 합니다.  
+ 노출되어 있는 모든 잠재적인 공격을 이해하지 못하면 시스템을 공격으로부터 보호할 수 없습니다. 이라는 보안 위협 평가 프로세스가 *위협 모델링*, 가능성과 ADO.NET 응용 프로그램의 보안 위반의 결과 확인 해야 합니다.  
   
  위협 모델링은 크게 공격자의 의도 파악, 시스템 보안 특성 결정, 위협 요소 확인이라는 세 단계로 구성됩니다.  
   
@@ -28,7 +28,7 @@ ms.locfileid: "33361941"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[위협 모델링](http://go.microsoft.com/fwlink/?LinkId=98353) MSDN Security Developer Center에서 사이트|이 페이지의 리소스는 위협 모델링 프로세스를 이해하고 응용 프로그램을 안전하게 보호하는 데 사용할 수 있는 위협 모델을 만드는 데 유용한 정보를 제공합니다.|  
+|합니다 [위협 모델링](https://go.microsoft.com/fwlink/?LinkId=98353) MSDN Security Developer Center에서 사이트|이 페이지의 리소스는 위협 모델링 프로세스를 이해하고 응용 프로그램을 안전하게 보호하는 데 사용할 수 있는 위협 모델을 만드는 데 유용한 정보를 제공합니다.|  
   
 ## <a name="the-principle-of-least-privilege"></a>최소 권한의 원칙  
  응용 프로그램을 디자인하고 빌드하고 배포할 때는 응용 프로그램이 언제든지 공격을 받을 수 있다는 가능성을 염두에 두어야 합니다. 대개 이러한 공격은 코드를 실행하는 사용자의 권한으로 실행되는 악의적인 코드에서 시작됩니다. 또한 악의적이지 않은 코드를 공격자가 악용하여 공격이 시작되는 경우도 있습니다. 보안 계획을 수립할 때는 항상 발생 가능한 최악의 상황을 가정해야 합니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "33361941"
 |리소스|설명|  
 |--------------|-----------------|  
 |[코드 액세스 보안 및 ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md)|코드 액세스 보안, 역할 기반 보안, 부분적으로 신뢰할 수 있는 환경 간의 상호 작용을 ADO.NET 응용 프로그램의 측면에서 설명합니다.|  
-|[코드 액세스 보안](http://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03)|.NET Framework의 CAS에 대해 설명하는 추가 항목 링크를 제공합니다.|  
+|[코드 액세스 보안](https://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03)|.NET Framework의 CAS에 대해 설명하는 추가 항목 링크를 제공합니다.|  
   
 ## <a name="database-security"></a>데이터베이스 보안  
  데이터 소스에도 최소 권한의 원칙이 적용됩니다. 데이터베이스 보안을 위한 일반적인 지침 중 일부가 아래에 나와 있습니다.  
@@ -89,7 +89,7 @@ ms.locfileid: "33361941"
 |리소스|설명|  
 |--------------|-----------------|  
 |[SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)|SQL Server를 대상으로 하는 안전한 ADO.NET 응용 프로그램을 만드는 지침을 제공하는 응용 프로그램 시나리오와 함께 SQL Server 보안에 대해 간략하게 설명합니다.|  
-|[데이터 액세스 전략에 대 한 권장 사항](http://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|데이터 액세스 및 데이터베이스 작업 수행에 대한 권장 방법을 제공합니다.|  
+|[데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|데이터 액세스 및 데이터베이스 작업 수행에 대한 권장 방법을 제공합니다.|  
   
 ## <a name="security-policy-and-administration"></a>보안 정책 및 관리  
  CAS(코드 액세스 보안) 정책을 잘못 관리하면 보안 허점이 생길 수 있습니다. 응용 프로그램을 배포한 후에는 새로운 위협이 출현할 때마다 보안 모니터링 기술을 사용하고 위험을 평가해야 합니다.  
@@ -98,11 +98,11 @@ ms.locfileid: "33361941"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[NIB: 보안 정책 관리](http://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)|보안 정책을 만들고 관리하는 작업에 대한 정보를 제공합니다.|  
-|[NIB: 보안 정책에 대 한 유용한 정보](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)|보안 정책을 관리하는 방법에 대해 설명하는 링크를 제공합니다.|  
+|[NIB: 보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)|보안 정책을 만들고 관리하는 작업에 대한 정보를 제공합니다.|  
+|[NIB: 보안 정책에 대 한 유용한 정보](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)|보안 정책을 관리하는 방법에 대해 설명하는 링크를 제공합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [네이티브 및 .NET Framework 코드의 PAVE 보안](http://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
+ [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
  [SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

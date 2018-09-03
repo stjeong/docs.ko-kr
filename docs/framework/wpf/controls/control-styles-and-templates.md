@@ -10,17 +10,17 @@ helpviewer_keywords:
 - states [WPF]
 - templates [WPF]
 ms.assetid: c19049bb-5ceb-492d-afd2-751dca0ed8e3
-ms.openlocfilehash: 0fe20ffa19d14dcaecac30198c5c0e2d19fb9fa5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 58d65ee9842270b07a76ff438c975955689197e9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33556915"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43482978"
 ---
 # <a name="control-styles-and-templates"></a>Control 스타일 및 템플릿
-Windows Presentation Foundation (WPF)의 컨트롤에는 한 <xref:System.Windows.Controls.ControlTemplate> 해당 컨트롤의 표시 트리를 포함 하는 합니다. 구조와 컨트롤의 모양을 수정 하 여 변경할 수 있습니다는 <xref:System.Windows.Controls.ControlTemplate> 해당 컨트롤의 합니다. 컨트롤의 시각적 트리의 부분만 바꿀 수 없으므로 설정 해야 하는 컨트롤의 시각적 트리를 변경 하는 <xref:System.Windows.Controls.Control.Template%2A> 을 새로운 전체 컨트롤의 속성 <xref:System.Windows.Controls.ControlTemplate>합니다.  
+Windows Presentation Foundation (WPF)에서 컨트롤을 <xref:System.Windows.Controls.ControlTemplate> 해당 컨트롤의 시각적 트리를 포함 하는 합니다. 컨트롤의 모양과 구조를 수정 하 여 변경할 수 있습니다는 <xref:System.Windows.Controls.ControlTemplate> 해당 컨트롤의 합니다. 컨트롤의 시각적 트리의 일부만 교체할 수 없으므로 설정 해야 하는 컨트롤의 시각적 트리를 변경 하는 <xref:System.Windows.Controls.Control.Template%2A> 새롭고 완전 컨트롤의 속성 <xref:System.Windows.Controls.ControlTemplate>합니다.  
   
- 바탕 화면 테마가 사용되는 리소스 사전을 결정합니다. 바탕 화면 테마에 대한 리소스 사전을 얻으려면 [기본 WPF 테마](http://go.microsoft.com/fwlink/?LinkID=158252)를 참조하세요.  
+ 바탕 화면 테마가 사용되는 리소스 사전을 결정합니다. 바탕 화면 테마에 대한 리소스 사전을 얻으려면 [기본 WPF 테마](https://go.microsoft.com/fwlink/?LinkID=158252)를 참조하세요.  
   
  다음 표에서는 리소스 사전 파일 이름과 해당 바탕 화면 테마를 설명합니다.  
   
@@ -60,7 +60,7 @@ Windows Presentation Foundation (WPF)의 컨트롤에는 한 <xref:System.Window
  [StatusBar 스타일 및 템플릿](../../../../docs/framework/wpf/controls/statusbar-styles-and-templates.md)  
  [TabControl 스타일 및 템플릿](../../../../docs/framework/wpf/controls/tabcontrol-styles-and-templates.md)  
  [TextBox 스타일 및 템플릿](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)  
- [엄지 단추 스타일 및 템플릿](../../../../docs/framework/wpf/controls/thumb-syles-and-templates.md)  
+ [Thumb 스타일 및 템플릿](../../../../docs/framework/wpf/controls/thumb-syles-and-templates.md)  
  [ToggleButton 스타일 및 템플릿](../../../../docs/framework/wpf/controls/togglebutton-syles-and-templates.md)  
  [ToolBar 스타일 및 템플릿](../../../../docs/framework/wpf/controls/toolbar-styles-and-templates.md)  
  [ToolTip 스타일 및 템플릿](../../../../docs/framework/wpf/controls/tooltip-styles-and-templates.md)  

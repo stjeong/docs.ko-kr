@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: fcddca2e435a3f5bf4b8d083784613254d9801a4
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935702"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481197"
 ---
 # <a name="getpropertyqualifierset-function"></a>GetPropertyQualifierSet 함수
 특정 속성에 대해 설정할 한정자를 검색 합니다.

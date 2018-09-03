@@ -2,12 +2,12 @@
 title: 엔터티 SQL 참조
 ms.date: 03/30/2017
 ms.assetid: 61ce7ee1-ffe2-477d-8a9f-835b0a11d900
-ms.openlocfilehash: d6b40d0c1662e18ed83c58bfdde7b6dac65220dd
-ms.sourcegitcommit: f6343b070f3c66877338a05c8bfb0be9985255e2
+ms.openlocfilehash: ae0aec999d30d099467be690b8920d1413b564f0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39221051"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43487421"
 ---
 # <a name="entity-sql-reference"></a>엔터티 SQL 참조
 
@@ -67,7 +67,7 @@ ms.locfileid: "39221051"
 |[\! (논리적 NOT)](not-entity-sql.md)|논리적 NOT|
 |[&#124;&#124;(논리적 OR)](or-entity-sql.md)|논리적 OR|
 |[CASE](case-entity-sql.md)|부울 식 집합을 계산하여 결과를 확인합니다.|
-|[THEN](then-entity-sql.md)|결과 [때](http://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) 절 true로 평가 될 때입니다.|
+|[THEN](then-entity-sql.md)|결과 [때](https://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) 절 true로 평가 될 때입니다.|
 
 ## <a name="query-operators"></a>쿼리 연산자
 

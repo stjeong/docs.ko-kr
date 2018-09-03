@@ -2,17 +2,17 @@
 title: 비제네릭 ParallelForEach
 ms.date: 03/30/2017
 ms.assetid: de17e7a2-257b-48b3-91a1-860e2e9bf6e6
-ms.openlocfilehash: 0bdaaac04162cf065d847f5071ba21953f042223
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 70d5de587dda3cb61205a8d77f2173df9b93498b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519391"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480848"
 ---
 # <a name="non-generic-parallelforeach"></a>비제네릭 ParallelForEach
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] 도구 상자에 포함 하 여 제어 흐름 작업 집합이 제공 <xref:System.Activities.Statements.ParallelForEach%601>, 반복할 수 있도록는 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 컬렉션입니다.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] 제어 흐름 활동을 포함 하 여 집합을 도구 상자에 제공 됩니다 <xref:System.Activities.Statements.ParallelForEach%601>를 반복할 수 있도록 하는 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 컬렉션입니다.  
   
- <xref:System.Activities.Statements.ParallelForEach%601> 필요한 해당 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> 속성 형식이 되도록 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable`합니다. 사용자가를 구현 하는 데이터 구조 반복 불가능이 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 인터페이스 (예를 들어 <xref:System.Collections.ArrayList>). <xref:System.Activities.Statements.ParallelForEach%601>의 비제네릭 버전은 컬렉션 값의 형식에 대한 호환성을 유지하기 위해 런타임 복잡성이 더 높아지지만 이러한 요구 사항의 제약을 받지 않습니다.  
+ <xref:System.Activities.Statements.ParallelForEach%601> 필요한 해당 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> 형식으로 속성 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable`합니다. 사용자를 구현 하는 데이터 구조를 반복 하므로 이렇게 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 인터페이스 (예를 들어 <xref:System.Collections.ArrayList>). <xref:System.Activities.Statements.ParallelForEach%601>의 비제네릭 버전은 컬렉션 값의 형식에 대한 호환성을 유지하기 위해 런타임 복잡성이 더 높아지지만 이러한 요구 사항의 제약을 받지 않습니다.  
   
  이 샘플에서는 비제네릭 <xref:System.Activities.Statements.ParallelForEach%601> 활동과 디자이너를 구현하는 방법을 보여 줍니다. 이 활동을 사용하여 <xref:System.Collections.ArrayList>를 반복할 수 있습니다.  
   
@@ -76,7 +76,7 @@ Activity sampleUsage =
 ```  
   
 ## <a name="parallelforeach-designer"></a>ParallelForEach 디자이너  
- 샘플의 활동 디자이너는 기본 제공 <xref:System.Activities.Statements.ParallelForEach%601> 활동에 제공되는 디자이너와 모양이 비슷합니다. 디자이너의 도구 상자에 표시 된 **샘플**, **비 제네릭 활동** 범주입니다. 디자이너 라는 **ParallelForEachWithBodyFactory** 도구 상자에서 활동을 노출 하기 때문에 <xref:System.Activities.Presentation.IActivityTemplateFactory> 올바르게 구성 된 활동을 만드는 도구 상자에서 <xref:System.Activities.ActivityAction>합니다.  
+ 샘플의 활동 디자이너는 기본 제공 <xref:System.Activities.Statements.ParallelForEach%601> 활동에 제공되는 디자이너와 모양이 비슷합니다. 디자이너의 도구 상자에 표시 합니다 **샘플**, **비 제네릭 활동** 범주입니다. 디자이너 **ParallelForEachWithBodyFactory** 도구 상자에서 작업을 노출 하기 때문에 <xref:System.Activities.Presentation.IActivityTemplateFactory> 적절히 구성 된 된 작업을 만드는 도구 상자에서 <xref:System.Activities.ActivityAction>합니다.  
   
 ```  
 public sealed class ParallelForEachWithBodyFactory : IActivityTemplateFactory  
@@ -101,9 +101,9 @@ public sealed class ParallelForEachWithBodyFactory : IActivityTemplateFactory
   
 1.  선택한 프로젝트를 솔루션의 시작 프로젝트로 설정합니다.  
   
-    1.  **CodeTestClient** 코드를 사용 하 여 활동을 사용 하는 방법을 보여 줍니다.  
+    1.  **CodeTestClient** 코드를 사용 하 여 작업을 사용 하는 방법을 보여 줍니다.  
   
-    2.  **DesignerTestClient** 디자이너 내에서 활동을 사용 하는 방법을 보여 줍니다.  
+    2.  **DesignerTestClient** 디자이너 내에서 작업을 사용 하는 방법을 보여 줍니다.  
   
 2.  프로젝트를 빌드하고 실행합니다.  
   
@@ -112,6 +112,6 @@ public sealed class ParallelForEachWithBodyFactory : IActivityTemplateFactory
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\NonGenericParallelForEach`

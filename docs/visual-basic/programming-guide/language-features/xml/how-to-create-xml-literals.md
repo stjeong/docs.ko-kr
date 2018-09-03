@@ -5,16 +5,16 @@ helpviewer_keywords:
 - XML literals [Visual Basic], creating
 ms.assetid: 573a6db5-b14d-4e42-b356-8cc7e2d77745
 ms.openlocfilehash: e5f8429b3ff02678bf8bf3e9e32bef6eb1a56831
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33652872"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483621"
 ---
 # <a name="how-to-create-xml-literals-visual-basic"></a>방법: XML 리터럴 만들기(Visual Basic)
-코드에서 직접 XML 리터럴을 사용 하 여 XML 문서, 조각 또는 요소를 만들 수 있습니다. 이 항목의 예제 XML 문서를 만드는 방법과 세 개의 자식 요소를 포함 하는 XML 요소를 만드는 방법을 보여 줍니다.  
+코드에서 직접 XML 리터럴을 사용 하 여 XML 문서, 조각 또는 요소를 만들 수 있습니다. 이 항목의 예제에는 세 개의 자식 요소가 있는 XML 요소를 만드는 방법 및 XML 문서를 만드는 방법을 보여 줍니다.  
   
- 사용할 수도 있습니다는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 만들려는 Api [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체입니다. 자세한 내용은 <xref:System.Xml.Linq.XElement>을 참조하세요.  
+ 사용할 수도 있습니다는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] Api를 만드는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 개체입니다. 자세한 내용은 <xref:System.Xml.Linq.XElement>을 참조하세요.  
   
 ### <a name="to-create-an-xml-element"></a>XML 요소를 만들려면  
   
@@ -22,7 +22,7 @@ ms.locfileid: "33652872"
   
      [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_1.vb)]  
   
-     코드를 실행 합니다. 이 코드의 출력은입니다.  
+     코드를 실행 합니다. 이 코드의 출력이 됩니다.  
   
      `<contact>`  
   
@@ -36,11 +36,11 @@ ms.locfileid: "33652872"
   
 ### <a name="to-create-an-xml-document"></a>XML 문서를 만들려면  
   
--   XML 문서 인라인을 만듭니다. 다음 코드는 XML 문서를 리터럴 구문, XML 선언, 처리 명령, 설명 및 다른 요소를 포함 하는 요소를 만듭니다.  
+-   XML 문서 인라인을 만듭니다. 다음 코드는 리터럴 구문, XML 선언, 처리 명령, 주석 및 다른 요소를 포함 하는 요소에는 XML 문서를 만듭니다.  
   
      [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_2.vb)]  
   
-     코드를 실행 합니다. 이 코드의 출력은입니다.  
+     코드를 실행 합니다. 이 코드의 출력이 됩니다.  
   
      `<?xml-stylesheet type="text/xsl" href="show_book.xsl"?>`  
   

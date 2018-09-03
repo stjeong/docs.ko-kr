@@ -3,11 +3,11 @@ title: 열거형(F#)
 description: 'F # 열거형 리터럴 대신 더 읽기 쉽고 코드를 쉽게 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: b51df53caf2e193496cb3694c913cbae08f7eaf5
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43003101"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481710"
 ---
 # <a name="enumerations"></a>열거형
 

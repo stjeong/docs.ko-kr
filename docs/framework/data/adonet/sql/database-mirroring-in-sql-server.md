@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 89befaff-bb46-4290-8382-e67cdb0e3de9
-ms.openlocfilehash: 349cc10062cd73def0b8b3966a17ae9cbd0deab5
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 90357b96d570ec1b2f80f8809ccfde69977bbc25
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43003088"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481912"
 ---
 # <a name="database-mirroring-in-sql-server"></a>SQL Server에서 데이터베이스 미러링
 SQL Server의 데이터베이스 미러링을 사용하면 대기 서버에서 SQL Server 데이터베이스의 복사본, 즉 미러를 유지할 수 있습니다. 미러링을 사용하면 항상 두 개의 개별 데이터 복사본을 가질 수 있으므로 고가용성 및 완벽한 데이터 중복이 제공됩니다. .NET Data Provider for SQL Server에서는 데이터베이스 미러링을 암시적으로 지원하므로 SQL Server 데이터베이스에 대해 미러링이 구성되고 나면 개발자가 별도의 동작을 수행하거나 코드를 작성할 필요가 없습니다. 또한 <xref:System.Data.SqlClient.SqlConnection> 개체는 장애 조치 파트너 서버의 이름을 <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>에 제공할 수 있는 명시적인 연결 모드를 지원합니다.  
@@ -64,4 +64,4 @@ string activeServer = connection.DataSource;
 |[데이터베이스 미러링](/sql/database-engine/database-mirroring/database-mirroring-sql-server)|SQL Server에서 미러링을 설정 및 구성하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

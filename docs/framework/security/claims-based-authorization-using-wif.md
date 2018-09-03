@@ -4,18 +4,18 @@ ms.date: 03/30/2017
 ms.assetid: e24000a3-8fd8-4c0e-bdf0-39882cc0f6d8
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 1d2972ccef6829a2b7a052ba30258086443bd833
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 430959d50bf66801da2e1203496e77ad0f291a0e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398627"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485884"
 ---
 # <a name="claims-based-authorization-using-wif"></a>WIF를 사용하여 클레임 기반 권한 부여
 신뢰 당사자 응용 프로그램에서 권한 부여에 따라 인증된 ID가 액세스할 수 있도록 허용되는 리소스 및 이러한 리소스에서 수행할 수 있도록 허용되는 작업이 결정됩니다. 권한 부여가 부적절하거나 취약한 상태인 경우 정보가 노출되거나 데이터가 변조될 수 있습니다. 이 항목에서는 ACS(Windows Azure Access Control Service)와 같은 STS(보안 토큰 서비스) 및 WIF(Windows Identity Foundation)를 사용하여 클레임 인식 ASP.NET 웹 응용 프로그램과 서비스에 대한 권한 부여를 구현하기 위해 사용할 수 있는 방법에 대해 간략하게 설명합니다.  
   
 ## <a name="overview"></a>개요  
- 첫 번째 버전 이후로 .NET Framework에서는 권한 부여를 구현할 수 있는 유연한 메커니즘을 제공해왔습니다. 이 메커니즘은 **IPrincipal** 및 **IIdentity**와 같은 두 가지 간단한 인터페이스를 기반으로 합니다. **IIdentity**의 구체적인 구현은 인증된 사용자를 나타냅니다. 예를 들어 **WindowsIdentity** 구현은 Active Directory에 의해 인증된 사용자를 나타내고, **GenericIdentity**는 사용자 지정 인증 프로세스를 통해 ID가 확인된 사용자를 나타냅니다. **IPrincipal**의 구체적인 구현은 역할 저장소에 따라 역할을 사용하여 권한을 확인하는 데 유용합니다. 예를 들어 **WindowsPrincipal**은 Active Directory 그룹의 멤버에 대한 **WindowsIdentity**를 확인합니다. **IPrincipal** 인터페이스에서 **IsInRole** 메서드를 호출하면 이러한 확인이 수행됩니다. 역할을 기반으로 액세스 권한을 확인하는 것을 RBAC(역할 기반 Access Control)라고 합니다. 자세한 내용은 [역할 기반 액세스 제어](../../../docs/framework/security/claims-based-authorization-using-wif.md#BKMK_1)를 참조하세요.  클레임을 사용하여 친숙한 역할 기반 권한 부여 메커니즘을 지원하기 위해 역할에 대한 정보를 전달할 수 있습니다.  
+ .NET Framework는 첫 번째 버전부터 권한 부여를 구현하는 유연한 메커니즘을 제공해 왔습니다. 이 메커니즘은 **IPrincipal** 및 **IIdentity**와 같은 두 가지 간단한 인터페이스를 기반으로 합니다. **IIdentity**의 구체적인 구현은 인증된 사용자를 나타냅니다. 예를 들어 **WindowsIdentity** 구현은 Active Directory에 의해 인증된 사용자를 나타내고, **GenericIdentity**는 사용자 지정 인증 프로세스를 통해 ID가 확인된 사용자를 나타냅니다. **IPrincipal**의 구체적인 구현은 역할 저장소에 따라 역할을 사용하여 권한을 확인하는 데 유용합니다. 예를 들어 **WindowsPrincipal**은 Active Directory 그룹의 멤버에 대한 **WindowsIdentity**를 확인합니다. **IPrincipal** 인터페이스에서 **IsInRole** 메서드를 호출하면 이러한 확인이 수행됩니다. 역할을 기반으로 액세스 권한을 확인하는 것을 RBAC(역할 기반 Access Control)라고 합니다. 자세한 내용은 [역할 기반 액세스 제어](../../../docs/framework/security/claims-based-authorization-using-wif.md#BKMK_1)를 참조하세요.  클레임을 사용하여 친숙한 역할 기반 권한 부여 메커니즘을 지원하기 위해 역할에 대한 정보를 전달할 수 있습니다.  
   
  또한 클레임을 사용하여 역할보다 훨씬 복잡한 권한 부여 결정을 수행할 수도 있습니다. 클레임은 연령, 우편 번호, 신발 크기 등 사용자에 대한 거의 모든 정보를 기반으로 할 수 있습니다. 임의의 클레임을 기반으로 하는 액세스 제어 메커니즘을 클레임 기반 권한 부여라고 합니다. 자세한 내용은 [클레임 기반 권한 부여](../../../docs/framework/security/claims-based-authorization-using-wif.md#BKMK_2)를 참조하세요.  
   
@@ -43,7 +43,7 @@ ms.locfileid: "33398627"
   
 -   **토큰 발급 중**. 사용자가 인증되면 Microsoft Azure ACS(Access Control Service)와 같은 페더레이션 공급자 또는 ID 공급자 STS에 의해 역할 클레임이 발급될 수 있습니다.  
   
--   **ClaimsAuthenticationManager를 사용하여 임의의 클레임을 클레임 역할 형식으로 변형** ClaimsAuthenticationManager는 WIF의 일부로 제공되는 구성 요소입니다. 이는 토큰을 검사하고 클레임을 추가, 변경 또는 제거하여 해당 토큰을 변형하면서 응용 프로그램을 시작할 때 요청을 가로챌 수 있도록 허용합니다. ClaimsAuthenticationManager를 사용 하 여 클레임을 변환 하는 방법에 대 한 자세한 내용은 참조 [How To: 구현 RBAC 역할 기반 액세스 제어 ()는 클레임 인식 ASP.NET 응용 프로그램 사용 하 여 WIF 및 ACS에서](http://go.microsoft.com/fwlink/?LinkID=247445) (http://go.microsoft.com/fwlink/?LinkID=247444)합니다.  
+-   **ClaimsAuthenticationManager를 사용하여 임의의 클레임을 클레임 역할 형식으로 변형** ClaimsAuthenticationManager는 WIF의 일부로 제공되는 구성 요소입니다. 이는 토큰을 검사하고 클레임을 추가, 변경 또는 제거하여 해당 토큰을 변형하면서 응용 프로그램을 시작할 때 요청을 가로챌 수 있도록 허용합니다. 클레임을 변환 하기 위해 ClaimsAuthenticationManager를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 구현 RBAC 역할 기반 액세스 제어 ()는 클레임 인식 ASP.NET 응용 프로그램 사용 하 여 WIF 및 ACS에서](https://go.microsoft.com/fwlink/?LinkID=247445)합니다.  
   
 -   **samlSecurityTokenRequirement 구성 섹션을 사용하여 임의의 클레임을 역할 형식으로 매핑** - 구성만 사용하여 클레임 변형을 완료하며 코딩이 필요하지 않은 선언적 방법입니다.  
   
@@ -61,4 +61,4 @@ ms.locfileid: "33398627"
   
 5.  결과가 true이면 액세스가 허용되고 false인 경우에는 거부됩니다. 예를 들어, 규칙은 사용자가 21세 이상이고 워싱턴 주에 거주하는 것일 수 있습니다.  
   
- <xref:System.Security.Claims.ClaimsAuthorizationManager>는 응용 프로그램에서 클레임 기반 권한 부여를 위한 의사 결정 논리를 표면화하는 데 유용합니다. ClaimsAuthorizationManager는 .NET 4.5의 일부로 제공되는 WIF 구성 요소입니다. ClaimsAuthorizationManager를 사용하면 들어오는 요청을 가로채고 들어오는 클레임에 따라 권한 부여 결정을 수행하도록 선택 항목의 논리를 구현할 수 있습니다. 이는 권한 부여 논리를 변경해야 하는 경우 중요합니다. 이러한 경우 ClaimsAuthorizationManager를 사용해도 응용 프로그램의 무결성에 영향을 미치지 않으므로, 변경으로 인해 응용 프로그램에 오류가 발생할 가능성이 줄어듭니다. ClaimsAuthorizationManager를 사용하여 클레임 기반 액세스 제어를 구현하는 방법에 대한 자세한 내용은 [방법: WIF 및 ACS를 사용하여 클레임 인식 ASP.NET 응용 프로그램에서 클레임 권한 부여 구현](http://go.microsoft.com/fwlink/?LinkID=247446)을 참조하세요.
+ <xref:System.Security.Claims.ClaimsAuthorizationManager>는 응용 프로그램에서 클레임 기반 권한 부여를 위한 의사 결정 논리를 표면화하는 데 유용합니다. ClaimsAuthorizationManager는 .NET 4.5의 일부로 제공되는 WIF 구성 요소입니다. ClaimsAuthorizationManager를 사용하면 들어오는 요청을 가로채고 들어오는 클레임에 따라 권한 부여 결정을 수행하도록 선택 항목의 논리를 구현할 수 있습니다. 이는 권한 부여 논리를 변경해야 하는 경우 중요합니다. 이러한 경우 ClaimsAuthorizationManager를 사용해도 응용 프로그램의 무결성에 영향을 미치지 않으므로, 변경으로 인해 응용 프로그램에 오류가 발생할 가능성이 줄어듭니다. ClaimsAuthorizationManager를 사용하여 클레임 기반 액세스 제어를 구현하는 방법에 대한 자세한 내용은 [방법: WIF 및 ACS를 사용하여 클레임 인식 ASP.NET 응용 프로그램에서 클레임 권한 부여 구현](https://go.microsoft.com/fwlink/?LinkID=247446)을 참조하세요.

@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ebe2cf95f5637e6924b85c2389f1c59679580298
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5112c3c8d5fef6efada4bffdfa575716503515e6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33449172"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43488250"
 ---
 # <a name="corelementtype-enumeration1"></a>CorElementType Enumeration1
-공용 언어 런타임에서 지정 <xref:System.Type>, 형식 한정자 또는 형식 메타 데이터 서명에 형식에 대 한 정보입니다.  
+공용 언어 런타임을 지정 <xref:System.Type>, 형식 한정자 또는 메타 데이터 형식 서명에서 형식에 대 한 정보입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -82,7 +82,7 @@ typedef enum CorElementType {
 |------------|-----------------|  
 |`ELEMENT_TYPE_END`|내부적으로 사용 합니다.|  
 |`ELEMENT_TYPE_VOID`|Void 형식입니다.|  
-|`ELEMENT_TYPE_BOOLEAN`|Boolean 형식|  
+|`ELEMENT_TYPE_BOOLEAN`|부울 형식|  
 |`ELEMENT_TYPE_CHAR`|문자 형식입니다.|  
 |`ELEMENT_TYPE_I1`|부호 있는 1 바이트 정수입니다.|  
 |`ELEMENT_TYPE_U1`|부호 없는 1바이트 정수입니다.|  
@@ -101,10 +101,10 @@ typedef enum CorElementType {
 |`ELEMENT_TYPE_CLASS`|클래스 형식 한정자입니다.|  
 |`ELEMENT_TYPE_VAR`|클래스 변수 형식 한정자입니다.|  
 |`ELEMENT_TYPE_ARRAY`|다차원 배열 형식 한정자입니다.|  
-|`ELEMENT_TYPE_GENERICINST`|제네릭 형식에 대 한 형식 한정자입니다.|  
+|`ELEMENT_TYPE_GENERICINST`|제네릭 형식에 대 한 유형 한정자입니다.|  
 |`ELEMENT_TYPE_TYPEDBYREF`|형식화된 참조입니다.|  
-|`ELEMENT_TYPE_I`|기본 정수 크기입니다.|  
-|`ELEMENT_TYPE_U`|부호 없는 원시 정수 크기입니다.|  
+|`ELEMENT_TYPE_I`|네이티브 정수 크기입니다.|  
+|`ELEMENT_TYPE_U`|부호 없는 기본 정수 크기입니다.|  
 |`ELEMENT_TYPE_FNPTR`|함수에 대 한 포인터입니다.|  
 |`ELEMENT_TYPE_OBJECT`|System.Object 형식입니다.|  
 |`ELEMENT_TYPE_SZARRAY`|단일 차원, 0 인 배열 형식 한정자|  
@@ -114,14 +114,14 @@ typedef enum CorElementType {
 |`ELEMENT_TYPE_INTERNAL`|내부적으로 사용 합니다.|  
 |`ELEMENT_TYPE_MAX`|잘못된 형식입니다.|  
 |`ELEMENT_TYPE_MODIFIER`|내부적으로 사용 합니다.|  
-|`ELEMENT_TYPE_SENTINEL`|형식 한정자가 가변 개수의 매개 변수 목록에 대 한 센티널입니다.|  
+|`ELEMENT_TYPE_SENTINEL`|형식 한정자는 가변 개수의 매개 변수 목록은 sentinel입니다.|  
 |`ELEMENT_TYPE_PINNED`|내부적으로 사용 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 형식 한정자는 더 복잡 한 형식을 나타내는 대 한 기초를 형성 합니다. A `CorElementType` 형식 한정자 값 바로 뒤에 오는 형식 서명에 하는 값에 적용 됩니다. 다음에 나오는 값의 `CorElementType` 형식 한정자 값이 될 수 있습니다는 `CorElementType` 단순 유형 값, 메타 데이터 토큰 또는 다음 테이블에 지정 된 다른 값입니다.  
+ 형식 한정자는 더 복잡 한 형식을 나타내는 기반을 형성 합니다. `CorElementType` 형식 한정자 값이 바로 뒤에 오는 형식 서명의 값에 적용 됩니다. 뒤에 오는 값을 `CorElementType` 형식 한정자 값 수를 `CorElementType` 단순 유형 값, 메타 데이터 토큰, 또는 다른 값을 다음 표에 지정 된 대로 합니다.  
   
 > [!NOTE]
->  모든 숫자 (*번호*, *인수 개수*, *메타 데이터 토큰*, *순위*, *count*, 및 *바인딩된*) 압축 된 정수로 저장 됩니다. 참조 [Standard ecma-335-인프라 CLI (공용 언어)](http://go.microsoft.com/fwlink/?LinkID=116487) 자세한 내용은 ECMA 웹 사이트에서.  
+>  모든 숫자 (*수*, *인수 개수*를 *메타 데이터 토큰*를 *순위*를 *개수*, 및 *바인딩된*) 압축 된 정수로 저장 됩니다. 참조 [표준 ECMA-335-CLI 공용 언어 인프라 ()](https://go.microsoft.com/fwlink/?LinkID=116487) 대 한 자세한 내용은 ECMA 웹 사이트입니다.  
   
 |형식 한정자|형식|  
 |-------------------|------------|  
@@ -130,20 +130,20 @@ typedef enum CorElementType {
 |`ELEMENT_TYPE_VALUETYPE`|ELEMENT_TYPE_VALUETYPE <는 `mdTypeDef` 메타 데이터 토큰 >|  
 |`ELEMENT_TYPE_CLASS`|ELEMENT_TYPE_CLASS <는 `mdTypeDef` 메타 데이터 토큰 >|  
 |`ELEMENT_TYPE_VAR`|ELEMENT_TYPE_VAR \<번호 >|  
-|`ELEMENT_TYPE_ARRAY`|ELEMENT_TYPE_ARRAY <는 `CorElementType` 값 > \<순위 > \<count1 > \<bound1 >... \<countN > \<boundN >|  
+|`ELEMENT_TYPE_ARRAY`|ELEMENT_TYPE_ARRAY <을 `CorElementType` 값 > \<순위 > \<count1 > \<bound1 >... \<countN > \<boundN >|  
 |`ELEMENT_TYPE_GENERICINST`|ELEMENT_TYPE_GENERICINST <는 `mdTypeDef` 메타 데이터 토큰 > \<인수 개수 > \<arg1 >... \<argN >|  
-|`ELEMENT_TYPE_FNPTR`|ELEMENT_TYPE_FNPTR \<호출 규칙을 포함 하는 함수에 대 한 전체 시그니처 >|  
+|`ELEMENT_TYPE_FNPTR`|Typ ELEMENT_TYPE_FNPTR \<호출 규칙이 포함 된 함수에 대 한 전체 시그니처 >|  
 |`ELEMENT_TYPE_SZARRAY`|ELEMENT_TYPE_SZARRAY <는 `CorElementType` 값 >|  
 |`ELEMENT_TYPE_MVAR`|ELEMENT_TYPE_MVAR \<번호 >|  
-|`ELEMENT_TYPE_CMOD_REQD`|ELEMENT_TYPE_ <는 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 >|  
-|`ELEMENT_TYPE_CMOD_OPT`|E_T_CMOD_OPT <는 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 >|  
+|`ELEMENT_TYPE_CMOD_REQD`|ELEMENT_TYPE_ <을 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 >|  
+|`ELEMENT_TYPE_CMOD_OPT`|E_T_CMOD_OPT <을 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 >|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** CorHdr.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

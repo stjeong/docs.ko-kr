@@ -2,18 +2,18 @@
 title: ODBC 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: 1bb126a5-ceec-4649-a4bc-8aa19e801046
-ms.openlocfilehash: 36d0859b897bfcea33803c219ade14722ed90421
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: bdedbb11960f02b99dcca6388abf663635238f74
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766649"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43479982"
 ---
 # <a name="odbc-schema-collections"></a>ODBC 스키마 컬렉션
 이 단원에서는 Microsoft SQL Server, Oracle 및 Microsoft Jet용 ODBC 드라이버에서 지원하는 스키마 컬렉션에 대해 설명합니다.  
   
 ## <a name="microsoft-sql-server-odbc-driver"></a>Microsoft SQL Server ODBC Driver  
- Microsoft SQL Server ODBC Driver에서는 공통 스키마 컬렉션을 비롯 하 여 다음과 같은 특정 스키마 컬렉션을 지원합니다.  
+ Microsoft SQL Server ODBC Driver에서는 공통 스키마 컬렉션 외에도 다음과 같은 특정 스키마 컬렉션을 지원합니다.  
   
 -   Tables  
   
@@ -153,7 +153,7 @@ ms.locfileid: "32766649"
 |SS_DATA_TYPE|Byte|  
   
 ## <a name="microsoft-oracle-odbc-driver"></a>Microsoft Oracle ODBC Driver  
- Microsoft SQL Server Oracle ODBC Driver에서는 공통 스키마 컬렉션을 비롯 하 여 다음과 같은 특정 스키마 컬렉션을 지원합니다.  
+ Microsoft SQL Server Oracle ODBC Driver에서는 공통 스키마 컬렉션 외에도 다음과 같은 특정 스키마 컬렉션을 지원합니다.  
   
 -   Tables  
   
@@ -333,4 +333,4 @@ ms.locfileid: "32766649"
 |IS_NULLABLE|문자열|  
   
 ## <a name="see-also"></a>참고 항목  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

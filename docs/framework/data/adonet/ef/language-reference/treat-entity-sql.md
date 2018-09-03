@@ -2,12 +2,12 @@
 title: TREAT(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5b77f156-55de-4cb4-8154-87f707d4c635
-ms.openlocfilehash: 932f335bf6a502b031dcf09b8050e278a0bbe9f8
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c3291dc6d5bc79430c8bf011ee6a2f4dc213ffad
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32763978"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486898"
 ---
 # <a name="treat-entity-sql"></a>TREAT(Entity SQL)
 특정 기본 형식의 개체를 지정된 파생 형식의 개체로 처리합니다.  
@@ -48,7 +48,7 @@ WHERE p IS OF (NamespaceName.Employee)
  이 쿼리는 `Person` 엔터티를 `Employee` 형식으로 업캐스팅합니다. p의 값이 실제로 `Employee`형식이 아닌 경우 식의 값은 `null`입니다.  
   
 > [!NOTE]
->  지정된 된 식을 `Employee` 지정 된 데이터 형식의 하위 형식 이어야 `Person`, 데이터 형식이 식의 하위 형식 이어야 합니다. 또는 합니다. 그렇지 않으면 식에서 컴파일 시간 오류가 발생합니다.  
+>  지정된 된 식 `Employee` 지정 된 데이터 형식의 하위 형식 이어야 `Person`, 또는 데이터 형식이 식의 하위 형식 이어야 합니다. 그렇지 않으면 식에서 컴파일 시간 오류가 발생합니다.  
   
  다음 표에서는 일반 패턴 및 비교적 특수한 패턴에 대한 TREAT의 동작을 보여 줍니다. 공급자 호출 이전에 모든 예외가 클라이언트 측에서 throw됩니다.  
   
@@ -62,7 +62,7 @@ WHERE p IS OF (NamespaceName.Employee)
 |`TREAT (RowType AS RowType)`|예외를 throw합니다.|  
   
 ## <a name="example"></a>예제  
- 다음 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리에서는 TREAT 연산자를 사용하여 Course 형식의 개체를 OnsiteCourse 형식의 개체 컬렉션으로 변환합니다. 쿼리 기반는 [School 모델](http://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac)합니다.  
+ 다음 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리에서는 TREAT 연산자를 사용하여 Course 형식의 개체를 OnsiteCourse 형식의 개체 컬렉션으로 변환합니다. 쿼리의 기준이 되는 [School 모델](https://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac)합니다.  
   
  [!code-csharp[DP EntityServices Concepts 2#TREAT_ISOF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#treat_isof)]  
   

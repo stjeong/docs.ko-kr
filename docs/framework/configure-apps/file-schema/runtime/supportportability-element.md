@@ -1,5 +1,5 @@
 ---
-title: '&lt;되어 supportPortability&gt; 요소'
+title: '&lt;supportPortability&gt; 요소'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - supportPortability element
@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0a8a454919a195a0f0c03ed6890e51b2723f64fb
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5d82f41e3722ab568f14fbbb00bb0972d759a329
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32754108"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485915"
 ---
-# <a name="ltsupportportabilitygt-element"></a>&lt;되어 supportPortability&gt; 요소
+# <a name="ltsupportportabilitygt-element"></a>&lt;supportPortability&gt; 요소
 응용 프로그램 이식성을 위해 어셈블리를 동일하게 간주하는 기본 동작을 사용하지 않도록 설정함으로써, 응용 프로그램이 .NET Framework의 서로 다른 두 구현에서 같은 어셈블리를 참조할 수 있도록 지정합니다.  
   
  \<구성 > 요소  
 \<런타임 > 요소  
 \<assemblyBinding > 요소  
-\<되어 supportPortability > 요소  
+\<supportPortability > 요소  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,14 +36,14 @@ ms.locfileid: "32754108"
 |특성|설명|  
 |---------------|-----------------|  
 |PKT|필수 특성입니다.<br /><br /> 문자열로 서 영향을 받는 어셈블리의 공개 키 토큰을 지정합니다.|  
-|사용|선택적 특성입니다.<br /><br /> 지정된 된.NET Framework 어셈블리의 구현 간의 이식성에 대 한 지원을 설정할지 여부를 지정 합니다.|  
+|사용|선택적 특성입니다.<br /><br /> 지정된 된.NET Framework 어셈블리의 구현 간에 이식성에 대 한 지원의 활성화 여부를 지정 합니다.|  
   
 ## <a name="enabled-attribute"></a>enabled 특성  
   
 |값|설명|  
 |-----------|-----------------|  
-|true|지정된 된.NET Framework 어셈블리의 구현 간의 이식성에 대 한 지원을 사용 하도록 설정 합니다. 이 값이 기본값입니다.|  
-|False|지정된 된.NET Framework 어셈블리의 구현 간의 이식성에 대 한 지원을 사용 하지 않도록 설정 합니다. 그러면 응용 프로그램을 지정된 된 어셈블리의 여러 구현에 대 한 참조가 있습니다.|  
+|true|지정된 된.NET Framework 어셈블리의 구현 간에 이식성에 대 한 지원을 사용 하도록 설정 합니다. 이 값이 기본값입니다.|  
+|False|지정된 된.NET Framework 어셈블리의 구현 간에 이식성에 대 한 지원을 사용 하지 않도록 설정 합니다. 이 통해 응용 프로그램을 지정된 된 어셈블리의 여러 구현 참조 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -57,15 +57,15 @@ ms.locfileid: "32754108"
 |`assemblyBinding`|어셈블리 버전 리디렉션 및 어셈블리 위치에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 부터는 [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)],.NET Framework의 두 가지 구현 중 하나를 사용 하는 응용 프로그램에 대 한 지원을 자동으로 제공 됩니다 예를 들어.NET Framework 구현은 또는 Silverlight 구현에 대 한.NET Framework입니다. 특정.NET Framework 어셈블리의 두 가지 구현 어셈블리 바인더를 통해 동일한 것으로 표시 됩니다. 몇 가지 시나리오에서이 응용 프로그램 이식성 기능 문제가 발생합니다. 이러한 시나리오의 경우에 `<supportPortability>` 기능을 비활성화 하는 요소를 사용할 수 있습니다.  
+ 부터는 [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], 지원은.NET Framework의 두 구현 중 하나를 사용 하는 응용 프로그램에 대 한 자동으로 제공 됩니다 예를 들어.NET Framework 구현 또는.NET Framework for Silverlight 구현과 합니다. 특정.NET Framework 어셈블리의 두 가지 구현이 어셈블리 바인더를 통해 동등한 것으로 나타납니다. 몇 가지 시나리오에서이 응용 프로그램 이식성 기능 문제가 발생합니다. 이러한 시나리오에서는 `<supportPortability>` 기능을 해제 하는 요소를 사용할 수 있습니다.  
   
- 이러한 시나리오 중 하나는 어셈블리는.NET Framework 구현과 특정 참조 어셈블리의 Silverlight 구현에 대 한.NET Framework를 참조 해야 하는입니다. 예를 들어 Windows Presentation Foundation (WPF)에서 작성 된 XAML 디자이너 참조 디자이너의 사용자 인터페이스 및 Silverlight 구현에 포함 된 WPF의 하위 집합에 대 한 두는 WPF 데스크톱 구현 해야 합니다. 기본적으로, 어셈블리 바인딩 시 두 어셈블리가 동등한 것으로 간주되기 때문에 서로 다른 참조를 사용할 경우 컴파일러 오류가 발생합니다. 이 요소는 기본 동작을 사용 하지 않도록 설정 하 고 컴파일이 성공 하도록 합니다.  
+ 이러한 시나리오 중 하나는 특정 참조 어셈블리의 Silverlight 구현을 위해.NET Framework 및.NET Framework 구현을 참조 하는 어셈블리입니다. 예를 들어 Windows Presentation Foundation (WPF)에서 작성 된 XAML 디자이너를 디자이너의 사용자 인터페이스 및 Silverlight 구현과에 포함 된 WPF 하위 집합에 대 한 두는 WPF 데스크톱 구현을 참조 해야 합니다. 기본적으로, 어셈블리 바인딩 시 두 어셈블리가 동등한 것으로 간주되기 때문에 서로 다른 참조를 사용할 경우 컴파일러 오류가 발생합니다. 이 요소는 기본 동작을 사용 하지 않도록 설정 하 고 컴파일이 성공 하도록 합니다.  
   
 > [!IMPORTANT]
->  정보를 전달 하는 공용 언어 런타임의 어셈블리 바인딩 논리를 컴파일러에 대 한 순서를 사용 해야 하는 `/appconfig` 컴파일러 옵션을이 요소를 포함 하는 app.config 파일의 위치를 지정 합니다.  
+>  공용 언어 런타임의 어셈블리 바인딩 논리에 정보를 전달 하려면 컴파일러에 대 한 순서 대로 사용 해야 합니다는 `/appconfig` 컴파일러 옵션을이 요소를 포함 하는 app.config 파일의 위치를 지정 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예에서는 응용 프로그램을.NET Framework 구현은 두 구현 모두에 존재 하는.NET Framework 어셈블리의 Silverlight 구현에 대 한.NET Framework에 대 한 참조가 있습니다. `/appconfig` 이 app.config 파일의 위치를 지정 컴파일러 옵션을 사용 해야 합니다.  
+ 다음 예제에서는 응용 프로그램에 두 구현 모두에 존재 하는 모든.NET Framework 어셈블리의 Silverlight 구현을 위해.NET Framework 및.NET Framework 구현에 대 한 참조입니다. `/appconfig` 이 app.config 파일의 위치를 지정 하려면 컴파일러 옵션을 사용 해야 합니다.  
   
 ```xml  
 <configuration>  
@@ -79,5 +79,5 @@ ms.locfileid: "32754108"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [/appconfig (C# 컴파일러 옵션)](http://msdn.microsoft.com/library/ee523958.aspx)  
- [.NET framework 어셈블리 통합 개요](http://msdn.microsoft.com/library/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)
+ [/appconfig (C# 컴파일러 옵션)](https://msdn.microsoft.com/library/ee523958.aspx)  
+ [.NET framework 어셈블리 통합 개요](https://msdn.microsoft.com/library/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)

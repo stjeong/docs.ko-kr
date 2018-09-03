@@ -2,15 +2,15 @@
 title: DataAdapter 및 DataReader
 ms.date: 03/30/2017
 ms.assetid: cc952ca2-ec19-46ab-9189-15174b52cb74
-ms.openlocfilehash: 7fd7013478bbf30c2a7e915045e3dd192ca92540
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6e711b11ef9a3eca53806b825f1e721169ab662d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32758102"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43476224"
 ---
 # <a name="dataadapters-and-datareaders"></a>DataAdapter 및 DataReader
-ADO.NET을 사용 하 여 **DataReader** 를 데이터베이스에서 데이터의 읽기 전용, 정방향 전용 스트림을 검색 합니다. 쿼리 실행 되 고 요청할 때까지 클라이언트의 네트워크 버퍼에 저장 된 결과 반환 합니다. 사용 하 여는 **읽기** 의 메서드는 **DataReader**합니다. 사용 하는 **DataReader** 가능한 즉시 데이터를 검색 하 고 기본적으로 응용 프로그램 성능을 향상 시킬 수 시스템 오버 헤드를 줄여 메모리에 한 번에 하나의 행을 저장 합니다.  
+ADO.NET을 사용할 수 있습니다 **DataReader** 데이터베이스에서 데이터를 읽기 전용, 정방향 전용 스트림을 검색할 수 있습니다. 쿼리가 실행 되 고 해당 작업을 요청할 때까지 클라이언트의 네트워크 버퍼에 저장 된 대로 결과가 반환 됩니다 사용 하 여는 **읽기** 메서드는 **DataReader**합니다. 사용 하는 **DataReader** (기본적으로) 및 사용 가능한 즉시 데이터를 검색 하 여 응용 프로그램 성능을 향상 시킬 수 시스템 오버 헤드를 줄임으로써 메모리에서 한 번에 하나의 행을 저장 합니다.  
   
  <xref:System.Data.Common.DataAdapter>는 데이터 소스에서 데이터를 검색하고 <xref:System.Data.DataSet> 내의 테이블을 채우는 데 사용됩니다. `DataAdapter`는 `DataSet`의 변경 내용을 다시 데이터 소스에 적용합니다. `DataAdapter`는 .NET Framework 데이터 공급자의 `Connection` 개체를 사용하여 데이터 소스에 연결하며 `Command` 개체를 사용하여 데이터 소스에서 데이터를 검색하고 변경 내용을 데이터 소스에 적용합니다.  
   
@@ -18,7 +18,7 @@ ADO.NET을 사용 하 여 **DataReader** 를 데이터베이스에서 데이터�
   
 ## <a name="in-this-section"></a>섹션 내용  
  [DataReader를 사용하여 데이터 검색](../../../../docs/framework/data/adonet/retrieving-data-using-a-datareader.md)  
- ADO.NET 설명 **DataReader** 개체 및 스트림을 반환 하는 결과의 데이터 원본에서 사용 하는 방법입니다.  
+ ADO.NET에 설명 합니다 **DataReader** 개체 및 사용 데이터 소스에서 결과 스트림을 반환 하는 방법입니다.  
   
  [DataAdapter에서 데이터 집합 채우기](../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)  
  `DataSet`를 사용하여 테이블, 열 및 행으로 `DataAdapter`을 채우는 방법을 설명합니다.  
@@ -49,4 +49,4 @@ ADO.NET을 사용 하 여 **DataReader** 를 데이터베이스에서 데이터�
  [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [트랜잭션 및 동시성](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
  [DataSet, DataTable 및 DataView](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

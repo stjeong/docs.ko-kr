@@ -11,16 +11,16 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 66ae453a8b82ea78acfb0dc423bce546324f901f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c1ab9a9eeae6de29fc838e263225050ec4122f2d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33410074"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480244"
 ---
 # <a name="ui-automation-properties-for-clients"></a>클라이언트의 UI 자동화 속성
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 개요에서는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성이 UI 자동화 클라이언트 응용 프로그램에 노출될 때 이 속성에 대해 설명합니다.  
   
@@ -30,13 +30,13 @@ ms.locfileid: "33410074"
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성이 읽기 전용입니다. 컨트롤의 속성을 설정하려면 적절한 컨트롤 패턴의 메서드를 사용해야 합니다. 예를 들어, 스크롤 창의 위치 값을 변경하려면 <xref:System.Windows.Automation.ScrollPattern.Scroll%2A> 를 사용합니다.  
   
- 성능 향상을 위해 <xref:System.Windows.Automation.AutomationElement> 개체가 검색될 때 컨트롤 및 컨트롤 패턴의 속성 값을 캐시할 수 있습니다. 자세한 내용은 참조 [UI 자동화 클라이언트에서 캐싱을](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)합니다.  
+ 성능 향상을 위해 <xref:System.Windows.Automation.AutomationElement> 개체가 검색될 때 컨트롤 및 컨트롤 패턴의 속성 값을 캐시할 수 있습니다. 자세한 내용은 [UI Automation 클라이언트의 캐싱](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)합니다.  
   
 <a name="Property_IDs"></a>   
 ## <a name="property-ids"></a>속성 ID  
  [!INCLUDE[TLA#tla_id#plural](../../../includes/tlasharptla-idsharpplural-md.md)] 속성은 <xref:System.Windows.Automation.AutomationProperty> 개체에서 캡슐화되는 고유한 상수 값입니다. UI 자동화 클라이언트 응용 프로그램은 이러한 [!INCLUDE[TLA2#tla_id#plural](../../../includes/tla2sharptla-idsharpplural-md.md)] 를 <xref:System.Windows.Automation.AutomationElement> 클래스에서 가져오거나 <xref:System.Windows.Automation.ScrollPattern>과 같은 적절한 컨트롤 패턴 클래스에서 가져옵니다. UI 자동화 공급자는 이러한 ID를 <xref:System.Windows.Automation.AutomationElementIdentifiers> 또는 <xref:System.Windows.Automation.ScrollPatternIdentifiers>와 같은 컨트롤 패턴 식별자 클래스 중 하나에서 가져옵니다.  
   
- 숫자 <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> 의 <xref:System.Windows.Automation.AutomationProperty> 공급자에 대 한 쿼리 되는 속성을 식별 하는 데 사용 된 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=nameWithType> 메서드. 일반적으로 클라이언트 응용 프로그램은 <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>를 검사할 필요가 없습니다. <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> 은 디버깅 및 진단 용도로만 사용됩니다.  
+ 숫자 <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> 의 <xref:System.Windows.Automation.AutomationProperty> 공급자에서 쿼리 되는 속성을 식별 하는 데 사용 된 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=nameWithType> 메서드. 일반적으로 클라이언트 응용 프로그램은 <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>를 검사할 필요가 없습니다. <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> 은 디버깅 및 진단 용도로만 사용됩니다.  
   
 <a name="Property_Conditions"></a>   
 ## <a name="property-conditions"></a>속성 조건  
@@ -80,7 +80,7 @@ ms.locfileid: "33410074"
 ## <a name="default-property-values"></a>기본 속성 값  
  UI 자동화 공급자가 속성을 구현하지 않는 경우 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 시스템에서 기본값을 제공할 수 있습니다. 예를 들어, 컨트롤의 공급자가 <xref:System.Windows.Automation.AutomationElement.HelpTextProperty>로 식별된 속성을 지원하지 않는 경우 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이 빈 문자열을 반환합니다. 마찬가지로, 공급자가 <xref:System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty>로 식별된 속성을 지원하지 않는 경우 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이 `false`를 반환합니다.  
   
- 사용 하 여이 동작을 변경할 수는 <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> 및 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> 메서드 오버 로드 합니다. `true` 를 두 번째 매개 변수로 지정하는 경우 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이 기본값을 반환하지 않고 특수 값인 <xref:System.Windows.Automation.AutomationElement.NotSupported>를 반환합니다.  
+ 사용 하 여이 동작을 변경할 수는 <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> 고 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> 메서드 오버 로드 합니다. `true` 를 두 번째 매개 변수로 지정하는 경우 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이 기본값을 반환하지 않고 특수 값인 <xref:System.Windows.Automation.AutomationElement.NotSupported>를 반환합니다.  
   
  다음 예제 코드는 요소에서 속성을 검색하고, 이 속성이 지원되지 않을 경우 응용 프로그램에서 정의된 값이 사용됩니다.  
   

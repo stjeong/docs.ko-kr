@@ -2,19 +2,19 @@
 title: 활동 라이브러리
 ms.date: 03/30/2017
 ms.assetid: 5323e9d4-71d6-47eb-bfa6-31feac62044d
-ms.openlocfilehash: 75a7f0203b27e331f9c33fa95be7f6fb95354b7b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 29b3efd648ac103526f572a2cac5b8b67c4b220a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518517"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486570"
 ---
 # <a name="activity-library"></a>활동 라이브러리
-이 섹션에는 고급 사용자 지정 활동에서 Windows WF (Workflow Foundation)를 보여 주는 샘플이 포함 되어 있습니다.  
+이 섹션에는 고급 사용자 지정 활동에서 Windows WF (Workflow Foundation)를 보여 주는 샘플이 들어 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [.NET Framework 4.5의 정책 작업](../../../../docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md)  
- Windows Workflow Foundation의 Policy4 활동을 사용 하는 방법을 보여 줍니다. [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> 개체에서 Windows Workflow Foundation에서 사용할 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) WF 3.5에서 제공 되는 규칙 엔진을 사용 하 여 직접 합니다.  
+ Policy4 활동에서 Windows Workflow Foundation를 허용 하는 방법을 보여 줍니다 [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> 개체에서 Windows Workflow Foundation에서 사용할 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) WF 3.5에서 제공 되는 규칙 엔진을 사용 하 여 직접.  
   
  [값 범위에서 전환할 사용자 지정 작업](../../../../docs/framework/windows-workflow-foundation/samples/custom-activity-to-switch-on-a-range-of-values.md)  
  <xref:System.Activities.Statements.Switch%601>의 사용을 확장하는 사용자 지정 활동을 만드는 방법을 보여 줍니다.  
@@ -47,16 +47,16 @@ ms.locfileid: "33518517"
  `ThrottleParallelForEach` 활동이 실행할 동시 분기 수를 제한하는 동시 비율을 설정하도록 허용한다는 점만 제외하고 <xref:System.Activities.Statements.ParallelForEach%601> 활동과 어떻게 비슷한지를 보여 줍니다.  
   
  [엔터티 작업](../../../../docs/framework/windows-workflow-foundation/samples/entity-activities.md)  
- Windows Workflow Foundation와 ADO.NET Entity Framework를 사용 하 여 데이터 액세스를 단순화 하는 방법을 보여 줍니다.  
+ Windows Workflow Foundation을 사용 하 여 ADO.NET Entity Framework를 사용 하 여 데이터 액세스를 단순화 하는 방법에 설명 합니다.  
   
  [데이터베이스 액세스 작업](../../../../docs/framework/windows-workflow-foundation/samples/database-access-activities.md)  
- 검색 하거나 정보를 수정 하 고 사용 하 여 데이터베이스에 액세스할 수 있도록 하는 활동을 만드는 방법을 보여 줍니다 [ADO.NET](http://go.microsoft.com/fwlink/?LinkId=166081) 데이터베이스에 액세스할 수 있습니다.  
+ 검색 하거나 정보를 수정 하 고 사용 하 여 데이터베이스에 액세스할 수 있도록 활동을 만드는 방법을 보여 줍니다 [ADO.NET](https://go.microsoft.com/fwlink/?LinkId=166081) 데이터베이스에 액세스할 수 있습니다.  
   
  [CommentOut 작업](../../../../docs/framework/windows-workflow-foundation/samples/commentout-activity.md)  
  다른 활동을 사실상 주석으로 처리하여 실행 경로에서 제거하는 사용자 지정 활동을 작성하는 방법을 보여 줍니다.  
   
  [.NET Framework 4.5의 구체화된 정책 작업](../../../../docs/framework/windows-workflow-foundation/samples/externalized-policy-activity-in-net-framework-4-5.md)  
- ExternalizedPolicy4 활동을 통해 기존 Windows Workflow Foundation의를 실행 하는 방법을 보여 줍니다. [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> 개체에서 Windows Workflow Foundation의 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) 직접 사용 하 여 규칙 엔진을 WF 3.5에서 제공 합니다.  
+ ExternalizedPolicy4 활동을 통해 기존 Windows Workflow Foundation을 실행 하는 방법을 보여 줍니다 [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> 개체에서 Windows Workflow Foundation의 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) 직접 사용 하 여 규칙 엔진 즉 WF 3.5에서 제공 합니다.  
   
  [NoPersistScope 작업](../../../../docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md)  
  워크플로 내의 serialize할 수 없고 삭제 가능한 상태를 처리하는 방법을 보여 줍니다.  

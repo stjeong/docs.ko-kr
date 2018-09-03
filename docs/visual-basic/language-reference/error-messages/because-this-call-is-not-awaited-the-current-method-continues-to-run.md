@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42358
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
-ms.openlocfilehash: 754fc6750e63f6d9f39da94041fc452829bca46d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a07955363ea5ca1ca8785c241b0de58149f329ba
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591436"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480895"
 ---
 # <a name="because-this-call-is-not-awaited-the-current-method-continues-to-run-before-the-call-is-completed"></a>이 호출이 대기되지 않으므로 호출이 완료되기 전에 현재 메서드가 계속 실행됩니다.
 이 호출이 대기되지 않으므로 호출이 완료되기 전에 현재 메서드가 계속 실행됩니다. 'Await' 연산자는 호출 결과에 적용하는 것이 좋습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "33591436"
   
  가장 좋은 방법은 항상 호출을 기다리는 것입니다.  
   
- 이 메시지는 기본적으로 경고입니다. 경고를 숨기 거 나 경고를 오류로 처리 하는 방법에 대 한 자세한 내용은 참조 [Visual Basic에서 경고 구성](/visualstudio/ide/configuring-warnings-in-visual-basic)합니다.  
+ 이 메시지는 기본적으로 경고입니다. 경고를 숨기 거 나 경고를 오류로 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)합니다.  
   
  **오류 ID:** BC42358  
   
@@ -117,7 +117,7 @@ ms.locfileid: "33591436"
   
      단추와 텍스트 상자가 포함된 간단한 창이 MainWindow.xaml의 **디자인** 뷰에 나타납니다.  
   
-     XAML 디자이너에 대한 자세한 내용은 [Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)를 참조하세요. 간단한 UI를 직접 빌드하는 방법에 대한 자세한 내용은 [연습: Async 및 Await를 사용하여 웹에 액세스(C# 및 Visual Basic)](http://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042)의 "To create a WPF application"(WPF 응용 프로그램을 만들려면) 섹션과 "To design a simple WPF MainWindow"(간단한 WPF MainWindow를 디자인하려면) 섹션을 참조하세요.  
+     XAML 디자이너에 대한 자세한 내용은 [Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)를 참조하세요. 간단한 UI를 직접 빌드하는 방법에 대한 자세한 내용은 [연습: Async 및 Await를 사용하여 웹에 액세스(C# 및 Visual Basic)](https://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042)의 "To create a WPF application"(WPF 응용 프로그램을 만들려면) 섹션과 "To design a simple WPF MainWindow"(간단한 WPF MainWindow를 디자인하려면) 섹션을 참조하세요.  
   
 4.  MainWindow.xaml.vb의 코드를 다음 코드로 바꿉니다.  
   

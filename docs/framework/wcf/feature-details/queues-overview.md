@@ -4,22 +4,22 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], MSMQ integration
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-ms.openlocfilehash: 85c8cb1fbbda9be14754174c7cb7c76513bd94c7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c181a415c8702c3032077728139b23e86d85d1f0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33497015"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480406"
 ---
 # <a name="queues-overview"></a>큐 개요
-이 단원에서는 큐를 사용하는 통신의 일반 개념과 핵심 개념을 소개합니다. 이후 단원에서는 큐 개념을 여기에 설명 된 Windows Communication Foundation (WCF)를 명시 되는 방법에 대 한 세부 정보로 이동 합니다.  
+이 단원에서는 큐를 사용하는 통신의 일반 개념과 핵심 개념을 소개합니다. 다음 섹션에서는 여기에 설명 된 큐 개념 Windows Communication Foundation (WCF)를 명시 되는 방법에 대 한 세부 정보로 이동 합니다.  
   
 ## <a name="basic-queuing-concepts"></a>기본 큐 개념  
  분산 응용 프로그램을 디자인하는 경우 서비스와 클라이언트 사이의 통신에 적합한 전송을 선택하는 것이 중요합니다. 사용되는 전송의 종류는 몇 가지 요소에 따라 달라집니다. 한 가지 중요한 요소(서비스와 클라이언트 및 전송 사이의 격리)에 따라 대기 중인 전송이나 TCP 또는 HTTP와 같은 직접 전송 사용 여부가 결정됩니다. TCP 및 HTTP와 같은 직접 전송의 특성 상 서비스나 클라이언트의 기능이 중지되거나 네트워크 장애가 발생하면 통신이 완전히 중지됩니다. 응용 프로그램이 작동하려면 서비스, 클라이언트 및 네트워크가 동시에 실행되고 있어야 합니다. 대기 중인 전송에서는 격리 기능을 제공하기 때문에 서비스나 클라이언트가 실패하거나 그 사이의 통신 연결이 실패해도 클라이언트와 서비스가 계속 작동할 수 있습니다.  
   
- 큐를 사용하면 통신 당사자나 네트워크에 오류가 발생해도 안정적인 통신을 제공할 수 있습니다. 큐에서는 통신 당사자 사이에 교환되는 메시지를 캡처하고 배달합니다. 큐는 보통 저장소에 백업되며, 이 때 저장소는 지속적일 수도 있고 일시적일 수도 있습니다. 큐는 서비스를 대신하여 클라이언트에서 오는 메시지를 저장했다가 나중에 서비스에 전달합니다. 간접 참조 큐를 사용하면 어느 쪽의 오류에 대해서도 격리를 보장할 수 있기 때문에 고가용성 시스템 및 연결이 끊긴 서비스에서 이 방법이 기본 통신 메커니즘으로 사용됩니다. 간접 참조에는 대기 시간이 길어진다는 단점이 있습니다. *대기 시간* 는 서비스에서 받을 시간과 클라이언트가 메시지를 보낼 시간 사이의 시간 지연입니다. 즉, 메시지를 보내고 나면 메시지가 언제 처리되는지 알 수 없습니다. 큐를 사용하는 대부분의 응용 프로그램은 대기 시간이 긴 편입니다. 다음 그림에서는 대기 중인 통신의 개념적 모델을 보여 줍니다.  
+ 큐를 사용하면 통신 당사자나 네트워크에 오류가 발생해도 안정적인 통신을 제공할 수 있습니다. 큐에서는 통신 당사자 사이에 교환되는 메시지를 캡처하고 배달합니다. 큐는 보통 저장소에 백업되며, 이 때 저장소는 지속적일 수도 있고 일시적일 수도 있습니다. 큐는 서비스를 대신하여 클라이언트에서 오는 메시지를 저장했다가 나중에 서비스에 전달합니다. 간접 참조 큐를 사용하면 어느 쪽의 오류에 대해서도 격리를 보장할 수 있기 때문에 고가용성 시스템 및 연결이 끊긴 서비스에서 이 방법이 기본 통신 메커니즘으로 사용됩니다. 간접 참조에는 대기 시간이 길어진다는 단점이 있습니다. *대기 시간* 후 서비스에서 받을 시간과 클라이언트 메시지를 보내는 시간 사이의 시간 지연입니다. 즉, 메시지를 보내고 나면 메시지가 언제 처리되는지 알 수 없습니다. 큐를 사용하는 대부분의 응용 프로그램은 대기 시간이 긴 편입니다. 다음 그림에서는 대기 중인 통신의 개념적 모델을 보여 줍니다.  
   
- ![대기 중인된 통신의 모델](../../../../docs/framework/wcf/feature-details/media/qconceptual-figure1c.gif "QConceptual Figure1c")  
+ ![대기 중인된 통신 모델](../../../../docs/framework/wcf/feature-details/media/qconceptual-figure1c.gif "QConceptual Figure1c")  
   
  대기 중인 통신 개념적 모델  
   
@@ -27,7 +27,7 @@ ms.locfileid: "33497015"
   
  클라이언트에서 큐로 메시지를 보내면 큐에서는 서비스의 큐 관리자에서 관리하는 대상 큐에 메시지를 지정합니다. 클라이언트의 큐 관리자에서는 메시지를 전송 큐(또는 나가는 큐)로 보냅니다. 전송 큐는 클라이언트 큐 관리자에서 대상 큐로 전송할 메시지를 저장하는 큐입니다. 큐 관리자에서는 대상 큐를 소유한 큐 관리자의 경로를 찾은 다음 메시지를 전송합니다. 안정적인 통신을 수행하려면 큐 관리자에서 안정적인 전송 프로토콜을 구현하여 데이터 손실을 방지해야 합니다. 대상 큐 관리자에서는 자신이 소유한 대상 큐에 지정된 메시지를 받아 메시지를 저장합니다. 서비스에서 대상 큐로부터 읽기를 수행하는 요청을 보내면 큐 관리자에서 메시지를 대상 응용 프로그램에 배달합니다. 다음 그림에서는 4자 사이의 통신을 보여 줍니다.  
   
- ![응용 프로그램 다이어그램 큐에 대기](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "분산-큐-그림")  
+ ![응용 프로그램 다이어그램을 지연](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-큐-그림")  
   
  일반적인 배포에서의 대기 중인 통신 시나리오  
   
@@ -46,7 +46,7 @@ ms.locfileid: "33497015"
   
  대기 시간이 길기 때문에 메시지를 보낸 후에 대상 큐에 도달하는 데 걸리는 시간을 알 수도 없고, 서비스에서 메시지를 처리하는 데 걸리는 시간도 알 수 없습니다. 그렇기 때문에 단일 트랜잭션에 메시지 보내기, 메시지 받기 및 메시지 처리를 모두 맡기는 것은 좋지 않습니다. 그러면 무기한 커밋되지 않는 트랜잭션이 생성될 수 있습니다. 클라이언트와 서비스가 큐를 통해 트랜잭션을 사용하여 통신하는 경우, 클라이언트에 있는 트랜잭션과 서비스에 있는 트랜잭션의 두 가지가 관련됩니다. 다음 그림에서는 일반적인 대기 중인 통신의 트랜잭션 경계를 나타냅니다.  
   
- ![트랜잭션 사용 하 여 큐](../../../../docs/framework/wcf/feature-details/media/qwithtransactions-figure3.gif "QWithTransactions 그림 3")  
+ ![큐 트랜잭션과](../../../../docs/framework/wcf/feature-details/media/qwithtransactions-figure3.gif "QWithTransactions-그림 3")  
   
  캡처 및 배달에 사용되는 별도의 트랜잭션을 나타내는 대기 중인 통신  
   
@@ -81,6 +81,6 @@ ms.locfileid: "33497015"
  [일시 대기 통신](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)  
  [Windows Communication Foundation에서 메시지 큐로](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  
  [메시지 큐(MSMQ) 설치](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
- [메시지 큐 통합 바인딩 예제](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
+ [메시지 큐 통합 바인딩 샘플](https://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
  [메시지 큐에서 indows Communication Foundation으로](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  
  [메시지 큐에 대한 메시지 보안](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)

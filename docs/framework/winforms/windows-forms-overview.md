@@ -5,12 +5,12 @@ helpviewer_keywords:
 - smart clients
 - Windows Forms, about Windows Forms
 ms.assetid: 3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4
-ms.openlocfilehash: 50c88aec8ac57be2ab317ac91464d68503607738
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 897d6fb8e0a150cc7fa498bb904b10d89ece9943
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33541728"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486237"
 ---
 # <a name="windows-forms-overview"></a>Windows Forms 개요
 다음 개요에서는 스마트 클라이언트 응용 프로그램의 이점, Windows Forms 프로그래밍의 주요 기능 및 Windows Forms를 사용하여 오늘날의 기업과 최종 사용자의 요구를 충족하는 스마트 클라이언트를 빌드하는 방법을 설명합니다.  
@@ -19,7 +19,7 @@ ms.locfileid: "33541728"
  Windows Forms를 사용하여 스마트 클라이언트를 개발합니다. *스마트 클라이언트*는 쉽게 배포 및 업데이트되며, 인터넷에 연결되었거나 연결이 끊어졌을 때 작동할 수 있고, 기존의 Windows 기반 응용 프로그램보다 더 안전하게 로컬 컴퓨터의 리소스에 액세스할 수 있는 시각적으로 풍부한 응용 프로그램입니다.  
   
 ### <a name="building-rich-interactive-user-interfaces"></a>풍부한 대화형 사용자 인터페이스 빌드  
- Windows Forms는 파일 시스템 읽기 및 쓰기와 같은 일반적인 응용 프로그램 작업을 간소화하는 관리되는 라이브러리 집합인 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]용 스마트 클라이언트 기술입니다. Visual Studio와 같은 개발 환경을 사용 하는 경우 네트워크를 통해 원격 컴퓨터와 정보를 표시할 사용자 로부터 입력을 요청 하 고 통신 하는 Windows Forms 스마트 클라이언트 응용 프로그램을 만들 수 있습니다.  
+ Windows Forms는 파일 시스템 읽기 및 쓰기와 같은 일반적인 응용 프로그램 작업을 간소화하는 관리되는 라이브러리 집합인 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]용 스마트 클라이언트 기술입니다. Visual Studio와 같은 개발 환경에서 사용 하는 경우 네트워크를 통해 원격 컴퓨터와 정보를 표시 하 고 사용자 로부터 입력을 요청 하 고 전달 하는 Windows Forms 스마트 클라이언트 응용 프로그램을 만들 수 있습니다.  
   
  Windows Forms에서 *폼*은 정보를 사용자에게 표시하는 비주얼 화면입니다. 일반적으로 폼에 컨트롤을 추가하고 마우스 클릭이나 키 누름과 같은 사용자 동작에 대한 응답을 개발하여 Windows Forms 응용 프로그램을 빌드합니다. *컨트롤*은 데이터를 표시하거나 데이터 입력을 수락하는 고유한 UI(사용자 인터페이스) 요소입니다.  
   
@@ -29,7 +29,7 @@ ms.locfileid: "33541728"
   
  Windows Forms에는 Microsoft Office와 같은 고급 응용 프로그램의 기능을 에뮬레이트하는 풍부한 UI 컨트롤이 있습니다. <xref:System.Windows.Forms.ToolStrip> 및 <xref:System.Windows.Forms.MenuStrip> 컨트롤을 사용하는 경우 텍스트와 이미지를 포함하고, 하위 메뉴를 표시하며, 텍스트 상자 및 콤보 상자와 같은 기타 컨트롤을 호스트하는 도구 모음과 메뉴를 만들 수 있습니다.  
   
- Visual Studio 끌어서 놓기 Windows Forms 디자이너와 Windows Forms 응용 프로그램을 쉽게 만들 수 있습니다. 커서를 사용하여 컨트롤을 선택하고 폼에서 원하는 위치에 추가하면 됩니다. 디자이너는 컨트롤을 쉽게 배치하기 위한 모눈선 및 맞춤선과 같은 도구를 제공합니다. 사용할 수 있는지를 Visual Studio를 사용 하거나 명령줄에서 컴파일 및는 <xref:System.Windows.Forms.FlowLayoutPanel>, <xref:System.Windows.Forms.TableLayoutPanel> 및 <xref:System.Windows.Forms.SplitContainer> 짧은 시간 내에 폼 레이아웃 컨트롤 고급 만들려고 합니다.  
+ Visual Studio 끌어서 놓기 Windows Forms 디자이너를 사용 하 여 Windows Forms 응용 프로그램을 쉽게 만들 수 있습니다. 커서를 사용하여 컨트롤을 선택하고 폼에서 원하는 위치에 추가하면 됩니다. 디자이너는 컨트롤을 쉽게 배치하기 위한 모눈선 및 맞춤선과 같은 도구를 제공합니다. 사용할 수 있는지를 Visual Studio를 사용 하거나 명령줄에서 컴파일 및 합니다 <xref:System.Windows.Forms.FlowLayoutPanel>, <xref:System.Windows.Forms.TableLayoutPanel> 및 <xref:System.Windows.Forms.SplitContainer> 짧은 시간 내에 컨트롤을 만드는 고급 폼 레이아웃 합니다.  
   
  끝으로, 고유한 사용자 지정 UI 요소를 만들어야 하는 경우 <xref:System.Drawing> 네임스페이스에는 선, 원 및 기타 도형을 폼에 직접 렌더링하는 다양한 클래스가 포함되어 있습니다.  
   
@@ -62,11 +62,11 @@ ms.locfileid: "33541728"
 |-----------------|----------------|  
 |<xref:System.Windows.Forms.BindingSource> 구성 요소 사용|[방법: 디자이너를 사용하여 Windows Forms 컨트롤에 BindingSource 구성 요소 바인딩](../../../docs/framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
 |[!INCLUDE[vstecado](../../../includes/vstecado-md.md)] 데이터 소스 작업|[방법: Windows Forms BindingSource 구성 요소를 사용하여 ADO.NET 데이터 정렬 및 필터링](../../../docs/framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|  
-|데이터 소스 창 사용|[연습: Windows Form에 데이터 표시](http://msdn.microsoft.com/library/f6e08c2c-c792-43de-adf3-3e52c0100225)|  
+|데이터 소스 창 사용|[연습: Windows Form에 데이터 표시](https://msdn.microsoft.com/library/f6e08c2c-c792-43de-adf3-3e52c0100225)|  
 |응용 프로그램 설정 사용|[방법: 응용 프로그램 설정 만들기](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)|  
   
 ### <a name="deploying-applications-to-client-computers"></a>클라이언트 컴퓨터에 응용 프로그램 배포  
- 응용 프로그램을 작성한 후 해당 클라이언트 컴퓨터에 설치하고 실행할 수 있도록 사용자에게 응용 프로그램을 보내야 합니다. 사용 하는 경우는 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 기술, 단 몇 번의 클릭을 사용 하 여 Visual Studio 내에서 응용 프로그램을 배포할 수 있고 사용자는 웹에서 응용 프로그램을 가리키는 URL에 게 제공 합니다. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]는 응용 프로그램의 모든 요소와 종속성을 관리하고 클라이언트 컴퓨터에 응용 프로그램이 올바르게 설치되었는지 확인합니다.  
+ 응용 프로그램을 작성한 후 해당 클라이언트 컴퓨터에 설치하고 실행할 수 있도록 사용자에게 응용 프로그램을 보내야 합니다. 사용 하는 경우는 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 기술을 몇 번의 클릭을 사용 하 여 Visual Studio 내에서 응용 프로그램을 배포 하는 웹에서 응용 프로그램을 가리키는 URL을 사용 하 여 사용자에 게 제공 합니다. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]는 응용 프로그램의 모든 요소와 종속성을 관리하고 클라이언트 컴퓨터에 응용 프로그램이 올바르게 설치되었는지 확인합니다.  
   
  사용자가 네트워크에 연결된 경우에만 실행되거나 온라인 및 오프라인 둘 다에서 실행되도록 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 응용 프로그램을 구성할 수 있습니다. 응용 프로그램이 오프라인 작업을 지원하도록 지정하면 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]는 사용자의 **시작** 메뉴에 응용 프로그램에 대한 링크를 추가합니다. 그러면 사용자가 URL을 사용하지 않고도 응용 프로그램을 열 수 있습니다.  
   

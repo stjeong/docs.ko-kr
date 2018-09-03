@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Next method [WPF]
 ms.assetid: 3698b44d-510e-4d18-b32b-85f17188ee26
-ms.openlocfilehash: 3cf3231bd48290c5b6b0ce8eeb6534de564c0c85
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 329a2cd96346e199ee834856dd6dbfac6175b722
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33546408"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481180"
 ---
 # <a name="ienumrawinputdevicnext"></a>IEnumRAWINPUTDEVIC:Next
-다음 열거 `celt` [RAWINPUTDEVICE](http://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp) 에서 반환 되는 열거자의 목록에서 구조 `rgelt` 열거 요소에서의 실제 수와 함께 `pceltFetched`합니다.  
+다음 열거 `celt` [RAWINPUTDEVICE](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp) 구조에 반환 되는 열거자의 목록에서 `rgelt` 실제 열거 된 요소 수와 함께 `pceltFetched`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -26,7 +26,7 @@ HRESULT Next(
 #### <a name="parameters"></a>매개 변수  
  `celt`  
   
- [in] 수가 [RAWINPUTDEVICE](http://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp) 구조에 반환 된 `rgelt`합니다.  
+ [in] 수가 [RAWINPUTDEVICE](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp) 에서 반환 된 `rgelt`합니다.  
   
  `rgelt`  
   

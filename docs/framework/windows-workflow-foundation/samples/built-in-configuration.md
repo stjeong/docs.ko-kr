@@ -2,12 +2,12 @@
 title: 기본 제공 구성
 ms.date: 03/30/2017
 ms.assetid: 34e85c9b-088d-4347-816c-0f77cb73ef2f
-ms.openlocfilehash: 8488a753cb1c540d9c34d9bcf7b2a3112302a122
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e76c019d9fc1b416e6fa8175a70b5fd01d9ff53e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518622"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43476120"
 ---
 # <a name="built-in-configuration"></a>기본 제공 구성
 이 샘플에서는 SQL 워크플로 인스턴스 저장소를 사용하고 구성하는 방법을 보여 줍니다. SQL 워크플로 인스턴스 저장소는 인스턴스 저장소의 SQL 기반 구현이며, 이 저장소를 사용하면 인스턴스가 SQL Server 또는 SQL Server Express 데이터베이스 간에 인스턴스 상태를 저장하고 로드할 수 있습니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "33518622"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가 없으면 다운로드 페이지로 이동 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플입니다. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면 다운로드 페이지로 이동할 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플입니다. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Persistence\BuiltInConfiguration`  
   
@@ -26,7 +26,7 @@ ms.locfileid: "33518622"
   
  계산 워크플로는 워크플로 서비스 호스트에서 자체 호스트합니다. 프로그램의 `Main` 메서드는 계산 워크플로를 호스트하는 워크플로 서비스 호스트의 인스턴스를 만들고, 계산 워크플로가 도달할 수 있는 끝점을 정의합니다. 그런 다음 SQL 워크플로 인스턴스 저장소를 구성하는 데 사용되는 SQL 워크플로 인스턴스 저장소 동작을 정의합니다. 그런 다음 프로그램은 계산 워크플로의 시작 메서드를 호출하는 클라이언트를 만듭니다.  
   
- 프로그램을 시작하면 카운터가 자동으로 계산을 시작합니다. 인스턴스를 로드하고 SQL 워크플로 인스턴스 저장소를 구성하는 데는 몇 초 정도 걸릴 수 있습니다. 워크플로 인스턴스 저장소에 대 한 자세한 내용은 참조 [SQL 워크플로 인스턴스 저장소](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md)합니다.  
+ 프로그램을 시작하면 카운터가 자동으로 계산을 시작합니다. 인스턴스를 로드하고 SQL 워크플로 인스턴스 저장소를 구성하는 데는 몇 초 정도 걸릴 수 있습니다. 워크플로 인스턴스 저장소에 대 한 자세한 내용은 참조 하세요. [SQL 워크플로 인스턴스 저장소](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md)합니다.  
   
  이 샘플은 두 부분으로 구성되어 있습니다.  
   
@@ -69,13 +69,13 @@ ms.locfileid: "33518622"
   
 2.  샘플 디렉터리(\WF\Basic\Persistence\BuiltInConfiguration\CS)로 이동하고 CreateInstanceStore.cmd를 실행합니다.  
   
-3.  관리자 권한이 없는 경우 SQL Server 로그인을 만듭니다. 로 이동 `Security`, **로그인**합니다. 마우스 오른쪽 단추로 클릭 **로그인** 새 로그인을 만듭니다.  
+3.  관리자 권한이 없는 경우 SQL Server 로그인을 만듭니다. 로 이동 `Security`하십시오 **로그인**합니다. 마우스 오른쪽 단추로 클릭 **로그인** 새 로그인을 만듭니다.  
   
-4.  SQL 역할에 ACL 사용자를 추가합니다. 열기 **데이터베이스**, **InstanceStore**, **보안**합니다. 마우스 오른쪽 단추로 클릭 **사용자** 선택 **새 사용자**합니다. 설정의 **로그인 이름** 이전 단계에서 만든 사용자에 게 합니다. 데이터베이스 역할 멤버 자격 사용자를 추가 **System.Activities.DurableInstancing.InstanceStoreUsers** (및 기타). 사용자가 이미 있을 수도 있습니다(예: 사용자 dbo).  
+4.  SQL 역할에 ACL 사용자를 추가합니다. 열기 **데이터베이스**, **InstanceStore**하십시오 **보안**합니다. 마우스 오른쪽 단추로 클릭 **사용자가** 선택한 **새 사용자**합니다. 설정 된 **로그인 이름** 을 이전 단계에서 만든 사용자입니다. 데이터베이스 역할 멤버 자격 사용자를 추가할 **System.Activities.DurableInstancing.InstanceStoreUsers** (및 기타). 사용자가 이미 있을 수도 있습니다(예: 사용자 dbo).  
   
 5.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]에서 InstanceStore.sln 파일을 열고 Ctrl 키를 눌러 솔루션을 빌드합니다.  
   
-6.  [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], 샘플의 적절 한 bin\debug 디렉터리 (\WF\Basic\Persistence\BuiltInConfiguration\cs\InstanceStore(1 or 2)\bin\debug)로 이동, InstanceStore.exe를 마우스 오른쪽 단추로 클릭 하 고 선택 **관리자권한으로실행**. 이 샘플은 채널 수신기를 열기 때문에 관리자 권한으로 실행해야 합니다.  
+6.  [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)]샘플의 적절 한 bin\debug 디렉터리 (\WF\Basic\Persistence\BuiltInConfiguration\cs\InstanceStore(1 or 2)\bin\debug)로 이동, InstanceStore.exe를 마우스 오른쪽 단추로 클릭 및 선택 **관리자권한으로실행**. 이 샘플은 채널 수신기를 열기 때문에 관리자 권한으로 실행해야 합니다.  
   
 7.  SQL Server Express 로컬 설치 이외의 데이터베이스에 인스턴스 저장소를 만든 경우에는 샘플에서 데이터베이스 연결 문자열(InstanceStore1 프로젝트의 Program.cs에 있는 `const string ConnectionString` 및 InstanceStore2 프로젝트의 App.config에 있는 `connectionString` 특성)을 업데이트한 다음 샘플을 다시 컴파일해야 합니다.  
   
@@ -83,15 +83,15 @@ ms.locfileid: "33518622"
   
 1.  샘플이 실행되고 있는 동안 SQL Server Management Studio를 시작합니다.  
   
-2.  에 **개체 탐색기**선택, **데이터베이스**, **InstanceStore**, **테이블**, 차례로  **System.Activities.DurableInstancing.InstanceTable**합니다.  
+2.  에 **개체 탐색기**를 선택 **데이터베이스**를 **InstanceStore**, **테이블**를 차례로  **System.Activities.DurableInstancing.InstanceTable**합니다.  
   
-3.  마우스 오른쪽 단추로 클릭 **인스턴스 테이블** 선택 **상위 1000 개 행 선택**합니다.  
+3.  마우스 오른쪽 단추로 클릭 **인스턴스 테이블** 선택한 **상위 1000 개의 행 선택**합니다.  
   
-4.  새 항목이 있는지와 없는지 확인는 **잠금 만료** 5 초 간격으로 변경 (작업 표시줄의 클릭 **Execute** 단추를 쿼리를 새로 고칠). 이 설정의 결과 **호스트 잠금 갱신 기간** 5입니다.  
+4.  새 항목을 지정 하 고는 있는지 확인 합니다 **잠금 만료** 5 초 마다 변경 (작업 표시줄의 클릭 **Execute** 쿼리를 새로 고치려면 단추). 이 설정의 결과 **호스트 잠금 갱신 기간** 5입니다.  
   
-5.  계산이 완료된 후 인스턴스 테이블의 항목이 제거되었는지 확인합니다. 이 설정의 **인스턴스 완료 동작** 를 **DeleteAll**합니다.  
+5.  계산이 완료된 후 인스턴스 테이블의 항목이 제거되었는지 확인합니다. 이 설정에 따른 **인스턴스 완료 동작** 하 **DeleteAll**합니다.  
   
-6.  Enter 키를 눌러 워크플로 호스트 응용 프로그램을 종료 하는 **LockOwnersTable** 삭제 됩니다.  
+6.  Enter 키를 눌러 워크플로 호스트 응용 프로그램을 종료 하 고 확인 하는 **LockOwnersTable** 삭제 됩니다.  
   
 #### <a name="to-uninstall-the-sample"></a>샘플을 제거하려면  
   
@@ -102,9 +102,9 @@ ms.locfileid: "33518622"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Persistence\BuiltInConfiguration`  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 호스팅 및 지 속성 샘플](http://go.microsoft.com/fwlink/?LinkId=193961)
+ [AppFabric 호스팅 및 지 속성 샘플](https://go.microsoft.com/fwlink/?LinkId=193961)

@@ -5,21 +5,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b555544e-7abb-4814-859b-ab9cdd7d8716
-ms.openlocfilehash: 219a806441e0f6ce501dc691f4c965168a250aeb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 31edbc8f4cbb09f8720b373780f1b0646a985b20
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365750"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481685"
 ---
 # <a name="systemtransactions-integration-with-sql-server"></a>SQL Server와의 System.Transactions 통합
 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 버전 2.0에는 <xref:System.Transactions> 네임스페이스를 통해 액세스할 수 있는 트랜잭션 프레임워크가 추가되었습니다. 이 프레임워크는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]을 포함하여 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에 완전히 통합된 방식으로 트랜잭션을 노출시킵니다.  
   
  프로그래밍 기능이 향상된 것 외에도 <xref:System.Transactions> 및 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 이 함께 작동하여 트랜잭션 사용 시 최적화되도록 조정할 수 있습니다. 승격 가능한 트랜잭션이란 필요에 따라 완전 분산 트랜잭션으로 자동 승격될 수 있는 간단한(로컬) 트랜잭션입니다.  
   
- 부터는 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 2.0 <xref:System.Data.SqlClient> SQL Server 사용 시 승격 가능한 트랜잭션을 지원 합니다. 승격 가능한 트랜잭션은 추가 오버헤드가 필요한 경우를 제외하고 분산 트랜잭션의 추가 오버헤드를 호출하지 않습니다. 승격 가능한 트랜잭션은 자동 이며 개발자의 개입 없이 필요 합니다.  
+ 부터는 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 2.0 <xref:System.Data.SqlClient> SQL Server를 사용 하 여 작업할 때 승격 가능한 트랜잭션을 지원 합니다. 승격 가능한 트랜잭션은 추가 오버헤드가 필요한 경우를 제외하고 분산 트랜잭션의 추가 오버헤드를 호출하지 않습니다. 승격 가능한 트랜잭션은 자동 이며 개발자의 개입 없이 필요 합니다.  
   
- 승격 가능한 트랜잭션을 사용 하는 경우에 사용할 수 있는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (`SqlClient`) SQL Server와 함께 합니다.  
+ 승격 가능한 트랜잭션을 사용 하는 경우에 사용할 수는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (`SqlClient`) SQL Server를 사용 하 여 합니다.  
   
 ## <a name="creating-promotable-transactions"></a>승격 가능한 트랜잭션 만들기  
  [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Provider for SQL Server는 승격 가능한 트랜잭션을 지원합니다. 승격 가능한 트랜잭션은 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] <xref:System.Transactions> 네임스페이스에서 클래스를 통해 처리됩니다. 승격 가능한 트랜잭션은 필요할 때까지 분산 트랜잭션 만들기를 연기하여 분산 트랜잭션을 최적화합니다. 리소스 관리자만 필요할 경우 분산 트랜잭션은 발생하지 않습니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "33365750"
 >  부분적으로 신뢰할 수 있는 시나리오에서 트랜잭션을 분산 트랜잭션으로 승격시키려면 <xref:System.Transactions.DistributedTransactionPermission> 이 필요합니다.  
   
 ## <a name="promotable-transaction-scenarios"></a>승격 가능한 트랜잭션 시나리오  
- 분산 트랜잭션에서는 일반적으로 MS DTC(Microsoft Distributed Transaction Coordinator)를 통해 관리되는 많은 양의 시스템 리소스를 사용합니다. MS DTC는 트랜잭션에서 액세스하는 모든 리소스 관리자를 통합합니다. 승격 가능한 트랜잭션은 특별 한 형태의 <xref:System.Transactions> 간단한 SQL Server 트랜잭션 하는 작업을 효과적으로 위임 하는 트랜잭션. <xref:System.Transactions><xref:System.Data.SqlClient>, 작업 및 SQL Server는 트랜잭션 처리에 포함 된 작업 필요에 따라이 트랜잭션을 완전 분산 트랜잭션으로 승격 합니다.  
+ 분산 트랜잭션에서는 일반적으로 MS DTC(Microsoft Distributed Transaction Coordinator)를 통해 관리되는 많은 양의 시스템 리소스를 사용합니다. MS DTC는 트랜잭션에서 액세스하는 모든 리소스 관리자를 통합합니다. 승격 가능한 트랜잭션은 특별 한 형태의 <xref:System.Transactions> 간단한 SQL Server 트랜잭션 작업을 효과적으로 위임 하는 트랜잭션입니다. <xref:System.Transactions><xref:System.Data.SqlClient>, SQL Server는 필요에 따라 완전 분산 트랜잭션으로 승격 트랜잭션 처리와 관련 된 작업을 조정 합니다.  
   
  승격 가능한 트랜잭션을 사용하면 활성 <xref:System.Transactions.TransactionScope> 트랜잭션을 사용하여 연결이 열리고, 다른 연결이 열려 있지 않은 경우 완전 분산 트랜잭션의 추가 오버헤드를 발생시키는 대신 간단한 트랜잭션으로 커밋됩니다.  
   
@@ -230,4 +230,4 @@ End Function
   
 ## <a name="see-also"></a>참고 항목  
  [트랜잭션 및 동시성](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

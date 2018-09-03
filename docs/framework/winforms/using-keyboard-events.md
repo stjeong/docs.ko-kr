@@ -9,15 +9,15 @@ helpviewer_keywords:
 - keyboard events
 - events [Windows Forms], keyboard
 ms.assetid: d3f3e14b-a459-4ee6-9875-8957e34f8ee9
-ms.openlocfilehash: 706b4d87ddbb6afadfd90af866520e6feaa58ca7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2c6059e5d0957de09dd2c4832573c784935eb510
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33542264"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484911"
 ---
 # <a name="using-keyboard-events"></a>키보드 이벤트 사용
-대부분 Windows Forms 프로그램에서는 키보드 이벤트를 처리하는 방식으로 키보드 입력을 처리합니다. 이 항목에서는 각 이벤트를 사용하는 시기 및 각 이벤트에 대해 제공되는 데이터에 대한 세부 정보를 포함하여 키보드 이벤트에 대한 개요를 제공합니다.  또한 참조 [이벤트 처리기 개요 (Windows Forms)](http://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [이벤트 개요 (Windows Forms)](http://msdn.microsoft.com/library/1h12f09z\(v=vs.110\))합니다.  
+대부분 Windows Forms 프로그램에서는 키보드 이벤트를 처리하는 방식으로 키보드 입력을 처리합니다. 이 항목에서는 각 이벤트를 사용하는 시기 및 각 이벤트에 대해 제공되는 데이터에 대한 세부 정보를 포함하여 키보드 이벤트에 대한 개요를 제공합니다.  도 참조 하세요 [이벤트 처리기 개요 (Windows Forms)](https://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\))하십시오 [이벤트 개요 (Windows Forms)](https://msdn.microsoft.com/library/1h12f09z\(v=vs.110\))합니다.  
   
 ## <a name="keyboard-events"></a>키보드 이벤트  
  Windows Forms에서는 사용자가 키보드 키를 누를 때 발생하는 두 가지 이벤트와 사용자가 키보드 키를 놓을 때 발생하는 한 가지 이벤트를 제공합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "33542264"
   
 -   사용자가 키를 놓을 때 한 번 발생하는 <xref:System.Windows.Forms.Control.KeyUp> 이벤트.  
   
- 사용자가 키를 누를 때 Windows Forms에서는 키보드 메시지가 문자 키 또는 물리적 키를 지정하는지에 따라 발생할 이벤트를 결정합니다. 문자 및 물리적 키에 대 한 자세한 내용은 참조 [키보드 입력 작동 방식](../../../docs/framework/winforms/how-keyboard-input-works.md)합니다.  
+ 사용자가 키를 누를 때 Windows Forms에서는 키보드 메시지가 문자 키 또는 물리적 키를 지정하는지에 따라 발생할 이벤트를 결정합니다. 문자 및 물리적 키에 대 한 자세한 내용은 참조 하세요. [키보드 입력 작동 방식](../../../docs/framework/winforms/how-keyboard-input-works.md)합니다.  
   
  다음 표에서는 세 가지 키보드 이벤트에 대해 설명합니다.  
   

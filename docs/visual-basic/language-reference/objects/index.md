@@ -5,11 +5,11 @@ helpviewer_keywords:
 - objects [Visual Basic]
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
 ms.openlocfilehash: 9e0b133147fa01b15104b9050cd9067079300e3e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33604252"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486846"
 ---
 # <a name="objects-visual-basic"></a>개체(Visual Basic)
 이 항목에서는 Visual Basic 런타임 개체를 설명하고 멤버 프로시저, 속성 및 이벤트 테이블을 포함하는 기타 항목의 링크를 제공합니다.  

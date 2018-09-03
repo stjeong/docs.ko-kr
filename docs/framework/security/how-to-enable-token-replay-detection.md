@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 5a9f5771-f5f6-4100-8501-406aa20d731a
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: b9c187998b4af41e1a56ed9a64625da7e4f95d5e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dd5adf39c37fce92d4caf1d85e2a6a12e9e6b59b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33408062"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486518"
 ---
 # <a name="how-to-enable-token-replay-detection"></a>방법: 토큰 재생을 검색하도록 설정
 ## <a name="applies-to"></a>적용 대상  
@@ -19,7 +19,7 @@ ms.locfileid: "33408062"
 -   ASP.NET® Web Forms  
   
 ## <a name="summary"></a>요약  
- 이 방법은 WIF를 사용하는 ASP.NET 응용 프로그램에서 토큰 재생 검색을 사용하도록 설정하기 위한 자세한 단계별 프로시저를 제공합니다. 또한 토큰 재생 검색이 사용되는지 확인하기 위해 응용 프로그램을 테스트하는 방법에 대한 지침을 제공합니다. 이 방법 설명에 보안 토큰 서비스(STS)를 만들기 위한 자세한 지침은 없으며, 그 대신 ID 및 액세스 도구와 함께 제공되는 개발 STS를 사용합니다. 개발 STS가 실제 인증을 수행하는 것은 아니며, 테스트 목적으로만 사용됩니다. 이 방법을 완료하려면 ID 및 액세스 도구를 설치해야 합니다. [ID 및 액세스 도구](http://go.microsoft.com/fwlink/?LinkID=245849)에서 다운로드할 수 있습니다.  
+ 이 방법은 WIF를 사용하는 ASP.NET 응용 프로그램에서 토큰 재생 검색을 사용하도록 설정하기 위한 자세한 단계별 프로시저를 제공합니다. 또한 토큰 재생 검색이 사용되는지 확인하기 위해 응용 프로그램을 테스트하는 방법에 대한 지침을 제공합니다. 이 방법 설명에 보안 토큰 서비스(STS)를 만들기 위한 자세한 지침은 없으며, 그 대신 ID 및 액세스 도구와 함께 제공되는 개발 STS를 사용합니다. 개발 STS가 실제 인증을 수행하는 것은 아니며, 테스트 목적으로만 사용됩니다. 이 방법을 완료하려면 ID 및 액세스 도구를 설치해야 합니다. [ID 및 액세스 도구](https://go.microsoft.com/fwlink/?LinkID=245849)에서 다운로드할 수 있습니다.  
   
 ## <a name="contents"></a>목차  
   

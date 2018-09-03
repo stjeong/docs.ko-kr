@@ -29,12 +29,12 @@ helpviewer_keywords:
 - attribute syntax [XAML]
 - XAML [WPF], property element syntax
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
-ms.openlocfilehash: f2c3aab20dc5bcf9b0f9f7053323ccd7a04443cc
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: eabb9c84824a4604319a346612e84563abaf2b76
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755053"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485731"
 ---
 # <a name="xaml-syntax-in-detail"></a>XAML 구문 정보
 이 항목에서는 XAML 구문 요소에 설명 하는 데 사용 되는 용어를 정의 합니다. 이러한 용어는 특히 및 XAML 또는 System.Xaml 수준에서 XAML 언어 지원을 사용 하도록 설정 하는 기본 XAML 개념을 사용 하는 다른 프레임 워크에 대 한 WPF 설명서에 대 한 모두이 문서의 나머지 부분에서 자주 사용 됩니다. 이 항목에서는 확장 항목에 도입 하는 기본 용어 [XAML 개요 (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "42755053"
 ## <a name="the-xaml-language-specification"></a>XAML 언어 사양  
  또한 여기에 정의 된 XAML 구문 용어 정의 되었거나 XAML 언어 사양 내에서 참조 합니다. XAML은 XML 기반 언어 및 또는 XML 구조적 규칙에 따라 확장 합니다. 일부의 용어를 공유 하거나 XML 언어 또는 XML 문서 개체 모델을 설명 하는 경우 일반적으로 사용 되는 용어를 기반으로 합니다.  
   
- XAML 언어 사양에 대 한 자세한 내용은 다운로드 [ \[MS XAML\] ](http://go.microsoft.com/fwlink/?LinkId=114525) Microsoft 다운로드 센터에서.  
+ XAML 언어 사양에 대 한 자세한 내용은 다운로드 [ \[MS XAML\] ](https://go.microsoft.com/fwlink/?LinkId=114525) Microsoft 다운로드 센터에서.  
   
 <a name="xaml_and_clr"></a>   
 ## <a name="xaml-and-clr"></a>XAML 및 CLR  

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a5333e19-8e55-4aa9-82dc-ca8745e516ed
-ms.openlocfilehash: 4cda3ce3bcae7741df66496c87ba6654e0bbfe6e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c164490464d839dacefaf570c8956bf15caeb7de
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356014"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480544"
 ---
 # <a name="enabling-query-notifications"></a>쿼리 알림 사용
 쿼리 알림을 사용하는 응용 프로그램에는 공통적인 요구 사항이 적용됩니다. SQL 쿼리 알림을 지원하도록 데이터 소스를 올바르게 구성해야 하며, 사용자는 올바른 클라이언트측 및 서버측 권한을 가지고 있어야 합니다.  
@@ -30,26 +30,26 @@ ms.locfileid: "33356014"
   
  **SQL Server 온라인 설명서**  
   
--   [알림에 대 한 쿼리 만들기](http://msdn.microsoft.com/library/ms181122.aspx)  
+-   [알림에 대 한 쿼리 만들기](https://msdn.microsoft.com/library/ms181122.aspx)  
   
--   [Service Broker에 대 한 보안 고려 사항](http://msdn.microsoft.com/library/ms166059.aspx)  
+-   [Service Broker에 대 한 보안 고려 사항](https://msdn.microsoft.com/library/ms166059.aspx)  
   
--   [보안 및 보호 (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
+-   [보안 및 보호 (Service Broker)](https://msdn.microsoft.com/library/bb522911.aspx)  
   
--   [알림 서비스에 대 한 보안 고려 사항](http://msdn.microsoft.com/library/ms172604.aspx)  
+-   [Notifications Services에 대 한 보안 고려 사항](https://msdn.microsoft.com/library/ms172604.aspx)  
   
--   [쿼리 알림 사용 권한](http://msdn.microsoft.com/library/ms188311.aspx)  
+-   [쿼리 알림 권한](https://msdn.microsoft.com/library/ms188311.aspx)  
   
--   [Service Broker에 대 한 국가별 고려 사항](http://msdn.microsoft.com/library/ms166028.aspx)  
+-   [Service Broker에 대 한 국가별 고려 사항](https://msdn.microsoft.com/library/ms166028.aspx)  
   
--   [솔루션 디자인 고려 사항 (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
+-   [솔루션 디자인 고려 사항 (Service Broker)](https://msdn.microsoft.com/library/bb522899.aspx)  
   
--   [Service Broker 개발자 정보 센터](http://msdn.microsoft.com/library/ms166100.aspx)  
+-   [Service Broker 개발자 정보 센터](https://msdn.microsoft.com/library/ms166100.aspx)  
   
--   [개발자 가이드 (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+-   [Developer's Guide (Service Broker)](https://msdn.microsoft.com/library/bb522908.aspx)  
   
 ## <a name="enabling-query-notifications-to-run-sample-code"></a>쿼리 알림 활성화 샘플 코드  
- Service Broker를 사용 하도록 설정 하는 **AdventureWorks** SQL Server Management Studio를 사용 하 여 데이터베이스에서 다음 TRANSACT-SQL 문을 실행 합니다.  
+ Service Broker를 사용 하도록 설정 합니다 **AdventureWorks** SQL Server Management Studio를 사용 하 여 데이터베이스에서 다음 TRANSACT-SQL 문을 실행 합니다.  
   
  `ALTER DATABASE AdventureWorks SET ENABLE_BROKER;`  
   
@@ -86,4 +86,4 @@ CREATE SERVICE ContactChangeNotifications
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server에서 쿼리 알림](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

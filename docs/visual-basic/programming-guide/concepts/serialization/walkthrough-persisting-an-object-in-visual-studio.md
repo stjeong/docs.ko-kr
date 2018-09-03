@@ -2,12 +2,12 @@
 title: Visual Studio (Visual Basic)에서 개체 유지
 ms.date: 07/20/2015
 ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
-ms.openlocfilehash: 2523aefc90e22fe79f22e90d8da68c35c8dd24b0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 25951327028b9b8ced8506b3ba6395e8c9e6abed
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33655612"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483686"
 ---
 # <a name="walkthrough-persisting-an-object-in-visual-studio-visual-basic"></a>연습: Visual Studio에서 개체 유지(Visual Basic)
 디자인 타임에 개체의 속성을 기본값으로 설정할 수 있지만, 런타임에 입력한 값은 개체가 소멸될 때 손실됩니다. serialization을 사용하면 인스턴스 간에 개체의 데이터를 유지할 수 있으므로, 다음에 개체를 인스턴스화할 때 값을 저장하고 검색할 수 있습니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "33655612"
   
 ### <a name="to-create-the-loan-class"></a>Loan 클래스를 만들려면  
   
-1.  새 클래스 라이브러리 프로젝트를 만들고 "LoanClass"라는 이름을 지정합니다. 자세한 내용은 [솔루션 및 프로젝트 만들기](http://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)를 참조하세요.  
+1.  새 클래스 라이브러리 프로젝트를 만들고 "LoanClass"라는 이름을 지정합니다. 자세한 내용은 [솔루션 및 프로젝트 만들기](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)를 참조하세요.  
   
 2.  **솔루션 탐색기**에서 Class1 파일에 대한 바로 가기 메뉴를 열고 **이름 바꾸기**를 선택합니다. 파일 이름을 `Loan`으로 바꾸고 ENTER 키를 누릅니다. 파일 이름을 바꾸면 클래스 이름도 `Loan`으로 바뀝니다.  
   

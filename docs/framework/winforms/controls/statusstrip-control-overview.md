@@ -7,12 +7,12 @@ helpviewer_keywords:
 - StatusStrip control [Windows Forms], about StatusStrip control
 - status bars [Windows Forms], about status bars
 ms.assetid: c0d9bcbb-f8b8-46ef-bae2-4146b8c8ce99
-ms.openlocfilehash: b915be2db6865a95d2d37afda58983dbb2edca27
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e40373dd05e59325cdb6c2272d5749f3828b0755
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33537910"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43488315"
 ---
 # <a name="statusstrip-control-overview"></a>StatusStrip 컨트롤 개요
 <xref:System.Windows.Forms.StatusStrip> 컨트롤은 <xref:System.Windows.Forms.Form>에 표시되는 개체, 개체의 구성 요소 또는 응용 프로그램 내에서 해당 개체의 작업과 관련된 컨텍스트 정보에 대한 정보를 표시합니다. 일반적으로 <xref:System.Windows.Forms.StatusStrip> 컨트롤은 각각 텍스트, 아이콘 또는 둘 다를 표시하는 <xref:System.Windows.Forms.ToolStripStatusLabel> 개체로 구성됩니다. <xref:System.Windows.Forms.StatusStrip>에 <xref:System.Windows.Forms.ToolStripDropDownButton>, <xref:System.Windows.Forms.ToolStripSplitButton> 및 <xref:System.Windows.Forms.ToolStripProgressBar> 컨트롤이 포함될 수도 있습니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "33537910"
   
  Visual Studio에서는 <xref:System.Windows.Forms.StatusStrip> 항목 및 일반적인 명령 처리가 광범위하게 지원됩니다.  
   
- 또한 참조 [StatusStrip 항목 컬렉션 편집기](http://msdn.microsoft.com/library/ms233631\(v=vs.110\)), [StatusStrip 작업 대화 상자](http://msdn.microsoft.com/library/ms233642\(v=vs.110\))합니다.  
+ 도 참조 하세요 [StatusStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/ms233631\(v=vs.110\))하십시오 [StatusStrip 작업 대화 상자](https://msdn.microsoft.com/library/ms233642\(v=vs.110\))합니다.  
   
  <xref:System.Windows.Forms.StatusStrip>은 이전 버전의 <xref:System.Windows.Forms.StatusBar> 컨트롤을 대체하고 확장하지만 이전 버전과의 호환성 및 앞으로의 사용 가능성을 고려하여 <xref:System.Windows.Forms.StatusBar>를 유지하도록 선택할 수 있습니다.  
   

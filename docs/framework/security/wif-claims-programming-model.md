@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 149cb875-9b1c-4695-b88a-fbf1725a02f9
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 71327fb5a86c30d15ff060eff5cce170695e86a9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e70958ab20ff70462e7301630b36db3df79fd13e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33408969"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43479908"
 ---
 # <a name="wif-claims-programming-model"></a>WIF 클레임 프로그래밍 모델
 ASP.NET 및 WCF(Windows Communication Foundation) 개발자는 일반적으로 사용자의 ID 정보 작업에 IIdentity 및 IPrincipal 인터페이스를 사용합니다. .NET 4.5에서는 다음 다이어그램과 같이 이제 모든 보안 주체에 대한 클레임이 항상 표시되도록 WIF(Windows Identity Foundation)가 통합되었습니다.  
@@ -20,11 +20,11 @@ ASP.NET 및 WCF(Windows Communication Foundation) 개발자는 일반적으로 �
   
  클레임은 <xref:System.Security.Claims.Claim> 클래스로 표현됩니다. 이 클래스에는 다음과 같은 중요한 속성이 있습니다.  
   
--   <xref:System.Security.Claims.Claim.Type%2A>은 클레임 형식을 나타내며 일반적으로 URI입니다. 예를 들어, 전자 메일 주소 클레임으로 나타납니다 `http://schemas.microsoft.com/ws/2008/06/identity/claims/email`합니다.  
+-   <xref:System.Security.Claims.Claim.Type%2A>은 클레임 형식을 나타내며 일반적으로 URI입니다. 예를 들어 전자 메일 주소 클레임은 라고 `http://schemas.microsoft.com/ws/2008/06/identity/claims/email`합니다.  
   
--   <xref:System.Security.Claims.Claim.Value%2A>에는 클레임 값이 포함되며 문자열로 표현됩니다. 전자 메일 주소도 나타낼 수는 예를 들어 "someone@contoso.com"입니다.  
+-   <xref:System.Security.Claims.Claim.Value%2A>에는 클레임 값이 포함되며 문자열로 표현됩니다. 으로 전자 메일 주소를 나타낼 수 예를 들어, "someone@contoso.com"입니다.  
   
--   <xref:System.Security.Claims.Claim.ValueType%2A>은 클레임 값 형식을 나타내며 일반적으로 URI입니다. 예를 들어 문자열 형식은 `http://www.w3.org/2001/XMLSchema#string`으로 표현됩니다. 값 형식은 XML 스키마에 따라 QName이어야 합니다. WIF에서 유효한 QName 값을 출력할 수 있게 하려면 값이 `namespace#format` 형식이어야 합니다. 네임스페이스가 잘 정의된 네임스페이스가 아닐 경우 해당 네임스페이스에 대해 게시된 XSD 파일이 없으므로 생성된 XML의 스키마 유효성이 검사되지 않을 수 있습니다. 기본값 형식은 `http://www.w3.org/2001/XMLSchema#string`입니다. 참조 하십시오 [ http://www.w3.org/2001/XMLSchema ](http://go.microsoft.com/fwlink/?LinkId=209155) 안전 하 게 사용할 수 있는 잘 알려진 값 형식에 대 한 합니다.  
+-   <xref:System.Security.Claims.Claim.ValueType%2A>은 클레임 값 형식을 나타내며 일반적으로 URI입니다. 예를 들어 문자열 형식은 `http://www.w3.org/2001/XMLSchema#string`으로 표현됩니다. 값 형식은 XML 스키마에 따라 QName이어야 합니다. WIF에서 유효한 QName 값을 출력할 수 있게 하려면 값이 `namespace#format` 형식이어야 합니다. 네임스페이스가 잘 정의된 네임스페이스가 아닐 경우 해당 네임스페이스에 대해 게시된 XSD 파일이 없으므로 생성된 XML의 스키마 유효성이 검사되지 않을 수 있습니다. 기본값 형식은 `http://www.w3.org/2001/XMLSchema#string`입니다. 참조 하세요 [ http://www.w3.org/2001/XMLSchema ](https://go.microsoft.com/fwlink/?LinkId=209155) 안전 하 게 사용할 수 있는 잘 알려진 값 형식에 대 한 합니다.  
   
 -   <xref:System.Security.Claims.Claim.Issuer%2A>는 클레임을 발급한 STS(보안 토큰 서비스)의 식별자입니다. `https://sts1.contoso.com/sts` 같은 STS를 나타내는 이름 또는 STS의 URL로 나타낼 수 있습니다.  
   
@@ -58,7 +58,7 @@ ClaimsPrincipal claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
 |-|-|-|  
 |SAML 1.1|1.  System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope)의 모든 클레임<br />2.  토큰에 증명 토큰이 포함된 경우 확인 키의 XML serialization을 포함하는 `http://schemas.microsoft.com/ws/2008/06/identity/claims/confirmationkey` 클레임<br />3.  Issuer 요소의 `http://schemas.microsoft.com/ws/2008/06/identity/claims/samlissuername` 클레임<br />4.  토큰에 인증 문이 포함된 경우 AuthenticationMethod 및 AuthenticationInstant 클레임|“SAML 1.1”에 나열된 클레임뿐 아니라 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` 형식의 클레임을 제외한 Windows 인증 관련 클레임이 추가되고 ID는 WindowsClaimsIdentity로 표현됩니다.|  
 |SAML 2.0|“SAML 1.1”과 같습니다.|“Windows 계정에 매핑된 SAML 1.1”과 같습니다.|  
-|X509|1.  X500 고유 이름, emailName, dnsName, SimpleName, UpnName, UrlName, 지문, RsaKey(X509Certificate2.PublicKey.Key 속성에서 RSACryptoServiceProvider.ExportParameters 메서드를 사용하여 추출할 수 있음), DsaKey(X509Certificate2.PublicKey.Key 속성에서 DSACryptoServiceProvider.ExportParameters 메서드를 사용하여 추출할 수 있음), X509 인증서의 SerialNumber 속성을 사용하는 클레임<br />2.  값이 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509`인 AuthenticationMethod 클레임 XmlSchema DateTime 형식으로 인증서의 유효성을 검사한 시간 값을 가진 AuthenticationInstant 클레임.|1.  Windows 계정 정규화된 도메인 이름을 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` 클레임 값으로 사용합니다. 이어야 합니다.<br />2.  Windows에 매핑되지 않은 X509 인증서의 클레임 및 인증서를 Windows에 매핑하여 얻은 Windows 계정의 클레임.|  
+|X509|1.  X500 고유 이름, emailName, dnsName, SimpleName, UpnName, UrlName, 지문, RsaKey(X509Certificate2.PublicKey.Key 속성에서 RSACryptoServiceProvider.ExportParameters 메서드를 사용하여 추출할 수 있음), DsaKey(X509Certificate2.PublicKey.Key 속성에서 DSACryptoServiceProvider.ExportParameters 메서드를 사용하여 추출할 수 있음), X509 인증서의 SerialNumber 속성을 사용하는 클레임<br />2.  값이 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509`인 AuthenticationMethod 클레임 XmlSchema DateTime 형식으로 인증서의 유효성을 검사한 시간 값을 가진 AuthenticationInstant 클레임.|1.  Windows 계정 정규화된 도메인 이름을 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` 클레임 값으로 사용합니다. .<br />2.  Windows에 매핑되지 않은 X509 인증서의 클레임 및 인증서를 Windows에 매핑하여 얻은 Windows 계정의 클레임.|  
 |UPN|1.  클레임은 Windows 인증 섹션의 클레임과 유사합니다.<br />2.  값이 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password`인 AuthenticationMethod 클레임 XmlSchema DateTime 형식으로 암호의 유효성을 검사한 시간 값을 가진 AuthenticationInstant 클레임.||  
 |Windows(Kerberos 또는 NTLM)|1.  PrimarySID, DenyOnlyPrimarySID, PrimaryGroupSID, DenyOnlyPrimaryGroupSID, GroupSID, DenyOnlySID, Name 등 액세스 토큰에서 생성된 클레임<br />2.  값이 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows`인 AuthenticationMethod XMLSchema DateTime 형식으로 Windows 액세스 토큰이 생성된 시간 값을 가진 AuthenticationInstant||  
 |RSA 키 쌍|1.  값이 RSAKeyValue인 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa` 클레임<br />2.  값이 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/signature`인 AuthenticationMethod 클레임 XMLSchema DateTime 형식으로 RSA 키가 인증된(즉, 시그니처가 확인된) 시간 값을 가진 AuthenticationInstant 클레임||  

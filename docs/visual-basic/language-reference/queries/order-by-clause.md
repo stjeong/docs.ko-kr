@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Order By statement [Visual Basic]
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
 ms.openlocfilehash: d4abb5f0b75ae4069c1dbe695a5c810b1f7aa6e1
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253583"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43482599"
 ---
 # <a name="order-by-clause-visual-basic"></a>Order By 절(Visual Basic)
 쿼리 결과 대 한 정렬 순서를 지정합니다.  

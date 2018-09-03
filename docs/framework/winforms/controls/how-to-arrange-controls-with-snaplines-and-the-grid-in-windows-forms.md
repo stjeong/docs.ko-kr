@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, grid options in designer
 - controls [Windows Forms], aligning
 ms.assetid: bb54bce5-880f-4a36-af68-8cf92058dc1c
-ms.openlocfilehash: 9b6a4dbf90ea3541c5919ac1d7c8470b6f0dfcc4
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: bbe6ae2adfe364e41f6627e6b067aa8e18e6e079
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253393"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43488083"
 ---
 # <a name="how-to-arrange-controls-with-snaplines-and-the-grid-in-windows-forms"></a>방법: Windows Forms에서 맞춤선과 모눈을 사용하여 컨트롤 정렬
 Visual Studio의 레이아웃 기능을 사용 하 여 컨트롤을 폼에 배치 될 위치를 정확 하 게 지정할 수 있습니다. 컨트롤을 폼에 추가 하거나 폼에 이동 행과 Windows Forms 디자이너 그리드의 열을 자동으로 정렬할 수 있습니다 하거나 맞춤선 기능을 사용 하 여 컨트롤을 정렬할 수 있습니다.  
@@ -25,7 +25,7 @@ Visual Studio의 레이아웃 기능을 사용 하 여 컨트롤을 폼에 배�
   
 -   선택 된 **SnapToGrid** Windows Forms 디자이너에서 레이아웃 모드 **옵션** 대화 상자.  
   
-     자세한 내용은 [Windows Forms 디자이너, 옵션 대화 상자, 일반](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)합니다. 모든 컨트롤 그리드에서 요소에 따라 맞춰집니다.  
+     자세한 내용은 [Windows Forms 디자이너, 옵션 대화 상자, 일반](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)합니다. 모든 컨트롤 그리드에서 요소에 따라 맞춰집니다.  
   
      현재 위치에서이 잠그는 방식으로 개별 컨트롤을 맞출 수 있습니다. 그러나 잠겨 있는 동안 이러한 없습니다 이동 하거나 크기를 조정 합니다. 잠금 컨트롤에 대 한 자세한 내용은 참조 하세요. [방법: Windows Forms에 컨트롤 잠금](../../../../docs/framework/winforms/controls/how-to-lock-controls-to-windows-forms.md)합니다.  
   
@@ -36,7 +36,7 @@ Visual Studio의 레이아웃 기능을 사용 하 여 컨트롤을 폼에 배�
      자세한 내용은 [연습: Windows Forms를 사용 하 여 맞춤선에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)합니다. 이제 폼에서 컨트롤을 정렬 하려면 맞춤선을 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [일반적으로 Windows Forms 디자이너, 옵션 대화 상자](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
+ [일반적으로 Windows Forms 디자이너, 옵션 대화 상자](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
  [연습: Windows Forms에서 맞춤선을 사용하여 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
  [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)  
  [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)  

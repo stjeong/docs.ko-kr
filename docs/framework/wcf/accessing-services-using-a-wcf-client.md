@@ -7,58 +7,60 @@ dev_langs:
 helpviewer_keywords:
 - clients [WCF], consuming services
 ms.assetid: d780af9f-73c5-42db-9e52-077a5e4de7fe
-ms.openlocfilehash: b0bde07dbeb70eaafbde4d90627d245554ad7ca6
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 0678300fca4442cf90dd15c5a4e011d80656eac6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33810111"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43478158"
 ---
 # <a name="accessing-services-using-a-wcf-client"></a>WCF 클라이언트를 사용하여 서비스 액세스
-서비스를 만든 후에 다음 단계에서는 WCF 클라이언트 프록시를 만드는 것입니다. 클라이언트 응용 프로그램 WCF 클라이언트 프록시를 사용 하 여 서비스와 통신 합니다. 클라이언트 응용 프로그램은 일반적으로 서비스를 호출 하는 데 사용할 수 있는 WCF 클라이언트 코드를 생성 하는 서비스의 메타 데이터를 가져옵니다.  
-  
- WCF 클라이언트를 만들기 위한 기본 단계는 다음과 같습니다.  
-  
-1.  서비스 코드를 컴파일합니다.  
-  
-2.  WCF 클라이언트 프록시를 생성 합니다.  
-  
-3.  WCF 클라이언트 프록시를 인스턴스화합니다.  
-  
- 자세한 내용은 참조에 대 한 서비스 모델 메타 데이터 유틸리티 도구 (SvcUtil.exe)를 사용 하 여 WCF 클라이언트 프록시를 수동으로 생성할 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. WCF 클라이언트 프록시는 Visual Studio에서 서비스 참조 추가 기능을 사용하여 생성할 수도 있습니다. 어떤 방법으로 WCF 클라이언트 프록시를 생성하더라도 서비스가 실행되고 있어야 합니다. 자체 호스팅 서비스의 경우 호스트를 실행해야 합니다. 서비스가 IIS/WAS에서 호스트되는 경우에는 별도의 작업이 필요하지 않습니다.  
-  
-## <a name="servicemodel-metadata-utility-tool"></a>ServiceModel Metadata 유틸리티 도구  
- [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 는 메타 데이터에서 코드를 생성 하기 위한 명령줄 도구입니다. 다음 사용은 기본 Svcutil.exe 명령 예제입니다.  
-  
-```  
-Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
-```  
-  
- 또는 Svcutil.exe에 파일 시스템의 WSDL(웹 서비스 기술 언어) 및 XSD(XML 스키마 정의 언어) 파일을 사용할 수도 있습니다.  
-  
-```  
-Svcutil.exe <list of WSDL and XSD files on file system>  
-```  
-  
- 결과 클라이언트 응용 프로그램 서비스를 호출 하는 데 사용할 수 있는 WCF 클라이언트 코드를 포함 하는 코드 파일입니다.  
-  
- 이 도구를 사용하여 구성 파일을 생성할 수도 있습니다.  
-  
-```  
-Svcutil.exe <file1 [,file2]>  
-```  
-  
- 파일 이름을 제공하면 해당 이름이 출력 파일의 이름이 됩니다. 두 개의 파일 이름을 제공하면 첫 번째 파일은 입력 구성 파일로, 해당 내용이 생성된 구성과 병합되어 두 번째 파일에 기록됩니다. 구성에 대 한 자세한 내용은 참조 [서비스에 대 한 바인딩을 구성](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)합니다.  
-  
+
+서비스를 만든 후 다음 단계는 WCF 클라이언트 프록시를 만드는 것입니다. 클라이언트 응용 프로그램 서비스와 통신 하려면 WCF 클라이언트 프록시를 사용 합니다. 클라이언트 응용 프로그램은 일반적으로 서비스를 호출 하는 WCF 클라이언트 코드를 생성 하는 서비스의 메타 데이터를 가져옵니다.
+
+ WCF 클라이언트를 만드는 기본 단계는 다음과 같습니다.
+
+1.  서비스 코드를 컴파일합니다.
+
+2.  WCF 클라이언트 프록시를 생성 합니다.
+
+3.  WCF 클라이언트 프록시를 인스턴스화합니다.
+
+자세한 내용은 서비스 모델 메타 데이터 유틸리티 도구 (SvcUtil.exe)를 사용 하 여 WCF 클라이언트 프록시를 수동으로 생성할 수 있습니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. Visual Studio 내에서 WCF 클라이언트 프록시를 생성할 수도 있습니다를 사용 하 여 **서비스 참조 추가** 기능입니다. 어떤 방법으로 WCF 클라이언트 프록시를 생성하더라도 서비스가 실행되고 있어야 합니다. 자체 호스팅 서비스의 경우 호스트를 실행해야 합니다. 서비스가 IIS/WAS에서 호스트되는 경우에는 별도의 작업이 필요하지 않습니다.
+
+## <a name="servicemodel-metadata-utility-tool"></a>ServiceModel Metadata 유틸리티 도구
+ 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 메타 데이터에서 코드를 생성 하기 위한 명령줄 도구입니다. 다음 사용은 기본 Svcutil.exe 명령 예제입니다.
+
+```
+Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
+```
+
+ 또는 Svcutil.exe에 파일 시스템의 WSDL(웹 서비스 기술 언어) 및 XSD(XML 스키마 정의 언어) 파일을 사용할 수도 있습니다.
+
+```
+Svcutil.exe <list of WSDL and XSD files on file system>
+```
+
+ 클라이언트 응용 프로그램 서비스를 호출 하는 데 사용할 수 있는 WCF 클라이언트 코드를 포함 하는 코드 파일이 생성이 됩니다.
+
+ 이 도구를 사용하여 구성 파일을 생성할 수도 있습니다.
+
+```
+Svcutil.exe <file1 [,file2]>
+```
+
+ 파일 이름을 제공하면 해당 이름이 출력 파일의 이름이 됩니다. 두 개의 파일 이름을 제공하면 첫 번째 파일은 입력 구성 파일로, 해당 내용이 생성된 구성과 병합되어 두 번째 파일에 기록됩니다. 구성에 대 한 자세한 내용은 참조 하세요. [서비스에 대 한 바인딩을 구성](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)합니다.
+
 > [!IMPORTANT]
->  보안되지 않은 메타데이터 요청은 보안되지 않은 네트워크 요청과 동일한 방식으로 특정 위험을 노출합니다. 통신하는 끝점이 실제로 주장되는 끝점인지 확실하지 않을 경우 검색한 정보가 악성 서비스의 메타데이터일 수 있습니다.  
-  
-## <a name="add-service-reference-in-visual-studio"></a>Visual Studio의 서비스 참조 추가  
- WCF 클라이언트 프록시를 포함 하 고 선택 됩니다 프로젝트 마우스 오른쪽 단추로 클릭 실행 중일 때 서비스 **서비스 참조 추가**합니다. 에 **서비스 참조 추가 대화 상자** 형식을 호출 하 고 클릭 하려는 서비스 URL에는 **이동** 단추입니다. 대화 상자에 지정한 주소에서 사용할 수 있는 서비스 목록이 표시됩니다. 서비스 계약 및 사용 가능한 작업 참조 생성된 된 코드에 대 한 네임 스페이스를 지정 하 고, 클릭를 두 번 클릭은 **확인** 단추입니다.  
-  
-## <a name="example"></a>예제  
- 다음 코드 예제에서는 서비스에 대해 만들어진 서비스 계약을 보여 줍니다.  
-  
+> 보안되지 않은 메타데이터 요청은 보안되지 않은 네트워크 요청과 동일한 방식으로 특정 위험을 노출합니다. 통신하는 엔드포인트가 실제로 주장되는 엔드포인트인지 확실하지 않을 경우 검색한 정보가 악성 서비스의 메타데이터일 수 있습니다.
+
+## <a name="add-service-reference-in-visual-studio"></a>Visual Studio의 서비스 참조 추가
+
+ 서비스를 실행 하는 WCF 클라이언트 프록시 포함을 선택 하는 프로젝트 클릭 마우스 오른쪽 단추로 **추가** > **서비스 참조**합니다. 에 **서비스 참조 추가 대화 상자**를 호출 하 고 클릭 하려는 서비스 URL 입력 합니다 **이동** 단추입니다. 대화 상자에 지정한 주소에서 사용할 수 있는 서비스 목록이 표시됩니다. 서비스 계약 및 사용할 수 있는 작업, 생성된 된 코드에 대 한 네임 스페이스를 지정 하 고 클릭를 두 번 클릭 합니다 **확인** 단추입니다.
+
+## <a name="example"></a>예제
+ 다음 코드 예제에서는 서비스에 대해 만들어진 서비스 계약을 보여 줍니다.
+
 ```csharp
 // Define a service contract.
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
@@ -69,7 +71,7 @@ public interface ICalculator
     // Other methods are not shown here.
 }
 ```
-  
+
 ```vb
 ' Define a service contract.
 <ServiceContract(Namespace:="http://Microsoft.ServiceModel.Samples")> _
@@ -79,9 +81,9 @@ Public Interface ICalculator
     ' Other methods are not shown here.
 End Interface
 ```
-  
- ServiceModel Metadata 유틸리티 도구 및 Visual Studio에서 서비스 참조 추가 다음과 같은 WCF 클라이언트 클래스를 생성 합니다. 클래스는 제네릭 <xref:System.ServiceModel.ClientBase%601> 클래스에서 상속되며 `ICalculator` 인터페이스를 구현합니다. 또한 이 도구는 여기에 표시되지 않은 `ICalculator` 인터페이스를 생성합니다.  
-  
+
+ ServiceModel Metadata 유틸리티 도구 및 **서비스 참조 추가** Visual Studio에서 다음 WCF 클라이언트 클래스를 생성 합니다. 클래스는 제네릭 <xref:System.ServiceModel.ClientBase%601> 클래스에서 상속되며 `ICalculator` 인터페이스를 구현합니다. 또한 이 도구는 여기에 표시되지 않은 `ICalculator` 인터페이스를 생성합니다.
+
 ```csharp
 public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
 {
@@ -111,9 +113,9 @@ public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculat
         return base.Channel.Add(n1, n2);
     }
 }
-```  
-  
-```vb  
+```
+
+```vb
 Partial Public Class CalculatorClient
     Inherits System.ServiceModel.ClientBase(Of ICalculator)
     Implements ICalculator
@@ -146,10 +148,10 @@ Partial Public Class CalculatorClient
     End Function
 End Class
 ```
-  
-## <a name="using-the-wcf-client"></a>WCF 클라이언트 사용  
- WCF 클라이언트를 사용 하려면 WCF 클라이언트의 인스턴스를 만들고 다음 코드에 나와 있는 것 처럼 해당 메서드를 호출 합니다.  
-  
+
+## <a name="using-the-wcf-client"></a>WCF 클라이언트 사용
+ WCF 클라이언트를 사용 하려면 WCF 클라이언트의 인스턴스를 만들고 다음 코드에 나와 있는 것 처럼 해당 메서드를 호출 합니다.
+
 ```csharp
 // Create a client object with the given client endpoint configuration.
 CalculatorClient calcClient = new CalculatorClient("CalculatorEndpoint"));
@@ -159,7 +161,7 @@ double value2 = 15.99D;
 double result = calcClient.Add(value1, value2);
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
 ```
-  
+
 ```vb
 ' Create a client object with the given client endpoint configuration.
 Dim calcClient As CalculatorClient = _
@@ -171,25 +173,27 @@ Dim value2 As Double = 15.99D
 Dim result As Double = calcClient.Add(value1, value2)
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 ```
-  
-## <a name="debugging-exceptions-thrown-by-a-client"></a>클라이언트에서 Throw된 예외 디버깅  
- WCF 클라이언트에서 throw 된 많은 예외는 서비스에서 예외로 인해 발생 합니다. 다음은 이를 보여 주는 몇 가지 예입니다.  
-  
--   <xref:System.Net.Sockets.SocketException>: 기존 연결이 원격 호스트에 의해 강제로 닫혔습니다.  
-  
--   <xref:System.ServiceModel.CommunicationException>: 기본 연결이 예기치 않게 닫혔습니다.  
-  
--   <xref:System.ServiceModel.CommunicationObjectAbortedException>: 소켓 연결이 중단되었습니다. 이는 메시지 처리 오류, 원격 호스트에 의해 초과되는 수신 제한 시간 또는 기본 네트워크 리소스 문제로 인해 발생할 수 있습니다.  
-  
- 이러한 형식의 예외가 발생할 때 가장 좋은 문제 해결 방법은 서비스측에 추적 기능을 설정하고 발생한 예외를 확인하는 것입니다. 추적에 대 한 자세한 내용은 참조 [추적](../../../docs/framework/wcf/diagnostics/tracing/index.md) 및 [응용 프로그램 문제 해결에 대 한 추적 사용 하 여](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
- [방법: 이중 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)  
- [방법: 비동기적으로 서비스 작업 호출](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)  
- [방법: 단방향 및 요청-회신 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)  
- [방법: WSE 3.0 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)  
- [생성된 클라이언트 코드 이해](../../../docs/framework/wcf/feature-details/understanding-generated-client-code.md)  
- [방법: XmlSerializer를 사용하여 WCF 클라이언트 응용 프로그램의 시작 시간 개선](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)  
- [클라이언트 런타임 동작 지정](../../../docs/framework/wcf/specifying-client-run-time-behavior.md)  
- [클라이언트 동작 구성](../../../docs/framework/wcf/configuring-client-behaviors.md)
+
+## <a name="debugging-exceptions-thrown-by-a-client"></a>클라이언트에서 Throw된 예외 디버깅
+
+WCF 클라이언트에서 throw 된 많은 예외는 서비스의 예외로 인해 발생 합니다. 다음은 이를 보여 주는 몇 가지 예입니다.
+
+-   <xref:System.Net.Sockets.SocketException>: 기존 연결이 원격 호스트에 의해 강제로 닫혔습니다.
+
+-   <xref:System.ServiceModel.CommunicationException>: 기본 연결이 예기치 않게 닫혔습니다.
+
+-   <xref:System.ServiceModel.CommunicationObjectAbortedException>: 소켓 연결이 중단되었습니다. 이는 메시지 처리 오류, 원격 호스트에 의해 초과되는 수신 제한 시간 또는 기본 네트워크 리소스 문제로 인해 발생할 수 있습니다.
+
+이러한 형식의 예외가 발생할 때 가장 좋은 문제 해결 방법은 서비스측에 추적 기능을 설정하고 발생한 예외를 확인하는 것입니다. 추적에 대 한 자세한 내용은 참조 하세요. [추적](../../../docs/framework/wcf/diagnostics/tracing/index.md) 하 고 [응용 프로그램 문제 해결을 사용 하 여 추적](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [방법: 이중 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [방법: 비동기적으로 서비스 작업 호출](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [방법: 단방향 및 요청-회신 계약을 사용하여 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [방법: WSE 3.0 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [생성된 클라이언트 코드 이해](../../../docs/framework/wcf/feature-details/understanding-generated-client-code.md)
+- [방법: XmlSerializer를 사용하여 WCF 클라이언트 응용 프로그램의 시작 시간 개선](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+- [클라이언트 런타임 동작 지정](../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
+- [클라이언트 동작 구성](../../../docs/framework/wcf/configuring-client-behaviors.md)

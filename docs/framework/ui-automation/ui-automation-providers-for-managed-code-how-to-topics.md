@@ -11,18 +11,18 @@ ms.assetid: 88bc4212-3f4e-4bac-bae0-faef31944b71
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 35fe0d8c3131f150549c042e993532c364e9fe4b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 351f0a2bc35ed1dd90be926e272f6aa3e92e495e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33408075"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43488146"
 ---
 # <a name="ui-automation-providers-for-managed-code-how-to-topics"></a>관리 코드 방법 항목의 UI 자동화 공급자
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
- 이 섹션의 쓰기 작업을 보여 주는 코드 예제가 포함 되어 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 에 대 한 공급자 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 요소입니다.  
+ 이 섹션에는 작성에서 작업을 보여 주는 코드 예제가 포함 되어 있습니다. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 에 대 한 공급자 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 요소입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [서버 쪽 UI 자동화 공급자 노출](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)  

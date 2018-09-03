@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3ea47b8402f1bd2f66c957ff9126c8dff094a7ac
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2a2a27f788fa84c41ccb818266fffc816237bb48
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397756"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486950"
 ---
 # <a name="net-native-reflection-api-reference"></a>.NET 네이티브 리플렉션 API 참조
 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 에는 새 예외 형식인 [System.Runtime.CompilerServices.MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), [System.Reflection.MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)및 [System.Reflection.MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)이 포함됩니다. 세 가지 예외 형식 모두에 대해 다음 사항을 확인하세요.  
@@ -25,7 +25,7 @@ ms.locfileid: "33397756"
 -   메서드의 경우 [MissingMetadataException 문제 해결사](http://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
   
 > [!NOTE]
->  이 참조는 [!INCLUDE[net_native](../../../includes/net-native-md.md)]에 고유한 세 가지 예외 형식을 설명합니다. .NET Framework 핵심 리플렉션 API에 대한 참조 설명서는 [System.Reflection 네임스페이스](http://msdn.microsoft.com/library/gg145033.aspx)를 참조하세요. .NET Framework 핵심 interop API에 대한 참조 설명서는 <xref:System.Runtime.InteropServices>를 참조하세요.  
+>  이 참조는 [!INCLUDE[net_native](../../../includes/net-native-md.md)]에 고유한 세 가지 예외 형식을 설명합니다. .NET Framework 핵심 리플렉션 API에 대 한 참조 설명서를 참조 하세요 [System.Reflection 네임 스페이스](https://msdn.microsoft.com/library/gg145033.aspx)합니다. .NET Framework 핵심 interop API에 대한 참조 설명서는 <xref:System.Runtime.InteropServices>를 참조하세요.  
   
 ## <a name="systemreflection-namespace"></a>System.Reflection 네임스페이스  
  <xref:System.Reflection> 네임스페이스에는 .NET Framework의 리플렉션에 사용되는 핵심 형식이 포함되어 있습니다. [!INCLUDE[net_native](../../../includes/net-native-md.md)]의 경우에는 두 가지 새 예외 형식도 포함됩니다.  

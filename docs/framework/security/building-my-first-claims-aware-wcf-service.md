@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: e0e6d091-9a97-4888-8f2c-cbcee42d90ee
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 3b88835cc7836d9d6c323de3c0386b3f4c7c3078
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6dd9ad2a09c7fa587ec82df002d36ed258811fb9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399615"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483923"
 ---
 # <a name="building-my-first-claims-aware-wcf-service"></a>내 첫 번째 클레임 인식 WCF 서비스 구축
 ## <a name="applies-to"></a>적용 대상  
@@ -33,13 +33,13 @@ ms.locfileid: "33399615"
   
  STS는 성공적으로 인증되면 토큰을 발급하는 서비스입니다. Microsoft는 다음과 같은 두 가지 업계 표준 STS를 제공합니다.  
   
--   [Active Directory Federation Services (AD FS) 2.0](http://go.microsoft.com/fwlink/?LinkID=247516) 드 (http://go.microsoft.com/fwlink/?LinkID=247516)  
+-   [Active Directory Federation Services (AD FS) 2.0](https://go.microsoft.com/fwlink/?LinkID=247516)
   
--   [Windows Azure 액세스 제어 서비스 (ACS)](http://go.microsoft.com/fwlink/?LinkID=247517) (http://go.microsoft.com/fwlink/?LinkID=247517)합니다.  
+-   [Windows Azure Access Control Service (ACS)](https://go.microsoft.com/fwlink/?LinkID=247517)
   
- ADFS 2.0은 Windows Server R2에 속하며, 온-프레미스 시나리오의 STS로 사용할 수 있습니다. Azure Active Directory 액세스 제어(액세스 제어 서비스 또는 ACS라고도 함)는 Microsoft Azure의 일부로 제공되는 클라우드 서비스입니다. 테스트 또는 교육용으로 클레임 인식 응용 프로그램을 작성하기 위해 다른 STS를 사용할 수도 있습니다. 예를 들어의 일부인 로컬 개발 STS를 사용할 수 있습니다는 [Id 및 액세스 도구 Visual Studio 용](http://go.microsoft.com/fwlink/?LinkID=245849) (http://go.microsoft.com/fwlink/?LinkID=245849) 온라인 무료로 제공 되 합니다.  
+ ADFS 2.0은 Windows Server R2에 속하며, 온-프레미스 시나리오의 STS로 사용할 수 있습니다. Azure Active Directory Access Control(Access Control Service 또는 ACS라고도 함)는 Microsoft Azure의 일부로 제공되는 클라우드 서비스입니다. 테스트 또는 교육용으로 클레임 인식 응용 프로그램을 작성하기 위해 다른 STS를 사용할 수도 있습니다. 일부인 로컬 개발 STS를 사용할 수는 예를 들어, 합니다 [Id 및 액세스 도구 Visual Studio 용](https://go.microsoft.com/fwlink/?LinkID=245849) 사용할 수 있는 무료 온라인입니다.  
   
- WIF를 사용 하 여 첫 번째 클레임 인식 WCF 서비스를 작성 하려면 참조 [방법: WCF 웹 서비스 응용 프로그램의 WIF를 사용 하도록 설정](../../../docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md)합니다.
+ WIF를 사용 하 여 첫 번째 클레임 인식 WCF 서비스를 빌드하려면 참조 [방법: WCF 웹 서비스 응용 프로그램에 대 한 WIF 사용](../../../docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md)합니다.
   
 ## <a name="see-also"></a>참고 항목  
  [WIF 시작](../../../docs/framework/security/getting-started-with-wif.md)

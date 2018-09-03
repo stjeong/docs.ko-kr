@@ -2,15 +2,15 @@
 title: 디버깅 지원
 ms.date: 03/30/2017
 ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
-ms.openlocfilehash: 58eb4961a31dd51aca3addc1f5aad441b2f8b51a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 70823d7480d59f96f3f8f4ad2b28102917ec2d80
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33361775"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486531"
 ---
 # <a name="debugging-support"></a>디버깅 지원
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트에 대해 일반 디버깅을 지원합니다.  또한 참조 [LINQ 디버깅](http://msdn.microsoft.com/library/Bb385795\(v=vs.110\)) 또는 [LINQ 디버깅](http://msdn.microsoft.com/library/Bb385795\(v=vs.120\))합니다.  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트에 대해 일반 디버깅을 지원합니다.  도 참조 하세요 [LINQ 디버깅](/visualstudio/debugger/debugging-linq) 하거나 [LINQ 디버깅](/visualstudio/debugger/debugging-linq)합니다.  
   
  또한 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 SQL 코드를 볼 수 있는 특수 도구를 제공합니다. 자세한 내용은 이 단원의 해당 항목을 참조하세요.  
   

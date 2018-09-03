@@ -8,32 +8,32 @@ helpviewer_keywords:
 - binding data [WPF], creating
 - data binding [WPF], creating
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0
-ms.openlocfilehash: 62c5610bf5590594f34a3401b9397bb17d23f5ab
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2d13650cb3e9a4e97a6642992b7211f323b9ea96
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33556681"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483023"
 ---
 # <a name="how-to-create-a-binding-in-code"></a>방법: 코드에서 바인딩 만들기
 만들고 설정 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Data.Binding> 코드에서입니다.  
   
 ## <a name="example"></a>예제  
- <xref:System.Windows.FrameworkElement> 클래스 및 <xref:System.Windows.FrameworkContentElement> 둘 다 노출 하는 클래스는 `SetBinding` 메서드. 이러한 클래스 중 하나를 상속 하는 요소에 바인딩하는 경우 호출할 수 있습니다는 <xref:System.Windows.FrameworkElement.SetBinding%2A> 메서드를 직접 합니다.  
+ 합니다 <xref:System.Windows.FrameworkElement> 클래스 및 <xref:System.Windows.FrameworkContentElement> 둘 다 노출 하는 클래스를 `SetBinding` 메서드. 이러한 클래스 중 하나를 상속 하는 요소에 바인딩하는 경우 호출할 수 있습니다는 <xref:System.Windows.FrameworkElement.SetBinding%2A> 메서드를 직접.  
   
- 다음 예제에서는 명명 된 인스턴스인지 클래스 `MyData`, 라는 속성이 포함 된 `MyDataProperty`합니다.  
+ 다음 예제에서는 라는 클래스를 만듭니다 `MyData`에 라는 속성이 포함 된 `MyDataProperty`합니다.  
   
  [!code-csharp[CodeOnlyBinding#DataObject](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/MyData.cs#dataobject)]
  [!code-vb[CodeOnlyBinding#DataObject](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/MyData.vb#dataobject)]  
   
- 다음 예제에서는 바인딩의 원본을 설정 하려면 바인딩 개체를 만드는 방법을 보여 줍니다.  이 예에서는 사용 <xref:System.Windows.FrameworkElement.SetBinding%2A> 바인딩할는 <xref:System.Windows.Controls.TextBlock.Text%2A> 속성 `myText`, 변수인는 <xref:System.Windows.Controls.TextBlock> 컨트롤과 `MyDataProperty`합니다.  
+ 다음 예제에서는 바인딩의 원본을 설정 하려면 바인딩 개체를 만드는 방법을 보여 줍니다.  예제에서는 <xref:System.Windows.FrameworkElement.SetBinding%2A> 바인딩할 합니다 <xref:System.Windows.Controls.TextBlock.Text%2A> 속성을 `myText`는 <xref:System.Windows.Controls.TextBlock> 컨트롤에 `MyDataProperty`.  
   
  [!code-csharp[CodeOnlyBinding#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/binding.cs#1)]
  [!code-vb[CodeOnlyBinding#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/App.vb#1)]  
   
- 전체 코드 샘플을 보려면 [코드 전용 Binding 샘플](http://msdn.microsoft.com/library/764aaf0b-2216-4941-9548-9c98da18d1a6)합니다.  
+ 전체 코드 샘플을 보려면 [코드 전용 Binding 샘플](https://msdn.microsoft.com/library/764aaf0b-2216-4941-9548-9c98da18d1a6)합니다.  
   
- 호출 하는 대신 <xref:System.Windows.FrameworkElement.SetBinding%2A>를 사용할 수 있습니다는 <xref:System.Windows.Data.BindingOperations.SetBinding%2A> 의 정적 메서드는 <xref:System.Windows.Data.BindingOperations> 클래스입니다. 다음 예제에서는 호출 <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType> 대신 <xref:System.Windows.FrameworkElement.SetBinding%2A?displayProperty=nameWithType> 바인딩할 `myText` 를 `myDataProperty`합니다.  
+ 호출 하는 대신 <xref:System.Windows.FrameworkElement.SetBinding%2A>를 사용할 수는 <xref:System.Windows.Data.BindingOperations.SetBinding%2A> 의 정적 메서드는 <xref:System.Windows.Data.BindingOperations> 클래스입니다. 다음 예에서는 호출 <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType> of <xref:System.Windows.FrameworkElement.SetBinding%2A?displayProperty=nameWithType> 바인딩할 `myText` 에 `myDataProperty`입니다.  
   
  [!code-csharp[CodeOnlyBinding#BOSetBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/binding.cs#bosetbinding)]
  [!code-vb[CodeOnlyBinding#BOSetBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/App.vb#bosetbinding)]  
