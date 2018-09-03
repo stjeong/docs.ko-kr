@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/08/2018
-ms.openlocfilehash: c1324eafc9dc0286128e8e942f95ad7c4c0a5d98
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 59db9cdb894f76f54e77732be47dc6140a594121
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874938"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484688"
 ---
 # <a name="implement-resilient-entity-framework-core-sql-connections"></a>복원력 있는 Entity Framework Core SQL 연결 구현
 
@@ -94,4 +94,5 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem
     <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
 
 >[!div class="step-by-step"]
-[이전](implement-retries-exponential-backoff.md) [다음](explore-custom-http-call-retries-exponential-backoff.md)
+[이전](implement-retries-exponential-backoff.md)
+[다음](explore-custom-http-call-retries-exponential-backoff.md)

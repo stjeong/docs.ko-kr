@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unchecked keyword [C#]
 ms.assetid: 0c021f7c-923f-4b3d-a58f-55336f5ac27e
-ms.openlocfilehash: d7a48950b7158be3cd589c20fbfe0661f3c9c5af
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: daccd7916a9f81f26f468ab0f64833d9537cff8e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267982"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43415778"
 ---
 # <a name="unchecked-c-reference"></a>unchecked(C# 참조)
 `unchecked` 키워드는 정수 형식 산술 연산 및 변환에 대한 오버플로 검사를 비활성화하는 데 사용됩니다.  
@@ -35,9 +35,10 @@ ms.locfileid: "33267982"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [Checked 및 Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
- [checked](../../../csharp/language-reference/keywords/checked.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [Checked 및 Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
+- [checked](../../../csharp/language-reference/keywords/checked.md)

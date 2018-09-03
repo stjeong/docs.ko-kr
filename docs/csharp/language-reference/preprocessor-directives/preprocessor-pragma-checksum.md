@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#pragma checksum [C#]'
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
-ms.openlocfilehash: 603b56325d7b690a153bd7db41f34621675a4ba6
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 28a9ccfb9d36e648304a177294904ab1b7f18892
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245458"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43419505"
 ---
 # <a name="pragma-checksum-c-reference"></a>#pragma checksum(C# 참조)
 [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] 페이지의 디버그를 돕기 위해 소스 파일에 대한 체크섬을 생성합니다.  
@@ -53,7 +53,8 @@ class TestClass
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)

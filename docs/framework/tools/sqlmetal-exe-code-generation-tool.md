@@ -9,12 +9,12 @@ helpviewer_keywords:
 - LINQ to SQL, DBML files
 - LINQ to SQL, SQLMetal
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-ms.openlocfilehash: c9dab959628343cd99f75ffeda30e3f423f2aaf7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 94ed6328857f6e77cea150d69719322d3aaaea69
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409804"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396924"
 ---
 # <a name="sqlmetalexe-code-generation-tool"></a>SqlMetal.exe(코드 생성 도구)
 SqlMetal 명령줄 도구는 [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] 의 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]구성 요소에 사용할 코드 및 매핑을 생성합니다. 이 항목의 뒷부분에 나오는 옵션을 적용하면 SqlMetal을 통해 다음을 포함하는 다양한 작업을 수행할 수 있습니다.  
@@ -25,7 +25,7 @@ SqlMetal 명령줄 도구는 [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-
   
 -   .dbml 파일에서 코드 및 매핑 특성이나 매핑 파일 생성  
   
- 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 기본적으로 이 파일은 `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin에 있습니다. Visual Studio를 설치하지 않으면 [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=142225)를 다운로드하여 SQLMetal 파일도 가져올 수 있습니다.  
+ 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 기본적으로 이 파일은 `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin에 있습니다. Visual Studio를 설치하지 않으면 [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225)를 다운로드하여 SQLMetal 파일도 가져올 수 있습니다.  
   
 > [!NOTE]
 >  [!INCLUDE[vs_ordesigner_long](../../../includes/vs-ordesigner-long-md.md)] 를 사용하는 개발자는 Visual Studio를 사용하여 엔터티 클래스를 생성할 수도 있습니다. 명령줄 방식을 사용하면 대규모 데이터베이스에 대해 효율적으로 크기를 조정할 수 있습니다. SqlMetal은 명령줄 도구이므로 빌드 프로세스에서 사용할 수 있습니다.  

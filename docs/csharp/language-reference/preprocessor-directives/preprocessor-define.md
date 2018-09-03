@@ -7,11 +7,11 @@ helpviewer_keywords:
 - '#define directive [C#]'
 ms.assetid: 23638b8f-779c-450e-b600-d55682de7d01
 ms.openlocfilehash: 305d52c26fb2592874d06f2c9a75ec63b472a812
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933066"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43387258"
 ---
 # <a name="define-c-reference"></a>#define(C# 참조)
 `#define`을 사용하여 기호를 정의합니다. 기호를 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) 지시문에 전달되는 식으로 사용하는 경우 식이 다음 예제와 같이 `true`로 평가됩니다.  

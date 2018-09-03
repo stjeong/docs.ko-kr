@@ -5,22 +5,22 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 07/18/2016
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
-ms.openlocfilehash: 726a391a4a747e5446e252e669c5b16248a5e0ad
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 48724c65de4fe71294eb5c61c1891d9d56c9b5a4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33217747"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43392974"
 ---
-# <a name="deconstructing-tuples-and-other-types"></a>튜플 및 기타 형식 분해 #
+# <a name="deconstructing-tuples-and-other-types"></a>튜플 및 기타 형식 분해
 
 튜플은 메서드 호출에서 여러 값을 검색할 수 있는 간단한 방법입니다. 하지만 튜플을 검색한 후 튜플의 개별 요소를 처리해야 합니다. 다음 예제와 같이 요소별로 이 작업을 수행하면 번거롭습니다. `QueryCityData` 메서드는 3 튜플을 반환하며 각 튜플 요소가 별도의 작업에서 변수에 할당됩니다.
 
 [!code-csharp[WithoutDeconstruction](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple1.cs)]
 
-개체에서 여러 필드 및 속성 값을 검색하는 작업도 똑같이 번거로울 수 있습니다. 멤버별로 변수에 필드 또는 속성 값을 할당해야 하기 때문입니다. 
+개체에서 여러 필드 및 속성 값을 검색하는 작업도 똑같이 번거로울 수 있습니다. 멤버별로 변수에 필드 또는 속성 값을 할당해야 하기 때문입니다.
 
-C# 7.0부터는 한 번의 *분해* 작업으로 튜플에서 여러 요소를 검색하거나 개체에서 여러 필드, 속성 및 계산 값을 검색할 수 있습니다. 튜플을 분해할 때는 튜플 요소를 개별 변수에 할당하고, 개체를 분해할 때는 선택한 값을 개별 변수에 할당합니다. 
+C# 7.0부터는 한 번의 *분해* 작업으로 튜플에서 여러 요소를 검색하거나 개체에서 여러 필드, 속성 및 계산 값을 검색할 수 있습니다. 튜플을 분해할 때는 튜플 요소를 개별 변수에 할당하고, 개체를 분해할 때는 선택한 값을 개별 변수에 할당합니다.
 
 ## <a name="deconstructing-a-tuple"></a>튜플 분해
 
@@ -37,10 +37,10 @@ var (name, address, city, zip) = contact.GetAddressInfo();
     [!code-csharp[Deconstruction-Explicit](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple2.cs#1)]
 
 - C#에서 각 변수의 형식을 유추하도록 `var` 키워드를 사용할 수 있습니다. `var` 키워드는 괄호 밖에 놓습니다. 다음 예제에서는 `QueryCityData` 메서드에서 반환된 3 튜플을 분해할 때 형식 유추를 사용합니다.
- 
+
     [!code-csharp[Deconstruction-Infer](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple3.cs#1)]
 
-    괄호 안에 일부 또는 모든 변수 선언에 `var` 키워드를 개별적으로 사용할 수도 있습니다. 
+    괄호 안에 일부 또는 모든 변수 선언에 `var` 키워드를 개별적으로 사용할 수도 있습니다.
 
     [!code-csharp[Deconstruction-Infer-Some](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple4.cs#1)]
 
@@ -82,7 +82,7 @@ var (name, address, city, zip) = contact.GetAddressInfo();
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-`Deconstruct` 메서드를 오버로드하여 개체에서 일반적으로 추출되는 데이터 그룹을 반영하려면 먼저 고유하고 명확한 시그니처를 사용하여 `Deconstruct` 메서드를 신중하게 정의해야 합니다. 여러 `Deconstruct` 메서드의 `out` 매개 변수 수가 동일하거나 `out` 매개 변수 수와 형식은 동일하지만 순서가 다른 경우 혼동이 생길 수 있습니다. 
+`Deconstruct` 메서드를 오버로드하여 개체에서 일반적으로 추출되는 데이터 그룹을 반영하려면 먼저 고유하고 명확한 시그니처를 사용하여 `Deconstruct` 메서드를 신중하게 정의해야 합니다. 여러 `Deconstruct` 메서드의 `out` 매개 변수 수가 동일하거나 `out` 매개 변수 수와 형식은 동일하지만 순서가 다른 경우 혼동이 생길 수 있습니다.
 
 다음 예제의 오버로드된 `Deconstruct` 메서드에서는 가능한 혼동 원인 중 하나를 보여 줍니다. 첫 번째 오버로드는 `Person` 개체의 이름, 중간 이름, 성 및 나이를 해당 순서로 반환합니다. 두 번째 오버로드는 연간 소득과 함께 이름 정보만 반환하지만 이름, 중간 이름 및 성의 순서가 다릅니다. 따라서 `Person` 인스턴스를 분해할 때 인수 순서를 혼동하기 쉽습니다.
 
@@ -98,12 +98,13 @@ var (name, address, city, zip) = contact.GetAddressInfo();
 
 ## <a name="deconstructing-a-user-defined-type-with-an-extension-method"></a>확장 메서드를 사용한 사용자 정의 형식 분해
 
-클래스, 구조체 또는 인터페이스의 만든 이가 아니더라도 하나 이상의 `Deconstruct` [확장 메서드](programming-guide/classes-and-structs/extension-methods.md) 구현을 통해 해당 형식의 개체를 분해하여 관심 있는 값을 반환할 수 있습니다. 
+클래스, 구조체 또는 인터페이스의 만든 이가 아니더라도 하나 이상의 `Deconstruct` [확장 메서드](programming-guide/classes-and-structs/extension-methods.md) 구현을 통해 해당 형식의 개체를 분해하여 관심 있는 값을 반환할 수 있습니다.
 
 다음 예제에서는 <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> 클래스에 대한 두 개의 `Deconstruct` 확장 메서드를 정의합니다. 첫 번째 메서드는 속성의 형식, 정적 속성인지 인스턴스 속성인지 여부, 읽기 전용인지 여부, 인덱싱되었는지 여부 등 속성의 특성을 나타내는 값 집합을 반환합니다. 두 번째 메서드는 속성의 접근성을 나타냅니다. get 및 set 접근자의 접근성이 다를 수 있으므로 부울 값은 속성에 별도의 get 및 set 접근자가 있는지 여부와 있는 경우 접근성이 동일한지 여부를 나타냅니다. 접근자가 하나만 있거나 get 및 set 접근자 모두 접근성이 동일한 경우 `access` 변수는 속성 전체의 접근성을 나타냅니다. 그러지 않으면 get 및 set 접근자의 접근성이 `getAccess` 및 `setAccess` 변수로 표시됩니다.
 
 [!code-csharp[Extension-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-extension1.cs)]
- 
+
 ## <a name="see-also"></a>참고 항목
-[무시 항목](discards.md)   
-[튜플](tuples.md)  
+
+- [삭제](discards.md)
+- [튜플](tuples.md)  

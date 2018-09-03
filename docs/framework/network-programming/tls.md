@@ -13,12 +13,12 @@ helpviewer_keywords:
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
 author: blowdart
-ms.openlocfilehash: adde8f3bd387a3e283ae1c3cd69e42b12b443b8c
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: a45d57af1069bba9e3afe8c2e6e6d463115a4e39
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925506"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389779"
 ---
 # <a name="transport-layer-security-tls-best-practices-with-the-net-framework"></a>.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례
 
@@ -231,7 +231,7 @@ Windows Registry Editor Version 5.00
 
 ## <a name="configuring-schannel-protocols-in-the-windows-registry"></a>Windows 레지스트리에서 Schannel 프로토콜 구성
 
-클라이언트 및/또는 서버 앱이 협상하는 프로토콜에 대한 세분화된 제어에 레지스트리를 사용할 수 있습니다. 앱의 네트워킹이 Schannel( [보안 채널](https://msdn.microsoft.com/library/windows/desktop/aa380123)의 다른 이름)을 거칩니다. `Schannel`을 구성하여 앱 동작을 구성할 수 있습니다.
+클라이언트 및/또는 서버 앱이 협상하는 프로토콜에 대한 세분화된 제어에 레지스트리를 사용할 수 있습니다. 앱의 네트워킹이 Schannel( [보안 채널](/windows/desktop/SecAuthN/secure-channel)의 다른 이름)을 거칩니다. `Schannel`을 구성하여 앱 동작을 구성할 수 있습니다.
 
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` 레지스트리 키로 시작합니다. `SSL 2.0`, `SSL 3.0`, `TLS 1.0`, `TLS 1.1` 및 `TLS 1.2` 집합에서 해당 키 아래에 하위 키를 만들 수 있습니다. 각 하위 키 아래에 하위 키 `Client` 및/또는 `Server`를 만들 수 있습니다. `Client` 및 `Server` 아래에 DWORD 값 `DisabledByDefault`(0 또는 1) 및 `Enabled`(0 또는 0xFFFFFFFF)를 만들 수 있습니다.
 
@@ -239,8 +239,8 @@ Windows Registry Editor Version 5.00
 
 사용으로 설정된 경우(기본적으로, `AppContext` 스위치 또는 Windows 레지스트리에서) .NET Framework는 앱이 TLS 보안 프로토콜을 요청할 때 `SCH_USE_STRONG_CRYPTO` 플래그를 사용합니다. `SCH_USE_STRONG_CRYPTO` 플래그는 기본적으로 `AppContext` 스위치 또는 레지스트리와 함께 사용할 수 있습니다. OS는 플래그를 `Schannel`에 전달하여 상호 운용성 향상을 위해 사용하도록 설정될 수 있는, 알려진 약한 암호화 알고리즘, 암호 도구 모음 및 TLS/SSL 프로토콜 버전을 사용하지 않도록 설정하도록 지시합니다. 자세한 내용은 다음을 참조하세요.
 
-- [보안 채널](https://msdn.microsoft.com/library/windows/desktop/aa380123)
-- [SCHANNEL_CRED 구조체](https://msdn.microsoft.com/library/windows/desktop/aa379810)
+- [보안 채널](/windows/desktop/SecAuthN/secure-channel)
+- [SCHANNEL_CRED 구조체](/windows/desktop/api/schannel/ns-schannel-_schannel_cred)
 
 <xref:System.Net.SecurityProtocolType> 또는 <xref:System.Security.Authentication.SslProtocols>의 `Tls`(TLS 1.0), `Tls11` 또는 `Tls12` 열거 값을 명시적으로 사용할 경우 `SCH_USE_STRONG_CRYPTO` 플래그가 `Schannel`에도 전달됩니다.
 

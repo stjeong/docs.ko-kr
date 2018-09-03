@@ -5,12 +5,12 @@ helpviewer_keywords:
 - builds [C#]
 - command line [C#]
 ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
-ms.openlocfilehash: 3cd49a17991f3d7606b0364a83be2b2e30ba0cce
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 4b6dfdbce131371553fc729206de29794266bfbe
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961380"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43482511"
 ---
 # <a name="command-line-build-with-cscexe"></a>csc.exe를 사용한 명령줄 빌드
 명령 프롬프트에서 실행 파일(*csc.exe*)의 이름을 입력하여 C# 컴파일러를 호출할 수 있습니다.
@@ -96,11 +96,12 @@ csc -target:library -out:Something.xyz *.cs
 C# 컴파일러를 호출하면 개체 파일(*.obj*)은 만들어지지 않고 출력 파일이 직접 만들어집니다. 따라서 C# 컴파일러에는 링커가 필요하지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [사전순 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
- [범주별 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
- [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
- [명령줄 인수](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)  
- [방법: 명령줄 인수 표시](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
- [방법: foreach를 사용하여 명령줄 인수 액세스](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)  
- [Main() 반환 값](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [사전순 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
+- [범주별 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
+- [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
+- [명령줄 인수](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)  
+- [방법: 명령줄 인수 표시](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
+- [방법: foreach를 사용하여 명령줄 인수 액세스](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)  
+- [Main() 반환 값](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

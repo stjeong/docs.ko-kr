@@ -6,11 +6,11 @@ helpviewer_keywords:
 - access modifiers [C#], about
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
 ms.openlocfilehash: 4be248b1d86692bd35491e55b1c649cd8428a33b
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42752098"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43406357"
 ---
 # <a name="access-modifiers-c-programming-guide"></a>액세스 한정자(C# 프로그래밍 가이드)
 모든 형식과 형식 멤버에는 사용 중인 어셈블리나 기타 어셈블리의 다른 코드에서 사용될 수 있는지 여부를 제어하는 액세스 가능성 수준이 있습니다. 다음 액세스 한정자를 사용하여 형식 또는 멤버를 선언할 때 해당 항목의 액세스 가능성을 지정할 수 있습니다.  

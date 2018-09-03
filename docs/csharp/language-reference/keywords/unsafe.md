@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsafe keyword [C#]
 ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
-ms.openlocfilehash: c476bdcea4993b27c0e8f8148a985f18a43ba09b
-ms.sourcegitcommit: 89c93d05c2281b4c834f48f6c8df1047e1410980
+ms.openlocfilehash: b4615021a4fc3391ac0ae703b6c97301b44aa60e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2018
-ms.locfileid: "34171956"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43389590"
 ---
 # <a name="unsafe-c-reference"></a>unsafe(C# 참조)
 `unsafe` 키워드는 포인터와 관련된 모든 작업에 필요한 안전하지 않은 컨텍스트를 나타냅니다. 자세한 내용은 [안전하지 않은 코드 및 포인터](../../../csharp/programming-guide/unsafe-code-pointers/index.md)를 참조하세요.  
@@ -49,10 +49,11 @@ unsafe static void FastCopy ( byte* ps, byte* pd, int count ) {...}
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [안전하지 않은 코드 및 포인터](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
- [고정 크기 버퍼](../../../csharp/programming-guide/unsafe-code-pointers/fixed-size-buffers.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [안전하지 않은 코드 및 포인터](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
+- [고정 크기 버퍼](../../../csharp/programming-guide/unsafe-code-pointers/fixed-size-buffers.md)

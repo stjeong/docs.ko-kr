@@ -7,12 +7,12 @@ helpviewer_keywords:
 - struct keyword [C#]
 - structs [C#], struct keyword
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: ddea59e76835ccccd07c299f819796336cddada8
-ms.sourcegitcommit: 89c93d05c2281b4c834f48f6c8df1047e1410980
+ms.openlocfilehash: 7931da2e5f5c493b54eb1f33a1d6f57b38592f6e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2018
-ms.locfileid: "34172151"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43399020"
 ---
 # <a name="struct-c-reference"></a>struct(C# 참조)
 `struct` 형식은 인벤토리의 항목 특성이나 사각형의 좌표와 같은 관련 변수의 소규모 그룹을 캡슐화하는 데 일반적으로 사용되는 값 형식입니다. 다음 예제에서는 간단한 구조체 선언을 보여줍니다.  
@@ -41,14 +41,15 @@ public struct Book
 ## <a name="c-language-specification"></a>C# 언어 사양  
  예제를 보려면 [구조체 사용](../../../csharp/programming-guide/classes-and-structs/using-structs.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [기본값 표](../../../csharp/language-reference/keywords/default-values-table.md)  
- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
- [유형](../../../csharp/language-reference/keywords/types.md)  
- [값 형식](../../../csharp/language-reference/keywords/value-types.md)  
- [class](../../../csharp/language-reference/keywords/class.md)  
- [interface](../../../csharp/language-reference/keywords/interface.md)  
- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [기본값 표](../../../csharp/language-reference/keywords/default-values-table.md)  
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [유형](../../../csharp/language-reference/keywords/types.md)  
+- [값 형식](../../../csharp/language-reference/keywords/value-types.md)  
+- [class](../../../csharp/language-reference/keywords/class.md)  
+- [interface](../../../csharp/language-reference/keywords/interface.md)  
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)

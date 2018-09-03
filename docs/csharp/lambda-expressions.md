@@ -5,12 +5,12 @@ ms.author: ronpet
 author: rpetrusha
 ms.date: 11/22/2016
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
-ms.openlocfilehash: e37f0e72ee02915d16509fb2ff48bd114e8ad466
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2469e8a0fbf8181a720201637ab5ac5ef02055d4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33217976"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400867"
 ---
 # <a name="lambda-expressions"></a>람다 식 #
 
@@ -78,7 +78,7 @@ ms.locfileid: "33217976"
 
 ## <a name="lambda-expressions-and-tuples"></a>람다 식 및 튜플 ##
 
-C# 7.0부터 C# 언어에서 튜플을 기본적으로 지원합니다. 람다 식에 인수로 튜플을 제공할 수 있으며 람다 식에서 튜플을 반환할 수도 있습니다. 경우에 따라 C# 컴파일러는 형식 유추를 사용하여 튜플 구성 요소의 형식을 확인할 수 있습니다. 
+C# 7.0부터 C# 언어에서 튜플을 기본적으로 지원합니다. 람다 식에 인수로 튜플을 제공할 수 있으며 람다 식에서 튜플을 반환할 수도 있습니다. 경우에 따라 C# 컴파일러는 형식 유추를 사용하여 튜플 구성 요소의 형식을 확인할 수 있습니다.
 
 쉼표로 구분된 해당 구성 요소 목록을 괄호로 묶어 튜플을 정의합니다. 다음 예제에서는 5개 구성 요소가 있는 튜플을 사용하여 숫자 시퀀스를 람다 식에 전달하고 각 값을 두 배로 늘린 후 곱하기의 결과가 포함된, 5개 구성 요소가 있는 튜플을 반환합니다.
 
@@ -154,6 +154,6 @@ C#의 튜플 지원에 대한 자세한 내용은 [C# 튜플 형식](tuples.md)�
 
 ## <a name="see-also"></a>참고 항목 ##
 
-[LINQ(Language-Integrated Query)](../standard/using-linq.md)   
-[무명 메서드](programming-guide/statements-expressions-operators/anonymous-methods.md)   
-[식 트리](expression-trees.md)
+- [LINQ(Language-Integrated Query)](../standard/using-linq.md)
+- [무명 메서드](programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [식 트리](expression-trees.md)

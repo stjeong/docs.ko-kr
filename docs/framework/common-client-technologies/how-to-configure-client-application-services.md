@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - client application services, configuring
 ms.assetid: 34a8688a-a32c-40d3-94be-c8e610c6a4e8
-ms.openlocfilehash: 004798ce8cf429f2a94d856e6b3a55447c2ad5fa
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a65c216397f240b77eb81f88d8f2a2da122e1ccf
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744758"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43399240"
 ---
 # <a name="how-to-configure-client-application-services"></a>방법: 클라이언트 응용 프로그램 서비스 구성
-이 항목에서는 Visual Studio **프로젝트 디자이너**를 사용하여 클라이언트 응용 프로그램 서비스를 사용하도록 설정하고 구성하는 방법을 설명합니다. 클라이언트 응용 프로그램 서비스를 사용하면 기존 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스에서 사용자의 유효성을 검사하고 사용자 역할과 설정을 검색할 수 있습니다. 구성 후에는 [클라이언트 응용 프로그램 서비스 개요](../../../docs/framework/common-client-technologies/client-application-services-overview.md)의 설명에 따라 응용 프로그램 코드에서 사용하도록 설정된 서비스에 액세스할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스에 대한 자세한 내용은 [ASP.NET 응용 프로그램 서비스 개요](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)를 참조하세요.  
+이 항목에서는 Visual Studio **프로젝트 디자이너**를 사용하여 클라이언트 응용 프로그램 서비스를 사용하도록 설정하고 구성하는 방법을 설명합니다. 클라이언트 응용 프로그램 서비스를 사용하면 기존 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스에서 사용자의 유효성을 검사하고 사용자 역할과 설정을 검색할 수 있습니다. 구성 후에는 [클라이언트 응용 프로그램 서비스 개요](../../../docs/framework/common-client-technologies/client-application-services-overview.md)의 설명에 따라 응용 프로그램 코드에서 사용하도록 설정된 서비스에 액세스할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스에 대한 자세한 내용은 [ASP.NET 응용 프로그램 서비스 개요](https://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)를 참조하세요.  
   
  **프로젝트 디자이너**의 **서비스** 페이지에서 클라이언트 응용 프로그램 서비스를 사용하도록 설정하고 구성할 수 있습니다. **서비스** 페이지에서 프로젝트 App.config 파일의 값을 업데이트합니다. **프로젝트 디자이너**에 액세스하려면 **프로젝트** 메뉴의 **속성** 명령을 사용합니다. **서비스** 페이지에 대한 자세한 내용은 [프로젝트 디자이너, 서비스 페이지](https://msdn.microsoft.com/library/bb398109)를 참조하세요.  
   
@@ -65,7 +65,7 @@ ms.locfileid: "32744758"
   
 2.  **오프라인으로 로그인할 수 있도록 로컬에 암호 해시 저장**을 선택하거나 선택을 취소합니다. 이 옵션을 선택하면 암호화된 형식의 사용자 암호가 로컬로 캐시됩니다. 이 옵션은 응용 프로그램에 대해 오프라인 모드를 구현하는 경우 적합합니다. 이 옵션을 선택하면 <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> 속성을 `true`로 설정했더라도 사용자의 유효성을 검사할 수 있습니다.  
   
-3.  **서버 쿠키가 만료될 때마다 다시 사용자 로그온**을 선택하거나 선택을 취소합니다. 인증 쿠키는 원격 서비스에서 구성되며 사용자 로그인이 활성 상태로 유지되는 시간을 나타냅니다. 쿠키를 구성하는 방법에 대한 자세한 내용은 [authentication 요소에 대한 forms 요소(ASP.NET 설정 스키마)](http://msdn.microsoft.com/library/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)의 `timeout` 특성을 참조하세요.  
+3.  **서버 쿠키가 만료될 때마다 다시 사용자 로그온**을 선택하거나 선택을 취소합니다. 인증 쿠키는 원격 서비스에서 구성되며 사용자 로그인이 활성 상태로 유지되는 시간을 나타냅니다. 쿠키를 구성하는 방법에 대한 자세한 내용은 [authentication 요소에 대한 forms 요소(ASP.NET 설정 스키마)](https://msdn.microsoft.com/library/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)의 `timeout` 특성을 참조하세요.  
   
      이 옵션을 선택하는 경우 인증 쿠키가 만료된 후 원격 역할 또는 웹 설정 서비스에 액세스하려고 하면 <xref:System.Net.WebException>이 throw됩니다. 이 예외를 처리하고 로그인 대화 상자를 표시하여 사용자의 유효성을 다시 검사할 수 있습니다. 이 동작의 예는 [연습: 클라이언트 응용 프로그램 서비스 사용](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)을 참조하세요. 이 옵션은 공공 장소에 배포된 응용 프로그램에서 응용 프로그램을 사용한 후 실행 중인 상태로 유지하는 사용자가 계속 인증된 상태로 유지되지 않도록 하는 데 유용합니다.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "32744758"
 ## <a name="using-custom-providers"></a>사용자 지정 공급자 사용  
  기본적으로 클라이언트 응용 프로그램 서비스 기능은 <xref:System.Web.ClientServices.Providers?displayProperty=nameWithType> 네임스페이스의 공급자를 사용합니다. **프로젝트 디자이너**의 **서비스** 페이지를 사용하여 응용 프로그램을 구성할 때는 이러한 공급자에 대한 참조가 App.config 파일에 추가됩니다. 이러한 기본 공급자는 서버의 해당 공급자에 액세스합니다. 웹 서비스는 <xref:System.Web.Security.SqlMembershipProvider>, <xref:System.Web.Security.SqlRoleProvider> 등의 공급자를 통해 사용자 데이터에 액세스하도록 구성되는 경우가 많습니다.  
   
- 사용자 지정 서비스 공급자를 사용하려면 일반적으로 서버에 액세스하는 모든 클라이언트 응용 프로그램에 변경 내용이 적용되도록 서버 쪽에서 공급자를 변경합니다. 그러나 클라이언트 쪽에서 기본값이 아닌 공급자를 사용하는 옵션도 있습니다. 다음 절차에 나와 있는 대로 프로젝트의 App.config 파일에서 사용자 지정 인증 또는 역할 공급자를 지정할 수 있습니다. 사용자 지정 인증 및 역할 공급자를 만드는 방법에 대한 자세한 내용은 [멤버 자격 공급자 구현](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582) 및 [역할 공급자 구현](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)을 참조하세요. 프로젝트의 `Settings` 클래스(C#에서는 `Properties.Settings.Default`로, Visual Basic에서는 `My.Settings`로 액세스함)를 수정하여 사용자 지정 설정 공급자를 사용할 수도 있습니다. 자세한 내용은 [응용 프로그램 설정 아키텍처](../../../docs/framework/winforms/advanced/application-settings-architecture.md)를 참조하세요.  
+ 사용자 지정 서비스 공급자를 사용하려면 일반적으로 서버에 액세스하는 모든 클라이언트 응용 프로그램에 변경 내용이 적용되도록 서버 쪽에서 공급자를 변경합니다. 그러나 클라이언트 쪽에서 기본값이 아닌 공급자를 사용하는 옵션도 있습니다. 다음 절차에 나와 있는 대로 프로젝트의 App.config 파일에서 사용자 지정 인증 또는 역할 공급자를 지정할 수 있습니다. 사용자 지정 인증 및 역할 공급자를 만드는 방법에 대한 자세한 내용은 [멤버 자격 공급자 구현](https://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582) 및 [역할 공급자 구현](https://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)을 참조하세요. 프로젝트의 `Settings` 클래스(C#에서는 `Properties.Settings.Default`로, Visual Basic에서는 `My.Settings`로 액세스함)를 수정하여 사용자 지정 설정 공급자를 사용할 수도 있습니다. 자세한 내용은 [응용 프로그램 설정 아키텍처](../../../docs/framework/winforms/advanced/application-settings-architecture.md)를 참조하세요.  
   
 #### <a name="to-configure-client-application-services-to-use-non-default-providers"></a>기본값이 아닌 공급자를 사용하여 클라이언트 응용 프로그램 서비스를 구성하려면  
   
@@ -147,7 +147,7 @@ ms.locfileid: "32744758"
  [서비스의 고급 설정 대화 상자](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)  
  [방법: 클라이언트 응용 프로그램 서비스에서 사용자 로그인 구현](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)  
  [연습: 클라이언트 응용 프로그램 서비스 사용](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
- [멤버 자격 공급자 구현](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)  
- [역할 공급자 구현](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)  
+ [멤버 자격 공급자 구현](https://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)  
+ [역할 공급자 구현](https://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)  
  [응용 프로그램 설정 아키텍처](../../../docs/framework/winforms/advanced/application-settings-architecture.md)  
- [SQL Server에 대한 응용 프로그램 서비스 데이터베이스 만들기 및 구성](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)
+ [SQL Server에 대한 응용 프로그램 서비스 데이터베이스 만들기 및 구성](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)

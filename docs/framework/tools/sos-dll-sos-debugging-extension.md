@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 608211221d0f6f6a24b85561cd16fb21e15c336b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0c038b66e4ed62d614a25e717c52fdcc9c5f9a23
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409908"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483790"
 ---
 # <a name="sosdll-sos-debugging-extension"></a>SOS.dll(SOS 디버깅 확장명)
-SOS 디버깅 확장명(SOS.dll)을 사용하면 내부 CLR(공용 언어 런타임) 환경에 대한 정보를 제공하여 관리되는 프로그램을 Windows 디버거(WinDbg.exe)와 Visual Studio에서 쉽게 디버깅할 수 있습니다. 이 도구를 사용하려면 프로젝트에 관리되지 않는 디버깅을 활성화해야 합니다. SOS.dll은 .NET Framework와 함께 자동으로 설치됩니다. Visual Studio에서 SOS.dll을 사용하려면 [WDK(Windows 드라이버 키트)](http://msdn.microsoft.com/windows/hardware/hh852362)를 설치합니다.  
+SOS 디버깅 확장명(SOS.dll)을 사용하면 내부 CLR(공용 언어 런타임) 환경에 대한 정보를 제공하여 관리되는 프로그램을 Windows 디버거(WinDbg.exe)와 Visual Studio에서 쉽게 디버깅할 수 있습니다. 이 도구를 사용하려면 프로젝트에 관리되지 않는 디버깅을 활성화해야 합니다. SOS.dll은 .NET Framework와 함께 자동으로 설치됩니다. Visual Studio에서 SOS.dll을 사용하려면 [WDK(Windows 드라이버 키트)](https://msdn.microsoft.com/windows/hardware/hh852362)를 설치합니다.  
   
 > [!NOTE]
 >  [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]를 사용하는 경우 Visual Studio 내의 Windows 디버거에서 SOS.dll이 지원되지만 Visual Studio 디버거의 직접 실행 창에서는 지원되지 않습니다.  
@@ -89,7 +89,7 @@ SOS 디버깅 확장명(SOS.dll)을 사용하면 내부 CLR(공용 언어 런타
 |**Token2EE** \<*module name*> \<*token*>|지정된 모듈의 지정된 메타데이터 토큰을 `MethodTable` 구조체나 `MethodDesc` 구조체로 전환합니다.<br /><br /> module name 매개 변수에 `*`를 전달하면 로드된 모든 관리되는 모듈에서 해당 토큰이 매핑되는 대상을 확인할 수 있습니다. `mscorlib` 또는 `image00400000`과 같이 모듈의 디버거 이름을 전달할 수도 있습니다.|  
 |**Threads** [**-live**] [**-special**]|프로세스의 관리되는 모든 스레드를 표시합니다.<br /><br /> **Threads** 명령은 디버거 약식 ID, CLR 스레드 ID 및 운영 체제 스레드 ID를 표시합니다.  또한 **Threads** 명령은 스레드가 실행 중인 응용 프로그램 도메인을 나타내는 Domain 열, COM 아파트 모드를 표시하는 APT 열 및 스레드에서 마지막으로 throw된 예외를 표시하는 Exception 열을 표시합니다.<br /><br /> **-live** 옵션은 라이브 스레드와 연결된 스레드를 표시합니다.<br /><br /> **-special** 옵션은 CLR에서 만들어진 모든 특수 스레드를 표시합니다. 특수 스레드에는 가비지 수집 스레드(동시 및 서버 가비지 수집), 디버거 도우미 스레드, 종료자 스레드, <xref:System.AppDomain> 언로드 스레드 및 스레드 풀 타이머 스레드가 포함됩니다.|  
 |**ThreadState \<** *State value field* **>**|스레드의 현재 상태를 표시합니다. `value` 매개 변수는 **Threads** 보고서 출력의 `State` 필드 값입니다.<br /><br /> 예제:<br /><br /> `0:003> !Threads     ThreadCount:      2     UnstartedThread:  0     BackgroundThread: 1     PendingThread:    0     DeadThread:       0     Hosted Runtime:   no                                           PreEmptive   GC Alloc           Lock            ID OSID ThreadOBJ    State     GC       Context       Domain   Count APT Exception        0    1  250 0019b068      a020 Disabled 02349668:02349fe8 0015def0     0 MTA        2    2  944 001a6020      b220 Enabled  00000000:00000000 0015def0     0 MTA (Finalizer)     0:003> !ThreadState b220         Legal to Join         Background         CLR Owns         CoInitialized         In Multi Threaded Apartment`|  
-|**TraverseHeap** [**-xml**] \<*filename*>|힙 정보를 CLR 프로파일러에서 인식할 수 있는 형식으로 지정된 파일에 씁니다. **-xml** 옵션을 사용하면 **TraverseHeap** 명령은 파일을 XML 형식으로 지정합니다.<br /><br /> CLR 프로파일러는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=67325)에서 다운로드할 수 있습니다.|  
+|**TraverseHeap** [**-xml**] \<*filename*>|힙 정보를 CLR 프로파일러에서 인식할 수 있는 형식으로 지정된 파일에 씁니다. **-xml** 옵션을 사용하면 **TraverseHeap** 명령은 파일을 XML 형식으로 지정합니다.<br /><br /> CLR 프로파일러는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkID=67325)에서 다운로드할 수 있습니다.|  
 |**U** [**-gcinfo**] [**-ehinfo**] [**-n**] \<*MethodDesc address*> | \<*Code address*>|메서드의 `MethodDesc` 구조체 포인터나 메서드 본문 내의 코드 주소로 지정된 관리되는 메서드에 대해 주석이 지정된 디스어셈블리를 표시합니다. **U** 명령은 메타데이터 토큰을 이름으로 변환하는 주석과 함께 전체 메서드를 처음부터 끝까지 표시합니다.<br /><br /> **-gcinfo** 옵션을 사용하면 **U** 명령은 메서드의 `GCInfo` 구조체를 표시합니다.<br /><br /> **-ehinfo** 옵션은 메서드에 대한 예외 정보를 표시합니다. **EHInfo** 명령을 사용하여 이 정보를 얻을 수도 있습니다.<br /><br /> **-n** 옵션은 소스 파일 이름과 줄 번호의 표시를 사용하지 않도록 설정합니다. 디버거에 옵션 SYMOPT_LOAD_LINES가 지정된 경우 SOS는 관리되는 모든 프레임에 대한 기호를 조회하고, 성공한 경우, 해당 소스 파일 이름과 줄 번호를 표시합니다. 이 동작을 사용하지 않으려면 **-n** 옵션을 지정할 수 있습니다.|  
 |**VerifyHeap**|가비지 수집기 힙에서 손상된 곳이 있는지 확인하고 찾은 오류를 표시합니다.<br /><br /> 플랫폼 호출이 잘못 구성되면 힙이 손상될 수 있습니다.|  
 |**VerifyObj** \<*object address*>|기호 손상에 대한 인수로 전달되는 개체를 검사합니다.|  
@@ -99,9 +99,9 @@ SOS 디버깅 확장명(SOS.dll)을 사용하면 내부 CLR(공용 언어 런타
 ## <a name="remarks"></a>설명  
  SOS 디버깅 확장을 사용하면 CLR 내에서 실행되는 코드에 대한 정보를 볼 수 있습니다. 예를 들어, SOS 디버깅 확장을 사용하여 관리되는 힙에 대한 정보를 표시하고, 힙 손상을 찾고, 런타임에 사용되는 내부 데이터 형식을 표시하고, 런타임 내에서 실행되는 관리되는 모든 코드에 대한 정보를 볼 수 있습니다.  
   
- Visual Studio에서 SOS 디버깅 확장을 사용하려면 [WDK(Windows 드라이버 키트)](http://msdn.microsoft.com/windows/hardware/hh852362)를 설치합니다. Visual Studio에서 통합된 디버깅 환경에 대한 내용은 Windows 개발자 센터의 [디버깅 환경](http://msdn.microsoft.com/library/windows/hardware/hh406268.aspx)을 참조하세요.  
+ Visual Studio에서 SOS 디버깅 확장을 사용하려면 [WDK(Windows 드라이버 키트)](https://msdn.microsoft.com/windows/hardware/hh852362)를 설치합니다. Visual Studio에서 통합된 디버깅 환경에 대한 내용은 Windows 개발자 센터의 [디버깅 환경](https://msdn.microsoft.com/library/windows/hardware/hh406268.aspx)을 참조하세요.  
   
- 또한 SOS 디버깅 확장은 [WDK 및 개발자 도구 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=103787)에서 제공하는 WinDbg.exe 디버거로 로드하고 WinDbg.exe 내에서 명령을 실행하여 사용할 수도 있습니다.  
+ 또한 SOS 디버깅 확장은 [WDK 및 개발자 도구 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=103787)에서 제공하는 WinDbg.exe 디버거로 로드하고 WinDbg.exe 내에서 명령을 실행하여 사용할 수도 있습니다.  
   
  SOS 디버깅 확장을 WinDbg.exe 디버거에 로드하려면 도구에서 다음 명령을 실행합니다.  
   

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - aliases, extern keyword
 ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
 ms.openlocfilehash: 66210bc1a84e2c3239dcac72cdc194b14dcccf30
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999991"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405449"
 ---
 # <a name="extern-alias-c-reference"></a>extern alias(C# 참조)
 정규화된 형식 이름이 동일한 어셈블리의 두 버전을 참조해야 할 수 있습니다. 예를 들어 동일한 응용 프로그램에서 어셈블리 버전을 두 개 이상 사용해야 할 수 있습니다. 외부 어셈블리 별칭을 사용하면 각 어셈블리의 네임스페이스를 별칭으로 명명된 루트 수준 네임스페이스 내에서 래핑하여 동일한 파일에서 사용하도록 할 수 있습니다.  

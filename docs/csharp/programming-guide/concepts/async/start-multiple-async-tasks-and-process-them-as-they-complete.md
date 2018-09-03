@@ -2,12 +2,12 @@
 title: 비동기 작업을 여러 개 시작하고 완료될 때마다 처리(C#)
 ms.date: 07/20/2015
 ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
-ms.openlocfilehash: 29dc629abae13bb7ba3a9b0cb87300e6d1cbe2d9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d59b65e456c528c63c79c97f6c75c328066be631
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333725"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43416400"
 ---
 # <a name="start-multiple-async-tasks-and-process-them-as-they-complete-c"></a>비동기 작업을 여러 개 시작하고 완료될 때마다 처리(C#)
 <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>를 사용하면 시작된 순서대로 처리하는 대신 동시에 여러 작업을 시작하고 완료 시 하나씩 처리할 수 있습니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "33333725"
  프로젝트를 다운로드하지 않으려는 경우 이 항목의 끝에 있는 MainWindow.xaml.cs 파일을 검토할 수 있습니다.  
   
 ## <a name="building-the-example"></a>예제 빌드  
- 이 예제에서는 [비동기 작업 하나가 완료되면 남은 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)[비동기 작업 하나가 완료되면 남은 비동기 작업 취소](http://msdn.microsoft.com/library/8e800b58-235a-44b7-a02c-fa4375591d76)에서 개발된 코드에 추가하고 동일한 UI를 사용합니다.  
+ 이 예제에서는 [비동기 작업 하나가 완료되면 남은 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)[비동기 작업 하나가 완료되면 남은 비동기 작업 취소](https://msdn.microsoft.com/library/8e800b58-235a-44b7-a02c-fa4375591d76)에서 개발된 코드에 추가하고 동일한 UI를 사용합니다.  
   
  직접 예제를 빌드하려면 "예제 다운로드" 섹션의 지침을 단계별로 따르되, **CancelAfterOneTask**를 **시작 프로젝트**로 선택합니다. 이 항목의 변경 내용을 해당 프로젝트의 `AccessTheWebAsync` 메서드에 추가합니다. 변경 내용은 별표로 표시됩니다.  
   

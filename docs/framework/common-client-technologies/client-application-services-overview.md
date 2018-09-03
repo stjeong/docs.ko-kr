@@ -5,12 +5,12 @@ helpviewer_keywords:
 - client application services, classes
 - client application services, about client application services
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1
-ms.openlocfilehash: 7ec8d2423c8f9d25ef48c0f0cc0d9627864c9c27
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 55d96039f430bece3cda6136d63dbf287e8fc744
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744498"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43408563"
 ---
 # <a name="client-application-services-overview"></a>클라이언트 응용 프로그램 서비스 개요
 클라이언트 응용 프로그램 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 응용 프로그램에서 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스는 [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)] 및 [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]에 포함된 Microsoft ASP.NET 2.0 AJAX 확장에 들어 있습니다. 이 서비스를 통해 여러 웹 응용 프로그램과 Windows 기반 응용 프로그램이 단일 서버에서 사용자 정보와 사용자 관리 기능을 공유할 수 있습니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "32744498"
   
 -   Visual Studio 응용 프로그램 설정 디자이너와의 통합. Visual Studio에서 프로젝트에 설정을 추가할 때 클라이언트 설정 서비스 공급자를 통해 액세스할 설정을 지정할 수 있습니다.  
   
- 다음 섹션에서는 이러한 기능에 대해 자세히 설명합니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스에 대한 자세한 내용은 [ASP.NET 응용 프로그램 서비스 개요](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)를 참조하세요.  
+ 다음 섹션에서는 이러한 기능에 대해 자세히 설명합니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스에 대한 자세한 내용은 [ASP.NET 응용 프로그램 서비스 개요](https://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)를 참조하세요.  
   
 ## <a name="authentication"></a>인증  
  클라이언트 응용 프로그램 서비스를 사용하면 기존의 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 인증 서비스를 통해 사용자의 유효성을 검사할 수 있습니다. Windows 인증이나 폼 인증을 통해 사용자의 유효성을 검사할 수 있습니다. Windows 인증은 사용자 ID가 사용자가 컴퓨터 또는 도메인에 로그온할 때 운영 체제에서 제공한 ID임을 의미합니다. 일반적으로 Windows 인증은 회사 인트라넷에 배포된 응용 프로그램에서 사용합니다. 폼 인증은 응용 프로그램에 로그인 컨트롤을 포함하고 얻은 자격 증명을 인증 공급자에게 전달해야 함을 의미합니다. 일반적으로 양식 인증은 인터넷에 배포된 응용 프로그램에서 사용합니다.  
@@ -40,17 +40,17 @@ ms.locfileid: "32744498"
   
  폼 인증과 함께 자격 증명 공급자를 사용하도록 응용 프로그램을 구성하는 경우 빈 문자열이나 `null`을 <xref:System.Web.Security.Membership.ValidateUser%2A> 메서드의 매개 변수로 전달해야 합니다. 그러면 서비스 공급자가 <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A?displayProperty=nameWithType> 메서드 구현을 호출합니다. 일반적으로 이 메서드는 대화 상자를 표시하고 채워진 <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials> 개체를 반환하기 위해 구현합니다.  
   
- 인증에 대한 자세한 내용은 [ASP.NET 인증](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)을 참조하세요. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 인증 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 양식 인증 사용](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)을 참조하세요.  
+ 인증에 대한 자세한 내용은 [ASP.NET 인증](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)을 참조하세요. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 인증 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 양식 인증 사용](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)을 참조하세요.  
   
 ## <a name="roles"></a>역할  
  클라이언트 응용 프로그램 서비스를 사용하여 기존의 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 역할 서비스에서 역할 정보를 검색할 수 있습니다. 현재 인증된 사용자가 특정 역할에 있는지 여부를 확인하려면 `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> 속성에서 검색된 <xref:System.Security.Principal.IPrincipal> 참조의 <xref:System.Security.Principal.IPrincipal.IsInRole%2A> 메서드를 호출합니다. <xref:System.Security.Principal.IPrincipal.IsInRole%2A> 메서드는 역할 이름을 매개 변수로 받아서 현재 사용자가 지정된 역할에 있는지 여부를 나타내는 <xref:System.Boolean> 값을 반환합니다. 사용자가 인증되지 않았거나 지정된 역할에 없는 경우 이 메서드는 `false`를 반환합니다.  
   
- [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 역할 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 역할 정보 사용](http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d)을 참조하세요.  
+ [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 역할 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 역할 정보 사용](https://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d)을 참조하세요.  
   
 ## <a name="settings"></a>설정  
  클라이언트 응용 프로그램 서비스를 사용하여 기존의 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스에서 사용자 응용 프로그램 설정을 검색할 수 있습니다. 클라이언트 응용 프로그램 서비스 웹 설정 기능은 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)]에서 제공하는 응용 프로그램 설정 기능과 통합됩니다. 웹 설정을 검색하려면 먼저 Visual Studio 프로젝트 디자이너의 **설정** 탭을 사용하여 프로젝트에 대한 `Settings` 클래스(C#에서는 `Properties.Settings.Default`로 액세스되고 Visual Basic에서는 `My.Settings`로 액세스됨)를 생성합니다. **설정** 탭에서 **웹 설정 로드 단추**를 사용하여 웹 설정을 검색하고 생성된 `Settings` 클래스에 추가할 수 있습니다. 모든 인증된 사용자가 사용하거나 모든 익명 사용자가 사용하도록 구성된 웹 설정을 사용할 수 있습니다.  
   
- 응용 프로그램 설정에 대한 자세한 내용은 [응용 프로그램 설정 개요](../../../docs/framework/winforms/advanced/application-settings-overview.md)를 참조하세요. Visual Studio에서 설정 클래스를 생성하는 대신 고유한 설정 클래스를 구현하는 방법에 대한 자세한 내용은 [방법: 응용 프로그램 설정 만들기](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)를 참조하세요. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 프로필 정보 사용](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)을 참조하세요.  
+ 응용 프로그램 설정에 대한 자세한 내용은 [응용 프로그램 설정 개요](../../../docs/framework/winforms/advanced/application-settings-overview.md)를 참조하세요. Visual Studio에서 설정 클래스를 생성하는 대신 고유한 설정 클래스를 구현하는 방법에 대한 자세한 내용은 [방법: 응용 프로그램 설정 만들기](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)를 참조하세요. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 프로필 정보 사용](https://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)을 참조하세요.  
   
 ## <a name="client-application-services-classes"></a>클라이언트 응용 프로그램 서비스 클래스  
  다음 표에서는 클라이언트 응용 프로그램 서비스 기능을 구현하는 클래스에 대해 설명합니다.  
@@ -82,10 +82,10 @@ ms.locfileid: "32744498"
  [방법: 클라이언트 응용 프로그램 서비스에서 사용자 로그인 구현](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)  
  [연습: 클라이언트 응용 프로그램 서비스 사용](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
  [응용 프로그램 설정 개요](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
- [ASP.NET 응용 프로그램 서비스 개요](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)  
- [Microsoft Ajax에서 양식 인증 사용](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)  
- [Microsoft Ajax에서 역할 정보 사용](http://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d)  
- [Microsoft Ajax에서 프로필 정보 사용](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)  
- [ASP.NET 인증](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)  
- [역할을 사용하여 인증 관리](http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195)  
- [SQL Server에 대한 응용 프로그램 서비스 데이터베이스 만들기 및 구성](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)
+ [ASP.NET 응용 프로그램 서비스 개요](https://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013)  
+ [Microsoft Ajax에서 양식 인증 사용](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)  
+ [Microsoft Ajax에서 역할 정보 사용](https://msdn.microsoft.com/library/280f6ad9-ba1a-4fc9-b0cc-22e39e54a82d)  
+ [Microsoft Ajax에서 프로필 정보 사용](https://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)  
+ [ASP.NET 인증](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)  
+ [역할을 사용하여 인증 관리](https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195)  
+ [SQL Server에 대한 응용 프로그램 서비스 데이터베이스 만들기 및 구성](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)

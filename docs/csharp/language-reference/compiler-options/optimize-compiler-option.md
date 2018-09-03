@@ -12,12 +12,12 @@ helpviewer_keywords:
 - compiler optimization [C#]
 - o compiler option [C#]
 ms.assetid: 6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0
-ms.openlocfilehash: 86c8ebb2d2061085be4c00e8ac95448e1c341161
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f8fec2c4da49aa6cac2f8dc1dc9b07c5864b837a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33212464"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43417170"
 ---
 # <a name="-optimize-c-compiler-options"></a>-optimize(C# 컴파일러 옵션)
 **-optimize** 옵션은 컴파일러에서 더 작지만 빠르고 효율적인 출력 파일을 만들기 위해 수행하는 최적화 기능을 사용하거나 사용하지 않도록 설정합니다.  
@@ -57,5 +57,6 @@ csc t2.cs -optimize
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

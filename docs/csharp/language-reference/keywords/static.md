@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - static keyword [C#]
 ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
-ms.openlocfilehash: b7e2981c8832d6ac1744c102d5bde55bbe25c256
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: db12ef80752bba913e6792ccb38f598a664efb0b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37959987"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43397669"
 ---
 # <a name="static-c-reference"></a>static(C# 참조)
 `static` 한정자를 사용하여 특정 개체가 아니라 형식 자체에 속하는 정적 멤버를 선언할 수 있습니다. `static` 한정자는 클래스, 필드, 메서드, 속성, 연산자, 이벤트 및 생성자와 함께 사용할 수 있지만 인덱서, 종료자 또는 클래스 이외의 형식에는 사용할 수 없습니다. 자세한 내용은 [static 클래스 및 static 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)를 참조하세요.  
@@ -60,9 +60,10 @@ Console.WriteLine(MyBaseC.MyStruct.x);
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
- [정적 클래스 및 정적 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
+- [정적 클래스 및 정적 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)

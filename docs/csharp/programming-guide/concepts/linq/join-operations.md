@@ -2,12 +2,12 @@
 title: 조인 작업(C#)
 ms.date: 07/20/2015
 ms.assetid: 5105e0da-1267-4c00-837a-f0e9602279b8
-ms.openlocfilehash: caf93848450bcef35fef492985ef9703321b1dcb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 23d1432d32b22964c333640ccd3ac8dc7a2394d4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325346"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480311"
 ---
 # <a name="join-operations-c"></a>조인 작업(C#)
 두 데이터 소스를 *조인*하는 것은 한 데이터 소스의 개체를 공통 특성을 공유하는 다른 데이터 소스의 개체와 연결하는 것입니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "33325346"
  <xref:System.Linq>  
  [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [익명 형식](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [조인 및 교차곱 쿼리 작성](http://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)  
+ [조인 및 교차곱 쿼리 작성](https://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)  
  [join 절](../../../../csharp/language-reference/keywords/join-clause.md)  
  [방법: 복합 키를 사용하여 조인](../../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)  
  [방법: 서로 다른 파일의 콘텐츠 조인(LINQ)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)  

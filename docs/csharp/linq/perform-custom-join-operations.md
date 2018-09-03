@@ -3,12 +3,12 @@ title: 사용자 지정 조인 작업 수행(C#의 LINQ)
 description: C#에서 사용자 지정 LINQ 조인 작업을 수행하는 방법에 대해 알아봅니다.
 ms.date: 12/1/2016
 ms.assetid: 56a2a4a5-7299-497d-b3c3-23c848678911
-ms.openlocfilehash: 09ed0a202627a07ac8958de6ac46d7dc6c2837d0
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: a0e08396c006f68949357c50a28b3b0982f0dd83
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37403972"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43468112"
 ---
 # <a name="perform-custom-join-operations"></a>사용자 지정 조인 작업 수행
 
@@ -43,6 +43,6 @@ ms.locfileid: "37403972"
 
 ## <a name="see-also"></a>참고 항목
 
-[LINQ(Language-Integrated Query)](index.md)  
-[join 절](../language-reference/keywords/join-clause.md)  
-[Join 절 결과를 서순대로 정렬](order-the-results-of-a-join-clause.md)  
+- [LINQ(Language-Integrated Query)](index.md)  
+- [join 절](../language-reference/keywords/join-clause.md)  
+- [Join 절 결과를 서순대로 정렬](order-the-results-of-a-join-clause.md)  

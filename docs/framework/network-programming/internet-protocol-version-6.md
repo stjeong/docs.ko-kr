@@ -11,12 +11,12 @@ ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 8842bb47ad32ae1e26eaa503398ea91afb7fd1dd
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 2c9b3b1c647d74444fed01e38b65c1b2fe8364c6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43003205"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480950"
 ---
 # <a name="internet-protocol-version-6"></a>인터넷 프로토콜 버전 6
 IPv6(인터넷 프로토콜 버전 6)은 인터넷 네트워크 계층에 대한 새로운 표준 프로토콜 도구 모음입니다. IPv6은 주소 고갈, 보안, 자동 구성, 확장성 등에 관련된 현재 버전 인터넷 프로토콜 도구 모음(IPv4라고 함)의 많은 문제를 해결하도록 설계되었습니다. IPv6은 피어 투 피어 및 모바일 응용 프로그램을 포함한 새로운 종류의 응용 프로그램을 구현하기 위해 인터넷 기능을 확장합니다. 현재 IPv4 프로토콜의 주요 문제는 다음과 같습니다.  
@@ -58,7 +58,7 @@ IPv6(인터넷 프로토콜 버전 6)은 인터넷 네트워크 계층에 대한
   
 -   RFC 2374, An IPv6 Aggregatable Global Unicast Address Format.  
   
- 또한 [Technet의 IPv6 영역](http://go.microsoft.com/fwlink/?LinkID=179658)에서 IPv6 관련 정보를 찾을 수 있습니다.  
+ 또한 [Technet의 IPv6 영역](https://go.microsoft.com/fwlink/?LinkID=179658)에서 IPv6 관련 정보를 찾을 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IPv6 소켓 샘플](https://msdn.microsoft.com/library/ms180981(v=vs.85).aspx)  

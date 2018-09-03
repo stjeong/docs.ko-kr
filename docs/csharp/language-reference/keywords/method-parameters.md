@@ -6,12 +6,12 @@ helpviewer_keywords:
 - method parameters [C#]
 - parameters [C#]
 ms.assetid: 680e39ff-775b-48b0-9f47-4186a5bfc4a1
-ms.openlocfilehash: 8a8d300661eec42030900dd9ee85a17e66aa0922
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 446a5239fa1de8559dea50f7e8b8869aed0297c5
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269348"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43390002"
 ---
 # <a name="method-parameters-c-reference"></a>메서드 매개 변수(C# 참조)
 
@@ -27,7 +27,8 @@ ms.locfileid: "33269348"
   
 -   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md)는 이 매개 변수가 참조로 전달되고 호출된 메서드에 의해 기록되도록 지정합니다.
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)

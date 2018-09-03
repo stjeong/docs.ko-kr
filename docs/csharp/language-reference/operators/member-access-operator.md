@@ -8,12 +8,12 @@ helpviewer_keywords:
 - . operator [C#]
 - dot operator (.) [C#]
 ms.assetid: a1f54b52-b686-4ae5-a48e-a2a9ebd0eb7b
-ms.openlocfilehash: 088f1991cafa92a69e11ca14bd2d983b36c0e3ca
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: a092c1a916e3dc4bf6d96660c532540945e57554
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39244701"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43408009"
 ---
 # <a name="-operator-c-reference"></a>. 연산자(C# 참조)
 점 연산자(`.`)는 멤버 액세스에 사용됩니다. 점 연산자는 형식 또는 네임스페이스의 멤버를 지정합니다. 예를 들어 점 연산자는 .NET Framework 클래스 라이브러리 내의 특정 메서드에 액세스하는 데 사용됩니다.  
@@ -45,7 +45,8 @@ ms.locfileid: "39244701"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)

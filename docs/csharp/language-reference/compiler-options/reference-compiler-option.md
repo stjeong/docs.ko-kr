@@ -13,12 +13,12 @@ helpviewer_keywords:
 - public type information [C#]
 - -reference compiler option [C#]
 ms.assetid: 8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4
-ms.openlocfilehash: 4a96da3668a73368dd98055a9082479f162b7b45
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 76a53d6adcf4c55faa57c25f851e46dd4c2c6c22
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218178"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43393213"
 ---
 # <a name="-reference-c-compiler-options"></a>-reference(C# 컴파일러 옵션)
 **-reference** 옵션을 사용하면 컴파일러가 지정된 파일의 [public](../../../csharp/language-reference/keywords/public.md) 형식 정보를 현재 프로젝트로 가져오므로 지정된 어셈블리 파일의 메타데이터를 참조할 수 있습니다.  
@@ -91,5 +91,6 @@ GridV2::Grid
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

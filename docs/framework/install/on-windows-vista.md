@@ -5,12 +5,12 @@ ms.custom: updateeachrelease
 author: rlander
 ms.author: mairaw
 ms.date: 08/03/2017
-ms.openlocfilehash: 595533b9f7c0dcc766914a1812001772d0ffa247
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c54679292fb8bce16ec572e5a2fee12c1b47292a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397847"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43393928"
 ---
 # <a name="install-the-net-framework-on-windows-vista-and-windows-server-2008"></a>Windows Vista 및 Windows Server 2008에 .NET Framework 설치
 
@@ -18,7 +18,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 
 ![이 응용 프로그램을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
 
-이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows Vista 및 Windows Server 2008에서 지원되지 않습니다. [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
+이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows Vista 및 Windows Server 2008에서 지원되지 않습니다. [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
 
 ## <a name="net-framework-46"></a>.NET Framework 4.6
 
@@ -28,7 +28,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 
 ## <a name="net-framework-35"></a>.NET Framework 3.5
 
-Windows Vista에는 [.NET Framework 3.5](http://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs)를 설치할 수 있습니다.
+Windows Vista에는 [.NET Framework 3.5](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs)를 설치할 수 있습니다.
 
 .NET Framework 3.5는 .NET Framework 1.0~3.5용으로 빌드된 앱을 지원합니다.
 

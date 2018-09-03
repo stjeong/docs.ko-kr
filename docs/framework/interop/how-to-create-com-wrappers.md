@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c4deb355a7b523437ae31a1d2b9c79e3b8d4f40a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e30b1a5a4d3b50c80edaac29cbd6b90f3ddd103b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33391227"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43400505"
 ---
 # <a name="how-to-create-com-wrappers"></a>방법: COM 래퍼 만들기
 [!INCLUDE[vsprvsext](../../../includes/vsprvsext-md.md)] 기능이나 .NET Framework 도구인 Tlbimp.exe 및 Regasm.exe를 사용하여 COM(구성 요소 개체 모델) 래퍼를 만들 수 있습니다. 두 메서드는 모두 COM 래퍼의 두 가지 형식을 생성합니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "33391227"
  이제 COM 개체에 액세스하기 위한 코드를 작성할 수 있습니다. 먼저 [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)]의 경우 `Imports` 문을 사용하고 [!INCLUDE[csprcslong](../../../includes/csprcslong-md.md)]의 경우 `Using` 문을 사용하여 개체를 선언할 수 있습니다.  
   
 > [!NOTE]
->  Microsoft Office 구성 요소를 프로그래밍하려면 먼저 Microsoft 다운로드 센터에서 [Microsoft Office PIA](http://go.microsoft.com/fwlink/?LinkId=50479)(주 Interop 어셈블리)를 설치합니다. 4단계에서는 **Microsoft Word 11.0 개체 라이브러리**와 같이 원하는 Office 제품에 사용 가능한 최신 버전의 개체 라이브러리를 선택합니다.  
+>  Microsoft Office 구성 요소를 프로그래밍하려면 먼저 Microsoft 다운로드 센터에서 [Microsoft Office PIA](https://go.microsoft.com/fwlink/?LinkId=50479)(주 Interop 어셈블리)를 설치합니다. 4단계에서는 **Microsoft Word 11.0 개체 라이브러리**와 같이 원하는 Office 제품에 사용 가능한 최신 버전의 개체 라이브러리를 선택합니다.  
   
 #### <a name="to-create-a-runtime-callable-wrapper-using-net-framework-tools"></a>.NET Framework 도구를 사용하여 런타임 호출 가능 래퍼를 만들려면  
   

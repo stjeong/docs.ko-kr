@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a909b7c940f22e6435fc72a370b8a4ed17d5f937
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: f56ccbf549ce8f1750ba0bf9cf4a945007694258
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925059"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408248"
 ---
 # <a name="net-framework-deployment-guide-for-administrators"></a>관리자를 위한 .NET Framework 배포 가이드
 이 단계별 문서에서는 시스템 관리자가 Microsoft System Center Configuration Manager를 사용하여 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 시스템 종속성을 네트워크 전체에 배포할 수 있는 방법에 대해 설명합니다. 이 문서에서는 .NET Framework 4의 최소 요구 사항이 모든 대상 클라이언트 컴퓨터에서 충족되는 것으로 가정합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 위한 소프트웨어와 하드웨어 요구 사항 목록은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
@@ -20,7 +20,7 @@ ms.locfileid: "42925059"
 > [!NOTE]
 >  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], System Center Configuration Manager 및 Active Directory를 비롯하여 이 문서에서 언급된 소프트웨어에는 각각 사용권 계약 내용이 적용됩니다. 이 지침에서는 적절한 소프트웨어 라이선스로 이러한 사용권 계약 내용을 검토하고 이에 동의했다고 가정합니다. 이 지침에서는 이러한 사용권 계약의 어떠한 내용도 배제하지 않습니다.  
 >   
->  .NET Framework 지원에 대한 자세한 내용은 Microsoft 지원 웹 사이트의 [Microsoft .NET Framework 지원 기간 정책](http://go.microsoft.com/fwlink/?LinkId=196607)을 참조하십시오.  
+>  .NET Framework 지원에 대한 자세한 내용은 Microsoft 지원 웹 사이트의 [Microsoft .NET Framework 지원 기간 정책](https://go.microsoft.com/fwlink/?LinkId=196607)을 참조하십시오.  
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  
   
@@ -37,16 +37,16 @@ ms.locfileid: "42925059"
 ## <a name="the-deployment-process"></a>배포 프로세스  
  지원 인프라가 갖춰진 경우 System Center 2012 Configuration Manager를 사용하여 .NET Framework 재배포 가능 패키지를 네트워크 상의 컴퓨터에 배포합니다. 인프라 구축에는 컬렉션, 소프트웨어에 대한 패키지와 프로그램, 배포 지점, 배포의 5가지 주요 영역을 만들고 정의하는 작업이 포함됩니다.  
   
--   **컬렉션**은 .NET Framework가 배포되는 대상인 사용자, 사용자 그룹 또는 컴퓨터와 같은 Configuration Manager 리소스 그룹입니다. 자세한 내용은 Configuration Manager 문서 라이브러리의 [Configuration Manager의 컬렉션](http://technet.microsoft.com/library/gg682169.aspx)을 참조하세요.  
+-   **컬렉션**은 .NET Framework가 배포되는 대상인 사용자, 사용자 그룹 또는 컴퓨터와 같은 Configuration Manager 리소스 그룹입니다. 자세한 내용은 Configuration Manager 문서 라이브러리의 [Configuration Manager의 컬렉션](https://technet.microsoft.com/library/gg682169.aspx)을 참조하세요.  
   
--   **패키지 및 프로그램**은 보통 클라이언트 컴퓨터에 설치할 소프트웨어 응용 프로그램을 나타내지만, 개별 파일, 업데이트 또는 개별 명령까지도 들어 있을 수 있습니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 패키지와 프로그램](http://technet.microsoft.com/library/gg699369.aspx)을 참조하세요.  
+-   **패키지 및 프로그램**은 보통 클라이언트 컴퓨터에 설치할 소프트웨어 응용 프로그램을 나타내지만, 개별 파일, 업데이트 또는 개별 명령까지도 들어 있을 수 있습니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 패키지와 프로그램](https://technet.microsoft.com/library/gg699369.aspx)을 참조하세요.  
   
--   **배포 지점**은 클라이언트 컴퓨터에서 실행할 소프트웨어에 필요한 파일을 저장하는 Configuration Manager 사이트 시스템 역할입니다. Configuration Manager 클라이언트가 소프트웨어 배포를 수신하고 처리할 때, 이 클라이언트는 배포 지점에 연결하여 소프트웨어와 연결된 콘텐츠를 다운로드하고 설치 프로세스를 시작합니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 콘텐츠 관리 소개](http://technet.microsoft.com/library/gg682083.aspx)를 참조하세요.  
+-   **배포 지점**은 클라이언트 컴퓨터에서 실행할 소프트웨어에 필요한 파일을 저장하는 Configuration Manager 사이트 시스템 역할입니다. Configuration Manager 클라이언트가 소프트웨어 배포를 수신하고 처리할 때, 이 클라이언트는 배포 지점에 연결하여 소프트웨어와 연결된 콘텐츠를 다운로드하고 설치 프로세스를 시작합니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 콘텐츠 관리 소개](https://technet.microsoft.com/library/gg682083.aspx)를 참조하세요.  
   
--   **배포**에서는 지정된 대상 컬렉션의 적절한 멤버에게 소프트웨어 패키지를 설치하라고 지시합니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager에 응용 프로그램을 배포하는 방법](http://technet.microsoft.com/library/gg682082.aspx)을 참조하세요.  
+-   **배포**에서는 지정된 대상 컬렉션의 적절한 멤버에게 소프트웨어 패키지를 설치하라고 지시합니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager에 응용 프로그램을 배포하는 방법](https://technet.microsoft.com/library/gg682082.aspx)을 참조하세요.  
   
 > [!IMPORTANT]
->  이 항목의 절차에는 패키지와 프로그램을 만들고 배포하기 위한 일반적인 설정이 포함되어 있고, 가능한 모든 설정이 다루어지지 않을 수도 있습니다. 다른 Configuration Manager 배포 옵션은 [Configuration Manager 문서 라이브러리](http://technet.microsoft.com/library/gg682041.aspx)를 참조하세요.  
+>  이 항목의 절차에는 패키지와 프로그램을 만들고 배포하기 위한 일반적인 설정이 포함되어 있고, 가능한 모든 설정이 다루어지지 않을 수도 있습니다. 다른 Configuration Manager 배포 옵션은 [Configuration Manager 문서 라이브러리](https://technet.microsoft.com/library/gg682041.aspx)를 참조하세요.  
   
 <a name="deploying_in_a_test_environment"></a>   
 ## <a name="deploying-the-net-framework"></a>.NET Framework 배포  
@@ -62,7 +62,7 @@ ms.locfileid: "42925059"
   
 <a name="creating_a_collection"></a>   
 ### <a name="create-a-collection"></a>컬렉션 만들기  
- 이 단계에서는 패키지와 프로그램을 배포할 컴퓨터를 선택하고 이런 컴퓨터를 장치 컬렉션으로 그룹화합니다. Configuration Manager에서 컬렉션을 만들려면 직접 멤버 자격 규칙(컬렉션 멤버를 수동으로 지정함) 또는 쿼리 규칙(사용자가 지정하는 기준을 바탕으로 Configuration Manager가 컬렉션 멤버를 결정함)을 사용할 수 있습니다. 쿼리와 직접 규칙을 포함한 멤버 자격 규칙에 대한 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 컬렉션 소개](http://technet.microsoft.com/library/gg682177.aspx)를 참조하세요.  
+ 이 단계에서는 패키지와 프로그램을 배포할 컴퓨터를 선택하고 이런 컴퓨터를 장치 컬렉션으로 그룹화합니다. Configuration Manager에서 컬렉션을 만들려면 직접 멤버 자격 규칙(컬렉션 멤버를 수동으로 지정함) 또는 쿼리 규칙(사용자가 지정하는 기준을 바탕으로 Configuration Manager가 컬렉션 멤버를 결정함)을 사용할 수 있습니다. 쿼리와 직접 규칙을 포함한 멤버 자격 규칙에 대한 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 컬렉션 소개](https://technet.microsoft.com/library/gg682177.aspx)를 참조하세요.  
   
  컬렉션을 만들려면  
   
@@ -84,7 +84,7 @@ ms.locfileid: "42925059"
   
 9. **장치 컬렉션 만들기 마법사**의 **멤버 자격 규칙** 페이지에서 **다음**을 선택한 후 마법사를 완료합니다.  
   
- 컬렉션에 대한 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 컬렉션](http://technet.microsoft.com/library/bb693730.aspx)을 참조하세요.  
+ 컬렉션에 대한 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 컬렉션](https://technet.microsoft.com/library/bb693730.aspx)을 참조하세요.  
   
 <a name="creating_a_package"></a>   
 ### <a name="create-a-package-and-program-for-the-net-framework-redistributable-package"></a>.NET Framework 재배포 가능 패키지에 대한 프로그램과 패키지를 만듭니다.  
@@ -128,9 +128,9 @@ ms.locfileid: "42925059"
 |------------|-----------------|  
 |**/q**|자동 모드를 설정합니다. 사용자 입력이 필요하지 않으며 아무런 출력도 표시되지 않습니다.|  
 |**/norestart**|설치 프로그램이 자동으로 재부팅하지 않도록 합니다. 이 옵션을 사용하는 경우 Configuration Manager는 컴퓨터 다시 시작을 처리해야 합니다.|  
-|**/chainingpackage** *PackageName*|연결을 수행하는 패키지의 이름을 지정합니다. 이 정보는 [Microsoft CEIP(사용자 환경 개선 프로그램)](http://go.microsoft.com/fwlink/p/?LinkId=248244)에 등록한 사용자에 대한 다른 설치 세션 정보와 함께 보고됩니다. 패키지 이름에 공백이 포함되어 있으면 **/chainingpackage "Chaining Product"** 와 같이 큰따옴표를 구분 기호로 사용합니다.|  
+|**/chainingpackage** *PackageName*|연결을 수행하는 패키지의 이름을 지정합니다. 이 정보는 [Microsoft CEIP(사용자 환경 개선 프로그램)](https://go.microsoft.com/fwlink/p/?LinkId=248244)에 등록한 사용자에 대한 다른 설치 세션 정보와 함께 보고됩니다. 패키지 이름에 공백이 포함되어 있으면 **/chainingpackage "Chaining Product"** 와 같이 큰따옴표를 구분 기호로 사용합니다.|  
   
- 위 단계를 통해 .NET Framework 4.5라는 이름의 패키지가 만들어집니다. 이 프로그램은 .NET Framework 4.5 자동 설치 프로그램을 배포합니다. 자동 설치에서 사용자는 설치 프로세스와 상호 작용하지 않으며 연결 응용 프로그램은 반환 코드를 캡처하고 재부팅을 처리해야 합니다. [설치 패키지에서 프로세스 진행 정보 가져오기](http://go.microsoft.com/fwlink/?LinkId=179606)를 참조하세요.  
+ 위 단계를 통해 .NET Framework 4.5라는 이름의 패키지가 만들어집니다. 이 프로그램은 .NET Framework 4.5 자동 설치 프로그램을 배포합니다. 자동 설치에서 사용자는 설치 프로세스와 상호 작용하지 않으며 연결 응용 프로그램은 반환 코드를 캡처하고 재부팅을 처리해야 합니다. [설치 패키지에서 프로세스 진행 정보 가져오기](https://go.microsoft.com/fwlink/?LinkId=179606)를 참조하세요.  
  
 <a name="select_dist_point"></a>   
 ### <a name="select-a-distribution-point"></a>배포 지점 선택  
@@ -154,7 +154,7 @@ ms.locfileid: "42925059"
   
 8.  마법사를 완료합니다.  
   
- 이제 패키지에는 .NET Framework 4.5를 자동으로 배포하는 데 필요한 모든 정보가 포함됩니다. 패키지와 프로그램을 배포하기 전에 배포 지점에 .NET Framework 4.5가 설치되었는지 확인합니다. Configuration Manager 문서 라이브러리에서 [Configuration Manager에서 콘텐츠 관리를 위한 작업과 유지 관리](http://technet.microsoft.com/library/gg712694.aspx#BKMK_MonitorContent)의 "콘텐츠 모니터링" 섹션을 참조하세요.  
+ 이제 패키지에는 .NET Framework 4.5를 자동으로 배포하는 데 필요한 모든 정보가 포함됩니다. 패키지와 프로그램을 배포하기 전에 배포 지점에 .NET Framework 4.5가 설치되었는지 확인합니다. Configuration Manager 문서 라이브러리에서 [Configuration Manager에서 콘텐츠 관리를 위한 작업과 유지 관리](https://technet.microsoft.com/library/gg712694.aspx#BKMK_MonitorContent)의 "콘텐츠 모니터링" 섹션을 참조하세요.  
   
 <a name="deploying_package"></a>   
 ### <a name="deploy-the-package"></a>패키지 배포  
@@ -179,7 +179,7 @@ ms.locfileid: "42925059"
 9. 마법사의 **사용자 경험** 페이지에서 기본값을 사용하고 **다음**을 선택합니다.  
   
     > [!WARNING]
-    >  프로덕션 환경에는 배포 일정에 대해 다른 선택 항목을 요구하는 정책이 있을 수도 있습니다. 이러한 옵션에 대한 자세한 내용은 TechNet 라이브러리의 [광고 이름 속성: 일정 탭](http://technet.microsoft.com/library/bb694016.aspx)을 참조하세요.  
+    >  프로덕션 환경에는 배포 일정에 대해 다른 선택 항목을 요구하는 정책이 있을 수도 있습니다. 이러한 옵션에 대한 자세한 내용은 TechNet 라이브러리의 [광고 이름 속성: 일정 탭](https://technet.microsoft.com/library/bb694016.aspx)을 참조하세요.  
   
 10. 마법사의 **배포 지점** 페이지에서 기본값을 사용하고 **다음**을 선택합니다.  
   
@@ -193,27 +193,27 @@ ms.locfileid: "42925059"
   
  **Active Directory, DNS, DHCP:**  
   
--   [Windows Server 2008용 Active Directory Domain Services](http://technet.microsoft.com/library/dd378891.aspx)  
+-   [Windows Server 2008용 Active Directory Domain Services](https://technet.microsoft.com/library/dd378891.aspx)  
   
--   [DNS 서버](http://technet.microsoft.com/library/cc732997.aspx)  
+-   [DNS 서버](https://technet.microsoft.com/library/cc732997.aspx)  
   
--   [DHCP 서버](http://technet.microsoft.com/library/cc896553.aspx)  
+-   [DHCP 서버](https://technet.microsoft.com/library/cc896553.aspx)  
   
  **SQL Server 2008:**  
   
--   [SQL Server 2008 설치(SQL Server 비디오)](http://technet.microsoft.com/library/dd299415.aspx)  
+-   [SQL Server 2008 설치(SQL Server 비디오)](https://technet.microsoft.com/library/dd299415.aspx)  
   
--   [데이터베이스 관리자용 SQL Server 2008 보안 개요](http://download.microsoft.com/download/a/c/d/acd8e043-d69b-4f09-bc9e-4168b65aaa71/SQL2008SecurityOverviewforAdmins.docx)  
+-   [데이터베이스 관리자용 SQL Server 2008 보안 개요](https://download.microsoft.com/download/a/c/d/acd8e043-d69b-4f09-bc9e-4168b65aaa71/SQL2008SecurityOverviewforAdmins.docx)  
   
  **System Center 2012 Configuration Manager(관리 지점, 배포 지점):**  
   
--   [System Center 2012 Configuration Manager의 사이트 관리](http://technet.microsoft.com/library/gg681983.aspx)  
+-   [System Center 2012 Configuration Manager의 사이트 관리](https://technet.microsoft.com/library/gg681983.aspx)  
   
--   [Configuration Manager 단일 사이트 계획 및 배포](http://technet.microsoft.com/library/bb680961.aspx)  
+-   [Configuration Manager 단일 사이트 계획 및 배포](https://technet.microsoft.com/library/bb680961.aspx)  
   
  **Windows 컴퓨터용 System Center 2012 Configuration Manager 클라이언트:**  
   
--   [System Center 2012 Configuration Manager용 클라이언트 배포](http://technet.microsoft.com/library/gg699391.aspx)  
+-   [System Center 2012 Configuration Manager용 클라이언트 배포](https://technet.microsoft.com/library/gg699391.aspx)  
   
 <a name="troubleshooting"></a>   
 ## <a name="troubleshooting"></a>문제 해결  
@@ -248,17 +248,17 @@ ms.locfileid: "42925059"
 <a name="additional_error_codes"></a>   
 ### <a name="download-error-codes"></a>다운로드 오류 코드  
   
--   [BITS(Background Intelligent Transfer Service) 오류 코드](http://msdn.microsoft.com/library/aa362823.aspx)  
+-   [BITS(Background Intelligent Transfer Service) 오류 코드](https://msdn.microsoft.com/library/aa362823.aspx)  
   
--   [URL 모니커 오류 코드](http://msdn.microsoft.com/library/ms775145.aspx)  
+-   [URL 모니커 오류 코드](https://msdn.microsoft.com/library/ms775145.aspx)  
   
 -   [WinHttp 오류 코드](/windows/desktop/WinHttp/error-messages)  
   
  기타 오류 코드  
   
--   [Windows Installer 오류 코드](http://msdn.microsoft.com/library/aa368542.aspx)  
+-   [Windows Installer 오류 코드](https://msdn.microsoft.com/library/aa368542.aspx)  
   
--   [Windows 업데이트 에이전트 결과 코드](http://technet.microsoft.com/library/cc720442.aspx)  
+-   [Windows 업데이트 에이전트 결과 코드](https://technet.microsoft.com/library/cc720442.aspx)  
   
 ## <a name="see-also"></a>참고 항목  
  [개발자를 위한 배포 가이드](../../../docs/framework/deployment/deployment-guide-for-developers.md)  

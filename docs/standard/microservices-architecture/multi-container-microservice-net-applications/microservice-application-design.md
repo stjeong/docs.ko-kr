@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 6cbe4512c8ed89540599d1257046bd080b464165
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 4adf7e759d4475d0bb9b3aa0abe8dbdc5e57edd3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105961"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43470118"
 ---
 # <a name="designing-a-microservice-oriented-application"></a>마이크로 서비스 지향 응용 프로그램 디자인
 
@@ -63,7 +63,7 @@ ms.locfileid: "37105961"
 
 ### <a name="eshoponcontainers-a-reference-application-for-net-core-and-microservices-deployed-using-containers"></a>eShopOnContainers: 컨테이너를 사용하여 배포한 마이크로 서비스 및 .NET Core의 참조 응용 프로그램
 
-여러분이 모르는 가상의 비즈니스 도메인에 대해 생각하지 않고 아키텍처와 기술에 집중할 수 있도록 잘 알려진 비즈니스 도메인, 즉, 제품 카탈로그를 보여주고 고객으로부터 주문을 접수하며 재고를 확인하고 기타 비즈니스 기능을 수행하는 간소화된 전자 상거래(인터넷 소핑몰) 응용 프로그램을 선택했습니다. 이 컨테이너 기반 응용 프로그램 소스 코드는 [eShopOnContainers](http://aka.ms/MicroservicesArchitecture) GitHub 리포지토리에 나와 있습니다.
+여러분이 모르는 가상의 비즈니스 도메인에 대해 생각하지 않고 아키텍처와 기술에 집중할 수 있도록 잘 알려진 비즈니스 도메인, 즉, 제품 카탈로그를 보여주고 고객으로부터 주문을 접수하며 재고를 확인하고 기타 비즈니스 기능을 수행하는 간소화된 전자 상거래(인터넷 소핑몰) 응용 프로그램을 선택했습니다. 이 컨테이너 기반 응용 프로그램 소스 코드는 [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) GitHub 리포지토리에 나와 있습니다.
 
 이 응용 프로그램은 여러 스토어 UI 프런트 엔드(웹 응용 프로그램 및 네이티브 모바일 앱)와 필수 서버 측 작업을 위한 백 엔드 마이크로 서비스 및 컨테이너를 포함한 복수의 하위 시스템으로 구성됩니다. 그림 8-1은 참조 응용 프로그램의 아키텍처입니다.
 
@@ -171,7 +171,7 @@ ms.locfileid: "37105961"
 
 -   [도메인 기반 디자인 N-레이어](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 
--   [클린 아키텍처](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)([eShopOnWeb](http://aka.ms/WebAppArchitecture)에 사용된 것)
+-   [클린 아키텍처](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)([eShopOnWeb](https://aka.ms/WebAppArchitecture)에 사용된 것)
 
 -   [CQRS(Command and Query Responsibility Segregation)](https://martinfowler.com/bliki/CQRS.html).
 

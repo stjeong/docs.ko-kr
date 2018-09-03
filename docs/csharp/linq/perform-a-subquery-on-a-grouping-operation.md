@@ -3,12 +3,12 @@ title: 그룹화 작업에서 하위 쿼리 수행(C#의 LINQ)
 description: C#의 LINQ를 사용하여 그룹화 작업에서 하위 쿼리를 수행하는 방법입니다.
 ms.date: 12/1/2016
 ms.assetid: d75a588e-9b6f-4f37-b195-f99ec8503855
-ms.openlocfilehash: 76e54cc6b29090a8464400ae6460812dd9ad86f9
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 514db81b80557a3026589f00177910cc9446c0f4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404118"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43476000"
 ---
 # <a name="perform-a-subquery-on-a-grouping-operation"></a>그룹화 작업에서 하위 쿼리 수행
 
@@ -27,4 +27,4 @@ ms.locfileid: "37404118"
 
 ## <a name="see-also"></a>참고 항목
 
-[LINQ(Language-Integrated Query)](index.md)
+- [LINQ(Language-Integrated Query)](index.md)

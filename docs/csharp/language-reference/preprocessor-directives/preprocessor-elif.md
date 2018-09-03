@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#elif directive [C#]'
 ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
-ms.openlocfilehash: c6d797b68ad03023d6101b20cacae6d828abe0c1
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: 423cedfb947964172a6e06d54a6dd3c76d91e9f3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42752028"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43418205"
 ---
 # <a name="elif-c-reference"></a>#elif(C# 참조)
 `#elif`를 사용하면 복합 조건부 지시문을 만들 수 있습니다. `#elif` 식이 계산되는 경우는 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)와 앞의 선택적 `#elif` 지시문 식이 모두 `true`로 계산되지 않는 경우입니다. `#elif` 식이 `true`이면 컴파일러는 `#elif`와 다음 조건부 지시문 사이에 있는 모든 코드를 평가합니다. 예:  
@@ -40,7 +40,8 @@ ms.locfileid: "42752028"
   
  `#elif`를 사용하는 방법에 대한 예제는 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)

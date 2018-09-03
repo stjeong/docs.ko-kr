@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Office programming [Visual Basic]
 ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
 ms.openlocfilehash: cef2a907a8d7e6158239b88d5c8551c2c734faa0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338639"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43386300"
 ---
 # <a name="walkthrough-office-programming-c-and-visual-basic"></a>연습: Office 프로그래밍(C# 및 Visual Basic)
 Visual Studio에서는 Microsoft Office 프로그래밍을 개선하는 C# 및 Visual Basic의 기능을 제공합니다. 유용한 C# 기능으로는 명명된 인수 및 선택적 인수, `dynamic` 형식의 반환 값 등이 있습니다. COM 프로그래밍에서 `ref` 키워드를 생략하면 인덱싱된 속성에 액세스할 수 있게 됩니다. Visual Basic의 기능으로는 자동 구현 속성, 람다 식의 문, 컬렉션 이니셜라이저 등이 있습니다.
@@ -27,7 +27,7 @@ Visual Studio에서는 Microsoft Office 프로그래밍을 개선하는 C# 및 V
 
 이 연습을 완료하려면 Microsoft Office Excel 및 Microsoft Office Word가 컴퓨터에 설치되어 있어야 합니다.  
   
- [!INCLUDE[windowsver](~/includes/windowsver-md.md)]이전 버전의 운영 체제를 사용 중이라면 [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)]이 설치되어 있는지 확인합니다.  
+ [!INCLUDE[windowsver](~/includes/windowsver-md.md)] 이전 버전의 운영 체제를 사용 중이라면 [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)]이 설치되어 있는지 확인합니다.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

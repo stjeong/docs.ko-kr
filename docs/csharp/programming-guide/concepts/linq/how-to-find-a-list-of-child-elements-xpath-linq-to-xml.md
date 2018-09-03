@@ -3,11 +3,11 @@ title: '방법: 자식 요소 목록 찾기(XPath 및 LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
 ms.openlocfilehash: 742b0843e3287bd8de6c7b1f5d3706d66e5d344f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340049"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43418268"
 ---
 # <a name="how-to-find-a-list-of-child-elements-xpath-linq-to-xml-c"></a>방법: 자식 요소 목록 찾기(XPath 및 LINQ to XML)(C#)
 이 항목에서는 XPath 자식 요소 축과 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> 축을 비교합니다.  

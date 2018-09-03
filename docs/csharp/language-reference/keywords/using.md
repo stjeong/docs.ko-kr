@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - using keyword [C#]
 ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d
-ms.openlocfilehash: 46b3f6b95e3b80ab324267704ead1f0187a56385
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2d96301e083b5c5340bea8b04943ca90c90e71ac
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266570"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43471902"
 ---
 # <a name="using-c-reference"></a>using(C# 참조)
 `using` 키워드의 주요 용도는 두 가지입니다.  
@@ -23,10 +23,11 @@ ms.locfileid: "33266570"
   
 또한 [using static](using-static.md) 지시문을 사용하면 형식 이름을 지정하지 않고도 상태 멤버에 액세스할 수 있는 형식을 정의할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
- [extern](../../../csharp/language-reference/keywords/extern.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
+- [extern](../../../csharp/language-reference/keywords/extern.md)

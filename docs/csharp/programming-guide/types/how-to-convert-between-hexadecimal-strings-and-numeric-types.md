@@ -7,12 +7,12 @@ helpviewer_keywords:
 - strings [C#], converting hexadecimal strings
 - hexadecimal strings [C#]
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
-ms.openlocfilehash: 1a5bde0a9169a78e179a69c7a2f4080e5a465f54
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0f7502bc0f14c85d207c313646f26c7787bd46b3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334703"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484089"
 ---
 # <a name="how-to-convert-between-hexadecimal-strings-and-numeric-types-c-programming-guide"></a>방법: 16진수 문자열과 숫자 형식 간 변환(C# 프로그래밍 가이드)
 이 예제에서는 다음 작업을 수행하는 방법을 보여 줍니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "33334703"
  [!code-csharp[csProgGuideTypes#32](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_3.cs)]  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 <xref:System.BitConverter?displayProperty=nameWithType> 클래스 및 <xref:System.Int32.Parse%2A?displayProperty=nameWithType> 메서드를 사용하여 16진수 `string`을 [float](../../../csharp/language-reference/keywords/float.md)로 변환하는 방법을 보여 줍니다.  
+ 다음 예제에서는 <xref:System.BitConverter?displayProperty=nameWithType> 클래스 및 <xref:System.UInt32.Parse%2A?displayProperty=nameWithType> 메서드를 사용하여 16진수 `string`을 [float](../../../csharp/language-reference/keywords/float.md)로 변환하는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideTypes#39](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_4.cs)]  
   

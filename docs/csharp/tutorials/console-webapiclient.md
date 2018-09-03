@@ -4,11 +4,11 @@ description: 이 자습서에서는 .NET Core 및 C# 언어의 다양한 기능�
 ms.date: 03/06/2017
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ms.openlocfilehash: bc3c23b277b233efba9f32cc49b29ac905f3abc8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357623"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43480158"
 ---
 # <a name="rest-client"></a>REST 클라이언트
 
@@ -57,7 +57,7 @@ GitHub에서 REST 서비스에 HTTP 요청을 실행하는 응용 프로그램�
 이러한 변경을 수행한 후에는 패키지가 시스템에 설치되도록 `dotnet restore`([참고 참조](#dotnet-restore-note))를 다시 실행해야 합니다.
 
 ## <a name="making-web-requests"></a>웹 요청 수행
-이제 웹에서 데이터 검색을 시작할 준비가 되었습니다. 이 응용 프로그램에서는 [GitHub API](https://developer.github.com/v3/)에서 정보를 읽게 됩니다. [.NET Foundation](http://www.dotnetfoundation.org/) 상위 항목 아래에서 프로젝트에 대한 정보를 읽어 보겠습니다. 먼저 GitHub API에 대해 요청을 수행하여 프로젝트에 대한 정보를 검색합니다. 사용할 끝점은 [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos)입니다. 이러한 프로젝트에 대해 모든 정보를 검색하려고 하므로 HTTP GET 요청을 사용합니다.
+이제 웹에서 데이터 검색을 시작할 준비가 되었습니다. 이 응용 프로그램에서는 [GitHub API](https://developer.github.com/v3/)에서 정보를 읽게 됩니다. [.NET Foundation](http://www.dotnetfoundation.org/) 상위 항목 아래에서 프로젝트에 대한 정보를 읽어 보겠습니다. 먼저 GitHub API에 대해 요청을 수행하여 프로젝트에 대한 정보를 검색합니다. 사용할 엔드포인트는 [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos)입니다. 이러한 프로젝트에 대해 모든 정보를 검색하려고 하므로 HTTP GET 요청을 사용합니다.
 브라우저도 HTTP GET 요청을 사용하므로 해당 URL을 브라우저에 붙여 넣어 수신되고 처리 중인 정보를 볼 수 있습니다.
 
 <xref:System.Net.Http.HttpClient> 클래스를 사용하여 웹 요청을 수행합니다. 모든 최신 .NET API와 마찬가지로 <xref:System.Net.Http.HttpClient> 는 장기 실행되는 API에 대해 비동기 메서드만 지원합니다.

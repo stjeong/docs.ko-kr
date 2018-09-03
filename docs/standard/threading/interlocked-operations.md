@@ -12,11 +12,12 @@ helpviewer_keywords:
 ms.assetid: cbda7114-c752-4f3e-ada1-b1e8dd262f2b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38532228f7a5d07bb1b9fcf7e90d2be53a28b04c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 361e618578e836e10cf8655f027bed42eac7affd
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43393141"
 ---
 # <a name="interlocked-operations"></a>연동 작업
 <xref:System.Threading.Interlocked> 클래스는 여러 스레드에서 공유하는 변수에 대한 액세스를 동기화하는 메서드를 제공합니다. 서로 다른 프로세스의 스레드는 변수가 공유 메모리에 있는 경우 이 메커니즘을 사용할 수 있습니다. 연동 작업은 원자성입니다. 즉, 전체 작업은 동일한 변수의 다른 연동 작업에 의해 중단될 수 없는 장치입니다. 이는 메모리 주소에서 값을 로드한 후 이를 변경하고 저장할 기회를 갖기 전에 스레드를 일시 중단할 수 있는 선점형 다중 스레딩과 함께 운영 체제에서 중요합니다.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 05/04/2018
   
  최신 프로세서에서 <xref:System.Threading.Interlocked> 클래스의 메서드는 일반적으로 단일 명령으로 구현될 수 있습니다. 따라서 고성능 동기화를 제공하며 스핀 잠금과 같은 더 높은 수준의 동기화 메커니즘을 빌드하는 데 사용될 수 있습니다.  
   
- 조합에서 <xref:System.Threading.Monitor> 및 <xref:System.Threading.Interlocked> 클래스를 사용하는 예제는 [Monitor](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)를 참조하세요.  
+ 조합에서 <xref:System.Threading.Monitor> 및 <xref:System.Threading.Interlocked> 클래스를 사용하는 예제는 [Monitor](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)를 참조하세요.  
   
 ## <a name="compareexchange-example"></a>CompareExchange 예제  
  <xref:System.Threading.Interlocked.CompareExchange%2A> 메서드를 사용하여 단순 증가 및 감소보다 복잡한 계산을 보호할 수 있습니다. 다음 예제에서는 부동 소수점 숫자로 저장되는 누계에 추가하는 스레드로부터 안전한 메서드를 보여 줍니다. (정수의 경우 <xref:System.Threading.Interlocked.Add%2A> 메서드는 더욱 간단한 솔루션입니다. ) 전체 코드 예제는 단정밀도 및 배정밀도 부동 소수점 인수(<xref:System.Threading.Interlocked.CompareExchange%28System.Single%40%2CSystem.Single%2CSystem.Single%29> 및 <xref:System.Threading.Interlocked.CompareExchange%28System.Double%40%2CSystem.Double%2CSystem.Double%29>)를 사용하는 <xref:System.Threading.Interlocked.CompareExchange%2A>의 오버로드를 참조하세요.  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0925f7445c4451f61bd1c878cc66300d62bdc855
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: fd6f14f89d143edd03f8b5d028ec84315b2f2e97
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32741908"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43455720"
 ---
 # <a name="how-to-load-assemblies-into-an-application-domain"></a>방법: 응용 프로그램 도메인에 어셈블리 로드
 응용 프로그램 도메인에 어셈블리를 로드하는 방법에는 여러 가지가 있습니다. <xref:System.Reflection.Assembly?displayProperty=nameWithType> 클래스의 `static`(Visual Basic에서는 `Shared`) <xref:System.Reflection.Assembly.Load%2A> 메서드를 사용하는 것이 좋습니다. 어셈블리를 로드할 수 있는 다른 방법은 다음과 같습니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "32741908"
 > [!NOTE]
 >  .NET Framework 버전 2.0부터 런타임은 현재 로드된 런타임보다 높은 버전 번호를 가진 .NET Framework 버전으로 컴파일된 어셈블리를 로드하지 않습니다. 이는 버전 번호의 주 버전 및 부 버전 구성 요소 조합에 적용됩니다.  
   
- 로드된 어셈블리의 JIT(Just-In-Time) 컴파일된 코드가 응용 프로그램 도메인 간에 공유되는 방식을 지정할 수 있습니다. 자세한 내용은 [응용 프로그램 도메인 및 어셈블리](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)를 참조하세요.  
+ 로드된 어셈블리의 JIT(Just-In-Time) 컴파일된 코드가 응용 프로그램 도메인 간에 공유되는 방식을 지정할 수 있습니다. 자세한 내용은 [응용 프로그램 도메인 및 어셈블리](https://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 코드는 "example.exe" 또는 "example.dll"이라는 어셈블리를 로드 현재 응용 프로그램 도메인에 로드하고, 어셈블리에서 `Example` 형식을 가져온 다음 해당 형식에 대한 매개 변수가 없는 `MethodA` 메서드를 가져와서 실행합니다. 로드된 어셈블리에서 정보를 가져오는 방법에 대한 자세한 내용은 [형식 동적 로드 및 사용](../../../docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md)을 참조하세요.  
@@ -52,4 +52,4 @@ ms.locfileid: "32741908"
  [리플렉션](../../../docs/framework/reflection-and-codedom/reflection.md)  
  [응용 프로그램 도메인 사용](../../../docs/framework/app-domains/use.md)  
  [방법: 리플렉션 전용 컨텍스트에 어셈블리 로드](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)  
- [응용 프로그램 도메인 및 어셈블리](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)
+ [응용 프로그램 도메인 및 어셈블리](https://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)

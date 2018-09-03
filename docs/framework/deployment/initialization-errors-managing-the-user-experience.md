@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 680a7382-957f-4f6e-b178-4e866004a07e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6fe59075f04443ba40c209b6cda5a5071d16c79e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a30fe0aac4bfacc71137474837b95371e7d85b09
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392150"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43394743"
 ---
 # <a name="net-framework-initialization-errors-managing-the-user-experience"></a>.NET Framework 초기화 오류: 사용자 환경 관리
 CLR(공용 언어 런타임) 활성화 시스템은 관리되는 응용 프로그램 코드를 실행하는 데 사용할 CLR 버전을 결정합니다. 경우에 따라 활성화 시스템이 로드할 CLR 버전을 찾지 못할 수도 있습니다. 일반적으로 이런 상황은 응용 프로그램에 필요한 CLR 버전이 잘못되었거나 지정된 컴퓨터에 설치되지 않은 경우에 발생합니다. 요청된 버전이 없는 경우 CLR 활성화 시스템은 호출된 함수 또는 인터페이스에서 HRESULT 오류 코드를 반환하며, 응용 프로그램을 실행하는 사용자에게 오류 메시지를 표시할 수 있습니다. 이 문서에서는 HRESULT 코드 목록을 제공하며 오류 메시지가 표시되지 않도록 하는 방법을 설명합니다.  
@@ -55,7 +55,7 @@ CLR(공용 언어 런타임) 활성화 시스템은 관리되는 응용 프로�
   
  [ICLRMetaHostPolicy::GetRequestedRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) 메서드는 [METAHOST_POLICY_FLAGS](../../../docs/framework/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) 열거형 멤버를 입력으로 허용합니다. METAHOST_POLICY_SHOW_ERROR_DIALOG 플래그를 포함하면 요청된 버전의 CLR을 찾을 수 없는 경우 오류 메시지를 요청할 수 있습니다. 기본적으로 오류 메시지는 표시되지 않습니다. [ICLRMetaHost::GetRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahost-getruntime-method.md) 메서드는 이 플래그를 허용하지 않으며 오류 메시지를 표시하는 다른 방법도 제공하지 않습니다.  
   
- Windows에서는 프로세스 내에서 실행되는 코드의 결과로 오류 메시지를 표시할지 여부를 선언하는 데 사용할 수 있는 [SetErrorMode](http://go.microsoft.com/fwlink/p/?LinkID=255242) 함수를 제공합니다. SEM_FAILCRITICALERRORS 플래그를 지정하면 오류 메시지가 표시되지 않도록 방지할 수 있습니다.  
+ Windows에서는 프로세스 내에서 실행되는 코드의 결과로 오류 메시지를 표시할지 여부를 선언하는 데 사용할 수 있는 [SetErrorMode](https://go.microsoft.com/fwlink/p/?LinkID=255242) 함수를 제공합니다. SEM_FAILCRITICALERRORS 플래그를 지정하면 오류 메시지가 표시되지 않도록 방지할 수 있습니다.  
   
  그러나 일부 시나리오에서는 응용 프로그램 프로세스에서 지정한 SEM_FAILCRITICALERRORS 설정을 재정의하는 것이 중요합니다. 예를 들어 CLR을 호스트하고 SEM_FAILCRITICALERRORS가 설정되어 있는 프로세스에 호스트된 네이티브 COM 구성 요소가 있는 경우 해당 특정 응용 프로그램 프로세스 내에서 오류 메시지를 표시할 경우의 영향에 따라 플래그를 재정의하는 것이 좋습니다. 이 경우 다음 플래그 중 하나를 사용하여 SEM_FAILCRITICALERRORS를 재정의할 수 있습니다.  
   

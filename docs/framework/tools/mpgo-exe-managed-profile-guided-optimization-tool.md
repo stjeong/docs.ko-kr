@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 42e1fb080ac0af34c621cef3a991cad7bcf603ac
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0045dd8d947cfbf7da0ecfec6bbae9561eae652d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33410022"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485770"
 ---
 # <a name="mpgoexe-managed-profile-guided-optimization-tool"></a>Mpgo.exe(관리되는 프로필 기반 최적화 도구)
 관리되는 프로필 기반 최적화 도구(Mpgo.exe)는 공통 최종 사용자 시나리오를 사용하여 [네이티브 이미지 생성기(Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)로 만들어지는 네이티브 이미지 어셈블리를 최적화하는 명령줄 도구입니다. 이 도구를 사용하면 프로필 데이터를 생성하는 교육 시나리오를 실행할 수 있습니다. [네이티브 이미지 생성기(Ngen.exe)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)는 이 데이터를 사용하여 생성된 네이티브 이미지 응용 프로그램 어셈블리를 최적화합니다. 교육 시나리오는 응용 프로그램의 정상적 용도에 대한 평가 실행입니다. Mpgo.exe는 Visual Studio Ultimate 2012 이상 버전에서 사용할 수 있습니다. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]부터 Mpgo.exe를 사용하여 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 최적화할 수도 있습니다.  
   
  프로필 기반 최적화는 교육 시나리오에서 데이터를 수집하고 네이티브 이미지의 레이아웃을 최적화하는 데 사용하여 응용 프로그램 시작 시간, 메모리 사용률(작업 집합 크기), 처리량을 개선합니다.  
   
- 중간 언어(IL) 어셈블리에 대한 시작 시간 및 작업 집합에서 성능 문제가 발생하면 먼저 Ngen.exe를 사용하여 JIT(Just-In-Time) 컴파일 비용을 제거하고 코드 공유를 지원하는 것이 좋습니다. 추가 개선이 필요한 경우 Mpgo.exe를 사용하여 응용 프로그램을 더 최적화할 수 있습니다. 최적화되지 않은 네이티브 이미지 어셈블리의 성능 데이터를 성능 향상을 평가하는 기준선으로 사용할 수 있습니다. Mpgo.exe를 사용하면 콜드 시작 시간이 단축되고 작업 집합 크기가 작아질 수 있습니다. Mpgo.exe는 Ngen.exe가 정보 최적화 네이티브 이미지 어셈블리를 생성하는 데 사용하는 정보를 IL 어셈블리에 추가합니다. 자세한 내용은 .NET 블로그의 [데스크톱 응용 프로그램의 시작 성능 개선](http://go.microsoft.com/fwlink/p/?LinkId=248943) 항목을 참조하세요.  
+ 중간 언어(IL) 어셈블리에 대한 시작 시간 및 작업 집합에서 성능 문제가 발생하면 먼저 Ngen.exe를 사용하여 JIT(Just-In-Time) 컴파일 비용을 제거하고 코드 공유를 지원하는 것이 좋습니다. 추가 개선이 필요한 경우 Mpgo.exe를 사용하여 응용 프로그램을 더 최적화할 수 있습니다. 최적화되지 않은 네이티브 이미지 어셈블리의 성능 데이터를 성능 향상을 평가하는 기준선으로 사용할 수 있습니다. Mpgo.exe를 사용하면 콜드 시작 시간이 단축되고 작업 집합 크기가 작아질 수 있습니다. Mpgo.exe는 Ngen.exe가 정보 최적화 네이티브 이미지 어셈블리를 생성하는 데 사용하는 정보를 IL 어셈블리에 추가합니다. 자세한 내용은 .NET 블로그의 [데스크톱 응용 프로그램의 시작 성능 개선](https://go.microsoft.com/fwlink/p/?LinkId=248943) 항목을 참조하세요.  
   
  이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 관리자 자격 증명과 함께 사용하고 다음 명령 프롬프트를 입력합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
   
@@ -99,7 +99,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
  이렇게 하면 모든 어셈블리의 데이터가 최적화됩니다. 최적화된 어셈블리 업데이트(1단계와 2단계)를 더 자주 체크 인하는 경우, 성능 수치의 일관성이 제품 개발 과정 전체에 걸쳐 향상됩니다.  
   
 ## <a name="using-mpgoexe-from-visual-studio"></a>Visual Studio에서 Mpgo.exe 사용  
- Visual Studio에서 Mpgo.exe를 다음과 같은 제한과 함께 실행할 수 있습니다([방법: 빌드 이벤트 지정(C#)](http://msdn.microsoft.com/library/b4ce1ad9-5215-4b6f-b6a2-798b249aa335) 문서 참조).  
+ Visual Studio에서 Mpgo.exe를 다음과 같은 제한과 함께 실행할 수 있습니다([방법: 빌드 이벤트 지정(C#)](https://msdn.microsoft.com/library/b4ce1ad9-5215-4b6f-b6a2-798b249aa335) 문서 참조).  
   
 -   Visual Studio 매크로도 기본적으로 후행 슬래시 기호를 사용하기 때문에 따옴표로 묶은 경로를 후행 슬래시 기호와 함께 사용할 수 없습니다. 예를 들어 `–OutDir "C:\Output Folder\"`는 올바르지 않습니다. 이 제한을 해결하려면 후행 슬래시를 이스케이프할 수 있습니다. 예를 들어 `-OutDir "$(OutDir)\"`을 대신 사용합니다.  
   
@@ -128,5 +128,5 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 ## <a name="see-also"></a>참고 항목  
  [Ngen.exe(네이티브 이미지 생성기)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)  
  [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
- [데스크톱 응용 프로그램의 시작 성능 개선](http://go.microsoft.com/fwlink/p/?LinkId=248943)  
- [.NET 4.5의 성능 개선 개요](http://go.microsoft.com/fwlink/p/?LinkId=249131)
+ [데스크톱 응용 프로그램의 시작 성능 개선](https://go.microsoft.com/fwlink/p/?LinkId=248943)  
+ [.NET 4.5의 성능 개선 개요](https://go.microsoft.com/fwlink/p/?LinkId=249131)

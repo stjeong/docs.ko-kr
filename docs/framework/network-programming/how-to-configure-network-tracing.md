@@ -14,12 +14,12 @@ ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 77eb199e5e8bbfb0874f8189a8daa2904b31d48e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3c9550bf9d3483a8d2961e6137138bfb11f71bca
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395962"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404329"
 ---
 # <a name="how-to-configure-network-tracing"></a>방법: 네트워크 추적 구성
 응용 프로그램 또는 컴퓨터 구성 파일은 형식과 네트워크 추적의 내용을 결정하는 설정을 유지합니다. 이 절차를 수행하기 전에 추적이 활성화되어야 합니다. 추적을 사용하는 방법에 대한 자세한 내용은 [네트워크 추적 사용](../../../docs/framework/network-programming/enabling-network-tracing.md)을 참조하세요.  
@@ -103,4 +103,4 @@ ms.locfileid: "33395962"
  [네트워크 추적 해석](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
  [.NET Framework의 네트워크 추적](../../../docs/framework/network-programming/network-tracing.md)  
  [네트워크 추적 사용](../../../docs/framework/network-programming/enabling-network-tracing.md)  
- [계측 및 추적 소개](http://msdn.microsoft.com/library/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)
+ [계측 및 추적 소개](https://msdn.microsoft.com/library/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)

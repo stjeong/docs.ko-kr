@@ -3,23 +3,24 @@ title: XML 주석을 사용하여 코드 문서화
 description: XML 문서 주석을 사용하여 코드를 문서화하고 컴파일 시간에 XML 문서 파일을 생성하는 방법을 알아봅니다.
 ms.date: 02/14/2017
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
-ms.openlocfilehash: 1284f179c7debb323ea3bbd302df1f02bf8b31b1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4c94e98478e71449a3f9cc4bf1f21462e17a371b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218507"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43392498"
 ---
 # <a name="documenting-your-code-with-xml-comments"></a>XML 주석을 사용하여 코드 문서화
 
-XML 문서 주석은 사용자 정의 형식이나 멤버의 정의 위에 추가되는 특수 주석입니다. 컴파일 시간에 XML 문서 파일을 생성하기 위해 컴파일러에서 처리될 수 있으므로 특별합니다.
+XML 문서 주석은 사용자 정의 형식이나 멤버의 정의 위에 추가되는 특수 주석입니다.
+컴파일 시간에 XML 문서 파일을 생성하기 위해 컴파일러에서 처리될 수 있으므로 특별합니다.
 Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식이나 멤버에 대한 빠른 정보를 표시할 수 있도록 컴파일러에서 생성된 XML 파일은 .NET 어셈블리와 함께 배포될 수 있습니다. 또한 [DocFX](https://dotnet.github.io/docfx/) 및 [Sandcastle](https://github.com/EWSoftware/SHFB) 같은 도구를 통해 XML 파일을 실행하여 API 참조 웹 사이트를 생성할 수 있습니다.
 
 XML 문서 주석은 모든 다른 주석처럼 컴파일러에서 무시됩니다.
 
 다음 중 하나를 수행하여 컴파일 시간에 XML 파일을 생성할 수 있습니다.
 
-- 명령줄에서 .NET Core를 사용하여 응용 프로그램을 개발할 경우 .csproj 프로젝트 파일의 `<PropertyGroup>` 섹션에 [DocumentationFile 요소](http://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties)를 추가할 수 있습니다. 다음 예제에서는 프로젝트 디렉터리에 어셈블리와 같은 루트 파일 이름을 가진 XML 파일을 생성합니다.
+- 명령줄에서 .NET Core를 사용하여 응용 프로그램을 개발할 경우 .csproj 프로젝트 파일의 `<PropertyGroup>` 섹션에 [DocumentationFile 요소](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties)를 추가할 수 있습니다. 다음 예제에서는 프로젝트 디렉터리에 어셈블리와 같은 루트 파일 이름을 가진 XML 파일을 생성합니다.
 
    ```xml
    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
@@ -27,11 +28,11 @@ XML 문서 주석은 모든 다른 주석처럼 컴파일러에서 무시됩니�
 
    XML 파일의 정확한 절대 또는 상대 경로를 지정할 수도 있습니다. 다음 예제에서는 응용 프로그램의 디버그 버전과 같은 디렉터리에 XML 파일을 생성합니다.
 
-    ```xml
+   ```xml
    <DocumentationFile>bin\Debug\netcoreapp1.0\App.xml</DocumentationFile>
    ```
 
-- Visual Studio를 사용하여 응용 프로그램을 개발할 경우 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. [속성] 대화 상자에서 **빌드** 탭을 선택하고 **XML 문서 파일**을 선택합니다. 컴파일러가 파일을 쓰는 위치를 변경할 수도 있습니다. 
+- Visual Studio를 사용하여 응용 프로그램을 개발할 경우 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. [속성] 대화 상자에서 **빌드** 탭을 선택하고 **XML 문서 파일**을 선택합니다. 컴파일러가 파일을 쓰는 위치를 변경할 수도 있습니다.
 
 - 명령줄에서 .NET Framework 응용 프로그램을 컴파일할 경우 컴파일 시 [/doc 컴파일러 옵션](language-reference/compiler-options/doc-compiler-option.md)을 추가합니다.  
 
@@ -121,7 +122,8 @@ XML 문서 주석에는 삼중 슬래시(`///`) 및 XML 형식의 주석 본문�
 
 [!code-csharp[See Tag](../../samples/snippets/csharp/concepts/codedoc/see-tag.cs)]
 
-`cref`는 현재 컴파일 환경에서 사용할 수 있는 형식 또는 멤버에 대한 참조를 나타내는 **required** 특성입니다. 이 특성은 프로젝트 또는 참조된 어셈블리에서 정의된 형식일 수 있습니다.
+`cref`는 현재 컴파일 환경에서 사용할 수 있는 형식 또는 멤버에 대한 참조를 나타내는 **required** 특성입니다.
+이 특성은 프로젝트 또는 참조된 어셈블리에서 정의된 형식일 수 있습니다.
 
 ### <a name="ltseealsogt"></a>&lt;seealso&gt;
 
@@ -174,7 +176,8 @@ XML 문서 주석에는 삼중 슬래시(`///`) 및 XML 형식의 주석 본문�
 [!code-csharp[Tagged Library](../../samples/snippets/csharp/concepts/codedoc/tagged-library.cs)]
 
 코드에서 클릭 가능한 상호 참조가 포함된 자세한 문서 웹 사이트를 생성할 수 있지만 코드를 읽기 어렵게 되는 다른 문제에 직면할 수 있습니다.
-자세히 살펴볼 정보가 너무 많으므로 이 코드에 참여하려는 개발자에게는 큰 문제일 수 있습니다. 다행히도 이 문제를 처리할 수 있는 XML 태그가 있습니다.
+자세히 살펴볼 정보가 너무 많으므로 이 코드에 참여하려는 개발자에게는 큰 문제일 수 있습니다.
+다행히도 이 문제를 처리할 수 있는 XML 태그가 있습니다.
 
 ### <a name="ltincludegt"></a>&lt;include&gt;
 
@@ -184,11 +187,12 @@ XML 문서 주석에는 삼중 슬래시(`///`) 및 XML 형식의 주석 본문�
 
 [!code-xml[Sample XML](../../samples/snippets/csharp/concepts/codedoc/include.xml)]
 
-위 XML에서 각 멤버의 문서 주석은 멤버가 수행하는 작업과 같은 이름이 지정된 태그 내부에 직접 나타납니다. 자신만의 전략을 선택할 수 있습니다. 이제 XML 주석이 개별 파일에 있으므로 `<include>` 태그를 사용하여 코드를 더 읽기 좋게 만드는 방법을 살펴봅니다.
+위 XML에서 각 멤버의 문서 주석은 멤버가 수행하는 작업과 같은 이름이 지정된 태그 내부에 직접 나타납니다. 자신만의 전략을 선택할 수 있습니다.
+이제 XML 주석이 개별 파일에 있으므로 `<include>` 태그를 사용하여 코드를 더 읽기 좋게 만드는 방법을 살펴봅니다.
 
 [!code-csharp[Include Tag](../../samples/snippets/csharp/concepts/codedoc/include-tag.cs)]
 
-해냈습니다. 코드를 다시 읽을 수 있고 문서 정보가 손실되지 않았습니다. 
+해냈습니다. 코드를 다시 읽을 수 있고 문서 정보가 손실되지 않았습니다.
 
 `filename` 특성은 문서가 포함된 XML 파일의 이름을 나타냅니다.
 
@@ -217,6 +221,6 @@ Sandcastle 등의 도구는 [`<event>`](http://ewsoftware.github.io/XMLCommentsG
 - 컴파일러는 파일 경로와 코드의 다른 부분에 대한 참조가 포함된 매개 변수의 유효성을 검사합니다.
 
 ## <a name="see-also"></a>참고 항목
-[XML 문서 주석(C# 프로그래밍 가이드)](programming-guide/xmldoc/xml-documentation-comments.md)
 
-[문서 주석에 대한 권장 태그(C# 프로그래밍 가이드)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+* [XML 문서 주석(C# 프로그래밍 가이드)](programming-guide/xmldoc/xml-documentation-comments.md)
+* [문서 주석에 대한 권장 태그(C# 프로그래밍 가이드)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

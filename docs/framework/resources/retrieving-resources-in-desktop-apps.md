@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 40eec7c03de616b22ae7b20c56cd5a05237ec759
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1be7120b9bff5c51141a1eac80051c4b464433aa
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399810"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43406596"
 ---
 # <a name="retrieving-resources-in-desktop-apps"></a>데스크톱 응용 프로그램의 리소스 검색
-.NET Framework 데스크톱 앱의 지역화된 리소스로 작업할 경우에는 기본 또는 중립 문화권의 리소스를 주 어셈블리와 패키지하여 앱이 지원하는 각 언어 또는 문화권에 대해 별도의 위성 어셈블리를 만드는 것이 가장 바람직합니다. 그런 다음 <xref:System.Resources.ResourceManager> 클래스를 다음 섹션에 설명한 대로 사용하여 명명된 리소스에 액세스할 수 있습니다. 주 어셈블리와 위성 어셈블리에 리소스를 포함하지 않으려는 경우 이 문서의 뒷부분에 나오는 [.resources 파일에서 리소스 검색](#from_file) 섹션에서 설명한 것처럼, 이진 .resources 파일에 직접 액세스할 수도 있습니다.  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱의 리소스 검색에 대한 자세한 내용은 Windows 개발자 센터의 [Windows 스토어 앱에서 리소스 만들기 및 검색](http://go.microsoft.com/fwlink/p/?LinkID=241674) 을 참조하세요.  
+.NET Framework 데스크톱 앱의 지역화된 리소스로 작업할 경우에는 기본 또는 중립 문화권의 리소스를 주 어셈블리와 패키지하여 앱이 지원하는 각 언어 또는 문화권에 대해 별도의 위성 어셈블리를 만드는 것이 가장 바람직합니다. 그런 다음 <xref:System.Resources.ResourceManager> 클래스를 다음 섹션에 설명한 대로 사용하여 명명된 리소스에 액세스할 수 있습니다. 주 어셈블리와 위성 어셈블리에 리소스를 포함하지 않으려는 경우 이 문서의 뒷부분에 나오는 [.resources 파일에서 리소스 검색](#from_file) 섹션에서 설명한 것처럼, 이진 .resources 파일에 직접 액세스할 수도 있습니다.  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱의 리소스 검색에 대한 자세한 내용은 Windows 개발자 센터의 [Windows 스토어 앱에서 리소스 만들기 및 검색](https://go.microsoft.com/fwlink/p/?LinkID=241674) 을 참조하세요.  
   
 <a name="from_assembly"></a>   
 ## <a name="retrieving-resources-from-assemblies"></a>어셈블리에서 리소스 검색  
@@ -158,7 +158,7 @@ GetObject.exe
  리소스를 만들어서 적절한 디렉터리에 배치했으면, <xref:System.Resources.ResourceManager> 메서드를 호출하여 리소스를 사용할 수 있도록 <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%28System.String%2CSystem.String%2CSystem.Type%29> 개체를 만듭니다. 첫 번째 매개 변수는 앱의 기본 .resources 파일의 루트 이름을 지정합니다(이전 섹션의 예제에서는 "strings"). 두 번째 매개 변수는 리소스의 위치를 지정합니다(이전 예제에서는 "Resources"). 세 번째 매개 변수는 사용할 <xref:System.Resources.ResourceSet> 구현을 지정합니다. 세 번째 매개 변수가 `null`인 경우 기본 런타임 <xref:System.Resources.ResourceSet> 가 사용됩니다.  
   
 > [!NOTE]
->  독립 실행형 .resources 파일을 사용하여 ASP.NET 앱을 배포해서는 안 됩니다. 그렇게 할 경우 잠금 문제가 발생할 수 있으며 XCOPY 배포가 중단됩니다. ASP.NET 리소스를 위성 어셈블리에 배포하는 것이 좋습니다. 자세한 내용은 [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd)을 참조하세요.  
+>  독립 실행형 .resources 파일을 사용하여 ASP.NET 앱을 배포해서는 안 됩니다. 그렇게 할 경우 잠금 문제가 발생할 수 있으며 XCOPY 배포가 중단됩니다. ASP.NET 리소스를 위성 어셈블리에 배포하는 것이 좋습니다. 자세한 내용은 [ASP.NET Web Page Resources Overview](https://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd)을 참조하세요.  
   
  <xref:System.Resources.ResourceManager> 개체를 인스턴스화한 후에는 앞서 설명한 대로 <xref:System.Resources.ResourceManager.GetString%2A>, <xref:System.Resources.ResourceManager.GetObject%2A>및 <xref:System.Resources.ResourceManager.GetStream%2A> 메서드를 사용하여 리소스를 검색합니다. 그러나 .resources 파일에서 직접 리소스를 검색하는 것은 어셈블리에서 포함된 리소스를 검색하는 것과 다릅니다. .resources 파일에서 리소스를 검색할 경우 <xref:System.Resources.ResourceManager.GetString%28System.String%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%29>및 <xref:System.Resources.ResourceManager.GetStream%28System.String%29> 메서드는 항상 현재 문화권과 관계없이 기본 문화권의 리소스를 검색합니다. 앱의 현재 문화권 또는 특정 문화권의 리소스를 검색하려면 <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29>또는 <xref:System.Resources.ResourceManager.GetStream%28System.String%2CSystem.Globalization.CultureInfo%29> 메서드를 호출하고 리소스를 검색할 문화권을 지정해야 합니다. 현재 문화권의 리소스를 검색하려면 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 속성의 값을 `culture` 인수로서 지정합니다. 리소스 관리자는 `culture`의 리소스를 검색할 수 없는 경우 표준 리소스 대체 규칙을 사용하여 적절한 리소스를 검색할 수 있습니다.  
   
@@ -205,4 +205,4 @@ csc Example.cs
  [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)  
  [리소스 패키징 및 배포](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
  [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Windows 스토어 앱에서 리소스 만들기 및 검색](http://go.microsoft.com/fwlink/p/?LinkID=241674)
+ [Windows 스토어 앱에서 리소스 만들기 및 검색](https://go.microsoft.com/fwlink/p/?LinkID=241674)

@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - event keyword [C#]
 ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
-ms.openlocfilehash: b58e06c87ebf601daf231c83993ebe512f51ecd9
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 35a42692bc87da63c69d7ccbce1b49396a84f5a2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961497"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43393954"
 ---
 # <a name="event-c-reference"></a>event(C# 참조)
 `event` 키워드는 게시자 클래스에서 이벤트를 선언하는 데 사용됩니다.  
@@ -46,10 +46,11 @@ ms.locfileid: "37961497"
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [add](../../../csharp/language-reference/keywords/add.md)  
- [remove](../../../csharp/language-reference/keywords/remove.md)  
- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
- [방법: 대리자 조합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [add](../../../csharp/language-reference/keywords/add.md)  
+- [remove](../../../csharp/language-reference/keywords/remove.md)  
+- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
+- [방법: 대리자 조합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

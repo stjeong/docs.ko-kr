@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: cd94fc34-ac15-427f-b723-a1240a4fab7d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 543853f581436a5fb7e5c897012b99bef20dc289
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f818ecf52ae1179d6d32d0b76cea3cc2a8f36ea8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582947"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43416414"
 ---
 # <a name="eventwaithandle-autoresetevent-countdownevent-manualresetevent"></a>EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
 이벤트 대기 핸들을 통해 스레드가 서로 신호를 보내고 상대방의 신호를 대기하여 작업을 동기화할 수 있습니다. 이러한 동기화 이벤트는 Win32 대기 핸들을 기반으로 하고 신호를 보낼 때 자동으로 다시 설정되는 이벤트 및 수동으로 다시 설정되는 이벤트라는 두 가지 유형으로 나눌 수 있습니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "33582947"
  <xref:System.Threading.CountdownEvent> 클래스는 대기 핸들을 사용하는 코드에서 포크/조인 병렬 처리 패턴을 구현하는 간단한 방법을 제공합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [대기 핸들](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
+ [대기 핸들](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
  <xref:System.Threading.WaitHandle> 클래스는 <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.Semaphore> 및 <xref:System.Threading.Mutex> 클래스의 기본 클래스입니다. 여기에는 모든 유형의 대기 핸들에 대해 작업할 때 유용한 정적 메서드(예: <xref:System.Threading.WaitHandle.SignalAndWait%2A> 및 <xref:System.Threading.WaitHandle.WaitAll%2A>)가 포함됩니다.  
   
 ## <a name="see-also"></a>참고 항목  

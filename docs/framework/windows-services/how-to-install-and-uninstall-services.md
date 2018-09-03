@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: ghogen
 manager: douge
-ms.openlocfilehash: 0d42a37b2e84c310569666771ded38e5feca3608
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9d8e84280b5821f8d8df36694198bd85fb8470d4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33513141"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416910"
 ---
 # <a name="how-to-install-and-uninstall-services"></a>방법: 서비스 설치 및 제거
-.NET Framework를 사용하여 Windows 서비스를 개발하는 경우에는 명령줄 유틸리티 InstallUtil.exe를 사용하여 서비스 응용 프로그램을 빠르게 설치할 수 있습니다. 사용자가 설치 및 제거할 수 있는 Windows 서비스를 릴리스하려는 개발자는 InstallShield를 사용해야 합니다. [Windows Installer Deployment](http://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)(Windows Installer 배포)를 참조하세요.  
+.NET Framework를 사용하여 Windows 서비스를 개발하는 경우에는 명령줄 유틸리티 InstallUtil.exe를 사용하여 서비스 응용 프로그램을 빠르게 설치할 수 있습니다. 사용자가 설치 및 제거할 수 있는 Windows 서비스를 릴리스하려는 개발자는 InstallShield를 사용해야 합니다. [Windows Installer Deployment](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)(Windows Installer 배포)를 참조하세요.  
   
 > [!WARNING]
 >  서비스를 컴퓨터에서 제거하려면 이 문서의 단계를 수행하는 대신 서비스를 설치한 프로그램 또는 소프트웨어 패키지를 확인하고 제어판에서 **프로그램 추가/제거**를 선택하여 해당 프로그램을 제거합니다. 대부분의 서비스는 Windows의 필수 요소이므로 제거하는 경우 시스템이 불안정해질 수 있습니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "33513141"
     installutil /u <yourproject>.exe  
     ```  
   
-3.  서비스의 실행 파일을 삭제해도 서비스가 레지스트리에 남아 있는 경우가 있습니다. 이러한 경우에는 [sc delete](http://technet.microsoft.com/library/cc742045.aspx) 명령을 사용하여 레지스트리에서 서비스 항목을 제거합니다.  
+3.  서비스의 실행 파일을 삭제해도 서비스가 레지스트리에 남아 있는 경우가 있습니다. 이러한 경우에는 [sc delete](https://technet.microsoft.com/library/cc742045.aspx) 명령을 사용하여 레지스트리에서 서비스 항목을 제거합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows 서비스 응용 프로그램 소개](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  

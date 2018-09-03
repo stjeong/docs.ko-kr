@@ -5,12 +5,12 @@ ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 01e0bd36b35319c90fc46d8f5f97161147852c7f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 70c49198c0198610eaa5001971b7de7efd2951aa
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397002"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43482345"
 ---
 # <a name="peer-name-resolution-protocol"></a>피어 이름 확인 프로토콜
 피어 투 피어 환경에서 각 피어는 이름 또는 기타 유형의 식별자로 서로의 네트워크 위치(주소, 프로토콜 및 포트)를 확인하기 위해 고유한 이름 확인 시스템을 사용합니다. 과거에는 기본적으로 일시적이었던 연결과 DNS(Domain Name System)의 다른 단점으로 인해 피어 이름 확인이 복잡했습니다.  
@@ -51,11 +51,11 @@ ms.locfileid: "33397002"
   
 -   <xref:System.Net.PeerToPeer.PeerName>: 등록하는 데 사용한 다음 클라우드에서 피어를 확인하는 데 사용하는 피어 이름을 정의합니다.  
   
--   <xref:System.Net.PeerToPeer.PeerNameRecord>: 피어의 등록 정보를 포함하는 레코드를 PNRP 클라우드에 정의합니다. 이 레코드에는 피어에 연결할 수 있는 네트워크 끝점이 포함되어 있습니다.  
+-   <xref:System.Net.PeerToPeer.PeerNameRecord>: 피어의 등록 정보를 포함하는 레코드를 PNRP 클라우드에 정의합니다. 이 레코드에는 피어에 연결할 수 있는 네트워크 엔드포인트가 포함되어 있습니다.  
   
 -   <xref:System.Net.PeerToPeer.PeerNameRegistration>: 피어 이름 등록을 시작하고 중지하는 메서드를 포함하여 피어 이름의 등록 프로세스를 정의합니다.  
   
--   <xref:System.Net.PeerToPeer.PeerNameResolver>: 확인할 동기 및 비동기 메서드를 포함하여 피어 이름을 네트워크 끝점으로 확인하는 프로세스를 정의합니다.  
+-   <xref:System.Net.PeerToPeer.PeerNameResolver>: 확인할 동기 및 비동기 메서드를 포함하여 피어 이름을 네트워크 엔드포인트로 확인하는 프로세스를 정의합니다.  
   
 -  
   
@@ -65,4 +65,4 @@ ms.locfileid: "33397002"
  <xref:System.ServiceModel.PeerResolvers>  
  <xref:System.Net.PeerToPeer>  
  [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)  
- [PeerToPeer 기술 샘플](http://go.microsoft.com/fwlink/?LinkID=179571)
+ [PeerToPeer 기술 샘플](https://go.microsoft.com/fwlink/?LinkID=179571)

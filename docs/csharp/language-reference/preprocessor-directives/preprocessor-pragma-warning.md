@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#pragma warning [C#]'
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
-ms.openlocfilehash: 079045f4eb52f03afa8733620029396d80cb75fe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 89ff8151d55ac58a1b114f7727297704ce26b9a7
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273659"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481932"
 ---
 # <a name="pragma-warning-c-reference"></a>#pragma warning(C# 참조)
 `#pragma warning`은 특정 경고를 사용하거나 사용하지 않도록 설정합니다.  
@@ -58,8 +58,9 @@ public class D
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)  
- [C# 컴파일러 오류](../../../csharp/language-reference/compiler-messages/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 전처리기 지시문](../../../csharp/language-reference/preprocessor-directives/index.md)  
+- [C# 컴파일러 오류](../../../csharp/language-reference/compiler-messages/index.md)

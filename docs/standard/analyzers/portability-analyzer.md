@@ -6,12 +6,12 @@ ms.author: mairaw
 ms.date: 07/26/2017
 ms.technology: dotnet-standard
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
-ms.openlocfilehash: f310e5fe45315dfa41d596c92d9412dc6b3bc125
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 515dd7a393d87811377aa5d9fb02de35943b6966
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567564"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43415690"
 ---
 # <a name="the-net-portability-analyzer"></a>.NET 이식성 분석기
 
@@ -39,7 +39,7 @@ ms.locfileid: "33567564"
 
 ![이식성 보고서](./media/portability-analyzer/portability-report.png)
 
-Visual Studio를 사용하고 싶지 않으신가요? 명령 프롬프트에서 이식성 분석기를 사용할 수도 있습니다. [API 이식성 분석기](http://www.microsoft.com/download/details.aspx?id=42678)를 다운로드합니다.
+Visual Studio를 사용하고 싶지 않으신가요? 명령 프롬프트에서 이식성 분석기를 사용할 수도 있습니다. [API 이식성 분석기](https://www.microsoft.com/download/details.aspx?id=42678)를 다운로드합니다.
 
 *   현재 디렉터리를 분석하려면 다음 명령을 입력합니다. `\...\ApiPort.exe analyze -f .`
 *   .dll 파일의 특정 목록을 분석하려면 다음 명령을 입력합니다. `\...\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`

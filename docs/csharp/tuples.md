@@ -3,12 +3,12 @@ title: 튜플 형식 - C# 가이드
 description: C#의 명명되지 않은 튜플 형식과 명명된 튜플 형식에 대한 자세한 정보
 ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
-ms.openlocfilehash: 6c3b6edb0481b8c2e4d92989b605f657aac607fa
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: b0c838791e640c9813005b8a32d009153a794c14
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36208305"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404316"
 ---
 # <a name="c-tuple-types"></a>C# 튜플 형식 #
 
@@ -71,7 +71,7 @@ C# 7.1부터 튜플에 대한 필드 이름은 튜플을 초기화하는 데 사
 
 [!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
 
-명시적 이름이 제공되지 않은 필드의 경우, 적용할 수 있는 암시적 이름이 프로젝션됩니다. 명시적이든 암시적이든 의미 체계 이름을 제공할 필요는 없습니다. 다음 이니셜라이저의 필드 이름은 `Item1` 및 `StringContent`이며 필드의 값은 각각 `42` 및 “모든 것에 대한 답”입니다.
+명시적 이름이 제공되지 않은 필드의 경우, 적용할 수 있는 암시적 이름이 프로젝션됩니다. 명시적이든 암시적이든 의미 체계 이름을 제공할 필요는 없습니다. 다음 이니셜라이저의 필드 이름은 `Item1` 및 `stringContent`이며 필드의 값은 각각 `42` 및 “모든 것에 대한 답”입니다.
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
 
@@ -92,7 +92,7 @@ C# 7.3부터 튜플 형식에서는 `==` 및 `!=` 연산자를 지원합니다. 
 
 [!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 
-튜플 같음 테스트를 더 간편하게 만드는 몇 가지 규칙이 있습니다. 튜플 같음은 다음 코드에서처럼 튜플 중 하나가 Null 가능 튜플인 경우 [해제 변환](/dotnet/csharp/language-reference/language-specification/conversions#lifted-conversion-operators)을 수행합니다.
+튜플 같음 테스트를 더 간편하게 만드는 몇 가지 규칙이 있습니다. 튜플 같음은 다음 코드에서처럼 튜플 중 하나가 Null 가능 튜플인 경우 [해제 변환](language-reference/language-specification/index.md)을 수행합니다.
 
 
 [!code-csharp[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]

@@ -3,11 +3,11 @@ title: 데이터 정렬(C#)
 ms.date: 07/20/2015
 ms.assetid: d93fa055-2f19-46d2-9898-e2aed628f1c9
 ms.openlocfilehash: 90ff7d52e6832935fe16e081e904acae3a24669a
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245437"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43402031"
 ---
 # <a name="sorting-data-c"></a>데이터 정렬(C#)
 정렬 작업은 하나 이상의 특성을 기준으로 시퀀스의 요소를 정렬합니다. 첫 번째 정렬 기준은 요소에 대해 기본 정렬을 수행합니다. 두 번째 정렬 기준을 지정하면 각 기본 정렬 그룹 내의 요소를 정렬할 수 있습니다.  

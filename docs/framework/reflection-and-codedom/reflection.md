@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ef4e2918b682d964b7f65eb98d497715d1e4ac57
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6a03e6760fbb233c656909fb99b48a84bddedef8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399060"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405574"
 ---
 # <a name="reflection-in-the-net-framework"></a>.NET Framework의 리플렉션
-<xref:System.Reflection> 네임스페이스의 클래스와 <xref:System.Type?displayProperty=nameWithType>을 함께 사용하여 로드된 [어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) 및 어셈블리 내에 정의된 형식(예: [클래스](http://msdn.microsoft.com/library/ad7d3561-271e-4546-82fc-e00b059f27a9), [인터페이스](http://msdn.microsoft.com/library/fd9d5975-5363-4bc9-b883-609f887895e5), [값 형식](http://msdn.microsoft.com/library/c9c567f8-8ab1-4d88-834d-00f7d92418de))에 대한 정보를 가져올 수 있습니다. 리플렉션을 사용하여 런타임에 형식 인스턴스를 만들고 이 인스턴스를 호출 및 액세스할 수도 있습니다. 리플렉션의 특정 측면에 대한 항목은 이 개요의 끝부분에서 [관련 항목](#related_topics)을 참조하세요.  
+<xref:System.Reflection> 네임스페이스의 클래스와 <xref:System.Type?displayProperty=nameWithType>을 함께 사용하여 로드된 [어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) 및 어셈블리 내에 정의된 형식(예: [클래스](https://msdn.microsoft.com/library/ad7d3561-271e-4546-82fc-e00b059f27a9), [인터페이스](https://msdn.microsoft.com/library/fd9d5975-5363-4bc9-b883-609f887895e5), [값 형식](https://msdn.microsoft.com/library/c9c567f8-8ab1-4d88-834d-00f7d92418de))에 대한 정보를 가져올 수 있습니다. 리플렉션을 사용하여 런타임에 형식 인스턴스를 만들고 이 인스턴스를 호출 및 액세스할 수도 있습니다. 리플렉션의 특정 측면에 대한 항목은 이 개요의 끝부분에서 [관련 항목](#related_topics)을 참조하세요.  
   
  [공용 언어 런타임](../../../docs/standard/clr.md) 로더는 같은 응용 프로그램 범위가 포함된 개체 주위의 경계를 구성하는 [응용 프로그램 도메인](../../../docs/framework/app-domains/application-domains.md)을 관리합니다. 이 관리에는 각 어셈블리를 적절한 응용 프로그램 도메인으로 로드하는 작업과 각 어셈블리 내에서 형식 계층 구조의 메모리 레이아웃을 제어하는 작업이 포함됩니다.  
   

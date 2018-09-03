@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sealed keyword [C#]
 ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
-ms.openlocfilehash: be13e04dce12dfb60a1179e05a0a47eca1df1af4
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: 674c7e1cd87b95318f739ab22876f4bfe5ae73d8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42752085"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43386642"
 ---
 # <a name="sealed-c-reference"></a>sealed(C# 참조)
 클래스에 적용된 경우 `sealed` 한정자는 다른 클래스가 해당 클래스에서 상속하지 못하도록 합니다. 다음 예제에서 `B` 클래스는 `A` 클래스에서 상속하지만 `B` 클래스에서 상속할 수 있는 클래스는 없습니다.  
@@ -62,13 +62,14 @@ sealed class B : A {}
   
 -   파생 클래스가 사용자 클래스를 수정하여 더 이상 올바르게 또는 예상대로 작동하지 않을 가능성  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [정적 클래스 및 정적 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
- [추상/봉인된 클래스 및 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
- [override](../../../csharp/language-reference/keywords/override.md)  
- [virtual](../../../csharp/language-reference/keywords/virtual.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [정적 클래스 및 정적 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
+- [추상/봉인된 클래스 및 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
+- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
+- [override](../../../csharp/language-reference/keywords/override.md)  
+- [virtual](../../../csharp/language-reference/keywords/virtual.md)

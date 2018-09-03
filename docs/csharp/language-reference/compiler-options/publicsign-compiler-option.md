@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -publicsign compiler option [C#]
 - publicsign compiler option [C#]
 - /publicsign compiler option [C#]
-ms.openlocfilehash: ec25f9c1f2ef943db41bcfa20c8efd1d05866acd
-ms.sourcegitcommit: 77d9a94dac4c05827ed0663d95e0f9ad35d6682e
+ms.openlocfilehash: 01ce30b9ac5997f56f29dcbbfa43a27738fa5556
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34472826"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43474254"
 ---
 # <a name="-publicsign-c-compiler-options"></a>-publicsign(C# 컴파일러 옵션)
 
@@ -42,8 +42,9 @@ ms.locfileid: "34472826"
 1. **서명만 연기** 속성을 수정합니다.
 
 ## <a name="see-also"></a>참고 항목
- [C# 컴파일러 -delaysign 옵션](delaysign-compiler-option.md)  
- [C# 컴파일러 -keyfile 옵션](keyfile-compiler-option.md)  
- [C# 컴파일러 -keycontainer 옵션](keycontainer-compiler-option.md)  
- [C# 컴파일러 옵션](index.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# 컴파일러 -delaysign 옵션](delaysign-compiler-option.md)  
+- [C# 컴파일러 -keyfile 옵션](keyfile-compiler-option.md)  
+- [C# 컴파일러 -keycontainer 옵션](keycontainer-compiler-option.md)  
+- [C# 컴파일러 옵션](index.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

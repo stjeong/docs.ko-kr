@@ -7,12 +7,12 @@ helpviewer_keywords:
 - concatenating strings [C#]
 - strings [C#], concatenation
 ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
-ms.openlocfilehash: d4e57347a11b804f3ea7f4bb9736c134c4b71929
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 355e56acf36b6212ee4563f34722b10b56a0fb47
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961315"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43468656"
 ---
 # <a name="how-to-concatenate-multiple-strings-c-guide"></a>방법: 여러 문자열 연결(C# 가이드)
 
@@ -23,7 +23,6 @@ ms.locfileid: "37961315"
 다음 예제에서는 소스 코드의 가독성을 향상하기 위해 긴 문자열 리터럴을 작은 문자열로 분할하기 위해 연결을 사용합니다. 분할된 문자열은 컴파일 시간에 단일 문자열로 연결됩니다. 이 경우 처리되는 문자열 수가 런타임 성능에 미치는 영향은 없습니다.  
   
  [!code-csharp-interactive[Combining strings at compile time](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#1)]  
-  
 
 문자열 변수를 연결하려면 `+` 또는 `+=` 연산자, [문자열 보간](../language-reference/tokens/interpolated.md) 또는 <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Join%2A?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> 메서드를 사용할 수 있습니다. `+` 연산자는 사용하기 쉽고 직관적인 코드를 만듭니다. 하나의 문에서 여러 `+` 연산자를 사용해도 문자열 콘텐츠는 한 번만 복사됩니다. 다음 코드는 `+` 및 `+=` 연산자를 사용하여 문자열을 연결하는 예제를 보여줍니다.
 
@@ -34,7 +33,7 @@ ms.locfileid: "37961315"
 [!code-csharp-interactive[building strings using string interpolation](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#3)]  
   
 > [!NOTE]
->  문자열 연결 연산에서 C # 컴파일러는 null 문자열을 빈 문자열과 동일하게 처리합니다.
+> 문자열 연결 연산에서 C # 컴파일러는 null 문자열을 빈 문자열과 동일하게 처리합니다.
 
 문자열을 연결하는 다른 메서드는 <xref:System.String.Format%2A?displayProperty=nameWithType>입니다. 이 메서드는 작은 수의 구성 요소 문자열에서 문자열을 빌드할 때 잘 작동합니다.
 
@@ -54,8 +53,9 @@ ms.locfileid: "37961315"
 
 [GitHub 리포지토리](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings)의 코드를 확인하여 이러한 샘플을 시험해 볼 수 있습니다. 또는 샘플을 [zip 파일로](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip) 다운로드할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목  
- <xref:System.String>  
- <xref:System.Text.StringBuilder>  
- [C# 프로그래밍 가이드](../programming-guide/index.md)  
- [문자열](../programming-guide/strings/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.String>  
+- <xref:System.Text.StringBuilder>  
+- [C# 프로그래밍 가이드](../programming-guide/index.md)  
+- [문자열](../programming-guide/strings/index.md)

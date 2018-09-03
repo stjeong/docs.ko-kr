@@ -5,12 +5,12 @@ helpviewer_keywords:
 - types [C#]
 - data types [C#], type system
 ms.assetid: 16b984df-f417-4e02-b1e6-4589d4a614ea
-ms.openlocfilehash: d0fe09092b438af90658d599b6a5e63cb62af580
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c5c29f5d9a1a4e25e2d5f8816a0df31fa9a91fb1
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270427"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463314"
 ---
 # <a name="types-c-reference"></a>형식(C# 참조)
 C# 형식화 시스템에는 다음 범주가 포함됩니다.  
@@ -29,10 +29,11 @@ C# 형식화 시스템에는 다음 범주가 포함됩니다.
   
  값 형식은 nullable이기도 하므로, 값이 아닌 추가 상태를 저장할 수 있습니다. 자세한 내용은 [Null 허용 형식](../../../csharp/programming-guide/nullable-types/index.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [형식 참조 테이블](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
- [캐스팅 및 형식 변환](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
- [유형](../../../csharp/programming-guide/types/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [형식 참조 테이블](../../../csharp/language-reference/keywords/reference-tables-for-types.md)  
+- [캐스팅 및 형식 변환](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
+- [유형](../../../csharp/programming-guide/types/index.md)

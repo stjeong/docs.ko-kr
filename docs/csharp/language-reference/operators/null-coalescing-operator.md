@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ?? operator [C#]
 - conditional-AND operator (&&) [C#]
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
-ms.openlocfilehash: 8fa751654acaf5939fb8f8068c7323e365f7bdab
-ms.sourcegitcommit: 43924acbdbb3981d103e11049bbe460457d42073
+ms.openlocfilehash: 03d81d4216dabce2ea75b9fdcf6ef0971cc32490
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34458107"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43388861"
 ---
 # <a name="-operator-c-reference"></a>?? 연산자(C# 참조)
 `??` 연산자는 null 병합 연산자라고 합니다.  이 연산자는 피연산자가 null이 아닐 경우 왼쪽 피연산자를 반환하고 null일 경우 오른쪽 피연산자를 반환합니다.  
@@ -28,9 +28,10 @@ ms.locfileid: "34458107"
 ## <a name="example"></a>예  
  [!code-csharp[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
- [Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)  
- [What Exactly Does ‘Lifted’ mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)(‘리프트’란 정확히 어떤 의미인가요?)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
+- [Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)  
+- [What Exactly Does ‘Lifted’ mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)(‘리프트’란 정확히 어떤 의미인가요?)

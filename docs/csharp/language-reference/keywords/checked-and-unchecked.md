@@ -9,12 +9,12 @@ helpviewer_keywords:
 - unchecked statement [C#]
 - statements [C#], checked and unchecked
 ms.assetid: a84bc877-2c7f-4396-8735-1ce97c42f35e
-ms.openlocfilehash: f8e292a67fab49b5fc3616e438d063eca2617274
-ms.sourcegitcommit: 22c3c8f74eaa138dbbbb02eb7d720fce87fc30a9
+ms.openlocfilehash: 04f603905690497bcd4249f73c7296be2c269a60
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/18/2018
-ms.locfileid: "34234375"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43468813"
 ---
 # <a name="checked-and-unchecked-c-reference"></a>Checked 및 Unchecked(C# 참조)
 checked 컨텍스트 또는 unchecked 컨텍스트에서 C# 문을 실행할 수 있습니다. checked 컨텍스트에서는 산술 오버플로가 있으면 예외가 발생합니다. unchecked 컨텍스트에서는 산술 오버플로가 무시되고 대상 형식에 맞지 않는 상위 비트가 삭제되어 해당 결과가 잘립니다.  
@@ -36,7 +36,8 @@ checked 컨텍스트 또는 unchecked 컨텍스트에서 C# 문을 실행할 수
  상수 식(컴파일 시간에 완전히 계산될 수 있는 식)의 경우 기본 컨텍스트는 항상 checked입니다. 상수 식이 unchecked 컨텍스트에 명시적으로 배치되지 않는 경우 식에 대한 컴파일 시간 계산 중 발생하는 오버플로로 인해 컴파일 시간 오류가 발생합니다.
   
 ## <a name="see-also"></a>참고 항목  
- [C# 참조](../index.md)  
- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
- [C# 키워드](index.md)  
- [문 키워드](statement-keywords.md)
+
+- [C# 참조](../index.md)  
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
+- [C# 키워드](index.md)  
+- [문 키워드](statement-keywords.md)

@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 95d28dd2255b7579cc646f8f8107b76c39cba3fd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 50ff6e2baaee683674f82cff178eeef7b7e43de4
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399021"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486214"
 ---
 # <a name="using-the-codedom"></a>CodeDOM 사용
 CodeDOM은 소스 코드 요소의 다양한 일반적인 형식을 나타내는 형식을 제공합니다. 개체 그래프를 어셈블하는 데 CodeDOM 요소를 사용하는 소스 코드 모델을 빌드하는 프로그램을 디자인할 수 있습니다. 이 개체 그래프는 CodeDOM 코드 생성기를 사용하여 지원되는 프로그래밍 언어에 대한 소스 코드로 렌더링할 수 있습니다. CodeDOM은 소스 코드를 이진 어셈블리로 컴파일하는 데도 사용할 수 있습니다.  
@@ -127,4 +127,4 @@ CodeDOM은 소스 코드 요소의 다양한 일반적인 형식을 나타내는
   
  각 CodeDOM 형식에 대한 문서는 <xref:System.CodeDom> 네임스페이스에 대한 참조 문서를 참조하세요.  
   
- 코드 요소의 특정 형식을 나타내는 CodeDOM 요소를 찾기 위한 빠른 차트는 [CodeDOM 빠른 참조](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524)를 참조하세요.
+ 코드 요소의 특정 형식을 나타내는 CodeDOM 요소를 찾기 위한 빠른 차트는 [CodeDOM 빠른 참조](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524)를 참조하세요.

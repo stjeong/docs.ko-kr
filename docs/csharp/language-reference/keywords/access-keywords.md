@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - access keywords [C#]
 ms.assetid: 3b680d9c-0998-42df-8ba7-5783f7abda75
-ms.openlocfilehash: f16e8ed779e8e6af4d1af00f9fb63fad8c318e45
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7700c49a609a90faf9b3b8b90719a223952d7e9e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33216044"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43391632"
 ---
 # <a name="access-keywords-c-reference"></a>액세스 키워드(C# 참조)
 이 섹션에서는 다음과 같은 액세스 키워드를 소개합니다.  
@@ -23,7 +23,8 @@ ms.locfileid: "33216044"
      클래스의 현재 인스턴스를 참조합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)

@@ -3,12 +3,12 @@ title: 내부 조인 수행(C#의 LINQ)
 description: C#에서 LINQ를 사용하여 내부 조인을 수행하는 방법을 알아봅니다.
 ms.date: 12/1/2016
 ms.assetid: 45bceed6-f549-4114-a9b1-b44feb497742
-ms.openlocfilehash: 5dedab3fe83d4c16f8f0879f564cdd39e2b2446c
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 2f6aad30dc8278ce1bb88bacc19b27deaa0288c7
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404202"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484172"
 ---
 # <a name="perform-inner-joins"></a>내부 조인 수행
 
@@ -66,8 +66,8 @@ C#의 두 번째 `join` 절은 `Person` 형식의 `Owner` 속성과 동물 이�
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Linq.Enumerable.Join%2A>  
-<xref:System.Linq.Enumerable.GroupJoin%2A>  
-[그룹화 조인 수행](perform-grouped-joins.md)  
-[왼쪽 우선 외부 조인 수행](perform-left-outer-joins.md)  
-[무명 형식](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>  
+- <xref:System.Linq.Enumerable.GroupJoin%2A>  
+- [그룹화 조인 수행](perform-grouped-joins.md)  
+- [왼쪽 우선 외부 조인 수행](perform-left-outer-joins.md)  
+- [무명 형식](../programming-guide/classes-and-structs/anonymous-types.md)  

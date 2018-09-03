@@ -9,12 +9,12 @@ helpviewer_keywords:
 - assemblies [C#], compiling
 - -target compiler options [C#]
 ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
-ms.openlocfilehash: 7736b8850a7b09f7212e83e05acf0e1994bce0fe
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: a337ecbc614ff40eda42fc5263dbb52aa92b905f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43000006"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43397731"
 ---
 # <a name="-target-c-compiler-options"></a>-target(C# 컴파일러 옵션)
 **-target** 컴파일러 옵션은 다음 네 가지 형태 중 하나로 지정할 수 있습니다.  
@@ -63,6 +63,7 @@ public class TestClass
  이 컴파일러 옵션을 프로그래밍 방식으로 설정하는 방법에 대한 자세한 내용은 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)  
- [-subsystemversion(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)  
+- [-subsystemversion(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)

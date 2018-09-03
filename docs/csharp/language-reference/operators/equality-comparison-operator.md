@@ -7,12 +7,12 @@ helpviewer_keywords:
 - == operator [C#]
 - equality operator [C#]
 ms.assetid: 34c6b597-caa2-4855-a7cd-38ecdd11bd07
-ms.openlocfilehash: f8356320817771cb559192c1ce720a80bf33bbf9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d9d7dcf3b38939e681fb51d6c674151cee78b3d0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273389"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43421114"
 ---
 # <a name="-operator-c-reference"></a>== 연산자(C# 참조)
 미리 정의된 값 형식의 경우 같음 연산자(`==`)는 피연산자의 값이 같으면 true, 같지 않으면 `false`를 반환합니다. [string](../../../csharp/language-reference/keywords/string.md)을 제외한 참조 형식의 경우 `==`은 두 피연산자가 동일한 개체를 참조하면 `true`를 반환합니다. `string` 형식의 경우 `==`은 문자열의 값을 비교합니다.  
@@ -23,7 +23,8 @@ ms.locfileid: "33273389"
 ## <a name="example"></a>예  
  [!code-csharp[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/CSharp/equality-comparison-operator_1.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)

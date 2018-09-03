@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: a7e6f091-d02c-49ba-b736-7295cb0eb743
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ed6519cb6bb7006f62ef83cd6baf8f2e32a44d19
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 8c3bd568cf504125bc99801815d08764417b42cd
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744384"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43469000"
 ---
 # <a name="how-to-install-an-assembly-into-the-global-assembly-cache"></a>방법: 전역 어셈블리 캐시에 어셈블리 설치
 강력한 이름의 어셈블리를 전역 어셈블리 캐시(GAC)에 설치하는 방법은 두 가지입니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "32744384"
 > [!IMPORTANT]
 >  강력한 이름의 어셈블리만 GAC에 설치할 수 있습니다. 강력한 이름의 어셈블리를 만드는 방법에 대한 자세한 내용은 [방법: 강력한 이름으로 어셈블리 서명](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)을 참조하세요.  
   
--   [Windows Installer](http://msdn.microsoft.com/library/windows/desktop/cc185688.aspx) 사용.  
+-   [Windows Installer](/windows/desktop/Msi/windows-installer-portal) 사용.  
   
      이렇게 하려면 Visual Studio 2012 및 Visual Studio 2013에서 InstallShield Limited Edition 프로젝트를 만듭니다.  
   
@@ -82,4 +82,4 @@ gacutil -i hello.dll
  [방법: 전역 어셈블리 캐시에서 어셈블리 제거](../../../docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)  
  [Gacutil.exe(전역 어셈블리 캐시 도구)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)  
  [방법: 강력한 이름으로 어셈블리 서명](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)  
- [Windows Installer 배포](http://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+ [Windows Installer 배포](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)

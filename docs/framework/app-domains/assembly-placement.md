@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: ff8d48bc-f606-484f-9fe1-d0af264269fb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c6a10a896494304b9c3c17bc320464a8273e430d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: d42b73d1ec20e66d604f19bb836cb7e2778e62f0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752132"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43461763"
 ---
 # <a name="assembly-placement"></a>어셈블리 배치
 대부분의 .NET Framework 응용 프로그램의 경우 해당 응용 프로그램을 구성하는 어셈블리는 응용 프로그램 디렉터리, 응용 프로그램 디렉터리의 하위 디렉터리 또는 전역 어셈블리 캐시(어셈블리가 공유된 경우)에서 찾을 수 있습니다. 구성 파일에 있는 [\<codeBase> 요소](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md)를 사용하면 공용 언어 런타임에서 어셈블리를 검색하는 위치를 재정의할 수 있습니다. 어셈블리에 강력한 이름이 없는 경우, [\<codeBase> 요소](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md)를 사용하여 지정한 위치는 응용 프로그램 디렉터리와 그 하위 디렉터리로 제한됩니다. 반면, 강력한 이름의 어셈블리인 경우에는 [\<codeBase> 요소](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md)를 사용하여 컴퓨터 또는 네트워크상의 모든 위치를 지정할 수 있습니다.  
@@ -24,5 +24,5 @@ ms.locfileid: "32752132"
 ## <a name="see-also"></a>참고 항목  
  [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)  
- [고급 COM 상호 운용성](http://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
+ [고급 COM 상호 운용성](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
  [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

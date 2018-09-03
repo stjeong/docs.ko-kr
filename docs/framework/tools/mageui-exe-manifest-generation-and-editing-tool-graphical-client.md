@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - MageUI.exe
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
-ms.openlocfilehash: 0772fcb32ce4d7500b358db312241e489b3a24c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: eb93e53e7b77ee2747bce3fb9a45d7061450e65c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33404955"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43390262"
 ---
 # <a name="mageuiexe-manifest-generation-and-editing-tool-graphical-client"></a>MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)
 MageUI.exe는 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지만 Windows 기반 UI(사용자 인터페이스)를 사용합니다. 이 도구를 사용하면 배포 및 응용 프로그램 매니페스트를 만들고, 편집하고, 서명할 수 있습니다. MageUI.exe로 만든 새 매니페스트는 [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]을 대상으로 합니다. 이전 버전의 MageUI.exe는 이전 .NET Framework 버전을 대상으로 사용해야 합니다. 매니페스트에서 어셈블리를 추가하거나 제거 또는 기존 매니페스트를 다시 서명할 때 MageUI.exe는 매니페스트를 대상 [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]로 업데이트하지 않습니다. 자세한 내용은 [Mage.exe(매니페스트 생성 및 편집 도구)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)를 참조하세요.  
@@ -65,7 +65,7 @@ MageUI.exe는 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지�
 |**새로 만들기**|CA(인증 기관)를 통해 확인할 수 없는 새 .pfx를 생성합니다. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 배포에 서명하는 데 사용되는 인증서의 형식에 대한 자세한 설명은 [신뢰할 수 있는 응용 프로그램 배포 개요](/visualstudio/deployment/trusted-application-deployment-overview)를 참조하세요.|  
 |**암호**|이 인증서로 서명하는 데 사용되는 암호를 입력할 수 있는 영역을 제공합니다. 암호를 사용하지 않는 경우에는 이 영역을 비워 둡니다.|  
 |**저장된 인증서로 서명**|컴퓨터의 인증서 저장소에 저장된 디지털 인증서의 목록을 표시하여 디지털 인증서를 선택할 수 있게 합니다.|  
-|**타임스탬프 URI**|디지털 타임스탬프 서비스의 URI(Uniform Resource Locator)를 표시합니다. 매니페스트에 타임스탬프를 적용하면 응용 프로그램의 다음 버전을 배포하기 전에 디지털 인증서가 만료되어도 매니페스트에 다시 서명할 필요가 없습니다. 자세한 내용은 [Windows 루트 인증서 프로그램 구성원](http://go.microsoft.com/fwlink/?LinkId=159000) 및 [ClickOnce 및 Authenticode](/visualstudio/deployment/clickonce-and-authenticode)를 참조하세요.|  
+|**타임스탬프 URI**|디지털 타임스탬프 서비스의 URI(Uniform Resource Locator)를 표시합니다. 매니페스트에 타임스탬프를 적용하면 응용 프로그램의 다음 버전을 배포하기 전에 디지털 인증서가 만료되어도 매니페스트에 다시 서명할 필요가 없습니다. 자세한 내용은 [Windows 루트 인증서 프로그램 구성원](https://go.microsoft.com/fwlink/?LinkId=159000) 및 [ClickOnce 및 Authenticode](/visualstudio/deployment/clickonce-and-authenticode)를 참조하세요.|  
 |**서명 안 함**|디지털 인증서의 서명을 추가하지 않고 매니페스트를 저장할 수 있습니다.|  
   
 ## <a name="tab-and-panel-descriptions"></a>탭 및 패널 설명  
@@ -127,7 +127,7 @@ MageUI.exe는 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지�
   
 |UI 요소|설명|  
 |----------------|-----------------|  
-|**권한 집합 형식**|클라이언트에서 실행할 이 응용 프로그램에 필요한 최소 권한 집합입니다. 이들 권한 집합 및 이들 권한 집합이 요청하거나 요청하지 않는 권한에 대한 자세한 내용은 [NIB: 명명된 권한 집합](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)을 참조하세요.|  
+|**권한 집합 형식**|클라이언트에서 실행할 이 응용 프로그램에 필요한 최소 권한 집합입니다. 이들 권한 집합 및 이들 권한 집합이 요청하거나 요청하지 않는 권한에 대한 자세한 내용은 [NIB: 명명된 권한 집합](https://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)을 참조하세요.|  
 |**설명**|응용 프로그램 매니페스트에서 권한 집합을 나타내려고 만들어진 XML입니다. 응용 프로그램 매니페스트 XML 형식을 잘 알고 있지 않다면 이 XML을 수동으로 편집하면 안 됩니다. 자세한 내용은 [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)를 참조하세요.|  
   
 ### <a name="deployment-manifest-tab"></a>배포 매니페스트 탭  

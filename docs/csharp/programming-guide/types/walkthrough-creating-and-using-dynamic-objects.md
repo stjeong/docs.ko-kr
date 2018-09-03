@@ -9,12 +9,12 @@ helpviewer_keywords:
 - dynamic objects
 - dynamic objects [C#]
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
-ms.openlocfilehash: f315b6500e68812863da722791d257930e190602
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: a04962912e3bc54d600b4514967cbc40a0d4f590
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931292"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43420878"
 ---
 # <a name="walkthrough-creating-and-using-dynamic-objects-c-and-visual-basic"></a>연습: 동적 개체 만들기 및 사용(C# 및 Visual Basic)
 
@@ -163,4 +163,4 @@ ms.locfileid: "42931292"
  [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)  
  [초기 바인딩 및 런타임에 바인딩](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
- [동적 인터페이스 구현(Microsoft TechNet에서 다운로드 가능한 PDF)](http://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf)
+ [동적 인터페이스 구현(Microsoft TechNet에서 다운로드 가능한 PDF)](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf)

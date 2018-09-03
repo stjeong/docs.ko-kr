@@ -4,15 +4,15 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - breaking changes [Visual Basic]
 ms.assetid: 708fb176-35eb-4cbc-a6e7-a04c6e3bdaff
-ms.openlocfilehash: e7f6791c56019508406448267237cf0d2d261205
-ms.sourcegitcommit: d8bf4976eafe3289275be3811e7cb721bfff7e1e
+ms.openlocfilehash: 008b887e96f077e64b012d224c7c031a9b65027e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753327"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43396010"
 ---
 # <a name="visual-basic-breaking-changes-in-visual-studio"></a>Visual Studio의 Visual Basic 주요 변경 내용
-Visual Studio 2017 에 대한 최신 설명서는 [Visual Studio 2017 설명서](http://docs.microsoft.com/visualstudio/)를 참조하세요.
+Visual Studio 2017 에 대한 최신 설명서는 [Visual Studio 2017 설명서](https://docs.microsoft.com/visualstudio/)를 참조하세요.
 
 Visual Studio 2015의 Visual Basic에서 변경된 사항은 Visual Studio 2013의 Visual Basic에서 생성된 응용 프로그램을 컴파일하는 데 영향을 주지 않으며, 그러한 응용 프로그램의 런타임 동작을 변경하지도 않습니다.  
   

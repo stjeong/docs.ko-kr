@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램의 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 4e1e1671238d3cc5944bfe53b49f7d0ddd969aff
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 79b63c376d25725b2bcb6c16cdb4d06e107d5c07
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105371"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43418642"
 ---
 # <a name="creating-composite-ui-based-on-microservices-including-visual-ui-shape-and-layout-generated-by-multiple-microservices"></a>여러 마이크로 서비스에서 생성된 시각적 UI 셰이프 및 레이아웃을 포함하여 마이크로 서비스를 기반으로 복합 UI 만들기
 
@@ -35,7 +35,7 @@ ms.locfileid: "37105371"
 
 따라서 마이크로 서비스에서 제어하는 복합 UI 방법은 사용 중인 UI 기술에 따라 더 어렵거나 쉬워질 수 있습니다. 예를 들어, SPA 또는 네이티브 모바일 앱을 빌드하기 위해 기존 웹 응용 프로그램을 빌드하는 동일한 기술을 사용하지 않습니다(Xamarin 앱을 개발하는 경우 마찬가지로 이 방법이 좀 더 어려울 수 있음).
 
-[eShopOnContainers](http://aka.ms/MicroservicesArchitecture) 응용 프로그램 예제는 여러 가지 이유로 모놀리식 UI 방법을 사용합니다. 먼저 마이크로 서비스 및 컨테이너에 대한 소개입니다. UI를 디자인하고 개발하는 경우 복합 UI를 사용하는 것이 고급 기능이지만 더 복잡합니다. 다음으로 eShopOnContainers는 Xamarin에 기반한 기본 모바일 앱을 제공합니다. 그러면 클라이언트 C\#에서 더 복잡해 집니다.
+[eShopOnContainers](https://aka.ms/MicroservicesArchitecture) 응용 프로그램 예제는 여러 가지 이유로 모놀리식 UI 방법을 사용합니다. 먼저 마이크로 서비스 및 컨테이너에 대한 소개입니다. UI를 디자인하고 개발하는 경우 복합 UI를 사용하는 것이 고급 기능이지만 더 복잡합니다. 다음으로 eShopOnContainers는 Xamarin에 기반한 기본 모바일 앱을 제공합니다. 그러면 클라이언트 C\#에서 더 복잡해 집니다.
 
 그러나 다음 참조를 사용하여 마이크로 서비스를 기반으로 하는 복합 UI에 대해 자세히 알아봅니다.
 

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Visual C# compiler, enabling
 - compiling source code, from command line
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
-ms.openlocfilehash: 0935cb62244691af7fa450fef9c1ab8f6c616579
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 77375e428fe0563c0b533ca97abd21070e850682
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33214993"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43466740"
 ---
 # <a name="how-to-set-environment-variables-for-the-visual-studio-command-line"></a>방법: Visual Studio 명령줄에 필요한 환경 변수 설정
 
@@ -43,4 +43,5 @@ Visual Studio의 이전 버전이 설치된 컴퓨터에 Visual Studio의 최신
     >  VsDevCmd.bat는 컴퓨터마다 다를 수 있습니다. 누락되거나 손상된 VsDevCmd.bat 파일을 다른 컴퓨터의 VsDevCmd.bat 파일로 바꾸지 마세요. 대신 설치 프로그램을 다시 실행하여 누락된 파일을 교체하십시오.  
   
 ## <a name="see-also"></a>참고 항목  
- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+
+- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

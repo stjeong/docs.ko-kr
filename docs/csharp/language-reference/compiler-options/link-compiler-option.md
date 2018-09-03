@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C#]
 - link compiler option [C#]
 ms.assetid: 00da70c6-9ea1-43c2-86f2-aa7f26c03475
-ms.openlocfilehash: 668476beb2eefa7a818f60606443ae06ae26a17d
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 00cfda489feb468c7e3c140ab63369b408b09152
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930965"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484454"
 ---
 # <a name="-link-c-compiler-options"></a>-link(C# 컴파일러 옵션)
 컴파일러에서 지정된 어셈블리의 COM 형식 정보를 현재 컴파일하고 있는 프로젝트에 사용할 수 있도록 합니다.  
@@ -81,10 +81,11 @@ ms.locfileid: "42930965"
 csc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.cs  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [연습: 관리되는 어셈블리의 형식 포함](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
- [-reference(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)  
- [-noconfig(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)  
- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
- [상호 운용성 개요](../../../csharp/programming-guide/interop/interoperability-overview.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [연습: 관리되는 어셈블리의 형식 포함](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
+- [-reference(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)  
+- [-noconfig(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)  
+- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
+- [상호 운용성 개요](../../../csharp/programming-guide/interop/interoperability-overview.md)

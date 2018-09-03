@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: aaa508963bc4920aae65b1d172e2dc15f13451bf
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 909b9369aba6b22899ae3fe7ac15eb470c5c2697
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925118"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43390759"
 ---
 # <a name="net-framework-system-requirements"></a>.NET Framework 시스템 요구 사항
 
@@ -73,7 +73,7 @@ ms.locfileid: "42925118"
 
 - .NET Framework 4는 IA64 플랫폼도 지원합니다.
 
-- 최상의 호환성 및 보안을 위해 모든 플랫폼에 대해 [Windows 업데이트 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=168461)에서 제공하는 최신 Windows 서비스 팩으로 업그레이드하고 중요 업데이트를 설치하는 것이 좋습니다.
+- 최상의 호환성 및 보안을 위해 모든 플랫폼에 대해 [Windows 업데이트 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=168461)에서 제공하는 최신 Windows 서비스 팩으로 업그레이드하고 중요 업데이트를 설치하는 것이 좋습니다.
 
 - 64비트 운영 체제에서는 .NET Framework가 WOW64(64비트 컴퓨터의 32비트 프로세싱) 및 64비트 프로세싱을 둘 다 지원합니다.
 
@@ -99,7 +99,7 @@ ms.locfileid: "42925118"
 
 - Windows Server 2008 SP2에서는 .NET Framework가 Server Core 역할에서 지원되지 않습니다.
 
-- 최상의 호환성 및 보안을 위해 모든 플랫폼에 대해 [Windows 업데이트 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=168461)에서 제공하는 최신 Windows 서비스 팩과 중요 업데이트로 업그레이드하는 것이 좋습니다. 일부 운영 체제에서는 최신 Windows 서비스 팩을 설치해야 할 수도 있습니다.
+- 최상의 호환성 및 보안을 위해 모든 플랫폼에 대해 [Windows 업데이트 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=168461)에서 제공하는 최신 Windows 서비스 팩과 중요 업데이트로 업그레이드하는 것이 좋습니다. 일부 운영 체제에서는 최신 Windows 서비스 팩을 설치해야 할 수도 있습니다.
 
 - 64비트 운영 체제에서는 .NET Framework가 WOW64(64비트 컴퓨터의 32비트 프로세싱) 및 64비트 프로세싱을 둘 다 지원합니다.
 

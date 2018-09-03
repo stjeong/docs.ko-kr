@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 7ead0cb3-3b19-414a-8417-a1c1fa198d9e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bc181d0aecd6a0c7c0800544ea00a818573c954c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dc3c611cf043538e7f069cc1634bd5be5e70dfab
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393818"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43392278"
 ---
 # <a name="migrating-from-the-net-framework-11"></a>.NET Framework 1.1에서 마이그레이션
 [!INCLUDE[win7](../../../includes/win7-md.md)] 및 이후 버전의 Windows 운영 체제는 [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)]을 지원하지 않습니다. 따라서 [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] 이상 운영 체제 버전에서 수정하지 않으면 [!INCLUDE[win7](../../../includes/win7-md.md)] 을 대상으로 하는 응용 프로그램이 실행되지 않습니다. 이 항목에서는 [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] 및 이후 버전의 Windows 운영 체제에서 [!INCLUDE[win7](../../../includes/win7-md.md)]을 대상으로 하는 응용 프로그램을 실행하는 데 필요한 단계에 대해 설명합니다. [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)] 및 [!INCLUDE[win8](../../../includes/win8-md.md)]에 대한 자세한 내용은 [Windows 8 이상 버전에서 .NET Framework 1.1 앱 실행](../../../docs/framework/install/run-net-framework-1-1-apps.md)을 참조하세요.  
@@ -55,9 +55,9 @@ ms.locfileid: "33393818"
   
  응용 프로그램의 가능한 주요 변경 사항의 영향을 평가하려면 다음 변경 사항 목록을 검토해야 합니다.  
   
--   [.NET Framework 2.0의 주요 변경 내용](http://go.microsoft.com/fwlink/?LinkId=125263) 문서의 [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] 을 대상으로 하는 응용 프로그램에 영향을 줄 수 있는 [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)]의 변경 내용  
+-   [.NET Framework 2.0의 주요 변경 내용](https://go.microsoft.com/fwlink/?LinkId=125263) 문서의 [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] 을 대상으로 하는 응용 프로그램에 영향을 줄 수 있는 [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)]의 변경 내용  
   
--   [.NET Framework 3.5 SP1의 변경 내용](http://go.microsoft.com/fwlink/?LinkID=186989) 문서의 [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] 와 [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)]사이의 변경 내용  
+-   [.NET Framework 3.5 SP1의 변경 내용](https://go.microsoft.com/fwlink/?LinkID=186989) 문서의 [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] 와 [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)]사이의 변경 내용  
   
 -   [.NET Framework 4 마이그레이션 문제](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) 문서의 [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)]과 [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]사이의 변경 내용  
   

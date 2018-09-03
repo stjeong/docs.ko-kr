@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: fb14e195-fea5-4561-b9a8-60a67283edb9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8b234d4e2fe7d5efe0a6c33f61b9ba422b55803d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f3a7331d4488f4a0eeac71b0b866bc4b6864eed6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33386459"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43469936"
 ---
 # <a name="run-net-framework-11-apps-on-windows-8-windows-81-or-windows-10"></a>Windows 8, Windows 8.1 또는 Windows 10에서 .NET Framework 1.1 앱 실행
 
@@ -20,7 +20,7 @@ ms.locfileid: "33386459"
 
 ## <a name="install-the-net-framework-11-from-a-cd-or-download-center"></a>CD 또는 다운로드 센터에서 .NET Framework 1.1 설치
 
-.NET Framework 1.1을 [!INCLUDE[win8](../../../includes/win8-md.md)], [!INCLUDE[win81](../../../includes/win81-md.md)], [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], [!INCLUDE[winblue_server_2](../../../includes/winblue-server-2-md.md)] 또는 Windows 10에 수동으로 설치할 수는 없습니다. 더 이상 지원되지 않습니다. 패키지를 설치하려고 하면 다음과 같은 오류 메시지가 표시됩니다. "이 버전의 .NET Framework가 이전에 설치된 버전과 호환되지 않으므로 설치를 계속할 수 없습니다." 이 문제를 해결하려면 [.NET Framework 3.5 SP1](http://www.microsoft.com/download/details.aspx?id=22)을 설치합니다. 이 버전에는 [!INCLUDE[win8](../../../includes/win8-md.md)], [!INCLUDE[win81](../../../includes/win81-md.md)] 및 Windows 10에서 지원되는 .NET Framework 2.0(.NET Framework 1.1 후속 릴리스)이 포함되어 있습니다. 항상 먼저 앱을 설치하여 .NET Framework의 이후 버전으로 자동으로 업데이트되는지 확인해야 합니다. 그러지 않으면 ISV에 앱 업데이트에 대해 문의하세요.
+.NET Framework 1.1을 [!INCLUDE[win8](../../../includes/win8-md.md)], [!INCLUDE[win81](../../../includes/win81-md.md)], [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], [!INCLUDE[winblue_server_2](../../../includes/winblue-server-2-md.md)] 또는 Windows 10에 수동으로 설치할 수는 없습니다. 더 이상 지원되지 않습니다. 패키지를 설치하려고 하면 다음과 같은 오류 메시지가 표시됩니다. "이 버전의 .NET Framework가 이전에 설치된 버전과 호환되지 않으므로 설치를 계속할 수 없습니다." 이 문제를 해결하려면 [.NET Framework 3.5 SP1](https://www.microsoft.com/download/details.aspx?id=22)을 설치합니다. 이 버전에는 [!INCLUDE[win8](../../../includes/win8-md.md)], [!INCLUDE[win81](../../../includes/win81-md.md)] 및 Windows 10에서 지원되는 .NET Framework 2.0(.NET Framework 1.1 후속 릴리스)이 포함되어 있습니다. 항상 먼저 앱을 설치하여 .NET Framework의 이후 버전으로 자동으로 업데이트되는지 확인해야 합니다. 그러지 않으면 ISV에 앱 업데이트에 대해 문의하세요.
 
 ## <a name="see-also"></a>참고 항목
 

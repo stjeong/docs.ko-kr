@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9fabf1a133ca3c3b3ba39a4898ce0aceb378f76d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dbea588604ebd5ad39e134a4ecfe771c89fb1121
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571984"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43390570"
 ---
 # <a name="miscellaneous-constructs-in-regular-expressions"></a>정규식의 기타 구문
 .NET의 정규식에는 세 가지 기타 언어 구문이 포함됩니다. 한 구문에서는 정규식 패턴 중간에 특정 일치 옵션을 사용하거나 사용하지 않도록 설정할 수 있습니다. 나머지 두 구문에서는 정규식에 주석을 포함할 수 있습니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "33571984"
 ## <a name="inline-comment"></a>인라인 주석  
  `(?#` *comment*`)` 구문을 통해 정규식에 인라인 주석을 포함할 수 있습니다. <xref:System.Text.RegularExpressions.Regex.ToString%2A?displayProperty=nameWithType> 메서드에서 반환하는 문자열에 주석이 포함되어 있어도 정규식 엔진은 패턴 일치에 주석의 어떤 부분도 사용하지 않습니다. 주석이 첫 번째 닫는 괄호 문자에서 끝납니다.  
   
- 다음 예제에서는 이전 섹션의 예제에서 사용된 첫 번째 정규식 패턴을 반복합니다. 정규식에 두 개의 인라인 주석을 추가하여 비교가 대/소문자를 구분하는지 여부를 나타냅니다. 정규식 패턴 `\b((?# case-sensitive comparison)D\w+)\s((?#case-insensitive comparison)d\w+)\b`는 다음과 같이 정의됩니다.  
+ 다음 예제에서는 이전 섹션의 예제에서 사용된 첫 번째 정규식 패턴을 반복합니다. 정규식에 두 개의 인라인 주석을 추가하여 비교가 대/소문자를 구분하는지 여부를 나타냅니다. 정규식 패턴 `\b((?# case-sensitive comparison)D\w+)\s(?ixn)((?#case-insensitive comparison)d\w+)\b`는 다음과 같이 정의됩니다.  
   
 |무늬|설명|  
 |-------------|-----------------|  
@@ -92,7 +92,6 @@ ms.locfileid: "33571984"
 |`\d+`|하나 이상의 10진수 숫자가 일치하는지 확인합니다.|  
 |`(,-*\d+)*`|선택적 빼기 기호, 하나 이상의 10진수 앞에 나오는 쉼표를 0번 또는 한 번 찾습니다.|  
 |`(\:\w{1,4}?)*`|1-4개(최대한 적은 개수)의 공백 문자 앞에 나오는 콜론을 0번 또는 한 번 찾습니다.|  
-|`(?#case insensitive comparison)`|인라인 주석입니다. 패턴 일치 동작에 영향을 주지 않습니다.|  
 |`\}`|닫는 중괄호를 찾습니다.|  
 |`(?x)`|줄의 끝 주석이 인식되도록 패턴 공백 무시 옵션을 사용하도록 설정합니다.|  
 |`# Looks for a composite format item.`|줄의 끝 주석입니다.|  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 50e709c8b5de505b17efea8ddf333633b2bd7400
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1be82fd9f26e382f20913551f67e8303cf20e03b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591692"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43390615"
 ---
 # <a name="managed-and-unmanaged-threading-in-windows"></a>Windows에서 관리되는 스레딩 및 관리되지 않는 스레딩
-공용 언어 런타임에 의해 만들어진 스레드 및 런타임 외부에서 만들어져 코드를 실행하기 위해 관리되는 환경에 들어가는 스레드를 비롯한 모든 스레드는 <xref:System.Threading.Thread> 클래스를 통해 관리됩니다. 런타임은 해당 프로세스에서 관리되는 실행 환경 내에서 코드를 실행한 적이 있는 모든 스레드를 모니터링하며, 다른 모든 스레드는 추적하지 않습니다. 스레드는 COM interop(런타임이 관리되는 개체를 관리되지 않는 환경에 COM 개체로 노출하므로), COM [DllGetClassObject](https://msdn.microsoft.com/library/ms680760.aspx) 함수 및 플랫폼 호출을 통해 관리되는 실행 환경에 들어갈 수 있습니다.  
+공용 언어 런타임에 의해 만들어진 스레드 및 런타임 외부에서 만들어져 코드를 실행하기 위해 관리되는 환경에 들어가는 스레드를 비롯한 모든 스레드는 <xref:System.Threading.Thread> 클래스를 통해 관리됩니다. 런타임은 해당 프로세스에서 관리되는 실행 환경 내에서 코드를 실행한 적이 있는 모든 스레드를 모니터링하며, 다른 모든 스레드는 추적하지 않습니다. 스레드는 COM interop(런타임이 관리되는 개체를 관리되지 않는 환경에 COM 개체로 노출하므로), COM [DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) 함수 및 플랫폼 호출을 통해 관리되는 실행 환경에 들어갈 수 있습니다.  
   
  관리되지 않는 스레드가 COM 호출 가능 래퍼를 통해 런타임에 들어가면 시스템에서는 해당 스레드의 스레드 로컬 저장소를 확인하여 내부의 관리되는 <xref:System.Threading.Thread> 개체를 찾습니다. 이 개체를 찾은 경우 런타임이 이미 이 스레드에 대해 알고 있는 것입니다. 그러나 이 개체를 찾을 수 없으면 런타임은 새 <xref:System.Threading.Thread> 개체를 빌드하여 해당 스레드의 스레드 로컬 저장소에 설치합니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "33591692"
 |**CoInitializeEx** (OLE32.DLL)와 비슷함|<xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>|  
   
 ## <a name="managed-threads-and-com-apartments"></a>관리되는 스레드 및 COM 아파트  
- 관리되는 스레드는 [단일 스레드](https://msdn.microsoft.com/library/windows/desktop/ms680112.aspx) 또는 [다중 스레드](https://msdn.microsoft.com/library/windows/desktop/ms693421.aspx) 아파트를 호스트할 것임을 나타내기 위해 표시될 수 있습니다. (COM 스레딩 아키텍처에 대한 자세한 내용은 [프로세스, 스레드 및 아파트](https://msdn.microsoft.com/library/windows/desktop/ms693344.aspx)를 참조하세요.) <xref:System.Threading.Thread.GetApartmentState%2A> 클래스의 <xref:System.Threading.Thread.SetApartmentState%2A>, <xref:System.Threading.Thread.TrySetApartmentState%2A> 및 <xref:System.Threading.Thread> 메서드는 스레드의 아파트 상태를 반환하고 할당합니다. 상태가 설정되지 않은 경우 <xref:System.Threading.Thread.GetApartmentState%2A>는 <xref:System.Threading.ApartmentState.Unknown?displayProperty=nameWithType>을 반환합니다.  
+ 관리되는 스레드는 [단일 스레드](/windows/desktop/com/single-threaded-apartments) 또는 [다중 스레드](/windows/desktop/com/multithreaded-apartments) 아파트를 호스트할 것임을 나타내기 위해 표시될 수 있습니다. (COM 스레딩 아키텍처에 대한 자세한 내용은 [프로세스, 스레드 및 아파트](https://msdn.microsoft.com/library/windows/desktop/ms693344.aspx)를 참조하세요.) <xref:System.Threading.Thread.GetApartmentState%2A> 클래스의 <xref:System.Threading.Thread.SetApartmentState%2A>, <xref:System.Threading.Thread.TrySetApartmentState%2A> 및 <xref:System.Threading.Thread> 메서드는 스레드의 아파트 상태를 반환하고 할당합니다. 상태가 설정되지 않은 경우 <xref:System.Threading.Thread.GetApartmentState%2A>는 <xref:System.Threading.ApartmentState.Unknown?displayProperty=nameWithType>을 반환합니다.  
   
  이 속성은 스레드가 <xref:System.Threading.ThreadState.Unstarted?displayProperty=nameWithType> 상태일 때만 설정될 수 있으며, 한 스레드에 대해 한 번만 설정될 수 있습니다.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "33591692"
   
  COM에 노출된 관리되는 개체는 자유 스레드된 마샬러를 집계한 것처럼 동작합니다. 즉, 모든 COM 아파트에서 자유 스레드 방식으로 이러한 개체를 호출할 수 있습니다. 이 자유 스레드 동작을 노출하지 않는 관리되는 개체만이 <xref:System.EnterpriseServices.ServicedComponent> 또는 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>에서 파생되는 개체입니다.  
   
- 관리되는 세계에는 컨텍스트 및 컨텍스트 바인딩된 관리되는 인스턴스를 사용하지 않는 한 <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> 에 대한 지원이 없습니다. 엔터프라이즈 서비스를 사용 중인 경우 개체는 <xref:System.EnterpriseServices.ServicedComponent>(이 자체는 <xref:System.ContextBoundObject>에서 파생됨)에서 파생되어야 합니다.  
+ 관리되는 세계에는 컨텍스트 및 컨텍스트 바인딩된 관리되는 인스턴스를 사용하지 않는 한 <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>에 대한 지원이 없습니다. 엔터프라이즈 서비스를 사용 중인 경우 개체는 <xref:System.EnterpriseServices.ServicedComponent>(이 자체는 <xref:System.ContextBoundObject>에서 파생됨)에서 파생되어야 합니다.  
   
  관리 코드가 COM 개체를 호출할 때는 항상 COM 규칙을 따릅니다. 즉, 관리 코드는 OLE32에서 지시하는 대로 COM 아파트 프록시 및 COM+ 1.0 컨텍스트 래퍼를 통해 호출합니다.  
   

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - platform invoke
 ms.assetid: c025b2e0-2357-4c27-8461-118f0090aeff
 ms.openlocfilehash: d14c196babb03b7f13dde6ab5b46508a30ba26d6
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930786"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43394532"
 ---
 # <a name="interoperability-overview-c-programming-guide"></a>상호 운용성 개요(C# 프로그래밍 가이드)
 이 항목에서는 C# 관리 코드와 비관리 코드 간의 상호 운용성을 사용하도록 설정하는 방법을 설명합니다.  

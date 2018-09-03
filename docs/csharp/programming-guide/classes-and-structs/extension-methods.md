@@ -6,12 +6,12 @@ helpviewer_keywords:
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: e2e63953e130dc83ce83bcdd2f8e9a2ffc7fe5f3
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: d478370edcd0ec4772a8ad3706d08a4e85e43f06
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43000130"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43405129"
 ---
 # <a name="extension-methods-c-programming-guide"></a>확장명 메서드(C# 프로그래밍 가이드)
 확장명 메서드를 사용하면 새 파생 형식을 만들거나 다시 컴파일하거나 원래 형식을 수정하지 않고도 기존 형식에 메서드를 "추가"할 수 있습니다. 확장 메서드는 특수한 종류의 정적 메서드이지만 확장 형식의 인스턴스 메서드인 것처럼 호출됩니다. C#, F# 및 Visual Basic에서 작성된 클라이언트 코드의 경우 확장명 메서드를 호출하는 것과 형식에 실제로 정의된 메서드를 호출하는 데는 명백한 차이가 없습니다.  
@@ -83,9 +83,9 @@ using System.Linq;
   
 ## <a name="see-also"></a>참고 항목  
  [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [병렬 프로그래밍 샘플(많은 예제 확장 메서드 포함)](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)  
+ [병렬 프로그래밍 샘플(많은 예제 확장 메서드 포함)](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)  
  [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
- [표준 쿼리 연산자 개요](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
+ [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
  [인스턴스 매개 변수의 변환 규칙 및 그에 따른 영향](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/conversion-rules-for-instance-parameters-and-their-impact)  
  [언어 간 확장 메서드 상호 운용성](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/extension-methods-interoperability-between-languages)  
  [확장 메서드 및 대리자 변환](https://blogs.msdn.microsoft.com/sreekarc/2007/05/01/extension-methods-and-curried-delegates)  

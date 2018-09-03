@@ -3,11 +3,11 @@ title: '샘플 XML 파일: 네임스페이스에서 일반적인 구매 주문1'
 ms.date: 07/20/2015
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
 ms.openlocfilehash: 0adee32a3ee4d2347bd2e0a84024fe478346987a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337563"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43404232"
 ---
 # <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a>샘플 XML 파일: 네임스페이스에서 일반적인 구매 주문
 다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다. 이 파일은 일반적인 구매 주문입니다. XML은 네임스페이스에 있습니다.  

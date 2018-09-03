@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5bf162a3ef9f66e7c7d74c96f13c055857818a2b
-ms.sourcegitcommit: 9e18e4a18284ae9e54c515e30d019c0bbff9cd37
+ms.openlocfilehash: f414e5b0463e28427c8c60e2f8b8774ad6973da2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37070956"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43464139"
 ---
 # <a name="data-parallelism-task-parallel-library"></a>데이터 병렬 처리(작업 병렬 라이브러리)
 *데이터 병렬 처리*는 소스 컬렉션 또는 배열의 요소에서 동일한 작업이 동시에(즉, 병렬로) 수행되는 시나리오를 가리킵니다. 데이터 병렬 작업에서 소스 컬렉션은 여러 스레드가 서로 다른 세그먼트에서 동시에 작동할 수 있도록 분할됩니다.  
   
- TPL(작업 병렬 라이브러리)은 <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> 클래스를 통해 데이터 병렬 처리를 지원합니다. 이 클래스는 [for](~/docs/csharp/language-reference/keywords/for.md) 및 [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) 루프(Visual Basic에서는 `For` 및 `For Each`)의 메서드 기반 병렬 구현을 제공합니다. 순차 루프를 작성하는 것과 마찬가지로 <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> 루프에 대한 루프 논리를 작성합니다. 스레드나 큐 작업 항목을 만들 필요가 없습니다. 기본 루프에서는 잠금을 수행할 필요가 없습니다. TPL에서 모든 하위 수준 작업을 자동으로 처리합니다. <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>의 사용에 대한 자세한 내용을 보려면 [병렬 프로그래밍 패턴: .NET Framework 4의 병렬 패턴 이해 및 적용](http://www.microsoft.com/download/details.aspx?id=19222) 문서를 다운로드하세요. 다음 코드 예제에서는 간단한 `foreach` 루프 및 해당 병렬 루프를 보여 줍니다.  
+ TPL(작업 병렬 라이브러리)은 <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> 클래스를 통해 데이터 병렬 처리를 지원합니다. 이 클래스는 [for](~/docs/csharp/language-reference/keywords/for.md) 및 [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) 루프(Visual Basic에서는 `For` 및 `For Each`)의 메서드 기반 병렬 구현을 제공합니다. 순차 루프를 작성하는 것과 마찬가지로 <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> 루프에 대한 루프 논리를 작성합니다. 스레드나 큐 작업 항목을 만들 필요가 없습니다. 기본 루프에서는 잠금을 수행할 필요가 없습니다. TPL에서 모든 하위 수준 작업을 자동으로 처리합니다. <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>의 사용에 대한 자세한 내용을 보려면 [병렬 프로그래밍 패턴: .NET Framework 4의 병렬 패턴 이해 및 적용](https://www.microsoft.com/download/details.aspx?id=19222) 문서를 다운로드하세요. 다음 코드 예제에서는 간단한 `foreach` 루프 및 해당 병렬 루프를 보여 줍니다.  
   
 > [!NOTE]
 >  이 문서에서는 람다 식을 사용하여 TPL에 대리자를 정의합니다. C# 또는 Visual Basic의 람다 식을 잘 모르는 경우 [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)을 참조하세요.  
@@ -31,7 +31,7 @@ ms.locfileid: "37070956"
  병렬 루프가 실행되는 경우 TPL은 루프가 동시에 여러 부분에서 작동할 수 있도록 데이터 소스를 분할합니다. 내부적으로 작업 스케줄러는 시스템 리소스 및 작업에 따라 작업을 분할합니다. 가능한 경우 스케줄러는 작업 불균형이 발생할 때 여러 스레드 및 프로세서 간에 작업을 재배포합니다.  
   
 > [!NOTE]
->  고유한 사용자 지정 파티셔너 또는 스케줄러를 제공할 수도 있습니다. 자세한 내용은 [PLINQ 및 TPL에 대한 사용자 지정 파티셔너](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) 및 [작업 스케줄러](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65)를 참조하세요.  
+>  고유한 사용자 지정 파티셔너 또는 스케줄러를 제공할 수도 있습니다. 자세한 내용은 [PLINQ 및 TPL에 대한 사용자 지정 파티셔너](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) 및 [작업 스케줄러](https://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65)를 참조하세요.  
   
  <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> 메서드 둘 다에는 루프 실행을 중지 또는 중단하고, 다른 스레드의 루프 상태를 모니터링하고, 스레드 로컬 상태를 유지 관리하고, 스레드 로컬 개체를 종료하고, 동시성 수준을 제어할 수 있도록 하는 여러 오버로드가 있습니다. 이 기능을 사용할 수 있도록 하는 도우미 형식에는 <xref:System.Threading.Tasks.ParallelLoopState>, <xref:System.Threading.Tasks.ParallelOptions>, <xref:System.Threading.Tasks.ParallelLoopResult>, <xref:System.Threading.CancellationToken> 및 <xref:System.Threading.CancellationTokenSource>가 있습니다.  
   

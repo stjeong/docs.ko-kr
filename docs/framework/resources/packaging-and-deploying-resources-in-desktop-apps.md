@@ -28,12 +28,12 @@ helpviewer_keywords:
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0a6e6219d6449fedabe6e7cb0b349efb6fc74ee6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7aca04c191234686de5a15cb3dc1336080a3a344
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399693"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485705"
 ---
 # <a name="packaging-and-deploying-resources-in-desktop-apps"></a>데스크톱 응용 프로그램의 리소스 패키징 및 배포
 응용 프로그램은 <xref:System.Resources.ResourceManager> 클래스가 나타내는 .NET Framework 리소스 관리자를 사용하여 지역화된 리소스를 검색합니다. 리소스 관리자는 허브 및 스포크 모델이 리소스 패키지 및 배포에 사용된다고 가정합니다. 허브는 지역화할 수 없는 실행 코드와 중립 또는 기본 문화권이라고 하는 단일 문화권의 리소스를 포함하는 주 어셈블리입니다. 기본 문화권은 응용 프로그램의 대체 문화권으로, 지역화된 리소스를 찾을 수 없는 경우 해당 리소스가 사용되는 문화권입니다. 각 스포크는 단일 문화권의 리소스를 포함하지만 코드는 포함하지 않는 위성 어셈블리에 연결됩니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "33399693"
 -   여러 구성을 테스트해야 하기 때문에 응용 프로그램을 테스트하는 초기 비용이 증가합니다. 장기적으로는 여러 개의 병렬 국제 버전을 테스트 및 유지 관리하는 것보다 여러 개의 위성 어셈블리가 있는 핵심 응용 프로그램 하나를 테스트하는 것이 더 쉽고 저렴합니다.  
   
 ## <a name="resource-naming-conventions"></a>리소스 명명 규칙  
- 응용 프로그램의 리소스를 패키지할 때는 공용 언어 런타임에서 적용하는 리소스 명명 규칙을 사용하여 이름을 지정해야 합니다. 런타임에서는 문화권 이름으로 리소스를 식별합니다. 각 문화권에는 일반적으로 언어와 관련된 2자의 소문자 문화권 이름과 필요한 경우 국가 또는 지역과 관련된 2자의 대문자 하위 문화권 이름이 조합된 고유한 이름이 지정됩니다. 하위 문화권 이름이 문화권 이름 다음에 추가되고 대시(-)로 구분됩니다. 예를 들어 일본에서 사용되는 일본어는 ja-JP, 미국에서 사용되는 영어는 en-US, 독일에서 사용되는 독일어는 de-DE, 오스트리아에서 사용되는 독일어는 de-AT입니다. 문화권 이름의 전체 목록은 Go Global 개발자 센터에서 [NLS(국가별 언어 지원) API 참조](http://go.microsoft.com/fwlink/?LinkId=200048)를 참조하세요.  
+ 응용 프로그램의 리소스를 패키지할 때는 공용 언어 런타임에서 적용하는 리소스 명명 규칙을 사용하여 이름을 지정해야 합니다. 런타임에서는 문화권 이름으로 리소스를 식별합니다. 각 문화권에는 일반적으로 언어와 관련된 2자의 소문자 문화권 이름과 필요한 경우 국가 또는 지역과 관련된 2자의 대문자 하위 문화권 이름이 조합된 고유한 이름이 지정됩니다. 하위 문화권 이름이 문화권 이름 다음에 추가되고 대시(-)로 구분됩니다. 예를 들어 일본에서 사용되는 일본어는 ja-JP, 미국에서 사용되는 영어는 en-US, 독일에서 사용되는 독일어는 de-DE, 오스트리아에서 사용되는 독일어는 de-AT입니다. 문화권 이름의 전체 목록은 Go Global 개발자 센터에서 [NLS(국가별 언어 지원) API 참조](https://go.microsoft.com/fwlink/?LinkId=200048)를 참조하세요.  
   
 > [!NOTE]
 >  리소스 파일을 만드는 방법에 대한 자세한 내용은 [리소스 파일 만들기](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md) 및 [위성 어셈블리 만들기](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)를 참조하세요.  

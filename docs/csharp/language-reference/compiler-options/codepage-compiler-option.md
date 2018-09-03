@@ -8,12 +8,12 @@ helpviewer_keywords:
 - codepage compiler option [C#]
 - -codepage compiler option [C#]
 ms.assetid: 75942989-b69a-4308-90a0-840c73d2c478
-ms.openlocfilehash: 615160088ee3a884919628152f153bd34c81b8a9
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: 66edb32d24dd1dc543097b98ff3744f0aa0a7145
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755069"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389691"
 ---
 # <a name="-codepage-c-compiler-options"></a>-codepage(C# 컴파일러 옵션)
 이 옵션은 필수 페이지가 시스템에 대한 현재 기본 코드 페이지가 아닌 경우 컴파일 중에 사용할 코드 페이지를 지정합니다.  
@@ -38,5 +38,6 @@ ms.locfileid: "42755069"
  이 컴파일러 옵션은 Visual Studio에서 사용할 수 없으며 프로그래밍 방식으로 변경할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)

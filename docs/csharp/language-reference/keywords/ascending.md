@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ascending keyword [C#]
 ms.assetid: 57fbb619-8187-481c-b68e-3a91996fde69
 ms.openlocfilehash: 77801fcf443556515e6f1414490a1deeb4fa7bc4
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935054"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43390116"
 ---
 # <a name="ascending-c-reference"></a>ascending(C# 참조)
 `ascending` 상황별 키워드는 쿼리 식의 [orderby 절](../../../csharp/language-reference/keywords/orderby-clause.md)에서 사용되어 정렬 순서를 가장 작은 값에서 가장 큰 값의 오름차순으로 지정합니다. `ascending`은 기본 정렬 순서이므로 지정할 필요가 없습니다.  

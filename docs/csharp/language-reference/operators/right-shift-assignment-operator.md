@@ -7,12 +7,12 @@ helpviewer_keywords:
 - right shift assignment operator (>>=) [C#]
 - '>>= operator (right-shift assignment) [C#]'
 ms.assetid: b593778c-b9b4-440d-8b29-c1ac22cb81c0
-ms.openlocfilehash: ccc3f688d985b9e35404550f0c53a7acf8095dd5
-ms.sourcegitcommit: 89c93d05c2281b4c834f48f6c8df1047e1410980
+ms.openlocfilehash: f2bac6a4320980d80a9b6c2597dcf8dc6f08ac70
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2018
-ms.locfileid: "34171420"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43423473"
 ---
 # <a name="gtgt-operator-c-reference"></a>&gt;&gt;= 연산자(C# 참조)
 오른쪽 시프트 대입 연산자입니다.  
@@ -37,7 +37,8 @@ x = x >> y
 ## <a name="example"></a>예  
  [!code-csharp[csRefOperators#11](../../../csharp/language-reference/operators/codesnippet/CSharp/right-shift-assignment-operator_1.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)
