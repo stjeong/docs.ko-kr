@@ -5,12 +5,12 @@ author: cartermp
 ms.author: mairaw
 ms.date: 03/08/2017
 ms.technology: dotnet-cli
-ms.openlocfilehash: 57045a91ce62a730493d219bdf7c30e90fe57759
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5ec7168ebc2ee4fc428d1ab520e986842f111ca7
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33216342"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43256767"
 ---
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>명령줄을 사용하여 Windows/Linux/macOS에서 .NET Core 시작
 
@@ -29,7 +29,7 @@ GitHub의 dotnet/samples 리포지토리에서 [샘플 코드를 보거나 다�
 
 명령 프롬프트를 열고 *Hello*라는 폴더를 만듭니다. 만든 폴더로 이동하고 다음을 입력합니다.
 
-```
+```console
 $ dotnet new console
 $ dotnet restore
 $ dotnet run
@@ -40,10 +40,10 @@ $ dotnet run
 1. `$ dotnet new console`
 
    [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  응용 프로그램에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
-   
+
    `Hello.csproj`:
 
-   [!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]   
+   [!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]
 
    프로젝트 파일은 종속성을 복원하고 프로그램을 빌드하는 데 필요한 모든 항목을 지정합니다.
 
@@ -52,7 +52,7 @@ $ dotnet run
 
    `Program.cs`:
 
-   [!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]   
+   [!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]
 
    프로그램은 `using System`으로 시작됩니다. 즉, "`System` 네임스페이스의 모든 항목을 이 파일 범위로 가져옵니다". `System` 네임스페이스에는 `string` 또는 숫자 형식과 같은 기본 구문이 포함되어 있습니다.
 
@@ -63,21 +63,21 @@ $ dotnet run
 2. `$ dotnet restore`
 
    [`dotnet restore`](../tools/dotnet-restore.md)는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자)을 호출하여 종속성 트리를 복원합니다. NuGet은 *Hello.csproj* 파일을 분석하고, 파일에 명시된 종속성을 다운로드하고(또는 컴퓨터의 캐시에서 종속성을 가져오고), *obj/project.assets.json* 파일을 작성합니다.  *project.assets.json* 파일은 컴파일 및 실행하려면 필요합니다.
-   
+
    *project.assets.json* 파일은 NuGet 종속성 및 앱을 설명하는 기타 정보로 구성된 그래프의 지속적이고 전체적인 집합입니다.  [`dotnet build`](../tools/dotnet-build.md) 및 [`dotnet run`](../tools/dotnet-run.md) 같은 다른 도구에서는 이 파일을 읽고, NuGet 종속성 및 바인딩 확인의 올바른 집합으로 소스 코드를 처리합니다.
-   
+
 3. `$ dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md)은 [`dotnet build`](../tools/dotnet-build.md)를 호출하여 빌드 대상이 빌드되었는지를 확인하고 `dotnet <assembly.dll>`을 호출하여 대상 응용 프로그램을 실행합니다.
-   
-    ```
+
+    ```console
     $ dotnet run
     Hello World!
     ```
 
     또한 [`dotnet build`](../tools/dotnet-build.md)를 실행하여 빌드 콘솔 응용 프로그램을 실행하지 않고 코드를 컴파일할 수도 있습니다. 이로 인해 Windows에서는 `dotnet bin\Debug\netcoreapp1.0\Hello.dll`로, 다른 시스템에서는 `/`로 실행할 수 있는 컴파일된 응용 프로그램이 DLL 파일로 만들어집니다. 이 항목의 뒷부분에서 살펴보겠지만, 응용 프로그램에 인수를 지정할 수도 있습니다.
 
-    ```
+    ```console
     $ dotnet bin\Debug\netcoreapp1.0\Hello.dll
     Hello World!
     ```
@@ -90,13 +90,13 @@ $ dotnet run
 
 1. *Program.cs* 파일의 내용을 다음 코드로 바꿉니다.
 
-   [!code-csharp[Fibonacci](../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]   
+   [!code-csharp[Fibonacci](../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]
 
 2. [ `dotnet build` ](../tools/dotnet-build.md)를 실행하여 변경 내용을 컴파일합니다.
 
 3. 앱에 매개 변수를 전달하는 프로그램을 실행합니다.
 
-   ```
+   ```console
    $ dotnet run -- John
    Hello John!
    Fibonacci Numbers 1-15:
@@ -121,11 +121,11 @@ $ dotnet run
 
 ## <a name="working-with-multiple-files"></a>여러 파일 작업
 
-단순한 일회용 프로그램의 경우 단일 파일이 괜찮지만, 좀 더 복잡한 앱을 빌드하는 경우 프로젝트에 소스 파일이 여러 개 있을 수 있습니다. 일부 피보나치 값을 캐시하고 일부 재귀적 기능을 추가하여 이전의 피보나치 예제를 빌드해 봅시다. 
+단순한 일회용 프로그램의 경우 단일 파일이 괜찮지만, 좀 더 복잡한 앱을 빌드하는 경우 프로젝트에 소스 파일이 여러 개 있을 수 있습니다. 일부 피보나치 값을 캐시하고 일부 재귀적 기능을 추가하여 이전의 피보나치 예제를 빌드해 봅시다.
 
 1. 다음 코드를 사용하여 *Hello* 디렉터리 내에 *FibonacciGenerator.cs*라는 새 파일을 추가합니다.
 
-   [!code-csharp[Fibonacci Generator](../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
+   [!code-csharp[Fibonacci Generator](../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]
 
 2. 다음 예제에서처럼 *Program.cs* 파일의 `Main` 메서드를 변경하여 새 클래스를 인스턴스화하고 메서드를 호출합니다.
 
@@ -135,7 +135,8 @@ $ dotnet run
 
 4. [`dotnet run`](../tools/dotnet-run.md)을 실행하여 앱을 실행합니다. 다음은 프로그램 출력을 보여 줍니다.
 
-   ```
+   ```console
+   $ dotnet run
    0
    1
    1
@@ -159,4 +160,4 @@ $ dotnet run
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET Core CLI 도구를 사용하여 프로젝트 구성 및 테스트](testing-with-cli.md)
+* [.NET Core CLI 도구를 사용하여 프로젝트 구성 및 테스트](testing-with-cli.md)

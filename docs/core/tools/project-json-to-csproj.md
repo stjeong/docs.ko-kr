@@ -4,12 +4,12 @@ description: project.json 및 csproj e요소 간 매핑을 참조하세요.
 author: natemcmaster
 ms.author: mairaw
 ms.date: 03/13/2017
-ms.openlocfilehash: d262792cd6821d35dcaf2f4bb9c05625e1bcd2fa
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 369075f91c0d5ea6c7eb5d09ac2535c4e60f28f6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218805"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43419417"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>project.json 및 csproj 속성 간 매핑
 
@@ -17,8 +17,8 @@ ms.locfileid: "33218805"
 
 .NET Core 도구 개발 중 중요한 디자인 변경으로 인해 *project.json* 파일이 더 이상 지원되지 않으며 대신 .NET Core 프로젝트를 MSBuild/csproj 형식으로 전환합니다.
 
-이 문서에서는 프로젝트를 최신 버전의 도구로 업그레이드할 때, 새 형식을 사용하는 방법을 배우고 마이그레이션 도구에서 수행한 변경 내용을 이해할 수 있도록 *project.json*의 설정이 MSBuild/csproj 형식으로 표시되는 방법을 보여 줍니다. 
- 
+이 문서에서는 프로젝트를 최신 버전의 도구로 업그레이드할 때, 새 형식을 사용하는 방법을 배우고 마이그레이션 도구에서 수행한 변경 내용을 이해할 수 있도록 *project.json*의 설정이 MSBuild/csproj 형식으로 표시되는 방법을 보여 줍니다.
+
 ## <a name="the-csproj-format"></a>csproj 형식
 
 새 형식인 \*.csproj는 XML 기반 형식입니다. 다음 예제에서는 `Microsoft.NET.Sdk`를 사용하는 .NET Core 프로젝트의 루트 노드를 보여 줍니다. 웹 프로젝트의 경우 사용되는 SDK는 `Microsoft.NET.Sdk.Web`입니다.
@@ -32,6 +32,7 @@ ms.locfileid: "33218805"
 ## <a name="common-top-level-properties"></a>일반적인 최상위 속성
 
 ### <a name="name"></a>name
+
 ```json
 {
   "name": "MyProjectName"
@@ -40,7 +41,7 @@ ms.locfileid: "33218805"
 
 더 이상 지원되지 않습니다. csproj에서는 디렉터리 이름으로 정의되는 프로젝트 파일 이름으로 결정됩니다. 예를 들어, `MyProjectName.csproj`을 입력합니다.
 
-기본적으로 프로젝트 파일 이름은 `<AssemblyName>` 및 `<PackageId>` 속성의 값도 지정합니다. 
+기본적으로 프로젝트 파일 이름은 `<AssemblyName>` 및 `<PackageId>` 속성의 값도 지정합니다.
 
 ```xml
 <PropertyGroup>
@@ -49,7 +50,8 @@ ms.locfileid: "33218805"
 </PropertyGroup>
 ```
 
-`buildOptions\outputName` 속성이 project.json에서 정의된 경우 `<AssemblyName>`에는 `<PackageId>`와 다른 값이 있습니다. 자세한 내용은 [기타 일반적인 빌드 옵션](#other-common-build-options)을 참조하세요.
+`buildOptions\outputName` 속성이 project.json에서 정의된 경우 `<AssemblyName>`에는 `<PackageId>`와 다른 값이 있습니다.
+자세한 내용은 [기타 일반적인 빌드 옵션](#other-common-build-options)을 참조하세요.
 
 ### <a name="version"></a>버전
 
@@ -58,6 +60,7 @@ ms.locfileid: "33218805"
   "version": "1.0.0-alpha-*"
 }
 ```
+
 `VersionPrefix` 및 `VersionSuffix` 속성을 사용합니다.
 
 ```xml
@@ -105,6 +108,7 @@ And it's really great!</Description>
 ## <a name="frameworks"></a>frameworks
 
 ### <a name="one-target-framework"></a>단일 대상 프레임워크
+
 ```json
 {
   "frameworks": {
@@ -130,7 +134,7 @@ And it's really great!</Description>
 }
 ```
 
-`TargetFrameworks` 속성을 사용하여 대상 프레임워크의 목록을 정의합니다. 세미콜론을 사용하여 여러 프레임워크 값을 구분합니다. 
+`TargetFrameworks` 속성을 사용하여 대상 프레임워크의 목록을 정의합니다. 세미콜론을 사용하여 여러 프레임워크 값을 구분합니다.
 
 ```xml
 <PropertyGroup>
@@ -141,7 +145,8 @@ And it's really great!</Description>
 ## <a name="dependencies"></a>종속성
 
 > [!IMPORTANT]
-> 종속성이 **프로젝트**이고 패키지가 아닌 경우 형식이 다릅니다. 자세한 내용은 [종속성 유형](#dependency-type) 섹션을 참조하세요.
+> 종속성이 **프로젝트**이고 패키지가 아닌 경우 형식이 다릅니다.
+> 자세한 내용은 [종속성 유형](#dependency-type) 섹션을 참조하세요.
 
 ### <a name="netstandardlibrary-metapackage"></a>NETStandard.Library metapackage
 
@@ -178,6 +183,7 @@ And it's really great!</Description>
 마이그레이션된 프로젝트에서 `<RuntimeFrameworkVersion>` 값은 설치한 SDK의 버전에 따라 결정됩니다.
 
 ### <a name="top-level-dependencies"></a>최상위 종속성
+
 ```json
 {
   "dependencies": {
@@ -193,6 +199,7 @@ And it's really great!</Description>
 ```
 
 ### <a name="per-framework-dependencies"></a>프레임워크별 종속성
+
 ```json
 {
   "framework": {
@@ -250,6 +257,7 @@ And it's really great!</Description>
 ### <a name="dependency-type"></a>종속성 유형
 
 #### <a name="type-project"></a>type: project
+
 ```json
 {
   "dependencies": {
@@ -271,8 +279,8 @@ And it's really great!</Description>
 > [!NOTE]
 > `dotnet pack --version-suffix $suffix`가 프로젝트 참조의 종속성 버전을 결정하는 방법이 중단됩니다.
 
-
 #### <a name="type-build"></a>type: build
+
 ```json
 {
   "dependencies": {
@@ -291,6 +299,7 @@ And it's really great!</Description>
 ```
 
 #### <a name="type-platform"></a>type: platform
+
 ```json
 {
   "dependencies": {
@@ -302,9 +311,10 @@ And it's really great!</Description>
 }
 ```
 
-csproj에는 동일한 항목이 없습니다. 
+csproj에는 동일한 항목이 없습니다.
 
 ## <a name="runtimes"></a>runtimes
+
 ```json
 {
   "runtimes": {
@@ -322,6 +332,7 @@ csproj에는 동일한 항목이 없습니다.
 ```
 
 ### <a name="standalone-apps-self-contained-deployment"></a>독립 실행형 앱(자체 포함 배포)
+
 project.json에서 `runtimes` 섹션 정의는 앱이 빌드 및 게시 중 독립 실행형이었음을 의미합니다.
 MSBuild에서 모든 프로젝트는 빌드 중 *이식 가능*하지만 독립 실행형으로 게시할 수 있습니다.
 
@@ -330,6 +341,7 @@ MSBuild에서 모든 프로젝트는 빌드 중 *이식 가능*하지만 독립 
 자세한 내용은 [SCD(자체 포함 배포)](../deploying/index.md#self-contained-deployments-scd)를 참조하세요.
 
 ## <a name="tools"></a>도구
+
 ```json
 {
   "tools": {
@@ -442,7 +454,7 @@ MSBuild에서 모든 프로젝트는 빌드 중 *이식 가능*하지만 독립 
 
 ```json
 {
-  "packOptions": {    
+  "packOptions": {
     "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
     "tags": ["machine learning", "framework"],
     "releaseNotes": "Version 0.9.12-beta",
@@ -474,7 +486,8 @@ MSBuild에서 모든 프로젝트는 빌드 중 *이식 가능*하지만 독립 
 </PropertyGroup>
 ```
 
-MSBuild에는 `owners` 요소에 대해 동일한 요소가 없습니다. `summary`의 경우, `summary` 값이 자동으로 해당 속성에 마이그레이션되지 않은 경우에도 속성이 [ `description` ](#-other-common-root-level-options) 요소로 매핑되므로 MSBuild `<Description>` 속성을 사용할 수 있습니다.
+MSBuild에는 `owners` 요소에 대해 동일한 요소가 없습니다.
+`summary`의 경우, `summary` 값이 자동으로 해당 속성에 마이그레이션되지 않은 경우에도 속성이 [ `description` ](#-other-common-root-level-options) 요소로 매핑되므로 MSBuild `<Description>` 속성을 사용할 수 있습니다.
 
 ## <a name="scripts"></a>스크립트
 
@@ -499,7 +512,6 @@ MSBuild에서 해당하는 요소는 [targets](/visualstudio/msbuild/msbuild-tar
   <Exec Command="removeTempFiles.cmd" />
 </Target>
 ```
-
 
 ## <a name="runtimeoptions"></a>runtimeOptions
 
@@ -531,6 +543,7 @@ MSBuild에서 해당하는 요소는 [targets](/visualstudio/msbuild/msbuild-tar
 ```
 
 "System.GC.Server" 속성은 csproj 파일로 마이그레이션됩니다.
+
 ```xml
 <PropertyGroup>
   <ServerGarbageCollection>true</ServerGarbageCollection>
@@ -538,6 +551,7 @@ MSBuild에서 해당하는 요소는 [targets](/visualstudio/msbuild/msbuild-tar
 ```
 
 그러나 MSBuild 속성뿐만 아니라 csproj에서 모든 해당 값을 설정할 수 있습니다.
+
 ```xml
 <PropertyGroup>
   <ServerGarbageCollection>true</ServerGarbageCollection>
@@ -549,13 +563,15 @@ MSBuild에서 해당하는 요소는 [targets](/visualstudio/msbuild/msbuild-tar
 ```
 
 ## <a name="shared"></a>공유
+
 ```json
 {
   "shared": "shared/**/*.cs"
 }
 ```
 
-csproj에서 지원되지 않습니다. 대신 *.nuspec* 파일에 콘텐츠 파일을 포함해야 합니다. 자세한 내용은 [콘텐츠 파일 포함](/nuget/schema/nuspec#including-content-files)을 참조하세요.
+csproj에서 지원되지 않습니다. 대신 *.nuspec* 파일에 콘텐츠 파일을 포함해야 합니다.
+자세한 내용은 [콘텐츠 파일 포함](/nuget/schema/nuspec#including-content-files)을 참조하세요.
 
 ## <a name="files"></a>파일
 
@@ -613,7 +629,8 @@ MSBuild에서는 [항목](/visualstudio/msbuild/common-msbuild-project-items)을
 
 .nupkg 내의 패키지 레이아웃은 `PackagePath="path"`를 사용하여 수정할 수 있습니다.
 
-`Content`를 제외하고, 대부분의 항목 그룹은 패키지에 포함되도록 `Pack="true"`를 명시적으로 추가해야 합니다. MSBuild `<IncludeContentInPack>` 속성이 기본적으로 `true`로 설정되어 있기 때문에 `Content`는 패키지의 *content* 폴더에 놓입니다. 자세한 내용은 [패키지에 콘텐츠 포함](/nuget/schema/msbuild-targets#including-content-in-a-package)을 참조하세요.
+`Content`를 제외하고, 대부분의 항목 그룹은 패키지에 포함되도록 `Pack="true"`를 명시적으로 추가해야 합니다. MSBuild `<IncludeContentInPack>` 속성이 기본적으로 `true`로 설정되어 있기 때문에 `Content`는 패키지의 *content* 폴더에 놓입니다.
+자세한 내용은 [패키지에 콘텐츠 포함](/nuget/schema/msbuild-targets#including-content-in-a-package)을 참조하세요.
 
 `PackagePath="%(Identity)"`는 패키지 경로를 프로젝트 상대 파일 경로에 설정하는 간단한 방법입니다.
 
@@ -659,4 +676,4 @@ MSBuild에서는 [항목](/visualstudio/msbuild/common-msbuild-project-items)을
 
 ## <a name="see-also"></a>참고 항목
 
-[CLI의 변경 내용에 대한 대략적인 개요](../tools/cli-msbuild-architecture.md)
+* [CLI의 변경 내용에 대한 대략적인 개요](../tools/cli-msbuild-architecture.md)

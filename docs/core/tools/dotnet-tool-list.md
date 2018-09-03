@@ -4,12 +4,12 @@ description: dotnet tool list 명령은 컴퓨터에서 지정한 .NET Core Glob
 author: mairaw
 ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 5f4793cd37c3a8df06eb6930ad9f381ac70d4e67
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: e2bea974207d3098ed67b69ed16a72a03c44cd8b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34696727"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43467058"
 ---
 # <a name="dotnet-tool-list"></a>dotnet tool list
 
@@ -21,7 +21,7 @@ ms.locfileid: "34696727"
 
 ## <a name="synopsis"></a>개요
 
-```
+```console
 dotnet tool list <-g|--global>
 dotnet tool list <--tool-path>
 dotnet tool list <-h|--help>
@@ -61,4 +61,4 @@ Global Tool을 찾을 사용자 지정 위치를 지정합니다. PATH는 절대
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET Core Global Tool](global-tools.md)
+* [.NET Core Global Tool](global-tools.md)

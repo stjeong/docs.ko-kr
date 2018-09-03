@@ -4,12 +4,12 @@ description: .NET Core에서 볼 수 있는 새로운 기능에 대해 알아봅
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/13/2017
-ms.openlocfilehash: 59a1f61de365218d649e3392fbce84cd6d530ed5
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: 02aac2dab2b892927c0c98fae30bb287a6e24ad6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34566370"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43456889"
 ---
 # <a name="whats-new-in-net-core-20"></a>.NET Core 2.0의 새로운 기능
 
@@ -30,7 +30,7 @@ ms.locfileid: "34566370"
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-`--no-restore` 스위치를 `new`, `run`, `build`, `publish`, `pack` 및 `test` 명령으로 전달하여 `dotnet restore` 자동 호출을 사용하지 않도록 설정할 수 있습니다. 
+`--no-restore` 스위치를 `new`, `run`, `build`, `publish`, `pack` 및 `test` 명령으로 전달하여 `dotnet restore` 자동 호출을 사용하지 않도록 설정할 수 있습니다.
 
 ### <a name="retargeting-to-net-core-20"></a>.NET Core 2.0로 대상 다시 지정
 
@@ -76,7 +76,7 @@ C# 및 F #를 지원할 뿐만 아니라 .NET Core 2.0도 Visual Basic을 지원
 
    이 명령은 *Program.vb*라는 Visual Basic 소스 코드와 함께 `.vbproj` 파일 확장인 프로젝트 파일을 만듭니다. 이 파일은 문자열 "Hello World!"를 작성하는 소스 코드를 포함합니다. 콘솔 창에 표시합니다.
 
-1.  `dotnet run` 명령을 입력합니다. [.NET Core CLI](../tools/index.md)는 "Hello World!" 메시지를 표시하는 응용 프로그램을 자동으로 컴파일하고 실행합니다. 콘솔 창에 표시합니다.
+1. `dotnet run` 명령을 입력합니다. [.NET Core CLI](../tools/index.md)는 "Hello World!" 메시지를 표시하는 응용 프로그램을 자동으로 컴파일하고 실행합니다. 콘솔 창에 표시합니다.
 
 ### <a name="support-for-c-71"></a>C# 7.1에 대한 지원
 
@@ -162,4 +162,5 @@ Live Unit Testing이 코드를 수정하려면 언제든지 자동으로 백그�
 - [Azure에서 클라우드에 배포되는 응용 프로그램](/azure/architecture/reference-architectures/index.md)
 
 ## <a name="see-also"></a>참고 항목
-[ASP.NET Core 2.0의 새로운 기능](/aspnet/core/aspnetcore-2.0)
+
+* [ASP.NET Core 2.0의 새로운 기능](/aspnet/core/aspnetcore-2.0)

@@ -4,12 +4,12 @@ description: .NET Core 2.1에서 볼 수 있는 새로운 기능에 대해 알�
 author: rpetrusha
 ms.author: ronpet
 ms.date: 06/06/2018
-ms.openlocfilehash: ec9a8d238dc47f604a1ac0ee7628bf079e89b9c2
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 2599908c81cbe046889778bbdf7aeb9f8272b215
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935581"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43392851"
 ---
 # <a name="whats-new-in-net-core-21"></a>.NET Core 2.1의 새로운 기능
 
@@ -49,7 +49,7 @@ ms.locfileid: "42935581"
    ```console
    dotnet watch -- --verbose build
    ```
-  
+
    `--verbose` 옵션 앞에 있는 `--` 옵션에 주목하세요. 이 옵션은 `dotnet watch` 명령으로 직접 전달되는 옵션을 자식 `dotnet` 프로세스에 전달되는 인수와 구분합니다. 이 옵션을 사용하지 않으면 `--verbose` 옵션이 `dotnet build` 명령 대신 `dotnet watch` 명령에 적용됩니다.
   
    자세한 내용은 [dotnet watch를 사용한 ASP.NET Core 앱 개발](/aspnet/core/tutorials/dotnet-watch)을 참조하세요.
@@ -88,7 +88,7 @@ dotnet tool install -g dotnetsay
 
 ## <a name="roll-forward"></a>롤포워드
 
-.NET Core 2.0부터 모든 .NET Core 응용 프로그램은 시스템에 설치된 최신 ‘부 버전’으로 자동으로 롤포워드됩니다. 
+.NET Core 2.0부터 모든 .NET Core 응용 프로그램은 시스템에 설치된 최신 ‘부 버전’으로 자동으로 롤포워드됩니다.
 
 .NET Core 2.0부터 응용 프로그램 빌드에 사용된 .NET Core 버전이 런타임에 없는 경우에는 응용 프로그램이 .NET Core의 설치된 최신 *부 버전*에 대해 자동으로 실행됩니다. 즉, 응용 프로그램이 .NET Core 2.0을 사용하여 빌드되고 .NET Core 2.0이 호스트 시스템에 없지만 .NET Core 2.1이 있는 경우 응용 프로그램은 .NET Core 2.1을 사용하여 실행됩니다.
 
@@ -233,6 +233,6 @@ Linux 및 macOS에서는 프로세스별로 <xref:System.Net.Http.HttpClient>만
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET Core의 새로운 기능](index.md)  
-[EF Core 2.1의 새로운 기능](/ef/core/what-is-new/ef-core-2.1)  
-[ASP.NET Core 2.1의 새로운 기능](/aspnet/core/aspnetcore-2.1)
+* [.NET Core의 새로운 기능](index.md)  
+* [EF Core 2.1의 새로운 기능](/ef/core/what-is-new/ef-core-2.1)  
+* [ASP.NET Core 2.1의 새로운 기능](/aspnet/core/aspnetcore-2.1)
