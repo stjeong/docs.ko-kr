@@ -6,11 +6,11 @@ helpviewer_keywords:
 - <include> XML tag
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
 ms.openlocfilehash: da7a6c15c558fc56dbc6a874d4a28c4434f67668
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932966"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43482706"
 ---
 # <a name="ltincludegt-visual-basic"></a>&lt;포함&gt; (Visual Basic)
 형식 및 소스 코드에서 멤버를 설명 하는 다른 파일을 가리킵니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "42932966"
   
  `<include>` 태그 W3C XML Path Language (XPath) Version 1.0 권장 사항에 사용 합니다. 사용자 지정 하는 방법에 대 한 자세한 내용은 하 `<include>` 사용은 http://www.w3.org/TR/xpath합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 합니다 `<include>` 멤버 문서 주석 이라는 파일에서 가져오려는 태그 `commentFile.xml`합니다.  
   
  [!code-vb[VbVbcnXmlDocComments#4](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/include_1.vb)]  
