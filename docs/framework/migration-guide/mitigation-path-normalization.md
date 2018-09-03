@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 158d47b1-ba6d-4fa6-8963-a012666bdc31
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 36433dcce1e47b329f5407e86ce3923a44cb6444
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: aa31641cc325f15b9afe677038deb33c57e77fd1
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33389534"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43388354"
 ---
 # <a name="mitigation-path-normalization"></a>완화: 경로 정규화
 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]을 대상으로 하는 앱부터, .NET Framework의 경로 정규화가 변경되었습니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "33389534"
 ## <a name="the-changes"></a>변경 내용  
  [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]를 대상으로 하는 앱부터, 경로 정규화가 다음과 같이 변경되었습니다.  
   
--   런타임은 운영 체제의 [GetFullPathName](https://msdn.microsoft.com/library/windows/desktop/aa364963\(v=vs.85\).aspx) 함수를 지연시켜 경로를 정규화합니다.  
+-   런타임은 운영 체제의 [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) 함수를 지연시켜 경로를 정규화합니다.  
   
 -   정규화 중에 더 이상 디렉터리 세그먼트의 끝(예: 디렉터리 이름 끝의 공백)이 잘리지 않습니다.  
   

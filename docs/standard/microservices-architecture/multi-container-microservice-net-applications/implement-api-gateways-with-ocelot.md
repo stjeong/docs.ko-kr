@@ -4,12 +4,12 @@ description: Ocelot을 사용하여 API 게이트웨이를 구현하는 방법�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 07/03/2018
-ms.openlocfilehash: 7400603aa11b2a741db727c97c2e4b2a17268ac0
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: dbb3fdb27175a86291d3a942ff168a5aae787c0c
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37878742"
+ms.lasthandoff: 08/26/2018
+ms.locfileid: "42930800"
 ---
 # <a name="implementing-api-gateways-with-ocelot"></a>Ocelot을 사용하여 API 게이트웨이 구현
 
@@ -65,6 +65,7 @@ Catalog(카탈로그) 마이크로 서비스는 다음 코드와 같은 몇 가�
 ```csharp
 [HttpGet]
 [Route("items/{id:int}")]
+[ProducesResponseType((int)HttpStatusCode.BadRequest)]
 [ProducesResponseType((int)HttpStatusCode.NotFound)]
 [ProducesResponseType(typeof(CatalogItem),(int)HttpStatusCode.OK)]
 public async Task<IActionResult> GetItemById(int id)
@@ -545,7 +546,7 @@ eShopOnContainers를 Kuberentes에 배포하면 _수신_을 통해 몇 가지 �
 
 -   `/`: 클라이언트 SPA 웹 응용 프로그램의 경우
 -   `/webmvc`: 클라이언트 MVC 웹 응용 프로그램의 경우
--   `/webstatus`: 상태/healchecks를 표시하는 클라이언트 웹앱의 경우
+-   `/webstatus`: 상태/healthchecks를 표시하는 클라이언트 웹앱의 경우
 -   `/webshoppingapigw`: 웹 BFF 및 쇼핑 비즈니스 프로세스의 경우
 -   `/webmarketingapigw`: 웹 BFF 및 마케팅 비즈니스 프로세스의 경우
 -   `/mobileshoppingapigw`: 모바일 BFF 및 쇼핑 비즈니스 프로세스의 경우
@@ -579,4 +580,4 @@ Ocelot API 게이트웨이를 사용하는 경우 연구하고 사용할 다른 
 
 
 >[!div class="step-by-step"]
-[이전](background-tasks-with-ihostedservice.md) [다음](../microservice-ddd-cqrs-patterns/index.md)
+[이전] (background-tasks-with-ihostedservice.md) [다음] (../microservice-ddd-cqrs-patterns/index.md)

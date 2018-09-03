@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - internal keyword [C#]
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
-ms.openlocfilehash: d2fcc19bb7bc6de373412e7728f3025647c0435d
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 54ec003683953b53dedf8885a41350daf5338f83
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961484"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43399444"
 ---
 # <a name="internal-c-reference"></a>internal(C# 참조)
 `internal` 키워드는 형식 및 형식 멤버에 대한 [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)입니다. 
@@ -75,7 +75,7 @@ public class BaseClass
   
 ```csharp  
 // Assembly2_a.cs  
-// Compile with: /reference:Assembly1.dll  
+// Compile with: /reference:Assembly2.dll  
 public class TestAccess   
 {  
    static void Main()   
@@ -89,13 +89,14 @@ public class TestAccess
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [액세스 수준](../../../csharp/language-reference/keywords/accessibility-levels.md)  
- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
- [public](../../../csharp/language-reference/keywords/public.md)  
- [private](../../../csharp/language-reference/keywords/private.md)  
- [protected](../../../csharp/language-reference/keywords/protected.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [액세스 수준](../../../csharp/language-reference/keywords/accessibility-levels.md)  
+- [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
+- [public](../../../csharp/language-reference/keywords/public.md)  
+- [private](../../../csharp/language-reference/keywords/private.md)  
+- [protected](../../../csharp/language-reference/keywords/protected.md)

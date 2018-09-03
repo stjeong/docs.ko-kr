@@ -1,14 +1,14 @@
 ---
 title: 연속 키를 기준으로 결과 그룹화(C#의 LINQ)
 description: C#의 LINQ를 사용하여 연속 키를 기준으로 결과를 그룹화하는 방법입니다.
-ms.date: 12/1/2016
+ms.date: 08/14/2018
 ms.assetid: cbda9c08-151b-4c9e-82f7-c3d7f3dac66b
-ms.openlocfilehash: 8ad08d861e2d0f5ee0f8a2eceeb8d82a9aa2a5a6
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: b5753c85bb07be4fc84b78a299eece961969ff9d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404764"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484004"
 ---
 # <a name="group-results-by-contiguous-keys"></a>연속 키를 기준으로 결과 그룹화
 
@@ -51,4 +51,4 @@ ms.locfileid: "37404764"
 
 ## <a name="see-also"></a>참고 항목
 
-[LINQ(Language-Integrated Query)](index.md)
+- [LINQ(Language-Integrated Query)](index.md)

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - false keyword [C#]
 ms.assetid: a11aa532-efe2-442b-9fcc-8fdb33b8c8b4
 ms.openlocfilehash: 15243d4d7ecfe4600fbd6afbd0d1276ce25a58cc
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935430"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43407437"
 ---
 # <a name="false-c-reference"></a>false(C# 참조)
 오버로드된 연산자 또는 리터럴로 사용됩니다.  

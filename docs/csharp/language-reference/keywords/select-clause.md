@@ -8,12 +8,12 @@ helpviewer_keywords:
 - select keyword [C#]
 - select clause [C#]
 ms.assetid: df01e266-5781-4aaa-80c4-67cf28ea093f
-ms.openlocfilehash: 6e7277b5d714e48059fe1ed7e8b85e46a14a840c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dcab29cdbe98b5e49463d9a2781d43d4b9ee9544
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279986"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43467343"
 ---
 # <a name="select-clause-c-reference"></a>select 절(C# 참조)
 쿼리 식에서 `select` 절은 쿼리를 실행할 때 생성되는 값의 형식을 지정합니다. 결과는 모든 이전 절의 평가와 `select` 절 자체의 모든 계산을 기반으로 합니다. 쿼리 식은 `select` 절이나 [group](../../../csharp/language-reference/keywords/group-clause.md) 절로 끝나야 합니다.  
@@ -34,11 +34,12 @@ ms.locfileid: "33279986"
 ## <a name="remarks"></a>설명  
  컴파일 시간에 `select` 절은 <xref:System.Linq.Enumerable.Select%2A> 표준 쿼리 연산자에 대한 메서드 호출로 변환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [쿼리 키워드(LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
- [from 절](../../../csharp/language-reference/keywords/from-clause.md)  
- [partial(메서드)(C# 참조)](../../../csharp/language-reference/keywords/partial-method.md)  
- [익명 형식](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [C#에서 LINQ 시작](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [쿼리 키워드(LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)  
+- [from 절](../../../csharp/language-reference/keywords/from-clause.md)  
+- [partial(메서드)(C# 참조)](../../../csharp/language-reference/keywords/partial-method.md)  
+- [익명 형식](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [C#에서 LINQ 시작](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

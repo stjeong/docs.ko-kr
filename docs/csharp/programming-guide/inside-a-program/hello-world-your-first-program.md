@@ -8,12 +8,12 @@ helpviewer_keywords:
 - examples [C#], Hello World
 - Hello World example [C#]
 ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
-ms.openlocfilehash: 904657175d87e0d78e518248ed89b3720227360f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 96cad879c843a7b70dc748675123b792137d290e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339172"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43463119"
 ---
 # <a name="hello-world----your-first-program-c-programming-guide"></a>Hello World -- 프로그램 처음 만들기(C# 프로그래밍 가이드)
 다음 절차에서는 기존 "Hello World!" 프로그램의 C# 버전을 만듭니다. 이 프로그램은 문자열 `Hello World!`를 표시합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "33339172"
   
  `Main` 메서드의 매개 변수 `args`는 프로그램을 호출하는 데 사용된 명령줄 인수가 포함된 `string` 배열입니다. C++의 경우와는 달리 배열에 실행(exe) 파일의 이름이 포함되지 않습니다.  
   
- 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [Main() 및 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md) 및 [How to: Create and Use Assemblies Using the Command Line](http://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4)(방법: 명령줄을 사용하여 어셈블리 만들기 및 사용)의 예제를 참조하세요.  
+ 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [Main() 및 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md) 및 [How to: Create and Use Assemblies Using the Command Line](https://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4)(방법: 명령줄을 사용하여 어셈블리 만들기 및 사용)의 예제를 참조하세요.  
   
  `Main` 메서드가 끝날 때 <xref:System.Console.ReadKey%2A>를 호출하면 프로그램을 디버그 모드에서 실행할 경우 F5 키를 눌러 출력을 읽을 수 있게 될 때까지 콘솔 창이 닫히지 않습니다.  
   
@@ -130,7 +130,7 @@ ms.locfileid: "33339172"
  [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
  [C# 프로그램 내부](../../../csharp/programming-guide/inside-a-program/index.md)  
  [문자열](../../../csharp/programming-guide/strings/index.md)  
- [\<paveover>C# 샘플 응용 프로그램](http://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
+ [\<paveover>C# 샘플 응용 프로그램](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
  [C# 참조](../../../csharp/language-reference/index.md)  
  [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
  [Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

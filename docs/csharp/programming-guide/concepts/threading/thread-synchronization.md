@@ -2,12 +2,12 @@
 title: 스레드 동기화(C#)
 ms.date: 07/20/2015
 ms.assetid: e42b1be6-c93c-479f-a148-be0759f1a4e1
-ms.openlocfilehash: 138b94ef8ae5fc54e42277127f9b22f88803457f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4ed6cad647c965882a63282ce32c998cec138eec
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338613"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463158"
 ---
 # <a name="thread-synchronization-c"></a>스레드 동기화(C#)
 다음 섹션에서는 다중 스레드 응용 프로그램에서 리소스에 대한 액세스를 동기화 하는 데 사용할 수 있는 기능 및 클래스를 설명합니다.  
@@ -160,7 +160,6 @@ class ThreadingExample
  <xref:System.Threading>  
  <xref:System.Threading.EventWaitHandle.Set%2A>  
  <xref:System.Threading.Monitor>  
- [다중 스레드 응용 프로그램(C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)  
  [lock 문](../../../../csharp/language-reference/keywords/lock-statement.md)  
  [뮤텍스](../../../../standard/threading/mutexes.md)  
  [연동 작업](../../../../standard/threading/interlocked-operations.md)  

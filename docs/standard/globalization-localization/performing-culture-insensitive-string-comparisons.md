@@ -1,6 +1,6 @@
 ---
 title: 문화권을 구분하지 않는 문자열 비교 수행
-ms.date: 03/30/2017
+ms.date: 08/22/2018
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: abae50ef-32f7-4a50-a540-fd256fd1aed0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 35805d1760b0e06d33498efeeb3104979da26bc9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 84b1c10b655fefcd420a0c3cf038dba00e688d3e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573609"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43461659"
 ---
 # <a name="performing-culture-insensitive-string-comparisons"></a>문화권을 구분하지 않는 문자열 비교 수행
 기본적으로 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드는 문화권 구분 및 대/소문자 구분 비교 작업을 수행합니다. 이 메서드에는 사용할 문화권을 지정할 수 있는 `culture` 매개 변수와 사용할 비교 규칙을 지정할 수 있는 `comparisonType` 매개 변수를 제공하는 몇 가지 오버로드도 포함되어 있습니다. 기본 오버로드 대신 이러한 메서드를 호출하면 특정 메서드 호출에서 사용되는 규칙에 대한 모든 모호성이 제거되고 특정 비교가 문화권을 구분하는지 여부가 명확히 나타납니다.  
@@ -38,9 +38,12 @@ ms.locfileid: "33573609"
   
  [!code-csharp[Conceptual.Strings.CultureInsensitiveComparison#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/cs/cultureinsensitive1.cs#1)]
  [!code-vb[Conceptual.Strings.CultureInsensitiveComparison#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/vb/cultureinsensitive1.vb#1)]  
-  
-## <a name="see-also"></a>참고 항목  
- <xref:System.String.Compare%2A?displayProperty=nameWithType>  
- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
- [문자열 사용에 대한 모범 사례](../../../docs/standard/base-types/best-practices-strings.md)
+
+Windows 운영 체제에 대한 정렬 및 비교 작업에 사용되는 문자 가중치에 대한 정보를 포함하는 텍스트 파일의 집합, [가중치 테이블 정렬](https://www.microsoft.com/en-us/download/details.aspx?id=10921)을 다운로드할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.String.Compare%2A?displayProperty=nameWithType>  
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
+- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
+- [문자열 사용에 대한 모범 사례](../../../docs/standard/base-types/best-practices-strings.md)

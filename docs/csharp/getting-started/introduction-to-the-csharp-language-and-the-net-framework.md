@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, about C# language
 - Visual C#, about
 ms.assetid: 0a2dff4e-cd84-42ff-8141-e89889b24081
-ms.openlocfilehash: cabd39307b6928302b40931c39fc61c3898821ed
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 75ef14032ee2211d3b8d355f050ced67b4a04930
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42929646"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43254478"
 ---
 # <a name="introduction-to-the-c-language-and-the-net-framework"></a>C# 언어 및 .NET Framework 소개
 
@@ -66,7 +66,7 @@ ms.locfileid: "42929646"
   
  .NET Framework에 대한 자세한 내용은 [Microsoft.NET Framework 개요](../../framework/get-started/overview.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
 - [C#](../../csharp/index.md)
 - [Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

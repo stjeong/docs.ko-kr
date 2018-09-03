@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /target compiler options [C#], /target:exe
 - -target compiler options [C#], /target:exe
 ms.assetid: bda5717d-1b91-4848-956b-fcf85c30e432
-ms.openlocfilehash: 194e4f7efaebd9523791090bcab09c019f8554a4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4a2d3ea2bda56caf6a16f52877ad36b3947357e8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218831"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43391112"
 ---
 # <a name="-targetexe-c-compiler-options"></a>-target:exe(C# 컴파일러 옵션)
 **-target:exe** 옵션을 사용하면 컴파일러가 콘솔 응용 프로그램 실행 파일(EXE)을 만듭니다.  
@@ -54,5 +54,6 @@ csc in.cs
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [-target(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
+
+- [-target(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)

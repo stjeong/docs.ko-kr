@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - char data type [C#]
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
-ms.openlocfilehash: ea465e240a1d74b3f473316ca63b05bd0ba90777
-ms.sourcegitcommit: f9e38d31288fe5962e6be5b0cc286da633482873
+ms.openlocfilehash: 95ecfaaf1397f7a4598faba6528b38170062145a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37028034"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43463223"
 ---
 # <a name="char-c-reference"></a>char(C# 참조)
 
@@ -42,13 +42,13 @@ ms.locfileid: "37028034"
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Char>  
-[C# 참조](../../../csharp/language-reference/index.md)  
-[C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-[C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-[정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
-[기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-[암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-[명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-[Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)  
-[문자열](../../../csharp/programming-guide/strings/index.md)
+- <xref:System.Char>  
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [Nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)  
+- [문자열](../../../csharp/programming-guide/strings/index.md)

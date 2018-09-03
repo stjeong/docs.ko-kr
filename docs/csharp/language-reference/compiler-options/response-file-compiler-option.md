@@ -7,12 +7,12 @@ helpviewer_keywords:
 - response files, specifying for compilation [C#]
 - '@ compiler option'
 ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
-ms.openlocfilehash: facf2d45aff424d54dde45973cfec8cc8f93cb6a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f342f26ee8abe29e6c5a1477469c8b7292cd702e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33215071"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43456505"
 ---
 # <a name="-c-compiler-options"></a>@(C# 컴파일러 옵션)
 @ 옵션을 사용하면 컴파일러 옵션과 컴파일할 소스 코드 파일이 포함된 파일을 지정할 수 있습니다.  
@@ -55,4 +55,5 @@ ms.locfileid: "33215071"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)

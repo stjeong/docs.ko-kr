@@ -3,12 +3,12 @@ title: 메서드에서 쿼리 반환
 description: 쿼리를 반환하는 방법.
 ms.date: 11/30/2016
 ms.assetid: db220f79-c35b-41f2-886c-cd068672d42d
-ms.openlocfilehash: 13f0839f712cb76b34c98157a30315787d300109
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 1c5fa534f3f39f8201d93b986e687d85bb303736
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404160"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43473946"
 ---
 # <a name="how-to-return-a-query-from-a-method-c-programming-guide"></a>방법: 메서드에서 쿼리 반환(C# 프로그래밍 가이드)
 이 예제는 메서드에서 반환 값 및 `out` 매개 변수로서 쿼리를 반환하는 방법을 보여 줍니다.  
@@ -20,5 +20,6 @@ ms.locfileid: "37404160"
   
  [!code-csharp[csProgGuideLINQ#80](~/samples/snippets/csharp/concepts/linq/how-to-return-a-query-from-a-method_1.cs)]  
 
-## <a name="see-also"></a>참고 항목  
- [LINQ(Language-Integrated Query)](index.md)
+## <a name="see-also"></a>참고 항목
+
+- [LINQ(Language-Integrated Query)](index.md)

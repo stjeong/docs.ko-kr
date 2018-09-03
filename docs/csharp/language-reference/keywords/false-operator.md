@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - false operator keyword [C#]
 ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e
-ms.openlocfilehash: e1c6da604f35031dd9d712125356243e1735f452
-ms.sourcegitcommit: f9e38d31288fe5962e6be5b0cc286da633482873
+ms.openlocfilehash: e73113bd37dbb68590267141ad037f78919520bc
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37027839"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43253251"
 ---
 # <a name="false-operator-c-reference"></a>false 연산자(C# 참조)
 
@@ -33,8 +33,8 @@ nullable 부울을 사용하는 경우 하나 또는 두 값이 모두 null일 �
 
 ## <a name="see-also"></a>참고 항목
 
-[C# 참조](../index.md)  
-[C# 프로그래밍 가이드](../../programming-guide/index.md)  
-[C# 키워드](index.md)  
-[C# 연산자](../operators/index.md)  
-[true](true.md)  
+- [C# 참조](../index.md)  
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
+- [C# 키워드](index.md)  
+- [C# 연산자](../operators/index.md)  
+- [true](true.md)  

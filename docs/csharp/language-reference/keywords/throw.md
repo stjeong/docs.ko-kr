@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c7e944f224ff9bf6dc3b8cefc293182bb79f74f2
-ms.sourcegitcommit: 43924acbdbb3981d103e11049bbe460457d42073
+ms.openlocfilehash: 831c4cce14e902697d84129e54cc54f07d26b9f3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34457505"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43417360"
 ---
 # <a name="throw-c-reference"></a>throw(C# 참조)
 프로그램 실행 중 예외 발생 신호를 보냅니다.  
@@ -65,11 +65,12 @@ C# 7.0부터 `throw`를 명령문뿐만 아니라 식으로도 사용할 수 있
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
- [C++의 try, catch 및 throw 문](../../../csharp/language-reference/keywords/try-catch.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [예외 처리 문](../../../csharp/language-reference/keywords/exception-handling-statements.md)  
- [방법: 명시적으로 예외 Throw](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+- [C++의 try, catch 및 throw 문](../../../csharp/language-reference/keywords/try-catch.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [예외 처리 문](../../../csharp/language-reference/keywords/exception-handling-statements.md)  
+- [방법: 명시적으로 예외 Throw](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)

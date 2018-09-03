@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -bugreport compiler option [C#]
 - bugreport compiler option [C#]
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
-ms.openlocfilehash: 5505971ad9a6920124dd4d8c12642a5e4e346322
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6e4674acd2a5edbbffd2babf130d2078019ab9b7
+ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33214094"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43331737"
 ---
 # <a name="-bugreport-c-compiler-options"></a>-bugreport(C# 컴파일러 옵션)
 나중에 분석하기 위해 파일에 디버그 정보를 포함하도록 지정합니다.  
@@ -54,6 +54,7 @@ ms.locfileid: "33214094"
  생성된 파일 내용에 의해 소스 코드가 노출되어, 의도하지 않게 정보가 공개될 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [-errorreport(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [-errorreport(C# 컴파일러 옵션)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)
