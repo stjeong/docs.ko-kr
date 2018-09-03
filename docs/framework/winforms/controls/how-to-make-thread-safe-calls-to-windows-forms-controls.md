@@ -16,12 +16,12 @@ helpviewer_keywords:
 - threading [Windows Forms], cross-thread calls
 - controls [Windows Forms], multithreading
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
-ms.openlocfilehash: d4e5b4353b53c382dad2b390db1b8fc224e7f261
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: f2716db441380138e6058ec45d9ae9c07f0e21a7
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42911746"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43468632"
 ---
 # <a name="how-to-make-thread-safe-calls-to-windows-forms-controls"></a>방법: 스레드로부터 안전한 방식으로 Windows Forms 컨트롤 호출
 
@@ -402,11 +402,11 @@ private:
 
  <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> 이벤트를 사용하여 백그라운드 작업의 진행률을 보고할 수도 있습니다. 해당 이벤트가 통합되어 있는 예제를 보려면 <xref:System.ComponentModel.BackgroundWorker>를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제는 단추 세 개와 텍스트 상자 하나가 포함된 폼으로 구성되는 완전한 Windows Forms 응용 프로그램입니다. 첫 번째 단추는 안전하지 않은 크로스 스레드 액세스를, 두 번째 단추는 <xref:System.Windows.Forms.Control.Invoke%2A>를 사용하는 안전한 액세스를, 세 번째 단추는 <xref:System.ComponentModel.BackgroundWorker>를 사용하는 안전한 액세스를 보여 줍니다.
 
 > [!NOTE]
-> 예제를 실행하는 방법에 대한 지침은 [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416)을 참조하세요. 이 예제를 실행하려면 System.Drawing 및 System.Windows.Forms 어셈블리에 대한 참조가 필요합니다.
+> 예제를 실행하는 방법에 대한 지침은 [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416)을 참조하세요. 이 예제를 실행하려면 System.Drawing 및 System.Windows.Forms 어셈블리에 대한 참조가 필요합니다.
 
 ```csharp
 using System;

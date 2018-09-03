@@ -7,15 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - basic samples [WCF], getting started
 ms.assetid: 967a3d94-0261-49ff-b85a-20bb07f1af20
-ms.openlocfilehash: dfba7062d4226f3644aa6c4cc0efcd7c5fb9eab8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dda11511904d452a3a5101417f8ab8a33c00204f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33505771"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43469910"
 ---
 # <a name="getting-started-sample"></a>Getting Started 샘플
-Getting Started 샘플 일반 서비스와 Windows Communication Foundation (WCF)를 사용 하 여 일반 클라이언트를 구현 하는 방법을 보여 줍니다. 이 샘플은 다른 모든 기본 기술 샘플의 기준이 됩니다.  
+Getting Started 샘플에는 일반 서비스와 Windows Communication Foundation (WCF)를 사용 하 여 일반 클라이언트를 구현 하는 방법을 보여 줍니다. 이 샘플은 다른 모든 기본 기술 샘플의 기준이 됩니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -25,20 +25,20 @@ Getting Started 샘플 일반 서비스와 Windows Communication Foundation (WCF
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\GettingStarted\GettingStarted`  
   
  서비스는 메타데이터로 공개적으로 노출하는 서비스 계약에서 수행하는 작업을 설명합니다. 또한 서비스에는 작업을 구현하기 위한 코드가 포함되어 있습니다.  
   
- 클라이언트에는 서비스에 액세스하기 위한 프록시 클래스와 서비스 계약에 대한 정의가 포함되어 있습니다. 프록시 코드가 사용 하 여 서비스 메타 데이터에서 생성 되는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다.  
+ 클라이언트에는 서비스에 액세스하기 위한 프록시 클래스와 서비스 계약에 대한 정의가 포함되어 있습니다. 프록시 코드를 사용 하 여 서비스 메타 데이터에서 생성 되는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다.  
   
  [!INCLUDE[wv](../../../../includes/wv-md.md)]에서 서비스는 WAS(Windows Activation Service)에서 호스팅됩니다. [!INCLUDE[wxp](../../../../includes/wxp-md.md)] 및[!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]에서 서비스는 IIS(인터넷 정보 서비스) 및 ASP.NET을 통해 호스팅됩니다. IIS 또는 WAS에서 서비스를 호스팅하면 서비스에 처음 액세스할 때 서비스를 자동으로 활성화할 수 있습니다.  
   
 > [!NOTE]
->  IIS는 대신 콘솔 응용 프로그램에서 서비스를 호스팅하는 샘플으로 시작 하 여 하려는 경우, 참조는 [자체 호스트](../../../../docs/framework/wcf/samples/self-host.md) 샘플.  
+>  IIS 대신 콘솔 응용 프로그램에서 서비스를 호스팅하는 샘플을 시작 하려는 경우, 참조를 [Self-host](../../../../docs/framework/wcf/samples/self-host.md) 샘플입니다.  
   
- 서비스와 클라이언트는 구성 파일 설정에서 액세스 세부 정보를 지정하므로 배포 시에 유연성을 갖게 됩니다. 주소, 바인딩 및 계약을 지정하는 끝점 정의가 여기에 포함됩니다. 바인딩은 서비스를 액세스하는 방법에 대한 전송 및 보안 세부 정보를 지정합니다.  
+ 서비스와 클라이언트는 구성 파일 설정에서 액세스 세부 정보를 지정하므로 배포 시에 유연성을 갖게 됩니다. 주소, 바인딩 및 계약을 지정하는 엔드포인트 정의가 여기에 포함됩니다. 바인딩은 서비스를 액세스하는 방법에 대한 전송 및 보안 세부 정보를 지정합니다.  
   
  서비스는 해당 메타데이터를 게시하기 위한 런타임 동작을 구성합니다.  
   
@@ -122,7 +122,7 @@ public class CalculatorService : ICalculator
 }  
 ```  
   
- 다음 샘플 구성과 같이 서비스에서는 구성 파일(Web.config)을 사용하여 정의하는 서비스와의 통신을 위한 끝점을 노출합니다.  
+ 다음 샘플 구성과 같이 서비스에서는 구성 파일(Web.config)을 사용하여 정의하는 서비스와의 통신을 위한 엔드포인트를 노출합니다.  
   
 ```xaml  
 <services>  
@@ -139,11 +139,11 @@ public class CalculatorService : ICalculator
 </services>  
 ```  
   
- 서비스는 IIS 또는 WAS 호스트에서 제공되는 기본 주소에서 끝점을 노출합니다. 바인딩은 표준 <xref:System.ServiceModel.WSHttpBinding>을 사용하여 구성되어 주소 지정 및 보안을 위한 HTTP 통신 및 표준 웹 서비스 프로토콜을 제공합니다. 계약은 서비스에 의해 구현되는 `ICalculator`입니다.  
+ 서비스는 IIS 또는 WAS 호스트에서 제공되는 기본 주소에서 엔드포인트를 노출합니다. 바인딩은 표준 <xref:System.ServiceModel.WSHttpBinding>을 사용하여 구성되어 주소 지정 및 보안을 위한 HTTP 통신 및 표준 웹 서비스 프로토콜을 제공합니다. 계약은 서비스에 의해 구현되는 `ICalculator`입니다.  
   
- 서비스에 액세스할 수 구성 된 대로 http://localhost/servicemodelsamples/service.svc 동일한 컴퓨터에 클라이언트에서. 원격 컴퓨터의 클라이언트가 서비스에 액세스하려면 localhost 대신 정규화된 도메인 이름을 지정해야 합니다.  
+ 서비스에서 액세스할 수 있습니다 구성 된 대로 http://localhost/servicemodelsamples/service.svc 동일한 컴퓨터에 클라이언트에서. 원격 컴퓨터의 클라이언트가 서비스에 액세스하려면 localhost 대신 정규화된 도메인 이름을 지정해야 합니다.  
   
- 기본적으로 프레임워크에서는 메타데이터를 노출하지 않습니다. 서비스 설정으로 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 에서 메타 데이터 교환 (MEX) 끝점을 노출 하 고 http://localhost/servicemodelsamples/service.svc/mex합니다. 다음 구성에서는 이를 보여 줍니다.  
+ 기본적으로 프레임워크에서는 메타데이터를 노출하지 않습니다. 서비스 설정으로 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 에서 메타 데이터 교환 (MEX) 끝점을 노출 하 고 http://localhost/servicemodelsamples/service.svc/mex입니다. 다음 구성에서는 이를 보여 줍니다.  
   
 ```xaml  
 <system.serviceModel>  
@@ -173,7 +173,7 @@ public class CalculatorService : ICalculator
 </system.serviceModel>  
 ```  
   
- 클라이언트에서 생성 되는 클라이언트 클래스를 사용 하 여 지정된 된 계약 형식을 사용 하 여 통신 하는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 생성된 이 클라이언트는 generatedClient.cs 또는 generatedClient.vb 파일에 포함됩니다. 이 유틸리티는 지정된 서비스에 대한 메타데이터를 검색하고 지정된 계약 형식으로 통신하기 위해 클라이언트 응용 프로그램에 사용되는 클라이언트를 생성합니다. 업데이트된 메타데이터를 검색하는 데 호스트된 서비스가 사용되므로 클라이언트 코드를 생성하기 위해 해당 서비스를 사용할 수 있어야 합니다.  
+ 클라이언트가 지정된 된 계약 형식에서 생성 되는 클라이언트 클래스를 사용 하 여 통신 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 생성된 이 클라이언트는 generatedClient.cs 또는 generatedClient.vb 파일에 포함됩니다. 이 유틸리티는 지정된 서비스에 대한 메타데이터를 검색하고 지정된 계약 형식으로 통신하기 위해 클라이언트 응용 프로그램에 사용되는 클라이언트를 생성합니다. 업데이트된 메타데이터를 검색하는 데 호스트된 서비스가 사용되므로 클라이언트 코드를 생성하기 위해 해당 서비스를 사용할 수 있어야 합니다.  
   
  클라이언트 디렉터리의 SDK 명령 프롬프트에서 다음 명령을 실행하여 형식화된 프록시를 생성합니다.  
   
@@ -185,7 +185,7 @@ svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Sam
   
  `Svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost/servicemodelsamples/service.svc/mex /l:vb /out:generatedClient.vb`  
   
- 생성된 클라이언트를 사용하면 클라이언트에서 적절한 주소와 바인딩을 구성하여 지정된 서비스 끝점에 액세스할 수 있습니다. 서비스와 마찬가지로 클라이언트는 구성 파일(App.config)을 사용하여 통신할 끝점을 지정합니다. 다음 예제와 같이 클라이언트 끝점 구성은 서비스 끝점의 절대 주소, 바인딩 및 계약으로 구성됩니다.  
+ 생성된 클라이언트를 사용하면 클라이언트에서 적절한 주소와 바인딩을 구성하여 지정된 서비스 엔드포인트에 액세스할 수 있습니다. 서비스와 마찬가지로 클라이언트는 구성 파일(App.config)을 사용하여 통신할 엔드포인트를 지정합니다. 다음 예제와 같이 클라이언트 엔드포인트 구성은 서비스 엔드포인트의 절대 주소, 바인딩 및 계약으로 구성됩니다.  
   
 ```xaml  
 <client>  
@@ -272,15 +272,15 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.  
 ```  
   
- Getting Started 샘플은 서비스와 클라이언트를 만드는 표준 방법을 보여 줍니다. 다른 [기본](../../../../docs/framework/wcf/samples/basic-sample.md) 특정 제품 기능을 보여 주기 위해이 샘플을 빌드합니다.  
+ Getting Started 샘플은 서비스와 클라이언트를 만드는 표준 방법을 보여 줍니다. 다른 [기본](../../../../docs/framework/wcf/samples/basic-sample.md) 특정 제품 기능을 보여 주기 위해이 샘플을 토대로 합니다.  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-3.  지침에 따라 단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+3.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 관리되는 응용 프로그램에서 WCF 서비스 호스트](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)  

@@ -2,18 +2,18 @@
 title: 큰 데이터 및 스트리밍
 ms.date: 03/30/2017
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
-ms.openlocfilehash: f58e61ef76173030db49d4911875cc40200e53d5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f381df2acdb370c6e84d3a00079578f8fceb69f3
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33496564"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43467587"
 ---
 # <a name="large-data-and-streaming"></a>큰 데이터 및 스트리밍
-Windows Communication Foundation (WCF) XML 기반 통신 인프라입니다. XML 데이터에 정의 된 표준 텍스트 형식으로 인코딩되어 일반적으로 하기 때문에 [XML 1.0 사양](http://go.microsoft.com/fwlink/?LinkId=94838)관계, 설계자 및 시스템 개발자가 일반적으로 염려 하는 전송 된 메시지의 통신 사용 공간 (또는 크기)에서 네트워크 및 XML의 텍스트 기반 인코딩과 이진 데이터의 효율적인 전송을 위한 특별히 고려해 야 할 제기 됩니다.  
+Windows Communication Foundation (WCF)는 XML 기반 통신 인프라. 일반적으로 XML 데이터에 정의 된 표준 텍스트 형식으로 인코딩된 때문에 합니다 [XML 1.0 사양](https://go.microsoft.com/fwlink/?LinkId=94838)연결, 시스템 개발자와 설계자가 일반적으로 염려 하는 전송 된 메시지의 통신 사용량 (또는 크기)에서 네트워크 및 XML의 텍스트 기반 인코딩은 이진 데이터의 효율적인 전송에 대 한 특수 한 문제를 제기 합니다.  
   
 ## <a name="basic-considerations"></a>기본 고려 사항  
- WCF에 대 한 다음 정보에 대 한 배경 정보를 제공 하려면이 섹션에서는 몇 가지 일반적인 문제 및 인코딩, 이진 데이터에 대 한 고려 사항 및 연결 된 시스템 인프라에 적용 하는 일반적으로 스트리밍.  
+ WCF에 대 한 다음 정보에 대 한 배경 정보를 제공 하려면이 섹션에서는 몇 가지 일반적인 문제 및 인코딩, 이진 데이터에 대 한 고려 사항을 강조 하 고 연결 된 시스템 인프라에 적용 하는 일반적으로 스트리밍.  
   
 ### <a name="encoding-data-text-vs-binary"></a>인코딩 데이터: 텍스트와 이항  
  개발자가 일반적으로 말하는 고려 사항에는 XML에 시작 태그와 끝 태그가 반복된다는 점 때문에 이진 형식에 비해 오버헤드가 크다는 점, 숫자 값의 인코딩이 텍스트 값으로 표현되기 때문에 너무 크다는 점, 이진 데이터를 텍스트 형식으로 포함하려면 특수 인코딩이 필요하기 때문에 효과적인 표현이 어렵다는 점 등이 있습니다.  
@@ -28,21 +28,21 @@ Windows Communication Foundation (WCF) XML 기반 통신 인프라입니다. XML
   
  따라서 텍스트와 이진 사이에서 선택할 때 이진 메시지가 항상 XML 텍스트 메시지보다 작을 것이라고 쉽게 가정할 수가 없습니다.  
   
- XML 텍스트 메시지의 분명한 이점은 표준 기반이며 넓은 상호 운용성 옵션 및 플랫폼 지원을 제공한다는 것입니다. 자세한 내용은이 항목의 뒷부분에 나오는 "인코딩" 섹션을 참조 하십시오.  
+ XML 텍스트 메시지의 분명한 이점은 표준 기반이며 넓은 상호 운용성 옵션 및 플랫폼 지원을 제공한다는 것입니다. 자세한 내용은이 항목의 뒷부분에 나오는 "인코딩" 단원을 참조 하세요.  
   
 ### <a name="binary-content"></a>이진 콘텐츠  
  결과 메시지의 크기 면에서 이진 인코딩이 텍스트 기반 인코딩보다 우수한 영역은 그림, 비디오, 사운드 클립 또는 서비스와 소비자 사이에서 교환해야 하는 기타 형식의 불투명한 이진 데이터입니다. 이러한 형식의 데이터를 XML 텍스트에 넣기 위해 일반적으로 사용하는 방법은 Base64 인코딩을 사용하여 인코딩하는 것입니다.  
   
  Base64 인코딩된 문자열에서 각 문자는 원래 8비트 데이터 중 6비트를 나타내며, 따라서 규칙에 따라 일반적으로 추가되는 추가 형식 문자(캐리지 리턴/줄 바꿈)를 제외하고 Base64에서 인코딩 오버헤드 비율은 4:3이 됩니다. XML과 이진 인코딩 사이의 차이가 갖는 심각도는 일반적으로 시나리오에 따라 결정되지만, 500MB의 페이로드를 전송하면서 크기가 33% 이상 증가한다면 보통은 적절하지 못한 것으로 봅니다.  
   
- 이 인코딩 오버헤드를 방지하기 위해 MTOM(Message Transmission Optimization Mechanism) 표준에서는 메시지에 포함된 큰 데이터 요소를 구체화하여 특별한 인코딩 없이도 메시지와 함께 이진 데이터로서 전달할 수 있습니다. Mtom에서는 메시지는 첨부 파일이 나 포함 된 콘텐츠 (그림 및 기타 포함 된 콘텐츠;)가 있는 SMTP Simple Mail Transfer Protocol () 전자 메일 메시지와 비슷한 방식 MTOM 메시지는 루트 부분이 실제 SOAP 메시지에 다중 파트/관련 MIME 시퀀스로 패키지 됩니다.  
+ 이 인코딩 오버헤드를 방지하기 위해 MTOM(Message Transmission Optimization Mechanism) 표준에서는 메시지에 포함된 큰 데이터 요소를 구체화하여 특별한 인코딩 없이도 메시지와 함께 이진 데이터로서 전달할 수 있습니다. MTOM을 사용 하 여 메시지가 첨부 또는 포함 된 콘텐츠 (사진 및 기타 포함 된 콘텐츠);를 사용 하 여 전자 메일 메시지를 SMTP Simple Mail Transfer Protocol ()는 비슷한 방식으로 교환 MTOM 메시지는 루트 부분이 실제 SOAP 메시지를 사용 하 여 다중 파트/관련 MIME 시퀀스로 패키지 됩니다.  
   
  MTOM SOAP 메시지는 해당 MIME 부분을 참조하는 특수 요소 태그가 이진 데이터를 포함하는 메시지에서 원래 요소의 자리를 차지하도록 인코딩되지 않은 버전에서 수정됩니다. 따라서 SOAP 메시지는 함께 전송되는 MIME을 가리키는 방식으로 이진 콘텐츠를 참조하고, 그 외의 경우에는 XML 텍스트 데이터만 전달합니다. 이 모델이 잘 구성된 SMTP 모델과 매우 가깝기 때문에 MTOM 메시지의 인코딩 및 디코딩 도구를 폭 넓게 지원하여 상호 운용성을 극대화하는 플랫폼도 많습니다.  
   
- 하지만 Base64와 마찬가지로, MTOM 역시 MIME 형식에 필요한 몇 가지 오버헤드를 동반하기 때문에 MTOM을 사용하는 경우의 장점은 이진 데이터 요소의 크기가 약 1KB를 넘는 경우에만 실감할 수 있습니다. 이진 페이로드가 이 임계값 아래로만 유지되는 경우에는 오버헤드로 인해 MTOM 인코딩 메시지가 이진 데이터에 Base64 인코딩을 사용하는 메시지보다 커질 수 있습니다. 자세한 내용은이 항목의 뒷부분에 나오는 "인코딩" 섹션을 참조 하십시오.  
+ 하지만 Base64와 마찬가지로, MTOM 역시 MIME 형식에 필요한 몇 가지 오버헤드를 동반하기 때문에 MTOM을 사용하는 경우의 장점은 이진 데이터 요소의 크기가 약 1KB를 넘는 경우에만 실감할 수 있습니다. 이진 페이로드가 이 임계값 아래로만 유지되는 경우에는 오버헤드로 인해 MTOM 인코딩 메시지가 이진 데이터에 Base64 인코딩을 사용하는 메시지보다 커질 수 있습니다. 자세한 내용은이 항목의 뒷부분에 나오는 "인코딩" 단원을 참조 하세요.  
   
 ### <a name="large-data-content"></a>큰 데이터 콘텐츠  
- 와이어 크기를 고려하지 않더라도, 앞에서 언급한 500MB 페이로드는 서비스 및 클라이언트에 큰 로컬 과제를 남깁니다. 기본적으로 WCF에 메시지를 처리 *버퍼링된 모드*합니다. 즉, 메시지의 전체 콘텐츠가 보내기 전과 받은 후에 메모리에 보관됩니다. 대부분의 시나리오에서는 좋은 전략이며, 디지털 서명 및 안정적인 배달 등의 메시징 기능에 필수적인 방법이지만, 큰 메시지를 전달하는 경우에는 시스템 리소스가 빠른 속도로 소모될 수 있습니다.  
+ 와이어 크기를 고려하지 않더라도, 앞에서 언급한 500MB 페이로드는 서비스 및 클라이언트에 큰 로컬 과제를 남깁니다. 기본적으로 WCF 메시지를 처리 *버퍼링된 모드*합니다. 즉, 메시지의 전체 콘텐츠가 보내기 전과 받은 후에 메모리에 보관됩니다. 대부분의 시나리오에서는 좋은 전략이며, 디지털 서명 및 안정적인 배달 등의 메시징 기능에 필수적인 방법이지만, 큰 메시지를 전달하는 경우에는 시스템 리소스가 빠른 속도로 소모될 수 있습니다.  
   
  큰 페이로드를 처리하는 전략은 스트리밍입니다. 메시지, 특히 XML로 표현되는 메시지는 일반적으로 비교적 압축된 데이터 패키지로 인식되지만, 메시지의 크기가 여러 기가바이트에 달할 수도 있으며, 데이터 패키지보다는 연속적인 데이터 스트림과 비슷한 경우도 있습니다. 버퍼링 모드 대신 스트리밍 모드를 사용하여 데이터를 전송하면 보내는 사람은 메시지 본문의 콘텐츠를 스트림의 형태로 받는 사람이 사용할 수 있게 만들고, 메시지 인프라에서는 데이터를 사용할 수 있게 되는대로 보내는 사람에게서 받는 사람에게로 계속 전달합니다.  
   
@@ -54,14 +54,14 @@ Windows Communication Foundation (WCF) XML 기반 통신 인프라입니다. XML
   
 -   전송을 시작할 때 전체를 사용할 수 없는 데이터.  
   
- 이러한 제약이 없는 데이터의 경우에는 보통 큰 메시지 하나보다 세션 범위 내의 메시지 시퀀스로 보내는 것이 더 좋습니다. 자세한 내용은이 항목의 뒷부분에 나오는 "스트리밍 데이터" 섹션을 참조 합니다.  
+ 이러한 제약이 없는 데이터의 경우에는 보통 큰 메시지 하나보다 세션 범위 내의 메시지 시퀀스로 보내는 것이 더 좋습니다. 자세한 내용은이 항목의 뒷부분에 나오는 "스트리밍 데이터" 섹션을 참조 하세요.  
   
- 많은 양의 데이터를 보낼 때 설정 해야 합니다는 `maxAllowedContentLength` IIS 설정 (자세한 내용은 참조 [IIS 요청 제한 구성](http://go.microsoft.com/fwlink/?LinkId=253165)) 및 `maxReceivedMessageSize` 바인딩 설정을 (예를 들어 [ System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) 또는 <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). `maxAllowedContentLength` 28.6 M 속성의 기본값 및 `maxReceivedMessageSize` 64KB 속성의 기본값입니다.  
+ 많은 양의 데이터를 보낼 때 설정 해야 합니다는 `maxAllowedContentLength` IIS 설정 (자세한 내용은 참조 하세요. [IIS 요청 한도 구성](https://go.microsoft.com/fwlink/?LinkId=253165)) 및 `maxReceivedMessageSize` 바인딩 설정 (예를 들어 [ System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) 또는 <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). 합니다 `maxAllowedContentLength` 속성의 기본값은 28.6m 및 `maxReceivedMessageSize` 속성의 기본값은 64KB입니다.  
   
 ## <a name="encodings"></a>인코딩  
- *인코딩* 통신 중에 메시지를 표시 하는 방법에 대 한 규칙의 집합을 정의 합니다. *인코더* 그러한 인코딩을 구현 하 고는, 보낸 사람 쪽에서는 <xref:System.ServiceModel.Channels.Message> 바이트 스트림 또는 바이트 버퍼 네트워크를 통해 보낼 수 있는 메모리 내 메시지입니다. 받는 쪽에서는 인코더가 바이트 시퀀스를 메모리 내 메시지로 변환합니다.  
+ *인코딩* 통신 중에 메시지를 표시 하는 방법에 대 한 규칙 집합을 정의 합니다. *인코더* 그러한 인코딩을 구현 되며, 보낸 사람 쪽에서 설정은 <xref:System.ServiceModel.Channels.Message> 바이트 스트림 또는 바이트 버퍼 네트워크를 통해 보낼 수 있는 메모리 내 메시지입니다. 받는 쪽에서는 인코더가 바이트 시퀀스를 메모리 내 메시지로 변환합니다.  
   
- WCF는 세 명의 인코더가 및 필요에 따라 작성 하 여 사용자가 직접 인코더에 연결할 수 있습니다.  
+ WCF는 세 개의 인코더가 있으며 필요한 경우 작성 하 고 사용자가 직접 인코더 플러그 인을 허용 합니다.  
   
  각각의 표준 바인딩에는 미리 구성된 인코더가 포함되며, Net* 접두사가 있는 바인딩에서는 이진 인코더를 사용하고(<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> 클래스를 포함하는 방법으로) <xref:System.ServiceModel.BasicHttpBinding> 및 <xref:System.ServiceModel.WSHttpBinding> 클래스에서는 기본적으로 텍스트 메시지 인코더(<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> 클래스 사용)를 사용합니다.  
   
@@ -69,14 +69,14 @@ Windows Communication Foundation (WCF) XML 기반 통신 인프라입니다. XML
 |-----------------------------|-----------------|  
 |<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|텍스트 메시지 인코더는 모든 HTTP 기반 바인딩의 기본 인코더이며 상호 운용성이 중요한 모든 사용자 지정 바인딩에 적절합니다. 이 인코더에서는 이진 데이터를 특수 처리하지 않는 표준 SOAP 1.1/SOAP 1.2 텍스트 메시지를 읽고 씁니다. 메시지의 <xref:System.ServiceModel.Channels.MessageVersion>이 `None`으로 설정되어 있으면 SOAP 봉투 래퍼가 출력에서 생략되고 메시지 본문 콘텐츠만 serialize됩니다.|  
 |<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>|MTOM 메시지 인코더는 이진 데이터의 특수 처리를 구현하는 텍스트 인코더이며, 엄격한 경우별 최적화 유틸리티이기 때문에 표준 바인딩에서는 전혀 기본으로 사용되지 않습니다. MTOM 인코딩이 장점을 제공하는 임계값을 초과하는 이진 데이터가 메시지에 포함되어 있으면, 데이터가 메시지 봉투 뒤의 MIME 부분에 구체화됩니다. 이 단원의 뒷부분에 있는 MTOM 활성화를 참조하십시오.|  
-|<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|이진 메시지 인코더는 Net * 바인딩 및 적합 한 선택 항목에 대 한 기본 인코더 통신 당사자 양쪽 모두가 WCF를 기반으로 합니다. 이진 메시지 인코더에서는 .NET 이진 XML 형식을 사용합니다. 이 형식은 일반적으로 동급 XML 1.0 표현보다 크기가 작으며 이진 데이터를 바이트 스트림으로 인코딩하는 XML Infoset을 나타내는 Microsoft만의 이진 표현입니다.|  
+|<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|이진 메시지 인코더에는 Net * 바인딩 및 적절 한 선택에 대 한 기본 인코더는 WCF 기반 통신 당사자 양쪽 모두가 때마다 합니다. 이진 메시지 인코더에서는 .NET 이진 XML 형식을 사용합니다. 이 형식은 일반적으로 동급 XML 1.0 표현보다 크기가 작으며 이진 데이터를 바이트 스트림으로 인코딩하는 XML Infoset을 나타내는 Microsoft만의 이진 표현입니다.|  
   
  텍스트 메시지 인코딩은 보통 상호 운용성이 필요한 모든 통신 경로에 적합하고, 이진 메시지 인코딩은 다른 모든 통신 경로에 적합합니다. 이진 메시지 인코딩은 보통 단일 메시지의 텍스트보다 메시지 크기가 작으며, 통신 세션이 진행될수록 점점 더 메시지 크기가 작아집니다. 텍스트 인코딩과 달리, 이진 인코딩에서는 Base64 사용과 같은 특수 이진 데이터 처리를 수행할 필요가 없으며 바이트를 바이트로 표현합니다.  
   
- 솔루션에 상호 운용성이 필요 없지만 여전히 HTTP 전송을 사용하려는 경우에는 <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>를 <xref:System.ServiceModel.Channels.HttpTransportBindingElement> 클래스를 전송에 사용하는 사용자 지정 바인딩에 작성할 수 있습니다. 서비스에 상호 운용성이 필요한 클라이언트가 많은 경우에는 활성화된 클라이언트에 각각에 적절한 전송 및 인코딩 선택 항목이 있는 병렬 끝점을 노출하는 것이 좋습니다.  
+ 솔루션에 상호 운용성이 필요 없지만 여전히 HTTP 전송을 사용하려는 경우에는 <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>를 <xref:System.ServiceModel.Channels.HttpTransportBindingElement> 클래스를 전송에 사용하는 사용자 지정 바인딩에 작성할 수 있습니다. 서비스에 상호 운용성이 필요한 클라이언트가 많은 경우에는 활성화된 클라이언트에 각각에 적절한 전송 및 인코딩 선택 항목이 있는 병렬 엔드포인트를 노출하는 것이 좋습니다.  
   
 ### <a name="enabling-mtom"></a>MTOM 활성화  
- 상호 운용성이 필요하며 큰 이진 데이터를 전송해야 하는 경우 MTOM 메시지 인코딩은 표준 <xref:System.ServiceModel.BasicHttpBinding> 또는 <xref:System.ServiceModel.WSHttpBinding> 바인딩에서 해당 `MessageEncoding` 속성을 <xref:System.ServiceModel.WSMessageEncoding.Mtom>으로 설정하거나 <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>를 <xref:System.ServiceModel.Channels.CustomBinding>에 작성하여 활성화할 수 있는 대체 인코딩 전략입니다. 추출 된 다음 예제 코드는 [MTOM 인코딩](../../../../docs/framework/wcf/samples/mtom-encoding.md) 샘플 구성에 MTOM을 활성화 하는 방법을 보여 줍니다.  
+ 상호 운용성이 필요하며 큰 이진 데이터를 전송해야 하는 경우 MTOM 메시지 인코딩은 표준 <xref:System.ServiceModel.BasicHttpBinding> 또는 <xref:System.ServiceModel.WSHttpBinding> 바인딩에서 해당 `MessageEncoding` 속성을 <xref:System.ServiceModel.WSMessageEncoding.Mtom>으로 설정하거나 <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>를 <xref:System.ServiceModel.Channels.CustomBinding>에 작성하여 활성화할 수 있는 대체 인코딩 전략입니다. 추출 된 다음 예제 코드는 [MTOM 인코딩을](../../../../docs/framework/wcf/samples/mtom-encoding.md) 샘플 구성에서 MTOM을 사용 하도록 설정 하는 방법에 설명 합니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -90,14 +90,14 @@ Windows Communication Foundation (WCF) XML 기반 통신 인프라입니다. XML
 <system.serviceModel>  
 ```  
   
- 앞에서 언급한 것과 같이, MTOM 인코딩의 사용 결정 사항은 보내는 데이터의 볼륨에 따라 달라집니다. 또한 MTOM이 바인딩 수준에서 활성화되기 때문에 MTOM을 활성화하면 지정된 끝점의 모든 작업에 영향을 줍니다.  
+ 앞에서 언급한 것과 같이, MTOM 인코딩의 사용 결정 사항은 보내는 데이터의 볼륨에 따라 달라집니다. 또한 MTOM이 바인딩 수준에서 활성화되기 때문에 MTOM을 활성화하면 지정된 엔드포인트의 모든 작업에 영향을 줍니다.  
   
- MTOM 인코더가 이진 데이터의 구체화 여부에 관계없이 항상 MTOM 인코딩 MIME/multipart 메시지를 내보내는 것과 상관없이 일반적으로 이진 데이터가 1KB 이상 포함된 메시지를 교환하는 끝점의 MTOM만 활성화해야 합니다. 또한 MTOM이 활성화된 끝점에 사용하도록 디자인된 서비스 계약은 가능한 경우 그러한 데이터 전송 작업을 지정하는 범위로 제한되어야 합니다. 관련 제어 기능은 별도의 계약에 있어야 합니다. 이 "MTOM 전용" 규칙은 MTOM이 활성화된 끝점을 통해 전송되는 메시지에만 적용됩니다. MTOM 인코더에서는 들어오는 MTOM 외의 메시지도 디코딩하고 구문 분석할 수 있습니다.  
+ MTOM 인코더가 이진 데이터의 구체화 여부에 관계없이 항상 MTOM 인코딩 MIME/multipart 메시지를 내보내는 것과 상관없이 일반적으로 이진 데이터가 1KB 이상 포함된 메시지를 교환하는 엔드포인트의 MTOM만 활성화해야 합니다. 또한 MTOM이 활성화된 엔드포인트에 사용하도록 디자인된 서비스 계약은 가능한 경우 그러한 데이터 전송 작업을 지정하는 범위로 제한되어야 합니다. 관련 제어 기능은 별도의 계약에 있어야 합니다. 이 "MTOM 전용" 규칙은 MTOM이 활성화된 엔드포인트를 통해 전송되는 메시지에만 적용됩니다. MTOM 인코더에서는 들어오는 MTOM 외의 메시지도 디코딩하고 구문 분석할 수 있습니다.  
   
- MTOM 인코더를 사용 하 여 다른 모든 WCF 기능와 준수 합니다. 세션 지원이 필요한 경우와 같이 이 규칙을 따를 수 없는 경우도 있습니다.  
+ MTOM 인코더를 사용 하 여 다른 모든 WCF 기능과 함께 따릅니다. 세션 지원이 필요한 경우와 같이 이 규칙을 따를 수 없는 경우도 있습니다.  
   
 ### <a name="programming-model"></a>프로그래밍 모델  
- 응용 프로그램에서 세 개의 기본 제공 인코더 중 어느 것을 사용해도, 이진 데이터 전송에 대한 프로그래밍 경험은 동일합니다. WCF 데이터 형식에 따라 데이터를 처리 하는 방법을 다릅니다.  
+ 응용 프로그램에서 세 개의 기본 제공 인코더 중 어느 것을 사용해도, 이진 데이터 전송에 대한 프로그래밍 경험은 동일합니다. WCF 데이터 형식에 따라 데이터를 처리 하는 점이 다릅니다.  
   
 ```  
 [DataContract]  
@@ -122,7 +122,7 @@ class MyData
 >  데이터 계약 내에서는 <xref:System.IO.Stream?displayProperty=nameWithType> 파생 형식을 사용하지 말아야 합니다. 스트림 데이터는 다음 "스트리밍 데이터" 단원에 설명된 대로 스트리밍 모델을 사용하여 통신해야 합니다.  
   
 ## <a name="streaming-data"></a>스트리밍 데이터  
- 많은 양의 데이터를 전송 하는 경우 WCF의 스트리밍 전송 모드는 대신 버퍼링 하 고 전체적으로 메모리에 메시지 처리의 기본 동작입니다.  
+ WCF에서 스트리밍 전송 모드 많은 양의 데이터 전송할 경우 때 버퍼링 및 전체에서 메모리에서 메시지 처리의 기본 동작에 대해 가능한 대체 합니다.  
   
  앞에서 언급한 것과 같이, 데이터를 세그먼트로 나눌 수 없거나, 메시지를 시기 적절하게 배달해야 하거나, 전송을 시작했을 때 데이터 전체를 사용할 수 없는 경우에 텍스트 또는 이진 콘텐츠가 있는 큰 메시지에 대해서만 스트리밍 활성화를 고려해야 합니다.  
   
@@ -182,10 +182,10 @@ class MyData
   
  바인딩을 코드에 인스턴스화하는 경우에는 바인딩의 해당 `TransferMode` 속성(또는 사용자 지정 바인딩을 작성하는 경우 전송 바인딩 요소)을 앞에서 언급한 값 중 하나로 설정해야 합니다.  
   
- 요청 및 응답의 스트리밍을 켜거나 양방향 모두에 대해 통신 참가자 중 어느 쪽에서나 기능에 영향을 주지 않고 독립적으로 스트리밍을 켤 수 있습니다. 하지만 전송 데이터 크기가 너무 커서 통신 링크의 양 끝점 모두에서 스트리밍을 활성화하는 것이 적합하다고 항상 가정해야 합니다. 여기서 끝점 중 하나가 구현 되지 않은 WCF를 사용한 플랫폼 간 통신에 스트리밍을 사용 하는 기능 플랫폼의 스트리밍 기능에 따라 달라 집니다. 다른 흔치 않은 예외로는 클라이언트 또는 서비스에서 작업 집합을 최소화해야 하며 작은 버퍼 크기만 사용할 수 있는 메모리 소비 구동 시나리오가 있습니다.  
+ 요청 및 응답의 스트리밍을 켜거나 양방향 모두에 대해 통신 참가자 중 어느 쪽에서나 기능에 영향을 주지 않고 독립적으로 스트리밍을 켤 수 있습니다. 하지만 전송 데이터 크기가 너무 커서 통신 링크의 양 엔드포인트 모두에서 스트리밍을 활성화하는 것이 적합하다고 항상 가정해야 합니다. 여기서 끝점 중 하나가 구현 되지 않은 WCF를 사용 하 여 플랫폼 간 통신을 위해 스트리밍을 사용 하는 기능 플랫폼의 스트리밍 기능에 따라 달라 집니다. 다른 흔치 않은 예외로는 클라이언트 또는 서비스에서 작업 집합을 최소화해야 하며 작은 버퍼 크기만 사용할 수 있는 메모리 소비 구동 시나리오가 있습니다.  
   
 ### <a name="enabling-asynchronous-streaming"></a>비동기 스트리밍 사용  
- 비동기 스트리밍을 사용하려면 <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> 끝점 동작을 서비스 호스트에 추가하고 <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> 속성을 `true`로 설정합니다. 또한 전송 측에 진정한 의미의 비동기 스트리밍 기능을 추가했습니다. 이에 따라 메시지를 복수 클라이언트로 스트리밍하고 그 중 일부는 네트워크 혼잡으로 인해 읽는 속도가 느리거나 전혀 읽고 있지 않은 시나리오에서 서비스 확장성이 향상되었습니다. 이러한 시나리오에서는 이제 클라이언트당 서비스에서 개별 스레드를 차단하지 않습니다. 그러므로 서비스가 훨씬 더 많은 클라이언트를 처리해서 서비스 확장성이 향상됩니다.  
+ 비동기 스트리밍을 사용하려면 <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> 엔드포인트 동작을 서비스 호스트에 추가하고 <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> 속성을 `true`로 설정합니다. 또한 전송 측에 진정한 의미의 비동기 스트리밍 기능을 추가했습니다. 이에 따라 메시지를 복수 클라이언트로 스트리밍하고 그 중 일부는 네트워크 혼잡으로 인해 읽는 속도가 느리거나 전혀 읽고 있지 않은 시나리오에서 서비스 확장성이 향상되었습니다. 이러한 시나리오에서는 이제 클라이언트당 서비스에서 개별 스레드를 차단하지 않습니다. 그러므로 서비스가 훨씬 더 많은 클라이언트를 처리해서 서비스 확장성이 향상됩니다.  
   
 ### <a name="programming-model-for-streamed-transfers"></a>스트리밍 전송의 프로그래밍 모델  
  스트리밍의 프로그래밍 모델은 간단합니다. 스트리밍 데이터를 받으려면 단일 <xref:System.IO.Stream> 형식 입력 매개 변수가 있는 작업 계약을 지정합니다. 스트리밍 데이터를 반환하려면 <xref:System.IO.Stream> 참조를 반환합니다.  
@@ -220,23 +220,23 @@ public class UploadStreamMessage
 }   
 ```  
   
- 스트림이 EOF(파일의 끝)에 도달하면 스트리밍 전송이 끝나고 메시지가 닫힙니다. 메시지를 보낼 때 (값 반환 또는 작업 호출)를 전달할 수 있습니다는 <xref:System.IO.FileStream> WCF 인프라 스트림을 완전히 읽고 EOF에 도달할 때까지 해당 스트림에서 모든 데이터 이후에 추출 합니다. 그러한 기본 제공되는 <xref:System.IO.Stream> 파생 클래스가 없는 소스에 스트리밍 데이터를 전달하려면 그러한 클래스를 생성하고, 스트림 소스 위에 해당 클래스를 오버레이하고, 그 결과를 인수 또는 반환 값으로 사용합니다.  
+ 스트림이 EOF(파일의 끝)에 도달하면 스트리밍 전송이 끝나고 메시지가 닫힙니다. 메시지를 보낼 때 (값을 반환 또는 작업 호출)를 전달할 수 있습니다는 <xref:System.IO.FileStream> WCF 인프라 스트림을 완전히 읽고 EOF에 도달할 때까지 해당 스트림의 모든 데이터 이후에 가져옵니다. 그러한 기본 제공되는 <xref:System.IO.Stream> 파생 클래스가 없는 소스에 스트리밍 데이터를 전달하려면 그러한 클래스를 생성하고, 스트림 소스 위에 해당 클래스를 오버레이하고, 그 결과를 인수 또는 반환 값으로 사용합니다.  
   
- Base64 인코딩 메시지 본문 내용 (또는 MTOM을 사용 하는 경우 해당 MIME 부분)를 통해 WCF 스트림을 생성 메시지를 받을 때와 콘텐츠를 읽고 나면 스트림이 EOF에 도달 합니다.  
+ Base64로 인코딩된 메시지 본문 콘텐츠 (또는 MTOM을 사용 하는 경우 해당 MIME 부분)를 통해 WCF 스트림을 생성 메시지를 받을 때 및는 콘텐츠를 읽고 나면 스트림이 EOF에 도달 합니다.  
   
  전송 수준 스트리밍은 다른 메시지 계약 형식(매개 변수 목록, 데이터 계약 인수 및 명시적 메시지 계약)에도 적용되지만 그러한 메시지 형식의 serialization 및 deserialization에는 serializer의 버퍼링이 필요하기 때문에, 그러한 계약 variant는 좋지 않습니다.  
   
 ### <a name="special-security-considerations-for-large-data"></a>큰 데이터의 특수 보안 고려 사항  
- 모든 바인딩에서는 들어오는 메시지의 크기를 제한하여 서비스 거부 공격을 방지할 수 있습니다. <xref:System.ServiceModel.BasicHttpBinding>, 예를 들어 노출 한 [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) 액세스 하는 메모리의 최대 크기를 제한 하는 들어오는 메시지의 크기를 제한 하는 속성 메시지를 처리할 때. 이 단위는 바이트로 설정되며 기본값은 65,536바이트입니다.  
+ 모든 바인딩에서는 들어오는 메시지의 크기를 제한하여 서비스 거부 공격을 방지할 수 있습니다. <xref:System.ServiceModel.BasicHttpBinding>, 예를 들어 노출 된 [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) 최대 액세스 되는 메모리 양을 제한 하는 들어오는 메시지의 크기를 제한 하는 속성 메시지를 처리 하는 경우. 이 단위는 바이트로 설정되며 기본값은 65,536바이트입니다.  
   
- 큰 데이터 스트리밍 시나리오에 해당되는 보안 위험은 수신기에서 스트리밍을 예상할 때 데이터를 버퍼링하게 만들어 서비스 거부를 일으킵니다. 예를 들어 WCF 메시지의 SOAP 헤더를 항상 버퍼링 및 되므로 공격자가 데이터를 버퍼링 시킬 헤더로 구성 된 큰 용량의 악의적인 메시지를 만들 수도 있습니다. 스트리밍이 활성화되면 수신기에서 전체 메시지가 한 번에 메시지에 버퍼링될 것이라고 예상하지 않기 때문에 `MaxReceivedMessageSize`를 매우 큰 값으로 설정할 수 있습니다. WCF 메시지를 버퍼링 해야 하는 경우 메모리 오버플로가 발생 합니다.  
+ 큰 데이터 스트리밍 시나리오에 해당되는 보안 위험은 수신기에서 스트리밍을 예상할 때 데이터를 버퍼링하게 만들어 서비스 거부를 일으킵니다. 예를 들어 WCF 메시지의 SOAP 헤더를 항상 버퍼링 하 고 있으므로 공격자 수 데이터를 버퍼링 시킬 헤더로 완전히 구성 된 큰 용량의 악의적인 메시지를 있습니다. 스트리밍이 활성화되면 수신기에서 전체 메시지가 한 번에 메시지에 버퍼링될 것이라고 예상하지 않기 때문에 `MaxReceivedMessageSize`를 매우 큰 값으로 설정할 수 있습니다. WCF 메시지를 버퍼링 하는 데 강제 적용 하는 경우 메모리 오버플로 발생 합니다.  
   
- 따라서 이 경우에는 들어오는 메시지 크기를 제한하는 것만으로는 부족합니다. `MaxBufferSize` 속성은 WCF 버퍼링 할 메모리를 제한 해야 합니다. 스트리밍을 수행할 때 이 값을 안전한 값으로 설정하거나 기본값으로 유지하는 것이 중요합니다. 예를 들어, 서비스에서 크기 4GB까지의 파일을 받아 로컬 디스크에 저장해야 하는 경우를 가정할 수 있습니다. 한 번에 64KB까지의 데이터만 버퍼링할 수 있는 방법으로 메모리가 제한된 경우도 가정할 수 있습니다. 그러면 `MaxReceivedMessageSize`는 4GB로 설정하고 `MaxBufferSize`는 64KB로 설정합니다. 또한 서비스 구현에서 64KB 청크의 들어오는 스트림에서만 읽으며 이전 부분이 디스크에 기록된 후 메모리에서 폐기되기 전에는 다음 청크를 읽지 않는지 확인해야 합니다.  
+ 따라서 이 경우에는 들어오는 메시지 크기를 제한하는 것만으로는 부족합니다. `MaxBufferSize` WCF 버퍼링 하는 메모리를 제한 하기 위해 속성이 필요한 합니다. 스트리밍을 수행할 때 이 값을 안전한 값으로 설정하거나 기본값으로 유지하는 것이 중요합니다. 예를 들어, 서비스에서 크기 4GB까지의 파일을 받아 로컬 디스크에 저장해야 하는 경우를 가정할 수 있습니다. 한 번에 64KB까지의 데이터만 버퍼링할 수 있는 방법으로 메모리가 제한된 경우도 가정할 수 있습니다. 그러면 `MaxReceivedMessageSize`는 4GB로 설정하고 `MaxBufferSize`는 64KB로 설정합니다. 또한 서비스 구현에서 64KB 청크의 들어오는 스트림에서만 읽으며 이전 부분이 디스크에 기록된 후 메모리에서 폐기되기 전에는 다음 청크를 읽지 않는지 확인해야 합니다.  
   
- 이 할당량만 제한 WCF에서 수행 하는 버퍼링을 이해 해야 하 고 고유한 서비스 또는 클라이언트 구현에서 수행 하는 버퍼링 으로부터 보호할 수 없습니다. 추가 보안 고려 사항에 대 한 자세한 내용은 참조 [데이터에 대 한 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)합니다.  
+ 또한 이해는이 할당량은 버퍼링만 제한 WCF에서 수행 해야 하며 자체 서비스나 클라이언트 구현에서 수행 하는 버퍼링 으로부터 보호할 수 없습니다. 추가 보안 고려 사항에 대 한 자세한 내용은 참조 하세요. [데이터에 대 한 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)합니다.  
   
 > [!NOTE]
->  버퍼링 또는 스트리밍 전송 중 어느 것을 사용할 것인지를 결정하는 것은 끝점의 로컬 결정입니다. HTTP 전송의 경우 전송 모드는 연결 전체 또는 프록시 서버 및 다른 매개로 전파되지 않습니다. 서비스 인터페이스의 설명에 전송 모드 설정이 반영되지 않았습니다. WCF 클라이언트를 서비스를 생성 한 후 스트리밍 전송 모드를 설정 하려면 사용 하도록 서비스에 대 한 구성 파일을 편집 해야 합니다. TCP 및 명명된 파이프 전송의 경우에는 전송 모드가 정책 어설션으로 전파됩니다.  
+>  버퍼링 또는 스트리밍 전송 중 어느 것을 사용할 것인지를 결정하는 것은 엔드포인트의 로컬 결정입니다. HTTP 전송의 경우 전송 모드는 연결 전체 또는 프록시 서버 및 다른 매개로 전파되지 않습니다. 서비스 인터페이스의 설명에 전송 모드 설정이 반영되지 않았습니다. 서비스에 WCF 클라이언트를 생성 한 후 스트리밍 전송 모드를 설정 하는 데 사용할 서비스 구성 파일을 편집 해야 합니다. TCP 및 명명된 파이프 전송의 경우에는 전송 모드가 정책 어설션으로 전파됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 스트리밍 사용](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)

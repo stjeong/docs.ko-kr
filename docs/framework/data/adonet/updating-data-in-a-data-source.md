@@ -5,20 +5,20 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 55c545e5-dcd5-4323-a5b9-3825c2157462
-ms.openlocfilehash: 11c3faa85d6d0b77c4e606815aa8252188b6f67d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d7b57a9572a285dfdc13afb0a520de67e231a1c0
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357795"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463912"
 ---
 # <a name="updating-data-in-a-data-source"></a>데이터 원본에서 데이터 업데이트
-INSERT, UPDATE 또는 DELETE와 같이 데이터를 수정하는 SQL 문은 행을 반환하지 않습니다. 마찬가지로 대부분의 저장 프로시저도 동작을 수행하기는 하지만 행을 반환하지는 않습니다. 행을 반환 하지 않는 명령을 실행 하려면 만듭니다는 **명령** 개체를 적절 한 SQL 명령으로는 및 **연결**를 비롯 한 모든 필수 **매개 변수**합니다. 사용 하 여 명령을 실행의 **ExecuteNonQuery** 의 메서드는 **명령** 개체입니다.  
+INSERT, UPDATE 또는 DELETE와 같이 데이터를 수정하는 SQL 문은 행을 반환하지 않습니다. 마찬가지로 대부분의 저장 프로시저도 동작을 수행하기는 하지만 행을 반환하지는 않습니다. 만들기는 행을 반환 하지 않는 명령을 실행 하는 **명령** 적절 한 SQL 명령 사용 하 여 개체 및 **연결**, 필요한를 포함 하 여 **매개 변수**합니다. 사용 하 여 명령을 실행 합니다 **ExecuteNonQuery** 메서드의 **명령** 개체.  
   
- **ExecuteNonQuery** 메서드 문 또는 실행 된 저장된 프로시저에 영향을 받은 행 수를 나타내는 정수를 반환 합니다. 여러 문을 실행하는 경우 반환되는 값은 실행된 모든 문에 의해 영향을 받는 레코드의 합계입니다.  
+ 합니다 **ExecuteNonQuery** 메서드는 문 또는 저장된 프로시저 실행 된 영향을 받는 행 수를 나타내는 정수를 반환 합니다. 여러 문을 실행하는 경우 반환되는 값은 실행된 모든 문에 의해 영향을 받는 레코드의 합계입니다.  
   
 ## <a name="example"></a>예제  
- 다음 코드 예제에서는 실행에 사용 하 여 데이터베이스 레코드를 삽입 하기 위해 INSERT 문을 **ExecuteNonQuery**합니다.  
+ 다음 코드 예제를 사용 하 여 데이터베이스에 레코드를 삽입 하기 위해 INSERT 문을 실행 **ExecuteNonQuery**합니다.  
   
 ```vb  
 ' Assumes connection is a valid SqlConnection.  
@@ -42,9 +42,9 @@ SqlCommand command = new SqlCommand(queryString, connection);
 Int32 recordsAffected = command.ExecuteNonQuery();  
 ```  
   
- 다음 코드 예제에서는 샘플 코드에 의해 생성 된 저장된 프로시저 실행 [카탈로그 작업 수행](../../../../docs/framework/data/adonet/performing-catalog-operations.md)합니다. 저장된 프로시저에서 아무 행도 반환 하므로 **ExecuteNonQuery** 메서드는 사용 되지 않지만 저장된 프로시저에서 입력된 매개 변수를 수신 하 고 출력 매개 변수 및 반환 값을 반환 합니다.  
+ 다음 코드 예제에서는 샘플의 코드에 의해 생성 된 저장된 프로시저를 실행 [카탈로그 작업 수행](../../../../docs/framework/data/adonet/performing-catalog-operations.md)합니다. 저장된 프로시저에서 아무 행도 반환 하므로 **ExecuteNonQuery** 메서드는 사용 되지 않지만 저장된 프로시저에서 입력된 매개 변수를 수신 하 고 출력 매개 변수 및 반환 값을 반환 합니다.  
   
- 에 대 한는 <xref:System.Data.OleDb.OleDbCommand> 개체는 **ReturnValue** 매개 변수를 추가 해야 합니다는 **매개 변수** 컬렉션 첫 번째입니다.  
+ 에 대 한는 <xref:System.Data.OleDb.OleDbCommand> 개체를 **ReturnValue** 매개 변수를 추가 해야 합니다 **매개 변수** 컬렉션 첫 번째.  
   
 ```vb  
 ' Assumes connection is a valid SqlConnection.  
@@ -95,4 +95,4 @@ Int32 rowCount = (Int32) command.Parameters["@RowCount"].Value;
  [명령을 사용하여 데이터 수정](../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)  
  [DataAdapter로 데이터 원본 업데이트](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
  [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

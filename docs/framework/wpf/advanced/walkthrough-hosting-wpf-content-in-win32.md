@@ -6,17 +6,17 @@ dev_langs:
 helpviewer_keywords:
 - hosting WPF content in Win32 window [WPF]
 ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
-ms.openlocfilehash: 2a2be40195bf3afaadfc92c5f2983452a6f8568c
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: b37ec57a0fde6617d84590cc0b0d7a4235b5573e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43254895"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43467939"
 ---
 # <a name="walkthrough-hosting-wpf-content-in-win32"></a>연습: Win32에서 WPF 콘텐츠 호스팅
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 응용 프로그램을 만들기 위한 다양한 환경을 제공합니다. 그러나 [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] 코드에 상당한 투자를 한 경우 원본 코드를 다시 작성하는 대신 응용 프로그램에 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 기능을 추가하는 것이 더 효과적일 수 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 호스팅에 대 한 간단한 메커니즘을 제공 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창입니다.  
   
- 이 자습서에서는 샘플 응용 프로그램을 작성 하는 방법을 설명 [Win32 창 샘플에서 WPF 콘텐츠 호스팅](http://go.microsoft.com/fwlink/?LinkID=160004), 해당 호스트 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창입니다. [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창을 호스트하도록 이 샘플을 확장할 수 있습니다. 관리 코드와 비관리 코드를 혼합해서 사용하므로 응용 프로그램은 [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)]로 작성되었습니다.  
+ 이 자습서에서는 샘플 응용 프로그램을 작성 하는 방법을 설명 [Win32 창 샘플에서 WPF 콘텐츠 호스팅](https://go.microsoft.com/fwlink/?LinkID=160004), 해당 호스트 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠를 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창입니다. [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] 창을 호스트하도록 이 샘플을 확장할 수 있습니다. 관리 코드와 비관리 코드를 혼합해서 사용하므로 응용 프로그램은 [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)]로 작성되었습니다.  
   
  
   
@@ -27,7 +27,7 @@ ms.locfileid: "43254895"
  이 자습서와 함께 제공 되는 샘플에서 구현 되기 때문에 [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)],이 자습서에는 사용 하 여 지식이 있다고 가정 [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] 프로그램에는 [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] 관리 코드 프로그래밍의 기본적인 합니다. [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)]에 대한 지식이 있으면 도움이 되지만 필수 사항은 아닙니다.  
   
 > [!NOTE]
->  이 자습서에는 관련 샘플의 많은 코드 예제가 포함되어 있습니다. 그러나 가독성을 위해 전체 샘플 코드를 포함하지는 않습니다. 전체 샘플 코드를 보려면 [Win32 창 샘플에서 WPF 콘텐츠 호스팅](http://go.microsoft.com/fwlink/?LinkID=160004)합니다.  
+>  이 자습서에는 관련 샘플의 많은 코드 예제가 포함되어 있습니다. 그러나 가독성을 위해 전체 샘플 코드를 포함하지는 않습니다. 전체 샘플 코드를 보려면 [Win32 창 샘플에서 WPF 콘텐츠 호스팅](https://go.microsoft.com/fwlink/?LinkID=160004)합니다.  
   
 <a name="basic_procedure"></a>   
 ## <a name="the-basic-procedure"></a>기본 절차  

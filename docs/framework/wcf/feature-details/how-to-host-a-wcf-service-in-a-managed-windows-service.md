@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8e37363b-4dad-4fb6-907f-73c30fac1d9a
-ms.openlocfilehash: a50d6c5b52b1a61d7f076f35b5887ecac486cdf2
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: edbc67ddf20eee6ebbe9091faa43bc1de91809d2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933545"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466256"
 ---
 # <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>방법: 관리되는 Windows 서비스에서 WCF 서비스 호스팅
 
@@ -112,7 +112,7 @@ Windows 서비스는 MMC(Microsoft Management Console)의 Microsoft.ManagementCo
 
      App.config 파일을 마우스 오른쪽 단추로 클릭 합니다 **솔루션 탐색기** 선택한 **속성**합니다. 아래 **출력 디렉터리로 복사** 선택 **변경 된 내용만 복사**합니다.
 
-     다음 예제에서는 구성 파일의 끝점을 명시적으로 지정합니다. 서비스에 끝점을 추가하지 않으면 런타임에서 기본 끝점을 자동으로 추가합니다. 이 예제에서는 서비스의 <xref:System.ServiceModel.Description.ServiceMetadataBehavior>가 `true`로 설정되어 있으므로 서비스의 메타데이터 게시 기능도 사용하도록 설정되었습니다. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](../../../../docs/framework/wcf/simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)을 참조하세요.
+     다음 예제에서는 구성 파일의 엔드포인트를 명시적으로 지정합니다. 서비스에 엔드포인트를 추가하지 않으면 런타임에서 기본 엔드포인트를 자동으로 추가합니다. 이 예제에서는 서비스의 <xref:System.ServiceModel.Description.ServiceMetadataBehavior>가 `true`로 설정되어 있으므로 서비스의 메타데이터 게시 기능도 사용하도록 설정되었습니다. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](../../../../docs/framework/wcf/simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)을 참조하세요.
 
 ## <a name="install-and-run-the-service"></a>서비스를 설치하고 실행합니다.
 
@@ -124,7 +124,7 @@ Windows 서비스는 MMC(Microsoft Management Console)의 Microsoft.ManagementCo
 
 3.  서비스를 변경하려면 먼저 서비스를 중지하고 제거해야 합니다. 서비스를 중지, SCM에서 서비스를 마우스 오른쪽 단추로 클릭 하 고 "중지"를 선택 하려면 또는 **형식 net stop WCFWindowsServiceSample** 명령 프롬프트에서. Windows 서비스를 중지한 다음 클라이언트를 실행할 경우 클라이언트가 서비스에 액세스하려고 할 때 <xref:System.ServiceModel.EndpointNotFoundException> 예외가 발생합니다. Windows 서비스 유형을 제거할 **installutil /u bin\service.exe** 명령 프롬프트에서.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음은이 항목에서 사용 되는 코드의 전체 목록:
 
@@ -138,4 +138,4 @@ Windows 서비스는 MMC(Microsoft Management Console)의 Microsoft.ManagementCo
 - [단순화된 구성](../../../../docs/framework/wcf/simplified-configuration.md)
 - [관리되는 응용 프로그램에서의 호스팅](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)
 - [서비스 호스팅](../../../../docs/framework/wcf/hosting-services.md)
-- [Windows Server App Fabric 호스팅 기능](http://go.microsoft.com/fwlink/?LinkId=201276)
+- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

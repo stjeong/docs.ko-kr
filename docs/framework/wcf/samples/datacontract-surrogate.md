@@ -2,15 +2,15 @@
 title: DataContract 서로게이트
 ms.date: 03/30/2017
 ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
-ms.openlocfilehash: 3fd2bf028ccb2f75210d5e3fc039bdad7e1e065a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 10b0c2a3e82e39b03291f567ca360c51042b464e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33507865"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466599"
 ---
 # <a name="datacontract-surrogate"></a>DataContract 서로게이트
-이 샘플에서는 데이터 계약 서로게이트 클래스를 사용하여 serialization, deserialization, 스키마 내보내기 및 스키마 가져오기와 같은 프로세스를 사용자 지정할 수 있는 방법에 대해 설명합니다. 이 샘플에서는 데이터 serialize 되 고 Windows Communication Foundation (WCF) 클라이언트와 서비스 간에 전송 되는 클라이언트 및 서버 시나리오에서 서로게이트를 사용 하는 방법을 보여 줍니다.  
+이 샘플에서는 데이터 계약 서로게이트 클래스를 사용하여 serialization, deserialization, 스키마 내보내기 및 스키마 가져오기와 같은 프로세스를 사용자 지정할 수 있는 방법에 대해 설명합니다. 이 샘플에는 데이터 serialize 되 고 Windows Communication Foundation (WCF) 클라이언트와 서비스 간에 전송 되는 클라이언트 및 서버 시나리오에서 서로게이트를 사용 하는 방법을 보여 줍니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -220,7 +220,7 @@ private static void ApplyDataContractSurrogate(OperationDescription description)
   
  메타데이터 생성 도중 사용할 서로게이트를 플러그 인하기 위해 추가 단계를 수행해야 합니다. 이를 수행하는 한 가지 메커니즘은 이 샘플에서 보여 주는 `IWsdlExportExtension`을 제공하는 것입니다. 또 다른 방법은 `WsdlExporter`를 직접 수정하는 것입니다.  
   
- `AllowNonSerializableTypesAttribute` 구현 특성 `IWsdlExportExtension` 및 `IContractBehavior`합니다. 확장 일 수 있습니다는 `IContractBehavior` 또는 `IEndpointBehavior` 이 경우. 해당 `IWsdlExportExtension.ExportContract` 메서드 구현은 DataContract에 대한 스키마 생성 도중 사용되는 `XsdDataContractExporter`에 추가하여 서로게이트를 사용하도록 설정합니다. 다음 코드 조각에서는 이를 수행하는 방법을 보여 줍니다.  
+ 합니다 `AllowNonSerializableTypesAttribute` 구현 특성 `IWsdlExportExtension` 고 `IContractBehavior`입니다. 확장 수를 `IContractBehavior` 또는 `IEndpointBehavior` 이 경우. 해당 `IWsdlExportExtension.ExportContract` 메서드 구현은 DataContract에 대한 스키마 생성 도중 사용되는 `XsdDataContractExporter`에 추가하여 서로게이트를 사용하도록 설정합니다. 다음 코드 조각에서는 이를 수행하는 방법을 보여 줍니다.  
   
 ```  
 public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext context)  
@@ -247,25 +247,25 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
 }  
 ```  
   
- 샘플을 실행하려면 클라이언트는 AddEmployee를 호출한 다음 GetEmployee를 호출하여 첫 번째 호출이 성공했는지 확인합니다. GetEmployee 작업 요청의 결과는 클라이언트 콘솔 창에 표시됩니다. GetEmployee 작업 직원을 찾는 데 성공 해야 하며 "찾을 수" 인쇄 합니다.  
+ 샘플을 실행하려면 클라이언트는 AddEmployee를 호출한 다음 GetEmployee를 호출하여 첫 번째 호출이 성공했는지 확인합니다. GetEmployee 작업 요청의 결과는 클라이언트 콘솔 창에 표시됩니다. GetEmployee 작업 직원을 찾는 데 성공 하 고 인쇄 해야 합니다.  
   
 > [!NOTE]
->  이 샘플에서는 serialize, deserialize 및 메타데이터 생성을 위해 서로게이트를 플러그 인하는 방법을 보여 줍니다. 메타데이터에서의 코드 생성을 위해 서로게이트를 플러그 인하는 방법을 제공되지 않습니다. 클라이언트 코드 생성에 연결 하는 서로게이트를 사용할 수 있는 방법을의 예제를 보려면를 참조 하십시오.는 [사용자 지정 WSDL 게시](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) 샘플.  
+>  이 샘플에서는 serialize, deserialize 및 메타데이터 생성을 위해 서로게이트를 플러그 인하는 방법을 보여 줍니다. 메타데이터에서의 코드 생성을 위해 서로게이트를 플러그 인하는 방법을 제공되지 않습니다. 클라이언트 코드 생성에 연결할 서로게이트를 사용할 수 있는 방법을 예제를 보려면 합니다 [사용자 지정 WSDL 게시](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) 샘플입니다.  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
-2.  지침에 따라 솔루션의 C# 버전을 빌드하려면 [Windows Communication Foundation 샘플 빌드](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
+2.  지침에 따라 C# 버전의 솔루션을 빌드하려면 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
-3.  지침에 따라 단일 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+3.  단일 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  
   

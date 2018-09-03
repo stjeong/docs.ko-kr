@@ -3,11 +3,11 @@ title: 고급 쿼리 기술 (LINQ to XML) (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 79be877c-fadc-4dfb-9f03-426082b13656
 ms.openlocfilehash: 67227dddfcf44201ddd7e4adebd06a6022c6f2f4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33641975"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43473894"
 ---
 # <a name="advanced-query-techniques-linq-to-xml-visual-basic"></a>고급 쿼리 기술 (LINQ to XML) (Visual Basic)
 이 단원에서는 고급 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리 기법의 예제를 제공합니다.  
@@ -16,8 +16,8 @@ ms.locfileid: "33641975"
   
 |항목|설명|  
 |-----------|-----------------|  
-|[방법: 두 컬렉션 (LINQ to XML) 조인 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-two-collections-linq-to-xml.md)|`Join` 절을 사용하여 XML 데이터의 관계를 이용하는 방법을 보여 줍니다.|  
-|[방법: 그룹화 (Visual Basic)를 사용 하 여 계층 만들기](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-hierarchy-using-grouping.md)|데이터를 그룹화한 다음 그룹화에 따라 XML을 생성하는 방법을 보여 줍니다.|  
+|[방법: 두 컬렉션 조인 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-two-collections-linq-to-xml.md)|`Join` 절을 사용하여 XML 데이터의 관계를 이용하는 방법을 보여 줍니다.|  
+|[방법: 그룹화 (Visual Basic)를 사용 하 여 계층을 만들려면](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-hierarchy-using-grouping.md)|데이터를 그룹화한 다음 그룹화에 따라 XML을 생성하는 방법을 보여 줍니다.|  
 |[방법: LINQ to XML XPath (Visual Basic)를 사용 하 여 쿼리](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-linq-to-xml-using-xpath.md)|XPath 쿼리를 기반으로 컬렉션을 검색하는 방법을 보여 줍니다.|  
 |[방법: LINQ to XML 축 메서드 (Visual Basic) 작성](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-a-linq-to-xml-axis-method.md)|[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 축 메서드를 작성하는 방법을 보여 줍니다.|  
 |[방법: (Visual Basic) 트리의 모든 노드 나열](../../../../visual-basic/programming-guide/concepts/linq/how-to-list-all-nodes-in-a-tree.md)|XML 트리의 모든 노드를 나열하는 유틸리티 메서드를 제공합니다. 이 메서드는 XML 트리를 수정하는 디버깅 코드에 유용합니다.|  

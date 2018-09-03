@@ -5,19 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c27cb89c-1c1d-4988-9f38-950eda3cb275
-ms.openlocfilehash: 5d090e5e19f1303875e8cff907df45d206fbb845
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 667c67cea4dfa3f9a63554286d6c137280332c7e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764189"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43467531"
 ---
 # <a name="query-expression-syntax-examples-filtering"></a>쿼리 식 구문 예제: 필터링
-이 항목의 예제에 사용 하는 방법을 보여 줍니다는 `Where` 및 `Where…Contains` 를 쿼리 하는 메서드는 [AdventureWorks Sales 모델](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) 쿼리 식 구문을 사용 합니다. 단, 여기서...`Contains` 일부로 사용할 수 없습니다는 [컴파일된 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)합니다.  
+이 항목의 예제에 사용 하는 방법을 보여 줍니다 합니다 `Where` 및 `Where…Contains` 쿼리 하는 메서드는 [AdventureWorks Sales 모델](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) 쿼리 식 구문을 사용 합니다. 참고로 위치...`Contains` 일부로 사용할 수 없습니다는 [컴파일된 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)합니다.  
   
  이 예제에서 사용하는 AdventureWorks Sales 모델에서는 AdventureWorks 샘플 데이터베이스의 Contact, Address, Product, SalesOrderHeader 및 SalesOrderDetail 테이블을 사용합니다.  
   
- 이 항목의 예제에서 다음을 사용 하 여 `using` / `Imports` 문:  
+ 이 항목의 예제에서는 다음을 사용 `using` / `Imports` 문:  
   
  [!code-csharp[DP L2E Examples#ImportsUsing](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#importsusing)]
  [!code-vb[DP L2E Examples#ImportsUsing](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#importsusing)]  

@@ -5,18 +5,18 @@ helpviewer_keywords:
 - splitter windows
 - SplitContainer control [Windows Forms]
 ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402
-ms.openlocfilehash: 42eccbf88db2a407c6dd40209ecd615f0c19eb7f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 63b1a4b9b2483d017a686819573f91744d8a565a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33539203"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463696"
 ---
 # <a name="splitcontainer-control-windows-forms"></a>SplitContainer 컨트롤(Windows Forms)
 Windows Forms `SplitContainer` 컨트롤은 복합으로 간주될 수 있습니다. 이동 가능한 막대로 구분된 두 개의 패널입니다. 마우스 포인터가 막대 위에 있으면 포인터 모양이 변경되어 막대를 이동할 수 있음을 표시합니다.  
   
 > [!NOTE]
->  에 **도구 상자**이, 대체 제어는 <xref:System.Windows.Forms.Splitter> 이전 버전의 Visual Studio에 있던 제어 합니다. `SplitContainer` 컨트롤이 <xref:System.Windows.Forms.Splitter> 컨트롤보다 훨씬 선호됩니다. 기존 응용 프로그램과의 호환성을 위해 <xref:System.Windows.Forms.Splitter> 클래스도 .NET Framework에 여전히 포함되어 있지만 새 프로젝트에는 `SplitContainer` 컨트롤을 사용하는 것이 좋습니다.  
+>  에 **도구 상자**이 대체를 제어 합니다 <xref:System.Windows.Forms.Splitter> 이전 버전의 Visual Studio에 있던 컨트롤입니다. `SplitContainer` 컨트롤이 <xref:System.Windows.Forms.Splitter> 컨트롤보다 훨씬 선호됩니다. 기존 응용 프로그램과의 호환성을 위해 <xref:System.Windows.Forms.Splitter> 클래스도 .NET Framework에 여전히 포함되어 있지만 새 프로젝트에는 `SplitContainer` 컨트롤을 사용하는 것이 좋습니다.  
   
  `SplitContainer` 컨트롤을 통해 복잡한 사용자 인터페이스를 만들 수 있습니다. 한 패널에서 선택한 항목에 따라 다른 패널에 표시되는 개체가 결정되는 경우도 많습니다. 이 정렬은 정보를 표시하고 찾는 데 매우 효율적입니다. 두 개의 패널이 있으므로 영역의 정보를 집계할 수 있으며, 막대 또는 "분할자"를 통해 사용자가 쉽게 패널 크기를 조정할 수 있습니다.  
   
@@ -33,7 +33,7 @@ Windows Forms `SplitContainer` 컨트롤은 복합으로 간주될 수 있습니
  [방법: Windows Forms으로 다중 창 사용자 인터페이스 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
  Microsoft Outlook에서 사용되는 것과 비슷한 다중 창 사용자 인터페이스를 만듭니다.  
   
- 또한 참조 [하는 방법: 한 창을 사용 하 여 가로로 디자이너 분할](http://msdn.microsoft.com/library/ms233667\(v=vs.110\)), [하는 방법: Windows Form에 Windows 탐색기 스타일 인터페이스 만들기](http://msdn.microsoft.com/library/zh2fe5a5\(v=vs.110\)), [하는 방법:으로 다중 창 사용자 인터페이스 만들기 Windows Forms 디자이너를 사용 하 여](http://msdn.microsoft.com/library/ms233661\(v=vs.110\))합니다.  
+ 도 참조 하세요 [방법:는 창을 사용 하 여 가로로 디자이너 분할](how-to-split-a-window-horizontally-using-the-designer.md), [방법: Windows Form에 Windows 탐색기 스타일 인터페이스 만들기](https://msdn.microsoft.com/library/zh2fe5a5\(v=vs.110\)), [방법:으로 다중 창 사용자 인터페이스 만들기 디자이너를 사용 하 여 Windows Forms](create-a-multipane-user-interface-with-wf-using-the-designer.md)합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.SplitContainer> 클래스  

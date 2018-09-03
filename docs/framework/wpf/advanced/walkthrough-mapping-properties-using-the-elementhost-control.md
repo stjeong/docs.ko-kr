@@ -8,12 +8,12 @@ helpviewer_keywords:
 - mapping properties [WPF]
 - ElementHost control [WPF], mapping properties
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
-ms.openlocfilehash: 89d2c6476334080fb162eadd4b2bf5984970f3fd
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 34119d889c8d6600fdda12cac33192c32d8e0fa6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934683"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43467126"
 ---
 # <a name="walkthrough-mapping-properties-using-the-elementhost-control"></a>연습: ElementHost 컨트롤을 사용하여 속성 매핑
 
@@ -29,7 +29,7 @@ ms.locfileid: "42934683"
 
 -   기본 속성 매핑 확장.
 
-이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [ElementHost 컨트롤 샘플을 사용 하 여 속성 매핑](http://go.microsoft.com/fwlink/?LinkID=160018)합니다.
+이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [ElementHost 컨트롤 샘플을 사용 하 여 속성 매핑](https://go.microsoft.com/fwlink/?LinkID=160018)합니다.
 
 에 매핑할 수 있게 됩니다 완료 했으면 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 속성을 해당 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 호스팅된 요소 속성입니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "42934683"
 
 4.  Windows Forms 디자이너에서 `Form1`을 엽니다. 에 대 한 이벤트 처리기를 추가 하려면 폼을 두 번 클릭 합니다 <xref:System.Windows.Forms.Form.Load> 이벤트입니다.
 
-5.  Windows Forms 디자이너로 돌아가서 폼에 대 한 이벤트 처리기를 추가 <xref:System.Windows.Forms.Control.Resize> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용 이벤트 처리기 만들기](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2).
+5.  Windows Forms 디자이너로 돌아가서 폼에 대 한 이벤트 처리기를 추가 <xref:System.Windows.Forms.Control.Resize> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용 이벤트 처리기 만들기](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2).
 
 6.  선언를 <xref:System.Windows.Forms.Integration.ElementHost> 필드에 `Form1` 클래스입니다.
 
@@ -146,5 +146,5 @@ ms.locfileid: "42934683"
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Windows Forms 및 WPF 속성 매핑](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)
-- [WPF 디자이너](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+- [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)
 - [연습: Windows Forms에서 WPF 복합 컨트롤 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

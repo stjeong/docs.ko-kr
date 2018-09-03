@@ -5,12 +5,12 @@ helpviewer_keywords:
 - localization [WPF interoperability]
 - hybrid applications [WPF interoperability]
 ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
-ms.openlocfilehash: 60e33f9f3ab767a6fd1d5489721fd2a82950155e
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: 685c68967f69e8933ff3dd2cd062e0893c7e2da6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42754440"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43465990"
 ---
 # <a name="walkthrough-localizing-a-hybrid-application"></a>연습: 혼합 응용 프로그램 지역화
 
@@ -28,7 +28,7 @@ ms.locfileid: "42754440"
 
 -   LocBaml 도구를 사용하여 위성 어셈블리 생성.
 
-이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [하이브리드 응용 프로그램 샘플을 지역화](http://go.microsoft.com/fwlink/?LinkID=160015)합니다.
+이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [하이브리드 응용 프로그램 샘플을 지역화](https://go.microsoft.com/fwlink/?LinkID=160015)합니다.
 
 위의 작업을 완료하면 지역화된 하이브리드 응용 프로그램이 구현됩니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "42754440"
 
 ### <a name="to-create-the-host-project"></a>호스트 프로젝트 만들기
 
-1.  만들기는 **WPF 앱** 라는 프로젝트 `LocalizingWpfInWf`합니다. 자세한 내용은 [방법: Windows 응용 프로그램 프로젝트 만들기](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa)를 참조하세요.
+1.  만들기는 **WPF 앱** 라는 프로젝트 `LocalizingWpfInWf`합니다.  (**파일** > **새** > **프로젝트** > **Visual C#** 또는 **Visual Basic**   >  **클래식 바탕 화면** > **WPF 응용 프로그램**).
 
 2.  추가 된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl> 라는 요소가 `SimpleControl` 프로젝트에.
 
@@ -177,5 +177,5 @@ Windows Forms 디자이너에서는 위성 어셈블리에서 지역화를 사�
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [응용 프로그램 지역화](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)
-- [연습: Windows Forms 지역화](http://msdn.microsoft.com/library/9a96220d-a19b-4de0-9f48-01e5d82679e5)
-- [WPF 디자이너](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+- [연습: Windows Forms 지역화](https://msdn.microsoft.com/library/9a96220d-a19b-4de0-9f48-01e5d82679e5)
+- [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - forms [Windows Forms], displaying images
 - PictureBox control [Windows Forms], adding pictures
 ms.assetid: 4dc7b973-afb1-4276-8322-20825af96655
-ms.openlocfilehash: 5eb85c6f3ca232f8b53ac01d57ee71f73415cf83
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e01e5d1dc0fad8171e705e85debc2b15d6a506eb
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33533545"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43466536"
 ---
 # <a name="how-to-load-a-picture-using-the-designer-windows-forms"></a>방법: 디자이너를 사용하여 그림 로드(Windows Forms)
-Windows forms <xref:System.Windows.Forms.PictureBox> 컨트롤을 로드 하 고 설정 하 여 폼의 디자인 타임에 그림을 표시할 수는 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성을 유효한 그림을 합니다. 다음 표에서 허용 되는 파일 형식을 보여 줍니다.  
+Windows Forms를 사용 하 여 <xref:System.Windows.Forms.PictureBox> 컨트롤을 로드 하 고 설정 하 여 디자인 타임에 폼에 그림을 표시 합니다 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성을 유효한 그림을 합니다. 다음 표에서 허용 되는 파일 형식을 보여 줍니다.  
   
 |형식|파일 이름 확장명|  
 |----------|-------------------------|  
@@ -27,21 +27,21 @@ Windows forms <xref:System.Windows.Forms.PictureBox> 컨트롤을 로드 하 고
 |JPEG|.jpg|  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ### <a name="to-display-a-picture-at-design-time"></a>디자인 타임에 그림을 표시 하려면  
   
-1.  그리기는 <xref:System.Windows.Forms.PictureBox> 양식에 컨트롤입니다.  
+1.  그리기는 <xref:System.Windows.Forms.PictureBox> 폼의 컨트롤입니다.  
   
-2.  속성 창에서 선택 된 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성을 다음 표시 하 고 줄임표 단추를 클릭은 **열려** 대화 상자.  
+2.  속성 창에서 선택 합니다 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성을 표시 하려면 줄임표 단추를 클릭 합니다 **오픈** 대화 상자.  
   
-3.  특정 파일 형식 (예를 들어.gif 파일)에 대 한 원하는 경우에 선택 된 **파일 형식** 상자입니다.  
+3.  특정 파일 형식 (예를 들어,.gif 파일)을 찾으려는 경우에 선택 합니다 **파일 형식** 상자입니다.  
   
 4.  표시 하려는 파일을 선택 합니다.  
   
 ### <a name="to-clear-the-picture-at-design-time"></a>디자인 타임에 그림을 삭제 하려면  
   
-1.  에 **속성** 창에서는 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성과 이미지 개체의 이름 왼쪽에 표시 되는 작은 축소판 이미지를 마우스 오른쪽 단추로 클릭 합니다. 선택 **재설정**합니다.  
+1.  에 **속성** 창에서를 <xref:System.Windows.Forms.PictureBox.Image%2A> 속성과 이미지 개체의 이름 왼쪽에 표시 되는 작은 축소판 그림 이미지를 마우스 오른쪽 단추로 클릭 합니다. 선택할 **재설정**합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Forms.PictureBox>  

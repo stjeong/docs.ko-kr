@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 ms.assetid: cb52b1ef-47fd-4609-b69d-0586c818ac9e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 51a0538670a834435aff8d2b6c81b78450fe47f1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ac5d80664bbca8cf950eb2e6f37badc485c398d2
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396762"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43474079"
 ---
 # <a name="runtime-directive-policy-settings"></a>런타임 지시문 정책 설정
 > [!NOTE]
->  이 항목은 시험판 소프트웨어인 .NET Native Developer Preview를 참조합니다. 이 Preview 버전은 [Microsoft Connect 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=394611)에서 다운로드할 수 있습니다(등록 필요).  
+>  이 항목은 시험판 소프트웨어인 .NET Native Developer Preview를 참조합니다. 이 Preview 버전은 [Microsoft Connect 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=394611)에서 다운로드할 수 있습니다(등록 필요).  
   
  .NET 네이티브의 런타임 지시문 정책 설정에 따라 런타임의 형식 및 형식 멤버 사용 가능 여부가 결정됩니다. 필요한 메타데이터가 없으면 리플렉션, serialization/deserialization 또는 .NET Framework 형식을 COM 또는 Windows 런타임으로 마샬링하는 기능을 사용하는 작업이 실패할 수 있으며 예외가 throw됩니다. 가장 일반적인 예외는 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 및 [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)(interop의 경우)입니다.  
   

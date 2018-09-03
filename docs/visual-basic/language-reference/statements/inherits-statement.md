@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Inherits statement [Visual Basic], syntax
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 ms.openlocfilehash: 4a98ada39a04730b46f40fe139e72d1855d9b067
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931237"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43463869"
 ---
 # <a name="inherits-statement"></a>Inherits Statement
 현재 클래스 또는 인터페이스가 다른 클래스나 인터페이스 집합에서 특성, 변수, 속성, 프로시저 및 이벤트를 상속 하도록 하면 됩니다.  
@@ -51,12 +51,12 @@ Inherits basetypenames
   
  .NET Framework의 상속은 인터페이스의 예로 <xref:System.Collections.ICollection> 인터페이스에서 상속 하는 <xref:System.Collections.IEnumerable> 인터페이스입니다. 이 인해 <xref:System.Collections.ICollection> 컬렉션을 이동 하는 데 필요한 열거자의 정의 상속 하도록 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Inherits` 라는 클래스를 표시 하는 문을 `thisClass` 라는 기본 클래스의 모든 멤버를 상속할 수 `anotherClass`입니다.  
   
  [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_1.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 여러 인터페이스의 상속을 보여 줍니다.  
   
  [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_2.vb)]  
