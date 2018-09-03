@@ -7,20 +7,20 @@ helpviewer_keywords:
 - '#else directive [C#]'
 ms.assetid: 6a347322-cfa2-4a86-98f8-ddfa2cb7d4db
 ms.openlocfilehash: 000cbaac4458a104214e3197442a21dcb4740a37
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932628"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43406156"
 ---
-# <a name="else-c-reference"></a><span data-ttu-id="4e45c-102">#else(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="4e45c-102">#else (C# Reference)</span></span>
-<span data-ttu-id="4e45c-103">`#else`를 사용하면 복합 조건부 지시문을 만들 수 있습니다. 이 경우 앞의 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) 또는 (선택 사항)[#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md) 지시문에 `true`로 평가하는 식이 없으면 컴파일러는 `#else`와 후속 `#endif` 사이에 있는 모든 코드를 평가합니다.</span><span class="sxs-lookup"><span data-stu-id="4e45c-103">`#else` lets you create a compound conditional directive, so that, if none of the expressions in the preceding [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) or (optional) [#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md) directives evaluate to `true`, the compiler will evaluate all code between `#else` and the subsequent `#endif`.</span></span>  
+# <a name="else-c-reference"></a><span data-ttu-id="eef33-102">#else(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="eef33-102">#else (C# Reference)</span></span>
+<span data-ttu-id="eef33-103">`#else`를 사용하면 복합 조건부 지시문을 만들 수 있습니다. 이 경우 앞의 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) 또는 (선택 사항)[#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md) 지시문에 `true`로 평가하는 식이 없으면 컴파일러는 `#else`와 후속 `#endif` 사이에 있는 모든 코드를 평가합니다.</span><span class="sxs-lookup"><span data-stu-id="eef33-103">`#else` lets you create a compound conditional directive, so that, if none of the expressions in the preceding [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) or (optional) [#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md) directives evaluate to `true`, the compiler will evaluate all code between `#else` and the subsequent `#endif`.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="4e45c-104">설명</span><span class="sxs-lookup"><span data-stu-id="4e45c-104">Remarks</span></span>  
- <span data-ttu-id="4e45c-105">[#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md)는 `#else` 이후의 다음 전처리기 지시문이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e45c-105">[#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md) must be the next preprocessor directive after `#else`.</span></span> <span data-ttu-id="4e45c-106">`#else`를 사용하는 방법에 대한 예제는 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="4e45c-106">See [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) for an example of how to use `#else`.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="eef33-104">설명</span><span class="sxs-lookup"><span data-stu-id="eef33-104">Remarks</span></span>  
+ <span data-ttu-id="eef33-105">[#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md)는 `#else` 이후의 다음 전처리기 지시문이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="eef33-105">[#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md) must be the next preprocessor directive after `#else`.</span></span> <span data-ttu-id="eef33-106">`#else`를 사용하는 방법에 대한 예제는 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eef33-106">See [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) for an example of how to use `#else`.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4e45c-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4e45c-107">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eef33-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="eef33-107">See Also</span></span>
 
-- [<span data-ttu-id="4e45c-108">C# 참조</span><span class="sxs-lookup"><span data-stu-id="4e45c-108">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="4e45c-109">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="4e45c-109">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="4e45c-110">C# 전처리기 지시문</span><span class="sxs-lookup"><span data-stu-id="4e45c-110">C# Preprocessor Directives</span></span>](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [<span data-ttu-id="eef33-108">C# 참조</span><span class="sxs-lookup"><span data-stu-id="eef33-108">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="eef33-109">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="eef33-109">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="eef33-110">C# 전처리기 지시문</span><span class="sxs-lookup"><span data-stu-id="eef33-110">C# Preprocessor Directives</span></span>](../../../csharp/language-reference/preprocessor-directives/index.md)

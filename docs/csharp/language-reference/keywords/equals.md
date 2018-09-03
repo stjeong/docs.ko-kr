@@ -8,22 +8,22 @@ helpviewer_keywords:
 - equals keyword [C#]
 ms.assetid: e981309a-e4bf-444c-8a2b-5c695e6114b1
 ms.openlocfilehash: 30a8be7e81bae65e565d2a3ed28e225ac3094f13
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999296"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43470712"
 ---
-# <a name="equals-c-reference"></a><span data-ttu-id="69419-102">equals(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="69419-102">equals (C# Reference)</span></span>
+# <a name="equals-c-reference"></a><span data-ttu-id="dd949-102">equals(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="dd949-102">equals (C# Reference)</span></span>
 
-<span data-ttu-id="69419-103">`equals` 상황별 키워드는 쿼리 식의 `join` 절에서 사용되어 두 시퀀스의 요소를 비교합니다.</span><span class="sxs-lookup"><span data-stu-id="69419-103">The `equals` contextual keyword is used in a `join` clause in a query expression to compare the elements of two sequences.</span></span> <span data-ttu-id="69419-104">자세한 내용은 [join 절](join-clause.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="69419-104">For more information, see [join clause](join-clause.md).</span></span>
+<span data-ttu-id="dd949-103">`equals` 상황별 키워드는 쿼리 식의 `join` 절에서 사용되어 두 시퀀스의 요소를 비교합니다.</span><span class="sxs-lookup"><span data-stu-id="dd949-103">The `equals` contextual keyword is used in a `join` clause in a query expression to compare the elements of two sequences.</span></span> <span data-ttu-id="dd949-104">자세한 내용은 [join 절](join-clause.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="dd949-104">For more information, see [join clause](join-clause.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="69419-105">예</span><span class="sxs-lookup"><span data-stu-id="69419-105">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dd949-105">예</span><span class="sxs-lookup"><span data-stu-id="dd949-105">Example</span></span>
 
-<span data-ttu-id="69419-106">다음 예제에서는 `join` 절에 `equals` 키워드를 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="69419-106">The following example shows the use of the `equals` keyword in a `join` clause.</span></span>
+<span data-ttu-id="dd949-106">다음 예제에서는 `join` 절에 `equals` 키워드를 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="dd949-106">The following example shows the use of the `equals` keyword in a `join` clause.</span></span>
 
 [!code-csharp[csrefKeywordsContextual#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#12)]
 
-## <a name="see-also"></a><span data-ttu-id="69419-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="69419-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dd949-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="dd949-107">See also</span></span>
 
-- [<span data-ttu-id="69419-108">LINQ(Language-Integrated Query)</span><span class="sxs-lookup"><span data-stu-id="69419-108">Language Integrated Query (LINQ)</span></span>](../../linq/index.md)
+- [<span data-ttu-id="dd949-108">LINQ(Language-Integrated Query)</span><span class="sxs-lookup"><span data-stu-id="dd949-108">Language Integrated Query (LINQ)</span></span>](../../linq/index.md)

@@ -3,16 +3,16 @@ title: '샘플 XML 파일: 네임스페이스에서 일반적인 구매 주문1'
 ms.date: 07/20/2015
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
 ms.openlocfilehash: 0adee32a3ee4d2347bd2e0a84024fe478346987a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337563"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43404232"
 ---
-# <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a><span data-ttu-id="92612-102">샘플 XML 파일: 네임스페이스에서 일반적인 구매 주문</span><span class="sxs-lookup"><span data-stu-id="92612-102">Sample XML File: Typical Purchase Order in a Namespace</span></span>
-<span data-ttu-id="92612-103">다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="92612-103">The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.</span></span> <span data-ttu-id="92612-104">이 파일은 일반적인 구매 주문입니다.</span><span class="sxs-lookup"><span data-stu-id="92612-104">This file is a typical purchase order.</span></span> <span data-ttu-id="92612-105">XML은 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="92612-105">The XML is in a namespace.</span></span>  
+# <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a><span data-ttu-id="2205d-102">샘플 XML 파일: 네임스페이스에서 일반적인 구매 주문</span><span class="sxs-lookup"><span data-stu-id="2205d-102">Sample XML File: Typical Purchase Order in a Namespace</span></span>
+<span data-ttu-id="2205d-103">다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="2205d-103">The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.</span></span> <span data-ttu-id="2205d-104">이 파일은 일반적인 구매 주문입니다.</span><span class="sxs-lookup"><span data-stu-id="2205d-104">This file is a typical purchase order.</span></span> <span data-ttu-id="2205d-105">XML은 네임스페이스에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2205d-105">The XML is in a namespace.</span></span>  
   
-## <a name="purchaseorderinnamespacexml"></a><span data-ttu-id="92612-106">PurchaseOrderInNamespace.xml</span><span class="sxs-lookup"><span data-stu-id="92612-106">PurchaseOrderInNamespace.xml</span></span>  
+## <a name="purchaseorderinnamespacexml"></a><span data-ttu-id="2205d-106">PurchaseOrderInNamespace.xml</span><span class="sxs-lookup"><span data-stu-id="2205d-106">PurchaseOrderInNamespace.xml</span></span>  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -54,5 +54,5 @@ ms.locfileid: "33337563"
 </aw:PurchaseOrder>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="92612-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="92612-107">See Also</span></span>  
- [<span data-ttu-id="92612-108">샘플 XML 문서(LINQ to XML)</span><span class="sxs-lookup"><span data-stu-id="92612-108">Sample XML Documents (LINQ to XML)</span></span>](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+## <a name="see-also"></a><span data-ttu-id="2205d-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="2205d-107">See Also</span></span>  
+ [<span data-ttu-id="2205d-108">샘플 XML 문서(LINQ to XML)</span><span class="sxs-lookup"><span data-stu-id="2205d-108">Sample XML Documents (LINQ to XML)</span></span>](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
