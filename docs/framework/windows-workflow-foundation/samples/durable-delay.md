@@ -3,69 +3,69 @@ title: Durable Delay
 ms.date: 03/30/2017
 ms.assetid: 220ec240-b958-430c-81ff-b734a6aa97ae
 ms.openlocfilehash: 2a7692e28d60232913ae5d11a90025e59664c0e5
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43406578"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43507635"
 ---
-# <a name="durable-delay"></a><span data-ttu-id="6bd6b-102">Durable Delay</span><span class="sxs-lookup"><span data-stu-id="6bd6b-102">Durable Delay</span></span>
-<span data-ttu-id="6bd6b-103">이 샘플에서는 지속적 지연을 사용하는 방법을 보여 줍니다. 지속적 지연은 지연되는 동안 워크플로를 영구적인 장치에 유지하는 지연입니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-103">This sample demonstrates how to use a durable delay, which is a delay that persists the workflow to a durable device during the delay.</span></span> <span data-ttu-id="6bd6b-104">샘플 워크플로에는 지연으로 구분되는 콘솔 대상의 두 메시지가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-104">The sample workflow contains two messages to the console that are separated by a delay.</span></span> <span data-ttu-id="6bd6b-105">지연이 트리거되면 워크플로가 언로드된 다음 메모리에 다시 로드되기 전에 워크플로 인스턴스 저장소에서 5초 동안 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-105">When the delay is triggered, the workflow is unloaded and waits 5 seconds in the workflow instance store before being reloaded in memory.</span></span>  
+# <a name="durable-delay"></a><span data-ttu-id="7437a-102">Durable Delay</span><span class="sxs-lookup"><span data-stu-id="7437a-102">Durable Delay</span></span>
+<span data-ttu-id="7437a-103">이 샘플에서는 지속적 지연을 사용하는 방법을 보여 줍니다. 지속적 지연은 지연되는 동안 워크플로를 영구적인 장치에 유지하는 지연입니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-103">This sample demonstrates how to use a durable delay, which is a delay that persists the workflow to a durable device during the delay.</span></span> <span data-ttu-id="7437a-104">샘플 워크플로에는 지연으로 구분되는 콘솔 대상의 두 메시지가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-104">The sample workflow contains two messages to the console that are separated by a delay.</span></span> <span data-ttu-id="7437a-105">지연이 트리거되면 워크플로가 언로드된 다음 메모리에 다시 로드되기 전에 워크플로 인스턴스 저장소에서 5초 동안 기다립니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-105">When the delay is triggered, the workflow is unloaded and waits 5 seconds in the workflow instance store before being reloaded in memory.</span></span>  
   
-## <a name="workflow-details"></a><span data-ttu-id="6bd6b-106">워크플로 세부 정보</span><span class="sxs-lookup"><span data-stu-id="6bd6b-106">Workflow Details</span></span>  
- <span data-ttu-id="6bd6b-107">워크플로 서비스 호스트에서는 워크플로를 호스트할 뿐 아니라 워크플로 인스턴스를 로드하거나 언로드하여 워크플로 인스턴스를 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-107">The workflow service host hosts the workflow and manages the workflow instances by loading and unloading them.</span></span> <span data-ttu-id="6bd6b-108">워크플로 정의의 인스턴스를 시작하기 위해 이 샘플에서는 워크플로의 <xref:System.ServiceModel.Activities.Receive> 활동에 메시지를 보내는 프록시를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-108">To start an instance of the workflow definition, the sample sets a proxy that sends a message to the <xref:System.ServiceModel.Activities.Receive> activity in the workflow.</span></span> <span data-ttu-id="6bd6b-109"><xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> 속성이 `true`로 설정되어 있으므로 이 활동에서는 메시지를 받으면 워크플로의 새 인스턴스를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-109">The <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> property is set to `true`, enabling it to create a new instance of the workflow once it receives a message.</span></span>  
+## <a name="workflow-details"></a><span data-ttu-id="7437a-106">워크플로 세부 정보</span><span class="sxs-lookup"><span data-stu-id="7437a-106">Workflow Details</span></span>  
+ <span data-ttu-id="7437a-107">워크플로 서비스 호스트에서는 워크플로를 호스트할 뿐 아니라 워크플로 인스턴스를 로드하거나 언로드하여 워크플로 인스턴스를 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-107">The workflow service host hosts the workflow and manages the workflow instances by loading and unloading them.</span></span> <span data-ttu-id="7437a-108">워크플로 정의의 인스턴스를 시작하기 위해 이 샘플에서는 워크플로의 <xref:System.ServiceModel.Activities.Receive> 활동에 메시지를 보내는 프록시를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-108">To start an instance of the workflow definition, the sample sets a proxy that sends a message to the <xref:System.ServiceModel.Activities.Receive> activity in the workflow.</span></span> <span data-ttu-id="7437a-109"><xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> 속성이 `true`로 설정되어 있으므로 이 활동에서는 메시지를 받으면 워크플로의 새 인스턴스를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-109">The <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> property is set to `true`, enabling it to create a new instance of the workflow once it receives a message.</span></span>  
   
- <span data-ttu-id="6bd6b-110">다음 목록에서는 초기화 중 워크플로 서비스에 의한 설정 과정을 자세히 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-110">The following list details the set-up by the workflow service host during initialization.</span></span>  
+ <span data-ttu-id="7437a-110">다음 목록에서는 초기화 중 워크플로 서비스에 의한 설정 과정을 자세히 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-110">The following list details the set-up by the workflow service host during initialization.</span></span>  
   
-1.  <span data-ttu-id="6bd6b-111">주소를 사용 하 여 서비스 호스트를 만듭니다 (http://localhost:8080/Client)합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-111">Creates a service host with an address (http://localhost:8080/Client).</span></span>  
+1.  <span data-ttu-id="7437a-111">주소를 사용 하 여 서비스 호스트를 만듭니다 (http://localhost:8080/Client)합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-111">Creates a service host with an address (http://localhost:8080/Client).</span></span>  
   
-2.  <span data-ttu-id="6bd6b-112">워크플로 내의 <xref:System.ServiceModel.Activities.Receive> 활동과 통신할 수 있도록 서비스 호스트에 엔드포인트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-112">Creates an endpoint in the service host to enable communication with the <xref:System.ServiceModel.Activities.Receive> activity inside the workflow.</span></span>  
+2.  <span data-ttu-id="7437a-112">워크플로 내의 <xref:System.ServiceModel.Activities.Receive> 활동과 통신할 수 있도록 서비스 호스트에 엔드포인트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-112">Creates an endpoint in the service host to enable communication with the <xref:System.ServiceModel.Activities.Receive> activity inside the workflow.</span></span>  
   
-3.  <span data-ttu-id="6bd6b-113">SQL 인스턴스 저장소를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-113">Sets up a SQL instance store.</span></span>  
+3.  <span data-ttu-id="7437a-113">SQL 인스턴스 저장소를 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-113">Sets up a SQL instance store.</span></span>  
   
-4.  <span data-ttu-id="6bd6b-114">워크플로 서비스 호스트에서 워크플로 인스턴스를 SQL 지속성 저장소로 언로드할 조건을 지정하는 언로드 인스턴스 동작을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-114">Adds an unload instance behavior that specifies the conditions under which the workflow service host should unload a workflow instance to the SQL persistence store.</span></span> <span data-ttu-id="6bd6b-115">이 샘플의 경우 지연이 트리거되어 워크플로가 유휴 상태가 되는 직후 인스턴스를 언로드합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-115">For this sample, it unloads the instance immediately after the workflow goes idle (when the delay is triggered).</span></span>  
+4.  <span data-ttu-id="7437a-114">워크플로 서비스 호스트에서 워크플로 인스턴스를 SQL 지속성 저장소로 언로드할 조건을 지정하는 언로드 인스턴스 동작을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-114">Adds an unload instance behavior that specifies the conditions under which the workflow service host should unload a workflow instance to the SQL persistence store.</span></span> <span data-ttu-id="7437a-115">이 샘플의 경우 지연이 트리거되어 워크플로가 유휴 상태가 되는 직후 인스턴스를 언로드합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-115">For this sample, it unloads the instance immediately after the workflow goes idle (when the delay is triggered).</span></span>  
   
-5.  <span data-ttu-id="6bd6b-116">워크플로의 <xref:System.ServiceModel.Activities.Receive> 활동에 메시지를 보내는 프록시를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-116">Creates the proxy that sends a message to the <xref:System.ServiceModel.Activities.Receive> activity in the workflow.</span></span>  
+5.  <span data-ttu-id="7437a-116">워크플로의 <xref:System.ServiceModel.Activities.Receive> 활동에 메시지를 보내는 프록시를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-116">Creates the proxy that sends a message to the <xref:System.ServiceModel.Activities.Receive> activity in the workflow.</span></span>  
   
-#### <a name="to-use-this-sample"></a><span data-ttu-id="6bd6b-117">이 샘플을 사용하려면</span><span class="sxs-lookup"><span data-stu-id="6bd6b-117">To use this sample</span></span>  
+#### <a name="to-use-this-sample"></a><span data-ttu-id="7437a-117">이 샘플을 사용하려면</span><span class="sxs-lookup"><span data-stu-id="7437a-117">To use this sample</span></span>  
   
-1.  <span data-ttu-id="6bd6b-118">지속성 데이터베이스를 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-118">Set up the persistence database.</span></span>  
+1.  <span data-ttu-id="7437a-118">지속성 데이터베이스를 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-118">Set up the persistence database.</span></span>  
   
-    1.  <span data-ttu-id="6bd6b-119">[!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-119">Open a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt.</span></span>  
+    1.  <span data-ttu-id="7437a-119">[!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-119">Open a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt.</span></span>  
   
-    2.  <span data-ttu-id="6bd6b-120">이동 된 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 디렉터리 (C:\Windows\Microsoft.NET\Framework\v4 합니다. X\\).</span><span class="sxs-lookup"><span data-stu-id="6bd6b-120">Navigate to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] directory (C:\Windows\Microsoft.NET\Framework\v4.X\\).</span></span>  
+    2.  <span data-ttu-id="7437a-120">이동 된 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 디렉터리 (C:\Windows\Microsoft.NET\Framework\v4 합니다. X\\).</span><span class="sxs-lookup"><span data-stu-id="7437a-120">Navigate to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] directory (C:\Windows\Microsoft.NET\Framework\v4.X\\).</span></span>  
   
-    3.  <span data-ttu-id="6bd6b-121">WorkflowManagementService.exe.config 파일을 편집하고 다음 연결 문자열을 <`database`> 요소 내에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-121">Edit the WorkflowManagementService.exe.config file and add the following connection string inside the <`database`> element.</span></span>  
+    3.  <span data-ttu-id="7437a-121">WorkflowManagementService.exe.config 파일을 편집하고 다음 연결 문자열을 <`database`> 요소 내에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-121">Edit the WorkflowManagementService.exe.config file and add the following connection string inside the <`database`> element.</span></span>  
   
         ```xml  
         <database connectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=DefaultSampleStore;Integrated Security=True;Asynchronous Processing=True" />  
         ```  
   
-    4.  <span data-ttu-id="6bd6b-122">DurableDelay\CS 디렉터리로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-122">Navigate to the DurableDelay\CS directory.</span></span>  
+    4.  <span data-ttu-id="7437a-122">DurableDelay\CS 디렉터리로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-122">Navigate to the DurableDelay\CS directory.</span></span>  
   
-    5.  <span data-ttu-id="6bd6b-123">Setup.cmd.를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-123">Run Setup.cmd.</span></span>  
+    5.  <span data-ttu-id="7437a-123">Setup.cmd.를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-123">Run Setup.cmd.</span></span>  
   
-2.  <span data-ttu-id="6bd6b-124">실행 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 권한 마우스 오른쪽 단추로 클릭 하 여 합니다 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 아이콘과 선택 **관리자 권한으로 실행**합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-124">Run [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] using elevated permissions by right-clicking the [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] icon and selecting **Run as administrator**.</span></span>  
+2.  <span data-ttu-id="7437a-124">실행 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 권한 마우스 오른쪽 단추로 클릭 하 여 합니다 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 아이콘과 선택 **관리자 권한으로 실행**합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-124">Run [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] using elevated permissions by right-clicking the [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] icon and selecting **Run as administrator**.</span></span>  
   
-3.  <span data-ttu-id="6bd6b-125">Delay.sln 솔루션 파일을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-125">Open the Delay.sln solution file.</span></span>  
+3.  <span data-ttu-id="7437a-125">Delay.sln 솔루션 파일을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-125">Open the Delay.sln solution file.</span></span>  
   
-4.  <span data-ttu-id="6bd6b-126">Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-126">Press CTRL+SHIFT+B to build the solution.</span></span>  
+4.  <span data-ttu-id="7437a-126">Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-126">Press CTRL+SHIFT+B to build the solution.</span></span>  
   
-5.  <span data-ttu-id="6bd6b-127">Ctrl+F5를 눌러 솔루션을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-127">Press CTRL+F5 to run the solution.</span></span>  
+5.  <span data-ttu-id="7437a-127">Ctrl+F5를 눌러 솔루션을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-127">Press CTRL+F5 to run the solution.</span></span>  
   
-#### <a name="to-uninstall-this-sample"></a><span data-ttu-id="6bd6b-128">이 샘플을 제거하려면</span><span class="sxs-lookup"><span data-stu-id="6bd6b-128">To uninstall this sample</span></span>  
+#### <a name="to-uninstall-this-sample"></a><span data-ttu-id="7437a-128">이 샘플을 제거하려면</span><span class="sxs-lookup"><span data-stu-id="7437a-128">To uninstall this sample</span></span>  
   
-1.  <span data-ttu-id="6bd6b-129">[!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-129">Open a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt.</span></span>  
+1.  <span data-ttu-id="7437a-129">[!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-129">Open a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt.</span></span>  
   
-2.  <span data-ttu-id="6bd6b-130">DurableDelay\CS 디렉터리로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-130">Navigate to the DurableDelay\CS directory.</span></span>  
+2.  <span data-ttu-id="7437a-130">DurableDelay\CS 디렉터리로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-130">Navigate to the DurableDelay\CS directory.</span></span>  
   
-3.  <span data-ttu-id="6bd6b-131">Cleanup.cmd를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-131">Run Cleanup.cmd.</span></span>  
+3.  <span data-ttu-id="7437a-131">Cleanup.cmd를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-131">Run Cleanup.cmd.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="6bd6b-132">컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-132">The samples may already be installed on your machine.</span></span> <span data-ttu-id="6bd6b-133">계속하기 전에 다음(기본) 디렉터리를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-133">Check for the following (default) directory before continuing.</span></span>  
+>  <span data-ttu-id="7437a-132">컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-132">The samples may already be installed on your machine.</span></span> <span data-ttu-id="7437a-133">계속하기 전에 다음(기본) 디렉터리를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="7437a-133">Check for the following (default) directory before continuing.</span></span>  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  <span data-ttu-id="6bd6b-134">이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-134">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="6bd6b-135">이 샘플은 다음 디렉터리에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6bd6b-135">This sample is located in the following directory.</span></span>  
+>  <span data-ttu-id="7437a-134">이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플.</span><span class="sxs-lookup"><span data-stu-id="7437a-134">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="7437a-135">이 샘플은 다음 디렉터리에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7437a-135">This sample is located in the following directory.</span></span>  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\DurableDelay`

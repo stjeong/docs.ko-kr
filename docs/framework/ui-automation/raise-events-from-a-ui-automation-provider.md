@@ -9,24 +9,24 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: d627b415c0530de4957b663869c74b762421a35c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43463785"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509947"
 ---
-# <a name="raise-events-from-a-ui-automation-provider"></a><span data-ttu-id="79946-102">UI 자동화 공급자에서 이벤트 발생</span><span class="sxs-lookup"><span data-stu-id="79946-102">Raise Events from a UI Automation Provider</span></span>
+# <a name="raise-events-from-a-ui-automation-provider"></a><span data-ttu-id="48f14-102">UI 자동화 공급자에서 이벤트 발생</span><span class="sxs-lookup"><span data-stu-id="48f14-102">Raise Events from a UI Automation Provider</span></span>
 > [!NOTE]
->  <span data-ttu-id="79946-103">이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="79946-103">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="79946-104">에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.</span><span class="sxs-lookup"><span data-stu-id="79946-104">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).</span></span>  
+>  <span data-ttu-id="48f14-103">이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="48f14-103">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="48f14-104">에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.</span><span class="sxs-lookup"><span data-stu-id="48f14-104">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).</span></span>  
   
- <span data-ttu-id="79946-105">이 항목에는 UI 자동화 공급자에서 이벤트를 발생시키는 방법을 보여주는 예제 코드가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="79946-105">This topic contains example code that shows how to raise an event from a UI Automation provider.</span></span>  
+ <span data-ttu-id="48f14-105">이 항목에는 UI 자동화 공급자에서 이벤트를 발생시키는 방법을 보여주는 예제 코드가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="48f14-105">This topic contains example code that shows how to raise an event from a UI Automation provider.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="79946-106">예제</span><span class="sxs-lookup"><span data-stu-id="79946-106">Example</span></span>  
- <span data-ttu-id="79946-107">다음 예제에서는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이벤트가 사용자 지정 단추 컨트롤의 구현에서 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="79946-107">In the following example, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] event is raised in the implementation of a custom button control.</span></span> <span data-ttu-id="79946-108">이 구현을 통해 UI 자동화 클라이언트 응용 프로그램이 단추 클릭을 시뮬레이션할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="79946-108">The implementation enables a UI Automation client application to simulate a button click.</span></span>  
+## <a name="example"></a><span data-ttu-id="48f14-106">예제</span><span class="sxs-lookup"><span data-stu-id="48f14-106">Example</span></span>  
+ <span data-ttu-id="48f14-107">다음 예제에서는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 이벤트가 사용자 지정 단추 컨트롤의 구현에서 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="48f14-107">In the following example, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] event is raised in the implementation of a custom button control.</span></span> <span data-ttu-id="48f14-108">이 구현을 통해 UI 자동화 클라이언트 응용 프로그램이 단추 클릭을 시뮬레이션할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="48f14-108">The implementation enables a UI Automation client application to simulate a button click.</span></span>  
   
- <span data-ttu-id="79946-109">불필요한 프로세스를 방지하기 위해, 이 예제에서는 <xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A> 을 검사하여 이벤트 발생 여부를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="79946-109">To avoid unnecessary processing, the example checks <xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A> to see whether events should be raised.</span></span>  
+ <span data-ttu-id="48f14-109">불필요한 프로세스를 방지하기 위해, 이 예제에서는 <xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A> 을 검사하여 이벤트 발생 여부를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="48f14-109">To avoid unnecessary processing, the example checks <xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A> to see whether events should be raised.</span></span>  
   
  [!code-csharp[UIAProvider_snip#150](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAProvider_snip/CSharp/FragmentRoot.cs#150)]  
   
-## <a name="see-also"></a><span data-ttu-id="79946-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="79946-110">See Also</span></span>  
- [<span data-ttu-id="79946-111">UI 자동화 공급자 개요</span><span class="sxs-lookup"><span data-stu-id="79946-111">UI Automation Providers Overview</span></span>](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+## <a name="see-also"></a><span data-ttu-id="48f14-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="48f14-110">See Also</span></span>  
+ [<span data-ttu-id="48f14-111">UI 자동화 공급자 개요</span><span class="sxs-lookup"><span data-stu-id="48f14-111">UI Automation Providers Overview</span></span>](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)

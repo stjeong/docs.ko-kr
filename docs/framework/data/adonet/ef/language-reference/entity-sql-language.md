@@ -3,82 +3,82 @@ title: Entity SQL 언어
 ms.date: 03/30/2017
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
 ms.openlocfilehash: 1df5372bed2c4c4b026662e0d1912683dd8752e9
-ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43331956"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509611"
 ---
-# <a name="entity-sql-language"></a><span data-ttu-id="ce1cf-102">Entity SQL 언어</span><span class="sxs-lookup"><span data-stu-id="ce1cf-102">Entity SQL Language</span></span>
-<span data-ttu-id="ce1cf-103">Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-103">Entity SQL is a storage-independent query language that is similar to SQL.</span></span> <span data-ttu-id="ce1cf-104">Entity SQL을 사용하면 엔터티 데이터를 개체 또는 테이블 형식으로 쿼리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-104">Entity SQL allows you to query entity data, either as objects or in a tabular form.</span></span> <span data-ttu-id="ce1cf-105">Entity SQL은 다음의 경우에 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-105">You should consider using Entity SQL in the following cases:</span></span>  
+# <a name="entity-sql-language"></a><span data-ttu-id="66611-102">Entity SQL 언어</span><span class="sxs-lookup"><span data-stu-id="66611-102">Entity SQL Language</span></span>
+<span data-ttu-id="66611-103">Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다.</span><span class="sxs-lookup"><span data-stu-id="66611-103">Entity SQL is a storage-independent query language that is similar to SQL.</span></span> <span data-ttu-id="66611-104">Entity SQL을 사용하면 엔터티 데이터를 개체 또는 테이블 형식으로 쿼리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66611-104">Entity SQL allows you to query entity data, either as objects or in a tabular form.</span></span> <span data-ttu-id="66611-105">Entity SQL은 다음의 경우에 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66611-105">You should consider using Entity SQL in the following cases:</span></span>  
   
--   <span data-ttu-id="ce1cf-106">쿼리를 동적으로 런타임에 생성해야 하는 경우.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-106">When a query must be dynamically constructed at runtime.</span></span> <span data-ttu-id="ce1cf-107">이 경우에는 런타임에 Entity SQL 쿼리 문자열을 생성하는 대신 <xref:System.Data.Objects.ObjectQuery%601>의 쿼리 작성기 메서드를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-107">In this case, you should also consider using the query builder methods of <xref:System.Data.Objects.ObjectQuery%601> instead of constructing an Entity SQL query string at runtime.</span></span>  
+-   <span data-ttu-id="66611-106">쿼리를 동적으로 런타임에 생성해야 하는 경우.</span><span class="sxs-lookup"><span data-stu-id="66611-106">When a query must be dynamically constructed at runtime.</span></span> <span data-ttu-id="66611-107">이 경우에는 런타임에 Entity SQL 쿼리 문자열을 생성하는 대신 <xref:System.Data.Objects.ObjectQuery%601>의 쿼리 작성기 메서드를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66611-107">In this case, you should also consider using the query builder methods of <xref:System.Data.Objects.ObjectQuery%601> instead of constructing an Entity SQL query string at runtime.</span></span>  
   
--   <span data-ttu-id="ce1cf-108">쿼리를 모델 정의의 일부로 정의할 경우.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-108">When you want to define a query as part of the model definition.</span></span> <span data-ttu-id="ce1cf-109">Entity SQL만 데이터 모델에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-109">Only Entity SQL is supported in a data model.</span></span> <span data-ttu-id="ce1cf-110">자세한 내용은 참조 하세요. [QueryView 요소 (MSL)](https://msdn.microsoft.com/library/f0426b34-45cb-4fd7-9777-e0570c5e0e80)</span><span class="sxs-lookup"><span data-stu-id="ce1cf-110">For more information, see [QueryView Element (MSL)](https://msdn.microsoft.com/library/f0426b34-45cb-4fd7-9777-e0570c5e0e80)</span></span>  
+-   <span data-ttu-id="66611-108">쿼리를 모델 정의의 일부로 정의할 경우.</span><span class="sxs-lookup"><span data-stu-id="66611-108">When you want to define a query as part of the model definition.</span></span> <span data-ttu-id="66611-109">Entity SQL만 데이터 모델에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="66611-109">Only Entity SQL is supported in a data model.</span></span> <span data-ttu-id="66611-110">자세한 내용은 참조 하세요. [QueryView 요소 (MSL)](https://msdn.microsoft.com/library/f0426b34-45cb-4fd7-9777-e0570c5e0e80)</span><span class="sxs-lookup"><span data-stu-id="66611-110">For more information, see [QueryView Element (MSL)](https://msdn.microsoft.com/library/f0426b34-45cb-4fd7-9777-e0570c5e0e80)</span></span>  
   
--   <span data-ttu-id="ce1cf-111">EntityClient에서 <xref:System.Data.EntityClient.EntityDataReader>를 사용하여 읽기 전용 엔터티 데이터를 행 집합으로 반환할 경우.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-111">When using EntityClient to return read-only entity data as rowsets using a <xref:System.Data.EntityClient.EntityDataReader>.</span></span> <span data-ttu-id="ce1cf-112">자세한 내용은 [Entity Framework 용 EntityClient 공급자](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-112">For more information, see [EntityClient Provider for the Entity Framework](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).</span></span>  
+-   <span data-ttu-id="66611-111">EntityClient에서 <xref:System.Data.EntityClient.EntityDataReader>를 사용하여 읽기 전용 엔터티 데이터를 행 집합으로 반환할 경우.</span><span class="sxs-lookup"><span data-stu-id="66611-111">When using EntityClient to return read-only entity data as rowsets using a <xref:System.Data.EntityClient.EntityDataReader>.</span></span> <span data-ttu-id="66611-112">자세한 내용은 [Entity Framework 용 EntityClient 공급자](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="66611-112">For more information, see [EntityClient Provider for the Entity Framework](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).</span></span>  
   
--   <span data-ttu-id="ce1cf-113">SQL 기반 쿼리 언어의 전문가에게는 Entity SQL이 가장 편할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-113">If you are already an expert in SQL-based query languages, Entity SQL may seem the most natural to you.</span></span>  
+-   <span data-ttu-id="66611-113">SQL 기반 쿼리 언어의 전문가에게는 Entity SQL이 가장 편할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66611-113">If you are already an expert in SQL-based query languages, Entity SQL may seem the most natural to you.</span></span>  
   
-## <a name="using-entity-sql-with-the-entityclient-provider"></a><span data-ttu-id="ce1cf-114">EntityClient 공급자와 함께 Entity SQL 사용</span><span class="sxs-lookup"><span data-stu-id="ce1cf-114">Using Entity SQL with the EntityClient provider</span></span>  
- <span data-ttu-id="ce1cf-115">EntityClient 공급자와 함께 Entity SQL을 사용하려는 경우 자세한 내용은 다음 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-115">If you want to use Entity SQL with the EntityClient provider, see the following topics for more information:</span></span>  
+## <a name="using-entity-sql-with-the-entityclient-provider"></a><span data-ttu-id="66611-114">EntityClient 공급자와 함께 Entity SQL 사용</span><span class="sxs-lookup"><span data-stu-id="66611-114">Using Entity SQL with the EntityClient provider</span></span>  
+ <span data-ttu-id="66611-115">EntityClient 공급자와 함께 Entity SQL을 사용하려는 경우 자세한 내용은 다음 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="66611-115">If you want to use Entity SQL with the EntityClient provider, see the following topics for more information:</span></span>  
   
- [<span data-ttu-id="ce1cf-116">Entity Framework용 EntityClient 공급자</span><span class="sxs-lookup"><span data-stu-id="ce1cf-116">EntityClient Provider for the Entity Framework</span></span>](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
+ [<span data-ttu-id="66611-116">Entity Framework용 EntityClient 공급자</span><span class="sxs-lookup"><span data-stu-id="66611-116">EntityClient Provider for the Entity Framework</span></span>](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
   
- [<span data-ttu-id="ce1cf-117">방법: EntityConnection 연결 문자열 작성</span><span class="sxs-lookup"><span data-stu-id="ce1cf-117">How to: Build an EntityConnection Connection String</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
+ [<span data-ttu-id="66611-117">방법: EntityConnection 연결 문자열 작성</span><span class="sxs-lookup"><span data-stu-id="66611-117">How to: Build an EntityConnection Connection String</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
   
- [<span data-ttu-id="ce1cf-118">방법: PrimitiveType 결과를 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-118">How to: Execute a Query that Returns PrimitiveType Results</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)  
+ [<span data-ttu-id="66611-118">방법: PrimitiveType 결과를 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-118">How to: Execute a Query that Returns PrimitiveType Results</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)  
   
- [<span data-ttu-id="ce1cf-119">방법: StructuralType 결과를 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-119">How to: Execute a Query that Returns StructuralType Results</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)  
+ [<span data-ttu-id="66611-119">방법: StructuralType 결과를 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-119">How to: Execute a Query that Returns StructuralType Results</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)  
   
- [<span data-ttu-id="ce1cf-120">방법: RefType 결과를 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-120">How to: Execute a Query that Returns RefType Results</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md)  
+ [<span data-ttu-id="66611-120">방법: RefType 결과를 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-120">How to: Execute a Query that Returns RefType Results</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md)  
   
- [<span data-ttu-id="ce1cf-121">방법: 복합 형식을 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-121">How to: Execute a Query that Returns Complex Types</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md)  
+ [<span data-ttu-id="66611-121">방법: 복합 형식을 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-121">How to: Execute a Query that Returns Complex Types</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md)  
   
- [<span data-ttu-id="ce1cf-122">방법: 중첩된 컬렉션을 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-122">How to: Execute a Query that Returns Nested Collections</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md)  
+ [<span data-ttu-id="66611-122">방법: 중첩된 컬렉션을 반환하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-122">How to: Execute a Query that Returns Nested Collections</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md)  
   
- [<span data-ttu-id="ce1cf-123">방법: EntityCommand를 사용하여 매개 변수가 있는 Entity SQL 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-123">How to: Execute a Parameterized Entity SQL Query Using EntityCommand</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md)  
+ [<span data-ttu-id="66611-123">방법: EntityCommand를 사용하여 매개 변수가 있는 Entity SQL 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-123">How to: Execute a Parameterized Entity SQL Query Using EntityCommand</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md)  
   
- [<span data-ttu-id="ce1cf-124">방법: EntityCommand를 사용하여 매개 변수가 있는 저장 프로시저 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-124">How to: Execute a Parameterized Stored Procedure Using EntityCommand</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md)  
+ [<span data-ttu-id="66611-124">방법: EntityCommand를 사용하여 매개 변수가 있는 저장 프로시저 실행</span><span class="sxs-lookup"><span data-stu-id="66611-124">How to: Execute a Parameterized Stored Procedure Using EntityCommand</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md)  
   
- [<span data-ttu-id="ce1cf-125">방법: 다형 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-125">How to: Execute a Polymorphic Query</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-polymorphic-query.md)  
+ [<span data-ttu-id="66611-125">방법: 다형 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-125">How to: Execute a Polymorphic Query</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-polymorphic-query.md)  
   
- [<span data-ttu-id="ce1cf-126">방법: Navigate 연산자로 관계 탐색</span><span class="sxs-lookup"><span data-stu-id="ce1cf-126">How to: Navigate Relationships with the Navigate Operator</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
+ [<span data-ttu-id="66611-126">방법: Navigate 연산자로 관계 탐색</span><span class="sxs-lookup"><span data-stu-id="66611-126">How to: Navigate Relationships with the Navigate Operator</span></span>](../../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
-## <a name="using-entity-sql-with-object-queries"></a><span data-ttu-id="ce1cf-127">개체 쿼리와 함께 Entity SQL 사용</span><span class="sxs-lookup"><span data-stu-id="ce1cf-127">Using Entity SQL with object queries</span></span>  
- <span data-ttu-id="ce1cf-128">개체 쿼리와 함께 Entity SQL을 사용하려는 경우 자세한 내용은 다음 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-128">If you want to use Entity SQL with object queries, see the following topics for more information:</span></span>  
+## <a name="using-entity-sql-with-object-queries"></a><span data-ttu-id="66611-127">개체 쿼리와 함께 Entity SQL 사용</span><span class="sxs-lookup"><span data-stu-id="66611-127">Using Entity SQL with object queries</span></span>  
+ <span data-ttu-id="66611-128">개체 쿼리와 함께 Entity SQL을 사용하려는 경우 자세한 내용은 다음 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="66611-128">If you want to use Entity SQL with object queries, see the following topics for more information:</span></span>  
   
- [<span data-ttu-id="ce1cf-129">방법: 엔터티 형식 개체를 반환 하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-129">How to: Execute a Query that Returns Entity Type Objects</span></span>](https://msdn.microsoft.com/library/f73e137d-1534-42bb-9e31-99ca42c19b48)  
+ [<span data-ttu-id="66611-129">방법: 엔터티 형식 개체를 반환 하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-129">How to: Execute a Query that Returns Entity Type Objects</span></span>](https://msdn.microsoft.com/library/f73e137d-1534-42bb-9e31-99ca42c19b48)  
   
- [<span data-ttu-id="ce1cf-130">방법: 매개 변수가 있는 쿼리를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="ce1cf-130">How to: Execute a Parameterized Query</span></span>](https://msdn.microsoft.com/library/42048f03-c65c-4d98-b50a-3e7d537a63e8)  
+ [<span data-ttu-id="66611-130">방법: 매개 변수가 있는 쿼리를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="66611-130">How to: Execute a Parameterized Query</span></span>](https://msdn.microsoft.com/library/42048f03-c65c-4d98-b50a-3e7d537a63e8)  
   
- [<span data-ttu-id="ce1cf-131">방법: 탐색 속성을 사용 하 여 관계 탐색</span><span class="sxs-lookup"><span data-stu-id="ce1cf-131">How to: Navigate Relationships Using Navigation Properties</span></span>](https://msdn.microsoft.com/library/b1d71c7d-16a7-4b46-96ac-690176bd5057)  
+ [<span data-ttu-id="66611-131">방법: 탐색 속성을 사용 하 여 관계 탐색</span><span class="sxs-lookup"><span data-stu-id="66611-131">How to: Navigate Relationships Using Navigation Properties</span></span>](https://msdn.microsoft.com/library/b1d71c7d-16a7-4b46-96ac-690176bd5057)  
   
- [<span data-ttu-id="ce1cf-132">방법: 사용자 정의 함수 호출</span><span class="sxs-lookup"><span data-stu-id="ce1cf-132">How to: Call a User-Defined Function</span></span>](https://msdn.microsoft.com/library/ad131b86-8b4e-4747-8605-d4fc64fb9d02)  
+ [<span data-ttu-id="66611-132">방법: 사용자 정의 함수 호출</span><span class="sxs-lookup"><span data-stu-id="66611-132">How to: Call a User-Defined Function</span></span>](https://msdn.microsoft.com/library/ad131b86-8b4e-4747-8605-d4fc64fb9d02)  
   
- [<span data-ttu-id="ce1cf-133">방법: 데이터 필터링</span><span class="sxs-lookup"><span data-stu-id="ce1cf-133">How to: Filter Data</span></span>](https://msdn.microsoft.com/library/776f8556-3350-4572-804a-b1513515c1b2)  
+ [<span data-ttu-id="66611-133">방법: 데이터 필터링</span><span class="sxs-lookup"><span data-stu-id="66611-133">How to: Filter Data</span></span>](https://msdn.microsoft.com/library/776f8556-3350-4572-804a-b1513515c1b2)  
   
- [<span data-ttu-id="ce1cf-134">방법: 데이터 정렬</span><span class="sxs-lookup"><span data-stu-id="ce1cf-134">How to: Sort Data</span></span>](https://msdn.microsoft.com/library/c05f2506-cb9d-4ebc-822b-300042ad53e7)  
+ [<span data-ttu-id="66611-134">방법: 데이터 정렬</span><span class="sxs-lookup"><span data-stu-id="66611-134">How to: Sort Data</span></span>](https://msdn.microsoft.com/library/c05f2506-cb9d-4ebc-822b-300042ad53e7)  
   
- [<span data-ttu-id="ce1cf-135">방법: 데이터 그룹화</span><span class="sxs-lookup"><span data-stu-id="ce1cf-135">How to: Group Data</span></span>](https://msdn.microsoft.com/library/df801d9d-9a8a-4157-97a6-5016b18998e1)  
+ [<span data-ttu-id="66611-135">방법: 데이터 그룹화</span><span class="sxs-lookup"><span data-stu-id="66611-135">How to: Group Data</span></span>](https://msdn.microsoft.com/library/df801d9d-9a8a-4157-97a6-5016b18998e1)  
   
- [<span data-ttu-id="ce1cf-136">방법: 데이터 집계</span><span class="sxs-lookup"><span data-stu-id="ce1cf-136">How to: Aggregate Data</span></span>](https://msdn.microsoft.com/library/4cf04ce8-3c0f-4f88-9d97-8fac8622598d)  
+ [<span data-ttu-id="66611-136">방법: 데이터 집계</span><span class="sxs-lookup"><span data-stu-id="66611-136">How to: Aggregate Data</span></span>](https://msdn.microsoft.com/library/4cf04ce8-3c0f-4f88-9d97-8fac8622598d)  
   
- [<span data-ttu-id="ce1cf-137">방법: 익명 형식 개체를 반환 하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-137">How to: Execute a Query that Returns Anonymous Type Objects</span></span>](https://msdn.microsoft.com/library/3b264025-e911-4d73-90ce-992d2b9d189d)  
+ [<span data-ttu-id="66611-137">방법: 익명 형식 개체를 반환 하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-137">How to: Execute a Query that Returns Anonymous Type Objects</span></span>](https://msdn.microsoft.com/library/3b264025-e911-4d73-90ce-992d2b9d189d)  
   
- [<span data-ttu-id="ce1cf-138">방법: 기본 형식의 컬렉션을 반환 하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="ce1cf-138">How to: Execute a Query that Returns a Collection of Primitive Types</span></span>](https://msdn.microsoft.com/library/115b52c0-4f27-4253-8991-284b450000b5)  
+ [<span data-ttu-id="66611-138">방법: 기본 형식의 컬렉션을 반환 하는 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="66611-138">How to: Execute a Query that Returns a Collection of Primitive Types</span></span>](https://msdn.microsoft.com/library/115b52c0-4f27-4253-8991-284b450000b5)  
   
- [<span data-ttu-id="ce1cf-139">방법: EntityCollection에서 관련된 개체 쿼리</span><span class="sxs-lookup"><span data-stu-id="ce1cf-139">How to: Query Related Objects in an EntityCollection</span></span>](https://msdn.microsoft.com/library/11ce946f-16f8-4c1d-9d80-f740853807ba)  
+ [<span data-ttu-id="66611-139">방법: EntityCollection에서 관련된 개체 쿼리</span><span class="sxs-lookup"><span data-stu-id="66611-139">How to: Query Related Objects in an EntityCollection</span></span>](https://msdn.microsoft.com/library/11ce946f-16f8-4c1d-9d80-f740853807ba)  
   
- [<span data-ttu-id="ce1cf-140">방법: 두 개의 쿼리의 공용 구조체 정렬</span><span class="sxs-lookup"><span data-stu-id="ce1cf-140">How to: Order the Union of Two Queries</span></span>](https://msdn.microsoft.com/library/853c583a-eaba-4400-830d-be974e735313)  
+ [<span data-ttu-id="66611-140">방법: 두 개의 쿼리의 공용 구조체 정렬</span><span class="sxs-lookup"><span data-stu-id="66611-140">How to: Order the Union of Two Queries</span></span>](https://msdn.microsoft.com/library/853c583a-eaba-4400-830d-be974e735313)  
   
- [<span data-ttu-id="ce1cf-141">방법: 쿼리 결과 페이징</span><span class="sxs-lookup"><span data-stu-id="ce1cf-141">How to: Page Through Query Results</span></span>](https://msdn.microsoft.com/library/ffc0f920-e7de-42e0-9b12-ef356421d030)  
+ [<span data-ttu-id="66611-141">방법: 쿼리 결과 페이징</span><span class="sxs-lookup"><span data-stu-id="66611-141">How to: Page Through Query Results</span></span>](https://msdn.microsoft.com/library/ffc0f920-e7de-42e0-9b12-ef356421d030)  
   
-## <a name="in-this-section"></a><span data-ttu-id="ce1cf-142">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="ce1cf-142">In This Section</span></span>  
- [<span data-ttu-id="ce1cf-143">Entity SQL 개요</span><span class="sxs-lookup"><span data-stu-id="ce1cf-143">Entity SQL Overview</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
+## <a name="in-this-section"></a><span data-ttu-id="66611-142">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="66611-142">In This Section</span></span>  
+ [<span data-ttu-id="66611-143">Entity SQL 개요</span><span class="sxs-lookup"><span data-stu-id="66611-143">Entity SQL Overview</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
   
- [<span data-ttu-id="ce1cf-144">엔터티 SQL 참조</span><span class="sxs-lookup"><span data-stu-id="ce1cf-144">Entity SQL Reference</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
+ [<span data-ttu-id="66611-144">엔터티 SQL 참조</span><span class="sxs-lookup"><span data-stu-id="66611-144">Entity SQL Reference</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
   
-## <a name="see-also"></a><span data-ttu-id="ce1cf-145">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ce1cf-145">See Also</span></span>  
- [<span data-ttu-id="ce1cf-146">ADO.NET Entity Framework</span><span class="sxs-lookup"><span data-stu-id="ce1cf-146">ADO.NET Entity Framework</span></span>](../../../../../../docs/framework/data/adonet/ef/index.md)  
- [<span data-ttu-id="ce1cf-147">언어 참조</span><span class="sxs-lookup"><span data-stu-id="ce1cf-147">Language Reference</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
+## <a name="see-also"></a><span data-ttu-id="66611-145">참고 항목</span><span class="sxs-lookup"><span data-stu-id="66611-145">See Also</span></span>  
+ [<span data-ttu-id="66611-146">ADO.NET Entity Framework</span><span class="sxs-lookup"><span data-stu-id="66611-146">ADO.NET Entity Framework</span></span>](../../../../../../docs/framework/data/adonet/ef/index.md)  
+ [<span data-ttu-id="66611-147">언어 참조</span><span class="sxs-lookup"><span data-stu-id="66611-147">Language Reference</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
