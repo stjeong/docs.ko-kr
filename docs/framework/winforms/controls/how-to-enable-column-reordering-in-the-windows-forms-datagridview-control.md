@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data grids [Windows Forms], reordering columns
 - columns [Windows Forms], reordering
 ms.assetid: cc20eae3-e4db-493f-95ce-a4215e29472a
-ms.openlocfilehash: fbcafae2cb4e4cc320c31794269355d6312b95b4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: MT
+ms.openlocfilehash: cfe61860e21a7c1b8317d22880440745d49e6751
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532586"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43489827"
 ---
 # <a name="how-to-enable-column-reordering-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 열 다시 정렬 사용
 <xref:System.Windows.Forms.DataGridView> 컨트롤에서 열 다시 정렬을 사용하도록 설정하면 사용자가 마우스로 열 머리글을 끌어서 열을 새 위치로 이동할 수 있습니다. <xref:System.Windows.Forms.DataGridView> 컨트롤에서 <xref:System.Windows.Forms.DataGridView.AllowUserToOrderColumns%2A?displayProperty=nameWithType> 속성 값은 사용자가 열을 다른 위치로 이동할 수 있는지 여부를 결정합니다.  
   
- Visual Studio에서는 이 작업이 지원됩니다.  또한 참조 [하는 방법: 열 다시 정렬 사용에 Windows Forms DataGridView 컨트롤 디자이너 사용](http://msdn.microsoft.com/library/8xwtyc86\(v=vs.110\))  
+ Visual Studio에서는 이 작업이 지원됩니다.  또한 참조 [방법: 열 다시 정렬 사용에 Windows Forms DataGridView 컨트롤 디자이너를 사용 하는](https://msdn.microsoft.com/library/8xwtyc86\(v=vs.110\))  
   
 ### <a name="to-enable-column-reordering-programmatically"></a>프로그래밍 방식으로 열 다시 정렬을 사용하도록 설정하려면 다음을 수행합니다.  
   

@@ -2,17 +2,17 @@
 title: Windows Communication Foundation과 함께 사용하도록 Windows Process Activation Service 구성
 ms.date: 03/30/2017
 ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
-ms.openlocfilehash: 3a4d771c3f2d5e7e6ec4fd6a1e229548e063a6d1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6e74c81aa26ba7f8d093b8b3ec52f19eb3519905
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33489770"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43489788"
 ---
 # <a name="configuring-the-windows-process-activation-service-for-use-with-windows-communication-foundation"></a>Windows Communication Foundation과 함께 사용하도록 Windows Process Activation Service 구성
-이 항목에서는에 Windows Process Activation Service (WAS 라고도 함)를 설정 하는 데 필요한 단계를 설명 [!INCLUDE[wv](../../../../includes/wv-md.md)] 네트워크 프로토콜을 HTTP를 통해 통신 하지 않는 서비스를 호스팅하려면 Windows Communication Foundation (WCF). 다음 단원에서는 이 구성 단계에 대해 간략히 설명합니다.  
+이 항목에서는에 Windows Process Activation Service (WAS 라고도 함)을 설정 하는 데 필요한 단계를 설명 [!INCLUDE[wv](../../../../includes/wv-md.md)] HTTP를 통해 통신 하지 않는 서비스 네트워크 프로토콜을 Windows Communication Foundation (WCF)를 호스트 합니다. 다음 단원에서는 이 구성 단계에 대해 간략히 설명합니다.  
   
--   설치 (또는 설치를 확인) 필요한 WCF activation 구성 요소입니다.  
+-   설치 (또는 설치를 확인) WCF 활성화 구성 요소가 필요 합니다.  
   
 -   사용할 네트워크 프로토콜 바인딩으로 WAS 사이트를 만들거나 새 프로토콜 바인딩을 기존 사이트에 추가합니다.  
   
@@ -52,7 +52,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
 appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp  
 ```  
   
- 사용 된 프로토콜 목록 설정할 수도 있습니다는 \<에서도 > ApplicationHost.config에 저장 된 사이트의 XML 구성 요소입니다.  
+ 사용 된 프로토콜 목록 설정할 수도 있습니다는 \<applicationDefaults > ApplicationHost.config에 저장 된 사이트의 XML 구성 요소입니다.  
   
  applicationHost.config의 다음과 같은 XML 코드는 HTTP 프로토콜 및 HTTP가 아닌 프로토콜에 모두 바인딩되는 사이트를 보여 줍니다. HTTP가 아닌 프로토콜을 지원하는 데 필요한 추가 구성은 주석으로 호출됩니다.  
   
@@ -89,13 +89,13 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
 [InvalidOperationException: The protocol 'net.tcp' does not have an implementation of HostedTransportConfiguration type registered.]   System.ServiceModel.AsyncResult.End(IAsyncResult result) +15778592   System.ServiceModel.Activation.HostedHttpRequestAsyncResult.End(IAsyncResult result) +15698937   System.ServiceModel.Activation.HostedHttpRequestAsyncResult.ExecuteSynchronous(HttpApplication context, Boolean flowContext) +265   System.ServiceModel.Activation.HttpModule.ProcessRequest(Object sender, EventArgs e) +227   System.Web.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +80   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) +171  
 ```  
   
- 이 오류가 표시되는 경우 WAS for Non-HTTP Activation을 올바르게 설치하고 구성하십시오. 자세한 내용은 참조 [하는 방법: WCF Activation 구성 요소를 구성 하 고 설치](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)합니다.  
+ 이 오류가 표시되는 경우 WAS for Non-HTTP Activation을 올바르게 설치하고 구성하십시오. 자세한 내용은 [방법: 설치 및 WCF Activation 구성 요소 구성](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)합니다.  
   
 ## <a name="building-a-wcf-service-that-uses-was-for-non-http-activation"></a>비 HTTP 활성화에 WAS를 사용하는 WCF 서비스 빌드  
- 설치 하 고 WAS를 구성 하는 단계를 수행한 후 (참조 [하는 방법: 설치 및 WCF Activation 구성 요소 구성](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)), WAS 활성화를 IIS에서에서 호스팅되는 서비스를 구성 하는 것과 비슷합니다 사용 하도록 서비스를 구성 합니다.  
+ 설치 하 고 WAS를 구성 하는 단계를 수행한 후 (참조 [방법: 설치 및 WCF Activation 구성 요소 구성](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)), IIS에서 호스트 되는 서비스를 구성할 때와 마찬가지로 활성화에 WAS를 사용 하도록 서비스를 구성 합니다.  
   
- WAS 활성화 WCF 서비스를 작성 하는 방법에 대 한 자세한 지침을 참조 하십시오. [하는 방법: WAS에서 WCF 서비스 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)합니다.  
+ WAS가 활성화 된 WCF 서비스를 구축 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: WAS에서 WCF 서비스 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows Process Activation Service에서 호스팅](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md)  
- [Windows Server App Fabric 호스팅 기능](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

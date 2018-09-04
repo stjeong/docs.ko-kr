@@ -5,25 +5,25 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 54333cbf-bb43-4314-a7d4-6dc1dd1c44b3
-ms.openlocfilehash: 95bb536416a043fc392d0c4e94378239ae3ee37f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
-ms.translationtype: MT
+ms.openlocfilehash: 9accfb68c57384e12a59bae40ebe30a2d3e22877
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32758031"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43489723"
 ---
 # <a name="generating-strongly-typed-datasets"></a>강력한 형식의 데이터 집합 생성
 XSD(XML 스키마 정의 언어) 표준과 호환되는 XML 스키마가 있으면 <xref:System.Data.DataSet>에 제공된 XSD.exe 도구를 사용하여 강력한 형식의 [!INCLUDE[winsdklong](../../../../../includes/winsdklong-md.md)]을 생성할 수 있습니다.  
   
- (데이터베이스 테이블에서 xsd를 만들려면 <xref:System.Data.DataSet.WriteXmlSchema%2A> 또는 [Visual Studio에서 데이터 집합 작업](http://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
+ (데이터베이스 테이블에서 xsd를 만들려면, 참조 <xref:System.Data.DataSet.WriteXmlSchema%2A> 나 [Visual Studio에서 데이터 집합 작업](https://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
   
- 다음 코드를 생성 하기 위한 구문을 보여 줍니다.는 **DataSet** 이 도구를 사용 합니다.  
+ 다음 코드를 생성 하기 위한 구문을 보여 줍니다.는 **데이터 집합** 이 도구를 사용 합니다.  
   
 ```  
 xsd.exe /d /l:CS XSDSchemaFileName.xsd /eld /n:XSDSchema.Namespace  
 ```  
   
- 이 구문에서는 `/d` 지시문 지시 생성 하는 도구는 **DataSet**, 및 `/l:` 도구 (예: C# 또는 Visual Basic.NET)에 사용할 언어를 알려 줍니다. 선택적 `/eld` 지시문 있습니다 사용할 수 있도록 지정 [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)] 를 쿼리 하는 생성 된 **데이터 집합입니다.** 이 옵션은 `/d` 옵션도 함께 지정한 경우에 사용합니다. 자세한 내용은 참조 [형식화 된 데이터 집합 쿼리](../../../../../docs/framework/data/adonet/querying-typed-datasets.md)합니다. 선택적 `/n:` 지시문 알려도 대 한 네임 스페이스를 생성 하는 도구는 **데이터 집합** 호출 **XSDSchema.Namespace**합니다. 이 명령을 실행하면 XSDSchemaFileName.cs가 생성되며, 이 파일을 컴파일하여 ADO.NET 응용 프로그램에서 사용할 수 있습니다. 생성된 코드는 라이브러리나 모듈로 컴파일할 수 있습니다.  
+ 이 구문에서은 `/d` 지시문은 생성 하는 도구를 **데이터 집합**, 및 `/l:` 도구 (예: C# 또는 Visual Basic.NET) 사용 하는 언어를 알려 줍니다. 선택적 `/eld` 지시문을 사용할 수 있는 지정 [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)] 생성 된 쿼리 **데이터 집합입니다.** 이 옵션은 `/d` 옵션도 함께 지정한 경우에 사용합니다. 자세한 내용은 [형식화 된 데이터 집합 쿼리](../../../../../docs/framework/data/adonet/querying-typed-datasets.md)합니다. 선택적 `/n:` 지시문은 또한 네임 스페이스를 생성 하는 도구를 **데이터 집합** 호출 **XSDSchema.Namespace**합니다. 이 명령을 실행하면 XSDSchemaFileName.cs가 생성되며, 이 파일을 컴파일하여 ADO.NET 응용 프로그램에서 사용할 수 있습니다. 생성된 코드는 라이브러리나 모듈로 컴파일할 수 있습니다.  
   
  다음 코드는 생성된 코드를 C# 컴파일러(csc.exe)를 사용하여 라이브러리로 컴파일하는 구문을 보여 줍니다.  
   
@@ -43,7 +43,7 @@ Imports XSDSchema.Namespace
 using XSDSchema.Namespace;  
 ```  
   
- 다음 코드 예제에서는 형식화 된 **DataSet** 라는 **CustomerDataSet** 의 고객 목록을 로드 하는 **Northwind** 데이터베이스입니다. 데이터를 사용 하 여 로드 되 면는 **채우기** 메서드, 반복 실행에 있는 각 고객의 **고객** 형식화 된를 사용 하 여 **CustomersRow** ( **DataRow**) 개체입니다. 이 제공에 대 한 직접 액세스는 **CustomerID** 열을 통하지는 **DataColumnCollection**합니다.  
+ 다음 코드 예제에서는 형식화 된 **데이터 집합** 라는 **CustomerDataSet** 의 고객 목록을 로드 하는 **Northwind** 데이터베이스입니다. 데이터를 사용 하 여 로드 되 면를 **채우기** 메서드를 각 고객에 대해 반복 실행 합니다 **고객** 사용 하 여 형식화 된 테이블 **CustomersRow** ( **DataRow**) 개체입니다. 이에 대 한 직접 액세스를 제공 합니다 **CustomerID** 열을 통하지 합니다 **DataColumnCollection**합니다.  
   
 ```vb  
 Dim customers As CustomerDataSet= New CustomerDataSet()  
@@ -99,4 +99,4 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
  <xref:System.Data.DataSet>  
  [형식화된 데이터 집합](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  
  [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

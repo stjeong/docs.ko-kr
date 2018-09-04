@@ -2,12 +2,12 @@
 title: 활동 대리자 사용
 ms.date: 03/30/2017
 ms.assetid: e33cf876-8979-440b-9b23-4a12d1139960
-ms.openlocfilehash: 96a412a066342fb9c459e1388c5b58847ebac390
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bb23f6a79b6f2390952f9aadc1cf08099acb289b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33518954"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43489931"
 ---
 # <a name="using-activity-delegates"></a>활동 대리자 사용
 작업 대리자를 사용하면 활동 작성자는 활동 사용자가 활동 기반 처리기를 제공할 수 있는 특정 시그니처가 있는 콜백을 노출할 수 있습니다. 두 가지 형식의 작업 대리자를 사용할 수 있습니다. <xref:System.Activities.ActivityAction%601>은 반환 값이 없는 작업 대리자를 정의하는 데 사용되고 <xref:System.Activities.ActivityFunc%601>은 반환 값이 있는 작업 대리자를 정의하는 데 사용됩니다.  
@@ -27,9 +27,9 @@ ms.locfileid: "33518954"
   
  [!code-csharp[CFX_ActivityExample#7](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#7)]  
   
- 개체 이니셜라이저에 대 한 자세한 내용은 참조 [하는 방법: 생성자 (C# 프로그래밍 가이드)를 호출 하지 않고 개체 초기화](http://go.microsoft.com/fwlink/?LinkId=161015) 및 [하는 방법: 개체 이니셜라이저를 사용 하 여 개체 선언](http://go.microsoft.com/fwlink/?LinkId=161016)합니다.  
+ 개체 이니셜라이저에 대 한 자세한 내용은 참조 하세요. [방법: 생성자 (C# 프로그래밍 가이드)를 호출 하지 않고 개체 초기화](https://go.microsoft.com/fwlink/?LinkId=161015) 하 고 [방법: 개체 이니셜라이저를 사용 하 여 개체 선언](https://go.microsoft.com/fwlink/?LinkId=161016)합니다.  
   
- 다음 예제에서는 <xref:System.Activities.Statements.TryCatch> 활동이 워크플로에 사용됩니다. <xref:System.ApplicationException>이 워크플로를 통해 throw되고 <xref:System.Activities.Statements.Catch%601> 활동을 통해 처리됩니다. 에 대 한 처리기는 <xref:System.Activities.Statements.Catch%601> 활동의 활동 동작은 <xref:System.Activities.Statements.WriteLine> 활동과 예외 세부 정보를 통해을 사용 하 여 전달 되는 `ex` <xref:System.Activities.DelegateInArgument%601>합니다.  
+ 다음 예제에서는 <xref:System.Activities.Statements.TryCatch> 활동이 워크플로에 사용됩니다. <xref:System.ApplicationException>이 워크플로를 통해 throw되고 <xref:System.Activities.Statements.Catch%601> 활동을 통해 처리됩니다. 에 대 한 처리기를 <xref:System.Activities.Statements.Catch%601> 활동의 활동 동작은 <xref:System.Activities.Statements.WriteLine> 사용 하 여 작업 및 예외 세부 정보 전달 됩니다 합니다 `ex` <xref:System.Activities.DelegateInArgument%601>합니다.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#33](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#33)]  
   
