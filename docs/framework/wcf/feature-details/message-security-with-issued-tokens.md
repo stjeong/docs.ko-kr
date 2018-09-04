@@ -5,19 +5,19 @@ ms.assetid: 731fc871-54d0-4689-90fd-1c9415c45621
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: c084c9e393728c2f4c2889339dbc36517c058d24
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456518"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525337"
 ---
-# <a name="message-security-with-issued-tokens"></a><span data-ttu-id="586a9-102">발급된 토큰을 사용하는 메시지 보안</span><span class="sxs-lookup"><span data-stu-id="586a9-102">Message Security with Issued Tokens</span></span>
-<span data-ttu-id="586a9-103">발급 된 토큰 클라이언트는 Windows Communication Foundation (WCF)에서 페더레이션된 보안 시나리오를 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="586a9-103">The issued token client enables the federated security scenario in Windows Communication Foundation (WCF).</span></span>  
+# <a name="message-security-with-issued-tokens"></a><span data-ttu-id="acefd-102">발급된 토큰을 사용하는 메시지 보안</span><span class="sxs-lookup"><span data-stu-id="acefd-102">Message Security with Issued Tokens</span></span>
+<span data-ttu-id="acefd-103">발급 된 토큰 클라이언트는 Windows Communication Foundation (WCF)에서 페더레이션된 보안 시나리오를 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="acefd-103">The issued token client enables the federated security scenario in Windows Communication Foundation (WCF).</span></span>  
   
- <span data-ttu-id="586a9-104">페더레이션 보안을 사용하면 독립 도메인 간에 트러스트를 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="586a9-104">Federated security enables the establishment of trust between independent domains.</span></span> <span data-ttu-id="586a9-105">각 도메인은 보안 토큰 서비스에서 인증 및 권한 부여를 중앙 집중 방식으로 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="586a9-105">Each domain centralizes authentication and authorization in a security token service.</span></span> <span data-ttu-id="586a9-106">이러한 두 서비스 간에 트러스트가 설정되면 각 도메인 멤버가 상대의 서비스를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="586a9-106">When trust is established between two such services, members of each domain can use the services of the other.</span></span>  
+ <span data-ttu-id="acefd-104">페더레이션 보안을 사용하면 독립 도메인 간에 트러스트를 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="acefd-104">Federated security enables the establishment of trust between independent domains.</span></span> <span data-ttu-id="acefd-105">각 도메인은 보안 토큰 서비스에서 인증 및 권한 부여를 중앙 집중 방식으로 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="acefd-105">Each domain centralizes authentication and authorization in a security token service.</span></span> <span data-ttu-id="acefd-106">이러한 두 서비스 간에 트러스트가 설정되면 각 도메인 멤버가 상대의 서비스를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="acefd-106">When trust is established between two such services, members of each domain can use the services of the other.</span></span>  
   
- <span data-ttu-id="586a9-107">페더레이션된 시나리오에 대 한 자세한 내용은 참조 하세요. [페더레이션 및 발급 된 토큰](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="586a9-107">For a detailed explanation about the federated scenario, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).</span></span>  
+ <span data-ttu-id="acefd-107">페더레이션된 시나리오에 대 한 자세한 내용은 참조 하세요. [페더레이션 및 발급 된 토큰](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="acefd-107">For a detailed explanation about the federated scenario, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="586a9-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="586a9-108">See Also</span></span>  
- [<span data-ttu-id="586a9-109">페더레이션 및 발급된 토큰</span><span class="sxs-lookup"><span data-stu-id="586a9-109">Federation and Issued Tokens</span></span>](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [<span data-ttu-id="586a9-110">Windows Server appfabric 보안 모델</span><span class="sxs-lookup"><span data-stu-id="586a9-110">Security Model for Windows Server App Fabric</span></span>](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a><span data-ttu-id="acefd-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="acefd-108">See Also</span></span>  
+ [<span data-ttu-id="acefd-109">페더레이션 및 발급된 토큰</span><span class="sxs-lookup"><span data-stu-id="acefd-109">Federation and Issued Tokens</span></span>](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
+ [<span data-ttu-id="acefd-110">Windows Server appfabric 보안 모델</span><span class="sxs-lookup"><span data-stu-id="acefd-110">Security Model for Windows Server App Fabric</span></span>](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

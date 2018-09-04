@@ -5,16 +5,16 @@ ms.assetid: 89e41a81-0f41-45ad-8f20-a120e4ff24fb
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: d7f4fff4f2c2b3dd04625f4cf50b8b19a0ef6f39
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43415899"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525083"
 ---
-# <a name="axlauthenticodetimestamperinfo-structure"></a><span data-ttu-id="64284-102">AXL_AUTHENTICODE_TIMESTAMPER_INFO 구조</span><span class="sxs-lookup"><span data-stu-id="64284-102">AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure</span></span>
-<span data-ttu-id="64284-103">Authenticode 타임스탬퍼 정보를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="64284-103">Defines the Authenticode time stamper information.</span></span>  
+# <a name="axlauthenticodetimestamperinfo-structure"></a><span data-ttu-id="af0dd-102">AXL_AUTHENTICODE_TIMESTAMPER_INFO 구조</span><span class="sxs-lookup"><span data-stu-id="af0dd-102">AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure</span></span>
+<span data-ttu-id="af0dd-103">Authenticode 타임스탬퍼 정보를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-103">Defines the Authenticode time stamper information.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="64284-104">구문</span><span class="sxs-lookup"><span data-stu-id="64284-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="af0dd-104">구문</span><span class="sxs-lookup"><span data-stu-id="af0dd-104">Syntax</span></span>  
   
 ```  
 typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {  
@@ -26,15 +26,15 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 } AXL_AUTHENTICODE_TIMESTAMPER_INFO, * PAXL_AUTHENTICODE_TIMESTAMPER_INFO;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="64284-105">멤버</span><span class="sxs-lookup"><span data-stu-id="64284-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="af0dd-105">멤버</span><span class="sxs-lookup"><span data-stu-id="af0dd-105">Members</span></span>  
   
-|<span data-ttu-id="64284-106">멤버</span><span class="sxs-lookup"><span data-stu-id="64284-106">Member</span></span>|<span data-ttu-id="64284-107">설명</span><span class="sxs-lookup"><span data-stu-id="64284-107">Description</span></span>|  
+|<span data-ttu-id="af0dd-106">멤버</span><span class="sxs-lookup"><span data-stu-id="af0dd-106">Member</span></span>|<span data-ttu-id="af0dd-107">설명</span><span class="sxs-lookup"><span data-stu-id="af0dd-107">Description</span></span>|  
 |------------|-----------------|  
-|`cbSize`|<span data-ttu-id="64284-108">이 구조체의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="64284-108">The size of this structure.</span></span>|  
-|`dwError`|<span data-ttu-id="64284-109">오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="64284-109">The error code.</span></span>|  
-|`algHash`|<span data-ttu-id="64284-110">해시 알고리즘입니다.</span><span class="sxs-lookup"><span data-stu-id="64284-110">The hash algorithm.</span></span>|  
-|`ftTimestamp`|<span data-ttu-id="64284-111">타임스탬프의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="64284-111">The time of the time stamp.</span></span>|  
-|`pChainContext`|<span data-ttu-id="64284-112">타임스탬퍼의 체인 컨텍스트입니다.</span><span class="sxs-lookup"><span data-stu-id="64284-112">The time stamper’s chain context.</span></span>  <span data-ttu-id="64284-113">참조 된 [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="64284-113">See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.</span></span>|  
+|`cbSize`|<span data-ttu-id="af0dd-108">이 구조체의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-108">The size of this structure.</span></span>|  
+|`dwError`|<span data-ttu-id="af0dd-109">오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-109">The error code.</span></span>|  
+|`algHash`|<span data-ttu-id="af0dd-110">해시 알고리즘입니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-110">The hash algorithm.</span></span>|  
+|`ftTimestamp`|<span data-ttu-id="af0dd-111">타임스탬프의 시간입니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-111">The time of the time stamp.</span></span>|  
+|`pChainContext`|<span data-ttu-id="af0dd-112">타임스탬퍼의 체인 컨텍스트입니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-112">The time stamper’s chain context.</span></span>  <span data-ttu-id="af0dd-113">참조 된 [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="af0dd-113">See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="64284-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="64284-114">See Also</span></span>  
- [<span data-ttu-id="64284-115">Authenticode</span><span class="sxs-lookup"><span data-stu-id="64284-115">Authenticode</span></span>](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## <a name="see-also"></a><span data-ttu-id="af0dd-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="af0dd-114">See Also</span></span>  
+ [<span data-ttu-id="af0dd-115">Authenticode</span><span class="sxs-lookup"><span data-stu-id="af0dd-115">Authenticode</span></span>](../../../../docs/framework/unmanaged-api/authenticode/index.md)
