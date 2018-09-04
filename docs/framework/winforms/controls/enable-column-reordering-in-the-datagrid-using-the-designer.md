@@ -8,11 +8,11 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 ms.assetid: d82bd69c-6799-4439-a32c-91139c5901d1
 ms.openlocfilehash: 3786ba561ca5687b92614f2c54537d64f48e6d64
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43389934"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529049"
 ---
 # <a name="how-to-enable-column-reordering-in-the-windows-forms-datagridview-control-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms DataGridView 컨트롤에서 열 다시 정렬 사용
 Windows Forms에 표시 된 데이터를 볼 때 <xref:System.Windows.Forms.DataGridView> 컨트롤을 특정 열에 값을 비교할 사용자가 원하는 경우가 있습니다. 이 불편할 수 있습니다 열 컨트롤에서 광범위 하 게 분리 되어 있으면 사용자가 관심 있는 모든 열을 표시 하려면 가로 앞뒤로 스크롤해야 하는 경우에 특히 합니다. 사용자가 열의 순서를 변경 하려면를 사용 하 여 열 값을 쉽게 비교 작업을 할 수 있습니다. 열 다시 정렬을 사용 하도록 설정 하면 사용자는 마우스로 열 헤더를 끌어 열을 새 위치로 이동할 수 있습니다.  

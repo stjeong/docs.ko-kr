@@ -2,12 +2,12 @@
 title: OLE DB, ODBC 및 Oracle 연결 풀링
 ms.date: 03/30/2017
 ms.assetid: 2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04
-ms.openlocfilehash: 5b70f6aeeae565684158aeb135d0d3e765e694d1
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 3ce65036605b7693955c3a6064fca80263d3538f
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33803126"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43527378"
 ---
 # <a name="ole-db-odbc-and-oracle-connection-pooling"></a>OLE DB, ODBC 및 Oracle 연결 풀링
 연결 풀링을 사용하면 응용 프로그램의 성능 및 확장성을 대폭 향상시킬 수 있습니다. 이 단원에서는 OLE DB, ODBC 및 Oracle용 .NET Framework 데이터 공급자에 대한 연결 풀링에 대해 설명합니다.  
@@ -21,12 +21,12 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
   
  연결의 사용을 끝내면 연결이 풀로 반환되도록 항상 연결을 닫거나 삭제하는 것이 좋습니다. 명시적으로 닫히지 않는 연결은 풀에 반환되지 않을 수 있습니다. 예를 들어, 범위를 벗어났지만 명시적으로 닫히지 않은 연결은 최대 풀 크기에 도달했으며 여전히 유효한 경우에만 연결 풀로 반환됩니다.  
   
- OLE DB 세션 또는 리소스 풀링으로 OLE DB 공급자 서비스 기본값을 재정의 하 여 풀링을 비활성화 하는 방법에 대 한 자세한 내용은 참조는 [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?linkid=45232)합니다.  
+ OLE DB 세션 또는 리소스 풀링을 뿐만 아니라 OLE DB 공급자 서비스 기본값을 재정의 하 여 풀링을 비활성화 하는 방법에 대 한 자세한 내용은 참조는 [OLE DB Programmer's Guide](https://go.microsoft.com/fwlink/?linkid=45232)합니다.  
   
 ## <a name="connection-pooling-for-odbc"></a>Odbc에 대한 연결 풀링  
  .NET Framework Data Provider for ODBC의 연결 풀링은 연결에 사용되는 ODBC 드라이버 관리자에서 관리하며 .NET Framework Data Provider for ODBC에 의해 영향을 받지 않습니다.  
   
- 연결 풀링을 사용 하지 않도록 설정 하거나, 엽니다 **ODBC 데이터 원본 관리자** 제어판의 관리 도구 폴더에 있습니다. **연결 풀링** 탭을 사용 하면 연결 풀링 설치 된 각 ODBC 드라이버에 대 한 매개 변수를 지정할 수 있습니다. 특정 ODBC 드라이버에 대해 연결 풀링이 변경되면 해당 ODBC 드라이버를 사용하는 모든 응용 프로그램에 영향을 줍니다.  
+ 연결 풀링을 사용 하지 않도록 설정 하거나에서 엽니다 **ODBC 데이터 원본 관리자** 제어판의 관리 도구 폴더에 있습니다. 합니다 **연결 풀링을** 탭을 사용 하면 연결 풀링 설치 된 각 ODBC 드라이버에 대 한 매개 변수를 지정할 수 있습니다. 특정 ODBC 드라이버에 대해 연결 풀링이 변경되면 해당 ODBC 드라이버를 사용하는 모든 응용 프로그램에 영향을 줍니다.  
   
 ## <a name="connection-pooling-for-oracleclient"></a>OracleClient에 대한 연결 풀링  
  .NET Framework Data Provider for Oracle에서는 ADO.NET 클라이언트 응용 프로그램에 대한 연결 풀링을 자동으로 제공합니다. 또한 여러 개의 연결 풀링 한정자를 지정하여 연결 풀링 동작을 제어할 수 있습니다(이 항목 뒷부분의 "연결 문자열 키워드를 사용하여 연결 풀링 제어" 참조).  
@@ -48,10 +48,10 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
   
  네트워크에 존재하지 않는 서버에 대한 연결이 있는 경우 연결 풀러에서 이 연결을 검색하지 못하고 잘못된 연결로 표시하지 못해도 풀에서 선택할 수는 있습니다. 이 경우 예외가 발생합니다. 그러나 연결을 풀로 회수하려면 계속해서 연결을 닫아야 합니다.  
   
- 클래스의 `Close` 메서드에 있는 `Dispose`, `Connection` 또는 다른 관리 개체에 `DataReader` 또는 `Finalize`를 호출해서는 안 됩니다. 종료자에서는 클래스에 직접 속한 관리되지 않는 리소스만 해제합니다. 클래스에 관리되지 않는 리소스가 없는 경우 클래스 정의에 `Finalize` 메서드를 포함하지 마세요. 자세한 내용은 참조 [가비지 수집](../../../../docs/standard/garbage-collection/index.md)합니다.  
+ 클래스의 `Close` 메서드에 있는 `Dispose`, `Connection` 또는 다른 관리 개체에 `DataReader` 또는 `Finalize`를 호출해서는 안 됩니다. 종료자에서는 클래스에 직접 속한 관리되지 않는 리소스만 해제합니다. 클래스에 관리되지 않는 리소스가 없는 경우 클래스 정의에 `Finalize` 메서드를 포함하지 마세요. 자세한 내용은 [가비지 수집](../../../../docs/standard/garbage-collection/index.md)합니다.  
   
 ### <a name="transaction-support"></a>트랜잭션 지원  
- 연결은 트랜잭션 컨텍스트에 따라 풀에서 선택되어 할당됩니다. 요청하는 스레드의 컨텍스트와 할당된 연결의 컨텍스트는 반드시 일치해야 합니다. 따라서 각 연결 풀은 실제로 다음과 같이 구분 연결 된 및로 연결 된 트랜잭션 컨텍스트가 없는 *N* 각각 특정 트랜잭션 컨텍스트가 포함 된 하위 분류 단위로 합니다.  
+ 연결은 트랜잭션 컨텍스트에 따라 풀에서 선택되어 할당됩니다. 요청하는 스레드의 컨텍스트와 할당된 연결의 컨텍스트는 반드시 일치해야 합니다. 따라서 각 연결 풀은 실제로 세분화할 연결 동료 및 연결 된 트랜잭션 컨텍스트가 없는 *N* 나뉜 각각 특정 트랜잭션 컨텍스트를 사용 하 여 연결을 포함 합니다.  
   
  연결이 닫힐 때는 풀로 다시 회수되고 트랜잭션 컨텍스트에 따라 적절한 분할로 회수됩니다. 따라서 분산 트랜잭션이 여전히 보류 중이더라도 오류를 생성하지 않고 연결을 닫을 수 있습니다. 이렇게 하여 분산 트랜잭션을 나중에 커밋하거나 취소할 수 있습니다.  
   
@@ -71,4 +71,4 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 ## <a name="see-also"></a>참고 항목  
  [연결 풀링](../../../../docs/framework/data/adonet/connection-pooling.md)  
  [성능 카운터](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

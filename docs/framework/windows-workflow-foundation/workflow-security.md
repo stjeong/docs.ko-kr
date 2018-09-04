@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], workflow security
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-ms.openlocfilehash: 8acfd0640478cf67309fe53a99707c7d96c5a635
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 38f679dff1f4e23f0aae541a775ef727917b03e4
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519583"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43527611"
 ---
 # <a name="workflow-security"></a>워크플로 보안
-Windows WF (Workflow Foundation)는 Microsoft SQL Server 및 Windows Communication Foundation (WCF)와 같은 여러 가지 다른 기술로와 통합 됩니다. 이러한 기술과 잘못 상호 작용하면 워크플로에 보안 문제가 발생할 수 있습니다.  
+Windows WF (Workflow Foundation)는 Microsoft SQL Server 및 Windows Communication Foundation (WCF)와 같은 몇 가지 다른 기술과 통합 되어 있습니다. 이러한 기술과 잘못 상호 작용하면 워크플로에 보안 문제가 발생할 수 있습니다.  
   
 ## <a name="persistence-security-concerns"></a>지속성 보안 고려 사항  
   
@@ -30,22 +30,22 @@ Windows WF (Workflow Foundation)는 Microsoft SQL Server 및 Windows Communicati
   
 -   많은 수의 자식 활동, 위치, 책갈피, 호스트 확장 또는 범위를 사용하거나 매우 큰 페이로드가 있는 책갈피를 사용할 때는 메모리가 부족하거나 유지 중에 과도한 양의 데이터베이스 공간이 할당될 수 있습니다. 개체 수준 및 데이터베이스 수준 보안을 사용하여 이 문제를 완화할 수 있습니다.  
   
--   <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>를 사용할 때는 인스턴스 저장소를 보호해야 합니다. 자세한 내용은 참조 [SQL Server에 대 한 유용한 정보](http://go.microsoft.com/fwlink/?LinkId=164972)합니다.  
+-   <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>를 사용할 때는 인스턴스 저장소를 보호해야 합니다. 자세한 내용은 [SQL Server에 대 한 유용한 정보](https://go.microsoft.com/fwlink/?LinkId=164972)합니다.  
   
--   인스턴스 저장소의 중요 데이터를 암호화해야 합니다. 자세한 내용은 참조 [SQL 보안 암호화](http://go.microsoft.com/fwlink/?LinkId=164976)합니다.  
+-   인스턴스 저장소의 중요 데이터를 암호화해야 합니다. 자세한 내용은 [SQL 보안 암호화](https://go.microsoft.com/fwlink/?LinkId=164976)합니다.  
   
 -   데이터베이스 연결 문자열은 종종 구성 파일에 포함되기 때문에 Windows 수준 보안(ACL)을 사용하여 구성 파일(대개 Web.Config)이 안전한지, 로그인과 암호 정보가 연결 문자열에 포함되어 있지 않은지 확인해야 합니다. 대신 데이터베이스와 웹 서버 사이에는 Windows 인증을 사용해야 합니다.  
   
 ## <a name="considerations-for-workflowservicehost"></a>WorkflowServiceHost에 대한 고려 사항  
   
--   워크플로에서 사용 되는 Windows Communication Foundation (WCF) 끝점을 보호 해야 합니다. 자세한 내용은 참조 [WCF 보안 개요](http://go.microsoft.com/fwlink/?LinkID=164975)합니다.  
+-   워크플로에서 사용 되는 Windows Communication Foundation (WCF) 끝점을 보호 되어야 합니다. 자세한 내용은 [WCF 보안 개요](https://go.microsoft.com/fwlink/?LinkID=164975)합니다.  
   
--   <xref:System.ServiceModel.ServiceAuthorizationManager>를 사용하여 호스트 수준 권한 부여를 구현할 수 있습니다. 참조 [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](http://go.microsoft.com/fwlink/?LinkId=192228) 대 한 자세한 내용은 합니다. 다음 샘플에도 설명 되어: [워크플로 서비스 보안](../../../docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md)합니다.  
+-   <xref:System.ServiceModel.ServiceAuthorizationManager>를 사용하여 호스트 수준 권한 부여를 구현할 수 있습니다. 참조 [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](https://go.microsoft.com/fwlink/?LinkId=192228) 세부 정보에 대 한 합니다. 다음 샘플에서 에서도이 보여 줍니다. [워크플로 서비스 보안](../../../docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md)합니다.  
   
--   들어오는 메시지에 대한 ServiceSecurityContext는 OperationContext에 액세스하여 워크플로 내에서도 사용할 수 있습니다.  참조 [워크플로 서비스에서 OperationContext 액세스](../../../docs/framework/wcf/feature-details/accessing-operationcontext-from-a-workflow-service.md) 대 한 자세한 내용은 합니다.  
+-   들어오는 메시지에 대한 ServiceSecurityContext는 OperationContext에 액세스하여 워크플로 내에서도 사용할 수 있습니다.  참조 [워크플로 서비스에서 OperationContext 액세스](../../../docs/framework/wcf/feature-details/accessing-operationcontext-from-a-workflow-service.md) 세부 정보에 대 한 합니다.  
   
 ## <a name="wf-security-pack-ctp"></a>WF Security Pack CTP  
- Microsoft WF Security Pack CTP 1은 활동 및 해당 구현에 따라 집합의 첫 번째 community technology preview (CTP) 릴리스 [Windows Workflow Foundation](http://msdn.microsoft.com/netframework/aa663328.aspx)에 [.NET Framework 4](http://msdn.microsoft.com/netframework/default.aspx) (WF 4) 인데 [Windows Identity Foundation (WIF)](http://msdn.microsoft.com/security/aa570351.aspx)합니다.  Microsoft WF Security Pack CTP 1에는 다음과 같은 워크플로를 사용하여 다양한 보안 관련 시나리오를 손쉽게 사용하는 방법을 보여 주는 활동과 디자이너가 모두 포함되어 있습니다.  
+ Microsoft WF Security Pack CTP 1은 활동 및 해당 구현에 따라 집합의 첫 번째 community technology preview (CTP) 릴리스 [Windows Workflow Foundation](https://msdn.microsoft.com/netframework/aa663328.aspx)에 [.NET Framework 4](https://msdn.microsoft.com/netframework/default.aspx) (WF 4) 인데 [Windows Identity Foundation (WIF)](https://msdn.microsoft.com/security/aa570351.aspx)합니다.  Microsoft WF Security Pack CTP 1에는 다음과 같은 워크플로를 사용하여 다양한 보안 관련 시나리오를 손쉽게 사용하는 방법을 보여 주는 활동과 디자이너가 모두 포함되어 있습니다.  
   
 1.  워크플로에서 클라이언트 ID 가장  
   
@@ -55,4 +55,4 @@ Windows WF (Workflow Foundation)는 Microsoft SQL Server 및 Windows Communicati
   
 4.  WS-Trust ActAs를 사용하여 클라이언트 보안 토큰이 백엔드 서비스로 이동(클레임 기반 위임)  
   
-자세한 내용 및 WF Security Pack CTP 다운로드 하려면 참조: [WF Security Pack CTP](http://wf.codeplex.com/releases/view/48114)
+자세한 내용은 및 WF Security Pack CTP 다운로드를 참조 하세요. [WF Security Pack CTP](http://wf.codeplex.com/releases/view/48114)

@@ -18,11 +18,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 82dbacdcf89a44455bb4963e73dc5e91bda1cbc7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482452"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43527676"
 ---
 # <a name="strongnamegetpublickeyex-method"></a>StrongNameGetPublicKeyEx 메서드
 공개/개인 키 쌍에서 공개 키를 가져옵니다 하 고 해시 알고리즘 및 서명 알고리즘을 지정 합니다.  
@@ -76,7 +76,7 @@ HRESULT StrongNameGetPublicKey (
 ## <a name="remarks"></a>설명  
  다음 테이블에 대 한 허용 되는 값 집합을 보여 줍니다.는 `uHashAlgId` 매개 변수입니다.  
   
-|name|값|  
+|이름|값|  
 |----------|-----------|  
 |없음|0|  
 |S H A-1|0x8004|  

@@ -3,11 +3,11 @@ title: 키워드 참조(F#)
 description: '모든 F # 언어 키워드에 대 한 정보 링크를를 찾습니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 18bf5f00cdd5250c0fbd503d096e5415a8b9feea
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43396875"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526191"
 ---
 # <a name="keyword-reference"></a>키워드 참조
 

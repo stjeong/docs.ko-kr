@@ -3,11 +3,11 @@ title: CustomDiscoveryMetadata
 ms.date: 03/30/2017
 ms.assetid: c42455fd-3652-4b7e-b698-ab3a2bb52e48
 ms.openlocfilehash: 181910db3f1dd6da892f6ae2ddcbf7bd5859ff17
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43465579"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525423"
 ---
 # <a name="customdiscoverymetadata"></a>CustomDiscoveryMetadata
 이 샘플에서는 서비스에서 노출하는 검색 가능한 엔드포인트의 검색 메타데이터에 사용자 지정 XML 메타데이터를 삽입하는 방법을 보여 줍니다. 그런 다음 이 샘플에서는 클라이언트가 서비스를 검색하고 이 사용자 지정 데이터를 추출하는 방법을 보여 줍니다. 이 샘플은 서비스와 클라이언트에 해당하는 두 개의 프로젝트로 구성되어 있습니다.  
