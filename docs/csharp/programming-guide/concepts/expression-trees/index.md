@@ -2,12 +2,12 @@
 title: 식 트리(C#)
 ms.date: 07/20/2015
 ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
-ms.openlocfilehash: 14ca5394a21b8dddb6c4431e6cabbf44a2f9add2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f17b4fba92c502ca6d53fef7ac6d01f2fdefc02e
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326500"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526867"
 ---
 # <a name="expression-trees-c"></a>식 트리(C#)
 식 트리는 `x < y` 등의 이진 연산이나 메서드 호출과 같이 각 노드가 식인 트리 형식 데이터 구조의 코드를 표시합니다.  
@@ -147,10 +147,11 @@ Console.WriteLine(expr.Compile()(4));
   
  자세한 내용은 [방법: 식 트리 실행(C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.Expressions>  
- [방법: 식 트리 실행(C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)  
- [방법: 식 트리 수정(C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)  
- [람다 식](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
- [동적 언어 런타임 개요](../../../../../docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md)  
- [프로그래밍 개념(C#)](../../../../csharp/programming-guide/concepts/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq.Expressions>  
+- [방법: 식 트리 실행(C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)  
+- [방법: 식 트리 수정(C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)  
+- [람다 식](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+- [동적 언어 런타임 개요](../../../../../docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md)  
+- [프로그래밍 개념(C#)](../../../../csharp/programming-guide/concepts/index.md)

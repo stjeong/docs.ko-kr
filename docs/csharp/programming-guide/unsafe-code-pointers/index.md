@@ -10,12 +10,12 @@ helpviewer_keywords:
 - C# language, pointers
 - pointers [C#], about pointers
 ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
-ms.openlocfilehash: b57a6f607dbdbc84c60889a5ce2b1e3c33d7f435
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 054a2c6c80e00b8baa742d5fe0a7c111994bcce4
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245174"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509819"
 ---
 # <a name="unsafe-code-and-pointers-c-programming-guide"></a>안전하지 않은 코드 및 포인터(C# 프로그래밍 가이드)
 형식 안전성 및 보안을 유지하기 위해 C#에서는 포인터 산술 연산을 기본적으로 지원하지 않습니다. 그러나 [unsafe](../../../csharp/language-reference/keywords/unsafe.md) 키워드를 사용하여 포인터를 사용할 수 있는 안전하지 않은 컨텍스트를 정의할 수 있습니다. 포인터에 대한 자세한 내용은 [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md) 항목을 참조하세요.  
@@ -50,5 +50,6 @@ ms.locfileid: "39245174"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)

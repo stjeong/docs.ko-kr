@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, events
 - events [C#]
 ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
-ms.openlocfilehash: 5b844b20ac62b4cbc2a73931eecab95f22b4b1de
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.openlocfilehash: 03c2ffc37bc6c2e820b8e28599f415cde1be9be5
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199445"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43521959"
 ---
 # <a name="events-c-programming-guide"></a>이벤트(C# 프로그래밍 가이드)
 [클래스](../../../csharp/language-reference/keywords/class.md) 나 개체에서는 특정 상황이 발생할 때 이벤트를 통해 다른 클래스나 개체에 이를 알려줄 수 있습니다. 이벤트를 보내거나 *발생시키는*클래스를 *게시자* 라고 하며 이벤트를 받거나 *처리하는*클래스를 *구독자*라고 합니다.  
@@ -58,9 +58,9 @@ ms.locfileid: "39199445"
   
  [Delegates and Events](https://msdn.microsoft.com/library/orm-9780596521066-01-17.aspx) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.EventHandler>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [대리자](../../../csharp/programming-guide/delegates/index.md)  
- [Windows Forms에서 이벤트 처리기 만들기](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [이벤트 기반 비동기 패턴을 사용한 다중 스레드 프로그래밍](../../../../docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.EventHandler>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [대리자](../../../csharp/programming-guide/delegates/index.md)  
+- [Windows Forms에서 이벤트 처리기 만들기](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  

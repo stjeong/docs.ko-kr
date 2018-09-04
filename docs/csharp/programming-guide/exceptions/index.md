@@ -6,12 +6,12 @@ helpviewer_keywords:
 - exceptions [C#]
 - C# language, exceptions
 ms.assetid: 0001887f-4fa2-47e2-8034-2819477e2344
-ms.openlocfilehash: de396ca4da2e115d221036d3ec49fb7b43d3d21d
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 9e92c253aa1981065274dc3413f9b8888b5f8849
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39244269"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500665"
 ---
 # <a name="exceptions-and-exception-handling-c-programming-guide"></a>예외 및 예외 처리(C# 프로그래밍 가이드)
 C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하는 예기치 않은 문제나 예외 상황을 처리하는 데 도움이 됩니다. 예외 처리는 `try`, `catch` 및 `finally` 키워드를 사용하여 실패했을 수 있는 작업을 시도하고, 실패를 처리하는 것이 적절하다고 판단될 때 처리하고, 리소스를 정리합니다. 예외는 CLR(공용 언어 런타임), .NET Framework, 타사 라이브러리 또는 응용 프로그램 코드에서 생성될 수 있습니다. 예외는 `throw` 키워드를 사용하여 생성됩니다.  
@@ -63,12 +63,13 @@ C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.SystemException>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [throw](../../../csharp/language-reference/keywords/throw.md)  
- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
- [예외](../../../standard/exceptions/index.md)  
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.SystemException>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [throw](../../../csharp/language-reference/keywords/throw.md)  
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
+- [예외](../../../standard/exceptions/index.md)  

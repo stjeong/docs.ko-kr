@@ -18,12 +18,12 @@ helpviewer_keywords:
 - format specifiers, standard numeric format strings
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f20db5cfb13f788ae0f8670f0d1c3b221db3e43b
-ms.sourcegitcommit: c66ba2df2d2ecfb214f85ee0687d298e4941c1a8
+ms.openlocfilehash: 7f304adb567e3568fb4624b3c5e9ec4585009a05
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "42753606"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43403191"
 ---
 # <a name="standard-numeric-format-strings"></a>표준 숫자 형식 문자열
 
@@ -33,8 +33,10 @@ ms.locfileid: "42753606"
   
 -   `xx`는 *전체 자릿수 지정자*라는 선택적 정수입니다. 전체 자릿수 지정자는 0에서 99 사이의 정수이며 결과의 자릿수에 영향을 줍니다. 전체 자릿수 지정자는 숫자의 문자열 표현에서 자릿수를 제어합니다. 숫자 자체는 반올림하지 않습니다. 반올림 연산을 수행하려면 <xref:System.Math.Ceiling%2A?displayProperty=nameWithType>, <xref:System.Math.Floor%2A?displayProperty=nameWithType> 또는 <xref:System.Math.Round%2A?displayProperty=nameWithType> 메서드를 사용합니다.  
   
-     전체 자릿수 지정자가 결과 문자열의 소수 자릿수를 제어하는 경우 결과 문자열은 0에서 멀어지는 쪽으로 반올림된 숫자를 나타냅니다(즉, <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> 사용).  
-  
+    *전체 자릿수 지정자*가 결과 문자열의 소수 자릿수를 제어할 때 결과 문자열은 무한 정밀도 결과에 가장 가까운 대표 결과로 반 올림된 숫자를 반영합니다. 동등하게 대표할 수 있는 결과가 두 개 있는 경우:
+    - **.NET Framework 및.NET Core에서 .NET Core 2.0까지** 런타임은 최소 유효 숫자(즉, <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> 사용)를 사용하여 결과를 선택합니다.
+    - **.NET Core 2.1 이상에서** 런타임도 최소 유효 숫자(즉, <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> 사용)를 사용하여 결과를 선택합니다. 
+
     > [!NOTE]
     >  전체 자릿수 지정자는 결과 문자열의 자릿수를 결정합니다. 선행 또는 후행 공백을 포함한 결과 문자열을 채우려면 서식 항목에서 [복합 서식 지정](../../../docs/standard/base-types/composite-formatting.md) 기능을 사용하고 *맞춤 구성 요소*를 정의합니다.  
   

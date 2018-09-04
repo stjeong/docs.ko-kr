@@ -14,11 +14,11 @@ ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 653a39d1e217d0478ff7c9b01c6ac146fe6b5fac
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43419149"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43561251"
 ---
 # <a name="globalizing-and-localizing-net-applications"></a>.NET 응용 프로그램 전역화 및 지역화
 하나 이상의 언어로 지역화할 수 있는 응용 프로그램을 포함하여 [지역화 대비 응용 프로그램](https://msdn.microsoft.com/goglobal/bb978433.aspx)의 개발에는 전역화, 지역화 가능성 검토 및 지역화의 세 가지 단계가 포함됩니다.  

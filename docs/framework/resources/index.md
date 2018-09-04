@@ -1,8 +1,9 @@
 ---
-title: 데스크톱 응용 프로그램의 리소스
-ms.date: 03/30/2017
+title: .NET 앱의 리소스
+ms.date: 07/25/2018
 helpviewer_keywords:
 - deploying applications [.NET Framework], resources
+- deploying applications [.NET Core], resources
 - application resources
 - resource files
 - satellite assemblies
@@ -12,23 +13,21 @@ helpviewer_keywords:
 ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 023099adeeebf21b7dba631bde75332524eb0cc3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4bc91f5f3872ee5f4a55f3e3cd9e0e9de9bcc422
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399259"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408287"
 ---
-# <a name="resources-in-desktop-apps"></a>데스크톱 응용 프로그램의 리소스
+# <a name="resources-in-net-apps"></a>.NET 앱의 리소스
 거의 모든 프로덕션 수준 응용 프로그램은 리소스를 사용해야 합니다. 리소스는 응용 프로그램과 함께 논리적으로 배포되는 실행 불가능한 데이터입니다. 리소스는 응용 프로그램에서 오류 메시지로 표시되거나 사용자 인터페이스의 일부로 표시될 수 있습니다. 리소스는 문자열, 이미지, 지속된 개체 등을 포함하여 수많은 형식의 데이터를 포함할 수 있습니다. (지속된 개체를 리소스 파일에 쓰려면 해당 개체를 serialize할 수 있어야 합니다.) 리소스 파일에 데이터를 저장하면 전체 응용 프로그램을 다시 컴파일하지 않고 데이터를 변경할 수 있습니다. 또한 단일 위치에 데이터를 저장할 수 있고, 여러 위치에 저장되어 있는 하드 코딩된 데이터를 사용하지 않아도 됩니다.  
   
- .NET Framework에서는 데스크톱 응용 프로그램에서 자원 만들기 및 지역화를 포괄적으로 지원합니다. 또한, .NET Framework는 데스크톱 응용 프로그램에서 지역화된 리소스를 패키징하고 배포하는 간단한 모델을 지원합니다.  
+ .NET Framework 및 .NET Core에서는 리소스 만들기 및 지역화를 포괄적으로 지원합니다. 또한, .NET은 지역화된 리소스를 패키징하고 배포하는 간단한 모델을 지원합니다.  
   
- ASP.NET의 리소스에 대한 자세한 내용은 Internet Explorer 개발자 센터의 [ASP.NET 페이지 리소스 개요](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd)를 참조하세요.  
+ ASP.NET의 리소스에 대한 자세한 내용은 [ASP.NET 페이지 리소스 개요](https://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd)를 참조하세요.  
   
- [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램은 데스크톱 응용 프로그램에서 다른 리소스 모델을 사용하고 단일 패키지 리소스 인덱스(PRI) 파일에 해당 리소스를 저장합니다. [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램의 리소스에 대한 자세한 내용은 Windows 개발자 센터의 [Windows 스토어 앱에서 리소스 만들기 및 검색](http://go.microsoft.com/fwlink/p/?LinkId=241674)을 참조하세요.  
-  
-## <a name="creating-and-localizing-resources"></a>리소스 만들기 및 지역화  
+ ## <a name="creating-and-localizing-resources"></a>리소스 만들기 및 지역화  
  지역화되지 않은 응용 프로그램에서 특히 소스 코드의 여러 위치에서 하드 코딩될 수 있는 문자열에 대한 응용 프로그램 데이터에 대해 리소스 파일을 저장소로 사용할 수 있습니다. 가장 일반적으로, 텍스트(.txt) 또는 XML(.resx) 파일 같은 리소스를 만들고, [Resgen.exe(리소스 파일 생성기)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 사용하여 이진 .resources 파일로 컴파일할 수 있습니다. 그런 다음 이러한 파일은 언어 컴파일러로 응용 프로그램의 실행 파일에 포함할 수 있습니다. 리소스 파일 만들기에 대한 자세한 내용은 [리소스 파일 만들기](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)를 참조하세요.  
   
  응용 프로그램의 리소스를 특정 문화권에 맞게 지역화할 수도 있습니다. 리소스를 지역화하면 지역화된(변환된) 버전의 응용 프로그램을 빌드할 수 있습니다. 지역화된 리소스를 사용하는 응용 프로그램을 개발할 때 중립 또는 대체 문화권의 역할을 하는 문화권을 지정하며, 해당 리소스는 적절한 리소스를 사용할 수 없는 경우 사용됩니다. 일반적으로 중립 문화권의 리소스는 응용 프로그램의 실행 파일에 저장됩니다. 각 지역화된 문화권에 대한 나머지 리소스는 독립 실행형 위성 어셈블리에 저장됩니다. 자세한 내용은 [위성 어셈블리 만들기](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)를 참조하세요.  
@@ -47,11 +46,11 @@ ms.locfileid: "33399259"
   
 -   문화권이 명시적으로 할당되지 않은 경우에는 <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> 속성에서 기본 스레드 UI 문화권을 검색합니다.  
   
--   기본 스레드 UI 문화권이 명시적으로 할당되지 않은 경우에는 Windows `GetUserDefaultUILanguage` 함수를 호출하여 로컬 컴퓨터의 현재 사용자에 대한 문화권을 검색합니다.  
+-   기본 스레드 UI 문화권이 명시적으로 할당되지 않은 경우 로컬 컴퓨터의 현재 사용자에 대한 문화권을 검색합니다. Windows에서 실행되는 .NET 구현은 Windows [`GetUserDefaultUILanguage`](/windows/desktop/api/winnls/nf-winnls-getuserdefaultuilanguage) 함수를 호출하여 수행합니다.  
   
  현재 UI 문화권을 설정하는 방법에 대한 자세한 내용은 <xref:System.Globalization.CultureInfo> 및 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> 참조 페이지를 참조하십시오.  
   
- <xref:System.Resources.ResourceManager?displayProperty=nameWithType> 클래스를 사용하여 현재 UI 문화권 또는 특정 문화권에 대한 리소스를 검색할 수도 있습니다. <xref:System.Resources.ResourceManager> 클래스가 데스크톱 응용 프로그램에서 리소스를 검색하는 데 가장 일반적으로 사용되지만, <xref:System.Resources?displayProperty=nameWithType> 네임스페이스는 리소스를 검색하는 데 사용할 수 있는 추가 형식을 포함합니다. 여기에는 다음이 포함됩니다.  
+ <xref:System.Resources.ResourceManager?displayProperty=nameWithType> 클래스를 사용하여 현재 UI 문화권 또는 특정 문화권에 대한 리소스를 검색할 수도 있습니다. <xref:System.Resources.ResourceManager> 클래스가 리소스를 검색하는 데 가장 일반적으로 사용되지만, <xref:System.Resources?displayProperty=nameWithType> 네임스페이스는 리소스를 검색하는 데 사용할 수 있는 추가 형식을 포함합니다. 여기에는 다음이 포함됩니다.  
   
 -   <xref:System.Resources.ResourceReader> 클래스를 사용하면 어셈블리에 포함되거나 독립 실행형 이진 .resources 파일에 저장된 리소스를 열거할 수 있습니다. 런타임에 사용할 수 있는 리소스의 정확한 이름을 모르는 경우에 유용합니다.  
   

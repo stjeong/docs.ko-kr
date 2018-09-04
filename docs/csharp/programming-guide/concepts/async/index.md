@@ -2,12 +2,12 @@
 title: async 및 await를 사용한 비동기 프로그래밍(C#)
 ms.date: 05/22/2017
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
-ms.openlocfilehash: f38247969260fecd2fe527efb1ddb0c097fa2a47
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: bd1493319dd7f742158fe7d3e1b286a4900b05b5
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43390235"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529165"
 ---
 # <a name="asynchronous-programming-with-async-and-await-c"></a>async 및 await를 사용한 비동기 프로그래밍(C#)
 비동기 프로그래밍을 사용하여 성능 병목 현상을 방지하고 응용 프로그램의 전체적인 응답성을 향상할 수 있습니다. 그러나 비동기 응용 프로그램을 쓰는 일반적인 기술이 복잡하여 해당 응용 프로그램을 쓰고, 디버깅하고, 유지 관리하기 어려울 수 있습니다.  
@@ -333,8 +333,9 @@ namespace AsyncFirstExample
 // Length of the downloaded string: 41564.  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [async](../../../../csharp/language-reference/keywords/async.md)  
- [await](../../../../csharp/language-reference/keywords/await.md)  
- [비동기 프로그래밍](../../../../csharp/async.md)  
- [비동기 개요](../../../../standard/async.md)  
+## <a name="see-also"></a>참고 항목
+
+- [async](../../../../csharp/language-reference/keywords/async.md)  
+- [await](../../../../csharp/language-reference/keywords/await.md)  
+- [비동기 프로그래밍](../../../../csharp/async.md)  
+- [비동기 개요](../../../../standard/async.md)  

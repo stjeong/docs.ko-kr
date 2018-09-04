@@ -17,7 +17,7 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33552376"
 ---
 # <a name="how-to-use-the-attached-properties-of-canvas-to-position-child-elements"></a>방법: Canvas의 연결된 속성을 사용하여 자식 요소 배치
-연결된 된 속성을 사용 하는 방법을 보여 주는이 예제 <xref:System.Windows.Controls.Canvas> 자식 요소의 위치입니다.  
+이 예제는 자식 요소들을 위치시키기 위해 <xref:System.Windows.Controls.Canvas>의 연결 속성을 사용하는 법을 알려줍니다.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 4 개의 <xref:System.Windows.Controls.Button> 부모의 자식 요소로 요소 <xref:System.Windows.Controls.Canvas>합니다. 이 고유한 연결 된 속성을 각 자식 요소 <xref:System.Windows.Controls.Canvas>: <xref:System.Windows.Controls.Canvas.Bottom%2A>, <xref:System.Windows.Controls.Canvas.Left%2A>, <xref:System.Windows.Controls.Canvas.Right%2A>, 및 <xref:System.Windows.Controls.Canvas.Top%2A>합니다. 각 <xref:System.Windows.Controls.Button> 에서 부모에 상대적인 배치 <xref:System.Windows.Controls.Canvas> 할당된 된 속성 값에 따라 합니다.  

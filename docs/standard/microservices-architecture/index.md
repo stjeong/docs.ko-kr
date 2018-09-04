@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/06/2018
-ms.openlocfilehash: 154cb0eafb8f14d61191b7cad749cb93d269ff34
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 6b57f66068409ade24eecff636b9dd3f4084fd71
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105066"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516153"
 ---
 ![](./media/cover.png)
 
@@ -143,7 +143,7 @@ Windows 및 Linux 에코시스템에서 가장 중요한 공급업체가 지원�
 
 eShopOnContainers 응용 프로그램은 Docker 컨테이너를 사용하여 배포되도록 설계된 .NET Core 및 마이크로 서비스용 참조 앱입니다. 이 응용 프로그램은 몇 가지 온라인 스토어 UI 프런트 엔드(웹앱 및 네이티브 모바일 앱)를 비롯한 여러 하위 시스템으로 구성됩니다. 또한 필요한 모든 서버 쪽 작업을 위한 백 엔드 마이크로 서비스 및 컨테이너를 포함하고 있습니다.
 
-이 마이크로 서비스 및 컨테이너 기반 응용 프로그램 소스 코드는 오픈 소스로, [eShopOnContainers](http://aka.ms/MicroservicesArchitecture) GitHub 리포지토리에서 제공됩니다.
+이 마이크로 서비스 및 컨테이너 기반 응용 프로그램 소스 코드는 오픈 소스로, [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) GitHub 리포지토리에서 제공됩니다.
 
 ## <a name="send-us-your-feedback"></a>피드백을 보내주세요.
 

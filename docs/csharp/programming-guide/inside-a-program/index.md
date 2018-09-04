@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, about C# program
 - Visual C#, program structure
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
-ms.openlocfilehash: 65ed1fedebc784d8ac257735f0e7c705623350d7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: a39a7dd3ebdbb7483f0b69169c8e00382f581788
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43424047"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43562593"
 ---
 # <a name="inside-a-c-program"></a>C# 프로그램 내부
 이 단원에서는 C# 프로그램의 일반적인 구조를 설명하고 표준 "Hello, World!" 예가 포함됩니다.  
@@ -34,5 +34,6 @@ ms.locfileid: "43424047"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)

@@ -3,11 +3,11 @@ title: 방법 문서(C# 가이드)
 description: 유용한 팁 및 간단하고 집중된 코드 샘플의 컬렉션
 ms.date: 12/20/2017
 ms.openlocfilehash: 86e245873c8316cc4ddd52fe59a06f2cac648e6c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43421199"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43507677"
 ---
 # <a name="how-to-c"></a>방법(C#)
 

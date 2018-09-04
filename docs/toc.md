@@ -63,6 +63,7 @@
 
 <!-- .NET Core Content -->
 # [.NET Core 가이드](core/index.md)
+## [.NET Core 정보](core/about.md)
 ## [시작](core/get-started.md)
 ### [C# 및 Visual Studio Code 시작](core/tutorials/with-visual-studio-code.md)
 ### [Visual Studio 2017에서 .NET Core를 사용하여 C# Hello World 앱 빌드](core/tutorials/with-visual-studio.md)
@@ -108,6 +109,7 @@
 ### [.NET Core 응용 프로그램에 대한 Docker 이미지 작성](core/docker/building-net-docker-images.md)
 ### [Docker용 Visual Studio Tools](/aspnet/core/publishing/visual-studio-tools-for-docker)
 ## [단위 테스트](core/testing/index.md)
+### [단위 테스트 모범 사례](core/testing/unit-testing-best-practices.md)
 ### [xUnit을 사용한 C# 단위 테스트](core/testing/unit-testing-with-dotnet-test.md)
 ### [NUnit을 사용한 C# 단위 테스트](core/testing/unit-testing-with-nunit.md)
 ### [MSTest를 사용한 C# 단위 테스트](core/testing/unit-testing-with-mstest.md)
@@ -121,7 +123,10 @@
 ### [게시된 출력 단위 테스트](core/testing/unit-testing-published-output.md)
 ### [Visual Studio를 사용한 Live Unit Testing .NET Core 프로젝트](/visualstudio/test/live-unit-testing-start)
 ## [버전 관리](core/versions/index.md)
+### [.NET Core 버전 기록](core/versions/version-history.md)
 ### [.NET Core 버전 선택 영역](core/versions/selection.md)
+### [.NET Core 설치 관리](core/versions/install-management.md)
+### [오래된 런타임 및 SDK 제거](core/versions/remove-runtime-sdk-versions.md)
 ## [런타임 식별자 카탈로그](core/rid-catalog.md)
 ## [.NET Core SDK 개요](core/sdk.md)
 ## [.NET Core CLI 도구](core/tools/index.md)
@@ -293,7 +298,6 @@
 <!-- F# Content -->
 # [F# 가이드](fsharp/index.md)
 
-## [F# 둘러보기](fsharp/tour.md)
 ## [시작](fsharp/get-started/index.md)
 ### [F# 설치](fsharp/get-started/install-fsharp.md)
 ### [Visual Studio 시작](fsharp/get-started/get-started-visual-studio.md)
@@ -301,38 +305,19 @@
 ### [Visual Studio Code 및 Ionide 시작](fsharp/get-started/get-started-vscode.md)
 ### [.NET Core CLI 시작](fsharp/get-started/get-started-command-line.md)
 
-## [F# 스타일 가이드](fsharp/style-guide/index.md)
-### [F# 코드 서식 지정 지침](fsharp/style-guide/formatting.md)
-### [F# 코딩 규칙](fsharp/style-guide/conventions.md)
-### [F# 구성 요소 디자인 지침](fsharp/style-guide/component-design-guidelines.md)
+## [F#이란](fsharp/what-is-fsharp.md)
+## [F# 둘러보기](fsharp/tour.md)
 
 ## 자습서
-### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
+### 함수형 프로그래밍 소개
+#### [첫 번째 클래스 값 함수](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
+### 비동기 및 동시 실행 프로그래밍
+#### [비동기 프로그래밍](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 ### [형식 공급자](fsharp/tutorials/type-providers/index.md)
 #### [형식 공급자 만들기](fsharp/tutorials/type-providers/creating-a-type-provider.md)
 #### [형식 공급자 보안](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [형식 공급자 문제 해결](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
-
-<!--## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)-->
-## 함수형 프로그래밍 소개
-### [첫 번째 클래스 값 함수](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
-
-<!--### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)-->
-### 비동기 및 동시 실행 프로그래밍
-#### [비동기 프로그래밍](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-
-<!--## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)-->
-### [Visual F# 개발 환경 기능](fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md)
-### [프로젝트 구성](fsharp/using-fsharp-in-visual-studio/configuring-projects.md)
-### [이전 버전의 .NET 대상 지정](fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)
-
-## [Azure에서 F# 사용](fsharp/using-fsharp-on-azure/index.md)
-### [F#을 사용하여 Azure Blob Storage 시작](fsharp/using-fsharp-on-azure/blob-storage.md)
-### [F#을 사용하여 Azure File Storage 시작](fsharp/using-fsharp-on-azure/file-storage.md)
-### [F#을 사용하여 Azure Queue Storage 시작](fsharp/using-fsharp-on-azure/queue-storage.md)
-### [F#을 사용하여 Azure Table Storage 시작](fsharp/using-fsharp-on-azure/table-storage.md)
-<!--### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)-->
-### [F# Azure 종속성에 대한 패키지 관리](fsharp/using-fsharp-on-azure/package-management.md)
+### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 
 ## [F# 언어 참조](fsharp/language-reference/index.md)
 ### [키워드 참조](fsharp/language-reference/keyword-reference.md)
@@ -361,6 +346,7 @@
 ### [F# 컬렉션 형식](fsharp/language-reference/fsharp-collection-types.md)
 ### [목록](fsharp/language-reference/lists.md)
 ### [옵션](fsharp/language-reference/options.md)
+### [값 옵션](fsharp/language-reference/value-options.md)
 ### [결과](fsharp/language-reference/results.md)
 ### [시퀀스](fsharp/language-reference/sequences.md)
 ### [배열](fsharp/language-reference/arrays.md)
@@ -431,26 +417,37 @@
 ### [소스 줄, 파일 및 경로 식별자](fsharp/language-reference/source-line-file-path-identifiers.md)
 ### [호출자 정보](fsharp/language-reference/caller-information.md)
 ### [자세한 구문](fsharp/language-reference/verbose-syntax.md)
-### [코드 서식 지정 지침](fsharp/language-reference/code-formatting-guidelines.md)
+
+## [F# 스타일 가이드](fsharp/style-guide/index.md)
+### [F# 코드 서식 지정 지침](fsharp/style-guide/formatting.md)
+### [F# 코딩 규칙](fsharp/style-guide/conventions.md)
+### [F# 구성 요소 디자인 지침](fsharp/style-guide/component-design-guidelines.md)
+
+## [Azure에서 F# 사용](fsharp/using-fsharp-on-azure/index.md)
+### [F#을 사용하여 Azure Blob Storage 시작](fsharp/using-fsharp-on-azure/blob-storage.md)
+### [F#을 사용하여 Azure File Storage 시작](fsharp/using-fsharp-on-azure/file-storage.md)
+### [F#을 사용하여 Azure Queue Storage 시작](fsharp/using-fsharp-on-azure/queue-storage.md)
+### [F#을 사용하여 Azure Table Storage 시작](fsharp/using-fsharp-on-azure/table-storage.md)
+### [F# Azure 종속성에 대한 패키지 관리](fsharp/using-fsharp-on-azure/package-management.md)
 <!-- End F# Content -->
 
 <!-- VB Content -->
 # [Visual Basic 가이드](visual-basic/index.md)
+## [Visual Basic의 새로운 기능](visual-basic/getting-started/whats-new.md)
 ## [시작](visual-basic/getting-started/index.md)
-### [Visual Basic의 새로운 기능](visual-basic/getting-started/whats-new.md)
 ### [Visual Studio 의 Visual Basic 주요 변경 내용](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [Visual Basic 프로그래머를 위한 추가 리소스](visual-basic/getting-started/additional-resources.md)
 
 ## [응용 프로그램 개발](visual-basic/developing-apps/index.md)
 
 ### [Visual Basic의 프로그래밍](visual-basic/developing-apps/programming/index.md)
-#### [컴퓨터 리소스에 액세스](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
-#### [응용 프로그램의 정보 기록](visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+#### [컴퓨터 리소스에 액세스](visual-basic/developing-apps/programming/computer-resources/index.md)
+#### [응용 프로그램의 정보 기록](visual-basic/developing-apps/programming/log-info/index.md)
 #### [사용자 데이터 액세스](visual-basic/developing-apps/programming/accessing-user-data.md)
 #### [응용 프로그램 폼 액세스](visual-basic/developing-apps/programming/accessing-application-forms.md)
 #### [응용 프로그램 웹 서비스 액세스](visual-basic/developing-apps/programming/accessing-application-web-services.md)
 ##### [방법: 비동기적으로 웹 서비스 호출](visual-basic/developing-apps/programming/how-to-call-a-web-service-asynchronously.md)
-#### [응용 프로그램 설정 액세스](visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)
+#### [응용 프로그램 설정 액세스](visual-basic/developing-apps/programming/app-settings/index.md)
 #### [드라이브, 디렉터리 및 파일 처리](visual-basic/developing-apps/programming/drives-directories-files/processing.md)
 
 ### [My를 사용한 개발](visual-basic/developing-apps/development-with-my/index.md)
@@ -463,7 +460,7 @@
 ### [데이터 액세스](visual-basic/developing-apps/accessing-data.md)
 ### [구성요소 만들기 및 사용](visual-basic/developing-apps/creating-and-using-components.md)
 
-### [인쇄 및 보고](visual-basic/developing-apps/printing/printing-and-reporting.md)
+### [인쇄 및 보고](visual-basic/developing-apps/printing/index.md)
 #### [PrintForm 구성 요소](visual-basic/developing-apps/printing/printform-component.md)
 #### [방법: 스크롤 가능 폼 인쇄](visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)
 #### [방법: 폼의 클라이언트 영역 및 비클라이언트 영역 인쇄](visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md)
@@ -472,29 +469,9 @@
 #### [PrintForm 구성 요소를 참조하는 응용 프로그램 배포](visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md)
 #### [Visual Studio 응용 프로그램에 인쇄 가능한 보고서 추가](visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md)
 
-### [Windows Forms 응용 프로그램의 기본 사항](visual-basic/developing-apps/windows-forms/windows-forms-application-basics.md)
-### [Power Packs 컨트롤](visual-basic/developing-apps/windows-forms/power-packs-controls.md)
-### [DataRepeater 컨트롤](visual-basic/developing-apps/windows-forms/datarepeater-control-visual-studio.md)
-#### [DataRepeater 컨트롤 소개](visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)
-#### [DataRepeater 컨트롤의 가상 모드](visual-basic/developing-apps/windows-forms/virtual-mode-in-the-datarepeater-control-visual-studio.md)
-#### [방법: DataRepeater 컨트롤의 바인딩된 데이터 표시](visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md)
-#### [방법: DataRepeater 컨트롤의 바인딩되지 않은 컨트롤 표시](visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md)
-#### [방법: DataRepeater 컨트롤의 레이아웃 변경](visual-basic/developing-apps/windows-forms/how-to-change-the-layout-of-a-datarepeater-control-visual-studio.md)
-#### [방법: DataRepeater 컨트롤의 모양 변경](visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md)
-#### [방법: DataRepeater 컨트롤의 항목 머리글 표시](visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md)
-#### [방법: DataRepeater 항목 추가 및 삭제 사용 안 함](visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md)
-#### [방법: DataRepeater 컨트롤의 데이터 검색](visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md)
-#### [방법: 두 DataRepeater 컨트롤을 사용하여 마스터/세부 폼 만들기](visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md)
-#### [연습: DataRepeater 컨트롤의 데이터 표시](visual-basic/developing-apps/windows-forms/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio.md)
-#### [DataRepeater 컨트롤 문제 해결](visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md)
-### [Line 및 Shape 컨트롤](visual-basic/developing-apps/windows-forms/line-and-shape-controls-visual-studio.md)
-#### [Line 및 Shape 컨트롤 소개](visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)
-#### [방법: LineShape 컨트롤로 선 그리기](visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md)
-#### [방법: OvalShape 및 RectangleShape 컨트롤을 사용하여 도형 그리기](visual-basic/developing-apps/windows-forms/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls.md)
-#### [방법: 도형 간 탭 이동 사용](visual-basic/developing-apps/windows-forms/how-to-enable-tabbing-between-shapes-visual-studio.md)
-#### [Power Packs 컨트롤을 참조하는 응용 프로그램 배포](visual-basic/developing-apps/windows-forms/deploying-applications-that-reference-power-packs-controls-visual-studio.md)
+### [Windows Forms 응용 프로그램의 기본 사항](visual-basic/developing-apps/windows-forms/index.md)
 
-### [Visual Basic에서 프로젝트 사용자 지정 및 My 확장](visual-basic/developing-apps/customizing-extending-my/customizing-projects-and-extending-my.md)
+### [Visual Basic에서 프로젝트 사용자 지정 및 My 확장](visual-basic/developing-apps/customizing-extending-my/index.md)
 #### [My 네임스페이스 확장](visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md)
 #### [사용자 지정 My 확장명 패키징 및 배포](visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)
 #### [Visual Basic 응용 프로그램 모델 확장](visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)
@@ -588,7 +565,7 @@
 #### [문자열 조작 요약](visual-basic/language-reference/keywords/string-manipulation-summary.md)
 ### [특성](visual-basic/language-reference/attributes.md)
 ### [상수 및 열거형](visual-basic/language-reference/constants-and-enumerations.md)
-### [데이터 형식 요약](visual-basic/language-reference/data-types/data-type-summary.md)
+### [데이터 형식 요약](visual-basic/language-reference/data-types/index.md)
 #### [Boolean 데이터 형식](visual-basic/language-reference/data-types/boolean-data-type.md)
 #### [Byte 데이터 형식](visual-basic/language-reference/data-types/byte-data-type.md)
 #### [Char 데이터 형식](visual-basic/language-reference/data-types/char-data-type.md)
@@ -606,7 +583,7 @@
 #### [ULong 데이터 형식](visual-basic/language-reference/data-types/ulong-data-type.md)
 #### [사용자 정의 데이터 형식](visual-basic/language-reference/data-types/user-defined-data-type.md)
 #### [UShort 데이터 형식](visual-basic/language-reference/data-types/ushort-data-type.md)
-### [지시문](visual-basic/language-reference/directives/directives.md)
+### [지시문](visual-basic/language-reference/directives/index.md)
 #### [#Const 지시문](visual-basic/language-reference/directives/const-directive.md)
 #### [#ExternalSource 지시문](visual-basic/language-reference/directives/externalsource-directive.md)
 #### [#If...Then...#Else 지시문](visual-basic/language-reference/directives/if-then-else-directives.md)
@@ -737,7 +714,7 @@
 #### [논리-비트 연산자](visual-basic/language-reference/operators/logical-bitwise-operators.md)
 #### [기타 연산자](visual-basic/language-reference/operators/miscellaneous-operators.md)
 ### [속성](visual-basic/language-reference/properties.md)
-### [쿼리](visual-basic/language-reference/queries/queries.md)
+### [쿼리](visual-basic/language-reference/queries/index.md)
 #### [Aggregate 절](visual-basic/language-reference/queries/aggregate-clause.md)
 #### [Distinct 절](visual-basic/language-reference/queries/distinct-clause.md)
 #### [Equals 절](visual-basic/language-reference/queries/equals-clause.md)
@@ -827,7 +804,7 @@
 #### [특성 목록](visual-basic/language-reference/statements/attribute-list.md)
 #### [매개 변수 목록](visual-basic/language-reference/statements/parameter-list.md)
 #### [형식 목록](visual-basic/language-reference/statements/type-list.md)
-### [XML 주석 태그](visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+### [XML 주석 태그](visual-basic/language-reference/xmldoc/index.md)
 #### [<c>](visual-basic/language-reference/xmldoc/c.md)
 #### [<code>](visual-basic/language-reference/xmldoc/code.md)
 #### [<example>](visual-basic/language-reference/xmldoc/example.md)
@@ -845,7 +822,7 @@
 #### [<summary>](visual-basic/language-reference/xmldoc/summary.md)
 #### [<typeparam>](visual-basic/language-reference/xmldoc/typeparam.md)
 #### [<value>](visual-basic/language-reference/xmldoc/value.md)
-### [XML 축 속성](visual-basic/language-reference/xml-axis/xml-axis-properties.md)
+### [XML 축 속성](visual-basic/language-reference/xml-axis/index.md)
 #### [XML Attribute 축 속성](visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
 #### [XML Child 축 속성](visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
 #### [XML Descendant 축 속성](visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)
@@ -1140,6 +1117,7 @@
 ### [기계 학습 용어](machine-learning/resources/glossary.md)
 ### [기계 학습 기본 사항](machine-learning/resources/basics.md)
 ### [기계 학습 작업](machine-learning/resources/tasks.md)
+### [데이터 변환](machine-learning/resources/transforms.md)
 
 <!-- End ML.NET Content -->
 

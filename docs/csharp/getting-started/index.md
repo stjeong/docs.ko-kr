@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
-ms.openlocfilehash: 8c9b2803819b4ffcf0edce7994b9fdbc1c6c6951
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: aa34c181073d089d137ac0ef64c85c8fe2772093
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33212631"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43398069"
 ---
-# <a name="get-started-with-c"></a>C# 시작 #
+# <a name="get-started-with-c"></a>C\# 시작
 
 이 섹션에서는 C# 및 .NET Core를 사용하여 응용 프로그램을 빠르게 빌드할 수 있는 짧고 간단한 자습서를 제공합니다. Visual Studio 2017 및 Visual Studio Code에 대한 시작 항목이 제공됩니다. 간단한 Hello World 응용 프로그램을 빌드할 수도 있고, Visual Studio 2017을 사용하는 경우에는 다른 응용 프로그램에서 사용할 수 있는 간단한 클래스 라이브러리를 빌드할 수 있습니다.
 
@@ -63,4 +63,5 @@ ms.locfileid: "33212631"
     C#을 사용하는 프로그래밍 연습 및 각 연습에 대한 간단한 설명에 대한 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목
- [Visual Studio를 사용하여 Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+
+* [Visual Studio를 사용하여 Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

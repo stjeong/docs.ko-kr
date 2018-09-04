@@ -8,11 +8,11 @@ ms.assetid: f78ec137-df0e-48c9-a7a0-5f6a1055f011
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e90857fcf02dbd0dd888b0658f3ab626bc5b11bd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43418535"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43540069"
 ---
 # <a name="dynamic-programming-in-the-net-framework"></a>.NET Framework의 동적 프로그래밍
 설명서의 이 섹션에서는 .NET Framework에서의 동적 프로그래밍에 대한 정보를 제공합니다.  

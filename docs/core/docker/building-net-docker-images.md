@@ -205,7 +205,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 ```
 
 > [!IMPORTANT]
-> Windows 컨테이너를 사용하는 경우 브라우저에서 **컨테이너 IP 주소**(http://localhost)와 반대로)로 이동해야 합니다. 다음 단계를 사용하여 컨테이너의 IP 주소를 가져올 수 있습니다.
+> Windows 컨테이너를 사용하는 경우 브라우저에서 **컨테이너 IP 주소**(http://localhost) 와 반대로)로 이동해야 합니다. 다음 단계를 사용하여 컨테이너의 IP 주소를 가져올 수 있습니다.
 
 * 다른 명령 프롬프트를 엽니다.
 * `docker ps`를 실행하여 실행 중인 컨테이너를 봅니다. "aspnetcore_sample" 컨테이너가 있어야 합니다.
