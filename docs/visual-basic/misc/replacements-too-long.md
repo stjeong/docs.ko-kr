@@ -5,11 +5,11 @@ f1_keywords:
 - vbrID746
 ms.assetid: 398ff5eb-b580-456f-8f24-b7a8318e1193
 ms.openlocfilehash: 3216ce866cae9a7f59ecfca23d92d82fdb8bc117
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43475909"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43561582"
 ---
 # <a name="replacements-too-long"></a>대체 텍스트가 너무 깁니다.
 허용된 길이를 초과하는 대체 텍스트를 지정했습니다.  
