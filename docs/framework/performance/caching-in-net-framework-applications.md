@@ -8,11 +8,11 @@ helpviewer_keywords:
 ms.assetid: c4b47ee0-4b82-4124-9bce-818088385e34
 author: tdykstra
 ms.openlocfilehash: 4d9451f99b0253d0a4de6550b64fedd7fdfeda77
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43464975"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43558036"
 ---
 # <a name="caching-in-net-framework-applications"></a>.NET Framework 응용 프로그램에서 캐싱
 캐싱을 사용하면 빠른 액세스를 위해 데이터를 메모리에 저장할 수 있습니다. 데이터에 다시 액세스할 때 응용 프로그램은 원래 소스에서 검색하는 대신 캐시에서 데이터를 가져올 수 있습니다. 이 경우 성능과 확장성이 향상됩니다. 또한 캐싱을 사용하면 데이터 소스를 일시적으로 사용할 수 없는 경우에도 데이터를 사용할 수 있습니다.  

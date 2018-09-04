@@ -2,15 +2,15 @@
 title: MSMQ 활성화
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: 4dc8cc2a3c6d9178f6507c87ae512a8929bd1380
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: a03f5783e732c4a0f3f13cf6abd7ec4803c07c8f
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33808132"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43559584"
 ---
 # <a name="msmq-activation"></a>MSMQ 활성화
-이 샘플에서는 메시지 큐에서 읽은 WAS(Windows Process Activation Service)에서 응용 프로그램을 호스트하는 방법을 보여 줍니다. 이 샘플에서는 `netMsmqBinding` 기반으로 하 고는 [양방향 통신](../../../../docs/framework/wcf/samples/two-way-communication.md) 샘플. 이 경우 서비스는 웹 호스팅 응용 프로그램이고 클라이언트는 자체 호스트되며 전송된 구매 주문의 상태를 확인하기 위해 콘솔에 출력됩니다.  
+이 샘플에서는 메시지 큐에서 읽은 WAS(Windows Process Activation Service)에서 응용 프로그램을 호스트하는 방법을 보여 줍니다. 이 샘플에서는 합니다 `netMsmqBinding` 기반으로 합니다 [양방향 통신](../../../../docs/framework/wcf/samples/two-way-communication.md) 샘플입니다. 이 경우 서비스는 웹 호스팅 응용 프로그램이고 클라이언트는 자체 호스트되며 전송된 구매 주문의 상태를 확인하기 위해 콘솔에 출력됩니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -20,17 +20,17 @@ ms.locfileid: "33808132"
 >   
 >  \<InstallDrive>:\WF_WCF_Samples  
 >   
->  이 디렉터리가 이동 Windows Communication Foundation (WCF) 하이퍼링크에 "http://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank" 및 Windows WF (Workflow Foundation) 샘플에 대 한 [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] 모든 WCF를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면 Windows Communication Foundation (WCF) 하이퍼링크를 이동 "https://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank" 및 Windows WF (Workflow Foundation) 샘플에 대 한 [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] 모든 WCF를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플입니다. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.  
   
- [!INCLUDE[lserver](../../../../includes/lserver-md.md)]용의 새 프로세스 활성화 메커니즘인 WAS(Windows Process Activation Service)는 이전에 HTTP 기반 응용 프로그램에만 사용할 수 있었던 IIS와 같은 기능을 HTTP가 아닌 프로토콜을 사용하는 응용 프로그램에 제공합니다. Windows Communication Foundation (WCF) 수신기 어댑터 인터페이스를 사용 하 여 TCP, 명명 된 파이프, MSMQ 등과 같은 WCF에서 지 원하는 HTTP가 아닌 프로토콜을 통해 수신 되는 활성화 요청을 통신 합니다. HTTP가 아닌 프로토콜을 통해 요청을 수신하는 기능은 SMSvcHost.exe에서 실행되는 관리되는 Windows 서비스에 의해 호스트됩니다.  
+ [!INCLUDE[lserver](../../../../includes/lserver-md.md)]용의 새 프로세스 활성화 메커니즘인 WAS(Windows Process Activation Service)는 이전에 HTTP 기반 응용 프로그램에만 사용할 수 있었던 IIS와 같은 기능을 HTTP가 아닌 프로토콜을 사용하는 응용 프로그램에 제공합니다. Windows Communication Foundation (WCF) TCP, 명명 된 파이프, MSMQ 등과 같은 WCF에서 지 원하는 HTTP가 아닌 프로토콜을 통해 수신 되는 활성화 요청을 통신 하는 수신기 어댑터 인터페이스를 사용 합니다. HTTP가 아닌 프로토콜을 통해 요청을 수신하는 기능은 SMSvcHost.exe에서 실행되는 관리되는 Windows 서비스에 의해 호스트됩니다.  
   
  Net.Msmq Listener Adapter 서비스(NetMsmqActivator)는 큐의 메시지에 기초하여 큐에 대기 중인 응용 프로그램을 활성화합니다.  
   
  클라이언트는 트랜잭션의 범위 내에서 서비스에 구매 주문을 보냅니다. 서비스는 트랜잭션의 주문을 수신하고 처리합니다. 그런 다음 서비스는 주문 상태와 함께 클라이언트를 콜백합니다. 양방향 통신을 쉽게 수행하기 위해 클라이언트와 서비스는 둘 다 큐를 사용하여 구매 주문과 주문 상태를 큐에 삽입합니다.  
   
- 서비스 계약 `IOrderProcessor`는 큐를 사용하는 단방향 서비스 작업을 정의합니다. 이 서비스 작업은 회신 끝점을 사용하여 주문 상태를 클라이언트에게 보냅니다. 회신 끝점의 주소는 주문 상태를 클라이언트에게 다시 보내는 데 사용되는 큐의 URI입니다. 주문 처리 응용 프로그램에서 이 계약을 구현합니다.  
+ 서비스 계약 `IOrderProcessor`는 큐를 사용하는 단방향 서비스 작업을 정의합니다. 이 서비스 작업은 회신 끝점을 사용하여 주문 상태를 클라이언트에게 보냅니다. 회신 엔드포인트의 주소는 주문 상태를 클라이언트에게 다시 보내는 데 사용되는 큐의 URI입니다. 주문 처리 응용 프로그램에서 이 계약을 구현합니다.  
   
 ```csharp  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
@@ -81,10 +81,10 @@ public class OrderProcessorService : IOrderProcessor
   
  사용할 클라이언트 바인딩은 구성 파일을 사용하여 지정됩니다.  
   
- MSMQ 큐 이름은 구성 파일의 appSettings 섹션에 지정됩니다. 서비스의 끝점은 구성 파일의 System.serviceModel 섹션에 정의됩니다.  
+ MSMQ 큐 이름은 구성 파일의 appSettings 섹션에 지정됩니다. 서비스의 엔드포인트는 구성 파일의 System.serviceModel 섹션에 정의됩니다.  
   
 > [!NOTE]
->  MSMQ 큐 이름 및 끝점 주소는 약간 다른 주소 지정 규칙을 사용합니다. MSMQ 큐 이름은 로컬 컴퓨터에 점(.)을, 그 경로에는 백슬래시 구분 기호를 사용합니다. WCF 끝점 주소에서는 net.msmq 지정: 체계를 "localhost"를 사용 하 여 로컬 컴퓨터에 대 한 및 그 경로에 슬래시를 사용 합니다. 원격 컴퓨터에서 호스트되는 큐에서 읽으려면 "." 및 "localhost"를 원격 컴퓨터 이름으로 바꿉니다.  
+>  MSMQ 큐 이름 및 끝점 주소는 약간 다른 주소 지정 규칙을 사용합니다. MSMQ 큐 이름은 로컬 컴퓨터에 점(.)을, 그 경로에는 백슬래시 구분 기호를 사용합니다. WCF 끝점 주소에서는 net.msmq 지정: 체계를 "localhost"를 사용 하 여 로컬 컴퓨터 및 해당 경로에 슬래시를 사용 합니다. 원격 컴퓨터에서 호스트되는 큐에서 읽으려면 "." 및 "localhost"를 원격 컴퓨터 이름으로 바꿉니다.  
   
  클래스 이름을 가진 .svc 파일은 WAS에서 서비스 코드를 호스트하는 데 사용됩니다.  
   
@@ -216,7 +216,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 1.  WAS 활성화에 필요한 [!INCLUDE[iisver](../../../../includes/iisver-md.md)]이 설치되어 있는지 확인합니다.  
   
-2.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다. 또한 WCF NON-HTTP activation 구성 요소를 설치 해야 합니다.  
+2.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다. 또한 WCF NON-HTTP activation 구성 요소를 설치 해야 합니다.  
   
     1.  **시작** 메뉴 선택 **제어판**합니다.  
   
@@ -224,9 +224,9 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     3.  클릭 **Windows 기능 사용 / 사용 해제**합니다.  
   
-    4.  아래 **기능 요약**, 클릭 **기능 추가**합니다.  
+    4.  아래 **기능 요약**, 클릭 **추가 기능**합니다.  
   
-    5.  확장 된 **Microsoft.NET Framework 3.0** 노드와 검사는 **Windows Communication Foundation 비-HTTP 활성화** 기능입니다.  
+    5.  확장을 **Microsoft.NET Framework 3.0** 노드와 확인 합니다 **Windows Communication Foundation 비 HTTP 활성화** 기능입니다.  
   
 3.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
@@ -234,15 +234,15 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 5.  MSMQ 활성화 서비스는 기본적으로 네트워크 서비스로 실행됩니다. 따라서 응용 프로그램을 활성화하는 데 사용되는 큐는 네트워크 서비스에 대한 수신 및 피킹 권한이 있어야 합니다. 다음과 같이 메시지 큐 MMC를 사용하여 이러한 권한을 추가할 수 있습니다.  
   
-    1.  **시작** 메뉴를 클릭 하 여 **실행**, 다음 입력 `Compmgmt.msc` ENTER 키를 누릅니다.  
+    1.  **시작** 메뉴에서 클릭 **실행**를 입력 한 다음 `Compmgmt.msc` ENTER 키를 누릅니다.  
   
     2.  아래 **서비스 및 응용 프로그램**를 확장 하 고 **메시지 큐**합니다.  
   
     3.  클릭 **개인 큐**합니다.  
   
-    4.  큐 (servicemodelsamples/Service.svc)를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  
+    4.  선택한 큐 (servicemodelsamples/Service.svc)를 마우스 오른쪽 단추로 클릭 **속성**합니다.  
   
-    5.  에 **보안** 탭을 클릭 **추가** 피크 (peek)를 지정 하 고 권한을 네트워크 서비스에 수신 하 고 있습니다.  
+    5.  에 **보안** 탭을 클릭 **추가** 미리 보기를 제공 하 고 권한을 네트워크 서비스에 수신 합니다.  
   
 6.  MSMQ 활성화를 지원하도록 WAS(Windows Process Activation Service)를 구성합니다.  
   
@@ -269,11 +269,11 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
         > [!NOTE]
         >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다.  
   
-         이 명령은 /servicemodelsamples 응용 프로그램에 사용 하 여 액세스를 활성화 http://localhost/servicemodelsamples 및 net.msmq://localhost/servicemodelsamples 합니다.  
+         이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램을 사용 하 여 액세스할 수에 http://localhost/servicemodelsamples 및 net.msmq://localhost/servicemodelsamples 합니다.  
   
-7.  아직 설정하지 않은 경우 MSMQ 활성화 서비스를 사용하도록 설정합니다. **시작** 메뉴를 클릭 하 여 **실행**, 유형과 `Services.msc`합니다. 검색에 대 한 서비스 목록에서 **Net.Msmq Listener Adapter**합니다. 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다. 설정의 **시작 유형** 를 **자동**, 클릭 **적용** 클릭는 **시작** 단추입니다. 이 단계는 Net.Msmq Listener Adapter 서비스를 처음 사용하기 전에 한 번만 수행해야 합니다.  
+7.  아직 설정하지 않은 경우 MSMQ 활성화 서비스를 사용하도록 설정합니다. **시작** 메뉴에서 클릭 **실행**에서 형식과 `Services.msc`. 에 대 한 서비스 목록을 검색 합니다 **Net.Msmq Listener Adapter**합니다. 마우스 오른쪽 단추로 클릭 **속성**합니다. 설정 합니다 **시작 유형** 를 **자동**, 클릭 **적용** 클릭 합니다 **시작** 단추. 이 단계는 Net.Msmq Listener Adapter 서비스를 처음 사용하기 전에 한 번만 수행해야 합니다.  
   
-8.  지침에 따라 단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다. 또한 구매 주문 전송 시에 큐의 URI에서 컴퓨터 이름이 반영되도록 구매 주문을 전송하는 클라이언트에서 코드를 변경합니다. 다음 코드를 사용합니다.  
+8.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다. 또한 구매 주문 전송 시에 큐의 URI에서 컴퓨터 이름이 반영되도록 구매 주문을 전송하는 클라이언트에서 코드를 변경합니다. 다음 코드를 사용합니다.  
   
     ```  
     client.SubmitPurchaseOrder(po, "net.msmq://localhost/private/ServiceModelSamples/OrderStatus");  
@@ -331,7 +331,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  Inetmgr.exe를 실행합니다.  
   
-    2.  아래 **응용 프로그램 풀**를 마우스 오른쪽 단추로 클릭는 **AppPool** (일반적으로 **DefaultAppPool**) 선택 하 고 **응용 프로그램 풀 기본값 설정...** .  
+    2.  아래 **응용 프로그램 풀**를 마우스 오른쪽 단추로 클릭 합니다 **AppPool** (일반적으로 **DefaultAppPool**) 선택한 **응용 프로그램 풀 기본값 설정...** .  
   
     3.  특정 사용자 계정을 사용하도록 ID 속성을 변경합니다.  
   
@@ -339,9 +339,9 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  Services.msc를 실행합니다.  
   
-    2.  마우스 오른쪽 단추로 클릭는 **Net.MsmqListener Adapter**, 선택 **속성**합니다.  
+    2.  마우스 오른쪽 단추로 클릭 합니다 **Net.MsmqListener Adapter**, 선택한 **속성**합니다.  
   
-4.  계정을 변경는 **로그온** 탭 합니다.  
+4.  계정을 변경 합니다 **로그온** 탭 합니다.  
   
 5.  작업 그룹에서 서비스는 또한 제한되지 않은 토큰을 사용하여 실행되어야 합니다. 이렇게 하려면 명령 창에서 다음을 실행합니다.  
   
@@ -350,4 +350,4 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
     ```  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 호스팅 및 지 속성 샘플](http://go.microsoft.com/fwlink/?LinkId=193961)
+ [AppFabric 호스팅 및 지 속성 샘플](https://go.microsoft.com/fwlink/?LinkId=193961)

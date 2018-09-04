@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: cc17dd47-b9ad-451c-a362-e36e0aac7ba0
-ms.openlocfilehash: 292fd92ebab9d1af2a2623ab55c3324fab2a69dc
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: a45ba48408fd98c89db8664aec679a437ce8af24
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754521"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43559923"
 ---
 # <a name="how-to-call-operations-asynchronously-using-a-channel-factory"></a>방법: 채널 팩터리를 사용하여 비동기로 작업 호출
 이 항목에서는 <xref:System.ServiceModel.ChannelFactory%601> 기반 클라이언트 응용 프로그램을 사용하여 클라이언트에서 서비스 작업에 비동기적으로 액세스하는 방법에 대해 설명합니다. 서비스를 호출하기 위해 <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> 개체를 사용하는 경우 이벤트 구동 비동기 호출 모델을 사용할 수 있습니다. 자세한 내용은 [방법: 비동기적 서비스 작업 호출](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)합니다. 이벤트 기반 비동기 호출 모델에 대 한 자세한 내용은 참조 하세요. [이벤트 기반 비동기 패턴 (EAP)](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md).)  
@@ -41,11 +41,11 @@ ms.locfileid: "42754521"
   
      콜백 함수가 실행될 때 클라이언트는 결과를 검색하기 위해 `End<operation>`(예: `EndAdd`)을 호출합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이전 절차에 사용된 클라이언트 코드와 함께 사용되는 서비스는 다음 코드에서와 같이 `ICalculator` 인터페이스를 구현합니다. 서비스 쪽에는 `Add` 및 `Subtract` 계약의 작업은 동기적으로 호출 런타임 Windows Communication Foundation (WCF)에서 이전 클라이언트 단계는 클라이언트에서 비동기적으로 호출 하는 경우에 합니다. 클라이언트가 `Multiply` 및 `Divide` 작업을 비동기적으로 호출하더라도 서비스 쪽에서는 이 작업을 사용하여 비동기적으로 서비스를 호출합니다. 다음 예제에서는 <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> 속성을 `true`로 설정합니다. 이 속성 설정을 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 비동기 패턴 구현과 함께 사용하면 런타임에서 작업이 비동기적으로 호출됩니다.  
   
  [!code-csharp[C_How_To_CF_Async#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_how_to_cf_async/cs/service.cs#4)]
  [!code-vb[C_How_To_CF_Async#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_how_to_cf_async/vb/service.vb#4)]  
   
 ## <a name="see-also"></a>참고 항목  
- [서비스 계약: Asynchronous 샘플](http://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7)
+ [서비스 계약: Asynchronous 샘플](https://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7)

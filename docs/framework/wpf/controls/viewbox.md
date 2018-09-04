@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Viewbox control [WPF]
 - scaling elements [WPF], Viewbox control
 ms.assetid: 00fc0a16-1078-4d55-9849-ffaf7da96531
-ms.openlocfilehash: 28b92e903d954312374d8e4041c4fdeb9ed375d6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fe7184df5d889a93f2274dfd20669701947f0965
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33554367"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43557852"
 ---
 # <a name="viewbox"></a>Viewbox
-<xref:System.Windows.Controls.Viewbox> 컨트롤은 자식 요소를 확장 하는 데 사용 됩니다.  
+<xref:System.Windows.Controls.Viewbox> 컨트롤은 자식 요소를 확장 하는 데 사용 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Viewbox의 콘텐츠에 Stretch 속성 적용](../../../../docs/framework/wpf/controls/how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md)  
@@ -28,4 +28,4 @@ ms.locfileid: "33554367"
  <xref:System.Windows.Controls.Image>  
   
 ## <a name="see-also"></a>참고 항목  
- [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)
+ [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)

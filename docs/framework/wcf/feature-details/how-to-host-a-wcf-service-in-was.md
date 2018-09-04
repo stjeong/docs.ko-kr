@@ -2,22 +2,22 @@
 title: '방법: WAS에서 WCF 서비스 호스팅'
 ms.date: 03/30/2017
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
-ms.openlocfilehash: 7050d866233b248c7c8f9f41337ce451b5510c30
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fd48957f7f8410b4b0df39fe125c35e4fc98cb8e
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33492670"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43560297"
 ---
 # <a name="how-to-host-a-wcf-service-in-was"></a>방법: WAS에서 WCF 서비스 호스팅
-Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요한 기본 단계는이 항목 윤곽선 호스팅 Windows Communication Foundation (WCF) 서비스 합니다. WAS는 HTTP가 아닌 전송 프로토콜에서 사용하는 IIS(Internet Information Services) 기능의 일반화인 새 프로세스 활성화 서비스입니다. WCF는 수신기 어댑터 인터페이스를 사용 하 여 명명 된 파이프, 메시지 큐 TCP와 같이 WCF에서 지 원하는 HTTP가 아닌 프로토콜을 통해 수신 되는 활성화 요청을 통신 합니다.  
+호스 티 드 Windows Communication Foundation (WCF) 서비스를이 항목에서는 Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요한 기본 단계를 간략하게 설명 합니다. WAS는 HTTP가 아닌 전송 프로토콜에서 사용하는 IIS(Internet Information Services) 기능의 일반화인 새 프로세스 활성화 서비스입니다. WCF는 TCP, 명명 된 파이프 및 메시지 큐와 같은 WCF에서 지 원하는 HTTP가 아닌 프로토콜을 통해 수신 되는 활성화 요청을 통신 하는 수신기 어댑터 인터페이스를 사용 합니다.  
   
- 이 호스팅 옵션을 사용하려면 WAS 활성화 구성 요소를 적절히 설치하여 구성해야 하지만 호스팅 코드를 응용 프로그램의 일부로 작성하지 않아도 됩니다. 설치 및 WAS를 구성 하는 방법에 대 한 자세한 내용은 참조 [하는 방법: WCF Activation 구성 요소를 구성 하 고 설치](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)합니다.  
+ 이 호스팅 옵션을 사용하려면 WAS 활성화 구성 요소를 적절히 설치하여 구성해야 하지만 호스팅 코드를 응용 프로그램의 일부로 작성하지 않아도 됩니다. WAS 설치 및 구성 하는 방법에 대 한 자세한 내용은 참조 하십시오 [방법: 설치 및 WCF Activation 구성 요소 구성](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)합니다.  
   
 > [!WARNING]
 >  웹 서버의 요청 처리 파이프라인이 클래식 모드로 설정된 경우 WAS 활성화가 지원되지 않습니다. WAS 활성화를 사용할 경우 웹 서버의 요청 처리 파이프라인이 통합 모드로 설정되어 있어야 합니다.  
   
- WCF 서비스는 WAS에서 호스트 되는 경우 일반적으로 표준 바인딩이 사용 됩니다. 그러나 WAS에서 호스팅되는 서비스를 구성하기 위해 <xref:System.ServiceModel.NetTcpBinding> 및 <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하는 경우 제약 조건을 충족해야 합니다. 서로 다른 끝점이 동일한 전송을 사용하는 경우 바인딩 설정은 다음 7개의 속성과 일치해야 합니다.  
+ WCF 서비스를 WAS에서 호스트 되는 표준 바인딩 일반적인 방법으로 사용 됩니다. 그러나 WAS에서 호스팅되는 서비스를 구성하기 위해 <xref:System.ServiceModel.NetTcpBinding> 및 <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하는 경우 제약 조건을 충족해야 합니다. 서로 다른 엔드포인트가 동일한 전송을 사용하는 경우 바인딩 설정은 다음 7개의 속성과 일치해야 합니다.  
   
 -   ConnectionBufferSize  
   
@@ -33,9 +33,9 @@ Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요�
   
 -   ConnectionPoolSettings.MaxOutboundConnectionsPerEndpoint  
   
- 그렇지 않으면 첫 번째로 초기화된 끝점이 항상 해당 속성 값을 결정하고 나중에 추가된 끝점이 이러한 설정과 일치하지 않을 경우 <xref:System.ServiceModel.ServiceActivationException>을 throw합니다.  
+ 그렇지 않으면 첫 번째로 초기화된 엔드포인트가 항상 해당 속성 값을 결정하고 나중에 추가된 엔드포인트가 이러한 설정과 일치하지 않을 경우 <xref:System.ServiceModel.ServiceActivationException>을 throw합니다.  
   
- 이 예의 원본 사본을 참조 [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)합니다.  
+ 이 예제의 소스 복사에 대해서 [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)합니다.  
   
 ### <a name="to-create-a-basic-service-hosted-by-was"></a>WAS에서 호스팅되는 기본 서비스를 만들려면  
   
@@ -47,7 +47,7 @@ Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요�
   
      [!code-csharp[C_HowTo_HostInWAS#1122](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinwas/cs/service.cs#1122)]  
   
-3.  Web.config 파일을 만들어 <xref:System.ServiceModel.NetTcpBinding> 끝점에서 사용할 `CalculatorService` 바인딩을 정의합니다.  
+3.  Web.config 파일을 만들어 <xref:System.ServiceModel.NetTcpBinding> 엔드포인트에서 사용할 `CalculatorService` 바인딩을 정의합니다.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -74,7 +74,7 @@ Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요�
   
 ### <a name="to-create-a-client-to-use-the-service"></a>서비스를 사용할 클라이언트를 만들려면  
   
-1.  사용 하 여 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 에서 명령줄 서비스 메타 데이터에서 코드를 생성 합니다.  
+1.  사용 하 여 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 서비스 메타 데이터에서 코드를 생성 하려면 명령줄에서.  
   
     ```  
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
@@ -100,4 +100,4 @@ Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요�
   
 ## <a name="see-also"></a>참고 항목  
  [TCP 활성화](../../../../docs/framework/wcf/samples/tcp-activation.md)  
- [Windows Server App Fabric 호스팅 기능](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

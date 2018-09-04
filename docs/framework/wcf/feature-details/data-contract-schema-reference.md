@@ -4,18 +4,18 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: 06bc79e059300d448ababa87974b590f54f7984c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5eb4caee5c2057e112ed4f5a88f46fa82b1f57cc
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33496801"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43554695"
 ---
 # <a name="data-contract-schema-reference"></a>데이터 계약 스키마 참조
 이 항목에서는 XML serialization에 대한 CLR(공용 언어 런타임) 형식을 설명하기 위해 <xref:System.Runtime.Serialization.DataContractSerializer> 에서 사용하는 XSD(XML 스키마) 하위 집합에 대해 설명합니다.  
   
 ## <a name="datacontractserializer-mappings"></a>DataContractSerializer 매핑  
- `DataContractSerializer` 메타 데이터 끝점을 사용 하 여 Windows Communication Foundation (WCF) 서비스에서 메타 데이터를 내보낼 때 CLR 형식을 XSD에 매핑합니다 또는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 자세한 내용은 참조 [데이터 계약 Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md)합니다.  
+ 합니다 `DataContractSerializer` 메타 데이터 끝점을 사용 하는 Windows Communication Foundation (WCF) 서비스에서 메타 데이터를 내보낼 때 CLR 형식을 XSD에 매핑합니다 또는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 자세한 내용은 [데이터 계약 Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md)합니다.  
   
  또한 WSDL(웹 서비스 기술 언어) 또는 XSD 문서에 액세스하여 서비스 또는 클라이언트에 대한 데이터 계약을 생성하기 위해 Svcutil.exe를 사용하는 경우 `DataContractSerializer` 는 XSD를 CLR 형식에 매핑합니다.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "33496801"
   
 ## <a name="general-information"></a>일반 정보  
   
--   스키마 네임스페이스에 대해서는 [XML Schema](http://go.microsoft.com/fwlink/?LinkId=95475)에서 설명합니다. 이 문서에서는 접두사 "xs"가 사용됩니다.  
+-   스키마 네임 스페이스에 설명 되어 [XML 스키마](https://go.microsoft.com/fwlink/?LinkId=95475)합니다. 이 문서에서는 접두사 "xs"가 사용됩니다.  
   
 -   스키마 네임스페이스가 아닌 네임스페이스를 가진 특성은 무시됩니다.  
   
@@ -44,10 +44,10 @@ ms.locfileid: "33496801"
 |---------------|------------------|  
 |`attributeFormDefault`|무시됩니다.|  
 |`blockDefault`|무시됩니다.|  
-|`elementFormDefault`|정규화되어야 합니다. `DataContractSerializer`에서 스키마를 지원하려면 모든 요소가 정규화되어야 합니다. 설정 하거나이 수행할 수 있습니다 xs:schema/@elementFormDefault 을 "qualified" 또는 설정 하 여 xs:element/@form 각 개별 요소 선언 시 "qualified"로 합니다.|  
+|`elementFormDefault`|정규화되어야 합니다. `DataContractSerializer`에서 스키마를 지원하려면 모든 요소가 정규화되어야 합니다. 설정 하거나이 작업을 수행할 수 있습니다 xs:schema/@elementFormDefault 을 "qualified" 또는 설정 하 여 xs:element/@form 각 개별 요소 선언에 "qualified"로 합니다.|  
 |`finalDefault`|무시됩니다.|  
 |`Id`|무시됩니다.|  
-|`targetNamespace`|지원되며 데이터 계약 네임스페이스에 매핑됩니다. 이 특성을 지정하지 않으면 빈 네임스페이스가 사용됩니다. 예약된 된 네임 스페이스 일 수 없습니다 http://schemas.microsoft.com/2003/10/Serialization/합니다.|  
+|`targetNamespace`|지원되며 데이터 계약 네임스페이스에 매핑됩니다. 이 특성을 지정하지 않으면 빈 네임스페이스가 사용됩니다. 예약된 된 네임 스페이스를 사용할 수 없습니다. http://schemas.microsoft.com/2003/10/Serialization/합니다.|  
 |`version`|무시됩니다.|  
   
 ### <a name="xsschema-contents"></a>\<xs: schema >: 콘텐츠  
@@ -68,7 +68,7 @@ ms.locfileid: "33496801"
 ## <a name="complex-types--xscomplextype"></a>복합 형식 – \<xs:complexType >  
   
 ### <a name="general-information"></a>일반 정보  
- 각 복합 형식 \<xs:complexType >는 데이터 계약에 매핑됩니다.  
+ 각 복합 형식 \<xs:complexType > 데이터 계약에 매핑됩니다.  
   
 ### <a name="xscomplextype-attributes"></a>\<xs:complexType >: 특성  
   
@@ -92,11 +92,11 @@ ms.locfileid: "33496801"
 |`choice`|사용할 수 없음|  
 |`sequence`|지원되며 데이터 계약의 데이터 멤버에 매핑됩니다.|  
 |`attribute`|한 가지 예외를 포함하여 use="prohibited"인 경우에도 사용할 수 없습니다. 표준 Serialization 스키마 네임스페이스에서 선택적 특성만 지원됩니다. 이러한 특성은 데이터 계약 프로그래밍 모델의 데이터 멤버에 매핑되지 않습니다. 현재 이러한 하나의 특성만 의미가 있으며, 여기에 대해서는 ISerializable 단원에서 설명합니다. 다른 특성은 모두 무시됩니다.|  
-|`attributeGroup`|사용할 수 없습니다. WCF v1 릴리스에서 `DataContractSerializer` 의 존재를 무시 `attributeGroup` 내 `xs:complexType`합니다.|  
+|`attributeGroup`|사용할 수 없습니다. WCF v1 릴리스에서 `DataContractSerializer` 존재를 무시 `attributeGroup` 내에서 `xs:complexType`합니다.|  
 |`anyAttribute`|사용할 수 없습니다.|  
 |(비어 있음)|데이터 멤버 없이 데이터 계약에 매핑됩니다.|  
   
-### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence > 복합 유형에 서: 특성  
+### <a name="xssequence-in-a-complex-type-attributes"></a>\<나타나는 > 복합 유형에: 특성  
   
 |특성|스키마|  
 |---------------|------------|  
@@ -104,7 +104,7 @@ ms.locfileid: "33496801"
 |`maxOccurs`|1이어야 합니다(기본값).|  
 |`minOccurs`|1이어야 합니다(기본값).|  
   
-### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence > 복합 유형에 서: 콘텐츠  
+### <a name="xssequence-in-a-complex-type-contents"></a>\<나타나는 > 복합 유형에: 콘텐츠  
   
 |목차|스키마|  
 |--------------|------------|  
@@ -126,7 +126,7 @@ ms.locfileid: "33496801"
   
 -   이 요소는 `<xs:schema>` 내에서 GED(전역 요소 선언)로 발생할 수 있습니다.  
   
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs: element > maxOccurs = 1 내는 \<xs:sequence > (데이터 멤버)  
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs: element > maxoccurs=1 내는 \<나타나는 > (데이터 멤버)  
   
 |특성|스키마|  
 |---------------|------------|  
@@ -142,7 +142,7 @@ ms.locfileid: "33496801"
 |`minOccurs`|데이터 멤버의 <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 속성에 매핑됩니다.`IsRequired` 가 1인 경우 `minOccurs` 는 true입니다.|  
 |`nillable`|형식 매핑에 영향을 줍니다. 형식/기본 매핑을 참조하십시오.|  
   
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs: element > maxoccurs > 내에서 1는 \<xs:sequence > (컬렉션)  
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs: element > maxOccurs를 사용 하 여 > 내에서 1을 \<나타나는 > (컬렉션)  
   
 -   <xref:System.Runtime.Serialization.CollectionDataContractAttribute>에 매핑됩니다.  
   
@@ -166,7 +166,7 @@ ms.locfileid: "33496801"
 |`minOccurs`|무시됩니다.|  
 |`nillable`|형식 매핑에 영향을 줍니다. 이 특성은 사전 컬렉션에서 무시됩니다.|  
   
-### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs: element > 내에서 한 \<xs: schema > 전역 요소 선언  
+### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs: element > 내는 \<xs: schema > 전역 요소 선언  
   
 -   스키마의 형식과 동일한 이름 및 네임스페이스가 있거나 익명 형식을 정의하는 GED(전역 요소 선언)가 형식과 연결된 것으로 간주합니다.  
   
@@ -200,7 +200,7 @@ ms.locfileid: "33496801"
 |`keyref`|무시됩니다.|  
 |(비어 있음)|지원됩니다.|  
   
- \* 사용 하는 경우는 `simpleType` 및 `complexType,` 때문에 명명 된 데이터 계약이 요소 이름에서 파생 된 생성 된 이름으로 생성 되 고 익명 데이터 계약이 없는 없다는 점을 제외 하면 익명 형식에 대 한 매핑을 익명이 아닌 형식 구문과 동일 합니다. 다음 목록에는 익명 형식에 대한 규칙이 포함되어 있습니다.  
+ \* 사용 하는 경우는 `simpleType` 고 `complexType,` 요소 이름에서 파생 된 생성 된 이름을 사용 하 여 명명 된 데이터 계약이 작성 되 고 익명 데이터 계약이 없는 없다는 점을 제외 하면 익명 형식에 대 한 매핑을 익명이 아닌 형식에서와 동일 합니다. 다음 목록에는 익명 형식에 대한 규칙이 포함되어 있습니다.  
   
 -   WCF 구현 세부 정보: 경우는 `xs:element` 이름에 마침표가 없는, 익명 형식은 외부 데이터 계약 형식의 내부 형식에 매핑됩니다. 이름에 마침표가 있는 경우 결과 데이터 계약 형식은 내부 형식이 아닌 독립적입니다.  
   
@@ -241,7 +241,7 @@ ms.locfileid: "33496801"
 |`base`|지원되는 단순 형식 또는 `xs:anyType`이어야 합니다.|  
 |`id`|무시됩니다.|  
   
-### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs: restriction > 다른 모든 경우에 대 한: 콘텐츠  
+### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs: restriction > 다른 모든 사례: 콘텐츠  
   
 |목차|스키마|  
 |--------------|------------|  
@@ -332,14 +332,14 @@ public enum MyEnum
 ### <a name="xslist"></a>\<xs:list>  
  `DataContractSerializer` 는 `System.FlagsAttribute` 로 표시된 열거형 형식을 `xs:list` 에서 파생된 `xs:string`에 매핑합니다. 다른 `xs:list` 변형은 지원되지 않습니다.  
   
-### <a name="xslist-attributes"></a>\<: list >: 특성  
+### <a name="xslist-attributes"></a>\<xs: list >: 특성  
   
 |특성|스키마|  
 |---------------|------------|  
 |`itemType`|사용할 수 없습니다.|  
 |`id`|무시됩니다.|  
   
-### <a name="xslist-contents"></a>\<: list >: 콘텐츠  
+### <a name="xslist-contents"></a>\<xs: list >: 콘텐츠  
   
 |목차|스키마|  
 |--------------|------------|  
@@ -524,7 +524,7 @@ public class Employee : Person
 |`positiveInteger`|<xref:System.Int64>.|  
   
 ## <a name="iserializable-types-mapping"></a>ISerializable 형식 매핑  
- [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 은 `ISerializable` 버전 1.0에서 지속성이나 데이터 전송을 위해 개체를 serialize하는 일반 메커니즘으로 새로 추가되었습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 을 구현하고 응용 프로그램 간에 전달할 수 있는 다양한 `ISerializable` 형식이 있습니다. `DataContractSerializer` 는 기본적으로 `ISerializable` 클래스에 대한 지원을 제공합니다. `DataContractSerializer` 는 형식의 QName(정규화된 이름)에 의해서만 달라지는 효율적인 속성 컬렉션인 `ISerializable` 구현 스키마 형식을 매핑합니다. 예를 들어는 `DataContractSerializer` 매핑합니다 <xref:System.Exception> 에서 다음 XSD 형식에는 http://schemas.datacontract.org/2004/07/System 네임 스페이스입니다.  
+ [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 은 `ISerializable` 버전 1.0에서 지속성이나 데이터 전송을 위해 개체를 serialize하는 일반 메커니즘으로 새로 추가되었습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 을 구현하고 응용 프로그램 간에 전달할 수 있는 다양한 `ISerializable` 형식이 있습니다. `DataContractSerializer` 는 기본적으로 `ISerializable` 클래스에 대한 지원을 제공합니다. `DataContractSerializer` 는 형식의 QName(정규화된 이름)에 의해서만 달라지는 효율적인 속성 컬렉션인 `ISerializable` 구현 스키마 형식을 매핑합니다. 예를 들어, 합니다 `DataContractSerializer` 매핑합니다 <xref:System.Exception> 된 다음 XSD 형식에 http://schemas.datacontract.org/2004/07/System 네임 스페이스입니다.  
   
 ```xml  
 <xs:complexType name="Exception">  
@@ -536,7 +536,7 @@ public class Employee : Person
 </xs:complexType>  
 ```  
   
- 데이터 계약 Serialization 스키마에서 선언한 선택적 특성 `ser:FactoryType` 은 형식을 deserialize할 수 있는 팩터리 클래스를 참조합니다. 팩터리 클래스는 사용 중인 `DataContractSerializer` 인스턴스의 알려진 형식 컬렉션의 일부여야 합니다. 알려진된 형식에 대 한 자세한 내용은 참조 [데이터 계약 알려진 형식을](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)합니다.  
+ 데이터 계약 Serialization 스키마에서 선언한 선택적 특성 `ser:FactoryType` 은 형식을 deserialize할 수 있는 팩터리 클래스를 참조합니다. 팩터리 클래스는 사용 중인 `DataContractSerializer` 인스턴스의 알려진 형식 컬렉션의 일부여야 합니다. 알려진된 형식에 대 한 자세한 내용은 참조 하세요. [데이터 계약 알려진 형식을](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)합니다.  
   
 ## <a name="datacontract-serialization-schema"></a>DataContract Serialization 스키마  
  `DataContractSerializer` 에서 내보낸 여러 스키마는 다음과 같은 특별한 데이터 계약 Serialization 네임스페이스의 형식, 요소 및 특성을 사용합니다.  

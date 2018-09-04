@@ -3,11 +3,11 @@ title: 서비스 디버그 동작
 ms.date: 03/30/2017
 ms.assetid: 9d8fd3fb-dc39-427a-8235-336a7e7162ba
 ms.openlocfilehash: b87911426b6d4edf8a6f9b0172f4872fac7b9b6f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43465553"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555099"
 ---
 # <a name="service-debug-behavior"></a>서비스 디버그 동작
 이 샘플에서는 서비스 디버그 동작 설정을 구성하는 방법을 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)를 구현 하는 `ICalculator` 서비스 계약입니다. 이 샘플에서는 구성 파일에 서비스 디버그 동작을 명시적으로 정의합니다. 또한 코드에서 명령적으로 정의할 수 있습니다.  

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - controls [Windows Forms], adding
 ms.assetid: 2af86001-9d62-4154-87fb-66db2c3cd9fd
 ms.openlocfilehash: 1b803a93f865eaa4db6751187213c4bb01d2a5ee
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43422551"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43557733"
 ---
 # <a name="how-to-add-controls-to-windows-forms"></a>방법: Windows Forms에 컨트롤 추가
 대부분의 폼은 사용자 인터페이스 (UI)를 정의 하도록 폼의 화면에 컨트롤을 추가 하 여 설계 되었습니다. A *제어* 정보를 표시 하거나 사용자 입력을 허용 하는 데 양식의 구성 요소입니다. 컨트롤에 대 한 자세한 내용은 참조 하세요. [Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/index.md)합니다.  

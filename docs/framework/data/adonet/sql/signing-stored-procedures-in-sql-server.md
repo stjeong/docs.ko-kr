@@ -2,12 +2,12 @@
 title: SQL Server에서 저장 프로시저에 서명
 ms.date: 01/05/2018
 ms.assetid: eeed752c-0084-48e5-9dca-381353007a0d
-ms.openlocfilehash: 7ef43f403a300e58a27df2de1f980dc8bcc58c02
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: c24edd59992c246c33944e6693ff5ac69311886a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43253646"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555166"
 ---
 # <a name="signing-stored-procedures-in-sql-server"></a>SQL Server에서 저장 프로시저에 서명
  디지털 설명은 서명자의 개인 키로 암호화된 데이터 다이제스트입니다. 개인 키를 사용하면 디지털 서명이 소유자별로 고유하게 유지됩니다. 저장된 프로시저, (인라인 테이블 반환 함수)를 제외한 함수, 트리거 및 어셈블리를 서명할 수 있습니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "43253646"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[모듈 서명](http://go.microsoft.com/fwlink/?LinkId=98590) SQL Server 온라인 설명서의|모듈 서명을 설명하고 샘플 시나리오 및 관련 Transact-SQL 항목 링크를 제공합니다.|  
+|[모듈 서명](https://go.microsoft.com/fwlink/?LinkId=98590) SQL Server 온라인 설명서의|모듈 서명을 설명하고 샘플 시나리오 및 관련 Transact-SQL 항목 링크를 제공합니다.|  
 |[인증서를 사용 하 여 저장된 프로시저에 서명](/sql/relational-databases/tutorial-signing-stored-procedures-with-a-certificate) SQL Server 온라인 설명서의|인증서로 저장 프로시저에 서명하는 방법에 대한 자습서를 제공합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
@@ -62,4 +62,4 @@ ms.locfileid: "43253646"
  [SQL Server에서 동적 보안 SQL 작성](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
  [SQL Server에서 가장으로 권한 사용자 지정](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)  
  [저장 프로시저로 데이터 수정](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

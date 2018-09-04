@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 537d8a2c-d40b-4000-83eb-bc1fcc93f707
-ms.openlocfilehash: 320a45af1c2f3b460c23d8320c456120643902f7
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 7bb68a7d08d983e93119804db6c1f5a01cd047c9
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32759545"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43659391"
 ---
 # <a name="configuring-parameters-and-parameter-data-types"></a>매개 변수 및 매개 변수 데이터 형식 구성
 Command 개체는 매개 변수를 통해 SQL 문이나 저장 프로시저에 값을 전달하여 형식 검사 및 유효성 검사 기능을 제공합니다. 명령 텍스트와 달리 매개 변수 입력은 실행 코드가 아니라 리터럴 값으로 처리됩니다. 따라서 매개 변수화된 명령을 사용하면 공격자가 서버의 보안을 손상시키는 명령을 SQL 문에 삽입하는 "SQL 삽입" 공격을 막을 수 있습니다.  
   
- 매개 변수화된 명령을 사용하면 데이터베이스 서버가 들어오는 명령을 올바르게 캐시된 쿼리 계획과 정확하게 일치시킬 수 있기 때문에 쿼리 실행 성능도 높일 수 있습니다. 자세한 내용은 SQL Server 온라인 설명서의 [실행 계획 캐싱 및 다시 사용](http://go.microsoft.com/fwlink/?LinkId=120424) 및 [매개 변수 및 실행 계획 재사용](http://go.microsoft.com/fwlink/?LinkId=120423) 을 참조하세요. 매개 변수화된 명령은 이러한 보안 및 성능상의 이점 외에도 데이터 소스에 전달되는 값을 구성하는 편리한 방법을 제공합니다.  
+ 매개 변수화된 명령을 사용하면 데이터베이스 서버가 들어오는 명령을 올바르게 캐시된 쿼리 계획과 정확하게 일치시킬 수 있기 때문에 쿼리 실행 성능도 높일 수 있습니다. 자세한 내용은 [실행 계획 캐싱 및 재사용](/sql/relational-databases/query-processing-architecture-guide#execution-plan-caching-and-reuse) 하 고 [매개 변수 및 실행 계획 재사용](/sql/relational-databases/query-processing-architecture-guide#PlanReuse)합니다. 매개 변수화된 명령은 이러한 보안 및 성능상의 이점 외에도 데이터 소스에 전달되는 값을 구성하는 편리한 방법을 제공합니다.  
   
  <xref:System.Data.Common.DbParameter> 개체는 해당 생성자를 사용하거나 <xref:System.Data.Common.DbCommand.DbParameterCollection%2A> 컬렉션의 `Add` 메서드를 호출하여 <xref:System.Data.Common.DbParameterCollection> 에 추가하는 방법으로 만들 수 있습니다. `Add` 메서드는 데이터 공급자에 따라 생성자 인수 또는 기존 매개 변수 개체를 입력으로 사용합니다.  
   
@@ -48,7 +48,7 @@ Command 개체는 매개 변수를 통해 SQL 문이나 저장 프로시저에 �
 |-------------------------|------------|---------------|---------------|--------------|----------------|  
 |<xref:System.Boolean>|Boolean|비트|부울|비트|Byte|  
 |<xref:System.Byte>|Byte|TinyInt|UnsignedTinyInt|TinyInt|Byte|  
-|byte[]|이항|VarBinary`.` 바이트 배열이 VarBinary의 최대 크기 보다 큰 8000 바이트이 암시적 변환은 수행 되지 것입니다. 8000 바이트 보다 큰 바이트 배열을에 대 한 명시적으로 설정 된 <xref:System.Data.SqlDbType>합니다.|VarBinary|이항|Raw|  
+|byte[]|이항|VarBinary`.` 바이트 배열이 VarBinary의 최대 크기 보다 큰 8000 바이트이 암시적 변환은 수행 되지 것입니다. 바이트 배열이 8000 바이트 보다 큰를 명시적으로 설정 된 <xref:System.Data.SqlDbType>합니다.|VarBinary|이항|Raw|  
 |<xref:System.Char>|``|char에서 <xref:System.Data.SqlDbType> 을 유추하는 것은 지원되지 않습니다.|Char|Char|Byte|  
 |<xref:System.DateTime>|DateTime|DateTime|DBTimeStamp|DateTime|DateTime|  
 |<xref:System.DateTimeOffset>|DateTimeOffset|SQL Server 2008의 DateTimeOffset. SQL Server 2008보다 이전 버전의 SQL Server에서는 DateTimeOffset에서 <xref:System.Data.SqlDbType> 을 유추하는 기능이 지원되지 않습니다.|||DateTime|  
@@ -56,7 +56,7 @@ Command 개체는 매개 변수를 통해 SQL 문이나 저장 프로시저에 �
 |<xref:System.Double>|Double|Float|Double|Double|Double|  
 |<xref:System.Single>|Single|Real|Single|Real|Float|  
 |<xref:System.Guid>|Guid|UniqueIdentifier|Guid|UniqueIdentifier|Raw|  
-|<xref:System.Int16 >|Int16|SmallInt|SmallInt|SmallInt|Int16|  
+|<xref:System.Int16>|Int16|SmallInt|SmallInt|SmallInt|Int16|  
 |<xref:System.Int32>|Int32|Int|Int|Int|Int32|  
 |<xref:System.Int64>|Int64|BigInt|BigInt|BigInt|숫자|  
 |<xref:System.Object>|개체|변형|변형|Object에서 OdbcType을 유추하는 것은 지원되지 않습니다.|Blob|  
@@ -79,7 +79,7 @@ Command 개체는 매개 변수를 통해 SQL 문이나 저장 프로시저에 �
 >  decimal 형식에서 다른 형식으로의 변환은 decimal 값을 0에 가장 가까운 정수 값으로 반올림하는 축소 변환입니다. 변환 결과를 대상 형식으로 표현할 수 없는 경우에는 <xref:System.OverflowException> 이 throw됩니다.  
   
 > [!NOTE]
->  서버에 null 매개 변수 값을 보낼 때 지정 해야 <xref:System.DBNull>이 아니라 `null` (`Nothing` Visual basic에서). 시스템에서 null 값은 값이 없는 빈 개체입니다. <xref:System.DBNull> 은 null 값을 나타내는 데 사용됩니다. 데이터베이스 null에 대한 자세한 내용은 [Handling Null Values](../../../../docs/framework/data/adonet/sql/handling-null-values.md)를 참조하세요.  
+>  Null 매개 변수 값을 보내면 서버를 지정 해야 합니다 <xref:System.DBNull>이 아니라 `null` (`Nothing` Visual basic에서). 시스템에서 null 값은 값이 없는 빈 개체입니다. <xref:System.DBNull> 은 null 값을 나타내는 데 사용됩니다. 데이터베이스 null에 대한 자세한 내용은 [Handling Null Values](../../../../docs/framework/data/adonet/sql/handling-null-values.md)를 참조하세요.  
   
 ## <a name="deriving-parameter-information"></a>매개 변수 정보 파생  
  `DbCommandBuilder` 클래스를 사용하여 저장 프로시저에서 매개 변수를 파생할 수 있습니다. `SqlCommandBuilder` 및 `OleDbCommandBuilder` 클래스는 모두 정적 메서드인 `DeriveParameters`를 제공합니다. 이 메서드는 자동으로 명령 개체의 매개 변수 컬렉션을 저장 프로시저의 매개 변수 정보로 채웁니다. `DeriveParameters` 는 명령에 대한 기존 매개 변수 정보를 모두 덮어씁니다.  
@@ -87,13 +87,13 @@ Command 개체는 매개 변수를 통해 SQL 문이나 저장 프로시저에 �
 > [!NOTE]
 >  매개 변수 정보를 파생하는 경우 해당 정보를 검색하는 데 데이터 소스에 대한 추가 라운드트립이 필요하므로 성능이 저하됩니다. 디자인 타임에 매개 변수 정보를 알고 있으면 매개 변수를 명시적으로 설정하여 응용 프로그램의 성능을 향상시킬 수 있습니다.  
   
- 자세한 내용은 참조 [commandbuilder 생성 명령을](../../../../docs/framework/data/adonet/generating-commands-with-commandbuilders.md)합니다.  
+ 자세한 내용은 [commandbuilder를 사용 하를 사용 하 여 명령 생성](../../../../docs/framework/data/adonet/generating-commands-with-commandbuilders.md)합니다.  
   
 ## <a name="using-parameters-with-a-sqlcommand-and-a-stored-procedure"></a>SqlCommand 및 저장 프로시저에 매개 변수 사용  
  저장 프로시저는 데이터 구동 응용 프로그램에 많은 이점을 제공합니다. 저장 프로시저를 사용하면 데이터베이스 작업이 단일 명령으로 캡슐화되고, 최고의 성능을 나타내도록 최적화되며, 추가 보안 기능을 통해 향상될 수 있습니다. SQL 문처럼 저장 프로시저 이름 뒤에 매개 변수 인수를 붙여 전달하여 저장 프로시저를 호출할 수 있지만 <xref:System.Data.Common.DbCommand.Parameters%2A> [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 개체의 <xref:System.Data.Common.DbCommand> 컬렉션을 사용하면 저장 프로시저 매개 변수를 보다 분명하게 정의할 수 있으며 출력 매개 변수와 반환 값에 액세스할 수 있습니다.  
   
 > [!NOTE]
->  매개 변수화된 문은 `sp_executesql,` 을 사용하여 서버에서 실행되므로 쿼리 계획을 다시 사용할 수 있습니다. `sp_executesql` 일괄 처리의 로컬 커서 또는 변수는 `sp_executesql`을 호출하는 일괄 처리에 표시되지 않습니다. 데이터베이스 컨텍스트의 변경은 `sp_executesql` 문의 실행이 끝날 때까지만 지속됩니다. 자세한 내용은 SQL Server 온라인 설명서를 참조하세요.  
+> 매개 변수화된 문은 `sp_executesql,` 을 사용하여 서버에서 실행되므로 쿼리 계획을 다시 사용할 수 있습니다. `sp_executesql` 일괄 처리의 로컬 커서 또는 변수는 `sp_executesql`을 호출하는 일괄 처리에 표시되지 않습니다. 데이터베이스 컨텍스트의 변경은 `sp_executesql` 문의 실행이 끝날 때까지만 지속됩니다. 자세한 내용은 [sp_executesql (TRANSACT-SQL)](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql)합니다.
   
  <xref:System.Data.SqlClient.SqlCommand> 에 매개 변수를 사용하여 SQL Server 저장 프로시저를 실행할 때는 <xref:System.Data.SqlClient.SqlCommand.Parameters%2A> 컬렉션에 추가된 매개 변수 이름이 저장 프로시저에 있는 매개 변수 마커 이름과 일치해야 합니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server는 SQL 문이나 저장 프로시저에 매개 변수를 전달할 때 물음표(?) 자리 표시자를 지원하지 않습니다. 대신 저장 프로시저의 매개 변수를 명명된 매개 변수로 처리하여 일치하는 매개 변수 마커를 검색합니다. 예를 들어 `CustOrderHist` 저장 프로시저는 `@CustomerID`라는 매개 변수를 사용하여 정의됩니다. 따라서 코드에서 이 저장 프로시저를 실행하는 경우 `@CustomerID`라는 매개 변수도 함께 사용해야 합니다.  
   
@@ -199,4 +199,4 @@ parameter.Direction = ParameterDirection.Output;
  [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [DataAdapter 매개 변수](../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
  [ADO.NET에서 데이터 형식 매핑](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

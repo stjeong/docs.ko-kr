@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Windows Forms, setting tab order
 ms.assetid: 71fa8e76-0472-414b-ad3c-0f90166e0ad7
 ms.openlocfilehash: 74244ae4e3692ed210b2a8f1513b035c85e98376
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486833"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43561076"
 ---
 # <a name="how-to-set-the-tab-order-on-windows-forms"></a>방법: Windows Forms에서 탭 순서 설정
 탭 순서는 사용자가 이동 포커스 한 컨트롤에서 다른 탭 키를 눌러 순서가 있습니다. 각 폼 자체 탭 순서를 있습니다. 기본적으로 탭 순서가 컨트롤을 만든 순서와 동일 합니다. 탭 순서 번호는 0부터 시작 합니다.  

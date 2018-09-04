@@ -2,12 +2,12 @@
 title: SQL Server에서 쿼리 알림
 ms.date: 03/30/2017
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
-ms.openlocfilehash: 60ab686437f764a006fca5a2043d02288ea46d0e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c4e58a3eecc18fb5693e9850163533b0a1a6a574
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33364073"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43563660"
 ---
 # <a name="query-notifications-in-sql-server"></a>SQL Server에서 쿼리 알림
 쿼리 알림은 Service Broker 인프라를 기반으로 하며 데이터가 변경된 경우 응용 프로그램에 이를 알릴 수 있습니다. 이 기능은 웹 응용 프로그램 같이 데이터베이스의 정보 캐시를 제공하고 원본 데이터가 변경되면 알림을 받아야 하는 응용 프로그램에 매우 유용합니다.  
@@ -24,19 +24,19 @@ ms.locfileid: "33364073"
   
  SELECT 및 EXECUTE 문에 대해 알림을 설정할 수 있습니다. EXECUTE 문을 사용할 경우 SQL Server에서는 EXECUTE 문 자체가 아니라 실행되는 명령에 대해 알림을 등록합니다. 명령은 SELECT 문의 요구 사항과 제한 사항을 따라야 합니다. 알림을 등록하는 명령에 문이 두 개 이상 포함되어 있으면 데이터베이스 엔진은 일괄 처리에 있는 각 문에 대해 알림을 만듭니다.  
   
- 을 개발 하는 응용 프로그램 데이터가 변경 될 때 신뢰할 수 있는 하위 보조 알림이 필요한 경우 검토 섹션 **효율적인 쿼리 알림 방법 계획** 및 **쿼리에 대 한 대안 알림** 에 [알림 계획](http://go.microsoft.com/fwlink/?LinkId=211984) SQL Server 온라인 설명서의 항목입니다. 쿼리 알림 및 SQL Server Service Broker에 대한 자세한 내용은 다음 SQL Server 온라인 설명서의 항목을 참조하세요.  
+ 을 개발 하는 응용 프로그램 데이터가 변경 되 면 신뢰할 수 있는 하위 보조 알림이 필요한 경우 섹션을 검토 **효율적인 쿼리 알림 전략을 계획** 고 **쿼리에 대 한 대안 알림을** 에 [알림에 대 한 계획](https://go.microsoft.com/fwlink/?LinkId=211984) SQL Server 온라인 설명서의 항목입니다. 쿼리 알림 및 SQL Server Service Broker에 대한 자세한 내용은 다음 SQL Server 온라인 설명서의 항목을 참조하세요.  
   
  **SQL Server 온라인 설명서**  
   
--   [쿼리 알림 사용](http://msdn.microsoft.com/library/ms175110.aspx)  
+-   [쿼리 알림 사용](https://msdn.microsoft.com/library/ms175110.aspx)  
   
--   [알림에 대 한 쿼리 만들기](http://msdn.microsoft.com/library/ms181122.aspx)  
+-   [알림에 대 한 쿼리 만들기](https://msdn.microsoft.com/library/ms181122.aspx)  
   
--   [Service Broker](http://msdn.microsoft.com/library/bb522889.aspx)  
+-   [Service Broker](https://msdn.microsoft.com/library/bb522889.aspx)  
   
--   [Service Broker 개발자 정보 센터](http://msdn.microsoft.com/library/ms166100.aspx)  
+-   [Service Broker 개발자 정보 센터](https://msdn.microsoft.com/library/ms166100.aspx)  
   
--   [개발 (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+-   [개발 (Service Broker)](https://msdn.microsoft.com/library/bb522908.aspx)  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [쿼리 알림 사용](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md)  
@@ -63,4 +63,4 @@ ms.locfileid: "33364073"
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

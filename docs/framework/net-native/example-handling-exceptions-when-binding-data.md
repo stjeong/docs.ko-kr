@@ -5,11 +5,11 @@ ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 89e7a0929bd5f07c5a1986d885984332d692d3a9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43415881"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555370"
 ---
 # <a name="example-handling-exceptions-when-binding-data"></a>예: 데이터를 바인딩하는 경우 예외 처리
 > [!NOTE]

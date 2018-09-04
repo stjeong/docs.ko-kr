@@ -2,15 +2,15 @@
 title: ASP.NET 캐싱 통합
 ms.date: 03/30/2017
 ms.assetid: f581923a-8a72-42fc-bd6a-46de2aaeecc1
-ms.openlocfilehash: 744ecbff8b51565906ff4c619ba8c8aecff123c7
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 55e6213bf0c4c212ebcf4e68882d16532c0e4229
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805410"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555762"
 ---
 # <a name="aspnet-caching-integration"></a>ASP.NET 캐싱 통합
-이 샘플에서는 WCF 웹 HTTP 프로그래밍 모델을 사용하여 ASP.NET 출력 캐시를 활용하는 방법을 보여 줍니다. 참조 하십시오는 [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) 자체 호스팅 버전 심층에서 서비스 구현에 나와 있는이 시나리오의 샘플입니다. 이 항목에서는 ASP.NET 출력 캐시 통합 기능을 중점적으로 설명합니다.  
+이 샘플에서는 WCF 웹 HTTP 프로그래밍 모델을 사용하여 ASP.NET 출력 캐시를 활용하는 방법을 보여 줍니다. 참조 하십시오 합니다 [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) 방어에서 서비스 구현에 설명 하는이 시나리오의 자체 호스팅된 버전에 대 한 샘플. 이 항목에서는 ASP.NET 출력 캐시 통합 기능을 중점적으로 설명합니다.  
   
 ## <a name="demonstrates"></a>세부 항목  
  ASP.NET 출력 캐시와 통합  
@@ -20,25 +20,25 @@ ms.locfileid: "33805410"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\AspNetCachingIntegration`  
   
 ## <a name="discussion"></a>토론  
- 이 샘플에서는 사용는 <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> ASP.NET을 활용 하 여 Windows Communication Foundation (WCF) 서비스와 함께 캐시를 출력 합니다. <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>는 서비스 작업에 적용되며, 구성 파일에서 지정된 작업의 응답에 적용해야 하는 캐시 프로필의 이름을 제공합니다.  
+ 샘플을 사용 합니다 <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> ASP.NET을 활용 하는 Windows Communication Foundation (WCF) 서비스를 사용 하 여 캐시를 출력 합니다. <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>는 서비스 작업에 적용되며, 구성 파일에서 지정된 작업의 응답에 적용해야 하는 캐시 프로필의 이름을 제공합니다.  
   
- 샘플 Service 프로젝트의 Service.cs 파일에서 모두는 `GetCustomer` 및 `GetCustomers` 작업으로 표시 됩니다는 <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>, 캐시 프로필 이름 "CacheFor60Seconds"를 제공 하는 합니다. 서비스 프로젝트의 Web.config 파일에서 캐시 프로필 "CacheFor60Seconds" 제공 하지 않습니다는 <`caching`> 요소의 <`system.web`> 합니다. 이 캐시 프로필의 값에는 `duration` 특성 이므로 "60"이이 프로필에 연결 된 응답은 60 초 동안 ASP.NET 출력 캐시에 캐시 됩니다. 또한이 캐시 프로필에 대 한는 `varmByParam` 특성이 너무 요청에 대 한 값이 서로 다른 "format"으로 설정 되어는 `format` 쿼리 문자열 매개 변수에서는 응답이 별도로 캐시 됩니다. 마지막으로 캐시 프로필의 `varyByHeader` 있으므로 Accept 헤더 값이 다른 요청에서는 응답이 별도로 캐시 특성이 "Accept"로 설정 되어 있습니다.  
+ 샘플 Service 프로젝트의 Service.cs 파일에서 모두를 `GetCustomer` 하 고 `GetCustomers` 작업으로 표시 됩니다는 <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>, 캐시 프로필 이름 "Cachefor60seconds"를 제공 하는. 서비스 프로젝트의 Web.config 파일에서 캐시 프로필 "Cachefor60seconds"는에서 제공 되는 <`caching`> 요소의 <`system.web`>. 이 캐시 프로필의 경우 값에 대 한는 `duration` 특성 이므로 "60"이이 프로필과 연결 된 응답은 60 초 동안 ASP.NET 출력 캐시에 캐시 됩니다. 이 캐시 프로필의 경우에, 합니다 `varmByParam` 특성에 대해 다른 값을 사용 하 여 하므로 요청 "format"으로 설정 되어를 `format` 쿼리 문자열 매개 변수에서는 응답이 별도로 캐시 합니다. 마지막으로 캐시 프로필의 `varyByHeader` Accept 헤더 값이 다른 요청에서는 응답이 별도로 캐시를 갖도록 특성은 "Accept"로 설정 합니다.  
   
- Client 프로젝트의 Program.cs에서는 <xref:System.Net.HttpWebRequest>를 사용하여 이러한 클라이언트를 작성하는 방법을 보여 줍니다. 이 방법은 WCF 서비스에 액세스하는 여러 방법 중 하나일 뿐입니다. WCF 채널 팩터리와 같은 다른.NET Framework 클래스를 사용 하 여 서비스에 액세스할 수 이기도 및 <xref:System.Net.WebClient>합니다. SDK의 다른 샘플 (같은 [기본 HTTP 서비스](../../../../docs/framework/wcf/samples/basic-http-service.md) 샘플 및 [선택 영역 자동 서식](../../../../docs/framework/wcf/samples/automatic-format-selection.md) 샘플) 이러한 클래스를 사용 하 여 WCF 서비스와 통신 하는 방법을 보여 줍니다.  
+ Client 프로젝트의 Program.cs에서는 <xref:System.Net.HttpWebRequest>를 사용하여 이러한 클라이언트를 작성하는 방법을 보여 줍니다. 이 방법은 WCF 서비스에 액세스하는 여러 방법 중 하나일 뿐입니다. WCF 채널 팩터리와 같은 다른.NET Framework 클래스를 사용 하는 서비스에 액세스할 수 이기도 한 <xref:System.Net.WebClient>합니다. SDK의 다른 샘플 (같은 합니다 [기본 HTTP 서비스](../../../../docs/framework/wcf/samples/basic-http-service.md) 샘플 및 [선택 영역 자동 서식 지정](../../../../docs/framework/wcf/samples/automatic-format-selection.md) 샘플)에서는 이러한 클래스를 사용 하 여 WCF 서비스와 통신 하는 방법을 보여 줍니다.  
   
 ## <a name="to-run-the-sample"></a>이 샘플을 실행하려면  
  이 샘플은 다음의 세 프로젝트로 구성되어 있습니다.  
   
--   **서비스**: ASP.NET에서 호스팅되는 WCF HTTP 서비스가 포함 된 웹 응용 프로그램 프로젝트입니다.  
+-   **서비스**: ASP.NET에서 호스팅되는 WCF HTTP 서비스가 포함 하는 웹 응용 프로그램 프로젝트입니다.  
   
--   **클라이언트**: 콘솔 응용 프로그램 프로젝트 서비스에 대 한 호출입니다.  
+-   **클라이언트**: 서비스를 호출 하는 콘솔 응용 프로그램 프로젝트입니다.  
   
--   **일반적인**: 클라이언트 및 서비스에 의해 사용 되는 고객 형식을 포함 하는 공유 라이브러리입니다.  
+-   **일반적인**: 클라이언트와 서비스에서 사용 하는 고객 형식을 포함 하는 공유 라이브러리입니다.  
   
  Client 콘솔 응용 프로그램이 실행되면 클라이언트에서는 서비스로 요청을 보내고 응답의 관련 정보를 콘솔 창에 씁니다.  
   
@@ -50,9 +50,9 @@ ms.locfileid: "33805410"
   
 3.  경우는 **솔루션 탐색기** 창이 아직 열려 있지 않으면, CTRL + W + S를 누릅니다.  
   
-4.  **솔루션 탐색기** 창을 마우스 오른쪽 단추로 클릭은 **서비스** 프로젝트를 마우스 선택 **새 인스턴스 시작**합니다. 그러면 ASP.NET Development Server가 시작되어 서비스를 호스트합니다.  
+4.  **솔루션 탐색기** 창에서 마우스 오른쪽 단추로 클릭 합니다 **Service** 프로젝트를 마우스 **새 인스턴스 시작**합니다. 그러면 ASP.NET Development Server가 시작되어 서비스를 호스트합니다.  
   
-5.  **솔루션 탐색기** 창을 마우스 오른쪽 단추로 클릭은 **클라이언트** 프로젝트를 마우스 선택 **새 인스턴스 시작**합니다.  
+5.  **솔루션 탐색기** 창에서 마우스 오른쪽 단추로 클릭 합니다 **클라이언트** 프로젝트를 마우스 **새 인스턴스 시작**합니다.  
   
 6.  클라이언트 콘솔 창이 나타나고 실행 중인 서비스의 URI와 실행 중인 서비스에 대한 HTML 도움말 페이지의 URI가 제공됩니다. 언제든지 브라우저에서 HTML 도움말 페이지의 URI를 입력하면 해당 도움말 페이지를 볼 수 있습니다.  
   

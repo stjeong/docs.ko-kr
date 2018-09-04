@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 3b381f04-593b-471f-bd33-0362be1aade5
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 0a5bc7d53405966bcb86750780473c4060d7ced3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2a275c32caefb54b11cc605c1339526465c8319a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400421"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43562426"
 ---
 # <a name="what39s-new-in-windows-identity-foundation-45"></a>Windows Identity Foundation 4.5의 새로운 기능
 독립 실행형 다운로드로 제공되는 WIF(Windows Identity Foundation)의 첫 번째 버전은 .NET 3.5 SP1 기간에 도입되었기 때문에 WIF 3.5로 알려져 있습니다. .NET 4.5부터는 WIF가 .NET Framework의 일부로 제공됩니다. WIF 클래스를 프레임워크에서 직접 사용할 수 있도록 하면 .NET에 클레임 기반 ID를 더욱 심층적으로 통합하여 클레임을 더욱 쉽게 사용하도록 할 수 있습니다. 새 모델을 이용하기 위해 WIF 3.5용으로 작성된 응용 프로그램을 수정할 필요가 있습니다. 자세한 내용은 [WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)을 참조하세요.  
@@ -17,7 +17,7 @@ ms.locfileid: "33400421"
  아래에서 몇 가지 주요 변경 사항에 대한 정보를 확인할 수 있습니다.  
   
 ## <a name="wif-is-now-part-of-the-net-framework"></a>WIF는 현재 .NET Framework의 일부로 제공됩니다.  
- WIF 클래스는 현재 여러 어셈블리에서 분산되어 있는데, `mscorlib`, `System.IdentityModel`, `System.IdentityModel.Services` 및 `System.ServiceModel`이 주요 클래스입니다. 마찬가지로, WIF 클래스는 <xref:System.Security.Claims?displayProperty=nameWithType>, 여러 가지 [System.IdentityModel](http://go.microsoft.com/fwlink/?LinkId=272004) 네임스페이스 및 <xref:System.ServiceModel.Security?displayProperty=nameWithType>와 같은 여러 네임스페이스에 분산되어 있습니다. <xref:System.Security.Claims?displayProperty=nameWithType> 네임스페이스에는 새로운 <xref:System.Security.Claims.ClaimsPrincipal> 및 <xref:System.Security.Claims.ClaimsIdentity> 클래스가 포함됩니다(아래 참조). .NET의 모든 보안 주체는 이제 <xref:System.Security.Claims.ClaimsPrincipal>에서 파생됩니다. WIF 네임스페이스와 이런 네임스페이스에 포함되는 클래스의 종류에 대한 자세한 내용은 [WIF API 참조](../../../docs/framework/security/wif-api-reference.md)를 참조하세요. 네임스페이스가 WIF 3.5와 WIF 4.5 사이에서 매핑하는 방식에 대한 자세한 내용은 [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)을 참조하세요.  
+ WIF 클래스는 현재 여러 어셈블리에서 분산되어 있는데, `mscorlib`, `System.IdentityModel`, `System.IdentityModel.Services` 및 `System.ServiceModel`이 주요 클래스입니다. 마찬가지로, WIF 클래스는 <xref:System.Security.Claims?displayProperty=nameWithType>, 여러 가지 [System.IdentityModel](https://go.microsoft.com/fwlink/?LinkId=272004) 네임스페이스 및 <xref:System.ServiceModel.Security?displayProperty=nameWithType>와 같은 여러 네임스페이스에 분산되어 있습니다. <xref:System.Security.Claims?displayProperty=nameWithType> 네임스페이스에는 새로운 <xref:System.Security.Claims.ClaimsPrincipal> 및 <xref:System.Security.Claims.ClaimsIdentity> 클래스가 포함됩니다(아래 참조). .NET의 모든 보안 주체는 이제 <xref:System.Security.Claims.ClaimsPrincipal>에서 파생됩니다. WIF 네임스페이스와 이런 네임스페이스에 포함되는 클래스의 종류에 대한 자세한 내용은 [WIF API 참조](../../../docs/framework/security/wif-api-reference.md)를 참조하세요. 네임스페이스가 WIF 3.5와 WIF 4.5 사이에서 매핑하는 방식에 대한 자세한 내용은 [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)을 참조하세요.  
   
 ## <a name="new-claims-model-and-principal-object"></a>새 클레임 모델 및 보안 주체 개체  
  클레임은 .NET Framework 4.5에서 가장 중요한 핵심입니다. 기본 클레임 클래스(<xref:System.Security.Claims.Claim>, <xref:System.Security.Claims.ClaimsIdentity>, <xref:System.Security.Claims.ClaimsPrincipal>, <xref:System.Security.Claims.ClaimTypes>, <xref:System.Security.Claims.ClaimValueTypes>)는 모두 `mscorlib` 네임스페이스의 <xref:System.Security.Claims?displayProperty=nameWithType>에 있습니다. 클레임을 .NET ID 시스템에 플러그 인하기 위해 더 이상 인터페이스를 사용할 필요가 없습니다. <xref:System.Security.Principal.WindowsPrincipal>, <xref:System.Security.Principal.GenericPrincipal> 및 <xref:System.Web.Security.RolePrincipal>은 <xref:System.Security.Claims.ClaimsPrincipal>에서 상속하고, <xref:System.Security.Principal.WindowsIdentity>, <xref:System.Security.Principal.GenericIdentity> 및 <xref:System.Web.Security.FormsIdentity>는 <xref:System.Security.Claims.ClaimsIdentity>에서 상속합니다. 즉, 이제는 모든 보안 주체 클래스가 클레임을 제공합니다. 따라서 WIF 3.5 통합 클래스 및 인터페이스(`WindowsClaimsIdentity`, `WindowsClaimsPrincipal`, `IClaimsPrincipal`, `IClaimsIdentity`)가 제거되었습니다. 그 밖에도, <xref:System.Security.Claims.ClaimsIdentity> 클래스는 이제 메서드를 노출하므로 ID의 클레임 컬렉션을 더 쉽게 쿼리할 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33400421"
   
 ## <a name="changes-to-the-wif-45-api"></a>WIF 4.5 API에 대한 변경 사항  
   
--   일반적으로, 클레임 관련 클래스는 <xref:System.Security.Claims?displayProperty=nameWithType> 네임스페이스에 있고, WCF 관련 클래스(WS-Trust 시나리오에 사용되는 서비스 계약, 채널, 채널 팩터리 및 서비스 호스트)는 <xref:System.ServiceModel.Security?displayProperty=nameWithType>에 있고, 다른 모든 WIF 클래스는 다양한 [System.IdentityModel](http://go.microsoft.com/fwlink/?LinkId=272004) 네임스페이스에 분산되어 있는데, 예를 들어 여기에는 WS-* 및 SAML 아티팩트를 표시하는 클래스, 토큰 처리기 및 관련 클래스, WS-페더레이션 시나리오에 사용되는 클래스가 포함됩니다. 자세한 내용은 [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md) 및 [WIF API 참조](../../../docs/framework/security/wif-api-reference.md)를 참조하세요.  
+-   일반적으로, 클레임 관련 클래스는 <xref:System.Security.Claims?displayProperty=nameWithType> 네임스페이스에 있고, WCF 관련 클래스(WS-Trust 시나리오에 사용되는 서비스 계약, 채널, 채널 팩터리 및 서비스 호스트)는 <xref:System.ServiceModel.Security?displayProperty=nameWithType>에 있고, 다른 모든 WIF 클래스는 다양한 [System.IdentityModel](https://go.microsoft.com/fwlink/?LinkId=272004) 네임스페이스에 분산되어 있는데, 예를 들어 여기에는 WS-* 및 SAML 아티팩트를 표시하는 클래스, 토큰 처리기 및 관련 클래스, WS-페더레이션 시나리오에 사용되는 클래스가 포함됩니다. 자세한 내용은 [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md) 및 [WIF API 참조](../../../docs/framework/security/wif-api-reference.md)를 참조하세요.  
   
 -   웹 팜 시나리오에 대한 세션 쿠키에서 사용하기 위해 컴퓨터 키가 활성화되었습니다. 자세한 내용은 [WIF 및 웹 팜](../../../docs/framework/security/wif-and-web-farms.md)을 참조하세요.  
   

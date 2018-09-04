@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ToolBar control [WPF]
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 ms.openlocfilehash: 816ac0d81ddcaa461a842c0f69fe5ed5b21a32d1
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466286"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43559835"
 ---
 # <a name="toolbar-overview"></a>ToolBar 개요
 <xref:System.Windows.Controls.ToolBar> 컨트롤은 명령 또는 해당 함수에서 일반적으로 관련이 있는 컨트롤의 그룹에 대 한 컨테이너입니다. <xref:System.Windows.Controls.ToolBar> 명령을 호출 하는 단추는 일반적으로 포함 합니다.  

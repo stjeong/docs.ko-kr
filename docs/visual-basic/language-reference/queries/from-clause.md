@@ -11,11 +11,11 @@ helpviewer_keywords:
 - From statement [Visual Basic]
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
 ms.openlocfilehash: 71573de48cc51c48291fc4b82a0628d2d0f96caa
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932490"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43556811"
 ---
 # <a name="from-clause-visual-basic"></a>From 절(Visual Basic)
 하나 이상의 범위 변수 및 쿼리 하는 컬렉션을 지정합니다.  
@@ -64,7 +64,7 @@ From element [ As type ] In collection [ _ ]
   
 -   사용 하 여 반환할 결과 부분을 식별 합니다 `Skip`, `Take`를 `Skip While`, 및 `Take While` 절.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 쿼리 식에 사용을 `From` 범위 변수를 선언 하는 절 `cust` 각각에 대해 `Customer` 개체는 `customers` 컬렉션입니다. `Where` 절 범위 변수를 사용 하 여 지정된 된 지역에서 고객에 게 출력을 제한 합니다. `For Each` 루프는 쿼리 결과에서 각 고객의 회사 이름을 표시 합니다.  
   
  [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  

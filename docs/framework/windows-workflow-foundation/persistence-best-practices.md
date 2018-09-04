@@ -3,11 +3,11 @@ title: 지속성 최선의 구현 방법
 ms.date: 03/30/2017
 ms.assetid: 6974c5a4-1af8-4732-ab53-7d694608a3a0
 ms.openlocfilehash: fdbf61e559efbd978df1c5a46fcbbbbc528ec98a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43404692"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43558877"
 ---
 # <a name="persistence-best-practices"></a>지속성 최선의 구현 방법
 이 문서에서는 워크플로 지속성과 관련된 워크플로 디자인 및 구성에 대한 최상의 방법을 설명합니다.  

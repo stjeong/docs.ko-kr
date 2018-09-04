@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: aea9fb2bb9c4535e30a42ad956b04b3bb06a798a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 3dd083193fa8fed2abc8a1a498325f7edd89bc96
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33433990"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43658002"
 ---
 # <a name="iclrstrongnamestrongnametokenfromassembly-method"></a>ICLRStrongName::StrongNameTokenFromAssembly 메서드
-지정한 어셈블리 파일에서 강력한 이름 토큰을 만듭니다.  
+지정된 어셈블리 파일에서 강력한 이름 토큰을 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ HRESULT StrongNameTokenFromAssembly (
   
 #### <a name="parameters"></a>매개 변수  
  `wszFilePath`  
- [in] 경로 어셈블리에 대 한 이식 가능한 실행 (PE) 파일입니다.  
+ [in] 어셈블리의 pe (이식 가능) 파일 경로입니다.  
   
  `ppbStrongNameToken`  
  [out] 반환 된 강력한 이름 토큰입니다.  
@@ -48,21 +48,21 @@ HRESULT StrongNameTokenFromAssembly (
  [out] 강력한 이름 토큰의 바이트 크기입니다.  
   
 ## <a name="return-value"></a>반환 값  
- `S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값 (참조 [일반적인 HRESULT 값](http://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).  
+ `S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).  
   
 ## <a name="remarks"></a>설명  
- 강력한 이름 토큰에는 공개 키의 축약 된 형식입니다. 토큰은 어셈블리에 서명 하는 데 사용 되는 공개 키에서 생성 되는 64 비트 해시입니다. 어셈블리에 대 한 강력한 이름의 일부인 토큰과 어셈블리 메타 데이터에서 읽을 수 있습니다.  
+ 강력한 이름 토큰은 공개 키의 축약 형태입니다. 토큰은 어셈블리 서명에 사용 된 공개 키에서 생성 되는 64 비트 해시입니다. 토큰에는 어셈블리에 대 한 강력한 이름의 일부인 되며 어셈블리 메타 데이터에서 읽을 수 있습니다.  
   
- 호출 해야 토큰을 만든 후의 [iclrstrongname:: Strongnamefreebuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) 메서드 할당 된 메모리를 해제 합니다.  
+ 토큰을 만든 후 호출 해야 합니다 [iclrstrongname:: Strongnamefreebuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) 할당 된 메모리를 해제 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** MetaHost.h  
   
  **라이브러리:** MSCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [StrongNameTokenFromAssemblyEx 메서드](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfromassemblyex-method.md)  

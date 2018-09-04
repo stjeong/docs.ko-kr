@@ -7,11 +7,11 @@ helpviewer_keywords:
 - images [Windows Forms], adding to ImageList component
 ms.assetid: 5699b244-e37c-4d20-bc35-7441e55c1e3a
 ms.openlocfilehash: cc85306c68baa4b4a0fe3418c511672d34790ae7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43394730"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43553604"
 ---
 # <a name="how-to-add-or-remove-imagelist-images-with-the-designer"></a>방법: 디자이너를 사용하여 ImageList 이미지 추가 또는 제거
 이미지를 추가할 수 있습니다는 <xref:System.Windows.Forms.ImageList> 여러 가지 구성 요소입니다. 연결 된 스마트 태그를 사용 하 여 매우 신속 하 게 이미지를 추가할 수 있습니다 합니다 <xref:System.Windows.Forms.ImageList>에 다른 여러 속성을 설정 하는 경우 또는 <xref:System.Windows.Forms.ImageList>,이 더 편리할 속성 창 사용 하 여 이미지를 추가할 수 있습니다. 또한 코드를 사용 하 여 이미지를 추가할 수 있습니다. 코드를 사용 하 여 이미지를 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Windows Forms ImageList 구성 요소를 사용 하 여 이미지 추가 또는 제거](../../../../docs/framework/winforms/controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)합니다. 채울 일반적으로 <xref:System.Windows.Forms.ImageList> 컨트롤과 연결 되지만 이것이 필요 하기 전에 이미지를 사용 하 여 구성 요소입니다.  

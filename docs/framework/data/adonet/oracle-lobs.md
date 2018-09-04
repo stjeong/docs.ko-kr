@@ -2,28 +2,28 @@
 title: Oracle LOB
 ms.date: 03/30/2017
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
-ms.openlocfilehash: 04789b385d7a956b65b7cd99594fc92001183af3
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 39ff8f1c21fc1161f4f3726548713d384c7d7400
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32758778"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43560219"
 ---
 # <a name="oracle-lobs"></a>Oracle LOB
-.NET Framework Data Provider for Oracle에 포함 되어는 <xref:System.Data.OracleClient.OracleLob> Oracle을 사용 하는 데 사용 되는 클래스 **LOB** 데이터 형식입니다.  
+.NET Framework Data Provider for Oracle 포함 합니다 <xref:System.Data.OracleClient.OracleLob> Oracle을 사용 하 여 작업에 사용 되는 클래스 **LOB** 데이터 형식입니다.  
   
- **OracleLob** 이 중 하나가 될 수 있습니다 <xref:System.Data.OracleClient.OracleType> 데이터 형식:  
+ **OracleLob** 이러한 중 하나일 수 있습니다 <xref:System.Data.OracleClient.OracleType> 데이터 형식:  
   
 |데이터 형식|설명|  
 |---------------|-----------------|  
-|**Blob**|Oracle **BLOB** 최대 크기가 4gb의 이진 데이터를 포함 하는 데이터 형식입니다. 매핑되는 **배열** 형식의 **바이트**합니다.|  
-|**Clob**|Oracle **CLOB** 데이터 형식은 기본 문자에 따라 문자 데이터를 포함 하는 최대 크기가 4gb의 서버에 설정 합니다. 에 매핑됩니다 **문자열**합니다.|  
-|**NClob**|Oracle **NCLOB** 국가별 문자 집합에 4gb의 최대 크기를 사용 하 여 서버를 기반으로 문자 데이터를 포함 하는 데이터 형식입니다. 에 매핑됩니다 **문자열**합니다.|  
+|**Blob**|Oracle **BLOB** 4gb의 최대 크기를 사용 하 여 이진 데이터를 포함 하는 데이터 형식입니다. 매핑되는 **배열** 형식의 **바이트**합니다.|  
+|**Clob**|Oracle **CLOB** 4gb의 최대 크기를 사용 하 여 서버의 기본 문자를 기준으로 문자 데이터를 포함 하는 데이터 형식을 설정 합니다. 에 매핑됩니다 **문자열**합니다.|  
+|**NClob**|Oracle **NCLOB** 국가별 문자 4gb의 최대 크기를 사용 하 여 서버의 집합을 기반으로 문자 데이터를 포함 하는 데이터 형식입니다. 에 매핑됩니다 **문자열**합니다.|  
   
- **OracleLob** 에서 다른는 <xref:System.Data.OracleClient.OracleBFile> 데이터는 운영 체제의 물리적 파일이 아닌 서버에 저장 된다는 점에서 합니다. 와 달리 읽기 / 쓰기 개체 일 수도 있습니다는 **OracleBFile**는 항상 읽기 전용입니다.  
+ **OracleLob** 에서 다른는 <xref:System.Data.OracleClient.OracleBFile> 는 데이터는 운영 체제의 물리적 파일 대신 서버에 저장 됩니다. 달리 읽기 / 쓰기 개체 일 수도 있습니다는 **OracleBFile**에 항상 읽기 전용입니다.  
   
 ## <a name="creating-retrieving-and-writing-to-a-lob"></a>LOB 만들기, 검색 및 쓰기  
- 다음 C# 예제는 Oracle 테이블에 Lob를 만들 하 고 다음 검색 하는 방법의 형태로 쓸 **OracleLob** 개체입니다. 예제를 사용 하는 <xref:System.Data.OracleClient.OracleDataReader> 개체 및 **OracleLob** **읽기** 및 **쓰기** 메서드. 예제에서는 Oracle **BLOB**, **CLOB**, 및 **NCLOB** 데이터 형식입니다.  
+ 다음 C# 예제에서는 Oracle 테이블에 Lob 만들기 및 다음 검색 하는 방법의 형태로 쓸 **OracleLob** 개체입니다. 예제를 사용 하 여는 <xref:System.Data.OracleClient.OracleDataReader> 개체 및 **OracleLob** **읽기** 하 고 **작성** 메서드. 예제에서는 Oracle **BLOB**를 **CLOB**, 및 **NCLOB** 데이터 형식입니다.  
   
 ```csharp  
 using System;  
@@ -249,4 +249,4 @@ tx.Commit();
   
 ## <a name="see-also"></a>참고 항목  
  [Oracle 및 ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

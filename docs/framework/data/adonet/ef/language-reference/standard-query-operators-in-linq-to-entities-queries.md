@@ -2,15 +2,15 @@
 title: LINQ to Entities 쿼리에서 표준 쿼리 연산자
 ms.date: 08/21/2018
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
-ms.openlocfilehash: 1085e43ef1db8eb0017f9ff87acba2da4be46377
-ms.sourcegitcommit: 875ecc3ab2437e299b1d50076bd9b878fa8c64de
+ms.openlocfilehash: 302fa281767fc95e9a9a2192382034b3a519cd92
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43238565"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43560490"
 ---
 # <a name="standard-query-operators-in-linq-to-entities-queries"></a>LINQ to Entities 쿼리에서 표준 쿼리 연산자
-쿼리에는 데이터 소스에서 검색하려는 정보를 지정합니다. 또한 정보를 반환하기 전에 정보에 대한 정렬, 그룹화 및 구체화하는 방법을 쿼리에 지정할 수 있습니다. LINQ에서는 쿼리에서 사용할 수 있는 표준 쿼리 메서드 집합을 제공합니다. 이러한 메서드 중 대부분은 시퀀스;에서 작동 이 컨텍스트에서 시퀀스의 형식이 구현 하는 개체를 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 표준 쿼리 연산자 쿼리 기능에는 필터링, 프로젝션, 집계, 정렬, 그룹화, 페이징 등이 포함됩니다. 자주 사용되는 표준 쿼리 연산자 중 일부는 전용 키워드 구문이 있어서 쿼리 식 구문을 사용하여 호출할 수 있습니다. 쿼리 식은 메서드 기반 방법과는 다른, 가독성이 더 우수한 쿼리 표현 방법입니다. 쿼리 식 절은 컴파일 시간에 쿼리 메서드 호출로 변환됩니다. 동등한 쿼리 식 절이 있는 표준 쿼리 연산자의 목록은 참조 하세요. [표준 쿼리 연산자 개요](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)합니다.  
+쿼리에는 데이터 소스에서 검색하려는 정보를 지정합니다. 또한 정보를 반환하기 전에 정보에 대한 정렬, 그룹화 및 구체화하는 방법을 쿼리에 지정할 수 있습니다. LINQ에서는 쿼리에서 사용할 수 있는 표준 쿼리 메서드 집합을 제공합니다. 이러한 메서드 중 대부분은 시퀀스;에서 작동 이 컨텍스트에서 시퀀스의 형식이 구현 하는 개체를 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 표준 쿼리 연산자 쿼리 기능에는 필터링, 프로젝션, 집계, 정렬, 그룹화, 페이징 등이 포함됩니다. 자주 사용되는 표준 쿼리 연산자 중 일부는 전용 키워드 구문이 있어서 쿼리 식 구문을 사용하여 호출할 수 있습니다. 쿼리 식은 메서드 기반 방법과는 다른, 가독성이 더 우수한 쿼리 표현 방법입니다. 쿼리 식 절은 컴파일 시간에 쿼리 메서드 호출로 변환됩니다. 동등한 쿼리 식 절이 있는 표준 쿼리 연산자의 목록은 참조 하세요. [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)합니다.  
   
  일부 표준 쿼리 연산자는 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리에서 지원되지 않습니다. 자세한 내용은 [지원 되 및 지원 되지 않는 LINQ 메서드 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)합니다. 이 항목에서는 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]와 관련된 표준 쿼리 연산자에 대해 소개합니다. 알려진된 문제에 대 한 자세한 내용은 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리를 참조 하세요 [알려진 문제 및 linq에서 to Entities의 고려 사항](../../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)합니다.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "43238565"
 |`Sum`|@FSHO2@null을 반환합니다.|@FSHO2@null을 반환합니다.|시퀀스의 null이 아닌 값의 합계를 반환합니다.|숫자 값 시퀀스의 합계를 계산합니다.|  
   
 ## <a name="type-methods"></a>형식 메서드  
- 형식 변환과 테스트를 다루는 두 LINQ 메서드는 모두 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]의 컨텍스트에서 지원됩니다. 즉 해당 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] 형식에 매핑되는 형식만 지원됩니다. 이러한 형식의 목록, 참조 [개념적 모델 형식 (CSDL)](http://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)합니다. 형식 메서드는 `Convert` 및 `OfType`입니다.  
+ 형식 변환과 테스트를 다루는 두 LINQ 메서드는 모두 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]의 컨텍스트에서 지원됩니다. 즉 해당 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] 형식에 매핑되는 형식만 지원됩니다. 이러한 형식의 목록, 참조 [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)합니다. 형식 메서드는 `Convert` 및 `OfType`입니다.  
   
  `OfType`은 엔터티 형식에 대해 지원됩니다. `Convert`는 개념적 모델 기본 형식에 대해 지원됩니다.  C# `is` 및 `as` 메서드 역시 지원됩니다.  
   
@@ -78,4 +78,4 @@ ms.locfileid: "43238565"
   
 ## <a name="see-also"></a>참고 항목  
  [지원 및 미지원 LINQ 메서드 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)  
- [표준 쿼리 연산자 개요](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)
+ [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)

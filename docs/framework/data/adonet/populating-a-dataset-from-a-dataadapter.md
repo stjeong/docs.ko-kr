@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 3fa0ac7d-e266-4954-bfac-3fbe2f913153
 ms.openlocfilehash: d865f76b1a3e1ef72717fe790d3f1bc8895f8f58
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43401135"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43557924"
 ---
 # <a name="populating-a-dataset-from-a-dataadapter"></a>DataAdapter에서 데이터 집합 채우기
 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] <xref:System.Data.DataSet>은 데이터 소스에 독립적으로 일관성 있는 관계형 프로그래밍 모델을 제공하는 데이터의 메모리 상주 표현입니다. `DataSet` 은 테이블 및 제약 조건과 테이블 간의 관계를 포함하는 완전한 데이터 집합을 나타냅니다. `DataSet` 은 데이터 소스에 독립적입니다. 따라서 `DataSet` 은 응용 프로그램에 대해 로컬인 데이터뿐 아니라 여러 데이터 소스의 데이터도 포함할 수 있습니다. 기존 데이터 소스와의 상호 작용은 `DataAdapter`를 통해 제어됩니다.  

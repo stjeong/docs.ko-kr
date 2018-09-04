@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 2a0d716c3689b506ad29d99f006f1a4bb7c53a3a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 61e8be6f7f621340a684bff69ec5c9d64ab36c61
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33507031"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43565192"
 ---
 # <a name="custom-binding-security"></a>Custom Binding Security
 이 샘플에서는 사용자 지정 바인딩을 사용하여 보안을 구성하는 방법을 보여 줍니다. 여기서는 사용자 지정 바인딩을 사용하여 메시지를 안전하게 전송하고 메시지 수준 보안을 가능하게 하는 방법을 보여 줍니다. 이러한 방법은 클라이언트와 서비스 간에 메시지를 전송하는 데 보안 전송이 요구되면서 동시에 메시지가 메시지 수준에서 보호되어야 하는 경우에 유용합니다. 이 구성은 시스템 제공 바인딩에서는 지원되지 않습니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "33507031"
   
 -   Windows 메시지 보안  
   
- 사용자 지정 바인딩 구성은 메시지 수준 보안을 동시에 사용하도록 하여 보안 전송을 가능하게 합니다. 바인딩 요소의 순서는 각 채널 스택의 계층을 나타내기 때문에 사용자 지정 바인딩을 정의에서 중요 (참조 [사용자 지정 바인딩을](../../../../docs/framework/wcf/extending/custom-bindings.md)). 다음 샘플 구성과 같이 사용자 지정 바인딩은 서비스 및 클라이언트 구성 파일에 정의합니다.  
+ 사용자 지정 바인딩 구성은 메시지 수준 보안을 동시에 사용하도록 하여 보안 전송을 가능하게 합니다. 바인딩 요소의 순서는 사용자 지정 바인딩을 정의 된 각 채널 스택의 계층을 나타내므로 중요 (참조 [사용자 지정 바인딩을](../../../../docs/framework/wcf/extending/custom-bindings.md)). 다음 샘플 구성과 같이 사용자 지정 바인딩은 서비스 및 클라이언트 구성 파일에 정의합니다.  
   
 ```xml  
 <bindings>  
@@ -59,7 +59,7 @@ ms.locfileid: "33507031"
 </behaviors>  
 ```  
   
- 또한 사용자 지정 바인딩은 기본 자격 증명 형식인 Windows 자격 증명 형식의 메시지 보안을 사용합니다.  이러한 작업은 `security` 바인딩 요소에 의해 수행됩니다. Kerberos 인증 메커니즘이 사용 가능한 경우 클라이언트 및 서비스는 모두 메시지 수준 보안을 사용하여 인증됩니다. Active Directory 환경에서 샘플이 실행될 경우 이 방법이 사용됩니다. Kerberos 인증 메커니즘을 사용할 수 없는 경우에는 NTLM 인증이 사용됩니다. NTLM은 서비스에 대해 클라이언트를 인증하지만 클라이언트에 대해 서비스를 인증하지는 않습니다. `security` 바인딩 요소는 사용 하도록 구성 된 `SecureConversation``authenticationType`, 결과 클라이언트와 서비스 모두에 보안 세션이 만들어집니다. 이러한 구성은 서비스의 이중 계약을 사용할 때 필요합니다.  
+ 또한 사용자 지정 바인딩은 기본 자격 증명 형식인 Windows 자격 증명 형식의 메시지 보안을 사용합니다.  이러한 작업은 `security` 바인딩 요소에 의해 수행됩니다. Kerberos 인증 메커니즘이 사용 가능한 경우 클라이언트 및 서비스는 모두 메시지 수준 보안을 사용하여 인증됩니다. Active Directory 환경에서 샘플이 실행될 경우 이 방법이 사용됩니다. Kerberos 인증 메커니즘을 사용할 수 없는 경우에는 NTLM 인증이 사용됩니다. NTLM은 서비스에 대해 클라이언트를 인증하지만 클라이언트에 대해 서비스를 인증하지는 않습니다. `security` 바인딩 요소를 사용 하도록 구성 `SecureConversation``authenticationType`, 그러면 클라이언트와 서비스 모두에 보안 세션을 생성 합니다. 이러한 구성은 서비스의 이중 계약을 사용할 때 필요합니다.  
   
  샘플을 실행하면 작업 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
@@ -107,11 +107,11 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-3.  지침에 따라 단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+3.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 ### <a name="to-run-the-sample-on-the-same-computer"></a>단일 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -124,7 +124,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
 3.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
   
-4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 ### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -136,12 +136,12 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
     3.  Setup.bat 및 Cleanup.bat 파일을 서비스 컴퓨터로 복사합니다.  
   
-    4.  관리자 권한으로 연 Visual Studio 명령 프롬프트에 다음 명령을 실행: `Setup.bat service`합니다. 이렇게 하면 배치 파일이 실행된 컴퓨터의 이름과 일치하는 주체 이름을 가진 서비스 인증서가 만들어집니다.  
+    4.  관리자 권한으로 연 Visual Studio 명령 프롬프트에서 다음 명령을 실행: `Setup.bat service`합니다. 이렇게 하면 배치 파일이 실행된 컴퓨터의 이름과 일치하는 주체 이름을 가진 서비스 인증서가 만들어집니다.  
   
         > [!NOTE]
         >  Setup.bat 배치 파일은 Visual Studio 2010 명령 프롬프트에서 실행되도록 디자인되었습니다. PATH 환경 변수는 SDK가 설치되는 디렉터리를 가리켜야 합니다. 이 환경 변수는 Visual Studio 2010 명령 프롬프트 내에서 자동으로 설정됩니다.  
   
-    5.  변경 된 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) 이전 단계에서 생성 된 인증서의 주체 이름을 반영 하도록 Service.exe.config 파일 내부.  
+    5.  변경 된 [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) 이전 단계에서 생성 된 인증서의 주체 이름을 반영 하도록 Service.exe.config 파일에서 합니다.  
   
     6.  명령 프롬프트에서 Service.exe를 실행합니다.  
   
@@ -180,7 +180,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
         </client>  
         ```  
   
-    7.  도메인 환경에서 NetworkService 또는 LocalSystem 계정이 아닌 계정으로 서비스가 실행 중이면 서비스를 실행하는 데 사용되는 해당 계정에 기초하여 적절한 UPN 또는 SPN을 설정하기 위해 클라이언트의 App.config 파일에서 서비스 끝점에 대한 끝점 ID를 수정해야 할 수 있습니다. 끝점 id에 대 한 자세한 내용은 참조는 [서비스 Id 및 인증](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md) 항목입니다.  
+    7.  도메인 환경에서 NetworkService 또는 LocalSystem 계정이 아닌 계정으로 서비스가 실행 중이면 서비스를 실행하는 데 사용되는 해당 계정에 기초하여 적절한 UPN 또는 SPN을 설정하기 위해 클라이언트의 App.config 파일에서 서비스 엔드포인트에 대한 엔드포인트 ID를 수정해야 할 수 있습니다. 끝점 id에 대 한 자세한 내용은 참조는 [서비스 Id 및 인증](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md) 항목입니다.  
   
     8.  명령 프롬프트에서 Client.exe를 실행합니다.  
   

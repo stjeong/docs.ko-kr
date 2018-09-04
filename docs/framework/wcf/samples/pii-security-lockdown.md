@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: ec8af8c7df9335774b1f3953f88c2aad438963b6
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: ca85a620638509e183703f7e80c01ea20fadbc81
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33809032"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555198"
 ---
 # <a name="pii-security-lockdown"></a>PII 보안 잠금
-이 샘플에는 Windows Communication Foundation (WCF) 서비스의 여러 보안 관련 기능을 제어 하는 방법을 보여 줍니다.  
+이 샘플에 사용 하 여 Windows Communication Foundation (WCF) 서비스의 여러 보안 관련 기능을 제어 하는 방법을 보여 줍니다.  
   
 -   서비스의 구성 파일에서 중요한 정보 암호화  
   
@@ -25,31 +25,31 @@ ms.locfileid: "33809032"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## <a name="discussion"></a>토론  
- 이러한 각 기능을 별개로 사용하거나 함께 사용하여 서비스 보안의 여러 측면을 제어할 수 있습니다. WCF 서비스를 보안 하기 위한 최선의 가이드는 아닙니다.  
+ 이러한 각 기능을 별개로 사용하거나 함께 사용하여 서비스 보안의 여러 측면을 제어할 수 있습니다. WCF 서비스를 보호 하기 위한 최선의 가이드는 아닙니다.  
   
  .NET Framework는 데이터베이스에 연결하기 위한 연결 문자열과 같은 중요한 정보를 포함할 수 있습니다. 공유된 웹 호스팅 시나리오에서는 서비스의 구성 파일에 포함된 데이터가 노출되지 않도록 구성 파일에서 이 정보를 암호화하는 것이 바람직할 수 있습니다. .NET Framework 2.0 이상에는 Windows DPAPI(데이터 보호 응용 프로그래밍 인터페이스) 또는 RSA 암호화 공급자를 사용하여 구성 파일의 일부를 암호화하는 기능이 있습니다. DPAPI 또는 RSA를 사용하는 aspnet_regiis.exe는 구성 파일의 특정 부분을 암호화할 수 있습니다.  
   
- 웹 호스팅 시나리오에서는 다른 서비스의 하위 디렉터리에 서비스를 가질 수 있습니다. 구성 값을 결정하기 위한 기본 의미 체계를 사용하면 중첩된 디렉터리의 구성 파일이 부모 디렉터리의 구성 값을 재정의할 수 있습니다. 특정 상황에서는 다양한 이유로 인해 이 기능이 적합하지 않을 수 있습니다. 사용 하 여 중첩된 된 서비스를 실행할 때 예외를 생성 하도록 중첩 된 구성 구성 값의 잠금 WCF 서비스를 구성 하는 지원 구성 값을 재정의 합니다.  
+ 웹 호스팅 시나리오에서는 다른 서비스의 하위 디렉터리에 서비스를 가질 수 있습니다. 구성 값을 결정하기 위한 기본 의미 체계를 사용하면 중첩된 디렉터리의 구성 파일이 부모 디렉터리의 구성 값을 재정의할 수 있습니다. 특정 상황에서는 다양한 이유로 인해 이 기능이 적합하지 않을 수 있습니다. 구성 값을 재정의 하는 WCF 서비스 구성에서는 중첩된 된 서비스를 사용 하 여 실행 될 때 예외를 생성 되므로 중첩 된 구성에 구성 값을 잠금.  
   
- 이 샘플에서는 사용자 이름 및 암호와 같은 추적 및 메시지 로그의 알려진 PII(개인적으로 식별할 수 있는 정보)의 로깅을 제어하는 방법을 보여 줍니다. 기본적으로 알려진 PII의 로깅은 사용되지 않지만 특정 상황에서는 응용 프로그램 디버깅을 위해 PII의 로깅이 중요할 수 있습니다. 이 샘플에 따라는 [시작](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 또한 이 샘플에서는 추적 및 메시지 로깅을 사용합니다. 자세한 내용은 참조는 [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) 샘플.  
+ 이 샘플에서는 사용자 이름 및 암호와 같은 추적 및 메시지 로그의 알려진 PII(개인적으로 식별할 수 있는 정보)의 로깅을 제어하는 방법을 보여 줍니다. 기본적으로 알려진 PII의 로깅은 사용되지 않지만 특정 상황에서는 응용 프로그램 디버깅을 위해 PII의 로깅이 중요할 수 있습니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 또한 이 샘플에서는 추적 및 메시지 로깅을 사용합니다. 자세한 내용은 참조는 [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) 샘플입니다.  
   
 ## <a name="encrypting-configuration-file-elements"></a>구성 파일 요소 암호화  
  공유된 웹 호스팅 환경에서의 보안을 위해 중요한 정보가 포함된 데이터베이스 연결 문자열과 같은 특정 구성 요소를 암호화하는 것이 바람직할 수 있습니다. .NET Framework 폴더(예: %WINDIR%\Micrsoft.NET\Framework\v4.0.20728)에 있는 aspnet_regiis.exe 도구를 사용하여 구성 요소를 암호화할 수 있습니다.  
   
 #### <a name="to-encrypt-the-values-in-the-appsettings-section-in-webconfig-for-the-sample"></a>샘플의 Web.config에서 appSettings 섹션의 값을 암호화하려면  
   
-1.  시작->실행을 사용하여 명령 프롬프트를 엽니다. 에 입력 `cmd` 클릭 **확인**합니다.  
+1.  시작->실행을 사용하여 명령 프롬프트를 엽니다. 입력 `cmd` 누릅니다 **확인**합니다.  
   
 2.  `cd %WINDIR%\Microsoft.NET\Framework\v4.0.20728` 명령을 실행하여 현재 .NET Framework 디렉터리로 이동합니다.  
   
 3.  `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"` 명령을 실행하여 Web.config 폴더에서 appSettings 구성 설정을 암호화합니다.  
   
- ASP.NET 구성의 DPAPI에 방법을 참조 하 여 구성 파일의 섹션을 암호화 하는 방법에 대 한 자세한 정보를 확인할 수 있습니다 ([보안 ASP.NET 응용 프로그램: 인증, 권한 부여 및 보안 통신](http://go.microsoft.com/fwlink/?LinkId=95137)) 및 ASP.NET 구성의 RSA의 사용 방법 ([방법: ASP.NET 2.0 RSA를 사용 하 여의 구성 섹션 암호화](http://go.microsoft.com/fwlink/?LinkId=95138)).  
+ 구성 파일의 섹션을 암호화 하는 방법에 대 한 자세한 내용은 ASP.NET 구성의 dpapi 방법은 참조 하 여 찾을 수 있습니다 ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)) 및 ASP.NET 구성의 RSA의 사용 방법 ([방법: ASP.NET 2.0를 사용 하 여 RSA의 구성 섹션 암호화](https://go.microsoft.com/fwlink/?LinkId=95138)).  
   
 ## <a name="locking-configuration-file-elements"></a>구성 파일 요소 잠금  
  웹 호스팅 시나리오에서는 서비스의 하위 디렉터리에 서비스를 가질 수 있습니다. 이러한 상황에서는 Machine.config의 값을 검사한 다음 디렉터리 트리를 내려가면서 부모 디렉터리의 모든 Web.config 파일과 병합하고 마지막으로 서비스가 포함된 디렉터리의 Web.config 파일을 병합함으로써 하위 디렉터리의 서비스에 대한 구성 값을 계산합니다. 대부분의 구성 요소에서는 기본적으로 하위 디렉터리의 구성 파일이 부모 디렉터리의 값을 재정의하도록 허용됩니다. 그러나 특정 상황에서는 하위 디렉터리의 구성 파일이 부모 디렉터리 구성에 설정된 값을 재정의하지 못하도록 방지하는 것이 바람직할 수 있습니다.  
@@ -126,23 +126,23 @@ ms.locfileid: "33809032"
   
  또한 DPAPI 및 RSA를 사용하여 구성 파일 요소를 암호화할 수 있습니다. 자세한 내용은 다음 링크를 참조하세요.  
   
--   [보안 ASP.NET 응용 프로그램 빌드: 인증, 권한 부여 및 보안 통신](http://go.microsoft.com/fwlink/?LinkId=95137)  
+-   [보안 된 ASP.NET 응용 프로그램 빌드: 인증, 권한 부여 및 보안 통신](https://go.microsoft.com/fwlink/?LinkId=95137)  
   
--   [방법: ASP.NET 2.0에서에서 구성 섹션을 암호화 하 RSA를 사용 하 여](http://go.microsoft.com/fwlink/?LinkId=95138)  
+-   [방법: ASP.NET 2.0에서에서 구성 섹션을 암호화 하 RSA를 사용 하 여](https://go.microsoft.com/fwlink/?LinkId=95138)  
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  필요한 경우 부모 노드가 추가되도록 Machine.config를 편집하여 `enableLoggingKnownPii` 특성을 `true`로 설정합니다.  
   
 3.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-4.  지침에 따라 단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+4.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 #### <a name="to-clean-up-the-sample"></a>샘플을 정리하려면  
   
 1.  Machine.config를 편집하여 `enableLoggingKnownPii` 특성을 `false`로 설정합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

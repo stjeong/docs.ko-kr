@@ -10,11 +10,11 @@ helpviewer_keywords:
 - security policy [Windows Forms], Windows Forms
 ms.assetid: 932d438a-5285-46d8-a958-8c93d0ad6cae
 ms.openlocfilehash: 75016e9e04cf47782add18c87f7c677931743a4e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397252"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43556180"
 ---
 # <a name="windows-forms-security"></a>Windows Forms 보안
 Windows Forms 코드 기반 (보안 수준이 설정 되는 코드를 실행 하는 사용자에 관계 없이 코드에 대 한) 보안 모델을 갖추고 있습니다. 컴퓨터 시스템에 이미 있는 위치에 있을 수 있는 모든 보안 스키마 외에도입니다. (예: 영역을 기반으로 보안 Internet Explorer에서 사용할 수 있는) 브라우저 또는 운영 체제 (예: Windows NT의 자격 증명 기반 보안)에 포함할 수 있습니다.  

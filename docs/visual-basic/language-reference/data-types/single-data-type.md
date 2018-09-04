@@ -21,11 +21,11 @@ helpviewer_keywords:
 - numbers [Visual Basic], floating point
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
 ms.openlocfilehash: 98433c0f1d1008664bb994f3b43fe48a753a432c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43483647"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43557383"
 ---
 # <a name="single-data-type-visual-basic"></a>Single 데이터 형식(Visual Basic)
 부호 있는 IEEE 32 비트 (4 바이트) 단 정밀도 부동 소수점 숫자 값에서-3.4028235E + 38 까지인 저장에서-1.401298E-45 1.401298E에서 음수 값을-45 3.4028235E + 38 양수 값에 대 한 합니다. 단 정밀도 숫자는 실수의 근사값을 저장합니다.  

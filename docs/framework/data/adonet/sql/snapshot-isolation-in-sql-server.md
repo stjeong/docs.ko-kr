@@ -5,18 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
-ms.openlocfilehash: b9167d7a92ba1b4951d0a9e3c9eea3565bbdc196
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 52c5dba1a21b0e8d8e5af1dc159941e5f4b4aa5f
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365017"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43562772"
 ---
 # <a name="snapshot-isolation-in-sql-server"></a>SQL Server의 스냅숏 격리
 스냅숏 격리를 통해 OLTP 응용 프로그램의 동시성이 향상됩니다.  
   
 ## <a name="understanding-snapshot-isolation-and-row-versioning"></a>스냅샷 격리 및 행 버전 관리 이해  
- 각 트랜잭션에 대 한 업데이트 된 행 버전에 유지 됩니다 스냅샷 격리가 활성화 되 면 **tempdb**합니다. 고유한 트랜잭션 시퀀스 번호가 각 트랜잭션을 식별하며 행 버전에 대해 이러한 고유 번호가 기록됩니다. 트랜잭션은 트랜잭션 시퀀스 번호 이전의 시퀀스 번호를 가진 최근 행 버전에서 작동합니다. 트랜잭션이 시작된 이후에 만들어진 새로운 행 버전은 트랜잭션에서 무시됩니다.  
+ 각 트랜잭션에 대해 업데이트 된 행 버전에 유지 됩니다 스냅숏 격리 활성화 되 면 **tempdb**합니다. 고유한 트랜잭션 시퀀스 번호가 각 트랜잭션을 식별하며 행 버전에 대해 이러한 고유 번호가 기록됩니다. 트랜잭션은 트랜잭션 시퀀스 번호 이전의 시퀀스 번호를 가진 최근 행 버전에서 작동합니다. 트랜잭션이 시작된 이후에 만들어진 새로운 행 버전은 트랜잭션에서 무시됩니다.  
   
  "스냅샷"이라는 용어는 트랜잭션의 모든 쿼리가 트랜잭션이 시작되는 시점에서 데이터베이스 상태에 따라 데이터베이스의 동일한 버전 또는 스냅샷을 표시하는 것을 의미합니다. 스냅샷 트랜잭션의 기본 데이터 행이나 데이터 페이지에서는 잠금이 인식되지 않습니다. 따라서 이전에 완료되지 않은 트랜잭션에 의해 차단되지 않고 다른 트랜잭션을 실행할 수 있습니다. 일반적으로 트랜잭션은 SQL Server의 기본 READ COMMITTED 격리 수준 아래에 있으므로 데이터를 수정하는 트랜잭션이 데이터를 읽는 트랜잭션을 차단하지 않으며 데이터를 읽는 트랜잭션이 데이터를 쓰는 트랜잭션을 차단하지 않습니다. 또한 이러한 비블로킹 동작이 복잡한 트랜잭션의 교착 상태 가능성을 크게 줄여 줍니다.  
   
@@ -59,24 +59,24 @@ SET READ_COMMITTED_SNAPSHOT ON
 -   READ_COMMITTED_SNAPSHOT 데이터베이스 옵션은 데이터베이스에서 스냅샷 격리를 활성화한 경우 기본 READ COMMITTED 격리 수준의 동작을 결정합니다. READ_COMMITTED_SNAPSHOT ON을 명시적으로 지정하지 않은 경우 READ COMMITTED가 모든 암시적 트랜잭션에 적용됩니다. 따라서 READ_COMMITTED_SNAPSHOT OFF(기본값)를 설정할 때와 똑같이 작동합니다. READ_COMMITTED_SNAPSHOT OFF가 적용되는 경우 데이터베이스 엔진에서 공유 잠금을 사용하여 기본 격리 수준을 적용합니다. READ_COMMITTED_SNAPSHOT 데이터베이스 옵션을 ON으로 설정하면 데이터베이스 엔진에서 잠금을 사용하는 대신에 행 버전 관리 및 스냅샷 격리를 기본값으로 사용하여 데이터를 보호합니다.  
   
 ## <a name="how-snapshot-isolation-and-row-versioning-work"></a>스냅샷 격리 및 행 버전 관리의 작동 방법  
- SQL Server 데이터베이스 엔진에 원래 행의 복사본을 저장 한 행이 업데이트 될 때마다 스냅숏 격리 수준을 사용 하는 경우 **tempdb**, 행에 트랜잭션 시퀀스 번호를 추가 합니다. 발생하는 이벤트 시퀀스는 다음과 같습니다.  
+ SQL Server 데이터베이스 엔진의 원래 행의 복사본을 저장 SNAPSHOT 격리 수준을 사용 하는 경우 행이 업데이트 될 때마다 **tempdb**를 행에 트랜잭션 시퀀스 번호를 추가 합니다. 발생하는 이벤트 시퀀스는 다음과 같습니다.  
   
 -   새 트랜잭션이 시작되고 트랜잭션 시퀀스 번호가 할당됩니다.  
   
--   데이터베이스 엔진이 트랜잭션 내에서 행을 읽고 및에서 행 버전 검색 **tempdb** 근접 한 트랜잭션 시퀀스 번호 보다 낮으면서 시퀀스 번호에 가장 합니다.  
+-   데이터베이스 엔진이 트랜잭션 내에서 행을 읽고에서 행 버전을 검색 **tempdb** 시퀀스 번호에 근접 한 트랜잭션 시퀀스 번호 보다 낮으면서 가장 합니다.  
   
 -   데이터베이스 엔진에서 스냅샷 트랜잭션이 시작되었을 때 커밋되지 않은 활성 트랜잭션의 트랜잭션 시퀀스 번호 목록에 트랜잭션 시퀀스 번호가 들어 있지 않은지 확인합니다.  
   
--   트랜잭션이 읽는 행의 버전 **tempdb** 트랜잭션 시작할 당시의 합니다. 트랜잭션이 시작된 후 삽입된 새 행은 해당 시퀀스 번호 값이 트랜잭션 시퀀스 번호 값보다 높으므로 표시되지 않습니다.  
+-   트랜잭션이에서 행의 버전을 읽습니다 **tempdb** 트랜잭션 시작 당시의 합니다. 트랜잭션이 시작된 후 삽입된 새 행은 해당 시퀀스 번호 값이 트랜잭션 시퀀스 번호 값보다 높으므로 표시되지 않습니다.  
   
--   현재 트랜잭션이 이기 때문에 행 버전을 사용 하 여 트랜잭션이 시작 된 후 삭제 된 행은 표시 **tempdb** 에 낮은 시퀀스 번호 값입니다.  
+-   현재 트랜잭션에서 행 버전이 있을 것 때문에 트랜잭션이 시작 된 후 삭제 된 행이 나타납니다 **tempdb** 낮은 시퀀스 번호 값입니다.  
   
  스냅샷 격리의 결과로 트랜잭션에서 기본 테이블에 잠금을 고려하거나 배치하지 않고 트랜잭션을 시작할 때 존재했던 그대로 모든 데이터를 표시합니다. 따라서 경합이 있는 상황에서는 성능이 향상될 수 있습니다.  
   
  스냅샷 트랜잭션은 다른 트랜잭션에서 행이 업데이트되는 것을 방지하는 잠금을 유지하면서 항상 낙관적 동시성 제어를 사용합니다. 스냅샷 트랜잭션에서 트랜잭션이 시작된 후 변경된 행에 대한 업데이트를 커밋하려고 하면 트랜잭션이 롤백되고 오류가 발생합니다.  
   
 ## <a name="working-with-snapshot-isolation-in-adonet"></a>ADO.NET에서 스냅샷 격리 사용  
- 스냅샷 격리는 ADO.NET에서 <xref:System.Data.SqlClient.SqlTransaction> 클래스를 통해 지원됩니다. 시작 해야 데이터베이스에 스냅숏 격리 설정 하지만 READ_COMMITTED_SNAPSHOT ON에 대 한 구성 되어 있지 않습니다는 <xref:System.Data.SqlClient.SqlTransaction> 를 사용 하는 **IsolationLevel.Snapshot** 를 호출할 때 열거형 값의 <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> 메서드입니다. 이 코드 조각에서는 연결을 열려 있는 <xref:System.Data.SqlClient.SqlConnection> 개체로 가정합니다.  
+ 스냅샷 격리는 ADO.NET에서 <xref:System.Data.SqlClient.SqlTransaction> 클래스를 통해 지원됩니다. 데이터베이스에 스냅숏 격리 설정 하지만 READ_COMMITTED_SNAPSHOT ON에 대 한 구성 되지 않은 경우 시작 해야 합니다는 <xref:System.Data.SqlClient.SqlTransaction> 를 사용 하 여는 **IsolationLevel.Snapshot** 호출 하는 경우에 열거형 값의 <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> 메서드입니다. 이 코드 조각에서는 연결을 열려 있는 <xref:System.Data.SqlClient.SqlConnection> 개체로 가정합니다.  
   
 ```vb  
 Dim sqlTran As SqlTransaction = _  
@@ -91,17 +91,17 @@ SqlTransaction sqlTran =
 ### <a name="example"></a>예제  
  다음 예제에서는 잠겨 있는 데이터에 대한 액세스를 시도하여 다른 격리 수준이 작동하는 방법을 보여 줍니다. 이 예제는 프로덕션 코드에는 사용할 수 없습니다.  
   
- 에 연결 하는 코드는 **AdventureWorks** 예제 SQL Server에서 데이터베이스를 라는 테이블을 만듭니다 **TestSnapshot** 데이터의 한 행을 삽입 합니다. 이 코드에서는 ALTER DATABASE Transact-SQL 문을 사용하여 데이터베이스에 스냅샷 격리 기능을 설정하지만 READ_COMMITTED_SNAPSHOT 옵션을 설정하지 않으므로 기본 READ COMMITTED 격리 수준 동작이 그대로 적용됩니다. 그런 다음 이 코드에서는 다음 작업을 수행합니다.  
+ 코드에 연결 합니다 **AdventureWorks** 라는 테이블을 만들고 샘플 데이터베이스에 SQL Server **TestSnapshot** 데이터의 한 행을 삽입 합니다. 이 코드에서는 ALTER DATABASE Transact-SQL 문을 사용하여 데이터베이스에 스냅샷 격리 기능을 설정하지만 READ_COMMITTED_SNAPSHOT 옵션을 설정하지 않으므로 기본 READ COMMITTED 격리 수준 동작이 그대로 적용됩니다. 그런 다음 이 코드에서는 다음 작업을 수행합니다.  
   
 -   sqlTransaction1을 시작하지만 완료하지는 않습니다. 이 트랜잭션은 SERIALIZABLE 격리 수준을 사용하여 업데이트 트랜잭션을 시작합니다. 이렇게 하면 테이블이 잠깁니다.  
   
--   두 번째 연결 하 고 데이터를 읽는 SNAPSHOT 격리 수준을 사용 하 여 두 번째 트랜잭션을 시작 함으로써는 **TestSnapshot** 테이블입니다. 스냅샷 격리가 활성화되므로 이 트랜잭션에서 sqlTransaction1이 시작되기 전에 존재하는 데이터를 읽을 수 있습니다.  
+-   두 번째 연결이 열리고의 데이터를 읽을 SNAPSHOT 격리 수준을 사용 하 여 두 번째 트랜잭션을 시작 합니다 **TestSnapshot** 테이블입니다. 스냅샷 격리가 활성화되므로 이 트랜잭션에서 sqlTransaction1이 시작되기 전에 존재하는 데이터를 읽을 수 있습니다.  
   
 -   세 번째 연결을 열고 READ COMMITTED 격리 수준을 사용하여 트랜잭션을 시작함으로써 테이블의 데이터를 읽으려고 합니다. 이 경우 첫 번째 트랜잭션에서 테이블에 있는 잠금을 통과하여 읽을 수 없기 때문에 코드에서 데이터를 읽을 수 없으며 제한 시간이 초과됩니다. REPEATABLE READ 및 SERIALIZABLE 격리 수준에서도 첫 번째 트랜잭션에 있는 잠금을 통과하여 읽을 수 없으므로 이러한 격리 수준이 사용되는 경우 동일한 결과가 발생합니다.  
   
 -   네 번째 연결을 열고 READ UNCOMMITTED 격리 수준을 사용하여 트랜잭션을 시작합니다. 이 격리 수준은 sqlTransaction1에서 커밋되지 않은 값의 더티 읽기를 수행합니다. 첫 번째 트랜잭션이 커밋되지 않는 경우 이 값은 데이터베이스에 실제로 존재하지 않습니다.  
   
--   첫 번째 트랜잭션을 롤백하고 하 고 삭제 하 여 정리 된 **TestSnapshot** 테이블 및 해제에 대 한 스냅숏 격리에 대 한는 **AdventureWorks** 데이터베이스입니다.  
+-   첫 번째 트랜잭션을 롤백하고 고 삭제 하 여 정리 합니다 **TestSnapshot** 테이블과 해제 스냅샷 격리를 **AdventureWorks** 데이터베이스입니다.  
   
 > [!NOTE]
 >  다음 예제에서는 연결 풀링을 해제한 상태에서 동일한 연결 문자열을 사용합니다. 연결이 풀링된 경우, 연결의 격리 수준을 재설정하더라도 서버에서는 격리 수준이 재설정되지 않습니다. 따라서 풀링된 동일한 내부 연결을 사용하는 후속 연결은 풀링된 연결의 격리 수준으로 설정된 각각의 격리 수준에서 시작됩니다. 연결 풀링을 해제하는 대신 각 연결에 대해 명시적으로 격리 수준을 설정할 수도 있습니다.  
@@ -112,19 +112,19 @@ SqlTransaction sqlTran =
 ### <a name="example"></a>예제  
  다음 예제에서는 데이터가 수정될 때 나타나는 스냅샷 격리의 동작을 보여 줍니다. 이 코드에서는 다음 작업을 수행합니다.  
   
--   에 연결 하는 **AdventureWorks** 예제 데이터베이스 및 하면 스냅숏 격리 합니다.  
+-   에 연결 합니다 **AdventureWorks** 샘플 데이터베이스 및 하면 스냅숏 격리 합니다.  
   
--   라는 테이블을 만듭니다 **TestSnapshotUpdate** 샘플 데이터의 세 개의 행을 삽입 합니다.  
+-   라는 테이블을 만듭니다 **TestSnapshotUpdate** 세 개의 샘플 데이터 행을 삽입 합니다.  
   
 -   SNAPSHOT 격리를 사용하여 sqlTransaction1을 시작하지만 완료하지는 않습니다. 트랜잭션에서 데이터 행 세 개가 선택됩니다.  
   
--   두 번째 만듭니다 **SqlConnection** 를 **AdventureWorks** sqlTransaction1에서 선택한 행 중 하나에서 값을 업데이트 하는 READ COMMITTED 격리 수준을 사용 하 여 두 번째 트랜잭션을 만듭니다.  
+-   두 번째를 만듭니다 **SqlConnection** 하 **AdventureWorks** sqlTransaction1에서 선택한 행 중 하나에 값을 업데이트 하는 READ COMMITTED 격리 수준을 사용 하 여 두 번째 트랜잭션을 만듭니다.  
   
 -   sqlTransaction2를 커밋합니다.  
   
--   sqlTransaction1로 돌아가서 sqlTransaction1이 커밋된 동일한 행에 대한 업데이트를 시도합니다. 오류 3960이 발생하고 sqlTransaction1이 자동으로 롤백됩니다. **SqlException.Number** 및 **SqlException.Message** 콘솔 창에 표시 됩니다.  
+-   sqlTransaction1로 돌아가서 sqlTransaction1이 커밋된 동일한 행에 대한 업데이트를 시도합니다. 오류 3960이 발생하고 sqlTransaction1이 자동으로 롤백됩니다. 합니다 **SqlException.Number** 하 고 **SqlException.Message** 콘솔 창에 표시 됩니다.  
   
--   스냅숏 격리를 해제 하려면 정리 코드를 실행 **AdventureWorks** 및 삭제는 **TestSnapshotUpdate** 테이블입니다.  
+-   스냅숏 격리를 해제 하려면 정리 코드를 실행 **AdventureWorks** 하 고 삭제 합니다 **TestSnapshotUpdate** 테이블.  
   
  [!code-csharp[DataWorks SnapshotIsolation.DemoUpdate#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/CS/source.cs#1)]
  [!code-vb[DataWorks SnapshotIsolation.DemoUpdate#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/VB/source.vb#1)]  
@@ -143,4 +143,4 @@ SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

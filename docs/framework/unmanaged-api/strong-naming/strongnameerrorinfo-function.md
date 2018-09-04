@@ -21,14 +21,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 9ad328d484ba01e22557d7d23d1cfa21813de9c8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481971"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43560590"
 ---
 # <a name="strongnameerrorinfo-function"></a>StrongNameErrorInfo 함수
-강력한 이름의 함수 중 하나에 의해 발생 하는 마지막 오류 코드를 가져옵니다.  
+강력한 이름 함수 중 하나에 의해 발생하는 마지막 오류 코드를 가져옵니다.  
   
  이 함수는 더 이상 사용 되지 않습니다.  
   
@@ -54,4 +54,4 @@ HRESULT StrongNameErrorInfo ();
  **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
- [강력한 이름 전역 정적 함수](https://msdn.microsoft.com/library/efa715df-e8cc-48f2-9ec4-26586f0dc8d0)
+ [강력한 이름 지정 글로벌 정적 함수](https://msdn.microsoft.com/library/efa715df-e8cc-48f2-9ec4-26586f0dc8d0)

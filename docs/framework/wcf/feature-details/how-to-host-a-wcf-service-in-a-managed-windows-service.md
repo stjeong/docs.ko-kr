@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 8e37363b-4dad-4fb6-907f-73c30fac1d9a
 ms.openlocfilehash: edbc67ddf20eee6ebbe9091faa43bc1de91809d2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466256"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43557906"
 ---
 # <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>방법: 관리되는 Windows 서비스에서 WCF 서비스 호스팅
 

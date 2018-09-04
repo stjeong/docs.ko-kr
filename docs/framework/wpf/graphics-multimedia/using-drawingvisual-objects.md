@@ -9,11 +9,11 @@ helpviewer_keywords:
 - DrawingVisual objects in visual layer [WPF]
 ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d
 ms.openlocfilehash: 799892424f92782d71b9a35e76d722d1725815ea
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43390956"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43556102"
 ---
 # <a name="using-drawingvisual-objects"></a>DrawingVisual 개체 사용
 이 항목에서는 사용 하는 방법의 개요를 제공 <xref:System.Windows.Media.DrawingVisual> 개체는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 시각적 계층입니다.  

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - COM objects, referencing
 - interop assemblies
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
-ms.openlocfilehash: 49f3da396ca5cd48b0cf454ce1ecd5422c28e38f
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.openlocfilehash: 34f46a1ea9c728cbaeb0456f8a6751ff529f2903
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199367"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555224"
 ---
 # <a name="how-to-reference-com-objects-from-visual-basic"></a>방법: Visual Basic에서 COM 개체 참조
 Visual basic의 경우 형식 라이브러리가 포함 된 COM 개체에 대 한 참조를 추가 합니다. COM 라이브러리에 대 한 interop 어셈블리를 만들이 필요 합니다. COM 개체의 멤버에 대 한 참조는 interop 어셈블리에 라우팅되어 실제 COM 개체에 전달 됩니다. Interop 어셈블리에 COM 개체의 응답은 라우팅되고 전달할 프로그램 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램입니다.  
@@ -55,7 +55,7 @@ Visual basic의 경우 형식 라이브러리가 포함 된 COM 개체에 대 �
 ## <a name="see-also"></a>참고 항목  
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
  [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe(형식 라이브러리 내보내기)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
+ [Tlbexp.exe(형식 라이브러리 내보내기)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
  [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
  [상호 운용성 문제 해결](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
  [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)

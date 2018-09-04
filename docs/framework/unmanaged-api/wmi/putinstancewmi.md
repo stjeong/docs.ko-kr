@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 67abf017040b9e6bbe9b10e560c8d57c124ae84e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397515"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43658966"
 ---
 # <a name="putinstancewmi-function"></a>PutInstanceWmi 함수
-만들거나 기존 클래스의 인스턴스를 업데이트 합니다. 인스턴스를 WMI 리포지토리에 기록 됩니다. 
+기존 클래스의 인스턴스를 만들거나 업데이트합니다. 인스턴스가 WMI 리포지토리에 기록됩니다. 
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

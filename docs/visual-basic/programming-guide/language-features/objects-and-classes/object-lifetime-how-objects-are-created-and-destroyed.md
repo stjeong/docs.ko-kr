@@ -22,12 +22,12 @@ helpviewer_keywords:
 - Sub Dispose destructor
 - garbage collection [Visual Basic], Visual Basic
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
-ms.openlocfilehash: 441fe91c8c884e59c6399d57e7e55bf6591cb1bb
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: 1782748749df171ec8d6e3bc8873b4a42c83c0e6
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754116"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43556057"
 ---
 # <a name="object-lifetime-how-objects-are-created-and-destroyed-visual-basic"></a>개체 수명: 개체가 만들어지고 제거되는 방법(Visual Basic)
 `New` 키워드를 사용하여 클래스의 인스턴스인 개체를 만듭니다. 새 개체를 사용하기 전에 초기화 작업을 수행해야 하는 경우가 많습니다. 일반적인 초기화 작업으로는 파일 열기, 데이터베이스에 연결, 레지스트리 키의 값 읽기 등이 포함됩니다. 호출 하는 절차를 사용 하 여 새 개체의 초기화를 제어 하는 Visual Basic *생성자* (초기화에 대 한 제어를 허용 하는 특수 메서드).  
@@ -148,7 +148,7 @@ End Sub
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.IDisposable.Dispose%2A>  
- [구성 요소의 초기화 및 종료](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
+ [구성 요소의 초기화 및 종료](https://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
  [New 연산자](../../../../visual-basic/language-reference/operators/new-operator.md)  
  [관리되지 않는 리소스 정리](../../../../standard/garbage-collection/unmanaged.md)  
  [Nothing](../../../../visual-basic/language-reference/nothing.md)

@@ -2,12 +2,12 @@
 title: 문자열(F#)
 description: "F # 'string' 유형의 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 표시 하는 방법에 대해 알아봅니다."
 ms.date: 05/16/2016
-ms.openlocfilehash: d8bfce9ac47cb137456e02b1b213fd2c6a53594d
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 7309e93bf0a6518d03a9f850804a4f580e2c96b1
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404274"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43561293"
 ---
 # <a name="strings"></a>문자열
 
@@ -42,7 +42,7 @@ let xmlFragment1 = @"<book author=""Milton, John"" title=""Paradise Lost"">"
 let xmlFragment2 = """<book author="Milton, John" title="Paradise Lost">"""
 ```
 
-코드에서 줄 바꿈이 있는 문자열이 허용 되는 줄 바꿈이 그대로 해석 됩니다 줄 바꿈, 백슬래시 문자 줄 바꿈 앞 마지막 문자가 아닌을 백슬래시 문자를 사용할 때 다음 줄의 선행 공백은 무시 됩니다. 다음 코드는 문자열을 생성 `str1` 에 값을 갖는 `"abc\ndef"` 문자열과 `str2` 에 값을 갖는 `"abcdef"`합니다.
+코드에서 줄 바꿈이 있는 문자열이 허용 되는 줄 바꿈이 그대로 해석 됩니다 줄 바꿈, 백슬래시 문자 줄 바꿈 앞 마지막 문자가 아닌을 백슬래시 문자를 사용할 때 다음 줄에서 선행 공백 무시 됩니다. 다음 코드는 문자열을 생성 `str1` 에 값을 갖는 `"abc\ndef"` 문자열과 `str2` 에 값을 갖는 `"abcdef"`합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1001.fs)]
 

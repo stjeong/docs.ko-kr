@@ -5,11 +5,11 @@ helpviewer_keywords:
 - wsFederationBinding element
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
 ms.openlocfilehash: 943887dd2bf3b309c0663a9eb06e658ee5957844
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43418505"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43555711"
 ---
 # <a name="ltwsfederationhttpbindinggt"></a>&lt;wsFederationHttpBinding&gt;
 WS-Federation을 지원하는 바인딩을 정의합니다.  

@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: aababd75-2335-43e3-ace8-4b7ae84191a8
 ms.openlocfilehash: 7d982b73332a2629ccd32c409e0de6fe1ce6eb98
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43408832"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43556307"
 ---
 # <a name="comparing-guid-and-uniqueidentifier-values"></a>GUID 및 uniqueidentifier 값 비교
 SQL Server의 GUID(Globally Unique Identifier) 데이터 형식은 16바이트 이진 값을 저장하는 `uniqueidentifier` 데이터 형식으로 표현됩니다. GUID는 이진수이며 주로 여러 사이트에 많은 컴퓨터를 가지고 있는 네트워크에서 고유해야 하는 식별자로 사용됩니다. GUID는 Transact-SQL NEWID 함수를 호출하여 생성되며 전체 영역에서 고유성이 보장됩니다. 자세한 내용은 [고유 식별자 (Transact SQL)](/sql/t-sql/data-types/uniqueidentifier-transact-sql)합니다.  

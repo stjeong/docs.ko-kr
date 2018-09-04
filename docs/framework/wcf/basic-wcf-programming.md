@@ -8,34 +8,34 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], basic programming
 - Windows Communication Foundation [WCF], programming
 ms.assetid: 3ae3d498-f43c-4ecc-8cc0-6cbe36b62593
-ms.openlocfilehash: cbdc693197344fe570c1462f6ca3115018eb69d6
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 7095784c2c9e2dc3c0ebafe84b89f9657321e1c5
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33803743"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43558893"
 ---
 # <a name="basic-wcf-programming"></a>기본 WCF 프로그래밍
-이 섹션에서는 Windows Communication Foundation (WCF) 응용 프로그램을 만들기 위한 기본 사항.  
+이 섹션에서는 Windows Communication Foundation (WCF) 응용 프로그램을 만들기 위한 기초를 제공 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [기본 프로그래밍 수명 주기](../../../docs/framework/wcf/basic-programming-lifecycle.md)  
- 설계, 구축 및 WCF 서비스 및 클라이언트 응용 프로그램 배포의 수명 주기에 대해 설명 합니다.  
+ 디자인, 빌드 및 배포 하는 WCF 서비스 및 클라이언트 응용 프로그램의 수명 주기를 설명 합니다.  
   
  [서비스 디자인 및 구현](../../../docs/framework/wcf/designing-and-implementing-services.md)  
  서비스 계약을 디자인 및 구현하고 메시지 교환 패턴을 선택하고 오류 계약 및 기타 서비스 기본 사항을 지정하는 방법에 대해 설명합니다.  
   
  [서비스 구성](../../../docs/framework/wcf/configuring-services.md)  
- 계약 요구 사항을 지원 하 고 로컬 런타임 동작을 사용자 지정 서비스를 게시할 주소를 지정 하는 WCF 서비스를 구성 하는 방법에 설명 합니다.  
+ 계약 요구 사항을 지원 하 고 로컬 런타임 동작을 사용자 지정 서비스를 게시할 주소를 지정 하는 WCF 서비스를 구성 하는 방법을 설명 합니다.  
   
  [서비스 호스팅](../../../docs/framework/wcf/hosting-services.md)  
  응용 프로그램의 기본적인 호스팅 서비스에 대해 설명합니다.  
   
  [클라이언트 빌드](../../../docs/framework/wcf/building-clients.md)  
- 서비스에서 메타 데이터를 가져올, WCF 클라이언트 코드로 변환 하는, 보안 문제를 처리 하 고 빌드, 구성 및 WCF 클라이언트를 호스트 하는 방법을 설명 합니다.  
+ 서비스에서 메타 데이터 가져오기, WCF 클라이언트 코드를 변환 하는, 보안 문제를 처리 하 고 빌드, 구성 및 WCF 클라이언트를 호스트 하는 방법을 설명 합니다.  
   
  [확장성 소개](../../../docs/framework/wcf/introduction-to-extensibility.md)  
- WCF 사용자 지정 솔루션을 만드는 데를 확장 하는 방법에 설명 합니다.  
+ 사용자 지정 솔루션을 만드는 WCF를 확장 하는 방법에 설명 합니다.  
   
  [WCF 문제 해결 퀵 스타트](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md)  
  발생하는 가장 일반적인 문제 중 일부, 이러한 문제를 해결하기 위해 수행할 수 있는 작업 및 문제에 대한 자세한 정보가 있는 위치에 대해 설명합니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "33803743"
   
  [Windows Communication Foundation 도구](../../../docs/framework/wcf/tools.md)  
   
- [Windows Communication Foundation 샘플](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
+ [Windows Communication Foundation 샘플](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
   
  [시작](../../../docs/framework/wcf/samples/getting-started-sample.md)  
   

@@ -5,11 +5,11 @@ ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 2a2a27f788fa84c41ccb818266fffc816237bb48
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486950"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43554966"
 ---
 # <a name="net-native-reflection-api-reference"></a>.NET 네이티브 리플렉션 API 참조
 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 에는 새 예외 형식인 [System.Runtime.CompilerServices.MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), [System.Reflection.MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)및 [System.Reflection.MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)이 포함됩니다. 세 가지 예외 형식 모두에 대해 다음 사항을 확인하세요.  

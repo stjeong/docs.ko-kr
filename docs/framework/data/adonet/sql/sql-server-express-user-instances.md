@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
-ms.openlocfilehash: 0af929de17a29d497ce6cf6c8cb055d416ab8761
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 31c0efbe953b56304c264444082185b9a9227d60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365412"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43658979"
 ---
 # <a name="sql-server-express-user-instances"></a>SQL Server Express 사용자 인스턴스
 Microsoft SQL Server Express Edition(SQL Server Express)은 .NET Framework Data Provider for SQL Server(`SqlClient`)를 사용하는 경우에만 사용 가능한 기능인 사용자 인스턴스를 지원합니다. 사용자 인스턴스는 부모 인스턴스에서 생성된 별도의 SQL Server Express 데이터베이스 엔진 인스턴스입니다. 로컬 컴퓨터에서 관리자가 아닌 사용자는 사용자 인스턴스를 사용하여 SQL Server Express 데이터베이스에 연결할 수 있습니다. 각 인스턴스는 사용자당 하나의 인스턴스를 기준으로 개인 사용자의 보안 컨텍스트 내에서 실행됩니다.  
@@ -24,7 +24,7 @@ Microsoft SQL Server Express Edition(SQL Server Express)은 .NET Framework Data 
 >  사용자 인스턴스는 컴퓨터에서 사용자가 이미 관리자이거나 데이터베이스 사용자가 여러 명인 경우 필요하지 않습니다.  
   
 ## <a name="enabling-user-instances"></a>사용자 인스턴스 활성화  
- 사용자 인스턴스를 생성하려면 SQL Server Express의 부모 인스턴스가 실행 중이어야 합니다. SQL Server Express 설치 되어 있고 명시적으로 사용 하도록 설정 하 또는 실행 하는 시스템 관리자가 사용 하지 않도록 설정 될 때 기본적으로 사용자 인스턴스가 사용 되는지는 **sp_configure** 부모 인스턴스의 시스템 저장 프로시저입니다.  
+ 사용자 인스턴스를 생성하려면 SQL Server Express의 부모 인스턴스가 실행 중이어야 합니다. 사용자 인스턴스는 SQL Server Express 설치 되어 있으며 명시적으로 사용 하도록 설정 하 또는 실행 하는 시스템 관리자가 사용 하지 않도록 설정 될 때 기본적으로 활성화 됩니다 합니다 **sp_configure** 부모 인스턴스의 시스템 저장 프로시저입니다.  
   
 ```  
 -- Enable user instances.  
@@ -37,7 +37,7 @@ sp_configure 'user instances enabled','0'
  사용자 인스턴스의 네트워크 프로토콜은 명명된 로컬 파이프여야 합니다. 사용자 인스턴스는 SQL Server의 원격 인스턴스로 시작될 수 없으며 SQL Server 로그인은 허용되지 않습니다.  
   
 ## <a name="connecting-to-a-user-instance"></a>사용자 인스턴스에 연결  
- `User Instance` 및 `AttachDBFilename` <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> 키워드를 사용는 <xref:System.Data.SqlClient.SqlConnection> 사용자 인스턴스에 연결할 수 있습니다. 사용자 인스턴스는 <xref:System.Data.SqlClient.SqlConnectionStringBuilder>`UserInstance` 및 `AttachDBFilename` 속성에서도 지원됩니다.  
+ `User Instance` 및 `AttachDBFilename` <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> 키워드를 허용을 <xref:System.Data.SqlClient.SqlConnection> 사용자 인스턴스에 연결 합니다. 사용자 인스턴스는 <xref:System.Data.SqlClient.SqlConnectionStringBuilder>`UserInstance` 및 `AttachDBFilename` 속성에서도 지원됩니다.  
   
  아래 표시된 샘플 연결 문자열을 참조하세요.  
   
@@ -58,9 +58,9 @@ Initial Catalog=InstanceDB;
 ```  
   
 > [!NOTE]
->  사용할 수도 있습니다는 <xref:System.Data.SqlClient.SqlConnectionStringBuilder> <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> 및 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> 속성에서 연결 문자열을 작성할 실행 시간입니다.  
+>  사용할 수도 있습니다는 <xref:System.Data.SqlClient.SqlConnectionStringBuilder> <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> 및 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> 런타임 속성에 연결 문자열을 작성 합니다.  
   
-### <a name="using-the-124datadirectory124-substitution-string"></a>사용 하 여 &#124;DataDirectory&#124; 대체 문자열  
+### <a name="using-the-124datadirectory124-substitution-string"></a>사용 하는 &#124;DataDirectory&#124; 대체 문자열  
  ADO.NET 2.0에서는 `AttachDbFileName`(파이프 기호 안에 포함됨) 대체 문자열이 도입되어 `|DataDirectory|`이 확장되었습니다. `DataDirectory`는 `AttachDbFileName`과 함께 사용되어 데이터 파일의 상대 경로를 나타내기 때문에 개발자가 전체 경로를 지정할 필요 없이 데이터 소스의 상대 경로를 기반으로 연결 문자열을 만들 수 있습니다.  
   
  `DataDirectory`가 가리키는 실제 위치는 응용 프로그램 형식에 따라 다릅니다. 이 예제에서 연결된 Northwind.mdf 파일은 응용 프로그램의 \app_data 폴더에 있습니다.  
@@ -119,13 +119,13 @@ private static void OpenSqlConnection()
 >  SQL Server 내부에서 실행되는 CLR(공용 언어 런타임) 코드에서는 사용자 인스턴스가 지원되지 않습니다. 연결 문자열에 <xref:System.InvalidOperationException>를 포함하는 `Open`에서 <xref:System.Data.SqlClient.SqlConnection>이 호출되는 경우 `User Instance=true`이 throw됩니다.  
   
 ## <a name="lifetime-of-a-user-instance-connection"></a>사용자 인스턴스 연결 수명  
- 서비스로 실행되는 SQL Server 버전과 달리 SQL Server Express 인스턴스는 직접 시작하고 중지할 필요가 없습니다. 사용자가 사용자 인스턴스에 로그인하고 연결할 때 사용자 인스턴스가 이미 실행 중이 아닌 경우 시작됩니다. 사용자 인스턴스 데이터베이스에는 `AutoClose` 옵션이 설정되어 있어서 일정 시간 동안 비활성 상태이면 데이터베이스가 자동으로 종료됩니다. 시작된 sqlservr.exe 프로세스는 인스턴스에 대한 마지막 연결이 닫힌 후 제한된 시간 제한 기간 동안 계속해서 실행되므로, 시간 제한이 만료되기 전 다른 연결이 열려 있으면 프로세스를 다시 시작할 필요가 없습니다. 해당 시간 제한 기간이 만료되기 전에 새 연결이 열리지 않는 경우 사용자 인스턴스는 자동으로 종료됩니다. 부모 인스턴스의 시스템 관리자를 사용 하 여 사용자 인스턴스에 대 한 제한 시간 기간을 설정할 수 **sp_configure** 변경 하는 **사용자 인스턴스 제한 시간** 옵션입니다. 기본값은 60분입니다.  
+ 서비스로 실행되는 SQL Server 버전과 달리 SQL Server Express 인스턴스는 직접 시작하고 중지할 필요가 없습니다. 사용자가 사용자 인스턴스에 로그인하고 연결할 때 사용자 인스턴스가 이미 실행 중이 아닌 경우 시작됩니다. 사용자 인스턴스 데이터베이스에는 `AutoClose` 옵션이 설정되어 있어서 일정 시간 동안 비활성 상태이면 데이터베이스가 자동으로 종료됩니다. 시작된 sqlservr.exe 프로세스는 인스턴스에 대한 마지막 연결이 닫힌 후 제한된 시간 제한 기간 동안 계속해서 실행되므로, 시간 제한이 만료되기 전 다른 연결이 열려 있으면 프로세스를 다시 시작할 필요가 없습니다. 해당 시간 제한 기간이 만료되기 전에 새 연결이 열리지 않는 경우 사용자 인스턴스는 자동으로 종료됩니다. 부모 인스턴스의 시스템 관리자를 사용 하 여 사용자 인스턴스에 대 한 시간 제한 기간의 지속 시간을 설정할 수 **sp_configure** 변경 하는 **사용자 인스턴스 제한 시간** 옵션입니다. 기본값은 60분입니다.  
   
 > [!NOTE]
 >  연결 문자열에서 0보다 큰 값이 `Min Pool Size`에 사용된 경우 연결 풀러에서는 항상 적은 수의 열린 연결을 유지하며 사용자 인스턴스는 자동으로 종료되지 않습니다.  
   
 ## <a name="how-user-instances-work"></a>사용자 인스턴스 사용 방법  
- 처음으로 사용자 인스턴스가 각 사용자에 대해 생성 되는 **마스터** 및 **msdb** 사용자의 로컬 응용 프로그램 데이터 리포지토리 아래 경로에 시스템 데이터베이스가 Template Data 폴더에서 복사 됩니다 사용자 인스턴스가 배타적으로 사용에 대 한 디렉터리입니다. 이 경로는 일반적으로 `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`입니다. 사용자 인스턴스가 시작 될 때는 **tempdb**, 로그 및 추적 파일은이 디렉터리에도 기록 됩니다. 인스턴스에 대해 각 사용자별로 고유한 이름이 생성됩니다.  
+ 사용자 인스턴스를 각 사용자에 대해 생성 된 첫 번째 시간을 **마스터** 하 고 **msdb** 시스템 데이터베이스는 사용자의 로컬 응용 프로그램 데이터 리포지토리 아래의 경로 Template Data 폴더에서 복사 사용자 인스턴스의 배타적 사용에 대 한 디렉터리입니다. 이 경로는 일반적으로 `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`입니다. 사용자 인스턴스를 시작 하는 경우는 **tempdb**, 로그 및 추적 파일이이 디렉터리에도 기록 됩니다. 인스턴스에 대해 각 사용자별로 고유한 이름이 생성됩니다.  
   
  기본적으로 Windows Builtin\Users 그룹의 모든 멤버에게는 로컬 인스턴스에 연결하는 권한뿐 아니라 SQL Server 이진 파일에 대한 읽기 및 실행 권한이 부여됩니다. 사용자 인스턴스를 호스트하는 호출 사용자의 자격 증명이 확인되면 해당 사용자는 해당 인스턴스에 대해 `sysadmin`이 됩니다. 사용자 인스턴스에 대해 공유 메모리만 활성화되므로 로컬 컴퓨터에 대한 작업만 가능합니다.  
   
@@ -146,7 +146,7 @@ private static void OpenSqlConnection()
   
 -   공유 데이터가 필요하지 않은 단일 사용자 응용 프로그램.  
   
--   ClickOnce 배포. .NET Framework 2.0 이상 및 SQL Server Express가 이미 대상 컴퓨터에 설치되어 있는 경우, ClickOnce 동작의 결과로 다운로드된 설치 패키지를 관리자가 아닌 사용자가 설치하여 사용할 수 있습니다. SQL Server Express가 설치의 일부인 경우 관리자는 SQL Server Express를 설치해야 합니다. 자세한 내용은 참조 [ClickOnce 배포에 대 한 Windows Forms 응용 프로그램](http://msdn.microsoft.com/library/34d8c770-48f2-460c-8d67-4ea5684511df)합니다.  
+-   ClickOnce 배포. .NET Framework 2.0 이상 및 SQL Server Express가 이미 대상 컴퓨터에 설치되어 있는 경우, ClickOnce 동작의 결과로 다운로드된 설치 패키지를 관리자가 아닌 사용자가 설치하여 사용할 수 있습니다. SQL Server Express가 설치의 일부인 경우 관리자는 SQL Server Express를 설치해야 합니다. 자세한 내용은 [ClickOnce 배포에 대 한 Windows Forms 응용 프로그램](https://msdn.microsoft.com/library/34d8c770-48f2-460c-8d67-4ea5684511df)합니다.  
   
 -   Windows 인증을 사용하는 전용 ASP.NET 호스팅. 단일 SQL Server Express 인스턴스를 인트라넷에 호스트할 수 있습니다. 응용 프로그램에서는 가장이 아닌 ASPNET Windows 계정을 사용하여 연결합니다. 모든 응용 프로그램이 동일한 사용자 인스턴스를 공유하여 각 사용자에 대해 격리되지 않는 타사 또는 공유 호스팅 시나리오에서는 사용자 인스턴스를 사용하면 안 됩니다.  
   
@@ -154,4 +154,4 @@ private static void OpenSqlConnection()
  [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
  [연결 문자열](../../../../../docs/framework/data/adonet/connection-strings.md)  
  [데이터 소스에 연결](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
