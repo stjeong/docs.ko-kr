@@ -6,35 +6,35 @@ helpviewer_keywords:
 - security [WCF], authorization
 ms.assetid: 8ea0b552-af65-45b0-a157-c6c111b8ce5e
 ms.openlocfilehash: 8e7632dda1a1bd2b60b71c385ad58c23e4207534
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43408318"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43532105"
 ---
-# <a name="authorization-in-wcf"></a><span data-ttu-id="424d6-102">WCF에서 권한 부여</span><span class="sxs-lookup"><span data-stu-id="424d6-102">Authorization in WCF</span></span>
-<span data-ttu-id="424d6-103">권한 부여는 서비스나 파일과 같은 리소스에 대한 액세스 및 권한을 제어하는 프로세스입니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-103">Authorization is the process of controlling access and rights to resources, such as services or files.</span></span> <span data-ttu-id="424d6-104">이 섹션의에서 항목에서는에 Windows Communication Foundation (WCF)에서 다양 한 방법으로 기본 작업을 수행 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-104">The topics in this section show you how to perform this basic task in Windows Communication Foundation (WCF) in a variety of ways.</span></span>  
+# <a name="authorization-in-wcf"></a><span data-ttu-id="34b34-102">WCF에서 권한 부여</span><span class="sxs-lookup"><span data-stu-id="34b34-102">Authorization in WCF</span></span>
+<span data-ttu-id="34b34-103">권한 부여는 서비스나 파일과 같은 리소스에 대한 액세스 및 권한을 제어하는 프로세스입니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-103">Authorization is the process of controlling access and rights to resources, such as services or files.</span></span> <span data-ttu-id="34b34-104">이 섹션의에서 항목에서는에 Windows Communication Foundation (WCF)에서 다양 한 방법으로 기본 작업을 수행 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-104">The topics in this section show you how to perform this basic task in Windows Communication Foundation (WCF) in a variety of ways.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="424d6-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="424d6-105">In This Section</span></span>  
- [<span data-ttu-id="424d6-106">Access Control 메커니즘</span><span class="sxs-lookup"><span data-stu-id="424d6-106">Access Control Mechanisms</span></span>](../../../../docs/framework/wcf/feature-details/access-control-mechanisms.md)  
- <span data-ttu-id="424d6-107">WCF 및 제안 된 사용 권한 부여 메커니즘의 간략 한 개요를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-107">Provides a brief outline of the authorization mechanisms in WCF, and suggested uses.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="34b34-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="34b34-105">In This Section</span></span>  
+ [<span data-ttu-id="34b34-106">Access Control 메커니즘</span><span class="sxs-lookup"><span data-stu-id="34b34-106">Access Control Mechanisms</span></span>](../../../../docs/framework/wcf/feature-details/access-control-mechanisms.md)  
+ <span data-ttu-id="34b34-107">WCF 및 제안 된 사용 권한 부여 메커니즘의 간략 한 개요를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-107">Provides a brief outline of the authorization mechanisms in WCF, and suggested uses.</span></span>  
   
- [<span data-ttu-id="424d6-108">방법: PrincipalPermissionAttribute 클래스를 사용하여 액세스 제한</span><span class="sxs-lookup"><span data-stu-id="424d6-108">How to: Restrict Access with the PrincipalPermissionAttribute Class</span></span>](../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- <span data-ttu-id="424d6-109"><xref:System.Security.Permissions.PrincipalPermissionAttribute>를 사용하여 서비스에 대한 액세스를 제한하는 프로세스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-109">Shows the process of restricting access to a service with the <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span></span>  
+ [<span data-ttu-id="34b34-108">방법: PrincipalPermissionAttribute 클래스를 사용하여 액세스 제한</span><span class="sxs-lookup"><span data-stu-id="34b34-108">How to: Restrict Access with the PrincipalPermissionAttribute Class</span></span>](../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
+ <span data-ttu-id="34b34-109"><xref:System.Security.Permissions.PrincipalPermissionAttribute>를 사용하여 서비스에 대한 액세스를 제한하는 프로세스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-109">Shows the process of restricting access to a service with the <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span></span>  
   
- [<span data-ttu-id="424d6-110">방법: 서비스에서 ASP.NET 역할 공급자 사용</span><span class="sxs-lookup"><span data-stu-id="424d6-110">How to: Use the ASP.NET Role Provider with a Service</span></span>](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)  
- <span data-ttu-id="424d6-111">[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]의 역할 공급자 기능을 사용할 수 있도록 설정하는 서비스 구성에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-111">Walks through the configuration of a service to enable it to use the role provider feature of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)].</span></span>  
+ [<span data-ttu-id="34b34-110">방법: 서비스에서 ASP.NET 역할 공급자 사용</span><span class="sxs-lookup"><span data-stu-id="34b34-110">How to: Use the ASP.NET Role Provider with a Service</span></span>](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)  
+ <span data-ttu-id="34b34-111">[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]의 역할 공급자 기능을 사용할 수 있도록 설정하는 서비스 구성에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-111">Walks through the configuration of a service to enable it to use the role provider feature of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)].</span></span>  
   
- [<span data-ttu-id="424d6-112">방법: 서비스에서 ASP.NET 권한 부여 관리자 역할 공급자 사용</span><span class="sxs-lookup"><span data-stu-id="424d6-112">How to: Use the ASP.NET Authorization Manager Role Provider with a Service</span></span>](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]<span data-ttu-id="424d6-113">은 권한 부여 관리자를 사용하여 웹 사이트의 권한을 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-113"> can use the Authorization Manager to manage authorization for a Web site.</span></span> <span data-ttu-id="424d6-114">WCF 마찬가지로 활용을 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]/Authorization 관리자 클라이언트의 권한 부여를 결합 합니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-114">WCF can similarly leverage the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]/Authorization Manager combination for authorization of clients.</span></span>  
+ [<span data-ttu-id="34b34-112">방법: 서비스에서 ASP.NET 권한 부여 관리자 역할 공급자 사용</span><span class="sxs-lookup"><span data-stu-id="34b34-112">How to: Use the ASP.NET Authorization Manager Role Provider with a Service</span></span>](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
+ [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]<span data-ttu-id="34b34-113">은 권한 부여 관리자를 사용하여 웹 사이트의 권한을 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-113"> can use the Authorization Manager to manage authorization for a Web site.</span></span> <span data-ttu-id="34b34-114">WCF 마찬가지로 활용을 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]/Authorization 관리자 클라이언트의 권한 부여를 결합 합니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-114">WCF can similarly leverage the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]/Authorization Manager combination for authorization of clients.</span></span>  
   
- [<span data-ttu-id="424d6-115">ID 모델을 사용하여 클레임 및 권한 부여 관리</span><span class="sxs-lookup"><span data-stu-id="424d6-115">Managing Claims and Authorization with the Identity Model</span></span>](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
- <span data-ttu-id="424d6-116">클레임 기반 권한 부여에 ID 모델 인프라를 사용하는 기본적인 사용법에 대해 설명합니다 .</span><span class="sxs-lookup"><span data-stu-id="424d6-116">Explains the basics of using the Identity Model infrastructure for claims-based authorization.</span></span>  
+ [<span data-ttu-id="34b34-115">ID 모델을 사용하여 클레임 및 권한 부여 관리</span><span class="sxs-lookup"><span data-stu-id="34b34-115">Managing Claims and Authorization with the Identity Model</span></span>](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
+ <span data-ttu-id="34b34-116">클레임 기반 권한 부여에 ID 모델 인프라를 사용하는 기본적인 사용법에 대해 설명합니다 .</span><span class="sxs-lookup"><span data-stu-id="34b34-116">Explains the basics of using the Identity Model infrastructure for claims-based authorization.</span></span>  
   
- [<span data-ttu-id="424d6-117">위임 및 가장</span><span class="sxs-lookup"><span data-stu-id="424d6-117">Delegation and Impersonation</span></span>](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
- <span data-ttu-id="424d6-118">위임과 가장의 차이점을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="424d6-118">Explains the difference between delegation and impersonation.</span></span>  
+ [<span data-ttu-id="34b34-117">위임 및 가장</span><span class="sxs-lookup"><span data-stu-id="34b34-117">Delegation and Impersonation</span></span>](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
+ <span data-ttu-id="34b34-118">위임과 가장의 차이점을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="34b34-118">Explains the difference between delegation and impersonation.</span></span>  
   
-## <a name="reference"></a><span data-ttu-id="424d6-119">참조</span><span class="sxs-lookup"><span data-stu-id="424d6-119">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="34b34-119">참조</span><span class="sxs-lookup"><span data-stu-id="34b34-119">Reference</span></span>  
  <xref:System.ServiceModel.Security>  
   
  <xref:System.ServiceModel.Description.PrincipalPermissionMode>  
@@ -43,9 +43,9 @@ ms.locfileid: "43408318"
   
  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
   
-## <a name="related-sections"></a><span data-ttu-id="424d6-120">관련 단원</span><span class="sxs-lookup"><span data-stu-id="424d6-120">Related Sections</span></span>  
- [<span data-ttu-id="424d6-121">인증</span><span class="sxs-lookup"><span data-stu-id="424d6-121">Authentication</span></span>](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
+## <a name="related-sections"></a><span data-ttu-id="34b34-120">관련 단원</span><span class="sxs-lookup"><span data-stu-id="34b34-120">Related Sections</span></span>  
+ [<span data-ttu-id="34b34-121">인증</span><span class="sxs-lookup"><span data-stu-id="34b34-121">Authentication</span></span>](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
   
-## <a name="see-also"></a><span data-ttu-id="424d6-122">참고 항목</span><span class="sxs-lookup"><span data-stu-id="424d6-122">See Also</span></span>  
- [<span data-ttu-id="424d6-123">보안 개요</span><span class="sxs-lookup"><span data-stu-id="424d6-123">Security Overview</span></span>](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [<span data-ttu-id="424d6-124">Windows Server appfabric 보안 모델</span><span class="sxs-lookup"><span data-stu-id="424d6-124">Security Model for Windows Server App Fabric</span></span>](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a><span data-ttu-id="34b34-122">참고 항목</span><span class="sxs-lookup"><span data-stu-id="34b34-122">See Also</span></span>  
+ [<span data-ttu-id="34b34-123">보안 개요</span><span class="sxs-lookup"><span data-stu-id="34b34-123">Security Overview</span></span>](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [<span data-ttu-id="34b34-124">Windows Server appfabric 보안 모델</span><span class="sxs-lookup"><span data-stu-id="34b34-124">Security Model for Windows Server App Fabric</span></span>](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
