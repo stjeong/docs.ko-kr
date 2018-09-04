@@ -17,18 +17,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e1380d03d4456e0695777775ae786a19982d691b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43394980"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43659454"
 ---
-# <a name="blessiwbemservicesobject-function"></a><span data-ttu-id="e5dcb-103">BlessIWbemServicesObject 함수</span><span class="sxs-lookup"><span data-stu-id="e5dcb-103">BlessIWbemServicesObject function</span></span>
-<span data-ttu-id="e5dcb-104">사용자 자격 증명을 지정 된 액세스를 허용 하는지 여부를 나타냅니다 [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-104">Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object.</span></span>   
+# <a name="blessiwbemservicesobject-function"></a><span data-ttu-id="0dab6-103">BlessIWbemServicesObject 함수</span><span class="sxs-lookup"><span data-stu-id="0dab6-103">BlessIWbemServicesObject function</span></span>
+<span data-ttu-id="0dab6-104">사용자 자격 증명을 지정 된 액세스를 허용 하는지 여부를 나타냅니다 [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-104">Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object.</span></span>   
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## <a name="syntax"></a><span data-ttu-id="e5dcb-105">구문</span><span class="sxs-lookup"><span data-stu-id="e5dcb-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0dab6-105">구문</span><span class="sxs-lookup"><span data-stu-id="0dab6-105">Syntax</span></span>  
   
 ```  
 HRESULT BlessIWbemServicesObject (
@@ -41,41 +41,41 @@ HRESULT BlessIWbemServicesObject (
 );
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="e5dcb-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e5dcb-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0dab6-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="0dab6-106">Parameters</span></span>
 
 `pIWbemServices`  
-<span data-ttu-id="e5dcb-107">[in] WMI 서비스 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-107">[in] A pointer to a WMI service object.</span></span>
+<span data-ttu-id="0dab6-107">[in] WMI 서비스 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-107">[in] A pointer to a WMI service object.</span></span>
 
 `strUser`  
-<span data-ttu-id="e5dcb-108">[in] 사용자 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-108">[in] The user name.</span></span>
+<span data-ttu-id="0dab6-108">[in] 사용자 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-108">[in] The user name.</span></span>
 
 `strPassword`  
-<span data-ttu-id="e5dcb-109">[in] 연결 된 암호 `strUser`합니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-109">[in] The password associated with `strUser`.</span></span>
+<span data-ttu-id="0dab6-109">[in] 연결 된 암호 `strUser`합니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-109">[in] The password associated with `strUser`.</span></span>
 
-<span data-ttu-id="e5dcb-110">`strAuthority` [in] 사용자의 도메인 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-110">`strAuthority` [in] The domain name of the user.</span></span> <span data-ttu-id="e5dcb-111">참조 된 [ConnectServerWmi](connectserverwmi.md) 자세한 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-111">See the [ConnectServerWmi](connectserverwmi.md) function for more information.</span></span>
+<span data-ttu-id="0dab6-110">`strAuthority` [in] 사용자의 도메인 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-110">`strAuthority` [in] The domain name of the user.</span></span> <span data-ttu-id="0dab6-111">참조 된 [ConnectServerWmi](connectserverwmi.md) 자세한 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-111">See the [ConnectServerWmi](connectserverwmi.md) function for more information.</span></span>
 
-<span data-ttu-id="e5dcb-112">`impLevel` [in] 가장 수준입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-112">`impLevel` [in] The impersonation level.</span></span>
+<span data-ttu-id="0dab6-112">`impLevel` [in] 가장 수준입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-112">`impLevel` [in] The impersonation level.</span></span>
 
-<span data-ttu-id="e5dcb-113">`authnLevel` [in] 권한 부여 수준입니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-113">`authnLevel` [in] The authorization level.</span></span>
+<span data-ttu-id="0dab6-113">`authnLevel` [in] 권한 부여 수준입니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-113">`authnLevel` [in] The authorization level.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="e5dcb-114">반환 값</span><span class="sxs-lookup"><span data-stu-id="e5dcb-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0dab6-114">반환 값</span><span class="sxs-lookup"><span data-stu-id="0dab6-114">Return value</span></span>
 
-<span data-ttu-id="e5dcb-115">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WinError.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="e5dcb-115">The following values returned by this function are defined in the *WinError.h* header file, or you can define them as constants in your code:</span></span>
+<span data-ttu-id="0dab6-115">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WinError.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="0dab6-115">The following values returned by this function are defined in the *WinError.h* header file, or you can define them as constants in your code:</span></span>
 
-|<span data-ttu-id="e5dcb-116">상수</span><span class="sxs-lookup"><span data-stu-id="e5dcb-116">Constant</span></span>  |<span data-ttu-id="e5dcb-117">값</span><span class="sxs-lookup"><span data-stu-id="e5dcb-117">Value</span></span>  |<span data-ttu-id="e5dcb-118">설명</span><span class="sxs-lookup"><span data-stu-id="e5dcb-118">Description</span></span>  |
+|<span data-ttu-id="0dab6-116">상수</span><span class="sxs-lookup"><span data-stu-id="0dab6-116">Constant</span></span>  |<span data-ttu-id="0dab6-117">값</span><span class="sxs-lookup"><span data-stu-id="0dab6-117">Value</span></span>  |<span data-ttu-id="0dab6-118">설명</span><span class="sxs-lookup"><span data-stu-id="0dab6-118">Description</span></span>  |
 |---------|---------|---------|
-| `E_INVALIDARG` | <span data-ttu-id="e5dcb-119">0x80070057</span><span class="sxs-lookup"><span data-stu-id="e5dcb-119">0x80070057</span></span> | <span data-ttu-id="e5dcb-120">하나 이상의 인수가 잘못 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-120">One or more arguments are invalid.</span></span> |
-| `E_POINTER` | <span data-ttu-id="e5dcb-121">0x80004003</span><span class="sxs-lookup"><span data-stu-id="e5dcb-121">0x80004003</span></span> | <span data-ttu-id="e5dcb-122">`pIWbemServices`가 `null`인 경우</span><span class="sxs-lookup"><span data-stu-id="e5dcb-122">`pIWbemServices` is `null`.</span></span> | 
-| `E_FAIL` | <span data-ttu-id="e5dcb-123">0x80000008</span><span class="sxs-lookup"><span data-stu-id="e5dcb-123">0x80000008</span></span> | <span data-ttu-id="e5dcb-124">지정 되지 않은 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-124">An unspecified error has occurred.</span></span> |
-| `E_OUTOFMEMORY` | <span data-ttu-id="e5dcb-125">0x80000002</span><span class="sxs-lookup"><span data-stu-id="e5dcb-125">0x80000002</span></span> | <span data-ttu-id="e5dcb-126">메모리가 부족 하 여 작업을 수행할 수 있는 경우</span><span class="sxs-lookup"><span data-stu-id="e5dcb-126">Insufficient memory is available to perform the operation.</span></span> | 
-| `S_OK` | <span data-ttu-id="e5dcb-127">0</span><span class="sxs-lookup"><span data-stu-id="e5dcb-127">0</span></span> | <span data-ttu-id="e5dcb-128">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-128">The function call was successful.</span></span> | 
+| `E_INVALIDARG` | <span data-ttu-id="0dab6-119">0x80070057</span><span class="sxs-lookup"><span data-stu-id="0dab6-119">0x80070057</span></span> | <span data-ttu-id="0dab6-120">하나 이상의 인수가 잘못 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-120">One or more arguments are invalid.</span></span> |
+| `E_POINTER` | <span data-ttu-id="0dab6-121">0x80004003</span><span class="sxs-lookup"><span data-stu-id="0dab6-121">0x80004003</span></span> | <span data-ttu-id="0dab6-122">`pIWbemServices`가 `null`인 경우</span><span class="sxs-lookup"><span data-stu-id="0dab6-122">`pIWbemServices` is `null`.</span></span> | 
+| `E_FAIL` | <span data-ttu-id="0dab6-123">0x80000008</span><span class="sxs-lookup"><span data-stu-id="0dab6-123">0x80000008</span></span> | <span data-ttu-id="0dab6-124">지정 되지 않은 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-124">An unspecified error has occurred.</span></span> |
+| `E_OUTOFMEMORY` | <span data-ttu-id="0dab6-125">0x80000002</span><span class="sxs-lookup"><span data-stu-id="0dab6-125">0x80000002</span></span> | <span data-ttu-id="0dab6-126">메모리가 부족 하 여 작업을 수행할 수 있는 경우</span><span class="sxs-lookup"><span data-stu-id="0dab6-126">Insufficient memory is available to perform the operation.</span></span> | 
+| `S_OK` | <span data-ttu-id="0dab6-127">0</span><span class="sxs-lookup"><span data-stu-id="0dab6-127">0</span></span> | <span data-ttu-id="0dab6-128">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="0dab6-128">The function call was successful.</span></span> | 
 
-## <a name="requirements"></a><span data-ttu-id="e5dcb-129">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e5dcb-129">Requirements</span></span>  
- <span data-ttu-id="e5dcb-130">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e5dcb-130">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="0dab6-129">요구 사항</span><span class="sxs-lookup"><span data-stu-id="0dab6-129">Requirements</span></span>  
+ <span data-ttu-id="0dab6-130">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0dab6-130">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="e5dcb-131">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="e5dcb-131">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="0dab6-131">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="0dab6-131">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="e5dcb-132">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="e5dcb-132">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="0dab6-132">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="0dab6-132">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e5dcb-133">참고자료</span><span class="sxs-lookup"><span data-stu-id="e5dcb-133">See also</span></span>  
-[<span data-ttu-id="e5dcb-134">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="e5dcb-134">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="0dab6-133">참고자료</span><span class="sxs-lookup"><span data-stu-id="0dab6-133">See also</span></span>  
+[<span data-ttu-id="0dab6-134">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="0dab6-134">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
