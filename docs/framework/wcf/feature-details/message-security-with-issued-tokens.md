@@ -5,11 +5,11 @@ ms.assetid: 731fc871-54d0-4689-90fd-1c9415c45621
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: c084c9e393728c2f4c2889339dbc36517c058d24
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456518"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525337"
 ---
 # <a name="message-security-with-issued-tokens"></a>발급된 토큰을 사용하는 메시지 보안
 발급 된 토큰 클라이언트는 Windows Communication Foundation (WCF)에서 페더레이션된 보안 시나리오를 수 있습니다.  

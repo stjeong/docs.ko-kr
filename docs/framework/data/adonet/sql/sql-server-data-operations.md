@@ -2,12 +2,12 @@
 title: ADO.NET에서 SQL Server 데이터 작업
 ms.date: 03/30/2017
 ms.assetid: b864ebc9-ed8e-4059-85fd-36d9198f5521
-ms.openlocfilehash: 45b0e92619732ddaa8c4cc5df163f251c50bcba8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9c913bffea1be8db0fa5ba2e97714acefe681569
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33363453"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43528188"
 ---
 # <a name="sql-server-data-operations-in-adonet"></a>ADO.NET에서 SQL Server 데이터 작업
 이 섹션에서는 .NET Framework Data Provider for SQL Server(<xref:System.Data.SqlClient>)와 관련된 SQL Server의 기능 및 특징에 대해 설명합니다.  
@@ -28,4 +28,4 @@ ms.locfileid: "33363453"
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

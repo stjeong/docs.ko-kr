@@ -8,11 +8,11 @@ ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: adc1bf7c51eeef715e98bb67c5f6a2e44e09b35f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466612"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43522189"
 ---
 # <a name="transport-security-with-windows-authentication"></a>Windows 인증을 사용하는 전송 보안
 다음 시나리오에서는 Windows Communication Foundation (WCF) 클라이언트와 Windows 보안으로 보호 하는 서비스를 보여 줍니다. 프로그래밍에 대 한 자세한 내용은 참조 하세요. [방법: Windows 자격 증명을 사용 하 여 서비스를 보호](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)합니다.  

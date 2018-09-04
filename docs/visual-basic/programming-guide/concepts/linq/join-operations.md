@@ -3,11 +3,11 @@ title: 조인 작업 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
 ms.openlocfilehash: 2c7d6592f0dee221eb2f6fb3a2f2c484064364ce
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43425376"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516962"
 ---
 # <a name="join-operations-visual-basic"></a>조인 작업 (Visual Basic)
 두 데이터 소스를 *조인*하는 것은 한 데이터 소스의 개체를 공통 특성을 공유하는 다른 데이터 소스의 개체와 연결하는 것입니다.  

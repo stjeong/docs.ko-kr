@@ -2,12 +2,12 @@
 title: 배경 정보
 ms.date: 03/30/2017
 ms.assetid: 724888f2-d3f1-4bea-b9a1-a0adb8a00f3b
-ms.openlocfilehash: 66d2047a064663cfe93823d92d30f682d557c493
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cd2531dd141cfc6f0b67d1f58766327c218610f5
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33363219"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515634"
 ---
 # <a name="background-information"></a>배경 정보
 이 단원의 항목은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 사용에 대한 개념 및 기본 사용법을 확장하는 절차와 관련되어 있습니다.  
@@ -16,9 +16,9 @@ ms.locfileid: "33363219"
   
 -   특정 문제에 대 한 Microsoft 문서를 검색 합니다.  
   
--   에 참여는 [LINQ 포럼](http://go.microsoft.com/fwlink/?LinkId=76488)전문가 함께 보다 복잡 한 주제를 자세히 논의할 수 있는, 합니다.  
+-   에 참여 합니다 [LINQ 포럼](https://go.microsoft.com/fwlink/?LinkId=76488)전문가 함께 보다 복잡 한 주제를 자세히 논의할 수 있는, 합니다.  
   
--   에 대해 자세히 설명 하는 백서를 학습할 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 기술, Visual Basic 및 C# 코드 예제를 완료 합니다. 자세한 내용은 참조 [LINQ to SQL: 관계형 데이터에 대 한 쿼리.NET Language-Integrated](http://go.microsoft.com/fwlink/?LinkId=93205)합니다.  
+-   자세히 설명 하는 백서를 연구 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 기술, Visual Basic 및 C# 코드 예제를 사용 하 여 완료 합니다. 자세한 내용은 [LINQ to SQL:.net language-integrated Query for Relational Data](https://go.microsoft.com/fwlink/?LinkId=93205)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [ADO.NET 및 LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/ado-net-and-linq-to-sql.md)  

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - type conversion for XAML [XAML Services]
 ms.assetid: 51a65860-efcb-4fe0-95a0-1c679cde66b7
 ms.openlocfilehash: 25705b573be74ea5a2d71537b0c165a6f619d1d9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399585"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43519155"
 ---
 # <a name="type-converters-for-xaml-overview"></a>XAML을 위한 형식 변환기 개요
 형식 변환기는 XAML 태그의 문자열에서 개체 그래프의 특정 개체로 변환하는 논리를 개체 작성기에 제공합니다. .NET Framework XAML 서비스에서 형식 변환기는 <xref:System.ComponentModel.TypeConverter>에서 파생되는 클래스여야 합니다. 또한 일부 변환기는 XAML 저장 경로를 지원하며 serialization 태그에서 개체를 문자열 형식으로 직렬화하는 데 사용할 수 있습니다. 이 항목에서는 XAML의 형식 변환기가 호출되는 방법 및 시기에 대해 설명하고 <xref:System.ComponentModel.TypeConverter>의 메서드 재정의에 대한 구현 권장 사항을 제공합니다.  

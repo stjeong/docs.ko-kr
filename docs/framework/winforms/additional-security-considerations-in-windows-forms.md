@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Clipboard [Windows Forms], securing access
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 ms.openlocfilehash: 0dc0ddaa1f64b75c0b4ccc1f5e73638576ea3da2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43408454"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43523484"
 ---
 # <a name="additional-security-considerations-in-windows-forms"></a>Windows Forms의 추가 보안 고려 사항
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 보안 설정으로 인해 부분적으로 신뢰할 수 있는 환경에서는 로컬 컴퓨터에서와는 다르게 응용 프로그램이 실행될 수 있습니다. [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 여러 가지 중에서도 파일 시스템, 네트워크 및 관리되지 않는 API와 같은 중요한 로컬 리소스에 대한 액세스를 제한합니다. 보안 설정은 Microsoft Win32 API 또는 보안 시스템에서 확인할 수 없는 기타 API를 호출하는 기능에 영향을 줍니다. 또한 파일, 데이터 액세스, 인쇄를 비롯한 응용 프로그램의 다른 측면에도 영향을 줍니다. 부분 신뢰 환경에서의 파일 및 데이터 액세스에 대한 자세한 내용은 [Windows Forms의 파일 및 데이터 액세스 추가 보안](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)을 참조하세요. 부분 신뢰 환경에서의 인쇄에 대한 자세한 내용은 [Windows Forms의 인쇄 추가 보안](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)을 참조하세요.  

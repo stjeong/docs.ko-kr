@@ -3,11 +3,11 @@ title: 여러 IIS 사이트 바인딩 지원
 ms.date: 03/30/2017
 ms.assetid: 40440495-254d-45c8-a8c6-b29f364892ba
 ms.openlocfilehash: 2c42ba7cf3713e5d165d10ce7049df8200d612fb
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482209"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517877"
 ---
 # <a name="supporting-multiple-iis-site-bindings"></a>여러 IIS 사이트 바인딩 지원
 인터넷 정보 서비스 (IIS) 7.0에서 Windows Communication Foundation (WCF) 서비스를 호스팅하는 경우에 동일한 사이트의 동일한 프로토콜을 사용 하는 여러 기본 주소를 제공 하는 것이 좋습니다. 이렇게 하면 동일한 서비스에서 여러 다른 URI에 응답할 수 있습니다. 수신 대기 하는 서비스를 호스트 하려는 경우에 유용 http://www.contoso.com 고 http://contoso.com입니다. 내부 사용자에 대한 기본 주소와 외부 사용자에 대한 별도의 기본 주소가 있는 서비스를 만들려는 경우에 유용합니다. 예를 들어: http://internal.contoso.com 고 http://www.contoso.com입니다.  

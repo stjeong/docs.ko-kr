@@ -3,11 +3,11 @@ title: '&lt;webHttpBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
 ms.openlocfilehash: 19b82500c1d24dbbf3e630e3021f195149e19b92
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399621"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516949"
 ---
 # <a name="ltwebhttpbindinggt"></a>&lt;webHttpBinding&gt;
 SOAP 메시지 대신 HTTP 요청에 응답 하는 Windows Communication Foundation (WCF) 웹 서비스에 대 한 끝점을 구성 하는 데 사용 되는 바인딩 요소를 정의 합니다.  

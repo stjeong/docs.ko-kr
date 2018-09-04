@@ -3,11 +3,11 @@ title: JSON 및 XML 샘플을 포함한 AJAX 서비스
 ms.date: 03/30/2017
 ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
 ms.openlocfilehash: 1beb89c11fccefec24ccbebc3fe30033a646718d
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43452692"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520076"
 ---
 # <a name="ajax-service-with-json-and-xml-sample"></a>JSON 및 XML 샘플을 포함한 AJAX 서비스
 이 샘플에는 Windows Communication Foundation (WCF)를 사용 하 여 개체 JSON (JavaScript Notation) 또는 XML 데이터를 반환 하는 Asynchronous JavaScript and XML (AJAX) 서비스를 만드는 방법을 보여 줍니다. 웹 브라우저 클라이언트에서 JavaScript 코드를 사용하여 AJAX 서비스에 액세스할 수 있습니다. 이 샘플을 기반으로 합니다 [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md) 샘플입니다.  

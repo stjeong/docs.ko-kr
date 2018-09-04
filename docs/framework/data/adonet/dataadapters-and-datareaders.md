@@ -3,11 +3,11 @@ title: DataAdapter 및 DataReader
 ms.date: 03/30/2017
 ms.assetid: cc952ca2-ec19-46ab-9189-15174b52cb74
 ms.openlocfilehash: 6e711b11ef9a3eca53806b825f1e721169ab662d
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43476224"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516779"
 ---
 # <a name="dataadapters-and-datareaders"></a>DataAdapter 및 DataReader
 ADO.NET을 사용할 수 있습니다 **DataReader** 데이터베이스에서 데이터를 읽기 전용, 정방향 전용 스트림을 검색할 수 있습니다. 쿼리가 실행 되 고 해당 작업을 요청할 때까지 클라이언트의 네트워크 버퍼에 저장 된 대로 결과가 반환 됩니다 사용 하 여는 **읽기** 메서드는 **DataReader**합니다. 사용 하는 **DataReader** (기본적으로) 및 사용 가능한 즉시 데이터를 검색 하 여 응용 프로그램 성능을 향상 시킬 수 시스템 오버 헤드를 줄임으로써 메모리에서 한 번에 하나의 행을 저장 합니다.  

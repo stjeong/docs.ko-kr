@@ -3,11 +3,11 @@ title: '&lt;netTcpBinding&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6
 ms.openlocfilehash: 8c2a0de73db2ec4a1c2150fc7e62b7a3a9f086bc
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43474007"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515054"
 ---
 # <a name="lttransportgt-of-ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;의 &lt;transport&gt;
 구성 된 끝점에 대 한 메시지 수준 보안 요구 사항 형식을 정의 합니다 [ \<netTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)합니다.  

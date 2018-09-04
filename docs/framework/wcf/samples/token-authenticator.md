@@ -2,15 +2,15 @@
 title: Token Authenticator
 ms.date: 03/30/2017
 ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
-ms.openlocfilehash: 4681dea4fd39b039346d22c02c478323ff53e240
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 5c103f5a5a4f95761a5c19e6a8d6159a7439d05a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33808334"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43523222"
 ---
 # <a name="token-authenticator"></a>Token Authenticator
-이 샘플에서는 사용자 지정 토큰 인증자를 구현하는 방법을 보여 줍니다. Windows Communication Foundation (WCF)의 한 토큰 인증자는 자체 일관성 및 id를 인증 토큰에 연결 된 확인 메시지와 함께 사용 되는 토큰의 유효성 검사에 사용 됩니다.  
+이 샘플에서는 사용자 지정 토큰 인증자를 구현하는 방법을 보여 줍니다. Windows Communication Foundation (WCF)에서 토큰 인증자를 자체 일관성을 토큰과 연결 된 id를 인증 확인 메시지와 함께 사용 되는 토큰의 유효성 검사에 사용 됩니다.  
   
  사용자 지정 토큰 인증자는 다음과 같은 여러 경우에 유용합니다.  
   
@@ -24,13 +24,13 @@ ms.locfileid: "33808334"
   
 -   서버에서 사용자 지정 토큰 인증자를 사용하여 클라이언트 자격 증명의 유효성을 검사하는 방법  
   
--   어떻게 WCF 서비스 코드는 사용자 지정 토큰 인증자를 사용 하 여 연결 합니다.  
+-   하는 방법을 사용자 지정 토큰 인증자를 사용 하 여 WCF 서비스 코드를 연결 합니다.  
   
 -   서버의 X.509 인증서를 사용하여 서버를 인증하는 방법  
   
- 이 샘플에는 사용자 지정 토큰 인증 프로세스 후 호출자의 id는 WCF에서 액세스할 수 있는 방법을 보여 줍니다.  
+ 이 샘플에는 사용자 지정 토큰 인증 프로세스 후 WCF에서 액세스할 수 있는 호출자의 id가 하는 방법을 보여 줍니다.  
   
- 서비스에서는 서비스와의 통신에 사용할 수 있는 단일 끝점을 노출하며, 이 끝점은 App.config 구성 파일을 사용하여 정의합니다. 끝점은 하나의 주소, 바인딩 및 계약으로 구성됩니다. 바인딩은 `wsHttpBinding`의 기본 모드인 message로 설정된 보안 모드가 있는 표준 `wsHttpBinding`을 사용하여 구성됩니다. 이 샘플에서는 클라이언트 사용자 이름 인증을 사용하도록 표준 `wsHttpBinding`를 설정합니다. 또한 서비스는 `serviceCredentials` 동작을 사용하여 서비스 인증서를 구성합니다. `securityCredentials` 동작을 통해 서비스 인증서를 지정할 수 있습니다. 서비스 인증서는 클라이언트에서 서비스를 인증하고 메시지 보호를 제공하는 데 사용됩니다. 다음 구성에서는 뒤에 나오는 설치 지침에 설명된 대로 샘플 설치 중에 설치되는 localhost 인증서를 참조합니다.  
+ 서비스에서는 서비스와의 통신에 사용할 수 있는 단일 엔드포인트를 노출하며, 이 엔드포인트는 App.config 구성 파일을 사용하여 정의합니다. 엔드포인트는 하나의 주소, 바인딩 및 계약으로 구성됩니다. 바인딩은 `wsHttpBinding`의 기본 모드인 message로 설정된 보안 모드가 있는 표준 `wsHttpBinding`을 사용하여 구성됩니다. 이 샘플에서는 클라이언트 사용자 이름 인증을 사용하도록 표준 `wsHttpBinding`를 설정합니다. 또한 서비스는 `serviceCredentials` 동작을 사용하여 서비스 인증서를 구성합니다. `securityCredentials` 동작을 통해 서비스 인증서를 지정할 수 있습니다. 서비스 인증서는 클라이언트에서 서비스를 인증하고 메시지 보호를 제공하는 데 사용됩니다. 다음 구성에서는 뒤에 나오는 설치 지침에 설명된 대로 샘플 설치 중에 설치되는 localhost 인증서를 참조합니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -81,7 +81,7 @@ ms.locfileid: "33808334"
   </system.serviceModel>  
 ```  
   
- 클라이언트 끝점 구성은 구성 이름, 서비스 끝점의 절대 주소, 바인딩 및 계약으로 구성됩니다. 클라이언트 바인딩은 적절한 `Mode` 및 `clientCredentialType`를 사용하여 구성됩니다.  
+ 클라이언트 엔드포인트 구성은 구성 이름, 서비스 엔드포인트의 절대 주소, 바인딩 및 계약으로 구성됩니다. 클라이언트 바인딩은 적절한 `Mode` 및 `clientCredentialType`를 사용하여 구성됩니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -324,9 +324,9 @@ static void DisplayIdentityInformation()
   
 #### <a name="to-set-up-and-build-the-sample"></a>샘플을 설치하고 빌드하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
-2.  지침에 따라 솔루션을 빌드하려면 [Windows Communication Foundation 샘플 빌드](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
+2.  지침에 따라 솔루션을 빌드하려면 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
 #### <a name="to-run-the-sample-on-the-same-computer"></a>단일 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -339,7 +339,7 @@ static void DisplayIdentityInformation()
   
 3.  \client\bin에서 client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
   
-4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 #### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -357,11 +357,11 @@ static void DisplayIdentityInformation()
   
 7.  언어별 폴더의 \client\bin\ 폴더에서 클라이언트 프로그램 파일을 클라이언트 컴퓨터로 복사합니다.  
   
-8.  클라이언트 컴퓨터의 Client.exe.config 파일에서 끝점의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다.  
+8.  클라이언트 컴퓨터의 Client.exe.config 파일에서 엔드포인트의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다.  
   
 9. 클라이언트 컴퓨터의 명령 프롬프트에서 Client.exe를 실행합니다.  
   
-10. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+10. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 #### <a name="to-clean-up-after-the-sample"></a>샘플 실행 후 정리를 수행하려면  
   

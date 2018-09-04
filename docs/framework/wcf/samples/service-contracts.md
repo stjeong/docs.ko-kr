@@ -3,11 +3,11 @@ title: 서비스 계약
 ms.date: 03/30/2017
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
 ms.openlocfilehash: 0d44b6d0a996834c923dafee6cb6319c9dc87fd2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397746"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520607"
 ---
 # <a name="service-contracts"></a>서비스 계약
 이 섹션에는 Windows Communication Foundation (WCF)에서 서비스 계약을 보여 주는 샘플이 들어 있습니다.  

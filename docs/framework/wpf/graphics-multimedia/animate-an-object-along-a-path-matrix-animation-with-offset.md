@@ -10,11 +10,11 @@ helpviewer_keywords:
 - matrix animation with offset accumulation [WPF]
 ms.assetid: 1bca90ef-9832-4128-8ed6-62908e7ec146
 ms.openlocfilehash: 1d3b74ede9cde1928138d4d8625e8625354f5748
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43456479"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43522758"
 ---
 # <a name="how-to-animate-an-object-along-a-path-matrix-animation-with-offset-accumulation"></a>방법: 경로를 따라 개체에 애니메이션 효과 주기(오프셋이 누적된 매트릭스 애니메이션)
 사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> 클래스 경로 따라 개체에 애니메이션 효과 주고의 오프셋이 누적 애니메이션이 반복 됨에 따라 값입니다.  

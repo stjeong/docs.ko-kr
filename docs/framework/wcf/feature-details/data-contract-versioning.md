@@ -10,11 +10,11 @@ helpviewer_keywords:
 - data contracts [WCF], versioning
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
 ms.openlocfilehash: 0e91bf597e344dd09e80bee5787e92383065b654
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43393187"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520200"
 ---
 # <a name="data-contract-versioning"></a>데이터 계약 버전 관리
 응용 프로그램이 발전하면서 서비스가 사용하는 데이터 계약을 변경해야 할 수도 있습니다. 이 항목에서는 데이터 계약의 버전 관리 방법에 대해 설명합니다. 이 항목에서는 데이터 계약 버전 관리 메커니즘에 대해 설명합니다. 전체 개요 및 규정적 버전 관리 지침을 참조 하세요 [모범 사례: 데이터 계약 버전 관리](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)합니다.  

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - data types [Visual Basic], choosing
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
 ms.openlocfilehash: 490a462859a916d21c816ff96c47d2deeb9312ee
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931140"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517798"
 ---
 # <a name="miscellaneous-data-types-visual-basic"></a>기타 데이터 형식(Visual Basic)
 Visual Basic에는 숫자나 문자 분류 되지 않는 몇 가지 데이터 형식을 제공 합니다. 대신는 특수화 된 데이터 처리와 같은 예/아니요 값, 날짜/시간 값 및 개체 주소 합니다.  

@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: f6f0cbc9-f7bf-4d6e-875f-ad1ba0b4aa62
 ms.openlocfilehash: 24657f541daf5bb098f8db3b59a3241ecf832d39
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43398867"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515081"
 ---
 # <a name="transaction-and-bulk-copy-operations"></a>트랜잭션 및 대량 복사 작업
 대량 복사 작업을 격리된 작업이나 여러 단계로 이루어진 트랜잭션의 일부로 수행할 수 있습니다. 후자를 사용하면 다른 데이터베이스 작업(삽입, 업데이트, 삭제 등)을 수행하면서 같은 트랜잭션 내에서 둘 이상의 대량 복사 작업을 수행할 수 있을 뿐만 아니라 전체 트랜잭션을 커밋하거나 롤백할 수 있습니다.  

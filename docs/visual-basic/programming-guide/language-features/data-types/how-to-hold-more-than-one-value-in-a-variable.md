@@ -12,11 +12,11 @@ helpviewer_keywords:
 - types [Visual Basic], composite
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
 ms.openlocfilehash: 781f56c7e710f5130d821ca4796398379dfa4c6e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43456492"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517965"
 ---
 # <a name="how-to-hold-more-than-one-value-in-a-variable-visual-basic"></a>방법: 변수에 두 개 이상의 값 사용(Visual Basic)
 변수를 선언 하면 둘 이상의 값을 보유 한 *복합 데이터 형식*합니다.  

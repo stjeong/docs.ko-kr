@@ -3,11 +3,11 @@ title: OLE DB 데이터 형식 매핑
 ms.date: 03/30/2017
 ms.assetid: 04bcb259-59d3-4fd7-894d-4f0dd0c68069
 ms.openlocfilehash: 2dbea33140e6cdd7370c1822d2bd6513917a31ea
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43457107"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43521369"
 ---
 # <a name="ole-db-data-type-mappings"></a>OLE DB 데이터 형식 매핑
 다음 표에서는 .NET Framework Data Provider ADO 및 OLE DB([!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)])의 데이터 형식에 대해 유추된 <xref:System.Data.OleDb> 형식을 보여 줍니다. 또한 이 표에는 <xref:System.Data.OleDb.OleDbDataReader>의 형식화된 접근자 메서드도 나열되어 있습니다.  

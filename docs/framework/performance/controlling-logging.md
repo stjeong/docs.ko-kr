@@ -7,11 +7,11 @@ ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 1bee42db7b9a92723b0640d0b3747a7921b8617c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43418987"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525764"
 ---
 # <a name="controlling-net-framework-logging"></a>.NET Framework 로깅 제어
 ETW(Windows용 이벤트 추적)를 사용하여 CLR(공용 언어 런타임) 이벤트를 기록할 수 있습니다. 다음과 같은 도구를 사용하여 추적을 만들고 볼 수 있습니다.  

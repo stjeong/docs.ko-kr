@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bb46b6466ee0ee3d4cdc4b7c934e518fd9f7f082
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 40d8edd2b2166b0c90da1ce640dcd16bc33ed9f7
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394422"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525311"
 ---
 # <a name="performance-counters-in-the-net-framework"></a>.NET Framework의 성능 카운터
-이 항목에서는 [성능 모니터](http://technet.microsoft.com/library/cc749249.aspx)에서 찾을 수 있는 성능 카운터 목록을 제공합니다.  
+이 항목에서는 [성능 모니터](https://technet.microsoft.com/library/cc749249.aspx)에서 찾을 수 있는 성능 카운터 목록을 제공합니다.  
   
 -   [예외 성능 카운터](#exception)  
   

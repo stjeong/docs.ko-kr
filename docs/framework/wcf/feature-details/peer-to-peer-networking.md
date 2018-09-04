@@ -3,11 +3,11 @@ title: 피어 투 피어 네트워킹
 ms.date: 03/30/2017
 ms.assetid: ad6cb67b-fd1c-4ca1-a767-b410da2e16ca
 ms.openlocfilehash: 16416ec467caa10216930ae3c961869cbfcd59d8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456987"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516334"
 ---
 # <a name="peer-to-peer-networking"></a>피어 투 피어 네트워킹
 피어 채널은 단체, 피어-투-피어 (P2P) 통신 기술에서 Windows Communication Foundation (WCF). 피어 채널은 응용 프로그램 개발자에게 안전하고 확장 가능한 메시지 기반 P2P 통신 채널을 제공합니다. 피어 채널을 활용할 수 있는 다자간 응용 프로그램의 대표적인 예로 여러 사용자가 서버 없이 피어 투 피어 방식으로 서로 채트하는 대화방 같은 공동 작업 응용 프로그램을 들 수 있습니다. 피어 채널은 소비자 및 기업 시나리오 모두에서 P2P 공동 작업, 콘텐츠 배포, 부하 분산 및 분산 처리를 가능하게 합니다.  

@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
 ms.openlocfilehash: 4370a7a700a01943548bf067827e6640245caf4e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482166"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516793"
 ---
 # <a name="retrieving-data-using-a-datareader"></a>DataReader를 사용하여 데이터 검색
 사용 하 여 데이터를 검색 하는 **DataReader** 의 인스턴스를 만들고 합니다 **명령** 개체를 만들고 다음을 **DataReader** 호출 하 여  **Command.ExecuteReader** 데이터 원본에서 행을 검색 합니다. 다음 예제를 사용 하 여는 **DataReader** 여기서 `reader` 올바른 DataReader를 나타내는 및 `command` 올바른 Command 개체를 나타냅니다.  

@@ -3,11 +3,11 @@ title: 트랜잭션 모델
 ms.date: 03/30/2017
 ms.assetid: 48a8bc1b-128b-4cf1-a421-8cc73223c340
 ms.openlocfilehash: 8731b72d0657aa420dbb020e216c3af059916ce9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43474228"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517785"
 ---
 # <a name="transaction-models"></a>트랜잭션 모델
 이 항목에서는 트랜잭션 프로그래밍 모델 및 Microsoft가 제공하는 인프라 구성 요소 간의 관계에 대해 설명합니다.  

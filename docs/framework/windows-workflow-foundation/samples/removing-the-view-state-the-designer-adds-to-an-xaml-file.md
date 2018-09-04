@@ -3,11 +3,11 @@ title: 디자이너를 통해 XAML 파일에 추가된 뷰 상태 제거
 ms.date: 03/30/2017
 ms.assetid: a801ce22-8699-483c-a392-7bb3834aae4f
 ms.openlocfilehash: ed2fda0bb66b2c8fe58c60acc6f80b9e9c8e984e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43386935"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43524954"
 ---
 # <a name="removing-the-view-state-the-designer-adds-to-an-xaml-file"></a>디자이너를 통해 XAML 파일에 추가된 뷰 상태 제거
 이 샘플에서는 <xref:System.Windows.Markup.XamlWriter>에서 파생되며 XAML 파일에서 뷰 상태를 제거하는 클래스를 만드는 방법을 보여 줍니다. [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]에서는 뷰 상태라고 하는 정보를 XAML 문서에 기록합니다. 뷰 상태는 런타임에 필요하지 않으며 디자인 타임에 필요한 레이아웃 위치 등과 같은 정보를 가리킵니다. [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)]에서는 XAML 문서를 편집할 때 이 정보를 해당 문서에 삽입합니다. [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)]에서는 XAML 파일에 뷰 상태를 기록하는 데 `mc:Ignorable` 특성을 사용하므로 런타임에 XAML 파일을 로드할 때는 이 정보가 로드되지 않습니다. 이 샘플에서는 XAML 노드를 처리하는 동안 이와 같은 뷰 상태 정보를 제거하는 클래스를 만드는 방법을 보여 줍니다.  

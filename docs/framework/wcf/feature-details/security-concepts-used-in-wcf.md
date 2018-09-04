@@ -5,11 +5,11 @@ ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: c309b5e5c461b58e887ea634bf3b5177b7c0329b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399933"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43521343"
 ---
 # <a name="security-concepts-used-in-wcf"></a>WCF에서 사용되는 보안 개념
 Windows Communication Foundation (WCF) 보안 개념을 이미 사용 중인 빌드 및 다양 한 보안 인프라에 배포 합니다.  

@@ -3,11 +3,11 @@ title: 페이징(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: ba4f334d-03e5-4a7b-9d42-628f4639b9a2
 ms.openlocfilehash: 4c9a08604c90422ac461bdd7db895b18b633e87e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43402087"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516470"
 ---
 # <a name="paging-entity-sql"></a>페이징(Entity SQL)
 사용 하 여 물리적 페이징을 수행할 수 있습니다는 [SKIP](../../../../../../docs/framework/data/adonet/ef/language-reference/skip-entity-sql.md) 및 [제한](../../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) 하위 절은 [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) 절. 결정적인 방법으로 물리적 페이징을 수행하려면 SKIP과 LIMIT를 사용해야 합니다. 비 결정적인 방식으로 결과의 행 수를 제한 하려는 경우 사용 해야 [위쪽](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)합니다. TOP과 SKIP/LIMIT는 함께 사용할 수 없습니다.  

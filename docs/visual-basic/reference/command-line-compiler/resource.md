@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ab5593455546e65bdd760d9e60532031dc1f12a9
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 77c80332e663596244b35fe002218e7bcbaeb46a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931448"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43523326"
 ---
 # <a name="-resource-visual-basic"></a>-리소스 (Visual Basic)
 관리되는 리소스를 어셈블리에 포함합니다.  
@@ -39,13 +39,13 @@ ms.locfileid: "42931448"
 ## <a name="remarks"></a>설명  
  사용 하 여 `-linkresource` 출력 파일에 리소스 파일을 배치 하지 않고 어셈블리에 리소스를 연결 합니다.  
   
- 경우 `filename` 는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] , 예를 들어에서 만든 리소스 파일을 [Resgen.exe (리소스 파일 생성기)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) 개발 환경에서의 멤버를 사용 하 여 액세스할 수 있습니다 또는 <xref:System.Resources> 네임 스페이스 (참조 <xref:System.Resources.ResourceManager> 자세한 정보에 대 한). 런타임 시 다른 모든 리소스에 액세스 하려면 다음 방법 중 하나를 사용 합니다. <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>, 또는 <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>합니다.  
+ 경우 `filename` 는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] , 예를 들어에서 만든 리소스 파일을 [Resgen.exe (리소스 파일 생성기)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) 개발 환경에서의 멤버를 사용 하 여 액세스할 수 있습니다 또는 <xref:System.Resources> 네임 스페이스 (참조 <xref:System.Resources.ResourceManager> 자세한 정보에 대 한). 런타임 시 다른 모든 리소스에 액세스 하려면 다음 방법 중 하나를 사용 합니다. <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>, 또는 <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>합니다.  
   
  `-resource`의 약식은 `-res`입니다.  
   
  설정 하는 방법에 대 한 자세한 `-resource` Visual Studio IDE에서 참조 [응용 프로그램 리소스 관리 (.NET)](/visualstudio/ide/managing-application-resources-dotnet)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 컴파일을 `In.vb` 와 연결 합니다. 리소스 파일 `Rf.resource`합니다.  
   
 ```console

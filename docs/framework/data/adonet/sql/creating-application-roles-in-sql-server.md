@@ -2,12 +2,12 @@
 title: SQL Server에서 응용 프로그램 역할 만들기
 ms.date: 03/30/2017
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
-ms.openlocfilehash: cb3bcb08877d8a17ea40ea48440c1d71560d0e5f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 811654b73cd1cc0b8c17565b45613253de3c0e81
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33362529"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43522015"
 ---
 # <a name="creating-application-roles-in-sql-server"></a>SQL Server에서 응용 프로그램 역할 만들기
 응용 프로그램 역할을 사용하면 데이터베이스 역할이나 사용자 대신 응용 프로그램에 권한을 할당할 수 있습니다. 사용자는 데이터베이스에 연결한 후 응용 프로그램 역할을 활성화하여 응용 프로그램에 부여된 권한을 사용할 수 있습니다. 응용 프로그램 역할에 부여된 권한은 연결되어 있는 동안 유효합니다.  
@@ -47,19 +47,19 @@ ms.locfileid: "33362529"
   
  다음과 같은 대안을 고려해 보세요.  
   
--   NO REVERT 및 WITH COOKIE 절과 함께 EXECUTE AS 문을 사용하여 컨텍스트를 전환합니다. 로그인에 매핑되지 않는 사용자 계정을 데이터베이스에 만든 다음 이 계정에 권한을 할당합니다. 이렇게 로그인에 매핑되지 않은 사용자로 EXECUTE AS를 사용하면 암호가 아니라 권한을 기반으로 하므로 더 안전합니다. 자세한 내용은 참조 [SQL Server에서 가장으로 권한 사용자 지정](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)합니다.  
+-   NO REVERT 및 WITH COOKIE 절과 함께 EXECUTE AS 문을 사용하여 컨텍스트를 전환합니다. 로그인에 매핑되지 않는 사용자 계정을 데이터베이스에 만든 다음 이 계정에 권한을 할당합니다. 이렇게 로그인에 매핑되지 않은 사용자로 EXECUTE AS를 사용하면 암호가 아니라 권한을 기반으로 하므로 더 안전합니다. 자세한 내용은 [SQL Server에서 가장으로 권한 사용자 지정](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)합니다.  
   
--   저장 프로시저를 인증서로 서명하여 프로시저 실행에 꼭 필요한 권한만 부여합니다. 자세한 내용은 참조 [SQL Server에서 저장 프로시저 서명](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)합니다.  
+-   저장 프로시저를 인증서로 서명하여 프로시저 실행에 꼭 필요한 권한만 부여합니다. 자세한 내용은 [SQL Server에서 저장 프로시저 서명](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)합니다.  
   
 ## <a name="external-resources"></a>외부 리소스  
  자세한 내용은 다음 리소스를 참조하세요.  
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[응용 프로그램 역할](http://msdn.microsoft.com/library/ms190998.aspx) SQL Server 온라인 설명서의|SQL Server 2008에서 응용 프로그램 역할을 만들고 사용하는 방법에 대해 설명합니다.|  
+|[응용 프로그램 역할](/sql/relational-databases/security/authentication-access/application-roles)|SQL Server 2008에서 응용 프로그램 역할을 만들고 사용하는 방법에 대해 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
  [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

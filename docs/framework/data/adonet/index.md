@@ -3,11 +3,11 @@ title: ADO.NET
 ms.date: 03/30/2017
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
 ms.openlocfilehash: 59828e988659b9fc5644ff801f77171103630660
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43388224"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43519918"
 ---
 # <a name="adonet"></a>ADO.NET
 ADO.NET은 .NET Framework 프로그래머에게 데이터 액세스 서비스를 노출하는 클래스 집합입니다. ADO.NET은 분산된 데이터 공유 응용 프로그램을 만들기 위한 다양한 구성 요소를 제공합니다. 또한 관계형, XML 및 응용 프로그램 데이터에 대한 액세스를 제공하는 .NET Framework의 핵심 부분입니다. ADO.NET은 응용 프로그램, 도구, 언어 또는 인터넷 브라우저에서 사용되는 중간 계층 비즈니스 개체 및 프런트 엔드 데이터베이스 클라이언트 만들기를 포함하여 다양한 개발 요구 사항을 지원합니다.  

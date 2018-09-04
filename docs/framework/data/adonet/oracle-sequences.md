@@ -3,11 +3,11 @@ title: Oracle 시퀀스
 ms.date: 03/30/2017
 ms.assetid: 27cd371d-8252-414d-b5b2-5d31fa44b585
 ms.openlocfilehash: 4c1829cc3f9506b0317e6638fd2760a91c7d19d6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43403973"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520340"
 ---
 # <a name="oracle-sequences"></a>Oracle 시퀀스
 .NET Framework Data Provider for Oracle은 삽입을 수행한 후 <xref:System.Data.OracleClient.OracleDataAdapter>를 사용하여 서버에서 생성한 Oracle 시퀀스 키 값을 검색하는 작업을 지원합니다.  

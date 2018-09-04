@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 2d20701237501834c611c4e498c39597cf275176
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43407036"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518688"
 ---
 # <a name="qualifiersetbeginenumeration-function"></a>QualifierSet_BeginEnumeration 함수
-열거형의 시작 부분에는 열거자 개체의 한정자를 다시 설정합니다.  
+개체 한정자의 열거자를 열거형 시작 부분으로 다시 설정합니다.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

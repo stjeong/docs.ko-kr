@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 2f05da1e-845b-4f14-83e4-c6353a850553
 ms.openlocfilehash: ae491d0eeda7f8703dca174bdf4c5c847f78e675
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: HT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43489697"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43519084"
 ---
 # <a name="how-to-execute-a-polymorphic-query"></a>방법: 다형 쿼리 실행
 이 항목에서는 다형성을 실행 하는 방법을 보여 줍니다 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 사용 하 여 쿼리를 [OFTYPE](../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) 연산자입니다.  

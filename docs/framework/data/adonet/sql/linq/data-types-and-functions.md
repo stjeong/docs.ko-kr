@@ -3,11 +3,11 @@ title: 데이터 형식 및 함수
 ms.date: 03/30/2017
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
 ms.openlocfilehash: 34f8f0a59f1a962eaa6a747e124f47d1570ca455
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43418067"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520741"
 ---
 # <a name="data-types-and-functions"></a>데이터 형식 및 함수
 다음 표에 나열된 항목에서는 CLR(공용 언어 런타임)의 멤버, 구문 및 캐스트에 대한 LINQ to SQL의 지원 정보를 설명합니다. 지원되는 멤버와 구문은 LINQ to SQL 쿼리에 사용할 수 있습니다.  

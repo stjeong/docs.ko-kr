@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: b3d84873-7403-4957-8e20-b4ae39f50214
 ms.openlocfilehash: 1a936c5374137dbe25e16ababfa8a4f0c86edbbb
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43392730"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43521772"
 ---
 # <a name="how-to-call-canonical-functions"></a>방법: 정식 함수 호출
 <xref:System.Data.Objects.EntityFunctions> 클래스에는 LINQ to Entities 쿼리에 사용할 정식 함수를 노출하는 메서드가 포함되어 있습니다. 정식 함수에 대한 자세한 내용은 [정식 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)를 참조하세요.  

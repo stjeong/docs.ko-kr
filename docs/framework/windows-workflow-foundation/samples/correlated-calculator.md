@@ -3,11 +3,11 @@ title: 상호 관련된 계산기
 ms.date: 03/30/2017
 ms.assetid: c365166e-6552-49a4-bf17-9f4e597d4d41
 ms.openlocfilehash: 71cfdd0906ef20ec36b76ef5e508a4551b9fe3fe
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43384673"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517315"
 ---
 # <a name="correlated-calculator"></a>상호 관련된 계산기
 이 샘플에서는 디자이너에서 메시지의 매개 변수를 기준으로 내용 기반 상관 관계에 <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 메시징 활동을 사용하는 방법을 보여 줍니다. 이 시나리오에서는 계산이 작업이 병렬 호송됩니다. 인스턴스 및 `CalculatorId` 기반의 상관 관계는 둘 다 워크플로에 첫 메시지를 보낼 때 만들어지며, `CalculatorId`가 동일한 후속 메시지는 Reset 작업을 호출할 때까지 해당 인스턴스에 디스패치됩니다. 클라이언트는 서비스와 통신하기 위해 코드 기반 클라이언트 프록시를 사용하는 WPF 응용 프로그램으로 구현됩니다.  

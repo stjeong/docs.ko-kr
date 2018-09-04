@@ -3,11 +3,11 @@ title: 브리징과 오류 처리
 ms.date: 03/30/2017
 ms.assetid: 4ae87d1a-b615-4014-a494-a53f63ff0137
 ms.openlocfilehash: 6afaddc75855b7e95ad708b2179cabb9aee35001
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43389070"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514544"
 ---
 # <a name="bridging-and-error-handling"></a>브리징과 오류 처리
 이 샘플 클라이언트와 다른 바인딩을 사용 하는 서비스 간의 브리징 통신에 대 한 Windows Communication Foundation (WCF) 라우팅 서비스를 사용 하는 방법을 보여 줍니다. 또한 장애 조치 시나리오에 백업 서비스를 사용하는 방법도 보여 줍니다. 라우팅 서비스는 쉽게 응용 프로그램에 내용 기반 라우터를 포함 하는 WCF 구성 요소입니다. 이 샘플에는 라우팅 서비스를 사용 하 여 통신 하도록 표준 WCF 계산기 샘플을 조정 됩니다.  

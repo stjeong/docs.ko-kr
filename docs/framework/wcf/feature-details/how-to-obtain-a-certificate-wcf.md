@@ -5,11 +5,11 @@ helpviewer_keywords:
 - certificates [WCF], obtaining
 ms.assetid: d53762fd-15ea-42dc-b0ea-6a6597aa23f7
 ms.openlocfilehash: 664eb62997123ea248b0b69700b86bf794646d4b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43465864"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43519224"
 ---
 # <a name="how-to-obtain-a-certificate-wcf"></a>방법: 인증서 가져오기(WCF)
 Windows Communication Foundation (WCF) 중 하나를 사용 하 여 X.509 인증서를 사용 하는 기능의 먼저 인증서를 받습니다.  

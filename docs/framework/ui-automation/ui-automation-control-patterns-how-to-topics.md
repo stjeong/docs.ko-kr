@@ -11,11 +11,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: a5b67340ca63637bd5ba2e59e4e5b774abbae58d
-ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43331878"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526705"
 ---
 # <a name="ui-automation-control-patterns-how-to-topics"></a>UI 자동화 컨트롤 패턴 방법 항목
 > [!NOTE]

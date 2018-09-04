@@ -3,11 +3,11 @@ title: OverloadGroups
 ms.date: 03/30/2017
 ms.assetid: d1d547d2-f5fb-4de3-a959-ee6139a4f1ad
 ms.openlocfilehash: 0773e76d36b25ad5485cc8912c7012815412de9f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43469871"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514138"
 ---
 # <a name="overloadgroups"></a>OverloadGroups
 이 샘플은 눈여겨 봐야 할 두 가지 특징을 지닌 활동(`CreateLocation`)으로 구성되어 있습니다.  

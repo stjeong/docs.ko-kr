@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: b38e4753105932d2464bf78797a6979aeb0a0aee
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42908185"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43527841"
 ---
 # <a name="createclassenumwmi-function"></a>CreateClassEnumWmi 함수
-지정된 된 선택 조건을 충족 하는 모든 클래스에 대 한 열거자를 반환 합니다.  
+지정된 선택 조건을 충족하는 모든 클래스에 대한 열거자를 반환합니다.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

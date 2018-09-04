@@ -8,18 +8,18 @@ helpviewer_keywords:
 - OnPaint method [Windows Forms]
 - custom controls [Windows Forms], creating
 ms.assetid: 46ba0df3-5cf7-443c-a3b4-a72660172476
-ms.openlocfilehash: da80d46f27d7cd721af7a9600d2b0cde84876d23
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1a0eea1930699ed85fcf0eaf184ba0aabe398d73
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33534585"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43531747"
 ---
 # <a name="how-to-inherit-from-the-control-class"></a>방법: Control 클래스에서 상속
-상속 해야 Windows Form에서 사용 하는 완전 한 사용자 지정 컨트롤을 만들려는 경우는 <xref:System.Windows.Forms.Control> 클래스입니다. 상속 하는 동안는 <xref:System.Windows.Forms.Control> 클래스에 더 많은 계획 및 구현 수행, 옵션의 가장 큰 범위를도 제공 합니다. 상속 된 경우 <xref:System.Windows.Forms.Control>, 컨트롤이 작동 되도록 하는 매우 기본적인 기능을 상속 합니다. 에 내재 된 기능은 <xref:System.Windows.Forms.Control> 클래스 키보드 및 마우스를 통해 사용자 입력 처리, 범위 및 컨트롤의 크기를 정의 한 창 핸들 제공 및 메시지 처리 및 보안을 제공 합니다. 이 경우에는 컨트롤의 그래픽 인터페이스의 실제 렌더링인 그리기를 통합하거나 특정 사용자 상호 작용 기능을 통합하지 않습니다. 사용자 지정 코드를 통해 이러한 모든 사항을 제공해야 합니다.  
+Windows Form에 사용 하 여 완전 한 사용자 지정 컨트롤을 만들려는 경우에서 상속 해야 하는 <xref:System.Windows.Forms.Control> 클래스입니다. 상속 하는 동안는 <xref:System.Windows.Forms.Control> 클래스는 수행한 자세한 계획 및 구현, 광범위 한 옵션을 사용 하 여도 제공 해야 합니다. 상속할 때 <xref:System.Windows.Forms.Control>, 컨트롤이 작동 되도록 하는 기본적인 기능을 상속 합니다. 고유한 기능은 <xref:System.Windows.Forms.Control> 클래스 키보드 및 마우스를 통해 사용자 입력 처리, 컨트롤의 크기와 범위를 정의 창 핸들을 제공 및 메시지 처리 및 보안을 제공 합니다. 이 경우에는 컨트롤의 그래픽 인터페이스의 실제 렌더링인 그리기를 통합하거나 특정 사용자 상호 작용 기능을 통합하지 않습니다. 사용자 지정 코드를 통해 이러한 모든 사항을 제공해야 합니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ### <a name="to-create-a-custom-control"></a>사용자 지정 컨트롤을 만들려면  
   
@@ -33,7 +33,7 @@ ms.locfileid: "33534585"
   
 4.  F7 키를 눌러 사용자 지정 컨트롤의 **코드 편집기**를 엽니다.  
   
-5.  찾을 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드 호출을 제외 하 고 비어 있는 <xref:System.Windows.Forms.Control.OnPaint%2A> 기본 클래스의 메서드.  
+5.  찾을 합니다 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드 호출을 제외 하 고 비어 있는 <xref:System.Windows.Forms.Control.OnPaint%2A> 기본 클래스의 메서드.  
   
 6.  코드를 수정하여 컨트롤에 원하는 사용자 지정 그리기를 통합합니다.  
   

@@ -10,11 +10,11 @@ ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 37827398ffd6041aa841e23381b6b072b297f089
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43464222"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515452"
 ---
 # <a name="how-to-create-a-custom-security-token-provider"></a>방법: 사용자 지정 보안 토큰 공급자 만들기
 이 항목에서는 사용자 지정 보안 토큰 공급자를 사용하여 새 토큰 형식을 만드는 방법과 공급자를 사용자 지정 보안 토큰 관리자와 통합하는 방법에 대해 설명합니다.  

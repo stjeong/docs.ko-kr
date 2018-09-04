@@ -11,11 +11,11 @@ helpviewer_keywords:
 - creating a touchscreen application [WPF]
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 ms.openlocfilehash: ee2eddf0ad0818658920aff19919c4b5fef807b9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43390277"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43511410"
 ---
 # <a name="walkthrough-creating-your-first-touch-application"></a>연습: 첫 응용 프로그램 만들기
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램이 터치에 응답할 수 있습니다. 예를 들어, 하나를 사용 하 여 응용 프로그램을 조작할 수 있습니다 또는이 연습에서는 사용자가 이동할 수 있는 응용 프로그램을 만듭니다 원하는 터치 스크린과 같은 터치 감지 장치에서 손가락을 크기를 조정 하거나 터치를 사용 하 여 단일 개체를 회전 합니다.  

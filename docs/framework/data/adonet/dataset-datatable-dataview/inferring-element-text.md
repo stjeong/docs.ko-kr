@@ -3,11 +3,11 @@ title: 요소 텍스트 유추
 ms.date: 03/30/2017
 ms.assetid: 789799e5-716f-459f-a168-76c5cf22178b
 ms.openlocfilehash: b70f76d2702ebcb098c64ea84900b723fbc137ab
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43405790"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516496"
 ---
 # <a name="inferring-element-text"></a>요소 텍스트 유추
 요소 텍스트를 포함 하 고 테이블로 유추 될 (특성이 있는 요소) 또는 반복 되는 요소와 같은 이름 가진 새 열을 자식 요소가 없는 경우 **TableName_Text** 요소의 유추 테이블에 추가 됩니다. 이 요소에 포함된 텍스트는 테이블의 행에 추가되어 새 열에 저장됩니다. 합니다 **ColumnMapping** 새 열의 속성에 설정할 **MappingType.SimpleContent**합니다.  

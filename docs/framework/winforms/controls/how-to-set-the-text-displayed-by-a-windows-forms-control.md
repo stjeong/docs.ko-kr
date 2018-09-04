@@ -22,11 +22,11 @@ helpviewer_keywords:
 - forms [Windows Forms], captions
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
 ms.openlocfilehash: d9c9bea26cfc3d5b2cfc4484173a7680ff2fc34d
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399328"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525037"
 ---
 # <a name="how-to-set-the-text-displayed-by-a-windows-forms-control"></a>방법: Windows Forms 컨트롤에서 표시하는 텍스트 설정
 Windows Forms 컨트롤은 일반적으로 컨트롤의 기본 기능과 관련된 일부 텍스트를 표시합니다. 예를 들어 <xref:System.Windows.Forms.Button> 컨트롤은 일반적으로 단추를 클릭할 때 수행되는 동작을 나타내는 캡션을 표시합니다. 모든 컨트롤에 대해 <xref:System.Windows.Forms.Control.Text%2A> 속성을 사용하여 텍스트를 설정하거나 반환할 수 있습니다. <xref:System.Windows.Forms.Control.Font%2A> 속성을 사용하여 글꼴을 변경할 수 있습니다. 디자이너를 사용하여 텍스트를 설정할 수도 있습니다.  도 참조 하세요 [방법: 만들 액세스 키에 대 한 Windows Forms 컨트롤 디자이너를 사용 하](how-to-create-access-keys-for-windows-forms-controls-using-the-designer.md)를 [방법: 디자이너를 사용 하 여 Windows Forms 컨트롤에서 텍스트 표시 설정](how-to-set-the-text-displayed-by-a-windows-forms-control-using-the-designer.md), [방법: 이미지 설정 표시 되는 Windows Forms 디자이너를 사용 하 여 컨트롤](how-to-set-the-image-displayed-by-a-windows-forms-control-using-the-designer.md)합니다.  

@@ -3,11 +3,11 @@ title: Using Variables with a .NET Framework 3.5 Ruleset
 ms.date: 03/30/2017
 ms.assetid: 27b56249-22fe-4252-840f-74c0d6c7a6b3
 ms.openlocfilehash: 64d47564076e19e152e30b6ab0cb3900ce53cfa1
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43395156"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43512856"
 ---
 # <a name="using-variables-with-a-net-framework-35-ruleset"></a>Using Variables with a .NET Framework 3.5 Ruleset
 이 샘플에서는 <xref:System.Activities.Statements.Interop> 활동을 사용하여 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)]에서 작성되고 정책과 규칙을 사용하는 사용자 지정 활동을 통합하는 워크플로를 만드는 방법을 보여 줍니다. 이 샘플에서는 사용자 지정 활동에서 노출하는 종속성 속성에 변수를 바인딩하여 사용자 지정 활동에 데이터를 전달합니다.  

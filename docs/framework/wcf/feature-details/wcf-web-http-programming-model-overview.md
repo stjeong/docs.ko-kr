@@ -3,11 +3,11 @@ title: WCF 웹 HTTP 프로그래밍 모델 개요
 ms.date: 03/30/2017
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
 ms.openlocfilehash: f1185e7f8d455a59edf2b11e4e77ac6470d768fc
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43417340"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517077"
 ---
 # <a name="wcf-web-http-programming-model-overview"></a>WCF 웹 HTTP 프로그래밍 모델 개요
 Windows Communication Foundation (WCF) 웹 HTTP 프로그래밍 모델을 wcf 웹 HTTP 서비스를 빌드하는 데 필요한 기본 요소를 제공 합니다. WCF 웹 HTTP 서비스에 광범위 한 웹 브라우저를 포함 하 여 클라이언트에서 액세스할 수 있도록 설계 되었으며 다음과 같은 고유한 요구 사항이:  

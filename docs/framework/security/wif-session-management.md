@@ -5,11 +5,11 @@ ms.assetid: 98bce126-18a9-401b-b20d-67ee462a5f8a
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 04c2f4bdfe2a6309fde0821db308ee2a83887323
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456372"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520554"
 ---
 # <a name="wif-session-management"></a>WIF 세션 관리
 클라이언트는 신뢰 당사자에 호스트된 보호된 리소스에 처음 액세스를 시도할 때 먼저 신뢰 당사자에 의해 신뢰된 STS(보안 토큰 서비스)에 인증해야 합니다. 그런 다음 STS는 클라이언트에 보안 토큰을 발급합니다. 클라이언트가 신뢰 당사자에게 이 토큰을 제공하면 신뢰 당사자가 보호된 리소스에 대한 액세스를 클라이언트에 부여합니다. 그러나 동일한 컴퓨터 또는 신뢰 당사자와 동일한 도메인에 없을 수도 있기 때문에 클라이언트가 각 요청에 대해 STS에 다시 인증할 필요가 없기를 바랍니다. 대신 WIF(Windows Identity Foundation)에서는 클라이언트 및 신뢰 당사자가 세션을 설정하고, 세션 중에 클라이언트는 첫 번째 요청 이후의 모든 요청에 대해 세션 보안 토큰을 사용하여 신뢰 당사자에 인증합니다. 신뢰 당사자는 쿠키 안에 저장된 이 세션 보안 토큰을 사용하여 클라이언트의 <xref:System.Security.Claims.ClaimsPrincipal?displayProperty=nameWithType>을 다시 구성할 수 있습니다.  

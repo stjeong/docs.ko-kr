@@ -6,12 +6,12 @@ helpviewer_keywords:
 - controls [Windows Forms]
 - Windows Forms controls, about Windows Forms controls
 ms.assetid: f050de8f-4ebd-4042-94b8-edf9a1dbd52a
-ms.openlocfilehash: f1111e05d485993b29b97f48f92a27a3af26fb4c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5b3b49ca61d491a2593db7b43bf3efd0b63af650
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33537605"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526249"
 ---
 # <a name="windows-forms-controls"></a>Windows Forms 컨트롤
 Windows Forms 응용 프로그램의 사용자 인터페이스를 디자인하고 수정할 때는 컨트롤을 추가하고 정렬하고 배치해야 합니다. 컨트롤은 폼 개체에 포함된 개체입니다. 각 컨트롤 형식은 컨트롤을 특정 목적에 적합하게 만들어주는 자체적인 속성, 메서드 및 이벤트 집합을 갖습니다. 디자이너에서 컨트롤을 조작하고 런타임에 동적으로 컨트롤을 추가하는 코드를 작성할 수 있습니다.  
@@ -39,5 +39,5 @@ Windows Forms 응용 프로그램의 사용자 인터페이스를 디자인하�
  [클라이언트 응용 프로그램](../../../../docs/framework/develop-client-apps.md)  
  Windows 기반 응용 프로그램을 개발하는 방법을 개괄적으로 설명합니다.  
   
- [Windows Forms 연습](http://msdn.microsoft.com/library/fd44d13d-4733-416f-aefc-32592e59e5d9)  
+ [Windows Forms 연습](https://msdn.microsoft.com/library/fd44d13d-4733-416f-aefc-32592e59e5d9)  
  Windows Forms 및 컨트롤에 대한 연습 항목을 나열합니다.

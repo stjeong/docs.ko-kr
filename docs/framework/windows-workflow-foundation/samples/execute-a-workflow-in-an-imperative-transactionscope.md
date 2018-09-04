@@ -2,12 +2,12 @@
 title: 명령형 TransactionScope에서 워크플로 실행
 ms.date: 03/30/2017
 ms.assetid: bd0e8686-c1d0-4400-a541-da94ed03afc7
-ms.openlocfilehash: 44efc13efaa45274068fb44cc154b515bd774a35
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2744434e807664ca93b4f5bc27a1f3b89716ce87
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33516961"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520172"
 ---
 # <a name="execute-a-workflow-in-an-imperative-transactionscope"></a>명령형 TransactionScope에서 워크플로 실행
 이 샘플에서는 명령형 C# 코드에서 <xref:System.Activities.WorkflowInvoker>의 <xref:System.Transactions.Transaction>를 사용하여 워크플로를 실행하는 방법을 보여 줍니다.  
@@ -34,6 +34,6 @@ ms.locfileid: "33516961"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\Transactions\ImperativeTransaction`

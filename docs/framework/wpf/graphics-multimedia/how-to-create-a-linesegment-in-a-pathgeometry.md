@@ -8,20 +8,20 @@ helpviewer_keywords:
 - line segments [WPF], creating
 - graphics [WPF], line segments
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
-ms.openlocfilehash: 1cfa9275a2a4508c153cf6ab7ed1c6126b1ee92c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 61425a68d83c8078b8420be01e0e59d3cba6a4e2
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33559685"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518975"
 ---
 # <a name="how-to-create-a-linesegment-in-a-pathgeometry"></a>방법: PathGeometry에 LineSegment 만들기
-이 예제에서는 선분을 만드는 방법을 보여 줍니다. 선 세그먼트를 만들려면 사용는 <xref:System.Windows.Media.PathGeometry>, <xref:System.Windows.Media.PathFigure>, 및 <xref:System.Windows.Media.LineSegment> 클래스입니다.  
+이 예제에서는 선분을 만드는 방법을 보여 줍니다. 선 세그먼트를 만들려면 사용 합니다 <xref:System.Windows.Media.PathGeometry>, <xref:System.Windows.Media.PathFigure>, 및 <xref:System.Windows.Media.LineSegment> 클래스입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 그리기는 <xref:System.Windows.Media.LineSegment> 에서 (10, 50)에 (200, 70). 다음 그림과 결과 <xref:System.Windows.Media.LineSegment>; 그리드 배경 좌표 시스템을 표시 하기 위해 추가 되었습니다.  
+ 다음 예제에서는 그리기를 <xref:System.Windows.Media.LineSegment> 에서 (10, 50)를 (200, 70). 다음 그림에서는 결과 <xref:System.Windows.Media.LineSegment>; 좌표계를 표시 하도록 그리드 배경이 추가 되었습니다.  
   
- ![PathFigure의](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")  
+ ![PathFigure의 LineSegment](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")  
 (10,50)부터 (200,70)까지 그린 LineSegment  
   
  [xaml]  
@@ -35,7 +35,7 @@ ms.locfileid: "33559685"
   
  [xaml]  
   
- (이 특성 구문 실제로 만드는 참고는 <xref:System.Windows.Media.StreamGeometry>, 간단한 버전의는 <xref:System.Windows.Media.PathGeometry>합니다. 자세한 내용은 [경로 태그 구문](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) 페이지를 참조하세요.)  
+ (이 특성 구문은 실제로 만들어지는 참고를 <xref:System.Windows.Media.StreamGeometry>, 가벼운 버전의는 <xref:System.Windows.Media.PathGeometry>합니다. 자세한 내용은 [경로 태그 구문](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) 페이지를 참조하세요.)  
   
  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]에서는 개체 요소 구문을 사용하여 선분을 그릴 수도 있습니다. 다음 예제는 이전 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 예제와 동일합니다.  
   
@@ -99,7 +99,7 @@ Dim myPathFigure As New PathFigure()
             myPath.Data = myPathGeometry  
 ```  
   
- 이 예제는 더 큰 샘플에 속합니다. 전체 샘플을 보려면 [기하 도형 샘플](http://go.microsoft.com/fwlink/?LinkID=159989)을 참조하세요.  
+ 이 예제는 더 큰 샘플에 속합니다. 전체 샘플을 보려면 [기하 도형 샘플](https://go.microsoft.com/fwlink/?LinkID=159989)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Media.PathFigure>  

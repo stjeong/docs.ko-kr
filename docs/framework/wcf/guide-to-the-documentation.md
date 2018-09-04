@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], documentation
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
 ms.openlocfilehash: f77864d827ce12d40971dd7f7159e985ab4096ae
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43417906"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520976"
 ---
 # <a name="guide-to-the-documentation"></a>설명서에 대한 안내
 제공한 Windows Communication Foundation (WCF) 설명서에 대 한 지침은 다음과 같습니다. 구체적인 관심사와 지식 수준에 따라 그룹화된 링크 문서부터 보시는 것이 좋습니다.  

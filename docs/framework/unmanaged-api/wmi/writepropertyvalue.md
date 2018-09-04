@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f2a4eb444967390492be33b25866de8a93a1698c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43393909"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518295"
 ---
 # <a name="writepropertyvalue-function"></a>WritePropertyValue 함수
-속성 핸들에 의해 식별 된 속성에 지정 된 바이트 수를 씁니다.
+지정된 수의 바이트를 속성 핸들로 식별되는 속성에 씁니다.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     

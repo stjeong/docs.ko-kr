@@ -13,11 +13,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: ac1e1f7bc36d8d2b12b99de2794bb0ba31ddbd7a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43398734"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518649"
 ---
 # <a name="ltrequiredruntimegt-element"></a>&lt;requiredRuntime&gt; 요소
 응용 프로그램에서 1.0 버전의 공용 언어 런타임만 지원하도록 지정합니다. 이 요소는 사용 되지 않으며 더 이상 사용 되지 않음을 합니다. 합니다 [ `supportedRuntime` ](supportedruntime-element.md) 요소를 대신 사용 해야 합니다.

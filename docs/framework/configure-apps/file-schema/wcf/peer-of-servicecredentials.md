@@ -3,11 +3,11 @@ title: '&lt;serviceCredentials&gt;의 &lt;peer&gt;'
 ms.date: 03/30/2017
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
 ms.openlocfilehash: 94f93a7955af3bff1c17e59a11af3fad85c9134d
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399845"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514741"
 ---
 # <a name="ltpeergt-of-ltservicecredentialsgt"></a>&lt;serviceCredentials&gt;의 &lt;peer&gt;
 피어 노드에 대한 현재 자격 증명을 지정합니다.  

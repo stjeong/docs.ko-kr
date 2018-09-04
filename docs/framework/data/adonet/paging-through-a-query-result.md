@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: fa360c46-e5f8-411e-a711-46997771133d
 ms.openlocfilehash: 5d86095586af273f62980fcf8ddf10804b1cfa5a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43406812"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514331"
 ---
 # <a name="paging-through-a-query-result"></a>쿼리 결과를 통해 페이징
 쿼리 결과 페이징은 쿼리의 결과를 작은 단위의 데이터 하위 집합, 즉 페이지로 반환하는 프로세스입니다. 이 방법은 관리하기 쉬운 작은 청크 단위로 결과를 표시하기 위해 일반적으로 사용됩니다.  
