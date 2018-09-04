@@ -14,11 +14,11 @@ ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 4bc91f5f3872ee5f4a55f3e3cd9e0e9de9bcc422
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43408287"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43524731"
 ---
 # <a name="resources-in-net-apps"></a>.NET 앱의 리소스
 거의 모든 프로덕션 수준 응용 프로그램은 리소스를 사용해야 합니다. 리소스는 응용 프로그램과 함께 논리적으로 배포되는 실행 불가능한 데이터입니다. 리소스는 응용 프로그램에서 오류 메시지로 표시되거나 사용자 인터페이스의 일부로 표시될 수 있습니다. 리소스는 문자열, 이미지, 지속된 개체 등을 포함하여 수많은 형식의 데이터를 포함할 수 있습니다. (지속된 개체를 리소스 파일에 쓰려면 해당 개체를 serialize할 수 있어야 합니다.) 리소스 파일에 데이터를 저장하면 전체 응용 프로그램을 다시 컴파일하지 않고 데이터를 변경할 수 있습니다. 또한 단일 위치에 데이터를 저장할 수 있고, 여러 위치에 저장되어 있는 하드 코딩된 데이터를 사용하지 않아도 됩니다.  

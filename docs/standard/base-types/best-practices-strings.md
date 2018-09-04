@@ -1,6 +1,6 @@
 ---
 title: .NET에서 문자열 사용에 대한 모범 사례
-ms.date: 03/30/2017
+ms.date: 08/22/2018
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3bdc23c909be0f9df051d538ca93cbb0a8e31426
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 14945cc6812e4bcb14085656337c7df1abc0a5bf
+ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579732"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43000153"
 ---
 # <a name="best-practices-for-using-strings-in-net"></a>.NET에서 문자열 사용에 대한 모범 사례
 <a name="top"></a> .NET에서는 지역화된 응용 프로그램과 전역화된 응용 프로그램을 개발하기 위한 광범위한 지원을 제공하고 문자열 정렬 및 표시와 같은 일반적인 작업을 수행할 때 현재 문화권이나 특정 문화권의 규칙을 쉽게 적용할 수 있습니다. 그러나 문자열 정렬 및 비교가 항상 문화권이 구분되는 작업은 아닙니다. 예를 들어 응용 프로그램에서 내부적으로 사용되는 문자열은 대기 모든 문화권에서 동일하게 처리해야 합니다. XML 태그, HTML 태그, 사용자 이름, 파일 경로 및 시스템 개체 이름과 같이 문화권을 구분하지 않는 문자열 데이터가 문화권이 구분되는 것처럼 해석되면 응용 프로그램 코드에는 감지하기 어려운 버그, 성능 저하 및 경우에 따라 보안 문제가 발생할 수 있습니다.  
@@ -121,7 +121,10 @@ ms.locfileid: "33579732"
 <a name="the_details_of_string_comparison"></a>   
 ## <a name="the-details-of-string-comparison"></a>문자열 비교 세부 정보  
  문자열 비교는 특히 정렬 및 같음 테스트와 같은 다양한 문자열 관련 작업의 핵심입니다. 결정된 순서의 문자열 정렬: 정렬된 문자열 목록에서 "my"가 "string" 앞에 나타나면 "my"가 "string"과 같거나 작은지 비교해야 합니다. 또한 비교는 암시적으로 같음을 정의합니다. 비교 작업은 같은 것으로 판단되는 문자열에 대해 0을 반환합니다. 다른 문자열보다 작은 문자열이 없다고 해석하는 것이 적절합니다. 문자열과 관련된 대부분 의미 있는 작업에는 다른 문자열과 비교 및 잘 정의된 정렬 작업 실행이라는 두 가지 절차가 둘 다 또는 두 가지 중 하나가 포함됩니다.  
-  
+
+> [!NOTE]
+> Windows 운영 체제에 대한 정렬 및 비교 작업에 사용되는 문자 가중치에 대한 정보를 포함하는 텍스트 파일의 집합, [가중치 테이블 정렬](https://www.microsoft.com/en-us/download/details.aspx?id=10921)을 다운로드할 수 있습니다.
+
  그러나 두 문자열의 같음 또는 정렬 순서를 평가할 때 하나의 올바른 결과가 생성되지는 않습니다. 결과는 문자열 비교에 사용되는 기준에 따라 다릅니다. 특히 서수 문자열 비교나 현재 문화권이나 고정 문화권(영어를 기준으로 로캘을 구분하지 않는 문화권)의 대/소문자 구분 및 정렬 규칙을 기준으로 한 문자열 비교에서는 다른 결과가 생성될 수 있습니다.  
   
 <a name="current_culture"></a>   
@@ -258,7 +261,7 @@ ms.locfileid: "33579732"
   
  이 메서드는 현재 <xref:System.StringComparison> 형식을 지정하는 오버로드를 제공하지 않습니다. 일반적으로 이 메서드를 권장되는 <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> 양식으로 변환할 수 있습니다.  
   
- <xref:System.IComparable> 및 <xref:System.IComparable%601> 인터페이스를 구현하는 형식이 이 메서드를 구현합니다. <xref:System.StringComparison> 매개 변수의 옵션을 제공하지 않으므로 형식 구현 시 사용자가 생성자에서 <xref:System.StringComparer> 를 구현해야 할 수 있습니다. 다음 예제에서는 클래스 생성자에 `FileName` 매개 변수가 포함된 <xref:System.StringComparer> 클래스를 정의합니다. 이 <xref:System.StringComparer> 개체는 `FileName.CompareTo` 메서드에 사용됩니다.  
+ <xref:System.IComparable> 및 <xref:System.IComparable%601> 인터페이스를 구현하는 형식이 이 메서드를 구현합니다. <xref:System.StringComparison> 매개 변수의 옵션을 제공하지 않으므로 형식 구현 시 사용자가 생성자에서 <xref:System.StringComparer>를 구현해야 할 수 있습니다. 다음 예제에서는 클래스 생성자에 `FileName` 매개 변수가 포함된 <xref:System.StringComparer> 클래스를 정의합니다. 이 <xref:System.StringComparer> 개체는 `FileName.CompareTo` 메서드에 사용됩니다.  
   
  [!code-csharp[Conceptual.Strings.BestPractices#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/api1.cs#6)]
  [!code-vb[Conceptual.Strings.BestPractices#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/api1.vb#6)]  

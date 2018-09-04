@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, delegates
 - delegates [C#]
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
-ms.openlocfilehash: 9711b3c52f6d28d37e0b0d4d4de2f1be6bb46283
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 3924d070ea012faf33f1d808b92b1328626ef567
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499540"
+ms.locfileid: "43558412"
 ---
 # <a name="delegates-c-programming-guide"></a>대리자(C# 프로그래밍 가이드)
 [대리자](../../../csharp/language-reference/keywords/delegate.md)는 특정 매개 변수 목록 및 반환 형식이 있는 메서드에 대한 참조를 나타내는 형식입니다. 대리자를 인스턴스화하면 모든 메서드가 있는 인스턴스를 호환되는 시그니처 및 반환 형식에 연결할 수 있습니다. 대리자 인스턴스를 통해 메서드를 호출할 수 있습니다.  
@@ -65,7 +65,8 @@ ms.locfileid: "43499540"
   
  [Delegates and Events](https://msdn.microsoft.com/library/orm-9780596521066-01-17.aspx) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Delegate>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [이벤트](../../../csharp/programming-guide/events/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Delegate>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [이벤트](../../../csharp/programming-guide/events/index.md)
