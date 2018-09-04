@@ -18,11 +18,11 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 899f2ca5ef1b987687f5c065ad3e1965e142d103
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466115"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43564755"
 ---
 # <a name="imetadataemitmerge-method"></a>IMetaDataEmit::병합 메서드
 병합할 범위의 목록에 지정된 된 가져온된 범위를 추가 합니다.  

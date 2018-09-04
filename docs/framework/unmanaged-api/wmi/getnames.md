@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f53174bf060938d5a55cbd196944ac11916d59cd
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43258113"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43661396"
 ---
 # <a name="getnames-function"></a>GetNames 함수
-하위 집합 또는 모든 개체의 속성 이름을 검색합니다. 
+개체 속성의 하위 집합 또는 모든 이름을 검색합니다. 
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
