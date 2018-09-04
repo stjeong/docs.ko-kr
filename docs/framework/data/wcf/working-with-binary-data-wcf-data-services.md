@@ -8,37 +8,37 @@ helpviewer_keywords:
 - WCF Data Services, binary data
 - WCF Data Services, streams
 ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
-ms.openlocfilehash: 9df9dadc3d4e4e62b216134bbc2fd69c4e1122e7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9f7ee114a5a480d470c2c32b5b83e287b07e9537
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365373"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515557"
 ---
 # <a name="working-with-binary-data-wcf-data-services"></a>이진 데이터 작업(WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리를 사용 하면 검색에서 이진 데이터를 업데이트 하는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 다음 방법 중 하나에 피드:  
+합니다 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리를 사용 하면 검색에서 이진 데이터를 업데이트 하는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 다음 방법 중 하나로 피드:  
   
 -   엔터티의 기본 형식 속성으로. 이 방법은 메모리에 쉽게 로드할 수 있는 작은 이진 데이터 개체로 작업하는 경우 권장됩니다. 이 경우 이진 속성은 데이터 모델에서 노출하는 엔터티 속성이며, 데이터 서비스는 이진 데이터를 응답 메시지에서 base-64 이진 인코딩 XML로 serialize합니다.  
   
 -   별도의 이진 리소스 스트림으로. 이 방법은 사진, 비디오 또는 다른 형식의 이진 인코딩 데이터를 나타낼 수 있는 BLOB(Binary Large Object) 데이터에 액세스하고 변경하는 경우 권장됩니다.  
   
- [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 에 정의 된 대로 HTTP를 사용 하 여 이진 데이터의 스트리밍을 구현 하는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]합니다. 이 메커니즘에서 이진 데이터와 별개의 미디어 리소스로 처리 않으며 미디어 링크 항목을 호출 하는 엔터티와 관련 된입니다. 자세한 내용은 참조 [스트리밍 공급자](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md)합니다.  
+ [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 에 정의 된 대로 HTTP를 사용 하 여 이진 데이터의 스트리밍을 구현 된 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]합니다. 이 메커니즘에서 이진 데이터는 별개의 미디어 리소스로 처리 되었지만 미디어 링크 항목 이라고 하는 엔터티와 관련 된 합니다. 자세한 내용은 [스트리밍 공급자](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md)합니다.  
   
 > [!TIP]
->  이전 이미지 파일을 다운로드 하는 Windows Presentation Foundation (WPF) 클라이언트 응용 프로그램을 만드는 방법의 단계별 예는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 게시물을 참조 하는 사진, 저장 하는 서비스 [데이터 서비스 스트리밍 공급자 시리즈-파트 2: 클라이언트에서 미디어 리소스 스트림에 액세스](http://go.microsoft.com/fwlink/?LinkId=201637)합니다. 블로그 게시물에 스트림 사진 데이터 서비스에 대 한 샘플 코드를 다운로드 하려면 참조는 [스트리밍 사진 데이터 서비스 샘플](http://go.microsoft.com/fwlink/?LinkId=198988) MSDN 코드 갤러리에서 합니다.  
+>  이진 이미지 파일을 다운로드 하는 Windows Presentation Foundation (WPF) 클라이언트 응용 프로그램을 만드는 방법의 단계별 예제는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 게시물을 참조 하는 사진 저장 하는 서비스 [데이터 서비스 스트리밍 공급자 시리즈-파트 2: 클라이언트에서 미디어 리소스 Stream 액세스](https://go.microsoft.com/fwlink/?LinkId=201637)합니다. 블로그 게시물에 주요 스트림 사진 데이터 서비스에 대 한 샘플 코드를 다운로드 하려면 참조는 [스트리밍 사진 데이터 서비스 샘플](https://go.microsoft.com/fwlink/?LinkId=198988) MSDN 코드 갤러리에서.  
   
 ## <a name="entity-metadata"></a>엔터티 메타데이터  
- 관련 미디어 리소스 스트림이 있는 엔터티는 미디어 링크 항목인 엔터티 형식에 적용된 `HasStream` 특성을 통해 데이터 서비스 메타데이터에 표시됩니다. 다음 예제에서는 `PhotoInfo` 엔터티가 미디어 링크 항목으로 표시는 관련된 미디어 리소스가 있는는 `HasStream` 특성입니다.  
+ 관련 미디어 리소스 스트림이 있는 엔터티는 미디어 링크 항목인 엔터티 형식에 적용된 `HasStream` 특성을 통해 데이터 서비스 메타데이터에 표시됩니다. 다음 예제에서는 `PhotoInfo` 엔터티가 미디어 링크 항목으로 표시, 관련된 미디어 리소스가 있는 `HasStream` 특성입니다.  
   
  [!code-xml[Astoria Photo Streaming Service#HasStream](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria photo streaming service/xml/photodata.edmx#hasstream)]  
   
- 이 항목의 나머지 예제에서는 미디어 리소스 스트림에 액세스하고 변경하는 방법을 보여 줍니다. 사용 하 여.NET Framework 클라이언트 응용 프로그램에서 미디어 리소스 스트림을 사용 하는 방법의 전체 예제는 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리 게시물을 참조 [클라이언트에서 미디어 리소스 스트림에 액세스](http://go.microsoft.com/fwlink/?LinkID=201637)합니다.  
+ 이 항목의 나머지 예제에서는 미디어 리소스 스트림에 액세스하고 변경하는 방법을 보여 줍니다. 사용 하 여.NET Framework 클라이언트 응용 프로그램에서 미디어 리소스 스트림을 사용 하는 방법의 전체 예제는 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리를 게시물을 참조 하세요 [클라이언트에서 미디어 리소스 Stream 액세스](https://go.microsoft.com/fwlink/?LinkID=201637)합니다.  
   
 ## <a name="accessing-the-binary-resource-stream"></a>이진 리소스 스트림 액세스  
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클라이언트 라이브러리에서는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 기반 데이터 서비스에서 이진 리소스 스트림에 액세스하는 방법을 제공합니다. 미디어 리소스를 다운로드할 때 미디어 리소스의 URI를 사용하거나 미디어 리소스 데이터 자체가 포함된 이진 스트림을 가져올 수 있습니다. 또한 미디어 리소스 데이터를 이진 스트림으로 업로드할 수도 있습니다.  
   
 > [!TIP]
->  이전 이미지 파일을 다운로드 하는 Windows Presentation Foundation (WPF) 클라이언트 응용 프로그램을 만드는 방법의 단계별 예는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 게시물을 참조 하는 사진, 저장 하는 서비스 [데이터 서비스 스트리밍 공급자 시리즈-파트 2: 클라이언트에서 미디어 리소스 스트림에 액세스](http://go.microsoft.com/fwlink/?LinkId=201637)합니다. 블로그 게시물에 스트림 사진 데이터 서비스에 대 한 샘플 코드를 다운로드 하려면 참조는 [스트리밍 사진 데이터 서비스 샘플](http://go.microsoft.com/fwlink/?LinkId=198988) MSDN 코드 갤러리에서 합니다.  
+>  이진 이미지 파일을 다운로드 하는 Windows Presentation Foundation (WPF) 클라이언트 응용 프로그램을 만드는 방법의 단계별 예제는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 게시물을 참조 하는 사진 저장 하는 서비스 [데이터 서비스 스트리밍 공급자 시리즈-파트 2: 클라이언트에서 미디어 리소스 Stream 액세스](https://go.microsoft.com/fwlink/?LinkId=201637)합니다. 블로그 게시물에 주요 스트림 사진 데이터 서비스에 대 한 샘플 코드를 다운로드 하려면 참조는 [스트리밍 사진 데이터 서비스 샘플](https://go.microsoft.com/fwlink/?LinkId=198988) MSDN 코드 갤러리에서.  
   
 ### <a name="getting-the-uri-of-the-binary-stream"></a>이진 스트림의 URI 가져오기  
  이미지 및 기타 미디어 파일과 같은 특정 유형의 미디어 리소스를 검색할 때 이진 데이터 스트림 자체를 처리하는 것보다 응용 프로그램에 있는 미디어 리소스의 URI를 사용하는 것이 쉬운 경우가 많습니다. 특정 미디어 링크 항목과 연결된 리소스 스트림의 URI를 가져오려면 엔터티를 추적하는 <xref:System.Data.Services.Client.DataServiceContext.GetReadStreamUri%2A> 인스턴스에서 <xref:System.Data.Services.Client.DataServiceContext> 메서드를 호출해야 합니다. 다음 예제에서는 <xref:System.Data.Services.Client.DataServiceContext.GetReadStreamUri%2A> 메서드를 호출하여 클라이언트에서 새 이미지를 만드는 데 사용되는 미디어 리소스 스트림의 URI를 가져오는 방법을 보여 줍니다.  

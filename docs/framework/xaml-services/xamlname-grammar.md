@@ -8,20 +8,20 @@ helpviewer_keywords:
 - names in XAML [XAML Services]
 - XamlName grammar [XAML Services]
 ms.assetid: 11e4cada-41d2-494d-9531-0d3df4dfcbe3
-ms.openlocfilehash: 32fd7b7b952ebbc853e41c0a8276d1ab487e619f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2a934316517047da6b6aec8e88026024b9a25f65
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33561893"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514803"
 ---
 # <a name="xamlname-grammar"></a>XamlName 문법
-XamlName 문법에 편의 위해 여기에 재현 되어 XAML 언어 사양 [MS XAML], 정의 된 특정 문법입니다.  
+XamlName 문법에는 편의 위해 여기에 재현 되어 있는 XAML 언어 사양 [MS-XAML]에 정의 된 특정 문법입니다.  
   
 ## <a name="from-the-xaml-specification"></a>XAML 사양에서  
- [MS XAML] 사양은 유형 및 속성에 사용 되는 올바른 기호 식별자의 집합을 식별 하기 위해 XamlName 문법을 정의 합니다.  
+ [MS XAML] 형식 및 속성에 사용 되는 올바른 기호 식별자 집합을 식별 하기 위해 XamlName 문법을 정의 합니다.  
   
- 문자열 값 형식인 XamlName 다음 문법을 따라야 합니다.  
+ XamlName 다음 문법을 준수 해야 하는 형식의 값을 문자열:  
   
 ```  
 XamlName ::= NameStartChar ( NameChar )*   
@@ -32,7 +32,7 @@ DecimalDigit ::= UnicodeNd
 CombiningCharacter ::= UnicodeMn | UnicodeMc  
 ```  
   
- 유니코드 문자 데이터베이스에 정의 된 대로 다음과 같은 일반 범주 값을 가정 하  
+ 유니코드 문자 데이터베이스에 정의 된 대로 다음과 같은 일반 범주 값을 가정 하는  
   
 ```  
 Lu  
@@ -55,13 +55,13 @@ Nl
 Number, Letter  
 ```  
   
- XAML DottedXamlName 속성에 사용 되는 두 번째 문법적으로 정의 하 고 이벤트 정규화 된 참조를 한도 대 한 멤버를 연결 합니다. 자세한 내용은 참조 <xref:System.Windows.DependencyProperty> 및 [XAML 개요 (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)합니다.  
+ XAML DottedXamlName 속성에 사용 되는 두 번째 문법에 정의 및 이벤트 참조를 정규화도 대 한 멤버를 연결 합니다. 자세한 내용은 <xref:System.Windows.DependencyProperty> 하 고 [XAML 개요 (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)합니다.  
   
- 문자열 값 형식인 DottedXamlName 다음 문법을 따라야 합니다.  
+ DottedXamlName 다음 문법을 준수 해야 하는 형식의 값을 문자열:  
   
 ```  
 DottedXamlName ::= XamlName '.' XamlName  
 ```  
   
 ## <a name="remarks"></a>설명  
- 완전 한 사양에 대 한 참조 [ \[MS-XAML\]](http://go.microsoft.com/fwlink/?LinkId=114525)합니다.
+ 완전 한 사양에 대해서 [ \[MS XAML\]](https://go.microsoft.com/fwlink/?LinkId=114525)합니다.

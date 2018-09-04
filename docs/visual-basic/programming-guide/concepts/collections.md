@@ -2,12 +2,12 @@
 title: 컬렉션 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-ms.openlocfilehash: 563cef59c0e52d41dcdeaa51b5bc4d7b8f9554f9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 510abe7d818b3a45869824bc52dc4fde38238f7b
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33644318"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43504446"
 ---
 # <a name="collections-visual-basic"></a>컬렉션 (Visual Basic)
 대부분의 응용 프로그램의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "33644318"
  컬렉션에 단일 데이터 형식의 요소만 포함된 경우 <xref:System.Collections.Generic?displayProperty=nameWithType> 네임스페이스의 클래스 중 하나를 사용할 수 있습니다. 제네릭 컬렉션은 다른 데이터 형식을 추가할 수 없도록 형식 안전성을 적용합니다. 제네릭 컬렉션에서 요소를 검색하는 경우 해당 데이터 형식을 결정하거나 변환할 필요가 없습니다.  
   
 > [!NOTE]
->  이 항목의 예제를 포함 [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) 에 대 한 문을 `System.Collections.Generic` 및 `System.Linq` 네임 스페이스입니다.  
+>  이 항목의 예제를 포함 [가져오기를](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) 에 대 한 문을 합니다 `System.Collections.Generic` 및 `System.Linq` 네임 스페이스입니다.  
   
  **항목 내용**  
   
@@ -51,7 +51,7 @@ ms.locfileid: "33644318"
 ## <a name="using-a-simple-collection"></a>간단한 컬렉션 사용  
  이 섹션의 예제에서는 강력한 형식의 개체 목록을 사용할 수 있게 해주는 제네릭 <xref:System.Collections.Generic.List%601> 클래스를 사용합니다.  
   
- 다음 예제에서는 문자열의 목록을 만들고 다음 사용 하 여 문자열을 반복는 [각각에 대해... 다음](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 문.  
+ 다음 예제에서는 문자열 목록을 만들고 문자열을 사용 하 여 다음 반복을 [각각에 대 한 중... 다음](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 문입니다.  
   
 ```vb  
 ' Create a list of strings.  
@@ -84,7 +84,7 @@ Next
 'Output: chinook coho pink sockeye  
 ```  
   
- 사용할 수는 [에 대 한... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 문 대신는 `For Each` 컬렉션을 반복 하는 문입니다. 인덱스 위치에 따라 컬렉션 요소에 액세스하여 이 작업을 수행합니다. 요소의 인덱스는 0부터 시작하고 요소 개수-1에서 끝납니다.  
+ 사용할 수는 [에 대 한 중... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 대신 문을 `For Each` 컬렉션을 반복 하는 문입니다. 인덱스 위치에 따라 컬렉션 요소에 액세스하여 이 작업을 수행합니다. 요소의 인덱스는 0부터 시작하고 요소 개수-1에서 끝납니다.  
   
  다음 예제에서는 `For Each` 대신 `For…Next`를 사용하여 컬렉션의 요소를 반복합니다.  
   
@@ -116,7 +116,7 @@ Next
 'Output: chinook pink sockeye  
 ```  
   
- 다음 예제에서는 제네릭 목록에서 요소를 제거합니다. 대신는 `For Each` 문에서 [에 대 한... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 내림차순 반복 문을 사용 합니다. 이는 <xref:System.Collections.Generic.List%601.RemoveAt%2A> 메서드로 인해 제거된 요소 뒤의 요소가 더 낮은 인덱스 값을 갖기 때문입니다.  
+ 다음 예제에서는 제네릭 목록에서 요소를 제거합니다. 대신를 `For Each` 문에서 [에 대 한 중... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 내림차순으로 반복 하는 문을 사용 합니다. 이는 <xref:System.Collections.Generic.List%601.RemoveAt%2A> 메서드로 인해 제거된 요소 뒤의 요소가 더 낮은 인덱스 값을 갖기 때문입니다.  
   
 ```vb  
 Dim numbers As New List(Of Integer) From  
@@ -228,13 +228,13 @@ End Class
 
 <a name="BKMK_VisualBasic"></a> 
 ###  <a name="visual-basic-collection-class"></a>Visual Basic 컬렉션 클래스  
- Visual Basic에서는 <xref:Microsoft.VisualBasic.Collection> 클래스 컬렉션 항목 사용 하 여 숫자 인덱스 또는 액세스를 `String` 키입니다. 키를 지정하거나 지정하지 않고 컬렉션 개체에 항목을 추가할 수 있습니다. 키 없이 항목을 추가하는 경우 숫자 인덱스를 사용해서 액세스해야 합니다.  
+ Visual Basic을 사용할 수 있습니다 <xref:Microsoft.VisualBasic.Collection> 항목에서 사용 하 여 컬렉션 숫자 인덱스 또는 액세스 클래스 `String` 키입니다. 키를 지정하거나 지정하지 않고 컬렉션 개체에 항목을 추가할 수 있습니다. 키 없이 항목을 추가하는 경우 숫자 인덱스를 사용해서 액세스해야 합니다.  
   
- Visual Basic `Collection` 클래스의 모든 요소 형식으로 저장 `Object`하므로 모든 데이터 형식의 항목을 추가할 수 있습니다. 부적절한 데이터 형식이 추가되지 않도록 하는 보호 수단은 없습니다.  
+ Visual Basic `Collection` 클래스의 모든 요소를 형식으로 저장 `Object`이므로 모든 데이터 형식의 항목을 추가할 수 있습니다. 부적절한 데이터 형식이 추가되지 않도록 하는 보호 수단은 없습니다.  
   
  Visual Basic을 사용 하는 경우 `Collection` 클래스, 컬렉션의 첫 번째 항목의 인덱스는 1입니다. 이는 시작 인덱스가 0인 .NET Framework 컬렉션 클래스와 다릅니다.  
   
- 제네릭 컬렉션을 사용 해야 가능 하면 항상는 <xref:System.Collections.Generic?displayProperty=nameWithType> 네임 스페이스 또는 <xref:System.Collections.Concurrent> 네임 스페이스는 Visual Basic 대신 `Collection` 클래스입니다.  
+ 가능 하면의 제네릭 컬렉션을 사용 해야 합니다 <xref:System.Collections.Generic?displayProperty=nameWithType> 네임 스페이스 또는 <xref:System.Collections.Concurrent> Visual Basic 대신 네임 스페이스 `Collection` 클래스입니다.  
   
  자세한 내용은 <xref:Microsoft.VisualBasic.Collection>을 참조하세요.  
   
@@ -306,7 +306,7 @@ Private Function BuildDictionary2() As Dictionary(Of String, Element)
 End Function  
 ```  
   
- 다음 예제에서는 `Dictionary`의 <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> 메서드 및 <xref:System.Collections.Generic.Dictionary%602.Item%2A> 속성을 사용하여 키를 통해 항목을 신속하게 찾습니다. `Item` 속성 항목에 액세스할 수 있습니다는 `elements` 사용 하 여 컬렉션에서 `elements(symbol)` Visual basic에서 코드입니다.  
+ 다음 예제에서는 `Dictionary`의 <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> 메서드 및 <xref:System.Collections.Generic.Dictionary%602.Item%2A> 속성을 사용하여 키를 통해 항목을 신속하게 찾습니다. `Item` 속성의 항목에 액세스할 수 있습니다를 `elements` 사용 하 여 컬렉션을 `elements(symbol)` Visual Basic의 코드입니다.  
   
 ```vb  
 Private Sub FindInDictionary(ByVal symbol As String)  
@@ -338,7 +338,7 @@ End Sub
   
 <a name="BKMK_LINQ"></a> 
 ##  <a name="using-linq-to-access-a-collection"></a>LINQ를 사용하여 컬렉션에 액세스  
- LINQ(통합 언어 쿼리)를 사용하여 컬렉션에 액세스할 수 있습니다. LINQ 쿼리는 필터링, 정렬 및 그룹화 기능을 제공합니다. 자세한 내용은 참조 [Visual Basic에서 LINQ 시작](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)합니다.  
+ LINQ(통합 언어 쿼리)를 사용하여 컬렉션에 액세스할 수 있습니다. LINQ 쿼리는 필터링, 정렬 및 그룹화 기능을 제공합니다. 자세한 내용은 [Getting Started with Visual Basic의 LINQ](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)합니다.  
   
  다음 예제에서는 제네릭 `List`에 대해 LINQ 쿼리를 실행합니다. LINQ 쿼리는 결과를 포함하는 다른 컬렉션을 반환합니다.  
   
@@ -462,9 +462,9 @@ End Class
   
 <a name="BKMK_CustomCollection"></a> 
 ## <a name="defining-a-custom-collection"></a>사용자 지정 컬렉션 정의  
- <xref:System.Collections.Generic.IEnumerable%601> 또는 <xref:System.Collections.IEnumerable> 인터페이스를 구현하여 컬렉션을 정의할 수 있습니다. 자세한 내용은 참조 하십시오. [컬렉션 열거](http://msdn.microsoft.com/library/71807ea7-9180-48a6-916f-35a5251d477f)합니다.  
+ <xref:System.Collections.Generic.IEnumerable%601> 또는 <xref:System.Collections.IEnumerable> 인터페이스를 구현하여 컬렉션을 정의할 수 있습니다. 자세한 내용은 참조 하세요. [컬렉션을 열거](https://msdn.microsoft.com/library/71807ea7-9180-48a6-916f-35a5251d477f)합니다.  
   
- 사용자 지정 컬렉션을 정의할 수도 있지만, 일반적으로 이 항목의 앞부분에 있는 [컬렉션 종류](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)에서 설명한 .NET Framework에 포함된 컬렉션을 대신 사용하는 것이 좋습니다.  
+ 사용자 지정 컬렉션을 정의할 수도 있지만, 일반적으로 이 항목의 앞부분에 있는 [컬렉션 종류](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)에서 설명한 .NET Framework에 포함된 컬렉션을 대신 사용하는 것이 좋습니다.  
   
  다음 예제에서는 `AllColors`라는 사용자 지정 컬렉션 클래스를 정의합니다. 이 클래스는 <xref:System.Collections.IEnumerable.GetEnumerator%2A> 메서드가 구현되어야 하는 <xref:System.Collections.IEnumerable> 인터페이스를 구현합니다.  
   
@@ -540,13 +540,13 @@ End Class
   
 <a name="BKMK_Iterators"></a>
 ##  <a name="iterators"></a>반복기  
- *반복기*는 컬렉션에 대해 사용자 지정 반복을 수행하는 데 사용됩니다. 반복기는 메서드 또는 `get` 접근자일 수 있습니다. 반복기를 사용 하 여 한 [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) 문을 한 번에 하나씩 컬렉션의 각 요소를 반환 합니다.  
+ *반복기*는 컬렉션에 대해 사용자 지정 반복을 수행하는 데 사용됩니다. 반복기는 메서드 또는 `get` 접근자일 수 있습니다. 반복기를 사용 하는 [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) 문을 한 번에 하나씩 컬렉션의 각 요소를 반환 합니다.  
   
- 사용 하 여 반복기를 호출는 [각각에 대해... 다음](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 문. 각각의 `For Each` 루프의 반복이 반복기를 호출합니다. `Yield` 문이 반복기 메서드에 도달하면 식이 반환되고 코드에서 현재 위치는 유지됩니다. 다음에 반복기가 호출되면 해당 위치에서 실행이 다시 시작됩니다.  
+ 사용 하 여 반복기를 호출 하는 [각각에 대 한 중... 다음](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 문입니다. 각각의 `For Each` 루프의 반복이 반복기를 호출합니다. `Yield` 문이 반복기 메서드에 도달하면 식이 반환되고 코드에서 현재 위치는 유지됩니다. 다음에 반복기가 호출되면 해당 위치에서 실행이 다시 시작됩니다.  
   
- 자세한 내용은 참조 [반복기 (Visual Basic)](../../../visual-basic/programming-guide/concepts/iterators.md)합니다.  
+ 자세한 내용은 [반복기 (Visual Basic)](../../../visual-basic/programming-guide/concepts/iterators.md)합니다.  
   
- 다음 예제에서는 반복기 메서드를 사용합니다. 반복기 메서드에 `Yield` 문 내에 있는 한 [에 대 한... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 루프입니다. `ListEvenNumbers` 메서드에서 `For Each` 문 본문을 반복할 때마다 다음 `Yield` 문으로 진행하는 반복기 메서드에 대한 호출이 생성됩니다.  
+ 다음 예제에서는 반복기 메서드를 사용합니다. 반복기 메서드가 `Yield` 문 내에 있는 [에 대 한 중... 다음](../../../visual-basic/language-reference/statements/for-next-statement.md) 루프입니다. `ListEvenNumbers` 메서드에서 `For Each` 문 본문을 반복할 때마다 다음 `Yield` 문으로 진행하는 반복기 메서드에 대한 호출이 생성됩니다.  
   
 ```vb  
 Public Sub ListEvenNumbers()  
@@ -577,7 +577,7 @@ End Function
  [LINQ to Objects(Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
  [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
  [컬렉션 및 데이터 구조](../../../standard/collections/index.md)  
- [컬렉션 만들기 및 조작](http://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
+ [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
  [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)  
  [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
  [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)

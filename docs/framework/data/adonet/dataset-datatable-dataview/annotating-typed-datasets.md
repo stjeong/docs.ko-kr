@@ -5,16 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
-ms.openlocfilehash: 1974ac71e367203b8b94375e43d4fde13f2df51f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c66a11e0662cd007797243c136ec0617ce5be47c
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43513149"
 ---
 # <a name="annotating-typed-datasets"></a>형식화된 데이터 집합에 주석 지정
-주석을 사용하면 원본으로 사용하는 스키마를 수정하지 않고 형식화된 <xref:System.Data.DataSet>의 요소 이름을 수정할 수 있습니다. 기본 스키마에서 요소의 이름 수정로 인해 형식화 된 **데이터 집합** 않는 하지 데이터 원본에 없는 뿐만 아니라 데이터 원본에 없는 개체에 대 한 참조를 손실 되는 개체를 참조 하도록 합니다.  
+주석을 사용하면 원본으로 사용하는 스키마를 수정하지 않고 형식화된 <xref:System.Data.DataSet>의 요소 이름을 수정할 수 있습니다. 기본 스키마의 요소 이름 수정 형식화 된 없었다는 **데이터 집합** 수행 하지는 데이터 원본에 없는 뿐만 아니라 데이터 원본에 없는 개체에 대 한 참조를 손실 하는 개체를 가리킵니다.  
   
- 주석을 사용 하면 사용자 지정할 수 있습니다 개체의 이름을 입력 한 **DataSet** 더 의미 있는 이름으로 만드는 코드의 가독성 및 형식화 된 **DataSet** 그대로 유지 하면서 사용 하도록 클라이언트에 대 한 보다 쉽게 기본 스키마를 그대로 유지 합니다. 에 대 한 다음 스키마 요소 예를 들어는 **고객** 목차는 **Northwind** 데이터베이스는 **DataRow** 의 개체 이름  **CustomersRow** 및 <xref:System.Data.DataRowCollection> 라는 **고객**합니다.  
+ 주석을 사용 하면 사용자 지정할 수 있습니다 개체의 이름을 형식화 된 **데이터 집합** 더 의미 있는 이름을 사용 하 여 보다 읽기 쉬운 코드와 형식화 된 있도록 **데이터 집합** 그대로 유지 하면서 사용 하도록 클라이언트를 더 쉽게 기본 스키마를 그대로 유지 됩니다. 에 대 한 다음 스키마 요소 예를 들어 합니다 **고객** 목차를 **Northwind** 데이터베이스를 **DataRow** 의 개체 이름  **CustomersRow** 와 <xref:System.Data.DataRowCollection> 라는 **고객**합니다.  
   
 ```xml  
 <xs:element name="Customers">  
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/03/2018
 </xs:element>  
 ```  
   
- A **DataRowCollection** 이름 **고객** 클라이언트 코드에서 적절 한 의미 하지만 **DataRow** 이름 **CustomersRow** 잘못 된 것입니다 단일 개체 이므로 또한, 공통 시나리오 개체 참조 하지 않고는 **행** 식별자 대신는 단순히로 간주 하 고는 **고객** 개체입니다. 솔루션에 대 한 새 이름을 식별 하는 스키마에 주석을 추가 하는 것은 **DataRow** 및 **DataRowCollection** 개체입니다. 다음 코드는 이전 스키마에 주석을 단 것입니다.  
+ A **DataRowCollection** 의 이름 **고객** 클라이언트 코드에서 의미가 있지만 **DataRow** 이름 **CustomersRow** 잘못 된 것입니다 단일 개체 이므로 또한 일반적인 시나리오의 경우 개체 참조 하지 않고 합니다 **행** 식별자 대신는 단순히로 간주 하 고는 **고객** 개체입니다. 방법은 스키마에 주석을 추가 하 고 새 이름을 식별 합니다 **DataRow** 하 고 **DataRowCollection** 개체입니다. 다음 코드는 이전 스키마에 주석을 단 것입니다.  
   
 ```xml  
 <xs:element name="Customers" codegen:typedName="Customer" codegen:typedPlural="Customers">  
@@ -38,7 +39,7 @@ ms.lasthandoff: 05/03/2018
 </xs:element>  
 ```  
   
- 지정 하는 **typedName** 값 **고객** 됩니다는 **DataRow** 의 개체 이름 **고객**합니다. 지정 하는 **typedPlural** 값 **고객** 유지는 **DataRowCollection** 이름 **고객**합니다.  
+ 지정 하는 **typedName** 의 값 **고객** 하면를 **DataRow** 의 개체 이름 **고객**합니다. 지정 하는 **typedPlural** 의 값 **고객** 유지를 **DataRowCollection** 이름 **고객**합니다.  
   
  다음 표에서는 사용할 수 있는 주석을 보여 줍니다.  
   
@@ -48,18 +49,18 @@ ms.lasthandoff: 05/03/2018
 |**typedPlural**|개체 컬렉션의 이름입니다.|  
 |**typedParent**|부모 관계에서 참조될 때의 개체 이름입니다.|  
 |**typedChildren**|자식 관계에서 개체를 반환하기 위한 메서드의 이름입니다.|  
-|**nullValue**|원본 값이 있으면 **DBNull**합니다. 다음 표를 참조 하십시오 **nullValue** 주석입니다. 기본값은 **_throw**합니다.|  
+|**nullValue**|원본 값이 있으면 **DBNull**합니다. 다음 표를 참조 하세요 **nullValue** 주석입니다. 기본값은 **_throw**합니다.|  
   
- 다음 표에서에 지정 될 수 있는 값을 보여 줍니다.는 **nullValue** 주석입니다.  
+ 다음 표에서에 지정 될 수 있는 값을 **nullValue** 주석입니다.  
   
 |nullValue 값|설명|  
 |---------------------|-----------------|  
 |*대체 값*|반환될 값을 지정합니다. 반환되는 값은 요소의 형식과 일치해야 합니다. 예를 들어, `nullValue="0"`을 사용하여 null 정수 필드에 0을 반환합니다.|  
 |**_throw**|예외를 throw합니다. 이 값이 기본값입니다.|  
 |**_null**|기본 형식이 발견되면 null 참조를 반환하거나 예외를 throw합니다.|  
-|**_empty**|문자열에 대해 반환 **String.Empty**, 그렇지 않으면 빈 생성자에서 만든 개체를 반환 합니다. 기본 형식이 발견되면 예외를 throw합니다.|  
+|**_empty**|문자열의 경우 반환 **String.Empty**, 그렇지 않으면 빈 생성자에서 만든 개체를 반환 합니다. 기본 형식이 발견되면 예외를 throw합니다.|  
   
- 다음 표에서 형식화 된 개체에 대 한 기본 값을 보여 줍니다. **DataSet** 및 사용할 수 있는 주석입니다.  
+ 다음 표에서 형식화 된 개체에 대 한 기본값을 보여 줍니다 **데이터 집합** 및 주석을 사용할 수 있습니다.  
   
 |개체/메서드/이벤트|기본|주석|  
 |---------------------------|-------------|----------------|  
@@ -73,13 +74,13 @@ ms.lasthandoff: 05/03/2018
 |**부모** 접근자|TableNameRow|typedParent|  
 |**데이터 집합** 이벤트|TableNameRowChangeEvent<br /><br /> TableNameRowChangeEventHandler|typedName|  
   
- 사용 하려면 입력 **DataSet** 주석, 다음을 포함 해야 **xmlns** XML 스키마 정의 언어 (XSD) 스키마에서 참조 합니다. (데이터베이스 테이블에서 xsd를 만들려면 <xref:System.Data.DataSet.WriteXmlSchema%2A> 또는 [Visual Studio에서 데이터 집합 작업](http://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
+ 사용 하 여 형식화 **데이터 집합** 주석을 다음을 포함 해야 합니다 **xmlns** XML 스키마 정의 언어 (XSD) 스키마에서 참조 합니다. (데이터베이스 테이블에서 xsd를 만들려면, 참조 <xref:System.Data.DataSet.WriteXmlSchema%2A> 나 [Visual Studio에서 데이터 집합 작업](https://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
   
 ```  
 xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  
 ```  
   
- 다음은 주석이 있는 샘플 스키마를 노출 하는 **고객** 목차는 **Northwind** 와 관계를 사용 하 여 데이터베이스의 **주문** 포함 된 테이블입니다.  
+ 다음은 주석이 있는 샘플 스키마를 노출 하는 **고객** 목차를 **Northwind** 와 관계를 사용 하 여 데이터베이스를 **주문** 포함 된 테이블.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -133,7 +134,7 @@ codegen:typedParent="Customer" codegen:typedChildren="GetOrders">
 </xs:schema>  
 ```  
   
- 다음 코드 예제를 사용 하 여 강력한 형식의 **DataSet** 샘플 스키마에서 생성 합니다. 하나 사용 하 여 <xref:System.Data.SqlClient.SqlDataAdapter> 채우는 데는 **고객** 테이블과 다른 <xref:System.Data.SqlClient.SqlDataAdapter> 채우는 데는 **Orders** 테이블입니다. 강력한 형식의 **DataSet** 정의 **Datarelation**합니다.  
+ 다음 코드 예제에서는 강력한 형식의 **데이터 집합** 샘플 스키마에서 생성 합니다. 하나를 사용 <xref:System.Data.SqlClient.SqlDataAdapter> 채우는 데는 **고객** 테이블과 다른 테이블 <xref:System.Data.SqlClient.SqlDataAdapter> 채우는 데는 **주문** 테이블입니다. 강력한 형식의 **데이터 집합** 정의 된 **Datarelation**합니다.  
   
 ```vb  
 ' Assumes a valid SqlConnection object named connection.  
@@ -158,7 +159,7 @@ AddHandler customers.Customers.CustomerChanged, &
   
 ' Add a strongly typed DataRow.  
 Dim newCustomer As CustomerDataSet.Customer = _  
-    customers.Customers.NewCustomeromer()  
+    customers.Customers.NewCustomer()  
 newCustomer.CustomerID = "NEW01"  
 newCustomer.CompanyName = "My New Company"  
 customers.Customers.AddCustomer(newCustomer)  
@@ -202,7 +203,7 @@ customers.Customers.CustomerChanged += new
   
 // Add a strongly typed DataRow.  
 CustomerDataSet.Customer newCustomer =   
-    customers.Customers.NewCustomeromer();  
+    customers.Customers.NewCustomer();  
 newCustomer.CustomerID = "NEW01";  
 newCustomer.CompanyName = "My New Company";  
 customers.Customers.AddCustomer(newCustomer);  
@@ -226,4 +227,4 @@ protected static void OnCustomerChanged(object sender, CustomerDataSet.CustomerC
  <xref:System.Data.DataSet>  
  [형식화된 데이터 집합](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  
  [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

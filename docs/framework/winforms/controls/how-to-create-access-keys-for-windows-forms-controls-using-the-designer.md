@@ -15,22 +15,22 @@ helpviewer_keywords:
 - access keys [Windows Forms], Windows Forms
 - ALT key
 ms.assetid: 4c374c4c-4ca9-4a68-ac96-9dc3ab0f518a
-ms.openlocfilehash: 023973e7fa4ab1e8b802d8c7cd8abef8201ed720
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d077de1636888f0e3b763344206692fee2cb2296
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532553"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43502977"
 ---
 # <a name="how-to-create-access-keys-for-windows-forms-controls-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms 컨트롤에 대한 선택키 만들기
-*선택 키* 은 메뉴, 메뉴 항목 또는 예: 단추 컨트롤의 레이블 텍스트에 밑줄이 그어진된 문자. "단추를 클릭"는 미리 정의 된 선택 키와 함께에서 ALT 키를 눌러 사용자 수 있습니다. 예를 들어, 단추는 폼을 인쇄 하는 프로시저를 실행 하는 경우 일부 이므로 해당 `Text` "Print" 추가 앰퍼샌드 (&) "P" 하면 문자 "P"에 밑줄이 단추 텍스트의 런타임 시 문자 앞에 속성을 설정 합니다. 사용자는 ALT + P를 눌러 단추와 연결 된 명령을 실행할 수 있습니다. 포커스를 받을 수 없는 컨트롤에 대 한 선택 키를 사용할 수 없습니다.  
+*선택키가* 은 메뉴, 메뉴 항목 또는 예: 단추 컨트롤의 레이블 텍스트에 밑줄이 그어진된 문자입니다. 사용자를가 단추를 미리 정의 된 액세스 키를 사용 하 여 함께에서 ALT 키를 눌러 "클릭" 수 있습니다. 예를 들어, 단추 폼을 인쇄 하는 프로시저를 실행 하는 경우 및 해당 `Text` "Print" 추가 앰퍼샌드 (&) "P" 하면 문자에 밑줄을 표시 "P" 단추 텍스트의 런타임 시 문자 앞에 속성을 설정 합니다. ALT + P를 눌러 단추와 연결 된 명령을 실행할 수 있습니다. 포커스를 받을 수 있는 컨트롤에 대 한 액세스 키를 사용할 수 없습니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
-### <a name="to-create-an-access-key-for-a-control"></a>컨트롤에 대 한 선택 키를 만들려면  
+### <a name="to-create-an-access-key-for-a-control"></a>컨트롤에 대 한 액세스 키를 만들려면  
   
-1.  에 **속성** 창의 설정의 `Text` 앰퍼샌드가 포함 하는 문자열 (&) 앞에 대 한 액세스 키가 될 속성입니다. 예를 들어 문자 "P" 선택 키를 설정 하려면 입력 **인쇄 &** ड आ 합니다.  
+1.  에 **속성** 창에서 `Text` 속성 앰퍼샌드를 포함 하는 문자열 (&) 앞에 대 한 액세스 키가 됩니다. 예를 들어, 입력을 설정 하려면 문자 "P" 액세스 키로 **인쇄 및** 모눈에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Forms.Button>  

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Label control [WPF]
 ms.assetid: 241c1ce2-60f8-4613-a0ec-9b9bb25fb6af
 ms.openlocfilehash: ec5dda6c2a4690106e47ecb447ea2a409e474856
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43476068"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500297"
 ---
 # <a name="label"></a>레이블
 <xref:System.Windows.Controls.Label> 컨트롤은 일반적으로에 정보를 제공 합니다 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]합니다.  지금까지 <xref:System.Windows.Controls.Label> 텍스트만 포함 되어 있는 때문 합니다 <xref:System.Windows.Controls.Label> 함께 제공 되는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 는 <xref:System.Windows.Controls.ContentControl>, 텍스트를 포함할 수 있습니다 또는 <xref:System.Windows.UIElement>.  

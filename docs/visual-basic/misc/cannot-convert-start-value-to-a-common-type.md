@@ -5,11 +5,11 @@ f1_keywords:
 - vbrForLoop_CommonType3
 ms.assetid: 21c45bcf-539c-488a-9cae-221558c37146
 ms.openlocfilehash: 80a2efec35c9a852383cf59aeff34d2a29278182
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43398017"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43503830"
 ---
 # <a name="cannot-convert-start-value-of-type-39lttype1gt39-limit-value-of-39lttype2gt39-and-step-value-of-39lttype3gt39-to-a-common-type"></a>형식의 시작 값으로 변환할 수 없습니다 &#39; &lt;type1&gt;&#39;의 한계 값 &#39; &lt;type2&gt; &#39; 의 단계 값 및 &#39; &lt;type3&gt; &#39; 에 공용 형식
 지정된 `For...Next` 컨트롤 값의 형식이 서로 달라서 공통 형식으로 변환할 수 없으므로 유효하지 않습니다.  

@@ -3,11 +3,11 @@ title: 메서드 기반 쿼리 예제(LINQ to DataSet)
 ms.date: 03/30/2017
 ms.assetid: d340775c-7f39-4087-a290-5cbec6cfa68e
 ms.openlocfilehash: 569292cc03f7cbcbaff2d8625849285ff6e2146e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: HT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482537"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500800"
 ---
 # <a name="method-based-query-examples-linq-to-dataset"></a>메서드 기반 쿼리 예제(LINQ to DataSet)
 이 단원에서는 표준 쿼리 연산자를 사용하는 메서드 기반 쿼리 구문으로 작성된 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 프로그래밍 예제를 제공합니다. <xref:System.Data.DataSet> 이러한 예제에 사용를 사용 하 여 채워집니다 합니다 `FillDataSet` 에 설명 된 메서드를 [로드 데이터에는 데이터 집합](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)합니다. 자세한 내용은 [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)합니다.  

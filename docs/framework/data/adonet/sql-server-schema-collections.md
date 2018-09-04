@@ -2,15 +2,15 @@
 title: SQL Server 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5
-ms.openlocfilehash: 248e5f4caf47f09742358240fa43f46169f0b1e5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7020c74d41ce1feef38c4dfc66117a7b8c8eff4e
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33361057"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43508492"
 ---
 # <a name="sql-server-schema-collections"></a>SQL Server 스키마 컬렉션
-Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉션뿐만 아니라 다른 스키마 컬렉션도 추가적으로 지원합니다. 지원되는 스키마 컬렉션은 현재 사용하고 있는 SQL Sever 버전에 따라 조금씩 다를 수 있습니다. 지원 되는 스키마 컬렉션의 목록을 확인 하려면 호출는 **GetSchema** 메서드를 인수 없이, 또는 "metadatacollections 라는" 스키마 컬렉션 이름입니다. 그러면 지원되는 스키마 컬렉션의 목록, 각자 지원하는 제약 조건 수 및 사용하는 식별자 부분 수가 포함된 <xref:System.Data.DataTable>이 반환됩니다.  
+Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉션뿐만 아니라 다른 스키마 컬렉션도 추가적으로 지원합니다. 지원되는 스키마 컬렉션은 현재 사용하고 있는 SQL Sever 버전에 따라 조금씩 다를 수 있습니다. 확인 하려면 지원 되는 스키마 컬렉션 목록을 호출 합니다 **GetSchema** 메서드 인수 없이 또는 "metadatacollections 라는" 스키마 컬렉션 이름입니다. 그러면 지원되는 스키마 컬렉션의 목록, 각자 지원하는 제약 조건 수 및 사용하는 식별자 부분 수가 포함된 <xref:System.Data.DataTable>이 반환됩니다.  
   
 ## <a name="databases"></a>Databases  
   
@@ -51,7 +51,7 @@ Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉
   
 |열 이름|데이터 형식|설명|  
 |----------------|--------------|-----------------|  
-|type_desc|문자열|인덱스 형식은 다음 중 하나입니다.<br /><br /> -HEAP<br />되지 클러스터<br />-비클러스터형<br />-   XML<br />공간|  
+|type_desc|문자열|인덱스 형식은 다음 중 하나입니다.<br /><br /> -HEAP<br />클러스터<br />-비클러스터형<br />-   XML<br />공간|  
   
 ## <a name="indexcolumns"></a>IndexColumns  
   
@@ -257,4 +257,4 @@ Microsoft .NET Framework Data Provider for SQL Server는 공통 스키마 컬렉
   
 ## <a name="see-also"></a>참고 항목  
  [데이터베이스 스키마 정보 검색](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

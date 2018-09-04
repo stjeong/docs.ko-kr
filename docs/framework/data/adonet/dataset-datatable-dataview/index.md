@@ -2,12 +2,12 @@
 title: DataSet, DataTable 및 DataView
 ms.date: 03/30/2017
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
-ms.openlocfilehash: 2303b0ce9bc8b389a3a7af9e8fcfbcb13d0007ae
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0f537ad8ff468de54adc8bc820a060eaca357be9
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32759490"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43506251"
 ---
 # <a name="datasets-datatables-and-dataviews"></a>DataSet, DataTable 및 DataView
 ADO.NET <xref:System.Data.DataSet>은 포함된 데이터 소스에 관계없이 일관성 있는 관계형 프로그래밍 모델을 제공하는 데이터의 메모리 상주 표현입니다. <xref:System.Data.DataSet>은 데이터를 포함하고 제약하며 데이터의 순서를 지정하는 테이블과 각 테이블 간의 관계를 포함하는 데이터의 완전한 집합을 나타냅니다.  
@@ -20,7 +20,7 @@ ADO.NET <xref:System.Data.DataSet>은 포함된 데이터 소스에 관계없이
   
 -   XML을 사용하여 <xref:System.Data.DataSet> 내용을 로드하고 유지합니다. 자세한 내용은 [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)을 참조하세요.  
   
- 또한 XML Web services를 사용하여 강력한 형식의 <xref:System.Data.DataSet>을 전송할 수 있습니다. <xref:System.Data.DataSet>의 디자인은 XML Web services를 사용하는 데이터 전송에 가장 적합합니다. XML Web services에 대한 개요는 [XML Web services 개요](http://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)를 참조하세요. XML Web services에서 <xref:System.Data.DataSet>를 사용하는 예제는 [Consuming a DataSet from an XML Web Service](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/consuming-a-dataset-from-an-xml-web-service.md)(XML Web services에서 데이터 집합 사용)를 참조하세요.  
+ 또한 XML Web services를 사용하여 강력한 형식의 <xref:System.Data.DataSet>을 전송할 수 있습니다. <xref:System.Data.DataSet>의 디자인은 XML Web services를 사용하는 데이터 전송에 가장 적합합니다. XML Web services에 대한 개요는 [XML Web services 개요](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)를 참조하세요. XML Web services에서 <xref:System.Data.DataSet>를 사용하는 예제는 [Consuming a DataSet from an XML Web Service](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/consuming-a-dataset-from-an-xml-web-service.md)(XML Web services에서 데이터 집합 사용)를 참조하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [데이터 집합 만들기](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset.md)  
@@ -80,4 +80,4 @@ ADO.NET <xref:System.Data.DataSet>은 포함된 데이터 소스에 관계없이
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

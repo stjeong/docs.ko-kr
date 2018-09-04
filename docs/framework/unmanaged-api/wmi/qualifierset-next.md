@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 938044a4e932139eb8a4d0a5d2f998cbc6f193cb
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43405529"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43507695"
 ---
 # <a name="qualifiersetnext-function"></a>QualifierSet_Next 함수
-다음 한정자에 대 한 호출을 시작 하는 열거형에는 검색 된 [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) 함수입니다.   
+[QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) 함수를 호출하여 시작된 열거형의 다음 한정자를 검색합니다.   
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

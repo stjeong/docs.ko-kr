@@ -8,40 +8,40 @@ helpviewer_keywords:
 - TableLayoutPanel control [Windows Forms], editing
 - rows [Windows Forms], editing
 ms.assetid: c367ed43-40dc-49eb-9e0f-ba70e83dfec0
-ms.openlocfilehash: 763d5df6c49d45f7ee305f4a3be0a1f0a2539872
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 820d2f98290650bfaf377bd2d4b863dfb2e6e704
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33533509"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500786"
 ---
 # <a name="how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control"></a>방법: TableLayoutPanel 컨트롤에서 열과 행 편집
-컬렉션 편집기를 사용할 수 있습니다는 <xref:System.Windows.Forms.TableLayoutPanel> 라는 컨트롤의 **열 및 행 스타일** 행과 컨트롤의 열을 편집 하려면 대화 상자.  
+컬렉션 편집기를 사용할 수는 <xref:System.Windows.Forms.TableLayoutPanel> 호출을 **열 및 행 스타일** 대화 상자에서 행과 컨트롤의 열을 편집 하려면.  
   
 > [!NOTE]
->  여러 행 이나 열에 걸쳐 제어 설정에서 `RowSpan` 및 `ColumnSpan` 컨트롤의 속성에 있습니다. 자세한 내용은 [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
+>  여러 행 또는 열에 걸쳐 제어를 설정 합니다 `RowSpan` 및 `ColumnSpan` 컨트롤의 속성입니다. 자세한 내용은 [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
 >   
->  사용 하 여 컨트롤의 셀 내에서 컨트롤 정렬 하려는 또는 확장을 제어 하려는 경우 <xref:System.Windows.Forms.Control.Anchor%2A> 속성입니다. 자세한 내용은 [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
+>  셀 내에 있는 컨트롤을 정렬 하려는 셀 내에서 확장 하려는 경우를 사용 하 여 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성입니다. 자세한 내용은 [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
 >   
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
-### <a name="to-edit-rows-and-columns"></a>행과 열을 편집 하려면  
+### <a name="to-edit-rows-and-columns"></a>행 및 열 편집  
   
-1.  끌어서는 <xref:System.Windows.Forms.TableLayoutPanel> 에서 제어는 **도구 상자** 폼으로 합니다.  
+1.  끌어서를 <xref:System.Windows.Forms.TableLayoutPanel> 에서 제어 합니다 **도구 상자** 폼입니다.  
   
-2.  클릭는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤의 스마트 태그 문자 모양 (![스마트 태그 문자 모양](../../../../docs/framework/winforms/controls/media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))을 선택 하 고 **행 및 열 편집** 열려는  **열 및 행 스타일** 대화 상자. 또한 마우스 오른쪽 단추로 클릭할 수는 <xref:System.Windows.Forms.TableLayoutPanel> 제어 하 고 선택 **행 및 열 편집** 바로 가기 메뉴에서.  
+2.  클릭 합니다 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤의 스마트 태그 문자 모양 (![스마트 태그 문자 모양](../../../../docs/framework/winforms/controls/media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) 선택한 **행 및 열 편집** 열려는  **열 및 행 스타일** 대화 상자. 또한 마우스 오른쪽 단추로 클릭할 수에 합니다 <xref:System.Windows.Forms.TableLayoutPanel> 제어 하 고 선택 **행 및 열 편집** 바로 가기 메뉴에서.  
   
-3.  를 추가 하거나 열을 제거 하려면 선택 **열** 에서 **멤버 유형을** 드롭다운 목록 상자입니다.  
+3.  를 추가 하거나 열을 제거 하려면 선택 **열** 에서 합니다 **멤버 유형을** 드롭다운 목록 상자입니다.  
   
-4.  를 추가 하거나 행을 제거 하려면 선택 **행** 에서 **멤버 유형을** 드롭다운 목록 상자입니다.  
+4.  를 추가 하거나 행을 제거 하려면 선택 **행** 에서 합니다 **멤버 유형을** 드롭다운 목록 상자입니다.  
   
-5.  클릭는 **추가** 의 끝에 행 또는 열을 추가 하려면 단추는 **멤버** 목록입니다.  
+5.  클릭 합니다 **추가** 끝에 행 또는 열을 추가 하려면 단추를 **멤버** 목록입니다.  
   
-6.  클릭는 **삽입** 단추를 목록에서 행 또는 현재 선택 된 항목 앞에 열을 추가 합니다.  
+6.  클릭 합니다 **삽입** 목록의 행 또는 현재 선택한 항목 앞에 열을 추가 하는 단추입니다.  
   
-7.  행 또는 열을 추가 하는 경우 선택 된 **크기 형식** 새로운 행 또는 열에 대 한 합니다. 자세한 내용은 <xref:System.Windows.Forms.SizeType>을 참조하세요.  
+7.  행 또는 열을 추가 하는 경우 선택 합니다 **크기 형식** 새 행 또는 열에 대 한 합니다. 자세한 내용은 <xref:System.Windows.Forms.SizeType>을 참조하세요.  
   
-8.  행 또는 열을 제거 하려면 클릭는 **제거** 에서 현재 선택 된 항목을 삭제 단추는 **멤버** 목록입니다.  
+8.  행 또는 열을 제거 하려면 클릭 합니다 **제거** 에서 현재 선택한 항목을 삭제 하려면 단추를 **멤버** 목록입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Forms.SizeType>  

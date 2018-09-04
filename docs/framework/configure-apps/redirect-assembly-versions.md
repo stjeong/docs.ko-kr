@@ -11,12 +11,12 @@ ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 3459ebd2f1df38ac70e9211fd4865e227cd996cb
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: aad369b35837089d05f5d7517e023671f0178011
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32759272"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43507806"
 ---
 # <a name="redirecting-assembly-versions"></a>어셈블리 버전 리디렉션
 .NET Framework 어셈블리, 타사 어셈블리 또는 고유의 앱 어셈블리로 컴파일 타임 바인딩 참조를 리디렉션할 수 있습니다. 게시자 정책, 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일 등을 통한 다양한 방법으로 여러 버전의 어셈블리를 사용하도록 응용 프로그램을 리디렉션할 수 있습니다. 이 문서에서는 .NET Framework에서 어셈블리 바인딩의 작동 방식과 구성 방법에 대해 설명합니다.  
@@ -66,11 +66,11 @@ ms.locfileid: "32759272"
   
  `<bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />`  
   
- [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]에서 앱이 이전 버전의 .NET Framework를 대상으로 하는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다. app.config 파일에서 모든 어셈블리에 대해 바인딩 리디렉션 정보를 제공하여 기본 동작을 재정의하거나 바인딩 리디렉션 기능을 해제할 수 있습니다. 이 기능을 설정 하거나 해제 하는 방법에 대 한 정보를 참조 하십시오. [하는 방법: 자동 바인딩 리디렉션 사용 안 함 및 사용](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)합니다.  
+ [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]에서 앱이 이전 버전의 .NET Framework를 대상으로 하는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다. app.config 파일에서 모든 어셈블리에 대해 바인딩 리디렉션 정보를 제공하여 기본 동작을 재정의하거나 바인딩 리디렉션 기능을 해제할 수 있습니다. 이 기능을 설정 하거나 해제 하는 방법에 대 한 정보를 참조 하세요 [방법: 자동 바인딩 리디렉션 사용 안 함 및 사용](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)합니다.  
   
 <a name="bypass_PP"></a>   
 ### <a name="bypassing-publisher-policy"></a>게시자 정책 무시  
- 필요에 따라 앱 구성 파일에서 게시자 정책을 무시할 수 있습니다. 예를 들어, 역호환성이 있다고 하는 최신 버전의 어셈블리가 앱을 중단시킬 수 있습니다. 게시자 정책을 무시 하려는 경우 추가 [ \<l i c y >](../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) 요소는 [ \<dependentAssembly >](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) 응용 프로그램 구성 파일 및는 집합에서요소**적용** 특성을 **없습니다**를 덮어씁니다. 이전 **예** 설정 합니다.  
+ 필요에 따라 앱 구성 파일에서 게시자 정책을 무시할 수 있습니다. 예를 들어, 역호환성이 있다고 하는 최신 버전의 어셈블리가 앱을 중단시킬 수 있습니다. 게시자 정책을 무시 하려는 경우 추가 [ \<publisherPolicy >](../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) 요소를 [ \<dependentAssembly >](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) 요소, 앱 구성 파일에 설정 된 **적용** 특성을 **없습니다**, 모든 이전 재정의 **예** 설정 합니다.  
   
  `<publisherPolicy apply="no" />`  
   
@@ -82,11 +82,11 @@ ms.locfileid: "32759272"
   
 <a name="BKMK_Specifyingassemblybindinginconfigurationfiles"></a>   
 ## <a name="specifying-assembly-binding-in-configuration-files"></a>구성 파일에 어셈블리 바인딩 지정  
- 동일한 XML 형식을 사용하여 앱 구성 파일, 컴퓨터 구성 파일 또는 게시자 정책 파일에 있는 바인딩 리디렉션을 지정할 수 있습니다. 다른 어셈블리 버전 리디렉션를 사용 하 여는 [ \<bindingRedirect >](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md) 요소입니다. **oldVersion** 특성은 단일 어셈블리 버전 또는 다양한 버전을 지정할 수 있습니다. `newVersion` 특성은 단일 버전을 지정해야 합니다.  예를 들어, `<bindingRedirect oldVersion="1.1.0.0-1.2.0.0" newVersion="2.0.0.0"/>` 은 런타임에서 1.1.0.0 - 1.2.0.0 버전의 어셈블리 대신 2.0.0.0 버전을 사용하도록 지정합니다.  
+ 동일한 XML 형식을 사용하여 앱 구성 파일, 컴퓨터 구성 파일 또는 게시자 정책 파일에 있는 바인딩 리디렉션을 지정할 수 있습니다. 다른 어셈블리 버전 리디렉션에 사용 된 [ \<bindingRedirect >](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md) 요소입니다. **oldVersion** 특성은 단일 어셈블리 버전 또는 다양한 버전을 지정할 수 있습니다. `newVersion` 특성은 단일 버전을 지정해야 합니다.  예를 들어, `<bindingRedirect oldVersion="1.1.0.0-1.2.0.0" newVersion="2.0.0.0"/>` 은 런타임에서 1.1.0.0 - 1.2.0.0 버전의 어셈블리 대신 2.0.0.0 버전을 사용하도록 지정합니다.  
   
  다음 코드 예제는 다양한 바인딩 리디렉션 시나리오를 보여줍니다. 이 예제에서는 `myAssembly`에 대해 다양한 버전의 리디렉션을 지정하고, `mySecondAssembly`에 대해 단일 바인딩 리디렉션을 지정합니다. 또한 이 예제에서는 게시자 정책 파일이 `myThirdAssembly`에 대한 바인딩 리디렉션을 재정의하지 않도록 지정합니다.  
   
- 문자열을 지정 해야 어셈블리를 바인딩하려면 ":-microsoft-: asm.v1"와 **xmlns** 특성에 [ \<assemblyBinding >](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) 태그입니다.  
+ 어셈블리를 바인딩하려면 문자열을 지정 해야 합니다 "urn: 스키마-microsoft-com:asm.v1"와 **xmlns** 특성을 [ \<assemblyBinding >](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) 태그입니다.  
   
 ```xml  
 <configuration>  
@@ -120,7 +120,7 @@ ms.locfileid: "32759272"
 ```  
   
 ### <a name="limiting-assembly--bindings-to-a-specific-version"></a>특정 버전에 대한 어셈블리 바인딩 제한  
- 사용할 수는 **appliesTo** 특성에 [ \<assemblyBinding >](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) 특정 버전의.NET 어셈블리 바인딩 참조를 리디렉션하려는 응용 프로그램 구성 파일의 요소 프레임 워크입니다. 이 선택적 특성은 .NET Framework 버전 번호를 사용하여 특성이 적용되는 버전을 지정합니다. **appliesTo** 특성이 지정되지 않으면 [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) 요소는 .NET Framework의 모든 버전에 적용됩니다.  
+ 사용할 수는 **appliesTo** 특성을 [ \<assemblyBinding >](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) 특정 버전의.NET에 대 한 어셈블리 바인딩 참조를 리디렉션하는 앱 구성 파일의 요소 프레임 워크입니다. 이 선택적 특성은 .NET Framework 버전 번호를 사용하여 특성이 적용되는 버전을 지정합니다. **appliesTo** 특성이 지정되지 않으면 [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) 요소는 .NET Framework의 모든 버전에 적용됩니다.  
   
  예를 들어 .NET Framework 버전 3.5 어셈블리에 대한 어셈블리 바인딩을 리디렉션하려면 앱 구성 파일에 다음 XML 코드를 포함합니다.  
   
@@ -161,7 +161,7 @@ ms.locfileid: "32759272"
  [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)  
  [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)  
- [.NET Framework 앱 구성](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
+ [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
  [런타임 설정 스키마](../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)  
  [방법: 게시자 정책 만들기](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)

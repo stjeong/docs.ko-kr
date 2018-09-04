@@ -3,11 +3,11 @@ title: '연습: SQL 생성'
 ms.date: 03/30/2017
 ms.assetid: 16c38aaa-9927-4f3c-ab0f-81636cce57a3
 ms.openlocfilehash: 5551eb4088e7529c61d5c517fed6877c23ae12f2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43472074"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43510502"
 ---
 # <a name="walkthrough-sql-generation"></a>연습: SQL 생성
 이 항목에서는 SQL 생성에서 발생 하는 방법을 보여 줍니다.는 [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616)합니다. 다음 Entity SQL 쿼리는 샘플 공급자에 포함된 모델을 사용합니다.  

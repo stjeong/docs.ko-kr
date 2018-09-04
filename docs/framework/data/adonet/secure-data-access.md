@@ -2,12 +2,12 @@
 title: 보안 데이터 액세스
 ms.date: 03/30/2017
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
-ms.openlocfilehash: 85f40000ed1c4901342c697c97069a7ba55ed7f9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7083f68457aa8f87b01f523abc5742d24bafcbfd
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33362713"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43513789"
 ---
 # <a name="secure-data-access"></a>보안 데이터 액세스
 보안 ADO.NET 코드를 쓰려면 내부 데이터 저장소 또는 데이터베이스에서 사용할 수 있는 보안 메커니즘을 알아야 합니다. 또한, 응용 프로그램에 포함된 다른 기능이나 구성 요소의 보안 문제도 고려해야 합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "33362713"
 |리소스|설명|  
 |--------------|-----------------|  
 |[연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)|보호되는 구성을 사용하여 연결 문자열을 암호화하는 것과 같이 연결 정보를 보호하는 기술과 최상의 보안 방법에 대해 설명합니다.|  
-|[데이터 액세스 전략에 대 한 권장 사항](http://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|데이터 액세스 및 데이터베이스 작업 수행에 대한 권장 방법을 제공합니다.|  
+|[데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|데이터 액세스 및 데이터베이스 작업 수행에 대한 권장 방법을 제공합니다.|  
 |[연결 문자열 작성기](../../../../docs/framework/data/adonet/connection-string-builders.md)|런타임에 사용자 입력을 기반으로 연결 문자열을 만드는 방법에 대해 설명합니다.|  
 |[SQL Server 보안 개요](../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)|SQL Server 보안 아키텍처에 대해 설명합니다.|  
   
@@ -46,7 +46,7 @@ ms.locfileid: "33362713"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[스크립트 악용 개요](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|스크립팅 및 SQL 문 악용으로부터 보호하는 방법에 대해 설명합니다.|  
+|[스크립트 악용 개요](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|스크립팅 및 SQL 문 악용으로부터 보호하는 방법에 대해 설명합니다.|  
   
 ## <a name="probing-attacks"></a>검색 공격  
  공격자는 흔히 예외에서 얻은 서버, 데이터베이스, 테이블 이름 등의 정보를 사용하여 시스템에 대한 공격을 준비합니다. 예외에는 응용 프로그램이나 데이터 소스에 대한 특정 정보가 포함될 수 있으므로 클라이언트에 꼭 필요한 정보만 노출함으로써 응용 프로그램 및 데이터 소스를 보다 안전하게 보호할 수 있습니다.  
@@ -65,11 +65,11 @@ ms.locfileid: "33362713"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[보안 고려 사항 및 Access 2007에 대 한 지침](http://go.microsoft.com/fwlink/?LinkId=98354)|파일 암호화, 암호 관리, 새로운 ACCDB 및 ACCDE 형식으로 데이터베이스 변환, 기타 보안 옵션 사용 등 Access 2007의 보안 기술에 대해 설명합니다.|  
-|[사용자 수준 보안 (MDB)으로 Access 데이터베이스 보호 지원](http://go.microsoft.com/fwlink/?LinkId=47697)|Access 2003에 적용됩니다. Access 2003의 데이터를 보호할 수 있는 사용자 수준의 보안을 구현하기 위한 지침을 제공합니다.|  
-|[액세스 보안의 작업 그룹 정보 파일의 역할 이해](http://support.microsoft.com/kb/305542)|Access 2003 보안에서 작업 그룹 정보 파일의 역할 및 관계에 대해 설명합니다.|  
-|[자주 묻는 질문에 대 한 Microsoft Access 보안에 Microsoft Access 버전 2.0 ~ 2000](http://go.microsoft.com/fwlink/?LinkId=47698)|Microsoft Access Security FAQ의 다운로드 버전입니다.|  
-|[보안 및 보호 문제 해결](http://go.microsoft.com/fwlink/?LinkId=47703)|Excel 2003의 일반적인 보안 관련 문제에 대한 해결책을 제공합니다.|  
+|[보안 고려 사항 및 Access 2007에 대 한 지침](https://go.microsoft.com/fwlink/?LinkId=98354)|파일 암호화, 암호 관리, 새로운 ACCDB 및 ACCDE 형식으로 데이터베이스 변환, 기타 보안 옵션 사용 등 Access 2007의 보안 기술에 대해 설명합니다.|  
+|[사용자 수준 보안 (MDB) 사용 하 여 Access 데이터베이스를 보호 합니다.](https://go.microsoft.com/fwlink/?LinkId=47697)|Access 2003에 적용됩니다. Access 2003의 데이터를 보호할 수 있는 사용자 수준의 보안을 구현하기 위한 지침을 제공합니다.|  
+|[액세스 보안에서 작업 그룹 정보 파일 역할 이해](https://support.microsoft.com/kb/305542)|Access 2003 보안에서 작업 그룹 정보 파일의 역할 및 관계에 대해 설명합니다.|  
+|[자주 묻는 질문에 대 한 액세스를 위한 Microsoft 보안 Microsoft Access 버전 2.0 ~ 2000](https://go.microsoft.com/fwlink/?LinkId=47698)|Microsoft Access Security FAQ의 다운로드 버전입니다.|  
+|[보안 및 보호 문제 해결](https://go.microsoft.com/fwlink/?LinkId=47703)|Excel 2003의 일반적인 보안 관련 문제에 대한 해결책을 제공합니다.|  
   
 ## <a name="enterprise-services"></a>엔터프라이즈 서비스  
  COM+에는 Windows NT 계정 및 프로세스/스레드 가장을 사용하는 고유의 보안 모델이 포함되어 있습니다. <xref:System.EnterpriseServices> 네임스페이스에서는 <xref:System.EnterpriseServices.ServicedComponent> 클래스를 통해 .NET 응용 프로그램에서 관리 코드를 COM+ 보안 서비스와 통합할 수 있도록 하는 래퍼를 제공합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "33362713"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[COM + 역할 기반 보안 및.NET Framework](http://msdn.microsoft.com/library/02ab22ef-e5e2-4d29-b33a-6e03d94c4981)|COM+ 보안 서비스를 사용하여 관리 코드를 통합하는 방법에 대해 설명합니다.|  
+|[COM + 역할 기반 보안 및.NET Framework](https://msdn.microsoft.com/library/02ab22ef-e5e2-4d29-b33a-6e03d94c4981)|COM+ 보안 서비스를 사용하여 관리 코드를 통합하는 방법에 대해 설명합니다.|  
   
 ## <a name="interoperating-with-unmanaged-code"></a>비관리 코드와의 상호 운용  
  .NET Framework는 비관리 코드와의 상호 작용을 위해 COM 구성 요소, COM+ 서비스, 외부 형식 라이브러리, 다양한 운영 체제 서비스 등을 제공합니다. 비관리 코드를 사용하려면 관리 코드에 대한 보안 경계 외부로 나가야 합니다. 코드와 코드를 호출하는 다른 코드 모두에 비관리 코드 권한(<xref:System.Security.Permissions.SecurityPermission> 플래그가 지정된 <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>)이 있어야 합니다. 비관리 코드로 인해 응용 프로그램에 의도하지 않았던 보안상 취약한 부분이 생길 수 있습니다. 따라서 꼭 필요한 경우가 아니면 비관리 코드와의 상호 운용 작업은 피하는 것이 좋습니다.  
@@ -88,12 +88,12 @@ ms.locfileid: "33362713"
 |리소스|설명|  
 |--------------|-----------------|  
 |[비관리 코드와의 상호 운용](../../../../docs/framework/interop/index.md)|COM 구성 요소를 .NET Framework에 노출하는 방법과 .NET Framework 구성 요소를 COM에 노출하는 방법에 대해 설명하는 항목을 제공합니다.|  
-|[고급 COM 상호 운용성](http://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|주 interop 어셈블리, 스레딩 및 사용자 지정 마샬링 등에 대해 설명하는 고급 항목을 제공합니다.|  
+|[고급 COM 상호 운용성](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|주 interop 어셈블리, 스레딩 및 사용자 지정 마샬링 등에 대해 설명하는 고급 항목을 제공합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [데이터 액세스 전략에 대 한 권장 사항](http://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
+ [데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
  [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
  [연결 문자열 작성기](../../../../docs/framework/data/adonet/connection-string-builders.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

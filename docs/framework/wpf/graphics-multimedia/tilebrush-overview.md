@@ -9,11 +9,11 @@ helpviewer_keywords:
 - brushes [WPF], TileBrush
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
 ms.openlocfilehash: e590732419396660221aa781e3c333311b6e88b4
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480908"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43505141"
 ---
 # <a name="tilebrush-overview"></a>TileBrush 개요
 <xref:System.Windows.Media.TileBrush> 개체를 사용 하면 다양 한 이미지를 사용 하 여 영역을 그리는 방법에 대 한 제어를 사용 하 여 얻게 <xref:System.Windows.Media.Drawing>, 또는 <xref:System.Windows.Media.Visual>합니다. 이 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Media.TileBrush> 더 잘 제어 하는 방법에 대 한 기능을 <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, 또는 <xref:System.Windows.Media.VisualBrush> 영역을 그립니다.  

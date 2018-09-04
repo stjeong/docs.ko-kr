@@ -2,18 +2,18 @@
 title: 추적을 사용하여 WF 데이터 추출
 ms.date: 03/30/2017
 ms.assetid: e30c68f5-8c6a-495a-bd20-667a4364c68e
-ms.openlocfilehash: 22b147521d4ce0c72fadfb7adc81e05f10ce52b1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ef8118df2c5834e32c40760ef31f75660893d89b
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519875"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43501585"
 ---
 # <a name="extract-wf-data-using-tracking"></a>추적을 사용하여 WF 데이터 추출
 이 샘플에서는 워크플로 추적을 사용하여 활동에서 워크플로 변수와 인수를 추출하는 방법을 보여 줍니다. 또한 여기에서는 추적 레코드에 주석을 추가하고 사용자 지정 추적 레코드 내의 데이터 페이로드를 추출하는 방법도 보여 줍니다. 이 샘플에서 워크플로의 데이터를 추출하는 데는 ETW(Event Tracing for Windows) 추적 참가자가 사용됩니다.  
   
 ## <a name="sample-details"></a>샘플 세부 정보  
- Windows WF (Workflow Foundation) 워크플로 인스턴스 실행에 추적을 제공 합니다. 추적 런타임에서는 워크플로를 실행하는 동안 워크플로 추적 레코드를 내보냅니다. 워크플로 추적 레코드와 함께 워크플로 인스턴스 내의 데이터를 워크플로에서 추출할 수 있습니다. 다음 목록에는 추적 레코드로부터 추출할 수 있는 데이터의 형식에 대한 자세한 설명이 나와 있습니다.  
+ Windows WF (Workflow Foundation) 워크플로 인스턴스의 실행을 파악 하는 추적을 제공 합니다. 추적 런타임에서는 워크플로를 실행하는 동안 워크플로 추적 레코드를 내보냅니다. 워크플로 추적 레코드와 함께 워크플로 인스턴스 내의 데이터를 워크플로에서 추출할 수 있습니다. 다음 목록에는 추적 레코드로부터 추출할 수 있는 데이터의 형식에 대한 자세한 설명이 나와 있습니다.  
   
 1.  활동을 실행하는 동안의 활동 및 추적 레코드 내의 워크플로 변수.  
   
@@ -96,13 +96,13 @@ ms.locfileid: "33519875"
   
 6.  서비스를 호출하기 전에 이벤트 뷰어를 시작하고 이벤트 로그가 워크플로 서비스에서 내보낸 추적 이벤트를 수신 대기하고 있는지 확인합니다.  
   
-7.  **시작** 메뉴 선택 **관리 도구** 차례로 **이벤트 뷰어**합니다.  
+7.  **시작** 메뉴에서 **관리 도구** 차례로 **이벤트 뷰어**합니다.  
   
-8.  이벤트 뷰어의 트리 뷰에서 이동 **이벤트 뷰어**, **Applications and Services Logs**, 및 **Microsoft**합니다. 마우스 오른쪽 단추로 클릭 **Microsoft** 선택 **보기** 차례로 **분석 및 디버그 로그 표시**합니다.  
+8.  이동할 이벤트 뷰어의 트리 뷰에서 **이벤트 뷰어**하십시오 **Applications and Services Logs**, 및 **Microsoft**. 마우스 오른쪽 단추로 클릭 **Microsoft** 선택한 **뷰** 차례로 **분석 및 디버그 로그 표시**합니다.  
   
-     확인 된 **분석 및 디버그 로그 표시** 옵션을 선택 합니다.  
+     있는지 확인 합니다 **분석 및 디버그 로그 표시** 옵션을 선택 합니다.  
   
-9. 이벤트 뷰어의 트리 뷰에서 이동 **이벤트 뷰어**, **Applications and Services Logs**, **Microsoft**, **Windows**,  **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택 **로그 사용**합니다.  
+9. 이동할 이벤트 뷰어의 트리 뷰에서 **이벤트 뷰어**, **Applications and Services Logs**를 **Microsoft**를 **Windows**합니다  **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택한 **로그 사용**합니다.  
   
 10. [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)]를 사용하여 WCF 테스트 클라이언트를 엽니다.  
   
@@ -110,7 +110,7 @@ ms.locfileid: "33519875"
   
      기본 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 설치 폴더는 C:\Program Files\Microsoft Visual Studio 10.0입니다.  
   
-11. WCF 테스트 클라이언트에서 선택 **서비스 추가** 에서 **파일** 메뉴.  
+11. WCF 테스트 클라이언트에서 선택 **추가 서비스** 에서 합니다 **파일** 메뉴.  
   
      앞서 복사한 로컬 서비스 WSDL 주소를 입력 상자에 붙여넣습니다.  
   
@@ -118,9 +118,9 @@ ms.locfileid: "33519875"
   
      그러면 `GetStockPrice` 메서드가 열립니다. 요청에 매개 변수 한 개가 필요합니다. 값을 사용 하 여 **Contoso**합니다.  
   
-13. 클릭 **호출**합니다.  
+13. 클릭 **호출할**합니다.  
   
-14. 이벤트 뷰어로 다시 전환한 이동한 **이벤트 뷰어**, **Applications and Services Logs**, **Microsoft**, **Windows**,  **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택 **새로 고침**합니다. 워크플로 이벤트의 이벤트 ID 범위는 100-199입니다.  
+14. 이벤트 뷰어로 다시 전환 하 고 이동할 **이벤트 뷰어**, **Applications and Services Logs**합니다 **Microsoft**를 **Windows**,  **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택한 **새로 고침**합니다. 워크플로 이벤트의 이벤트 ID 범위는 100-199입니다.  
   
      이벤트에 주석, 변수, 인수 및 사용자 지정 추적 레코드가 포함되어 있고 이러한 내용을 이벤트 뷰어에서 볼 수 있습니다.  
   
@@ -131,11 +131,11 @@ ms.locfileid: "33519875"
   
 1.  이벤트 뷰어를 엽니다.  
   
-2.  로 이동 **이벤트 뷰어**, **Applications and Services Logs**, **Microsoft**, **Windows**, **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택 **로그 사용 안 함**합니다.  
+2.  이동할 **이벤트 뷰어**, **Applications and Services Logs**합니다 **Microsoft**를 **Windows**, **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택한 **로그 사용 안 함**합니다.  
   
-3.  로 이동 **이벤트 뷰어**, **Applications and Services Logs**, **Microsoft**, **Windows**, **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택 **로그 지우기**합니다.  
+3.  이동할 **이벤트 뷰어**, **Applications and Services Logs**합니다 **Microsoft**를 **Windows**, **응용 프로그램 서버-응용 프로그램**합니다. 마우스 오른쪽 단추로 클릭 **분석** 선택한 **로그 지우기**합니다.  
   
-     선택 된 **지우기** 이벤트를 해결 하는 옵션입니다.  
+     선택 된 **의 선택을 취소** 이벤트를 지우려면 옵션입니다.  
   
 ## <a name="known-issue"></a>알려진 문제  
   
@@ -144,16 +144,16 @@ ms.locfileid: "33519875"
 >   
 >  `The description for Event ID <id> from source Microsoft-Windows-Application Server-Applications cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.`  
 >   
->  이 오류를 발생 하는 경우 클릭 **새로 고침** 작업 창에서. 그러면 이벤트가 올바르게 디코딩됩니다.  
+>  이 오류가 발생 하는 경우 클릭 **새로 고침** 작업 창에서. 그러면 이벤트가 올바르게 디코딩됩니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\ExtractWfData`  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

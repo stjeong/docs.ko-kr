@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Communication Foundation, Web service protocols
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
 ms.openlocfilehash: f4967a29b28f1862f5799f6935083ed12cb81ead
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399052"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43504340"
 ---
 # <a name="web-services-protocols-supported-by-system-provided-interoperability-bindings"></a>시스템 제공 상호 운용성 바인딩에서 지원하는 웹 서비스 프로토콜
 Windows Communication Foundation (WCF)는 일련의 웹 서비스 사양으로 알려진 사양 지 원하는 웹 서비스와 상호 운용 되도록 만들어졌습니다. 상호 운용성에 대 한 유용한 정보에 대 한 서비스 구성을 단순화 하기 위해 WCF에는 세 가지 상호 운용 가능한 시스템 제공 바인딩이 도입 되었습니다: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, 및 <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>합니다. WCF Advancement의 구조화 된 정보 표준 OASIS () 표준에 대 한 조직과 상호 운용성을 위해 하나의 상호 운용 가능한 시스템 제공 바인딩이 포함 됩니다. <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>합니다. WCF 메타 데이터 게시에 대 한 두 개의 상호 운용 가능한 시스템 제공 바인딩이 포함 됩니다. [ \<mexHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) 하 고 [ \<mexHttpsBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)합니다. 이 항목에서는 시스템에서 제공하는 상호 운용 가능한 바인딩이 지원하는 사양을 나열합니다.  

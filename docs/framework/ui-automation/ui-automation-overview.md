@@ -9,23 +9,23 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: b4752bf8f5fb75115618f95c4dab8b1359a1eb5b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 40656fb2617b4863994c1dafd8f0f4b3c46ef427
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409491"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43502273"
 ---
 # <a name="ui-automation-overview"></a>UI 자동화 개요
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 은 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]에 대한 새로운 접근성 프레임워크이며, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]를 지원하는 모든 운영 체제에서 사용할 수 있습니다.  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 은 데스크톱에 있는 대부분의 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 요소에 대해 프로그래밍 방식의 액세스 권한을 제공하여, 화면 읽기 프로그램과 같은 보조 기술 제품에서 최종 사용자에게 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 에 관련 정보를 제공하고 표준 입력 이외의 방법으로 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 을 조작하도록 할 수 있습니다. 또한[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 은 자동화된 테스트 스크립트가 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]와 상호 작용할 수 있도록 합니다.  
   
 > [!NOTE]
->  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 통해 다른 사용자가 시작한 프로세스 간의 통신은 지원 하지 않습니다는 **계정으로 실행** 명령입니다.  
+>  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 통해 다른 사용자가 시작한 프로세스 간의 통신을 사용 하지 않는 합니다 **으로 실행** 명령입니다.  
   
  UI 자동화 클라이언트 응용 프로그램이 여러 프레임워크에서 작동되도록 작성할 수 있습니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 코어가 다양한 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]항목의 기반이 되는 프레임워크에서 모든 차이점을 마스크합니다. 예를 들어, `Content` 단추의 [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] 속성, `Caption` 단추의 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 속성, HTML 이미지의 `ALT` 속성은 모두 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A>뷰에서 단일 속성 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 에 매핑됩니다.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "33409491"
 |공급자 [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] (UIAutomationProvider.dll 및 UIAutomationTypes.dll)|UI 자동화 공급자가 구현하는 인터페이스 정의 집합으로서, [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소에 대한 정보를 제공하고 프로그래밍 방식으로 입력에 응답하는 개체입니다.|  
 |클라이언트 API(UIAutomationClient.dll 및 UIAutomationTypes.dll)|UI 자동화 클라이언트 응용 프로그램이 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 에 대한 정보를 가져오고 입력을 컨트롤에 보내도록 하는 관리되는 코드의 형식 집합입니다.|  
 |UiAutomationCore.dll|공급자와 클라이언트 간의 통신을 처리하는 기본 코드입니다( [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 코어라고도 함).|  
-|UIAutomationClientsideProviders.dll|표준 레거시 컨트롤에 대한 UI 자동화 공급자의 집합입니다. ([!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] 컨트롤에 대 한 기본 지원은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].) 이 지원은 클라이언트 응용 프로그램에서 자동으로 사용할 수 있습니다.|  
+|UIAutomationClientsideProviders.dll|표준 레거시 컨트롤에 대한 UI 자동화 공급자의 집합입니다. ([!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] 컨트롤에 대 한 기본 지원을 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].) 이 지원은 클라이언트 응용 프로그램에서 자동으로 사용할 수 있습니다.|  
   
  소프트웨어 개발자의 관점에서 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]을 두 가지 방법으로 사용할 수 있습니다. 사용자 지정 컨트롤에 대한 지원을 생성하거나(공급자 API 사용) [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 코어를 사용하여 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소와 통신하는 응용 프로그램을 생성합니다(클라이언트 API 사용). 관점에 따라 다르지만, 설명서의 여러 부분을 참조해야 합니다. 다음 섹션에서 개념에 대해 자세히 알아보고 실용적인 방법에 대한 지식을 얻을 수 있습니다.  
   

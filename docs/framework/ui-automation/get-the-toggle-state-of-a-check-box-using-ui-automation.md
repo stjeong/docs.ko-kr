@@ -13,11 +13,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: b20173e0ec814237b45eb8e53135c109c31ddcb6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486989"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500961"
 ---
 # <a name="get-the-toggle-state-of-a-check-box-using-ui-automation"></a>UI 자동화를 사용하여 확인란의 전환 상태 가져오기
 > [!NOTE]

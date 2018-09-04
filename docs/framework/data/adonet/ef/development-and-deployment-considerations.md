@@ -3,11 +3,11 @@ title: 개발 및 배포 고려 사항
 ms.date: 03/30/2017
 ms.assetid: 535e6611-02de-484c-b5ff-6ffeed04d740
 ms.openlocfilehash: d516877d1fc3a064f5275e226379b7e5011fbcdf
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43425860"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43507333"
 ---
 # <a name="development-and-deployment-considerations"></a>개발 및 배포 고려 사항
 이 단원의 항목에서는 ADO.NET Entity Framework를 기반으로 하는 응용 프로그램을 개발하거나 배포할 때 고려해야 할 문제를 다룹니다.  

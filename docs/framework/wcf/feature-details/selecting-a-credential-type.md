@@ -3,11 +3,11 @@ title: 자격 증명 형식 선택
 ms.date: 03/30/2017
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 ms.openlocfilehash: c2ee1b9062d14eaa44de0651985c2a385fe02f8e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43396614"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43503393"
 ---
 # <a name="selecting-a-credential-type"></a>자격 증명 형식 선택
 *자격 증명* 는 Windows Communication Foundation (WCF) 요청 된 id 또는 기능을 사용 하 여 데이터입니다. 예를 들어 여권은 정부에서 국가나 지역의 시민권을 입증하기 위해 발급하는 자격 증명입니다. Wcf에서 자격 증명에는 사용자 이름 토큰 및 X.509 인증서 등 다양 한 형식의 걸릴 수 있습니다. 이 항목에서는 자격 증명, wcf에서 사용 방법 및 응용 프로그램에 적합 한 자격 증명을 선택 하는 방법을 설명 합니다.  

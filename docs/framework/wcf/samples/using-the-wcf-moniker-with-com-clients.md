@@ -2,15 +2,15 @@
 title: Using the WCF Moniker with COM Clients
 ms.date: 03/30/2017
 ms.assetid: e2799bfe-88bd-49d7-9d6d-ac16a9b16b04
-ms.openlocfilehash: 6d47b9c655db932bb9a4243533fbd01bcf25e0df
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: f052504648d381d6fb19fb6db0ebb1dd1086ed3c
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33808886"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515721"
 ---
 # <a name="using-the-wcf-moniker-with-com-clients"></a>Using the WCF Moniker with COM Clients
-이 샘플에는 웹 서비스 응용 프로그램 (Office VBA)에 대 한 Microsoft Office Visual Basic 또는 Visual Basic 6.0 등의 COM 기반 개발 환경에 통합 하는 Windows Communication Foundation (WCF) 서비스 모니커를 사용 하는 방법을 보여 줍니다. 이 샘플은 IIS(인터넷 정보 서비스)에서 호스트되는 Windows 스크립트 호스트 클라이언트(.vbs), 지원 클라이언트 라이브러리(.dll) 및 서비스 라이브러리(.dll)로 구성됩니다. 서비스는 계산기 서비스이고 COM 클라이언트는 서비스에서 수학 작업인 Add, Subtract, Multiply 및 Divide를 호출합니다. 클라이언트 동작이 메시지 상자 창에 표시됩니다.  
+이 샘플에는 Windows Communication Foundation (WCF) 서비스 모니커를 사용 하 여 웹 서비스를 응용 프로그램 (Office VBA)에 대 한 Microsoft Office Visual Basic 또는 Visual Basic 6.0과 같은 COM 기반 개발 환경에 통합 하는 방법을 보여 줍니다. 이 샘플은 IIS(인터넷 정보 서비스)에서 호스트되는 Windows 스크립트 호스트 클라이언트(.vbs), 지원 클라이언트 라이브러리(.dll) 및 서비스 라이브러리(.dll)로 구성됩니다. 서비스는 계산기 서비스이고 COM 클라이언트는 서비스에서 수학 작업인 Add, Subtract, Multiply 및 Divide를 호출합니다. 클라이언트 동작이 메시지 상자 창에 표시됩니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "33808886"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\COM`  
   
@@ -50,7 +50,7 @@ public interface ICalculator
 -   메타데이터 교환 계약 - 계약이 MEX(메타데이터 교환) 끝점에서 런타임에 검색됩니다.  
   
 ## <a name="typed-contract"></a>형식화된 계약  
- 형식화된 계약 사용과 함께 모니커를 사용하려면 서비스 계약에 대한 적절한 특성 사용 형식을 COM에 등록해야 합니다. 먼저, 클라이언트를 사용 하 여 생성 해야 합니다는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 클라이언트 디렉터리의 명령 프롬프트에서 다음 명령을 실행하여 형식화된 프록시를 생성합니다.  
+ 형식화된 계약 사용과 함께 모니커를 사용하려면 서비스 계약에 대한 적절한 특성 사용 형식을 COM에 등록해야 합니다. 사용 하 여 클라이언트를 먼저 생성 해야 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 클라이언트 디렉터리의 명령 프롬프트에서 다음 명령을 실행하여 형식화된 프록시를 생성합니다.  
   
 ```  
 svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost/servicemodelsamples/service.svc /out:generatedClient.cs  
@@ -89,9 +89,9 @@ contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")
   
 -   서비스 끝점의 주소입니다.  
   
--   해당 끝점과 연결하기 위해 클라이언트가 사용해야 하는 바인딩. 이 경우 클라이언트 구성 파일에 사용자 지정 바인딩이 정의될 수도 있지만 시스템 정의 wsHttpBinding이 사용됩니다. Windows 스크립트 호스트와 함께 사용하는 경우 사용자 지정 바인딩은 Cscript.exe와 동일한 디렉터리의 Cscript.exe.config 파일에 정의됩니다.  
+-   해당 엔드포인트와 연결하기 위해 클라이언트가 사용해야 하는 바인딩. 이 경우 클라이언트 구성 파일에 사용자 지정 바인딩이 정의될 수도 있지만 시스템 정의 wsHttpBinding이 사용됩니다. Windows 스크립트 호스트와 함께 사용하는 경우 사용자 지정 바인딩은 Cscript.exe와 동일한 디렉터리의 Cscript.exe.config 파일에 정의됩니다.  
   
--   끝점에서 지원되는 계약의 형식. 이는 위에서 생성 및 등록된 형식입니다. Visual Basic 스크립트에서 강력한 형식의 COM 환경이 제공되지 않으므로 계약에 대한 식별자를 지정해야 합니다. 이 GUID는 OLE/COM 개체 뷰어(OleView.exe)와 같은 COM 도구를 사용하여 볼 수 있는 CalcProxy.tlb에 있는 `interfaceID`입니다. Office VBA 또는 Visual Basic 6.0과 같은 강력한 형식의 환경인 경우 계약 매개 변수 대신에 형식 라이브러리에 명시적 참조를 추가한 다음 프록시 개체의 형식을 선언하는 방법을 사용할 수 있습니다. 또한 이렇게 하면 클라이언트 응용 프로그램 개발 도중에 IntelliSense 지원이 제공됩니다.  
+-   엔드포인트에서 지원되는 계약의 형식. 이는 위에서 생성 및 등록된 형식입니다. Visual Basic 스크립트에서 강력한 형식의 COM 환경이 제공되지 않으므로 계약에 대한 식별자를 지정해야 합니다. 이 GUID는 OLE/COM 개체 뷰어(OleView.exe)와 같은 COM 도구를 사용하여 볼 수 있는 CalcProxy.tlb에 있는 `interfaceID`입니다. Office VBA 또는 Visual Basic 6.0과 같은 강력한 형식의 환경인 경우 계약 매개 변수 대신에 형식 라이브러리에 명시적 참조를 추가한 다음 프록시 개체의 형식을 선언하는 방법을 사용할 수 있습니다. 또한 이렇게 하면 클라이언트 응용 프로그램 개발 도중에 IntelliSense 지원이 제공됩니다.  
   
  서비스 모니커를 사용하여 프록시 인스턴스를 생성한 후 클라이언트 응용 프로그램은 프록시에서 메서드를 호출할 수 있습니다. 이렇게 하면 결과적으로 서비스 모니커 인프라에서 해당 서비스 작업을 호출하게 됩니다.  
   
@@ -100,10 +100,10 @@ contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")
 WScript.Echo "Typed service moniker: 100 + 15.99 = " & typedServiceMoniker.Add(100, 15.99)  
 ```  
   
- 샘플을 실행할 경우 작업 응답이 Windows 스크립트 호스트 메시지 상자 창에 표시됩니다. 이 형식화 된 모니커를 사용 하 여 WCF 서비스와 통신 하는 COM 호출을 수행 하는 COM 클라이언트를 보여 줍니다. 클라이언트 응용 프로그램에서 COM이 사용되지만 서비스와의 통신은 웹 서비스 호출로만 구성됩니다.  
+ 샘플을 실행할 경우 작업 응답이 Windows 스크립트 호스트 메시지 상자 창에 표시됩니다. 이 방법을 WCF 서비스와 통신 하는 형식화 된 모니커를 사용 하 여 COM 호출을 수행 하는 COM 클라이언트를 보여 줍니다. 클라이언트 응용 프로그램에서 COM이 사용되지만 서비스와의 통신은 웹 서비스 호출로만 구성됩니다.  
   
 ## <a name="wsdl-contract"></a>WSDL 계약  
- WSDL 계약과 함께 모니커를 사용하려면 클라이언트 라이브러리 등록이 필요하지 않지만 브라우저를 사용하여 서비스의 WSDL 끝점에 액세스하는 것처럼 out-of-band 메커니즘을 통해 서비스에 대한 WSDL 계약을 검색해야 합니다. 그런 다음 모니커는 실행 시에 해당 계약에 액세스할 수 있습니다.  
+ WSDL 계약과 함께 모니커를 사용하려면 클라이언트 라이브러리 등록이 필요하지 않지만 브라우저를 사용하여 서비스의 WSDL 엔드포인트에 액세스하는 것처럼 out-of-band 메커니즘을 통해 서비스에 대한 WSDL 계약을 검색해야 합니다. 그런 다음 모니커는 실행 시에 해당 계약에 액세스할 수 있습니다.  
   
  ComCalcClient.vbs 클라이언트 응용 프로그램은 `FileSystemObject`를 사용하여 로컬로 저장된 WSDL 파일에 액세스한 다음 `GetObject` 함수를 다시 사용하여 서비스에 대한 프록시를 생성합니다.  
   
@@ -165,7 +165,7 @@ Set mexServiceMoniker = GetObject(mexMonikerString)
   
  모니커에 사용되는 매개 변수는 다음을 지정합니다.  
   
--   서비스 메타데이터 교환 끝점의 주소  
+-   서비스 메타데이터 교환 엔드포인트의 주소입니다.  
   
 -   서비스 끝점의 주소입니다.  
   
@@ -180,11 +180,11 @@ Set mexServiceMoniker = GetObject(mexMonikerString)
 WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9, 81.25)  
 ```  
   
- 샘플을 실행할 경우 작업 응답이 Windows 스크립트 호스트 메시지 상자 창에 표시됩니다. 이 MEX 계약과 함께 모니커를 사용 하 여 WCF 서비스와 통신 하는 COM 호출을 수행 하는 COM 클라이언트를 보여 줍니다.  
+ 샘플을 실행할 경우 작업 응답이 Windows 스크립트 호스트 메시지 상자 창에 표시됩니다. 이 방법을 MEX 계약과 함께 모니커를 사용 하 여 WCF 서비스와 통신 하는 COM 호출을 수행 하는 COM 클라이언트를 보여 줍니다.  
   
 #### <a name="to-set-up-and-build-the-sample"></a>샘플을 설치하고 빌드하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
@@ -193,19 +193,19 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
     > [!NOTE]
     >  [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7 또는 Windows Server 2008 R2를 사용하는 경우에는 관리자 권한으로 명령 프롬프트를 실행해야 합니다.  
   
-4.  에 입력 `tlbexp.exe client.dll /out:CalcProxy.tlb` 하 여 dll을 tlb 파일로 내보냅니다. "형식 라이브러리 내보내기 경고"가 발생할 수 있지만 제네릭 형식이 필요하지 않으므로 문제가 되지는 않습니다.  
+4.  입력 `tlbexp.exe client.dll /out:CalcProxy.tlb` dll을 tlb 파일로 내보내려면 합니다. "형식 라이브러리 내보내기 경고"가 발생할 수 있지만 제네릭 형식이 필요하지 않으므로 문제가 되지는 않습니다.  
   
-5.  에 입력 `regasm.exe /tlb:CalcProxy.tlb client.dll` 형식을 COM에 등록 하려면 "형식 라이브러리 내보내기 경고"가 발생할 수 있지만 제네릭 형식이 필요하지 않으므로 문제가 되지는 않습니다.  
+5.  입력 `regasm.exe /tlb:CalcProxy.tlb client.dll` 형식을 com에 등록 하려면 "형식 라이브러리 내보내기 경고"가 발생할 수 있지만 제네릭 형식이 필요하지 않으므로 문제가 되지는 않습니다.  
   
-6.  에 입력 `gacutil.exe /i client.dll` 를 전역 어셈블리 캐시에 어셈블리를 추가 합니다.  
+6.  입력 `gacutil.exe /i client.dll` 전역 어셈블리 캐시에 어셈블리를 추가 합니다.  
   
 #### <a name="to-run-the-sample-on-the-same-computer"></a>단일 컴퓨터 구성에서 샘플을 실행하려면  
   
-1.  다음 주소에 입력 하 여 브라우저를 사용 하는 서비스에 액세스할 수 있는 테스트: `http://localhost/servicemodelsamples/service.svc`합니다. 확인 페이지가 응답으로 표시됩니다.  
+1.  브라우저를 사용 하 여 주소에서를 입력 하 여 액세스할 수 있는 테스트: `http://localhost/servicemodelsamples/service.svc`합니다. 확인 페이지가 응답으로 표시됩니다.  
   
 2.  언어별 폴더의 \client에서 ComCalcClient.vbs를 실행합니다. 메시지 상자 창에 클라이언트 동작이 표시됩니다.  
   
-3.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+3.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 #### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -215,7 +215,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 3.  언어별 폴더의 \client 폴더에서 클라이언트 컴퓨터로 클라이언트 스크립트 파일을 복사합니다.  
   
-4.  스크립트 파일에서 끝점 정의의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 주소에서 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
+4.  스크립트 파일에서 엔드포인트 정의의 주소 값을 서비스의 새 주소와 일치하도록 변경합니다. 주소에서 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
   
 5.  WSDL 파일을 클라이언트 컴퓨터로 복사합니다. WSDL 파일 serviceWsdl.xml에서 주소의 "localhost"에 대한 참조를 정규화된 도메인 이름으로 바꿉니다.  
   
@@ -223,11 +223,11 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 7.  명령 프롬프트에서 클라이언트 컴퓨터의 대상 디렉터리로 이동합니다. [!INCLUDE[wv](../../../../includes/wv-md.md)] 또는 [!INCLUDE[lserver](../../../../includes/lserver-md.md)]을 사용할 경우 관리자 권한으로 명령 프롬프트를 실행해야 합니다.  
   
-8.  에 입력 `tlbexp.exe client.dll /out:CalcProxy.tlb` 하 여 dll을 tlb 파일로 내보냅니다. "형식 라이브러리 내보내기 경고"가 발생할 수 있지만 제네릭 형식이 필요하지 않으므로 문제가 되지는 않습니다.  
+8.  입력 `tlbexp.exe client.dll /out:CalcProxy.tlb` dll을 tlb 파일로 내보내려면 합니다. "형식 라이브러리 내보내기 경고"가 발생할 수 있지만 제네릭 형식이 필요하지 않으므로 문제가 되지는 않습니다.  
   
-9. 에 입력 `regasm.exe /tlb:CalcProxy.tlb client.dll` 형식을 COM에 등록 하려면 가 포함 된 폴더로 경로가 설정 되었는지 확인 하십시오. `regasm.exe` 명령을 실행 하기 전에.  
+9. 입력 `regasm.exe /tlb:CalcProxy.tlb client.dll` 형식을 com에 등록 하려면 가 포함 된 폴더로 경로가 설정 된 확인 `regasm.exe` 명령을 실행 하기 전에 합니다.  
   
-10. 에 입력 `gacutil.exe /i client.dll` 를 전역 어셈블리 캐시에 어셈블리를 추가 합니다. 가 포함 된 폴더로 경로가 설정 되었는지 확인 하십시오. `gacutil.exe` 명령을 실행 하기 전에.  
+10. 입력 `gacutil.exe /i client.dll` 전역 어셈블리 캐시에 어셈블리를 추가 합니다. 가 포함 된 폴더로 경로가 설정 된 확인 `gacutil.exe` 명령을 실행 하기 전에 합니다.  
   
 11. 클라이언트 컴퓨터에서 브라우저를 사용하여 서비스에 액세스할 수 있는지 테스트합니다.  
   

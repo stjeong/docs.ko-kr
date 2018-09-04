@@ -9,11 +9,11 @@ helpviewer_keywords:
 - data binding [WPF], creating
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0
 ms.openlocfilehash: 2d13650cb3e9a4e97a6642992b7211f323b9ea96
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43483023"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43502260"
 ---
 # <a name="how-to-create-a-binding-in-code"></a>방법: 코드에서 바인딩 만들기
 만들고 설정 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Data.Binding> 코드에서입니다.  

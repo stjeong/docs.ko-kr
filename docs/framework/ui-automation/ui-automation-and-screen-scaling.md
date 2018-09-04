@@ -13,16 +13,16 @@ ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: c34c10ee1701adba2dfb64be8ef39d6bf9f203e2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6b5f3f42158a8b86a247a0e8a1ada3a37edc0df1
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399680"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43499967"
 ---
 # <a name="ui-automation-and-screen-scaling"></a>UI 자동화 및 화면 크기 조정
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] 을 통해 사용자가 [!INCLUDE[TLA#tla_dpi](../../../includes/tlasharptla-dpi-md.md)] 설정을 변경할 수 있으므로 대부분의 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 요소가 화면에 크게 표시됩니다. 이 기능은 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]에서 오래 전부터 사용할 수 있었지만, 이전 버전에서는 크기 조정을 응용 프로그램에서 구현해야 했습니다. [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)]에서 바탕 화면 창 관리자는 자체 크기 조정을 처리하지 않는 모든 응용 프로그램에 기본 크기 조정을 수행합니다. UI 자동화 클라이언트 응용 프로그램에서는 이 기능을 고려해야 합니다.  
   
@@ -66,7 +66,7 @@ ms.locfileid: "33399680"
      [!code-csharp[Highlighter#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/Highlighter/CSharp/NativeMethods.cs#101)]
      [!code-vb[Highlighter#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Highlighter/VisualBasic/NativeMethods.vb#101)]  
   
-     이 함수를 사용하면 전체 프로세스 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]가 인식되므로 프로세스에 속하는 모든 창이 실제 크기로 유지됩니다. 에 [강조 표시 샘플](http://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69), 강조 표시 사각형을 구성 하는 네 개의 창이 예를 들어, 다음 위치에서 가져온 물리적 좌표에 있습니다 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], 논리적 좌표가 아닌 합니다. 샘플에서 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]가 인식되지 않으면 강조 표시가 데스크톱의 논리적 좌표에 그려지며, 그에 따라 96 이외의 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] 환경에서 배치가 잘못될 수 있습니다.  
+     이 함수를 사용하면 전체 프로세스 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]가 인식되므로 프로세스에 속하는 모든 창이 실제 크기로 유지됩니다. 에 [Highlighter Sample](https://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69), 강조 표시 사각형을 구성 하는 4 개의 windows에서 가져온 물리적 좌표에는 예를 들어 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], 논리적 좌표가 아닌 합니다. 샘플에서 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]가 인식되지 않으면 강조 표시가 데스크톱의 논리적 좌표에 그려지며, 그에 따라 96 이외의 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] 환경에서 배치가 잘못될 수 있습니다.  
   
 2.  커서 좌표를 가져오려면 [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] 함수 `GetPhysicalCursorPos`를 호출합니다. 다음 예제에서는 이 함수를 선언하고 사용하는 방법을 보여 줍니다.  
   
@@ -74,9 +74,9 @@ ms.locfileid: "33399680"
      [!code-vb[UIAClient_snip#185](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#185)]  
   
 > [!CAUTION]
->  사용 하지 마십시오 <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>합니다. 크기가 조정된 환경에서 클라이언트 창 외부에서의 이 속성 동작이 정의되지 않았습니다.  
+>  사용 하지 않는 <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>합니다. 크기가 조정된 환경에서 클라이언트 창 외부에서의 이 속성 동작이 정의되지 않았습니다.  
   
  사용하는 응용 프로그램에서 비 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]인식 응용 프로그램과 직접 크로스 프로세스 통신을 수행하는 경우 [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] 함수 `PhysicalToLogicalPoint` 및 `LogicalToPhysicalPoint`를 사용하여 논리적 좌표와 물리적 좌표 간을 변환했을 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [강조 표시 샘플](http://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69)
+ [Highlighter Sample](https://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69)

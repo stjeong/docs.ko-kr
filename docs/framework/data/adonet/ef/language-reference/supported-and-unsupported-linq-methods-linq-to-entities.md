@@ -3,11 +3,11 @@ title: 지원 및 미지원 LINQ 메서드 (LINQ to Entities)
 ms.date: 03/30/2017
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
 ms.openlocfilehash: a57e8facdd0ece7223ec780a9ef22a1be7c53221
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43386365"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43502245"
 ---
 # <a name="supported-and-unsupported-linq-methods-linq-to-entities"></a>지원 및 미지원 LINQ 메서드 (LINQ to Entities)
 이 단원에서는 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리에서 지원되거나 지원되지 않는 LINQ(Language-Integrated Query) 표준 쿼리 연산자에 대한 정보를 제공합니다. LINQ 표준 쿼리 연산자 중 상당수는 정수 인수를 허용하는 오버로드된 버전이 있습니다. 정수 인수는 연산 대상인 시퀀스에서 0부터 시작하는 인덱스, <xref:System.Collections.Generic.IEqualityComparer%601> 또는 <xref:System.Collections.Generic.IComparer%601>에 해당합니다. 별도로 명시하지 않는 한 오버로드된 버전의 이 LINQ 표준 쿼리 연산자는 지원되지 않으며, 이 버전을 사용할 경우 예외가 throw됩니다.  

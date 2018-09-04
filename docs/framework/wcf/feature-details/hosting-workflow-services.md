@@ -3,11 +3,11 @@ title: 워크플로 서비스 호스팅
 ms.date: 03/30/2017
 ms.assetid: 2d55217e-8697-4113-94ce-10b60863342e
 ms.openlocfilehash: f75b8cc4cde0372b995c39a5da3ae4b71590743e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43416367"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43505548"
 ---
 # <a name="hosting-workflow-services"></a>워크플로 서비스 호스팅
 워크플로 서비스가 들어오는 메시지에 응답하기 위해서는 해당 워크플로 서비스를 호스팅해야 합니다. 워크플로 서비스는 WCF 메시징 인프라를 사용하기 때문에 WCF 서비스와 비슷한 방식으로 호스팅됩니다. WCF 서비스와 마찬가지로 워크플로 서비스는 모든 관리 되는 응용 프로그램에서 인터넷 정보 서비스 (IIS), 또는 Windows 프로세스 활성화 서비스 (WAS)에서 호스팅할 수 있습니다. 또한 Windows Server Appfabric에서 워크플로 서비스를 호스트할 수 있습니다. Windows Server Appfabric에 대 한 자세한 내용은 참조 하세요. [Windows Server App Fabric 설명서](https://go.microsoft.com/fwlink/?LinkId=193037)하십시오 [AppFabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=196494), 및 [AppFabric 호스팅 개념](https://go.microsoft.com/fwlink/?LinkId=196495)합니다. WCF 호스트는 다양 한 방법에 대 한 자세한 내용은 참조 서비스용 [호스팅 서비스](../../../../docs/framework/wcf/hosting-services.md)합니다.

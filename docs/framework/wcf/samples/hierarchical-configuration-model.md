@@ -2,15 +2,15 @@
 title: 계층적 구성 모델
 ms.date: 03/30/2017
 ms.assetid: 28dcc698-226c-4b77-9e51-8bf45a36216c
-ms.openlocfilehash: ce0bc69424495594e0ee9c6b950a5fa9c4d5f993
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 8ca9b01eb022e2e2ab940866a6230e8227ceb2dc
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43000103"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43499343"
 ---
 # <a name="hierarchical-configuration-model"></a>계층적 구성 모델
-이 샘플에서는 서비스의 구성 파일 계층 구조를 구현하는 방법을 보여 줍니다. 또한 계층 구조의 상위 수준에서 바인딩, 서비스 동작 및 끝점 동작이 상속되는 방식을 보여 줍니다.  
+이 샘플에서는 서비스의 구성 파일 계층 구조를 구현하는 방법을 보여 줍니다. 또한 계층 구조의 상위 수준에서 바인딩, 서비스 동작 및 엔드포인트 동작이 상속되는 방식을 보여 줍니다.  
   
 ## <a name="sample-details"></a>샘플 세부 정보  
  WCF에 대 한 개발 기능 중 하나는 [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] 는 향상 된 계층적 구성 모델에서입니다. 계층적 구성 모델의 예로는 Machine.config -> Rootweb.config -> Web.config로 정의되는 구성 모델이 있습니다. [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)]에서는 명시적으로 구성할 필요 없이 구성 계층 구조의 상위 수준에 정의된 바인딩 및 동작이 서비스에 추가됩니다. 이 샘플에서는 컴퓨터 또는 응용 프로그램 수준에 정의된 구성 요소를 사용하여 서비스 구성을 단순화하는 방법을 보여 줍니다.  
@@ -33,9 +33,9 @@ public interface IDesc
 }  
 ```  
   
- 서비스에서 이러한 메서드를 구현하는 과정은 간단합니다. `ListEndpoints`는 모든 서비스 끝점을 반복하고 서비스에 있는 모든 끝점의 목록을 반환합니다. `ListServiceBehaviors`는 서비스에 추가된 모든 동작을 반복하고 서비스와 관련된 모든 서비스 동작의 목록을 반환합니다. `ListEndpointBehaviors`는 끝점 동작의 목록을 반환한다는 점을 제외하고는 `ListServiceBehaviors`와 유사한 방식으로 동작합니다.  
+ 서비스에서 이러한 메서드를 구현하는 과정은 간단합니다. `ListEndpoints`는 모든 서비스 엔드포인트를 반복하고 서비스에 있는 모든 엔드포인트의 목록을 반환합니다. `ListServiceBehaviors`는 서비스에 추가된 모든 동작을 반복하고 서비스와 관련된 모든 서비스 동작의 목록을 반환합니다. `ListEndpointBehaviors`는 끝점 동작의 목록을 반환한다는 점을 제외하고는 `ListServiceBehaviors`와 유사한 방식으로 동작합니다.  
   
- 이 구현을 통해 클라이언트는 서비스에서 노출하는 끝점 수와 서비스에 추가된 서비스 동작 및 끝점 동작을 알 수 있습니다. 샘플의 일부로 구현된 클라이언트에서는 솔루션의 모든 서비스에 대한 서비스 참조를 추가하고 각 서비스에 대한 이러한 요소를 보여 줍니다.  
+ 이 구현을 통해 클라이언트는 서비스에서 노출하는 엔드포인트 수와 서비스에 추가된 서비스 동작 및 엔드포인트 동작을 알 수 있습니다. 샘플의 일부로 구현된 클라이언트에서는 솔루션의 모든 서비스에 대한 서비스 참조를 추가하고 각 서비스에 대한 이러한 요소를 보여 줍니다.  
   
 ## <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
@@ -69,9 +69,9 @@ public interface IDesc
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigHierarchicalModel`  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 관리 샘플](http://go.microsoft.com/fwlink/?LinkId=193960)
+ [AppFabric 관리 샘플](https://go.microsoft.com/fwlink/?LinkId=193960)

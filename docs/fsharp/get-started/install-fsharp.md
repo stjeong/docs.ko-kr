@@ -1,13 +1,13 @@
 ---
 title: 'F # 설치'
 description: 'F #의 경우이 사용자 환경에 따라 설치 하는 방법에 알아봅니다.'
-ms.date: 07/03/2018
-ms.openlocfilehash: 142265a95e1d3ee1603a89f650a24c6a45709181
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.date: 08/28/2018
+ms.openlocfilehash: 6c10b958e35bf7925965d076a48839b0ce19d2c0
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37878852"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515899"
 ---
 # <a name="install-f"></a>F # 설치 #
 
@@ -29,34 +29,34 @@ F #에서 기본적으로 설치 됩니다 [Mac 용 Visual Studio](https://visua
 
 ## <a name="install-f-with-visual-studio-code"></a>Visual Studio Code를 사용 하 여 F # 설치
 
-있어야 [설치 된 git가](https://git-scm.com/download) 되도록 경로에서 사용할 수 있습니다 Ionide 프로젝트 템플릿을 사용 합니다. 입력 하 여 제대로 설치 되었는지 확인할 수 있습니다 `git --version` 명령 프롬프트 및 키를 눌러 **Enter**합니다.
+있어야 [설치 된 git가](https://git-scm.com/download) 되도록 경로에서 사용할 수 있습니다 프로젝트 템플릿을 사용 합니다. 입력 하 여 제대로 설치 되었는지 확인할 수 있습니다 `git --version` 명령 프롬프트 및 키를 눌러 **Enter**합니다.
 
 ### <a name="macostabmacos"></a>[macOS](#tab/macos)
 
-다음을 사용 하 여 Ionide [Mono](http://www.mono-project.com)합니다. MacOS에서 Mono를 설치 하는 가장 쉬운 방법은 Homebrew 통해 됩니다. 터미널에 다음을 입력 하기만 하면 됩니다.
+[Mono](http://www.mono-project.com) 되 [F # Interactive](../tutorials/fsharp-interactive/index.md) 지원 합니다. MacOS에서 Mono를 설치 하는 가장 쉬운 방법은 Homebrew 통해 됩니다. 터미널에 다음을 입력 하기만 하면 됩니다.
 
 ```console
 brew install mono
 ```
 
-또한 설치 해야 합니다 [.NET Core SDK](https://www.microsoft.com/net/download)합니다.
+또한 설치 합니다 [.NET Core SDK](https://www.microsoft.com/net/download)합니다.
 
 ### <a name="linuxtablinux"></a>[Linux](#tab/linux)
 
-Linux에서 Ionide 또한 사용 하 여 [Mono](https://www.mono-project.com)합니다. Debian 또는 Ubuntu의 경우 다음을 사용할 수 있습니다.
+[Mono](https://www.mono-project.com) 되 [F # Interactive](../tutorials/fsharp-interactive/index.md) 지원 합니다. Debian 또는 Ubuntu의 경우 다음을 사용할 수 있습니다.
 
 ```console
 sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
 
-또한 설치 해야 합니다 [.NET Core SDK](https://www.microsoft.com/net/download)합니다.
+또한 설치 합니다 [.NET Core SDK](https://www.microsoft.com/net/download)합니다.
 
 ### <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
-Windows를 사용 하는 경우 수행 해야 합니다 [F # 지원을 사용 하 여 Visual Studio 설치](#install-f-with-visual-studio)합니다. 이 작성, 컴파일 및 F # 코드를 실행 하는 데 필요한 모든 구성 요소를 설치 합니다.
+설치할 [F # 지원 포함 된 Visual Studio](#install-f-with-visual-studio)합니다. 이 작성, 컴파일 및 F # 코드를 실행 하는 데 필요한 모든 구성 요소를 설치 합니다.
 
-또한 설치 해야 합니다 [.NET Core SDK](https://www.microsoft.com/net/download/)합니다.
+또한 설치 합니다 [.NET Core SDK](https://www.microsoft.com/net/download/)합니다.
 
 ---
 

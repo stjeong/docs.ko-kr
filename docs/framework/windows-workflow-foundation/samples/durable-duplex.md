@@ -2,18 +2,18 @@
 title: 영속 이중
 ms.date: 03/30/2017
 ms.assetid: 4e76d1a1-f3d8-4a0f-8746-4a322cdff6eb
-ms.openlocfilehash: 3df5ba962ef33594df1eaebc20789fa9e2d35244
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 107c617fa4a8ee0279dcaa07e495587c617b866e
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33809429"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43513355"
 ---
 # <a name="durable-duplex"></a>영속 이중
-이 샘플에는 설정 및의 Windows WF (Workflow Foundation) 메시징 활동을 사용 하 여 영 속 이중 메시지 교환을 구성 하는 방법을 보여 줍니다. 영속 이중 메시지 교환은 오랜 기간 동안 발생하는 양방향 메시지 교환입니다. 메시지 교환 수명 주기는 통신 채널 수명 주기와 서비스 인스턴스의 메모리 내 수명 주기보다 길 수 있습니다.  
+이 샘플 설정에서 Windows WF (Workflow Foundation) 메시징 활동을 사용 하 여 영 속 이중 메시지 교환을 구성 하는 방법을 보여 줍니다. 영속 이중 메시지 교환은 오랜 기간 동안 발생하는 양방향 메시지 교환입니다. 메시지 교환 수명 주기는 통신 채널 수명 주기와 서비스 인스턴스의 메모리 내 수명 주기보다 길 수 있습니다.  
   
 ## <a name="sample-details"></a>샘플 세부 정보  
- 이 샘플에서는 Windows Workflow Foundation을 사용 하 여 구현 하는 두 개의 Windows Communication Foundation (WCF) 서비스는 영 속 이중 메시지 교환이 있어야 하도록 구성 됩니다. 영 속 이중 메시지 교환은 MSMQ를 통해 전송 하 고 사용 하 여 상관 관계가 지정 된 두 개의 단방향 메시지로 구성 된 [.NET Context Exchange](http://go.microsoft.com/fwlink/?LinkID=166059)합니다. 메시지는 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.Receive> 메시징 활동을 사용하여 보냅니다. .NET Context Exchange는 보낸 메시지에 대한 콜백 주소를 지정하는 데 사용됩니다. 두 서비스는 WAS(Windows Process Activation Service)를 사용하여 호스트되고 서비스 인스턴스의 지속성을 사용하도록 구성됩니다.  
+ 이 샘플에서는 Windows Workflow Foundation을 사용 하 여 구현 하는 두 개의 Windows Communication Foundation (WCF) 서비스는 영 속 이중 메시지 교환 하도록 구성 됩니다. 영 속 이중 메시지 교환은 MSMQ를 통해 전송 하 고 사용 하 여 상관 관계가 지정 된 두 개의 단방향 메시지로 구성 됩니다 [.NET Context Exchange](https://go.microsoft.com/fwlink/?LinkID=166059)합니다. 메시지는 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.Receive> 메시징 활동을 사용하여 보냅니다. .NET Context Exchange는 보낸 메시지에 대한 콜백 주소를 지정하는 데 사용됩니다. 두 서비스는 WAS(Windows Process Activation Service)를 사용하여 호스트되고 서비스 인스턴스의 지속성을 사용하도록 구성됩니다.  
   
  첫 번째 서비스(Service1.xamlx)는 전송 서비스(Service2.xamlx)에 작업을 수행하도록 요청을 보냅니다. 작업이 완료되면 Service2.xamlx가 Service1.xamlx에 작업이 완료되었음을 알립니다. 워크플로 콘솔 응용 프로그램은 서비스가 수신 대기하는 큐를 설정하고 초기 시작 메시지를 보내 Service1.xamlx를 활성화합니다. Service1.xamlx는 Service2.xamlx에서 요청한 작업이 완료되었음을 나타내는 알림을 받은 후 결과를 XML 파일로 저장합니다. Service1.xamlx는 콜백 메시지를 기다리는 동안 기본 <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>를 사용하여 인스턴스 상태를 지속합니다. Service2.xamlx는 Service1.xamlx에서 요청한 작업을 완료하는 과정의 일부로 인스턴스 상태를 지속합니다.  
   
@@ -42,9 +42,9 @@ ms.locfileid: "33809429"
 >  이 샘플에서 사용하는 바인딩은 보안 처리되어 있지 않으므로 응용 프로그램을 배포할 때 응용 프로그램의 보안 요구 사항에 따라 바인딩을 구성해야 합니다.  
   
 > [!NOTE]
->  이 샘플에서 사용하는 큐는 트랜잭션이 아닙니다. 트랜잭션 큐를 사용 하 여 WCF 메시지 교환을 설정 하는 방법을 보여 주는 샘플을 참조 하십시오.는 [MSMQ 활성화](../../../../docs/framework/wcf/samples/msmq-activation.md) 샘플.  
+>  이 샘플에서 사용하는 큐는 트랜잭션이 아닙니다. 트랜잭션 큐를 사용 하 여 WCF 메시지 교환을 설정 하는 방법을 보여 주는 샘플을 보려면 합니다 [MSMQ 활성화](../../../../docs/framework/wcf/samples/msmq-activation.md) 샘플입니다.  
   
- Service1.xamlx에서 Service2.xamlx로 보내는 메시지는 Service2.xamlx의 주소로 구성된 클라이언트 끝점과 이전에 정의된 사용자 지정 바인딩을 사용하여 보내집니다. Service2.xamlx에서 Service1.xamlx로의 콜백은 Service1.xamlx에서 보낸 콜백 컨텍스트에서 주소를 가져오므로 주소가 명시적으로 구성되지 않은 클라이언트 끝점을 사용하여 보내집니다. 다음 코드 예제에서는 클라이언트 끝점을 정의합니다.  
+ Service1.xamlx에서 Service2.xamlx로 보내는 메시지는 Service2.xamlx의 주소로 구성된 클라이언트 엔드포인트와 이전에 정의된 사용자 지정 바인딩을 사용하여 보내집니다. Service2.xamlx에서 Service1.xamlx로의 콜백은 Service1.xamlx에서 보낸 콜백 컨텍스트에서 주소를 가져오므로 주소가 명시적으로 구성되지 않은 클라이언트 엔드포인트를 사용하여 보내집니다. 다음 코드 예제에서는 클라이언트 엔드포인트를 정의합니다.  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -60,7 +60,7 @@ ms.locfileid: "33809429"
 </configuration>  
 ```  
   
- 다음 코드 예제에서는 net.msmq 기본 주소에 대한 기본 프로토콜 매핑을 이 사용자 지정 바인딩을 사용하도록 변경하여 이 사용자 지정 바인딩을 통해 끝점을 노출합니다.  
+ 다음 코드 예제에서는 net.msmq 기본 주소에 대한 기본 프로토콜 매핑을 이 사용자 지정 바인딩을 사용하도록 변경하여 이 사용자 지정 바인딩을 통해 엔드포인트를 노출합니다.  
   
 ```xml  
 <configuration>  
@@ -120,7 +120,7 @@ ms.locfileid: "33809429"
         aspnet_regiis -i  
         ```  
   
-    2.  실행 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 마우스 오른쪽 단추로 클릭 하 여 관리자 권한으로 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 선택 하 고 **관리자 권한으로 실행**합니다.  
+    2.  실행할 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 마우스 오른쪽 단추로 클릭 하 여 관리자 권한으로 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 를 선택 하 고 **관리자 권한으로 실행**합니다.  
   
     3.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]을 사용하여 DurableDuplex.sln 파일을 엽니다.  
   
@@ -128,23 +128,23 @@ ms.locfileid: "33809429"
   
     1.  F5 키를 눌러 DurableDuplex 클라이언트를 실행합니다.  
   
-    2.  열기는 **컴퓨터 관리** 콘솔을 실행 하 여 `Compmgmt.msc` 명령 프롬프트에서 합니다.  
+    2.  엽니다는 **컴퓨터 관리** 콘솔을 실행 하 여 `Compmgmt.msc` 명령 프롬프트에서.  
   
-    3.  확장 **서비스 및 응용 프로그램**, **메시지 큐**합니다. **개인 큐**합니다.  
+    3.  확장 **서비스 및 응용 프로그램**하십시오 **메시지 큐**합니다. **개인 큐**합니다.  
   
-    4.  Durableduplex/service1.xamlx 및 durableduplex/service2.xamlx 큐를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  
+    4.  Durableduplex/service1.xamlx 및 durableduplex/service2.xamlx 큐를 마우스 오른쪽 단추로 클릭 **속성**합니다.  
   
-    5.  선택 된 **보안** 탭 하 고 허용 **Everyone이 메시지 받기**, **메시지 보기** 및 **메시지 보내기** 두 큐에 대 한 권한을 합니다.  
+    5.  선택 합니다 **보안** 탭을 허용 **Everyone이 메시지 받기**를 **메시지 보기** 및 **메시지 보내기** 모두 큐에 대 한 사용 권한.  
   
     6.  IIS 관리자를 엽니다.  
   
-    7.  찾아 **서버**, **사이트**, **기본 웹 사이트**, **개인**, **영 속 이중** 선택 **고급 옵션**합니다.  
+    7.  이동할 **서버**, **사이트**, **Default Web site**, **개인**, **영 속 이중** 선택 **고급 옵션**합니다.  
   
-    8.  변경 된 **사용할 수 있는 프로토콜** 를 **http, net.msmq**합니다.  
+    8.  변경 된 **사용할 수 있는 프로토콜** 하 **http,net.msmq**합니다.  
   
 4.  샘플을 실행합니다.  
   
-    1.  찾아 http://localhost/private/durableduplex/service1.xamlx 및 http://localhost/private/durableduplex/service2.xamlx 두 서비스가 실행 되도록 합니다.  
+    1.  이동할 http://localhost/private/durableduplex/service1.xamlx 고 http://localhost/private/durableduplex/service2.xamlx 두 서비스가 실행 중인지 확인 합니다.  
   
     2.  F5 키를 눌러 DurableDuplexClient를 실행합니다.  
   
@@ -160,15 +160,15 @@ ms.locfileid: "33809429"
   
 2.  서비스의 가상 응용 프로그램을 제거합니다.  
   
-    1.  실행 하 여 인터넷 정보 서비스 (IIS) 관리자를 열고 `Inetmgr.exe` 명령 프롬프트에서 합니다.  
+    1.  인터넷 정보 서비스 (IIS) 관리자를 실행 하 여 `Inetmgr.exe` 명령 프롬프트에서.  
   
-    2.  기본 웹 사이트를 찾아 제거는 **개인** 가상 디렉터리입니다.  
+    2.  기본 웹 사이트로 이동 하 고 제거 합니다 **개인** 가상 디렉터리입니다.  
   
 3.  이 샘플에 사용하기 위해 설정한 큐를 제거합니다.  
   
-    1.  실행 하 여 컴퓨터 관리 콘솔을 열고 `Compmgmt.msc` 명령 프롬프트에서 합니다.  
+    1.  실행 하 여 컴퓨터 관리 콘솔을 열고 `Compmgmt.msc` 명령 프롬프트에서.  
   
-    2.  확장 **서비스 및 응용 프로그램**, **메시지 큐**, **개인 큐**합니다.  
+    2.  확장 **서비스 및 응용 프로그램**, **메시지 큐**하십시오 **개인 큐**합니다.  
   
     3.  durableduplex/service1.xamlx 및 durableduplex/service2.xamlx 큐를 삭제합니다.  
   
@@ -179,6 +179,6 @@ ms.locfileid: "33809429"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\DurableDuplex`
