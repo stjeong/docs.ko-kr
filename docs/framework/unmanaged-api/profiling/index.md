@@ -8,41 +8,31 @@ helpviewer_keywords:
 ms.assetid: 14c68e84-657e-49c2-aa8b-4978dbaf4454
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 581f42dc83622712dbb30ef556a481388bafe259
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 75df075cd39375084a7d5a4489694ec937e15d99
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33455574"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43404464"
 ---
-# <a name="profiling-unmanaged-api-reference"></a><span data-ttu-id="6342f-102">프로파일링(관리되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="6342f-102">Profiling (Unmanaged API Reference)</span></span>
-<span data-ttu-id="6342f-103">프로 파일링 API를 사용 하면 공용 언어 런타임 (CLR) 하 여 프로그램 실행을 모니터링 하려면 프로파일러에서 합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-103">The profiling API enables a profiler to monitor a program's execution by the common language runtime (CLR).</span></span>  
-  
-## <a name="in-this-section"></a><span data-ttu-id="6342f-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="6342f-104">In This Section</span></span>  
- [<span data-ttu-id="6342f-105">프로파일링 개요</span><span class="sxs-lookup"><span data-stu-id="6342f-105">Profiling Overview</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md)  
- <span data-ttu-id="6342f-106">서비스 및.NET Framework 환경에서 프로 파일링을 지원 하기 위해 CLR에서 제공 하는 인터페이스에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-106">Describes the services and interfaces that the CLR provides to support profiling in the .NET Framework environment.</span></span>  
-  
- [<span data-ttu-id="6342f-107">프로파일링 인터페이스</span><span class="sxs-lookup"><span data-stu-id="6342f-107">Profiling Interfaces</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- <span data-ttu-id="6342f-108">프로파일링 API에서 사용하는 관리되지 않는 인터페이스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-108">Describes the unmanaged interfaces that the profiling API uses.</span></span>  
-  
- [<span data-ttu-id="6342f-109">프로파일링 환경 설정</span><span class="sxs-lookup"><span data-stu-id="6342f-109">Setting Up a Profiling Environment</span></span>](../../../../docs/framework/unmanaged-api/profiling/setting-up-a-profiling-environment.md)  
- <span data-ttu-id="6342f-110">.NET Framework 응용 프로그램을 프로 파일링 하는 위해 수행 해야 하는 단계를 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-110">Describes the steps you must take to profile a .NET Framework application.</span></span>  
-  
- [<span data-ttu-id="6342f-111">CLR 프로파일러 및 Microsoft Azure Store 앱</span><span class="sxs-lookup"><span data-stu-id="6342f-111">CLR Profilers and Windows Store Apps</span></span>](../../../../docs/framework/unmanaged-api/profiling/clr-profilers-and-windows-store-apps.md)  
- <span data-ttu-id="6342f-112">Windows 스토어 앱에서는 성공적으로 작동 하는 CLR 프로 파일링 API를 사용 하는 진단 도구를 이식 하는 방법에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-112">Discusses how to port diagnostic tools that consume the CLR Profiling API to work successfully with Windows Store apps.</span></span>  
-  
- [<span data-ttu-id="6342f-113">CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT</span><span class="sxs-lookup"><span data-stu-id="6342f-113">CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT</span></span>](../../../../docs/framework/unmanaged-api/profiling/corprof-e-unsupported-call-sequence-hresult.md)  
- <span data-ttu-id="6342f-114">메서드 호출이 반환 되는 조건에 설명 된 `CORPROF_E_UNSUPPORTED_CALL_SEQUENCE` HRESULT입니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-114">Documents the conditions under which a method call returns the `CORPROF_E_UNSUPPORTED_CALL_SEQUENCE` HRESULT.</span></span>  
-  
- [<span data-ttu-id="6342f-115">프로파일링 전역 정적 함수</span><span class="sxs-lookup"><span data-stu-id="6342f-115">Profiling Global Static Functions</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)  
- <span data-ttu-id="6342f-116">프로파일링 API에서 사용하는 관리되지 않는 전역 정적 함수를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-116">Describes the unmanaged global static functions that the profiling API uses.</span></span>  
-  
- [<span data-ttu-id="6342f-117">프로파일링 열거형</span><span class="sxs-lookup"><span data-stu-id="6342f-117">Profiling Enumerations</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)  
- <span data-ttu-id="6342f-118">프로파일링 API에서 사용하는 관리되지 않는 열거형을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-118">Describes the unmanaged enumerations that the profiling API uses.</span></span>  
-  
- [<span data-ttu-id="6342f-119">프로파일링 구조체</span><span class="sxs-lookup"><span data-stu-id="6342f-119">Profiling Structures</span></span>](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)  
- <span data-ttu-id="6342f-120">프로파일링 API에서 사용하는 관리되지 않는 구조체를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-120">Describes the unmanaged structures that the profiling API uses.</span></span>  
-  
-## <a name="related-sections"></a><span data-ttu-id="6342f-121">관련 단원</span><span class="sxs-lookup"><span data-stu-id="6342f-121">Related Sections</span></span>  
- [<span data-ttu-id="6342f-122">연습: 성능 문제 확인</span><span class="sxs-lookup"><span data-stu-id="6342f-122">Walkthrough: Identifying Performance Problems</span></span>](/visualstudio/profiling/walkthrough-identifying-performance-problems)  
- <span data-ttu-id="6342f-123">Microsoft Visual Studio 2005 Team System의 기본 제공 프로 파일링 도구를 사용 하는 방법에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-123">Explains how to use the built-in profiling tools in the Microsoft Visual Studio 2005 Team System.</span></span> <span data-ttu-id="6342f-124">이러한 도구에는 프로 파일링 API를 사용 하는 대신을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="6342f-124">These tools provide an alternative approach to using the profiling API.</span></span>
+# <a name="profiling-unmanaged-api-reference"></a><span data-ttu-id="88d69-102">프로파일링(관리되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="88d69-102">Profiling (Unmanaged API Reference)</span></span>
+
+<span data-ttu-id="88d69-103">프로파일링 API를 사용하면 프로파일러는 CLR(공통 언어 런타임)을 통해 프로그램 실행을 모니터링할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-103">The profiling API enables a profiler to monitor a program's execution by the common language runtime (CLR).</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="88d69-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="88d69-104">In This Section</span></span>
+
+ <span data-ttu-id="88d69-105">[프로파일링 개요](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md) .NET Framework 환경에서 프로파일링을 지원하기 위해 CLR에서 제공하는 서비스 및 인터페이스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-105">[Profiling Overview](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md) Describes the services and interfaces that the CLR provides to support profiling in the .NET Framework environment.</span></span>
+
+ <span data-ttu-id="88d69-106">[프로파일링 인터페이스](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md) 프로파일링 API에서 사용하는 관리되지 않는 인터페이스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-106">[Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md) Describes the unmanaged interfaces that the profiling API uses.</span></span>
+
+ <span data-ttu-id="88d69-107">[프로파일링 환경 설정](../../../../docs/framework/unmanaged-api/profiling/setting-up-a-profiling-environment.md) .NET Framework 응용 프로그램을 프로파일링하기 위해 수행해야 하는 단계를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-107">[Setting Up a Profiling Environment](../../../../docs/framework/unmanaged-api/profiling/setting-up-a-profiling-environment.md) Describes the steps you must take to profile a .NET Framework application.</span></span>
+
+ <span data-ttu-id="88d69-108">[CLR 프로파일러 및 Windows 스토어 앱](../../../../docs/framework/unmanaged-api/profiling/clr-profilers-and-windows-store-apps.md) CLR 프로파일링 API를 사용하는 진단 도구를 Windows 스토어 앱에서 성공적으로 작동하는 방법에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-108">[CLR Profilers and Windows Store Apps](../../../../docs/framework/unmanaged-api/profiling/clr-profilers-and-windows-store-apps.md) Discusses how to port diagnostic tools that consume the CLR Profiling API to work successfully with Windows Store apps.</span></span>
+
+ <span data-ttu-id="88d69-109">[CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](../../../../docs/framework/unmanaged-api/profiling/corprof-e-unsupported-call-sequence-hresult.md) 메서드 호출이 `CORPROF_E_UNSUPPORTED_CALL_SEQUENCE` HRESULT를 반환하는 조건을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-109">[CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](../../../../docs/framework/unmanaged-api/profiling/corprof-e-unsupported-call-sequence-hresult.md) Documents the conditions under which a method call returns the `CORPROF_E_UNSUPPORTED_CALL_SEQUENCE` HRESULT.</span></span>
+
+ <span data-ttu-id="88d69-110">[프로파일링 글로벌 정적 함수](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md) 프로파일링 API에서 사용하는 관리되지 않는 글로벌 정적 함수를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-110">[Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md) Describes the unmanaged global static functions that the profiling API uses.</span></span>
+
+ <span data-ttu-id="88d69-111">[프로파일링 열거형](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md) 프로파일링 API에서 사용하는 관리되지 않는 열거형을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-111">[Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md) Describes the unmanaged enumerations that the profiling API uses.</span></span>
+
+ <span data-ttu-id="88d69-112">[프로파일링 구조체](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md) 프로파일링 API에서 사용하는 관리되지 않는 구조체를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="88d69-112">[Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md) Describes the unmanaged structures that the profiling API uses.</span></span>
