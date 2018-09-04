@@ -3,11 +3,11 @@ title: Reliable Messaging Messages Dropped Per Second
 ms.date: 03/30/2017
 ms.assetid: a11b0b80-b242-48e1-b0bb-7f756db5486b
 ms.openlocfilehash: 7722b32f99b302c5c272e095033879c9e04c7ee1
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43488094"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43542843"
 ---
 # <a name="reliable-messaging-messages-dropped-per-second"></a>Reliable Messaging Messages Dropped Per Second
 카운터 이름: Reliable Messaging Sessions Dropped Per Second.  

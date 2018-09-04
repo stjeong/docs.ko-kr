@@ -5,11 +5,11 @@ ms.assetid: 5f723345-7270-49e2-b638-b3a34bd40517
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 6cfe09e7df28d6f36f6e606802597449dab38212
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399986"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43532538"
 ---
 # <a name="windows-identity-foundation-45-overview"></a>Windows Identity Foundation 4.5 개요
 Windows Identity Foundation 4.5는 응용 프로그램에서 클레임 기반 ID를 구현하기 위한 일련의 .NET Framework 클래스입니다. 이를 사용하면 클레임 인식 응용 프로그램과 서비스의 이점을 더욱 쉽게 활용할 수 있습니다. WIF 4.5는 .NET Framework 버전 4.5 이상을 사용하는 웹 서비스 또는 웹 응용 프로그램에서 사용할 수 있습니다. WIF는 개방형 표준에 따라 공유 산업 비전을 구현하는 Microsoft 페더레이션 ID 소프트웨어 제품군의 일부분일 뿐입니다. 페더레이션 ID는 [AD FS(Active Directory® Federation Services)](https://go.microsoft.com/fwlink/?LinkID=247516) 2.0, [Microsoft Azure ACS(Access Control Services)](https://go.microsoft.com/fwlink/?LinkID=247517) 및 WIF와 같은 세 가지 구성 요소로 구성됩니다. 이러한 세 가지 구성 요소가 모여 Microsoft의 새로운 클레임 기반 클라우드 ID 및 액세스 플랫폼의 핵심을 형성합니다.  

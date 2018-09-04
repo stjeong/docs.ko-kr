@@ -3,11 +3,11 @@ title: SQL Server Compact 및 LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: 59022359-a5a2-4c42-9a6a-5c0259c3ad17
 ms.openlocfilehash: 1229fcb285038875950776a924870c9be6bef13b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43479879"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529990"
 ---
 # <a name="sql-server-compact-and-linq-to-sql"></a>SQL Server Compact 및 LINQ to SQL
 SQL Server Compact는 기본 데이터베이스를 Visual Studio를 사용 하 여 설치 합니다. 자세한 내용은 [PAVE 조치를 사용 하 여 SQL Server Compact (Visual Studio)](https://msdn.microsoft.com/library/13320dd1-94e5-4077-bf76-8df253695ccc)합니다.  

@@ -2,12 +2,12 @@
 title: InvokePowerShell 활동 사용
 ms.date: 03/30/2017
 ms.assetid: 956251a0-31ca-4183-bf76-d277c08585df
-ms.openlocfilehash: c5609556af94ed3e372538047ff6309a105975ae
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fa42cddd930b755e9938a02a137ee77ee273fad0
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33520242"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43538869"
 ---
 # <a name="using-the-invokepowershell-activity"></a>InvokePowerShell 활동 사용
 InvokePowerShell 샘플에서는 `InvokePowerShell` 활동을 사용하여 Windows PowerShell 명령을 호출하는 방법을 보여 줍니다.  
@@ -25,7 +25,7 @@ InvokePowerShell 샘플에서는 `InvokePowerShell` 활동을 사용하여 Windo
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\PowerShell`  
   
@@ -35,8 +35,8 @@ InvokePowerShell 샘플에서는 `InvokePowerShell` 활동을 사용하여 Windo
 |프로젝트 이름|설명|기본 파일|  
 |------------------|-----------------|----------------|  
 |CodedClient|PowerShell 활동을 사용하는 샘플 클라이언트 응용 프로그램입니다.|-   **Program.cs**: InvokePowerShell 활동을 호출 하는 시퀀스 기반 워크플로 프로그래밍 방식으로 만듭니다.|  
-|DesignerClient|`InvokePowerShell` 사용자 지정 활동 및 기타 사용자 지정 활동이 포함된 사용자 지정 활동 집합과 이를 사용하는 워크플로입니다.|<ul><li>활동:<br /><br /> <ul><li>**PrintCollection.cs**: 콘솔에 컬렉션의 모든 항목을 출력 하는 도우미 활동입니다.</li><li>**ReadLine.cs**: 콘솔에서 입력을 읽기 위한 도우미 활동입니다.</li></ul></li><li>파일 시스템:<br /><br /> <ul><li>**Copy.xaml**: 파일을 복사 하는 활동입니다.</li><li>**CreateFile.xaml**: 파일을 만드는 활동입니다.</li><li>**DeleteFile.xaml**: 파일을 삭제 하는 활동입니다.</li><li>**MakeDir.xaml**: 디렉터리를 만드는 활동입니다.</li><li>**Move.xaml**: 파일을 이동 하는 활동입니다.</li><li>**ReadFile.xaml**: 파일을 읽고 해당 내용을 반환 하는 활동입니다.</li><li>**TestPath.xaml**: 경로가 있는지 테스트 하는 활동입니다.</li></ul></li><li>프로세스:<br /><br /> <ul><li>**GetProcess.xaml**: 실행 중인 프로세스 목록을 가져오는 활동입니다.</li><li>**StopProcess.xaml**: 특정 프로세스를 중지 하는 활동입니다.</li></ul></li><li>**Program.cs**: Sequence1 워크플로 호출 합니다.</li><li>**Sequence1.xaml**: 시퀀스 기반 워크플로입니다.</li></ul>|  
-|PowerShell|`InvokePowerShell` 활동 및 이 활동과 연결된 디자이너입니다.|활동 파일<br /><br /> -   **ExecutePowerShell.cs**: 활동의 기본 실행 논리입니다.<br />-   **InvokePowerShell.cs**: 제네릭 (반환 값) 버전과 비 제네릭 (비 반환 값) 버전을 포함 하는 주요 실행 논리 래퍼입니다. 이는 활동의 공용 인터페이스입니다.<br />-   **NoPersistZone.cs**:이 활동 모든 자식 활동이 지속 하지 않도록 방지 합니다. 이 클래스는 `InvokePowerShell` 활동 구현 내에서 실행 도중에 활동이 지속되지 않게 하는 데 사용됩니다.<br /><br /> 디자이너 파일:<br /><br /> 1.  **ArgumentDictionaryEditor.cs**: 사용자의 인수를 편집할 수 있는 Windows 대화 상자는 `InvokePowerShell` 활동입니다.<br />2.  **GenericInvokePowerShellDesigner.xaml** 및 **GenericInvokePowerShellDesigner.xaml.cs**: 제네릭의 모양을 정의 `InvokePowerShell` 활동에 [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)]합니다.<br />3.  **InvokePowerShellDesigner.xaml** 및 **InvokePowerShellDesigner.cs**: 제네릭이 아닌의 모양을 정의 `InvokePowerShell` 활동에 [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)]합니다.|  
+|DesignerClient|`InvokePowerShell` 사용자 지정 활동 및 기타 사용자 지정 활동이 포함된 사용자 지정 활동 집합과 이를 사용하는 워크플로입니다.|<ul><li>활동:<br /><br /> <ul><li>**PrintCollection.cs**: 콘솔에 컬렉션의 모든 항목을 출력 하는 도우미 활동입니다.</li><li>**ReadLine.cs**: 콘솔에서 입력을 읽기 위한 도우미 활동입니다.</li></ul></li><li>파일 시스템:<br /><br /> <ul><li>**Copy.xaml**: 파일을 복사 하는 활동입니다.</li><li>**CreateFile.xaml**: 파일을 만드는 활동입니다.</li><li>**DeleteFile.xaml**: 파일을 삭제 하는 활동입니다.</li><li>**MakeDir.xaml**: 디렉터리를 만드는 활동입니다.</li><li>**Move.xaml**: 파일로 이동 하는 작업입니다.</li><li>**ReadFile.xaml**: 파일을 읽고 해당 내용을 반환 하는 활동입니다.</li><li>**TestPath.xaml**: 경로가 있는지 테스트 하는 작업입니다.</li></ul></li><li>프로세스:<br /><br /> <ul><li>**GetProcess.xaml**: 실행 중인 프로세스 목록을 가져오는 활동입니다.</li><li>**StopProcess.xaml**: 특정 프로세스를 중지 하는 활동입니다.</li></ul></li><li>**Program.cs**: Sequence1 워크플로 호출 합니다.</li><li>**Sequence1.xaml**: 시퀀스 기반 워크플로입니다.</li></ul>|  
+|PowerShell|`InvokePowerShell` 활동 및 이 활동과 연결된 디자이너입니다.|활동 파일<br /><br /> -   **ExecutePowerShell.cs**: 작업의 기본 실행 논리입니다.<br />-   **InvokePowerShell.cs**: 제네릭 (반환 값) 버전과 비 제네릭 (비 반환 값) 버전을 포함 하는 주요 실행 논리에 래퍼입니다. 이는 활동의 공용 인터페이스입니다.<br />-   **NoPersistZone.cs**:이 작업 유지 모든 자식 활동을 방지 합니다. 이 클래스는 `InvokePowerShell` 활동 구현 내에서 실행 도중에 활동이 지속되지 않게 하는 데 사용됩니다.<br /><br /> 디자이너 파일:<br /><br /> 1.  **ArgumentDictionaryEditor.cs**: 사용자의 인수를 편집할 수 있도록는 Windows 대화 상자는 `InvokePowerShell` 활동입니다.<br />2.  **GenericInvokePowerShellDesigner.xaml** 하 고 **GenericInvokePowerShellDesigner.xaml.cs**: 제네릭의 모양을 정의 `InvokePowerShell` 에서 활동 [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)]합니다.<br />3.  **InvokePowerShellDesigner.xaml** 하 고 **InvokePowerShellDesigner.cs**: 제네릭이 아닌의 모양을 정의 `InvokePowerShell` 에서 활동 [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)]합니다.|  
   
  클라이언트 프로젝트의 사용 방법을 이해하면 PowerShell 활동의 내부 기능을 쉽게 이해할 수 있기 때문에 클라이언트 프로젝트에 대해 먼저 설명합니다.  
   
@@ -169,7 +169,7 @@ new ForEach<PSObject>
  디자이너 사용자 지정은 디자인 캔버스에서 활동의 모양을 정의하는 .xaml 파일로 끝나지 않습니다. 활동의 매개 변수를 표시하는 데 사용되는 대화 상자도 사용자 지정할 수 있습니다. 이 매개 변수와 PowerShell 변수는 PowerShell 명령의 동작에 영향을 줍니다. 작업으로 노출 <!--zz <xref:System.Collections.Generic.Dictionary%601>--> `System.Collections.Generic.Dictionary` 형식입니다. ArgumentDictionaryEditor.cs, PropertyEditorResources.xaml 및 PropertyEditorResources.cs는 이러한 형식을 편집할 수 있는 대화 상자를 정의합니다.  
   
 ## <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
- 이 샘플을 실행하려면 Windows PowerShell을 설치해야 합니다. Windows PowerShell이이 위치에서 설치할 수 있습니다: [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=150383)합니다.  
+ 이 샘플을 실행하려면 Windows PowerShell을 설치해야 합니다. 이 위치에서 Windows PowerShell을 설치할 수 있습니다: [Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=150383)합니다.  
   
 #### <a name="to-run-the-coded-client"></a>코딩된 클라이언트를 실행하려면  
   
@@ -177,7 +177,7 @@ new ForEach<PSObject>
   
 2.  솔루션을 마우스 오른쪽 단추로 클릭하고 빌드합니다.  
   
-3.  마우스 오른쪽 단추로 클릭는 **CodedClient** 프로젝트를 마우스 선택 **시작 프로젝트로 설정**합니다.  
+3.  마우스 오른쪽 단추로 클릭 합니다 **CodedClient** 프로젝트를 마우스 **시작 프로젝트로 설정**합니다.  
   
 4.  Ctrl+F5를 눌러 응용 프로그램을 실행합니다.  
   
@@ -187,7 +187,7 @@ new ForEach<PSObject>
   
 2.  솔루션을 마우스 오른쪽 단추로 클릭하고 빌드합니다.  
   
-3.  마우스 오른쪽 단추로 클릭는 **빌드됩니다** 프로젝트를 마우스 선택 **시작 프로젝트로 설정**합니다.  
+3.  마우스 오른쪽 단추로 클릭 합니다 **DesignerClient** 프로젝트를 마우스 **시작 프로젝트로 설정**합니다.  
   
 4.  Ctrl+F5를 눌러 응용 프로그램을 실행합니다.  
   
@@ -195,7 +195,7 @@ new ForEach<PSObject>
   
 1.  다른 프로젝트의 `InvokePowerShell` 활동 어셈블리 또는 프로젝트를 참조할 때 빌드 오류가 발생하는 경우 새 프로젝트의 .csproj 파일에서 `<SpecificVersion>True</SpecificVersion>`을 참조하는 줄 아래에 `InvokePowerShell` 요소를 수동으로 추가해야 할 수 있습니다.  
   
-2.  Windows PowerShell 설치 되지 않은 경우 다음과 같은 오류 메시지가 추가 되는 즉시 Visual Studio에서 표시 됩니다는 `InvokePowerShell` 활동을 워크플로에: `Workflow Designer encountered problems with your document. Could not load file or assembly ‘System.Management.Automation’ ... or one of its dependencies. The system cannot find the file specified.`  
+2.  Windows PowerShell 설치 되어 있지 않으면 다음 오류 메시지가 추가 되는 즉시 Visual Studio에서 표시 됩니다는 `InvokePowerShell` 활동을 워크플로에: `Workflow Designer encountered problems with your document. Could not load file or assembly ‘System.Management.Automation’ ... or one of its dependencies. The system cannot find the file specified.`  
   
 3.  Windows PowerShell 2.0에서 `$input.MoveNext()`를 프로그래밍 방식으로 호출하면 실패하며 `$input.MoveNext()`를 사용하는 스크립트에서 의도하지 않은 오류 및 결과가 발생합니다. 이 문제를 해결하려면 배열을 반복할 때 `foreach`를 호출하는 대신 PowerShell 동사 `MoveNext()`를 사용해 보세요.  
   
@@ -204,6 +204,6 @@ new ForEach<PSObject>
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\PowerShell`

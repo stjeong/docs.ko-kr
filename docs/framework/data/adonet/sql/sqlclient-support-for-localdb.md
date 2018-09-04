@@ -2,15 +2,15 @@
 title: LocalDB에 대한 SqlClient 지원
 ms.date: 03/30/2017
 ms.assetid: cf796898-5575-46f2-ae6e-21e5aa8c4123
-ms.openlocfilehash: 33368ca4b2dc5397087d29e515db6c1094e350bc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1ef75def3f3de44b5e23cb1197a4410dcf6b547f
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359799"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43532711"
 ---
 # <a name="sqlclient-support-for-localdb"></a>LocalDB에 대한 SqlClient 지원
-SQL Server 코드 이름 Denali 부터는 LocalDB 라고 부르는 SQL Server의 경량 버전 제공 됩니다. 이 항목에서는 LocalDB 데이터베이스에 연결하는 방법을 설명합니다.  
+SQL Server 코드 이름 Denali 부터는 LocalDB 라고 부르는 SQL Server의 경량 버전을 사용할 수 있습니다. 이 항목에서는 LocalDB 데이터베이스에 연결하는 방법을 설명합니다.  
   
 ## <a name="remarks"></a>설명  
  LocalDB 설치 및 LocalDB 인스턴스를 구성 하는 방법을 비롯 한 LocalDB에 대 한 자세한 내용은 SQL Server 온라인 설명서를 참조 합니다.  
@@ -31,7 +31,7 @@ SQL Server 코드 이름 Denali 부터는 LocalDB 라고 부르는 SQL Server의
   
  `User Instance=True` 는 LocalDB 데이터베이스에 연결할 때는 사용할 수 없습니다.  
   
- [Microsoft SQL Server 2012 기능 팩](http://www.microsoft.com/download/en/details.aspx?id=29065)에서 LocalDB를 다운로드할 수 있습니다. 데이터를 수정 하 여 LocalDB 인스턴스에서 sqlcmd.exe를 사용 하는 경우 SQL Server 2012 기능 팩에서 에서도 가져올 수는 SQL Server 2012의 sqlcmd를 해야 합니다.  
+ LocalDB를 다운로드할 수 있습니다 [Microsoft SQL Server 2012 기능 팩](https://www.microsoft.com/download/en/details.aspx?id=29065)합니다. Sqlcmd.exe를 사용 하 여 LocalDB 인스턴스에서 데이터를 수정 하는, SQL Server 2012 기능 팩 에서도 가져올 수 있습니다 SQL Server 2012의 sqlcmd를 해야 합니다.  
   
 ## <a name="programmatically-create-a-named-instance"></a>프로그래밍 방식으로 명명된 인스턴스 만들기  
  응용 프로그램에서는 명명된 인스턴스를 만들고 다음과 같이 데이터베이스를 지정할 수 있습니다.  
@@ -60,4 +60,4 @@ SQL Server 코드 이름 Denali 부터는 LocalDB 라고 부르는 SQL Server의
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 기능 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

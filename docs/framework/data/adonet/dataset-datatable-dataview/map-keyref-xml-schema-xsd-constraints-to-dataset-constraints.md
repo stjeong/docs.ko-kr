@@ -2,29 +2,29 @@
 title: 데이터 집합 제약 조건에 keyref XSD(XML 스키마) 제약 조건 매핑
 ms.date: 03/30/2017
 ms.assetid: 5b634fea-cc1e-4f6b-9454-10858105b1c8
-ms.openlocfilehash: a3a5033292db2b47e7a9811e36c0a4af016951fc
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 86bc1961fb23b0b2f98a2849eaabd4eecd65cd64
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32758557"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43533059"
 ---
 # <a name="map-keyref-xml-schema-xsd-constraints-to-dataset-constraints"></a>데이터 집합 제약 조건에 keyref XSD(XML 스키마) 제약 조건 매핑
-**keyref** 요소는 문서 내의 요소 간에 링크를 만들 수 있습니다. 이 링크는 관계형 데이터베이스의 외래 키 관계와 유사합니다. 스키마를 지정 하는 경우는 **keyref** 요소가 요소는 해당 외래 키 제약 조건 테이블의 열에 스키마 매핑 프로세스 중에 변환 됩니다는 <xref:System.Data.DataSet>합니다. 기본적으로는 **keyref** 요소와는 관계 생성의 **ParentTable**, **ChildTable**, **ParentColumn**, 및  **ChildColumn** 해당 관계에 지정 된 속성입니다.  
+합니다 **keyref** 요소는 문서 내의 요소 간의 연결을 설정할 수 있습니다. 이 링크는 관계형 데이터베이스의 외래 키 관계와 유사합니다. 스키마를 지정 하는 경우는 **keyref** 요소가 요소는 해당 외래 키 제약 조건 테이블의 열에 스키마 매핑 프로세스 중 변환 되는 <xref:System.Data.DataSet>합니다. 기본적으로 **keyref** 도 요소와의 관계를 생성 합니다 **ParentTable**를 **ChildTable**, **ParentColumn**, 및  **ChildColumn** 관계에서 지정 된 속성입니다.  
   
- 다음 표에서 윤곽선은 **msdata** 특성에 지정할 수 있습니다는 **keyref** 요소입니다.  
+ 다음 표에 간략하게 설명 합니다 **msdata** 특성에 지정할 수 있습니다 합니다 **keyref** 요소입니다.  
   
 |특성 이름|설명|  
 |--------------------|-----------------|  
-|**msdata:ConstraintOnly**|경우 **ConstraintOnly = "true"** 에 지정 된 **keyref** 스키마의 요소를 한 제약 조건을 만들어지지만 관계는 만들어지지입니다. 이 특성이 지정 되지 않은 경우 (또는로 설정 되어 **False**)에 제약 조건과 관계가 모두 만들어집니다는 **데이터 집합**합니다.|  
-|**msdata:ConstraintName**|경우는 **ConstraintName** 특성을 지정 하면 해당 값 제약 조건 이름으로 사용 됩니다. 그렇지 않은 경우는 **이름** 특성에는 **keyref** 스키마의 요소에서의 제약 조건 이름을 제공는 **데이터 집합**합니다.|  
-|**msdata:UpdateRule**|경우는 **UpdateRule** 특성에 지정 된는 **keyref** 스키마의 요소를 해당 값이 할당 된 **UpdateRule** 제약 조건 속성에는  **데이터 집합**합니다. 그렇지 않은 경우는 **UpdateRule** 속성이 **Cascade**합니다.|  
-|**msdata:DeleteRule**|경우는 **DeleteRule** 특성에 지정 된는 **keyref** 스키마의 요소를 해당 값이 할당 된 **DeleteRule** 제약 조건 속성에는  **데이터 집합**합니다. 그렇지 않은 경우는 **DeleteRule** 속성이 **Cascade**합니다.|  
-|**msdata:AcceptRejectRule**|경우는 **AcceptRejectRule** 특성에 지정 된는 **keyref** 스키마의 요소를 해당 값이 할당 된 **AcceptRejectRule** 제약 조건 속성에는  **데이터 집합**합니다. 그렇지 않은 경우는 **AcceptRejectRule** 속성이 **None**합니다.|  
+|**msdata:ConstraintOnly**|하는 경우 **ConstraintOnly = "true"** 에 지정 합니다 **keyref** 스키마의 요소에는 제약 조건 만들어지지만 관계는 만들어지지 않습니다. 이 특성을 지정 하지 않으면 (또는로 설정 되어 **False**), 제약 조건 및 관계에 생성 됩니다 합니다 **데이터 집합**합니다.|  
+|**msdata:ConstraintName**|경우는 **ConstraintName** 특성을 지정 하면 해당 값이 제약 조건의 이름으로 사용 됩니다. 이 고, 그렇지는 **이름** 특성을 **keyref** 스키마의 요소에는 제약 조건 이름을 제공 합니다 **데이터 집합**합니다.|  
+|**msdata:UpdateRule**|경우는 **UpdateRule** 특성을 지정 합니다 **keyref** 스키마의 요소를 해당 값에 할당 됩니다는 **UpdateRule** 제약 조건 속성에는  **데이터 집합**합니다. 그렇지 않은 경우는 **UpdateRule** 속성이 **Cascade**합니다.|  
+|**msdata:DeleteRule**|경우는 **DeleteRule** 특성을 지정 합니다 **keyref** 스키마의 요소를 해당 값에 할당 됩니다는 **DeleteRule** 제약 조건 속성에는  **데이터 집합**합니다. 그렇지 않은 경우는 **DeleteRule** 속성이 **Cascade**합니다.|  
+|**msdata:AcceptRejectRule**|경우는 **AcceptRejectRule** 특성을 지정 합니다 **keyref** 스키마의 요소를 해당 값에 할당 됩니다는 **AcceptRejectRule** 제약 조건 속성에는  **데이터 집합**합니다. 그렇지 않은 경우는 **AcceptRejectRule** 속성이 **None**합니다.|  
   
- 다음 예제에 지정 하는 스키마는 **키** 및 **keyref** 간의 관계는 **OrderNumber** 의 자식 요소는 **순서**  요소 및 **OrderNo** 의 자식 요소는 **OrderDetail** 요소입니다.  
+ 지정 하는 스키마를 포함 하는 다음 예제는 **키** 및 **keyref** 간의 관계를 **OrderNumber** 의 자식 요소는 **순서**  요소와 **OrderNo** 자식 요소는 **OrderDetail** 요소입니다.  
   
- 예제에서는 **OrderNumber** 의 자식 요소는 **OrderDetail** 요소를 참조는 **OrderNo** 의 키 자식 요소는 **순서**요소입니다.  
+ 예에서는 **OrderNumber** 의 자식 요소를 **OrderDetail** 요소를 가리킵니다를 **OrderNo** 키 자식 요소는 **순서**요소입니다.  
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""   
@@ -66,16 +66,16 @@ ms.locfileid: "32758557"
 </xs:schema>  
 ```  
   
- 다음을 생성 하는 XML 스키마 정의 언어 (XSD) 스키마 매핑 프로세스 **DataSet** 두 테이블이 포함 된:  
+ XML 스키마 정의 언어 (XSD) 스키마 매핑 프로세스 결과 다음과 **데이터 집합** 두 테이블을 사용 하 여:  
   
 ```  
 OrderDetail(OrderNo, ItemNo) and  
 Order(OrderNumber, EmpNumber)  
 ```  
   
- 또한는 **DataSet** 다음과 같은 제약 조건을 정의 합니다.  
+ 또한 합니다 **데이터 집합** 다음 제약 조건을 정의 합니다.  
   
--   에 unique 제약 조건을 **순서** 테이블입니다.  
+-   Unique 제약 조건 합니다 **순서** 테이블입니다.  
   
     ```  
               Table: Order  
@@ -85,7 +85,7 @@ Order(OrderNumber, EmpNumber)
     IsPrimaryKey: False  
     ```  
   
--   간의 관계는 **순서** 및 **OrderDetail** 테이블입니다. **Nested** 속성이 **False** 두 요소가 스키마에서 중첩 되지 않은 때문에 있습니다.  
+-   간의 관계는 **순서** 하 고 **OrderDetail** 테이블입니다. **중첩** 속성이 **False** 두 요소가 스키마에서 중첩 되지 때문입니다.  
   
     ```  
               ParentTable: Order  
@@ -98,7 +98,7 @@ Order(OrderNumber, EmpNumber)
     Nested: False  
     ```  
   
--   외래 키 제약 조건을 **OrderDetail** 테이블입니다.  
+-   foreign key 제약 조건 합니다 **OrderDetail** 테이블입니다.  
   
     ```  
               ConstraintName: OrderNoRef  
@@ -112,4 +112,4 @@ Order(OrderNumber, EmpNumber)
 ## <a name="see-also"></a>참고 항목  
  [데이터 집합 제약 조건에 XSD(XML 스키마) 제약 조건 매핑](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  [XSD(XML 스키마)에서 데이터 집합 관계 생성](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -9,11 +9,11 @@ ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: ec3a7e01e62b60688080fee95cf70e0ed38917f2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33656180"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43552194"
 ---
 # <a name="-platform-visual-basic"></a>-플랫폼 (Visual Basic)
 출력 파일을 실행할 수 있는 CLR(공용 언어 런타임) 플랫폼 버전을 지정합니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "33656180"
   
 -   일부 플랫폼에만 있는 구성 요소를 통한 플랫폼 호출 또는 COM interop 사용  
   
- **-플랫폼** 옵션에 해당 코드가 실행 되는 아키텍처에 대 한 가정을 알고 있는 경우 몇 가지 문제가 완화 됩니다. 구체적으로는 다음과 같습니다.  
+ 합니다 **-플랫폼** 옵션에 해당 코드가 실행 되는 아키텍처에 대 한 가정을 변경한 알고 있는 경우 몇 가지 문제를 줄일 수 있습니다. 구체적으로는 다음과 같습니다.  
   
 -   응용 프로그램이 32비트 컴퓨터에서 실행되는데 64비트 플랫폼을 대상으로 지정하는 경우에는 오류 메시지가 훨씬 더 일찍 표시되며, 이 스위치를 사용하지 않아 발생하는 오류보다는 문제 자체에 대한 내용이 중점적으로 표시됩니다.  
   
@@ -66,15 +66,15 @@ ms.locfileid: "33656180"
   
 -   `-platform:anycpu32bitpreferred`로 컴파일된 실행 파일은 32비트 CLR에서 실행됩니다.  
   
- 64 비트 버전의 Windows에서 실행 되도록 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 참조 [64 비트 응용 프로그램](../../../framework/64-bit-apps.md)합니다.  
+ 64 비트 버전의 Windows에서 실행 되도록 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 참조 하세요. [64 비트 응용 프로그램](../../../framework/64-bit-apps.md)합니다.  
   
-### <a name="to-set--platform-in-the-visual-studio-ide"></a>-Visual Studio IDE에서 플랫폼을 설정 하려면  
+### <a name="to-set--platform-in-the-visual-studio-ide"></a>설정-Visual Studio IDE에서 플랫폼  
   
-1.  **솔루션 탐색기**, 프로젝트를 선택 열고는 **프로젝트** 메뉴를 차례로 클릭 **속성**합니다.  
+1.  **솔루션 탐색기**, 프로젝트를 선택 엽니다 합니다 **프로젝트** 메뉴를 클릭 한 다음 **속성**합니다.  
   
-2.  에 **컴파일** 탭을 선택 하거나 선택을 취소는 **32 비트 선호** 확인란 또는 **대상 CPU** 목록에서 값을 선택 합니다.  
+2.  에 **컴파일** 탭을 선택 하거나 선택을 취소 합니다 **32 비트 선호** 확인란을 또는 **대상 CPU** 목록에서 값을 선택 합니다.  
   
-     자세한 내용은 참조 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)합니다.  
+     자세한 내용은 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)합니다.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `-platform` 컴파일러 옵션을 사용하는 방법을 보여 줍니다.  

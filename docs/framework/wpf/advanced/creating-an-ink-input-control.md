@@ -15,11 +15,11 @@ helpviewer_keywords:
 - StylusPlugIn objects [WPF]
 ms.assetid: c31f3a67-cb3f-4ded-af9e-ed21f6575b26
 ms.openlocfilehash: 3113b953c1c547035883a4f4b51f53e4aefdf0a6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43392424"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43537875"
 ---
 # <a name="creating-an-ink-input-control"></a>잉크 입력 컨트롤 만들기
 사용자 지정 컨트롤을 동적으로 만들 수 하 고이 정보를 정적으로 잉크를 렌더링 합니다. 즉, 사용자를 "flow"에서 태블릿 펜 후 잉크를 표시 하는 컨트롤에 추가 클립보드에서 붙여 넣거나 파일에서 로드 태블릿 펜을 통해 표시할 잉크가 스트로크를 그릴 때에 잉크를 렌더링 합니다. 동적으로 잉크를 렌더링 하려면 컨트롤을 사용 해야는 <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>합니다. 잉크를 정적으로 렌더링 하려면 스타일러스 이벤트 메서드를 재정의 해야 합니다 (<xref:System.Windows.UIElement.OnStylusDown%2A>, <xref:System.Windows.UIElement.OnStylusMove%2A>, 및 <xref:System.Windows.UIElement.OnStylusUp%2A>)를 수집 하 <xref:System.Windows.Input.StylusPoint> 데이터를 만들고 추가할는 <xref:System.Windows.Controls.InkPresenter> (컨트롤에서 잉크를 렌더링).  

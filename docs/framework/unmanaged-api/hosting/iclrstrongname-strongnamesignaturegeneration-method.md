@@ -18,14 +18,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 1571e43d6a89af453d6289ccb646c7222f0a5ad6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43483112"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43532360"
 ---
 # <a name="iclrstrongnamestrongnamesignaturegeneration-method"></a>ICLRStrongName::StrongNameSignatureGeneration 메서드
-지정된 된 어셈블리의 강력한 이름 시그니처를 생성합니다.  
+지정된 어셈블리에 대한 강력한 이름 서명을 생성합니다.  
   
 ## <a name="syntax"></a>구문  
   

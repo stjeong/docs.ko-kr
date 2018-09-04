@@ -3,11 +3,11 @@ title: 아키텍처 및 디자인
 ms.date: 03/30/2017
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
 ms.openlocfilehash: 5a0d8aac401a3485bc5f158bcda893ad9ab424e8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43419606"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530472"
 ---
 # <a name="architecture-and-design"></a>아키텍처 및 디자인
 SQL 생성 모듈은 [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616) 명령 트리를 나타내는 식 트리의 방문자로 구현 됩니다. 생성은 식 트리에 대한 단일 패스로 수행됩니다.  

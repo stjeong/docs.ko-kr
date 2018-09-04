@@ -8,12 +8,12 @@ helpviewer_keywords:
 - mapping properties [WPF]
 - WindowsFormsHost element property mapping [WPF]
 ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
-ms.openlocfilehash: 77027d771cf471e563e24c46d7794a18ad223541
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: 4841ce260adfb5d0c0d4b0f359ac9998521d584b
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43258520"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529649"
 ---
 # <a name="walkthrough-mapping-properties-using-the-windowsformshost-element"></a>연습: WindowsFormsHost 요소를 사용하여 속성 매핑
 
@@ -33,7 +33,7 @@ ms.locfileid: "43258520"
 
 -   기본 속성 매핑 확장.
 
-이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [WindowsFormsHost 요소 샘플을 사용 하 여 속성 매핑](http://go.microsoft.com/fwlink/?LinkID=160019)합니다.
+이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [WindowsFormsHost 요소 샘플을 사용 하 여 속성 매핑](https://go.microsoft.com/fwlink/?LinkID=160019)합니다.
 
 에 매핑할 수 있게 됩니다 완료 했으면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 해당 속성에 호스트 속성 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 제어 합니다.
 

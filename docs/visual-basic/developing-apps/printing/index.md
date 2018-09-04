@@ -3,11 +3,11 @@ title: 인쇄 및 보고(Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 92997b65-0279-4889-8db7-32cb6708be9c
 ms.openlocfilehash: 926526a64cd0b70db4864329454fbc42f3e34b1e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43472061"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43539042"
 ---
 # <a name="printing-and-reporting-visual-basic"></a>인쇄 및 보고(Visual Basic)
 Visual Basic에서는 인쇄 및 보고에 대 한 몇 가지 옵션을 제공 합니다. 다음 항목에서는 개요 및 인쇄 및 보고와 관련 된 문서에 대 한 링크를 제공 합니다.  

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - WCF Data Services, learn more
 ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
 ms.openlocfilehash: 790fe629ae709a9fcb57d5b551e9fa7aecfb04f5
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43395567"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43540479"
 ---
 # <a name="wcf-data-services-resources"></a>WCF Data Services 리소스
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 개략적으로 소개하는 항목을 다음 위치에서 찾을 수 있습니다. 이들 항목 중 상당수에는 자세한 정보가 포함된 관련 항목 링크가 제공됩니다.  

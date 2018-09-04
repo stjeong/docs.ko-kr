@@ -7,11 +7,11 @@ helpviewer_keywords:
 - windows [Windows Forms], splitting horizontally
 ms.assetid: 3872a176-891f-4c70-9779-b2ce85b0b102
 ms.openlocfilehash: c2b605a08ea29d1d0a1e92cb2b7e4dc1f2059c26
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43421380"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43542923"
 ---
 # <a name="how-to-split-a-window-horizontally-using-the-designer"></a>방법: 디자이너를 사용하여 가로로 창 분할
 이 예제에서는 분할 하는 분할자는 <xref:System.Windows.Forms.SplitContainer> 컨트롤을 가로로 합니다.  

@@ -5,11 +5,11 @@ ms.assetid: 149cb875-9b1c-4695-b88a-fbf1725a02f9
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: e70958ab20ff70462e7301630b36db3df79fd13e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43479908"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43528724"
 ---
 # <a name="wif-claims-programming-model"></a>WIF 클레임 프로그래밍 모델
 ASP.NET 및 WCF(Windows Communication Foundation) 개발자는 일반적으로 사용자의 ID 정보 작업에 IIdentity 및 IPrincipal 인터페이스를 사용합니다. .NET 4.5에서는 다음 다이어그램과 같이 이제 모든 보안 주체에 대한 클레임이 항상 표시되도록 WIF(Windows Identity Foundation)가 통합되었습니다.  

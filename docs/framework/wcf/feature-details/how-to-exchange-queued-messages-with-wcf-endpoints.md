@@ -1,21 +1,21 @@
 ---
-title: '방법: 대기 중인 메시지와 WCF 끝점 교환'
+title: '방법: 대기 중인 메시지와 WCF 엔드포인트 교환'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
-ms.openlocfilehash: ab6ca46fad8ee1ededef5cc14a9654b79b2e6a8e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 185bcb64522115d0c60ae90ee22a73610139c8c3
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33494659"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43536636"
 ---
-# <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>방법: 대기 중인 메시지와 WCF 끝점 교환
-큐는 서비스의 통신 시 사용할 수 없는 경우에 신뢰할 수 있는 메시징 클라이언트와 Windows Communication Foundation (WCF) 서비스 간에 발생할 수 없음을 확인 합니다. 다음 절차에는 클라이언트와 표준을 사용 하 여 서비스 간의 통신을 지 속하는 WCF 서비스를 구현 하는 경우에 대기 중인 바인딩을 확인 하는 방법을 보여 줍니다.  
+# <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>방법: 대기 중인 메시지와 WCF 엔드포인트 교환
+큐는 서비스의 통신 시 사용할 수 없는 경우에 Windows Communication Foundation (WCF) 서비스와 클라이언트 간에 신뢰할 수 있는 메시징 발생할 수 있다고 확인 합니다. 다음 절차에는 WCF 서비스를 구현 하는 경우 클라이언트와 표준을 사용 하 여 서비스 간 통신을 지 속하는 큐 바인딩을 확인 하는 방법을 보여 줍니다.  
   
- 이 섹션에서는 사용 하는 방법을 설명 <xref:System.ServiceModel.NetMsmqBinding> WCF 클라이언트와 WCF 서비스 간의 대기 중인된 통신에 대 한 합니다.  
+ 이 섹션에서는 사용 하는 방법에 설명 <xref:System.ServiceModel.NetMsmqBinding> WCF 클라이언트와 WCF 서비스 간에 대기 중인 통신 합니다.  
   
 ### <a name="to-use-queuing-in-a-wcf-service"></a>WCF 서비스에서 큐를 사용하려면  
   
@@ -41,7 +41,7 @@ ms.locfileid: "33494659"
      [!code-csharp[S_Msmq_Transacted#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/hostapp.cs#4)]
      [!code-vb[S_Msmq_Transacted#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/hostapp.vb#4)]  
   
-5.  서비스 주소를 지정하고 표준 <xref:System.ServiceModel.Description.ServiceEndpoint> 바인딩을 사용하는 구성에 <xref:System.ServiceModel.NetMsmqBinding>를 정의합니다. WCF 구성을 사용 하는 방법에 대 한 자세한 내용은 참조 [Windows Communication Foundation 응용 프로그램 구성](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)합니다.  
+5.  서비스 주소를 지정하고 표준 <xref:System.ServiceModel.Description.ServiceEndpoint> 바인딩을 사용하는 구성에 <xref:System.ServiceModel.NetMsmqBinding>를 정의합니다. WCF 구성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)합니다.  
   
   
   
@@ -62,7 +62,7 @@ ms.locfileid: "33494659"
   
   
   
-3.  호출, 트랜잭션 큐에 쓸 트랜잭션 범위를 만들는 `SubmitPurchaseOrder` 작업과 다음 예제에 나와 있는 것 처럼 WCF 클라이언트를 닫습니다.  
+3.  호출 하는 트랜잭션 큐에 쓸 트랜잭션 범위를 만듭니다는 `SubmitPurchaseOrder` 작업 닫은 다음 예제에서와 같이 WCF 클라이언트입니다.  
   
      [!code-csharp[S_Msmq_Transacted#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#8)]
      [!code-vb[S_Msmq_Transacted#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#8)]  
@@ -87,9 +87,9 @@ ms.locfileid: "33494659"
  <xref:System.ServiceModel.NetMsmqBinding>  
  [트랜잭션된 MSMQ 바인딩](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)  
  [WCF의 큐](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [방법: WCF 끝점 및 메시지 큐 응용 프로그램과 메시지 교환](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
+ [방법: WCF 엔드포인트 및 메시지 큐 응용 프로그램과 메시지 교환](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
  [Windows Communication Foundation에서 메시지 큐로](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  
  [메시지 큐(MSMQ) 설치](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
- [메시지 큐 통합 바인딩 예제](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
+ [메시지 큐 통합 바인딩 샘플](https://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
  [메시지 큐에서 indows Communication Foundation으로](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  
  [메시지 큐에 대한 메시지 보안](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)

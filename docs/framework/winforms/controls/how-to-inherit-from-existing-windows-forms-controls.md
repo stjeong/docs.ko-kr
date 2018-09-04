@@ -8,18 +8,18 @@ helpviewer_keywords:
 - inheritance [Windows Forms], Windows Forms custom controls
 - custom controls [Windows Forms], inheritance
 ms.assetid: 1e1fc8ea-c615-4cf0-a356-16d6df7444ab
-ms.openlocfilehash: 6f35881bdb7a781d817c9f671962d0445bfd8e27
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f19b207c840994ffa3aa364135583b5daeb26827
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33538743"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43542286"
 ---
 # <a name="how-to-inherit-from-existing-windows-forms-controls"></a>방법: 기존 Windows Forms 컨트롤에서 상속
-기존 컨트롤의 기능을 확장하려는 경우 상속을 통해 기존 컨트롤에서 파생된 컨트롤을 만들 수 있습니다. 기존 컨트롤에서 상속하는 경우 해당 컨트롤의 모든 기능 및 시각적 속성을 상속합니다. 상속 하는 컨트롤을 만들려는 경우 등 <xref:System.Windows.Forms.Button>, 새 컨트롤 모양 및 act 똑같이 표준 <xref:System.Windows.Forms.Button> 제어 합니다. 그런 다음 사용자 지정 메서드 및 속성의 구현을 통해 새 컨트롤의 기능을 확장하거나 수정할 수 있습니다. 일부 컨트롤에서 변경할 수 있습니다 또한 상속 된 컨트롤의 시각적 모양을 재정의 하 여 해당 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드.  
+기존 컨트롤의 기능을 확장하려는 경우 상속을 통해 기존 컨트롤에서 파생된 컨트롤을 만들 수 있습니다. 기존 컨트롤에서 상속하는 경우 해당 컨트롤의 모든 기능 및 시각적 속성을 상속합니다. 예를 들어에서 상속 된 컨트롤을 만들려는 <xref:System.Windows.Forms.Button>, 새 컨트롤 모양 및 act에는 정확히 표준 같은 <xref:System.Windows.Forms.Button> 제어 합니다. 그런 다음 사용자 지정 메서드 및 속성의 구현을 통해 새 컨트롤의 기능을 확장하거나 수정할 수 있습니다. 일부 컨트롤에서는 변경할 수 있습니다도 상속 된 컨트롤의 시각적 모양을 재정의 하 여 해당 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ### <a name="to-create-an-inherited-control"></a>상속된 컨트롤을 만들려면  
   
@@ -37,11 +37,11 @@ ms.locfileid: "33538743"
   
 5.  C#을 사용하는 경우 코드 편집기에서 CustomControl1.cs를 엽니다.  
   
-6.  상속 하는 클래스 선언을 찾아 <xref:System.Windows.Forms.Control>합니다.  
+6.  상속 되는 클래스 선언을 찾습니다 <xref:System.Windows.Forms.Control>합니다.  
   
 7.  기본 클래스를 상속하려는 컨트롤로 변경합니다.  
   
-     상속 하려는 경우 등 <xref:System.Windows.Forms.Button>, 다음과 같은 클래스 선언을 변경 합니다.  
+     예를 들어에서 상속 하려는 경우 <xref:System.Windows.Forms.Button>, 다음 클래스 선언을 변경 합니다.  
   
     ```vb  
     Partial Class CustomControl1  
@@ -59,7 +59,7 @@ ms.locfileid: "33538743"
 10. 컨트롤의 그래픽 모양을 수정 하려는 경우 재정의 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드.  
   
     > [!NOTE]
-    >  재정의 <xref:System.Windows.Forms.Control.OnPaint%2A> 모든 컨트롤 모양을 수정할 수를 허용 하지 것입니다. 모든 그리기가 Windows가 수행 되는 컨트롤 (예를 들어 <xref:System.Windows.Forms.TextBox>) 절대 호출 하지 해당 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드, 따라서 사용 하지 것입니다는 사용자 지정 코드 및 합니다. 있는지 수정할 특정 컨트롤에 대 한 도움말을 참고는 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드는 사용할 수 있습니다. 모든 Windows Form 컨트롤의 목록은 [Windows Forms에서 사용할 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)을 참조하세요. 컨트롤에 없는 경우 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드가 나열을 변경할 수 없습니다 모양을이 메서드를 재정의 합니다. 사용자 지정 그리기에 대한 자세한 내용은 [사용자 지정 컨트롤 그리기 및 렌더링](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)을 참조하세요.  
+    >  재정의 <xref:System.Windows.Forms.Control.OnPaint%2A> 모든 컨트롤의 모양을 수정 하려는 허용 하지 것입니다. 모든 Windows 수행한 그리기가 있는 해당 컨트롤 (예를 들어 <xref:System.Windows.Forms.TextBox>)를 호출 하지 않습니다 해당 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드를 따라서 사용 하지 것입니다 사용자 지정 코드 및 합니다. 경우를 확인 하려면 수정 하려는 특정 컨트롤에 대 한 도움말 설명서를 참조 합니다 <xref:System.Windows.Forms.Control.OnPaint%2A> 방법은 사용할 수 있습니다. 모든 Windows Form 컨트롤의 목록은 [Windows Forms에서 사용할 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)을 참조하세요. 컨트롤에 없는 경우 <xref:System.Windows.Forms.Control.OnPaint%2A> 구성원 메서드로 나열 하 여 변경할 수 없습니다 모양을이 메서드를 재정의 합니다. 사용자 지정 그리기에 대한 자세한 내용은 [사용자 지정 컨트롤 그리기 및 렌더링](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)을 참조하세요.  
   
     ```vb  
     Protected Overrides Sub OnPaint(ByVal e As _  

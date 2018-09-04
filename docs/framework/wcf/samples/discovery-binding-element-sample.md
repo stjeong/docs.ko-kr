@@ -2,12 +2,12 @@
 title: Discovery 바인딩 Element 샘플
 ms.date: 03/30/2017
 ms.assetid: af513015-85bf-417b-8729-1bdff77ff6d6
-ms.openlocfilehash: 853f5cebfd745b3413d605dcfbf0e395e103b4f1
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: d906d9a389c50095f2af5d52e3874c3e43199e68
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805670"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43535779"
 ---
 # <a name="discovery-binding-element-sample"></a>Discovery 바인딩 Element 샘플
 이 샘플에서는 검색 클라이언트 바인딩 요소를 사용하여 서비스를 검색하는 방법을 보여 줍니다. 개발자는 이 기능을 사용하여 기존 클라이언트 채널 스택에 검색 클라이언트 채널을 추가할 수 있으므로 프로그래밍 모델을 매우 직관적으로 만들 수 있습니다. 연결된 채널이 열리면 검색을 사용하여 서비스의 주소가 확인됩니다. 이 샘플은 다음 프로젝트로 구성되어 있습니다.  
@@ -23,14 +23,14 @@ ms.locfileid: "33805670"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\DiscoveryBindingElement`  
   
 ## <a name="calculatorservice"></a>CalculatorService  
  이 프로젝트에는 `ICalculatorService` 계약을 구현하는 간단한 계산기 서비스가 포함되어 있습니다.  
   
- 다음 App.config 파일은 서비스 동작과 검색 끝점에 `<serviceDiscovery>` 동작을 추가하는 데 사용됩니다.  
+ 다음 App.config 파일은 서비스 동작과 검색 엔드포인트에 `<serviceDiscovery>` 동작을 추가하는 데 사용됩니다.  
   
 ```xml  
 <system.serviceModel>  
@@ -51,7 +51,7 @@ ms.locfileid: "33805670"
   </system.serviceModel>  
 ```  
   
- 이렇게 하면 서비스와 해당 끝점이 검색 가능하게 됩니다. CalculatorService는 NetTcpBinding 바인딩을 사용하여 하나의 끝점을 추가하는 자체 호스팅 서비스입니다. 또한 다음 코드와 같이 끝점에 `EndpointDiscoveryBehavior`를 추가하고 범위를 지정합니다.  
+ 이렇게 하면 서비스와 해당 엔드포인트가 검색 가능하게 됩니다. CalculatorService는 NetTcpBinding 바인딩을 사용하여 하나의 엔드포인트를 추가하는 자체 호스팅 서비스입니다. 또한 다음 코드와 같이 엔드포인트에 `EndpointDiscoveryBehavior`를 추가하고 범위를 지정합니다.  
   
 ```  
 // Add a NET.TCP endpoint and add a scope to that endpoint.  
@@ -82,7 +82,7 @@ static CustomBinding CreateCustomBindingWithDiscoveryElement()
             return customBinding; }  
 ```  
   
- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>가 인스턴스화된 후 개발자는 서비스를 검색할 때 사용할 조건을 지정합니다. 이 경우 검색 찾기 조건은 `ICalculatorService` 형식입니다. 또한 개발자는 서비스를 찾을 위치를 지정하는 <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider>를 반환하는 <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>를 지정합니다. <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider>는 새 <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> 인스턴스를 반환합니다. 자세한 내용은 참조 [사용자 지정 바인딩을 사용 하 여 검색 클라이언트 채널](../../../../docs/framework/wcf/feature-details/using-a-custom-binding-with-the-discovery-client-channel.md)합니다.  
+ <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>가 인스턴스화된 후 개발자는 서비스를 검색할 때 사용할 조건을 지정합니다. 이 경우 검색 찾기 조건은 `ICalculatorService` 형식입니다. 또한 개발자는 서비스를 찾을 위치를 지정하는 <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider>를 반환하는 <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>를 지정합니다. <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider>는 새 <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> 인스턴스를 반환합니다. 자세한 내용은 [Discovery 클라이언트 채널을 사용 하 여 사용자 지정 바인딩에서 사용 하 여](../../../../docs/framework/wcf/feature-details/using-a-custom-binding-with-the-discovery-client-channel.md)입니다.  
   
 ```  
 // Extend DiscoveryEndpointProvider class to change the default DiscoveryEndpoint  
@@ -102,13 +102,13 @@ static CustomBinding CreateCustomBindingWithDiscoveryElement()
 > [!NOTE]
 >  <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>는 바인딩 스택의 맨 위에 있어야 합니다. 실제 주소는 검색 클라이언트 채널에만 있으므로 <xref:System.ServiceModel.Channels.BindingElement>의 맨 위에 있는 모든 <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>는 만드는 채널 팩터리나 채널에서 `EndpointAddress` 또는 `Via` 속성을 사용하지 않는지 확인해야 합니다.  
   
- 그런 다음 이 사용자 지정 바인딩과 끝점 주소를 전달하여 `CalculatorClient`를 인스턴스화할 수 있습니다.  
+ 그런 다음 이 사용자 지정 바인딩과 엔드포인트 주소를 전달하여 `CalculatorClient`를 인스턴스화할 수 있습니다.  
   
 ```  
 CalculatorServiceClient client = new CalculatorServiceClient(CreateCustomBindingWithDiscoveryElement(), DiscoveryClientBindingElement.DiscoveryEndpointAddress);  
 ```  
   
- Discovery 클라이언트 채널을 사용하는 경우 이전에 지정한 상수 끝점 주소가 전달됩니다. 이제 런타임 시 Discovery 클라이언트 채널이 검색 조건으로 지정한 서비스를 찾아서 연결해 줍니다. 서비스 및 클라이언트에서 연결을 설정하려면 동일한 기본 바인딩 스택도 있어야 합니다.  
+ Discovery 클라이언트 채널을 사용하는 경우 이전에 지정한 상수 엔드포인트 주소가 전달됩니다. 이제 런타임 시 Discovery 클라이언트 채널이 검색 조건으로 지정한 서비스를 찾아서 연결해 줍니다. 서비스 및 클라이언트에서 연결을 설정하려면 동일한 기본 바인딩 스택도 있어야 합니다.  
   
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   

@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 7e828566-fffe-4d38-abb2-4d68fd73f663
 ms.openlocfilehash: a1718429360d79c4628e9948eb1b052c3ac01964
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43423705"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43539934"
 ---
 # <a name="performing-an-xpath-query-on-a-dataset"></a>데이터 집합에서 XPath 쿼리 수행
 동기화 관계 <xref:System.Data.DataSet> 및 <xref:System.Xml.XmlDataDocument> XML을 활용할 수 있습니다와 같은 서비스 XML Path Language (XPath) 쿼리를 액세스 하는 합니다 **XmlDataDocument** 특정 기능을 수행할 수 있습니다 액세스할 때 보다 더 편리 하 게 합니다 **데이터 집합** 직접. 예를 들어, 사용 하는 대신를 **선택** 메서드를 <xref:System.Data.DataTable> 다른 테이블에 관계를 탐색 하는 **데이터 집합**에서 XPath 쿼리를 수행할 수 있습니다는 **XmlDataDocument**  와 동기화 된 합니다 **데이터 집합**, 형태로 XML 요소의 목록을 가져오려면는 <xref:System.Xml.XmlNodeList>합니다. 노드를 **XmlNodeList**로 캐스팅 <xref:System.Xml.XmlElement> 노드를 전달할 수 있습니다 합니다 **GetRowFromElement** 메서드의 **XmlDataDocument**일치 하는 반환 하려는 경우 <xref:System.Data.DataRow> 동기화 된 테이블의 행에 대 한 참조가 **데이터 집합**합니다.  

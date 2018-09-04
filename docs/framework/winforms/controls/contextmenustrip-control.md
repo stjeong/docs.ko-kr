@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ContextMenuStrip control [Windows Forms]
 - shortcut menus
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
-ms.openlocfilehash: 45b37a3cc542295368a9304cb49078d88c347228
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c5f2246ef70ed627ecd311c1f3e5666afcd9b5ef
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33525538"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43552181"
 ---
 # <a name="contextmenustrip-control"></a>ContextMenuStrip 컨트롤
 <xref:System.Windows.Forms.ContextMenuStrip> 컨트롤은 컨트롤에 연결하는 바로 가기 메뉴를 제공합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "33525538"
  [방법: ContextMenuStrip Opening 이벤트 처리](../../../../docs/framework/winforms/controls/how-to-handle-the-contextmenustrip-opening-event.md)  
  <xref:System.Windows.Forms.ToolStripDropDown.Opening> 이벤트를 처리하여 <xref:System.Windows.Forms.ContextMenuStrip> 컨트롤의 동작을 사용자 지정하는 방법을 설명합니다.  
   
- 또한 참조 [ContextMenuStrip 작업 대화 상자](http://msdn.microsoft.com/library/ms233646\(v=vs.110\)) 또는 [ContextMenuStrip 항목 컬렉션 편집기](http://msdn.microsoft.com/library/ms233641\(v=vs.110\))합니다.  
+ 도 참조 하세요 [ContextMenuStrip 작업 대화 상자](https://msdn.microsoft.com/library/ms233646\(v=vs.110\)) 하거나 [ContextMenuStrip 항목 컬렉션 편집기](https://msdn.microsoft.com/library/ms233641\(v=vs.110\))합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Windows.Forms.MenuStrip>  

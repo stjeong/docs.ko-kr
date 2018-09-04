@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: db8a557a-fef8-4f4f-bb91-8cff7250ee25
 ms.openlocfilehash: 17b014a5a56a2c60359f6fb0b60df29feb97f2a7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43419027"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529413"
 ---
 # <a name="getting-started"></a>시작
 사용 하 여 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]를 사용할 수는 [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] 메모리 내 컬렉션을 액세스 하는 것 처럼 데이터베이스를 SQL에 액세스 하는 기술입니다.  

@@ -3,11 +3,11 @@ title: 고급 포맷 선택
 ms.date: 03/30/2017
 ms.assetid: e02d9082-4d55-41d8-9329-98f6d1c77f06
 ms.openlocfilehash: e5c396ce22e9021d453a70f3826b0bd3cc6aaf42
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466625"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43535092"
 ---
 # <a name="advanced-format-selection"></a>고급 포맷 선택
 이 샘플에는 나가는 응답의 새로운 형식을 지원 하도록 Windows Communication Foundation (WCF) REST 프로그래밍 모델을 확장 하는 방법을 보여 줍니다. 또한 이 샘플에서는 T4 템플릿을 사용하여 응답을 XHTML 페이지로 반환하고, 뷰 스타일 프로그래밍 모델을 구현하는 방법을 보여 줍니다.  

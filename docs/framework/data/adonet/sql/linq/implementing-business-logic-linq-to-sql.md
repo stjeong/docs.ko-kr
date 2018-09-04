@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
-ms.openlocfilehash: 6216a3d6dd21f1dcb3348565a9f1870be7c7905a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d739e4bba96873740c53c07eccf687b060d82003
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33362053"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43552233"
 ---
 # <a name="implementing-business-logic-linq-to-sql"></a>비즈니스 논리 구현(LINQ to SQL)
 이 항목에서 "비즈니스 논리"는 데이터베이스에서 데이터를 삽입, 업데이트 또는 삭제하기 전에 데이터에 적용하는 모든 사용자 지정 규칙 또는 유효성 검사 테스트를 의미합니다. 비즈니스 논리를 "비즈니스 규칙" 또는 "도메인 논리"라고도 합니다. N 계층 응용 프로그램의 경우 비즈니스 논리는 일반적으로 프레젠테이션 계층이나 데이터 액세스 계층과 독립적으로 수정될 수 있도록 논리 계층으로 디자인됩니다. 비즈니스 논리는 데이터베이스 데이터의 업데이트, 삽입 또는 삭제 전과 후에 데이터 액세스 계층에서 호출될 수 있습니다.  
@@ -69,7 +69,7 @@ public partial class MyNorthWindDataContext : System.Data.Linq.DataContext
         #endregion  
 ```  
   
- 부분 클래스에 Insert, Update 및 Delete 메서드를 구현할 경우 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 런타임에서는 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 호출되면 기본 메서드 대신 사용자가 구현한 메서드를 호출합니다. 이렇게 하면 만들기, 읽기, 업데이트 및 삭제 작업의 기본 동작을 재정의할 수 있습니다. 자세한 내용은 참조 [연습: 업데이트 및 삭제 동작 엔터티 클래스의 삽입을 사용자 지정](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)합니다.  
+ 부분 클래스에 Insert, Update 및 Delete 메서드를 구현할 경우 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 런타임에서는 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>가 호출되면 기본 메서드 대신 사용자가 구현한 메서드를 호출합니다. 이렇게 하면 만들기, 읽기, 업데이트 및 삭제 작업의 기본 동작을 재정의할 수 있습니다. 자세한 내용은 [연습: 업데이트 및 삭제 동작 엔터티 클래스의 삽입을 사용자 지정](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)합니다.  
   
  `OnCreated` 메서드는 클래스 생성자에서 호출됩니다.  
   
@@ -155,7 +155,7 @@ public string CustomerID
 }  
 ```  
   
- 사용자가 작성하는 클래스 부분에 메서드의 구현 정의를 작성할 수 있습니다. 입력 한 후 Visual Studio에서 `partial` 메서드 정의 클래스의 다른 부분에 대 한 IntelliSense 나타납니다.  
+ 사용자가 작성하는 클래스 부분에 메서드의 구현 정의를 작성할 수 있습니다. 입력 한 후 Visual Studio에서 `partial` 클래스의 다른 부분에 사용 된 메서드 정의 대 한 IntelliSense 나타납니다.  
   
 ```vb  
 Partial Public Class Customer  
@@ -181,7 +181,7 @@ partial class Customer
   
  [연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작을 사용자 지정](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
- [연습: 엔터티 클래스에 유효성 검사 추가](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
+ [연습: 엔터티 클래스에 유효성 검사 추가](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   
 ## <a name="see-also"></a>참고 항목  
  [Partial 클래스 및 메서드](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)  

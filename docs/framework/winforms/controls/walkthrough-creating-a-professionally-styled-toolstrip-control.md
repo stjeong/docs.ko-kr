@@ -10,57 +10,57 @@ helpviewer_keywords:
 - toolbars [Windows Forms], walkthroughs
 - ToolStrip control [Windows Forms], creating professionally styled controls
 ms.assetid: b52339ae-f1d3-494e-996e-eb455614098a
-ms.openlocfilehash: 2d2443f1f7153ed35aecbbb9d69c9e1421269e24
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6435f33489be1355313e43a046b0e3169e1eaea3
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33541608"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43538567"
 ---
 # <a name="walkthrough-creating-a-professionally-styled-toolstrip-control"></a>연습: 전문적인 스타일의 ToolStrip 컨트롤 만들기
-응용 프로그램을 제공할 수 있습니다 <xref:System.Windows.Forms.ToolStrip> 에서 파생 되는 고유한 클래스를 작성 하 여 전문적인 모양과 동작을 제어는 <xref:System.Windows.Forms.ToolStripProfessionalRenderer> 유형입니다.  
+응용 프로그램을 제공할 수 있습니다 <xref:System.Windows.Forms.ToolStrip> 에서 파생 된 고유한 클래스를 작성 하 여 전문적인 모양 및 동작을 제어 합니다 <xref:System.Windows.Forms.ToolStripProfessionalRenderer> 형식입니다.  
   
- 이 연습에서는 사용 하는 방법을 보여 줍니다. <xref:System.Windows.Forms.ToolStrip> 비슷한 복합 컨트롤을 만드는 컨트롤은 **탐색 창** Microsoft® Outlook®에서 제공 합니다. 같은 작업을이 연습에서 설명 합니다.  
+ 이 연습에 사용 하는 방법을 보여 줍니다 <xref:System.Windows.Forms.ToolStrip> 와 비슷한 복합 컨트롤을 만드는 컨트롤을 **탐색 창** Microsoft® Outlook®에서 제공 합니다. 다음 태스크를이 연습에 설명 되어 있습니다.  
   
--   Windows 컨트롤 라이브러리 프로젝트를 만듭니다.  
+-   Windows 컨트롤 라이브러리 프로젝트를 만드는 중입니다.  
   
 -   StackView 컨트롤을 디자인 합니다.  
   
 -   사용자 지정 렌더러를 구현 합니다.  
   
- 작업을 완료 하는 경우 Microsoft Office® XP 컨트롤의 전문적인 모양으로 다시 사용할 수 있는 사용자 지정 클라이언트 제어를 해야 합니다.  
+ 작업을 완료 하는 경우에 전문적인 모양의 Microsoft Office® XP 컨트롤을 사용 하 여 재사용 가능한 사용자 지정 클라이언트 컨트롤을 해야 합니다.  
   
- 단일 목록으로이 항목의 코드를 복사 하려면 참조 [하는 방법: 전문적인 스타일의 ToolStrip 컨트롤 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-professionally-styled-toolstrip-control.md)합니다.  
+ 참조를 단일 목록으로이 항목의 코드를 복사할 [방법: 전문적인 스타일의 ToolStrip 컨트롤 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-professionally-styled-toolstrip-control.md)합니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 사항이 필요합니다.  
   
--   충분 한 권한이을 만들고 Visual Studio가 설치 된 컴퓨터에서 Windows Forms 응용 프로그램 프로젝트를 실행할 수 있습니다.  
+-   만들고 Visual Studio를 설치한 컴퓨터에서 Windows Forms 응용 프로그램 프로젝트를 실행 하는 일을 할 수 있는 충분 한 권한입니다.  
   
 ## <a name="creating-a-windows-control-library-project"></a>Windows 컨트롤 라이브러리 프로젝트 만들기  
- 첫 번째 단계는 컨트롤 라이브러리 프로젝트를 만드는 것입니다.  
+ 첫 번째 단계에서는 컨트롤 라이브러리 프로젝트를 만드는 것입니다.  
   
 #### <a name="to-create-the-control-library-project"></a>컨트롤 라이브러리 프로젝트를 만들려면  
   
 1.  라는 새 Windows 컨트롤 라이브러리 프로젝트를 만듭니다 `StackViewLibrary`합니다.  
   
-2.  **솔루션 탐색기**, 선택한 언어에 따라 이름이 "UserControl1.cs" 또는 "UserControl1.vb", 원본 파일을 삭제 하 여 프로젝트의 기본 컨트롤을 삭제 합니다.  
+2.  **솔루션 탐색기**, 선택한 언어에 따라 "UserControl1.cs" 또는 "UserControl1.vb" 라는 소스 파일을 삭제 하 여 프로젝트의 기본 컨트롤을 삭제 합니다.  
   
-     자세한 내용은 참조 [NIB: 방법: 제거, 삭제 및 항목 제외](http://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73)합니다.  
+     자세한 내용은 [NIB: 방법: 제거, 삭제 및 항목 제외](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73)합니다.  
   
-3.  새로 추가 <xref:System.Windows.Forms.UserControl> 항목의 **StackViewLibrary** 프로젝트. 새 소스 파일의 기본 이름 지정 `StackView`합니다.  
+3.  새 <xref:System.Windows.Forms.UserControl> 항목을 **StackViewLibrary** 프로젝트입니다. 새 소스 파일의 기본 이름을 지정 `StackView`합니다.  
   
 ## <a name="designing-the-stackview-control"></a>StackView 컨트롤 디자인  
- `StackView` 컨트롤은 하나의 자식에서 합성 컨트롤 <xref:System.Windows.Forms.ToolStrip> 제어 합니다. 복합 컨트롤에 대 한 자세한 내용은 참조 [종류의 사용자 지정 컨트롤](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)합니다.  
+ 합니다 `StackView` 자식이 하나를 사용 하 여 복합 컨트롤 <xref:System.Windows.Forms.ToolStrip> 제어 합니다. 복합 컨트롤에 대 한 자세한 내용은 참조 하세요. [종류의 사용자 지정 컨트롤](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)합니다.  
   
 #### <a name="to-design-the-stackview-control"></a>StackView 컨트롤을 디자인 하려면  
   
-1.  **도구 상자**를 끌어 한 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 디자인 화면입니다.  
+1.  **도구 상자**를 끌어를 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 디자인 화면입니다.  
   
-2.  에 **속성** 창의 설정의 <xref:System.Windows.Forms.ToolStrip> 다음 표에 따라 컨트롤의 속성입니다.  
+2.  에 **속성** 창에서 <xref:System.Windows.Forms.ToolStrip> 다음 표에 따라 컨트롤의 속성입니다.  
   
     |속성|값|  
     |--------------|-----------|  
@@ -73,9 +73,9 @@ ms.locfileid: "33541608"
     |안쪽 여백|`0, 7, 0, 0`|  
     |RenderMode|<xref:System.Windows.Forms.ToolStripRenderMode.Professional>|  
   
-3.  Windows Forms 디자이너에서 클릭는 <xref:System.Windows.Forms.ToolStrip> 컨트롤의 **추가** 단추와 추가 <xref:System.Windows.Forms.ToolStripButton> 에 `stackStrip` 컨트롤입니다.  
+3.  Windows Forms 디자이너를 클릭 합니다 <xref:System.Windows.Forms.ToolStrip> 컨트롤의 **추가** 단추를 추가 <xref:System.Windows.Forms.ToolStripButton> 에 `stackStrip` 컨트롤.  
   
-4.  에 **속성** 창의 설정의 <xref:System.Windows.Forms.ToolStripButton> 다음 표에 따라 컨트롤의 속성입니다.  
+4.  에 **속성** 창에서 <xref:System.Windows.Forms.ToolStripButton> 다음 표에 따라 컨트롤의 속성입니다.  
   
     |속성|값|  
     |--------------|-----------|  
@@ -91,18 +91,18 @@ ms.locfileid: "33541608"
     |텍스트|**메일**|  
     |TextAlign|<xref:System.Drawing.ContentAlignment.MiddleLeft>|  
   
-5.  세 개의 추가 대 한 7 단계를 반복 <xref:System.Windows.Forms.ToolStripButton> 컨트롤입니다.  
+5.  세 개 이상에 대 한 7 단계를 반복 <xref:System.Windows.Forms.ToolStripButton> 컨트롤입니다.  
   
-     컨트롤 이름을 `calendarStackButton`, `contactsStackButton`, 및 `tasksStackButton`합니다. 값을 설정할는 <xref:System.Windows.Forms.Control.Text%2A> 속성을 **달력**, **연락처**, 및 **작업**각각.  
+     컨트롤 이름을 `calendarStackButton`하십시오 `contactsStackButton`, 및 `tasksStackButton`합니다. 값을 설정 합니다 <xref:System.Windows.Forms.Control.Text%2A> 속성을 **달력**, **연락처**, 및 **작업**, 각각.  
   
 ## <a name="handling-events"></a>이벤트 처리  
- 두 개의 이벤트를 확인 해야는 `StackView` 컨트롤이 올바르게 동작 합니다. 처리는 <xref:System.Windows.Forms.UserControl.Load> 이벤트를 올바르게 지정 합니다. 처리는 <xref:System.Windows.Forms.ToolStripItem.Click> 각각에 대 한 이벤트 <xref:System.Windows.Forms.ToolStripButton> 제공 하는 `StackView` 와 유사한 상태 동작을 제어는 <xref:System.Windows.Forms.RadioButton> 제어 합니다.  
+ 두 이벤트를 확인 해야 합니다 `StackView` 컨트롤이 올바르게 동작 합니다. 처리는 <xref:System.Windows.Forms.UserControl.Load> 컨트롤을 올바르게 배치 하는 이벤트입니다. 처리를 <xref:System.Windows.Forms.ToolStripItem.Click> 각각에 대 한 이벤트 <xref:System.Windows.Forms.ToolStripButton> 제공 하는 `StackView` 비슷합니다 상태 동작을 제어를 <xref:System.Windows.Forms.RadioButton> 컨트롤입니다.  
   
 #### <a name="to-handle-events"></a>이벤트를 처리 하려면  
   
 1.  Windows Forms 디자이너에서 선택 된 `StackView` 제어 합니다.  
   
-2.  에 **속성** 창 클릭 **이벤트**합니다.  
+2.  에 **속성** 창에서 클릭 **이벤트**합니다.  
   
 3.  Load 이벤트 생성에 두 번 클릭 하 여 `StackView_Load` 이벤트 처리기입니다.  
   
@@ -113,76 +113,76 @@ ms.locfileid: "33541608"
   
 5.  Windows Forms 디자이너에서 선택 된 `mailStackButton` 제어 합니다.  
   
-6.  에 **속성** 창 클릭 **이벤트**합니다.  
+6.  에 **속성** 창에서 클릭 **이벤트**합니다.  
   
-7.  Click 이벤트를 두 번 클릭 합니다.  
+7.  클릭 이벤트를 두 번 클릭 합니다.  
   
-     Windows Forms 디자이너에서는 오류가 발생 하는 `mailStackButton_Click` 이벤트 처리기입니다.  
+     Windows Forms 디자이너에서 생성 된 `mailStackButton_Click` 이벤트 처리기입니다.  
   
-8.  이름 바꾸기는 `mailStackButton_Click` 이벤트 처리기를 `stackButton_Click`합니다.  
+8.  이름 바꾸기는 `mailStackButton_Click` 이벤트 처리기를 `stackButton_Click`입니다.  
   
-     자세한 내용은 참조 [하는 방법: (Visual Basic) 식별자 이름 바꾸기](http://msdn.microsoft.com/library/e5a5edf8-3dba-4119-81f4-fc2aba180e0c)합니다.  
+     자세한 내용은 [방법: 식별자 (Visual Basic) 이름 바꾸기](https://msdn.microsoft.com/library/e5a5edf8-3dba-4119-81f4-fc2aba180e0c)합니다.  
   
-9. 에 다음 코드를 삽입은 `stackButton_Click` 이벤트 처리기입니다.  
+9. 다음 코드를 삽입 합니다 `stackButton_Click` 이벤트 처리기입니다.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StackView#4](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/CS/StackView.cs#4)]
      [!code-vb[System.Windows.Forms.ToolStrip.StackView#4](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#4)]  
   
 10. Windows Forms 디자이너에서 선택 된 `calendarStackButton` 제어 합니다.  
   
-11. 에 **속성** 창의을 Click 이벤트를 설정의 `stackButton_Click` 이벤트 처리기입니다.  
+11. 에 **속성** 창에서 클릭 이벤트로는 `stackButton_Click` 이벤트 처리기입니다.  
   
-12. 10과 11에 대 한 단계를 반복 하는 `contactsStackButton` 및 `tasksStackButton` 컨트롤입니다.  
+12. 10 및 11 for 단계를 반복 합니다 `contactsStackButton` 고 `tasksStackButton` 컨트롤입니다.  
   
-## <a name="defining-icons"></a>아이콘 정의  
- 각 `StackView` 단추에 연결 된 아이콘입니다. 편의 위해 각 아이콘으로 표현 되는 Base64 인코딩 문자열 하기 전에 deserialize 되는 한 <xref:System.Drawing.Bitmap> 에서 만들어집니다. 프로덕션 환경에서 리소스로 바운딩되어야 비트맵 데이터를 저장 하 고 Windows Forms 디자이너에 아이콘이 나타납니다. 자세한 내용은 참조 [하는 방법: Windows Forms에 배경 이미지 추가](http://msdn.microsoft.com/library/7a509ba2-055c-4ae6-b88a-54625c6d9aff)합니다.  
+## <a name="defining-icons"></a>정의 아이콘  
+ 각 `StackView` 단추에 연결 된 아이콘입니다. 편의 위해 각 아이콘으로 표시 됩니다 Base64로 인코딩된 문자열로 전에 deserialize 되는 <xref:System.Drawing.Bitmap> 에서 만들어집니다. 프로덕션 환경에서 리소스로 비트맵 데이터를 저장 하 고 Windows Forms 디자이너에 아이콘이 나타납니다. 자세한 내용은 [방법: Windows Forms에 배경 이미지 추가](https://msdn.microsoft.com/library/7a509ba2-055c-4ae6-b88a-54625c6d9aff)합니다.  
   
 #### <a name="to-define-icons"></a>아이콘을 정의 하려면  
   
-1.  코드 편집기에서 다음 코드를 삽입은 `StackView` 클래스 정의 합니다. 이 코드에 대 한 비트맵을 초기화는 <xref:System.Windows.Forms.ToolStripButton> 아이콘입니다.  
+1.  코드 편집기에서 다음 코드를 삽입 합니다 `StackView` 클래스 정의 합니다. 이 코드에 대 한 비트맵을 초기화 합니다 <xref:System.Windows.Forms.ToolStripButton> 아이콘입니다.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StackView#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/CS/StackView.cs#2)]
      [!code-vb[System.Windows.Forms.ToolStrip.StackView#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#2)]  
   
-2.  에 대 한 호출 추가 `InitializeImages` 에서 메서드는 `StackView` 클래스 생성자입니다.  
+2.  호출을 추가 합니다 `InitializeImages` 의 메서드는 `StackView` 클래스 생성자입니다.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StackView#5](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/CS/StackView.cs#5)]
      [!code-vb[System.Windows.Forms.ToolStrip.StackView#5](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#5)]  
   
-## <a name="implementing-a-custom-renderer"></a>사용자 지정 렌더러를 구현합니다.  
- 대부분의 요소를 사용자 지정할 수는 `StackView` 에서 파생 되는 클래스를 구현 제어는 <xref:System.Windows.Forms.ToolStripRenderer> 클래스입니다. 이 절차에서는 구현는 <xref:System.Windows.Forms.ToolStripProfessionalRenderer> 그립을 사용자 지정 하며 그라데이션 배경을 그리는 <xref:System.Windows.Forms.ToolStripButton> 컨트롤입니다.  
+## <a name="implementing-a-custom-renderer"></a>사용자 지정 렌더러 구현  
+ 대부분의 요소를 사용자 지정할 수 있습니다 합니다 `StackView` 컨트롤에서 파생 되는 클래스를 구현 합니다 <xref:System.Windows.Forms.ToolStripRenderer> 클래스입니다. 이 절차에서는 구현를 <xref:System.Windows.Forms.ToolStripProfessionalRenderer> 그립을 사용자 지정 및 그라데이션 배경을 그리는 클래스는 <xref:System.Windows.Forms.ToolStripButton> 컨트롤입니다.  
   
 #### <a name="to-implement-a-custom-renderer"></a>사용자 지정 렌더러를 구현 하려면  
   
-1.  에 다음 코드를 삽입는 `StackView` 정의 제어 합니다.  
+1.  다음 코드를 삽입 합니다 `StackView` 정의 제어 합니다.  
   
-     이 대 한 정의는 `StackRenderer` 재정의 하는 <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip>, <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripBorder>, 및 <xref:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground> 메서드를 사용자 지정 모양을 생성 합니다.  
+     정의 대 한 합니다 `StackRenderer` 클래스를 재정의 하는 <xref:System.Windows.Forms.ToolStripRenderer.RenderGrip>, <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripBorder>, 및 <xref:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground> 사용자 지정 모양을 생성 하는 방법.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StackView#10](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/CS/StackView.cs#10)]
      [!code-vb[System.Windows.Forms.ToolStrip.StackView#10](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#10)]  
   
-2.  에 `StackView` 컨트롤의 생성자의 새 인스턴스를 만들고는 `StackRenderer` 클래스 하 고이 인스턴스를 할당는 `stackStrip` 컨트롤의 <xref:System.Windows.Forms.ToolStrip.Renderer%2A> 속성입니다.  
+2.  에 `StackView` 컨트롤의 생성자의 새 인스턴스를 만듭니다를 `StackRenderer` 클래스 및이 인스턴스를 할당 합니다 `stackStrip` 컨트롤의 <xref:System.Windows.Forms.ToolStrip.Renderer%2A> 속성.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StackView#5](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/CS/StackView.cs#5)]
      [!code-vb[System.Windows.Forms.ToolStrip.StackView#5](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#5)]  
   
 ## <a name="testing-the-stackview-control"></a>StackView 컨트롤 테스트  
- `StackView` 컨트롤에서 파생 되는 <xref:System.Windows.Forms.UserControl> 클래스입니다. 따라서 사용 하 여 컨트롤을 테스트할 수 있습니다는 **UserControl Test Container**합니다. 자세한 내용은 [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)를 참조하세요.  
+ 합니다 `StackView` 컨트롤에서 파생 되는 <xref:System.Windows.Forms.UserControl> 클래스입니다. 따라서 컨트롤을 테스트할 수 있습니다 합니다 **UserControl 테스트 컨테이너**합니다. 자세한 내용은 [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)를 참조하세요.  
   
 #### <a name="to-test-the-stackview-control"></a>StackView 컨트롤을 테스트 하려면  
   
-1.  F5 키를 눌러 프로젝트를 빌드하고 시작 하는 **UserControl Test Container**합니다.  
+1.  F5 키를 눌러 프로젝트를 빌드하고 시작 합니다 **UserControl 테스트 컨테이너**합니다.  
   
-2.  단추 위로 포인터를 이동는 `StackView` 컨트롤을 선택한 상태로의 모양을 보려면 단추를 클릭 합니다.  
+2.  단추 위로 포인터를 `StackView` 컨트롤을 선택한 상태로의 모양을 확인 하려면 단추를 클릭 합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- 이 연습에서는 Office XP 컨트롤의 전문적인 모양으로 다시 사용할 수 있는 사용자 지정 클라이언트 컨트롤을 만들었습니다. 사용할 수는 <xref:System.Windows.Forms.ToolStrip> 패밀리 등과 같은 용도로 컨트롤:  
+ 이 연습에서는 전문적인 모양의 Office XP 컨트롤을 사용 하 여 재사용 가능한 사용자 지정 클라이언트 컨트롤을 만들었습니다. 사용할 수는 <xref:System.Windows.Forms.ToolStrip> 다양 한 용도로 다른 컨트롤의 패밀리:  
   
--   사용자 컨트롤에 대 한 바로 가기 메뉴 만들기 <xref:System.Windows.Forms.ContextMenuStrip>합니다. 자세한 내용은 참조 [ContextMenu 구성 요소 개요](../../../../docs/framework/winforms/controls/contextmenu-component-overview-windows-forms.md)합니다.  
+-   사용 하 여 컨트롤에 대 한 바로 가기 메뉴를 만들 <xref:System.Windows.Forms.ContextMenuStrip>합니다. 자세한 내용은 [ContextMenu 구성 요소 개요](../../../../docs/framework/winforms/controls/contextmenu-component-overview-windows-forms.md)합니다.  
   
--   자동으로 채워지는 표준 메뉴가 있는 폼을 만듭니다. 자세한 내용은 참조 [연습: 폼에 표준 메뉴 항목 제공](../../../../docs/framework/winforms/controls/walkthrough-providing-standard-menu-items-to-a-form.md)합니다.  
+-   자동으로 채워진된 표준 메뉴를 사용 하 여 폼을 만듭니다. 자세한 내용은 [연습: 양식에 표준 메뉴 항목 제공](../../../../docs/framework/winforms/controls/walkthrough-providing-standard-menu-items-to-a-form.md)합니다.  
   
--   도킹 된 다중 문서 MDI (인터페이스) 폼 만들기 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다. 자세한 내용은 참조 [하는 방법: 메뉴 병합 및 ToolStrip 컨트롤 MDI 폼 만들기](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)합니다.  
+-   도킹 된 여러 문서 MDI (인터페이스) 양식을 만듭니다 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다. 자세한 내용은 [방법: 메뉴 병합 및 ToolStrip 컨트롤을 사용 하 여 MDI 폼 만들기](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Forms.MenuStrip>  

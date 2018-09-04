@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e69625184aca7d1ebd4bb0b7dc7c4958596b906a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43476094"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43536387"
 ---
 # <a name="beginenumeration-function"></a>BeginEnumeration 함수
 개체에 대해 사용할 수 있는 방법의 열거형을 시작합니다.  

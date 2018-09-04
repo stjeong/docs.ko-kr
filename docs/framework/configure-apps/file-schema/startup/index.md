@@ -10,11 +10,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: 68f37e3efca784b94be90d5779c9bc402f144448
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43465475"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530336"
 ---
 # <a name="startup-settings-schema"></a>시작 설정 스키마
 시작 설정은 응용 프로그램을 실행해야 하는 공용 언어 런타임의 버전을 지정합니다.  

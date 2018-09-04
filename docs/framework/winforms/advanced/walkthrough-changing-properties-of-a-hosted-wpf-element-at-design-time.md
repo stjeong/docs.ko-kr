@@ -7,12 +7,12 @@ helpviewer_keywords:
 - WPF content [Windows Forms], hosting in Windows Forms
 - interoperability [WPF]
 ms.assetid: a1f7a90c-0bbb-4781-8c3c-8cc8bef2488d
-ms.openlocfilehash: d17273f52d0cef118b79fef03af72522f6677073
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 15cab9266af5840aa4b37a62b71bd5010b7a859a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529823"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43535644"
 ---
 # <a name="walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time"></a>연습: 디자인 타임에 호스팅된 WPF 요소의 속성 변경
 이 연습에서는 Windows Forms에 호스트된 WPF(Windows Presentation Foundation) 컨트롤의 속성 값을 변경하는 방법을 보여 줍니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "33529823"
 -   Visual Studio용 WPF 디자이너를 사용하여 속성 값을 변경합니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -43,16 +43,16 @@ ms.locfileid: "33529823"
   
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면  
   
--   Visual Basic 또는 Visual C# 라는 새 Windows Forms 응용 프로그램 프로젝트 만들기 `WpfHost`합니다.  
+-   Visual Basic 또는 Visual C#에서 새 Windows Forms 응용 프로그램 프로젝트를 만들 `WpfHost`합니다.  
   
 ## <a name="creating-the-wpf-control"></a>WPF 컨트롤 만들기  
  프로젝트에 WPF 컨트롤을 추가한 후 폼에 정렬할 수 있습니다.  
   
 #### <a name="to-create-wpf-controls"></a>WPF 컨트롤을 만들려면  
   
-1.  프로젝트에 새 WPF <xref:System.Windows.Controls.UserControl>을 추가합니다. 컨트롤 형식의 기본 이름인 `UserControl1.xaml`을 사용합니다. 자세한 내용은 참조 [연습: 새 WPF 콘텐츠 만들기 디자인 타임에 Windows Forms](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)합니다.  
+1.  프로젝트에 새 WPF <xref:System.Windows.Controls.UserControl>을 추가합니다. 컨트롤 형식의 기본 이름인 `UserControl1.xaml`을 사용합니다. 자세한 내용은 [연습: 만드는 새 WPF 콘텐츠 디자인 타임에 Windows Forms에서](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)합니다.  
   
-2.  에 **속성** 창의 설정의 값은 <xref:System.Windows.Controls.Control.Background%2A> 속성을 `Blue`합니다.  
+2.  에 **속성** 창에서 값을 설정 합니다 <xref:System.Windows.Controls.Control.Background%2A> 속성을 `Blue`입니다.  
   
 3.  프로젝트를 빌드합니다.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "33529823"
   
 1.  Windows Forms 디자이너에서 `Form1`을 엽니다.  
   
-2.  에 **도구 상자**에 **WPF 사용자 정의 컨트롤** 탭을 두 번 클릭 `UserControl1` 의 인스턴스를 만드는 `UserControl1` 폼에 있습니다.  
+2.  에 **도구 상자**를 **WPF 사용자 정의 컨트롤** 탭을 두 번 클릭 `UserControl1` 의 인스턴스를 만드는 `UserControl1` 폼에.  
   
      `UserControl1` 인스턴스가 `elementHost1`이라는 새 <xref:System.Windows.Forms.Integration.ElementHost> 컨트롤에서 호스트됩니다.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "33529823"
   
      UserControl1.xaml이 WPF 디자이너에서 열립니다.  
   
-4.  에 **속성** 창의 설정의 값은 <xref:System.Windows.Controls.Control.Background%2A> 속성을 `Red`합니다.  
+4.  에 **속성** 창에서 값을 설정 합니다 <xref:System.Windows.Controls.Control.Background%2A> 속성을 `Red`입니다.  
   
 5.  프로젝트를 다시 빌드합니다.  
   
@@ -87,4 +87,4 @@ ms.locfileid: "33529823"
  [연습: Windows Forms에서 맞춤선을 사용하여 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
  [마이그레이션 및 상호 운용성](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
  [WPF 컨트롤 사용](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [WPF 디자이너](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)

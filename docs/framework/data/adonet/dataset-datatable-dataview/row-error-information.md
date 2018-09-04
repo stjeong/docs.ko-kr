@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 8b1f9070-d032-48c7-b030-bd8fbb2ca59a
 ms.openlocfilehash: cf798ac88ba83e890086cec7424c8c363980718f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399039"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530547"
 ---
 # <a name="row-error-information"></a>행 오류 정보
 <xref:System.Data.DataTable>에서 값을 편집하면서 행 오류에 응답하지 않으려면 나중에 사용할 수 있도록 오류 정보를 행에 추가합니다. <xref:System.Data.DataRow> 개체는 이를 위해 행마다 <xref:System.Data.DataRow.RowError%2A> 속성을 제공합니다. 데이터를 추가할를 **RowError** 의 속성을 **DataRow** 설정를 <xref:System.Data.DataRow.HasErrors%2A> 속성을 **DataRow** 를 **true**. 경우는 **DataRow** 의 일부인를 **DataTable**, 및 **DataRow.HasErrors** 됩니다 **true**, **DataTable.HasErrors** 속성도 **true**합니다. 에 적용 됩니다는 **데이터 집합** 는 합니다 **DataTable** 속한 합니다. 오류를 테스트 하는 경우를 확인할 수 있습니다 합니다 **HasErrors** 속성을 오류 정보는 모든 행에 추가 되었는지 확인 합니다. 경우 **HasErrors** 는 **true**를 사용할 수는 <xref:System.Data.DataTable.GetErrors%2A> 메서드의 **DataTable** 반환 하 고 다음 예제에서와 같이 오류가 있는 행만을 검사할 합니다.  

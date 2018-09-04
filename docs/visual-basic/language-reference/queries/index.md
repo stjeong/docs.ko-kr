@@ -6,11 +6,11 @@ helpviewer_keywords:
 - LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
 ms.openlocfilehash: abe54fe163919c6ad6b746d70baac2482e80b948
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43424023"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43537004"
 ---
 # <a name="queries-visual-basic"></a>쿼리(Visual Basic)
 Visual Basic을 사용 하면 만들 수 있습니다 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 코드 식입니다.  

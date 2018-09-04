@@ -5,21 +5,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b1cc02d1-23b1-4439-a998-0da1899f3442
-ms.openlocfilehash: d118f97e425782dbdf89c7e5d1eccd4d371b419c
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b88df66ef2e065d1db8d4033eb1fb0e47ebdd189
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32759116"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43536458"
 ---
 # <a name="creating-a-dataview"></a>DataView 만들기
-<xref:System.Data.DataView>를 만드는 방법은 두 가지입니다. 사용할 수 있습니다는 **DataView** 생성자를 만들 수 있습니다에 대 한 참조는 <xref:System.Data.DataTable.DefaultView%2A> 의 속성은 <xref:System.Data.DataTable>합니다. **DataView** 생성자는 비어 있을 수 있습니다 또는 하나를 사용할 수는 **DataTable** 단일 인수로 또는 **DataTable** 필터 조건, 정렬 조건 및 행과 함께 상태 필터입니다. 에 사용할 수 있는 추가 인수에 대 한 자세한 내용은 **DataView**, 참조 [정렬 및 필터링 데이터](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)합니다.  
+<xref:System.Data.DataView>를 만드는 방법은 두 가지입니다. 사용할 수는 **DataView** 생성자에 대 한 참조를 만들 수 있습니다는 <xref:System.Data.DataTable.DefaultView%2A> 의 속성은 <xref:System.Data.DataTable>합니다. 합니다 **DataView** 생성자 비워 둘 수 있습니다, 또는 중 하나를 수행 하는 **DataTable** 단일 인수로 또는 **DataTable** 필터 조건, 정렬 조건 및 행과 함께 상태 필터입니다. 에 사용할 수 있는 추가 인수에 대 한 자세한 합니다 **DataView**를 참조 하세요 [정렬 및 필터링 데이터](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)입니다.  
   
- 때문에 대 한 인덱스는 **DataView** 때 작성 됩니다는 **DataView** 만들어지면와 같은 경우에 **정렬**, **RowFilter**, 또는  **RowStateFilter** 속성이 수정, 초기 정렬 순서를 제공 하거나 만들 때 조건을 생성자 인수로 필터링 하 여 최상의 성능을 얻으려면는 **DataView**합니다. 만들기는 **DataView** 정렬 또는 필터 조건을 지정 하 고 다음을 설정 하지 않고는 **정렬**, **RowFilter**, 또는 **RowStateFilter** 속성에는 나중에 인덱스를 두 번 이상 구축할 수로 인해: 되 면 때는 **DataView** 만들어지면 및 다시 정렬 또는 필터 속성은 수정한 시간입니다.  
+ 때문에 대 한 인덱스를 **DataView** 때 작성 되는 **DataView** 만들어지면 있으면 및를 **정렬**, **RowFilter**, 또는  **RowStateFilter** 속성이 수정, 모든 초기 정렬 순서를 제공 하거나 만들 때 생성자 인수로 필터링 기준을 하 여 최적의 성능을 얻습니다 합니다 **DataView**합니다. 만들기는 **DataView** 정렬 또는 필터 조건을 지정 하 고 다음 설정 하지 않고 합니다 **정렬**를 **RowFilter**, 또는 **RowStateFilter** 속성에는 나중에 인덱스를 두 번 이상 빌드해야 하면: 면 때 합니다 **DataView** 만들어지면 및 다시 정렬 또는 필터 속성은입니다.  
   
- 만들 경우에 **DataView** 인수를 사용 하지 않는 생성자를 사용 하 여, 됩니다 사용할 수는 **DataView** 설정 하기 전에 **테이블** 속성 .  
+ 만든 경우는 **DataView** 인수를 사용 하지 않는 생성자를 사용 하 여, 됩니다 사용할 수는 **DataView** 설정 해야 합니다 **테이블** 속성 .  
   
- 다음 코드 예제에서는 만드는 방법을 보여 줍니다.는 **DataView** 를 사용 하는 **DataView** 생성자입니다. A **RowFilter**, **정렬** 열 및 **DataViewRowState** 와 함께 제공 되는 **DataTable**합니다.  
+ 다음 코드 예제에는 만드는 방법을 보여 줍니다는 **DataView** 사용 하는 **DataView** 생성자입니다. A **RowFilter**, **정렬** 열 및 **DataViewRowState** 와 함께 제공 되는 **DataTable**.  
   
 ```vb  
 Dim custDV As DataView = New DataView(custDS.Tables("Customers"), _  
@@ -35,7 +35,7 @@ DataView custDV = new DataView(custDS.Tables["Customers"],
     DataViewRowState.CurrentRows);  
 ```  
   
- 다음 코드 예제를 기본에 대 한 참조를 가져오는 방법을 보여 줍니다 **DataView** 의 **DataTable** 를 사용 하는 **DefaultView** 테이블의 속성입니다.  
+ 다음 코드 예제에는 기본값에 대 한 참조를 가져오는 방법을 보여 줍니다 **DataView** 의 **DataTable** 사용 하는 **DefaultView** 테이블의 속성입니다.  
   
 ```vb  
 Dim custDV As DataView = custDS.Tables("Customers").DefaultView  
@@ -51,4 +51,4 @@ DataView custDV = custDS.Tables["Customers"].DefaultView;
  [DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
  [데이터 정렬 및 필터링](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)  
  [DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

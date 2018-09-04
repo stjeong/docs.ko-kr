@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: f7f385f3-ffcf-4f3b-af35-de8818938e5f
 ms.openlocfilehash: 5e282bce5f2519592babad0afcf7f8a326cf936d
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43425569"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530570"
 ---
 # <a name="how-to-execute-a-query-that-returns-nested-collections"></a>방법: 중첩된 컬렉션을 반환하는 쿼리 실행
 여기에서는 <xref:System.Data.EntityClient.EntityCommand> 개체를 사용하여 개념적 모델에 대해 명령을 실행하는 방법 및 <xref:System.Data.EntityClient.EntityDataReader>를 사용하여 중첩 컬렉션 결과를 검색하는 방법을 보여 줍니다.  

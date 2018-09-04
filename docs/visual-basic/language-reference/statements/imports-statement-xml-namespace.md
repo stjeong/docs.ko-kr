@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Imports statement [Visual Basic]
 - namespaces [Visual Basic], importing
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
-ms.openlocfilehash: 51b63a11fd2987d82f9a7599b39d15856a0abb1d
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 1100afd89b27e789c0db713291ed3656092fb0c7
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39243830"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43533644"
 ---
 # <a name="imports-statement-xml-namespace"></a>Imports 문(XML 네임스페이스)
 XML 리터럴과 XML 축 속성에 사용할 XML 네임 스페이스 접두사를 가져옵니다.  
@@ -35,7 +35,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## <a name="remarks"></a>설명  
  사용할 수는 `Imports` 문에 전달 된 매개 변수 또는 XML 리터럴과 XML 축 속성을 사용 하 여 사용할 수 있는 전역 XML 네임 스페이스를 정의 하는 `GetXmlNamespace` 연산자. (사용에 관한 정보를 `Imports` 을 코드에서 형식 이름이 사용 되는 위치에 사용할 수 있는 별칭을 가져오기 위한 문 참조 [Imports 문 (.NET Namespace 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).) 구문을 사용 하 여 XML 네임 스페이스를 선언 합니다 `Imports` 문을 XML에서 사용 하는 구문과 동일 합니다. XML 파일에서 네임 스페이스 선언을 복사에 사용 하는 따라서는 `Imports` 문입니다.  
   
- XML 네임 스페이스 접두사는 같은 네임 스페이스는 XML 요소를 반복적으로 만들려는 경우에 유용 합니다. XML 네임 스페이스 접두사를 사용 하 여 선언 된 `Imports` 문을 파일의 모든 코드를 사용할 수 있다는 점에서 전역입니다. XML 요소 리터럴 및 XML 축 속성에 액세스할 때 만들 때 사용할 수 있습니다. 자세한 내용은 [XML 요소 리터럴](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) 하 고 [XML 축 속성](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)합니다.  
+ XML 네임 스페이스 접두사는 같은 네임 스페이스는 XML 요소를 반복적으로 만들려는 경우에 유용 합니다. XML 네임 스페이스 접두사를 사용 하 여 선언 된 `Imports` 문을 파일의 모든 코드를 사용할 수 있다는 점에서 전역입니다. XML 요소 리터럴 및 XML 축 속성에 액세스할 때 만들 때 사용할 수 있습니다. 자세한 내용은 [XML 요소 리터럴](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) 하 고 [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)합니다.  
   
  네임 스페이스 접두사 없이 전역 XML 네임 스페이스를 정의 하는 경우 (예를 들어 `Imports <xmlns="http://SomeNameSpace>"`), 해당 네임 스페이스에는 기본 XML 네임 스페이스 것으로 간주 됩니다. 기본 XML 네임 스페이스는 XML 요소 리터럴 또는 네임 스페이스를 명시적으로 지정 하지 않은 XML 특성 축 속성에 대해 사용 됩니다. 기본 네임 스페이스는 지정된 된 네임 스페이스는 빈 네임 스페이스 하는 경우에 사용 됩니다 (즉, `xmlns=""`). 기본 XML 네임 스페이스는 XML 리터럴의 XML 특성 또는 네임 스페이스가 없는 XML 특성 축 속성에 적용 되지 않습니다.  
   
@@ -45,7 +45,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  각 소스 파일에는 개수에 관계 없이 포함 될 수 있습니다 `Imports` 문입니다. 이러한 옵션 선언 같은 따라야 합니다 `Option Strict` 문 및 이러한 앞에 야 프로그래밍 요소 선언와 같은 `Module` 또는 `Class` 문.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 기본 XML 네임 스페이스 및 접두사를 사용 하 여 식별 된 XML 네임 스페이스를 가져옵니다 `ns`합니다. 그런 다음 두 네임 스페이스를 사용 하는 XML 리터럴을 만듭니다.  
   
  [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_1.vb)]  
@@ -61,7 +61,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 </ns:outer>  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 XML 네임 스페이스 접두사를 가져옵니다 `ns`합니다. 그런 다음 네임 스페이스 접두사를 사용 하 고 요소의 마지막 폼을 표시 하는 XML 리터럴을 만듭니다.  
   
  [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_2.vb)]  
@@ -79,7 +79,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  컴파일러가 변환 XML 네임 스페이스 접두사는 전역 접두사에서 로컬 접두사가 정의에 알 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 XML 네임 스페이스 접두사를 가져옵니다 `ns`합니다. 네임스페이스의 접두사를 사용하여 XML 리터럴을 만들고 정규화된 이름 `ns:name`을 가진 첫 번째 자식 노드에 액세스합니다.  
   
  [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_3.vb)]  
@@ -90,6 +90,6 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
 ## <a name="see-also"></a>참고 항목  
  [XML 요소 리터럴](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)  
  [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
  [GetXmlNamespace 연산자](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)

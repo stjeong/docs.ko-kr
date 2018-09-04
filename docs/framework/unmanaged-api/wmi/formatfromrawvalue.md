@@ -1,6 +1,6 @@
 ---
 title: FormatFromRawValue 함수 (관리 되지 않는 API 참조)
-description: FormatFromRawValue 함수 원시 성능 데이터를 지정된 된 형식으로 변환합니다.
+description: FormatFromRawValue 함수는 지정 된 형식 원시 성능 데이터를 변환합니다.
 ms.date: 11/21/2017
 api_name:
 - FormatFromRawValue
@@ -16,15 +16,15 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e0710b26237b350f1dfbc7d2464b7a131373604e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 95ef445d41672c5c2895bd7115afb6a73a57e8f9
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33460423"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43542169"
 ---
 # <a name="formatfromrawvalue-function"></a>FormatFromRawValue 함수
-시간 기반 형식 변환 되 면 지정된 된 형식으로 원시 성능 데이터 값을 하나 또는 두 개의 원시 성능 데이터 값으로 변환 합니다.   
+형식 변환이 시간 기반인 경우 하나의 원시 성능 데이터 값을 지정된 형식으로 변화하거나 두 개의 원시 성능 데이터 값으로 변환합니다.   
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -44,7 +44,7 @@ int FormatFromRawValue (
 ## <a name="parameters"></a>매개 변수
 
 `dwCounterType`  
-[in] 카운터 형식입니다. 목록이 카운터 형식에 대 한 참조 [WMI 성능 카운터 형식](https://msdn.microsoft.com/library/aa394569(v=vs.85).aspx)합니다. `dwCounterType` 임의의 형식일 수 있습니다 카운터를 제외 하 고 `PERF_LARGE_RAW_FRACTION` 및 `PERF_LARGE_RAW_BASE`합니다. 
+[in] 카운터 형식입니다. 카운터 형식 목록을 참조 하세요 [WMI 성능 카운터 형식](/windows/desktop/WmiSdk/wmi-performance-counter-types)합니다. `dwCounterType` 제외 하 고 카운터 형식일 수 있습니다 `PERF_LARGE_RAW_FRACTION` 고 `PERF_LARGE_RAW_BASE`입니다. 
 
 `dwFormat`  
 [in] 원시 성능 데이터를 변환할 대상 형식입니다. 다음 값 중 하나일 수 있습니다.
@@ -55,21 +55,21 @@ int FormatFromRawValue (
 | `PDH_FMT_LARGE` | 0x00000400 | 64 비트 정수로 계산된 된 값을 반환 합니다. |
 | `PDH_FMT_LONG` | 0x00000100 | 32 비트 정수로 계산된 된 값을 반환 합니다. |
 
-이전 값 중 하나 ORed 다음 배율 플래그 중 하나가 될 수 있습니다.
+다음 크기 조정 플래그 중 하나를 사용 하 여 or 처리 될 수 있습니다 이전 값 중 하나:
 
 |상수  |값  |설명 |
 |---------|---------|---------|
-| `PDH_FMT_NOSCALE` | 0x00001000 | 카운터의 배율 인수는 적용 되지 않습니다. |
-| `PDH_FMT_1000` | 0x00002000 | 1, 000 최종 값을 곱하십시오. | 
+| `PDH_FMT_NOSCALE` | 0x00001000 | 카운터의 배율 적용 되지 않습니다. |
+| `PDH_FMT_1000` | 0x00002000 | 1,000 최종 값을 곱하십시오. | 
 
 `pTimeBase`  
-[in] 형식 변환에 필요한 경우 시간 기준에 대 한 포인터입니다. 시간 기준 정보가 형식 변환에 대 한 필요가 없는 경우이 매개 변수 값은 무시 됩니다.
+[in] 기본 시간을 형식으로 변환 하는 데 필요한 경우에 대 한 포인터입니다. 시간 기본 정보, 형식 변환에 대 한 필요가 없는 경우이 매개 변수의 값은 무시 됩니다.
 
-`pRawValue1` [in] 에 대 한 포인터는 [ `PDH_RAW_COUNTER` ](https://msdn.microsoft.com/library/windows/desktop/aa373060(v=vs.85).aspx) 원시 성능 값을 나타내는 구조입니다.
+`pRawValue1` [in] 에 대 한 포인터를 [ `PDH_RAW_COUNTER` ](https://msdn.microsoft.com/library/windows/desktop/aa373060(v=vs.85).aspx) 원시 성능 값을 나타내는 구조체입니다.
 
-`pRawValue2` [in] 에 대 한 포인터는 [ `PDH_RAW_COUNTER` ](https://msdn.microsoft.com/library/windows/desktop/aa373060(v=vs.85).aspx) 구조를 두 번째 원시 성능 값을 나타냅니다. 두 번째 원시 성능 값 필요가 없는 경우이 매개 변수 여야 합니다 `null`합니다.
+`pRawValue2` [in] 에 대 한 포인터를 [ `PDH_RAW_COUNTER` ](https://msdn.microsoft.com/library/windows/desktop/aa373060(v=vs.85).aspx) 두 번째 원시 성능 값을 나타내는 구조체입니다. 두 번째 원시 성능 값이 필요한 경우이 매개 변수 여야 합니다 `null`합니다.
 
-`pFmtValue` [out] 에 대 한 포인터는 [ `PDH_FMT_COUNTERVALUE` ](https://msdn.microsoft.com/library/windows/desktop/aa373050(v=vs.85).aspx) 구조체 형식이 지정 된 성능 값입니다.
+`pFmtValue` [out] 에 대 한 포인터를 [ `PDH_FMT_COUNTERVALUE` ](https://msdn.microsoft.com/library/windows/desktop/aa373050(v=vs.85).aspx) 구조체 형식이 지정 된 성능 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -77,8 +77,8 @@ int FormatFromRawValue (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-| `ERROR_SUCCESS` | 0 | 함수 호출은 성공 합니다. |
-| `PDH_INVALID_ARGUMENT` | 0xC0000BBD | 필요한 인수가 없거나 잘못 되었습니다. | 
+| `ERROR_SUCCESS` | 0 | 함수 호출에 성공 했습니다. |
+| `PDH_INVALID_ARGUMENT` | 0xC0000BBD | 필수 인수가 누락 되었거나 잘못 되었습니다. | 
 | `PDH_INVALID_HANDLE` | 0xC0000BBC | 핸들이 올바른 PDH 개체가 아닙니다. |
   
 ## <a name="remarks"></a>설명
@@ -86,11 +86,11 @@ int FormatFromRawValue (
 이 함수에 대 한 호출을 래핑하는 [FormatFromRawValue](https://msdn.microsoft.com/library/ms231047(v=vs.85).aspx) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
- **라이브러리:** PerfCounter.dll  
+ **라이브러리:** perfcounter.dll이  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>참고자료  
 [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

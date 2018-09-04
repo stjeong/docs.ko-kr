@@ -3,11 +3,11 @@ title: Dynamic 인수
 ms.date: 03/30/2017
 ms.assetid: 122ad479-d306-4602-a943-5aefe711329d
 ms.openlocfilehash: dcf6b84889f3bd7d043f736336c39634cd5384c7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43387242"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530443"
 ---
 # <a name="dynamic-arguments"></a>Dynamic 인수
 이 샘플에서는 활동 작성자가 아니라 활동 소비자에 의해 인수가 정의되는 활동을 구현하는 방법을 보여 줍니다. 이를 위해 런타임에서 활동의 메타데이터가 생성되는 방식을 재정의합니다.  

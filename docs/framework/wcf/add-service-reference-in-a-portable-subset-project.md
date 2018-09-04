@@ -2,15 +2,15 @@
 title: 이식 가능한 하위 집합 프로젝트에 서비스 참조 추가
 ms.date: 03/30/2017
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
-ms.openlocfilehash: 5d094bb1d2d1155565e48850a2f41829a93cff84
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: efe95a326e7c13237c7d2d74888c85bf919ed287
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33460491"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43542312"
 ---
 # <a name="add-service-reference-in-a-portable-subset-project"></a>이식 가능한 하위 집합 프로젝트에 서비스 참조 추가
-이식 가능한 하위 집합 프로젝트는.NET 어셈블리 프로그래머가 하나의 소스 트리를 유지 관리 하 고 여러.NET 구현 (예: 데스크톱, Silverlight, Windows Phone 및 XBOX)을 지원 하면서 시스템을 구축 하를 사용 합니다. 이식 가능한 하위 집합 프로젝트는 모든.NET 구현에 사용할 수 있는.NET framework 어셈블리인.NET 이식 가능한 라이브러리만 참조 합니다.  
+이식 가능한 하위 집합 프로젝트는.NET 어셈블리 프로그래머가 하나의 소스 트리를 유지 관리 하 고 여러.NET 구현 (예: 데스크톱, Silverlight, Windows Phone 및 XBOX)를 계속 지원 하면서 빌드 시스템을 사용 하도록 설정 합니다. 이식 가능한 하위 집합 프로젝트는 모든.NET 구현에서 사용할 수 있는.NET framework 어셈블리는.NET 이식 가능한 라이브러리만 참조 합니다.  
   
 ## <a name="add-service-reference-details"></a>서비스 참조 추가 정보  
  이식 가능한 하위 집합 프로젝트에 서비스 참조를 추가할 경우 다음 제한이 적용됩니다.  
@@ -19,7 +19,7 @@ ms.locfileid: "33460491"
   
 2.  <xref:System.Runtime.Serialization.DataContractSerializer> 시나리오를 사용하는 서비스의 경우 이식 가능한 하위 집합에서만 재사용 형식을 가져오도록 데이터 계약 서로게이트가 제공됩니다.  
   
-3.  이식 가능한 라이브러리에서 지원되지 않는 바인딩(<xref:System.ServiceModel.BasicHttpBinding>, 트랜잭션 흐름, 신뢰할 수 있는 세션 또는 MTOM 인코딩을 사용하지 않는 <xref:System.ServiceModel.WSHttpBinding>, 그리고 해당 사용자 지정 바인딩을 제외한 모든 바인딩)에 의존하는 끝점은 무시됩니다.  
+3.  이식 가능한 라이브러리에서 지원되지 않는 바인딩(<xref:System.ServiceModel.BasicHttpBinding>, 트랜잭션 흐름, 신뢰할 수 있는 세션 또는 MTOM 인코딩을 사용하지 않는 <xref:System.ServiceModel.WSHttpBinding>, 그리고 해당 사용자 지정 바인딩을 제외한 모든 바인딩)에 의존하는 엔드포인트는 무시됩니다.  
   
 4.  가져오기 전 모든 작업의 모든 메시지 설명에서 메시지 헤더가 삭제됩니다.  
   
@@ -45,4 +45,4 @@ ms.locfileid: "33460491"
   
 ## <a name="see-also"></a>참고 항목  
  [WCF 클라이언트를 사용하여 서비스 액세스](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [이식 가능한 클래스 라이브러리](http://msdn.microsoft.com/library/gg597391\(v=vs.110\))
+ [이식 가능한 클래스 라이브러리](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)

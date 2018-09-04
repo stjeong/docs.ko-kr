@@ -7,11 +7,11 @@ helpviewer_keywords:
 - My namespace [Visual Basic], extending
 ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
 ms.openlocfilehash: 4dfe14f7680ad0c3a302334c07bb17e3e92011b0
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43406132"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43534558"
 ---
 # <a name="customizing-projects-and-extending-my-with-visual-basic"></a>Visual Basic에서 프로젝트 사용자 지정 및 My 확장
 추가 제공 프로젝트 템플릿이 사용자 지정할 수 있습니다 `My` 개체입니다. 이를 찾아서 개체를 사용 하 여 다른 개발자를 위한 쉽게 있습니다.  

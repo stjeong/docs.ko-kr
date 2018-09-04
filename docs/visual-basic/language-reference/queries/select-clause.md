@@ -9,11 +9,11 @@ helpviewer_keywords:
 - queries [Visual Basic], Select
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
 ms.openlocfilehash: 7d959c0717a3ef44dfc23c90d99ec7b83421efaa
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935953"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529803"
 ---
 # <a name="select-clause-visual-basic"></a>Select 절(Visual Basic)
 쿼리 결과 정의합니다.  
@@ -46,7 +46,7 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
   
  [!code-vb[VbSimpleQuerySamples#29](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/select-clause_3.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 쿼리 식에 사용 된 `From` 범위 변수를 선언 하는 절 `cust` 에 대 한를 `customers` 컬렉션. 합니다 `Select` 절 고객 이름 및 ID 값을 선택 하 고 채웁니다 합니다 `CompanyName` 및 `CustomerID` 새 범위 변수는 열입니다. `For Each` 문을 반환 된 각 개체를 반복 하 고 표시 합니다 `CompanyName` 및 `CustomerID` 각 레코드에 대 한 열입니다.  
   
  [!code-vb[VbSimpleQuerySamples#30](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/select-clause_4.vb)]  

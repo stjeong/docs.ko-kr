@@ -2,15 +2,15 @@
 title: 3.5 규칙 집합과의 상호 운용성
 ms.date: 03/30/2017
 ms.assetid: 969f3295-d874-428c-a9c6-623e3d578e51
-ms.openlocfilehash: 9d42198d336e38c4ad9fc6c686a019814bd571bd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5ea5454ef80bfd83611ed20392782d99cd8c0c25
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33517909"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43538554"
 ---
 # <a name="interop-with-35-rule-set"></a>3.5 규칙 집합과의 상호 운용성
-이 샘플의 사용법을 보여줍니다는 <xref:System.Activities.Statements.Interop> 의 사용자 지정 활동과 통합 하는 활동 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] 를 사용 하 여 <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` 및 규칙입니다. 이 샘플에서는 사용자 지정 활동에서 노출하는 종속성 속성에 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] 변수를 바인딩하여 사용자 지정 활동에 데이터를 전달합니다.  
+이 샘플의 사용법을 보여 줍니다.는 <xref:System.Activities.Statements.Interop> 에서 사용자 지정 활동과 통합 하는 활동 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] 사용 하 여 <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` 및 규칙입니다. 이 샘플에서는 사용자 지정 활동에서 노출하는 종속성 속성에 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] 변수를 바인딩하여 사용자 지정 활동에 데이터를 전달합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -21,7 +21,7 @@ ms.locfileid: "33517909"
 3.  [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)]  
   
 ## <a name="demonstrates"></a>세부 항목  
- <xref:System.Activities.Statements.Interop> 활동을 <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` 활동에 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] 종속성 속성이 있는  
+ <xref:System.Activities.Statements.Interop> 활동 <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` 활동에서 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] 종속성 속성을 사용 하 여  
   
 ## <a name="discussion"></a>토론  
  이 샘플에서는 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] 활동과의 통합에 대한 통합 시나리오 중 하나를 보여 줍니다. 이 샘플에 포함 되어는 [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] 를 호출 하는 사용자 지정 활동을 <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` 활동입니다.  
@@ -31,11 +31,11 @@ ms.locfileid: "33517909"
   
  ![Interop 활동](../../../../docs/framework/windows-workflow-foundation/samples/media/interoprulespolicy.jpg "InteropRulesPolicy")  
   
- 두 번 클릭은 **DiscountPolicy** 정책 작업의 규칙을 검사 합니다. 규칙 편집기에 규칙이 표시됩니다.  
+ 두 번 클릭 합니다 **DiscountPolicy** 정책 활동 규칙을 검사 합니다. 규칙 편집기에 규칙이 표시됩니다.  
   
  ![규칙 집합 편집기](../../../../docs/framework/windows-workflow-foundation/samples/media/interoprulesruleseteditor.jpg "InteropRulesRuleSetEditor")  
   
- 마우스 오른쪽 단추로 클릭는 **DiscountPolicy** 활동과 선택 된 **코드 보기** 코드 검사 하는 코드 병행 C#이 작업으로 이동 하는 옵션입니다. `DiscountLevel`의 종속성 속성 설정을 확인합니다. 이 설정은 <xref:System.Activities.Argument>의 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]에 해당합니다.  
+ 마우스 오른쪽 단추로 클릭 합니다 **DiscountPolicy** 선택한 활동 합니다 **코드 보기** 코드 병행 C# 코드를이 작업을 검사 하는 옵션입니다. `DiscountLevel`의 종속성 속성 설정을 확인합니다. 이 설정은 <xref:System.Activities.Argument>의 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]에 해당합니다.  
   
 ```  
 public static DependencyProperty DiscountLevelProperty = DependencyProperty.Register("DiscountLevel", typeof(int), typeof(TravelRuleSet));  
@@ -77,6 +77,6 @@ base.SetValue(TravelRuleSet.DiscountLevelProperty, value);
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\InteropWith35RuleSet`

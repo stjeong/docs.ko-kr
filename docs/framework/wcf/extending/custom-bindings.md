@@ -5,15 +5,15 @@ helpviewer_keywords:
 - Windows Communication Foundation, endpoints
 - Windows Communication Foundation, configuration
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
-ms.openlocfilehash: 6880b04a3f8a82c1e109c32674804c5241913a8a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 694b4faaafea62799a96aabe8f023a0d495f8d50
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33487074"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43540207"
 ---
 # <a name="custom-bindings"></a>사용자 지정 바인딩
-시스템에서 제공하는 바인딩 중 하나가 사용자의 서비스 요구 사항을 충족하지 않을 때 <xref:System.ServiceModel.Channels.CustomBinding> 클래스를 사용할 수 있습니다. 모든 바인딩은 정렬된 바인딩 요소 집합으로부터 생성됩니다. 사용자 지정 바인딩은 시스템 제공 바인딩 요소로부터 만들거나 사용자 정의 사용자 지정 바인딩 요소를 포함할 수 있습니다. 예를 들어 사용자 지정 바인딩 요소를 사용하여 서비스 끝점에서 새 전송 또는 새 인코더를 사용하도록 설정할 수 있습니다. 작업 예제를 보려면 [사용자 지정 바인딩 샘플](http://msdn.microsoft.com/library/657e8143-beb0-472d-9cfe-ed1a19c2ab08)합니다. 자세한 내용은 참조 [ \<customBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)합니다.  
+시스템에서 제공하는 바인딩 중 하나가 사용자의 서비스 요구 사항을 충족하지 않을 때 <xref:System.ServiceModel.Channels.CustomBinding> 클래스를 사용할 수 있습니다. 모든 바인딩은 정렬된 바인딩 요소 집합으로부터 생성됩니다. 사용자 지정 바인딩은 시스템 제공 바인딩 요소로부터 만들거나 사용자 정의 사용자 지정 바인딩 요소를 포함할 수 있습니다. 예를 들어 사용자 지정 바인딩 요소를 사용하여 서비스 엔드포인트에서 새 전송 또는 새 인코더를 사용하도록 설정할 수 있습니다. 작업 예제를 보려면 [사용자 지정 바인딩 샘플](https://msdn.microsoft.com/library/657e8143-beb0-472d-9cfe-ed1a19c2ab08)합니다. 자세한 내용은 [ \<customBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)합니다.  
   
 ## <a name="construction-of-a-custom-binding"></a>사용자 지정 바인딩 생성  
  사용자 지정 바인딩은 특정 순서로 "스택"되는 바인딩 요소 컬렉션에서 <xref:System.ServiceModel.Channels.CustomBinding.%23ctor%2A> 생성자를 사용하여 생성됩니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "33487074"
   
     -   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>  
   
- 맨 아래에는 필수 전송 요소가 있습니다. 고유의 전송을 또는 Windows Communication Foundation (WCF)를 제공 하는 다음 전송 바인딩 요소 중 하나를 사용할 수 있습니다.  
+ 맨 아래에는 필수 전송 요소가 있습니다. 고유의 전송을 또는 Windows Communication Foundation (WCF) 제공 전송 바인딩 요소 중 하나를 사용할 수 있습니다.  
   
 -   <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
   
@@ -73,7 +73,7 @@ ms.locfileid: "33487074"
  또한 고유의 바인딩 요소를 정의하여 이전에 정의된 계층 사이에 삽입할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [끝점 만들기 개요](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
+ [엔드포인트 만들기 개요](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
  [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [방법: 시스템 제공 바인딩 사용자 지정](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)  

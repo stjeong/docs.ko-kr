@@ -18,11 +18,11 @@ helpviewer_keywords:
 - background operations
 ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
 ms.openlocfilehash: 1f7da963db34434ee2631e9e2c0367abbd628656
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43488224"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43539238"
 ---
 # <a name="backgroundworker-component-overview"></a>BackgroundWorker 구성 요소 개요
 일반적으로 수행하는 작업 중에는 실행 시간이 오래 걸릴 수 있는 것들이 많습니다. 예를 들면 다음과 같습니다.  
