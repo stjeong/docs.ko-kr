@@ -12,22 +12,22 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 85cd0e4910fdef28721cfb4be341b74fcf1f3c1e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466241"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43670586"
 ---
-# <a name="ui-automation-text-pattern-how-to-topics"></a><span data-ttu-id="2799d-102">UI 자동화 텍스트 패턴 방법 항목</span><span class="sxs-lookup"><span data-stu-id="2799d-102">UI Automation Text Pattern-How-to Topics</span></span>
+# <a name="ui-automation-text-pattern-how-to-topics"></a><span data-ttu-id="a5a15-102">UI 자동화 텍스트 패턴 방법 항목</span><span class="sxs-lookup"><span data-stu-id="a5a15-102">UI Automation Text Pattern-How-to Topics</span></span>
 > [!NOTE]
->  <span data-ttu-id="2799d-103">이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="2799d-103">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="2799d-104">에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.</span><span class="sxs-lookup"><span data-stu-id="2799d-104">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).</span></span>  
+>  <span data-ttu-id="a5a15-103">이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="a5a15-103">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="a5a15-104">에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.</span><span class="sxs-lookup"><span data-stu-id="a5a15-104">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).</span></span>  
   
- <span data-ttu-id="2799d-105">이 섹션에서는 UI 자동화 텍스트 패턴을 사용 하는 방법을 설명 하는 항목을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="2799d-105">This section includes topics that explain how to use UI Automation text pattern.</span></span>  
+ <span data-ttu-id="a5a15-105">이 섹션에서는 UI 자동화 텍스트 패턴을 사용 하는 방법을 설명 하는 항목을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="a5a15-105">This section includes topics that explain how to use UI Automation text pattern.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="2799d-106">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="2799d-106">In This Section</span></span>  
- [<span data-ttu-id="2799d-107">UI 자동화를 사용하여 텍스트 상자에 콘텐츠 추가</span><span class="sxs-lookup"><span data-stu-id="2799d-107">Add Content to a Text Box Using UI Automation</span></span>](../../../docs/framework/ui-automation/add-content-to-a-text-box-using-ui-automation.md)  
- [<span data-ttu-id="2799d-108">UI 자동화를 사용하여 텍스트 찾기 및 강조</span><span class="sxs-lookup"><span data-stu-id="2799d-108">Find and Highlight Text Using UI Automation</span></span>](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)  
- [<span data-ttu-id="2799d-109">UI 자동화를 사용하여 텍스트 특성 가져오기</span><span class="sxs-lookup"><span data-stu-id="2799d-109">Obtain Text Attributes Using UI Automation</span></span>](../../../docs/framework/ui-automation/obtain-text-attributes-using-ui-automation.md)  
- [<span data-ttu-id="2799d-110">UI 자동화를 사용하여 혼합 텍스트 특성 정보 가져오기</span><span class="sxs-lookup"><span data-stu-id="2799d-110">Obtain Mixed Text Attribute Details Using UI Automation</span></span>](../../../docs/framework/ui-automation/obtain-mixed-text-attribute-details-using-ui-automation.md)  
- [<span data-ttu-id="2799d-111">UI 자동화를 사용하여 텍스트 이동</span><span class="sxs-lookup"><span data-stu-id="2799d-111">Traverse Text Using UI Automation</span></span>](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)  
- [<span data-ttu-id="2799d-112">UI 자동화를 사용하여 포함 개체에 액세스</span><span class="sxs-lookup"><span data-stu-id="2799d-112">Access Embedded Objects Using UI Automation</span></span>](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
+## <a name="in-this-section"></a><span data-ttu-id="a5a15-106">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="a5a15-106">In This Section</span></span>  
+ [<span data-ttu-id="a5a15-107">UI 자동화를 사용하여 텍스트 상자에 콘텐츠 추가</span><span class="sxs-lookup"><span data-stu-id="a5a15-107">Add Content to a Text Box Using UI Automation</span></span>](../../../docs/framework/ui-automation/add-content-to-a-text-box-using-ui-automation.md)  
+ [<span data-ttu-id="a5a15-108">UI 자동화를 사용하여 텍스트 찾기 및 강조</span><span class="sxs-lookup"><span data-stu-id="a5a15-108">Find and Highlight Text Using UI Automation</span></span>](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)  
+ [<span data-ttu-id="a5a15-109">UI 자동화를 사용하여 텍스트 특성 가져오기</span><span class="sxs-lookup"><span data-stu-id="a5a15-109">Obtain Text Attributes Using UI Automation</span></span>](../../../docs/framework/ui-automation/obtain-text-attributes-using-ui-automation.md)  
+ [<span data-ttu-id="a5a15-110">UI 자동화를 사용하여 혼합 텍스트 특성 정보 가져오기</span><span class="sxs-lookup"><span data-stu-id="a5a15-110">Obtain Mixed Text Attribute Details Using UI Automation</span></span>](../../../docs/framework/ui-automation/obtain-mixed-text-attribute-details-using-ui-automation.md)  
+ [<span data-ttu-id="a5a15-111">UI 자동화를 사용하여 텍스트 이동</span><span class="sxs-lookup"><span data-stu-id="a5a15-111">Traverse Text Using UI Automation</span></span>](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)  
+ [<span data-ttu-id="a5a15-112">UI 자동화를 사용하여 포함 개체에 액세스</span><span class="sxs-lookup"><span data-stu-id="a5a15-112">Access Embedded Objects Using UI Automation</span></span>](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
