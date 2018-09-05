@@ -8,16 +8,16 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 3e700e7e726b5cb71d3b7d863bdb31951aacd885
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: MT
+ms.openlocfilehash: 9994f6a3026c790acdb35af3300379786f615607
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399208"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43481986"
 ---
 # <a name="obtaining-ui-automation-elements"></a>UI 자동화 요소 가져오기
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 항목에서는 <xref:System.Windows.Automation.AutomationElement> 요소에 대한 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 개체를 가져오는 다양한 방법을 설명합니다.  
   
@@ -28,7 +28,7 @@ ms.locfileid: "33399208"
 ## <a name="root-element"></a>루트 요소  
  <xref:System.Windows.Automation.AutomationElement> 개체에 대한 모든 검색은 시작 지점이 있어야 합니다. 데스크톱, 응용 프로그램 창 또는 컨트롤을 포함한 모든 요소가 대상이 될 수 있습니다.  
   
- 루트 요소가 있는 모든 요소가 하위 항목인, 바탕 화면에 대 한 정적에서 가져온 <xref:System.Windows.Automation.AutomationElement.RootElement%2A?displayProperty=nameWithType> 속성입니다.  
+ 모든 요소가 하위 항목인 데스크톱의 루트 요소는 정적에서 가져온 <xref:System.Windows.Automation.AutomationElement.RootElement%2A?displayProperty=nameWithType> 속성입니다.  
   
 > [!CAUTION]
 >  일반적으로 <xref:System.Windows.Automation.AutomationElement.RootElement%2A>의 직계 자식 항목만 가져와야 합니다. 하위 항목 검색은 수 많은 요소에서 반복될 수 있기 때문에 스택 오버플로가 발생할 수 있습니다. 낮은 수준의 특정 요소를 가져오려고 시도하는 경우, 낮은 수준의 컨테이너 또는 응용 프로그램 창에서 검색을 시작해야 합니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "33399208"
   
  가장 간단한 조건은 <xref:System.Windows.Automation.Condition.TrueCondition>으로서, 검색 범위 내의 모든 요소가 반환되도록 하는 미리 정의된 개체입니다. <xref:System.Windows.Automation.Condition.FalseCondition>과는 반대로 <xref:System.Windows.Automation.Condition.TrueCondition>은 요소가 검색되지 않도록 하기 때문에 그다지 유용하지 않습니다.  
   
- 단독으로 또는 다른 조건과 함께 사용할 수 있는 기타 미리 정의된 3개의 조건으로 <xref:System.Windows.Automation.Automation.ContentViewCondition>, <xref:System.Windows.Automation.Automation.ControlViewCondition>및 <xref:System.Windows.Automation.Automation.RawViewCondition>이 있습니다. 단독으로 사용되는<xref:System.Windows.Automation.Automation.RawViewCondition>은 <xref:System.Windows.Automation.Condition.TrueCondition>또는 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement%2A> 속성별로 요소를 필터링하지 않기 때문에 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> 에 해당합니다.  
+ 단독으로 또는 다른 조건과 함께 사용할 수 있는 기타 미리 정의된 3개의 조건으로 <xref:System.Windows.Automation.Automation.ContentViewCondition>, <xref:System.Windows.Automation.Automation.ControlViewCondition>및 <xref:System.Windows.Automation.Automation.RawViewCondition>이 있습니다. 단독으로 사용되는<xref:System.Windows.Automation.Automation.RawViewCondition>은 <xref:System.Windows.Automation.Condition.TrueCondition>또는 <xref:System.Windows.Automation.AutomationElement.AutomationElementInf속성별로 요소를 필터링하지 않기 때문에mation.IsControlElement%2A> 속성별로 요소를 필터링하지 않기 때문에 <xref:System.Windows.Automation.AutomationElement.AutomationElementInf속성별로 요소를 필터링하지 않기 때문에mation.IsContentElement%2A> 에 해당합니다.  
   
  하나 이상의 <xref:System.Windows.Automation.PropertyCondition> 개체에서 기타 조건이 생성되고, 각 조건은 속성 값을 지정합니다. 예를 들어, <xref:System.Windows.Automation.PropertyCondition> 은 요소가 활성화되도록 지정하거나 특정 컨트롤 패턴을 지원하도록 지정할 수 있습니다.  
   

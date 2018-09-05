@@ -17,11 +17,11 @@ ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 0f19cbf305165c2553d5a493f7011a6aea19fb23
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931861"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43396457"
 ---
 # <a name="character-escapes-in-regular-expressions"></a>정규식의 문자 이스케이프
 정규식의 백슬래시(\\)는 다음 중 하나를 나타냅니다.  

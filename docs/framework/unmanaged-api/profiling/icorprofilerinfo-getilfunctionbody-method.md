@@ -19,7 +19,7 @@ author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: bde194023ff6913db9a56e30eddaad8d7abc5ad1
 ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
 ms.locfileid: "33452809"
@@ -48,7 +48,7 @@ HRESULT GetILFunctionBody(
  [out] 메서드 헤더에 대 한 포인터입니다.  
   
  `pcbMethodSize`  
- [out] 크기의 메서드를 지정 하는 정수입니다.  
+ [out] 메서드의 크기를 지정하는 정수입니다.  
   
 ## <a name="remarks"></a>설명  
  메서드는 현재 모듈에 의해 범위가 지정 됩니다. 때문에 `GetILFunctionBody` 메서드 전에 공용 언어 런타임 (CLR)에서 로드 된 MSIL 코드에 대 한 도구 액세스를 제공 하도록 설계 되었습니다, 메서드의 메타 데이터 토큰을 사용 하 여 원하는 인스턴스를 찾으려고 합니다.  
