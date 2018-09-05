@@ -5,11 +5,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 11/06/2017
 ms.openlocfilehash: 6e105bc28b6011c3177216aba996eb85c0766ac8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/05/2018
-ms.locfileid: "43723771"
+ms.locfileid: "43742779"
 ---
 # <a name="windows-management-instrumentation-wmi-and-performance-counters-unmanaged-api-reference"></a>WMI(Windows Management Instrumentation) 및 성능 카운터(관리되지 않는 API 참조)
 
