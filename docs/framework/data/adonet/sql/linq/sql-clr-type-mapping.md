@@ -2,12 +2,12 @@
 title: SQL-CLR 형식 매핑
 ms.date: 07/23/2018
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
-ms.openlocfilehash: 5437529d9293951ad34abda435b538b4f404c600
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: ac00d78fff65f5d44a52f92509db3aa493952949
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "33365529"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43735438"
 ---
 # <a name="sql-clr-type-mapping"></a>SQL-CLR 형식 매핑
 LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자가 선택한 프로그래밍 언어로 표현되는 개체 모델에 매핑됩니다. 응용 프로그램을 실행하면 LINQ to SQL에서는 개체 모델의 통합 언어 쿼리를 SQL로 변환하여 실행을 위해 데이터베이스로 전송합니다. 데이터베이스에서 결과가 반환되면 LINQ to SQL에서는 해당 결과를 사용자의 프로그래밍 언어로 작업할 수 있는 개체로 다시 변환합니다.  
@@ -60,7 +60,7 @@ LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자�
   
 -   SQL Server에서는 일부 데이터 형식이 CLR에서 이에 해당되는 데이터 형식과 다르게 정렬됩니다. 예를 들어 SQL Server의 `UNIQUEIDENTIFIER` 데이터 형식은 CLR의 <xref:System.Guid?displayProperty=nameWithType> 데이터 형식과 다르게 정렬됩니다.  
   
--   SQL Server에서는 일부 문자열의 비교 연산이 CLR과 다르게 처리됩니다. SQL Server의 경우 문자열 비교 동작은 서버의 데이터 정렬 설정에 따라 다릅니다. 자세한 내용은 [데이터 정렬 작업](http://go.microsoft.com/fwlink/?LinkId=115330) Microsoft SQL Server 온라인 설명서의 합니다.  
+-   SQL Server에서는 일부 문자열의 비교 연산이 CLR과 다르게 처리됩니다. SQL Server의 경우 문자열 비교 동작은 서버의 데이터 정렬 설정에 따라 다릅니다. 자세한 내용은 [데이터 정렬 작업](https://go.microsoft.com/fwlink/?LinkId=115330) Microsoft SQL Server 온라인 설명서의 합니다.  
   
 -   SQL Server에서는 매핑된 일부 함수에 대해 CLR과는 다른 값을 반환할 수 있습니다. 예를 들어 두 문자열이 후행 공백에서만 차이가 있는 경우 SQL Server에서는 두 문자열이 동일한 것으로 간주되는 반면 CLR에서는 두 문자열이 다른 것으로 간주되기 때문에 같음 함수가 각각 다른 값을 반환합니다.  
   
@@ -232,11 +232,11 @@ LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자�
 ### <a name="sql-server-filestream"></a>SQL Server FILESTREAM  
  `FILESTREAM` 열의 `VARBINARY(MAX)` 특성은 Microsoft SQL Server 2008부터 사용할 수 있으며 .NET Framework 버전 3.5 SP1부터 LINQ to SQL을 사용하여 매핑할 수 있습니다.  
   
- `VARBINARY(MAX)` 개체에 `FILESTREAM` 특성이 있는 <xref:System.Data.Linq.Binary> 열을 매핑할 수는 있지만 <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> 메서드에서 `FILESTREAM` 특성이 있는 열을 자동으로 생성할 수는 없습니다. 에 대 한 자세한 내용은 `FILESTREAM`를 참조 하세요 [FILESTREAM 개요](http://go.microsoft.com/fwlink/?LinkId=115291) Microsoft SQL Server 온라인 설명서에서.  
+ `VARBINARY(MAX)` 개체에 `FILESTREAM` 특성이 있는 <xref:System.Data.Linq.Binary> 열을 매핑할 수는 있지만 <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> 메서드에서 `FILESTREAM` 특성이 있는 열을 자동으로 생성할 수는 없습니다. 에 대 한 자세한 내용은 `FILESTREAM`를 참조 하세요 [FILESTREAM 개요](https://go.microsoft.com/fwlink/?LinkId=115291) Microsoft SQL Server 온라인 설명서에서.  
   
 <a name="BinarySerialization"></a>   
 ### <a name="binary-serialization"></a>이진 Serialization  
- 클래스에서 <xref:System.Runtime.Serialization.ISerializable> 인터페이스를 구현하는 경우 개체를 모든 SQL 이진 필드(`BINARY`, `VARBINARY`, `IMAGE`)로 serialize할 수 있습니다. 개체는 <xref:System.Runtime.Serialization.ISerializable> 인터페이스가 구현되는 방법에 따라 serialize 및 deserialize됩니다. 자세한 내용은 [이진 Serialization](http://go.microsoft.com/fwlink/?LinkId=115581)합니다.  
+ 클래스에서 <xref:System.Runtime.Serialization.ISerializable> 인터페이스를 구현하는 경우 개체를 모든 SQL 이진 필드(`BINARY`, `VARBINARY`, `IMAGE`)로 serialize할 수 있습니다. 개체는 <xref:System.Runtime.Serialization.ISerializable> 인터페이스가 구현되는 방법에 따라 serialize 및 deserialize됩니다. 자세한 내용은 [이진 Serialization](https://go.microsoft.com/fwlink/?LinkId=115581)합니다.  
   
 <a name="MiscMapping"></a>   
 ## <a name="miscellaneous-mapping"></a>기타 매핑  
