@@ -4,12 +4,12 @@ description: HttpClientFactory는 응용 프로그램에서 사용할 `HttpClien
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 07/03/2018
-ms.openlocfilehash: 89382f266eacc97b5e1ee5416c92dbd662427cd1
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 6fd30a9358ca9c07b2a6e2ec591e4c5d7db54ccb
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37878763"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43395542"
 ---
 # <a name="use-httpclientfactory-to-implement-resilient-http-requests"></a>HttpClientFactory를 사용하여 복원력 있는 HTTP 요청 구현
 
@@ -78,7 +78,7 @@ IHttpClientFactory에서 `HttpClient` 개체를 가져올 때마다 `HttpClient`
 풀의 HttpMessageHandler 개체에는 수명이 있으며, 이 수명은 풀의 HttpMessageHandler 인스턴스를 다시 사용할 수 있는 기간입니다. 기본값은 2분이지만, 명명된 클라이언트별 또는 형식화된 클라이언트별로 재정의할 수 있습니다. 이 수명을 재정의하려면 다음 코드와 같이 클라이언트를 만들 때 반환되는 IHttpClientBuilder에서 SetHandlerLifetime()을 호출합니다.
 
 ```csharp
-//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Basket Typed Client 
+//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client 
 services.AddHttpClient<ICatalogService, CatalogService>()
                  .SetHandlerLifetime(TimeSpan.FromMinutes(5));  
 ```
@@ -165,4 +165,4 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 
 
 >[!div class="step-by-step"]
-[이전](explore-custom-http-call-retries-exponential-backoff.md) [다음](implement-http-call-retries-exponential-backoff-polly.md)
+[이전] (explore-custom-http-call-retries-exponential-backoff.md) [다음] (implement-http-call-retries-exponential-backoff-polly.md)

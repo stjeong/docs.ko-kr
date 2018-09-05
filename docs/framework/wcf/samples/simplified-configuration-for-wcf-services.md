@@ -3,11 +3,11 @@ title: WCF 서비스를 위한 단순화된 구성
 ms.date: 03/30/2017
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
 ms.openlocfilehash: ebdf7ab62676bb0c8ac99a5335a3047fcdd5a9b3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: HT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482893"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500715"
 ---
 # <a name="simplified-configuration-for-wcf-services"></a>WCF 서비스를 위한 단순화된 구성
 이 샘플에 구현 하 여 일반적인 서비스 및 Windows Communication Foundation (WCF)를 사용 하 여 클라이언트를 구성 하는 방법을 보여 줍니다. 이 샘플은 다른 모든 기본 기술 샘플의 기준이 됩니다.  
