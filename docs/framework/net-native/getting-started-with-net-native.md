@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 90469469c864e235ff96e7dd2f0f3ebfcef9d7b6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 41679d4041a6a5a7b9b71a451a083c539d6b4c7b
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395468"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43672177"
 ---
 # <a name="getting-started-with-net-native"></a>.NET 네이티브 시작
 새로운 Windows 10용 Windows 앱을 작성하든지 기존 Windows 스토어 앱을 마이그레이션하든지 상관없이 동일한 절차 집합을 따르면 됩니다. [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱을 만들려면 다음 단계를 수행합니다.  
@@ -114,7 +114,7 @@ ms.locfileid: "33395468"
   
 ## <a name="see-also"></a>참고 항목  
  [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [NIB:.NET 네이티브 설치 및 구성](http://msdn.microsoft.com/library/7c9bc375-8b87-4c33-bede-72d513e362ec)  
+ [NIB:.NET 네이티브 설치 및 구성](https://msdn.microsoft.com/library/7c9bc375-8b87-4c33-bede-72d513e362ec)  
  [.NET 네이티브 및 컴파일](../../../docs/framework/net-native/net-native-and-compilation.md)  
  [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)  
  [리플렉션을 사용하는 API](../../../docs/framework/net-native/apis-that-rely-on-reflection.md)  

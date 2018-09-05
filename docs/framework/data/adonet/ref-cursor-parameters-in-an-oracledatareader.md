@@ -5,11 +5,11 @@ dev_langs:
 - vb
 ms.assetid: 801dff0f-2508-45aa-9416-f45d6887740c
 ms.openlocfilehash: 3a2c8949537c749ba30b116a0dc8131336de6092
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399971"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43671584"
 ---
 # <a name="ref-cursor-parameters-in-an-oracledatareader"></a>OracleDataReader의 REF CURSOR 매개 변수
 이 Microsoft Visual Basic 예제에서는 REF CURSOR 매개 변수를 반환하는 PL/SQL 저장 프로시저를 실행하고 값을 <xref:System.Data.OracleClient.OracleDataReader>로 읽습니다.  

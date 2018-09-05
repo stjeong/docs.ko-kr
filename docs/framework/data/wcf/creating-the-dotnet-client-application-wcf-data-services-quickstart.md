@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 41ade767-eeab-437d-9121-9797e8fb8045
 ms.openlocfilehash: 86ded7351d435b3a7077f0354d8a923b33a3f2b6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43423646"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43670758"
 ---
 # <a name="creating-the-net-framework-client-application-wcf-data-services-quickstart"></a>.NET Framework 클라이언트 응용 프로그램 만들기(WCF Data Services 빠른 시작)
 

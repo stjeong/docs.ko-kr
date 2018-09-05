@@ -1,16 +1,16 @@
 ---
 title: 행 상태 및 행 버전
-ms.date: 03/30/2017
+ms.date: 07/19/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
-ms.openlocfilehash: d36556b62a95a7af1097d8fe88597569c81c0111
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 629e8b0bea1cd5c1dd80409acd7c03e0e033b5bc
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32759415"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43672816"
 ---
 # <a name="row-states-and-row-versions"></a>행 상태 및 행 버전
 ADO.NET에서는 행 상태 및 버전을 사용하여 테이블의 행을 관리합니다. 행 상태는 행의 상태를 나타내며, 행 버전에서는 현재 값, 원래 값 및 기본값 등과 같이 수정될 때 행에 저장된 값을 관리합니다. 예를 들어, 행에서 열을 수정한 경우 이 행의 상태는 `Modified`가 되고 두 개의 행 버전이 존재하게 됩니다. 즉, `Current` 버전에는 현재의 행 값이 포함되고 `Original` 버전에는 열이 수정되기 전의 행 값이 포함됩니다.  
@@ -44,7 +44,7 @@ string custID = custRow["CustomerID", DataRowVersion.Original].ToString();
 |DataRowVersion 값|설명|  
 |--------------------------|-----------------|  
 |<xref:System.Data.DataRowVersion.Current>|행의 현재 값입니다. `RowState`가 `Deleted`인 행에는 이 행 버전이 존재하지 않습니다.|  
-|<xref:System.Data.DataRowVersion.Default>|특정 행에 대한 기본 행 버전입니다. `Added`, `Modified` 또는 `Unchanged` 행의 기본 행 버전은 `Current`이고, `Deleted` 행의 기본 행 버전은 `Original`입니다. `Detached` 행의 기본 행 버전은 `Proposed`입니다.|  
+|<xref:System.Data.DataRowVersion.Default>|특정 행에 대한 기본 행 버전입니다. `Added`, `Modified` 또는 `Deleted` 행의 기본 행 버전은 `Current`이고, `Detached` 행의 기본 행 버전은 `Proposed`입니다.|  
 |<xref:System.Data.DataRowVersion.Original>|행의 원래 값입니다. `RowState`가 `Added`인 행에는 이 행 버전이 존재하지 않습니다.|  
 |<xref:System.Data.DataRowVersion.Proposed>|행에 제안된 값입니다. 이 행 버전은 행에서 편집 작업을 수행하는 동안 존재하거나 `DataRowCollection`의 일부가 아닌 행에 대해 존재합니다.|  
   
@@ -98,4 +98,4 @@ foreach (DataRow delRow in delRows)
  [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
  [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  [DataAdapter 및 DataReader](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - lines [WPF], drawing
 ms.assetid: 0513ee01-6b27-4bb3-85f3-3a3e6710d80e
 ms.openlocfilehash: bee343676175098493df347823a3bdbdf17b205f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43398447"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43671188"
 ---
 # <a name="how-to-draw-a-line"></a>방법: 선 그리기
 이 예제에서는 사용 하 여 선을 그리는 방법을 보여 줍니다.는 <xref:System.Windows.Shapes.Line> 요소입니다.  

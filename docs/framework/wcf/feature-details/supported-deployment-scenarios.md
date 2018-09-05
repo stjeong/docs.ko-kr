@@ -3,11 +3,11 @@ title: 지원되는 배포 시나리오
 ms.date: 03/30/2017
 ms.assetid: 3399f208-3504-4c70-a22e-a7c02a8b94a6
 ms.openlocfilehash: a86fd9d50b2bdfa2daafa3bec98802d10a1efef5
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43421075"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43672620"
 ---
 # <a name="supported-deployment-scenarios"></a>지원되는 배포 시나리오
 부분적으로 신뢰할 수 있는 응용 프로그램에서 사용 하기 위해 지원 되는 Windows Communication Foundation (WCF) 기능의 하위 집합은 WCF를 사용 하 여 전부는 아니지만 일부 시나리오의 요구 사항을 충족 하도록 설계 되었습니다. 서버의 WCF 인터넷 규모의 요구 사항을 만족 공유 타사 응용 프로그램을 실행 하는 호스팅 공급자에는 [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] 보통 신뢰 권한 보안상의 이유로 집합입니다. 와 같은 배포 기술의 요구 사항을 충족 하기 위해 클라이언트에서 WCF 부분 신뢰 지원이 디자인 되었습니다 [ClickOnce 배포](https://go.microsoft.com/fwlink/?LinkId=83712) 또는 [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)]의 원활 하 고 보안을 허용 하는 XAML 브라우저 응용 프로그램 기술 신뢰할 수 없는 사이트에서 데스크톱 응용 프로그램 배포입니다.  

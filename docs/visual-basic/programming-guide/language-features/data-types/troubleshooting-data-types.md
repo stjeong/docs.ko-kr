@@ -19,12 +19,12 @@ helpviewer_keywords:
 - floating-point numbers [Visual Basic], comparison
 - floating-point numbers
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
-ms.openlocfilehash: c5ff9d097c0660956a9751a23511d8273766227c
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 9bbc7f51de9899354184d051d8f1a584651dd030
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245676"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43671793"
 ---
 # <a name="troubleshooting-data-types-visual-basic"></a>데이터 형식 문제 해결(Visual Basic)
 이 페이지는 기본 데이터 형식에 대 한 작업을 수행할 때 발생할 수 있는 몇 가지 일반적인 문제를 나열 합니다.  
@@ -117,6 +117,6 @@ ms.locfileid: "39245676"
  [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
  [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
  [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
  [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [데이터 형식의 효율적 사용](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

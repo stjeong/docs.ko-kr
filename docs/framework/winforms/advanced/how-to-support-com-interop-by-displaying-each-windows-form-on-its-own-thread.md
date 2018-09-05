@@ -10,12 +10,12 @@ helpviewer_keywords:
 - ActiveX controls [Windows Forms], COM interop
 - Windows Forms, interop
 ms.assetid: a9e04765-d2de-4389-a494-a9a6d07aa6ee
-ms.openlocfilehash: c78bcc8d784fc481af2449f2d81cfde42891e7fe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d0d8dfd4a19b31be790d2643847396d136098278
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33522891"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43673537"
 ---
 # <a name="how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread"></a>방법: 각 Windows Form을 별개의 스레드에서 표시하여 COM Interop 지원
 <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> 메서드를 통해 만들 수 있는 폼을 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 메시지 루프에 표시하여 COM 상호 운용성 문제를 해결할 수 있습니다.  
@@ -26,9 +26,9 @@ ms.locfileid: "33522891"
   
 -   각 Windows Form을 별도 스레드에 표시합니다.  
   
- Visual Studio에서는이 기능이 광범위 하 게 지원이 있습니다.  
+ Visual Studio에서이 기능에 대해 폭넓게 지원이 됩니다.  
   
- [연습: 각 Windows Form을 별개의 스레드에서 표시하여 COM Interop 지원](http://msdn.microsoft.com/library/ms233639\(v=vs.110\))을 참조하세요.  
+ 도 참조 하세요 [연습:을 별개의 스레드에서 각 Windows Form을 표시 하 여 COM Interop 지원](https://msdn.microsoft.com/library/ms233639\(v=vs.110\))합니다.  
   
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 별도 스레드에서 폼을 표시하고 <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> 메서드를 호출하여 해당 스레드에서 Windows Forms 메시지 펌프를 시작하는 방법을 보여 줍니다. 이 접근 방식을 사용하려면 <xref:System.Windows.Forms.Control.Invoke%2A> 메서드를 사용하여 관리되지 않는 응용 프로그램의 폼 호출을 모두 마샬링해야 합니다.  

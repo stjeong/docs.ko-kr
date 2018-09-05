@@ -11,11 +11,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 95d383f44d84bb22e6fcc9fca159f8f5efa87434
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43465462"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43673963"
 ---
 # <a name="ui-automation-clients-for-managed-code-how-to-topics"></a>관리 코드 방법 항목의 UI 자동화 클라이언트
 > [!NOTE]

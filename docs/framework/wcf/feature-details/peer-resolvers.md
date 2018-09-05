@@ -3,11 +3,11 @@ title: 피어 확인자
 ms.date: 03/30/2017
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c
 ms.openlocfilehash: 01320d98953c8fdc057aeec840ace4b818fcf115
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43385083"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43670599"
 ---
 # <a name="peer-resolvers"></a>피어 확인자
 메시에 연결하려면 피어 노드에 다른 노드의 IP 주소가 필요합니다. IP 주소를 가져오려면 메시 ID를 사용하고 해당 메시 ID로 등록된 노드에 해당하는 주소 목록을 반환하는 확인자 서비스에 연결합니다. 확인자는 메시의 각 노드가 서비스에 등록되게 하여 만드는 등록된 주소 목록을 유지합니다.  

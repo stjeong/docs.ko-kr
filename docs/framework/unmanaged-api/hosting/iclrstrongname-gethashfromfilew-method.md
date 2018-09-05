@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 87600781c90fe5e6e049af74a68859955153f3b2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: acfa5c138faa47c96600530ab923de102b173ed6
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33433343"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43672736"
 ---
 # <a name="iclrstrongnamegethashfromfilew-method"></a>ICLRStrongName::GetHashFromFileW 메서드
-유니코드 문자열에 의해 지정 된 파일의 내용에 대 한 해시를 생성 합니다.  
+유니코드 문자열로 지정된 파일 내용에 대해 해시를 생성합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,34 +41,34 @@ HRESULT GetHashFromFileW (
   
 #### <a name="parameters"></a>매개 변수  
  `wszFilePath`  
- [in] 해시 파일의 유니코드 이름입니다.  
+ [in] 유니코드 해시 파일의 이름입니다.  
   
  `piHashAlg`  
- [out에서] 해시를 생성할 때 사용 하는 알고리즘입니다. 유효한 알고리즘은 Win32 CryptoAPI에 의해 정의 된 것입니다. 경우 `piHashAlg` CALG_SHA-1은 사용 되는 기본 알고리즘 0으로 설정 됩니다.  
+ [out에서] 해시를 생성할 때 사용할 알고리즘입니다. 유효한 알고리즘은 Win32 CryptoAPI에 의해 정의 된 것입니다. 경우 `piHashAlg` CALG_SHA-1은 사용 하는 기본 알고리즘 0으로 설정 됩니다.  
   
  `pbHash`  
  [out] 생성된 된 해시를 포함 하는 바이트 배열입니다.  
   
  `cchHash`  
- [in] 가 가리키는 버퍼의 최대 크기 `pbHash`합니다.  
+ [in] 가리키는 버퍼의 최대 크기 `pbHash`합니다.  
   
  `pchHash`  
- [out] 를 바이트 단위로 크기의 `pbHash`합니다.  
+ [out] 크기 (바이트)의 `pbHash`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- `S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값 (참조 [일반적인 HRESULT 값](http://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).  
+ `S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 동일는 [iclrstrongname:: Gethashfromfile](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md) 메서드를 제외 하는 파일 이름 지정은 ANSI 대신 유니코드입니다.  
+ 이 메서드는 동일 합니다 [iclrstrongname:: Gethashfromfile](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md) 메서드를 제외 하 고 파일 이름을 지정은 ANSI 대신 유니코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** MetaHost.h  
   
  **라이브러리:** MSCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [GetHashFromFile 메서드](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md)  

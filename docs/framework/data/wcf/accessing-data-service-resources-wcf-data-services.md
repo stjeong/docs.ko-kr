@@ -9,11 +9,11 @@ helpviewer_keywords:
 - WCF Data Services, accessing data
 ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
 ms.openlocfilehash: d4f4de1fa12418bd56f9680e5414bfe7dd0aa128
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43422612"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43672048"
 ---
 # <a name="accessing-data-service-resources-wcf-data-services"></a>데이터 서비스 리소스에 액세스(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 지원 된 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] Uri로 주소를 지정할 수 있는 리소스를 사용 하 여 피드로 데이터를 노출 하 합니다. 이러한 리소스의 엔터티-관계 규칙에 따라 표시 됩니다는 [엔터티 데이터 모델](../../../../docs/framework/data/adonet/entity-data-model.md)합니다. 이 모델에서 엔터티는 고객, 주문, 항목 및 제품과 같이 응용 프로그램 도메인의 데이터 형식인 데이터 운영 단위를 나타냅니다. REST(Representational State Transfer)의 의미 체계, 특히 GET, PUT, POST, DELETE 등의 표준 HTTP 동사를 사용하여 엔터티 데이터에 액세스하고 변경합니다.  

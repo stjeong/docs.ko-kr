@@ -12,11 +12,11 @@ helpviewer_keywords:
 - inferred variable declaration
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
 ms.openlocfilehash: f5c824df43997282d50c9c2a458fb1d854cc160a
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245793"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43672587"
 ---
 # <a name="option-infer-statement"></a>Option Infer 문
 변수를 선언할 때 지역 형식 유추를 사용하도록 설정합니다.  
@@ -41,12 +41,12 @@ Option Infer { On | Off }
   
  다음 그림에서는 `Option Infer`가 설정되어 있습니다. `Dim someVar = 2` 선언의 변수는 형식 유추에 의해 정수로 선언됩니다.  
   
- ![선언의 IntelliSense 보기입니다. ] (../../../visual-basic/language-reference/statements/media/optioninferasinteger.png "optionInferAsInteger")  
+ ![선언의 IntelliSense 보기입니다. ](../../../visual-basic/language-reference/statements/media/optioninferasinteger.png "optionInferAsInteger")  
 Option Infer가 설정된 경우의 IntelliSense  
   
  다음 그림에서는 `Option Infer`가 해제되어 있습니다. `Dim someVar = 2` 선언의 변수는 형식 유추에 의해 `Object`로 선언됩니다. 이 예제에서는 합니다 **Option Strict** 로 설정 되어 **해제** 에 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)합니다.  
   
- ![선언의 IntelliSense 보기입니다. ] (../../../visual-basic/language-reference/statements/media/optioninferasobject.png "optionInferAsObject")  
+ ![선언의 IntelliSense 보기입니다. ](../../../visual-basic/language-reference/statements/media/optioninferasobject.png "optionInferAsObject")  
 Option Infer가 해제된 경우의 IntelliSense  
   
 > [!NOTE]
@@ -83,12 +83,12 @@ Option Infer가 해제된 경우의 IntelliSense
 |예|아니요|`Dim qty As Integer`|변수는 데이터 형식의 기본값으로 초기화됩니다. 자세한 내용은 [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)합니다.|  
 |예|예|`Dim qty  As Integer = 5`|이니셜라이저의 데이터 형식을 지정한 데이터 형식으로 변환할 수 없으면 컴파일 시간 오류가 발생합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `Option Infer` 문이 지역 형식 유추를 사용하도록 설정하는 방법을 보여 줍니다.  
   
  [!code-vb[VbVbalrTypeInference#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_1.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 변수가 `Object`로 식별되는 경우 런타임 형식이 달라질 수 있음을 보여 줍니다.  
   
  [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  

@@ -5,11 +5,11 @@ f1_keywords:
 - vbrMouse_NoWheelIsPresent
 ms.assetid: e924ffba-4af1-4247-9a6f-d19a03738f62
 ms.openlocfilehash: bfb8ea0d5d7a22bd66f477216129ff834023f4ba
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43463673"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43674007"
 ---
 # <a name="no-mouse-wheel-is-present"></a>마우스 휠이 없습니다.
 `My.Computer.Mouse.WheelScrollLines` 속성을 호출했지만 마우스에 스크롤 휠이 없습니다.  

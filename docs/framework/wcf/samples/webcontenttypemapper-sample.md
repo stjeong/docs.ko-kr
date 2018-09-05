@@ -2,17 +2,17 @@
 title: WebContentTypeMapper 샘플
 ms.date: 03/30/2017
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
-ms.openlocfilehash: 89f13599e23f3e60ae4d9bc973debc436f46c147
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 91e5cca478521a343f7528f878f114b85eff2d08
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33806970"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43674195"
 ---
 # <a name="webcontenttypemapper-sample"></a>WebContentTypeMapper 샘플
-이 샘플에는 새 콘텐츠 형식을 Windows Communication Foundation (WCF) 메시지 본문 형식에 매핑하는 방법을 보여 줍니다.  
+이 샘플에는 Windows Communication Foundation (WCF) 메시지 본문 형식에 새 콘텐츠 형식을 매핑하는 방법을 보여 줍니다.  
   
- <xref:System.ServiceModel.Description.WebHttpEndpoint> 요소에 따라 WCF가 JSON, XML 또는 원시 이진 메시지는 동일한 끝점에서 수신 하는 웹 메시지 인코더를 연결 합니다. 인코더는 요청의 HTTP 콘텐츠 형식을 확인하여 메시지의 본문 형식을 확인합니다. 이 샘플에서는 콘텐츠 형식과 본문 형식 간의 매핑을 사용자가 제어할 수 있게 하는 <xref:System.ServiceModel.Channels.WebContentTypeMapper> 클래스를 소개합니다.  
+ <xref:System.ServiceModel.Description.WebHttpEndpoint> 요소 WCF JSON, XML 또는 원시 이진 메시지의 동일한 끝점에서 수신 하도록 허용 하는 웹 메시지 인코더에 연결 합니다. 인코더는 요청의 HTTP 콘텐츠 형식을 확인하여 메시지의 본문 형식을 확인합니다. 이 샘플에서는 콘텐츠 형식과 본문 형식 간의 매핑을 사용자가 제어할 수 있게 하는 <xref:System.ServiceModel.Channels.WebContentTypeMapper> 클래스를 소개합니다.  
   
  WCF는 콘텐츠 형식에 대 한 기본 매핑 집합을 제공합니다. 예를 들어, `application/json`은  JSON에 매핑되고 `text/xml`은 XML에 매핑됩니다. JSON 또는 XML에 매핑되지 않는 모든 콘텐츠 형식은 원시 이진 형식에 매핑됩니다.  
   
@@ -54,18 +54,18 @@ public class JsonContentTypeMapper : WebContentTypeMapper
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
-2.  에 설명 된 대로 WebContentTypeMapperSample.sln 솔루션을 구축 [Windows Communication Foundation 샘플 빌드](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
+2.  에 설명 된 대로 WebContentTypeMapperSample.sln 솔루션을 빌드합니다 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
-3.  로 이동 http://localhost/ServiceModelSamples/JCTMClientPage.htm (프로젝트 디렉터리 내에서 브라우저를 사용 하 여 JCTMClientPage.htm를 열지 않습니다).  
+3.  이동할 http://localhost/ServiceModelSamples/JCTMClientPage.htm (프로젝트 디렉터리 내에서 브라우저에서 사용 하 여 JCTMClientPage.htm를 열고 수행).  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Ajax\WebContentTypeMapper`  
   

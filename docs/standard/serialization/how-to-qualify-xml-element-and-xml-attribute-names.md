@@ -10,11 +10,11 @@ helpviewer_keywords:
 - XML namespaces, qualifying elements and names in
 ms.assetid: 44719f90-7e15-42e8-a9e2-282287e2b5bf
 ms.openlocfilehash: 6b4d58f6b5bf23cbce2ace8fb40730d7b73994de
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930884"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43673424"
 ---
 # <a name="how-to-qualify-xml-element-and-xml-attribute-names"></a>방법: XML 요소 및 XML 특성 이름 한정
 
@@ -38,7 +38,7 @@ XML 네임스페이스는 XML 문서에서 XML 요소 및 XML 특성의 이름�
 
 5. `XmlSerializerNamespaces`의 `Serialize` 메서드에 `XmlSerializer`를 전달합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `XmlSerializerNamespaces`를 만들고 두 개의 접두사와 네임스페이스 쌍을 개체에 추가합니다. 코드에서는 `XmlSerializer` 클래스의 인스턴스를 serialize하는 데 사용되는 `Books`를 만듭니다. 코드는 `Serialize`를 사용하여 `XmlSerializerNamespaces` 메서드를 호출하여 XML이 접두사가 지정된 네임스페이스를 포함할 수 있게 됩니다.
 
