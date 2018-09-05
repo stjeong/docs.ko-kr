@@ -2,12 +2,12 @@
 title: 제약 조건(F#)
 description: '제네릭 형식 또는 함수 형식 인수에 대 한 요구 사항을 지정 하려면 제네릭 형식 매개 변수에 적용 되는 F # 제약 조건에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 7af064159d2722256f0db8286a99fc02435a99cd
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 0e79cf5b1a25ada49bf30416f85c1d59f8f2fd23
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936867"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525607"
 ---
 # <a name="constraints"></a>제약 조건
 
@@ -35,7 +35,7 @@ type-parameter-list when constraint1 [ and constraint2]
 |대리자 제약 조건|: 위임&lt;*튜플 매개 변수 형식*, *반환 형식*&gt;|제공된 된 형식 인수가 지정 하는 대리자 형식 이어야 하며 값을 반환 합니다. 일반적인 용도로 적합 하지 합니다.|
 |비교 제약 조건|: 비교|제공된 된 형식 비교를 지원 해야 합니다.|
 |동등 제약 조건|: 같음|제공된 된 형식 동등을 지원 해야 합니다.|
-|관리 되지 않는 제약 조건|: 관리 되지 않는|제공된 된 형식에는 관리 되지 않는 형식 이어야 합니다. 관리 되지 않는 형식은 특정 기본 형식 (`sbyte`, `byte`, `char`, `nativeint`, `unativeint`를 `float32`, `float`를 `int16`, `uint16`, `int32`를 `uint32`, `int64`, `uint64`, 또는 `decimal`), 열거형 형식 `nativeptr&lt;_&gt;`, 또는 해당 필드는 모두 관리 되지 않는 형식 제네릭이 아닌 구조체입니다.|
+|관리 되지 않는 제약 조건|: 관리 되지 않는|제공된 된 형식에는 관리 되지 않는 형식 이어야 합니다. 관리 되지 않는 형식은 특정 기본 형식 (`sbyte`, `byte`, `char`, `nativeint`, `unativeint`를 `float32`, `float`를 `int16`, `uint16`, `int32`를 `uint32`, `int64`, `uint64`, 또는 `decimal`), 열거형 형식 `nativeptr<_>`, 또는 해당 필드는 모두 관리 되지 않는 형식 제네릭이 아닌 구조체입니다.|
 코드에 일반적 제약 조건 형식이 있지만 아닌 형식에서 사용할 수 있는 기능을 사용 하는 경우 제약 조건을 추가 해야 합니다. 예를 들어, 형식 제약 조건을 사용 하 여 클래스 형식을 지정 하는 경우에 제네릭 함수 또는 형식에 해당 클래스의 메서드 중 하나를 사용할 수 있습니다.
 
 제약 조건을 지정 하는 경우에 필요 형식 매개 변수를 명시적으로 작성, 제약 조건 없이 컴파일러는 기능을 사용 하는 형식에 대해 런타임 시 제공 될 수도 있습니다는 모든 형식에 사용할 수 있도록 확인할 방법이 없어 때문에 매개 변수입니다.
