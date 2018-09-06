@@ -8,11 +8,11 @@ helpviewer_keywords:
 - interoperability [WPF]
 ms.assetid: a1f7a90c-0bbb-4781-8c3c-8cc8bef2488d
 ms.openlocfilehash: 15cab9266af5840aa4b37a62b71bd5010b7a859a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43535644"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43741022"
 ---
 # <a name="walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time"></a>연습: 디자인 타임에 호스팅된 WPF 요소의 속성 변경
 이 연습에서는 Windows Forms에 호스트된 WPF(Windows Presentation Foundation) 컨트롤의 속성 값을 변경하는 방법을 보여 줍니다.  

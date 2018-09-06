@@ -2,12 +2,12 @@
 title: '자습서: 형식 공급자 (F #) 만들기'
 description: '기본 개념을 보여 주는 몇 가지 간단한 형식 공급자를 검사 하 여 F # 3.0에서 사용자 고유의 F # 형식 공급자를 만드는 방법에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 25b11a0c6328fc74832e13b6380c983fb14a74a0
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 3c998377b2c3a408d536ef416f3799bf7f04b6bd
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499330"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43745728"
 ---
 # <a name="tutorial-create-a-type-provider"></a>자습서: 형식 공급자 만들기
 
@@ -24,7 +24,6 @@ F # 에코 시스템을 자주 사용 되는 인터넷 및 엔터프라이즈 �
 - [FSharp.Data.TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) 는 이전 집합 SQL, Entity Framework, OData, WSDL에 해당 하는 데이터의 서비스에 액세스 하기 위한.NET Framework 프로그래밍에만 사용에 대 한 형식 공급자입니다.
 
 필요한 경우에 사용자 지정 형식 공급자를 만들 수 있습니다 하거나 다른 사람이 만든 형식 공급자를 참조할 수 있습니다. 예를 들어, 조직 점점 숫자로 명명 된 데이터 집합의 각 고유한 안정적인 데이터 스키마를 제공 하는 데이터 서비스가 있을 수 있습니다. 스키마를 읽고 프로그래머에 게 강력한 형식의 방식으로 현재 데이터 집합을 제공 하는 형식 공급자를 만들 수 있습니다.
-
 
 ## <a name="before-you-start"></a>시작하기 전에
 
@@ -51,7 +50,6 @@ F # 에코 시스템을 자주 사용 되는 인터넷 및 엔터프라이즈 �
 - 프로그램 실행 중 변경 됩니까?
 
 형식 공급자가 스키마 런타임에 및 컴파일된 코드의 수명 동안 안정적인 상황에 가장 적합 합니다.
-
 
 ## <a name="a-simple-type-provider"></a>단순 형식 공급자
 
@@ -93,8 +91,7 @@ type Type100 =
 
 형식 및 제공 하는 멤버 집합을 정적으로 알려지지는 note 합니다. 이 예제에서는 스키마에 의존 하는 형식을 제공 하는 공급자의 기능을 활용 하지 않습니다. 형식 공급자의 구현 코드를 다음에 설명 된 및 세부 정보는이 항목의 뒷부분에 나오는 섹션에 설명 되어 있습니다.
 
-
->[!WARNING] 
+>[!WARNING]
 이 코드와 온라인 샘플 간의 차이가 있을 수 있습니다.
 
 ```fsharp
@@ -168,7 +165,6 @@ devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 대신 Visual Studio를 열고, 디버그 메뉴를 열고, 선택 `Debug/Attach to process…`, 및 다른 연결 `devenv` 스크립트를 편집 하는 프로세스입니다. 이 메서드를 사용 하 여 대화형으로 식을 (포함 된 완전 한 IntelliSense 및 기타 기능) 두 번째 인스턴스를 입력 하 여 형식 공급자에서 특정 논리를 쉽게 대상 수 있습니다.
 
 내 코드만 생성 된 코드의 오류를 확인 하려면 디버깅을 비활성화할 수 있습니다. 사용 하도록 설정 하거나이 기능을 사용 하지 않도록 설정 하는 방법에 대 한 정보를 참조 하세요 [디버거로 코드 탐색](/visualstudio/debugger/navigating-through-code-with-the-debugger)합니다. 또한 첫째 예외를 열어 알림을 설정할 수도 있습니다는 `Debug` 메뉴를 선택한 다음 `Exceptions` 열려면 Ctrl + Alt + E 키를 선택 하거나를 `Exceptions` 대화 상자. 해당 대화 상자에서 아래 `Common Language Runtime Exceptions`를 선택 합니다 `Thrown` 확인란 합니다.
-
 
 ### <a name="implementation-of-the-type-provider"></a>형식 공급자의 구현
 
@@ -376,7 +372,6 @@ t.AddMembersDelayed(fun () ->
 
 이 예제에서는 제공 된 각 입력 형식 지워집니다 `obj`, 고 형식의 모든 사용 형식으로 표시 됩니다 `obj` 컴파일된 코드에서. 사실,이 예제에서 기본 개체는 문자열 이지만 형식으로 표시 됩니다 `System.Object` .NET에서 컴파일된 코드입니다. 형식 지우기의 모든 사용을 사용 하 여 명시적 boxing을 사용할 수 있습니다, unboxing, 캐스팅 및 손상에 지울 형식. 이 경우 개체를 사용 하는 경우 잘못 된 캐스팅 예외가 발생할 수 있습니다. 공급자 런타임 false 표현 으로부터 보호 하기 위해 개인 표현 형식 자체를 정의할 수 있습니다. F # 자체의 지워진된 형식을 정의할 수 없습니다. 제공 된 형식만 지워질 수 있습니다. 모두 실제 결과 이해 해야 하 고 형식 공급자에서 제공 하는 공급자에 지워진된 형식 지울 형식 중 하나를 사용 하 여 의미 체계. 지워진된 정수 형식을 실제.NET 형식이 없습니다. 따라서 정확 하 게 반영 된 형식에 대해 수행할 수 없습니다 하 고 런타임 캐스트 및 정확한 런타임 형식 의미 체계에 의존 하는 다른 기술을 사용 하는 경우에 지워진된 형식을 파괴할 수 있습니다. 지워진 형식의 subversion 런타임에 형식 캐스팅 예외가 자주 발생합니다.
 
-
 ### <a name="choosing-representations-for-erased-provided-types"></a>제공 된 형식 삭제에 대 한 표현을 선택
 
 지워진 제공 된 형식의 사용을 표현이 없는 필요 합니다. 예를 들어, 지워진는 제공 형식은 정적 속성 및 멤버와 없는 생성자만 포함 될 수 있으며 메서드나 속성이 없는 형식의 인스턴스를 반환 합니다. 수에 도달 하면 지워진된는 인스턴스의 형식을 제공 하는 경우에 다음과 같은 질문을 고려해 야 합니다.
@@ -435,11 +430,9 @@ ProvidedConstructor(…, InvokeCode = (fun args -> <@@ new DataObject() @@>), �
 
 이전 섹션에는 다양 한 형식, 속성 및 메서드를 제공 하는 간단한 지우기 형식 공급자를 만드는 방법을 설명 합니다. 또한이 섹션에서는 형식 지우기, 등의 일부 이점이 지워진된 형식에서 형식 공급자를 제공 하는 단점의 개념을 설명 하 고 지워진 형식 표현을 설명 합니다.
 
-
 ## <a name="a-type-provider-that-uses-static-parameters"></a>정적 매개 변수를 사용 하는 형식 공급자
 
 정적 데이터에서 형식 공급자를 매개 변수화 하는 기능 공급자는 로컬 또는 원격 데이터에 액세스할 필요 하지 않습니다 하는 경우에도 많은 흥미로운 시나리오를 수 있습니다. 이 섹션에서는 이러한 공급자를 결합 하는 기본 방법을 배웁니다.
-
 
 ### <a name="type-checked-regex-provider"></a>Regex 공급자를 확인 하는 입력
 
@@ -737,16 +730,13 @@ do ()
 
 이 섹션에서는 정적 매개 변수에서 작동 하는 형식 공급자를 만드는 방법을 설명 합니다. 공급자는 static 매개 변수를 확인 하 고 해당 값을 기반으로 하는 작업을 제공 합니다.
 
-
 ## <a name="a-type-provider-that-is-backed-by-local-data"></a>로컬 데이터에서 지 원하는 형식 공급자
 
 자주 형식 공급자 정적 매개 변수 뿐만 아니라 로컬 또는 원격 시스템에서 정보에 따라 Api를 제공할 수도 있습니다. 이 섹션에서는 로컬 데이터 파일과 같은 로컬 데이터를 기반으로 하는 형식 공급자를 설명 합니다.
 
-
 ### <a name="simple-csv-file-provider"></a>간단한 CSV 파일 공급자
 
 간단한 예로, 형식 공급자를 쉼표로 구분 된 값 (CSV) 형식으로 과학적 데이터에 액세스 하기 위한 것이 좋습니다. 이 섹션에서는 CSV 파일에는 다음 표에서 같이 부동 소수점 데이터 뒤에 머리글 행을 포함 하는 것을 가정:
-
 
 |거리 (미터)|시간 (초)|
 |----------------|-------------|
@@ -893,11 +883,9 @@ type public MiniCsvProvider(cfg:TypeProviderConfig) as this =
 
 이 섹션에서는 데이터 원본 자체에 포함 된 간단한 스키마를 사용 하 여 로컬 데이터 원본에 대 한 형식 공급자를 만드는 방법을 설명 합니다.
 
-
 ## <a name="going-further"></a>계속 진행
 
 다음 섹션에는 추가 연구에 대 한 제안이 포함 됩니다.
-
 
 ### <a name="a-look-at-the-compiled-code-for-erased-types"></a>지워진된 형식에 대해 컴파일된 코드 살펴보기
 
@@ -939,8 +927,8 @@ IL_0017:  ret
 
 형식의 모든 멘 션 하는 예제와 같이 `Type1` 하며 `InstanceProperty` 런타임 형식에 대 한 작업만 관련 종료 속성을 지워졌을입니다.
 
-
 ### <a name="design-and-naming-conventions-for-type-providers"></a>디자인 및 형식 공급자에 대 한 명명 규칙
+
 형식 공급자를 작성할 때 다음과 같은 규칙을 확인 합니다.
 
 **연결 프로토콜에 대 한 공급자** OData 또는 SQL 연결과 같은 데이터 및 서비스 연결 프로토콜에 대 한 대부분의 공급자 Dll의 이름에서 일반적으로 끝나야 `TypeProvider` 또는 `TypeProviders`합니다. 예를 들어 다음 문자열 유사한 DLL 이름을 사용 합니다.
@@ -980,13 +968,12 @@ let data = Fabrikam.Data.Freebase.Astronomy.Asteroids
 
 자세한 내용은 참조는 `GetConnection` 이 항목의 뒷부분에 설명 된 규칙을 디자인 합니다.
 
-
 ### <a name="design-patterns-for-type-providers"></a>형식 공급자에 대 한 디자인 패턴
 
 다음 섹션에서는 형식 공급자를 작성할 때 사용할 수는 디자인 패턴에 설명 합니다.
 
-
 #### <a name="the-getconnection-design-pattern"></a>GetConnection 디자인 패턴
+
 대부분의 형식 공급자를 사용 하 여에 써야 합니다 `GetConnection` 다음 예와 같이 FSharp.Data.TypeProviders.dll에서 형식 공급자에서 사용 되는 패턴:
 
 ```fsharp
@@ -1147,10 +1134,7 @@ F # 형식 공급자 메커니즘은 다음 제한 사항이 있습니다.
 
   인쇄-stdout 로깅을 사용할 수 있습니다.
 
+## <a name="see-also"></a>참고자료
 
-## <a name="see-also"></a>참고 항목
-
-* [형식 공급자](index.md)
-
-* [형식 공급자 SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)
-
+- [형식 공급자](index.md)
+- [형식 공급자 SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

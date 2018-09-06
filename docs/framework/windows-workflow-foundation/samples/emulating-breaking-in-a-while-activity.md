@@ -3,11 +3,11 @@ title: While 활동의 열거 중단
 ms.date: 03/30/2017
 ms.assetid: ddff715d-d623-4b54-b841-60bacbc3ca21
 ms.openlocfilehash: 4938e07364609520f6528688877bce112be26d3f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43560427"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43773946"
 ---
 # <a name="emulating-breaking-in-a-while-activity"></a>While 활동의 열거 중단
 이 샘플에서는 <xref:System.Activities.Statements.DoWhile>, <xref:System.Activities.Statements.ForEach%601>, <xref:System.Activities.Statements.While> 및 <xref:System.Activities.Statements.ParallelForEach%601> 활동의 루프 메커니즘을 중단하는 방법을 보여 줍니다.  

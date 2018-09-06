@@ -2,12 +2,12 @@
 title: '값 옵션 (F #)'
 description: '옵션 종류의 구조체 버전인는 F # 값 옵션 형식에 대해 알아봅니다.'
 ms.date: 06/16/2018
-ms.openlocfilehash: 4c255cbbcfd9cb480230de09cd370a401c87343a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5647ef61725401b10a6045b14eef11f5b041e3e9
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43527585"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43747502"
 ---
 # <a name="value-options"></a>값 옵션
 
@@ -80,4 +80,4 @@ val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T
 
 ## <a name="see-also"></a>참고자료
 
-[옵션](options.md)
+- [옵션](options.md)

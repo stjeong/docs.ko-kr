@@ -3,11 +3,11 @@ title: DynamicActivity 만들기
 ms.date: 03/30/2017
 ms.assetid: d8ebe82f-98c8-4452-aed7-2c60a512b097
 ms.openlocfilehash: 270066fafd5c71b2a720ca305433159c172872aa
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43534019"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43777489"
 ---
 # <a name="dynamicactivity-creation"></a>DynamicActivity 만들기
 이 샘플에서는 <xref:System.Activities.DynamicActivity> 활동을 사용하여 런타임에 활동을 만드는 두 가지 방법을 보여 줍니다.  

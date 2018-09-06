@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 0e306067-5720-4782-9719-2286570a7e47
 ms.openlocfilehash: 1f4090cbffc4177c4b9edd08381e8dd294ae0c41
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43476107"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43740902"
 ---
 # <a name="method-based-query-syntax-examples-aggregate-operators"></a>메서드 기반 쿼리 구문 예제: 집계 연산자
 이 항목의 예제에 사용 하는 방법을 보여 줍니다 합니다 <xref:System.Linq.Enumerable.Aggregate%2A>, <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Count%2A>, <xref:System.Linq.Enumerable.LongCount%2A>, <xref:System.Linq.Enumerable.Max%2A>를 <xref:System.Linq.Enumerable.Min%2A>, 및 <xref:System.Linq.Enumerable.Sum%2A> 쿼리 하는 메서드는 [AdventureWorks Sales 모델](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) 메서드 기반 쿼리 구문을 사용 합니다. 이 예제에서 사용하는 AdventureWorks Sales 모델에서는 AdventureWorks 샘플 데이터베이스의 Contact, Address, Product, SalesOrderHeader 및 SalesOrderDetail 테이블을 사용합니다.  

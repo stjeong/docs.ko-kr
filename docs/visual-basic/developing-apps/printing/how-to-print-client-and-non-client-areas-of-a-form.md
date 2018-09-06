@@ -9,11 +9,11 @@ helpviewer_keywords:
 - non-client area [Visual Basic], printing
 ms.assetid: 856bb0e4-dbc3-47e2-81cd-4b376cf07757
 ms.openlocfilehash: 5109993146a8d53d5cbeebcc52c018a6f0f57ed5
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43408441"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43723277"
 ---
 # <a name="how-to-print-client-and-non-client-areas-of-a-form-visual-basic"></a>방법: 폼의 클라이언트 영역 및 비클라이언트 영역 인쇄(Visual Basic)
 <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> 구성 요소를 사용하면 <xref:System.Drawing.Printing.PrintDocument> 구성 요소를 사용하지 않고 화면에 표시된 대로 정확히 폼 이미지를 빠르게 인쇄할 수 있습니다. 다음 절차에서는 클라이언트 영역 및 비클라이언트 영역을 비롯하여 폼을 인쇄하는 방법을 보여 줍니다. 비클라이언트 영역에는 제목 표시줄, 테두리 및 스크롤 막대가 포함됩니다.  

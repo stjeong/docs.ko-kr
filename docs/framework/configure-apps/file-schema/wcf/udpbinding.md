@@ -3,11 +3,11 @@ title: '&lt;udpBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
 ms.openlocfilehash: e17919ead6d6f7656c39d18b0ce1817c18da524a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43553094"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43740272"
 ---
 # <a name="ltudpbindinggt"></a>&lt;udpBinding&gt;
 <xref:System.ServiceModel.UdpBinding> 바인딩을 구성하는 데 사용되는 구성 요소입니다.  

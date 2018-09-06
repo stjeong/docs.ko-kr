@@ -19,11 +19,11 @@ helpviewer_keywords:
 - declaring user-defined events
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
 ms.openlocfilehash: 5ae25cbca73f7c8e767cad0ac332d77c306724a1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43538909"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43739099"
 ---
 # <a name="event-statement"></a>Event 문
 사용자 정의된 이벤트를 선언합니다.  

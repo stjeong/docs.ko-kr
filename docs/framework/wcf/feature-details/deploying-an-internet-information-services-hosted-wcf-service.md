@@ -3,11 +3,11 @@ title: 인터넷 정보 서비스에서 호스트하는 WCF 서비스 배포
 ms.date: 03/30/2017
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
 ms.openlocfilehash: b2b58de703a0864ac0666cb4738a95726e28bcaf
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43395517"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43740103"
 ---
 # <a name="deploying-an-internet-information-services-hosted-wcf-service"></a>인터넷 정보 서비스에서 호스트하는 WCF 서비스 배포
 인터넷 정보 서비스 (IIS)에서 호스트 되는 Windows Communication Foundation (WCF) 서비스를 개발 및 배포에 다음 작업으로 이루어집니다.  

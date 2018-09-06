@@ -3,11 +3,11 @@ title: 워크플로 솔루션에 서비스 참조 추가
 ms.date: 03/30/2017
 ms.assetid: 83574cf3-9803-49bc-837f-432936dc9c76
 ms.openlocfilehash: 9dcbf779d948f6d295c2a23f5a09efc5ac989cdd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43407236"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776627"
 ---
 # <a name="adding-a-service-reference-in-a-workflow-solution"></a>워크플로 솔루션에 서비스 참조 추가
 

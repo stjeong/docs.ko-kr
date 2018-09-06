@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 86c512f25c40f201d818b6789c6410bfb095b878
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43488120"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43749878"
 ---
 # <a name="getpropertyorigin-function"></a>GetPropertyOrigin 함수
-속성 선언 되는 클래스를 결정 합니다.
+속성이 선언되는 클래스를 결정합니다.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     

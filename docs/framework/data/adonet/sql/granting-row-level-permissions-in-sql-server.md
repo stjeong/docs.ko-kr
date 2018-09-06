@@ -2,12 +2,12 @@
 title: SQL Server에서 행 수준 권한 부여
 ms.date: 03/30/2017
 ms.assetid: a55aaa12-34ab-41cd-9dec-fd255b29258c
-ms.openlocfilehash: 5f777b47c9b2f92c40fec01b4ff0c35fc28dbd89
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4a4b45e13a16b357be28a1383648e98890567ea9
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33361308"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43749157"
 ---
 # <a name="granting-row-level-permissions-in-sql-server"></a>SQL Server에서 행 수준 권한 부여
 일부 시나리오에서는 권한 부여, 취소 또는 거부를 통해 제공되는 것보다 세부적인 수준으로 데이터에 대한 액세스를 제어해야 합니다. 예를 들어 병원용 데이터베이스 응용 프로그램에서는 개별 의사가 담당 환자에 관련된 정보에만 액세스하도록 제한해야 할 수 있습니다. 재무, 법률, 정부 및 군사용 응용 프로그램을 비롯한 다양한 환경에도 이러한 요구 사항이 적용될 수 있습니다. 이러한 시나리오를 해결할 수 있도록 SQL Server 2016에서는 보안 정책에서 행 수준 액세스 논리를 간소화하고 중앙 집중화하는 [행 수준 보안](https://msdn.microsoft.com/library/dn765131.aspx) 기능을 제공합니다. 초기 버전 SQL Server에서는 뷰를 사용하여 행 수준 필터링을 시행하는 방식으로 비슷한 기능을 적용할 수 있습니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "33361308"
   
 -   행 수준 필터링을 사용하도록 설정합니다.  
   
-    -   SQL Server 2016 이상이 사용 하는 경우 또는 [Azure SQL 데이터베이스](https://docs.microsoft.com/azure/sql-database/), 현재 데이터베이스 사용자 (CURRENT_USER는 사용 중 하 나와 일치 하는 것 반환 되는 행을 제한 하는 테이블에 있는 조건자를 추가 하는 보안 정책을 만듭니다 기본 제공 함수 사용) 또는 현재 로그인 이름 (suser_sname () 기본 제공 함수 사용):  
+    -   SQL Server 2016 이상을 사용 하는 경우 또는 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/)를 행으로 제한 하는 테이블에 대 한 조건자만 반환 하거나 일치 하는 현재 데이터베이스 사용자 (CURRENT_USER를 사용 하 여 추가 하는 보안 정책 만들기 기본 제공 함수 사용) 또는 현재 로그인 이름 (suser_sname () 기본 제공 함수 사용):  
   
         ```tsql  
         CREATE SCHEMA Security  
@@ -64,7 +64,7 @@ ms.locfileid: "33361308"
   
 |||  
 |-|-|  
-|SQL Server TechCenter 사이트에서[SQL Server 2005를 사용하여 분류된 데이터베이스에서 행 및 셀 수준의 보안 성능을 구현](http://go.microsoft.com/fwlink/?LinkId=98227) 합니다.|행 및 셀 수준의 보안을 사용하여 기밀 데이터베이스의 보안 요구 사항을 충족하는 방법을 설명합니다.|  
+|[행 및 셀 수준의 보안 분류 된 데이터베이스를 사용 하 여 SQL Server 2005에 구현](https://go.microsoft.com/fwlink/?LinkId=98227) SQL Server TechCenter 사이트에서.|행 및 셀 수준의 보안을 사용하여 기밀 데이터베이스의 보안 요구 사항을 충족하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [행 수준 보안](https://msdn.microsoft.com/library/dn765131.aspx)  
@@ -73,4 +73,4 @@ ms.locfileid: "33361308"
  [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
  [SQL Server에서 저장 프로시저를 사용하여 권한 관리](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)  
  [SQL Server에서 동적 보안 SQL 작성](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

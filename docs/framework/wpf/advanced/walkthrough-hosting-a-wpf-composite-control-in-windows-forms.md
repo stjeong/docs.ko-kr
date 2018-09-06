@@ -5,11 +5,11 @@ helpviewer_keywords:
 - hosting WPF content in Windows Forms [WPF]
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 ms.openlocfilehash: 09f634c870eb78c16192ed30ffbbfdc71fdd5142
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43456440"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43735477"
 ---
 # <a name="walkthrough-hosting-a-wpf-composite-control-in-windows-forms"></a>연습: Windows Forms에서 WPF 복합 컨트롤 호스팅
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 응용 프로그램을 만들기 위한 다양한 환경을 제공합니다. 그러나 상당한 투자 경우 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 코드 수 기존 확장 하는 것이 효과적인 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 응용 프로그램으로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 처음부터 다시 작성 하는 대신 합니다. 일반적인 시나리오는 하나를 포함 하거나 더 많은 컨트롤이 구현 하는 경우 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Windows Forms 응용 프로그램 내에서. WPF 컨트롤 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하십시오 [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)합니다.  
@@ -229,7 +229,7 @@ Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤
   
 4.  다음 추가 <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> 폼에 컨트롤을 합니다.  
   
-    |name|텍스트|  
+    |이름|텍스트|  
     |----------|----------|  
     |groupBox1|배경색|  
     |groupBox2|전경색|  
@@ -241,7 +241,7 @@ Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤
   
 5.  다음을 추가 합니다 <xref:System.Windows.Forms.RadioButton?displayProperty=nameWithType> 컨트롤을 <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> 컨트롤입니다.  
   
-    |GroupBox|name|텍스트|  
+    |GroupBox|이름|텍스트|  
     |--------------|----------|----------|  
     |groupBox1|radioBackgroundOriginal|원래 색|  
     |groupBox1|radioBackgroundLightGreen|LightGreen|  
@@ -262,7 +262,7 @@ Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤
   
 6.  다음을 추가 합니다 <xref:System.Windows.Forms.Label?displayProperty=nameWithType> 마지막 제어 <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>입니다. 이러한 컨트롤에서 반환한 데이터를 표시 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤입니다.  
   
-    |GroupBox|name|텍스트|  
+    |GroupBox|이름|텍스트|  
     |--------------|----------|----------|  
     |groupBox7|lblName|이름:|  
     |groupBox7|lblAddress|구/군/시:|  

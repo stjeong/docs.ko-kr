@@ -5,11 +5,11 @@ ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: ca85a620638509e183703f7e80c01ea20fadbc81
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43555198"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43778031"
 ---
 # <a name="pii-security-lockdown"></a>PII 보안 잠금
 이 샘플에 사용 하 여 Windows Communication Foundation (WCF) 서비스의 여러 보안 관련 기능을 제어 하는 방법을 보여 줍니다.  

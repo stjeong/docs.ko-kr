@@ -6,11 +6,11 @@ helpviewer_keywords:
 - My.Computer.Clipboard object
 ms.assetid: 05d4ede9-1f9a-4495-87f0-77350b8d2e5d
 ms.openlocfilehash: 2f44908668fc48e8a45cd6f2dc686f3bb7ba4f67
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43541903"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43745211"
 ---
 # <a name="mycomputerclipboard-object"></a>My.Computer.Clipboard 개체
 클립보드를 조작하기 위한 메서드를 제공합니다.  

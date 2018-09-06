@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce deployment
 - walkthroughs [Windows Forms], ClickOnce deployment
 ms.assetid: 1451fce9-1965-4a03-b4d3-831b5fe4ad66
-ms.openlocfilehash: a9721b7e13c24af6256d692fef879b08f2858a68
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0b76e07a23b105f2c1b4fb55a0d25bb52bcb9dc2
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529540"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43741148"
 ---
 # <a name="clickonce-deployment-for-windows-forms"></a>Windows Forms에 대한 ClickOnce 배포
 다음 항목에서는 Windows Forms 응용 프로그램을 클라이언트 컴퓨터에 쉽게 배포하는 데 사용되는 기술인 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]를 설명합니다.  
@@ -66,6 +66,6 @@ ms.locfileid: "33529540"
  [응용 프로그램 설정 개요](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
  [ClickOnce 응용 프로그램 게시](/visualstudio/deployment/publishing-clickonce-applications)  
  [명령줄에서 ClickOnce 응용 프로그램 빌드](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)  
- [System.Deployment.Application을 사용하는 ClickOnce 응용 프로그램 디버그](http://msdn.microsoft.com/library/86f31948-2ca8-47c0-8e8b-c2b817bbf79f)  
+ [System.Deployment.Application을 사용하는 ClickOnce 응용 프로그램 디버그](https://msdn.microsoft.com/library/86f31948-2ca8-47c0-8e8b-c2b817bbf79f)  
  [ClickOnce를 사용하여 COM 구성 요소 배포](/visualstudio/deployment/deploying-com-components-with-clickonce)  
  [방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)

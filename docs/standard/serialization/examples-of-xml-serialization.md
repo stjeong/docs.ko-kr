@@ -14,11 +14,11 @@ helpviewer_keywords:
 - XML Schema, serializing
 ms.assetid: eec46337-9696-435b-a375-dc5effae6992
 ms.openlocfilehash: bd79008275f3c0176d8ffea9e5de3b53eae3ad2b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43479960"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43777953"
 ---
 # <a name="examples-of-xml-serialization"></a>XML Serialization 예제
 XML serialization은 간단한 것부터 복잡한 것까지 여러 형태를 가집니다. 예를 들어 [XML Serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)에서처럼 공용 필드와 속성으로 간단하게 구성된 클래스를 직렬화할 수 있습니다. 다음 코드 예제에서는 XML serialization을 사용하여 특정 XML 스키마(XSD) 문서를 따르는 XML 스트림을 생성하는 방법을 포함한 여러 가지 고급 시나리오를 보여 줍니다.  

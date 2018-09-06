@@ -3,11 +3,11 @@ title: 계층적 구성 모델
 ms.date: 03/30/2017
 ms.assetid: 28dcc698-226c-4b77-9e51-8bf45a36216c
 ms.openlocfilehash: 8ca9b01eb022e2e2ab940866a6230e8227ceb2dc
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499343"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43736395"
 ---
 # <a name="hierarchical-configuration-model"></a>계층적 구성 모델
 이 샘플에서는 서비스의 구성 파일 계층 구조를 구현하는 방법을 보여 줍니다. 또한 계층 구조의 상위 수준에서 바인딩, 서비스 동작 및 엔드포인트 동작이 상속되는 방식을 보여 줍니다.  

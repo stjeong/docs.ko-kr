@@ -3,11 +3,11 @@ title: TargetFilePath가 기존 폴더를 지정합니다.
 ms.date: 07/20/2015
 ms.assetid: 2334f49e-d080-4ee2-b036-f95c7f76c3ec
 ms.openlocfilehash: 037ec38255cc63cf4e34d7679a1fb2ae8fb247a3
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43558130"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43747368"
 ---
 # <a name="targetfilepath-specifies-an-existing-folder"></a>TargetFilePath가 기존 폴더를 지정합니다.
 매개 변수 `TargetFilePath` 가 기존 디렉터리를 지정하지만 새 디렉터리의 이름을 지정해야 합니다.  

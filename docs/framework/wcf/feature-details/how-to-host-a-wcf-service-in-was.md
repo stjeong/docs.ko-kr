@@ -3,11 +3,11 @@ title: '방법: WAS에서 WCF 서비스 호스팅'
 ms.date: 03/30/2017
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
 ms.openlocfilehash: fd48957f7f8410b4b0df39fe125c35e4fc98cb8e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43560297"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43746826"
 ---
 # <a name="how-to-host-a-wcf-service-in-was"></a>방법: WAS에서 WCF 서비스 호스팅
 호스 티 드 Windows Communication Foundation (WCF) 서비스를이 항목에서는 Windows Process Activation Service (WAS 라고도 함)를 만드는 데 필요한 기본 단계를 간략하게 설명 합니다. WAS는 HTTP가 아닌 전송 프로토콜에서 사용하는 IIS(Internet Information Services) 기능의 일반화인 새 프로세스 활성화 서비스입니다. WCF는 TCP, 명명 된 파이프 및 메시지 큐와 같은 WCF에서 지 원하는 HTTP가 아닌 프로토콜을 통해 수신 되는 활성화 요청을 통신 하는 수신기 어댑터 인터페이스를 사용 합니다.  

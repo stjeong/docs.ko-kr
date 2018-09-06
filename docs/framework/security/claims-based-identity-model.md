@@ -5,11 +5,11 @@ ms.assetid: 4a96a9af-d980-43be-bf91-341a23401431
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 169a16126df395eabecfa969f63a004b9e27cb41
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43670680"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43745299"
 ---
 # <a name="claims-based-identity-model"></a>클레임 기반 ID 모델
 클레임 인식 응용 프로그램을 작성할 때 사용자 ID가 클레임 집합으로 응용 프로그램에 표시됩니다. 클레임이 하나는 사용자의 이름, 다른 전자 메일 주소를 수 있습니다. 외부 ID 시스템은 수신하는 ID 데이터가 신뢰할 수 있는 출처에서 제공되는 암호화 보증과 함께 각각의 요청을 작성한 사용자에 대해 파악하기 위해 필요한 모든 사항을 응용 프로그램에 제공하도록 구성됩니다.  

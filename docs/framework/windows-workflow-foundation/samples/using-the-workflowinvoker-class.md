@@ -3,11 +3,11 @@ title: Using the WorkflowInvoker Class
 ms.date: 03/30/2017
 ms.assetid: 0a966164-3990-4e78-8aa2-c6797ebbee94
 ms.openlocfilehash: d6525dbbd30aae95be4c4ee1de267736e557a541
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43552207"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43748712"
 ---
 # <a name="using-the-workflowinvoker-class"></a>Using the WorkflowInvoker Class
 이 샘플에서는 <xref:System.Activities.WorkflowInvoker> 클래스를 사용하여 활동을 마치 메서드처럼 호출하는 방법을 보여 줍니다.  

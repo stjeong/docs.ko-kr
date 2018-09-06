@@ -3,11 +3,11 @@ title: 비제네릭 ParallelForEach
 ms.date: 03/30/2017
 ms.assetid: de17e7a2-257b-48b3-91a1-860e2e9bf6e6
 ms.openlocfilehash: 70d5de587dda3cb61205a8d77f2173df9b93498b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480848"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43772769"
 ---
 # <a name="non-generic-parallelforeach"></a>비제네릭 ParallelForEach
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] 제어 흐름 활동을 포함 하 여 집합을 도구 상자에 제공 됩니다 <xref:System.Activities.Statements.ParallelForEach%601>를 반복할 수 있도록 하는 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 컬렉션입니다.  

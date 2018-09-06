@@ -3,11 +3,11 @@ title: Entity Framework 데이터 공급자
 ms.date: 03/30/2017
 ms.assetid: 5252e639-ff11-4818-82e7-07221ed6ae23
 ms.openlocfilehash: cd18e8b971af9103fdaecaebfe6f0c8e0ae9a0d3
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43539952"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43740301"
 ---
 # <a name="entity-framework-data-providers"></a>Entity Framework 데이터 공급자
 이 단원에서는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]를 지원하는 데이터 공급자에 대한 정보를 제공합니다.  

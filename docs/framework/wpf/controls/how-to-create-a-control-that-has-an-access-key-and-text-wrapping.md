@@ -10,11 +10,11 @@ helpviewer_keywords:
 - text wrapping [WPF]
 ms.assetid: 205099d9-2551-4302-a25e-a15af9f67e04
 ms.openlocfilehash: bc170334496ca4c2a2028b9c493385674d235ca6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43552783"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43745611"
 ---
 # <a name="how-to-create-a-control-that-has-an-access-key-and-text-wrapping"></a>방법: 선택키가 있고 텍스트 줄 바꿈을 사용하는 컨트롤 만들기
 이 예제에서는 선택키가 있고 텍스트 배치를 지원하는 컨트롤을 만드는 방법을 보여 줍니다. 이 예제에서는 사용을 <xref:System.Windows.Controls.Label> 컨트롤을 이러한 개념을 설명 합니다.  

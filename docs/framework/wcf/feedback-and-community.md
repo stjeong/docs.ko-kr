@@ -6,11 +6,11 @@ helpviewer_keywords:
 - customer feedback [WCF]
 ms.assetid: ba0fd32b-cbcb-4f5b-b913-d98514ab5650
 ms.openlocfilehash: 5067495aa24d5ae7e60633ed6a0ce5c0af081367
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43538625"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43748754"
 ---
 # <a name="feedback-and-community"></a>사용자 의견 및 커뮤니티
 사용자 의견 및 문제에 대 한 Windows Communication Foundation (WCF)에 감사 드립니다 또는 [!INCLUDE[infocard](../../../includes/infocard-md.md)] 설명서. SDK의 각 페이지 아래쪽에는 "이 항목에 대한 의견을 Microsoft에 보내 주세요."라는 문장이 있습니다. "의견" 링크를 클릭하여 특정 항목에 대한 의견이나 제안 사항을 보내 주세요.  

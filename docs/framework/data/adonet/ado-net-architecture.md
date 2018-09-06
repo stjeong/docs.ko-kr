@@ -3,11 +3,11 @@ title: ADO.NET 아키텍처
 ms.date: 03/30/2017
 ms.assetid: fcd45b99-ae8f-45ab-8b97-d887beda734e
 ms.openlocfilehash: 4c2299951202794112ea66c1f20025777c68e356
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43472113"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43773398"
 ---
 # <a name="adonet-architecture"></a>ADO.NET 아키텍처
 기존의 데이터 처리는 연결 기반의 2계층 모델에 의존해 왔습니다. 그러나 다중 계층 아키텍처를 사용하는 데이터 처리가 증가함에 따라 프로그래머는 연결되지 않은 방법으로 전환하여 응용 프로그램의 확장성을 개선하고 있습니다.  

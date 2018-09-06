@@ -2,12 +2,12 @@
 title: '기본 형식 (F #)'
 description: 'F # 언어에서 사용 되는 기본 기본 형식을 검색 합니다.'
 ms.date: 07/09/2018
-ms.openlocfilehash: fdb5e95e102fcf721569156c7fb3a32604fff1dd
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 8f948d066323527b09b1d3f9f4167b95b1c875cf
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37937200"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43777209"
 ---
 # <a name="basic-types"></a>기본 형식
 
@@ -38,4 +38,5 @@ ms.locfileid: "37937200"
 사용 하 여 64 비트 정수 형식에 대해 너무 큰 정수를 사용 하 여 계산을 수행할 수 있습니다 합니다 [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) 형식입니다. `bigint` 기본 형식으로 간주 되지 않습니다. 약어 `System.Numerics.BigInteger`합니다.
 
 ## <a name="see-also"></a>참고자료
-[F# 언어 참조](index.md)
+
+- [F# 언어 참조](index.md)

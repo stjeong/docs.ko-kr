@@ -18,11 +18,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: dc5a40a0e26f116ce1700973a5000e8d6bbbd890
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: MT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43423833"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43732945"
 ---
 # <a name="iclrstrongnamestrongnamesignaturesize-method"></a>ICLRStrongName::StrongNameSignatureSize 메서드
 강력한 이름 서명의 크기를 반환합니다. 이 메서드는 일반적으로 기본 서명이 연기 된 어셈블리를 만들 때 파일에 예약할 공간 결정 되는 컴파일러에서 사용 됩니다.  

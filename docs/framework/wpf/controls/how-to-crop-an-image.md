@@ -9,11 +9,11 @@ helpviewer_keywords:
 - cropping images [WPF]
 ms.assetid: c6bba109-c6e7-4cf8-bfe6-9cf8d01bb4fc
 ms.openlocfilehash: 189cb92d581ccc9209ebdb4de18487951d17818a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43535618"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43779986"
 ---
 # <a name="how-to-crop-an-image"></a>방법: 이미지 잘라내기
 이 예제를 사용 하 여 이미지를 자르는 방법을 보여 줍니다 <xref:System.Windows.Media.Imaging.CroppedBitmap>합니다.  

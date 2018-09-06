@@ -3,11 +3,11 @@ title: 데이터 집합 스키마 유추 프로세스 요약
 ms.date: 03/30/2017
 ms.assetid: fd0891c8-d068-4e30-a76f-7c375f078bf7
 ms.openlocfilehash: 1583d5232a3dd483bbe2a6fa0b1bc8a3ae6a659f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43536598"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43773369"
 ---
 # <a name="summary-of-the-dataset-schema-inference-process"></a>데이터 집합 스키마 유추 프로세스 요약
 유추 과정에서는 우선 XML 문서에서 테이블로 유추될 요소를 결정합니다. 그런 다음 남아 있는 XML에서 해당 테이블의 열을 결정합니다. 중첩된 테이블인 경우에는 유추 과정에서 중첩된 <xref:System.Data.DataRelation> 및 <xref:System.Data.ForeignKeyConstraint> 개체를 생성합니다.  

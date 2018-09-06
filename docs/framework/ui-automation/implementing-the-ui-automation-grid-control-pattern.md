@@ -9,16 +9,16 @@ ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: 0038202fb7c7f1a6e0b4f21592d7a1056c4dfa2b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 036680ea908f2cbe58db398dc315fccd997c4148
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409996"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43738490"
 ---
 # <a name="implementing-the-ui-automation-grid-control-pattern"></a>UI 자동화 Grid 컨트롤 패턴 구현
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 항목에서는 속성, 메서드 및 이벤트에 대한 정보를 포함하여 <xref:System.Windows.Automation.Provider.IGridProvider>를 구현하기 위한 지침 및 규칙을 제공합니다. 추가 참조에 대한 링크는 개요의 끝에 나열되어 있습니다.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "33409996"
   
 -   셀이 비어 있더라도 UI 자동화 요소가 반환되어야 해당 셀의 <xref:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid%2A> 속성을 지원할 수 있습니다. 이러한 상황은 표에 있는 자식 요소의 레이아웃이 비정형 배열과 비슷할 때 발생합니다.  
   
- ![Windows 탐색기 보기 좋지 않은 레이아웃을 봅니다. ] (../../../docs/framework/ui-automation/media/uia-gridpattern-ragged-array.PNG "UIA_GridPattern_Ragged_Array")  
+ ![Windows 탐색기 보기 좋지 않은 레이아웃 합니다. ](../../../docs/framework/ui-automation/media/uia-gridpattern-ragged-array.PNG "UIA_GridPattern_Ragged_Array")  
 비어 있는 좌표에서 표 컨트롤의 예  
   
 -   단일 항목이 있는 표가 논리적으로 표로 간주되는 경우 이 표는 <xref:System.Windows.Automation.Provider.IGridProvider> 구현에 필요합니다. 표에서 자식 항목의 개수는 중요하지 않습니다.  
@@ -63,8 +63,8 @@ ms.locfileid: "33409996"
   
 |예외 형식|조건|  
 |--------------------|---------------|  
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -요청 된 행 좌표가 보다 큰 경우는 <xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A> 열 좌표가 보다 큽니다. 또는 <xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>합니다.|  
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -요청 된 행 또는 열의 좌표가 0 보다 작은 경우.|  
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -요청 된 행 좌표가 보다 큰 경우는 <xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A> 보다 크거나 열 좌표가 또는 <xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>합니다.|  
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -요청 된 행 또는 열 좌표가 0 보다 작은 경우.|  
   
 ## <a name="see-also"></a>참고 항목  
  [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  

@@ -3,11 +3,11 @@ title: ADO.NET에서 데이터 검색 및 수정
 ms.date: 03/30/2017
 ms.assetid: 722e7f87-3691-46c6-87e8-7d159722d675
 ms.openlocfilehash: 5ef5191cf89f22fbaf0bb1bf4fbf47db1d4c06a1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43562565"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43779353"
 ---
 # <a name="retrieving-and-modifying-data-in-adonet"></a>ADO.NET에서 데이터 검색 및 수정
 데이터베이스 응용 프로그램의 기본 기능은 데이터 소스에 연결하여 포함된 데이터를 검색하는 것입니다. ADO.NET의.NET Framework 데이터 공급자를 사용 하 여 데이터 검색 뿐 아니라 명령을 실행할 수 있는 응용 프로그램 및 데이터 원본 간의 다리 역할을 **DataReader** 또는 **DataAdapter** . 모든 데이터베이스 응용 프로그램의 한 가지 핵심 기능은 데이터베이스에 저장된 데이터를 업데이트하는 것입니다. Ado.net에서 데이터를 업데이트 하는 중 사용 하는 것은 **DataAdapter** 및 <xref:System.Data.DataSet>, 및 **명령** 개체 및이 포함 될 수도 있습니다 트랜잭션을 사용 하 여 합니다.  

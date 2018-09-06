@@ -3,11 +3,11 @@ title: 텍스트 파일 사용 추적
 ms.date: 03/30/2017
 ms.assetid: 56a82682-73c2-4b91-a206-4d8bb12c561b
 ms.openlocfilehash: 19b4d544bc1d1c5bc9ebfa51b4ba28eb82c525d0
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43422891"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43773354"
 ---
 # <a name="tracking-using-a-text-file"></a>텍스트 파일 사용 추적
 이 샘플에는 사용자 지정 추적 참가자를 만들어에서 Windows WF (Workflow Foundation) 추적을 확장 하는 방법을 보여 줍니다. 추적 참가자는 추적 레코드를 내보낼 때 런타임에서 추적 레코드를 받는 .NET Framework 클래스입니다. 시나리오에 필요한 대상에 추적 이벤트를 전송하는 추적 참가자를 만들 수 있습니다. 예를 들어 ETW(Windows용 이벤트 추적) 추적 참가자는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 일부로 제공됩니다. 이 샘플의 추적 참가자는 XML 형식의 레코드를 텍스트 파일에 기록합니다.  

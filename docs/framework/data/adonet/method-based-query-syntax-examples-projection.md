@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 0fc2c8f0-1967-4f30-8b20-39b8dccfb82f
 ms.openlocfilehash: 8d18ed04ad33fe88fb14fd7436ddfd7a164c4303
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43554279"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43745000"
 ---
 # <a name="method-based-query-syntax-examples-projection-linq-to-dataset"></a>메서드 기반 쿼리 구문 예제: 프로젝션(LINQ to DataSet)
 이 항목의 예제에서는 <xref:System.Linq.Enumerable.Select%2A> 및 <xref:System.Linq.Enumerable.SelectMany%2A> 메서드에서 메서드 기반 쿼리 구문을 사용하여 <xref:System.Data.DataSet>을 쿼리하는 방법을 보여 줍니다.  

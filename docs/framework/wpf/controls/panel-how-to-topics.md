@@ -7,18 +7,18 @@ helpviewer_keywords:
 - Panel control [WPF], how-to topics
 - controls [WPF], Panel
 ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
-ms.openlocfilehash: 5b0fbf50455545a12adbc03bf2cd05d52de69936
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d8ead1a799f1bd7524d171beb3e262baeb4b5fbe
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33553791"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43746248"
 ---
 # <a name="panel-how-to-topics"></a>Panel 방법 항목
-이 섹션의 항목 사용 하는 방법에 설명 된 <xref:System.Windows.Controls.Panel> 요소 및 관련 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.  
+이 섹션의에서 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Controls.Panel> 요소 및 관련 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [방법: 요소에는 LayoutTransform을 적용](http://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
+ [방법: layouttransform 속성을 요소에 적용](https://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
  [사용자 지정 패널 요소 만들기](../../../../docs/framework/wpf/controls/how-to-create-a-custom-panel-element.md)  
  [Panel의 OnRender 메서드 재정의](../../../../docs/framework/wpf/controls/how-to-override-the-panel-onrender-method.md)  
  [요소의 높이 속성 설정](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  

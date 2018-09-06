@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 09f2e4ee-1d08-4ba8-8936-83394fee319d
 ms.openlocfilehash: abcb3231aa92bd62edefc7f7341da5fcb3321e4b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43405750"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43734748"
 ---
 # <a name="applying-an-xslt-transform-to-a-dataset"></a>XSLT 변형을 DataSet에 적용
 **WriteXml** 메서드는 <xref:System.Data.DataSet> 의 내용을 작성할 수 있습니다를 **데이터 집합** XML 데이터로 합니다. 그런 다음에는 XSLT(XSL transformations)를 사용하여 해당 XML을 다른 형식으로 변형하는 공통적인 작업이 수행됩니다. 그러나 동기화를 **데이터 집합** 사용 하 여는 <xref:System.Xml.XmlDataDocument> XSLT 스타일 시트의 내용에 적용할 수는 **데이터 집합** 의 콘텐츠를 먼저 작성 하지 않고도  **데이터 집합** 사용 하 여 XML 데이터 **WriteXml**합니다.  

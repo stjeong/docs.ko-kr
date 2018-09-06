@@ -14,11 +14,11 @@ helpviewer_keywords:
 - security [Windows Forms], data access
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
 ms.openlocfilehash: d5a9b08188e346fdea5b155149dee1ef8368c2a0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43536260"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43779953"
 ---
 # <a name="more-secure-file-and-data-access-in-windows-forms"></a>Windows Forms의 파일 및 데이터 액세스 추가 보안
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 리소스 및 데이터 보호를 위해 권한을 사용합니다. 응용 프로그램이 데이터를 일거나 쓸 수 있는 위치는 응용 프로그램에 부여된 권한에 따라 달라집니다. 응용 프로그램이 부분 신뢰 환경에서 실행되는 경우 데이터에 대한 액세스 권한이 없거나 데이터에 액세스하는 방법을 변경해야 할 수 있습니다.  
