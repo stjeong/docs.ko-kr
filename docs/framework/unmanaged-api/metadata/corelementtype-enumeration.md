@@ -17,16 +17,16 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 5112c3c8d5fef6efada4bffdfa575716503515e6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43562552"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43787716"
 ---
-# <a name="corelementtype-enumeration1"></a><span data-ttu-id="4de0a-102">CorElementType Enumeration1</span><span class="sxs-lookup"><span data-stu-id="4de0a-102">CorElementType Enumeration1</span></span>
-<span data-ttu-id="4de0a-103">공용 언어 런타임을 지정 <xref:System.Type>, 형식 한정자 또는 메타 데이터 형식 서명에서 형식에 대 한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-103">Specifies a common language runtime <xref:System.Type>, a type modifier, or information about a type in a metadata type signature.</span></span>  
+# <a name="corelementtype-enumeration1"></a><span data-ttu-id="59331-102">CorElementType Enumeration1</span><span class="sxs-lookup"><span data-stu-id="59331-102">CorElementType Enumeration1</span></span>
+<span data-ttu-id="59331-103">공용 언어 런타임을 지정 <xref:System.Type>, 형식 한정자 또는 메타 데이터 형식 서명에서 형식에 대 한 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-103">Specifies a common language runtime <xref:System.Type>, a type modifier, or information about a type in a metadata type signature.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4de0a-104">구문</span><span class="sxs-lookup"><span data-stu-id="4de0a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="59331-104">구문</span><span class="sxs-lookup"><span data-stu-id="59331-104">Syntax</span></span>  
   
 ```  
 typedef enum CorElementType {  
@@ -76,74 +76,74 @@ typedef enum CorElementType {
 } CorElementType;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="4de0a-105">멤버</span><span class="sxs-lookup"><span data-stu-id="4de0a-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="59331-105">멤버</span><span class="sxs-lookup"><span data-stu-id="59331-105">Members</span></span>  
   
-|<span data-ttu-id="4de0a-106">멤버</span><span class="sxs-lookup"><span data-stu-id="4de0a-106">Member</span></span>|<span data-ttu-id="4de0a-107">설명</span><span class="sxs-lookup"><span data-stu-id="4de0a-107">Description</span></span>|  
+|<span data-ttu-id="59331-106">멤버</span><span class="sxs-lookup"><span data-stu-id="59331-106">Member</span></span>|<span data-ttu-id="59331-107">설명</span><span class="sxs-lookup"><span data-stu-id="59331-107">Description</span></span>|  
 |------------|-----------------|  
-|`ELEMENT_TYPE_END`|<span data-ttu-id="4de0a-108">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-108">Used internally.</span></span>|  
-|`ELEMENT_TYPE_VOID`|<span data-ttu-id="4de0a-109">Void 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-109">A void type.</span></span>|  
-|`ELEMENT_TYPE_BOOLEAN`|<span data-ttu-id="4de0a-110">부울 형식</span><span class="sxs-lookup"><span data-stu-id="4de0a-110">A Boolean type</span></span>|  
-|`ELEMENT_TYPE_CHAR`|<span data-ttu-id="4de0a-111">문자 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-111">A character type.</span></span>|  
-|`ELEMENT_TYPE_I1`|<span data-ttu-id="4de0a-112">부호 있는 1 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-112">A signed 1-byte integer.</span></span>|  
-|`ELEMENT_TYPE_U1`|<span data-ttu-id="4de0a-113">부호 없는 1바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-113">An unsigned 1-byte integer.</span></span>|  
-|`ELEMENT_TYPE_I2`|<span data-ttu-id="4de0a-114">부호 있는 2 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-114">A signed 2-byte integer.</span></span>|  
-|`ELEMENT_TYPE_U2`|<span data-ttu-id="4de0a-115">부호 없는 2 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-115">An unsigned 2-byte integer.</span></span>|  
-|`ELEMENT_TYPE_I4`|<span data-ttu-id="4de0a-116">부호 있는 4 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-116">A signed 4-byte integer.</span></span>|  
-|`ELEMENT_TYPE_U4`|<span data-ttu-id="4de0a-117">부호 없는 4 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-117">An unsigned 4-byte integer.</span></span>|  
-|`ELEMENT_TYPE_I8`|<span data-ttu-id="4de0a-118">부호 있는 8 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-118">A signed 8-byte integer.</span></span>|  
-|`ELEMENT_TYPE_U8`|<span data-ttu-id="4de0a-119">부호 없는 8 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-119">An unsigned 8-byte integer.</span></span>|  
-|`ELEMENT_TYPE_R4`|<span data-ttu-id="4de0a-120">4 바이트 부동 소수점입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-120">A 4-byte floating point.</span></span>|  
-|`ELEMENT_TYPE_R8`|<span data-ttu-id="4de0a-121">8 바이트 부동 소수점입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-121">An 8-byte floating point.</span></span>|  
-|`ELEMENT_TYPE_STRING`|<span data-ttu-id="4de0a-122">System.String 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-122">A System.String type.</span></span>|  
-|`ELEMENT_TYPE_PTR`|<span data-ttu-id="4de0a-123">포인터 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-123">A pointer type modifier.</span></span>|  
-|`ELEMENT_TYPE_BYREF`|<span data-ttu-id="4de0a-124">참조 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-124">A reference type modifier.</span></span>|  
-|`ELEMENT_TYPE_VALUETYPE`|<span data-ttu-id="4de0a-125">값 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-125">A value type modifier.</span></span>|  
-|`ELEMENT_TYPE_CLASS`|<span data-ttu-id="4de0a-126">클래스 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-126">A class type modifier.</span></span>|  
-|`ELEMENT_TYPE_VAR`|<span data-ttu-id="4de0a-127">클래스 변수 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-127">A class variable type modifier.</span></span>|  
-|`ELEMENT_TYPE_ARRAY`|<span data-ttu-id="4de0a-128">다차원 배열 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-128">A multi-dimensional array type modifier.</span></span>|  
-|`ELEMENT_TYPE_GENERICINST`|<span data-ttu-id="4de0a-129">제네릭 형식에 대 한 유형 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-129">A type modifier for generic types.</span></span>|  
-|`ELEMENT_TYPE_TYPEDBYREF`|<span data-ttu-id="4de0a-130">형식화된 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-130">A typed reference.</span></span>|  
-|`ELEMENT_TYPE_I`|<span data-ttu-id="4de0a-131">네이티브 정수 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-131">Size of a native integer.</span></span>|  
-|`ELEMENT_TYPE_U`|<span data-ttu-id="4de0a-132">부호 없는 기본 정수 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-132">Size of an unsigned native integer.</span></span>|  
-|`ELEMENT_TYPE_FNPTR`|<span data-ttu-id="4de0a-133">함수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-133">A pointer to a function.</span></span>|  
-|`ELEMENT_TYPE_OBJECT`|<span data-ttu-id="4de0a-134">System.Object 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-134">A System.Object type.</span></span>|  
-|`ELEMENT_TYPE_SZARRAY`|<span data-ttu-id="4de0a-135">단일 차원, 0 인 배열 형식 한정자</span><span class="sxs-lookup"><span data-stu-id="4de0a-135">A single-dimensional, zero lower-bound array type modifier.</span></span>|  
-|`ELEMENT_TYPE_MVAR`|<span data-ttu-id="4de0a-136">메서드 변수 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-136">A method variable type modifier.</span></span>|  
-|`ELEMENT_TYPE_CMOD_REQD`|<span data-ttu-id="4de0a-137">C 언어는 필수 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-137">A C language required modifier.</span></span>|  
-|`ELEMENT_TYPE_CMOD_OPT`|<span data-ttu-id="4de0a-138">C 언어의 선택적 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-138">A C language optional modifier.</span></span>|  
-|`ELEMENT_TYPE_INTERNAL`|<span data-ttu-id="4de0a-139">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-139">Used internally.</span></span>|  
-|`ELEMENT_TYPE_MAX`|<span data-ttu-id="4de0a-140">잘못된 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-140">An invalid type.</span></span>|  
-|`ELEMENT_TYPE_MODIFIER`|<span data-ttu-id="4de0a-141">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-141">Used internally.</span></span>|  
-|`ELEMENT_TYPE_SENTINEL`|<span data-ttu-id="4de0a-142">형식 한정자는 가변 개수의 매개 변수 목록은 sentinel입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-142">A type modifier that is a sentinel for a list of a variable number of parameters.</span></span>|  
-|`ELEMENT_TYPE_PINNED`|<span data-ttu-id="4de0a-143">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-143">Used internally.</span></span>|  
+|`ELEMENT_TYPE_END`|<span data-ttu-id="59331-108">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="59331-108">Used internally.</span></span>|  
+|`ELEMENT_TYPE_VOID`|<span data-ttu-id="59331-109">Void 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-109">A void type.</span></span>|  
+|`ELEMENT_TYPE_BOOLEAN`|<span data-ttu-id="59331-110">부울 형식</span><span class="sxs-lookup"><span data-stu-id="59331-110">A Boolean type</span></span>|  
+|`ELEMENT_TYPE_CHAR`|<span data-ttu-id="59331-111">문자 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-111">A character type.</span></span>|  
+|`ELEMENT_TYPE_I1`|<span data-ttu-id="59331-112">부호 있는 1 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-112">A signed 1-byte integer.</span></span>|  
+|`ELEMENT_TYPE_U1`|<span data-ttu-id="59331-113">부호 없는 1바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-113">An unsigned 1-byte integer.</span></span>|  
+|`ELEMENT_TYPE_I2`|<span data-ttu-id="59331-114">부호 있는 2 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-114">A signed 2-byte integer.</span></span>|  
+|`ELEMENT_TYPE_U2`|<span data-ttu-id="59331-115">부호 없는 2 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-115">An unsigned 2-byte integer.</span></span>|  
+|`ELEMENT_TYPE_I4`|<span data-ttu-id="59331-116">부호 있는 4 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-116">A signed 4-byte integer.</span></span>|  
+|`ELEMENT_TYPE_U4`|<span data-ttu-id="59331-117">부호 없는 4 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-117">An unsigned 4-byte integer.</span></span>|  
+|`ELEMENT_TYPE_I8`|<span data-ttu-id="59331-118">부호 있는 8 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-118">A signed 8-byte integer.</span></span>|  
+|`ELEMENT_TYPE_U8`|<span data-ttu-id="59331-119">부호 없는 8 바이트 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-119">An unsigned 8-byte integer.</span></span>|  
+|`ELEMENT_TYPE_R4`|<span data-ttu-id="59331-120">4 바이트 부동 소수점입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-120">A 4-byte floating point.</span></span>|  
+|`ELEMENT_TYPE_R8`|<span data-ttu-id="59331-121">8 바이트 부동 소수점입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-121">An 8-byte floating point.</span></span>|  
+|`ELEMENT_TYPE_STRING`|<span data-ttu-id="59331-122">System.String 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-122">A System.String type.</span></span>|  
+|`ELEMENT_TYPE_PTR`|<span data-ttu-id="59331-123">포인터 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-123">A pointer type modifier.</span></span>|  
+|`ELEMENT_TYPE_BYREF`|<span data-ttu-id="59331-124">참조 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-124">A reference type modifier.</span></span>|  
+|`ELEMENT_TYPE_VALUETYPE`|<span data-ttu-id="59331-125">값 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-125">A value type modifier.</span></span>|  
+|`ELEMENT_TYPE_CLASS`|<span data-ttu-id="59331-126">클래스 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-126">A class type modifier.</span></span>|  
+|`ELEMENT_TYPE_VAR`|<span data-ttu-id="59331-127">클래스 변수 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-127">A class variable type modifier.</span></span>|  
+|`ELEMENT_TYPE_ARRAY`|<span data-ttu-id="59331-128">다차원 배열 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-128">A multi-dimensional array type modifier.</span></span>|  
+|`ELEMENT_TYPE_GENERICINST`|<span data-ttu-id="59331-129">제네릭 형식에 대 한 유형 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-129">A type modifier for generic types.</span></span>|  
+|`ELEMENT_TYPE_TYPEDBYREF`|<span data-ttu-id="59331-130">형식화된 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-130">A typed reference.</span></span>|  
+|`ELEMENT_TYPE_I`|<span data-ttu-id="59331-131">네이티브 정수 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-131">Size of a native integer.</span></span>|  
+|`ELEMENT_TYPE_U`|<span data-ttu-id="59331-132">부호 없는 기본 정수 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-132">Size of an unsigned native integer.</span></span>|  
+|`ELEMENT_TYPE_FNPTR`|<span data-ttu-id="59331-133">함수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-133">A pointer to a function.</span></span>|  
+|`ELEMENT_TYPE_OBJECT`|<span data-ttu-id="59331-134">System.Object 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-134">A System.Object type.</span></span>|  
+|`ELEMENT_TYPE_SZARRAY`|<span data-ttu-id="59331-135">단일 차원, 0 인 배열 형식 한정자</span><span class="sxs-lookup"><span data-stu-id="59331-135">A single-dimensional, zero lower-bound array type modifier.</span></span>|  
+|`ELEMENT_TYPE_MVAR`|<span data-ttu-id="59331-136">메서드 변수 형식 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-136">A method variable type modifier.</span></span>|  
+|`ELEMENT_TYPE_CMOD_REQD`|<span data-ttu-id="59331-137">C 언어는 필수 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-137">A C language required modifier.</span></span>|  
+|`ELEMENT_TYPE_CMOD_OPT`|<span data-ttu-id="59331-138">C 언어의 선택적 한정자입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-138">A C language optional modifier.</span></span>|  
+|`ELEMENT_TYPE_INTERNAL`|<span data-ttu-id="59331-139">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="59331-139">Used internally.</span></span>|  
+|`ELEMENT_TYPE_MAX`|<span data-ttu-id="59331-140">잘못된 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-140">An invalid type.</span></span>|  
+|`ELEMENT_TYPE_MODIFIER`|<span data-ttu-id="59331-141">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="59331-141">Used internally.</span></span>|  
+|`ELEMENT_TYPE_SENTINEL`|<span data-ttu-id="59331-142">형식 한정자는 가변 개수의 매개 변수 목록은 sentinel입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-142">A type modifier that is a sentinel for a list of a variable number of parameters.</span></span>|  
+|`ELEMENT_TYPE_PINNED`|<span data-ttu-id="59331-143">내부적으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="59331-143">Used internally.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="4de0a-144">설명</span><span class="sxs-lookup"><span data-stu-id="4de0a-144">Remarks</span></span>  
- <span data-ttu-id="4de0a-145">형식 한정자는 더 복잡 한 형식을 나타내는 기반을 형성 합니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-145">The type modifiers form the basis for representing more complex types.</span></span> <span data-ttu-id="4de0a-146">`CorElementType` 형식 한정자 값이 바로 뒤에 오는 형식 서명의 값에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-146">A `CorElementType` type modifier value is applied to the value that immediately follows it in the type signature.</span></span> <span data-ttu-id="4de0a-147">뒤에 오는 값을 `CorElementType` 형식 한정자 값 수를 `CorElementType` 단순 유형 값, 메타 데이터 토큰, 또는 다른 값을 다음 표에 지정 된 대로 합니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-147">The value that follows the `CorElementType` type modifier value can be a `CorElementType` simple type value, a metadata token, or other value, as specified in the following table.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="59331-144">설명</span><span class="sxs-lookup"><span data-stu-id="59331-144">Remarks</span></span>  
+ <span data-ttu-id="59331-145">형식 한정자는 더 복잡 한 형식을 나타내는 기반을 형성 합니다.</span><span class="sxs-lookup"><span data-stu-id="59331-145">The type modifiers form the basis for representing more complex types.</span></span> <span data-ttu-id="59331-146">`CorElementType` 형식 한정자 값이 바로 뒤에 오는 형식 서명의 값에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="59331-146">A `CorElementType` type modifier value is applied to the value that immediately follows it in the type signature.</span></span> <span data-ttu-id="59331-147">뒤에 오는 값을 `CorElementType` 형식 한정자 값 수를 `CorElementType` 단순 유형 값, 메타 데이터 토큰, 또는 다른 값을 다음 표에 지정 된 대로 합니다.</span><span class="sxs-lookup"><span data-stu-id="59331-147">The value that follows the `CorElementType` type modifier value can be a `CorElementType` simple type value, a metadata token, or other value, as specified in the following table.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="4de0a-148">모든 숫자 (*수*, *인수 개수*를 *메타 데이터 토큰*를 *순위*를 *개수*, 및 *바인딩된*) 압축 된 정수로 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-148">All numbers (*number*, *argument Count*, *metadata token*, *rank*, *count*, and *bound*) are stored as compressed integers.</span></span> <span data-ttu-id="4de0a-149">참조 [표준 ECMA-335-CLI 공용 언어 인프라 ()](https://go.microsoft.com/fwlink/?LinkID=116487) 대 한 자세한 내용은 ECMA 웹 사이트입니다.</span><span class="sxs-lookup"><span data-stu-id="4de0a-149">See [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=116487) on the ECMA Web site for details.</span></span>  
+>  <span data-ttu-id="59331-148">모든 숫자 (*수*, *인수 개수*를 *메타 데이터 토큰*를 *순위*를 *개수*, 및 *바인딩된*) 압축 된 정수로 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="59331-148">All numbers (*number*, *argument Count*, *metadata token*, *rank*, *count*, and *bound*) are stored as compressed integers.</span></span> <span data-ttu-id="59331-149">참조 [표준 ECMA-335-CLI 공용 언어 인프라 ()](https://go.microsoft.com/fwlink/?LinkID=116487) 대 한 자세한 내용은 ECMA 웹 사이트입니다.</span><span class="sxs-lookup"><span data-stu-id="59331-149">See [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=116487) on the ECMA Web site for details.</span></span>  
   
-|<span data-ttu-id="4de0a-150">형식 한정자</span><span class="sxs-lookup"><span data-stu-id="4de0a-150">Type modifier</span></span>|<span data-ttu-id="4de0a-151">형식</span><span class="sxs-lookup"><span data-stu-id="4de0a-151">Format</span></span>|  
+|<span data-ttu-id="59331-150">형식 한정자</span><span class="sxs-lookup"><span data-stu-id="59331-150">Type modifier</span></span>|<span data-ttu-id="59331-151">형식</span><span class="sxs-lookup"><span data-stu-id="59331-151">Format</span></span>|  
 |-------------------|------------|  
-|`ELEMENT_TYPE_PTR`|<span data-ttu-id="4de0a-152">ELEMENT_TYPE_PTR <는 `CorElementType` 값 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-152">ELEMENT_TYPE_PTR <a `CorElementType` value></span></span>|  
-|`ELEMENT_TYPE_BYREF`|<span data-ttu-id="4de0a-153">ELEMENT_TYPE_BYREF <는 `CorElementType` 값 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-153">ELEMENT_TYPE_BYREF <a `CorElementType` value></span></span>|  
-|`ELEMENT_TYPE_VALUETYPE`|<span data-ttu-id="4de0a-154">ELEMENT_TYPE_VALUETYPE <는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-154">ELEMENT_TYPE_VALUETYPE <an `mdTypeDef` metadata token></span></span>|  
-|`ELEMENT_TYPE_CLASS`|<span data-ttu-id="4de0a-155">ELEMENT_TYPE_CLASS <는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-155">ELEMENT_TYPE_CLASS <an `mdTypeDef` metadata token></span></span>|  
-|`ELEMENT_TYPE_VAR`|<span data-ttu-id="4de0a-156">ELEMENT_TYPE_VAR \<번호 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-156">ELEMENT_TYPE_VAR \<number></span></span>|  
-|`ELEMENT_TYPE_ARRAY`|<span data-ttu-id="4de0a-157">ELEMENT_TYPE_ARRAY <을 `CorElementType` 값 > \<순위 > \<count1 > \<bound1 >... \<countN > \<boundN ></span><span class="sxs-lookup"><span data-stu-id="4de0a-157">ELEMENT_TYPE_ARRAY <a `CorElementType` value> \<rank> \<count1> \<bound1> ... \<countN> \<boundN></span></span>|  
-|`ELEMENT_TYPE_GENERICINST`|<span data-ttu-id="4de0a-158">ELEMENT_TYPE_GENERICINST <는 `mdTypeDef` 메타 데이터 토큰 > \<인수 개수 > \<arg1 >... \<argN ></span><span class="sxs-lookup"><span data-stu-id="4de0a-158">ELEMENT_TYPE_GENERICINST <an `mdTypeDef` metadata token> \<argument Count> \<arg1> ... \<argN></span></span>|  
-|`ELEMENT_TYPE_FNPTR`|<span data-ttu-id="4de0a-159">Typ ELEMENT_TYPE_FNPTR \<호출 규칙이 포함 된 함수에 대 한 전체 시그니처 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-159">ELEMENT_TYPE_FNPTR \<complete signature for the function, including calling convention></span></span>|  
-|`ELEMENT_TYPE_SZARRAY`|<span data-ttu-id="4de0a-160">ELEMENT_TYPE_SZARRAY <는 `CorElementType` 값 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-160">ELEMENT_TYPE_SZARRAY <a `CorElementType` value></span></span>|  
-|`ELEMENT_TYPE_MVAR`|<span data-ttu-id="4de0a-161">ELEMENT_TYPE_MVAR \<번호 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-161">ELEMENT_TYPE_MVAR \<number></span></span>|  
-|`ELEMENT_TYPE_CMOD_REQD`|<span data-ttu-id="4de0a-162">ELEMENT_TYPE_ <을 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-162">ELEMENT_TYPE_<a `mdTypeRef` or `mdTypeDef` metadata token></span></span>|  
-|`ELEMENT_TYPE_CMOD_OPT`|<span data-ttu-id="4de0a-163">E_T_CMOD_OPT <을 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="4de0a-163">E_T_CMOD_OPT <a `mdTypeRef` or `mdTypeDef` metadata token></span></span>|  
+|`ELEMENT_TYPE_PTR`|<span data-ttu-id="59331-152">ELEMENT_TYPE_PTR <는 `CorElementType` 값 ></span><span class="sxs-lookup"><span data-stu-id="59331-152">ELEMENT_TYPE_PTR <a `CorElementType` value></span></span>|  
+|`ELEMENT_TYPE_BYREF`|<span data-ttu-id="59331-153">ELEMENT_TYPE_BYREF <는 `CorElementType` 값 ></span><span class="sxs-lookup"><span data-stu-id="59331-153">ELEMENT_TYPE_BYREF <a `CorElementType` value></span></span>|  
+|`ELEMENT_TYPE_VALUETYPE`|<span data-ttu-id="59331-154">ELEMENT_TYPE_VALUETYPE <는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="59331-154">ELEMENT_TYPE_VALUETYPE <an `mdTypeDef` metadata token></span></span>|  
+|`ELEMENT_TYPE_CLASS`|<span data-ttu-id="59331-155">ELEMENT_TYPE_CLASS <는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="59331-155">ELEMENT_TYPE_CLASS <an `mdTypeDef` metadata token></span></span>|  
+|`ELEMENT_TYPE_VAR`|<span data-ttu-id="59331-156">ELEMENT_TYPE_VAR \<번호 ></span><span class="sxs-lookup"><span data-stu-id="59331-156">ELEMENT_TYPE_VAR \<number></span></span>|  
+|`ELEMENT_TYPE_ARRAY`|<span data-ttu-id="59331-157">ELEMENT_TYPE_ARRAY <을 `CorElementType` 값 > \<순위 > \<count1 > \<bound1 >... \<countN > \<boundN ></span><span class="sxs-lookup"><span data-stu-id="59331-157">ELEMENT_TYPE_ARRAY <a `CorElementType` value> \<rank> \<count1> \<bound1> ... \<countN> \<boundN></span></span>|  
+|`ELEMENT_TYPE_GENERICINST`|<span data-ttu-id="59331-158">ELEMENT_TYPE_GENERICINST <는 `mdTypeDef` 메타 데이터 토큰 > \<인수 개수 > \<arg1 >... \<argN ></span><span class="sxs-lookup"><span data-stu-id="59331-158">ELEMENT_TYPE_GENERICINST <an `mdTypeDef` metadata token> \<argument Count> \<arg1> ... \<argN></span></span>|  
+|`ELEMENT_TYPE_FNPTR`|<span data-ttu-id="59331-159">Typ ELEMENT_TYPE_FNPTR \<호출 규칙이 포함 된 함수에 대 한 전체 시그니처 ></span><span class="sxs-lookup"><span data-stu-id="59331-159">ELEMENT_TYPE_FNPTR \<complete signature for the function, including calling convention></span></span>|  
+|`ELEMENT_TYPE_SZARRAY`|<span data-ttu-id="59331-160">ELEMENT_TYPE_SZARRAY <는 `CorElementType` 값 ></span><span class="sxs-lookup"><span data-stu-id="59331-160">ELEMENT_TYPE_SZARRAY <a `CorElementType` value></span></span>|  
+|`ELEMENT_TYPE_MVAR`|<span data-ttu-id="59331-161">ELEMENT_TYPE_MVAR \<번호 ></span><span class="sxs-lookup"><span data-stu-id="59331-161">ELEMENT_TYPE_MVAR \<number></span></span>|  
+|`ELEMENT_TYPE_CMOD_REQD`|<span data-ttu-id="59331-162">ELEMENT_TYPE_ <을 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="59331-162">ELEMENT_TYPE_<a `mdTypeRef` or `mdTypeDef` metadata token></span></span>|  
+|`ELEMENT_TYPE_CMOD_OPT`|<span data-ttu-id="59331-163">E_T_CMOD_OPT <을 `mdTypeRef` 또는 `mdTypeDef` 메타 데이터 토큰 ></span><span class="sxs-lookup"><span data-stu-id="59331-163">E_T_CMOD_OPT <a `mdTypeRef` or `mdTypeDef` metadata token></span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="4de0a-164">요구 사항</span><span class="sxs-lookup"><span data-stu-id="4de0a-164">Requirements</span></span>  
- <span data-ttu-id="4de0a-165">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="4de0a-165">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="59331-164">요구 사항</span><span class="sxs-lookup"><span data-stu-id="59331-164">Requirements</span></span>  
+ <span data-ttu-id="59331-165">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="59331-165">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4de0a-166">**헤더:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="4de0a-166">**Header:** CorHdr.h</span></span>  
+ <span data-ttu-id="59331-166">**헤더:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="59331-166">**Header:** CorHdr.h</span></span>  
   
- <span data-ttu-id="4de0a-167">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4de0a-167">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="59331-167">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="59331-167">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4de0a-168">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4de0a-168">See Also</span></span>  
- [<span data-ttu-id="4de0a-169">메타데이터 열거형</span><span class="sxs-lookup"><span data-stu-id="4de0a-169">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a><span data-ttu-id="59331-168">참고 항목</span><span class="sxs-lookup"><span data-stu-id="59331-168">See Also</span></span>  
+ [<span data-ttu-id="59331-169">메타데이터 열거형</span><span class="sxs-lookup"><span data-stu-id="59331-169">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
