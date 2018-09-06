@@ -10,16 +10,16 @@ helpviewer_keywords:
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 ms.openlocfilehash: fe200add4e29fe4bbe0fdf335dcd94107b8ff1eb
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43537542"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43747813"
 ---
-# <a name="return-statement-visual-basic"></a><span data-ttu-id="3162c-102">Return 문(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="3162c-102">Return Statement (Visual Basic)</span></span>
-<span data-ttu-id="3162c-103">호출한 코드로 제어가 되돌아갑니다를 `Function`, `Sub`를 `Get`를 `Set`, 또는 `Operator` 프로시저입니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-103">Returns control to the code that called a `Function`, `Sub`, `Get`, `Set`, or `Operator` procedure.</span></span>  
+# <a name="return-statement-visual-basic"></a><span data-ttu-id="a16d0-102">Return 문(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="a16d0-102">Return Statement (Visual Basic)</span></span>
+<span data-ttu-id="a16d0-103">호출한 코드로 제어가 되돌아갑니다를 `Function`, `Sub`를 `Get`를 `Set`, 또는 `Operator` 프로시저입니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-103">Returns control to the code that called a `Function`, `Sub`, `Get`, `Set`, or `Operator` procedure.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3162c-104">구문</span><span class="sxs-lookup"><span data-stu-id="3162c-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a16d0-104">구문</span><span class="sxs-lookup"><span data-stu-id="a16d0-104">Syntax</span></span>  
   
 ```  
 Return  
@@ -27,31 +27,31 @@ Return
 Return expression  
 ```  
   
-## <a name="part"></a><span data-ttu-id="3162c-105">파트</span><span class="sxs-lookup"><span data-stu-id="3162c-105">Part</span></span>  
+## <a name="part"></a><span data-ttu-id="a16d0-105">파트</span><span class="sxs-lookup"><span data-stu-id="a16d0-105">Part</span></span>  
  `expression`  
- <span data-ttu-id="3162c-106">필요는 `Function`, `Get`, 또는 `Operator` 프로시저입니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-106">Required in a `Function`, `Get`, or `Operator` procedure.</span></span> <span data-ttu-id="3162c-107">호출 코드에 반환 될 값을 나타내는 식입니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-107">Expression that represents the value to be returned to the calling code.</span></span>  
+ <span data-ttu-id="a16d0-106">필요는 `Function`, `Get`, 또는 `Operator` 프로시저입니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-106">Required in a `Function`, `Get`, or `Operator` procedure.</span></span> <span data-ttu-id="a16d0-107">호출 코드에 반환 될 값을 나타내는 식입니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-107">Expression that represents the value to be returned to the calling code.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="3162c-108">설명</span><span class="sxs-lookup"><span data-stu-id="3162c-108">Remarks</span></span>  
- <span data-ttu-id="3162c-109">에 `Sub` 또는 `Set` 프로시저를 `Return` 문과 동일는 `Exit Sub` 또는 `Exit Property` 문 및 `expression` 제공 하지 않아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-109">In a `Sub` or `Set` procedure, the `Return` statement is equivalent to an `Exit Sub` or `Exit Property` statement, and `expression` must not be supplied.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="a16d0-108">설명</span><span class="sxs-lookup"><span data-stu-id="a16d0-108">Remarks</span></span>  
+ <span data-ttu-id="a16d0-109">에 `Sub` 또는 `Set` 프로시저를 `Return` 문과 동일는 `Exit Sub` 또는 `Exit Property` 문 및 `expression` 제공 하지 않아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-109">In a `Sub` or `Set` procedure, the `Return` statement is equivalent to an `Exit Sub` or `Exit Property` statement, and `expression` must not be supplied.</span></span>  
   
- <span data-ttu-id="3162c-110">에 `Function`, `Get`, 또는 `Operator` 절차는 `Return` 문에 포함 되어야 합니다 `expression`, 및 `expression` 프로시저의 반환 형식으로 변환 될 수 있는 데이터 형식으로 계산 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-110">In a `Function`, `Get`, or `Operator` procedure, the `Return` statement must include `expression`, and `expression` must evaluate to a data type that is convertible to the return type of the procedure.</span></span> <span data-ttu-id="3162c-111">에 `Function` 또는 `Get` 프로시저 있습니다 식을 반환 값으로 처리 하는 프로시저 이름에 할당 한 다음 실행 하는 대안을 `Exit Function` 또는 `Exit Property` 문을.</span><span class="sxs-lookup"><span data-stu-id="3162c-111">In a `Function` or `Get` procedure, you also have the alternative of assigning an expression to the procedure name to serve as the return value, and then executing an `Exit Function` or `Exit Property` statement.</span></span> <span data-ttu-id="3162c-112">에 `Operator` 를 사용 해야 프로시저 `Return expression`합니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-112">In an `Operator` procedure, you must use `Return expression`.</span></span>  
+ <span data-ttu-id="a16d0-110">에 `Function`, `Get`, 또는 `Operator` 절차는 `Return` 문에 포함 되어야 합니다 `expression`, 및 `expression` 프로시저의 반환 형식으로 변환 될 수 있는 데이터 형식으로 계산 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-110">In a `Function`, `Get`, or `Operator` procedure, the `Return` statement must include `expression`, and `expression` must evaluate to a data type that is convertible to the return type of the procedure.</span></span> <span data-ttu-id="a16d0-111">에 `Function` 또는 `Get` 프로시저 있습니다 식을 반환 값으로 처리 하는 프로시저 이름에 할당 한 다음 실행 하는 대안을 `Exit Function` 또는 `Exit Property` 문을.</span><span class="sxs-lookup"><span data-stu-id="a16d0-111">In a `Function` or `Get` procedure, you also have the alternative of assigning an expression to the procedure name to serve as the return value, and then executing an `Exit Function` or `Exit Property` statement.</span></span> <span data-ttu-id="a16d0-112">에 `Operator` 를 사용 해야 프로시저 `Return expression`합니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-112">In an `Operator` procedure, you must use `Return expression`.</span></span>  
   
- <span data-ttu-id="3162c-113">만큼 포함할 수 있습니다 `Return` 문을 동일한 프로시저에 적절 하 게 합니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-113">You can include as many `Return` statements as appropriate in the same procedure.</span></span>  
+ <span data-ttu-id="a16d0-113">만큼 포함할 수 있습니다 `Return` 문을 동일한 프로시저에 적절 하 게 합니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-113">You can include as many `Return` statements as appropriate in the same procedure.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="3162c-114">코드를 `Finally` 블록 실행를 `Return` 문에서 `Try` 또는 `Catch` 만난 전에 블록은 `Return` 문을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-114">The code in a `Finally` block runs after a `Return` statement in a `Try` or `Catch` block is encountered, but before that `Return` statement executes.</span></span> <span data-ttu-id="3162c-115">A `Return` 에 문의 포함할 수 없습니다는 `Finally` 블록입니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-115">A `Return` statement cannot be included in a `Finally` block.</span></span>  
+>  <span data-ttu-id="a16d0-114">코드를 `Finally` 블록 실행를 `Return` 문에서 `Try` 또는 `Catch` 만난 전에 블록은 `Return` 문을 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-114">The code in a `Finally` block runs after a `Return` statement in a `Try` or `Catch` block is encountered, but before that `Return` statement executes.</span></span> <span data-ttu-id="a16d0-115">A `Return` 에 문의 포함할 수 없습니다는 `Finally` 블록입니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-115">A `Return` statement cannot be included in a `Finally` block.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="3162c-116">예제</span><span class="sxs-lookup"><span data-stu-id="3162c-116">Example</span></span>  
- <span data-ttu-id="3162c-117">다음 예제에서는 `Return` 문을 여러 번 절차는 다른 작업을 수행 하지 않아도 되는 경우 호출 코드에 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3162c-117">The following example uses the `Return` statement several times to return to the calling code when the procedure does not have to do anything else.</span></span>  
+## <a name="example"></a><span data-ttu-id="a16d0-116">예제</span><span class="sxs-lookup"><span data-stu-id="a16d0-116">Example</span></span>  
+ <span data-ttu-id="a16d0-117">다음 예제에서는 `Return` 문을 여러 번 절차는 다른 작업을 수행 하지 않아도 되는 경우 호출 코드에 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="a16d0-117">The following example uses the `Return` statement several times to return to the calling code when the procedure does not have to do anything else.</span></span>  
   
  [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="3162c-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3162c-118">See Also</span></span>  
- [<span data-ttu-id="3162c-119">Function 문</span><span class="sxs-lookup"><span data-stu-id="3162c-119">Function Statement</span></span>](../../../visual-basic/language-reference/statements/function-statement.md)  
- [<span data-ttu-id="3162c-120">Sub 문</span><span class="sxs-lookup"><span data-stu-id="3162c-120">Sub Statement</span></span>](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [<span data-ttu-id="3162c-121">Get 문</span><span class="sxs-lookup"><span data-stu-id="3162c-121">Get Statement</span></span>](../../../visual-basic/language-reference/statements/get-statement.md)  
- [<span data-ttu-id="3162c-122">Set 문</span><span class="sxs-lookup"><span data-stu-id="3162c-122">Set Statement</span></span>](../../../visual-basic/language-reference/statements/set-statement.md)  
- [<span data-ttu-id="3162c-123">Operator 문</span><span class="sxs-lookup"><span data-stu-id="3162c-123">Operator Statement</span></span>](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [<span data-ttu-id="3162c-124">Property 문</span><span class="sxs-lookup"><span data-stu-id="3162c-124">Property Statement</span></span>](../../../visual-basic/language-reference/statements/property-statement.md)  
- [<span data-ttu-id="3162c-125">Exit 문</span><span class="sxs-lookup"><span data-stu-id="3162c-125">Exit Statement</span></span>](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [<span data-ttu-id="3162c-126">Try...Catch...Finally 문</span><span class="sxs-lookup"><span data-stu-id="3162c-126">Try...Catch...Finally Statement</span></span>](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## <a name="see-also"></a><span data-ttu-id="a16d0-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a16d0-118">See Also</span></span>  
+ [<span data-ttu-id="a16d0-119">Function 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-119">Function Statement</span></span>](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [<span data-ttu-id="a16d0-120">Sub 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-120">Sub Statement</span></span>](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [<span data-ttu-id="a16d0-121">Get 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-121">Get Statement</span></span>](../../../visual-basic/language-reference/statements/get-statement.md)  
+ [<span data-ttu-id="a16d0-122">Set 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-122">Set Statement</span></span>](../../../visual-basic/language-reference/statements/set-statement.md)  
+ [<span data-ttu-id="a16d0-123">Operator 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-123">Operator Statement</span></span>](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [<span data-ttu-id="a16d0-124">Property 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-124">Property Statement</span></span>](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [<span data-ttu-id="a16d0-125">Exit 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-125">Exit Statement</span></span>](../../../visual-basic/language-reference/statements/exit-statement.md)  
+ [<span data-ttu-id="a16d0-126">Try...Catch...Finally 문</span><span class="sxs-lookup"><span data-stu-id="a16d0-126">Try...Catch...Finally Statement</span></span>](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

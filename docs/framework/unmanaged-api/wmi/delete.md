@@ -17,18 +17,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 791e75aa60fd651dde1555339e31664a3523e1eb
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43554389"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43777183"
 ---
-# <a name="delete-function"></a><span data-ttu-id="5e551-103">함수 삭제</span><span class="sxs-lookup"><span data-stu-id="5e551-103">Delete function</span></span>
-<span data-ttu-id="5e551-104">CIM 클래스 정의에서 지정된 된 속성 및 모든 해당 한정자를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-104">Deletes the specified property and all of its qualifiers from a CIM class definition.</span></span>
+# <a name="delete-function"></a><span data-ttu-id="9af33-103">함수 삭제</span><span class="sxs-lookup"><span data-stu-id="9af33-103">Delete function</span></span>
+<span data-ttu-id="9af33-104">CIM 클래스 정의에서 지정된 된 속성 및 모든 해당 한정자를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-104">Deletes the specified property and all of its qualifiers from a CIM class definition.</span></span>
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
-## <a name="syntax"></a><span data-ttu-id="5e551-105">구문</span><span class="sxs-lookup"><span data-stu-id="5e551-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9af33-105">구문</span><span class="sxs-lookup"><span data-stu-id="9af33-105">Syntax</span></span>  
   
 ```  
 HRESULT Delete (
@@ -38,43 +38,43 @@ HRESULT Delete (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="5e551-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="5e551-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9af33-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="9af33-106">Parameters</span></span>
 
 `vFunc`  
-<span data-ttu-id="5e551-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-107">[in] This parameter is unused.</span></span>
+<span data-ttu-id="9af33-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-107">[in] This parameter is unused.</span></span>
 
 `ptr`  
-<span data-ttu-id="5e551-108">[in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="5e551-108">[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.</span></span>
+<span data-ttu-id="9af33-108">[in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="9af33-108">[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.</span></span>
 
 `wszName`  
-<span data-ttu-id="5e551-109">[in] 삭제할 속성의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-109">[in] The name of the property to delete.</span></span> <span data-ttu-id="5e551-110">`wszName` 유효한 포인터 여야 합니다. `LPCWSTR`합니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-110">`wszName` must be a pointer to a valid `LPCWSTR`.</span></span>
+<span data-ttu-id="9af33-109">[in] 삭제할 속성의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-109">[in] The name of the property to delete.</span></span> <span data-ttu-id="9af33-110">`wszName` 유효한 포인터 여야 합니다. `LPCWSTR`합니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-110">`wszName` must be a pointer to a valid `LPCWSTR`.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="5e551-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="5e551-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="9af33-111">반환 값</span><span class="sxs-lookup"><span data-stu-id="9af33-111">Return value</span></span>
 
-<span data-ttu-id="5e551-112">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="5e551-112">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
+<span data-ttu-id="9af33-112">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="9af33-112">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
 
-|<span data-ttu-id="5e551-113">상수</span><span class="sxs-lookup"><span data-stu-id="5e551-113">Constant</span></span>  |<span data-ttu-id="5e551-114">값</span><span class="sxs-lookup"><span data-stu-id="5e551-114">Value</span></span>  |<span data-ttu-id="5e551-115">설명</span><span class="sxs-lookup"><span data-stu-id="5e551-115">Description</span></span>  |
+|<span data-ttu-id="9af33-113">상수</span><span class="sxs-lookup"><span data-stu-id="9af33-113">Constant</span></span>  |<span data-ttu-id="9af33-114">값</span><span class="sxs-lookup"><span data-stu-id="9af33-114">Value</span></span>  |<span data-ttu-id="9af33-115">설명</span><span class="sxs-lookup"><span data-stu-id="9af33-115">Description</span></span>  |
 |---------|---------|---------|
-| `WBEM_E_FAILED` | <span data-ttu-id="5e551-116">0x80041001</span><span class="sxs-lookup"><span data-stu-id="5e551-116">0x80041001</span></span> | <span data-ttu-id="5e551-117">지정 되지 않은 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-117">An unspecified error has occurred.</span></span> |
-| `WBEM_E_INVALID_OPERATION` | <span data-ttu-id="5e551-118">0x80041016</span><span class="sxs-lookup"><span data-stu-id="5e551-118">0x80041016</span></span> | <span data-ttu-id="5e551-119">속성을 삭제할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-119">The property cannot be deleted.</span></span> |
-| `WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="5e551-120">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="5e551-120">0x80041008</span></span> | <span data-ttu-id="5e551-121">`wszzName`이 잘못되었습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-121">`wszzName` is invalid.</span></span> |
-| `WBEM_E_NOT_FOUND` | <span data-ttu-id="5e551-122">0x80041002</span><span class="sxs-lookup"><span data-stu-id="5e551-122">0x80041002</span></span> | <span data-ttu-id="5e551-123">지정된 된 속성이 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-123">The specified property does not exist.</span></span> |
-| `WBEM_E_OUT_OF_MEMORY` | <span data-ttu-id="5e551-124">0x80041006("</span><span class="sxs-lookup"><span data-stu-id="5e551-124">0x80041006</span></span> | <span data-ttu-id="5e551-125">메모리가 부족 하 여 작업을 완료할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-125">There is not enough memory to complete the operation.</span></span> |
-| `WBEM_E_PROPAGATED_PROPERTY` | <span data-ttu-id="5e551-126">0x8004101c</span><span class="sxs-lookup"><span data-stu-id="5e551-126">0x8004101c</span></span> | <span data-ttu-id="5e551-127">속성은 기본 클래스에서 상속 됩니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-127">The property is inherited from a base class.</span></span> |
-| `WBEM_E_SYSTEM_PROPERTY` | | <span data-ttu-id="5e551-128">속성은 시스템 속성이입니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-128">The property is a system property.</span></span> |
-|`WBEM_S_NO_ERROR` | <span data-ttu-id="5e551-129">0</span><span class="sxs-lookup"><span data-stu-id="5e551-129">0</span></span> | <span data-ttu-id="5e551-130">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-130">The function call was successful.</span></span>  |
-| `WBEM_E_RESET_TO_DEFAULT` | <span data-ttu-id="5e551-131">0x80041030</span><span class="sxs-lookup"><span data-stu-id="5e551-131">0x80041030</span></span> | <span data-ttu-id="5e551-132">함수는 현재 클래스의 재정의 기본값을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-132">The function deleted an override default value for the current class.</span></span> <span data-ttu-id="5e551-133">부모 클래스에서이 속성의 기본값 reactiviated 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="5e551-133">The default value for this property in the parent class has been reactiviated.</span></span> | 
+| `WBEM_E_FAILED` | <span data-ttu-id="9af33-116">0x80041001</span><span class="sxs-lookup"><span data-stu-id="9af33-116">0x80041001</span></span> | <span data-ttu-id="9af33-117">지정 되지 않은 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-117">An unspecified error has occurred.</span></span> |
+| `WBEM_E_INVALID_OPERATION` | <span data-ttu-id="9af33-118">0x80041016</span><span class="sxs-lookup"><span data-stu-id="9af33-118">0x80041016</span></span> | <span data-ttu-id="9af33-119">속성을 삭제할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-119">The property cannot be deleted.</span></span> |
+| `WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="9af33-120">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="9af33-120">0x80041008</span></span> | <span data-ttu-id="9af33-121">`wszzName`이 잘못되었습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-121">`wszzName` is invalid.</span></span> |
+| `WBEM_E_NOT_FOUND` | <span data-ttu-id="9af33-122">0x80041002</span><span class="sxs-lookup"><span data-stu-id="9af33-122">0x80041002</span></span> | <span data-ttu-id="9af33-123">지정된 된 속성이 존재 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-123">The specified property does not exist.</span></span> |
+| `WBEM_E_OUT_OF_MEMORY` | <span data-ttu-id="9af33-124">0x80041006("</span><span class="sxs-lookup"><span data-stu-id="9af33-124">0x80041006</span></span> | <span data-ttu-id="9af33-125">메모리가 부족 하 여 작업을 완료할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-125">There is not enough memory to complete the operation.</span></span> |
+| `WBEM_E_PROPAGATED_PROPERTY` | <span data-ttu-id="9af33-126">0x8004101c</span><span class="sxs-lookup"><span data-stu-id="9af33-126">0x8004101c</span></span> | <span data-ttu-id="9af33-127">속성은 기본 클래스에서 상속 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-127">The property is inherited from a base class.</span></span> |
+| `WBEM_E_SYSTEM_PROPERTY` | | <span data-ttu-id="9af33-128">속성은 시스템 속성이입니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-128">The property is a system property.</span></span> |
+|`WBEM_S_NO_ERROR` | <span data-ttu-id="9af33-129">0</span><span class="sxs-lookup"><span data-stu-id="9af33-129">0</span></span> | <span data-ttu-id="9af33-130">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-130">The function call was successful.</span></span>  |
+| `WBEM_E_RESET_TO_DEFAULT` | <span data-ttu-id="9af33-131">0x80041030</span><span class="sxs-lookup"><span data-stu-id="9af33-131">0x80041030</span></span> | <span data-ttu-id="9af33-132">함수는 현재 클래스의 재정의 기본값을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-132">The function deleted an override default value for the current class.</span></span> <span data-ttu-id="9af33-133">부모 클래스에서이 속성의 기본값 reactiviated 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="9af33-133">The default value for this property in the parent class has been reactiviated.</span></span> | 
 
-## <a name="remarks"></a><span data-ttu-id="5e551-134">설명</span><span class="sxs-lookup"><span data-stu-id="5e551-134">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9af33-134">설명</span><span class="sxs-lookup"><span data-stu-id="9af33-134">Remarks</span></span>
 
-<span data-ttu-id="5e551-135">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-delete) 메서드.</span><span class="sxs-lookup"><span data-stu-id="5e551-135">This function wraps a call to the [IWbemClassObject::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-delete) method.</span></span>
+<span data-ttu-id="9af33-135">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-delete) 메서드.</span><span class="sxs-lookup"><span data-stu-id="9af33-135">This function wraps a call to the [IWbemClassObject::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-delete) method.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="5e551-136">요구 사항</span><span class="sxs-lookup"><span data-stu-id="5e551-136">Requirements</span></span>  
- <span data-ttu-id="5e551-137">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5e551-137">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="9af33-136">요구 사항</span><span class="sxs-lookup"><span data-stu-id="9af33-136">Requirements</span></span>  
+ <span data-ttu-id="9af33-137">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="9af33-137">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="5e551-138">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="5e551-138">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="9af33-138">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="9af33-138">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="5e551-139">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="5e551-139">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="9af33-139">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="9af33-139">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5e551-140">참고자료</span><span class="sxs-lookup"><span data-stu-id="5e551-140">See also</span></span>  
-[<span data-ttu-id="5e551-141">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="5e551-141">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="9af33-140">참고자료</span><span class="sxs-lookup"><span data-stu-id="9af33-140">See also</span></span>  
+[<span data-ttu-id="9af33-141">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="9af33-141">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)

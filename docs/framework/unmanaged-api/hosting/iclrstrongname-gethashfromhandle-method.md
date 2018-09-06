@@ -19,16 +19,16 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 20c5f6bbb58b85f42ec00e356eccc5fb41ce813c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43560337"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43743942"
 ---
-# <a name="iclrstrongnamegethashfromhandle-method"></a><span data-ttu-id="6d851-102">ICLRStrongName::GetHashFromHandle 메서드</span><span class="sxs-lookup"><span data-stu-id="6d851-102">ICLRStrongName::GetHashFromHandle Method</span></span>
-<span data-ttu-id="6d851-103">지정 된 해시 알고리즘을 사용 하 여 지정 된 파일 핸들에 있는 파일의 내용에 대 한 해시를 생성 합니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-103">Generates a hash over the contents of the file that has the specified file handle, using the specified hash algorithm.</span></span>  
+# <a name="iclrstrongnamegethashfromhandle-method"></a><span data-ttu-id="04356-102">ICLRStrongName::GetHashFromHandle 메서드</span><span class="sxs-lookup"><span data-stu-id="04356-102">ICLRStrongName::GetHashFromHandle Method</span></span>
+<span data-ttu-id="04356-103">지정 된 해시 알고리즘을 사용 하 여 지정 된 파일 핸들에 있는 파일의 내용에 대 한 해시를 생성 합니다.</span><span class="sxs-lookup"><span data-stu-id="04356-103">Generates a hash over the contents of the file that has the specified file handle, using the specified hash algorithm.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6d851-104">구문</span><span class="sxs-lookup"><span data-stu-id="6d851-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="04356-104">구문</span><span class="sxs-lookup"><span data-stu-id="04356-104">Syntax</span></span>  
   
 ```  
 HRESULT GetHashFromHandle (  
@@ -40,33 +40,33 @@ HRESULT GetHashFromHandle (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="6d851-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="6d851-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="04356-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="04356-105">Parameters</span></span>  
  `hFile`  
- <span data-ttu-id="6d851-106">[in] 해시 될 파일의 핸들입니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-106">[in] The handle of the file to be hashed.</span></span>  
+ <span data-ttu-id="04356-106">[in] 해시 될 파일의 핸들입니다.</span><span class="sxs-lookup"><span data-stu-id="04356-106">[in] The handle of the file to be hashed.</span></span>  
   
  `piHashAlg`  
- <span data-ttu-id="6d851-107">[out에서] 해시 알고리즘을 지정 하는 상수입니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-107">[in, out] A constant that specifies the hash algorithm.</span></span> <span data-ttu-id="6d851-108">기본 알고리즘에 0을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-108">Use zero for the default algorithm.</span></span>  
+ <span data-ttu-id="04356-107">[out에서] 해시 알고리즘을 지정 하는 상수입니다.</span><span class="sxs-lookup"><span data-stu-id="04356-107">[in, out] A constant that specifies the hash algorithm.</span></span> <span data-ttu-id="04356-108">기본 알고리즘에 0을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="04356-108">Use zero for the default algorithm.</span></span>  
   
  `pbHash`  
- <span data-ttu-id="6d851-109">[out] 반환 된 해시 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-109">[out] The returned hash buffer.</span></span>  
+ <span data-ttu-id="04356-109">[out] 반환 된 해시 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="04356-109">[out] The returned hash buffer.</span></span>  
   
  `cchHash`  
- <span data-ttu-id="6d851-110">[in] 요청 된 최대 크기인 `pbHash`합니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-110">[in] The requested maximum size of `pbHash`.</span></span>  
+ <span data-ttu-id="04356-110">[in] 요청 된 최대 크기인 `pbHash`합니다.</span><span class="sxs-lookup"><span data-stu-id="04356-110">[in] The requested maximum size of `pbHash`.</span></span>  
   
  `pchHash`  
- <span data-ttu-id="6d851-111">[out] 반환 된 바이트의 크기, `pbHash`합니다.</span><span class="sxs-lookup"><span data-stu-id="6d851-111">[out] The size, in bytes, of the returned `pbHash`.</span></span>  
+ <span data-ttu-id="04356-111">[out] 반환 된 바이트의 크기, `pbHash`합니다.</span><span class="sxs-lookup"><span data-stu-id="04356-111">[out] The size, in bytes, of the returned `pbHash`.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="6d851-112">반환 값</span><span class="sxs-lookup"><span data-stu-id="6d851-112">Return Value</span></span>  
- <span data-ttu-id="6d851-113">`S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).</span><span class="sxs-lookup"><span data-stu-id="6d851-113">`S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).</span></span>  
+## <a name="return-value"></a><span data-ttu-id="04356-112">반환 값</span><span class="sxs-lookup"><span data-stu-id="04356-112">Return Value</span></span>  
+ <span data-ttu-id="04356-113">`S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).</span><span class="sxs-lookup"><span data-stu-id="04356-113">`S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="6d851-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="6d851-114">Requirements</span></span>  
- <span data-ttu-id="6d851-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="6d851-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="04356-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="04356-114">Requirements</span></span>  
+ <span data-ttu-id="04356-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="04356-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="6d851-116">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="6d851-116">**Header:** MetaHost.h</span></span>  
+ <span data-ttu-id="04356-116">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="04356-116">**Header:** MetaHost.h</span></span>  
   
- <span data-ttu-id="6d851-117">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="6d851-117">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="04356-117">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="04356-117">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="6d851-118">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6d851-118">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="04356-118">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="04356-118">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6d851-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="6d851-119">See Also</span></span>  
- [<span data-ttu-id="6d851-120">ICLRStrongName 인터페이스</span><span class="sxs-lookup"><span data-stu-id="6d851-120">ICLRStrongName Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## <a name="see-also"></a><span data-ttu-id="04356-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="04356-119">See Also</span></span>  
+ [<span data-ttu-id="04356-120">ICLRStrongName 인터페이스</span><span class="sxs-lookup"><span data-stu-id="04356-120">ICLRStrongName Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

@@ -5,22 +5,22 @@ ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 45000554226fcde753041fca283bfc8b1eeba5ce
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43541771"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776918"
 ---
-# <a name="ltsecuritygt-of-ltnetpeerbindinggt"></a><span data-ttu-id="a81bd-102">&lt;netPeerBinding&gt;의 &lt;security&gt;</span><span class="sxs-lookup"><span data-stu-id="a81bd-102">&lt;security&gt; of &lt;netPeerBinding&gt;</span></span>
-<span data-ttu-id="a81bd-103">보안 설정을 정의 합니다 [ \<netPeerTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), 인증 유형 등 사용 및 보안 메시지 전송에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-103">Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), including the type of authentication used and the security used for the message transport.</span></span>  
+# <a name="ltsecuritygt-of-ltnetpeerbindinggt"></a><span data-ttu-id="aea9c-102">&lt;netPeerBinding&gt;의 &lt;security&gt;</span><span class="sxs-lookup"><span data-stu-id="aea9c-102">&lt;security&gt; of &lt;netPeerBinding&gt;</span></span>
+<span data-ttu-id="aea9c-103">보안 설정을 정의 합니다 [ \<netPeerTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), 인증 유형 등 사용 및 보안 메시지 전송에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-103">Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), including the type of authentication used and the security used for the message transport.</span></span>  
   
- <span data-ttu-id="a81bd-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="a81bd-104">\<system.ServiceModel></span></span>  
-<span data-ttu-id="a81bd-105">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="a81bd-105">\<bindings></span></span>  
-<span data-ttu-id="a81bd-106">\<netPeerBinding></span><span class="sxs-lookup"><span data-stu-id="a81bd-106">\<netPeerBinding></span></span>  
-<span data-ttu-id="a81bd-107">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="a81bd-107">\<binding></span></span>  
-<span data-ttu-id="a81bd-108">\<security></span><span class="sxs-lookup"><span data-stu-id="a81bd-108">\<security></span></span>  
+ <span data-ttu-id="aea9c-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="aea9c-104">\<system.ServiceModel></span></span>  
+<span data-ttu-id="aea9c-105">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="aea9c-105">\<bindings></span></span>  
+<span data-ttu-id="aea9c-106">\<netPeerBinding></span><span class="sxs-lookup"><span data-stu-id="aea9c-106">\<netPeerBinding></span></span>  
+<span data-ttu-id="aea9c-107">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="aea9c-107">\<binding></span></span>  
+<span data-ttu-id="aea9c-108">\<security></span><span class="sxs-lookup"><span data-stu-id="aea9c-108">\<security></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a81bd-109">구문</span><span class="sxs-lookup"><span data-stu-id="a81bd-109">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="aea9c-109">구문</span><span class="sxs-lookup"><span data-stu-id="aea9c-109">Syntax</span></span>  
   
 ```xml  
 <netPeerBinding>  
@@ -32,47 +32,47 @@ ms.locfileid: "43541771"
 </netPeerBinding>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="a81bd-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="a81bd-110">Attributes and Elements</span></span>  
- <span data-ttu-id="a81bd-111">다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-111">The following sections describe attributes, child elements, and parent elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="aea9c-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="aea9c-110">Attributes and Elements</span></span>  
+ <span data-ttu-id="aea9c-111">다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-111">The following sections describe attributes, child elements, and parent elements</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="a81bd-112">특성</span><span class="sxs-lookup"><span data-stu-id="a81bd-112">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="aea9c-112">특성</span><span class="sxs-lookup"><span data-stu-id="aea9c-112">Attributes</span></span>  
   
-|<span data-ttu-id="a81bd-113">특성</span><span class="sxs-lookup"><span data-stu-id="a81bd-113">Attribute</span></span>|<span data-ttu-id="a81bd-114">설명</span><span class="sxs-lookup"><span data-stu-id="a81bd-114">Description</span></span>|  
+|<span data-ttu-id="aea9c-113">특성</span><span class="sxs-lookup"><span data-stu-id="aea9c-113">Attribute</span></span>|<span data-ttu-id="aea9c-114">설명</span><span class="sxs-lookup"><span data-stu-id="aea9c-114">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="a81bd-115">모드</span><span class="sxs-lookup"><span data-stu-id="a81bd-115">mode</span></span>|<span data-ttu-id="a81bd-116">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-116">Optional.</span></span> <span data-ttu-id="a81bd-117">이 바인딩으로 구성된 피어에서 사용하는 보안 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-117">Specifies the type of security used by peers configured with this binding.</span></span> <span data-ttu-id="a81bd-118">기본값은 `Message`입니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-118">The default value is `Message`.</span></span> <span data-ttu-id="a81bd-119">이 특성은 <xref:System.ServiceModel.SecurityMode> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-119">This attribute is of type <xref:System.ServiceModel.SecurityMode>.</span></span>|  
+|<span data-ttu-id="aea9c-115">모드</span><span class="sxs-lookup"><span data-stu-id="aea9c-115">mode</span></span>|<span data-ttu-id="aea9c-116">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-116">Optional.</span></span> <span data-ttu-id="aea9c-117">이 바인딩으로 구성된 피어에서 사용하는 보안 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-117">Specifies the type of security used by peers configured with this binding.</span></span> <span data-ttu-id="aea9c-118">기본값은 `Message`입니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-118">The default value is `Message`.</span></span> <span data-ttu-id="aea9c-119">이 특성은 <xref:System.ServiceModel.SecurityMode> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-119">This attribute is of type <xref:System.ServiceModel.SecurityMode>.</span></span>|  
   
-## <a name="mode-attribute"></a><span data-ttu-id="a81bd-120">mode 특성</span><span class="sxs-lookup"><span data-stu-id="a81bd-120">mode Attribute</span></span>  
+## <a name="mode-attribute"></a><span data-ttu-id="aea9c-120">mode 특성</span><span class="sxs-lookup"><span data-stu-id="aea9c-120">mode Attribute</span></span>  
   
-|<span data-ttu-id="a81bd-121">값</span><span class="sxs-lookup"><span data-stu-id="a81bd-121">Value</span></span>|<span data-ttu-id="a81bd-122">설명</span><span class="sxs-lookup"><span data-stu-id="a81bd-122">Description</span></span>|  
+|<span data-ttu-id="aea9c-121">값</span><span class="sxs-lookup"><span data-stu-id="aea9c-121">Value</span></span>|<span data-ttu-id="aea9c-122">설명</span><span class="sxs-lookup"><span data-stu-id="aea9c-122">Description</span></span>|  
 |-----------|-----------------|  
-|<span data-ttu-id="a81bd-123">메시지</span><span class="sxs-lookup"><span data-stu-id="a81bd-123">Message</span></span>|<span data-ttu-id="a81bd-124">SOAP 전송은 무결성, 기밀성 및 인증을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-124">SOAP security provides authentication, integrity and confidentiality.</span></span>|  
-|<span data-ttu-id="a81bd-125">없음</span><span class="sxs-lookup"><span data-stu-id="a81bd-125">None</span></span>|<span data-ttu-id="a81bd-126">보안이 해제되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-126">Security is disabled.</span></span>|  
-|<span data-ttu-id="a81bd-127">전송</span><span class="sxs-lookup"><span data-stu-id="a81bd-127">Transport</span></span>|<span data-ttu-id="a81bd-128">HTTPS를 사용하여 보안이 제공됩니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-128">Security is provided using HTTPS.</span></span>|  
-|<span data-ttu-id="a81bd-129">TransportWithMessageCredential</span><span class="sxs-lookup"><span data-stu-id="a81bd-129">TransportWithMessageCredential</span></span>|<span data-ttu-id="a81bd-130">HTTPS는 인증 및 기밀성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-130">HTTPS provides authentication and confidentiality.</span></span> <span data-ttu-id="a81bd-131">SOAP 메시지는 다양한 자격 증명 형식을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-131">SOAP messages provide rich credential types.</span></span>|  
+|<span data-ttu-id="aea9c-123">메시지</span><span class="sxs-lookup"><span data-stu-id="aea9c-123">Message</span></span>|<span data-ttu-id="aea9c-124">SOAP 전송은 무결성, 기밀성 및 인증을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-124">SOAP security provides authentication, integrity and confidentiality.</span></span>|  
+|<span data-ttu-id="aea9c-125">없음</span><span class="sxs-lookup"><span data-stu-id="aea9c-125">None</span></span>|<span data-ttu-id="aea9c-126">보안이 해제되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-126">Security is disabled.</span></span>|  
+|<span data-ttu-id="aea9c-127">전송</span><span class="sxs-lookup"><span data-stu-id="aea9c-127">Transport</span></span>|<span data-ttu-id="aea9c-128">HTTPS를 사용하여 보안이 제공됩니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-128">Security is provided using HTTPS.</span></span>|  
+|<span data-ttu-id="aea9c-129">TransportWithMessageCredential</span><span class="sxs-lookup"><span data-stu-id="aea9c-129">TransportWithMessageCredential</span></span>|<span data-ttu-id="aea9c-130">HTTPS는 인증 및 기밀성을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-130">HTTPS provides authentication and confidentiality.</span></span> <span data-ttu-id="aea9c-131">SOAP 메시지는 다양한 자격 증명 형식을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-131">SOAP messages provide rich credential types.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="a81bd-132">자식 요소</span><span class="sxs-lookup"><span data-stu-id="a81bd-132">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="aea9c-132">자식 요소</span><span class="sxs-lookup"><span data-stu-id="aea9c-132">Child Elements</span></span>  
   
-|<span data-ttu-id="a81bd-133">요소</span><span class="sxs-lookup"><span data-stu-id="a81bd-133">Element</span></span>|<span data-ttu-id="a81bd-134">설명</span><span class="sxs-lookup"><span data-stu-id="a81bd-134">Description</span></span>|  
+|<span data-ttu-id="aea9c-133">요소</span><span class="sxs-lookup"><span data-stu-id="aea9c-133">Element</span></span>|<span data-ttu-id="aea9c-134">설명</span><span class="sxs-lookup"><span data-stu-id="aea9c-134">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="a81bd-135">\<transport></span><span class="sxs-lookup"><span data-stu-id="a81bd-135">\<transport></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-netpeertcpbinding.md)|<span data-ttu-id="a81bd-136">이 바인딩으로 구성된 피어에서 보낸 보안 메시지의 전송 형식을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-136">Defines the transport type for secured messages sent by peers configured with this binding.</span></span> <span data-ttu-id="a81bd-137">이 요소는 <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-137">This element is of type <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>.</span></span>|  
+|[<span data-ttu-id="aea9c-135">\<transport></span><span class="sxs-lookup"><span data-stu-id="aea9c-135">\<transport></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-netpeertcpbinding.md)|<span data-ttu-id="aea9c-136">이 바인딩으로 구성된 피어에서 보낸 보안 메시지의 전송 형식을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-136">Defines the transport type for secured messages sent by peers configured with this binding.</span></span> <span data-ttu-id="aea9c-137">이 요소는 <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-137">This element is of type <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="a81bd-138">부모 요소</span><span class="sxs-lookup"><span data-stu-id="a81bd-138">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="aea9c-138">부모 요소</span><span class="sxs-lookup"><span data-stu-id="aea9c-138">Parent Elements</span></span>  
   
-|<span data-ttu-id="a81bd-139">요소</span><span class="sxs-lookup"><span data-stu-id="a81bd-139">Element</span></span>|<span data-ttu-id="a81bd-140">설명</span><span class="sxs-lookup"><span data-stu-id="a81bd-140">Description</span></span>|  
+|<span data-ttu-id="aea9c-139">요소</span><span class="sxs-lookup"><span data-stu-id="aea9c-139">Element</span></span>|<span data-ttu-id="aea9c-140">설명</span><span class="sxs-lookup"><span data-stu-id="aea9c-140">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="a81bd-141">\<binding></span><span class="sxs-lookup"><span data-stu-id="a81bd-141">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)|<span data-ttu-id="a81bd-142">모든 바인딩 기능을 정의 합니다 [ \<netPeerTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-142">Defines all binding capabilities of the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md).</span></span>|  
+|[<span data-ttu-id="aea9c-141">\<binding></span><span class="sxs-lookup"><span data-stu-id="aea9c-141">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)|<span data-ttu-id="aea9c-142">모든 바인딩 기능을 정의 합니다 [ \<netPeerTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-142">Defines all binding capabilities of the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md).</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="a81bd-143">설명</span><span class="sxs-lookup"><span data-stu-id="a81bd-143">Remarks</span></span>  
- <span data-ttu-id="a81bd-144">보안은 메시지 또는 전송별로 고유할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a81bd-144">Security can be either message- or transport-specific.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="aea9c-143">설명</span><span class="sxs-lookup"><span data-stu-id="aea9c-143">Remarks</span></span>  
+ <span data-ttu-id="aea9c-144">보안은 메시지 또는 전송별로 고유할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aea9c-144">Security can be either message- or transport-specific.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a81bd-145">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a81bd-145">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="aea9c-145">참고 항목</span><span class="sxs-lookup"><span data-stu-id="aea9c-145">See Also</span></span>  
  <xref:System.ServiceModel.Configuration.PeerSecurityElement>  
  <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>  
  <xref:System.ServiceModel.PeerSecuritySettings>  
- [<span data-ttu-id="a81bd-146">서비스 및 클라이언트에 보안 설정</span><span class="sxs-lookup"><span data-stu-id="a81bd-146">Securing Services and Clients</span></span>](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [<span data-ttu-id="a81bd-147">자격 증명 형식 선택</span><span class="sxs-lookup"><span data-stu-id="a81bd-147">Selecting a Credential Type</span></span>](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [<span data-ttu-id="a81bd-148">바인딩</span><span class="sxs-lookup"><span data-stu-id="a81bd-148">Bindings</span></span>](../../../../../docs/framework/wcf/bindings.md)  
- [<span data-ttu-id="a81bd-149">시스템 제공 바인딩 구성</span><span class="sxs-lookup"><span data-stu-id="a81bd-149">Configuring System-Provided Bindings</span></span>](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [<span data-ttu-id="a81bd-150">바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성</span><span class="sxs-lookup"><span data-stu-id="a81bd-150">Using Bindings to Configure Windows Communication Foundation Services and Clients</span></span>](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
- [<span data-ttu-id="a81bd-151">\<binding></span><span class="sxs-lookup"><span data-stu-id="a81bd-151">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)
+ [<span data-ttu-id="aea9c-146">서비스 및 클라이언트에 보안 설정</span><span class="sxs-lookup"><span data-stu-id="aea9c-146">Securing Services and Clients</span></span>](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [<span data-ttu-id="aea9c-147">자격 증명 형식 선택</span><span class="sxs-lookup"><span data-stu-id="aea9c-147">Selecting a Credential Type</span></span>](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [<span data-ttu-id="aea9c-148">바인딩</span><span class="sxs-lookup"><span data-stu-id="aea9c-148">Bindings</span></span>](../../../../../docs/framework/wcf/bindings.md)  
+ [<span data-ttu-id="aea9c-149">시스템 제공 바인딩 구성</span><span class="sxs-lookup"><span data-stu-id="aea9c-149">Configuring System-Provided Bindings</span></span>](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [<span data-ttu-id="aea9c-150">바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성</span><span class="sxs-lookup"><span data-stu-id="aea9c-150">Using Bindings to Configure Windows Communication Foundation Services and Clients</span></span>](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [<span data-ttu-id="aea9c-151">\<binding></span><span class="sxs-lookup"><span data-stu-id="aea9c-151">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)
