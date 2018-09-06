@@ -6,12 +6,12 @@ helpviewer_keywords:
 - data access [.NET Framework], about .NET Framework data access
 - data [.NET Framework], accessing
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
-ms.openlocfilehash: 4ad0b287aa37104e01015ef0a44cf500bc885c29
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0db71fd7e48515ad6be3641786fc180f62aacf33
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356762"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43724008"
 ---
 # <a name="data-and-modeling-in-the-net-framework"></a>.NET Framework의 데이터 및 모델링
 이 단원에서는 ADO.NET, LINQ(Language Integrated Query), WCF Data Services 및 XML을 사용하여 데이터에 액세스하는 방법에 대한 정보를 제공합니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "33356762"
  [ADO.NET](../../../docs/framework/data/adonet/index.md)  
  ADO.NET 아키텍처에 대해 설명하고, ADO.NET 클래스를 사용하여 응용 프로그램 데이터를 관리하는 방법과 Microsoft SQL Server, OLE DB 데이터 소스 및 XML을 포함하는 데이터 소스와 상호 작용하는 방법에 대해 설명합니다.  
   
- [LINQ 포털](http://msdn.microsoft.com/library/6eb15c76-4ee6-4146-981e-b3429a945e6f)  
+ [LINQ 포털](https://msdn.microsoft.com/library/6eb15c76-4ee6-4146-981e-b3429a945e6f)  
  LINQ(Language-Integrated Query) 관련 설명서에 대한 링크를 제공합니다.  
   
  [트랜잭션 처리](../../../docs/framework/data/transactions/index.md)  
@@ -32,11 +32,11 @@ ms.locfileid: "33356762"
  [XML 문서 및 데이터](../../../docs/standard/data/xml/index.md)  
  .NET Framework에서 XML 문서 및 데이터로 작업하는 종합적이고 통합된 클래스 집합에 대한 개요를 제공합니다.  
   
- [XML 표준 참조](http://msdn.microsoft.com/library/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 표준 참조](https://msdn.microsoft.com/library/79c78508-c9d0-423a-a00f-672e855de401)  
  Microsoft에서 지원하는 XML 표준에 대한 참조 정보를 제공합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [Microsoft SQL Server 모델링 기술](http://go.microsoft.com/fwlink/?LinkId=193039)  
+ [Microsoft SQL Server 모델링 기술](https://go.microsoft.com/fwlink/?LinkId=193039)  
  신속한 사용자 지정된 데이터 기반 응용 프로그램 디자인과 개발을 가능하게 해주는 일련의 기술들에 대해 설명합니다.  
   
  [개발 가이드](../../../docs/framework/development-guide.md)  

@@ -2,15 +2,15 @@
 title: 정규식 활동
 ms.date: 03/30/2017
 ms.assetid: b8f24694-49db-4339-92ec-014e3d4ae63b
-ms.openlocfilehash: 34b1f18f26f0b79c4b8711d65da5707a85cf3bf0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 50daa5b6d7baab37f372de4c30c2e0d12b4fa943
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519836"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43743166"
 ---
 # <a name="regular-expression-activities"></a>정규식 활동
-이 샘플에서는 <xref:System.Text.RegularExpressions> 네임스페이스의 정규식 기능을 노출하는 활동 집합을 만드는 방법을 보여 줍니다. 이러한 사용자 지정 활동은 워크플로 응용 프로그램 내에서 사용할 수 있습니다. 정규식에 대 한 자세한 내용은 참조 [N:System.Text.RegularExpressions](http://go.microsoft.com/fwlink/?LinkId=150434) Namespace입니다.  
+이 샘플에서는 <xref:System.Text.RegularExpressions> 네임스페이스의 정규식 기능을 노출하는 활동 집합을 만드는 방법을 보여 줍니다. 이러한 사용자 지정 활동은 워크플로 응용 프로그램 내에서 사용할 수 있습니다. 정규식에 대 한 자세한 내용은 참조 하세요. [N:System.Text.RegularExpressions](https://go.microsoft.com/fwlink/?LinkId=150434) Namespace입니다.  
   
  다음 표에는 이 샘플의 사용자 지정 활동에 대한 자세한 설명이 나와 있습니다.  
   
@@ -29,7 +29,7 @@ ms.locfileid: "33519836"
 |------------------------------|-----------------|  
 |Pattern(필수)|검색에 사용할 정규식입니다.|  
 |Input(필수)|검색할 입력 문자열입니다.|  
-|RegexOptions|비트 OR 조합 [RegexOptions](http://go.microsoft.com/fwlink/?LinkId=150446) 열거형 값입니다.|  
+|RegexOptions|비트 OR 조합 [RegexOptions](https://go.microsoft.com/fwlink/?LinkId=150446) 열거형 값입니다.|  
 |반환 값|제공된 패턴에 일치하는 항목을 입력에서 찾으면 `true`이고, 그렇지 않으면 `false`입니다.|  
   
  다음 코드 예제에서는 `IsMatch` 사용자 지정 활동을 사용하는 방법을 보여 줍니다.  
@@ -51,7 +51,7 @@ new IsMatch
 |------------------------------|-----------------|  
 |Pattern(필수)|검색에 사용할 정규식입니다.|  
 |Input(필수)|검색할 입력 문자열입니다.|  
-|RegexOptions|비트 OR 조합 [RegexOptions](http://go.microsoft.com/fwlink/?LinkId=150446) 열거형 값입니다.|  
+|RegexOptions|비트 OR 조합 [RegexOptions](https://go.microsoft.com/fwlink/?LinkId=150446) 열거형 값입니다.|  
 |반환 값|일치하는 항목의 컬렉션이 포함된 <xref:System.Text.RegularExpressions.MatchCollection>입니다.|  
   
  다음 코드 예제에서는 `Matches` 사용자 지정 활동을 사용하는 방법을 보여 줍니다.  
@@ -75,7 +75,7 @@ new Matches
 |Input(필수)|검색할 입력 문자열입니다.|  
 |Replacement|대체 문자열입니다.<br /><br /> `Replacement`를 지정한 경우 `MatchEvaluator` 속성이 무시됩니다. `Replacement` 또는 `MatchEvaluator` 속성 중 하나는 반드시 설정해야 합니다.|  
 |MatchEvaluator|각 항목의 일치 여부를 조사하고 원래 일치 문자열 또는 대체 문자열을 반환하는 사용자 지정 메서드입니다.<br /><br /> `Replacement`를 지정한 경우 `MatchEvaluator` 속성이 무시됩니다. `Replacement` 또는 `MatchEvaluator` 속성 중 하나는 반드시 설정해야 합니다.|  
-|RegexOptions|비트 OR 조합 [RegexOptions](http://go.microsoft.com/fwlink/?LinkId=150446) 열거형 값입니다.|  
+|RegexOptions|비트 OR 조합 [RegexOptions](https://go.microsoft.com/fwlink/?LinkId=150446) 열거형 값입니다.|  
 |반환 값|일치하는 항목의 컬렉션이 포함된 <xref:System.Text.RegularExpressions.MatchCollection>입니다.|  
   
  다음 코드 예제에서는 `Replace` 사용자 지정 활동을 사용하는 방법을 보여 줍니다.  
@@ -111,6 +111,6 @@ new Replace
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Regex`

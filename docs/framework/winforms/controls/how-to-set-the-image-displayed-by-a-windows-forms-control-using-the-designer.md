@@ -10,11 +10,11 @@ helpviewer_keywords:
 - setting images [Windows Forms], Windows Forms controls
 ms.assetid: ae80d07a-e469-4251-90ca-df71f5852454
 ms.openlocfilehash: cf9491c7eee7dee197e9a3b91d35bc7f71f4e956
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43392631"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43735905"
 ---
 # <a name="how-to-set-the-image-displayed-by-a-windows-forms-control-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms 컨트롤에 표시되는 이미지 설정
 여러 Windows Forms 컨트롤 이미지를 표시할 수 있습니다. 이미지와 같은 디스크 아이콘을 나타내는 단추 컨트롤의 용도 명확히 구분 하는 아이콘 수를 **저장할** 명령입니다. 또는 아이콘 배경 이미지를 원하는 모양을 제어할 수 있습니다.  

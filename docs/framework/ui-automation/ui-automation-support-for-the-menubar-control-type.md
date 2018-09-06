@@ -10,11 +10,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: f2927ea6eed0bf23f75f960f8ecef0a1ad670253
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: MT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43401754"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43732016"
 ---
 # <a name="ui-automation-support-for-the-menubar-control-type"></a>MenuBar 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]

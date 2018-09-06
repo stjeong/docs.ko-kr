@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 266c3bd3-2ffc-4471-94b7-3675443be1ac
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: e69dafaf2e415a0686594c4757bcf20dfd135944
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4836a5076401de2f7c3112b298cdadc0e0307962
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33473232"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43731847"
 ---
 # <a name="security-validation-and-authentication-failures-per-second"></a>Security Validation and Authentication Failures Per Second
 카운터 이름: Security Validation and Authentication Failures Per Second  
@@ -31,6 +31,6 @@ ms.locfileid: "33473232"
   
 -   TLSNEGO/SPNEGO 핸드셰이크 중에 오류가 발생했습니다.  
   
- 이 카운터는 성능 카운터 형식 [PERF_COUNTER_COUNTER](http://go.microsoft.com/fwlink/?LinkID=94649), 값은 다음 수식을 사용 하 여 계산 됩니다.  
+ 이 카운터는 성능 카운터 형식 [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), 값은 다음 수식을 사용 하 여 계산 됩니다.  
   
  (N1-N0)/((D1-D0)/F)

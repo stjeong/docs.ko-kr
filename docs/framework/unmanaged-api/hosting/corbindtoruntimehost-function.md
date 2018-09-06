@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 1952121a6c0c735926944c839c3c7e8a8db5fb53
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43396833"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43723196"
 ---
 # <a name="corbindtoruntimehost-function"></a>CorBindToRuntimeHost 함수
 호스트를 프로세스에는 CLR (공용 언어 런타임)의 지정된 된 버전을 로드할 수 있습니다.  

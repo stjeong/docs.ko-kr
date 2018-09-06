@@ -3,11 +3,11 @@ title: 실행 속성
 ms.date: 03/30/2017
 ms.assetid: 31c009db-397c-4653-87e2-32dc77fa4b13
 ms.openlocfilehash: 4906c2ad11c8b5822764435d2b39a5b51f2673ba
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43409091"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43748196"
 ---
 # <a name="execution-properties"></a>실행 속성
 이 샘플에서는 사용자 지정 활동에 실행 속성을 정의하고 사용하는 방법을 보여 줍니다. 이 예제에서는 실행 속성에 따라 콘솔의 전경색이 결정됩니다. 예제 워크플로는 실행의 논리 경로(<xref:System.Activities.Statements.Parallel> 활동의 분기)가 달라지는 경우 <xref:System.Activities.Statements.Parallel> 활동의 분기 전반에서 활동이 인터리브 방식으로 실행되더라도 다른 콘솔 색이 유지되는 방식을 보여 줍니다.  

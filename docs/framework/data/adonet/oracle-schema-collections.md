@@ -2,12 +2,12 @@
 title: Oracle 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: 89a75de8-dee8-45e2-a97f-254d7e62e7e1
-ms.openlocfilehash: b86de542e425d6fdc56f238f90063988bee95ffa
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 342c4cbe994eb983713be0f258e3a029df6739f8
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766857"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43745348"
 ---
 # <a name="oracle-schema-collections"></a>Oracle 스키마 컬렉션
 Microsoft .NET Framework Data Provider for Oracle에서는 공통 스키마 컬렉션을 비롯하여 다음과 같은 특정 스키마 컬렉션을 지원합니다.  
@@ -380,4 +380,4 @@ Microsoft .NET Framework Data Provider for Oracle에서는 공통 스키마 컬�
 |CHAR_USED|문자열|문자열에 공식적으로 사용되는 것이 바이트 제한(B)인지 또는 문자열 제한(C)인지 여부를 나타냅니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
