@@ -3,11 +3,11 @@ title: 속성 승격 활동
 ms.date: 03/30/2017
 ms.assetid: 802196b7-1159-4c05-b41b-d3bfdfcc88d9
 ms.openlocfilehash: 6e059a0d344e6c62833feaa890c459c141a49673
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481139"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43559107"
 ---
 # <a name="property-promotion-activity"></a>속성 승격 활동
 이 샘플에서는 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 승격 기능을 워크플로 작성 환경에 직접 통합하는 종단 간 솔루션을 제공합니다. 승격 기능의 사용을 단순화하는 워크플로 확장, 워크플로 활동 및 구성 요소의 컬렉션이 제공됩니다. 또한 샘플에는 이 컬렉션을 사용하는 방법을 보여 주는 간단한 워크플로가 포함되어 있습니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "43481139"
 ## <a name="understanding-this-sample"></a>이 샘플 이해  
  이 샘플에는 두 가지 프로젝트와 SQL 파일이 포함되어 있습니다.  
   
--   **CounterServiceApplication** 은 간단한 Counter WF 서비스를 호스팅하는 콘솔 응용 프로그램입니다. ph x="1" /&gt; 엔드포인트를 통해 단방향 메시지를 받을 때 워크플로는 0부터 29까지 계산하며 2초마다 카운터 변수를 증가시킵니다. 각 카운터가 증가한 후 워크플로가 유지되고 승격된 속성이 [dbo].[CounterService] 뷰에서 업데이트됩니다. 콘솔 응용 프로그램은 실행될 때 WF 서비스를 호스트하고 메시지를 `Start` 엔드포인트에 보내 Counter WF 인스턴스를 만듭니다.  
+-   **CounterServiceApplication** 은 간단한 Counter WF 서비스를 호스팅하는 콘솔 응용 프로그램입니다. `Start` 엔드포인트를 통해 단방향 메시지를 받을 때 워크플로는 0부터 29까지 계산하며 2초마다 카운터 변수를 증가시킵니다. 각 카운터가 증가한 후 워크플로가 유지되고 승격된 속성이 [dbo].[CounterService] 뷰에서 업데이트됩니다. 콘솔 응용 프로그램은 실행될 때 WF 서비스를 호스트하고 메시지를 `Start` 엔드포인트에 보내 Counter WF 인스턴스를 만듭니다.  
   
 -   **PropertyPromotionActivity** 는 구성 요소, 워크플로 활동 및 워크플로 확장이 포함 된 클래스 라이브러리는 합니다 **CounterServiceApplication** 사용 합니다.  
   

@@ -2,12 +2,12 @@
 title: 계산 식(F#)
 description: '시퀀싱 할 수 있으며 제어 흐름 구문 및 바인딩을 사용 하 여 결합 하는 F # 계산을 작성 하는 편리한 구문을 만드는 방법에 알아봅니다.'
 ms.date: 07/27/2018
-ms.openlocfilehash: 4995efc757d99a575ee9fad3abf0465a32398c44
-ms.sourcegitcommit: 78bcb629abdbdbde0e295b4e81f350a477864aba
+ms.openlocfilehash: ce81af7966a436b3973de277fb2a78ec06f4c471
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "36207435"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43800919"
 ---
 # <a name="computation-expressions"></a>계산 식
 
@@ -229,8 +229,6 @@ builder.Run(builder.Delay(fun () -> {| cexpr |}))
 
 위의 코드에 대 한 호출에서 `Run` 고 `Delay` 계산 식 작성기 클래스에 정의 되지 않은 경우 생략 됩니다. 여기로 표시, 계산 식의 본문이 `{| cexpr |}`, 다음 표에 설명 된 번역으로 작성기 클래스의 메서드를 포함 하는 호출으로 변환 됩니다. 계산 식 `{| cexpr |}` 가 이러한 변환에 따라 정의 된 재귀적으로 위치 `expr` F # 식 및 `cexpr` 계산 식입니다.
 
-
-
 |식|변환|
 |----------|-----------|
 |<code>{&#124; let binding in cexpr &#124;}</code>|<code>let binding in {&#124; cexpr &#124;}</code>|
@@ -361,7 +359,7 @@ let comp = eventually {
         printfn " x = %d" x
     return 3 + 4 }
 
-// Try the remaining lines in F# interactive to see how this 
+// Try the remaining lines in F# interactive to see how this
 // computation expression works in practice.
 let step x = Eventually.step x
 
@@ -386,9 +384,11 @@ comp |> step |> step |> step |> step |> step |> step |> step |> step
 계산 식에는 식을 반환 하는 내부 형식을 있습니다. 계산된 결과 또는 지연 된 계산을 수행할 수 있는 기본 형식을 나타낼 수 또는 일종의 컬렉션을 반복 하는 방법을 제공할 수 있습니다. 이전 예제에서는 기본 형식이 되었습니다 **결국**합니다. 시퀀스 식에 대 한 기본 형식은 <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>합니다. 쿼리 식에 대 한 기본 형식은 <xref:System.Linq.IQueryable?displayProperty=nameWithType>합니다. 비동기 워크플로에 대 한 기본 형식은 [ `Async` ](https://msdn.microsoft.com/library/03eb4d12-a01a-4565-a077-5e83f17cf6f7)합니다. `Async` 개체 결과 계산 하기 위해 수행 해야 하는 작업을 나타냅니다. 호출 하는 예를 들어 [ `Async.RunSynchronously` ](https://msdn.microsoft.com/library/0a6663a9-50f2-4d38-8bf3-cefd1a51fd6b) 계산을 실행 하 고 결과 반환 합니다.
 
 ## <a name="custom-operations"></a>사용자 지정 작업
+
 계산 식에서 사용자 지정 작업을 정의 하 고 계산 식의 연산자와 사용자 지정 작업을 사용할 수 있습니다. 예를 들어, 쿼리 식에는 쿼리 연산자를 포함할 수 있습니다. 사용자 지정 작업을 정의할 때 결과 정의 해야 하 고 계산 식에서 메서드에 대 한 합니다. 사용자 지정 작업을 정의 하려면 계산 식 작성기 클래스에 배치 하 고 적용 합니다는 [ `CustomOperationAttribute` ](https://msdn.microsoft.com/library/199f3927-79df-484b-ba66-85f58cc49b19)합니다. 이 특성은이 사용자 지정 작업에 사용할 이름을 인수로 문자열입니다. 이 이름은 여는 중괄호 계산 식의 시작 범위에 제공 됩니다. 따라서이 블록의 사용자 지정 작업으로 동일한 이름을 가진 식별자 사용할 수 없습니다. 예를 들어, 같은 식별자를 사용 하지 않도록 `all` 또는 `last` 쿼리 식에 있습니다.
 
 ### <a name="extending-existing-builders-with-new-custom-operations"></a>새 사용자 지정 작업을 사용 하 여 기존 작성기 확장
+
 작성기 클래스에 이미 있는 경우이 작성기 클래스 외부에서 사용자 지정 작업을 확장할 수 있습니다. 확장 모듈에서 선언 되어야 합니다. 네임 스페이스는 제외 하 고 동일한 파일에는 형식이 정의 되어 있는 동일한 네임 스페이스 선언 그룹 확장 멤버를 포함할 수 없습니다.
 
 다음 예제에서는 기존 확장 `Microsoft.FSharp.Linq.QueryBuilder` 클래스입니다.
@@ -401,11 +401,9 @@ type Microsoft.FSharp.Linq.QueryBuilder with
         Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 
-## <a name="see-also"></a>참고 항목
-[F# 언어 참조](index.md)
+## <a name="see-also"></a>참고자료
 
-[비동기 워크플로](asynchronous-workflows.md)
-
-[시퀀스](https://msdn.microsoft.com/library/6b773b6b-9c9a-4af8-bd9e-d96585c166db)
-
-[쿼리 식](query-expressions.md)
+- [F# 언어 참조](index.md)
+- [비동기 워크플로](asynchronous-workflows.md)
+- [시퀀스](https://msdn.microsoft.com/library/6b773b6b-9c9a-4af8-bd9e-d96585c166db)
+- [쿼리 식](query-expressions.md)

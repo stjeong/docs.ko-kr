@@ -3,11 +3,11 @@ title: 메시징 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
 ms.openlocfilehash: 3e56636e8364eec333f9585a0f62f6510561d1cc
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43405061"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43563280"
 ---
 # <a name="messaging-protocols"></a>메시징 프로토콜
 Windows Communication Foundation (WCF) 채널 스택에 내부 메시지 표현을 통신 형식으로 변환 하는 특정 전송을 사용 하 여 보내는 인코딩 및 전송 채널을 사용 합니다. 웹 서비스 상호 운용성을 위해 사용되는 가장 일반적인 전송은 HTTP이고, 웹 서비스에 사용되는 가장 일반적인 인코딩은 XML 기반 SOAP 1.1, SOAP 1.2 및 MTOM(Message Transmission Optimization Mechanism)입니다.  
@@ -130,7 +130,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
   
  B3121: WCF에서 Ws-metadataexchange (MEX) 사양 단원 6 값별 또는 참조별 끝점 참조에 대 한 메타 데이터를 포함 하는에 설명 된 메커니즘을 사용 합니다.  
   
- WCF 서비스에서 토큰 발급자가 발급 한 보안 Assertions Markup Language (SAML) 토큰을 사용 하 여 인증이 필요로 하는 경우를 고려해 보십시오 http://sts.fabrikam123.com합니다. WCF 끝점을 사용 하 여이 인증 요구 사항을 설명 `sp:IssuedToken` 중첩 된 어설션 `sp:Issuer` 토큰 발급자를 가리키는 어설션 합니다. ph x="1" /&gt; 어설션에 액세스하는 클라이언트 응용 프로그램은 토큰 발급자 엔드포인트와 통신하는 방법을 알고 있어야 합니다. 클라이언트는 토큰 발급자에 대한 메타데이터를 알고 있어야 합니다. MEX에 정의 된 끝점 참조 메타 데이터 확장을 사용 하 여을 WCF 토큰 발급자 메타 데이터에 대 한 참조를 제공 합니다.  
+ WCF 서비스에서 토큰 발급자가 발급 한 보안 Assertions Markup Language (SAML) 토큰을 사용 하 여 인증이 필요로 하는 경우를 고려해 보십시오 http://sts.fabrikam123.com합니다. WCF 끝점을 사용 하 여이 인증 요구 사항을 설명 `sp:IssuedToken` 중첩 된 어설션 `sp:Issuer` 토큰 발급자를 가리키는 어설션 합니다. `sp:Issuer` 어설션에 액세스하는 클라이언트 응용 프로그램은 토큰 발급자 엔드포인트와 통신하는 방법을 알고 있어야 합니다. 클라이언트는 토큰 발급자에 대한 메타데이터를 알고 있어야 합니다. MEX에 정의 된 끝점 참조 메타 데이터 확장을 사용 하 여을 WCF 토큰 발급자 메타 데이터에 대 한 참조를 제공 합니다.  
   
 ```xml  
 <sp:IssuedToken>  
@@ -213,7 +213,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
 |wsa10:InvalidAddressingHeader|중복 `wsa:To`, `wsa:ReplyTo`하십시오 `wsa:From` 또는 `wsa:MessageID`합니다. 중복 `wsa:RelatesTo` 동일한 `RelationshipType`입니다.|  
 |wsa10:MessageAddressingHeaderRequired|필수 주소 지정 헤더가 없습니다.|  
 |wsa10:DestinationUnreachable|이 채널에 대해 설정된 회신 주소와 다른 `ReplyTo`를 사용하여 메시지가 도착했습니다. 받는 사람 헤더에 지정된 주소에서 수신 대기하는 엔드포인트가 없습니다.|  
-|wsa10:ActionNotSupported|ph x="1" /&gt; 헤더에 지정된 동작이 엔드포인트와 연결된 디스패처 또는 인프라 채널에서 인식되지 않습니다.|  
+|wsa10:ActionNotSupported|`Action` 헤더에 지정된 동작이 엔드포인트와 연결된 디스패처 또는 인프라 채널에서 인식되지 않습니다.|  
 |wsa10:EndpointUnavailable|RM 채널에서 이 오류를 다시 보냅니다. 이는 엔드포인트에서 `CreateSequence` 메시지의 주소 지정 헤더를 검사하여 시퀀스를 처리하지 않는다는 것을 나타냅니다.|  
   
  위 표의 코드가 SOAP 1.1의 경우 `FaultCode`에 매핑되고 SOAP 1.2의 경우 `SubCode`(Code=Sender)에 매핑됩니다.  
