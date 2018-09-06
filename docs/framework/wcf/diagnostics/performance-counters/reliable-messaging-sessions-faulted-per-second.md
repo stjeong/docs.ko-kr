@@ -3,11 +3,11 @@ title: Reliable Messaging Sessions Faulted Per Second
 ms.date: 03/30/2017
 ms.assetid: 8f8ca2eb-1be4-4b6a-aa78-fcd3ee145fe8
 ms.openlocfilehash: c77d6a5f12dcce15dba94e2f63025a219ebcc6fd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43420721"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43873993"
 ---
 # <a name="reliable-messaging-sessions-faulted-per-second"></a>Reliable Messaging Sessions Faulted Per Second
 카운터 이름: Reliable Messaging Sessions Faulted Per Second.  

@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 94171b0708c97eb7510e916e451ed03645d706f3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43469884"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43877913"
 ---
 # <a name="getpropertyhandle-function"></a>GetPropertyHandle 함수
-속성을 식별 하는 고유한 핸들을 반환 합니다.
+속성을 식별하는 고유한 핸들을 반환합니다.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     

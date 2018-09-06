@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ddf0f01db73a873d2dd823e1f754b970ae8aa056
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5b712c6ae5978e83dab085f48dd1fd572757384a
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33430475"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43870535"
 ---
 # <a name="asmcacheflags-enumeration"></a>ASM_CACHE_FLAGS 열거형
-나타내는 어셈블리의 소스를 나타냅니다 [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) 전역 어셈블리 캐시에 있습니다.  
+표현 되는 어셈블리의 소스를 나타냅니다 [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) 전역 어셈블리 캐시에 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -33,7 +33,7 @@ typedef enum {
     ASM_CACHE_ZAP       = 0x01,  
     ASM_CACHE_GAC       = 0x02,  
     ASM_CACHE_DOWNLOAD  = 0x04,  
-    ASM_CACHE_ROOT      = 0x08  
+    ASM_CACHE_ROOT      = 0x08,  
     ASM_CACHE_ROOT_EX   = 0x80  
 } ASM_CACHE_FLAGS;  
 ```  
@@ -44,18 +44,18 @@ typedef enum {
 |------------|-----------------|  
 |`ASM_CACHE_ZAP`|Ngen.exe를 사용 하 여 미리 컴파일된 어셈블리의 캐시를 열거 합니다.|  
 |`ASM_CACHE_GAC`|전역 어셈블리 캐시를 열거합니다.|  
-|`ASM_CACHE_DOWNLOAD`|필요에 따라 다운로드 된 또는 섀도 복사 된 어셈블리를 열거 합니다.|  
-|`ASM_CACHE_ROOT`|나타냅니다는 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수 공용 언어 런타임 (CLR) 버전 2.0에 대 한 전역 어셈블리 캐시에 경로 반환 해야 합니다. 에 대 한 호출의 경우에만 의미 있는 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.|  
-|`ASM_CACHE_ROOT_EX`|나타냅니다는 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수 CLR 버전 4에 대 한 전역 어셈블리 캐시에 경로 반환 해야 합니다. 에 대 한 호출의 경우에만 의미 있는 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.|  
+|`ASM_CACHE_DOWNLOAD`|요청 시 다운로드 또는 섀도 복사 된 어셈블리를 열거 합니다.|  
+|`ASM_CACHE_ROOT`|나타내는 합니다 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수는 CLR (공용 언어 런타임) 버전 2.0에 대 한 전역 어셈블리 캐시에 경로 반환 해야 합니다. 에 대 한 호출의 컨텍스트에서 에서만 의미가 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.|  
+|`ASM_CACHE_ROOT_EX`|나타내는 합니다 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수를 전역 어셈블리 캐시에 clr 버전 4에 경로 반환 해야 합니다. 에 대 한 호출의 컨텍스트에서 에서만 의미가 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** Fusion.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [GetCachePath 함수](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)  

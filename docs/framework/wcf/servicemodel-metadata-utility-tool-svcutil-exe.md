@@ -8,11 +8,11 @@ helpviewer_keywords:
 - clients [WCF], consuming services
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
 ms.openlocfilehash: 4c47013ebc84c6006d65a89e57217ce1c720b45a
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43000019"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43802524"
 ---
 # <a name="servicemodel-metadata-utility-tool-svcutilexe"></a>ServiceModel Metadata 유틸리티 도구(Svcutil.exe)
 
@@ -80,9 +80,9 @@ BasicHttpContextbinding 끝점이 있는 서비스에 대 한 *Svcutil.exe* Basi
 
 |인수|설명|
 |--------------|-----------------|
-|`epr`|WS-Metadata Exchange를 지원하는 서비스 끝점에 대한 WS-Addressing EndpointReference가 포함된 XML 파일의 경로입니다. 자세한 내용은 메타데이터 다운로드 단원을 참조하십시오.|
+|`epr`|WS-Metadata Exchange를 지원하는 서비스 엔드포인트에 대한 WS-Addressing EndpointReference가 포함된 XML 파일의 경로입니다. 자세한 내용은 메타데이터 다운로드 단원을 참조하십시오.|
 |`metadataDocumentPath`|메타 데이터 문서의 경로 (*wsdl* 하거나 *xsd*)로 코드 (.wsdl,.xsd,.wspolicy, 또는.wsmex)로 가져올 계약이 포함 된 합니다.<br /><br /> Svcutil은 메타데이터의 원격 URL을 지정하는 경우 import 및 include를 따릅니다. 그러나 로컬 파일 시스템의 메타데이터 파일을 처리하려면 이 인수로 모든 파일을 지정해야 합니다. 이러한 방식으로 네트워크 종속성을 사용할 수 없는 빌드 환경에서 Svcutil을 사용할 수 있습니다. 와일드 카드 (*.xsd, \*.wsdl)이이 인수에 대 한 합니다.|
-|`url`|메타데이터를 제공하는 서비스 끝점의 URL 또는 온라인으로 호스팅되는 메타데이터 문서의 URL입니다. 이러한 문서를 검색하는 방법에 대한 자세한 내용은 메타데이터 다운로드 단원을 참조하십시오.|
+|`url`|메타데이터를 제공하는 서비스 엔드포인트의 URL 또는 온라인으로 호스팅되는 메타데이터 문서의 URL입니다. 이러한 문서를 검색하는 방법에 대한 자세한 내용은 메타데이터 다운로드 단원을 참조하십시오.|
 
 |옵션|설명|
 |------------|-----------------|
@@ -160,14 +160,14 @@ Svcutil은 다음 메타데이터 요청을 생성하고 동시에 메타데이�
 
 - 주어진 주소에 대한 DISCO 요청(ASMX에서 DiscoveryClientProtocol 사용)
 
-기본적으로 Svcutil.exe는 <xref:System.ServiceModel.Description.MetadataExchangeBindings> 클래스에 정의된 바인딩을 사용하여 MEX 요청을 수행합니다. WS-Metadata Exchange에 사용되는 바인딩을 구성하려면 IMetadataExchange 계약을 사용하는 구성에서 클라이언트 끝점을 정의해야 합니다. 이 끝점은 Svcutil.exe의 구성 파일 또는 `/svcutilConfig` 옵션을 사용하여 지정한 다른 구성 파일에서 정의할 수 있습니다.
+기본적으로 Svcutil.exe는 <xref:System.ServiceModel.Description.MetadataExchangeBindings> 클래스에 정의된 바인딩을 사용하여 MEX 요청을 수행합니다. WS-Metadata Exchange에 사용되는 바인딩을 구성하려면 IMetadataExchange 계약을 사용하는 구성에서 클라이언트 엔드포인트를 정의해야 합니다. 이 끝점은 Svcutil.exe의 구성 파일 또는 `/svcutilConfig` 옵션을 사용하여 지정한 다른 구성 파일에서 정의할 수 있습니다.
 
 `svcutil.exe /t:metadata  <url>* | <epr>`
 
 |인수|설명|
 |--------------|-----------------|
-|`url`|메타데이터를 제공하는 서비스 끝점의 URL 또는 온라인으로 호스팅되는 메타데이터 문서의 URL입니다.|
-|`epr`|WS-Metadata Exchange를 지원하는 서비스 끝점에 대한 WS-Addressing EndpointReference가 포함된 XML 파일의 경로입니다.|
+|`url`|메타데이터를 제공하는 서비스 엔드포인트의 URL 또는 온라인으로 호스팅되는 메타데이터 문서의 URL입니다.|
+|`epr`|WS-Metadata Exchange를 지원하는 서비스 엔드포인트에 대한 WS-Addressing EndpointReference가 포함된 XML 파일의 경로입니다.|
 
 ### <a name="xmlserializer-type-generation"></a>XmlSerializer 형식 생성
 

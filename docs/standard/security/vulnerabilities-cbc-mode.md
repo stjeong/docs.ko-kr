@@ -1,121 +1,121 @@
 ---
-title: 타이밍 ֳ 패딩을 사용 하 여 CBC 모드 대칭 암호 해독
-description: 검색 및 패딩을 사용 하 여 암호 블록 체인 (CBC) 모드 대칭 해독 된 타이밍 취약성을 완화 하는 방법에 알아봅니다.
+title: 타이밍 취약점 패딩을 사용 하 여 CBC 모드 대칭적 암호 해독을
+description: 검색 및 패딩을 사용 하 여 Cipher Block Chaining CBC () 모드 대칭 해독을 사용 하 여 타이밍 취약성을 완화 하는 방법에 알아봅니다.
 ms.date: 06/12/2018
 author: blowdart
 ms.author: mairaw
-ms.openlocfilehash: 26f4d19f591ac02d792bebbd648e90b07d84de56
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: 6d16b6849bfd4744f1828cda38a537f842243c1d
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36208693"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43881371"
 ---
-# <a name="timing-vulnerabilities-with-cbc-mode-symmetric-decryption-using-padding"></a>타이밍 ֳ 패딩을 사용 하 여 CBC 모드 대칭 암호 해독
+# <a name="timing-vulnerabilities-with-cbc-mode-symmetric-decryption-using-padding"></a>타이밍 취약점 패딩을 사용 하 여 CBC 모드 대칭적 암호 해독을
 
-Microsoft가 확인할 수 있는 안쪽 여백을 제외 하 고는 암호 텍스트의 무결성을 확인 하지 않고 적용 된 경우에 대칭 암호화의 암호 블록 체인 (CBC) 모드를 사용 하 여 암호화 된 데이터를 해독 하는 안전 더 이상 인지 매우 구체적인 경우입니다. 이 결정을이 내리도록 현재 알려진된 암호화 연구를 기반으로 합니다. 
+Microsoft가는 것이 더 이상 안전 안정형 안쪽 여백을 제외 하 고 암호화 텍스트의 무결성을 확인 하지 않고 적용 된 경우 대칭 암호화의 Cipher Block Chaining (CBC) 모드를 사용 하 여 암호화 된 데이터를 암호 해독에 매우 구체적인 상황입니다. 이 결정을이 내리도록 현재 알려진된 암호화 연구를 기반으로 합니다. 
 
 ## <a name="introduction"></a>소개
 
-패딩 oracle 공격에 키를 알 필요 없이 데이터의 내용을 해독 하도록 허용 하는 암호화 된 데이터에 대 한 공격의 형식입니다.
+안쪽 여백 oracle 공격에는 공격 공격자는 키를 알 필요 없이 데이터의 내용을 해독 하는 암호화 된 데이터의 형식입니다.
 
-Oracle에는 "알릴"을 실행 하는 작업 올바른 인지 여부에 대 한 공격자가 정보가 제공 참조 합니다. 스 보드 재생 다음과 같이 가정해 봅니다 또는 자식이 있는 게임 카드입니다. 때 그녀의 얼굴 켜지는 큰 웃는 얼굴와 그녀는 그녀가 생각 하기 때문에 이동 하려면 빈 좋은 oracle를 확인 하려고 합니다. 는 상대도 사용할 수 있습니다이 oracle 다음 이사를 적절 하 게 계획 합니다.
+Oracle을 "알릴" 실행 하는 작업을 올바른 인지 여부에 대 한 공격자가 정보를 제공 하는 참조 합니다. 보드 재생 가정해 보겠습니다. 또는 자식이 있는 게임 카드. 경우 자신의 얼굴 단계인 큰 웃는 얼굴을 사용 하 여 그녀는 그녀가 생각 하기 때문에 oracle는는 적절 한 전환 하려고 합니다. 를 상대,으로 사용할 수 있습니다이 oracle 다음으로 이사를 적절 하 게 계획.
 
-안쪽 여백은 특정 암호화 용어입니다. 일부 암호화는 데이터를 암호화 하는 데 사용 되는 알고리즘은 각 블록의 크기가 고정된 되어 있는 데이터 블록에서 작동 합니다. 데이터를 암호화 하려는 올바른 크기는 블록에 맞게 없다면 완료 될 때까지 데이터 채워집니다. 다양 한 형식의 안쪽 여백에는 항상 있어야 하는 원래 입력 올바른 크기의 경우에 해당 패딩이 필요 합니다. 따라서 항상 안전 하 게 제거할 암호 해독 시 안쪽 여백 수 있습니다.
+안쪽 여백은 특정 암호화 용어입니다. 일부 암호화 알고리즘에 데이터를 암호화 하는 데 사용 되는 각 블록의 크기가 고정된 되어 있는 데이터 블록에서 작동 합니다. 암호화할 데이터 블록에 맞게 적절 한 크기를 없는 경우 완료 될 때까지 데이터가 채워집니다. 다양 한 형태의 안쪽 여백에는 항상 있어야, 적절 한 크기의 원래 입력 된 경우에 해당 패딩이 필요 합니다. 따라서 제거할 항상 안전 하 게 암호 해독 시 패딩 합니다.
 
-다음 두 가지를 함께 배치 패딩 oracle 소프트웨어 구현을 암호 해독 된 데이터에 유효한 안쪽 여백에 있는지 여부를 알 수 있습니다. Oracle 같은 간단한 "잘못 된 패딩" 라고 표시 하는 값을 반환 하거나 조금 더 복잡 한 눈에 띄게 다른 시간 잘못 된 블록이 아닌 유효한 블록을 처리 하는 것과 같은 수 있습니다.
+두 가지를 결합, 안쪽 여백 oracle 사용 하는 소프트웨어 구현 해독 된 데이터에 올바른 안쪽 여백에 있는지 여부를 알 수 있습니다. Oracle에는 "잘못 된 패딩이" 라는 값을 반환할 때 간단한 또는 눈에 띄게 다른 시간 잘못 된 블록이 아니라 유효한 블록을 처리 하는 것과 같은 보다 복잡 한 수 있습니다.
 
-암호 블록 기반 다른 이라는 속성을, 두 번째 블록에 있는 데이터의 첫 번째 블록에 데이터의 관계를 결정 하는 모드 등에입니다. CBC는 가장 자주 사용 되는 모드 중 하나입니다. CBC로는 IV (Initialization Vector), 알려진 초기 임의 블록을 정의 하 고 동일한 키가 있는 동일한 메시지를 암호화 하지 않습니다 항상 생성 되는 동일한 암호화 된 출력 하기 위해 정적 암호화의 결과 함께 이전 블록을 결합 합니다.
+블록 기반 암호화 모드를 두 번째 블록의 데이터를 첫 번째 블록에는 데이터의 관계를 결정 하는 호출 이라는 다른 속성이 등에입니다. 가장 자주 사용 되는 모드 중 하나는 CBC입니다. CBC로는 IV (Initialization Vector), 알려진 초기 임의 블록을 정의 하 고 동일한 키를 사용 하 여 동일한 메시지를 암호화 하지 항상 생성 되는 동일한 암호화 된 출력을 확인 하기 위해 정적 암호화의 결과 사용 하 여 이전 블록을 결합 합니다.
 
-공격자가 CBC 데이터가 구조화 되는 방식을 함께에서 패딩 oracle, צ ְ ײ, oracle를 노출 하는 코드를 약간 변경 된 메시지를 보내고 oracle ¿ë à ú 될 때까지 데이터를 보내는 유지 데이터가 올바른지 합니다. 이 응답에서 공격자는 바이트 단위로 메시지를 해독할 수 있습니다.
+공격자는 안쪽 여백 oracle CBC 데이터를 구조화 하는 방법을 함께에서 사용할 수 있습니다, 그리고 oracle를 노출 하는 코드를 약간 변경 된 메시지를 보내고 oracle 알려 될 때까지 데이터를 전송할 데이터가 올바른 합니다. 이 응답에서 공격자는 바이트 단위로 메시지를 해독할 수 있습니다.
 
-최신 컴퓨터 네트워크는 이러한 높은 품질 공격자 매우 작은 (0.1 밀리초 미만) 원격 시스템에서 실행의 차이점에에서 시간을 검색할 수 있습니다. 데이터가 변조 되지 않은 경우 성공적으로 암호 해독만 발생할 수 있음을 가정 하는 응용 프로그램 성공 하거나 실패 한 암호 해독의 차이 관찰 하도록 설계 된 도구에서 공격에 취약할 수 있습니다. 이러한 시간 차이로 다른 항목 보다 일부 언어 또는 라이브러리에서 더 큰 수 있지만, 이제 믿고는 모든 언어 및 라이브러리에 대 한 유용한 위협 경우에 응용 프로그램의 오류에 대응 고려 됩니다.
+최신 컴퓨터 네트워크는 이러한 높은 품질 공격자를 매우 작은 (0.1 밀리초 미만) 원격 시스템에서 실행의 차이점 시간을 검색할 수 있습니다. 데이터 변조 되지 않은 경우 성공적으로 해독만 발생할 수 있음을 가정 하는 응용 프로그램 성공 및 실패 한 암호 해독의 차이 관찰 하도록 설계 된 도구에서 공격에 취약할 수 있습니다. 이 시간 차이 다른 항목 보다 일부 언어 또는 라이브러리에서 더 중요 수 있지만, 이제 믿고이 모든 언어 및 라이브러리에 대 한 실용적인 위협 실패에 대 한 응용 프로그램의 응답은 고려 하는 경우.
 
-이 공격 암호화 된 데이터를 변경 하 고는 oracle 결과 테스트할 수 있는 기능에 의존 합니다. 완전히 방지할 수 있었던 공격을 완화 하는 유일한 방법은 암호화 된 데이터의 변경 내용을 감지 하 여 모든 작업을 실행 하지 않습니다. 이 작업을 수행 하는 표준 방법은 데이터에 대 한 서명을 만드는 모든 작업을 수행 하기 전에 해당 서명 유효성 검사를 하는 것입니다. 서명이 확인할 수 있어야 합니다., 공격자가 만들 수 없습니다, 그리고 그렇지 않으면 암호화 된 데이터를 변경할 것 다음 변경 된 데이터를 기반으로 새 서명을 계산 합니다. 한 가지 일반적인 유형의 적절 한 서명이 키 지정 해시 메시지 인증 코드 (HMAC) 라고 합니다. HMAC 걸리는 비밀 키 HMAC를 생성 하는 사람에만 하 고 유효성을 검사 하는 사람에 알려진 점에서 체크섬과 다릅니다. 키를 소유한 없이 올바른 HMAC를 생성할 수 없습니다. 데이터를 받으면 암호화 된 데이터를 독립적으로 계산 하지 비밀 키를 사용 하 여 HMAC 하는 보낸 사람에 게 공유 힙이고 있습니다를 보낸 것에 대해 HMAC를 계산 하는 비교 하 합니다. 이 비교 상수 시간 이어야 합니다., 그렇지 않으면 사용자가 추가한 다른 감지 oracle 다른 종류의 공격을 허용 합니다.
+이 공격은 암호화 된 데이터를 변경 하 고 oracle 사용 하 여 결과 테스트 하는 기능에 의존 합니다. 완벽 하 게 공격을 완화 하는 유일한 방법은 암호화 된 데이터의 변경 내용을 감지 하 여 모든 작업을 수행할 거부 됩니다. 이 작업을 수행 하는 표준 방법은 데이터에 대 한 서명을 만들고 모든 작업을 수행 하기 전에 해당 서명 유효성을 검사 하는 경우 서명을 확인할 수 있어야 합니다. 공격자가 만들 수 없으므로, 그렇지 않으면 암호화 된 데이터를 변경는 다음 서명을 계산 하는 새 변경된 데이터를 기반으로 합니다. 한 가지 일반적인 유형의 적절 한 시그니처가 키 해시 메시지 인증 코드 (HMAC) 라고 합니다. HMAC 걸리는 비밀 키, 사용자 유효성을 검사 하는 HMAC를 생성 하는 사용자 에게만 알려진 점에서 체크섬과 다릅니다. 키를 소유 하지 않고 올바른 HMAC를 생성할 수 없습니다. 데이터를 받으면 암호화 된 데이터를 독립적으로 계산 HMAC 비밀 키를 사용 하는 보낸 사람에 게 공유 하 고 해당 보낸 것에 대해 HMAC를 계산 하는 비교 하 합니다. 이 비교 상수 시간 이어야 합니다. 그렇지 않으면 추가한 다음 또 다른 검색 가능한 oracle, 다른 유형의 공격을 허용 합니다.
 
-요약 하자면, 사용 하는 CBC 블록 암호화를 안전 하 게 패딩, HMAC (또는 다른 데이터 무결성 검사) 시도 하기 전에 분할 된 시간 비교를 사용 하 여 데이터를 암호 해독의 유효성을 검사 하는 결합 해야 합니다. 이후 변경 된 모든 메시지에 응답을 생성 하기 위해 동일한 양 시간이 걸릴 수 있었던 공격 금지 됩니다.
+요약 하자면, 사용할 블록 암호화 CBC을 안전 하 게 채워진, HMAC (또는 다른 데이터 무결성 검사) 시도 하기 전에 일정 시간 비교를 사용 하 여 데이터를 해독 하려면 유효성 검사를 사용 하 여 결합 해야 합니다. 모든 변경된 메시지 응답을 생성 하기 위해 동일한 시간을 걸릴, 있으므로 공격 방지 됩니다.
 
-## <a name="who-is-vulnerable"></a>취약 한 누구 입니까
+## <a name="who-is-vulnerable"></a>취약 한 사람은 누구 인가요
 
-이 취약성 자체 암호화 및 암호 해독을 수행 하 고 있는 관리 및 네이티브 응용 프로그램에 적용 됩니다. 이 예를 들어:
+이 취약점으로 인이 한 고유한 암호화 및 암호 해독을 수행 하는 관리 및 네이티브 응용 프로그램에 적용 됩니다. 이 예를 들어:
 
 - 서버에서 이상 암호 해독에 대 한 쿠키를 암호화 하는 응용 프로그램입니다.
 - 열이 있는 테이블에 데이터를 삽입 하는 사용자에 대 한 기능을 제공 하는 데이터베이스 응용 프로그램을 나중에 암호 해독 됩니다.
-- 데이터 전송 중에 데이터를 보호 하는 공유 키를 사용 하 여 암호화를 사용 하는 응용 프로그램을 전송 합니다.
+- 공유 키를 사용 하 여 전송 중인 데이터를 보호 하기 위해 암호화를 사용 하는 데이터 전송 응용 프로그램입니다.
 - 암호화 하 고 "내부" TLS 터널 메시지를 해독 하는 응용 프로그램입니다.
 
-단독 TLS를 사용 하 여 수 보호할 수 없으며 이러한 시나리오에서 참고 합니다.
+단독으로 TLS를 사용 하 여 수 보호 하지 이러한 시나리오에서 참고 합니다.
 
 취약 한 응용 프로그램:
 
-- CBC 암호화 모드를 사용 하 여 PKCS #7 또는 ANSI X.923 같은 확인할 수 있는 안쪽 여백 모드에서 데이터를 해독 합니다.
-- MAC 또는 비대칭는 디지털 서명) (통해 데이터 무결성 검사를 수행할 필요 없이 암호 해독을 수행 합니다.
+- CBC 암호화 모드를 사용 하 여 PKCS #7 ANSI X.923 등을 확인할 수 있는 패딩 모드를 사용 하 여 데이터를 해독 합니다.
+- (MAC 또는 비대칭는 디지털 서명)를 통해 데이터 무결성 검사를 수행 하지 않고 암호 해독을 수행 합니다.
 
-암호화 메시지 구문 (PKCS #7/CMS) EnvelopedData 구조와 같은 이러한 기본 형식 맨 위에 추상화를 기반으로 빌드된 응용 프로그램에도 적용 됩니다.
+암호화 메시지 구문 (PKCS #7/CMS) EnvelopedData 구조와 같이 이러한 기본형 맨 위에 추상화를 기반으로 빌드된 응용 프로그램에도 적용 됩니다.
 
-## <a name="related-areas-of-concern"></a>관련된 문제 영역을
+## <a name="related-areas-of-concern"></a>관련 된 영역의 문제
 
-Research는 ISO 10126에 해당 하는 메시지에는 잘 알려진 또는 예측 가능한 바닥글 구조 때 패딩 채워져 CBC 메시지에 대 한 추가 문제는 그리 Microsoft 졌 합니다. W3C XML 암호화 구문 및 처리 권장 사항 (xmlenc EncryptedXml)의 규칙을 따를 준비 된 콘텐츠 예를 들어입니다. W3C 지침을 암호화 한 다음 메시지에 서명 된 시간에 적절 한 고려 되었지만, 이제 좋습니다 항상 암호화 then-기호 (+)를 수행 하 합니다.
+연구에 채워집니다. ISO 10126에 해당 하는 메시지에는 잘 알려진 또는 예측 가능한 바닥글 구조를 패딩 하는 CBC 메시지에 대 한 추가 문제는 그리 Microsoft 되었습니다. W3C XML 암호화 구문 및 처리 권장 사항 (xmlenc EncryptedXml)의 규칙에 따라 준비 된 콘텐츠 예입니다. 메시지에 서명 하 고 암호화 W3C 지침 것으로 간주 되 적절 한 시점에, 하는 동안 이제 권장 항상 다음 암호화-로그인을 수행 합니다.
 
-비대칭 키와 임의의 메시지 간의 내재 된 트러스트 관계가 없는 없기 때문에 항상 응용 프로그램 개발자는 비대칭 서명 키의 적용 여부를 확인 하는 중에 주의 이어야 합니다.
+비대칭 키와는 임의의 메시지 간에 내재 된 트러스트 관계가 없는 그대로 항상 응용 프로그램 개발자는 비대칭 서명 키를 적용할 수 있는지를 확인 하는 유의 해야 해야 합니다.
 
 ## <a name="details"></a>설명
 
-지금까지 암호화 및 중요 한 데이터를 HMAC 또는 RSA 서명 등의 방법을 사용 하 여 인증 해야 합의 되었습니다. 그러나 암호화 및 인증 작업을 시퀀싱 하는 방법에 대 한 명확한 지침 덜 되었습니다. 이 문서에 자세히 설명 하는 취약점으로 인해 Microsoft의 지침이 되었습니다 항상 "암호화 then-기호" 패러다임을 사용 합니다. 즉, 먼저 대칭 키를 사용 하 여 데이터를 암호화 한 다음 암호 텍스트 (암호화 된 데이터)을 통해 MAC 또는 비대칭 서명 계산 합니다. 데이터의 암호를 해독 하는 경우에 반대로 수행 합니다. 먼저, MAC 또는 암호화, 서명 확인 다음 암호를 해독 합니다.
+지금까지 암호화 및 HMAC 또는 RSA 서명 같은 의미를 사용 하 여 중요 한 데이터를 인증 해야 하는 합의 되었습니다. 그러나 암호화 및 인증 작업을 시퀀싱 하는 방법에 대 한 명확한 지침 적은 되었습니다. 이 문서에 자세히 설명 된 취약점으로 인해 Microsoft의 지침이 되었습니다 항상 "암호화 후 서명할" 패러다임을 사용 합니다. 즉, 먼저 대칭 키를 사용 하 여 데이터를 암호화 한 다음 암호 텍스트 (암호화 된 데이터)를 통해 MAC 또는 비대칭 서명 계산 합니다. 데이터의 암호를 해독 하는 경우 반대를 수행 합니다. 먼저, MAC 또는 암호화 텍스트의 서명을 확인 다음 암호를 해독 합니다.
 
-"Oracle 공격 패딩" 것으로 알려져 10 년에 대 한 알려진 취약점의 클래스입니다. 이러한 취약점 4096 개 이하의 시도/데이터 블록을 사용 하 여 AES 및 3DES, 같은 대칭 블록 알고리즘으로 암호화 된 데이터를 해독 하는 공격자가 있습니다. 이러한 취약점 확인 사용 하 여 암호를 차단 하는 팩트의 끝에 패딩 확인할 수 있는 데이터와 함께 가장 자주 사용 됩니다. 공격자가 암호화 텍스트를 변조할 수 있고 확인 여부는 변조 끝에 패딩의 형식에 오류가 발생, 있는 경우 공격자가 데이터를 해독할 수를 찾을 수 있습니다.
+"Oracle 공격 패딩" 것으로 알려져 10 년에 대 한 알려진 취약점의 클래스입니다. 이 취약점 데이터 블록 마다 4096 개 이하로 시도 사용 하 여 AES 및 3DES와 같은 대칭 블록 알고리즘으로 암호화 된 데이터의 암호를 해독 하는 공격자가 있습니다. 이러한 취약성 확인 사용 하 여 암호화를 차단 하는 팩트의 끝에 패딩 검증할 수 있는 데이터를 사용 하 여 가장 자주 사용 됩니다. 공격자가 ciphertext를 사용 하 여 변조 여부 끝에 패딩 형식의 오류를 일으킨 변조 확인 수를 공격자가 데이터를 해독할 수 찾을 수 있습니다.
 
-서비스에서 반환 되는 패딩 ASP.NET 취약점 같은 유효 했는지 여부에 따라 서로 다른 오류 코드에 기반한 실용적인 공격 처음에 [MS10-070](https://technet.microsoft.com/library/security/ms10-070.aspx)합니다. 그러나 Microsoft 타이밍 처리 유효 하지 않은 패딩의에서 차이 만큼만 사용 하 여 비슷한 공격을 수행할 실용적이 이제가 있습니다.
+처음에 실제 공격 기반 서비스에서 반환 되는 패딩 ASP.NET 취약점으로 인 한 같은 유효한 했는지 여부에 따라 다른 오류 코드 [m s 10 070](https://technet.microsoft.com/library/security/ms10-070.aspx)합니다. 그러나 Microsoft만 유효 하 고 잘못 된 안쪽 여백 처리 타이밍의 차이 사용 하 여 비슷한 공격을 수행할 수는 이제 생각 합니다.
 
-정보를 표시 하지 않고 데이터 무결성을 확인할 수는 서명을 사용 하는 암호화 체계 권한과 (관계 없이 내용)는 데이터의 지정 된 길이 대 한 고정 런타임과 서명 확인이 수행 하는 통해 공격자는 [쪽 채널](https://en.wikipedia.org/wiki/Side-channel_attack)합니다. 무결성 검사가 변조 된 모든 메시지를 거부 하는 이후 안쪽 여백 oracle 위협 완화 됩니다.
+모든 정보를 내보내지 않고 데이터 무결성을 확인할 수는 암호화 체계를 사용 하 여 서명 및 서명 확인 (내용)와 관계 없이 데이터의 지정 된 길이 대 한 고정 런타임에 수행 되는 통해 공격자는 [쪽 채널](https://en.wikipedia.org/wiki/Side-channel_attack)합니다. 변조 된 모든 메시지를 거부 하는 무결성 검사, 이후 패딩 oracle 위협 완화 됩니다.
 
 ## <a name="guidance"></a>지침
 
-무엇 보다도, 모든 데이터 또는 기밀 있는 필요를 통해 보안 TLS (전송 계층), 후속 Secure Sockets Layer (SSL)를 전송 될 것이 좋습니다.
+무엇 보다도, 기밀성에 있는 모든 데이터 필요를 통해 보안 TLS (전송 계층), 보안 소켓 레이어 (SSL)를 후속 전송 될 것이 좋습니다.
 
-다음으로 응용 프로그램을 분석:
+다음으로, 응용 프로그램 분석:
 
-- 수행 하는 어떤 암호화 정확 하 게 이해 하 고 플랫폼 및 Api를 사용 하는에서 제공 되 고 어떤 암호화 키를 누릅니다.
-- 확신할 수은 대칭의 각 계층에서 각 사용 [블록 암호화 알고리즘](https://en.wikipedia.org/wiki/Block_cipher#Notable_block_ciphers)AES 및 3DES CBC 모드에서 비밀 키가 지정 된 데이터 무결성 검사를 사용 하는 통합 등 (프로그램 비대칭 서명은 HMAC 암호화 모드를 변경 하려면 [암호화 인증](https://en.wikipedia.org/wiki/Authenticated_encryption) GCM 등 CCM (AE) 모드).
+- 수행 하는 어떤 암호화 정확 하 게 이해 하 고 플랫폼 및 Api를 사용 하는 제공 되는 암호화 키를 누릅니다.
+- 대칭의 각 계층에서 각 사용 하는 특정 수 [블록 암호화 알고리즘](https://en.wikipedia.org/wiki/Block_cipher#Notable_block_ciphers)등 AES 및 3DES CBC 모드에서 비밀 키가 지정 된 데이터 무결성 검사를 사용 하 여 통합 (HMAC에는 비대칭 서명 또는 암호화 모드를 변경 하려면 [암호화 인증](https://en.wikipedia.org/wiki/Authenticated_encryption) GCM 등 CCM (AE) 모드).
 
-현재 조사 결과에 따라, 일반적으로 믿고 비 AE 모드 암호화에 대 한 인증 및 암호화 단계가 독립적으로 수행 됩니다 때 인증 암호 텍스트 (암호화-then-기호) 임을 일반 수 있는 최상의 옵션입니다. 그러나 암호화를 일괄적으로 적용할 올바른 응답이 없습니다 및이 일반화 전문 cryptographer에서 최적의 상태로 방향이 지정 된 도움말 제공 되지 않습니다.
+현재 연구 결과 따라 일반적으로 믿고 AE 아닌 모드 암호화에 대 한 인증 및 암호화 단계를 독립적으로 수행 됩니다, 경우 인증 암호 텍스트 (암호화 후 서명할)는 가장 일반적인 옵션입니다. 그러나 암호화에는 없는 모든 상황에 맞는 올바른 답 하는이 일반화 전문 암호 조언 방향이 지정 된 것입니다.
 
-인증 되지 않은 CBC 암호 해독을 수행 하지만 해당 메시징 형식을 변경할 수 없는 응용 프로그램이 같은 완화를 통합 하려고 하도록 합니다.
+완화와 같은 통합 하려고 메시징 형식으로 변경 하지만 인증 되지 않은 CBC 암호 해독을 수행 하는 일을 할 수 없는 응용 프로그램을 사용 하는 것이 좋습니다.
 
-- 확인 하거나 안쪽 여백을 제거 하려면 암호 해독기를 허용 하지 않고 암호 해독:
-  - 적용 된 채움을 여전히 제거 / 무시 해야, 응용 프로그램에 부담을 이동 하 합니다.
-  - 기능은 다른 응용 프로그램 데이터 확인 논리에 안쪽 여백 확인 및 제거를 통합할 수 있습니다. 일정 한 시간에 안쪽 여백 확인 및 데이터 확인 작업을 수행할 수 있습니다, 위협을 줄어듭니다.
-  - 안쪽 여백의 해석은 변경 인식된 메시지 길이, 이후 있을 수 있습니다이 방법에서 발생 하는 타이밍 정보입니다.
-- I s o 10126를 암호 해독 패딩 모드를 변경 합니다.
-  - I s o 10126 암호 해독 패딩은 PKCS7 암호화 패딩입니다 및 ANSIX923 암호화 패딩입니다 모두와 호환 됩니다.
-  - 모드를 변경 하면이 안쪽 여백 oracle 기술을 전체 블록 대신 1 바이트를 줄입니다. 그러나 콘텐츠를 닫기 XML 요소 등의 잘 알려진 바닥글 경우 관련된 공격 메시지의 나머지 공격을 계속할 수 있습니다.
-  - 또한이 경우 공격자가 서로 다른 메시지 오프셋으로 여러 번 암호화 될 수 동일한 일반 강제 변환할 수에 일반 텍스트 복구를 하지 하지 않습니다.
-- 게이트 타이밍 신호를 완화 시킬 암호 해독 호출의 평가:
-  - 보류 시간 계산에 시간 안쪽 여백을 포함 된 모든 데이터 세그먼트 데 소요 되는 암호 해독 작업의 최대 크기를 초과 하는 최소가 있어야 합니다.
-  - 제공 된 지침에 따라 시간 계산을 수행 해야 [고해상도 타임 스탬프를 가져오는](https://msdn.microsoft.com/library/windows/desktop/dn55340.aspx)를 사용 하 여 <xref:System.Environment.TickCount?displayProperty=nameWithType> (오버플로 롤 over /)에 따라 나 빼기 (NTP 조정에 따라 두 개의 시스템 타임 스탬프 오류)입니다.
-  - 시간 계산 관리 되어야 합니다. 암호 해독 작업의 모든 잠재적 예외를 포함 하 여 포함 또는 c + + 응용 프로그램 뿐 아니라 끝에 패딩 합니다.
-  - 성공 또는 실패 확인 된 경우에 아직, 타이밍 게이트를 만료 될 때 오류를 반환 해야 합니다.
-- 인증 되지 않은 암호 해독을 수행 하는 서비스 모니터링을 통해 "잘못 된" 메시지의 양이 했음을 감지 하는 기능이 있어야 합니다.
-  - 이 신호 (합법적으로 손상 된 데이터) 거짓 긍정 및 거짓 부 정의 (공격을 탐지를 피하도록 충분히 긴 시간 동안 분배)를 전달 하는 것을 염두에 두십시오.
+- 확인 하거나 패딩 제거 하려면 암호 해독기를 허용 하지 않고 암호 해독:
+  - 적용 된 모든 패딩 제거 하거나 무시 해야, 응용 프로그램에 부담을 이동 하는 합니다.
+  - 장점은 다른 응용 프로그램 데이터 확인 논리에 안쪽 여백 확인 및 제거를 통합할 수 있습니다. 일정 한 시간에 안쪽 여백 확인 및 데이터 확인을 수행할 수 있습니다, 위협이 줄어듭니다.
+  - 안쪽 여백의 해석은 인식된 메시지 길이 변경 하므로이 접근 방식에서 발생 하는 타이밍 정보 수 여전히 있습니다.
+- ISO10126를 암호 해독 된 패딩 모드를 변경 합니다.
+  - ISO10126 암호 해독 안쪽 여백은 PKCS7 암호화 패딩입니다와 ANSIX923 암호화 패딩입니다 호환입니다.
+  - 모드를 변경 하면이 패딩 oracle 기술을 전체 블록 대신 1 바이트를 줄입니다. 그러나 콘텐츠는 닫기 XML 요소와 같은 잘 알려진 바닥글에 관련된 공격 계속 메시지의 나머지 부분을 공격할 수 있습니다.
+  - 또한이 공격자가 다양 한 메시지 오프셋을 사용 하 여 여러 번 암호화 같은 일반 텍스트 강제 변환할 수 있는 상황에서 일반 텍스트 복구를 방지 하지 않습니다.
+- 게이트 평가에 대 한 암호 해독 호출 타이밍 신호를 완화 합니다.
+  - 보류 시간 계산에 안쪽 여백을 포함 하는 모든 데이터 세그먼트에 대 한 암호 해독 작업 걸리는 시간의 최대 크기를 초과 하는 최소가 있어야 합니다.
+  - 지침에 따라 시간 계산을 수행 해야 [고해상도 타임 스탬프를 획득](https://msdn.microsoft.com/library/windows/desktop/dn55340.aspx)를 사용 하 여 <xref:System.Environment.TickCount?displayProperty=nameWithType> (오버플로) 롤포워드-조치 될 수 있습니다 (NTP 조정에 따라 두 가지 시스템 타임 스탬프를 뺀 또는 오류)입니다.
+  - 시간 계산의 모든 잠재적 예외를 포함 하 여 암호 해독 작업을 포함 하 여 관리 해야 또는 c + + 응용 프로그램 뿐 아니라 끝에 패딩 합니다.
+  - 성공 또는 실패 확인 된 경우에 아직, 타이밍 성문 만료 되 면 오류를 반환 해야 합니다.
+- 인증 되지 않은 암호 해독을 수행 하는 서비스에에서 모니터링을 통해 대량의 "잘못 된" 메시지에 올라오는 검색할 설정 해야 합니다.
+  - 이 신호는 거짓 긍정 (합법적인 방식으로 손상 된 데이터) 및 거짓 부정 (검색을 피할 충분히 긴 시간이 지남에 따라 공격 확산)는 것을 염두에 두십시오.
 
 ## <a name="finding-vulnerable-code---native-applications"></a>취약 한 코드-네이티브 응용 프로그램 찾기
 
-Windows 암호화에 대해 작성 하는 프로그램에 대 한: 차세대 (CNG) 라이브러리:
+Windows 암호화에 대해 빌드된 프로그램에 대 한: 차세대 (CNG) 라이브러리:
 
-- 암호 해독 호출이 [BCryptDecrypt](https://msdn.microsoft.com/library/windows/desktop/aa375391.aspx)을 지정 하는 `BCRYPT_BLOCK_PADDING` 플래그입니다.
-- 키 핸들 호출 하 여 활성화 되었습니다 [BCryptSetProperty](https://msdn.microsoft.com/library/windows/desktop/aa375504.aspx) 와 [BCRYPT_CHAINING_MODE](https://msdn.microsoft.com/library/windows/desktop/aa376211.aspx#BCRYPT_CHAINING_MODE) 로 설정 `BCRYPT_CHAIN_MODE_CBC`합니다.
-  - 이후 `BCRYPT_CHAIN_MODE_CBC` 은 기본값인 영향을 받는 코드에 대 한 모든 값 할당 되지 않을 수 있습니다 `BCRYPT_CHAINING_MODE`합니다.
+- 암호 해독 호출 하는 것 [BCryptDecrypt](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptdecrypt)을 지정 하 고는 `BCRYPT_BLOCK_PADDING` 플래그입니다.
+- 키 핸들을 호출 하 여 활성화 되었습니다 [BCryptSetProperty](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptsetproperty) 사용 하 여 [BCRYPT_CHAINING_MODE](https://msdn.microsoft.com/library/windows/desktop/aa376211.aspx#BCRYPT_CHAINING_MODE) 로 `BCRYPT_CHAIN_MODE_CBC`합니다.
+  - 이후 `BCRYPT_CHAIN_MODE_CBC` 기본값인 영향을 받는 코드에 대 한 값 할당 하지 `BCRYPT_CHAINING_MODE`합니다.
 
 이전 Windows 암호화 API에 대해 빌드된 프로그램:
 
-- 암호 해독 호출이 [CryptDecrypt](https://msdn.microsoft.com/library/windows/desktop/aa379913.aspx) 와 `Final=TRUE`합니다.
-- 키 핸들 호출 하 여 활성화 되었습니다 [CryptSetKeyParam](https://msdn.microsoft.com/library/windows/desktop/aa380272.aspx) 와 [KP_MODE](https://msdn.microsoft.com/library/windows/desktop/aa379949.aspx#KP_MODE) 로 설정 `CRYPT_MODE_CBC`합니다.
-  - 이후 `CRYPT_MODE_CBC` 은 기본값인 영향을 받는 코드에 대 한 모든 값 할당 되지 않을 수 있습니다 `KP_MODE`합니다.
+- 암호 해독 호출 하는 것 [CryptDecrypt](/windows/desktop/api/wincrypt/nf-wincrypt-cryptdecrypt) 사용 하 여 `Final=TRUE`입니다.
+- 키 핸들을 호출 하 여 활성화 되었습니다 [CryptSetKeyParam](/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetkeyparam) 사용 하 여 [KP_MODE](https://msdn.microsoft.com/library/windows/desktop/aa379949.aspx#KP_MODE) 로 `CRYPT_MODE_CBC`합니다.
+  - 이후 `CRYPT_MODE_CBC` 기본값인 영향을 받는 코드에 대 한 값 할당 하지 `KP_MODE`합니다.
 
 ## <a name="finding-vulnerable-code---managed-applications"></a>취약 한 코드 찾기-관리 되는 응용 프로그램
 
-- 암호 해독 호출 하는 것은 <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor> 또는 <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])> 에 대 한 메서드 <xref:System.Security.Cryptography.SymmetricAlgorithm?displayProperty=nameWithType>합니다.
-  - 이.NET 내에서 다음 파생된 형식을 포함 되지만 타사 형식을 포함 될 수도 있습니다.
+- 암호 해독 호출 하는 것은 <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor> 또는 <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])> 메서드를 <xref:System.Security.Cryptography.SymmetricAlgorithm?displayProperty=nameWithType>입니다.
+  - 이.NET 내의 다음 파생된 형식을 포함 하지만 타사 형식을 포함할 수도 있습니다.
     - <xref:System.Security.Cryptography.Aes>
     - <xref:System.Security.Cryptography.AesCng>
     - <xref:System.Security.Cryptography.AesCryptoServiceProvider>
@@ -129,24 +129,24 @@ Windows 암호화에 대해 작성 하는 프로그램에 대 한: 차세대 (CN
     - <xref:System.Security.Cryptography.TripleDES>
     - <xref:System.Security.Cryptography.TripleDESCng>
     - <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider>
-- <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding?displayProperty=nameWithType> 속성이로 설정 된 <xref:System.Security.Cryptography.PaddingMode.PKCS7?displayProperty=nameWithType>, <xref:System.Security.Cryptography.PaddingMode.ANSIX923?displayProperty=nameWithType>, 또는 <xref:System.Security.Cryptography.PaddingMode.ISO10126?displayProperty=nameWithType>합니다.
-  - 이후 <xref:System.Security.Cryptography.PaddingMode.PKCS7?displayProperty=nameWithType> 은 기본값인 영향을 받는 코드 되지 할당 했는 <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding?displayProperty=nameWithType> 속성입니다.
+- <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding?displayProperty=nameWithType> 속성 설정한 <xref:System.Security.Cryptography.PaddingMode.PKCS7?displayProperty=nameWithType>, <xref:System.Security.Cryptography.PaddingMode.ANSIX923?displayProperty=nameWithType>, 또는 <xref:System.Security.Cryptography.PaddingMode.ISO10126?displayProperty=nameWithType>합니다.
+  - 이후 <xref:System.Security.Cryptography.PaddingMode.PKCS7?displayProperty=nameWithType> 기본값인 영향을 받는 코드 할당 되지 않을 수 있습니다는 <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding?displayProperty=nameWithType> 속성입니다.
 - <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode?displayProperty=nameWithType> 속성이로 설정 된 <xref:System.Security.Cryptography.CipherMode.CBC?displayProperty=nameWithType>
-  - 이후 <xref:System.Security.Cryptography.CipherMode.CBC?displayProperty=nameWithType> 은 기본값인 영향을 받는 코드 되지 할당 했는 <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode?displayProperty=nameWithType> 속성입니다.
+  - 이후 <xref:System.Security.Cryptography.CipherMode.CBC?displayProperty=nameWithType> 기본값인 영향을 받는 코드 할당 되지 않을 수 있습니다는 <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode?displayProperty=nameWithType> 속성입니다.
 
-## <a name="finding-vulnerable-code---cryptographic-message-syntax"></a>암호화 메시지 구문 취약 한 코드-찾기
+## <a name="finding-vulnerable-code---cryptographic-message-syntax"></a>암호화 메시지 구문 취약 한 코드 찾기
 
-암호화 된 내용이 AES (2.16.840.1.101.3.4.1.2, 2.16.840.1.101.3.4.1.22, 2.16.840.1.101.3.4.1.42), (1.3.14.3.2.7) DES, 3DES CBC 모드를 사용 하는 인증 되지 않은 CMS EnvelopedData 메시지 (1.2.840.113549.3.7) 또는 RC2 (1.2.840.113549.3.2)은 취약 한도 메시지 블록의 암호화 알고리즘을 사용 하 여 CBC 모드에서 합니다.
+암호화 된 내용이 AES (2.16.840.1.101.3.4.1.2, 2.16.840.1.101.3.4.1.22 2.16.840.1.101.3.4.1.42), DES (1.3.14.3.2.7), 3DES CBC 모드를 사용 하는 인증 되지 않은 CMS EnvelopedData 메시지 (1.2.840.113549.3.7) 또는 RC2 (1.2.840.113549.3.2)은 취약 한도 메시지를 다른 블록 암호화 알고리즘을 사용 하 여 CBC 모드에서 합니다.
 
-스트림 암호화가 문제에 취약 하지 않으면 동안 항상 ContentEncryptionAlgorithm 값 검사를 통해 데이터를 인증 하는 것이 좋습니다.
+이 문제에 취약 스트림 암호화 하지 않음, 하는 동안 항상 ContentEncryptionAlgorithm 값 검사를 통해 데이터를 인증 하는 것이 좋습니다.
 
-관리 되는 응용 프로그램에 대 한 blob 수 CMS EnvelopedData에 전달 되는 모든 값을 검색 <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])?displayProperty=fullName>합니다.
+Blob 수를 CMS EnvelopedData 관리 되는 응용 프로그램에 전달 되는 모든 값을 검색 <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])?displayProperty=fullName>합니다.
 
-네이티브 응용 프로그램에 대 한 CMS EnvelopedData blob를 검색할 수 있는 CMS 핸들을 통해에 지정 된 값으로 [CryptMsgUpdate](https://msdn.microsoft.com/library/windows/desktop/aa380231.aspx) 인 결과 [CMSG_TYPE_PARAM](https://msdn.microsoft.com/library/windows/desktop/aa380227.aspx) 은 `CMSG_ENVELOPED` CMS 핸들은 및/또는 나중에 보낸는 `CMSG_CTRL_DECRYPT` 명령을 통해 [CryptMsgControl](https://msdn.microsoft.com/library/windows/desktop/aa380220.aspx)합니다.
+네이티브 응용 프로그램에 대 한 CMS EnvelopedData blob을 통해 CMS 핸들에 지정 된 값으로 검색 수 [CryptMsgUpdate](/windows/desktop/api/wincrypt/nf-wincrypt-cryptmsgupdate) 인 결과 [CMSG_TYPE_PARAM](/windows/desktop/api/wincrypt/nf-wincrypt-cryptmsggetparam) 는 `CMSG_ENVELOPED` CMS 핸들이 및/또는 나중에 전송 되는 `CMSG_CTRL_DECRYPT` 명령을 통해 [CryptMsgControl](/windows/desktop/api/wincrypt/nf-wincrypt-cryptmsgcontrol)합니다.
 
 ## <a name="vulnerable-code-example---managed"></a>취약 한 코드 예제에서는-관리
 
-이 메서드는 쿠키를 읽고 해독과 데이터 무결성 검사 없이 표시 됩니다. 따라서이 방법으로 읽을 수 있는 쿠키의 내용이 받은 사람, 사용자 또는 암호화 된 쿠키 값은 확보 하는 모든 공격자가 공격 받을 수입니다.
+이 메서드는 쿠키를 읽고 해독 하 고 데이터 무결성 검사 안 함이 표시 됩니다. 따라서이 방법으로 읽을 수 있는 쿠키의 내용이 받은 사용자가 또는 모든 공격자가 암호화 된 쿠키 값을 획득 하는 공격 받을 수입니다.
 
 ```csharp
 private byte[] DecryptCookie(string cookieName)
@@ -171,17 +171,17 @@ private byte[] DecryptCookie(string cookieName)
 }
 ```
 
-## <a name="example-code-following-recommended-practices---managed"></a>예제 코드 다음 사례-관리 되는 것이 좋습니다.
+## <a name="example-code-following-recommended-practices---managed"></a>다음 코드 예에서는 권장 되는 정보-관리
 
-다음 샘플 코드의 비표준 메시지 형식을 사용 하 여
+다음 샘플 코드의 비표준 메시지 형식을 사용합니다
 
 `cipher_algorithm_id || hmac_algorithm_id || hmac_tag || iv || ciphertext`
 
-여기서는 `cipher_algorithm_id` 및 `hmac_algorithm_id` 알고리즘 식별자는 해당 알고리즘의 로컬 응용 프로그램 (비표준) 표현입니다. 이러한 식별자 합리적 대신 기존 메시징 프로토콜의 다른 부분에 완전 연결된 bytestream으로입니다.
+여기서는 `cipher_algorithm_id` 및 `hmac_algorithm_id` 알고리즘 식별자는 해당 알고리즘의 응용 프로그램 지역 (비표준) 표현입니다. 이러한 식별자는 완전 연결된 bytestream으로 대신 기존 메시징 프로토콜의 다른 부분에서 의미를 만들 수 있습니다.
 
-또한이 예제에서는 HMAC 키와 암호화 키를 파생 하는 단일 마스터 키를 사용 합니다. 이 기능을 하기 위해 두 키와 다른 값을 유지 하 고 이중 키가 지정 된 응용 프로그램에 단일 키가 지정 된 응용 프로그램에 대 한 편의 위해 둘 다 제공 됩니다. HMAC 키와 암호화 키 동기화 되지 않을 수 없습니다 자세한 보장 합니다.
+또한이 예제에서는 HMAC 키와 암호화 키를 파생 시키는 단일 마스터 키를 사용 합니다. 두 키와 다른 값을 유지 하는 것이 좋습니다에 이중 키가 지정 된 응용 프로그램에 단일 키가 지정 된 응용 프로그램 설정에 대 한 편의 기능으로 제공 됩니다. 추가 동기화 HMAC 키 및 암호화 키를 가져올 수 없습니다 보장 합니다.
 
-이 샘플을 허용 하지 않습니다는 <xref:System.IO.Stream> 암호화 또는 암호 해독 합니다. 현재 데이터 형식을 사용 하면 단일 패스 암호화 어려운 때문에 `hmac_tag` 값 앞에 오는 암호 텍스트입니다. 그러나이 형식은 모든 고정 크기 요소 구문 분석기를 보다 간단 하 게에 유지 되기 때문에 선택 되었습니다. 이 데이터 형식으로 구현 자가 GetHashAndReset를 호출 하 고 TransformFinalBlock를 호출 하기 전에 결과 확인 하는 주의가 요구는 있지만 단일 패스 decrypt이 가능 합니다. 중요 한 스트리밍 암호화의 경우 서로 다른 AE 모드 필요할 수 있습니다.
+이 샘플에 맞지는 <xref:System.IO.Stream> 암호화 또는 암호 해독 합니다. 현재 데이터 형식을 사용 하면 단일 패스 어려운 암호화 때문에 `hmac_tag` 값 텍스트 앞에 옵니다. 그러나이 형식은 파서가 보다 간단 하 게 시작할 모든 고정 크기 요소를 유지 하기 때문에 선택 되었습니다. 이 데이터 형식을 사용 하 여 GetHashAndReset 호출 TransformFinalBlock를 호출 하기 전에 결과 확인 하는 구현자는 주의가 요구 하지만 단일 패스 해독이 가능 합니다. 스트리밍 암호화 중요 한 경우 다른 AE 모드로 필요할 수 있습니다.
 
 ```csharp
 // ==++==

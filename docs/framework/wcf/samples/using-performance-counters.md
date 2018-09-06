@@ -2,15 +2,15 @@
 title: 성능 카운터 사용
 ms.date: 03/30/2017
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
-ms.openlocfilehash: 8784b4a481b8313d370aad1d8f265dcb44ab3ed6
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: 787a3d08b463980721fb207d029057e14618db5e
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33807321"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43860421"
 ---
 # <a name="using-performance-counters"></a>성능 카운터 사용
-이 샘플에는 사용자 정의 성능 카운터를 만드는 방법 및 Windows Communication Foundation (WCF) 성능 카운터에 액세스 하는 방법을 보여 줍니다. 이 샘플에 따라는 [시작](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
+이 샘플에는 사용자 정의 성능 카운터를 만드는 방법과 Windows Communication Foundation (WCF) 성능 카운터에 액세스 하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
   
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
@@ -29,19 +29,19 @@ ms.locfileid: "33807321"
   
  이 작업을 수행할 수도 있습니다를 사용 하 여 [Configuration Editor 도구 (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)합니다.  
   
- 성능 카운터를 사용 하는 WCF 성능 카운터 모음 전체가 서비스에 대해 활성화 됩니다. .NET Framework는 `ServiceModelService`, `ServiceModelEndpoint` 및 `ServiceModelOperation`의 세 가지 수준에서 성능 데이터를 자동으로 유지 관리합니다. 이러한 각 수준에는 "Calls", "Calls per Second" 및 "Security Calls Not Authorized"와 같은 성능 카운터가 있습니다.  
+ 성능 카운터를 사용 하는 경우 WCF 성능 카운터 모음 전체가 서비스에 대해 활성화 됩니다. .NET Framework는 `ServiceModelService`, `ServiceModelEndpoint` 및 `ServiceModelOperation`의 세 가지 수준에서 성능 데이터를 자동으로 유지 관리합니다. 이러한 각 수준에는 "Calls", "Calls per Second" 및 "Security Calls Not Authorized"와 같은 성능 카운터가 있습니다.  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>샘플을 설치, 빌드 및 실행하려면  
   
-1.  수행 했는지 확인 하십시오.는 [Windows Communication Foundation 샘플의 일회 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
+1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
 2.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
-3.  지침에 따라 단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
+3.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 ### <a name="to-view-performance-data"></a>성능 데이터를 보려면  
   
-1.  클릭 하 여 성능 모니터 도구를 시작 **시작**, **실행...** , 입력 `perfmon` 클릭 **확인** 하거나 제어판에서 선택 **관리 도구** 두 번 클릭 하 고 **성능**합니다.  
+1.  클릭 하 여 성능 모니터 도구를 시작할 **시작**, **실행 하는 중...** , 입력 `perfmon` 클릭 **확인을** 제어판에서 선택 하거나 **관리 도구** 를 두 번 클릭 하 고 **성능**합니다.  
   
     > [!NOTE]
     >  샘플 코드가 실행될 때까지는 카운터를 추가할 수 없습니다.  
@@ -51,19 +51,19 @@ ms.locfileid: "33807321"
 3.  그래프 창을 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 WCF 카운터 추가 **카운터 추가**합니다. 에 **카운터 추가** 대화 상자에서 **ServiceModelOperation 3.0.0.0, ServiceModelEndpoint 3.0.0.0 또는 ServiceModelService 3.0.0.0** 성능 개체에 있는 드롭다운 목록 상자입니다. 목록에서 보려는 카운터를 선택합니다.  
   
     > [!NOTE]
-    >  컴퓨터에서 실행 중인 WCF 서비스가 없는 경우 서비스에 대해 WCF 성능 카운터가 있습니다.  
+    >  컴퓨터에서 실행 하는 WCF 서비스가 없는 경우 서비스에 대해 WCF 성능 카운터가 있습니다.  
   
 ### <a name="to-use-the-configuration-editor-to-enable-counters"></a>Configuration Editor를 사용하여 카운터를 사용하려면  
   
 1.  SvcConfigEditor.exe의 인스턴스를 엽니다.  
   
-2.  파일 메뉴에서 클릭 **열려** 클릭 한 다음 **구성 파일 중...** .  
+2.  파일 메뉴에서 클릭 **엽니다** 클릭 하 고 **구성 파일...** .  
   
 3.  샘플 응용 프로그램의 서비스 폴더로 이동한 다음 Web.config 파일을 엽니다.  
   
 4.  클릭 **진단** 구성 트리에서 합니다.  
   
-5.  설정/해제 **성능 카운터** 에 **진단** '모두' 표시 하기 위해 창입니다.  
+5.  설정/해제 **성능 카운터** 에 **진단** '모두'를 표시할 수 있습니다.  
   
 6.  구성 파일을 저장하고 편집기를 끝냅니다.  
   
@@ -72,9 +72,9 @@ ms.locfileid: "33807321"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   
 ## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

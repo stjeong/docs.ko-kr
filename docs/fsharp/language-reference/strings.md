@@ -2,12 +2,12 @@
 title: 문자열(F#)
 description: "F # 'string' 유형의 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 표시 하는 방법에 대해 알아봅니다."
 ms.date: 05/16/2016
-ms.openlocfilehash: 7309e93bf0a6518d03a9f850804a4f580e2c96b1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 21971602093bc84b0df47d4ae46a14fb936c28bb
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43561293"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43799345"
 ---
 # <a name="strings"></a>문자열
 
@@ -17,6 +17,7 @@ ms.locfileid: "43561293"
 `string` 형식은 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 나타냅니다. `string`은 .NET Framework에서 `System.String`의 별칭입니다.
 
 ## <a name="remarks"></a>설명
+
 문자열 리터럴은 따옴표 (") 문자로 구분 됩니다. 백슬래시 문자 ( \\ ) 특정 특수 문자를 인코딩하는 데 사용 됩니다. 백슬래시와 함께 다음 문자는 라고는 *이스케이프 시퀀스*합니다. F # 문자열 리터럴은 다음 표에 나와에서 지원 되는 시퀀스를 이스케이프 합니다.
 
 |문자|이스케이프 시퀀스|
@@ -66,23 +67,27 @@ def
 형식이 부호 없는 바이트 배열에서 ASCII 문자열을 나타낼 수 있습니다 `byte[]`합니다. 접미사를 추가한 `B` 문자열 리터럴로 ASCII 문자열 임을 나타냅니다. 바이트 배열을 사용 하는 ASCII 문자열 리터럴은 유니코드 이스케이프 시퀀스를 제외 하 고 유니코드 문자열로 동일한 이스케이프 시퀀스를 지원 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1004.fs)]
-    
+
 ## <a name="string-operators"></a>문자열 연산자
+
 문자열을 연결 하는 방법은 두 가지:를 사용 하 여 합니다 `+` 연산자 또는 사용 하 여는 `^` 연산자입니다. `+` 연산자 기능을 처리 하는.NET Framework 문자열과 호환성이 유지 됩니다.
 
 다음 예제에서는 문자열 연결을 보여 줍니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1006.fs)]
-    
+
 ## <a name="string-class"></a>String 클래스
+
 F #에서 문자열 형식이 실제로.NET Framework `System.String` 모든 입력을 `System.String` 멤버를 사용할 수 있습니다. 여기에 `+` 연산자에 사용 되는 문자열을 연결 하는 `Length` 속성 및 `Chars` 유니코드 문자의 배열 문자열을 반환 하는 속성입니다. 문자열에 대 한 자세한 내용은 참조 하세요. `System.String`합니다.
 
 사용 하 여 합니다 `Chars` 속성의 `System.String`, 다음 코드에 표시 된 대로 인덱스를 지정 하 여 문자열의 개별 문자를 액세스할 수 있습니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1005.fs)]
-    
+
 ## <a name="string-module"></a>문자열 모듈
+
 문자열 처리에 대 한 추가 기능이 포함 된 `String` 모듈에는 `FSharp.Core` 네임 스페이스. 자세한 내용은 [Core.String 모듈](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d)합니다.
 
-## <a name="see-also"></a>참고 항목
-[F# 언어 참조](index.md)
+## <a name="see-also"></a>참고자료
+
+- [F# 언어 참조](index.md)

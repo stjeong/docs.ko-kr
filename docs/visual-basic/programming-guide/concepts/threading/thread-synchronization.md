@@ -3,11 +3,11 @@ title: 스레드 동기화 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 04f485d1-8333-4510-9e72-c334e7427e7e
 ms.openlocfilehash: 3278ed1e98f71e11d47f55a0d4cb50f44ae02027
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43406626"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43862996"
 ---
 # <a name="thread-synchronization-visual-basic"></a>스레드 동기화 (Visual Basic)
 다음 섹션에서는 다중 스레드 응용 프로그램에서 리소스에 대한 액세스를 동기화 하는 데 사용할 수 있는 기능 및 클래스를 설명합니다.  

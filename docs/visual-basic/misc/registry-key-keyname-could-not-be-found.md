@@ -2,12 +2,12 @@
 title: 레지스트리 키 &#39; &lt;keyname&gt; &#39; 찾을 수 없습니다
 ms.date: 07/20/2015
 ms.assetid: ca4eb74f-8303-48fc-9ea8-d792fa4c810b
-ms.openlocfilehash: 473c92b780de34286b47d71a23831961883d8481
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: MT
+ms.openlocfilehash: 874371dd2d4dc9f7d4b1374ae08359e4ea6afc87
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33640634"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43805704"
 ---
 # <a name="registry-key-39ltkeynamegt39-could-not-be-found"></a>레지스트리 키 &#39; &lt;keyname&gt; &#39; 찾을 수 없습니다
 레지스트리 키를 찾을 수 없습니다.  
@@ -20,4 +20,4 @@ ms.locfileid: "33640634"
   
 ## <a name="see-also"></a>참고 항목  
  [레지스트리 요약](../../visual-basic/language-reference/keywords/registry-summary.md)  
- [Visual basic.NET 레지스트리 액세스 변경](http://msdn.microsoft.com/library/b58f7687-f4db-448a-a865-07f62fd16fb2)
+ [Visual Basic.NET의에서 레지스트리 액세스 변경](https://msdn.microsoft.com/library/b58f7687-f4db-448a-a865-07f62fd16fb2)

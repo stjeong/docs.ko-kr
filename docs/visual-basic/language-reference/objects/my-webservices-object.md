@@ -8,11 +8,11 @@ helpviewer_keywords:
 - My.WebServices object
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
 ms.openlocfilehash: 7ae99bec5797591e53c6c77f5d9f88589352104c
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40240348"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43862398"
 ---
 # <a name="mywebservices-object"></a>My.WebServices 개체
 만들기 및 현재 프로젝트에서 참조 하는 각 XML 웹 서비스의 단일 인스턴스 액세스에 대 한 속성을 제공 합니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "40240348"
 > [!NOTE]
 >  일반적으로 `Is` 또는 `IsNot` 연산자의 비교를 수행 하는 속성의 값을 읽을 수 있습니다. 그러나 현재 저장 하는 경우 `Nothing`, 속성이 웹 서비스의 새 인스턴스를 만들고 다음 해당 인스턴스를 반환 합니다. Visual Basic 컴파일러의 속성을 처리 하는 반면 합니다 `My.WebServices` 하며 특히 개체를 `Is` 또는 `IsNot` 해당 값을 변경 하지 않고 속성의 상태를 확인 하는 연산자입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 호출을 `FahrenheitToCelsius` 메서드는 `TemperatureConverter` XML 웹 서비스 결과 반환 합니다.  
   
  [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-webservices-object_1.vb)]  

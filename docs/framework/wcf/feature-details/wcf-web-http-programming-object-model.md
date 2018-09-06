@@ -3,11 +3,11 @@ title: WCF 웹 HTTP 프로그래밍 개체 모델
 ms.date: 03/30/2017
 ms.assetid: ed96b5fc-ca2c-4b0d-bdba-d06b77c3cb2a
 ms.openlocfilehash: 8400798e4edcad41c4f5336d59646413900347f8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43670641"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43861639"
 ---
 # <a name="wcf-web-http-programming-object-model"></a>WCF 웹 HTTP 프로그래밍 개체 모델
 WCF 웹 HTTP 프로그래밍 모델을 통해 SOAP 없이 기본 HTTP 요청을 통해 Windows Communication Foundation (WCF) 웹 서비스를 노출 하는 개발자. WCF WEB HTTP 프로그래밍 모델은 기존 WCF 확장성 모델 위에 빌드됩니다. 다음과 같은 클래스를 정의합니다.  

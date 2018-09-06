@@ -3,11 +3,11 @@ title: ByteStream 인코더
 ms.date: 03/30/2017
 ms.assetid: e674a8ab-f79a-4a93-b984-54b34392dafc
 ms.openlocfilehash: cbd4110ecc04923b79d6b910fcf7ab4ca2012680
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480694"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43855454"
 ---
 # <a name="bytestream-encoder"></a>ByteStream 인코더
 이 샘플에서는 바이트 스트림 인코더의 기능을 보여 주는 `ByteStreamHttpBinding`인 <xref:System.ServiceModel.Channels.Binding>의 작성 방법을 보여 줍니다.  

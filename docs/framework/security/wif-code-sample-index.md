@@ -5,11 +5,11 @@ ms.assetid: 6711f01a-4743-43ce-95ab-5e2302a363ea
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: fc626e139cb29d3827a289acd24b7ea842a1af01
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43404086"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43858654"
 ---
 # <a name="wif-code-sample-index"></a>WIF 코드 샘플 인덱스
 Windows Identity Foundation 4.5에 대한 코드 샘플은 다음과 같습니다.  
