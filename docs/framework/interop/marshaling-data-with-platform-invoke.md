@@ -47,11 +47,11 @@ ms.locfileid: "42911733"
 |**CHAR**|**char**|<xref:System.Char?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
 |**WCHAR**|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
 |**LPSTR**|**char \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
-|**LPCSTR**|**Const char\***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
+|**LPCSTR**|**const char\***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
 |**LPWSTR**|**wchar_t \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
-|**LPCWSTR**|**Const wchar_t \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
-|**FLOAT**|**Float**|<xref:System.Single?displayProperty=nameWithType>|32비트|  
-|**DOUBLE**|**Double**|<xref:System.Double?displayProperty=nameWithType>|64비트|  
+|**LPCWSTR**|**const wchar_t \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
+|**FLOAT**|**float**|<xref:System.Single?displayProperty=nameWithType>|32비트|  
+|**DOUBLE**|**double**|<xref:System.Double?displayProperty=nameWithType>|64비트|  
   
  [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C# 및 C++의 해당하는 형식에 대해서는 [.NET Framework 클래스 라이브러리 소개](../../../docs/standard/class-library-overview.md)를 참조하세요.  
   
