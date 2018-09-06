@@ -17,18 +17,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 7ca4cc9fb65d1a4bd8713f969bbda5551ce5a2e2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466506"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43881800"
 ---
-# <a name="qualifiersetdelete-function"></a><span data-ttu-id="e0a20-103">QualifierSet_Delete 함수</span><span class="sxs-lookup"><span data-stu-id="e0a20-103">QualifierSet_Delete function</span></span>
-<span data-ttu-id="e0a20-104">이름으로 지정된 된 한정자를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-104">Deletes a specified qualifier by name.</span></span>  
+# <a name="qualifiersetdelete-function"></a><span data-ttu-id="0c434-103">QualifierSet_Delete 함수</span><span class="sxs-lookup"><span data-stu-id="0c434-103">QualifierSet_Delete function</span></span>
+<span data-ttu-id="0c434-104">지정된 한정자를 이름으로 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-104">Deletes a specified qualifier by name.</span></span>  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## <a name="syntax"></a><span data-ttu-id="e0a20-105">구문</span><span class="sxs-lookup"><span data-stu-id="e0a20-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0c434-105">구문</span><span class="sxs-lookup"><span data-stu-id="0c434-105">Syntax</span></span>  
   
 ```  
 HRESULT QualifierSet_Delete (
@@ -38,41 +38,41 @@ HRESULT QualifierSet_Delete (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="e0a20-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e0a20-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0c434-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="0c434-106">Parameters</span></span>
 
 `vFunc`  
-<span data-ttu-id="e0a20-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-107">[in] This parameter is unused.</span></span>
+<span data-ttu-id="0c434-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-107">[in] This parameter is unused.</span></span>
 
 `ptr`   
-<span data-ttu-id="e0a20-108">[in] 에 대 한 포인터를 [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="e0a20-108">[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.</span></span>
+<span data-ttu-id="0c434-108">[in] 에 대 한 포인터를 [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="0c434-108">[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.</span></span>
 
 `wszName`   
-<span data-ttu-id="e0a20-109">[in] 삭제 하는 데 사용할 한정자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-109">[in] The name of the qualifier to delete.</span></span>
+<span data-ttu-id="0c434-109">[in] 삭제 하는 데 사용할 한정자의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-109">[in] The name of the qualifier to delete.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="e0a20-110">반환 값</span><span class="sxs-lookup"><span data-stu-id="e0a20-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0c434-110">반환 값</span><span class="sxs-lookup"><span data-stu-id="0c434-110">Return value</span></span>
 
-<span data-ttu-id="e0a20-111">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="e0a20-111">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
+<span data-ttu-id="0c434-111">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="0c434-111">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
 
-|<span data-ttu-id="e0a20-112">상수</span><span class="sxs-lookup"><span data-stu-id="e0a20-112">Constant</span></span>  |<span data-ttu-id="e0a20-113">값</span><span class="sxs-lookup"><span data-stu-id="e0a20-113">Value</span></span>  |<span data-ttu-id="e0a20-114">설명</span><span class="sxs-lookup"><span data-stu-id="e0a20-114">Description</span></span>  |
+|<span data-ttu-id="0c434-112">상수</span><span class="sxs-lookup"><span data-stu-id="0c434-112">Constant</span></span>  |<span data-ttu-id="0c434-113">값</span><span class="sxs-lookup"><span data-stu-id="0c434-113">Value</span></span>  |<span data-ttu-id="0c434-114">설명</span><span class="sxs-lookup"><span data-stu-id="0c434-114">Description</span></span>  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="e0a20-115">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="e0a20-115">0x80041008</span></span> | <span data-ttu-id="e0a20-116">`wszName` 매개 변수가 올바르지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-116">The `wszName` parameter is not valid.</span></span> |
-|`WBEM_E_INVALID_OPERATION` | <span data-ttu-id="e0a20-117">0x80041016</span><span class="sxs-lookup"><span data-stu-id="e0a20-117">0x80041016</span></span> | <span data-ttu-id="e0a20-118">이 한정자를 삭제 하는 중 잘못 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-118">Deleting this qualifier is illegal.</span></span> |
-|`WBEM_E_NOT_FOUND` | <span data-ttu-id="e0a20-119">0x80041002</span><span class="sxs-lookup"><span data-stu-id="e0a20-119">0x80041002</span></span> | <span data-ttu-id="e0a20-120">지정된 된 한정자를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-120">The specified qualifier was not found.</span></span> |
-|`WBEM_S_NO_ERROR` | <span data-ttu-id="e0a20-121">0</span><span class="sxs-lookup"><span data-stu-id="e0a20-121">0</span></span> | <span data-ttu-id="e0a20-122">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-122">The function call was successful.</span></span>  |
-| `WBEM_S_RESET_TO_DEFAULT` | <span data-ttu-id="e0a20-123">0x40002</span><span class="sxs-lookup"><span data-stu-id="e0a20-123">0x40002</span></span> | <span data-ttu-id="e0a20-124">로컬 재정의 삭제 하 고 부모 개체의 원래 한정자가 범위를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-124">The local override was deleted and the original qualifier from the parent object has resumed scope.</span></span> |
+|`WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="0c434-115">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="0c434-115">0x80041008</span></span> | <span data-ttu-id="0c434-116">`wszName` 매개 변수가 올바르지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-116">The `wszName` parameter is not valid.</span></span> |
+|`WBEM_E_INVALID_OPERATION` | <span data-ttu-id="0c434-117">0x80041016</span><span class="sxs-lookup"><span data-stu-id="0c434-117">0x80041016</span></span> | <span data-ttu-id="0c434-118">이 한정자를 삭제 하는 중 잘못 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-118">Deleting this qualifier is illegal.</span></span> |
+|`WBEM_E_NOT_FOUND` | <span data-ttu-id="0c434-119">0x80041002</span><span class="sxs-lookup"><span data-stu-id="0c434-119">0x80041002</span></span> | <span data-ttu-id="0c434-120">지정된 된 한정자를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-120">The specified qualifier was not found.</span></span> |
+|`WBEM_S_NO_ERROR` | <span data-ttu-id="0c434-121">0</span><span class="sxs-lookup"><span data-stu-id="0c434-121">0</span></span> | <span data-ttu-id="0c434-122">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-122">The function call was successful.</span></span>  |
+| `WBEM_S_RESET_TO_DEFAULT` | <span data-ttu-id="0c434-123">0x40002</span><span class="sxs-lookup"><span data-stu-id="0c434-123">0x40002</span></span> | <span data-ttu-id="0c434-124">로컬 재정의 삭제 하 고 부모 개체의 원래 한정자가 범위를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-124">The local override was deleted and the original qualifier from the parent object has resumed scope.</span></span> |
 
-## <a name="remarks"></a><span data-ttu-id="e0a20-125">설명</span><span class="sxs-lookup"><span data-stu-id="e0a20-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0c434-125">설명</span><span class="sxs-lookup"><span data-stu-id="0c434-125">Remarks</span></span>
 
-<span data-ttu-id="e0a20-126">이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-delete) 메서드.</span><span class="sxs-lookup"><span data-stu-id="e0a20-126">This function wraps a call to the [IWbemQualifierSet::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-delete) method.</span></span>
+<span data-ttu-id="0c434-126">이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-delete) 메서드.</span><span class="sxs-lookup"><span data-stu-id="0c434-126">This function wraps a call to the [IWbemQualifierSet::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-delete) method.</span></span>
 
-<span data-ttu-id="e0a20-127">한정자 전파 규칙으로 인해 특정 한정자 수 다른 개체 로부터 상속 되었으며 단순히 인스턴스를 현재 클래스에서 재정의 된 합니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-127">Due to qualifier propagation rules, a particular qualifier may have been inherited from another object and merely overridden in the current class or instance.</span></span> <span data-ttu-id="e0a20-128">이 경우에 `QualifierSet_Delete` 메서드 다시 원래 상속 된 값으로 한정자를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-128">In this case, the `QualifierSet_Delete` method resets the qualifier to its original inherited value.</span></span> <span data-ttu-id="e0a20-129">함수에는 경우 상태 코드를 반환 합니다 `WBEM_S_RESET_TO_DEFAULT`합니다.</span><span class="sxs-lookup"><span data-stu-id="e0a20-129">The function in this case returns the status code `WBEM_S_RESET_TO_DEFAULT`.</span></span>
+<span data-ttu-id="0c434-127">한정자 전파 규칙으로 인해 특정 한정자 수 다른 개체 로부터 상속 되었으며 단순히 인스턴스를 현재 클래스에서 재정의 된 합니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-127">Due to qualifier propagation rules, a particular qualifier may have been inherited from another object and merely overridden in the current class or instance.</span></span> <span data-ttu-id="0c434-128">이 경우에 `QualifierSet_Delete` 메서드 다시 원래 상속 된 값으로 한정자를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-128">In this case, the `QualifierSet_Delete` method resets the qualifier to its original inherited value.</span></span> <span data-ttu-id="0c434-129">함수에는 경우 상태 코드를 반환 합니다 `WBEM_S_RESET_TO_DEFAULT`합니다.</span><span class="sxs-lookup"><span data-stu-id="0c434-129">The function in this case returns the status code `WBEM_S_RESET_TO_DEFAULT`.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="e0a20-130">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e0a20-130">Requirements</span></span>  
- <span data-ttu-id="e0a20-131">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e0a20-131">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="0c434-130">요구 사항</span><span class="sxs-lookup"><span data-stu-id="0c434-130">Requirements</span></span>  
+ <span data-ttu-id="0c434-131">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0c434-131">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="e0a20-132">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="e0a20-132">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="0c434-132">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="0c434-132">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="e0a20-133">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="e0a20-133">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="0c434-133">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="0c434-133">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e0a20-134">참고자료</span><span class="sxs-lookup"><span data-stu-id="e0a20-134">See also</span></span>  
-[<span data-ttu-id="e0a20-135">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="e0a20-135">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="0c434-134">참고자료</span><span class="sxs-lookup"><span data-stu-id="0c434-134">See also</span></span>  
+[<span data-ttu-id="0c434-135">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="0c434-135">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)

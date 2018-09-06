@@ -17,37 +17,37 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5f25777402fa31e72cbbf36f58a6c4cc65542979
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43660985"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44039477"
 ---
-# <a name="geterrorinfo-function"></a><span data-ttu-id="a8abf-103">GetErrorInfo 함수</span><span class="sxs-lookup"><span data-stu-id="a8abf-103">GetErrorInfo function</span></span>
-<span data-ttu-id="a8abf-104">이전 함수 호출에서 오류 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="a8abf-104">Retrieves error information from the previous function call.</span></span>  
+# <a name="geterrorinfo-function"></a><span data-ttu-id="711c5-103">GetErrorInfo 함수</span><span class="sxs-lookup"><span data-stu-id="711c5-103">GetErrorInfo function</span></span>
+<span data-ttu-id="711c5-104">이전 함수 호출에서 오류 정보를 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="711c5-104">Retrieves error information from the previous function call.</span></span>  
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## <a name="syntax"></a><span data-ttu-id="a8abf-105">구문</span><span class="sxs-lookup"><span data-stu-id="a8abf-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="711c5-105">구문</span><span class="sxs-lookup"><span data-stu-id="711c5-105">Syntax</span></span>  
   
 ```  
 IErrorInfo* GetErrorInfo(); 
 ```  
 
-## <a name="return-value"></a><span data-ttu-id="a8abf-106">반환 값</span><span class="sxs-lookup"><span data-stu-id="a8abf-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="711c5-106">반환 값</span><span class="sxs-lookup"><span data-stu-id="711c5-106">Return value</span></span>
 
-<span data-ttu-id="a8abf-107">에 대 한 포인터를 [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 함수 호출에 성공 하면 개체 또는 `null` 실패 한 경우.</span><span class="sxs-lookup"><span data-stu-id="a8abf-107">An pointer to an [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) object if the function call succeeds, or `null` if it fails.</span></span>
+<span data-ttu-id="711c5-107">에 대 한 포인터를 [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 함수 호출에 성공 하면 개체 또는 `null` 실패 한 경우.</span><span class="sxs-lookup"><span data-stu-id="711c5-107">An pointer to an [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) object if the function call succeeds, or `null` if it fails.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a8abf-108">설명</span><span class="sxs-lookup"><span data-stu-id="a8abf-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="711c5-108">설명</span><span class="sxs-lookup"><span data-stu-id="711c5-108">Remarks</span></span>
 
-<span data-ttu-id="a8abf-109">이 함수에 대 한 호출을 래핑하는 [IComThreadingInfo::GetErrorInfo](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) 메서드.</span><span class="sxs-lookup"><span data-stu-id="a8abf-109">This function wraps a call to the [IComThreadingInfo::GetErrorInfo](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) method.</span></span>
+<span data-ttu-id="711c5-109">이 함수에 대 한 호출을 래핑하는 [IComThreadingInfo::GetErrorInfo](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) 메서드.</span><span class="sxs-lookup"><span data-stu-id="711c5-109">This function wraps a call to the [IComThreadingInfo::GetErrorInfo](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) method.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="a8abf-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="a8abf-110">Requirements</span></span>  
- <span data-ttu-id="a8abf-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="a8abf-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="711c5-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="711c5-110">Requirements</span></span>  
+ <span data-ttu-id="711c5-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="711c5-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a8abf-112">**헤더:** WMINet_Utils.def</span><span class="sxs-lookup"><span data-stu-id="a8abf-112">**Header:** WMINet_Utils.def</span></span>  
+ <span data-ttu-id="711c5-112">**헤더:** WMINet_Utils.def</span><span class="sxs-lookup"><span data-stu-id="711c5-112">**Header:** WMINet_Utils.def</span></span>  
   
- <span data-ttu-id="a8abf-113">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="a8abf-113">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="711c5-113">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="711c5-113">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a8abf-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="a8abf-114">See also</span></span>  
-[<span data-ttu-id="a8abf-115">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="a8abf-115">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="711c5-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="711c5-114">See also</span></span>  
+[<span data-ttu-id="711c5-115">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="711c5-115">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)

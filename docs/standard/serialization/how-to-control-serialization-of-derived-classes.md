@@ -5,19 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
-ms.openlocfilehash: e54388737371cc450eba375e1ac09f0ddbe563a5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 00eb4ba1f5f84c60f1ca51871f604b6ee27798c3
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582124"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43892839"
 ---
-# <a name="how-to-control-serialization-of-derived-classes"></a><span data-ttu-id="52c6d-102">방법: 파생 클래스의 Serialization 제어</span><span class="sxs-lookup"><span data-stu-id="52c6d-102">How to: Control Serialization of Derived Classes</span></span>
-<span data-ttu-id="52c6d-103">**XmlElementAttribute** 특성을 사용하여 XML 요소의 이름을 변경하는 것이 개체 serialization을 사용자 지정하는 유일한 방법은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-103">Using the **XmlElementAttribute** attribute to change the name of an XML element is not the only way to customize object serialization.</span></span> <span data-ttu-id="52c6d-104">기존 클래스에서 파생하고 새 클래스를 serialize하는 방법을 <xref:System.Xml.Serialization.XmlSerializer> 인스턴스에 지시하여 XML 스트림을 사용자 지정할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-104">You can also customize the XML stream by deriving from an existing class and instructing the <xref:System.Xml.Serialization.XmlSerializer> instance how to serialize the new class.</span></span>  
+# <a name="how-to-control-serialization-of-derived-classes"></a><span data-ttu-id="fb8e1-102">방법: 파생 클래스의 Serialization 제어</span><span class="sxs-lookup"><span data-stu-id="fb8e1-102">How to: Control Serialization of Derived Classes</span></span>
+<span data-ttu-id="fb8e1-103">**XmlElementAttribute** 특성을 사용하여 XML 요소의 이름을 변경하는 것이 개체 serialization을 사용자 지정하는 유일한 방법은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-103">Using the **XmlElementAttribute** attribute to change the name of an XML element is not the only way to customize object serialization.</span></span> <span data-ttu-id="fb8e1-104">기존 클래스에서 파생하고 새 클래스를 serialize하는 방법을 <xref:System.Xml.Serialization.XmlSerializer> 인스턴스에 지시하여 XML 스트림을 사용자 지정할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-104">You can also customize the XML stream by deriving from an existing class and instructing the <xref:System.Xml.Serialization.XmlSerializer> instance how to serialize the new class.</span></span>  
   
- <span data-ttu-id="52c6d-105">예를 들어 `Book` 클래스의 경우 이 클래스에서 파생하고 몇 개의 속성이 더 있는 `ExpandedBook` 클래스를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-105">For example, given a `Book` class, you can derive from it and create an `ExpandedBook` class that has a few more properties.</span></span> <span data-ttu-id="52c6d-106">하지만 직렬화 또는 deserialize할 때 파생된 형식을 허용하도록 **XmlSerializer**에 지시해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-106">However, you must instruct the **XmlSerializer** to accept the derived type when serializing or deserializing.</span></span> <span data-ttu-id="52c6d-107">이렇게 하려면 <xref:System.Xml.Serialization.XmlElementAttribute> 인스턴스를 만들고 이 인스턴스의 **Type** 속성을 파생 클래스 형식으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-107">This can be done by creating a <xref:System.Xml.Serialization.XmlElementAttribute> instance and setting its **Type** property to the derived class type.</span></span> <span data-ttu-id="52c6d-108">**XmlElementAttribute**를 <xref:System.Xml.Serialization.XmlAttributes> 인스턴스에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-108">Add the **XmlElementAttribute** to a <xref:System.Xml.Serialization.XmlAttributes> instance.</span></span> <span data-ttu-id="52c6d-109">그런 다음 **XmlAttributes**를 <xref:System.Xml.Serialization.XmlAttributeOverrides> 인스턴스로 추가하고 재정의되는 형식과 파생 클래스를 허용하는 멤버의 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-109">Then add the **XmlAttributes** to a <xref:System.Xml.Serialization.XmlAttributeOverrides> instance, specifying the type being overridden and the name of the member that accepts the derived class.</span></span> <span data-ttu-id="52c6d-110">다음 예제에서 이를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52c6d-110">This is shown in the following example.</span></span>  
+ <span data-ttu-id="fb8e1-105">예를 들어 `Book` 클래스의 경우 이 클래스에서 파생하고 몇 개의 속성이 더 있는 `ExpandedBook` 클래스를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-105">For example, given a `Book` class, you can derive from it and create an `ExpandedBook` class that has a few more properties.</span></span> <span data-ttu-id="fb8e1-106">하지만 직렬화 또는 deserialize할 때 파생된 형식을 허용하도록 **XmlSerializer**에 지시해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-106">However, you must instruct the **XmlSerializer** to accept the derived type when serializing or deserializing.</span></span> <span data-ttu-id="fb8e1-107">이렇게 하려면 <xref:System.Xml.Serialization.XmlElementAttribute> 인스턴스를 만들고 이 인스턴스의 **Type** 속성을 파생 클래스 형식으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-107">This can be done by creating a <xref:System.Xml.Serialization.XmlElementAttribute> instance and setting its **Type** property to the derived class type.</span></span> <span data-ttu-id="fb8e1-108">**XmlElementAttribute**를 <xref:System.Xml.Serialization.XmlAttributes> 인스턴스에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-108">Add the **XmlElementAttribute** to a <xref:System.Xml.Serialization.XmlAttributes> instance.</span></span> <span data-ttu-id="fb8e1-109">그런 다음 **XmlAttributes**를 <xref:System.Xml.Serialization.XmlAttributeOverrides> 인스턴스로 추가하고 재정의되는 형식과 파생 클래스를 허용하는 멤버의 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-109">Then add the **XmlAttributes** to a <xref:System.Xml.Serialization.XmlAttributeOverrides> instance, specifying the type being overridden and the name of the member that accepts the derived class.</span></span> <span data-ttu-id="fb8e1-110">다음 예제에서 이를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fb8e1-110">This is shown in the following example.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="52c6d-111">예제</span><span class="sxs-lookup"><span data-stu-id="52c6d-111">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="fb8e1-111">예제</span><span class="sxs-lookup"><span data-stu-id="fb8e1-111">Example</span></span>  
   
 ```vb  
 Public Class Orders  
@@ -232,11 +232,12 @@ public class Run
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="52c6d-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="52c6d-112">See Also</span></span>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- <xref:System.Xml.Serialization.XmlElementAttribute>  
- <xref:System.Xml.Serialization.XmlAttributes>  
- <xref:System.Xml.Serialization.XmlAttributeOverrides>  
- [<span data-ttu-id="52c6d-113">XML 및 SOAP serialization</span><span class="sxs-lookup"><span data-stu-id="52c6d-113">XML and SOAP Serialization</span></span>](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
- [<span data-ttu-id="52c6d-114">방법: 개체 직렬화</span><span class="sxs-lookup"><span data-stu-id="52c6d-114">How to: Serialize an Object</span></span>](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [<span data-ttu-id="52c6d-115">방법: XML 스트림의 대체 요소 이름 지정</span><span class="sxs-lookup"><span data-stu-id="52c6d-115">How to: Specify an Alternate Element Name for an XML Stream</span></span>](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+## <a name="see-also"></a><span data-ttu-id="fb8e1-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="fb8e1-112">See also</span></span>
+
+- <xref:System.Xml.Serialization.XmlSerializer>  
+- <xref:System.Xml.Serialization.XmlElementAttribute>  
+- <xref:System.Xml.Serialization.XmlAttributes>  
+- <xref:System.Xml.Serialization.XmlAttributeOverrides>  
+- [<span data-ttu-id="fb8e1-113">XML 및 SOAP serialization</span><span class="sxs-lookup"><span data-stu-id="fb8e1-113">XML and SOAP Serialization</span></span>](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+- [<span data-ttu-id="fb8e1-114">방법: 개체 직렬화</span><span class="sxs-lookup"><span data-stu-id="fb8e1-114">How to: Serialize an Object</span></span>](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [<span data-ttu-id="fb8e1-115">방법: XML 스트림의 대체 요소 이름 지정</span><span class="sxs-lookup"><span data-stu-id="fb8e1-115">How to: Specify an Alternate Element Name for an XML Stream</span></span>](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)

@@ -9,28 +9,28 @@ helpviewer_keywords:
 - animation [WPF], PointAnimation
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
 ms.openlocfilehash: 91447685988d91dfe86707c2cf265deabeb717b9
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
-ms.translationtype: HT
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43801582"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44036667"
 ---
-# <a name="how-to-animate-the-position-of-an-object-by-using-pointanimation"></a><span data-ttu-id="d6bfd-102">방법: PointAnimation을 사용하여 개체 위치에 애니메이션 효과 주기</span><span class="sxs-lookup"><span data-stu-id="d6bfd-102">How to: Animate the Position of an Object by Using PointAnimation</span></span>
-<span data-ttu-id="d6bfd-103">사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.PointAnimation> 클래스를 따라 개체에 애니메이션 효과 주기는 <xref:System.Windows.Shapes.Path>합니다.</span><span class="sxs-lookup"><span data-stu-id="d6bfd-103">This example shows how to use the <xref:System.Windows.Media.Animation.PointAnimation> class to animate an object along a <xref:System.Windows.Shapes.Path>.</span></span>  
+# <a name="how-to-animate-the-position-of-an-object-by-using-pointanimation"></a><span data-ttu-id="39ab5-102">방법: PointAnimation을 사용하여 개체 위치에 애니메이션 효과 주기</span><span class="sxs-lookup"><span data-stu-id="39ab5-102">How to: Animate the Position of an Object by Using PointAnimation</span></span>
+<span data-ttu-id="39ab5-103">사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.PointAnimation> 클래스를 따라 개체에 애니메이션 효과 주기는 <xref:System.Windows.Shapes.Path>합니다.</span><span class="sxs-lookup"><span data-stu-id="39ab5-103">This example shows how to use the <xref:System.Windows.Media.Animation.PointAnimation> class to animate an object along a <xref:System.Windows.Shapes.Path>.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="d6bfd-104">예제</span><span class="sxs-lookup"><span data-stu-id="d6bfd-104">Example</span></span>  
- <span data-ttu-id="d6bfd-105">다음 예제를 따라 타원을 이동는 <xref:System.Windows.Shapes.Path> 다른 화면의 한 점에서 합니다.</span><span class="sxs-lookup"><span data-stu-id="d6bfd-105">The following example moves an ellipse along a <xref:System.Windows.Shapes.Path> from one point on the screen to another.</span></span> <span data-ttu-id="d6bfd-106">예제 애니메이션의 위치는 <xref:System.Windows.Media.EllipseGeometry> 를 사용 하 여 <xref:System.Windows.Media.Animation.PointAnimation> 애니메이션 효과를 주는 <xref:System.Windows.Media.EllipseGeometry.Center%2A> 속성.</span><span class="sxs-lookup"><span data-stu-id="d6bfd-106">The example animates the position of an <xref:System.Windows.Media.EllipseGeometry> by using <xref:System.Windows.Media.Animation.PointAnimation> to animate the <xref:System.Windows.Media.EllipseGeometry.Center%2A> property.</span></span>  
+## <a name="example"></a><span data-ttu-id="39ab5-104">예제</span><span class="sxs-lookup"><span data-stu-id="39ab5-104">Example</span></span>  
+ <span data-ttu-id="39ab5-105">다음 예제를 따라 타원을 이동는 <xref:System.Windows.Shapes.Path> 다른 화면의 한 점에서 합니다.</span><span class="sxs-lookup"><span data-stu-id="39ab5-105">The following example moves an ellipse along a <xref:System.Windows.Shapes.Path> from one point on the screen to another.</span></span> <span data-ttu-id="39ab5-106">예제 애니메이션의 위치는 <xref:System.Windows.Media.EllipseGeometry> 를 사용 하 여 <xref:System.Windows.Media.Animation.PointAnimation> 애니메이션 효과를 주는 <xref:System.Windows.Media.EllipseGeometry.Center%2A> 속성.</span><span class="sxs-lookup"><span data-stu-id="39ab5-106">The example animates the position of an <xref:System.Windows.Media.EllipseGeometry> by using <xref:System.Windows.Media.Animation.PointAnimation> to animate the <xref:System.Windows.Media.EllipseGeometry.Center%2A> property.</span></span>  
   
  [!code-csharp[BasicAnimations_snip#PointAnimationWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/PointAnimationExample.cs#pointanimationwholepage)]
  [!code-vb[BasicAnimations_snip#PointAnimationWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/PointAnimationExample.vb#pointanimationwholepage)]  
   
-## <a name="see-also"></a><span data-ttu-id="d6bfd-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d6bfd-107">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="39ab5-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="39ab5-107">See Also</span></span>  
  <xref:System.Windows.Media.Animation.PointAnimation>  
  <xref:System.Windows.Shapes.Path>  
  <xref:System.Windows.Media.EllipseGeometry>  
  <xref:System.Windows.Media.EllipseGeometry.Center%2A>  
- [<span data-ttu-id="d6bfd-108">애니메이션 개요</span><span class="sxs-lookup"><span data-stu-id="d6bfd-108">Animation Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [<span data-ttu-id="d6bfd-109">그래픽 및 멀티미디어</span><span class="sxs-lookup"><span data-stu-id="d6bfd-109">Graphics and Multimedia</span></span>](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [<span data-ttu-id="d6bfd-110">방법 항목</span><span class="sxs-lookup"><span data-stu-id="d6bfd-110">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)  
- [<span data-ttu-id="d6bfd-111">애니메이션 및 타이밍</span><span class="sxs-lookup"><span data-stu-id="d6bfd-111">Animation and Timing</span></span>](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [<span data-ttu-id="d6bfd-112">방법 항목</span><span class="sxs-lookup"><span data-stu-id="d6bfd-112">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+ [<span data-ttu-id="39ab5-108">애니메이션 개요</span><span class="sxs-lookup"><span data-stu-id="39ab5-108">Animation Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [<span data-ttu-id="39ab5-109">그래픽 및 멀티미디어</span><span class="sxs-lookup"><span data-stu-id="39ab5-109">Graphics and Multimedia</span></span>](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
+ [<span data-ttu-id="39ab5-110">방법 항목</span><span class="sxs-lookup"><span data-stu-id="39ab5-110">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)  
+ [<span data-ttu-id="39ab5-111">애니메이션 및 타이밍</span><span class="sxs-lookup"><span data-stu-id="39ab5-111">Animation and Timing</span></span>](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [<span data-ttu-id="39ab5-112">방법 항목</span><span class="sxs-lookup"><span data-stu-id="39ab5-112">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
