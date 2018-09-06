@@ -6,11 +6,11 @@ helpviewer_keywords:
 - examples [Visual Basic], application settings
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
 ms.openlocfilehash: 3b933287d18a2519969852117fc6f847e9ead461
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43537287"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43788518"
 ---
 # <a name="accessing-application-settings-visual-basic"></a>응용 프로그램 설정 액세스(Visual Basic)
 이 섹션에는 `My.Settings` 개체 및 개체를 통해 수행할 수 있는 작업을 설명하는 항목이 포함됩니다.  

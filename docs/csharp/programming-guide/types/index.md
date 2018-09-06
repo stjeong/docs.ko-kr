@@ -11,12 +11,12 @@ helpviewer_keywords:
 - C# language, types
 - strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: 15f3a774255923aba83f15700540369040c02dcd
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: ba019d4104ec6669ef07b608f40fc1489c994cbf
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961536"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525490"
 ---
 # <a name="types-c-programming-guide"></a>형식(C# 프로그래밍 가이드)
 ## <a name="types-variables-and-values"></a>형식, 변수 및 값  
@@ -99,7 +99,7 @@ int i = 5;
 char c = 'Z';  
 ```  
   
- 값 형식은 *sealed*이므로, 예를 들어 <xref:System.Int32?displayProperty=nameWithType>에서 형식을 파생시킬 수 없으며 구조체는 <xref:System.ValueType?displayProperty=nameWithType>에서만 상속할 수 있기 때문에 사용자 정의 클래스 또는 구조체에서 상속하는 구조체를 정의할 수 없습니다. 그러나 구조체는 하나 이상의 인터페이스를 구현할 수 있습니다. 구조체 형식을 인터페이스 형식으로 캐스팅할 수 있습니다. 이 경우 *boxing* 작업은 관리되는 힙의 참조 형식 개체 내에 구조체를 래핑합니다. Boxing 작업은 <xref:System.Object?displayProperty=nameWithType>를 입력 매개 변수로 사용하는 메서드에 값 형식을 전달할 때 발생합니다. 자세한 내용은 [boxing 및 unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)을 참조하세요.  
+ 값 형식은 *sealed*이므로, 예를 들어 <xref:System.Int32?displayProperty=nameWithType>에서 형식을 파생시킬 수 없으며 구조체는 <xref:System.ValueType?displayProperty=nameWithType>에서만 상속할 수 있기 때문에 사용자 정의 클래스 또는 구조체에서 상속하는 구조체를 정의할 수 없습니다. 그러나 구조체는 하나 이상의 인터페이스를 구현할 수 있습니다. 구조체 형식을 구조체가 구현하는 인터페이스 형식으로 캐스트할 수 있습니다. 이 경우 *boxing* 작업은 관리되는 힙의 참조 형식 개체 내에 구조체를 래핑합니다. Boxing 작업은 <xref:System.Object?displayProperty=nameWithType> 또는 인터페이스 형식을 입력 매개 변수로 사용하는 메서드에 값 형식을 전달할 때 발생합니다. 자세한 내용은 [boxing 및 unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)을 참조하세요.  
   
  [struct](../../../csharp/language-reference/keywords/struct.md) 키워드를 사용하여 고유한 사용자 지정 값 형식을 만듭니다. 일반적으로 구조체는 다음 예제와 같이 소규모 관련 변수 집합의 컨테이너로 사용됩니다.  
   
@@ -183,8 +183,9 @@ stringList.Add(4);
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [XML 데이터 형식 변환](../../../standard/data/xml/conversion-of-xml-data-types.md)  
- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [XML 데이터 형식 변환](../../../standard/data/xml/conversion-of-xml-data-types.md)  
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)

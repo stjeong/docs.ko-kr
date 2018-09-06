@@ -10,11 +10,11 @@ helpviewer_keywords:
 - examples [Visual Basic], logging application information
 ms.assetid: 8bf4f047-22d6-48d6-aec5-93b98ad5b8e8
 ms.openlocfilehash: 68ec09dac026e46716ff18dce88acf9d60635026
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43386808"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43748666"
 ---
 # <a name="logging-information-from-the-application-visual-basic"></a>응용 프로그램의 정보 기록(Visual Basic)
 이 섹션에는 `My.Application.Log` 또는 `My.Log` 개체를 사용하여 응용 프로그램의 정보를 기록하는 방법과 응용 프로그램의 로깅 기능을 확장하는 방법을 설명하는 항목이 포함되어 있습니다.  

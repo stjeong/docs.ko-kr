@@ -3,11 +3,11 @@ title: 메시징 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
 ms.openlocfilehash: 3e56636e8364eec333f9585a0f62f6510561d1cc
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: HT
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43563280"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43747761"
 ---
 # <a name="messaging-protocols"></a>메시징 프로토콜
 Windows Communication Foundation (WCF) 채널 스택에 내부 메시지 표현을 통신 형식으로 변환 하는 특정 전송을 사용 하 여 보내는 인코딩 및 전송 채널을 사용 합니다. 웹 서비스 상호 운용성을 위해 사용되는 가장 일반적인 전송은 HTTP이고, 웹 서비스에 사용되는 가장 일반적인 인코딩은 XML 기반 SOAP 1.1, SOAP 1.2 및 MTOM(Message Transmission Optimization Mechanism)입니다.  

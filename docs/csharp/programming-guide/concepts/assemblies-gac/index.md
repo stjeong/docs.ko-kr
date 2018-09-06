@@ -3,11 +3,11 @@ title: 어셈블리 및 전역 어셈블리 캐시(C#)
 ms.date: 07/20/2015
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 ms.openlocfilehash: ed5ecff57035b4d3cf47f8325fe5c172180f9d40
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43534325"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43778388"
 ---
 # <a name="assemblies-and-the-global-assembly-cache-c"></a>어셈블리 및 전역 어셈블리 캐시(C#)
 어셈블리는 .NET 기반 응용 프로그램에 대한 배포, 버전 제어, 재사용, 활성화 범위 및 보안 권한의 기본 단위를 형성합니다. 어셈블리는 실행 파일(.exe) 또는 동적 연결 라이브러리(.dll) 파일의 형태를 가지며 .NET Framework의 구성 요소입니다. 어셈블리는 형식 구현을 인식하는 데 필요한 정보와 함께 공용 언어 런타임을 제공합니다. 어셈블리를 함께 작동하도록 빌드되고 논리적 기능 단위를 형성하는 리소스 및 형식 컬렉션으로 생각할 수 있습니다.  

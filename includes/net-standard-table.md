@@ -11,7 +11,7 @@
 | Windows Phone              | 8.1   | 8.1    | 8.1   |       |       |            |            |            |
 | Windows Phone Silverlight  | 8.0   |        |       |       |       |            |            |            |
 
-<sup>1 .NET Framework용으로 나열된 버전은 .NET Core SDK 2.0 이상 버전의 도구에 적용됩니다. 이전 버전에서는 .NET Standard 1.5 이상에서 다른 매핑을 사용했습니다.</sup>
+<sup>1 .NET Framework용으로 나열된 버전은 .NET Core SDK 2.0 이상 버전의 도구에 적용됩니다. 이전 버전에서는 .NET Standard 1.5 이상에서 다른 매핑을 사용했습니다. Visual Studio 2017로 업그레이드할 수 없는 경우 [Visual Studio 2015용 .NET Core 도구를 다운로드](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)할 수 있습니다.</sup>
 
 - 열은 .NET 표준 버전을 나타냅니다. 각 헤더 셀은 .NET 표준의 해당 버전에 추가된 API를 보여 주는 문서의 링크입니다.
 - 행은 다양한 .NET 구현을 나타냅니다.

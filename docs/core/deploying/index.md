@@ -4,12 +4,12 @@ description: .NET Core 응용 프로그램 배포.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.openlocfilehash: 4a39efdd92cf9c3bb6aadf83949e02ce20960481
-ms.sourcegitcommit: 702d5ffc6e733b6c4ded85bf1c92e2293638ee9a
+ms.openlocfilehash: ab65beaa293f7543a8436f913a1e5bf89ca7281b
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2018
-ms.locfileid: "37792428"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43562008"
 ---
 # <a name="net-core-application-deployment"></a>.NET Core 응용 프로그램 배포
 
@@ -21,7 +21,7 @@ ms.locfileid: "37792428"
 
 ## <a name="framework-dependent-deployments-fdd"></a>프레임워크 종속 배포(FDD)
 
-FDD에서는 앱과 타사 종속성만 배포합니다. 앱에서 대상 시스템에 있는 .NET Core 버전을 사용하므로 .NET Core를 배포할 필요가 없습니다. 이 배포는 .NET Core 앱의 기본 배포 모델입니다.
+FDD에서는 앱과 타사 종속성만 배포합니다. 앱에서 대상 시스템에 있는 .NET Core 버전을 사용하므로 .NET Core를 배포할 필요가 없습니다. 이는 .NET Core를 대상으로 하는 .NET Core 및 ASP.NET Core 앱의 기본 배포 모델입니다.
 
 ### <a name="why-create-a-framework-dependent-deployment"></a>프레임워크 종속 배포를 만드는 이유
 
@@ -70,9 +70,9 @@ CLI 도구를 사용하여 .NET Core 앱을 배포하는 방법을 보여 주는
 - 자체 포함 배포
 - 타사 종속성이 있는 자체 포함 배포
 
-# <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
-[Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md) (CLI 도구를 사용하여 .NET Core 앱 배포)  
-[Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md) (Visual Studio를 사용하여 .NET Core 앱 배포)  
-[패키지, 메타패키지 및 프레임워크](../packages.md)   
-[.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)
+* [CLI 도구를 사용하여 .NET Core 앱 배포](deploy-with-cli.md)
+* [Visual Studio를 사용하여 .NET Core 앱 배포](deploy-with-vs.md)
+* [패키지, 메타패키지 및 프레임워크](../packages.md)
+* [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)

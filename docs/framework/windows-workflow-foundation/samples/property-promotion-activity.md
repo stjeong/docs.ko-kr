@@ -3,11 +3,11 @@ title: 속성 승격 활동
 ms.date: 03/30/2017
 ms.assetid: 802196b7-1159-4c05-b41b-d3bfdfcc88d9
 ms.openlocfilehash: 6e059a0d344e6c62833feaa890c459c141a49673
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: HT
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43559107"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43747056"
 ---
 # <a name="property-promotion-activity"></a>속성 승격 활동
 이 샘플에서는 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 승격 기능을 워크플로 작성 환경에 직접 통합하는 종단 간 솔루션을 제공합니다. 승격 기능의 사용을 단순화하는 워크플로 확장, 워크플로 활동 및 구성 요소의 컬렉션이 제공됩니다. 또한 샘플에는 이 컬렉션을 사용하는 방법을 보여 주는 간단한 워크플로가 포함되어 있습니다.  

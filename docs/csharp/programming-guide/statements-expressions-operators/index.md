@@ -9,12 +9,12 @@ helpviewer_keywords:
 - C# language, expressions
 - statements [C#]
 ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
-ms.openlocfilehash: 26a6046ac926a13c4f2a2f2cc4dfd250d998bc93
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 1085de3447bd6101fcccf6cae7b37afac24d37f1
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43386170"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776529"
 ---
 # <a name="statements-expressions-and-operators-c-programming-guide"></a>문, 식, 연산자(C# 프로그래밍 가이드)
 응용 프로그램을 구성하는 C# 코드는 키워드, 식, 연산자가 포함된 문으로 구성됩니다. 이 섹션에서는 C# 프로그램의 이러한 기본 요소에 대한 정보를 소개합니다.  
@@ -44,6 +44,7 @@ ms.locfileid: "43386170"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [캐스팅 및 형식 변환](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [캐스팅 및 형식 변환](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
