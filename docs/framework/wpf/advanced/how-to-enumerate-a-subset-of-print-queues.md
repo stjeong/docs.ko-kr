@@ -10,11 +10,11 @@ helpviewer_keywords:
 - print queues [WPF], enumerating subset of
 ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
 ms.openlocfilehash: bf45d6fb3fb161ca5171e94b9ab7af1e0e6f0c3d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43562071"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43786945"
 ---
 # <a name="how-to-enumerate-a-subset-of-print-queues"></a>방법: 인쇄 큐의 하위 집합 열거
 회사 전체 집합이 프린터를 관리 하는 정보 기술 (IT) 전문가 직면 하는 일반적인 상황 특정 특성을 가진 프린터 목록을 생성 하는 것입니다. 이 기능을 제공 합니다 <xref:System.Printing.PrintServer.GetPrintQueues%2A> 메서드를 <xref:System.Printing.PrintServer> 개체 및 <xref:System.Printing.EnumeratedPrintQueueTypes> 열거형입니다.  

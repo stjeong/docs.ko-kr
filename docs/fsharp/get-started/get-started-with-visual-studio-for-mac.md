@@ -2,12 +2,12 @@
 title: 'Mac 용 Visual Studio에서 F #을 사용 하 여 시작'
 description: 'F # Visual Studio를 사용 하 여 mac 용 사용 방법 알아보기'
 ms.date: 07/03/2018
-ms.openlocfilehash: 200c3a8fee072797a54d15d8989937f4cadb33e2
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 6aceec299c29e04aecd7999cd1dda6a56dd2779a
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874655"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43785533"
 ---
 # <a name="get-started-with-f-in-visual-studio-for-mac"></a>Mac 용 Visual Studio에서 F #을 사용 하 여 시작
 
@@ -114,8 +114,9 @@ val it : bool = true
 이미 않았다면 체크 아웃 합니다 [F # 둘러보기](../tour.md), F # 언어의 핵심 기능 중 일부를 포함 합니다.  F #의 기능 중 일부의 개요를 제공 하 고 Mac 용 Visual Studio로 복사 하 고 실행할 수 있는 충분 한 코드 샘플을 제공 합니다.  도 유용한 외부 리소스 사용할 수 있습니다에 표시 된 [F # 가이드](../index.md)합니다.
 
 ## <a name="see-also"></a>참고자료
- [Visual F#](../index.md)  
- [F# 둘러보기](../tour.md)  
- [F # 언어 참조](../language-reference/index.md)  
- [형식 유추](../language-reference/type-inference.md)  
- [기호 및 연산자 참조](../language-reference/symbol-and-operator-reference/index.md)  
+
+- [Visual F#](../index.md)  
+- [F# 둘러보기](../tour.md)  
+- [F # 언어 참조](../language-reference/index.md)  
+- [형식 유추](../language-reference/type-inference.md)  
+- [기호 및 연산자 참조](../language-reference/symbol-and-operator-reference/index.md)  

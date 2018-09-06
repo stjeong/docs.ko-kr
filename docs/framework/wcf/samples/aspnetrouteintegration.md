@@ -3,11 +3,11 @@ title: AspNetRouteIntegration
 ms.date: 03/30/2017
 ms.assetid: 0638ce0e-d053-47df-a447-688e447a03fb
 ms.openlocfilehash: 8d9a0710e5106cbc3d02a06e81f4f8ed9ae3e03b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43561834"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43788813"
 ---
 # <a name="aspnetrouteintegration"></a>AspNetRouteIntegration
 이 샘플에서는 ASP.NET 경로 사용 하 여 Windows Communication Foundation (WCF) REST 서비스를 호스트 하는 방법을 보여 줍니다. 합니다 [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) 샘플이이 시나리오의 자체 호스팅된 버전을 표시 및 방어에서 서비스 구현에 설명 합니다. 이 항목에서는 ASP.NET 통합 기능을 중점적으로 설명합니다. ASP.NET 라우팅에 대 한 자세한 내용은 참조 하세요. <xref:System.Web.Routing>합니다.  

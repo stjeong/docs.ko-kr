@@ -3,11 +3,11 @@ title: 트랜잭션된 큐
 ms.date: 03/30/2017
 ms.assetid: b1b011dd-5e0b-482c-9bb0-9d8727038f14
 ms.openlocfilehash: db6a9686334eefb02b9360827a23ca8363127eb5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43535506"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43785406"
 ---
 # <a name="transacted-queues"></a>트랜잭션된 큐
 이 샘플에는 큐와 트랜잭션을에서 Windows WF (Workflow Foundation) 확장 가능 하며 안정적인 서비스를 만드는 통합 하는 방법을 보여 줍니다. A <!--zz <xref:System.Activities.TransactionScope>--> `System.Activities.TransactionScope` 클라이언트 워크플로에서 사용 하 여 트랜잭션 중인 큐에 메시지를 보내는 데 사용 된 <xref:System.ServiceModel.NetMsmqBinding>합니다. 서버에서는 큐로부터 메시지를 받고 동일한 트랜잭션을 진행 중인 워크플로의 상태를 업데이트하기 위해 <xref:System.ServiceModel.Activities.TransactedReceiveScope>를 사용합니다.  

@@ -5,11 +5,11 @@ f1_keywords:
 - vbrERRID_Overflow
 ms.assetid: c6a23279-3086-412a-bcff-ff8ed2cb8c6f
 ms.openlocfilehash: 7546676b85465577b357b7ad0757b4db8d40dbe3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466042"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43784077"
 ---
 # <a name="overflow-visual-basic-run-time-error"></a>오버플로가 발생했습니다(Visual Basic 런타임 오류).
 할당 대상의 한계를 초과 하 여 할당 하려고 할 때 오버플로가 발생 했습니다.  

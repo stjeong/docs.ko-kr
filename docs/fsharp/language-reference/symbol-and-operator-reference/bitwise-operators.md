@@ -2,18 +2,19 @@
 title: 비트 연산자(F#)
 description: 'F # 프로그래밍 언어에서 사용할 수 있는 비트 연산자에 알아봅니다.'
 ms.date: 07/20/2018
-ms.openlocfilehash: abd2778eba422b3ce2a3472efd458446854b3d2f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ed76fcf5f9c569a2f288cf260e99dc29fd65ef3b
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43559558"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43784370"
 ---
 # <a name="bitwise-operators"></a>비트 연산자
 
 이 항목에서는 F # 언어에서 사용할 수 있는 비트 연산자를 설명 합니다.
 
 ## <a name="summary-of-bitwise-operators"></a>비트 연산자 요약
+
 다음 표에서 F # 언어에서 unboxed 정수 계열 형식에 대 한 지원 되는 비트 연산자를 설명 합니다.
 
 |연산자|노트|
@@ -27,10 +28,8 @@ ms.locfileid: "43559558"
 
 형식은 비트 연산자를 사용 하 여 사용할 수: `byte`, `sbyte`, `int16`, `uint16`, `int32 (int)`를 `uint32`, `int64`를 `uint64`, `nativeint`, 및 `unativeint`합니다.
 
-## <a name="see-also"></a>참고 항목
-[기호 및 연산자 참조](index.md)
+## <a name="see-also"></a>참고자료
 
-[산술 연산자](arithmetic-operators.md)
-
-[부울 연산자](boolean-operators.md)
-
+- [기호 및 연산자 참조](index.md)
+- [산술 연산자](arithmetic-operators.md)
+- [부울 연산자](boolean-operators.md)

@@ -3,11 +3,11 @@ title: 트랜잭션 범위 무시
 ms.date: 03/30/2017
 ms.assetid: 49fb6dd4-30d4-4067-925c-c5de44c8c740
 ms.openlocfilehash: 44814d66a4de4b3e72bb33eb46019eb1088ab040
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43385196"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43788041"
 ---
 # <a name="suppress-transaction-scope"></a>트랜잭션 범위 무시
 이 샘플에서는 앰비언트 런타임 트랜잭션이 있는 경우 이 트랜잭션을 표시하지 않도록 사용자 지정 `SuppressTransactionScope` 활동을 작성하는 방법을 보여 줍니다.  
