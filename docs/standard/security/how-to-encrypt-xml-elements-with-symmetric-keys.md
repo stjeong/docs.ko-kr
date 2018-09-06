@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d9fa06ed0befd82a3efdd46deaa2362b1f10fa35
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f5c221dc05787c6d76d998977069ad327a3dfa83
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33586077"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43881225"
 ---
 # <a name="how-to-encrypt-xml-elements-with-symmetric-keys"></a>방법: 대칭 키를 사용하여 XML 요소 암호화
 <xref:System.Security.Cryptography.Xml> 네임스페이스의 클래스를 사용하여 XML 문서 내의 요소를 암호화할 수 있습니다.  XML 암호화를 사용하면 데이터가 쉽게 읽혀질 염려 없이 중요한 XML을 저장하거나 전송할 수 있습니다.  이 절차에서는 Rijndael이라고도 하는 AES(고급 암호화 표준) 알고리즘을 사용하여 XML 요소를 암호 해독합니다.  
   
- 이 절차를 사용 하 여 암호화 된 XML 요소 암호 해독 하는 방법에 대 한 정보를 참조 하십시오. [하는 방법: 대칭 키로 XML 요소 암호 해독](../../../docs/standard/security/how-to-decrypt-xml-elements-with-symmetric-keys.md)합니다.  
+ 이 절차를 사용 하 여 암호화 된 XML 요소 암호 해독 하는 방법에 대 한 정보를 참조 하세요 [방법: 대칭 키를 사용 하 여 XML 요소 암호 해독](../../../docs/standard/security/how-to-decrypt-xml-elements-with-symmetric-keys.md)합니다.  
   
  AES와 같은 대칭 알고리즘을 사용하여 XML 데이터를 암호화하는 경우 동일한 키를 사용하여 XML 데이터를 암호화하고 암호 해독해야 합니다.  이 절차의 예제에서는 동일한 키를 사용하여 암호화된 XML이 암호 해독되며 암호화 및 암호 해독하는 당사자가 알고리즘 및 사용할 키에 대해 동의한다고 가정합니다.  이 예제에서는 암호화된 XML 내의 AES 키를 저장하거나 암호화하지 않습니다.  
   
@@ -101,6 +101,7 @@ ms.locfileid: "33586077"
   
  암호화 키를 사용하여 작업이 완료되면 각 바이트를 0으로 설정하거나 관리되는 암호화 클래스의 <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> 메서드를 호출하여 메모리에서 지웁니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Cryptography.Xml>  
- [방법: 대칭 키를 사용하여 XML 요소 암호 해독](../../../docs/standard/security/how-to-decrypt-xml-elements-with-symmetric-keys.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Security.Cryptography.Xml>  
+- [방법: 대칭 키를 사용하여 XML 요소 암호 해독](../../../docs/standard/security/how-to-decrypt-xml-elements-with-symmetric-keys.md)

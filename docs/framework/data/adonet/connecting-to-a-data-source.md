@@ -3,11 +3,11 @@ title: 데이터 원본에 연결(ADO.NET)
 ms.date: 03/30/2017
 ms.assetid: 9abc3f92-1be3-4e1a-b360-762dc689650e
 ms.openlocfilehash: f5788b9b0b19f32d03c917575db7b3f40324c0a2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43724606"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031728"
 ---
 # <a name="connecting-to-a-data-source-in-adonet"></a>데이터 원본에 연결(ADO.NET)
 ADO.NET 사용 하 여는 **연결** 개체에 연결 문자열에 필요한 인증 정보를 제공 하 여 특정 데이터 원본에 연결 합니다. 합니다 **연결** 개체를 사용 하면 데이터 원본의 유형에 따라 다릅니다.  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 65fd078b6be9dbcdfc03e34285d70a6bfe42d87b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 79b5e05fe9133eb2282eedefa001e64ece5e0f57
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581780"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44035589"
 ---
 # <a name="how-to-create-genericprincipal-and-genericidentity-objects"></a>방법: GenericPrincipal 및 GenericIdentity 개체 만들기
-사용할 수는 <xref:System.Security.Principal.GenericIdentity> 클래스와 함께 <xref:System.Security.Principal.GenericPrincipal> 를 Windows 도메인의 독립적인 존재 하는 권한 부여 체계를 만드는 클래스입니다.  
+사용할 수는 <xref:System.Security.Principal.GenericIdentity> 클래스와 함께 <xref:System.Security.Principal.GenericPrincipal> 존재 하는 권한 부여 체계를 Windows 도메인의 독립적인 만들 클래스입니다.  
   
 ### <a name="to-create-a-genericprincipal-object"></a>GenericPrincipal 개체를 만들려면  
   
@@ -47,7 +47,7 @@ ms.locfileid: "33581780"
     GenericPrincipal MyPrincipal = new GenericPrincipal(MyIdentity, MyStringArray);  
     ```  
   
-3.  해당 Principal을 현재 스레드에 연결하려면 다음 코드를 사용합니다. 이 중요 한 주 서버에서 여러 번 유효성이 검사 합니다, 응용 프로그램에서 실행 되는 다른 코드에서 확인할 수 있어야 하거나 것을 확인 해야 합니다는 <xref:System.Security.Permissions.PrincipalPermission> 개체입니다. Principal 개체를 스레드에 연결하지 않고도 이 개체에 대해 역할 기반 확인을 수행할 수 있습니다. 자세한 내용은 [Principal 개체 바꾸기](../../../docs/standard/security/replacing-a-principal-object.md)를 참조하세요.  
+3.  해당 Principal을 현재 스레드에 연결하려면 다음 코드를 사용합니다. 이 중요 한 보안 주체 유효성을 검사 해야 여러 번, 응용 프로그램에서 실행 되는 다른 코드에서 유효성이 검사 되어야 합니다 하거나 하 여 유효성이 검사 되어야 합니다는 <xref:System.Security.Permissions.PrincipalPermission> 개체입니다. Principal 개체를 스레드에 연결하지 않고도 이 개체에 대해 역할 기반 확인을 수행할 수 있습니다. 자세한 내용은 [Principal 개체 바꾸기](../../../docs/standard/security/replacing-a-principal-object.md)를 참조하세요.  
   
     ```vb  
     Thread.CurrentPrincipal = MyPrincipal  
@@ -140,9 +140,10 @@ The IsAuthenticated is: True
 Is this a Manager? True  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Principal.GenericIdentity>  
- <xref:System.Security.Principal.GenericPrincipal>  
- <xref:System.Security.Permissions.PrincipalPermission>  
- [Principal 개체 바꾸기](../../../docs/standard/security/replacing-a-principal-object.md)  
- [Principal 개체 및 Identity 개체](../../../docs/standard/security/principal-and-identity-objects.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Security.Principal.GenericIdentity>  
+- <xref:System.Security.Principal.GenericPrincipal>  
+- <xref:System.Security.Permissions.PrincipalPermission>  
+- [Principal 개체 바꾸기](../../../docs/standard/security/replacing-a-principal-object.md)  
+- [Principal 개체 및 Identity 개체](../../../docs/standard/security/principal-and-identity-objects.md)

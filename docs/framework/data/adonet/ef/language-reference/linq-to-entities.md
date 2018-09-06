@@ -2,12 +2,12 @@
 title: LINQ to Entities
 ms.date: 03/30/2017
 ms.assetid: 641f9b68-9046-47a1-abb0-1c8eaeda0e2d
-ms.openlocfilehash: 7e04155c3129fd3b70977dd2960ccdc99c194cab
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0a02899ab9dc751cfee1127a092854b81b8360db
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32760780"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44037021"
 ---
 # <a name="linq-to-entities"></a>LINQ to Entities
 LINQ to Entities에서는 개발자가 Visual Basic 또는 Visual C#을 사용하여 Entity Framework 개념적 모델에 대한 쿼리를 작성할 수 있도록 해 주는 LINQ(Language-Integrated Query) 지원을 제공합니다. Entity Framework에 대한 쿼리는 개체 컨텍스트에 대해 실행되는 명령 트리 쿼리로 표현됩니다. LINQ to Entities는 LINQ(Language-Integrated Query) 쿼리를 명령 트리 쿼리로 변환하여 Entity Framework에 대해 실행한 다음 Entity Framework와 LINQ에서 모두 사용할 수 있는 개체를 반환합니다. 다음은 LINQ to Entities 쿼리를 만들고 실행하는 프로세스입니다.  
@@ -30,7 +30,7 @@ LINQ to Entities에서는 개발자가 Visual Basic 또는 Visual C#을 사용�
   
  LINQ to Entities 쿼리는 쿼리 식 구문과 메서드 기반 쿼리 구문이라는 두 가지 구문으로 작성할 수 있습니다. 쿼리 식 구문과 메서드 기반 쿼리 구문은 C# 3.0과 Visual Basic 9.0의 새로운 기능입니다.  
   
- 자세한 내용은 참조 [LINQ to Entities에서에서 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)합니다.  
+ 자세한 내용은 [LINQ to Entities에서에서 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)합니다.  
   
 ## <a name="query-conversion"></a>쿼리 변환  
  LINQ to Entities 쿼리를 Entity Framework에 대해 실행하려면 LINQ 쿼리를 Entity Framework에 대해 실행할 수 있는 명령 트리 표현으로 변환해야 합니다.  
@@ -39,18 +39,18 @@ LINQ to Entities에서는 개발자가 Visual Basic 또는 Visual C#을 사용�
   
  Entity Framework에서는 연산자와 식이 모두 단일 형식 계층 구조로 표현된 다음 명령 트리에 배치됩니다. 명령 트리는 Entity Framework에서 쿼리를 실행하는 데 사용됩니다. LINQ 쿼리를 명령 트리로 표현할 수 없는 경우에는 쿼리를 변환할 때 예외가 throw됩니다. LINQ to Entities 쿼리를 변환하는 데는 표준 쿼리 연산자 변환과 식 변환이라는 두 가지 하위 변환이 수반됩니다.  
   
- 많은 LINQ 표준 쿼리 연산자가 LINQ to Entities에서 올바르게 변환되지 않습니다. 이러한 연산자를 사용하면 쿼리를 변환할 때 예외가 발생합니다. 지원 되는 LINQ to Entities 연산자 목록, 참조 [지원 되 고 지원 되지 않는 LINQ 메서드 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)합니다.  
+ 많은 LINQ 표준 쿼리 연산자가 LINQ to Entities에서 올바르게 변환되지 않습니다. 이러한 연산자를 사용하면 쿼리를 변환할 때 예외가 발생합니다. 지원 되는 LINQ to Entities 연산자 목록을 참조 하세요 [지원 되 및 지원 되지 않는 LINQ 메서드 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)합니다.  
   
- LINQ to Entities에서에서 표준 쿼리 연산자를 사용 하는 방법에 대 한 자세한 내용은 참조 [linq to Entities 쿼리에서 표준 쿼리 연산자](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md)합니다.  
+ 표준 쿼리 연산자를 사용 하 여 LINQ to Entities에에서 대 한 자세한 내용은 참조 하세요. [linq to Entities 쿼리에서 표준 쿼리 연산자](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md)합니다.  
   
- 일반적으로 LINQ to Entities의 식은 서버에서 계산되므로 식의 동작은 CLR 의미 체계를 따르지 않습니다. 자세한 내용은 참조 [LINQ to Entities 쿼리 식](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)합니다.  
+ 일반적으로 LINQ to Entities의 식은 서버에서 계산되므로 식의 동작은 CLR 의미 체계를 따르지 않습니다. 자세한 내용은 [LINQ to Entities 쿼리의 식](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)합니다.  
   
- CLR 메서드 호출이 데이터 원본에 대 한 정식 함수에 매핑되는 방법에 대 한 정보를 참조 하십시오. [정식 함수 매핑을 대 한 CLR 메서드](../../../../../../docs/framework/data/adonet/ef/language-reference/clr-method-to-canonical-function-mapping.md)합니다.  
+ CLR 메서드 호출이 데이터 소스의 정식 함수에 매핑되는 방법에 대 한 내용은 [정식 함수 매핑 CLR 메서드](../../../../../../docs/framework/data/adonet/ef/language-reference/clr-method-to-canonical-function-mapping.md)합니다.  
   
- 정식 호출, 데이터베이스, 하는 방법 및 내에서 사용자 정의 함수에 대 한 내용은 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리 참조 [linq to Entities 쿼리에서 함수 호출](../../../../../../docs/framework/data/adonet/ef/language-reference/calling-functions-in-linq-to-entities-queries.md)합니다.  
+ 정식 호출, 데이터베이스, 방법 및 내에서 사용자 정의 함수에 대 한 자세한 [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 쿼리를 참조 하세요 [linq to Entities 쿼리에서 함수 호출](../../../../../../docs/framework/data/adonet/ef/language-reference/calling-functions-in-linq-to-entities-queries.md)합니다.  
   
 ## <a name="query-execution"></a>쿼리 실행  
- 사용자가 만든 LINQ 쿼리는 Entity Framework와 호환되는 표현(명령 트리 형태)으로 변환된 다음 데이터 소스에 대해 실행됩니다. 쿼리 실행 시 모든 쿼리 식(또는 쿼리의 구성 요소)은 클라이언트나 서버에서 계산됩니다. 이러한 식에는 결과 구체화나 엔터티 프로젝션에 사용되는 식이 포함됩니다. 자세한 내용은 참조 [쿼리 실행](../../../../../../docs/framework/data/adonet/ef/language-reference/query-execution.md)합니다. 쿼리를 한 번 컴파일한 후 차례 실행 하는 여러 다른 매개 변수를 사용 하 여 성능을 향상 하는 방법에 대 한 정보를 참조 하십시오. [컴파일된 쿼리 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)합니다.  
+ 사용자가 만든 LINQ 쿼리는 Entity Framework와 호환되는 표현(명령 트리 형태)으로 변환된 다음 데이터 소스에 대해 실행됩니다. 쿼리 실행 시 모든 쿼리 식(또는 쿼리의 구성 요소)은 클라이언트나 서버에서 계산됩니다. 이러한 식에는 결과 구체화나 엔터티 프로젝션에 사용되는 식이 포함됩니다. 자세한 내용은 [쿼리 실행](../../../../../../docs/framework/data/adonet/ef/language-reference/query-execution.md)합니다. 쿼리를 한 번 컴파일한 후 여러 차례 실행 다른 매개 변수를 사용 하 여 성능을 향상 하는 방법에 대 한 자세한 내용은 [컴파일된 쿼리 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)합니다.  
   
 ## <a name="materialization"></a>구체화  
  구체화는 쿼리 결과를 CLR 형식으로 클라이언트에게 다시 반환하는 프로세스입니다. LINQ to Entities에서는 쿼리 결과 데이터 레코드가 반환되지 않으며 사용자나 Entity Framework에 의해 정의되었거나 컴파일러에 의해 생성된(익명 형식) 기본 CLR 형식이 항상 사용됩니다. 모든 개체 구체화는 Entity Framework에 의해 수행됩니다. Entity Framework와 CLR 간의 매핑 실패로 인해 오류가 발생하면 개체 구체화 동안 예외가 throw됩니다.  
@@ -65,7 +65,7 @@ LINQ to Entities에서는 개발자가 Visual Basic 또는 Visual C#을 사용�
   
 -   익명 형식  
   
- 자세한 내용은 참조 [쿼리 결과](../../../../../../docs/framework/data/adonet/ef/language-reference/query-results.md)합니다.  
+ 자세한 내용은 [쿼리 결과](../../../../../../docs/framework/data/adonet/ef/language-reference/query-results.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [LINQ to Entities에서 쿼리](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)  
@@ -90,6 +90,6 @@ LINQ to Entities에서는 개발자가 Visual Basic 또는 Visual C#을 사용�
   
 ## <a name="see-also"></a>참고 항목  
  [LINQ to Entities에서 알려진 문제 및 고려 사항](../../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)  
- [LINQ(Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ(Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
  [LINQ 및 ADO.NET](../../../../../../docs/framework/data/adonet/linq-and-ado-net.md)  
  [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)

@@ -3,11 +3,11 @@ title: 추적을 사용하여 응용 프로그램 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 8851adde-c3c2-4391-9523-d8eb831490af
 ms.openlocfilehash: f991533b61705c8d0a1a8e71b632dd53f24dd979
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: HT
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43724920"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43879323"
 ---
 # <a name="using-tracking-to-troubleshoot-applications"></a>추적을 사용하여 응용 프로그램 문제 해결
 Windows WF (Workflow Foundation)를 사용 하면 Windows Workflow Foundation 응용 프로그램 또는 서비스의 실행 세부 정보를 제공 하려면 워크플로 관련 정보를 추적할 수 있습니다. Windows Workflow Foundation 호스트는 워크플로 인스턴스를 실행 하는 동안 워크플로 이벤트를 캡처할 수 있습니다. 워크플로에서 오류나 예외가 발생 하면 처리 문제 해결 세부 정보를 추적 하는 Windows Workflow Foundation을 사용할 수 있습니다.  

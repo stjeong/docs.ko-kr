@@ -3,11 +3,11 @@ title: LINQ to DataSet 쿼리 디버깅
 ms.date: 03/30/2017
 ms.assetid: f4c54015-8ce2-4c5c-8d18-7038144cc66d
 ms.openlocfilehash: fd10e6c715529ba937ba09732a254d311158b0f1
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481053"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43892667"
 ---
 # <a name="debugging-linq-to-dataset-queries"></a>LINQ to DataSet 쿼리 디버깅
 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]은 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드 디버깅을 지원합니다. 그러나 몇 가지 디버깅 차이점 가지 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드 및 비-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드를 관리 합니다. 대부분의 디버깅 기능을 사용할 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 문 단계별 실행, 중단점 설정 및 디버거 창에 표시 된 결과 보기를 포함 합니다. 지연된 쿼리 실행에는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드를 디버깅할 때 고려해야 하는 몇 가지 의도하지 않은 결과가 발생할 수 있으며 편집하며 계속하기 사용과 관련된 몇 가지 제한이 있습니다. 이 항목에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]이 아닌 관리 코드와 비교하여 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에 고유한 디버깅 특성에 대해 설명합니다.  

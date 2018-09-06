@@ -6,11 +6,11 @@ helpviewer_keywords:
 - applications [Visual Basic]
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
 ms.openlocfilehash: ecb2c0a09ce92a11a021b45576b5499900b25356
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43748491"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44038726"
 ---
 # <a name="developing-applications-with-visual-basic"></a>Visual Basic을 사용한 응용 프로그램 개발
 이 단원은 Visual Basic 언어에 대한 개념 설명서를 포함합니다.  

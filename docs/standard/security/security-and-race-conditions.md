@@ -13,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fdfc4d9e9ba3653bd1a762767e3c39a4f62e587a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3e613ad4823254a6bed43cb95294e6b8d3674b6d
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582137"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43881751"
 ---
 # <a name="security-and-race-conditions"></a>보안 및 경합 상태
-중요 한 보안 허점 경합 상태에 의해 악용 가능성이 시킵니다. 여러 가지 방법으로이 발생할 수 있습니다. 다음에 나오는 하위 개발자 피해 야 하는 주요 문제 중 일부를 간략하게 설명 합니다.  
+다른 문제 영역을 보안 허점을 경합 상태에 의해 악용 가능성이 있습니다. 여러 가지 방법으로이 발생할 수 있습니다. 다음에 나오는 하위 항목은 개발자가 피해 야 하는 주요 문제 중 일부를 간략하게 설명 합니다.  
   
-## <a name="race-conditions-in-the-dispose-method"></a>Dispose 메서드에서 경합 상태  
- 클래스의 경우 **Dispose** 메서드 (자세한 내용은 참조 [가비지 수집](../../../docs/standard/garbage-collection/index.md))은 동기화 되지 않을 수도 있기 내부 정리 코드 **Dispose** 실행 될 수 있습니다 이상 한 번, 다음 예제와 같이 합니다.  
+## <a name="race-conditions-in-the-dispose-method"></a>Dispose 메서드에서 경합  
+ 클래스의 경우 **Dispose** 메서드 (자세한 내용은 참조 하세요. [가비지 수집](../../../docs/standard/garbage-collection/index.md))은 동기화 되지 않은 것 같습니다 내부 정리 코드 **Dispose** 실행할 수 있습니다 둘 다음 예제에서와 같이 번입니다.  
   
 ```vb  
 Sub Dispose()  
@@ -46,13 +46,13 @@ void Dispose()
 }  
 ```  
   
- 때문에이 **Dispose** 구현은 동기화 되지 않으면는 `Cleanup` 첫 번째 스레드 및 하기 전에 두 번째 스레드가 호출 될 `_myObj` 로 설정 된 **null**합니다. 수행 되는 작업에 따라 달라 집니다이 보안 문제 인지 때는 `Cleanup` 코드를 실행 합니다. 와 동기화 되지 않은 중요 한 문제 **Dispose** 구현 파일 같은 리소스 핸들의 사용이 포함 됩니다. 메서드를 잘못 하면 잘못 된 핸들이 사용할 수 있으며이 보안 취약점으로 인해 발생할 수 있습니다.  
+ 때문에이 **Dispose** 구현은 동기화 되지 않은, 있기 `Cleanup` 첫 번째 스레드 및 하기 전에 두 번째 스레드가 호출 될 `_myObj` 로 설정 되어 **null**합니다. 이 보안 문제 인지에 따라 달라 집니다 때는 `Cleanup` 코드를 실행 합니다. 동기화 되지 않은 사용 하 여 중요 한 문제가 **Dispose** 구현 파일과 같은 리소스 핸들의 사용이 포함 됩니다. 메서드를 잘못 사용 될 보안 문제를 일으키는 핸들을 잘못 발생할 수 있습니다.  
   
-## <a name="race-conditions-in-constructors"></a>생성자의 경합 상태  
- 일부 응용 프로그램에서 다른 스레드를 클래스 생성자가 완전히 실행 하기 전에 클래스 멤버에 액세스할 수 있습니다. 이 발생 하거나 필요한 경우 스레드를 동기화 해야 하는 경우 보안 문제가 없는지를 확인 하기 위해 모든 클래스 생성자를 검토 해야 합니다.  
+## <a name="race-conditions-in-constructors"></a>생성자에서 경합 상태  
+ 일부 응용 프로그램에서는 다른 스레드가 해당 클래스 생성자가 완전히 실행 하려면 먼저 클래스 멤버에 액세스할 수 있습니다. 이 발생 하거나 필요한 경우에 스레드를 동기화 해야 하는 경우 보안 문제가 발생 하지는 되도록 모든 클래스 생성자를 검토 해야 합니다.  
   
-## <a name="race-conditions-with-cached-objects"></a>캐시 된 개체와 경합 상태  
- 보안 정보를 캐시 하거나 코드 액세스 보안을 사용 하는 코드 [Assert](../../../docs/framework/misc/using-the-assert-method.md) 작업이 노출 될 수 있습니다 경합 상태에는 클래스의 다른 부분 적절 하 게 동기화 되지 않은 경우 다음 예제와 같이 합니다.  
+## <a name="race-conditions-with-cached-objects"></a>캐시 된 개체를 사용 하 여 경합  
+ 보안 정보를 캐시 하거나 코드 액세스 보안을 사용 하는 코드 [Assert](../../../docs/framework/misc/using-the-assert-method.md) 작업 노출 될 수 있습니다 경합 클래스의 다른 부분을 적절 하 게 동기화 되지 않은 경우 다음 예와에서 같이 합니다.  
   
 ```vb  
 Sub SomeSecureFunction()  
@@ -97,12 +97,13 @@ void DoOtherWork()
 }  
 ```  
   
- 다른 경로가 있으면 `DoOtherWork` 같은 개체와 다른 스레드에서 호출할 수 있는, 요청을 지 나 신뢰할 수 없는 호출자 지연 될 수 있습니다.  
+ 다른 경로가 없으면 `DoOtherWork` 동일한 개체를 사용 하 여 다른 스레드에서 호출 될 수 있는, 신뢰할 수 없는 호출자를 빠져나갈 수 있습니다.  
   
- 코드 보안 정보를 캐시 하는 경우이 취약점에 대 한 검토 해야 합니다.  
+ 코드 보안 정보를 캐시 하는 경우이 취약성에 대 한 검토 해야 합니다.  
   
-## <a name="race-conditions-in-finalizers"></a>종료자의 경합 상태  
- 경합 상태 종료자에서 해제 하는 정적 또는 관리 되지 않는 리소스를 참조 하는 개체에도 발생할 수 있습니다. 여러 개체 클래스의 종료자에서 조작 되는 리소스를 공유 하는 경우 개체에 해당 리소스에 대 한 모든 액세스를 동기화 해야 합니다.  
+## <a name="race-conditions-in-finalizers"></a>종료자에서 경합 상태  
+ 해당 종료자에서 해제 되는 정적 또는 관리 되지 않는 리소스를 참조 하는 개체에 경합 상태가 발생할 수 있습니다. 여러 개체 클래스의 종료자에서 조작 되는 리소스를 공유 하는 경우 개체는 해당 리소스에 대 한 모든 액세스를 동기화 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)
+## <a name="see-also"></a>참고자료
+
+- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)

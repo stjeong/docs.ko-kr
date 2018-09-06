@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c323687e-b196-487b-beba-f38f9b3f961b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 94391471fecd92aeadec4da39cdd5b6f80bb6949
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bfcd912fc16aa8d4b89a4f455d65b0294593cead
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581166"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43886528"
 ---
 # <a name="replacing-a-principal-object"></a>Principal 개체 바꾸기
-인증 서비스를 제공하는 응용 프로그램은 지정된 스레드에 대해 **Principal** 개체(<xref:System.Security.Principal.IPrincipal>)를 대체할 수 있어야 합니다. 또한 보안 시스템은 **Principal** 개체를 대체하는 기능을 보호할 수 있어야 합니다. 악의적으로 연결된 잘못된 **Principal** 은 허위 ID 또는 역할을 요청함으로써 응용 프로그램의 보안을 손상시킵니다. 따라서 응용 프로그램 할 수 있는 대체 하는 기능 **주** 부여 해야 하는 개체는 <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType> 주 컨트롤에 대 한 개체입니다. (이 사용 권한은 역할을 기반으로 하는 보안 검사를 수행하거나 **Principal** 개체를 만들 때는 필요하지 않습니다.)  
+인증 서비스를 제공하는 응용 프로그램은 지정된 스레드에 대해 **Principal** 개체(<xref:System.Security.Principal.IPrincipal>)를 대체할 수 있어야 합니다. 또한 보안 시스템은 **Principal** 개체를 대체하는 기능을 보호할 수 있어야 합니다. 악의적으로 연결된 잘못된 **Principal** 은 허위 ID 또는 역할을 요청함으로써 응용 프로그램의 보안을 손상시킵니다. 따라서 있는 필요한 응용 프로그램 대체 하는 기능 **주체** 개체를 부여 해야 합니다는 <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType> 보안 주체 컨트롤에 대 한 개체입니다. (이 사용 권한은 역할을 기반으로 하는 보안 검사를 수행하거나 **Principal** 개체를 만들 때는 필요하지 않습니다.)  
   
  현재 **Principal** 개체는 다음과 같은 작업을 수행하여 대체할 수 있습니다.  
   
@@ -34,6 +34,7 @@ ms.locfileid: "33581166"
  [!code-csharp[SetCurrentPrincipal#1](../../../samples/snippets/csharp/VS_Snippets_CLR/SetCurrentPrincipal/CS/program.cs#1)]
  [!code-vb[SetCurrentPrincipal#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/SetCurrentPrincipal/VB/program.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>  
- [Principal 개체 및 Identity 개체](../../../docs/standard/security/principal-and-identity-objects.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>  
+- [Principal 개체 및 Identity 개체](../../../docs/standard/security/principal-and-identity-objects.md)

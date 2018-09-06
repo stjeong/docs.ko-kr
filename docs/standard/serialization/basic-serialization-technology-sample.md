@@ -2,12 +2,12 @@
 title: Basic Serialization 기술 샘플
 ms.date: 03/30/2017
 ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
-ms.openlocfilehash: 81accbd39990c1c0233a9c7bc6d67400f17c5865
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 474eb8ded01a72182533a6d49397d7567447d64e
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33590870"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44039516"
 ---
 # <a name="basic-serialization-technology-sample"></a>Basic Serialization 기술 샘플
 [샘플 다운로드](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/Basic.zip.exe)  
@@ -78,21 +78,22 @@ ms.locfileid: "33590870"
   
     -   연결된 목록을 serialize 및 deserialize하기 위해 <xref:System.IO.FileStream>이 사용됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO>  
- <xref:System.IO.File>  
- <xref:System.IO.FileStream>  
- <xref:System.IO.Stream>  
- <xref:System.Random>  
- <xref:System.Runtime.Serialization>  
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>  
- <xref:System.Runtime.Serialization.IFormatter>  
- <xref:System.SerializableAttribute>  
- <xref:System.Xml.Serialization>  
- [기본 serialization](../../../docs/standard/serialization/basic-serialization.md)  
- [이진 serialization](../../../docs/standard/serialization/binary-serialization.md)  
- [특성을 사용하여 XML serialization 제어](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
- [XML serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [serialization](../../../docs/standard/serialization/index.md)  
- [XML 및 SOAP serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.IO>  
+- <xref:System.IO.File>  
+- <xref:System.IO.FileStream>  
+- <xref:System.IO.Stream>  
+- <xref:System.Random>  
+- <xref:System.Runtime.Serialization>  
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>  
+- <xref:System.Runtime.Serialization.IFormatter>  
+- <xref:System.SerializableAttribute>  
+- <xref:System.Xml.Serialization>  
+- [기본 serialization](../../../docs/standard/serialization/basic-serialization.md)  
+- [이진 serialization](../../../docs/standard/serialization/binary-serialization.md)  
+- [특성을 사용하여 XML serialization 제어](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
+- [XML serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [serialization](../../../docs/standard/serialization/index.md)  
+- [XML 및 SOAP serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)

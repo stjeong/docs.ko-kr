@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML serialization, SOAP
 - serialization, SOAP
 ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
-ms.openlocfilehash: 20cd4488062095f7b10cc62943a67b434caa2b5f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cdfa2c8c7a27806873217495ac09f7f20e82b6bc
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581305"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43891397"
 ---
 # <a name="how-to-serialize-an-object-as-a-soap-encoded-xml-stream"></a>방법: 개체를 SOAP 인코딩된 XML 스트림으로 Serialize
   
@@ -70,10 +70,11 @@ XmlTypeMapping myTypeMapping =
 XmlSerializer mySerializer = new XmlSerializer(myTypeMapping);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XML 및 SOAP serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
- [인코딩된 SOAP serialization을 제어하는 특성](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
- [XML Web Services의 XML serialization](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
- [방법: 개체 직렬화](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [방법: 개체 deserialize](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
- [방법: 인코딩된 SOAP XML serialization 재정의](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)
+## <a name="see-also"></a>참고자료
+
+- [XML 및 SOAP serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+- [인코딩된 SOAP serialization을 제어하는 특성](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
+- [XML Web Services의 XML serialization](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
+- [방법: 개체 직렬화](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [방법: 개체 deserialize](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
+- [방법: 인코딩된 SOAP XML serialization 재정의](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)

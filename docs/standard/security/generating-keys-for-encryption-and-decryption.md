@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cb506ee4e9dde8fcc58e92dfcecd9b896a78401e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 839a04d8a06e782582705cf0d9ad92d2e2df6af6
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33587614"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44036092"
 ---
 # <a name="generating-keys-for-encryption-and-decryption"></a>암호화 및 해독용 키 생성
 키 만들기 및 관리는 암호화 프로세스의 중요한 부분입니다. 대칭 알고리즘을 사용할 때는 키와 IV(Initialization Vector)를 만들어야 합니다. 키는 데이터를 암호 해독해서는 안 되는 사람이 알 수 없도록 해야 합니다. IV는 기밀이어야 할 필요는 없지만 각 세션에서 변경되어야 합니다. 비대칭 알고리즘에서는 공개 키와 개인 키를 만들어야 합니다. 공개 키는 모든 사용자에게 공개될 수 있는 반면, 개인 키는 공개 키로 암호화된 데이터를 암호 해독하는 당사자만 알고 있어야 합니다. 이 섹션에서는 대칭 및 비대칭 알고리즘에 대한 키를 생성 및 관리하는 방법을 설명합니다.  
@@ -88,8 +88,9 @@ RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
 RSAParameters RSAKeyInfo = RSA.ExportParameters(false);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 암호화](../../../docs/standard/security/encrypting-data.md)  
- [데이터 해독](../../../docs/standard/security/decrypting-data.md)  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- [방법: 키 컨테이너에 비대칭 키 저장](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)
+## <a name="see-also"></a>참고자료
+
+- [데이터 암호화](../../../docs/standard/security/encrypting-data.md)  
+- [데이터 해독](../../../docs/standard/security/decrypting-data.md)  
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
+- [방법: 키 컨테이너에 비대칭 키 저장](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)

@@ -3,11 +3,11 @@ title: 범위 샘플을 사용한 검색
 ms.date: 03/30/2017
 ms.assetid: 6a37a754-6b8c-4ebe-bdf2-d4f0520271d5
 ms.openlocfilehash: d9adc33d73642a42a8ba948b3c5bf75bd4bc1f5c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43733780"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43877494"
 ---
 # <a name="discovery-with-scopes-sample"></a>범위 샘플을 사용한 검색
 이 샘플에서는 범위를 사용하여 검색 가능한 엔드포인트를 분류하는 방법과 <xref:System.ServiceModel.Discovery.DiscoveryClient>를 사용하여 엔드포인트에 대한 비동기 검색을 수행하는 방법을 보여 줍니다. 이 샘플의 서비스에서는 엔드포인트 검색 동작을 추가하고 이를 사용하여 엔드포인트에 범위를 추가하고 엔드포인트의 검색 기능을 제어하여 각 엔드포인트에 대한 검색을 사용자 지정하는 방법을 보여 줍니다. 이 샘플의 클라이언트에서는 <xref:System.ServiceModel.Discovery.DiscoveryClient>를 만들고 <xref:System.ServiceModel.Discovery.FindCriteria>에 범위를 추가하는 방식으로 검색 매개 변수를 세부적으로 조정하여 범위를 포함하는 방법을 보여 줍니다. 이 샘플에서는 클라이언트가 종료 조건을 추가하여 응답을 제한하는 방법도 보여 줍니다.  

@@ -3,11 +3,11 @@ title: CancellationScope 사용
 ms.date: 03/30/2017
 ms.assetid: 39c5c338-b316-43d6-b7fe-a543281dd1ec
 ms.openlocfilehash: 82d44fff869f207c09dc7685fc3470630e001a59
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
-ms.translationtype: HT
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "43854985"
+ms.locfileid: "44035767"
 ---
 # <a name="using-cancellationscope"></a>CancellationScope 사용
 이 샘플에서는 <xref:System.Activities.Statements.CancellationScope> 활동을 사용하여 응용 프로그램에서 작업을 취소하는 방법을 보여 줍니다.  

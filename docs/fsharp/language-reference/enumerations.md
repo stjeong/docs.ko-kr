@@ -2,17 +2,16 @@
 title: 열거형(F#)
 description: 'F # 열거형 리터럴 대신 더 읽기 쉽고 코드를 쉽게 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: b51df53caf2e193496cb3694c913cbae08f7eaf5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 47fb353c2698f8b1474834ebbd1b0eff2c7f76e7
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518839"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43891644"
 ---
 # <a name="enumerations"></a>열거형
 
 *열거형*이 라고도 *열거형*,는 정수 계열 형식 값의 하위 집합에 레이블 할당 되는 위치입니다. 코드를 더 읽기 쉽고 유지 가능하도록 만들기 위해 리터럴 대신 이를 사용할 수 있습니다.
-
 
 ## <a name="syntax"></a>구문
 
@@ -24,6 +23,7 @@ type enum-name =
 ```
 
 ## <a name="remarks"></a>설명
+
 열거형 유사한 간단한 값이 있는 구별된 된 공용 구조체는 값을 지정할 수 있습니다. 값은 일반적으로 0 또는 1부터 시작 하는 정수 또는 비트 위치를 나타내는 정수입니다. 열거형은 비트 위치를 나타내는 데, 하는 경우 사용 해야 합니다 [플래그](xref:System.FlagsAttribute) 특성입니다.
 
 열거형의 내부 형식, 예를 들어 하면 사용할 수 있도록 리터럴 접미사를 사용 하 여 같은 사용 되는 리터럴을 기준으로 결정 됩니다 `1u`, `2u`등, 부호 없는 정수 (`uint32`) 형식입니다.
@@ -49,8 +49,8 @@ type enum-name =
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2104.fs)]
 
 또한으로 항상 내보내지는 열거형에 대 한 사례 `public`합니다. 이 C# 및.NET 플랫폼의 rest를 사용 하 여 정렬 됩니다.
-    
-## <a name="see-also"></a>참고 항목
-[F# 언어 참조](index.md)
 
-[캐스팅 및 변환](casting-and-conversions.md)
+## <a name="see-also"></a>참고자료
+
+- [F# 언어 참조](index.md)
+- [캐스팅 및 변환](casting-and-conversions.md)

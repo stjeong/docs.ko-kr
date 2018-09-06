@@ -3,11 +3,11 @@ title: '값 옵션 (F #)'
 description: '옵션 종류의 구조체 버전인는 F # 값 옵션 형식에 대해 알아봅니다.'
 ms.date: 06/16/2018
 ms.openlocfilehash: 5647ef61725401b10a6045b14eef11f5b041e3e9
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43747502"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041212"
 ---
 # <a name="value-options"></a>값 옵션
 

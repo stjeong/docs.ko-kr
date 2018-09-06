@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ced7ed2cb8d3ae3bb24211c6e7dafd1744fb9559
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d74ce08197ac76a601202da8e35ca6f619207076
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33587458"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43885749"
 ---
 # <a name="net-framework-cryptography-model"></a>.NET Framework 암호화 모델
 .NET Framework에서는 많은 표준 암호화 알고리즘의 구현을 제공합니다. 이러한 알고리즘은 사용하기 쉽고 가능한 가장 안전한 기본 속성을 포함합니다. 또한 개체 상속, 스트림 디자인 및 구성의 .NET Framework 암호화 모델은 크게 확장할 수 있습니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "33587458"
  공용 언어 런타임은 대칭 알고리즘 및 해시 알고리즘을 구현하기 위한 스트림 지향 디자인을 사용합니다. 이 디자인의 핵심은 <xref:System.Security.Cryptography.CryptoStream> 클래스로, <xref:System.IO.Stream> 클래스에서 파생됩니다. 스트림 기반 암호화 개체는 개체의 데이터 전송 부분을 처리하는 하나의 표준 인터페이스(`CryptoStream`)를 지원합니다. 모든 개체가 표준 인터페이스를 기반으로 하기 때문에 여러 개체를 함께 연결할 수 있으며(예: 해시 개체 및 암호화 개체를 순서대로 연결), 중간 저장소 없이 데이터에 대해 여러 작업을 수행할 수 있습니다. 또한 스트리밍 모델을 사용하면 더 작은 개체에서 개체를 빌드할 수 있습니다. 예를 들어 스트림 개체 집합에서 이 개체를 빌드할 수도 있지만 결합된 암호화 및 해시 알고리즘을 단일 스트림 개체로 볼 수 있습니다.  
   
 ## <a name="cryptographic-configuration"></a>암호화 구성  
- 암호화 구성을 사용하면 알고리즘의 특정 구현을 알고리즘 이름으로 확인하여 .NET Framework 암호화 클래스를 확장할 수 있습니다. 알고리즘의 고유한 하드웨어 또는 소프트웨어 구현을 추가하고 선택한 알고리즘 이름에 해당 구현을 매핑할 수 있습니다. 구성 파일에 알고리즘이 지정되지 않은 경우 기본 설정이 사용됩니다. 암호화 구성에 대 한 자세한 내용은 참조 [암호화 클래스 구성](../../../docs/framework/configure-apps/configure-cryptography-classes.md)합니다.  
+ 암호화 구성을 사용하면 알고리즘의 특정 구현을 알고리즘 이름으로 확인하여 .NET Framework 암호화 클래스를 확장할 수 있습니다. 알고리즘의 고유한 하드웨어 또는 소프트웨어 구현을 추가하고 선택한 알고리즘 이름에 해당 구현을 매핑할 수 있습니다. 구성 파일에 알고리즘이 지정되지 않은 경우 기본 설정이 사용됩니다. 암호화 구성에 대 한 자세한 내용은 참조 하세요. [암호화 클래스 구성](../../../docs/framework/configure-apps/configure-cryptography-classes.md)합니다.  
   
 ## <a name="choosing-an-algorithm"></a>알고리즘 선택  
  데이터 무결성, 데이터 프라이버시 또는 키 생성과 같은 다양한 이유로 알고리즘을 선택할 수 있습니다. 대칭 및 해시 알고리즘은 무결성(변경 차단) 또는 프라이버시(보기 차단)를 위해 데이터를 보호하는 데 사용됩니다. 해시 알고리즘은 주로 데이터 무결성을 위해 사용됩니다.  
@@ -87,6 +87,6 @@ ms.locfileid: "33587458"
   
     -   <xref:System.Security.Cryptography.Rfc2898DeriveBytes>  
   
-## <a name="see-also"></a>참고 항목  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- 
+## <a name="see-also"></a>참고자료
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  

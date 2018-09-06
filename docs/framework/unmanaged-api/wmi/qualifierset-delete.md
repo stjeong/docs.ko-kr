@@ -17,14 +17,14 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 7ca4cc9fb65d1a4bd8713f969bbda5551ce5a2e2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43466506"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43881800"
 ---
 # <a name="qualifiersetdelete-function"></a>QualifierSet_Delete 함수
-이름으로 지정된 된 한정자를 삭제합니다.  
+지정된 한정자를 이름으로 삭제합니다.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

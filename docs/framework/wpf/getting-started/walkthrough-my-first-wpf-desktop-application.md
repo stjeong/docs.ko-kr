@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 38f6e16616ad931641539d3ae164381ddd9ad941
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: a8f806a1f1f7840f21e82d77d1b639b9318259e7
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931727"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43885183"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 
@@ -38,7 +38,7 @@ ms.locfileid: "42931727"
 연습의 끝에서 독립 실행형 Windows 응용 프로그램 사용자가 선택한 사용자에 대 한 경비 보고서를 볼 수 있도록 작성 됩니다. 응용 프로그램은 브라우저 스타일 창에서 호스트 되는 여러 WPF 페이지로 구성 됩니다.
 
 > [!TIP]
-> 이 연습을 빌드하는 데 사용 하는 샘플 코드는 Visual Basic 및 C#에서 사용할 수 있습니다 [WPF 응용 프로그램 빌드 소개](http://go.microsoft.com/fwlink/?LinkID=160008)합니다.
+> 이 연습을 빌드하는 데 사용 하는 샘플 코드는 Visual Basic 및 C#에서 사용할 수 있습니다 [WPF 응용 프로그램 빌드 소개](https://go.microsoft.com/fwlink/?LinkID=160008)합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -326,7 +326,7 @@ Visual Studio의 최신 버전을 설치 하는 방법에 대 한 자세한 내�
 
 1. 오픈 *`ExpenseItHome.xaml`* 합니다.
 
-2. 추가 된 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를는 <xref:System.Windows.Controls.Button> 요소입니다. 자세한 내용은 [방법: 간단한 이벤트 처리기를 만들고](http://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480)합니다.
+2. 추가 된 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를는 <xref:System.Windows.Controls.Button> 요소입니다. 자세한 내용은 [방법: 간단한 이벤트 처리기를 만들고](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480)합니다.
 
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]
 
@@ -464,7 +464,7 @@ Visual Studio의 최신 버전을 설치 하는 방법에 대 한 자세한 내�
 
     [!code-xaml[ExpenseIt#30](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#30)]
 
-4. 에 템플릿을 적용 합니다 <xref:System.Windows.Controls.DataGrid> 비용을 표시 하는 열 데이터를 보고 합니다.
+4. 대체는 <xref:System.Windows.Controls.DataGridTextColumn> 요소 <xref:System.Windows.Controls.DataGridTemplateColumn> 아래에서 <xref:System.Windows.Controls.DataGrid> 요소에 템플릿을 적용 합니다.
 
     [!code-xaml[ExpenseIt#32](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#32)]
 

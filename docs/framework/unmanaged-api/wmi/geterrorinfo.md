@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5f25777402fa31e72cbbf36f58a6c4cc65542979
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43660985"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44039477"
 ---
 # <a name="geterrorinfo-function"></a>GetErrorInfo 함수
 이전 함수 호출에서 오류 정보를 검색합니다.  

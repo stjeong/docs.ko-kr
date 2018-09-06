@@ -3,11 +3,11 @@ title: 시퀀스(F#)
 description: '대규모 데이터의 컬렉션을 정렬 있지만 모든 요소를 사용 하 여 반드시 않을 때 F # 시퀀스를 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: cfe8d1e350a8ac46b7700c12aa84d250f8b35855
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776450"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44036511"
 ---
 # <a name="sequences"></a>시퀀스
 

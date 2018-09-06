@@ -3,11 +3,11 @@ title: 폼 게시
 ms.date: 03/30/2017
 ms.assetid: fa6f84f9-2e07-4e3c-92d0-a245308b7dff
 ms.openlocfilehash: 9115b9abfa7039bf409bb9bbce54e5012d05a074
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745465"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43890830"
 ---
 # <a name="form-post"></a>폼 게시
 이 샘플에서는 WCF REST 프로그래밍 모델을 확장하여 들어오는 요청의 새로운 형식을 지원하는 방법을 보여 줍니다. 이 샘플에는 HTML 폼 게시의 요청을 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 형식으로 deserialize할 수 있는 포맷터의 구현도 포함되어 있습니다. 또한 이 샘플에서는 T4 템플릿을 사용하여 사용자가 다시 WCF REST 서비스에 게시할 수 있는 HTML 폼을 제공하는 HTML 페이지를 반환합니다.  

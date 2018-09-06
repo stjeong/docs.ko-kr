@@ -2,12 +2,12 @@
 title: 활성 패턴(F#)
 description: '활성 패턴을 사용 하 여 F # 프로그래밍 언어의 입력된 데이터를 분할 하는 명명 된 파티션을 정의 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 964ae8eb6db0191fab1e5a816e29bd0819605f2c
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 4fb7d3e2b9c7e6f1c1ed9d64a47728c7f40017c8
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43786500"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43881878"
 ---
 # <a name="active-patterns"></a>활성 패턴
 
@@ -44,7 +44,7 @@ let (|identifier|_|) [ arguments ] = expression
 
 활성 패턴의 또 다른 용도 동일한 기본 데이터의 여러 가지 가능한 표현 사이 있을 때와 같은 여러 가지 방법으로 데이터 형식을 분해 하는 것입니다. 예를 들어, 한 `Color` 는 RGB 표현 또는 HSB 표현으로 개체를 분해할 수 없습니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5003.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5003.fs)]
 
 위 프로그램의 출력은 다음과 같습니다.
 
@@ -72,9 +72,9 @@ BlanchedAlmond
 
 ## <a name="partial-active-patterns"></a>부분 활성 패턴
 
-때로는 일부만 입력 공간 분할 해야 합니다. 이런 경우는 일부 입력와 일치 하지만 다른 입력에 맞게 실패 부분 패턴 집합을 작성 합니다. 값을 생성 하지 않을 수 있는 활성 패턴 이라고 *부분 활성 패턴*; 옵션 형식으로 반환 값을 갖습니다. 부분 활성 패턴을 정의 하려면 바나나 클립 내 패턴의 목록 끝에 와일드 카드 문자 (_)를 사용 합니다. 다음 코드 부분 활성 패턴의 사용을 보여 줍니다.
+때로는 일부만 입력 공간 분할 해야 합니다. 이런 경우는 일부 입력와 일치 하지만 다른 입력에 맞게 실패 부분 패턴 집합을 작성 합니다. 값을 생성 하지 않을 수 있는 활성 패턴 이라고 *부분 활성 패턴*; 옵션 형식으로 반환 값을 갖습니다. 와일드 카드 문자를 사용 하면 부분 활성 패턴을 정의 하려면 (\_) 바나나 클립 내 패턴의 목록 끝에 있습니다. 다음 코드 부분 활성 패턴의 사용을 보여 줍니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5004.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5004.fs)]
 
 이전 예제의 출력은 아래와 같습니다.
 
@@ -88,7 +88,7 @@ Something else : Not matched.
 
 부분 활성 패턴을 사용 하는 경우 때때로 개별 선택 비연속 또는 함께 사용할 수 없습니다 있지만 될 필요 합니다. 다음 예제에서 패턴 사각형 및 패턴 큐브는 아닙니다이 일부 숫자 사각형 및 64와 같은 큐브. 다음 프로그램은 모든 정수 사각형 및 큐브는 1000000를 출력 합니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5005.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5005.fs)]
 
 출력은 다음과 같습니다.
 
@@ -109,7 +109,7 @@ Something else : Not matched.
 
 활성 패턴은 항상 일치 하는 항목에 대 한 하나 이상의 인수를 사용 하지만 경우 이름 인수를 추가로 걸릴 수 있습니다 *매개 변수가 있는 활성 패턴* 적용 됩니다. 추가 인수는 특수화 되어야 하는 일반적인 패턴을 허용 합니다. 종종 문자열을 구문 분석할 정규식을 사용 하는 활성 패턴 또한 부분 활성 패턴을 사용 하는 다음 코드와 같이 추가 매개 변수로 정규식을 포함 하는 예를 들어 `Integer` 이전 코드 예제에서 정의 합니다. 이 예제에서는 다양 한 날짜 형식에 대 한 정규식을 사용 하는 문자열은 일반 ParseRegex 활성 패턴에 맞게 제공 됩니다. 정수 활성 패턴 일치 하는 문자열을 DateTime 생성자에 전달할 수 있는 정수로 변환 됩니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5006.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5006.fs)]
 
 이전 코드의 출력은 다음과 같습니다.
 
@@ -119,7 +119,7 @@ Something else : Not matched.
 
 활성 패턴 패턴 일치 식에만 제한 되지 않습니다., let 바인딩에서 사용할 수 있습니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5007.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5007.fs)]
 
 이전 코드의 출력은 다음과 같습니다.
 
