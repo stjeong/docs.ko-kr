@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 96cec467-e963-4132-b18b-7d0b3a2e979f
 author: BrucePerlerMS
 manager: mbaldwin
-ms.openlocfilehash: 78bf58b6d1b9059d2513b9f81eb382487bb4004b
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 7dfe18a55d8c7f56db1906cb2aa982ab043841c7
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42998468"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43875589"
 ---
 # <a name="wstrustchannelfactory-and-wstrustchannel"></a>WSTrustChannelFactory 및 WSTrustChannel
 WCF(Windows Communication Foundation)에 알고 있다면 WCF 클라이언트가 이미 페더레이션을 인식한다는 것을 알고 있습니다. <xref:System.ServiceModel.WSFederationHttpBinding> 또는 유사한 사용자 지정 바인딩을 사용하여 WCF 클라이언트를 구성하면 서비스에 페더레이션된 인증을 사용하도록 설정할 수 있습니다.  
@@ -24,7 +24,7 @@ WCF(Windows Communication Foundation)에 알고 있다면 WCF 클라이언트가
   
 -   WCF 클라이언트의 WIF가 STS에 대한 RST에 ActAs 또는 OnBehalfOf 요소를 삽입할 수 있도록 허용  
   
--   WIF를 단독으로 사용하여 STS에서 토큰을 가져온 다음 WCF 클라이언트가 이 토큰으로 인증할 수 있도록 설정 자세한 내용은 [ClaimsAwareWebService](http://go.microsoft.com/fwlink/?LinkID=248406) 샘플을 참조하세요.  
+-   WIF를 단독으로 사용하여 STS에서 토큰을 가져온 다음 WCF 클라이언트가 이 토큰으로 인증할 수 있도록 설정 자세한 내용은 [ClaimsAwareWebService](https://go.microsoft.com/fwlink/?LinkID=248406) 샘플을 참조하세요.  
   
  첫 번째 시나리오는 특별한 설명이 필요 없습니다. 기존 WCF 클라이언트는 계속해서 WIF 신뢰 당사자 및 STS로 작동합니다. 이 항목에서는 나머지 두 시나리오에 대해 설명합니다.  
   
@@ -44,7 +44,7 @@ WCF(Windows Communication Foundation)에 알고 있다면 WCF 클라이언트가
 >  OnBehalfOf 기능은 원래 클라이언트의 ID만 중요한 시나리오에서 사용되며, 실제로 Windows에서 사용할 수 있는 ID 가장 기능과 동일합니다. OnBehalfOf를 사용하는 경우 발급된 토큰의 최종 수신자는 원래 클라이언트에 대한 클레임만 볼 수 있으며, 매개 지점에 대한 정보는 유지되지 않습니다. OnBehalfOf 기능이 사용되는 한 가지 일반적인 패턴은 클라이언트가 STS에 직접 액세스할 수 없고 프록시 게이트웨이를 통해 통신하는 프록시 패턴입니다. 프록시 게이트웨이는 호출자를 인증하고 호출자에 대한 정보를 RST 메시지의 OnBehalfOf 요소에 넣은 다음 처리를 위해 실제 STS로 보냅니다. 결과 토큰에는 프록시의 클라이언트와 관련된 클레임만 포함되어 프록시를 발급된 토큰의 수신자에 완전히 투명하게 만듭니다. WIF는 \<wsse:SecurityTokenReference> 또는 \<wsa:EndpointReferences>를 \<wst:OnBehalfOf>의 자식으로 지원하지 않습니다. WS-Trust 사양에서는 프록시가 대신 작동하는 원래 요청자를 식별하는 세 가지 방법을 허용합니다. 이러한 항목은 다음과 같습니다.  
 >   
 >  -   보안 토큰 참조. 메시지에 포함되어 있거나 대역 외에서 검색될 수 있는 토큰에 대한 참조입니다.  
-> -   끝점 참조. 대역 외에서 다시 데이터를 조회하는 키로 사용됩니다.  
+> -   엔드포인트 참조. 대역 외에서 다시 데이터를 조회하는 키로 사용됩니다.  
 > -   보안 토큰. 원래 요청자를 직접 식별합니다.  
 >   
 >  WIF는 암호화되었거나 암호화되지 않은 보안 토큰만 \<wst:OnBehalfOf>의 직계 자식 요소로 지원합니다.  

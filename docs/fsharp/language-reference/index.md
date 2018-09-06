@@ -2,22 +2,20 @@
 title: F# 언어 참조
 description: '언어 토큰, 개념, 형식, 식 및 컴파일러 지원 구문 항목에 대 한이 참조에서 F # 언어 기능 정보를 찾아보십시오.'
 ms.date: 05/16/2016
-ms.openlocfilehash: e0f0b54ab95e634538fc8511a18aac9d8ee00f26
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: adce37ee393673b7611ad24f385c8b8106f6ce86
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37937087"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43873252"
 ---
 # <a name="f-language-reference"></a>F# 언어 참조
 
 이 섹션은 F # 언어에서.NET을 대상으로 하는 다중 패러다임 프로그래밍 언어에 대 한 참조입니다. F# 언어는 함수형, 개체 지향 그리고 명령형의 프로그래밍 모델을 지원합니다.
 
-
 ## <a name="f-tokens"></a>F# 토큰
+
 다음 표에서는 F#의 키워드, 기호 및 토큰으로 사용되는 리터럴의 테이블을 제공하는 참조 항목을 보여 줍니다.
-
-
 
 |제목|설명|
 |-----|-----------|
@@ -26,9 +24,8 @@ ms.locfileid: "37937087"
 |[리터럴](literals.md)|F#의 리터럴 값 구문 그리고 F# 리터럴에 대한 형식 정보를 지정하는 방법에 대해 설명합니다.|
 
 ## <a name="f-language-concepts"></a>F# 언어 개념
+
 다음 표에서는 언어 개념을 설명하는 사용 가능한 참조 항목을 보여 줍니다.
-
-
 
 |제목|설명|
 |-----|-----------|
@@ -56,9 +53,8 @@ ms.locfileid: "37937087"
 |[자세한 구문](verbose-syntax.md)|간단한 구문을 사용할 수 없는 경우의 F# 구문에 대해 설명합니다. 자세한 구문은 코드 파일 맨 위에 있는 `#light "off"` 지시문으로 표시됩니다.|
 
 ## <a name="f-types"></a>F# 형식
+
 다음 표에서는 F# 언어에서 지원하는 형식을 설명하는 사용 가능한 참조 항목을 보여 줍니다.
-
-
 
 |제목|설명|
 |-----|-----------|
@@ -88,6 +84,7 @@ ms.locfileid: "37937087"
 |[형식 공급자](../tutorials/type-providers/index.md)|형식 공급자를 설명하고 기본 제공 형식 공급자를 사용하여 데이터베이스 및 웹 서비스에 액세스하는 연습 링크를 제공합니다.|
 
 ## <a name="f-expressions"></a>F# 식
+
 다음 표에는 F# 식을 설명하는 항목이 나와 있습니다.
 
 |제목|설명|
@@ -105,6 +102,7 @@ ms.locfileid: "37937087"
 |[쿼리 식](query-expressions.md)|F#의 LINQ를 구현하고 데이터 원본 또는 열거 가능한 컬렉션에 대한 쿼리를 작성할 수 있도록 지원하는 언어 기능인 쿼리 식에 대해 설명합니다.|
 
 ## <a name="compiler-supported-constructs"></a>컴파일러 지원 구문
+
 다음 표에는 특별한 컴파일러 지원 구문을 설명하는 항목이 나와 있습니다.
 
 |항목|설명|
@@ -113,5 +111,6 @@ ms.locfileid: "37937087"
 |[컴파일러 지시문](compiler-directives.md)|처리기 지시문 및 컴파일러 지시문에 대해 설명합니다.|
 |[소스 줄, 파일 및 경로 식별자](source-line-file-path-identifiers.md)|코드의 소스 줄 번호, 디렉터리 및 파일 이름에 액세스할 수 있도록 지원하는 기본 제공 값인 `__LINE__`, `__SOURCE_DIRECTORY__` 및 `__SOURCE_FILE__` 식별자에 대해 설명합니다.|
 
-## <a name="see-also"></a>참고 항목
-[Visual F#](../index.md)
+## <a name="see-also"></a>참고자료
+
+- [Visual F#](../index.md)

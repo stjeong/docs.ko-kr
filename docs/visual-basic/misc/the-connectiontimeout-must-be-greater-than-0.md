@@ -5,11 +5,11 @@ f1_keywords:
 - vbrNetwork_BadConnectionTimeout
 ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
 ms.openlocfilehash: d38b2f154ccea066c52e6a7ae067d319ea599ee7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: HT
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43722972"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43803836"
 ---
 # <a name="the-connectiontimeout-must-be-greater-than-0"></a>ConnectionTimeout은 0보다 커야 합니다.
 사용 하 여 업로드 및 다운로드 파일 하는 경우는 [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network)를 지정 해야 합니다는 `connectionTimeout` 보다 큰 `0`입니다.  

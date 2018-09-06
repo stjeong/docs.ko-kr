@@ -3,11 +3,11 @@ title: 제네릭(F#)
 description: 'F # 제네릭 함수 및 코드를 반복 하지 않고 다양 한 형식 사용 하는 코드를 쓸 수 있는 형식을 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: fc061f19c6c7fa737f7ca05aae83fd42c0010b37
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43749238"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43876134"
 ---
 # <a name="generics"></a>제네릭
 

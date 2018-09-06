@@ -2,12 +2,12 @@
 title: 기업 구매 프로세스
 ms.date: 03/30/2017
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
-ms.openlocfilehash: 34d9280fb1d4009aa729cb2eba55b817db9fff56
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a5e0d6191967c592d5a32baa7eee3f1659a27e50
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33520044"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43802913"
 ---
 # <a name="corporate-purchase-process"></a>기업 구매 프로세스
 이 샘플에서는 최상의 제안을 자동으로 선택하는 구매 프로세스를 기반으로 매우 기본적인 RFP(제안 요청서)를 만드는 방법을 보여 줍니다. 여기에서는 <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601> 및 <xref:System.Activities.Statements.ForEach%601>과 사용자 지정 활동을 결합하여 이 프로세스를 나타내는 워크플로를 만듭니다.  
@@ -43,12 +43,12 @@ ms.locfileid: "33520044"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  이 디렉터리가로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4에 대 한 Windows WF (Workflow Foundation) 샘플](http://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
   
 ## <a name="description-of-the-process"></a>프로세스 설명  
- 이 샘플에서는 일반적인 회사의 공급 업체에서 제안서를 수집 하는 Windows WF (Workflow Foundation) 프로그램의 구현을 보여 줍니다.  
+ 이 샘플에는 일반적인 회사에 대 한 공급 업체에서 제안서를 수집 하는 Windows WF (Workflow Foundation) 프로그램의 구현을 보여 줍니다.  
   
 1.  X라는 회사의 직원이 RFP(제안 요청서)를 만듭니다.  
   
@@ -127,7 +127,7 @@ ms.locfileid: "33520044"
 |Form|설명|  
 |-|-|  
 |NewRfp|새 제안 요청서를 만들고 제출합니다.|  
-|ShowProposals|활성화된 제안 요청서와 완료된 제안 요청서를 모두 표시합니다. **참고:** 클릭 해야 할 수 있습니다는 **새로 고침** 만들거나 제안에 대 한 요청을 수정한 후 해당 화면에 변경 내용을 표시 하는 UI의에서 단추입니다.|  
+|ShowProposals|활성화된 제안 요청서와 완료된 제안 요청서를 모두 표시합니다. **참고:** 클릭 해야 합니다 **새로 고침** 만들기 또는 제안에 대 한 요청을 수정한 다음 해당 화면에 변경 내용을 표시 하려면 UI의 단추입니다.|  
 |SubmitProposal|구체적인 제안 요청서에 대해 공급업체의 제안서를 가져옵니다. 이 창은 공급업체에서만 사용합니다.|  
 |ViewRfp|제안 요청서에 대한 모든 정보(접수된 제안서, 날짜, 금액 및 기타 정보)를 표시합니다. 이 창은 제안 요청서의 작성자만 사용합니다.|  
   
@@ -145,9 +145,9 @@ ms.locfileid: "33520044"
   
 1.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]에서 PurchaseProcess.sln 솔루션 파일을 엽니다.  
   
-2.  Webclient 프로젝트를 실행 하려면 열고 **솔루션 탐색기** 마우스 오른쪽 단추로 클릭 하 고는 **웹 클라이언트** 프로젝트. 선택 **시작 프로젝트로 설정**합니다.  
+2.  웹 클라이언트 프로젝트를 실행 하려면 엽니다 **솔루션 탐색기** 마우스 오른쪽 단추로 클릭 합니다 **웹 클라이언트** 프로젝트입니다. 선택 **시작 프로젝트로 설정**합니다.  
   
-3.  Winformsclient 프로젝트를 실행 하려면 열고 **솔루션 탐색기** 마우스 오른쪽 단추로 클릭 하 고는 **WinForms 클라이언트** 프로젝트. 선택 **시작 프로젝트로 설정**합니다.  
+3.  Winformsclient 프로젝트를 실행 하려면 엽니다 **솔루션 탐색기** 마우스 오른쪽 단추로 클릭 합니다 **WinForms 클라이언트** 프로젝트입니다. 선택 **시작 프로젝트로 설정**합니다.  
   
 4.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
@@ -155,20 +155,20 @@ ms.locfileid: "33520044"
   
 ### <a name="web-client-options"></a>웹 클라이언트 옵션  
   
--   **Create 새 RFP**: 새 요청에 대 한 RFP (제안)을 만들고 구매 프로세스 워크플로 시작 합니다.  
+-   **만들 새 RFP**: 새 요청을 RFP (제안)를 만들고 구매 프로세스 워크플로 시작 합니다.  
   
--   **새로 고침**: 활성와 주 창에서 완료 된 Rfp의 목록을 새로 고칩니다.  
+-   **새로 고침**: 활성 및 주 창에서 완료 된 Rfp의 목록을 새로 고칩니다.  
   
 -   **보기**: 기존 RFP의 내용을 표시 합니다. RFP가 완료되지 않았거나 공급업체가 요청을 받은 경우 공급업체에서 제안서를 제출할 수 있습니다.  
   
--   View As: 사용자에서 특정된 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수는 **로 볼** 활성 Rfp 표의 콤보 상자입니다.  
+-   View As: 사용자에 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수 합니다 **보기** 활성 Rfp 표의 콤보 상자입니다.  
   
 ### <a name="winforms-client-options"></a>WinForms 클라이언트 옵션  
   
--   **Create RFP**: 새 요청에 대 한 RFP (제안)을 만들고 구매 프로세스 워크플로 시작 합니다.  
+-   **Create RFP**: 새 요청을 RFP (제안)를 만들고 구매 프로세스 워크플로 시작 합니다.  
   
--   **새로 고침**: 활성와 주 창에서 완료 된 Rfp의 목록을 새로 고칩니다.  
+-   **새로 고침**: 활성 및 주 창에서 완료 된 Rfp의 목록을 새로 고칩니다.  
   
 -   **View RFP**: 기존 RFP의 내용을 표시 합니다. RFP가 완료되지 않았거나 공급업체가 요청을 받은 경우 공급업체에서 제안서를 제출할 수 있습니다.  
   
--   **Connect As**:에서 특정된 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수는 **로 볼** 활성 Rfp 표의 콤보 상자입니다.
+-   **연결 계정**: 사용자 참가자를 선택 하 여 다른 id로 RFP에 액세스할 수는 **보기** 활성 Rfp 표의 콤보 상자.

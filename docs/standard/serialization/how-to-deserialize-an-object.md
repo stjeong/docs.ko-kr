@@ -8,12 +8,12 @@ helpviewer_keywords:
 - deserializing objects
 - objects, deserializing steps
 ms.assetid: 287129c8-035a-4fea-b7b3-4790057ca076
-ms.openlocfilehash: 957c332b3456e2b27aca36ef2bcabbc36b4e94e5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6da8ec2b78066cd251e4ad492afd2d9d37f7b965
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581484"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43863241"
 ---
 # <a name="how-to-deserialize-an-object"></a>방법: 개체 Deserialize
 개체를 deserialize할 때는 전송 형식에 따라 스트림을 만들지 파일 개체를 만들지 여부가 결정됩니다. 전송 형식이 결정된 뒤에는 필요에 따라 <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> 또는 <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> 메서드를 호출할 수 있습니다.  
@@ -51,6 +51,7 @@ ms.locfileid: "33581484"
     mySerializer.Deserialize(myFileStream)  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [XML serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [방법: 개체 직렬화](../../../docs/standard/serialization/how-to-serialize-an-object.md)
+## <a name="see-also"></a>참고자료
+
+- [XML serialization 소개](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [방법: 개체 직렬화](../../../docs/standard/serialization/how-to-serialize-an-object.md)

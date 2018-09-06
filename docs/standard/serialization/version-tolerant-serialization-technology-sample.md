@@ -2,12 +2,12 @@
 title: Version Tolerant Serialization 기술 샘플
 ms.date: 03/30/2017
 ms.assetid: 2a183664-bfbf-4ff0-96f6-c836284ea916
-ms.openlocfilehash: 996c041cd85551124fe62086e4894709183798d8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 34dccc9065c0100a01a7969a1fe762001e2999a9
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583079"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43866425"
 ---
 # <a name="version-tolerant-serialization-technology-sample"></a>Version Tolerant Serialization 기술 샘플
 [샘플 다운로드](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/VTS.zip.exe)  
@@ -45,6 +45,7 @@ ms.locfileid: "33583079"
 > [!NOTE]
 >  이 샘플에서는 콘솔 응용 프로그램을 빌드합니다. 출력을 보려면 응용 프로그램을 명령 프롬프트 창에서 시작하고 실행해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
- <xref:System.IO.FileStream>
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+- <xref:System.IO.FileStream>

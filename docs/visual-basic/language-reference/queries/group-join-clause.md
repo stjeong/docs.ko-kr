@@ -12,11 +12,11 @@ helpviewer_keywords:
 - queries [Visual Basic], Group Join
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
 ms.openlocfilehash: f4c0d7fa9f14868404cde6201692e26b919198be
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43564050"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43803667"
 ---
 # <a name="group-join-clause-visual-basic"></a>Group Join 절(Visual Basic)
 두 컬렉션을 단일 계층 구조 컬렉션으로 결합합니다. 조인 작업은 키를 일치 하는 기준으로 합니다.  

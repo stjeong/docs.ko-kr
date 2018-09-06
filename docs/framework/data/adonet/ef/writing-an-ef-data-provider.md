@@ -3,11 +3,11 @@ title: Entity Framework 데이터 공급자 작성
 ms.date: 03/30/2017
 ms.assetid: 092e88c4-a301-453a-b5c3-5740c6575a9f
 ms.openlocfilehash: 50c0555d84c5b5f180c8c49a8419e8a414a4befe
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43739453"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43863403"
 ---
 # <a name="writing-an-entity-framework-data-provider"></a>Entity Framework 데이터 공급자 작성
 이 섹션에서는 작성 하는 방법을 설명는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 공급자를 SQL Server 이외의 데이터 소스를 지원 합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] SQL Server를 지 원하는 공급자를 포함 합니다.  

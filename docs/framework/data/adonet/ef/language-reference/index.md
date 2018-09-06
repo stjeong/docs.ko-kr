@@ -3,11 +3,11 @@ title: '@FSHO2@Entity SQL 언어 참조'
 ms.date: 03/30/2017
 ms.assetid: bb07282c-161d-47e8-856d-b2374ba18181
 ms.openlocfilehash: 8ef0f7e00735292252cdabf2adb8b7638faa5d8f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43749907"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43862750"
 ---
 # <a name="entity-sql-language-reference"></a>@FSHO2@Entity SQL 언어 참조
 이 단원에서는 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]에 사용되는 모델링 및 매핑 언어, [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에 대해 설명합니다.  

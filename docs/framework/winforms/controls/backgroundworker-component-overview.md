@@ -17,12 +17,12 @@ helpviewer_keywords:
 - threading [Windows Forms], background operations
 - background operations
 ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
-ms.openlocfilehash: 1f7da963db34434ee2631e9e2c0367abbd628656
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: d7d99cf87507237b23cb40c58b2308643f7f1056
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43749170"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43872194"
 ---
 # <a name="backgroundworker-component-overview"></a>BackgroundWorker 구성 요소 개요
 일반적으로 수행하는 작업 중에는 실행 시간이 오래 걸릴 수 있는 것들이 많습니다. 예를 들면 다음과 같습니다.  
@@ -60,6 +60,8 @@ ms.locfileid: "43749170"
   
  사용 하 여 대 한 자세한 내용은 합니다 <xref:System.ComponentModel.BackgroundWorker> 클래스를 참조 하십시오 [방법: 백그라운드에서 작업 실행](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [빌드에 없음: Visual Basic의 다중 스레딩](https://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
- [방법: 배경 작업을 사용하는 양식 구현](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+## <a name="see-also"></a>참고자료
+
+- [관리되는 스레딩](../../../../docs/standard/threading/index.md)
+- [이벤트 기반 비동기 패턴 개요](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [방법: 배경 작업을 사용하는 양식 구현](how-to-implement-a-form-that-uses-a-background-operation.md)

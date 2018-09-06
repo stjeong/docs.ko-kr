@@ -5,11 +5,11 @@ helpviewer_keywords:
 - queues [WCF]
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
 ms.openlocfilehash: 46d70a0b0ccc33755666867240be8778b5638947
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43537802"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43858371"
 ---
 # <a name="queues-in-windows-communication-foundation"></a>Windows Communication Foundation의 큐
 이 섹션의에서 항목에서는 큐에 대 한 Windows Communication Foundation (WCF) 지원을 설명합니다. WCF에서 활용 하 여 Microsoft Message Queuing (이전에 MSMQ 라고 함)를 전송으로 큐에 대 한 지원을 제공 하 고 다음 시나리오를 사용:  

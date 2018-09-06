@@ -5,11 +5,11 @@ ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: aaf5103dfee366466ff701ce3669bbabb97233ac
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43537689"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43800380"
 ---
 # <a name="lttypegt-element-net-native"></a>&lt;유형&gt; 요소(.NET 네이티브)
 클래스 또는 구조체와 같은 특정 형식에 런타임 정책을 적용합니다.  

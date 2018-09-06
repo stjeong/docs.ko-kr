@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1c04b431224a1d4f03e85397b854a52856e114e6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d1598ac63af38f1ca3e11104bc8e1cd6323d35ed
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571399"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43871020"
 ---
 # <a name="member-design-guidelines"></a>멤버 디자인 지침
-메서드, 속성, 이벤트, 생성자 및 필드 통칭 하 여 멤버 라고 합니다. 멤버는 궁극적으로 기준인 프레임 워크 기능 프레임 워크의 최종 사용자에 게 노출 되는 방법입니다.  
+메서드, 속성, 이벤트, 생성자 및 필드가 통칭 하 여 멤버 라고 합니다. 멤버는 궁극적으로 프레임 워크 기능 프레임 워크의 최종 사용자에 게 노출 되는 의미입니다.  
   
- 멤버 가상 또는 비가상, 구체적인 또는 abstract, 정적 또는 인스턴스를 수 있으며 내게 필요한 옵션의 다양 한 범위를 가질 수 있습니다. 이 모든 다양이 한 놀라운 표현을 제공 하지만 동시에 프레임 워크 디자이너 안되며 때는 주의 해야 합니다.  
+ 멤버는 가상 또는 비가상, 구체적인 또는 추상 정적 또는 인스턴스 수 및 내게 필요한 옵션의 몇 가지 다른 범위를 가질 수 있습니다. 모든이 다양성이 놀라운 표현을 제공 하지만 동시에 프레임 워크 디자이너 부분 주의 해야 합니다.  
   
- 이 장에서 모든 형식의 멤버를 디자인할 때 따라야 할 기본 지침을 제공 합니다.  
+ 이 장에서 모든 형식의 멤버를 디자인할 때 수행 해야 하는 기본 지침을 제공 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [멤버 오버로드](../../../docs/standard/design-guidelines/member-overloading.md)  
@@ -35,7 +35,8 @@ ms.locfileid: "33571399"
  [매개 변수 디자인](../../../docs/standard/design-guidelines/parameter-design.md)  
  *Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*  
   
- *피어슨 교육, Inc.에서의 사용 권한으로 재인쇄 [Framework 디자인 지침: 규칙, 특징 및 다시 사용할 수 있는.NET 라이브러리를 2nd Edition에 대 한 패턴](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina 및 Brad Abrams 게시 하 여 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로: Addison Wesley Professional.*  
+ *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## <a name="see-also"></a>참고 항목  
- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)
+## <a name="see-also"></a>참고자료
+
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

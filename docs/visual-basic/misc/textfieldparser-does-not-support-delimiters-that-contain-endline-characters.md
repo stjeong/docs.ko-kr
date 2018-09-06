@@ -5,11 +5,11 @@ f1_keywords:
 - vbrTextFieldParser_EndCharsInDelimiter
 ms.assetid: 0701f3b6-635b-468e-b908-867df00dd5db
 ms.openlocfilehash: f17c8fd16868950a30656657e60fabda94d7b57d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43541013"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43804015"
 ---
 # <a name="textfieldparser-does-not-support-delimiters-that-contain-endline-characters"></a>TextFieldParser는 EndLine 문자가 포함된 구분 기호를 지원하지 않습니다.
 Endline 문자를 포함 하는 구분을 제공 하지만 `TextFieldParser` endline 문자가 포함 된 구분 기호를 지원 하지 않습니다.  

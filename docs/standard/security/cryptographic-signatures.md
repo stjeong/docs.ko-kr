@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: aa87cb7f-e608-4a81-948b-c9b8a1225783
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 656b34a828ef6acd488cc84ca98d5a4bbaaa2cdf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3f9d83a0edb6dc2261931e422b0ae4c735d2e0d1
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33589807"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43869995"
 ---
 # <a name="cryptographic-signatures"></a>암호화 서명
 <a name="top"></a> 암호화 디지털 서명은 public 키 알고리즘을 사용하여 데이터 무결성을 제공합니다. 디지털 서명으로 데이터에 서명하면 다른 사용자가 서명을 확인하고 데이터가 원래 서명자로부터 시작되고 서명자가 서명한 이후 변경되지 않았음을 증명할 수 있습니다. 디지털 서명에 대한 자세한 내용은 [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)를 참조하세요.  
@@ -105,7 +105,7 @@ class Class1
 ### <a name="signing-xml-files"></a>XML 파일에 서명  
  .NET Framework는 XML에 서명하는 데 사용되는 <xref:System.Security.Cryptography.Xml> 네임스페이스를 제공합니다. XML이 특정 소스에서 시작되는지 확인하려면 XML에 서명해야 합니다. 예를 들어 XML을 사용하는 주식 시세 서비스를 이용하고 있다면 서명된 XML의 소스를 확인할 수 있습니다.  
   
- 이 네임 스페이스의 클래스에 따라는 [XML 서명 구문 및 처리 권장 사항](https://www.w3.org/TR/xmldsig-core/) World Wide Web Consortium에서 합니다.  
+ 이 네임 스페이스의 클래스를 수행 합니다 [XML 서명 구문 및 처리 권장 사항](https://www.w3.org/TR/xmldsig-core/) World Wide Web Consortium에서.  
   
  [맨 위로 이동](#top)  
   
@@ -121,7 +121,7 @@ class Class1
   
 -   서명자가 사용한 해시 알고리즘입니다.  
   
- <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> 클래스로 서명된 서명을 확인하려면 <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> 클래스를 사용합니다. <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> 클래스에는 서명자의 public 키가 제공되어야 합니다. public 키를 지정하려면 모듈러스 및 지수의 값이 필요합니다. public/private 키 쌍을 생성한 당사자가 이들 값을 제공해야 합니다. 먼저 만듭니다는 <xref:System.Security.Cryptography.RSACryptoServiceProvider> 가 서명을 확인 한 다음 초기화 공개 키를 보유 하는 개체는 <xref:System.Security.Cryptography.RSAParameters> 구조체를 공개 키를 지정 하는 모듈러스 및 지 수 값입니다.  
+ <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> 클래스로 서명된 서명을 확인하려면 <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> 클래스를 사용합니다. <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> 클래스에는 서명자의 public 키가 제공되어야 합니다. public 키를 지정하려면 모듈러스 및 지수의 값이 필요합니다. public/private 키 쌍을 생성한 당사자가 이들 값을 제공해야 합니다. 먼저 만듭니다는 <xref:System.Security.Cryptography.RSACryptoServiceProvider> 서명을 확인 하 고 다음 초기화가 공개 키를 누른 채로 개체는 <xref:System.Security.Cryptography.RSAParameters> 구조체를 공개 키를 지정 하는 모듈러스 및 지 수 값입니다.  
   
  다음 코드는 <xref:System.Security.Cryptography.RSAParameters> 구조체를 만드는 방법을 보여 줍니다. `Modulus` 속성은 `ModulusData` 바이트 배열 값으로 설정되고 `Exponent` 속성은 `ExponentData`바이트 배열 값으로 설정됩니다.  
   
@@ -172,5 +172,6 @@ else
   
  이 코드 조각은 서명이 유효하면 "`The signature is valid`"를 표시하고, 유효하지 않으면 "`The signature is not valid`"를 표시합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## <a name="see-also"></a>참고자료
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

@@ -3,11 +3,11 @@ title: 웹 서비스를 사용하는 LINQ to SQL N 계층
 ms.date: 03/30/2017
 ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
 ms.openlocfilehash: bf13c34a058d33d240e780cb1ce0e665bd1322d2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43532802"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43862240"
 ---
 # <a name="linq-to-sql-n-tier-with-web-services"></a>웹 서비스를 사용하는 LINQ to SQL N 계층
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 특히는 느슨하게 결합 된 DAL (데이터 액세스 계층) 웹 서비스 등에서 중간 계층에서 사용할 수 있도록 설계 되었습니다. 프레젠테이션 계층이 ASP.NET 웹 페이지인 경우에는 <xref:System.Web.UI.WebControls.LinqDataSource> 웹 서버 컨트롤을 사용하여 사용자 인터페이스와 중간 계층의 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 사이에 데이터 전송을 관리합니다. 그러나 프레젠테이션 계층이 ASP.NET 페이지가 아닌 경우에는 중간 계층과 프레젠테이션 계층 모두에서 데이터 serialization 및 deserialization을 관리하기 위해 추가적인 작업을 수행해야 합니다.  

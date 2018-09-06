@@ -9,11 +9,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: f55112c5eead082eae10aa50590b915f5049d5a6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43565956"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43855167"
 ---
 # <a name="ui-automation-security-overview"></a>UI 자동화 보안 개요
 > [!NOTE]

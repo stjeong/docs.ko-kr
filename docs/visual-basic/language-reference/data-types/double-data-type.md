@@ -20,11 +20,11 @@ helpviewer_keywords:
 - Double data type
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
 ms.openlocfilehash: 5d2d84f298b9cf6138e84ef287f6ea9212da2960
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: HT
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/05/2018
-ms.locfileid: "43734814"
+ms.locfileid: "43806126"
 ---
 # <a name="double-data-type-visual-basic"></a>Double 데이터 형식(Visual Basic)
 부호 있는 IEEE 64 비트 (8 바이트) 배정밀도 부동 소수점 숫자 값에서-1.79769313486231570 + 308에서-범위에 있는 저장 4.94065645841246544E-324 음수 값을 한 경우 4.94065645841246544 e에서-324 1.79769313486231570 e + 308에 대 한 양수 값입니다. 배정밀도 숫자는 실수의 근사값을 저장 합니다.  

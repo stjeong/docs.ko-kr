@@ -2,12 +2,12 @@
 title: 키워드 참조(F#)
 description: '모든 F # 언어 키워드에 대 한 정보 링크를를 찾습니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 18bf5f00cdd5250c0fbd503d096e5415a8b9feea
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0016f68b2872183a2b4dd865ce229b6a76250b78
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526191"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43856026"
 ---
 # <a name="keyword-reference"></a>키워드 참조
 
@@ -131,9 +131,8 @@ ms.locfileid: "43526191"
 * `virtual`
 * `volatile`
 
-## <a name="see-also"></a>참고 항목
-[F# 언어 참조](index.md)
+## <a name="see-also"></a>참고자료
 
-[기호 및 연산자 참조](symbol-and-operator-reference/index.md)
-
-[컴파일러 옵션](compiler-options.md)
+- [F# 언어 참조](index.md)
+- [기호 및 연산자 참조](symbol-and-operator-reference/index.md)
+- [컴파일러 옵션](compiler-options.md)

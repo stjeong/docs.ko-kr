@@ -3,11 +3,11 @@ title: '방법: 사용자 지정 지속성 참석자 만들기'
 ms.date: 03/30/2017
 ms.assetid: 1d9cc47a-8966-4286-94d5-4221403d9c06
 ms.openlocfilehash: 8daf4924db48c79486e85660357e3b28a2583836
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43558528"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43855844"
 ---
 # <a name="how-to-create-a-custom-persistence-participant"></a>방법: 사용자 지정 지속성 참석자 만들기
 다음 절차에서는 지속성 참석자를 만드는 단계에 대해 설명합니다. 참조를 [지 속성 참여](https://go.microsoft.com/fwlink/?LinkID=177735) 샘플 및 [저장소 확장성](../../../docs/framework/windows-workflow-foundation/store-extensibility.md) 지 속성 참석자의 샘플 구현에 대 한 항목입니다.  

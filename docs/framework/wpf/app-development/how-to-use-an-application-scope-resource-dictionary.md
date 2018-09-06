@@ -10,11 +10,11 @@ helpviewer_keywords:
 - application-scope resource dictionaries
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
 ms.openlocfilehash: 081ce8d350995d5321acbb24d220bed229ff17ae
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43674337"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43801357"
 ---
 # <a name="how-to-use-an-application-scope-resource-dictionary"></a>방법: 응용 프로그램 범위 리소스 사전 사용
 이 예제에서는 응용 프로그램 범위 사용자 지정 리소스 사전을 정의하고 사용하는 방법을 보여 줍니다.  

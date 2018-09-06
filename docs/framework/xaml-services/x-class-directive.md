@@ -11,11 +11,11 @@ helpviewer_keywords:
 - x:Class attribute [XAML Services]
 ms.assetid: bc4a3d8e-76e2-423e-a5d1-159a023e82ec
 ms.openlocfilehash: a29a645a05f0d3b0e8611dd722c5018f295f3070
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43565348"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43856194"
 ---
 # <a name="xclass-directive"></a>x:Class 지시문
 태그와 코드 숨김 부분 클래스를 조인 하는 XAML 태그 컴파일을 구성 합니다. 코드 partial 클래스는 별도 코드 파일에 정의 된를 [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)] 언어 반면 태그 partial 클래스는 대개 XAML 컴파일하는 동안 코드 생성에서 만들어집니다.  

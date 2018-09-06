@@ -9,11 +9,11 @@ helpviewer_keywords:
 - visual layer [WPF], hit testing functionality
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
 ms.openlocfilehash: fe54578407e881ec7d6782ec21100b29eded07a3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43403177"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43875007"
 ---
 # <a name="hit-testing-in-the-visual-layer"></a>시각적 계층에서 적중 테스트
 이 항목에서는 시각적 계층에서 제공하는 적중 테스트 기능의 개요를 제공합니다. 적중된 테스트 지원을 사용 하는 기 하 도형 또는 점 값의 렌더링된 된 콘텐츠에 속하는지 여부를 결정할 수는 <xref:System.Windows.Media.Visual>, 여러 개체를 선택할 선택 직사각형과 같은 사용자 인터페이스 동작을 구현할 수 있습니다.  

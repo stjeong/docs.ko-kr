@@ -3,11 +3,11 @@ title: 디버깅 지원
 ms.date: 03/30/2017
 ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
 ms.openlocfilehash: 70823d7480d59f96f3f8f4ad2b28102917ec2d80
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486531"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43856831"
 ---
 # <a name="debugging-support"></a>디버깅 지원
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트에 대해 일반 디버깅을 지원합니다.  도 참조 하세요 [LINQ 디버깅](/visualstudio/debugger/debugging-linq) 하거나 [LINQ 디버깅](/visualstudio/debugger/debugging-linq)합니다.  

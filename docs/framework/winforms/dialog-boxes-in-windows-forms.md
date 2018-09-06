@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dialogs [Windows Forms], using in Windows Forms
 ms.assetid: d43d022b-451b-490d-9386-dc79d98fbf8a
 ms.openlocfilehash: ef07c087ca43efaf99231453fcb56af0db24234a
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776952"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43864257"
 ---
 # <a name="dialog-boxes-in-windows-forms"></a>Windows Forms 대화 상자
 대화 상자는 사용자와 상호 작용하고 정보를 검색하는 데 사용됩니다. 간단히 말해서 대화 상자는 <xref:System.Windows.Forms.FormBorderStyle> 열거형 속성이 `FixedDialog`로 설정된 폼입니다. Visual Studio에서 Windows Forms 디자이너를 사용 하 여 사용자 고유의 사용자 지정 대화 상자를 생성할 수 있습니다. `Label`, `Textbox` 및 `Button`과 같은 컨트롤을 추가하여 특정 필요에 맞게 대화 상자를 사용자 지정합니다. 합니다 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 와 같은 미리 정의 된 대화 상자에도 포함 **파일 열기** 및 응용 프로그램에 사용할 수 있는 메시지 상자입니다. 자세한 내용은 [대화 상자 컨트롤 및 구성 요소](../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)합니다.  

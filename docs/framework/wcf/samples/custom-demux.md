@@ -3,11 +3,11 @@ title: 사용자 지정 Demux
 ms.date: 03/30/2017
 ms.assetid: fc54065c-518e-4146-b24a-0fe00038bfa7
 ms.openlocfilehash: 1542743a6e1658bad162d7ee9ca73e6b9b0444e2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: HT
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43732370"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43803423"
 ---
 # <a name="custom-demux"></a>사용자 지정 Demux
 이 샘플에서는 MSMQ 메시지 헤더 매핑할 수 있는 방법을 다양 한 서비스 작업에는 Windows Communication Foundation (WCF) 사용 하는 서비스 설명 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> 에 설명 된 대로 하나의 서비스 작업을 사용 하도록 제한 되지는 [ 메시지 큐를 Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md) 하 고 [Windows Communication Foundation에서 메시지 큐로](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md) 샘플입니다.  
