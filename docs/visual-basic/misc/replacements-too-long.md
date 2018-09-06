@@ -5,18 +5,18 @@ f1_keywords:
 - vbrID746
 ms.assetid: 398ff5eb-b580-456f-8f24-b7a8318e1193
 ms.openlocfilehash: 3216ce866cae9a7f59ecfca23d92d82fdb8bc117
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43561582"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43803797"
 ---
-# <a name="replacements-too-long"></a><span data-ttu-id="d0040-102">대체 텍스트가 너무 깁니다.</span><span class="sxs-lookup"><span data-stu-id="d0040-102">Replacements too long</span></span>
-<span data-ttu-id="d0040-103">허용된 길이를 초과하는 대체 텍스트를 지정했습니다.</span><span class="sxs-lookup"><span data-stu-id="d0040-103">You specified a replacement that exceeds the permitted length.</span></span>  
+# <a name="replacements-too-long"></a><span data-ttu-id="4674a-102">대체 텍스트가 너무 깁니다.</span><span class="sxs-lookup"><span data-stu-id="4674a-102">Replacements too long</span></span>
+<span data-ttu-id="4674a-103">허용된 길이를 초과하는 대체 텍스트를 지정했습니다.</span><span class="sxs-lookup"><span data-stu-id="4674a-103">You specified a replacement that exceeds the permitted length.</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="d0040-104">이 오류를 해결하려면</span><span class="sxs-lookup"><span data-stu-id="d0040-104">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="4674a-104">이 오류를 해결하려면</span><span class="sxs-lookup"><span data-stu-id="4674a-104">To correct this error</span></span>  
   
-1.  <span data-ttu-id="d0040-105">구성 요소 설명서를 참조하여 길이 제한을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="d0040-105">Consult the component documentation for the length restriction.</span></span>  
+1.  <span data-ttu-id="4674a-105">구성 요소 설명서를 참조하여 길이 제한을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4674a-105">Consult the component documentation for the length restriction.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d0040-106">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d0040-106">See Also</span></span>  
- [<span data-ttu-id="d0040-107">방법: 대화형 검색</span><span class="sxs-lookup"><span data-stu-id="d0040-107">How to: Search Interactively</span></span>](https://msdn.microsoft.com/library/e9fdbfab-bd59-401a-92d3-7ce1652b243c)
+## <a name="see-also"></a><span data-ttu-id="4674a-106">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4674a-106">See Also</span></span>  
+ [<span data-ttu-id="4674a-107">방법: 대화형 검색</span><span class="sxs-lookup"><span data-stu-id="4674a-107">How to: Search Interactively</span></span>](https://msdn.microsoft.com/library/e9fdbfab-bd59-401a-92d3-7ce1652b243c)
