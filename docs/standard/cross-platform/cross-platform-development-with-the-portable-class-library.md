@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 628c571ce645710482a29c813adb4fe1a59fd349
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: bd5ad69cc661005d20db4c4bcdda762c6432f416
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745410"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43886060"
 ---
 # <a name="cross-platform-development-with-the-portable-class-library"></a>이식 가능한 클래스 라이브러리로 크로스 플랫폼 개발
 Visual Studio의 .NET Framework 이식 가능한 클래스 라이브러리 프로젝트 형식으로 Microsoft 플랫폼용 플랫폼 간 앱 및 라이브러리를 신속하고 쉽게 빌드할 수 있습니다.  
@@ -221,9 +221,10 @@ Visual Studio 2012의 대상 변경 대화 상자
 </div>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [MVVM과 함께 이식 가능한 클래스 라이브러리 사용](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)  
- [여러 플랫폼을 대상으로 하는 라이브러리의 앱 리소스](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)  
- [.NET 이식성 분석기](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
- [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
- [배포](../../../docs/framework/deployment/net-framework-applications.md)
+## <a name="see-also"></a>참고자료
+
+- [MVVM과 함께 이식 가능한 클래스 라이브러리 사용](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)  
+- [여러 플랫폼을 대상으로 하는 라이브러리의 앱 리소스](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)  
+- [.NET 이식성 분석기](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)  
+- [Windows 스토어 앱 및 Windows 런타임에 대한 .NET Framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
+- [배포](../../../docs/framework/deployment/net-framework-applications.md)
