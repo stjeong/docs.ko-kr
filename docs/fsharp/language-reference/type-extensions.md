@@ -3,11 +3,11 @@ title: 형식 확장명(F#)
 description: '이전에 정의 된 개체 형식에 새 멤버를 추가 하면 F # 형식 확장을 허용 하는 방법에 대해 알아봅니다.'
 ms.date: 07/20/2018
 ms.openlocfilehash: 27238db1fd0803f62c32755fbc4ab7688f5c107e
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855063"
+ms.locfileid: "43874981"
 ---
 # <a name="type-extensions"></a>형식 확장명
 

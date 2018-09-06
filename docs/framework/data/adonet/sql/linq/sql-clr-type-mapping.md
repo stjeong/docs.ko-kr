@@ -3,11 +3,11 @@ title: SQL-CLR 형식 매핑
 ms.date: 07/23/2018
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
 ms.openlocfilehash: ac00d78fff65f5d44a52f92509db3aa493952949
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43735438"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43862107"
 ---
 # <a name="sql-clr-type-mapping"></a>SQL-CLR 형식 매핑
 LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자가 선택한 프로그래밍 언어로 표현되는 개체 모델에 매핑됩니다. 응용 프로그램을 실행하면 LINQ to SQL에서는 개체 모델의 통합 언어 쿼리를 SQL로 변환하여 실행을 위해 데이터베이스로 전송합니다. 데이터베이스에서 결과가 반환되면 LINQ to SQL에서는 해당 결과를 사용자의 프로그래밍 언어로 작업할 수 있는 개체로 다시 변환합니다.  

@@ -2,12 +2,12 @@
 title: 인터넷 정보 서비스 호스팅을 위한 최선의 방법
 ms.date: 03/30/2017
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
-ms.openlocfilehash: 119f14df9d46883a33272903558d83128501b293
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 0ca5e20b846a1b10f5a52748ff06a4af958b2f4c
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "33495764"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43865909"
 ---
 # <a name="internet-information-services-hosting-best-practices"></a>인터넷 정보 서비스 호스팅을 위한 최선의 방법
 이 항목에서는 Windows Communication Foundation (WCF) 서비스를 호스트 하기 위한 몇 가지 모범 사례를 간략하게 설명 합니다.  
@@ -18,8 +18,8 @@ ms.locfileid: "33495764"
 ## <a name="service-hosts-in-iis-hosted-applications"></a>IIS에서 호스팅되는 응용 프로그램의 서비스 호스트  
  TCP 통신이 기본적으로 [!INCLUDE[iis601](../../../../includes/iis601-md.md)]에서 지원되지 않기 때문에 TCP 서비스를 호스팅하는 [!INCLUDE[iis601](../../../../includes/iis601-md.md)]처럼, IIS 호스팅 환경에서 기본적으로 지원하지 않는 네트워크 전송에서 수신 대기하는 새 서비스 호스트를 만들 때 명령적 자체 호스팅 API를 사용하지 마십시오. 이는 권장되는 방법이 아닙니다. 명령적으로 만들어진 서비스 호스트는 IIS 호스팅 환경 내에서 알 수 없습니다. 중요한 점은 호스팅 응용 프로그램 풀이 유휴 상태인지 여부를 결정할 때 명령적으로 만든 서비스에서 수행된 처리가 IIS에 의해 정의되지 않는다는 것입니다. 결과적으로 명령적으로 그러한 서비스 호스트를 만든 응용 프로그램에 적극적으로 IIS 호스트 프로세스를 삭제하는 IIS 호스팅 환경이 포함됩니다.  
   
-## <a name="uris-and-iis-hosted-endpoints"></a>URI 및 IIS에서 호스팅되는 끝점  
- IIS에서 호스팅되는 서비스의 끝점은 절대 주소가 아닌 상대 URI(Uniform Resource Identifier)를 사용하여 구성되어야 합니다. 이렇게 하면 끝점 주소가 호스팅 응용 프로그램에 속하는 URI 주소 집합 내에 있게 되고 예상한 대로 메시지 기반 활성화가 수행됩니다.  
+## <a name="uris-and-iis-hosted-endpoints"></a>URI 및 IIS에서 호스팅되는 엔드포인트  
+ IIS에서 호스팅되는 서비스의 엔드포인트는 절대 주소가 아닌 상대 URI(Uniform Resource Identifier)를 사용하여 구성되어야 합니다. 이렇게 하면 엔드포인트 주소가 호스팅 응용 프로그램에 속하는 URI 주소 집합 내에 있게 되고 예상한 대로 메시지 기반 활성화가 수행됩니다.  
   
 ## <a name="state-management-and-process-recycling"></a>상태 관리 및 프로세스 재활용  
  IIS 호스팅 환경은 메모리에 로컬 상태를 유지 관리하지 않는 서비스에 맞게 최적화됩니다. IIS는 여러 외부 및 내부 이벤트에 대한 응답으로 호스트 프로세스를 재활용하여 메모리에만 저장된 일시적 상태가 손실됩니다. IIS에서 호스팅된 서비스는 해당 상태를 프로세스 외부(예: 데이터베이스)에 저장하거나 응용 프로그램 재활용 이벤트가 발생하는 경우 쉽게 다시 만들 수 있는 메모리 내 캐시에 저장해야 합니다.  
@@ -82,5 +82,5 @@ ms.locfileid: "33495764"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [서비스 호스팅 샘플](http://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
- [Windows Server App Fabric 호스팅 기능](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [서비스 호스팅 샘플](https://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
+ [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)
