@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 829be8663068d4eb492631ccc4194b4e4c3000aa
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 361dfd8cc9264f86bfc94a150635d9891274c9ac
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33590301"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44061678"
 ---
 # <a name="how-to-sign-xml-documents-with-digital-signatures"></a>방법: 디지털 서명으로 XML 문서 서명
-<xref:System.Security.Cryptography.Xml> 네임스페이스의 클래스를 사용하여 XML 문서 또는 XML 문서의 일부를 디지털 서명으로 서명할 수 있습니다.  XML 디지털 서명(XMLDSIG)을 사용하면 서명된 후 데이터가 변경되지 않았음을 확인할 수 있습니다.  XMLDSIG 표준에 대 한 자세한 내용은 World Wide Web Consortium (W3C) 권장 참조 [XML 서명 구문 및 처리](https://www.w3.org/TR/xmldsig-core/)합니다.  
+<xref:System.Security.Cryptography.Xml> 네임스페이스의 클래스를 사용하여 XML 문서 또는 XML 문서의 일부를 디지털 서명으로 서명할 수 있습니다.  XML 디지털 서명(XMLDSIG)을 사용하면 서명된 후 데이터가 변경되지 않았음을 확인할 수 있습니다.  XMLDSIG 표준에 대 한 자세한 내용은 World Wide Web Consortium (W3C) 권장 사항을 참조 하세요 [XML 서명 구문 및 처리](https://www.w3.org/TR/xmldsig-core/)합니다.  
   
  이 절차의 코드 예제에서는 XML 전체 문서를 디지털 서명하고 서명을 <`Signature`> 요소의 문서에 추가하는 방법에 대해 설명합니다.  이 예제에서는 RSA 서명 키를 만들고, 보안 키 컨테이너에 키를 추가한 다음 키를 사용하여 XML 문서에 디지털 서명합니다.  그런 다음 키를 검색하여 XML 디지털 서명을 확인하거나 다른 XML 문서에 서명하는 데 사용할 수 있습니다.  
   
- 이 절차를 사용 하 여 만든 XML 디지털 서명을 확인 하는 방법에 대 한 정보를 참조 하십시오. [하는 방법: XML 문서의 디지털 서명 확인](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)합니다.  
+ 이 절차를 사용 하 여 만든 XML 디지털 서명을 확인 하는 방법에 대 한 자세한 내용은 [방법: XML 문서의 디지털 서명 확인](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)합니다.  
   
 ### <a name="to-digitally-sign-an-xml-document"></a>XML 문서에 디지털 서명하려면  
   
@@ -114,10 +114,11 @@ ms.locfileid: "33590301"
 -   <xref:System.Xml>, <xref:System.Security.Cryptography> 및 <xref:System.Security.Cryptography.Xml> 네임스페이스를 포함합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
- 비대칭 키 쌍의 개인 키를 일반 텍스트로 저장하거나 전송하지 마세요.  대칭 및 비대칭 암호화 키에 대 한 자세한 내용은 참조 [암호화 및 암호 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)합니다.  
+ 비대칭 키 쌍의 개인 키를 일반 텍스트로 저장하거나 전송하지 마세요.  대칭 및 비대칭 암호화 키에 대 한 자세한 내용은 참조 하세요. [암호화 및 암호 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)합니다.  
   
- 소스 코드에 직접 개인 키를 포함하지 마세요.  포함 된 키를 사용 하 여 어셈블리에서 쉽게 읽을 수 있습니다는 [Ildasm.exe (IL 디스어셈블러)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) 또는 메모장과 같은 텍스트 편집기에서 어셈블리를 열어 합니다.  
+ 소스 코드에 직접 개인 키를 포함하지 마세요.  포함 된 키를 사용 하 여 어셈블리에서 쉽게 읽을 수 있습니다 합니다 [Ildasm.exe (IL 디스어셈블러)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) 또는 메모장과 같은 텍스트 편집기에서 어셈블리를 열어.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Cryptography.Xml>  
- [방법: XML 문서의 디지털 서명 확인](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Security.Cryptography.Xml>  
+- [방법: XML 문서의 디지털 서명 확인](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)

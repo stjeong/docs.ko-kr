@@ -11,11 +11,11 @@ helpviewer_keywords:
 - data type conversion [Visual Basic]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
 ms.openlocfilehash: 026b2a250abfac0782feb0946bc50a94f504f7ed
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44037005"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084470"
 ---
 # <a name="type-conversions-in-visual-basic"></a>Visual Basic의 형식 변환
 하나의 데이터 형식에서 다른 형식으로 값을 변경 하는 프로세스 라고 *변환*합니다. 변환은 하나 *확대* 하거나 *축소*데이터 용량입니다. 관련 된 형식에 따라 합니다. 또한 *암시적* 하거나 *명시적*소스 코드 구문에에서 따라 합니다.  

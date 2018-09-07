@@ -5,11 +5,11 @@ ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 41679d4041a6a5a7b9b71a451a083c539d6b4c7b
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43881092"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44077056"
 ---
 # <a name="getting-started-with-net-native"></a>.NET 네이티브 시작
 새로운 Windows 10용 Windows 앱을 작성하든지 기존 Windows 스토어 앱을 마이그레이션하든지 상관없이 동일한 절차 집합을 따르면 됩니다. [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱을 만들려면 다음 단계를 수행합니다.  

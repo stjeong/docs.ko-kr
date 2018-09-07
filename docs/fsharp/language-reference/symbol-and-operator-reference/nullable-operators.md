@@ -3,11 +3,11 @@ title: null 허용 연산자(F#)
 description: 'F # 프로그래밍 언어에서 사용할 수 있는 null 허용 연산자에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 42df74a56831fb0a5d6df34db4321f5b228993c2
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44036781"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44086285"
 ---
 # <a name="nullable-operators"></a>null 허용 연산자
 

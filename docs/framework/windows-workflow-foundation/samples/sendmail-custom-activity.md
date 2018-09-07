@@ -3,11 +3,11 @@ title: SendMail 사용자 지정 활동
 ms.date: 03/30/2017
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
 ms.openlocfilehash: e9d27711754c3aa8ff7f68c23f528c9f5c4356f7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43533875"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44070526"
 ---
 # <a name="sendmail-custom-activity"></a>SendMail 사용자 지정 활동
 이 샘플에서는 워크플로 응용 프로그램 내에서 사용하기 위해 <xref:System.Activities.AsyncCodeActivity>로부터 파생되는 사용자 지정 활동을 만들어 SMTP를 사용하여 메일을 보내는 방법을 보여 줍니다. 기능을 사용 하는 사용자 지정 활동 <xref:System.Net.Mail.SmtpClient> 비동기적으로 전자 메일을 보내려면 및 인증 된 메일을 보냅니다. 또한 테스트 모드, 토큰 바꾸기, 파일 템플릿 및 테스트 드롭 경로와 같은 몇 가지 최종 사용자 기능도 제공합니다.  

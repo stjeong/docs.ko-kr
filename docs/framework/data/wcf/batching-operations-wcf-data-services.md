@@ -5,11 +5,11 @@ helpviewer_keywords:
 - WCF Data Services, client library
 ms.assetid: 962a49d1-cc11-4b96-bc7d-071dd6607d6c
 ms.openlocfilehash: 6d2e3ff7c1dcf3f2c5beb4f6fa9ce8391e2fca2e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43874769"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087896"
 ---
 # <a name="batching-operations-wcf-data-services"></a>일괄 처리 작업(WCF Data Services)
 합니다 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 지원 일괄 처리에 대 한 요청을 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-기반 서비스입니다. 자세한 내용은 [OData: 일괄 처리](https://go.microsoft.com/fwlink/?LinkId=186075)합니다. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 사용 하는 각 작업은 <xref:System.Data.Services.Client.DataServiceContext>, 쿼리를 실행 하면 별도 요청이 데이터 서비스로 전송 되는 결과 변경 내용 저장 등. 작업 집합에 대해 논리적 범위를 유지하려면 작업 일괄 처리를 명시적으로 정의합니다. 이렇게 하면 일괄 처리의 모든 작업이 단일 HTTP 요청에 데이터 서비스에 전송 됩니다, 서버가 작업을 원자적으로 처리할 수 있도록 데이터 서비스에 왕복 수가 줄어듭니다.  

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XML serialization, configuration
 - <dateTimeSerialization> element
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
-ms.openlocfilehash: 15fad472288a72a079991f41e6c2859776d78cca
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: cd275cdbc51c86b1d774058db839c38349b319a6
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43723359"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44078391"
 ---
 # <a name="ltdatetimeserializationgt-element"></a>&lt;dateTimeSerialization&gt; 요소
 <xref:System.DateTime> 개체의 serialization 모드를 결정합니다.  
@@ -50,11 +50,12 @@ ms.locfileid: "43723359"
   
  이 속성이 **Roundtrip**으로 설정된 .NET Framework 버전 2.0 이상에서는 <xref:System.DateTime> 개체를 검사하여 개체가 로컬, UTC 또는 미지정 표준 시간대에 있는지 확인합니다. 그런 다음 <xref:System.DateTime> 개체는 이 정보를 유지할 수 있는 방식으로 serialize됩니다. 이 동작이 기본 동작이며 이전 버전의 framework와 통신하지 않는 모든 새 응용 프로그램에 대해 이를 사용하는 것이 좋습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.DateTime>  
- <xref:System.Xml.Serialization.XmlSchemaImporter>  
- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
- [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<schemaImporterExtensions> 요소](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
- [\<추가 > 요소에 대 한 \<schemaImporterExtensions >](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
- [\<system.xml.serialization> 요소](../../../docs/standard/serialization/system-xml-serialization-element.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.DateTime>  
+- <xref:System.Xml.Serialization.XmlSchemaImporter>  
+- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
+- [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)  
+- [\<schemaImporterExtensions> 요소](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
+- [\<추가 > 요소에 대 한 \<schemaImporterExtensions >](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
+- [\<system.xml.serialization> 요소](../../../docs/standard/serialization/system-xml-serialization-element.md)

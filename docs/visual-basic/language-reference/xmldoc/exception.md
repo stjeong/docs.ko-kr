@@ -6,11 +6,11 @@ helpviewer_keywords:
 - exception XML tag
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
 ms.openlocfilehash: 047805ad91d87550da80448fd10883ae58647bd6
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43881332"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44081290"
 ---
 # <a name="ltexceptiongt-visual-basic"></a>&lt;예외&gt; (Visual Basic)
 예외를 throw 할 수를 지정 합니다.  

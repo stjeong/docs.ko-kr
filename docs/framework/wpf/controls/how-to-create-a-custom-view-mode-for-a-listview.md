@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ListView controls [WPF], creating custom View mode
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
 ms.openlocfilehash: 239fb2e9a364bd0265ff7cf644ee296878280cf3
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43799712"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44081810"
 ---
 # <a name="how-to-create-a-custom-view-mode-for-a-listview"></a>방법: ListView의 사용자 지정 뷰 모드 만들기
 이 예제에는 사용자 지정을 만드는 방법을 보여 줍니다 <xref:System.Windows.Controls.ListView.View%2A> 에 대 한 모드는 <xref:System.Windows.Controls.ListView> 제어 합니다.  

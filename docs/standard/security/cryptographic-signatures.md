@@ -23,11 +23,11 @@ ms.assetid: aa87cb7f-e608-4a81-948b-c9b8a1225783
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 3f9d83a0edb6dc2261931e422b0ae4c735d2e0d1
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43869995"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44086098"
 ---
 # <a name="cryptographic-signatures"></a>암호화 서명
 <a name="top"></a> 암호화 디지털 서명은 public 키 알고리즘을 사용하여 데이터 무결성을 제공합니다. 디지털 서명으로 데이터에 서명하면 다른 사용자가 서명을 확인하고 데이터가 원래 서명자로부터 시작되고 서명자가 서명한 이후 변경되지 않았음을 증명할 수 있습니다. 디지털 서명에 대한 자세한 내용은 [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)를 참조하세요.  

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - configuring HTTP [WCF]
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
 ms.openlocfilehash: 36dbf725dfcd6fefe6482f7de69daea9356d3d07
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43542351"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087701"
 ---
 # <a name="configuring-http-and-https"></a>HTTP 및 HTTPS 구성
 WCF 서비스 및 클라이언트는 HTTP 및 HTTPS를 통해 통신할 수 있습니다. HTTP/HTTPS 설정은 IIS(인터넷 정보 서비스)나 명령줄 도구를 사용하여 구성합니다. WCF 서비스가 IIS 아래에서 호스팅되거나 IIS에서 inetmgr.exe 도구를 사용하여 HTTP 또는 HTTPS 설정을 구성할 수 있는 경우입니다. WCF 서비스가 자체 호스팅되는 경우 HTTP 또는 HTTPS 설정은 명령줄 도구를 사용하여 구성됩니다.  

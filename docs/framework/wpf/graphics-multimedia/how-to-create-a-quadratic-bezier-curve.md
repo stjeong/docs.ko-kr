@@ -7,11 +7,11 @@ helpviewer_keywords:
 - graphics [WPF], quadratic Bezier curves
 ms.assetid: cd8fca4a-504e-4fd8-92ea-2969065a6e02
 ms.openlocfilehash: 8481a7e0e6d682a335b22ea6cdf73a23a9f155af
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43880512"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085834"
 ---
 # <a name="how-to-create-a-quadratic-bezier-curve"></a>방법: 정방형 3차원 곡선 만들기
 이 예제에서는 정방형 베 지 어 곡선을 만드는 방법을 보여 줍니다.  정방형 베 지 어 곡선을 만들려면 사용 합니다 <xref:System.Windows.Media.PathGeometry>, <xref:System.Windows.Media.PathFigure>, 및 <xref:System.Windows.Media.QuadraticBezierSegment> 클래스입니다.  

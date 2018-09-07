@@ -8,12 +8,12 @@ helpviewer_keywords:
 - serialization, guidelines
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-ms.openlocfilehash: 51d561009a2f497cf4cf720abd5a414cbbbb2e64
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b47be45f00ee03d400383dd45dc6776cff3f816d
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592095"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44060335"
 ---
 # <a name="serialization-guidelines"></a>Serialization 지침
 이 문서에서는 serialize될 API를 디자인할 때 고려해야 할 지침을 보여 줍니다.  
@@ -104,7 +104,7 @@ ms.locfileid: "33592095"
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
   
-2.  XML Serialization 특성을 적용하는 방법보다 serialize된 XML의 모양을 더 구체적으로 제어하려면 <xref:System.Xml.Serialization.IXmlSerializable> 인터페이스를 구현하는 것이 좋습니다. 인터페이스의 두 가지 방법 <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> 및 <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, serialize 된 XML 스트림에 완벽 하 게 제어할 수 있습니다. <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> 특성을 적용하여 형식에 대해 생성되는 XML 스키마를 제어할 수도 있습니다.  
+2.  XML Serialization 특성을 적용하는 방법보다 serialize된 XML의 모양을 더 구체적으로 제어하려면 <xref:System.Xml.Serialization.IXmlSerializable> 인터페이스를 구현하는 것이 좋습니다. 인터페이스의 두 가지 방법 <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> 고 <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, serialize 된 XML 스트림을 완전히 제어할 수 있습니다. <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> 특성을 적용하여 형식에 대해 생성되는 XML 스키마를 제어할 수도 있습니다.  
   
 #### <a name="supporting-runtime-serialization"></a>런타임 Serialization 지원  
  *Runtime serialization*은 .NET Remoting에 사용되는 기술입니다. .NET Remoting을 사용하여 형식이 전송될 것으로 판단되면 해당 형식이 런타임 serialization을 지원하는지 확인해야 합니다.  
@@ -138,11 +138,12 @@ ms.locfileid: "33592095"
      [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
      [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]  
   
-## <a name="see-also"></a>참고자료  
- [데이터 계약 사용](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [데이터 계약 직렬 변환기](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
- [이진 serialization](binary-serialization.md)  
- [원격 개체](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
- [XML 및 SOAP serialization](xml-and-soap-serialization.md)  
- [보안 및 Serialization](../../../docs/framework/misc/security-and-serialization.md)
+## <a name="see-also"></a>참고자료
+
+- [데이터 계약 사용](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+- [데이터 계약 직렬 변환기](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
+- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
+- [이진 serialization](binary-serialization.md)  
+- [원격 개체](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
+- [XML 및 SOAP serialization](xml-and-soap-serialization.md)  
+- [보안 및 Serialization](../../../docs/framework/misc/security-and-serialization.md)

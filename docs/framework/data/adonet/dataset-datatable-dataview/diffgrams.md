@@ -3,11 +3,11 @@ title: DiffGram
 ms.date: 03/30/2017
 ms.assetid: 037f3991-7bbc-424b-b52e-8b03585d3e34
 ms.openlocfilehash: fd452efff2a26b66c06a7762b215df140047286d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43785468"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085898"
 ---
 # <a name="diffgrams"></a>DiffGram
 DiffGram은 현재 및 원래의 데이터 요소 버전을 식별하는 XML 형식입니다. <xref:System.Data.DataSet>은 DiffGram 형식을 사용하여 자신의 내용을 로드하고 유지시키며 네트워크 연결을 통한 전송을 위해 이 내용을 serialize합니다. 경우는 <xref:System.Data.DataSet> 채웁니다를 정확 하 게 다시 콘텐츠를 하지만 스키마를 통하지의 필요한 모든 정보를 사용 하 여 DiffGram을 diffgram으로 기록 됩니다는 <xref:System.Data.DataSet>, 둘 다에서 열 값을 포함 하는 **원래** 하 고 **현재** 행 버전, 행 오류 정보 및 행 순서입니다.  

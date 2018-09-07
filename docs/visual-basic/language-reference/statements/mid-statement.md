@@ -11,11 +11,11 @@ helpviewer_keywords:
 - strings [Visual Basic], replacing
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 ms.openlocfilehash: a653e63ded04616b6b0c6bdfb26a0a673d9299fc
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754164"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44061652"
 ---
 # <a name="mid-statement"></a>Mid 문
 지정 된 수의 문자 대체를 `String` 다른 문자열에서 문자를 사용 하 여 변수입니다.  
@@ -57,7 +57,7 @@ Mid( _
 > [!NOTE]
 >  `MidB` 이전 버전의 Visual Basic의 문 문자가 아닌 바이트를의 부분 문자열을 대체 합니다. 더블 바이트 문자 집합 (DBCS) 응용 프로그램의 문자열을 변환에 주로 사용 됩니다. 모든 Visual Basic 문자열은 유니코드, 및 `MidB` 는 지원 되지 않습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `Mid` 문을 다른 문자열에 지정 된 개수의 문자열 변수에 문자를 바꿉니다.  
   
  [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/mid-statement_1.vb)]  

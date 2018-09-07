@@ -3,11 +3,11 @@ title: '방법: Task.WhenAll (Visual Basic)을 사용 하 여 비동기 연습 �
 ms.date: 07/20/2015
 ms.assetid: c06d386d-e996-4da9-bf3d-05a3b6c0a258
 ms.openlocfilehash: 650b96926cf66810a93b003b1ebc09ca16212b00
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43778219"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44064935"
 ---
 # <a name="how-to-extend-the-async-walkthrough-by-using-taskwhenall-visual-basic"></a>방법: Task.WhenAll (Visual Basic)을 사용 하 여 비동기 연습 확장
 비동기 솔루션의 성능을 향상 시킬 수 있습니다 [연습:를 사용 하 여 Async 및 Await (Visual Basic) 하 여 웹에 액세스](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md) 사용 하 여를 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> 메서드. 이 메서드는 작업 컬렉션으로 표시되는 여러 개의 비동기 작업을 비동기적으로 기다립니다.  

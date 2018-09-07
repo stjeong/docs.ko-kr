@@ -3,11 +3,11 @@ title: 큰 데이터 및 스트리밍
 ms.date: 03/30/2017
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
 ms.openlocfilehash: f381df2acdb370c6e84d3a00079578f8fceb69f3
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44033143"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44079762"
 ---
 # <a name="large-data-and-streaming"></a>큰 데이터 및 스트리밍
 Windows Communication Foundation (WCF)는 XML 기반 통신 인프라. 일반적으로 XML 데이터에 정의 된 표준 텍스트 형식으로 인코딩된 때문에 합니다 [XML 1.0 사양](https://go.microsoft.com/fwlink/?LinkId=94838)연결, 시스템 개발자와 설계자가 일반적으로 염려 하는 전송 된 메시지의 통신 사용량 (또는 크기)에서 네트워크 및 XML의 텍스트 기반 인코딩은 이진 데이터의 효율적인 전송에 대 한 특수 한 문제를 제기 합니다.  

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - x:FactoryMethod directive [XAML Services]
 ms.assetid: 829bcbdf-5318-4afb-9a03-c310e0d2f23d
 ms.openlocfilehash: 436caa9b93467dcf2a0763bcc0962a2beb722315
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43804320"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44071124"
 ---
 # <a name="xfactorymethod-directive"></a>x:FactoryMethod 지시문
 XAML 프로세서는 지원 형식 해결 한 후 개체를 초기화 하는 데 사용 해야 하는 생성자 이외의 메서드를 지정 합니다.  

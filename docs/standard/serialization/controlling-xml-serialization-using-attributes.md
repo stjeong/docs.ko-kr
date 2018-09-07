@@ -15,12 +15,12 @@ helpviewer_keywords:
 - serialization, examples
 - serialization, attributes
 ms.assetid: 47d4c39d-30e1-4c7b-8a2e-301325390647
-ms.openlocfilehash: d97798dd44e9661e82a303023e041f5af2f43711
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 28c7ebe1de3adb92e531597027e4b8bb7a63294c
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43501780"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44048340"
 ---
 # <a name="controlling-xml-serialization-using-attributes"></a>특성을 사용하여 XML Serialization 제어
 
@@ -315,12 +315,12 @@ public class Group {
 
 public 속성이나 필드를 serialize할 필요가 없는 상황이 있을 수 있습니다. 예를 들어 메타데이터를 포함하기 위해 필드나 속성을 사용할 수 있습니다. 이러한 경우에는 <xref:System.Xml.Serialization.XmlIgnoreAttribute>를 필드 또는 속성에 적용하면 <xref:System.Xml.Serialization.XmlSerializer>가 이를 건너뜁니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[XML serialization을 제어하는 특성](attributes-that-control-xml-serialization.md)  
-[인코딩된 SOAP serialization을 제어하는 특성](attributes-that-control-encoded-soap-serialization.md)  
-[XML serialization 소개](introducing-xml-serialization.md)  
-[XML serialization 예제](examples-of-xml-serialization.md)  
-[방법: XML 스트림의 대체 요소 이름 지정](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)  
-[방법: 개체 직렬화](how-to-serialize-an-object.md)  
-[방법: 개체 deserialize](how-to-deserialize-an-object.md)  
+- [XML serialization을 제어하는 특성](attributes-that-control-xml-serialization.md)  
+- [인코딩된 SOAP serialization을 제어하는 특성](attributes-that-control-encoded-soap-serialization.md)  
+- [XML serialization 소개](introducing-xml-serialization.md)  
+- [XML serialization 예제](examples-of-xml-serialization.md)  
+- [방법: XML 스트림의 대체 요소 이름 지정](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)  
+- [방법: 개체 직렬화](how-to-serialize-an-object.md)  
+- [방법: 개체 deserialize](how-to-deserialize-an-object.md)  

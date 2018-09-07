@@ -12,12 +12,12 @@ helpviewer_keywords:
 - DataSet class, serializing
 - XML Schema, serializing
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
-ms.openlocfilehash: 066c43ad84a079b40121bc55244d148679c49e48
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 805a495790266b34ede030b76fbd83e6f172ceaf
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520499"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44046699"
 ---
 # <a name="introducing-xml-serialization"></a>XML Serialization 소개
 
@@ -175,15 +175,15 @@ public string MyToken;
 
 - <xref:System.Xml.Serialization.XmlRootAttribute>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-<xref:System.Xml.Serialization.XmlSerializer>  
-<xref:System.Runtime.Serialization.DataContractSerializer>  
-<xref:System.IO.FileStream>  
-[XML 및 SOAP serialization](xml-and-soap-serialization.md)  
-[이진 serialization](binary-serialization.md)  
-[serialization](index.md)  
-<xref:System.Xml.Serialization.XmlSerializer>  
-[XML serialization 예제](examples-of-xml-serialization.md)  
-[방법: 개체 직렬화](how-to-serialize-an-object.md)  
-[방법: 개체 deserialize](how-to-deserialize-an-object.md)  
+- <xref:System.Xml.Serialization.XmlSerializer>
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.IO.FileStream>
+- [XML 및 SOAP serialization](xml-and-soap-serialization.md)
+- [이진 serialization](binary-serialization.md)
+- [serialization](index.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [XML serialization 예제](examples-of-xml-serialization.md)
+- [방법: 개체 직렬화](how-to-serialize-an-object.md)
+- [방법: 개체 deserialize](how-to-deserialize-an-object.md)

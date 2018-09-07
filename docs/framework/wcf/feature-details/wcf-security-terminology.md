@@ -9,11 +9,11 @@ ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 72a2ea1393daa7435ae233d1e420cf88b6f5b6af
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43402418"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44070682"
 ---
 # <a name="wcf-security-terminology"></a>WCF 보안 용어
 보안을 설명할 때 사용되는 일부 용어는 생소할 수 있습니다. 이 항목에서는 일부 보안 용어에 대해 간략하게 설명하며, 모든 항목을 포괄적으로 설명하지는 않습니다.  

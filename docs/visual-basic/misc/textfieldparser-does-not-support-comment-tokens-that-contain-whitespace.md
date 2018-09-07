@@ -5,11 +5,11 @@ f1_keywords:
 - vbrTextFieldParser_WhitespaceInToken
 ms.assetid: 55107656-270e-4bbb-841a-478904df8e07
 ms.openlocfilehash: 2beda651dba952969593ffc7d64f01fd51ab7919
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43556278"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44070890"
 ---
 # <a name="textfieldparser-does-not-support-comment-tokens-that-contain-white-space"></a>TextFieldParser는 공백이 포함 된 주석 토큰을 지원 하지 않습니다.
 공백이 포함된 주석 토큰이 제공되었습니다. 토큰의 시작 부분에 공백이 발생하지 않는 한 `TextFieldParser` 는 공백을 포함하는 주석 토큰을 지원하지 않습니다. 토큰의 시작 부분에 있는 공백은 무시됩니다.  

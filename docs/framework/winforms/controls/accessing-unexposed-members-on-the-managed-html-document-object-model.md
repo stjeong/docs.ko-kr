@@ -9,11 +9,11 @@ helpviewer_keywords:
 - managed HTML DOM [Windows Forms], accessing unexposed members
 ms.assetid: 762295bd-2355-4aa7-b43c-5bff997a33e6
 ms.openlocfilehash: 8767ef0fb484d43ffad4888affebb9d6bb74cc3a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43806019"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44086805"
 ---
 # <a name="accessing-unexposed-members-on-the-managed-html-document-object-model"></a>관리되는 HTML 문서 개체 모델의 노출되지 않은 멤버에 액세스
 호출 하는 클래스를 포함 하는 관리 되는 HTML 문서 개체 모델 (DOM) <xref:System.Windows.Forms.HtmlElement> 속성, 메서드 및 모든 HTML 요소에 공통 되는 이벤트를 노출 하는 합니다. 그러나 경우에 따라 해야 관리 되는 인터페이스를 직접 노출 하지 않는 멤버에 액세스 합니다. 이 항목에서는 두 가지 방법으로 노출 되지 않은 멤버를 포함 하 여 액세스 검사 [!INCLUDE[jsprjscript](../../../../includes/jsprjscript-md.md)] 및 웹 페이지 내에서 정의 하는 VBScript 함수입니다.  

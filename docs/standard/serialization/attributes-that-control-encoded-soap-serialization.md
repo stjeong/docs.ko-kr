@@ -8,12 +8,12 @@ helpviewer_keywords:
 - attributes [.NET Framework], XML serialization
 - serialization, attributes
 ms.assetid: 93ee258c-9c0f-4a08-897c-c10db7a00f91
-ms.openlocfilehash: 07c4c1e9b9a9da2e9a585efdcac644c616012078
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 7b5a48003ff9bfb398c05c8d70a9076d49ad83d6
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43778567"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44065656"
 ---
 # <a name="attributes-that-control-encoded-soap-serialization"></a>인코딩된 SOAP Serialization을 제어하는 특성
 
@@ -32,12 +32,12 @@ ms.locfileid: "43778567"
 |<xref:System.Xml.Serialization.SoapIncludeAttribute>|WSDL(웹 서비스 설명 언어) 문서에 대한 공용 파생 클래스 선언 및 공용 메서드입니다.|스키마를 생성할 때 형식을 포함해야 합니다(serialize될 때 인식되도록).|
 |<xref:System.Xml.Serialization.SoapTypeAttribute>|public 클래스 선언입니다.|클래스는 XML 형식으로 serialize되어야 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[XML 및 SOAP serialization](xml-and-soap-serialization.md)  
-[방법: 개체를 SOAP 인코딩된 XML 스트림으로 직렬화](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
-[방법: 인코딩된 SOAP XML serialization 재정의](how-to-override-encoded-soap-xml-serialization.md)  
-[특성](../../../docs/standard/attributes/index.md)  
-<xref:System.Xml.Serialization.XmlSerializer>  
-[방법: 개체 직렬화](how-to-serialize-an-object.md)  
-[방법: 개체 deserialize](how-to-deserialize-an-object.md)
+- [XML 및 SOAP serialization](xml-and-soap-serialization.md)  
+- [방법: 개체를 SOAP 인코딩된 XML 스트림으로 직렬화](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
+- [방법: 인코딩된 SOAP XML serialization 재정의](how-to-override-encoded-soap-xml-serialization.md)  
+- [특성](../../../docs/standard/attributes/index.md)  
+- <xref:System.Xml.Serialization.XmlSerializer>  
+- [방법: 개체 직렬화](how-to-serialize-an-object.md)  
+- [방법: 개체 deserialize](how-to-deserialize-an-object.md)

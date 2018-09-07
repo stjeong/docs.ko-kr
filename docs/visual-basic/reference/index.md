@@ -5,12 +5,12 @@ helpviewer_keywords:
 - language reference
 - Visual Basic code, language reference
 ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
-ms.openlocfilehash: 773aca8cbbd78f5480e254ff559192955beb18d9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 615421afe522770bfcff38ffdb23917d7925150d
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43532476"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083910"
 ---
 # <a name="reference-visual-basic"></a>참조(Visual Basic)
 이 섹션에서는 Visual Basic 프로그래밍의 다양 한 측면에 대 한 참조 정보에 대 한 링크를 제공 합니다.  
@@ -42,5 +42,5 @@ ms.locfileid: "43532476"
  [Visual Studio의 XML 도구](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Visual Studio에서 사용할 수 있는 다양 한 XML 도구에 항목에 대 한 링크를 제공합니다.  
   
- [자동화 및 확장성 참조](https://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
+ [자동화 및 확장성 참조](/visualstudio/extensibility/extensibility-in-visual-studio)  
  Automation 및 Visual Studio에서 공유 및 언어별 구성 요소에 대 한 확장성을 설명 하는 항목의 링크를 제공 합니다.

@@ -17,21 +17,21 @@ helpviewer_keywords:
 ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 3db4afb00367f719391193ebce4053cc5da16164
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a5cd157f89797406fbe87c3d70c415d7b192d1a9
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33588858"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44061210"
 ---
 # <a name="how-to-store-asymmetric-keys-in-a-key-container"></a>방법: 키 컨테이너에 비대칭 키 저장
 비대칭 개인 키는 로컬 컴퓨터에 축자로 저장하거나 일반 텍스트로 저장해서는 안 됩니다. 개인 키를 저장해야 하는 경우에는 키 컨테이너를 사용해야 합니다. 키 컨테이너에 대한 자세한 내용은 [컴퓨터 수준 및 사용자 수준 RSA 키 컨테이너 이해](https://msdn.microsoft.com/library/9a179f38-8fb7-4442-964c-fb7b9f39f5b9)를 참조하세요.  
   
 ### <a name="to-create-an-asymmetric-key-and-save-it-in-a-key-container"></a>비대칭 키를 만들어 키 컨테이너에 저장하려면  
   
-1.  새 인스턴스를 만들고는 <xref:System.Security.Cryptography.CspParameters> 클래스 및 키 컨테이너를 호출 하려면 이름을 전달 하는 <xref:System.Security.Cryptography.CspParameters.KeyContainerName?displayProperty=nameWithType> 필드입니다.  
+1.  새 인스턴스를 만듭니다는 <xref:System.Security.Cryptography.CspParameters> 클래스 및 키 컨테이너에 호출 하려는 이름을 전달 합니다 <xref:System.Security.Cryptography.CspParameters.KeyContainerName?displayProperty=nameWithType> 필드입니다.  
   
-2.  파생 되는 클래스의 새 인스턴스를 만들고는 <xref:System.Security.Cryptography.AsymmetricAlgorithm> 클래스 (일반적으로 **RSACryptoServiceProvider** 또는 **DSACryptoServiceProvider**) 이전에 만든 전달  **CspParameters** 개체의 생성자입니다.  
+2.  파생 된 클래스의 새 인스턴스를 만들고 합니다 <xref:System.Security.Cryptography.AsymmetricAlgorithm> 클래스 (일반적으로 **RSACryptoServiceProvider** 또는 **DSACryptoServiceProvider**) 이전에 만든 전달  **CspParameters** 개체를 해당 생성자입니다.  
   
 ### <a name="to-delete-the-key-from-a-key-container"></a>키 컨테이너에서 키를 삭제하려면  
   
@@ -223,8 +223,9 @@ Key added to container:
 Key deleted.  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [암호화 및 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)  
- [데이터 암호화](../../../docs/standard/security/encrypting-data.md)  
- [데이터 해독](../../../docs/standard/security/decrypting-data.md)  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## <a name="see-also"></a>참고자료
+
+- [암호화 및 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)  
+- [데이터 암호화](../../../docs/standard/security/encrypting-data.md)  
+- [데이터 해독](../../../docs/standard/security/decrypting-data.md)  
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

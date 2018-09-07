@@ -3,11 +3,11 @@ title: 'Transport: WSE 3.0 TCP Interoperability'
 ms.date: 03/30/2017
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
 ms.openlocfilehash: b727da998736944afd23f7dcfbf45a1f6049d1d0
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43804979"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085968"
 ---
 # <a name="transport-wse-30-tcp-interoperability"></a>Transport: WSE 3.0 TCP Interoperability
 WSE 3.0 TCP Interoperability Transport 샘플에는 TCP 이중 세션을 사용자 지정 Windows Communication Foundation (WCF) 전송으로 구현 하는 방법을 보여 줍니다. 또한 채널 계층의 확장성을 사용하여 연결을 통해 기존에 배포된 시스템과 상호 작용할 수 있는 방법도 보여 줍니다. 다음 단계에는이 사용자 지정 WCF 전송을 작성 하는 방법을 보여 줍니다.  

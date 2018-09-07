@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 64b971e71019359cebc1493a410e748a1fd7b7cb
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0c77832a4c578ddb2c8a427b133e53ab4ab5c5e3
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43734983"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44080623"
 ---
 # <a name="converting-times-between-time-zones"></a>표준 시간대 간 시간 변환
 
@@ -125,6 +125,6 @@ UTC보다 다섯 시간 빠른 표준 시간대의 날짜 및 시간을 나타�
 
 ## <a name="see-also"></a>참고자료
 
-<xref:System.TimeZoneInfo>
-[날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
-[로컬 시스템에 정의 된 표준 시간대 찾기](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
+* <xref:System.TimeZoneInfo>
+* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+* [로컬 시스템에 정의된 표준 시간대 찾기](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)

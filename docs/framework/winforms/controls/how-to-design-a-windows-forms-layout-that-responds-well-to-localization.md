@@ -11,11 +11,11 @@ helpviewer_keywords:
 - localization [Windows Forms], Windows Forms layout
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
 ms.openlocfilehash: c72cae58e8486f1187fd27d200522a43dca328ca
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44032003"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44086676"
 ---
 # <a name="how-to-design-a-windows-forms-layout-that-responds-well-to-localization"></a>방법: 지역화에 적합한 Windows Forms 레이아웃 디자인
 지역화할 준비가 된 폼을 만들면 국제 시장에서 개발 속도를 크게 높일 수 있습니다. <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 사용하여 <xref:System.Windows.Forms.Control.Text%2A> 속성 값 변경 때문에 컨트롤 크기가 조정될 때 정상적으로 응답하는 레이아웃을 구현할 수 있습니다.  

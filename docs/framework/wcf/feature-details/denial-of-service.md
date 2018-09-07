@@ -5,11 +5,11 @@ helpviewer_keywords:
 - denial of service [WCF]
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
 ms.openlocfilehash: d4f7ebf784ab02ecdd0203423157da5bef968a87
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745504"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44064779"
 ---
 # <a name="denial-of-service"></a>서비스 거부
 서비스 거부는 시스템을 가득 채워 메시지를 처리할 수 없거나 메시지가 매우 느리게 처리되는 경우에 발생합니다.  

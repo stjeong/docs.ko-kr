@@ -11,11 +11,11 @@ helpviewer_keywords:
 - sum operator [Visual Basic]
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
 ms.openlocfilehash: 91806c204c313956b292eb9c9be078991f733b4e
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43777979"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44060546"
 ---
 # <a name="-operator-visual-basic"></a>+ 연산자(Visual Basic)
 두 숫자를 추가 하거나 숫자 식의 양수 값을 반환 합니다. 두 문자열 식을 연결할도 사용할 수 있습니다.  

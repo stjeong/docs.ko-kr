@@ -8,11 +8,11 @@ helpviewer_keywords:
 - BC30424
 ms.assetid: 2d402c2f-27ad-428b-b699-d45cd62f7196
 ms.openlocfilehash: 4d635d289ed99aed48c296c278bc546971af51da
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397480"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083924"
 ---
 # <a name="constants-must-be-of-an-intrinsic-or-enumerated-type-not-a-class-structure-type-parameter-or-array-type"></a>상수는 클래스, 구조체, 형식 매개 변수 또는 배열 형식이 아닌 내장 또는 열거 형식이어야 합니다.
 클래스, 구조체 또는 배열 형식 또는 형식 매개 변수를 포함 하는 제네릭 형식에 의해 정의 된 상수를 선언 하려고 했습니다.  

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - inheritance [Windows Forms], forms
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
 ms.openlocfilehash: adaf9224fd340c6ea4342e2591806a7c877e83ff
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43871227"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084411"
 ---
 # <a name="effects-of-modifying-a-base-form39s-appearance"></a>기본 양식의 모양 수정 효과
 응용 프로그램을 개발하는 동안 프로젝트(또는 다른 프로젝트)에 있는 다른 양식을 상속하는 기본 양식의 모양을 변경해야 합니다.  

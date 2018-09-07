@@ -18,11 +18,11 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 3c65e48595f2b49abe06e649898649d76a0668a0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43733926"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44075777"
 ---
 # <a name="icorprofilerinfo2dostacksnapshot-method"></a>ICorProfilerInfo2::DoStackSnapshot 메서드
 스택에 지정된 된 스레드에 대 한 관리 되는 프레임에 설명 하 고는 콜백을 통해 프로파일러에 정보를 보냅니다.  

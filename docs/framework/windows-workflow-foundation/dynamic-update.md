@@ -3,11 +3,11 @@ title: 동적 업데이트
 ms.date: 03/30/2017
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
 ms.openlocfilehash: dea930de2103a24aa48b1d0a31a3cbf5fc0ae26c
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43867987"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44076721"
 ---
 # <a name="dynamic-update"></a>동적 업데이트
 동적 업데이트는 워크플로 응용 프로그램 개발자가 지속형 워크플로 인스턴스의 워크플로 정의를 업데이트하기 위한 메커니즘을 제공합니다. 이를 통해 버그 수정 또는 새 요구 사항을 구현하거나 예기치 않은 변경 내용을 수용할 수 있습니다. 이 항목에서는 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에 도입된 동적 업데이트 기능에 대해 간략하게 설명합니다.  

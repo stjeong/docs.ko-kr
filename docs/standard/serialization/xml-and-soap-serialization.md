@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML serialization
 - serialization
 ms.assetid: 832ac524-21bc-419a-a27b-ca8bfc45840f
-ms.openlocfilehash: ca3b31c1d60770a6b9db5e92275d9840036ee0b0
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: 366a4a42ff0bf968e51e11a66fa81566a47c86ea
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42753910"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44075285"
 ---
 # <a name="xml-and-soap-serialization"></a>XML 및 SOAP Serialization
 
@@ -90,6 +90,6 @@ XML serialization을 제어하기 위한 최상위 구성 요소입니다.
 [ASP.NET 및 XML Web Service 클라이언트를 사용하여 만든 XML Web Services](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
 ASP.NET을 사용하여 XML Web services를 프로그래밍하는 방법을 설명하는 항목을 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[이진 serialization](binary-serialization.md)  
+- [이진 serialization](binary-serialization.md)

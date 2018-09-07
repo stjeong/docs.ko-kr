@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ToolStripPanel control [Windows Forms], joining together
 ms.assetid: 4eadda6d-e3b8-4151-aaf2-a8d564fbe6b3
 ms.openlocfilehash: 5e1688fb00e6eefa4873284e1ea1ba29536d3227
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43878550"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087835"
 ---
 # <a name="how-to-join-toolstrippanels"></a>방법: ToolStripPanels 조인
 런타임에 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 <xref:System.Windows.Forms.ToolStripPanel>에 연결하여 MDI(다중 문서 인터페이스) 응용 프로그램의 유연성을 제공할 수 있습니다.  

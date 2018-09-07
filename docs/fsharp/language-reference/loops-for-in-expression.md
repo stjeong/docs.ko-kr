@@ -3,11 +3,11 @@ title: '루프: for...in 식(F#)'
 description: '참조 하는 방법을 F # 하십시오... 식 구문을 반복을 사용 하는 열거 가능한 컬렉션에서 특정 패턴의 일치를 반복 합니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: c4fba1f1dea3993cafa2e37ad0f32d9fb2eed85a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43869125"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44075574"
 ---
 # <a name="loops-forin-expression"></a>루프: for...in 식
 

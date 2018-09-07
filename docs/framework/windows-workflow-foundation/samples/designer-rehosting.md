@@ -3,11 +3,11 @@ title: 디자이너 재호스팅
 ms.date: 03/30/2017
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
 ms.openlocfilehash: 1901df62ccdeec3f75ce0d8cd85484f46fac4541
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43404102"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44067106"
 ---
 # <a name="designer-rehosting"></a>디자이너 재호스팅
 디자이너 재호스팅은 사용자 지정 응용 프로그램 내에 워크플로 디자인 캔버스를 호스트하는 방식을 가리키는 일반적인 시나리오입니다. 대부분의 사람들이 가장 잘 알고 있는 호스팅 응용 프로그램은 Visual Studio이지만, 응용 프로그램에 Workflow Designer를 표시하는 것이 유용할 수 있는 시나리오는 그 밖에도 여러 가지가 있습니다.  

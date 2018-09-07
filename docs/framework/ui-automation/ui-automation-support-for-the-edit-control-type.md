@@ -10,11 +10,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 39804f7a525a45a4de37e7dded9ac4998280755f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745543"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44070630"
 ---
 # <a name="ui-automation-support-for-the-edit-control-type"></a>Edit 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]

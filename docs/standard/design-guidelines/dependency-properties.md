@@ -6,11 +6,11 @@ ms.assetid: 212cfb1e-cec4-4047-94a6-47209b387f6f
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 75c83dc75d1c86c89169fcc54220ced2a195bfbe
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43866860"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44079089"
 ---
 # <a name="dependency-properties"></a>종속성 속성
 종속성 속성 (DP)에 예를 들어 형식 변수에 (필드)를 저장 하는 대신 속성 저장소에서 해당 값을 저장 하는 일반 속성이입니다.  

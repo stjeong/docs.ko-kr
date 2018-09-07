@@ -8,12 +8,12 @@ helpviewer_keywords:
 - COM objects, referencing
 - interop assemblies
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
-ms.openlocfilehash: 34f46a1ea9c728cbaeb0456f8a6751ff529f2903
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 293bf76b1520f50e67837942eab2f27a49e330e3
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43801692"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44081576"
 ---
 # <a name="how-to-reference-com-objects-from-visual-basic"></a>방법: Visual Basic에서 COM 개체 참조
 Visual basic의 경우 형식 라이브러리가 포함 된 COM 개체에 대 한 참조를 추가 합니다. COM 라이브러리에 대 한 interop 어셈블리를 만들이 필요 합니다. COM 개체의 멤버에 대 한 참조는 interop 어셈블리에 라우팅되어 실제 COM 개체에 전달 됩니다. Interop 어셈블리에 COM 개체의 응답은 라우팅되고 전달할 프로그램 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램입니다.  
@@ -52,10 +52,11 @@ Visual basic의 경우 형식 라이브러리가 포함 된 COM 개체에 대 �
   
      Tlbimp를 사용 하 여 등록 되지 않은 COM 개체에 대해서도 형식 라이브러리에 대 한 interop 어셈블리를 만들 수 있습니다. 그러나 COM 개체에서 interop 어셈블리 참조 되는 데 사용할 컴퓨터에 제대로 등록 되어야 합니다. Windows 운영 체제에 포함 된 Regsvr32 유틸리티를 사용 하 여 COM 개체를 등록할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
- [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe(형식 라이브러리 내보내기)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
- [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
- [상호 운용성 문제 해결](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
- [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+## <a name="see-also"></a>참고자료
+
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+- [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
+- [Tlbexp.exe(형식 라이브러리 내보내기)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)  
+- [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
+- [상호 운용성 문제 해결](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
+- [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)

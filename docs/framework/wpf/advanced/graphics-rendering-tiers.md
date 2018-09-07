@@ -9,11 +9,11 @@ helpviewer_keywords:
 - graphics [WPF], rendering tiers
 ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
 ms.openlocfilehash: 9fb24e13ab684170baf5ac3001d3a2d4bcd6df7e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44036433"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44086039"
 ---
 # <a name="graphics-rendering-tiers"></a>그래픽 렌더링 계층
 렌더링 계층은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 실행하는 장치의 그래픽 하드웨어 기능과 성능 수준을 정의합니다.  

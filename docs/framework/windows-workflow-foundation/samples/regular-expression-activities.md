@@ -3,11 +3,11 @@ title: 정규식 활동
 ms.date: 03/30/2017
 ms.assetid: b8f24694-49db-4339-92ec-014e3d4ae63b
 ms.openlocfilehash: 50daa5b6d7baab37f372de4c30c2e0d12b4fa943
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43743166"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44079684"
 ---
 # <a name="regular-expression-activities"></a>정규식 활동
 이 샘플에서는 <xref:System.Text.RegularExpressions> 네임스페이스의 정규식 기능을 노출하는 활동 집합을 만드는 방법을 보여 줍니다. 이러한 사용자 지정 활동은 워크플로 응용 프로그램 내에서 사용할 수 있습니다. 정규식에 대 한 자세한 내용은 참조 하세요. [N:System.Text.RegularExpressions](https://go.microsoft.com/fwlink/?LinkId=150434) Namespace입니다.  

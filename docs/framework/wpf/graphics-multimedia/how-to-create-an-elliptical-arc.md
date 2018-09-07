@@ -7,11 +7,11 @@ helpviewer_keywords:
 - arcs [WPF], elliptical
 ms.assetid: 3dcfe502-3485-45de-99fb-d53a1367c484
 ms.openlocfilehash: 7ca7d06aa25f8dfae648d8c54c8b95cc277ffbf9
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43877952"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087439"
 ---
 # <a name="how-to-create-an-elliptical-arc"></a>방법: 타원형 원호 만들기
 이 예제에서는 타원형 호를 그리는 방법을 보여 줍니다. 타원형 호를 만들려면 사용 합니다 <xref:System.Windows.Media.PathGeometry>, <xref:System.Windows.Media.PathFigure>, 및 <xref:System.Windows.Media.ArcSegment> 클래스입니다.  

@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 2c4d08b8-fc29-4614-97fa-29c8ff7ca5b3
 ms.openlocfilehash: 0003e6c5e9499c066f47202a6dd03fc86268d679
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43747095"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44066531"
 ---
 # <a name="specifying-xml-values-as-parameters"></a>XML 값을 매개 변수로 지정
 쿼리 매개 변수 값으로 가지는 XML 문자열에 필요한 경우 개발자의 인스턴스를 사용 하 여 해당 값을 제공할 수는 **SqlXml** 데이터 형식입니다. 실제로 가지 기법이; 다른 데이터 형식으로 동일한 방식으로 매개 변수 값을 허용 하는 SQL Server의 XML 열입니다.  

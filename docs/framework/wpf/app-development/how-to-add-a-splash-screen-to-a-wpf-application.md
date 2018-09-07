@@ -16,9 +16,9 @@ ms.locfileid: "43502756"
 ---
 # <a name="how-to-add-a-splash-screen-to-a-wpf-application"></a>방법: WPF 응용 프로그램에 시작 화면 추가
 
-이 항목에서는 시작 창에 추가 하는 방법 또는 *시작 화면*, Windows Presentation Foundation (WPF) 응용 프로그램입니다.
+이 항목에서는 시작 창 또는 *시작 화면*을 Windows Presentation Foundation(WPF) 응용 프로그램에 추가하는 방법을 소개합니다.
 
-## <a name="to-add-an-existing-image-as-a-splash-screen"></a>시작 화면으로 기존 이미지를 추가 하려면
+## <a name="to-add-an-existing-image-as-a-splash-screen"></a>기존 이미지를 시작 화면으로 추가하려면
 
 1.  시작 화면에 사용 하려는 이미지를 찾거나 만듭니다. Windows Imaging 구성 요소 (WIC)에서 지원 되는 모든 이미지 형식을 사용할 수 있습니다. 예를 들어, BMP, GIF, JPEG, PNG 또는 TIFF 형식으로 사용할 수 있습니다.
 

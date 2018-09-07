@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
 ms.openlocfilehash: 25d7f49644996d87ddb5d191dc313916c0ca6fbb
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44037164"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44081166"
 ---
 # <a name="working-with-data-definition-language"></a>데이터 정의 언어로 작업
 부터 합니다 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 버전 4는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] DDL (데이터 정의 언어)을 지원 합니다. 이렇게 하면 연결 문자열 및 저장소(SSDL) 모델의 메타데이터를 기반으로 데이터베이스 인스턴스를 만들거나 삭제할 수 있습니다.  

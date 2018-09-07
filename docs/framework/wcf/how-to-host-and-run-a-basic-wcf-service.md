@@ -9,11 +9,11 @@ helpviewer_keywords:
 - WCF services [WCF], running
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
 ms.openlocfilehash: e2bf16bd07c7ac9d918a4ae95d7f4aa185d436ec
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43741161"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44065382"
 ---
 # <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>방법: 기본 Windows Communication Foundation 서비스 호스트 및 실행
 WCF(Windows Communication Foundation) 응용 프로그램을 만드는 데 필요한 6가지 작업 중 세 번째 작업입니다. 6가지 모든 작업에 대한 개요는 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md) 항목을 참조하세요.  

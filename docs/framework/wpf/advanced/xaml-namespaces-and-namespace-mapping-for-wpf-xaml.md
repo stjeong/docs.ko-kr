@@ -15,11 +15,11 @@ helpviewer_keywords:
 - namespaces [WPF]
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
 ms.openlocfilehash: 9e93d3cd417d0d075fcebb8327ec51799884f8d6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43416113"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44064831"
 ---
 # <a name="xaml-namespaces-and-namespace-mapping-for-wpf-xaml"></a>WPF XAML을 위한 XAML 네임스페이스 및 네임스페이스 매핑
 이 항목에서는 WPF XAML 파일의 루트 태그에서 주로 찾을 수 있는 두 XAML 네임스페이스 매핑과 그 용도에 대해 자세하게 설명합니다. 또한 고유한 코드나 별도의 어셈블리에 정의된 요소에 사용할 수 있도록 유사한 매핑을 생성하는 방법에 대해서도 설명합니다.  

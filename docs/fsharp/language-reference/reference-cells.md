@@ -2,12 +2,12 @@
 title: 참조 셀(F#)
 description: 'F # 참조 셀은 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 133aec6b162a13306a05c9afa172f859890565eb
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: e2e1a91c62fd76e4992bc5ae11bb672766850718
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43892425"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44079298"
 ---
 # <a name="reference-cells"></a>참조 셀
 
@@ -74,62 +74,9 @@ let ref x = { contents = x }
 
 필드 `contents`는 다른 ML 버전과의 호환성을 위해 제공되며 컴파일 과정에서 이 필드로 인해 경고가 발생합니다. 경고가 발생하지 않도록 하려면 `--mlcompatibility` 컴파일러 옵션을 사용해야 합니다. 자세한 내용은 [컴파일러 옵션](compiler-options.md)을 참조하세요.
 
-다음 코드에서는 매개 변수 전달에 참조 셀을 사용하는 방법을 보여 줍니다. 증분 형식은 메서드 byref 매개 변수 형식을 포함 하는 매개 변수를 사용 하는 증가 합니다. Byref 매개 변수 형식에 호출자가이 경우 정수 지정 된 형식의 일반적인 변수에 대 한 주소 또는 참조 셀을 전달 해야 나타냅니다. 나머지 코드는 모두 이러한 유형의 인수를 사용 하 여 증가 호출 하는 방법을 보여 줍니다. 및 (ref myDelta1) 참조 셀을 만들어서 변수에 ref 연산자의 사용을 보여 줍니다. 그런 다음 이 예제에서는 주소 연산자(&amp;)를 사용하여 적절한 인수를 생성하는 방법을 보여 줍니다. 마지막으로, 증분 메서드는 let 바인딩을 사용 하 여 선언한 참조 셀을 사용 하 여 다시 호출 됩니다. 코드의 마지막 줄의 사용 방법을 설명 합니다. 인쇄에 대 한 참조 셀을 역참조 연산자입니다.
+C# 프로그래머는 알아야 `ref` C# 없는 동일 `ref` F #에서. F #의 해당 구문이 [byref](byrefs.md)는 참조 셀에서 다른 개념입니다.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2204.fs)]
-
-참조로 전달 하는 방법에 대 한 자세한 내용은 참조 하세요. [매개 변수 및 인수](parameters-and-arguments.md)합니다.
-
->[!NOTE]
-C# 프로그래머는 ref 다르게 작동 F #에서 C#에서 알고 있어야 합니다. 예를 들어, 인수로 전달 하는 경우 ref 사용이 없는 동일한 효과 F # C#에서 동일 합니다.
-
->[!NOTE]
-`mutable` 변수를 자동으로 승격 될 수 있습니다 `'a ref` 클로저;에 의해 캡처된 참조 [값](values/index.md)합니다.
-
-## <a name="consuming-c-ref-returns"></a>C# 사용 `ref` 반환
-
-F # 4.1 부터는 이용 `ref` C#의 생성을 반환 합니다.  이러한 호출의 결과 `byref<_>` 포인터입니다.
-
-다음 C# 메서드.
-
-```csharp
-namespace RefReturns
-{
-    public static class RefClass
-    {
-        public static ref int Find(int val, int[] vals)
-        {
-            for (int i = 0; i < vals.Length; i++)
-            {
-                if (vals[i] == val)
-                {
-                    return ref numbers[i]; // Returns the location, not the value
-                }
-            }
-
-            throw new IndexOutOfRangeException($"{nameof(number)} not found");
-        }
-    }
-}
-```
-
-투명 하 게 호출할 수 F #에서 특별 한 구문 없음:
-
-```fsharp
-open RefReturns
-
-let consumeRefReturn() =
-    let result = RefClass.Find(3, [| 1; 2; 3; 4; 5 |]) // 'result' is of type 'byref<int>'.
-    ()
-```
-
-발생할 가능성이 있는 함수를 선언할 수도 있습니다는 `ref` 예를 들어 입력으로 반환 합니다.
-
-```fsharp
-let f (x: byref<int>) = &x
-```
-
-현재를 생성할 수 있는지를 `ref` C#에서 사용할 수 있는 F #에서 반환 합니다.
+값으로 표시 `mutable`에 자동으로 승격 될 수 있습니다 `'a ref` 클로저;에 의해 캡처된 참조 [값](values/index.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
