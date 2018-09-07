@@ -1,12 +1,12 @@
 ---
 title: 특성(C#)
 ms.date: 04/26/2018
-ms.openlocfilehash: fe94f0ee778f14581fd7949f705cc22f12058b27
-ms.sourcegitcommit: 88f251b08bf0718ce119f3d7302f514b74895038
+ms.openlocfilehash: c33d93a4af91e0c61546e8d51ab470f2889c095c
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956074"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43892388"
 ---
 # <a name="attributes-c"></a>특성(C#)
 
@@ -125,7 +125,7 @@ using System.Reflection;
 
 ## <a name="see-also"></a>참고 항목
 
- [C# 프로그래밍 가이드](../../index.md)  
- [리플렉션(C#)](../reflection.md)  
- [특성](../../../../standard/attributes/index.md)  
- [C#에서 특성 사용](../../../tutorials/attributes.md)  
+- [C# 프로그래밍 가이드](../../index.md)  
+- [리플렉션(C#)](../reflection.md)  
+- [특성](../../../../standard/attributes/index.md)  
+- [C#에서 특성 사용](../../../tutorials/attributes.md)  

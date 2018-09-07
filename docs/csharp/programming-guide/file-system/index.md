@@ -6,12 +6,12 @@ helpviewer_keywords:
 - registry [C#]
 - files [C#]
 ms.assetid: 0f2511cf-2b02-4b41-b001-b1754677c38f
-ms.openlocfilehash: 20e8b857759253736d11bc31988fadb4843fa87a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3625f7a108675a3a9ab6be16ef94ae7e7c107612
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334862"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44060572"
 ---
 # <a name="file-system-and-the-registry-c-programming-guide"></a>파일 시스템 및 레지스트리(C# 프로그래밍 가이드)
 다음 항목에서는 C# 및 .NET Framework를 사용하여 파일, 폴더 및 레지스트리에 대한 다양한 기본 작업을 수행하는 방법을 보여 줍니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "33334862"
 |[방법: 레지스트리에 키 만들기](../../../csharp/programming-guide/file-system/how-to-create-a-key-in-the-registry.md)|시스템 레지스트리에 키를 작성하는 방법을 보여 줍니다.|  
   
 ## <a name="related-sections"></a>관련 단원  
- [파일 및 스트림 I/O](https://msdn.microsoft.com/library/k3352a4t)  
+ [파일 및 스트림 I/O](../../../standard/io/index.md)  
   
  [방법: 파일 및 폴더 복사, 삭제 및 이동(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md)  
   

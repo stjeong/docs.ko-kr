@@ -12,12 +12,12 @@ helpviewer_keywords:
 - command line [C#], arguments
 - command-line arguments [C#], Main method
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
-ms.openlocfilehash: 03d6e7185a0a16589fb612724be52ce51e813173
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 144d03edf28464717430bd0ae83db637578d8296
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43384509"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "43892258"
 ---
 # <a name="main-and-command-line-arguments-c-programming-guide"></a>Main()과 명령줄 인수(C# 프로그래밍 가이드)
 
@@ -42,7 +42,8 @@ ms.locfileid: "43384509"
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## <a name="see-also"></a>참고 항목
-[csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
-[C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-[메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-[C# 프로그램 내부](../../../csharp/programming-guide/inside-a-program/index.md)  
+
+- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [C# 프로그램 내부](../../../csharp/programming-guide/inside-a-program/index.md)  

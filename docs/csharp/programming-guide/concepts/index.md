@@ -3,11 +3,11 @@ title: 프로그래밍 개념(C#)
 ms.date: 07/20/2015
 ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
 ms.openlocfilehash: f71e05e05e3d027b6190142e8062ea3caf95edb7
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43738373"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44036147"
 ---
 # <a name="programming-concepts-c"></a>프로그래밍 개념(C#)
 이 섹션에서는 C# 언어의 프로그래밍 개념을 설명합니다.  

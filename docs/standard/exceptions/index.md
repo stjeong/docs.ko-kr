@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a278940528966e32646a3551b4c133223de9746e
-ms.sourcegitcommit: 640cee8fc5d256cdd80e5b80240469feac10499e
+ms.openlocfilehash: 263e6394a57ec3e7ef00eb79671d9b8ac47e724f
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298346"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "43883783"
 ---
 # <a name="handling-and-throwing-exceptions-in-net"></a>.NET의 예외 처리 및 Throw
 
@@ -60,13 +60,13 @@ ms.locfileid: "36298346"
 
 ## <a name="see-also"></a>참고 항목
 
-[Exception 클래스 및 속성](exception-class-and-properties.md)  
-[방법: Try/Catch 블록을 사용하여 예외 catch](how-to-use-the-try-catch-block-to-catch-exceptions.md)  
-[방법: Catch 블록에 특정 예외 사용](how-to-use-specific-exceptions-in-a-catch-block.md)  
-[방법: 명시적으로 예외 Throw](how-to-explicitly-throw-exceptions.md)  
-[방법: 사용자 정의 예외 만들기](how-to-create-user-defined-exceptions.md)  
-[사용자 필터 예외 처리기 사용](using-user-filtered-exception-handlers.md)  
-[방법: Finally 블록 사용](how-to-use-finally-blocks.md)  
-[COM Interop 예외 처리](handling-com-interop-exceptions.md)  
-[예외에 대한 모범 사례](best-practices-for-exceptions.md)  
-[What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)(모든 개발자가 런타임 예외에 대해 알아야 할 사항)
+- [Exception 클래스 및 속성](exception-class-and-properties.md)  
+- [방법: Try/Catch 블록을 사용하여 예외 catch](how-to-use-the-try-catch-block-to-catch-exceptions.md)  
+- [방법: Catch 블록에 특정 예외 사용](how-to-use-specific-exceptions-in-a-catch-block.md)  
+- [방법: 명시적으로 예외 Throw](how-to-explicitly-throw-exceptions.md)  
+- [방법: 사용자 정의 예외 만들기](how-to-create-user-defined-exceptions.md)  
+- [사용자 필터 예외 처리기 사용](using-user-filtered-exception-handlers.md)  
+- [방법: Finally 블록 사용](how-to-use-finally-blocks.md)  
+- [COM Interop 예외 처리](handling-com-interop-exceptions.md)  
+- [예외에 대한 모범 사례](best-practices-for-exceptions.md)  
+- [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)(모든 개발자가 런타임 예외에 대해 알아야 할 사항)
