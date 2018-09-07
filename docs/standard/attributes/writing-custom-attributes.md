@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 114d24c1fc523d5501deb4aa17f9541c5a918276
-ms.sourcegitcommit: c66ba2df2d2ecfb214f85ee0687d298e4941c1a8
+ms.openlocfilehash: 67a5ffe2075618020f3ab9f801852a1a97fc74d2
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "33574649"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44072170"
 ---
 # <a name="writing-custom-attributes"></a>사용자 지정 특성 작성
 사용자 지정 특성을 직접 디자인하는 데 새로운 개념을 모두 알 필요는 없습니다. 개체 지향 프로그래밍에 익숙하고 클래스 디자인 방법을 알고 있는 것으로 충분합니다. 사용자 지정 특성은 본래 <xref:System.Attribute?displayProperty=nameWithType>에서 직접 또는 간접적으로 파생된 일반적인 클래스입니다. 일반적인 클래스와 마찬가지로 사용자 지정 특성에도 데이터를 저장하고 검색하는 메서드가 포함되어 있습니다.  
@@ -148,7 +148,8 @@ ms.locfileid: "33574649"
   
  첫 번째 예제에서는 필수 요소인 명명된 매개 변수만 사용하여 적용된 특성을 보여 주고, 두 번째 예제에서는 필수 매개 변수와 선택적 매개 변수를 모두 사용하여 적용된 특성을 보여 줍니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Attribute?displayProperty=nameWithType>  
- <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>  
- [특성](../../../docs/standard/attributes/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Attribute?displayProperty=nameWithType>  
+- <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>  
+- [특성](../../../docs/standard/attributes/index.md)
