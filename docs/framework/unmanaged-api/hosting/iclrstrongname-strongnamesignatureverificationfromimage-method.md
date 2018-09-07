@@ -18,16 +18,16 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: fdbf2126d3da152ce68b6dbb47f5772e3b13d2c6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43660309"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44068694"
 ---
-# <a name="iclrstrongnamestrongnamesignatureverificationfromimage-method"></a><span data-ttu-id="e3d26-102">ICLRStrongName::StrongNameSignatureVerificationFromImage 메서드</span><span class="sxs-lookup"><span data-stu-id="e3d26-102">ICLRStrongName::StrongNameSignatureVerificationFromImage Method</span></span>
-<span data-ttu-id="e3d26-103">메모리에 이미 매핑된 어셈블리가 연결된 공개 키에 유효한지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-103">Verifies that an assembly that has already been mapped to memory is valid for the associated public key.</span></span>  
+# <a name="iclrstrongnamestrongnamesignatureverificationfromimage-method"></a><span data-ttu-id="92e37-102">ICLRStrongName::StrongNameSignatureVerificationFromImage 메서드</span><span class="sxs-lookup"><span data-stu-id="92e37-102">ICLRStrongName::StrongNameSignatureVerificationFromImage Method</span></span>
+<span data-ttu-id="92e37-103">메모리에 이미 매핑된 어셈블리가 연결된 공개 키에 유효한지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-103">Verifies that an assembly that has already been mapped to memory is valid for the associated public key.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="e3d26-104">구문</span><span class="sxs-lookup"><span data-stu-id="e3d26-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="92e37-104">구문</span><span class="sxs-lookup"><span data-stu-id="92e37-104">Syntax</span></span>  
   
 ```  
 HRESULT StrongNameSignatureVerificationFromImage (  
@@ -38,44 +38,44 @@ HRESULT StrongNameSignatureVerificationFromImage (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="e3d26-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e3d26-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="92e37-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="92e37-105">Parameters</span></span>  
  `pbBase`  
- <span data-ttu-id="e3d26-106">[in] 매핑된 어셈블리 매니페스트의 상대 가상 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-106">[in] The relative virtual address of the mapped assembly manifest.</span></span>  
+ <span data-ttu-id="92e37-106">[in] 매핑된 어셈블리 매니페스트의 상대 가상 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-106">[in] The relative virtual address of the mapped assembly manifest.</span></span>  
   
  `dwLength`  
- <span data-ttu-id="e3d26-107">[in] 매핑된 이미지의 바이트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-107">[in] The size, in bytes, of the mapped image.</span></span>  
+ <span data-ttu-id="92e37-107">[in] 매핑된 이미지의 바이트 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-107">[in] The size, in bytes, of the mapped image.</span></span>  
   
  `dwInFlags`  
- <span data-ttu-id="e3d26-108">[in] 확인 동작에 영향을 주는 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-108">[in] Flags that influence verification behavior.</span></span> <span data-ttu-id="e3d26-109">다음 값이 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-109">The following values are supported:</span></span>  
+ <span data-ttu-id="92e37-108">[in] 확인 동작에 영향을 주는 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-108">[in] Flags that influence verification behavior.</span></span> <span data-ttu-id="92e37-109">다음 값이 지원 됩니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-109">The following values are supported:</span></span>  
   
--   <span data-ttu-id="e3d26-110">`SN_INFLAG_FORCE_VER` (0x00000001)-레지스트리 설정을 재정의 해야 하는 경우에 확인이 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-110">`SN_INFLAG_FORCE_VER` (0x00000001) - Forces verification even if it is necessary to override registry settings.</span></span>  
+-   <span data-ttu-id="92e37-110">`SN_INFLAG_FORCE_VER` (0x00000001)-레지스트리 설정을 재정의 해야 하는 경우에 확인이 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-110">`SN_INFLAG_FORCE_VER` (0x00000001) - Forces verification even if it is necessary to override registry settings.</span></span>  
   
--   <span data-ttu-id="e3d26-111">`SN_INFLAG_INSTALL` (0x00000002)-이 이미지에서 수행 된 첫 번째 확인 작업 임을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-111">`SN_INFLAG_INSTALL` (0x00000002) - Specifies that this is the first verification performed on this image.</span></span>  
+-   <span data-ttu-id="92e37-111">`SN_INFLAG_INSTALL` (0x00000002)-이 이미지에서 수행 된 첫 번째 확인 작업 임을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-111">`SN_INFLAG_INSTALL` (0x00000002) - Specifies that this is the first verification performed on this image.</span></span>  
   
--   <span data-ttu-id="e3d26-112">`SN_INFLAG_ADMIN_ACCESS` (0x00000004)-캐시는 관리 권한이 있는 사용자만 액세스할 수 있도록 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-112">`SN_INFLAG_ADMIN_ACCESS` (0x00000004) - Specifies that the cache will allow access only to users who have administrative privileges.</span></span>  
+-   <span data-ttu-id="92e37-112">`SN_INFLAG_ADMIN_ACCESS` (0x00000004)-캐시는 관리 권한이 있는 사용자만 액세스할 수 있도록 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-112">`SN_INFLAG_ADMIN_ACCESS` (0x00000004) - Specifies that the cache will allow access only to users who have administrative privileges.</span></span>  
   
--   <span data-ttu-id="e3d26-113">`SN_INFLAG_USER_ACCESS` (0x00000008)-어셈블리는 현재 사용자만 액세스할 수 있도록 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-113">`SN_INFLAG_USER_ACCESS` (0x00000008) - Specifies that the assembly will be accessible only to the current user.</span></span>  
+-   <span data-ttu-id="92e37-113">`SN_INFLAG_USER_ACCESS` (0x00000008)-어셈블리는 현재 사용자만 액세스할 수 있도록 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-113">`SN_INFLAG_USER_ACCESS` (0x00000008) - Specifies that the assembly will be accessible only to the current user.</span></span>  
   
--   <span data-ttu-id="e3d26-114">`SN_INFLAG_ALL_ACCESS` (0x00000010)-캐시의 액세스 제한이 않음을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-114">`SN_INFLAG_ALL_ACCESS` (0x00000010) - Specifies that the cache will provide no guarantees of access restriction.</span></span>  
+-   <span data-ttu-id="92e37-114">`SN_INFLAG_ALL_ACCESS` (0x00000010)-캐시의 액세스 제한이 않음을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-114">`SN_INFLAG_ALL_ACCESS` (0x00000010) - Specifies that the cache will provide no guarantees of access restriction.</span></span>  
   
--   <span data-ttu-id="e3d26-115">`SN_INFLAG_RUNTIME` (0x80000000)-내부 디버깅을 위해 예약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-115">`SN_INFLAG_RUNTIME` (0x80000000) - Reserved for internal debugging.</span></span>  
+-   <span data-ttu-id="92e37-115">`SN_INFLAG_RUNTIME` (0x80000000)-내부 디버깅을 위해 예약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-115">`SN_INFLAG_RUNTIME` (0x80000000) - Reserved for internal debugging.</span></span>  
   
  `pdwOutFlags`  
- <span data-ttu-id="e3d26-116">[out] 출력 추가 정보에 대 한 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-116">[out] A flag for additional output information.</span></span> <span data-ttu-id="e3d26-117">다음 값을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-117">The following value is supported:</span></span>  
+ <span data-ttu-id="92e37-116">[out] 출력 추가 정보에 대 한 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-116">[out] A flag for additional output information.</span></span> <span data-ttu-id="92e37-117">다음 값을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-117">The following value is supported:</span></span>  
   
--   <span data-ttu-id="e3d26-118">`SN_OUTFLAG_WAS_VERIFIED` (0x00000001)-이 값 설정할지 `false` 레지스트리 설정으로 인해 확인이 성공 했는지를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3d26-118">`SN_OUTFLAG_WAS_VERIFIED` (0x00000001) - This value is set to `false` to specify that the verification succeeded due to registry settings.</span></span>  
+-   <span data-ttu-id="92e37-118">`SN_OUTFLAG_WAS_VERIFIED` (0x00000001)-이 값 설정할지 `false` 레지스트리 설정으로 인해 확인이 성공 했는지를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="92e37-118">`SN_OUTFLAG_WAS_VERIFIED` (0x00000001) - This value is set to `false` to specify that the verification succeeded due to registry settings.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="e3d26-119">반환 값</span><span class="sxs-lookup"><span data-stu-id="e3d26-119">Return Value</span></span>  
- <span data-ttu-id="e3d26-120">`S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).</span><span class="sxs-lookup"><span data-stu-id="e3d26-120">`S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).</span></span>  
+## <a name="return-value"></a><span data-ttu-id="92e37-119">반환 값</span><span class="sxs-lookup"><span data-stu-id="92e37-119">Return Value</span></span>  
+ <span data-ttu-id="92e37-120">`S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).</span><span class="sxs-lookup"><span data-stu-id="92e37-120">`S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="e3d26-121">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e3d26-121">Requirements</span></span>  
- <span data-ttu-id="e3d26-122">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e3d26-122">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="92e37-121">요구 사항</span><span class="sxs-lookup"><span data-stu-id="92e37-121">Requirements</span></span>  
+ <span data-ttu-id="92e37-122">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="92e37-122">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="e3d26-123">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="e3d26-123">**Header:** MetaHost.h</span></span>  
+ <span data-ttu-id="92e37-123">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="92e37-123">**Header:** MetaHost.h</span></span>  
   
- <span data-ttu-id="e3d26-124">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="e3d26-124">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="92e37-124">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="92e37-124">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="e3d26-125">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e3d26-125">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="92e37-125">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="92e37-125">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e3d26-126">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e3d26-126">See Also</span></span>  
- [<span data-ttu-id="e3d26-127">ICLRStrongName 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e3d26-127">ICLRStrongName Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## <a name="see-also"></a><span data-ttu-id="92e37-126">참고 항목</span><span class="sxs-lookup"><span data-stu-id="92e37-126">See Also</span></span>  
+ [<span data-ttu-id="92e37-127">ICLRStrongName 인터페이스</span><span class="sxs-lookup"><span data-stu-id="92e37-127">ICLRStrongName Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

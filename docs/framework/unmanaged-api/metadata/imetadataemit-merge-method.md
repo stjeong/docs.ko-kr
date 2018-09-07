@@ -18,16 +18,16 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 899f2ca5ef1b987687f5c065ad3e1965e142d103
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43743968"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44080792"
 ---
-# <a name="imetadataemitmerge-method"></a><span data-ttu-id="1a855-102">IMetaDataEmit::병합 메서드</span><span class="sxs-lookup"><span data-stu-id="1a855-102">IMetaDataEmit::Merge Method</span></span>
-<span data-ttu-id="1a855-103">병합할 범위의 목록에 지정된 된 가져온된 범위를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a855-103">Adds the specified imported scope to the list of scopes to be merged.</span></span>  
+# <a name="imetadataemitmerge-method"></a><span data-ttu-id="aa648-102">IMetaDataEmit::병합 메서드</span><span class="sxs-lookup"><span data-stu-id="aa648-102">IMetaDataEmit::Merge Method</span></span>
+<span data-ttu-id="aa648-103">병합할 범위의 목록에 지정된 된 가져온된 범위를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="aa648-103">Adds the specified imported scope to the list of scopes to be merged.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="1a855-104">구문</span><span class="sxs-lookup"><span data-stu-id="1a855-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="aa648-104">구문</span><span class="sxs-lookup"><span data-stu-id="aa648-104">Syntax</span></span>  
   
 ```  
 HRESULT Merge (   
@@ -37,28 +37,28 @@ HRESULT Merge (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="1a855-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="1a855-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="aa648-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="aa648-105">Parameters</span></span>  
  `pImport`  
- <span data-ttu-id="1a855-106">[in] 에 대 한 포인터를 [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) 병합할 가져온된 범위를 식별 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="1a855-106">[in] A pointer to an [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) object that identifies the imported scope to be merged.</span></span>  
+ <span data-ttu-id="aa648-106">[in] 에 대 한 포인터를 [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) 병합할 가져온된 범위를 식별 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="aa648-106">[in] A pointer to an [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) object that identifies the imported scope to be merged.</span></span>  
   
  `pIMap`  
- <span data-ttu-id="1a855-107">[in] 에 대 한 포인터를 [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) 토큰 다시 매핑을 지정 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="1a855-107">[in] A pointer to an [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) object that specifies the token re-map.</span></span>  
+ <span data-ttu-id="aa648-107">[in] 에 대 한 포인터를 [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) 토큰 다시 매핑을 지정 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="aa648-107">[in] A pointer to an [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) object that specifies the token re-map.</span></span>  
   
  `pHandleer`  
- <span data-ttu-id="1a855-108">[in] 에 대 한 포인터를 [IUnknown](/cpp/atl/iunknown) 오류를 지정 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="1a855-108">[in] A pointer to an [IUnknown](/cpp/atl/iunknown) object that specifies the errors.</span></span>  
+ <span data-ttu-id="aa648-108">[in] 에 대 한 포인터를 [IUnknown](/cpp/atl/iunknown) 오류를 지정 하는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="aa648-108">[in] A pointer to an [IUnknown](/cpp/atl/iunknown) object that specifies the errors.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="1a855-109">설명</span><span class="sxs-lookup"><span data-stu-id="1a855-109">Remarks</span></span>  
- <span data-ttu-id="1a855-110">호출 [imetadataemit:: Mergeend](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-mergeend-method.md) 단일 범위로 메타 데이터는 병합을 트리거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a855-110">Call [IMetaDataEmit::MergeEnd](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-mergeend-method.md) to trigger the merger of metadata into a single scope.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="aa648-109">설명</span><span class="sxs-lookup"><span data-stu-id="aa648-109">Remarks</span></span>  
+ <span data-ttu-id="aa648-110">호출 [imetadataemit:: Mergeend](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-mergeend-method.md) 단일 범위로 메타 데이터는 병합을 트리거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa648-110">Call [IMetaDataEmit::MergeEnd](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-mergeend-method.md) to trigger the merger of metadata into a single scope.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="1a855-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="1a855-111">Requirements</span></span>  
- <span data-ttu-id="1a855-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="1a855-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="aa648-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="aa648-111">Requirements</span></span>  
+ <span data-ttu-id="aa648-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="aa648-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="1a855-113">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="1a855-113">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="aa648-113">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="aa648-113">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="1a855-114">**라이브러리:** MSCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="1a855-114">**Library:** Used as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="aa648-114">**라이브러리:** MSCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="aa648-114">**Library:** Used as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="1a855-115">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1a855-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="aa648-115">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa648-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1a855-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="1a855-116">See Also</span></span>  
- [<span data-ttu-id="1a855-117">IMetaDataEmit 인터페이스</span><span class="sxs-lookup"><span data-stu-id="1a855-117">IMetaDataEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [<span data-ttu-id="1a855-118">IMetaDataEmit2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="1a855-118">IMetaDataEmit2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## <a name="see-also"></a><span data-ttu-id="aa648-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="aa648-116">See Also</span></span>  
+ [<span data-ttu-id="aa648-117">IMetaDataEmit 인터페이스</span><span class="sxs-lookup"><span data-stu-id="aa648-117">IMetaDataEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
+ [<span data-ttu-id="aa648-118">IMetaDataEmit2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="aa648-118">IMetaDataEmit2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
