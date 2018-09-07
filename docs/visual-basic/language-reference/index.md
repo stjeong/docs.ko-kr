@@ -11,79 +11,79 @@ helpviewer_keywords:
 - Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
 ms.openlocfilehash: 2c0372e0176ea54a975e787631ba2849f79e5493
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43876624"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44075298"
 ---
-# <a name="visual-basic-language-reference"></a><span data-ttu-id="49933-102">Visual Basic 언어 참조</span><span class="sxs-lookup"><span data-stu-id="49933-102">Visual Basic Language Reference</span></span>
-<span data-ttu-id="49933-103">이 섹션에서는 Visual Basic 언어의 다양 한 측면에 대 한 참조 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-103">This section provides reference information for various aspects of the Visual Basic language.</span></span>  
+# <a name="visual-basic-language-reference"></a><span data-ttu-id="89768-102">Visual Basic 언어 참조</span><span class="sxs-lookup"><span data-stu-id="89768-102">Visual Basic Language Reference</span></span>
+<span data-ttu-id="89768-103">이 섹션에서는 Visual Basic 언어의 다양 한 측면에 대 한 참조 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-103">This section provides reference information for various aspects of the Visual Basic language.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="49933-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="49933-104">In This Section</span></span>  
- [<span data-ttu-id="49933-105">글꼴 표시 및 코드 규칙</span><span class="sxs-lookup"><span data-stu-id="49933-105">Typographic and Code Conventions</span></span>](../../visual-basic/language-reference/typographic-and-code-conventions.md)  
- <span data-ttu-id="49933-106">키워드, 자리 표시자 및 언어의 다른 요소는 Visual Basic 설명서에서 형식이 지정 되는 방법은 요약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="49933-106">Summarizes the way that keywords, placeholders, and other elements of the language are formatted in the Visual Basic documentation.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="89768-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="89768-104">In This Section</span></span>  
+ [<span data-ttu-id="89768-105">글꼴 표시 및 코드 규칙</span><span class="sxs-lookup"><span data-stu-id="89768-105">Typographic and Code Conventions</span></span>](../../visual-basic/language-reference/typographic-and-code-conventions.md)  
+ <span data-ttu-id="89768-106">키워드, 자리 표시자 및 언어의 다른 요소는 Visual Basic 설명서에서 형식이 지정 되는 방법은 요약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="89768-106">Summarizes the way that keywords, placeholders, and other elements of the language are formatted in the Visual Basic documentation.</span></span>  
   
- [<span data-ttu-id="49933-107">Visual Basic 런타임 라이브러리 멤버</span><span class="sxs-lookup"><span data-stu-id="49933-107">Visual Basic Runtime Library Members</span></span>](../../visual-basic/language-reference/runtime-library-members.md)  
- <span data-ttu-id="49933-108"><xref:Microsoft.VisualBasic?displayProperty=nameWithType> 네임스페이스의 클래스 및 모듈을 멤버 함수, 메서드, 속성, 상수, 열거형의 링크와 함께 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-108">Lists the classes and modules of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace, with links to their member functions, methods, properties, constants, and enumerations.</span></span>  
+ [<span data-ttu-id="89768-107">Visual Basic 런타임 라이브러리 멤버</span><span class="sxs-lookup"><span data-stu-id="89768-107">Visual Basic Runtime Library Members</span></span>](../../visual-basic/language-reference/runtime-library-members.md)  
+ <span data-ttu-id="89768-108"><xref:Microsoft.VisualBasic?displayProperty=nameWithType> 네임스페이스의 클래스 및 모듈을 멤버 함수, 메서드, 속성, 상수, 열거형의 링크와 함께 나열합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-108">Lists the classes and modules of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace, with links to their member functions, methods, properties, constants, and enumerations.</span></span>  
   
- [<span data-ttu-id="49933-109">키워드</span><span class="sxs-lookup"><span data-stu-id="49933-109">Keywords</span></span>](../../visual-basic/language-reference/keywords/index.md)  
- <span data-ttu-id="49933-110">모든 Visual Basic 키워드를 나열하고 추가 정보의 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-110">Lists all Visual Basic keywords and provides links to more information.</span></span>  
+ [<span data-ttu-id="89768-109">키워드</span><span class="sxs-lookup"><span data-stu-id="89768-109">Keywords</span></span>](../../visual-basic/language-reference/keywords/index.md)  
+ <span data-ttu-id="89768-110">모든 Visual Basic 키워드를 나열하고 추가 정보의 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-110">Lists all Visual Basic keywords and provides links to more information.</span></span>  
   
- [<span data-ttu-id="49933-111">특성(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="49933-111">Attributes (Visual Basic)</span></span>](../../visual-basic/language-reference/attributes.md)  
- <span data-ttu-id="49933-112">Visual Basic에서 사용할 수 있는 특성을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-112">Documents the attributes available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-111">특성(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="89768-111">Attributes (Visual Basic)</span></span>](../../visual-basic/language-reference/attributes.md)  
+ <span data-ttu-id="89768-112">Visual Basic에서 사용할 수 있는 특성을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-112">Documents the attributes available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-113">상수 및 열거형</span><span class="sxs-lookup"><span data-stu-id="49933-113">Constants and Enumerations</span></span>](../../visual-basic/language-reference/constants-and-enumerations.md)  
- <span data-ttu-id="49933-114">상수 및 Visual Basic에서 사용할 수 있는 열거형을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-114">Documents the constants and enumerations available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-113">상수 및 열거형</span><span class="sxs-lookup"><span data-stu-id="89768-113">Constants and Enumerations</span></span>](../../visual-basic/language-reference/constants-and-enumerations.md)  
+ <span data-ttu-id="89768-114">상수 및 Visual Basic에서 사용할 수 있는 열거형을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-114">Documents the constants and enumerations available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-115">데이터 형식</span><span class="sxs-lookup"><span data-stu-id="49933-115">Data Types</span></span>](../../visual-basic/language-reference/data-types/index.md)  
- <span data-ttu-id="49933-116">Visual Basic에서 사용할 수 있는 데이터 형식에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-116">Documents the data types available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-115">데이터 형식</span><span class="sxs-lookup"><span data-stu-id="89768-115">Data Types</span></span>](../../visual-basic/language-reference/data-types/index.md)  
+ <span data-ttu-id="89768-116">Visual Basic에서 사용할 수 있는 데이터 형식에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-116">Documents the data types available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-117">지시문</span><span class="sxs-lookup"><span data-stu-id="49933-117">Directives</span></span>](../../visual-basic/language-reference/directives/index.md)  
- <span data-ttu-id="49933-118">Visual Basic에서 사용할 수 있는 컴파일러 지시문을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-118">Documents the compiler directives available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-117">지시문</span><span class="sxs-lookup"><span data-stu-id="89768-117">Directives</span></span>](../../visual-basic/language-reference/directives/index.md)  
+ <span data-ttu-id="89768-118">Visual Basic에서 사용할 수 있는 컴파일러 지시문을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-118">Documents the compiler directives available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-119">함수</span><span class="sxs-lookup"><span data-stu-id="49933-119">Functions</span></span>](../../visual-basic/language-reference/functions/index.md)  
- <span data-ttu-id="49933-120">Visual Basic에서 사용 가능한 런타임 함수를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-120">Documents the run-time functions available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-119">함수</span><span class="sxs-lookup"><span data-stu-id="89768-119">Functions</span></span>](../../visual-basic/language-reference/functions/index.md)  
+ <span data-ttu-id="89768-120">Visual Basic에서 사용 가능한 런타임 함수를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-120">Documents the run-time functions available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-121">한정자</span><span class="sxs-lookup"><span data-stu-id="49933-121">Modifiers</span></span>](../../visual-basic/language-reference/modifiers/index.md)  
- <span data-ttu-id="49933-122">Visual Basic 런타임 한정자를 나열하고 추가 정보의 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-122">Lists the Visual Basic run-time modifiers and provides links to more information.</span></span>  
+ [<span data-ttu-id="89768-121">한정자</span><span class="sxs-lookup"><span data-stu-id="89768-121">Modifiers</span></span>](../../visual-basic/language-reference/modifiers/index.md)  
+ <span data-ttu-id="89768-122">Visual Basic 런타임 한정자를 나열하고 추가 정보의 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-122">Lists the Visual Basic run-time modifiers and provides links to more information.</span></span>  
   
- [<span data-ttu-id="49933-123">모듈</span><span class="sxs-lookup"><span data-stu-id="49933-123">Modules</span></span>](../../visual-basic/language-reference/modules.md)  
- <span data-ttu-id="49933-124">Visual Basic 및 해당 멤버에서 사용 가능한 모듈을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-124">Documents the modules available in Visual Basic and their members.</span></span>  
+ [<span data-ttu-id="89768-123">모듈</span><span class="sxs-lookup"><span data-stu-id="89768-123">Modules</span></span>](../../visual-basic/language-reference/modules.md)  
+ <span data-ttu-id="89768-124">Visual Basic 및 해당 멤버에서 사용 가능한 모듈을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-124">Documents the modules available in Visual Basic and their members.</span></span>  
   
- [<span data-ttu-id="49933-125">Nothing</span><span class="sxs-lookup"><span data-stu-id="49933-125">Nothing</span></span>](../../visual-basic/language-reference/nothing.md)  
- <span data-ttu-id="49933-126">데이터 형식의 기본값을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-126">Describes the default value of any data type.</span></span>  
+ [<span data-ttu-id="89768-125">Nothing</span><span class="sxs-lookup"><span data-stu-id="89768-125">Nothing</span></span>](../../visual-basic/language-reference/nothing.md)  
+ <span data-ttu-id="89768-126">데이터 형식의 기본값을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-126">Describes the default value of any data type.</span></span>  
   
- [<span data-ttu-id="49933-127">개체</span><span class="sxs-lookup"><span data-stu-id="49933-127">Objects</span></span>](../../visual-basic/language-reference/objects/index.md)  
- <span data-ttu-id="49933-128">Visual Basic 및 해당 멤버에서 사용 가능한 개체를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-128">Documents the objects available in Visual Basic and their members.</span></span>  
+ [<span data-ttu-id="89768-127">개체</span><span class="sxs-lookup"><span data-stu-id="89768-127">Objects</span></span>](../../visual-basic/language-reference/objects/index.md)  
+ <span data-ttu-id="89768-128">Visual Basic 및 해당 멤버에서 사용 가능한 개체를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-128">Documents the objects available in Visual Basic and their members.</span></span>  
   
- [<span data-ttu-id="49933-129">연산자</span><span class="sxs-lookup"><span data-stu-id="49933-129">Operators</span></span>](../../visual-basic/language-reference/operators/index.md)  
- <span data-ttu-id="49933-130">Visual Basic에서 사용할 수 있는 연산자를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-130">Documents the operators available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-129">연산자</span><span class="sxs-lookup"><span data-stu-id="89768-129">Operators</span></span>](../../visual-basic/language-reference/operators/index.md)  
+ <span data-ttu-id="89768-130">Visual Basic에서 사용할 수 있는 연산자를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-130">Documents the operators available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-131">속성</span><span class="sxs-lookup"><span data-stu-id="49933-131">Properties</span></span>](../../visual-basic/language-reference/properties.md)  
- <span data-ttu-id="49933-132">Visual Basic에서 사용할 수 있는 속성을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-132">Documents the properties available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-131">속성</span><span class="sxs-lookup"><span data-stu-id="89768-131">Properties</span></span>](../../visual-basic/language-reference/properties.md)  
+ <span data-ttu-id="89768-132">Visual Basic에서 사용할 수 있는 속성을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-132">Documents the properties available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-133">쿼리</span><span class="sxs-lookup"><span data-stu-id="49933-133">Queries</span></span>](../../visual-basic/language-reference/queries/index.md)  
- <span data-ttu-id="49933-134">코드에서 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 식을 사용하는 방법에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-134">Provides reference information about using [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.</span></span>  
+ [<span data-ttu-id="89768-133">쿼리</span><span class="sxs-lookup"><span data-stu-id="89768-133">Queries</span></span>](../../visual-basic/language-reference/queries/index.md)  
+ <span data-ttu-id="89768-134">코드에서 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 식을 사용하는 방법에 대한 참조 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-134">Provides reference information about using [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.</span></span>  
   
- [<span data-ttu-id="49933-135">문</span><span class="sxs-lookup"><span data-stu-id="49933-135">Statements</span></span>](../../visual-basic/language-reference/statements/index.md)  
- <span data-ttu-id="49933-136">Visual Basic에서 사용할 수 있는 선언 및 실행 가능 문을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-136">Documents the declaration and executable statements available in Visual Basic.</span></span>  
+ [<span data-ttu-id="89768-135">문</span><span class="sxs-lookup"><span data-stu-id="89768-135">Statements</span></span>](../../visual-basic/language-reference/statements/index.md)  
+ <span data-ttu-id="89768-136">Visual Basic에서 사용할 수 있는 선언 및 실행 가능 문을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-136">Documents the declaration and executable statements available in Visual Basic.</span></span>  
   
- [<span data-ttu-id="49933-137">XML 주석 태그</span><span class="sxs-lookup"><span data-stu-id="49933-137">XML Comment Tags</span></span>](../../visual-basic/language-reference/xmldoc/index.md)  
- <span data-ttu-id="49933-138">IntelliSense는 Visual Basic 코드 편집기에서 제공 되는 문서 주석을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-138">Describes the documentation comments for which IntelliSense is provided in the Visual Basic Code Editor.</span></span>  
+ [<span data-ttu-id="89768-137">XML 주석 태그</span><span class="sxs-lookup"><span data-stu-id="89768-137">XML Comment Tags</span></span>](../../visual-basic/language-reference/xmldoc/index.md)  
+ <span data-ttu-id="89768-138">IntelliSense는 Visual Basic 코드 편집기에서 제공 되는 문서 주석을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-138">Describes the documentation comments for which IntelliSense is provided in the Visual Basic Code Editor.</span></span>  
   
- [<span data-ttu-id="49933-139">XML 축 속성</span><span class="sxs-lookup"><span data-stu-id="49933-139">XML Axis Properties</span></span>](../../visual-basic/language-reference/xml-axis/index.md)  
- <span data-ttu-id="49933-140">XML 축 속성을 사용하여 코드에서 직접 XML에 액세스하는 방법에 대한 정보 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-140">Provides links to information about using XML axis properties to access XML directly in your code.</span></span>  
+ [<span data-ttu-id="89768-139">XML 축 속성</span><span class="sxs-lookup"><span data-stu-id="89768-139">XML Axis Properties</span></span>](../../visual-basic/language-reference/xml-axis/index.md)  
+ <span data-ttu-id="89768-140">XML 축 속성을 사용하여 코드에서 직접 XML에 액세스하는 방법에 대한 정보 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-140">Provides links to information about using XML axis properties to access XML directly in your code.</span></span>  
   
- [<span data-ttu-id="49933-141">XML 리터럴</span><span class="sxs-lookup"><span data-stu-id="49933-141">XML Literals</span></span>](../../visual-basic/language-reference/xml-literals/index.md)  
- <span data-ttu-id="49933-142">XML 리터럴을 사용하여 코드에서 직접 XML을 통합하는 방법에 대한 정보 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-142">Provides links to information about using XML literals to incorporate XML directly in your code.</span></span>  
+ [<span data-ttu-id="89768-141">XML 리터럴</span><span class="sxs-lookup"><span data-stu-id="89768-141">XML Literals</span></span>](../../visual-basic/language-reference/xml-literals/index.md)  
+ <span data-ttu-id="89768-142">XML 리터럴을 사용하여 코드에서 직접 XML을 통합하는 방법에 대한 정보 링크를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-142">Provides links to information about using XML literals to incorporate XML directly in your code.</span></span>  
   
- [<span data-ttu-id="49933-143">오류 메시지</span><span class="sxs-lookup"><span data-stu-id="49933-143">Error Messages</span></span>](../../visual-basic/language-reference/error-messages/index.md)  
- <span data-ttu-id="49933-144">처리 하는 방법에 Visual Basic 컴파일러 및 런타임 오류 메시지 및 도움말의 목록을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-144">Provides a listing of Visual Basic compiler and run-time error messages and help on how to handle them.</span></span>  
+ [<span data-ttu-id="89768-143">오류 메시지</span><span class="sxs-lookup"><span data-stu-id="89768-143">Error Messages</span></span>](../../visual-basic/language-reference/error-messages/index.md)  
+ <span data-ttu-id="89768-144">처리 하는 방법에 Visual Basic 컴파일러 및 런타임 오류 메시지 및 도움말의 목록을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-144">Provides a listing of Visual Basic compiler and run-time error messages and help on how to handle them.</span></span>  
   
-## <a name="related-sections"></a><span data-ttu-id="49933-145">관련 단원</span><span class="sxs-lookup"><span data-stu-id="49933-145">Related Sections</span></span>  
- [<span data-ttu-id="49933-146">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="49933-146">Visual Basic</span></span>](../../visual-basic/index.md)  
- <span data-ttu-id="49933-147">Visual Basic 언어의 모든 영역에 광범위 한 도움말을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-147">Provides comprehensive help on all areas of the Visual Basic language.</span></span>  
+## <a name="related-sections"></a><span data-ttu-id="89768-145">관련 단원</span><span class="sxs-lookup"><span data-stu-id="89768-145">Related Sections</span></span>  
+ [<span data-ttu-id="89768-146">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="89768-146">Visual Basic</span></span>](../../visual-basic/index.md)  
+ <span data-ttu-id="89768-147">Visual Basic 언어의 모든 영역에 광범위 한 도움말을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-147">Provides comprehensive help on all areas of the Visual Basic language.</span></span>  
   
- [<span data-ttu-id="49933-148">Visual Basic 명령줄 컴파일러</span><span class="sxs-lookup"><span data-stu-id="49933-148">Visual Basic Command-Line Compiler</span></span>](../../visual-basic/reference/command-line-compiler/index.md)  
- <span data-ttu-id="49933-149">Visual Studio 통합된 개발 환경 (IDE) 내에서 프로그램을 컴파일하는 대신 명령줄 컴파일러를 사용 하는 방법에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="49933-149">Describes how to use the command-line compiler as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE).</span></span>
+ [<span data-ttu-id="89768-148">Visual Basic 명령줄 컴파일러</span><span class="sxs-lookup"><span data-stu-id="89768-148">Visual Basic Command-Line Compiler</span></span>](../../visual-basic/reference/command-line-compiler/index.md)  
+ <span data-ttu-id="89768-149">Visual Studio 통합된 개발 환경 (IDE) 내에서 프로그램을 컴파일하는 대신 명령줄 컴파일러를 사용 하는 방법에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="89768-149">Describes how to use the command-line compiler as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE).</span></span>
