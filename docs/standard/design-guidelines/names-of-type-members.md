@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: af5a0903-36af-4c2a-b848-cf959affeaa5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 25fe93b63c518f54ee72300f26dfcb3f3ad21d76
-ms.sourcegitcommit: b6baf91310f6867223f0f32d596b451592b917b5
+ms.openlocfilehash: 0541f100f208543c796de7238e68ea6f90c7b299
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "33575351"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44077111"
 ---
 # <a name="names-of-type-members"></a>형식 멤버의 이름
 형식은 메서드, 속성, 이벤트, 생성자 및 필드 등의 멤버로 이루어집니다. 다음 섹션에서는 형식 멤버 이름 지정에 대한 지침을 설명합니다.  
@@ -102,6 +102,7 @@ public class Control {
   
  *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## <a name="see-also"></a>참고 항목  
- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
- [명명 지침](../../../docs/standard/design-guidelines/naming-guidelines.md)
+## <a name="see-also"></a>참고자료
+
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
+- [명명 지침](../../../docs/standard/design-guidelines/naming-guidelines.md)
