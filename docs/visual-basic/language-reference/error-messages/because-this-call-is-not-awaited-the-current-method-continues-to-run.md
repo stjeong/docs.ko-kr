@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42358
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
-ms.openlocfilehash: a07955363ea5ca1ca8785c241b0de58149f329ba
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: fe820b9d2157c09428903a36427d3ff5e4c0045b
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745582"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44069618"
 ---
 # <a name="because-this-call-is-not-awaited-the-current-method-continues-to-run-before-the-call-is-completed"></a>이 호출이 대기되지 않으므로 호출이 완료되기 전에 현재 메서드가 계속 실행됩니다.
 이 호출이 대기되지 않으므로 호출이 완료되기 전에 현재 메서드가 계속 실행됩니다. 'Await' 연산자는 호출 결과에 적용하는 것이 좋습니다.  
@@ -117,7 +117,7 @@ ms.locfileid: "43745582"
   
      단추와 텍스트 상자가 포함된 간단한 창이 MainWindow.xaml의 **디자인** 뷰에 나타납니다.  
   
-     XAML 디자이너에 대한 자세한 내용은 [Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)를 참조하세요. 간단한 UI를 직접 빌드하는 방법에 대한 자세한 내용은 [연습: Async 및 Await를 사용하여 웹에 액세스(C# 및 Visual Basic)](https://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042)의 "To create a WPF application"(WPF 응용 프로그램을 만들려면) 섹션과 "To design a simple WPF MainWindow"(간단한 WPF MainWindow를 디자인하려면) 섹션을 참조하세요.  
+     XAML 디자이너에 대한 자세한 내용은 [Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)를 참조하세요. 간단한 UI를 직접 빌드하는 방법에 대한 자세한 내용은 [연습: Async 및 Await를 사용하여 웹에 액세스(C# 및 Visual Basic)](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)의 "To create a WPF application"(WPF 응용 프로그램을 만들려면) 섹션과 "To design a simple WPF MainWindow"(간단한 WPF MainWindow를 디자인하려면) 섹션을 참조하세요.  
   
 4.  MainWindow.xaml.vb의 코드를 다음 코드로 바꿉니다.  
   
@@ -203,6 +203,7 @@ ms.locfileid: "43745582"
   
      예상 출력이 코드의 끝에 나타납니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Await 연산자](../../../visual-basic/language-reference/operators/await-operator.md)  
- [Async 및 Await를 사용한 비동기 프로그래밍](../../../visual-basic/programming-guide/concepts/async/index.md)
+## <a name="see-also"></a>참고자료
+
+- [Await 연산자](../../../visual-basic/language-reference/operators/await-operator.md)  
+- [Async 및 Await를 사용한 비동기 프로그래밍](../../../visual-basic/programming-guide/concepts/async/index.md)

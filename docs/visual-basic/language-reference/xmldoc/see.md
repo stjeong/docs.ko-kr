@@ -6,11 +6,11 @@ helpviewer_keywords:
 - <see> XML tag
 ms.assetid: 7e18f60b-ef4a-4678-a797-5eb918635ca9
 ms.openlocfilehash: 78311651593d3d4a47c723f64a9a74d4660f7c90
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43854907"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44080230"
 ---
 # <a name="ltseegt-visual-basic"></a>&lt;참조&gt; (Visual Basic)
 다른 멤버에 대 한 링크를 지정합니다.  

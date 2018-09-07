@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ToolStrip control [Windows Forms]
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
 ms.openlocfilehash: 72ce238fdcbdcb81fc710a21d1675de67f4adc15
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43872558"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084666"
 ---
 # <a name="toolstrip-control-windows-forms"></a>ToolStrip 컨트롤(Windows Forms)
 <xref:System.Windows.Forms.ToolStrip> 컨트롤은 Windows Forms 응용 프로그램에서 메뉴, 컨트롤 및 사용자 정의 컨트롤을 호스트할 수 있는 도구 모음입니다.  

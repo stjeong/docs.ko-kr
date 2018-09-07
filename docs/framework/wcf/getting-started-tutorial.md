@@ -7,11 +7,11 @@ helpviewer_keywords:
 - getting started [WCF]
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
 ms.openlocfilehash: e5a07e5264c715f568121403721a3c844b903d99
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43886320"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085668"
 ---
 # <a name="getting-started-tutorial"></a>초보자를 위한 자습서
 이 단원의 항목에서는 프로그래밍 환경을 Windows Communication Foundation (WCF)에 대해 간략하게 위해 제공 됩니다. 이 항목 아래쪽에 나열된 순서대로 진행하세요. 이 자습서를 통해 WCF 서비스 및 클라이언트 응용 프로그램을 만드는 데 필요한 단계를 대략적으로 이해할을 제공 합니다. 서비스는 하나 이상의 엔드포인트를 노출하며 각 엔드포인트는 하나 이상의 서비스 작업을 노출합니다. 합니다 *끝점* 서비스의 서비스를 찾을 수 있는, 서비스 및 기능을 정의 하는 계약을 사용 하 여 통신 해야 하는 방법을 설명 하는 정보를 포함 하는 바인딩 주소를 지정 합니다. 클라이언트가 서비스에서 제공 합니다.  

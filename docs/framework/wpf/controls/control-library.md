@@ -8,11 +8,11 @@ helpviewer_keywords:
 - libraries [WPF], controls
 ms.assetid: c1b33289-c389-4ac2-b153-3cbb0d8324ad
 ms.openlocfilehash: 26f81a2bfeb5ef4e448ddcbc9b8bac521624a629
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43746125"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44068913"
 ---
 # <a name="control-library"></a>컨트롤 라이브러리
 Windows Presentation Foundation (WPF) 컨트롤 라이브러리를 제공 하 여 Windows Presentation Foundation (WPF), 사전순으로 나열 하는 컨트롤에 대 한 정보를 포함 합니다.  

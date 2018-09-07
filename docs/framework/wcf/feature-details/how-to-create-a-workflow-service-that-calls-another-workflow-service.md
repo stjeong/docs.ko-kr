@@ -3,11 +3,11 @@ title: '방법: 다른 워크플로 서비스를 호출하는 워크플로 서�
 ms.date: 03/30/2017
 ms.assetid: 99b3ee3e-aeb7-4e6f-8321-60fe6140eb67
 ms.openlocfilehash: 1b30da34f7c85cccd98b18cd32b81c83630989b2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43725061"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44080217"
 ---
 # <a name="how-to-create-a-workflow-service-that-calls-another-workflow-service"></a>방법: 다른 워크플로 서비스를 호출하는 워크플로 서비스 만들기
 

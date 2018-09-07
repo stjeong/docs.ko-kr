@@ -10,11 +10,11 @@ helpviewer_keywords:
 - XML Schema, serializing
 ms.assetid: 414b820f-a696-4206-b576-2711d85490c7
 ms.openlocfilehash: 4acc17db83817d5aa78c9a91bfdac4e775de3743
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44038152"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44076542"
 ---
 # <a name="attributes-that-control-xml-serialization"></a>XML Serialization을 제어하는 특성
 다음 표의 특성을 클래스 및 클래스 멤버에 적용하여 <xref:System.Xml.Serialization.XmlSerializer>가 클래스 인스턴스를 serialize 또는 deserialize하는 방법을 제어할 수 있습니다. 이러한 특성이 XML serialization을 제어하는 방법을 이해하려면 [특성을 사용하여 XML Serialization 제어](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)를 참조하세요.  

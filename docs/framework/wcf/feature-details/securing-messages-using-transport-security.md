@@ -5,11 +5,11 @@ ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 0ab04326404a4b90e30036594a7152e6118c2138
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43777883"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44063565"
 ---
 # <a name="securing-messages-using-transport-security"></a>전송 보안을 사용하여 메시지에 보안 설정
 이 단원에서는 큐에 보내는 메시지를 보안 설정하는 데 사용할 수 있는 메시지 큐(MSMQ) 전송 보안에 대해 설명합니다.  

@@ -3,11 +3,11 @@ title: '방법: 다른 응용 프로그램 (Visual Basic)를 사용 하 여 어�
 ms.date: 07/20/2015
 ms.assetid: 5388aedc-cb42-4622-8b70-8e701eee057a
 ms.openlocfilehash: a7f6b49e8389108528c44d7464a2e68149dfa940
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43738222"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44062899"
 ---
 # <a name="how-to-share-an-assembly-with-other-applications-visual-basic"></a>방법: 다른 응용 프로그램 (Visual Basic)를 사용 하 여 어셈블리 공유
 어셈블리는 전용이거나 공유될 수 있습니다. 기본적으로 대부분의 간단한 프로그램은 다른 응용 프로그램에서 사용되지 않으므로 전용 어셈블리로 구성됩니다.  

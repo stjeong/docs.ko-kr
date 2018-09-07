@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 885b3b7b-51c1-42b3-bb29-b925f4f69a6f
 ms.openlocfilehash: 9f69b64088093bbdd46239a26f16aeea50b6dee7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43671913"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44076878"
 ---
 # <a name="sorting-with-dataview-linq-to-dataset"></a>DataView로 정렬(LINQ to DataSet)
 특정 조건을 기준으로 데이터를 정렬한 다음 UI 컨트롤을 통해 클라이언트에 데이터를 제공하는 기능은 데이터 바인딩의 중요한 기능입니다. <xref:System.Data.DataView>에서는 데이터를 정렬하여 특정 정렬 기준에 따라 정렬된 데이터 행을 반환하는 여러 방법을 제공합니다. 문자열 기반 하는 것 외에도 정렬 기능 <xref:System.Data.DataView> 도 사용할 수 있도록 [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] 정렬 기준에 대 한 식입니다. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 문자열 기반 정렬 보다 훨씬 더 복잡 하 고 강력한 정렬 작업에 대 한 식을 사용 합니다. 이 항목에서는 <xref:System.Data.DataView>를 사용하여 정렬하는 두 가지 방법을 모두 설명합니다.  

@@ -3,11 +3,11 @@ title: 날짜 및 시간 함수
 ms.date: 03/30/2017
 ms.assetid: 971762d0-663b-4b64-8c61-352a8e6d3949
 ms.openlocfilehash: 56ef2f0b0a62f6b2cf6db5fe2c6713c58228ff6f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43749543"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084829"
 ---
 # <a name="date-and-time-functions"></a>날짜 및 시간 함수
 .NET Framework Data Provider for SQL Server(SqlClient)에서는 `System.DateTime` 입력 값에 대해 연산을 수행하고 `string`, 숫자 또는 `System.DateTime` 값 결과를 반환하는 날짜 및 시간 함수를 제공합니다. 이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다. 공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다. 다음 표에서는 SqlClient 날짜 및 시간 함수를 보여 줍니다.  

@@ -1,25 +1,25 @@
 ---
 title: '호출자 정보 (F #)'
-description: 호출자 정보 인수 특성 메서드에에서 호출자 정보를 사용 하는 방법을 설명 합니다.
+description: 메서드에서 호출자 정보를 가져오려면 호출자 정보 인수 특성을 사용 하는 방법에 설명 합니다.
 ms.date: 04/25/2017
-ms.openlocfilehash: 6fd80213cdaf2c4662fd4c2ed9eaf8949e397efe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0f2f4b16804d9156d234cc29d1f72ebe80a5b556
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33564805"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44048680"
 ---
 # <a name="caller-information"></a>호출자 정보
 
 호출자 정보 특성을 사용하여 메서드 호출자에 대한 정보를 얻을 수 있습니다. 소스 코드 파일 경로, 소스 코드 줄 번호 및 호출자의 멤버 이름을 얻을 수 있습니다. 이 정보는 추적, 디버깅 및 진단 도구를 만드는 데 도움이 됩니다.
 
-이 정보를 얻으려면 각각 기본값이 있는 선택적 매개 변수에 적용되는 특성을 사용합니다. 다음 표에서 목록에 정의 된 호출자 정보 특성은 [System.Runtime.CompilerServices](/dotnet/api/system.runtime.compilerservices) 네임 스페이스:
+이 정보를 얻으려면 각각 기본값이 있는 선택적 매개 변수에 적용되는 특성을 사용합니다. 다음 표에 정의 된 호출자 정보 특성을 [System.Runtime.CompilerServices](/dotnet/api/system.runtime.compilerservices) 네임 스페이스:
 
 |특성|설명|형식|
 |---------|-----------|----|
 |[CallerFilePath](/dotnet/api/system.runtime.compilerservices.callerfilepathattribute)|호출자를 포함한 소스 파일의 전체 경로입니다. 컴파일 시간의 파일 경로입니다.|`String`
 |[CallerLineNumber](/dotnet/api/system.runtime.compilerservices.callerlinenumberattribute)|메서드가 호출되는 소스 파일의 줄 번호입니다.|`Integer`|
-|[CallerMemberName](/dotnet/api/system.runtime.compilerservices.callermembernameattribute)|호출자의 메서드 또는 속성 이름입니다. 이 항목의 뒷부분에 나오는 멤버 이름 섹션을 참조 하십시오.|`String`|
+|[CallerMemberName](/dotnet/api/system.runtime.compilerservices.callermembernameattribute)|호출자의 메서드 또는 속성 이름입니다. 이 항목의 뒷부분에 나오는 멤버 이름 섹션을 참조 합니다.|`String`|
 
 ## <a name="example"></a>예제
 
@@ -45,20 +45,20 @@ type Tracer() =
 
 ## <a name="remarks"></a>설명
 
-호출자 정보 특성은 선택적 매개 변수에 적용할 수 있습니다. 각 선택적 매개 변수에 대해 명시적 값을 제공 해야 합니다. 호출자 정보 특성을 사용 하면 컴파일러가 각 선택적 매개 변수에 호출자 정보 특성으로 데코레이팅된에 대 한 적절 한 값을 작성할 수 있습니다.
+호출자 정보 특성은 선택적 매개 변수에 적용할 수 있습니다. 각 선택적 매개 변수에 대해 명시적 값을 제공 해야 합니다. 호출자 정보 특성을 사용 하면 컴파일러가 각 선택적 매개 변수에 호출자 정보 특성으로 데코 레이트 된 적절 한 값을 쓸.
 
-호출자 정보 값은 컴파일 시간에 리터럴로 중간 언어(IL) 내로 내보내집니다. 결과 달리는 [StackTrace](/dotnet/api/system.diagnostics.stacktrace) 예외를 결과 대 한 속성은 난독 화의 영향을 받지 않습니다.
+호출자 정보 값은 컴파일 시간에 리터럴로 중간 언어(IL) 내로 내보내집니다. 결과 달리 합니다 [StackTrace](/dotnet/api/system.diagnostics.stacktrace) 난독 처리 속성 예외를 결과 대 한 영향을 받지 않습니다.
 
 선택적 인수를 명시적으로 제공하여 호출자 정보를 제어하거나 호출자 정보를 숨길 수 있습니다.
 
 ## <a name="member-names"></a>멤버 이름
 
-사용할 수는 [ `CallerMemberName` ](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) 특성 멤버 이름을 지정 하지 않으려면는 `String` 호출된 된 메서드에 대 한 인수입니다. 이 기술을 사용 하 여 이름 바꾸기 리팩터링 변경 되지 않는 문제를 방지 하는 `String` 값입니다. 이 이점은 다음 작업에 특히 유용합니다.
+사용할 수는 [ `CallerMemberName` ](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) 멤버 이름을 지정 하지 않으려면 특성을 `String` 호출 된 메서드에 인수입니다. 이 기법을 사용 하 여 이름 바꾸기 리팩터링 변경 되지 않는 문제를 방지 하는 `String` 값입니다. 이 이점은 다음 작업에 특히 유용합니다.
 
 * 추적 및 진단 루틴 사용.
-* 구현 된 [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged) 데이터 바인딩할 때 인터페이스입니다. 이 인터페이스에서는 컨트롤에서 업데이트된 정보를 표시할 수 있도록 바운드 컨트롤의 속성이 변경되었음을 알리는 개체의 속성을 사용할 수 있습니다. 없이 [ `CallerMemberName` ](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) 특성을 속성 이름을 리터럴로 지정 해야 합니다.
+* 구현 된 [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged) 데이터 바인딩할 때 인터페이스입니다. 이 인터페이스에서는 컨트롤에서 업데이트된 정보를 표시할 수 있도록 바운드 컨트롤의 속성이 변경되었음을 알리는 개체의 속성을 사용할 수 있습니다. 없이 합니다 [ `CallerMemberName` ](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) 특성 속성 이름을 리터럴로 지정 해야 합니다.
 
-다음 차트에는 멤버 CallerMemberName 특성을 사용 하는 경우 반환 되는 이름이 보여줍니다.
+다음 차트는 이름을 CallerMemberName 특성을 사용 하는 경우 반환 되는 멤버를 표시 합니다.
 
 |호출 발생 범위|멤버 이름 결과|
 |-------------------|------------------|
@@ -71,6 +71,7 @@ type Tracer() =
 |포함하는 멤버가 없음(예: 어셈블리 수준 또는 형식에 적용되는 특성)|선택적 매개 변수의 기본값입니다.|
 
 ## <a name="see-also"></a>참고자료
- [특성](attributes.md)  
- [명명 된 인수](parameters-and-arguments.md#named-arguments)  
- [선택적 매개 변수](parameters-and-arguments.md#optional-parameters)  
+
+- [특성](attributes.md)  
+- [명명 된 인수](parameters-and-arguments.md#named-arguments)  
+- [선택적 매개 변수](parameters-and-arguments.md#optional-parameters)  

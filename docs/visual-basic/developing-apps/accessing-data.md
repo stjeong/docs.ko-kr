@@ -5,12 +5,12 @@ helpviewer_keywords:
 - data [Visual Basic]
 - Visual Basic, data access
 ms.assetid: 3086ab38-3be5-4b22-9385-7d0e16b04f6a
-ms.openlocfilehash: 2e6cfc3d6d8752b12fa20a357dedfeb1b3346dce
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.openlocfilehash: 220d662576a5f23194dee7e23317bdbb0027546d
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39198862"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44098539"
 ---
 # <a name="accessing-data-in-visual-basic-applications"></a>Visual Basic 응용 프로그램에서 데이터에 액세스
 Visual Basic에는 데이터에 액세스하는 응용 프로그램 개발을 지원하기 위한 여러 가지 새로운 기능이 포함됩니다. [데이터 소스 창](/visualstudio/data-tools/add-new-data-sources)에서 양식으로 항목을 끌어 Windows 응용 프로그램에 대한 데이터 바인딩된 양식을 만듭니다. **데이터 소스 창**에서 기존 컨트롤로 항목을 끌어 컨트롤을 데이터에 바인딩합니다.  
@@ -55,5 +55,4 @@ Visual Basic에는 데이터에 액세스하는 응용 프로그램 개발을 �
  [ADO.NET](../../framework/data/adonet/index.md)  
  .NET Framework 프로그래머에게 데이터 액세스 서비스를 표시하는 ADO.NET 클래스에 대해 설명합니다.
 
- [Office 솔루션의 데이터](https://msdn.microsoft.com/library/xx069ybh)  
- 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대한 정보를 비롯하여 Office 솔루션에서 데이터가 작동하는 방법을 설명하는 페이지의 링크가 포함되어 있습니다.
+ [Office 솔루션의 데이터](/visualstudio/vsto/data-in-office-solutions) 데이터 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대 한 정보를 포함 하 여 Office 솔루션에서 작동 하는 방법을 설명 하는 페이지의 링크를 포함 합니다.
