@@ -18,11 +18,11 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: f86fd424b397859dd70e113f2d8b8dcae7226f53
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43561170"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041069"
 ---
 # <a name="imetadatatablesgettableindex-method"></a>IMetaDataTables::GetTableIndex 메서드
 지정한 토큰이 참조 하는 테이블에 대 한 인덱스를 가져옵니다.  

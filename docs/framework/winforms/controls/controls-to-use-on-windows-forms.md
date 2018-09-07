@@ -5,18 +5,18 @@ helpviewer_keywords:
 - controls [Windows Forms]
 - Windows Forms controls, list of
 ms.assetid: dec51976-eae0-4398-a537-20bca7974722
-ms.openlocfilehash: 53474de53375546e2a7f416488cf7758b3f9cd22
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 18c3cf638934551ba40306d98b3bf28dfdd03463
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33529728"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041150"
 ---
 # <a name="controls-to-use-on-windows-forms"></a>Windows Forms에 사용할 수 있는 컨트롤
 다음은 사전순 목록 컨트롤 및 Windows Forms에서 사용할 수 있는 구성 요소입니다. 이 섹션에서 다루는 Windows Forms 컨트롤 외에 Windows Forms에 ActiveX 및 사용자 지정 컨트롤을 추가할 수 있습니다. 여기에 나열된 목록에서 사용자가 필요한 컨트롤을 찾을 수 없는 경우 직접 만들 수도 있습니다. 자세한 내용은 [디자인할 때 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)을 참조하십시오. 필요한 컨트롤을 선택하는 방법에 대한 자세한 내용은 [기능별 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)을 참조하십시오.  
   
 > [!NOTE]
->  Visual Basic 컨트롤에서 제공 하는 클래스를 기반는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]합니다.  
+>  Visual Basic 컨트롤 클래스를 기반으로 하 여 제공 된 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [기능별 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)  
@@ -50,10 +50,10 @@ ms.locfileid: "33529728"
  드롭다운 콤보 상자에서 데이터를 표시합니다.  
   
  [ContextMenu 구성 요소](../../../../docs/framework/winforms/controls/contextmenu-component-windows-forms.md)  
- 사용자는 선택된 개체와 관련된 자주 사용되는 명령 메뉴를 쉽게 액세스할 수 있도록 제공합니다. 하지만 <xref:System.Windows.Forms.ContextMenuStrip> 대체 하 고 여기에 새로운 기능이 추가 <xref:System.Windows.Forms.ContextMenu> 이전 버전의 <xref:System.Windows.Forms.ContextMenu> 필요한 경우 이전 버전과 호환성을 유지 합니다.  
+ 사용자는 선택된 개체와 관련된 자주 사용되는 명령 메뉴를 쉽게 액세스할 수 있도록 제공합니다. 하지만 <xref:System.Windows.Forms.ContextMenuStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ContextMenu> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ContextMenu> 하므로 원하는 경우 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [ContextMenuStrip 컨트롤](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)  
- 바로 가기 메뉴를 나타냅니다. 하지만 <xref:System.Windows.Forms.ContextMenuStrip> 대체 하 고 여기에 새로운 기능이 추가 <xref:System.Windows.Forms.ContextMenu> 이전 버전의 <xref:System.Windows.Forms.ContextMenu> 필요한 경우 이전 버전과 호환성을 유지 합니다.  
+ 바로 가기 메뉴를 나타냅니다. 하지만 <xref:System.Windows.Forms.ContextMenuStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ContextMenu> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ContextMenu> 하므로 원하는 경우 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [DataGrid 컨트롤](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
  데이터 집합에서 표 형식 데이터를 표시하고 데이터 원본에 대한 업데이트를 허용합니다.  
@@ -109,13 +109,13 @@ ms.locfileid: "33529728"
  Windows 탐색기의 방식으로 아이콘을 사용하여 항목의 목록을 표시합니다.  
   
  [MainMenu 구성 요소](../../../../docs/framework/winforms/controls/mainmenu-component-windows-forms.md)  
- 런타임에 메뉴를 표시합니다. 하지만 <xref:System.Windows.Forms.MenuStrip> 대체 하 고 여기에 새로운 기능이 추가 된 <xref:System.Windows.Forms.MainMenu> 이전 버전의 <xref:System.Windows.Forms.MainMenu> 선택 하는 경우 이전 버전과 호환성을 유지 합니다.  
+ 런타임에 메뉴를 표시합니다. 하지만 <xref:System.Windows.Forms.MenuStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.MainMenu> 이전 버전의 컨트롤 <xref:System.Windows.Forms.MainMenu> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [MaskedTextBox 컨트롤](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)  
  양식에서 사용자 입력의 형식을 제한합니다.  
   
  [MenuStrip 컨트롤](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)  
- 폼에 대한 메뉴 시스템을 제공합니다. 하지만 <xref:System.Windows.Forms.MenuStrip> 대체 하 고 여기에 새로운 기능이 추가 된 <xref:System.Windows.Forms.MainMenu> 이전 버전의 <xref:System.Windows.Forms.MainMenu> 선택 하는 경우 이전 버전과 호환성을 유지 합니다.  
+ 폼에 대한 메뉴 시스템을 제공합니다. 하지만 <xref:System.Windows.Forms.MenuStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.MainMenu> 이전 버전의 컨트롤 <xref:System.Windows.Forms.MainMenu> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [MonthCalendar 컨트롤](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)  
  사용자가 날짜 정보를 보고 설정하기 위한 직관적인 그래픽 인터페이스를 제공합니다.  
@@ -162,7 +162,7 @@ ms.locfileid: "33529728"
  [SaveFileDialog 구성 요소](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)  
  저장할 파일 및 저장 위치를 선택합니다.  
   
- [SoundPlayer 클래스](../../../../docs/framework/winforms/controls/soundplayer-class.md) 응용 프로그램에서 소리를 쉽게 포함할 수 있습니다.
+ [SoundPlayer 클래스](../../../../docs/framework/winforms/controls/soundplayer-class.md) 응용 프로그램에 소리를 쉽게 포함할 수 있습니다.
   
  [SplitContainer 컨트롤](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
  사용자가 고정된 컨트롤의 크기를 조정할 수 있습니다.  
@@ -189,19 +189,19 @@ ms.locfileid: "33529728"
  정기적으로 이벤트를 발생시킵니다.  
   
  [ToolBar 컨트롤](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
- 명령을 활성화하는 메뉴 및 비트맵 단추가 표시됩니다. 컨트롤의 기능을 확장하고 해당 모양 및 동작을 수정할 수 있습니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 여기에 새로운 기능이 추가 된 <xref:System.Windows.Forms.ToolBar> 이전 버전의 <xref:System.Windows.Forms.ToolBar> 선택 하는 경우 이전 버전과 호환성을 유지 합니다.  
+ 명령을 활성화하는 메뉴 및 비트맵 단추가 표시됩니다. 컨트롤의 기능을 확장하고 해당 모양 및 동작을 수정할 수 있습니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ToolBar> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ToolBar> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
- Windows Forms 응용 프로그램에 사용자 지정 툴바와 메뉴를 만듭니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 여기에 새로운 기능이 추가 된 <xref:System.Windows.Forms.ToolBar> 이전 버전의 <xref:System.Windows.Forms.ToolBar> 선택 하는 경우 이전 버전과 호환성을 유지 합니다.  
+ Windows Forms 응용 프로그램에 사용자 지정 툴바와 메뉴를 만듭니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ToolBar> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ToolBar> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [ToolStripContainer 컨트롤](../../../../docs/framework/winforms/controls/toolstripcontainer-control.md)  
- 도킹, 래프팅 및 정렬에 대 한 폼의 양쪽 패널 제공 <xref:System.Windows.Forms.ToolStrip> 컨트롤과 중앙 <xref:System.Windows.Forms.ToolStripContentPanel> 기존 컨트롤에 대 한 합니다.  
+ 고정, 래프팅 및 정렬을 위한 폼의 양쪽 패널을 제공 <xref:System.Windows.Forms.ToolStrip> 컨트롤 및 중앙 <xref:System.Windows.Forms.ToolStripContentPanel> 기존 컨트롤에 대 한 합니다.  
   
  [ToolStripPanel 컨트롤](../../../../docs/framework/winforms/controls/toolstrippanel-control.md)  
- 도킹, 래프팅 및 정렬에 대 한 개의 패널을 제공 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다.  
+ 고정, 래프팅 및 정렬을 위한 하나의 패널을 제공 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다.  
   
  [ToolStripProgressBar 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstripprogressbar-control-overview.md)  
- 완료될 동작의 진행 상태를 그래픽으로 나타냅니다. <xref:System.Windows.Forms.ToolStripProgressBar> 에 일반적으로 포함 되어는 <xref:System.Windows.Forms.StatusStrip>합니다.  
+ 완료될 동작의 진행 상태를 그래픽으로 나타냅니다. 합니다 <xref:System.Windows.Forms.ToolStripProgressBar> 에서 일반적으로 포함 되어는 <xref:System.Windows.Forms.StatusStrip>합니다.  
   
  [ToolStripStatusLabel 컨트롤](../../../../docs/framework/winforms/controls/toolstripstatuslabel-control.md)  
  <xref:System.Windows.Forms.StatusStrip> 컨트롤의 패널을 나타냅니다.  
@@ -228,7 +228,7 @@ ms.locfileid: "33529728"
  [디자인 타임에 Windows Forms 컨트롤 개발](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)  
  단계별 작업 항목에 대한 링크, 만들 컨트롤 종류에 대한 권장 사항 및 사용자 지정 컨트롤에 대한 기타 정보를 제공합니다.  
   
- [여러 언어 및 라이브러리에서 사용되는 컨트롤 및 프로그래밍 가능한 개체 비교](http://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
+ [여러 언어 및 라이브러리에서 사용되는 컨트롤 및 프로그래밍 가능한 개체 비교](https://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
  Visual Basic 6.0의 컨트롤을 [!INCLUDE[vbprvblong](../../../../includes/vbprvblong-md.md)]의 해당 컨트롤로 맵핑하는 테이블을 제공합니다. 컨트롤은 이제 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 클래스입니다.  
   
  [방법: Windows Forms에 ActiveX 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  
