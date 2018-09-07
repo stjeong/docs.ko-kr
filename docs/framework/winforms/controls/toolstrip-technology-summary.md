@@ -8,11 +8,11 @@ helpviewer_keywords:
 - menus [Windows Forms], technology summary
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
 ms.openlocfilehash: 26317fad5796989a58a48e4f26549805b279228a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43878059"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44098331"
 ---
 # <a name="toolstrip-technology-summary"></a>ToolStrip 기술 요약
 이 항목에서는 `ToolStrip` 제어 및 이를 사용하도록 지원하는 클래스에 대한 정보를 요약하여 설명합니다.  

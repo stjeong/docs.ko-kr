@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: ecf6bff10e98ab7f008cfd176f59687f34d89553
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43784778"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44098448"
 ---
 # <a name="icorruntimehost-interface"></a>ICorRuntimeHost 인터페이스
 시작 하 고 만들고 기본 도메인에 액세스 하 고 프로세스에서 실행 되는 모든 도메인을 열거 하는 데 응용 프로그램 도메인을 구성 하는 CLR (공용 언어 런타임)을 명시적으로 중지할 호스트를 사용할 수 있는 메서드를 제공 합니다.  

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - graphics [WPF], rendering
 ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 ms.openlocfilehash: acaa8f2ff6611f2f0beb07b74193341edfa2a428
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44035998"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44097475"
 ---
 # <a name="graphics-rendering-registry-settings"></a>그래픽 렌더링 레지스트리 설정
 이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램에 영향을 미치는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 렌더링 레지스트리 설정에 대해 간략하게 설명합니다.  

@@ -5,19 +5,19 @@ helpviewer_keywords:
 - interop assemblies
 - COM interop [Visual Basic], about COM interop
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
-ms.openlocfilehash: ecd514231c36cf3b65b1f0dd05f26d05f3c9c88d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 5e31bfafdc321bb514ecdadd49b7e2c6adf53948
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43773698"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44097727"
 ---
 # <a name="introduction-to-com-interop-visual-basic"></a>COM Interop 소개(Visual Basic)
 구성 요소 개체 모델 (COM) 응용 프로그램을 호스트 하는 다른 구성 요소에 해당 기능을 노출 하는 개체 수 있습니다. COM 개체 수년간 프로그래밍 Windows 기초 였을 동안 응용 프로그램은 CLR (공용 언어 런타임)을 위한 많은 이점을 제공 합니다.  
   
  [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램은 결국 대체 com 개발 그때 까지는 Visual Studio를 사용 하 여 COM 개체를 만들거나 사용 해야 합니다. COM 상호 운용성 또는 *COM interop*를 전환 하는 동안 기존 COM 개체를 사용할 수 있습니다는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 원하는 속도로 합니다.  
   
- 사용 하 여는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] COM 구성 요소를 만들려면 등록이 필요 없는 COM interop을 사용할 수 있습니다. 이 기능을 사용 하면 둘 이상의 버전이 컴퓨터에 설치 되어 있고 사용할 수 있도록 최종 XCOPY 또는 FTP 복사 컴퓨터에 적절 한 디렉터리를 응용 프로그램을 실행할 수 있는 경우에 DLL 버전을 사용할 수를 제어할 수 있습니다. 자세한 내용은 [등록이 필요 없는 COM Interop](https://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd)합니다.  
+ 사용 하 여는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] COM 구성 요소를 만들려면 등록이 필요 없는 COM interop을 사용할 수 있습니다. 이 기능을 사용 하면 둘 이상의 버전이 컴퓨터에 설치 되어 있고 사용할 수 있도록 최종 XCOPY 또는 FTP 복사 컴퓨터에 적절 한 디렉터리를 응용 프로그램을 실행할 수 있는 경우에 DLL 버전을 사용할 수를 제어할 수 있습니다. 자세한 내용은 [등록이 필요 없는 COM Interop](../../../framework/interop/registration-free-com-interop.md)합니다.  
   
 ## <a name="managed-code-and-data"></a>관리 코드 및 데이터  
  용으로 개발 된 코드를 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 이라고 *관리 코드*, CLR에서 사용 되는 메타 데이터를 포함 합니다. 사용 되는 데이터 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램 이라고 *관리 되는 데이터* 런타임에 할당 및 메모리를 회수 하 고 수행 형식 검사와 같은 데이터 관련 작업을 관리 하기 때문입니다. 기본적으로 Visual Basic.NET 관리 코드와 데이터를 사용 하지만 관리 되지 않는 코드 및 interop 어셈블리 (이 페이지 뒷부분 설명 됨)를 사용 하 여 COM 개체의 데이터에 액세스할 수 있습니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "43773698"
 ### <a name="importing-and-exporting-type-libraries"></a>가져오기 및 형식 라이브러리 내보내기  
  Visual Studio에 형식 라이브러리에서 정보를 가져올 수 있도록 Tlbimp 유틸리티를 포함 한 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램입니다. Tlbexp 유틸리티를 사용 하 여 어셈블리에서 형식 라이브러리를 생성할 수 있습니다.  
   
- Tlbimp와 Tlbexp에 대 한 정보를 참조 하세요 [Tlbimp.exe (형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md) 하 고 [Tlbexp.exe (형식 라이브러리 내보내기)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)합니다.  
+ Tlbimp와 Tlbexp에 대 한 정보를 참조 하세요 [Tlbimp.exe (형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md) 하 고 [Tlbexp.exe (형식 라이브러리 내보내기)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)합니다.  
   
 ## <a name="interop-assemblies"></a>Interop 어셈블리  
  Interop 어셈블리 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 관리 및 비관리 간의 브리지를 제공 하는 어셈블리 코드를 해당 매핑 COM 개체 멤버 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 멤버를 관리 합니다. Interop 어셈블리를 Visual Basic.NET에서 만든 다양 한 상호 운용성 마샬링 같은 COM 개체를 사용 하 여 작업의 세부 정보를 처리 합니다.  
@@ -51,13 +51,14 @@ ms.locfileid: "43773698"
 ## <a name="interoperability-marshaling"></a>상호 운용성 마샬링  
  모든 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 응용 프로그램에 사용 되는 프로그래밍 언어에 관계 없이 개체의 상호 운용성을 사용 하도록 설정 하는 공통 형식 집합을 공유 합니다. 매개 변수 및 COM 개체의 반환 값의 경우 관리 코드에서 사용 되는 데이터 형식을 사용 하는 경우가 종종 합니다. *상호 운용성 마샬링* COM 개체에서 이동 하는 프로세스 패키징 매개 변수와 동일한 데이터 형식으로 반환 값입니다. 자세한 내용은 [Interop 마샬링](../../../framework/interop/interop-marshaling.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
- [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
- [비관리 코드와의 상호 운용](../../../framework/interop/index.md)  
- [상호 운용성 문제 해결](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
- [Tlbexp.exe(형식 라이브러리 내보내기)](https://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)  
- [interop 마샬링](../../../framework/interop/interop-marshaling.md)  
- [등록이 필요 없는 COM interop](https://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd)
+## <a name="see-also"></a>참고자료
+
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+- [연습: COM 개체를 사용한 상속 구현](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
+- [비관리 코드와의 상호 운용](../../../framework/interop/index.md)  
+- [상호 운용성 문제 해결](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
+- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
+- [Tlbimp.exe(형식 라이브러리 가져오기)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
+- [Tlbexp.exe(형식 라이브러리 내보내기)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)  
+- [interop 마샬링](../../../framework/interop/interop-marshaling.md)  
+- [등록이 필요 없는 COM interop](../../../framework/interop/registration-free-com-interop.md)
