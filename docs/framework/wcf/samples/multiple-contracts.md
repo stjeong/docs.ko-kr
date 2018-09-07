@@ -3,11 +3,11 @@ title: 다중 계약
 ms.date: 03/30/2017
 ms.assetid: 2bef319b-fe9c-4d49-ac6c-dfb23eb35099
 ms.openlocfilehash: 040ab9b80e9567139ca4588e3ddf83b8f43f2d76
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43392454"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43565983"
 ---
 # <a name="multiple-contracts"></a>다중 계약
 Multiple Contracts 샘플에서는 서비스에서 두 개 이상의 계약을 구현하는 방법과 구현된 각 계약과의 통신을 위해 엔드포인트를 구성하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 서비스는 `ICalculator` 계약과 `ICalculatorSession` 계약의 두 가지 계약을 정의하도록 수정되었습니다.  
@@ -17,7 +17,7 @@ Multiple Contracts 샘플에서는 서비스에서 두 개 이상의 계약을 �
   
  서비스 클래스에서는 `ICalculator` 및 `ICalculatorSession` 계약을 모두 구현합니다. 계약 중 하나에 세션이 필요하기 때문에, 서비스에서는 <xref:System.ServiceModel.InstanceContextMode.PerSession> 인스턴스 모드를 사용하여 세션 수명이 지속되는 동안 상태를 유지 관리합니다.  
   
- 각 계약을 노출하는 두 개의 엔드포인트를 정의하도록 서비스 구성이 수정되었습니다. ph x="1" /&gt; 엔드포인트는 `basicHttpBinding`을 사용하여 기본 주소에서 노출됩니다. ph x="1" /&gt; 엔드포인트는 다음 샘플 구성에 표시된 것과 같이 `wsHttpBinding` 특성이 `bindingConfiguration`으로 설정된 `BindingWithSession`을 사용하여 baseaddress/세션에 노출됩니다.  
+ 각 계약을 노출하는 두 개의 엔드포인트를 정의하도록 서비스 구성이 수정되었습니다. `ICalculator` 엔드포인트는 `basicHttpBinding`을 사용하여 기본 주소에서 노출됩니다. `ICalculatorSession` 엔드포인트는 다음 샘플 구성에 표시된 것과 같이 `wsHttpBinding` 특성이 `bindingConfiguration`으로 설정된 `BindingWithSession`을 사용하여 baseaddress/세션에 노출됩니다.  
   
 ```xml  
 <service   

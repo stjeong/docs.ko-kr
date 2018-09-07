@@ -11,11 +11,11 @@ helpviewer_keywords:
 - data grids [Windows Forms], color styles
 ms.assetid: 588f2c57-d963-41b1-9c1d-d02d71818113
 ms.openlocfilehash: 739f49caa50a3cff85fcac98506d82f01c23af75
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43674072"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857169"
 ---
 # <a name="how-to-set-font-and-color-styles-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤의 글꼴 및 색 스타일 설정
 <xref:System.Windows.Forms.DataGridViewCellStyle> 클래스의 속성을 설정하여 <xref:System.Windows.Forms.DataGridView> 컨트롤 내에 있는 셀의 모양을 지정할 수 있습니다. <xref:System.Windows.Forms.DataGridView> 클래스 및 해당 도우미 클래스의 다양한 속성에서 이 클래스의 인스턴스를 검색하거나 이러한 속성에 할당하기 위해 <xref:System.Windows.Forms.DataGridViewCellStyle> 개체를 인스턴스화할 수 있습니다.  

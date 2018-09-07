@@ -5,11 +5,11 @@ helpviewer_keywords:
 - configuring services [WCF]
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
 ms.openlocfilehash: 904abff4f3cae5873fe3cc9705dee84f73e2a523
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43419746"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43565161"
 ---
 # <a name="configuring-services-using-configuration-files"></a>구성 파일을 사용하여 서비스 구성
 디자인 타임에 대신 배포 지점에서 서비스 동작 데이터 및 끝점을 제공 하는 유연성을 제공 구성 파일을 사용 하 여 Windows Communication Foundation (WCF) 서비스를 구성 합니다. 이 항목에서는 사용할 수 있는 기본 기술에 대해 간략하게 설명합니다.  
@@ -94,12 +94,12 @@ ms.locfileid: "43419746"
 -   [\<끝점 > 요소 참조](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)  
   
 ### <a name="the-bindings-element"></a>\<바인딩 > 요소  
- ph x="1" /&gt; 요소에는 서비스에 정의된 엔드포인트에서 사용할 수 있는 모든 바인딩에 대한 사양이 포함됩니다.  
+ `bindings` 요소에는 서비스에 정의된 엔드포인트에서 사용할 수 있는 모든 바인딩에 대한 사양이 포함됩니다.  
   
  [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
   
 ### <a name="the-binding-element"></a>\<바인딩 > 요소  
- 합니다 `binding` 에 포함 된 요소를 `bindings` 요소에는 시스템 제공 바인딩 중 하나가 될 수 있습니다 (참조 [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) 또는 사용자 지정 바인딩을 (참조 [사용자 지정 바인딩을](../../../docs/framework/wcf/extending/custom-bindings.md)). ph x="1" /&gt; 요소에는 `name` 요소의 `bindingConfiguration` 특성에 지정된 엔드포인트와 바인딩을 연관시키는 `endpoint` 특성이 있습니다. 이름을 지정하지 않는 경우 이 바인딩은 해당 바인딩 형식의 기본값에 해당합니다.  
+ 합니다 `binding` 에 포함 된 요소를 `bindings` 요소에는 시스템 제공 바인딩 중 하나가 될 수 있습니다 (참조 [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) 또는 사용자 지정 바인딩을 (참조 [사용자 지정 바인딩을](../../../docs/framework/wcf/extending/custom-bindings.md)). `binding` 요소에는 `name` 요소의 `bindingConfiguration` 특성에 지정된 엔드포인트와 바인딩을 연관시키는 `endpoint` 특성이 있습니다. 이름을 지정하지 않는 경우 이 바인딩은 해당 바인딩 형식의 기본값에 해당합니다.  
   
  서비스 및 클라이언트를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows Communication Foundation 응용 프로그램 구성](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)합니다.  
   

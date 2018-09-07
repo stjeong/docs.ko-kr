@@ -3,11 +3,11 @@ title: 메시지 검사자
 ms.date: 03/30/2017
 ms.assetid: 9bd1f305-ad03-4dd7-971f-fa1014b97c9b
 ms.openlocfilehash: 253be4d13649d4f6394aad1bb002f5cd555d8af2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43385846"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43554186"
 ---
 # <a name="message-inspectors"></a>메시지 검사자
 이 샘플에서는 클라이언트 및 서비스 메시지 검사자를 구현하고 구성하는 방법을 보여 줍니다.  
@@ -367,7 +367,7 @@ public bool ValidateRequest
 ```  
   
 ## <a name="adding-message-inspectors-imperatively"></a>명령으로 메시지 검사자 추가  
- 앞에서 설명한 이유로 인해 이 샘플에서 지원되지 않는 특성 및 구성이 아닌 동작은 명령 코드를 사용하여 클라이언트 및 서비스 런타임에 매우 쉽게 추가할 수 있습니다. 이 샘플에서는 클라이언트 응용 프로그램에서 이 작업을 수행하여 클라이언트 메시지 검사자를 테스트합니다. ph x="1" /&gt; 클래스는 엔드포인트 구성을 사용자 코드에 노출하는 <xref:System.ServiceModel.ClientBase%601>에서 파생됩니다. 예를 들어, 다음 코드와 같이 동작을 추가하면 클라이언트를 암시적으로 열기 전에 엔드포인트 구성을 변경할 수 있습니다. 서비스에서 동작을 추가하는 작업은 여기에 표시된 클라이언트 기술과 거의 동일하며 서비스 호스트를 열기 전에 수행해야 합니다.  
+ 앞에서 설명한 이유로 인해 이 샘플에서 지원되지 않는 특성 및 구성이 아닌 동작은 명령 코드를 사용하여 클라이언트 및 서비스 런타임에 매우 쉽게 추가할 수 있습니다. 이 샘플에서는 클라이언트 응용 프로그램에서 이 작업을 수행하여 클라이언트 메시지 검사자를 테스트합니다. `GenericClient` 클래스는 엔드포인트 구성을 사용자 코드에 노출하는 <xref:System.ServiceModel.ClientBase%601>에서 파생됩니다. 예를 들어, 다음 코드와 같이 동작을 추가하면 클라이언트를 암시적으로 열기 전에 엔드포인트 구성을 변경할 수 있습니다. 서비스에서 동작을 추가하는 작업은 여기에 표시된 클라이언트 기술과 거의 동일하며 서비스 호스트를 열기 전에 수행해야 합니다.  
   
 ```  
 try  

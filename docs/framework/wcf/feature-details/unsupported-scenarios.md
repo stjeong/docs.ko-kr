@@ -3,11 +3,11 @@ title: 지원되지 않는 시나리오
 ms.date: 03/30/2017
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
 ms.openlocfilehash: 6c0ee061f754e85244bffdc06cbe23aee68d2222
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43388532"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43561994"
 ---
 # <a name="unsupported-scenarios"></a>지원되지 않는 시나리오
 다양 한 이유로 Windows Communication Foundation (WCF)는 일부 특정 보안 시나리오를 지원 하지 않습니다. 예를 들어 [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition SSPI 또는 Kerberos 인증 프로토콜을 구현 하지 않으며 WCF 지원 하지 않습니다 해당 플랫폼에서 Windows 인증을 사용 하 여 서비스를 실행 합니다. Windows XP Home Edition에서 WCF를 실행 하는 경우 사용자 이름/암호 및 HTTP/HTTPS 통합된 인증과 같은 다른 인증 메커니즘이 지원 됩니다.  
@@ -101,7 +101,7 @@ ms.locfileid: "43388532"
   
  이 경우 예외가 throw됩니다.  
   
- ph x="1" /&gt; 엔드포인트를 다른 곳에 넣어 이 시나리오가 작동하게 만들 수 있습니다.  
+ `issue_ticket` 엔드포인트를 다른 곳에 넣어 이 시나리오가 작동하게 만들 수 있습니다.  
   
 ## <a name="wsdl-import-attributes-can-be-lost"></a>WSDL 가져오기 특성이 손실될 수 있음  
  WSDL 가져오기를 실행할 때는 WCF에서 `<wst:Claims>` 템플릿의 `RST` 요소에 대한 특성을 추적하지 않게 됩니다. WSDL 가져오기 중에 클레임 형식 컬렉션을 직접 사용하지 않고 `<Claims>` 또는 `WSFederationHttpBinding.Security.Message.TokenRequestParameters`에서 직접 `IssuedSecurityTokenRequestParameters.AdditionalRequestParameters`를 지정하는 경우에 이 문제가 발생합니다.  가져오기 중에 특성이 손실되므로 바인딩이 WSDL을 통해 제대로 라운드트립되지 않고 클라이언트측에서 잘못됩니다.  

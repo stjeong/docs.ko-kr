@@ -3,11 +3,11 @@ title: 고급 필터
 ms.date: 03/30/2017
 ms.assetid: 8d81590f-e036-4f96-824a-4a187f462764
 ms.openlocfilehash: 7022384e8abe93f4276eec48785b3243ed926438
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: MT
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43564202"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43805444"
 ---
 # <a name="advanced-filters"></a>고급 필터
 이 샘플에는 Windows Communication Foundation (WCF) 라우팅 서비스를 보여 줍니다. 라우팅 서비스는 쉽게 응용 프로그램에 내용 기반 라우터를 포함 하는 WCF 구성 요소입니다. 이 샘플에는 라우팅 서비스를 사용 하 여 통신 하는 표준 WCF Calculator 샘플을 조정 됩니다. 이 샘플에서는 메시지 필터 및 메시지 필터 테이블을 사용하여 내용 기반 라우팅 논리를 정의하는 방법을 보여 줍니다.  

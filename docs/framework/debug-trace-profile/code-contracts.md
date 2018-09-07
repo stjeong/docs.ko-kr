@@ -10,11 +10,11 @@ ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: a444b7eace18fa579324f540e8cf7537c420a6a8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43425758"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43879847"
 ---
 # <a name="code-contracts"></a>코드 계약
 코드 계약을 통해 코드에서 사전 조건, 사후 조건 및 개체 고정을 지정할 수 있습니다. 사전 조건은 메서드 또는 속성을 입력할 때 충족해야 하는 요구 사항입니다. 사후 조건은 메서드 또는 속성 코드가 종료될 때의 예상을 설명합니다. 개체 고정은 양호한 상태인 클래스의 예상 상태를 설명합니다.  

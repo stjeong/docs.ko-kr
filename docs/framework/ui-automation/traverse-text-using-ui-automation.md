@@ -13,11 +13,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 7353ad142bb276cde1c6fb0ff0c6dcf03b699aeb
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43388665"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43536400"
 ---
 # <a name="traverse-text-using-ui-automation"></a>UI 자동화를 사용하여 텍스트 이동
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "43388665"
  이 항목에서는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 을 사용하여 <xref:System.Windows.Automation.Text.TextUnit> 씩 증가시켜 문서의 텍스트 내용을 트래버스하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
- 다음 코드 예제에서는 UI 자동화 텍스트 공급자의 콘텐츠를 트래버스하는 방법을 보여 줍니다. ph x="1" /&gt; 메서드는 <xref:System.Windows.Automation.Text.TextPatternRange>의 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 및 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트를 이동합니다. 이 텍스트 범위는 일반적으로 텍스트 삽입 지점을 나타내는 중복 제거 범위입니다.  
+ 다음 코드 예제에서는 UI 자동화 텍스트 공급자의 콘텐츠를 트래버스하는 방법을 보여 줍니다. <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> 메서드는 <xref:System.Windows.Automation.Text.TextPatternRange>의 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 및 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트를 이동합니다. 이 텍스트 범위는 일반적으로 텍스트 삽입 지점을 나타내는 중복 제거 범위입니다.  
   
 > [!NOTE]
 >  텍스트 기반의 포함된 개체만 텍스트 스트림의 일부로 간주되므로, 이미지 등과 같은 포함된 개체는 `Move` 또는 해당 반환 값에 영향을 주지 않습니다.  
