@@ -3,18 +3,18 @@ title: 사용자 지정 형식의 Switch 활동 사용 방법
 ms.date: 03/30/2017
 ms.assetid: 482a48c4-eb83-40c3-a4e2-2f9a8af88b75
 ms.openlocfilehash: b24a03573b31f3fb1c34d4aa6e03bc11f5b25455
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44038876"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44133914"
 ---
-# <a name="usage-of-the-switch-activity-with-custom-types"></a><span data-ttu-id="9111b-102">사용자 지정 형식의 Switch 활동 사용 방법</span><span class="sxs-lookup"><span data-stu-id="9111b-102">Usage of the Switch Activity with Custom Types</span></span>
-<span data-ttu-id="9111b-103">이 샘플에서는 <xref:System.Activities.Statements.Switch%601> 활동을 사용하도록 설정하여 런타임에 사용자 정의 복합 형식을 계산하는 방법에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-103">This sample describes how to enable a <xref:System.Activities.Statements.Switch%601> activity to evaluate a user-defined complex type at runtime.</span></span> <span data-ttu-id="9111b-104">대부분의 일반적인 절차적 프로그래밍 언어에는 [전환](https://go.microsoft.com/fwlink/?LinkId=180521) 문은 변수의 조건부 계산에 따라 실행 논리를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-104">In most traditional procedural programming languages, a [switch](https://go.microsoft.com/fwlink/?LinkId=180521) statement selects an execution logic based on the conditional evaluation of a variable.</span></span> <span data-ttu-id="9111b-105">일반적으로 `switch` 문은 정적으로 계산할 수 있는 식에 대해 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-105">Traditionally, a `switch` statement operates on an expression that can be statically evaluated.</span></span> <span data-ttu-id="9111b-106">예를 들어 C#에서는 <xref:System.Boolean>, <xref:System.Int32>, <xref:System.String> 등의 기본 형식과 열거형 형식만 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-106">For example, in C# this means that only primitive types, such as <xref:System.Boolean>, <xref:System.Int32>, <xref:System.String>, and enumeration types are supported.</span></span>  
+# <a name="usage-of-the-switch-activity-with-custom-types"></a><span data-ttu-id="6b07a-102">사용자 지정 형식의 Switch 활동 사용 방법</span><span class="sxs-lookup"><span data-stu-id="6b07a-102">Usage of the Switch Activity with Custom Types</span></span>
+<span data-ttu-id="6b07a-103">이 샘플에서는 <xref:System.Activities.Statements.Switch%601> 활동을 사용하도록 설정하여 런타임에 사용자 정의 복합 형식을 계산하는 방법에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-103">This sample describes how to enable a <xref:System.Activities.Statements.Switch%601> activity to evaluate a user-defined complex type at runtime.</span></span> <span data-ttu-id="6b07a-104">대부분의 일반적인 절차적 프로그래밍 언어에는 [전환](https://go.microsoft.com/fwlink/?LinkId=180521) 문은 변수의 조건부 계산에 따라 실행 논리를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-104">In most traditional procedural programming languages, a [switch](https://go.microsoft.com/fwlink/?LinkId=180521) statement selects an execution logic based on the conditional evaluation of a variable.</span></span> <span data-ttu-id="6b07a-105">일반적으로 `switch` 문은 정적으로 계산할 수 있는 식에 대해 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-105">Traditionally, a `switch` statement operates on an expression that can be statically evaluated.</span></span> <span data-ttu-id="6b07a-106">예를 들어 C#에서는 <xref:System.Boolean>, <xref:System.Int32>, <xref:System.String> 등의 기본 형식과 열거형 형식만 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-106">For example, in C# this means that only primitive types, such as <xref:System.Boolean>, <xref:System.Int32>, <xref:System.String>, and enumeration types are supported.</span></span>  
   
- <span data-ttu-id="9111b-107">사용자 지정 클래스에서 전환을 사용하도록 설정하려면 런타임에 사용자 지정 복합 형식 값을 계산하도록 논리를 구현해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-107">To enable switching on a custom class, logic must be implemented to evaluate values of the custom complex type at runtime.</span></span> <span data-ttu-id="9111b-108">이 샘플에서는 `Person`이라는 사용자 지정 복합 형식에서 전환을 사용하도록 설정하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-108">This sample demonstrates how to enable switching on a custom complex type named `Person`.</span></span>  
+ <span data-ttu-id="6b07a-107">사용자 지정 클래스에서 전환을 사용하도록 설정하려면 런타임에 사용자 지정 복합 형식 값을 계산하도록 논리를 구현해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-107">To enable switching on a custom class, logic must be implemented to evaluate values of the custom complex type at runtime.</span></span> <span data-ttu-id="6b07a-108">이 샘플에서는 `Person`이라는 사용자 지정 복합 형식에서 전환을 사용하도록 설정하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-108">This sample demonstrates how to enable switching on a custom complex type named `Person`.</span></span>  
   
--   <span data-ttu-id="9111b-109">사용자 지정 클래스 `Person`에서 <xref:System.ComponentModel.TypeConverter> 특성은 사용자 지정 <xref:System.ComponentModel.TypeConverter>의 이름으로 선언됩니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-109">In the custom class `Person`, a <xref:System.ComponentModel.TypeConverter> attribute is declared with the name of the custom <xref:System.ComponentModel.TypeConverter>.</span></span>  
+-   <span data-ttu-id="6b07a-109">사용자 지정 클래스 `Person`에서 <xref:System.ComponentModel.TypeConverter> 특성은 사용자 지정 <xref:System.ComponentModel.TypeConverter>의 이름으로 선언됩니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-109">In the custom class `Person`, a <xref:System.ComponentModel.TypeConverter> attribute is declared with the name of the custom <xref:System.ComponentModel.TypeConverter>.</span></span>  
   
     ```  
     [TypeConverter(typeof(PersonConverter))]  
@@ -25,7 +25,7 @@ ms.locfileid: "44038876"
     ...  
     ```  
   
--   <span data-ttu-id="9111b-110">사용자 지정 클래스 `Person`에서 <xref:System.Object.Equals%2A> 및 <xref:System.Object.GetHashCode%2A> 클래스가 재정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-110">In the custom class `Person`, the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> classes are overridden.</span></span>  
+-   <span data-ttu-id="6b07a-110">사용자 지정 클래스 `Person`에서 <xref:System.Object.Equals%2A> 및 <xref:System.Object.GetHashCode%2A> 클래스가 재정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-110">In the custom class `Person`, the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> classes are overridden.</span></span>  
   
     ```  
     public override bool Equals(object obj)  
@@ -51,7 +51,7 @@ ms.locfileid: "44038876"
     }  
     ```  
   
--   <span data-ttu-id="9111b-111">사용자 지정 <xref:System.ComponentModel.TypeConverter> 클래스는 사용자 지정 클래스의 인스턴스에서 문자열로 또는 문자열에서 사용자 지정 클래스의 인스턴스로 변환하도록 구현됩니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-111">A custom <xref:System.ComponentModel.TypeConverter> class is implemented that performs the conversion of an instance of the custom class to a string and a string to an instance of a custom class.</span></span>  
+-   <span data-ttu-id="6b07a-111">사용자 지정 <xref:System.ComponentModel.TypeConverter> 클래스는 사용자 지정 클래스의 인스턴스에서 문자열로 또는 문자열에서 사용자 지정 클래스의 인스턴스로 변환하도록 구현됩니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-111">A custom <xref:System.ComponentModel.TypeConverter> class is implemented that performs the conversion of an instance of the custom class to a string and a string to an instance of a custom class.</span></span>  
   
     ```  
     public class PersonConverter : TypeConverter  
@@ -103,32 +103,32 @@ ms.locfileid: "44038876"
     }  
     ```  
   
- <span data-ttu-id="9111b-112">이 샘플에 포함되어 있는 파일은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-112">The following files are included in this sample:</span></span>  
+ <span data-ttu-id="6b07a-112">이 샘플에 포함되어 있는 파일은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-112">The following files are included in this sample:</span></span>  
   
--   <span data-ttu-id="9111b-113">**Person.cs**: 정의 된 `Person` 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-113">**Person.cs**: Defines the `Person` class.</span></span>  
+-   <span data-ttu-id="6b07a-113">**Person.cs**: 정의 된 `Person` 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-113">**Person.cs**: Defines the `Person` class.</span></span>  
   
--   <span data-ttu-id="9111b-114">**PersonConverter.cs**:에 대 한 형식 변환기를 `Person` 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-114">**PersonConverter.cs**: The type converter for the `Person` class.</span></span>  
+-   <span data-ttu-id="6b07a-114">**PersonConverter.cs**:에 대 한 형식 변환기를 `Person` 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-114">**PersonConverter.cs**: The type converter for the `Person` class.</span></span>  
   
--   <span data-ttu-id="9111b-115">**Sequence.xaml**: 전환 하는 워크플로 `Person` 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-115">**Sequence.xaml**: a workflow that switches over the `Person` type.</span></span>  
+-   <span data-ttu-id="6b07a-115">**Sequence.xaml**: 전환 하는 워크플로 `Person` 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-115">**Sequence.xaml**: a workflow that switches over the `Person` type.</span></span>  
   
--   <span data-ttu-id="9111b-116">**Program.cs**: 워크플로 실행 하는 main 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-116">**Program.cs**: The main function that runs the workflow.</span></span>  
+-   <span data-ttu-id="6b07a-116">**Program.cs**: 워크플로 실행 하는 main 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-116">**Program.cs**: The main function that runs the workflow.</span></span>  
   
-#### <a name="to-use-this-sample"></a><span data-ttu-id="9111b-117">이 샘플을 사용하려면</span><span class="sxs-lookup"><span data-stu-id="9111b-117">To use this sample</span></span>  
+#### <a name="to-use-this-sample"></a><span data-ttu-id="6b07a-117">이 샘플을 사용하려면</span><span class="sxs-lookup"><span data-stu-id="6b07a-117">To use this sample</span></span>  
   
-1.  <span data-ttu-id="9111b-118">[!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]에서 Switch.sln을 로드합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-118">Load Switch.sln in [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].</span></span>  
+1.  <span data-ttu-id="6b07a-118">[!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]에서 Switch.sln을 로드합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-118">Load Switch.sln in [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].</span></span>  
   
-2.  <span data-ttu-id="9111b-119">Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-119">Press CTRL+SHIFT+B to build the solution.</span></span>  
+2.  <span data-ttu-id="6b07a-119">Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-119">Press CTRL+SHIFT+B to build the solution.</span></span>  
   
-3.  <span data-ttu-id="9111b-120">Ctrl+F5를 눌러 샘플을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-120">Press CTRL + F5 to run the sample.</span></span>  
+3.  <span data-ttu-id="6b07a-120">Ctrl+F5를 눌러 샘플을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-120">Press CTRL + F5 to run the sample.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="9111b-121">컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-121">The samples may already be installed on your machine.</span></span> <span data-ttu-id="9111b-122">계속하기 전에 다음(기본) 디렉터리를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="9111b-122">Check for the following (default) directory before continuing.</span></span>  
+>  <span data-ttu-id="6b07a-121">컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-121">The samples may already be installed on your machine.</span></span> <span data-ttu-id="6b07a-122">계속하기 전에 다음(기본) 디렉터리를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="6b07a-122">Check for the following (default) directory before continuing.</span></span>  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  <span data-ttu-id="9111b-123">이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플.</span><span class="sxs-lookup"><span data-stu-id="9111b-123">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="9111b-124">이 샘플은 다음 디렉터리에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9111b-124">This sample is located in the following directory.</span></span>  
+>  <span data-ttu-id="6b07a-123">이 디렉터리가 없으면로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780) 모든 Windows Communication Foundation (WCF)를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플.</span><span class="sxs-lookup"><span data-stu-id="6b07a-123">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="6b07a-124">이 샘플은 다음 디렉터리에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6b07a-124">This sample is located in the following directory.</span></span>  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\Switch`  
   
-## <a name="see-also"></a><span data-ttu-id="9111b-125">참고 항목</span><span class="sxs-lookup"><span data-stu-id="9111b-125">See Also</span></span>  
- [<span data-ttu-id="9111b-126">기본 제공 활동 라이브러리</span><span class="sxs-lookup"><span data-stu-id="9111b-126">Built-In Activity Library</span></span>](../../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md)
+## <a name="see-also"></a><span data-ttu-id="6b07a-125">참고 항목</span><span class="sxs-lookup"><span data-stu-id="6b07a-125">See Also</span></span>  
+ [<span data-ttu-id="6b07a-126">기본 제공 활동 라이브러리</span><span class="sxs-lookup"><span data-stu-id="6b07a-126">Built-In Activity Library</span></span>](../../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md)

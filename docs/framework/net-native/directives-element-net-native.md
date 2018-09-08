@@ -5,18 +5,18 @@ ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 8921d2841f9a7b4228ae3b8735d7047453f71bcb
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43800195"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44130213"
 ---
-# <a name="ltdirectivesgt-element-net-native"></a><span data-ttu-id="4daaf-102">&lt;지시문&gt; 요소(.NET 네이티브)</span><span class="sxs-lookup"><span data-stu-id="4daaf-102">&lt;Directives&gt; Element (.NET Native)</span></span>
-<span data-ttu-id="4daaf-103">.NET 네이티브에 대 한 모든 런타임 지시문 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-103">The root element in every runtime directives file for .NET Native.</span></span>  
+# <a name="ltdirectivesgt-element-net-native"></a><span data-ttu-id="7da3f-102">&lt;지시문&gt; 요소(.NET 네이티브)</span><span class="sxs-lookup"><span data-stu-id="7da3f-102">&lt;Directives&gt; Element (.NET Native)</span></span>
+<span data-ttu-id="7da3f-103">.NET 네이티브에 대 한 모든 런타임 지시문 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-103">The root element in every runtime directives file for .NET Native.</span></span>  
   
  `<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">` 
   
-## <a name="syntax"></a><span data-ttu-id="4daaf-104">구문</span><span class="sxs-lookup"><span data-stu-id="4daaf-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7da3f-104">구문</span><span class="sxs-lookup"><span data-stu-id="7da3f-104">Syntax</span></span>  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -24,24 +24,24 @@ ms.locfileid: "43800195"
 </Directives>  
 ```  
   
-## <a name="attributes"></a><span data-ttu-id="4daaf-105">특성</span><span class="sxs-lookup"><span data-stu-id="4daaf-105">Attributes</span></span>  
+## <a name="attributes"></a><span data-ttu-id="7da3f-105">특성</span><span class="sxs-lookup"><span data-stu-id="7da3f-105">Attributes</span></span>  
   
-|<span data-ttu-id="4daaf-106">특성</span><span class="sxs-lookup"><span data-stu-id="4daaf-106">Attribute</span></span>|<span data-ttu-id="4daaf-107">설명</span><span class="sxs-lookup"><span data-stu-id="4daaf-107">Description</span></span>|  
+|<span data-ttu-id="7da3f-106">특성</span><span class="sxs-lookup"><span data-stu-id="7da3f-106">Attribute</span></span>|<span data-ttu-id="7da3f-107">설명</span><span class="sxs-lookup"><span data-stu-id="7da3f-107">Description</span></span>|  
 |---------------|-----------------|  
-|`xmlns`|<span data-ttu-id="4daaf-108">XML 네임스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-108">The XML namespace.</span></span> <span data-ttu-id="4daaf-109">해당 값은 항상 **"http://schemas.microsoft.com/netfx/2013/01/metadata"** 합니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-109">Its value is always **"http://schemas.microsoft.com/netfx/2013/01/metadata"**.</span></span>|  
+|`xmlns`|<span data-ttu-id="7da3f-108">XML 네임스페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-108">The XML namespace.</span></span> <span data-ttu-id="7da3f-109">해당 값은 항상 **"http://schemas.microsoft.com/netfx/2013/01/metadata"** 합니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-109">Its value is always **"http://schemas.microsoft.com/netfx/2013/01/metadata"**.</span></span>|  
   
-## <a name="child-elements"></a><span data-ttu-id="4daaf-110">자식 요소</span><span class="sxs-lookup"><span data-stu-id="4daaf-110">Child elements</span></span>  
+## <a name="child-elements"></a><span data-ttu-id="7da3f-110">자식 요소</span><span class="sxs-lookup"><span data-stu-id="7da3f-110">Child elements</span></span>  
   
-|<span data-ttu-id="4daaf-111">요소</span><span class="sxs-lookup"><span data-stu-id="4daaf-111">Element</span></span>|<span data-ttu-id="4daaf-112">설명</span><span class="sxs-lookup"><span data-stu-id="4daaf-112">Description</span></span>|  
+|<span data-ttu-id="7da3f-111">요소</span><span class="sxs-lookup"><span data-stu-id="7da3f-111">Element</span></span>|<span data-ttu-id="7da3f-112">설명</span><span class="sxs-lookup"><span data-stu-id="7da3f-112">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="4daaf-113">\<Application></span><span class="sxs-lookup"><span data-stu-id="4daaf-113">\<Application></span></span>](../../../docs/framework/net-native/application-element-net-native.md)|<span data-ttu-id="4daaf-114">해당 메타데이터를 리플렉션에 사용할 수 있는 응용 프로그램 수준 형식 및 형식 멤버의 컨테이너로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-114">Serves as a container for application-wide types and type members whose metadata is available for reflection.</span></span>|  
-|[<span data-ttu-id="4daaf-115">\<Library></span><span class="sxs-lookup"><span data-stu-id="4daaf-115">\<Library></span></span>](../../../docs/framework/net-native/library-element-net-native.md)|<span data-ttu-id="4daaf-116">런타임에 자식 형식 및 형식 멤버에 메타데이터가 필요한 어셈블리를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-116">Defines the assembly whose child types and type members require metadata at run time.</span></span>|  
+|[<span data-ttu-id="7da3f-113">\<Application></span><span class="sxs-lookup"><span data-stu-id="7da3f-113">\<Application></span></span>](../../../docs/framework/net-native/application-element-net-native.md)|<span data-ttu-id="7da3f-114">해당 메타데이터를 리플렉션에 사용할 수 있는 응용 프로그램 수준 형식 및 형식 멤버의 컨테이너로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-114">Serves as a container for application-wide types and type members whose metadata is available for reflection.</span></span>|  
+|[<span data-ttu-id="7da3f-115">\<Library></span><span class="sxs-lookup"><span data-stu-id="7da3f-115">\<Library></span></span>](../../../docs/framework/net-native/library-element-net-native.md)|<span data-ttu-id="7da3f-116">런타임에 자식 형식 및 형식 멤버에 메타데이터가 필요한 어셈블리를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-116">Defines the assembly whose child types and type members require metadata at run time.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="4daaf-117">설명</span><span class="sxs-lookup"><span data-stu-id="4daaf-117">Remarks</span></span>  
- <span data-ttu-id="4daaf-118">각 런타임 지시문 파일은 `<Directives>` 요소를 하나만 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-118">Each runtime directives file can contain only one `<Directives>` element.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="7da3f-117">설명</span><span class="sxs-lookup"><span data-stu-id="7da3f-117">Remarks</span></span>  
+ <span data-ttu-id="7da3f-118">각 런타임 지시문 파일은 `<Directives>` 요소를 하나만 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-118">Each runtime directives file can contain only one `<Directives>` element.</span></span>  
   
- <span data-ttu-id="4daaf-119">`<Directives>` 요소는 [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) 요소를 포함하지 않거나 하나 포함할 수 있으며 [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) 요소를 포함하지 않거나 하나 이상 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4daaf-119">The `<Directives>` element can contain zero or one [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) element, and zero, one, or more [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) elements.</span></span>  
+ <span data-ttu-id="7da3f-119">`<Directives>` 요소는 [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) 요소를 포함하지 않거나 하나 포함할 수 있으며 [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) 요소를 포함하지 않거나 하나 이상 포함할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7da3f-119">The `<Directives>` element can contain zero or one [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) element, and zero, one, or more [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) elements.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4daaf-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4daaf-120">See Also</span></span>  
- [<span data-ttu-id="4daaf-121">런타임 지시문(rd.xml) 구성 파일 참조</span><span class="sxs-lookup"><span data-stu-id="4daaf-121">Runtime Directives (rd.xml) Configuration File Reference</span></span>](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [<span data-ttu-id="4daaf-122">런타임 지시문 요소</span><span class="sxs-lookup"><span data-stu-id="4daaf-122">Runtime Directive Elements</span></span>](../../../docs/framework/net-native/runtime-directive-elements.md)
+## <a name="see-also"></a><span data-ttu-id="7da3f-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7da3f-120">See Also</span></span>  
+ [<span data-ttu-id="7da3f-121">런타임 지시문(rd.xml) 구성 파일 참조</span><span class="sxs-lookup"><span data-stu-id="7da3f-121">Runtime Directives (rd.xml) Configuration File Reference</span></span>](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
+ [<span data-ttu-id="7da3f-122">런타임 지시문 요소</span><span class="sxs-lookup"><span data-stu-id="7da3f-122">Runtime Directive Elements</span></span>](../../../docs/framework/net-native/runtime-directive-elements.md)

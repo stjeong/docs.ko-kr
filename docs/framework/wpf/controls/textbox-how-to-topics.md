@@ -8,31 +8,31 @@ helpviewer_keywords:
 - TextBox control [WPF], how-to topics
 ms.assetid: 006aa461-fe37-4cd8-860a-d38d76e8b9f7
 ms.openlocfilehash: 2319ea8522a90705cf65006ffb368801921cda57
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397529"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44128094"
 ---
-# <a name="textbox-how-to-topics"></a><span data-ttu-id="25b46-102">TextBox 방법 항목</span><span class="sxs-lookup"><span data-stu-id="25b46-102">TextBox How-to Topics</span></span>
-<span data-ttu-id="25b46-103">이 섹션에서는 사용 하 여 일반적인 작업을 수행 하는 방법을 보여 주는 예제를 제공 합니다 <xref:System.Windows.Controls.TextBox> 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="25b46-103">This section provides examples that demonstrate how to accomplish common tasks using the <xref:System.Windows.Controls.TextBox> control.</span></span>  
+# <a name="textbox-how-to-topics"></a><span data-ttu-id="bff4b-102">TextBox 방법 항목</span><span class="sxs-lookup"><span data-stu-id="bff4b-102">TextBox How-to Topics</span></span>
+<span data-ttu-id="bff4b-103">이 섹션에서는 사용 하 여 일반적인 작업을 수행 하는 방법을 보여 주는 예제를 제공 합니다 <xref:System.Windows.Controls.TextBox> 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="bff4b-103">This section provides examples that demonstrate how to accomplish common tasks using the <xref:System.Windows.Controls.TextBox> control.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="25b46-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="25b46-104">In This Section</span></span>  
- [<span data-ttu-id="25b46-105">여러 줄 TextBox 컨트롤 만들기</span><span class="sxs-lookup"><span data-stu-id="25b46-105">Create a Multiline TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-create-a-multiline-textbox-control.md)  
- [<span data-ttu-id="25b46-106">TextBox에서 텍스트가 변경되는 시점 감지</span><span class="sxs-lookup"><span data-stu-id="25b46-106">Detect When Text in a TextBox Has Changed</span></span>](../../../../docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md)  
- [<span data-ttu-id="25b46-107">TextBox 컨트롤에서 탭 문자 사용</span><span class="sxs-lookup"><span data-stu-id="25b46-107">Enable Tab Characters in a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-enable-tab-characters-in-a-textbox-control.md)  
- [<span data-ttu-id="25b46-108">TextBox에서 줄 컬렉션 가져오기</span><span class="sxs-lookup"><span data-stu-id="25b46-108">Get a Collection of Lines from a TextBox</span></span>](../../../../docs/framework/wpf/controls/how-to-get-a-collection-of-lines-from-a-textbox.md)  
- [<span data-ttu-id="25b46-109">TextBox 컨트롤을 읽기 전용으로 설정</span><span class="sxs-lookup"><span data-stu-id="25b46-109">Make a TextBox Control Read-Only</span></span>](../../../../docs/framework/wpf/controls/how-to-make-a-textbox-control-read-only.md)  
- [<span data-ttu-id="25b46-110">TextBox 컨트롤의 텍스트 시작 또는 끝 위치에 커서 놓기</span><span class="sxs-lookup"><span data-stu-id="25b46-110">Position the Cursor at the Beginning or End of Text in a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/position-the-cursor-at-the-beginning-or-end-of-text.md)  
- [<span data-ttu-id="25b46-111">텍스트 선택 검색</span><span class="sxs-lookup"><span data-stu-id="25b46-111">Retrieve a Text Selection</span></span>](../../../../docs/framework/wpf/controls/how-to-retrieve-a-text-selection.md)  
- [<span data-ttu-id="25b46-112">TextBox 컨트롤에서 포커스 설정</span><span class="sxs-lookup"><span data-stu-id="25b46-112">Set Focus in a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-set-focus-in-a-textbox-control.md)  
- [<span data-ttu-id="25b46-113">TextBox 컨트롤의 텍스트 내용 설정</span><span class="sxs-lookup"><span data-stu-id="25b46-113">Set the Text Content of a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-set-the-text-content-of-a-textbox-control.md)  
- [<span data-ttu-id="25b46-114">텍스트 편집 컨트롤에서 맞춤법 검사 사용</span><span class="sxs-lookup"><span data-stu-id="25b46-114">Enable Spell Checking in a Text Editing Control</span></span>](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md)  
- [<span data-ttu-id="25b46-115">TextBox에 사용자 지정 컨텍스트 메뉴 사용</span><span class="sxs-lookup"><span data-stu-id="25b46-115">Use a Custom Context Menu with a TextBox</span></span>](../../../../docs/framework/wpf/controls/how-to-use-a-custom-context-menu-with-a-textbox.md)  
- [<span data-ttu-id="25b46-116">상황에 맞는 메뉴로 맞춤법 검사 사용</span><span class="sxs-lookup"><span data-stu-id="25b46-116">Use Spell Checking with a Context Menu</span></span>](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)  
- [<span data-ttu-id="25b46-117">TextBox에 워터마크 추가</span><span class="sxs-lookup"><span data-stu-id="25b46-117">Add a Watermark to a TextBox</span></span>](../../../../docs/framework/wpf/controls/how-to-add-a-watermark-to-a-textbox.md)  
+## <a name="in-this-section"></a><span data-ttu-id="bff4b-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="bff4b-104">In This Section</span></span>  
+ [<span data-ttu-id="bff4b-105">여러 줄 TextBox 컨트롤 만들기</span><span class="sxs-lookup"><span data-stu-id="bff4b-105">Create a Multiline TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-create-a-multiline-textbox-control.md)  
+ [<span data-ttu-id="bff4b-106">TextBox에서 텍스트가 변경되는 시점 감지</span><span class="sxs-lookup"><span data-stu-id="bff4b-106">Detect When Text in a TextBox Has Changed</span></span>](../../../../docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md)  
+ [<span data-ttu-id="bff4b-107">TextBox 컨트롤에서 탭 문자 사용</span><span class="sxs-lookup"><span data-stu-id="bff4b-107">Enable Tab Characters in a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-enable-tab-characters-in-a-textbox-control.md)  
+ [<span data-ttu-id="bff4b-108">TextBox에서 줄 컬렉션 가져오기</span><span class="sxs-lookup"><span data-stu-id="bff4b-108">Get a Collection of Lines from a TextBox</span></span>](../../../../docs/framework/wpf/controls/how-to-get-a-collection-of-lines-from-a-textbox.md)  
+ [<span data-ttu-id="bff4b-109">TextBox 컨트롤을 읽기 전용으로 설정</span><span class="sxs-lookup"><span data-stu-id="bff4b-109">Make a TextBox Control Read-Only</span></span>](../../../../docs/framework/wpf/controls/how-to-make-a-textbox-control-read-only.md)  
+ [<span data-ttu-id="bff4b-110">TextBox 컨트롤의 텍스트 시작 또는 끝 위치에 커서 놓기</span><span class="sxs-lookup"><span data-stu-id="bff4b-110">Position the Cursor at the Beginning or End of Text in a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/position-the-cursor-at-the-beginning-or-end-of-text.md)  
+ [<span data-ttu-id="bff4b-111">텍스트 선택 검색</span><span class="sxs-lookup"><span data-stu-id="bff4b-111">Retrieve a Text Selection</span></span>](../../../../docs/framework/wpf/controls/how-to-retrieve-a-text-selection.md)  
+ [<span data-ttu-id="bff4b-112">TextBox 컨트롤에서 포커스 설정</span><span class="sxs-lookup"><span data-stu-id="bff4b-112">Set Focus in a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-set-focus-in-a-textbox-control.md)  
+ [<span data-ttu-id="bff4b-113">TextBox 컨트롤의 텍스트 내용 설정</span><span class="sxs-lookup"><span data-stu-id="bff4b-113">Set the Text Content of a TextBox Control</span></span>](../../../../docs/framework/wpf/controls/how-to-set-the-text-content-of-a-textbox-control.md)  
+ [<span data-ttu-id="bff4b-114">텍스트 편집 컨트롤에서 맞춤법 검사 사용</span><span class="sxs-lookup"><span data-stu-id="bff4b-114">Enable Spell Checking in a Text Editing Control</span></span>](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md)  
+ [<span data-ttu-id="bff4b-115">TextBox에 사용자 지정 컨텍스트 메뉴 사용</span><span class="sxs-lookup"><span data-stu-id="bff4b-115">Use a Custom Context Menu with a TextBox</span></span>](../../../../docs/framework/wpf/controls/how-to-use-a-custom-context-menu-with-a-textbox.md)  
+ [<span data-ttu-id="bff4b-116">상황에 맞는 메뉴로 맞춤법 검사 사용</span><span class="sxs-lookup"><span data-stu-id="bff4b-116">Use Spell Checking with a Context Menu</span></span>](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)  
+ [<span data-ttu-id="bff4b-117">TextBox에 워터마크 추가</span><span class="sxs-lookup"><span data-stu-id="bff4b-117">Add a Watermark to a TextBox</span></span>](../../../../docs/framework/wpf/controls/how-to-add-a-watermark-to-a-textbox.md)  
   
-## <a name="reference"></a><span data-ttu-id="25b46-118">참조</span><span class="sxs-lookup"><span data-stu-id="25b46-118">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="bff4b-118">참조</span><span class="sxs-lookup"><span data-stu-id="bff4b-118">Reference</span></span>  
  <xref:System.Windows.Controls.TextBox>  
   
  <xref:System.Windows.Controls.RichTextBox>  
@@ -41,6 +41,6 @@ ms.locfileid: "43397529"
   
  <xref:System.Windows.Controls.PasswordBox>  
   
-## <a name="see-also"></a><span data-ttu-id="25b46-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="25b46-119">See Also</span></span>  
- <span data-ttu-id="25b46-120">[WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)</span><span class="sxs-lookup"><span data-stu-id="25b46-120">[WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)</span></span>  
- [<span data-ttu-id="25b46-121">TextBox 스타일 및 템플릿</span><span class="sxs-lookup"><span data-stu-id="25b46-121">TextBox Styles and Templates</span></span>](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)
+## <a name="see-also"></a><span data-ttu-id="bff4b-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="bff4b-119">See Also</span></span>  
+ <span data-ttu-id="bff4b-120">[WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)</span><span class="sxs-lookup"><span data-stu-id="bff4b-120">[WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)</span></span>  
+ [<span data-ttu-id="bff4b-121">TextBox 스타일 및 템플릿</span><span class="sxs-lookup"><span data-stu-id="bff4b-121">TextBox Styles and Templates</span></span>](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)
