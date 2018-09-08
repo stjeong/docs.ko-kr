@@ -12,36 +12,36 @@ ms.assetid: 8b0e97f3-7877-44fd-bc76-e05d36d5d79c
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: a5b53fc383e6fc9a5f056bab4eabde9979cd734b
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44133562"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44186177"
 ---
-# <a name="naming-resources"></a><span data-ttu-id="1b142-102">리소스 이름 지정</span><span class="sxs-lookup"><span data-stu-id="1b142-102">Naming Resources</span></span>
-<span data-ttu-id="1b142-103">지역화할 수 있는 리소스 속성 처럼 특정 개체를 통해 참조할 수, 있으므로 리소스에 대 한 명명 지침 속성 지침 비슷합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-103">Because localizable resources can be referenced via certain objects as if they were properties, the naming guidelines for resources are similar to property guidelines.</span></span>  
+# <a name="naming-resources"></a><span data-ttu-id="a2dd0-102">리소스 이름 지정</span><span class="sxs-lookup"><span data-stu-id="a2dd0-102">Naming Resources</span></span>
+<span data-ttu-id="a2dd0-103">지역화할 수 있는 리소스 속성 처럼 특정 개체를 통해 참조할 수, 있으므로 리소스에 대 한 명명 지침 속성 지침 비슷합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-103">Because localizable resources can be referenced via certain objects as if they were properties, the naming guidelines for resources are similar to property guidelines.</span></span>  
   
- <span data-ttu-id="1b142-104">**✓ DO** PascalCasing 리소스 키에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-104">**✓ DO** use PascalCasing in resource keys.</span></span>  
+ <span data-ttu-id="a2dd0-104">**✓ DO** PascalCasing 리소스 키에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-104">**✓ DO** use PascalCasing in resource keys.</span></span>  
   
- <span data-ttu-id="1b142-105">**✓ DO** 설명 하는 대신 짧은 식별자를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-105">**✓ DO** provide descriptive rather than short identifiers.</span></span>  
+ <span data-ttu-id="a2dd0-105">**✓ DO** 설명 하는 대신 짧은 식별자를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-105">**✓ DO** provide descriptive rather than short identifiers.</span></span>  
   
- <span data-ttu-id="1b142-106">**X DO NOT** 주 CLR 언어의 언어 관련 키워드를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-106">**X DO NOT** use language-specific keywords of the main CLR languages.</span></span>  
+ <span data-ttu-id="a2dd0-106">**X DO NOT** 주 CLR 언어의 언어 관련 키워드를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-106">**X DO NOT** use language-specific keywords of the main CLR languages.</span></span>  
   
- <span data-ttu-id="1b142-107">**✓ DO** 영숫자 문자와 밑줄 리소스 이름 지정 시에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-107">**✓ DO** use only alphanumeric characters and underscores in naming resources.</span></span>  
+ <span data-ttu-id="a2dd0-107">**✓ DO** 영숫자 문자와 밑줄 리소스 이름 지정 시에 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-107">**✓ DO** use only alphanumeric characters and underscores in naming resources.</span></span>  
   
- <span data-ttu-id="1b142-108">**✓ DO** 예외 메시지 리소스에 대 한 다음과 같은 명명 규칙을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-108">**✓ DO** use the following naming convention for exception message resources.</span></span>  
+ <span data-ttu-id="a2dd0-108">**✓ DO** 예외 메시지 리소스에 대 한 다음과 같은 명명 규칙을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-108">**✓ DO** use the following naming convention for exception message resources.</span></span>  
   
- <span data-ttu-id="1b142-109">예외 형식 이름 및 예외 짧은 식별자 리소스 식별자 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b142-109">The resource identifier should be the exception type name plus a short identifier of the exception:</span></span>  
+ <span data-ttu-id="a2dd0-109">예외 형식 이름 및 예외 짧은 식별자 리소스 식별자 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a2dd0-109">The resource identifier should be the exception type name plus a short identifier of the exception:</span></span>  
   
  `ArgumentExceptionIllegalCharacters`  
  `ArgumentExceptionInvalidName`  
  `ArgumentExceptionFileNameIsMalformed`  
   
- <span data-ttu-id="1b142-110">*Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*</span><span class="sxs-lookup"><span data-stu-id="1b142-110">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>  
+ <span data-ttu-id="a2dd0-110">*Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*</span><span class="sxs-lookup"><span data-stu-id="a2dd0-110">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>  
   
- <span data-ttu-id="1b142-111">*Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span><span class="sxs-lookup"><span data-stu-id="1b142-111">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>  
+ <span data-ttu-id="a2dd0-111">*Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span><span class="sxs-lookup"><span data-stu-id="a2dd0-111">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1b142-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="1b142-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a2dd0-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="a2dd0-112">See also</span></span>
 
-- [<span data-ttu-id="1b142-113">프레임워크 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="1b142-113">Framework Design Guidelines</span></span>](../../../docs/standard/design-guidelines/index.md)  
-- [<span data-ttu-id="1b142-114">명명 지침</span><span class="sxs-lookup"><span data-stu-id="1b142-114">Naming Guidelines</span></span>](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [<span data-ttu-id="a2dd0-113">프레임워크 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="a2dd0-113">Framework Design Guidelines</span></span>](../../../docs/standard/design-guidelines/index.md)  
+- [<span data-ttu-id="a2dd0-114">명명 지침</span><span class="sxs-lookup"><span data-stu-id="a2dd0-114">Naming Guidelines</span></span>](../../../docs/standard/design-guidelines/naming-guidelines.md)
