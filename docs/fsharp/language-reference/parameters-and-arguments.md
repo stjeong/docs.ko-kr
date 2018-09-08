@@ -2,12 +2,12 @@
 title: 매개 변수 및 인수(F#)
 description: '매개 변수를 정의 하 고 함수, 메서드 및 속성에 인수를 전달 하기 위한 F # 언어 지원에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: a3418ec814e0419d08758cf035ecc0f402b5db1a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: a1e2a70ca560bbb09d2cd10f47485cbe5c5e029d
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "44062639"
+ms.locfileid: "44131982"
 ---
 # <a name="parameters-and-arguments"></a>매개 변수 및 인수
 
@@ -127,15 +127,32 @@ Baud Rate: 300 Duplex: Half Parity: true
 
 ## <a name="passing-by-reference"></a>참조로 전달
 
-에서는 F # 값을 참조로 전달 합니다 `byref` 매개 변수가 실제로 참조로 전달 되는 값에 대 한 포인터 임을 지정 하는 키워드입니다. 값으로 메서드에 전달 된 `byref` 인수 여야 합니다 `mutable`합니다.
+에서는 F # 값을 참조로 전달 [byref](byrefs.md), 관리 되는 포인터 형식은입니다. 다음과 같이 형식을 사용 하는 지침:
+
+* 사용 하 여 `inref<'T>` 포인터를 읽을 수만 필요 합니다.
+* 사용 하 여 `outref<'T>` 포인터에 대 한 작성 해야 하는 경우.
+* 사용 하 여 `byref<'T>` 에서 읽기 및 포인터에 대 한 쓰기 해야 할 경우.
+
+```fsharp
+let example1 (x: inref<int>) = printfn "It's %d" x
+
+let example2 (x: outref<int>) = x <- x + 1
+
+let example3 (x: byref<int>) =
+    printfn "It'd %d" x
+    x <- x + 1
+
+// No need to make it mutable, since it's read-only
+let x = 1
+example1 &x
+
+// Needs to be mutable, since we write to it
+let mutable y = 2
+example2 &y
+example3 &y // Now 'y' is 3
+```
 
 매개 변수가 포인터가 고 값은 변경할 수 있으므로 모든 값을 변경 하는 함수의 실행 한 후 유지 됩니다.
-
-동일한 작업을 수행할 수 있습니다 [참조 셀](reference-cells.md), 중요 한 사실은 이지만 **셀을 참조 하 고 `byref`가 동일 하지**합니다. 참조 셀은 컨테이너를 검사 하 고의 내용을 변경할 수 있지만이 값은 힙의 있으며 그 안에 포함 된 변경할 수 있는 값을 사용 하 여 레코드를 갖는다는 것을 의미 하는 값입니다. `byref` 는 서로 다른 기본 의미 체계 및 사용 규칙 (해당 되는 매우 제한적인) 이므로 실제 포인터입니다.
-
-다음 예제에서는 사용법을 보여 줍니다.는 `byref` 키워드입니다. 매개 변수로 참조 셀을 사용 하는 경우 있습니다 해야 명명 된 값으로 참조 셀을 만들어서 및 매개 변수로 사용을 뿐 아니라 추가 합니다 `ref` 연산자는 첫 번째 호출에서와 같이 `Increment` 다음 코드에서입니다. 참조 셀을 만들기는 내부 값의 복사본을 만들기 때문에 첫 번째 호출에만 임시 값을 증가 시킵니다.
-
-[!code-fsharp[Main](../../../samples/snippets/fsharp/parameters-and-arguments-1/snippet3809.fs)]
 
 튜플을 반환 값으로 하 여 저장 `out` .NET 라이브러리 메서드의 매개 변수입니다. 처리할 수 있습니다 합니다 `out` 매개 변수는 `byref` 매개 변수입니다. 다음 코드 예제에서는 두 가지 방법을 모두 보여 줍니다.
 
@@ -155,7 +172,7 @@ Baud Rate: 300 Duplex: Half Parity: true
 
 프로젝트를 실행 하는 경우 이전 코드의 출력은 다음과 같습니다.
 
-```
+```console
 a 1 10 Hello world 1 True
 "a"
 1

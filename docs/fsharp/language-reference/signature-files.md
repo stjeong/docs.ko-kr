@@ -3,11 +3,11 @@ title: '서명 파일 (F #)'
 description: 'F # 시그니처 파일 형식, 네임 스페이스, 모듈 등 F # 프로그램 요소를 집합의 공개 서명에 대 한 정보를 보관을 사용 하는 방법을 알아봅니다.'
 ms.date: 06/15/2018
 ms.openlocfilehash: f0836aa7f638dc9e2b066b0f46bbb6c086347615
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44036485"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44127841"
 ---
 # <a name="signatures"></a>서명
 

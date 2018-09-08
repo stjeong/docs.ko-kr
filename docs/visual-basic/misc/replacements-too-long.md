@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID746
 ms.assetid: 398ff5eb-b580-456f-8f24-b7a8318e1193
-ms.openlocfilehash: 3216ce866cae9a7f59ecfca23d92d82fdb8bc117
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 08152ce5cd8c6960f7d91b46b2fb9f6ef9475f7c
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43803797"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44129380"
 ---
 # <a name="replacements-too-long"></a>대체 텍스트가 너무 깁니다.
 허용된 길이를 초과하는 대체 텍스트를 지정했습니다.  
@@ -18,5 +18,6 @@ ms.locfileid: "43803797"
   
 1.  구성 요소 설명서를 참조하여 길이 제한을 확인합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 대화형 검색](https://msdn.microsoft.com/library/e9fdbfab-bd59-401a-92d3-7ce1652b243c)
+## <a name="see-also"></a>참고자료
+
+- [텍스트 찾기 및 바꾸기](/visualstudio/ide/finding-and-replacing-text)

@@ -5,18 +5,18 @@ f1_keywords:
 - vbrLinguisticRequirements
 ms.assetid: 99cdb11d-9488-460b-84fb-a27f43da8be4
 ms.openlocfilehash: fc117c6b8993619e0610d5f51287e0fd0369729f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43539751"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44139360"
 ---
 # <a name="39strconvlinguisticcasing39-requires-39strconvlowercase39-or-39strconvuppercase39"></a>&#39;StrConv.LinguisticCasing&#39; 필요 &#39;StrConv.LowerCase&#39; 또는 &#39;StrConv.UpperCase&#39;
-`StrConv.LinguisticCasing`또는 `StrConv.LowerCase` 과 함께 사용하는 경우에만 유효한 `StrConv.UpperCase`를 사용하려고 했습니다.  
+`StrConv.LowerCase` 또는 `StrConv.UpperCase`과 함께 사용하는 경우에만 유효한 `StrConv.LinguisticCasing`를 사용하려고 했습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-1.  `StrConv.LowerCase` 과 함께 `StrConv.UpperCase` 또는 `StrConv.LinguisticCasing`를 사용합니다.  
+1.  `StrConv.LinguisticCasing`과 함께 `StrConv.LowerCase` 또는 `StrConv.UpperCase`를 사용합니다.  
   
 ## <a name="see-also"></a>참고 항목  
    

@@ -5,11 +5,11 @@ ms.assetid: cb52b1ef-47fd-4609-b69d-0586c818ac9e
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: ac5d80664bbca8cf950eb2e6f37badc485c398d2
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "44046894"
+ms.locfileid: "44140569"
 ---
 # <a name="runtime-directive-policy-settings"></a>런타임 지시문 정책 설정
 > [!NOTE]
@@ -32,7 +32,7 @@ ms.locfileid: "44046894"
   
      다음 표에는 리플렉션 정책 형식과 해당 형식을 사용할 수 있는 프로그램 요소가 나와 있습니다.  
   
-    |요소|Activate|Browse|동적|  
+    |요소|Activate|Browse|Dynamic|  
     |-------------|--------------|------------|-------------|  
     |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|  
     |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|  

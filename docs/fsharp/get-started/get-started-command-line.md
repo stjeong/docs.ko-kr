@@ -2,12 +2,12 @@
 title: '명령줄 도구를 사용 하 여 F #을 사용 하 여 시작'
 description: '.NET Core CLI를 사용 하 여 모든 운영 체제 (Windows, macOs 또는 Linux)에서 F #에서 간단한 다중 프로젝트 솔루션을 빌드하는 방법에 알아봅니다.'
 ms.date: 03/26/2018
-ms.openlocfilehash: 6cdb2b42781dba6ba00c03b20e6a76d033e03063
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 8a82970f33c8bbe1b8cdd8fb6499b59b16d3cbf3
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37875016"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44134807"
 ---
 # <a name="get-started-with-f-with-the-net-core-cli"></a>.NET Core CLI와 함께 F # 시작
 
@@ -41,7 +41,7 @@ FSNetCore
 사용 합니다 `dotnet new` 명령, 클래스 라이브러리 프로젝트를 만들기는 **src** 라이브러리 라는 폴더입니다.
 
 ```console
-dotnet new lib -lang F# -o src/Library
+dotnet new classlib -lang F# -o src/Library
 ```
 
 이전 명령을 실행 한 후 다음 디렉터리 구조가 생성 됩니다.

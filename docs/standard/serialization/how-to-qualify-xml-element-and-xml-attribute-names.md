@@ -9,12 +9,12 @@ helpviewer_keywords:
 - qualifying XML elements
 - XML namespaces, qualifying elements and names in
 ms.assetid: 44719f90-7e15-42e8-a9e2-282287e2b5bf
-ms.openlocfilehash: 6b4d58f6b5bf23cbce2ace8fb40730d7b73994de
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 3c477923387e5a28dcc14b44b0f77bb6acb686e5
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43785494"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44133284"
 ---
 # <a name="how-to-qualify-xml-element-and-xml-attribute-names"></a>방법: XML 요소 및 XML 특성 이름 한정
 
@@ -169,13 +169,13 @@ public class Book
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-<xref:System.Xml.Serialization.XmlSerializer>
-[XML 스키마 정의 도구 및 XML Serialization](the-xml-schema-definition-tool-and-xml-serialization.md)
-[XML Serialization 소개](introducing-xml-serialization.md)
-[XmlSerializer 클래스](xref:System.Xml.Serialization.XmlSerializer) 
- [XML Serialization을 제어 하는 특성](attributes-that-control-xml-serialization.md)
-[방법:는 XML Stream에 대 한 대체 요소 이름 지정](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
-[방법:개체Serialize](how-to-serialize-an-object.md) 
- [방법: 개체 Deserialize](how-to-deserialize-an-object.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [XML 스키마 정의 도구 및 XML serialization](the-xml-schema-definition-tool-and-xml-serialization.md)
+- [XML serialization 소개](introducing-xml-serialization.md)
+- [XmlSerializer 클래스](xref:System.Xml.Serialization.XmlSerializer)
+- [XML serialization을 제어하는 특성](attributes-that-control-xml-serialization.md)
+- [방법: XML 스트림의 대체 요소 이름 지정](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [방법: 개체 직렬화](how-to-serialize-an-object.md)
+- [방법: 개체 deserialize](how-to-deserialize-an-object.md)

@@ -3,11 +3,11 @@ title: 기호 및 연산자 참조(F#)
 description: '기호 및 F # 프로그래밍 언어에서 사용 되는 연산자에 알아봅니다.'
 ms.date: 04/04/2018
 ms.openlocfilehash: 0e36f6cfc75b7d2e79bcf7acb89d260fd4e9b1ad
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745569"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44131924"
 ---
 # <a name="symbol-and-operator-reference"></a>기호 및 연산자 참조
 

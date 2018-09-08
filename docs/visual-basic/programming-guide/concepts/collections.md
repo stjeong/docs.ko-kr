@@ -2,12 +2,12 @@
 title: 컬렉션 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-ms.openlocfilehash: 510abe7d818b3a45869824bc52dc4fde38238f7b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 60519de1f580bf1cfa4aa067d4a999b20ea8d54d
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504446"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44129104"
 ---
 # <a name="collections-visual-basic"></a>컬렉션 (Visual Basic)
 대부분의 응용 프로그램의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
@@ -464,7 +464,7 @@ End Class
 ## <a name="defining-a-custom-collection"></a>사용자 지정 컬렉션 정의  
  <xref:System.Collections.Generic.IEnumerable%601> 또는 <xref:System.Collections.IEnumerable> 인터페이스를 구현하여 컬렉션을 정의할 수 있습니다. 자세한 내용은 참조 하세요. [컬렉션을 열거](https://msdn.microsoft.com/library/71807ea7-9180-48a6-916f-35a5251d477f)합니다.  
   
- 사용자 지정 컬렉션을 정의할 수도 있지만, 일반적으로 이 항목의 앞부분에 있는 [컬렉션 종류](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)에서 설명한 .NET Framework에 포함된 컬렉션을 대신 사용하는 것이 좋습니다.  
+ 사용자 지정 컬렉션을 정의할 수도 있지만, 일반적으로 이 항목의 앞부분에 있는 [컬렉션 종류](#kinds-of-collections)에서 설명한 .NET Framework에 포함된 컬렉션을 대신 사용하는 것이 좋습니다.  
   
  다음 예제에서는 `AllColors`라는 사용자 지정 컬렉션 클래스를 정의합니다. 이 클래스는 <xref:System.Collections.IEnumerable.GetEnumerator%2A> 메서드가 구현되어야 하는 <xref:System.Collections.IEnumerable> 인터페이스를 구현합니다.  
   
@@ -570,14 +570,15 @@ As IEnumerable(Of Integer)
 End Function  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [컬렉션 이니셜라이저](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
- [프로그래밍 개념(Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)  
- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [LINQ to Objects(Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
- [컬렉션 및 데이터 구조](../../../standard/collections/index.md)  
- [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
- [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)  
- [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)
+## <a name="see-also"></a>참고자료
+
+- [컬렉션 이니셜라이저](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
+- [프로그래밍 개념(Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)  
+- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+- [LINQ to Objects(Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
+- [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
+- [컬렉션 및 데이터 구조](../../../standard/collections/index.md)  
+- [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
+- [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)  
+- [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
+- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)

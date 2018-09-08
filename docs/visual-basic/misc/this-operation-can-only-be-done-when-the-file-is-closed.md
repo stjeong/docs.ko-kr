@@ -3,11 +3,11 @@ title: 이 작업은 파일이 닫혀 있을 때만 수행할 수 있습니다.
 ms.date: 07/20/2015
 ms.assetid: 79fe95ae-4aff-469f-beda-d5a85c91d421
 ms.openlocfilehash: 0a7f6afc7f9ecb232e24d5536d2274db57d1d820
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "44064003"
+ms.locfileid: "44138203"
 ---
 # <a name="this-operation-can-only-be-done-when-the-file-is-closed"></a>이 작업은 파일이 닫혀 있을 때만 수행할 수 있습니다.
 파일이 열려 있는데 닫혀 있는 파일에서만 가능한 작업을 수행하려고 했습니다.  

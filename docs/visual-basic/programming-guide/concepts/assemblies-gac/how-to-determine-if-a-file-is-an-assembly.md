@@ -1,20 +1,20 @@
 ---
-title: '방법: 파일 어셈블리 (Visual Basic) 인지 확인 합니다.'
+title: '방법: 파일이 어셈블리 (Visual Basic) 인지 확인 합니다.'
 ms.date: 07/20/2015
 ms.assetid: de26f410-9bd1-4b55-a343-cc82f81684be
-ms.openlocfilehash: 84d45cea4a2557350edacd5f05b12c8ffcac4df8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ced41279e7e192d6d5bed53dbce7378395b32e6d
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643244"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44131622"
 ---
-# <a name="how-to-determine-if-a-file-is-an-assembly-visual-basic"></a>방법: 파일 어셈블리 (Visual Basic) 인지 확인 합니다.
+# <a name="how-to-determine-if-a-file-is-an-assembly-visual-basic"></a>방법: 파일이 어셈블리 (Visual Basic) 인지 확인 합니다.
 파일은 관리되고 해당 메타데이터에 어셈블리 항목을 포함하는 경우에만 어셈블리입니다. 어셈블리 및 메타데이터에 대한 자세한 내용은 [어셈블리 매니페스트](../../../../framework/app-domains/assembly-manifest.md) 항목을 참조하세요.  
   
 ## <a name="how-to-manually-determine-if-a-file-is-an-assembly"></a>파일이 어셈블리인지 수동으로 확인하는 방법  
   
-1.  [Ildasm.exe(IL 디스어셈블러)](https://msdn.microsoft.com/library/f7dy01k1)를 시작합니다.  
+1.  [Ildasm.exe(IL 디스어셈블러)](../../../../framework/tools/ildasm-exe-il-disassembler.md)를 시작합니다.  
   
 2.  테스트하려는 파일을 로드합니다.  
   
@@ -52,7 +52,8 @@ End Module
   
  <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> 메서드는 테스트 파일을 로드한 다음 정보를 읽고 나면 해제합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection.AssemblyName>  
- [프로그래밍 개념](../../../../visual-basic/programming-guide/concepts/index.md)  
- [어셈블리와 전역 어셈블리 캐시(Visual Basic)](index.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Reflection.AssemblyName>  
+- [프로그래밍 개념](../../../../visual-basic/programming-guide/concepts/index.md)  
+- [어셈블리와 전역 어셈블리 캐시(Visual Basic)](index.md)

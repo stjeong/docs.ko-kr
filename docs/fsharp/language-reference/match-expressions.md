@@ -3,11 +3,11 @@ title: '일치 식 (F #)'
 description: 'F # 일치 식 패턴 집합을 사용 하 여 식의 비교를 기반으로 하는 분기 제어를 제공 하는 방법에 대해 알아봅니다.'
 ms.date: 04/19/2018
 ms.openlocfilehash: e4cb82f20fe82bff562736557c2346562c557f59
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44047677"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44132041"
 ---
 # <a name="match-expressions"></a>일치 식
 

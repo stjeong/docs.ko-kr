@@ -2,17 +2,16 @@
 title: 측정 단위(F#)
 description: '어떻게 부동 소수점 알아봅니다 및 F #의 부호 있는 정수 값, 측정 단위 길이, 볼륨 및 대용량을 나타내기 위해 일반적으로 사용 되는 연결 수입니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 6075742ec80d9510be51d4565e3397931c9f68c7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ad2193e25f3c0cee6e73cd529ab43d1e4b6b549b
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517428"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44131262"
 ---
 # <a name="units-of-measure"></a>측정 단위
 
 F #의 부동 소수점 및 부호 있는 정수 값 대용량, 길이, 볼륨을 나타내기 위해 일반적으로 사용 되는 측정값을 단위가 연결 될 수 있습니다. 한지 확인 하려면 산술 관계 올바른 단위를 방지할 수 있는 컴파일러를 사용 하면 수량 단위를 사용 하 여 오류를 프로그래밍 합니다.
-
 
 ## <a name="syntax"></a>구문
 
@@ -21,6 +20,7 @@ F #의 부동 소수점 및 부호 있는 정수 값 대용량, 길이, 볼륨�
 ```
 
 ## <a name="remarks"></a>설명
+
 이전 구문 정의 *단위 이름* 으로 측정 단위입니다. 이전에 정의 된 단위를 기준으로 새 측정값을 정의 하는 선택적 부분 사용 됩니다. 다음 줄에서는 측정값을 정의 하는 예를 들어 `cm` (센티미터).
 
 ```fsharp
@@ -72,7 +72,7 @@ let convertg2kg (x : float<g>) = x / 1000.0<g/kg>
 다음 예제에서는 측정 단위를 사용을 하는 방법을 보여 줍니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6901.fs)]
-    
+
 다음 코드 예제에는 값을 가지는 부동 소수점 숫자에서 차원이 지정 된 부동 소수점 값으로 변환 하는 방법을 보여 줍니다. 곱하기만 1.0에서 차원을 1.0을 적용 합니다. 와 같은 함수에이 추상화할 수 있습니다 `degreesFahrenheit`합니다.
 
 또한 부동 소수점 숫자 값을 가지는 함수에 차원이 지정 된 값을 전달할 때의 단위를 취소 하거나 해야 캐스팅할 `float` 를 사용 하 여는 `float` 연산자입니다. 이 예에서 나누면 `1.0<degC>` 에 대 한 인수에 대 한 `printf` 때문에 `printf` 치수 수량을 예상 합니다.
@@ -88,20 +88,23 @@ That temperature in degrees Celsius is    32.22.
 ```
 
 ## <a name="using-generic-units"></a>일반 단위를 사용 하 여
+
 데이터에서 연결 된 단위에 대해 작동 하는 제네릭 함수를 작성할 수 있습니다. 이렇게 하면 형식 매개 변수와 함께 제네릭 단위 형식을 지정 하 여 다음 코드 예제에 표시 된 대로 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6903.fs)]
-    
+
 ## <a name="creating-aggregate-types-with-generic-units"></a>집합체 형식은 제네릭 단위를 사용 하 여 만들기
+
 다음 코드에는 제네릭 단위가 있는 개별 부동 소수점 값으로 이루어진 집합체 형식을 만드는 방법을 보여 줍니다. 따라서 다양 한 단위를 사용 하 여 작동 하는 단일 형식을 만들 수 있습니다. 또한 제네릭 단위 단위 집합을 가진 제네릭 형식을 다른 형식 보다 다양 한 단위를 사용 하 여 동일한 제네릭 형식 인지 확인 하 여 형식 안전성을 유지 합니다. 이 기법으로 `Measure` 특성 형식 매개 변수에 적용할 수 있습니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6904.fs)]
-    
+
 ## <a name="units-at-runtime"></a>런타임 시 단위
+
 측정 단위는 정적 형식 확인에 사용 됩니다. 부동 소수점 값을 컴파일하면 단위 런타임 시 손실 되므로 측정 단위를 제거 됩니다. 따라서 런타임에 단위 확인에 의존 하는 기능을 구현 하려고 수는 없습니다. 예를 들어, 구현를 `ToString` 단위를 인쇄 하는 함수 불가능 합니다.
 
-
 ## <a name="conversions"></a>변환
+
 단위에 있는 형식을 변환 하려면 (예를 들어 `float<'u>`) 단위 없는 형식으로 표준 변환 함수를 사용할 수 있습니다. 예를 들어 사용할 수 있습니다 `float` 변환할는 `float` 다음 코드 에서처럼 단위에 있지 않은 값입니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6905.fs)]
@@ -109,10 +112,11 @@ That temperature in degrees Celsius is    32.22.
 단위 값 단위 값으로 변환 하려면 적절 한 단위를 사용 하 여 주석이 추가 되는 1 또는 1.0 값으로 곱하면 하는 것이 됩니다. 그러나 상호 운용성 레이어를 작성 하는 것에 대 한 가지도 단위 값 단위를 사용 하 여 값으로 변환 하는 데 사용할 수 있는 몇 가지 명시적 함수입니다. 이러한 합니다 [Microsoft.FSharp.Core.LanguagePrimitives](https://msdn.microsoft.com/library/69d08ac5-5d51-4c20-bf1e-850fd312ece3) 모듈입니다. 예를 들어 단위를 변환할 `float` 에 `float<cm>`를 사용 하 여 [FloatWithMeasure](https://msdn.microsoft.com/library/69520bc7-d67b-46b8-9004-7cac9646b8d9)다음 코드에 표시 된 것 처럼 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6906.fs)]
-    
+
 ## <a name="units-of-measure-in-the-f-core-library"></a>F # 핵심 라이브러리의 측정 단위
+
 단위 라이브러리에서 사용할 수는 `FSharp.Data.UnitSystems.SI` 네임 스페이스입니다. 기호 형식으로 모두의 SI 단위를 포함 (같은 `m` 미터에 대 한)에 `UnitSymbols` 하위 네임 스페이스와 전체 이름 (같은 `meter` 미터에 대 한)에서 `UnitNames` 하위 네임 스페이스입니다.
 
+## <a name="see-also"></a>참고자료
 
-## <a name="see-also"></a>참고 항목
-[F# 언어 참조](index.md)
+- [F# 언어 참조](index.md)

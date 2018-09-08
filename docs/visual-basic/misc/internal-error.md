@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID51
 ms.assetid: 21266dbb-f4a1-4c5d-a646-27909cf53248
-ms.openlocfilehash: 7f43ce3781fa2a38bb34e84e37ff0f367b5c274d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 219f7b31beec468a7d3e14e750a7163831f58548
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518440"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44127357"
 ---
 # <a name="internal-error-visual-basic"></a>내부 오류(Visual Basic)
 Visual Basic에서 내부 오작동이 발생 했습니다.  
@@ -18,6 +18,7 @@ Visual Basic에서 내부 오작동이 발생 했습니다.
   
 -   이 오류가 `Error` 문 또는 `Raise` 메서드에서 생성되지 않았는지 확인합니다. 그렇지 않은 경우 Microsoft 기술 지원 서비스에 문의하여 메시지가 표시되는 조건을 보고합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [On Error 문](../../visual-basic/language-reference/statements/on-error-statement.md)  
- [메서드를 발생 시킵니다 (Err 개체)](https://msdn.microsoft.com/library/80ffe307-57f1-4ef5-92d7-8ae7b6ec3f42)
+## <a name="see-also"></a>참고자료
+
+- [On Error 문](../../visual-basic/language-reference/statements/on-error-statement.md)  
+- [메서드를 발생 시킵니다 (Err 개체)](xref:Microsoft.VisualBasic.ErrObject.Raise%2A)

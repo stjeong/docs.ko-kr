@@ -7,16 +7,16 @@ helpviewer_keywords:
 - data [.NET Framework], accessing
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
 ms.openlocfilehash: 0db71fd7e48515ad6be3641786fc180f62aacf33
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43879650"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44138931"
 ---
 # <a name="data-and-modeling-in-the-net-framework"></a>.NET Framework의 데이터 및 모델링
 이 단원에서는 ADO.NET, LINQ(Language Integrated Query), WCF Data Services 및 XML을 사용하여 데이터에 액세스하는 방법에 대한 정보를 제공합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [ADO.NET](../../../docs/framework/data/adonet/index.md)  
  ADO.NET 아키텍처에 대해 설명하고, ADO.NET 클래스를 사용하여 응용 프로그램 데이터를 관리하는 방법과 Microsoft SQL Server, OLE DB 데이터 소스 및 XML을 포함하는 데이터 소스와 상호 작용하는 방법에 대해 설명합니다.  
   

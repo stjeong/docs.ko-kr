@@ -7,12 +7,12 @@ helpviewer_keywords:
 - API calls [Visual Basic], platform invoke
 - calls [Visual Basic], stored procedures
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
-ms.openlocfilehash: 739516e86917ac24a81cd6387af5576c512ecbc2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 081f4242ef5883a8b25b8819ba3aff835b1e6ac7
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515919"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44129697"
 ---
 # <a name="how-to-call-windows-apis-visual-basic"></a>방법: Windows API 호출(Visual Basic)
 정의 하 고 호출 하는이 예제는 `MessageBox` user32.dll의 함수 다음에 문자열을 전달 합니다.  
@@ -34,10 +34,11 @@ ms.locfileid: "43515919"
   
 -   포함하는 형식은 `CreateType`을 사용하여 이전에 만든 것입니다. (<xref:System.InvalidOperationException>)  
   
-## <a name="see-also"></a>참고 항목  
- [플랫폼 호출 자세히 보기](https://msdn.microsoft.com/library/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
- [플랫폼 호출 예제](../../../framework/interop/platform-invoke-examples.md)  
- [관리되지 않는 DLL 함수 사용](../../../framework/interop/consuming-unmanaged-dll-functions.md)  
- [내보내기를 리플렉션 사용 하 여 메서드를 정의 합니다.](https://msdn.microsoft.com/library/84fd3bf6-628f-41aa-83d9-b990cf926e81)  
- [연습: Windows API 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+## <a name="see-also"></a>참고자료
+
+- [플랫폼 호출 자세히 보기](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
+- [플랫폼 호출 예제](../../../framework/interop/platform-invoke-examples.md)  
+- [관리되지 않는 DLL 함수 사용](../../../framework/interop/consuming-unmanaged-dll-functions.md)  
+- [내보내기를 리플렉션 사용 하 여 메서드를 정의 합니다.](https://msdn.microsoft.com/library/84fd3bf6-628f-41aa-83d9-b990cf926e81)  
+- [연습: Windows API 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
