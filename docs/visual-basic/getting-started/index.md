@@ -5,12 +5,12 @@ helpviewer_keywords:
 - get started, Visual Basic
 - Visual Basic, get started
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
-ms.openlocfilehash: 9d51aca4c7ad491c0b807ef6a40cb2581f97355b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 373f5815e1ca466545da4e2368bdf55e944d28f8
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33589843"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44173316"
 ---
 # <a name="get-started-with-visual-basic"></a>Visual Basic 시작
 설명서의 이 섹션에서는 Visual Basic 응용 프로그램의 개발을 시작하는 데 도움이 되는 내용을 제공합니다.  
@@ -65,5 +65,5 @@ ms.locfileid: "33589843"
  [Visual C++](/cpp/)  
  Visual C++ 설명서에 대한 링크를 제공합니다.  
   
- [Office/SharePoint 개발](https://msdn.microsoft.com/library/d2tx7z6d)  
+ [Office/SharePoint 개발](/visualstudio/vsto/office-and-sharepoint-development-in-visual-studio)  
  Microsoft Office와 Visual Studio를 비즈니스 응용 프로그램으로 사용하는 방법에 대해 설명합니다.

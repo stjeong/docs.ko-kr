@@ -5,12 +5,12 @@ helpviewer_keywords:
 - arrays [C#]
 - C# language, arrays
 ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
-ms.openlocfilehash: 1469336bf034fd22c9d7355b2f8dd8be32721fdf
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e0ed2d678363a29bb870a496846fc6f054769a4b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510640"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44181604"
 ---
 # <a name="arrays-c-programming-guide"></a>배열(C# 프로그래밍 가이드)
 
@@ -48,8 +48,6 @@ ms.locfileid: "43510640"
   
 -   [인수로 배열 전달](../../../csharp/programming-guide/arrays/passing-arrays-as-arguments.md)  
   
--   [ref 및 out을 사용하여 배열 전달](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md)   
-  
 ## <a name="c-language-specification"></a>C# 언어 사양
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
@@ -57,5 +55,5 @@ ms.locfileid: "43510640"
 ## <a name="see-also"></a>참고 항목
 
 - [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [컬렉션](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+- [컬렉션](../../../csharp/programming-guide/concepts/collections.md)  
 - [배열 컬렉션 유형](https://msdn.microsoft.com/library/8a9964de-8941-47b1-a3cf-a01bc88db9e8)
