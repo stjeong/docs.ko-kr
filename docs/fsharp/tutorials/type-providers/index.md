@@ -3,11 +3,11 @@ title: 형식 공급자
 description: 'F # 형식 공급자 형식, 속성 및 프로그램에서 사용할 메서드를 제공 하는 구성 요소를가 하는 방법에 대해 알아봅니다.'
 ms.date: 04/02/2018
 ms.openlocfilehash: 5fa9de229caa2ec3ba4a248ca5cd1c8aa5adb230
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44134735"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44210327"
 ---
 # <a name="type-providers"></a>형식 공급자
 

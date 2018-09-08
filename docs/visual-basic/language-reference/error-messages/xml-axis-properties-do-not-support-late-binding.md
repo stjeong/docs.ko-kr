@@ -8,11 +8,11 @@ helpviewer_keywords:
 - BC31168
 ms.assetid: 45707363-55e4-4151-892d-d8729106355b
 ms.openlocfilehash: 8546ed0a5032d93bcf7320c96424b02b3b6d5fa3
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44078297"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44201792"
 ---
 # <a name="xml-axis-properties-do-not-support-late-binding"></a>XML axis 속성은 런타임 바인딩을 지원하지 않습니다.
 형식화 되지 않은 개체에 대 한 XML 축 속성을 참조 했습니다.  

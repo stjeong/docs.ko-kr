@@ -12,11 +12,11 @@ ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 9dea187b5f3911114e551d640e0bb0aa6fac1143
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44137215"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44213292"
 ---
 # <a name="enum-design"></a>열거형 디자인
 열거형은 값 형식의 특수 한 종류입니다. 두 가지 종류의 열거형: 단순 열거형 및 플래그 열거형입니다.  

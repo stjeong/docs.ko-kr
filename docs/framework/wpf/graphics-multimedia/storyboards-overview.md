@@ -10,17 +10,17 @@ helpviewer_keywords:
 - timelines [WPF]
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
 ms.openlocfilehash: d6b33df8574d9c25380d6d9319480d3c9df28660
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43877452"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44222476"
 ---
 # <a name="storyboards-overview"></a>Storyboard 개요
 이 항목에서는 사용 하는 방법을 보여 줍니다. <xref:System.Windows.Media.Animation.Storyboard> 개체를 구성 하 고 애니메이션을 적용 합니다. 대화형으로 조작 하는 방법에 설명 합니다 <xref:System.Windows.Media.Animation.Storyboard> 개체 및 간접 속성 대상 지정 구문에 설명 합니다.  
   
 <a name="prerequisites"></a>   
-## <a name="prerequisites"></a>전제 조건  
+## <a name="prerequisites"></a>필수 조건  
  이 항목을 이해하려면 다양한 애니메이션 형식과 해당 기본 기능에 대해 잘 알고 있어야 합니다. 애니메이션 소개를 보려면 [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)를 참조하세요. 또한 연결된 속성을 사용하는 방법을 알아야 합니다. 연결된 속성에 대한 자세한 내용은 [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)를 참조하세요.  
   
 <a name="whatisatimeline"></a>   
@@ -138,7 +138,7 @@ ms.locfileid: "43877452"
 |-|  
 |*ElementPropertyName* `.` *FreezablePropertyName*|  
   
- Where  
+ 위치  
   
 -   *ElementPropertyName* 의 속성을 <xref:System.Windows.FrameworkElement> 는 <xref:System.Windows.Freezable> 을 설정 하는 데 사용 됩니다 및  
   
@@ -184,7 +184,7 @@ ms.locfileid: "43877452"
 |-|  
 |`(` *OwnerPropertyArrayIndex* `).(` *FreezablePropertyArrayIndex* `)`|  
   
- Where  
+ 위치  
   
 -   *OwnerPropertyArrayIndex* 의 인덱스를 <xref:System.Windows.DependencyProperty> 의 식별자를 포함 하는 배열 합니다 <xref:System.Windows.FrameworkElement> 개체의 속성은는 <xref:System.Windows.Freezable> 을 설정 하는 데 사용 됩니다 및  
   

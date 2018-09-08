@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 17528bb9faf137029b35e4a9f28bab7a28ae25db
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5e3f691da48db863edd20bc6881785940a5451ef
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864617"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44209383"
 ---
 # <a name="-target-visual-basic"></a>-target (Visual Basic)
 컴파일러 출력의 형식을 지정합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "43864617"
   
  지정 하지 않으면 `-target:module`, `-target` 하면를 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 어셈블리 매니페스트가 출력 파일을 추가할 수 있습니다.  
   
- Vbc.exe의 각 인스턴스 생성, 최대, 한 출력 파일입니다. 와 같은 컴파일러 옵션을 지정 하면 `-out` 또는 `-target` 한 번만, 컴파일러 프로세스 발효 개가 있습니다. 컴파일에서 모든 파일에 대 한 정보를 매니페스트에 추가 됩니다. 모든 출력 파일을 사용 하 여 만든 항목을 제외한 파일 `-target:module` 매니페스트에 어셈블리 메타 데이터를 포함 합니다. 사용 하 여 [Ildasm.exe (IL 디스어셈블러)](https://msdn.microsoft.com/library/f7dy01k1) 출력 파일에 메타 데이터를 볼 수 있습니다.  
+ Vbc.exe의 각 인스턴스 생성, 최대, 한 출력 파일입니다. 와 같은 컴파일러 옵션을 지정 하면 `-out` 또는 `-target` 한 번만, 컴파일러 프로세스 발효 개가 있습니다. 컴파일에서 모든 파일에 대 한 정보를 매니페스트에 추가 됩니다. 모든 출력 파일을 사용 하 여 만든 항목을 제외한 파일 `-target:module` 매니페스트에 어셈블리 메타 데이터를 포함 합니다. 사용 하 여 [Ildasm.exe (IL 디스어셈블러)](../../../framework/tools/ildasm-exe-il-disassembler.md) 출력 파일에 메타 데이터를 볼 수 있습니다.  
   
  `-target`의 약식은 `-t`입니다.  
   
@@ -57,12 +57,13 @@ ms.locfileid: "43864617"
 vbc -target:library in.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-main](../../../visual-basic/reference/command-line-compiler/main.md)  
- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
- [-참조 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
- [-moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)  
- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a>참고자료
+
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
+- [-main](../../../visual-basic/reference/command-line-compiler/main.md)  
+- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
+- [-참조 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
+- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
+- [-moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)  
+- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

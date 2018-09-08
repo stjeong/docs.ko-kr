@@ -3,16 +3,16 @@ title: 연결 풀링
 ms.date: 03/30/2017
 ms.assetid: 955c057f-aea8-4ba8-aa6d-e3dfa18ba8d5
 ms.openlocfilehash: 28a1036f377326b5f1fdfafa1eaffd8a47bc05bc
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44139633"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44209370"
 ---
 # <a name="connection-pooling"></a>연결 풀링
 데이터 소스에 연결하는 작업은 시간이 많이 걸릴 수 있습니다. ADO.NET 연결을 여는 비용을 최소화 하려면 이라는 최적화 기법을 사용 *연결 풀링을*를 반복적으로 열고 닫는 연결의 비용을 최소화 하는 합니다. 연결 풀링은 .NET Framework 데이터 공급자마다 각각 다른 방식으로 처리됩니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
  [SQL Server 연결 풀링(ADO.NET)](../../../../docs/framework/data/adonet/sql-server-connection-pooling.md)  
  연결 풀링에 대해 간략하게 설명 하 고 SQL Server에서 연결 풀링이 작동 하는 방법을 설명 합니다.  
   

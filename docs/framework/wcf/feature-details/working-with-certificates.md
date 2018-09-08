@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: d0e54aeda1ee51fe7ba87c3ac69c556ea25e320f
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 938998a2316af28071e54e909fa60b5edbda0f35
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43870213"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44198935"
 ---
 # <a name="working-with-certificates"></a>인증서 작업
 WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반적으로 X.509 디지털 인증서를 사용하여 클라이언트 및 서버를 인증하고, 암호화하고, 메시지에 디지털 서명합니다. 이 항목에서는 X.509 디지털 인증서 기능과 WCF에서 인증서 기능을 사용하는 방법을 간략하게 설명하며, 이러한 개념을 자세히 설명하거나 WCF 및 인증서를 사용하여 일반 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.  
@@ -85,12 +85,12 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
   
  사용자 지정 인증자를 만들 때 재정의할 가장 중요한 메서드는 <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> 메서드입니다. 사용자 지정 인증에 대한 예제는 [X.509 인증서 유효성 검사기](../../../../docs/framework/wcf/samples/x-509-certificate-validator.md) 샘플을 참조하세요. 자세한 내용은 [사용자 지정 자격 증명 및 자격 증명 유효성 검사](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md)를 참조하세요.  
   
-## <a name="using-makecertexe-to-build-a-certificate-chain"></a>Makecert.exe를 사용하여 인증서 체인 빌드  
- 인증서 작성 도구(Makecert.exe)는 X.509 인증서 및 개인 키/공개 키 쌍을 만듭니다. 개인 키를 디스크에 저장한 다음 새 인증서를 발급하고 서명하여 체인 인증서의 계층 구조를 시뮬레이션할 수 있습니다. 이 도구는 서비스를 개발할 때 보조 도구로만 사용해야 하며 실제 배포할 인증서를 만드는 데 사용해서는 안됩니다. WCF 서비스를 개발할 경우 다음 단계를 수행하여 Makecert.exe로 신뢰 체인을 빌드합니다.  
+## <a name="using-the-powershell-new-selfsignedcertificate-cmdlet-to-build-a-certificate-chain"></a>인증서 체인을 만드는 Powershell New-selfsignedcertificate Cmdlet을 사용 하 여  
+ New-selfsignedcertificate Powershell cmdlet는 X.509 인증서 및 키/공개/개인 키 쌍을 만듭니다. 개인 키를 디스크에 저장한 다음 새 인증서를 발급하고 서명하여 체인 인증서의 계층 구조를 시뮬레이션할 수 있습니다. Cmdlet은 서비스 개발 및 실제 배포에 대 한 인증서를 만들려면 하지 사용 해야 하는 경우 도구로 사용 하 여 위한 것입니다. WCF 서비스를 개발할 때에 New-selfsignedcertificate cmdlet 사용 하 여 신뢰 체인을 만드는 다음 단계를 사용 합니다.  
   
-#### <a name="to-build-a-chain-of-trust-with-makecertexe"></a>Makecert.exe를 사용하여 신뢰 체인을 빌드하려면  
+#### <a name="to-build-a-chain-of-trust-with-the-new-selfsignedcertificate-cmdlet"></a>New-selfsignedcertificate cmdlet 사용 하 여 신뢰 체인을 만드는  
   
-1.  MakeCert.exe 도구를 사용하여 임시 루트 기관(자체 서명) 인증서를 만듭니다. 개인 키를 디스크에 저장합니다.  
+1.  New-selfsignedcertificate cmdlet을 사용 하는 임시 루트 인증 기관 (자체 서명된) 인증서를 만듭니다. 개인 키를 디스크에 저장합니다.  
   
 2.  새 인증서를 사용하여 공개 키가 들어 있는 다른 인증서를 발급합니다.  
   

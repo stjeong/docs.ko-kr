@@ -3,11 +3,11 @@ title: 워크플로 관리 엔드포인트 샘플
 ms.date: 03/30/2017
 ms.assetid: 3ac6e08f-c43d-4bb7-83c3-e3890a4dac03
 ms.openlocfilehash: 3d99cbef20895381f5e40ee939e1d94a409f1391
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44130515"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44206499"
 ---
 # <a name="workflow-management-endpoint-sample"></a>워크플로 관리 엔드포인트 샘플
 이 샘플에서는 워크플로 제어 엔드포인트를 사용하여 로컬 및 원격으로 워크플로를 만들고 실행하는 방법과 제어 엔드포인트를 호스트하고 제어 엔드포인트를 호출하여 워크플로 인스턴스를 만들고 실행하는 클라이언트를 작성하는 방법을 보여 줍니다. 워크플로는 서비스가 아닙니다.  

@@ -3,11 +3,11 @@ title: RangeEnumeration 활동
 ms.date: 03/30/2017
 ms.assetid: ca5b78f4-94fa-4aa7-830d-26039ac422c8
 ms.openlocfilehash: c9cf522227620422b414adc26cbc0bf338bf57d4
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43868720"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44207592"
 ---
 # <a name="rangeenumeration-activity"></a>RangeEnumeration 활동
 이 샘플에서는 숫자 컬렉션을 반복하는 사용자 지정 활동을 만드는 방법을 보여 줍니다. 다음 표에는 이 샘플에 포함된 주요 파일에 대한 세부 사항이 나와 있습니다.  

@@ -14,11 +14,11 @@ ms.assetid: fc076d66-9b5f-42d3-aa65-61d970c794a3
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 70888e068782add5ebe5ae1c7da3bdee842faea8
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031837"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44196922"
 ---
 # <a name="naming-guidelines"></a>명명 지침
 일관 된 개발 프레임 워크의 명명 규칙 집합을 다음 프레임 워크의 유용성에 대 한 주요 기여도 수 있습니다. 프레임 워크를에 광범위 하 게 분리 된 프로젝트에서 많은 개발자가 사용할 수 있습니다. 폼의 일관성을 초과 프레임 워크 요소 이름을 쉽게 이해할 수 및 각 요소의 기능을 전달 해야 합니다.  

@@ -2,12 +2,12 @@
 title: LINQ to XML과 비교 DOM (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 18c36130-d598-40b7-9007-828232252978
-ms.openlocfilehash: a0a23a773e927155ca22456ea403549b255718ad
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 4feb0df2e4d3ffe5c79ce61d7b94142833a312c7
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43885632"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44213873"
 ---
 # <a name="linq-to-xml-vs-dom-visual-basic"></a>LINQ to XML과 비교 DOM (Visual Basic)
 이 섹션에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]과 현재 주로 사용되는 XML 프로그래밍 API인 W3C DOM(문서 개체 모델)의 몇 가지 주요 차이점에 대해 설명합니다.  
@@ -125,10 +125,10 @@ doc.AppendChild(name)
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서는 DOM의 경우처럼 serialize된 <xref:System.Xml.Linq.XText> 노드 형식을 사용하는 대신 <xref:System.Xml.XmlNodeType.Whitespace> 노드로 공백을 저장합니다.  
   
 ## <a name="support-for-annotations"></a>주석에 대한 지원  
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 요소는 확장 가능한 주석 집합을 지원합니다. 이러한 지원은 스키마 정보, 요소가 UI에 바인딩되어 있는지 여부 또는 다른 종류의 응용 프로그램 관련 정보와 같은 요소에 대한 기타 정보를 추적하는 데 유용합니다. 자세한 내용은 [LINQ to XML 주석](https://msdn.microsoft.com/library/e2f0052d-61e2-48d4-9ea4-356c9cab35d5)을 참조하세요.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 요소는 확장 가능한 주석 집합을 지원합니다. 이러한 지원은 스키마 정보, 요소가 UI에 바인딩되어 있는지 여부 또는 다른 종류의 응용 프로그램 관련 정보와 같은 요소에 대한 기타 정보를 추적하는 데 유용합니다. 자세한 내용은 [LINQ to XML 주석](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-annotations.md)을 참조하세요.  
   
 ## <a name="support-for-schema-information"></a>스키마 정보에 대한 지원  
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서는 <xref:System.Xml.Schema?displayProperty=nameWithType> 네임스페이스의 확장 메서드를 통해 XSD 유효성 검사를 지원합니다. XML 트리가 XSD를 준수하는지 확인할 수 있으며, PSVI(Post-Schema-Validation Infoset)를 사용하여 XML 트리를 채울 수 있습니다. 자세한 내용은 [방법: XSD를 사용하여 유효성 검사](https://msdn.microsoft.com/library/481a97fa-6e96-46f2-8c9a-415555fac33b) 및 <xref:System.Xml.Schema.Extensions>를 참조하세요.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서는 <xref:System.Xml.Schema?displayProperty=nameWithType> 네임스페이스의 확장 메서드를 통해 XSD 유효성 검사를 지원합니다. XML 트리가 XSD를 준수하는지 확인할 수 있으며, PSVI(Post-Schema-Validation Infoset)를 사용하여 XML 트리를 채울 수 있습니다. 자세한 내용은 [방법: XSD를 사용하여 유효성 검사](../../../../visual-basic/programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md) 및 <xref:System.Xml.Schema.Extensions>를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [시작(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

@@ -1,6 +1,6 @@
 ---
 title: 코드 계약
-ms.date: 03/30/2017
+ms.date: 09/05/2018
 dev_langs:
 - csharp
 - vb
@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a444b7eace18fa579324f540e8cf7537c420a6a8
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: f7f7a779cc10b32d66a184107359b502cf094979
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44080610"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44222125"
 ---
 # <a name="code-contracts"></a>코드 계약
 코드 계약을 통해 코드에서 사전 조건, 사후 조건 및 개체 고정을 지정할 수 있습니다. 사전 조건은 메서드 또는 속성을 입력할 때 충족해야 하는 요구 사항입니다. 사후 조건은 메서드 또는 속성 코드가 종료될 때의 예상을 설명합니다. 개체 고정은 양호한 상태인 클래스의 예상 상태를 설명합니다.  
@@ -148,7 +148,7 @@ Contract.Invariant(this.x > this.y);
 }  
 ```  
   
- 고정은 CONTRACTS_FULL 전처리기 기호에 의해 조건부로 정의됩니다. 런타임 검사 중에 고정은 각 public 메서드의 끝에서 검사됩니다. 고정이 동일한 클래스의 public 메서드를 언급하는 경우 일반적으로 해당 public 메서드의 끝에서 발생하는 고정 검사를 사용할 수 없습니다. 대신, 해당 클래스에 대한 가장 바깥쪽 메서드 호출의 끝에서만 검사가 발생합니다. 이 검사는 다른 클래스의 메서드 호출로 인해 클래스에 재진입하는 경우에도 발생합니다. 개체 종료자나 <xref:System.IDisposable.Dispose%2A> 메서드를 구현하는 모든 메서드에 대해서는 고정이 검사되지 않습니다.  
+ 고정은 CONTRACTS_FULL 전처리기 기호에 의해 조건부로 정의됩니다. 런타임 검사 중에 고정은 각 public 메서드의 끝에서 검사됩니다. 고정이 동일한 클래스의 public 메서드를 언급하는 경우 일반적으로 해당 public 메서드의 끝에서 발생하는 고정 검사를 사용할 수 없습니다. 대신, 해당 클래스에 대한 가장 바깥쪽 메서드 호출의 끝에서만 검사가 발생합니다. 이 검사는 다른 클래스의 메서드 호출로 인해 클래스에 재진입하는 경우에도 발생합니다. 고정 된 개체 종료자에 대 한 확인 되지 않습니다 및 <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> 구현 합니다.  
   
 <a name="usage_guidelines"></a>   
 ## <a name="usage-guidelines"></a>사용 지침  
