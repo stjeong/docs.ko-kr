@@ -7,47 +7,47 @@ helpviewer_keywords:
 - painting [WPF], with solid colors
 ms.assetid: 5d27d8a7-4bd7-4063-bdf3-2c5c0f19f9d3
 ms.openlocfilehash: 017c685139979ec3aa411be6e6b5fdf0e91657de
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44075550"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44213516"
 ---
-# <a name="how-to-paint-an-area-with-a-solid-color"></a><span data-ttu-id="14684-102">방법: 단색으로 영역 그리기</span><span class="sxs-lookup"><span data-stu-id="14684-102">How to: Paint an Area with a Solid Color</span></span>
-<span data-ttu-id="14684-103">단색으로 영역을 그릴 사용할 수는 미리 정의 된 시스템 브러시와 같은 <xref:System.Windows.Media.Brushes.Red%2A> 또는 <xref:System.Windows.Media.Brushes.Blue%2A>, 하거나 새로 만들 수 있습니다 <xref:System.Windows.Media.SolidColorBrush> 설명 하 고 해당 <xref:System.Windows.Media.SolidColorBrush.Color%2A> 알파, 빨강, 녹색 및 파랑 값을 사용 하 여 합니다.</span><span class="sxs-lookup"><span data-stu-id="14684-103">To paint an area with a solid color, you can use a predefined system brush, such as <xref:System.Windows.Media.Brushes.Red%2A> or <xref:System.Windows.Media.Brushes.Blue%2A>, or you can create a new <xref:System.Windows.Media.SolidColorBrush> and describe its <xref:System.Windows.Media.SolidColorBrush.Color%2A> using alpha, red, green, and blue values.</span></span> <span data-ttu-id="14684-104">XAML에서 16진수 표기법을 사용하여 단색으로 영역을 그릴 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="14684-104">In XAML, you may also paint an area with a solid color by using hexidecimal notation.</span></span>  
+# <a name="how-to-paint-an-area-with-a-solid-color"></a><span data-ttu-id="dea12-102">방법: 단색으로 영역 그리기</span><span class="sxs-lookup"><span data-stu-id="dea12-102">How to: Paint an Area with a Solid Color</span></span>
+<span data-ttu-id="dea12-103">단색으로 영역을 그릴 사용할 수는 미리 정의 된 시스템 브러시와 같은 <xref:System.Windows.Media.Brushes.Red%2A> 또는 <xref:System.Windows.Media.Brushes.Blue%2A>, 하거나 새로 만들 수 있습니다 <xref:System.Windows.Media.SolidColorBrush> 설명 하 고 해당 <xref:System.Windows.Media.SolidColorBrush.Color%2A> 알파, 빨강, 녹색 및 파랑 값을 사용 하 여 합니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-103">To paint an area with a solid color, you can use a predefined system brush, such as <xref:System.Windows.Media.Brushes.Red%2A> or <xref:System.Windows.Media.Brushes.Blue%2A>, or you can create a new <xref:System.Windows.Media.SolidColorBrush> and describe its <xref:System.Windows.Media.SolidColorBrush.Color%2A> using alpha, red, green, and blue values.</span></span> <span data-ttu-id="dea12-104">XAML에서 16진수 표기법을 사용하여 단색으로 영역을 그릴 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-104">In XAML, you may also paint an area with a solid color by using hexidecimal notation.</span></span>  
   
- <span data-ttu-id="14684-105">다음 예제에서는 이러한 각 기법을를 그릴 때 사용 된 <xref:System.Windows.Shapes.Rectangle> 파란색입니다.</span><span class="sxs-lookup"><span data-stu-id="14684-105">The following examples uses each of these techniques to paint a <xref:System.Windows.Shapes.Rectangle> blue.</span></span>  
+ <span data-ttu-id="dea12-105">다음 예제에서는 이러한 각 기법을를 그릴 때 사용 된 <xref:System.Windows.Shapes.Rectangle> 파란색입니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-105">The following examples uses each of these techniques to paint a <xref:System.Windows.Shapes.Rectangle> blue.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="14684-106">예제</span><span class="sxs-lookup"><span data-stu-id="14684-106">Example</span></span>  
- <span data-ttu-id="14684-107">**미리 정의된 브러시 사용**</span><span class="sxs-lookup"><span data-stu-id="14684-107">**Using a Predefined Brush**</span></span>  
+## <a name="example"></a><span data-ttu-id="dea12-106">예제</span><span class="sxs-lookup"><span data-stu-id="dea12-106">Example</span></span>  
+ <span data-ttu-id="dea12-107">**미리 정의된 브러시 사용**</span><span class="sxs-lookup"><span data-stu-id="dea12-107">**Using a Predefined Brush**</span></span>  
   
- <span data-ttu-id="14684-108">다음 예제에서는 미리 정의 된 브러시를 사용 하 여 <xref:System.Windows.Media.Brushes.Blue%2A> 에 파란색 사각형을 그립니다.</span><span class="sxs-lookup"><span data-stu-id="14684-108">In the following example uses the predefined brush <xref:System.Windows.Media.Brushes.Blue%2A> to paint a rectangle blue.</span></span>  
+ <span data-ttu-id="dea12-108">다음 예제에서는 미리 정의 된 브러시를 사용 하 여 <xref:System.Windows.Media.Brushes.Blue%2A> 에 파란색 사각형을 그립니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-108">In the following example uses the predefined brush <xref:System.Windows.Media.Brushes.Blue%2A> to paint a rectangle blue.</span></span>  
   
  [!code-xaml[brushsamples_snip#_graphicsmm_PredefinedBrush1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_snip/CS/SolidColorBrushExample.xaml#_graphicsmm_predefinedbrush1)]  
   
  [!code-csharp[brushsamples_procedural_snip#_graphicsmm_PredefinedBrush1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_procedural_snip/CSharp/SolidColorBrushExample.cs#_graphicsmm_predefinedbrush1)]  
   
- <span data-ttu-id="14684-109">**16진수 표기법 사용**</span><span class="sxs-lookup"><span data-stu-id="14684-109">**Using Hexadecimal Notation**</span></span>  
+ <span data-ttu-id="dea12-109">**16진수 표기법 사용**</span><span class="sxs-lookup"><span data-stu-id="dea12-109">**Using Hexadecimal Notation**</span></span>  
   
- <span data-ttu-id="14684-110">다음 예제에서는 8자리 16진수 표기법을 사용하여 파란색 사각형을 그립니다.</span><span class="sxs-lookup"><span data-stu-id="14684-110">The next example uses 8-digit hexadecimal notation to paint a rectangle blue.</span></span>  
+ <span data-ttu-id="dea12-110">다음 예제에서는 8자리 16진수 표기법을 사용하여 파란색 사각형을 그립니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-110">The next example uses 8-digit hexadecimal notation to paint a rectangle blue.</span></span>  
   
  [!code-xaml[brushsamples_snip#_graphicsmm_HexNotation8Digit1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_snip/CS/SolidColorBrushExample.xaml#_graphicsmm_hexnotation8digit1)]  
   
- <span data-ttu-id="14684-111">**ARGB 값 사용**</span><span class="sxs-lookup"><span data-stu-id="14684-111">**Using ARGB Values**</span></span>  
+ <span data-ttu-id="dea12-111">**ARGB 값 사용**</span><span class="sxs-lookup"><span data-stu-id="dea12-111">**Using ARGB Values**</span></span>  
   
- <span data-ttu-id="14684-112">다음 예제에서는 만듭니다는 <xref:System.Windows.Media.SolidColorBrush> 에 대해 설명 하 고 해당 <xref:System.Windows.Media.SolidColorBrush.Color%2A> 파란색 값의 ARGB를 사용 하 여 합니다.</span><span class="sxs-lookup"><span data-stu-id="14684-112">The next example creates a <xref:System.Windows.Media.SolidColorBrush> and describes its <xref:System.Windows.Media.SolidColorBrush.Color%2A> using the ARGB values for the color blue.</span></span>  
+ <span data-ttu-id="dea12-112">다음 예제에서는 만듭니다는 <xref:System.Windows.Media.SolidColorBrush> 에 대해 설명 하 고 해당 <xref:System.Windows.Media.SolidColorBrush.Color%2A> 파란색 값의 ARGB를 사용 하 여 합니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-112">The next example creates a <xref:System.Windows.Media.SolidColorBrush> and describes its <xref:System.Windows.Media.SolidColorBrush.Color%2A> using the ARGB values for the color blue.</span></span>  
   
  [!code-xaml[brushsamples_snip#_graphicsmm_RgbNotation1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_snip/CS/SolidColorBrushExample.xaml#_graphicsmm_rgbnotation1)]  
   
  [!code-csharp[brushsamples_procedural_snip#_graphicsmm_RgbNotation1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_procedural_snip/CSharp/SolidColorBrushExample.cs#_graphicsmm_rgbnotation1)]  
   
- <span data-ttu-id="14684-113">색을 설명 하는 다른 방법에 대해서는 <xref:System.Windows.Media.Color> 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="14684-113">For other ways of describing color, see the <xref:System.Windows.Media.Color> structure.</span></span>  
+ <span data-ttu-id="dea12-113">색을 설명 하는 다른 방법에 대해서는 <xref:System.Windows.Media.Color> 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-113">For other ways of describing color, see the <xref:System.Windows.Media.Color> structure.</span></span>  
   
- <span data-ttu-id="14684-114">**관련 항목**</span><span class="sxs-lookup"><span data-stu-id="14684-114">**Related Topics**</span></span>  
+ <span data-ttu-id="dea12-114">**관련 항목**</span><span class="sxs-lookup"><span data-stu-id="dea12-114">**Related Topics**</span></span>  
   
- <span data-ttu-id="14684-115">에 대 한 자세한 내용은 <xref:System.Windows.Media.SolidColorBrush> 및 추가 예제를 보려면 합니다 [단색 및 그라데이션 개요 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md) 개요.</span><span class="sxs-lookup"><span data-stu-id="14684-115">For more information about <xref:System.Windows.Media.SolidColorBrush> and additional examples, see the [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md) overview.</span></span>  
+ <span data-ttu-id="dea12-115">에 대 한 자세한 내용은 <xref:System.Windows.Media.SolidColorBrush> 및 추가 예제를 보려면 합니다 [단색 및 그라데이션 개요 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md) 개요.</span><span class="sxs-lookup"><span data-stu-id="dea12-115">For more information about <xref:System.Windows.Media.SolidColorBrush> and additional examples, see the [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md) overview.</span></span>  
   
- <span data-ttu-id="14684-116">이 코드 예제는에 대해 제공 된 큰 예제의 일부는 <xref:System.Windows.Media.SolidColorBrush> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="14684-116">This code example is part of a larger example provided for the <xref:System.Windows.Media.SolidColorBrush> class.</span></span> <span data-ttu-id="14684-117">전체 샘플을 보려면 [브러시 샘플](https://go.microsoft.com/fwlink/?LinkID=159973)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="14684-117">For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).</span></span>  
+ <span data-ttu-id="dea12-116">이 코드 예제는에 대해 제공 된 큰 예제의 일부는 <xref:System.Windows.Media.SolidColorBrush> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="dea12-116">This code example is part of a larger example provided for the <xref:System.Windows.Media.SolidColorBrush> class.</span></span> <span data-ttu-id="dea12-117">전체 샘플을 보려면 [브러시 샘플](https://go.microsoft.com/fwlink/?LinkID=159973)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="dea12-117">For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="14684-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="14684-118">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="dea12-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="dea12-118">See Also</span></span>  
  <xref:System.Windows.Media.Brushes>

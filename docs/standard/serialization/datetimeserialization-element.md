@@ -7,19 +7,19 @@ helpviewer_keywords:
 - <dateTimeSerialization> element
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
 ms.openlocfilehash: cd275cdbc51c86b1d774058db839c38349b319a6
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44078391"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44206382"
 ---
-# <a name="ltdatetimeserializationgt-element"></a><span data-ttu-id="8bc54-102">&lt;dateTimeSerialization&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-102">&lt;dateTimeSerialization&gt; Element</span></span>
-<span data-ttu-id="8bc54-103"><xref:System.DateTime> 개체의 serialization 모드를 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-103">Determines the serialization mode of <xref:System.DateTime> objects.</span></span>  
+# <a name="ltdatetimeserializationgt-element"></a><span data-ttu-id="8bdeb-102">&lt;dateTimeSerialization&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-102">&lt;dateTimeSerialization&gt; Element</span></span>
+<span data-ttu-id="8bdeb-103"><xref:System.DateTime> 개체의 serialization 모드를 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-103">Determines the serialization mode of <xref:System.DateTime> objects.</span></span>  
   
- <span data-ttu-id="8bc54-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="8bc54-104">\<configuration></span></span>  
-<span data-ttu-id="8bc54-105">\<dateTimeSerialization></span><span class="sxs-lookup"><span data-stu-id="8bc54-105">\<dateTimeSerialization></span></span>  
+ <span data-ttu-id="8bdeb-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="8bdeb-104">\<configuration></span></span>  
+<span data-ttu-id="8bdeb-105">\<dateTimeSerialization></span><span class="sxs-lookup"><span data-stu-id="8bdeb-105">\<dateTimeSerialization></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8bc54-106">구문</span><span class="sxs-lookup"><span data-stu-id="8bc54-106">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8bdeb-106">구문</span><span class="sxs-lookup"><span data-stu-id="8bdeb-106">Syntax</span></span>  
   
 ```xml  
 <dateTimeSerialization  
@@ -27,35 +27,35 @@ ms.locfileid: "44078391"
 />  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="8bc54-107">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-107">Attributes and Elements</span></span>  
- <span data-ttu-id="8bc54-108">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="8bdeb-107">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-107">Attributes and Elements</span></span>  
+ <span data-ttu-id="8bdeb-108">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="8bc54-109">특성</span><span class="sxs-lookup"><span data-stu-id="8bc54-109">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="8bdeb-109">특성</span><span class="sxs-lookup"><span data-stu-id="8bdeb-109">Attributes</span></span>  
   
-|<span data-ttu-id="8bc54-110">특성</span><span class="sxs-lookup"><span data-stu-id="8bc54-110">Attributes</span></span>|<span data-ttu-id="8bc54-111">설명</span><span class="sxs-lookup"><span data-stu-id="8bc54-111">Description</span></span>|  
+|<span data-ttu-id="8bdeb-110">특성</span><span class="sxs-lookup"><span data-stu-id="8bdeb-110">Attributes</span></span>|<span data-ttu-id="8bdeb-111">설명</span><span class="sxs-lookup"><span data-stu-id="8bdeb-111">Description</span></span>|  
 |----------------|-----------------|  
-|`mode`|<span data-ttu-id="8bc54-112">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-112">Optional.</span></span> <span data-ttu-id="8bc54-113">serialization 모드를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-113">Specifies the serialization mode.</span></span> <span data-ttu-id="8bc54-114"><xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode> 값 중 하나로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-114">Set to one of the <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode> values.</span></span> <span data-ttu-id="8bc54-115">기본값은 **RoundTrip**입니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-115">The default is **RoundTrip**.</span></span>|  
+|`mode`|<span data-ttu-id="8bdeb-112">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-112">Optional.</span></span> <span data-ttu-id="8bdeb-113">serialization 모드를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-113">Specifies the serialization mode.</span></span> <span data-ttu-id="8bdeb-114"><xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode> 값 중 하나로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-114">Set to one of the <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode> values.</span></span> <span data-ttu-id="8bdeb-115">기본값은 **RoundTrip**입니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-115">The default is **RoundTrip**.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="8bc54-116">자식 요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-116">Child Elements</span></span>  
- <span data-ttu-id="8bc54-117">없음</span><span class="sxs-lookup"><span data-stu-id="8bc54-117">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="8bdeb-116">자식 요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-116">Child Elements</span></span>  
+ <span data-ttu-id="8bdeb-117">없음</span><span class="sxs-lookup"><span data-stu-id="8bdeb-117">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="8bc54-118">부모 요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-118">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="8bdeb-118">부모 요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-118">Parent Elements</span></span>  
   
-|<span data-ttu-id="8bc54-119">요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-119">Element</span></span>|<span data-ttu-id="8bc54-120">설명</span><span class="sxs-lookup"><span data-stu-id="8bc54-120">Description</span></span>|  
+|<span data-ttu-id="8bdeb-119">요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-119">Element</span></span>|<span data-ttu-id="8bdeb-120">설명</span><span class="sxs-lookup"><span data-stu-id="8bdeb-120">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="8bc54-121">system.xml.serialization</span><span class="sxs-lookup"><span data-stu-id="8bc54-121">system.xml.serialization</span></span>|<span data-ttu-id="8bc54-122">XML serialization을 제어하기 위한 최상위 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-122">The top-level element for controlling XML serialization.</span></span>|  
+|<span data-ttu-id="8bdeb-121">system.xml.serialization</span><span class="sxs-lookup"><span data-stu-id="8bdeb-121">system.xml.serialization</span></span>|<span data-ttu-id="8bdeb-122">XML serialization을 제어하기 위한 최상위 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-122">The top-level element for controlling XML serialization.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="8bc54-123">설명</span><span class="sxs-lookup"><span data-stu-id="8bc54-123">Remarks</span></span>  
- <span data-ttu-id="8bc54-124">.NET Framework의 1.0, 1.1 및 2.0 이상 버전에서 이 속성이 **Local**로 설정되면 <xref:System.DateTime> 개체는 항상 로컬 시간으로 형식이 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-124">In versions 1.0, 1.1, 2.0 and later versions of the .NET Framework, when this property is set to **Local**, <xref:System.DateTime> objects are always formatted as the local time.</span></span> <span data-ttu-id="8bc54-125">따라서 현지 시간대 정보가 serialize된 데이터에 항상 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-125">That is, local time zone information is always included with the serialized data.</span></span> <span data-ttu-id="8bc54-126">.NET Framework 이전 버전과의 호환성을 제공하려면 이 속성을 **Local**로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-126">Set this property to **Local** to ensure compatibility with older versions of the .NET Framework.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="8bdeb-123">설명</span><span class="sxs-lookup"><span data-stu-id="8bdeb-123">Remarks</span></span>  
+ <span data-ttu-id="8bdeb-124">.NET Framework의 1.0, 1.1 및 2.0 이상 버전에서 이 속성이 **Local**로 설정되면 <xref:System.DateTime> 개체는 항상 로컬 시간으로 형식이 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-124">In versions 1.0, 1.1, 2.0 and later versions of the .NET Framework, when this property is set to **Local**, <xref:System.DateTime> objects are always formatted as the local time.</span></span> <span data-ttu-id="8bdeb-125">따라서 현지 시간대 정보가 serialize된 데이터에 항상 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-125">That is, local time zone information is always included with the serialized data.</span></span> <span data-ttu-id="8bdeb-126">.NET Framework 이전 버전과의 호환성을 제공하려면 이 속성을 **Local**로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-126">Set this property to **Local** to ensure compatibility with older versions of the .NET Framework.</span></span>  
   
- <span data-ttu-id="8bc54-127">이 속성이 **Roundtrip**으로 설정된 .NET Framework 버전 2.0 이상에서는 <xref:System.DateTime> 개체를 검사하여 개체가 로컬, UTC 또는 미지정 표준 시간대에 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-127">In version 2.0 and later versions of the .NET Framework that have this property set to **Roundtrip**, <xref:System.DateTime> objects are examined to determine whether they are in the local, UTC, or an unspecified time zone.</span></span> <span data-ttu-id="8bc54-128">그런 다음 <xref:System.DateTime> 개체는 이 정보를 유지할 수 있는 방식으로 serialize됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-128">The <xref:System.DateTime> objects are then serialized in such a way that this information is preserved.</span></span> <span data-ttu-id="8bc54-129">이 동작이 기본 동작이며 이전 버전의 framework와 통신하지 않는 모든 새 응용 프로그램에 대해 이를 사용하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="8bc54-129">This is the default behavior and is the recommended behavior for all new applications that do not communicate with older versions of the framework.</span></span>  
+ <span data-ttu-id="8bdeb-127">이 속성이 **Roundtrip**으로 설정된 .NET Framework 버전 2.0 이상에서는 <xref:System.DateTime> 개체를 검사하여 개체가 로컬, UTC 또는 미지정 표준 시간대에 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-127">In version 2.0 and later versions of the .NET Framework that have this property set to **Roundtrip**, <xref:System.DateTime> objects are examined to determine whether they are in the local, UTC, or an unspecified time zone.</span></span> <span data-ttu-id="8bdeb-128">그런 다음 <xref:System.DateTime> 개체는 이 정보를 유지할 수 있는 방식으로 serialize됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-128">The <xref:System.DateTime> objects are then serialized in such a way that this information is preserved.</span></span> <span data-ttu-id="8bdeb-129">이 동작이 기본 동작이며 이전 버전의 framework와 통신하지 않는 모든 새 응용 프로그램에 대해 이를 사용하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="8bdeb-129">This is the default behavior and is the recommended behavior for all new applications that do not communicate with older versions of the framework.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8bc54-130">참고자료</span><span class="sxs-lookup"><span data-stu-id="8bc54-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8bdeb-130">참고자료</span><span class="sxs-lookup"><span data-stu-id="8bdeb-130">See also</span></span>
 
 - <xref:System.DateTime>  
 - <xref:System.Xml.Serialization.XmlSchemaImporter>  
 - <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
-- [<span data-ttu-id="8bc54-131">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="8bc54-131">Configuration File Schema</span></span>](../../../docs/framework/configure-apps/file-schema/index.md)  
-- [<span data-ttu-id="8bc54-132">\<schemaImporterExtensions> 요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-132">\<schemaImporterExtensions> Element</span></span>](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
-- [<span data-ttu-id="8bc54-133">\<추가 > 요소에 대 한 \<schemaImporterExtensions ></span><span class="sxs-lookup"><span data-stu-id="8bc54-133">\<add> Element for \<schemaImporterExtensions></span></span>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
-- [<span data-ttu-id="8bc54-134">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="8bc54-134">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)
+- [<span data-ttu-id="8bdeb-131">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="8bdeb-131">Configuration File Schema</span></span>](../../../docs/framework/configure-apps/file-schema/index.md)  
+- [<span data-ttu-id="8bdeb-132">\<schemaImporterExtensions> 요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-132">\<schemaImporterExtensions> Element</span></span>](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
+- [<span data-ttu-id="8bdeb-133">\<추가 > 요소에 대 한 \<schemaImporterExtensions ></span><span class="sxs-lookup"><span data-stu-id="8bdeb-133">\<add> Element for \<schemaImporterExtensions></span></span>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
+- [<span data-ttu-id="8bdeb-134">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="8bdeb-134">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)

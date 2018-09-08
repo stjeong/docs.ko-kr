@@ -4,22 +4,23 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_EndCharsInDelimiter
 ms.assetid: 0701f3b6-635b-468e-b908-867df00dd5db
-ms.openlocfilehash: f17c8fd16868950a30656657e60fabda94d7b57d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: b76e7f26d7d8cebb1ebddfdd5e53a5c399abea1f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43804015"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44201870"
 ---
-# <a name="textfieldparser-does-not-support-delimiters-that-contain-endline-characters"></a><span data-ttu-id="47e09-102">TextFieldParser는 EndLine 문자가 포함된 구분 기호를 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="47e09-102">TextFieldParser does not support delimiters that contain endline characters</span></span>
-<span data-ttu-id="47e09-103">Endline 문자를 포함 하는 구분을 제공 하지만 `TextFieldParser` endline 문자가 포함 된 구분 기호를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="47e09-103">A delimiter that contains an endline character has been supplied, but the `TextFieldParser` does not support delimiters that contain endline characters.</span></span>  
+# <a name="textfieldparser-does-not-support-delimiters-that-contain-endline-characters"></a><span data-ttu-id="618fc-102">TextFieldParser는 EndLine 문자가 포함된 구분 기호를 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="618fc-102">TextFieldParser does not support delimiters that contain endline characters</span></span>
+<span data-ttu-id="618fc-103">Endline 문자를 포함 하는 구분을 제공 하지만 `TextFieldParser` endline 문자가 포함 된 구분 기호를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="618fc-103">A delimiter that contains an endline character has been supplied, but the `TextFieldParser` does not support delimiters that contain endline characters.</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="47e09-104">이 오류를 해결하려면</span><span class="sxs-lookup"><span data-stu-id="47e09-104">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="618fc-104">이 오류를 해결하려면</span><span class="sxs-lookup"><span data-stu-id="618fc-104">To correct this error</span></span>  
   
--   <span data-ttu-id="47e09-105">올바른 구분 기호를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="47e09-105">Supply a correct delimiter.</span></span>  
+-   <span data-ttu-id="618fc-105">올바른 구분 기호를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="618fc-105">Supply a correct delimiter.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="47e09-106">참고 항목</span><span class="sxs-lookup"><span data-stu-id="47e09-106">See Also</span></span>  
- [<span data-ttu-id="47e09-107">TextFieldParser.Delimiters Property</span><span class="sxs-lookup"><span data-stu-id="47e09-107">TextFieldParser.Delimiters Property</span></span>](https://msdn.microsoft.com/library/4eb18f4d-3011-40a9-b668-be93eed0444f)  
- [<span data-ttu-id="47e09-108">TextFieldParser.SetDelimiters 메서드</span><span class="sxs-lookup"><span data-stu-id="47e09-108">TextFieldParser.SetDelimiters Method</span></span>](https://msdn.microsoft.com/library/21fa40ec-5866-4d0e-9fd9-c708a190dcc9)  
- [<span data-ttu-id="47e09-109">TextFieldParser 개체를 사용하여 텍스트 파일 구문 분석</span><span class="sxs-lookup"><span data-stu-id="47e09-109">Parsing Text Files with the TextFieldParser Object</span></span>](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
- [<span data-ttu-id="47e09-110">TextFieldParser 개체</span><span class="sxs-lookup"><span data-stu-id="47e09-110">TextFieldParser Object</span></span>](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+## <a name="see-also"></a><span data-ttu-id="618fc-106">참고자료</span><span class="sxs-lookup"><span data-stu-id="618fc-106">See also</span></span>
+
+- [<span data-ttu-id="618fc-107">TextFieldParser.Delimiters Property</span><span class="sxs-lookup"><span data-stu-id="618fc-107">TextFieldParser.Delimiters Property</span></span>](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A)  
+- [<span data-ttu-id="618fc-108">TextFieldParser.SetDelimiters 메서드</span><span class="sxs-lookup"><span data-stu-id="618fc-108">TextFieldParser.SetDelimiters Method</span></span>](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A)  
+- [<span data-ttu-id="618fc-109">TextFieldParser 개체를 사용하여 텍스트 파일 구문 분석</span><span class="sxs-lookup"><span data-stu-id="618fc-109">Parsing Text Files with the TextFieldParser Object</span></span>](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
+- [<span data-ttu-id="618fc-110">TextFieldParser 개체</span><span class="sxs-lookup"><span data-stu-id="618fc-110">TextFieldParser Object</span></span>](../../visual-basic/language-reference/objects/textfieldparser-object.md)

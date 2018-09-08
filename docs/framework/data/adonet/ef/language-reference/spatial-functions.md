@@ -3,17 +3,17 @@ title: 공간 함수
 ms.date: 03/30/2017
 ms.assetid: 90cb177d-88a0-45be-97e8-3b306283c6e0
 ms.openlocfilehash: ad6b722e84aae40354e30434b107752d02352645
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44133956"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44202091"
 ---
-# <a name="spatial-functions"></a><span data-ttu-id="469d6-102">공간 함수</span><span class="sxs-lookup"><span data-stu-id="469d6-102">Spatial Functions</span></span>
-<span data-ttu-id="469d6-103">공간 형식의 경우 리터럴 형식이 없습니다.</span><span class="sxs-lookup"><span data-stu-id="469d6-103">There is no literal format for spatial types.</span></span> <span data-ttu-id="469d6-104">그러나 WKT(Well Known Text) 형식의 문자열을 사용하여 호출하는 정식 Entity Framework 함수를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="469d6-104">However, you can use canonical Entity Framework functions that you call using strings in Well-Known Text format.</span></span> <span data-ttu-id="469d6-105">예를 들어 다음 함수 호출은 기하 도형 점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="469d6-105">For example, the following function call creates a geometry point:</span></span>  
+# <a name="spatial-functions"></a><span data-ttu-id="82877-102">공간 함수</span><span class="sxs-lookup"><span data-stu-id="82877-102">Spatial Functions</span></span>
+<span data-ttu-id="82877-103">공간 형식의 경우 리터럴 형식이 없습니다.</span><span class="sxs-lookup"><span data-stu-id="82877-103">There is no literal format for spatial types.</span></span> <span data-ttu-id="82877-104">그러나 WKT(Well Known Text) 형식의 문자열을 사용하여 호출하는 정식 Entity Framework 함수를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="82877-104">However, you can use canonical Entity Framework functions that you call using strings in Well-Known Text format.</span></span> <span data-ttu-id="82877-105">예를 들어 다음 함수 호출은 기하 도형 점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="82877-105">For example, the following function call creates a geometry point:</span></span>  
   
 ```  
 GeometryFromText('POINT (43 -73)')  
 ```  
   
- <span data-ttu-id="469d6-106">합니다 [SpatialEdmFunctions 메서드](https://msdn.microsoft.com/library/hh749531.aspx) 페이지에는 모든 공간 정식 Entity Framework 메서드가 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="469d6-106">The [SpatialEdmFunctions Methods](https://msdn.microsoft.com/library/hh749531.aspx) page lists all spatial canonical Entity Framework methods.</span></span> <span data-ttu-id="469d6-107">함수에 전달해야 하는 매개 변수를 보려면 해당 메서드를 클릭하세요.</span><span class="sxs-lookup"><span data-stu-id="469d6-107">Click on a method of interest to see what parameters should be passed to a function.</span></span>
+ <span data-ttu-id="82877-106">합니다 [SpatialEdmFunctions 메서드](https://msdn.microsoft.com/library/hh749531.aspx) 페이지에는 모든 공간 정식 Entity Framework 메서드가 나열 합니다.</span><span class="sxs-lookup"><span data-stu-id="82877-106">The [SpatialEdmFunctions Methods](https://msdn.microsoft.com/library/hh749531.aspx) page lists all spatial canonical Entity Framework methods.</span></span> <span data-ttu-id="82877-107">함수에 전달해야 하는 매개 변수를 보려면 해당 메서드를 클릭하세요.</span><span class="sxs-lookup"><span data-stu-id="82877-107">Click on a method of interest to see what parameters should be passed to a function.</span></span>

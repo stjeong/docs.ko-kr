@@ -6,47 +6,47 @@ helpviewer_keywords:
 - <add> element for <schemaImporterExtensions> element
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
 ms.openlocfilehash: 48deb8684e53f583e3ff4a5407fadd112d45f749
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44082228"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44196831"
 ---
-# <a name="ltaddgt-element-for-ltschemaimporterextensionsgt"></a><span data-ttu-id="a69e4-102">&lt;추가&gt; 요소에 대 한 &lt;schemaImporterExtensions&gt;</span><span class="sxs-lookup"><span data-stu-id="a69e4-102">&lt;add&gt; Element for &lt;schemaImporterExtensions&gt;</span></span>
-<span data-ttu-id="a69e4-103"><xref:System.Xml.Serialization.XmlSchemaImporter>에서 XSD 형식을 .NET Framework 형식으로 매핑하는 데 사용하는 형식을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-103">Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types.</span></span> <span data-ttu-id="a69e4-104">구성 파일에 대한 자세한 내용은 [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="a69e4-104">For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).</span></span>  
+# <a name="ltaddgt-element-for-ltschemaimporterextensionsgt"></a><span data-ttu-id="9466d-102">&lt;추가&gt; 요소에 대 한 &lt;schemaImporterExtensions&gt;</span><span class="sxs-lookup"><span data-stu-id="9466d-102">&lt;add&gt; Element for &lt;schemaImporterExtensions&gt;</span></span>
+<span data-ttu-id="9466d-103"><xref:System.Xml.Serialization.XmlSchemaImporter>에서 XSD 형식을 .NET Framework 형식으로 매핑하는 데 사용하는 형식을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-103">Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types.</span></span> <span data-ttu-id="9466d-104">구성 파일에 대한 자세한 내용은 [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="9466d-104">For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).</span></span>  
   
- <span data-ttu-id="a69e4-105">\<configuration></span><span class="sxs-lookup"><span data-stu-id="a69e4-105">\<configuration></span></span>  
-<span data-ttu-id="a69e4-106">\<system.xml.serialization></span><span class="sxs-lookup"><span data-stu-id="a69e4-106">\<system.xml.serialization></span></span>  
-<span data-ttu-id="a69e4-107">\<schemaImporterExtensions></span><span class="sxs-lookup"><span data-stu-id="a69e4-107">\<schemaImporterExtensions></span></span>  
-<span data-ttu-id="a69e4-108">\<add></span><span class="sxs-lookup"><span data-stu-id="a69e4-108">\<add></span></span>  
+ <span data-ttu-id="9466d-105">\<configuration></span><span class="sxs-lookup"><span data-stu-id="9466d-105">\<configuration></span></span>  
+<span data-ttu-id="9466d-106">\<system.xml.serialization></span><span class="sxs-lookup"><span data-stu-id="9466d-106">\<system.xml.serialization></span></span>  
+<span data-ttu-id="9466d-107">\<schemaImporterExtensions></span><span class="sxs-lookup"><span data-stu-id="9466d-107">\<schemaImporterExtensions></span></span>  
+<span data-ttu-id="9466d-108">\<add></span><span class="sxs-lookup"><span data-stu-id="9466d-108">\<add></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a69e4-109">구문</span><span class="sxs-lookup"><span data-stu-id="a69e4-109">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9466d-109">구문</span><span class="sxs-lookup"><span data-stu-id="9466d-109">Syntax</span></span>  
   
 ```xml  
 <add name = "typeName" type="fully qualified type [,Version=version number] [,Culture=culture] [,PublicKeyToken= token]"/>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="a69e4-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="a69e4-110">Attributes and Elements</span></span>  
- <span data-ttu-id="a69e4-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="9466d-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="9466d-110">Attributes and Elements</span></span>  
+ <span data-ttu-id="9466d-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="a69e4-112">특성</span><span class="sxs-lookup"><span data-stu-id="a69e4-112">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="9466d-112">특성</span><span class="sxs-lookup"><span data-stu-id="9466d-112">Attributes</span></span>  
   
-|<span data-ttu-id="a69e4-113">특성</span><span class="sxs-lookup"><span data-stu-id="a69e4-113">Attribute</span></span>|<span data-ttu-id="a69e4-114">설명</span><span class="sxs-lookup"><span data-stu-id="a69e4-114">Description</span></span>|  
+|<span data-ttu-id="9466d-113">특성</span><span class="sxs-lookup"><span data-stu-id="9466d-113">Attribute</span></span>|<span data-ttu-id="9466d-114">설명</span><span class="sxs-lookup"><span data-stu-id="9466d-114">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="a69e4-115">**name**</span><span class="sxs-lookup"><span data-stu-id="a69e4-115">**name**</span></span>|<span data-ttu-id="a69e4-116">인스턴스를 찾는 데 사용되는 단순한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-116">A simple name that is used to find the instance.</span></span>|  
-|<span data-ttu-id="a69e4-117">**type**</span><span class="sxs-lookup"><span data-stu-id="a69e4-117">**type**</span></span>|<span data-ttu-id="a69e4-118">필수.</span><span class="sxs-lookup"><span data-stu-id="a69e4-118">Required.</span></span> <span data-ttu-id="a69e4-119">추가할 스키마 확장 클래스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-119">Specifies the schema  extension class to add.</span></span> <span data-ttu-id="a69e4-120">**type** 특성 값은 한 줄로 표시되어야 하며 정규화된 형식 이름을 포함해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-120">The **type** attribute value must be on one line, and include the fully qualified type name.</span></span> <span data-ttu-id="a69e4-121">GAC(전역 어셈블리 캐시)에 추가되는 어셈블리에는 서명된 어셈블리의 버전, 문화권 및 공개 키 토큰도 포함되어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-121">When the assembly is placed in the Global Assembly Cache (GAC), it must also include the version, culture, and public key token of the signed assembly.</span></span>|  
+|<span data-ttu-id="9466d-115">**name**</span><span class="sxs-lookup"><span data-stu-id="9466d-115">**name**</span></span>|<span data-ttu-id="9466d-116">인스턴스를 찾는 데 사용되는 단순한 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-116">A simple name that is used to find the instance.</span></span>|  
+|<span data-ttu-id="9466d-117">**type**</span><span class="sxs-lookup"><span data-stu-id="9466d-117">**type**</span></span>|<span data-ttu-id="9466d-118">필수.</span><span class="sxs-lookup"><span data-stu-id="9466d-118">Required.</span></span> <span data-ttu-id="9466d-119">추가할 스키마 확장 클래스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-119">Specifies the schema  extension class to add.</span></span> <span data-ttu-id="9466d-120">**type** 특성 값은 한 줄로 표시되어야 하며 정규화된 형식 이름을 포함해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-120">The **type** attribute value must be on one line, and include the fully qualified type name.</span></span> <span data-ttu-id="9466d-121">GAC(전역 어셈블리 캐시)에 추가되는 어셈블리에는 서명된 어셈블리의 버전, 문화권 및 공개 키 토큰도 포함되어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-121">When the assembly is placed in the Global Assembly Cache (GAC), it must also include the version, culture, and public key token of the signed assembly.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="a69e4-122">자식 요소</span><span class="sxs-lookup"><span data-stu-id="a69e4-122">Child Elements</span></span>  
- <span data-ttu-id="a69e4-123">없음</span><span class="sxs-lookup"><span data-stu-id="a69e4-123">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="9466d-122">자식 요소</span><span class="sxs-lookup"><span data-stu-id="9466d-122">Child Elements</span></span>  
+ <span data-ttu-id="9466d-123">없음</span><span class="sxs-lookup"><span data-stu-id="9466d-123">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="a69e4-124">부모 요소</span><span class="sxs-lookup"><span data-stu-id="a69e4-124">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="9466d-124">부모 요소</span><span class="sxs-lookup"><span data-stu-id="9466d-124">Parent Elements</span></span>  
   
-|<span data-ttu-id="a69e4-125">요소</span><span class="sxs-lookup"><span data-stu-id="a69e4-125">Element</span></span>|<span data-ttu-id="a69e4-126">설명</span><span class="sxs-lookup"><span data-stu-id="a69e4-126">Description</span></span>|  
+|<span data-ttu-id="9466d-125">요소</span><span class="sxs-lookup"><span data-stu-id="9466d-125">Element</span></span>|<span data-ttu-id="9466d-126">설명</span><span class="sxs-lookup"><span data-stu-id="9466d-126">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="a69e4-127">\<schemaImporterExtensions></span><span class="sxs-lookup"><span data-stu-id="a69e4-127">\<schemaImporterExtensions></span></span>|<span data-ttu-id="a69e4-128"><xref:System.Xml.Serialization.XmlSchemaImporter>에서 사용하는 형식을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-128">Contains the types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter>.</span></span>|  
+|<span data-ttu-id="9466d-127">\<schemaImporterExtensions></span><span class="sxs-lookup"><span data-stu-id="9466d-127">\<schemaImporterExtensions></span></span>|<span data-ttu-id="9466d-128"><xref:System.Xml.Serialization.XmlSchemaImporter>에서 사용하는 형식을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-128">Contains the types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter>.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="a69e4-129">예제</span><span class="sxs-lookup"><span data-stu-id="a69e4-129">Example</span></span>  
- <span data-ttu-id="a69e4-130">다음 코드 예제에서는 XmlSchemaImporter가 형식을 매핑할 때 사용할 수 있는 확장 형식을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="a69e4-130">The following code example adds an extension type that the XmlSchemaImporter can use when mapping types.</span></span>  
+## <a name="example"></a><span data-ttu-id="9466d-129">예제</span><span class="sxs-lookup"><span data-stu-id="9466d-129">Example</span></span>  
+ <span data-ttu-id="9466d-130">다음 코드 예제에서는 XmlSchemaImporter가 형식을 매핑할 때 사용할 수 있는 확장 형식을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="9466d-130">The following code example adds an extension type that the XmlSchemaImporter can use when mapping types.</span></span>  
   
 ```xml  
 <configuration>  
@@ -60,8 +60,8 @@ ms.locfileid: "44082228"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="a69e4-131">참고자료</span><span class="sxs-lookup"><span data-stu-id="a69e4-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9466d-131">참고자료</span><span class="sxs-lookup"><span data-stu-id="9466d-131">See also</span></span>
 
 - <xref:System.Xml.Serialization.XmlSchemaImporter>  
-- [<span data-ttu-id="a69e4-132">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="a69e4-132">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)  
-- [<span data-ttu-id="a69e4-133">\<schemaImporterExtensions> 요소</span><span class="sxs-lookup"><span data-stu-id="a69e4-133">\<schemaImporterExtensions> Element</span></span>](../../../docs/standard/serialization/schemaimporterextensions-element.md)
+- [<span data-ttu-id="9466d-132">\<system.xml.serialization> 요소</span><span class="sxs-lookup"><span data-stu-id="9466d-132">\<system.xml.serialization> Element</span></span>](../../../docs/standard/serialization/system-xml-serialization-element.md)  
+- [<span data-ttu-id="9466d-133">\<schemaImporterExtensions> 요소</span><span class="sxs-lookup"><span data-stu-id="9466d-133">\<schemaImporterExtensions> Element</span></span>](../../../docs/standard/serialization/schemaimporterextensions-element.md)
