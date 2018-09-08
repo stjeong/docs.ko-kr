@@ -12,12 +12,12 @@ api_location:
 ms.assetid: dcc72283-caed-49ee-b45d-ccaf94e97129
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a712414163446606cbc93154bc821d3b1166fe8f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
-ms.translationtype: MT
+ms.openlocfilehash: 8935a8c282bbe812ad76ac6d4228c38ab12626a4
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43800088"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44059653"
 ---
 # <a name="windowsruntimestreamextensionsasrandomaccessstreamsystemiostream-method"></a>WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) 메서드
 
@@ -74,7 +74,7 @@ Public Shared Function AsRandomAccessStream ( _
 
 지원: Windows 8.1
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[System.IO.WindowsRuntimeStreamExtensions](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions(v=vs.110).aspx)  
-[방법: .NET Framework 스트림과 Windows 런타임 스트림 간 변환](../io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)  
+-[System.IO.WindowsRuntimeStreamExtensions](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions(v=vs.110).aspx)
+-[방법:.NET Framework 스트림과 Windows 런타임 스트림 간 변환](../io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)

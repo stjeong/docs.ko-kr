@@ -8,32 +8,33 @@ helpviewer_keywords:
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8c247ed7273687dbd61a6f19923b71e07e9ed960
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: MT
+ms.openlocfilehash: 9f326ee895251678c7a23ea84a11e83951edf2cc
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571510"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44078641"
 ---
 # <a name="base-classes-for-implementing-abstractions"></a>추상화 구현을 위한 기본 클래스
-엄격히 말해서, 클래스는 다른 클래스에서 파생 된 경우 기본 클래스를 수 있습니다. 그러나이 섹션에서는 목적으로 기본 클래스는 클래스는 일반적인 추상화를 제공 합니다. 또는 일부를 다시 사용 다른 클래스에 대 한 기본 구현을 통해 상속을 주로. 일반적으로 기본 클래스 추상화 계층의 루트에 맨 아래에 몇 가지 사용자 지정 구현이 사이의 상속 계층 구조 가운데에 배치 합니다.  
+엄격히 말해, 클래스는 다른 클래스에서 파생 됩니다 하는 경우 기본 클래스를 수 있습니다. 그러나이 섹션 기본 클래스는 클래스 주로 일반적인 추상화를 제공 하거나 일부를 재사용 하는 다른 클래스에 대 한 기본 구현 하지만 상속 하도록 설계 되었습니다. 기본 클래스는 일반적으로 중간 계층의 루트에 추상화 사이의 맨 아래에 몇 가지 사용자 지정 구현이 상속 계층 구조 배치 합니다.  
   
- 추상화를 구현 하기 위한 도우미 구현으로 사용 합니다. 예를 들어이 항목의 순서가 지정 된 컬렉션에 대 한 프레임 워크의 추상화 중 하나는 <xref:System.Collections.Generic.IList%601> 인터페이스입니다. 구현 <xref:System.Collections.Generic.IList%601> 하며, 하므로 프레임 워크를 제공 몇 가지 기본 클래스와 같은 <xref:System.Collections.ObjectModel.Collection%601> 및 <xref:System.Collections.ObjectModel.KeyedCollection%602>, 사용자 지정 컬렉션을 구현 하기 위한 도우미로 역할입니다.  
+ 추상화 구현을 위한 도우미 구현으로 사용 합니다. 예를 들어, 순서가 지정 된 컬렉션 항목에 대 한 프레임 워크의 추상화 중 하나는 <xref:System.Collections.Generic.IList%601> 인터페이스입니다. 구현 <xref:System.Collections.Generic.IList%601> 하며, 따라서 프레임 워크를 제공 몇 가지 기본 클래스와 같은 <xref:System.Collections.ObjectModel.Collection%601> 및 <xref:System.Collections.ObjectModel.KeyedCollection%602>, 사용자 지정 컬렉션을 구현 하기 위한 도우미 역할도 하는 합니다.  
   
- 너무 많은 구현이 포함 경향이 때문에 기본 클래스를 직접 추상화 역할을 적합 하지 일반적으로 않습니다. 예를 들어는 `Collection<T>` 기본 클래스 구현 제네릭이 아닌을 구현 한다는 사실에 관련 된 많은 포함 `IList` 인터페이스 (제네릭이 아닌 컬렉션을 더 잘 통합) 하 고는 한다는 사실에 항목의 컬렉션에 저장 해당 필드 중 하나에 메모리입니다.  
+ 너무 많은 구현을 포함 하는 경향이 있으므로 기본 클래스 추상화로 단독으로 제공 하는 데 적합 하지 일반적으로 합니다. 예를 들어 합니다 `Collection<T>` 기본 클래스 구현 제네릭이 아닌 구현 하는 팩트에 관련 된 많은 포함 `IList` 인터페이스 (제네릭이 아닌 컬렉션을 사용 하 여 더 효율적으로 통합) 및 된다는 것에 저장 된 항목의 컬렉션 해당 필드 중 하나에 메모리입니다.  
   
- 앞에서 설명한 대로 기본 클래스 추상화를 구현 해야 하는 사용자에 대 한 중요 한 도움말을 제공할 수 있지만 동시에은 중요 한 문제가 될 수 있습니다. 노출 영역을 추가 상속 계층 구조 깊이 늘고 되 고 있으므로 개념적으로 프레임 워크를 복잡 하 게 합니다. 따라서 프레임 워크의 사용자에 게 중요 한 가치를 제공 하는 경우에 기본 클래스를 사용 해야 합니다. 기본 클래스에서 상속 하는 대신 내부 구현에 대 한 사례 위임을 강력 하 게 고려해 야 프레임 워크의 구현자에만 값을 제공 하는 경우 사용 하지 마십시오.  
+ 앞에서 설명한 대로 기본 클래스 추상화를 구현 해야 하는 사용자에 대 한 매우 유용한 도움말을 제공할 수 있지만 동시에 상당한 부담으로 작용할 수 있습니다. 노출 영역을 추가 및 상속 계층의 깊이 증가 하며 나타내므로 개념적 프레임 워크를 복잡 하 게 합니다. 따라서 프레임 워크의 사용자에 게 중요 한 가치를 제공 하는 경우에 기본 클래스를 사용 해야 합니다. 프레임 워크에는 기본 클래스에서 상속 하는 대신 내부 구현 사례 위임 강력 하 게 고려해 야의 구현자에만 값을 제공 하는 경우 피해 야 합니다.  
   
- **✓ CONSIDER** 함으로써 기본 추상 멤버가 포함 하지 않는 경우에 추상 클래스입니다. 이 명확 하 게 통신 하는 사용자 클래스에서 상속 하는 데에 디자인 합니다.  
+ **✓ CONSIDER** 함으로써 기본 추상 멤버가 포함 하지 않는 경우에 추상 클래스입니다. 이 사용자에 게 명확 하 게 통신 클래스에서 상속 하는 용도로 설계 됩니다.  
   
- **✓ CONSIDER** 주요 시나리오 형식에서 별도 네임 스페이스에 기본 클래스를 배치 합니다. 기본적으로 기본 클래스는 오버 로드는 고급 확장성 시나리오와 따라서는 대부분의 사용자와 관련이 없습니다.  
+ **✓ CONSIDER** 주요 시나리오 형식에서 별도 네임 스페이스에 기본 클래스를 배치 합니다. 정의상, 기본 클래스는 고급 확장성 시나리오를 위한 것 및 따라서는 대부분의 사용자와 관련이 없습니다.  
   
  **X AVOID** 클래스가 공용 Api에서 사용 하기 위한 경우 "기본" 접미사를 사용 하 여 기본 클래스 이름을 지정 합니다.  
   
  *Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*  
   
- *피어슨 교육, Inc.에서의 사용 권한으로 재인쇄 [Framework 디자인 지침: 규칙, 특징 및 다시 사용할 수 있는.NET 라이브러리를 2nd Edition에 대 한 패턴](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina 및 Brad Abrams 게시 하 여 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로: Addison Wesley Professional.*  
+ *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## <a name="see-also"></a>참고 항목  
- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
- [확장성을 위한 디자인](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
+## <a name="see-also"></a>참고자료
+
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
+- [확장성을 위한 디자인](../../../docs/standard/design-guidelines/designing-for-extensibility.md)

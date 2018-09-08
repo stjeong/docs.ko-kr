@@ -2,12 +2,12 @@
 title: Web Services Generics Serialization 기술 샘플
 ms.date: 03/30/2017
 ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
-ms.openlocfilehash: 799206b1bd86e98c87441771174441d07074a325
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
-ms.translationtype: MT
+ms.openlocfilehash: b233ed4374231c7e7ff2b6617a63c4e4c94612c2
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936778"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44060387"
 ---
 # <a name="web-services-generics-serialization-technology-sample"></a>Web Services Generics Serialization 기술 샘플
 [샘플 다운로드](https://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Xml%20Serialization/GenericsSerialization.zip.exe)  
@@ -63,9 +63,10 @@ ms.locfileid: "37936778"
 ## <a name="remarks"></a>설명  
  이 샘플에서는 웹 서비스의 정의에 대한 링크가 포함된 기본 ASP.NET 페이지를 표시합니다. 웹 서비스의 소스 코드를 수정할 수 있을 뿐 아니라 화면 표시를 사용자 지정할 수도 있습니다. 자세한 내용은 [XML Web Service 클라이언트 빌드](https://msdn.microsoft.com/library/c606f3cb-4111-45b4-ae42-9300420fa16c)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic>  
- <xref:System.Web.Services>  
- <xref:System.Xml.Serialization>  
- [serialization](../../../docs/standard/serialization/index.md)  
- [ASP.NET 및 XML Web Service 클라이언트를 사용하여 만든 XML Web Services](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Collections.Generic>  
+- <xref:System.Web.Services>  
+- <xref:System.Xml.Serialization>  
+- [serialization](../../../docs/standard/serialization/index.md)  
+- [ASP.NET 및 XML Web Service 클라이언트를 사용하여 만든 XML Web Services](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)

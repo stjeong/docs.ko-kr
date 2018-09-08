@@ -9,11 +9,11 @@ helpviewer_keywords:
 - queries [Visual Basic], Distinct
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
 ms.openlocfilehash: 18d09d8018303aab6a69801c84c7ec9c6ea19ca9
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43788625"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083834"
 ---
 # <a name="distinct-clause-visual-basic"></a>Distinct 절(Visual Basic)
 후속 쿼리 절에 중복 값을 제거 하려면 현재 범위 변수 값을 제한 합니다.  
