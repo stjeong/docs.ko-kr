@@ -3,11 +3,11 @@ title: '결과 (F #)'
 description: "오류 코드를 작성할 수 있도록 F # '결과' 형식을 사용 하는 방법에 알아봅니다."
 ms.date: 04/24/2017
 ms.openlocfilehash: a7ce2e1f6b8c6a32d99a2feaf9547c4b67b152b8
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43749251"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44213042"
 ---
 # <a name="results"></a>결과
 

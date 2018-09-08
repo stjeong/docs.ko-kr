@@ -2,12 +2,12 @@
 title: 구조체(F#)
 description: 'F # 구조, 종종 간단한 개체 형식에 알아봅니다 작은 양의 데이터 적고 동작이 단순한 형식에 대해 클래스 보다 더 효율적입니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 889d493af3c9c388bdc7969c02bc7b021b82517d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 08af88132dda28883e246b94585ff4ed8bd2f16a
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43799673"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44181929"
 ---
 # <a name="structures"></a>구조체
 
@@ -48,9 +48,51 @@ type [accessibility-modifier] type-name =
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2501.fs)]
 
+## <a name="byreflike-structs"></a>ByRefLike 구조체
+
+수를 준수 하는 사용자 고유의 구조체를 정의할 수 있습니다 `byref`-같은 의미 체계: 참조 [Byref](byrefs.md) 자세한 내용은 합니다. 사용 하 여 <xref:System.Runtime.CompilerServices.IsByRefLikeAttribute> 특성:
+
+```fsharp
+open System
+open System.Runtime.CompilerServices
+
+[<IsByRefLike; Struct>]
+type S(count1: Span<int>, count2: Span<int>) =
+    member x.Count1 = count1
+    member x.Count2 = count2
+```
+
+`IsByRefLike` 의미 하지는 않습니다 `Struct`합니다. 두 형식에 있어야 합니다.
+
+"`byref`-같은" F #의 구조체는 스택 바인딩된 값 형식입니다. 관리 되는 힙에 할당 되지 됩니다. `byref`-같은 구조체 유용 고성능 프로그래밍에 대 한 일련의 수명 및 비캡처 하는 방법에 대 한 강력한 검사를 사용 하 여 적용 됩니다. 규칙은 다음과 같습니다.
+
+* 사용할 수 있습니다 함수 매개 변수, 메서드 매개 변수, 지역 변수, 메서드를 반환 합니다.
+* 정적 이어야 하거나 멤버 클래스 또는 일반 구조체의 인스턴스 수는 없습니다.
+* 모든 클로저 생성으로 캡처할 수 없습니다 (`async` 메서드 또는 람다 식).
+* 제네릭 매개 변수로 사용할 수 없습니다.
+
+이러한 규칙은 매우 강력 하 게 사용을 제한, 있지만 그렇게 안전한 방식으로 고성능 컴퓨팅의 약속을 충족 하 합니다.
+
+## <a name="readonly-structs"></a>읽기 전용 구조체
+
+구조체를 사용 하 여 주석을 추가할 수는 <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute> 특성입니다. 예를 들어:
+
+```fsharp
+[<IsReadOnly; Struct>]
+type S(count1: int, count2: int) =
+    member x.Count1 = count1
+    member x.Count2 = count2
+```
+
+`IsReadOnly` 의미 하지는 않습니다 `Struct`합니다. 모두 추가 해야는 `IsReadOnly` 구조체입니다.
+
+이 특성을 사용 하는 F # 및 C#으로 취급 되도록 알 수 있도록 하는 메타 데이터를 내보냅니다 `inref<'T>` 고 `in ref`, 각각.
+
+읽기 전용 구조체 내에서 변경할 수 있는 값을 정의 했는데 오류가 발생 합니다.
+
 ## <a name="struct-records-and-discriminated-unions"></a>구조체 레코드 및 구분 된 공용 구조체
 
-F # 4.1 부터는 나타낼 수 있습니다 [레코드](records.md) 하 고 [구별 된 공용 구조체](discriminated-unions.md) 사용 하 여 구조체로 `[<Struct>]` 특성입니다.  자세한 내용은 각 문서를 참조 하세요.
+나타낼 수 있습니다 [레코드](records.md) 하 고 [구별 된 공용 구조체](discriminated-unions.md) 사용 하 여 구조체로 `[<Struct>]` 특성입니다.  자세한 내용은 각 문서를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

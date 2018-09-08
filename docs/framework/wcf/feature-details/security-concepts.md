@@ -5,11 +5,11 @@ ms.assetid: 944fa5ca-2c34-4268-8897-e005a61b470d
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 32b05766f82059634e6ad808c75fea6cc9e820e5
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44127734"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44188581"
 ---
 # <a name="security-concepts"></a>보안 개념
 Windows Communication Foundation (WCF) 보안을 사용 하 여 관련 된 개념을 간략하게 설명이 합니다.  

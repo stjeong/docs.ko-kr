@@ -3,11 +3,11 @@ title: LINQ to ADO.NET(포털 페이지)
 ms.date: 07/20/2015
 ms.assetid: bbbd7c76-2981-4b91-b8d2-437547181f52
 ms.openlocfilehash: 6e37a1ffdef3dd2299c2c534345ba7c6dc610471
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44128487"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192628"
 ---
 # <a name="linq-to-adonet-portal-page"></a>LINQ to ADO.NET(포털 페이지)
 [!INCLUDE[linq_adonet](~/includes/linq-adonet-md.md)]를 사용하면 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 프로그래밍 모델을 통해 [!INCLUDE[vstecado](~/includes/vstecado-md.md)]의 열거 가능한 개체를 쿼리할 수 있습니다.  

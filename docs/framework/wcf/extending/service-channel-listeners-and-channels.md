@@ -3,11 +3,11 @@ title: '서비스: 채널 수신기 및 채널'
 ms.date: 03/30/2017
 ms.assetid: 8ccbe0e8-7e55-441d-80de-5765f67542fa
 ms.openlocfilehash: 88bfdc879e4f3c7df6b2c4035c7ed7fdc2b4c41d
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44035140"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44174499"
 ---
 # <a name="service-channel-listeners-and-channels"></a>서비스: 채널 수신기 및 채널
 

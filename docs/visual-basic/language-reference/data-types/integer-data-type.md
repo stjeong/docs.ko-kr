@@ -24,11 +24,11 @@ ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: dc780cc845bfa6ef52fc9973ef3617d621167af1
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44139868"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44177525"
 ---
 # <a name="integer-data-type-visual-basic"></a>정수 데이터 형식 (Visual Basic)
 -2,147,483,648에서 2,147,483,647까지의 값 범위에 속하는 부호 있는 32비트(4바이트) 정수를 저장합니다.  

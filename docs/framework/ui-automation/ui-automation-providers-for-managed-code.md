@@ -12,11 +12,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 14e00caf666186e2ad25c746334afaff7ae5f664
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44072261"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44174825"
 ---
 # <a name="ui-automation-providers-for-managed-code"></a>관리 코드에 대한 UI 자동화 공급자
 > [!NOTE]

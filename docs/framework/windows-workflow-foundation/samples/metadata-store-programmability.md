@@ -3,11 +3,11 @@ title: 메타데이터 저장소 프로그래밍 기능
 ms.date: 03/30/2017
 ms.assetid: 5b613661-f3f9-4e07-8e88-28c9ea2fd8f8
 ms.openlocfilehash: 4ea6117686b985a9ea18ce4e5cc4ea2b5c25524c
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43881426"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44187022"
 ---
 # <a name="metadata-store-programmability"></a>메타데이터 저장소 프로그래밍 기능
 메타데이터 저장소는 CLR 특성 형식의 임의의 메타데이터를 런타임에 형식에 연결할 수 있는 [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)] 기능입니다. 이를 통해 런타임 구성 요소와 해당 디자인 타임 구성 요소 간의 느슨한 결합이 가능할 뿐 아니라 런타임에 영향을 주지 않고 디자인 타임 구성 요소를 변경할 수 있습니다. 이 샘플에서는 제어 권한이 없는 소스인 런타임 형식에 특성을 적용하여 메타데이터 저장소를 기반으로 프로그래밍하는 방법을 보여 줍니다. 즉, 호스팅 응용 프로그램이 형식 집합에 대한 메타데이터를 등록하는 방법을 보여 줍니다.  

@@ -3,11 +3,11 @@ title: 외부 함수(F#)
 description: '네이티브 코드의 함수를 호출 하는 것에 대 한 F # 언어 지원에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: db0d3362d867b07b333951f3380c6735ff471d5e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44037229"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44181420"
 ---
 # <a name="external-functions"></a>외부 함수
 

@@ -3,11 +3,11 @@ title: Asynchronous Communication
 ms.date: 03/30/2017
 ms.assetid: 128dc092-9eb2-4e33-9470-9a7f62b60df6
 ms.openlocfilehash: e85f7efb0de1326ceb5091c305b20f34809eab57
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44047089"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44172862"
 ---
 # <a name="asynchronous-communication"></a>Asynchronous Communication
 이 샘플에서는 두 개의 서로 다른 Windows WF (Workflow Foundation) 서비스 간의 통신은 기본적으로 비동기적으로 수행 하는 방법을 보여 줍니다.  

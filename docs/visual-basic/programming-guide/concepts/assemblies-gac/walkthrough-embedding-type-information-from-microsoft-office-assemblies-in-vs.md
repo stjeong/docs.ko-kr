@@ -2,12 +2,12 @@
 title: '연습: Visual Studio (Visual Basic)에서 Microsoft Office 어셈블리의 형식 정보 포함'
 ms.date: 07/20/2015
 ms.assetid: 26b44286-5066-4ad4-8e6a-c24902be347c
-ms.openlocfilehash: 6a28e95f9c3cfcc2481c8f4f9f83303648df43cd
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: bc8f7585964bdd60bac5d5a466f6276fab288c78
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39244055"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44188659"
 ---
 # <a name="walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-visual-studio-visual-basic"></a>연습: Visual Studio (Visual Basic)에서 Microsoft Office 어셈블리의 형식 정보 포함
 COM 개체를 참조하는 응용 프로그램에 형식 정보를 포함하면 PIA(Primary Interop Assembly)가 필요하지 않게 됩니다. 또한 포함된 형식 정보를 사용하면 응용 프로그램의 버전 독립성을 구현할 수 있습니다. 즉, 각 버전에 대해 특정 PIA를 요구하지 않고 COM 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다. 이는 Microsoft Office 라이브러리의 개체를 사용하는 응용 프로그램의 일반적인 시나리오입니다. 형식 정보를 포함하면 각 Microsoft Office 버전용 프로그램 또는 PIA를 다시 배포하지 않고도 동일한 프로그램 빌드를 서로 다른 컴퓨터에 있는 다른 버전의 Microsoft Office에서 작동할 수 있습니다.  
@@ -101,7 +101,7 @@ COM 개체를 참조하는 응용 프로그램에 형식 정보를 포함하면 
   
 1.  이 연습에서 만든 프로젝트를 Visual Studio에서 엽니다.  
   
-2.  **빌드** 메뉴에서 **CreateExcelWorkbook 게시**를 선택합니다. 게시 마법사의 단계에 따라 응용 프로그램의 설치 가능한 버전을 만듭니다. 자세한 내용은 [게시 마법사(Visual Studio에서 Office 개발)](https://msdn.microsoft.com/library/bb625071)를 참조하세요.  
+2.  **빌드** 메뉴에서 **CreateExcelWorkbook 게시**를 선택합니다. 게시 마법사의 단계에 따라 응용 프로그램의 설치 가능한 버전을 만듭니다. 자세한 내용은 [게시 마법사(Visual Studio에서 Office 개발)](/visualstudio/vsto/publish-wizard-office-development-in-visual-studio)를 참조하세요.  
   
 3.  .NET Framework 4 이상 및 Excel의 다른 버전이 설치된 두 번째 컴퓨터에 응용 프로그램을 설치합니다.  
   
@@ -109,6 +109,7 @@ COM 개체를 참조하는 응용 프로그램에 형식 정보를 포함하면 
   
 5.  Excel 통합 문서가 샘플 코드에서 지정한 위치에 만들어졌는지 확인합니다(C:\SampleFolder\SampleWorkbook.xls).  
   
-## <a name="see-also"></a>참고 항목  
- [연습: Visual Studio (Visual Basic)에서 관리 되는 어셈블리의 형식 포함](../../../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)  
- [/link(Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)
+## <a name="see-also"></a>참고자료
+
+- [연습: Visual Studio (Visual Basic)에서 관리 되는 어셈블리의 형식 포함](../../../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)  
+- [/link(Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)

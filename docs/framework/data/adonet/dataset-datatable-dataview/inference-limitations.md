@@ -3,11 +3,11 @@ title: 유추 제한
 ms.date: 03/30/2017
 ms.assetid: 78517994-5d57-44f8-9d20-38812977de09
 ms.openlocfilehash: d113df98cdd339300b3e75ceda49a56d4f346d3c
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44137228"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44190691"
 ---
 # <a name="inference-limitations"></a>유추 제한
 XML에서 <xref:System.Data.DataSet> 스키마를 유추하는 과정을 통해 만들어지는 스키마는 각 문서의 XML 요소에 따라 다를 수 있습니다. 예를 들어, 다음과 같은 XML 문서를 가정해 봅시다.  

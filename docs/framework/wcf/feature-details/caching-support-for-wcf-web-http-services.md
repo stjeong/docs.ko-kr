@@ -3,11 +3,11 @@ title: WCF 웹 HTTP 서비스에 대한 캐싱 지원
 ms.date: 03/30/2017
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
 ms.openlocfilehash: 25b564235b5d2b3b26b5d657f3e5f0bd5d594125
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44081312"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44185076"
 ---
 # <a name="caching-support-for-wcf-web-http-services"></a>WCF 웹 HTTP 서비스에 대한 캐싱 지원
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] WCF 웹 HTTP 서비스에서 ASP.NET에 이미 사용 가능한 선언적 캐싱 메커니즘을 사용할 수 있습니다. 이렇게 하면 WCF 웹 HTTP 서비스 작업의 응답을 캐시할 수 있습니다. 사용자가 캐시용으로 구성된 서비스에 HTTP GET을 보내면 ASP.NET이 캐시된 응답을 다시 보내고 서비스 메서드가 호출되지 않습니다. 캐시가 만료되면 다음에 사용자가 HTTP GET을 보낼 때 서비스 메서드가 호출되고 응답이 다시 한 번 캐시됩니다. ASP.NET 캐싱에 대 한 자세한 내용은 참조 하세요. [ASP.NET 캐싱 개요](https://go.microsoft.com/fwlink/?LinkId=152534)  

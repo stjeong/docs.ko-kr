@@ -6,12 +6,12 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: 83a1b7629672c6a74fd29ce698a6b8e6e152b1da
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
-ms.translationtype: HT
+ms.openlocfilehash: 4c04c00c5392d8ba363346b06c806ec79041c439
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44068952"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44184313"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>LINQ 쿼리 처음 작성(Visual Basic)
 *쿼리*는 데이터 소스에서 데이터를 검색하는 식입니다. 쿼리는 전용된 쿼리 언어로 표현 됩니다. 시간이 지남에 따라 다른 언어가 개발 되었습니다 다양 한 유형의 데이터 원본에 대 한 예를 들어, 관계형 데이터베이스에 대 한 SQL 및 XML에 대 한 XQuery입니다. 이렇게 하면 응용 프로그램 개발자가 각 유형의 데이터 원본 또는 지원 되는 데이터 형식에 대 한 새 쿼리 언어를 배울 필요 합니다.  
@@ -57,7 +57,7 @@ Dim db As New DataContext("C:\Northwind\Northwnd.mdf")
 Dim customers As Table(Of Customer) = db.GetTable(Of Customer)  
 ```  
   
- 특정 형식의 데이터 소스를 만드는 방법에 대한 자세한 내용은 다양한 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자에 대한 설명서를 참조하세요. (이러한 공급자 목록은 참조 하세요 [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).) 기본 규칙은 간단 합니다:는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 소스는 제네릭을 지 원하는 모든 개체 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 인터페이스에서 상속 된 합니다.  
+ 특정 형식의 데이터 소스를 만드는 방법에 대한 자세한 내용은 다양한 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자에 대한 설명서를 참조하세요. (이러한 공급자 목록은 참조 하세요 [LINQ (Language-Integrated Query)](../../../../visual-basic/programming-guide/concepts/linq/index.md).) 기본 규칙은 간단 합니다:는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 소스는 제네릭을 지 원하는 모든 개체 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 인터페이스에서 상속 된 합니다.  
   
 > [!NOTE]
 >  같은 형식의 <xref:System.Collections.ArrayList> 제네릭이 아닌 지 <xref:System.Collections.IEnumerable> 인터페이스를 사용할 수도 있습니다 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 원본입니다. 사용 하는 예는 <xref:System.Collections.ArrayList>를 참조 하세요 [하는 방법: LINQ (Visual Basic)를 사용 하 여 ArrayList 쿼리](how-to-query-an-arraylist-with-linq.md).  
@@ -118,10 +118,11 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  할 수도 있습니다는 쿼리를 사용 하 여 실행할 수는 `IEnumerable` 와 같은 메서드는 <xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A> 메서드.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic에서 LINQ 시작](getting-started-with-linq.md)  
- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [표준 쿼리 연산자 개요(Visual Basic)](standard-query-operators-overview.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+## <a name="see-also"></a>참고자료
+
+- [Visual Basic에서 LINQ 시작](getting-started-with-linq.md)  
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
+- [표준 쿼리 연산자 개요(Visual Basic)](standard-query-operators-overview.md)  
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)

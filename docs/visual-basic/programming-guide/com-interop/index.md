@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Visual Basic code, COM interop
 - COM interop [Visual Basic], in Visual Basic
 ms.assetid: 3ffd1bdf-1b8d-47f5-87eb-75b659f64294
-ms.openlocfilehash: b6da65a0c94875f73c8e1094448d76a72823404d
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: dfd256fa7ccd8f089fab6eb1d42579deb2c4a64d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43871061"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44183173"
 ---
 # <a name="com-interop-visual-basic"></a>COM Interop(Visual Basic)
 COM(구성 요소 개체 모델)을 통해 개체는 기능을 다른 구성 요소에 노출하고 응용 프로그램을 호스트할 수 있습니다. 오늘날 대부분의 소프트웨어에는 COM 개체가 포함됩니다. 새 응용 프로그램에는 .NET 어셈블리가 제일 나은 선택이지만 때로는 COM 개체를 채택해야 할 수 있습니다. 이 섹션에는 만들기 및 Visual Basic을 사용한 COM 개체를 사용 하 여 관련 된 문제 중 일부를 다룹니다.  
@@ -50,10 +50,10 @@ COM(구성 요소 개체 모델)을 통해 개체는 기능을 다른 구성 요
  [비관리 코드와의 상호 운용](../../../framework/interop/index.md)  
  공용 언어 런타임에서 제공하는 상호 운용성 서비스를 설명합니다.  
   
- [.NET Framework에 COM 구성 요소 노출](https://msdn.microsoft.com/library/e78b14f1-e487-43cd-9c6d-1a07483f1730)  
+ [.NET Framework에 COM 구성 요소 노출](../../../framework/interop/exposing-com-components.md)  
  COM interop를 통해 COM 형식을 호출하는 프로세스를 설명합니다.  
   
- [.NET Framework 구성 요소를 COM에 노출](https://msdn.microsoft.com/library/e42a65f7-1e61-411f-b09a-aca1bbce24c6)  
+ [.NET Framework 구성 요소를 COM에 노출](../../../framework/interop/exposing-dotnet-components-to-com.md)  
  COM에서 관리되는 형식의 준비 및 사용을 설명합니다.  
   
  [Interop 특성 적용](../../../framework/interop/applying-interop-attributes.md)  

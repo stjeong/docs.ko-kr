@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WithEvents keyword [Visual Basic], walkthroughs
 - event handlers [Visual Basic], walkthroughs
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
-ms.openlocfilehash: 3ade8eae67d29e2f3cb42911e42ed8696623db62
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 35680c7476f48ca11ac4ddeda208c46c6b36c724
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507900"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192000"
 ---
 # <a name="walkthrough-handling-events-visual-basic"></a>연습: 이벤트 처리(Visual Basic)
 이것이 이벤트로 작업 하는 방법을 보여 주는 두 항목 중 두 번째 숫자입니다. 첫 번째 항목인 [연습: 이벤트 선언 및 발생](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)를 선언 하 고 이벤트를 발생 하는 방법을 보여 줍니다. 이 섹션에서는 다음 연습에서 클래스 및 형식을 사용 하 여 수행한 이벤트를 처리 하는 방법을 보여 줍니다.  
@@ -95,7 +95,7 @@ ms.locfileid: "43507900"
 3.  클릭 합니다 **취소** 작업을 중지 하려면 단추입니다. 모양의 합니다 **취소** 단추 클릭할 때 즉시 변경 되지 않습니다. 합니다 `Click` 이벤트가 발생할 수는 `My.Application.DoEvents` 문을 이벤트 처리를 허용 합니다.  
   
     > [!NOTE]
-    >  `My.Application.DoEvents` 메서드 이벤트를 처리 하지 동일한 방식으로 폼 마찬가지로 합니다. 예를 들어이 연습에서는 클릭 해야 합니다 **취소** 단추를 두 번입니다. 폼에 직접 이벤트를 처리할 수 있도록을 따르면 다중 스레딩 합니다. 자세한 내용은 [스레딩](https://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)합니다.  
+    >  `My.Application.DoEvents` 메서드 이벤트를 처리 하지 동일한 방식으로 폼 마찬가지로 합니다. 예를 들어이 연습에서는 클릭 해야 합니다 **취소** 단추를 두 번입니다. 폼에 직접 이벤트를 처리할 수 있도록을 따르면 다중 스레딩 합니다. 자세한 내용은 [스레딩](../../../../visual-basic/programming-guide/concepts/threading/index.md)합니다.
   
  F11 키를 사용 하 여 프로그램을 실행 하 고 한 번에 한 줄을 코드를 단계별로 실행 하는 방법도 사용할 수 있습니다. 실행 중이 시작 하는 방법을 명확 하 게 볼 수 있습니다 `LongTask`, 간단 하 게 다시 진입할 `Form1` 때마다는 `PercentDone` 이벤트가 발생 합니다.  
   

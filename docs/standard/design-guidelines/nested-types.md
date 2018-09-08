@@ -13,11 +13,11 @@ ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 2593b85dd4747a3fbe365994c3e5d9beae3e3406
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43891542"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44188150"
 ---
 # <a name="nested-types"></a>중첩 형식
 중첩된 형식은 바깥쪽 형식 이라고 하는 다른 형식의 범위 내에 정의 된 형식인 합니다. 중첩된 형식은 바깥쪽 형식의 모든 멤버에 액세스할 수 있습니다. 예를 들어, 바깥쪽 형식 및 보호 된 바깥쪽 형식의 모든 상위 항목에 정의 된 필드를 정의 하는 전용 필드에 대 한 액세스를 권한이 있습니다.  

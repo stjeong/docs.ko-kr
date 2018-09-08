@@ -36,12 +36,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-ms.openlocfilehash: c13bdc47568aa8bbd934bb2b86410e17bbc485dc
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3a419fb38d3b97b08c8aaa094265d8b426429ae4
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43562811"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44188672"
 ---
 # <a name="generic-types-in-visual-basic-visual-basic"></a>Visual Basic의 제네릭 형식(Visual Basic)
 *제네릭 형식* 은 다양한 데이터 형식에 대해 동일한 기능을 수행하도록 조정되는 단일 프로그래밍 요소입니다. 제네릭 클래스 또는 프로시저를 정의할 때는 해당 기능을 수행하고자 하는 각 데이터 형식마다 별도의 버전을 정의할 필요가 없습니다.  
@@ -147,15 +147,16 @@ ms.locfileid: "43562811"
   
 -   *생성된 형식*. 형식 매개 변수에 대한 형식 인수를 제공하여 제네릭 형식에서 선언된 클래스, 구조체, 인터페이스, 프로시저 또는 대리자입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
- [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
- [Object 데이터 형식](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [공 분산 및 반공 분산](../../concepts/covariance-contravariance/index.md)  
- [반복기](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)
+## <a name="see-also"></a>참고자료
+
+- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
+- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
+- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
+- [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
+- [Object 데이터 형식](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
+- [공 분산 및 반공 분산](../../concepts/covariance-contravariance/index.md)  
+- [반복기](../../../../visual-basic/programming-guide/concepts/iterators.md)

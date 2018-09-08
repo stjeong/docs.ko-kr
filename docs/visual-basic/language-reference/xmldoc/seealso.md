@@ -6,11 +6,11 @@ helpviewer_keywords:
 - seealso XML tag
 ms.assetid: 36050c95-1af2-4284-b9b6-1a70691ed978
 ms.openlocfilehash: a792bbea108bcdf33d430c47773466ef3dccdb0c
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43880499"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44182832"
 ---
 # <a name="ltseealsogt-visual-basic"></a>&lt;seealso&gt; (Visual Basic)
 참고 항목 섹션에 표시 되는 링크를 지정 합니다.  

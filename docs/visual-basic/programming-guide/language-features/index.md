@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Visual Basic code, elements of
 - Visual Basic code
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
-ms.openlocfilehash: a8f6da4dc42244fbadbaf0e96b0dd281a3f7ccb2
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 975bec73235b3b8f82088325e0d4abc50ce6b1dd
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43879606"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44185365"
 ---
 # <a name="visual-basic-language-features"></a>Visual Basic 언어 기능
 다음 항목 소개 하 고 Visual Basic의 경우 개체 지향 프로그래밍 언어의 필수 구성 요소에 설명 합니다. 폼 및 컨트롤을 사용하여 자신의 응용 프로그램에 사용할 사용자 인터페이스를 만든 다음에는 응용 프로그램의 동작을 정의하는 코드를 작성해야 합니다. 모든 최신 프로그래밍 언어와 마찬가지로 Visual Basic에서는 다양 한 일반적인 프로그래밍 구문과 언어 요소를 지원 합니다.  
@@ -77,8 +77,9 @@ ms.locfileid: "43879606"
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)  
  Visual Basic에서 XML을 사용하는 방법을 설명하는 항목에 대한 링크를 제공합니다.  
   
-## <a name="related-sections"></a>관련 단원  
- [컬렉션](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+## <a name="related-sections"></a>관련 단원
+
+ [컬렉션](../../../visual-basic/programming-guide/concepts/collections.md)  
  .NET Framework에서 제공되는 컬렉션의 형식 중 일부에 대해 설명 합니다. 간단한 컬렉션 및 키/값 쌍의 컬렉션을 사용하는 방법을 보여 줍니다.  
   
  [Visual Basic 언어 참조](../../../visual-basic/language-reference/index.md)  

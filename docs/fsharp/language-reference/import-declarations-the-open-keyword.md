@@ -3,11 +3,11 @@ title: '가져오기 선언: open 키워드(F#)'
 description: '정규화 된 이름을 사용 하지 않고 참조할 수 있는 해당 요소의 F # 가져오기 선언 및 모듈 또는 네임 스페이스를 지정 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 8cae4b4f5418689bfb0933b7db4ec23a313d5ed8
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44130187"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44191999"
 ---
 # <a name="import-declarations-the-open-keyword"></a>가져오기 선언:는 `open` 키워드
 

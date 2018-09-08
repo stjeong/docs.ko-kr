@@ -11,11 +11,11 @@ ms.assetid: ab22ce03-78f9-4dca-8824-c7ed3bdccc27
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 9ea4a61be3a76c30c564cbf98ba3318fc6c3e7d4
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43874968"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44193629"
 ---
 # <a name="using-standard-exception-types"></a>표준 예외 형식 사용
 이 섹션에서는 프레임 워크 및 사용량의 세부 정보에서 제공 하는 표준 예외를 설명 합니다. 이 목록은 철저 한 있지는 않습니다. 다른 프레임 워크 예외 형식 사용에 대 한.NET Framework 참조 설명서를 참조 하십시오.  

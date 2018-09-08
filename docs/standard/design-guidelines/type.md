@@ -11,11 +11,11 @@ ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: a7fb9964d0e542c0937c55ae65bd88b3f7149fa8
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44036027"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44187941"
 ---
 # <a name="type-design-guidelines"></a>형식 디자인 지침
 CLR 관점에서 보면는 두 가지 범주의 형식-참조 형식과 값 형식-있지만 프레임 워크 디자인에 대 한 토론을 하기 위해 고유한 특정 디자인 규칙을 사용 하 여 각 논리적인 그룹으로 형식 나눕니다.  

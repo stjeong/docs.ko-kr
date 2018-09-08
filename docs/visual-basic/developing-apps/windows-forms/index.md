@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows applications
 - Windows Forms, Visual Basic
 ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
-ms.openlocfilehash: cdc3e42adcb2c7eae52aab0b14d0f9c6a822eeea
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: b900b85b4e3e56dbc587a15edea40f6e3032cbd1
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43881988"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192433"
 ---
 # <a name="windows-forms-application-basics-visual-basic"></a>Windows Forms 응용 프로그램 기초(Visual Basic)
 사용자의 컴퓨터에서 로컬로 실행 되는 Windows Forms 응용 프로그램을 만드는 기능은 Visual Basic의 중요 한 부분입니다. Windows Forms를 사용 하 여 응용 프로그램 및 사용자 인터페이스를 만들려면 Visual Studio를 사용할 수 있습니다. Windows Forms 응용 프로그램의 클래스에 빌드되는 <xref:System.Windows.Forms> 네임 스페이스입니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "43881988"
 |대상|보기|  
 |--------|---------|  
 |사용 된 <xref:System.Windows.Forms.BindingSource> 구성 요소|[방법: 디자이너를 사용하여 Windows Forms 컨트롤에 BindingSource 구성 요소 바인딩](../../../framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
-|작업할 [!INCLUDE[vstecado](~/includes/vstecado-md.md)] 데이터 원본|[방법: Windows Forms BindingSource 구성 요소를 사용하여 ADO.NET 데이터 정렬 및 필터링](https://msdn.microsoft.com/library/ya3sah92.aspx)|  
+|작업할 [!INCLUDE[vstecado](~/includes/vstecado-md.md)] 데이터 원본|[방법: Windows Forms BindingSource 구성 요소를 사용하여 ADO.NET 데이터 정렬 및 필터링](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |데이터 소스 창 사용|[연습: Windows Form에 데이터 표시](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## <a name="deploying-applications-to-client-computers"></a>클라이언트 컴퓨터에 응용 프로그램 배포  
@@ -95,7 +95,8 @@ ms.locfileid: "43881988"
 |폼의 내용을 인쇄합니다|[방법: Windows Forms의 그래픽 인쇄](../../../framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [방법: Windows Forms에서 다중 페이지 텍스트 파일 인쇄](../../../framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|   
 |Windows Forms 보안에 대한 자세한 정보|[Windows Forms의 보안 개요](../../../framework/winforms/security-in-windows-forms-overview.md)|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
- [Windows Forms 개요](../../../framework/winforms/windows-forms-overview.md)  
- [My.Forms 개체](../../../visual-basic/language-reference/objects/my-forms-object.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
+- [Windows Forms 개요](../../../framework/winforms/windows-forms-overview.md)  
+- [My.Forms 개체](../../../visual-basic/language-reference/objects/my-forms-object.md)

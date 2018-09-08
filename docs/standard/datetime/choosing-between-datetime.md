@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 368884e7f61f4504c8ca714165c543b19b3a1171
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 54392ce12ca93d3a7979b1d0bbc78132773f88ce
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578263"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44176110"
 ---
 # <a name="choosing-between-datetime-datetimeoffset-timespan-and-timezoneinfo"></a>DateTime, DateTimeOffset, TimeSpan 및 TimeZoneInfo 중 선택
 
@@ -32,7 +32,7 @@ ms.locfileid: "33578263"
 
 * 특정 시간과 장소에 연결되지 않은 추상 날짜와 시간을 반영합니다(예: 국제 체인의 상점은 대부분 평일 오전 9:00에 열림).
 
-* .NET 외부 원본에서 날짜 및 시간 정보를 검색 하려면 데이터를 형식 날짜 및 시간 정보가 단순에 저장 된 위치에 일반적으로입니다.
+* .NET 외부 소스에서 날짜 및 시간 정보를 검색할 데이터를 형식 일반적으로 날짜 및 시간 정보가 저장 되는 간단 합니다.
 
 * 단일 시점을 고유하고 명확하게 식별합니다. 호스트 시스템에서만 날짜와 시간이 명확하면 되는 응용 프로그램도 있고, 시스템 간에 명확해야 하는 응용 프로그램도 있습니다(즉, 한 시스템에서 직렬화된 날짜를 다른 시스템에서 의미 있게 역직렬화하고 사용할 수 있음).
 
@@ -40,14 +40,14 @@ ms.locfileid: "33578263"
 
 * 날짜 및 시간 산술 연산을 수행합니다(단일 시점을 고유하고 명확하게 식별하는 결과를 제공할 수 있음).
 
-.NET이 포함 됩니다는 <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, 및 <xref:System.TimeZoneInfo> 날짜 및 시간을 사용 하는 응용 프로그램을 만들 데 사용할 수는 모두 형식입니다.
+.NET 포함 된 <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, 및 <xref:System.TimeZoneInfo> 형식 모두 날짜와 시간을 사용 하는 응용 프로그램을 빌드할 수.
 
 > [!NOTE]
 > 네 번째 형식 <xref:System.TimeZone>은 해당 기능이 <xref:System.TimeZoneInfo> 클래스에 거의 완전히 통합되었으므로 이 항목에서 설명하지 않습니다. 가능한 경우 개발자는 항상 <xref:System.TimeZoneInfo> 클래스 대신 <xref:System.TimeZone> 클래스를 사용해야 합니다.
 
 ## <a name="the-datetime-structure"></a>DateTime 구조체
 
-<xref:System.DateTime> 값은 특정 날짜와 시간을 정의합니다. 포함 된 <xref:System.DateTime.Kind%2A> 제공 하는 속성 제한 된 정보에 대 한 시간대에 해당 날짜와 시간이 속하는 표준입니다. <xref:System.DateTimeKind> 에서 반환 된 값은 <xref:System.DateTime.Kind%2A> 속성 표시 여부는 <xref:System.DateTime> 값은 현지 시간을 나타내는 (<xref:System.DateTimeKind.Local?displayProperty=nameWithType>), utc (협정 세계시) (<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), 또는 지정 되지 않은 시간 (<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>) 합니다.
+<xref:System.DateTime> 값은 특정 날짜와 시간을 정의합니다. 여기에 <xref:System.DateTime.Kind%2A> 제공 하는 속성 제한 하는 표준 시간대에 대 한 정보는 해당 날짜와 시간이 속한 표준입니다. <xref:System.DateTimeKind> 에서 반환 된 값을 <xref:System.DateTime.Kind%2A> 속성을 나타냅니다 여부를 <xref:System.DateTime> 값을 현지 시간을 나타내는 (<xref:System.DateTimeKind.Local?displayProperty=nameWithType>), utc (협정 세계시) (<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), 또는 지정 되지 않은 시간 (<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>).
 
 <xref:System.DateTime> 구조체는 다음을 수행하는 응용 프로그램에 적합합니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "33578263"
 
 <xref:System.DateTimeOffset> 구조체는 날짜 및 시간 값과 해당 값이 UTC와 다른 정도를 나타내는 오프셋을 나타냅니다. 따라서 값이 항상 단일 시점을 명확하게 식별합니다.
 
-<xref:System.DateTimeOffset> 형식에는 <xref:System.DateTime> 형식의 모든 기능과 표준 시간대 인식 기능이 포함됩니다. 이 통해 다음을 수행 하는 응용 프로그램에 적합 합니다.
+<xref:System.DateTimeOffset> 형식에는 <xref:System.DateTime> 형식의 모든 기능과 표준 시간대 인식 기능이 포함됩니다. 이렇게 하면 다음을 수행 하는 응용 프로그램에 적합 합니다.
 
 * 단일 시점을 고유하고 명확하게 식별합니다. <xref:System.DateTimeOffset> 형식을 통해 “now"의 의미를 명확하게 정의하고, 트랜잭션 시간을 기록하고, 시스템 또는 응용 프로그램 이벤트의 시간을 기록하고, 파일을 만든 시간과 수정 시간을 기록할 수 있습니다.
 
@@ -98,9 +98,9 @@ ms.locfileid: "33578263"
 
 * 두 개의 날짜 및 시간 값의 시간 간격을 반영합니다. 예를 들어 다른 값에서 <xref:System.DateTime> 값을 빼면 <xref:System.TimeSpan> 값이 반환됩니다.
 
-* 경과 시간을 측정합니다. 예를 들어는 <xref:System.Diagnostics.Stopwatch.Elapsed%2A?displayProperty=nameWithType> 속성 반환 하지 않습니다는 <xref:System.TimeSpan> 값 중 하나를 호출 이후에 경과 된 시간 간격을 반영 하는 <xref:System.Diagnostics.Stopwatch> 경과 시간 측정을 시작 하는 메서드.
+* 경과 시간을 측정합니다. 예를 들어,를 <xref:System.Diagnostics.Stopwatch.Elapsed%2A?displayProperty=nameWithType> 속성에서 반환을 <xref:System.TimeSpan> 중 하나를 호출한 이후 경과 된 시간 간격을 반영 하는 값을 <xref:System.Diagnostics.Stopwatch> 경과 시간 측정을 시작 하는 메서드.
 
-값이 하루 중 특정 시간을 참조하지 않고 시간을 반영하는 경우 <xref:System.TimeSpan> 값을 <xref:System.DateTime> 값 대신 사용할 수도 있습니다. 이 사용은 비슷합니다는 <xref:System.DateTime.TimeOfDay%2A?displayProperty=nameWithType> 및 <xref:System.DateTimeOffset.TimeOfDay%2A?displayProperty=nameWithType> 반환 하는 속성을 <xref:System.TimeSpan> 날짜를 참조 하지 않고 시간을 나타내는 값입니다. 예를 들어 <xref:System.TimeSpan> 구조체를 사용하여 매일 상점을 여는 시간 또는 닫는 시간을 반영하거나 정기 이벤트가 발생하는 시간을 나타낼 수 있습니다.
+값이 하루 중 특정 시간을 참조하지 않고 시간을 반영하는 경우 <xref:System.TimeSpan> 값을 <xref:System.DateTime> 값 대신 사용할 수도 있습니다. 이 사용량이 비슷합니다는 <xref:System.DateTime.TimeOfDay%2A?displayProperty=nameWithType> 및 <xref:System.DateTimeOffset.TimeOfDay%2A?displayProperty=nameWithType> 반환 하는 속성을 <xref:System.TimeSpan> 날짜를 참조 하지 않고 시간을 나타내는 값입니다. 예를 들어 <xref:System.TimeSpan> 구조체를 사용하여 매일 상점을 여는 시간 또는 닫는 시간을 반영하거나 정기 이벤트가 발생하는 시간을 나타낼 수 있습니다.
 
 다음 예제에서는 상점을 여는 시간과 닫는 시간에 사용되는 `StoreInfo` 개체와 상점의 표준 시간대를 나타내는 <xref:System.TimeSpan> 개체가 포함된 <xref:System.TimeZoneInfo> 구조체를 정의합니다. 구조체에는 현지 표준 시간대에 있는 것으로 가정되는 사용자가 지정한 시간에 상점이 열려 있는지 여부를 나타내는 `IsOpenNow` 및 `IsOpenAt`의 두 메서드도 포함됩니다.
 
@@ -116,10 +116,10 @@ ms.locfileid: "33578263"
 
 <xref:System.TimeZoneInfo> class represents any of the Earth's time zones, and enables the conversion of any date and time in one time zone to its equivalent in another time zone. <xref:System.TimeZoneInfo> 클래스를 사용하면 모든 날짜 및 시간 값이 명확하게 단일 시점을 식별하도록 날짜 및 시간 작업을 할 수 있습니다. <xref:System.TimeZoneInfo> 클래스는 확장도 가능합니다. Windows 시스템에 대해 제공되고 레지스트리에 정의된 표준 시간대 정보에 따라 달라지지만 사용자 지정 표준 시간대 생성을 지원합니다. 또한 표준 시간대 정보의 직렬화 및 역직렬화를 지원합니다.
 
-<xref:System.TimeZoneInfo> 클래스를 완전히 활용하기 위해 추가 개발 작업이 필요한 경우도 있습니다. 날짜 및 시간 값에 속한 것,이 추가 작업을 표준 시간대와 밀접 하 게 결합 된 경우가 필요 합니다. 날짜 및 시간을 관련된 표준 시간대와 연결 하기 위한 일부 메커니즘도 제공 하는 응용 프로그램을 하지 않는 한 특정 날짜 및 시간 값에서 표준 시간대에 끊어집니다 쉽습니다. 이 정보를 연결하는 한 가지 방법으로 날짜 및 시간 값, 그리고 연결되는 표준 시간대 개체를 둘 다 포함하는 클래스나 구조체를 정의합니다.
+<xref:System.TimeZoneInfo> 클래스를 완전히 활용하기 위해 추가 개발 작업이 필요한 경우도 있습니다. 이러한 속해에 추가 작업을 표준 시간대와 긴밀히 연결 되어 있지는 날짜 및 시간 값이 필요 합니다. 날짜 및 시간 관련 된 표준 시간대를 사용 하 여 연결에 대 한 몇 가지 메커니즘을 제공 하는 응용 프로그램, 하지 않는 한 해당 표준 시간대에서 분리 될 특정 날짜 및 시간 값에 대 한 쉽습니다. 이 정보를 연결하는 한 가지 방법으로 날짜 및 시간 값, 그리고 연결되는 표준 시간대 개체를 둘 다 포함하는 클래스나 구조체를 정의합니다.
 
 날짜 및 시간 개체를 인스턴스화할 때 날짜 및 시간 값이 속하는 표준 시간대가 알려진 경우에만 .NET의 표준 시간대 지원을 활용할 수 있습니다. 웹 또는 네트워크 응용 프로그램에서는 특히 알 수 없는 경우가 많습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)

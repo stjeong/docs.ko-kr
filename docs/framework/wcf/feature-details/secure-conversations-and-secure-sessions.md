@@ -5,11 +5,11 @@ ms.assetid: 48cb104a-532d-40ae-aa57-769dae103fda
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: d44a132f4bc4982ba0df437a56859de1a6fe441a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
-ms.translationtype: HT
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44060322"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44194751"
 ---
 # <a name="secure-conversations-and-secure-sessions"></a>보안 대화 및 보안 세션
 Windows Communication Foundation (WCF)의 기능은 서로 인증 하 고 암호화 및 디지털 서명 프로세스에 동의 하는 두 개의 끝점 사이 보안 세션을 설정 하는 기능입니다. 예를 들어, 서비스 엔드포인트는 인증을 위해 X.509 인증서에 기반한 보안 토큰을 보낼 클라이언트 엔드포인트가 필요할 수 있습니다. 클라이언트가 인증되면 서비스 엔드포인트는 세션 내의 모든 후속 메시지 보안을 설정하는 데 사용되는 클라이언트에게 SCT(보안 컨텍스트 토큰)를 다시 반환합니다. 이 보안 세션을 설정하면 SCT에 대칭 키가 포함되기 때문에 두 개의 엔드포인트 간에 교환되는 메시지 집합이 훨씬 효율적일 수 있습니다. X.509 인증서가 기준으로 하는 비대칭 키는 디지털 서명을 생성하거나 데이터 집합을 암호화할 때 대칭 키보다 훨씬 더 많은 계산 능력이 필요합니다.  

@@ -2,12 +2,12 @@
 title: 샘플 XML 문서(LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: a734cc4e-d95d-4631-91a2-81618c8ad894
-ms.openlocfilehash: f1860eed059de4b6922976da8d3b9190cf96bbed
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5ddfdd9c8b7114651cea59a0b356ee87f29bd62b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43884002"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44186788"
 ---
 # <a name="sample-xml-documents-linq-to-xml"></a>샘플 XML 문서(LINQ to XML)
 다음 예제 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서 전반의 코드 샘플과 코드 조각에서 사용됩니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "43884002"
 |[샘플 XML 파일: 테스트 구성(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md)|의사(pseudo) 테스트 구성 데이터가 포함된 XML 문서|  
 |[샘플 XML 파일: 네임스페이스에서 테스트 구성](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace.md)|의사(pseudo) 테스트 구성 데이터가 포함된 네임스페이스의 XML 문서|  
 |[샘플 XML 파일: Customers 및 Orders(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md)|고객과 주문이 포함된 XML 문서|  
-|[샘플 XSD 파일: Customers 및 Orders](../../../../visual-basic/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders.md)|[샘플 XML 파일: Customers 및 Orders(LINQ to XML)(LINQ to XML)](https://msdn.microsoft.com/library/26790c41-5976-4558-a096-d0f67bfc4d92)의 유효성을 검사하는 XSD(Xml Schema Definition)|  
+|[샘플 XSD 파일: Customers 및 Orders](../../../../visual-basic/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders.md)|[샘플 XML 파일: Customers 및 Orders(LINQ to XML)(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md)의 유효성을 검사하는 XSD(Xml Schema Definition)|  
 |[샘플 XML 파일: 네임스페이스의 Customers 및 Orders](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md)|고객과 주문이 포함된 네임스페이스의 XML 문서|  
 |[샘플 XML 파일: 숫자 데이터(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md)|합계를 구하고 그룹화하는 데 적합한 데이터가 포함된 XML 문서|  
 |[샘플 XML 파일: 네임스페이스의 숫자 데이터](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md)|합계를 구하고 그룹화하는 데 적합한 데이터가 포함된 네임스페이스의 XML 문서|  

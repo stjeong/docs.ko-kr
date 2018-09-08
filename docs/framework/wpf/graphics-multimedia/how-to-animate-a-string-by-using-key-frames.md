@@ -7,11 +7,11 @@ helpviewer_keywords:
 - key frames [WPF], animating strings with
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
 ms.openlocfilehash: 1b55afd5938073a326789e67b66fec9cfce12015
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43868525"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44189253"
 ---
 # <a name="how-to-animate-a-string-by-using-key-frames"></a>방법: 키 프레임을 사용하여 문자열에 애니메이션 효과 주기
 이 예제는 문자열에 애니메이션을 적용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.ContentControl.Content%2A> 의 속성을 <xref:System.Windows.Controls.Button> 키 프레임을 사용 하 여 컨트롤을 합니다.  

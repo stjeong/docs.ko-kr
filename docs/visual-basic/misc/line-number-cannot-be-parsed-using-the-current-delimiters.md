@@ -5,11 +5,11 @@ f1_keywords:
 - vbrTextFieldParser_MalFormedDelimitedLine
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
 ms.openlocfilehash: 47ab3dad8dc206acb0ef272ee86fe25365d2ac83
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44136006"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44193174"
 ---
 # <a name="line-ltnumbergt-cannot-be-parsed-using-the-current-delimiters"></a>줄 &lt;번호&gt; 현재 구분 기호를 사용 하 여 구문 분석할 수 없습니다
 지정된 것과 다른 구분 기호를 사용하기 때문에 지정한 줄을 구문 분석할 수 없습니다.  

@@ -3,11 +3,11 @@ title: '방법: 엔터프라이즈에서 엔드포인트 잠그기'
 ms.date: 03/30/2017
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d
 ms.openlocfilehash: 032b69c1fae38576b0374b329f1ab6fe90e2b1a0
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43806201"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44184391"
 ---
 # <a name="how-to-lock-down-endpoints-in-the-enterprise"></a>방법: 엔터프라이즈에서 엔드포인트 잠그기
 대형 엔터프라이즈에서는 응용 프로그램을 엔터프라이즈 보안 정책에 따라 개발해야 하는 경우가 종종 있습니다. 다음 항목에서는 개발 컴퓨터에 설치 된 모든 Windows Communication Foundation (WCF) 클라이언트 응용 프로그램의 유효성을 검사 하는 클라이언트 끝점 유효성 검사기를 설치 하는 방법을 설명 합니다.  
