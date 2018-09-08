@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 623700161ae4587daeb2c7348055d413512f7c87
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: f5d106dd3b7b9a7a0aeedca86e63a6fccbb1cc27
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43805639"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192486"
 ---
 # <a name="handling-and-raising-events"></a>이벤트 처리 및 발생
 .NET Framework에서 이벤트는 대리자 모델을 기반으로 합니다. 대리자 모델은 구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 관찰자 디자인 패턴을 따릅니다. 이벤트 전송자는 이벤트가 발생했음을 알리고, 이벤트 수신자는 해당 알림을 수신하고 그에 대한 응답을 정의합니다. 이 문서에서는 대리자 모델의 주요 구성 요소, 응용 프로그램에서 이벤트를 사용하는 방법 및 코드에서 이벤트를 구현하는 방법에 대해 설명합니다.  
@@ -87,11 +87,12 @@ ms.locfileid: "43805639"
 |[관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)|구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 디자인 패턴에 대해 설명합니다.|  
 |[방법: Web Forms 응용 프로그램에서 이벤트 사용](../../../docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)|Web Forms 컨트롤에서 발생한 이벤트를 처리하는 방법을 보여 줍니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.EventHandler>  
- <xref:System.EventHandler%601>  
- <xref:System.EventArgs>  
- <xref:System.Delegate>  
- [이벤트 및 라우팅 이벤트 개요(UWP 앱)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
- [이벤트(Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
- [이벤트(C# 프로그래밍 가이드)](../../csharp/programming-guide/events/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.EventHandler>  
+- <xref:System.EventHandler%601>  
+- <xref:System.EventArgs>  
+- <xref:System.Delegate>  
+- [이벤트 및 라우팅 이벤트 개요(UWP 앱)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
+- [이벤트(Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
+- [이벤트(C# 프로그래밍 가이드)](../../csharp/programming-guide/events/index.md)

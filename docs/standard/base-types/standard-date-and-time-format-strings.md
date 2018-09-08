@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cfa44187d846c72f0dfd4fb131cacbe41648dd32
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: abb38e4f084575665954bc514584feed760b0666
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "33579810"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44207644"
 ---
 # <a name="standard-date-and-time-format-strings"></a>표준 날짜 및 시간 형식 문자열
 표준 날짜 및 시간 서식 문자열은 단일 서식 지정자를 사용하여 날짜 및 시간 값의 텍스트 표현을 정의합니다. 공백을 포함하여 문자가 두 개 이상 포함된 날짜 및 시간 서식 문자열은 사용자 지정 날짜 및 시간 서식 문자열로 해석됩니다. 자세한 내용은 [사용자 지정 날짜 및 시간 서식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)을 참조하세요. 표준 또는 사용자 지정 서식 문자열은 다음 두 가지 방법으로 사용할 수 있습니다.  
@@ -413,9 +413,10 @@ ms.locfileid: "33579810"
 ### <a name="datetimeformatinfo-properties"></a>DateTimeFormatInfo 속성  
  형식은 현재 스레드 문화권에 의해 암시적으로 제공되거나 형식 지정 작업을 호출하는 메서드의 <xref:System.Globalization.DateTimeFormatInfo> 매개 변수에 의해 명시적으로 제공되는 현재 <xref:System.IFormatProvider> 개체의 속성에 따라 영향을 받습니다. <xref:System.IFormatProvider> 매개 변수에 대해 응용 프로그램에서는 문화권을 나타내는 <xref:System.Globalization.CultureInfo> 개체를 지정하거나 특정 문화권의 날짜 및 시간 서식 지정 규칙을 나타내는 <xref:System.Globalization.DateTimeFormatInfo> 개체를 지정해야 합니다. 대부분의 표준 날짜 및 시간 서식 지정자는 현재 <xref:System.Globalization.DateTimeFormatInfo> 개체의 속성으로 정의된 서식 지정 패턴의 별칭입니다. 따라서 응용 프로그램에서는 해당 <xref:System.Globalization.DateTimeFormatInfo> 속성의 날짜 및 시간 서식 패턴을 변경하여 일부 표준 날짜 및 시간 서식 지정자로 생성되는 결과를 변경할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.DateTime?displayProperty=nameWithType>  
- <xref:System.DateTimeOffset?displayProperty=nameWithType>  
- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
- [샘플: .NET Framework 4 서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.DateTime?displayProperty=nameWithType>  
+- <xref:System.DateTimeOffset?displayProperty=nameWithType>  
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
+- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+- [샘플: .NET Framework 4 서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

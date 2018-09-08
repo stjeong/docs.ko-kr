@@ -13,11 +13,11 @@ ms.assetid: ba72d648-9553-4849-b829-069ad5ea014b
 author: ghogen
 manager: douge
 ms.openlocfilehash: 2c7fb148b96d5ff9804bcb0bb7c842c475c0f117
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "43886411"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44207098"
 ---
 # <a name="developing-windows-service-applications"></a>Windows 서비스 응용 프로그램 개발
 Microsoft Visual Studio나 Microsoft [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] SDK를 사용하면 서비스로 설치되는 응용 프로그램을 만들어 서비스를 쉽게 만들 수 있습니다. 이 유형의 응용 프로그램을 Windows 서비스라고 합니다. 프레임워크 기능을 사용하여 서비스를 만들고 설치하고 시작 및 중지할 수 있으며 서비스 동작을 제어할 수도 있습니다.  
