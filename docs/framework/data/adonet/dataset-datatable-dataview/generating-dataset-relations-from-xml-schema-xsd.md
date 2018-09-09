@@ -3,11 +3,11 @@ title: XSD(XML 스키마)에서 데이터 집합 관계 생성
 ms.date: 03/30/2017
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
 ms.openlocfilehash: 7c73dcec3d23b094436791af6649de83b9eacad9
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44076334"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44251643"
 ---
 # <a name="generating-dataset-relations-from-xml-schema-xsd"></a>XSD(XML 스키마)에서 데이터 집합 관계 생성
 <xref:System.Data.DataSet>에서는 부모-자식 관계를 만들어 둘 이상의 열을 연결시킵니다. 나타내는 세 가지는 **데이터 집합** XML 스키마 정의 언어 (XSD) 스키마 내의 관계:  

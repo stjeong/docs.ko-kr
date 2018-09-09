@@ -18,11 +18,11 @@ helpviewer_keywords:
 - OnSerializingAttribute class, custom serialization
 ms.assetid: 12ed422d-5280-49b8-9b71-a2ed129c0384
 ms.openlocfilehash: 6151bf670a455d4c9862e80fd06314e4e1621080
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44130356"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44225661"
 ---
 # <a name="custom-serialization"></a>사용자 지정 serialization
 사용자 지정 serialization은 형식의 serialization 및 deserialization을 제어하는 프로세스입니다. serialization을 제어하면 형식의 핵심 기능에 영향을 주지 않고 다양한 형식 사이에 직렬화 및 deserialize할 수 있는 기능인 직렬화 호환성을 유지할 수 있습니다. 예를 들어 첫 번째 버전의 형식에는 두 개의 필드만 있을 수 있습니다. 다음 버전의 형식에는 몇 개의 필드가 더 추가될 수 있습니다. 하지만 응용 프로그램의 두 번째 버전에서는 여전히 두 형식을 모두 serialize 및 deserialize할 수 있어야 합니다. 다음 단원에서는 serialization을 제어하는 방법에 대해 설명합니다.

@@ -9,11 +9,11 @@ ms.assetid: f7bd1361-4ab2-4132-972d-a044b8f197e1
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: d41ba0c1e972eeee07b36ad0d15532f7b551ec2a
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44172946"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44228054"
 ---
 # <a name="common-design-patterns"></a>일반 디자인 패턴
 서적 소프트웨어 패턴, 패턴 언어 및 패턴의 매우 광범위 한 주제를 다루는 안티패턴 가지가 있습니다. 따라서이 장에서 지침 및.NET Framework Api의 디자인에서 자주 사용 되는 패턴의 매우 제한 된 집합에 관련 된 토론을 제공 합니다.  

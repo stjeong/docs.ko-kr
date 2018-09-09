@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], programming
 ms.assetid: 3ae3d498-f43c-4ecc-8cc0-6cbe36b62593
 ms.openlocfilehash: 7095784c2c9e2dc3c0ebafe84b89f9657321e1c5
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44060517"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44225232"
 ---
 # <a name="basic-wcf-programming"></a>기본 WCF 프로그래밍
 이 섹션에서는 Windows Communication Foundation (WCF) 응용 프로그램을 만들기 위한 기초를 제공 합니다.  

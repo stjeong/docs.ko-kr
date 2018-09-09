@@ -8,11 +8,11 @@ helpviewer_keywords:
 - drawing [WPF], closed shapes with Polygon elements
 ms.assetid: 4b0ca008-29ce-48dd-8bc3-f3a20ffca6a6
 ms.openlocfilehash: 89c78877e196e803f6b4139ffcfa2b4def1a07d7
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44076084"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227820"
 ---
 # <a name="how-to-draw-a-closed-shape-by-using-the-polygon-element"></a>방법: Polygon 요소를 사용하여 닫힌 도형 그리기
 이 예제에서는 사용 하 여 닫힌된 도형 그리기를 <xref:System.Windows.Shapes.Polygon> 요소입니다. 닫힌된 도형 그리기, 만들려면를 <xref:System.Windows.Shapes.Polygon> 요소 및 사용 하 여 해당 <xref:System.Windows.Shapes.Polygon.Points%2A> 도형의 꼭지점을 지정 하는 속성입니다. 줄의 첫 번째 및 마지막 지점을 연결 하는 그려집니다 자동으로. 마지막으로, 지정 된 <xref:System.Windows.Shapes.Shape.Fill%2A>, <xref:System.Windows.Shapes.Shape.Stroke%2A>, 또는 둘 다.  
