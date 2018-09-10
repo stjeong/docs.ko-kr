@@ -7,18 +7,18 @@ helpviewer_keywords:
 - '#undef directive [C#]'
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
 ms.openlocfilehash: 3957d58f61e51fab01618f5e1146be9cd0da58fd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43467148"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44185969"
 ---
-# <a name="undef-c-reference"></a><span data-ttu-id="39fe1-102">#undef(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="39fe1-102">#undef (C# Reference)</span></span>
-<span data-ttu-id="39fe1-103">`#undef`를 사용하면 기호의 정의를 해제할 수 있습니다. 그러면 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) 지시문에서 해당 기호를 식으로 사용하여 식이 `false`로 평가됩니다.</span><span class="sxs-lookup"><span data-stu-id="39fe1-103">`#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive, the expression will evaluate to `false`.</span></span>  
+# <a name="undef-c-reference"></a><span data-ttu-id="23f2e-102">#undef(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="23f2e-102">#undef (C# Reference)</span></span>
+<span data-ttu-id="23f2e-103">`#undef`를 사용하면 기호의 정의를 해제할 수 있습니다. 그러면 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) 지시문에서 해당 기호를 식으로 사용하여 식이 `false`로 평가됩니다.</span><span class="sxs-lookup"><span data-stu-id="23f2e-103">`#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive, the expression will evaluate to `false`.</span></span>  
   
- <span data-ttu-id="39fe1-104">[#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md) 지시문 또는 [-define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) 컴파일러 옵션을 사용하여 기호를 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="39fe1-104">A symbol can be defined either with the [#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md) directive or the [-define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option.</span></span> <span data-ttu-id="39fe1-105">`#undef` 지시문은 지시문이 아닌 문을 사용하기 전에 파일에 나와야 합니다.</span><span class="sxs-lookup"><span data-stu-id="39fe1-105">The `#undef` directive must appear in the file before you use any statements that are not also directives.</span></span>  
+ <span data-ttu-id="23f2e-104">[#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md) 지시문 또는 [-define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) 컴파일러 옵션을 사용하여 기호를 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="23f2e-104">A symbol can be defined either with the [#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md) directive or the [-define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option.</span></span> <span data-ttu-id="23f2e-105">`#undef` 지시문은 지시문이 아닌 문을 사용하기 전에 파일에 나와야 합니다.</span><span class="sxs-lookup"><span data-stu-id="23f2e-105">The `#undef` directive must appear in the file before you use any statements that are not also directives.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="39fe1-106">예</span><span class="sxs-lookup"><span data-stu-id="39fe1-106">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="23f2e-106">예</span><span class="sxs-lookup"><span data-stu-id="23f2e-106">Example</span></span>  
 
 ```csharp
 // preprocessor_undef.cs  
@@ -38,10 +38,10 @@ class MyClass
 }  
 ```
 
-<span data-ttu-id="39fe1-107">**디버그가 정의되어 있지 않습니다.**</span><span class="sxs-lookup"><span data-stu-id="39fe1-107">**DEBUG is not defined**</span></span>
+<span data-ttu-id="23f2e-107">**디버그가 정의되어 있지 않습니다.**</span><span class="sxs-lookup"><span data-stu-id="23f2e-107">**DEBUG is not defined**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="39fe1-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="39fe1-108">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="23f2e-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="23f2e-108">See Also</span></span>
 
-- [<span data-ttu-id="39fe1-109">C# 참조</span><span class="sxs-lookup"><span data-stu-id="39fe1-109">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="39fe1-110">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="39fe1-110">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="39fe1-111">C# 전처리기 지시문</span><span class="sxs-lookup"><span data-stu-id="39fe1-111">C# Preprocessor Directives</span></span>](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [<span data-ttu-id="23f2e-109">C# 참조</span><span class="sxs-lookup"><span data-stu-id="23f2e-109">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="23f2e-110">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="23f2e-110">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="23f2e-111">C# 전처리기 지시문</span><span class="sxs-lookup"><span data-stu-id="23f2e-111">C# Preprocessor Directives</span></span>](../../../csharp/language-reference/preprocessor-directives/index.md)
