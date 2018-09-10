@@ -2,20 +2,20 @@
 title: Office Open XML 문서 부분을 출력하는 예제(C#)
 ms.date: 07/20/2015
 ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
-ms.openlocfilehash: e63f6eafb32a6426d6c3fd7296c0e8fa6595efee
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5dd8e4238ff4015130160b5297f807d79013ce7b
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325372"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43505673"
 ---
-# <a name="example-that-outputs-office-open-xml-document-parts-c"></a><span data-ttu-id="c77da-102">Office Open XML 문서 부분을 출력하는 예제(C#)</span><span class="sxs-lookup"><span data-stu-id="c77da-102">Example that Outputs Office Open XML Document Parts (C#)</span></span>
-<span data-ttu-id="c77da-103">이 항목에서는 Office Open XML 문서를 열고 문서 안의 부분에 액세스하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c77da-103">This topic shows how to open an Office Open XML document and access parts within it.</span></span>  
+# <a name="example-that-outputs-office-open-xml-document-parts-c"></a><span data-ttu-id="4198e-102">Office Open XML 문서 부분을 출력하는 예제(C#)</span><span class="sxs-lookup"><span data-stu-id="4198e-102">Example that Outputs Office Open XML Document Parts (C#)</span></span>
+<span data-ttu-id="4198e-103">이 항목에서는 Office Open XML 문서를 열고 문서 안의 부분에 액세스하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4198e-103">This topic shows how to open an Office Open XML document and access parts within it.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="c77da-104">예</span><span class="sxs-lookup"><span data-stu-id="c77da-104">Example</span></span>  
- <span data-ttu-id="c77da-105">다음 예제에서는 Office Open XML 문서를 열고 문서 부분과 스타일 부분을 콘솔에 출력합니다.</span><span class="sxs-lookup"><span data-stu-id="c77da-105">The following example opens an Office Open XML document, and prints the document part and the style part to the console.</span></span>  
+## <a name="example"></a><span data-ttu-id="4198e-104">예</span><span class="sxs-lookup"><span data-stu-id="4198e-104">Example</span></span>  
+ <span data-ttu-id="4198e-105">다음 예제에서는 Office Open XML 문서를 열고 문서 부분과 스타일 부분을 콘솔에 출력합니다.</span><span class="sxs-lookup"><span data-stu-id="4198e-105">The following example opens an Office Open XML document, and prints the document part and the style part to the console.</span></span>  
   
- <span data-ttu-id="c77da-106">이 예제에서는 WindowsBase 어셈블리의 클래스를 사용하고</span><span class="sxs-lookup"><span data-stu-id="c77da-106">This example uses classes from the WindowsBase assembly.</span></span> <span data-ttu-id="c77da-107"><xref:System.IO.Packaging?displayProperty=nameWithType> 네임스페이스의 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="c77da-107">It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.</span></span>  
+ <span data-ttu-id="4198e-106">이 예제에서는 WindowsBase 어셈블리의 클래스를 사용하고</span><span class="sxs-lookup"><span data-stu-id="4198e-106">This example uses classes from the WindowsBase assembly.</span></span> <span data-ttu-id="4198e-107"><xref:System.IO.Packaging?displayProperty=nameWithType> 네임스페이스의 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="4198e-107">It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.</span></span>  
   
 ```csharp  
 const string fileName = "SampleDoc.docx";  
@@ -66,5 +66,6 @@ using (Package wdPackage = Package.Open(fileName, FileMode.Open, FileAccess.Read
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="c77da-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c77da-108">See Also</span></span>  
- [<span data-ttu-id="c77da-109">Office Open XML WordprocessingML 문서 정보(C#)</span><span class="sxs-lookup"><span data-stu-id="c77da-109">Details of Office Open XML WordprocessingML Documents (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+## <a name="see-also"></a><span data-ttu-id="4198e-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4198e-108">See Also</span></span>
+
+- [<span data-ttu-id="4198e-109">Office Open XML WordprocessingML 문서 정보(C#)</span><span class="sxs-lookup"><span data-stu-id="4198e-109">Details of Office Open XML WordprocessingML Documents (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

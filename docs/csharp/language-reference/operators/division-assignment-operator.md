@@ -8,37 +8,37 @@ helpviewer_keywords:
 - /= (division assignment operator) [C#]
 ms.assetid: 50fc02b0-ee9c-4c3e-b58d-d591282caf1c
 ms.openlocfilehash: 8fff048cc441181aa3f0e3c0c638d501aaf9de3f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43477947"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526310"
 ---
-# <a name="-operator-c-reference"></a><span data-ttu-id="e2645-102">/= 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="e2645-102">/= Operator (C# Reference)</span></span>
-<span data-ttu-id="e2645-103">나누기 대입 연산자입니다.</span><span class="sxs-lookup"><span data-stu-id="e2645-103">The division assignment operator.</span></span>  
+# <a name="-operator-c-reference"></a><span data-ttu-id="7bd74-102">/= 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="7bd74-102">/= Operator (C# Reference)</span></span>
+<span data-ttu-id="7bd74-103">나누기 대입 연산자입니다.</span><span class="sxs-lookup"><span data-stu-id="7bd74-103">The division assignment operator.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="e2645-104">설명</span><span class="sxs-lookup"><span data-stu-id="e2645-104">Remarks</span></span>  
- <span data-ttu-id="e2645-105">다음과 같은 `/=` 대입 연산자를 사용하는 식의 경우</span><span class="sxs-lookup"><span data-stu-id="e2645-105">An expression using the `/=` assignment operator, such as</span></span>  
+## <a name="remarks"></a><span data-ttu-id="7bd74-104">설명</span><span class="sxs-lookup"><span data-stu-id="7bd74-104">Remarks</span></span>  
+ <span data-ttu-id="7bd74-105">다음과 같은 `/=` 대입 연산자를 사용하는 식의 경우</span><span class="sxs-lookup"><span data-stu-id="7bd74-105">An expression using the `/=` assignment operator, such as</span></span>  
   
 ```csharp  
 x /= y  
 ```  
   
- <span data-ttu-id="e2645-106">위의 식은 아래의 식과 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="e2645-106">is equivalent to</span></span>  
+ <span data-ttu-id="7bd74-106">위의 식은 아래의 식과 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="7bd74-106">is equivalent to</span></span>  
   
 ```csharp  
 x = x / y  
 ```  
   
- <span data-ttu-id="e2645-107">단, `x`가 한 번만 계산됩니다.</span><span class="sxs-lookup"><span data-stu-id="e2645-107">except that `x` is only evaluated once.</span></span> <span data-ttu-id="e2645-108">[/ 연산자](../../../csharp/language-reference/operators/division-operator.md)는 나누기를 수행할 숫자 형식에 대해 미리 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e2645-108">The [/ operator](../../../csharp/language-reference/operators/division-operator.md) is predefined for numeric types to perform division.</span></span>  
+ <span data-ttu-id="7bd74-107">단, `x`가 한 번만 계산됩니다.</span><span class="sxs-lookup"><span data-stu-id="7bd74-107">except that `x` is only evaluated once.</span></span> <span data-ttu-id="7bd74-108">[/ 연산자](../../../csharp/language-reference/operators/division-operator.md)는 나누기를 수행할 숫자 형식에 대해 미리 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7bd74-108">The [/ operator](../../../csharp/language-reference/operators/division-operator.md) is predefined for numeric types to perform division.</span></span>  
   
- <span data-ttu-id="e2645-109">`/=` 연산자를 직접 오버로드할 수는 없지만 사용자 정의 형식은 [/ 연산자](../../../csharp/language-reference/operators/division-operator.md)를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조).</span><span class="sxs-lookup"><span data-stu-id="e2645-109">The `/=` operator cannot be overloaded directly, but user-defined types can overload the [/ operator](../../../csharp/language-reference/operators/division-operator.md) (see [operator](../../../csharp/language-reference/keywords/operator.md)).</span></span> <span data-ttu-id="e2645-110">모든 복합 대입 연산자에서 이진 연산자를 암시적으로 오버로드하면 해당하는 복합 대입 연산자가 오버로드됩니다.</span><span class="sxs-lookup"><span data-stu-id="e2645-110">On all compound assignment operators, overloading the binary operator implicitly overloads the equivalent compound assignment.</span></span>  
+ <span data-ttu-id="7bd74-109">`/=` 연산자를 직접 오버로드할 수는 없지만 사용자 정의 형식은 [/ 연산자](../../../csharp/language-reference/operators/division-operator.md)를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조).</span><span class="sxs-lookup"><span data-stu-id="7bd74-109">The `/=` operator cannot be overloaded directly, but user-defined types can overload the [/ operator](../../../csharp/language-reference/operators/division-operator.md) (see [operator](../../../csharp/language-reference/keywords/operator.md)).</span></span> <span data-ttu-id="7bd74-110">모든 복합 대입 연산자에서 이진 연산자를 암시적으로 오버로드하면 해당하는 복합 대입 연산자가 오버로드됩니다.</span><span class="sxs-lookup"><span data-stu-id="7bd74-110">On all compound assignment operators, overloading the binary operator implicitly overloads the equivalent compound assignment.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="e2645-111">예</span><span class="sxs-lookup"><span data-stu-id="e2645-111">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="7bd74-111">예</span><span class="sxs-lookup"><span data-stu-id="7bd74-111">Example</span></span>  
  [!code-csharp[csRefOperators#5](codesnippet/CSharp/division-assignment-operator_1.cs)]  
   
-## <a name="see-also"></a><span data-ttu-id="e2645-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e2645-112">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7bd74-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7bd74-112">See Also</span></span>
 
-- [<span data-ttu-id="e2645-113">C# 참조</span><span class="sxs-lookup"><span data-stu-id="e2645-113">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="e2645-114">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="e2645-114">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="e2645-115">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="e2645-115">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)
+- [<span data-ttu-id="7bd74-113">C# 참조</span><span class="sxs-lookup"><span data-stu-id="7bd74-113">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="7bd74-114">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="7bd74-114">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="7bd74-115">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="7bd74-115">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - const keyword [C#]
 ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
 ms.openlocfilehash: f586b6d097a8592fd74e92df7886b519d623e478
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43393007"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43513386"
 ---
-# <a name="const-c-reference"></a><span data-ttu-id="0ab6c-102">const(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="0ab6c-102">const (C# Reference)</span></span>
+# <a name="const-c-reference"></a><span data-ttu-id="31696-102">const(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="31696-102">const (C# Reference)</span></span>
 
-<span data-ttu-id="0ab6c-103">상수 필드 또는 지역 상수를 선언할 때는 `const` 키워드를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-103">You use the `const` keyword to declare a constant field or a constant local.</span></span> <span data-ttu-id="0ab6c-104">상수 필드 및 지역 상수는 변수가 아니며 수정할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-104">Constant fields and locals aren't variables and may not be modified.</span></span> <span data-ttu-id="0ab6c-105">상수는 숫자, 부울 값, 문자열 또는 null 참조일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-105">Constants can be numbers, Boolean values, strings, or a null reference.</span></span> <span data-ttu-id="0ab6c-106">언제든지 변경될 수 있는 정보를 나타낼 때는 상수를 만들지 마세요.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-106">Don’t create a constant to represent information that you expect to change at any time.</span></span> <span data-ttu-id="0ab6c-107">예를 들어, 상수 필드를 사용하여 서비스의 가격, 제품 버전 번호 또는 회사의 브랜드 이름을 저장하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-107">For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company.</span></span> <span data-ttu-id="0ab6c-108">이러한 값은 시간이 지남에 따라 변경될 수 있으며, 컴파일러는 상수를 전파하므로 변경 내용을 보기 위해서는 라이브러리를 사용하여 컴파일된 다른 코드를 다시 컴파일해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-108">These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes.</span></span> <span data-ttu-id="0ab6c-109">[readonly](../../../csharp/language-reference/keywords/readonly.md) 키워드를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-109">See also the [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword.</span></span> <span data-ttu-id="0ab6c-110">예:</span><span class="sxs-lookup"><span data-stu-id="0ab6c-110">For example:</span></span>
+<span data-ttu-id="31696-103">상수 필드 또는 지역 상수를 선언할 때는 `const` 키워드를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="31696-103">You use the `const` keyword to declare a constant field or a constant local.</span></span> <span data-ttu-id="31696-104">상수 필드 및 지역 상수는 변수가 아니며 수정할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-104">Constant fields and locals aren't variables and may not be modified.</span></span> <span data-ttu-id="31696-105">상수는 숫자, 부울 값, 문자열 또는 null 참조일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-105">Constants can be numbers, Boolean values, strings, or a null reference.</span></span> <span data-ttu-id="31696-106">언제든지 변경될 수 있는 정보를 나타낼 때는 상수를 만들지 마세요.</span><span class="sxs-lookup"><span data-stu-id="31696-106">Don’t create a constant to represent information that you expect to change at any time.</span></span> <span data-ttu-id="31696-107">예를 들어, 상수 필드를 사용하여 서비스의 가격, 제품 버전 번호 또는 회사의 브랜드 이름을 저장하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="31696-107">For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company.</span></span> <span data-ttu-id="31696-108">이러한 값은 시간이 지남에 따라 변경될 수 있으며, 컴파일러는 상수를 전파하므로 변경 내용을 보기 위해서는 라이브러리를 사용하여 컴파일된 다른 코드를 다시 컴파일해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="31696-108">These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes.</span></span> <span data-ttu-id="31696-109">[readonly](../../../csharp/language-reference/keywords/readonly.md) 키워드를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="31696-109">See also the [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword.</span></span> <span data-ttu-id="31696-110">예:</span><span class="sxs-lookup"><span data-stu-id="31696-110">For example:</span></span>
 
 ```csharp
 const int x = 0;
@@ -24,21 +24,21 @@ public const double gravitationalConstant = 6.673e-11;
 private const string productName = "Visual C#";
 ```
 
-## <a name="remarks"></a><span data-ttu-id="0ab6c-111">설명</span><span class="sxs-lookup"><span data-stu-id="0ab6c-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="31696-111">설명</span><span class="sxs-lookup"><span data-stu-id="31696-111">Remarks</span></span>
 
-<span data-ttu-id="0ab6c-112">상수 선언 형식은 선언에서 제공하는 멤버의 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-112">The type of a constant declaration specifies the type of the members that the declaration introduces.</span></span> <span data-ttu-id="0ab6c-113">지역 상수 또는 상수 필드의 이니셜라이저는 대상 형식으로 암시적으로 변환될 수 있는 상수 식이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-113">The initializer of a constant local or a constant field must be a constant expression that can be implicitly converted to the target type.</span></span>
+<span data-ttu-id="31696-112">상수 선언 형식은 선언에서 제공하는 멤버의 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="31696-112">The type of a constant declaration specifies the type of the members that the declaration introduces.</span></span> <span data-ttu-id="31696-113">지역 상수 또는 상수 필드의 이니셜라이저는 대상 형식으로 암시적으로 변환될 수 있는 상수 식이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="31696-113">The initializer of a constant local or a constant field must be a constant expression that can be implicitly converted to the target type.</span></span>
 
-<span data-ttu-id="0ab6c-114">상수 식은 컴파일 시간에 완전히 계산될 수 있는 식입니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-114">A constant expression is an expression that can be fully evaluated at compile time.</span></span> <span data-ttu-id="0ab6c-115">따라서 참조 형식의 상수에 대해 가능한 값은 `string` 및 null 참조뿐입니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-115">Therefore, the only possible values for constants of reference types are `string` and a null reference.</span></span>
+<span data-ttu-id="31696-114">상수 식은 컴파일 시간에 완전히 계산될 수 있는 식입니다.</span><span class="sxs-lookup"><span data-stu-id="31696-114">A constant expression is an expression that can be fully evaluated at compile time.</span></span> <span data-ttu-id="31696-115">따라서 참조 형식의 상수에 대해 가능한 값은 `string` 및 null 참조뿐입니다.</span><span class="sxs-lookup"><span data-stu-id="31696-115">Therefore, the only possible values for constants of reference types are `string` and a null reference.</span></span>
 
-<span data-ttu-id="0ab6c-116">상수 선언에서는 다음과 같이 여러 상수를 선언할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-116">The constant declaration can declare multiple constants, such as:</span></span>
+<span data-ttu-id="31696-116">상수 선언에서는 다음과 같이 여러 상수를 선언할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-116">The constant declaration can declare multiple constants, such as:</span></span>
 
 ```csharp
 public const double x = 1.0, y = 2.0, z = 3.0;
 ```
 
-<span data-ttu-id="0ab6c-117">`static` 한정자는 상수 선언에는 허용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-117">The `static` modifier is not allowed in a constant declaration.</span></span>
+<span data-ttu-id="31696-117">`static` 한정자는 상수 선언에는 허용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-117">The `static` modifier is not allowed in a constant declaration.</span></span>
 
-<span data-ttu-id="0ab6c-118">상수는 다음과 같이 상수 식에 참여할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-118">A constant can participate in a constant expression, as follows:</span></span>
+<span data-ttu-id="31696-118">상수는 다음과 같이 상수 식에 참여할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-118">A constant can participate in a constant expression, as follows:</span></span>
 
 ```csharp
 public const int c1 = 5;
@@ -46,26 +46,26 @@ public const int c2 = c1 + 100;
 ```
 
 > [!NOTE]
-> <span data-ttu-id="0ab6c-119">[readonly](../../../csharp/language-reference/keywords/readonly.md) 키워드는 `const` 키워드와 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-119">The [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword differs from the `const` keyword.</span></span> <span data-ttu-id="0ab6c-120">`const` 필드는 필드 선언에서만 초기화될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-120">A `const` field can only be initialized at the declaration of the field.</span></span> <span data-ttu-id="0ab6c-121">`readonly` 필드는 선언이나 생성자에서 초기화될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-121">A `readonly` field can be initialized either at the declaration or in a constructor.</span></span> <span data-ttu-id="0ab6c-122">따라서 `readonly` 필드는 사용된 생성자에 따라 다른 값을 가질 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-122">Therefore, `readonly` fields can have different values depending on the constructor used.</span></span> <span data-ttu-id="0ab6c-123">또한 `const` 필드가 컴파일 시간 상수라고 하더라도 `readonly` 필드는 다음 줄에서와 같이 런타임 상수에 사용될 수 있습니다. `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`</span><span class="sxs-lookup"><span data-stu-id="0ab6c-123">Also, although a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants, as in this line: `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`</span></span>
+> <span data-ttu-id="31696-119">[readonly](../../../csharp/language-reference/keywords/readonly.md) 키워드는 `const` 키워드와 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="31696-119">The [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword differs from the `const` keyword.</span></span> <span data-ttu-id="31696-120">`const` 필드는 필드 선언에서만 초기화될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-120">A `const` field can only be initialized at the declaration of the field.</span></span> <span data-ttu-id="31696-121">`readonly` 필드는 선언이나 생성자에서 초기화될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-121">A `readonly` field can be initialized either at the declaration or in a constructor.</span></span> <span data-ttu-id="31696-122">따라서 `readonly` 필드는 사용된 생성자에 따라 다른 값을 가질 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31696-122">Therefore, `readonly` fields can have different values depending on the constructor used.</span></span> <span data-ttu-id="31696-123">또한 `const` 필드가 컴파일 시간 상수라고 하더라도 `readonly` 필드는 다음 줄에서와 같이 런타임 상수에 사용될 수 있습니다. `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`</span><span class="sxs-lookup"><span data-stu-id="31696-123">Also, although a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants, as in this line: `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`</span></span>
 
-## <a name="example"></a><span data-ttu-id="0ab6c-124">예</span><span class="sxs-lookup"><span data-stu-id="0ab6c-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="31696-124">예</span><span class="sxs-lookup"><span data-stu-id="31696-124">Example</span></span>
 
 [!code-csharp[csrefKeywordsModifiers#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#5)]
 
-## <a name="example"></a><span data-ttu-id="0ab6c-125">예</span><span class="sxs-lookup"><span data-stu-id="0ab6c-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="31696-125">예</span><span class="sxs-lookup"><span data-stu-id="31696-125">Example</span></span>
 
-<span data-ttu-id="0ab6c-126">이 예제에서는 상수를 지역 변수로 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="0ab6c-126">This example demonstrates how to use constants as local variables.</span></span>
+<span data-ttu-id="31696-126">이 예제에서는 상수를 지역 변수로 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="31696-126">This example demonstrates how to use constants as local variables.</span></span>
 
 [!code-csharp[csrefKeywordsModifiers#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#6)]
 
-## <a name="c-language-specification"></a><span data-ttu-id="0ab6c-127">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="0ab6c-127">C# language specification</span></span>
+## <a name="c-language-specification"></a><span data-ttu-id="31696-127">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="31696-127">C# language specification</span></span>
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a><span data-ttu-id="0ab6c-128">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0ab6c-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="31696-128">참고 항목</span><span class="sxs-lookup"><span data-stu-id="31696-128">See also</span></span>
 
-- [<span data-ttu-id="0ab6c-129">C# 참조</span><span class="sxs-lookup"><span data-stu-id="0ab6c-129">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="0ab6c-130">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="0ab6c-130">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="0ab6c-131">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="0ab6c-131">C# Keywords</span></span>](../../../csharp/language-reference/keywords/index.md)  
-- [<span data-ttu-id="0ab6c-132">한정자</span><span class="sxs-lookup"><span data-stu-id="0ab6c-132">Modifiers</span></span>](../../../csharp/language-reference/keywords/modifiers.md)  
-- [<span data-ttu-id="0ab6c-133">readonly</span><span class="sxs-lookup"><span data-stu-id="0ab6c-133">readonly</span></span>](../../../csharp/language-reference/keywords/readonly.md)
+- [<span data-ttu-id="31696-129">C# 참조</span><span class="sxs-lookup"><span data-stu-id="31696-129">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="31696-130">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="31696-130">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="31696-131">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="31696-131">C# Keywords</span></span>](../../../csharp/language-reference/keywords/index.md)  
+- [<span data-ttu-id="31696-132">한정자</span><span class="sxs-lookup"><span data-stu-id="31696-132">Modifiers</span></span>](../../../csharp/language-reference/keywords/modifiers.md)  
+- [<span data-ttu-id="31696-133">readonly</span><span class="sxs-lookup"><span data-stu-id="31696-133">readonly</span></span>](../../../csharp/language-reference/keywords/readonly.md)

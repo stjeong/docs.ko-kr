@@ -8,30 +8,30 @@ helpviewer_keywords:
 - continue keyword [C#]
 ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
 ms.openlocfilehash: 37315caf14ba829dfc91da065bc49982f21b947f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43408233"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43861408"
 ---
-# <a name="continue-c-reference"></a><span data-ttu-id="c1d7a-102">continue(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="c1d7a-102">continue (C# Reference)</span></span>
+# <a name="continue-c-reference"></a><span data-ttu-id="da2d9-102">continue(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="da2d9-102">continue (C# Reference)</span></span>
 
-<span data-ttu-id="c1d7a-103">`continue` 문은 자신이 나타나는 바깥쪽 [while](../../../csharp/language-reference/keywords/while.md), [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md) 또는 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 문의 다음 반복으로 제어를 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="c1d7a-103">The `continue` statement passes control to the next iteration of the enclosing [while](../../../csharp/language-reference/keywords/while.md), [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md), or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement in which it appears.</span></span>
+<span data-ttu-id="da2d9-103">`continue` 문은 자신이 나타나는 바깥쪽 [while](../../../csharp/language-reference/keywords/while.md), [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md) 또는 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 문의 다음 반복으로 제어를 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="da2d9-103">The `continue` statement passes control to the next iteration of the enclosing [while](../../../csharp/language-reference/keywords/while.md), [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md), or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement in which it appears.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c1d7a-104">예</span><span class="sxs-lookup"><span data-stu-id="c1d7a-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da2d9-104">예</span><span class="sxs-lookup"><span data-stu-id="da2d9-104">Example</span></span>
 
-<span data-ttu-id="c1d7a-105">이 예제에서 카운터는 1에서 10까지 계산하도록 초기화됩니다.</span><span class="sxs-lookup"><span data-stu-id="c1d7a-105">In this example, a counter is initialized to count from 1 to 10.</span></span> <span data-ttu-id="c1d7a-106">`continue` 문을 `(i < 9)` 식과 함께 사용하면 `continue`와 `for` 본문의 끝 사이에 있는 문을 건너뜁니다.</span><span class="sxs-lookup"><span data-stu-id="c1d7a-106">By using the `continue` statement in conjunction with the expression `(i < 9)`, the statements between `continue` and the end of the `for` body are skipped.</span></span>
+<span data-ttu-id="da2d9-105">이 예제에서 카운터는 1에서 10까지 계산하도록 초기화됩니다.</span><span class="sxs-lookup"><span data-stu-id="da2d9-105">In this example, a counter is initialized to count from 1 to 10.</span></span> <span data-ttu-id="da2d9-106">`continue` 문을 `(i < 9)` 식과 함께 사용하면 `continue`와 `for` 본문의 끝 사이에 있는 문을 건너뜁니다.</span><span class="sxs-lookup"><span data-stu-id="da2d9-106">By using the `continue` statement in conjunction with the expression `(i < 9)`, the statements between `continue` and the end of the `for` body are skipped.</span></span>
 
 [!code-csharp[csrefKeywordsJump#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#3)]
 
-## <a name="c-language-specification"></a><span data-ttu-id="c1d7a-107">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="c1d7a-107">C# language specification</span></span>
+## <a name="c-language-specification"></a><span data-ttu-id="da2d9-107">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="da2d9-107">C# language specification</span></span>
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a><span data-ttu-id="c1d7a-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c1d7a-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="da2d9-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="da2d9-108">See also</span></span>
 
-- [<span data-ttu-id="c1d7a-109">C# 참조</span><span class="sxs-lookup"><span data-stu-id="c1d7a-109">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="c1d7a-110">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="c1d7a-110">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="c1d7a-111">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="c1d7a-111">C# Keywords</span></span>](../../../csharp/language-reference/keywords/index.md)  
-- [<span data-ttu-id="c1d7a-112">break 문</span><span class="sxs-lookup"><span data-stu-id="c1d7a-112">break Statement</span></span>](/cpp/cpp/break-statement-cpp)  
-- [<span data-ttu-id="c1d7a-113">점프 문</span><span class="sxs-lookup"><span data-stu-id="c1d7a-113">Jump Statements</span></span>](../../../csharp/language-reference/keywords/jump-statements.md)
+- [<span data-ttu-id="da2d9-109">C# 참조</span><span class="sxs-lookup"><span data-stu-id="da2d9-109">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="da2d9-110">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="da2d9-110">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="da2d9-111">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="da2d9-111">C# Keywords</span></span>](../../../csharp/language-reference/keywords/index.md)  
+- [<span data-ttu-id="da2d9-112">break 문</span><span class="sxs-lookup"><span data-stu-id="da2d9-112">break Statement</span></span>](/cpp/cpp/break-statement-cpp)  
+- [<span data-ttu-id="da2d9-113">점프 문</span><span class="sxs-lookup"><span data-stu-id="da2d9-113">Jump Statements</span></span>](../../../csharp/language-reference/keywords/jump-statements.md)
