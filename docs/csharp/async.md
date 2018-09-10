@@ -4,18 +4,18 @@ description: .NET Core에서 제공하는 C# 언어 수준 비동기 프로그�
 author: cartermp
 ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-ms.openlocfilehash: ae1c9b1569b5fb6784f50ec9d78a44380242fcd8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 971295b85e5f2763eef87bfe9109524db2630120
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43484969"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43865152"
 ---
 # <a name="asynchronous-programming"></a>비동기 프로그래밍
 
 네트워크에서 데이터를 요청하거나 데이터베이스에 액세스하는 것과 같이 I/O 바인딩해야 할 경우 비동기 프로그래밍을 사용하고 싶을 것입니다.  부담이 큰 계산을 수행하는 것과 같이 CPU 바인딩된 코드가 있을 수도 있으며 이는 비동기 코드 작성의 좋은 시나리오이기도 합니다.
 
-C#에는 콜백을 조작하거나 비동기를 지원하는 라이브러리를 따를 필요 없이 비동기 코드를 쉽게 작성할 수 있는 언어 수준 비동기 프로그래밍 모델이 있습니다. 이 모델은 [TAP(작업 기반 비동기 패턴)](https://msdn.microsoft.com/library/hh873175.aspx)을 따릅니다.
+C#에는 콜백을 조작하거나 비동기를 지원하는 라이브러리를 따를 필요 없이 비동기 코드를 쉽게 작성할 수 있는 언어 수준 비동기 프로그래밍 모델이 있습니다. 이 모델은 [TAP(작업 기반 비동기 패턴)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)을 따릅니다.
 
 ## <a name="basic-overview-of-the-asynchronous-model"></a>비동기 모델의 기본 개요
 

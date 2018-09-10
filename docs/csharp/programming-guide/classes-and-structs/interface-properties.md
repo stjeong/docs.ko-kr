@@ -5,12 +5,12 @@ helpviewer_keywords:
 - properties [C#], on interfaces
 - interfaces [C#], properties
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
-ms.openlocfilehash: eea2bb524496a3db22146586df323437d9f84242
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 619b9167b9b96be2908d833403379e4c2fe78ba5
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43396733"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43746920"
 ---
 # <a name="interface-properties-c-programming-guide"></a>인터페이스 속성(C# 프로그래밍 가이드)
 [interface](../../../csharp/language-reference/keywords/interface.md)에 속성을 선언할 수 있습니다. 다음은 인터페이스 속성 접근자의 예입니다.  
@@ -50,10 +50,11 @@ ms.locfileid: "43396733"
   
  `Employee name: Hazem Abolrous`  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [속성 사용](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
- [속성 및 인덱서 비교](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [속성 사용](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+- [속성 및 인덱서 비교](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
+- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)

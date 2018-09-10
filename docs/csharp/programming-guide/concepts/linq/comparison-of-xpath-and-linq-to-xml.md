@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 87d361b1-daa9-4fd4-a53a-cbfa40111ad3
-ms.openlocfilehash: f41aa19c89365c9236ca0b8d385ffa6fbaf6be1c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: e27fbe2c45e331a90261da3c0c575f1a472db88f
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43391738"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087380"
 ---
 # <a name="comparison-of-xpath-and-linq-to-xml"></a>XPath 및 LINQ to XML 비교
 XPath와 LINQ to XML은 유사한 기능을 제공합니다. XML 트리를 쿼리하여 결과를 요소 컬렉션, 특성 컬렉션, 노드 컬렉션 또는 요소나 특성의 값으로 반환하는 데 사용할 수 있습니다. 하지만 차이점도 있습니다.  
@@ -104,5 +104,6 @@ customers.Elements("Customer").Elements("CompanyName")
 |following|직접적으로 해당하는 축이 없음|  
 |preceding|직접적으로 해당하는 축이 없음|  
   
-## <a name="see-also"></a>참고 항목  
- [XPath 사용자를 위한 LINQ to XML(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## <a name="see-also"></a>참고 항목
+
+- [XPath 사용자를 위한 LINQ to XML(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

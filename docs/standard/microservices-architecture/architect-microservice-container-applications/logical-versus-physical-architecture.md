@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: ebbae336761c6fa7954862cd41052e8832bf8e77
-ms.sourcegitcommit: 875ecc3ab2437e299b1d50076bd9b878fa8c64de
+ms.openlocfilehash: bb5f0daf0bcf824d72bb104914de03532bd3f9f7
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43238418"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44213344"
 ---
 # <a name="logical-architecture-versus-physical-architecture"></a>논리적 아키텍처 대 물리적 아키텍처
 
@@ -17,7 +17,7 @@ ms.locfileid: "43238418"
 
 시작하려면, 마이크로 서비스를 빌드하는데 특정 기술을 사용할 필요가 없습니다. 예를 들어, 마이크로 서비스 기반 아키텍처를 만들기 위해 Docker 컨테이너가 필수는 아닙니다. 이러한 마이크로 서비스는 일반 프로세스로도 실행할 수 있습니다. 마이크로 서비스는 논리적 아키텍처입니다.
 
-또한, 마이크로 서비스가 물리적으로 단일 서비스, 프로세스 또는 컨테이너로 구현될 수 있는 경우에도(간단히 하기 위해, 이것이 [eShopOnContainers](http://aka.ms/MicroservicesArchitecture)의 초기 버전에서 취한 접근법입니다.), 수십 또는 수백의 서비스로 구성된 크고 복잡한 응용 프로그램을 빌드할 때 비즈니스 마이크로 서비스와 물리적 서비스 또는 컨테이너 간의 패리티는 모든 경우에 필요한 것은 아닙니다.
+또한, 마이크로 서비스가 물리적으로 단일 서비스, 프로세스 또는 컨테이너로 구현될 수 있는 경우에도(간단히 하기 위해, 이것이 [eShopOnContainers](https://aka.ms/MicroservicesArchitecture)의 초기 버전에서 취한 접근법입니다.), 수십 또는 수백의 서비스로 구성된 크고 복잡한 응용 프로그램을 빌드할 때 비즈니스 마이크로 서비스와 물리적 서비스 또는 컨테이너 간의 패리티는 모든 경우에 필요한 것은 아닙니다.
 
 여기에 응용 프로그램의 논리적 아키텍처와 물리적 아키텍처 사이에 차이가 있습니다. 시스템의 논리적 아키텍처와 논리적 경계는 반드시 일대일로 물리적 또는 배포 아키텍처에 매핑되지 않습니다. 그것은 발생할 수 있지만, 종종 그렇지 않습니다.
 

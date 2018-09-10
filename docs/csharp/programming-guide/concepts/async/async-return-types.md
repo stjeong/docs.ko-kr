@@ -2,12 +2,12 @@
 title: 비동기 반환 형식(C#)
 ms.date: 05/29/2017
 ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
-ms.openlocfilehash: 9b0ee1c2e9925a1caffca6b7fb83eff34003246b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 3d3c7d610dd1287d2c7284a5edd9c92810a74dba
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43387581"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44212141"
 ---
 # <a name="async-return-types-c"></a>비동기 반환 형식(C#)
 비동기 메서드의 반환 형식은 다음과 같을 수 있습니다.
@@ -77,9 +77,10 @@ C# 7.0부터 비동기 메서드는 액세스 가능한 `GetAwaiter` 메서드�
   
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-valuetask.cs)]
 
-## <a name="see-also"></a>참고 항목  
-<xref:System.Threading.Tasks.Task.FromResult%2A>   
-[연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
-[비동기 프로그램의 제어 흐름(C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)   
-[async](../../../../csharp/language-reference/keywords/async.md)   
-[await](../../../../csharp/language-reference/keywords/await.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Tasks.Task.FromResult%2A>   
+- [연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
+- [비동기 프로그램의 제어 흐름(C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)   
+- [async](../../../../csharp/language-reference/keywords/async.md)   
+- [await](../../../../csharp/language-reference/keywords/await.md)

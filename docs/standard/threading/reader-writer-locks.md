@@ -9,11 +9,11 @@ ms.assetid: 8c71acf2-2c18-4f4d-8cdb-0728639265fd
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 8be9b4eef30333fbbdc26915635d17157176d6fc
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44208181"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44275062"
 ---
 # <a name="reader-writer-locks"></a>판독기 및 작성기 잠금
 <xref:System.Threading.ReaderWriterLockSlim> 클래스를 사용하면 여러 스레드가 리소스를 동시에 읽을 수 있지만 리소스에 쓰기 위해 스레드가 배타적 잠금을 기다려야 합니다.  

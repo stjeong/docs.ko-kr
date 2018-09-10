@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 500335af-f9b5-413b-968a-e6d9a824478c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c871dabd9d027e5716c863985bed7ef3b955a358
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 67062ab87182bcb42793cb166323020178ac1688
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482091"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264287"
 ---
 # <a name="xslt-transformations-with-the-xsltransform-class"></a>XslTransform 클래스를 사용하여 XSLT 변형
 
@@ -98,11 +98,11 @@ public class Sample
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Xml.Xsl.XslTransform>  
-[XslTransform 클래스의 XSLT 프로세서 구현](xsltransform-class-implements-the-xslt-processor.md)  
-[XslTransform 클래스에서 임의 동작 구현](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md)  
-[변형 과정에서 XPathNavigator의 역할](xpathnavigator-in-transformations.md)  
-[변형 과정에서 XPathNodeIterator의 역할](xpathnodeiterator-in-transformations.md)  
-[XslTransform에 대한 XPathDocument 입력](xpathdocument-input-to-xsltransform.md)  
-[XslTransform에 대한 XmlDataDocument 입력](xmldatadocument-input-to-xsltransform.md)  
-[XslTransform에 대한 XmlDocument 입력](xmldocument-input-to-xsltransform.md)  
+- <xref:System.Xml.Xsl.XslTransform>  
+- [XslTransform 클래스의 XSLT 프로세서 구현](xsltransform-class-implements-the-xslt-processor.md)  
+- [XslTransform 클래스에서 임의 동작 구현](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md)  
+- [변형 과정에서 XPathNavigator의 역할](xpathnavigator-in-transformations.md)  
+- [변형 과정에서 XPathNodeIterator의 역할](xpathnodeiterator-in-transformations.md)  
+- [XslTransform에 대한 XPathDocument 입력](xpathdocument-input-to-xsltransform.md)  
+- [XslTransform에 대한 XmlDataDocument 입력](xmldatadocument-input-to-xsltransform.md)  
+- [XslTransform에 대한 XmlDocument 입력](xmldocument-input-to-xsltransform.md)  

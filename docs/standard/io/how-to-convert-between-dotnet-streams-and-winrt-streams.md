@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b3cfaf4cf22bba445d774c653ff7797d535bcde2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 96067ab6c8e13417158e4ebf7fae0e08cb9fbea4
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43398967"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087481"
 ---
 # <a name="how-to-convert-between-net-framework-streams-and-windows-runtime-streams"></a>방법: .NET Framework 스트림과 Windows 런타임 스트림 간 변환
 
@@ -79,6 +79,6 @@ Windows 런타임은 읽기 전용, 쓰기 전용 또는 읽기와 쓰기를 지
 
 ## <a name="see-also"></a>참고 항목
 
-[퀵 스타트: 파일 읽기 및 쓰기(Windows)](https://msdn.microsoft.com/library/windows/apps/hh464978.aspx)  
-[Windows 스토어 앱용 .NET 개요](https://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
-[Windows 스토어 앱용 .NET – 지원되는 API](https://msdn.microsoft.com/library/windows/apps/br230232.aspx)  
+- [퀵 스타트: 파일 읽기 및 쓰기(Windows)](https://msdn.microsoft.com/library/windows/apps/hh464978.aspx)  
+- [Windows 스토어 앱용 .NET 개요](https://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
+- [Windows 스토어 앱용 .NET – 지원되는 API](https://msdn.microsoft.com/library/windows/apps/br230232.aspx)  

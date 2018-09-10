@@ -2,12 +2,12 @@
 title: '방법: 네임스페이스로 문서 만들기(C#)(LINQ to XML)'
 ms.date: 07/20/2015
 ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
-ms.openlocfilehash: 5937639fc48b82ee155450a3eaa1c7715ee3f9b9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 0fa19af47847b0d6b804528af3f766c9775e74f3
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43478028"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43863689"
 ---
 # <a name="how-to-create-a-document-with-namespaces-c-linq-to-xml"></a>방법: 네임스페이스로 문서 만들기(C#)(LINQ to XML)
 이 항목에서는 네임스페이스를 사용하여 문서를 만드는 방법을 보여 줍니다.  
@@ -142,5 +142,6 @@ Console.WriteLine(root);
 </aw:Root>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XML 네임스페이스 작업(C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 네임스페이스 작업(C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

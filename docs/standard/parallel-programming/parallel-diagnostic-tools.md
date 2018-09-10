@@ -8,11 +8,11 @@ ms.assetid: 38f7302a-ddf6-4179-ba19-f49e00395b9f
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 4649f33fe07e7780630fbd11170bb54046617c14
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44201402"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44272126"
 ---
 # <a name="parallel-diagnostic-tools"></a>병렬 진단 도구
 Visual Studio는 다중 스레드 응용 프로그램 디버깅 및 프로파일링에 대한 광범위한 지원을 제공합니다.  

@@ -4,11 +4,11 @@ description: C#에서 LINQ를 사용하여 내부 조인을 수행하는 방법�
 ms.date: 12/1/2016
 ms.assetid: 45bceed6-f549-4114-a9b1-b44feb497742
 ms.openlocfilehash: 2f6aad30dc8278ce1bb88bacc19b27deaa0288c7
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44210132"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44276967"
 ---
 # <a name="perform-inner-joins"></a>내부 조인 수행
 

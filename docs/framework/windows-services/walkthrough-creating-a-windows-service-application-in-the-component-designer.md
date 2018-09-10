@@ -11,11 +11,11 @@ ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
 manager: douge
 ms.openlocfilehash: 6d70db7139d82b6e219e2c417282333f950ef402
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43417863"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509855"
 ---
 # <a name="walkthrough-creating-a-windows-service-application-in-the-component-designer"></a>연습: 구성 요소 디자이너에서 Windows 서비스 응용 프로그램 만들기
 이 문서에서는 이벤트 로그에 메시지를 쓰는 간단한 Windows 서비스 응용 프로그램을 Visual Studio에서 만드는 방법을 보여 줍니다. 서비스를 만들고 사용하기 위해 수행하는 기본적인 단계는 다음과 같습니다.  

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - statements [C#], about statements
 - C# language, statements
 ms.assetid: 901bcde7-87de-4e15-833c-f9cfd40c8ce3
-ms.openlocfilehash: 4dc2507e37793fb154b932062854b3f590e362e8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 515ae6bb6030e80c80289ff888f07ade2f341792
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43420431"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44187498"
 ---
 # <a name="statements-c-programming-guide"></a>문(C# 프로그래밍 가이드)
 프로그램이 수행하는 작업은 문으로 표현됩니다. 일반적인 작업으로 지정된 조건에 따라 변수 선언, 값 할당, 메서드 호출, 컬렉션 반복, 하나 또는 다른 코드 블록으로 분기 등이 있습니다. 프로그램에서 문이 실행되는 순서를 제어 흐름 또는 실행 흐름이라고 합니다. 제어 흐름은 프로그램이 런타임 시 수신하는 입력에 대응하는 방식에 따라 프로그램을 실행할 때마다 달라질 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "43420431"
 |[예외 처리 문](../../../csharp/language-reference/keywords/exception-handling-statements.md)|예외 처리 문을 사용하면 런타임 시 발생하는 예외 조건에서 정상적으로 복구할 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.<br /><br /> [throw](../../../csharp/language-reference/keywords/throw.md), [try-catch](../../../csharp/language-reference/keywords/try-catch.md), [try-finally](../../../csharp/language-reference/keywords/try-finally.md), [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)|  
 |[Checked 및 Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)|checked 및 unchecked 문을 사용하면 결과가 저장되는 변수가 너무 작아서 결과 값을 수용할 수 없는 경우 수치 연산에서 오버플로가 발생할 수 있는지 여부를 지정할 수 있습니다. 자세한 내용은 [checked](../../../csharp/language-reference/keywords/checked.md) 및 [unchecked](../../../csharp/language-reference/keywords/unchecked.md)를 참조하세요.|  
 |`await` 문|메서드에 [async](../../../csharp/language-reference/keywords/async.md) 한정자를 표시하면 메서드에서 [await](../../../csharp/language-reference/keywords/await.md) 연산자를 사용할 수 있습니다. 컨트롤이 비동기 메서드의 `await` 식에 도달하면 컨트롤이 호출자로 돌아가고 대기 중인 작업이 완료될 때까지 메서드의 진행이 일시 중단됩니다. 작업이 완료되면 메서드가 실행이 다시 시작될 수 있습니다.<br /><br /> 간단한 예제는 [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)의 "Async 메서드" 섹션을 참조하세요. 자세한 내용은 [async 및 await를 사용한 비동기 프로그래밍](../../../csharp/programming-guide/concepts/async/index.md)을 참조하세요.|  
-|`yield return` 문|반복기는 배열 목록과 같은 컬렉션에 대해 사용자 지정 반복을 수행합니다. 반복기는 [yield return](../../../csharp/language-reference/keywords/yield.md) 문을 사용하여 각 요소를 한 번에 하나씩 반환합니다. `yield return` 문에 도달하면 코드의 현재 위치가 기억됩니다. 다음에 반복기가 호출되면 해당 위치에서 실행이 다시 시작됩니다.<br /><br /> 자세한 내용은 [반복기](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)를 참조하세요.|  
+|`yield return` 문|반복기는 배열 목록과 같은 컬렉션에 대해 사용자 지정 반복을 수행합니다. 반복기는 [yield return](../../../csharp/language-reference/keywords/yield.md) 문을 사용하여 각 요소를 한 번에 하나씩 반환합니다. `yield return` 문에 도달하면 코드의 현재 위치가 기억됩니다. 다음에 반복기가 호출되면 해당 위치에서 실행이 다시 시작됩니다.<br /><br /> 자세한 내용은 [반복기](../../../csharp/programming-guide/concepts/iterators.md)를 참조하세요.|  
 |`fixed` 문|fixed 문은 가비지 수집기에서 이동 가능한 변수를 재배치할 수 없도록 합니다. 자세한 내용은 [fixed](../../../csharp/language-reference/keywords/fixed-statement.md)를 참조하세요.|  
 |`lock` 문|lock 문을 사용하면 한 번에 하나의 스레드만 코드 블록에 액세스할 수 있도록 제한할 수 있습니다. 자세한 내용은 [lock](../../../csharp/language-reference/keywords/lock-statement.md)을 참조하세요.|  
 |레이블 문|문에 레이블을 지정한 다음 [goto](../../../csharp/language-reference/keywords/goto.md) 키워드를 사용하여 레이블 문으로 점프합니다. 다음 행의 예제를 참조하세요.|  
@@ -91,5 +91,6 @@ ms.locfileid: "43420431"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)

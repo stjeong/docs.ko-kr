@@ -9,11 +9,11 @@ helpviewer_keywords:
 - /checked compiler option [C#]
 ms.assetid: fb7475d3-e6a6-4e6d-b86c-69e7a74c854b
 ms.openlocfilehash: cf6fa0e87654d0f9d61f34ea9b29ad80921a5720
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43401708"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084857"
 ---
 # <a name="-checked-c-compiler-options"></a>-checked(C# 컴파일러 옵션)
 **-checked** 옵션은 데이터 형식 범위를 벗어나고 [checked](../../../csharp/language-reference/keywords/checked.md) 또는 [unchecked](../../../csharp/language-reference/keywords/unchecked.md) 키워드의 범위 내에 없는 값을 생성하는 정수 산술 문이 런타임 예외를 일으킬지 여부를 지정합니다.  

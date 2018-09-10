@@ -2,12 +2,12 @@
 title: 컬렉션(C#)
 ms.date: 07/20/2015
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
-ms.openlocfilehash: 7400d4eee4df99cb1e255e428f83028fddf481f4
-ms.sourcegitcommit: 54231aa56fca059e9297888a96fbca1d4cf3746c
+ms.openlocfilehash: 24b2155c07b6b66820d373d6310ff6b1c6ab224f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549622"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44273296"
 ---
 # <a name="collections-c"></a>컬렉션(C#)
 대부분의 응용 프로그램의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
@@ -575,14 +575,15 @@ private static IEnumerable<int> EvenSequence(
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
- [프로그래밍 개념(C#)](../../../csharp/programming-guide/concepts/index.md)  
- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [LINQ to Objects(C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
- [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
- [컬렉션 및 데이터 구조](../../../standard/collections/index.md)  
- [컬렉션 만들기 및 조작](http://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
- [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)  
- [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)  
+## <a name="see-also"></a>참고 항목
+
+- [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
+- [프로그래밍 개념(C#)](../../../csharp/programming-guide/concepts/index.md)  
+- [Option Strict 문](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+- [LINQ to Objects(C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
+- [PLINQ(병렬 LINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
+- [컬렉션 및 데이터 구조](../../../standard/collections/index.md)  
+- [컬렉션 만들기 및 조작](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
+- [Collection 클래스 선택](../../../standard/collections/selecting-a-collection-class.md)  
+- [컬렉션 내에서 비교 및 정렬](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
+- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)  

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - namespace alias qualifier operator (::) [C#]
 ms.assetid: 698b5a73-85cf-4e0e-9e8e-6496887f8527
 ms.openlocfilehash: 077d5835b372897cbe797385271effc5d00bf6e3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43473975"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43525658"
 ---
 # <a name="-operator-c-reference"></a>:: 연산자(C# 참조)
 네임스페이스 별칭 한정자(`::`)는 식별자를 조회하는 데 사용됩니다. 다음 예제와 같이 항상 두 식별자 사이에 옵니다.  

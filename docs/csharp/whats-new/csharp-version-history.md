@@ -4,11 +4,11 @@ description: 이 언어의 초창기 버전은 어떤 모습이었으며 이후 
 author: erikdietrich
 ms.date: 09/20/2017
 ms.openlocfilehash: 7a7030eb9479ebae553f3bb4d569c9a9f931db9a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43391250"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43504415"
 ---
 # <a name="the-history-of-c"></a>C#의 역사 #
 
