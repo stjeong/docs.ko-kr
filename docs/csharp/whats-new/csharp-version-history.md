@@ -3,12 +3,12 @@ title: C#의 역사 - C# 가이드
 description: 이 언어의 초창기 버전은 어떤 모습이었으며 이후 어떻게 변했는가?
 author: erikdietrich
 ms.date: 09/20/2017
-ms.openlocfilehash: 90f480d7b25ebe308d1f1cb3d4c117f36f7dd9bf
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: 7a7030eb9479ebae553f3bb4d569c9a9f931db9a
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42752202"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43391250"
 ---
 # <a name="the-history-of-c"></a>C#의 역사 #
 
@@ -34,6 +34,10 @@ C# 1.0의 주요 기능에는 다음이 포함되어 있습니다.
 - [문](../programming-guide/statements-expressions-operators/statements.md)
 - [특성](../programming-guide/concepts/attributes/index.md)
 - 리터럴
+
+## <a name="c-version-12"></a>C# 버전 1.2
+
+C# 버전 1.2는 Visual Studio 2003과 함께 제공됩니다. 여기에는 언어에 대한 몇 가지 작은 개선이 포함되어 있습니다. 가장 주목할 만한 점은 이 버전부터 <xref:System.Collections.IEnumerator>가 <xref:System.IDisposable>를 구현할 때 <xref:System.Collections.IEnumerator>의 <xref:System.IDisposable.Dispose%2A>라는 `foreach` 루트에서 생성된 코드입니다.
 
 ## <a name="c-version-20"></a>C# 버전 2.0
 

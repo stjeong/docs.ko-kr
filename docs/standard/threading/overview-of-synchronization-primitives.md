@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e35c2337ff7e416cb5f2c869f8ede160e05d369f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5098eea86ee910baad57115419e147df02e41ed9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592017"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485536"
 ---
 # <a name="overview-of-synchronization-primitives"></a>동기화 기본 형식 개요
 <a name="top"></a> .NET Framework에서는 스레드 조작을 제어하고 경합 상태를 방지할 수 있는 동기화 기본 형식 범위를 제공합니다. 이들 기본 형식은 크게 잠금, 신호 및 연관 작업의 세 범주로 구분됩니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "33592017"
  잠금을 통해 리소스를 한 번에 하나의 스레드 또는 지정된 수의 스레드로 제어할 수 있습니다. 잠금이 사용 중일 때 단독 잠금을 요청하는 스레드는 잠금을 사용할 수 있을 때까지 차단됩니다.  
   
 ### <a name="exclusive-locks"></a>단독 잠금  
- 가장 단순한 잠금 형식은 코드 블록에 대한 액세스를 제어하는 C#의 `lock` 문과, Visual Basic의 `SyncLock` 문입니다. 해당 블록을 임계 영역이라고 합니다. `lock` 문은 <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> 메서드를 사용하여 구현하고 `try…catch…finally` 블록을 사용하여 잠금이 해제되었는지를 확인합니다.  
+ 가장 단순한 잠금 형식은 코드 블록에 대한 액세스를 제어하는 C#의 `lock` 문과, Visual Basic의 `SyncLock` 문입니다. 해당 블록을 임계 영역이라고 합니다. `lock` 문은 <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> 메서드를 사용하여 구현하고 `try…finally` 블록을 사용하여 잠금이 해제되었는지를 확인합니다.  
   
  일반적으로 `lock` 또는 `SyncLock` 문을 통해 작은 코드 블록을 보호하여 메서드가 두 개 이상 스패닝되지 않게 하는 것이 <xref:System.Threading.Monitor> 클래스를 사용하는 가장 좋은 방법입니다. 강력하지만 <xref:System.Threading.Monitor> 클래스는 잠금 및 교착 상태를 분리할 수 있습니다.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "33592017"
   
  <xref:System.Threading.Monitor> 클래스는 인스턴스화할 수 없습니다. 해당 메서드는 정적(Visual Basic의 `Shared`)이고 인스턴스화할 수 있는 잠금 개체에서 작동합니다.  
   
- 개념적인 개요를 보려면 [모니터](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)를 참조하세요.  
+ 개념적인 개요를 보려면 [모니터](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)를 참조하세요.  
   
 #### <a name="mutex-class"></a>Mutex 클래스  
  스레드는 <xref:System.Threading.WaitHandle.WaitOne%2A> 메서드의 오버로드를 호출하여 <xref:System.Threading.Mutex>를 요청합니다. 스레드가 대기를 포기할 수 있도록 시간 제한이 있는 오버로드가 제공됩니다. <xref:System.Threading.Monitor> 클래스와 달리 뮤텍스는 로컬 또는 전역일 수 있습니다. 명명된 뮤텍스라고도 하는 전역 뮤텍스는 운영 체제 전체에 표시되고 여러 응용 프로그램 도메인 또는 프로세스에서 스레드를 동기화하는 데 사용될 수 있습니다. 로컬 뮤텍스는 <xref:System.MarshalByRefObject>에서 파생되고 응용 프로그램 도메인 경계에 걸쳐 사용할 수 있습니다.  
@@ -109,7 +109,7 @@ ms.locfileid: "33592017"
   
  스레드는 인스턴스 메서드 <xref:System.Threading.WaitHandle.WaitOne%2A>를 호출하거나 정적 메서드 <xref:System.Threading.WaitHandle.WaitAll%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> 또는 <xref:System.Threading.WaitHandle.SignalAndWait%2A>의 하나를 호출하는 방식으로 대기 핸들에서 차단됩니다. 스레드가 해제되는 방식은 호출되는 메서드 및 대기 핸들 유형에 따라 달라집니다.  
   
- 개념적인 개요를 보려면 [WaitHandle](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)을 참조하세요.  
+ 개념적인 개요를 보려면 [WaitHandle](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)을 참조하세요.  
   
 #### <a name="event-wait-handles"></a>이벤트 대기 핸들  
  이벤트 대기 핸들에는 <xref:System.Threading.EventWaitHandle> 클래스와 파생 클래스 <xref:System.Threading.AutoResetEvent> 및 <xref:System.Threading.ManualResetEvent>가 포함됩니다. <xref:System.Threading.EventWaitHandle.Set%2A> 메서드를 호출하거나 <xref:System.Threading.WaitHandle.SignalAndWait%2A> 메서드를 사용하여 보낸 신호를 이벤트 대기 핸들이 받으면 이벤트 대기 핸들에서 스레드가 해제됩니다.  
@@ -167,11 +167,11 @@ ms.locfileid: "33592017"
   
 ## <a name="see-also"></a>참고 항목  
  [다중 스레딩을 위한 데이터 동기화](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
- [모니터](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
+ [모니터](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
  [뮤텍스](../../../docs/standard/threading/mutexes.md)  
  [세마포 및 SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)  
  [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
- [대기 핸들](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
+ [대기 핸들](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
  [연동 작업](../../../docs/standard/threading/interlocked-operations.md)  
  [판독기 및 작성기 잠금](../../../docs/standard/threading/reader-writer-locks.md)  
  [장벽](../../../docs/standard/threading/barrier.md)  

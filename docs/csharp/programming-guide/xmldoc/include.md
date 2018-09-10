@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <include> C# XML tag
 - include C# XML tag
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
-ms.openlocfilehash: a681a2fcbb874d67b82c8bda73d92dd993928bbc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d3c9adda4ca3a58edca48d6df3d2f5e4d5783187
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334511"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43389153"
 ---
 # <a name="ltincludegt-c-programming-guide"></a>&lt;include&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -24,7 +24,7 @@ ms.locfileid: "33334511"
   
 #### <a name="parameters"></a>매개 변수  
  `filename`  
- 문서가 포함된 XML 파일의 이름입니다. 경로를 사용하여 파일 이름을 정규화할 수 있습니다. `filename`을 작은따옴표(‘ ’)로 묶습니다.  
+ 문서가 포함된 XML 파일의 이름입니다. 파일 이름은 소스 코드 파일에 상대 경로로 한정될 수 있습니다. `filename`을 작은따옴표(‘ ’)로 묶습니다.  
   
  `tagpath`  
  `filename`의 태그 경로로, `name` 태그에 연결됩니다. 경로를 작은따옴표(‘ ’)로 묶습니다.  

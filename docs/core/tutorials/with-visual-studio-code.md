@@ -4,12 +4,12 @@ description: Visual Studio Code를 사용하여 C#에서 첫 번째 .NET Core �
 author: kendrahavens
 ms.author: mairaw
 ms.date: 09/27/2017
-ms.openlocfilehash: 8958c39ba16cadbfab95e35fa36e8e85ce0a4ab8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 321edcebdea141b7290fa57b47c8d9fc91d3521c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33213619"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484670"
 ---
 # <a name="get-started-with-c-and-visual-studio-code"></a>C# 및 Visual Studio Code 시작
 
@@ -50,7 +50,7 @@ ms.locfileid: "33213619"
 
 4. "Hello World" 프로그램 실행
 
-    * `dotnet run`를 입력합니다. 
+    * `dotnet run`를 입력합니다.
 
       ![dotnet run 명령](media/with-visual-studio-code/dotnetrun.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "33213619"
 
     ![Program.cs 파일 열기](media/with-visual-studio-code/opencs.png)
 
-2. Visual Studio Code는 앱을 빌드하고 디버그하기 위해 누락된 자산을 추가하라는 메시지를 표시해야 합니다. **예**를 선택합니다. 
+2. Visual Studio Code는 앱을 빌드하고 디버그하기 위해 누락된 자산을 추가하라는 메시지를 표시해야 합니다. **예**를 선택합니다.
 
     ![누락된 자산에 대한 프롬프트](media/with-visual-studio-code/missing-assets.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "33213619"
 
     ![.NET Core 선택](media/with-visual-studio-code/selectcore.png)
 
-5. 9번째 줄 옆에 있는 **편집기 여백**(편집기에서 줄 번호 왼쪽에 있는 공간)을 클릭하여 프로젝트에 중단점을 추가합니다.
+5. 9번째 줄 옆에 있는 **편집기 여백**(편집기에서 줄 번호 왼쪽에 있는 공간)을 클릭하거나 편집기에서 9번째 줄로 이동하여 <kbd>F9</kbd>를 눌러서 프로젝트에 중단점을 추가합니다.
 
     ![중단점 설정](media/with-visual-studio-code/setbreakpoint.png)
 
@@ -85,9 +85,16 @@ ms.locfileid: "33213619"
 
 7. 디버깅을 계속하려면 위쪽에 있는 녹색 화살표를 선택하고, 중지하려면 위쪽의 빨간색 사각형을 선택합니다.
 
-> [!TIP] 
+> [!TIP]
 > Visual Studio Code에서 OmniSharp를 사용한 .NET Core 디버깅에 대한 자세한 내용 및 문제 해결 정보는 [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)(.NET Core 디버거 설정 지침)를 참조하세요.
 
+## <a name="faq"></a>FAQ
+
+### <a name="im-missing-required-assets-to-build-and-debug-c-in-visual-studio-code-my-debugger-says-no-configuration"></a>Visual Studio Code에서 C#을 빌드하고 디버그하는 데 필요한 자산이 누락되었습니다. 내 디버거에서 "구성 없음"이라고 표시됩니다.
+
+Visual Studio Code C# 확장에서 빌드 및 디버그할 자산을 생성할 수 있습니다. Visual Studio Code는 C# 프로젝트를 처음 열 때 이러한 자산을 생성하라는 메시지를 표시합니다. 자산을 생성하지 않은 경우 명령 팔레트(**보기 > 명령 팔레트**)를 열고 ">.NET: 빌드 및 디버그용 자산 생성"을 입력하여 이 명령을 실행할 수 있습니다. 이를 선택하면 필요한 .vscode, launch.json 및 tasks.json 구성 파일이 생성됩니다.
+
 ## <a name="see-also"></a>참고 항목
-[Visual Studio Code 설정](https://code.visualstudio.com/docs/setup/setup-overview)   
-[Visual Studio Code의 디버깅](https://code.visualstudio.com/Docs/editor/debugging)
+
+* [Visual Studio Code 설치](https://code.visualstudio.com/docs/setup/setup-overview)
+* [Visual Studio Code의 디버깅](https://code.visualstudio.com/Docs/editor/debugging)

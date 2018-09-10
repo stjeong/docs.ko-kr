@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: c61a08566492a59090b19f99aaf97b5f6082c1fb
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 70a1f716797e03acdcbf1c58d4b0302449d98fa9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37104571"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43395678"
 ---
 # <a name="client-side-validation-validation-in-the-presentation-layers"></a>클라이언트 쪽 유효성 검사(프레젠테이션 레이어의 유효성 검사)
 
@@ -23,7 +23,7 @@ ms.locfileid: "37104571"
 
 따라서 일반적으로 클라이언트 쪽 코드에서 ViewModels의 유효성을 검사합니다. 서비스에 보내기 전에 클라이언트 출력 DTO 또는 명령의 유효성을 검사할 수도 있습니다.
 
-클라이언트 쪽 유효성 검사를 구현하는 작업은 빌드하는 클라이언트 응용 프로그램의 종류에 따라 달라집니다. .NET에서 대부분의 코드를 사용하는 웹 MVC 웹 응용 프로그램, JavaScript 또는 TypeScript로 코딩된 해당 유효성 검사를 사용하는 SPA 웹 응용 프로그램 또는 Xamarin 및 C\#을 사용하는 코딩된 모바일 앱의 데이터 유효성을 검사하는지에 따라 다릅니다.
+클라이언트 쪽 유효성 검사를 구현하는 작업은 빌드하는 클라이언트 응용 프로그램의 종류에 따라 달라집니다. .NET에서 대부분의 코드를 사용하는 웹 MVC 웹 응용 프로그램, JavaScript 또는 TypeScript로 코딩된 해당 유효성 검사를 사용하는 SPA 웹 응용 프로그램 또는 Xamarin 및 C#을 사용하는 코딩된 모바일 앱의 데이터 유효성을 검사하는지에 따라 다릅니다.
 
 ## <a name="additional-resources"></a>추가 자료
 
@@ -42,8 +42,8 @@ ms.locfileid: "37104571"
 
 ### <a name="validation-in-spa-web-apps-angular-2-typescript-javascript"></a>SPA 웹앱의 유효성 검사(Angular 2, TypeScript, JavaScript)
 
--   **Ado Kukic. Angular 2 양식 유효성 검사** **
-    **[*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
+-   **Ado Kukic. Angular 2 양식 유효성 검사**
+    [*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
 
 -   **양식 유효성 검사**
     [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
@@ -53,16 +53,15 @@ ms.locfileid: "37104571"
 
 요약하면 유효성 검사에 관해 가장 중요한 개념은 다음과 같습니다.
 
--   엔터티 및 집계는 고유한 일관성을 적용하고 "항상 유효"해야 합니다. 집계 루트는 동일한 집계 내에서 다중 엔터티 일관성을 담당합니다.
+- 엔터티 및 집계는 고유한 일관성을 적용하고 "항상 유효"해야 합니다. 집계 루트는 동일한 집계 내에서 다중 엔터티 일관성을 담당합니다.
 
--   엔터티가 잘못된 상태를 입력해야 하는 경우 다양한 개체 모델을 사용하는 것이 좋습니다. 예를 들어 최종 도메인 엔터티를 만들 때까지 임시 DTO를 사용합니다.
+- 엔터티가 잘못된 상태를 입력해야 하는 경우 다양한 개체 모델을 사용하는 것이 좋습니다. 예를 들어 최종 도메인 엔터티를 만들 때까지 임시 DTO를 사용합니다.
 
--   집계 함수와 같은 여러 관련 개체를 만들어야 하고 해당 개체를 모두 만들어야만 유효한 경우 팩터리 패턴을 사용하는 것이 좋습니다.
+- 집계 함수와 같은 여러 관련 개체를 만들어야 하고 해당 개체를 모두 만들어야만 유효한 경우 팩터리 패턴을 사용하는 것이 좋습니다.
 
--   유효성 검사 프레임워크는 프레젠테이션 계층 또는 응용 프로그램/서비스 계층과 같은 특정 계층에서 사용되기에 적합하지만 인프라 프레임워크에 대한 종속성이 커야 하기 때문에 도메인 모델 계층에서는 일반적으로 적합하지 않습니다.
+- 유효성 검사 프레임워크는 프레젠테이션 계층 또는 응용 프로그램/서비스 계층과 같은 특정 계층에서 사용되기에 적합하지만 인프라 프레임워크에 대한 종속성이 커야 하기 때문에 도메인 모델 계층에서는 일반적으로 적합하지 않습니다.
 
--   대부분의 경우에 응용 프로그램이 예방적일 수 있기 때문에 클라이언트 쪽에서 중복 유효성을 검사하는 것이 적절합니다.
-
+- 대부분의 경우에 응용 프로그램이 예방적일 수 있기 때문에 클라이언트 쪽에서 중복 유효성을 검사하는 것이 적절합니다.
 
 >[!div class="step-by-step"]
 [이전](domain-model-layer-validations.md)

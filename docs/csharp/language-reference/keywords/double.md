@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - double data type [C#]
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
-ms.openlocfilehash: 8e3a94bb79d46f2815e46b86f1aca92acc73e5c2
-ms.sourcegitcommit: f9e38d31288fe5962e6be5b0cc286da633482873
+ms.openlocfilehash: 4c11065d9354d44c1da8354c6f7b4f52d7b84c10
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37027852"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43401326"
 ---
 # <a name="double-c-reference"></a>double(C# 참조)
 
@@ -34,9 +34,9 @@ double x = 3D;
 
 식에서 숫자 정수 형식과 부동 소수점 형식을 함께 사용할 수 있습니다. 이 경우 정수 형식이 부동 소수점 형식으로 변환됩니다. 식의 계산은 다음 규칙에 따라 수행됩니다.
 
-- 부동 소수점 형식 중 하나가 `double`이면 식은 `double` 또는 [bool](../../../csharp/language-reference/keywords/bool.md)(관계형 식이나 부울 식의 경우)로 계산됩니다.
+- 부동 소수점 형식 중 하나가 `double`이면 식은 관계형 비교 및 같음에 대한 비교에서 `double` 또는 [bool](../../../csharp/language-reference/keywords/bool.md)로 계산됩니다.
 
-- 식에 `double` 형식이 없으면 [float](../../../csharp/language-reference/keywords/float.md) 또는 [bool](../../../csharp/language-reference/keywords/bool.md)(관계형 식이나 부울 식의 경우)로 계산됩니다.
+- 식에 `double` 유형이 없으면 관계형 비교 및 같음에 대한 비교에서 [float](../../../csharp/language-reference/keywords/float.md) 또는 [bool](../../../csharp/language-reference/keywords/bool.md)로 계산됩니다.
 
  부동 소수점 식에는 다음과 같은 값 집합이 포함될 수 있습니다.
 
@@ -62,11 +62,11 @@ double x = 3D;
 
 ## <a name="see-also"></a>참고 항목
 
-[C# 참조](../../../csharp/language-reference/index.md)  
-[C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-[C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-[기본값 표](../../../csharp/language-reference/keywords/default-values-table.md)  
-[기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-[부동 소수점 형식 표](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
-[암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-[명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [기본값 표](../../../csharp/language-reference/keywords/default-values-table.md)  
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [부동 소수점 형식 표](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  

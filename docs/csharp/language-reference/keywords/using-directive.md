@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - using directive [C#]
 ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
-ms.openlocfilehash: 180c038987e7de6b39a8eae0e86871eea41a40bb
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 1ed7ac49cde6792cddff898e8b9930a83598e02c
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37960042"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43388145"
 ---
 # <a name="using-directive-c-reference"></a>using 지시문(C# 참조)
 `using` 지시문에는 다음 세 가지 용도가 있습니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "37960042"
     using System.Text;  
     ```  
   
--   형식 이름을 사용하여 액세스를 한정할 필요 없이 형식의 정적 멤버에 액세스하도록 허용합니다. 
+-   형식 이름을 사용하여 액세스를 한정할 필요 없이 형식의 정적 멤버 및 중첩 형식에 액세스하도록 허용합니다. 
   
     ```csharp  
     using static System.Math;  
@@ -52,13 +52,23 @@ class Program
 ```  
   
 ## <a name="remarks"></a>설명  
- `using` 지시문의 범위는 지시문이 나타내는 파일로 제한됩니다.  
+ `using` 지시문의 범위는 지시문이 나타내는 파일로 제한됩니다.
+ 
+ `using` 지시문이 나타날 수 있습니다.
+- 모든 네임스페이스 또는 형식 정의 전에 소스 파일을 시작합니다.
+- 모든 네임스페이스에 있지만 이 네임스페이스에 선언된 네임스페이스 또는 형식 앞에 있어야 합니다.
+
+이렇게 하지 않으면 컴파일러 오류 [CS1529](../../misc/cs1529.md)가 생성됩니다.
   
- `using` 별칭을 만들면 네임스페이스 또는 형식에 대한 식별자를 더 쉽게 한정할 수 있습니다. using alias 지시문의 오른쪽은 지시문 앞에 나오는 using 지시문과 관계없이 항상 정규화된 형식이어야 합니다.  
+ `using` 별칭 지시문을 만들면 네임스페이스 또는 형식에 대한 식별자를 더 쉽게 한정할 수 있습니다. 모든 `using` 지시문에서 앞에 오는 `using` 지시문에 관계없이 정규화된 네임스페이스 또는 형식을 사용해야 합니다. `using` 별칭은 `using` 지시문 선언에 사용할 수 없습니다. 예를 들어, 다음은 컴파일러 오류를 생성합니다.
+ ```csharp
+ using s = System.Text;
+ using s.RegularExpressions; 
+ ```
   
  `using` 지시문을 만들어서 네임스페이스를 지정할 필요 없이 네임스페이스에서 이 형식을 사용합니다. `using` 지시문은 지정한 네임스페이스에 중첩된 모든 네임스페이스에 대한 액세스 권한을 제공하지 않습니다.  
   
- 네임스페이스는 두 가지 범주인 사용자 정의 및 시스템 정의로 구분됩니다. 사용자 정의 네임스페이스는 코드에서 정의된 네임스페이스입니다. 시스템 정의 네임스페이스 목록을 보려면 [.NET Framework 클래스 라이브러리 개요](../../../standard/class-library-overview.md)를 참조하세요.  
+ 네임스페이스는 두 가지 범주인 사용자 정의 및 시스템 정의로 구분됩니다. 사용자 정의 네임스페이스는 코드에서 정의된 네임스페이스입니다. 시스템 정의 네임스페이스 목록은 [.NET API 브라우저](https://docs.microsoft.com/en-us/dotnet/api/)를 참조하세요.  
   
  다른 어셈블리의 메서드를 참조하는 예제는 [명령줄을 사용하여 어셈블리 만들기 및 사용](../../programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)을 참조하세요.  
   
@@ -79,11 +89,12 @@ class Program
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [네임스페이스 사용](../../../csharp/programming-guide/namespaces/using-namespaces.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
- [using 문](../../../csharp/language-reference/keywords/using-statement.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [네임스페이스 사용](../../../csharp/programming-guide/namespaces/using-namespaces.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
+- [using 문](../../../csharp/language-reference/keywords/using-statement.md)

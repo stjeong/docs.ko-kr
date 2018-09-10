@@ -4,12 +4,12 @@ description: dotnet publish 명령은 .NET Core 프로젝트를 디렉터리에 
 author: mairaw
 ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 38224aa8472f99df107e523667e18892384a20b0
-ms.sourcegitcommit: f6343b070f3c66877338a05c8bfb0be9985255e2
+ms.openlocfilehash: a60777d613573076f41fba3e5ed610b236884063
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39220674"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43416924"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 

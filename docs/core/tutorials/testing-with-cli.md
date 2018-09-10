@@ -4,12 +4,12 @@ description: 이 자습서에서는 명령줄에서 .NET Core 프로젝트를 �
 author: cartermp
 ms.author: mairaw
 ms.date: 05/16/2017
-ms.openlocfilehash: a49eb1d398ab80a4ece703b7889083ea967df862
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 5fdbdc115ea5cd6da54f7c43bec2aa6f82e71310
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37960985"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43400285"
 ---
 # <a name="organizing-and-testing-projects-with-the-net-core-command-line"></a>.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트
 
@@ -162,7 +162,7 @@ public class PetTests
 연습(옵션): 소유자에 대한 `Tweet!`을 생성하는 `Bird` 유형을 이전에 추가한 경우 *PetTests.cs* 파일에 테스트 메서드 `BirdTalkToOwnerReturnsTweet`을 추가하여 `TalkToOwner` 메서드가 `Bird` 유형에 대해 제대로 작동하는지 확인합니다.
 
 > [!NOTE]
-> `expected` 및 `actual` 값이 같다고 예상하는 경우에도 `Assert.NotEqual` 검사를 사용한 초기 어설션에서는 두 값이 *같지 않다*고 지정합니다. 테스트 논리를 검사하기 위해 처음에는 항상 한 번 실패하도록 테스트를 만듭니다. 이는 TDD(테스트 기반 디자인) 방법론에서 중요한 단계입니다. 테스트가 실패하는지 확인한 후에 테스트를 통과할 수 있도록 어설션을 조정합니다.
+> `expected` 및 `actual` 값이 같다고 예상하는 경우에도 `Assert.NotEqual` 검사를 사용한 초기 어설션에서는 이러한 값이 *같지 않다*고 지정합니다. 테스트 논리를 검사하기 위해 항상 먼저 실패할 테스트를 만듭니다. 테스트가 실패했음을 확인한 후 테스트를 통과할 수 있도록 어설션을 조정합니다.
 
 전체 프로젝트 구조는 다음과 같습니다.
 

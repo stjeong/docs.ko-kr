@@ -3,14 +3,14 @@ title: '방법: 문자열 내용 수정 - C# 가이드'
 ms.date: 02/26/2018
 helpviewer_keywords:
 - strings [C#], modifying
-ms.openlocfilehash: 99102fe90f5f675235e2993b7dd99f59214862d2
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 23d52a52291b3d5c36fc2ed0f299ab82aa5ffabd
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39243751"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43482282"
 ---
-# <a name="how-to-modify-string-contents-in-c"></a>방법: C#에서 문자열 내용 수정 #
+# <a name="how-to-modify-string-contents-in-c"></a>방법: C\#에서 문자열 내용 수정
 
 이 문서에서는 기존 `string`을 수정하여 `string`을 생성하는 다양한 기술을 보여 줍니다. 설명된 모든 기술은 새 `string` 개체로 수정의 결과를 반환합니다. 이를 명확하게 보여 주기 위해 모든 예제는 새 변수에 결과를 저장합니다. 그런 다음, 기존 `string` 및 각 예제를 실행할 때 수정의 결과인 `string`을 검사할 수 있습니다.
 
@@ -73,5 +73,5 @@ ms.locfileid: "39243751"
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET Framework 정규식](../../standard/base-types/regular-expressions.md)  
- [정규식 언어 - 빠른 참조](../../standard/base-types/regular-expression-language-quick-reference.md)  
+- [.NET Framework 정규식](../../standard/base-types/regular-expressions.md)  
+- [정규식 언어 - 빠른 참조](../../standard/base-types/regular-expression-language-quick-reference.md)  

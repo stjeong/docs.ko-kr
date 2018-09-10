@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: ec3ccdd823e00d148bb8a97e906132f44e7fa727
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: ec0617c5a5c1861f3596e12f3d7a7017a448239e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106673"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43388907"
 ---
 # <a name="microservices-addressability-and-the-service-registry"></a>마이크로 서비스 주소 지정 기능 및 서비스 레지스트리
 
@@ -19,7 +19,7 @@ ms.locfileid: "37106673"
 
 일부 마이크로 서비스 배포 환경(이후 섹션에서 다루는 클러스터라고 함)에서 서비스 검색은 기본 제공됩니다. 예를 들어 Azure Container Service 환경 내에서 Kubernetes 및 Marathon을 사용하는 DC/OS는 서비스 인스턴스 등록 및 등록 취소를 처리할 수 있습니다. 또한 서버 쪽 검색 라우터의 역할을 수행하는 각 클러스터 호스트에서 프록시를 실행합니다. 또 다른 예로 Azure Service Fabric이 있습니다. 여기서는 해당 기본 명명 서비스를 통해 서비스 레지스트리를 제공합니다.
 
-서비스 레지스트리와 API 게이트웨이 패턴 간에 특정 겹치기가 없습니다. 따라서 이 문제도 해결할 수 있습니다. 예를 들어는 [Service Fabric 역방향 프록시](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy)는 Service Fabrice 명명 서비스를 기반으로 하고 내부 서비스에 대한 주소를 확인할 수 있는 API 게이트웨이의 구현 형식입니다.
+서비스 레지스트리와 API 게이트웨이 패턴 간에 특정 겹치기가 없습니다. 따라서 이 문제도 해결할 수 있습니다. 예를 들어 [Service Fabric 역방향 프록시](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy)는 Service Fabrice 명명 서비스를 기반으로 하고 내부 서비스에 대한 주소 확인을 해결하는 데 도움이 되는 API 게이트웨이의 구현 형식입니다.
 
 ## <a name="additional-resources"></a>추가 자료
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 744ce1f2810eee025f071cafaa71e473b6ed4c50
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d9df1aa781bd54468d2273a335b3fda7d701854d
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392855"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43519410"
 ---
 # <a name="how-to-configure-net-framework-based-com-components-for-registration-free-activation"></a>방법: 등록이 필요 없는 활성화를 위한 .NET Framework 기반 COM 구성 요소 구성
 .NET Framework 기반 구성 요소에 대한 등록 없는 활성화는 COM 구성 요소보다 약간 더 복잡합니다. 설치 프로그램에 다음 두 개의 매니페스트가 필요합니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "33392855"
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
     ```  
   
-     매니페스트 요소와 해당 특성에 대한 자세한 내용을 보려면 [응용 프로그램 매니페스트](https://msdn.microsoft.com/library/windows/desktop/aa374191.aspx)를 참조하세요.  
+     매니페스트 요소와 해당 특성에 대한 자세한 내용을 보려면 [응용 프로그램 매니페스트](/windows/desktop/SbsCs/application-manifests)를 참조하세요.  
   
 3.  매니페스트의 소유자를 식별합니다. 다음 예제에서는 `myComApp` 버전 1이 매니페스트 파일을 소유합니다.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "33392855"
   
 5.  매니페스트 파일을 저장하고 이름을 지정합니다. 응용 프로그램 매니페스트 이름은 어셈블리 실행 파일의 이름 뒤에 .manifest 확장명이 추가된 것입니다. 예를 들어 myComApp.exe의 응용 프로그램 매니페스트 파일 이름은 myComApp.exe.manifest입니다.  
   
- COM 응용 프로그램과 동일한 디렉터리에 응용 프로그램 매니페스트를 설치할 수 있습니다. 또는 응용 프로그램의 .exe 파일에 리소스로 추가할 수 있습니다. 자세한 내용은 [About Side-by-Side Assemblies](https://msdn.microsoft.com/library/windows/desktop/ff951640.aspx)(Side-by-Side 어셈블리 정보)를 참조하세요.  
+ COM 응용 프로그램과 동일한 디렉터리에 응용 프로그램 매니페스트를 설치할 수 있습니다. 또는 응용 프로그램의 .exe 파일에 리소스로 추가할 수 있습니다. 자세한 내용은 [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)(Side-by-Side 어셈블리 정보)를 참조하세요.  
   
 #### <a name="to-create-a-component-manifest"></a>구성 요소 매니페스트를 만들려면  
   

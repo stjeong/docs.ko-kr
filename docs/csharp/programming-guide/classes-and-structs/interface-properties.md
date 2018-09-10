@@ -5,15 +5,15 @@ helpviewer_keywords:
 - properties [C#], on interfaces
 - interfaces [C#], properties
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
-ms.openlocfilehash: bfa03c7ebe82f3f6a03666d908a5fa9d4e386172
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: eea2bb524496a3db22146586df323437d9f84242
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325411"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43396733"
 ---
 # <a name="interface-properties-c-programming-guide"></a>인터페이스 속성(C# 프로그래밍 가이드)
-[interface](../../../csharp/language-reference/keywords/interface.md)에 속성을 선언할 수 있습니다. 다음은 인터페이스 인덱서 접근자의 예입니다.  
+[interface](../../../csharp/language-reference/keywords/interface.md)에 속성을 선언할 수 있습니다. 다음은 인터페이스 속성 접근자의 예입니다.  
   
  [!code-csharp[csProgGuideProperties#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/interface-properties_1.cs)]  
   

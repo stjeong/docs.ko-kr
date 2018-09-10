@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
 manager: douge
-ms.openlocfilehash: 73f61ee3358edf50c11ae10ee53650c66b1c1400
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 6d70db7139d82b6e219e2c417282333f950ef402
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925804"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43417863"
 ---
 # <a name="walkthrough-creating-a-windows-service-application-in-the-component-designer"></a>연습: 구성 요소 디자이너에서 Windows 서비스 응용 프로그램 만들기
 이 문서에서는 이벤트 로그에 메시지를 쓰는 간단한 Windows 서비스 응용 프로그램을 Visual Studio에서 만드는 방법을 보여 줍니다. 서비스를 만들고 사용하기 위해 수행하는 기본적인 단계는 다음과 같습니다.  
@@ -477,7 +477,7 @@ End Sub
      서비스를 성공적으로 제거한 경우 installutil.exe에서 서비스가 성공적으로 제거되었음을 보고합니다. 자세한 내용은 [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)을 참조하세요.  
   
 ## <a name="next-steps"></a>다음 단계  
- 다른 사용자가 Windows 서비스를 설치하는 데 사용할 수 있는 독립 실행형 설치 프로그램을 만들 수 있습니다. 그러나 이 경우 추가 단계를 수행해야 합니다. ClickOnce는 Windows 서비스를 지원하지 않으므로 게시 마법사를 사용할 수 없습니다. Microsoft가 제공하지 않는 InstallShield의 전체 버전을 사용할 수 있습니다. InstallShield에 대한 자세한 내용은 [InstallShield Limited Edition](/visualstudio/deployment/installshield-limited-edition)을 참조하세요. 또한 [Windows Installer XML 도구 집합](http://go.microsoft.com/fwlink/?LinkId=249067) 을 사용하여 Windows 서비스의 설치 관리자를 만들 수 있습니다.  
+ 다른 사용자가 Windows 서비스를 설치하는 데 사용할 수 있는 독립 실행형 설치 프로그램을 만들 수 있습니다. 그러나 이 경우 추가 단계를 수행해야 합니다. ClickOnce는 Windows 서비스를 지원하지 않으므로 게시 마법사를 사용할 수 없습니다. Microsoft가 제공하지 않는 InstallShield의 전체 버전을 사용할 수 있습니다. InstallShield에 대한 자세한 내용은 [InstallShield Limited Edition](/visualstudio/deployment/installshield-limited-edition)을 참조하세요. 또한 [Windows Installer XML 도구 집합](https://go.microsoft.com/fwlink/?LinkId=249067) 을 사용하여 Windows 서비스의 설치 관리자를 만들 수 있습니다.  
   
  설치한 서비스에 명령을 보낼 수 있는 <xref:System.ServiceProcess.ServiceController> 구성 요소를 사용해 볼 수 있습니다.  
   
@@ -487,4 +487,4 @@ End Sub
  [Windows 서비스 응용 프로그램](../../../docs/framework/windows-services/index.md)  
  [Windows 서비스 응용 프로그램 소개](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
  [방법: Windows 서비스 응용 프로그램 디버깅](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)  
- [Services (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)(서비스(Windows))
+ [Services (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)(서비스(Windows))

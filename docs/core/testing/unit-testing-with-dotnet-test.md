@@ -4,12 +4,12 @@ description: dotnet test 및 xUnit을 사용하여 샘플 솔루션을 단계별
 author: ardalis
 ms.author: wiwagn
 ms.date: 11/29/2017
-ms.openlocfilehash: 6f3b041bf690183f60b687699d878a4d5006be6f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 560ba58076fedbb1174da2cfe93796030aa9d46f
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33213332"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43404297"
 ---
 # <a name="unit-testing-c-in-net-core-using-dotnet-test-and-xunit"></a>dotnet 테스트 및 xUnit을 사용하여 .NET Core에서 C# 단위 테스트
 
@@ -134,7 +134,7 @@ namespace Prime.UnitTests.Services
 
 `[Fact]` 특성은 Test Runner에서 실행하는 테스트 메서드를 나타냅니다. *PrimeService.Tests* 폴더에서 [`dotnet test`](../tools/dotnet-test.md)를 실행하여 테스트 및 클래스 라이브러리를 빌드한 다음 테스트를 실행합니다. xUnit Test Runner에는 테스트를 실행할 프로그램 진입점이 포함되어 있습니다. `dotnet test`는 만든 단위 테스트 프로젝트를 사용하여 Test Runner를 시작합니다.
 
-테스트가 실패합니다. 구현은 아직 만들지 않았습니다. `PrimeService` 클래스에서 작동하는 가장 간단한 코드를 작성하여 이 테스트를 만듭니다. 기존 `IsPrime` 메서드 구현을 다음 코드로 바꿉니다.
+테스트가 실패합니다. 구현은 아직 만들지 않았습니다. `PrimeService` 클래스에서 작동하는 가장 간단한 코드를 작성하여 이 테스트를 통과시킵니다. 기존 `IsPrime` 메서드 구현을 다음 코드로 바꿉니다.
 
 ```csharp
 public bool IsPrime(int candidate)
@@ -171,4 +171,4 @@ if (candidate < 2)
 
 ### <a name="additional-resources"></a>추가 자료
 
-[ASP.NET Core에서 컨트롤러 논리 테스트](/aspnet/core/mvc/controllers/testing)
+- [ASP.NET Core에서 컨트롤러 논리 테스트](/aspnet/core/mvc/controllers/testing)

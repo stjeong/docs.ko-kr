@@ -4,18 +4,18 @@ description: .NET Core에서 프로그램에 대한 런타임 버전을 찾고 �
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/27/2018
-ms.openlocfilehash: d1b885ebbade4736d5f592d1dc1d4ba25a321a16
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 21697aa773abfbd88288d47323402a48c51d69ae
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874472"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43395119"
 ---
 # <a name="net-core-version-selection"></a>.NET Core 버전 선택
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
-이 문서에서는 버전을 선택하기 위해 .NET Core 도구, SDK 및 런타임에서 사용되는 정책에 대해 설명합니다. 이러한 정책은 지정된 버전을 사용하여 응용 프로그램을 실행하고 개발자와 최종 사용자 모두의 머신을 쉽게 업그레이드할 수 있도록 하는 균형을 제공합니다. 이러한 정책으로 수행하는 작업은 다음과 같습니다.
+이 문서에서는 버전을 선택하기 위해 .NET Core 도구, SDK 및 런타임에서 사용되는 정책에 대해 설명합니다. 이러한 정책은 지정된 버전을 사용하여 응용 프로그램을 실행하고 개발자와 최종 사용자 모두의 머신을 쉽게 업그레이드할 수 있도록 하는 균형을 제공합니다. 이러한 정책은 다음 작업을 수행합니다.
 
 - 보안 및 안정성 업데이트를 포함하여 .NET Core를 쉽고 효율적으로 배포합니다.
 - 대상 런타임과 독립적으로 최신 도구 및 명령을 사용합니다.
@@ -31,11 +31,11 @@ ms.locfileid: "37874472"
 
 ## <a name="the-sdk-uses-the-latest-installed-version"></a>SDK에서 설치된 최신 버전 사용
 
-SDK 명령에는 `dotnet new`, `dotnet build` 또는 `dotnet run`이 포함됩니다. `dotnet` CLI는 모든 명령에 대해 SDK 버전을 선택해야 합니다. .NET Core CLI는 기본적으로 머신에 설치된 최신 SDK를 사용합니다. .NET Core SDK v2.1.301이 설치되면 사용하는 프로젝트에서 .NET Core 런타임 2.0을 대상으로 하는 경우에도 이 SDK를 사용합니다. 이는 릴리스된 버전뿐만 아니라 미리 보기 버전에도 적용됩니다. 이전의 .NET Core 런타임 버전을 대상으로 하면서 최신 SDK 기능과 향상된 기능을 활용할 수 있습니다. 모든 프로젝트에 대해 동일한 SDK 도구를 사용하여 여러 프로젝트에서 .NET Core의 여러 런타임 버전을 대상으로 지정할 수 있습니다.
+SDK 명령에는 `dotnet new`, 또는 `dotnet run`이 포함됩니다. `dotnet` CLI는 모든 명령에 대해 SDK 버전을 선택해야 합니다. .NET Core CLI는 기본적으로 머신에 설치된 최신 SDK를 사용합니다. .NET Core SDK v2.1.301이 설치되면 사용하는 프로젝트에서 .NET Core 런타임 2.0을 대상으로 하는 경우에도 이 SDK를 사용합니다. 릴리스된 버전뿐만 아니라 미리 보기 버전도 사용합니다. 이전의 .NET Core 런타임 버전을 대상으로 하면서 최신 SDK 기능과 향상된 기능을 활용할 수 있습니다. 모든 프로젝트에 대해 동일한 SDK 도구를 사용하여 여러 프로젝트에서 .NET Core의 여러 런타임 버전을 대상으로 지정할 수 있습니다.
 
 드물지만 경우에 따라 이전 버전의 SDK를 사용해야 할 수도 있습니다. 해당 버전은 [*global.json* 파일](../tools/global-json.md)에 지정합니다. "최신 버전 사용" 정책은 *global.json*을 사용하여 설치된 최신 버전보다 이전의 .NET Core SDK 버전을 지정한다는 것을 의미합니다.
 
-*global.json*은 파일 계층 구조에서 원하는 위치에 배치할 수 있습니다. CLI는 검색된 첫 번째 *global.json*의 프로젝트 디렉터리에서 위쪽 방향으로 검색합니다. 파일 시스템의 해당 위치에 따라 지정된 *global.json*이 적용되는 프로젝트를 제어합니다. .NET CLI는 현재 작업 디렉터리에서 위쪽 경로로 반복적으로 탐색하면서 *global.json* 파일을 검색합니다. 검색된 첫 번째 *global.json* 파일에서 사용된 버전을 지정합니다. 해당 버전이 설치되어 있으면 이 버전이 사용됩니다. *global.json*에 지정된 SDK가 없으면 .NET CLI에서 설치된 최신 SDK로 롤포워드합니다. 이는 *global.json* 파일이 없는 경우의 기본 동작과 동일합니다.
+*global.json*은 파일 계층 구조에서 원하는 위치에 배치할 수 있습니다. CLI는 검색된 첫 번째 *global.json*의 프로젝트 디렉터리에서 위쪽 방향으로 검색합니다. 파일 시스템의 해당 위치에 따라 지정된 *global.json*이 적용되는 프로젝트를 제어합니다. .NET CLI는 현재 작업 디렉터리에서 위쪽 경로로 반복적으로 탐색하면서 *global.json* 파일을 검색합니다. 검색된 첫 번째 *global.json* 파일에서 사용된 버전을 지정합니다. 해당 버전이 설치되어 있으면 이 버전이 사용됩니다. *global.json*에 지정된 SDK가 없으면 .NET CLI에서 설치된 최신 SDK로 롤포워드합니다. 롤포워드는 *global.json* 파일이 없는 경우 기본 동작과 동일합니다.
 
 다음 예제에서는 *global.json* 구문을 보여 줍니다.
 
@@ -53,7 +53,7 @@ SDK 버전을 선택하는 프로세스는 다음과 같습니다.
 1. `dotnet`은 검색된 첫 번째 *global.json*에 지정된 SDK를 사용합니다.
 1. *global.json*이 없으면 `dotnet`에서 설치된 최신 SDK를 사용합니다.
 
-*global.json*에 있는 항목의 [일치 규칙](../tools/global-json.md) 섹션에서 SDK 버전 선택에 대해 자세히 알아볼 수 있습니다.
+*global.json*에 있는 문서의 [일치 규칙](../tools/global-json.md#matching-rules) 섹션에서 SDK 버전 선택에 대해 자세히 알아볼 수 있습니다.
 
 ## <a name="target-framework-monikers-define-build-time-apis"></a>대상 프레임워크 모니커에서 빌드 시간 API 정의
 

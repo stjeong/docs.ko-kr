@@ -2,12 +2,12 @@
 title: '방법: 네임스페이스로 문서 만들기(C#)(LINQ to XML)'
 ms.date: 07/20/2015
 ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
-ms.openlocfilehash: ab572e0af79d51205167ad60b1b80e8ba6b43707
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5937639fc48b82ee155450a3eaa1c7715ee3f9b9
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330693"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43478028"
 ---
 # <a name="how-to-create-a-document-with-namespaces-c-linq-to-xml"></a>방법: 네임스페이스로 문서 만들기(C#)(LINQ to XML)
 이 항목에서는 네임스페이스를 사용하여 문서를 만드는 방법을 보여 줍니다.  
@@ -58,7 +58,7 @@ Console.WriteLine(root);
 ## <a name="example"></a>예  
  다음 예제에서는 두 네임스페이스가 포함된 문서를 만드는 방법을 보여 줍니다. 두 네임스페이스 중 하나는 기본 네임스페이스이고 다른 하나는 접두사가 포함된 네임스페이스입니다.  
   
- 루트 요소에 네임스페이스 특성을 포함하면 http://www.adventure-works.com이 기본 네임스페이스가 되도록 네임스페이스가 serialize되고 www.fourthcoffee.com이 “fc” 접두사를 사용하여 serialize됩니다. 기본 네임스페이스를 선언하는 특성을 만들려면 네임스페이스 없이 이름이 "xmlns"인 특성을 만듭니다. 특성 값은 기본 네임스페이스 URI입니다.  
+ 루트 요소에 네임스페이스 특성을 포함하면 `http://www.adventure-works.com`이 기본 네임스페이스가 되도록 네임스페이스가 serialize되고 `www.fourthcoffee.com`이 "fc"의 접두사를 사용하여 serialize됩니다. 기본 네임스페이스를 선언하는 특성을 만들려면 네임스페이스 없이 이름이 "xmlns"인 특성을 만듭니다. 특성 값은 기본 네임스페이스 URI입니다.  
   
 ```csharp  
 // The http://www.adventure-works.com namespace is forced to be the default namespace.  

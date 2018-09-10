@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 643575d0-d26d-4c35-8de7-a9c403e97dd6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5581f825a23104ff005f3557de26420ee45b5c27
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d44ec0e0601383133e6c59e44cd81031918d4b6d
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592485"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43385860"
 ---
 # <a name="dataflow-task-parallel-library"></a>데이터 흐름(작업 병렬 라이브러리)
 <a name="top"></a>TPL(작업 병렬 라이브러리)은 동시성 사용 응용 프로그램의 견고성을 높이는 데 도움이 되는 데이터 흐름 구성 요소를 제공합니다. 이러한 데이터 흐름 구성 요소를 통칭하여 *TPL 데이터 흐름 라이브러리*라고 합니다. 이 데이터 흐름 모델은 정교하지 않은 데이터 흐름 및 파이프라인 작업을 위해 in-process 메시지 전달을 제공하여 행위자 기반 프로그래밍을 촉진합니다. 데이터 흐름 구성 요소는 TPL의 형식 및 예약 인프라를 바탕으로 빌드되며 비동기 프로그래밍에 대한 C#, Visual Basic 및 F# 언어 지원과 통합됩니다. 이러한 데이터 흐름 구성 요소는 비동기적으로 서로 통신해야 하는 여러 작업이 있는 경우나 데이터를 사용할 수 있게 될 때 해당 데이터를 처리하려는 경우에 유용합니다. 예를 들어 웹 카메라에서 이미지 데이터를 처리하는 응용 프로그램의 경우, 데이터 흐름 모델을 사용함으로써 응용 프로그램은 이미지 프레임을 사용할 수 있게 될 때 해당 이미지 프레임을 처리할 수 있습니다. 응용 프로그램이 명도를 보정하거나 적목 현상을 줄이는 등의 작업을 수행하여 이미지 프레임을 개선하는 경우 데이터 흐름 구성 요소의 *파이프라인*을 만들 수 있습니다. 파이프라인의 각 단계에서는 TPL이 제공하는 기능과 같은 좀더 정교하지 않은 병렬 처리 기능을 사용하여 이미지를 변환할 수도 있습니다.  
@@ -72,14 +72,14 @@ ms.locfileid: "33592485"
   
  이 예제에서는 예외가 예외 데이터 흐름 블록의 대리자에서 처리되지 않는 경우를 보여 줍니다. 이러한 블록의 본문에서 예외를 처리하는 것이 좋습니다. 그러나 이렇게 할 수 없는 경우 블록은 메시지가 취소된 것처럼 동작하고 들어오는 메시지를 처리하지 않습니다.  
   
- 데이터 흐름 블록이 명시적으로 취소되는 경우 <xref:System.AggregateException> 개체는 <xref:System.OperationCanceledException> 속성에 <xref:System.AggregateException.InnerExceptions%2A>을 포함합니다. 데이터 흐름 취소에 대한 자세한 내용은 이 문서 뒷부분의 취소 사용을 참조하십시오.  
+ 데이터 흐름 블록이 명시적으로 취소되는 경우 <xref:System.AggregateException> 개체는 <xref:System.OperationCanceledException> 속성에 <xref:System.AggregateException.InnerExceptions%2A>을 포함합니다. 데이터 흐름 취소에 대한 자세한 내용은 [취소 사용](#enabling-cancellation) 섹션을 참조하세요.  
   
- 데이터 흐름 블록의 완료 상태를 확인하는 두 번째 방법은 완료 작업의 연속을 사용하거나, C# 및 Visual Basic의 비동기 언어 기능을 사용하여 완료 작업을 비동기적으로 기다리는 것입니다. <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> 메서드에 제공하는 대리자는 선행 작업을 나타내는 <xref:System.Threading.Tasks.Task> 개체를 사용합니다. <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> 속성의 경우 연속의 대리자는 완료 작업 자체를 사용합니다. 다음 예제는 <xref:System.Threading.Tasks.Task.ContinueWith%2A> 메서드를 사용하여 전반적인 데이터 흐름 작업의 상태를 출력하는 완료 작업을 만드는 점을 제외하고 이전 예제와 유사합니다.  
+ 데이터 흐름 블록의 완료 상태를 확인하는 두 번째 방법은 완료 작업의 연속을 사용하거나, C# 및 Visual Basic의 비동기 언어 기능을 사용하여 완료 작업을 비동기적으로 기다리는 것입니다. <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> 메서드에 제공하는 대리자는 선행 작업을 나타내는 <xref:System.Threading.Tasks.Task> 개체를 사용합니다. <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> 속성의 경우 연속의 대리자는 완료 작업 자체를 사용합니다. 다음 예제는 <xref:System.Threading.Tasks.Task.ContinueWith%2A> 메서드를 사용하여 전반적인 데이터 흐름 작업의 상태를 출력하는 연속 작업을 만드는 점을 제외하고 이전 예제와 유사합니다.  
   
  [!code-csharp[TPLDataflow_Overview#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_overview/cs/program.cs#11)]
  [!code-vb[TPLDataflow_Overview#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_overview/vb/program.vb#11)]  
   
- 연속 작업의 본문에서 <xref:System.Threading.Tasks.Task.IsCanceled%2A>와 같은 속성을 사용하여 데이터 흐름 블록의 완료 상태에 대한 추가 정보를 확인할 수도 있습니다. 연속 작업 및 연속 작업이 취소 및 오류 처리와 어떻게 관련되는지에 대한 자세한 내용은 [연속 작업을 사용하여 작업 연결](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [작업 취소](../../../docs/standard/parallel-programming/task-cancellation.md), [예외 처리](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md) 및 [NIB: 방법: 작업에서 throw된 예외 처리](https://msdn.microsoft.com/library/d6c47ec8-9de9-4880-beb3-ff19ae51565d)를 참조하세요.  
+ 연속 작업의 본문에서 <xref:System.Threading.Tasks.Task.IsCanceled%2A>와 같은 속성을 사용하여 데이터 흐름 블록의 완료 상태에 대한 추가 정보를 확인할 수도 있습니다. 연속 작업과 연속 작업의 취소 및 오류 처리와 관련된 방법에 대한 자세한 내용은 [연속 작업을 사용하여 작업 연결](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [작업 취소](../../../docs/standard/parallel-programming/task-cancellation.md) 및 [예외 처리](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md)를 참조하세요.  
   
  [[맨 위로 이동](#top)]  
   
@@ -124,7 +124,7 @@ ms.locfileid: "33592485"
  실행 블록은 수신된 데이터의 각 조각에 대해 사용자가 제공한 대리자를 호출합니다. TPL 데이터 흐름 라이브러리는 세 가지 실행 블록 형식인 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602?displayProperty=nameWithType>을 제공합니다.  
   
 #### <a name="actionblockt"></a>ActionBlock(T)  
- <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 클래스는 데이터를 받을 때 대리자를 호출하는 대상 블록입니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체를 데이터를 사용할 수 있게 될 때 비동기적으로 실행되는 대리자로 간주할 수 있습니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체에 제공하는 대리자는 <xref:System.Action> 형식이나 `System.Func\<TInput, Task>` 형식일 수 있습니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>과 함께 <xref:System.Action> 개체를 사용하는 경우 각 입력 요소의 처리는 대리자가 반환될 때 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>와 함께 `System.Func\<TInput, Task>` 개체를 사용하는 경우 각 입력 요소의 처리는 반환된 <xref:System.Threading.Tasks.Task> 개체가 완료되는 경우에만 완료된 것으로 간주됩니다. 이 두 가지 메커니즘을 사용하여 각 입력 요소의 동기적 처리와 비동기적 처리 모두에 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>을 사용할 수 있습니다.  
+ <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 클래스는 데이터를 받을 때 대리자를 호출하는 대상 블록입니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체를 데이터를 사용할 수 있게 될 때 비동기적으로 실행되는 대리자로 간주할 수 있습니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체에 제공하는 대리자는 <xref:System.Action%601> 형식이나 `System.Func<TInput, Task>` 형식일 수 있습니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>과 함께 <xref:System.Action%601> 개체를 사용하는 경우 각 입력 요소의 처리는 대리자가 반환될 때 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>와 함께 `System.Func<TInput, Task>` 개체를 사용하는 경우 각 입력 요소의 처리는 반환된 <xref:System.Threading.Tasks.Task> 개체가 완료되는 경우에만 완료된 것으로 간주됩니다. 이 두 가지 메커니즘을 사용하여 각 입력 요소의 동기적 처리와 비동기적 처리 모두에 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>을 사용할 수 있습니다.  
   
  다음 기본 예제에서는 여러 <xref:System.Int32> 값을 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체에 게시합니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체는 해당 값을 콘솔에 출력합니다. 그런 다음 이 예제에서는 블록을 완료된 상태로 설정하고 모든 데이터 흐름 작업이 완료될 때까지 대기합니다.  
   
@@ -134,7 +134,7 @@ ms.locfileid: "33592485"
  <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 클래스와 함께 대리자를 사용하는 방법을 보여주는 전체 예제는 [방법: 데이터 흐름 블록에서 데이터를 받을 경우 작업 수행](../../../docs/standard/parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md)을 참조하세요.  
   
 #### <a name="transformblocktinput-toutput"></a>TransformBlock(TInput, TOutput)  
- <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 클래스는 소스와 대상 역할을 모두 수행하는 점을 제외하고 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 클래스와 유사합니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체에 전달하는 대리자는 `TOutput` 형식의 값을 반환합니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체에 제공하는 대리자는 `System.Func<TInput, TOutput>` 형식이나 `System.Func<TInput, Task>` 형식일 수 있습니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>와 함께 `System.Func\<TInput, TOutput>` 개체를 사용하는 경우 각 입력 요소의 처리는 대리자가 반환될 때 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>와 함께 사용된 `System.Func<TInput, Task<TOutput>>` 개체를 사용하는 경우 각 입력 요소의 처리는 반환된 <xref:System.Threading.Tasks.Task> 개체가 완료되는 경우에만 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>과 마찬가지로, 이 두 가지 메커니즘을 사용함으로써 각 입력 요소의 동기적 처리와 비동기적 처리 모두에 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>을 사용할 수 있습니다.  
+ <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 클래스는 소스와 대상 역할을 모두 수행하는 점을 제외하고 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 클래스와 유사합니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체에 전달하는 대리자는 `TOutput` 형식의 값을 반환합니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체에 제공하는 대리자는 `System.Func<TInput, TOutput>` 형식이나 `System.Func<TInput, Task<TOutput>>` 형식일 수 있습니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>와 함께 `System.Func<TInput, TOutput>` 개체를 사용하는 경우 각 입력 요소의 처리는 대리자가 반환될 때 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>와 함께 사용된 `System.Func<TInput, Task<TOutput>>` 개체를 사용하는 경우 각 입력 요소의 처리는 반환된 <xref:System.Threading.Tasks.Task%601> 개체가 완료되는 경우에만 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>과 마찬가지로, 이 두 가지 메커니즘을 사용함으로써 각 입력 요소의 동기적 처리와 비동기적 처리 모두에 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>을 사용할 수 있습니다.  
   
  다음 기본 예제에서는 입력의 제곱근을 계산하는 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체를 만듭니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체는 <xref:System.Int32> 값을 입력으로 사용하고 <xref:System.Double> 값을 출력으로 생성합니다.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "33592485"
  Windows Forms 응용 프로그램에서 이미지 처리를 수행하는 데이터 흐름 네트워크에서 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>을 사용하는 전체 예제는 [연습: Windows Forms 응용 프로그램에서 데이터 흐름 사용](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md)을 참조하세요.  
   
 #### <a name="transformmanyblocktinput-toutput"></a>TransformManyBlock(TInput, TOutput)  
- <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 클래스는 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>이 각 입력 값에 대해 하나의 출력 값이 아니라 각 입력 값에 대해 0개 이상의 출력 값을 생성하는 점을 제외하고 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 클래스와 유사합니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 개체에 제공하는 대리자는 `System.Func<TInput, IEnumerable<TOutput>>` 또는 `type System.Func<TInput, Task<IEnumerable<TOutput>>>` 형식일 수 있습니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602>와 함께 `System.Func<TInput, IEnumerable<TOutput>>` 개체를 사용하는 경우 각 입력 요소의 처리는 대리자가 반환될 때 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602>와 함께 `System.Func<TInput, Task<IEnumerable<TOutput>>>` 개체를 사용하는 경우 각 입력 요소의 처리는 반환된 `System.Threading.Tasks.Task<IEnumerable<TOutput>>` 개체가 완료되는 경우에만 완료된 것으로 간주됩니다.  
+ <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 클래스는 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>이 각 입력 값에 대해 하나의 출력 값이 아니라 각 입력 값에 대해 0개 이상의 출력 값을 생성하는 점을 제외하고 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 클래스와 유사합니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 개체에 제공하는 대리자는 `System.Func<TInput, IEnumerable<TOutput>>` 형식이나 `System.Func<TInput, Task<IEnumerable<TOutput>>>` 형식일 수 있습니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602>와 함께 `System.Func<TInput, IEnumerable<TOutput>>` 개체를 사용하는 경우 각 입력 요소의 처리는 대리자가 반환될 때 완료된 것으로 간주됩니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602>와 함께 `System.Func<TInput, Task<IEnumerable<TOutput>>>` 개체를 사용하는 경우 각 입력 요소의 처리는 반환된 `System.Threading.Tasks.Task<IEnumerable<TOutput>>` 개체가 완료되는 경우에만 완료된 것으로 간주됩니다.  
   
  다음 기본 예제에서는 문자열을 개별 문자 시퀀스로 분할하는 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 개체를 만듭니다. <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 개체는 <xref:System.String> 값을 입력으로 사용하고 <xref:System.Char> 값을 출력으로 생성합니다.  
   
@@ -235,7 +235,7 @@ ms.locfileid: "33592485"
  <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A>의 기본값은 1이며, 이 경우 데이터 흐름 블록이 한 번에 하나의 메시지를 처리하도록 보장됩니다. 이 속성을 1보다 큰 값으로 설정하면 데이터 흐름 블록이 여러 메시지를 동시에 처리할 수 있습니다. 이 속성을 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.Unbounded?displayProperty=nameWithType>로 설정하면 내부 작업 스케줄러가 최대 동시성 수준을 관리할 수 있습니다.  
   
 > [!IMPORTANT]
->  최대 병렬 처리 수준을 1보다 크게 지정하는 경우 여러 메시지가 동시에 처리되므로 메시지가 수신된 순서대로 처리되지 않을 수 있습니다. 그러나 메시지가 블록에서 출력되는 순서는 올바르게 정렬됩니다.  
+>  최대 병렬 처리 수준을 1보다 크게 지정하는 경우 여러 메시지가 동시에 처리되므로 메시지가 수신된 순서대로 처리되지 않을 수 있습니다. 그러나 메시지가 블록에서 출력되는 순서는 메시지가 수신되는 순서와 동일합니다.  
   
  <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> 속성이 최대 병렬 처리 수준을 나타내기 때문에 데이터 흐름 블록은 지정한 것보다 낮은 병렬 처리 수준으로 실행될 수 있습니다. 데이터 흐름 블록은 기능적 요구 사항을 충족하기 위해서나 사용 가능한 시스템 리소스가 부족하기 때문에 보다 낮은 병렬 처리 수준을 사용할 수도 있습니다. 데이터 흐름 블록은 지정한 것보다 많은 병렬 처리를 선택하지 않습니다.  
   

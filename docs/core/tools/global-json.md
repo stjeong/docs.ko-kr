@@ -3,14 +3,14 @@ title: global.json 개요
 description: .NET Core CLI 명령을 실행할 때 global.json 파일을 사용하여 .NET Core SDK 버전을 설정하는 방법에 대해 알아보세요.
 author: mairaw
 ms.author: mairaw
-ms.date: 07/02/2018
+ms.date: 07/30/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: a7c9301e1beea49eebace5c8f8a7d159a8c12466
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 8241b3afb518acf237c7b6181085e19576e5ce2f
+ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936973"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43252962"
 ---
 # <a name="globaljson-overview"></a>global.json 개요
 
@@ -103,8 +103,8 @@ SDK 버전은 현재 다음과 같은 부분으로 구성됩니다.
 > [!WARNING]
 > 스타트업 프로젝트 '{startupProject}'는 '.NETCoreApp' 버전 '{targetFrameworkVersion}' 프레임워크를 대상으로 합니다. 이 버전의 Entity Framework Core .NET 명령줄 도구는 버전 2.0 이상만 지원합니다. 이전 버전의 도구 사용에 대한 자세한 내용은 https://go.microsoft.com/fwlink/?linkid=871254를 참조하세요.
 
-.NET Core SDK 2.1(v. 2.1.300)부터는 `dotnet ef` 명령이 SDK에 포함됩니다. 이 경고는 프로젝트가 EF Core 1.0 또는 1.1을 대상으로 하고 .NET Core SDK 2.1 이상 버전과 호환되지 않음을 나타냅니다. 프로젝트를 컴파일하려면 .NET Core SDK 2.0(v. 2.1.201) 이전 버전을 머신에 설치합니다. 자세한 내용은 [EF Core .NET 명령줄 도구](/ef/core/miscellaneous/cli/dotnet)를 참조하세요.
+.NET Core SDK 2.1(v. 2.1.300)부터는 `dotnet ef` 명령이 SDK에 포함됩니다. 이 경고는 프로젝트가 EF Core 1.0 또는 1.1을 대상으로 하고 .NET Core SDK 2.1 이상 버전과 호환되지 않음을 나타냅니다. 프로젝트를 컴파일하려면 .NET Core SDK 2.0(v. 2.1.201) 이전 버전을 머신에 설치하고 *global.json* 파일을 사용하여 원하는 SDK 버전을 정의합니다. `dotnet ef` 명령에 대한 자세한 내용은 [EF Core .NET 명령줄 도구](/ef/core/miscellaneous/cli/dotnet)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 SDK를 확인하는 방법](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)
+* [프로젝트 SDK를 확인하는 방법](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)

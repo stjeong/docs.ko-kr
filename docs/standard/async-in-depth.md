@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.openlocfilehash: fbee7e6ad0fad312e9e5524f7b3fcc7c417ad47b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2b156d043f5a4b72f4cb7423708b41fdd0e475dd
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577429"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43385698"
 ---
 # <a name="async-in-depth"></a>비동기에 대한 자세한 설명
 
@@ -114,7 +114,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 
 또한 UI 스레드에 작업을 디스패치하는 경우(예: UI 업데이트) `async` 메서드를 사용하면 간단하며 추가 작업(예: 스레드로부터 안전한 대리자 호출)이 필요하지 않습니다.
 
-## <a name="deeper-dive-into-task-and-taskt-for-a-cpu-bound-operation"></a>CPU 바인딩된 작업에 대한 Task 및 Task<T> 심층 분석
+## <a name="deeper-dive-into-task-and-tasklttgt-for-a-cpu-bound-operation"></a>CPU 바인딩된 작업에 대한 Task 및 Task&lt;T&gt; 심층 분석
 
 CPU 바인딩된 `async` 코드는 I/O 바인딩된 `async` 코드와 약간 다릅니다.  CPU에서 작업이 수행되기 때문에 스레드를 계산 전용으로 지정할 방법이 없습니다.  `async` 및 `await`를 사용하면 깔끔하게 백그라운드 스레드를 조작하고 비동기 메서드 호출자를 응답 가능한 상태로 유지할 수 있습니다.  이 경우 공유 데이터는 보호되지 않습니다.  공유 데이터를 사용하는 경우 적절한 동기화 전략을 적용해야 합니다.
 

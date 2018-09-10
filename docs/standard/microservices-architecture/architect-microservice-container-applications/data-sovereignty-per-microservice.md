@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 1d66f5d40234e689685b1b8c36367cc9dc2fc7c6
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 6a3fc0e86de673fea5f8e81c14c6456a2256aaa6
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106868"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "43408549"
 ---
 # <a name="data-sovereignty-per-microservice"></a>마이크로 서비스별 데이터 주권
 
@@ -25,7 +25,7 @@ ms.locfileid: "37106868"
 
 **그림 4-7**. 데이터 주권 비교: 모놀리식 데이터베이스와 마이크로 서비스 비교
 
-중앙 집중식 데이터베이스 접근 방식은 처음에는 간단해 보이고 엔터티를 여러 하위 시스템에 재사용하여 모든 것을 일관적으로 유지할 수 있는 것처럼 보입니다. 그러나 결국에는 여러 하위 시스템을 처리하는 거대한 테이블이 생기고, 대부분의 경우 필요 없는 특성과 열이 포함됩니다. 단거리 하이킹, 하루가 걸리는 자동차 여행, 지질 연구에 똑같은 물리적 맵을 사용하는 것에 비유할 수 있습니다.
+중앙 집중식 데이터베이스 접근 방식은 처음에는 간단해 보이고 엔터티를 여러 하위 시스템에 재사용하여 모든 것을 일관적으로 유지할 수 있는 것처럼 보입니다. 그러나 결국에는 여러 하위 시스템을 처리하는 거대한 테이블이 생기고, 대부분의 경우 필요 없는 특성과 열이 포함됩니다. 단거리 하이킹, 하루가 걸리는 자동차 여행 및 지질 연구에 똑같은 물리적 맵을 사용하는 것에 비유할 수 있습니다.
 
 일반적으로 단일 관계형 데이터베이스를 사용하는 모놀리식 응용 프로그램의 두 가지 주요 이점은 [ACID 트랜잭션](https://en.wikipedia.org/wiki/ACID) 및 SQL 언어로, 둘 다 응용 프로그램과 관련된 모든 테이블 및 데이터에서 작동합니다. 이 접근 방식은 여러 테이블의 데이터를 결합하는 쿼리를 손쉽게 작성하는 방법을 제공합니다.
 

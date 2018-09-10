@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 10dd7e007ecd24ec3f127ab9c102cd758dfc7d75
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2c26f4602623e1eb8979ef08c5d14404cc84e031
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579849"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484866"
 ---
 # <a name="formatting-types-in-net"></a>.NET의 서식 지정 형식
 <a name="Introduction"></a> 형식 지정은 대개 결과 문자열을 사용자에게 표시하거나 deserialize하여 원본 데이터 형식으로 복원하기 위해 클래스, 구조체 또는 열거형 값의 인스턴스를 해당 문자열 표현으로 변환하는 프로세스입니다. 이 변환 프로세스에는 다음과 같은 여러 가지 문제점이 나타날 수 있습니다.  
@@ -120,7 +120,7 @@ ms.locfileid: "33579849"
  [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]  
   
 > [!WARNING]
->  [!INCLUDE[win81](../../../includes/win81-md.md)]부터 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 에는 기본 형식 지원을 제공하며 단일 메서드( [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) )를 사용하는 [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx)인터페이스가 포함됩니다. 그러나 관리되는 형식은 `IStringable` 인터페이스를 구현하지 않는 것이 좋습니다. 자세한 내용은 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 참조 페이지의 "`IStringable` 및 <xref:System.Object.ToString%2A?displayProperty=nameWithType> 인터페이스" 단원을 참조하세요.  
+>  [!INCLUDE[win81](../../../includes/win81-md.md)]부터 [!INCLUDE[wrt](../../../includes/wrt-md.md)]에는 기본 형식 지원을 제공하는 단일 메서드([IStringable.ToString](https://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx))를 사용하는 [IStringable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx)인터페이스가 포함됩니다. 그러나 관리되는 형식은 `IStringable` 인터페이스를 구현하지 않는 것이 좋습니다. 자세한 내용은 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 참조 페이지의 "`IStringable` 및 <xref:System.Object.ToString%2A?displayProperty=nameWithType> 인터페이스" 단원을 참조하세요.  
   
  인터페이스를 제외한 모든 형식이 <xref:System.Object>에서 파생되기 때문에 이 함수는 사용자 지정 클래스 또는 구조체에 자동으로 제공됩니다. 그러나 기본 `ToString` 메서드에서 제공하는 기능은 제한되어 있기 때문에 형식을 정의하더라도 해당 형식의 인스턴스에 대한 정보를 제공할 수 없습니다. 이 개체에 대한 정보를 제공하는 개체의 문자열 표현을 제공하려면 `ToString` 메서드를 재정의해야 합니다.  
   
