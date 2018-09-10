@@ -1,6 +1,6 @@
 ---
 title: 스레딩 개체 및 기능
-ms.date: 03/30/2017
+ms.date: 08/16/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - threading [.NET Framework], features
@@ -8,68 +8,39 @@ helpviewer_keywords:
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1d689aeb91ad79b776c3b93c1809ec46947ea60b
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 2d56d962279120a03a6e4b89154ac1429ea5479e
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874789"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43483660"
 ---
-# <a name="threading-objects-and-features"></a><span data-ttu-id="c1f10-102">스레딩 개체 및 기능</span><span class="sxs-lookup"><span data-stu-id="c1f10-102">Threading Objects and Features</span></span>
-<span data-ttu-id="c1f10-103">.NET Framework에서는 다중 스레드 응용 프로그램을 만들고 관리하는 데 도움이 되는 많은 개체를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-103">The .NET Framework provides a number of objects that help you create and manage multithreaded applications.</span></span> <span data-ttu-id="c1f10-104">관리되는 스레드는 <xref:System.Threading.Thread> 클래스를 통해 표현됩니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-104">Managed threads are represented by the <xref:System.Threading.Thread> class.</span></span> <span data-ttu-id="c1f10-105"><xref:System.Threading.ThreadPool> 클래스는 다중 스레드 백그라운드 작업을 쉽게 만들고 관리할 수 있게 해줍니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-105">The <xref:System.Threading.ThreadPool> class provides easy creation and management of multithreaded background tasks.</span></span> <span data-ttu-id="c1f10-106"><xref:System.ComponentModel.BackgroundWorker> 클래스는 사용자 인터페이스와 상호 작용하는 작업에 대해 동일한 기능을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-106">The <xref:System.ComponentModel.BackgroundWorker> class does the same for tasks that interact with the user interface.</span></span> <span data-ttu-id="c1f10-107"><xref:System.Threading.Timer> 클래스는 정해진 간격마다 백그라운드 작업을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-107">The <xref:System.Threading.Timer> class executes background tasks at timed intervals.</span></span>  
-  
- <span data-ttu-id="c1f10-108">또한 .NET Framework 버전 2.0에서 도입된 <xref:System.Threading.Semaphore> 및 <xref:System.Threading.EventWaitHandle> 클래스를 포함하여 스레드 작업을 동기화하는 많은 클래스가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-108">In addition, there are a number of classes that synchronize activities of threads, including the <xref:System.Threading.Semaphore> and <xref:System.Threading.EventWaitHandle> classes introduced in the .NET Framework version 2.0.</span></span> <span data-ttu-id="c1f10-109">이러한 클래스의 기능은 [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)에서 비교합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-109">The features of these classes are compared in [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).</span></span>  
-  
-## <a name="in-this-section"></a><span data-ttu-id="c1f10-110">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="c1f10-110">In This Section</span></span>  
- [<span data-ttu-id="c1f10-111">관리되는 스레드 풀</span><span class="sxs-lookup"><span data-stu-id="c1f10-111">The Managed Thread Pool</span></span>](../../../docs/standard/threading/the-managed-thread-pool.md)  
- <span data-ttu-id="c1f10-112">직접 스레드 관리를 수행할 필요 없이 스레드에 작업을 실행하도록 요청할 수 있게 해주는 **ThreadPool** 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-112">Explains the **ThreadPool** class, which enables you to request a thread to execute a task without having to do any thread management yourself.</span></span>  
-  
- [<span data-ttu-id="c1f10-113">타이머</span><span class="sxs-lookup"><span data-stu-id="c1f10-113">Timers</span></span>](../../../docs/standard/threading/timers.md)  
- <span data-ttu-id="c1f10-114">다중 스레드 환경에서 사용할 수 있는 타이머에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-114">Describes timers that can be used in a multithreaded environment.</span></span>  
-  
- [<span data-ttu-id="c1f10-115">모니터</span><span class="sxs-lookup"><span data-stu-id="c1f10-115">Monitors</span></span>](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
- <span data-ttu-id="c1f10-116">**Monitor** 클래스를 사용하여 멤버에 대한 액세스를 동기화하거나 고유한 스레드 관리 유형을 빌드하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-116">Explains how to use the **Monitor** class to synchronize access to a member or to build your own thread management types.</span></span>  
-  
- [<span data-ttu-id="c1f10-117">대기 핸들</span><span class="sxs-lookup"><span data-stu-id="c1f10-117">Wait Handles</span></span>](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
- <span data-ttu-id="c1f10-118">이벤트 대기 핸들, 뮤텍스 및 세마포에 대한 추상 기본 클래스로 여러 동기화 이벤트를 대기할 수 있게 해주는 <xref:System.Threading.WaitHandle> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-118">Describes the <xref:System.Threading.WaitHandle> class, the abstract base class for event wait handles, mutexes, and semaphores, which enables waiting for multiple synchronization events.</span></span>  
-  
- [<span data-ttu-id="c1f10-119">EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent</span><span class="sxs-lookup"><span data-stu-id="c1f10-119">EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent</span></span>](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
- <span data-ttu-id="c1f10-120">신호 전송 및 신호 대기를 통해 스레드 작업을 동기화하는 데 사용되는 관리되는 이벤트 대기 핸들을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-120">Describes managed event wait handles, which are used to synchronize thread activities by signaling and waiting for signals.</span></span>  
-  
- [<span data-ttu-id="c1f10-121">뮤텍스</span><span class="sxs-lookup"><span data-stu-id="c1f10-121">Mutexes</span></span>](../../../docs/standard/threading/mutexes.md)  
- <span data-ttu-id="c1f10-122"><xref:System.Threading.Mutex>를 사용하여 개체에 대한 액세스를 동기화하거나 고유한 동기화 메커니즘을 빌드하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-122">Explains how to use a <xref:System.Threading.Mutex> to synchronize access to an object or to build your own synchronization mechanisms.</span></span>  
-  
- [<span data-ttu-id="c1f10-123">연동 작업</span><span class="sxs-lookup"><span data-stu-id="c1f10-123">Interlocked Operations</span></span>](../../../docs/standard/threading/interlocked-operations.md)  
- <span data-ttu-id="c1f10-124"><xref:System.Threading.Interlocked> 클래스를 사용하여 값을 증가 또는 감소시키고 단일 원자성 작업에 값을 저장하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-124">Explains how to use the <xref:System.Threading.Interlocked> class to increment or decrement a value and store the value in a single atomic operation.</span></span>  
-  
- [<span data-ttu-id="c1f10-125">판독기 및 작성기 잠금</span><span class="sxs-lookup"><span data-stu-id="c1f10-125">Reader-Writer Locks</span></span>](../../../docs/standard/threading/reader-writer-locks.md)  
- <span data-ttu-id="c1f10-126">단일 작성기/다중 판독기 의미 체계를 구현하는 잠금을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-126">Defines a lock that implements single-writer/multiple-reader semantics.</span></span>  
-  
- [<span data-ttu-id="c1f10-127">세마포 및 SemaphoreSlim</span><span class="sxs-lookup"><span data-stu-id="c1f10-127">Semaphore and SemaphoreSlim</span></span>](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)  
- <span data-ttu-id="c1f10-128"><xref:System.Threading.Semaphore> 개체 및 이 개체를 사용하여 제한된 리소스에 대한 액세스를 제어하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-128">Describes <xref:System.Threading.Semaphore> objects and explains how to use them to control access to limited resources.</span></span>  
-  
- [<span data-ttu-id="c1f10-129">동기화 기본 형식 개요</span><span class="sxs-lookup"><span data-stu-id="c1f10-129">Overview of Synchronization Primitives</span></span>](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
- <span data-ttu-id="c1f10-130">관리되는 스레드 잠금 및 동기화를 위해 제공되는 .NET Framework 클래스의 기능을 비교합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-130">Compares the features of the .NET Framework classes provided for locking and synchronizing managed threads.</span></span>  
-  
- [<span data-ttu-id="c1f10-131">장벽</span><span class="sxs-lookup"><span data-stu-id="c1f10-131">Barrier</span></span>](../../../docs/standard/threading/barrier.md)  
- <span data-ttu-id="c1f10-132">단계별 작업에서 스레드를 조정하기 위해 장벽 패턴을 구현하는 <xref:System.Threading.Barrier> 개체를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-132">Describes <xref:System.Threading.Barrier> objects that implement the barrier pattern for coordination of threads in phased operations.</span></span>  
-  
- [<span data-ttu-id="c1f10-133">스핀 잠금</span><span class="sxs-lookup"><span data-stu-id="c1f10-133">SpinLock</span></span>](../../../docs/standard/threading/spinlock.md)  
- <span data-ttu-id="c1f10-134">특정 하위 수준 시나리오에 대한 Monitor 클래스의 경량 대체 항목인 <xref:System.Threading.SpinLock>을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-134">Describes <xref:System.Threading.SpinLock>, a lightweight alternative to the Monitor class for certain low-level scenarios.</span></span>  
-  
- [<span data-ttu-id="c1f10-135">스핀 대기</span><span class="sxs-lookup"><span data-stu-id="c1f10-135">SpinWait</span></span>](../../../docs/standard/threading/spinwait.md)  
- <span data-ttu-id="c1f10-136">커널 기반 대기를 시작하기 전에 사용 중인 회전을 수행하는 낮은 수준의 동기화 기본 형식인 <xref:System.Threading.SpinWait>를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-136">Describes <xref:System.Threading.SpinWait>, a low level synchronization primitive that performs busy spinning prior to initiating a kernel-based wait.</span></span>  
-  
-## <a name="reference"></a><span data-ttu-id="c1f10-137">참조</span><span class="sxs-lookup"><span data-stu-id="c1f10-137">Reference</span></span>  
- <xref:System.Threading.Thread>  
- <span data-ttu-id="c1f10-138">비관리 코드에서 가져왔는지 또는 관리되는 응용 프로그램에서 만들어졌는지에 관계없이 관리되는 스레드를 나타내는 **Thread** 클래스에 대한 참조 설명서를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-138">Provides reference documentation for the **Thread** class, which represents a managed thread, whether it came from unmanaged code or was created in a managed application.</span></span>  
-  
- <xref:System.ComponentModel.BackgroundWorker>  
- <span data-ttu-id="c1f10-139">사용자 인터페이스 스레드에서 발생하는 이벤트를 통해 통신하여 사용자 인터페이스와 상호 작용하는 백그라운드 작업을 사용하도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-139">Enables background tasks that interact with the user interface, communicating via events raised on the user-interface thread.</span></span>  
-  
-## <a name="related-sections"></a><span data-ttu-id="c1f10-140">관련 단원</span><span class="sxs-lookup"><span data-stu-id="c1f10-140">Related Sections</span></span>  
- [<span data-ttu-id="c1f10-141">비동기 파일 I/O</span><span class="sxs-lookup"><span data-stu-id="c1f10-141">Asynchronous File I/O</span></span>](../../../docs/standard/io/asynchronous-file-i-o.md)  
- <span data-ttu-id="c1f10-142">I/O 비동기 완료 포트가 스레드 풀을 사용하여 입출력 작업이 완료된 경우에만 처리를 요청하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-142">Describes how I/O asynchronous completion ports use the thread pool to require processing only when an input/output operation completes.</span></span>  
-  
- [<span data-ttu-id="c1f10-143">TPL(작업 병렬 라이브러리)</span><span class="sxs-lookup"><span data-stu-id="c1f10-143">Task Parallel Library (TPL)</span></span>](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
- <span data-ttu-id="c1f10-144">[!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] 이상에서 다중 스레드 프로그래밍에 권장되는 접근 방식을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c1f10-144">Describes the recommended approach for multithreaded programming in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] and later.</span></span>
+# <a name="threading-objects-and-features"></a><span data-ttu-id="330af-102">스레딩 개체 및 기능</span><span class="sxs-lookup"><span data-stu-id="330af-102">Threading objects and features</span></span>
+
+<span data-ttu-id="330af-103"><xref:System.Threading.Thread?displayProperty=nameWithType> 클래스와 함께 .NET 다중 스레드 응용 프로그램을 개발하는 데 도움이 되는 여러 클래스를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-103">Along with the <xref:System.Threading.Thread?displayProperty=nameWithType> class, .NET provides a number of classes that help you develop multithreaded applications.</span></span> <span data-ttu-id="330af-104">다음 문서에서는 해당 클래스의 개요를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-104">The following articles provide overview of those classes:</span></span>
+
+|<span data-ttu-id="330af-105">제목</span><span class="sxs-lookup"><span data-stu-id="330af-105">Title</span></span>|<span data-ttu-id="330af-106">설명</span><span class="sxs-lookup"><span data-stu-id="330af-106">Description</span></span>|  
+|-----------|-----------------|  
+|[<span data-ttu-id="330af-107">관리되는 스레드 풀</span><span class="sxs-lookup"><span data-stu-id="330af-107">The managed thread pool</span></span>](the-managed-thread-pool.md)|<span data-ttu-id="330af-108">.NET에서 관리하는 작업자 스레드 풀을 제공하는 <xref:System.Threading.ThreadPool?displayProperty=nameWithType> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-108">Describes the <xref:System.Threading.ThreadPool?displayProperty=nameWithType> class, which provides a pool of worker threads that are managed by .NET.</span></span>|  
+|[<span data-ttu-id="330af-109">타이머</span><span class="sxs-lookup"><span data-stu-id="330af-109">Timers</span></span>](timers.md)|<span data-ttu-id="330af-110">다중 스레드 환경에서 사용할 수 있는 타이머에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-110">Describes timers that can be used in a multithreaded environment.</span></span>|
+|[<span data-ttu-id="330af-111">동기화 기본 형식 개요</span><span class="sxs-lookup"><span data-stu-id="330af-111">Overview of synchronization primitives</span></span>](overview-of-synchronization-primitives.md)|<span data-ttu-id="330af-112">데이터에 대한 엑세스를 동기화하거나 스레드 상호 작용을 제어하는 데 사용할 수 있는 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-112">Describes classes that can be used to synchronize access to data or control thread interaction.</span></span>|
+|[<span data-ttu-id="330af-113">EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent</span><span class="sxs-lookup"><span data-stu-id="330af-113">EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent</span></span>](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|<span data-ttu-id="330af-114">신호 전송 및 신호 대기를 통해 스레드 작업을 동기화하는 데 사용되는 관리되는 이벤트 대기 핸들을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-114">Describes managed event wait handles, which are used to synchronize thread activities by signaling and waiting for signals.</span></span>|
+|[<span data-ttu-id="330af-115">뮤텍스</span><span class="sxs-lookup"><span data-stu-id="330af-115">Mutexes</span></span>](mutexes.md)|<span data-ttu-id="330af-116"><xref:System.Threading.Mutex?displayProperty=nameWithType>를 사용하여 개체에 대한 액세스를 동기화하거나 고유한 동기화 메커니즘을 빌드하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-116">Describes how to use a <xref:System.Threading.Mutex?displayProperty=nameWithType> to synchronize access to an object or to build your own synchronization mechanisms.</span></span>|
+|[<span data-ttu-id="330af-117">연동 작업</span><span class="sxs-lookup"><span data-stu-id="330af-117">Interlocked operations</span></span>](interlocked-operations.md)|<span data-ttu-id="330af-118">다중 스레드에서 공유하는 변수에 대한 원자 단위 연산을 제공하는 <xref:System.Threading.Interlocked?displayProperty=nameWithType> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-118">Describes the <xref:System.Threading.Interlocked?displayProperty=nameWithType> class, which provides atomic operations for variables that are shared by multiple threads.</span></span>|
+|[<span data-ttu-id="330af-119">판독기 및 작성기 잠금</span><span class="sxs-lookup"><span data-stu-id="330af-119">Reader-Writer Locks</span></span>](reader-writer-locks.md)|<span data-ttu-id="330af-120">단일 작성기/다중 판독기 의미 체계를 제공하는 <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-120">Describes the <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> class, which provides single-writer/multiple-reader semantics.</span></span>|
+|[<span data-ttu-id="330af-121">세마포 및 SemaphoreSlim</span><span class="sxs-lookup"><span data-stu-id="330af-121">Semaphore and SemaphoreSlim</span></span>](semaphore-and-semaphoreslim.md)|<span data-ttu-id="330af-122"><xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스를 설명하고 제한된 리소스에 대한 액세스를 제어하는 데 사용하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-122">Describes the <xref:System.Threading.Semaphore?displayProperty=nameWithType> class and explains how to use it to control access to limited resources.</span></span>|
+|[<span data-ttu-id="330af-123">장벽</span><span class="sxs-lookup"><span data-stu-id="330af-123">Barrier</span></span>](barrier.md)|<span data-ttu-id="330af-124">단계별 작업에서 스레드를 조정하기 위해 장벽 패턴을 구현하는 <xref:System.Threading.Barrier?displayProperty=nameWithType> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-124">Describes the <xref:System.Threading.Barrier?displayProperty=nameWithType> class that implements the barrier pattern for coordination of threads in phased operations.</span></span>|
+|[<span data-ttu-id="330af-125">스핀 잠금</span><span class="sxs-lookup"><span data-stu-id="330af-125">SpinLock</span></span>](spinlock.md)|<span data-ttu-id="330af-126">특정 하위 수준 시나리오의 <xref:System.Threading.Monitor?displayProperty=nameWithType> 클래스에 대한 경량 대체 항목인 <xref:System.Threading.SpinLock?displayProperty=nameWithType> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-126">Describes the <xref:System.Threading.SpinLock?displayProperty=nameWithType> class, which is a lightweight alternative to the <xref:System.Threading.Monitor?displayProperty=nameWithType> class for certain low-level scenarios.</span></span>|
+|[<span data-ttu-id="330af-127">스핀 대기</span><span class="sxs-lookup"><span data-stu-id="330af-127">SpinWait</span></span>](spinwait.md)|<span data-ttu-id="330af-128">커널 기반 대기를 시작하기 전에 사용 중인 회전을 수행하는 낮은 수준의 동기화 기본 형식인 <xref:System.Threading.SpinWait?displayProperty=nameWithType> 클래스를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="330af-128">Describes the <xref:System.Threading.SpinWait?displayProperty=nameWithType> class, which is a low-level synchronization primitive that performs busy spinning prior to initiating a kernel-based wait.</span></span>|
+
+## <a name="see-also"></a><span data-ttu-id="330af-129">참고 항목</span><span class="sxs-lookup"><span data-stu-id="330af-129">See also</span></span>
+
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- <xref:System.Threading.WaitHandle?displayProperty=nameWithType>
+- <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>
+- [<span data-ttu-id="330af-130">스레드 및 스레딩 사용</span><span class="sxs-lookup"><span data-stu-id="330af-130">Using threads and threading</span></span>](using-threads-and-threading.md)
+- [<span data-ttu-id="330af-131">비동기 파일 I/O</span><span class="sxs-lookup"><span data-stu-id="330af-131">Asynchronous File I/O</span></span>](../io/asynchronous-file-i-o.md)
+- [<span data-ttu-id="330af-132">병렬 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="330af-132">Parallel Programming</span></span>](../parallel-programming/index.md)
+- [<span data-ttu-id="330af-133">TPL(작업 병렬 라이브러리)</span><span class="sxs-lookup"><span data-stu-id="330af-133">Task Parallel Library (TPL)</span></span>](../parallel-programming/task-parallel-library-tpl.md)
