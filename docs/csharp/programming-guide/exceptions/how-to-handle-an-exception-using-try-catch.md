@@ -6,12 +6,12 @@ helpviewer_keywords:
 - exceptions [C#], try/catch blocks
 - try/catch blocks [C#]
 ms.assetid: ca8e3773-980e-4767-8633-7408540e9818
-ms.openlocfilehash: b67a3d7b6d2e10519363a273b7dd1d8b61317d1c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 74503c510007b132a7bbb14da7eade4c379b2179
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338073"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43856583"
 ---
 # <a name="how-to-handle-an-exception-using-trycatch-c-programming-guide"></a>방법: try/catch를 사용하여 예외 처리(C# 프로그래밍 가이드)
 [try-catch](../../../csharp/language-reference/keywords/try-catch.md) 블록은 작업 코드에서 생성된 예외를 catch하고 처리하기 위한 것입니다. 일부 예외는 `catch` 블록에서 처리될 수 있으며, 예외가 다시 throw되지 않고 문제가 해결됩니다. 그러나 대체로 수행할 수 있는 작업은 적절한 예외가 throw되었는지 확인하는 것뿐입니다.  
@@ -24,7 +24,8 @@ ms.locfileid: "33338073"
 ## <a name="comments"></a>설명  
  예외가 발생하는 코드는 `try` 블록으로 묶여 있습니다. `IndexOutOfRangeException`이 발생할 경우 처리하기 위해 `catch` 문이 바로 뒤에 추가됩니다. `catch` 블록은 `IndexOutOfRangeException`을 처리하고 더 적합한 `ArgumentOutOfRangeException` 예외를 대신 throw합니다. 호출자에게 최대한 많은 정보를 제공하기 위해 원래 예외를 새 예외의 <xref:System.Exception.InnerException%2A>으로 지정하는 것이 좋습니다. <xref:System.Exception.InnerException%2A> 속성은 [readonly](../../../csharp/language-reference/keywords/readonly.md)이기 때문에 새 예외의 생성자에 할당해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
- [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
+- [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)

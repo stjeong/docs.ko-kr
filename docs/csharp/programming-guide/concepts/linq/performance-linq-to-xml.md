@@ -2,12 +2,12 @@
 title: 성능(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: 43c9f1b7-9bd3-489c-b45c-cb09173a3718
-ms.openlocfilehash: 93c753c9bc408abb3db652f435ac1b0c87f93898
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 340be61f55f2b77ed22d608ec151daa737389771
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245418"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857130"
 ---
 # <a name="performance-linq-to-xml-c"></a>성능(LINQ to XML)(C#)
 이 단원에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]의 성능을 함수 생성 및 쿼리 성능에 중점을 두어 설명합니다.  
@@ -25,5 +25,6 @@ ms.locfileid: "39245418"
  [정적으로 컴파일된 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md)  
  XPath 식 계산기를 사용하여 구문 분석 및 처리를 수행하는 방법과 비교하여 정적으로 컴파일된 쿼리에 대한 성능 정보를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

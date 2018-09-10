@@ -7,12 +7,12 @@ helpviewer_keywords:
 - lambda operator [C#]
 - => operator [C#]
 - lambda expressions [C#], => operator
-ms.openlocfilehash: d1565e262fbd3ebcee2d1576a2a0c8ed3ba8ce38
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b9216cf61b6b9368112f769d952457df4aab4297
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33288228"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44183303"
 ---
 # <a name="gt-operator-c-reference"></a>=&gt; 연산자(C# 참조)
 
@@ -110,8 +110,9 @@ public override string ToString()
 ```
 식 본문 정의에 대한 자세한 내용은 [식 본문 멤버](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목  
-[C# 참조](../../../csharp/language-reference/index.md)   
-[C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)   
-[람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
-[식 본문 멤버](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)   
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)   
+- [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
+- [식 본문 멤버](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)

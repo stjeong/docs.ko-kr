@@ -2,12 +2,12 @@
 title: 고급 쿼리 기술(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: 028d978e-215b-4d50-ba70-adce0659386d
-ms.openlocfilehash: b1045308d18afb46c5f3bb0da9d02b07f17db95e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d33677be318275eb9c9cc427129caec6edddb2d9
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326318"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44141193"
 ---
 # <a name="advanced-query-techniques-linq-to-xml-c"></a>고급 쿼리 기술(LINQ to XML)(C#)
 이 단원에서는 고급 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리 기법의 예제를 제공합니다.  
@@ -26,5 +26,6 @@ ms.locfileid: "33326318"
 |[방법: Office Open XML 문서 수정(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-modify-an-office-open-xml-document.md)|Office Open XML 문서를 열고, 수정하고, 저장하는 코드를 제공합니다.|  
 |[방법: 파일 시스템에서 XML 트리 채우기(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md)|파일 시스템에서 XML 트리를 만드는 코드를 제공합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

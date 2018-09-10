@@ -2,12 +2,12 @@
 title: 함수형 프로그래밍과 절차적 프로그래밍 비교(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: fc64e39c-a487-4882-9169-da4de97917d9
-ms.openlocfilehash: 16d78e967fd5379940ac93c82e3bb59c60941e58
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 888c360e1b868c79d378f2fc46a26c152121300f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328216"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44181526"
 ---
 # <a name="functional-vs-procedural-programming-linq-to-xml-c"></a>함수형 프로그래밍과 절차적 프로그래밍 비교(LINQ to XML)(C#)
 다양한 유형의 XML 응용 프로그램이 있습니다.  
@@ -40,5 +40,6 @@ ms.locfileid: "33328216"
   
  함수 변환 작성에 대한 자습서는 [XML의 순수 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to XML 프로그래밍 개요(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## <a name="see-also"></a>참고 항목
+
+- [LINQ to XML 프로그래밍 개요(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

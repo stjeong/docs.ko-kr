@@ -5,12 +5,12 @@ helpviewer_keywords:
 - generics [C#], delegates
 - delegates [C#], generic
 ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
-ms.openlocfilehash: a9f06dcf608a83b53e894310f20810182cf6daa4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7596ace0ea404cc345d73c0979fa7bd03a26b047
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332909"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857538"
 ---
 # <a name="generic-delegates-c-programming-guide"></a>제네릭 대리자(C# 프로그래밍 가이드)
 [대리자](../../../csharp/language-reference/keywords/delegate.md)는 자체 형식 매개 변수를 정의할 수 있습니다. 제네릭 대리자를 참조하는 코드는 다음 예제와 같이 제네릭 클래스를 인스턴스화하거나 제네릭 메서드를 호출하는 것과 같은 방법으로 형식 인수를 지정하여 폐쇄형 생성 형식을 만들 수 있습니다.  
@@ -33,12 +33,13 @@ ms.locfileid: "33332909"
   
  [!code-csharp[csProgGuideGenerics#40](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_5.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [제네릭 메서드](../../../csharp/programming-guide/generics/generic-methods.md)  
- [제네릭 클래스](../../../csharp/programming-guide/generics/generic-classes.md)  
- [제네릭 인터페이스](../../../csharp/programming-guide/generics/generic-interfaces.md)  
- [대리자](../../../csharp/programming-guide/delegates/index.md)  
- [제네릭](~/docs/standard/generics/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Generic>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- [제네릭 메서드](../../../csharp/programming-guide/generics/generic-methods.md)  
+- [제네릭 클래스](../../../csharp/programming-guide/generics/generic-classes.md)  
+- [제네릭 인터페이스](../../../csharp/programming-guide/generics/generic-interfaces.md)  
+- [대리자](../../../csharp/programming-guide/delegates/index.md)  
+- [제네릭](~/docs/standard/generics/index.md)

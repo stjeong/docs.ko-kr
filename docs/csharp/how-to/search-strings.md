@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [C#], searching with String methods
 - strings [C#], searching with regular expressions
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
-ms.openlocfilehash: d1e132093cc59c7b41a3f7d5b522fca2e224f779
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: b6d5ab1c4588e72bf49c5ca2f859b9996c0d3834
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961221"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857156"
 ---
 # <a name="how-to-search-strings"></a>방법: 문자열 검색
 
@@ -68,7 +68,6 @@ ms.locfileid: "37961221"
 | \d{4}    | 정확히 4자리 문자 일치  |
 | $        | 문자열의 끝 일치       |
 
-
 [!code-csharp-interactive[csProgGuideStrings#4](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#4)]
 
 이 단일 검색 패턴은 많은 유효한 문자열과 일치합니다. 단일 텍스트 문자열이 아닌 패턴을 검색하거나 유효성을 확인하기 위해 정규식을 사용하는 것이 좋습니다.
@@ -77,10 +76,10 @@ ms.locfileid: "37961221"
 
 ## <a name="see-also"></a>참고 항목  
 
- [C# 프로그래밍 가이드](../programming-guide/index.md)  
- [문자열](../programming-guide/strings/index.md)  
- [LINQ 및 문자열](../programming-guide/concepts/linq/linq-and-strings.md)   
- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>     
- [.NET Framework 정규식](../../standard/base-types/regular-expressions.md)   
- [정규식 언어 - 빠른 참조](../../standard/base-types/regular-expression-language-quick-reference.md)   
- [.NET에서 문자열 사용에 대한 모범 사례](../../standard/base-types/best-practices-strings.md)  
+- [C# 프로그래밍 가이드](../programming-guide/index.md)  
+- [문자열](../programming-guide/strings/index.md)  
+- [LINQ 및 문자열](../programming-guide/concepts/linq/linq-and-strings.md)
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- [.NET Framework 정규식](../../standard/base-types/regular-expressions.md)
+- [정규식 언어 - 빠른 참조](../../standard/base-types/regular-expression-language-quick-reference.md)
+- [.NET에서 문자열 사용에 대한 모범 사례](../../standard/base-types/best-practices-strings.md)  

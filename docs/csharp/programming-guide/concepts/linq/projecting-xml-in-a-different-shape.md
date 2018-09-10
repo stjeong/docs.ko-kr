@@ -2,12 +2,12 @@
 title: 여러 모양으로 XML 프로젝션(C#)
 ms.date: 07/20/2015
 ms.assetid: 4cb6b14a-32dc-4a2a-813e-bf9368fa8d86
-ms.openlocfilehash: e9d555dadea1ddd8720ef2548136f9bf9fb833c9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fe6166a333988d4b0a4550900a9307f1c4951aec
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340426"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43786999"
 ---
 # <a name="projecting-xml-in-a-different-shape-c"></a>여러 모양으로 XML 프로젝션(C#)
 이 항목에서는 소스 XML과 다른 모양으로 XML을 프로젝션하는 예제를 보여 줍니다.  
@@ -235,5 +235,6 @@ class Program
   
 -   [Word 문서에서 텍스트 찾기(C#)](../../../../csharp/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
   
-## <a name="see-also"></a>참고 항목  
- [자습서: WordprocessingML 문서에서 내용 조작(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## <a name="see-also"></a>참고 항목
+
+- [자습서: WordprocessingML 문서에서 내용 조작(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

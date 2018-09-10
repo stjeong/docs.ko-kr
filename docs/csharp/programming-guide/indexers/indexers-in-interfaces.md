@@ -5,12 +5,12 @@ helpviewer_keywords:
 - indexers [C#], in interfaces
 - accessors [C#], indexers
 ms.assetid: e16b54bd-4a83-4f52-bd75-65819fca79e8
-ms.openlocfilehash: 120b6e72a6ab906437c593d6eb33024d1df8f52b
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: c3ddb48590087d49402482e8cbf3760027da1a2a
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207967"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43799465"
 ---
 # <a name="indexers-in-interfaces-c-programming-guide"></a>인터페이스의 인덱서(C# 프로그래밍 가이드)
 [interface](../../../csharp/language-reference/keywords/interface.md)에 인덱서를 선언할 수 있습니다. 인터페이스 인덱서 접근자와 [class](../../../csharp/language-reference/keywords/class.md) 인덱서 접근자 간에는 다음과 같은 차이점이 있습니다.  
@@ -58,8 +58,9 @@ string ICitizen.this[int index]
   
  이 선언은 `ICitizen` 인터페이스의 인덱서를 구현합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [인터페이스](../../../csharp/programming-guide/interfaces/index.md)

@@ -3,12 +3,12 @@ title: C# 버전 관리 - C# 가이드
 description: C# 및 .NET에서 버전 관리의 작동 방식 이해
 ms.date: 01/08/2017
 ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
-ms.openlocfilehash: 4dc8e7e521bf209d6ca69a84534d277fb8a93ea8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 949b7414116169cada62b48392f37809f26d7ff9
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351786"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44185760"
 ---
 # <a name="versioning-in-c"></a>C#으로 버전 관리 #
 
@@ -24,7 +24,7 @@ ms.locfileid: "33351786"
 라이브러리에 제공하는 버전 정보를 이용해 개발자가 동일한 라이브러리의 이전 버전을 사용하는 프로젝트와의 호환성을 확인하는 것이 가장 바람직합니다.
 
 SemVer에 대한 가장 기본적인 접근법은 3개 구성 요소 형식 `MAJOR.MINOR.PATCH`입니다. 여기서:
- 
+
 * `MAJOR`은 호환되지 않는 API 변경 사항이 있을 때 증가합니다.
 * `MINOR`는 이전 버전과 호환성 방식으로 기능을 추가할 때 증가합니다.
 * `PATCH`는 이전 버전과 호환성 버그 수정을 만들 때 증가합니다.
@@ -51,7 +51,7 @@ SemVer에 대한 가장 기본적인 접근법은 3개 구성 요소 형식 `MAJ
 
 ### <a name="application-configuration-file"></a>응용 프로그램 구성 파일
 
-.NET 개발자는 대부분의 프로젝트 형식에서 [`app.config` 파일](https://msdn.microsoft.com/library/1fk1t1t0(v=vs.110).aspx)을 발견할 가능성이 매우 높습니다.
+.NET 개발자는 대부분의 프로젝트 형식에서 [`app.config` 파일](../framework/configure-apps/file-schema/index.md)을 발견할 가능성이 매우 높습니다.
 이 간단한 구성 파일은 새로운 업데이트 출시를 개선하는 데 큰 도움이 될 수 있습니다. 일반적으로 라이브러리를 설계할 때 정기적으로 변경될 가능성이 있는 정보를 `app.config` 파일에 저장하도록 해야 합니다. 이렇게 하면 해당 정보가 업데이트될 때 라이브러리를 다시 컴파일하지 않고 이전 버전의 구성 파일을 새로운 파일로 바꾸기만 하면 됩니다.
 
 ## <a name="consuming-libraries"></a>라이브러리 사용
@@ -62,7 +62,7 @@ SemVer에 대한 가장 기본적인 접근법은 3개 구성 요소 형식 `MAJ
 
 ### <a name="assembly-binding-redirection"></a>어셈블리 바인딩 리디렉션
 
-앱이 사용하는 라이브러리의 버전을 업데이트하기 위해 `app.config` 파일을 사용할 수 있습니다. [*바인딩 리디렉션*](https://msdn.microsoft.com/library/7wd6ex19(v=vs.110).aspx)을 추가하면 앱을 다시 컴파일하지 않고도 새 라이브러리 버전을 사용할 수 있습니다. 다음 예제에서는 원래 컴파일된 `1.0.0` 버전 대신 `ReferencedLibrary`의 `1.0.1` 패치 버전을 사용하도록 앱의 `app.config` 파일을 업데이트하는 방법을 보여 줍니다.
+앱이 사용하는 라이브러리의 버전을 업데이트하기 위해 `app.config` 파일을 사용할 수 있습니다. [*바인딩 리디렉션*](../framework/configure-apps/redirect-assembly-versions.md)을 추가하면 앱을 다시 컴파일하지 않고도 새 라이브러리 버전을 사용할 수 있습니다. 다음 예제에서는 원래 컴파일된 `1.0.0` 버전 대신 `ReferencedLibrary`의 `1.0.1` 패치 버전을 사용하도록 앱의 `app.config` 파일을 업데이트하는 방법을 보여 줍니다.
 
 ```xml
 <dependentAssembly>

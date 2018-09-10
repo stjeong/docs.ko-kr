@@ -13,11 +13,11 @@ helpviewer_keywords:
 - ?[] operator [Visual Basic]
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
 ms.openlocfilehash: f00d5e489931d9c1172a21ee5f0d3e3d0a6f4a4e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43409000"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192816"
 ---
 # <a name="-and--null-conditional-operators-c-and-visual-basic"></a>?. 및 ?[] Null 조건부 연산자(C# 및 Visual Basic)
 멤버 액세스(`?.`) 또는 인덱스(`?[]`) 작업을 수행하기 전에 Null에서 왼쪽 피연산자의 값을 테스트합니다. 왼쪽 피연산자가 `null`로 계산하는 경우 `null`을 반환합니다. 

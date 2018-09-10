@@ -8,12 +8,12 @@ helpviewer_keywords:
 - read/write properties [C#]
 - accessors [C#], declaring properties with
 ms.assetid: a4962fef-af7e-4c4b-a929-4ae4d646ab8a
-ms.openlocfilehash: d6a7083e1c0cf0dc5c076a69dee15fc39e234d53
-ms.sourcegitcommit: 89c93d05c2281b4c834f48f6c8df1047e1410980
+ms.openlocfilehash: 77db2841d6ef9af21d38736f39e6041699ca13d5
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2018
-ms.locfileid: "34172328"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44180264"
 ---
 # <a name="how-to-declare-and-use-read-write-properties-c-programming-guide"></a>방법: 읽기/쓰기 속성 선언 및 사용(C# 프로그래밍 가이드)
 속성은 개체 데이터에 대한 액세스가 보호, 제어, 확인되지 않을 위험 없이 공용 데이터 멤버의 편리함을 제공합니다. 이를 위해 기본 데이터 멤버의 값을 할당하고 검색하는 특수 메서드인 *접근자*가 사용됩니다. [set](../../../csharp/language-reference/keywords/set.md) 접근자를 통해 데이터 멤버를 할당할 수 있으며, [get](../../../csharp/language-reference/keywords/get.md) 접근자는 데이터 멤버 값을 검색합니다.  
@@ -54,7 +54,8 @@ person.SetAge(person.GetAge() + 1);
   
  `ToString`이 프로그램에서 명시적으로 사용되지 않고 기본적으로 `WriteLine` 호출에 의해 호출됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)

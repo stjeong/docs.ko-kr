@@ -2,12 +2,12 @@
 title: '방법: 요소 정렬(C#)'
 ms.date: 07/20/2015
 ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
-ms.openlocfilehash: a49b4fea8410075ca8b28f2ef7792738d063e256
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7548f183736ac9ed0ed09d3be775b3ffde6cb255
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319769"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44042610"
 ---
 # <a name="how-to-sort-elements-c"></a>방법: 요소 정렬(C#)
 이 예제에서는 결과를 정렬하는 쿼리를 작성하는 방법을 보여 줍니다.  
@@ -67,6 +67,7 @@ foreach (decimal el in prices)
 89.99  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 정렬(C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)  
- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 정렬(C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)  
+- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

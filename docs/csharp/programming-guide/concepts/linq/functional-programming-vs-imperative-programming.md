@@ -2,12 +2,12 @@
 title: 함수형 프로그래밍과 명령형 프로그래밍 비교(C#)
 ms.date: 07/20/2015
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
-ms.openlocfilehash: 85e0e4bf287157f2d4f952996cbb2e5a4ff6ac89
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 01be2758147b84af3410709aab62a0ca89b0c9cf
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334901"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44178340"
 ---
 # <a name="functional-programming-vs-imperative-programming-c"></a>함수형 프로그래밍과 명령형 프로그래밍 비교(C#)
 이 항목에서는 함수형 프로그래밍을 더욱 일반적인 명령형(절차적) 프로그래밍과 비교하고 대조합니다.  
@@ -50,7 +50,8 @@ ms.locfileid: "33334901"
   
  다행히도 C#에서는 명령형 프로그래밍 방법과 함수형 프로그래밍 방법을 모두 지원하기 때문에 함수형 프로그래밍으로 완전히 전환할 필요가 없습니다. 개발자는 특정 시나리오에 가장 적합한 방법을 선택할 수 있습니다. 실제로 프로그램에는 흔히 두 방법이 결합되어 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
- [XSLT 변환](../../../../standard/data/xml/xslt-transformations.md)  
- [순수 함수로 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+## <a name="see-also"></a>참고 항목
+
+- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
+- [XSLT 변환](../../../../standard/data/xml/xslt-transformations.md)  
+- [순수 함수로 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

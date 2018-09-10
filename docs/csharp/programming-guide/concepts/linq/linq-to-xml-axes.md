@@ -2,12 +2,12 @@
 title: LINQ to XML 축(C#)
 ms.date: 07/20/2015
 ms.assetid: 3f7d54ff-b608-43a1-9e2d-e70668b72df8
-ms.openlocfilehash: d12d35a6f9b02056946ba201a7bd5a961f64ba36
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 6a27adb1c7e1dcfefda13a355700202ccda3ffab
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43408657"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44200843"
 ---
 # <a name="linq-to-xml-axes-c"></a>LINQ to XML 축(C#)
 XML 트리를 만들거나 XML 문서를 XML 트리에 로드한 후 XML 트리를 쿼리하여 요소와 특성을 찾고 해당 값을 검색할 수 있습니다.  
@@ -29,6 +29,7 @@ XML 트리를 만들거나 XML 문서를 XML 트리에 로드한 후 XML 트리�
 |[방법: 특성 값 검색(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md)|특성의 값을 가져오는 방법을 보여 줍니다.|  
 |[방법: 요소의 단순 값 검색(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-retrieve-the-shallow-value-of-an-element.md)|요소의 부분 값을 검색하는 방법을 보여 줍니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [확장명 메서드](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [확장명 메서드](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
+- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

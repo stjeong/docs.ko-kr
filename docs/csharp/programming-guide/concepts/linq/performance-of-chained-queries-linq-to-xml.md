@@ -2,12 +2,12 @@
 title: 연결된 쿼리의 성능(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: b2f1d715-8946-4dc0-8d56-fb3d1bba54a6
-ms.openlocfilehash: 6e0b2ec0b73afe10e21c83499c1a3a52c923f591
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 9377c4e57eb19f133a1f973ea7f86c3bf72e4cf8
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43466932"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43854582"
 ---
 # <a name="performance-of-chained-queries-linq-to-xml-c"></a>연결된 쿼리의 성능(LINQ to XML)(C#)
 LINQ(및 LINQ to XML)의 가장 큰 이점 중 하나는 연결된 쿼리가 보다 크고 복잡한 하나의 쿼리처럼 잘 수행될 수 있다는 것입니다.  
@@ -54,7 +54,8 @@ foreach (var i in query2)
   
  반복기에 대한 자세한 내용은 [yield](../../../../csharp/language-reference/keywords/yield.md)를 참조하세요.  
   
- 쿼리를 연결하는 방법을 설명하는 자세한 자습서를 보려면 [자습서: 여러 쿼리 연결](https://msdn.microsoft.com/library/c08d228a-f07a-4c98-810f-1bf0e8f2257c)을 참조하세요.  
+ 쿼리를 연결하는 방법을 설명하는 자세한 자습서를 보려면 [자습서: 여러 쿼리 연결](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [성능(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [성능(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)

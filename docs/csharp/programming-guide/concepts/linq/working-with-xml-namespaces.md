@@ -2,12 +2,12 @@
 title: XML 네임스페이스 작업(C#)
 ms.date: 07/20/2015
 ms.assetid: 05cf4dc7-7b25-40f0-abc9-1bc35de4b48a
-ms.openlocfilehash: e00886281fbccd0e10706575483dd174d7d53052
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 4863794408adbfb8b51c4f125ee340eb718a5abe
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43416243"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44189873"
 ---
 # <a name="working-with-xml-namespaces-c"></a>XML 네임스페이스 작업(C#)
 이 단원의 항목에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 네임스페이스를 지원하는 방법에 대해 설명합니다.  
@@ -22,5 +22,6 @@ ms.locfileid: "43416243"
 |[C#에서 기본 네임스페이스 범위](../../../../csharp/programming-guide/concepts/linq/scope-of-default-namespaces.md)|기본 네임스페이스의 XML에 대한 쿼리를 작성하는 적절한 방법을 보여 줍니다.|  
 |[방법: 네임스페이스에서 XML로 쿼리 작성(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|C# LINQ to XML 쿼리에서 XML 네임스페이스를 지정하는 방법을 보여 줍니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
