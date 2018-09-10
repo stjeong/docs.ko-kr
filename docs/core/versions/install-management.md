@@ -1,0 +1,24 @@
+---
+title: .NET Core 설치 관리
+description: 나란히 설치 전략을 사용하여 머신에서 여러 버전의 .NET Core SDK 및 런타임을 관리합니다.
+author: leecow
+ms.author: wiwagn
+ms.date: 08/22/2018
+ms.openlocfilehash: 06c3f43e7917efb8fd31898044d8f5d920c2cada
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43485441"
+---
+# <a name="manage-net-core-installations"></a><span data-ttu-id="abd2b-103">.NET Core 설치 관리</span><span class="sxs-lookup"><span data-stu-id="abd2b-103">Manage .NET Core installations</span></span>
+
+<span data-ttu-id="abd2b-104">.NET Core는 여러 버전의 SDK 및 런타임을 나란히 배치하여 .NET Core 응용 프로그램을 빌드하고 실행하기 위한 버전 종속 유연성을 가능하게 합니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-104">.NET Core allows multiple versions of the SDK and Runtime to exist side-by-side, enabling version dependency flexibility for both building and running .NET Core applications.</span></span> <span data-ttu-id="abd2b-105">이러한 설치 및 자동 버전 롤포워드 동작은 유용한 혜택을 제공하지만 분명한 단점이 하나 있습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-105">These installation and automatic version roll-forward behaviors offer valuable benefits, but one pronounced drawback.</span></span> <span data-ttu-id="abd2b-106">.NET Core SDK 또는 .NET Core 런타임 업데이트가 설치되면 이전 버전은 디스크에 남아 있습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-106">As updates of the .NET Core SDK or .NET Core Runtime are installed, previous versions remain on-disk.</span></span> <span data-ttu-id="abd2b-107">여러 설치된 버전은 시간이 지남에 따라 디스크 사용량을 증가시킵니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-107">Multiple installed versions increase disk usage over time.</span></span> <span data-ttu-id="abd2b-108">50개 초과 .NET Core SDK 업데이트가 릴리스되었습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-108">More than 50 .NET Core SDK updates have been released.</span></span> <span data-ttu-id="abd2b-109">제거할 수 있는 시스템에 여러 버전의 SDK 및 런타임이 설치되어 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-109">There may be many versions of the SDK and Runtime installed on your system that could be removed.</span></span>
+
+## <a name="safe-to-remove"></a><span data-ttu-id="abd2b-110">안전한 제거는?</span><span class="sxs-lookup"><span data-stu-id="abd2b-110">Safe to remove?</span></span>
+
+<span data-ttu-id="abd2b-111">[.NET Core 버전 선택](selection.md) 동작 및 .NET Core의 런타임 호환성을 업데이트하여 이전 버전을 안전하게 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-111">The [.NET Core version selection](selection.md) behaviors and the runtime compatibility of .NET Core across updates enables safe removal of previous versions.</span></span> <span data-ttu-id="abd2b-112">.NET Core 런타임 업데이트는 1.x 및 2.x와 같은 주 버전 '대역' 내에서 호환됩니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-112">.NET Core runtime updates are compatible within a major version 'band' such as 1.x and 2.x.</span></span> <span data-ttu-id="abd2b-113">또한 .NET Core SDK의 최신 릴리스는 호환 가능한 방식으로 이전 버전의 런타임을 대상으로 하는 응용 프로그램을 빌드하는 기능을 일반적으로 유지합니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-113">Additionally, newer releases of the .NET Core SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.</span></span>
+
+<span data-ttu-id="abd2b-114">일반적으로 응용 프로그램에 필요한 최신 SDK 및 런타임의 최신 패치 버전만 있으면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-114">In general, you only need the latest SDK and latest patch version of the runtimes required for your application.</span></span> <span data-ttu-id="abd2b-115">이전 SDK 또는 런타임 버전을 유지하는 인스턴스에는 project.json 기반 응용 프로그램 유지 관리가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-115">Instances where retaining older SDK or Runtime versions include maintaining project.json-based applications.</span></span>  <span data-ttu-id="abd2b-116">응용 프로그램에 이전 SDK 또는 런타임에 대한 특정 이유가 없는 경우 이전 버전을 안전하게 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-116">Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.</span></span>
+
+<span data-ttu-id="abd2b-117">.NET Core를 제거하는 방법은 플랫폼마다 다르며, .NET Core 버전 간에 다소 차이가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="abd2b-117">The methods for removing .NET Core vary from platform to platform and have changed somewhat across .NET Core versions.</span></span> <span data-ttu-id="abd2b-118">더 이상 필요 없는 .NET Core 버전을 제거하는 방법에 대한 자세한 내용은 [.NET Core 설명서](../index.md)에서 ['.NET Core 런타임 및 SDK 제거 방법'](remove-runtime-sdk-versions.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="abd2b-118">For details on removing versions of .NET Core that are no longer needed, see ['How to remove the .NET Core Runtime and SDK'](remove-runtime-sdk-versions.md) in the [.NET Core documentation](../index.md).</span></span>
