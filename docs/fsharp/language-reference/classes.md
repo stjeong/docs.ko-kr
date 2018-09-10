@@ -4,7 +4,7 @@ description: 'F # 클래스는 속성, 메서드 및 이벤트를 가질 수 있
 ms.date: 05/16/2016
 ms.openlocfilehash: 71cd713d192d28565e879b79b2fc9e0530e5f841
 ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
 ms.locfileid: "44138827"
