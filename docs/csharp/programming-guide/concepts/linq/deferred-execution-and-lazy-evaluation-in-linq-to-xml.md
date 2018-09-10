@@ -2,12 +2,12 @@
 title: LINQ to XML에서 지연된 실행 및 지연 계산(C#)
 ms.date: 07/20/2015
 ms.assetid: 8683d1b4-b7ec-407b-be12-906ebe958a09
-ms.openlocfilehash: dd0b8413f172182edfc83f99fd418d1372984b7d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: baf6a26b1579c17adfc60b27b485ba3af66c67d7
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340374"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085344"
 ---
 # <a name="deferred-execution-and-lazy-evaluation-in-linq-to-xml-c"></a>LINQ to XML에서 지연된 실행 및 지연 계산(C#)
 쿼리 및 축 연산은 흔히 지연된 실행을 사용하도록 구현됩니다. 이 항목에서는 지연된 실행의 요구 사항 및 장점과 몇 가지 구현 고려 사항에 대해 설명합니다.  
@@ -33,8 +33,9 @@ ms.locfileid: "33340374"
   
 -   [지연 실행 예제(C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-example.md)  
   
-## <a name="see-also"></a>참고 항목  
- [자습서: 여러 쿼리 연결(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)  
- [개념과 용어(함수 변환)(C#)](../../../../csharp/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)  
- [집계 작업(C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)  
- [yield](../../../../csharp/language-reference/keywords/yield.md)
+## <a name="see-also"></a>참고 항목
+
+- [자습서: 여러 쿼리 연결(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)  
+- [개념과 용어(함수 변환)(C#)](../../../../csharp/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)  
+- [집계 작업(C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)  
+- [yield](../../../../csharp/language-reference/keywords/yield.md)

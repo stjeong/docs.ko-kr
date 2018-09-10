@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - decimal keyword [C#]
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
-ms.openlocfilehash: 18924abefb85012fc6c61073603c594de906b58d
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: c9d40238ca4c34238d5663185f93afbce73195cf
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961198"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43506521"
 ---
 # <a name="decimal-c-reference"></a>decimal(C# 참조)
 
@@ -20,7 +20,7 @@ ms.locfileid: "37961198"
 
 |형식|근사 범위|전체 자릿수|.NET 형식|
 |----------|-----------------------|---------------|-------------------------|
-|`decimal`|(-7.9 x 10<sup>28</sup> ~ 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> ~ 10<sup>28</sup>)|28-29개의 유효 자릿수|<xref:System.Decimal?displayProperty=nameWithType>|
+|`decimal`|±1.0 x 10<sup>-28</sup> ~ ±7.9228 x 10<sup>28</sup>|28-29개의 유효 자릿수|<xref:System.Decimal?displayProperty=nameWithType>|
 
 `decimal`의 기본값은 0m입니다.
 
@@ -96,12 +96,12 @@ Console.WriteLine((double)dec + dub);
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Decimal>  
-[C# 참조](../../../csharp/language-reference/index.md)  
-[C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-[C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-[정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
-[기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-[암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-[명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-[표준 숫자 형식 문자열](../../../standard/base-types/standard-numeric-format-strings.md)
+- <xref:System.Decimal>  
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [표준 숫자 형식 문자열](../../../standard/base-types/standard-numeric-format-strings.md)

@@ -3,12 +3,12 @@ title: 쿼리 결과 그룹화(C#의 LINQ)
 description: C#에서 LINQ를 사용하여 결과를 그룹화하는 방법을 알아봅니다.
 ms.date: 12/1/2016
 ms.assetid: 2e4ec27f-06fb-4de7-8973-0189906d4520
-ms.openlocfilehash: 4da0aac6b406f588ea4f241c72d5700e8a63838c
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: f768718cb1435efdc67791612776c9e9ce2b14b8
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37403867"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43798337"
 ---
 # <a name="group-query-results"></a>쿼리 결과 그룹화
 
@@ -76,11 +76,11 @@ ms.locfileid: "37403867"
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Linq.Enumerable.GroupBy%2A>  
-<xref:System.Linq.IGrouping%602>  
-[LINQ(Language-Integrated Query)](index.md)  
-[group 절](../language-reference/keywords/group-clause.md)  
-[익명 형식](../programming-guide/classes-and-structs/anonymous-types.md)  
-[그룹화 작업에서 하위 쿼리 수행](perform-a-subquery-on-a-grouping-operation.md)  
-[중첩 그룹 만들기](create-a-nested-group.md)  
-[데이터 그룹화](../programming-guide/concepts/linq/grouping-data.md)  
+- <xref:System.Linq.Enumerable.GroupBy%2A>  
+- <xref:System.Linq.IGrouping%602>  
+- [LINQ(Language-Integrated Query)](index.md)  
+- [group 절](../language-reference/keywords/group-clause.md)  
+- [익명 형식](../programming-guide/classes-and-structs/anonymous-types.md)  
+- [그룹화 작업에서 하위 쿼리 수행](perform-a-subquery-on-a-grouping-operation.md)  
+- [중첩 그룹 만들기](create-a-nested-group.md)  
+- [데이터 그룹화](../programming-guide/concepts/linq/grouping-data.md)  

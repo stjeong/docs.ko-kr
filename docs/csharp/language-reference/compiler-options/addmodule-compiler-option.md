@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -addmodule compiler option [C#]
 - addmodule compiler option [C#]
 ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
-ms.openlocfilehash: a5b0824774dabd4e0dd26dd1753eaba658299fbc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 39955d86085b49ef503ea9ed531df9feafa648ac
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33215773"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43524590"
 ---
 # <a name="-addmodule-c-compiler-options"></a>-addmodule(C# 컴파일러 옵션)
 이 옵션은 target:module 스위치로 만들어진 모듈을 현재 컴파일에 추가합니다.  
@@ -45,7 +45,8 @@ csc -addmodule:metad1.netmodule;metad2.netmodule -out:out.exe input.cs
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)  
- [다중 파일 어셈블리](../../../framework/app-domains/multifile-assemblies.md)  
- [방법: 다중 파일 어셈블리 빌드](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+
+- [C# 컴파일러 옵션](../../../csharp/language-reference/compiler-options/index.md)  
+- [프로젝트 및 솔루션 속성 관리](/visualstudio/ide/managing-project-and-solution-properties)  
+- [다중 파일 어셈블리](../../../framework/app-domains/multifile-assemblies.md)  
+- [방법: 다중 파일 어셈블리 빌드](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)

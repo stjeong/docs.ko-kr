@@ -6,11 +6,11 @@ helpviewer_keywords:
 - modifiers [C#]
 ms.assetid: c96691dd-b357-49ec-b5ae-03ca214fadfb
 ms.openlocfilehash: 5000f94a954994769eda2ac09404ba6a71c4639b
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930366"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43524830"
 ---
 # <a name="modifiers-c-reference"></a>한정자(C# 참조)
 한정자는 형식 및 형식 멤버의 선언을 수정하는 데 사용됩니다. 이 단원에서는 다음의 C# 한정자에 대해 소개합니다.  

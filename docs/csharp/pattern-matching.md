@@ -4,11 +4,11 @@ description: C#의 패턴 일치 식에 대한 자세한 정보
 ms.date: 01/24/2017
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ms.openlocfilehash: fa327dafe3f924d22b5f0d459eb0b6c7ba60a684
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43255343"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43522028"
 ---
 # <a name="pattern-matching"></a>패턴 일치 #
 

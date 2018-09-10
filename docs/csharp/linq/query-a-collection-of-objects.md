@@ -4,11 +4,11 @@ description: C#에서 LINQ를 사용하여 컬렉션을 쿼리하는 방법을 �
 ms.date: 11/30/2016
 ms.assetid: 87a76f8a-0b58-4791-90ea-2fe0a30416c9
 ms.openlocfilehash: 7bc59e7009f9ae8d8f66c24e9519d9100404c9c4
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480922"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43511386"
 ---
 # <a name="query-a-collection-of-objects"></a>개체의 컬렉션 쿼리
 

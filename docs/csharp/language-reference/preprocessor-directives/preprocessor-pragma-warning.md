@@ -7,11 +7,11 @@ helpviewer_keywords:
 - '#pragma warning [C#]'
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
 ms.openlocfilehash: 89ff8151d55ac58a1b114f7727297704ce26b9a7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481932"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083654"
 ---
 # <a name="pragma-warning-c-reference"></a>#pragma warning(C# 참조)
 `#pragma warning`은 특정 경고를 사용하거나 사용하지 않도록 설정합니다.  

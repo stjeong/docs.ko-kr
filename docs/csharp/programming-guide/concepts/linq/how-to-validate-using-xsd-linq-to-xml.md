@@ -2,12 +2,12 @@
 title: '방법: XSD를 사용하여 유효성 검사(LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 6a7f83a9-2d74-4c2b-8417-0a8595879516
-ms.openlocfilehash: 9b26481eb1e0fd103f92ed56e0e2f7c83d2ccbb5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e58005d80cf763f773efa67530c14d199b0b5bfb
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321599"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43505796"
 ---
 # <a name="how-to-validate-using-xsd-linq-to-xml-c"></a>방법: XSD를 사용하여 유효성 검사(LINQ to XML)(C#)
 <xref:System.Xml.Schema> 네임스페이스에는 XSD(XML 스키마 정의 언어) 파일에 대해 XML 트리의 유효성을 쉽게 검사할 수 있도록 하는 확장 메서드가 포함되어 있습니다. 자세한 내용은 <xref:System.Xml.Schema.Extensions.Validate%2A> 메서드 설명서를 참조하세요.  
@@ -120,6 +120,7 @@ The key sequence 'AAAAA' in Keyref fails to refer to some key.
 custOrdDoc did not validate  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Schema.Extensions.Validate%2A>  
- [XML 트리 만들기(C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Schema.Extensions.Validate%2A>  
+- [XML 트리 만들기(C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - C# language, value types
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 ms.openlocfilehash: 3bbaea9247d975c27ed6f49dedb749312f675296
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43487067"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526465"
 ---
 # <a name="value-types-c-reference"></a>값 형식(C# 참조)
 값 형식은 다음 두 가지 기본 범주로 구성됩니다.  

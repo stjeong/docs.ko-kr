@@ -5,12 +5,12 @@ helpviewer_keywords:
 - arrays [C#], foreach
 - foreach statement [C#], using with arrays
 ms.assetid: 5f2da2a9-1f56-4de5-94cc-e07f4f7a0244
-ms.openlocfilehash: b858f35167e24390a729769487ce98908a3d349f
-ms.sourcegitcommit: 54231aa56fca059e9297888a96fbca1d4cf3746c
+ms.openlocfilehash: 298ee915bbe11313f3b33ea7dae9353ef956a231
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549457"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509537"
 ---
 # <a name="using-foreach-with-arrays-c-programming-guide"></a>배열에 foreach 사용(C# 프로그래밍 가이드)
 
@@ -26,10 +26,11 @@ ms.locfileid: "34549457"
 
 그러나 다차원 배열에서 중첩 [for](../../language-reference/keywords/for.md) 루프를 사용하면 배열 요소를 처리하는 순서를 더 강력하게 제어할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목  
- <xref:System.Array>  
- [C# 프로그래밍 가이드](../index.md)  
- [배열](index.md)  
- [1차원 배열](single-dimensional-arrays.md)  
- [다차원 배열](multidimensional-arrays.md)  
- [가변 배열](jagged-arrays.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Array>  
+- [C# 프로그래밍 가이드](../index.md)  
+- [배열](index.md)  
+- [1차원 배열](single-dimensional-arrays.md)  
+- [다차원 배열](multidimensional-arrays.md)  
+- [가변 배열](jagged-arrays.md)

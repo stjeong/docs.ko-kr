@@ -2,12 +2,12 @@
 title: XML 구문 분석(C#)
 ms.date: 07/20/2015
 ms.assetid: 7ea83f83-a779-423a-9875-4ea4e51f97fc
-ms.openlocfilehash: 876cfdf7bd5a82aba75d456d6d5cda57e080fdf0
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: a2dc3043c8cbf8138a164ab06d8394e4c859fa50
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933984"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43523030"
 ---
 # <a name="parsing-xml-c"></a>XML 구문 분석(C#)
 이 단원의 항목에서는 XML 문서의 구문을 분석하는 방법에 대해 설명합니다.  
@@ -23,5 +23,6 @@ ms.locfileid: "42933984"
 |[방법: XmlReader에서 트리 조각 만들기(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md)|<xref:System.Xml.XmlReader>에서 XML 트리를 직접 만드는 방법을 보여 줍니다.|  
 |[방법: XmlReader에서 XML 조각 스트리밍(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-from-an-xmlreader.md)|<xref:System.Xml.XmlReader>를 사용하여 XML 조각을 스트림하는 방법을 보여 줍니다.<br /><br /> 예상할 수 없는 큰 크기의 XML 파일을 처리해야 하는 경우 전체 XML 트리를 메모리에 로드하는 것이 가능하지 않을 수 있습니다. 이러한 경우 XML 조각을 스트림할 수 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML 트리 만들기(C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 트리 만들기(C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)

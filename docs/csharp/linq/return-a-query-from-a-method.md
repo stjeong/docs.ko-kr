@@ -4,11 +4,11 @@ description: 쿼리를 반환하는 방법.
 ms.date: 11/30/2016
 ms.assetid: db220f79-c35b-41f2-886c-cd068672d42d
 ms.openlocfilehash: 1c5fa534f3f39f8201d93b986e687d85bb303736
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43473946"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43510789"
 ---
 # <a name="how-to-return-a-query-from-a-method-c-programming-guide"></a>방법: 메서드에서 쿼리 반환(C# 프로그래밍 가이드)
 이 예제는 메서드에서 반환 값 및 `out` 매개 변수로서 쿼리를 반환하는 방법을 보여 줍니다.  

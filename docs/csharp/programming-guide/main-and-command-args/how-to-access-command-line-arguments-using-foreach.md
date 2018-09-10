@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - command-line arguments [C#]
 ms.assetid: 89c3e335-3f5b-4e24-8c5a-b8036561fe8a
-ms.openlocfilehash: 2f1723efd4056539e12605bc1a4229f94bc9e055
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 811ee09aec7afac70f3f2c2fe5fb002232935028
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332509"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43511338"
 ---
 # <a name="how-to-access-command-line-arguments-using-foreach-c-programming-guide"></a>방법: foreach를 사용하여 명령줄 인수 액세스(C# 프로그래밍 가이드)
 배열을 반복하는 또 다른 방법은 이 예제에 표시된 대로 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 문을 사용하는 것입니다. `foreach` 문은 배열, .NET Framework 컬렉션 클래스 또는 <xref:System.Collections.IEnumerable> 인터페이스를 구현하는 임의의 클래스나 구조체를 반복하는 데 사용할 수 있습니다.  
@@ -24,12 +24,13 @@ ms.locfileid: "33332509"
   
  [!code-csharp[csProgGuideMain#11](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-access-command-line-arguments-using-foreach_2.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Array>  
- <xref:System.Collections>  
- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
- [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
- [방법: 명령줄 인수 표시](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
- [Main() 반환 값](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Array>  
+- <xref:System.Collections>  
+- [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
+- [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
+- [방법: 명령줄 인수 표시](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
+- [Main() 반환 값](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

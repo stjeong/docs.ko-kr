@@ -3,12 +3,12 @@ title: 구조체 - C# 가이드
 description: 구조체 형식 및 만드는 방법을 알아봅니다.
 ms.date: 10/12/2016
 ms.assetid: a7094b8c-7229-4b6f-82fc-824d0ea0ec40
-ms.openlocfilehash: 9fe4e0278ecf46f762a93aa489030c0a9e5563b3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 26b7b075dbe159d43fd7f84e9599d2d8d6a8332c
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349771"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43513088"
 ---
 # <a name="structs"></a>구조체
 *struct*가 값 형식입니다. 구조체를 만드는 경우 구조체가 할당된 변수에 구조체의 실제 데이터가 포함됩니다. 구조체를 새 변수에 할당하면 구조체가 복사됩니다. 따라서 새 변수와 원래 변수에 동일한 데이터의 두 가지 별도 복사본이 포함됩니다. 한 복사본의 변경 내용은 다른 복사본에 영향을 주지 않습니다.
@@ -66,6 +66,6 @@ C#에서는 리터럴 값이 컴파일러에서 형식을 받습니다. 숫자�
 일반적인 값 형식은 [null](./language-reference/keywords/null.md) 값을 가질 수 없습니다. 그러나 형식 뒤에 **?** 를 추가하면 nullable 값 형식을 만들 수 있습니다. 예를 들어 **int?** 는 [null](./language-reference/keywords/null.md) 값을 가질 수도 있는 **int** 형식입니다. CTS에서 Nullable 형식은 제네릭 구조체 형식 <xref:System.Nullable%601>의 인스턴스입니다. Nullable 형식은 특히 숫자 값이 null일 수 있는 데이터베이스에 데이터를 전달하는 경우에 유용합니다. 자세한 내용은 [Nullable 형식(C# 프로그래밍 가이드)](./programming-guide/nullable-types/index.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-[클래스](classes.md)
 
-[기본 형식](basic-types.md)
+- [클래스](classes.md)
+- [기본 형식](basic-types.md)

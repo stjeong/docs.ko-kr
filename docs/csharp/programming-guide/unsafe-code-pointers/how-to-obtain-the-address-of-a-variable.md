@@ -6,12 +6,12 @@ helpviewer_keywords:
 - pointers [C#], & operator
 - pointer expressions [C#], address-of operator
 ms.assetid: 44fe2cd9-a64f-4ef5-be2a-09ce807c0182
-ms.openlocfilehash: bb52aee3341194697b40b30ec14afced61a200be
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 40a7ac34a4e68df7aa316adc3cbd1999d975eabe
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340127"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43741882"
 ---
 # <a name="how-to-obtain-the-address-of-a-variable-c-programming-guide"></a>방법: 변수의 주소 가져오기(C# 프로그래밍 가이드)
 고정 변수로 계산되는 단항 식의 주소를 가져오려면 address-of 연산자 `&`를 사용합니다.  
@@ -35,11 +35,12 @@ int* p = &number; //address-of operator &
   
  [!code-csharp[address-of-a-variable](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#8)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [유형](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [유형](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

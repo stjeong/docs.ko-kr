@@ -4,12 +4,12 @@ ms.date: 04/20/2018
 helpviewer_keywords:
 - unsafe code [C#], pointers
 - pointers [C#]
-ms.openlocfilehash: cbc75a2ec6fe826cb192b1e8bef61c7295f13916
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 2950d92f877a7e99734267a3071b2bcb25ce1023
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42924510"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509280"
 ---
 # <a name="pointer-types-c-programming-guide"></a>포인터 형식(C# 프로그래밍 가이드)
 
@@ -89,12 +89,13 @@ int* myVariable;
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## <a name="see-also"></a>참고 항목
- [C# 프로그래밍 가이드](../index.md)  
- [안전하지 않은 코드 및 포인터](index.md)  
- [포인터 변환](pointer-conversions.md)  
- [포인터 식](pointer-expressions.md)  
- [유형](../../language-reference/keywords/types.md)  
- [unsafe](../../language-reference/keywords/unsafe.md)  
- [fixed 문](../../language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../language-reference/keywords/stackalloc.md)  
- [boxing 및 unboxing](../types/boxing-and-unboxing.md)
+
+- [C# 프로그래밍 가이드](../index.md)  
+- [안전하지 않은 코드 및 포인터](index.md)  
+- [포인터 변환](pointer-conversions.md)  
+- [포인터 식](pointer-expressions.md)  
+- [유형](../../language-reference/keywords/types.md)  
+- [unsafe](../../language-reference/keywords/unsafe.md)  
+- [fixed 문](../../language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../language-reference/keywords/stackalloc.md)  
+- [boxing 및 unboxing](../types/boxing-and-unboxing.md)

@@ -1,12 +1,12 @@
 ---
 title: AttributeUsage(C#)
 ms.date: 04/25/2018
-ms.openlocfilehash: 869e6509e55268767915a783a8652f7f950d7137
-ms.sourcegitcommit: 88f251b08bf0718ce119f3d7302f514b74895038
+ms.openlocfilehash: 37657a0611180d5b4c48b3e1778d33861afa5a74
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33955930"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500574"
 ---
 # <a name="attributeusage-c"></a>AttributeUsage(C#)
 
@@ -80,11 +80,12 @@ SecondAttribute
 ```
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Attribute>  
- <xref:System.Reflection>  
- [C# 프로그래밍 가이드](../..//index.md)  
- [특성](../../../..//standard/attributes/index.md)  
- [리플렉션(C#)](../reflection.md)  
- [특성](index.md)  
- [사용자 지정 특성 만들기(C#)](creating-custom-attributes.md)  
- [리플렉션을 사용하여 특성 액세스(C#)](accessing-attributes-by-using-reflection.md)
+
+- <xref:System.Attribute>  
+- <xref:System.Reflection>  
+- [C# 프로그래밍 가이드](../..//index.md)  
+- [특성](../../../..//standard/attributes/index.md)  
+- [리플렉션(C#)](../reflection.md)  
+- [특성](index.md)  
+- [사용자 지정 특성 만들기(C#)](creating-custom-attributes.md)  
+- [리플렉션을 사용하여 특성 액세스(C#)](accessing-attributes-by-using-reflection.md)

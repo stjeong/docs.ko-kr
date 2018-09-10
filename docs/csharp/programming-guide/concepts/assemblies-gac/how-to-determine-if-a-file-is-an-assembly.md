@@ -2,19 +2,19 @@
 title: '방법: 파일이 어셈블리인지 확인(C#)'
 ms.date: 07/20/2015
 ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
-ms.openlocfilehash: 0557f42d42e42606c3d1b2a2ad71bd797a159e8c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ee2313677fba21624ccdb44db779633f6c4503bf
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317985"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43861012"
 ---
 # <a name="how-to-determine-if-a-file-is-an-assembly-c"></a>방법: 파일이 어셈블리인지 확인(C#)
 파일은 관리되고 해당 메타데이터에 어셈블리 항목을 포함하는 경우에만 어셈블리입니다. 어셈블리 및 메타데이터에 대한 자세한 내용은 [어셈블리 매니페스트](../../../../../docs/framework/app-domains/assembly-manifest.md) 항목을 참조하세요.  
   
 ### <a name="how-to-manually-determine-if-a-file-is-an-assembly"></a>파일이 어셈블리인지 수동으로 확인하는 방법  
   
-1.  [Ildasm.exe(IL 디스어셈블러)](https://msdn.microsoft.com/library/f7dy01k1)를 시작합니다.  
+1.  [Ildasm.exe(IL 디스어셈블러)](../../../../framework/tools/ildasm-exe-il-disassembler.md)를 시작합니다.  
   
 2.  테스트하려는 파일을 로드합니다.  
   
@@ -66,7 +66,8 @@ class TestAssembly
   
  <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> 메서드는 테스트 파일을 로드한 다음 정보를 읽고 나면 해제합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection.AssemblyName>  
- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Reflection.AssemblyName>  
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
+- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

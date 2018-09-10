@@ -2,12 +2,12 @@
 title: LINQ to XML 클래스 개요(C#)
 ms.date: 07/20/2015
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
-ms.openlocfilehash: 619bf59c2b10cbb699f8e5b177991da9a0a2b238
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: d1454909591ff060f9d2a1d2484302e7112be149
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42751970"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43502393"
 ---
 # <a name="linq-to-xml-classes-overview-c"></a>LINQ to XML 클래스 개요(C#)
 이 항목에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 네임스페이스의 <xref:System.Xml.Linq> 클래스 목록을 제공하며 각 클래스에 대한 간략한 설명을 제공합니다.  
@@ -86,5 +86,6 @@ ms.locfileid: "42751970"
 ### <a name="xtext-class"></a>XText 클래스  
  <xref:System.Xml.Linq.XText>는 텍스트 노드를 나타냅니다. 대부분의 경우 이 클래스를 사용할 필요가 없습니다. 이 클래스는 혼합 내용에 주로 사용됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to XML 프로그래밍 개요(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## <a name="see-also"></a>참고 항목
+
+- [LINQ to XML 프로그래밍 개요(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

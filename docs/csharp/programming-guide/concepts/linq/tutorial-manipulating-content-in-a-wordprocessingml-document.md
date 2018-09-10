@@ -2,12 +2,12 @@
 title: '자습서: WordprocessingML 문서에서 내용 조작(C#)'
 ms.date: 07/20/2015
 ms.assetid: bc9815f8-13d2-4f50-a4d1-b1c0d50d37b3
-ms.openlocfilehash: 948363fcf3392a6258bb05e448dfb4ee37549304
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 64749bfda88b3bf9473fef08d5aef6490d2c37c7
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340114"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514784"
 ---
 # <a name="tutorial-manipulating-content-in-a-wordprocessingml-document-c"></a>자습서: WordprocessingML 문서에서 내용 조작(C#)
 이 자습서에서는 함수 변환 방법과 LINQ to XML을 적용하여 XML 문서를 조작하는 방법을 보여 줍니다. C# 예제에서는 Microsoft Word에서 저장한 Office Open XML WordprocessingML 문서의 정보를 쿼리하고 조작합니다.  
@@ -29,6 +29,7 @@ ms.locfileid: "33340114"
 |[Word 문서에서 텍스트 찾기(C#)](../../../../csharp/programming-guide/concepts/linq/finding-text-in-word-documents.md)|이전 쿼리를 사용하여 문서에서 지정된 텍스트 문자열을 찾습니다.|  
 |[Office Open XML WordprocessingML 문서 정보(C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)|Office Open XML WordprocessingML 문서에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML의 순수 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)  
- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML의 순수 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)  
+- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)

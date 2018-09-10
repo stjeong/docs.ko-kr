@@ -2,12 +2,12 @@
 title: '샘플 XML 파일: 통합된 구매 주문2'
 ms.date: 07/20/2015
 ms.assetid: 9d9698a5-95f2-4564-813b-ba536cdf3bfb
-ms.openlocfilehash: d9a97b097f208cdabb63023b36db1e374ac61c3f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 3f7f24d0607be9a657e00b9e81c821ac3b41c3b2
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43403590"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520475"
 ---
 # <a name="sample-xml-file-consolidated-purchase-orders"></a>샘플 XML 파일: 통합된 구매 주문
 다음 XML 파일은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 설명서의 다양한 예제에서 사용됩니다. 이 파일은 여러 회사에 속한 모양이 다른 구매 주문의 집합입니다. 각 회사의 구매 주문은 별도의 네임스페이스에 있습니다.  
@@ -144,5 +144,6 @@ ms.locfileid: "43403590"
 </PurchaseOrders>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [샘플 XML 문서(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [샘플 XML 문서(LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

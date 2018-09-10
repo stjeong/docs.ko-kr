@@ -7,11 +7,11 @@ f1_keywords:
 helpviewer_keywords:
 - stackalloc keyword [C#]
 ms.openlocfilehash: 5926550eea1f5a2f8fb74645f22ca54c2bed3136
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43484056"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43508582"
 ---
 # <a name="stackalloc-c-reference"></a>stackalloc(C# 참조)
 `stackalloc` 키워드는 스택에 메모리 블록을 할당하기 위해 안전하지 않은 코드 컨텍스트에서 사용됩니다.

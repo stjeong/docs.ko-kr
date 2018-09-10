@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Console.Write method
 ms.assetid: 120ba537-4448-4c62-8676-7a8fdd98f496
 ms.openlocfilehash: 8d034955d5d5d31788eafc0c21246451d7fd1f35
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43474296"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43508201"
 ---
 # <a name="formatting-numeric-results-table-c-reference"></a>숫자 결과 형식 지정 표(C# 참조)
 <xref:System.String.Format%2A?displayProperty=nameWithType> 메서드를 사용하거나 `String.Format`을 호출하는 <xref:System.Console.Write%2A?displayProperty=nameWithType> 또는 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 메서드를 통하거나 [문자열 보간](../tokens/interpolated.md)을 사용하여 숫자 결과의 서식을 지정할 수 있습니다. 형식은 형식 문자열을 사용하여 지정됩니다. 다음 표에는 지원되는 표준 형식 문자열을 보여 줍니다. 형식 문자열은 `Axx` 형식을 사용합니다. 여기서 `A`는 형식 지정자이고 `xx`는 전체 자릿수 지정자입니다. 형식 지정자는 숫자 값에 적용되는 서식 형식을 제어하고, 전체 자릿수 지정자는 서식이 지정된 출력의 유효 자릿수 또는 소수 자릿수를 제어합니다. 전체 자릿수 지정자의 값은 0에서 99 사이입니다.  

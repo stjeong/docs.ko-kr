@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# language, abstract classes
 - C# language, sealed
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
-ms.openlocfilehash: aa7c951acadd2e7b60f6da17cd7bf357fbd02d95
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0e80357a51bde270d5ed012f16f7b2e821f084c8
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33313916"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517344"
 ---
 # <a name="abstract-and-sealed-classes-and-class-members-c-programming-guide"></a>추상 및 봉인 클래스와 클래스 멤버(C# 프로그래밍 가이드)
 [abstract](../../../csharp/language-reference/keywords/abstract.md) 키워드를 사용하면, 불완전하여 파생 클래스에서 구현해야 하는 클래스 및 [클래스](../../../csharp/language-reference/keywords/class.md) 멤버를 만들 수 있습니다.  
@@ -47,10 +47,11 @@ ms.locfileid: "33313916"
   
  [!code-csharp[csProgGuideInheritance#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/abstract-and-sealed-classes-and-class-members_5.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)  
- [방법: 추상 속성 정의](../../../csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)  
+- [방법: 추상 속성 정의](../../../csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties.md)

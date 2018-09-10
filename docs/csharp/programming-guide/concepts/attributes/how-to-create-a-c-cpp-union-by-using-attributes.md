@@ -2,12 +2,12 @@
 title: '방법: 특성을 사용하여 C-C++ 공용 구조체 만들기(C#)'
 ms.date: 07/20/2015
 ms.assetid: 85f35e56-26e0-4d31-9f3a-89bd4005e71a
-ms.openlocfilehash: 30a8be9021495aa4cf61010508762999cdf91ff4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8b5a88656b1172407c3e5b9f5198d5acae7bf9e0
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33315843"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43798511"
 ---
 # <a name="how-to-create-a-cc-union-by-using-attributes-c"></a>방법: 특성을 사용하여 C/C++ 공용 구조체 만들기(C#)
 특성을 사용하면 메모리에서 구조체가 레이아웃되는 방식을 사용자 지정할 수 있습니다. 예를 들어 `StructLayout(LayoutKind.Explicit)` 및 `FieldOffset` 특성을 사용하여 C/C++에서 공용 구조체로 알려진 항목을 만들 수 있습니다.  
@@ -66,12 +66,13 @@ ms.locfileid: "33315843"
   
  두 개의 정수 필드 `i1` 및 `i2`는 `lg`와 동일한 메모리 위치를 공유합니다. 구조체 레이아웃에 대한 이러한 종류의 제어는 플랫폼 호출을 사용할 때 유용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection>  
- <xref:System.Attribute>  
- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
- [특성](../../../../../docs/standard/attributes/index.md)  
- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
- [특성(C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
- [사용자 지정 특성 만들기(C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)  
- [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Reflection>  
+- <xref:System.Attribute>  
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
+- [특성](../../../../../docs/standard/attributes/index.md)  
+- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+- [특성(C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
+- [사용자 지정 특성 만들기(C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)  
+- [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

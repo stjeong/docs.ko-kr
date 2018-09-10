@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - command-line arguments [C#]
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
-ms.openlocfilehash: ccfac6bd2688a2e02a1b3fcc14748d357acb1aa2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: a55e40a4a4880c39c74186c55b0886e06dc33bcb
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43464339"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083951"
 ---
 # <a name="command-line-arguments-c-programming-guide"></a>명령줄 인수(C# 프로그래밍 가이드)
 다음 방법 중 하나로 메서드를 정의하여 인수를 `Main` 메서드에 보낼 수 있습니다.  
@@ -71,13 +71,14 @@ long num = Convert.ToInt64(s);
 > [!NOTE]
 >  Visual Studio에서 응용 프로그램을 실행할 경우 [프로젝트 디자이너, 디버그 페이지](/visualstudio/ide/reference/debug-page-project-designer)에서 명령줄 인수를 지정할 수 있습니다.  
   
- 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](https://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4)을 참조하세요.  
+ 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Environment?displayProperty=nameWithType>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
- [방법: 명령줄 인수 표시](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
- [방법: foreach를 사용하여 명령줄 인수 액세스](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)  
- [Main() 반환 값](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)  
- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Environment?displayProperty=nameWithType>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [Main()과 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md)  
+- [방법: 명령줄 인수 표시](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
+- [방법: foreach를 사용하여 명령줄 인수 액세스](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)  
+- [Main() 반환 값](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)  
+- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)

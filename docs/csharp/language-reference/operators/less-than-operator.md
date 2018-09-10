@@ -8,11 +8,11 @@ helpviewer_keywords:
 - < operator [C#]
 ms.assetid: 38cb91e6-79a6-48ec-9c1e-7b71fd8d2b41
 ms.openlocfilehash: 382110985eaffd7ca4cf014d7991fc5ee87dc031
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43467408"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530310"
 ---
 # <a name="lt-operator-c-reference"></a>&lt; 연산자(C# 참조)
 모든 숫자 형식과 열거형은 첫 번째 피연산자가 두 번째 피연산자보다 작으면 `true`를 반환하고 그렇지 않으면 `false`를 반환하는 “보다 작음” 관계 연산자(`<`)를 정의합니다.  

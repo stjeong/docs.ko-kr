@@ -2,12 +2,12 @@
 title: XPath 사용자를 위한 LINQ to XML(C#)
 ms.date: 07/20/2015
 ms.assetid: 91774511-1dca-4f06-ac0b-913746f104fe
-ms.openlocfilehash: e55e763db2169b704b0b1fcc72e21d9e339b01f6
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.openlocfilehash: c5c3d94c218f712a127ad313d3b000174644f9dd
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199123"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516408"
 ---
 # <a name="linq-to-xml-for-xpath-users-c"></a>XPath 사용자를 위한 LINQ to XML(C#)
 이 항목 집합에서는 다양한 XPath 식과 각 XPath 식에 해당하는 동일한 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 항목을 보여 줍니다.  
@@ -36,7 +36,8 @@ ms.locfileid: "39199123"
 |[방법: 위치에 따라 자식 요소 찾기(XPath-LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-child-elements-based-on-position-xpath-linq-to-xml.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 상대 위치를 기준으로 요소를 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"Test[position() >= 2 and position() <= 4]"`입니다.|  
 |[방법: 직접 선행 형제 찾기(XPath 및 LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md)|XPath와 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하여 노드의 바로 이전 형제를 찾는 방법을 비교합니다.<br /><br /> 관련된 XPath 식은 `"preceding-sibling::*[1]"`입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XPath?displayProperty=nameWithType>  
- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XPath?displayProperty=nameWithType>  
+- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../standard/data/xml/process-xml-data-using-the-xpath-data-model.md)

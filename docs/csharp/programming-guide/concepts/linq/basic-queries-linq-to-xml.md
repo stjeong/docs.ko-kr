@@ -2,12 +2,12 @@
 title: 기본 쿼리(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: d333bb7d-20c1-448a-95b7-e5ba07915744
-ms.openlocfilehash: b96fc6f2af7754d2403c2ccdf862e976463838a3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 77ff053e3cf8589cbc44caf66a4e5b532bc54b26
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43392587"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518495"
 ---
 # <a name="basic-queries-linq-to-xml-c"></a>기본 쿼리(LINQ to XML)(C#)
 이 단원에서는 기본 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 쿼리의 예제를 제공합니다.  
@@ -30,5 +30,6 @@ ms.locfileid: "43392587"
 |[방법: 컨텍스트에 따라 요소를 찾는 쿼리 작성(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md)|트리의 다른 요소를 기반으로 요소를 선택하는 방법을 보여 줍니다.|  
 |[방법: 빈 쿼리 결과 집합 디버그(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|기본 네임스페이스에 있는 XML에 대한 쿼리를 디버깅할 때 적절한 해결 방법을 보여 줍니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

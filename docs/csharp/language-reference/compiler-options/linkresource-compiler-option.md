@@ -12,11 +12,11 @@ helpviewer_keywords:
 - linkresource compiler option [C#]
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
 ms.openlocfilehash: feca4713fe0e704799e2abbae3818edd0f3a5c84
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43407739"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43523177"
 ---
 # <a name="-linkresource-c-compiler-options"></a>-linkresource(C# 컴파일러 옵션)
 출력 파일에 .NET Framework 리소스에 대한 링크를 만듭니다. 리소스 파일은 출력 파일에 추가되지 않습니다. 이 점에서 출력 파일에 리소스 파일을 포함하는 [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) 옵션과 다릅니다.  

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - conditional-AND operator (&&) [C#]
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 ms.openlocfilehash: 03d81d4216dabce2ea75b9fdcf6ef0971cc32490
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43388861"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530108"
 ---
 # <a name="-operator-c-reference"></a>?? 연산자(C# 참조)
 `??` 연산자는 null 병합 연산자라고 합니다.  이 연산자는 피연산자가 null이 아닐 경우 왼쪽 피연산자를 반환하고 null일 경우 오른쪽 피연산자를 반환합니다.  

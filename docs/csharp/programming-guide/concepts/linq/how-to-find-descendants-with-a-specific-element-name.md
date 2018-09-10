@@ -2,12 +2,12 @@
 title: '방법: 특정 요소 이름으로 하위 항목 찾기(C#)'
 ms.date: 07/20/2015
 ms.assetid: f684da20-bee9-47f5-9607-7e3fd7e67470
-ms.openlocfilehash: f95551f0c1506a56474d497622b90090cc4c8865
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6c5e035b4ee0168a0c41a34754314e18d089b1ef
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320234"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43861421"
 ---
 # <a name="how-to-find-descendants-with-a-specific-element-name-c"></a>방법: 특정 요소 이름으로 하위 항목 찾기(C#)
 특정 이름을 가진 모든 하위 요소를 찾으려는 경우가 있습니다. 모든 하위 요소를 반복하는 코드를 작성할 수 있지만 <xref:System.Xml.Linq.XContainer.Descendants%2A> 축을 사용하는 것이 더 쉽습니다.  
@@ -91,6 +91,7 @@ Console.WriteLine(str);
 Some text that is broken up into multiple segments.  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
+- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

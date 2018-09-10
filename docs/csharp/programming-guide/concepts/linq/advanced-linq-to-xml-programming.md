@@ -2,12 +2,12 @@
 title: 고급 LINQ to XML 프로그래밍(C#)
 ms.date: 07/20/2015
 ms.assetid: 2e012d40-532b-49ea-b1fc-152e616bdfa3
-ms.openlocfilehash: e455b2b579c56632d5e06b4da5c44a71ea150416
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 684c91724ad8f283dc47f38e31697884f4d216d2
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42931839"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43855818"
 ---
 # <a name="advanced-linq-to-xml-programming-c"></a>고급 LINQ to XML 프로그래밍(C#)
 이 단원에서는 특정 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 시나리오의 고급 개발자에게만 해당될 수 있는 정보를 제공합니다.  
@@ -28,5 +28,6 @@ ms.locfileid: "42931839"
 |[XElement 개체를 포함하는 개체 그래프 serialize(C#)](../../../../csharp/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)|<xref:System.Xml.Linq.XElement> 및 <xref:System.Xml.Linq.XDocument> 개체가 포함된 개체 그래프를 serialize하는 방법에 대해 설명합니다.|  
 |[LINQ to XML로 WPF 데이터 바인딩](/visualstudio/designers/wpf-data-binding-with-linq-to-xml)|Windows Presentation Foundation 응용 프로그램의 데이터 바인딩에 대한 데이터 소스로 LINQ to XML을 사용하는 방법에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

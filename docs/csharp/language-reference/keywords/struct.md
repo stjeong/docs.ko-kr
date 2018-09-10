@@ -8,11 +8,11 @@ helpviewer_keywords:
 - structs [C#], struct keyword
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 ms.openlocfilehash: 7931da2e5f5c493b54eb1f33a1d6f57b38592f6e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399020"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43530194"
 ---
 # <a name="struct-c-reference"></a>struct(C# 참조)
 `struct` 형식은 인벤토리의 항목 특성이나 사각형의 좌표와 같은 관련 변수의 소규모 그룹을 캡슐화하는 데 일반적으로 사용되는 값 형식입니다. 다음 예제에서는 간단한 구조체 선언을 보여줍니다.  

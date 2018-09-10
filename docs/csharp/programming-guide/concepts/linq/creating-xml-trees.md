@@ -2,12 +2,12 @@
 title: XML 트리 만들기(C#)
 ms.date: 07/20/2015
 ms.assetid: bccc3e0a-c08c-468e-9d30-e075670fdace
-ms.openlocfilehash: a9e9cfd82434de0fabc8119aa500ad9d9ef8155a
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 1245c0f087bb63f12d9f17389bf752330ccc7670
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481377"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43521540"
 ---
 # <a name="creating-xml-trees-c"></a>XML 트리 만들기(C#)
 가장 일반적인 XML 작업 중 하나는 XML 트리를 생성하는 것입니다. 이 단원에서는 XML 트리를 만드는 몇 가지 방법에 대해 설명합니다.  
@@ -23,5 +23,6 @@ ms.locfileid: "43481377"
 |[방법: XSD를 사용하여 유효성 검사(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md)|XSD를 사용하여 XML 트리의 유효성을 검사하는 방법을 보여 줍니다.|  
 |[XElement 및 XDocument 개체의 올바른 콘텐츠](../../../../csharp/programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects3.md)|생성자에 전달될 수 있는 유효한 인수에 대해 설명하고 내용을 요소와 문서에 추가하는 데 사용되는 메서드에 대한 정보를 제공합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

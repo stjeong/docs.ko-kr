@@ -6,12 +6,12 @@ helpviewer_keywords:
 - registry keys, creating [C#]
 - keys, creating in registry
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-ms.openlocfilehash: f2b2cfcb09dc0c8c4d65b64f5de55c0b72746457
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 383d47413078359d7491bf5f7f61dc5e70d842a7
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480610"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526740"
 ---
 # <a name="how-to-create-a-key-in-the-registry-visual-c"></a>방법: 레지스트리에 키 만들기(Visual C#)
 이 예제에서는 현재 사용자의 레지스트리, "Names" 키 아래에 "Name" 및 "Isabella" 값 쌍을 추가합니다.  
@@ -55,8 +55,9 @@ key.Close();
   
  레지스트리 키가 ACL(액세스 제어 목록)로 보호된 경우에도 암호 등을 레지스트리에 일반 텍스트로 저장하는 것은 안전하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)  
- [C#을 사용하여 레지스트리에서 읽기, 쓰기 및 삭제](http://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO?displayProperty=nameWithType>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)  
+- [C#을 사용하여 레지스트리에서 읽기, 쓰기 및 삭제](http://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

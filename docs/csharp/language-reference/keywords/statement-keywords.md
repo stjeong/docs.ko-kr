@@ -5,12 +5,12 @@ helpviewer_keywords:
 - keywords [C#], statements
 - statements [C#]
 ms.assetid: fad0c004-e282-4ec8-a127-bca7fd7a0b6f
-ms.openlocfilehash: 2485a6258913b1dae04c093fa74a8acf1aaa3ca3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c9f253f31a7376bf0429784a031188b91cc070df
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269663"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515829"
 ---
 # <a name="statement-keywords-c-reference"></a>문 키워드(C# 참조)
 문은 프로그램 명령입니다. 다음 표에서 참조된 항목에 설명된 경우를 제외하고 문은 순서대로 실행됩니다. 다음 표에는 C# 문 키워드가 나와 있습니다. 키워드로 표현되지 않은 문에 대한 자세한 내용은 [문](../../../csharp/programming-guide/statements-expressions-operators/statements.md)을 참조하세요.  
@@ -25,7 +25,8 @@ ms.locfileid: "33269663"
 [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)|[fixed](../../../csharp/language-reference/keywords/fixed-statement.md)|  
 |[lock 문](../../../csharp/language-reference/keywords/lock-statement.md)|[lock](../../../csharp/language-reference/keywords/lock-statement.md)|  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [문](../../../csharp/programming-guide/statements-expressions-operators/statements.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [문](../../../csharp/programming-guide/statements-expressions-operators/statements.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)

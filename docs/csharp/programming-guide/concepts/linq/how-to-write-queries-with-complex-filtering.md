@@ -2,12 +2,12 @@
 title: '방법: 복합 필터링으로 쿼리 작성(C#)'
 ms.date: 07/20/2015
 ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
-ms.openlocfilehash: 72c34f8ef8bebb3584e00cf040cfcdc35dfc3701
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2f8eef2f75e45212b3493aa1b6f813c52beb7665
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324813"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43508835"
 ---
 # <a name="how-to-write-queries-with-complex-filtering-c"></a>방법: 복합 필터링으로 쿼리 작성(C#)
 복잡한 필터를 사용하여 LINQ to XML 쿼리를 작성하려는 경우가 있습니다. 예를 들어, 특정 이름과 값을 가진 자식 요소가 있는 모든 요소를 찾으려고 할 수 있습니다. 이 항목에서는 복잡한 필터링을 사용하여 쿼리를 작성하는 예제를 제공합니다.  
@@ -69,9 +69,10 @@ foreach (XElement el in purchaseOrders)
 99505  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement.Attribute%2A>  
- <xref:System.Xml.Linq.XContainer.Elements%2A>  
- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
- [프로젝션 작업(C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)  
- [수량자 작업(C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Linq.XElement.Attribute%2A>  
+- <xref:System.Xml.Linq.XContainer.Elements%2A>  
+- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
+- [프로젝션 작업(C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)  
+- [수량자 작업(C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md)

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - dot operator (.) [C#]
 ms.assetid: a1f54b52-b686-4ae5-a48e-a2a9ebd0eb7b
 ms.openlocfilehash: a092c1a916e3dc4bf6d96660c532540945e57554
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43408009"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43520710"
 ---
 # <a name="-operator-c-reference"></a>. 연산자(C# 참조)
 점 연산자(`.`)는 멤버 액세스에 사용됩니다. 점 연산자는 형식 또는 네임스페이스의 멤버를 지정합니다. 예를 들어 점 연산자는 .NET Framework 클래스 라이브러리 내의 특정 메서드에 액세스하는 데 사용됩니다.  

@@ -2,12 +2,12 @@
 title: XML 트리 serialize(C#)
 ms.date: 07/20/2015
 ms.assetid: b3937e54-4ce9-4236-ac96-14e7972aa594
-ms.openlocfilehash: 8f372a05bd69b801085cba9d9a3b11ae01841a2c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f9bcf049eb6cfe129971923657f5d70a833209cc
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338353"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500482"
 ---
 # <a name="serializing-xml-trees-c"></a>XML 트리 serialize(C#)
 XML 트리를 serialize하는 것은 XML 트리에서 XML을 생성하는 것을 의미합니다. 파일, <xref:System.IO.TextWriter> 클래스의 구체적 구현 또는 <xref:System.Xml.XmlWriter>의 구체적 구현으로 serialize할 수 있습니다.  
@@ -23,5 +23,6 @@ XML 트리를 serialize하는 것은 XML 트리에서 XML을 생성하는 것을
 |[Files, TextWriters 및 XmlWriters로 serialization](../../../../csharp/programming-guide/concepts/linq/serializing-to-files-textwriters-and-xmlwriters.md)|문서를 <xref:System.IO.File>, <xref:System.IO.TextWriter> 또는 <xref:System.Xml.XmlWriter>로 serialize하는 방법에 대해 설명합니다.|  
 |[XmlReader로 serialize(XSLT 호출)(C#)](../../../../csharp/programming-guide/concepts/linq/serializing-to-an-xmlreader-invoking-xslt.md)|다른 모듈에서 XML 트리의 내용을 읽을 수 있도록 하는 <xref:System.Xml.XmlReader>를 만드는 방법에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [프로그래밍 가이드(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

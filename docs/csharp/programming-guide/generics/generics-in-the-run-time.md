@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - generics [C#], at run time
 ms.assetid: 119df7e6-9ceb-49df-af36-24f8f8c0747f
-ms.openlocfilehash: c7cc0580398eeb5c70422cba3569340133107b12
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e5eb0ed02b1462aa126e55d688f4166aa741353a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334537"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43513808"
 ---
 # <a name="generics-in-the-run-time-c-programming-guide"></a>런타임의 제네릭(C# 프로그래밍 가이드)
 제네릭 형식 또는 메서드가 MSIL(Microsoft Intermediate Language)로 컴파일되면 자체적으로 형식 매개 변수를 갖는 것으로 식별하는 메타데이터가 포함됩니다. 제네릭 형식의 MSIL이 사용되는 방식은 제공된 형식 매개 변수가 값 형식인지 참조 형식인지에 따라 다릅니다.  
@@ -46,8 +46,9 @@ ms.locfileid: "33334537"
   
  그뿐만 아니라, 값 형식 또는 참조 형식 매개 변수를 사용하여 제네릭 C# 클래스가 인스턴스화되면 런타임에 리플렉션을 통해 쿼리할 수 있고 실제 형식과 형식 매개 변수를 모두 확인할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [제네릭](~/docs/standard/generics/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Generic>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- [제네릭](~/docs/standard/generics/index.md)

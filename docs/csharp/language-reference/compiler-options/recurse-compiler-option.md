@@ -9,11 +9,11 @@ helpviewer_keywords:
 - -recurse compiler option [C#]
 ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
 ms.openlocfilehash: 1fc5591cb73164e15384eb4407a6e61e903eedbb
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43398779"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43529899"
 ---
 # <a name="-recurse-c-compiler-options"></a>-recurse(C# 컴파일러 옵션)
 -recurse 옵션을 사용하면 지정된 디렉터리(dir) 또는 프로젝트 디렉터리의 모든 자식 디렉터리에 있는 소스 코드 파일을 컴파일할 수 있습니다.  

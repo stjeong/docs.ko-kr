@@ -2,12 +2,12 @@
 title: 스레드 동기화(C#)
 ms.date: 07/20/2015
 ms.assetid: e42b1be6-c93c-479f-a148-be0759f1a4e1
-ms.openlocfilehash: 4ed6cad647c965882a63282ce32c998cec138eec
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 6f0fe42c06b27369612cf586c7a93ce098822162
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43463158"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509388"
 ---
 # <a name="thread-synchronization-c"></a>스레드 동기화(C#)
 다음 섹션에서는 다중 스레드 응용 프로그램에서 리소스에 대한 액세스를 동기화 하는 데 사용할 수 있는 기능 및 클래스를 설명합니다.  
@@ -142,26 +142,27 @@ class ThreadingExample
 ## <a name="deadlocks"></a>교착 상태  
  스레드 동기화는 다중 스레드 응용 프로그램에서 중요하지만 항상 여러 스레드가 서로를 대기하여 응용 프로그램이 중단되는 `deadlock`이 발생할 위험이 있습니다. 교착 상태는 자동차가 교차로 일단 정지 지점에서 멈춰 있고 서로 지나가기를 기다리는 상황과 유사합니다. 교착 상태를 방지하는 것이 중요하며, 관건은 신중한 계획입니다. 대체로 코딩을 시작하기 전에 다중 스레드 응용 프로그램의 다이어그램을 작성하면 교착 상태 상황을 예측할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.WaitHandle.WaitOne%2A>  
- <xref:System.Threading.WaitHandle.WaitAny%2A>  
- <xref:System.Threading.WaitHandle.WaitAll%2A>  
- <xref:System.Threading.Thread.Join%2A>  
- <xref:System.Threading.Thread.Start%2A>  
- <xref:System.Threading.Thread.Sleep%2A>  
- <xref:System.Threading.Monitor>  
- <xref:System.Threading.Mutex>  
- <xref:System.Threading.AutoResetEvent>  
- <xref:System.Threading.ManualResetEvent>  
- <xref:System.Threading.Interlocked>  
- <xref:System.Threading.WaitHandle>  
- <xref:System.Threading.EventWaitHandle>  
- <xref:System.Threading>  
- <xref:System.Threading.EventWaitHandle.Set%2A>  
- <xref:System.Threading.Monitor>  
- [lock 문](../../../../csharp/language-reference/keywords/lock-statement.md)  
- [뮤텍스](../../../../standard/threading/mutexes.md)  
- [연동 작업](../../../../standard/threading/interlocked-operations.md)  
- [AutoResetEvent](../../../../standard/threading/autoresetevent.md)  
- [다중 스레딩을 위한 데이터 동기화](../../../../standard/threading/synchronizing-data-for-multithreading.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.WaitHandle.WaitOne%2A>  
+- <xref:System.Threading.WaitHandle.WaitAny%2A>  
+- <xref:System.Threading.WaitHandle.WaitAll%2A>  
+- <xref:System.Threading.Thread.Join%2A>  
+- <xref:System.Threading.Thread.Start%2A>  
+- <xref:System.Threading.Thread.Sleep%2A>  
+- <xref:System.Threading.Monitor>  
+- <xref:System.Threading.Mutex>  
+- <xref:System.Threading.AutoResetEvent>  
+- <xref:System.Threading.ManualResetEvent>  
+- <xref:System.Threading.Interlocked>  
+- <xref:System.Threading.WaitHandle>  
+- <xref:System.Threading.EventWaitHandle>  
+- <xref:System.Threading>  
+- <xref:System.Threading.EventWaitHandle.Set%2A>  
+- <xref:System.Threading.Monitor>  
+- [lock 문](../../../../csharp/language-reference/keywords/lock-statement.md)  
+- [뮤텍스](../../../../standard/threading/mutexes.md)  
+- [연동 작업](../../../../standard/threading/interlocked-operations.md)  
+- [AutoResetEvent](../../../../standard/threading/autoresetevent.md)  
+- [다중 스레딩을 위한 데이터 동기화](../../../../standard/threading/synchronizing-data-for-multithreading.md)

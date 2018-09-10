@@ -2,12 +2,12 @@
 title: 실행 방식에 따라 표준 쿼리 연산자 분류(C#)
 ms.date: 07/20/2015
 ms.assetid: b9435ce5-a7cf-4182-9f01-f3468a5533dc
-ms.openlocfilehash: 40b5859631b37f8d5e810de3c999742bafe9f6ee
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 76a1cc4cdca00df8e3338e9251ce1e715cb8ce29
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336032"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518107"
 ---
 # <a name="classification-of-standard-query-operators-by-manner-of-execution-c"></a>실행 방식에 따라 표준 쿼리 연산자 분류(C#)
 표준 쿼리 연산자 메서드의 LINQ to Objects 구현은 즉시 실행 또는 지연된 실행의 두 가지 기본 방식 중 하나로 실행됩니다. 지연된 실행을 사용하는 쿼리 연산자는 스트리밍 및 비스트리밍의 두 가지 범주로 추가로 구분할 수 있습니다. 여러 쿼리 연산자가 어떻게 실행되는지 알고 있으면 제공된 쿼리에서 얻을 결과를 이해하는 데 도움이 될 수 있습니다. 데이터 소스가 변경되거나 다른 쿼리 위에 쿼리를 빌드할 경우 특히 도움이 됩니다. 이 항목에서는 실행 방식에 따라 표준 쿼리 연산자를 분류합니다.  
@@ -87,8 +87,9 @@ ms.locfileid: "33336032"
 |<xref:System.Linq.Enumerable.Union%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
 |<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.Enumerable>  
- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [표준 쿼리 연산자의 쿼리 식 구문(C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)  
- [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq.Enumerable>  
+- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- [표준 쿼리 연산자의 쿼리 식 구문(C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)  
+- [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)

@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - generics [C#], benefits
 ms.assetid: 80f037cd-9ea7-48be-bfc1-219bfb2d4277
-ms.openlocfilehash: bd0a133c6ce1a9623bfe8598d1dc786c44e6eaad
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2770f8bc7fc4242beb02bf9e0555b5cbb8db0180
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336832"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43503796"
 ---
 # <a name="benefits-of-generics-c-programming-guide"></a>제네릭의 장점(C# 프로그래밍 가이드)
 제네릭은 형식을 유니버설 기본 형식 <xref:System.Object>으로/에서 캐스팅하여 일반화가 수행되는 이전 버전의 공용 언어 런타임 및 C# 언어의 제한 사항에 대한 솔루션을 제공합니다. 제네릭 클래스를 만들면 컴파일 시간에 형식이 안전한 컬렉션을 만들 수 있습니다.  
@@ -34,10 +34,11 @@ ms.locfileid: "33336832"
   
  클라이언트 코드의 경우 <xref:System.Collections.ArrayList>에 해당하는 <xref:System.Collections.Generic.List%601>로 추가된 유일한 구문은 선언 및 인스턴스화의 형식 인수입니다. 코딩이 약간 더 복잡하지만 <xref:System.Collections.ArrayList>보다 안전할 뿐 아니라 특히 목록 항목이 값 형식인 경우 훨씬 더 빠른 목록을 만들 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [boxing 및 unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)  
- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)  
- [컬렉션에 대한 지침](../../../standard/design-guidelines/guidelines-for-collections.md)   
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Generic>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [제네릭 소개](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- [boxing 및 unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)  
+- [제네릭 컬렉션 사용 기준](../../../standard/collections/when-to-use-generic-collections.md)  
+- [컬렉션에 대한 지침](../../../standard/design-guidelines/guidelines-for-collections.md)   

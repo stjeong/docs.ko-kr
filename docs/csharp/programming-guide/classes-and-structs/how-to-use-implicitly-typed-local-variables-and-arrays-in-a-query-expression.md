@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - implicitly-typed local variables [C#], how to use
 ms.assetid: 6b7354d2-af79-427a-b6a8-f74eb8fd0b91
-ms.openlocfilehash: ef3a411bc51fcc5f644f9d53bde67f7116289678
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: dccf40508d4223bdef0b2fbbe5ce97f75ffb5773
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481581"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43500988"
 ---
 # <a name="how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression-c-programming-guide"></a>방법: 쿼리 식에서 암시적으로 형식화된 지역 변수 및 배열 사용(C# 프로그래밍 가이드)
 컴파일러에서 지역 변수의 형식을 확인하려는 경우 항상 암시적으로 형식화된 지역 변수를 사용할 수 있습니다. 쿼리 식에 자주 사용되는 무명 형식을 저장하려면 암시적으로 형식화된 지역 변수를 사용해야 합니다. 다음 예제에서는 쿼리에서 암시적으로 형식화된 지역 변수의 선택적 및 필수 사용을 보여 줍니다.  
@@ -26,9 +26,10 @@ ms.locfileid: "43481581"
   
  [!code-csharp[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_2.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [확장명 메서드](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
- [LINQ(Language-Integrated Query)](../../../csharp/linq/index.md)  
- [var](../../../csharp/language-reference/keywords/var.md)  
- [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [확장명 메서드](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
+- [LINQ(Language-Integrated Query)](../../../csharp/linq/index.md)  
+- [var](../../../csharp/language-reference/keywords/var.md)  
+- [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)

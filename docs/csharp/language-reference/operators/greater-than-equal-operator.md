@@ -8,11 +8,11 @@ helpviewer_keywords:
 - '>= operator [C#]'
 ms.assetid: 0db4dcaf-56a3-4884-a7ad-35f64978a58d
 ms.openlocfilehash: 8749d1dc0670a5a76bda5ee0d69a4a142671c1e6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481764"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43511095"
 ---
 # <a name="gt-operator-c-reference"></a>&gt;= 연산자(C# 참조)
 모든 숫자 형식과 열거형은 첫 번째 피연산자가 두 번째 피연산자보다 크거나 같을 경우에 `true`를 반환하고, 그렇지 않으면 `false`를 반환하는 “크거나 같음" 관계 연산자(`>=`)를 정의합니다.  

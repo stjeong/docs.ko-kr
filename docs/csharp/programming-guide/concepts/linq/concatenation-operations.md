@@ -2,12 +2,12 @@
 title: 연결 작업(C#)
 ms.date: 07/20/2015
 ms.assetid: 890ee104-c590-457e-8a7f-b2b5da0fb417
-ms.openlocfilehash: 37816cd488e92fd09b257b5a1d1cccf0e5bf4cbc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5b6e18db7dc812c5d8fec635420abb8d806e704e
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323383"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43508599"
 ---
 # <a name="concatenation-operations-c"></a>연결 작업(C#)
 연결은 한 시퀀스를 다른 시퀀스에 추가하는 작업을 나타냅니다.  
@@ -24,7 +24,8 @@ ms.locfileid: "33323383"
 |-----------------|-----------------|---------------------------------|----------------------|  
 |Concat|두 시퀀스를 연결하여 하나의 시퀀스를 구성합니다.|해당 사항 없음.|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=nameWithType>|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq>  
- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [방법: 문자열 컬렉션 결합 및 비교(LINQ)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq>  
+- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- [방법: 문자열 컬렉션 결합 및 비교(LINQ)(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)

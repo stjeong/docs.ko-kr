@@ -2,12 +2,12 @@
 title: LINQ 소개(C#)
 ms.date: 07/20/2015
 ms.assetid: 54874feb-55e5-4ca8-a9d6-1c1127fd7fb1
-ms.openlocfilehash: 3c32c20efec55568a668c5dba55baf8f3ebbee7a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 990a47d6ecfe38d9efa7d505eb3c23a28c05f58c
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323318"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43740249"
 ---
 # <a name="introduction-to-linq-c"></a>LINQ 소개(C#)
 LINQ(Language-Integrated Query)는 개체 환경과 데이터 환경 간의 간격을 연결하는 .NET Framework 버전 3.5에서 도입된 혁신입니다.  
@@ -33,5 +33,6 @@ LINQ(Language-Integrated Query)는 개체 환경과 데이터 환경 간의 간�
   
 -   .NET 컬렉션, 파일, 문자열 등: [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

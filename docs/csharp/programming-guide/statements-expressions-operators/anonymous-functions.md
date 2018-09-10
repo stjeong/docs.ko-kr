@@ -6,12 +6,12 @@ helpviewer_keywords:
 - anonymous functions [C#]
 - anonymous methods [C#]
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
-ms.openlocfilehash: e368105c090f95435a4529470bdf1b41346d039c
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 90a5a71f83a7117a7468bab0d9fe9d013685ebbe
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936752"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43515241"
 ---
 # <a name="anonymous-functions-c-programming-guide"></a>익명 함수(C# 프로그래밍 가이드)
 익명 함수는 대리자 형식이 예상되는 곳에서 항상 사용할 수 있는 “인라인” 문 또는 식입니다. 이를 사용하여 명명된 대리자를 초기화하거나 명명된 대리자 형식 대신 이를 메서드 매개 변수로 전달할 수 있습니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "37936752"
   
 ## <a name="see-also"></a>참고 항목
 
-[문, 식, 연산자](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
-[람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
-[대리자](../../../csharp/programming-guide/delegates/index.md)  
-[식 트리(C#)](../concepts/expression-trees/index.md)  
+- [문, 식, 연산자](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
+- [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+- [대리자](../../../csharp/programming-guide/delegates/index.md)  
+- [식 트리(C#)](../concepts/expression-trees/index.md)  

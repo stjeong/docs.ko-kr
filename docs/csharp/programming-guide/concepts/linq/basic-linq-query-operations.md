@@ -17,12 +17,12 @@ helpviewer_keywords:
 - join clause [LINQ in C#]
 - group clause [LINQ in C#]
 ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
-ms.openlocfilehash: 2825b79c9638fff050522da43184a8d95a3fe02f
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: 8b8237a09b36114f7100c90cee0bd753236789fd
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42752203"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43522622"
 ---
 # <a name="basic-linq-query-operations-c"></a>기본 LINQ 쿼리 작업(C#)
 이 항목에서는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 식 및 쿼리에서 수행하는 일부 일반적인 작업을 간단히 소개합니다. 자세한 내용은 다음 항목을 참조하세요.  
@@ -99,9 +99,10 @@ from order in Customer.Orders...
 ## <a name="selecting-projections"></a>선택(프로젝션)  
  `select` 절은 쿼리 결과를 생성하고 각 반환된 요소의 “모양" 또는 형식을 지정합니다. 예를 들어 결과가 계산 또는 새 개체 만들기에 따라 전체 `Customer` 개체, 하나의 멤버만, 멤버 하위 집합 또는 일부 완전히 다른 결과 형식으로 구성될지 지정할 수 있습니다. `select` 절이 소스 요소의 복사본이 아닌 다른 항목을 생성하는 경우 이 작업을 *프로젝션*이라고 합니다. 프로젝션을 사용하여 데이터를 변환하는 것은 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 식의 강력한 기능입니다. 자세한 내용은 [LINQ를 통한 데이터 변환(C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md) 및 [select 절](../../../../csharp/language-reference/keywords/select-clause.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C#에서 LINQ 시작](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [연습: C#에서 쿼리 작성](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- [쿼리 키워드(LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)  
- [익명 형식](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+## <a name="see-also"></a>참고 항목
+
+- [C#에서 LINQ 시작](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [연습: C#에서 쿼리 작성](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
+- [쿼리 키워드(LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)  
+- [익명 형식](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

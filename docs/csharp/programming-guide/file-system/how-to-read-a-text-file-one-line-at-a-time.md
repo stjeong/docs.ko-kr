@@ -6,12 +6,12 @@ helpviewer_keywords:
 - reading text files, line by line
 - text files [C#]
 ms.assetid: d62e22c5-a13c-48db-af9b-f10c801b0cb1
-ms.openlocfilehash: b31e3f0164b2a2094e84263702c52c2817219d20
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: 6ba479e341b71bebe60d9744f239b752d3d81167
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42752106"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43738770"
 ---
 # <a name="how-to-read-a-text-file-one-line-at-a-time-visual-c"></a>방법: 텍스트 파일을 한 번에 한 줄씩 읽기(Visual C#)
 이 예제에서는 `StreamReader` 클래스의 `ReadLine` 메서드를 사용하여 텍스트 파일 내용을 한 번에 한 줄씩 문자열로 읽어옵니다. 각 텍스트 줄은 `line` 문자열에 저장되고 화면에 표시됩니다.  
@@ -50,7 +50,8 @@ System.Console.ReadLine();
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  파일 이름을 바탕으로 파일 내용을 판단하면 안 됩니다. 예를 들어 `myFile.cs` 파일이 C# 소스 파일이 아닐 수도 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO?displayProperty=nameWithType>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)

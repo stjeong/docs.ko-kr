@@ -2,12 +2,12 @@
 title: 사용자 지정 특성 만들기(C#)
 ms.date: 07/20/2015
 ms.assetid: 500e1977-c6de-462d-abce-78a0eb1eda22
-ms.openlocfilehash: c1532d52e1e69c83a04ead7b771cd460f43d56b3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5a846771eb26e3760e3f47458b862356f4da1ae6
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33315882"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43503708"
 ---
 # <a name="creating-custom-attributes-c"></a>사용자 지정 특성 만들기(C#)
 메타데이터에서 특성 정의를 빠르고 쉽게 식별할 수 있도록 하는 <xref:System.Attribute>에서 직접 또는 간접적으로 파생되는 특성 클래스를 정의하여 자체 사용자 지정 특성을 만들 수 있습니다. 형식을 작성한 프로그래머의 이름을 형식에 태그로 지정한다고 가정합니다. 사용자 지정 `Author` 특성 클래스를 정의할 수 있습니다.  
@@ -66,11 +66,12 @@ class SampleClass
 > [!NOTE]
 >  특성 클래스에 속성이 포함되면 해당 속성은 읽기-쓰기여야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection>  
- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
- [사용자 지정 특성 작성](../../../../standard/attributes/writing-custom-attributes.md)  
- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
- [특성(C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
- [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
- [AttributeUsage(C#)](../../../../csharp/programming-guide/concepts/attributes/attributeusage.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Reflection>  
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
+- [사용자 지정 특성 작성](../../../../standard/attributes/writing-custom-attributes.md)  
+- [리플렉션(C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+- [특성(C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
+- [리플렉션을 사용하여 특성 액세스(C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
+- [AttributeUsage(C#)](../../../../csharp/programming-guide/concepts/attributes/attributeusage.md)
