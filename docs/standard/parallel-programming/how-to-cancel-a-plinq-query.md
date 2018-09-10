@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 80b14640-edfa-4153-be1b-3e003d3e9c1a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 074371a929d5dd2cf0efb763ec45395a8dfd0432
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e5008ede5054e8e6970bcb6f804fa1888244238f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33584284"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44210775"
 ---
 # <a name="how-to-cancel-a-plinq-query"></a>방법: PLINQ 쿼리 취소
 다음 예제는 PLINQ 쿼리를 취소하는 두 가지 방법을 보여줍니다. 첫 번째 예제에서는 주로 데이터 트래버스로 구성되는 쿼리를 취소하는 방법을 보여줍니다. 두 번째 예제에서는 계산을 많이 해야 하는 사용자 함수를 포함하는 쿼리를 취소하는 방법을 보여줍니다.  
@@ -50,7 +50,8 @@ ms.locfileid: "33584284"
   
  쿼리 결과에 대해 반복 중인 foreach(Visual Basic의 For Each) 루프에서 코드가 중단되는 경우와 같이 열거자가 삭제되는 경우에는 쿼리가 취소되지만 예외가 throw되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.ParallelEnumerable>  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq.ParallelEnumerable>  
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
+- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)

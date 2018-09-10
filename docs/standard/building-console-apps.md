@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: c21fb997-9f0e-40a5-8741-f73bba376bd8
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 79005c69e8c125e78573a44f34740632676faf59
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 979989c3e1f90f3de47473aa1bd8bc5268520e57
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568812"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44261972"
 ---
 # <a name="building-console-applications-in-the-net-framework"></a>.NET Framework에서 콘솔 응용 프로그램 만들기
 .NET Framework의 응용 프로그램에서는 <xref:System.Console?displayProperty=nameWithType> 클래스를 사용하여 콘솔로부터 문자를 읽거나 콘솔에 문자를 쓸 수 있습니다. 콘솔의 데이터는 표준 입력 스트림에서 읽혀지고 표준 출력 스트림으로 쓰여지며, 콘솔의 오류 데이터는 표준 오류 출력 스트림으로 쓰여집니다. 이러한 스트림은 응용 프로그램이 시작될 때 콘솔과 자동으로 연결되며 <xref:System.Console.In%2A>, <xref:System.Console.Out%2A> 및 <xref:System.Console.Error%2A> 속성으로 나타납니다.  
@@ -32,6 +32,7 @@ ms.locfileid: "33568812"
   
  **System.Console** 클래스에는 콘솔에서 개별 문자나 전체 줄을 읽을 수 있는 메서드가 있습니다. 다른 메서드는 데이터 및 형식 문자열을 변환한 다음 형식 지정된 문자열을 콘솔에 씁니다. 문자열 형식 지정에 대한 자세한 내용은 [형식 서식 지정](../../docs/standard/base-types/formatting-types.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Console?displayProperty=nameWithType>  
- [형식 서식 지정](../../docs/standard/base-types/formatting-types.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Console?displayProperty=nameWithType>  
+- [형식 서식 지정](../../docs/standard/base-types/formatting-types.md)

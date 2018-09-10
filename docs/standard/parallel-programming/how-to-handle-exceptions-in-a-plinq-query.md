@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 162ef3849f025cae9196c2f595634f82cfc782df
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 40b98e01d6c34fb01a1f508f2ea52309f2f7938b
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580746"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266724"
 ---
 # <a name="how-to-handle-exceptions-in-a-plinq-query"></a>방법: PLINQ 쿼리의 예외 처리
 이 항목의 첫 번째 예제에서는 실행될 때 PLINQ 쿼리에서 throw될 수 있는 <xref:System.AggregateException?displayProperty=nameWithType>을 처리하는 방법을 보여줍니다. 두 번째 예제에서는 대리자 내에서 예외가 throw될 위치에 가능한 한 가깝게 try-catch 블록을 넣는 방법을 보여줍니다. 이 방법으로 예외가 발생한 즉시 예외를 catch하고 쿼리 실행을 계속할 수 있습니다. 예외가 가입된 스레드로 다시 버블 업될 수 있는 경우 예외가 발생한 후에도 쿼리에서 일부 항목을 계속 처리할 수 있습니다.  
@@ -48,6 +48,7 @@ ms.locfileid: "33580746"
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  프로그램 상태를 손상시키지 않도록 처리 방법을 아는 경우가 아니면 예외를 catch하지 마세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.ParallelEnumerable>  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq.ParallelEnumerable>  
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

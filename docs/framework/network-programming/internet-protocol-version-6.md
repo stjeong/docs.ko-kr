@@ -12,11 +12,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: 2c9b3b1c647d74444fed01e38b65c1b2fe8364c6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480950"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44185625"
 ---
 # <a name="internet-protocol-version-6"></a>인터넷 프로토콜 버전 6
 IPv6(인터넷 프로토콜 버전 6)은 인터넷 네트워크 계층에 대한 새로운 표준 프로토콜 도구 모음입니다. IPv6은 주소 고갈, 보안, 자동 구성, 확장성 등에 관련된 현재 버전 인터넷 프로토콜 도구 모음(IPv4라고 함)의 많은 문제를 해결하도록 설계되었습니다. IPv6은 피어 투 피어 및 모바일 응용 프로그램을 포함한 새로운 종류의 응용 프로그램을 구현하기 위해 인터넷 기능을 확장합니다. 현재 IPv4 프로토콜의 주요 문제는 다음과 같습니다.  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6805f81b-e9ad-4387-9f4c-b9bdb21b87c0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f29a92c0d0b8961c178b7a92ea5964a1575a48db
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bd20db7fcc16f7781e093d59514c4be75705080a
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570542"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262532"
 ---
 # <a name="changing-case-in-net"></a>.NET에서 대/소문자 바꾸기
 사용자 입력을 수락하는 응용 프로그램을 작성하는 경우 데이터를 입력할 때 사용하는 대/소문자를 확신할 수 없습니다. 특히 사용자 인터페이스에 표시하는 경우 문자열의 대/소문자를 일관되게 표시하려는 경우가 많습니다. 다음 표에서는 세 가지 대/소문자 변경 메서드를 설명합니다. 처음 두 메서드는 문화권을 수락하는 오버로드를 제공합니다.  
@@ -70,6 +70,7 @@ ms.locfileid: "33570542"
   
  문화권을 구분하지만 <xref:System.Globalization.TextInfo.ToTitleCase%2A?displayProperty=nameWithType> 메서드는 언어학적으로 올바른 대/소문자 규칙을 제공하지 않습니다. 예를 들어 앞의 예제에서 메서드는 "a tale of two cities"를 "A Tale Of Two Cities"로 변환합니다. 그러나 en-US 문화권에서 언어적으로 올바른 단어의 첫 글자를 대문자로 변환은 "A Tale of Two Cities"입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+## <a name="see-also"></a>참고 항목
+
+- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
+- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

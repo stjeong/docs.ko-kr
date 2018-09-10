@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 9d19b591-ea95-4418-8ea7-b6266af9905b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ce9b8b0864f3ed30c2ff03866abdb0d5d07991db
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: db0ff4cbc343cfbc1c81b24aa4401fa00ecf4f4b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580392"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44199390"
 ---
 # <a name="how-to-cancel-a-parallelfor-or-foreach-loop"></a>방법: Parallel.For 또는 ForEach 루프 취소
 <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> 메서드는 취소 토큰을 사용하는 방법으로 취소 기능을 지원합니다. 일반적으로 취소에 대한 자세한 내용은 [취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)를 참조하세요. 병렬 루프에서는 <xref:System.Threading.CancellationToken>을 <xref:System.Threading.Tasks.ParallelOptions> 매개 변수의 메서드에 제공하고 try-catch 블록으로 병렬 호출을 묶습니다.  
@@ -29,6 +29,7 @@ ms.locfileid: "33580392"
   
  취소 신호를 보내는 토큰이 <xref:System.Threading.Tasks.ParallelOptions> 인스턴스에 지정된 것과 동일한 토큰이면 병렬 루프에서 취소에 대한 단일 <xref:System.OperationCanceledException>를 throw합니다. 다른 토큰이 취소를 발생시키는 경우 루프에서 <xref:System.OperationCanceledException>이 InnerException으로 설정된 <xref:System.AggregateException>을 throw합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

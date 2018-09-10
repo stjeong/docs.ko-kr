@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 8c71acf2-2c18-4f4d-8cdb-0728639265fd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6f829fc0b399f5cfd10d98f6b7439de757674f11
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8be9b4eef30333fbbdc26915635d17157176d6fc
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33586375"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44208181"
 ---
 # <a name="reader-writer-locks"></a>판독기 및 작성기 잠금
 <xref:System.Threading.ReaderWriterLockSlim> 클래스를 사용하면 여러 스레드가 리소스를 동시에 읽을 수 있지만 리소스에 쓰기 위해 스레드가 배타적 잠금을 기다려야 합니다.  
@@ -27,8 +27,9 @@ ms.locfileid: "33586375"
 > [!NOTE]
 >  [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에는 두 개의 판독기/작성기 잠금인 <xref:System.Threading.ReaderWriterLockSlim> 및 <xref:System.Threading.ReaderWriterLock>이 있습니다. <xref:System.Threading.ReaderWriterLockSlim>은 모든 새 개발에 권장됩니다. <xref:System.Threading.ReaderWriterLockSlim>은 <xref:System.Threading.ReaderWriterLock>과 비슷하지만 재귀 및 잠금 상태 업그레이드/다운그레이드에 대한 간소화된 규칙을 포함합니다. <xref:System.Threading.ReaderWriterLockSlim>은 교착 상태가 발생할 수 있는 많은 경우를 방지합니다. 또한 <xref:System.Threading.ReaderWriterLockSlim>의 성능이 <xref:System.Threading.ReaderWriterLock>보다 훨씬 더 놓습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.ReaderWriterLockSlim>  
- <xref:System.Threading.ReaderWriterLock>  
- [스레딩](../../../docs/standard/threading/index.md)  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.ReaderWriterLockSlim>  
+- <xref:System.Threading.ReaderWriterLock>  
+- [스레딩](../../../docs/standard/threading/index.md)  
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

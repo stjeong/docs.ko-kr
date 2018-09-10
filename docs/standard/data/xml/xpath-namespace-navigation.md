@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fed73c0a9c9bb4fba2644d76f470a8bdcace2b83
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e6d4f63dacc09208176b47dbca38783f1e9bc0a1
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572930"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44194723"
 ---
 # <a name="xpath-namespace-navigation"></a>XPath 네임스페이스 탐색
 XML 문서가 있는 XPath 쿼리를 사용하려면 네임스페이스에 포함된 XML 네임스페이스 및 요소를 올바르게 지정해야 합니다. 네임스페이스를 사용하면 이름이 둘 이상의 컨텍스트에 사용되는 경우 발생할 수 있는 모호성을 방지할 수 있습니다. 예를 들어 이름 `ID`는 XML 문서의 여러 다른 요소와 연결된 둘 이상의 ID를 참조할 수 있습니다. 네임스페이스 구문은 URI, 이름 및 XML 문서의 요소를 구분하는 접두사를 지정합니다.  
@@ -70,6 +70,7 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
   
  정규화된 네임스페이스 및 이름의 정확한 사용은 단순히 편리한 것 이상의 이점이 있습니다. 이전 예제의 문서 정의 및 코드를 사용한 작은 실험을 통해 정규화된 요소 이름이 없는 탐색에서 예외를 throw한다는 사실을 확인한 바 있습니다. 예를 들어 요소 정의: `<Search xmlns="http://schemas.microsoft.com/v1/Search">` 및 쿼리: `xpath = "/s:Envelope/s:Body/Search";` 요소에 대한 네임스페이스 접두사가 없는 문자열 `Search`는 `null` 요소 대신 `Search`을 반환합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XPathNavigator를 사용하여 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XML 데이터 선택, 평가 및 일치시키기](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)
+## <a name="see-also"></a>참고 항목
+
+- [XPathNavigator를 사용하여 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XML 데이터 선택, 평가 및 일치시키기](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - Mage.exe
 ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
-ms.openlocfilehash: d3922d9a81e350fd9ce95ffaa51dc3534873fb97
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: 8f4e60eef443f772de3574d988ce48470f8c2017
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42754994"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43856181"
 ---
 # <a name="mageexe-manifest-generation-and-editing-tool"></a>Mage.exe(매니페스트 생성 및 편집 도구)
 
@@ -63,7 +63,7 @@ Mage [commands] [commandOptions]
 |**-pu,** **-ProviderURL** `url`||배포 매니페스트|ClickOnce에서 응용 프로그램 업데이트를 확인할 URL을 지정합니다.|
 |**-pub, -Publisher** `publisherName`||응용 프로그램 매니페스트<br /><br /> 배포 매니페스트|배포 또는 응용 프로그램 매니페스트의 설명 요소에 게시자 이름을 추가합니다. 응용 프로그램 매니페스트에서 사용하는 경우에는 "true" 또는 "t" 값을 갖는 **-UseManifestForTrust** 를 함께 지정해야 합니다. 이렇게 하지 않으면 이 매개 변수에서 오류가 발생합니다.|
 |**-s, -SupportURL**  `url`||응용 프로그램 매니페스트<br /><br /> 배포 매니페스트|프로그램 추가/제거에서 ClickOnce 응용 프로그램에 대해 표시되는 링크를 지정합니다.|
-|**-ti, -TimestampUri** `uri`||응용 프로그램 매니페스트<br /><br /> 배포 매니페스트|디지털 타임스탬프 서비스의 URL입니다. 매니페스트에 타임스탬프를 적용하면 응용 프로그램의 다음 버전을 배포하기 전에 디지털 인증서가 만료되어도 매니페스트에 다시 서명할 필요가 없습니다. 자세한 내용은 [Windows 루트 인증서 프로그램 구성원](http://go.microsoft.com/fwlink/?LinkId=159000)을 참조하세요.|
+|**-ti, -TimestampUri** `uri`||응용 프로그램 매니페스트<br /><br /> 배포 매니페스트|디지털 타임스탬프 서비스의 URL입니다. 매니페스트에 타임스탬프를 적용하면 응용 프로그램의 다음 버전을 배포하기 전에 디지털 인증서가 만료되어도 매니페스트에 다시 서명할 필요가 없습니다. 자세한 내용은 [Windows 루트 인증서 프로그램 구성원](https://go.microsoft.com/fwlink/?LinkId=159000)을 참조하세요.|
 |**-t, -ToFile** `filePath`|- 새로 만들기:<br />- 배포: deploy.application<br />- 응용 프로그램: application.exe.manifest<br />- 업데이트:<br />- 입력 파일|모든 파일 형식|생성 또는 수정된 파일의 출력 경로를 지정합니다.<br /><br /> **-New** 를 사용할 때 **-ToFile**을 제공하지 않으면 출력이 현재 작업 디렉터리에 기록됩니다. **-Update**를 사용할 때 **-ToFile**을 제공하지 않으면 *Mage.exe*에서 파일을 입력 파일에 다시 기록합니다.|
 |**-tr, -TrustLevel** `level`|응용 프로그램 URL이 있는 영역을 기반으로 합니다.|응용 프로그램 매니페스트|클라이언트 컴퓨터의 응용 프로그램에 부여할 신뢰 수준입니다. 유효한 값은 "Internet", "Intranet" 및 "FullTrust" 등입니다.|
 |**-um, -UseManifestForTrust** `willUseForTrust`|False|응용 프로그램 매니페스트|클라이언트에서 응용 프로그램이 실행될 때 응용 프로그램 매니페스트의 디지털 서명을 사용하여 신뢰 관련 결정을 내릴지 여부를 지정합니다. "true" 또는 "t"를 지정하면 응용 프로그램 매니페스트를 사용하여 신뢰 관련 결정을 내립니다. "false" 또는 "f"를 지정하면 배포 매니페스트의 서명이 사용됩니다.|

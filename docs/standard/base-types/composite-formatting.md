@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4922470633f3dec8e2e2f898bdf544f5aa4deded
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 17ec17d3b90dc7248d1497be1f7d31a324ad10b2
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579186"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264922"
 ---
 # <a name="composite-formatting"></a>복합 형식 지정
 .NET의 복합 형식 지정 기능에는 개체 목록과 복합 형식 문자열이 입력으로 사용됩니다. 합성 서식 문자열은 고정 텍스트와 목록의 개체에 해당하는 인덱싱된 자리 표시자(서식 항목이라고 함)가 결합된 형태로 구성됩니다. 서식 지정 작업을 통해 원래의 고정 텍스트와 목록에 있는 개체의 문자열 표현이 결합된 형태의 결과 문자열을 얻을 수 있습니다.  
@@ -156,16 +156,17 @@ ms.locfileid: "33579186"
  [!code-csharp[Formatting.Composite#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#6)]
  [!code-vb[Formatting.Composite#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#6)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Console.WriteLine%2A>  
- <xref:System.String.Format%2A?displayProperty=nameWithType>  
- [문자열 보간(C#)](../../csharp/language-reference/tokens/interpolated.md)  
- [문자열 보간(Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
- [표준 숫자 형식 문자열](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
- [사용자 지정 숫자 형식 문자열](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
- [표준 TimeSpan 서식 문자열](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
- [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
- [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Console.WriteLine%2A>  
+- <xref:System.String.Format%2A?displayProperty=nameWithType>  
+- [문자열 보간(C#)](../../csharp/language-reference/tokens/interpolated.md)  
+- [문자열 보간(Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
+- [표준 숫자 형식 문자열](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
+- [사용자 지정 숫자 형식 문자열](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
+- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
+- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+- [표준 TimeSpan 서식 문자열](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
+- [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)

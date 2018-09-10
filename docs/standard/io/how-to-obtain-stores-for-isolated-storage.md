@@ -15,11 +15,12 @@ helpviewer_keywords:
 ms.assetid: fcb6b178-d526-47c4-b029-e946f880f9db
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 604aabbff8554416d6794ff0b87188fb5bcc3185
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1e2f87bfe1e3e7f3a1c8135c047b25a998793453
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084072"
 ---
 # <a name="how-to-obtain-stores-for-isolated-storage"></a>방법: 격리된 저장소의 저장소 가져오기
 격리된 저장소는 데이터 구획 내에서 가상 파일 시스템을 노출합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile> 클래스는 격리된 저장소와 상호 작용하는 데 필요한 여러 가지 메서드를 제공합니다. 저장소를 만들고 검색하기 위해 <xref:System.IO.IsolatedStorage.IsolatedStorageFile>은 세 가지 정적 메서드를 제공합니다.  
@@ -55,9 +56,10 @@ ms.lasthandoff: 05/04/2018
  [!code-csharp[Conceptual.IsolatedStorage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source6.cs#7)]
  [!code-vb[Conceptual.IsolatedStorage#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source6.vb#7)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
- [격리된 저장소](../../../docs/standard/io/isolated-storage.md)  
- [격리 유형](../../../docs/standard/io/types-of-isolation.md)  
- [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
+- [격리된 저장소](../../../docs/standard/io/isolated-storage.md)  
+- [격리 유형](../../../docs/standard/io/types-of-isolation.md)  
+- [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

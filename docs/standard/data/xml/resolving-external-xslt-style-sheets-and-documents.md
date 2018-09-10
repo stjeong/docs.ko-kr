@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6aa9c6717d89cf5529ef65b56811e614b6fc30f1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 39e8afd8c22ca757141d2a7b556b115f8380e731
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33574763"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262455"
 ---
 # <a name="resolving-external-xslt-style-sheets-and-documents"></a>외부 XSLT 스타일시트 및 문서 확인
 다음과 같이 변환 중에 외부 리소스를 확인해야 하는 몇 가지 경우가 있습니다.  
@@ -43,16 +43,17 @@ ms.locfileid: "33574763"
   
  <xref:System.Xml.Xsl.XslTransform.Transform%2A> 메서드가 호출되면 로드 시 제공된 증명 정보에 따라 권한이 판별되어 해당 권한 집합이 전체 변환 프로세스에 지정됩니다. `document()` 함수에서 해당 권한 집합에 없는 권한을 요구하는 작업을 시작하려고 하면 예외가 throw됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)  
- [XslTransform 출력](../../../../docs/standard/data/xml/outputs-from-an-xsltransform.md)  
- [여러 저장소에서의 XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations-over-different-stores.md)  
- [스타일시트 매개 변수 및 확장명 개체의 XsltArgumentList](../../../../docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)  
- [\<msxsl:script>를 사용한 XSLT 스타일시트 스크립트](../../../../docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md)  
- [msxsl:node-set() 함수에 대한 지원](../../../../docs/standard/data/xml/support-for-the-msxsl-node-set-function.md)  
- [변형 과정에서 XPathNavigator의 역할](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)  
- [변형 과정에서 XPathNodeIterator의 역할](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)  
- [XslTransform에 대한 XPathDocument 입력](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)  
- [XslTransform에 대한 XmlDataDocument 입력](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)  
- [XslTransform에 대한 XmlDocument 입력](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)
+## <a name="see-also"></a>참고 항목
+
+- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
+- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)  
+- [XslTransform 출력](../../../../docs/standard/data/xml/outputs-from-an-xsltransform.md)  
+- [여러 저장소에서의 XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations-over-different-stores.md)  
+- [스타일시트 매개 변수 및 확장명 개체의 XsltArgumentList](../../../../docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)  
+- [\<msxsl:script>를 사용한 XSLT 스타일시트 스크립트](../../../../docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md)  
+- [msxsl:node-set() 함수에 대한 지원](../../../../docs/standard/data/xml/support-for-the-msxsl-node-set-function.md)  
+- [변형 과정에서 XPathNavigator의 역할](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)  
+- [변형 과정에서 XPathNodeIterator의 역할](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)  
+- [XslTransform에 대한 XPathDocument 입력](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)  
+- [XslTransform에 대한 XmlDataDocument 입력](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)  
+- [XslTransform에 대한 XmlDocument 입력](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)

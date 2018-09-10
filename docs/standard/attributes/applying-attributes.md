@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a3a0151f6cc3ce25ca0c52a25be328ece8cb4434
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5d28da0c788d40222ccd689807d6e51f66b4ce78
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567369"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44193720"
 ---
 # <a name="applying-attributes"></a>특성 적용
 다음 프로세스를 사용하여 코드 요소에 특성을 적용합니다.  
@@ -52,8 +52,9 @@ ms.locfileid: "33567369"
   
  이 특성을 적용하면 `"My Assembly"` 문자열이 해당 파일의 메타데이터 부분에 있는 어셈블리 매니페스트에 배치됩니다. [Ildasm.exe(MSIL 디스어셈블러)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)를 사용하거나 특성을 검색하는 사용자 지정 프로그램을 만들어 이 특성을 볼 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [특성](../../../docs/standard/attributes/index.md)  
- [특성에 저장된 정보 검색](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
- [개념](/cpp/windows/attributed-programming-concepts)  
- [특성](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+## <a name="see-also"></a>참고 항목
+
+- [특성](../../../docs/standard/attributes/index.md)  
+- [특성에 저장된 정보 검색](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
+- [개념](/cpp/windows/attributed-programming-concepts)  
+- [특성](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

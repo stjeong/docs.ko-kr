@@ -8,11 +8,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: 68c69de839ccbd51de9f0bfa74be018f877f7731
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43416873"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085909"
 ---
 # <a name="httplistener"></a>HttpListener
 <xref:System.Net.HttpListener> 클래스는 프로그래밍 방식으로 제어되는 HTTP 프로토콜 수신기를 제공합니다. 수신기는 <xref:System.Net.HttpListener> 개체의 수명 동안 활성화되며 응용 프로그램 내에서 실행됩니다.  

@@ -5,11 +5,11 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
 ms.openlocfilehash: 79b63c376d25725b2bcb6c16cdb4d06e107d5c07
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43418642"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44189490"
 ---
 # <a name="creating-composite-ui-based-on-microservices-including-visual-ui-shape-and-layout-generated-by-multiple-microservices"></a>여러 마이크로 서비스에서 생성된 시각적 UI 셰이프 및 레이아웃을 포함하여 마이크로 서비스를 기반으로 복합 UI 만들기
 

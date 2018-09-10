@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cbe0178033338754c9e412dfcac993f042d943d1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a4bdf31b34a60e29c3b406bb996c52462cd1207d
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575496"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084883"
 ---
 # <a name="calling-synchronous-methods-asynchronously"></a>동기 메서드를 비동기 방식으로 호출
 .NET Framework에서는 모든 메서드를 비동기 방식으로 호출할 수 있습니다. 이렇게 하려면 호출하려는 메서드와 같은 시그니처를 사용하여 대리자를 정의합니다. 그러면 공용 언어 런타임은 이 대리자에 대해 `BeginInvoke` 및 `EndInvoke` 메서드를 해당 시그니처와 함께 자동으로 정의합니다.  
@@ -110,6 +110,7 @@ ms.locfileid: "33575496"
  [!code-csharp[AsyncDelegateExamples#5](../../../samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/callback.cs#5)]
  [!code-vb[AsyncDelegateExamples#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/callback.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Delegate>  
- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Delegate>  
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

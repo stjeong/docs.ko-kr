@@ -8,11 +8,11 @@ helpviewer_keywords:
 - files [Visual Basic], reading
 ms.assetid: 384033c6-18f9-4d59-9610-36371226558f
 ms.openlocfilehash: 28ef741398b6d8c5cbbdcc3906b4845e6a2a0d86
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486963"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44206447"
 ---
 # <a name="how-to-read-text-from-files-with-a-streamreader-visual-basic"></a>방법: StreamReader를 사용하여 파일에서 텍스트 읽기(Visual Basic)
 `My.Computer.FileSystem` 개체는 <xref:System.IO.TextReader> 및 <xref:System.IO.TextWriter>를 여는 메서드를 제공합니다. `OpenTextFileWriter` 및 `OpenTextFileReader` 메서드는 **모두** 탭을 선택한 경우에만 IntelliSense에 표시되는 고급 메서드입니다.  

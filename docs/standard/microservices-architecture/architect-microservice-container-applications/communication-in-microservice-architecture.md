@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.openlocfilehash: f0e0e63c6ce2e4699cc4f9c0bd0d120549b88cca
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 827d28adda90403d866e7bc13d9eae99fe47c137
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106014"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43804109"
 ---
 # <a name="communication-in-a-microservice-architecture"></a>마이크로 서비스 아키텍처의 통신
 
@@ -61,7 +61,7 @@ ms.locfileid: "37106014"
 
 마지막으로(그리고 마이크로 서비스를 빌드할 때 여기서 대부분의 문제가 발생함), 원래 다른 마이크로 서비스가 소유하는 데이터가 초기 마이크로 서비스에 필요한 경우 해당 데이터에 대한 동기 요청 만들기에 의존하지 마십시오. 대신, 최종 일관성(일반적으로 통합 이벤트를 사용, 다음 섹션에 설명됨)을 사용하여 해당 데이터(필요한 특성만)를 초기 서비스의 데이터베이스에 복제하거나 전파합니다.
 
-[각 마이크로 서비스의 도메인 모델 경계 식별](#identifying-domain-model-boundaries-for-each-microservice) 섹션에서 앞서 설명한 것처럼, 여러 마이크로 서비스에서 일부 데이터의 중복은 잘못된 디자인이 아닙니다. 반면, 이 경우 데이터를 특정 언어 또는 해당 추가 도메인 또는 바인딩된 컨텍스트의 용어로 변환할 수 있습니다. 예를 들어 [eShopOnContainers](http://aka.ms/MicroservicesArchitecture) 응용 프로그램에 User(사용자)라는 엔터티가 있는 사용자의 데이터 대부분을 담당하는 identity.api라는 마이크로 서비스가 있습니다. 단, Ordering(주문) 마이크로 서비스 내에서 사용자에 대한 데이터를 저장해야 하는 경우 Buyer(구매자)라는 다른 엔터티로 저장합니다. Buyer(구매자) 엔터티는 원래 User(사용자) 엔터티와 동일한 ID를 공유하지만, 전체 사용자 프로필이 아닌 Ordering(주문) 도메인에 필요한 몇몇 특성만 포함할 수 있습니다.
+[각 마이크로 서비스의 도메인 모델 경계 식별](#identifying-domain-model-boundaries-for-each-microservice) 섹션에서 앞서 설명한 것처럼, 여러 마이크로 서비스에서 일부 데이터의 중복은 잘못된 디자인이 아닙니다. 반면, 이 경우 데이터를 특정 언어 또는 해당 추가 도메인 또는 바인딩된 컨텍스트의 용어로 변환할 수 있습니다. 예를 들어 [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) 응용 프로그램에 User(사용자)라는 엔터티가 있는 사용자의 데이터 대부분을 담당하는 identity.api라는 마이크로 서비스가 있습니다. 단, Ordering(주문) 마이크로 서비스 내에서 사용자에 대한 데이터를 저장해야 하는 경우 Buyer(구매자)라는 다른 엔터티로 저장합니다. Buyer(구매자) 엔터티는 원래 User(사용자) 엔터티와 동일한 ID를 공유하지만, 전체 사용자 프로필이 아닌 Ordering(주문) 도메인에 필요한 몇몇 특성만 포함할 수 있습니다.
 
 최종 일관성을 가지기 위해 프로토콜을 사용하여 마이크로 서비스 사이에 데이터를 비동기적으로 통신하고 전파할 수 있습니다. 언급했듯이 이벤트 버스 또는 메시지 브로커를 사용하여 통합 이벤트를 사용하거나, 다른 서비스를 대신 폴링하여 HTTP를 사용할 수도 있습니다. 이는 중요하지 않습니다. 중요한 규칙은 마이크로 서비스 간 동기 종속성을 만들지 않는 것입니다.
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d3470ebdd55adc97a60f07228c441cb7c94a53e6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 10f947fc44e69368e30614e0b41eaf7c73fb6563
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579160"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084951"
 ---
 # <a name="garbage-collection-notifications"></a>가비지 컬렉션 알림
 공용 언어 런타임에서 전체 가비지 컬렉션(즉, 2세대 컬렉션)을 실행하면 성능이 저하될 수 있는 경우가 있습니다. 이는 대량의 요청을 처리하는 서버에서 특히 문제가 될 수 있습니다. 이 경우 장기적인 가비지 수집으로 인해 요청 시간이 초과될 수 있습니다. 중요 기간에 전체 수집이 발생하지 않도록 하기 위해 전체 가비지 수집에 근접하고 있다는 알림을 받을 수 있습니다. 그러면 워크로드를 다른 서버 인스턴스로 리디렉션하는 조치를 취할 수 있습니다. 또한 현재 서버 인스턴스가 요청을 처리하지 않아도 되는 경우 직접 수집을 유도할 수도 있습니다.  
@@ -122,5 +122,6 @@ ms.locfileid: "33579160"
  [!code-csharp[GCNotification#1](../../../samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#1)]
  [!code-vb[GCNotification#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [가비지 수집](../../../docs/standard/garbage-collection/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [가비지 수집](../../../docs/standard/garbage-collection/index.md)

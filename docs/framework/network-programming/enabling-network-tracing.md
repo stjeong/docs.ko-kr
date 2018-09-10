@@ -15,11 +15,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: d0ab0aeecdbd6cf763ae34cfa3bcd50af1874d39
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43421492"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517190"
 ---
 # <a name="enabling-network-tracing"></a>네트워크 추적 사용
 네트워크 추적은 메서드 호출에 대한 정보와 관리되는 응용 프로그램에서 생성된 네트워크 트래픽 정보에 대한 액세스를 제공합니다. 응용 프로그램에서 네트워크 추적을 사용하도록 설정하려면 다음 작업을 완료해야 합니다.  

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c7f2f022-d08e-4e00-b4eb-ae84844cb1bc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f6e257ced27812f8383edf9eb9688e9f48cfde02
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1794b47db87f636cc2ccdf2eecb9e7ca334ae659
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583749"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266854"
 ---
 # <a name="how-to-listen-for-cancellation-requests-by-polling"></a>방법: 폴링을 통해 취소 요청 수신 대기
 다음 예제는 사용자 코드가 정기적으로 취소 토큰을 폴링하여 호출 스레드에서 취소가 요청되었는지 여부를 확인하는 방법을 보여줍니다. 이 예제에서는 <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 유형을 사용하지만, 동일한 패턴이 <xref:System.Threading.ThreadPool?displayProperty=nameWithType> 유형 또는 <xref:System.Threading.Thread?displayProperty=nameWithType> 유형으로 직접 생성된 비동기 작업에 적용됩니다.  
@@ -30,5 +30,6 @@ ms.locfileid: "33583749"
   
  <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>를 호출하는 경우 예외를 throw하는 것 외에 취소에 대한 응답으로 수행해야 할 다른 작업이 있는 경우에만 <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> 속성을 명시적으로 확인해야 합니다. 이 예제에서는 코드가 실제로 속성에 두 번 액세스하는 것을 볼 수 있습니다. 명시적으로 한 번 액세스하고 <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A> 메서드에서 다시 액세스할 수 있습니다. 그러나 <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> 속성을 읽는 작업에는 액세스당 하나의 volatile 읽기 명령만 포함되므로 성능상의 관점에서는 두 번의 액세스가 중요하지 않습니다. <xref:System.OperationCanceledException>을 수동으로 throw하는 것보다 메서드를 호출하는 것이 여전히 더 좋습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## <a name="see-also"></a>참고 항목
+
+- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)

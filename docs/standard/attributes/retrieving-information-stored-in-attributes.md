@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7b6799763b4635632728561eef2820b26820aeed
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7021a984f844660c45ae3e2d98569432ab64b657
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570410"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264781"
 ---
 # <a name="retrieving-information-stored-in-attributes"></a>특성에 저장된 정보 검색
 사용자 지정 특성 검색은 간단한 프로세스입니다. 먼저, 검색하려는 특성의 인스턴스를 선언합니다. 그런 다음, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType> 메서드를 사용하여 검색하려는 특성 값으로 새 특성을 초기화합니다. 새 특성이 초기화되면 해당 속성을 사용하여 값을 가져오기만 하면 됩니다.  
@@ -84,8 +84,9 @@ The attribute was not found.
   
  <xref:System.Type> 클래스의 멤버를 사용하여 전달된 클래스의 개별 메서드 및 멤버를 가져올 수 있습니다. 이 예제에서는 먼저 **Type** 개체를 쿼리하여 클래스 수준에 대한 특성 정보를 가져옵니다. 그런 다음, 메서드 수준의 특성 정보를 검색하기 위해 <xref:System.Type.GetMethods%2A?displayProperty=nameWithType>를 사용하여 모든 메서드의 인스턴스를 <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> 개체의 배열에 배치합니다. 또한 <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> 메서드를 사용하여 속성 수준의 특성을 확인하거나 <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType>를 사용하여 생성자 수준의 특성을 확인할 수도 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Type?displayProperty=nameWithType>  
- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
- [특성](../../../docs/standard/attributes/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Type?displayProperty=nameWithType>  
+- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
+- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
+- [특성](../../../docs/standard/attributes/index.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 73bf8638-c4ec-4069-b0bb-a1dc79b92e32
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4b8af7b3894c010d5a7a4c712efe2458a6bb2a50
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c03ab0e1d493d9669f1e3821393d41d1c1b89867
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571076"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227547"
 ---
 # <a name="how-to-consume-events-in-a-web-forms-application"></a>방법: Web Forms 응용 프로그램에서 이벤트 사용
 ASP.NET Web Forms 응용 프로그램의 주된 활용 방식은 웹 페이지에 컨트롤을 채운 다음 사용자가 클릭하는 컨트롤에 따라 특정 작업을 수행하는 것입니다. 예를 들어, <xref:System.Web.UI.WebControls.Button?displayProperty=nameWithType> 컨트롤은 사용자가 웹 페이지에서 해당 컨트롤을 클릭하면 이벤트를 발생시킵니다. 이벤트를 처리하면 응용 프로그램이 해당 단추 클릭에 대해 적절한 응용 프로그램 논리를 수행할 수 있습니다.  
@@ -51,5 +51,6 @@ ASP.NET Web Forms 응용 프로그램의 주된 활용 방식은 웹 페이지�
   
 3.  2단계에서 정의한 이벤트 처리기 메서드에서 코드를 추가하여 이벤트가 발생할 때 필요한 모든 작업을 수행합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [이벤트](../../../docs/standard/events/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [이벤트](../../../docs/standard/events/index.md)

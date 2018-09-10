@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1728dee4d0d8d90b8a1e2b2a3f92fc256c6267c6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b4cece1227b5210cf839aff0658267ae480b23b6
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409817"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44197461"
 ---
 # <a name="signtoolexe-sign-tool"></a>SignTool.exe(서명 도구)
 서명 도구는 파일에 디지털 서명을 하고, 파일의 서명을 확인하고, 파일에 타임스탬프를 기록하는 명령줄 도구입니다.  
@@ -97,7 +97,7 @@ signtool [command] [options] [file_name | ...]
 |`/u`  *Usage*|EKU(확장된 키 사용)가 서명 인증서에 있도록 지정합니다. 용도 값은 OID 또는 문자열로 지정될 수 있습니다. 기본 용도는 "코드 서명"(1.3.6.1.5.5.7.3.3)입니다.|  
 |`/uw`|"Windows 시스템 구성 요소 확인"의 사용을 지정합니다(1.3.6.1.4.1.311.10.3.6).|  
   
- 사용 예제는 [SignTool을 사용하여 파일에 서명](http://msdn.microsoft.com/library/windows/desktop/aa388170.aspx)을 참조하세요.  
+ 사용 예제는 [SignTool을 사용하여 파일에 서명](/windows/desktop/SecCrypto/using-signtool-to-sign-a-file)을 참조하세요.  
   
 <a name="TimeStamp"></a>   
 ## <a name="timestamp-command-options"></a>TimeStamp 명령줄 옵션  
@@ -111,7 +111,7 @@ signtool [command] [options] [file_name | ...]
 |`/tp` *index*|*index*에서 시그니처에 타임스탬프를 지정합니다.|  
 |`/tr`  *URL*|RFC 3161 타임스탬프 서버의 URL을 지정합니다. 타임스탬프가 기록되는 파일은 이전에 서명되었어야 합니다. `/tr` 또는 `/t` 옵션이 필요합니다.|  
   
- 사용 예제는 [이전에 서명한 파일에 타임스탬프 추가](http://msdn.microsoft.com/library/windows/desktop/aa375542.aspx)를 참조하세요.  
+ 사용 예제는 [이전에 서명한 파일에 타임스탬프 추가](/windows/desktop/SecCrypto/adding-time-stamps-to-previously-signed-files)를 참조하세요.  
   
 <a name="Verify"></a>   
 ## <a name="verify-command-options"></a>명령 옵션 확인  
@@ -128,7 +128,7 @@ signtool [command] [options] [file_name | ...]
 |`/ds`  *Index*|지정된 위치에서 시그니처를 확인합니다.|  
 |`/hash` (`SHA1`&#124;`SHA256`)|카탈로그에서 파일을 검색할 때 사용할 선택적 해시 알고리즘을 지정합니다.|  
 |`/kp`|커널 모드 드라이버 서명 정책을 이용하여 검증을 수행하도록 지정합니다.|  
-|`/ms`|여러 확인 의미 체계를 사용합니다. 이는 [!INCLUDE[win8](../../../includes/win8-md.md)] 이상에 대한 [WinVerifyTrust](http://msdn.microsoft.com/library/windows/desktop/aa388208.aspx) 호출의 기본 동작입니다.|  
+|`/ms`|여러 확인 의미 체계를 사용합니다. 이는 [!INCLUDE[win8](../../../includes/win8-md.md)] 이상에 대한 [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) 호출의 기본 동작입니다.|  
 |`/o` *Version*|운영 체제 버전별로 파일을 확인합니다. *Version*의 형식은 *PlatformID*:*VerMajor*.*VerMinor*.*BuildNumber*입니다. *PlatformID*는 <xref:System.PlatformID> 열거형 멤버의 내부 값을 나타냅니다. **중요:** `/o` 스위치를 사용하는 것이 좋습니다. `/o`가 지정되지 않으면 SignTool.exe가 예기치 않은 결과를 반환할 수 있습니다. 예를 들어 `/o` 스위치가 포함되지 않는 경우 이전 운영 체계에서 유효성이 제대로 입증된 시스템 카탈로그가 새로운 운영 체계에서는 유효성이 제대로 입증되지 않을지 모릅니다.|  
 |`/p7`|PKCS #7 파일을 확인합니다. PKCS #7 유효성 검사에 기존 정책이 사용되지 않습니다. 서명이 확인되고 서명 인증서에 대한 체인이 빌드됩니다.|  
 |`/pa`|기본 Authenticode 확인 정책이 사용되도록 지정합니다. `/pa` 옵션을 지정하지 않으면 서명 도구는 Windows 드라이버 확인 정책을 사용합니다. 이 옵션은 `catdb` 옵션과 함께 사용할 수 없습니다.|  
@@ -137,7 +137,7 @@ signtool [command] [options] [file_name | ...]
 |`/r` *RootSubjectName*|서명 인증서와 연결해야 하는 루트 인증서의 주체 이름을 지정합니다. 이 값은 루트 인증서 주체의 전체 이름에서 부분 문자열이 될 수 있습니다.|  
 |`/tw`|서명에 타임스탬프가 기록되지 않으면 경고가 생성되도록 지정합니다.|  
   
- 사용 예제는 [SignTool을 사용하여 파일 시그니처 확인](http://msdn.microsoft.com/library/windows/desktop/aa388171.aspx)을 참조하세요.  
+ 사용 예제는 [SignTool을 사용하여 파일 시그니처 확인](/windows/desktop/SecCrypto/using-signtool-to-verify-a-file-signature)을 참조하세요.  
   
 ## <a name="return-value"></a>반환 값  
  서명 도구는 종료할 때 다음 종료 코드 중 하나를 반환합니다.  

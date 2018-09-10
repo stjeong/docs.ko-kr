@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 389ae0d95f3d612ca9c81ce69b74f8b58534d679
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 83aad5d45dda1784069839662486f7dbcc307542
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573596"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43879518"
 ---
 # <a name="saving-and-writing-a-document"></a>문서 작성 및 저장
 <xref:System.Xml.XmlDocument>를 로드하고 저장할 경우 저장된 문서는 다음과 같이 원래 문서와 다를 수 있습니다.  
@@ -90,5 +90,6 @@ string xml = mydoc.DocumentElement.OuterXml;
   
  이와는 반대로 자식 노드의 내용이 필요한 경우 <xref:System.Xml.XmlNode.InnerText%2A> 속성을 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

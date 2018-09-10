@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7fc995843c1e2f5977acbfe2158457d30ac355ec
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ee7de15130644e63b17a6d067c5cce9088d199a0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573915"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44185056"
 ---
 # <a name="localization"></a>지역화
 지역화는 응용 프로그램에서 지원할 각 문화권에 맞는 지역화된 버전으로 응용 프로그램 리소스를 변환하는 프로세스입니다. [지역화 가능성 검토](../../../docs/standard/globalization-localization/localizability-review.md) 단계를 완료한 후에만 지역화 단계를 진행하여 전역화된 응용 프로그램이 지역화 준비가 되었는지 확인해야 합니다.  
@@ -32,8 +32,9 @@ ms.locfileid: "33573915"
   
  [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]에서는 대상 문화권에 대한 Windows Forms를 빠르게 지역화할 수 있게 하는 Windows Forms 리소스 편집기(Winres.exe)를 제공합니다. 이 도구 사용에 대한 자세한 내용은 [Winres.exe(Windows Forms 리소스 편집기)](../../../docs/framework/tools/winres-exe-windows-forms-resource-editor.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
- [지역화 가능성 검토](../../../docs/standard/globalization-localization/localizability-review.md)  
- [전역화](../../../docs/standard/globalization-localization/globalization.md)  
- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
+- [지역화 가능성 검토](../../../docs/standard/globalization-localization/localizability-review.md)  
+- [전역화](../../../docs/standard/globalization-localization/globalization.md)  
+- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)

@@ -3,11 +3,11 @@ title: GamePiece 클래스 만들기
 ms.date: 03/30/2017
 ms.assetid: 37a27a86-ac1c-47be-b477-cb4b819459d3
 ms.openlocfilehash: eb73918cc03e2621d39a98158d40a839dbc69d80
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43395397"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857903"
 ---
 # <a name="creating-the-gamepiece-class"></a>GamePiece 클래스 만들기
 **GamePiece** 클래스는 Microsoft XNA 게임 피스 이미지를 로드하고 게임 피스와 관련된 마우스 상태를 추적하고, 마우스를 캡처하고, 조작 및 관성 처리를 제공하고, 게임 피스가 뷰포트의 제한에 도달할 경우 바운스되는 기능을 제공하는 데 필요한 모든 기능을 캡슐화합니다.  

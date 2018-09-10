@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 896a1e12-5655-42c6-8cdd-89c12862b34b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bd25cf94a8a57f20b42f5e14c92b3b43e3378844
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ab7f3075d46ef0e8b98af471ae3943f7500128e5
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572111"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44080048"
 ---
 # <a name="xml-schema-object-model-overview"></a>XML 스키마 개체 모델 개요
 Microsoft .NET Framework의 SOM(스키마 개체 모델)은 프로그래밍 방식으로 스키마를 만들고 편집하고 유효성을 검사할 수 있는 다양한 API입니다. SOM은 DOM(문서 개체 모델)이 XML 문서에서 작동하는 것과 비슷한 방식으로 XML 스키마 문서에서 작동합니다. XML 스키마 문서는 유효한 XML 파일로, SOM에 로드된 후에는 스키마를 준수하는 다른 XML 문서의 구조와 유효성에 대한 의미를 전달합니다.  
@@ -38,11 +38,12 @@ Microsoft .NET Framework의 SOM(스키마 개체 모델)은 프로그래밍 방�
   
  <xref:System.Xml.Schema> 네임스페이스의 각 클래스에 대한 자세한 내용은 .NET Framework 클래스 라이브러리의 <xref:System.Xml.Schema> 네임스페이스 참조 문서를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
+- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
+- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
+- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
+- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
+- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

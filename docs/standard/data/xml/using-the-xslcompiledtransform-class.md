@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: f9b074f6-d6f4-49dd-a093-df510bf0cf7b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6b242556e6fb05cae5ff5f54d1b134e1db918e5b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0537685a91db2c0e323b3f1bda24c6cadc264e34
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571048"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44225518"
 ---
 # <a name="using-the-xslcompiledtransform-class"></a>XslCompiledTransform 클래스 사용
 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 Microsoft .NET Framework XSLT 프로세서입니다. 이 클래스를 사용하여 스타일시트를 컴파일하고 XSLT 변환을 실행할 수 있습니다.  
@@ -40,6 +40,7 @@ ms.locfileid: "33571048"
  [XslTransform 클래스에서 마이그레이션](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md)  
  <xref:System.Xml.Xsl.XslTransform> 클래스에서 코드를 마이그레이션하는 방법을 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Xsl.XsltSettings>  
- <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Xsl.XsltSettings>  
+- <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs>

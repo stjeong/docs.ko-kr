@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.openlocfilehash: 79ad437ef809486b3315de223697ac78109556ba
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 6ce9e40334e80e8bd17ce2f3d2569a1e3c39d09e
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105903"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44128876"
 ---
 # <a name="implement-background-tasks-in-microservices-with-ihostedservice-and-the-backgroundservice-class"></a>IHostedService 및 BackgroundService 클래스를 사용하여 마이크로 서비스에서 백그라운드 작업 구현
 
@@ -255,9 +255,7 @@ ASP.NET Core `WebHost` 또는 .NET Core `Host`를 배포하는 방법은 최종 
 
 -   **ASP.NET Core 2.1 호스팅 샘플** 
 
-    [*https://github.com/aspnet/Hosting/tree/dev/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/dev/samples/GenericHostSample)
-
-
+    [*https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
 
 >[!div class="step-by-step"]
 [이전](test-aspnet-core-services-web-apps.md)

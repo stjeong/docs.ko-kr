@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b6dfba9bb6cd253f4bc866f445a324a046c8cad2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f062f7fd58efe6c350b3a119ec3bdd4d27b896db
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570635"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44086368"
 ---
 # <a name="node-set-navigation-using-xpathnavigator"></a>XPathNavigator를 사용하여 노드 집합 탐색
 <xref:System.Xml.XPath.XPathDocument> 클래스의 노드 집합 탐색 메서드를 사용하여 <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XPath.XPathNavigator> 개체에서 노드를 탐색할 수 있습니다. 모든 노드를 탐색하거나 <xref:System.Xml.XPath.XPathNavigator> 클래스의 선택 메서드에서 하나가 반환한 노드 중 선택한 노드 집합을 탐색할 수 있습니다.  
@@ -52,11 +52,12 @@ ms.locfileid: "33570635"
   
 -   <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XML 데이터 추출](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 강력한 형식의 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XML 데이터 추출](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 강력한 형식의 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)

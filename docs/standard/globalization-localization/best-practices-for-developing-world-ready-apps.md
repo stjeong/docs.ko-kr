@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 804f92ddd564f057157598c3cf62106d1a7d5318
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 35b8e062c9f207eba19bcee5593425095de2e267
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578205"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041472"
 ---
 # <a name="best-practices-for-developing-world-ready-applications"></a>지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법
 이 단원에서는 지역화 대비 응용 프로그램을 개발할 때 따라야 할 최선의 구현 방법을 소개합니다.  
@@ -100,6 +100,7 @@ ms.locfileid: "33578205"
   
 5.  uiCulture 값은 브라우저 허용 언어로 설정될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
+- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)

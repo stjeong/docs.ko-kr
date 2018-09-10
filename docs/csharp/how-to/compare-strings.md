@@ -5,18 +5,19 @@ ms.date: 03/20/2018
 helpviewer_keywords:
 - strings [C#], comparison
 - comparing strings [C#]
-ms.openlocfilehash: e9f4216af6073a352bef1efb59eea0ddeda5fc4b
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 3c841a1152613ec877bb6172dc8d053bf060b33b
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961308"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484104"
 ---
-# <a name="how-to-compare-strings-in-c"></a>C#에서 문자열을 비교하는 방법 #
+# <a name="how-to-compare-strings-in-c"></a>C\#에서 문자열을 비교하는 방법
 
 문자열을 비교하여 두 가지 질문 중 하나를 해결할 수 있습니다. "두 문자열이 같은가?" 또는 "정렬할 때 이 문자열을 어떤 순서로 정렬해야 하는가?"
 
-이러한 두 가지 질문은 문자열 비교에 영향을 주는 요소에 의해 복잡해 집니다. 
+이러한 두 가지 질문은 문자열 비교에 영향을 주는 요소에 의해 복잡해 집니다.
+
 - 서수 또는 언어 비교를 선택할 수 있습니다.
 - 대/소문자를 구분할지 여부를 선택할 수 있습니다.
 - 문화권별 비교를 선택할 수 있습니다.
@@ -36,14 +37,15 @@ ms.locfileid: "37961308"
 
 ## <a name="case-insensitive-ordinal-comparisons"></a>대/소문자를 구분하지 않는 서수 비교
 
-<xref:System.String.Equals%2A?displayProperty=nameWithType> 메서드를 사용하면 <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>의 <xref:System.StringComparison> 값을 지정하여 대/소문자 구분 비교를 지정할 수 있습니다. 또한 대/소문자를 구분하지 않는 비교를 지정하는 부울 인수를 포함하는 정적 <xref:System.String.Compare%2A> 메서드가 있습니다. 이는 다음 코드에서 확인할 수 있습니다.
+<xref:System.String.Equals%2A?displayProperty=nameWithType> 메서드를 사용하면 <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>의 <xref:System.StringComparison> 값을 지정하여
+대소문자를 구분하지 않는 비교를 지정할 수 있습니다. 또한 대/소문자를 구분하지 않는 비교를 지정하는 부울 인수를 포함하는 정적 <xref:System.String.Compare%2A> 메서드가 있습니다. 이는 다음 코드에서 확인할 수 있습니다.
 
 [!code-csharp-interactive[Comparing strings ignoring case](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
 
 ## <a name="linguistic-comparisons"></a>언어 비교
 
 또한 현재 문화권에 대한 언어 규칙을 사용하여 문자열을 정렬할 수 있습니다.
-이를 종종 "단어 정렬 순서"라고 합니다. 언어 비교를 수행할 때 일부 영숫자가 아닌 유니코드 문자에 특별한 가중치가 할당될 수 있습니다. 예를 들어, 하이픈 "-"는 매우 작은 가중치가 할당될 수 있으므로 "co-op" 및 "coop"는 정렬 순서에 나란히 표시됩니다. 또한 일부 유니코드 문자는 영숫자 문자의 시컨스와 동일할 수 있습니다. 다음 예에서는 "ss" 및 'ß'를 사용하여 독일어로 "거리에서 춤을 추다"라는 문구를 사용합니다. 언어적으로(Windows의 경우) "ss"는 "en-US" 및 "de-DE" 문화권의 독일어 Essetz: 'ß' 문자와 같습니다. 
+이를 종종 "단어 정렬 순서"라고 합니다. 언어 비교를 수행할 때 일부 영숫자가 아닌 유니코드 문자에 특별한 가중치가 할당될 수 있습니다. 예를 들어, 하이픈 "-"는 매우 작은 가중치가 할당될 수 있으므로 "co-op" 및 "coop"는 정렬 순서에 나란히 표시됩니다. 또한 일부 유니코드 문자는 영숫자 문자의 시컨스와 동일할 수 있습니다. 다음 예에서는 "ss" 및 'ß'를 사용하여 독일어로 "거리에서 춤을 추다"라는 문구를 사용합니다. 언어적으로(Windows의 경우) "ss"는 "en-US" 및 "de-DE" 문화권의 독일어 Essetz: 'ß' 문자와 같습니다.
 
 [!code-csharp-interactive[Comparing strings using linguistic rules](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
 
@@ -86,7 +88,7 @@ Windows에서 언어 비교를 서수 비교로 변경하면 "cop", "coop" 및 "
 
 다음 예에서는 현재 문화권에 따라 언어 비교를 사용하여 배열에서 문자열을 정렬하고 검색하는 방법을 보여줍니다. <xref:System.StringComparer?displayProperty=nameWithType> 매개 변수를 사용하는 정적 <xref:System.Array> 메서드를 사용합니다.
 
-이 예에서는 현재 문화권을 사용하여 문자열 배열을 정렬하는 방법을 보여줍니다. 
+이 예에서는 현재 문화권을 사용하여 문자열 배열을 정렬하는 방법을 보여줍니다.
 
 [!code-csharp-interactive[Sorting an array of strings](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#5)]
 
@@ -104,7 +106,7 @@ Windows에서 언어 비교를 서수 비교로 변경하면 "cop", "coop" 및 "
 
 [!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#8)]
 
-정렬 및 검색 시 항상 동일한 형식의 비교를 사용하도록 하세요. 정렬 및 검색에 대해 서로 다른 비교 형식을 사용하면 예기치 않은 결과가 발생합니다. 
+정렬 및 검색 시 항상 동일한 형식의 비교를 사용하도록 하세요. 정렬 및 검색에 대해 서로 다른 비교 형식을 사용하면 예기치 않은 결과가 발생합니다.
 
 <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> 등의 컬렉션 클래스는 요소 또는 키의 형식이 `string`인 경우 <xref:System.StringComparer?displayProperty=nameWithType> 매개 변수를 사용하는 생성자를 포함합니다. 일반적으로 가능하면 이러한 생성자를 사용하고 <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> 또는 <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>를 지정해야 합니다.
 
@@ -118,8 +120,9 @@ Windows에서 언어 비교를 서수 비교로 변경하면 "cop", "coop" 및 "
 > 문자열의 동일성을 테스트할 때, 어떤 유형의 비교를 수행할지 명시적으로 지정하는 메서드를 사용해야 합니다. 코드를 훨씬 더 쉽게 유지 관리하고 읽을 수 있습니다. <xref:System.StringComparison> 열거형 매개 변수를 사용하는 <xref:System.String?displayProperty=nameWithType> 및 <xref:System.Array?displayProperty=nameWithType> 클래스의 메서드 오버로드를 사용합니다. 수행할 비교 형식을 지정합니다. 동일성을 테스트할 때 `==` 및 `!=` 연산자를 사용하지 않습니다. <xref:System.String.CompareTo%2A?displayProperty=nameWithType> 인스턴스 메서드는 항상 서수 대/소문자 구분 비교를 수행합니다. 주로 알파벳순으로 문자열을 정렬하는 데 적합합니다.
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
- <xref:System.StringComparer?displayProperty=nameWithType>  
- [문자열](../programming-guide/strings/index.md)  
- [문자열 비교](../../standard/base-types/comparing.md)  
- [응용 프로그램 전역화 및 지역화](/visualstudio/ide/globalizing-and-localizing-applications)
+
+- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
+- <xref:System.StringComparer?displayProperty=nameWithType>  
+- [문자열](../programming-guide/strings/index.md)  
+- [문자열 비교](../../standard/base-types/comparing.md)  
+- [응용 프로그램 전역화 및 지역화](/visualstudio/ide/globalizing-and-localizing-applications)

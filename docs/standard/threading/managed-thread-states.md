@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 63890d5e-6025-4a7c-aaf0-d8bfd54b455f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4266aea9bf206d127e2837955dcc00cc23f4119b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a55409cd2c3bed2bc09db10622de1cceab934112
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33587725"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44207332"
 ---
 # <a name="managed-thread-states"></a>관리되는 스레드 상태
 <xref:System.Threading.Thread.ThreadState%2A?displayProperty=nameWithType> 속성은 스레드의 현재 상태를 나타내는 비트 마스크를 제공합니다. 스레드는 항상 <xref:System.Threading.ThreadState> 열거형의 가능한 상태 중 하나 이상이며 동시에 여러 상태일 수 있습니다.  
@@ -48,8 +48,9 @@ if ((state & (Unstarted | Stopped)) == 0)   // implies Running
   
  <xref:System.Threading.ThreadState.Unstarted> 호출의 결과로 스레드가 <xref:System.Threading.Thread.Start%2A>상태를 벗어난 후에는 <xref:System.Threading.ThreadState.Unstarted> 상태로 돌아갈 수 없습니다. 스레드는 <xref:System.Threading.ThreadState.Stopped> 상태를 벗어날 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.ThreadAbortException>  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.ThreadState>  
- [스레딩](../../../docs/standard/threading/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.ThreadAbortException>  
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.ThreadState>  
+- [스레딩](../../../docs/standard/threading/index.md)

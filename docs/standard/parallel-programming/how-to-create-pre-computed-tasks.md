@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: a73eafa2-1f49-4106-a19e-997186029b58
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d5d688041c6a8947b4a30f067d969cb6cb3bbf0d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 47e4c5d721b37388a4008d100f5212057477c638
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583905"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44211660"
 ---
 # <a name="how-to-create-pre-computed-tasks"></a>방법: 미리 계산된 작업 만들기
 이 문서에서는 <xref:System.Threading.Tasks.Task.FromResult%2A?displayProperty=nameWithType> 메서드를 사용하여 캐시에 저장된 비동기 다운로드 작업의 결과를 검색하는 방법을 설명합니다. <xref:System.Threading.Tasks.Task.FromResult%2A> 메서드는 제공된 값을 <xref:System.Threading.Tasks.Task%601> 속성으로 포함하는 완료된 <xref:System.Threading.Tasks.Task%601.Result%2A> 개체를 반환합니다. 이 메서드는 <xref:System.Threading.Tasks.Task%601> 개체가 반환되는 비동기 작업을 수행하고 해당 <xref:System.Threading.Tasks.Task%601> 개체의 결과가 계산되어 있을 때 유용합니다.  
@@ -41,5 +41,6 @@ ms.locfileid: "33583905"
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
   
-## <a name="see-also"></a>참고 항목  
- [작업 기반 비동기 프로그래밍](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+## <a name="see-also"></a>참고 항목
+
+- [작업 기반 비동기 프로그래밍](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)

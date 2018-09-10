@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 2913ccf3-f932-4363-8028-9e2d22ce6093
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6dce97fd74b17154925d18bf18a9a8defd2e508e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a2712c1de4a5f4a06ba041fdc0c5df2487eebdd2
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569121"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44205415"
 ---
 # <a name="evaluate-xpath-expressions-using-xpathnavigator"></a>XPathNavigator를 사용하여 XPath 식 계산
 <xref:System.Xml.XPath.XPathNavigator> 클래스는 XPath 식을 계산하는 <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> 메서드를 제공합니다. <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> 메서드는 XPath 식을 가져와서 계산하고 XPath 식 결과를 기준으로 부울, 숫자, 문자열, 노드 집합 등의 W3C XPath 형식을 반환합니다.  
@@ -46,13 +46,14 @@ Console.WriteLine(total);
 ### <a name="position-and-last-functions"></a>position 및 last 함수  
  <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> 메서드가 오버로드됩니다. <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> 메서드 중 하나가 <xref:System.Xml.XPath.XPathNodeIterator> 개체를 매개 변수로 사용합니다. 이 특정 <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> 메서드는 매개 변수로 <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> 개체만을 사용하는 <xref:System.Xml.XPath.XPathExpression> 메서드와 일치합니다. 단, 노드 집합 인수에서 계산을 실행할 현재 컨텍스트를 지정할 수 있다는 점이 다릅니다. 이 컨텍스트는 XPath `position()` 및 `last()` 함수가 현재 컨텍스트 노드에 상대적인 경우 이러한 함수에 필요합니다. `position()` 및 `last()` 함수가 위치 단계에서 조건자로 사용되지 않을 경우 이를 계산하기 위해서는 노드 집합에 대한 참조가 필요합니다. 그렇지 않으면 `position` 및 `last` 함수는 `0`을 반환합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathNavigator를 사용하여 XML 데이터 선택](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 노드 일치시키기](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
- [XPath 쿼리에서 인식하는 노드 형식](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
- [XPath 쿼리 및 네임스페이스](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
- [컴파일된 XPath 식](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathNavigator를 사용하여 XML 데이터 선택](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 노드 일치시키기](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
+- [XPath 쿼리에서 인식하는 노드 형식](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
+- [XPath 쿼리 및 네임스페이스](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
+- [컴파일된 XPath 식](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)

@@ -5,16 +5,16 @@ author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: cf374f9d1fd7e343e5eba868d3f686784428a2d0
-ms.sourcegitcommit: 3d42e1d73e21c35c540dd4adbea23efcbe1b8b0a
+ms.openlocfilehash: b7c7b8d16463cd66eb8a0a5e383dd3763af323d8
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36270450"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857195"
 ---
 # <a name="install-the-net-framework-on-windows-10-and-windows-server-2016"></a>Windows 10 및 Windows Server 2016에 .NET Framework 설치
 
-Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 필요합니다. 이 문서의 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255)는 사용 가능한 최신 버전입니다.
+Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 필요합니다. 이 문서의 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 사용 가능한 최신 버전입니다.
 
 응용 프로그램을 실행한 후 컴퓨터에 다음과 같은 대화 상자가 표시되어 이 페이지를 방문했을 수 있습니다.
 
@@ -29,9 +29,9 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 > [!div class="button"]
 [.NET Framework 4.7.2 다운로드](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
-[.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255)는 .NET Framework 4.0~4.7.1용으로 빌드된 응용 프로그램을 실행하는 데 사용될 수 있습니다.
+[.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 .NET Framework 4.0~4.7.1용으로 빌드된 응용 프로그램을 실행하는 데 사용될 수 있습니다.
 
-다음에 [.NET Framework 4.7.2](http://go.microsoft.com/fwlink/?LinkID=863255)를 설치할 수 있습니다.
+다음에 [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)를 설치할 수 있습니다.
 
 * Windows 10 가을 작성자 업데이트(버전 1709)
 * Windows 10 Creators Update(버전 1703)

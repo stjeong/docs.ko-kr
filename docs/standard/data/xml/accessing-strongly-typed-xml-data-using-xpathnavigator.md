@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 898e0f52-8a7c-4d1f-afcd-6ffb28b050b4
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 040a137f9b7c26c4484a69313e1f405699a19b64
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0c283d3c87effcf9e898bb769cc8991da6cea453
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578129"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44199624"
 ---
 # <a name="accessing-strongly-typed-xml-data-using-xpathnavigator"></a>XPathNavigator를 사용하여 강력한 형식의 XML 데이터 액세스
 XPath 2.0 데이터 모델의 인스턴스로서 <xref:System.Xml.XPath.XPathNavigator> 클래스는 CLR(공용 언어 런타임) 형식에 매핑되는 강력한 형식의 데이터를 포함할 수 있습니다. XPath 2.0 데이터 모델에 따르면 요소와 특성에만 강력한 형식의 데이터를 포함할 수 있습니다. <xref:System.Xml.XPath.XPathNavigator> 클래스는 데이터 형식을 변환하는 메커니즘뿐 아니라 강력한 형식의 데이터로 <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체 내의 데이터에 액세스할 수 있는 메커니즘도 제공합니다.  
@@ -185,12 +185,13 @@ Console.WriteLine("The price of the book has been dropped 20% from {0:C} to {1:C
   
  스키마 기본 제공 형식에서 CLR 형식으로 매핑하는 방법에 대한 자세한 내용은 [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XML 데이터 추출](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XML 데이터 추출](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)

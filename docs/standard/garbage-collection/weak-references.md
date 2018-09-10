@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 03da36090c255f635036a9bd518bdacd99404ed4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 65492beb888da1986f456d3fd000fc02f340f3c4
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575657"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264963"
 ---
 # <a name="weak-references"></a>약한 참조
 응용 프로그램의 코드가 해당 개체에 연결될 수 있는 반면 가비지 수집기는 응용 프로그램에서 사용 중인 개체를 수집할 수 없습니다. 응용 프로그램은 개체에 대한 강력한 참조를 가진다고 합니다.  
@@ -52,5 +52,6 @@ ms.locfileid: "33575657"
   
  메모리 관리 문제에 대한 자동 솔루션으로 Weak Referencs를 사용하지 않습니다. 대신, 응용 프로그램의 개체를 처리하기 위한 효과적인 캐싱 정책을 개발합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [가비지 수집](../../../docs/standard/garbage-collection/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [가비지 수집](../../../docs/standard/garbage-collection/index.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0830ec4022ca789d9aac0d1ae2c10ae6f76cc75e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4e6a0b0a6fbad1c01ed26b5090cd18dcce3be057
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579823"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041602"
 ---
 # <a name="grouping-constructs-in-regular-expressions"></a>정규식의 교체 그룹화 구문
 그룹화 구문은 정규식의 하위 식을 나타내며 입력 문자열의 부분 문자열을 캡처합니다. 그룹화 구문은 다음과 같은 경우에 사용할 수 있습니다.  
@@ -167,8 +167,8 @@ ms.locfileid: "33579823"
 |무늬|설명|  
 |-------------|-----------------|  
 |`\D+`|하나 이상의 10진수가 아닌 문자를 찾습니다.|  
-|`(?<digit>\d+)`|하나 이상의 10진수 문자를 찾습니다. 명명된 그룹 `digit` 에 일치를 할당합니다.|  
-|\D+|하나 이상의 10진수가 아닌 문자를 찾습니다.|  
+|`(?<digit>\d+)`|하나 이상의 10진수 문자를 찾습니다. 명명된 그룹 `digit`에 일치를 할당합니다.|  
+|`\D+`|하나 이상의 10진수가 아닌 문자를 찾습니다.|  
 |`(?<digit>\d+)?`|하나 이상 10진수 문자의 0개 또는 1개 발생을 찾습니다. 명명된 그룹 `digit` 에 일치를 할당합니다.|  
   
 <a name="balancing_group_definition"></a>   
@@ -470,6 +470,7 @@ ms.locfileid: "33579823"
   
  첫 번째 캡처링 그룹은 문장의 각 단어를 찾습니다. 두 번째 캡처링 그룹은 각 단어와 이러한 단어 뒤에 나오는 문장 부호 및 공백을 함께 찾습니다. 인덱스가 2인 <xref:System.Text.RegularExpressions.Group> 개체는 두 번째 캡처링 그룹과 일치하는 텍스트에 대한 정보를 제공합니다. 캡처링 그룹에 의해 캡처된 단어의 전체 집합은 <xref:System.Text.RegularExpressions.CaptureCollection> 속성에서 반환하는 <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> 개체에서 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [역추적](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
+## <a name="see-also"></a>참고 항목
+
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [역추적](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

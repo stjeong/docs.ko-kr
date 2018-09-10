@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f9f0c487d3d04af998fb1c3339d736e9bb043374
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 477791a0d62186b6cb88d0fae3aa9b4e38b3ef35
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567821"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43870112"
 ---
 # <a name="creating-new-strings-in-net"></a>.NET에서 새 문자열 만들기
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 간단한 할당을 사용하여 문자열을 만들 수 있으며, 클래스 생성자를 오버로드하여 여러 다양한 매개 변수를 사용한 문자열 생성도 지원합니다. 또한 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 여러 문자열, 문자열 배열 또는 개체를 결합하여 새 문자열 개체를 만드는 여러 메서드를 <xref:System.String?displayProperty=nameWithType> 클래스에서 제공합니다.  
@@ -80,6 +80,7 @@ ms.locfileid: "33567821"
  [!code-csharp[Strings.Creating#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#5)]
  [!code-vb[Strings.Creating#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
- [복합 형식 지정](../../../docs/standard/base-types/composite-formatting.md)
+## <a name="see-also"></a>참고 항목
+
+- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
+- [복합 형식 지정](../../../docs/standard/base-types/composite-formatting.md)

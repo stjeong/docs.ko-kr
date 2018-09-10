@@ -5,12 +5,12 @@ ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: d3a26d6c3fc500691fa007abfe9c8fd069f9e812
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4d26b6df5d26a96bb8fa41dd3a8151fcb4a08b75
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398094"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43773659"
 ---
 # <a name="network-isolation-for-windows-store-apps"></a>Windows 스토어 앱에 대한 네트워크 격리
 <xref:System.Net>, <xref:System.Net.Http> 및 <xref:System.Net.Http.Headers> 네임스페이스의 클래스는 Windows 스토어 앱 또는 데스크톱 앱을 개발하는 데 사용할 수 있습니다. Windows 스토어 앱에서 사용할 때 이러한 네임스페이스의 클래스는 [!INCLUDE[win8](../../../includes/win8-md.md)]에서 사용한 응용 프로그램 보안 모델의 일부인 네트워크 격리의 영향을 받습니다. 시스템의 Windows 스토어 앱에서 네트워크에 액세스할 수 있도록 앱 매니페스트에서 적절한 네트워크 기능을 사용해야 합니다.  
@@ -26,12 +26,12 @@ ms.locfileid: "33398094"
   
 4.  문제 해결을 위해 제공된 네트워크 격리 도구를 사용하여 테스트하도록 앱을 배포하고 실행합니다.  
   
- 네트워크 격리 문제를 해결하는 데 사용한 네트워크 기능과 격리 도구를 구성하는 방법에 대한 자세한 내용은 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 개발자 문서의 [네트워크 격리 기능 구성 방법](http://go.microsoft.com/fwlink/?LinkID=228265)을 참조하세요.  
+ 네트워크 격리 문제를 해결하는 데 사용한 네트워크 기능과 격리 도구를 구성하는 방법에 대한 자세한 내용은 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 개발자 문서의 [네트워크 격리 기능 구성 방법](https://go.microsoft.com/fwlink/?LinkID=228265)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [웹 서비스에 연결](http://go.microsoft.com/fwlink/?LinkID=245696)  
- [네트워크 격리 지침 및 검사 목록](http://go.microsoft.com/fwlink/?LinkID=228265)  
- [빠른 시작: HttpClient를 사용하여 연결](http://go.microsoft.com/fwlink/?LinkId=245697)  
- [HttpClient 처리기 사용 방법](http://go.microsoft.com/fwlink/?LinkId=245699)  
- [HttpClient 연결 보호 방법](http://go.microsoft.com/fwlink/?LinkId=245698)  
- [HttpClient 샘플](http://go.microsoft.com/fwlink/?LinkId=242550)
+ [웹 서비스에 연결](https://go.microsoft.com/fwlink/?LinkID=245696)  
+ [네트워크 격리 지침 및 검사 목록](https://go.microsoft.com/fwlink/?LinkID=228265)  
+ [빠른 시작: HttpClient를 사용하여 연결](https://go.microsoft.com/fwlink/?LinkId=245697)  
+ [HttpClient 처리기 사용 방법](https://go.microsoft.com/fwlink/?LinkId=245699)  
+ [HttpClient 연결 보호 방법](https://go.microsoft.com/fwlink/?LinkId=245698)  
+ [HttpClient 샘플](https://go.microsoft.com/fwlink/?LinkId=242550)

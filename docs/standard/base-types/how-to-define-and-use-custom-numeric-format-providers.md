@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9800f1b1ec8fbb0eaf91611895aaf9d45629fae0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 18a784db1ff02f459fbc2265c3ca1a2abfaff9b4
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575826"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43879038"
 ---
 # <a name="how-to-define-and-use-custom-numeric-format-providers"></a>방법: 사용자 지정 숫자 형식 공급자 정의 및 사용
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]에서는 숫자 값의 문자열 표현을 광범위하게 제어할 수 있습니다. 숫자 값의 형식을 사용자 지정하기 위한 다음과 같은 기능을 지원합니다.  
@@ -91,5 +91,6 @@ ms.locfileid: "33575826"
 ## <a name="compiling-the-code"></a>코드 컴파일  
  csc.exe 또는 vb.exe를 사용하여 명령줄에서 코드를 컴파일합니다. Visual Studio에서 코드를 컴파일하려면 해당 코드를 콘솔 응용 프로그램 프로젝트 템플릿에 배치합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)
+## <a name="see-also"></a>참고 항목
+
+- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)

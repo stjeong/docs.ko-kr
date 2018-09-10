@@ -3,11 +3,11 @@ title: XNA 응용 프로그램에서 조작 및 관성 사용
 ms.date: 03/30/2017
 ms.assetid: b7c18905-850c-4da4-8977-a074406a4263
 ms.openlocfilehash: 70b8d0c5c098089b6f16ef817ff86698f68cf7c3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43478145"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44248906"
 ---
 # <a name="using-manipulations-and-inertia-in-an-xna-application"></a>XNA 응용 프로그램에서 조작 및 관성 사용
 이 문서에서는 Microsoft XNA 응용 프로그램의 조작 및 관성 처리를 사용하여 게임 피스의 움직임을 제어하는 방법을 설명합니다. 이 문서를 읽기 전에 [조작 및 관성 개요](../../../docs/framework/common-client-technologies/manipulations-and-inertia-overview.md) 항목 및 기본적인 XNA 프로그래밍 개념을 잘 알고 있어야 합니다.  

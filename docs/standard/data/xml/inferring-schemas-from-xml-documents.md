@@ -9,12 +9,12 @@ dev_langs:
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f8640a951acab512cbe2397df831a74700b5ad6c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9a27696b6511103e98d37fb72b33f801d23ad391
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33574822"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44042181"
 ---
 # <a name="inferring-schemas-from-xml-documents"></a>XML 문서에서 스키마 유추
 이 항목에서는 <xref:System.Xml.Schema.XmlSchemaInference> 클래스를 사용하여 XML 문서 구조에서 XSD(XML 스키마 정의 언어) 스키마를 유추하는 방법을 설명합니다.  
@@ -82,9 +82,10 @@ ms.locfileid: "33574822"
 ## <a name="schemas-that-cannot-be-refined"></a>구체화할 수 없는 스키마  
  구체화하고 예외를 throw할 형식이 지정될 경우 XSD(XML 스키마 정의 언어) 스키마 <xref:System.Xml.Schema.XmlSchemaInference> 프로세스에서 처리할 수 없는 W3C XML 스키마 구문이 있습니다. 최상위 compositor가 시퀀스가 아닌 복합 형식 등이 이에 해당됩니다. SOM(스키마 개체 모델)에서 이 스키마는 <xref:System.Xml.Schema.XmlSchemaComplexType> 속성이 <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A>의 인스턴스가 아닌 <xref:System.Xml.Schema.XmlSchemaSequence>에 해당합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Schema.XmlSchemaInference>  
- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
- [XML 스키마 유추](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)  
- [스키마 노드 형식 및 구조 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)  
- [단순 형식 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Schema.XmlSchemaInference>  
+- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
+- [XML 스키마 유추](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)  
+- [스키마 노드 형식 및 구조 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)  
+- [단순 형식 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)

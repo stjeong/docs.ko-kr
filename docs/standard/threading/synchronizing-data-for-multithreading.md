@@ -9,11 +9,12 @@ helpviewer_keywords:
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 998e159cceded6da2e9c3068680c45bc1c9345a6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1a7561a09b1b47827b3476b5525863503765064f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44180139"
 ---
 # <a name="synchronizing-data-for-multithreading"></a>다중 스레딩을 위한 데이터 동기화
 다중 스레드가 단일 개체의 속성 및 메서드에 대한 호출을 할 수 있는 경우 해당 호출을 동기화하는 것은 중요합니다. 그렇지 않으면 하나의 스레드는 다른 스레드가 수행하는 작업을 중단시킬 수 있으며 개체는 잘못된 상태로 남을 수 있습니다. 멤버가 그러한 중단으로부터 보호되는 클래스를 스레드로부터 안전하다고 합니다.  
@@ -66,9 +67,10 @@ ms.lasthandoff: 05/04/2018
 ## <a name="synchronized-context"></a>동기화된 컨텍스트  
  모든 **ContextBoundObject**에서 **SynchronizationAttribute**를 사용하여 모든 인스턴스 메서드와 필드를 동기화할 수 있습니다. 동일한 컨텍스트 도메인에 있는 모든 개체는 동일한 잠금을 공유합니다. 여러 스레드가 메서드 및 필드에 액세스할 수 있지만 한 번에 하나의 스레드만 허용됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
- [스레드 및 스레딩](../../../docs/standard/threading/threads-and-threading.md)  
- [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
- [SyncLock 문](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
- [lock 문](~/docs/csharp/language-reference/keywords/lock-statement.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
+- [스레드 및 스레딩](../../../docs/standard/threading/threads-and-threading.md)  
+- [동기화 기본 형식 개요](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
+- [SyncLock 문](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
+- [lock 문](~/docs/csharp/language-reference/keywords/lock-statement.md)

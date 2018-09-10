@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1be82fd9f26e382f20913551f67e8303cf20e03b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 7834df6c987e94e59357c7c60db2627d107bffc3
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43390615"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43864552"
 ---
 # <a name="managed-and-unmanaged-threading-in-windows"></a>Windows에서 관리되는 스레딩 및 관리되지 않는 스레딩
 공용 언어 런타임에 의해 만들어진 스레드 및 런타임 외부에서 만들어져 코드를 실행하기 위해 관리되는 환경에 들어가는 스레드를 비롯한 모든 스레드는 <xref:System.Threading.Thread> 클래스를 통해 관리됩니다. 런타임은 해당 프로세스에서 관리되는 실행 환경 내에서 코드를 실행한 적이 있는 모든 스레드를 모니터링하며, 다른 모든 스레드는 추적하지 않습니다. 스레드는 COM interop(런타임이 관리되는 개체를 관리되지 않는 환경에 COM 개체로 노출하므로), COM [DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) 함수 및 플랫폼 호출을 통해 관리되는 실행 환경에 들어갈 수 있습니다.  
@@ -63,9 +63,10 @@ ms.locfileid: "43390615"
 ## <a name="blocking-issues"></a>차단 문제  
  스레드가 비관리 코드에서 스레드를 차단한 운영 체제에 대해 관리되지 않는 호출을 수행할 경우 런타임이 <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>에 대해 스레드를 제어하지 못합니다. <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>의 경우 런타임은 스레드에 **Abort**를 표시하고 스레드가 관리 코드에 다시 들어가면 스레드를 제어합니다. 관리되지 않는 차단이 아니라 관리되는 차단을 사용하는 것이 좋습니다. <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>,<xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType>, <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType>, <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType>, <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=nameWithType> 등은 모두 <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>에 응답합니다. 또한 스레드가 단일 스레드 아파트에 있는 경우 이러한 모든 관리되는 차단 작업은 스레드가 차단되어 있는 동안 올바르게 아파트에 메시지를 펌핑합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>  
- <xref:System.Threading.ThreadState>  
- <xref:System.EnterpriseServices.ServicedComponent>  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.Monitor>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>  
+- <xref:System.Threading.ThreadState>  
+- <xref:System.EnterpriseServices.ServicedComponent>  
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.Monitor>

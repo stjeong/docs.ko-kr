@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 7e539067b20f0e018496b0076582619cb88072e1
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 4c514f3a7dc1fb01b2f1ed2dddc9d938c1101809
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480667"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44268853"
 ---
 # <a name="challenges-and-solutions-for-distributed-data-management"></a>분산 데이터 관리를 위한 과제 및 해결 방법
 
@@ -79,7 +79,7 @@ ACID 방식 또는 2단계 커밋 트랜잭션은 마이크로 서비스 원칙�
 
 따라서 마이크로 서비스 자율성을 적용하고 복원력을 높이려면 마이크로 서비스 간에 요청/응답 통신 체인을 최소한으로 사용해야 합니다. 비동기 메시지 및 이벤트 기반 통신을 사용하거나 원래의 HTTP 요청/응답 주기와 별도로 HTTP 폴링을 사용하여 마이크로 서비스 간 통신에 비동기 상호 작용만 사용하는 것이 좋습니다.
 
-비동기 통신 사용에 대한 자세한 내용은 이 가이드의 뒷부분에 나오는 [비동기식 마이크로 서비스 통합에서 마이크로 서비스 자율성 적용](#asynchronous-microservice-integration-enforce-microservices-autonomy) 및 [비동기 메시지 기반 통신](#asynchronous-message-based-communication) 섹션에서 설명합니다.
+비동기 통신 사용에 대한 자세한 내용은 이 가이드의 뒷부분에 나오는 [비동기식 마이크로 서비스 통합에서 마이크로 서비스 자율성 적용](communication-in-microservice-architecture.md#asynchronous-microservice-integration-enforces-microservices-autonomy) 및 [비동기 메시지 기반 통신](asynchronous-message-based-communication.md) 섹션에서 설명합니다.
 
 ## <a name="additional-resources"></a>추가 자료
 

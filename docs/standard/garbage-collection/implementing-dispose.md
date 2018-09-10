@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: acc661e8110892dc7daa603ef82b4bc5f167a970
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 176ae3589443937331259ee4716570c66053de3c
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579446"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44186190"
 ---
 # <a name="implementing-a-dispose-method"></a>Dispose 메서드 구현
 
@@ -162,11 +162,11 @@ SafeHandle을 사용하는 파생된 클래스에 대한 삭제 패턴을 구현
   
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.GC.SuppressFinalize%2A>   
-<xref:System.IDisposable>   
-<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>   
-<xref:Microsoft.Win32.SafeHandles>   
-<xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>   
-<xref:System.Object.Finalize%2A?displayProperty=nameWithType>   
-[방법: 클래스 및 구조체 정의 및 사용(C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)   
-[삭제 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md)
+- <xref:System.GC.SuppressFinalize%2A>   
+- <xref:System.IDisposable>   
+- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>   
+- <xref:Microsoft.Win32.SafeHandles>   
+- <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>   
+- <xref:System.Object.Finalize%2A?displayProperty=nameWithType>   
+- [방법: 클래스 및 구조체 정의 및 사용(C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)   
+- [삭제 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md)

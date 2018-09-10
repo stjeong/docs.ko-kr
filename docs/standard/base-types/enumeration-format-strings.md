@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: dd1ff672-1052-42cf-8666-4924fb6cd1a1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4402bf58ea853d8a373592eec274a8bf75e7e90c
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 956dc7daad91d9daa3ac950d7f5897404dd314c2
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925744"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041267"
 ---
 # <a name="enumeration-format-strings"></a>열거형 형식 문자열
 <xref:System.Enum.ToString%2A?displayProperty=nameWithType> 메서드를 사용하여 열거형 멤버의 숫자, 16진수 또는 문자열 값을 나타내는 새 문자열 개체를 만들 수 있습니다. 이 메서드는 열거형 형식 문자열 중 하나를 사용하여 반환할 값을 지정합니다.
@@ -50,4 +50,4 @@ ms.locfileid: "42925744"
 
 ## <a name="see-also"></a>참고 항목
 
-[형식 서식 지정](formatting-types.md)
+- [형식 서식 지정](formatting-types.md)

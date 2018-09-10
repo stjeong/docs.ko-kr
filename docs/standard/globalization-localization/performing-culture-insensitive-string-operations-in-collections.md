@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c8972a8e9d73adc60e073a5eab9388260c907b68
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0e458f45fea8e2207ced930daebf10e653901fa7
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577152"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264989"
 ---
 # <a name="performing-culture-insensitive-string-operations-in-collections"></a>컬렉션에서 Culture를 구분하지 않는 문자열 작업 수행
 <xref:System.Collections> 네임스페이스에는 기본적으로 문화권 구분 동작을 제공하는 클래스 및 멤버가 있습니다. <xref:System.Collections.CaseInsensitiveComparer> 및 <xref:System.Collections.CaseInsensitiveHashCodeProvider> 클래스의 기본 생성자는 <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> 속성을 사용하여 새 인스턴스를 초기화합니다. <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType> 메서드의 모든 오버로드는 기본적으로 `Thread.CurrentCulture` 속성을 사용하여 <xref:System.Collections.Hashtable> 클래스의 새 인스턴스를 만듭니다. <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType> 메서드의 오버로드는 기본적으로 `Thread.CurrentCulture`를 사용하여 문화권 구분 정렬을 수행합니다. 문자열이 키로 사용될 경우 <xref:System.Collections.SortedList>의 정렬 및 조회는 `Thread.CurrentCulture`의 영향을 받을 수 있습니다. `Collections` 네임스페이스의 이러한 클래스 및 메서드에서 문화권을 구분하는 결과를 얻으려면 이 섹션에 제공된 사용 권장 사항을 따릅니다.  
@@ -133,12 +133,13 @@ internal class InvariantComparer : IComparer
 ## <a name="using-the-arraylistsort-method"></a>ArrayList.Sort 메서드 사용  
  `ArrayList.Sort` 메서드의 오버로드는 기본적으로 `Thread.CurrentCulture` 속성을 사용하여 문화권 구분 정렬을 수행합니다. 다른 정렬 순서로 인해 문화권마다 결과가 달라질 수 있습니다. 문화권 구분 동작을 제거하려면 `IComparer` 구현을 수락하는 이 메서드의 오버로드를 사용합니다. `comparer` 매개 변수의 경우 `CultureInfo.InvariantCulture`를 사용하는 사용자 지정 고정 비교자 클래스를 지정합니다. 사용자 지정 고정 비교자 클래스의 예는 [SortedList 클래스 사용](#cpconperformingculture-insensitivestringoperationsincollectionsanchor1)에 제공됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.CaseInsensitiveComparer>  
- <xref:System.Collections.CaseInsensitiveHashCodeProvider>  
- <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType>  
- <xref:System.Collections.SortedList>  
- <xref:System.Collections.Hashtable>  
- <xref:System.Collections.IComparer>  
- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
- <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.CaseInsensitiveComparer>  
+- <xref:System.Collections.CaseInsensitiveHashCodeProvider>  
+- <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType>  
+- <xref:System.Collections.SortedList>  
+- <xref:System.Collections.Hashtable>  
+- <xref:System.Collections.IComparer>  
+- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
+- <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType>

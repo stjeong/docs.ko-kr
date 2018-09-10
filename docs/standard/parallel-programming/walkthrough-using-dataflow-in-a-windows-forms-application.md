@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 919dc097d32451c6123e68f8bf4b8f41808f89da
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 49935c471d10e438763e41b07944047b0924af09
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591679"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43864672"
 ---
 # <a name="walkthrough-using-dataflow-in-a-windows-forms-application"></a>연습: Windows Forms 응용 프로그램에서 데이터 흐름 사용
 이 문서에서는 Windows Forms 응용 프로그램에서 이미지 처리를 수행하는 데이터 흐름 블록의 네트워크를 만드는 방법을 보여 줍니다.  
@@ -131,5 +131,6 @@ ms.locfileid: "33591679"
   
  ![Windows Forms 응용 프로그램](../../../docs/standard/parallel-programming/media/tpldataflow-compositeimages.gif "TPLDataflow_CompositeImages")  
 
-## <a name="see-also"></a>참고 항목  
- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

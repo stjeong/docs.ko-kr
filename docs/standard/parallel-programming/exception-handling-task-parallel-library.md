@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: beb51e50-9061-4d3d-908c-56a4f7c2e8c1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 16ab0b8967ac394540f201fcc9098024faaccaa7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f3deaba0c8589eaa0ba24bc66669f5a76e60467f
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591298"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43877809"
 ---
 # <a name="exception-handling-task-parallel-library"></a>예외 처리(작업 병렬 라이브러리)
 작업 내에서 실행되는 사용자 코드에 의해 throw된 처리되지 않은 예외는 이 항목의 뒷부분에서 설명하는 특정 시나리오를 제외하고는 호출 스레드로 다시 전파됩니다. 정적 또는 인스턴스 <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> 또는 <!--zz <xref:System.Threading.Tasks.Task%601.Wait%2A?displayProperty=nameWithType>  --> `Wait` 메서드 중 하나를 사용할 때 예외가 전파되며 `try`/`catch` 문에 호출을 포함하여 예외를 처리할 수 있습니다. 어떤 작업이 연결된 자식 작업의 부모인 경우 또는 여러 작업에서 대기 중인 경우, 여러 개의 예외가 throw될 수 있습니다.  
@@ -91,5 +91,6 @@ ms.locfileid: "33591298"
 ## <a name="unobservedtaskexception-event"></a>UnobservedTaskException 이벤트  
  일부 시나리오에서는 예를 들어 신뢰할 수 없는 플러그인을 호스트할 때 무해한 예외가 자주 발생할 수 있으며 그 모든 예외를 수동으로 관찰하는 것은 어려울 수 있습니다. 이러한 경우 <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException?displayProperty=nameWithType> 이벤트를 처리할 수 있습니다. 처리기로 전달되는 <xref:System.Threading.Tasks.UnobservedTaskExceptionEventArgs?displayProperty=nameWithType> 인스턴스를 사용하면 관찰되지 않은 예외가 가입된 스레드로 다시 전파되는 것을 방지할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

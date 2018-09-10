@@ -39,12 +39,12 @@ helpviewer_keywords:
 ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7b6730e621a85dc8e656723647f949449241c407
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: acc51287a8c670da63d0ec421aa232864ea91c2b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207458"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44216622"
 ---
 # <a name="net-class-library-overview"></a>.NET 클래스 라이브러리 개요
 
@@ -97,7 +97,7 @@ ms.locfileid: "36207458"
 ||<xref:System.UInt32>|32비트 부호 없는 정수입니다.<br /><br /> CLS 규격을 따르지 않음|**UInteger**|**uint**|**unsigned int**<br /> 또는<br /> **unsigned long**|**uint32**|  
 ||<xref:System.UInt64>|64비트 부호 없는 정수입니다.<br /><br /> CLS 규격을 따르지 않음|**ULong**|**ulong**|**unsigned __int64**|**uint64**|  
 |부동 소수점|<xref:System.Single>|단정밀도(32비트) 부동 소수점 숫자|**Single**|**float**|**float**|**float32**</br> 또는</br>**single**|  
-||<xref:System.Double>|배정밀도(64비트) 부동 소수점 숫자|**Double**|**double**|**double**|**float**</br> 또는 </br> **double**|  
+||<xref:System.Double>|배정밀도(64비트) 부동 소수점 숫자|**double**|**double**|**double**|**float**</br> 또는 </br> **double**|  
 |논리|<xref:System.Boolean>|부울 값(true 또는 false)|**Boolean**|**bool**|**bool**|**bool**|  
 |기타|<xref:System.Char>|유니코드(16비트) 문자|**Char**|**char**|**wchar_t**|**char**|  
 ||<xref:System.Decimal>|10진수(128비트) 값|**Decimal**|**decimal**|**Decimal**|**decimal**|  
@@ -110,7 +110,8 @@ ms.locfileid: "36207458"
   
  네임스페이스에 대한 자세한 내용은 [.NET API 브라우저](https://docs.microsoft.com/dotnet/api)를 사용하여 .NET 클래스 라이브러리를 참조하세요. API 참조 설명서는 각 네임스페이스, 해당 유형 및 해당 멤버의 각각에 대한 설명서를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [공용 형식 시스템](../../docs/standard/base-types/common-type-system.md)  
- [.NET API 브라우저](https://docs.microsoft.com/dotnet/api)  
- [개요](../../docs/framework/get-started/overview.md)
+## <a name="see-also"></a>참고 항목
+
+- [공용 형식 시스템](../../docs/standard/base-types/common-type-system.md)  
+- [.NET API 브라우저](https://docs.microsoft.com/dotnet/api)  
+- [개요](../../docs/framework/get-started/overview.md)

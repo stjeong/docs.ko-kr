@@ -21,11 +21,11 @@ ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 88c70e6a35e0a731cd8937b188dc6ee8e9bce105
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43456427"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44185599"
 ---
 # <a name="isolated-storage"></a>격리된 저장소
 <a name="top"></a> [!INCLUDE[desktop_appname](../../../includes/desktop-appname-md.md)] 응용 프로그램의 경우, 격리된 저장소는 코드와 저장된 데이터를 연결하는 표준화된 방법을 정의하여 격리와 안전을 제공하는 데이터 저장소 메커니즘입니다. 표준화를 통해 다음과 같은 여러 가지 이점도 활용할 수 있습니다. 관리자는 파일 저장소 구성, 보안 정책 설정, 사용하지 않은 데이터 삭제를 위해 격리된 저장소를 조작하는 도구를 사용할 수 있습니다. 격리된 저장소를 사용하면 더 이상 파일 시스템에서 안전한 위치를 지정하기 위해 코드에 고유 경로를 포함할 필요가 없으며 격리된 저장소에만 액세스할 수 있는 다른 응용 프로그램으로부터 데이터가 보호됩니다. 응용 프로그램의 저장소 영역 위치를 나타내는 하드 코드된 정보는 필요하지 않습니다.  

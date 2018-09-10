@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e6104aa8-8e5f-4069-b864-def85579c96c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 9f4429d50f6b7646cb75fad44957a98812282928
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0a17752257589ea4ee4d9e58182d4448f02f6460
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571266"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44225203"
 ---
 # <a name="handling-com-interop-exceptions"></a>COM Interop 예외 처리
 관리 코드와 비관리 코드를 함께 사용하여 예외를 처리합니다. 메서드가 관리 코드에서 예외를 throw하면 공용 언어 런타임이 HRESULT를 COM 개체에 전달할 수 있습니다. 메서드가 비관리 코드에서 오류 HRESULT를 반환함으로써 실패하면 런타임에서는 관리 코드가 catch할 수 있는 예외를 throw합니다.  
@@ -31,4 +31,5 @@ ms.locfileid: "33571266"
  비관리 코드에서 메서드가 실패하면 관리 코드 세그먼트에 예외가 전달될 수 있습니다. [HRESULT 및 예외](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md) 항목에는 HRESULT가 런타임 예외 개체에 매핑되는 방식을 보여주는 표가 있습니다.  
 
 ## <a name="see-also"></a>참고 항목
-[예외](index.md) 
+
+- [예외](index.md)

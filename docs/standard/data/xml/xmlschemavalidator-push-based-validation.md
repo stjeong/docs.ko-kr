@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 36d91d4bd479c1592ae0b3f98d227947686188d7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c4d1d5602ff224c1c8f3e0948fc93c9200b9661e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579602"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44189078"
 ---
 # <a name="xmlschemavalidator-push-based-validation"></a>XmlSchemaValidator 밀어넣기 기반 유효성 검사
 <xref:System.Xml.Schema.XmlSchemaValidator> 클래스는 밀어넣기 기반 방식으로 XML 스키마에 대해 XML 데이터의 유효성을 검사할 수 있는 효과적인 고성능 메커니즘을 제공합니다. 예를 들어, <xref:System.Xml.Schema.XmlSchemaValidator> 클래스를 사용하면 XML 문서로 serialize한 다음 유효성 검사 XML 판독기를 사용하여 문서를 다시 구문 분석할 필요 없이 내부에서 직접 XML Infoset의 유효성을 검사할 수 있습니다.  
@@ -477,5 +477,6 @@ static void SchemaValidationEventHandler(object sender, ValidationEventArgs e)
 > [!NOTE]
 >  <xref:System.Xml.Schema.XmlSchemaValidator> 클래스의 다양한 속성이 반환하는 값은 위 표의 메서드를 호출해도 변경되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Schema.XmlSchemaValidator>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Schema.XmlSchemaValidator>

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 721f10fa-3189-4124-a00d-56ddabd889b3
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6c0ea6590a53748c9ed85a6d13f67b260ce23af5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0e0572d2f4afb2b8637d2411102e466b25b2b703
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33390288"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43856818"
 ---
 # <a name="the-net-framework-and-out-of-band-releases"></a>.NET Framework 및 번외 릴리스
 .NET Framework는 기존의 데스크톱 및 웹 응용 프로그램뿐만 아니라 Windows Phone 및 Windows 스토어 앱과 같은 서로 다른 플랫폼을 수용하고 코드 재사용을 최대화하는 방향으로 발전하고 있습니다. 정기적인 .NET Framework 릴리스 이외에 새로운 기능인 OOB(Out Of Band)도 릴리스하여 플랫폼 간 개발을 향상시키거나 새 기능을 도입합니다. 이 항목에서는 .NET Framework 및 해당 OOB 릴리스의 향후 방향에 대해 설명합니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "33390288"
  앞에서 언급했듯이 OOB 패키지를 사용하는 응용 프로그램을 배포하면 응용 프로그램 패키지와 함께 OOB 어셈블리가 제공됩니다.  
   
 ## <a name="types-of-oob-releases"></a>OOB 릴리스 형식  
- 일반적으로 OOB 패키지에는 하나 이상의 시험판 버전 및 안정적인 버전이 있습니다. 시험판과 함께 제공되는 라이선스는 일반적으로 재배포할 수 없지만 패키지를 사용해 보고 피드백을 제공할 수 있습니다. 피드백이 패키지의 모든 업데이트에 통합됩니다. 최종 릴리스는 NuGet과 함께 안정적인 패키지로 분산되며 응용 프로그램과 함께 NuGet 패키지를 재배포할 수 있는 라이선스를 포함합니다. 안정적인 패키지가 Microsoft에서 지원됩니다. Microsoft는 모든 패키지에 대한 블로그 게시물 및 포럼 답변과 같은 다른 유형의 문서는 물론 IntelliSense 지원도 제공합니다. 또한 소스 코드는 전부는 아니지만 일부 패키지에서 제공될 수 있습니다. [.NET Framework 블로그](http://blogs.msdn.com/b/dotnet/)를 구독하면 새 패키지 및 업데이트된 패키지에 대한 알림을 받아볼 수 있습니다.  
+ 일반적으로 OOB 패키지에는 하나 이상의 시험판 버전 및 안정적인 버전이 있습니다. 시험판과 함께 제공되는 라이선스는 일반적으로 재배포할 수 없지만 패키지를 사용해 보고 피드백을 제공할 수 있습니다. 피드백이 패키지의 모든 업데이트에 통합됩니다. 최종 릴리스는 NuGet과 함께 안정적인 패키지로 분산되며 응용 프로그램과 함께 NuGet 패키지를 재배포할 수 있는 라이선스를 포함합니다. 안정적인 패키지가 Microsoft에서 지원됩니다. Microsoft는 모든 패키지에 대한 블로그 게시물 및 포럼 답변과 같은 다른 유형의 문서는 물론 IntelliSense 지원도 제공합니다. 또한 소스 코드는 전부는 아니지만 일부 패키지에서 제공될 수 있습니다. [.NET Framework 블로그](https://blogs.msdn.com/b/dotnet/)를 구독하면 새 패키지 및 업데이트된 패키지에 대한 알림을 받아볼 수 있습니다.  
   
  시험판과 안정적인 패키지를 둘 다 찾아보려면 NuGet 패키지 관리자에서 **시험판 포함**을 선택합니다.  
   

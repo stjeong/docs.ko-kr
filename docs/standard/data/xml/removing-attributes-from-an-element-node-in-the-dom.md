@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 758ce84390c9ba47e3eb56e1feb293a4cf0408a1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 65fd6d2baae29c72241350e4568faf09b9c71f39
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570569"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44188146"
 ---
 # <a name="removing-attributes-from-an-element-node-in-the-dom"></a>DOM의 요소 노드에서 특성 제거
 여러 가지 방법으로 특성을 제거할 수 있습니다. 그 중 한 가지 방법은 특성 컬렉션에서 특성을 제거하는 것입니다. 이 방법을 사용하려면 다음 단계를 수행합니다.  
@@ -39,5 +39,6 @@ ms.locfileid: "33570569"
   
  <xref:System.Xml.XmlAttribute>를 사용하여 <xref:System.Xml.XmlAttributeCollection.RemoveAll%2A> 메서드를 호출하면 값이 없는 특성이 있을 수 없으므로 특성 값이 String.Empty로 설정됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

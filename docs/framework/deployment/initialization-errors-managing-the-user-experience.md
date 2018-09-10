@@ -9,11 +9,11 @@ ms.assetid: 680a7382-957f-4f6e-b178-4e866004a07e
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: a30fe0aac4bfacc71137474837b95371e7d85b09
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43394743"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43501802"
 ---
 # <a name="net-framework-initialization-errors-managing-the-user-experience"></a>.NET Framework 초기화 오류: 사용자 환경 관리
 CLR(공용 언어 런타임) 활성화 시스템은 관리되는 응용 프로그램 코드를 실행하는 데 사용할 CLR 버전을 결정합니다. 경우에 따라 활성화 시스템이 로드할 CLR 버전을 찾지 못할 수도 있습니다. 일반적으로 이런 상황은 응용 프로그램에 필요한 CLR 버전이 잘못되었거나 지정된 컴퓨터에 설치되지 않은 경우에 발생합니다. 요청된 버전이 없는 경우 CLR 활성화 시스템은 호출된 함수 또는 인터페이스에서 HRESULT 오류 코드를 반환하며, 응용 프로그램을 실행하는 사용자에게 오류 메시지를 표시할 수 있습니다. 이 문서에서는 HRESULT 코드 목록을 제공하며 오류 메시지가 표시되지 않도록 하는 방법을 설명합니다.  

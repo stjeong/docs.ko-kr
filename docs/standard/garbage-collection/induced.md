@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 436953782049800e89298932278af4e450fc10de
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 69590b0efc924132d149621c135ef0816cac7d1e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575865"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44192550"
 ---
 # <a name="induced-collections"></a>인덱싱된 컬렉션
 대부분의 경우 가비지 수집기가 수집을 수행할 적절한 시기를 결정할 수 있으며 가비지 수집기가 독립적으로 실행되는 것이 좋습니다. 강제된 컬렉션이 응용 프로그램의 성능을 향상시키는 드문 경우도 있습니다. 이러한 경우에 가비지 수집을 강제하는 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 메서드를 사용하여 가비지 수집을 유도할 수 있습니다.  
@@ -36,6 +36,7 @@ ms.locfileid: "33575865"
 |<xref:System.GCCollectionMode.Forced> 또는 <xref:System.GCCollectionMode.Default>|차단 컬렉션은 가능한 한 빨리 수행됩니다. 백그라운드 컬렉션이 진행 중이고 세대가 0 또는 1인 경우 <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> 메서드는 차단 컬렉션을 즉시 트리거하고 컬렉션이 완료될 때 반환합니다. 백그라운드 컬렉션이 진행 중이고 `generation` 매개 변수가 2인 경우 메서드는 백그라운드 컬렉션이 완료될 때까지 대기하고 세대 2 컬렉션을 트리거한 후 반환합니다.|컬렉션은 가능한 한 빨리 수행됩니다. <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> 메서드는 백그라운드 컬렉션을 요청하지만 이 작업이 항상 수행되지는 않으며 상황에 따라 차단 컬렉션이 계속 수행될 수도 있습니다. 백그라운드 컬렉션이 이미 진행 중인 경우 메서드가 즉시 반환됩니다.|  
 |<xref:System.GCCollectionMode.Optimized>|차단 컬렉션은 가비지 수집기의 상태와 `generation` 매개 변수에 따라 수행될 수 있습니다. 가비지 수집기는 최적의 성능을 제공하려고 합니다.|가비지 수집기의 상태에 따라 컬렉션이 수행될 수 있습니다. <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> 메서드는 백그라운드 컬렉션을 요청하지만 이 작업이 항상 수행되지는 않으며 상황에 따라 차단 컬렉션이 계속 수행될 수도 있습니다. 가비지 수집기는 최적의 성능을 제공하려고 합니다. 백그라운드 컬렉션이 이미 진행 중인 경우 메서드가 즉시 반환됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [대기 시간 모드](../../../docs/standard/garbage-collection/latency.md)  
- [가비지 수집](../../../docs/standard/garbage-collection/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [대기 시간 모드](../../../docs/standard/garbage-collection/latency.md)  
+- [가비지 수집](../../../docs/standard/garbage-collection/index.md)

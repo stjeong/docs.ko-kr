@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 992cc1f60ee3f08131b478d2336321bf87d7ef89
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5cd2fa6219f39a8506d865d85e1ce5f84d22a92f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573791"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44269035"
 ---
 # <a name="asynchronous-programming-model-apm"></a>APM(비동기 프로그래밍 모델)
 <xref:System.IAsyncResult> 디자인 패턴을 사용하는 비동기 작업은 **Begin***OperationName*과 **End***OperationName*이라는 두 가지 메서드로 구현됩니다. 이 두 메서드를 사용하면 각각 비동기 작업 *OperationName*이 시작되고 종료됩니다. 예를 들어 <xref:System.IO.FileStream> 클래스는 파일에서 바이트를 비동기적으로 읽는 <xref:System.IO.FileStream.BeginRead%2A> 및 <xref:System.IO.FileStream.EndRead%2A> 메서드를 제공합니다. 이러한 메서드는 비동기 버전의 <xref:System.IO.FileStream.Read%2A> 메서드를 구현합니다.  
@@ -65,7 +65,8 @@ ms.locfileid: "33573791"
   
 -   <xref:System.AsyncCallback> 대리자를 사용하여 작업이 완료될 때 호출할 메서드를 지정합니다. 이 방법을 설명하는 예제는 [Using an AsyncCallback Delegate to End an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
- [동기 메서드를 비동기 방식으로 호출](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
- [AsyncCallback 대리자 및 상태 개체 사용](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md)
+## <a name="see-also"></a>참고 항목
+
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+- [동기 메서드를 비동기 방식으로 호출](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+- [AsyncCallback 대리자 및 상태 개체 사용](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md)

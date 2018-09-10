@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6f958af5859804cdeb382adab2f3772c42ac5b16
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 40a530190ee4b19d72399ab877cf26bad1090b9f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43483965"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264118"
 ---
 # <a name="xslt-extension-objects"></a>XSLT 확장명 개체
 확장명 개체를 사용하여 스타일시트의 기능을 확장할 수 있습니다. 확장 개체는 <xref:System.Xml.Xsl.XsltArgumentList> 클래스를 사용하여 유지 관리합니다.  
@@ -38,6 +38,7 @@ ms.locfileid: "43483965"
   
 3.  <xref:System.Xml.Xsl.XsltArgumentList> 개체를 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> 메서드에 전달합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
- [XSLT 보안 고려 사항](../../../../docs/standard/data/xml/xslt-security-considerations.md)
+## <a name="see-also"></a>참고 항목
+
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [XSLT 보안 고려 사항](../../../../docs/standard/data/xml/xslt-security-considerations.md)

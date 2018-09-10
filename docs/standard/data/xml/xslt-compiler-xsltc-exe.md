@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: aef49f70f3a60151aa053a1a94a06bc71401531e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 470dd0eb37d8081d388ef69b204293f568096a5e
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575442"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262232"
 ---
 # <a name="xslt-compiler-xsltcexe"></a>XSLT 컴파일러(xsltc.exe)
 XSLT 컴파일러(xsltc.exe)에서는 XSLT 스타일시트를 컴파일하여 어셈블리를 생성합니다. 컴파일된 스타일시트는 <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> 메서드로 직접 전달될 수 있습니다. 서명된 어셈블리는 xsltc.exe를 사용하여 생성할 수 없습니다.  
@@ -82,7 +82,8 @@ xsltc /settings:DTD+,script+ /out:myTest calc.xsl
 xsltc booksort.xsl output.xsl  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [방법: 어셈블리를 사용하여 XSLT 변형 수행](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>  
+- [방법: 어셈블리를 사용하여 XSLT 변형 수행](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)

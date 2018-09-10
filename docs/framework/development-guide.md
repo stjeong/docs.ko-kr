@@ -7,11 +7,11 @@ ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: c42311368bf94a2629f656b61b09cb7c2c5f68b6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43387991"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44205389"
 ---
 # <a name="net-framework-development-guide"></a>.NET Framework 개발 가이드
 이 섹션에서는 .NET Framework 앱을 생성, 구성, 디버그, 배포하고 보안을 적용하는 방법을 설명합니다. 이 섹션에서는 또한 동적 프로그래밍, 상호 운용성, 확장성, 메모리 관리 및 스레딩과 같은 기술 영역에 대한 정보를 제공합니다.  

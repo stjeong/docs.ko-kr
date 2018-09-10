@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8e3fb5fd807971aed014ba98cbb207c4483b93f9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 03aaae7cd0faa7e7628da2e2e8f622f0967102cf
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581682"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44205009"
 ---
 # <a name="how-to-write-a-simple-parallelforeach-loop"></a>방법: 간단한 Parallel.ForEach 루프 작성
 이 예제는 <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> 루프를 사용하여 <xref:System.Collections.IEnumerable?displayProperty=nameWithType> 또는 <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> 데이터 소스에 대해 데이터 병렬 처리를 사용하는 방법을 보여줍니다.  
@@ -47,7 +47,8 @@ ms.locfileid: "33581682"
   
 -   F5 키를 누릅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

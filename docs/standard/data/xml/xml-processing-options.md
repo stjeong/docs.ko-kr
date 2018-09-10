@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 902c82f77240c957cc6070c9437b95d0c89fca53
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 4e0d0a2a8d8c7fd75da7f2109619d588eac7b4a6
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105351"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43863022"
 ---
 # <a name="xml-processing-options"></a>XML 처리 옵션
 XML 데이터를 처리하는 데 사용할 수 있는 Microsoft 기술 목록은 다음 표를 참조하세요.  
@@ -33,7 +33,8 @@ XML 데이터를 처리하는 데 사용할 수 있는 Microsoft 기술 목록�
 |[XmlLite](https://msdn.microsoft.com/library/ms752872.aspx)|- 빠르고 안전하며 캐시를 사용하지 않고 앞으로만 이동 가능한 XML 파서로서, 고성능의 XML 앱을 빌드할 수 있도록 도움을 줍니다.<br />- DLL(동적 연결 라이브러리)을 사용할 수 있는 모든 언어에서 사용할 수 있습니다. C++ 사용을 권장합니다.|  
 |[MSXML](https://msdn.microsoft.com/library/ms763742.aspx)|- Windows 운영 체제에 포함된 XML을 처리할 수 있는 COM 기반 기술입니다.<br />- XPath 및 XSLT를 지원하는 DOM의 네이티브 구현을 제공합니다.<br />- SAX2 이벤트 기반 파서가 포함되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [DOM 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XSLT 컴파일러(xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)
+## <a name="see-also"></a>참고 항목
+
+- [DOM 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XSLT 컴파일러(xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)

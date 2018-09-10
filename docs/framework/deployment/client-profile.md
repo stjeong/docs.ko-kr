@@ -12,11 +12,11 @@ ms.assetid: f0219919-1f02-4588-8704-327a62fd91f1
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: e0fbf40c6af63cfabe7b35e2bdf3e0998761b801
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43420948"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43505124"
 ---
 # <a name="net-framework-client-profile"></a>.NET Framework Client Profile
 .NET Client Profile은 [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] 및 이전 버전에서 제공되었고 클라이언트 응용 프로그램을 위해 최적화된 .NET Framework의 하위 집합입니다. .NET Framework는 Windows, Windows Phone 및 Microsoft Azure용 개발 플랫폼으로서, 관리되는 앱 실행 환경과 .NET Framework 클래스 라이브러리를 제공합니다. [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] 및 이전 버전에서는 전체 .NET Framework와 Client Profile의 두 가지 배포 옵션을 제공했습니다. Client Profile로 전체 .NET Framework보다 더 빠르게 배포하고 더 작은 응용 프로그램 설치 패키지를 사용할 수 있게 되었습니다.  

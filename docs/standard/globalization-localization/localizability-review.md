@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1907841694cde82cebada4a9e73b8ce703208611
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b19bc78f44781923df6873ccc9720f4605731976
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576131"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44206064"
 ---
 # <a name="localizability-review"></a>지역화 가능성 검토
 지역화 가능성 검토는 지역화 대비 응용 프로그램 개발의 중간 단계로, 전역화된 응용 프로그램이 지역화될 준비가 되어 있는지 점검하고 특별한 처리가 필요한 사용자 인터페이스의 모든 코드 또는 측면을 확인합니다. 또한 이 단계를 통해 지역화 과정 후에도 응용 프로그램에 기능적 결함이 발생되지 않도록 합니다. 지역화 가능성 검토에서 제기된 모든 문제가 해결되면 응용 프로그램은 지역화될 준비가 됩니다. 지역화 가능성 검토가 철저할 경우 지역화 과정 중에 소스 코드를 수정할 필요가 없습니다.  
@@ -73,8 +73,9 @@ ms.locfileid: "33576131"
   
  응용 프로그램을 개발할 때 세계화 권장 사항을 따르고 문화권 구분 기능을 올바르게 처리하고 테스트 중 발생한 지역화 문제를 해결했다면 다음 단계인 [지역화](../../../docs/standard/globalization-localization/localization.md)로 진행할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
- [지역화](../../../docs/standard/globalization-localization/localization.md)  
- [전역화](../../../docs/standard/globalization-localization/globalization.md)  
- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
+- [지역화](../../../docs/standard/globalization-localization/localization.md)  
+- [전역화](../../../docs/standard/globalization-localization/globalization.md)  
+- [데스크톱 앱의 리소스](../../../docs/framework/resources/index.md)

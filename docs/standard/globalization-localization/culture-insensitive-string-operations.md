@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 212aa3f00967c04631b80305289c46d818106c44
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3c1e1b476a1de1f0c348e264c9dc6b42ceb81eff
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33574052"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43869343"
 ---
 # <a name="culture-insensitive-string-operations"></a>문화권을 구분하지 않는 문자열 작업
 문화권 구분 문자열 작업은 문화권별로 사용자에게 결과를 표시하도록 디자인된 응용 프로그램을 만드는 경우에 유용할 수 있습니다. 기본적으로 문화권 구분 메서드는 사용할 문화권을 현재 스레드의 <xref:System.Globalization.CultureInfo.CurrentCulture%2A> 속성에서 가져옵니다.  
@@ -32,5 +32,6 @@ ms.locfileid: "33574052"
   
  지역화 및 전역화 문제를 처리하는 코드가 포함된 응용 프로그램을 개발하는지 여부에 관계없이 기본적으로 문화권 구분 결과를 검색하는 .NET Framework 메서드를 알고 있어야 합니다. 이 항목의 목표는 응용 프로그램에서 이러한 메서드를 사용하여 문화권을 구분하지 않는 결과를 얻는 올바른 방법을 보여 주기 위한 것입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)

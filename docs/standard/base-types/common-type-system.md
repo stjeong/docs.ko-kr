@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5d21a3a315b7dc63a84f7b5d43d55c06eb2d5188
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6c8db725e25fe441c875a25cba97eb2090d4c071
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579589"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262609"
 ---
 # <a name="common-type-system"></a>공용 형식 시스템
 공용 형식 시스템은 공용 언어 런타임에 형식을 선언하고 사용 및 관리하는 방법을 정의할 뿐 아니라 언어 간 통합에 대한 런타임 지원의 중요한 부분을 차지합니다. 공용 형식 시스템은 다음과 같은 기능을 수행합니다.  
@@ -320,7 +320,8 @@ ms.locfileid: "33579589"
   
 -   상속된 가상 메서드를 파생된 형식에서 재정의할 수 있습니다. 메서드를 재정의하면 컴파일 타임에 알려진 변수의 형식이 아니라 런타임에 값의 형식을 기반으로 호출되는 메서드에 대한 새 정의가 제공됩니다. 가상 메서드가 `final`로 표시되어 있지 않고 새 메서드에서 최소한 가상 메서드와 동일한 수준의 액세스 가능성을 갖는 경우에만 가상 메서드를 재정의할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [.NET API 브라우저](/dotnet/api)  
- [공용 언어 런타임](../../../docs/standard/clr.md)  
- [.NET에서 형식 변환](../../../docs/standard/base-types/type-conversion.md)
+## <a name="see-also"></a>참고 항목
+
+- [.NET API 브라우저](/dotnet/api)  
+- [공용 언어 런타임](../../../docs/standard/clr.md)  
+- [.NET에서 형식 변환](../../../docs/standard/base-types/type-conversion.md)

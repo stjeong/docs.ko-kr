@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a7bf73920d10ff825396e61a3ca4e9efd622d9c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2f39b079de1c97d0954ba013ba1c87a8bd606920
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568006"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44199000"
 ---
 # <a name="how-to-display-milliseconds-in-date-and-time-values"></a>방법: 날짜 및 시간 값의 밀리초 표시
 <xref:System.DateTime.ToString?displayProperty=nameWithType>과 같은 기본 날짜 및 시간 서식 지정 메서드에는 시간 값의 시, 분, 초가 포함되지만 밀리초 구성 요소는 제외됩니다. 이 항목에서는 형식이 지정된 날짜 및 시간 문자열에 날짜 및 시간의 밀리초 구성 요소를 포함하는 방법을 보여 줍니다.  
@@ -54,6 +54,7 @@ ms.locfileid: "33568006"
 ## <a name="compiling-the-code"></a>코드 컴파일  
  csc.exe 또는 vb.exe를 사용하여 명령줄에서 코드를 컴파일합니다. Visual Studio에서 코드를 컴파일하려면 해당 코드를 콘솔 응용 프로그램 프로젝트 템플릿에 배치합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Globalization.DateTimeFormatInfo>  
- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Globalization.DateTimeFormatInfo>  
+- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)

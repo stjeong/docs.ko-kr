@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5beb4983-80c2-4f60-8c51-a07f9fd94cb3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bcd12d5c3cfe341b22a5421930a22c272878006b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fb3f50459eeafcbb9f4882e56fb08b2001a35fb3
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591848"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44042372"
 ---
 # <a name="walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency"></a>연습: BatchBlock 및 BatchedJoinBlock을 사용하여 효율성 향상
 TPL 데이터 흐름 라이브러리는 하나 이상의 소스에서 데이터를 검색 및 버퍼링한 다음, 해당 버퍼링된 데이터를 하나의 컬렉션으로 전파할 수 있도록 <xref:System.Threading.Tasks.Dataflow.BatchBlock%601?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602?displayProperty=nameWithType> 클래스를 제공합니다. 이 일괄 처리 메커니즘은 하나 이상의 소스에서 데이터를 수집한 다음, 여러 데이터 요소를 일괄 처리할 때 유용합니다. 예를 들어 데이터 흐름을 사용하여 레코드를 데이터베이스에 삽입하는 응용 프로그램을 고려합니다. 이 작업은 순차적으로 한 번에 하나가 아니라 동시에 여러 항목이 삽입되는 경우 더 효율적일 수 있습니다. 이 문서에서는 <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> 클래스를 사용하여 이러한 데이터베이스 삽입 작업의 효율성을 개선하는 방법을 설명합니다. 또한 <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> 클래스를 사용하여 프로그램이 데이터베이스에서 읽을 때 발생하는 모든 예외와 결과를 둘 다 캡처하는 방법을 설명합니다.
@@ -118,5 +118,6 @@ TPL 데이터 흐름 라이브러리는 하나 이상의 소스에서 데이터�
  [!code-csharp[TPLDataflow_BatchDatabase#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_batchdatabase/cs/dataflowbatchdatabase.cs#100)]
  [!code-vb[TPLDataflow_BatchDatabase#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_batchdatabase/vb/dataflowbatchdatabase.vb#100)]  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

@@ -9,12 +9,12 @@ dev_langs:
 ms.assetid: 8a5ea56c-0140-4b51-8997-875ae6a8e0cb
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5ed02680831302880e2bfc02b21ea61303b92a3c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 10b2471d13d410826cec3404725117649442297b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576824"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44197344"
 ---
 # <a name="building-xml-schemas"></a>XML 스키마 빌드
 <xref:System.Xml.Schema?displayProperty=nameWithType> 네임스페이스의 클래스는 W3C(World Wide Web 컨소시엄) XML 스키마 권장 사항에 정의된 구조에 매핑되며 이 클래스를 사용하여 메모리 내 XML 스키마를 빌드할 수 있습니다.  
@@ -88,11 +88,12 @@ ms.locfileid: "33576824"
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
+- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
+- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
+- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
+- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
+- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

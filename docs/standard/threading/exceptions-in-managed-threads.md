@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 99b3c36f040b506c23315d40d76642b09c0f362b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 63931f4498f4c1f313e7980b91ef712d4a46a837
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591575"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43865181"
 ---
 # <a name="exceptions-in-managed-threads"></a>관리되는 스레드의 예외
 NET Framework 버전 2.0부터 공용 언어 런타임을 통해 스레드에 있는 대부분의 처리되지 않은 예외가 정상적으로 진행됩니다. 즉, 대부분의 경우에서 처리되지 않은 예외는 응용 프로그램을 종료시킵니다.  
@@ -78,5 +78,6 @@ NET Framework 버전 2.0부터 공용 언어 런타임을 통해 스레드에 �
 ## <a name="host-override"></a>호스트 재정의  
  .NET Framework 버전 2.0에서는 관리되지 않는 호스트가 호스팅 API의 [ICLRPolicyManager](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) 인터페이스를 사용하여 공용 언어 런타임의 기본 처리되지 않은 예외를 재정의할 수 있습니다. [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md) 함수를 사용하여 처리되지 않은 예외에 대한 정책을 설정합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [관리되는 스레딩 기본 사항](../../../docs/standard/threading/managed-threading-basics.md)
+## <a name="see-also"></a>참고 항목
+
+- [관리되는 스레딩 기본 사항](../../../docs/standard/threading/managed-threading-basics.md)

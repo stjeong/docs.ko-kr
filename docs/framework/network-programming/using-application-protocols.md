@@ -17,11 +17,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: 158a68d97a52bb5a72985d260a3dd5c6bfd0bd41
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43408489"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084613"
 ---
 # <a name="using-application-protocols"></a>응용 프로그램 프로토콜 사용
 .NET Framework는 일반적으로 사용되는 인터넷 응용 프로그램 프로토콜을 지원합니다. 이 섹션에서는 [HTTP](../../../docs/framework/network-programming/http.md), “TCP” 및 “UDP” 프로토콜을 사용하는 방법에 대한 정보와 [Windows 소켓](../../../docs/framework/network-programming/sockets.md) 인터페이스를 사용하여 사용자 지정 프로토콜을 구현하는 방법에 대한 정보가 포함되어 있습니다.  

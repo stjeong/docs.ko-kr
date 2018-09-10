@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: f9af93bb-7a0d-4ba5-afe8-74f48b6b6958
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f7d1d95030d2bc9f9288ae134471c150a37291b9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5bd2468c7b68a9c79e7418a32294676fb468e1a9
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582261"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44042636"
 ---
 # <a name="spinlock"></a>SpinLock
 <xref:System.Threading.SpinLock> 구조는 잠금을 획득하기 위해 대기하는 동안 회전하는 하위 수준의 동기화 기본 형식입니다. 멀티 코어 컴퓨터에서 대기 시간이 짧은 것으로 예상되고 경합이 최소인 경우 <xref:System.Threading.SpinLock>의 성능이 다른 종류의 잠금보다 더 뛰어납니다. 그러나 프로파일링을 통해 <xref:System.Threading.Monitor?displayProperty=nameWithType> 메서드 또는 <xref:System.Threading.Interlocked> 메서드가 프로그램의 성능을 크게 낮추는 것을 확인하는 경우에만 <xref:System.Threading.SpinLock>을 사용하는 것이 좋습니다.  
@@ -25,5 +25,6 @@ ms.locfileid: "33582261"
   
  <xref:System.Threading.SpinLock>은 ‘스레드 추적’ 모드를 지원합니다. 스레드 추적 모드는 특정 시간에 잠금을 보유하고 있는 스레드를 추적하기 위해 개발 단계 중에 사용할 수 있습니다.- 스레드 추적 모드는 디버깅에 매우 유용하지만 성능이 저하될 수 있으므로 프로그램의 릴리스 버전에서 끄는 것이 좋습니다. 자세한 내용은 [방법: 회전 잠금에서 스레드 추적 모드 사용](../../../docs/standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+## <a name="see-also"></a>참고 항목
+
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

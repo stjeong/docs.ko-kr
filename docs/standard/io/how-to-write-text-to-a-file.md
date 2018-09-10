@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 13fa71487f143b1054cd2014fa74a1c7245ab31b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 70b2d04f381fdbc1ae47b1c90649df045e111afa
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577127"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484781"
 ---
 # <a name="how-to-write-text-to-a-file"></a>방법: 파일에 텍스트 쓰기
 이 항목에서는 .NET Framework 응용 프로그램 또는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 위해 파일에 텍스트를 쓸 수 있는 여러 가지 방법을 보여 줍니다. 파일에 텍스트를 쓸 때는 일반적으로 다음 클래스 및 메서드가 사용됩니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "33577127"
  [!code-vb[Conceptual.BasicIO.TextFiles#WriteFile](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writefile)]  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 사용자 입력을 텍스트 파일에 비동기적으로 쓰는 방법을 보여 줍니다. 보안상의 이유로 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 파일을 열려면 일반적으로 [FileOpenPicker](http://msdn.microsoft.com/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx) 컨트롤을 사용해야 합니다. 이 예제에서 `FileOpenPicker` 는 텍스트 파일을 표시하도록 필터링되었습니다.  
+ 다음 예제에서는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 사용자 입력을 텍스트 파일에 비동기적으로 쓰는 방법을 보여 줍니다. 보안상의 이유로 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 파일을 열려면 일반적으로 [FileOpenPicker](https://msdn.microsoft.com/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx) 컨트롤을 사용해야 합니다. 이 예제에서 `FileOpenPicker` 는 텍스트 파일을 표시하도록 필터링되었습니다.  
   
 ```xaml  
 <Page  

@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 00ed0437f51650cd335d528632f9f0cc14af6422
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0c382b22825512000a906af8a865b6b7c5f4c73c
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569735"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44204892"
 ---
 # <a name="event-handling-in-an-xml-document-using-the-xmlnodechangedeventargs"></a>XmlNodeChangedEventArgs를 사용한 XML 문서의 이벤트 처리
 **XmlNodeChangedEventArgs**는 이벤트 처리를 위해 **XmlDocument** 개체에 등록된 이벤트 처리기에 전달되는 인수를 캡슐화합니다. 다음 표에서는 이벤트와 해당 이벤트가 발생하는 시기에 대해 설명합니다.  
@@ -208,5 +208,6 @@ public class Sample
   
  자세한 내용은 <xref:System.Xml.XmlNodeChangedEventArgs> 및 <xref:System.Xml.XmlNodeChangedEventHandler>를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

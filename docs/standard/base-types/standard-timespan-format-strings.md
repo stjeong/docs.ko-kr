@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 82774ffaf03b7eaad6240a0361bede076053de0c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 52da538ba9cf348062905b66a87d13db82a214a0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578309"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085268"
 ---
 # <a name="standard-timespan-format-strings"></a>표준 TimeSpan 서식 문자열
 <a name="Top"></a> 표준 <xref:System.TimeSpan> 형식 문자열은 단일 형식 지정자를 사용하여 서식 지정 작업으로 생성되는 <xref:System.TimeSpan> 값의 텍스트 표현을 정의합니다. 공백을 포함하여 문자가 두 개 이상 포함된 형식 문자열은 사용자 지정 <xref:System.TimeSpan> 형식 문자열로 해석됩니다. 자세한 내용은 [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)을 참조하세요.  
@@ -130,7 +130,8 @@ ms.locfileid: "33578309"
   
  [표로 이동](#Top)  
   
-## <a name="see-also"></a>참고 항목  
- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
- [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)  
+- [사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)

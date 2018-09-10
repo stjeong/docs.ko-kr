@@ -21,11 +21,11 @@ ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3875b4f44a2c2aad5cc5021d55e22e99bb00a91e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43405908"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43739830"
 ---
 # <a name="ngenexe-native-image-generator"></a>Ngen.exe(네이티브 이미지 생성기)
 네이티브 이미지 생성기(Ngen.exe)는 관리되는 응용 프로그램의 성능을 향상시키는 도구입니다. Ngen.exe는 컴파일된 프로세서별 컴퓨터 코드가 포함된 파일인 네이티브 이미지를 만들어서 로컬 컴퓨터의 네이티브 이미지 캐시에 설치합니다. 런타임은 JIT(Just-In-Time) 컴파일러를 사용하지 않고 캐시의 네이티브 이미지를 사용하여 원본 어셈블리를 컴파일할 수 있습니다.  

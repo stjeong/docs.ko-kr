@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 55c4b175-3170-4071-9d60-dd5a42f79b54
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 91835006925f9768c25ad1a984a3b189e3e4c58c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c24fe637514ba773cecc7824de276b1707a4e90c
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579082"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262511"
 ---
 # <a name="xmlschemaset-for-schema-compilation"></a>스키마 컴파일을 위한 XmlSchemaSet
 XSD(XML 스키마 정의 언어) 스키마를 저장하고 유효성을 검사할 수 있는 캐시인 <xref:System.Xml.Schema.XmlSchemaSet>에 대해 설명합니다.  
@@ -251,13 +251,14 @@ foreach (XmlSchema schema in schemaSet.Schemas())
   
  <xref:System.Xml.Schema.XmlSchemaSet>을 사용하여 XML 문서의 유효성을 검사하는 방법에 대한 자세한 내용은 [XmlSchemaSet을 사용하여 XSD(XML 스키마) 유효성 검사](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
- [스키마 캐시로서 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [XmlSchemaSet을 사용하여 XSD(XML 스키마) 유효성 검사](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
+- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
+- [스키마 캐시로서 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [XmlSchemaSet을 사용하여 XSD(XML 스키마) 유효성 검사](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)

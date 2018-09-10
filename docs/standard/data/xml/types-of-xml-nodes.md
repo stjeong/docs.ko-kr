@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 71d03b78-6898-4ce7-b0fc-1282573f31f7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 7f62a113865a481276c371f2fce55a5d9486eb00
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 623583f16c23b55c16f648fedcd039ca36f73b1f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572212"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44261959"
 ---
 # <a name="types-of-xml-nodes"></a>XML 노드 형식
 XML 문서를 노드 트리로 메모리에 읽어올 경우 노드의 형식은 노드가 만들어질 때 결정됩니다. XML DOM(문서 개체 모델)에는 다양한 노드 형식이 있습니다. 이러한 노드 형식은 W3C(World Wide Web 컨소시엄)에서 결정하며 1.1.1단원 The DOM Structure Model에 목록이 제공됩니다. 다음 표에서는 노드 형식, 해당 노드 형식에 지정된 개체 및 각각에 대한 간략한 설명의 목록을 보여 줍니다.  
@@ -46,5 +46,6 @@ XML 문서를 노드 트리로 메모리에 읽어올 경우 노드의 형식은
   
  노드 형식의 개체 계층 구조와 해당 개체 이름에 대한 자세한 내용은 [XML DOM(문서 개체 모델) 계층 구조](../../../../docs/standard/data/xml/xml-document-object-model-dom-hierarchy.md)를 참조하세요. 노드 트리에 생성되는 개체에 대한 자세한 내용은 [XML 데이터에 개체 계층 구조 매핑](../../../../docs/standard/data/xml/mapping-the-object-hierarchy-to-xml-data.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

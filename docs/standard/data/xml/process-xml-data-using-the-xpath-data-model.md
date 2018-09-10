@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 536c6fce-1453-4654-9c72-bca54d47e081
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ae129d0be4afb91aedb050ff4b90aff1ce058976
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: da8b623d3a73ca8791a0619c67b0ed3bd42447d3
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569959"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44204593"
 ---
 # <a name="process-xml-data-using-the-xpath-data-model"></a>XPath 데이터 모델을 사용하여 XML 데이터 처리
 <xref:System.Xml?displayProperty=nameWithType> 네임스페이스는 <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XPath.XPathDocument> 클래스를 사용하여 XML 문서, 조각, 노드 또는 메모리 내 노드 집합의 프로그래밍 방식 표현을 제공합니다.  
@@ -35,8 +35,9 @@ ms.locfileid: "33569959"
  [XPathNavigator를 사용하여 스키마 유효성 검사](../../../../docs/standard/data/xml/schema-validation-using-xpathnavigator.md)  
  <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체에 포함된 XML 내용의 유효성을 검사하는 방법을 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [DOM 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [DOM 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)

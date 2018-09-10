@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 6c2b9789-b61a-49f9-b33f-db01a945edf2
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bbc8d6c1055afc1a0799522f341551d04bab4ace
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 390ffa1dd9f2e76372b0e4fcbf2916918b64d748
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569306"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44260099"
 ---
 # <a name="create-new-nodes-in-the-dom"></a>DOM에서 새 노드 만들기
 <xref:System.Xml.XmlDocument>에는 모든 노드 형식에 대한 create 메서드가 있습니다. 필요에 따라 메서드에 이름을 제공하고, 텍스트 노드처럼 내용이 있는 노드에 대한 내용이나 기타 매개 변수를 지정하면 노드가 생성됩니다. 다음은 적합한 노드를 만들기 위해 이름 및 몇 개의 매개 변수를 제공해야 하는 메서드입니다.  
@@ -51,5 +51,6 @@ ms.locfileid: "33569306"
 |<xref:System.Xml.XmlNode.PrependChild%2A>|노드를 지정된 노드의 자식 노드 목록 시작 부분에 추가합니다. 추가되는 노드가 <xref:System.Xml.XmlDocumentFragment>이면 문서 조각의 전체 내용이 이 노드의 자식 목록으로 이동합니다. 자세한 내용은 <xref:System.Xml.XmlNode.PrependChild%2A> 메서드를 참조하세요.|  
 |<xref:System.Xml.XmlAttributeCollection.Append%2A>|<xref:System.Xml.XmlAttribute> 노드를 요소와 연관된 특성 컬렉션의 끝에 추가합니다. 자세한 내용은 <xref:System.Xml.XmlAttributeCollection.Append%2A> 메서드를 참조하세요.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

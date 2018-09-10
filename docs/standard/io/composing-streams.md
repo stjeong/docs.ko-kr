@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: da761658-a535-4f26-a452-b30df47f73d5
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 231bd98b556dafeb69091de4a6770c1462824659
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5e52b827f337892c33ec61b9affa1cc646a759c5
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572855"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44182466"
 ---
 # <a name="composing-streams"></a>스트림 작성
 백업 저장소는 디스크 또는 메모리와 같은 저장 매체입니다. 다양한 각 백업 저장소는 <xref:System.IO.Stream> 클래스의 구현으로 고유한 스트림을 구현합니다. 각 스트림 유형은 지정된 백업 저장소에 유입 또는 유출되는 바이트를 읽고 씁니다. 백업 저장소에 연결되는 스트림을 기본 스트림이라고 합니다. 기본 스트림에는 스트림을 백업 저장소에 연결하는 데 필요한 매개 변수가 있는 생성자가 있습니다. 예를 들어 <xref:System.IO.FileStream>에는 프로세스가 경로 매개 변수를 지정하는 생성자가 있습니다. 경로 매개 변수는 파일을 공유할 방식 등을 지정합니다.  
@@ -39,11 +39,12 @@ ms.locfileid: "33572855"
  [!code-csharp[System.IO.StreamReader#21](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS/source3.cs#21)]
  [!code-vb[System.IO.StreamReader#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamReader/VB/source3.vb#21)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO.StreamReader>  
- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>  
- <xref:System.IO.FileStream>  
- <xref:System.IO.BinaryReader>  
- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>  
- <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=nameWithType>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO.StreamReader>  
+- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
+- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>  
+- <xref:System.IO.FileStream>  
+- <xref:System.IO.BinaryReader>  
+- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>  
+- <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=nameWithType>

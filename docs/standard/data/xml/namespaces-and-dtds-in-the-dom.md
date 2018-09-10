@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 1e9b55c4-76ad-4f54-8d96-7ce4b4cf1e05
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 92d7a50d2db25f5e4d32734d550ce2d55a02e3c9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bc8a1de8ab10eff88757720a35aa9668125cfbfa
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568682"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44177421"
 ---
 # <a name="namespaces-and-dtds-in-the-dom"></a>DOM의 네임스페이스 및 DTD
 DTD(문서 종류 정의)는 네임스페이스 지원을 어렵게 합니다. 예를 들어, 다음 XML에는 이름에 콜론이 포함되는 기본 특성이 있습니다.  
@@ -33,5 +33,6 @@ DTD(문서 종류 정의)는 네임스페이스 지원을 어렵게 합니다. �
   
  Microsoft .NET Framework의 XML은 W3C 호환성을 극대화하기 위해 두 번째 옵션을 구현합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 613a8bc7-6a28-4795-bd6c-1abd9050478f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 864571262d1c9c060235840424542856187341df
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 385e370f205851630f809b285a93c2609220efeb
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33584300"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44212401"
 ---
 # <a name="barrier-net-framework"></a>장벽(.NET Framework)
 ‘장벽’은 여러 스레드(‘참가자’라고 함)가 단계별로 알고리즘에서 동시에 작동할 수 있게 해주는 사용자 정의 동기화 기본 형식입니다. 각 참가자는 코드의 장벽 지점에 도달할 때까지 실행됩니다. 장벽은 한 작업 단계의 끝을 나타냅니다. 참가자가 장벽에 도달하면 모든 참가자가 동일한 장벽에 도달할 때까지 차단됩니다. 모든 참가자가 장벽에 도달한 후 사후 단계 작업을 필요에 따라 호출할 수 있습니다. 이 사후 단계 작업을 사용하여 다른 모든 스레드는 여전히 차단하는 동시에 단일 스레드에서 작업을 수행할 수 있습니다. 작업이 실행된 후 모든 참가자가 차단 취소됩니다.  
@@ -49,6 +49,7 @@ ms.locfileid: "33584300"
   
  자세한 내용은 [연속 작업을 사용하여 작업 연결](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)  
- [방법: 동시 작업을 배리어와 동기화](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md)
+## <a name="see-also"></a>참고 항목
+
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)  
+- [방법: 동시 작업을 배리어와 동기화](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md)

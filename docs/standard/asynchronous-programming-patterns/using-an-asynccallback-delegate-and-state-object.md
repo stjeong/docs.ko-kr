@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e3e5475d-c5e9-43f0-928e-d18df8ca1f1d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 259f7de52dff04af043554382a5bad35355d9926
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 46b7839a6bd0086a8ec82e416cdf7aed05707390
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567239"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44259904"
 ---
 # <a name="using-an-asynccallback-delegate-and-state-object"></a>AsyncCallback 대리자 및 상태 개체 사용
 <xref:System.AsyncCallback> 대리자를 사용하여 별도의 스레드에서 비동기 작업의 결과를 처리할 때 상태 개체를 사용하여 콜백 간에 정보를 전달하고 최종 결과를 검색할 수 있습니다. 이 항목에서는 [AsyncCallback 대리자를 사용하여 비동기 작업 종료](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md)의 예를 확장하여 연습하는 방법을 보여줍니다.  
@@ -29,7 +29,8 @@ ms.locfileid: "33567239"
  [!code-csharp[AsyncDesignPattern#5](../../../samples/snippets/csharp/VS_Snippets_CLR/AsyncDesignPattern/CS/AsyncDelegateWithStateObject.cs#5)]
  [!code-vb[AsyncDesignPattern#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDesignPattern/VB/AsyncDelegateWithStateObject.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
- [AsyncCallback 대리자를 사용하여 비동기 작업 종료](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md)
+## <a name="see-also"></a>참고 항목
+
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
+- [AsyncCallback 대리자를 사용하여 비동기 작업 종료](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md)

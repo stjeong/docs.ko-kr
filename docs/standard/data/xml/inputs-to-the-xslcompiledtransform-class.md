@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 834049f1-ab41-449e-9f10-4a1d0701bc48
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bc909b666b90d8c8825e7dbef33e48b6126bd7c2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e09828b827b12645ebbf37d62a346c8877bfba05
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572842"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43865737"
 ---
 # <a name="inputs-to-the-xslcompiledtransform-class"></a>XslCompiledTransform 클래스에 대한 입력
 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> 메서드는 소스 문서에 대한 세 가지 입력 형식을 허용합니다. 즉, <xref:System.Xml.XPath.IXPathNavigable> 인터페이스를 구현하는 개체, 소스 문서를 읽는 <xref:System.Xml.XmlReader> 개체 또는 문자열 URI를 허용합니다.  
@@ -54,5 +54,6 @@ ms.locfileid: "33572842"
   
  자세한 내용은 [XSLT 처리 중 외부 리소스 확인](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)
+## <a name="see-also"></a>참고 항목
+
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)

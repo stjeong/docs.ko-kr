@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 3caa78c1-3448-4b7b-b83c-228ee857635e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ca36ffdd2eb5eb3acfbacbd543eebf17cfffb5d3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 744c97e8728d0a65bff8e7bb7a7dbb298afe1800
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573928"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44088091"
 ---
 # <a name="copying-existing-nodes-from-one-document-to-another"></a>한 문서에서 다른 문서로 기존 노드 복사
 **ImportNode** 메서드는 **XmlDocument** 간에 하나의 노드나 전체 노드 하위 트리를 복사하는 메커니즘입니다. 호출에서 반환되는 노드는 특성 값, 노드 이름, 노드 형식과 접두사, 로컬 이름, 네임스페이스 URI(Uniform Resource Identifier)와 같은 모든 네임스페이스 관련 특성이 포함된 소스 문서의 노드 복사본입니다. 소스 문서는 변경되지 않습니다. 노드를 가져온 후에 계속해서 노드 삽입에 사용되는 메서드 중 하나를 사용하여 트리에 해당 노드를 추가해야 합니다.  
@@ -40,5 +40,6 @@ ms.locfileid: "33573928"
 > [!NOTE]
 >  여러 개의 DocumentType 노드를 가져올 수는 있지만 한 문서는 오직 하나의 DocumentType만 포함할 수 있습니다. 따라서 문서 형식을 가져온 후에는 트리에 삽입하기 전에 문서에 문서 형식이 없는지 확인해야 합니다. 노드 제거에 대한 자세한 내용은 [XML 문서에서 노드, 내용 및 값 제거](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

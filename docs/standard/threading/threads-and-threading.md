@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 5baac3aa-e603-4fa6-9f89-0f2c1084e6b1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4380c509a08ebe59f9561a9e6fc596458768917f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ef464b0d4c22d04d42f9b6f953abefe7582b4957
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592186"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44188542"
 ---
 # <a name="threads-and-threading"></a>스레드 및 스레딩
 운영 체제에서는 프로세스를 사용하여 실행 중인 서로 다른 응용 프로그램을 분리합니다. 스레드는 운영 체제가 프로세서 시간을 할당하는 기본 단위이며 둘 이상의 스레드가 해당 프로세스 내에서 코드를 실행 중일 수 있습니다. 각 스레드는 예외 처리기, 예약 우선 순위 및 시스템에서 스레드가 예약될 때까지 스레드 컨텍스트를 저장하는 데 사용하는 구조 집합을 유지 관리합니다. 스레드 컨텍스트에는 스레드의 CPU 레지스터 및 스택 집합을 포함하여 스레드가 실행을 원활하게 재개하는 데 필요한 모든 정보가 스레드 호스트 프로세스의 주소 공간에 포함됩니다.  
@@ -89,8 +89,9 @@ ms.locfileid: "33592186"
 > [!NOTE]
 >  예를 들어 .NET Framework 버전 1.0 및 1.1에서는 공용 언어 런타임이 스레드 풀 스레드에서 일부 예외를 자동으로 포착합니다. 이는 손상된 응용 프로그램 상태일 수 있으며 결국 응용 프로그램이 중단되게 하여 디버그하기 어려울 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.ThreadPool>  
- <xref:System.ComponentModel.BackgroundWorker>  
- [다중 스레딩을 위한 데이터 동기화](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
- [관리되는 스레드 풀](../../../docs/standard/threading/the-managed-thread-pool.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.ThreadPool>  
+- <xref:System.ComponentModel.BackgroundWorker>  
+- [다중 스레딩을 위한 데이터 동기화](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
+- [관리되는 스레드 풀](../../../docs/standard/threading/the-managed-thread-pool.md)

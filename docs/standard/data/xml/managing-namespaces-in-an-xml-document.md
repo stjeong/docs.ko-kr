@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 47162a43c942416c5a2b842663288290c9f43f62
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c8d08d6fd6fb783f5cb8c7e714bffa2b655ffb41
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33574724"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44214825"
 ---
 # <a name="managing-namespaces-in-an-xml-document"></a>XML 문서의 네임스페이스 관리
 XML 네임스페이스는 XML 문서의 요소 및 특성 이름을 사용자 지정 및 미리 정의된 URI와 연결합니다. 이러한 연결을 만들려면 네임스페이스 URI의 접두사를 정의하고 해당 접두사를 사용하여 XML 데이터의 요소 및 특성 이름을 한정합니다. 네임스페이스는 요소 및 특성 이름이 충돌하는 것을 막고 동일한 이름의 요소 및 특성이 처리 및 확인되도록 하는 역할을 합니다.  
@@ -79,6 +79,7 @@ XML 네임스페이스는 XML 문서의 요소 및 특성 이름을 사용자 �
 |접두사가 현재 영역에서 정의되어 있는지 여부를 확인합니다.|<xref:System.Xml.XmlNamespaceManager.HasNamespace%2A> 메서드|  
 |접두사와 네임스페이스 URI를 찾는 데 사용하는 이름 테이블을 가져옵니다.|<xref:System.Xml.XmlNamespaceManager.NameTable%2A> 속성|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlNamespaceManager>  
- [XML 문서 및 데이터](../../../../docs/standard/data/xml/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlNamespaceManager>  
+- [XML 문서 및 데이터](../../../../docs/standard/data/xml/index.md)

@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 81fa0e41-d9c9-46f0-b22b-50da839c77f5
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 98403176c3af8e110bd8d7677fae715fee84baec
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d2b04006c46edb29fd4fe05e63224220ed1876af
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578355"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085279"
 ---
 # <a name="schema-validation-using-xpathnavigator"></a>XPathNavigator를 사용하여 스키마 유효성 검사
 <xref:System.Xml.XmlDocument> 클래스를 사용하면 두 가지 방법으로 <xref:System.Xml.XmlDocument> 개체에 포함된 XML 내용의 유효성을 검사할 수 있습니다. 첫 번째 방법은 유효성 검사 <xref:System.Xml.XmlReader> 개체를 사용하여 XML 내용의 유효성을 검사하는 것이고 두 번째 방법은 <xref:System.Xml.XmlDocument.Validate%2A> 클래스의 <xref:System.Xml.XmlDocument> 메서드를 사용하는 것입니다. <xref:System.Xml.XPath.XPathDocument> 클래스를 사용하여 XML 내용의 읽기 전용 유효성 검사를 수행할 수도 있습니다.  
@@ -359,12 +359,13 @@ class ValidatingReaderExample
   
  읽기 전용 및 편집 가능한 <xref:System.Xml.XPath.XPathNavigator> 개체에 대한 자세한 내용은 [XPathDocument 및 XmlDocument를 사용하여 XML 데이터 읽기](../../../../docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md) 항목을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathDocument 및 XmlDocument를 사용하여 XML 데이터 읽기](../../../../docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md)  
- [XPathNavigator를 사용하여 XML 데이터 선택, 평가 및 일치시키기](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XML 데이터 편집](../../../../docs/standard/data/xml/editing-xml-data-using-xpathnavigator.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathDocument 및 XmlDocument를 사용하여 XML 데이터 읽기](../../../../docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md)  
+- [XPathNavigator를 사용하여 XML 데이터 선택, 평가 및 일치시키기](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XML 데이터 편집](../../../../docs/standard/data/xml/editing-xml-data-using-xpathnavigator.md)

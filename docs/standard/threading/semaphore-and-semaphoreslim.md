@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1f9c6df23ae1a142d208672a03ffeb74709a0a05
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8e98862aba937724c799adef597260a06ed495f6
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591314"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44199767"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>세마포 및 SemaphoreSlim
 로컬 또는 명명된(시스템 전체) 세마포를 나타내는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스는 Win32 세마포 개체를 묶는 씬 래퍼입니다. Win32 세마포는 리소스 풀에 대한 액세스를 제어하는 데 사용할 수 있는 가산 세마포입니다.  
@@ -46,7 +46,8 @@ ms.locfileid: "33591314"
   
  명명된 세마포를 나타내는 <xref:System.Threading.Semaphore> 개체를 보호하려면 액세스 제어 보안을 사용합니다. 이때 <xref:System.Security.AccessControl.SemaphoreSecurity?displayProperty=nameWithType> 개체를 지정하는 생성자를 사용하는 것이 좋습니다. <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> 메서드를 사용하여 액세스 제어 보안을 적용할 수도 있지만 이렇게 하면 세마포 작성 시간과 보호가 적용되는 시간 사이에 취약한 기간이 생기게 됩니다. 액세스 제어 보안을 통해 세마포를 보호하면 악의적인 공격을 방지할 수는 있지만 의도하지 않은 이름 충돌 문제는 해결되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Semaphore>  
- <xref:System.Threading.SemaphoreSlim>  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Semaphore>  
+- <xref:System.Threading.SemaphoreSlim>  
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

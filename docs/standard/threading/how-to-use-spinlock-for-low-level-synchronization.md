@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7795b25ca8e9337a53fc67ebc6f56130237d0764
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 216480e893f6dbebbb204cbf2bfebae8dc139ec4
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582758"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44190704"
 ---
 # <a name="how-to-use-spinlock-for-low-level-synchronization"></a>방법: 낮은 수준의 동기화에 SpinLock 사용
 다음 예제는 <xref:System.Threading.SpinLock> 사용 방법을 보여줍니다.  
@@ -32,5 +32,6 @@ ms.locfileid: "33582758"
   
  <xref:System.Threading.SpinLock.Exit%2A>에 대한 호출에서 `false`(Visual Basic의 경우 `False`)를 사용합니다. 그러면 최상의 성능을 제공합니다. IA64 아키텍처에서 `true`(`True`)을 지정하여 메모리 담장을 사용합니다. 그러면 쓰기 버퍼를 플러시하여 종료할 다른 스레드에서 잠금을 사용할 수 있는지 확인합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+## <a name="see-also"></a>참고 항목
+
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

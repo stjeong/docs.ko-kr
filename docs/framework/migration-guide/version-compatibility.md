@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 15c5455bd604765ebcd78aa418d2f74f4141628d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0d3d0e2dbd57d9581d1c8b0ca42d1e9d556d8905
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398276"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44198506"
 ---
 # <a name="version-compatibility-in-the-net-framework"></a>.NET Framework의 버전 호환성
 이전 버전과의 호환성은 특정 버전의 플랫폼용으로 개발된 앱이 해당 플랫폼의 다음 버전에서도 실행되는 것을 의미합니다. .NET Framework에서는 이전 버전과의 호환성을 최대한 지원하려고 합니다. 한 버전의 .NET Framework용으로 작성된 소스 코드는 다음 버전의 .NET Framework에서 컴파일되어야 하며 한 버전의 .NET Framework에서 실행되는 이진 파일은 다음 버전의 .NET Framework에서 동일하게 작동해야 합니다.  
@@ -52,9 +52,9 @@ ms.locfileid: "33398276"
 
 - .NET Framework 3.5 앱이 있는 경우 [.NET Framework 4 마이그레이션 문제](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)도 참조하세요.
 
-- .NET Framework 2.0 앱이 있는 경우 [.NET Framework 3.5 SP1의 변경 내용](http://go.microsoft.com/fwlink/?LinkId=186989)도 참조하세요.
+- .NET Framework 2.0 앱이 있는 경우 [.NET Framework 3.5 SP1의 변경 내용](https://go.microsoft.com/fwlink/?LinkId=186989)도 참조하세요.
 
-- .NET Framework 1.1 앱이 있는 경우 [.NET Framework 2.0의 변경 내용](http://go.microsoft.com/fwlink/?LinkID=125263)도 참조하세요.  
+- .NET Framework 1.1 앱이 있는 경우 [.NET Framework 2.0의 변경 내용](https://go.microsoft.com/fwlink/?LinkID=125263)도 참조하세요.  
   
 -   .NET Framework 4.5 또는 해당 포인트 릴리스에서 실행하기 위해 기존 소스 코드를 다시 컴파일하거나 기존 소스 코드 기반의 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 또는 해당 포인트 릴리스를 대상으로 하는 새 버전의 앱 또는 구성 요소를 개발하는 경우 [클래스 라이브러리의 사용되지 않는 기능](../../../docs/framework/whats-new/whats-obsolete.md)에서 사용되지 않는 형식과 멤버를 확인하고 설명된 해결 방법을 적용합니다. 이전에 컴파일된 코드는 사용되지 않는 것으로 표시된 형식과 멤버에 대해 계속해서 실행됩니다.  
   
@@ -69,5 +69,5 @@ ms.locfileid: "33398276"
  [새로운 기능](../../../docs/framework/whats-new/index.md)  
  [클래스 라이브러리의 사용되지 않는 기능](../../../docs/framework/whats-new/whats-obsolete.md)  
  [응용 프로그램 호환성](../../../docs/framework/migration-guide/application-compatibility.md)  
- [Microsoft .NET Framework 지원 수명 주기 정책](http://go.microsoft.com/fwlink/p/?LinkId=248212)  
+ [Microsoft .NET Framework 지원 수명 주기 정책](https://go.microsoft.com/fwlink/p/?LinkId=248212)  
  [.NET Framework 4 마이그레이션 문제](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)

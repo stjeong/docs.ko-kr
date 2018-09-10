@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: cfe0d632-dd35-47e0-91ad-f742a444005e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 476dc75a569224db405eb7498ecb35eb6bda24d8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fcedd478ee1eb89c11dc9535b1d2ffe843d0f658
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583078"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44081331"
 ---
 # <a name="foreground-and-background-threads"></a>포그라운드 및 백그라운드 스레드
 관리되는 스레드는 백그라운드 스레드 또는 포그라운드 스레드입니다. 백그라운드 스레드는 하나의 예외가 있는 포그라운드 스레드와 동일합니다. 백그라운드 스레드는 관리되는 실행 환경을 계속 실행하지 않습니다. 모든 포그라운드 스레드가 관리되는 프로세스(.exe 파일이 관리되는 어셈블리인 프로세스)에서 중지되면 시스템이 모든 백그라운드 스레드를 중지하고 종료됩니다.  
@@ -32,7 +32,8 @@ ms.locfileid: "33583078"
   
  스레드를 사용하여 소켓 연결과 같은 활동을 모니터링하는 경우 스레드가 프로세스 종료를 차단하지 않도록 <xref:System.Threading.Thread.IsBackground%2A> 속성을 `true`로 설정합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Thread.IsBackground%2A?displayProperty=nameWithType>  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.ThreadAbortException>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Thread.IsBackground%2A?displayProperty=nameWithType>  
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.ThreadAbortException>

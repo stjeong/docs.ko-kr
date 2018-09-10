@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: ad034f0e-ff8b-4a71-9a4c-528c754263c4
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f04151ef65dd2df4b3d3003fbdfe8d552895cf5d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f33320603b175f04d0372fd5f2a2ee16d286d7b3
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569059"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43866821"
 ---
 # <a name="node-sets-in-transformations"></a>변형 과정에서 노드 집합의 역할
 노드 집합은 XPath(XML Path Language) 식에서 반환된 네 가지 기본 데이터 형식 중 하나입니다. 문서 순서로 만들어진 중복되지 않은 노드의 정렬되지 않은 컬렉션에 해당하는 노드 집합은 스타일시트의 변수에 할당될 수 있습니다.  
@@ -74,7 +74,8 @@ History of Trenton Vol 3
 ******  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XPath.XPathNodeIterator>  
- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XPath.XPathNodeIterator>  
+- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
+- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

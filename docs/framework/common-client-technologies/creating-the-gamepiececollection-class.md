@@ -3,11 +3,11 @@ title: GamePieceCollection 클래스 만들기
 ms.date: 03/30/2017
 ms.assetid: e4b037ee-1201-4a55-b198-0d6532ed6f35
 ms.openlocfilehash: 6323122735273f77bfe9d61bf2df84cabe3e5d6c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43395843"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041228"
 ---
 # <a name="creating-the-gamepiececollection-class"></a>GamePieceCollection 클래스 만들기
 **GamePieceCollection** 클래스는 제네릭 목록 클래스에서 파생되고 여러 **GamePiece** 개체를 더 쉽게 관리하도록 메서드를 도입합니다.  

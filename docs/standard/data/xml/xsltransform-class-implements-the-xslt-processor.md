@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5fd0a72ab0274fe6ccc2016d90739a5fda876826
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 81d0ce4f697935908b8ad7084560bd1adacbdf2d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579199"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44222729"
 ---
 # <a name="xsltransform-class-implements-the-xslt-processor"></a>XslTransform 클래스의 XSLT 프로세서 구현
 > [!NOTE]
@@ -228,11 +228,12 @@ Root node is book.
   
  <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A?displayProperty=nameWithType> 속성은 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 버전 1.1에서 사용되지 않습니다. 대신 <xref:System.Xml.Xsl.XslTransform.Transform%2A> 개체를 사용하는 새로운 <xref:System.Xml.XmlResolver> 오버로드를 사용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Xsl.XslTransform>  
- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
- [변형 과정에서 XPathNavigator의 역할](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)  
- [변형 과정에서 XPathNodeIterator의 역할](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)  
- [XslTransform에 대한 XPathDocument 입력](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)  
- [XslTransform에 대한 XmlDataDocument 입력](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)  
- [XslTransform에 대한 XmlDocument 입력](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Xsl.XslTransform>  
+- [XslTransform 클래스를 사용하여 XSLT 변형](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
+- [변형 과정에서 XPathNavigator의 역할](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)  
+- [변형 과정에서 XPathNodeIterator의 역할](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)  
+- [XslTransform에 대한 XPathDocument 입력](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)  
+- [XslTransform에 대한 XmlDataDocument 입력](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)  
+- [XslTransform에 대한 XmlDocument 입력](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)

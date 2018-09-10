@@ -10,11 +10,12 @@ helpviewer_keywords:
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a17bc509c8c82bfb30811ec3511207ca2d823e5b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bea5dfd7c53b5b5f53ddab5d4d07ec6a603b14e8
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44042233"
 ---
 # <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>스레드 로컬 저장소: 스레드 상대 정적 필드 및 데이터 슬롯
 관리되는 TLS(스레드 로컬 저장소)를 사용하여 스레드 및 응용 프로그램 도메인에 고유한 데이터를 저장할 수 있습니다. .NET Framework는 관리되는 TLS를 사용하는 두 가지 방법인 스레드 관련 정적 필드 및 데이터 슬롯을 제공합니다.  
@@ -56,9 +57,10 @@ ms.lasthandoff: 05/04/2018
   
  명명된 슬롯은 명명되지 않은 슬롯에 대한 참조를 유지하는 대신 <xref:System.Threading.Thread.GetNamedDataSlot%2A> 메서드에 이름을 전달하여 필요한 경우 슬롯을 검색할 수 있기 때문에 편리합니다. 그러나 또 다른 구성 요소가 스레드 관련 저장소에 동일한 이름을 사용하고 스레드가 해당 구성 요소와 다른 구성 요소의 코드를 둘 다 실행하는 경우 두 구성 요소가 서로의 데이터를 손상시킬 수 있습니다. (이 시나리오는 두 구성 요소가 모두 동일한 응용 프로그램 도메인에서 실행되고 있고 동일한 데이터를 공유하도록 설계되지 않았다고 가정합니다.)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ContextStaticAttribute>  
- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
- <xref:System.ThreadStaticAttribute>  
- <xref:System.Runtime.Remoting.Messaging.CallContext>  
- [스레딩](../../../docs/standard/threading/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.ContextStaticAttribute>  
+- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
+- <xref:System.ThreadStaticAttribute>  
+- <xref:System.Runtime.Remoting.Messaging.CallContext>  
+- [스레딩](../../../docs/standard/threading/index.md)

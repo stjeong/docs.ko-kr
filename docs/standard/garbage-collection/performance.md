@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: c203467b-e95c-4ccf-b30b-953eb3463134
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9b2102c4e33f551cf3dc71cf83539cdc494e5379
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 69a11e99966467de005ab92d3dcdebaa70bbdbe4
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579797"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44265171"
 ---
 # <a name="garbage-collection-and-performance"></a>가비지 컬렉션 및 성능
 <a name="top"></a> 이 항목에서는 가비지 컬렉션 및 메모리 사용과 관련된 문제를 설명합니다. 관리되는 힙과 관련된 문제를 해결하고 응용 프로그램에 미치는 가비지 컬렉션의 영향을 최소화하는 방법을 설명합니다. 각 문제에는 문제를 조사하는 데 사용할 수 있는 절차 링크가 있습니다.  
@@ -778,5 +778,6 @@ ms.locfileid: "33579797"
   
      `% Time in GC` 값이 프로세스 시간과 동시에 급증하는 경우 가비지 수집으로 인해 CPU 사용량이 증가한 것입니다. 그러지 않으면 응용 프로그램을 프로파일링하여 높은 사용량이 발생하는 위치를 찾습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [가비지 수집](../../../docs/standard/garbage-collection/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [가비지 수집](../../../docs/standard/garbage-collection/index.md)

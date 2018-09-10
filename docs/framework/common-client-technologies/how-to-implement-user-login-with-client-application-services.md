@@ -9,15 +9,15 @@ helpviewer_keywords:
 - validation [.NET Framework], client application services
 - client application services, authenticate users
 ms.assetid: 5431a671-eb02-4e18-a651-24764fccec9a
-ms.openlocfilehash: 1b1c5bebb5bd94f0a56dc6da303ef2503ab6dd4f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a878b12620faf9a6e9fecbd2e76644aea3d80611
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32743812"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43504798"
 ---
 # <a name="how-to-implement-user-login-with-client-application-services"></a>방법: 클라이언트 응용 프로그램 서비스에서 사용자 로그인 구현
-클라이언트 응용 프로그램 서비스를 사용하면 기존의 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스를 통해 사용자의 유효성을 검사할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 양식 인증 사용](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)을 참조하세요.  
+클라이언트 응용 프로그램 서비스를 사용하면 기존의 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스를 통해 사용자의 유효성을 검사할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 프로필 서비스를 설정하는 방법에 대한 자세한 내용은 [ASP.NET AJAX와 함께 양식 인증 사용](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)을 참조하세요.  
   
  다음 절차에서는 응용 프로그램이 클라이언트 인증 서비스 공급자 중 하나를 사용하도록 구성된 경우 인증 서비스를 통해 사용자의 유효성을 검사하는 방법을 설명합니다. 자세한 내용은 [방법: 클라이언트 응용 프로그램 서비스 구성](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)을 참조하세요.  
   
@@ -59,4 +59,4 @@ ms.locfileid: "32743812"
  [클라이언트 응용 프로그램 서비스 개요](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
  [방법: 클라이언트 응용 프로그램 서비스 구성](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
  [연습: 클라이언트 응용 프로그램 서비스 사용](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)  
- [Microsoft Ajax에서 양식 인증 사용](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)
+ [Microsoft Ajax에서 양식 인증 사용](https://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e)

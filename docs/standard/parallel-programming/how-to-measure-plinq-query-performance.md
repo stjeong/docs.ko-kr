@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 491ba43b-2c10-473d-9aab-e2cb96446711
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c662c442f7f2cea23e1afe131704585e7a9bca7a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dd9e3a0ead62450e87225212f4fc6ecec6ec9489
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33584607"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44211634"
 ---
 # <a name="how-to-measure-plinq-query-performance"></a>방법: PLINQ 쿼리 성능 측정
 이 예제는 <xref:System.Diagnostics.Stopwatch> 클래스를 사용하여 PLINQ 쿼리를 실행하는 데 걸리는 시간을 측정하는 방법을 보여줍니다.  
@@ -28,5 +28,6 @@ ms.locfileid: "33584607"
   
  쿼리 구현을 실험하는 경우 총 실행 시간은 유용한 메트릭이지만 항상 전체적인 내용을 알려주지 않습니다. 쿼리 스레드 간의 상호 작용 또는 다른 실행 중인 프로세스와 쿼리 스레드의 상호 작용을 자세히 보려면 동시성 시각화 도우미를 사용합니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

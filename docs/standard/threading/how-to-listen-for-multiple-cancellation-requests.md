@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: afa22ed1fe1986712493c2aaa844d7f2c6ffd5bc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 16ba8000544d0b7d35a818d41a75f38e6fd0293d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583132"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44178570"
 ---
 # <a name="how-to-listen-for-multiple-cancellation-requests"></a>방법: 여러 개의 취소 요청 수신 대기
 이 예제에서는 두 개의 취소 토큰 중 하나가 작업을 요청할 경우 작업을 취소할 수 있도록 두 개의 취소 토큰을 동시에 수신 대기하는 방법을 보여줍니다.  
@@ -34,5 +34,6 @@ ms.locfileid: "33583132"
   
  이 예제에서는 <xref:System.AggregateException>이 throw되면 안 되지만 여기에서는 예외를 catch합니다. 실제 시나리오에서는 작업 대리자에서 throw되는 <xref:System.OperationCanceledException> 이외의 다른 예외가 <xref:System.OperationCanceledException>으로 래핑되기 때문입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## <a name="see-also"></a>참고 항목
+
+- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)

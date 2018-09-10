@@ -9,12 +9,12 @@ dev_langs:
 ms.assetid: fa09c8e5-c2b9-49d2-bb0d-40330cd13e4d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 38519ee90578d0bc13689216fb5674653ead4c19
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fc8df722acd5c9547833cb4fe3051e1590c6c627
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577217"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087675"
 ---
 # <a name="editing-xml-schemas"></a>XML 스키마 편집
 XML 스키마 편집 기능은 SOM(스키마 개체 모델)의 중요한 기능 중 하나입니다. SOM의 모든 pre-schema-compilation 속성을 사용하여 XML 스키마에서 기존 값을 변경할 수 있습니다. 그런 다음 XML 스키마를 다시 컴파일하여 변경 내용을 적용할 수 있습니다.  
@@ -135,11 +135,12 @@ XML 스키마 편집 기능은 SOM(스키마 개체 모델)의 중요한 기능 
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
+- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
+- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
+- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
+- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
+- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

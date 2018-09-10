@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: d5c87cbe-4d69-429f-aad5-3103c2ca2770
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e3f41ba7281d67cc2ce848597926f5efebf4d489
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4a6597a3a57cd68c4dd17c4fbae882590f373709
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568695"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44222690"
 ---
 # <a name="changing-namespace-prefix-properties"></a>네임스페이스 접두사 속성 변경
 **XmlNode** 클래스를 사용하면 지정된 노드와 연결된 네임스페이스 접두사를 변경할 수 있습니다. 예를 들어, 다음 코드에서는 변경될 요소의 접두사를 보여 줍니다.  
@@ -66,5 +66,6 @@ Console.WriteLine(doc.InnerXml);
   
  **doc.InnerXml**을 호출한 결과로 트리가 문자열에 유지된 경우에는 `test` 요소의 네임스페이스를 유지하기 위해 `xmlns:a='123'` 특성이 추가되었습니다. 원래 `'123'`이었으며 `'123'`을 유지했습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

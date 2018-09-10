@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 6e2aa49b-fc84-4bcf-962b-17db98b7edcb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6543c2e5ea953887e699ee6f9ca3b70e08e5ae85
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b1c8bfea5fc55bafbaa30d3b74edf60b674ef75c
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583918"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44268814"
 ---
 # <a name="how-to-listen-for-cancellation-requests-that-have-wait-handles"></a>방법: 대기 핸들이 있는 취소 요청 수신 대기
 이벤트의 신호를 받을 때까지 대기하는 동안 메서드가 차단된 경우 취소 토큰의 값을 확인하고 적시에 응답할 수 없습니다. 첫 번째 예제는 기본적으로 통합 취소 프레임워크를 지원하지 않는 <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>와 같은 이벤트에 대해 작업할 때 이 문제점을 해결하는 방법을 보여줍니다. 두 번째 예제는 통합 취소를 지원하는 <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>을 사용하는 보다 간소화된 접근 방식을 보여줍니다.  
@@ -35,5 +35,6 @@ ms.locfileid: "33583918"
  [!code-csharp[Cancellation#10](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex10.cs#10)]
  [!code-vb[Cancellation#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex10.vb#10)]  
   
-## <a name="see-also"></a>참고 항목  
- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## <a name="see-also"></a>참고 항목
+
+- [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)

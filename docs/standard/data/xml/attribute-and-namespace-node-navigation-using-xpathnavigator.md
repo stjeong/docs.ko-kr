@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 34ce6ec5a4cc5ddd4542474dc9ce55ff64a274ec
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7a0b632965306b7511a2abcf94d0c4c88ab850d4
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577022"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44199364"
 ---
 # <a name="attribute-and-namespace-node-navigation-using-xpathnavigator"></a>XPathNavigator를 사용하여 특성 및 네임스페이스 노드 탐색
 <xref:System.Xml.XPath.XPathNavigator> 클래스는 두 개의 탐색 메서드 집합을 제공합니다. [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) 항목에서 찾을 수 있는 첫 번째 집합은 <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체의 ‘노드 집합’을 탐색하는 데 사용합니다. 이 항목에서 설명하는 두 번째 집합은 <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체의 ‘특성 및 네임스페이스 노드’를 탐색하는 데 사용합니다.  
@@ -96,11 +96,12 @@ ms.locfileid: "33577022"
 > [!NOTE]
 >  <xref:System.Xml.XPath.XPathNavigator> 클래스는 네임스페이스 노드를 문서 순서와 역순으로 반환합니다. 따라서 <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A>는 기본적으로 현재 범위의 마지막 네임스페이스 노드로 이동합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XML 데이터 추출](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 강력한 형식의 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathNavigator를 사용하여 노드 집합 탐색](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XML 데이터 추출](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 강력한 형식의 XML 데이터 액세스](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)

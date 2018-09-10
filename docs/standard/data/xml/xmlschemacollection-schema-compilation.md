@@ -8,11 +8,12 @@ dev_langs:
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d64443f213603b1f5db9c256acc88e998e3f009a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d7b6ea782020dde83aa7d59be8ec3058a27075ad
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44267953"
 ---
 # <a name="xmlschemacollection-schema-compilation"></a>XmlSchemaCollection 스키마 컴파일
 **XmlSchemaCollection**은 XDR(XML 데이터 축소) 및 XSD(XML 스키마 정의 언어) 스키마를 저장하고 유효성 검사를 수행할 수 있는 캐시 또는 라이브러리입니다. **XmlSchemaCollection**에서는 파일이나 URL에서 스키마에 액세스하는 대신 메모리에 있는 스키마를 캐시하여 성능을 향상시킵니다.  
@@ -56,6 +57,7 @@ xsc.Add("urn:bookstore-schema", "Books.xsd");
 vr.Schemas.Add(xsc);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XmlSchemaCollection을 사용하여 XDR 유효성 검사](../../../../docs/standard/data/xml/xdr-validation-with-xmlschemacollection.md)  
- [XmlSchemaCollection을 사용하여 XSD(XML 스키마) 유효성 검사](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemacollection.md)
+## <a name="see-also"></a>참고 항목
+
+- [XmlSchemaCollection을 사용하여 XDR 유효성 검사](../../../../docs/standard/data/xml/xdr-validation-with-xmlschemacollection.md)  
+- [XmlSchemaCollection을 사용하여 XSD(XML 스키마) 유효성 검사](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemacollection.md)

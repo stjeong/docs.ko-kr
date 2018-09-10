@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: e7b31170-a156-433f-9f26-b1fc7cd1776f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6d708068dc0d55a1c7ec725977a4ca6d16b0f43c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8024fe6673b39a611c55eb55742bcfd981300e7e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591757"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44225596"
 ---
 # <a name="tpl-and-traditional-net-framework-asynchronous-programming"></a>TPL 및 일반적인 .NET Framework 비동기 프로그래밍
 .NET Framework에서는 I/O에 바인딩된 비동기 작업과 계산에 바인딩된 비동기 작업을 수행하도록 다음 표준 패턴 두 개를 제공합니다.  
@@ -119,5 +119,6 @@ ms.locfileid: "33591757"
 ## <a name="using-the-streamextensions-sample-code"></a>StreamExtensions 샘플 코드 사용  
  [Samples for Parallel Programming with the .NET Framework 4](https://code.msdn.microsoft.com/ParExtSamples)(.NET Framework 4를 사용한 병렬 프로그래밍 샘플)에서 제공되는 Streamextensions.cs 파일에는 비동기 파일 및 네트워크 I/O에 Task 개체를 사용하는 몇 가지 참조 구현이 포함되어 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

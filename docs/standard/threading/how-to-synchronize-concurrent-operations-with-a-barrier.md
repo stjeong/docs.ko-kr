@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: e1a253ff-e0fb-4df8-95ff-d01a90d4cb19
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4a2dc5e650a479e782a6739a82e247c25e196fda
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 16dc60fa9cd8782efbe1b6028413138b5991839e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583155"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44194496"
 ---
 # <a name="how-to-synchronize-concurrent-operations-with-a-barrier"></a>방법: 동시 작업을 배리어와 동기화
 다음 예제는 <xref:System.Threading.Barrier>와 동시 작업을 동기화하는 방법을 보여줍니다.  
@@ -28,5 +28,6 @@ ms.locfileid: "33583155"
   
  <xref:System.Threading.Barrier>는 모든 작업이 장벽에 도달할 때까지 병렬 작업의 개별 작업이 계속되는 것을 방지하는 개체입니다. 이 개체는 병렬 작업이 단계에서 발생하는 경우에 유용하며, 각 단계에서는 작업 간 동기화가 필요합니다. 이 예제에서, 작업의 단계는 두 개입니다. 첫 번째 단계에서 각 작업은 데이터를 사용하여 버퍼의 섹션을 채웁니다. 각 작업이 해당 섹션 채우기를 완료하면 작업은 장벽에 계속할 준비가 되었음을 알리는 신호를 보낸 후 대기합니다. 모든 작업이 장벽에 신호를 보내면 장벽이 잠금 해제되고 두 번째 단계가 시작됩니다. 두 번째 단계에서는 각 작업이 이 지점까지 생성된 모든 데이터에 액세스해야 하므로 장벽이 필요합니다. 장벽이 없으면 완료할 첫 번째 작업이 다른 작업에 의해 아직 채워지지 않은 버퍼에서 읽으려고 할 수 있습니다. 이런 방식으로 개수와 관계없이 모든 단계를 동기화할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [병렬 프로그래밍을 위한 데이터 구조](../../../docs/standard/parallel-programming/data-structures-for-parallel-programming.md)
+## <a name="see-also"></a>참고 항목
+
+- [병렬 프로그래밍을 위한 데이터 구조](../../../docs/standard/parallel-programming/data-structures-for-parallel-programming.md)

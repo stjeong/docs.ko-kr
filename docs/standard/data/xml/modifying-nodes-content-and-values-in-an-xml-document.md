@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 761773e0-db72-4986-b9f5-a522213d8397
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 716270450a5f0ede545ffcbd906b0a42f547c20f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ee45d983483d907b2a1e8b9e5ee12841e5c89c91
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571438"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44208584"
 ---
 # <a name="modifying-nodes-content-and-values-in-an-xml-document"></a>XML 문서에서 노드, 내용 및 값 수정
 여러 가지 방법으로 문서에서 노드와 내용을 수정할 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.  
@@ -46,5 +46,6 @@ ms.locfileid: "33571438"
   
  편집할 수 있는 노드에서 읽기 전용 자식을 추가하거나 제거할 수 있습니다. 그러나 읽기 전용 노드 자체를 수정하려고 시도하면 <xref:System.InvalidOperationException>이 throw됩니다. 이에 관한 예제는 <xref:System.Xml.XmlEntityReference> 노드의 자식을 수정하는 것입니다. 자식은 읽기 전용이며 수정할 수 없습니다. 자식을 수정하려고 시도하면 <xref:System.InvalidOperationException>이 throw됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

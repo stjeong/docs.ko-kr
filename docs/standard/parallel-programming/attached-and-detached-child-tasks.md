@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c95788bf-90a6-4e96-b7bc-58e36a228cc5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 53f31402e78a15289bb996c63e1e8e3cd98e6aac
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 83451af25006e9da396a3e6618cbecee036e9fe2
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33590774"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44188269"
 ---
 # <a name="attached-and-detached-child-tasks"></a>연결된 자식 작업 및 분리된 자식 작업
 ‘자식 작업’(또는 ‘중첩 작업’)은 ‘부모 작업’이라는 다른 작업의 사용자 대리자에 만들어진 <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 인스턴스입니다. 자식 작업을 분리하거나 연결할 수 있습니다. ‘분리된 자식 작업’은 부모와 독립적으로 실행되는 작업입니다. ‘연결된 자식 작업’은 부모가 명시적으로나 기본적으로 연결을 금지하지 않는 <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> 옵션으로 만들어진 중첩 작업입니다. 연결된 자식 작업 및 분리된 자식 작업은 작업에서 개수와 관계없이 만들 수 있고 시스템 자원에 의해서만 제한됩니다.  
@@ -78,6 +78,7 @@ ms.locfileid: "33590774"
   
  자식 작업이 시기적절하게 완료되지 않으면 자식 작업이 부모에 연결되지 않도록 방지할 수도 있습니다. 부모 작업은 자식 작업이 모두 완료될 때까지 완료되지 않기 때문에 오래 실행되는 자식 작업은 전체적인 앱의 성능을 저하할 수 있습니다. 작업이 부모 작업에 연결되지 않도록 방지하여 앱 성능을 향상하는 방법을 보여주는 예제는 [방법: 자식 작업이 부모 작업에 연결되지 않도록 방지](../../../docs/standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
+## <a name="see-also"></a>참고 항목
+
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)

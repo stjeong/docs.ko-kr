@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a121f58df93f88af851bbcc85d75e71fc067af78
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b11ac80b671c345768da23d2b51d2333c228aaeb
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571464"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44263919"
 ---
 # <a name="xpath-queries-and-namespaces"></a>XPath 쿼리 및 네임스페이스
 XPath 쿼리는 XML 문서에서 네임스페이스를 인식하며 네임스페이스 접두사를 사용하여 요소 및 특성 이름을 정규화할 수 있습니다. 네임스페이스 접두사로 요소 및 특성 이름을 정규화하면 XPath 쿼리에 의해 반환되는 노드가 특정 네임스페이스에 속한 노드로만 제한됩니다.  
@@ -78,13 +78,14 @@ query.SetContext(manager);
 XPathNodeIterator nodes = navigator.Select(query);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathNavigator를 사용하여 XML 데이터 선택](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 XPath 식 계산](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 노드 일치시키기](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
- [XPath 쿼리에서 인식하는 노드 형식](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
- [컴파일된 XPath 식](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathNavigator를 사용하여 XML 데이터 선택](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 XPath 식 계산](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 노드 일치시키기](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
+- [XPath 쿼리에서 인식하는 노드 형식](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
+- [컴파일된 XPath 식](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)

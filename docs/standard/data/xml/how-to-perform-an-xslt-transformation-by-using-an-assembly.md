@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d8f29b1274e6e8436aed0dfb698ede4864a15417
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ef0d47ae18b8bdd3f1d49a20937b65e9872ab551
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569505"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44201753"
 ---
 # <a name="how-to-perform-an-xslt-transformation-by-using-an-assembly"></a>방법: 어셈블리를 사용하여 XSLT 변형 수행
 XSLT 컴파일러(xsltc.exe)에서는 XSLT 스타일시트를 컴파일하여 어셈블리를 생성합니다. 그런 다음 어셈블리를 <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> 메서드로 직접 전달할 수 있습니다.  
@@ -181,8 +181,9 @@ xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"))
   
  으로 대체합니다. Assembly.Load 메서드에 대한 자세한 내용은 <xref:System.Reflection.Assembly.Load%2A>를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [XSLT 컴파일러(xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)  
- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
- [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>  
+- [XSLT 컴파일러(xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)  
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

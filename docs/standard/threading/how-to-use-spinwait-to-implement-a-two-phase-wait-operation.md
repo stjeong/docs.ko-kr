@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: b2ac4e4a-051a-4f65-b4b9-f8e103aff195
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: af6e4e8d0d754b97478788422b4dd84eeddc6491
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dcb2fbf5e0a310156fdc6fac5fe736692e8ec133
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583281"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44209214"
 ---
 # <a name="how-to-use-spinwait-to-implement-a-two-phase-wait-operation"></a>방법: SpinWait을 사용하여 2단계 대기 작업 구현
 다음 예제는 <xref:System.Threading.SpinWait?displayProperty=nameWithType> 개체를 사용하여 2단계 대기 작업을 구현하는 방법을 보여줍니다. 첫 번째 단계에서 동기화 개체(`Latch`)는 잠금이 사용 가능해졌는지 여부를 확인하는 동안 몇 주기 동안 회전합니다. 두 번째 단계에서는 잠금이 사용 가능하게 되면 `Wait` 메서드에서 <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>을 사용하여 대기를 수행하지 않고 반환합니다. 잠금이 사용 가능하지 않으면 `Wait`에서 대기를 수행합니다.  
@@ -30,6 +30,7 @@ ms.locfileid: "33583281"
   
  로깅 출력은 <xref:System.Threading.ManualResetEvent>를 사용하지 않고 잠금을 획득하여 래치가 성능을 향상시킬 수 있었던 빈도를 표시합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [스핀 대기](../../../docs/standard/threading/spinwait.md)  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+## <a name="see-also"></a>참고 항목
+
+- [스핀 대기](../../../docs/standard/threading/spinwait.md)  
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

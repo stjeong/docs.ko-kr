@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: fc2585dc-965e-4632-ace7-73dd02684ed3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a348a83ef0b05ce44b3b3adf8e0031ce350cd37b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dd5963fee985633d843cc60f521b66000b84e55e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33583021"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44217193"
 ---
 # <a name="how-to-perform-action-when-a-dataflow-block-receives-data"></a>방법: 데이터 흐름 블록에서 데이터를 받을 경우 작업 수행
 *실행 데이터 흐름 블록* 형식은 데이터를 받을 때 사용자가 제공한 대리자를 호출합니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602?displayProperty=nameWithType> 클래스는 실행 데이터 흐름 블록 형식입니다. 실행 데이터 흐름 블록에 작업 함수를 제공할 때 `delegate`(Visual Basic에서는 `Sub`) 키워드, <xref:System.Action%601>, <xref:System.Func%602> 또는 람다 식을 사용할 수 있습니다. 이 문서에서는 <xref:System.Func%602> 및 람다 식을 사용하여 실행 블록에서 작업을 수행하는 방법을 설명합니다.  
@@ -55,5 +55,6 @@ ms.locfileid: "33583021"
  [!code-csharp[TPLDataflow_ExecutionBlocks#3](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_executionblocks/cs/dataflowexecutionblocks.cs#3)]
  [!code-vb[TPLDataflow_ExecutionBlocks#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_executionblocks/vb/dataflowexecutionblocks.vb#3)]  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

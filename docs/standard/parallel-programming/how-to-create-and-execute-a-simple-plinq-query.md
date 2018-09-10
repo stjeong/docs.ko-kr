@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 983b4213-bddd-4a44-9262-cbe59186df4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2e5bd27dda4bacc50672cca2db38a6eda746d79b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 544ea0f89dfa518c2ef18bffe2609d72e6fdee70
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580379"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085042"
 ---
 # <a name="how-to-create-and-execute-a-simple-plinq-query"></a>방법: 간단한 PLINQ 쿼리 만들기 및 실행
 다음 예제에서는 소스 시퀀스에 대해 <xref:System.Linq.ParallelEnumerable.AsParallel%2A> 확장 메서드를 사용하여 단순한 병렬 LINQ 쿼리를 만들고 <xref:System.Linq.ParallelEnumerable.ForAll%2A> 메서드를 사용하여 쿼리를 실행하는 방법을 보여 줍니다.  
@@ -29,5 +29,6 @@ ms.locfileid: "33580379"
   
  이 예제에서는 결과 시퀀스의 순서가 중요하지 않은 경우(일반적으로 순서가 지정되지 않은 쿼리가 순서가 지정된 쿼리보다 빠름)에 병렬 LINQ 쿼리를 만들고 실행하는 기본 패턴을 보여 줍니다. 쿼리에서는 소스를 여러 스레드에서 비동기적으로 실행되는 작업으로 분할합니다. 각 작업이 완료되는 순서는 파티션의 요소를 처리하는 데 관련된 작업의 양뿐만 아니라 운영 체제에서 각 스레드를 예약하는 방식과 같은 외부 요소에 따라 달라집니다. 이 예제는 사용법을 보여 주기 위한 것이며, 동일한 순차 LINQ to Objects 쿼리보다 빠르게 실행되지 않을 수도 있습니다. 속도 향상에 대한 자세한 내용은 [PLINQ의 속도 향상 이해](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md)를 참조하세요. 쿼리에서 요소 순서를 유지하는 방법에 대한 자세한 내용은 [방법: PLINQ 쿼리의 순서 제어](../../../docs/standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

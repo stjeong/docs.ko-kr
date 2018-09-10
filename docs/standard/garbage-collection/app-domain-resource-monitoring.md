@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 318bedf8-7f35-4f00-b34a-2b7b8e3fa315
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 45b0f8293b41d42114b189c3ebe917a4f64c4f27
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 50d601d711579bce2e2651a1efc65d824a50d47a
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578332"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44208759"
 ---
 # <a name="application-domain-resource-monitoring"></a>응용 프로그램 도메인 리소스 모니터링
 ARM(응용 프로그램 도메인 리소스 모니터링)을 통해 호스트가 응용 프로그램 도메인별로 CPU 및 메모리 사용량을 모니터링할 수 있습니다. 이는 장기 실행 프로세스에서 많은 응용 프로그램 도메인을 사용하는 ASP.NET과 같은 호스트에 유용합니다. 호스트가 전체 프로세스의 성능에 부정적인 영향을 주는 응용 프로그램의 응용 프로그램 도메인을 언로드할 수 있지만, 이는 문제가 있는 응용 프로그램을 식별할 수 있는 경우에만 가능합니다. ARM은 이러한 결정을 지원하는 데 사용할 수 있는 정보를 제공합니다.  
@@ -83,8 +83,9 @@ ARM(응용 프로그램 도메인 리소스 모니터링)을 통해 호스트가
 #### <a name="hosting-api"></a>호스팅 API  
  관리되지 않는 호스팅 API를 사용하는 경우 호스트는 [IHostGCManager](../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-interface.md) 인터페이스의 구현을 CLR에 전달해야 합니다. CLR은 컬렉션이 발생하는 동안 일시 중단된 스레드의 실행을 다시 시작할 때 [IHostGCManager::SuspensionEnding](../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) 메서드를 호출합니다. CLR이 완료된 컬렉션의 생성을 메서드의 매개 변수로 전달하므로 호스트는 컬렉션이 전체인지 또는 부분인지 확인할 수 있습니다. [IHostGCManager::SuspensionEnding](../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) 메서드를 구현하면 유지된 메모리를 쿼리하여 수가 업데이트되는 즉시 수를 검색하도록 할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
- [ICLRAppDomainResourceMonitor 인터페이스](../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
- [\<appDomainResourceMonitoring>](../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)  
- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
+- [ICLRAppDomainResourceMonitor 인터페이스](../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
+- [\<appDomainResourceMonitoring>](../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)  
+- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)

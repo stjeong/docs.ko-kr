@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b224e758eb5b0e07c76f055f22bfe827789f07ab
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: eefa1b52907525059b3403e7eb20542d3b5a5c73
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33574841"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44209960"
 ---
 # <a name="when-to-use-a-thread-safe-collection"></a>스레드로부터 안전한 컬렉션 사용 시기
 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]에서는 다중 스레드 추가 및 제거 작업을 지원하도록 특별히 디자인된 5가지 새 컬렉션 형식을 도입했습니다. 이러한 새 형식은 스레드로부터의 안전성을 달성하기 위해 다양한 종류의 효율적인 잠금 및 잠금 해제 동기화 메커니즘을 사용합니다. 동기화로 인해 작업에 오버헤드가 더해집니다. 사용되는 동기화의 종류, 수행되는 작업의 종류 및 컬렉션에 동시에 액세스하려는 스레드의 수와 같은 기타 요인에 따라 오버헤드의 양이 달라집니다.  
@@ -62,7 +62,8 @@ ms.locfileid: "33574841"
 ## <a name="blockingcollection"></a>BlockingCollection  
  경계 및 차단 구문이 필요한 경우에는 어떤 사용자 지정 구현보다 <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType>을 사용하는 것이 더 속도가 빠를 가능성이 높습니다. 또한 여러 가지 취소, 열거 및 예외 처리를 지원합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [스레드로부터 안전한 컬렉션](../../../../docs/standard/collections/thread-safe/index.md)  
- [병렬 프로그래밍](../../../../docs/standard/parallel-programming/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- [스레드로부터 안전한 컬렉션](../../../../docs/standard/collections/thread-safe/index.md)  
+- [병렬 프로그래밍](../../../../docs/standard/parallel-programming/index.md)

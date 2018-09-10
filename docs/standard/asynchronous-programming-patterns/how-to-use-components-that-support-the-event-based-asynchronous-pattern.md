@@ -18,12 +18,12 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-ms.openlocfilehash: e6aecd5957ae62e3c147af22c2a1b135a4c32310
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 68b376d00762238b810f6463463aa78c492a1a1f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934840"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44268671"
 ---
 # <a name="how-to-use-components-that-support-the-event-based-asynchronous-pattern"></a>방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 사용
 많은 구성 요소가 비동기적으로 작업을 수행하는 옵션을 제공합니다. 예를 들어 <xref:System.Media.SoundPlayer> 및 <xref:System.Windows.Forms.PictureBox> 구성 요소를 사용하면 기본 스레드가 중단 없이 계속 실행되는 동안 사운드 및 이미지를 “배경”으로 로드할 수 있습니다.  
@@ -60,6 +60,7 @@ ms.locfileid: "42934840"
   
      이미지 다운로드가 진행되면 폼을 자유롭게 이동하고, 최소화하고, 최대화할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
+## <a name="see-also"></a>참고 항목
+
+- [방법: 백그라운드에서 작업 실행](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
+- [이벤트 기반 비동기 패턴 개요](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  

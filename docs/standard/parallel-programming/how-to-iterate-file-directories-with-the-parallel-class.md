@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 555e9f48-f53d-4774-9bcf-3e965c732ec5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 43a7ac57e90b60679f29e9a5635be6ee8b8f8d93
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 34f9208ac5007e26967c136f0599cabfd66ba2ea
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580720"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44189370"
 ---
 # <a name="how-to-iterate-file-directories-with-the-parallel-class"></a>방법: 병렬 클래스를 사용하여 파일 디렉터리 열거
 대부분의 경우 파일 반복은 쉽게 병렬 처리할 수 있는 작업입니다. [방법: PLINQ를 사용하여 파일 디렉터리 반복](../../../docs/standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md) 항목은 많은 시나리오에서 이 작업을 수행하는 가장 쉬운 방법을 보여줍니다. 그러나 코드가 파일 시스템에 액세스할 때 발생할 수 있는 많은 예외 형식을 처리해야 할 경우 복잡해질 수 있습니다. 다음 예제는 문제에 대한 하나의 접근 방법을 보여줍니다. 이 방법은 스택 기반 반복을 사용하여 지정된 디렉터리에서 모든 파일과 폴더를 트래버스하고 코드에서 다양한 예외를 catch하여 처리할 수 있습니다. 물론 예외를 처리하는 방법은 사용자가 결정합니다.  
@@ -32,5 +32,6 @@ ms.locfileid: "33580720"
   
  기본 스레드에서 예외가 throw될 경우 <xref:System.Threading.Tasks.Parallel.ForEach%2A> 메서드를 통해 시작되는 스레드는 계속 실행될 수 있습니다. 이러한 스레드를 중지하려면 예외 처리기에서 부울 변수를 설정하고 병렬 루프의 각 반복에서 해당 값을 확인합니다. 값이 예외가 throw되었음을 나타내는 경우 <xref:System.Threading.Tasks.ParallelLoopState> 변수를 사용하여 루프에서 중지하거나 중단합니다. 자세한 내용은 [방법: Parallel.For 루프에서 중지 또는 중단](https://msdn.microsoft.com/library/de52e4f1-9346-4ad5-b582-1a4d54dc7f7e)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)

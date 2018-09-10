@@ -5,12 +5,12 @@ ms.assetid: 265615d6-4423-4b5d-8626-752e456f4f4e
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: b085604d7d20eb9222507b4820be219ffeae4726
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 55716e7baa382bffbb37dc9248ec1cbd15065ac1
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395738"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43504620"
 ---
 # <a name="pnrp-in-application-development"></a>응용 프로그램 개발의 PNRP
 Windows Vista에서 네트워킹 응용 프로그램은 단순화된 PNRP API(응용 프로그래밍 인터페이스)를 통해 PNRP 이름 게시 및 확인 기능에 액세스할 수 있습니다.  
@@ -20,7 +20,7 @@ Windows Vista에서 네트워킹 응용 프로그램은 단순화된 PNRP API(�
   
  Windows Vista에서 상당히 단순화된 형태의 PNRP 이름 확인 기능의 경우 PNRP 이름이 getaddrinfo() Windows 소켓 함수에 통합되었습니다. 따라서 응용 프로그램이 PNRP를 이용하여 IPv6 주소에 해당하는 이름을 확인할 때 getaddrinfo() 함수를 사용하여 FQDN(정규화된 도메인 이름) name.prnp.net(여기서 name은 확인할 피어 이름)을 확인할 수 있습니다. pnrp.net 도메인은 Windows Vista에서 PNRP 이름 확인에 사용하도록 예약된 도메인입니다.  
   
- PeerToPeer 응용 프로그램 간에 전달되는 메시지는 여전히 PeerChannel 및 WCF [대형 데이터 및 스트리밍](http://go.microsoft.com/fwlink/?LinkID=179652) 등의 기본 아키텍처에서 처리합니다.  
+ PeerToPeer 응용 프로그램 간에 전달되는 메시지는 여전히 PeerChannel 및 WCF [대형 데이터 및 스트리밍](https://go.microsoft.com/fwlink/?LinkID=179652) 등의 기본 아키텍처에서 처리합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Net.PeerToPeer>

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 4e4d7e64-9f1b-4026-98f7-20488ac7b42b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cb8da9ff6df910e1932c593c1f1b882dca12146a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5cc481c7370a21c56daf9ce2949247e65fa33bda
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572361"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44225531"
 ---
 # <a name="how-to-use-named-pipes-for-network-interprocess-communication"></a>방법: 네트워크 프로세스 간 통신에 명명된 파이프 사용
 명명된 파이프는 파이프 서버와 하나 이상의 파이프 클라이언트 간의 프로세스 간 통신을 제공합니다. 로컬 컴퓨터에서 프로세스 간 통신을 제공하는 익명 파이프보다 많은 기능을 제공합니다. 명명된 파이프는 네트워크 및 다중 서버 인스턴스를 통한 양방향 통신, 메시지 기반 통신 및 연결 프로세스가 원격 서버에서 고유한 권한 집합을 사용할 수 있는 클라이언트 가장을 지원합니다.  
@@ -45,8 +45,9 @@ ms.locfileid: "33572361"
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  이 예제의 클라이언트 및 서버 프로세스는 동일한 컴퓨터에서 실행되므로 <xref:System.IO.Pipes.NamedPipeClientStream> 개체에 제공된 서버 이름은 `"."`입니다. 클라이언트 및 서버 프로세스가 별도의 컴퓨터에 있는 경우 `"."`는 서버 프로세스를 실행하는 컴퓨터의 네트워크 이름으로 대체됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Principal.TokenImpersonationLevel>  
- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>  
- [파이프](../../../docs/standard/io/pipe-operations.md)  
- [방법: 로컬 프로세스 간 통신에 익명 파이프 사용](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Security.Principal.TokenImpersonationLevel>  
+- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>  
+- [파이프](../../../docs/standard/io/pipe-operations.md)  
+- [방법: 로컬 프로세스 간 통신에 익명 파이프 사용](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md)

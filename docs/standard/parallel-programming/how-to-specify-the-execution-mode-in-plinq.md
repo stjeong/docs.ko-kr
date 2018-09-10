@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: e52ff26c-c5d3-4fab-9fec-c937fb387963
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ebea62f33c5df252dd73a0708f31612cd2998728
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c85731b991399e92297d6109a3000c1e345e02f6
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580941"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087209"
 ---
 # <a name="how-to-specify-the-execution-mode-in-plinq"></a>방법: PLINQ에 실행 모드 지정
 이 예제에서는 PLINQ가 해당 기본 추론을 강제로 바이패스하게 하여 쿼리 모양에 관계없이 쿼리를 병렬 처리하는 방법을 보여줍니다.  
@@ -32,6 +32,7 @@ ms.locfileid: "33580941"
 ## <a name="compiling-the-code"></a>코드 컴파일  
  이 코드를 잘라내어 [PLINQ 데이터 샘플](../../../docs/standard/parallel-programming/plinq-data-sample.md)에 붙여넣고 `Main`에서 메서드를 호출합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.ParallelEnumerable.AsSequential%2A>  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq.ParallelEnumerable.AsSequential%2A>  
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

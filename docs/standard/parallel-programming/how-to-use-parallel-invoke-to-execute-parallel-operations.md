@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 6b3ecd79-dec9-4ce1-abf4-62e5392a59c6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4ad4b5e005ddd7bbd598a9da3032574eb2ba7dd1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1d0870d23c5606fbdd8b4a2f78c4d8b9f4ddc93e
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580886"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44259638"
 ---
 # <a name="how-to-use-parallelinvoke-to-execute-parallel-operations"></a>방법: Parallel.Invoke를 사용하여 병렬 작업 실행
 이 예제에서는 작업 병렬 라이브러리의 <xref:System.Threading.Tasks.Parallel.Invoke%2A>을 사용하여 작업을 병렬 처리하는 방법을 보여 줍니다. 세 가지 작업이 공유 데이터 소스에 대해 수행됩니다. 소스를 수정하는 작업이 없기 때문에 간단하게 병렬로 실행할 수 있습니다.  
@@ -36,7 +36,8 @@ ms.locfileid: "33580886"
   
 -   전체 예제를 복사하여 Microsoft Visual Studio 2010 프로젝트에 붙여넣고 F5 키를 누릅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
- [방법: 작업 및 해당 자식 취소](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
+- [방법: 작업 및 해당 자식 취소](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)  
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

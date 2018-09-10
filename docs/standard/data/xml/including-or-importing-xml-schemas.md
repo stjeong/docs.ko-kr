@@ -9,12 +9,12 @@ dev_langs:
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c2f83128f47a687e75a7db9bb36c487fa1f5bb6b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b26ebfa327d849f75b1ac5295b66600aeb377e1e
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573068"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266046"
 ---
 # <a name="including-or-importing-xml-schemas"></a>XML 스키마 포함하기 또는 가져오기
 XML 스키마에 `<xs:import />`, `<xs:include />` 및 `<xs:redefine />` 요소를 포함시킬 수 있습니다. 이 스키마 요소는 이를 포함하거나 가져오는 스키마의 구조를 보완하는 데 사용할 수 있는 다른 XML 스키마를 참조할 수 있습니다. SOM(스키마 개체 모델) API에서 <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> 및 <xref:System.Xml.Schema.XmlSchemaRedefine> 클래스는 이러한 요소에 매핑됩니다.  
@@ -100,10 +100,11 @@ XML 스키마에 `<xs:import />`, `<xs:include />` 및 `<xs:redefine />` 요소�
   
  `<xs:import />`, `<xs:include />` 및 `<xs:redefine />` 요소와 <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> 및 <xref:System.Xml.Schema.XmlSchemaRedefine> 클래스에 대한 자세한 내용은 [W3C XML Schema](https://www.w3.org/XML/Schema)(W3C XML 스키마) 및 <xref:System.Xml.Schema?displayProperty=nameWithType> 네임스페이스 클래스 참조 문서를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
+- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
+- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
+- [XML 스키마 통과](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
+- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
+- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)

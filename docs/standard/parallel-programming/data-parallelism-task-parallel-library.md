@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f414e5b0463e28427c8c60e2f8b8774ad6973da2
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 2933d574b387ec0f444883bbafb41f602bc5dcc0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43464139"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44208811"
 ---
 # <a name="data-parallelism-task-parallel-library"></a>데이터 병렬 처리(작업 병렬 라이브러리)
 *데이터 병렬 처리*는 소스 컬렉션 또는 배열의 요소에서 동일한 작업이 동시에(즉, 병렬로) 수행되는 시나리오를 가리킵니다. 데이터 병렬 작업에서 소스 컬렉션은 여러 스레드가 서로 다른 세그먼트에서 동시에 작동할 수 있도록 분할됩니다.  
@@ -53,5 +53,6 @@ ms.locfileid: "43464139"
 |[TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)|작업 병렬 라이브러리에 대해 간략하게 설명합니다.|  
 |[병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)|.NET Framework의 병렬 프로그래밍을 소개합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)

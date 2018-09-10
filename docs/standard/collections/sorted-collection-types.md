@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 3db965b2-36a6-4b12-b76e-7f074ff7275a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 31b40167be4f2760eb7c88155e1733266e34d11d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 83efda175b7e5cef8c7042682827d2fe0562c207
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569823"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44260086"
 ---
 # <a name="sorted-collection-types"></a>Sorted 컬렉션 형식
 <xref:System.Collections.SortedList?displayProperty=nameWithType> 클래스, <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType> 제네릭 클래스 및 <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=nameWithType> 제네릭 클래스는 <xref:System.Collections.Hashtable> 클래스 및 <xref:System.Collections.Generic.Dictionary%602> 제네릭 클래스와 유사합니다. 해당 항목은 여기서 <xref:System.Collections.IDictionary> 인터페이스를 구현하지만 키를 기준으로 한 정렬 순서로 해당 요소를 유지 관리하고 O(1) 삽입 및 해시 테이블의 검색 특성을 갖지 않습니다. 세 가지 클래스에는 공통적으로 다음과 같은 몇 가지 기능이 있습니다.  
@@ -48,8 +48,9 @@ ms.locfileid: "33569823"
   
  [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]부터 <xref:System.Collections.Generic.SortedSet%601> 클래스는 삽입, 삭제 및 검색 후에 정렬된 순서에 따라 데이터를 유지 관리하는 자체 균형 조정 트리를 제공합니다. 이 클래스와 <xref:System.Collections.Generic.HashSet%601> 클래스는 <xref:System.Collections.Generic.ISet%601> 인터페이스를 구현합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.IDictionary?displayProperty=nameWithType>  
- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>  
- [일반적으로 사용되는 컬렉션 형식](../../../docs/standard/collections/commonly-used-collection-types.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.IDictionary?displayProperty=nameWithType>  
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>  
+- [일반적으로 사용되는 컬렉션 형식](../../../docs/standard/collections/commonly-used-collection-types.md)

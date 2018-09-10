@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 5412c90f-2703-4aa8-a9c4-1b8a35183c37
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c3cfa371394e76aab832c3dd4b065eb811413322
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 515edf26df6190d2bf4906f3de2d019b1a4175fb
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568627"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44209989"
 ---
 # <a name="ordered-node-retrieval-by-index"></a>인덱스를 사용한 정렬된 노드 검색
 W3C(World Wide Web 컨소시엄) XML DOM(문서 개체 모델)에서는 **XmlNamedNodeMap**으로 처리되는 정렬되지 않은 집합과 반대되는 정렬된 노드 목록을 처리할 수 있는 NodeList에 대해서도 설명합니다. Microsoft .NET Framework에서는 NodeList를 **XmlNodeList**라고 합니다. **XmlNodeList**를 반환하는 메서드와 속성은 다음과 같습니다.  
@@ -94,5 +94,6 @@ End While
   
  **XmlNodeList**에서 사용할 수 있는 메서드 및 속성에 대한 자세한 내용은 <xref:System.Xml.XmlNodeList>를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

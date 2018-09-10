@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 566a2e5e8587dc6d6d2259a5f79f5c59c2e60c90
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a8266db66abb46ffc9503bdaeaf4ec4078177760
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576297"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44174993"
 ---
 # <a name="generic-delegates-for-manipulating-arrays-and-lists"></a>배열과 목록을 조작하기 위한 제네릭 대리자
 이 항목에서는 배열 또는 컬렉션의 요소에 대해 수행할 작업, 검색 조건자 및 변환을 위한 제네릭 대리자에 대해 간략하게 설명합니다.  
@@ -41,10 +41,11 @@ ms.locfileid: "33576297"
 ### <a name="chaining-delegates"></a>대리자 연결  
  이러한 대리자를 사용하는 많은 메서드는 다른 메서드로 전달될 수 있는 배열 또는 목록을 반환합니다. 예를 들어 배열의 특정 요소를 선택하고 이러한 요소는 새 형식으로 변환한 다음 새 배열에 저장하려는 경우 <xref:System.Array.FindAll%2A> 제네릭 메서드에서 반환된 배열을 <xref:System.Array.ConvertAll%2A> 제네릭 메서드에 전달할 수 있습니다. 새 요소 형식에 자연 정렬 순서가 없는 경우 <xref:System.Array.ConvertAll%2A> 제네릭 메서드에서 반환된 배열을 <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Comparison%7B%60%600%7D%29> 제네릭 메서드에 전달할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic?displayProperty=nameWithType>  
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
- [제네릭](../../../docs/standard/generics/index.md)  
- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)  
- [제네릭 인터페이스](../../../docs/standard/generics/interfaces.md)  
- [공 분산 및 반공 분산](../../../docs/standard/generics/covariance-and-contravariance.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Generic?displayProperty=nameWithType>  
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
+- [제네릭](../../../docs/standard/generics/index.md)  
+- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)  
+- [제네릭 인터페이스](../../../docs/standard/generics/interfaces.md)  
+- [공 분산 및 반공 분산](../../../docs/standard/generics/covariance-and-contravariance.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: cbda7114-c752-4f3e-ada1-b1e8dd262f2b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 361e618578e836e10cf8655f027bed42eac7affd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 6478ea94b6c54272a01497ac7b1cb1b197892309
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43393141"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44269256"
 ---
 # <a name="interlocked-operations"></a>연동 작업
 <xref:System.Threading.Interlocked> 클래스는 여러 스레드에서 공유하는 변수에 대한 액세스를 동기화하는 메서드를 제공합니다. 서로 다른 프로세스의 스레드는 변수가 공유 메모리에 있는 경우 이 메커니즘을 사용할 수 있습니다. 연동 작업은 원자성입니다. 즉, 전체 작업은 동일한 변수의 다른 연동 작업에 의해 중단될 수 없는 장치입니다. 이는 메모리 주소에서 값을 로드한 후 이를 변경하고 저장할 기회를 갖기 전에 스레드를 일시 중단할 수 있는 선점형 다중 스레딩과 함께 운영 체제에서 중요합니다.  
@@ -57,8 +57,9 @@ ms.locfileid: "43393141"
  [!code-csharp[Conceptual.Interlocked#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interlocked/cs/source2.cs#2)]
  [!code-vb[Conceptual.Interlocked#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interlocked/vb/source2.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Interlocked>  
- <xref:System.Threading.Monitor>  
- [스레딩](../../../docs/standard/threading/index.md)  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Interlocked>  
+- <xref:System.Threading.Monitor>  
+- [스레딩](../../../docs/standard/threading/index.md)  
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6f682ba370e364629d6b79c5cedd28b4af834e58
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b4dde57e03e26085d19099e749afd50ba14874a5
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568887"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44195376"
 ---
 # <a name="hashtable-and-dictionary-collection-types"></a>Hashtable 및 Dictionary 컬렉션 형식
 <xref:System.Collections.Hashtable?displayProperty=nameWithType> 클래스와 <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> 및 <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> 제네릭 클래스는 <xref:System.Collections.IDictionary?displayProperty=nameWithType> 인터페이스를 구현합니다. <xref:System.Collections.Generic.Dictionary%602> 제네릭 클래스는 <xref:System.Collections.Generic.IDictionary%602> 제네릭 인터페이스도 구현합니다. 따라서 이러한 컬렉션의 각 요소는 한 쌍의 키-값입니다.  
@@ -36,11 +36,12 @@ ms.locfileid: "33568887"
   
  <xref:System.Collections.Generic.Dictionary%602> 및 <xref:System.Collections.Concurrent.ConcurrentDictionary%602>클래스는 <xref:System.Collections.Hashtable> 클래스와 동일한 기능을 갖습니다. 특정 형식(<xref:System.Object> 이외)의 <xref:System.Collections.Generic.Dictionary%602>는 값 형식의 <xref:System.Collections.Hashtable>보다 더 나은 성능을 제공합니다. 이는 <xref:System.Collections.Hashtable>의 요소가 <xref:System.Object> 형식이기 때문입니다. 따라서 boxing 및 unboxing은 일반적으로 값 형식을 저장하거나 검색할 때 발생합니다. <xref:System.Collections.Concurrent.ConcurrentDictionary%602>클래스는 여러 스레드가 컬렉션에 동시에 액세스할 수 있는 경우에 사용해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Hashtable>  
- <xref:System.Collections.IDictionary>  
- <xref:System.Collections.IHashCodeProvider>  
- <xref:System.Collections.Generic.Dictionary%602>  
- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>  
- [일반적으로 사용되는 컬렉션 형식](../../../docs/standard/collections/commonly-used-collection-types.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Hashtable>  
+- <xref:System.Collections.IDictionary>  
+- <xref:System.Collections.IHashCodeProvider>  
+- <xref:System.Collections.Generic.Dictionary%602>  
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>  
+- [일반적으로 사용되는 컬렉션 형식](../../../docs/standard/collections/commonly-used-collection-types.md)

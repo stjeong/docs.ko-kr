@@ -160,11 +160,11 @@ ms.assetid: 8271973c-deba-47a6-8e5e-04ce63f146ad
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f051af9284ddbf583e5454f7bdc106a061489d3c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43465501"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44075461"
 ---
 # <a name="winmdexpexe-error-messages"></a>Winmdexp.exe 오류 메시지
 [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)]에서 **[!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소** 템플릿을 사용할 때 빌드 프로세스는 [Winmdexp.exe(Windows 런타임 메타데이터 내보내기 도구)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md)를 호출하므로 Winmdexp.exe 오류 메시지가 **오류 목록**에 표시됩니다. Winmdexp.exe는 `/target:winmdobj` 옵션으로 컴파일된 모듈에서 작동합니다. 컴파일된 모듈이 입력으로 필요하므로 컴파일에 성공하지 않으면 해당 오류 메시지가 나타나지 않습니다.  

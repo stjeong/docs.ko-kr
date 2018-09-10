@@ -4,12 +4,12 @@ description: .NET에서 서버 앱을 구축할 때 고려해야 할 .NET 구현
 author: cartermp
 ms.author: mairaw
 ms.date: 06/19/2018
-ms.openlocfilehash: 541bcdf69d658fd37271169c028fb64611a35655
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: dbb5bd21d2fa43167a9624be2baec3f591d10920
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934535"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43864964"
 ---
 # <a name="choosing-between-net-core-and-net-framework-for-server-apps"></a>서버 앱에 대해 .NET Core와 .NET Framework 중에 선택
 
@@ -103,8 +103,10 @@ Docker 컨테이너는 고유한 Linux 또는 Windows 인프라나 [Azure Contai
 
 ## <a name="see-also"></a>참고 항목
 
- [ASP.NET 및 ASP.NET Core 중에서 선택](/aspnet/core/choose-aspnet-framework) [대상 프레임워크](frameworks.md) [.NET Core 가이드](../core/index.md)  
- [.NET Framework에서 .NET Core로 이식](../core/porting/index.md)  
- [Docker 가이드의 .NET Framework](../framework/docker/index.md)  
- [.NET 구성 요소 개요](components.md)  
- [.NET 마이크로 서비스. 컨테이너화된 .NET 응용 프로그램을 위한 아키텍처](microservices-architecture/index.md)
+* [ASP.NET 및 ASP.NET Core 중에서 선택](/aspnet/core/choose-aspnet-framework)
+* [대상 프레임워크](frameworks.md)
+* [.NET Core 가이드](../core/index.md)  
+* [.NET Framework에서 .NET Core로 이식](../core/porting/index.md)  
+* [Docker 가이드의 .NET Framework](../framework/docker/index.md)  
+* [.NET 구성 요소 개요](components.md)  
+* [.NET 마이크로 서비스. 컨테이너화된 .NET 응용 프로그램을 위한 아키텍처](microservices-architecture/index.md)

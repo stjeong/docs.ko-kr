@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f5c5cd2fd4d9c334d45a52e23bb0d320abd13cb5
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 308b834a133798104dcc47a16f8adc068ed937ec
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43389505"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44188347"
 ---
 # <a name="chaining-tasks-by-using-continuation-tasks"></a>연속 작업을 사용하여 작업 연결
 비동기 프로그래밍에서는 한 비동기 작업이 완료 시 두 번째 작업을 호출하고 해당 작업에 데이터를 전달하는 것이 일반적입니다. 일반적으로 이 작업은 콜백 메서드를 통해 수행되었습니다. 작업 병렬 라이브러리에서는 *연속 작업*이 동일한 기능을 제공합니다. 연속 작업(연속이라고도 함)은 선행 작업이 완료될 때 다른 작업( *선행*이라고 함)이 호출하는 비동기 작업입니다.  
@@ -149,5 +149,6 @@ ms.locfileid: "43389505"
   
 -   연속 작업이 <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType> 옵션으로 만든 연결된 자식 작업인 경우 다른 연결된 자식과 마찬가지로 부모가 해당 예외를 호출 스레드로 다시 전파합니다. 자세한 내용은 [연결된 자식 작업과 분리된 자식 작업](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

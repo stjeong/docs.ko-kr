@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 86b69a08-3bfa-4e5f-b4e1-3b7cb8478215
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4cd7b7542e5cf9352e965717368399dcf4a9ecd2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3de83395df9e8c89a92e85b96ddd15e9f0be6ad5
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575852"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44207696"
 ---
 # <a name="how-to-enumerate-directories-and-files"></a>방법: 디렉터리 및 파일 열거
 디렉터리 및 파일 이름의 문자열을 포함하는 열거 가능한 컬렉션을 반환하는 메서드를 사용하여 디렉터리 및 파일을 열거할 수 있습니다. 또한 <xref:System.IO.DirectoryInfo>, <xref:System.IO.FileInfo> 또는 <xref:System.IO.FileSystemInfo> 개체의 열거 가능한 컬렉션을 반환하는 메서드도 사용할 수 있습니다. 열거 가능한 컬렉션은 대규모의 디렉터리 및 파일 컬렉션으로 작업할 때 배열보다 나은 성능을 제공합니다.  
@@ -65,5 +65,6 @@ ms.locfileid: "33575852"
      [!code-csharp[System.IO.DirectoryInfo.EnumerateDirectories#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumeratedirectories/cs/program.cs#1)]
      [!code-vb[System.IO.DirectoryInfo.EnumerateDirectories#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumeratedirectories/vb/program.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 2678dc63-c7f9-4590-9ddc-0a4df684d42e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 80c3a772ae4dfba53982ed28c0bd54f500c50b08
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: ad0649f3cebbd9adf04bdaf0f06d4c5f5797a84f
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43466056"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44038746"
 ---
 # <a name="covariance-and-contravariance-in-generics"></a>제네릭의 공 분산과 반공 분산
 <a name="top"></a> 공변성(Covariance)과 반공변성(Contravariance)은 원래 지정된 것보다 더 많이 파생되거나(더 구체적인) 더 적게 파생된 형식(덜 구체적인)을 사용할 수 있는 능력을 지칭하는 용어입니다. 제네릭 형식 매개 변수는 더욱 유연하게 제네릭 형식을 할당하고 사용할 수 있도록 공변성과 반공변성을 지원합니다. 형식 시스템을 참조할 때 공변성, 반공변성 및 불변성의 정의는 다음과 같습니다. 이 예제에서는 `Base` 라는 기본 클래스와 `Derived`라는 파생 클래스가 있는 것으로 가정합니다.  
@@ -188,7 +188,8 @@ ms.locfileid: "43466056"
 |<xref:System.Linq.IOrderedQueryable%601>|예||  
 |<xref:System.Linq.IQueryable%601>|예||  
   
-## <a name="see-also"></a>참고 항목  
- [공변성(Covariance) 및 반공변성(Contravariance)(C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
- [공변성(Covariance) 및 반공변성(Contravariance)(Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
- [대리자의 가변성](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)
+## <a name="see-also"></a>참고 항목
+
+- [공변성(Covariance) 및 반공변성(Contravariance)(C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
+- [공변성(covariance) 및 반공변성(contravariance)(Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
+- [대리자의 가변성](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)

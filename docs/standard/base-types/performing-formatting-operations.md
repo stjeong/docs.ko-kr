@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 36e7e096-4e6c-4cf2-9ab6-68073026ea0e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d789101231a37bb9a2b6b3c7830f6b679fd364d7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a1d9f62055b497aa7522d589610c12badb2361d5
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567847"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262420"
 ---
 # <a name="performing-formatting-operations"></a>서식 지정 작업 수행
 다음 항목은 특정 서식 지정 작업을 수행하기 위한 단계별 지침을 제공합니다.  
@@ -38,5 +38,6 @@ ms.locfileid: "33567847"
   
 -   [방법: 그레고리오력이 아닌 달력의 날짜 표시](../../../docs/standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md)  
   
-## <a name="see-also"></a>참고 항목  
- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)
+## <a name="see-also"></a>참고 항목
+
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)

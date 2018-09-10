@@ -5,12 +5,12 @@ ms.assetid: 8efacc29-7367-47c2-8638-a4f66385ad91
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 85c190756821ee14fffad600ce7b44029c314ec1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9a8230d382cfcf3709a2e4df42758470f3caea4e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397470"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44187392"
 ---
 # <a name="network-programming-samples"></a>네트워크 프로그래밍 샘플
 이 섹션에는 <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.Security>, <xref:System.Net.Sockets> 및 관련 네임스페이스의 클래스를 사용하는 다운로드 가능한 네트워크 프로그래밍 샘플에 대한 링크와 설명이 포함되어 있습니다. 
@@ -28,7 +28,7 @@ ms.locfileid: "33397470"
  [HttpListener 기술 샘플](https://msdn.microsoft.com/en-us/library/y7cbb2y2(v=vs.85).aspx)  
  응용 프로그램 내에서 HTTP 요청을 처리하는 방법을 보여 줍니다.  
  
- [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90)) (HttpListener ASPX 호스트 응용 프로그램 샘플)  
+ [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90)) (HttpListener ASPX 호스트 응용 프로그램 샘플)  
  <xref:System.Net.HttpListener?displayProperty=nameWithType> 클래스의 기능을 사용하여 호스팅된 ASP.NET 응용 프로그램에 호출을 라우팅하는 HTTP 서버를 만드는 방법을 보여 줍니다.
   
  [Mailer 기술 샘플](https://msdn.microsoft.com/en-us/library/whw7xbk2(v=vs.85).aspx)  

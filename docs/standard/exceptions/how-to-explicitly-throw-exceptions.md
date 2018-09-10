@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 72bdd157-caa9-4478-9ee3-cb4500b84528
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4eeb70c10d71a7c96136039342bcdcc7bc8ece20
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a1a8658999f08d295e76afc9df6ec8acd146abe2
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570346"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43863228"
 ---
 # <a name="how-to-explicitly-throw-exceptions"></a>명시적으로 예외를 throw하는 방법
 
@@ -30,5 +30,6 @@ ms.locfileid: "33570346"
 [!code-csharp[Exception.Throwing#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Exception.Throwing/CS/throw.cs#1)]
 [!code-vb[Exception.Throwing#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Exception.Throwing/VB/throw.vb#1)]  
 
-## <a name="see-also"></a>참고 항목  
-[예외](index.md)
+## <a name="see-also"></a>참고 항목
+
+- [예외](index.md)

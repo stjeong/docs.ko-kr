@@ -10,24 +10,24 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
 author: Xansky
 ms.author: mhopkins
 manager: markl
-ms.openlocfilehash: be7711fdbe9b2cb45d618e685a6f1ae2a941aa29
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fcc7782b5e2ad2fae876c2b3143caf367332ed5a
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399167"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43777966"
 ---
 # <a name="ui-automation-and-microsoft-active-accessibility"></a>UI 자동화 및 Microsoft Active Accessibility
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](http://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
- [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] 는 응용 프로그램을 액세스할 수 있도록 했던 이전 솔루션입니다. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 은 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] 의 새로운 접근성 모델로서 보조 기술 제품 및 자동 테스트 도구의 요구를 충족시키기 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 은 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]를 통해 다양한 개선 사항을 제공합니다.  
+ [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] 는 응용 프로그램을 액세스할 수 있도록 했던 이전 솔루션입니다. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 은 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] 의 새로운 접근성 모델로서 보조 기술 제품 및 자동 테스트 도구의 요구를 충족시키기 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]은 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]를 통해 다양한 개선 사항을 제공합니다.  
   
  이 항목에서는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 의 주요 기능에 대해 설명하고 이러한 기능이 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]와 어떻게 다른지 설명합니다.  
   
 <a name="Programming_Languages_compare"></a>   
 ## <a name="programming-languages"></a>프로그래밍 언어  
-<[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 에 따라는 [!INCLUDE[TLA#tla_com](../../../includes/tlasharptla-com-md.md)] 이중 인터페이스를 지 원하는 C/c + +에서 프로그래밍 가능한 되므로 [!INCLUDE[TLA#tla_vb6](../../../includes/tlasharptla-vb6-md.md)], 및 스크립트 언어입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 관리 되는 코드로 작성 되므로 (표준 컨트롤에 대 한 클라이언트 쪽 공급자 라이브러리 포함) 및 UI 자동화 클라이언트 응용 프로그램을 쉽게 C# 또는 Visual Basic.NET을 사용 하 여 프로그래밍할 합니다. 인터페이스 구현인 UI 자동화 공급자는 관리되는 코드 또는 C/C++로 작성할 수 있습니다.  
+<[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 기반으로 합니다 [!INCLUDE[TLA#tla_com](../../../includes/tlasharptla-com-md.md)] 이중 인터페이스 지원과 C/c + +에서 프로그래밍 되므로 [!INCLUDE[TLA#tla_vb6](../../../includes/tlasharptla-vb6-md.md)], 및 스크립팅 언어입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 관리 되는 코드로 작성 되므로 (표준 컨트롤에 대 한 클라이언트 쪽 공급자 라이브러리 포함) 및 UI 자동화 클라이언트 응용 프로그램 C# 또는 Visual Basic.NET을 사용 하 여 쉽게 프로그래밍할 수 있습니다. 인터페이스 구현인 UI 자동화 공급자는 관리되는 코드 또는 C/C++로 작성할 수 있습니다.  
   
 <a name="Support_in_Windows_Presentation_Foundation_"></a>   
 ## <a name="support-in-windows-presentation-foundation"></a>Windows Presentation Foundation에서의 지원  
@@ -57,7 +57,7 @@ ms.locfileid: "33399167"
   
  [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서, 요소 간 탐색은 공간(예: 화면 왼쪽에 있는 요소로 이동), 논리적(예: 다음 메뉴 항목으로 이동 또는 대화 상자 내에서 탭 순서대로 다음 항목으로 이동), 계층적(예: 컨테이너의 첫 번째 자식 이동 또는 자식에서 부모로 이동) 이동 방법 중 하나로 수행됩니다. 계층적 탐색의 경우, 자식 요소가 `IAccessible`을 구현하는 개체가 아닐 수도 있기 때문에 복잡한 방법입니다.  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 모든 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소는 동일한 기본 기능을 지원하는 <xref:System.Windows.Automation.AutomationElement> 개체입니다. (에서 상속 된 인터페이스를 구현 하는 개체는 공급자의 관점에서 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple>.) 탐색은 주로 계층 구조입니다. 부모에서 자식으로, 한 형제에서 다른 형제로 탐색합니다. (형제 간 탐색은 탭 순서를 따를 수 있기 때문에 논리적 요소가 있습니다.) 사용 하 여 트리의 필터링된 된 뷰를 사용 하 여 모든 시작 지점에서 이동할 수는 <xref:System.Windows.Automation.TreeWalker> 클래스입니다. <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> 및 <xref:System.Windows.Automation.AutomationElement.FindAll%2A>을 사용하여 특정 자식 또는 하위 항목을 탐색할 수도 있습니다. 예를 들어, 지정된 컨트롤 패턴을 지원하는 대화 상자 내에서 모든 요소를 쉽게 검색할 수 있습니다.  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 모든 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 요소는 동일한 기본 기능을 지원하는 <xref:System.Windows.Automation.AutomationElement> 개체입니다. (공급자의 관점에서에서 상속 된 인터페이스를 구현 하는 개체는 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple>.) 탐색은 주로 계층 구조입니다. 부모에서 자식으로, 한 형제에서 다른 형제로 탐색합니다. (형제 간 탐색은 탭 순서를 따를 수 있기 때문에 논리적 요소가 있습니다.) 사용 하 여 트리의 필터링된 된 뷰를 사용 하 여 모든 시작 지점에서 이동할 수는 <xref:System.Windows.Automation.TreeWalker> 클래스입니다. <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> 및 <xref:System.Windows.Automation.AutomationElement.FindAll%2A>을 사용하여 특정 자식 또는 하위 항목을 탐색할 수도 있습니다. 예를 들어, 지정된 컨트롤 패턴을 지원하는 대화 상자 내에서 모든 요소를 쉽게 검색할 수 있습니다.  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 에서의 탐색은 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]에서 보다 일관적입니다. 드롭다운 목록 및 팝업 창과 같은 일부 요소는 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 트리에 두 번 나타나며, 이러한 요소를 탐색하면 예기치 않은 결과가 발생할 수 있습니다. 사실상 Rebar 컨트롤에 대해 [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] 를 올바르게 구현하는 것은 불가능합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 을 사용하면 부모 재지정 및 위치 변경이 가능하므로, 창 소유권에 의해 계층 구조가 적용되더라도 트리에서 요소를 원하는 위치에 배치할 수 있습니다.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "33399167"
 |ROLE_SYSTEM_DOCUMENT|문서|  
 |ROLE_SYSTEM_TEXT|편집|  
 |ROLE_SYSTEM_GROUPING|그룹화|  
-|ROLE_SYSTEM_LIST|Header|  
+|ROLE_SYSTEM_LIST|헤더|  
 |ROLE_SYSTEM_COLUMNHEADER|헤더 항목|  
 |ROLE_SYSTEM_LINK|하이퍼링크|  
 |ROLE_SYSTEM_GRAPHIC|이미지|  
@@ -179,7 +179,7 @@ ms.locfileid: "33399167"
 |STATE_SYSTEM_HOTTRACKED|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
 |STATE_SYSTEM_PRESSED|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
   
- 에 대 한 전체 목록은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 식별자 참조 [UI 자동화 속성 개요](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)합니다.  
+ 전체 목록은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 식별자를 참조 하세요 [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)합니다.  
   
 <a name="uiautomation_events_compare"></a>   
 ## <a name="events"></a>이벤트  

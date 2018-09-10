@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 26a1cafc7ed6e497e5aab9cd33654f3aa3d4d98c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 55b16d135449cad8ed489a8a3e21db326be0fae0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33573188"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44193265"
 ---
 # <a name="how-to-round-trip-date-and-time-values"></a>방법: 날짜 및 시간 값 라운드트립
 많은 응용 프로그램에서 날짜 및 시간 값은 단일 시점을 명확하게 식별하는 데 사용됩니다. 이 항목에서는 복원된 값이 저장된 값과 같은 시간을 식별할 수 있도록 <xref:System.DateTime> 값, <xref:System.DateTimeOffset> 값 그리고 표준 시간대 정보가 있는 날짜 및 시간 값을 저장하고 복원하는 방법을 보여줍니다.  
@@ -99,7 +99,8 @@ ms.locfileid: "33573188"
   
 -   `DateInTimeZone` 클래스 이외의 각 코드 예제가 클래스 또는 Visual Basic 모듈에 포함되어야 하며, 메서드에 래핑되고, `Main` 메서드에서 호출되어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
- [DateTime, DateTimeOffset, TimeSpan 및 TimeZoneInfo 중 선택](../../../docs/standard/datetime/choosing-between-datetime.md)  
- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
+- [DateTime, DateTimeOffset, TimeSpan 및 TimeZoneInfo 중 선택](../../../docs/standard/datetime/choosing-between-datetime.md)  
+- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)

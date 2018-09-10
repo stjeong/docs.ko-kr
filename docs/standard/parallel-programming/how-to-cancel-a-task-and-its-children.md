@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 66082d58ac38348eb4f2ee16bf611259d9fe598e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cb520169f8e7925862d415a4dfb65af09263b0d2
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580228"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266828"
 ---
 # <a name="how-to-cancel-a-task-and-its-children"></a>방법: 작업 및 해당 자식 취소
 이 예제는 다음 작업을 수행하는 방법을 보여줍니다.  
@@ -38,11 +38,12 @@ ms.locfileid: "33580228"
   
  <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 클래스는 <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> 및 <xref:System.Threading.CancellationToken?displayProperty=nameWithType> 유형을 기반으로 하는 취소 모델과 완전히 통합되었습니다. 자세한 내용은 [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md) 및 [작업 취소](../../../docs/standard/parallel-programming/task-cancellation.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType>  
- <xref:System.Threading.CancellationToken?displayProperty=nameWithType>  
- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>  
- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>  
- [작업 기반 비동기 프로그래밍](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)  
- [연결된 자식 작업 및 분리된 자식 작업](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)  
- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType>  
+- <xref:System.Threading.CancellationToken?displayProperty=nameWithType>  
+- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>  
+- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>  
+- [작업 기반 비동기 프로그래밍](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)  
+- [연결된 자식 작업 및 분리된 자식 작업](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)  
+- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

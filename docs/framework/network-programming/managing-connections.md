@@ -20,19 +20,19 @@ ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 8702f2329b262fc5c5965ae49365d46ba34091d6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 29077a1c0f2b803270adb730e0d810143095e709
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33391175"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484982"
 ---
 # <a name="managing-connections"></a>연결 관리
 HTTP를 사용하여 데이터 리소스에 연결하는 응용 프로그램은 .NET Framework의 <xref:System.Net.ServicePoint> 및 <xref:System.Net.ServicePointManager> 클래스를 사용하여 인터넷에 대한 연결을 관리하고 최적의 규모 및 성능을 달성하도록 지원합니다.  
   
- **ServicePoint** 클래스는 응용 프로그램이 인터넷 리소스에 액세스하기 위해 연결할 수 있는 끝점을 제공합니다. 각 **ServicePoint**에는 성능을 향상시키기 위해 연결 간 최적화 정보를 공유하여 인터넷 서버와의 연결을 최적화시킬 수 있는 정보가 들어 있습니다.  
+ **ServicePoint** 클래스는 응용 프로그램이 인터넷 리소스에 액세스하기 위해 연결할 수 있는 엔드포인트를 제공합니다. 각 **ServicePoint**에는 성능을 향상시키기 위해 연결 간 최적화 정보를 공유하여 인터넷 서버와의 연결을 최적화시킬 수 있는 정보가 들어 있습니다.  
   
- 각 **ServicePoint**는 URI(Uniform Resource Identifier)로 식별되며 URI의 구성표 식별자 및 호스트 조각에 따라 분류됩니다. 예를 들어 동일한 **ServicePoint** 인스턴스에는 동일한 구성표 식별자(http) 및 호스트 조각(www.contoso.com)이 있으므로 이 인스턴스에서는 URI(http://www.contoso.com/index.htm 및 http://www.contoso.com/news.htm?date=today)에 요청을 제공합니다. 응용 프로그램이 이미 www.contoso.com 서버에 영구적으로 연결되어 있는 경우 해당 연결을 사용하여 두 요청을 모두 검색하므로 두 연결을 만들 필요가 없습니다.  
+ 각 **ServicePoint**는 URI(Uniform Resource Identifier)로 식별되며 URI의 구성표 식별자 및 호스트 조각에 따라 분류됩니다. 예를 들어 동일한 **ServicePoint** 인스턴스에는 동일한 구성표 식별자(http) 및 호스트 조각(`www.contoso.com`)이 있으므로 이 인스턴스에서는 URI(`http://www.contoso.com/index.htm` 및 `http://www.contoso.com/news.htm?date=today`)에 요청을 제공합니다. 응용 프로그램이 이미 `www.contoso.com` 서버에 영구적으로 연결되어 있는 경우 해당 연결을 사용하여 두 요청을 모두 검색하므로 두 연결을 만들 필요가 없습니다.  
   
  **ServicePointManager**는 **ServicePoint** 인스턴스의 생성과 소멸을 관리하는 정적 클래스입니다. 응용 프로그램에서 기존 **ServicePoint** 인스턴스의 컬렉션에 없는 인터넷 리소스를 요청하면 **ServicePointManager**에서 **ServicePoint**를 만듭니다. **ServicePoint** 인스턴스는 최대 유휴 시간이 초과되거나 기존 **ServicePoint** 인스턴스의 수가 응용 프로그램의 **ServicePoint** 인스턴스 최대 수를 초과할 때 소멸됩니다. **ServicePointManager**에서 <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A> 및 <xref:System.Net.ServicePointManager.MaxServicePoints%2A> 속성을 설정하여 유휴 시간의 기본 최대값과 **ServicePoint** 인스턴스의 최대 수를 모두 제어할 수 있습니다.  
   
@@ -53,7 +53,7 @@ ServicePointManager.DefaultConnectionLimit = 4;
 ServicePointManager.DefaultConnectionLimit = 4  
 ```  
   
- **ServicePointManager.DefaultConnectionLimit** 속성을 변경해도 이전에 초기화된 **ServicePoint** 인스턴스에는 영향을 미치지 않습니다. 다음 코드에서는 http://www.contoso.com 서버의 기존 **ServicePoint**에 대한 연결 한계를 `newLimit`에 저장된 값으로 변경합니다.  
+ **ServicePointManager.DefaultConnectionLimit** 속성을 변경해도 이전에 초기화된 **ServicePoint** 인스턴스에는 영향을 미치지 않습니다. 다음 코드에서는 `http://www.contoso.com` 서버의 기존 **ServicePoint**에 대한 연결 한계를 `newLimit`에 저장된 값으로 변경합니다.  
   
 ```csharp  
 Uri uri = new Uri("http://www.contoso.com/");  

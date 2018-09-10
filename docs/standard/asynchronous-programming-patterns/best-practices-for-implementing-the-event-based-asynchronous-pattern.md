@@ -12,12 +12,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 4acd2094-4f46-4eff-9190-92d0d9ff47db
-ms.openlocfilehash: 519c22e3c2647e2ae3423688b468e133a3e5eb84
-ms.sourcegitcommit: 7d13f17bf901751d0169f921a02a6b34541a9eca
+ms.openlocfilehash: e50f455ab83b0b057f8ce3c32f874e6856632d70
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "37937116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44267169"
 ---
 # <a name="best-practices-for-implementing-the-event-based-asynchronous-pattern"></a>최선의 이벤트 기반 비동기 패턴 구현 방법
 이벤트 기반 비동기 패턴은 익숙한 이벤트 및 대리자 의미 체계를 사용하여 클래스에 비동기 동작을 노출하는 효과적인 방법을 제공합니다. 이벤트 기반 비동기 패턴을 구현하려면 몇 가지 구체적인 동작 요구 사항을 따라야 합니다. 다음 섹션에서는 이벤트 기반 비동기 패턴을 따르는 클래스를 구현할 때 고려해야 할 요구 사항 및 지침을 설명합니다.  
@@ -143,15 +143,16 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 -   모든 종류의 다중 스레딩을 사용할 때는 매우 심각하고 복잡한 버그에 잠재적으로 노출됩니다. 다중 스레딩을 사용하는 솔루션을 구현하기 전에 [관리되는 스레딩을 구현하는 최선의 방법](../../../docs/standard/threading/managed-threading-best-practices.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ComponentModel.AsyncOperation>  
- <xref:System.ComponentModel.AsyncOperationManager>  
- <xref:System.ComponentModel.AsyncCompletedEventArgs>  
- <xref:System.ComponentModel.ProgressChangedEventArgs>  
- <xref:System.ComponentModel.BackgroundWorker>  
- [이벤트 기반 비동기 패턴 구현](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)  
- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
- [이벤트 기반 비동기 패턴 구현 시기 결정](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
- [최선의 이벤트 기반 비동기 패턴 구현 방법](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 사용](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)  
- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.ComponentModel.AsyncOperation>  
+- <xref:System.ComponentModel.AsyncOperationManager>  
+- <xref:System.ComponentModel.AsyncCompletedEventArgs>  
+- <xref:System.ComponentModel.ProgressChangedEventArgs>  
+- <xref:System.ComponentModel.BackgroundWorker>  
+- [이벤트 기반 비동기 패턴 구현](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)  
+- [EAP(이벤트 기반 비동기 패턴)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+- [이벤트 기반 비동기 패턴 구현 시기 결정](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
+- [최선의 이벤트 기반 비동기 패턴 구현 방법](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
+- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 사용](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)  
+- [방법: 이벤트 기반 비동기 패턴을 지원하는 구성 요소 구현](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)

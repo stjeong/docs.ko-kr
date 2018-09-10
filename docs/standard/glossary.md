@@ -5,12 +5,12 @@ author: tdykstra
 ms.author: tdykstra
 ms.date: 07/08/2017
 ms.technology: dotnet-standard
-ms.openlocfilehash: 195fbb799432b9d01a5faf301c9f8f2d1edfa1ff
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 11fad691021ec897348177c67134750e72b4ff7c
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579407"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44188685"
 ---
 # <a name="net-glossary"></a>.NET 용어
 
@@ -268,9 +268,8 @@ IoT(사물 인터넷)에 대한 최신 터치 가능 Windows 응용 프로그램
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 가이드](index.md)  
-[.NET Framework 가이드](../framework/index.md)  
-[.NET Core](../core/index.md)  
-[ASP.NET 개요](/aspnet/index#pivot=aspnet)  
-[ASP.NET Core 개요](/aspnet/index#pivot=core)  
-
+- [.NET 가이드](index.md)  
+- [.NET Framework 가이드](../framework/index.md)  
+- [.NET Core](../core/index.md)  
+- [ASP.NET 개요](/aspnet/index#pivot=aspnet)  
+- [ASP.NET Core 개요](/aspnet/index#pivot=core)  

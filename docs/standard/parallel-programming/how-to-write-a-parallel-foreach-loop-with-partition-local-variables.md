@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: edcc390014cfc70f4da4f72270c7dd53f9b9423b
-ms.sourcegitcommit: 9e18e4a18284ae9e54c515e30d019c0bbff9cd37
+ms.openlocfilehash: 357cc488705ec3dab66543fa4814dbe3e6a22777
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37076259"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227573"
 ---
 # <a name="how-to-write-a-parallelforeach-loop-with-partition-local-variables"></a>방법: 파티션 로컬 변수를 사용하는 Parallel.ForEach 루프 작성
 다음 예제에서는 파티션 지역 변수를 사용하는 <xref:System.Threading.Tasks.Parallel.ForEach%2A> 메서드를 작성하는 방법을 보여줍니다. <xref:System.Threading.Tasks.Parallel.ForEach%2A> 루프가 실행되면 해당 소스 컬렉션이 여러 파티션으로 나뉩니다. 각 파티션에는 고유한 파티션 지역 변수의 복사본이 있습니다. 파티션 지역 변수는 여러 파티션이 단일 스레드에서 실행될 수 있다는 점을 제외하고 [스레드 지역 변수](xref:System.Threading.ThreadLocal%601)와 유사합니다.
@@ -48,7 +48,8 @@ ms.locfileid: "37076259"
  [!code-csharp[TPL_Parallel#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/foreachthreadlocal.cs#04)]
  [!code-vb[TPL_Parallel#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/foreachthreadlocal.vb#04)]  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [방법: 스레드 로컬 변수를 사용하는 Parallel.For 루프 작성](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md)  
- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [방법: 스레드 로컬 변수를 사용하는 Parallel.For 루프 작성](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md)  
+- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

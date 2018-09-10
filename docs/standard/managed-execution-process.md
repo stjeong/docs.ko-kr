@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4901a81e318efe8371dc72cd9c1d511d55b0c65b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 33c498e8379d68287bfe4a2e781d6797fd6b4c10
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33578978"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44192595"
 ---
 # <a name="managed-execution-process"></a>관리되는 실행 프로세스
 <a name="introduction"></a> 관리되는 실행 프로세스에는 이 항목의 뒷부분에서 설명하는 다음 단계가 포함됩니다.  
@@ -107,13 +107,14 @@ ms.locfileid: "33578978"
   
  [맨 위로 이동](#introduction)  
   
-## <a name="see-also"></a>참고 항목  
- [개요](../../docs/framework/get-started/overview.md)  
- [언어 독립성 및 언어 독립적 구성 요소](../../docs/standard/language-independence-and-language-independent-components.md)  
- [메타데이터 및 자동 기술 구성 요소](../../docs/standard/metadata-and-self-describing-components.md)  
- [Ilasm.exe(IL 어셈블러)](../../docs/framework/tools/ilasm-exe-il-assembler.md)  
- [보안](../../docs/standard/security/index.md)  
- [비관리 코드와의 상호 운용](../../docs/framework/interop/index.md)  
- [배포](../../docs/framework/deployment/net-framework-applications.md)  
- [공용 언어 런타임의 어셈블리](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [응용 프로그램 도메인](../../docs/framework/app-domains/application-domains.md)
+## <a name="see-also"></a>참고 항목
+
+- [개요](../../docs/framework/get-started/overview.md)  
+- [언어 독립성 및 언어 독립적 구성 요소](../../docs/standard/language-independence-and-language-independent-components.md)  
+- [메타데이터 및 자동 기술 구성 요소](../../docs/standard/metadata-and-self-describing-components.md)  
+- [Ilasm.exe(IL 어셈블러)](../../docs/framework/tools/ilasm-exe-il-assembler.md)  
+- [보안](../../docs/standard/security/index.md)  
+- [비관리 코드와의 상호 운용](../../docs/framework/interop/index.md)  
+- [배포](../../docs/framework/deployment/net-framework-applications.md)  
+- [공용 언어 런타임의 어셈블리](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
+- [응용 프로그램 도메인](../../docs/framework/app-domains/application-domains.md)

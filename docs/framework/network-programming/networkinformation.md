@@ -7,12 +7,12 @@ ms.assetid: 31b44dd3-b903-4a48-8419-40419a3e4038
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 964e76a008e1c18fe9f609f1dd63bce565e95d44
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 88b39b5ae01ec5b22044dde82ba0f802c1a50ca9
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396323"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43526754"
 ---
 # <a name="networkinformation"></a>NetworkInformation
 <xref:System.Net.NetworkInformation> 네임스페이스를 사용하면 네트워크 이벤트, 변경 사항, 통계 및 속성에 대한 정보를 수집할 수 있습니다. <xref:System.Net.NetworkInformation.Ping?displayProperty=nameWithType> 클래스를 사용하여 원격 호스트에 연결 가능한지도 확인할 수 있습니다.  
@@ -28,6 +28,6 @@ ms.locfileid: "33396323"
   
 ## <a name="see-also"></a>참고 항목  
  [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)  
- [네트워크 정보 기술 샘플](http://go.microsoft.com/fwlink/?LinkID=179564)  
- [NetStat 도구 기술 샘플](http://go.microsoft.com/fwlink/?LinkID=179562)  
- [Ping 클라이언트 기술 샘플](http://go.microsoft.com/fwlink/?LinkID=179565)
+ [네트워크 정보 기술 샘플](https://go.microsoft.com/fwlink/?LinkID=179564)  
+ [NetStat 도구 기술 샘플](https://go.microsoft.com/fwlink/?LinkID=179562)  
+ [Ping 클라이언트 기술 샘플](https://go.microsoft.com/fwlink/?LinkID=179565)

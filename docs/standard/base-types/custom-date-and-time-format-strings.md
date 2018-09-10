@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cf91aa52b03f5b843a11147d8f5c28ce6f7a2e83
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 730c6abfe9d49c319d1438a0821ad47e19fc0638
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999182"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192731"
 ---
 # <a name="custom-date-and-time-format-strings"></a>사용자 지정 날짜 및 시간 형식 문자열
 
@@ -47,7 +47,7 @@ ms.locfileid: "42999182"
  다음 표에서는 사용자 지정 날짜 및 시간 형식 지정자 및 각 형식 지정자에 따라 생성되는 결과 문자열을 보여 줍니다. 기본적으로 결과 문자열은 en-US 문화권의 형식 규칙을 반영합니다. 특정 형식 지정자가 지역화된 결과 문자열을 생성하는 경우 결과 문자열에 적용되는 문화권의 예도 보여 줍니다. 사용자 지정 날짜 및 시간 형식 문자열을 사용하는 방법에 대한 자세한 내용은 참고 단원을 참조하세요.
 
 | 형식 지정자 | 설명 | 예제 |
-|----------------------|-----------------|--------------|
+| ---------------------- | ----------------- | -------------- |
 |"d"|1부터 31까지의 일(월 기준)입니다.<br /><br /> 추가 정보: ["d" 사용자 지정 형식 지정자](#dSpecifier)|2009-06-01T13:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 15|
 |"dd"|01부터 31까지의 일(월 기준)입니다.<br /><br /> 추가 정보: ["dd" 사용자 지정 형식 지정자](#ddSpecifier)|2009-06-01T13:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 15|
 |"ddd"|요일의 약식 이름입니다.<br /><br /> 추가 정보: ["ddd" 사용자 지정 형식 지정자](#dddSpecifier)|2009-06-15T13:45:30 -> Mon (en-US)<br /><br /> 2009-06-15T13:45:30 -> Пн (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lun. (fr-FR)|
@@ -100,6 +100,7 @@ ms.locfileid: "42999182"
  다음 단원에서는 각 사용자 지정 날짜 및 시간 형식 지정자에 대한 추가 정보를 제공합니다. 다른 설명이 없는 각 지정자는 <xref:System.DateTime> 값에 사용할 때와 <xref:System.DateTimeOffset> 값에 사용할 때 동일한 문자열을 생성합니다.
 
 <a name="dSpecifier"></a> 
+
 ## <a name="the-d-custom-format-specifier"></a>"d" 사용자 지정 형식 지정자
  "d" 사용자 지정 형식 지정자는 일(월 기준)을 1부터 31까지의 숫자로 나타냅니다. 한 자리 일의 경우 앞에 0이 표시되지 않습니다.
 
@@ -113,6 +114,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ddSpecifier"></a> 
+
 ## <a name="the-dd-custom-format-specifier"></a>"dd" 사용자 지정 형식 지정자
  "dd" 사용자 지정 형식 문자열은 일(월 기준)을 01부터 31까지의 숫자로 나타냅니다. 한 자리 일의 경우 앞에 0이 표시됩니다.
 
@@ -124,6 +126,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="dddSpecifier"></a> 
+
 ## <a name="the-ddd-custom-format-specifier"></a>"ddd" 사용자 지정 형식 지정자
  "ddd" 사용자 지정 형식 지정자는 요일의 약식 이름을 나타냅니다. 요일의 지역화된 약식 이름은 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A?displayProperty=nameWithType> 속성에서 검색됩니다.
 
@@ -135,6 +138,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ddddSpecifier"></a> 
+
 ## <a name="the-dddd-custom-format-specifier"></a>"dddd" 사용자 지정 형식 지정자
  "dddd" 사용자 지정 형식 지정자는 임의 개수의 추가 "d" 지정자와 함께 요일의 전체 이름을 나타냅니다. 지역화된 요일 이름은 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A?displayProperty=nameWithType> 속성에서 검색됩니다.
 
@@ -146,6 +150,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="fSpecifier"></a> 
+
 ## <a name="the-f-custom-format-specifier"></a>"f" 사용자 지정 형식 지정자
  "f" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10초까지 표시합니다.
 
@@ -161,6 +166,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ffSpecifier"></a> 
+
 ## <a name="the-ff-custom-format-specifier"></a>"ff" 사용자 지정 형식 지정자
  "ff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 2개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100초까지 표시합니다.
 
@@ -172,6 +178,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="fffSpecifier"></a> 
+
 ## <a name="the-fff-custom-format-specifier"></a>"fff" 사용자 지정 형식 지정자
  "fff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 3개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000초까지 표시합니다.
 
@@ -183,6 +190,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ffffSpecifier"></a> 
+
 ## <a name="the-ffff-custom-format-specifier"></a>"ffff" 사용자 지정 형식 지정자
  "ffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 4개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000초까지 표시합니다.
 
@@ -191,6 +199,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="fffffSpecifier"></a> 
+
 ## <a name="the-fffff-custom-format-specifier"></a>"fffff" 사용자 지정 형식 지정자
  "fffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 다섯 개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100000초까지 표시합니다.
 
@@ -199,6 +208,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ffffffSpecifier"></a> 
+
 ## <a name="the-ffffff-custom-format-specifier"></a>"ffffff" 사용자 지정 형식 지정자
  "ffffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 6개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000000초까지 표시합니다.
 
@@ -207,6 +217,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="fffffffSpecifier"></a> 
+
 ## <a name="the-fffffff-custom-format-specifier"></a>"fffffff" 사용자 지정 형식 지정자
  "fffffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 7개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000000초까지 표시합니다.
 
@@ -215,6 +226,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="F_Specifier"></a> 
+
 ## <a name="the-f-custom-format-specifier"></a>"F" 사용자 지정 형식 지정자
  "F" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10초까지 표시합니다. 이 자릿수가 0이면 아무 것도 표시되지 않습니다.
 
@@ -230,6 +242,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="FF_Specifier"></a> 
+
 ## <a name="the-ff-custom-format-specifier"></a>"FF" 사용자 지정 형식 지정자
  "FF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 2개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100초까지 표시합니다. 그러나 뒤에 0이 오거나 두 숫자가 0이면 표시되지 않습니다.
 
@@ -241,6 +254,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="FFF_Specifier"></a> 
+
 ## <a name="the-fff-custom-format-specifier"></a>"FFF" 사용자 지정 형식 지정자
  "FFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 3개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000초까지 표시합니다. 그러나 뒤에 0이 오거나 세 숫자가 0이면 표시되지 않습니다.
 
@@ -252,6 +266,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="FFFF_Specifier"></a> 
+
 ## <a name="the-ffff-custom-format-specifier"></a>"FFFF" 사용자 지정 형식 지정자
  "FFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 4개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000초까지 표시합니다. 그러나 뒤에 0이 오거나 네 숫자가 0이면 표시되지 않습니다.
 
@@ -260,6 +275,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="FFFFF_Specifier"></a> 
+
 ## <a name="the-fffff-custom-format-specifier"></a>"FFFFF" 사용자 지정 형식 지정자
  "FFFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 5개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100000초까지 표시합니다. 그러나 뒤에 0이 오거나 다섯 숫자가 0이면 표시되지 않습니다.
 
@@ -268,6 +284,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="FFFFFF_Specifier"></a> 
+
 ## <a name="the-ffffff-custom-format-specifier"></a>"FFFFFF" 사용자 지정 형식 지정자
  "FFFFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 6개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000000초까지 표시합니다. 그러나 뒤에 0이 오거나 여섯 숫자가 0이면 표시되지 않습니다.
 
@@ -276,6 +293,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="FFFFFFF_Specifier"></a> 
+
 ## <a name="the-fffffff-custom-format-specifier"></a>"FFFFFFF" 사용자 지정 형식 지정자
  "FFFFFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 7개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000000초까지 표시합니다. 그러나 뒤에 0이 오거나 일곱 숫자가 0이면 표시되지 않습니다.
 
@@ -284,6 +302,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="gSpecifier"></a> 
+
 ## <a name="the-g-or-gg-custom-format-specifier"></a>"g" 또는 "gg" 사용자 지정 형식 지정자
  "g" 또는 "gg" 사용자 지정 형식 지정자는 임의 개수의 추가 "g" 지정자와 함께 A.D. 같은 시대 또는 연대를 나타냅니다. 형식을 지정할 날짜에 연관된 시대 또는 연대 문자열이 없으면 이 지정자는 무시됩니다.
 
@@ -296,7 +315,8 @@ ms.locfileid: "42999182"
 
  [표로 이동](#table)
 
-<a name="hSpecifier"></a>
+<a name="hSpecifier"></a> 
+
 ## <a name="the-h-custom-format-specifier"></a>"h" 사용자 지정 형식 지정자
  "h" 사용자 지정 형식 지정자는 시간을 1부터 12까지의 숫자로 나타냅니다. 즉, 자정 또는 정오 이후의 총 시간을 계산하는 12시간 형식으로 나타냅니다. 자정 이후의 시간과 정오 이후의 같은 시간을 구별할 수 없습니다. 시간은 반올림되지 않으며 한 자리 시간의 경우 앞에 0이 표시되지 않습니다. 예를 들어, 시간이 오전 또는 오후 5:43일 경우 이 사용자 지정 형식 지정자는 "5"를 표시합니다.
 
@@ -310,6 +330,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="hhSpecifier"></a> 
+
 ## <a name="the-hh-custom-format-specifier"></a>"hh" 사용자 지정 형식 지정자
  "hh" 사용자 지정 형식 지정자는 임의 개수의 추가 "h" 지정자와 함께 시간을 1부터 12까지의 숫자로 나타냅니다. 즉, 자정 또는 정오 이후의 총 시간을 계산하는 12시간 형식으로 나타냅니다. 자정 이후의 시간과 정오 이후의 같은 시간을 구별할 수 없습니다. 시간은 반올림되지 않으며 한 자리 시간의 경우 앞에 0이 표시됩니다. 예를 들어, 시간이 오전 또는 오후 5:43일 경우 이 형식 지정자는 "05"를 표시합니다.
 
@@ -321,6 +342,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="H_Specifier"></a> 
+
 ## <a name="the-h-custom-format-specifier"></a>"H" 사용자 지정 형식 지정자
  "H" 사용자 지정 형식 지정자는 시간을 0부터 23까지의 숫자로 나타냅니다. 즉, 자정 이후의 시간을 계산하는 24시간(0부터 시작) 형식으로 나타냅니다. 한 자리 시간의 경우 앞에 0이 표시되지 않습니다.
 
@@ -334,6 +356,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="HH_Specifier"></a> 
+
 ## <a name="the-hh-custom-format-specifier"></a>"HH" 사용자 지정 형식 지정자
  "HH" 사용자 지정 형식 지정자는 임의 개수의 추가 "H" 지정자와 함께 시간을 00부터 23까지의 숫자로 나타냅니다. 즉, 자정 이후의 시간을 계산하는 24시간(0부터 시작) 형식으로 나타냅니다. 한 자리 시간의 경우 앞에 0이 표시됩니다.
 
@@ -345,6 +368,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="KSpecifier"></a> 
+
 ## <a name="the-k-custom-format-specifier"></a>"K" 사용자 지정 형식 지정자
  "K" 사용자 지정 형식 지정자는 날짜 및 시간 값의 표준 시간대 정보를 나타냅니다. 이 형식 지정자를 <xref:System.DateTime> 값과 함께 사용할 경우 결과 문자열은 <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> 속성 값에 의해 정의됩니다.
 
@@ -366,6 +390,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="mSpecifier"></a> 
+
 ## <a name="the-m-custom-format-specifier"></a>"m" 사용자 지정 형식 지정자
  "m" 사용자 지정 형식 지정자는 분을 0부터 59까지의 숫자로 나타냅니다. 분은 마지막 시간 이후 경과한 총 분 수를 나타냅니다. 한 자리 분의 경우 앞에 0이 표시되지 않습니다.
 
@@ -379,6 +404,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="mmSpecifier"></a> 
+
 ## <a name="the-mm-custom-format-specifier"></a>"mm" 사용자 지정 형식 지정자
  "mm" 사용자 지정 형식 지정자는 임의 개수의 추가 "m" 지정자와 함께 분을 00부터 59까지의 숫자로 나타냅니다. 분은 마지막 시간 이후 경과한 총 분 수를 나타냅니다. 한 자리 분의 경우 앞에 0이 표시됩니다.
 
@@ -390,6 +416,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="M_Specifier"></a> 
+
 ## <a name="the-m-custom-format-specifier"></a>"M" 사용자 지정 형식 지정자
  "M" 사용자 지정 형식 지정자는 월을 1부터 12까지의 숫자(또는 13월까지 있는 역법의 경우 1부터 13까지의 숫자)로 표현합니다. 한 자리 월의 경우 앞에 0이 표시되지 않습니다.
 
@@ -403,6 +430,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="MM_Specifier"></a> 
+
 ## <a name="the-mm-custom-format-specifier"></a>"MM" 사용자 지정 형식 지정자
  "MM" 사용자 지정 형식 지정자는 월을 01부터 12까지의 숫자(또는 13월까지 있는 역법의 경우 01부터 13까지의 숫자)로 표현합니다. 한 자리 월의 경우 앞에 0이 표시됩니다.
 
@@ -414,6 +442,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="MMM_Specifier"></a> 
+
 ## <a name="the-mmm-custom-format-specifier"></a>"MMM" 사용자 지정 형식 지정자
  "MMM" 사용자 지정 형식 지정자는 월의 약식 이름을 나타냅니다. 월의 지역화된 약식 이름은 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> 속성에서 검색됩니다.
 
@@ -425,6 +454,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="MMMM_Specifier"></a> 
+
 ## <a name="the-mmmm-custom-format-specifier"></a>"MMMM" 사용자 지정 형식 지정자
  "MMMM" 사용자 지정 형식 지정자는 월의 전체 이름을 나타냅니다. 월의 지역화된 이름은 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> 속성에서 검색됩니다.
 
@@ -436,6 +466,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="sSpecifier"></a> 
+
 ## <a name="the-s-custom-format-specifier"></a>"s" 사용자 지정 형식 지정자
  "s" 사용자 지정 형식 지정자는 초를 0부터 59까지의 숫자로 나타냅니다. 결과는 마지막 분 이후 경과한 총 초 수를 나타냅니다. 한 자리 초의 경우 앞에 0이 표시되지 않습니다.
 
@@ -449,6 +480,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ssSpecifier"></a> 
+
 ## <a name="the-ss-custom-format-specifier"></a>"ss" 사용자 지정 형식 지정자
  "ss" 사용자 지정 형식 지정자는 임의 개수의 추가 "s" 지정자와 함께 초를 00부터 59까지의 숫자로 나타냅니다. 결과는 마지막 분 이후 경과한 총 초 수를 나타냅니다. 한 자리 초의 경우 앞에 0이 표시됩니다.
 
@@ -460,6 +492,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="tSpecifier"></a> 
+
 ## <a name="the-t-custom-format-specifier"></a>"t" 사용자 지정 형식 지정자
  "t" 사용자 지정 형식 지정자는 AM/PM 지정자의 첫 문자를 나타냅니다. 적절한 지역화된 지정자는 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> 또는 <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> 속성에서 검색됩니다. AM 지정자는 0:00:00(자정)부터 11:59:59.999까지의 모든 시간에 사용되고 PM 지정자는 12:00:00(정오)부터 23:59:59.999까지의 모든 시간에 사용됩니다.
 
@@ -473,6 +506,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ttSpecifier"></a> 
+
 ## <a name="the-tt-custom-format-specifier"></a>"tt" 사용자 지정 형식 지정자
  "tt" 사용자 지정 형식 지정자는 임의 개수의 추가 "t" 지정자와 함께 전체 AM/PM 지정자를 나타냅니다. 적절한 지역화된 지정자는 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> 또는 <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> 속성에서 검색됩니다. AM 지정자는 0:00:00(자정)부터 11:59:59.999까지의 모든 시간에 사용되고 PM 지정자는 12:00:00(정오)부터 23:59:59.999까지의 모든 시간에 사용됩니다.
 
@@ -486,6 +520,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="ySpecifier"></a> 
+
 ## <a name="the-y-custom-format-specifier"></a>"y" 사용자 지정 형식 지정자
  "y" 사용자 지정 형식 지정자는 연도를 한 자리 또는 두 자리 숫자로 나타냅니다. 연도가 두 자리를 넘으면 마지막 두 자리 숫자만 결과에 나타납니다. 2008과 같이 두 자리 연도의 첫 번째 숫자가 0으로 시작하면 앞에 0이 표시되지 않습니다.
 
@@ -499,6 +534,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="yySpecifier"></a> 
+
 ## <a name="the-yy-custom-format-specifier"></a>"yy" 사용자 지정 형식 지정자
  "yy" 사용자 지정 형식 지정자는 연도를 두 자리 숫자로 나타냅니다. 연도가 두 자리를 넘으면 마지막 두 자리 숫자만 결과에 나타납니다. 두 자리 연도의 유효 자릿수가 두 자리 미만인 경우 두 자리가 되도록 앞에 0이 채워집니다.
 
@@ -515,6 +551,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="yyySpecifier"></a> 
+
 ## <a name="the-yyy-custom-format-specifier"></a>"yyy" 사용자 지정 형식 지정자
  "yyy" 사용자 지정 형식 지정자는 연도를 최소 세 자리 숫자로 나타냅니다. 연도의 유효 자릿수가 세 자리보다 많더라도 결과 문자열에 포함됩니다. 연도가 세 자리 미만인 경우 세 자리가 되도록 앞에 0이 채워집니다.
 
@@ -529,6 +566,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="yyyySpecifier"></a> 
+
 ## <a name="the-yyyy-custom-format-specifier"></a>"yyyy" 사용자 지정 형식 지정자
  "yyyy" 사용자 지정 형식 지정자는 연도를 최소 네 자리 숫자로 나타냅니다. 연도의 유효 자릿수가 네 자리보다 많더라도 결과 문자열에 포함됩니다. 연도가 네 자리 미만인 경우 네 자리가 되도록 앞에 0이 채워집니다.
 
@@ -543,6 +581,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="yyyyySpecifier"></a> 
+
 ## <a name="the-yyyyy-custom-format-specifier"></a>"yyyyy" 사용자 지정 형식 지정자
  "yyyyy" 사용자 지정 형식 지정자는 임의 개수의 추가 "y" 지정자와 함께 연도를 최소 다섯 자리 숫자로 나타냅니다. 연도의 유효 자릿수가 다섯 자리보다 많더라도 결과 문자열에 포함됩니다. 연도가 다섯 자리 미만인 경우 다섯 자리가 되도록 앞에 0이 채워집니다.
 
@@ -556,6 +595,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="zSpecifier"></a> 
+
 ## <a name="the-z-custom-format-specifier"></a>"z" 사용자 지정 형식 지정자
  <xref:System.DateTime> 값에 사용할 경우 "z" 사용자 지정 형식 지정자는 시간 단위로 측정된 UTC(Coordinated Universal Time)에서 로컬 운영 체제의 부호 있는 표준 시간대 오프셋을 나타냅니다. 이 형식 지정자는 인스턴스의 <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> 속성 값은 반영하지 않습니다. 따라서 <xref:System.DateTime> 값에는 "z" 형식 지정자를 사용하지 않는 것이 좋습니다.
 
@@ -573,6 +613,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="zzSpecifier"></a> 
+
 ## <a name="the-zz-custom-format-specifier"></a>"zz" 사용자 지정 형식 지정자
  <xref:System.DateTime> 값에 사용할 경우 "zz" 사용자 지정 형식 지정자는 시간 단위로 측정된 UTC에서 로컬 운영 체제의 부호 있는 표준 시간대 오프셋을 나타냅니다. 이 형식 지정자는 인스턴스의 <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> 속성 값은 반영하지 않습니다. 따라서 <xref:System.DateTime> 값에는 "zz" 형식 지정자를 사용하지 않는 것이 좋습니다.
 
@@ -588,6 +629,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="zzzSpecifier"></a> 
+
 ## <a name="the-zzz-custom-format-specifier"></a>"zzz" 사용자 지정 형식 지정자
  <xref:System.DateTime> 값에 사용할 경우 "zzz" 사용자 지정 형식 지정자는 시간 및 분 단위로 측정된 UTC에서 로컬 운영 체제의 부호 있는 표준 시간대 오프셋을 나타냅니다. 이 형식 지정자는 인스턴스의 <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> 속성 값은 반영하지 않습니다. 따라서 <xref:System.DateTime> 값에는 "zzz" 형식 지정자를 사용하지 않는 것이 좋습니다.
 
@@ -603,6 +645,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="timeSeparator"></a> 
+
 ## <a name="the--custom-format-specifier"></a>":" 사용자 지정 형식 지정자
  ":" 사용자 지정 형식 지정자는 시, 분, 초를 구분하는 데 사용되는 시간 구분 기호를 나타냅니다. 적절한 지역화된 시간 구분 기호는 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> 속성에서 검색됩니다.
 
@@ -614,6 +657,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="dateSeparator"></a> 
+
 ## <a name="the--custom-format-specifier"></a>"/" 사용자 지정 형식 지정자
  "/" 사용자 지정 형식 지정자는 년, 월, 일을 구분하는 데 사용되는 날짜 구분 기호를 나타냅니다. 적절한 지역화된 날짜 구분 기호는 현재 또는 지정된 문화권의 <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A?displayProperty=nameWithType> 속성에서 검색됩니다.
 
@@ -625,6 +669,7 @@ ms.locfileid: "42999182"
  [표로 이동](#table)
 
 <a name="Literals"></a> 
+
 ## <a name="character-literals"></a>문자 리터럴
  사용자 지정 날짜 및 시간 형식 문자열에서 다음 문자는 예약되었으며 항상 형식 지정 문자 또는 ", ', / 및 \\의 경우 특수 문자로 해석됩니다.
 
@@ -644,22 +689,24 @@ ms.locfileid: "42999182"
 
  문자가 결과 문자열에 포함되거나 입력 문자열에서 성공적으로 구문 분석될 수 있도록 하기 위해 문자를 예약 문자가 아니라 리터럴 문자로 해석되도록 지정하는 두 가지 방법이 있습니다.
 
--   각 예약된 문자를 이스케이프합니다. 자세한 내용은 [이스케이프 문자 사용](#escape)을 참조하세요.
+- 각 예약된 문자를 이스케이프합니다. 자세한 내용은 [이스케이프 문자 사용](#escape)을 참조하세요.
+  
+  다음 예제에는 형식 문자열에서 현지 표준 시간대를 나타내는 리터럴 문자 "pst"(태평양 표준시)가 포함되어 있습니다. "s"와 "t"는 둘 다 사용자 지정 형식 문자열이므로 두 문자를 문자 리터럴로 해석되도록 이스케이프해야 합니다.
+  
+  [!code-csharp-interactive[Formatting.DateAndTime.Custom#21](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx2.cs#21)]
+  [!code-vb[Formatting.DateAndTime.Custom#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx2.vb#21)]
 
-     다음 예제에는 형식 문자열에서 현지 표준 시간대를 나타내는 리터럴 문자 "pst"(태평양 표준시)가 포함되어 있습니다. "s"와 "t"는 둘 다 사용자 지정 형식 문자열이므로 두 문자를 문자 리터럴로 해석되도록 이스케이프해야 합니다.
-
-     [!code-csharp-interactive[Formatting.DateAndTime.Custom#21](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx2.cs#21)]
-     [!code-vb[Formatting.DateAndTime.Custom#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx2.vb#21)]
-
--   전체 리터럴 문자열을 따옴표나 아포스트로피로 묶습니다. 다음 예제는 "pst"가 따옴표로 묶여 구분된 전체 문자열을 문자 리터럴로 해석해야 한다는 점을 제외하고 이전 예제와 같습니다.
-
-     [!code-csharp-interactive[Formatting.DateAndTime.Custom#22](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx3.cs#22)]
-     [!code-vb[Formatting.DateAndTime.Custom#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx3.vb#22)]
+- 전체 리터럴 문자열을 따옴표나 아포스트로피로 묶습니다. 다음 예제는 "pst"가 따옴표로 묶여 구분된 전체 문자열을 문자 리터럴로 해석해야 한다는 점을 제외하고 이전 예제와 같습니다.
+  
+  [!code-csharp-interactive[Formatting.DateAndTime.Custom#22](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/LiteralsEx3.cs#22)]
+  [!code-vb[Formatting.DateAndTime.Custom#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/LiteralsEx3.vb#22)]
 
 <a name="Notes"></a> 
+
 ## <a name="notes"></a>노트
 
 <a name="UsingSingleSpecifiers"></a> 
+
 ### <a name="using-single-custom-format-specifiers"></a>단일 사용자 지정 형식 지정자 사용
  사용자 지정 날짜 및 시간 형식 문자열은 둘 이상의 문자로 구성됩니다. 날짜 및 시간 형식 지정 메서드는 단일 문자 문자열을 표준 날짜 및 시간 형식 문자열로 해석합니다. 날짜 및 시간 형식 지정 메서드가 문자를 올바른 형식 지정자로 인식하지 못하면 <xref:System.FormatException>이 throw됩니다. 예를 들어, "h" 지정자로만 구성된 형식 문자열은 표준 날짜 및 시간 형식 문자열로 해석됩니다. 그러나 이 경우 "h" 표준 날짜 및 시간형식 지정자가 없으므로 예외가 발생합니다.
 
@@ -671,6 +718,7 @@ ms.locfileid: "42999182"
  [!code-vb[Formatting.DateAndTime.Custom#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/literal1.vb#16)]
 
 <a name="escape"></a> 
+
 ### <a name="using-the-escape-character"></a>이스케이프 문자 사용
  형식 문자열의 "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":" 또는 "/" 문자는 리터럴 문자가 아닌 사용자 지정 형식 지정자로 해석됩니다. 문자가 형식 지정자로 해석되지 않도록 하려면 해당 문자 앞에 이스케이프 문자인 백슬래시(\\)를 삽입하면 됩니다. 이스케이프 문자는 뒤에 오는 문자가 변경되지 않은 상태로 결과 문자열에 포함되어야 하는 문자 리터럴임을 나타냅니다.
 
@@ -695,5 +743,9 @@ ms.locfileid: "42999182"
  대부분의 사용자 지정 날짜 및 시간 형식 지정자로 생성되는 결과 문자열도 현재 <xref:System.Globalization.DateTimeFormatInfo> 개체의 속성에 따라 달라집니다. 따라서 응용 프로그램에서는 해당 <xref:System.Globalization.DateTimeFormatInfo> 속성을 변경하여 일부 사용자 지정 날짜 및 시간 형식 지정자에서 생성된 결과를 변경할 수 있습니다. 예를 들어, "ddd" 형식 지정자는 <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> 문자열 배열에서 찾은 약식 요일 이름을 결과 문자열에 추가합니다. 마찬가지로 "MMMM" 형식 지정자는 <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> 문자열 배열에서 찾은 전체 월 이름을 결과 문자열에 추가합니다.
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.DateTime?displayProperty=nameWithType> <xref:System.IFormatProvider?displayProperty=nameWithType>
- [서식 형식](../../../docs/standard/base-types/formatting-types.md) [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) [샘플: .NET Framework 4 서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.IFormatProvider?displayProperty=nameWithType>
+- [형식 서식 지정](../../../docs/standard/base-types/formatting-types.md)
+- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [샘플: .NET Framework 4 서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

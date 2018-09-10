@@ -7,12 +7,12 @@ helpviewer_keywords:
 - examples [Visual Basic], text files
 - writing to files [Visual Basic], in My Documents
 ms.assetid: 1c726124-781d-4976-9baa-ed46814ff3fe
-ms.openlocfilehash: 94532e27f38eb0f8b1ca91d424a97aba1b9f5173
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 894458ad6d69b8bb2836518b90723703733208b6
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33589672"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264521"
 ---
 # <a name="how-to-write-text-to-files-in-the-my-documents-directory-in-visual-basic"></a>방법: Visual Basic에서 내 문서 디렉터리의 파일에 텍스트 쓰기
 `My.Computer.FileSystem.SpecialDirectories` 개체를 사용하면 **MyDocuments** 디렉터리 등의 특수 디렉터리에 액세스할 수 있습니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "33589672"
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  부분 신뢰 컨텍스트에서 실행하는 경우 권한 부족으로 인해 코드에서 예외를 throw할 수 있습니다. 자세한 내용은 [코드 액세스 보안 기본 사항](../../../../framework/misc/code-access-security-basics.md)을 참조하세요.  
   
- 이 예제에서는 새 파일을 만듭니다. 응용 프로그램에서 파일을 만들어야 하는 경우 해당 응용 프로그램에 폴더에 대한 만들기 권한이 있어야 합니다. 권한은 액세스 제어 목록을 사용하여 설정됩니다. 파일이 이미 있는 경우에는 응용 프로그램에 더 낮은 권한인 쓰기 권한만 있으면 됩니다. 가능한 경우 배포하는 동안 파일을 만들고, 폴더에 대한 만들기 권한 대신 단일 파일에 대한 읽기 권한만 부여하는 것이 더 안전합니다. 또한 루트 폴더나 **Program Files** 폴더보다 사용자 폴더에 데이터를 쓰는 것이 더 안전합니다. 자세한 내용은 [ACL 기술 개요](http://msdn.microsoft.com/library/06fbf66d-6f02-4378-b863-b2f12e349045)를 참조하세요.  
+ 이 예제에서는 새 파일을 만듭니다. 응용 프로그램에서 파일을 만들어야 하는 경우 해당 응용 프로그램에 폴더에 대한 만들기 권한이 있어야 합니다. 권한은 액세스 제어 목록을 사용하여 설정됩니다. 파일이 이미 있는 경우에는 응용 프로그램에 더 낮은 권한인 쓰기 권한만 있으면 됩니다. 가능한 경우 배포하는 동안 파일을 만들고, 폴더에 대한 만들기 권한 대신 단일 파일에 대한 읽기 권한만 부여하는 것이 더 안전합니다. 또한 루트 폴더나 **Program Files** 폴더보다 사용자 폴더에 데이터를 쓰는 것이 더 안전합니다. 자세한 내용은 [ACL 기술 개요](https://msdn.microsoft.com/library/06fbf66d-6f02-4378-b863-b2f12e349045)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.IO.Path.Combine%2A?displayProperty=nameWithType>  

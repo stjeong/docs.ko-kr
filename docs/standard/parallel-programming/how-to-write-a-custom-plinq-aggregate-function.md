@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 5a70dd49-ab2a-4798-b551-196ee7042b1a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a7aa2a8e5d9695c08d1c98e05cdd1eaa4d9a5318
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 82e4ed0f93d7c41bc36427159442cc88b0a7867d
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580912"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44038837"
 ---
 # <a name="how-to-write-a-custom-plinq-aggregate-function"></a>방법: 사용자 지정 PLINQ 집계 함수 작성
 이 예제는 <xref:System.Linq.ParallelEnumerable.Aggregate%2A> 메서드를 사용하여 소스 시퀀스에 사용자 지정 집계 함수를 적용하는 방법을 보여줍니다.  
@@ -33,6 +33,7 @@ ms.locfileid: "33580912"
   
  람다 식 본문이 단일식으로 구성된 경우 <xref:System.Func%602?displayProperty=nameWithType> 대리자의 반환 값은 식의 값입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.ParallelEnumerable>  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq.ParallelEnumerable>  
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

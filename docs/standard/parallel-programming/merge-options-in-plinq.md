@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: e8f7be3b-88de-4f33-ab14-dc008e76c1ba
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7df080185db9631e47bb7a886f6e0db894974a6b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0652f5f3f3629257f8f67c6b4a0b9551ef547b62
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33584635"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44221898"
 ---
 # <a name="merge-options-in-plinq"></a>PLINQ의 병합 옵션
 쿼리가 병렬로 실행되는 경우 여러 스레드가 동시에 여러 파트에서(보통 개별 스레드에서) 작동할 수 있도록 PLINQ가 소스 시퀀스를 분할합니다. 결과를 `foreach`(Visual Basic의 `For Each`) 루프와 같은 한 스레드에서 사용할 경우 모든 스레드의 결과를 하나의 시퀀스로 다시 병합해야 합니다. PLINQ가 수행하는 병합의 종류는 쿼리에 있는 연산자에 따라 다릅니다. 예를 들어, 결과에 새 순서를 부과하는 연산자는 모든 스레드의 모든 요소를 버퍼링해야 합니다. 소비 스레드의 관점에서(또한 응용 프로그램 사용자의 관점에서) 완전히 버퍼링된 쿼리는 첫 번째 결과를 생성하기 전에 한동안 실행될 수 있습니다. 다른 연산자는 기본적으로, 부분적으로 버퍼링되므로 일괄 처리로 결과가 생성됩니다. <xref:System.Linq.ParallelEnumerable.ForAll%2A> 연산자는 기본적으로 버퍼링되지 않습니다. 이 연산자는 모든 스레드에서 모든 요소를 즉시 생성합니다.  
@@ -65,6 +65,7 @@ ms.locfileid: "33584635"
   
  병합 옵션을 처리하는 일부 연산자의 기능은 소스 시퀀스의 유형과 <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> 연산자가 쿼리에서 이전에 사용되었는지 여부에 따라 다릅니다. <xref:System.Linq.ParallelEnumerable.ForAll%2A>은 항상 <xref:System.Linq.ParallelMergeOptions.NotBuffered>이므로 해당 요소를 즉시 생성합니다. <xref:System.Linq.ParallelEnumerable.OrderBy%2A>는 항상 <xref:System.Linq.ParallelMergeOptions.FullyBuffered>입니다. 이 연산자는 생성하기 전에 전체 목록을 정렬해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
- [방법: PLINQ에서 병합 옵션 지정](../../../docs/standard/parallel-programming/how-to-specify-merge-options-in-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
+- [방법: PLINQ에서 병합 옵션 지정](../../../docs/standard/parallel-programming/how-to-specify-merge-options-in-plinq.md)

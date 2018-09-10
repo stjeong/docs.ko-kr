@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 394624d6-4da0-430a-8a88-46efe40f14de
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d265d9247d00a20770d401d62fd1e065e2ef1627
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dd5426de388ba2c7a22d66ce01d56a3139e36e38
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576395"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44249168"
 ---
 # <a name="rules-for-inferring-simple-types"></a>단순 형식 유추 규칙
 <xref:System.Xml.Schema.XmlSchemaInference> 클래스가 특성 및 요소에 대한 데이터 형식을 유추하는 방법을 설명합니다.  
@@ -75,7 +75,8 @@ ms.locfileid: "33576395"
 |`xsi:schemaLocation`|`xsi:schemaLocation`이 나타나면 무시됩니다.|  
 |`xsi:noNamespaceSchemaLocation`|`xsi:noNamespaceSchemaLocation`이 나타나면 무시됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
- [XML 문서에서 스키마 유추](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)  
- [스키마 노드 형식 및 구조 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
+- [XML 문서에서 스키마 유추](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)  
+- [스키마 노드 형식 및 구조 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)

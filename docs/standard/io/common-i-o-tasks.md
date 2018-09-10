@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bf00c380-706a-4e38-b829-454a480629fc
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bf0caa0513881d5a1096478d8b29fc708ac3d3ce
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f205040e0f044ab04112683c7bdb8edccdfb9f71
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577657"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44210223"
 ---
 # <a name="common-io-tasks"></a>공통적인 I/O 작업
 <xref:System.IO> 네임스페이스에는 파일, 디렉터리 및 스트림에 대해 읽기, 쓰기 등의 다양한 작업을 수행할 수 있게 해 주는 여러 클래스가 있습니다. 자세한 내용은 [파일 및 스트림 I/O](../../../docs/standard/io/index.md)를 참조하세요.  
@@ -53,7 +53,8 @@ ms.locfileid: "33577657"
 |디렉터리 크기 찾기|<xref:System.IO.Directory?displayProperty=nameWithType> 클래스|  
 |디렉터리가 있는지 확인|<xref:System.IO.Directory.Exists%2A?displayProperty=nameWithType> 메서드|  
   
-## <a name="see-also"></a>참고 항목  
- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)  
- [스트림 작성](../../../docs/standard/io/composing-streams.md)  
- [비동기 파일 I/O](../../../docs/standard/io/asynchronous-file-i-o.md)
+## <a name="see-also"></a>참고 항목
+
+- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)  
+- [스트림 작성](../../../docs/standard/io/composing-streams.md)  
+- [비동기 파일 I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

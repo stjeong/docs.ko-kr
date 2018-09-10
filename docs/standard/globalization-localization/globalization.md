@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9eb57aa0d6645958691c0003b07db6e8bb844fc9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5b59e0bda45b0b45b49c22d49ec2556fbcfef75d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579576"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44221911"
 ---
 # <a name="globalization"></a>전역화
 전역화는 다양한 문화권의 사용자를 위해 현지화된 인터페이스와 국가별 데이터를 지원하는 지역화 대비 응용 프로그램을 디자인하고 개발하는 작업을 수반합니다. 디자인 단계를 시작하기 전에 앱에서 지원할 문화권을 결정해야 합니다. 앱이 기본적으로 단일 문화권이나 국가를 대상으로 하더라도, 다른 문화권이나 국가의 사용자에게 쉽게 확장될 수 있도록 디자인하고 작성할 수 있습니다.  
@@ -369,6 +369,7 @@ ms.locfileid: "33579576"
   
 -   사용자는 제어판의 **국가 및 언어** 앱을 사용하여 문화권별 설정을 사용자 지정할 수 있습니다. <xref:System.Globalization.CultureInfo> 개체를 인스턴스화할 때, <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> 생성자를 호출하여 사용자 지정을 반영할지 여부를 결정할 수 있습니다. 일반적으로 최종 사용자 앱에 대해서는 사용자가 예상하는 서식으로 사용자에게 데이터가 표시되도록 사용자 기본 설정을 고려해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
- [문자열 사용에 대한 모범 사례](../../../docs/standard/base-types/best-practices-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- [전역화 및 지역화](../../../docs/standard/globalization-localization/index.md)  
+- [문자열 사용에 대한 모범 사례](../../../docs/standard/base-types/best-practices-strings.md)

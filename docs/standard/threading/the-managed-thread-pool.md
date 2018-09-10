@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 2be05b06-a42e-4c9d-a739-96c21d673927
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3894229ff5561e50d42a36f576a89ee7bf01c067
-ms.sourcegitcommit: 78bcb629abdbdbde0e295b4e81f350a477864aba
+ms.openlocfilehash: f7721ffaebfefadee332c923d867e68204b5205f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "33592420"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44268762"
 ---
 # <a name="the-managed-thread-pool"></a>관리되는 스레드 풀
 
@@ -87,12 +87,12 @@ ms.locfileid: "33592420"
   
 ## <a name="see-also"></a>참고 항목
 
- <xref:System.Threading.ThreadPool?displayProperty=nameWithType>  
- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>  
- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>  
- [TPL(작업 병렬 라이브러리)](../parallel-programming/task-parallel-library-tpl.md)  
- [방법: 작업에서 값 반환](../parallel-programming/how-to-return-a-value-from-a-task.md)  
- [스레딩 개체 및 기능](threading-objects-and-features.md)  
- [스레드 및 스레딩](threads-and-threading.md)  
- [비동기 파일 I/O](../io/asynchronous-file-i-o.md)  
- [타이머](timers.md)  
+- <xref:System.Threading.ThreadPool?displayProperty=nameWithType>  
+- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>  
+- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>  
+- [TPL(작업 병렬 라이브러리)](../parallel-programming/task-parallel-library-tpl.md)  
+- [방법: 작업에서 값 반환](../parallel-programming/how-to-return-a-value-from-a-task.md)  
+- [스레딩 개체 및 기능](threading-objects-and-features.md)  
+- [스레드 및 스레딩](threads-and-threading.md)  
+- [비동기 파일 I/O](../io/asynchronous-file-i-o.md)  
+- [타이머](timers.md)  

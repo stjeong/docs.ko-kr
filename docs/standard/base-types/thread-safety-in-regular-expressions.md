@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 7c4a167b-5236-4cde-a2ca-58646230730f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 79ca0b92cf79ca9be023925f064c1c7c16b3c9ac
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1c0bcab0757bc48f6a8216dd5878f0289e49a275
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567720"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44208168"
 ---
 # <a name="thread-safety-in-regular-expressions"></a>정규식의 스레드로부터의 안전성
 <xref:System.Text.RegularExpressions.Regex> 클래스 자체는 스레드로부터 안전하고 변경할 수 없습니다(읽기 전용). 즉, 모든 스레드에서 **Regex** 개체를 만들어 스레드 간에 공유할 수 있습니다. 일치하는 메서드는 모든 스레드에서 호출할 수 있고 전역 상태를 변경하지 않습니다.  
@@ -27,5 +27,6 @@ ms.locfileid: "33567720"
   
  열거자만이 예외입니다. 응용 프로그램은 컬렉션 열거자에 대한 호출을 직렬화해야 합니다. 규칙은 다음과 같습니다. 컬렉션을 둘 이상의 스레드에서 동시에 열거할 수 있는 경우 열거자에서 트래버스하는 컬렉션의 루트 개체에 대한 열거자 메서드 동기화해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)
+## <a name="see-also"></a>참고 항목
+
+- [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)

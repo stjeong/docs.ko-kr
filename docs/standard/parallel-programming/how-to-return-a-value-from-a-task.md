@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c4bc0f44-eba2-4e96-9e03-1cc787461e61
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f44b81d1b4b0dc0d43c3f360cd0609831f2dacc4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2af0f82e66da1c8db5e17863dfad861c8a7d195e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580538"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44217219"
 ---
 # <a name="how-to-return-a-value-from-a-task"></a>방법: 작업에서 값 반환
 다음 예제에서는 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> 형식을 사용하여 <xref:System.Threading.Tasks.Task%601.Result%2A> 속성의 값을 반환하는 방법을 보여 줍니다. 이 예제를 실행하려면 C:\Users\Public\Pictures\Sample Pictures\ 디렉터리가 있고 파일을 포함해야 합니다.  
@@ -28,6 +28,7 @@ ms.locfileid: "33580538"
   
  하나의 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> 결과를 연속 작업에 전달하는 방법을 보려면 [연속 작업을 사용하여 작업 연결](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [작업 기반 비동기 프로그래밍](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)  
- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [작업 기반 비동기 프로그래밍](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)  
+- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

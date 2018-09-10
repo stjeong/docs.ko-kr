@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 9d187d4f-c76e-4223-a670-cc290783ce47
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b5b4ca249928200ddfc9dcd133ac673261046fb2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ef2b5b200f95cdfac9b08a33c328c1dfb797e59e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570174"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44179166"
 ---
 # <a name="xml-document-object-model-dom-hierarchy"></a>XML DOM(문서 개체 모델) 계층 구조
 다음 그림은 관련 위치에 클래스 이름과 함께 괄호 안에 W3C(World Wide Web 컨소시엄) 이름을 표시하여 XML DOM(문서 개체 모델)에 대한 클래스 계층 구조를 보여 줍니다.  
@@ -38,5 +38,6 @@ XML DOM(문서 개체 모델) 계층 구조
   
  **XmlLinkedNode** 클래스는 **XmlNode**에서 상속합니다. 이 클래스의 용도는 **XmlNode**의 **PreviousSibling** 및 **NextSibling** 메서드를 재정의하는 것입니다. 그런 다음, 이처럼 재정의된 메서드를 서로 계층 구조를 이루는 형제 클래스인 **XmlCharacterData**, **XmlDeclaration**, **XmlDocumentType**, **XmlElement**, **XmlEntityReference** 및 **XmlProcessingInstruction**에서 상속하여 사용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d3eb24d76ffb07b36b837056ffa5cde0cbd37f5f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d4b1fb4abe8ca0ba7afcefe996de59ceaf67a249
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570549"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44252781"
 ---
 # <a name="support-for-the-msxslnode-set-function"></a>msxsl:node-set() 함수에 대한 지원
 `msxsl:node-set` 함수를 사용하면 결과 트리 조각을 노드 집합으로 변환할 수 있습니다. 결과로 만들어지는 노드 집합은 트리의 루트 노드로서 항상 단일 노드를 포함합니다.  
@@ -53,5 +53,6 @@ ms.locfileid: "33570549"
 <authors><author>Michael Howard</author><author>Michael Kay</author></authors>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+## <a name="see-also"></a>참고 항목
+
+- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

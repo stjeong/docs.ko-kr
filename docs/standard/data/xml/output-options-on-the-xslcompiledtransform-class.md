@@ -5,11 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 91ce8cba-386c-411e-bb38-0891a0393c0a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: aa1049528458d558409ac1ace215c7d5b10f520e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 694d2be51d025ab054caf19e4aa2900216ad5b2e
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44183488"
 ---
 # <a name="output-options-on-the-xslcompiledtransform-class"></a>XslCompiledTransform 클래스의 출력 옵션
 이 항목에서는 사용할 수 있는 XSLT 출력 옵션에 대해 설명합니다. 스타일시트나 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> 메서드에서 출력 옵션을 지정할 수 있습니다.  
@@ -56,5 +57,6 @@ ms.lasthandoff: 05/04/2018
   
 -   빈 태그를 쓰는 경우 `<myElement />`와 같이 요소 이름의 마지막 문자와 백슬래시 사이에 공백이 쓰여집니다. 그러면 이전 브라우저에 생성된 HTML 페이지가 올바르게 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)
+## <a name="see-also"></a>참고 항목
+
+- [XSLT 변환](../../../../docs/standard/data/xml/xslt-transformations.md)

@@ -9,12 +9,12 @@ dev_langs:
 ms.assetid: cce69574-5861-4a30-b730-2e18d915d8ee
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b02fd72c705d264394b83b89fc7ec802be7e502a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5f2da2849bdf9ce922a89bf25e1758d868ee5ea8
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575364"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44198259"
 ---
 # <a name="traversing-xml-schemas"></a>XML 스키마 통과
 SOM(스키마 개체 모델) API를 사용하여 XML 스키마를 통과하면 SOM에 저장된 요소, 특성 및 형식에 액세스할 수 있습니다. SOM에 로드된 XML 스키마를 통과하는 것은 SOM API를 사용하여 XML 스키마를 편집하는 첫 번째 단계이기도 합니다.  
@@ -67,11 +67,12 @@ SOM(스키마 개체 모델) API를 사용하여 XML 스키마를 통과하면 S
   
  [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md) 항목의 코드 예제에서는 <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes%2A?displayProperty=nameWithType> 컬렉션을 사용하여 `Customer` 요소에 `CustomerId` 특성을 추가했습니다. 이 속성은 pre-schema-compilation 속성입니다. 해당 Post-Schema-Compilation-Infoset 속성은 형식 파생을 통해 상속된 특성을 비롯하여 복합 형식의 모든 특성을 보유하는 <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses%2A?displayProperty=nameWithType> 컬렉션입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 스키마 개체 모델 개요](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
+- [XML 스키마 읽기 및 쓰기](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
+- [XML 스키마 빌드](../../../../docs/standard/data/xml/building-xml-schemas.md)  
+- [XML 스키마 편집](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
+- [XML 스키마 포함하기 또는 가져오기](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
+- [스키마 컴파일을 위한 XmlSchemaSet](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

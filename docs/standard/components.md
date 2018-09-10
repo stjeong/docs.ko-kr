@@ -5,12 +5,12 @@ author: cartermp
 ms.author: mairaw
 ms.date: 08/23/2017
 ms.technology: dotnet-standard
-ms.openlocfilehash: 2415f0c360118389bc7a3ae3aaf74ca8daf24422
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e131ab48b666f2d22d8bd02e41ed76e415a2597d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33574809"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262277"
 ---
 # <a name="net-architectural-components"></a>.NET 아키텍처 구성 요소
 
@@ -68,11 +68,11 @@ UWP에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](https:
 ## <a name="net-runtimes"></a>.NET 런타임
 
 런타임은 관리되는 프로그램에 대한 실행 환경입니다. OS는 런타임 환경의 일부이지만 .NET 런타임의 일부는 아닙니다. 다음은 .NET 런타임의 몇 가지 예입니다.
- 
- - .NET Framework에 대한 CLR(공용 언어 런타임)
- - .NET Core에 대한 CoreCLR(Core 공용 언어 런타임)
- - 유니버설 Windows 플랫폼용 .NET 네이티브 
- - Xamarin.iOS, Xamarin.Android, Xamarin.Mac 및 Mono 데스크톱 프레임워크에 대한 Mono 런타임
+
+- .NET Framework에 대한 CLR(공용 언어 런타임)
+- .NET Core에 대한 CoreCLR(Core 공용 언어 런타임)
+- 유니버설 Windows 플랫폼용 .NET 네이티브 
+- Xamarin.iOS, Xamarin.Android, Xamarin.Mac 및 Mono 데스크톱 프레임워크에 대한 Mono 런타임
 
 ## <a name="net-tooling-and-common-infrastructure"></a>.NET 도구 및 공통 인프라
 
@@ -85,11 +85,11 @@ UWP에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](https:
 - [CAKE](https://cakebuild.net/) 및 [FAKE](https://fake.build/) 등의 오픈 소스 빌드 오케스트레이션 도구
 
 ## <a name="see-also"></a>참고 항목
-[서버 앱에 대해 .NET Core와 .NET Framework 중에 선택](choosing-core-framework-server.md)   
-[.NET Standard](net-standard.md)  
-[.NET Core 가이드](../core/index.md)  
-[.NET Framework 가이드](../framework/index.md)  
-[C# 가이드](../csharp/index.md)  
-[F# 가이드](../fsharp/index.md)  
-[VB.NET 가이드](../visual-basic/index.md)  
 
+- [서버 앱에 대해 .NET Core와 .NET Framework 중에 선택](choosing-core-framework-server.md)   
+- [.NET Standard](net-standard.md)  
+- [.NET Core 가이드](../core/index.md)  
+- [.NET Framework 가이드](../framework/index.md)  
+- [C# 가이드](../csharp/index.md)  
+- [F# 가이드](../fsharp/index.md)  
+- [VB.NET 가이드](../visual-basic/index.md)  

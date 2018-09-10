@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: e9c1ada4-ac57-4704-87cb-2f5117f8151d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bd00c91daf2811ecba01b77d51a74740027ced5e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c49f7ad5162c9e2759ec8afed217451b4bcf04ff
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33581588"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227625"
 ---
 # <a name="how-to-use-joinblock-to-read-data-from-multiple-sources"></a>방법: JoinBlock을 사용하여 여러 소스에서 데이터 읽기
 이 문서에서는 <xref:System.Threading.Tasks.Dataflow.JoinBlock%602> 클래스를 사용하여 여러 소스에서 데이터를 사용할 수 있는 경우 작업을 수행하는 방법을 설명합니다. 또한 non-greedy 모드를 사용하여 여러 조인 블록이 데이터 소스를 보다 효율적으로 공유할 수 있도록 하는 방법을 보여 줍니다.
@@ -46,5 +46,6 @@ ms.locfileid: "33581588"
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  non-greedy 조인을 사용하면 응용 프로그램에서 교착 상태를 방지하는 데도 도움이 될 수 있습니다. 소프트웨어 응용 프로그램에서 *교착 상태*는 두 개 이상의 프로세스가 각각 리소스를 보유하고 함께 다른 프로세스가 다른 리소스를 해제할 때까지 대기하는 경우 발생합니다. 두 가지 <xref:System.Threading.Tasks.Dataflow.JoinBlock%602> 개체를 정의하는 응용 프로그램의 경우, 두 개체는 각각 두 공유 소스 블록에서 데이터를 읽습니다. greedy 모드에서 한 조인 블록이 첫 번째 소스에서 읽고 두 번째 조인 블록이 두 번째 소스에서 읽는 경우 두 조인 블록은 상대방이 리소스를 해제하기를 서로 기다리기 때문에 응용 프로그램에서 교착 상태가 발생할 수 있습니다. non-greedy 모드에서는 각 조인 블록이 모든 데이터를 사용할 수 있는 경우에만 소스에서 읽으므로 교착 상태의 위험이 제거됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

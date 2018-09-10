@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: ab248dab-70d4-4413-81c6-542d153fd195
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 02704ed5e396e973101bab4e5306d81f5a169d0c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1d13d4e115caa636e5d760b65bc98e195490f911
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569891"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44184095"
 ---
 # <a name="trimming-and-removing-characters-from-strings-in-net"></a>.NET에서 문자열의 문자 트리밍 및 제거
 문장을 개별 단어로 구문 분석할 경우 단어의 끝에 빈 공간(공백이라고도 함)이 있는 단어가 생길 수 있습니다. 이 경우에 **System.String** 클래스에서 trim 메서드 중 하나를 사용하여 문자열에 지정된 위치에서 공백의 수나 다른 문자를 제거할 수 있습니다. 다음 테이블에서는 사용할 수 있는 trim 메서드에 대해 설명합니다.  
@@ -90,5 +90,6 @@ ms.locfileid: "33569891"
  [!code-csharp[Conceptual.String.BasicOps#23](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/replace1.cs#23)]
  [!code-vb[Conceptual.String.BasicOps#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/replace1.vb#23)]  
   
-## <a name="see-also"></a>참고 항목  
- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)
+## <a name="see-also"></a>참고 항목
+
+- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)

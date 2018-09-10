@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bf18fb7238eb35b5ceb1624c14b83486485ddc1b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 90b3e7246046a979f3ee02e332fbb6a843ea9e8c
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579628"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43864789"
 ---
 # <a name="language-independence-and-language-independent-components"></a>언어 독립성 및 언어 독립적 구성 요소
 .NET Framework는 언어에 국한되지 않습니다. 즉, 개발자로서 .NET Framework를 대상으로 하는 많은 언어 중 하나로 개발할 수 있습니다(예: C#, C++/CLI, Eiffel, F#, IronPython, IronRuby, PowerBuilder, Visual Basic, Visual COBOL 및 Windows PowerShell). 원래 작성된 언어를 모르거나 원래의 언어 규칙을 따르지 않고도 .NET Framework를 위해 개발된 클래스 라이브러리의 형식과 멤버에 액세스할 수 있습니다. 사용자가 구성 요소 개발자일 경우 언어와 상관없이 모든 .NET Framework 응용 프로그램에서 구성 요소를 액세스할 수 있습니다.  
@@ -585,5 +585,6 @@ vbc example.vb /r:UtilityLib.dll
 csc example.cs /r:UtilityLib.dll  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.CLSCompliantAttribute>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.CLSCompliantAttribute>

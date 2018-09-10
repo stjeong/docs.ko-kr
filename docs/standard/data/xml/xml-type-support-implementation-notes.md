@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4d2d6f2932e1afeb7369c32a43ca48f55fade2e9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 51066ab6fb0fa4749befdd0f94790fa45a7ab5cf
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571412"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44191068"
 ---
 # <a name="xml-type-support-implementation-notes"></a>XML 형식 지원 구현 참고 사항
 이 항목에서는 자세히 알아야 할 몇 가지 구현 정보에 대해 설명합니다.  
@@ -47,5 +47,6 @@ ms.locfileid: "33571412"
 ### <a name="xsanyuri-and-systemuri"></a>xs:anyURI 및 System.Uri  
  상대 URI를 나타내는 `xs:anyURI`의 인스턴스가 <xref:System.Uri>로 매핑될 경우에는 <xref:System.Uri> 개체에 기본 URI가 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+## <a name="see-also"></a>참고 항목
+
+- [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

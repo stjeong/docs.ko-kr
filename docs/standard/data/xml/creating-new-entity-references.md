@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: a42f81b3-0403-4e34-b346-7d2129804e54
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0fefea6f8dfd74dfd31c7c07a158e4935ab0e02c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 67fdbcdbff64bcd91c80fbeaec0c41982b68d98f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568448"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44265223"
 ---
 # <a name="creating-new-entity-references"></a>새 엔터티 참조 만들기
 **CreateEntityReference** 메서드는 새 **XmlEntityReference** 노드를 만듭니다. XML DOM(문서 개체 모델)에서는 참조될 엔터티 이름이 이미 선언되지 않았는지 확인합니다. 선언된 경우 **XmlEntityReference** 노드의 자식 노드가 엔터티 선언 노드에서 복사됩니다. 일치하는 엔터티 선언이 없으면 entityreference 노드의 유일한 자식으로 빈 텍스트 노드가 추가됩니다. **XmlEntityReference** 노드의 자식 노드는 다른 노드의 복사본이므로 이러한 자식 노드는 읽기 전용이며 수정할 수 없습니다.  
@@ -22,5 +22,6 @@ ms.locfileid: "33568448"
   
  **XmlDataDocument**가 **XmlDocument**의 파생 클래스인 경우에도 **XmlDataDocument**는 엔터티 참조의 생성을 지원하지 않습니다. 이는 **EntityReference** 자식 노드가 읽기 전용이기 때문입니다. **EntityReference** 노드의 자식 노드는 둘 이상의 영역에 걸쳐 있을 수 있습니다. 이 경우 **EntityReference**의 일부를 포함하는 영역과 관련된 행의 일부가 읽기 전용이 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

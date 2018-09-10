@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 1167cfe6-c8aa-4096-94ba-c66c3a4edf4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c69d4d423bbdf72f2af7dad38812aa508df0067c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9fd67d5f0cb5af33dc2b79f86148557a0dca6ec4
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33580252"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44190282"
 ---
 # <a name="how-to-combine-parallel-and-sequential-linq-queries"></a>방법: 병렬 및 순차적 LINQ 쿼리 결합
 이 예제는 <xref:System.Linq.ParallelEnumerable.AsSequential%2A> 메서드를 사용하여 쿼리의 모든 후속 연산자를 순차적으로 처리하도록 PLINQ에 지시하는 방법을 보여줍니다. 순차적 처리는 일반적으로 병렬보다 느리지만 올바른 결과를 생성하는 데 필요한 경우도 있습니다.  
@@ -32,5 +32,6 @@ ms.locfileid: "33580252"
 ## <a name="compiling-the-code"></a>코드 컴파일  
  이 코드를 컴파일하고 실행하려면 [PLINQ 데이터 샘플](../../../docs/standard/parallel-programming/plinq-data-sample.md) 프로젝트에 붙여넣고, `Main`에서 메서드를 호출하는 줄을 추가하고 F5 키를 누르세요.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

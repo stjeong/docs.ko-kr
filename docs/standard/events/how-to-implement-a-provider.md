@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e702233c90155957d1de1a5a306d44d8faa41929
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 34ad5b9cc0014db05bc6e7483e389488e145beb3
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576349"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087328"
 ---
 # <a name="how-to-implement-a-provider"></a>방법: 공급자 구현
 관찰자 디자인 패턴은 데이터를 모니터링하고 알림을 보내는 공급자와 해당 공급자로부터 알림(콜백)을 받는 하나 이상의 관찰자 간에 구분이 필요합니다. 이 항목에서는 공급자를 만드는 방법을 설명합니다. 관련 항목인 [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)에서는 관찰자를 만드는 방법을 설명합니다.  
@@ -60,8 +60,9 @@ ms.locfileid: "33576349"
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#7)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IObservable%601>  
- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)  
- [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)  
- [관찰자 디자인 패턴 유용한 정보](../../../docs/standard/events/observer-design-pattern-best-practices.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IObservable%601>  
+- [관찰자 디자인 패턴](../../../docs/standard/events/observer-design-pattern.md)  
+- [방법: 관찰자 구현](../../../docs/standard/events/how-to-implement-an-observer.md)  
+- [관찰자 디자인 패턴 유용한 정보](../../../docs/standard/events/observer-design-pattern-best-practices.md)

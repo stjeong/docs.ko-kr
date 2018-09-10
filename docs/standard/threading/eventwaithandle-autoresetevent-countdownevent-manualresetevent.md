@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: cd94fc34-ac15-427f-b723-a1240a4fab7d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f818ecf52ae1179d6d32d0b76cea3cc2a8f36ea8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 2f61e614696e731a85a030e34aa4356137d9000d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43416414"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44260151"
 ---
 # <a name="eventwaithandle-autoresetevent-countdownevent-manualresetevent"></a>EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
 이벤트 대기 핸들을 통해 스레드가 서로 신호를 보내고 상대방의 신호를 대기하여 작업을 동기화할 수 있습니다. 이러한 동기화 이벤트는 Win32 대기 핸들을 기반으로 하고 신호를 보낼 때 자동으로 다시 설정되는 이벤트 및 수동으로 다시 설정되는 이벤트라는 두 가지 유형으로 나눌 수 있습니다.  
@@ -38,10 +38,11 @@ ms.locfileid: "43416414"
  [대기 핸들](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
  <xref:System.Threading.WaitHandle> 클래스는 <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.Semaphore> 및 <xref:System.Threading.Mutex> 클래스의 기본 클래스입니다. 여기에는 모든 유형의 대기 핸들에 대해 작업할 때 유용한 정적 메서드(예: <xref:System.Threading.WaitHandle.SignalAndWait%2A> 및 <xref:System.Threading.WaitHandle.WaitAll%2A>)가 포함됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.EventWaitHandle>  
- <xref:System.Threading.WaitHandle>  
- <xref:System.Threading.AutoResetEvent>  
- <xref:System.Threading.ManualResetEvent>  
- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)  
- [관리되는 스레딩 기본 사항](../../../docs/standard/threading/managed-threading-basics.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.EventWaitHandle>  
+- <xref:System.Threading.WaitHandle>  
+- <xref:System.Threading.AutoResetEvent>  
+- <xref:System.Threading.ManualResetEvent>  
+- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)  
+- [관리되는 스레딩 기본 사항](../../../docs/standard/threading/managed-threading-basics.md)

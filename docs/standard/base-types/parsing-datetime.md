@@ -16,12 +16,12 @@ helpviewer_keywords:
 - time strings
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4c093f22f77284d15e56c8f1d4a95afbeb75202d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1d10384955e07198a4b5ea7202722bea4b831e02
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576105"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44207618"
 ---
 # <a name="parsing-date-and-time-strings-in-net"></a>.NET에서 날짜 및 시간 문자열 구문 분석
 
@@ -87,9 +87,10 @@ ms.locfileid: "33576105"
 
 <xref:System.DateTime.Parse%2A> 및 <xref:System.DateTime.ParseExact%2A> 메서드의 각 오버로드에는 문자열의 서식 지정에 대한 문화권별 정보를 제공하는 <xref:System.IFormatProvider> 매개 변수도 있습니다. 이 <xref:System.IFormatProvider> 개체는 표준 문화권을 나타내는 <xref:System.Globalization.CultureInfo> 개체이거나 <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> 속성에서 반환하는 <xref:System.Globalization.DateTimeFormatInfo> 개체입니다.  <xref:System.DateTime.ParseExact%2A>는 하나 이상의 사용자 지정 날짜 및 시간 형식을 정의하는 추가 문자열이나 문자열 배열 인수도 사용합니다.  
 
-## <a name="see-also"></a>참고 항목  
- [문자열 구문 분석](parsing-strings.md)  
- [형식 서식 지정](formatting-types.md)  
- [.NET에서 형식 변환](type-conversion.md)  
- [표준 날짜 및 시간 형식](standard-date-and-time-format-strings.md)  
- [사용자 지정 날짜 및 시간 형식 문자열](custom-date-and-time-format-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- [문자열 구문 분석](parsing-strings.md)  
+- [형식 서식 지정](formatting-types.md)  
+- [.NET에서 형식 변환](type-conversion.md)  
+- [표준 날짜 및 시간 형식](standard-date-and-time-format-strings.md)  
+- [사용자 지정 날짜 및 시간 형식 문자열](custom-date-and-time-format-strings.md)

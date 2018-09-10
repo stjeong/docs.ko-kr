@@ -12,11 +12,11 @@ ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: fd6f14f89d143edd03f8b5d028ec84315b2f2e97
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43455720"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44268525"
 ---
 # <a name="how-to-load-assemblies-into-an-application-domain"></a>방법: 응용 프로그램 도메인에 어셈블리 로드
 응용 프로그램 도메인에 어셈블리를 로드하는 방법에는 여러 가지가 있습니다. <xref:System.Reflection.Assembly?displayProperty=nameWithType> 클래스의 `static`(Visual Basic에서는 `Shared`) <xref:System.Reflection.Assembly.Load%2A> 메서드를 사용하는 것이 좋습니다. 어셈블리를 로드할 수 있는 다른 방법은 다음과 같습니다.  

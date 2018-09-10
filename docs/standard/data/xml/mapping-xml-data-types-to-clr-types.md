@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d06876b91c72b939768d480e40631a8e85170bc9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9cff30147da82896fb3a757ba2fed16d794ec3c9
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568548"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264534"
 ---
 # <a name="mapping-xml-data-types-to-clr-types"></a>CLR 형식에 XML 데이터 형식 매핑
 다음 표에서는 XML 데이터 형식과 CLR(공용 언어 런타임) 형식 간의 기본 매핑에 대해 설명합니다.  
@@ -79,5 +79,6 @@ ms.locfileid: "33568548"
 |주석 노드|<xref:System.Xml.XPath.XPathNavigator>|  
 |처리 명령 노드|<xref:System.Xml.XPath.XPathNavigator>|  
   
-## <a name="see-also"></a>참고 항목  
- [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+## <a name="see-also"></a>참고 항목
+
+- [System.Xml 클래스의 형식 지원](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

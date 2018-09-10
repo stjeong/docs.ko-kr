@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c1a17e32b98405d1b35b5b19e3e9144cffef5bfe
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 1fb973dcde1ca31a57fbc3022d3eb1c92a2a9d0f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39333002"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44188438"
 ---
 # <a name="xsltargumentlist-for-style-sheet-parameters-and-extension-objects"></a>스타일시트 매개 변수 및 확장명 개체의 XsltArgumentList
 <xref:System.Xml.Xsl.XsltArgumentList> 클래스에는 XSLT(Extensible Stylesheet Language for Transformations) 매개 변수와 XSLT 확장 개체가 포함되어 있습니다. 이러한 매개 변수와 확장 개체는 <xref:System.Xml.Xsl.XslTransform.Transform%2A> 메서드에 전달될 경우 스타일시트에서 호출할 수 있습니다.  
@@ -364,5 +364,6 @@ public class Sample
   
  `</circles>`  
   
-## <a name="see-also"></a>참고 항목  
- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+## <a name="see-also"></a>참고 항목
+
+- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

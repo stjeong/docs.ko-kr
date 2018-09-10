@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a70b8e3d1f56eafc04b97a19a1582d9c664e587d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 18458e52c6cf38b2900036613676adea3f3b2d0b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33584672"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44188126"
 ---
 # <a name="how-to-write-a-parallelfor-loop-with-thread-local-variables"></a>방법: 스레드 로컬 변수를 사용하는 Parallel.For 루프 작성
 이 예제에서는 스레드 지역 변수를 사용하여, <xref:System.Threading.Tasks.Parallel.For%2A> 루프에 의해 만들어진 각 별도 작업의 상태를 저장하고 검색하는 방법을 보여 줍니다. 스레드 지역 데이터를 사용하여, 공유 상태에 대한 많은 수의 액세스를 동기화하는 오버헤드를 방지할 수 있습니다. 반복할 때마다 공유 리소스에 쓰는 대신 작업의 반복이 모두 완료될 때까지 값을 계산하여 저장합니다. 그런 다음 공유 리소스에 최종 결과를 한 번 쓰거나, 최종 결과를 다른 메서드로 전달할 수 있습니다.  
@@ -44,8 +44,9 @@ Function() new MyClass()
   
  람다 식을 사용하는 방법은 [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
+- [TPL(작업 병렬 라이브러리)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
+- [PLINQ 및 TPL의 람다 식](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

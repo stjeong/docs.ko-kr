@@ -24,11 +24,11 @@ ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 6a03e6760fbb233c656909fb99b48a84bddedef8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43405574"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43509024"
 ---
 # <a name="reflection-in-the-net-framework"></a>.NET Framework의 리플렉션
 <xref:System.Reflection> 네임스페이스의 클래스와 <xref:System.Type?displayProperty=nameWithType>을 함께 사용하여 로드된 [어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) 및 어셈블리 내에 정의된 형식(예: [클래스](https://msdn.microsoft.com/library/ad7d3561-271e-4546-82fc-e00b059f27a9), [인터페이스](https://msdn.microsoft.com/library/fd9d5975-5363-4bc9-b883-609f887895e5), [값 형식](https://msdn.microsoft.com/library/c9c567f8-8ab1-4d88-834d-00f7d92418de))에 대한 정보를 가져올 수 있습니다. 리플렉션을 사용하여 런타임에 형식 인스턴스를 만들고 이 인스턴스를 호출 및 액세스할 수도 있습니다. 리플렉션의 특정 측면에 대한 항목은 이 개요의 끝부분에서 [관련 항목](#related_topics)을 참조하세요.  

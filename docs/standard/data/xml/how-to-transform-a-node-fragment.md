@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 73a6c582-b9d7-4fa7-9a05-6d931e1f3de8
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4cd35e469a16dc2fdb3a7f4afd89d04f67185cd5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: eb258b61664e1fdbf6604afdf69074c48cf5bda4
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568565"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44187613"
 ---
 # <a name="how-to-transform-a-node-fragment"></a>방법: 노드 조각 변형
 <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XPath.XPathDocument> 개체에 포함된 데이터를 변환하는 경우 XSLT 변환이 문서 전체에 적용됩니다. 즉, 문서 루트 노드 이외의 노드에 전달해도 변환 프로세스에서 로드된 문서의 모든 노드에 액세스할 수 있습니다. 노드 조각을 변환하려면 노드 조각만 포함된 별도의 개체를 만들고 이 개체를 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> 메서드에 전달해야 합니다.  
@@ -47,5 +47,6 @@ ms.locfileid: "33568565"
 ### <a name="output"></a>출력  
  책 제목은 The Confidence Man입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XslCompiledTransform 클래스 사용](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+## <a name="see-also"></a>참고 항목
+
+- [XslCompiledTransform 클래스 사용](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 62ee2e68-0bdd-4869-afc9-f0a57a11ae01
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 93303ba84538a85350fd09b78f9963558668b91b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f3b9671c10889287bc22d64df1fb5c3a2984bd55
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582111"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44195282"
 ---
 # <a name="how-to-enable-thread-tracking-mode-in-spinlock"></a>방법: 스핀 잠금에서 스레드-추적 모드 사용
 <xref:System.Threading.SpinLock?displayProperty=nameWithType>은 대기 시간이 매우 짧은 시나리오에 사용할 수 있는 하위 수준의 상호 배제적인 잠금입니다. <xref:System.Threading.SpinLock>은 재진입 항목이 아닙니다. 스레드가 잠금 상태가 된 후에는 잠금을 올바르게 종료해야 다시 잠글 수 있습니다. 일반적으로 잠금을 다시 설정하려고 하면 교착 상태가 발생하고, 교착 상태는 디버그하기가 매우 어려울 수 있습니다. 개발에 대한 지원으로 <xref:System.Threading.SpinLock?displayProperty=nameWithType>은 스레드가 이미 보유하고 있는 잠금을 다시 설정하려고 할 때 예외가 throw되도록 하는 스레드 추적 모드를 지원합니다. 따라서 잠금이 올바르게 종료되지 않은 지점을 쉽게 찾을 수 있습니다. 부울 입력 매개 변수를 사용하고 `true`의 인수를 전달하는 <xref:System.Threading.SpinLock> 생성자를 사용하여 스레드 추적 모드를 켤 수 있습니다. 개발 및 테스트 단계를 완료한 후에는 성능을 향상시키기 위해 스레드 추적 모드를 끄세요.  
@@ -30,5 +30,6 @@ ms.locfileid: "33582111"
  [!code-csharp[CDS_SpinLock#01](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_spinlock/cs/spinlockdemo.cs#01)]
  [!code-vb[CDS_SpinLock#01](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_spinlock/vb/spinlock_threadtracking.vb#01)]  
   
-## <a name="see-also"></a>참고 항목  
- [스핀 잠금](../../../docs/standard/threading/spinlock.md)
+## <a name="see-also"></a>참고 항목
+
+- [스핀 잠금](../../../docs/standard/threading/spinlock.md)

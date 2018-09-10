@@ -4,12 +4,12 @@ description: .NET Core에서 제공하는 C# 언어 수준 비동기 프로그�
 author: cartermp
 ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-ms.openlocfilehash: b753b887da6f8836e0f4363a479c12c7364ea770
-ms.sourcegitcommit: 895c7602386a6dfe7ca4facce3d965b27e5c6e87
+ms.openlocfilehash: ae1c9b1569b5fb6784f50ec9d78a44380242fcd8
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34312068"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484969"
 ---
 # <a name="asynchronous-programming"></a>비동기 프로그래밍
 
@@ -118,7 +118,7 @@ C#에서는 컴파일러가 해당 코드를, `await`에 도달할 때 실행을
 
 ### <a name="extracting-data-from-a-network"></a>네트워크에서 데이터 추출
 
-이 코드 조각은 www.dotnetfoundation.org에서 HTML을 다운로드하고 문자열 ".NET"이 HTML에서 발생하는 횟수를 계산합니다.  또한 ASP.NET MVC를 통해 이 작업을 수행하는 웹 컨트롤러 메서드를 정의하여 숫자를 반환합니다.
+이 코드 조각은 [www.dotnetfoundation.org](https://www.dotnetfoundation.org)의 홈페이지에서 HTML을 다운로드하고 문자열 ".NET"이 HTML에서 발생하는 횟수를 계산합니다.  또한 ASP.NET MVC를 통해 이 작업을 수행하는 웹 컨트롤러 메서드를 정의하여 숫자를 반환합니다.
 
 > [!NOTE]
 > 프로덕션 코드에서 HTML 구문 분석을 수행하려는 경우 정규식을 사용하지 마세요. 대신 구문 분석 라이브러리를 사용하세요.

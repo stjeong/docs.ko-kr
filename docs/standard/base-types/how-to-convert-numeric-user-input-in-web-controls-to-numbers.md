@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f27ddfb8-7479-4b79-8879-02a3bd8402d4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 24016ea68e17aa66432928c43d1de970fc13a55b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 663f9d88315f396b187cca874c930179f1dea523
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571916"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44204957"
 ---
 # <a name="how-to-convert-numeric-user-input-in-web-controls-to-numbers"></a>방법: 사용자가 웹 컨트롤에 입력한 숫자를 숫자로 변환
 전 세계 어디서든 웹 페이지를 표시할 수 있으므로 사용자가 거의 무제한의 형식으로 숫자 데이터를 <xref:System.Web.UI.WebControls.TextBox> 컨트롤에 입력할 수 있습니다. 따라서 웹 페이지 사용자의 로캘 및 문화권을 확인하는 것이 매우 중요합니다. 사용자 입력을 구문 분석할 때 사용자의 로캘 및 문화권에 의해 정의된 서식 지정 규칙을 적용할 수 있습니다.  
@@ -71,6 +71,7 @@ ms.locfileid: "33571916"
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  사용자가 HTML 스트림에 스크립트를 삽입하지 못하게 하려면 서버 응답에서 사용자 입력을 곧바로 다시 에코해서는 안 됩니다. 대신 <xref:System.Web.HttpServerUtility.HtmlEncode%2A?displayProperty=nameWithType> 메서드를 사용하여 인코딩해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
- [숫자 문자열 구문 분석](../../../docs/standard/base-types/parsing-numeric.md)
+## <a name="see-also"></a>참고 항목
+
+- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
+- [숫자 문자열 구문 분석](../../../docs/standard/base-types/parsing-numeric.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - application services host [client application services]
 - client application services, walkthroughs
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
-ms.openlocfilehash: 9193dc56a0f92daf486d95666ba820cb09d588d0
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b800848fc3cefb1f82fb5822007bc670c1684363
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745372"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43788930"
 ---
 # <a name="walkthrough-using-client-application-services"></a>연습: 클라이언트 응용 프로그램 서비스 사용
 이 항목에서는 클라이언트 응용 프로그램 서비스를 사용하여 사용자를 인증하고 사용자 역할 및 설정을 검색하는 Windows 응용 프로그램을 만드는 방법을 설명합니다.  
@@ -69,7 +69,7 @@ ms.locfileid: "32745372"
  지금은 응용 프로그램이 동일한 호스트에서 세 서비스에 모두 액세스하도록 구성되어 있습니다. 다음 섹션에서는 호스트를 단순한 웹 서비스 응용 프로그램으로 만들어 클라이언트 구성을 테스트할 수 있게 합니다.  
   
 ## <a name="creating-the-application-services-host"></a>응용 프로그램 서비스 호스트 만들기  
- 이 섹션에서는 로컬 SQL Server Compact 데이터베이스 파일에서 사용자 데이터에 액세스하는 단순한 웹 서비스 응용 프로그램을 만듭니다. 그런 다음 [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)를 사용하여 데이터베이스를 채웁니다. 이 간단한 구성을 통해 클라이언트 응용 프로그램을 신속하게 테스트할 수 있습니다. 또는 전체 SQL Server 데이터베이스 또는 사용자 지정 <xref:System.Web.Security.MembershipProvider> 및 <xref:System.Web.Security.RoleProvider> 클래스를 통해 사용자 데이터에 액세스하도록 웹 서비스 호스트를 구성할 수 있습니다. 자세한 내용은 [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)을 참조하십시오.  
+ 이 섹션에서는 로컬 SQL Server Compact 데이터베이스 파일에서 사용자 데이터에 액세스하는 단순한 웹 서비스 응용 프로그램을 만듭니다. 그런 다음 [ASP.NET Web Site Administration Tool](https://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)를 사용하여 데이터베이스를 채웁니다. 이 간단한 구성을 통해 클라이언트 응용 프로그램을 신속하게 테스트할 수 있습니다. 또는 전체 SQL Server 데이터베이스 또는 사용자 지정 <xref:System.Web.Security.MembershipProvider> 및 <xref:System.Web.Security.RoleProvider> 클래스를 통해 사용자 데이터에 액세스하도록 웹 서비스 호스트를 구성할 수 있습니다. 자세한 내용은 [Creating and Configuring the Application Services Database for SQL Server](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)을 참조하십시오.  
   
  다음 절차에서는 AppServices 웹 서비스를 만들고 구성합니다.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "32745372"
      이 태그의 `authenticationService`, `profileService`및 `roleService` 요소는 응용 프로그램 서비스를 사용하도록 설정하고 구성합니다. 테스트 목적으로 `requireSSL` 요소의 `authenticationService` 특성이 "false"로 설정되었습니다. `readAccessProperties` 요소의 `writeAccessProperties` 및 `profileService` 특성은 `WebSettingsTestText` 속성이 읽기/쓰기임을 나타냅니다.  
   
     > [!NOTE]
-    >  프로덕션 코드에서는 항상 SSL(Secure Sockets Layer, HTTPS 프로토콜 사용)을 통해 인증 서비스에 액세스해야 합니다. SSL을 설정하는 방법에 대한 자세한 내용은 [SSL(Secure Sockets Layer) 구성(IIS 6.0 운영 가이드)](http://go.microsoft.com/fwlink/?LinkId=91844)을 참조하세요.  
+    >  프로덕션 코드에서는 항상 SSL(Secure Sockets Layer, HTTPS 프로토콜 사용)을 통해 인증 서비스에 액세스해야 합니다. SSL을 설정하는 방법에 대한 자세한 내용은 [SSL(Secure Sockets Layer) 구성(IIS 6.0 운영 가이드)](https://go.microsoft.com/fwlink/?LinkId=91844)을 참조하세요.  
   
     ```xml  
     <system.web.extensions>  
@@ -191,7 +191,7 @@ ms.locfileid: "32745372"
     > [!NOTE]
     >  **전자 메일**, **본인 확인 질문** 및 **보안 대답** 값은 폼에 필요하지만, 이 예제에서는 사용되지 않습니다.  
   
-13. **계속**을 클릭합니다.  
+13. **Continue(계속)** 를 클릭합니다.  
   
      **사용자 만들기** 폼이 다시 나타납니다.  
   
@@ -538,6 +538,6 @@ ms.locfileid: "32745372"
  [클라이언트 응용 프로그램 서비스](../../../docs/framework/common-client-technologies/client-application-services.md)  
  [클라이언트 응용 프로그램 서비스 개요](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
  [방법: 클라이언트 응용 프로그램 서비스 구성](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
- [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)  
- [SQL Server에 대한 응용 프로그램 서비스 데이터베이스 만들기 및 구성](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)  
- [연습: ASP.NET 응용 프로그램 서비스 사용](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)
+ [ASP.NET Web Site Administration Tool](https://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)  
+ [SQL Server에 대한 응용 프로그램 서비스 데이터베이스 만들기 및 구성](https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)  
+ [연습: ASP.NET 응용 프로그램 서비스 사용](https://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 9029ba7f-a9d1-4526-8c84-c88716dba5d4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6a601c8f1fed04c839c2a413e4b0e44a75f4195b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 29da081784c06d8cd467f0566f9d4db92a130b53
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33586145"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087276"
 ---
 # <a name="how-to-write-a-simple-parallelfor-loop"></a>방법: 간단한 Parallel.For 루프 작성
 이 항목에는 <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 메서드를 설명하는 두 가지 예제가 포함되어 있습니다. 첫 번째 예제에서는 <xref:System.Threading.Tasks.Parallel.For%28System.Int64%2CSystem.Int64%2CSystem.Action%7BSystem.Int64%7D%29?displayProperty=nameWithType> 메서드 오버로드를 사용하고, 두 번째 예제에서는 <xref:System.Threading.Tasks.Parallel.For%28System.Int32%2CSystem.Int32%2CSystem.Action%7BSystem.Int32%7D%29?displayProperty=nameWithType> 오버로드를 사용합니다. <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 메서드의 가장 간단한 오버로드 중 두 개입니다. 루프를 취소하거나, 루프 반복을 중단하거나, 스레드 로컬 상태를 유지할 필요가 없는 경우 <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> 메서드의 이러한 두 오버로드를 사용할 수 있습니다.  
@@ -63,8 +63,9 @@ ms.locfileid: "33586145"
   
 -   이 코드를 복사하여 Visual Studio 2010 프로젝트에 붙여넣습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Tasks.Parallel.For%2A>  
- <xref:System.Threading.Tasks.Parallel.ForEach%2A>  
- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Tasks.Parallel.For%2A>  
+- <xref:System.Threading.Tasks.Parallel.ForEach%2A>  
+- [데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)

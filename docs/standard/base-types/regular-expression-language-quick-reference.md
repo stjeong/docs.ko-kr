@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cc0c1ebdc4f774858916dcc8ec8db2ba386b7a88
-ms.sourcegitcommit: ed7b4b9b77d35e94a35a2634e8c874f46603fb2b
+ms.openlocfilehash: 53f0f0d82ee751b66168fff68c31d952f480be2e
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948607"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44041618"
 ---
 # <a name="regular-expression-language---quick-reference"></a>정규식 언어 - 빠른 참조
 <a name="top"></a> 정규식은 정규식 엔진이 입력 텍스트에서 찾으려고 하는 패턴입니다. 패턴은 하나 이상의 문자 리터럴, 연산자 또는 구문으로 구성됩니다.  간략하게 살펴보려면 [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)을 참조하세요.  
@@ -93,11 +93,11 @@ ms.locfileid: "36948607"
   
 |어설션|설명|무늬|일치 항목|  
 |---------------|-----------------|-------------|-------------|  
-|`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-333-"의<br /><br /> "901"|  
-|`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-901-333"의<br /><br /> "-333"|  
-|`\A`|일치 항목이 문자열의 시작 부분에 있어야 합니다.|`\A\d{3}`|"901-333-"의<br /><br /> "901"|  
-|`\Z`|일치 항목이 문자열의 끝이나 문자열의 끝에 있는 `\n` 앞에 있어야 합니다.|`-\d{3}\Z`|"-901-333"의<br /><br /> "-333"|  
-|`\z`|일치 항목이 문자열의 끝에 있어야 합니다.|`-\d{3}\z`|"-901-333"의<br /><br /> "-333"|  
+|`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-"의<br /><br /> "901"|  
+|`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-333"의<br /><br /> "-333"|  
+|`\A`|일치 항목이 문자열의 시작 부분에 있어야 합니다.|`\A\d{3}`|"901-"의<br /><br /> "901"|  
+|`\Z`|일치 항목이 문자열의 끝이나 문자열의 끝에 있는 `\n` 앞에 있어야 합니다.|`-\d{3}\Z`|"-333"의<br /><br /> "-901-333"|  
+|`\z`|일치 항목이 문자열의 끝에 있어야 합니다.|`-\d{3}\z`|"-901-333"의<br /><br /> "-901-333"|  
 |`\G`|일치 항목이 이전 일치 항목 찾기가 끝난 지점에 있어야 합니다.|`\G\(\d\)`|"(1)(3)(5)[7](9\)"의 "(1)", "(3)", "(5)"|  
 |`\b`|일치 항목이 `\w`(영숫자) 문자와 `\W`(영숫자가 아닌 문자) 문자 사이의 경계에 있어야 합니다.|`\b\w+\s\w+\b`|"them theme them them"의 "them theme", "them them"|  
 |`\B`|일치 항목이 `\b` 경계에 있어야 합니다.|`\Bend\w*\b`|"end sends endure lender"의 "ends", "ender"|  
@@ -214,13 +214,14 @@ ms.locfileid: "36948607"
 |---------------|----------------|-------------|  
 |`(?imnsx-imnsx)`|패턴 중간에 대/소문자 구분하지 않음과 같은 옵션을 설정하거나 해제합니다. 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.|`\bA(?i)b\w+\b` 는 "ABA Able Act"에서 "ABA", "Able"을 찾습니다.|  
 |`(?#` *주석* `)`|인라인 주석입니다. 주석이 첫 번째 닫는 괄호 문자에서 끝납니다.|`\bA(?#Matches words starting with A)\w+\b`|  
-|`#` [줄의 끝]|X-모드 주석입니다. 주석이 이스케이프되지 않은 `#`에서 시작하여 줄 끝까지 이어집니다.|`(?x)\bA\w+\b#Matches words starting with A`|  
+|`#` [줄의 끝]|X-모드 주석입니다. 주석이 이스케이프되지 않은 `#` 에서 시작하여 줄 끝까지 이어집니다.|`(?x)\bA\w+\b#Matches words starting with A`|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
- <xref:System.Text.RegularExpressions.Regex>  
- [정규식](regular-expressions.md)  
- [정규식 클래스](the-regular-expression-object-model.md)  
- [정규식 예제](regular-expression-examples.md)  
- [정규식 - 빠른 참조(Word 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
- [정규식 - 빠른 참조(PDF 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
+- <xref:System.Text.RegularExpressions.Regex>  
+- [정규식](regular-expressions.md)  
+- [정규식 클래스](the-regular-expression-object-model.md)  
+- [정규식 예제](regular-expression-examples.md)  
+- [정규식 - 빠른 참조(Word 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+- [정규식 - 빠른 참조(PDF 형식으로 다운로드)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

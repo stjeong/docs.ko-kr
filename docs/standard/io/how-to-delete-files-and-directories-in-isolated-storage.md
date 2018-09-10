@@ -19,11 +19,12 @@ helpviewer_keywords:
 ms.assetid: 8fcc0dea-435b-4d40-ba4d-ba056265c202
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 9e8de7a1b5de580ca768ec0dfbcbfab2d8cb6271
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4b324cc391bc784ac558ed3eb634506b5eea0d63
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44214565"
 ---
 # <a name="how-to-delete-files-and-directories-in-isolated-storage"></a>방법: 격리된 저장소의 파일 및 디렉터리 삭제
 격리된 저장소 파일 내에서 디렉터리 및 파일을 삭제할 수 있습니다. 저장소 내에서 파일 및 디렉터리 이름은 운영 체제에 종속적이며 가상 파일 시스템의 루트와 관련하여 지정됩니다. Windows 운영 체제에서는 대/소문자를 구분하지 않습니다.  
@@ -39,6 +40,7 @@ ms.lasthandoff: 05/04/2018
  [!code-csharp[Conceptual.IsolatedStorage#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source4.cs#4)]
  [!code-vb[Conceptual.IsolatedStorage#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source4.vb#4)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>  
- [격리된 저장소](../../../docs/standard/io/isolated-storage.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>  
+- [격리된 저장소](../../../docs/standard/io/isolated-storage.md)

@@ -13,11 +13,11 @@ ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 32e06790ffebe49c7917ba4fc7344f86f7a49762
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43483829"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085255"
 ---
 # <a name="how-to-define-a-generic-type-with-reflection-emit"></a>방법: 리플렉션 내보내기를 사용하여 제네릭 형식 정의
 이 항목에서는 두 개의 형식 매개 변수가 있는 간단한 제네릭 형식을 만드는 방법, 형식 매개 변수에 클래스 제약 조건, 인터페이스 제약 조건, 특수 제약 조건을 적용하는 방법, 클래스의 형식 매개 변수를 매개 변수 형식 및 반환 형식으로 사용하는 멤버를 만드는 방법을 보여 줍니다.  

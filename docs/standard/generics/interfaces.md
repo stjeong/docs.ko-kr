@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cf9d1323918d42884f5e2fdf8a5905d13283c74c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a6c151798c807206cc7f4b2fbeb21e75e9142379
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575975"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44198480"
 ---
 # <a name="generic-interfaces"></a>제네릭 인터페이스
 이 항목에서는 여러 제네릭 형식 패밀리에 대해 공통 기능을 제공하는 제네릭 인터페이스에 대해 간략하게 설명합니다.  
@@ -42,10 +42,11 @@ ms.locfileid: "33575975"
   
  <xref:System.Collections.Generic.IEnumerable%601> 제네릭 인터페이스는 제네릭 열거자 구조를 제공합니다. 제네릭 열거자에 의해 구현된 <xref:System.Collections.Generic.IEnumerator%601> 제네릭 인터페이스는 제네릭이 아닌 <xref:System.Collections.IEnumerator> 인터페이스를 상속합니다. 형식 매개 변수 `T`에 종속되지 않는 <xref:System.Collections.IEnumerator.MoveNext%2A> 및 <xref:System.Collections.IEnumerator.Reset%2A> 멤버는 제네릭이 아닌 인터페이스에만 나타납니다. 즉, 제네릭이 아닌 인터페이스의 소비자는 제네릭 인터페이스도 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic?displayProperty=nameWithType>  
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
- [제네릭](../../../docs/standard/generics/index.md)  
- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)  
- [배열과 목록을 조작하기 위한 제네릭 대리자](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
- [공 분산 및 반공 분산](../../../docs/standard/generics/covariance-and-contravariance.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Collections.Generic?displayProperty=nameWithType>  
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
+- [제네릭](../../../docs/standard/generics/index.md)  
+- [.NET Framework의 제네릭 컬렉션](../../../docs/standard/generics/collections.md)  
+- [배열과 목록을 조작하기 위한 제네릭 대리자](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
+- [공 분산 및 반공 분산](../../../docs/standard/generics/covariance-and-contravariance.md)

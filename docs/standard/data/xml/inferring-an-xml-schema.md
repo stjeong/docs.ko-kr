@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: b18e7ffd-3c04-482d-9934-ba2f6a59b2c9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 847d25ae760a2ec91c4ad5979f6b2e4de5dbc5cd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0ed8614e1af3a52b9519c82a4b5c169c2fa3188f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33568786"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44221638"
 ---
 # <a name="inferring-an-xml-schema"></a>XML 스키마 유추
 SOM(스키마 개체 모델) <xref:System.Xml.Schema.XmlSchemaInference> 클래스를 사용하여 XML 문서 구조에서 XSD(XML 스키마 정의 언어) 스키마를 유추하는 방법을 설명합니다.  
@@ -27,7 +27,8 @@ SOM(스키마 개체 모델) <xref:System.Xml.Schema.XmlSchemaInference> 클래�
  [단순 형식 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)  
  <xref:System.Xml.Schema.XmlSchemaInference> 클래스가 특성 및 요소에 대한 데이터 형식을 유추하는 방법을 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
- [XML 문서에서 스키마 유추](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)  
- [스키마 노드 형식 및 구조 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
+- [XML 문서에서 스키마 유추](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)  
+- [스키마 노드 형식 및 구조 유추 규칙](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)

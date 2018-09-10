@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: eaa720d8-8999-4eb7-8df5-3c19ca61cad0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 173efcf485d5eb019b22a329a9d96b5cbe6a2f3e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 54601bc705a8684508563ecf0682d84bcac8713f
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592303"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43879756"
 ---
 # <a name="introduction-to-plinq"></a>PLINQ 소개
 ## <a name="what-is-a-parallel-query"></a>병렬 쿼리는 무엇입니까?  
@@ -120,6 +120,7 @@ ms.locfileid: "33592303"
 ## <a name="measuring-plinq-performance"></a>PLINQ 성능 측정  
  대부분의 경우에서 쿼리는 병렬화될 수 있지만 병렬 쿼리 설정의 오버헤드는 얻게 되는 성능 이점을 능가합니다. 쿼리가 많은 계산을 수행하지 않거나 데이터 소스가 작은 경우 PLINQ 쿼리는 순차 LINQ to Objects 쿼리보다 느려질 수 있습니다. Visual Studio Team Server에서 병렬 성능 분석기를 사용하여 처리 병목 지점을 찾고 쿼리가 병렬로 실행 중인지 순차적으로 실행 중인지 여부를 확인하도록 다양한 쿼리의 성능을 비교할 수 있습니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer) 및 [방법: PLINQ 쿼리 성능 측정](../../../docs/standard/parallel-programming/how-to-measure-plinq-query-performance.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
- [PLINQ의 속도 향상 이해](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
+- [PLINQ의 속도 향상 이해](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md)

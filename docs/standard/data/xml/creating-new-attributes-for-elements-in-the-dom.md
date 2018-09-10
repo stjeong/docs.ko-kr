@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: dd6dc920-b011-418a-b3db-f1580a7d9251
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fb1a337c2795627b82125c8c29335c52b5fb332c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 870e800220031338557792fa612d4a3101e79f90
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570386"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44071443"
 ---
 # <a name="creating-new-attributes-for-elements-in-the-dom"></a>DOM에서 요소의 새 특성 만들기
 특성은 노드가 아니라 요소 노드의 속성이며 요소와 연결된 **XmlAttributeCollection**에 포함되어 있으므로 새 특성을 만드는 것은 다른 노드 형식을 만드는 것과 다릅니다. 다음과 같은 여러 가지 방법으로 특성을 만들고 요소를 추가할 수 있습니다.  
@@ -124,5 +124,6 @@ doc.DocumentElement.SetAttributeNode(attr);
 ## <a name="attribute-child-nodes"></a>특성 자식 노드  
  특성 노드 값은 자신의 자식 노드가 됩니다. 유효한 자식 노드에는 **XmlText** 노드와 **XmlEntityReference** 노드의 두 가지 형식만 있습니다. **FirstChild** 및 **LastChild**와 같은 메서드에서 이러한 형식의 노드를 자식 노드로 처리한다는 점에서 이러한 형식의 노드는 자식 노드입니다. 자식 노드가 있는 특성의 이와 같은 차이점은 특성이나 특성 자식 노드를 제거하려는 경우에 중요합니다. 자세한 내용은 [DOM의 요소 노드에서 특성 제거](../../../../docs/standard/data/xml/removing-attributes-from-an-element-node-in-the-dom.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML DOM(문서 개체 모델)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

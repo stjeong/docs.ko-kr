@@ -12,12 +12,12 @@ helpviewer_keywords:
 - data transformations [LINQ in C#]
 - LINQ [C#], type relationships
 ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
-ms.openlocfilehash: 274c5eaee2b4bf0e1331fb7a4a1a89a432a567c2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 154501d666b467c94f5d1dd721f1e2303189c908
+ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339581"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43484826"
 ---
 # <a name="type-relationships-in-linq-query-operations-c"></a>LINQ 쿼리 작업의 형식 관계(C#)
 쿼리를 효과적으로 작성하려면 전체 쿼리 작업의 변수 형식이 모두 어떻게 서로 관련되는지를 이해해야 합니다. 이러한 관계를 이해하면 설명서의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 샘플 및 코드 예제를 더 쉽게 이해할 수 있습니다. 또한 `var`을 사용하여 변수를 암시적으로 형식화하는 경우 백그라운드에서 발생하는 상황을 이해할 수 있습니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "33339581"
   
 1.  데이터 소스의 형식 인수에 따라 범위 변수의 형식이 결정됩니다.  
   
-2.  선택된 개체의 형식에 따라 쿼리 변수의 형식이 결정됩니다. 여기서 `name`은 문자열입니다. 따라서 쿼리 변수는 `IEnumerable`\<string>입니다.  
+2.  선택된 개체의 형식에 따라 쿼리 변수의 형식이 결정됩니다. 여기서 `name`은 문자열입니다. 따라서 쿼리 변수는 `IEnumerable<string>`입니다.  
   
 3.  쿼리 변수는 `foreach` 문에서 반복됩니다. 쿼리 변수가 문자열 시퀀스이기 때문에 반복 변수도 문자열입니다.  
   

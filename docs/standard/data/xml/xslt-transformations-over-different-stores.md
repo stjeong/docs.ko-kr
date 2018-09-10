@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: 369850e9-004a-45d2-b5c3-5060d9135adb
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5757a3a0175fc1ba65f0d2e29b3b24714e460ab8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0b5ff264f9a781c95ccf9bdbabf4b29806016362
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33570428"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43890843"
 ---
 # <a name="xslt-transformations-over-different-stores"></a>여러 저장소에서의 XSLT 변형
 > [!NOTE]
@@ -20,5 +20,6 @@ ms.locfileid: "33570428"
   
  XML DOM은 XML 문서에 있는 데이터에 대한 액세스를 제공하며 XML 문서를 읽고, 쓰고, 탐색하는 추가 클래스를 제공합니다. 이러한 클래스는 ADO.NET으로 제공되는 데이터 액세스 서비스와 XML DOM을 통합하는 <xref:System.Xml> 네임스페이스에서 지원됩니다. <xref:System.Xml.XmlDataDocument>는 데이터에 대한 관계형 액세스를 제공합니다. <xref:System.Xml.XmlDataDocument>는 XML을 ADO.NET <xref:System.Data.DataSet>의 관계형 데이터에 매핑합니다. 모든 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 기반 응용 프로그램은 <xref:System.Xml> 네임스페이스의 클래스를 사용하여 XML 문서와 <xref:System.Xml.XmlDataDocument>의 관계형 데이터 모두에 액세스하고 이를 조작할 수 있습니다. 이러한 구현은 데이터를 수집하고 배포하는 n 계층 아키텍처를 지원합니다. 자세한 내용은 [XML과 관계형 데이터 및 ADO.NET의 통합](../../../../docs/standard/data/xml/xml-integration-with-relational-data-and-adonet.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+## <a name="see-also"></a>참고 항목
+
+- [XslTransform 클래스의 XSLT 프로세서 구현](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 24a579acacf41df24779252e1064e1c271310edc
-ms.sourcegitcommit: ed7b4b9b77d35e94a35a2634e8c874f46603fb2b
+ms.openlocfilehash: 7ae07afa2ad2110591139d395ffd8e8cfa5e2347
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948591"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085188"
 ---
 # <a name="anchors-in-regular-expressions"></a>정규식의 앵커
 <a name="top"></a> 앵커 또는 원자성 너비가 0인 어설션은 문자열에서 일치 항목이 나타나야 하는 위치를 지정합니다. 검색 식에서 앵커를 사용하면 정규식 엔진은 문자열을 통과하거나 문자를 사용하지 않고, 지정된 위치에서만 일치 항목을 검색합니다. 예를 들어 `^` 기호는 줄이나 문자열의 시작 부분에서 일치 항목 찾기를 시작하도록 지정합니다. 따라서 정규식 `^http:` 은 줄의 시작 부분에 나타날 때만 "http:"을 찾습니다. 다음 표에서는 .NET의 정규식에서 지원하는 앵커를 보여 줍니다.  
@@ -174,6 +174,7 @@ ms.locfileid: "36948591"
 |`qu`|"qu" 하위 문자열을 찾습니다.|  
 |`\w+`|하나 이상의 단어 문자를 찾습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [정규식 옵션](../../../docs/standard/base-types/regular-expression-options.md)
+## <a name="see-also"></a>참고 항목
+
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [정규식 옵션](../../../docs/standard/base-types/regular-expression-options.md)

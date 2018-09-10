@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a3ce6dfd-1f64-471b-8ad8-8cfaf406275d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b169353752f6e6483a056cdc9dd8c3227b9ebeb8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 852df5cb3eeea2ee5fa44ddce2f97e9c4f8d8b5a
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33571453"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44185206"
 ---
 # <a name="how-to-use-the-trycatch-block-to-catch-exceptions"></a>try/catch 블록을 사용하여 예외를 catch하는 방법
 
@@ -36,5 +36,6 @@ ms.locfileid: "33571453"
 > [!NOTE] 
 > 거의 모든 코드 줄에서 예외, 특히 <xref:System.OutOfMemoryException>과 같은 공용 언어 런타임에서 throw된 예외가 발생할 수 있습니다. 대부분의 응용 프로그램은 이러한 예외를 처리할 필요가 없지만 다른 사용자가 사용할 라이브러리를 작성하는 경우 이러한 가능성에 유의해야 합니다. Try 블록에서 코드를 설정하는 경우에 대한 제안 사항은 [예외에 대한 모범 사례](best-practices-for-exceptions.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목  
-[예외](index.md)
+## <a name="see-also"></a>참고 항목
+
+- [예외](index.md)

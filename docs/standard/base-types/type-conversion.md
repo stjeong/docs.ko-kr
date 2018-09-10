@@ -26,12 +26,12 @@ helpviewer_keywords:
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5c542a38152a21a62208bee81e123923fb05d0e7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2d039e591e1f61a7be18dc224845f82b107d918f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579485"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44211955"
 ---
 # <a name="type-conversion-in-the-net-framework"></a>.NET Framework의 형식 변환
 <a name="top"></a> 모든 값에는 연결된 형식이 있으며, 이러한 형식은 값에 할당되는 공간, 포함할 수 있는 값의 범위, 값을 통해 사용할 수 있는 멤버 등의 특성을 정의합니다. 대부분의 값들은 하나 이상의 형식으로 표현될 수 있습니다. 예를 들어, 4라는 값은 정수 값 또는 부동 소수점 값으로 표현될 수 있습니다. 형식 변환을 수행하면 이전 형식과 동일한 값을 가지는 새 형식이 만들어지지만, 원래 개체의 ID(또는 실제 값)가 항상 동일하게 유지되지는 않습니다.  
@@ -206,7 +206,8 @@ ms.locfileid: "33579485"
   
  변환기를 사용하여 변환을 수행하는 방법에 대한 자세한 내용은 <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType>를 참조하십시오.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Convert?displayProperty=nameWithType>  
- <xref:System.IConvertible>  
- [형식 변환표](../../../docs/standard/base-types/conversion-tables.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Convert?displayProperty=nameWithType>  
+- <xref:System.IConvertible>  
+- [형식 변환표](../../../docs/standard/base-types/conversion-tables.md)

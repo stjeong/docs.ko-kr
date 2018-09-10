@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: f6ebb1a1-f2ca-49b9-92c9-0150940cf6e6
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 3e9bdb9b88d51e5435609bbab8bbe21a985505a0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d86c590f2d5fe6bc970c2f8ac6de43d3e8485650
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575703"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44183147"
 ---
 # <a name="xml-integration-with-relational-data-and-adonet"></a>XML과 관계형 데이터 및 ADO.NET의 통합
 **XmlDataDocument** 클래스는 **XmlDocument**의 파생 클래스이며 XML 데이터를 포함합니다. **XmlDataDocument**의 이점은 관계형 데이터와 계층형 데이터 간을 연결해 준다는 것입니다. **XmlDocument**는 **DataSet**에 바인딩할 수 있는 클래스입니다. 이러한 두 클래스는 모두 클래스에 포함된 데이터의 변경 내용을 동기화할 수 있습니다. **DataSet**에 바인딩된 **XmlDocument**를 통해 XML을 관계형 데이터와 통합할 수 있으므로 데이터를 XML 또는 관계형 형식으로 나타낼 필요가 없습니다. 데이터를 두 가지 형식으로 나타낼 수 있으며 한 가지 형식으로만 제약되지 않습니다.  
@@ -47,5 +47,6 @@ ms.locfileid: "33575703"
   
  필요한 **XmlDataDocument** 주소에서 **DataSet**을 로드하는 경우 [DataSet을 XML 문서와 동기화](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 집합에서 XML 사용](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
+## <a name="see-also"></a>참고 항목
+
+- [데이터 집합에서 XML 사용](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)

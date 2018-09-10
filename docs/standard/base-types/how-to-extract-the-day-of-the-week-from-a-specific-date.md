@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4bd4066fe0a2d9f26505976c13ac80e03554e0aa
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 58676b1726496a33496b10bbd3befba82aea4434
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33575729"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43872346"
 ---
 # <a name="how-to-extract-the-day-of-the-week-from-a-specific-date"></a>방법: 특정 날짜의 요일 추출
 .NET Framework를 사용하면 쉽게 특정 날짜가 일주일 중 몇 번째 날인지 확인하고, 특정 날짜의 지역화된 요일 이름을 표시할 수 있습니다. 특정 날짜에 해당하는 요일을 나타내는 열거형 값은 <xref:System.DateTime.DayOfWeek%2A> 또는 <xref:System.DateTimeOffset.DayOfWeek%2A> 속성에서 제공합니다. 이와 대조적으로 요일 이름을 검색하는 것은 날짜 및 시간 값의 `ToString` 메서드 또는 <xref:System.String.Format%2A?displayProperty=nameWithType> 메서드와 같은 서식 지정 메서드를 호출하여 수행할 수 있는 서식 지정 작업입니다. 이 항목에서는 이러한 서식 지정 작업을 수행하는 방법을 보여 줍니다.  
@@ -100,7 +100,8 @@ ms.locfileid: "33575729"
  [!code-csharp[Formatting.HowTo.WeekdayName#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/Howto1.cs#8)]
  [!code-vb[Formatting.HowTo.WeekdayName#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/Howto1.vb#8)]  
   
-## <a name="see-also"></a>참고 항목  
- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- [서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)  
+- [표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
+- [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)

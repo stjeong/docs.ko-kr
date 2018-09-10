@@ -9,12 +9,12 @@ dev_langs:
 ms.assetid: 7f1bc7f4-401b-459f-9078-f099cc711fde
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: db1c952003e73beb756567be74ed4eb72612c989
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7e7892289248c9651b529bcc68d7228b8babb28a
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33569631"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083821"
 ---
 # <a name="post-schema-compilation-infoset"></a>Post-Schema Compilation Infoset
 [World Wide Web Consortium (W3C) XML Schema Recommendation](https://www.w3.org/XML/Schema)(W3C(World Wide Web 컨소시엄) XML 스키마 권장 사항)에서는 사전 스키마 유효성 검사 및 사후 스키마 컴파일을 위해 노출해야 하는 infoset(정보 집합)에 대해 설명합니다. XML SOM(스키마 개체 모델)은 <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>의 <xref:System.Xml.Schema.XmlSchemaSet> 메서드를 호출하기 전과 후에 이렇게 노출된 내용을 표시합니다.  
@@ -40,5 +40,6 @@ ms.locfileid: "33569631"
  [!code-csharp[PsciSample#1](../../../../samples/snippets/csharp/VS_Snippets_Data/PsciSample/CS/PsciSample.cs#1)]
  [!code-vb[PsciSample#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/PsciSample/VB/PsciSample.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML SOM(스키마 개체 모델)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)

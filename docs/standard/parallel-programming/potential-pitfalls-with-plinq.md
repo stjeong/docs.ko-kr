@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 73ec2d2fb73ee95b39a15307d136c35542578c41
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9c4decd01938500fe6330c48caa33b845916aaff
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591718"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43863009"
 ---
 # <a name="potential-pitfalls-with-plinq"></a>PLINQ에서 발생할 수 있는 문제
 대부분의 경우 PLINQ는 순차적인 LINQ to Objects 쿼리에 대해 상당한 성능 향상을 제공할 수 있습니다. 그러나 쿼리 실행을 병렬 처리하는 작업에는 순차적 코드에서는 일반적이지 않거나 전혀 발생하지 않는 문제를 일으킬 수 있는 복잡성이 있습니다. 이 항목에서는 PLINQ 쿼리를 작성할 때 주의해야 할 사항을 나열합니다.  
@@ -119,5 +119,6 @@ ManualResetEventSlim mre = new ManualResetEventSlim();
   
  특히 병렬 루프의 하나의 반복은 다른 루프의 반복이 진행되기를 기다리면 안 됩니다. 병렬 루프가 반대 순서로 순차적으로 반복되도록 결정하는 경우 교착 상태가 발생합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

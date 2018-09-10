@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: c268c49e-32b9-4171-b782-dcb7b065fa73
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c937754f031420d90f89bf89563db17ddaaf3bbd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fea54d36759b12b01fa7a68748d069c7890d84e4
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33572124"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44177408"
 ---
 # <a name="select-xml-data-using-xpathnavigator"></a>XPathNavigator를 사용하여 XML 데이터 선택
 <xref:System.Xml.XPath.XPathNavigator> 클래스는 XPath 식을 사용하여 <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체의 노드 집합을 선택하는 데 사용되는 메서드 집합을 제공합니다. 선택한 후에는 선택한 노드 집합을 반복할 수 있습니다.  
@@ -62,13 +62,14 @@ while(nodes.MoveNext())
 ### <a name="optimized-selection-methods"></a>최적화된 선택 메서드  
  <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A> 클래스의 <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A>, <xref:System.Xml.XPath.XPathNavigator.SelectDescendants%2A> 및 <xref:System.Xml.XPath.XPathNavigator> 메서드는 일반적으로 자식, 하위 및 상위 노드를 검색하는 데 사용하는 XPath 식을 나타냅니다. 이러한 메서드는 성능을 위해 최적화되었으며 해당 XPath 식보다 빠릅니다. <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A>, <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A> 및 <xref:System.Xml.XPath.XPathNavigator.SelectDescendants%2A> 메서드는 선택할 노드의 <xref:System.Xml.XPath.XPathNodeType> 값 또는 로컬 이름과 네임스페이스 URI를 기반으로 상위, 자식 및 하위 노드를 선택합니다. 선택된 상위, 자식 및 하위 노드는 <xref:System.Xml.XPath.XPathNodeIterator> 개체에 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [XPathNavigator를 사용하여 XPath 식 계산](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
- [XPathNavigator를 사용하여 노드 일치시키기](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
- [XPath 쿼리에서 인식하는 노드 형식](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
- [XPath 쿼리 및 네임스페이스](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
- [컴파일된 XPath 식](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.XmlDocument>  
+- <xref:System.Xml.XPath.XPathDocument>  
+- <xref:System.Xml.XPath.XPathNavigator>  
+- [XPath 데이터 모델을 사용하여 XML 데이터 처리](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+- [XPathNavigator를 사용하여 XPath 식 계산](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
+- [XPathNavigator를 사용하여 노드 일치시키기](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
+- [XPath 쿼리에서 인식하는 노드 형식](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
+- [XPath 쿼리 및 네임스페이스](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
+- [컴파일된 XPath 식](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
