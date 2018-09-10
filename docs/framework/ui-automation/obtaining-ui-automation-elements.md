@@ -9,11 +9,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 9994f6a3026c790acdb35af3300379786f615607
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: HT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481986"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43518885"
 ---
 # <a name="obtaining-ui-automation-elements"></a>UI 자동화 요소 가져오기
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "43481986"
   
  가장 간단한 조건은 <xref:System.Windows.Automation.Condition.TrueCondition>으로서, 검색 범위 내의 모든 요소가 반환되도록 하는 미리 정의된 개체입니다. <xref:System.Windows.Automation.Condition.FalseCondition>과는 반대로 <xref:System.Windows.Automation.Condition.TrueCondition>은 요소가 검색되지 않도록 하기 때문에 그다지 유용하지 않습니다.  
   
- 단독으로 또는 다른 조건과 함께 사용할 수 있는 기타 미리 정의된 3개의 조건으로 <xref:System.Windows.Automation.Automation.ContentViewCondition>, <xref:System.Windows.Automation.Automation.ControlViewCondition>및 <xref:System.Windows.Automation.Automation.RawViewCondition>이 있습니다. 단독으로 사용되는<xref:System.Windows.Automation.Automation.RawViewCondition>은 <xref:System.Windows.Automation.Condition.TrueCondition>또는 <xref:System.Windows.Automation.AutomationElement.AutomationElementInf속성별로 요소를 필터링하지 않기 때문에mation.IsControlElement%2A> 속성별로 요소를 필터링하지 않기 때문에 <xref:System.Windows.Automation.AutomationElement.AutomationElementInf속성별로 요소를 필터링하지 않기 때문에mation.IsContentElement%2A> 에 해당합니다.  
+ 단독으로 또는 다른 조건과 함께 사용할 수 있는 기타 미리 정의된 3개의 조건으로 <xref:System.Windows.Automation.Automation.ContentViewCondition>, <xref:System.Windows.Automation.Automation.ControlViewCondition>및 <xref:System.Windows.Automation.Automation.RawViewCondition>이 있습니다. 단독으로 사용되는<xref:System.Windows.Automation.Automation.RawViewCondition>은 <xref:System.Windows.Automation.Condition.TrueCondition>또는 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement%2A> 속성별로 요소를 필터링하지 않기 때문에 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> 에 해당합니다.  
   
  하나 이상의 <xref:System.Windows.Automation.PropertyCondition> 개체에서 기타 조건이 생성되고, 각 조건은 속성 값을 지정합니다. 예를 들어, <xref:System.Windows.Automation.PropertyCondition> 은 요소가 활성화되도록 지정하거나 특정 컨트롤 패턴을 지원하도록 지정할 수 있습니다.  
   
