@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# language, nullable types
 - types [C#], nullable
 ms.assetid: e473cb01-28ca-42be-9cea-f717055d72c6
-ms.openlocfilehash: 64b326b82cd022ed6590a232546690e2ec2a5c78
-ms.sourcegitcommit: 78bcb629abdbdbde0e295b4e81f350a477864aba
+ms.openlocfilehash: 2af0704abcad00c75a5d40bfe2d0523d07ee6a3f
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39245594"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "43885050"
 ---
 # <a name="nullable-types-c-programming-guide"></a>nullable 형식(C# 프로그래밍 가이드)
 
@@ -38,7 +38,7 @@ null 허용 형식은 다음 특성을 갖습니다.
   
 - 다음 예제와 같이 nullable 형식에서 `==` 및 `!=` 연산자를 사용할 수도 있습니다. `if (x != null) y = x.Value;` `a` 및 `b`가 둘 다 null인 경우 `a == b`는 `true`로 평가합니다.  
 
-- C# 7.0부터는 패턴 일치를 사용하여 nullable 형식의 값을 검사하고 가져올 수 있습니다. `if (x is int xValue) y = xValue;`
+- C# 7.0부터는 [패턴 일치](../../pattern-matching.md#the-is-type-pattern-expression)를 사용하여 nullable 형식의 값을 검사하고 가져올 수 있습니다(`if (x is int valueOfX) y = valueOfX;`).
   
 - 기본값인 `T?`는 <xref:System.Nullable%601.HasValue%2A> 속성이 `false`를 반환하는 인스턴스입니다.  
 
@@ -56,10 +56,10 @@ null 허용 형식은 다음 특성을 갖습니다.
   
 ## <a name="see-also"></a>참고 항목
 
- <xref:System.Nullable%601?displayProperty=nameWithType>  
- <xref:System.Nullable?displayProperty=nameWithType>  
- [?? 연산자](../../language-reference/operators/null-coalescing-operator.md)  
- [C# 프로그래밍 가이드](../index.md)  
- [C# 가이드](../../index.md)  
- [C# 참조](../../language-reference/index.md)  
- [Nullable 값 형식(Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
+- <xref:System.Nullable%601?displayProperty=nameWithType>  
+- <xref:System.Nullable?displayProperty=nameWithType>  
+- [?? 연산자](../../language-reference/operators/null-coalescing-operator.md)  
+- [C# 프로그래밍 가이드](../index.md)  
+- [C# 가이드](../../index.md)  
+- [C# 참조](../../language-reference/index.md)  
+- [Nullable 값 형식(Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  

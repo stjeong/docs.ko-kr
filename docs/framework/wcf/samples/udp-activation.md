@@ -3,11 +3,11 @@ title: UDP 활성화
 ms.date: 03/30/2017
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
 ms.openlocfilehash: c64540db555d7cac56dd46c6ffb63ec95ca81f91
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
-ms.translationtype: HT
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44138359"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44210288"
 ---
 # <a name="udp-activation"></a>UDP 활성화
 이 샘플은 기반 합니다 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플입니다. 확장 된 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플 Windows 프로세스 활성화 서비스 (WAS)를 사용한 프로세스 활성화를 지원 하도록 합니다.  

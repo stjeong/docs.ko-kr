@@ -2,12 +2,12 @@
 title: 방법 문서(C# 가이드)
 description: 유용한 팁 및 간단하고 집중된 코드 샘플의 컬렉션
 ms.date: 12/20/2017
-ms.openlocfilehash: 86e245873c8316cc4ddd52fe59a06f2cac648e6c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9326235341ee38e46f4204b7b3d7f67cae2774af
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507677"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44191693"
 ---
 # <a name="how-to-c"></a>방법(C#)
 
@@ -65,7 +65,7 @@ C# 가이드의 방법 섹션에서 일반적인 질문에 대한 빠른 답변�
 - [문자열을 `DateTime`로 변환합니다](../../standard/base-types/parsing-datetime.md).
 - [바이트 배열을 정수로 변환합니다](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [문자열을 숫자로 변환합니다](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
-- [`as` 및 `is`를 사용하여 다른 형식으로 안전하게 캐스팅합니다](../programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).
+- [패턴 일치, `as` 및 `is` 연산자를 사용하여 안전하게 다른 형식으로 캐스팅합니다](../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [`struct` 형식에 대한 변환 연산자를 정의합니다](../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md).
 - [형식이 nullable 값 형식인지 여부를 확인합니다](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
 - [nullable과 비 nullable 값 형식 사이를 변환합니다](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-type-to-an-underlying-type).

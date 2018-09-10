@@ -3,13 +3,13 @@ title: dotnet nuget push 명령 - .NET Core CLI
 description: dotnet nuget push 명령은 서버에 패키지를 푸시하고 게시합니다.
 author: karann-msft
 ms.author: mairaw
-ms.date: 06/01/2018
-ms.openlocfilehash: 8a64f9cdc11d03bed82a132265c3b4e1de290807
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.date: 09/04/2018
+ms.openlocfilehash: 23d27cef29008955850f9ed9f4a8baed9e7ad982
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34728578"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44186464"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
@@ -198,7 +198,3 @@ dotnet nuget push [-h|--help]
 기본 푸시 소스에 현재 디렉터리에 있는 모든 *.nupkg* 파일을 푸시합니다.
 
 `dotnet nuget push *.nupkg`
-
-사용자 지정 구성 파일 *./config/My.Config*를 지정하여 기본 푸시 소스에 현재 디렉터리에 있는 모든 *.nupkg* 파일을 푸시합니다.
-
-`dotnet nuget push *.nupkg --config-file ./config/My.Config`

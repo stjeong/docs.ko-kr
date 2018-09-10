@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Visual C#, program structure
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
 ms.openlocfilehash: a39a7dd3ebdbb7483f0b69169c8e00382f581788
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43867142"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44252898"
 ---
 # <a name="inside-a-c-program"></a>C# 프로그램 내부
 이 단원에서는 C# 프로그램의 일반적인 구조를 설명하고 표준 "Hello, World!" 예가 포함됩니다.  

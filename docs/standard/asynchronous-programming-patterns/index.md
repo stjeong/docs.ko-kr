@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 809385bda48c6fb8dae125fe348228aaee375a6c
-ms.sourcegitcommit: 9e18e4a18284ae9e54c515e30d019c0bbff9cd37
+ms.openlocfilehash: e399a512d2bee636aec35e008c0632ce9c5fa781
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37071307"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44172644"
 ---
 # <a name="asynchronous-programming-patterns"></a>비동기 프로그래밍 패턴
 
@@ -79,6 +79,6 @@ TAP, APM 및 EAP에 대한 포괄적인 설명은 다음 섹션에 나와 있는
 
 ## <a name="see-also"></a>참고 항목
 
-[C#의 비동기 프로그래밍](~/docs/csharp/async.md)   
-[Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md) (F#의 비동기 프로그래밍)  
-[Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [C#의 비동기 프로그래밍](~/docs/csharp/async.md)   
+- [F#의 비동기 프로그래밍](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
+- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)

@@ -4,12 +4,12 @@ description: .NET Framework 및 .NET Core에 대해 솔루션을 나란히 컴�
 author: conniey
 ms.author: mairaw
 ms.date: 04/06/2017
-ms.openlocfilehash: e6cd9c6d66996d9fd24fe71d48091723143e5849
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f8ca0d08c9e3802c71d53c831592ee4388ab5512
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33211441"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43512268"
 ---
 # <a name="organizing-your-project-to-support-net-framework-and-net-core"></a>.NET Framework 및 .NET Core를 지원하도록 프로젝트 구성
 
@@ -51,6 +51,7 @@ ms.locfileid: "33211441"
 [**소스 코드**][example-csproj-code]
 
 주목할 변경 사항은 다음과 같습니다.
+
 * *packages.config* 및 *\*.csproj*가 새로운 [.NET Core *\*.csproj*][example-csproj-netcore]로 바뀌었습니다. NuGet 패키지가 `<PackageReference> ItemGroup`을 사용하여 지정됩니다.
 
 ## <a name="keep-existing-projects-and-create-a-net-core-project"></a>기존 프로젝트를 유지하고 .NET Core 프로젝트 만들기
@@ -62,12 +63,13 @@ ms.locfileid: "33211441"
 [**소스 코드**][example-csproj-different-code]
 
 주목할 변경 사항은 다음과 같습니다.
+
 * .NET Core와 기존 프로젝트가 별도의 폴더에 유지됩니다.
-    * 프로젝트를 별도의 폴더에 유지하면 Visual Studio 2017이 없어도 됩니다. 이전 프로젝트만 여는 별도 솔루션을 만들 수 있습니다.
+  * 프로젝트를 별도의 폴더에 유지하면 Visual Studio 2017이 없어도 됩니다. 이전 프로젝트만 여는 별도 솔루션을 만들 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-.NET Core로의 마이그레이션에 대한 자세한 지침은 [.NET Core 이식 문서][porting-doc]를 참조하세요.
+* .NET Core로의 마이그레이션에 대한 자세한 지침은 [.NET Core 이식 문서][porting-doc]를 참조하세요.
 
 [porting-doc]: index.md
 [example-initial-project]: media/project-structure/project.png "기존 프로젝트"

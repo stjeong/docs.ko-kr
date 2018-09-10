@@ -4,12 +4,12 @@ description: 이 재미있는 자습서에서 dotnet new 명령에 대한 사용
 author: guardrex
 ms.author: mairaw
 ms.date: 08/12/2017
-ms.openlocfilehash: fee2709f54395b9926dae904a448cb92aafb5172
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2377d894bcbf54a9c96eae1093d891080e6d11c5
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218084"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43516655"
 ---
 # <a name="create-a-custom-template-for-dotnet-new"></a>dotnet new에 대한 사용자 지정 템플릿 만들기
 
@@ -63,7 +63,7 @@ ms.locfileid: "33218084"
 1. NuGet 패키지에 대한 폴더를 만듭니다. 자습서의 경우 폴더 이름 *GarciaSoftware.ConsoleTemplate.CSharp*가 사용되고 폴더는 사용자 프로필의 *Documents\NuGetTemplates* 폴더 내부에 만들어집니다. 새 템플릿 폴더 내부에 *content*라는 폴더를 만들어 프로젝트 파일을 저장합니다.
 1. 프로젝트 폴더의 콘텐츠와 함께 *.template.config/template.json* 파일을 직접 만든 *content* 폴더로 복사합니다.
 1. *콘텐츠* 폴더 옆에 [*nuspec* 파일](/nuget/create-packages/creating-a-package)을 추가합니다. 패키지 콘텐츠를 설명하고 NuGet 패키지를 만드는 프로세스를 적용하는 XML 매니페스트 파일입니다.
-   
+
    ![NuGet 패키지의 레이아웃을 보여 주는 디렉터리 구조](./media/create-custom-template/nugetdirectorylayout.png)
 
 1. *nuspec* 파일의 **\<packageTypes>** 요소 내부에는 **\<packageType>** 요소와 `Template`의 `name` 특성 값이 포함됩니다. *content* 폴더와 *nuspec* 파일은 동일한 디렉터리에 있어야 합니다. 표에서는 템플릿을 NuGet 패키지로 생성하는 데 필요한 최소 *nuspec* 파일 요소를 보여 줍니다.
@@ -158,7 +158,7 @@ dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp
 
 > [!NOTE]
 > 예제는 데모용으로만 제공됩니다. nuget.org에 저장되거나 .NET Core SDK와 함께 설치되는 `GarciaSoftware.ConsoleTemplate.CSharp` NuGet 패키지는 없습니다. 명령을 실행하면 패키지/템플릿이 제거되지 않고 다음 예외가 표시됩니다.
-> 
+>
 > > 'GarciaSoftware.ConsoleTemplate.CSharp'라는 제거할 항목을 찾을 수 없습니다.
 
 이미 설치한 [dotnet-new에 대한 NUnit 3 템플릿](https://www.nuget.org/packages/NUnit3.DotNetNew.Template/)을 제거하려면 다음 명령을 사용합니다.
@@ -209,7 +209,7 @@ dotnet new -u C:\Users\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate
 
 ## <a name="see-also"></a>참고 항목
 
-[dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)(dotnet/templating GitHub 리포지토리 Wiki)  
-[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)(dotnet/dotnet-template-samples GitHub 리포지토리)  
-[How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)(dotnet new에 대한 사용자 지정 템플릿을 만드는 방법)  
-[*template.json* JSON 스키마 저장소에 대 한 스키마](http://json.schemastore.org/template)  
+* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)(dotnet/templating GitHub 리포지토리 Wiki)  
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)(dotnet/dotnet-template-samples GitHub 리포지토리)  
+* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)(dotnet new에 대한 사용자 지정 템플릿을 만드는 방법)
+* [*template.json* JSON 스키마 저장소에 대 한 스키마](http://json.schemastore.org/template)  

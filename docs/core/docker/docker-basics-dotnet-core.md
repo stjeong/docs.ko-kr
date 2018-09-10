@@ -6,23 +6,23 @@ ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 02b6b3fc9e149f5d1d5d78e310c7df257be983c1
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 543b9454e826022a72752d9a24bc43b77d2501f5
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961549"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44201389"
 ---
 # <a name="learn-docker-basics-with-net-core"></a>.NET Core와 Docker 기본 사항 알아보기
 
-이 자습서에서는 Docker 컨테이너 빌드 및 .NET Core 응용 프로그램에 대한 배포 작업을 설명합니다. 이 자습서를 진행하면서 다음을 익히게 됩니다.
+이 자습서에서는 Docker 컨테이너 빌드 및 .NET Core 응용 프로그램에 대한 배포 작업을 설명합니다. [Docker 플랫폼](https://docs.docker.com/engine/docker-overview/#the-docker-platform)은 [Docker 엔진](https://docs.docker.com/engine/docker-overview/#docker-engine)을 사용하여 [Docker 이미지](https://docs.docker.com/glossary/?term=image)로 앱을 신속하게 빌드하고 패키지합니다. 이러한 이미지는 [계층화된 컨테이너](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers)에서 배포되고 실행되도록 [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) 형식으로 작성됩니다.
+
+이 자습서를 진행하면서 다음을 익히게 됩니다.
 
 > [!div class="checklist"]
 > * Dockerfile 파일을 만드는 방법
 > * .NET Core 앱을 만드는 방법
 > * 앱을 Docker 컨테이너에 배포하는 방법
-
-[Docker 플랫폼](https://docs.docker.com/engine/docker-overview/#the-docker-platform)은 [Docker 엔진](https://docs.docker.com/engine/docker-overview/#docker-engine)을 사용하여 [Docker 이미지](https://docs.docker.com/glossary/?term=image)로 앱을 신속하게 빌드하고 패키지합니다. 이러한 이미지는 [계층화된 컨테이너](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers)에서 배포되고 실행되도록 [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) 형식으로 작성됩니다.
 
 ## <a name="net-core-easiest-way-to-get-started"></a>.NET Core: 시작하는 가장 쉬운 방법
 
@@ -283,7 +283,7 @@ Hello World!
 
 ## <a name="related-resources"></a>관련 참고 자료
 
-* [.NET Core Docker 샘플](https://github.com/dotnet/dotnet-docker-samples/README.md)
+* [.NET Core Docker 샘플](https://github.com/dotnet/dotnet-docker/tree/master/samples)
 * [Windows 컨테이너의 Dockerfile](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [.NET Framework Docker 샘플](https://github.com/Microsoft/dotnet-framework-docker-samples)
 * [DockerHub의 ASP.NET Core](https://hub.docker.com/r/microsoft/aspnetcore/)
