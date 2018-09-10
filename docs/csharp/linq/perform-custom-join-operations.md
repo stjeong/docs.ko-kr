@@ -4,11 +4,11 @@ description: C#에서 사용자 지정 LINQ 조인 작업을 수행하는 방법
 ms.date: 12/1/2016
 ms.assetid: 56a2a4a5-7299-497d-b3c3-23c848678911
 ms.openlocfilehash: a0e08396c006f68949357c50a28b3b0982f0dd83
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43468112"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44217427"
 ---
 # <a name="perform-custom-join-operations"></a>사용자 지정 조인 작업 수행
 

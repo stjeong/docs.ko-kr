@@ -7,11 +7,11 @@ helpviewer_keywords:
 - types [C#], conversion keywords
 ms.assetid: 8683ff14-5289-4efe-b4f5-1e6a075918ab
 ms.openlocfilehash: 34175f1bda169a9def9e3146214a6d5cd4d258e7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43399562"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266669"
 ---
 # <a name="conversion-keywords-c-reference"></a>변환 키워드(C# 참조)
 이 섹션에서는 형식 변환에 사용되는 키워드에 대해 설명합니다.  

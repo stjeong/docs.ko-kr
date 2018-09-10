@@ -4,11 +4,11 @@ description: 구조 복사를 안전하게 최소화하는 언어 기능 이해
 ms.date: 11/10/2017
 ms.custom: mvc
 ms.openlocfilehash: f241219994d7a03192a4aea69b912bf1ac5ed29c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43422668"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44209526"
 ---
 # <a name="reference-semantics-with-value-types"></a>값 형식과 참조 의미 체계
 

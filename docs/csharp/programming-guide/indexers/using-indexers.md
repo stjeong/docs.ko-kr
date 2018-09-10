@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - indexers [C#], about indexers
 ms.assetid: df70e1a2-3ce3-4aba-ad80-4b2f3538699f
-ms.openlocfilehash: 82de2841a74f58905d3089bb0b320e7501a77045
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3e4c1f346b83cf97c57a359984bd08e075b6451b
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337615"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253223"
 ---
 # <a name="using-indexers-c-programming-guide"></a>인덱서 사용(C# 프로그래밍 가이드)
 인덱서는 클라이언트 응용 프로그램이 배열처럼 액세스할 수 있는 [class](../../../csharp/language-reference/keywords/class.md), [struct](../../../csharp/language-reference/keywords/struct.md), [interface](../../../csharp/language-reference/keywords/interface.md)를 만들 수 있게 해주는 편리한 구문입니다. 인덱서는 내부 컬렉션 또는 배열을 캡슐화하는 데 주로 사용되는 형식에서 자주 구현됩니다. 예를 들어 24시간 동안 10회 기록된 화씨온도를 나타내는 TempRecord라는 클래스가 있다고 가정합니다. 이 클래스에는 온도를 나타내는 float 형식의 “temps” 배열과 온도가 기록된 날짜를 나타내는 <xref:System.DateTime>이 포함되어 있습니다. 이 클래스에서 인덱서를 구현하면 클라이언트가 TempRecord 인스턴스의 온도에 `float temp = tr.temps[4]` 대신 `float temp = tr[4]`로 액세스할 수 있습니다. 인덱서 표기법은 클라이언트 응용 프로그램에 대한 구문을 간소화할 뿐 아니라 클래스와 해당 용도를 다른 개발자가 이해하기 쉽게 만듭니다.  
@@ -71,7 +71,8 @@ public int this [int index]   // Indexer declaration
   
 -   `get` 및 [set](../../../csharp/language-reference/keywords/set.md) 접근자의 접근성을 적절하게 제한적으로 설정합니다. 특히 `set` 접근자의 경우 이 작업이 중요합니다. 자세한 내용은 [접근자 액세스 가능성 제한](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)

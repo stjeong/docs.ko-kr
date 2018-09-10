@@ -3,12 +3,12 @@ title: 쿼리 식의 Null 값 처리(C#의 LINQ)
 description: C#에서 LINQ 쿼리 식의 Null 값을 처리하는 방법을 알아봅니다.
 ms.date: 12/1/2016
 ms.assetid: ac63ae8b-724d-4251-9334-528f4e884ae7
-ms.openlocfilehash: 34cda0be5fa38422415b6c3927f40a0df95fc6a6
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 2c477ef371dbb424c72fb9d34948760b7e3f5609
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404105"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44259498"
 ---
 # <a name="handle-null-values-in-query-expressions"></a>쿼리 식의 Null 값 처리
 
@@ -30,6 +30,6 @@ join 절에서 비교 키 중 하나만 nullable 값 형식인 경우에는 쿼�
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.Nullable%601>  
-[LINQ(Language-Integrated Query)](index.md)  
-[Nullable 형식](../programming-guide/nullable-types/index.md)  
+- <xref:System.Nullable%601>  
+- [LINQ(Language-Integrated Query)](index.md)  
+- [Nullable 형식](../programming-guide/nullable-types/index.md)  

@@ -2,12 +2,12 @@
 title: 호출자 정보(C#)
 ms.date: 07/20/2015
 ms.assetid: ffad3d24-2fb7-4641-9124-53b5bc91d339
-ms.openlocfilehash: 6f0cd4d9d8fc85cb15431ccb4c76eee14b3f67c7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 048e91ad337f74ef04a2a03412a44a0be0ef9506
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320692"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44212453"
 ---
 # <a name="caller-information-c"></a>호출자 정보(C#)
 호출자 정보 특성을 사용하여 메서드 호출자에 대한 정보를 얻을 수 있습니다. 소스 코드 파일 경로, 소스 코드 줄 번호 및 호출자의 멤버 이름을 얻을 수 있습니다. 이 정보는 추적, 디버깅 및 진단 도구를 만드는 데 도움이 됩니다.  
@@ -75,8 +75,9 @@ public void TraceMessage(string message,
 |특성 생성자|특성이 적용되는 멤버의 이름입니다. 특성이 멤버 내에 있는 어떤 요소인 경우(예: 매개 변수, 반환 값 또는 제네릭 형식 매개 변수) 이 결과는 그 요소와 관련된 멤버의 이름입니다.|  
 |포함하는 멤버가 없음(예: 어셈블리 수준 또는 형식에 적용되는 특성)|선택적 매개 변수의 기본값입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [특성(C#)](../../../csharp/programming-guide/concepts/attributes/index.md)  
- [공통 특성(C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)  
- [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)  
- [프로그래밍 개념(C#)](../../../csharp/programming-guide/concepts/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [특성(C#)](../../../csharp/programming-guide/concepts/attributes/index.md)  
+- [공통 특성(C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)  
+- [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)  
+- [프로그래밍 개념(C#)](../../../csharp/programming-guide/concepts/index.md)

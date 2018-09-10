@@ -5,12 +5,12 @@ ms.date: 04/25/2018
 helpviewer_keywords:
 - generics [C#], default keyword
 - default keyword [C#], generic programming
-ms.openlocfilehash: be51ad253a2939f538144caf4500f39e144c1664
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 94866f22fb3ad921a834cffb16fe17e44cef5965
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336803"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44222294"
 ---
 # <a name="default-value-expressions-c-programming-guide"></a>기본값 식(C# 프로그래밍 가이드)
 
@@ -61,9 +61,9 @@ C# 7.1부터 컴파일러에서 식의 형식을 유추할 수 있을 때 기본
 
 ## <a name="see-also"></a>참고 항목
 
- <xref:System.Collections.Generic>  
- [C# 프로그래밍 가이드](../index.md)  
- [제네릭(C# 프로그래밍 가이드)](../generics/index.md)  
- [제네릭 메서드](../generics/generic-methods.md)  
- [.NET의 제네릭](~/docs/standard/generics/index.md)  
- [기본값 표](../../language-reference/keywords/default-values-table.md)
+- <xref:System.Collections.Generic>  
+- [C# 프로그래밍 가이드](../index.md)  
+- [제네릭(C# 프로그래밍 가이드)](../generics/index.md)  
+- [제네릭 메서드](../generics/generic-methods.md)  
+- [.NET의 제네릭](~/docs/standard/generics/index.md)  
+- [기본값 표](../../language-reference/keywords/default-values-table.md)

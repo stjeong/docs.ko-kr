@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -- operator [C#]
 - decrement operator (--) [C#]
 ms.assetid: 6b9cfe86-63c7-421f-9379-c9690fea8720
-ms.openlocfilehash: 25f301bc0b2bc9bf51b0a44f26b2efabae00e452
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 615b100447233856ab3740d075d69e3ae19285fd
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33288803"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44210431"
 ---
 # <a name="---operator-c-reference"></a>-- 연산자(C# 참조)
 감소 연산자(`--`)는 피연산자를 1씩 감소시킵니다. 감소 연산자는 피연산자 앞이나 뒤에 나타날 수 있습니다(`--variable` 및 `variable--`). 첫 번째 형태는 전위 감소 연산입니다. 연산 결과는 감소된 후의 피연산자 값입니다. 두 번째 형태는 후위 감소 연산입니다. 연산 결과는 감소되기 전의 피연산자 값입니다.  
@@ -25,7 +25,8 @@ ms.locfileid: "33288803"
 ## <a name="example"></a>예  
  [!code-csharp[csRefOperators#8](../../../csharp/language-reference/operators/codesnippet/CSharp/decrement-operator_1.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)

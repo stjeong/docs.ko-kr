@@ -5,14 +5,15 @@ helpviewer_keywords:
 - jagged arrays [C#]
 - arrays [C#], jagged
 ms.assetid: 537c65a6-0e0a-4a00-a2b8-086f38519c70
-ms.openlocfilehash: c1825e1a731c40a5945060f8085bd612b5d62008
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2e4988439000712f4d1bd9b5abe412e7fd5d43eb
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297370"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44261672"
 ---
 # <a name="jagged-arrays-c-programming-guide"></a>가변 배열(C# 프로그래밍 가이드)
+
 가변 배열의 요소에는 배열이 사용됩니다. 가변 배열의 요소는 차원과 크기가 서로 다를 수 있습니다. 가변 배열을 “배열의 배열”이라고도 합니다. 다음 예제에서는 가변 배열을 선언, 초기화 및 액세스하는 방법을 보여 줍니다.  
   
  다음은 각각 정수의 1차원 배열인 세 개의 요소를 포함하는 1차원 배열의 선언입니다.  
@@ -57,14 +58,16 @@ ms.locfileid: "33297370"
   
  이 경우 위 줄은 값 3을 반환합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예
+
  이 예제에서는 요소 자체가 배열인 배열을 작성합니다. 각 배열 요소의 크기가 서로 다릅니다.  
   
  [!code-csharp[csProgGuideArrays#18](../../../csharp/programming-guide/arrays/codesnippet/CSharp/jagged-arrays_10.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Array>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [배열](../../../csharp/programming-guide/arrays/index.md)  
- [1차원 배열](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
- [다차원 배열](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Array>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [배열](../../../csharp/programming-guide/arrays/index.md)  
+- [1차원 배열](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
+- [다차원 배열](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)

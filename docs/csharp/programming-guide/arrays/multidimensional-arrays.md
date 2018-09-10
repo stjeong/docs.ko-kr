@@ -5,14 +5,15 @@ helpviewer_keywords:
 - arrays [C#], multidimensional
 - multidimensional arrays [C#]
 ms.assetid: 020ce02e-7dff-4273-8e53-bf0b33747232
-ms.openlocfilehash: 12cc7ff4f0a688145f2dee130e66dbe9a05ec7e7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a1d7a0a014c330682316e869f6727082fa3b31ef
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33313851"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266020"
 ---
 # <a name="multidimensional-arrays-c-programming-guide"></a>다차원 배열(C# 프로그래밍 가이드)
+
 배열에 둘 이상의 차원이 있을 수 있습니다. 예를 들어 다음 선언은 행 4개, 열 2개의 2차원 배열을 만듭니다.  
   
  [!code-csharp[csProgGuideArrays#11](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_1.cs)]  
@@ -21,7 +22,8 @@ ms.locfileid: "33313851"
   
  [!code-csharp[csProgGuideArrays#12](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_2.cs)]  
   
-## <a name="array-initialization"></a>배열 초기화  
+## <a name="array-initialization"></a>배열 초기화
+
  다음 예제와 같이 선언 시 배열을 초기화할 수 있습니다.  
   
  [!code-csharp[csProgGuideArrays#13](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_3.cs)]  
@@ -46,8 +48,9 @@ ms.locfileid: "33313851"
   
  [!code-csharp[csProgGuideArrays#17](../../../csharp/programming-guide/arrays/codesnippet/CSharp/multidimensional-arrays_8.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [배열](../../../csharp/programming-guide/arrays/index.md)  
- [1차원 배열](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
- [가변 배열](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [배열](../../../csharp/programming-guide/arrays/index.md)  
+- [1차원 배열](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
+- [가변 배열](../../../csharp/programming-guide/arrays/jagged-arrays.md)
