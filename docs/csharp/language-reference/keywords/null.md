@@ -8,29 +8,29 @@ helpviewer_keywords:
 - null keyword [C#]
 ms.assetid: fecb1c60-6232-4efe-87f7-9a86ba2e9119
 ms.openlocfilehash: 67961027c7eab40344251db3d57e4d80ca5e8cdc
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43397759"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266802"
 ---
-# <a name="null-c-reference"></a><span data-ttu-id="89a4a-102">null(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="89a4a-102">null (C# Reference)</span></span>
+# <a name="null-c-reference"></a><span data-ttu-id="5d974-102">null(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="5d974-102">null (C# Reference)</span></span>
 
-<span data-ttu-id="89a4a-103">`null` 키워드는 개체를 참조하지 않는 null 참조를 나타내는 리터럴입니다.</span><span class="sxs-lookup"><span data-stu-id="89a4a-103">The `null` keyword is a literal that represents a null reference, one that does not refer to any object.</span></span> <span data-ttu-id="89a4a-104">`null`은 참조 형식 변수의 기본값입니다.</span><span class="sxs-lookup"><span data-stu-id="89a4a-104">`null` is the default value of reference-type variables.</span></span> <span data-ttu-id="89a4a-105">일반적인 값 형식은 null일 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="89a4a-105">Ordinary value types cannot be null.</span></span> <span data-ttu-id="89a4a-106">그러나 C# 2.0에서 nullable 값 형식이 도입되었습니다.</span><span class="sxs-lookup"><span data-stu-id="89a4a-106">However, C# 2.0 introduced nullable value types.</span></span> <span data-ttu-id="89a4a-107">[Nullable 형식](../../programming-guide/nullable-types/index.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="89a4a-107">See [Nullable Types](../../programming-guide/nullable-types/index.md).</span></span>
+<span data-ttu-id="5d974-103">`null` 키워드는 개체를 참조하지 않는 null 참조를 나타내는 리터럴입니다.</span><span class="sxs-lookup"><span data-stu-id="5d974-103">The `null` keyword is a literal that represents a null reference, one that does not refer to any object.</span></span> <span data-ttu-id="5d974-104">`null`은 참조 형식 변수의 기본값입니다.</span><span class="sxs-lookup"><span data-stu-id="5d974-104">`null` is the default value of reference-type variables.</span></span> <span data-ttu-id="5d974-105">일반적인 값 형식은 null일 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5d974-105">Ordinary value types cannot be null.</span></span> <span data-ttu-id="5d974-106">그러나 C# 2.0에서 nullable 값 형식이 도입되었습니다.</span><span class="sxs-lookup"><span data-stu-id="5d974-106">However, C# 2.0 introduced nullable value types.</span></span> <span data-ttu-id="5d974-107">[Nullable 형식](../../programming-guide/nullable-types/index.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5d974-107">See [Nullable Types](../../programming-guide/nullable-types/index.md).</span></span>
 
-<span data-ttu-id="89a4a-108">다음 예제에서는 null 키워드의 몇 가지 동작을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="89a4a-108">The following example demonstrates some behaviors of the null keyword:</span></span>
+<span data-ttu-id="5d974-108">다음 예제에서는 null 키워드의 몇 가지 동작을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5d974-108">The following example demonstrates some behaviors of the null keyword:</span></span>
 
 [!code-csharp[csrefKeywordsLiteral#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsLiteral/CS/csrefKeywordsLiteral.cs#1)]
 
-## <a name="c-language-specification"></a><span data-ttu-id="89a4a-109">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="89a4a-109">C# language specification</span></span>
+## <a name="c-language-specification"></a><span data-ttu-id="5d974-109">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="5d974-109">C# language specification</span></span>
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a><span data-ttu-id="89a4a-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="89a4a-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5d974-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="5d974-110">See also</span></span>
 
-- [<span data-ttu-id="89a4a-111">C# 참조</span><span class="sxs-lookup"><span data-stu-id="89a4a-111">C# Reference</span></span>](../../language-reference/index.md)
-- [<span data-ttu-id="89a4a-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="89a4a-112">C# Programming Guide</span></span>](../../programming-guide/index.md)
-- [<span data-ttu-id="89a4a-113">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="89a4a-113">C# Keywords</span></span>](index.md)
-- [<span data-ttu-id="89a4a-114">리터럴 키워드</span><span class="sxs-lookup"><span data-stu-id="89a4a-114">Literal Keywords</span></span>](literal-keywords.md)
-- [<span data-ttu-id="89a4a-115">기본값 표</span><span class="sxs-lookup"><span data-stu-id="89a4a-115">Default Values Table</span></span>](default-values-table.md)
-- [<span data-ttu-id="89a4a-116">Nothing</span><span class="sxs-lookup"><span data-stu-id="89a4a-116">Nothing</span></span>](../../../visual-basic/language-reference/nothing.md)
+- [<span data-ttu-id="5d974-111">C# 참조</span><span class="sxs-lookup"><span data-stu-id="5d974-111">C# Reference</span></span>](../../language-reference/index.md)
+- [<span data-ttu-id="5d974-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="5d974-112">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="5d974-113">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="5d974-113">C# Keywords</span></span>](index.md)
+- [<span data-ttu-id="5d974-114">리터럴 키워드</span><span class="sxs-lookup"><span data-stu-id="5d974-114">Literal Keywords</span></span>](literal-keywords.md)
+- [<span data-ttu-id="5d974-115">기본값 표</span><span class="sxs-lookup"><span data-stu-id="5d974-115">Default Values Table</span></span>](default-values-table.md)
+- [<span data-ttu-id="5d974-116">Nothing</span><span class="sxs-lookup"><span data-stu-id="5d974-116">Nothing</span></span>](../../../visual-basic/language-reference/nothing.md)

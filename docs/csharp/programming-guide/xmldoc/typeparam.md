@@ -7,40 +7,41 @@ helpviewer_keywords:
 - <typeparam> C# XML tag
 - typeparam C# XML tag
 ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
-ms.openlocfilehash: 5af03c8176672685b02a23019812f1aeded28dc8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: ec19060008c1c06c54c89dbddee7d24001bcdebc
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43389278"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44273715"
 ---
-# <a name="lttypeparamgt-c-programming-guide"></a><span data-ttu-id="07f65-102">&lt;typeparam&gt;(C# 프로그래밍 가이드)</span><span class="sxs-lookup"><span data-stu-id="07f65-102">&lt;typeparam&gt; (C# Programming Guide)</span></span>
-## <a name="syntax"></a><span data-ttu-id="07f65-103">구문</span><span class="sxs-lookup"><span data-stu-id="07f65-103">Syntax</span></span>  
+# <a name="lttypeparamgt-c-programming-guide"></a><span data-ttu-id="47011-102">&lt;typeparam&gt;(C# 프로그래밍 가이드)</span><span class="sxs-lookup"><span data-stu-id="47011-102">&lt;typeparam&gt; (C# Programming Guide)</span></span>
+## <a name="syntax"></a><span data-ttu-id="47011-103">구문</span><span class="sxs-lookup"><span data-stu-id="47011-103">Syntax</span></span>  
   
 ```xml  
 <typeparam name="name">description</typeparam>  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="07f65-104">매개 변수</span><span class="sxs-lookup"><span data-stu-id="07f65-104">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="47011-104">매개 변수</span><span class="sxs-lookup"><span data-stu-id="47011-104">Parameters</span></span>  
  `name`  
- <span data-ttu-id="07f65-105">형식 매개 변수의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-105">The name of the type parameter.</span></span> <span data-ttu-id="07f65-106">이름을 큰따옴표(“ ”)로 묶습니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-106">Enclose the name in double quotation marks (" ").</span></span>  
+ <span data-ttu-id="47011-105">형식 매개 변수의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="47011-105">The name of the type parameter.</span></span> <span data-ttu-id="47011-106">이름을 큰따옴표(“ ”)로 묶습니다.</span><span class="sxs-lookup"><span data-stu-id="47011-106">Enclose the name in double quotation marks (" ").</span></span>  
   
  `description`  
- <span data-ttu-id="07f65-107">형식 매개 변수에 대한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-107">A description for the type parameter.</span></span>  
+ <span data-ttu-id="47011-107">형식 매개 변수에 대한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="47011-107">A description for the type parameter.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="07f65-108">설명</span><span class="sxs-lookup"><span data-stu-id="07f65-108">Remarks</span></span>  
- <span data-ttu-id="07f65-109">`<typeparam>` 태그는 제네릭 형식 또는 메서드 선언의 주석에서 형식 매개 변수를 설명하는 데 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-109">The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter.</span></span> <span data-ttu-id="07f65-110">제네릭 형식 또는 메서드의 각 형식 매개 변수에 대한 태그를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-110">Add a tag for each type parameter of the generic type or method.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="47011-108">설명</span><span class="sxs-lookup"><span data-stu-id="47011-108">Remarks</span></span>  
+ <span data-ttu-id="47011-109">`<typeparam>` 태그는 제네릭 형식 또는 메서드 선언의 주석에서 형식 매개 변수를 설명하는 데 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="47011-109">The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter.</span></span> <span data-ttu-id="47011-110">제네릭 형식 또는 메서드의 각 형식 매개 변수에 대한 태그를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="47011-110">Add a tag for each type parameter of the generic type or method.</span></span>  
   
- <span data-ttu-id="07f65-111">자세한 내용은 [제네릭](../../../csharp/programming-guide/generics/index.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="07f65-111">For more information, see [Generics](../../../csharp/programming-guide/generics/index.md).</span></span>  
+ <span data-ttu-id="47011-111">자세한 내용은 [제네릭](../../../csharp/programming-guide/generics/index.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="47011-111">For more information, see [Generics](../../../csharp/programming-guide/generics/index.md).</span></span>  
   
- <span data-ttu-id="07f65-112">`<typeparam>` 태그에 대한 텍스트는 IntelliSense와 [개체 브라우저 창](https://msdn.microsoft.com/library/3c7f1673-1f0d-41b1-94ca-a3dcfcb82cda)의 코드 주석 웹 보고서에 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-112">The text for the `<typeparam>` tag will be displayed in IntelliSense, the [Object Browser Window](https://msdn.microsoft.com/library/3c7f1673-1f0d-41b1-94ca-a3dcfcb82cda) code comment web report.</span></span>  
+ <span data-ttu-id="47011-112">`<typeparam>` 태그에 대한 텍스트는 IntelliSense와 [개체 브라우저 창](https://msdn.microsoft.com/library/3c7f1673-1f0d-41b1-94ca-a3dcfcb82cda)의 코드 주석 웹 보고서에 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="47011-112">The text for the `<typeparam>` tag will be displayed in IntelliSense, the [Object Browser Window](https://msdn.microsoft.com/library/3c7f1673-1f0d-41b1-94ca-a3dcfcb82cda) code comment web report.</span></span>  
   
- <span data-ttu-id="07f65-113">[/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="07f65-113">Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.</span></span>  
+ <span data-ttu-id="47011-113">[/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="47011-113">Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="07f65-114">예</span><span class="sxs-lookup"><span data-stu-id="07f65-114">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="47011-114">예</span><span class="sxs-lookup"><span data-stu-id="47011-114">Example</span></span>  
  [!code-csharp[csProgGuideDocComments#13](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/typeparam_1.cs)]  
   
-## <a name="see-also"></a><span data-ttu-id="07f65-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="07f65-115">See Also</span></span>  
- [<span data-ttu-id="07f65-116">C# 참조</span><span class="sxs-lookup"><span data-stu-id="07f65-116">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
- [<span data-ttu-id="07f65-117">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="07f65-117">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
- [<span data-ttu-id="07f65-118">문서 주석에 대한 권장 태그</span><span class="sxs-lookup"><span data-stu-id="07f65-118">Recommended Tags for Documentation Comments</span></span>](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## <a name="see-also"></a><span data-ttu-id="47011-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="47011-115">See Also</span></span>
+
+- [<span data-ttu-id="47011-116">C# 참조</span><span class="sxs-lookup"><span data-stu-id="47011-116">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="47011-117">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="47011-117">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="47011-118">문서 주석에 대한 권장 태그</span><span class="sxs-lookup"><span data-stu-id="47011-118">Recommended Tags for Documentation Comments</span></span>](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
