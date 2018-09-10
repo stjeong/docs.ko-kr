@@ -10,11 +10,11 @@ ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 37abcb6b3a8fdf4ef91d5e946a97db7ca1428ce8
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44195729"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44271301"
 ---
 # <a name="overview-of-synchronization-primitives"></a>동기화 기본 형식 개요
 <a name="top"></a> .NET Framework에서는 스레드 조작을 제어하고 경합 상태를 방지할 수 있는 동기화 기본 형식 범위를 제공합니다. 이들 기본 형식은 크게 잠금, 신호 및 연관 작업의 세 범주로 구분됩니다.  

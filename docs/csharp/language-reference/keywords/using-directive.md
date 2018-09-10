@@ -5,11 +5,11 @@ helpviewer_keywords:
 - using directive [C#]
 ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
 ms.openlocfilehash: 1ed7ac49cde6792cddff898e8b9930a83598e02c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44183082"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44270697"
 ---
 # <a name="using-directive-c-reference"></a>using 지시문(C# 참조)
 `using` 지시문에는 다음 세 가지 용도가 있습니다.  
