@@ -5,14 +5,15 @@ helpviewer_keywords:
 - single-dimensional arrays [C#]
 - arrays [C#], single-dimensional
 ms.assetid: 2cec1196-1de0-49d2-baf2-c607c33310e8
-ms.openlocfilehash: 2f5dcb032c5dea764cdd212bbcd02e1640089d96
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c2f26fd74a596ada21eef578e58c9cd8e0305d6c
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33313955"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44128552"
 ---
 # <a name="single-dimensional-arrays-c-programming-guide"></a>1차원 배열(C# 프로그래밍 가이드)
+
 다음 예제와 같이 5개 정수의 1차원 배열을 선언할 수 있습니다.  
   
  [!code-csharp[csProgGuideArrays#4](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_1.cs)]  
@@ -23,7 +24,8 @@ ms.locfileid: "33313955"
   
  [!code-csharp[csProgGuideArrays#5](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_2.cs)]  
   
-## <a name="array-initialization"></a>배열 초기화  
+## <a name="array-initialization"></a>배열 초기화
+
  선언 시 배열을 초기화할 수 있으며, 이 경우 차수 지정자가 초기화 목록에 있는 요소 수에 의해 제공되기 때문에 지정할 필요가 없습니다. 예:  
   
  [!code-csharp[csProgGuideArrays#6](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_3.cs)]  
@@ -42,7 +44,8 @@ ms.locfileid: "33313955"
   
  C# 3.0에서는 암시적으로 형식화된 배열이 도입되었습니다. 자세한 내용은 [암시적으로 형식화된 배열](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md)을 참조하세요.  
   
-## <a name="value-type-and-reference-type-arrays"></a>값 형식 및 참조 형식 배열  
+## <a name="value-type-and-reference-type-arrays"></a>값 형식 및 참조 형식 배열
+
  다음 배열 선언을 살펴보세요.  
   
  [!code-csharp[csProgGuideArrays#10](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_7.cs)]  
@@ -51,9 +54,10 @@ ms.locfileid: "33313955"
   
  값 형식과 참조 형식에 대한 자세한 내용은 [형식](../../../csharp/language-reference/keywords/types.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Array>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [배열](../../../csharp/programming-guide/arrays/index.md)  
- [다차원 배열](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
- [가변 배열](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Array>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [배열](../../../csharp/programming-guide/arrays/index.md)  
+- [다차원 배열](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
+- [가변 배열](../../../csharp/programming-guide/arrays/jagged-arrays.md)

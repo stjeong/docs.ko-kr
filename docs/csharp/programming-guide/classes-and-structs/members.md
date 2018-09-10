@@ -5,12 +5,12 @@ helpviewer_keywords:
 - types [C#], nested types
 - C# language, type members
 ms.assetid: 4a30a4ab-d690-4936-9124-92ce9448665a
-ms.openlocfilehash: 61818b153bb74c5c0da053f381fd1ed9132c066b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dbfd0c48dc59b094af49e65d2ed4fcd4e2a70ff0
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318226"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44087561"
 ---
 # <a name="members-c-programming-guide"></a>멤버(C# 프로그래밍 가이드)
 클래스 및 구조체에는 해당 데이터와 동작을 나타내는 멤버가 있습니다. 클래스의 멤버에는 클래스에서 선언된 모든 멤버가 상속 계층 구조의 모든 클래스에서 선언된 모든 멤버(생성자 및 종료자 제외)와 함께 포함됩니다. 기본 클래스의 private 멤버는 상속되지만 파생 클래스에서 액세스할 수 없습니다.  
@@ -30,16 +30,17 @@ ms.locfileid: "33318226"
 |[종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)|종료자는 C#에서 매우 드물게 사용됩니다. 메모리에서 개체를 제거할 때 런타임 실행 엔진이 호출하는 메서드입니다. 일반적으로 해제해야 하는 리소스가 적절하게 처리되도록 하는 데 사용됩니다.|  
 |[중첩 형식](../../../csharp/programming-guide/classes-and-structs/nested-types.md)|중첩 형식은 다른 형식 내에서 선언된 형식입니다. 중첩 형식은 대체로 개체를 포함하는 형식에서만 사용되는 개체를 설명하는 데 사용됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)  
- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
- [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
- [종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)  
- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
- [이벤트](../../../csharp/programming-guide/events/index.md)  
- [중첩 형식](../../../csharp/programming-guide/classes-and-structs/nested-types.md)  
- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
- [오버로드할 수 있는 연산자](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md)  
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [생성자](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+- [종료자](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [필드](../../../csharp/programming-guide/classes-and-structs/fields.md)  
+- [인덱서](../../../csharp/programming-guide/indexers/index.md)  
+- [이벤트](../../../csharp/programming-guide/events/index.md)  
+- [중첩 형식](../../../csharp/programming-guide/classes-and-structs/nested-types.md)  
+- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [오버로드할 수 있는 연산자](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)
