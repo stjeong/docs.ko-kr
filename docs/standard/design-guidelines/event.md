@@ -13,11 +13,11 @@ ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: b257da73d33fae54ef464e9dd69906316b87fd88
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44270908"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44353856"
 ---
 # <a name="event-design"></a>이벤트 디자인
 이벤트는 자주 사용 하는 형식의 콜백 (사용자 코드를 호출 하기 위해 프레임 워크를 사용할 수 있는 구문)입니다. 대리자, 가상 멤버 및 인터페이스 기반 플러그 인을 수행 하는 멤버를 포함 하는 다른 콜백 메커니즘입니다. 유용성 연구에서 데이터는 대부분의 개발자는 더 편리한 다른 콜백 메커니즘을 사용 하는 것 보다 이벤트를 사용 하는 것을 나타냅니다. 이벤트는 Visual Studio 및 다양 한 언어와 원활 하 게 통합 됩니다.  

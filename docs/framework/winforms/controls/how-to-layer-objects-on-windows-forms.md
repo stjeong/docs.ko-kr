@@ -13,11 +13,11 @@ helpviewer_keywords:
 - z-order
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
 ms.openlocfilehash: d67d9b204c316dce5f3818496d791ed4c1b352f2
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44269165"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44360424"
 ---
 # <a name="how-to-layer-objects-on-windows-forms"></a>방법: Windows Forms에서 개체 계층화
 복잡 한 사용자 인터페이스를 만들거나 여러 문서 MDI (인터페이스) 폼을 사용할 때 더 복잡 한 UI (사용자 인터페이스) 자식 폼 및 컨트롤 계층 하려는 경우가 많습니다. 이동 컨트롤 및 windows 그룹의 컨텍스트 내에서 한 추적을 z 순서 조작할 수 있습니다. *Z 순서* 폼의 z 축 (깊이)에 따라 폼에서 컨트롤의 시각적 계층 됩니다. Z-순서의 맨 위에 있는 창에는 다른 모든 windows 겹칩니다. 다른 모든 windows 겹치는 z-순서의 맨 아래에 있는 창입니다.  

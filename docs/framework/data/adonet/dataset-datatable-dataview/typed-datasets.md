@@ -3,11 +3,11 @@ title: 형식화된 데이터 집합
 ms.date: 03/30/2017
 ms.assetid: 033d2548-cf24-4c05-8179-67d8b009c048
 ms.openlocfilehash: 68721bcdbce6bf6d3279d6018ce6bc48d65c55a3
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44213357"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44342266"
 ---
 # <a name="typed-datasets"></a>형식화된 데이터 집합
 <xref:System.Data.DataSet>에서는 약한 형식의 변수를 통해 런타임에 바인딩하여 값에 액세스할 수도 있고 강력한 형식의 메타포를 통해 데이터에 액세스할 수도 있습니다. 테이블 및 포함 된 열을 **데이터 집합** 친숙 한 이름을 사용 하 여 액세스할 수 있으며 강력한 형식의 변수입니다.  
