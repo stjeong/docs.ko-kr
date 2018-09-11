@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 374ef3e015ee477c5979e2e31574aabfdd03dd1b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a982082611760e4f901c427af25a0a49a4e243a1
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33579095"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44192288"
 ---
 # <a name="quantifiers-in-regular-expressions"></a>정규식의 수량자
 수량자는 찾을 일치 항목의 입력에 있어야 하는 문자, 그룹 또는 문자 클래스의 인스턴스 수를 지정합니다.  다음 테이블에서는 .NET에서 지원하는 수량자를 보여 줍니다.  
@@ -115,7 +115,7 @@ ms.locfileid: "33579095"
 |`\b`|단어 경계를 종료합니다.|  
   
 ### <a name="match-at-least-n-times-n"></a>적어도 n번 일치: {n,}  
- `{`*n*`,}` 수량자는 적어도 *n*번 이전 요소와 일치하며 여기서 *n*은 정수입니다. `{`*n*`,}`은 게으른 수량자가 `{`*n*`}?`인 탐욕적 수량자입니다.  
+ `{`*n*`,}` 수량자는 적어도 *n*번 이전 요소와 일치하며 여기서 *n*은 정수입니다. `{`*n*`,}`은 게으른 수량자가 `{`*n*`,}?`인 탐욕적 수량자입니다.  
   
  예를 들어, 정규식 `\b\d{2,}\b\D+`는 뒤에 적어도 두 개의 숫자, 단어 경계와 숫자가 아닌 문자가 있는 단어 경계를 찾으려고 합니다. 다음 예제에서는 이 정규식을 설명합니다. 정규식은 `"7 days"`라는 구를 찾는 데 실패합니다. 하나의 10진수 숫자를 포함하지만 `"10 weeks and 300 years"`라는 구와 일치하기 때문입니다.  
   
@@ -271,6 +271,7 @@ ms.locfileid: "33579095"
  [!code-csharp[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/cs/emptymatch4.cs#2)]
  [!code-vb[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/vb/emptymatch4.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [역추적](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
+## <a name="see-also"></a>참고 항목
+
+- [정규식 언어 - 빠른 참조](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [역추적](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
