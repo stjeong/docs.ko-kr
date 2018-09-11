@@ -3,11 +3,11 @@ title: 주소 헤더
 ms.date: 03/30/2017
 ms.assetid: b0c94d4a-3bde-4b4d-bb6d-9f12bc3a6940
 ms.openlocfilehash: d2e38c674e0a3ea10df2e8363e90f4adf7edc9da
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
-ms.translationtype: HT
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43420559"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43503078"
 ---
 # <a name="address-headers"></a>주소 헤더
 Address Headers 샘플은 클라이언트 Windows Communication Foundation (WCF)를 사용 하 여 서비스에 대 한 참조 매개 변수를 전달 하는 방법 하는 방법을 보여 줍니다.  
@@ -22,7 +22,7 @@ Address Headers 샘플은 클라이언트 Windows Communication Foundation (WCF)
  이 샘플에서 클라이언트는 클라이언트 엔드포인트의 `EndpointAddress`에 참조 매개 변수를 추가합니다. 서비스는 이 참조 매개 변수를 찾아서 "Hello" 서비스 작업의 논리에 해당 값을 사용합니다.  
   
 ## <a name="client"></a>클라이언트  
- 클라이언트는 참조 매개 변수를 보내려면 `AddressHeader`의 `EndpointAddress`에 `ServiceEndpoint`를 추가해야 합니다. ph x="1" /&gt; 클래스를 변경할 수 없으므로 엔드포인트 주소 수정은 `EndpointAddressBuilder` 클래스를 사용하여 수행해야 합니다. 다음 코드에서는 해당 메시지의 일부로 참조 매개 변수를 보내도록 클라이언트를 초기화합니다.  
+ 클라이언트는 참조 매개 변수를 보내려면 `AddressHeader`의 `EndpointAddress`에 `ServiceEndpoint`를 추가해야 합니다. `EndpointAddress` 클래스를 변경할 수 없으므로 엔드포인트 주소 수정은 `EndpointAddressBuilder` 클래스를 사용하여 수행해야 합니다. 다음 코드에서는 해당 메시지의 일부로 참조 매개 변수를 보내도록 클라이언트를 초기화합니다.  
   
 ```csharp   
 HelloClient client = new HelloClient();  
