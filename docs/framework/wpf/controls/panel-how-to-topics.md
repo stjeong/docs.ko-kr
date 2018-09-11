@@ -8,23 +8,23 @@ helpviewer_keywords:
 - controls [WPF], Panel
 ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
 ms.openlocfilehash: d8ead1a799f1bd7524d171beb3e262baeb4b5fbe
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44200791"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264573"
 ---
-# <a name="panel-how-to-topics"></a><span data-ttu-id="87b4f-102">Panel 방법 항목</span><span class="sxs-lookup"><span data-stu-id="87b4f-102">Panel How-to Topics</span></span>
-<span data-ttu-id="87b4f-103">이 섹션의에서 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Controls.Panel> 요소 및 관련 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="87b4f-103">The topics in this section describe how to use the <xref:System.Windows.Controls.Panel> element and related [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)].</span></span>  
+# <a name="panel-how-to-topics"></a><span data-ttu-id="bf084-102">Panel 방법 항목</span><span class="sxs-lookup"><span data-stu-id="bf084-102">Panel How-to Topics</span></span>
+<span data-ttu-id="bf084-103">이 섹션의에서 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Controls.Panel> 요소 및 관련 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="bf084-103">The topics in this section describe how to use the <xref:System.Windows.Controls.Panel> element and related [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)].</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="87b4f-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="87b4f-104">In This Section</span></span>  
- [<span data-ttu-id="87b4f-105">방법: layouttransform 속성을 요소에 적용</span><span class="sxs-lookup"><span data-stu-id="87b4f-105">How to: Apply a LayoutTransform to an Element</span></span>](https://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
- [<span data-ttu-id="87b4f-106">사용자 지정 패널 요소 만들기</span><span class="sxs-lookup"><span data-stu-id="87b4f-106">Create a Custom Panel Element</span></span>](../../../../docs/framework/wpf/controls/how-to-create-a-custom-panel-element.md)  
- [<span data-ttu-id="87b4f-107">Panel의 OnRender 메서드 재정의</span><span class="sxs-lookup"><span data-stu-id="87b4f-107">Override the Panel OnRender Method</span></span>](../../../../docs/framework/wpf/controls/how-to-override-the-panel-onrender-method.md)  
- [<span data-ttu-id="87b4f-108">요소의 높이 속성 설정</span><span class="sxs-lookup"><span data-stu-id="87b4f-108">Set the Height Properties of an Element</span></span>](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  
- [<span data-ttu-id="87b4f-109">요소의 너비 속성 설정</span><span class="sxs-lookup"><span data-stu-id="87b4f-109">Set the Width Properties of an Element</span></span>](../../../../docs/framework/wpf/controls/how-to-set-the-width-properties-of-an-element.md)  
+## <a name="in-this-section"></a><span data-ttu-id="bf084-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="bf084-104">In This Section</span></span>  
+ [<span data-ttu-id="bf084-105">방법: layouttransform 속성을 요소에 적용</span><span class="sxs-lookup"><span data-stu-id="bf084-105">How to: Apply a LayoutTransform to an Element</span></span>](https://msdn.microsoft.com/library/8221db67-d99f-4783-b65e-a6c5a52c03ab)  
+ [<span data-ttu-id="bf084-106">사용자 지정 패널 요소 만들기</span><span class="sxs-lookup"><span data-stu-id="bf084-106">Create a Custom Panel Element</span></span>](../../../../docs/framework/wpf/controls/how-to-create-a-custom-panel-element.md)  
+ [<span data-ttu-id="bf084-107">Panel의 OnRender 메서드 재정의</span><span class="sxs-lookup"><span data-stu-id="bf084-107">Override the Panel OnRender Method</span></span>](../../../../docs/framework/wpf/controls/how-to-override-the-panel-onrender-method.md)  
+ [<span data-ttu-id="bf084-108">요소의 높이 속성 설정</span><span class="sxs-lookup"><span data-stu-id="bf084-108">Set the Height Properties of an Element</span></span>](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  
+ [<span data-ttu-id="bf084-109">요소의 너비 속성 설정</span><span class="sxs-lookup"><span data-stu-id="bf084-109">Set the Width Properties of an Element</span></span>](../../../../docs/framework/wpf/controls/how-to-set-the-width-properties-of-an-element.md)  
   
-## <a name="reference"></a><span data-ttu-id="87b4f-110">참조</span><span class="sxs-lookup"><span data-stu-id="87b4f-110">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="bf084-110">참조</span><span class="sxs-lookup"><span data-stu-id="bf084-110">Reference</span></span>  
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -39,9 +39,9 @@ ms.locfileid: "44200791"
   
  <xref:System.Windows.Controls.WrapPanel>  
   
-## <a name="related-sections"></a><span data-ttu-id="87b4f-111">관련 단원</span><span class="sxs-lookup"><span data-stu-id="87b4f-111">Related Sections</span></span>  
- [<span data-ttu-id="87b4f-112">레이아웃</span><span class="sxs-lookup"><span data-stu-id="87b4f-112">Layout</span></span>](../../../../docs/framework/wpf/advanced/layout.md)  
+## <a name="related-sections"></a><span data-ttu-id="bf084-111">관련 단원</span><span class="sxs-lookup"><span data-stu-id="bf084-111">Related Sections</span></span>  
+ [<span data-ttu-id="bf084-112">레이아웃</span><span class="sxs-lookup"><span data-stu-id="bf084-112">Layout</span></span>](../../../../docs/framework/wpf/advanced/layout.md)  
   
- [<span data-ttu-id="87b4f-113">연습: 내 첫 WPF 데스크톱 응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="87b4f-113">Walkthrough: My first WPF desktop application</span></span>](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [<span data-ttu-id="bf084-113">연습: 내 첫 WPF 데스크톱 응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="bf084-113">Walkthrough: My first WPF desktop application</span></span>](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [<span data-ttu-id="87b4f-114">ScrollViewer 개요</span><span class="sxs-lookup"><span data-stu-id="87b4f-114">ScrollViewer Overview</span></span>](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+ [<span data-ttu-id="bf084-114">ScrollViewer 개요</span><span class="sxs-lookup"><span data-stu-id="bf084-114">ScrollViewer Overview</span></span>](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)

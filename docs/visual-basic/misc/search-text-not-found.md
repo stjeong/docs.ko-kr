@@ -5,19 +5,19 @@ f1_keywords:
 - vbrID744
 ms.assetid: 145f0a6d-7fdd-4d73-9dc6-5fea39a52896
 ms.openlocfilehash: 2eb764bfc78cba6c06a2c1ac9fd14f3caba1c7b2
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44222385"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264703"
 ---
-# <a name="search-text-not-found"></a><span data-ttu-id="27980-102">검색 텍스트를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="27980-102">Search text not found</span></span>
-<span data-ttu-id="27980-103">지정한 텍스트를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="27980-103">The text you specified was not found.</span></span>  
+# <a name="search-text-not-found"></a><span data-ttu-id="f8c84-102">검색 텍스트를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="f8c84-102">Search text not found</span></span>
+<span data-ttu-id="f8c84-103">지정한 텍스트를 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="f8c84-103">The text you specified was not found.</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="27980-104">이 오류를 해결하려면</span><span class="sxs-lookup"><span data-stu-id="27980-104">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="f8c84-104">이 오류를 해결하려면</span><span class="sxs-lookup"><span data-stu-id="f8c84-104">To correct this error</span></span>  
   
-1.  <span data-ttu-id="27980-105">지정한 텍스트의 철자가 맞는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="27980-105">Check that the specified text is spelled correctly.</span></span>  
+1.  <span data-ttu-id="f8c84-105">지정한 텍스트의 철자가 맞는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="f8c84-105">Check that the specified text is spelled correctly.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="27980-106">참고자료</span><span class="sxs-lookup"><span data-stu-id="27980-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f8c84-106">참고자료</span><span class="sxs-lookup"><span data-stu-id="f8c84-106">See also</span></span>
 
-- [<span data-ttu-id="27980-107">텍스트 찾기 및 바꾸기</span><span class="sxs-lookup"><span data-stu-id="27980-107">Find and replace text</span></span>](/visualstudio/ide/finding-and-replacing-text)
+- [<span data-ttu-id="f8c84-107">텍스트 찾기 및 바꾸기</span><span class="sxs-lookup"><span data-stu-id="f8c84-107">Find and replace text</span></span>](/visualstudio/ide/finding-and-replacing-text)

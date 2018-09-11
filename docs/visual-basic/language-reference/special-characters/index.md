@@ -4,18 +4,18 @@ ms.date: 10/31/2017
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 9bbe3213030f8b8964de0e415cba5eaff61ba028
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44181942"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44265262"
 ---
-# <a name="special-characters-visual-basic-reference"></a><span data-ttu-id="c8a8c-102">특수 문자 (Visual Basic 참조)</span><span class="sxs-lookup"><span data-stu-id="c8a8c-102">Special Characters (Visual Basic Reference)</span></span>
+# <a name="special-characters-visual-basic-reference"></a><span data-ttu-id="9aa09-102">특수 문자 (Visual Basic 참조)</span><span class="sxs-lookup"><span data-stu-id="9aa09-102">Special Characters (Visual Basic Reference)</span></span>
 
-<span data-ttu-id="c8a8c-103">특수 문자는 앞는 프로그램 요소를 수정 하는 미리 정의 된, 상황에 맞는 문자입니다.</span><span class="sxs-lookup"><span data-stu-id="c8a8c-103">Special characters are predefined, contextual characters that modifies the program element to which they are prepended.</span></span> <span data-ttu-id="c8a8c-104">Visual Basic에서는 다음과 같은 특수 문자를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="c8a8c-104">Visual Basic supports the following special character:</span></span> 
+<span data-ttu-id="9aa09-103">특수 문자는 앞는 프로그램 요소를 수정 하는 미리 정의 된, 상황에 맞는 문자입니다.</span><span class="sxs-lookup"><span data-stu-id="9aa09-103">Special characters are predefined, contextual characters that modifies the program element to which they are prepended.</span></span> <span data-ttu-id="9aa09-104">Visual Basic에서는 다음과 같은 특수 문자를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="9aa09-104">Visual Basic supports the following special character:</span></span> 
 
-- <span data-ttu-id="c8a8c-105">[$](interpolated.md), 보간된 문자열 문자입니다.</span><span class="sxs-lookup"><span data-stu-id="c8a8c-105">[$](interpolated.md), the interpolated string character.</span></span>
+- <span data-ttu-id="9aa09-105">[$](interpolated.md), 보간된 문자열 문자입니다.</span><span class="sxs-lookup"><span data-stu-id="9aa09-105">[$](interpolated.md), the interpolated string character.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c8a8c-106">참고자료</span><span class="sxs-lookup"><span data-stu-id="c8a8c-106">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="9aa09-106">참고자료</span><span class="sxs-lookup"><span data-stu-id="9aa09-106">See also</span></span>  
 
-- [<span data-ttu-id="c8a8c-107">Visual Basic 참조</span><span class="sxs-lookup"><span data-stu-id="c8a8c-107">Visual Basic Reference</span></span>](../../../visual-basic/language-reference/index.md)
+- [<span data-ttu-id="9aa09-107">Visual Basic 참조</span><span class="sxs-lookup"><span data-stu-id="9aa09-107">Visual Basic Reference</span></span>](../../../visual-basic/language-reference/index.md)
