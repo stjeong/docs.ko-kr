@@ -3,11 +3,11 @@ title: 데이터 형식 변환(C#)
 ms.date: 07/20/2015
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
 ms.openlocfilehash: 54ef612ad4e92058d9af4d96b7b3cde9732b2f9c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44210054"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44271077"
 ---
 # <a name="converting-data-types-c"></a>데이터 형식 변환(C#)
 변환 메서드는 입력 개체의 형식을 변경합니다.  
