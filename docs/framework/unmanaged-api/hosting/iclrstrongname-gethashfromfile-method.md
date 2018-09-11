@@ -18,11 +18,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 33aab5ee23a1f0d30d1f9f3079856ca30d46d2ec
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44192322"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44337709"
 ---
 # <a name="iclrstrongnamegethashfromfile-method"></a>ICLRStrongName::GetHashFromFile 메서드
 지정된 파일 내용에 대해 해시를 생성합니다.  

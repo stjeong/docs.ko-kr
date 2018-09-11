@@ -10,11 +10,11 @@ helpviewer_keywords:
 - operators [Visual Basic], result data types
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
 ms.openlocfilehash: 135c44217debcddb15fd4cef7e73ca2f98903c43
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44221742"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44338651"
 ---
 # <a name="data-types-of-operator-results-visual-basic"></a>연산자 결과의 데이터 형식(Visual Basic)
 Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작업의 결과 데이터 형식이 결정 합니다. 일부 경우에이 피연산자 중 하나가 보다 큰 범위의 데이터 형식일 수 있습니다.  
@@ -85,8 +85,8 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|단항 `+`|짧게|SByte|Byte|짧게|UShort|정수|UInteger|Long|ULong|  
-|단항 `–`|짧게|SByte|짧게|짧게|정수|정수|Long|Long|Decimal|  
+|단항 `+`|Short|SByte|Byte|Short|UShort|정수|UInteger|Long|ULong|  
+|단항 `–`|Short|SByte|Short|Short|정수|정수|Long|Long|Decimal|  
   
 ### <a name="-and--operators"></a><\< 및 >> 연산자  
  다음 표에서 결과 데이터 형식은 두 비트 시프트 연산자에 대 한 `<<` 고 `>>`입니다. Visual Basic (이동할 비트 패턴)의 왼쪽된 피연산자에서 단항 연산자를 각 비트 시프트 연산자를 처리 합니다.  
@@ -94,7 +94,7 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`<<`, `>>`|짧게|SByte|Byte|짧게|UShort|정수|UInteger|Long|ULong|  
+|`<<`, `>>`|Short|SByte|Byte|Short|UShort|정수|UInteger|Long|ULong|  
   
  왼쪽된 피연산자가 `Decimal`, `Single`를 `Double`, 또는 `String`, Visual Basic로 변환 하려고 `Long` 작업을 하 고 결과 데이터 형식은 하기 전에 `Long`입니다. 오른쪽 피연산자 (이동할 비트 위치 수) 이어야 합니다 `Integer` 로 확대 하는 형식 또는 `Integer`합니다.  
   
@@ -104,10 +104,10 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|짧게|SByte|짧게|짧게|정수|정수|Long|Long|Decimal|  
-|`SByte`|SByte|SByte|짧게|짧게|정수|정수|Long|Long|Decimal|  
-|`Byte`|짧게|짧게|Byte|짧게|UShort|정수|UInteger|Long|ULong|  
-|`Short`|짧게|짧게|짧게|짧게|정수|정수|Long|Long|Decimal|  
+|`Boolean`|Short|SByte|Short|Short|정수|정수|Long|Long|Decimal|  
+|`SByte`|SByte|SByte|Short|Short|정수|정수|Long|Long|Decimal|  
+|`Byte`|Short|Short|Byte|Short|UShort|정수|UInteger|Long|ULong|  
+|`Short`|Short|Short|Short|Short|정수|정수|Long|Long|Decimal|  
 |`UShort`|정수|정수|UShort|정수|UShort|정수|UInteger|Long|ULong|  
 |`Integer`|정수|정수|정수|정수|정수|정수|Long|Long|Decimal|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
@@ -120,10 +120,10 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|짧게|SByte|짧게|짧게|정수|정수|Long|Long|Long|  
-|`SByte`|SByte|SByte|짧게|짧게|정수|정수|Long|Long|Long|  
-|`Byte`|짧게|짧게|Byte|짧게|UShort|정수|UInteger|Long|ULong|  
-|`Short`|짧게|짧게|짧게|짧게|정수|정수|Long|Long|Long|  
+|`Boolean`|Short|SByte|Short|Short|정수|정수|Long|Long|Long|  
+|`SByte`|SByte|SByte|Short|Short|정수|정수|Long|Long|Long|  
+|`Byte`|Short|Short|Byte|Short|UShort|정수|UInteger|Long|ULong|  
+|`Short`|Short|Short|Short|Short|정수|정수|Long|Long|Long|  
 |`UShort`|정수|정수|UShort|정수|UShort|정수|UInteger|Long|ULong|  
 |`Integer`|정수|정수|정수|정수|정수|정수|Long|Long|Long|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
@@ -146,7 +146,7 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Not`|부울|SByte|Byte|짧게|UShort|정수|UInteger|Long|ULong|  
+|`Not`|부울|SByte|Byte|Short|UShort|정수|UInteger|Long|ULong|  
   
  피연산자가 `Decimal`, `Single`를 `Double`, 또는 `String`, Visual Basic로 변환 하려고 `Long` 작업을 하 고 결과 데이터 형식은 하기 전에 `Long`입니다.  
   
@@ -156,10 +156,10 @@ Visual Basic에는 피연산자의 데이터 형식을 기반으로 하는 작�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|부울|SByte|짧게|짧게|정수|정수|Long|Long|Long|  
-|`SByte`|SByte|SByte|짧게|짧게|정수|정수|Long|Long|Long|  
-|`Byte`|짧게|짧게|Byte|짧게|UShort|정수|UInteger|Long|ULong|  
-|`Short`|짧게|짧게|짧게|짧게|정수|정수|Long|Long|Long|  
+|`Boolean`|부울|SByte|Short|Short|정수|정수|Long|Long|Long|  
+|`SByte`|SByte|SByte|Short|Short|정수|정수|Long|Long|Long|  
+|`Byte`|Short|Short|Byte|Short|UShort|정수|UInteger|Long|ULong|  
+|`Short`|Short|Short|Short|Short|정수|정수|Long|Long|Long|  
 |`UShort`|정수|정수|UShort|정수|UShort|정수|UInteger|Long|ULong|  
 |`Integer`|정수|정수|정수|정수|정수|정수|Long|Long|Long|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - procedures [Windows Forms], specific time intervals
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 ms.openlocfilehash: bf0e22eab3b6517521dbe06a73f63af232746df1
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44199273"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44339268"
 ---
 # <a name="how-to-run-procedures-at-set-intervals-with-the-windows-forms-timer-component"></a>방법: Windows Forms Timer 구성 요소를 사용하여 설정된 간격마다 프로시저 실행
 루프가 완료될 때까지 특정 시간 간격으로 실행되거나 설정된 시간 간격이 경과할 때 실행되는 프로시저를 만들려는 경우도 있습니다. <xref:System.Windows.Forms.Timer> 구성 요소는 이러한 프로시저를 가능하게 합니다.  

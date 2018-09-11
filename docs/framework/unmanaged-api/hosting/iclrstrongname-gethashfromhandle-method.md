@@ -19,11 +19,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 20c5f6bbb58b85f42ec00e356eccc5fb41ce813c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44199572"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44339041"
 ---
 # <a name="iclrstrongnamegethashfromhandle-method"></a>ICLRStrongName::GetHashFromHandle 메서드
 지정 된 해시 알고리즘을 사용 하 여 지정 된 파일 핸들에 있는 파일의 내용에 대 한 해시를 생성 합니다.  

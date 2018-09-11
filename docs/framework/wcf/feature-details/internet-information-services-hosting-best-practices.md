@@ -3,11 +3,11 @@ title: 인터넷 정보 서비스 호스팅을 위한 최선의 방법
 ms.date: 03/30/2017
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
 ms.openlocfilehash: 0ca5e20b846a1b10f5a52748ff06a4af958b2f4c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44221950"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44338612"
 ---
 # <a name="internet-information-services-hosting-best-practices"></a>인터넷 정보 서비스 호스팅을 위한 최선의 방법
 이 항목에서는 Windows Communication Foundation (WCF) 서비스를 호스트 하기 위한 몇 가지 모범 사례를 간략하게 설명 합니다.  

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: 6e81bb13-577c-46c3-a1cf-8d15969fb83e
 ms.openlocfilehash: 55b426fbe95bac269183a649ecd839175a8cbdda
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44185011"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44337683"
 ---
 # <a name="walkthrough-copying-and-pasting-an-elementhost-control-into-separate-windows-forms"></a>연습: ElementHost 컨트롤을 복사하여 다른 Windows Forms에 붙여넣기
 이 연습에서는 Windows Forms 간에 WPF(Windows Presentation Foundation) 컨트롤을 복사하는 방법을 보여 줍니다.  

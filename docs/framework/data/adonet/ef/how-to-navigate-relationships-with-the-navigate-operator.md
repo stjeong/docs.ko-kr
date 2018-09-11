@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 79996d2d-9b03-4a9d-82cc-7c5e7c2ad93d
 ms.openlocfilehash: 4327aacf4cb7ec8b30c2f46696e2a19b1b3ae18c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44183502"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44337488"
 ---
 # <a name="how-to-navigate-relationships-with-the-navigate-operator"></a>방법: Navigate 연산자로 관계 탐색
 이 항목에서는 <xref:System.Data.EntityClient.EntityCommand> 개체를 사용하여 개념적 모델에 대해 명령을 실행하는 방법과 <xref:System.Data.Metadata.Edm.RefType>를 사용하여 <xref:System.Data.EntityClient.EntityDataReader> 결과를 검색하는 방법을 보여 줍니다.  
