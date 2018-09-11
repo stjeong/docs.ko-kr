@@ -10,11 +10,11 @@ ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: b92b648e7886fb0214238e32eacae2870b470340
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44193577"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262622"
 ---
 # <a name="virtual-members"></a>가상 멤버
 가상 멤버를 재정의할 수 있습니다 따라서 서브 클래스의 동작을 변경 합니다. 콜백이 제공 되는 확장성 측면에서 매우 유사한 있지만 실행 성능 및 메모리 소비량 면에서 더 효율적입니다. 또한 가상 멤버는 만들어야 하는 특별 한 종류의 기존 유형 (특수화의 경우) 시나리오에서 자연스럽 게 느낄 합니다.  

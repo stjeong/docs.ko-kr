@@ -3,11 +3,11 @@ title: WCF Data Services 프로토콜 구현 정보
 ms.date: 03/30/2017
 ms.assetid: 712d689b-fada-4cbb-bcdb-d65a3ef83b4c
 ms.openlocfilehash: 1d68e278fbac0137d1a5b2dca2daedba2294a7ee
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44078319"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44272347"
 ---
 # <a name="wcf-data-services-protocol-implementation-details"></a>WCF Data Services 프로토콜 구현 정보
 ## <a name="odata-protocol-implementation-details"></a>OData 프로토콜 구현 정보  

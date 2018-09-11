@@ -3,11 +3,11 @@ title: '명시적 필드: val 키워드(F#)'
 description: "F # 'val' 알아봅니다 형식을 초기화 하지 않고 클래스 또는 구조체 형식의 값을 저장 하는 위치를 선언 하는 데 사용 되는 키워드입니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 9cd06f7e90192be79490dd0ff67f118cce4339c3
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44185664"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262466"
 ---
 # <a name="explicit-fields-the-val-keyword"></a>명시적 필드: val 키워드
 

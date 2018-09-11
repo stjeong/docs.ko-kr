@@ -18,11 +18,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5fe1ba15f8a9f8ee79582158209049c1e502a61d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44211686"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44270831"
 ---
 # <a name="loadlibraryshim-function"></a>LoadLibraryShim 함수
 지정된 된 버전의.NET Framework 재배포 가능 패키지에 포함 된 DLL 로드 합니다.  

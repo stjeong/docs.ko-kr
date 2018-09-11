@@ -13,11 +13,11 @@ ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 873b6120929c8c7cf67d53d8f793964361ae88b8
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44137631"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44337748"
 ---
 # <a name="walkthrough-creating-a-cryptographic-application"></a>연습: 암호화 응용 프로그램 만들기
 이 연습에서는 콘텐츠를 암호화 및 암호 해독하는 방법을 보여 줍니다. 코드 예제는 Windows Forms 응용 프로그램용으로 설계되었습니다. 이 응용 프로그램은 스마트 카드 사용과 같은 실제 시나리오를 보여 주지 않습니다. 대신, 암호화 및 암호 해독의 기초를 보여 줍니다.  

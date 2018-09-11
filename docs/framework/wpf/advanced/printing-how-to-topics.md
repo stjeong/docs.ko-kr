@@ -6,16 +6,16 @@ helpviewer_keywords:
 - print system management [WPF]
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
 ms.openlocfilehash: e9b54cd7e59a5a410bfc5c0fb1ba4973c5e482af
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44222083"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44277301"
 ---
 # <a name="printing-how-to-topics"></a>인쇄 방법 항목
 이 섹션의에서 항목에서는 인쇄를 사용 하는 방법을 보여 줍니다 및 인쇄 시스템 관리 기능에 포함 된 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 뿐만 아니라 새 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 인쇄 경로입니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
  [인쇄 대화 상자 호출](../../../../docs/framework/wpf/advanced/how-to-invoke-a-print-dialog.md)  
  선언 하는 XAML 태그에 대 한 지침을 [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] 인쇄 대화 상자 개체 및 코드를 사용 하 여 Windows Presentation Foundation (WPF) 응용 프로그램 내에서 대화 상자를 호출 합니다.  
   

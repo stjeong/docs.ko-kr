@@ -3,11 +3,11 @@ title: SQL Server 데이터 형식 및 ADO.NET
 ms.date: 03/30/2017
 ms.assetid: 81b43550-23e8-43bb-b460-7eb8ac825c33
 ms.openlocfilehash: 878bbe41f259f1e50cd0a41669c7a352e78bc0f1
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44221586"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44272490"
 ---
 # <a name="sql-server-data-types-and-adonet"></a>SQL Server 데이터 형식 및 ADO.NET
 SQL Server와 .NET Framework는 서로 다른 형식 시스템을 기반으로 하기 때문에 데이터가 손실될 가능성이 있습니다. .NET Framework Data Provider for SQL Server(<xref:System.Data.SqlClient>)에서는 데이터 무결성을 유지하기 위해 SQL Server 데이터로 작업할 때 형식화된 접근자 메서드를 제공합니다. <xref:System.Data.SqlDbType> 클래스의 열거형을 사용하여 <xref:System.Data.SqlClient.SqlParameter> 데이터 형식을 지정할 수 있습니다.  
@@ -22,7 +22,7 @@ SQL Server와 .NET Framework는 서로 다른 형식 시스템을 기반으로 �
   
 1.  [데이터 형식 (데이터베이스 엔진)](https://go.microsoft.com/fwlink/?LinkID=107468)  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
  [SqlType 및 DataSet](../../../../../docs/framework/data/adonet/sql/sqltypes-and-the-dataset.md)  
  `SqlTypes`의 `DataSet`에 대한 형식 지원에 대해 설명합니다.  
   

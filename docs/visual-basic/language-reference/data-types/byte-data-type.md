@@ -10,11 +10,11 @@ ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3b106005ff07f55e05ae66dba94041cd8b5c24bb
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44227300"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266815"
 ---
 # <a name="byte-data-type-visual-basic"></a>Byte 데이터 형식 (Visual Basic)
 값 범위에 있는 0에서 255 까지의 부호 없는 8 비트 (1 바이트) 정수를 보유 합니다.

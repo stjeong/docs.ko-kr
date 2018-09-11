@@ -9,11 +9,11 @@ helpviewer_keywords:
 - opening message boxes [WPF]
 ms.assetid: acaad17f-af43-4eca-a004-f1c9e7c6f292
 ms.openlocfilehash: f05190030ed6324917348fa1926abd5385e30f7e
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44192793"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44274689"
 ---
 # <a name="how-to-open-a-message-box"></a>방법: 메시지 상자 열기
 이 예제에서는 메시지 상자를 여는 방법을 보여 줍니다.  

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - documents [WPF], serialization
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 ms.openlocfilehash: 39466eb528003e36bfa05751f83619d86b78a2a7
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
-ms.translationtype: HT
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44207124"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262570"
 ---
 # <a name="document-serialization-and-storage"></a>문서 serialization 및 저장소
 Microsoft.NET Framework는 만들고 고품질 문서를 표시 하기 위한 강력한 환경을 제공 합니다.  고정 문서 및 유동 문서를 고급 모두 지 원하는 향상 된 기능은 강력한 2D 함께 보기 컨트롤을 및 3D 그래픽 기능과.NET Framework 응용 프로그램의 품질과 사용자 환경 향상할 수 있습니다.  문서의 메모리 내 표현을 유연 하 게 관리할 수.NET Framework의 핵심 기능은 이며을 효율적으로 저장 하 고 데이터 저장소에서 문서를 로드할 수 있는 거의 모든 응용 프로그램의 필요 합니다.  내부 메모리 내 표현에서 외부 데이터 저장소로 문서를 변환하는 프로세스를 serialization이라고 합니다.  데이터 저장소를 읽고 원래 메모리 내 인스턴스를 다시 만드는 역프로세스는 deserialization이라고 합니다.  

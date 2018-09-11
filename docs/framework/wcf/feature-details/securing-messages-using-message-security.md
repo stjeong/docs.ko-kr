@@ -5,11 +5,11 @@ ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: d895524d36895ad087f7394fcc3380573355eaad
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44207514"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44269152"
 ---
 # <a name="securing-messages-using-message-security"></a>메시지 보안을 사용하여 메시지에 보안 설정
 이 섹션에서는 사용 하는 경우 WCF 메시지 보안에 설명 <xref:System.ServiceModel.NetMsmqBinding>합니다.  

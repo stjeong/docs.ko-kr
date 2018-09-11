@@ -3,11 +3,11 @@ title: '자습서: 형식 공급자 (F #) 만들기'
 description: '기본 개념을 보여 주는 몇 가지 간단한 형식 공급자를 검사 하 여 F # 3.0에서 사용자 고유의 F # 형식 공급자를 만드는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 3c998377b2c3a408d536ef416f3799bf7f04b6bd
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44212323"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44275511"
 ---
 # <a name="tutorial-create-a-type-provider"></a>자습서: 형식 공급자 만들기
 

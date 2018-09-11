@@ -11,11 +11,11 @@ helpviewer_keywords:
 - XML [Visual Basic], accessing
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
 ms.openlocfilehash: 6040401ce3e98c835677be3c4cc7698013348f37
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44194458"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44268616"
 ---
 # <a name="xml-descendant-axis-property-visual-basic"></a>XML 하위 항목 축 속성(Visual Basic)
 다음의 하위 항목에 액세스할 수:는 <xref:System.Xml.Linq.XElement> 개체를 <xref:System.Xml.Linq.XDocument> 개체의 컬렉션인 <xref:System.Xml.Linq.XElement> 개체나 컬렉션 <xref:System.Xml.Linq.XDocument> 개체입니다.  
