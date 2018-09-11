@@ -4,12 +4,12 @@ ms.date: 08/02/2017
 helpviewer_keywords:
 - Main method [C#], return values
 ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
-ms.openlocfilehash: 51a7d821b5705c0ddda96a34663ba0288e0f1da9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8ac0d70458d7c3762ae9dc5fc90058f0caafc4ab
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339958"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44184930"
 ---
 # <a name="main-return-values-c-programming-guide"></a>Main() 반환 값(C# 프로그래밍 가이드)
 
@@ -93,8 +93,8 @@ private static async Task<int> AsyncConsoleWork()
 >예제에서 `Main` 메서드에 `async` 한정자를 사용하더라도 컴파일러는 동일한 코드를 생성합니다.
 
 ## <a name="see-also"></a>참고 항목
-[C# 프로그래밍 가이드](../../programming-guide/index.md)
-[C# 참조](../index.md)
-[Main()과 명령줄 인수](index.md)
-[방법: 명령줄 인수 표시](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
-[방법: foreach를 사용하여 명령줄 인수 액세스](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 참조](../index.md)
+- [Main()과 명령줄 인수](index.md)
+- [방법: 명령줄 인수 표시](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
+- [방법: foreach를 사용하여 명령줄 인수 액세스](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)

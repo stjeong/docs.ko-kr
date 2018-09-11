@@ -2,12 +2,12 @@
 title: 데이터 형식 변환(C#)
 ms.date: 07/20/2015
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
-ms.openlocfilehash: 374ce15b8329c02c6b496a276a40fd9a60596e1f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 54ef612ad4e92058d9af4d96b7b3cde9732b2f9c
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33335824"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44210054"
 ---
 # <a name="converting-data-types-c"></a>데이터 형식 변환(C#)
 변환 메서드는 입력 개체의 형식을 변경합니다.  
@@ -74,9 +74,10 @@ static void Cast()
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq>  
- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [from 절](../../../../csharp/language-reference/keywords/from-clause.md)  
- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [방법: LINQ를 사용하여 ArrayList 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Linq>  
+- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- [from 절](../../../../csharp/language-reference/keywords/from-clause.md)  
+- [LINQ 쿼리 식](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [방법: LINQ를 사용하여 ArrayList 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)

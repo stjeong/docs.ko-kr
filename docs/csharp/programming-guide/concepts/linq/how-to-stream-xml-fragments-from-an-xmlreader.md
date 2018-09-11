@@ -2,12 +2,12 @@
 title: '방법: XmlReader에서 XML 조각 스트리밍(C#)'
 ms.date: 07/20/2015
 ms.assetid: 4a8f0e45-768a-42e2-bc5f-68bdf0e0a726
-ms.openlocfilehash: 8e2baed3ca32ea4273993fe5bed43fef768204ce
-ms.sourcegitcommit: f6343b070f3c66877338a05c8bfb0be9985255e2
+ms.openlocfilehash: cb3e9fbc9567593cdc77ae116273f4c0fede4af3
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39221012"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44195805"
 ---
 # <a name="how-to-stream-xml-fragments-from-an-xmlreader-c"></a>방법: XmlReader에서 XML 조각 스트리밍(C#)
 큰 XML 파일을 처리해야 하는 경우 전체 XML 트리를 메모리에 로드하는 것이 가능하지 않을 수 있습니다. 이 항목에서는 <xref:System.Xml.XmlReader>를 사용하여 조각을 스트림하는 방법을 보여 줍니다.  
@@ -82,5 +82,6 @@ ccc
   
  이 예제의 소스 문서는 매우 작습니다. `Child` 요소가 수백만 있더라도 이 예제에서는 여전히 작은 메모리 공간만 사용할 것입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 구문 분석(C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 구문 분석(C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)

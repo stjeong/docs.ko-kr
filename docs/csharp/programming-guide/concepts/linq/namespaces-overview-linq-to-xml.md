@@ -2,12 +2,12 @@
 title: 네임스페이스 개요(LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 16283322-8238-4918-ab11-802ac6748eb7
-ms.openlocfilehash: 03451f50605adf6de0d43f19d220aaeed382f13c
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 4d422d9f72eb3297cffda72c441d6370d519f450
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "42999227"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266656"
 ---
 # <a name="namespaces-overview-linq-to-xml"></a>네임스페이스 개요(LINQ to XML)
 이 항목에서는 네임스페이스, <xref:System.Xml.Linq.XName> 클래스 및 <xref:System.Xml.Linq.XNamespace> 클래스에 대해 소개합니다.  
@@ -17,12 +17,12 @@ ms.locfileid: "42999227"
   
  XML 이름의 또 다른 측면은 XML *네임스페이스 접두사*입니다. XML 접두사는 XML 이름이 복잡해지는 주된 원인입니다. 이러한 접두사를 통해 XML 네임스페이스의 바로 가기를 만들 수 있으며 이에 따라 XML 문서가 간결하고 이해하기 쉬워집니다. 그러나 XML 접두사는 의미를 갖기 위해 컨텍스트에 의존하므로 복잡성이 가중됩니다. 예를 들어, XML 접두사 `aw`를 XML 트리의 한 부분에 있는 한 XML 네임스페이스와 연결하고 XML 트리의 다른 부분에 있는 다른 XML 네임스페이스와 연결할 수 있습니다.  
   
- C#과 함께 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하는 경우의 이점 중 하나는 XML 접두사를 사용할 필요가 없다는 것입니다. 
-          [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 XML 문서를 로드하고 구문을 분석할 때 각 XML 접두사는 해당하는 XML 네임스페이스로 확인됩니다. 그 후 네임스페이스를 사용하는 문서로 작업할 때는 네임스페이스 접두사를 통해서가 아니라 거의 항상 네임스페이스 URI를 통해 네임스페이스에 액세스합니다. 개발자는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 XML 이름으로 작업할 때 항상 정규화된 XML 이름(즉, XML 네임스페이스 및 로컬 이름)으로 작업합니다. 그러나 필요한 경우 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 네임스페이스 접두사로 작업하고 네임스페이스 접두사를 제어할 수 있습니다.  
+ C#과 함께 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용하는 경우의 이점 중 하나는 XML 접두사를 사용할 필요가 없다는 것입니다. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 XML 문서를 로드하고 구문을 분석할 때 각 XML 접두사는 해당하는 XML 네임스페이스로 확인됩니다. 그 후 네임스페이스를 사용하는 문서로 작업할 때는 네임스페이스 접두사를 통해서가 아니라 거의 항상 네임스페이스 URI를 통해 네임스페이스에 액세스합니다. 개발자는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 XML 이름으로 작업할 때 항상 정규화된 XML 이름(즉, XML 네임스페이스 및 로컬 이름)으로 작업합니다. 그러나 필요한 경우 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 네임스페이스 접두사로 작업하고 네임스페이스 접두사를 제어할 수 있습니다.  
   
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 XML 이름을 나타내는 클래스는 <xref:System.Xml.Linq.XName>입니다. XML 이름은 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] API 전반에서 자주 나타나며, XML 이름이 필요할 때마다 <xref:System.Xml.Linq.XName> 매개 변수를 찾을 수 있습니다. 그러나 <xref:System.Xml.Linq.XName>으로 직접 작업하는 경우는 드뭅니다. <xref:System.Xml.Linq.XName>에는 문자열에서의 암시적 변환이 포함되어 있습니다.  
   
  자세한 내용은 <xref:System.Xml.Linq.XNamespace> 및 <xref:System.Xml.Linq.XName>를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 네임스페이스 작업(C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 네임스페이스 작업(C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

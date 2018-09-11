@@ -2,18 +2,18 @@
 title: LINQ to ADO.NET(포털 페이지)
 ms.date: 07/20/2015
 ms.assetid: 6bd269b4-3509-4688-b672-836008704182
-ms.openlocfilehash: 0d8fd3834f4d44e266f7925dcf02a6fee9d05f3b
-ms.sourcegitcommit: a368166a51e5204c0224fbf5e46476e3ed122817
+ms.openlocfilehash: d65f041751a9418d0eebd3f92fd33a414cbed699
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43331986"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44209318"
 ---
 # <a name="linq-to-adonet-portal-page"></a>LINQ to ADO.NET(포털 페이지)
 [!INCLUDE[linq_adonet](~/includes/linq-adonet-md.md)]를 사용하면 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 프로그래밍 모델을 통해 [!INCLUDE[vstecado](~/includes/vstecado-md.md)]의 열거 가능한 개체를 쿼리할 수 있습니다.  
   
 > [!NOTE]
->  [!INCLUDE[linq_adonet](~/includes/linq-adonet-md.md)] 설명서는 .NET Framework SDK의 ADO.NET 섹션인 [LINQ 및 ADO.NET](https://msdn.microsoft.com/library/bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec)에 있습니다.  
+>  [!INCLUDE[linq_adonet](~/includes/linq-adonet-md.md)] 설명서는 .NET Framework SDK의 ADO.NET 섹션인 [LINQ 및 ADO.NET](../../../../framework/data/adonet/linq-and-ado-net.md)에 있습니다.  
   
  ADO.NET에는 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)], [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] 및 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]의 세 가지 독립적인 [!INCLUDE[linq_entities](~/includes/linq-entities-md.md)] 기술이 있습니다. [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)]는 다양한 기능을 사용하여 <xref:System.Data.DataSet>에 대해 최적화된 쿼리를 수행하는 데 사용되고, [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]은 SQL Server 데이터베이스 스키마를 직접 쿼리하는 데 사용되며, [!INCLUDE[linq_entities](~/includes/linq-entities-md.md)]는 [!INCLUDE[adonet_edm](~/includes/adonet-edm-md.md)]를 쿼리하는 데 사용됩니다.  
   
@@ -34,6 +34,7 @@ ms.locfileid: "43331986"
 ## <a name="linq-to-entities"></a>LINQ to Entities  
  [!INCLUDE[adonet_edm](~/includes/adonet-edm-md.md)]을 통해 관계형 데이터는 .NET 환경에서 개체로 제공됩니다. 이를 통해 개체 계층은 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 지원을 위한 이상적인 대상이 되므로 개발자는 비즈니스 논리를 개발할 때 사용한 언어로 데이터베이스에 대한 쿼리를 작성할 수 있습니다. 이러한 기능은 [!INCLUDE[linq_entities](~/includes/linq-entities-md.md)]로 알려져 있습니다. 자세한 내용은 [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ 및 ADO.NET](https://msdn.microsoft.com/library/bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec)  
- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [LINQ 및 ADO.NET](../../../../framework/data/adonet/linq-and-ado-net.md)  
+- [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

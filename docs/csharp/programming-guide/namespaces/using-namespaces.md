@@ -7,12 +7,12 @@ helpviewer_keywords:
 - fully qualified names [C#]
 - namespaces [C#], how to use
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
-ms.openlocfilehash: 773add221317a2154ac620acf766607ec22c629d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 81876d1818a6e82764e4aea0ae2b6f9e091f0ba3
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329549"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44208649"
 ---
 # <a name="using-namespaces-c-programming-guide"></a>네임스페이스 사용(C# 프로그래밍 가이드)
 네임스페이스는 C# 프로그램 내에서 두 가지 방법으로 많이 사용됩니다. 첫째, .NET Framework 클래스는 네임스페이스를 사용하여 많은 클래스를 구성합니다. 둘째, 고유한 네임스페이스를 선언하면 대규모 프로그래밍 프로젝트에서 클래스 및 메서드 이름의 범위를 제어할 수 있습니다.  
@@ -87,10 +87,11 @@ ms.locfileid: "33329549"
   
  `global` 별칭과 관련된 자세한 내용은 [방법: 전역 네임스페이스 별칭 사용](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md) 항목을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [. 연산자](../../../csharp/language-reference/operators/member-access-operator.md)  
- [:: 연산자](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
- [extern](../../../csharp/language-reference/keywords/extern.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [네임스페이스](../../../csharp/programming-guide/namespaces/index.md)  
+- [네임스페이스 키워드](../../../csharp/language-reference/keywords/namespace-keywords.md)  
+- [. 연산자](../../../csharp/language-reference/operators/member-access-operator.md)  
+- [:: 연산자](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [extern](../../../csharp/language-reference/keywords/extern.md)

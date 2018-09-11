@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - exceptions [C#], compiler-generated
 ms.assetid: 53b52f97-b366-4ed7-b05b-9eb78096b7f9
-ms.openlocfilehash: a1746a492685cf25869bd06935bfd056de257fea
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 476f5940b0b93d0c28bcd2bc9ca73147bc7bf3eb
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331443"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44210041"
 ---
 # <a name="compiler-generated-exceptions-c-programming-guide"></a>컴파일러 생성 예외(C# 프로그래밍 가이드)
 기본 작업이 실패하면 .NET Framework의 CLR(공용 언어 런타임)에 의해 자동으로 일부 예외가 throw됩니다. 이러한 예외와 관련 오류 조건이 다음 표에 나와 있습니다.  
@@ -27,10 +27,11 @@ ms.locfileid: "33331443"
 |<xref:System.StackOverflowException>|보류 중인 메서드 호출이 너무 많아 실행 스택이 모두 사용될 경우 throw됩니다. 대개 매우 깊은 재귀나 무한 재귀를 나타냅니다.|  
 |<xref:System.TypeInitializationException>|정적 생성자가 예외를 throw하고 이 예외를 catch할 수 있는 호환되는 `catch` 절이 없는 경우 throw됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
- [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)  
- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [예외 및 예외 처리](../../../csharp/programming-guide/exceptions/index.md)  
+- [예외 처리](../../../csharp/programming-guide/exceptions/exception-handling.md)  
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)

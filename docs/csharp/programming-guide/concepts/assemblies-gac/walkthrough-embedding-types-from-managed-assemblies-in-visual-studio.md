@@ -2,12 +2,12 @@
 title: '연습: Visual Studio에서 관리되는 어셈블리의 형식 포함(C#)'
 ms.date: 07/20/2015
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
-ms.openlocfilehash: 90bb523e3eb42cea2cd0a9d1e753e4d9b9873c0c
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 1900c62d1ebaf611f141f8f1bdf95f8d11f82140
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932097"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44201259"
 ---
 # <a name="walkthrough-embedding-types-from-managed-assemblies-in-visual-studio-c"></a>연습: Visual Studio에서 관리되는 어셈블리의 형식 포함(C#)
 강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 응용 프로그램에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  
@@ -232,8 +232,9 @@ ms.locfileid: "42932097"
   
 6.  파일 탐색기에서 출력 경로 폴더를 엽니다(예: C:\TypeEquivalenceSample). TypeEquivalenceClient.exe를 두 번 클릭하여 프로그램을 실행합니다. 다시 컴파일하지 않고도 이 프로그램은 TypeEquivalenceRuntime 어셈블리의 새 버전을 반영합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [/link(C# 컴파일러 옵션)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)  
- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [/link(C# 컴파일러 옵션)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
+- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)  
+- [어셈블리 및 전역 어셈블리 캐시(C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

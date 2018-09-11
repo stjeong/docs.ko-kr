@@ -2,12 +2,12 @@
 title: '방법: 선택적 요소로 필터링(C#)'
 ms.date: 07/20/2015
 ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
-ms.openlocfilehash: aa6eb5c9f661a27729c409edcc44b75377498925
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c781db261dbf673af7a11150971956b4c07da774
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320172"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44205311"
 ---
 # <a name="how-to-filter-on-an-optional-element-c"></a>방법: 선택적 요소로 필터링(C#)
 요소가 XML 문서에 있는지 확실하지 않은 경우에도 해당 요소를 기준으로 필터링하려는 경우가 있습니다. 특정 요소에 자식 요소가 없는 경우 이 요소를 기준으로 필터링하여 null 참조 예외를 트리거하지 않도록 검색을 수행해야 합니다. 다음 예제에서는 `Child5` 요소에 `Type` 자식 요소가 없지만 쿼리가 여전히 제대로 실행됩니다.  
@@ -95,10 +95,11 @@ Child Two Text
 Child Four Text  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>  
- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [프로젝션 작업(C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>  
+- [기본 쿼리(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
+- [표준 쿼리 연산자 개요(C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- [프로젝션 작업(C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)

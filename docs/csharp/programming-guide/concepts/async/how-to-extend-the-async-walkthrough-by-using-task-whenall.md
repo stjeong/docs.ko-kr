@@ -2,12 +2,12 @@
 title: '방법: Task.WhenAll을 사용하여 비동기 연습 확장(C#)'
 ms.date: 07/20/2015
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
-ms.openlocfilehash: b7df5c1f1ffbcc8c60fd6ed0596088f0842ef9ea
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 241bd6baf0c1133ba7603da433a7cdf8d36748c0
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482816"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44260245"
 ---
 # <a name="how-to-extend-the-async-walkthrough-by-using-taskwhenall-c"></a>방법: Task.WhenAll을 사용하여 비동기 연습 확장(C#)
 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> 메서드를 사용하여 [연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)에서 비동기 솔루션의 성능을 향상할 수 있습니다. 이 메서드는 작업 컬렉션으로 표시되는 여러 개의 비동기 작업을 비동기적으로 기다립니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "43482816"
     //}  
     ```  
   
-3.  작업 컬렉션을 만듭니다. 다음 코드는 <xref:System.Linq.Enumerable.ToArray%2A> 메서드가 실행할 때 각 웹 사이트의 내용을 다운로드하는 작업 컬렉션을 만드는 [쿼리](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)를 정의합니다. 작업은 쿼리가 평가될 때 시작됩니다.  
+3.  작업 컬렉션을 만듭니다. 다음 코드는 <xref:System.Linq.Enumerable.ToArray%2A> 메서드가 실행할 때 각 웹 사이트의 내용을 다운로드하는 작업 컬렉션을 만드는 [쿼리](../../../../csharp/programming-guide/concepts/linq/index.md)를 정의합니다. 작업은 쿼리가 평가될 때 시작됩니다.  
   
      `SumPageSizesAsync` 메서드의 `urlList` 선언 뒤에 다음 코드를 추가합니다.  
   
@@ -136,7 +136,7 @@ ms.locfileid: "43482816"
     //}  
     ```  
   
-3.  <xref:System.Linq.Enumerable.ToArray%2A> 메서드에서 실행할 때 각 웹 사이트의 내용을 다운로드하는 작업 컬렉션을 만드는 [쿼리](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)를 정의합니다. 작업은 쿼리가 평가될 때 시작됩니다.  
+3.  <xref:System.Linq.Enumerable.ToArray%2A> 메서드에서 실행할 때 각 웹 사이트의 내용을 다운로드하는 작업 컬렉션을 만드는 [쿼리](../../../../csharp/programming-guide/concepts/linq/index.md)를 정의합니다. 작업은 쿼리가 평가될 때 시작됩니다.  
   
      `SumPageSizesAsync` 메서드의 `client` 및 `urlList` 선언 뒤에 다음 코드를 추가합니다.  
   
@@ -435,6 +435,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>  
- [연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>  
+- [연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)

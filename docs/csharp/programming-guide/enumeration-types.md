@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# Language, enums
 - bit flags [C#]
 ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
-ms.openlocfilehash: a97c3569899e7cf99dd522024de8373c60076571
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3efedd48303c79bafde3704b0fdd6fcdd465a0a7
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339055"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44206145"
 ---
 # <a name="enumeration-types-c-programming-guide"></a>열거형 형식(C# 프로그래밍 가이드)
 
@@ -88,6 +88,7 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
 또한 확장 메서드를 사용하여 열거형에 대한 새 메서드를 만들 수 있습니다. 자세한 내용은 [방법: 새 열거형 메서드 만들기](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Enum?displayProperty=nameWithType>  
- [C# 프로그래밍 가이드](../../csharp/programming-guide/index.md)  
- [enum](../../csharp/language-reference/keywords/enum.md)
+
+- <xref:System.Enum?displayProperty=nameWithType>  
+- [C# 프로그래밍 가이드](../../csharp/programming-guide/index.md)  
+- [enum](../../csharp/language-reference/keywords/enum.md)

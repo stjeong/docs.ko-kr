@@ -2,12 +2,12 @@
 title: 함수 변환의 적용 가능 범위(C#)
 ms.date: 07/20/2015
 ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
-ms.openlocfilehash: b913c8e43c5e7a9ede6cb693ff6d3c34f3631607
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: baa3866c8c2c148a3080522d7c02e28e9d0fd945
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319153"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227089"
 ---
 # <a name="applicability-of-functional-transformation-c"></a>함수 변환의 적용 가능 범위(C#)
 순수 함수 변환은 광범위한 상황에서 적용 가능합니다.  
@@ -32,7 +32,8 @@ ms.locfileid: "33319153"
   
  C#에서는 명령형 방법과 함수형 방법을 모두 지원하므로 응용 프로그램에 최적인 디자인에는 두 언어의 요소가 모두 통합될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
- [XML의 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/functional-transformation-of-xml.md)  
- [순수 함수로 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+## <a name="see-also"></a>참고 항목
+
+- [순수 함수 변환 소개(C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
+- [XML의 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/functional-transformation-of-xml.md)  
+- [순수 함수로 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

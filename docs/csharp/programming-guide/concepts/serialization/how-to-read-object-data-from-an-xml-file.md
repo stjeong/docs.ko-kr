@@ -2,12 +2,12 @@
 title: '방법: XML 파일에서 개체 데이터 읽기(C#)'
 ms.date: 07/20/2015
 ms.assetid: 6ad60d96-a4d9-48e6-a8b0-d7f6f803cafa
-ms.openlocfilehash: 59110a5bd0fe738239c0ca8b177a8c775db99ccf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7c3bad56c6a0bee51262586aea4ce97ff0491f24
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336156"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44083938"
 ---
 # <a name="how-to-read-object-data-from-an-xml-file-c"></a>방법: XML 파일에서 개체 데이터 읽기(C#)
 이 예제에서는 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용하여 이전에 XML 파일에 기록된 개체 데이터를 읽습니다.  
@@ -61,8 +61,9 @@ public void ReadXML()
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  항상 입력을 확인하고, 신뢰할 수 없는 소스의 데이터를 deserialize하지 마세요. 다시 생성된 개체는 deserialize한 코드의 사용 권한으로 로컬 컴퓨터에서 실행됩니다. 응용 프로그램에서 데이터를 사용하기 전에 모든 입력을 확인해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO.StreamWriter>  
- [방법: XML 파일에 개체 데이터 쓰기(C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
- [serialization(C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)  
- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO.StreamWriter>  
+- [방법: XML 파일에 개체 데이터 쓰기(C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
+- [Serialization(C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)  
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)

@@ -2,12 +2,12 @@
 title: 순수 함수를 사용하여 리팩터링(C#)
 ms.date: 07/20/2015
 ms.assetid: a3416a45-9e12-4e4a-9747-897f06eef510
-ms.openlocfilehash: ac0cd63790d5600a96c868a8c7f446ceda737eb5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 28f31b144cbdbd85febfc57acccb9bd7a158d702
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340686"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266442"
 ---
 # <a name="refactoring-using-a-pure-function-c"></a>순수 함수를 사용하여 리팩터링(C#)
 다음 예제에서는 순수 함수를 사용하기 위해 이전 예제 [확장 메서드를 사용하여 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)을 리팩터링합니다. 이 예제에서 단락의 텍스트를 찾는 코드는 순수 정적 메서드 `ParagraphText`로 이동됩니다.  
@@ -179,7 +179,8 @@ StyleName:Code >Hello World<
   
 -   [다른 모양으로 XML 프로젝션(C#)](../../../../csharp/programming-guide/concepts/linq/projecting-xml-in-a-different-shape.md)  
   
-## <a name="see-also"></a>참고 항목  
- [자습서: WordprocessingML 문서에서 내용 조작(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)  
- [확장 메서드를 사용하여 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)  
- [순수 함수로 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+## <a name="see-also"></a>참고 항목
+
+- [자습서: WordprocessingML 문서에서 내용 조작(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)  
+- [확장 메서드를 사용하여 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)  
+- [순수 함수로 리팩터링(C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

@@ -1,12 +1,12 @@
 ---
 title: '연습: C#을 사용하여 개체 유지'
 ms.date: 04/26/2018
-ms.openlocfilehash: 6c9719dc3aaf997ea144515a553f787450e54041
-ms.sourcegitcommit: 88f251b08bf0718ce119f3d7302f514b74895038
+ms.openlocfilehash: c3cff57f008eb524c2d2bec406431e4c41dca617
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956184"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44262102"
 ---
 # <a name="walkthrough-persisting-an-object-using-c"></a>연습: C#을 사용하여 개체 유지 #
 
@@ -99,5 +99,5 @@ C# 7.3부터는 `field` 대상 값을 사용하여 자동 구현 속성의 지�
 
 ## <a name="see-also"></a>참고 항목
 
- [serialization(C#)](index.md)  
- [C# 프로그래밍 가이드](../..//index.md)  
+- [Serialization(C#)](index.md)  
+- [C# 프로그래밍 가이드](../..//index.md)  

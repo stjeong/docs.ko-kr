@@ -7,11 +7,11 @@ helpviewer_keywords:
 - '#error directive [C#]'
 ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
 ms.openlocfilehash: ed43c1f85142ec6c54e44db5e3b0b7de3ef36bb8
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935296"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44259888"
 ---
 # <a name="error-c-reference"></a>#error(C# 참조)
 `#error`를 사용하면 코드의 특정 위치에서 [CS1029](../compiler-messages/cs1029.md) 사용자 정의 오류를 생성할 수 있습니다. 예:  

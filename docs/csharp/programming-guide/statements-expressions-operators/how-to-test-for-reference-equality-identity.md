@@ -5,12 +5,12 @@ helpviewer_keywords:
 - object identity [C#]
 - reference equality [C#]
 ms.assetid: 91307fda-267b-4fd2-a338-2aada39ee791
-ms.openlocfilehash: 78a6bf1f5d4a93bd561faada91b4a11f52692dbf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d48c2cab7100d8227b33ee0eeefb825dd81a5f88
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322343"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44084571"
 ---
 # <a name="how-to-test-for-reference-equality-identity-c-programming-guide"></a>방법: 참조 일치(같음) 테스트(C# 프로그래밍 가이드)
 형식에서 참조 같음 비교를 지원하기 위해 사용자 지정 논리를 구현할 필요는 없습니다. 이 기능은 정적 <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> 메서드가 모든 형식에 대해 제공합니다.  
@@ -26,5 +26,6 @@ ms.locfileid: "33322343"
   
  동일한 어셈블리 내의 상수 문자열은 항상 런타임에서 인턴 지정됩니다. 즉, 고유한 각 리터럴 문자열의 인스턴스 하나만 유지됩니다. 그러나 런타임은 런타임에 생성된 문자열이 인턴 지정되도록 보장하지 않으며, 서로 다른 어셈블리에 있는 동일한 두 상수 문자열이 인턴 지정되도록 보장하지도 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [같음 비교](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)
+## <a name="see-also"></a>참고 항목
+
+- [같음 비교](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)

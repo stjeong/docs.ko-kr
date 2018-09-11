@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - fields [C#]
 ms.assetid: 3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7
-ms.openlocfilehash: 65e815411cc9f4af063cb955ae63d18e87f43f38
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 708bd4e768e795397624bcac6e5bc2594bff93f5
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43483070"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44210340"
 ---
 # <a name="fields-c-programming-guide"></a>필드(C# 프로그래밍 가이드)
 *필드*는 [클래스](../../../csharp/language-reference/keywords/class.md) 또는 [구조체](../../../csharp/language-reference/keywords/struct.md)에서 직접 선언되는 모든 형식의 변수입니다. 필드는 포함하는 형식의 *멤버*입니다.  
@@ -46,10 +46,11 @@ ms.locfileid: "43483070"
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [생성자 사용](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [추상/봉인된 클래스 및 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [클래스 및 구조체](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [생성자 사용](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
+- [상속](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
+- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [추상/봉인된 클래스 및 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)

@@ -2,12 +2,12 @@
 title: 대리자의 가변성(C#)
 ms.date: 07/20/2015
 ms.assetid: 19de89d2-8224-4406-8964-2965b732b890
-ms.openlocfilehash: 8b74c29d8d94a31d30408131009d92e2b2a4281c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3dabac4e532198871cf05d639aa692751ab17ae1
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326230"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44208677"
 ---
 # <a name="variance-in-delegates-c"></a>대리자의 가변성(C#)
 .NET Framework 3.5에는 메서드 시그니처를 C#에 있는 모든 대리자의 대리자 형식과 일치시키는 가변성 지원이 추가되었습니다. 즉, 일치하는 시그니처가 있는 메서드만이 아니라 더 많은 파생된 형식(공변성(covariance))을 반환하는 메서드 또는 대리자 형식에 지정된 것보다 더 적은 수의 파생된 형식(반공변성(contravariance))을 가지고 있는 매개 변수를 수락하는 메서드도 대리자에 할당할 수 있습니다. 여기에는 제네릭 및 비 제네릭 대리자가 모두 포함됩니다.  
@@ -196,7 +196,8 @@ public static void Test()
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [제네릭](~/docs/standard/generics/index.md)  
- [Func 및 Action 제네릭 대리자에 가변성 사용(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)  
- [방법: 대리자 조합(멀티캐스트 대리자)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+## <a name="see-also"></a>참고 항목
+
+- [제네릭](~/docs/standard/generics/index.md)  
+- [Func 및 Action 제네릭 대리자에 가변성 사용(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)  
+- [방법: 대리자 조합(멀티캐스트 대리자)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

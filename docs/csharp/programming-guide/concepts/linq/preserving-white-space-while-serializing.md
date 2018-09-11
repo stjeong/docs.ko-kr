@@ -2,12 +2,12 @@
 title: 직렬화할 때 공백 유지3
 ms.date: 07/20/2015
 ms.assetid: 0c4f8b98-483b-4cf8-86be-fa146eef90dc
-ms.openlocfilehash: 48e654c2b7992544cdc2c67dfc5a5136d6a9bb33
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7fd0a38d2a9ed8c4712b8e9a03a24a23b408f38a
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329883"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44267091"
 ---
 # <a name="preserving-white-space-while-serializing"></a>serialize할 때 공백 유지
 이 항목에서는 XML 트리를 serialize할 때 공백을 제어하는 방법에 대해 설명합니다.  
@@ -31,5 +31,6 @@ ms.locfileid: "33329883"
   
  이 메서드가 <xref:System.Xml.Linq.SaveOptions>를 인수로 사용하는 경우에는 serialize된 XML의 서식을 지정하지(들여쓰지) 않도록 지정할 수 있습니다. 이 경우 XML 트리의 모든 공백이 유지됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [XML 트리 serialize(C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 트리 serialize(C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)

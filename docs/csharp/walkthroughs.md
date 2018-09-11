@@ -6,12 +6,12 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio], Visual C#
 - Visual C#, walkthroughs
 ms.assetid: 2d07b972-ef69-4676-9aef-e1784728e1ff
-ms.openlocfilehash: aaf57e666faf18010c7f267f96e6958c73e58bcf
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: a2efaae7cd861842f92ba3cdedc5ae77beec9f6f
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42935140"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44267130"
 ---
 # <a name="c-walkthroughs"></a>C# 연습
 연습에서는 일반 시나리오에 대한 단계별 지침을 제공하므로 제품 또는 특정 기능 영역 파악을 효율적으로 시작할 수 있습니다.  
@@ -50,16 +50,16 @@ ms.locfileid: "42935140"
  [C#에서 쿼리 작성(LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
  [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 식을 작성하는 데 사용되는 C# 언어 기능을 보여 줍니다.  
   
- [데이터 조작(C#)(LINQ to SQL)](https://msdn.microsoft.com/library/bb386927.aspx)  
+ [데이터 조작(C#)(LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)  
  데이터베이스에서 데이터를 추가/수정/삭제하는 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 시나리오에 대해 설명합니다.  
   
- [간단한 개체 모델 및 쿼리(C#)(LINQ to SQL)](https://msdn.microsoft.com/library/bb386940.aspx)  
+ [간단한 개체 모델 및 쿼리(C#)(LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp.md)  
  엔터티 클래스 및 해당 엔터티 클래스를 필터링하는 간단한 쿼리를 만드는 방법을 보여 줍니다.  
   
- [저장 프로시저만 사용(C#)(LINQ to SQL)](https://msdn.microsoft.com/library/bb399407.aspx)  
+ [저장 프로시저만 사용(C#)(LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-using-only-stored-procedures-csharp.md)  
  LINQ to SQL을 사용해 저장 프로시저만 실행하여 데이터에 액세스하는 방법을 보여 줍니다.  
   
- [관계 간 쿼리(C#)(LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
+ [관계 간 쿼리(C#)(LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp.md)  
  [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 연결을 사용하여 데이터베이스에서 외래 키 관계를 표시하는 방법을 보여 줍니다.  
 
  [C#에서 시각화 도우미 작성](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
@@ -69,6 +69,7 @@ ms.locfileid: "42935140"
  [배포 샘플 및 연습](/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
  일반적인 배포 시나리오의 단계별 예제를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../csharp/programming-guide/index.md)  
- [Visual Studio 샘플](/visualstudio/ide/visual-studio-samples)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../csharp/programming-guide/index.md)  
+- [Visual Studio 샘플](/visualstudio/ide/visual-studio-samples)

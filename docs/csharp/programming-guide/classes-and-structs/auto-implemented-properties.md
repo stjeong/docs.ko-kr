@@ -5,12 +5,12 @@ helpviewer_keywords:
 - auto-implemented properties [C#]
 - properties [C#], auto-implemented
 ms.assetid: aa55fa97-ccec-431f-b5e9-5ac789fd32b7
-ms.openlocfilehash: 756e235dacc3fcb2bf741d1d426e8dfcb53bf19b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0d32dfd626cb8484e935dd0e8608c2e29d3ecbde
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33313802"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44228080"
 ---
 # <a name="auto-implemented-properties-c-programming-guide"></a>자동으로 구현된 속성(C# 프로그래밍 가이드)
 C# 3.0 이상에서는 속성 접근자에 추가적인 논리가 필요하지 않을 경우 자동 구현 속성을 통해 속성 선언이 더 간결해집니다. 이를 통해 클라이언트 코드에서 개체를 만들 수도 있습니다. 다음 예제와 같이 속성을 선언할 때 컴파일러는 속성의 `get` 및 `set` 접근자를 통해서만 액세스할 수 있는 전용 익명 지원 필드를 만듭니다.  
@@ -30,6 +30,7 @@ public string FirstName { get; set; } = "Jane";
   
  특성은 자동 구현 속성에서 허용되지만, 소스 코드에서 액세스할 수 없으므로 지원 필드에서는 분명히 허용되지 않습니다. 속성의 지원 필드에서 특성을 사용해야 할 경우 일반 속성만 만듭니다.  
   
-## <a name="see-also"></a>참고 항목  
- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [한정자](../../../csharp/language-reference/keywords/modifiers.md)
+## <a name="see-also"></a>참고 항목
+
+- [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [한정자](../../../csharp/language-reference/keywords/modifiers.md)

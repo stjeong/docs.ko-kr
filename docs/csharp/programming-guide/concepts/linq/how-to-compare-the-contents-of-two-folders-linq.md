@@ -2,12 +2,12 @@
 title: '방법: 두 폴더의 내용 비교(LINQ)(C#)'
 ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
-ms.openlocfilehash: ef4f426ca11f6d1ac40b8080c989ddae5e4c75ac
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1517d1f9e451306e40835e6032e2aff2fe3e60ab
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330442"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44209188"
 ---
 # <a name="how-to-compare-the-contents-of-two-folders-linq-c"></a>방법: 두 폴더의 내용 비교(LINQ)(C#)
 이 예제에서는 두 파일 목록을 비교하는 세 가지 방법을 보여 줍니다.  
@@ -128,6 +128,7 @@ namespace QueryCompareTwoDirs
 ## <a name="compiling-the-code"></a>코드 컴파일  
  System.Core.dll에 대한 참조와 System.Linq 및 System.IO 네임스페이스에 대한 `using` 지시문을 사용하여 .NET Framework 버전 3.5 이상을 대상으로 하는 프로젝트를 만듭니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ 및 파일 디렉터리(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+## <a name="see-also"></a>참고 항목
+
+- [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
+- [LINQ 및 파일 디렉터리(C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)

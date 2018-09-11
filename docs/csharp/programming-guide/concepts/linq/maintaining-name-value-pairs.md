@@ -2,12 +2,12 @@
 title: 이름-값 쌍 유지 관리(C#)
 ms.date: 07/20/2015
 ms.assetid: 7b04b0f1-af64-42eb-8737-83f8861b5915
-ms.openlocfilehash: ac1e6464618c00cba4ded92492fe4a687e1a25f6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 28c01ce17881ffe7e8fcc35e2c23dec85d50955d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325580"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44216557"
 ---
 # <a name="maintaining-namevalue-pairs-c"></a>이름/값 쌍 유지 관리(C#)
 대부분의 응용 프로그램은 이름/값 쌍으로 가장 잘 유지되는 정보를 유지 관리해야 합니다. 이 정보는 구성 정보이거나 전역 설정일 수 있습니다. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에는 이름/값 쌍의 집합을 쉽게 유지하는 데 사용할 수 있는 몇몇 메서드가 포함되어 있습니다. 정보를 특성이나 자식 요소의 집합으로 유지할 수 있습니다.  
@@ -118,7 +118,8 @@ Console.WriteLine(root);
 </Root>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>  
- <xref:System.Xml.Linq.XElement.SetElementValue%2A>  
- [XML 트리 수정(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>  
+- <xref:System.Xml.Linq.XElement.SetElementValue%2A>  
+- [XML 트리 수정(LINQ to XML)(C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - expressions [C#]
 - C# language, expressions
 ms.assetid: c7d8feb0-0e58-4f94-8bf6-4d070550a832
-ms.openlocfilehash: bb70a7e3dfd8b274987bf68568004d785afd0ee1
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 3cf084102186d9e13727c36ed14e2ea72ca324f9
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37936956"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44213808"
 ---
 # <a name="expressions-c-programming-guide"></a>식(C# 프로그래밍 가이드)
 *expression*은 단일 값, 개체, 메서드 또는 네임스페이스로 평가될 수 있는 하나 이상의 피연산자 및 0개 이상의 연산자 시퀀스입니다. 식은 리터럴 값, 메서드 호출, 연산자 및 피연산자, *단순 이름* 등으로 구성될 수 있습니다. 단순한 이름이란 변수, 형식 멤버, 메서드 매개 변수, 네임스페이스 또는 형식의 이름일 수 있습니다.  
@@ -72,10 +72,11 @@ C#에서는 메서드, 생성자, 종료자, 속성 및 인덱서에 대한 간�
 ## <a name="remarks"></a>설명  
  식에서 변수, 개체 속성 또는 개체 인덱서 액세스를 식별할 때마다 해당 항목의 값이 식의 값으로 사용됩니다. 식이 궁극적으로 필수 형식으로 평가되기만 하면 C#에서 값 또는 개체가 필요한 어디에든 식을 배치할 수 있습니다.  
 
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
- [대리자](../../../csharp/programming-guide/delegates/index.md)  
- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
- [유형](../../../csharp/programming-guide/types/index.md)  
- [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [메서드](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [대리자](../../../csharp/programming-guide/delegates/index.md)  
+- [연산자](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [유형](../../../csharp/programming-guide/types/index.md)  
+- [LINQ 쿼리 식](../../../csharp/programming-guide/linq-query-expressions/index.md)

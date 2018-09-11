@@ -2,12 +2,12 @@
 title: XML의 순수 함수 변환(C#)
 ms.date: 07/20/2015
 ms.assetid: 97e8e582-eb3d-4756-bbfb-0899eb688ae4
-ms.openlocfilehash: 7bbe5735541432108794959a7889976d4951fffd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e05c6167973b2342aafd51aad7d9102db9e94ae0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336712"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44252131"
 ---
 # <a name="pure-functional-transformations-of-xml-c"></a>XML의 순수 함수 변환(C#)
 이 단원에서는 XML의 함수 변환 자습서를 제공합니다. 이 자습서에는 함수 변환을 사용하기 위해 이해해야 하는 주요 개념과 언어 구문에 대한 설명과 함수 변환을 사용하여 XML 문서를 조작하는 예제가 포함되어 있습니다. 이 자습서에서 LINQ to XML 코드 예제를 제공하지만 모든 기본 개념은 다른 LINQ 기술에도 적용됩니다.  
@@ -26,5 +26,6 @@ ms.locfileid: "33336712"
 |[자습서: 여러 쿼리 연결(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)|지연 계산과 지연된 실행에 대해 자세히 설명합니다.|  
 |[자습서: WordprocessingML 문서에서 내용 조작(C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)|함수 변환을 보여 주는 자습서입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML 트리 쿼리(C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - delegates [C#], with named vs. anonymous methods
 - methods [C#], in delegates
 ms.assetid: 98fa8c61-66b6-4146-986c-3236c4045733
-ms.openlocfilehash: 93e140859e44aab860577feede40df6eab4c8e00
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6d7dcb3c7c6fa8f1d55237504c23cf468aa0e79d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330767"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44194220"
 ---
 # <a name="delegates-with-named-vs-anonymous-methods-c-programming-guide"></a>대리자 비교: 명명된 메서드 및 무명 메서드(C# 프로그래밍 가이드)
 [대리자](../../../csharp/language-reference/keywords/delegate.md)는 명명된 메서드에 연결할 수 있습니다. 명명된 메서드를 사용하여 대리자를 인스턴스화하면 메서드가 매개 변수로 전달됩니다. 예를 들면 다음과 같습니다.  
@@ -36,9 +36,10 @@ ms.locfileid: "33330767"
   
  [!code-csharp[csProgGuideDelegates#3](../../../csharp/programming-guide/delegates/codesnippet/CSharp/delegates-with-named-vs-anonymous-methods_3.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [대리자](../../../csharp/programming-guide/delegates/index.md)  
- [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
- [방법: 대리자 조합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
- [이벤트](../../../csharp/programming-guide/events/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [대리자](../../../csharp/programming-guide/delegates/index.md)  
+- [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [방법: 대리자 조합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
+- [이벤트](../../../csharp/programming-guide/events/index.md)

@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - files [C#], getting information about
 ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
-ms.openlocfilehash: c4f29cd2ae65fb05a2636ae3674c7ffd1613b0f3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8ebacff0f3a1704ec001e3570d0df136f54baf9d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338541"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44206460"
 ---
 # <a name="how-to-get-information-about-files-folders-and-drives--c-programming-guide"></a>방법: 파일, 폴더 및 드라이브에 대한 정보 가져오기(C# 프로그래밍 가이드)
 .NET Framework에서 다음 클래스를 사용하여 파일 시스템 정보에 액세스할 수 있습니다.  
@@ -52,7 +52,8 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
   
  응용 프로그램에 지정된 파일을 읽을 수 있는 권한이 없는 경우 `Exists` 메서드는 경로가 있는지 여부에 관계없이 `false`를 반환합니다. 이 메서드는 예외를 throw하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.IO?displayProperty=nameWithType>  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [파일 시스템 및 레지스트리(C# 프로그래밍 가이드)](../../../csharp/programming-guide/file-system/index.md)

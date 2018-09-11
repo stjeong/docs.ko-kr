@@ -2,12 +2,12 @@
 title: '방법: 다른 응용 프로그램과 어셈블리 공유(C#)'
 ms.date: 07/20/2015
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
-ms.openlocfilehash: beadd6adb176c3fd4e6dde94d95194aea790a2fe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a5b20061c759fd914193f24aa123317f13d31dce
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324124"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44266471"
 ---
 # <a name="how-to-share-an-assembly-with-other-applications-c"></a>방법: 다른 응용 프로그램과 어셈블리 공유(C#)
 어셈블리는 전용이거나 공유될 수 있습니다. 기본적으로 대부분의 간단한 프로그램은 다른 응용 프로그램에서 사용되지 않으므로 전용 어셈블리로 구성됩니다.  
@@ -24,8 +24,9 @@ ms.locfileid: "33324124"
   
 4.  전역 어셈블리 캐시에 어셈블리를 추가합니다. 자세한 내용은 [방법: 전역 어셈블리 캐시에 어셈블리 설치](../../../../framework/app-domains/how-to-install-an-assembly-into-the-gac.md)를 참조하세요.  
   
-5.  다른 응용 프로그램에서 어셈블리에 포함된 형식에 액세스합니다. 자세한 내용은 [방법: 강력한 이름의 어셈블리 참조](http://msdn.microsoft.com/library/4c6a406a-b5eb-44fa-b4ed-4e95bb95a813)를 참조하세요.  
+5.  다른 응용 프로그램에서 어셈블리에 포함된 형식에 액세스합니다. 자세한 내용은 [방법: 강력한 이름의 어셈블리 참조](../../../../framework/app-domains/how-to-reference-a-strong-named-assembly.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../../csharp/programming-guide/index.md)  
+- [어셈블리를 사용한 프로그래밍](../../../../framework/app-domains/programming-with-assemblies.md)

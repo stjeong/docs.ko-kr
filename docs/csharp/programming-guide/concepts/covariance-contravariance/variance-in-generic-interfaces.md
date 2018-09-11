@@ -2,12 +2,12 @@
 title: 제네릭 인터페이스의 가변성(C#)
 ms.date: 07/20/2015
 ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
-ms.openlocfilehash: fdcfd13a645ffc9b596beed65b74f8e593c642f7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 11d0c8665412bb513cb68d58203a454b7c97e052
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326760"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44200306"
 ---
 # <a name="variance-in-generic-interfaces-c"></a>제네릭 인터페이스의 가변성(C#)
 .NET Framework 4에서는 기존의 몇몇 제네릭 인터페이스에 대한 가변성 지원이 추가되었습니다. 가변성 지원은 이러한 인터페이스를 구현하는 클래스의 암시적 변환을 가능하게 합니다. 다음 인터페이스는 현재 variant입니다.  
@@ -89,8 +89,9 @@ IEnumerable<int> integers = new List<int>();
 IEnumerable<Object> listObjects = new List<String>();  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [제네릭 컬렉션용 인터페이스의 가변성 사용(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)  
- [Variant 제네릭 인터페이스 만들기(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)  
- [제네릭 인터페이스](../../../../standard/generics/interfaces.md)  
- [대리자의 가변성(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
+## <a name="see-also"></a>참고 항목
+
+- [제네릭 컬렉션용 인터페이스의 가변성 사용(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)  
+- [Variant 제네릭 인터페이스 만들기(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)  
+- [제네릭 인터페이스](../../../../standard/generics/interfaces.md)  
+- [대리자의 가변성(C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - generics [C#], reflection
 - reflection [C#], generic types
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
-ms.openlocfilehash: 7e35c7d6712323bd7088ad68160da05cdf3a5115
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 9bbf08161162c2d0776a066098e40b57a415da6d
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245780"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44187139"
 ---
 # <a name="generics-and-reflection-c-programming-guide"></a>제네릭 및 리플렉션(C# 프로그래밍 가이드)
 CLR(공용 언어 런타임)은 런타임에 제네릭 형식 정보에 액세스할 수 있으므로 제네릭이 아닌 형식에 대한 방법과 동일한 방법으로 리플렉션을 사용하여 제네릭 형식에 대한 정보를 가져올 수 있습니다. 자세한 내용은 [런타임의 제네릭](../../../csharp/programming-guide/generics/generics-in-the-run-time.md)을 참조하세요.  
@@ -44,8 +44,9 @@ CLR(공용 언어 런타임)은 런타임에 제네릭 형식 정보에 액세�
 |<xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A>|현재 <xref:System.Reflection.MethodInfo>가 제네릭 메서드의 정의를 나타내는 경우 true를 반환합니다.|  
 |<xref:System.Reflection.MethodInfo.MakeGenericMethod%2A>|현재 제네릭 메서드 정의의 형식 매개 변수를 형식 배열의 요소로 대체하고, 결과로 생성된 메서드를 나타내는 <xref:System.Reflection.MethodInfo> 개체를 반환합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [제네릭](../../../csharp/programming-guide/generics/index.md)  
- [리플렉션 및 제네릭 형식](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
- [제네릭](~/docs/standard/generics/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [제네릭](../../../csharp/programming-guide/generics/index.md)  
+- [리플렉션 및 제네릭 형식](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
+- [제네릭](~/docs/standard/generics/index.md)

@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - accessibility domain [C#]
 ms.assetid: 8af779c1-275b-44be-a864-9edfbca71bcc
-ms.openlocfilehash: 8e6af35ea41f6d062bc2b8ee771a1fac21667462
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: 01854b60fb58d4dcd0a217552f19d6c0cd32ec78
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207975"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44261761"
 ---
 # <a name="accessibility-domain-c-reference"></a>액세스 가능 도메인(C# 참조)
 멤버의 액세스 가능 도메인은 멤버가 참조될 수 있는 프로그램 섹션을 지정합니다. 멤버가 다른 형식 내에 중첩되면 해당 액세스 가능 도메인은 멤버의 [액세스 가능성 수준](../../../csharp/language-reference/keywords/accessibility-levels.md) 및 한 수준 위 형식의 액세스 가능 도메인에 의해 결정됩니다.  
@@ -25,14 +25,14 @@ ms.locfileid: "36207975"
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 참조](../../../csharp/language-reference/index.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [액세스 수준](../../../csharp/language-reference/keywords/accessibility-levels.md)  
- [접근성 수준 사용에 대한 제한](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)  
- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [public](../../../csharp/language-reference/keywords/public.md)  
- [private](../../../csharp/language-reference/keywords/private.md)  
- [protected](../../../csharp/language-reference/keywords/protected.md)  
- [internal](../../../csharp/language-reference/keywords/internal.md)
+- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
+- [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [액세스 수준](../../../csharp/language-reference/keywords/accessibility-levels.md)  
+- [접근성 수준 사용에 대한 제한](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)  
+- [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [public](../../../csharp/language-reference/keywords/public.md)  
+- [private](../../../csharp/language-reference/keywords/private.md)  
+- [protected](../../../csharp/language-reference/keywords/protected.md)  
+- [internal](../../../csharp/language-reference/keywords/internal.md)

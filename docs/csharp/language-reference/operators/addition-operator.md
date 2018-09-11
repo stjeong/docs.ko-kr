@@ -9,11 +9,11 @@ helpviewer_keywords:
 - addition operator [C#]
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ms.openlocfilehash: b49694bc8937c58bd295f0f8e57c378802d0dfb9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43397120"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227989"
 ---
 # <a name="-operator-c-reference"></a>+ 연산자(C# 참조)
 `+` 연산자는 단항 또는 이항 연산자로 작동할 수 있습니다.  
