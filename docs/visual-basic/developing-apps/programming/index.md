@@ -6,11 +6,11 @@ helpviewer_keywords:
 - programming
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 ms.openlocfilehash: 5ffe44545e60bb74563180a6a5c87c78526ab566
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44341832"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44508740"
 ---
 # <a name="programming-in-visual-basic"></a>Visual Basic의 프로그래밍
 이 섹션에서는 Visual Basic 응용 프로그램을 만들 때 배우면 도움이 될 수 있는 프로그래밍 작업에 대해 설명합니다.  

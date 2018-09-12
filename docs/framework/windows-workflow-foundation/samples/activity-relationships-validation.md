@@ -3,11 +3,11 @@ title: 활동 관계 유효성 검사
 ms.date: 03/30/2017
 ms.assetid: 6f11a34e-ed67-4bce-88ce-7e96bbb4d052
 ms.openlocfilehash: 50f08118fb5ad4d9b8fe809e7ab3cc5d57f28149
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43784814"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44193668"
 ---
 # <a name="activity-relationships-validation"></a>활동 관계 유효성 검사
 이 샘플은 `CreateCity`, `CreateState` 및 `CreateCountry`의 세 가지 활동으로 구성됩니다. `CreateCity`는 `CreateState` 활동 안에 있어야 하고, `CreateState`는 `CreateCountry` 활동 안에 있어야 합니다. 이 샘플에서 사용할 유효성 검사 논리는 `CreateState` 활동의 경우 코드로 되어 있고 `CreateCity` 활동의 경우 XAML로 되어 있습니다. 두 제약 조건의 동작은 동일합니다.  
