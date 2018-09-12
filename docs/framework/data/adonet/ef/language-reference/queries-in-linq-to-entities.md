@@ -3,11 +3,11 @@ title: LINQ to Entities에서 쿼리
 ms.date: 03/30/2017
 ms.assetid: c015a609-29eb-4e95-abb1-2ca721c6e2ad
 ms.openlocfilehash: b6dc38951107b0d3833e1060c23962a43936bf4d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44177697"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44508579"
 ---
 # <a name="queries-in-linq-to-entities"></a>LINQ to Entities에서 쿼리
 쿼리는 데이터 소스에서 데이터를 검색하는 식입니다. 관계형 데이터베이스에는 SQL이 사용되고 XML에는 XQuery가 사용되는 것과 같이 쿼리는 일반적으로 특수화된 쿼리 언어로 표현됩니다. 따라서 개발자는 쿼리하는 데이터 소스나 데이터 형식에 따라 새로운 쿼리 언어를 배워야 했습니다. LINQ(Language-Integrated Query)는 다양한 데이터 소스 및 형식에 사용할 수 있는 간단하고 일관된 모델을 제공합니다. LINQ 쿼리에서는 항상 프로그래밍 개체가 사용됩니다.  

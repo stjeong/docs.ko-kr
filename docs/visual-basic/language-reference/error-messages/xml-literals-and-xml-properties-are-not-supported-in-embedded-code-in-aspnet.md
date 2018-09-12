@@ -8,11 +8,11 @@ helpviewer_keywords:
 - BC31200
 ms.assetid: 053e8cba-8584-45cc-9fa0-43d122779772
 ms.openlocfilehash: 893fdb1b9b3b5ace6b869c7b64ce7483ff523023
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44275758"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44699386"
 ---
 # <a name="xml-literals-and-xml-properties-are-not-supported-in-embedded-code-within-aspnet"></a>XML 리터럴 및 XML 속성은 ASP.NET의 포함 코드에서 지원되지 않습니다.
 XML 리터럴과 XML 속성은 ASP.NET의 포함된 코드에서 지원 되지 않습니다. XML 기능을 사용 하려면 코드 숨김에 코드를 이동 합니다.  

@@ -3,11 +3,11 @@ title: Transacted Operations In Doubt Per Second
 ms.date: 03/30/2017
 ms.assetid: 7e6b0716-c107-42e5-a21d-31d988e7a691
 ms.openlocfilehash: f7365c4e5f03711129916c8c6964f7e25e9b553e
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44337475"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44507960"
 ---
 # <a name="transacted-operations-in-doubt-per-second"></a>Transacted Operations In Doubt Per Second
 카운터 이름: Transacted Operations In Doubt Per Second  

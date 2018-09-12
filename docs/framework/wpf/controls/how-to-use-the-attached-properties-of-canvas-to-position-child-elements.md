@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Canvas control [WPF], attached properties
 ms.assetid: 48f1d25d-3820-4107-a4cc-d6c1e5664a44
 ms.openlocfilehash: 89327b834dfd71c0a7420eb42a598b98cdb5e9d8
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44270671"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44699701"
 ---
 # <a name="how-to-use-the-attached-properties-of-canvas-to-position-child-elements"></a>방법: Canvas의 연결된 속성을 사용하여 자식 요소 배치
 이 예제는 자식 요소들을 위치시키기 위해 <xref:System.Windows.Controls.Canvas>의 연결 속성을 사용하는 법을 알려줍니다.  

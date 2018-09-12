@@ -20,11 +20,11 @@ helpviewer_keywords:
 - floating-point numbers
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 ms.openlocfilehash: 9bbc7f51de9899354184d051d8f1a584651dd030
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44366193"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700234"
 ---
 # <a name="troubleshooting-data-types-visual-basic"></a>데이터 형식 문제 해결(Visual Basic)
 이 페이지는 기본 데이터 형식에 대 한 작업을 수행할 때 발생할 수 있는 몇 가지 일반적인 문제를 나열 합니다.  

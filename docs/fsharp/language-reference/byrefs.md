@@ -2,12 +2,12 @@
 title: 'Byref (F #)'
 description: 'Byref 및 낮은 수준의 프로그래밍에 사용 되는 F #에서는 byref와 유사한 형식에 알아봅니다.'
 ms.date: 09/02/2018
-ms.openlocfilehash: 7d4138649ee39a0d342db2828ad4d32fbded978c
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.openlocfilehash: 6131104e4325f77da84368c337f998c6b2b5309b
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44338664"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44699648"
 ---
 # <a name="byrefs"></a>Byref
 
@@ -105,7 +105,7 @@ let f (x: inref<SomeStruct>) = s.SomeField
 
 목적은 `outref<'T>` 나타내는 포인터에서 읽을 수만 해야 하는 것입니다. 예기치 않게 `outref<'T>` 이름과 달리 기본 읽기 허용 값입니다. 호환성을 위해입니다. 의미상 `outref<'T>` 다르지 않습니다 `byref<'T>`합니다.
 
-### <a name="interop-with-c"></a>C와의 상호 운용성 #
+### <a name="interop-with-c"></a>C#와 상호 운용성 #
 
 C# 지원 합니다 `in ref` 및 `out ref` 외에에서 키워드 `ref` 반환 합니다. 다음 표에서 F # 해석 하는 방법을 새로운 C# 내보냅니다 보여 줍니다.
 
@@ -196,7 +196,7 @@ printfn "%d" sum // 'sum' is of type 'int'
 Return에 직접 할당할 수 있습니다 `byref`합니다. 다음 (항상 필수) 프로그램을 고려 합니다.
 
 ```fsharp
-ype C() =
+type C() =
     let mutable nums = [| 1; 3; 7; 15; 31; 63; 127; 255; 511; 1023 |]
 
     override __.ToString() = String.Join(' ', nums)

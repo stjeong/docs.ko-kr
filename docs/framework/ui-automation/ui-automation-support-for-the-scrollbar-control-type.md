@@ -10,11 +10,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 5c2f1ae77585576c8ad1c83b37e6ec530dd31598
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44342751"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44508532"
 ---
 # <a name="ui-automation-support-for-the-scrollbar-control-type"></a>ScrollBar 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]

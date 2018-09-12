@@ -3,11 +3,11 @@ title: SQL 워크플로 인스턴스 저장소의 속성
 ms.date: 03/30/2017
 ms.assetid: 5bf75f3c-8f33-450d-967f-6ee862c14c67
 ms.openlocfilehash: 3707e4912628380e5e06eeae1a6d608a4b0d5555
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44352283"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44699321"
 ---
 # <a name="properties-of-sql-workflow-instance-store"></a>SQL 워크플로 인스턴스 저장소의 속성
 이 단원의 항목에서는 SQL 워크플로 인스턴스 저장소의 속성에 대해 자세히 설명합니다.  

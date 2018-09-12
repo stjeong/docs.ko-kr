@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
-ms.openlocfilehash: e844a673f1a60d5a151a6ae612d4af7a6712eef4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c22599f50ac071245a1381d267f3f7cb66806174
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43508346"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700052"
 ---
 # <a name="collection-initializers-visual-basic"></a>컬렉션 이니셜라이저(Visual Basic)
 *컬렉션 이니셜라이저*는 컬렉션을 만들고 값의 초기 집합으로 채울 수 있도록 하는 약식 구문을 제공합니다. 컬렉션 이니셜라이저는 알려진 값(예: 메뉴 옵션 또는 범주 목록, 숫자 값의 초기 집합, 일 또는 월 이름과 같은 문자열의 정적 목록 또는 유효성 검사에 사용되는 상태 목록과 같은 지리적 위치)의 집합에서 컬렉션을 만드는 경우에 유용합니다.  
   
- 항목 컬렉션에 대한 자세한 내용은 [컬렉션](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)을 참조하세요.  
+ 항목 컬렉션에 대한 자세한 내용은 [컬렉션](../../../../visual-basic/programming-guide/concepts/collections.md)을 참조하세요.  
   
  `From` 키워드 뒤에 중괄호(`{}`)를 사용하여 컬렉션 이니셜라이저를 식별합니다. 이것은 [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)에서 설명된 배열 리터럴 구문과 비슷합니다. 다음 예제에서는 컬렉션 이니셜라이저를 사용하여 컬렉션을 만드는 다양한 방법을 보여 줍니다.  
   
@@ -76,14 +76,15 @@ ms.locfileid: "43508346"
 |[방법: 컬렉션 이니셜라이저에 사용되는 확장명 추가 메서드 만들기](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)|컬렉션 이니셜라이저의 값으로 컬렉션을 채우는 데 사용될 수 있는 `Add`라는 확장 메서드를 만드는 방법을 보여 줍니다.|  
 |[방법: 컬렉션 이니셜라이저에 사용되는 컬렉션 만들기](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)|`IEnumerable`을 구현하는 컬렉션 클래스에 `Add` 메서드를 포함하여 컬렉션 이니셜라이저를 사용할 수 있도록 설정하는 방법을 보여 줍니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [컬렉션](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
- [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [개체 이니셜라이저: 명명된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [New 연산자](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [자동으로 구현된 속성](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
- [방법: Visual Basic에서 배열 변수 초기화](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)  
- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [방법: 항목 목록 만들기](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)
+## <a name="see-also"></a>참고자료
+
+- [컬렉션](../../../../visual-basic/programming-guide/concepts/collections.md)  
+- [배열](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
+- [개체 이니셜라이저: 명명된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
+- [New 연산자](../../../../visual-basic/language-reference/operators/new-operator.md)  
+- [자동으로 구현된 속성](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
+- [방법: Visual Basic에서 배열 변수 초기화](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)  
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
+- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+- [방법: 항목 목록 만들기](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)
