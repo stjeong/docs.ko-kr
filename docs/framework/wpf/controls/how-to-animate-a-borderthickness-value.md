@@ -9,28 +9,28 @@ helpviewer_keywords:
 - animation [WPF], changes to border thickness
 ms.assetid: fd021978-f74b-4e7b-a7f7-3987dcad9e0f
 ms.openlocfilehash: d1ead0493d75f708557f0598d603440221182ebc
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44337176"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700668"
 ---
-# <a name="how-to-animate-a-borderthickness-value"></a><span data-ttu-id="51d20-102">방법: BorderThickness 값에 애니메이션 효과 주기</span><span class="sxs-lookup"><span data-stu-id="51d20-102">How to: Animate a BorderThickness Value</span></span>
-<span data-ttu-id="51d20-103">사용 하 여 테두리의 두께에 대 한 변경을 애니메이션화 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.ThicknessAnimation> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="51d20-103">This example shows how to animate changes to the thickness of a border by using the <xref:System.Windows.Media.Animation.ThicknessAnimation> class.</span></span>  
+# <a name="how-to-animate-a-borderthickness-value"></a><span data-ttu-id="7a246-102">방법: BorderThickness 값에 애니메이션 효과 주기</span><span class="sxs-lookup"><span data-stu-id="7a246-102">How to: Animate a BorderThickness Value</span></span>
+<span data-ttu-id="7a246-103">사용 하 여 테두리의 두께에 대 한 변경을 애니메이션화 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.ThicknessAnimation> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="7a246-103">This example shows how to animate changes to the thickness of a border by using the <xref:System.Windows.Media.Animation.ThicknessAnimation> class.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="51d20-104">예제</span><span class="sxs-lookup"><span data-stu-id="51d20-104">Example</span></span>  
- <span data-ttu-id="51d20-105">다음 예제를 사용 하 여 테두리의 두께 애니메이션을 적용 <xref:System.Windows.Media.Animation.ThicknessAnimation>합니다.</span><span class="sxs-lookup"><span data-stu-id="51d20-105">The following example animates the thickness of a border by using <xref:System.Windows.Media.Animation.ThicknessAnimation>.</span></span> <span data-ttu-id="51d20-106">이 예제에서는 사용 합니다 <xref:System.Windows.Controls.Border.BorderThickness%2A> 속성의 <xref:System.Windows.Controls.Border>합니다.</span><span class="sxs-lookup"><span data-stu-id="51d20-106">The example uses the <xref:System.Windows.Controls.Border.BorderThickness%2A> property of <xref:System.Windows.Controls.Border>.</span></span>  
+## <a name="example"></a><span data-ttu-id="7a246-104">예제</span><span class="sxs-lookup"><span data-stu-id="7a246-104">Example</span></span>  
+ <span data-ttu-id="7a246-105">다음 예제를 사용 하 여 테두리의 두께 애니메이션을 적용 <xref:System.Windows.Media.Animation.ThicknessAnimation>합니다.</span><span class="sxs-lookup"><span data-stu-id="7a246-105">The following example animates the thickness of a border by using <xref:System.Windows.Media.Animation.ThicknessAnimation>.</span></span> <span data-ttu-id="7a246-106">이 예제에서는 사용 합니다 <xref:System.Windows.Controls.Border.BorderThickness%2A> 속성의 <xref:System.Windows.Controls.Border>합니다.</span><span class="sxs-lookup"><span data-stu-id="7a246-106">The example uses the <xref:System.Windows.Controls.Border.BorderThickness%2A> property of <xref:System.Windows.Controls.Border>.</span></span>  
   
  [!code-csharp[BasicAnimations_snip#ThicknessAnimationWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/ThicknessAnimationExample.cs#thicknessanimationwholepage)]
  [!code-vb[BasicAnimations_snip#ThicknessAnimationWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/ThicknessAnimationExample.vb#thicknessanimationwholepage)]  
   
- <span data-ttu-id="51d20-107">전체 샘플을 참조 하세요 [애니메이션 예제 갤러리](https://go.microsoft.com/fwlink/?LinkID=159969)합니다.</span><span class="sxs-lookup"><span data-stu-id="51d20-107">For the complete sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).</span></span>  
+ <span data-ttu-id="7a246-107">전체 샘플을 참조 하세요 [애니메이션 예제 갤러리](https://go.microsoft.com/fwlink/?LinkID=159969)합니다.</span><span class="sxs-lookup"><span data-stu-id="7a246-107">For the complete sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="51d20-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="51d20-108">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="7a246-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7a246-108">See Also</span></span>  
  <xref:System.Windows.Media.Animation.ThicknessAnimation>  
  <xref:System.Windows.Controls.Border.BorderThickness%2A>  
  <xref:System.Windows.Controls.Border>  
- [<span data-ttu-id="51d20-109">애니메이션 개요</span><span class="sxs-lookup"><span data-stu-id="51d20-109">Animation Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [<span data-ttu-id="51d20-110">애니메이션 및 타이밍</span><span class="sxs-lookup"><span data-stu-id="51d20-110">Animation and Timing</span></span>](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [<span data-ttu-id="51d20-111">방법 항목</span><span class="sxs-lookup"><span data-stu-id="51d20-111">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
- [<span data-ttu-id="51d20-112">키 프레임을 사용하여 테두리 두께에 애니메이션 효과 주기</span><span class="sxs-lookup"><span data-stu-id="51d20-112">Animate the Thickness of a Border by Using Key Frames</span></span>](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)
+ [<span data-ttu-id="7a246-109">애니메이션 개요</span><span class="sxs-lookup"><span data-stu-id="7a246-109">Animation Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [<span data-ttu-id="7a246-110">애니메이션 및 타이밍</span><span class="sxs-lookup"><span data-stu-id="7a246-110">Animation and Timing</span></span>](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [<span data-ttu-id="7a246-111">방법 항목</span><span class="sxs-lookup"><span data-stu-id="7a246-111">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
+ [<span data-ttu-id="7a246-112">키 프레임을 사용하여 테두리 두께에 애니메이션 효과 주기</span><span class="sxs-lookup"><span data-stu-id="7a246-112">Animate the Thickness of a Border by Using Key Frames</span></span>](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)
