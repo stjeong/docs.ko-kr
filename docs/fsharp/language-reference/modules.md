@@ -3,11 +3,11 @@ title: 모듈(F#)
 description: 'F # 모듈은 F #와 같은 코드의 값, 형식 및 함수 값을 F # 프로그램을 그룹화 하는 방법에 대해 알아봅니다.'
 ms.date: 04/24/2017
 ms.openlocfilehash: fb0aa1d508d1141933b4fbdf10633f67ed078dc7
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
-ms.translationtype: HT
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/12/2018
-ms.locfileid: "44514357"
+ms.locfileid: "44705127"
 ---
 # <a name="modules"></a>모듈
 

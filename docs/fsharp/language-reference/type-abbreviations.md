@@ -3,11 +3,11 @@ title: 형식 약어(F#)
 description: '형식에 이름을 더 의미 있는 코드를 쉽게 읽을 수 있도록 하기 위해 F # 형식 약어에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 259cd6c84e22fc7c98e08255d3e0ded5b87af352
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44365607"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44708986"
 ---
 # <a name="type-abbreviations"></a>형식 약어
 
