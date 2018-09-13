@@ -10,41 +10,41 @@ helpviewer_keywords:
 - statements [C#]
 ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
 ms.openlocfilehash: 1085de3447bd6101fcccf6cae7b37afac24d37f1
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44364860"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44706771"
 ---
-# <a name="statements-expressions-and-operators-c-programming-guide"></a><span data-ttu-id="3a4e7-102">문, 식, 연산자(C# 프로그래밍 가이드)</span><span class="sxs-lookup"><span data-stu-id="3a4e7-102">Statements, Expressions, and Operators (C# Programming Guide)</span></span>
-<span data-ttu-id="3a4e7-103">응용 프로그램을 구성하는 C# 코드는 키워드, 식, 연산자가 포함된 문으로 구성됩니다.</span><span class="sxs-lookup"><span data-stu-id="3a4e7-103">The C# code that comprises an application consists of statements made up of keywords, expressions and operators.</span></span> <span data-ttu-id="3a4e7-104">이 섹션에서는 C# 프로그램의 이러한 기본 요소에 대한 정보를 소개합니다.</span><span class="sxs-lookup"><span data-stu-id="3a4e7-104">This section contains information regarding these fundamental elements of a C# program.</span></span>  
+# <a name="statements-expressions-and-operators-c-programming-guide"></a><span data-ttu-id="46c96-102">문, 식, 연산자(C# 프로그래밍 가이드)</span><span class="sxs-lookup"><span data-stu-id="46c96-102">Statements, Expressions, and Operators (C# Programming Guide)</span></span>
+<span data-ttu-id="46c96-103">응용 프로그램을 구성하는 C# 코드는 키워드, 식, 연산자가 포함된 문으로 구성됩니다.</span><span class="sxs-lookup"><span data-stu-id="46c96-103">The C# code that comprises an application consists of statements made up of keywords, expressions and operators.</span></span> <span data-ttu-id="46c96-104">이 섹션에서는 C# 프로그램의 이러한 기본 요소에 대한 정보를 소개합니다.</span><span class="sxs-lookup"><span data-stu-id="46c96-104">This section contains information regarding these fundamental elements of a C# program.</span></span>  
   
- <span data-ttu-id="3a4e7-105">자세한 내용은 다음을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3a4e7-105">For more information, see:</span></span>  
+ <span data-ttu-id="46c96-105">자세한 내용은 다음을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="46c96-105">For more information, see:</span></span>  
   
--   [<span data-ttu-id="3a4e7-106">문</span><span class="sxs-lookup"><span data-stu-id="3a4e7-106">Statements</span></span>](statements.md)  
+-   [<span data-ttu-id="46c96-106">문</span><span class="sxs-lookup"><span data-stu-id="46c96-106">Statements</span></span>](statements.md)  
   
--   [<span data-ttu-id="3a4e7-107">식</span><span class="sxs-lookup"><span data-stu-id="3a4e7-107">Expressions</span></span>](expressions.md)  
+-   [<span data-ttu-id="46c96-107">식</span><span class="sxs-lookup"><span data-stu-id="46c96-107">Expressions</span></span>](expressions.md)  
   
-    -   [<span data-ttu-id="3a4e7-108">식 본문 멤버</span><span class="sxs-lookup"><span data-stu-id="3a4e7-108">Expression-bodied members</span></span>](expression-bodied-members.md)
+    -   [<span data-ttu-id="46c96-108">식 본문 멤버</span><span class="sxs-lookup"><span data-stu-id="46c96-108">Expression-bodied members</span></span>](expression-bodied-members.md)
  
--   [<span data-ttu-id="3a4e7-109">연산자</span><span class="sxs-lookup"><span data-stu-id="3a4e7-109">Operators</span></span>](operators.md)  
+-   [<span data-ttu-id="46c96-109">연산자</span><span class="sxs-lookup"><span data-stu-id="46c96-109">Operators</span></span>](operators.md)  
   
--   [<span data-ttu-id="3a4e7-110">익명 함수</span><span class="sxs-lookup"><span data-stu-id="3a4e7-110">Anonymous Functions</span></span>](anonymous-functions.md)  
+-   [<span data-ttu-id="46c96-110">익명 함수</span><span class="sxs-lookup"><span data-stu-id="46c96-110">Anonymous Functions</span></span>](anonymous-functions.md)  
   
--   [<span data-ttu-id="3a4e7-111">오버로드할 수 있는 연산자</span><span class="sxs-lookup"><span data-stu-id="3a4e7-111">Overloadable Operators</span></span>](overloadable-operators.md)  
+-   [<span data-ttu-id="46c96-111">오버로드할 수 있는 연산자</span><span class="sxs-lookup"><span data-stu-id="46c96-111">Overloadable Operators</span></span>](overloadable-operators.md)  
   
--   [<span data-ttu-id="3a4e7-112">변환 연산자</span><span class="sxs-lookup"><span data-stu-id="3a4e7-112">Conversion Operators</span></span>](conversion-operators.md)  
+-   [<span data-ttu-id="46c96-112">변환 연산자</span><span class="sxs-lookup"><span data-stu-id="46c96-112">Conversion Operators</span></span>](conversion-operators.md)  
   
-    -   [<span data-ttu-id="3a4e7-113">변환 연산자 사용</span><span class="sxs-lookup"><span data-stu-id="3a4e7-113">Using Conversion Operators</span></span>](using-conversion-operators.md)  
+    -   [<span data-ttu-id="46c96-113">변환 연산자 사용</span><span class="sxs-lookup"><span data-stu-id="46c96-113">Using Conversion Operators</span></span>](using-conversion-operators.md)  
   
-    -   [<span data-ttu-id="3a4e7-114">방법: 구조체 간의 사용자 정의 변환 구현</span><span class="sxs-lookup"><span data-stu-id="3a4e7-114">How to: Implement User-Defined Conversions Between Structs</span></span>](how-to-implement-user-defined-conversions-between-structs.md)  
+    -   [<span data-ttu-id="46c96-114">방법: 구조체 간의 사용자 정의 변환 구현</span><span class="sxs-lookup"><span data-stu-id="46c96-114">How to: Implement User-Defined Conversions Between Structs</span></span>](how-to-implement-user-defined-conversions-between-structs.md)  
   
--   [<span data-ttu-id="3a4e7-115">같음 비교</span><span class="sxs-lookup"><span data-stu-id="3a4e7-115">Equality Comparisons</span></span>](equality-comparisons.md)  
+-   [<span data-ttu-id="46c96-115">같음 비교</span><span class="sxs-lookup"><span data-stu-id="46c96-115">Equality Comparisons</span></span>](equality-comparisons.md)  
   
-## <a name="c-language-specification"></a><span data-ttu-id="3a4e7-116">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="3a4e7-116">C# Language Specification</span></span>  
+## <a name="c-language-specification"></a><span data-ttu-id="46c96-116">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="46c96-116">C# Language Specification</span></span>  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a><span data-ttu-id="3a4e7-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3a4e7-117">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="46c96-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="46c96-117">See Also</span></span>
 
-- [<span data-ttu-id="3a4e7-118">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="3a4e7-118">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="3a4e7-119">캐스팅 및 형식 변환</span><span class="sxs-lookup"><span data-stu-id="3a4e7-119">Casting and Type Conversions</span></span>](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+- [<span data-ttu-id="46c96-118">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="46c96-118">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="46c96-119">캐스팅 및 형식 변환</span><span class="sxs-lookup"><span data-stu-id="46c96-119">Casting and Type Conversions</span></span>](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
