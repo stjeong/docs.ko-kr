@@ -10,11 +10,11 @@ helpviewer_keywords:
 - statements [C#]
 ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
 ms.openlocfilehash: 1085de3447bd6101fcccf6cae7b37afac24d37f1
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44364860"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44706771"
 ---
 # <a name="statements-expressions-and-operators-c-programming-guide"></a>문, 식, 연산자(C# 프로그래밍 가이드)
 응용 프로그램을 구성하는 C# 코드는 키워드, 식, 연산자가 포함된 문으로 구성됩니다. 이 섹션에서는 C# 프로그램의 이러한 기본 요소에 대한 정보를 소개합니다.  

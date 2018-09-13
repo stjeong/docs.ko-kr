@@ -8,16 +8,16 @@ ms.assetid: f78ec137-df0e-48c9-a7a0-5f6a1055f011
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e90857fcf02dbd0dd888b0658f3ab626bc5b11bd
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44352759"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "44698292"
 ---
 # <a name="dynamic-programming-in-the-net-framework"></a>.NET Framework의 동적 프로그래밍
 설명서의 이 섹션에서는 .NET Framework에서의 동적 프로그래밍에 대한 정보를 제공합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [리플렉션](../../../docs/framework/reflection-and-codedom/reflection.md)  
  리플렉션을 사용하여 런타임에 개체 작업을 하는 방법을 설명합니다.  
   
