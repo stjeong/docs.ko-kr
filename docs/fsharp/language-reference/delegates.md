@@ -3,11 +3,11 @@ title: 대리자(F#)
 description: 'F #에서 대리자를 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: be58997dffe8fcd949bbc2d47d86ffccc157d43e
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45517095"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45615432"
 ---
 # <a name="delegates"></a>대리자
 

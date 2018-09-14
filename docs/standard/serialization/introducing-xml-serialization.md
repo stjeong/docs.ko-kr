@@ -12,12 +12,12 @@ helpviewer_keywords:
 - DataSet class, serializing
 - XML Schema, serializing
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
-ms.openlocfilehash: 805a495790266b34ede030b76fbd83e6f172ceaf
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 66412c620b8107312e5d58fef5cf1b5d9ee90107
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44206119"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45615523"
 ---
 # <a name="introducing-xml-serialization"></a>XML Serialization 소개
 
@@ -111,7 +111,7 @@ Serialization에 대한 다른 예제를 보려면 [XML Serialization 예제](ex
 
 ## <a name="advantages-of-using-xml-serialization"></a>XML serialization 사용의 장점
 
-**XmlSerializer** 클래스를 사용하면 개체를 XML로 직렬화할 때 완전하고 유연하게 제어할 수 있습니다. XML Web services를 만드는 경우 XML 출력이 특정 스키마를 따르도록 serialization을 제어하는 특성을 클래스와 멤버에 적용할 수 있습니다.
+합니다 **XmlSerializer** 클래스를 사용 하면 완료 하 고 융통성 있는 제어 개체를 XML로 serialize 할 때입니다. XML Web services를 만드는 경우 XML 출력이 특정 스키마를 따르도록 serialization을 제어하는 특성을 클래스와 멤버에 적용할 수 있습니다.
 
 예를 들어 **XmlSerializer**를 사용하여 다음을 수행할 수 있습니다.
 

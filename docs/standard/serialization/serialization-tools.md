@@ -3,11 +3,11 @@ title: Serialization 도구
 ms.date: 03/30/2017
 ms.assetid: 593b675f-938c-44ff-807b-0ca9fea30103
 ms.openlocfilehash: af0ed0df0e99245d3dacd31280574c36415d2a1e
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45513874"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45597513"
 ---
 # <a name="serialization-tools"></a>Serialization 도구
 이 단원에는 serialization 도구에 대한 자세한 설명이 들어 있습니다. 명령줄에서 모든 도구를 실행할 수 있습니다.  
