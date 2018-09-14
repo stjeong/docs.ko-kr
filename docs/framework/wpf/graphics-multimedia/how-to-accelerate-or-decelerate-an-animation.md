@@ -8,16 +8,16 @@ helpviewer_keywords:
 - animation [WPF], decelerating
 ms.assetid: 4f383b2c-f94d-4a4e-9a06-f56f5dae95f9
 ms.openlocfilehash: b1649f27fc8ff850516eef2086dbce732915406b
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44272956"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45521429"
 ---
-# <a name="how-to-accelerate-or-decelerate-an-animation"></a><span data-ttu-id="22ac2-102">방법: 애니메이션 가속 또는 감속</span><span class="sxs-lookup"><span data-stu-id="22ac2-102">How to: Accelerate or Decelerate an Animation</span></span>
-<span data-ttu-id="22ac2-103">이 예제에서는 애니메이션을 가속화 하 고 시간이 지남에 따라 감속 하는 방법에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="22ac2-103">This example demonstrates how to make an animation accelerate and decelerate over time.</span></span> <span data-ttu-id="22ac2-104">다음 예제에서는 여러 사각형 다른 애니메이션으로 애니메이션 <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> 고 <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="22ac2-104">In the following example, several rectangles are animated by animations with different <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> settings.</span></span>  
+# <a name="how-to-accelerate-or-decelerate-an-animation"></a><span data-ttu-id="ec131-102">방법: 애니메이션 가속 또는 감속</span><span class="sxs-lookup"><span data-stu-id="ec131-102">How to: Accelerate or Decelerate an Animation</span></span>
+<span data-ttu-id="ec131-103">이 예제에서는 애니메이션을 가속화 하 고 시간이 지남에 따라 감속 하는 방법에 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="ec131-103">This example demonstrates how to make an animation accelerate and decelerate over time.</span></span> <span data-ttu-id="ec131-104">다음 예제에서는 여러 사각형 다른 애니메이션으로 애니메이션 <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> 고 <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ec131-104">In the following example, several rectangles are animated by animations with different <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> settings.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="22ac2-105">예제</span><span class="sxs-lookup"><span data-stu-id="22ac2-105">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="ec131-105">예제</span><span class="sxs-lookup"><span data-stu-id="ec131-105">Example</span></span>  
  [!code-xaml[timingbehaviors_snip#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AccelDecelExample.xaml#1)]  
   
- <span data-ttu-id="22ac2-106">이 예제의 코드는 생략 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="22ac2-106">Code has been omitted from this example.</span></span> <span data-ttu-id="22ac2-107">전체 코드에 대 한 참조를 [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)합니다.</span><span class="sxs-lookup"><span data-stu-id="22ac2-107">For the complete code, see the [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970).</span></span>
+ <span data-ttu-id="ec131-106">이 예제의 코드는 생략 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="ec131-106">Code has been omitted from this example.</span></span> <span data-ttu-id="ec131-107">전체 코드에 대 한 참조를 [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)합니다.</span><span class="sxs-lookup"><span data-stu-id="ec131-107">For the complete code, see the [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970).</span></span>

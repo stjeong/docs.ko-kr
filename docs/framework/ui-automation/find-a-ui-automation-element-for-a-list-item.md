@@ -13,25 +13,25 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: b569b43d83e8a7f1b0fa82b79bc1fc40977b72ba
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700533"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45513521"
 ---
-# <a name="find-a-ui-automation-element-for-a-list-item"></a><span data-ttu-id="2ff1f-102">목록 항목의 UI 자동화 요소 찾기</span><span class="sxs-lookup"><span data-stu-id="2ff1f-102">Find a UI Automation Element for a List Item</span></span>
+# <a name="find-a-ui-automation-element-for-a-list-item"></a><span data-ttu-id="e6cba-102">목록 항목의 UI 자동화 요소 찾기</span><span class="sxs-lookup"><span data-stu-id="e6cba-102">Find a UI Automation Element for a List Item</span></span>
 > [!NOTE]
->  <span data-ttu-id="2ff1f-103">이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="2ff1f-103">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="2ff1f-104">에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.</span><span class="sxs-lookup"><span data-stu-id="2ff1f-104">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).</span></span>  
+>  <span data-ttu-id="e6cba-103">이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="e6cba-103">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="e6cba-104">에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.</span><span class="sxs-lookup"><span data-stu-id="e6cba-104">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).</span></span>  
   
- <span data-ttu-id="2ff1f-105">이 항목에서는 검색 하는 방법을 보여 줍니다.는 <xref:System.Windows.Automation.AutomationElement> 항목의 인덱스 라고 하는 경우 목록 내의 항목에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="2ff1f-105">This topic shows how to retrieve an <xref:System.Windows.Automation.AutomationElement> for an item within a list when the index of the item is known.</span></span>  
+ <span data-ttu-id="e6cba-105">이 항목에서는 검색 하는 방법을 보여 줍니다.는 <xref:System.Windows.Automation.AutomationElement> 항목의 인덱스 라고 하는 경우 목록 내의 항목에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="e6cba-105">This topic shows how to retrieve an <xref:System.Windows.Automation.AutomationElement> for an item within a list when the index of the item is known.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="2ff1f-106">예제</span><span class="sxs-lookup"><span data-stu-id="2ff1f-106">Example</span></span>  
- <span data-ttu-id="2ff1f-107">다음 예제에서는 지정 된 항목을 사용 하 여 목록에서 검색 하는 두 가지 <xref:System.Windows.Automation.TreeWalker> 및 다른 사용 <xref:System.Windows.Automation.AutomationElement.FindAll%2A>합니다.</span><span class="sxs-lookup"><span data-stu-id="2ff1f-107">The following example shows two ways of retrieving a specified item from a list, one using <xref:System.Windows.Automation.TreeWalker> and the other using <xref:System.Windows.Automation.AutomationElement.FindAll%2A>.</span></span>  
+## <a name="example"></a><span data-ttu-id="e6cba-106">예제</span><span class="sxs-lookup"><span data-stu-id="e6cba-106">Example</span></span>  
+ <span data-ttu-id="e6cba-107">다음 예제에서는 지정 된 항목을 사용 하 여 목록에서 검색 하는 두 가지 <xref:System.Windows.Automation.TreeWalker> 및 다른 사용 <xref:System.Windows.Automation.AutomationElement.FindAll%2A>합니다.</span><span class="sxs-lookup"><span data-stu-id="e6cba-107">The following example shows two ways of retrieving a specified item from a list, one using <xref:System.Windows.Automation.TreeWalker> and the other using <xref:System.Windows.Automation.AutomationElement.FindAll%2A>.</span></span>  
   
- <span data-ttu-id="2ff1f-108">첫 번째 방법은 대 한 더 빠른 경향이 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 컨트롤 이지만 두 번째 Windows Presentation Foundation (WPF) 컨트롤에 대 한 더 빠릅니다.</span><span class="sxs-lookup"><span data-stu-id="2ff1f-108">The first technique tends to be faster for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] controls, but the second is faster for Windows Presentation Foundation (WPF) controls.</span></span>  
+ <span data-ttu-id="e6cba-108">첫 번째 방법은 대 한 더 빠른 경향이 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 컨트롤 이지만 두 번째 Windows Presentation Foundation (WPF) 컨트롤에 대 한 더 빠릅니다.</span><span class="sxs-lookup"><span data-stu-id="e6cba-108">The first technique tends to be faster for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] controls, but the second is faster for Windows Presentation Foundation (WPF) controls.</span></span>  
   
  [!code-csharp[UIAClient_snip#184](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#184)]
  [!code-vb[UIAClient_snip#184](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#184)]  
   
-## <a name="see-also"></a><span data-ttu-id="2ff1f-109">참고 항목</span><span class="sxs-lookup"><span data-stu-id="2ff1f-109">See Also</span></span>  
- [<span data-ttu-id="2ff1f-110">UI 자동화 요소 가져오기</span><span class="sxs-lookup"><span data-stu-id="2ff1f-110">Obtaining UI Automation Elements</span></span>](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
+## <a name="see-also"></a><span data-ttu-id="e6cba-109">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e6cba-109">See Also</span></span>  
+ [<span data-ttu-id="e6cba-110">UI 자동화 요소 가져오기</span><span class="sxs-lookup"><span data-stu-id="e6cba-110">Obtaining UI Automation Elements</span></span>](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
