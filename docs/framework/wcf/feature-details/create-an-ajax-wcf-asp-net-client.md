@@ -2,12 +2,12 @@
 title: AJAX 사용 WCF 서비스를 만들고 Visual Studio에서 ASP.NET 클라이언트
 ms.date: 08/17/2018
 ms.assetid: 95012df8-2a66-420d-944a-8afab261013e
-ms.openlocfilehash: 07a1e903991e09243572f2a99c19edae7f9793b6
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 954ee0409f370c3fa28814a70d51334fd75f7b79
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43384288"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558043"
 ---
 # <a name="how-to-create-an-ajax-enabled-wcf-service-and-an-aspnet-client-that-accesses-the-service"></a>방법: AJAX 사용 WCF 서비스 및 해당 서비스에 액세스하는 ASP.NET 클라이언트 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "43384288"
 
 1. 에 **새 ASP.NET 웹 응용 프로그램** 대화 상자에서 **빈** 선택한 후 **확인**합니다.
 
-   ![Visual Studio에서 ASP.NET 웹 앱 형식 대화](../media/create-an-ajax-wcf-asp-net-client/new-asp-net-web-app-type.png)
+   ![Visual Studio에서 ASP.NET 웹 앱 형식 대화](media/create-an-ajax-wcf-asp-net-client/new-asp-net-web-app-type.png)
 
 ## <a name="add-a-web-form"></a>Web form 추가
 
@@ -51,7 +51,7 @@ ms.locfileid: "43384288"
 
 1. 에 **새 항목 추가** 대화 상자에서 확장을 **설치 됨** > **Visual C#** > **웹** 범주를 차례로 선택 된 **WCF 서비스 (AJAX 지원)** 템플릿.
 
-   ![Visual Studio에서 WCF 서비스 (AJAX 지원) 항목 템플릿](../media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
+   ![Visual Studio에서 WCF 서비스 (AJAX 지원) 항목 템플릿](media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
 
 1. 서비스의 이름을 **CostService** 선택한 후 **추가**합니다.
 

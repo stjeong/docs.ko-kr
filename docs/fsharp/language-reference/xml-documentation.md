@@ -3,11 +3,11 @@ title: XML 문서(F#)
 description: '주석에서 문서를 생성 하는 것에 대 한 F # 지원에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 1a4cb132e65b630821e5eb2b39276c1de99aff80
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44360796"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45508527"
 ---
 # <a name="xml-documentation"></a>XML 문서
 

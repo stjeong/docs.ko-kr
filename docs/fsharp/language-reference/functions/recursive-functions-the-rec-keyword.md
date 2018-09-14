@@ -3,11 +3,11 @@ title: '재귀 함수: rec 키워드(F#)'
 description: "'Let' 키워드를 사용 하 여 재귀 함수를 정의 하는 F # 'rec' 키워드는 사용 하는 방법을 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 5aab6ed8ab0fc3c0f0bcfc93c3ce6518ec53254f
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44710827"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45526683"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>재귀 함수: rec 키워드
 

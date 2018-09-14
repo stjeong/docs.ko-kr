@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: bf5648b1aa21ffd783c76aaa11c8e81371f45d18
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 24a4e826ece691a6a1221b39c164bba2eef8a059
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37104640"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "44778424"
 ---
 # <a name="key-takeaways"></a>핵심 내용
 
@@ -23,7 +23,7 @@ ms.locfileid: "37104640"
 
 -   프로덕션 Docker 환경에 연결하는 지속적인 통합/지속적인 배포를 지원하는 포괄적인 DevOps 환경은 민첩성을 제공하며, 궁극적으로 응용 프로그램의 출시 시기를 앞당깁니다.
 
-Visual Studio Team Services는 Azure에 기반을 둔 단순한 Docker 환경 또는 고급 마이크로 서비스 및 컨테이너 오케스트레이터를 비롯한 지속적인 배포 파이프라인의 Docker 환경에 지정된 DevOps 환경을 매우 간소화합니다.
+Azure DevOps 서비스는 단순한 Docker 환경 또는 고급 마이크로 서비스 및 컨테이너 오 케 스트레이 터 Azure를 기반으로 포함 하 여 지속적인 배포 파이프라인을에서 Docker 환경에 지정 된 DevOps 환경을 매우 간소화 합니다.
 
 >[!div class="step-by-step"]
 [이전](../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)

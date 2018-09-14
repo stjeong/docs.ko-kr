@@ -3,11 +3,11 @@ title: 쿼리 식(F#)
 description: 'F # 프로그래밍 언어에서 LINQ 쿼리 식 지원에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 6586d991dde550380d04c4d9831bb954eb94a715
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44184345"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45519874"
 ---
 # <a name="query-expressions"></a>쿼리 식
 

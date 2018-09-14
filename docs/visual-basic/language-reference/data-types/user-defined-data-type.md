@@ -24,11 +24,11 @@ helpviewer_keywords:
 - types [Visual Basic], user-defined
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
 ms.openlocfilehash: 1dac93145b6e11a0d149f03b43e1e0b28b770925
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44342279"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45509846"
 ---
 # <a name="user-defined-data-type"></a>사용자 정의 데이터 형식
 사용자가 정의한 형식으로 데이터를 저장 합니다. `Structure` 문은 형식을 정의 합니다.  

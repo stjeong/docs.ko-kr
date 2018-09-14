@@ -3,11 +3,11 @@ title: 지연 계산(F#)
 description: 'F # 지연 계산 앱 및 라이브러리의 성능을 향상 시킬 수 있습니다 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 8afe815f26978de96291a52973d54a9dbcc5eaf2
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44508428"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45529109"
 ---
 # <a name="lazy-computations"></a>지연 계산
 
