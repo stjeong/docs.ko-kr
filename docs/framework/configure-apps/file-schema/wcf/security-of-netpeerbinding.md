@@ -5,11 +5,11 @@ ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 45000554226fcde753041fca283bfc8b1eeba5ce
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44196571"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45561125"
 ---
 # <a name="ltsecuritygt-of-ltnetpeerbindinggt"></a>&lt;netPeerBinding&gt;의 &lt;security&gt;
 보안 설정을 정의 합니다 [ \<netPeerTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), 인증 유형 등 사용 및 보안 메시지 전송에 사용 합니다.  

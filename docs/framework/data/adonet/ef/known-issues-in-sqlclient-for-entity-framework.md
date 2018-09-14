@@ -3,11 +3,11 @@ title: Entity Framework용 SqlClient에서 알려진 문제
 ms.date: 03/30/2017
 ms.assetid: 48fe4912-4d0f-46b6-be96-3a42c54780f6
 ms.openlocfilehash: c1353444415ddd2305a73d14bacf1bb33a931929
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44708142"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45597487"
 ---
 # <a name="known-issues-in-sqlclient-for-entity-framework"></a>Entity Framework용 SqlClient에서 알려진 문제
 이 단원에서는 .NET Framework Data Provider for SQL Server(SqlClient)와 관련된 알려진 문제에 대해 설명합니다.  

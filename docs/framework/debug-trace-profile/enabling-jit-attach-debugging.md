@@ -8,11 +8,11 @@ ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: b92592500f0babf29891710cedf1228b0ddcb0e4
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44493669"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45587495"
 ---
 # <a name="enabling-jit-attach-debugging"></a>JIT 연결 디버깅 설정
 오류가 발생한 경우 JIT 연결 디버깅은 디버거를 프로세스에 연결하는 방법을 설명하는 데 사용되는 구문이고, 오류가 발생하지 않은 경우 특정 메서드 또는 함수에 의해 트리거될 수 있습니다.  

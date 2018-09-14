@@ -3,11 +3,11 @@ title: '명령줄 도구를 사용 하 여 F #을 사용 하 여 시작'
 description: '.NET Core CLI를 사용 하 여 모든 운영 체제 (Windows, macOs 또는 Linux)에서 F #에서 간단한 다중 프로젝트 솔루션을 빌드하는 방법에 알아봅니다.'
 ms.date: 03/26/2018
 ms.openlocfilehash: 8a82970f33c8bbe1b8cdd8fb6499b59b16d3cbf3
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44706871"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45569777"
 ---
 # <a name="get-started-with-f-with-the-net-core-cli"></a>.NET Core CLI와 함께 F # 시작
 

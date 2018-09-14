@@ -14,11 +14,11 @@ helpviewer_keywords:
 - declarations [Visual Basic], modules
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
 ms.openlocfilehash: 5628224a08fe5f12cf2a81b179c4998001174354
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44214110"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45585813"
 ---
 # <a name="module-statement"></a>Module 문
 모듈의 이름을 선언 하 고 변수, 속성, 이벤트 및 모듈을 구성 하는 프로시저의 정의 소개 합니다.  

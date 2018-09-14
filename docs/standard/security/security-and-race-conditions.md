@@ -14,11 +14,11 @@ ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 57ceaedc7c38ae70a0db5a7fd584a765a7474aff
-ms.sourcegitcommit: 67de6cb5dd66a19f2180ba7e4d7aecc697f8a963
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44339352"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45593168"
 ---
 # <a name="security-and-race-conditions"></a>보안 및 경합 상태
 다른 문제 영역을 보안 허점을 경합 상태에 의해 악용 가능성이 있습니다. 여러 가지 방법으로이 발생할 수 있습니다. 다음에 나오는 하위 항목은 개발자가 피해 야 하는 주요 문제 중 일부를 간략하게 설명 합니다.  

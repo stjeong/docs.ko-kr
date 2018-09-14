@@ -5,11 +5,11 @@ helpviewer_keywords:
 - XML Formatter
 ms.assetid: e0a2fe89-3534-48c8-aa3c-819862224571
 ms.openlocfilehash: ef1b01ff59fc32546dca8ed9c95f3a981ed408e3
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45509821"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45609413"
 ---
 # <a name="datacontractserializer-sample"></a>DataContractSerializer 샘플
 DataContractSerializer 샘플은 데이터 계약 클래스에 대한 일반 serialization 및 deserialization 서비스를 수행하는 <xref:System.Runtime.Serialization.DataContractSerializer>를 보여 줍니다. 이 샘플에서는 만듭니다는 `Record` 개체, 메모리 스트림으로 serialize 및 deserialize 된 메모리 스트림을 다시 다른 `Record` 개체의 사용을 보여 합니다 <xref:System.Runtime.Serialization.DataContractSerializer>. 그런 다음 이진 작성기로 `Record` 개체를 deserialize하여 이진 작성기가 serialization에 미치는 영향을 보여 줍니다.  

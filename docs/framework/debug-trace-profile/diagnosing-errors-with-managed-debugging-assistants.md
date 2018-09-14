@@ -32,11 +32,11 @@ ms.assetid: 76994ee6-9fa9-4059-b813-26578d24427c
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: b745fa6a78ab2a7ab0b3a94c9921883d3c56c1b7
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44269191"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45588513"
 ---
 # <a name="diagnose-errors-with-managed-debugging-assistants"></a>관리 디버깅 도우미를 사용 하 여 오류 진단
 

@@ -11,11 +11,11 @@ ms.assetid: a49058d2-0276-43a7-9502-04adddf857b2
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 6d68966f60c5039fd67195a03facc1586b9ed154
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44183264"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45591726"
 ---
 # <a name="names-of-namespaces"></a>네임스페이스의 이름
 으로 다른 명명 지침을 사용 하 여 목표 네임 스페이스의 이름을 지정할 때 만드는 것 충분 한 명확성 프레임 워크를 사용 하 여 즉시 무엇이 있는지 아는 네임 스페이스의 내용을 짧을 수 프로그래머입니다. 다음 템플릿 네임 스페이스 이름에 대 한 일반 규칙을 지정 합니다.  

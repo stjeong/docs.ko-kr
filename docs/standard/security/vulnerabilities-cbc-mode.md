@@ -5,11 +5,11 @@ ms.date: 06/12/2018
 author: blowdart
 ms.author: mairaw
 ms.openlocfilehash: 6d16b6849bfd4744f1828cda38a537f842243c1d
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45514419"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45594876"
 ---
 # <a name="timing-vulnerabilities-with-cbc-mode-symmetric-decryption-using-padding"></a>타이밍 취약점 패딩을 사용 하 여 CBC 모드 대칭적 암호 해독을
 

@@ -18,11 +18,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 49041031742332fbc275a9dbde91e640eb428c28
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "44756616"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45609647"
 ---
 # <a name="iclrstrongnamestrongnamesignatureverification-method"></a>ICLRStrongName::StrongNameSignatureVerification 메서드
 어셈블리 매니페스트에 제공 된 경로의 지정된 된 플래그에 따라 확인할 수 있는 강력한 이름 서명을 포함 되는지 여부를 나타내는 값을 가져옵니다.  

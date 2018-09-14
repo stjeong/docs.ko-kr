@@ -6,11 +6,11 @@ helpviewer_keywords:
 - menus
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
 ms.openlocfilehash: 03328b324399c7500f2cf3a8b6ab12c843115e29
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44195321"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45592593"
 ---
 # <a name="menustrip-control-windows-forms"></a>MenuStrip 컨트롤(Windows Forms)
 이 컨트롤은 응용 프로그램 명령을 그룹화하고 더 쉽게 액세스할 수 있도록 설정합니다.  

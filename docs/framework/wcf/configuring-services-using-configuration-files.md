@@ -5,11 +5,11 @@ helpviewer_keywords:
 - configuring services [WCF]
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
 ms.openlocfilehash: 904abff4f3cae5873fe3cc9705dee84f73e2a523
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44361536"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45591870"
 ---
 # <a name="configuring-services-using-configuration-files"></a>구성 파일을 사용하여 서비스 구성
 디자인 타임에 대신 배포 지점에서 서비스 동작 데이터 및 끝점을 제공 하는 유연성을 제공 구성 파일을 사용 하 여 Windows Communication Foundation (WCF) 서비스를 구성 합니다. 이 항목에서는 사용할 수 있는 기본 기술에 대해 간략하게 설명합니다.  
