@@ -1,16 +1,16 @@
 ---
 title: Visual Basic 시작
-ms.date: 08/10/2017
+ms.date: 09/10/2018
 helpviewer_keywords:
 - get started, Visual Basic
 - Visual Basic, get started
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
-ms.openlocfilehash: 373f5815e1ca466545da4e2368bdf55e944d28f8
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.openlocfilehash: c17b3e1849664bb1a5d56b60e8f4121fedfcdae3
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44367576"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45557775"
 ---
 # <a name="get-started-with-visual-basic"></a>Visual Basic 시작
 설명서의 이 섹션에서는 Visual Basic 응용 프로그램의 개발을 시작하는 데 도움이 되는 내용을 제공합니다.  
@@ -31,12 +31,6 @@ ms.locfileid: "44367576"
   
 [Visual Basic 프로그래머를 위한 추가 리소스](additional-resources.md)  
 일반적인 문제 해결 방법을 찾는 경우 참조할 수 있는 웹 사이트 및 뉴스 그룹의 목록을 제공합니다.  
-
-## <a name="develop-net-core-applications-with-visual-basic"></a>Visual Basic을 사용한 .NET Core 응용 프로그램 개발
-
-[Visual Studio 2017에서 .NET Core를 사용하여 Visual Basic Hello World 앱 빌드](../../core/tutorials/vb-with-visual-studio.md) 
-
-[Visual Studio 2017에서 Visual Basic 및 .NET Core로 클래스 라이브러리 빌드](../../core/tutorials/vb-library-with-visual-studio.md) 
 
 ## <a name="see-also"></a>참고 항목
  [Visual Basic 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)  

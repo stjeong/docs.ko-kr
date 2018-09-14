@@ -8,11 +8,11 @@ helpviewer_keywords:
 - keywords [C#], preprocessor directives
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
 ms.openlocfilehash: 1c0a97cabce347be0bc9367f3d090a1fc699db19
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44707871"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45529382"
 ---
 # <a name="c-preprocessor-directives"></a>C# 전처리기 지시문
 이 단원에서는 다음 C# 전처리기 지시문에 대한 정보를 제공합니다.
