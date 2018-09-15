@@ -6,11 +6,11 @@ helpviewer_keywords:
 - namespaces [C#]
 ms.assetid: b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a
 ms.openlocfilehash: c4011092a6c605137053b544d4b9f14cce2fdb4c
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45560284"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45624556"
 ---
 # <a name="namespaces-c-programming-guide"></a>네임스페이스(C# 프로그래밍 가이드)
 

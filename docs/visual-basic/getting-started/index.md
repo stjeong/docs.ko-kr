@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Visual Basic, get started
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
 ms.openlocfilehash: c17b3e1849664bb1a5d56b60e8f4121fedfcdae3
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45557775"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45638771"
 ---
 # <a name="get-started-with-visual-basic"></a>Visual Basic 시작
 설명서의 이 섹션에서는 Visual Basic 응용 프로그램의 개발을 시작하는 데 도움이 되는 내용을 제공합니다.  

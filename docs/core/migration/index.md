@@ -5,11 +5,11 @@ author: blackdwarf
 ms.author: mairaw
 ms.date: 07/19/2017
 ms.openlocfilehash: da1995ed3b77cb802d1f3d04e6d741809de20927
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44709427"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45597630"
 ---
 # <a name="migrating-net-core-projects-to-the-csproj-format"></a>.csproj 형식으로 .NET Core 프로젝트 마이그레이션
 
