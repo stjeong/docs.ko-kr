@@ -3,11 +3,11 @@ title: 생성자(F#)
 description: '정의 하 고 F #에서 생성자를 사용 하 여 만들고 클래스 및 구조체 개체를 초기화 하는 방법을 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: ff2463f890034cce0bbaa85d9a5c93e50427cd03
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45508436"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45658643"
 ---
 # <a name="constructors"></a>생성자
 
