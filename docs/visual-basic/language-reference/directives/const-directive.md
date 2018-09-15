@@ -16,41 +16,41 @@ helpviewer_keywords:
 - 'declaring constants [Visual Basic], #const directive'
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
 ms.openlocfilehash: 58d786c5e16b1e667f7c7c78b0f7857cd9711239
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44181367"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45646706"
 ---
-# <a name="const-directive"></a><span data-ttu-id="3cd05-102">#Const 지시문</span><span class="sxs-lookup"><span data-stu-id="3cd05-102">#Const Directive</span></span>
-<span data-ttu-id="3cd05-103">Visual Basic에 대 한 조건부 컴파일러 상수를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-103">Defines conditional compiler constants for Visual Basic.</span></span>  
+# <a name="const-directive"></a><span data-ttu-id="28013-102">#Const 지시문</span><span class="sxs-lookup"><span data-stu-id="28013-102">#Const Directive</span></span>
+<span data-ttu-id="28013-103">Visual Basic에 대 한 조건부 컴파일러 상수를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="28013-103">Defines conditional compiler constants for Visual Basic.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3cd05-104">구문</span><span class="sxs-lookup"><span data-stu-id="3cd05-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="28013-104">구문</span><span class="sxs-lookup"><span data-stu-id="28013-104">Syntax</span></span>  
   
 ```  
 #Const constname = expression  
 ```  
   
-## <a name="parts"></a><span data-ttu-id="3cd05-105">요소</span><span class="sxs-lookup"><span data-stu-id="3cd05-105">Parts</span></span>  
+## <a name="parts"></a><span data-ttu-id="28013-105">요소</span><span class="sxs-lookup"><span data-stu-id="28013-105">Parts</span></span>  
  `constname`  
- <span data-ttu-id="3cd05-106">필수.</span><span class="sxs-lookup"><span data-stu-id="3cd05-106">Required.</span></span> <span data-ttu-id="3cd05-107">정의 되는 상수의의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-107">Name of the constant being defined.</span></span>  
+ <span data-ttu-id="28013-106">필수.</span><span class="sxs-lookup"><span data-stu-id="28013-106">Required.</span></span> <span data-ttu-id="28013-107">정의 되는 상수의의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="28013-107">Name of the constant being defined.</span></span>  
   
  `expression`  
- <span data-ttu-id="3cd05-108">필수.</span><span class="sxs-lookup"><span data-stu-id="3cd05-108">Required.</span></span> <span data-ttu-id="3cd05-109">리터럴, 다른 조건부 컴파일러 상수를 제외한 모든 산술 또는 논리 연산자를 포함 하는 조합을 `Is`합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-109">Literal, other conditional compiler constant, or any combination that includes any or all arithmetic or logical operators except `Is`.</span></span>  
+ <span data-ttu-id="28013-108">필수.</span><span class="sxs-lookup"><span data-stu-id="28013-108">Required.</span></span> <span data-ttu-id="28013-109">리터럴, 다른 조건부 컴파일러 상수를 제외한 모든 산술 또는 논리 연산자를 포함 하는 조합을 `Is`합니다.</span><span class="sxs-lookup"><span data-stu-id="28013-109">Literal, other conditional compiler constant, or any combination that includes any or all arithmetic or logical operators except `Is`.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="3cd05-110">설명</span><span class="sxs-lookup"><span data-stu-id="3cd05-110">Remarks</span></span>  
- <span data-ttu-id="3cd05-111">조건부 컴파일러 상수는 항상 표시 되는 파일에 private입니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-111">Conditional compiler constants are always private to the file in which they appear.</span></span> <span data-ttu-id="3cd05-112">공용 컴파일러 상수를 사용 하 여 만들 수 없습니다는 `#Const` 지시문; 또는 사용자 인터페이스에만 만들 수 있습니다는 `/define` 컴파일러 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-112">You cannot create public compiler constants using the `#Const` directive; you can create them only in the user interface or with the `/define` compiler option.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="28013-110">설명</span><span class="sxs-lookup"><span data-stu-id="28013-110">Remarks</span></span>  
+ <span data-ttu-id="28013-111">조건부 컴파일러 상수는 항상 표시 되는 파일에 private입니다.</span><span class="sxs-lookup"><span data-stu-id="28013-111">Conditional compiler constants are always private to the file in which they appear.</span></span> <span data-ttu-id="28013-112">공용 컴파일러 상수를 사용 하 여 만들 수 없습니다는 `#Const` 지시문; 또는 사용자 인터페이스에만 만들 수 있습니다는 `/define` 컴파일러 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="28013-112">You cannot create public compiler constants using the `#Const` directive; you can create them only in the user interface or with the `/define` compiler option.</span></span>  
   
- <span data-ttu-id="3cd05-113">조건부 컴파일러 상수와 리터럴만 사용할 수 있습니다 `expression`합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-113">You can use only conditional compiler constants and literals in `expression`.</span></span> <span data-ttu-id="3cd05-114">사용 하 여 정의 되는 표준 상수를 사용 하 여 `Const` 오류가 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-114">Using a standard constant defined with `Const` causes an error.</span></span> <span data-ttu-id="3cd05-115">반대로 사용 하 여 정의 된 상수를 사용할 수 있습니다는 `#Const` 조건부 컴파일에 키워드입니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-115">Conversely, you can use constants defined with the `#Const` keyword only for conditional compilation.</span></span> <span data-ttu-id="3cd05-116">상수를 정의의 값이 있는 경우에서 `Nothing`합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-116">Constants can also be undefined, in which case they have a value of `Nothing`.</span></span>  
+ <span data-ttu-id="28013-113">조건부 컴파일러 상수와 리터럴만 사용할 수 있습니다 `expression`합니다.</span><span class="sxs-lookup"><span data-stu-id="28013-113">You can use only conditional compiler constants and literals in `expression`.</span></span> <span data-ttu-id="28013-114">사용 하 여 정의 되는 표준 상수를 사용 하 여 `Const` 오류가 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="28013-114">Using a standard constant defined with `Const` causes an error.</span></span> <span data-ttu-id="28013-115">반대로 사용 하 여 정의 된 상수를 사용할 수 있습니다는 `#Const` 조건부 컴파일에 키워드입니다.</span><span class="sxs-lookup"><span data-stu-id="28013-115">Conversely, you can use constants defined with the `#Const` keyword only for conditional compilation.</span></span> <span data-ttu-id="28013-116">상수를 정의의 값이 있는 경우에서 `Nothing`합니다.</span><span class="sxs-lookup"><span data-stu-id="28013-116">Constants can also be undefined, in which case they have a value of `Nothing`.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="3cd05-117">예제</span><span class="sxs-lookup"><span data-stu-id="3cd05-117">Example</span></span>  
- <span data-ttu-id="3cd05-118">이 예제에서는 `#Const` 지시문을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd05-118">This example uses the `#Const` directive.</span></span>  
+## <a name="example"></a><span data-ttu-id="28013-117">예제</span><span class="sxs-lookup"><span data-stu-id="28013-117">Example</span></span>  
+ <span data-ttu-id="28013-118">이 예제에서는 `#Const` 지시문을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="28013-118">This example uses the `#Const` directive.</span></span>  
   
  [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/const-directive_1.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="3cd05-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3cd05-119">See Also</span></span>  
- [<span data-ttu-id="3cd05-120">/define (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="3cd05-120">/define (Visual Basic)</span></span>](../../../visual-basic/reference/command-line-compiler/define.md)  
- [<span data-ttu-id="3cd05-121">#If...Then...#Else 지시문</span><span class="sxs-lookup"><span data-stu-id="3cd05-121">#If...Then...#Else Directives</span></span>](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [<span data-ttu-id="3cd05-122">Const 문</span><span class="sxs-lookup"><span data-stu-id="3cd05-122">Const Statement</span></span>](../../../visual-basic/language-reference/statements/const-statement.md)  
- [<span data-ttu-id="3cd05-123">조건부 컴파일</span><span class="sxs-lookup"><span data-stu-id="3cd05-123">Conditional Compilation</span></span>](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [<span data-ttu-id="3cd05-124">If...Then...Else 문</span><span class="sxs-lookup"><span data-stu-id="3cd05-124">If...Then...Else Statement</span></span>](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+## <a name="see-also"></a><span data-ttu-id="28013-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="28013-119">See Also</span></span>  
+ [<span data-ttu-id="28013-120">/define (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="28013-120">/define (Visual Basic)</span></span>](../../../visual-basic/reference/command-line-compiler/define.md)  
+ [<span data-ttu-id="28013-121">#If...Then...#Else 지시문</span><span class="sxs-lookup"><span data-stu-id="28013-121">#If...Then...#Else Directives</span></span>](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
+ [<span data-ttu-id="28013-122">Const 문</span><span class="sxs-lookup"><span data-stu-id="28013-122">Const Statement</span></span>](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [<span data-ttu-id="28013-123">조건부 컴파일</span><span class="sxs-lookup"><span data-stu-id="28013-123">Conditional Compilation</span></span>](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
+ [<span data-ttu-id="28013-124">If...Then...Else 문</span><span class="sxs-lookup"><span data-stu-id="28013-124">If...Then...Else Statement</span></span>](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
