@@ -17,18 +17,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 4311a77c9159428bf7beacc99d4479acb28b91b6
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45529664"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45625570"
 ---
-# <a name="getdemultiplexedstub-function"></a><span data-ttu-id="54751-103">GetDemultiplexedStub 함수</span><span class="sxs-lookup"><span data-stu-id="54751-103">GetDemultiplexedStub function</span></span>
-<span data-ttu-id="54751-104">클라이언트가 Windows 관리에서 비동기 호출을 수신하는 데 도움이 되는 개체 전달자 싱크를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="54751-104">Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.</span></span>
+# <a name="getdemultiplexedstub-function"></a><span data-ttu-id="da79f-103">GetDemultiplexedStub 함수</span><span class="sxs-lookup"><span data-stu-id="da79f-103">GetDemultiplexedStub function</span></span>
+<span data-ttu-id="da79f-104">클라이언트가 Windows 관리에서 비동기 호출을 수신하는 데 도움이 되는 개체 전달자 싱크를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="da79f-104">Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.</span></span>
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
-## <a name="syntax"></a><span data-ttu-id="54751-105">구문</span><span class="sxs-lookup"><span data-stu-id="54751-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="da79f-105">구문</span><span class="sxs-lookup"><span data-stu-id="da79f-105">Syntax</span></span>  
   
 ```  
 HRESULT GetDemultiplexedStub (
@@ -38,29 +38,29 @@ HRESULT GetDemultiplexedStub (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="54751-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="54751-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="da79f-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="da79f-106">Parameters</span></span>
 
 `pObject`  
-<span data-ttu-id="54751-107">[in] 클라이언트의 in process 구현에 대 한 포인터 [IWbemObjectSink](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectsink)합니다.</span><span class="sxs-lookup"><span data-stu-id="54751-107">[in] A pointer to the client's in-process implementation of [IWbemObjectSink](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectsink).</span></span>
+<span data-ttu-id="da79f-107">[in] 클라이언트의 in process 구현에 대 한 포인터 [IWbemObjectSink](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectsink)합니다.</span><span class="sxs-lookup"><span data-stu-id="da79f-107">[in] A pointer to the client's in-process implementation of [IWbemObjectSink](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectsink).</span></span>
 
 `isLocal`  
-<span data-ttu-id="54751-108">[in] 이벤트를 로컬 인지 여부를 나타내는 플래그입니다 (`true`)이 고, 그렇지 않으면 `false`합니다.</span><span class="sxs-lookup"><span data-stu-id="54751-108">[in] A flag that indicates whether the event is local (`true`); otherwise, `false`.</span></span>
+<span data-ttu-id="da79f-108">[in] 이벤트를 로컬 인지 여부를 나타내는 플래그입니다 (`true`)이 고, 그렇지 않으면 `false`합니다.</span><span class="sxs-lookup"><span data-stu-id="da79f-108">[in] A flag that indicates whether the event is local (`true`); otherwise, `false`.</span></span>
 
 `ppObject`  
-<span data-ttu-id="54751-109">[out] Windows 관리에서 비동기 호출을 수신할 클라이언트를 지원 하기 위해 개체 전달자 싱크.</span><span class="sxs-lookup"><span data-stu-id="54751-109">[out] A object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.</span></span>
+<span data-ttu-id="da79f-109">[out] Windows 관리에서 비동기 호출을 수신할 클라이언트를 지원 하기 위해 개체 전달자 싱크.</span><span class="sxs-lookup"><span data-stu-id="da79f-109">[out] A object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="54751-110">반환 값</span><span class="sxs-lookup"><span data-stu-id="54751-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="da79f-110">반환 값</span><span class="sxs-lookup"><span data-stu-id="da79f-110">Return value</span></span>
 
-<span data-ttu-id="54751-111">함수가 성공할 경우 반환 값은 `S_OK` (0).</span><span class="sxs-lookup"><span data-stu-id="54751-111">If the function succeeds, the return value is `S_OK` (0).</span></span>
+<span data-ttu-id="da79f-111">함수가 성공할 경우 반환 값은 `S_OK` (0).</span><span class="sxs-lookup"><span data-stu-id="da79f-111">If the function succeeds, the return value is `S_OK` (0).</span></span>
 
-<span data-ttu-id="54751-112">함수가 실패 한 경우 반환 값은 0이 아닌 오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="54751-112">If the function fails, the return value is a non-zero error code.</span></span> <span data-ttu-id="54751-113">오류 정보를 호출 합니다 [GetErrorInfo](geterrorinfo.md) 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="54751-113">To get extended error information, call the [GetErrorInfo](geterrorinfo.md) function.</span></span>
+<span data-ttu-id="da79f-112">함수가 실패 한 경우 반환 값은 0이 아닌 오류 코드입니다.</span><span class="sxs-lookup"><span data-stu-id="da79f-112">If the function fails, the return value is a non-zero error code.</span></span> <span data-ttu-id="da79f-113">오류 정보를 호출 합니다 [GetErrorInfo](geterrorinfo.md) 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="da79f-113">To get extended error information, call the [GetErrorInfo](geterrorinfo.md) function.</span></span>
     
-## <a name="requirements"></a><span data-ttu-id="54751-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="54751-114">Requirements</span></span>  
- <span data-ttu-id="54751-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="54751-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="da79f-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="da79f-114">Requirements</span></span>  
+ <span data-ttu-id="da79f-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="da79f-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="54751-116">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="54751-116">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="da79f-116">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="da79f-116">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="54751-117">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="54751-117">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="da79f-117">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="da79f-117">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="54751-118">참고자료</span><span class="sxs-lookup"><span data-stu-id="54751-118">See also</span></span>  
-[<span data-ttu-id="54751-119">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="54751-119">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="da79f-118">참고자료</span><span class="sxs-lookup"><span data-stu-id="da79f-118">See also</span></span>  
+[<span data-ttu-id="da79f-119">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="da79f-119">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
