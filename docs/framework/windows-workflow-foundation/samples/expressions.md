@@ -3,11 +3,11 @@ title: Expressions2
 ms.date: 03/30/2017
 ms.assetid: 43a85905-77b5-4893-bb38-1cb9b293d69d
 ms.openlocfilehash: e852b62e6d0b6b4b3ddc19b197902de5325310a1
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45569400"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45645843"
 ---
 # <a name="expressions"></a>식
 이 샘플에서는 워크플로에서 기본 식을 사용하는 방법을 보여 줍니다. 이 샘플은 가상 회사의 직원 두 명에 대한 기본 급여 통계를 계산하는 워크플로로 구성되어 있습니다. 두 개의 클래스(`Employee` 및 `SalaryStats`)가 Employee.cs와 SalaryStats.cs에 정의되어 있습니다. 이 두 클래스는 복합 형식의 변수 속성에 대한 단순 산술 연산 및 문자열 연산을 수행하는 방법을 보여 주는 워크플로에서 사용됩니다.  

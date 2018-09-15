@@ -9,11 +9,11 @@ helpviewer_keywords:
 - application settings [Windows Forms], creating
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72
 ms.openlocfilehash: 7a84fc85b42f2b78ccafcae3c815847633b9916d
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45508046"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45641497"
 ---
 # <a name="how-to-create-application-settings"></a>방법: 응용 프로그램 설정 만들기
 관리 코드를 사용하여 새 응용 프로그램 설정을 만들고, 이러한 설정이 런타임에 자동으로 로드 및 저장되도록 폼의 속성이나 폼의 컨트롤에 바인딩할 수 있습니다.  

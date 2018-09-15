@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5996ce41c80cb54c4fcb9104c2993c85bcc2b466
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45510236"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45641198"
 ---
 # <a name="deletemethod-function"></a>DeleteMethod 함수
 CIM 클래스 정의에서 지정된 된 메서드를 삭제합니다.

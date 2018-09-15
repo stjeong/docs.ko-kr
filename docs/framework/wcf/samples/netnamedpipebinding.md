@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Net Profile Named Pipe
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
 ms.openlocfilehash: d69d647b4fe4c38a0b2b355ae72cedfee6894f4b
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45587944"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45647686"
 ---
 # <a name="netnamedpipebinding"></a>NetNamedPipeBinding
 이 샘플에서는 동일한 시스템에서 프로세스 간 통신을 제공하는 `netNamedPipeBinding` 바인딩을 보여 줍니다. 이름이 지정된 파이프는 시스템 간에 작동하지 않습니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스입니다.  

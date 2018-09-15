@@ -10,11 +10,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 0346b70b4400c5f7a8d282d945e029701973dad1
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45518037"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45641562"
 ---
 # <a name="implementing-the-ui-automation-scrollitem-control-pattern"></a>UI 자동화 ScrollItem 컨트롤 패턴 구현
 > [!NOTE]

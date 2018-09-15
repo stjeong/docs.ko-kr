@@ -9,11 +9,11 @@ helpviewer_keywords:
 - service contracts [WCF], asynchronous operations
 ms.assetid: db8a51cb-67e6-411b-9035-e5821ed350c9
 ms.openlocfilehash: c2948cf76f7763eae51689973346965bc6c720a8
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45583744"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45647887"
 ---
 # <a name="synchronous-and-asynchronous-operations"></a>동기 및 비동기 작업
 이 항목에서는 비동기 서비스 작업의 구현 및 호출에 대해 설명합니다.  

@@ -3,11 +3,11 @@ title: F# 언어 참조
 description: '언어 토큰, 개념, 형식, 식 및 컴파일러 지원 구문 항목에 대 한이 참조에서 F # 언어 기능 정보를 찾아보십시오.'
 ms.date: 05/16/2016
 ms.openlocfilehash: adce37ee393673b7611ad24f385c8b8106f6ce86
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44710948"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45646417"
 ---
 # <a name="f-language-reference"></a>F# 언어 참조
 

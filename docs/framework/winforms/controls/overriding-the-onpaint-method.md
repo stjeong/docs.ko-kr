@@ -9,11 +9,11 @@ helpviewer_keywords:
 - OnPaint method [Windows Forms], overriding in Windows Forms custom controls
 ms.assetid: e9ca2723-0107-4540-bb21-4f5ffb4a9906
 ms.openlocfilehash: fbc0a82f82afcc59384246b58437d521d56d708b
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "44756277"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45646959"
 ---
 # <a name="overriding-the-onpaint-method"></a>OnPaint 메서드 재정의
 에 정의 된 이벤트를 재정의 하기 위한 기본 단계는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 동일 하 고 다음 목록에 요약 되어 있습니다.  

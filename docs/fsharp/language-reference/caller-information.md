@@ -3,11 +3,11 @@ title: '호출자 정보 (F #)'
 description: 메서드에서 호출자 정보를 가져오려면 호출자 정보 인수 특성을 사용 하는 방법에 설명 합니다.
 ms.date: 04/25/2017
 ms.openlocfilehash: 0f2f4b16804d9156d234cc29d1f72ebe80a5b556
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700900"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45646209"
 ---
 # <a name="caller-information"></a>호출자 정보
 

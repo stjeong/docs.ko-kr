@@ -4,11 +4,11 @@ description: 작성을 '복사 및 업데이트 레코드 expression' 복사는 
 author: ChrSteinert
 ms.date: 06/04/2016
 ms.openlocfilehash: d2b089e8a7fc5c7ee26139003e23d2eaa8a3174e
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44494072"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45638349"
 ---
 # <a name="copy-and-update-record-expressions"></a>레코드 식 복사 및 업데이트
 

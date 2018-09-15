@@ -3,11 +3,11 @@ title: 특성(F#)
 description: 'F # 특성 프로그래밍 구문에 적용할 메타 데이터를 사용 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 3e7f1d0ff383e1070b3db72e633f80ea37150548
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45513685"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45647952"
 ---
 # <a name="attributes"></a>특성
 

@@ -3,11 +3,11 @@ title: 함수를 고급 값으로 상승(F#)
 description: '함수는 F # 프로그래밍 언어에서 최고 수준의 상태로 승격 되는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 45b65ab2454a592d38c80fd367e7243635614727
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44195844"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45648540"
 ---
 # <a name="functions-as-first-class-values"></a>함수를 고급 값으로 상승
 

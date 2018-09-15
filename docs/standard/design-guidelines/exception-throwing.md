@@ -10,11 +10,11 @@ ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 9fbbe84811e3fa096b9e13c459143311bb75a198
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45583413"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45638443"
 ---
 # <a name="exception-throwing"></a>예외 Throw
 이 섹션에서 설명 하는 예외를 발생 시키는 지침 실행 오류의 의미를 정의 하는 것 필요 합니다. 된 구성원이 수행할 수 없습니다 실행 실패가 발생할 때마다 (어떤 멤버 이름을 의미 함)를 수행 하도록 설계 되었습니다. 예를 들어 경우는 `OpenFile` 메서드 호출자에 게 열려 있는 파일 핸들을 반환할 수 없습니다, 실행 실패로 간주 됩니다.  

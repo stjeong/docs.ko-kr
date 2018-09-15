@@ -3,11 +3,11 @@ title: 부울 연산자(F#)
 description: 'F # 프로그래밍 언어에서 사용할 수 있는 부울 연산자에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: faa181090efa7c4064a30b42d83afa4888e98b82
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45516635"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45638482"
 ---
 # <a name="boolean-operators"></a>부울 연산자
 

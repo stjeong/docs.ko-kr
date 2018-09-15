@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 2d45cf41-d8ae-4409-af3e-a96a7e476d85
 ms.openlocfilehash: ccf95ff250cc7c23b1ff981087de0f1310472880
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44368288"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45648823"
 ---
 # <a name="creating-a-datatable-from-a-dataview"></a>DataView에서 DataTable 만들기
 데이터 소스에서 데이터를 검색하여 이 데이터로 <xref:System.Data.DataTable>을 채웠으면 해당 데이터를 다시 검색하지 않고 반환된 데이터를 정렬하고 필터링하거나 제한할 수 있습니다. 이러한 작업은 <xref:System.Data.DataView> 클래스를 사용하여 수행할 수 있습니다. 또한 새로 생성 해야 하는 경우 <xref:System.Data.DataTable> 에서 <xref:System.Data.DataView>를 사용할 수는 <xref:System.Data.DataView.ToTable%2A> 새 모든 행과 열 또는 데이터의 하위 집합을 복사 하는 방법 <xref:System.Data.DataTable>합니다. <xref:System.Data.DataView.ToTable%2A> 메서드는 다음 작업을 위한 오버로드를 제공합니다.  
