@@ -3,11 +3,11 @@ title: 'Fixed 키워드 (F #)'
 description: "고정할 수 있으므로' ' 하는 방법으로 스택에 F #을 사용 하 여 컬렉션을 방지 하기 위해 로컬 'fixed' 키워드에 알아봅니다."
 ms.date: 04/24/2017
 ms.openlocfilehash: 1bf1b2ad67d2dd7f854e569cfca7c06e8aec7f4c
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/14/2018
-ms.locfileid: "45560375"
+ms.locfileid: "45624511"
 ---
 # <a name="the-fixed-keyword"></a>Fixed 키워드
 
