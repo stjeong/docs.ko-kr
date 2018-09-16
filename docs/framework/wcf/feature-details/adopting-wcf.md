@@ -3,11 +3,11 @@ title: Windows Communication Foundation 채택
 ms.date: 03/30/2017
 ms.assetid: 49ba71e2-9468-4082-84c5-cf8daf95e34a
 ms.openlocfilehash: 5773d2687eb06cfc562dbe25fa9b94864b1b3a49
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45587378"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45676602"
 ---
 # <a name="adopting-windows-communication-foundation"></a>Windows Communication Foundation 채택
 

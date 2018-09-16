@@ -10,11 +10,11 @@ helpviewer_keywords:
 - user input [Windows Forms], Windows Forms controls
 ms.assetid: 3de74dcf-fae3-42d0-92b5-bc04a61a6888
 ms.openlocfilehash: 3b15edfec25282d5a0b79ef48cabd2a27c694055
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558082"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45677177"
 ---
 # <a name="how-to-handle-user-input-events-in-windows-forms-controls"></a>방법: Windows Forms 컨트롤에서 사용자 입력 이벤트 처리
 이 예제에서는 Windows Forms 컨트롤에서 발생할 수 있는 대부분의 키보드, 마우스, 포커스 및 유효성 검사 이벤트를 처리하는 방법을 보여 줍니다. 포커스가 있을 경우 `TextBoxInput`이라는 텍스트 상자가 이벤트를 수신하며, 각 이벤트에 대한 정보가 이벤트 발생 순서대로 `TextBoxOutput`이라는 텍스트 상자에 기록됩니다. 응용 프로그램에는 보고할 이벤트를 필터링하는 데 사용할 수 있는 확인란 집합도 포함되어 있습니다.  

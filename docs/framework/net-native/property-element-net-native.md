@@ -5,11 +5,11 @@ ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 47ed75d377814a740edece2b6a69e44acbd8ef0c
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45527713"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45676813"
 ---
 # <a name="ltpropertygt-element-net-native"></a>&lt;속성&gt; 요소(.NET 네이티브)
 런타임 리플렉션 정책을 속성에 적용합니다.  

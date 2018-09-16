@@ -18,11 +18,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3e462d951475cc9333dd190d96668e2c2a129872
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45512909"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45685896"
 ---
 # <a name="ihosttaskmanagerreverseleaveruntime-method"></a>IHostTaskManager::ReverseLeaveRuntime 메서드
 컨트롤을 차례로 호출 된 관리 코드에서 관리 되지 않는 함수를 입력의 CLR (공용 언어 런타임)을 유지 하는 호스트에 알립니다.  

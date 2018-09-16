@@ -7,11 +7,11 @@ helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
 ms.openlocfilehash: c22599f50ac071245a1381d267f3f7cb66806174
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700052"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45685935"
 ---
 # <a name="collection-initializers-visual-basic"></a>컬렉션 이니셜라이저(Visual Basic)
 *컬렉션 이니셜라이저*는 컬렉션을 만들고 값의 초기 집합으로 채울 수 있도록 하는 약식 구문을 제공합니다. 컬렉션 이니셜라이저는 알려진 값(예: 메뉴 옵션 또는 범주 목록, 숫자 값의 초기 집합, 일 또는 월 이름과 같은 문자열의 정적 목록 또는 유효성 검사에 사용되는 상태 목록과 같은 지리적 위치)의 집합에서 컬렉션을 만드는 경우에 유용합니다.  

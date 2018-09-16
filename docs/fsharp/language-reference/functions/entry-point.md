@@ -3,11 +3,11 @@ title: 진입점(F#)
 description: '실행 공식적으로 시작 하는 실행 파일로 컴파일된 F # 프로그램에 대 한 진입점을 설정 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 298500931d49c891a7a243295333df3a9f5d413e
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45515213"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45675940"
 ---
 # <a name="entry-point"></a>진입점
 

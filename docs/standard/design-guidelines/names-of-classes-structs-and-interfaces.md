@@ -15,11 +15,11 @@ ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 0c56f840bc5ebd5070c9b686384751acab3f0203
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45519590"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45678453"
 ---
 # <a name="names-of-classes-structs-and-interfaces"></a>클래스, 구조체 및 인터페이스의 이름
 명명 지침을 따르는 일반 형식 이름에 적용 됩니다.  

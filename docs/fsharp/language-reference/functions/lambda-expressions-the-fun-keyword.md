@@ -3,11 +3,11 @@ title: '람다 식: fun 키워드(F#)'
 description: "F # '재미' 키워드를 사용 하 여 익명 함수는 람다 식을 정의 하는 방법에 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: a37757f6b7328cd348bbf13f058a6dbc881769cf
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45515290"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683099"
 ---
 # <a name="lambda-expressions-the-fun-keyword-f"></a>람다 식: fun 키워드(F#)
 

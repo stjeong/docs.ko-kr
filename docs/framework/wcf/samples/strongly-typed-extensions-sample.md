@@ -3,11 +3,11 @@ title: 강력한 형식 확장명 샘플
 ms.date: 03/30/2017
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
 ms.openlocfilehash: eccb0ce240d01ab8592a44daddcfa7aa3d2023fb
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45568425"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45678401"
 ---
 # <a name="strongly-typed-extensions-sample"></a>강력한 형식 확장명 샘플
 이 샘플에서는 예를 들기 위해 <xref:System.ServiceModel.Syndication.SyndicationFeed> 클래스를 사용하지만 이 샘플에 나온 패턴은 확장 데이터를 지원하는 모든 배포 클래스에서 사용할 수 있습니다.  

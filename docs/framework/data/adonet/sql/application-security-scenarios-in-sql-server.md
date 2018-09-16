@@ -3,11 +3,11 @@ title: SQL Server의 응용 프로그램 보안 시나리오
 ms.date: 03/30/2017
 ms.assetid: 0164f3a4-406e-4693-bec3-03c8e18b46d7
 ms.openlocfilehash: bf4f4adfd5f49bd210026e40bd5fa4e67da10d75
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44699113"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683072"
 ---
 # <a name="application-security-scenarios-in-sql-server"></a>SQL Server의 응용 프로그램 보안 시나리오
 안전한 SQL Server 클라이언트 응용 프로그램을 만드는 방법이 정확하게 한 가지만 존재하지는 않습니다. 모든 응용 프로그램은 요구 사항, 배포 환경 및 사용자 집단에 따라 고유합니다. 초기에 배포했을 때에는 비교적 안전했던 응용 프로그램도 시간이 지남에 따라 안전하지 못할 수 있습니다. 앞으로 생길 수 있는 위협을 정확히 예측하는 것은 불가능합니다.  

@@ -10,11 +10,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 7d089cf01f3cee0cac40c258e48de5e9f5f95df7
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45587560"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45677203"
 ---
 # <a name="ui-automation-support-for-the-tooltip-control-type"></a>ToolTip 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]

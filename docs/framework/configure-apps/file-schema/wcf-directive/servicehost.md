@@ -3,11 +3,11 @@ title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
 ms.openlocfilehash: 730b1188a95d0e35d7431d43884e867e5520585e
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44365084"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45679364"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 서비스 호스트를 생성하는 데 사용되는 팩터리를 호스트할 서비스 및 .svc 파일에 제공된 호스팅 코드에 액세스하거나 이를 컴파일하는 데 필요한 다른 프로그래밍 요소에 연결합니다.  

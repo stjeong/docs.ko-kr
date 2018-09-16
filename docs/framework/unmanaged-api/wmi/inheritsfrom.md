@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 4784e22d5a3eec031fbee00441958a62d66b52df
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45513299"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45674724"
 ---
 # <a name="inheritsfrom-function"></a>InheritsFrom 함수
 현재 클래스 또는 인스턴스가 지정된 부모 클래스에서 파생되는지 여부를 결정합니다.
