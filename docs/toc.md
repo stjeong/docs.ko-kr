@@ -82,7 +82,7 @@
 ### [Visual Studio for Mac을 사용하여 macOS에서 .NET Core 시작](core/tutorials/using-on-mac-vs.md)
 ### [Visual Studio for Mac을 사용하여 macOS에서 완전한 .NET Core 솔루션 빌드](core/tutorials/using-on-mac-vs-full-solution.md)
 ### [CLI 도구를 사용하여 .NET Core 시작](core/tutorials/using-with-xplat-cli.md)
-#### [.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트](core/tutorials/testing-with-cli.md)
+### [.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트](core/tutorials/testing-with-cli.md)
 ### [플랫폼 간 도구로 라이브러리 개발](core/tutorials/libraries.md)
 ### [ASP.NET Core 응용 프로그램 개발](core/tutorials/aspnet-core.md)
 ### [.NET Core 1.0에 대한 패키지 종속성 버전을 관리하는 방법](core/tutorials/managing-package-dependency-versions.md)
