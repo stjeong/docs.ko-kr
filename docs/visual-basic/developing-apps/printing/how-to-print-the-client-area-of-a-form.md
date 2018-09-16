@@ -5,11 +5,11 @@ helpviewer_keywords:
 - client area [Visual Basic], printing
 ms.assetid: c06c9c0e-bc07-48cd-9596-e29a2ff96236
 ms.openlocfilehash: b2f13d1ec151a5fd1967b522a601e0e19de04cbb
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45528159"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45689225"
 ---
 # <a name="how-to-print-the-client-area-of-a-form-visual-basic"></a>방법: 폼의 클라이언트 영역 인쇄(Visual Basic)
 <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> 구성 요소를 사용하면 <xref:System.Drawing.Printing.PrintDocument> 구성 요소를 사용하지 않고 폼 이미지를 빠르게 인쇄할 수 있습니다. 다음 절차에서는 제목 표시줄, 테두리 및 스크롤 막대 없이 폼의 클라이언트 영역만 인쇄하는 방법을 보여 줍니다.  
