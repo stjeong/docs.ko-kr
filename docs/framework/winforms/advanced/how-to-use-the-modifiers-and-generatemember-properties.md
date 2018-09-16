@@ -16,11 +16,11 @@ helpviewer_keywords:
 - Windows Forms, inheritance
 ms.assetid: 3381a5e4-e1a3-44e2-a765-a0b758937b85
 ms.openlocfilehash: 9bb6e6568822f3edcabf50a4fceb7cc6386f05ef
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45568763"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45666514"
 ---
 # <a name="how-to-use-the-modifiers-and-generatemember-properties"></a>방법: Modifiers 및 GenerateMember 속성 사용
 디자인 환경에서 두 개의 속성을 제공 구성 요소를 Windows Form에 넣을 때: `GenerateMember` 고 `Modifiers`입니다. `GenerateMember` 속성 Windows Forms 디자이너 구성 요소에 대 한 멤버 변수를 생성 하는 경우를 지정 합니다. `Modifiers` 속성은 해당 멤버 변수에 할당 하는 액세스 한정자입니다. 경우의 값을 `GenerateMember` 속성은 `false`의 값은 `Modifiers` 속성이 적용 되지 않습니다.  

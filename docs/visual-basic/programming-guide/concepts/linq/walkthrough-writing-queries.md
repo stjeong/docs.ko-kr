@@ -8,11 +8,11 @@ helpviewer_keywords:
 - writing LINQ queries [Visual Basic]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
 ms.openlocfilehash: 6c5f7d288d805a6a25afa9a5b32a4550aaa76ec3
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44275355"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45677268"
 ---
 # <a name="walkthrough-writing-queries-in-visual-basic"></a>연습: Visual Basic에서 쿼리 작성
 이 연습에서는 쓸 Visual Basic 언어 기능을 사용 하는 방법을 보여 줍니다. [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 쿼리 식입니다. 이 연습에서는 학생 개체의 목록에 쿼리를 만드는 방법, 쿼리를 실행 하는 방법 및 수정 하는 방법을 보여 줍니다. 쿼리 개체 이니셜라이저, 지역 형식 유추 및 익명 형식을 비롯 한 여러 기능을 통합 합니다.  

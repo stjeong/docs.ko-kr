@@ -3,11 +3,11 @@ title: CLR 사용자 정의 형식
 ms.date: 03/30/2017
 ms.assetid: 9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2
 ms.openlocfilehash: 4ea415a348375c52e42ddf26ea09a74e7de5e355
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45561086"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45673768"
 ---
 # <a name="clr-user-defined-types"></a>CLR 사용자 정의 형식
 Microsoft SQL Server에서는 Microsoft .NET Framework CLR(공용 언어 런타임)로 구현된 UDT(사용자 정의 형식)를 지원합니다. CLR은 SQL Server에 통합되어 있으며 이 메커니즘을 통해 데이터베이스의 형식 시스템을 확장할 수 있습니다. UDT는 SQL Server 데이터 형식 시스템에 대한 사용자 확장성 및 구조적 복합 형식을 정의할 수 있는 기능을 제공합니다.  

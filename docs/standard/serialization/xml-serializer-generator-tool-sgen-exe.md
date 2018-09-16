@@ -3,11 +3,11 @@ title: XML Serializer 생성기 도구(Sgen.exe)
 ms.date: 03/30/2017
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
 ms.openlocfilehash: e0fee890f86f4e377a9372d7e4c47ef78effc9fa
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44268421"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45668472"
 ---
 # <a name="xml-serializer-generator-tool-sgenexe"></a>XML Serializer 생성기 도구(Sgen.exe)
 XML Serializer 생성기에서 지정된 어셈블리의 형식에 대해 XML serialization 어셈블리를 만들면 지정된 형식의 개체를 serialize 또는 deserialize할 때 <xref:System.Xml.Serialization.XmlSerializer>의 시작 성능을 높일 수 있습니다.  

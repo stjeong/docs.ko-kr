@@ -5,11 +5,11 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
 ms.openlocfilehash: 17838381f42a760caa7fba7e09ab798c6284bccb
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45515668"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683205"
 ---
 # <a name="reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"></a>클라우드 액세스에 최적화 된 응용 프로그램에 기존.NET 앱을 현대화 하는 이유
 

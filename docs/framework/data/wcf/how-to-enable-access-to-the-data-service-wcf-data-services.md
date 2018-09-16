@@ -8,11 +8,11 @@ helpviewer_keywords:
 - WCF Data Services, configuring
 ms.assetid: 3d830bcd-32b4-4f26-9287-d58a071452c6
 ms.openlocfilehash: eb9d7cd8e62a73f49fd2b0f2fc2572b01109553b
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "44778541"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45666618"
 ---
 # <a name="how-to-enable-access-to-the-data-service-wcf-data-services"></a>방법: 데이터 서비스에 액세스할 수 있도록 설정(WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]에서는 데이터 서비스에서 노출하는 리소스에 대한 액세스 권한을 명시적으로 부여해야 합니다. 즉, 새 데이터 서비스를 만든 후 엔터티 집합으로 개별 리소스에 대한 액세스 권한을 명시적으로 제공해야 합니다. 이 항목에서는 읽기를 사용 하는 방법 및 쓰기 액세스의 다섯 엔터티를 완료 하면 만들어지는 Northwind 데이터 서비스에서 설정 된 [퀵 스타트](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)합니다. <xref:System.Data.Services.EntitySetRights> 열거형이 <xref:System.FlagsAttribute>를 사용하여 정의되기 때문에 논리 OR 연산자를 사용하여 단일 엔터티 집합에 여러 사용 권한을 지정할 수 있습니다.  

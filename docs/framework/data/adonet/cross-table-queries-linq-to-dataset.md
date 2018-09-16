@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 6819a16f-8656-41af-a54d-dfec0cb66366
 ms.openlocfilehash: 811d177b730a6a2160e37ef827a2456e6ac589e4
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45528846"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45668082"
 ---
 # <a name="cross-table-queries-linq-to-dataset"></a>크로스 테이블 쿼리(LINQ to DataSet)
 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에서는 단일 테이블 쿼리뿐 아니라 크로스 테이블 쿼리도 수행할 수 있습니다. 사용 하 여 이렇게를 *조인*합니다. 조인은 한 데이터 소스의 개체를 공통 특성(예: 제품 또는 연락처 ID)을 공유하는 다른 데이터 소스의 개체와 연결하는 것입니다. 개체 지향적 프로그래밍의 경우 각 개체에 다른 개체를 참조하는 멤버가 있으므로 개체 간의 관계를 탐색하기가 비교적 쉽습니다. 그러나 외부 데이터베이스 테이블에서는 관계를 탐색하기가 쉽지 않습니다. 데이터베이스 테이블에는 기본 제공 관계가 없습니다. 이러한 경우 조인 연산을 사용하여 각 소스의 요소를 연결할 수 있습니다. 예를 들어 제품 정보와 판매 정보가 들어 있는 두 테이블이 있는 경우 조인 연산을 사용하여 동일한 판매 주문에 대한 판매 정보와 제품을 연결할 수 있습니다.  

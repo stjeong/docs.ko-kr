@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ActiveX controls, adding to Toolbox
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
 ms.openlocfilehash: 8faa8fc86312df2f03ec7a70a488d0e7c12b394b
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44514570"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45668316"
 ---
 # <a name="how-to-work-with-activex-controls-visual-basic"></a>방법: ActiveX 컨트롤을 사용하여 작업(Visual Basic)
 ActiveX 컨트롤은 COM 구성 요소 또는 웹 페이지 또는 다른 사용자가 프로그래밍 하는 패키지에 포함 된 기능을 다시 사용 하려면 다른 응용 프로그램에 삽입할 수 있습니다 하는 개체입니다. Visual Basic 6.0 및 이전 버전에 대 한 개발 하는 ActiveX 컨트롤을 사용 하 여 기능을 추가 합니다 **도구 상자** Visual Studio의 합니다.  

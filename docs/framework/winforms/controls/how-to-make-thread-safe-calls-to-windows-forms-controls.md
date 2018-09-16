@@ -17,11 +17,11 @@ helpviewer_keywords:
 - controls [Windows Forms], multithreading
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
 ms.openlocfilehash: f2716db441380138e6058ec45d9ae9c07f0e21a7
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45527086"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45664724"
 ---
 # <a name="how-to-make-thread-safe-calls-to-windows-forms-controls"></a>방법: 스레드로부터 안전한 방식으로 Windows Forms 컨트롤 호출
 

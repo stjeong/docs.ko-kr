@@ -3,11 +3,11 @@ title: 관계 유추
 ms.date: 03/30/2017
 ms.assetid: 8fa86a9d-6545-4a9d-b1f5-58d9742179c7
 ms.openlocfilehash: 7dc3fb0c6098d636e640aaf52b72a404c1486492
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45516294"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45666852"
 ---
 # <a name="inferring-relationships"></a>관계 유추
 테이블로 유추되는 요소에 역시 테이블로 유추되는 자식 요소가 있으면 두 테이블 사이에 <xref:System.Data.DataRelation>이 만들어집니다. 새 열 이름 가진 **ParentTableName_Id** 부모 요소에 대해 만들어진 테이블과 자식 요소에 대해 생성 된 테이블에 추가 됩니다. 합니다 **ColumnMapping** id 열 속성에 설정할 **MappingType.Hidden**합니다. 열은 부모 테이블에 대 한 자동 증분 기본 키 되며 사용할지 합니다 **DataRelation** 두 테이블 간에 합니다. 추가 id 열의 데이터 형식은 **System.Int32**에 데이터 형식의 다른 모든 유추 된 열과 달리 **System.String**합니다. A <xref:System.Data.ForeignKeyConstraint> 사용 하 여 **DeleteRule** = **Cascade** 부모 테이블과 자식 테이블에 새 열을 사용 하 여도 생성 됩니다.  

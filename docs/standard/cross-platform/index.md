@@ -6,11 +6,11 @@ ms.assetid: b153baaa-130c-4169-860b-e580591de91e
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: cf3a3b984936cb4eb947d650cc8c63db5a9a8ea5
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45513914"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45666709"
 ---
 # <a name="developing-for-multiple-platforms-with-the-net-framework"></a>.NET Framework로 여러 플랫폼 개발
 .NET Framework 및 Visual Studio를 사용하여 Microsoft 플랫폼과 Microsoft 이외의 플랫폼 둘 모두에서 사용할 수 있는 앱을 개발할 수 있습니다.  

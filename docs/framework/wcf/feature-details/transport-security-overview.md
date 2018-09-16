@@ -8,11 +8,11 @@ ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
 author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 9a04b8aaf9c6263a8935099963aaa1dc8d9100fd
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45588672"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45664672"
 ---
 # <a name="transport-security-overview"></a>전송 보안 개요
 전송 보안 메커니즘 Windows Communication Foundation (WCF)에서 바인딩 및 사용 하는 전송에 따라 달라 집니다. 예를 들어 <xref:System.ServiceModel.WSHttpBinding> 클래스를 사용할 경우 전송은 HTTP이며, 전송 보안을 위한 기본 메커니즘은 HTTPS라고 알려진 HTTP를 통한 SSL(Secure Sockets Layer)입니다. 이 항목에서는 WCF 시스템 제공 바인딩에 사용 되는 주요 전송 보안 메커니즘을 설명 합니다.  
