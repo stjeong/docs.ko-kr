@@ -3,11 +3,11 @@ title: XML 네임스페이스 작업(C#)
 ms.date: 07/20/2015
 ms.assetid: 05cf4dc7-7b25-40f0-abc9-1bc35de4b48a
 ms.openlocfilehash: 4863794408adbfb8b51c4f125ee340eb718a5abe
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44269009"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45686039"
 ---
 # <a name="working-with-xml-namespaces-c"></a>XML 네임스페이스 작업(C#)
 이 단원의 항목에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]에서 네임스페이스를 지원하는 방법에 대해 설명합니다.  
