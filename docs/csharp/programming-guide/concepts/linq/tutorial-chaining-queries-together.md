@@ -2,12 +2,12 @@
 title: '자습서: 여러 쿼리 연결(C#)'
 ms.date: 07/20/2015
 ms.assetid: 44f54444-c4c5-4c23-9d19-986b957b8eda
-ms.openlocfilehash: 8411d8577c192e2aa1a43bea47644fe6bdc09e88
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cab012a6ae618bd731c26bc1a002c144b84d2169
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323712"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45609634"
 ---
 # <a name="tutorial-chaining-queries-together-c"></a>자습서: 여러 쿼리 연결(C#)
 이 자습서에서는 쿼리를 연결할 때의 처리 모델을 보여 줍니다. 쿼리 연결은 함수 변환을 작성할 때 핵심 부분을 차지합니다. 연결된 쿼리의 작동 방식을 정확히 이해해야 합니다.  
@@ -24,5 +24,6 @@ ms.locfileid: "33323712"
 |[중간 구체화(C#)](../../../../csharp/programming-guide/concepts/linq/intermediate-materialization.md)|중간 구체화의 의미를 식별하고 보여 줍니다.|  
 |[여러 표준 쿼리 연산자 연결(C#)](../../../../csharp/programming-guide/concepts/linq/chaining-standard-query-operators-together.md)|표준 쿼리 연산자의 지연 의미에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML의 순수 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)
+## <a name="see-also"></a>참고 항목
+
+- [XML의 순수 함수 변환(C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)

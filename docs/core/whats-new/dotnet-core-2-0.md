@@ -4,12 +4,12 @@ description: .NET Core에서 볼 수 있는 새로운 기능에 대해 알아봅
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/13/2017
-ms.openlocfilehash: 02aac2dab2b892927c0c98fae30bb287a6e24ad6
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 4be579f2000c86b3dad412b24589fa8e7024d2f0
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44191055"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45591765"
 ---
 # <a name="whats-new-in-net-core-20"></a>.NET Core 2.0의 새로운 기능
 
@@ -158,8 +158,8 @@ Live Unit Testing이 코드를 수정하려면 언제든지 자동으로 백그�
 
 - [마이크로 서비스 및 Docker 컨테이너](../../standard/microservices-architecture/index.md)
 - [ASP.NET을 사용하여 개발한 웹 응용 프로그램](../../standard/modern-web-apps-azure-architecture/index.md)
-- [Xamarin을 사용하는 모바일 응용 프로그램](/xamarin/xamarin-forms/enterprise-application-patterns/index.md)
-- [Azure에서 클라우드에 배포되는 응용 프로그램](/azure/architecture/reference-architectures/index.md)
+- [Xamarin을 사용하는 모바일 응용 프로그램](/xamarin/xamarin-forms/enterprise-application-patterns/index)
+- [Azure에서 클라우드에 배포되는 응용 프로그램](/azure/architecture/reference-architectures/index)
 
 ## <a name="see-also"></a>참고 항목
 

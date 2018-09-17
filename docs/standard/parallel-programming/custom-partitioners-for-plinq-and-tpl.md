@@ -11,11 +11,11 @@ ms.assetid: 96153688-9a01-47c4-8430-909cee9a2887
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5b4e835d01ac0e1249a9a4c71a3a9db25082fec1
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44267231"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45617677"
 ---
 # <a name="custom-partitioners-for-plinq-and-tpl"></a>PLINQ 및 TPL에 대한 사용자 지정 파티셔너
 데이터 소스에 대한 작업을 병렬화하기 위한 필수 단계 중 하나는 다중 스레드에서 동시에 액세스 가능한 여러 섹션으로 소스를 ‘분할’하는 것입니다. PLINQ 및 TPL(작업 병렬 라이브러리)은 병렬 쿼리 또는 <xref:System.Threading.Tasks.Parallel.ForEach%2A> 루프를 쓸 때 투명하게 작동하는 기본 파티셔너를 제공합니다. 더 높은 수준의 시나리오에서는 고유한 파티셔너를 연결할 수 있습니다.  

@@ -9,11 +9,11 @@ ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 0c038b66e4ed62d614a25e717c52fdcc9c5f9a23
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44208837"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45615536"
 ---
 # <a name="sosdll-sos-debugging-extension"></a>SOS.dll(SOS 디버깅 확장명)
 SOS 디버깅 확장명(SOS.dll)을 사용하면 내부 CLR(공용 언어 런타임) 환경에 대한 정보를 제공하여 관리되는 프로그램을 Windows 디버거(WinDbg.exe)와 Visual Studio에서 쉽게 디버깅할 수 있습니다. 이 도구를 사용하려면 프로젝트에 관리되지 않는 디버깅을 활성화해야 합니다. SOS.dll은 .NET Framework와 함께 자동으로 설치됩니다. Visual Studio에서 SOS.dll을 사용하려면 [WDK(Windows 드라이버 키트)](https://msdn.microsoft.com/windows/hardware/hh852362)를 설치합니다.  

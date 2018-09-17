@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8f58e17-2714-4821-802a-f8eb3b2baa62
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ded5c057b1c257e8bcf3c8427f5810720eaf0947
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fc3af01167fe97b701bdb0c7bc37af02d8e8a77c
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33582163"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45658589"
 ---
 # <a name="threadsuspend-garbage-collection-and-safe-points"></a>Thread.Suspend, 가비지 컬렉션, 안전한 시점
 스레드에서 <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType>를 호출하면 시스템에서 스레드 일시 중단이 요청되었음을 인식하고 스레드를 실제로 일시 중단하기 전에 안전 지점에 도달할 때까지 스레드가 실행되도록 합니다. 스레드의 안전 지점은 가비지 수집을 수행할 수 있는 실행 지점입니다.  
@@ -26,8 +26,9 @@ ms.locfileid: "33582163"
 > [!NOTE]
 >  가비지 수집을 수행하기 위해 런타임은 수집을 수행하는 스레드를 제외한 모든 스레드를 일시 중단해야 합니다. 일시 중단하기 전에 각 스레드를 안전 지점으로 가져와야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Thread>  
- <xref:System.GC>  
- [스레딩](../../../docs/standard/threading/index.md)  
- [자동 메모리 관리](../../../docs/standard/automatic-memory-management.md)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Threading.Thread>  
+- <xref:System.GC>  
+- [스레딩](../../../docs/standard/threading/index.md)  
+- [자동 메모리 관리](../../../docs/standard/automatic-memory-management.md)

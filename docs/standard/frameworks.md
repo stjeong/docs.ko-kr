@@ -6,12 +6,12 @@ ms.author: mairaw
 ms.date: 05/31/2018
 ms.custom: updateeachrelease
 ms.technology: dotnet-standard
-ms.openlocfilehash: 346eece8fdb391fd62b369db6ef65964fcd6e67a
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 76bf496e957022f4d97d3cf3f3975f334b1d5c45
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42934858"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45616749"
 ---
 # <a name="target-frameworks"></a>대상 프레임워크
 
@@ -131,10 +131,10 @@ public class MyClass
 
 ## <a name="see-also"></a>참고 항목
 
-[패키지, 메타패키지 및 프레임워크](../core/packages.md)  
-[플랫폼 간 도구로 라이브러리 개발](../core/tutorials/libraries.md)  
-[.NET Standard](net-standard.md)  
-[.NET Core 버전 관리](../core/versions/index.md)  
-[dotnet/standard GitHub repository](https://github.com/dotnet/standard)(dotnet/표준 GitHub 리포지토리)  
-[NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)(NuGet 도구 GitHub 리포지토리)  
-[Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)(.NET의 프레임워크 프로필)
+- [패키지, 메타패키지 및 프레임워크](../core/packages.md)  
+- [플랫폼 간 도구로 라이브러리 개발](../core/tutorials/libraries.md)  
+- [.NET Standard](net-standard.md)  
+- [.NET Core 버전 관리](../core/versions/index.md)  
+- [dotnet/standard GitHub repository](https://github.com/dotnet/standard)(dotnet/표준 GitHub 리포지토리)  
+- [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)(NuGet 도구 GitHub 리포지토리)  
+- [Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)(.NET의 프레임워크 프로필)

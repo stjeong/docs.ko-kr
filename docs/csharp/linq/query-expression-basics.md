@@ -4,11 +4,11 @@ description: 쿼리 식과 관련된 개념 소개
 ms.date: 11/30/2016
 ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
 ms.openlocfilehash: 68f338381e354f4944539d63ca3a3cc3500031c1
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44271405"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45625524"
 ---
 # <a name="query-expression-basics"></a>쿼리 식 기본 사항
 

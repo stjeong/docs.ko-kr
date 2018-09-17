@@ -5,11 +5,11 @@ helpviewer_keywords:
 - access keywords [C#]
 ms.assetid: 3b680d9c-0998-42df-8ba7-5783f7abda75
 ms.openlocfilehash: 7700c49a609a90faf9b3b8b90719a223952d7e9e
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44261709"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45666527"
 ---
 # <a name="access-keywords-c-reference"></a>액세스 키워드(C# 참조)
 이 섹션에서는 다음과 같은 액세스 키워드를 소개합니다.  

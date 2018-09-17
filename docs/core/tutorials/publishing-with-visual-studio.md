@@ -4,12 +4,13 @@ description: 게시하면 응용 프로그램을 실행하는 데 필요한 파�
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/05/2017
-ms.openlocfilehash: 11421c8820dd562ba1dbb5900ba1e9bf944b45d2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: vs-dotnet
+ms.openlocfilehash: e44ae69c9cd8f0767e369791737cef9b4c33f963
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33212133"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45593142"
 ---
 # <a name="publish-your-hello-world-application-with-visual-studio-2017"></a>Visual Studio 2017을 사용하여 Hello World 응용 프로그램 게시
 

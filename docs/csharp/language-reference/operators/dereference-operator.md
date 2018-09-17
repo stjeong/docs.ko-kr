@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -> operator [C#]
 ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
 ms.openlocfilehash: fb95e508ce1339868723bcc3178851e8c1355c1f
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44271249"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45609529"
 ---
 # <a name="-gt-operator-c-reference"></a>-&gt; 연산자(C# 참조)
 `->` 연산자는 포인터 역참조와 멤버 액세스를 결합합니다.  

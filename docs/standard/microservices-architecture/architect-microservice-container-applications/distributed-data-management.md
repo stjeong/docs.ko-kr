@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 4c514f3a7dc1fb01b2f1ed2dddc9d938c1101809
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 7574a28fc3e8eb3288a81fa5a7ad26f34f1a3eb9
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44268853"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45646222"
 ---
 # <a name="challenges-and-solutions-for-distributed-data-management"></a>분산 데이터 관리를 위한 과제 및 해결 방법
 
@@ -19,7 +19,7 @@ ms.locfileid: "44268853"
 
 먼저 응용 프로그램의 논리 도메인 모델 및 관련 데이터에 집중해야 합니다. 동일한 응용 프로그램 내에서 분리된 위치의 데이터와 다양한 컨텍스트를 식별해야 합니다. 각 컨텍스트에는 다양한 비즈니스 언어(용어)가 있을 수 있습니다. 컨텍스트는 독립적으로 정의하고 관리해야 합니다. 이러한 다양한 컨텍스트에서 사용되는 용어와 엔터티는 비슷하지만, 특정 컨텍스트에서 하나의 비즈니스 개념이 다른 컨텍스트에서 다른 용도로 사용되고 다른 이름을 가질 수도 있다는 것을 알 수 있습니다. 예를 들어 사용자는 ID 또는 멤버 자격 컨텍스트에서 사용자, CRM 컨텍스트에서 고객, 주문 컨텍스트에서 구매자 등등으로 참조할 수 있습니다.
 
-각 컨텍스트마다 다른 도메인이 있는 여러 응용 프로그램 컨텍스트 간에 경계를 식별하는 방법은 정확히 각 비즈니스 마이크로 서비스와 해당 도메인 모델 및 데이터에 대한 경계를 식별하는 방법입니다. 항상 이러한 마이크로 서비스 간의 결합을 최소화하려고 합니다. 이 가이드는 나중에 [각 마이크로 서비스에 대한 도메인 모델 경계 식별](#identifying-domain-model-boundaries-for-each-microservice) 섹션에서 이러한 식별 및 도메인 모델 디자인에 대해 자세히 설명합니다.
+각 컨텍스트마다 다른 도메인이 있는 여러 응용 프로그램 컨텍스트 간에 경계를 식별하는 방법은 정확히 각 비즈니스 마이크로 서비스와 해당 도메인 모델 및 데이터에 대한 경계를 식별하는 방법입니다. 항상 이러한 마이크로 서비스 간의 결합을 최소화하려고 합니다. 이 가이드는 나중에 [각 마이크로 서비스에 대한 도메인 모델 경계 식별](identify-microservice-domain-model-boundaries.md) 섹션에서 이러한 식별 및 도메인 모델 디자인에 대해 자세히 설명합니다.
 
 ## <a name="challenge-2-how-to-create-queries-that-retrieve-data-from-several-microservices"></a>과제 \#2: 여러 마이크로 서비스에서 데이터를 검색하는 쿼리를 만드는 방법
 
@@ -57,7 +57,7 @@ ms.locfileid: "44268853"
 
 ACID 방식 또는 2단계 커밋 트랜잭션은 마이크로 서비스 원칙에 위반되는 것이 아닙니다. 대부분의 NoSQL 데이터베이스(예: Azure Cosmos DB, MongoDB 등)는 2단계 커밋 트랜잭션을 지원하지 않습니다. 그러나 서비스와 데이터베이스 간의 데이터 일관성은 반드시 유지해야 합니다. 또한 이 과제는 특정 데이터가 중복될 필요가 있을 때(예: 카탈로그 마이크로 서비스 및 장바구니 마이크로 서비스에 제품의 이름 또는 설명이 있어야 할 때), 여러 마이크로 서비스에 변경 내용을 전파하는 방법에 대한 질문과 관련이 있습니다.
 
-이 문제에 적합한 해결 방법은 이벤트 기반 통신과 게시 및 구독 시스템을 통해 연결된 마이크로 서비스 간에 최종 일관성을 사용하는 것입니다. 이러한 항목은 이 가이드의 뒷부분에 나오는 [비동기 이벤트 기반 통신](#async_event_driven_communication) 섹션에서 설명합니다.
+이 문제에 적합한 해결 방법은 이벤트 기반 통신과 게시 및 구독 시스템을 통해 연결된 마이크로 서비스 간에 최종 일관성을 사용하는 것입니다. 이러한 항목은 이 가이드의 뒷부분에 나오는 [비동기 이벤트 기반 통신](asynchronous-message-based-communication.md#asynchronous-event-driven-communication) 섹션에서 설명합니다.
 
 ## <a name="challenge-4-how-to-design-communication-across-microservice-boundaries"></a>과제 \#4: 마이크로 서비스 경계 간에 통신을 설계하는 방법
 

@@ -6,12 +6,13 @@ ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs:
 - vb
-ms.openlocfilehash: ec01307ec438e7b7dce6b4b825952c110276305c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: vs-dotnet
+ms.openlocfilehash: 52bbae330afe4a9ea376c6388a06941f74f6606a
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33212868"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45591635"
 ---
 # <a name="building-a-class-library-with-visual-basic-and-net-core-in-visual-studio-2017"></a>Visual Studio 2017에서 Visual Basic 및 .NET Core로 클래스 라이브러리 빌드
 

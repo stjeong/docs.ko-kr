@@ -25,11 +25,11 @@ ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 16b12a1ab274a63b8d190278d6312d36a61efe16
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44207722"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45649386"
 ---
 # <a name="how-to-anticipate-out-of-space-conditions-with-isolated-storage"></a>방법: 격리된 저장소의 공간 부족 상태 예상
 격리된 저장소를 사용하는 코드는 격리된 저장소 파일 및 디렉터리가 있는 데이터 구획의 최대 크기를 지정하는 [할당량](../../../docs/standard/io/isolated-storage.md#quotas)에 의해 제한됩니다. 이 할당 한도는 보안 정책에서 정의하고 관리자가 구성할 수 있습니다. 데이터를 쓸 때 최대 허용 크기를 초과하면 <xref:System.IO.IsolatedStorage.IsolatedStorageException> 예외가 throw되고 작업이 실패합니다. 이를 통해 데이터 저장소가 가득 차서 응용 프로그램이 요청을 거부하는 문제를 발생시킬 수 있는 악성 서비스 거부 공격을 방지할 수 있습니다.  

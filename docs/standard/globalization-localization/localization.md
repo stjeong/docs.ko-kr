@@ -17,11 +17,11 @@ ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: ee7de15130644e63b17a6d067c5cce9088d199a0
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44185056"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45591267"
 ---
 # <a name="localization"></a>지역화
 지역화는 응용 프로그램에서 지원할 각 문화권에 맞는 지역화된 버전으로 응용 프로그램 리소스를 변환하는 프로세스입니다. [지역화 가능성 검토](../../../docs/standard/globalization-localization/localizability-review.md) 단계를 완료한 후에만 지역화 단계를 진행하여 전역화된 응용 프로그램이 지역화 준비가 되었는지 확인해야 합니다.  

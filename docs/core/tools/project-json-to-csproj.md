@@ -4,12 +4,12 @@ description: project.json 및 csproj e요소 간 매핑을 참조하세요.
 author: natemcmaster
 ms.author: mairaw
 ms.date: 03/13/2017
-ms.openlocfilehash: 369075f91c0d5ea6c7eb5d09ac2535c4e60f28f6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0079164470f87df665be6f9de62bc98d3fb51696
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518559"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45647371"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>project.json 및 csproj 속성 간 매핑
 
@@ -487,7 +487,7 @@ MSBuild에서 모든 프로젝트는 빌드 중 *이식 가능*하지만 독립 
 ```
 
 MSBuild에는 `owners` 요소에 대해 동일한 요소가 없습니다.
-`summary`의 경우, `summary` 값이 자동으로 해당 속성에 마이그레이션되지 않은 경우에도 속성이 [ `description` ](#-other-common-root-level-options) 요소로 매핑되므로 MSBuild `<Description>` 속성을 사용할 수 있습니다.
+`summary`의 경우, `summary` 값이 자동으로 해당 속성에 마이그레이션되지 않은 경우에도 속성이 [ `description` ](#other-common-root-level-options) 요소로 매핑되므로 MSBuild `<Description>` 속성을 사용할 수 있습니다.
 
 ## <a name="scripts"></a>스크립트
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 10d202bc-19e1-4b5c-bbf1-9a977322a9ca
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0b98fdcd425ae62aca0149df5136c28edc023bf0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1587b2c4d19833c615c5a10a2fe0d6b28e854aca
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591642"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45615026"
 ---
 # <a name="order-preservation-in-plinq"></a>PLINQ에서 순서 유지
 PLINQ에서 목표는 정확성을 유지하면서 성능을 최대화하는 것입니다. 쿼리는 가능한 한 빠르게 실행되지만 올바른 결과를 생성해야 합니다. 경우에 따라 정확성을 위해 소스 시퀀스의 순서를 유지해야 하지만 순서 지정의 계산 비용이 높을 수 있습니다. 따라서 기본적으로 PLINQ는 소스 시퀀스의 순서를 유지하지 않습니다. 이와 관련하여 PLINQ는 [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)]과 비슷하지만 순서를 유지하는 LINQ to Objects와는 다릅니다.  
@@ -122,6 +122,7 @@ PLINQ에서 목표는 정확성을 유지하면서 성능을 최대화하는 것
   
  순서가 지정되지 않은 결과는 순서가 활발히 바뀌지 않습니다. 특별한 순서 지정 논리가 적용되지 않습니다. 경우에 따라 순서가 지정되지 않은 쿼리가 소스 시퀀스의 순서를 유지할 수 있습니다. 인덱싱된 Select 연산자를 사용하는 쿼리의 경우 PLINQ는 출력 요소가 인덱스 증가 순서로 표시되도록 보장하지만 어떤 인덱스가 어떤 요소에 할당되는지에 대한 보장은 하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [PLINQ(병렬 LINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)

@@ -6,12 +6,13 @@ ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs:
 - vb
-ms.openlocfilehash: 63efffbb2c1ab9354f83e9ecc102bc205cdb9360
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: vs-dotnet
+ms.openlocfilehash: d6b58e491b2857f83fe9b2e55ed35630c42b79ed
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33217362"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45596532"
 ---
 # <a name="build-a-visual-basic-hello-world-application-with-net-core-in-visual-studio-2017"></a>Visual Studio 2017에서 .NET Core를 사용하여 Visual Basic Hello World 응용 프로그램 빌드
 
