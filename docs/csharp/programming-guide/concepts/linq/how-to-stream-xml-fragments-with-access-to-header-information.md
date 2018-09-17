@@ -3,11 +3,11 @@ title: '방법: 헤더 정보에 액세스하여 XML 조각 스트리밍(C#)'
 ms.date: 07/20/2015
 ms.assetid: 7f242770-b0c7-418d-894b-643215e1f8aa
 ms.openlocfilehash: 9c141b21a009f836fbf385c1f4179e288ec6c3b5
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45597396"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45698278"
 ---
 # <a name="how-to-stream-xml-fragments-with-access-to-header-information-c"></a>방법: 헤더 정보에 액세스하여 XML 조각 스트리밍(C#)
 예상할 수 없는 큰 크기의 XML 파일을 읽고 응용 프로그램의 메모리 사용 공간이 예상 가능하도록 응용 프로그램을 작성해야 하는 경우가 있습니다. XML 트리를 큰 XML 파일로 채우려는 경우 파일 크기에 비례하여 메모리가 사용되므로 메모리 사용량이 지나치게 증가하게 됩니다. 따라서 스트리밍 기법을 대신 사용해야 합니다.  

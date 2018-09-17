@@ -15,11 +15,11 @@ ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: ddf8f52ab98d0188235d8c9f97293adced4bfe90
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45649396"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45698317"
 ---
 # <a name="application-domains"></a>응용 프로그램 도메인
 운영 체제와 런타임 환경은 일반적으로 응용 프로그램 간에 몇 가지 형식의 격리를 제공합니다. 예를 들어 Windows에서는 프로세스를 사용하여 응용 프로그램을 격리합니다. 격리는 한 응용 프로그램에서 실행 중인 코드가 서로 관련 없는 다른 응용 프로그램에 나쁜 영향을 주지 않도록 하기 위해 필요합니다.  
