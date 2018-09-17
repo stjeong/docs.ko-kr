@@ -9,16 +9,16 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: 244315b5df4200524685bc5b9fb75a0d7fd9b39e
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44185037"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45609046"
 ---
-# <a name="how-to-override-a-global-proxy-selection"></a><span data-ttu-id="eb2b9-102">방법: 전역 프록시 선택 재정의</span><span class="sxs-lookup"><span data-stu-id="eb2b9-102">How to: Override a Global Proxy Selection</span></span>
-<span data-ttu-id="eb2b9-103">이 예제에서는 글로벌 프록시 선택을 포트 80의 `alternateproxy`라는 프록시 서버로 재정의하는 **WebRequest**를 `www.contoso.com`에 보냅니다.</span><span class="sxs-lookup"><span data-stu-id="eb2b9-103">This example sends a **WebRequest** to `www.contoso.com` that overrides the global proxy selection with a proxy server named `alternateproxy` on port 80.</span></span>  
+# <a name="how-to-override-a-global-proxy-selection"></a><span data-ttu-id="50a9b-102">방법: 전역 프록시 선택 재정의</span><span class="sxs-lookup"><span data-stu-id="50a9b-102">How to: Override a Global Proxy Selection</span></span>
+<span data-ttu-id="50a9b-103">이 예제에서는 글로벌 프록시 선택을 포트 80의 `alternateproxy`라는 프록시 서버로 재정의하는 **WebRequest**를 `www.contoso.com`에 보냅니다.</span><span class="sxs-lookup"><span data-stu-id="50a9b-103">This example sends a **WebRequest** to `www.contoso.com` that overrides the global proxy selection with a proxy server named `alternateproxy` on port 80.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="eb2b9-104">예</span><span class="sxs-lookup"><span data-stu-id="eb2b9-104">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="50a9b-104">예</span><span class="sxs-lookup"><span data-stu-id="50a9b-104">Example</span></span>  
   
 ```csharp  
 WebRequest req = WebRequest.Create("http://www.contoso.com/");  
@@ -30,11 +30,11 @@ Dim req As WebRequest = WebRequest.Create("http://www.contoso.com/")
 req.Proxy = New WebProxy("http://alternateproxy:80/")  
 ```  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="eb2b9-105">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="eb2b9-105">Compiling the Code</span></span>  
- <span data-ttu-id="eb2b9-106">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb2b9-106">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="50a9b-105">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="50a9b-105">Compiling the Code</span></span>  
+ <span data-ttu-id="50a9b-106">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="50a9b-106">This example requires:</span></span>  
   
--   <span data-ttu-id="eb2b9-107">**System.Net** 네임스페이스에 대한 [`using` 지시문](~/docs/csharp/language-reference/keywords/using-directive.md)</span><span class="sxs-lookup"><span data-stu-id="eb2b9-107">A [`using` directive](~/docs/csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.</span></span>  
+-   <span data-ttu-id="50a9b-107">**System.Net** 네임스페이스에 대한 [`using` 지시문](~/docs/csharp/language-reference/keywords/using-directive.md)</span><span class="sxs-lookup"><span data-stu-id="50a9b-107">A [`using` directive](~/docs/csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="eb2b9-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="eb2b9-108">See Also</span></span>  
- [<span data-ttu-id="eb2b9-109">응용 프로그램 프로토콜 사용</span><span class="sxs-lookup"><span data-stu-id="eb2b9-109">Using Application Protocols</span></span>](../../../docs/framework/network-programming/using-application-protocols.md)  
- [<span data-ttu-id="eb2b9-110">프록시를 통해 인터넷 액세스</span><span class="sxs-lookup"><span data-stu-id="eb2b9-110">Accessing the Internet Through a Proxy</span></span>](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+## <a name="see-also"></a><span data-ttu-id="50a9b-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="50a9b-108">See Also</span></span>  
+ [<span data-ttu-id="50a9b-109">응용 프로그램 프로토콜 사용</span><span class="sxs-lookup"><span data-stu-id="50a9b-109">Using Application Protocols</span></span>](../../../docs/framework/network-programming/using-application-protocols.md)  
+ [<span data-ttu-id="50a9b-110">프록시를 통해 인터넷 액세스</span><span class="sxs-lookup"><span data-stu-id="50a9b-110">Accessing the Internet Through a Proxy</span></span>](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
