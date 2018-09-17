@@ -18,16 +18,16 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: d5fd96f390b0bba60d1b95d20273bbf670208d41
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597674"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45745579"
 ---
-# <a name="imetadatadispenserexopenscopeonitypeinfo-method"></a><span data-ttu-id="b8ac9-102">IMetaDataDispenserEx::OpenScopeOnITypeInfo 메서드</span><span class="sxs-lookup"><span data-stu-id="b8ac9-102">IMetaDataDispenserEx::OpenScopeOnITypeInfo Method</span></span>
-<span data-ttu-id="b8ac9-103">이 메서드가 구현되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-103">This method is not implemented.</span></span> <span data-ttu-id="b8ac9-104">를 호출 하는 경우 E_NOTIMPL을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-104">If called, it returns E_NOTIMPL.</span></span>  
+# <a name="imetadatadispenserexopenscopeonitypeinfo-method"></a><span data-ttu-id="38d01-102">IMetaDataDispenserEx::OpenScopeOnITypeInfo 메서드</span><span class="sxs-lookup"><span data-stu-id="38d01-102">IMetaDataDispenserEx::OpenScopeOnITypeInfo Method</span></span>
+<span data-ttu-id="38d01-103">이 메서드가 구현되지 않았습니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-103">This method is not implemented.</span></span> <span data-ttu-id="38d01-104">를 호출 하는 경우 E_NOTIMPL을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-104">If called, it returns E_NOTIMPL.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b8ac9-105">구문</span><span class="sxs-lookup"><span data-stu-id="b8ac9-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="38d01-105">구문</span><span class="sxs-lookup"><span data-stu-id="38d01-105">Syntax</span></span>  
   
 ```  
 HRESULT OpenScopeOnITypeInfo (  
@@ -38,28 +38,28 @@ HRESULT OpenScopeOnITypeInfo (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="b8ac9-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="b8ac9-106">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="38d01-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="38d01-106">Parameters</span></span>  
  `pITI`  
- <span data-ttu-id="b8ac9-107">[in] 에 대 한 포인터를 [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 를 범위를 열 형식 정보를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-107">[in] Pointer to an [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.</span></span>  
+ <span data-ttu-id="38d01-107">[in] 에 대 한 포인터를 [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 를 범위를 열 형식 정보를 제공 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-107">[in] Pointer to an [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.</span></span>  
   
  `dwOpenFlags`  
- <span data-ttu-id="b8ac9-108">[in] 오픈 모드 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-108">[in] The open mode flags.</span></span>  
+ <span data-ttu-id="38d01-108">[in] 오픈 모드 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-108">[in] The open mode flags.</span></span>  
   
  `riid`  
- <span data-ttu-id="b8ac9-109">[in] 원하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-109">[in] The desired interface.</span></span>  
+ <span data-ttu-id="38d01-109">[in] 원하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-109">[in] The desired interface.</span></span>  
   
  `ppIUnk`  
- <span data-ttu-id="b8ac9-110">[out] 반환 되는 인터페이스에 대 한 포인터에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-110">[out] Pointer to a pointer to the returned interface.</span></span>  
+ <span data-ttu-id="38d01-110">[out] 반환 되는 인터페이스에 대 한 포인터에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-110">[out] Pointer to a pointer to the returned interface.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="b8ac9-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="b8ac9-111">Requirements</span></span>  
- <span data-ttu-id="b8ac9-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b8ac9-112">**Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="38d01-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="38d01-111">Requirements</span></span>  
+ <span data-ttu-id="38d01-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="38d01-112">**Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="b8ac9-113">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="b8ac9-113">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="38d01-113">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="38d01-113">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="b8ac9-114">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="b8ac9-114">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="38d01-114">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="38d01-114">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="b8ac9-115">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b8ac9-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="38d01-115">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="38d01-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b8ac9-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b8ac9-116">See Also</span></span>  
- [<span data-ttu-id="b8ac9-117">IMetaDataDispenserEx 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b8ac9-117">IMetaDataDispenserEx Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
- [<span data-ttu-id="b8ac9-118">IMetaDataDispenser 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b8ac9-118">IMetaDataDispenser Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+## <a name="see-also"></a><span data-ttu-id="38d01-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="38d01-116">See Also</span></span>  
+ [<span data-ttu-id="38d01-117">IMetaDataDispenserEx 인터페이스</span><span class="sxs-lookup"><span data-stu-id="38d01-117">IMetaDataDispenserEx Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
+ [<span data-ttu-id="38d01-118">IMetaDataDispenser 인터페이스</span><span class="sxs-lookup"><span data-stu-id="38d01-118">IMetaDataDispenser Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
