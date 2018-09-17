@@ -8,12 +8,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: e043903647075587d1e7eec21c9a7b04f596dbf6
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 47e066f8eb7402fedabc70cf1e3b4a1bb974ff62
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37937051"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43504694"
 ---
 # <a name="lambda-expressions-c-programming-guide"></a>람다 식(C# 프로그래밍 가이드)
 
@@ -78,6 +78,7 @@ namespace ConsoleApplication1
 ```csharp
 (int x, string s) => s.Length > x
 ```
+ 입력 매개 변수 형식은 모두 명시적이거나 암시적이어야 합니다. 그렇지 않으면 C#이 [CS0748](../../misc/cs0748.md) 컴파일러 오류를 생성합니다.
 
  입력 매개 변수가 0개이면 다음과 같이 빈 괄호를 지정합니다.  
   
@@ -273,11 +274,12 @@ class Test
 ## <a name="featured-book-chapter"></a>중요 설명서 장  
  [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://msdn.microsoft.com/library/orm-9780596516109-03-09.aspx) 의 [Delegates, Events, and Lambda Expressions](https://msdn.microsoft.com/library/orm-9780596516109-03.aspx)  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [LINQ(Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)  
- [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
- [is](../../../csharp/language-reference/keywords/is.md)  
- [식 트리](../../../csharp/programming-guide/concepts/expression-trees/index.md)  
- [Visual Studio 2008 C# 샘플(LINQ 샘플 쿼리 파일 및 XQuery 프로그램 참조)](http://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)  
- [재귀 람다 식](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [LINQ(Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)  
+- [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [is](../../../csharp/language-reference/keywords/is.md)  
+- [식 트리](../../../csharp/programming-guide/concepts/expression-trees/index.md)  
+- [Visual Studio 2008 C# 샘플(LINQ 샘플 쿼리 파일 및 XQuery 프로그램 참조)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)  
+- [재귀 람다 식](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)

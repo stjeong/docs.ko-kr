@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, operators
 - operators [C#], about operators
 ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
-ms.openlocfilehash: 76371985e340945793310247ec48d9b0cb747aed
-ms.sourcegitcommit: 43924acbdbb3981d103e11049bbe460457d42073
+ms.openlocfilehash: 025510782551c058c3b80eff3045138476e031b9
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34457932"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43514187"
 ---
 # <a name="operators-c-programming-guide"></a>연산자(C# 프로그래밍 가이드)
 C#에서 *연산자* 는 식 또는 문에서 하나 이상의 *피연산자* 에 적용되는 프로그램 요소입니다. 증가 연산자(`++`)나 `new`같이 피연산자 하나를 사용하는 연산자를 *단항* 연산자라고 합니다. 산술 연산자(`+`,`-`,`*`,`/`) 같이 피연산자 두 개를 사용하는 연산자를 *이항* 연산자라고 합니다. 조건 연산자(`?:`)는 피연산자 세 개를 사용하며 이는 C#에서 유일한 삼진 연산자입니다.  
@@ -123,7 +123,7 @@ C#에서 *연산자* 는 식 또는 문에서 하나 이상의 *피연산자* �
 |식|설명|  
 |----------------|-----------------|  
 |[=](../../../csharp/language-reference/operators/assignment-operator.md)|할당|  
-|x op= y|복합 할당. 다음 연산자를 지원합니다. [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [!=](../../../csharp/language-reference/operators/not-equal-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
+|x op= y|복합 할당. [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [^=](../../../csharp/language-reference/operators/xor-assignment-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md) 연산자를 지원합니다.|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|익명 함수(람다 식)|  
   
 ## <a name="associativity"></a>결합성  
@@ -163,11 +163,12 @@ a = (b = c);
 |`a = (b + c) * (d - e)`|a, b, c, +, d, e, -, *, =|  
   
 ## <a name="operator-overloading"></a>연산자 오버로드  
- 사용자 지정 클래스 및 구조체에서 연산자의 동작을 변경할 수 있습니다. 이러한 과정을 *연산자 오버로드*라고 합니다. 자세한 내용은 [오버로드할 수 있는 연산자](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)를 참조하세요.  
+ 사용자 지정 클래스 및 구조체에서 연산자의 동작을 변경할 수 있습니다. 이러한 과정을 *연산자 오버로드*라고 합니다. 자세한 내용은 [오버로드할 수 있는 연산자](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) 및 [연산자](../../../csharp/language-reference/keywords/operator.md) 키워드 문서를 참조하세요.  
   
 ## <a name="related-sections"></a>관련 단원  
  자세한 내용은 [연산자 키워드](../../../csharp/language-reference/keywords/operator-keywords.md) 및 [C# 연산자](../../../csharp/language-reference/operators/index.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [문, 식, 연산자](../../../csharp/programming-guide/statements-expressions-operators/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [문, 식, 연산자](../../../csharp/programming-guide/statements-expressions-operators/index.md)

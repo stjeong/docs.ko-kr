@@ -6,12 +6,12 @@ f1_keywords:
 - in_CSharpKeyword
 helpviewer_keywords:
 - in keyword [C#]
-ms.openlocfilehash: b9abedb72e04cb36273b48bb609fe8e410872f8b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 04449d99fd3e1b573333bc11a9766e9809b44785
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43415438"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44259716"
 ---
 # <a name="in-c-reference"></a>in(C# 참조)
 
@@ -20,6 +20,7 @@ ms.locfileid: "43415438"
 - 제네릭 인터페이스와 대리자의 [제네릭 형식 매개 변수](in-generic-modifier.md)
 - 값이 아닌 참조로 메서드에 인수를 전달할 수 있도록 하는 [매개 변수 한정자](in-parameter-modifier.md)로 사용
 - [foreach](foreach-in.md) 문
+- LINQ 쿼리 식의 [from 절](from-clause.md).
 - LINQ 쿼리 식의 [join 절](join-clause.md)
   
 ## <a name="see-also"></a>참고 항목

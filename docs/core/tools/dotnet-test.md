@@ -4,12 +4,12 @@ description: dotnet test 명령은 지정된 프로젝트에서 단위 테스트
 author: mairaw
 ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 2bee78ca44026f28c51fac3bcf87d976b53e48a7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 7946196b27489870da1c16b15cbf5f078ae89c61
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43390692"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44137202"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -251,6 +251,10 @@ dotnet test [-h|--help]
 `test1` 프로젝트에서 테스트를 실행합니다.
 
 `dotnet test ~/projects/test1/test1.csproj`
+
+현재 디렉터리의 프로젝트에서 테스트를 실행하고 trx 형식으로 테스트 결과 파일을 생성합니다.
+
+`dotnet test --logger:trx`
 
 ## <a name="filter-option-details"></a>필터 옵션 세부 정보
 

@@ -12,12 +12,12 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 8342f1389718eb41d1138e0bdd166530c1f2a10e
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 0efef54abd1da9631b5a560b49c6587d726e9193
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933607"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43861304"
 ---
 # <a name="file-path-formats-on-windows-systems"></a>Windows 시스템의 파일 경로 형식
 
@@ -117,7 +117,7 @@ Windows API에 전달되는 거의 모든 경로는 정규화됩니다. 정규�
 - 상대 디렉터리 구성 요소(현재 디렉터리의 경우 `.` 및 부모 디렉터리의 경우 `..`)를 평가합니다.
 - 특정 문자를 잘라냅니다.
 
-이 정규화는 암시적으로 일어나지만 [GetFullPathName() 함수](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx) 호출을 래핑하는 <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> 메서드를 호출하여 명시적으로 수행할 수도 있습니다. 또한 P/Invoke를 사용하여 Windows [GetFullPathName() 함수](https://msdn.microsoft.com/library/windows/desktop/aa364963(v=vs.85).aspx)를 직접 호출할 수도 있습니다. 다음을 호출할 수도 있음 
+이 정규화는 암시적으로 일어나지만 [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx) 호출을 래핑하는 <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> 메서드를 호출하여 명시적으로 수행할 수도 있습니다. 또한 P/Invoke를 사용하여 Windows [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx)를 직접 호출할 수도 있습니다. 다음을 호출할 수도 있음 
 
 ### <a name="identifying-the-path"></a>경로 식별
 

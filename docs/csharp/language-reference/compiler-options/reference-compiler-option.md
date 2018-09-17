@@ -13,12 +13,12 @@ helpviewer_keywords:
 - public type information [C#]
 - -reference compiler option [C#]
 ms.assetid: 8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4
-ms.openlocfilehash: 76a53d6adcf4c55faa57c25f851e46dd4c2c6c22
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 131cdf62917ab2fc8d564b85c30d13c8971e5809
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43393213"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44213717"
 ---
 # <a name="-reference-c-compiler-options"></a>-reference(C# 컴파일러 옵션)
 **-reference** 옵션을 사용하면 컴파일러가 지정된 파일의 [public](../../../csharp/language-reference/keywords/public.md) 형식 정보를 현재 프로젝트로 가져오므로 지정된 어셈블리 파일의 메타데이터를 참조할 수 있습니다.  
@@ -67,10 +67,12 @@ ms.locfileid: "43393213"
  이 예제에서는 [extern 별칭](../../../csharp/language-reference/keywords/extern-alias.md) 기능을 사용하는 방법을 보여 줍니다.  
   
  소스 파일을 컴파일하고, 이전에 컴파일된 `grid.dll` 및 `grid20.dll`에서 메타데이터를 가져옵니다. 두 DLL에는 동일한 구성 요소의 서로 다른 버전이 포함되어 있으며, 두 **-reference**를 별칭 옵션과 함께 사용하여 소스 파일을 컴파일합니다. 옵션은 다음과 같습니다.  
+
+```console
+-reference:GridV1=grid.dll -reference:GridV2=grid20.dll  
+```
   
- -reference:GridV1=grid.dll 및 -reference:GridV2=grid20.dll  
-  
- 이렇게 하면 외부 별칭 "GridV1" 및 "GridV2"가 설정되며, 프로그램에서 extern 문을 통해 사용됩니다.  
+ 이렇게 하면 외부 별칭 `GridV1` 및 `GridV2`가 설정되며, 프로그램에서 `extern` 문을 통해 사용됩니다.  
   
 ```csharp  
 extern alias GridV1;  
@@ -78,13 +80,13 @@ extern alias GridV2;
 // Using statements go here.  
 ```  
   
- 이 작업이 완료되면 다음과 같이 컨트롤 이름 앞에 GridV1을 추가하여 grid.dll에서 그리드 컨트롤을 참조할 수 있습니다.  
+ 이 작업이 완료되면 다음과 같이 컨트롤 이름 앞에 `GridV1`을 추가하여 `grid.dll`에서 그리드 컨트롤을 참조할 수 있습니다.  
   
 ```csharp  
 GridV1::Grid  
 ```  
   
- 또한 다음과 같이 컨트롤 이름 앞에 GridV2를 추가하여 grid20.dll에서 그리드 컨트롤을 참조할 수 있습니다.  
+ 또한, 다음과 같이 컨트롤 이름 앞에 `GridV2`를 추가하여 `grid20.dll`에서 그리드 컨트롤을 참조할 수 있습니다.  
   
 ```csharp  
 GridV2::Grid   

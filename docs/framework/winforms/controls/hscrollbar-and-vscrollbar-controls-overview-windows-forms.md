@@ -12,11 +12,11 @@ helpviewer_keywords:
 - scroll bars [Windows Forms], about scroll bars
 ms.assetid: 8b307679-1cae-41d8-99aa-3d1efd207cd6
 ms.openlocfilehash: 2c6436e77753322733580acba5a20d6bb220f29c
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45588113"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45638723"
 ---
 # <a name="hscrollbar-and-vscrollbar-controls-overview-windows-forms"></a>HScrollBar 및 VScrollBar 컨트롤 개요(Windows Forms)
 Windows Forms <xref:System.Windows.Forms.ScrollBar> 컨트롤은 가로로 또는 세로로 응용 프로그램 또는 컨트롤 내에서 쉽게 탐색 긴 목록 항목 또는 많은 양의 정보를 제공 하는 데 사용 됩니다. 스크롤 막대는 Windows 인터페이스의 공통 요소 이므로 <xref:System.Windows.Forms.ScrollBar> 컨트롤에서 파생 되지 않은 컨트롤을 사용 하 여 흔히는 <xref:System.Windows.Forms.ScrollableControl> 클래스입니다. 통합 하기 위해 많은 개발자 선택 마찬가지로 <xref:System.Windows.Forms.ScrollBar> 자체 사용자 정의 컨트롤을 작성 하는 경우를 제어 합니다.  

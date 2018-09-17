@@ -3,15 +3,15 @@ title: ML.NET을 사용하여 뉴욕 택시 요금 예측(회귀)
 description: 회귀 시나리오에서 ML.NET을 사용하는 방법을 알아봅니다.
 author: aditidugar
 ms.author: johalex
-ms.date: 06/18/2018
+ms.date: 07/02/2018
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: e3ff2124a43cf42ce26cf94cfd5384387eef0ed9
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 133b7ad17a98e4eea510f1704555b690b98e9091
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37937074"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44252846"
 ---
 # <a name="tutorial-use-mlnet-to-predict-new-york-taxi-fares-regression"></a>자습서: ML.NET을 사용하여 뉴욕 택시 요금 예측(회귀)
 
@@ -38,21 +38,21 @@ ms.locfileid: "37937074"
 
 ## <a name="understand-the-problem"></a>문제 이해
 
-이 문제는 **뉴욕시의 택시 요금을 예측**을 중심으로 이루어집니다. 처음에는 요금이 단순히 주행 거리에 따라 결정되는 것처럼 보일 수 있습니다. 그러나 뉴욕 택시 업체는 추가 승객 또는 현금 대신 신용 카드 결제 등의 다른 요소를 고려하여 다양한 금액을 청구합니다.
+이 문제는 뉴욕시의 택시 요금 예측에 관한 것입니다. 처음에는 요금이 단순히 주행 거리에 따라 결정되는 것처럼 보일 수 있습니다. 그러나 뉴욕 택시 업체는 추가 승객 또는 현금 대신 신용 카드 결제 등의 다른 요소를 고려하여 다양한 금액을 청구합니다.
 
 ## <a name="select-the-appropriate-machine-learning-task"></a>적절한 기계 학습 작업 선택
 
-택시 요금을 예측하려면 먼저 적절한 기계 학습 작업을 선택합니다. 데이터 집합의 다른 요소를 기반으로 실제 값(가격을 나타내는 double)을 예측하려고 합니다. [**회귀**](../resources/glossary.md#regression) 작업을 선택합니다.
+데이터 집합의 기타 요인에 따라 실제 값인 가격 값을 예측하려고 합니다. 이렇게 하려면 [회귀](../resources/glossary.md#regression) 기계 학습 작업을 선택합니다.
 
 ## <a name="create-a-console-application"></a>콘솔 응용 프로그램 만들기
 
 1. Visual Studio 2017을 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드와 **.NET Core** 노드를 차례로 선택합니다. 그런 다음 **콘솔 앱(.NET Core)** 프로젝트 템플릿을 선택합니다. **이름** 텍스트 상자에 “TaxiFarePrediction”을 입력하고 **확인** 단추를 선택합니다.
 
-2. 프로젝트에서 *Data* 디렉터리를 만들어 데이터 집합 파일을 저장합니다.
+1. 프로젝트에서 *Data* 디렉터리를 만들어 데이터 집합과 모델 파일을 저장합니다.
 
     **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 폴더**를 선택합니다. “Data”를 입력하고 Enter 키를 누릅니다.
 
-3. **Microsoft.ML NuGet 패키지**를 설치합니다.
+1. **Microsoft.ML** NuGet 패키지를 설치합니다.
 
     **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다. “nuget.org”를 패키지 소스로 선택하고, **찾아보기** 탭을 선택하고, **Microsoft.ML**을 검색하고, 목록에서 해당 패키지를 선택하고, **설치** 단추를 선택합니다. **변경 내용 미리 보기** 대화 상자에서 **확인** 단추를 선택한 다음, 나열된 패키지의 사용 조건에 동의하는 경우 **라이선스 승인** 대화 상자에서 **동의함** 단추를 선택합니다.
 
@@ -60,9 +60,9 @@ ms.locfileid: "37937074"
 
 1. [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) 및 [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-test.csv) 데이터 집합을 다운로드하여 이전 단계에서 만든 *Data* 폴더에 저장합니다. 이러한 데이터 집합을 사용하여 기계 학습 모델을 학습한 다음, 모델의 정확성을 평가합니다. 이러한 데이터 집합은 원래 [NYC TLC Taxi Trip 데이터 집합](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml)에서 가져옵니다.
 
-2. **솔루션 탐색기**에서 각 \*.csv 파일을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **고급** 아래에서 **출력 디렉터리에 복사** 값을 **항상**으로 변경합니다.
+1. **솔루션 탐색기**에서 각 \*.csv 파일을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **고급** 아래에서 **출력 디렉터리에 복사** 값을 **변경된 내용만 복사**로 변경합니다.
 
-3. **taxi-fare-train.csv** 데이터 집합을 열고 첫 번째 행에서 열 머리글을 확인합니다. 각 열을 살펴보세요. 데이터를 이해하고 **기능** 및 **레이블**로 사용할 열을 결정합니다.
+1. **taxi-fare-train.csv** 데이터 집합을 열고 첫 번째 행에서 열 머리글을 확인합니다. 각 열을 살펴보세요. 데이터를 이해하고 **기능** 및 **레이블**로 사용할 열을 결정합니다.
 
 **레이블**은 예측하려는 열의 식별자입니다. 식별된 **기능**은 레이블을 예측하는 데 사용됩니다.
 
@@ -92,7 +92,10 @@ ms.locfileid: "37937074"
 
 `TaxiTrip`은 입력 데이터 클래스이며 각 데이터 집합 열의 정의를 포함합니다. [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) 특성을 사용하여 데이터 집합에서 소스 열의 인덱스를 지정합니다.
 
-`TaxiTripFarePrediction` 클래스는 예측된 결과를 나타내는 데 사용합니다. 여기에는 단일 부동(`FareAmount`) 필드 및 `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) 특성이 포함됩니다. **Score** 열은 ML.NET에서 특별한 열입니다. 모델은 예측된 값을 이 열에 출력합니다.
+`TaxiTripFarePrediction` 클래스는 예측된 결과를 나타냅니다. 여기에는 `FareAmount`의 단일 부동 필드가 있으며 `Score` [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) 특성이 적용되었습니다. 회귀 작업의 경우 **점수** 열에 예측된 레이블 값이 포함됩니다.
+
+> [!NOTE]
+> `float` 유형을 사용하여 입력 및 예측 데이터 클래스에서 부동 소수점 값을 나타냅니다.
 
 ## <a name="define-data-and-model-paths"></a>데이터 및 모델 경로 정의
 
@@ -116,7 +119,7 @@ ms.locfileid: "37937074"
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
-`Main`에서 `Console.WriteLine("Hello World!")`를 다음 코드로 바꿉니다.
+`Main` 메서드에서 `Console.WriteLine("Hello World!")`을 다음 코드로 바꿉니다.
 
 ```csharp
 PredictionModel<TaxiTrip, TaxiTripFarePrediction> model = Train();
@@ -139,7 +142,7 @@ var pipeline = new LearningPipeline();
 
 ## <a name="load-and-transform-data"></a>데이터 로드 및 변환
 
-학습 파이프 라인이 수행하는 첫 번째 단계는 학습 데이터 집합에서 데이터를 로드하는 것입니다. 이 경우에 학습 데이터 집합은 `_datapath` 필드로 정의된 경로로 텍스트 파일에 저장됩니다. 이 파일에는 열 이름으로 된 헤더가 있으므로 데이터를 로드하는 동안 첫 번째 행을 무시해야 합니다. 파일의 열은 쉼표(“,”)로 구분됩니다. `Train` 메서드에 다음 코드를 추가합니다.
+수행할 첫 번째 단계는 학습 데이터 집합에서 데이터를 로드하는 것입니다. 이 경우에 학습 데이터 집합은 `_datapath` 필드로 정의된 경로로 텍스트 파일에 저장됩니다. 이 파일에는 열 이름으로 된 헤더가 있으므로 데이터를 로드하는 동안 첫 번째 행을 무시해야 합니다. 파일의 열은 쉼표(“,”)로 구분됩니다. `Train` 메서드에 다음 코드를 추가합니다.
 
 ```csharp
 pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, separator: ','));
@@ -147,7 +150,7 @@ pipeline.Add(new TextLoader(_datapath).CreateFrom<TaxiTrip>(useHeader: true, sep
 
 다음 단계에서는 `TaxiTrip` 클래스에 정의된 이름으로 해당 열을 참조합니다.
 
-모델을 학습하고 평가할 때에는 **Label** 열의 값이 예측할 올바른 값으로 간주됩니다. 택시 요금을 예측하려면 `FareAmount` 열을 **Label** 열로 복사합니다. 이를 위해 <xref:Microsoft.ML.Transforms.ColumnCopier>를 사용하고 다음 코드를 추가합니다.
+모델을 학습하고 평가할 때 기본적으로 **Label** 열의 값이 예측할 올바른 값으로 간주됩니다. 택시 요금을 예측하려면 `FareAmount` 열을 **Label** 열로 복사합니다. 이를 위해 <xref:Microsoft.ML.Transforms.ColumnCopier>를 사용하고 다음 코드를 추가합니다.
 
 ```csharp
 pipeline.Add(new ColumnCopier(("FareAmount", "Label")));
@@ -161,7 +164,7 @@ pipeline.Add(new CategoricalOneHotVectorizer("VendorId",
                                              "PaymentType"));
 ```
 
-데이터 준비의 마지막 단계에서는 <xref:Microsoft.ML.Transforms.ColumnConcatenator> 변환 클래스를 사용하여 모든 기능 열을 **Features** 열에 결합합니다. 이 단계는 학습자가 **Features** 열의 기능만 처리하기 때문에 필요합니다. 다음 코드를 추가합니다.
+데이터 준비의 마지막 단계에서는 <xref:Microsoft.ML.Transforms.ColumnConcatenator> 변환 클래스를 사용하여 모든 기능 열을 **Features** 열에 결합합니다. 기본적으로, 학습 알고리즘은 **Features** 열의 기능만 처리합니다. 다음 코드를 추가합니다.
 
 ```csharp
 pipeline.Add(new ColumnConcatenator("Features",
@@ -179,7 +182,7 @@ pipeline.Add(new ColumnConcatenator("Features",
 
 ## <a name="choose-a-learning-algorithm"></a>학습 알고리즘 선택
 
-파이프라인에 데이터를 추가하고 데이터를 올바른 입력 형식으로 변환한 후 학습 알고리즘(**학습자**)을 선택합니다. 학습자는 모델을 학습시킵니다. 이 문제에 대한 **회귀 작업**을 선택했으므로 ML.NET에서 제공한 회귀 학습자 중 하나인 <xref:Microsoft.ML.Trainers.FastTreeRegressor> 학습자를 추가합니다.
+파이프라인에 데이터를 추가하고 데이터를 올바른 입력 형식으로 변환한 후 학습 알고리즘(**학습자**)을 선택합니다. 학습자는 모델을 학습시킵니다. 이 문제에 대한 **회귀 작업**을 선택했으므로 ML.NET에서 제공한 회귀 학습자 중 하나인 <xref:Microsoft.ML.Trainers.FastTreeRegressor> 학습자를 사용합니다.
 
 <xref:Microsoft.ML.Trainers.FastTreeRegressor> 학습자는 그라데이션 승격을 활용합니다. 그라데이션 승격은 회귀 문제에 대한 기계 학습 기술입니다. 이 파이프라인은 각 회귀 트리를 단계적으로 빌드합니다. 미리 정의된 손실 함수를 사용하여 각 단계에서 오류를 측정한 다음, 수정합니다. 결과는 실제로 더 약한 예측 모델의 앙상블인 예측 모델입니다. 그라데이션 승격에 대한 자세한 내용은 [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression)(승격된 의사 결정 트리 회귀)을 참조하세요.
 
@@ -203,7 +206,7 @@ pipeline.Add(new FastTreeRegressor());
 
 ### <a name="save-the-model"></a>모델 저장
 
-다음 단계로 이동하기 전에 `Train` 메서드의 끝에 다음 코드를 추가하여 모델을 .zip 파일에 저장합니다.
+이 시점에 기존 또는 새 .NET 응용 프로그램에 통합할 수 있는 모델이 있습니다. 모델을 .zip 파일로 저장하려면 `Train` 메서드 끝에 다음 코드를 추가합니다.
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#5 "Save the model asynchronously and return the model")]
 
@@ -260,7 +263,7 @@ private static void Evaluate(PredictionModel<TaxiTrip, TaxiTripFarePrediction> m
 
 ## <a name="use-the-model-for-predictions"></a>예측에 모델 사용
 
-다음으로는 모델이 올바르게 작동하는지 확인하는 데 사용할 수 있는 테스트 시나리오를 수용할 클래스를 만듭니다.
+테스트 데이터 인스턴스를 수용할 클래스를 만듭니다.
 
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다.
 1. **새 항목 추가** 대화 상자에서 **클래스**를 선택하고 **이름** 필드를 *TestTrips.cs*로 변경합니다. 그런 다음, **추가** 단추를 선택합니다.
@@ -280,7 +283,7 @@ private static void Evaluate(PredictionModel<TaxiTrip, TaxiTripFarePrediction> m
 
 프로그램을 실행하여 테스트 사례에 대해 예측된 택시 요금을 확인합니다.
 
-지금까지 택시 요금 예측을 위한 기계 학습 모델을 성공적으로 빌드하고, 정확도를 평가하고, 예측하는 데 사용했습니다. [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction) 리포지토리에서 이 자습서의 소스 코드를 찾을 수 있습니다.
+지금까지 택시 요금 예측을 위한 기계 학습 모델을 성공적으로 빌드하고, 정확도를 평가하고, 예측하는 데 사용했습니다. [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TaxiFarePrediction) GitHub 리포지토리에서 이 자습서의 소스 코드를 찾을 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

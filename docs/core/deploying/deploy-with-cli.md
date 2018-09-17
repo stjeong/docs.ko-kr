@@ -4,12 +4,12 @@ description: CLI(명령줄 인터페이스) 도구를 사용한 .NET Core 앱 �
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/18/2017
-ms.openlocfilehash: 7b009068422686442ebff83b9400c365f34a3154
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: dbef9d91aa4e7af8e6e0ed2d8f361238385d4976
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39244753"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43855024"
 ---
 # <a name="deploying-net-core-apps-with-command-line-interface-cli-tools"></a>CLI(명령줄 인터페이스) 도구를 사용하여 .NET Core 앱 배포
 
@@ -26,7 +26,7 @@ ms.locfileid: "39244753"
 
 ## <a name="framework-dependent-deployment"></a>프레임워크 종속 배포
 
-타사 종속성이 없는 프레임워크 종속 배포에는 앱의 빌드, 테스트 및 게시만 포함됩니다. C#으로 작성된 간단한 예제에서는 이 프로세스를 보여 줍니다. 
+타사 종속성이 없는 프레임워크 종속 배포에는 앱의 빌드, 테스트 및 게시만 포함됩니다. C#으로 작성된 간단한 예제에서는 이 프로세스를 보여 줍니다.
 
 1. 프로젝트 디렉터리를 만듭니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "39244753"
    [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. 프로젝트의 종속성 및 도구를 업데이트합니다.
- 
+
    [dotnet restore](../tools/dotnet-restore.md)([참고 참조](#dotnet-restore-note)) 명령을 실행하여 프로젝트에 지정된 종속성을 복원합니다.
 
 1. 앱의 디버그 빌드를 만듭니다.
@@ -105,7 +105,7 @@ ms.locfileid: "39244753"
 
 1. 앱의 대상 플랫폼을 정의합니다.
 
-   *csproj* 파일의 `<PropertyGroup>` 섹션에서 앱의 대상 플랫폼을 정의하는 `<RuntimeIdentifiers>` 태그를 만들고 각 대상 플랫폼의 RID(런타임 식별자)를 지정합니다. RID를 구분하려면 세미콜론도 추가해야 합니다. 런타임 식별자 목록은 [런타임 식별자 카탈로그](../rid-catalog.md)를 참조하세요. 
+   *csproj* 파일의 `<PropertyGroup>` 섹션에서 앱의 대상 플랫폼을 정의하는 `<RuntimeIdentifiers>` 태그를 만들고 각 대상 플랫폼의 RID(런타임 식별자)를 지정합니다. RID를 구분하려면 세미콜론도 추가해야 합니다. 런타임 식별자 목록은 [런타임 식별자 카탈로그](../rid-catalog.md)를 참조하세요.
 
    예를 들어 다음 `<PropertyGroup>` 섹션은 앱이 64비트 Windows 10 운영 체제 및 64비트 OS X 버전 10.11 운영 체제에서 실행됨을 나타냅니다.
 
@@ -188,8 +188,7 @@ ms.locfileid: "39244753"
 <a name="dotnet-restore-note"></a>
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-# <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
-[.NET Core 응용 프로그램 배포](index.md)   
-[.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)   
-
+* [.NET Core 응용 프로그램 배포](index.md)
+* [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)

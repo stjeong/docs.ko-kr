@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f2306d51d88ab2d3b74ed6381a6de0acebf1e62c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 67955e2b9d523cdee02f6de548720fdad261ab4d
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33410100"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43748433"
 ---
 # <a name="caspolexe-code-access-security-policy-tool"></a>Caspol.exe(코드 액세스 보안 정책 도구)
 CAS(코드 액세스 보안 정책 도구)(Caspol.exe)를 사용하면 사용자나 관리자가 컴퓨터 정책 수준, 사용자 정책 수준 및 엔터프라이즈 정책 수준의 보안 정책을 수정할 수 있습니다.  
@@ -83,29 +83,29 @@ caspol [options]
   
 |인수|설명|  
 |--------------|-----------------|  
-|**-allcode**|모든 코드를 지정합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.AllMembershipCondition>을 참조하세요.|  
-|**-appdir**|응용 프로그램 디렉터리를 지정합니다. **–appdir**를 멤버 자격 조건으로 지정하면 코드의 URL 증명 정보가 해당 코드의 응용 프로그램 디렉터리 증명 정보와 비교됩니다. 두 증명 정보 값이 모두 동일하면 이 멤버 자격 조건이 충족됩니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.ApplicationDirectoryMembershipCondition>을 참조하세요.|  
+|**-allcode**|모든 코드를 지정합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.AllMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
+|**-appdir**|응용 프로그램 디렉터리를 지정합니다. **–appdir**를 멤버 자격 조건으로 지정하면 코드의 URL 증명 정보가 해당 코드의 응용 프로그램 디렉터리 증명 정보와 비교됩니다. 두 증명 정보 값이 모두 동일하면 이 멤버 자격 조건이 충족됩니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.ApplicationDirectoryMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
 |**-custom**  *xmlfile*|사용자 지정 멤버 자격 조건을 추가합니다. 필수 *xmlfile* 인수는 사용자 지정 멤버 자격 조건의 XML serialization이 포함된 .xml 파일을 지정합니다.|  
-|**-hash** *hashAlg* {**-hex** *hashValue* | **-file** *assembly_file* }|지정된 어셈블리 해시가 포함된 코드를 지정합니다. 해시를 코드 그룹 멤버 자격 조건으로 사용하려면 해시 값 또는 어셈블리 파일 중 하나를 지정해야 합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.HashMembershipCondition>을 참조하세요.|  
-|**-pub** { **-cert** *cert_file_name* &#124;<br /><br /> **-file** *signed_file_name* | **-hex**  *hex_string* }|인증서 파일, 파일의 서명 또는 X509 인증서의 16진수 표시가 나타내는 것처럼 지정된 소프트웨어 게시자가 포함된 코드를 지정합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.PublisherMembershipCondition>을 참조하세요.|  
-|**-site** *website*|지정된 원본 사이트가 포함된 코드를 지정합니다. 예:<br /><br /> **-site** www.proseware.com<br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.SiteMembershipCondition>을 참조하세요.|  
-|**-strong -file** *file_name* {*name* | **-noname**} {*version* | **-noversion**}|파일 이름, 문자열 형식의 어셈블리 이름 및 *major*.*minor*.*build*.*revision* 형식의 어셈블리 버전으로 지정된 강력한 이름의 코드를 지정합니다. 예:<br /><br /> **-strong -file** myAssembly.exe myAssembly 1.2.3.4<br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.StrongNameMembershipCondition>을 참조하세요.|  
-|**-url** *URL*|지정된 URL에서 시작되는 코드를 지정합니다. URL은 http:// 또는 ftp://와 같은 프로토콜을 포함해야 합니다. 또한 와일드카드 문자(\*)를 사용하여 특정 URL에서 여러 어셈블리를 지정할 수 있습니다. **참고:** URL은 여러 이름을 사용하여 식별할 수 있으므로 URL을 멤버 자격 조건으로 사용하는 것은 코드의 ID를 정확하게 식별하기 위한 안전한 방법이 아닙니다. 가능한 경우 강력한 이름 멤버 자격 조건, 게시자 멤버 자격 조건 또는 해시 멤버 자격 조건을 사용합니다. <br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.UrlMembershipCondition>을 참조하세요.|  
+|**-hash** *hashAlg* {**-hex** *hashValue* | **-file** *assembly_file* }|지정된 어셈블리 해시가 포함된 코드를 지정합니다. 해시를 코드 그룹 멤버 자격 조건으로 사용하려면 해시 값 또는 어셈블리 파일 중 하나를 지정해야 합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.HashMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
+|**-pub** { **-cert** *cert_file_name* &#124;<br /><br /> **-file** *signed_file_name* | **-hex**  *hex_string* }|인증서 파일, 파일의 서명 또는 X509 인증서의 16진수 표시가 나타내는 것처럼 지정된 소프트웨어 게시자가 포함된 코드를 지정합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.PublisherMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
+|**-site** *website*|지정된 원본 사이트가 포함된 코드를 지정합니다. 예:<br /><br /> `-site** www.proseware.com`<br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.SiteMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
+|**-strong -file** *file_name* {*name* &#124; **-noname**} {*version* &#124; **-noversion**}|파일 이름, 문자열 형식의 어셈블리 이름 및 *major*.*minor*.*build*.*revision* 형식의 어셈블리 버전으로 지정된 강력한 이름의 코드를 지정합니다. 예:<br /><br /> **-strong -file** myAssembly.exe myAssembly 1.2.3.4<br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.StrongNameMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
+|**-url** *URL*|지정된 URL에서 시작되는 코드를 지정합니다. URL은 http:// 또는 ftp://와 같은 프로토콜을 포함해야 합니다. 또한 와일드카드 문자(\*)를 사용하여 특정 URL에서 여러 어셈블리를 지정할 수 있습니다. **참고:** URL은 여러 이름을 사용하여 식별할 수 있으므로 URL을 멤버 자격 조건으로 사용하는 것은 코드의 ID를 정확하게 식별하기 위한 안전한 방법이 아닙니다. 가능한 경우 강력한 이름 멤버 자격 조건, 게시자 멤버 자격 조건 또는 해시 멤버 자격 조건을 사용합니다. <br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.UrlMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
 |**-zone** *zonename*|지정된 원본 영역이 포함된 코드를 지정합니다. *zonename* 인수는 **MyComputer**, **Intranet**, **Trusted**, **Internet** 또는 **Untrusted** 중 하나일 수 있습니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.ZoneMembershipCondition> 클래스를 참조하십시오.|  
   
  **–addgroup** 및 **–chggroup** 옵션과 함께 사용할 수 있는 *flags* 인수는 다음 중 하나를 사용하여 지정합니다.  
   
 |인수|설명|  
 |--------------|-----------------|  
-|**-description "** *description* **"**|**–addgroup** 옵션과 함께 사용하는 경우 추가할 코드 그룹에 대한 설명을 지정합니다. **–chggroup** 옵션과 함께 사용하는 경우 편집할 코드 그룹에 대한 설명을 지정합니다. *description* 인수는 큰따옴표로 묶어야 합니다.|  
+|**-description** "*description*"|**–addgroup** 옵션과 함께 사용하는 경우 추가할 코드 그룹에 대한 설명을 지정합니다. **–chggroup** 옵션과 함께 사용하는 경우 편집할 코드 그룹에 대한 설명을 지정합니다. *description* 인수는 큰따옴표로 묶어야 합니다.|  
 |**-exclusive** {**on**|**off**}|**on**으로 설정하면 일부 코드가 코드 그룹의 멤버 자격 조건을 충족할 때 추가하거나 수정하는 코드 그룹과 연결된 권한 집합만 고려합니다. **off**로 설정하면 Caspol.exe는 정책 수준에서 일치하는 모든 코드 그룹의 권한 집합을 고려합니다.|  
 |**-levelfinal** {**on**|**off**}|**on**으로 설정하면 추가 또는 수정된 코드 그룹이 발생하는 정책 수준의 하위 수준은 고려되지 않음을 나타냅니다. 일반적으로 이 옵션은 컴퓨터 정책 수준에서 사용됩니다. 예를 들어, 컴퓨터 수준의 코드 그룹에 이 플래그를 설정하고 일부 코드가 이 코드 그룹의 멤버 자격 조건과 일치하면 이 코드에 대해 사용자 수준 정책이 계산되거나 적용되지 않습니다.|  
-|**-name "** *name* **"**|**–addgroup** 옵션과 함께 사용하는 경우 추가할 코드 그룹의 스크립팅 이름을 지정합니다. **-chggroup** 옵션과 함께 사용하는 경우 편집할 코드 그룹의 스크립팅 이름을 지정합니다. *name* 인수는 큰따옴표로 묶어야 합니다. 또한 *name* 인수는 숫자로 시작할 수 없으며, A-Z, 0-9 및 밑줄 문자만 사용할 수 있습니다. 코드 그룹은 숫자 레이블 대신 이 *name*으로 참조될 수 있습니다. *name*은 스크립팅 용도로도 매우 유용합니다.|  
+|**-name** "*name*"|**–addgroup** 옵션과 함께 사용하는 경우 추가할 코드 그룹의 스크립팅 이름을 지정합니다. **-chggroup** 옵션과 함께 사용하는 경우 편집할 코드 그룹의 스크립팅 이름을 지정합니다. *name* 인수는 큰따옴표로 묶어야 합니다. 또한 *name* 인수는 숫자로 시작할 수 없으며, A-Z, 0-9 및 밑줄 문자만 사용할 수 있습니다. 코드 그룹은 숫자 레이블 대신 이 *name*으로 참조될 수 있습니다. *name*은 스크립팅 용도로도 매우 유용합니다.|  
   
 ## <a name="remarks"></a>설명  
  보안 정책은 컴퓨터 정책, 사용자 정책 및 엔터프라이즈 정책의 세 가지 정책 수준으로 표현됩니다. 어셈블리에서 받아들이는 권한 집합은 이러한 세 가지 정책 수준에서 허용하는 권한 집합의 교집합 부분에 의해 결정됩니다. 각 정책 수준은 코드 그룹의 계층 구조로 표시됩니다. 모든 코드 그룹에는 해당 그룹의 멤버가 되는 코드를 결정하는 멤버 자격 조건이 있습니다. 또한 명명된 권한 집합이 각 코드 그룹에 연결됩니다. 이 권한 집합에서는 런타임에서 해당 멤버 자격 조건을 충족하는 코드에 허용할 권한을 지정합니다. 코드 그룹 계층 구조에서는 해당 코드 그룹에 연결된 명명된 권한 집합과 함께 보안 정책의 각 수준을 정의하고 유지합니다. **–user**, **-customuser**, **–machine** 및 **-enterprise** 옵션을 사용하여 보안 정책 수준을 설정할 수 있습니다.  
   
- 보안 정책 및 런타임에서 코드에 부여할 권한을 결정하는 방법에 대한 자세한 내용은 [보안 정책 관리](http://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)를 참조하세요.  
+ 보안 정책 및 런타임에서 코드에 부여할 권한을 결정하는 방법에 대한 자세한 내용은 [보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)를 참조하세요.  
   
 ## <a name="referencing-code-groups-and-permission-sets"></a>코드 그룹 및 권한 집합 참조  
  계층 구조의 코드 그룹을 쉽게 참조하려면 **-list** 옵션을 사용하여 숫자 레이블(예: 1, 1.1, 1.1.1 등)과 함께 들여쓴 코드 그룹 목록을 표시합니다. 코드 그룹을 대상으로 하는 다른 명령줄 작업에서도 숫자 레이블을 사용하여 특정 코드 그룹을 참조합니다.  
@@ -132,13 +132,13 @@ caspol [options]
   
  사용자 지정 권한이 포함된 권한 집합이 컴퓨터 정책에 추가된 것으로 가정합니다. 이 사용자 지정 권한은 `MyPerm.exe`의 `MyPerm.exe` 및 `MyOther.exe` 참조 클래스에서 구현됩니다. 두 어셈블리는 모두 완전 신뢰 어셈블리 목록에 추가되어야 합니다. 다음 명령을 사용하여 `MyPerm.exe` 어셈블리를 컴퓨터 정책에 대해 완전 신뢰 목록에 추가합니다.  
   
-```  
+```console  
 caspol -machine -addfulltrust MyPerm.exe  
 ```  
   
  다음 명령을 사용하여 `MyOther.exe` 어셈블리를 컴퓨터 정책에 대해 완전 신뢰 목록에 추가합니다.  
   
-```  
+```console  
 caspol -machine -addfulltrust MyOther.exe  
 ```  
   
@@ -146,13 +146,13 @@ caspol -machine -addfulltrust MyOther.exe
   
  다음 명령을 사용하여 컴퓨터 정책 코드 그룹 계층 구조의 루트에 자식 코드 그룹을 추가합니다. 새 코드 그룹은 **Internet** 영역의 멤버이며 **Execution** 권한 집합에 연결됩니다.  
   
-```  
+```console  
 caspol -machine -addgroup 1.  -zone Internet Execution  
 ```  
   
  다음 명령은 공유 \\\netserver\netshare에 로컬 인트라넷 권한을 제공하는 자식 코드 그룹을 추가합니다.  
   
-```  
+```console  
 caspol -machine -addgroup 1. -url \\netserver\netshare\* LocalIntranet  
 ```  
   
@@ -160,7 +160,7 @@ caspol -machine -addgroup 1. -url \\netserver\netshare\* LocalIntranet
   
  다음 명령을 사용하여 사용자 정책에 `Mypset` 권한 집합을 추가합니다.  
   
-```  
+```console  
 caspol -user -addpset Mypset.xml Mypset  
 ```  
   
@@ -168,13 +168,13 @@ caspol -user -addpset Mypset.xml Mypset
   
  다음 명령은 1.2. 레이블이 지정된 코드 그룹의 사용자 정책에 포함된 권한 집합을 **Execution** 권한 집합으로 변경합니다.  
   
-```  
+```console  
 caspol -user -chggroup 1.2. Execution  
 ```  
   
  다음 명령은 1.2.1. 레이블이 지정된 코드 그룹의 기본 정책에 포함된 멤버 자격 조건과 **exclusive** 플래그 설정을 변경합니다. 즉 멤버 자격 조건이 **Internet**영역에서 시작하고 **exclusive** 플래그는 on으로 설정된 코드로 정의됩니다.  
   
-```  
+```console  
 caspol -chggroup 1.2.1. -zone Internet -exclusive on  
 ```  
   
@@ -182,7 +182,7 @@ caspol -chggroup 1.2.1. -zone Internet -exclusive on
   
  다음 명령을 사용하여 `Mypset`이라는 권한 집합을 `newpset.xml`에 포함된 권한 집합으로 변경합니다. 현재 릴리스에서는 코드 그룹 계층 구조에서 사용할 권한 집합을 변경할 수 없습니다.  
   
-```  
+```console  
 caspol -chgpset Mypset newpset.xml  
 ```  
   
@@ -190,7 +190,7 @@ caspol -chgpset Mypset newpset.xml
   
  다음 명령은 사용자 정책의 루트 코드 그룹(1 레이블 지정)이 **Nothing**으로 명명된 권한 집합에 연결되도록 합니다. 이렇게 하면 Caspol.exe가 실행되지 않습니다.  
   
-```  
+```console  
 caspol -force -user -chggroup 1 Nothing  
 ```  
   
@@ -198,7 +198,7 @@ caspol -force -user -chggroup 1 Nothing
   
  다음 명령을 사용하여 가장 최근에 저장한 컴퓨터 정책을 복구합니다.  
   
-```  
+```console  
 caspol -machine -recover  
 ```  
   
@@ -206,7 +206,7 @@ caspol -machine -recover
   
  다음 명령을 사용하여 레이블이 1.1.인 코드 그룹을 제거합니다. 이 코드 그룹에 자식 코드 그룹이 있으면 해당 그룹도 삭제됩니다.  
   
-```  
+```console  
 caspol -remgroup 1.1.  
 ```  
   
@@ -214,13 +214,13 @@ caspol -remgroup 1.1.
   
  다음 명령은 사용자 정책에서 **Execution** 권한 집합을 제거합니다.  
   
-```  
+```console  
 caspol -user -rempset Execution  
 ```  
   
  다음 명령을 사용하여 사용자 정책 수준에서 `Mypset`을 제거합니다.  
   
-```  
+```console  
 caspol -rempset MyPset  
 ```  
   
@@ -228,13 +228,13 @@ caspol -rempset MyPset
   
  다음 명령은 `myassembly`가 속한 컴퓨터 정책의 모든 코드 그룹을 표시합니다.  
   
-```  
+```console  
 caspol -machine -resolvegroup myassembly  
 ```  
   
  다음 명령을 사용하여 `myassembly`가 속해 있는 컴퓨터 정책, 엔터프라이즈 정책 및 특정 사용자 지정 사용자 정책의 모든 코드 그룹을 표시합니다.  
   
-```  
+```console  
 caspol -customall "c:\config_test\security.config" -resolvegroup myassembly  
 ```  
   
@@ -242,10 +242,10 @@ caspol -customall "c:\config_test\security.config" -resolvegroup myassembly
   
  다음 명령을 사용하여 컴퓨터 정책 수준 및 사용자 정책 수준에 따라 `testassembly`에 대한 권한을 계산합니다.  
   
-```  
+```console  
 caspol -all -resolveperm testassembly  
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [도구](../../../docs/framework/tools/index.md)  
- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+ [도구](index.md)  
+ [명령 프롬프트](developer-command-prompt-for-vs.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - pointers [C#], increment and decrement
 - pointer expressions [C#], increment and decrement
 ms.assetid: 1b8b9281-44ee-485a-9045-3db38a4b4b89
-ms.openlocfilehash: e1c3ac12a126450781d0ce78e788f39c740b5279
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 39cefc5dcebf1331a5e0ac0fadb8284e9041eb27
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324287"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44206473"
 ---
 # <a name="how-to-increment-and-decrement-pointers-c-programming-guide"></a>방법: 포인터 증가 및 감소(C# 프로그래밍 가이드)
 증가 및 감소 연산자인 `++` 및 `--`를 사용하여 pointer-type* 형식의 포인터에 대한 포인터 위치를 [sizeof](../../../csharp/language-reference/keywords/sizeof.md)(`pointer-type`)만큼 변경할 수 있습니다. 증가 및 감소 식은 다음 형식을 사용합니다.  
@@ -37,18 +37,20 @@ p--;
   
  [!code-csharp[csProgGuidePointers#13](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-increment-and-decrement-pointers_2.cs)]  
   
- **Value:0 @ Address:12860272**  
-**Value:1 @ Address:12860276**  
-**Value:2 @ Address:12860280**  
-**Value:3 @ Address:12860284**  
-**Value:4 @ Address:12860288**   
-## <a name="see-also"></a>참고 항목  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
- [포인터 조작](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [유형](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+**Value:0 @ 주소:12860272**
+**Value:1 @ 주소:12860276**
+**Value:2 @ 주소:12860280**
+**Value:3 @ 주소:12860284**
+**Value:4 @ 주소:12860288**
+
+## <a name="see-also"></a>참고 항목
+
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [포인터 식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
+- [포인터 조작](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
+- [포인터 형식](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [유형](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed 문](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

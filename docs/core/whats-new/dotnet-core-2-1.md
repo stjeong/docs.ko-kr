@@ -4,12 +4,12 @@ description: .NET Core 2.1에서 볼 수 있는 새로운 기능에 대해 알�
 author: rpetrusha
 ms.author: ronpet
 ms.date: 06/06/2018
-ms.openlocfilehash: 2599908c81cbe046889778bbdf7aeb9f8272b215
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 850df87666c5beb0594f0672d8f558c11653f973
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43392851"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44209578"
 ---
 # <a name="whats-new-in-net-core-21"></a>.NET Core 2.1의 새로운 기능
 
@@ -121,6 +121,7 @@ dotnet tool install -g dotnetsay
 
 .NET Core 2.0 SDK를 사용하면 `RuntimeFrameworkVersion` 속성을 통해 다른 버전이 지정되지 않는 한 자체 포함 응용 프로그램은 .NET Core 2.0.0 런타임으로 게시됩니다. 이 새 동작을 사용하면 더 이상 자체 포함 응용 프로그램의 상위 런타임 버전을 선택하기 위해 이 속성을 설정할 필요가 없습니다. 앞으로 가장 쉬운 방법은 항상 .NET Core 2.1 SDK(v 2.1.300)로 게시하는 것입니다.
 
+자세한 내용은 [자체 포함 배포 런타임 롤포워드](../deploying/runtime-patch-selection.md)를 참조하세요.
 ## <a name="windows-compatibility-pack"></a>Windows 호환 기능 팩
 
 .NET Framework에서 .NET Core로 기존 코드를 포팅할 경우 [Windows 호환 기능 팩](https://www.nuget.org/packages/Microsoft.Windows.Compatibility)을 사용할 수 있습니다. .NET Core에서 사용할 수 있는 것보다 20,000개 많은 API에 대한 액세스를 제공합니다. 이러한 API에는 <xref:System.Drawing?displayProperty=nameWithType> 네임스페이스, <xref:System.Diagnostics.EventLog> 클래스, WMI, 성능 카운터, Windows 서비스 및 Windows 레지스트리 형식/멤버의 형식이 포함됩니다.

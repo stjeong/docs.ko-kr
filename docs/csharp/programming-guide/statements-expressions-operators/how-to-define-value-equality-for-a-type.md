@@ -8,25 +8,25 @@ helpviewer_keywords:
 - value equality [C#]
 - equivalence [C#]
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.openlocfilehash: c0105371bd39c3999aafca867a7bb7a59fd367c1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 365aa5a71eb3d07a79920f565a66fcac67de0b42
+ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339607"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44042623"
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>방법: 형식의 값 일치 정의(C# 프로그래밍 가이드)
 클래스 또는 구조체를 정의할 때 형식에 대한 값 같음(또는 동등)의 사용자 지정 정의를 만드는 것이 적합한지 결정합니다. 일반적으로 형식의 개체를 일종의 컬렉션에 추가해야 하는 경우 또는 주요 용도가 필드 또는 속성 집합 저장인 경우 값 같음을 구현합니다. 형식의 모든 필드 및 속성 비교를 기준으로 값 같음의 정의를 만들거나, 하위 집합을 기준으로 정의를 만들 수 있습니다. 그러나 두 경우 모두, 클래스와 구조체 둘 다에서 구현이 동등의 5가지 사항을 따라야 합니다.  
   
-1.  x.`Equals`(x)는 `true.`를 반환합니다. 이를 반사 속성이라고 합니다.  
+1.  `x.Equals(x)`가 `true`를 반환하는 경우 이를 반사 속성이라고 합니다.  
   
-2.  x.`Equals`(y)는 y.`Equals`(x)와 동일한 값을 반환합니다. 이를 대칭 속성이라고 합니다.  
+2.  `x.Equals(y)`는 `y.Equals(x)`와 동일한 값을 반환합니다. 이를 대칭 속성이라고 합니다.  
   
-3.  (x.`Equals`(y) && y.`Equals`(z))가 `true`를 반환하면 x.`Equals`(z)가 `true`를 반환합니다. 이를 전이적 속성이라고 합니다.  
+3.  `(x.Equals(y) && y.Equals(z))`가 `true`를 반환하면 `x.Equals(z)`가 `true`를 반환합니다. 이를 전이적 속성이라고 합니다.  
   
-4.  x.`Equals`(y)를 연속 호출하면 x 및 y가 참조하는 개체를 수정하지 않는 한 동일한 값이 반환됩니다.  
+4.  `x.Equals(y)`의 연속 호출은 x 및 y에서 참조하는 개체가 수정되지 않는 한 동일한 값이 반환됩니다.  
   
-5.  x.`Equals`(null)은 `false`를 반환합니다. 그러나 null.Equals(null)은 예외를 throw하고 위의 규칙 번호 2를 따르지 않습니다.  
+5.  `x.Equals(null)`가 `false`를 반환하는 경우 그러나 `null.Equals(null)`는 예외를 throw하고 위의 규칙 번호 2를 따르지 않습니다.  
   
  정의하는 모든 구조체에는 <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> 메서드의 <xref:System.ValueType?displayProperty=nameWithType> 재정의에서 상속하는 값 같음의 기본 구현이 이미 있습니다. 이 구현은 리플렉션을 사용하여 형식의 모든 필드와 속성을 검사합니다. 이 구현은 올바른 결과를 생성하지만 해당 형식에 맞게 작성한 사용자 지정 구현에 비해 비교적 속도가 느립니다.  
   
@@ -62,6 +62,7 @@ ms.locfileid: "33339607"
   
  [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) 및 [!=](../../../csharp/language-reference/operators/not-equal-operator.md) 연산자는 구조체에서 명시적으로 오버로드하지 않는 한 구조체에 대해 연산을 수행할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [같음 비교](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+## <a name="see-also"></a>참고 항목
+
+- [같음 비교](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)

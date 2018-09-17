@@ -7,17 +7,17 @@ helpviewer_keywords:
 - converting strings to int [C#]
 - strings [C#], converting to int
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
-ms.openlocfilehash: 55ff87ef51f00a803276083052d4d86960e702e3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1f11ba3981b219d3b3a7817afd75fa78f2ccf78a
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332857"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43521755"
 ---
 # <a name="how-to-convert-a-string-to-a-number-c-programming-guide"></a>방법: 문자열을 숫자로 변환(C# 프로그래밍 가이드)
 <xref:System.Convert> 클래스의 메서드를 사용하거나 다양한 숫자 형식(int, long, float 등)에 있는 `TryParse` 메서드를 사용하여 [문자열](../../../csharp/language-reference/keywords/string.md)을 숫자로 변환할 수 있습니다.  
   
- 문자열이 있는 경우 `TryParse` 메서드(예: `int.TryParse("11")`)를 호출하면 약간 더 효율적이고 간단합니다.  `Convert` 메서드 사용은 <xref:System.IConvertible>을 구현하는 일반 개체에 더 유용합니다.  
+ 문자열이 있는 경우 `TryParse` 메서드(예: [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A))를 호출하면 약간 더 효율적이고 간단합니다.  <xref:System.Convert> 메서드 사용은 <xref:System.IConvertible>을 구현하는 일반 개체에 더 유용합니다.  
   
  `Parse` 또는 `TryParse` 메서드는 <xref:System.Int32?displayProperty=nameWithType> 형식과 같이 문자열에 포함되는 숫자 형식에서 사용할 수 있습니다.  <xref:System.Convert.ToUInt32%2A?displayProperty=nameWithType> 메서드는 <xref:System.Int32.Parse%2A>를 내부적으로 사용합니다.  문자열이 올바른 형식이 아닌 경우 `Parse`는 예외를 throw하는 반면 `TryParse`는 [false](../../../csharp/language-reference/keywords/false.md)를 반환합니다.  
   
@@ -53,7 +53,8 @@ ms.locfileid: "33332857"
  [!code-csharp[csProgGuideTypes#5555](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-a-string-to-a-number_1.cs)]  
 [!code-csharp[csProgGuideTypes#24](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-a-string-to-a-number_7.cs)]  
   
-## <a name="see-also"></a>참고 항목  
- [유형](../../../csharp/programming-guide/types/index.md)  
- [방법: 문자열이 숫자 값을 나타내는지 확인](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)  
- [.NET Framework 4 서식 유틸리티](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+## <a name="see-also"></a>참고 항목
+
+- [유형](../../../csharp/programming-guide/types/index.md)  
+- [방법: 문자열이 숫자 값을 나타내는지 확인](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)  
+- [.NET Framework 4 서식 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

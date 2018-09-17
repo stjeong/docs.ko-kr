@@ -4,12 +4,12 @@ description: 할당되지 않은 무시 가능한 변수인 무시 항목에 대
 author: rpetrusha
 ms.author: ronpet
 ms.date: 07/21/2017
-ms.openlocfilehash: 9688ea596fa3d534c6c48d5874b04bb257d0dbce
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d70067194ea9921f8af31fe436d04e2b780e1a73
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33219234"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43524205"
 ---
 # <a name="discards---c-guide"></a>무시 항목 - C# 가이드
 
@@ -54,7 +54,7 @@ C# 7.0에서 무시 항목은 다음 컨텍스트의 할당에서 지원됩니�
 
 ## <a name="calls-to-methods-with-out-parameters"></a>out 매개 변수를 사용한 메서드 호출
 
-`Deconstruct` 메서드를 호출하여 사용자 정의 형식(클래스, 구조체 또는 인터페이스의 인스턴스)를 분해할 때 개별 `out` 인수의 값을 무시할 수 있습니다. 하지만 어느 메서드든 out 매개 변수를 사용하여 호출할 때 `out` 인수의 값을 무시할 수도 있습니다. 
+`Deconstruct` 메서드를 호출하여 사용자 정의 형식(클래스, 구조체 또는 인터페이스의 인스턴스)를 분해할 때 개별 `out` 인수의 값을 무시할 수 있습니다. 하지만 어느 메서드든 out 매개 변수를 사용하여 호출할 때 `out` 인수의 값을 무시할 수도 있습니다.
 
 다음 예제에서는 [DateTime.TryParse(String, out DateTime)](<xref:System.DateTime.TryParse(System.String,System.DateTime@)>) 메서드를 호출하여 날짜의 문자열 표현이 현재 문화권에 유효한지 확인합니다. 이 예제에서는 날짜 문자열의 유효성 검사에만 관심이 있고 이 문자열의 구문 검사를 통한 날짜 추출에는 관심이 없으므로 메서드의 `out` 인수는 무시 항목입니다.
 
@@ -71,16 +71,17 @@ C# 7.0에서 무시 항목은 다음 컨텍스트의 할당에서 지원됩니�
 - 범위 내 `_` 변수 값을 실수로 수정하여 의도한 무시 항목의 값 할당. 예:
 
    [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#1)]
- 
+
 - 형식 안전성 위반으로 인한 컴파일러 오류. 예:
 
    [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#2)]
- 
-- 컴파일러 오류 CS0136, “이름이 ‘_’인 지역 또는 매개 변수는 이 범위에서 선언될 수 없습니다. 해당 이름이 지역 또는 매개 변수를 정의하기 위해 바깥쪽 지역 범위에서 사용되었습니다.” 예:
+
+- 컴파일러 오류 CS0136, “이름이 ‘\_’인 지역 또는 매개 변수는 이 범위에서 선언될 수 없습니다. 해당 이름이 지역 또는 매개 변수를 정의하기 위해 바깥쪽 지역 범위에서 사용되었습니다.” 예:
 
    [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#3)]
 
 ## <a name="see-also"></a>참고 항목
-[튜플 및 기타 형식 분해](deconstruct.md)   
-[`is` 키워드](language-reference/keywords/is.md)   
-[`switch` 키워드](language-reference/keywords/switch.md)   
+
+- [튜플 및 기타 형식 분해](deconstruct.md)
+- [`is` 키워드](language-reference/keywords/is.md)
+- [`switch` 키워드](language-reference/keywords/switch.md)

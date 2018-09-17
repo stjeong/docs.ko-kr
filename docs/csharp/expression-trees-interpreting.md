@@ -3,12 +3,12 @@ title: 식 해석
 description: 식 트리의 구조를 검사하는 코드를 작성하는 방법을 알아봅니다.
 ms.date: 06/20/2016
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
-ms.openlocfilehash: 04622c0aa7323ac4cf16af94e31f1ef6987f87c8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 95fbb021aeeb9f2f4eb36f664f9fe904d1d52453
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33219312"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43506421"
 ---
 # <a name="interpreting-expressions"></a>식 해석
 
@@ -514,7 +514,7 @@ The expression body is:
 
 마지막 예제도 가능한 노드 형식의 하위 집합을 인식합니다.
 이 예제가 실패하도록 하는 많은 식을 제공할 수도 있습니다.
-전체 구현은 [ExpressionVisitor](/dotnet/core/api/System.Linq.Expressions.ExpressionVisitor)라는 이름으로 .NET Standard에 포함되며 가능한 노드 형식을 모두 처리할 수 있습니다.
+전체 구현은 <xref:System.Linq.Expressions.ExpressionVisitor>라는 이름으로 .NET Standard에 포함되며 가능한 노드 형식을 모두 처리할 수 있습니다.
 
 마지막으로 이 문서에서 사용된 라이브러리는 데모 및 학습용으로 작성되었으며, 최적화되지 않았습니다. 사용된 구조를 매우 명확하게 하고 노드를 방문하여 포함된 항목을 분석하는 데 사용된 기술을 강조하기 위해 작성되었습니다. 프로덕션 구현에서는 지금까지보다 성능에 더 많은 주의를 기울입니다.
 

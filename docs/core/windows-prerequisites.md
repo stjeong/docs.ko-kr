@@ -4,12 +4,12 @@ description: Windows 컴퓨터에서 .NET Core 응용프로그램을 개발 및 
 author: mairaw
 ms.author: mairaw
 ms.date: 08/31/2018
-ms.openlocfilehash: bbf54c8d215783656830f0fa035708be82a7c39c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 477d303b50495070ba3a3540188deb274dd9f510
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43482612"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44179496"
 ---
 # <a name="prerequisites-for-net-core-on-windows"></a>Windows에서 .NET Core의 필수 구성 요소
 
@@ -30,6 +30,8 @@ ms.locfileid: "43482612"
 * Windows Server 2012 SP1(전체 서버 또는 Server Core)
 * Windows Server 2012 R2(전체 서버 또는 Server Core)
 * Windows Server 2016 이상 버전(전체 서버, Server Core 또는 Nano Server)
+
+## <a name="net-core-supported-operating-systems"></a>.NET Core 지원 운영 체제
 
 다음 문서에는 버전별 .NET Core 지원 운영 체제의 전체 목록이 있습니다.
 

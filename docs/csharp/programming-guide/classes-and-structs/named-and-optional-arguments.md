@@ -13,12 +13,12 @@ helpviewer_keywords:
 - parameters [C#], optional
 - named and optional arguments [C#]
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
-ms.openlocfilehash: b0963457e22bf0c3fc92d33c5ed0eb699be27cf7
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: f536499e95611bad6ac1766e117d4a2f1463e53d
+ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932044"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43857984"
 ---
 # <a name="named-and-optional-arguments-c-programming-guide"></a>명명된 인수와 선택적 인수(C# 프로그래밍 가이드)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)]에서는 명명된 인수 및 선택적 인수를 소개합니다. *명명된 인수*를 사용하면 인수를 매개 변수 목록 내의 매개 변수 위치가 아니라 매개 변수 이름과 연결하여 특정 매개 변수에 대한 인수를 지정할 수 있습니다. *선택적 인수*를 사용하면 일부 매개 변수에 대한 인수를 생략할 수 있습니다. 두 기법 모두 메서드, 인덱서, 생성자 및 대리자에 사용할 수 있습니다.  
@@ -101,7 +101,7 @@ ExampleMethod의 선택적 매개 변수
 ## <a name="com-interfaces"></a>COM 인터페이스  
  동적 개체 및 기타 향상된 기능에 대한 지원과 더불어 명명된 인수와 선택적 인수는 Office 자동화 API와 같은 COM API와의 상호 운용성을 크게 향상합니다.  
   
- 예를 들어 Microsoft Office Excel [범위](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range(v=office.15).aspx) 인터페이스의 [AutoFormat](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range.autoformat(v=office.15).aspx) 메서드에는 모두 선택 사항인 매개 변수 7개가 있습니다. 해당 매개 변수는 다음 그림에 나와 있습니다.  
+ 예를 들어 <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A>Microsoft Office Excel<xref:Microsoft.Office.Interop.Excel.Range> 인터페이스의 메서드에는 모두 선택 사항인 매개 변수 7개가 있습니다. 해당 매개 변수는 다음 그림에 나와 있습니다.  
   
  ![AutoFormat 메서드에 대한 IntelliSense 요약 정보](../../../csharp/programming-guide/classes-and-structs/media/autoformat_parameters.png "AutoFormat_Parameters")  
 AutoFormat 매개 변수  
@@ -128,8 +128,9 @@ AutoFormat 매개 변수
 ## <a name="c-language-specification"></a>C# 언어 사양  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [방법: Office 프로그래밍에서 명명된 인수 및 선택적 인수 사용](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)  
- [생성자 사용](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
- [인덱서 사용](../../../csharp/programming-guide/indexers/using-indexers.md)
+## <a name="see-also"></a>참고 항목
+
+- [방법: Office 프로그래밍에서 명명된 인수 및 선택적 인수 사용](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
+- [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)  
+- [생성자 사용](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
+- [인덱서 사용](../../../csharp/programming-guide/indexers/using-indexers.md)

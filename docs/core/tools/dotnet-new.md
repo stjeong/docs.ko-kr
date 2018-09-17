@@ -3,13 +3,13 @@ title: dotnet new 명령 - .NET Core CLI
 description: dotnet new 명령은 지정된 템플릿을 기반으로 새 .NET Core 프로젝트를 만듭니다.
 author: mairaw
 ms.author: mairaw
-ms.date: 06/12/2018
-ms.openlocfilehash: f0ef91361dfbc2c2ba5532fbd607786289e98c69
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.date: 07/31/2018
+ms.openlocfilehash: 2c82dda2d93225edb360316637e22964135cd5e4
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207784"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43512557"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -22,25 +22,31 @@ ms.locfileid: "36207784"
 ## <a name="synopsis"></a>개요
 
 # <a name="net-core-21tabnetcore21"></a>[.NET Core 2.1](#tab/netcore21)
-```
+
+```console
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output]
     [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
+
 # <a name="net-core-20tabnetcore20"></a>[.NET Core 2.0](#tab/netcore20)
-```
+
+```console
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
+
 # <a name="net-core-1xtabnetcore1x"></a>[.NET Core 1.x](#tab/netcore1x)
-```
+
+```console
 dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
+
 ---
 
 ## <a name="description"></a>설명
@@ -284,9 +290,11 @@ dotnet new [-h|--help]
 
 **web**
 
-`--use-launch-settings` - 생성된 템플릿 출력에 *launchSettings.json*을 포함합니다.
+`--exclude-launch-settings` - 생성된 템플릿에서 *launchSettings.json*을 제외합니다.
 
 `--no-restore` - 프로젝트를 만드는 동안 암시적 복원을 실행하지 않습니다.
+
+`--no-https` - 프로젝트에는 HTTPS가 필요하지 않습니다. 이 옵션은 `IndividualAuth` 또는 `OrganizationalAuth`를 사용하지 않는 경우에만 적용됩니다.
 
 **webapi**
 
@@ -311,11 +319,13 @@ dotnet new [-h|--help]
 
 `-r|--org-read-access` - 디렉터리에 대한 이 응용 프로그램 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
 
-`--use-launch-settings` - 생성된 템플릿 출력에 *launchSettings.json*을 포함합니다.
+`--exclude-launch-settings` - 생성된 템플릿에서 *launchSettings.json*을 제외합니다.
 
 `-uld|--use-local-db` - SQLite 대신 LocalDB를 사용하도록 지정합니다. `Individual` 또는 `IndividualB2C` 인증에만 적용됩니다.
 
 `--no-restore` - 프로젝트를 만드는 동안 암시적 복원을 실행하지 않습니다.
+
+`--no-https` - 프로젝트에는 HTTPS가 필요하지 않습니다. `app.UseHsts` 및 `app.UseHttpsRedirection`은 `Startup.Configure`에 추가되지 않습니다. 이 옵션은 `Individual`, `IndividualB2C`, `SingleOrg` 또는 `MultiOrg`를 사용하지 않는 경우에만 적용됩니다.
 
 **mvc, razor**
 
@@ -348,13 +358,15 @@ dotnet new [-h|--help]
 
 `-r|--org-read-access` - 디렉터리에 대한 이 응용 프로그램 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
 
-`--use-launch-settings` - 생성된 템플릿 출력에 *launchSettings.json*을 포함합니다.
+`--exclude-launch-settings` - 생성된 템플릿에서 *launchSettings.json*을 제외합니다.
 
 `--use-browserlink` - 프로젝트에 BrowserLink를 포함합니다.
 
 `-uld|--use-local-db` - SQLite 대신 LocalDB를 사용하도록 지정합니다. `Individual` 또는 `IndividualB2C` 인증에만 적용됩니다.
 
 `--no-restore` - 프로젝트를 만드는 동안 암시적 복원을 실행하지 않습니다.
+
+`--no-https` - 프로젝트에는 HTTPS가 필요하지 않습니다. `app.UseHsts` 및 `app.UseHttpsRedirection`은 `Startup.Configure`에 추가되지 않습니다. 이 옵션은 `Individual`, `IndividualB2C`, `SingleOrg` 또는 `MultiOrg`를 사용하지 않는 경우에만 적용됩니다.
 
 **page**
 
@@ -524,7 +536,7 @@ ASP.NET Core용 단일 페이지 응용 프로그램 템플릿 버전 2.0을 설
 
 ## <a name="see-also"></a>참고 항목
 
-[dotnet new에 대한 사용자 지정 템플릿](custom-templates.md)  
-[dotnet용 사용자 지정 템플릿 새로 만들기](~/docs/core/tutorials/create-custom-template.md)  
-[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)(dotnet/dotnet-template-samples GitHub 리포지토리)  
-[Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)(dotnet new에 대한 사용 가능한 템플릿)
+* [dotnet new에 대한 사용자 지정 템플릿](custom-templates.md)  
+* [dotnet용 사용자 지정 템플릿 새로 만들기](~/docs/core/tutorials/create-custom-template.md)  
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)(dotnet/dotnet-template-samples GitHub 리포지토리)  
+* [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)(dotnet new에 대한 사용 가능한 템플릿)

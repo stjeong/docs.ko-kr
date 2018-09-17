@@ -1,5 +1,5 @@
 ---
-title: ref(C# 참조)
+title: ref 키워드(C# 참조)
 ms.date: 03/06/2018
 f1_keywords:
 - ref_CSharpKeyword
@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - parameters [C#], ref
 - ref keyword [C#]
-ms.openlocfilehash: a72624d5702ec12bfda98d49a16474cc84205ff0
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: e0b82de125246e95d8dce2a7afc20119a8a1fe4f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245754"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44200555"
 ---
 # <a name="ref-c-reference"></a>ref(C# 참조)
 
@@ -21,7 +21,7 @@ ms.locfileid: "39245754"
 - 메서드 시그니처 및 메서드 호출에서 인수를 메서드에 참조로 전달합니다. 자세한 내용은 [참조로 인수 전달](#passing-an-argument-by-reference)을 참조하세요.
 - 메서드 시그니처에서 값을 호출자에게 참조로 반환합니다. 자세한 내용은 [참조 반환 값](#reference-return-values)을 참조하세요.
 - 멤버 본문에서 참조 반환 값이 호출자가 수정하려는 참조로 로컬에 저장되거나 일반적으로 로컬 변수가 참조를 기준으로 다른 값에 액세스 함을 나타냅니다. 자세한 내용은 [참조 로컬](#ref-locals)을 참조하세요.
-- `ref struct` 또는 `ref readonly struct`을 선언하기 위한 `struct` 선언서. 자세한 내용은 [참조 구조체 선언](#ref-struct-declarations)을 참조하세요.
+- `ref struct` 또는 `ref readonly struct`을 선언하기 위한 `struct` 선언서. 자세한 내용은 [값 형식과 참조 의미 체계](../../reference-semantics-with-value-types.md)를 참조하세요.
 
 ## <a name="passing-an-argument-by-reference"></a>참조로 인수 전달
 
@@ -32,7 +32,7 @@ ms.locfileid: "39245754"
 
 `ref` 매개 변수를 사용하려면 다음 예제에 나와 있는 것처럼 메서드 정의와 호출 메서드가 모두 `ref` 키워드를 명시적으로 사용해야 합니다.  
 
-[!code-csharp-interactive[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#1)]
+[!code-csharp-interactive[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#1)]
 
 `ref` 또는 `in` 매개 변수로 전달하는 인수는 전달 전에 초기화해야 합니다. 이러한 방식은 인수를 전달하기 전에 명시적으로 초기화할 필요가 없는 [out](out-parameter-modifier.md) 매개 변수와는 다릅니다.
 
@@ -50,26 +50,24 @@ class CS0663_Example
 
 그러나 다음 예제에 나와 있는 것처럼 메서드 하나에는 `ref`, `in` 또는 `out` 매개 변수가 포함되어 있고 다른 하나에는 값 매개 변수가 포함되어 있으면 메서드를 오버로드할 수 있습니다.
   
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#2)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#2)]
   
  숨기기나 재정의와 같이 서명이 일치해야 하는 다른 상황에서는 `in`, `ref` 및 `out`이 서명의 일부가 되며 서로 일치하지 않습니다.  
   
  속성은 변수가 아니라 메서드이며 `ref` 매개 변수로 전달할 수 없습니다.  
   
- 배열 전달 방법에 대한 자세한 내용은 [ref 및 out을 사용하여 배열 전달](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md)을 참조하세요.  
-  
  다음과 같은 종류의 메서드에는 `ref`, `in` 및 `out` 키워드를 사용할 수 없습니다.  
   
-- [async](../../../csharp/language-reference/keywords/async.md) 한정자를 사용하여 정의하는 비동기 메서드  
-- [yield return](../../../csharp/language-reference/keywords/yield.md) 또는 `yield break` 문을 포함하는 반복기 메서드  
+- [async](async.md) 한정자를 사용하여 정의하는 비동기 메서드  
+- [yield return](yield.md) 또는 `yield break` 문을 포함하는 반복기 메서드  
 
 ## <a name="passing-an-argument-by-reference-an-example"></a>참조로 인수 전달: 예제
 
 앞의 예제에서는 값 형식을 참조로 전달합니다. `ref` 키워드를 사용하여 참조 형식을 참조로 전달할 수도 있습니다. 참조 형식을 참조로 전달하는 경우 호출된 메서드는 참조 매개 변수가 호출자에서 참조하는 개체를 바꿀 수 있습니다. 개체의 저장 위치는 참조 매개 변수의 값으로 메서드에 전달됩니다. 매개 변수의 저장 위치에서 값을 변경하여 새 개체를 가리키도록 하면 호출자가 참조하는 저장 위치도 변경됩니다. 다음 예제에서는 참조 형식 인스턴스를 `ref` 매개 변수로 전달합니다.
   
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#3)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#3)]
 
-참조 형식을 참조 및 값으로 전달하는 방법에 대한 자세한 내용은 [참조-형식 매개 변수 전달](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)을 참조하세요.
+참조 형식을 참조 및 값으로 전달하는 방법에 대한 자세한 내용은 [참조-형식 매개 변수 전달](../../programming-guide/classes-and-structs/passing-reference-type-parameters.md)을 참조하세요.
   
 ## <a name="reference-return-values"></a>참조 반환 값
 
@@ -80,7 +78,7 @@ class CS0663_Example
 - 메서드 시그니처에서. 예를 들어 다음 메서드 시그니처는 `GetCurrentPrice` 메서드가 <xref:System.Decimal> 값을 참조로 반환함을 나타냅니다.
 
 ```csharp
-public ref decimal GetCurrentValue()
+public ref decimal GetCurrentPrice()
 ```
 
 - 메서드의 `return` 문에서 반환된 `return` 토큰과 변수 간에. 예:
@@ -95,7 +93,7 @@ return ref DecimalArray[0];
 
 ## <a name="ref-locals"></a>참조 로컬
 
-참조 지역 변수는 `return ref`을 사용하여 반환된 값을 참조하는 데 사용됩니다.  참조 지역 변수를 초기화하고 참조 반환 값에 할당해야 합니다. 참조 로컬 값의 수정 내용은 메서드가 값을 참조로 반환하는 개체 상태에 반영됩니다.
+참조 지역 변수는 `return ref`을 사용하여 반환된 값을 참조하는 데 사용됩니다. 참조 지역 변수는 비참조 반환 값으로 초기화할 수 없습니다. 즉, 초기화의 오른쪽은 참조여야 합니다. 참조 로컬 값의 수정 내용은 메서드가 값을 참조로 반환하는 개체 상태에 반영됩니다.
 
 변수 선언 앞, 값을 참조로 반환하는 메서드 호출 직전에 `ref` 키워드를 사용하여 참조 로컬을 정의합니다.
 
@@ -117,13 +115,11 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 다음 예제에서는 두 개의 <xref:System.String> 필드 `Title` 및 `Author`가 있는 `Book` 클래스를 정의합니다. 또한 `Book` 개체의 private 배열을 포함하는 `BookCollection` 클래스를 정의합니다. 개별 책 개체는 해당 `GetBookByTitle` 메서드를 호출하여 참조로 반환됩니다.
 
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#4)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#4)]
 
 호출자가 `GetBookByTitle` 메서드에서 참조 로컬로 반환된 값을 저장하는 경우 호출자가 반환 값을 변경하면 다음 예제와 같이 `BookCollection` 개체에 변경 내용이 반영됩니다.
 
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
-
-## <a name="ref-struct-declarations"></a>참조 구조체 선언
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
 
 ## <a name="c-language-specification"></a>C# 언어 사양
 
@@ -131,9 +127,9 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
   
 ## <a name="see-also"></a>참고 항목
 
- [값 형식과 참조 의미 체계](../../reference-semantics-with-value-types.md)  
- [매개 변수 전달](../../programming-guide/classes-and-structs/passing-parameters.md)  
- [메서드 매개 변수](method-parameters.md)  
- [C# 참조](../index.md)  
- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
- [C# 키워드](index.md)
+- [값 형식과 참조 의미 체계](../../reference-semantics-with-value-types.md)  
+- [매개 변수 전달](../../programming-guide/classes-and-structs/passing-parameters.md)  
+- [메서드 매개 변수](method-parameters.md)  
+- [C# 참조](../index.md)  
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
+- [C# 키워드](index.md)

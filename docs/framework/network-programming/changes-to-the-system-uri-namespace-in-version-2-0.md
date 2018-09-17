@@ -5,12 +5,12 @@ ms.assetid: 35883fe9-2d09-4d8b-80ca-cf23a941e459
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 169454edd04bfdb55affcc2be12140f42dd2f7ff
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dbd12b3e08b6e21d26e2cb688a591cd4e03574dc
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392450"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44205986"
 ---
 # <a name="changes-to-the-systemuri-namespace-in-version-20"></a>버전 2.0에서 System.Uri 네임스페이스 변경 내용
 <xref:System.Uri?displayProperty=nameWithType> 클래스에 몇 가지 변경 내용이 적용되었습니다. 이러한 변경 내용은 잘못된 동작을 수정하고, 유용성을 개선하고, 보안을 강화했습니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "33392450"
   
 -   쿼리 부분(file, ftp 등)이 없는 것으로 알려진 URI 체계에서는 ‘?’ 문자가 항상 이스케이프되고 <xref:System.Uri.Query%2A> 부분의 시작으로 간주되지 않습니다.  
   
--   암시적 파일 URI(“c:\directory\file@name.txt” 형식)의 경우 전체 이스케이프 취소가 요청되거나 <xref:System.Uri.LocalPath%2A>가 `true`인 경우가 아니면 조각 문자(‘#’)가 항상 이스케이프됩니다.  
+-   암시적 파일 URI(`c:\directory\file@name.txt` 형식)의 경우 전체 이스케이프 취소가 요청되거나 <xref:System.Uri.LocalPath%2A>가 `true`인 경우가 아니면 조각 문자(‘#’)가 항상 이스케이프됩니다.  
   
 -   UNC 호스트 이름 지원이 제거되었습니다. 국제 호스트 이름을 나타내기 위한 IDN 사양이 채택되었습니다.  
   
@@ -56,9 +56,9 @@ ms.locfileid: "33392450"
   
 -   이제 <xref:System.Uri.IsLoopback%2A>에서 일관된 결과를 생성합니다.  
   
--   URI “`file:///path`”가 더 이상 “file://path”로 변환되지 않습니다.  
+-   URI “`file:///path`”가 더 이상 `file://path`로 변환되지 않습니다.  
   
--   아재 “#”이 호스트 이름 종결자로 인식됩니다. 즉, "http://consoto.com#fragment"는 이제 "http://contoso.com/#fragment"로 변환됩니다.  
+-   아재 “#”이 호스트 이름 종결자로 인식됩니다. 즉, `http://consoto.com#fragment`는 이제 `http://contoso.com/#fragment`로 변환됩니다.  
   
 -   기본 URI와 조각을 결합할 때 발생하는 버그가 수정되었습니다.  
   

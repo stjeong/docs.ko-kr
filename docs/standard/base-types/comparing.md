@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c925b734c6d89bfa7240a7946c5bae4d8062a47a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b1fa907be4571e0a5f95ab798210bedb154e9170
+ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577819"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44264677"
 ---
 # <a name="comparing-strings-in-net"></a>.NET에서 문자열 비교
 .NET에서는 문자열의 값을 비교하는 여러 가지 메서드를 제공합니다. 다음 표에서는 값 비교 메서드를 나열하고 설명합니다.  
@@ -150,6 +150,8 @@ ms.locfileid: "33577819"
   
  두 메서드는 모두 **String.Remove** 메서드와 함께 사용할 때 유용합니다. 문자 또는 해당 문자로 시작하는 단어를 제거하기 위해 **IndexOf** 또는 **LastIndexOf** 메서드 중 하나를 사용하여 문자의 위치를 검색한 다음 해당 위치를 **Remove** 메서드에 제공할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+## <a name="see-also"></a>참고 항목
+
+- [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
+- [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+- [정렬 가중치 테이블](https://www.microsoft.com/en-us/download/details.aspx?id=10921)

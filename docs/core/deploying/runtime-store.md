@@ -4,12 +4,12 @@ description: 이 항목에서는 .NET Core에서 사용되는 런타임 패키�
 author: bleroy
 ms.author: mairaw
 ms.date: 08/12/2017
-ms.openlocfilehash: aba1939cda8459d8b0d9438a97545c19d3c1926d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: df2776ac2e4a2eed7f54b3031f13ab41fc714aae
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218705"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43511586"
 ---
 # <a name="runtime-package-store"></a>런타임 패키지 저장소
 
@@ -17,18 +17,20 @@ ms.locfileid: "33218705"
 
 이 기능은 패키지가 저장된 디스크의 디렉터리(일반적으로 macOS/Linux의 */usr/local/share/dotnet/store* 및 Windows의 *C:/Program Files/dotnet/store*)에 해당하는 *런타임 패키지 저장소*로 구현됩니다. 이 디렉터리 아래에는 아키텍처 및 [대상 프레임워크](../../standard/frameworks.md)의 하위 디렉터리가 있습니다. 파일 레이아웃은 [NuGet 자산이 디스크에 배치](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure)되는 방식과 비슷합니다.
 
-\dotnet   
-&nbsp;&nbsp;\store   
-&nbsp;&nbsp;&nbsp;&nbsp;\x64   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\netcoreapp2.0   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
-&nbsp;&nbsp;&nbsp;&nbsp;\x86   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\netcoreapp2.0   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
+```
+\dotnet
+    \store
+        \x64
+            \netcoreapp2.0
+                \microsoft.applicationinsights
+                \microsoft.aspnetcore
+                ...
+        \x86
+            \netcoreapp2.0
+                \microsoft.applicationinsights
+                \microsoft.aspnetcore
+                ...
+```
 
 *대상 매니페스트* 파일에는 런타임 패키지 저장소의 패키지가 나열됩니다. 개발자는 앱을 게시할 때 이 매니페스트를 대상으로 지정할 수 있습니다. 일반적으로 대상 프로덕션 환경의 소유자가 대상 매니페스트를 제공합니다.
 
@@ -120,6 +122,8 @@ dotnet publish --manifest manifest.xml
 
 ## <a name="aspnet-core-implicit-store"></a>ASP.NET Core 암시적 저장소
 
+ASP.NET Core 암시적 저장소는 ASP.NET Core 2.0에만 적용됩니다. 암시적 저장소를 사용하지 **않는** ASP.NET Core 2.1 이상을 사용하는 응용 프로그램을 강력히 권장합니다. ASP.NET Core 2.1 이상에서는 공유 프레임워크를 사용합니다.
+
 런타임 패키지 저장소 기능은 앱이 [FDD(프레임워크 종속 배포)](index.md#framework-dependent-deployments-fdd) 앱으로 배포될 경우 ASP.NET Core 앱에서 암시적으로 사용됩니다. [`Microsoft.NET.Sdk.Web`](https://github.com/aspnet/websdk)의 대상에는 대상 시스템의 암시적 패키지 저장소를 참조하는 매니페스트가 포함됩니다. 또한 `Microsoft.AspNetCore.All` 패키지를 사용하는 FDD 앱은 앱과 자산만 포함되고 `Microsoft.AspNetCore.All` 메타패키지에 나열된 패키지가 포함되지 않은 게시된 앱이 됩니다. 해당 패키지는 대상 시스템에 있는 것으로 가정합니다.
 
 런타임 패키지 저장소는 .NET Core SDK가 설치될 때 호스트에 설치됩니다. 다른 설치 관리자에서는 .NET Core SDK, `apt-get`, Red Hat Yum, .NET Core Windows Server 호스팅 번들의 Zip/tarball 설치와 수동 런타임 패키지 저장소 설치를 포함한 런타임 패키지 저장소를 제공할 수 있습니다.
@@ -132,7 +136,7 @@ dotnet publish --manifest manifest.xml
 </PropertyGroup>
 ```
 
-> [!NOTE] 
+> [!NOTE]
 > [SCD(자체 포함된 배포)](index.md#self-contained-deployments-scd) 앱의 경우 대상 시스템에 필수 매니페스트 패키지가 없어도 되는 것으로 가정합니다. 따라서 SCD 앱의 경우 **\<PublishWithAspNetCoreTargetManifest>** 는 `true`로 설정될 수 없습니다.
 
 배포에 포함되지 않은 매니페스트 종속성을 사용하여 응용 프로그램을 배포할 경우(어셈블리가 *bin* 폴더에 있음) 해당 어셈블리의 호스트에서 런타임 패키지 저장소가 *사용되지 않습니다*. *bin* 폴더 어셈블리는 호스트의 런타임 패키지 저장소에 어셈블리가 있는지에 관계없이 사용됩니다.
@@ -142,5 +146,6 @@ dotnet publish --manifest manifest.xml
 게시할 때 배포가 *트리밍*될 경우에는 게시된 출력에서 지정한 매니페스트 패키지의 특정 버전만 보류됩니다. 앱을 시작하려면 지정된 버전의 패키지가 호스트에 있어야 합니다.
 
 ## <a name="see-also"></a>참고 항목
- [dotnet-publish](../tools/dotnet-publish.md)  
- [dotnet-store](../tools/dotnet-store.md)  
+
+* [dotnet-publish](../tools/dotnet-publish.md)  
+* [dotnet-store](../tools/dotnet-store.md)  

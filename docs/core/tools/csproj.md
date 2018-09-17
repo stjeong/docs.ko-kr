@@ -4,12 +4,12 @@ description: 기존 및 .NET Core csproj 파일 간의 차이점에 대해 알�
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.openlocfilehash: 1e356d0123328fe703f672c38cb5ee7799cb574c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d868eb689af1d87ea2adb1f0069345cbb8195af7
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218234"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45646378"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>.NET Core용 csproj 형식에 대한 추가 사항
 
@@ -20,13 +20,13 @@ ms.locfileid: "33218234"
 
 ```xml
  <PropertyGroup>
-   <TargetFramework>netcoreapp1.1</TargetFramework>
+   <TargetFramework>netcoreapp2.1</TargetFramework>
  </PropertyGroup>
  ```
  
  ```xml
  <PropertyGroup>
-   <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+   <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
  </PropertyGroup>
  ```
 
@@ -168,10 +168,10 @@ csproj를 사용하는 경우 프로젝트에서 기본 GLOB를 제거하고 다
 </PackageTargetFallback >
 ```
 
-다음 예제에서는 `netcoreapp1.0` 대상에 대해서만 대체를 지정합니다.
+다음 예제에서는 `netcoreapp2.1` 대상에 대해서만 대체를 지정합니다.
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp1.0'">
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```

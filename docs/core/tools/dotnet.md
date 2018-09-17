@@ -4,12 +4,12 @@ description: dotnet 명령(.NET Core CLI 도구에 대한 일반 드라이버) �
 author: mairaw
 ms.author: mairaw
 ms.date: 06/04/2018
-ms.openlocfilehash: 788dc746705f9328683019ab3ad9836204a1ea63
-ms.sourcegitcommit: fc70fcb9c789b6a4aefcdace46f3643fd076450f
+ms.openlocfilehash: 53e8f8bab1cbaabaa7926aa68197c18843b0b637
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34805661"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44079818"
 ---
 # <a name="dotnet-command"></a>dotnet 명령
 
@@ -17,7 +17,7 @@ ms.locfileid: "34805661"
 
 ## <a name="name"></a>name
 
-`dotnet` - 명령줄 명령을 실행하기 위한 일반 드라이버입니다.
+`dotnet` - .NET 소스 코드 및 이진 파일을 관리하기 위한 도구입니다.
 
 ## <a name="synopsis"></a>개요
 
@@ -40,11 +40,9 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 ## <a name="description"></a>설명
 
-`dotnet`은 CLI(명령줄 인터페이스) 도구 체인에 대한 일반 드라이버입니다. 자체적으로 호출되어 간단한 사용 방법을 제공합니다.
+`dotnet`은 .NET 소스 코드 및 이진 파일을 관리하기 위한 도구입니다. [`dotnet build`](dotnet-build.md) 및 [`dotnet run`](dotnet-run.md)와 같은 특정 작업을 수행하는 명령을 표시합니다. 각 명령은 자체 인수를 정의합니다. 각 명령 다음에 `--help`를 입력하면 간단한 도움말 설명서에 액세스할 수 있습니다.
 
-각 특정 기능은 명령으로 구현됩니다. 기능을 사용하려면 `dotnet` 뒤에 명령을 지정합니다(예: [`dotnet build`](dotnet-build.md)). 명령 다음에 오는 모든 인수는 고유한 인수입니다.
-
-`dotnet` 자체가 명령으로 사용되는 유일한 경우는 [프레임워크 종속 앱](../deploying/index.md)을 실행하는 경우입니다. `dotnet` 동사 뒤에 응용 프로그램 DLL을 지정하여 응용 프로그램을 실행합니다(예: `dotnet myapp.dll`).
+`dotnet`은 `dotnet myapp.dll`과 같은 응용 프로그램 DLL을 지정하여 응용 프로그램을 실행하는 데 사용할 수 있습니다. 배포 옵션에 대해 자세히 알아보려면 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요.
 
 ## <a name="options"></a>옵션
 
@@ -64,15 +62,15 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--fx-version <VERSION>`
 
-응용 프로그램 실행에 사용할 설치된 .NET Core 런타임의 버전입니다.
+응용 프로그램 실행에 사용할 .NET Core 런타임의 버전입니다.
 
 `-h|--help`
 
-명령에 대한 간단한 도움말을 출력합니다. `dotnet`과 함께 사용되는 경우 사용 가능한 명령 목록도 출력합니다.
+`dotnet build --help`와 같은 지정된 명령에 대한 설명서를 인쇄합니다. `dotnet --help`는 사용 가능한 명령 목록을 인쇄합니다.
 
 `--info`
 
-현재 운영 체제, 버전에 대한 SHA 커밋 및 기타 정보 등 CLI 도구 및 환경에 대한 자세한 정보를 출력합니다.
+.NET Core 설치 및 머신 환경(예: 현재 운영 체제)에 대한 자세한 정보를 인쇄하고 .NET Core 버전의 SHA를 커밋합니다.
 
 `--list-runtimes`
 
@@ -84,7 +82,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--roll-forward-on-no-candidate-fx`
 
- 후보 공유 프레임워크에서는 롤포워드하지 않습니다.
+ `0`으로 설정된 경우 부 버전 롤포워드를 사용하지 않도록 설정합니다. 자세한 내용은 [롤포워드](../whats-new/dotnet-core-2-1.md#roll-forward)를 참조하세요.
 
 `-v|--verbosity <LEVEL>`
 
@@ -110,19 +108,19 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--fx-version <VERSION>`
 
-응용 프로그램 실행에 사용할 설치된 .NET Core 런타임의 버전입니다.
+응용 프로그램 실행에 사용할 .NET Core 런타임의 버전입니다.
 
 `-h|--help`
 
-명령에 대한 간단한 도움말을 출력합니다. `dotnet`과 함께 사용되는 경우 사용 가능한 명령 목록도 출력합니다.
+`dotnet build --help`와 같은 지정된 명령에 대한 설명서를 인쇄합니다. `dotnet --help`는 사용 가능한 명령 목록을 인쇄합니다.
 
 `--info`
 
-현재 운영 체제, 버전에 대한 SHA 커밋 및 기타 정보 등 CLI 도구 및 환경에 대한 자세한 정보를 출력합니다.
+.NET Core 설치 및 머신 환경(예: 현재 운영 체제)에 대한 자세한 정보를 인쇄하고 .NET Core 버전의 SHA를 커밋합니다.
 
 `--roll-forward-on-no-candidate-fx`
 
- 후보 공유 프레임워크에서는 롤포워드하지 않습니다.
+ `0`으로 설정된 경우 부 버전 롤포워드를 사용하지 않도록 설정합니다. 자세한 내용은 [롤포워드](../whats-new/dotnet-core-2-1.md#roll-forward)를 참조하세요.
 
 `-v|--verbosity <LEVEL>`
 
@@ -144,15 +142,15 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--fx-version <VERSION>`
 
-응용 프로그램 실행에 사용할 설치된 .NET Core 런타임의 버전입니다.
+응용 프로그램 실행에 사용할 .NET Core 런타임의 버전입니다.
 
 `-h|--help`
 
-명령에 대한 간단한 도움말을 출력합니다. `dotnet`과 함께 사용되는 경우 사용 가능한 명령 목록도 출력합니다.
+`dotnet build --help`와 같은 지정된 명령에 대한 설명서를 인쇄합니다. `dotnet --help`는 사용 가능한 명령 목록을 인쇄합니다.
 
 `--info`
 
-현재 운영 체제, 버전에 대한 SHA 커밋 및 기타 정보 등 CLI 도구 및 환경에 대한 자세한 정보를 출력합니다.
+.NET Core 설치 및 머신 환경(예: 현재 운영 체제)에 대한 자세한 정보를 인쇄하고 .NET Core 버전의 SHA를 커밋합니다.
 
 `-v|--verbosity <LEVEL>`
 
@@ -259,7 +257,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 ### <a name="additional-tools"></a>추가 도구
 
-.NET Core SDK 2.1.300부터는 `DotnetCliToolReference`을 사용하여 프로젝트별로만 사용할 수 있었던 여러 도구를 .NET Core SDK의 일부로 사용할 수 있습니다. 사용 가능한 도구는 다음과 같습니다.
+.NET Core SDK 2.1.300부터는 `DotnetCliToolReference`을 사용하여 프로젝트별로만 사용할 수 있었던 여러 도구를 .NET Core SDK의 일부로 사용할 수 있습니다. 이러한 도구는 다음 표에 나열되어 있습니다.
 
 | 도구                                              | 함수                                                     |
 | ------------------------------------------------- | ------------------------------------------------------------ |
@@ -269,7 +267,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 | [user-secrets](/aspnet/core/security/app-secrets) | 개발 사용자 비밀을 관리합니다.                            |
 | [watch](/aspnet/core/tutorials/dotnet-watch)      | 파일이 변경될 때 명령을 실행하는 파일 감시자를 시작합니다. |
 
-각 도구에 대한 자세한 내용을 보려면 `dotnet <tool-name> --help`를 실행합니다.
+각 도구에 대한 자세한 내용을 보려면 `dotnet <tool-name> --help`를 입력합니다.
 
 ## <a name="examples"></a>예제
 
@@ -287,7 +285,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `dotnet build`
 
-이름이 `myapp.dll`인 프레임워크 종속형 앱을 실행합니다.
+`myapp.dll`과 같은 응용 프로그램 DLL을 실행합니다.
 
 `dotnet myapp.dll`
 
@@ -313,7 +311,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 
-부 버전 롤포워드를 사용하지 않도록 설정합니다. 자세한 내용은 [롤포워드](../whats-new/dotnet-core-2-1.md#roll-forward)를 참조하세요.
+`0`으로 설정된 경우 부 버전 롤포워드를 사용하지 않도록 설정합니다. 자세한 내용은 [롤포워드](../whats-new/dotnet-core-2-1.md#roll-forward)를 참조하세요.
 
 # <a name="net-core-20tabnetcore20"></a>[.NET Core 2.0](#tab/netcore20)
 

@@ -3,12 +3,12 @@ title: .NET Core를 사용하여 REST 클라이언트 만들기
 description: 이 자습서에서는 .NET Core 및 C# 언어의 다양한 기능에 대해 설명합니다.
 ms.date: 03/06/2017
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: bc3c23b277b233efba9f32cc49b29ac905f3abc8
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 13466b717d0676c2db5edf4c98a4ead3e673b96c
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480158"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227261"
 ---
 # <a name="rest-client"></a>REST 클라이언트
 
@@ -37,7 +37,7 @@ GitHub에서 REST 서비스에 HTTP 요청을 실행하는 응용 프로그램�
 패키지를 복원한 후 `dotnet build`를 실행합니다. 이렇게 하면 빌드 엔진이 실행되고 응용 프로그램이 만들어집니다. 마지막으로 `dotnet run`을 실행하여 응용 프로그램을 실행합니다.
 
 ## <a name="adding-new-dependencies"></a>새 종속성 추가
-.NET Core의 주요 디자인 목표 중 하나는 .NET Framework 설치의 크기를 최소화하는 것입니다. .NET Core 응용 프로그램 프레임워크에는 .NET Full Framework의 가장 일반적인 요소만 포함되어 있습니다. 응용 프로그램에 일부 기능을 위해 추가 라이브러리가 필요한 경우 C# 프로젝트(\*.csproj) 파일에 해당 종속성을 추가합니다. 현재 예제에서는 응용 프로그램이 JSON 응답을 처리할 수 있도록 `System.Runtime.Serialization.Json` 패키지를 추가해야 합니다.
+.NET Core의 주요 디자인 목표 중 하나는 .NET 설치의 크기를 최소화하는 것입니다. 응용 프로그램에 일부 기능을 위해 추가 라이브러리가 필요한 경우 C# 프로젝트(\*.csproj) 파일에 해당 종속성을 추가합니다. 현재 예제에서는 응용 프로그램이 JSON 응답을 처리할 수 있도록 `System.Runtime.Serialization.Json` 패키지를 추가해야 합니다.
 
 `csproj` 프로젝트 파일을 엽니다. 파일의 첫 번째 줄은 다음과 같습니다.
 

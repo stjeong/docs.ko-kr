@@ -3,13 +3,16 @@ title: Visual Studio를 사용한 .NET Core 앱 배포
 description: Visual Studio를 사용한 .NET Core 앱 배포에 대해 알아봅니다.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 04/18/2017
-ms.openlocfilehash: 2829bb5a2f5857f6124e5c1f78f5247fe8d1f552
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.date: 09/03/2018
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 62cfef08a8319981891c713c08c34eba5ab54b6f
+ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43407451"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44227742"
 ---
 # <a name="deploying-net-core-apps-with-visual-studio"></a>Visual Studio를 사용하여 .NET Core 앱 배포
 
@@ -30,13 +33,14 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
 
 1. 프로젝트를 만듭니다.
 
-   **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 **설치됨** 프로젝트 형식 창에서 **.NET Core**를 선택한 다음 가운데 창에서 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 "FDD" 등의 프로젝트 이름을 입력합니다. **확인** 단추를 선택합니다.
+   **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **설치된** 프로젝트 형식 창에서 언어(C# 또는 Visual Basic)의 프로젝트 범주를 확장하고 **.NET Core**를 선택한 다음, 가운데 창에 있는 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 "FDD" 등의 프로젝트 이름을 입력합니다. **확인** 단추를 선택합니다.
 
 1. 응용 프로그램의 소스 코드를 추가합니다.
 
-   편집기에서 *Program.cs* 파일을 열고 자동 생성된 코드를 다음 코드로 바꿉니다. 텍스트를 입력하라는 메시지가 표시된 다음 사용자가 입력한 개별 단어가 표시됩니다. 정규식 `\w+`를 사용하여 입력 테스트의 단어를 구분합니다.
+   편집기에서 *Program.cs* 또는 *Program.vb* 파일을 열고 자동 생성된 코드를 다음 코드로 바꿉니다. 텍스트를 입력하라는 메시지가 표시된 다음 사용자가 입력한 개별 단어가 표시됩니다. 정규식 `\w+`를 사용하여 입력 테스트의 단어를 구분합니다.
 
-   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
+   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
 
 1. 앱의 디버그 빌드를 만듭니다.
 
@@ -54,7 +58,7 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
 
       1. 이제 **게시** 탭에 단일 프로필 **FolderProfile**이 표시됩니다. 프로필의 구성 설정이 탭의 **요약** 섹션에 표시됩니다.
 
-   결과 파일은 프로젝트 *.\bin\release* 하위 디렉터리의 하위 디렉터리에 있는 `PublishOutput`이라는 디렉터리에 배치됩니다.
+   결과 파일은 프로젝트 *.\bin\release\netcoreapp2.1* 하위 디렉터리의 하위 디렉터리에 있는 Windows의 경우에는 `Publish`, Unix 시스템의 경우에는 `publish`이라는 디렉터리에 배치됩니다.
 
 게시 프로세스에서는 응용 프로그램의 파일과 함께 앱에 대한 디버깅 정보를 포함하는 프로그램 데이터베이스(.pdb) 파일을 내보냅니다. 이 파일은 주로 예외 디버그에 유용합니다. 응용 프로그램 파일과 함께 패키지하지 않도록 선택할 수 있습니다. 하지만 앱의 릴리스 빌드를 디버그하려는 경우 파일을 저장해야 합니다.
 
@@ -76,17 +80,40 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
 
 ## <a name="simpleSelf"></a> 타사 종속성이 없는 자체 포함 배포
 
-타사 종속성이 없는 자체 포함 배포에는 프로젝트 만들기, *csproj* 파일 수정, 앱 빌드, 테스트 및 게시가 포함됩니다. C#으로 작성된 간단한 예제에서는 이 프로세스를 보여 줍니다.
+타사 종속성이 없는 자체 포함 배포에는 프로젝트 만들기, *csproj* 파일 수정, 앱 빌드, 테스트 및 게시가 포함됩니다. C#으로 작성된 간단한 예제에서는 이 프로세스를 보여 줍니다. 프레임워크 종속 배포와 마찬가지로 프로젝트를 생성, 코딩 및 테스트하는 것으로 시작합니다.
 
 1. 프로젝트를 만듭니다.
 
-   **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트 추가** 대화 상자의 **설치됨** 프로젝트 형식 창에서 **.NET Core**를 선택한 다음 가운데 창에서 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 "SCD" 등의 프로젝트 이름을 입력하고 **확인** 단추를 선택합니다.
+   **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **설치된** 프로젝트 형식 창에서 언어(C# 또는 Visual Basic)의 프로젝트 범주를 확장하고 **.NET Core**를 선택한 다음, 가운데 창에 있는 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 "SCD" 등의 프로젝트 이름을 입력하고 **확인** 단추를 선택합니다.
 
 1. 응용 프로그램의 소스 코드를 추가합니다.
 
-   편집기에서 *Program.cs* 파일을 열고 자동 생성된 코드를 다음 코드로 바꿉니다. 텍스트를 입력하라는 메시지가 표시된 다음 사용자가 입력한 개별 단어가 표시됩니다. 정규식 `\w+`를 사용하여 입력 테스트의 단어를 구분합니다.
+   편집기에서 *Program.cs* 또는 파일을 열고 자동 생성된 코드를 다음 코드로 바꿉니다. 텍스트를 입력하라는 메시지가 표시된 다음 사용자가 입력한 개별 단어가 표시됩니다. 정규식 `\w+`를 사용하여 입력 테스트의 단어를 구분합니다.
 
-   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
+   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
+
+1. 세계화 고정 모드를 사용할 것인지 여부를 결정합니다.
+
+   특히 앱이 Linux를 대상으로 하는 경우 [세계화 고정 모드](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)를 활용하여 배포의 총 크기를 줄일 수 있습니다. 세계화 고정 모드는 전역적으로 인식되지 않는 서식 지정 규칙, 대/소문자 규칙 및 문자열 비교와 [고정 문화권](xref:System.Globalization.CultureInfo.InvariantCulture)의 정렬 순서를 사용할 수 있는 응용 프로그램에 유용합니다.
+
+   고정 모드를 사용하려면 **솔루션 탐색기**에서 프로젝트(솔루션 아님)를 마우스 오른쪽 단추로 클릭하고 **SCD.csproj 편집** 또는 **SCD.vbproj 편집**을 선택합니다. 그런 다음, 강조 표시된 다음 줄을 파일에 추가합니다.
+
+ [!code-xml[globalization-invariant-mode](~/samples/snippets/core/deploying/xml/invariant.csproj)]
+
+1. 응용 프로그램의 디버그 빌드를 만듭니다.
+
+   **빌드** > **솔루션 빌드**를 선택합니다. **디버그** > **디버깅 시작**을 선택하여 응용 프로그램의 디버그 빌드를 컴파일하고 실행할 수도 있습니다. 이 디버깅 단계를 통해 응용 프로그램이 호스트 플랫폼에서 실행될 때 발생하는 문제를 식별할 수 있습니다. 여전히 각 대상 플랫폼에서 테스트해야 합니다.
+
+   세계화 고정 모드를 사용하도록 설정한 경우, 특히 문화권 중요 데이터의 부재가 응용 프로그램에 적합한지 여부를 테스트해야 합니다.
+
+디버깅이 완료되면 자체 포함 배포를 게시할 수 있습니다.
+
+# <a name="visual-studio-156-and-earliertabvs156"></a>[Visual Studio 15.6 및 이전 버전](#tab/vs156)
+
+프로그램을 디버그하고 테스트한 후에는 각 대상 플랫폼에 대해 앱과 함께 배포할 파일을 만듭니다.
+
+Visual Studio에서 앱을 게시하려면 다음을 수행합니다.
 
 1. 앱의 대상 플랫폼을 정의합니다.
 
@@ -96,17 +123,13 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
 
    예를 들어 다음 예에서는 앱이 64비트 Windows 10 운영 체제 및 64비트 OS X 버전 10.11 운영 체제에서 실행됨을 나타냅니다.
 
-```xml
-<PropertyGroup>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-</PropertyGroup>
-```
+   ```xml
+   <PropertyGroup>
+      <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+   </PropertyGroup>
+   ```
 
    `<RuntimeIdentifiers>` 요소는 *csproj* 파일에 있는 `<PropertyGroup>`으로 이동할 수 있습니다. 전체 샘플 *csproj* 파일은 이 섹션의 뒷부분에 나옵니다.
-
-1. 앱의 디버그 빌드를 만듭니다.
-
-   **빌드** > **솔루션 빌드**를 선택합니다. **디버그** > **디버깅 시작**을 선택하여 응용 프로그램의 디버그 빌드를 컴파일하고 실행할 수도 있습니다.
 
 1. 앱을 게시합니다.
 
@@ -146,11 +169,97 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
 ```
+
+# <a name="visual-studio-157-and-latertabvs157"></a>[Visual Studio 15.7 이상](#tab/vs157)
+
+프로그램을 디버그하고 테스트한 후에는 각 대상 플랫폼에 대해 앱과 함께 배포할 파일을 만듭니다. 이렇게 하려면 각 대상 플랫폼에 대해 별도의 프로필을 만들어야 합니다.
+
+응용 프로그램이 대상으로 하는 각 플랫폼에 대해 다음을 수행합니다.
+
+1. 대상 플랫폼에 대한 프로필을 만듭니다.
+
+   이것이 첫 번째 프로필인 경우 **솔루션 탐색기**에서 프로젝트(솔루션 아님)를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+
+   프로필을 이미 만든 경우 프로젝트를 마우스 오른쪽 단추로 클릭하여 **게시** 대화 상자를 엽니다(아직 열려 있지 않은 경우). 그런 다음, **새 프로필**을 선택합니다.
+
+   **게시 대상 선택** 대화 상자가 열립니다.
+  
+1. Visual Studio에서 응용 프로그램을 게시하는 위치를 선택합니다.
+
+   단일 플랫폼에만 게시하는 경우 **폴더 선택** 텍스트 상자의 기본값을 적용합니다. 이렇게 하면 응용 프로그램의 프레임워크 종속 배포를 *\<project-directory>\bin\Release\netcoreapp2.1\publish\* 디렉터리에 게시합니다.
+
+   둘 이상의 플랫폼에 게시하는 경우 대상 플랫폼을 식별하는 문자열을 추가합니다. 예를 들어, 파일 경로에 "linux" 문자열을 추가하면 Visual Studio는 응용 프로그램의 프레임워크 종속 배포를 *\<project-directory>\bin\Release\netcoreapp2.1\publish\linux* 디렉터리에 게시합니다.
+
+1. **게시** 단추 옆에 있는 드롭다운 목록 아이콘을 선택하고 **프로필 만들기**를 선택하여 프로필을 만듭니다. 그런 다음, **프로필 만들기** 단추를 선택하여 프로필을 만듭니다.
+
+1. 자체 포함 배포를 게시 중임을 나타내고 앱이 대상으로 하는 플랫폼을 정의합니다.
+
+   1. **게시** 대화 상자에서 **구성** 링크를 선택하여 **프로필 설정** 대화 상자를 엽니다.
+
+   1. **배포 모드** 목록 상자에서 **자체 포함**을 선택합니다.
+
+   1. **대상 런타임** 목록 상자에서 응용 프로그램이 대상으로 하는 플랫폼 중 하나를 선택합니다.
+
+   1. **저장**을 선택하여 변경 내용을 적용하고 대화 상자를 닫습니다.
+
+1. 프로필 이름을 지정합니다.
+
+   1. **작업** > **프로필 이름 바꾸기**를 선택하여 프로필 이름을 지정 합니다.
+
+   2. 프로필에 대상 플랫폼을 식별하는 이름을 할당한 다음, **저장*을 선택합니다.
+
+이 단계를 반복하여 응용 프로그램이 대상으로 하는 추가 대상 플랫폼을 정의합니다.
+
+프로필을 구성했으므로 이제 앱을 게시할 준비가 되었습니다. 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
+
+   1. **게시** 창이 현재 열려 있지 않은 경우 **솔루션 탐색기**에서 프로젝트(솔루션 아님)를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+
+   2. 게시할 프로필을 선택한 다음, **게시**를 선택합니다. 게시할 각 프로필에 대해 이 작업을 수행합니다.
+
+   각 대상 위치(예제의 경우 bin\release\netcoreapp2.1\publish\\*profile-name*에는 앱을 시작하는 데 필요한 전체 파일 집합(앱 파일 및 모든 .NET Core 파일)이 포함됩니다.
+
+게시 프로세스에서는 응용 프로그램의 파일과 함께 앱에 대한 디버깅 정보를 포함하는 프로그램 데이터베이스(.pdb) 파일을 내보냅니다. 이 파일은 주로 예외 디버그에 유용합니다. 응용 프로그램 파일과 함께 패키지하지 않도록 선택할 수 있습니다. 하지만 앱의 릴리스 빌드를 디버그하려는 경우 파일을 저장해야 합니다.
+
+게시된 파일을 원하는 방식으로 배포합니다. 예를 들어 Zip 파일로 패키지하거나, 간단한 `copy` 명령을 사용하거나, 선택한 설치 패키지와 함께 배포할 수 있습니다.
+
+다음은 이 프로젝트에 대한 전체 *csproj* 파일입니다.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
+
+또한 Visual Studio는 대상으로 하는 각 플랫폼에 대해 별도의 게시 프로필(\*.pubxml)을 만듭니다. 예를 들어, linux 프로필(linux.pubxml)의 파일은 다음과 같이 나타납니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishProtocol>FileSystem</PublishProtocol>
+    <Configuration>Release</Configuration>
+    <Platform>Any CPU</Platform>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PublishDir>bin\Release\netcoreapp2.1\publish\linux</PublishDir>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <_IsPortable>false</_IsPortable>
+  </PropertyGroup>
+</Project>
+```
+
+---
 
 ## <a name="self-contained-deployment-with-third-party-dependencies"></a>타사 종속성이 있는 자체 포함 배포
 
@@ -164,11 +273,13 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
 
 다음은 이 프로젝트에 대한 전체 *csproj* 파일입니다.
 
+# <a name="visual-studio-156-and-earliertabvs156"></a>[Visual Studio 15.6 및 이전 버전](#tab/vs156)
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
@@ -176,6 +287,22 @@ Visual Studio를 사용하여 .NET Core 응용 프로그램을 개발하는 방�
   </ItemGroup>
 </Project>
 ```
+
+# <a name="visual-studio-157-and-latertabvs157"></a>[Visual Studio 15.7 이상](#tab/vs157)
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+  </ItemGroup>
+</Project>
+```
+
+---
 
 응용 프로그램을 배포하면 앱에서 사용된 타사 종속성도 응용 프로그램 파일에 포함됩니다. 타사 라이브러리는 앱이 실행되는 시스템에 없어도 됩니다.
 

@@ -3,13 +3,13 @@ title: .NET Core RID(런타임 식별자) 카탈로그
 description: RID(런타임 식별자) 및 .NET Core에서 RID의 사용 방법에 관해 알아봅니다.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/07/2017
-ms.openlocfilehash: 81f9e5f65385bbd81c7fdae7f75c62d11b6f6319
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.date: 07/19/2018
+ms.openlocfilehash: ff0449f7c6f878131f0ec4b16d685d2c02d26719
+ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33215911"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43517381"
 ---
 # <a name="net-core-rid-catalog"></a>.NET Core RID 카탈로그
 
@@ -122,22 +122,24 @@ RID를 사용할 수 있으려면 어떤 RID가 있는지 알아야 합니다. �
 - Debian
   - `debian-x64`
   - `debian.8-x64`
+  - `debian.9-x64`(.NET Core 1.1 이상 버전)
 - Fedora
   - `fedora-x64`
-  - `fedora.24-x64`
-  - `fedora.25-x64`(.NET Core 2.0 이상 버전)
-  - `fedora.26-x64`(.NET Core 2.0 이상 버전)
+  - `fedora.27-x64`
+  - `fedora.28-x64`(.NET Core 1.1 이상 버전)
 - Gentoo(.NET Core 2.0 이상 버전)
   - `gentoo-x64`
 - openSUSE
   - `opensuse-x64`
-  - `opensuse.42.1-x64`
+  - `opensuse.42.3-x64`
 - Oracle Linux
   - `ol-x64`
   - `ol.7-x64`
   - `ol.7.0-x64`
   - `ol.7.1-x64`
   - `ol.7.2-x64`
+  - `ol.7.3-x64`
+  - `ol.7.4-x64`
 - Red Hat Enterprise Linux
   - `rhel-x64`
   - `rhel.6-x64`(.NET Core 2.0 이상 버전)
@@ -148,21 +150,32 @@ RID를 사용할 수 있으려면 어떤 RID가 있는지 알아야 합니다. �
   - `rhel.7.4-x64`(.NET Core 2.0 이상 버전)
 - Tizen(.NET Core 2.0 이상 버전)
   - `tizen`
+  - `tizen.4.0.0`
+  - `tizen.5.0.0`
 - Ubuntu
   - `ubuntu-x64`
   - `ubuntu.14.04-x64`
-  - `ubuntu.14.10-x64`
-  - `ubuntu.15.04-x64`
-  - `ubuntu.15.10-x64`
   - `ubuntu.16.04-x64`
-  - `ubuntu.16.10-x64`
+  - `ubuntu.17.10-x64`
+  - `ubuntu.18.04-x64`
 - Ubuntu 파생 제품
   - `linuxmint.17-x64`
   - `linuxmint.17.1-x64`
   - `linuxmint.17.2-x64`
   - `linuxmint.17.3-x64`
-  - `linuxmint.18-x64`
+  - `linuxmint.18-x64`(.NET Core 2.0 이상 버전)
   - `linuxmint.18.1-x64`(.NET Core 2.0 이상 버전)
+  - `linuxmint.18.2-x64`(.NET Core 2.0 이상 버전)
+  - `linuxmint.18.3-x64`(.NET Core 2.0 이상 버전)
+- SLES(SUSE Enterprise Linux)(.NET Core 2.0 이상 버전)
+  - `sles-x64`
+  - `sles.12-x64`
+  - `sles.12.1-x64`
+  - `sles.12.2-x64`
+  - `sles.12.3-x64`
+- Alpine Linux(.NET Core 2.1 이상 버전)
+  - `alpine-x64`
+  - `alpine.3.7-x64`
 
 자세한 내용은 [Linux에서 .NET Core의 필수 구성 요소](linux-prerequisites.md)를 참조하세요.
 
@@ -185,4 +198,4 @@ macOS RID는 이전 "OSX" 브랜딩을 사용합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 ID](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
+* [런타임 ID](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
