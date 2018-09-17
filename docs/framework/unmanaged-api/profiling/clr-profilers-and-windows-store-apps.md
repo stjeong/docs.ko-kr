@@ -15,11 +15,11 @@ ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f1747d99fbfbc31fb592aee570d10d574b8480b0
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558225"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45743815"
 ---
 # <a name="clr-profilers-and-windows-store-apps"></a>CLR 프로파일러 및 Windows 스토어 앱
 
@@ -134,7 +134,7 @@ IEnumerable<Package> packages = packageManager.FindPackagesForUser(currentUserSI
  **사용자 지정 환경 블록 지정**  
  새 COM 인터페이스가 [IPackageDebugSettings](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx), 진단의 몇 가지 형태를 쉽게 수행할 수 있도록 Windows 스토어 앱의 실행 동작을 사용자 지정할 수 있습니다.  해당 메서드 중 하나 [EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=vs.85\).aspx), 시작 되 면 Windows 스토어 앱에는 환경 블록을 전달할 수 있도록 자동 프로세스가 일시 중단 해제 하는 등 기타 유용한 효과 함께 합니다.  환경 블록을이 환경 변수를 지정 해야 하는 위치 이기 때문에 중요 (`COR_PROFILER`, `COR_ENABLE_PROFILING`, 및 `COR_PROFILER_PATH)`) 하는 데 clr Profiler DLL을 로드 합니다.  
   
- 다음 코드 조각을 고려 하세요.  
+ 다음 코드 조각을 살펴봅니다.  
   
 ```csharp  
 IPackageDebugSettings pkgDebugSettings = new PackageDebugSettings();  

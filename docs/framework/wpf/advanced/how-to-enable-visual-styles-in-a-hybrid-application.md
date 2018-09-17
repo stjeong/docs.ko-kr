@@ -9,11 +9,11 @@ helpviewer_keywords:
 - visual styles [Windows Forms]
 ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1
 ms.openlocfilehash: f4684e277335a119d41d5bd79d504ed37a76d6fc
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45675797"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750234"
 ---
 # <a name="how-to-enable-visual-styles-in-a-hybrid-application"></a>방법: 혼합 응용 프로그램에서 비주얼 스타일 사용
 이 항목을 사용 하도록 설정 하는 방법을 보여 줍니다 [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] 에서 비주얼 스타일을 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 에 호스트 된 컨트롤을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-기반 응용 프로그램.  

@@ -10,11 +10,11 @@ author: Xansky
 ms.author: mhopkins
 manager: markl
 ms.openlocfilehash: 3736d1e8b23b8e05882a3fe016be0ac1a18ef51d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45639057"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45743010"
 ---
 # <a name="implementing-the-ui-automation-rangevalue-control-pattern"></a>UI 자동화 RangeValue 컨트롤 패턴 구현
 > [!NOTE]

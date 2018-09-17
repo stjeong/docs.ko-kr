@@ -3,11 +3,11 @@ title: 확인
 ms.date: 03/30/2017
 ms.assetid: 8637aeaf-ac9e-49b8-93f4-da15dee45277
 ms.openlocfilehash: caa712aa52da01ce44335a361fd6c9f5215316bf
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45649246"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45964477"
 ---
 # <a name="confirmation"></a>확인
 이 샘플에서는 <xref:System.Activities.Statements.CompensableActivity>의 사용 및 확인과 관련된 일반적인 네 개의 시나리오를 보여 주고, 네 개의 워크플로를 실행하여 확인하는 방법을 보여 줍니다. 이 샘플은 선언적 버전과 명령적 버전으로 사용할 수 있습니다.   

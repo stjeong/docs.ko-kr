@@ -11,12 +11,12 @@ helpviewer_keywords:
 - walkthroughs [Windows Forms], visual inheritance
 - Windows Forms, inheritance
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
-ms.openlocfilehash: bc91e3bde54eedb4d9dbcfcb9f7faa0ccc98e397
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b17de01c4a5e89051393aa3c6bb2d0079535dbf6
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43505626"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45746207"
 ---
 # <a name="walkthrough-demonstrating-visual-inheritance"></a>연습: 시각적 상속 설명
 시각적 상속을 통해 기본 폼의 컨트롤을 보고 새 컨트롤을 추가할 수 있습니다. 이 연습에서는 기본 폼을 만들고 클래스 라이브러리로 컴파일합니다. 이 클래스 라이브러리를 다른 프로젝트로 가져와 기본 폼에서 상속하는 새 양식을 만듭니다. 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.  
@@ -80,7 +80,7 @@ ms.locfileid: "43505626"
   
     -   설정 된 **(이름)** 속성을 **btnProtected**합니다.  
   
-    -   설정 된**한정자** 속성을 **Protected**합니다. 따라서에서 상속 하는 폼 **Form1** 속성을 수정 하려면 **btnProtected**합니다.  
+    -   설정 된 **한정자** 속성을 **Protected**합니다. 따라서에서 상속 하는 폼 **Form1** 속성을 수정 하려면 **btnProtected**합니다.  
   
 4.  두 번 클릭 합니다 **Say Hello** 에 대 한 이벤트 처리기를 추가 하려면 단추를 **클릭** 이벤트입니다.  
   
@@ -128,7 +128,7 @@ ms.locfileid: "43505626"
   
 #### <a name="to-add-an-inherited-form"></a>상속된 폼을 추가하려면  
   
-1.  **솔루션 탐색기**, 마우스 오른쪽 단추로 클릭 합니다 **InheritanceTest** 프로젝트를 **추가**를 선택한 후**새 항목**합니다.  
+1.  **솔루션 탐색기**, 마우스 오른쪽 단추로 클릭 합니다 **InheritanceTest** 프로젝트를 **추가**를 선택한 후 **새 항목**합니다.  
   
 2.  **새 항목 추가** 대화 상자를 선택 합니다 **Windows Forms** 범주 (범주 목록이 표시) 하는 경우 선택한 후는 **상속 된 폼** 템플릿.  
   

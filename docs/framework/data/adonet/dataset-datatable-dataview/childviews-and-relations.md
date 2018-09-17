@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: d475d356-6abb-4701-8fd1-2906fb93dfba
 ms.openlocfilehash: e27ef72f0341524524a8f267eeeb13a6f46deb52
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/17/2018
-ms.locfileid: "45692594"
+ms.locfileid: "45964282"
 ---
 # <a name="childviews-and-relations"></a>ChildView 및 관계
 <xref:System.Data.DataSet>의 테이블 사이에 관계가 존재하는 경우 부모 테이블의 행에 대한 <xref:System.Data.DataView>의 <xref:System.Data.DataRowView.CreateChildView%2A> 메서드를 사용하여 관련 자식 테이블의 행이 포함된 <xref:System.Data.DataRowView>를 만들 수 있습니다. 예를 들어, 다음 코드에서는 **범주** 및 해당 관련 **제품** 사전순으로 정렬 **CategoryName** 고 **ProductName** .  

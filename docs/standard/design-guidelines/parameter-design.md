@@ -12,11 +12,11 @@ ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: ea5311de8cef266af23b259d943568bfa95eaf72
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45615078"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45964818"
 ---
 # <a name="parameter-design"></a>매개 변수 디자인
 이 섹션에서는 매개 변수 디자인, 인수를 확인 하는 것에 대 한 지침을 사용 하 여 섹션을 비롯 한 광범위 한 지침을 제공 합니다. 에 설명 된 지침을 참조 해야 뿐만 [매개 변수 명명](../../../docs/standard/design-guidelines/naming-parameters.md)합니다.  

@@ -13,11 +13,11 @@ ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 3bc5b4a9bef51ac1591bdeb21651cee624d552b2
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45592971"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45743026"
 ---
 # <a name="impersonating-and-reverting"></a>가장 및 되돌리기
 Windows 계정을 가장하기 위해 Windows 계정 토큰을 가져와야 하는 경우도 있습니다. 예를 들어 ASP.NET 기반 응용 프로그램이 여러 사용자를 대신하여 작동해야 하는 경우가 있습니다. 응용 프로그램이 인터넷 정보 서비스(IIS)에서 관리자를 나타내는 토큰을 수락하고, 사용자를 가장하고, 작업을 수행하며, 이전 ID로 되돌릴 수 있습니다. 그런 다음 응용 프로그램은 권한이 적은 사용자를 나타내는 IIS의 토큰을 수락하고, 일부 작업을 수행하여, 다시 되돌릴 수 있습니다.  

@@ -3,11 +3,11 @@ title: 순환 추적
 ms.date: 03/30/2017
 ms.assetid: 5ff139f9-8806-47bc-8f33-47fe6c436b92
 ms.openlocfilehash: 1f6c5287e6a53ed26ee5c9ed477e08dafc512e3f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45638430"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45743405"
 ---
 # <a name="circular-tracing"></a>순환 추적
 이 샘플에서는 순환 버퍼 추적 수신기의 구현 방법을 보여 줍니다. 프로덕션 서비스의 대표적인 시나리오는 장기간 사용 가능한 서비스가 있고 낮은 수준으로 추적 로깅을 사용하도록 설정한 경우입니다. 이러한 서비스는 많은 디스크 공간을 사용합니다. 서비스의 문제를 해결할 때는 추적 로그에서 가장 최근의 데이터가 문제 해결과 직접적인 관련이 있습니다. 이 샘플에서는 구성 가능한 최대 데이터 크기에 맞게 디스크에 가장 최근의 추적만 유지하는 순환 버퍼 추적 수신기를 구현하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 사용자 지정 추적 수신기를 포함 합니다.  

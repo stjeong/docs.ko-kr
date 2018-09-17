@@ -10,11 +10,11 @@ helpviewer_keywords:
 - examples [Windows Forms], tooltips
 ms.assetid: c4b60637-4c0a-44c2-a103-f66dff887936
 ms.openlocfilehash: 7f698a517fbf72ceafde4a117b4d92dd9d352834
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597526"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45964407"
 ---
 # <a name="how-to-set-tooltips-for-controls-on-a-windows-form-at-design-time"></a>방법: 디자인 타임에 Windows Form의 컨트롤에 도구 설명 설정
 설정할 수 있습니다는 <xref:System.Windows.Forms.ToolTip> Windows Forms 디자이너 또는 코드에서 문자열입니다. 에 대 한 자세한 내용은 합니다 <xref:System.Windows.Forms.ToolTip> 구성 요소를 참조 하세요 [ToolTip 구성 요소 개요](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md)합니다.  

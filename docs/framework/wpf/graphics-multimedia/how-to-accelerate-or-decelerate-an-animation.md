@@ -8,11 +8,11 @@ helpviewer_keywords:
 - animation [WPF], decelerating
 ms.assetid: 4f383b2c-f94d-4a4e-9a06-f56f5dae95f9
 ms.openlocfilehash: b1649f27fc8ff850516eef2086dbce732915406b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45678867"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45746012"
 ---
 # <a name="how-to-accelerate-or-decelerate-an-animation"></a>방법: 애니메이션 가속 또는 감속
 이 예제에서는 애니메이션을 가속화 하 고 시간이 지남에 따라 감속 하는 방법에 설명 합니다. 다음 예제에서는 여러 사각형 다른 애니메이션으로 애니메이션 <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> 고 <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> 설정 합니다.  

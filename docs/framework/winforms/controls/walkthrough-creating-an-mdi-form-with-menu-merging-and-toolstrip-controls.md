@@ -14,12 +14,12 @@ helpviewer_keywords:
 - MDI forms [Windows Forms], creating
 - MDI forms [Windows Forms], walkthroughs
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
-ms.openlocfilehash: a84b51679969f38955dd6a72ffe94ec8ca70b3df
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 6236190340833e3f8810387e51ad53e1cb10d37b
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861790"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45743552"
 ---
 # <a name="walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls"></a>연습: 메뉴 병합 및 ToolStrip 컨트롤을 사용하여 MDI 폼 만들기
 <xref:System.Windows.Forms?displayProperty=nameWithType> 네임스페이스는 MDI(다중 문서 인터페이스) 응용 프로그램을 지원하고 <xref:System.Windows.Forms.MenuStrip> 컨트롤은 메뉴 병합을 지원합니다. MDI 폼은 <xref:System.Windows.Forms.ToolStrip> 컨트롤일 수도 있습니다.  
@@ -133,7 +133,7 @@ ms.locfileid: "43861790"
   
 4.  클릭 **새로 만들기** 여러 번입니다.  
   
-     자식 폼을 자동으로 아래에 나와 W**창** 때문에 메뉴 항목을 <xref:System.Windows.Forms.MenuStrip> 컨트롤의 <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> 속성에 할당 됩니다.  
+     자식 폼이 자동으로 나열 합니다 **창** 때문에 메뉴 항목는 <xref:System.Windows.Forms.MenuStrip> 컨트롤의 <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> 속성에 할당 됩니다.  
   
 ## <a name="adding-toolstrip-support"></a>ToolStrip 지원 추가  
  이 절차에서는 추가 4 <xref:System.Windows.Forms.ToolStrip> MDI 부모 폼에 컨트롤을 합니다. 각 <xref:System.Windows.Forms.ToolStrip> 컨트롤 내에 추가 되는 <xref:System.Windows.Forms.ToolStripPanel> 폼의 가장자리에 도킹 된 컨트롤입니다.  

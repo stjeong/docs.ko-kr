@@ -9,11 +9,11 @@ helpviewer_keywords:
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
 ms.openlocfilehash: b47be45f00ee03d400383dd45dc6776cff3f816d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668992"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45742501"
 ---
 # <a name="serialization-guidelines"></a>Serialization 지침
 이 문서에서는 serialize될 API를 디자인할 때 고려해야 할 지침을 보여 줍니다.  

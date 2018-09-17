@@ -18,11 +18,11 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: f589225dde1ba2aabc4ca32542339a771c3287d4
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45591453"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45742945"
 ---
 # <a name="imetadatatablesgetguid-method"></a>IMetaDataTables::GetGuid 메서드
 지정된 된 인덱스에서 행의 GUID를 가져옵니다.  

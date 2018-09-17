@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Dock property [Windows Forms], aligning controls (using designer)
 ms.assetid: 51f08998-5e3b-4330-be58-a4edd0eb60f4
 ms.openlocfilehash: 513029c1bd5cc4af52fcee97f7fab961729e613c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597604"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45741728"
 ---
 # <a name="how-to-align-a-control-to-the-edges-of-forms-at-design-time"></a>방법: 디자인 타임에 컨트롤을 폼의 가장자리에 맞춤
 설정 하 여 폼의 가장자리에 맞춰서 컨트롤을 정렬할 수 있게 된 <xref:System.Windows.Forms.Control.Dock%2A>합니다. 이 속성은 양식에서 컨트롤의 위치를 지정합니다. <xref:System.Windows.Forms.Control.Dock%2A> 속성은 다음 값으로 설정할 수 있습니다.  

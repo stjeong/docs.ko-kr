@@ -6,11 +6,11 @@ ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3571ebb2fdd2bcdfd8be1f0087d096e01f18790a
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45674093"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45964845"
 ---
 # <a name="guidelines-for-collections"></a>컬렉션에 대한 지침
 몇 가지 일반적인 특징이 포함 된 개체의 그룹을 조작 하도록 특별히 설계 된 모든 형식에 컬렉션을 간주할 수 있습니다. 이러한 형식 구현에 대 한 적절 한 것은 항상 <xref:System.Collections.IEnumerable> 또는 <xref:System.Collections.Generic.IEnumerable%601>이므로이 섹션에서는 고려 컬렉션 되도록 해당 인터페이스 중 하나 또는 모두를 구현 하는 형식입니다.  

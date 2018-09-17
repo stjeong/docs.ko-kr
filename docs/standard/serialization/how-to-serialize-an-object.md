@@ -9,11 +9,11 @@ helpviewer_keywords:
 - objects, serializing steps
 ms.assetid: a1207d05-32b2-4953-8582-959607991227
 ms.openlocfilehash: e4d6e3edb15dbf5ba4b7ec7f8658fec1a618d315
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45624907"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45748577"
 ---
 # <a name="how-to-serialize-an-object"></a>방법: 개체 Serialize
 개체를 serialize하려면 먼저 serialize될 개체를 만들고 해당 public 속성과 필드를 설정합니다. 이렇게 하려면 XML 스트림이 저장될 전송 형식을 스트림 또는 파일 중에서 결정합니다. 예를 들어 XML 스트림을 영구적 형태로 저장해야 하는 경우에는 <xref:System.IO.FileStream> 개체를 만듭니다.  
