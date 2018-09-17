@@ -1,44 +1,47 @@
 ---
 title: '%= 연산자(C# 참조)'
-ms.date: 04/04/2018
+ms.date: 09/04/2018
 f1_keywords:
 - '%=_CSharpKeyword'
 helpviewer_keywords:
 - remainder assignment operator (%=) [C#]
 - '%= assignment operator (remainder assignment) [C#]'
 ms.assetid: 47e5f068-1d97-4010-bd3b-e21b5d3a77f5
-ms.openlocfilehash: 009c162b13fab05ba349d0535fe8dfae206502f3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: c475517666bdadaa457dbb4188808b3a96fcdf0e
+ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43399493"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44085649"
 ---
-# <a name="-operator-c-reference"></a><span data-ttu-id="19161-102">%= 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="19161-102">%= Operator (C# Reference)</span></span>
-<span data-ttu-id="19161-103">나머지 대입 연산자입니다.</span><span class="sxs-lookup"><span data-stu-id="19161-103">The remainder assignment operator.</span></span>  
-  
-## <a name="remarks"></a><span data-ttu-id="19161-104">설명</span><span class="sxs-lookup"><span data-stu-id="19161-104">Remarks</span></span>  
- <span data-ttu-id="19161-105">다음과 같은 `%=` 대입 연산자를 사용하는 식의 경우</span><span class="sxs-lookup"><span data-stu-id="19161-105">An expression using the `%=` assignment operator, such as</span></span>  
-  
-```csharp  
-x %= y  
-```  
-  
- <span data-ttu-id="19161-106">위의 식은 아래의 식과 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="19161-106">is equivalent to</span></span>  
-  
-```csharp  
-x = x % y  
-```  
-  
- <span data-ttu-id="19161-107">단, `x`가 한 번만 계산됩니다.</span><span class="sxs-lookup"><span data-stu-id="19161-107">except that `x` is only evaluated once.</span></span> <span data-ttu-id="19161-108">[% 연산자](../../../csharp/language-reference/operators/remainder-operator.md)는 나누기 후 나머지를 계산하기 위해 숫자 형식에 대해 미리 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="19161-108">The [% operator](../../../csharp/language-reference/operators/remainder-operator.md) is predefined for numeric types to compute the remainder after division.</span></span>  
-  
- <span data-ttu-id="19161-109">`%=` 연산자를 직접 오버로드할 수는 없지만 사용자 정의 형식은 [% 연산자](../../../csharp/language-reference/operators/remainder-operator.md)를 오버로드할 수 있습니다([연산자(C# 참조)](../../../csharp/language-reference/keywords/operator.md)).</span><span class="sxs-lookup"><span data-stu-id="19161-109">The `%=` operator cannot be overloaded directly, but user-defined types can overload the [% operator](../../../csharp/language-reference/operators/remainder-operator.md) (see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)).</span></span>  
-  
-## <a name="example"></a><span data-ttu-id="19161-110">예</span><span class="sxs-lookup"><span data-stu-id="19161-110">Example</span></span>  
- [!code-csharp[csRefOperators#4](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-assignment-operator_1.cs)]  
-  
-## <a name="see-also"></a><span data-ttu-id="19161-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="19161-111">See Also</span></span>
+# <a name="-operator-c-reference"></a><span data-ttu-id="75b3b-102">%= 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="75b3b-102">%= Operator (C# Reference)</span></span>
 
-- [<span data-ttu-id="19161-112">C# 참조</span><span class="sxs-lookup"><span data-stu-id="19161-112">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="19161-113">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="19161-113">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="19161-114">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="19161-114">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)
+<span data-ttu-id="75b3b-103">나머지 대입 연산자입니다.</span><span class="sxs-lookup"><span data-stu-id="75b3b-103">The remainder assignment operator.</span></span>
+
+<span data-ttu-id="75b3b-104">다음과 같은 `%=` 연산자를 사용하는 식의 경우</span><span class="sxs-lookup"><span data-stu-id="75b3b-104">An expression using the `%=` operator, such as</span></span>  
+
+```csharp
+x %= y
+```  
+
+<span data-ttu-id="75b3b-105">위의 식은 아래의 식과 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="75b3b-105">is equivalent to</span></span>  
+
+```csharp
+x = x % y
+```  
+
+<span data-ttu-id="75b3b-106">단, `x`가 한 번만 계산됩니다.</span><span class="sxs-lookup"><span data-stu-id="75b3b-106">except that `x` is only evaluated once.</span></span>
+  
+<span data-ttu-id="75b3b-107">[나머지 연산자](remainder-operator.md) `%`는 모든 숫자 형식에서 지원되며 피연산자의 분할 후 나머지를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="75b3b-107">The [remainder operator](remainder-operator.md) `%` is supported by all numeric types and computes the remainder after division of its operands.</span></span>
+
+<span data-ttu-id="75b3b-108">사용자 정의 형식이 [나머지 연산자](remainder-operator.md) `%`에 [오버로드](../keywords/operator.md)되면, 나머지 할당 연산자 `%=`는 암시적으로 오버로드됩니다.</span><span class="sxs-lookup"><span data-stu-id="75b3b-108">If a user-defined type [overloads](../keywords/operator.md) the [remainder operator](remainder-operator.md) `%`, the remainder assignment operator `%=` is implicitly overloaded.</span></span>
+  
+<span data-ttu-id="75b3b-109">다음 예제에서는 `%=` 연산자의 사용법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="75b3b-109">The following example demonstrates the usage of the `%=` operator:</span></span>
+
+[!code-csharp-interactive[%= example](~/samples/snippets/csharp/language-reference/operators/RemainderExamples.cs#3)]
+
+## <a name="see-also"></a><span data-ttu-id="75b3b-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="75b3b-110">See also</span></span>
+
+- [<span data-ttu-id="75b3b-111">C# 참조</span><span class="sxs-lookup"><span data-stu-id="75b3b-111">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="75b3b-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="75b3b-112">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="75b3b-113">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="75b3b-113">C# Operators</span></span>](index.md)
