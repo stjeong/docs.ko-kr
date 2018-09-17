@@ -10,11 +10,11 @@ ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5a4645efc9276429cbdb0812f1ca501c89ea5dbb
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45595204"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45743231"
 ---
 # <a name="dynamic-language-runtime-overview"></a>동적 언어 런타임 개요
 DLR(*동적 언어 런타임*)은 동적 언어에 대한 서비스 집합을 CLR(공용 언어 런타임)에 추가하는 런타임 환경입니다. DLR을 사용하면 .NET Framework에서 실행할 동적 언어를 개발하고 정적 형식의 언어에 동적 기능을 추가하기가 간편해집니다.  

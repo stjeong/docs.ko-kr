@@ -3,11 +3,11 @@ title: ASP.NET에서 System.Transactions 사용
 ms.date: 03/30/2017
 ms.assetid: 1982c300-7ea6-4242-95ed-dc28ccfacac9
 ms.openlocfilehash: 7b73ec970776f39a0c056e2a706d4818cda6cd72
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45641380"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45698380"
 ---
 # <a name="using-systemtransactions-in-aspnet"></a>ASP.NET에서 System.Transactions 사용
 이 항목에서는 <xref:System.Transactions> 응용 프로그램 내부에서 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 를 성공적으로 사용하는 방법에 대해 설명합니다.  

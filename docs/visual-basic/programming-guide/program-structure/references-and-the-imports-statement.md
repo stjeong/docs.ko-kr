@@ -10,11 +10,11 @@ helpviewer_keywords:
 - assemblies [Visual Basic], references
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
 ms.openlocfilehash: 89d360e5caa3cdb0dd1ecb985ea7ba727e5a6d9d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44208519"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45692673"
 ---
 # <a name="references-and-the-imports-statement-visual-basic"></a>참조 및 Imports 문(Visual Basic)
 있습니다 수 외부 개체에 사용할 프로젝트를 선택 하 여 합니다 **참조 추가** 명령 합니다 **프로젝트** 메뉴. Visual Basic에는 형식 라이브러리 하지만 자세한 정보를 포함 하는 같은 어셈블리를 참조할 수 있습니다.  
