@@ -3,11 +3,11 @@ title: 자세한 구문(F#)
 description: 'F # 프로그래밍 언어에서 자세한 정보 및 간단한 구문 간의 차이점에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: b4f2354738da4692cb444e5e7dd9531d80d26664
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45647141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45972321"
 ---
 # <a name="verbose-syntax"></a>자세한 구문
 

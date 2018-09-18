@@ -11,11 +11,11 @@ author: mairaw
 ms.author: mairaw
 ms.topic: conceptual
 ms.openlocfilehash: 7659dde4a2cb08fc3257d2f613ce4146522072b6
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45593298"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45990728"
 ---
 # <a name="additional-class-libraries-and-apis"></a>추가 클래스 라이브러리 및 API
 

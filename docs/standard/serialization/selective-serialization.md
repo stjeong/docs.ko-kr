@@ -8,11 +8,11 @@ helpviewer_keywords:
 - binary serialization, selective serialization
 ms.assetid: 39c56635-95d2-4afd-aff1-b022e7649bb3
 ms.openlocfilehash: 74e21045ec70faf6ee82200a15362d51edf61433
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45652887"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46003531"
 ---
 # <a name="selective-serialization"></a>선택적 serialization
 클래스에는 흔히 직렬화하지 않아야 하는 필드가 있습니다. 예를 들어 클래스가 멤버 변수에 스레드 ID를 저장하는 경우입니다. 클래스가 deserialize되면 클래스가 직렬화된 시점에 대한 ID가 저장된 스레드가 더 이상 실행 중이지 않을 수 있으므로 이 값을 직렬화하는 것은 의미가 없습니다. 다음과 같이 멤버 변수를 [NonSerialized](xref:System.NonSerializedAttribute) 특성으로 표시하여 해당 변수가 직렬화되는 것을 방지할 수 있습니다.  

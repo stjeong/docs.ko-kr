@@ -3,11 +3,11 @@ title: '엔드포인트: Transactions Flowed Per Second'
 ms.date: 03/30/2017
 ms.assetid: 0f370ff1-a913-450b-bccb-c279ad165b3d
 ms.openlocfilehash: 79f50b6706facd040ec2d325c676f210d5327bf8
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45667848"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002049"
 ---
 # <a name="endpoint-transactions-flowed-per-second"></a>엔드포인트: Transactions Flowed Per Second
 카운터 이름: Transactions Flowed Per Second  

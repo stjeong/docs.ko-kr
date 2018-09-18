@@ -16,11 +16,11 @@ helpviewer_keywords:
 - GDI print path [WPF]
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 ms.openlocfilehash: 04ea64f0e6563012a3b272306df6be4575ed7659
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597696"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46000966"
 ---
 # <a name="printing-overview"></a>인쇄 개요
 Microsoft.NET Framework를 사용 하 여 Windows Presentation Foundation (WPF)를 사용 하 여 응용 프로그램 개발자가 새로운 풍부한 인쇄 및 인쇄 시스템 관리 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다. [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)]에서는 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 응용 프로그램을 만드는 개발자와 비관리 코드를 사용하는 개발자도 이러한 인쇄 시스템 향상 기능을 일부 사용할 수 있습니다. 이 새로운 기능의 핵심은 새 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 파일 형식과 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] 인쇄 경로입니다.  

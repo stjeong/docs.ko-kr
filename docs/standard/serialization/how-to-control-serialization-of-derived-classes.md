@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
 ms.openlocfilehash: 00eb4ba1f5f84c60f1ca51871f604b6ee27798c3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45645725"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002842"
 ---
 # <a name="how-to-control-serialization-of-derived-classes"></a>방법: 파생 클래스의 Serialization 제어
 **XmlElementAttribute** 특성을 사용하여 XML 요소의 이름을 변경하는 것이 개체 serialization을 사용자 지정하는 유일한 방법은 아닙니다. 기존 클래스에서 파생하고 새 클래스를 serialize하는 방법을 <xref:System.Xml.Serialization.XmlSerializer> 인스턴스에 지시하여 XML 스트림을 사용자 지정할 수도 있습니다.  

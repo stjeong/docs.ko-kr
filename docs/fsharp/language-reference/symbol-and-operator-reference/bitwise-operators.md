@@ -3,11 +3,11 @@ title: 비트 연산자(F#)
 description: 'F # 프로그래밍 언어에서 사용할 수 있는 비트 연산자에 알아봅니다.'
 ms.date: 07/20/2018
 ms.openlocfilehash: ed76fcf5f9c569a2f288cf260e99dc29fd65ef3b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45653306"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45989737"
 ---
 # <a name="bitwise-operators"></a>비트 연산자
 

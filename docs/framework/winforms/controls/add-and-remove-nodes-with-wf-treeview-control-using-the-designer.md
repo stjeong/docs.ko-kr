@@ -8,11 +8,11 @@ helpviewer_keywords:
 - TreeView control [Windows Forms], adding nodes
 ms.assetid: 35bf1750-045e-4ec5-97cb-b47b0dbdaa2c
 ms.openlocfilehash: 95f3f097d8e01828f2727bac742c752b656019e5
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45594574"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45971797"
 ---
 # <a name="how-to-add-and-remove-nodes-with-the-windows-forms-treeview-control-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms TreeView 컨트롤에서 노드 추가 및 제거
 Windows Forms 있으므로 <xref:System.Windows.Forms.TreeView> 해당 부모 노드를 주의 기울여야 하는 노드를 추가 하는 경우 컨트롤이 계층적 방식으로 노드를 표시 합니다.  

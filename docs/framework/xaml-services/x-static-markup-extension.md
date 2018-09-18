@@ -11,11 +11,11 @@ helpviewer_keywords:
 - XAML [XAML Services], x:Static markup extension
 ms.assetid: 056aee79-7cdd-434f-8174-dfc856cad343
 ms.openlocfilehash: 8a14b00fe762d325028072cd0ea3eecf9b9206e3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45595519"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45994327"
 ---
 # <a name="xstatic-markup-extension"></a>x:Static 태그 확장명
 에 정의 된 모든 값으로 정적 코드 엔터티 참조는 [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)]– 호환 방식으로 합니다. 참조 되는 정적 속성 XAML에서 속성 값을 제공 하기 사용할 수 있습니다.  

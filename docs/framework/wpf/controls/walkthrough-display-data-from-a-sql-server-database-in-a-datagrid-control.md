@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DataGrid [WPF], displaying data from SQL Server
 - controls [WPF], DataGrid
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
-ms.openlocfilehash: 1421d076ff202ec87a9d861ab2c7d1c1cdcdc1b7
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: dba2ec98b25c9c65a795c462b18504a799df04bc
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43798728"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45972269"
 ---
 # <a name="walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control"></a>연습: DataGrid 컨트롤에서 SQL Server 데이터베이스의 데이터 표시
 이 연습에서는 SQL Server 데이터베이스에서 데이터를 검색 하 고이 해당 데이터를 표시 한 <xref:System.Windows.Controls.DataGrid> 제어 합니다. ADO.NET Entity Framework를 사용 하 여 데이터를 나타내고, LINQ를 사용 하 여 엔터티 클래스에서 지정된 된 데이터를 검색 하는 쿼리를 작성 하는 엔터티 클래스를 만듭니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "43798728"
   
      새 항목 추가 대화 상자가 나타납니다.  
   
-3.  설치 된 템플릿 창에서 선택 **데이터** 템플릿의 목록에서 선택 하 고 **ADO.NET 엔터티 데이터 모드**l입니다.  
+3.  설치 된 템플릿 창에서 선택 **데이터** 템플릿의 목록에서 선택 하 고 **ADO.NET Entity Data Model**합니다.  
   
      ![ADO.NET 엔터티 데이터 모델 선택](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step1.png "DataGrid_SQL_EF_Step1")  
   

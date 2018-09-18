@@ -9,11 +9,11 @@ helpviewer_keywords:
 - event handlers [Windows Forms]
 ms.assetid: 6514e530-c6b8-489c-a8d2-eda7b7072701
 ms.openlocfilehash: 9095946d52360c69fd6c4dd6285039fb3e1874d5
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45592090"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45994600"
 ---
 # <a name="creating-event-handlers-in-windows-forms"></a>Windows Forms에서 이벤트 처리기 만들기
 이벤트 처리기는 사용자가 단추를 클릭하거나 메시지 큐에서 메시지를 수신하는 등의 이벤트 발생 시 수행되는 작업을 결정하는 코드 내의 프로시저입니다. 이벤트가 발생하면 해당 이벤트를 수신하는 하나 이상의 이벤트 처리기가 실행됩니다. 이벤트는 여러 처리기에 할당될 수 있으며 특정 이벤트를 처리하는 메서드가 동적으로 변경될 수 있습니다. Windows Forms 디자이너를 사용하여 이벤트 처리기를 만들 수도 있습니다.  

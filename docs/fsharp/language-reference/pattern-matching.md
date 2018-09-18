@@ -3,11 +3,11 @@ title: 패턴 일치(F#)
 description: 'F #의 논리 구조를 사용 하 여 데이터를 비교, 데이터를 구성 부분으로 분해 하거나 데이터에서 정보를 추출 패턴을 사용 하는 방법을 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 5ad3d3e1a78246afdfa2948fd0fb84fa04686d30
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668485"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45991426"
 ---
 # <a name="pattern-matching"></a>패턴 일치
 

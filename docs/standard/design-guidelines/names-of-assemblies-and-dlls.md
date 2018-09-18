@@ -11,11 +11,11 @@ ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 97bd152cff53fb1c2edb107b6d6b34bd91ca1c49
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45613718"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45972061"
 ---
 # <a name="names-of-assemblies-and-dlls"></a>어셈블리 및 DLL의 이름
 어셈블리는 단위 배포 및 관리 코드 프로그램에 대 한 id입니다. 어셈블리는 하나 이상의 파일에 걸쳐 수 있지만 일반적으로 어셈블리 일대일로 매핑되는 DLL입니다. 따라서 다음 어셈블리 명명 규칙에 매핑할 수 있는 유일한 DLL 명명 규칙을 설명이 합니다.  

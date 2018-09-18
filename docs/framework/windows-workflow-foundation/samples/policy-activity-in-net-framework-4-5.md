@@ -3,11 +3,11 @@ title: .NET Framework 4.5의에서 정책 작업
 ms.date: 03/30/2017
 ms.assetid: 8e375e0c-d7c1-4d69-88ab-36d52db0aa7e
 ms.openlocfilehash: 9d8983f2f1d3f75beffeacfff4b673f6c23c4204
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45646092"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45994379"
 ---
 # <a name="policy-activity-in-net-framework-45"></a>.NET Framework 4.5의에서 정책 작업
 Policy4 활동에서 Windows Workflow Foundation을 통해 [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> 개체에서 Windows Workflow Foundation에서 사용할 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) WF 3.5에서 제공 되는 규칙 엔진을 사용 하 여 직접. 이 활동을 사용하여 WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>을 만들고 실행할 수 있습니다. Windows Workflow Foundation의 일부로 포함 된 WF 3.5 규칙 엔진에 대 한 자세한 내용은 Windows Workflow Foundation 규칙 엔진 소개를 참조 하세요. 마이그레이션에 대 한 자세한 내용은 규칙을 WF [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]를 참조 하세요 [마이그레이션 지침](../../../../docs/framework/windows-workflow-foundation/migration-guidance.md)합니다.  

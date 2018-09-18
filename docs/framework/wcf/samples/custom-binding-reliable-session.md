@@ -3,11 +3,11 @@ title: 사용자 지정 바인딩 신뢰할 수 있는 세션
 ms.date: 03/30/2017
 ms.assetid: c5fcd409-246f-4f3e-b3f1-629506ca4c04
 ms.openlocfilehash: 55ffdd741bf26c1a906c7b09dfa05839b25f1645
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45592051"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002647"
 ---
 # <a name="custom-binding-reliable-session"></a>사용자 지정 바인딩 신뢰할 수 있는 세션
 사용자 지정 바인딩은 개별 바인딩 요소의 순서 있는 목록에 의해 정의됩니다. 이 샘플에서는 특히 신뢰할 수 있는 세션을 사용하도록 설정하는 것을 비롯하여 다양한 전송 및 메시지 인코딩 요소와 함께 사용자 지정 바인딩을 구성하는 방법을 보여 줍니다.  

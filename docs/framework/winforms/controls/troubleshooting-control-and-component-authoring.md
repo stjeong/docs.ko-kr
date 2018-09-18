@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Windows Forms controls, debugging
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
 ms.openlocfilehash: caad6a76b52a970e133425c484602deb8801d252
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
-ms.translationtype: MT
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/17/2018
-ms.locfileid: "45692829"
+ms.locfileid: "45970307"
 ---
 # <a name="troubleshooting-control-and-component-authoring"></a>컨트롤 및 구성 요소 제작 문제 해결
 이 항목에서는 구성 요소와 컨트롤을 개발할 때 발생하는 다음과 같은 일반적인 문제를 나열합니다. 자세한 내용은 [구성 요소를 사용한 프로그래밍](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)을 참조하세요.  

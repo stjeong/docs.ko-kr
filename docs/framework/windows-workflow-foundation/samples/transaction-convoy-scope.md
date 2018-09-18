@@ -3,11 +3,11 @@ title: 트랜잭션 호송 범위
 ms.date: 03/30/2017
 ms.assetid: 37141708-a29f-4b6a-81fe-f8a11f825061
 ms.openlocfilehash: fa1da6df5ad5256665610c9b3c2df7d706cef63c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597220"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46000429"
 ---
 # <a name="transaction-convoy-scope"></a>트랜잭션 호송 범위
 이 샘플에서는 <xref:System.ServiceModel.Activities.TransactedReceiveScope>와 함께 Parallel Convoy 메시징 활동 패턴을 만들어 많은 작업이 모두 같은 트랜잭션에서 순서에 관계없이 발생할 수 있는 프로토콜을 모델링하는 방법을 보여 줍니다. 또한 트랜잭션이 서버로 이동되지 않는 경우<xref:System.ServiceModel.Activities.TransactedReceiveScope>가 자동으로 새 트랜잭션을 만들어 클라이언트가 어떤 트랜잭션도 사용하지 않도록 하는 방법도 보여 줍니다.  

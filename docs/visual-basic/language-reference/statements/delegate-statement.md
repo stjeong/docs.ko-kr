@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Delegate statement [Visual Basic]
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 ms.openlocfilehash: 4718c0a6e332d644a7f54c79246df95f841058d0
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45616853"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45972172"
 ---
 # <a name="delegate-statement"></a>Delegate 문
 대리자를 선언 하는 데 사용 합니다. 대리자는 참조 형식을 참조 하는 `Shared` 메서드 형식 또는 개체의 인스턴스 메서드. 매개 변수 및 반환 형식을 일치 하는 프로시저는이 대리자 클래스의 인스턴스를 만드는 데 사용할 수 있습니다. 다음 대리자 인스턴스를 사용 하 여 프로시저에 나중에 호출할 수 있습니다.  

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5e7ff0be-3f23-4996-a92c-bd54d65c3836
-ms.openlocfilehash: 274a6e87b272002a567fd92605c4e690c03b6e26
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 4b2b35d3ca3f7bea5f64188420c17d386a1afa42
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45652796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45971983"
 ---
 # <a name="single-bulk-copy-operations"></a>단일 대량 복사 작업
 SQL Server 대량 복사 작업을 수행하는 가장 간단한 접근 방식은 데이터베이스에 단일 작업을 수행하는 것입니다. 기본적으로 대량 복사 작업은 격리된 작업으로 수행됩니다. 복사 작업은 롤백할 수 없는 비트랜잭트 방식으로 이루어집니다.  
@@ -40,7 +40,7 @@ SQL Server 대량 복사 작업을 수행하는 가장 간단한 접근 방식�
 >  소스 열과 대상 열의 데이터 형식은 일치하는 것이 좋습니다. 데이터 형식이 일치 하지 않는 경우 **SqlBulkCopy** 각 소스 값에서 사용 하는 규칙을 사용 하 여 대상 데이터 형식으로 변환 하려고 시도 <xref:System.Data.SqlClient.SqlParameter.Value%2A>합니다. 변환을 수행하면 성능에 영향을 줄 뿐 아니라 예기치 않은 오류가 발생할 수도 있습니다. 예를 들어, `Double` 데이터 형식은 일반적으로 `Decimal` 데이터 형식으로 변환되지만 항상 그런 것은 아닙니다.  
   
 ## <a name="example"></a>예제  
- 다음 콘솔 응용 프로그램에서는 <xref:System.Data.SqlClient.SqlBulkCopy> 클래스를 사용하여 데이터를 로드하는 방법을 보여 줍니다. 이 예제에서는 <xref:System.Data.SqlClient.SqlDataReader> 에서 데이터를 복사 하는 데 사용 되는 **Production.Product** SQL Server의 테이블**AdventureWorks** 동일한 데이터베이스의 유사한 테이블에는 데이터베이스입니다.  
+ 다음 콘솔 응용 프로그램에서는 <xref:System.Data.SqlClient.SqlBulkCopy> 클래스를 사용하여 데이터를 로드하는 방법을 보여 줍니다. 이 예제에서는 <xref:System.Data.SqlClient.SqlDataReader> 에서 데이터를 복사 하는 데 사용 되는 **Production.Product** SQL Server의 테이블 **AdventureWorks** 동일한 데이터베이스의 유사한 테이블에는 데이터베이스입니다.  
   
 > [!IMPORTANT]
 >  이 샘플에 설명 된 대로 작업 테이블을 만든 경우가 아니면 실행 되지 것입니다 [대량 복사 예제 설정](../../../../../docs/framework/data/adonet/sql/bulk-copy-example-setup.md)합니다. 이 코드는 사용 하는 구문을 보여 주기 위해 제공 됩니다 **SqlBulkCopy** 만 합니다. 소스 테이블과 대상 테이블이 동일한 SQL Server 인스턴스에 있으면 Transact-SQL `INSERT … SELECT` 문을 사용하여 데이터를 더 쉽고 빠르게 복사할 수 있습니다.  

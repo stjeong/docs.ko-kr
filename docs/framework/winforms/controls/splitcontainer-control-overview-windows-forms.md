@@ -7,11 +7,11 @@ helpviewer_keywords:
 - SplitContainer control [Windows Forms], about SplitContainer control
 ms.assetid: 6de5a5f7-97a5-402d-be6d-7e2785483db5
 ms.openlocfilehash: 81898e09ff513043b205cde13378ae24ee755226
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45679585"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002878"
 ---
 # <a name="splitcontainer-control-overview-windows-forms"></a>SplitContainer 컨트롤 개요(Windows Forms)
 Windows Forms <xref:System.Windows.Forms.SplitContainer> 컨트롤은 복합으로 간주될 수 있습니다. 이동 가능한 막대로 구분된 두 개의 패널입니다. 마우스 포인터가 막대 위에 있으면 포인터 모양이 변경되어 막대를 이동할 수 있음을 표시합니다.  

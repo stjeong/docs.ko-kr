@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 163e61eef8a753b5b6470285e5e3ce63789e25a4
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
-ms.translationtype: MT
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45675758"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45970425"
 ---
 # <a name="connectserverwmi-function"></a>ConnectServerWmi 함수
 DCOM 통해 지정된 컴퓨터의 WMI 네임스페이스에 대한 연결을 만듭니다.  

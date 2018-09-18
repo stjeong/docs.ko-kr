@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 84059c5e5542e13b1d4fc4efcfc4c7f418db391e
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45594953"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002595"
 ---
 # <a name="qualifiersetgetnames-function"></a>QualifierSet_GetNames 함수
 현재 개체 또는 속성에서 사용할 수 있는 특정 한정자 또는 모든 한정자의 이름을 검색 합니다. 

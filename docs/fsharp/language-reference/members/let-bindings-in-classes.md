@@ -3,11 +3,11 @@ title: 클래스의 let 바인딩(F#)
 description: "클래스 정의에 'let' 바인딩을 사용 하 여 개인 필드와 F # 클래스에 대 한 전용 함수를 정의 하는 방법에 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 237eb98a57571a21c9187abf31f05160374cf4fc
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45624407"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45972881"
 ---
 # <a name="let-bindings-in-classes"></a>클래스의 let 바인딩
 

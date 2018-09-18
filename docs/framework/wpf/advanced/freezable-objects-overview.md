@@ -10,11 +10,11 @@ helpviewer_keywords:
 - classes [WPF], Freezable
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
 ms.openlocfilehash: a1006816168e405d0d79786b8430b802f1ec0928
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45615594"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45999444"
 ---
 # <a name="freezable-objects-overview"></a>Freezable 개체 개요
 이 항목에서는 효과적으로 사용 하 고 만드는 방법을 설명 <xref:System.Windows.Freezable> 응용 프로그램 성능을 개선 하는 데 도움이 되는 특별 한 기능을 제공 하는 개체입니다. Freezable 개체의 예로 브러시, 펜, 변환, 기 하 도형 및 애니메이션을 들 수 있습니다.  

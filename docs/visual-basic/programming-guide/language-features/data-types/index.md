@@ -9,11 +9,11 @@ helpviewer_keywords:
 - data types [Visual Basic], improving speed with
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
 ms.openlocfilehash: 83c3d9976f61513165e917da73dd50e846db3e83
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597084"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45971840"
 ---
 # <a name="data-types-in-visual-basic"></a>Visual Basic의 데이터 형식
 프로그래밍 요소의 *데이터 형식*은 사용할 수 있는 데이터의 종류 및 데이터를 저장하는 방식을 의미합니다. 데이터 형식은 컴퓨터 메모리에 저장할 수 있거나 식의 계산에 사용되는 모든 값에 적용됩니다. 모든 변수, 리터럴, 상수, 열거형, 속성, 프로시저 매개 변수, 프로시저 인수 및 프로시저 반환 값은 데이터 형식을 가집니다.  

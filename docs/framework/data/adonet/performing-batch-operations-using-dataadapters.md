@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: e72ed5af-b24f-486c-8429-c8fd2208f844
 ms.openlocfilehash: cfc77ff3b030ffebf52feab0190f81fc4e581cf9
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45653150"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45989578"
 ---
 # <a name="performing-batch-operations-using-dataadapters"></a>DataAdapter를 사용하여 일괄 작업 수행
 ADO.NET의 배치 지원을 사용하면 <xref:System.Data.Common.DataAdapter>를 통해 INSERT, UPDATE 및 DELETE 작업을 한 번에 하나씩 보내지 않고 <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable>에서 서버로 그룹화할 수 있습니다. 서버로의 라운드트립 횟수가 줄어들면 일반적으로 성능이 크게 개선됩니다. 배치 업데이트는 SQL Server(<xref:System.Data.SqlClient>) 및 Oracle(<xref:System.Data.OracleClient>)용 .NET 데이터 공급자에서 지원됩니다.  

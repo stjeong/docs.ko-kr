@@ -3,11 +3,11 @@ title: + (추가)
 ms.date: 03/30/2017
 ms.assetid: 51769b02-a8f7-4177-9e99-bbd10e77092c
 ms.openlocfilehash: a3c41ef8cf393a4d1b1deb362d6a3614558a34ba
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
-ms.translationtype: MT
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45591427"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45998957"
 ---
 # <a name="-add"></a>+ (추가)
 두 숫자를 더합니다.  

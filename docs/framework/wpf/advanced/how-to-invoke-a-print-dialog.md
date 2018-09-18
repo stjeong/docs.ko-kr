@@ -9,11 +9,11 @@ helpviewer_keywords:
 - print dialogs [WPF], invoking
 ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
 ms.openlocfilehash: 271652fe9e98f9a381da5655bd313e12f8ee917d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45615666"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45988311"
 ---
 # <a name="how-to-invoke-a-print-dialog"></a>방법: 인쇄 대화 상자 호출
 응용 프로그램에서 인쇄 하는 기능을 제공 하려면 있습니다 단순히 만들고 열 수는 <xref:System.Windows.Controls.PrintDialog> 개체입니다.  

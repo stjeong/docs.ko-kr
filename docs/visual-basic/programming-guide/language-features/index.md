@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Visual Basic code
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
 ms.openlocfilehash: 975bec73235b3b8f82088325e0d4abc50ce6b1dd
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45638599"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45972652"
 ---
 # <a name="visual-basic-language-features"></a>Visual Basic 언어 기능
 다음 항목 소개 하 고 Visual Basic의 경우 개체 지향 프로그래밍 언어의 필수 구성 요소에 설명 합니다. 폼 및 컨트롤을 사용하여 자신의 응용 프로그램에 사용할 사용자 인터페이스를 만든 다음에는 응용 프로그램의 동작을 정의하는 코드를 작성해야 합니다. 모든 최신 프로그래밍 언어와 마찬가지로 Visual Basic에서는 다양 한 일반적인 프로그래밍 구문과 언어 요소를 지원 합니다.  

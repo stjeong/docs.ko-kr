@@ -14,11 +14,11 @@ ms.assetid: 1f48b2d8-608c-4be6-9ba4-d8f203ed9f9f
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3879dc3f0270a56132b44882a74c50d05914ff89
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45677138"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46000910"
 ---
 # <a name="struct-design"></a>구조체 디자인
 범용 값 형식 대부분의 구조체를 해당 C# 키워드 라고 합니다. 이 섹션에서는 일반 구조체 디자인에 대 한 지침을 제공 합니다.  

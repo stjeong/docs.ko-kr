@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Join clause [Visual Basic]
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 ms.openlocfilehash: b1551583079c66d1bf5f6963a42d5d24e518fff3
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "44778437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46003323"
 ---
 # <a name="join-clause-visual-basic"></a>Join 절(Visual Basic)
 두 컬렉션을 단일 컬렉션으로 결합합니다. 조인 연산은 일치 하는 키 기준으로 하며 사용 하 여 `Equals` 연산자입니다.  

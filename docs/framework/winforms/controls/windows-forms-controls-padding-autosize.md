@@ -16,11 +16,11 @@ helpviewer_keywords:
 - Windows Forms, layout
 ms.assetid: f8ae2a6b-db13-4630-8e25-d104091205c7
 ms.openlocfilehash: 52bc75135e4f8cf5b9c1888b2ad9f5e278c1d6e2
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597864"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45999483"
 ---
 # <a name="walkthrough-laying-out-windows-forms-controls-with-padding-margins-and-the-autosize-property"></a>연습: Padding, Margins 및 AutoSize 속성을 사용하여 Windows Forms 컨트롤 레이아웃
 폼의 정확한 컨트롤 배치는 많은 응용 프로그램에서 우선 순위가 높습니다. 합니다 **Windows Forms 디자이너** 이렇게 하려면 여러 레이아웃 도구를 제공 합니다. 가장 중요 한 세 가지는 <xref:System.Windows.Forms.Control.Margin%2A>, <xref:System.Windows.Forms.Control.Padding%2A>, 및 <xref:System.Windows.Forms.Control.AutoSize%2A> 속성을 모든 Windows Forms 컨트롤에 있는 합니다.  

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - drag-and-drop [WPF], walkthrough
 ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
 ms.openlocfilehash: e151eb7f428fecb330970210fd7addb1603a211f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45666826"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45988714"
 ---
 # <a name="walkthrough-enabling-drag-and-drop-on-a-user-control"></a>연습: 사용자 정의 컨트롤에서 끌어서 놓기 사용
 이 연습에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서 끌어서 놓기 데이터 전송에 참가할 수 있는 사용자 지정 사용자 정의 컨트롤을 만드는 방법을 보여 줍니다.  

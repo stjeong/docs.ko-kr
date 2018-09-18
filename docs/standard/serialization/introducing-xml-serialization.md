@@ -12,12 +12,12 @@ helpviewer_keywords:
 - DataSet class, serializing
 - XML Schema, serializing
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
-ms.openlocfilehash: 66412c620b8107312e5d58fef5cf1b5d9ee90107
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: e1625d2cdf0be4106a43b9d40aef97ea2b5c4ec4
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45615523"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45999471"
 ---
 # <a name="introducing-xml-serialization"></a>XML Serialization 소개
 
@@ -61,7 +61,7 @@ serialization은 개체를 전송할 수 있는 형태로 변환하는 프로세
 
 - serialize된 중요한 데이터가 취약할 수 있습니다.
 
-  **XmlSerializer**에서 데이터를 직렬화한 후 XML 파일이나 다른 데이터 저장소에 이를 저장할 수 있습니다. 데이터 저장소를 다른 프로세스가 사용할 수 있거나 인트라넷 또는 인터넷에서 볼 수 있는 경우에는 데이터가 도난당하여 해로운 목적으로 사용될 수 있습니다. 예를 들어 신용카드 번호가 포함된 주문을 serialize하는 응용 프로그램을 만드는 경우에는 데이터가 매우 중요합니다. 이런 문제를 방지하기 위해 항상 데이터 저장소를 보호하고 공개되지 않도록 조치를 취해야 합니다.
+  후 합니다 **XmlSerializer** 데이터를 serialize XML 파일이 나 다른 데이터 저장소를 저장할 수 있습니다. 데이터 저장소를 다른 프로세스가 사용할 수 있거나 인트라넷 또는 인터넷에서 볼 수 있는 경우에는 데이터가 도난당하여 해로운 목적으로 사용될 수 있습니다. 예를 들어 신용카드 번호가 포함된 주문을 serialize하는 응용 프로그램을 만드는 경우에는 데이터가 매우 중요합니다. 이런 문제를 방지하기 위해 항상 데이터 저장소를 보호하고 공개되지 않도록 조치를 취해야 합니다.
 
 ## <a name="serialization-of-a-simple-class"></a>간단한 클래스의 serialization
 

@@ -3,11 +3,11 @@ title: ASP.NET 캐싱 통합
 ms.date: 03/30/2017
 ms.assetid: f581923a-8a72-42fc-bd6a-46de2aaeecc1
 ms.openlocfilehash: 55e6213bf0c4c212ebcf4e68882d16532c0e4229
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45617210"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002790"
 ---
 # <a name="aspnet-caching-integration"></a>ASP.NET 캐싱 통합
 이 샘플에서는 WCF 웹 HTTP 프로그래밍 모델을 사용하여 ASP.NET 출력 캐시를 활용하는 방법을 보여 줍니다. 참조 하십시오 합니다 [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) 방어에서 서비스 구현에 설명 하는이 시나리오의 자체 호스팅된 버전에 대 한 샘플. 이 항목에서는 ASP.NET 출력 캐시 통합 기능을 중점적으로 설명합니다.  

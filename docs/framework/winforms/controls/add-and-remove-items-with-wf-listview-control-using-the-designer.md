@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ListView control [Windows Forms], adding list items
 ms.assetid: 217611ee-fd11-4d39-9a54-a37c3e781be1
 ms.openlocfilehash: 0480c8980f0eba17229fff0c1e947cac5216fb9e
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45592694"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973003"
 ---
 # <a name="how-to-add-and-remove-items-with-the-windows-forms-listview-control-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms ListView 컨트롤에서 항목 추가 및 제거
 Windows Forms에 항목을 추가 하는 프로세스 <xref:System.Windows.Forms.ListView> 컨트롤 주로 이루어져 항목을 지정 하 고 속성을 할당 합니다. 목록 항목 추가 또는 제거를 언제 든 지 수행할 수 있습니다.  
