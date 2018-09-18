@@ -7,12 +7,12 @@ helpviewer_keywords:
 - user controls [Windows Forms], inheriting from
 - composite controls [Windows Forms], creating
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
-ms.openlocfilehash: 2c7d2c94c376b671d6e9e4e4b71bc8a9b0fbc343
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 7abdeae4d19ceb6425f85e3cdd28f565a03d7ea4
+ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43798760"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46007443"
 ---
 # <a name="how-to-author-composite-controls"></a>방법: 합성 컨트롤 제작
 여러 가지 방법으로 복합 컨트롤을 사용할 수 있습니다. Windows 데스크톱 응용 프로그램 프로젝트의 일부로 작성하고 프로젝트의 양식에서만 사용할 수 있습니다. 또는 Windows 컨트롤 라이브러리 프로젝트에서 작성하고 프로젝트를 어셈블리로 컴파일하고 다른 프로젝트에서 컨트롤을 사용할 수 있습니다. 상속하고 시각적 상속을 사용하여 특별한 목적을 위해 신속하게 사용자 지정할 수도 있습니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "43798760"
   
 3.  **새 항목 추가** 대화 상자에서 클래스 파일(.cs 또는 .vb 파일)에 복합 컨트롤이 원하는 이름을 지정합니다.  
   
-4.  **추가** 단추를 클릭하여 복합 컨트롤의 클래스 파일을 만듭니다.  
+4.  선택 된 **추가** 단추 복합 컨트롤에 대 한 클래스 파일을 만듭니다.  
   
 5.  **도구 상자**에서 복합 컨트롤 화면에 컨트롤을 추가합니다.  
   

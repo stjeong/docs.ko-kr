@@ -3,11 +3,11 @@ title: 배열(F#)
 description: '만들기 및 F # 프로그래밍 언어에서 배열 사용 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 27b73efc900ac2efc813fe66f81baa2e9ae1e843
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45743638"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46007350"
 ---
 # <a name="arrays"></a>배열
 
