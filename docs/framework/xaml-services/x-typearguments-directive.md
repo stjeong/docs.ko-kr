@@ -11,11 +11,11 @@ helpviewer_keywords:
 - XAML [XAML Services], x:TypeArguments attribute
 ms.assetid: 86561058-d393-4a44-b5c3-993a4513ea74
 ms.openlocfilehash: 28eda94914125f2c5849a471671c8e283475c82c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45686268"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46321394"
 ---
 # <a name="xtypearguments-directive"></a>x:TypeArguments 지시문
 전달 된 제네릭 형식의 생성자에 제네릭 인수를 입력 합니다.  

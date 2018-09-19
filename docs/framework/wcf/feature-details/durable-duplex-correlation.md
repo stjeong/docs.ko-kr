@@ -2,21 +2,21 @@
 title: 영속 이중 상관 관계
 ms.date: 03/30/2017
 ms.assetid: 8eb0e49a-6d3b-4f7e-a054-0d4febee2ffb
-ms.openlocfilehash: 5bef3e243afc0ea9a51f474bfed98320134ec043
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 82c052ff87eb8b125dfc64e1567dbd00d255894d
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33491490"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46323784"
 ---
 # <a name="durable-duplex-correlation"></a>영속 이중 상관 관계
-콜백 상관 관계라고도 하는 영속 이중은 워크플로 서비스를 사용하여 초기 호출자에게 콜백을 보내야 하는 경우에 유용합니다. WCF 이중과 달리 콜백은 나중에 언제든지 발생할 수 있으며 동일한 채널이나 채널 수명과 연결되지 않습니다. 따라서 유일한 요구 사항은 호출자에 콜백 메시지를 수신 대기하는 활성 끝점이 있어야 한다는 점입니다. 그러면 장기 실행 대화에서 워크플로 서비스를 사용하여 통신할 수 있습니다. 이 항목에서는 영속 이중 상관 관계에 대해 간략하게 설명합니다.  
+콜백 상관 관계라고도 하는 영속 이중은 워크플로 서비스를 사용하여 초기 호출자에게 콜백을 보내야 하는 경우에 유용합니다. WCF 이중과 달리 콜백은 나중에 언제든지 발생할 수 있으며 동일한 채널이나 채널 수명과 연결되지 않습니다. 따라서 유일한 요구 사항은 호출자에 콜백 메시지를 수신 대기하는 활성 엔드포인트가 있어야 한다는 점입니다. 그러면 장기 실행 대화에서 워크플로 서비스를 사용하여 통신할 수 있습니다. 이 항목에서는 영속 이중 상관 관계에 대해 간략하게 설명합니다.  
   
 ## <a name="using-durable-duplex-correlation"></a>영속 이중 상관 관계 사용  
- 영속 이중 상관 관계를 사용하려면 두 서비스에서 <xref:System.ServiceModel.NetTcpContextBinding> 또는 <xref:System.ServiceModel.WSHttpContextBinding> 같이 양방향 작업을 지원하는 컨텍스트 사용 바인딩을 사용해야 합니다. 호출하는 서비스는 클라이언트 <xref:System.ServiceModel.WSHttpContextBinding.ClientCallbackAddress%2A>에 원하는 바인딩을 사용하여 <xref:System.ServiceModel.Endpoint>를 등록합니다. 수신하는 서비스는 초기 호출에서 이 데이터를 받은 다음 호출하는 서비스로 콜백하는 <xref:System.ServiceModel.Endpoint> 작업에서 자신의 <xref:System.ServiceModel.Activities.Send>에 이 데이터를 사용합니다. 다음 예제에서는 두 개의 서비스가 서로 통신합니다. 첫 번째 서비스는 두 번째 서비스의 메서드를 호출한 다음 응답을 기다립니다. 두 번째 서비스는 콜백 메서드의 이름을 알고 있지만 디자인 타임에는 이 메서드를 구현하는 서비스의 끝점을 알 수 없습니다.  
+ 영속 이중 상관 관계를 사용하려면 두 서비스에서 <xref:System.ServiceModel.NetTcpContextBinding> 또는 <xref:System.ServiceModel.WSHttpContextBinding> 같이 양방향 작업을 지원하는 컨텍스트 사용 바인딩을 사용해야 합니다. 호출하는 서비스는 클라이언트 <xref:System.ServiceModel.WSHttpContextBinding.ClientCallbackAddress%2A>에 원하는 바인딩을 사용하여 <xref:System.ServiceModel.Endpoint>를 등록합니다. 수신하는 서비스는 초기 호출에서 이 데이터를 받은 다음 호출하는 서비스로 콜백하는 <xref:System.ServiceModel.Endpoint> 작업에서 자신의 <xref:System.ServiceModel.Activities.Send>에 이 데이터를 사용합니다. 다음 예제에서는 두 개의 서비스가 서로 통신합니다. 첫 번째 서비스는 두 번째 서비스의 메서드를 호출한 다음 응답을 기다립니다. 두 번째 서비스는 콜백 메서드의 이름을 알고 있지만 디자인 타임에는 이 메서드를 구현하는 서비스의 엔드포인트를 알 수 없습니다.  
   
 > [!NOTE]
->  영속 이중은 끝점의 <xref:System.ServiceModel.Channels.AddressingVersion>이 <xref:System.ServiceModel.Channels.AddressingVersion.WSAddressing10%2A>을 사용하여 구성된 경우에만 사용할 수 있습니다. 그렇지 않을 경우 아니라면 <xref:System.InvalidOperationException> 다음 메시지와 함께 예외가: "메시지에 AddressingVersion에 대 한 끝점 참조를 사용 하는 콜백 컨텍스트 헤더가 포함 되어 ' Addressing200408 (HYPERLINK"http://schemas.xmlsoap.org/ws/2004/08/addressing" http://schemas.xmlsoap.org/ws/2004/08/addressing)'. 콜백 컨텍스트는 AddressingVersion이 'WSAddressing10'으로 구성되어 있을 경우에만 전송할 수 있습니다."라는 메시지가 표시됩니다.  
+> 영속 이중은 엔드포인트의 <xref:System.ServiceModel.Channels.AddressingVersion>이 <xref:System.ServiceModel.Channels.AddressingVersion.WSAddressing10%2A>을 사용하여 구성된 경우에만 사용할 수 있습니다. 그렇지 않을 경우는 <xref:System.InvalidOperationException> 다음 메시지와 함께 예외가 throw 됩니다. "메시지에 대 한 끝점 참조를 사용 하 여 콜백 컨텍스트 헤더를 포함 [AddressingVersion](http://schemas.xmlsoap.org/ws/2004/08/addressing)합니다. 콜백 컨텍스트는 AddressingVersion 'WSAddressing10'를 사용 하 여 구성 된 경우에 전송할 수 있습니다.
   
  다음 예제에서는 <xref:System.ServiceModel.Endpoint>을 사용하여 콜백 <xref:System.ServiceModel.WSHttpContextBinding>를 만드는 워크플로 서비스를 호스팅합니다.  
   
@@ -37,7 +37,7 @@ host1.Open();
 Console.WriteLine("Service1 waiting at: {0}", baseAddress1);  
 ```  
   
- 이 워크플로 서비스를 구현하는 워크플로는 해당 <xref:System.ServiceModel.Activities.Send> 작업을 사용하여 콜백 상관 관계를 초기화하고 <xref:System.ServiceModel.Activities.Receive>와 연결되는 <xref:System.ServiceModel.Activities.Send> 작업의 콜백 끝점을 참조합니다. 다음 예제에서는 `GetWF1` 메서드에서 반환되는 워크플로를 나타냅니다.  
+ 이 워크플로 서비스를 구현하는 워크플로는 해당 <xref:System.ServiceModel.Activities.Send> 작업을 사용하여 콜백 상관 관계를 초기화하고 <xref:System.ServiceModel.Activities.Receive>와 연결되는 <xref:System.ServiceModel.Activities.Send> 작업의 콜백 엔드포인트를 참조합니다. 다음 예제에서는 `GetWF1` 메서드에서 반환되는 워크플로를 나타냅니다.  
   
 ```csharp  
 Variable<CorrelationHandle> CallbackHandle = new Variable<CorrelationHandle>();  

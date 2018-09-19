@@ -9,11 +9,11 @@ helpviewer_keywords:
 - navigation [WPF], through navigation history (back)
 ms.assetid: 9343234b-d864-441d-b8a7-d895cba80a87
 ms.openlocfilehash: 7266c9486524e962a859c34c9be5ab8f6d7bf7d5
-ms.sourcegitcommit: ba5c189bf44d44204a3e8838e59ec378a62d82f3
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700652"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46322235"
 ---
 # <a name="how-to-navigate-back-through-navigation-history"></a>방법: 탐색 기록을 뒤로 탐색
 이 예제에서는 탐색 기록에서 항목을 탐색 하는 방법을 보여 줍니다.  
