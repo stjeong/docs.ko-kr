@@ -3,11 +3,11 @@ title: 매개 변수 및 인수(F#)
 description: '매개 변수를 정의 하 고 함수, 메서드 및 속성에 인수를 전달 하기 위한 F # 언어 지원에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: a1e2a70ca560bbb09d2cd10f47485cbe5c5e029d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45964646"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46288185"
 ---
 # <a name="parameters-and-arguments"></a>매개 변수 및 인수
 
