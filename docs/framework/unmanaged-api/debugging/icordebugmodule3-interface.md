@@ -16,17 +16,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5fc4c0560c2aa0d66c1b40d78458a2d44284e232
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 58bad617eb91b7e529ff3d95edd06a5c73feee64
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33417917"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46472037"
 ---
-# <a name="icordebugmodule3-interface"></a><span data-ttu-id="b25a2-102">ICorDebugModule3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b25a2-102">ICorDebugModule3 Interface</span></span>
-<span data-ttu-id="b25a2-103">동적 모듈에 대한 기호 판독기를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="b25a2-103">Creates a symbol reader for a dynamic module.</span></span>  
+# <a name="icordebugmodule3-interface"></a><span data-ttu-id="f99f9-102">ICorDebugModule3 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f99f9-102">ICorDebugModule3 Interface</span></span>
+<span data-ttu-id="f99f9-103">동적 모듈에 대한 기호 판독기를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f99f9-103">Creates a symbol reader for a dynamic module.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b25a2-104">구문</span><span class="sxs-lookup"><span data-stu-id="b25a2-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="f99f9-104">구문</span><span class="sxs-lookup"><span data-stu-id="f99f9-104">Syntax</span></span>  
   
 ```  
 interface ICorDebugModule3 : IUnknown  
@@ -39,29 +39,29 @@ interface ICorDebugModule3 : IUnknown
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="b25a2-105">메서드</span><span class="sxs-lookup"><span data-stu-id="b25a2-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="f99f9-105">메서드</span><span class="sxs-lookup"><span data-stu-id="f99f9-105">Methods</span></span>  
   
-|<span data-ttu-id="b25a2-106">메서드</span><span class="sxs-lookup"><span data-stu-id="b25a2-106">Method</span></span>|<span data-ttu-id="b25a2-107">설명</span><span class="sxs-lookup"><span data-stu-id="b25a2-107">Description</span></span>|  
+|<span data-ttu-id="f99f9-106">메서드</span><span class="sxs-lookup"><span data-stu-id="f99f9-106">Method</span></span>|<span data-ttu-id="f99f9-107">설명</span><span class="sxs-lookup"><span data-stu-id="f99f9-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="b25a2-108">ICorDebugModule3::CreateReaderForInMemorySymbols 메서드</span><span class="sxs-lookup"><span data-stu-id="b25a2-108">ICorDebugModule3::CreateReaderForInMemorySymbols Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule3-createreaderforinmemorysymbols-method.md)|<span data-ttu-id="b25a2-109">기호 판독기를 만듭니다 (일반적으로 [ISymUnmanagedReader 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) 동적 모듈에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="b25a2-109">Creates a symbol reader (typically [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) for a dynamic module.</span></span>|  
+|[<span data-ttu-id="f99f9-108">ICorDebugModule3::CreateReaderForInMemorySymbols 메서드</span><span class="sxs-lookup"><span data-stu-id="f99f9-108">ICorDebugModule3::CreateReaderForInMemorySymbols Method</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule3-createreaderforinmemorysymbols-method.md)|<span data-ttu-id="f99f9-109">기호 판독기를 만듭니다 (일반적으로 [ISymUnmanagedReader 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) 동적 모듈에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="f99f9-109">Creates a symbol reader (typically [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) for a dynamic module.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="b25a2-110">설명</span><span class="sxs-lookup"><span data-stu-id="b25a2-110">Remarks</span></span>  
- <span data-ttu-id="b25a2-111">이 인터페이스는 "ICorDebugModule" 및 "ICorDebugModule2" 인터페이스를 논리적으로 확장 합니다.</span><span class="sxs-lookup"><span data-stu-id="b25a2-111">This interface logically extends the "ICorDebugModule" and "ICorDebugModule2" interfaces.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="f99f9-110">설명</span><span class="sxs-lookup"><span data-stu-id="f99f9-110">Remarks</span></span>  
+ <span data-ttu-id="f99f9-111">이 인터페이스는 논리적으로 "ICorDebugModule" 및 "ICorDebugModule2" 인터페이스를 확장 합니다.</span><span class="sxs-lookup"><span data-stu-id="f99f9-111">This interface logically extends the "ICorDebugModule" and "ICorDebugModule2" interfaces.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="b25a2-112">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="b25a2-112">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
+>  <span data-ttu-id="f99f9-112">이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="f99f9-112">This interface does not support being called remotely, either cross-machine or cross-process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="b25a2-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="b25a2-113">Requirements</span></span>  
- <span data-ttu-id="b25a2-114">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b25a2-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="f99f9-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="f99f9-113">Requirements</span></span>  
+ <span data-ttu-id="f99f9-114">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f99f9-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="b25a2-115">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="b25a2-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="f99f9-115">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="f99f9-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="b25a2-116">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b25a2-116">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="f99f9-116">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="f99f9-116">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="b25a2-117">**.NET framework 버전:** 4.5, 4, 3.5 SP1</span><span class="sxs-lookup"><span data-stu-id="b25a2-117">**.NET Framework Versions:** 4.5, 4, 3.5 SP1</span></span>  
+ <span data-ttu-id="f99f9-117">**.NET framework 버전:** 4.5, 4, 3.5 SP1</span><span class="sxs-lookup"><span data-stu-id="f99f9-117">**.NET Framework Versions:** 4.5, 4, 3.5 SP1</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b25a2-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b25a2-118">See Also</span></span>  
- [<span data-ttu-id="b25a2-119">ICorDebugRemoteTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b25a2-119">ICorDebugRemoteTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)  
- [<span data-ttu-id="b25a2-120">ICorDebug 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b25a2-120">ICorDebug Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
+## <a name="see-also"></a><span data-ttu-id="f99f9-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f99f9-118">See Also</span></span>  
+ [<span data-ttu-id="f99f9-119">ICorDebugRemoteTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f99f9-119">ICorDebugRemoteTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)  
+ [<span data-ttu-id="f99f9-120">ICorDebug 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f99f9-120">ICorDebug Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
     
- [<span data-ttu-id="b25a2-121">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b25a2-121">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+ [<span data-ttu-id="f99f9-121">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f99f9-121">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
