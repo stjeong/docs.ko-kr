@@ -6,11 +6,11 @@ helpviewer_keywords:
 - SaveFileDialog component
 ms.assetid: 6f5d9321-37d7-4448-ac4c-a33c42b2a766
 ms.openlocfilehash: e402f9835f3ca03ac0632d7202000fa3208ed6e3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45994366"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46485446"
 ---
 # <a name="savefiledialog-component-windows-forms"></a>SaveFileDialog 구성 요소(Windows Forms)
 Windows Forms <xref:System.Windows.Forms.SaveFileDialog> 구성 요소는 미리 구성된 대화 상자입니다. Windows에서 사용하는 표준 파일 저장 대화 상자와 같습니다. <xref:System.Windows.Forms.CommonDialog> 클래스에서 상속됩니다.  

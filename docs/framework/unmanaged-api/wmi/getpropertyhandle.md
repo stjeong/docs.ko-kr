@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 94171b0708c97eb7510e916e451ed03645d706f3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45743908"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46471121"
 ---
 # <a name="getpropertyhandle-function"></a>GetPropertyHandle 함수
 속성을 식별하는 고유한 핸들을 반환합니다.

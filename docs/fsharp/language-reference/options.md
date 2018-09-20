@@ -3,11 +3,11 @@ title: 옵션(F#)
 description: '명명 된 값 또는 변수에 대 한 F # 형식 때 실제 값이 존재 하지 않을 옵션을 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 0859cb42e72ef9e67551b884f5cf6130fb099a78
-ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46287938"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46479522"
 ---
 # <a name="options"></a>옵션
 

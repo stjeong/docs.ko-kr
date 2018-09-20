@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Svcutil.exe
 - clients [WCF], consuming services
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
-ms.openlocfilehash: 4c47013ebc84c6006d65a89e57217ce1c720b45a
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: f9ae53aeb988f23611adb4b00354f65918790d3b
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44197568"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46490168"
 ---
 # <a name="servicemodel-metadata-utility-tool-svcutilexe"></a>ServiceModel Metadata 유틸리티 도구(Svcutil.exe)
 
@@ -192,7 +192,7 @@ Svcutil.exe를 사용하면 응용 프로그램에 대해 컴파일된 어셈블
 |참조:\<파일 경로 >|형식 참조를 확인하는 데 사용되는 어셈블리 집합에 지정된 어셈블리를 추가합니다.<br /><br /> 약식: `/r`|
 |/excludeType:\<type>|내보내기 또는 유효성 검사에서 제외할 형식의 정규화된 이름 또는 정규화된 어셈블리 이름을 지정합니다.<br /><br /> 약식: `/et`|
 |/out:\<file>|생성된 코드에 대한 파일 이름을 지정합니다. 이 옵션은 여러 어셈블리가 도구에 입력으로 전달되는 경우 무시됩니다.<br /><br /> 기본값: 어셈블리 이름에서 파생됩니다.<br /><br /> 약식: `/o`|
-|/UseSerializerForFaults|지정 된 <!--zz <xref:System.Xml.XmlSerializer> --> `xref:System.Xml.XmlSerializer ` 읽기 및 쓰기 기본값 대신 오류에 사용할 <xref:System.Runtime.Serialization.DataContractSerializer>합니다.|
+|/UseSerializerForFaults|오류를 읽고 쓰는 데 기본 <xref:System.Xml.Serialization.XmlSerializer> 대신 <xref:System.Runtime.Serialization.DataContractSerializer>를 사용하도록 지정합니다.|
 
 ## <a name="examples"></a>예제
 

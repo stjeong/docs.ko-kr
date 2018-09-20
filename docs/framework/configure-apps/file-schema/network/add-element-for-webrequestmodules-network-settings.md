@@ -13,12 +13,12 @@ ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
 author: mcleblanc
 ms.author: markl
 manager: markl
-ms.openlocfilehash: 921f5f2bfda1a19d022d3f3f4131e3653fd17ea7
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: f3c3ea63df8d99154c42e40b359180ad1065f6c5
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32742792"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46481756"
 ---
 # <a name="ltaddgt-element-for-webrequestmodules-network-settings"></a>&lt;추가&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에 사용자 지정 웹 요청 모듈을 추가합니다.  
@@ -44,8 +44,8 @@ ms.locfileid: "32742792"
   
 |**특성**|**설명**|  
 |-------------------|---------------------|  
-|`prefix`|이 웹 요청 모듈에서 처리 요청에 대 한 URI 접두사입니다.|  
-|`type`|정규화 된 형식 이름 (으로 표시는 <xref:System.Type.FullName%2A> 속성)와 어셈블리 이름 (가리키는 <xref:System.Reflection.Assembly.FullName%2A> 속성)을이 웹 요청 모듈을 구현 하는 쉼표로 구분 합니다.|  
+|`prefix`|이 웹 요청 모듈에서 처리 하는 요청에 대 한 URI 접두사입니다.|  
+|`type`|정규화 된 형식 이름을 (나타난 합니다 <xref:System.Type.FullName%2A> 속성)와 어셈블리 이름 (나타난는 <xref:System.Reflection.Assembly.FullName%2A> 속성)이 웹 요청 모듈을 구현 하는 쉼표로 구분 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -57,19 +57,19 @@ ms.locfileid: "32742792"
 |[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|네트워크 호스트에서 정보를 요청 하는 데는 모듈을 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `prefix` 특성 지정 된 웹 요청 모듈을 사용 하는 URI 접두사를 정의 합니다. 웹 요청 모듈은 일반적으로 HTTP 또는 FTP와 같은 특정 프로토콜을 처리 하도록 등록 되어 있지만 서버에서 경로 또는 특정 서버에 요청을 처리 하도록 등록할 수 있습니다.  
+ `prefix` 특성은 지정된 된 웹 요청 모듈을 사용 하는 URI 접두사를 정의 합니다. 웹 요청 모듈은 일반적으로 HTTP 또는 FTP와 같은 특정 프로토콜을 처리 하도록 등록 되어 있지만 특정 서버 또는 서버의 경로 요청을 처리 하도록 등록할 수 있습니다.  
   
- URI 일치 하는 접두사에 전달 되 면 웹 요청 모듈 만들어집니다는 <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> 메서드.  
+ URI 일치 하는 접두사를 전달 되 면 웹 요청 모듈 만들어집니다는 <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> 메서드.  
   
- 에 대 한 값은 `prefix` 특성에는 예를 들어 "http"는 유효한 URI의 선행 문자를 사용 해야 합니다. 또는 "http://www.contoso.com" 입니다.  
+ 에 대 한 값을 `prefix` 특성에는 유효한 URI의 선행 문자를 사용 해야 합니다. 예를 들어 `http` 또는 `http://www.contoso.com`로 이름을 지정할 수 있습니다.
   
- 에 대 한 값은 `type` 특성 유효한 형식 이름 및 쉼표로 구분 하 여 해당 어셈블리 이름 이어야 합니다.  
+ 에 대 한 값을 `type` 특성은 유효한 형식 이름 및 쉼표로 구분 하 여 해당 어셈블리 이름 이어야 합니다.
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 HTTP에 대 한 사용자 지정 웹 요청 모듈을 등록 합니다. 지정된 된 모듈에 대 한 올바른 값으로 PublicKeyToken 및 버전에 대 한 값 바꿔야 합니다.  
+ 다음 예제에서는 HTTP에 대 한 사용자 지정 웹 요청 모듈을 등록 합니다. 지정된 된 모듈에 대 한 올바른 값을 사용 하 여 PublicKeyToken 및 버전에 대 한 값을 바꿔야 합니다.  
   
 ```xml  
 <configuration>  

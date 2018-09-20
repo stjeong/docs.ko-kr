@@ -2,17 +2,17 @@
 title: 비제네릭 ForEach
 ms.date: 03/30/2017
 ms.assetid: 576cd07a-d58d-4536-b514-77bad60bff38
-ms.openlocfilehash: b94ad54d248af7f6ad45c11b9860dd415db840f9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 0274cd5b87e6039ff40afa3108986ffd113fc4fb
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43419319"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46478320"
 ---
 # <a name="non-generic-foreach"></a>비제네릭 ForEach
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] 제어 흐름 활동을 포함 하 여 집합을 도구 상자에 제공 됩니다 <xref:System.Activities.Statements.ForEach%601>를 반복할 수 있도록 하는 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 컬렉션입니다.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]의 도구 상자에는 <xref:System.Activities.Statements.ForEach%601> 컬렉션을 반복할 수 있도록 하는 <xref:System.Collections.Generic.IEnumerable%601>을 비롯한 흐름 제어 활동이 제공됩니다.  
   
- <xref:System.Activities.Statements.ForEach%601> 필요한 해당 <xref:System.Activities.Statements.ForEach%601.Values%2A> 형식으로 속성 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable`합니다. 사용자를 구현 하는 데이터 구조를 반복 하므로 이렇게 <!--zz <xref:System.Collections.IEnumerable%601> --> `System.Collections.IEnumerable` 인터페이스 (예를 들어 <xref:System.Collections.ArrayList>). <xref:System.Activities.Statements.ForEach%601>의 비제네릭 버전은 컬렉션 값의 형식에 대한 호환성을 유지하기 위해 런타임 복잡성이 더 높아지지만 이러한 요구 사항의 제약을 받지 않습니다.  
+ <xref:System.Activities.Statements.ForEach%601>을 사용하려면 <xref:System.Activities.Statements.ForEach%601.Values%2A> 속성이 <xref:System.Collections.Generic.IEnumerable%601> 형식이어야 합니다. 그러면 사용자가 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스를 구현하는 데이터 구조(예: <xref:System.Collections.ArrayList>)를 반복하지 못합니다. <xref:System.Activities.Statements.ForEach%601>의 비제네릭 버전은 컬렉션 값의 형식에 대한 호환성을 유지하기 위해 런타임 복잡성이 더 높아지지만 이러한 요구 사항의 제약을 받지 않습니다.  
   
  이 샘플에서는 비제네릭 <xref:System.Activities.Statements.ForEach%601> 활동과 디자이너를 구현하는 방법을 보여 줍니다. 이 활동을 사용하여 <xref:System.Collections.ArrayList>를 반복할 수 있습니다.  
   

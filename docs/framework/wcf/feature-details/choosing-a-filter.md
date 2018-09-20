@@ -2,12 +2,12 @@
 title: 필터 선택
 ms.date: 03/30/2017
 ms.assetid: 67ab5af9-b9d9-4300-b3b1-41abb5a1fd10
-ms.openlocfilehash: bc3bba9a2b00b35f3e0cff1786ea98cfa881f311
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 377d4f5c221ad37acf954b1dafc8712a388122ff
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43743148"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46478505"
 ---
 # <a name="choosing-a-filter"></a>필터 선택
 라우팅 서비스를 구성할 때는 올바른 메시지 필터를 선택하고 수신하는 메시지와 정확히 일치하도록 메시지 필터를 구성해야 합니다. 선택한 필터가 과도하게 광범위하거나 올바르게 구성되지 않은 경우 메시지가 잘못 라우트됩니다. 필터가 너무 제한적인 경우에는 일부 메시지에 유효한 경로가 제공되지 않을 수 있습니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "43743148"
  라우팅 서비스에 사용되는 필터를 선택할 때는 각 필터가 작동하는 방식뿐 아니라 들어오는 메시지의 일부로 제공되는 정보도 알고 있어야 합니다. 예를 들어 모든 메시지를 동일한 엔드포인트를 통해 받는 경우 Address 및 EndpointName 필터는 유용하지 않습니다. 이는 모든 메시지가 이러한 필터와 일치하기 때문입니다.  
   
 ### <a name="action"></a>작업  
- Action 필터는 <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> 속성을 검사합니다. 메시지에 있는 Action 헤더의 내용이 필터 구성에 지정된 필터 데이터 값과 일치하면 이 필터는 `true`를 반환합니다. 다음 예제에서는 정의 `FilterElement` 의 값이 포함 된 action 헤더와 메시지를 일치 작업 필터를 사용 하는 "http://namespace/contract/operation/"입니다.  
+ Action 필터는 <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> 속성을 검사합니다. 메시지에 있는 Action 헤더의 내용이 필터 구성에 지정된 필터 데이터 값과 일치하면 이 필터는 `true`를 반환합니다. 다음 예제에서는 정의 `FilterElement` 작업 필터의 값이 포함 된 action 헤더와 메시지를 일치를 사용 하 여 `http://namespace/contract/operation/`입니다.
   
 ```xml  
 <filter name="action1" filterType="Action" filterData="http://namespace/contract/operation/" />  
@@ -47,7 +47,7 @@ EndpointAddressMessageFilter address1 = new EndpointAddressMessageFilter(new End
  이 필터는 들어오는 메시지의 주소가 고유한 주소로 지정된 경우에 사용해야 합니다.  
   
 ### <a name="endpointaddressprefix"></a>EndpointAddressPrefix  
- EndpointAddressPrefix 필터는 EndpointAddress 필터와 마찬가지로 메시지를 수신하는 EndpointAddress를 검사합니다. 그러나 EndpointAddressPrefix 필터는 필터 구성에 지정된 값으로 시작하는 주소를 일치시켜 와일드카드 역할을 합니다. 다음 예제에서는 정의 `FilterElement` EndpointAddressPrefix 필터를 사용 하 여 주소가 지정 된 메시지와 일치 하 "http://\<호스트 이름 > / vdir *"입니다.  
+ EndpointAddressPrefix 필터는 EndpointAddress 필터와 마찬가지로 메시지를 수신하는 EndpointAddress를 검사합니다. 그러나 EndpointAddressPrefix 필터는 필터 구성에 지정된 값으로 시작하는 주소를 일치시켜 와일드카드 역할을 합니다. 다음 예제에서는 정의 `FilterElement` EndpointAddressPrefix 필터를 사용 하 여 주소가 지정 된 메시지와 일치 하 `http://<hostname>/vdir*`합니다.  
   
 ```xml  
 <filter name="prefix1" filterType="EndpointAddressPrefix" filterData="http://host/vdir" />  

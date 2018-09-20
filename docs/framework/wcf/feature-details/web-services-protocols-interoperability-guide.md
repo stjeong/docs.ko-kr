@@ -2,12 +2,12 @@
 title: 웹 서비스 프로토콜 상호 운용성 가이드
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-ms.openlocfilehash: da5014292a8ebfcea48a7b6e1a0cdfd014b09961
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 37416a80c8b6f2ac086dbface1cda37609698bfc
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43739047"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46490378"
 ---
 # <a name="web-services-protocols-interoperability-guide"></a>웹 서비스 프로토콜 상호 운용성 가이드
 Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 구현합니다. 이러한 프로토콜의 대부분에는 구현자가 결정하는 여러 가지 옵션과 확장 지점이 포함되어 있습니다. 이 항목에서는 WCF를 구현 하는 웹 서비스 프로토콜의 목록을 제공 합니다. 이 단원의 다른 항목에서는 지원되는 각 프로토콜의 구현에 대해 자세히 설명합니다.  
@@ -74,7 +74,7 @@ Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 
 |WS-Coordination|[웹 서비스 조정](https://go.microsoft.com/fwlink/?LinkId=95324)|  
 |WS-AtomicTransaction|[웹 서비스 원자성 트랜잭션](https://go.microsoft.com/fwlink/?LinkId=95323)|  
   
- 합니다 <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>를 <!--zz <xref:System.ServiceModel.Description.WSDLExporter>, <xref:System.ServiceModel.Description.WSDLImporter>, --> `System.ServiceModel.Description.MetadataImporter`를 `System.ServiceModel.Description.WSDLImporter`, 및 <xref:System.ServiceModel.Description.MetadataResolver> 클래스에서는 다음 메타 데이터 사양을 지원:  
+ <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>, <xref:System.ServiceModel.Description.WsdlExporter>, <xref:System.ServiceModel.Description.WsdlImporter> 및 <xref:System.ServiceModel.Description.MetadataResolver> 클래스는 다음과 같은 메타데이터 사양을 지원합니다.  
   
 -   [XML Schema Part 1: 구조 제 2 판](https://go.microsoft.com/fwlink/?LinkId=3536)  
   

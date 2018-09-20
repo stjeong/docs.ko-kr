@@ -11,11 +11,11 @@ helpviewer_keywords:
 - XAML [XAML Services], x:Key attribute
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
 ms.openlocfilehash: f77f0a952224f79ee95a755cb848a4f8b68c9602
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45964685"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46479743"
 ---
 # <a name="xkey-directive"></a>x:Key 지시문
 고유 하 게 생성 및 XAML 정의 된 사전에서 참조 되는 요소를 식별 합니다. 추가 된 `x:Key` XAML 개체 요소 값은 WPF의 예를 들어 리소스 사전의 리소스를 식별 하는 가장 일반적인 방법은 <xref:System.Windows.ResourceDictionary>합니다.  

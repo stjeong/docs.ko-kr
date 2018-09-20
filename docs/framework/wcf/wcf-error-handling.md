@@ -2,12 +2,12 @@
 title: WCF 오류 처리
 ms.date: 03/30/2017
 ms.assetid: 1e4b1e0f-9598-449d-9d73-90bda62305b8
-ms.openlocfilehash: 90c1d5a955de10b7e65dd21bda7ebfb64f24399d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4fad317d8cb696b29d9c8e4e4d8209abc28410f8
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33504918"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473449"
 ---
 # <a name="wcf-error-handling"></a>WCF 오류 처리
 WCF 응용 프로그램에서 발생하는 오류는 다음 세 그룹 중 하나에 속합니다.  
@@ -35,16 +35,16 @@ WCF 응용 프로그램에서 발생하는 오류는 다음 세 그룹 중 하�
 -   <xref:System.ServiceModel.ServiceHost> 이벤트 처리  
   
 ## <a name="fault-contracts"></a>오류 계약  
- 오류 계약을 사용하면 플랫폼에 독립적인 방법으로 서비스 작업 중에 발생할 수 있는 오류를 정의할 수 있습니다. 기본적으로 서비스 작업 내에서 throw된 모든 예외는 클라이언트에 <xref:System.ServiceModel.FaultException> 개체로 반환됩니다. <xref:System.ServiceModel.FaultException> 개체에는 정보가 거의 포함되어 있지 않습니다. 오류 계약을 정의하고 오류를 <xref:System.ServiceModel.FaultException%601>으로 반환하여 클라이언트에 전송되는 정보를 제어할 수 있습니다. 자세한 내용은 참조 [지정 및 계약 및 서비스에서 처리 오류](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)합니다.  
+ 오류 계약을 사용하면 플랫폼에 독립적인 방법으로 서비스 작업 중에 발생할 수 있는 오류를 정의할 수 있습니다. 기본적으로 서비스 작업 내에서 throw된 모든 예외는 클라이언트에 <xref:System.ServiceModel.FaultException> 개체로 반환됩니다. <xref:System.ServiceModel.FaultException> 개체에는 정보가 거의 포함되어 있지 않습니다. 오류 계약을 정의하고 오류를 <xref:System.ServiceModel.FaultException%601>으로 반환하여 클라이언트에 전송되는 정보를 제어할 수 있습니다. 자세한 내용은 [지정 및 계약 및 서비스에서 오류 처리](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)합니다.  
   
 ## <a name="ierrorhandler"></a>IErrorHandler  
- <xref:System.ServiceModel.Dispatcher.IErrorHandler> 인터페이스를 사용하면 WCF 응용 프로그램이 오류에 응답하는 방법을 보다 강력하게 제어할 수 있습니다.  클라이언트에 반환되는 오류 메시지를 완전히 제어하고 로깅 등의 사용자 지정 오류 처리를 수행할 수 있습니다.  에 대 한 자세한 내용은 <xref:System.ServiceModel.Dispatcher.IErrorHandler> 및 [제어를 통해 오류 처리를 확장 및 보고](../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md)  
+ <xref:System.ServiceModel.Dispatcher.IErrorHandler> 인터페이스를 사용하면 WCF 응용 프로그램이 오류에 응답하는 방법을 보다 강력하게 제어할 수 있습니다.  클라이언트에 반환되는 오류 메시지를 완전히 제어하고 로깅 등의 사용자 지정 오류 처리를 수행할 수 있습니다.  에 대 한 자세한 내용은 <xref:System.ServiceModel.Dispatcher.IErrorHandler> 고 [확장 컨트롤을 통해 오류를 처리 하 고 보고](../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md)  
   
 ## <a name="servicehost-events"></a>ServiceHost 이벤트  
  <xref:System.ServiceModel.ServiceHost> 클래스는 서비스를 호스트하며 오류 처리에 필요할 수 있는 여러 이벤트를 정의합니다. 예를 들어:  
   
-1.  <!--zz <xref:System.ServiceModel.ServiceHost.Faulted>-->  `System.ServiceModel.ServiceHost.Faulted`
+1. <xref:System.ServiceModel.Channels.CommunicationObject.Faulted>
   
-2. <!--zz  <xref:System.ServiceModel.ServiceHost.UnknownMessageReceived>  --> `System.ServiceModel.ServiceHost.UnknownMessageReceived`
+2. <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived>
   
  자세한 내용은 <xref:System.ServiceModel.ServiceHost>을 참조하세요.

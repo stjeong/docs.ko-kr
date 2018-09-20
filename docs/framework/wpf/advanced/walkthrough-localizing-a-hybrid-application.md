@@ -5,12 +5,12 @@ helpviewer_keywords:
 - localization [WPF interoperability]
 - hybrid applications [WPF interoperability]
 ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
-ms.openlocfilehash: 685c68967f69e8933ff3dd2cd062e0893c7e2da6
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: e1d06085b4edb5c1e102eaab766ec7636194b991
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44076812"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46482120"
 ---
 # <a name="walkthrough-localizing-a-hybrid-application"></a>연습: 혼합 응용 프로그램 지역화
 
@@ -123,7 +123,7 @@ Windows Forms 디자이너에서는 위성 어셈블리에서 지역화를 사�
 2.  다음 명령을 사용하여 지역화 가능한 콘텐츠에 리소스 식별자를 할당합니다.
 
     ```
-    msbuild /t:updateuid LocalizingWpfInWf.csproj
+    msbuild -t:updateuid LocalizingWpfInWf.csproj
     ```
 
 3.  **솔루션 탐색기**를 두 번 클릭 **SimpleControl.xaml** 하 여 코드 편집기에서 엽니다. 확인할 수 있습니다는 `msbuild` 명령에 추가 된 `Uid` 모든 요소에 특성입니다. 따라서 리소스 식별자 할당을 통해 지역화가 용이해집니다.

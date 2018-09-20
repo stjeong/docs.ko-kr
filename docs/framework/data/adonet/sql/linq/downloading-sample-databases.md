@@ -3,11 +3,11 @@ title: 샘플 데이터베이스 다운로드
 ms.date: 03/30/2017
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
 ms.openlocfilehash: e0b842385762a486ffcc775974e15334c77b589b
-ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46006550"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46470715"
 ---
 # <a name="downloading-sample-databases"></a>샘플 데이터베이스 다운로드
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 설명서의 여러 가지 예제와 연습에서는 Northwind 샘플 데이터베이스와 SQL Server Express Edition을 사용합니다. Microsoft 다운로드 사이트에서 해당 제품을 무료로 다운로드할 수 있습니다.  

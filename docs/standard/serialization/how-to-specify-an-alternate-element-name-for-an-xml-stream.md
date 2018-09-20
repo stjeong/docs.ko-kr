@@ -13,11 +13,11 @@ helpviewer_keywords:
 - overriding classes
 ms.assetid: 5cc1c0b0-f94b-4525-9a41-88a582cd6668
 ms.openlocfilehash: 8cb6a66f9fc7a67ae99574e783fd889537b9b11a
-ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46288029"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46490087"
 ---
 # <a name="how-to-specify-an-alternate-element-name-for-an-xml-stream"></a>방법: XML 스트림의 대체 요소 이름 지정
 [코드 예제](#cpconoverridingserializationofclasseswithxmlattributeoverridesclassanchor1)  

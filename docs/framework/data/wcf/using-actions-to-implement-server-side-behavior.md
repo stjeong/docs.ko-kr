@@ -2,15 +2,16 @@
 title: 동작을 사용하여 서버 쪽 동작 구현
 ms.date: 03/30/2017
 ms.assetid: 11a372db-7168-498b-80d2-9419ff557ba5
-ms.openlocfilehash: 415797114d1e6d2ff307f0d872361f7d415cad3c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 515553540053ed0c16085fde06e2cc2d2dedda1e
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43516263"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46471738"
 ---
 # <a name="using-actions-to-implement-server-side-behavior"></a>동작을 사용하여 서버 쪽 동작 구현
-OData 동작을 통해 OData 서비스에서 검색한 리소스에 따른 동작을 구현할 수 있습니다.  예를 들어 디지털 영화를 리소스로 가정하면, 체크 아웃, 등급/코멘트 또는 체크 인 등 디지털 영화와 관련하여 수행할 수 있는 여러 동작이 있습니다. 이러한 동작은 디지털 영화를 관리하는 WCF Data Service로 구현할 수 있는 동작의 예입니다. 동작은 동작을 호출할 수 있는 리소스를 포함하는 OData 응답에 설명되어 있습니다. 사용자가 디지털 영화를 나타내는 리소스를 요청하면 WCF Data Service에서 반환된 응답은 해당 리소스에서 사용할 수 있는 동작에 대한 정보를 포함합니다. 동작의 사용 가능 여부는 데이터 서비스 또는 리소스의 상태에 따라 달라질 수 있습니다. 예를 들어 디지털 영화를 체크 아웃하면 다른 사용자가 이 디지털 영화를 체크 아웃할 수 없습니다. 클라이언트는 URL을 지정하기만 하면 동작을 호출할 수 있습니다. 예를 들어 http://MyServer/MovieService.svc/Movies(6) 는 특정 디지털 영화를 식별 하 고 http://MyServer/MovieService.svc/Movies(6)/Checkout 특정 영화에서 동작을 호출 합니다. 동작을 사용하여 데이터 모델을 노출하지 않고 서비스 모델을 노출할 수 있습니다. 영화 서비스를 계속 예로 들자면 사용자가 영화의 평점을 매길 수 있도록 하지만 등급 데이터를 리소스로 직접적으로 노출하지 않도록 할 수 있습니다. 사용자가 영화에 대한 평점을 매길 수 있지만 평가 데이터를 리소스로 직접 액세스하지 않도록 평가 동작을 구현할 수 있습니다.  
+
+OData 동작을 통해 OData 서비스에서 검색한 리소스에 따른 동작을 구현할 수 있습니다. 예를 들어 디지털 영화를 리소스로 가정하면, 체크 아웃, 등급/코멘트 또는 체크 인 등 디지털 영화와 관련하여 수행할 수 있는 여러 동작이 있습니다. 이러한 동작은 디지털 영화를 관리하는 WCF Data Service로 구현할 수 있는 동작의 예입니다. 동작은 동작을 호출할 수 있는 리소스를 포함하는 OData 응답에 설명되어 있습니다. 사용자가 디지털 영화를 나타내는 리소스를 요청하면 WCF Data Service에서 반환된 응답은 해당 리소스에서 사용할 수 있는 동작에 대한 정보를 포함합니다. 동작의 사용 가능 여부는 데이터 서비스 또는 리소스의 상태에 따라 달라질 수 있습니다. 예를 들어 디지털 영화를 체크 아웃하면 다른 사용자가 이 디지털 영화를 체크 아웃할 수 없습니다. 클라이언트는 URL을 지정하기만 하면 동작을 호출할 수 있습니다. 예를 들어 `http://MyServer/MovieService.svc/Movies(6)` 는 특정 디지털 영화를 식별 하 고 `http://MyServer/MovieService.svc/Movies(6)/Checkout` 특정 영화에서 동작을 호출 합니다. 동작을 사용하여 데이터 모델을 노출하지 않고 서비스 모델을 노출할 수 있습니다. 영화 서비스를 계속 예로 들자면 사용자가 영화의 평점을 매길 수 있도록 하지만 등급 데이터를 리소스로 직접적으로 노출하지 않도록 할 수 있습니다. 사용자가 영화에 대한 평점을 매길 수 있지만 평가 데이터를 리소스로 직접 액세스하지 않도록 평가 동작을 구현할 수 있습니다.
   
 ## <a name="implementing-an-action"></a>동작 구현  
  구현 해야 하는 서비스 동작을 구현 하는 <xref:System.IServiceProvider>, [IDataServiceActionProvider](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceactionprovider(v=vs.113).aspx), 및 [IDataServiceInvokable](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceinvokable(v=vs.113).aspx) 인터페이스입니다. <xref:System.IServiceProvider> WCF Data Services를 구현 하면 [IDataServiceActionProvider](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceactionprovider(v=vs.113).aspx)합니다. [IDataServiceActionProvider](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceactionprovider(v=vs.113).aspx) 를 만들려면 WCF Data Services를 사용 하면 찾고 설명 하 고 서비스 작업을 호출 합니다. [IDataServiceInvokable](https://msdn.microsoft.com/library/system.data.services.providers.idataserviceinvokable(v=vs.113).aspx) 있으면 서비스 동작의 동작을 구현 하는 코드를 호출 하 고 결과 얻을 수 있습니다. WCF Data Services가 Per-Call WCF Services이고 서비스를 호출할 때마다 서비스의 새 인스턴스가 만들어진다는 점에 주의합니다.  서비스를 만들 때 불필요한 동작이 수행되지 않는지 확인합니다.  
@@ -52,7 +53,7 @@ OData 동작을 통해 OData 서비스에서 검색한 리소스에 따른 동�
 ## <a name="invoking-a-wcf-data-service-action"></a>WCF Data Service 동작 호출  
  동작은 HTTP POST 요청을 사용하여 호출됩니다. URL은 뒤에 동작 이름이 오늘 리소스를 지정합니다. 요청 본문에서 매개 변수가 전달됩니다. 예를 들어 Rate라는 동작을 노출한 MovieService라는 서비스가 있는 경우입니다. 다음 URL을 사용하여 특정 영화에서 Rate 동작을 호출할 수 있습니다.  
   
- http://MovieServer/MovieService.svc/Movies(1)/Rate  
+ `http://MovieServer/MovieService.svc/Movies(1)/Rate`
   
  Movies(1)은 평점을 매길 영화를 지정하고 Rate는 Rate 동작을 지정합니다. 등급의 실제 값은 다음 예에서와 같이 HTTP 요청의 본문에 있습니다.  
   
@@ -67,15 +68,15 @@ Host: localhost:15238
 ```  
   
 > [!WARNING]
->  위의 샘플 코드는 JSON 경량 버전을 지원하는 WCF Data Services 5.2 이상에서만 작동합니다. 이전 버전의 WCF Data Services를 사용할 경우 `application/json;odata=verbose`와 같이 자세한 JSON 콘텐츠 형식을 지정해야 합니다.  
+> 위의 샘플 코드는 JSON 경량 버전을 지원하는 WCF Data Services 5.2 이상에서만 작동합니다. 이전 버전의 WCF Data Services를 사용할 경우 `application/json;odata=verbose`와 같이 자세한 JSON 콘텐츠 형식을 지정해야 합니다.  
   
  또는 다음 코드 조각에서와 같이 WCF Data Services 클라이언트를 사용하는 동작을 호출할 수 있습니다.  
   
-```  
+```csharp
 MoviesModel context = new MoviesModel (new Uri("http://MyServer/MoviesService.svc/"));  
-            //...  
-            context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "POST", new BodyOperationParameter("rating",4) );           
-```  
+//...  
+context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "POST", new BodyOperationParameter("rating",4) );
+```
   
  위의 코드 조각에서 `MoviesModel` 클래스는 Visual Studio를 사용하여 서비스 참조를 WCF Data Service에 추가하여 생성되었습니다.  
   

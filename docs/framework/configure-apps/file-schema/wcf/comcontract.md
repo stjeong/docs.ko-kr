@@ -2,12 +2,12 @@
 title: '&lt;comContract&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.openlocfilehash: b15d40c5933776676c605e71c77453442ad3e339
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e2addbada7f55076ae919d93c897991a7ec0fcd8
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32749064"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46490454"
 ---
 # <a name="ltcomcontractgt"></a>&lt;comContract&gt;
 COM+ 통합 서비스 계약을 지정합니다.  
@@ -70,7 +70,7 @@ COM+ 통합 서비스 계약을 지정합니다.
 |comContracts|`comContract` 요소의 컬렉션을 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- COM + 통합 서비스 계약은 현재 제한 되며는 "http://tempuri.org" 네임 스페이스, 계약 이름은 지원 COM 인터페이스에서 파생 됩니다. 그러나 구성 파일에서`comContracts` 섹션 및 `comContract` 요소를 사용하여 대안을 지정할 수 있습니다. 예를 들어 다음 구성을 사용하여 포함시킬 네임스페이스, 계약 이름, 사용자 정의 형식 및 서비스 계약의 기타 설정을 지정할 수 있습니다.  
+ COM + 통합 서비스 계약은 현재 제한 되며는 `http://tempuri.org` 네임 스페이스, 계약 이름은 지원 COM 인터페이스에서 파생 됩니다. 그러나 구성 파일에서`comContracts` 섹션 및 `comContract` 요소를 사용하여 대안을 지정할 수 있습니다. 예를 들어 다음 구성을 사용하여 포함시킬 네임스페이스, 계약 이름, 사용자 정의 형식 및 서비스 계약의 기타 설정을 지정할 수 있습니다.  
   
 ```xml  
 <comContracts>  

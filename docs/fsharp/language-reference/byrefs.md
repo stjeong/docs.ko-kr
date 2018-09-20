@@ -3,11 +3,11 @@ title: 'Byref (F #)'
 description: 'Byref 및 낮은 수준의 프로그래밍에 사용 되는 F #에서는 byref와 유사한 형식에 알아봅니다.'
 ms.date: 09/02/2018
 ms.openlocfilehash: 6131104e4325f77da84368c337f998c6b2b5309b
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45749855"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46485485"
 ---
 # <a name="byrefs"></a>Byref
 

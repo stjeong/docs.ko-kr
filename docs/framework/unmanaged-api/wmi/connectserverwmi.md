@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 163e61eef8a753b5b6470285e5e3ce63789e25a4
-ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
+ms.openlocfilehash: 244df48606f6d971d6b6e246c4f9b73f916cbdcd
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46287743"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473540"
 ---
 # <a name="connectserverwmi-function"></a>ConnectServerWmi 함수
 DCOM 통해 지정된 컴퓨터의 WMI 네임스페이스에 대한 연결을 만듭니다.  
@@ -48,7 +48,7 @@ HRESULT ConnectServerWmi (
 
 `strNetworkResource` [in] 유효한 포인터 `BSTR` 올바른 WMI 네임 스페이스의 개체 경로 포함 하는 합니다. 참조 된 [주의](#remarks) 자세한 내용은 섹션입니다.
 
-`strUser` [in] 유효한 포인터 `BSTR` 사용자 이름을 포함 하는 합니다. `null` 값 현재 보안 컨텍스트를 나타냅니다. 사용자가 현재 다른 도메인에서 `strUser` 백슬래시로 구분 된 사용자 이름과 도메인을 포함할 수도 있습니다. `strUser` 사용할 사용자에서 계정 이름 (UPN) 형식을 지정할 수도 있습니다,으로 suhc *userName@domainName*합니다. 참조 된 [주의](#remarks) 자세한 내용은 섹션입니다.
+`strUser` [in] 유효한 포인터 `BSTR` 사용자 이름을 포함 하는 합니다. `null` 값 현재 보안 컨텍스트를 나타냅니다. 사용자가 현재 다른 도메인에서 `strUser` 백슬래시로 구분 된 사용자 이름과 도메인을 포함할 수도 있습니다. `strUser` 와 같은 사용자 계정 이름 (UPN) 형식에 있을 수도 있습니다 `userName@domainName`합니다. 참조 된 [주의](#remarks) 자세한 내용은 섹션입니다.
 
 `strPassword` [in] 유효한 포인터 `BSTR` 암호가 포함 된 합니다. `null` 현재 보안 컨텍스트를 나타냅니다. 빈 문자열 ("") 유효한 빈 암호를 나타냅니다.
 

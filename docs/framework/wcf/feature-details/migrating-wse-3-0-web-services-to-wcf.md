@@ -3,11 +3,11 @@ title: WSE 3.0 웹 서비스를 WCF로 마이그레이션
 ms.date: 03/30/2017
 ms.assetid: 7bc5fff7-a2b2-4dbc-86cc-ecf73653dcdc
 ms.openlocfilehash: 21e36be178bb0dd0c52213d8c4c1387a564a0e5a
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45964776"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46478568"
 ---
 # <a name="migrating-wse-30-web-services-to-wcf"></a>WSE 3.0 웹 서비스를 WCF로 마이그레이션
 마이그레이션 WSE 3.0 웹 서비스를 Windows Communication Foundation (WCF)의 이점을 성능 향상된 등 지원 추가 전송, 추가 보안 시나리오 및 WS-* 사양입니다. WSE 3.0에서 WCF로 마이그레이션된 웹 서비스는 최대 200% ~ 400% 성능 향상을 경험할 수 있습니다. WCF에서 지 원하는 전송에 대 한 자세한 내용은 참조 하세요. [전송 선택](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)합니다. WCF를 지 원하는 시나리오의 목록을 참조 하세요 [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)합니다. WCF에서 지원 되는 사양의 목록을 참조 하세요 [웹 서비스 프로토콜 상호 운용성 가이드](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)합니다.  

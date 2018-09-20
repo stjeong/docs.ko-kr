@@ -2,18 +2,18 @@
 title: '&lt;comContracts&gt;'
 ms.date: 03/30/2017
 ms.assetid: 42e74148-223d-4888-a8ed-1d928527eb09
-ms.openlocfilehash: b44c09e7e32129ba21834f7fbb8dc4699904e46b
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 297a28181de8ce6ed658afad950f25cced9f9cb7
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746412"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46490220"
 ---
 # <a name="ltcomcontractsgt"></a>&lt;comContracts&gt;
 `comContracts` 구성 섹션에는 COM+ 통합 서비스 계약의 다양한 속성을 지정할 수 있게 해 주는 요소가 포함되어 있습니다.  
   
 ## <a name="specifying-namespace-and-contract"></a>네임스페이스 및 계약 지정  
- COM + 통합 서비스 계약은 현재 제한 되며는 "http://tempuri.org" 네임 스페이스, 계약 이름은 지원 COM 인터페이스에서 파생 됩니다. 그러나 구성 파일에서 `comContracts` 섹션을 사용하여 대안을 지정할 수 있습니다.  
+ COM + 통합 서비스 계약은 현재 제한 되며는 `http://tempuri.org` 네임 스페이스, 계약 이름은 지원 COM 인터페이스에서 파생 됩니다. 그러나 구성 파일에서 `comContracts` 섹션을 사용하여 대안을 지정할 수 있습니다.  
   
  예를 들어 다음 구성을 사용하여 서비스 계약의 네임스페이스 및 계약 이름과 세션 바인딩에 사용법을 적용할 옵션을 지정할 수 있습니다.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "32746412"
   
  이 섹션이 비어 있으면 서비스 초기화에서는 지원 COM 인터페이스 ID에서 가져온 기본 네임스페이스 및 계약 이름을 적용합니다.  
   
- 또한 사용할 수 있습니다는 [ \<exposedMethod >](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) COM + 구성 요소의 인터페이스가 웹 서비스로 노출 될 때 노출 되는 COM + 메서드를 지정 하는 요소입니다. 사용할 수도 있습니다는 [ \<persistableTypes >](../../../../../docs/framework/configure-apps/file-schema/wcf/persistabletypes.md) 통합에 사용 되는 지속 형식을 지정할 수 있습니다. 마지막으로 사용할 수 있습니다는 [ \<userDefinedType >](../../../../../docs/framework/configure-apps/file-schema/wcf/userdefinedtype.md) 요소 형식을 UDT (사용자 정의)를 서비스 계약에 포함 하는 포함 하도록 합니다.  
+ 또한 사용할 수 있습니다 합니다 [ \<exposedMethod >](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) COM + 구성 요소의 인터페이스가 웹 서비스로 노출 된 경우 표시 되는 COM + 메서드를 지정 하는 요소입니다. 사용할 수도 있습니다는 [ \<persistableTypes >](../../../../../docs/framework/configure-apps/file-schema/wcf/persistabletypes.md) 통합에 사용 되는 지속 형식을 지정 합니다. 마지막으로 사용할 수 있습니다 합니다 [ \<userDefinedType >](../../../../../docs/framework/configure-apps/file-schema/wcf/userdefinedtype.md) 형식 UDT (사용자 정의) 서비스 계약에 포함 될 수 있는 포함 요소입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.ComContractElementCollection>  
