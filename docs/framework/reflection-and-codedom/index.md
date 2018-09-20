@@ -8,29 +8,29 @@ ms.assetid: f78ec137-df0e-48c9-a7a0-5f6a1055f011
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e90857fcf02dbd0dd888b0658f3ab626bc5b11bd
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45676099"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46322587"
 ---
-# <a name="dynamic-programming-in-the-net-framework"></a><span data-ttu-id="42d61-102">.NET Framework의 동적 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="42d61-102">Dynamic Programming in the .NET Framework</span></span>
-<span data-ttu-id="42d61-103">설명서의 이 섹션에서는 .NET Framework에서의 동적 프로그래밍에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="42d61-103">This section of the documentation provides information about dynamic programming in the .NET Framework.</span></span>  
+# <a name="dynamic-programming-in-the-net-framework"></a><span data-ttu-id="70ecf-102">.NET Framework의 동적 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="70ecf-102">Dynamic Programming in the .NET Framework</span></span>
+<span data-ttu-id="70ecf-103">설명서의 이 섹션에서는 .NET Framework에서의 동적 프로그래밍에 대한 정보를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="70ecf-103">This section of the documentation provides information about dynamic programming in the .NET Framework.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="42d61-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="42d61-104">In This Section</span></span>  
- [<span data-ttu-id="42d61-105">리플렉션</span><span class="sxs-lookup"><span data-stu-id="42d61-105">Reflection</span></span>](../../../docs/framework/reflection-and-codedom/reflection.md)  
- <span data-ttu-id="42d61-106">리플렉션을 사용하여 런타임에 개체 작업을 하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="42d61-106">Describes how to use reflection to work with objects at run time.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="70ecf-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="70ecf-104">In This Section</span></span>  
+ [<span data-ttu-id="70ecf-105">리플렉션</span><span class="sxs-lookup"><span data-stu-id="70ecf-105">Reflection</span></span>](../../../docs/framework/reflection-and-codedom/reflection.md)  
+ <span data-ttu-id="70ecf-106">리플렉션을 사용하여 런타임에 개체 작업을 하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="70ecf-106">Describes how to use reflection to work with objects at run time.</span></span>  
   
- [<span data-ttu-id="42d61-107">동적 메서드 및 어셈블리 내보내기</span><span class="sxs-lookup"><span data-stu-id="42d61-107">Emitting Dynamic Methods and Assemblies</span></span>](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  
- <span data-ttu-id="42d61-108">Reflection.Emit를 사용하여 런타임에 메서드 및 어셈블리를 만드는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="42d61-108">Describes how to create methods and assemblies at run time by using Reflection.Emit.</span></span>  
+ [<span data-ttu-id="70ecf-107">동적 메서드 및 어셈블리 내보내기</span><span class="sxs-lookup"><span data-stu-id="70ecf-107">Emitting Dynamic Methods and Assemblies</span></span>](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  
+ <span data-ttu-id="70ecf-108">Reflection.Emit를 사용하여 런타임에 메서드 및 어셈블리를 만드는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="70ecf-108">Describes how to create methods and assemblies at run time by using Reflection.Emit.</span></span>  
   
- [<span data-ttu-id="42d61-109">동적 언어 런타임 개요</span><span class="sxs-lookup"><span data-stu-id="42d61-109">Dynamic Language Runtime Overview</span></span>](../../../docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md)  
- <span data-ttu-id="42d61-110">동적 언어 런타임의 기능을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="42d61-110">Describes the features of the dynamic language runtime.</span></span>  
+ [<span data-ttu-id="70ecf-109">동적 언어 런타임 개요</span><span class="sxs-lookup"><span data-stu-id="70ecf-109">Dynamic Language Runtime Overview</span></span>](../../../docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md)  
+ <span data-ttu-id="70ecf-110">동적 언어 런타임의 기능을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="70ecf-110">Describes the features of the dynamic language runtime.</span></span>  
   
- [<span data-ttu-id="42d61-111">동적 소스 코드 생성 및 컴파일</span><span class="sxs-lookup"><span data-stu-id="42d61-111">Dynamic Source Code Generation and Compilation</span></span>](../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)  
- <span data-ttu-id="42d61-112">동적 소스 코드를 생성하고 컴파일하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="42d61-112">Describes how to generate and compile dynamic source code.</span></span>  
+ [<span data-ttu-id="70ecf-111">동적 소스 코드 생성 및 컴파일</span><span class="sxs-lookup"><span data-stu-id="70ecf-111">Dynamic Source Code Generation and Compilation</span></span>](../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)  
+ <span data-ttu-id="70ecf-112">동적 소스 코드를 생성하고 컴파일하는 방법을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="70ecf-112">Describes how to generate and compile dynamic source code.</span></span>  
   
-## <a name="related-sections"></a><span data-ttu-id="42d61-113">관련 단원</span><span class="sxs-lookup"><span data-stu-id="42d61-113">Related Sections</span></span>  
- [<span data-ttu-id="42d61-114">개발 가이드</span><span class="sxs-lookup"><span data-stu-id="42d61-114">Development Guide</span></span>](../../../docs/framework/development-guide.md)  
+## <a name="related-sections"></a><span data-ttu-id="70ecf-113">관련 단원</span><span class="sxs-lookup"><span data-stu-id="70ecf-113">Related Sections</span></span>  
+ [<span data-ttu-id="70ecf-114">개발 가이드</span><span class="sxs-lookup"><span data-stu-id="70ecf-114">Development Guide</span></span>](../../../docs/framework/development-guide.md)  
   
- [<span data-ttu-id="42d61-115">.NET Framework에 대한 고급 정보</span><span class="sxs-lookup"><span data-stu-id="42d61-115">Advanced Reading for the .NET Framework</span></span>](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)
+ [<span data-ttu-id="70ecf-115">.NET Framework에 대한 고급 정보</span><span class="sxs-lookup"><span data-stu-id="70ecf-115">Advanced Reading for the .NET Framework</span></span>](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)
