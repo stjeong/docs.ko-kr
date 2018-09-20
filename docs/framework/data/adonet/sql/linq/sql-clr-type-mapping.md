@@ -2,12 +2,12 @@
 title: SQL-CLR 형식 매핑
 ms.date: 07/23/2018
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
-ms.openlocfilehash: ac00d78fff65f5d44a52f92509db3aa493952949
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: d5c0072d8561efa1211de191a1f2b6f3a1e55b7b
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862107"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46478697"
 ---
 # <a name="sql-clr-type-mapping"></a>SQL-CLR 형식 매핑
 LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자가 선택한 프로그래밍 언어로 표현되는 개체 모델에 매핑됩니다. 응용 프로그램을 실행하면 LINQ to SQL에서는 개체 모델의 통합 언어 쿼리를 SQL로 변환하여 실행을 위해 데이터베이스로 전송합니다. 데이터베이스에서 결과가 반환되면 LINQ to SQL에서는 해당 결과를 사용자의 프로그래밍 언어로 작업할 수 있는 개체로 다시 변환합니다.  
@@ -122,7 +122,7 @@ LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자�
  이 외에도 여러 가지 숫자 매핑을 선택할 수 있지만 일부의 경우에는 데이터베이스 관련 변환 과정에서 오버플로 또는 데이터 손실 예외가 발생할 수 있습니다. 자세한 내용은 참조는 [형식 매핑 런타임 동작 매트릭스](#BehaviorMatrix)합니다.  
   
 ### <a name="decimal-and-money-types"></a>Decimal 및 Money 형식  
- SQL Server의 기본 정밀도 `DECIMAL` 형식 (18 자리 왼쪽을 소수점의 오른쪽) CLR의 전체 자릿수 보다 훨씬 작습니다 <!--zz <xref:System.Decima?displayProperty=nameWithType>l --> `Decimal` 기본적으로 함께 하는 형식입니다. 이 때문에 데이터베이스에 데이터를 저장할 때 전체 자릿수가 손실될 수 있습니다. 그러나 SQL Server의 `DECIMAL` 형식이 30자리 이상으로 구성된 경우에는 그 반대의 결과가 발생할 수 있습니다. SQL Server `DECIMAL` 형식의 전체 자릿수가 CLR <xref:System.Decimal?displayProperty=nameWithType>의 전체 자릿수보다 크게 구성된 경우 데이터베이스에서 데이터를 검색할 때 전체 자릿수가 손실될 수 있습니다.  
+ SQL Server `DECIMAL` 형식의 기본 전체 자릿수(소수점을 기준으로 왼쪽과 오른쪽에 18자리)는 이 형식과 기본적으로 쌍을 이루는 CLR <xref:System.Decimal?displayProperty=nameWithType> 형식의 전체 자릿수보다 훨씬 적습니다. 이 때문에 데이터베이스에 데이터를 저장할 때 전체 자릿수가 손실될 수 있습니다. 그러나 SQL Server의 `DECIMAL` 형식이 30자리 이상으로 구성된 경우에는 그 반대의 결과가 발생할 수 있습니다. SQL Server `DECIMAL` 형식의 전체 자릿수가 CLR <xref:System.Decimal?displayProperty=nameWithType>의 전체 자릿수보다 크게 구성된 경우 데이터베이스에서 데이터를 검색할 때 전체 자릿수가 손실될 수 있습니다.  
   
  CLR `MONEY` 형식과 기본적으로 쌍을 이루는 SQL Server `SMALLMONEY` 및 <xref:System.Decimal?displayProperty=nameWithType> 형식도 전체 자릿수가 훨씬 적기 때문에 데이터베이스에 데이터를 저장할 때 오버플로 또는 데이터 손실 예외가 발생할 수 있습니다.  
   
