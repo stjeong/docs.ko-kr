@@ -2,12 +2,12 @@
 title: Windows 스토어 클라이언트 응용 프로그램을 사용하여 WCF 서비스에 액세스
 ms.date: 03/30/2017
 ms.assetid: e2002ef4-5dee-4a54-9d87-03b33d35fc52
-ms.openlocfilehash: cfc5dd13c5660ff1604e9de02fdf6755d70a95e9
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: a6324d5400e9fb15b3373eea4df0a15cd7c54887
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43485666"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46541121"
 ---
 # <a name="accessing-wcf-services-with-a-windows-store-client-app"></a>Windows 스토어 클라이언트 응용 프로그램을 사용하여 WCF 서비스에 액세스
 Windows 8에서는 Windows 스토어 응용 프로그램이라는 새로운 형식의 응용 프로그램을 제공합니다. 이러한 응용 프로그램은 터치 스크린 인터페이스를 바탕으로 설계되었습니다. .NET Framework 4.5에서는 Windows 스토어 응용 프로그램을 사용하여 WCF 서비스를 호출할 수 있습니다.  
@@ -107,17 +107,18 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
 >  이제 XmlDictionaryWriter.Write(DateTime)는 DateTime 개체를 문자열로 씁니다.  
   
 ### <a name="security"></a>보안  
- Windows 스토어 응용 프로그램에서는 다음과 같은 보안 모드가 지원됩니다.  
+
+다음 보안 모드는 Windows 스토어 응용 프로그램에서 지원 됩니다.
   
-1.  <xref:System.ServiceModel.SecurityMode.None>  
+1. <xref:System.ServiceModel.SecurityMode.None>  
   
-2.  <xref:System.ServiceModel.SecurityMode.Transport>  
+2. <xref:System.ServiceModel.SecurityMode.Transport>  
   
-3.  <!--zz <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredentials> --> `System.ServiceModel.SecurityMode.TransportWithMessageCredentials`
+3. <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>
   
-4.  <!--zz <xref:System.ServiceModel.SecurityMode.TransportCredentialOnly>  --> `System.ServiceModel.SecurityMode.TransportCredentialOnly`
+4. <xref:System.ServiceModel.SecurityMode.Message>
   
- Windows 스토어 응용 프로그램에서는 다음과 같은 클라이언트 자격 증명 형식이 지원됩니다.  
+클라이언트 자격 증명 유형은 Windows 스토어 응용 프로그램에서 지원 됩니다.
   
 1.  없음  
   
@@ -145,7 +146,7 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
   
 1.  <xref:System.ServiceModel.ChannelFactory>  
   
-2.  <!--zz <xref:System.ServiceModel.DuplexChannelFactory> --> `System.ServiceModel.DuplexChannelFactory`
+2.  <xref:System.ServiceModel.DuplexChannelFactory%601>
   
 3.  <xref:System.ServiceModel.CallbackBehaviorAttribute>  
   
