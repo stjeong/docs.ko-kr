@@ -6,7 +6,7 @@ author: BrucePerlerMS
 manager: mbaldwin
 ms.openlocfilehash: 1a85b359450cb3ba07930466f550f964c6fdd98b
 ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/20/2018
 ms.locfileid: "46481912"
