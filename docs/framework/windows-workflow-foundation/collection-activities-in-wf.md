@@ -2,15 +2,15 @@
 title: WF의 컬렉션 활동
 ms.date: 03/30/2017
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
-ms.openlocfilehash: 442da07e78ee08b49ad0e023362cace23dcd5b8d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6b3a02cdd020d303519f605a206d62b42f4fe731
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33516729"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46525060"
 ---
 # <a name="collection-activities-in-wf"></a>WF의 컬렉션 활동
-컬렉션 활동은 워크플로에서 컬렉션 개체로 작업하는 데 사용됩니다. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]에는 컬렉션에서 항목을 추가 및 제거하고, 컬렉션에 항목이 있는지 테스트하고, 컬렉션을 지우는 시스템 제공 활동이 있습니다. `ExistsInCollection` 및 `RemoveFromCollection` 가 <xref:System.Activities.OutArgument%601> 형식의 <xref:System.Boolean>, 결과 나타내는입니다.  
+컬렉션 활동은 워크플로에서 컬렉션 개체로 작업하는 데 사용됩니다. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]에는 컬렉션에서 항목을 추가 및 제거하고, 컬렉션에 항목이 있는지 테스트하고, 컬렉션을 지우는 시스템 제공 활동이 있습니다. `ExistsInCollection` 및 `RemoveFromCollection` 가 <xref:System.Activities.OutArgument%601> 형식의 <xref:System.Boolean>, 결과 나타냅니다.  
   
 > [!IMPORTANT]
 >  기본 컬렉션 개체를 설정하기 이전에 컬렉션 활동을 실행하면 <xref:System.InvalidOperationException>이 throw되고 활동 오류가 발생합니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "33516729"
 |<xref:System.Activities.Statements.RemoveFromCollection%601>|지정된 컬렉션에서 항목을 제거한 후 항목이 성공적으로 제거되면 `true`를 반환합니다.|  
   
 ## <a name="using-collection-activities"></a>컬렉션 활동 사용  
- 다음 코드 예제에서는 워크플로 변수로 선언된 컬렉션과 상호 작용하는 방법을 보여 줍니다. 사용 된 컬렉션은 한 <!--zz <xref:System.Collections.Generic.List%E2%80%991>--> `System.Collections.Generic.List` 의 <xref:System.String> 개체의 명명 된 `fruitList`합니다.  
+ 다음 코드 예제에서는 워크플로 변수로 선언된 컬렉션과 상호 작용하는 방법을 보여 줍니다. 사용된 컬렉션은 <xref:System.Collections.Generic.List%601>라는 <xref:System.String> 개체의 `fruitList`입니다.  
   
 ```csharp  
 Variable<ICollection<string>> fruitList = new Variable<ICollection<string>>  
@@ -227,7 +227,7 @@ Activity wf = new Sequence
   
  위의 코드 샘플에서 <xref:Microsoft.CSharp.Activities.CSharpValue%601> 대신 <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>을 사용하여 식을 만들 수도 있습니다.  
   
-```  
+```csharp
 Variable<ICollection<string>> fruitList = new Variable<ICollection<string>>  
 {  
     Default = new CSharpValue<ICollection<string>>("new List<String> From {\"Apple\", \"Orange\"};"),  

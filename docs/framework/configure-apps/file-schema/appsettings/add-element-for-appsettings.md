@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 35a9fc08033d2b9cd1dae5a1f1f3ddcd361f03eb
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: bcdac76528e7a8b07b56b6fd1d827c3c8072c371
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32753640"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46529582"
 ---
-# <a name="add-element-for-appsettings"></a>\<추가 > 요소에 대 한 \<g s >
+# <a name="add-element-for-appsettings"></a>\<추가 > 요소에 대 한 \<appSettings >
 
 사용자 지정 응용 프로그램 설정을 추가합니다.
 
@@ -59,6 +59,15 @@ ms.locfileid: "32753640"
 </appSettings>
 ```
 
+다음 예제에서는 `<add>` ASP.NET 응용 프로그램에서 두 호환성 설정을 정의 하는 요소:
+
+```xml
+<appSettings>
+  <add key="AppContext.SetSwitch:Switch.System.Globalization.NoAsyncCurrentCulture" value="true" />
+  <add key="AppContext.SetSwitch:Switch.System.Uri.DontEnableStrictRFC3986ReservedCharacterSets" value="true" />
+</appSettings>
+```
+
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+[.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

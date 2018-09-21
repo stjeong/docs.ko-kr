@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 196e99ab1f1a0baae53c6a1dc295b135e36fbfe0
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46324596"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46525489"
 ---
 # <a name="how-to-determine-if-a-net-standard-object-is-serializable"></a>.NET Standard 개체를 직렬화 가능 인지 확인 하는 방법
 

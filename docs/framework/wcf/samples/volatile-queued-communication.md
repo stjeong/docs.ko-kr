@@ -3,11 +3,11 @@ title: 일시 대기 통신
 ms.date: 03/30/2017
 ms.assetid: 0d012f64-51c7-41d0-8e18-c756f658ee3d
 ms.openlocfilehash: 55c2b695cdc672216ef6a76bef55bc0d427336a0
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46481834"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46526761"
 ---
 # <a name="volatile-queued-communication"></a>일시 대기 통신
 이 샘플에서는 MSMQ(메시지 큐) 전송을 통해 일시 대기 중인 통신을 수행하는 방법을 보여 줍니다. 이 샘플에서는 <xref:System.ServiceModel.NetMsmqBinding>을 사용합니다. 이 경우의 서비스는 자체 호스팅 콘솔 응용 프로그램이며 이를 사용하여 서비스에서 대기 중인 메시지를 받는 것을 관찰할 수 있습니다.  
