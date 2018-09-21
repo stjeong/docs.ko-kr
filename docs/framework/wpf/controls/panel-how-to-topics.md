@@ -8,11 +8,11 @@ helpviewer_keywords:
 - controls [WPF], Panel
 ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
 ms.openlocfilehash: d8ead1a799f1bd7524d171beb3e262baeb4b5fbe
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45745470"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46493534"
 ---
 # <a name="panel-how-to-topics"></a>Panel 방법 항목
 이 섹션의에서 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Controls.Panel> 요소 및 관련 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]합니다.  

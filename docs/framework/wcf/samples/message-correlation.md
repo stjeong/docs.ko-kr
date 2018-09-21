@@ -2,12 +2,12 @@
 title: 메시지 상관 관계
 ms.date: 03/30/2017
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
-ms.openlocfilehash: e4cd5dfd6f03370a408dc6f8fb39c983db3d43df
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: fd97f12f536da85619f300d36d02a10306f32aa5
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45999431"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46493196"
 ---
 # <a name="message-correlation"></a>메시지 상관 관계
 이 샘플에서는 메시지 큐 (MSMQ) 응용 프로그램을 Windows Communication Foundation (WCF) 서비스에 MSMQ 메시지를 보낼 수 있습니다 하는 방법 및 메시지를 요청/응답 시나리오의 발신자와 수신자 응용 프로그램 간에 상호 연결 하는 방법을 보여 줍니다. 이 샘플에서는 msmqIntegrationBinding 바인딩을 사용합니다. 이 경우 서비스는 자체 호스팅 콘솔 응용 프로그램으로, 이를 사용하여 대기 중인 메시지를 받는 서비스를 확인할 수 있습니다. k  
@@ -16,7 +16,7 @@ ms.locfileid: "45999431"
   
  `IOrderProcessor` 서비스 계약은 큐에 사용하기 적합한 단방향 서비스 작업을 정의합니다. MSMQ 메시지에는 동작 헤더가 없기 때문에 여러 MSMQ 메시지를 작업 계약에 자동으로 매핑할 수 없습니다. 따라서 이 경우에는 한 작업 계약만 있을 수 있습니다. 서비스에 좀더 많은 작업 계약을 정의하려는 경우 응용 프로그램은 발송할 작업 계약을 결정하는 데 사용할 수 있는 MSMQ 메시지의 헤더에 대한 정보(예: 레이블 또는 correlationID)를 제공해야 합니다. 에 설명 되어이 [사용자 지정 Demux](../../../../docs/framework/wcf/samples/custom-demux.md)합니다.  
   
- MSMQ 메시지에는 작업 계약의 다른 매개 변수에 매핑되는 헤더에 대한 정보도 포함되지 않습니다. 따라서 작업 계약에는 한 매개 변수만 있을 수 있습니다. 이 매개 변수는 형식 <!--zz <xref:System.ServiceModel.MSMQIntegration.MsmqMessage%601>`MsmqMessage<T>`--> , `System.ServiceModel.MSMQIntegration.MsmqMessage` 기본 MSMQ 메시지를 포함 하는 합니다. `MsmqMessage<T>` 클래스의 "T" 형식은 MSMQ 메시지 본문에 serialize되는 데이터를 나타냅니다. 이 샘플에서는 `PurchaseOrder` 형식이 MSMQ 메시지 본문으로 serialize됩니다.  
+ MSMQ 메시지에는 작업 계약의 다른 매개 변수에 매핑되는 헤더에 대한 정보도 포함되지 않습니다. 따라서 작업 계약에는 한 매개 변수만 있을 수 있습니다. 이 매개 변수는 형식 <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, 기본 MSMQ 메시지를 포함 하는 합니다. `MsmqMessage<T>` 클래스의 "T" 형식은 MSMQ 메시지 본문에 serialize되는 데이터를 나타냅니다. 이 샘플에서는 `PurchaseOrder` 형식이 MSMQ 메시지 본문으로 serialize됩니다.  
 
 ```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  

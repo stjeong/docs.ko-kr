@@ -2,12 +2,12 @@
 title: '방법: 워크플로 응용 프로그램에서 서비스 액세스'
 ms.date: 03/30/2017
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
-ms.openlocfilehash: 5bc18b446d4bf818c874839a421793a997ddc543
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 460e5d0f1bbfdebf885176ed9fcc336b76731edd
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45595466"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46493316"
 ---
 # <a name="how-to-access-a-service-from-a-workflow-application"></a>방법: 워크플로 응용 프로그램에서 서비스 액세스
 이 항목에서는 워크플로 콘솔 응용 프로그램에서 워크플로 서비스를 호출하는 방법에 대해 설명합니다. 완료에 종속 합니다 [방법: 메시징 작업을 사용 하 여 워크플로 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md) 항목. 이 항목에서는 워크플로 응용 프로그램에서 워크플로 서비스를 호출 하는 방법을 설명 합니다 하지만 동일한 방법은 워크플로 응용 프로그램에서 모든 Windows Communication Foundation (WCF) 서비스를 호출 하려면 사용할 수 있습니다.
@@ -42,13 +42,13 @@ ms.locfileid: "45595466"
 
      ![도구 상자에 활동을 에코](../../../../docs/framework/wcf/feature-details/media/echoactivity.JPG "EchoActivity")
 
-7.  끌어서 놓기는 <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` 디자이너 화면으로 활동입니다. 아래에 있는 것은 **제어 흐름** 도구 상자의 섹션입니다.
+7.  디자이너 화면으로 <xref:System.Activities.Statements.Sequence> 작업을 끌어서 놓습니다. 아래에 있는 것은 **제어 흐름** 도구 상자의 섹션입니다.
 
-8.  사용 하 여 합니다 <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` 활동에 포커스를 클릭 합니다 **변수** 에 연결 하 고 이라는 문자열 변수를 추가 `inString`합니다. 기본값은 변수를 제공 `"Hello, world"` 이라는 문자열 변수 뿐만 아니라 `outString` 다음 다이어그램에 표시 된 대로 합니다.
+8.  사용 하 여 합니다 <xref:System.Activities.Statements.Sequence> 활동에 포커스를 클릭 합니다 **변수** 에 연결 하 고 이라는 문자열 변수를 추가 `inString`합니다. 기본값은 변수를 제공 `"Hello, world"` 이라는 문자열 변수 뿐만 아니라 `outString` 다음 다이어그램에 표시 된 대로 합니다.
 
      ![변수 추가](../../../../docs/framework/wcf/feature-details/media/instringvar.JPG "inStringVar")
 
-9. 끌어서 놓기는 **Echo** 활동을 <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence`합니다. 속성 창에서 바인딩를 `inMsg` 인수를 `inString` 변수 및 `outMsg` 인수를는 `outString` 다음 그림에 나와 있는 것 처럼 변수. 그러면 `inString` 변수의 값이 작업에 전달되고 반환 값이 `outString` 변수에 추가됩니다.
+9. 끌어서 놓기는 **Echo** 활동을 <xref:System.Activities.Statements.Sequence>입니다. 속성 창에서 바인딩를 `inMsg` 인수를 `inString` 변수 및 `outMsg` 인수를는 `outString` 다음 그림에 나와 있는 것 처럼 변수. 그러면 `inString` 변수의 값이 작업에 전달되고 반환 값이 `outString` 변수에 추가됩니다.
 
      ![변수 인수를 바인딩할](../../../../docs/framework/wcf/feature-details/media/argumentbind.JPG "ArgumentBind")
 
