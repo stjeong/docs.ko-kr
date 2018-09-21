@@ -3,11 +3,11 @@ title: 워크플로 서비스에서 OperationContext 액세스
 ms.date: 03/30/2017
 ms.assetid: b1dafe55-a20e-4db0-9ac8-90c315883cdd
 ms.openlocfilehash: 15dd817dddbe3272b188f6b74697f8c5839d498b
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46326373"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46540754"
 ---
 # <a name="accessing-operationcontext-from-a-workflow-service"></a>워크플로 서비스에서 OperationContext 액세스
 워크플로 서비스 내에서 <xref:System.ServiceModel.OperationContext>에 액세스하려면 사용자 지정 실행 속성에서 <xref:System.ServiceModel.Activities.IReceiveMessageCallback> 인터페이스를 구현해야 합니다. <xref:System.ServiceModel.Activities.IReceiveMessageCallback.OnReceiveMessage(System.ServiceModel.OperationContext,System.Activities.ExecutionProperties)>에 대한 참조로 전달되는 <xref:System.ServiceModel.OperationContext> 메서드를 재정의합니다. 이 항목에서는 사용자 지정 헤더를 검색하기 위해 이 실행 속성을 구현하고 런타임에 이 속성을 <xref:System.ServiceModel.Activities.Receive>에 노출할 사용자 지정 활동을 구현하는 방법을 안내합니다.  사용자 지정 활동은 <xref:System.Activities.Statements.Sequence> 활동과 동일한 동작을 구현합니다. 단, <xref:System.ServiceModel.Activities.Receive>가 내부에 배치되는 경우 <xref:System.ServiceModel.Activities.IReceiveMessageCallback>이 호출되고 <xref:System.ServiceModel.OperationContext> 정보가 검색된다는 점이 다릅니다.  이 항목에서는 클라이언트측 <xref:System.ServiceModel.OperationContext>에 액세스하여 <xref:System.ServiceModel.Activities.ISendMessageCallback> 인터페이스를 통해 나가는 헤더를 추가하는 방법도 보여 줍니다.  

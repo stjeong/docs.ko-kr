@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 635dc7605af00f2662a9f9553adefafcd25f9452
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46488859"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46537815"
 ---
 # <a name="getqualifierset-function"></a>GetQualifierSet 함수
 클래스 인스턴스 또는 클래스 정의에 대한 한정자 집합을 검색합니다.

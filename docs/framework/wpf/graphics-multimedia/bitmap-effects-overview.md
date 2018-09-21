@@ -5,11 +5,11 @@ helpviewer_keywords:
 - bitmap effects [WPF]
 ms.assetid: 23cb338e-4b59-4b52-b294-96431f9c9568
 ms.openlocfilehash: 97b878621d5aa1860cd955755d9bbc344b95b993
-ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46493168"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46537516"
 ---
 # <a name="bitmap-effects-overview"></a>비트맵 효과 개요
 디자이너를 사용 하는 비트맵 효과 및 시각적 효과를 적용 하려면 개발자가 Windows Presentation Foundation (WPF)을 콘텐츠 렌더링 합니다. 예를 들어 비트맵 효과 사용 하면 쉽게 적용할 수는 <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> 효과나 흐림 효과를 이미지 또는 단추입니다.  

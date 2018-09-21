@@ -3,11 +3,11 @@ title: 목록(F#)
 description: 'F # 목록 같은 형식의 요소를 정렬 된, 변경할 수 없는 계열에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 60e7edb56bdf498e3ba51aff028d8564eb68d0f1
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46324242"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46532784"
 ---
 # <a name="lists"></a>목록
 

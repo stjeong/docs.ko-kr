@@ -2,21 +2,21 @@
 title: WCF 웹 HTTP 서비스 도움말 페이지
 ms.date: 03/30/2017
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
-ms.openlocfilehash: 75babbeda7d5f0dca18c2de2e3187145164ac9a0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d0fe4f99fea4d414c95244e535cd75891f921790
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33500954"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46529978"
 ---
 # <a name="wcf-web-http-service-help-page"></a>WCF 웹 HTTP 서비스 도움말 페이지
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]에서는 WCF WEB HTTP 서비스에 대한 자동 도움말 페이지를 제공합니다. 이 도움말 페이지에는 각 작업에 대한 설명, 요청 및 응답 형식, 스키마 등이 표시됩니다. 이 기능은 기본적으로 사용하지 않도록 설정되어 있습니다. 때 사용자가 WCF 웹 HTTP 서비스를 탐색 하 고 추가 "/help" 예를 들어 URL의 끝에 http://localhost:8000/Customers/Help, 다음 내용이 표시 되어 같은 도움말 페이지.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]에서는 WCF WEB HTTP 서비스에 대한 자동 도움말 페이지를 제공합니다. 이 도움말 페이지에는 각 작업에 대한 설명, 요청 및 응답 형식, 스키마 등이 표시됩니다. 이 기능은 기본적으로 사용하지 않도록 설정되어 있습니다. 때 사용자가 탐색 하는 WCF 웹 HTTP 서비스 및 추가 "/help" 예를 들어 URL의 끝에 http://localhost:8000/Customers/Help을 다음 표시 되는 같은 도움말 페이지입니다.  
   
  ![WCF REST 도움말 페이지](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagemain.gif "WCFRESTHELPPAGEMAIN")  
   
  사용자가 이 도움말 페이지에 나열된 메서드를 클릭하면 메시지 형식과 예제 응답 등 메서드에 대한 자세한 내용을 보여 주는 해당 작업에 대한 상세 페이지가 표시됩니다. 다음 그림은 메서드에 대한 도움말 페이지의 예제입니다.  
   
- ![WCF REST 도움말 페이지 정보](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagedetail2.gif "WCFRESTHELPPAGEDETAIL2")  
+ ![WCF REST 도움말 페이지에 자세히 설명](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagedetail2.gif "WCFRESTHELPPAGEDETAIL2")  
   
 ## <a name="using-the-wcf-web-http-help-page"></a>WCF 웹 HTTP 도움말 페이지 사용  
  WCF 웹 HTTP 도움말 페이지에는 <xref:System.ComponentModel.DescriptionAttribute>를 사용하여 지정한 작업에 대한 간략한 설명이 표시됩니다. 이 특성은 해당 특성이 적용되는 작업에 대한 간략한 설명이 포함된 문자열을 제공합니다. 예를 들어 다음 코드에서는 <xref:System.ComponentModel.DescriptionAttribute>를 사용하여 간략한 설명을 제공하는 방법을 보여 줍니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "33500954"
 SyndicationFeedFormatter GetTemplate1();  
 ```  
   
- WCF 웹 HTTP 도움말 페이지를 사용하도록 설정하려면 서비스의 끝점에 끝점 동작을 추가해야 합니다. 이 작업은 구성 또는 코드에서 수행할 수 있습니다. 구성에서 WCF 웹 HTTP 도움말 페이지를 사용하도록 설정하려면 `<webHttp>` 요소를 사용하여 끝점 동작을 추가하고 `enableHelp`를 `true`로 설정합니다. 그런 다음 끝점을 추가하고 방금 추가한 끝점 동작을 사용하도록 구성합니다. 다음 구성 코드에서는 이 작업을 수행하는 방법을 보여 줍니다.  
+ WCF 웹 HTTP 도움말 페이지를 사용하도록 설정하려면 서비스의 엔드포인트에 엔드포인트 동작을 추가해야 합니다. 이 작업은 구성 또는 코드에서 수행할 수 있습니다. 구성에서 WCF 웹 HTTP 도움말 페이지를 사용하도록 설정하려면 `<webHttp>` 요소를 사용하여 엔드포인트 동작을 추가하고 `enableHelp`를 `true`로 설정합니다. 그런 다음 엔드포인트를 추가하고 방금 추가한 엔드포인트 동작을 사용하도록 구성합니다. 다음 구성 코드에서는 이 작업을 수행하는 방법을 보여 줍니다.  
   
 ```xml  
 <endpointBehaviors>  
@@ -45,12 +45,12 @@ SyndicationFeedFormatter GetTemplate1();
 </services>  
 ```  
   
- 코드에서 WCF 웹 HTTP 도움말 페이지를 사용 하도록 설정 하려면 서비스 끝점을 추가 하 고 추가 <xref:System.ServiceModel.Description.WebHttpBehavior> 끝점 설정이 <!--zz <xref:System.ServiceModel.Description.WebHttpBehavior.EnableHelp%2A>--> `EnableHelp` 를 `true`합니다. 다음 코드에서는 이 작업을 수행하는 방법을 보여 줍니다.  
+ 코드에서 WCF 웹 HTTP 도움말 페이지를 사용하도록 설정하려면 서비스 엔드포인트를 추가하고 <xref:System.ServiceModel.Description.WebHttpBehavior>를 <xref:System.ServiceModel.Description.WebHttpBehavior.HelpEnabled%2A>로 설정한 다음 서비스 엔드포인트에 `true`를 추가합니다. 다음 코드에서는 이 작업을 수행하는 방법을 보여 줍니다.  
   
 ```  
 using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http://localhost:8000/Customers")))  
 {  
-   host.AddServiceEndpoint(typeof(ICustomerCollection), new WebHttpBinding(), "");               
+   host.AddServiceEndpoint(typeof(ICustomerCollection), new WebHttpBinding(), "");
    host.Description.Endpoints[0].Behaviors.Add(new WebHttpBehavior { EnableHelp = true });  
    // ...  
 }  
@@ -240,4 +240,4 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
 </xs:schema>  
 ```  
   
- 데이터 계약 serialization 스키마에 대 한 자세한 내용은 참조 [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)합니다.
+ 데이터 계약 serialization 스키마에 대 한 자세한 내용은 참조 하세요. [데이터 계약 스키마 참조](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)합니다.
