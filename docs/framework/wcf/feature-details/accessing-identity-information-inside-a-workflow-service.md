@@ -3,11 +3,11 @@ title: 워크플로 서비스 내에서 ID 정보 액세스
 ms.date: 03/30/2017
 ms.assetid: 0b832127-b35b-468e-a45f-321381170cbc
 ms.openlocfilehash: 7951782946f5b8ef989598d01229dcf193d97689
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46480749"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46585509"
 ---
 # <a name="accessing-identity-information-inside-a-workflow-service"></a>워크플로 서비스 내에서 ID 정보 액세스
 워크플로 서비스 내에서 ID 정보에 액세스하려면 사용자 지정 실행 속성에서 <xref:System.ServiceModel.Activities.IReceiveMessageCallback> 인터페이스를 구현해야 합니다. <xref:System.ServiceModel.Activities.IReceiveMessageCallback.OnReceiveMessage(System.ServiceModel.OperationContext,System.Activities.ExecutionProperties)> 메서드에서 <xref:System.ServiceModel.OperationContext.ServiceSecurityContext>를 액세스하여 ID 정보에 액세스할 수 있습니다. 이 항목에서는 이 실행 속성을 구현하고 런타임에 이 속성을 <xref:System.ServiceModel.Activities.Receive> 작업에 노출할 사용자 지정 작업을 구현하는 과정을 안내합니다. 사용자 지정 작업은 <xref:System.Activities.Statements.Sequence> 작업과 동일한 동작을 구현합니다. 단, <xref:System.ServiceModel.Activities.Receive>를 내부에 배치할 경우 <xref:System.ServiceModel.Activities.IReceiveMessageCallback>이 호출되고 ID 정보가 검색된다는 점은 다릅니다.  

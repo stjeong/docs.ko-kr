@@ -3,11 +3,11 @@ title: WCF 배포 개요
 ms.date: 03/30/2017
 ms.assetid: af6d4c39-e5e8-4099-aee6-5261feff9107
 ms.openlocfilehash: 60a919a03552f5195529ae0997e60d1fba55d7c3
-ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46507294"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46695883"
 ---
 # <a name="wcf-syndication-overview"></a>WCF 배포 개요
 Windows Communication Foundation (WCF) WCF 서비스에서 배포 피드를 노출 하는 것에 대 한 지원을 제공 합니다. 배포는 서버가 피드라고 하는 상호 운용 가능한 형식의 일부 응용 프로그램 데이터를 노출하는 응용 프로그램 통합 메커니즘입니다. 피드는 일부 피드 수준 메타데이터(제목, 만든 이, URL 및 기타 메타데이터)와 일련의 피드 항목으로 구성된 응용 프로그램 데이터 컬렉션입니다. 피드 내에서 피드 항목은 일반적으로 역순으로 시간 순서가 지정됩니다. 피드 항목은 표준 항목 수준 메타데이터 집합(제목 URL, 작성일, 범주 및 기타 항목 수준 메타데이터)과 임의 크기의 응용 프로그램별 데이터로 구성됩니다. 가장 일반적인 두 가지 유형의 배포 피드 신디케이션 RSS (Really Simple) 2.0 및 Atom 1.0으로 WCF에서 지원 되는 됩니다.  

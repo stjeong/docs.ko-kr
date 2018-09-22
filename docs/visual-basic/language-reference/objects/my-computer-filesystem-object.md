@@ -13,11 +13,11 @@ helpviewer_keywords:
 - FileOpen function
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
 ms.openlocfilehash: 05d849afb50a3b1c4eeecc3db26170bacc3517df
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45682968"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46699081"
 ---
 # <a name="mycomputerfilesystem-object"></a>My.Computer.FileSystem 개체
 드라이브, 파일 및 디렉터리를 사용하기 위한 속성 및 메서드를 제공합니다.  

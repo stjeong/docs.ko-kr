@@ -5,11 +5,11 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
 ms.openlocfilehash: 874eeffe77d7f5e459be4d1a93cc2c45e8f8711a
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46481964"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46697935"
 ---
 # <a name="microsoft-technologies-in-cloud-optimized-applications"></a>클라우드 액세스에 최적화 된 응용 프로그램에서 Microsoft 기술
 

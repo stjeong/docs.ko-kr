@@ -3,11 +3,11 @@ title: CSDL 사양
 ms.date: 03/30/2017
 ms.assetid: 6bb94c37-87da-447a-8dfd-83d1c4b5a2d2
 ms.openlocfilehash: f3acb7933392fcd8a1d952354a2b45e4b588834e
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46531407"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46576445"
 ---
 # <a name="csdl-specification"></a>CSDL 사양
 합니다 [msdn.microsoft.com/data/ef](https://msdn.microsoft.com/data/ef) 사이트는 이제 Entity Framework 콘텐츠에 대 한 기본 위치입니다.  
