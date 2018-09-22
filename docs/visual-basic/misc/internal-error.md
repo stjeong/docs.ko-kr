@@ -5,11 +5,11 @@ f1_keywords:
 - vbrID51
 ms.assetid: 21266dbb-f4a1-4c5d-a646-27909cf53248
 ms.openlocfilehash: 219f7b31beec468a7d3e14e750a7163831f58548
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46322299"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581066"
 ---
 # <a name="internal-error-visual-basic"></a>내부 오류(Visual Basic)
 Visual Basic에서 내부 오작동이 발생 했습니다.  

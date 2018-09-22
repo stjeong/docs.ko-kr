@@ -3,11 +3,11 @@ title: 코드 인용(F#)
 description: '언어 기능을 생성 하 고 F # 코드 식을 프로그래밍 방식으로 작업할 수 있도록 F # 코드 인용에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 27e9cf1d99e2b5955cc6359653fc87bdbe824cc7
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46539137"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46577402"
 ---
 # <a name="code-quotations"></a>코드 인용
 
