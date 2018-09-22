@@ -15,18 +15,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 24be4507e8ad6cde1e9c50582e352f0fc9b12ed3
-ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46517285"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46575995"
 ---
-# <a name="icordebugilframe4getcodeex-method"></a><span data-ttu-id="687fc-102">ICorDebugILFrame4::GetCodeEx 메서드</span><span class="sxs-lookup"><span data-stu-id="687fc-102">ICorDebugILFrame4::GetCodeEx Method</span></span>
-<span data-ttu-id="687fc-103">[.NET Framework 4.5.2 이상 버전에서 지원됨]</span><span class="sxs-lookup"><span data-stu-id="687fc-103">[Supported in the .NET Framework 4.5.2 and later versions]</span></span>  
+# <a name="icordebugilframe4getcodeex-method"></a><span data-ttu-id="36008-102">ICorDebugILFrame4::GetCodeEx 메서드</span><span class="sxs-lookup"><span data-stu-id="36008-102">ICorDebugILFrame4::GetCodeEx Method</span></span>
+<span data-ttu-id="36008-103">[.NET Framework 4.5.2 이상 버전에서 지원됨]</span><span class="sxs-lookup"><span data-stu-id="36008-103">[Supported in the .NET Framework 4.5.2 and later versions]</span></span>  
   
- <span data-ttu-id="687fc-104">이 스택 프레임에서 실행 중인 코드에 대한 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-104">Gets a pointer to the code that this stack frame is executing.</span></span>  
+ <span data-ttu-id="36008-104">이 스택 프레임에서 실행 중인 코드에 대한 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="36008-104">Gets a pointer to the code that this stack frame is executing.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="687fc-105">구문</span><span class="sxs-lookup"><span data-stu-id="687fc-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="36008-105">구문</span><span class="sxs-lookup"><span data-stu-id="36008-105">Syntax</span></span>  
   
 ```cpp
 HRESULT GetCodeEx(  
@@ -35,26 +35,26 @@ HRESULT GetCodeEx(
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="687fc-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="687fc-106">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="36008-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="36008-106">Parameters</span></span>  
  `flags`  
- <span data-ttu-id="687fc-107">[in] [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) 프로파일러 ReJIT 요청에 의해 정의 된 중간 언어 (IL) 프레임에 포함 되는지 여부를 지정 하는 열거형 멤버입니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-107">[in] An [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) enumeration member that specifies whether the intermediate language (IL) defined by the profiler's ReJIT request is included in the frame.</span></span>  
+ <span data-ttu-id="36008-107">[in] [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) 프로파일러 ReJIT 요청에 의해 정의 된 중간 언어 (IL) 프레임에 포함 되는지 여부를 지정 하는 열거형 멤버입니다.</span><span class="sxs-lookup"><span data-stu-id="36008-107">[in] An [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) enumeration member that specifies whether the intermediate language (IL) defined by the profiler's ReJIT request is included in the frame.</span></span>  
   
  `ppCode`  
- <span data-ttu-id="687fc-108">[out] 이 스택 프레임이 실행 되는 코드를 나타내는 "ICorDebugCode" 개체의 주소에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-108">[out] A pointer to the address of an "ICorDebugCode" object that represents the code that this stack frame is executing.</span></span>  
+ <span data-ttu-id="36008-108">[out] 이 스택 프레임이 실행 되는 코드를 나타내는 "ICorDebugCode" 개체의 주소에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="36008-108">[out] A pointer to the address of an "ICorDebugCode" object that represents the code that this stack frame is executing.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="687fc-109">설명</span><span class="sxs-lookup"><span data-stu-id="687fc-109">Remarks</span></span>  
- <span data-ttu-id="687fc-110">이 메서드는 비슷합니다는 [icordebugframe:: Getcode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md) 메서드를 필요에 따라 프로파일러 ReJIT 요청에 의해 정의 된 코드를 액세스 한다는 점을 제외 하 고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-110">This method is similar to the [ICorDebugFrame::GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md) method, except that it optionally accesses code defined by the profiler's ReJIT request.</span></span> <span data-ttu-id="687fc-111">이 메서드를 호출을 `flags` 변수의 `ILCODE_ORIGINAL_IL` 호출 하는 것과 같습니다 [GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md)메서드가 계측 되는 경우 해당 IL에 액세스할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-111">Calling this method with a `flags` value of `ILCODE_ORIGINAL_IL` is equivalent to calling [GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md); if the method is instrumented, its IL will not be accessible.</span></span> <span data-ttu-id="687fc-112">`ILCODE_REJIT_IL`을 사용하는 경우 디버거가 프로파일러 ReJIT 요청에 의해 정의된 IL에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-112">`ILCODE_REJIT_IL` allows the debugger to access the IL defined by the profiler's ReJIT request.</span></span> <span data-ttu-id="687fc-113">IL이 계측 되지 않는, 하는 경우 `ppCode` 됩니다 **null**, 메서드가 반환 하 고 `S_OK`합니다.</span><span class="sxs-lookup"><span data-stu-id="687fc-113">If the IL is not instrumented, `ppCode` is **null**, and the method returns `S_OK`.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="36008-109">설명</span><span class="sxs-lookup"><span data-stu-id="36008-109">Remarks</span></span>  
+ <span data-ttu-id="36008-110">이 메서드는 비슷합니다는 [icordebugframe:: Getcode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md) 메서드를 필요에 따라 프로파일러 ReJIT 요청에 의해 정의 된 코드를 액세스 한다는 점을 제외 하 고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="36008-110">This method is similar to the [ICorDebugFrame::GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md) method, except that it optionally accesses code defined by the profiler's ReJIT request.</span></span> <span data-ttu-id="36008-111">이 메서드를 호출을 `flags` 변수의 `ILCODE_ORIGINAL_IL` 호출 하는 것과 같습니다 [GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md)메서드가 계측 되는 경우 해당 IL에 액세스할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="36008-111">Calling this method with a `flags` value of `ILCODE_ORIGINAL_IL` is equivalent to calling [GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md); if the method is instrumented, its IL will not be accessible.</span></span> <span data-ttu-id="36008-112">`ILCODE_REJIT_IL`을 사용하는 경우 디버거가 프로파일러 ReJIT 요청에 의해 정의된 IL에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="36008-112">`ILCODE_REJIT_IL` allows the debugger to access the IL defined by the profiler's ReJIT request.</span></span> <span data-ttu-id="36008-113">IL이 계측 되지 않는, 하는 경우 `ppCode` 됩니다 **null**, 메서드가 반환 하 고 `S_OK`합니다.</span><span class="sxs-lookup"><span data-stu-id="36008-113">If the IL is not instrumented, `ppCode` is **null**, and the method returns `S_OK`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="687fc-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="687fc-114">Requirements</span></span>  
- <span data-ttu-id="687fc-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="687fc-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="36008-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="36008-114">Requirements</span></span>  
+ <span data-ttu-id="36008-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="36008-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="687fc-116">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="687fc-116">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="36008-116">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="36008-116">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="687fc-117">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="687fc-117">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="36008-117">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="36008-117">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="687fc-118">**.NET Framework 버전:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="687fc-118">**.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span></span>  
+ <span data-ttu-id="36008-118">**.NET Framework 버전:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="36008-118">**.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="687fc-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="687fc-119">See Also</span></span>  
- [<span data-ttu-id="687fc-120">ICorDebugILFrame4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="687fc-120">ICorDebugILFrame4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)  
- [<span data-ttu-id="687fc-121">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="687fc-121">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [<span data-ttu-id="687fc-122">ReJIT: 방법 가이드</span><span class="sxs-lookup"><span data-stu-id="687fc-122">ReJIT: A How-To Guide</span></span>](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
+## <a name="see-also"></a><span data-ttu-id="36008-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="36008-119">See Also</span></span>  
+ [<span data-ttu-id="36008-120">ICorDebugILFrame4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="36008-120">ICorDebugILFrame4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)  
+ [<span data-ttu-id="36008-121">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="36008-121">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
+ [<span data-ttu-id="36008-122">ReJIT: 방법 가이드</span><span class="sxs-lookup"><span data-stu-id="36008-122">ReJIT: A How-To Guide</span></span>](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
