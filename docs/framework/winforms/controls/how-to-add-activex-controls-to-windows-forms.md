@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ActiveX controls [Windows Forms], adding
 ms.assetid: 54a61e5b-555e-4887-b41e-6244fed271eb
 ms.openlocfilehash: 7d6514c679187e9ec193f6dda8336c8bd56fac81
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46532167"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46706320"
 ---
 # <a name="how-to-add-activex-controls-to-windows-forms"></a>방법: Windows Forms에 ActiveX 컨트롤 추가
 Windows Forms 디자이너는 호스트 Windows Forms 컨트롤을 최적화 하는 동안에 Windows Forms에서 ActiveX 컨트롤을 배치할 수 있습니다.  

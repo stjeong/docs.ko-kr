@@ -3,11 +3,11 @@ title: 함수(F#)
 description: 'F # 및 F #에서 지 원하는 방법 일반적인 함수형 프로그래밍 구문도 함수에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 717eba7e69398048d229173e07ccc376797171bb
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46326441"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46703754"
 ---
 # <a name="functions"></a>함수
 

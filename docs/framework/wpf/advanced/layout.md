@@ -10,11 +10,11 @@ helpviewer_keywords:
 - layout system [WPF]
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
 ms.openlocfilehash: 869780f2b6a625923ce869bcaafbbd2319f6cb23
-ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46493290"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46703026"
 ---
 # <a name="layout"></a>레이아웃
 이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 레이아웃 시스템에 대해 설명합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 사용자 인터페이스를 만들려면 언제, 어떻게 레이아웃을 계산해야 하는지를 이해해야 합니다.  

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - WCF Data Services, versioning
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
 ms.openlocfilehash: 9a92346267012d3651d04648b357bbf530097e34
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46532362"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46705710"
 ---
 # <a name="data-service-versioning-wcf-data-services"></a>데이터 서비스 버전 관리(WCF Data Services)
 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 클라이언트 리소스 Uri를 사용 하 여 데이터 모델을 기반으로 하는 데이터를 액세스할 수 있도록 데이터 서비스를 만들 수 있습니다. 또한 OData 서비스 작업의 정의 지원합니다. 이러한 데이터 서비스는 비즈니스 요구 사항의 변경, 정보 기술의 요구 사항 또는 다른 문제 해결 등의 다양한 이유 때문에 최초로 배포된 후, 수명 동안 여러 차례에 걸쳐 변경되어야 할 수 있습니다. 기존 데이터 서비스를 변경한 경우 새 버전의 데이터 서비스를 정의할 것인지 그리고 기존 클라이언트 응용 프로그램에 미치는 영향을 최소화할 최선의 방법을 고려해야 합니다. 이 항목에서는 새 버전의 데이터 서비스를 만드는 방법 및 시기에 대한 지침을 제공합니다. WCF Data Services 클라이언트 및 OData 프로토콜의 다른 버전을 지 원하는 데이터 서비스 간의 교환을 처리 하는 방법을 설명 합니다.

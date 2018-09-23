@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Windows Forms, inheritance
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
 ms.openlocfilehash: b17de01c4a5e89051393aa3c6bb2d0079535dbf6
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45746207"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46703684"
 ---
 # <a name="walkthrough-demonstrating-visual-inheritance"></a>연습: 시각적 상속 설명
 시각적 상속을 통해 기본 폼의 컨트롤을 보고 새 컨트롤을 추가할 수 있습니다. 이 연습에서는 기본 폼을 만들고 클래스 라이브러리로 컴파일합니다. 이 클래스 라이브러리를 다른 프로젝트로 가져와 기본 폼에서 상속하는 새 양식을 만듭니다. 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.  

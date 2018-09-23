@@ -3,11 +3,11 @@ title: 정적으로 확인된 형식 매개 변수(F#)
 description: 'F #을 사용 하는 방법은 런타임 대신 컴파일 시간에 실제 형식으로 대체 되는 정적으로 확인 된 형식 매개 변수입니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 747917fef2746dcbf363ef4b717ace5e47229800
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973172"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46706413"
 ---
 # <a name="statically-resolved-type-parameters"></a>정적으로 확인된 형식 매개 변수
 

@@ -3,11 +3,11 @@ title: 모델링 및 매핑
 ms.date: 03/30/2017
 ms.assetid: ec8a9515-3708-4cde-a688-4d8e6975f150
 ms.openlocfilehash: 81080c416fd18c51be6626cb70a23073e049051d
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46530007"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46705425"
 ---
 # <a name="modeling-and-mapping"></a>모델링 및 매핑
 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 응용 프로그램에 가장 적합한 방식으로 개념적 모델, 저장소 모델 및 두 모델 간의 매핑을 정의할 수 있습니다. Visual Studio에서 엔터티 데이터 모델 도구를 사용 하면 만들 수는 있습니다. [edmx 파일](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4) 데이터베이스 또는 그래픽 모델을 업데이트 한 다음 데이터베이스나 모델이 변경 될 때 해당 파일에서 합니다.  
