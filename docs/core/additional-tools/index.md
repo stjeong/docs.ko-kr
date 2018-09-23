@@ -5,16 +5,16 @@ author: mlacouture
 ms.author: johalex
 ms.date: 01/19/2018
 ms.custom: mvc
-ms.openlocfilehash: ba63ef6cdc092d06e267637112070e7cd5133a45
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c64dddbe36b789a695c2603e78b29b38d8718f95
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511756"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46586885"
 ---
 # <a name="net-core-additional-tools"></a>.NET Core 추가 도구
 
-이 섹션에서는 [.NET Core CLI (명령줄 인터페이스)](..\tools\index.md) 도구 외에 .NET Core 기능을 지원하고 확장하는 도구 목록을 컴파일합니다.
+이 섹션에서는 [.NET Core CLI (명령줄 인터페이스)](../tools/index.md) 도구 외에 .NET Core 기능을 지원하고 확장하는 도구 목록을 컴파일합니다.
 
 ## <a name="wcf-web-service-reference-toolwcf-web-service-reference-guidemd"></a>[WCF Web Service Reference 도구](wcf-web-service-reference-guide.md)
 
