@@ -4,12 +4,12 @@ description: 소스 코드에서 .NET Core 및 .NET Core CLI를 빌드하는 방
 author: bleroy
 ms.author: mairaw
 ms.date: 06/28/2017
-ms.openlocfilehash: 2623c5d21121b71960d174301c35bdd0d7f8558a
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: fa9c193ea4088f04745bdadc6040552e18c0858a
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45618521"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46577505"
 ---
 # <a name="build-net-core-from-source"></a>소스에서 .NET Core 빌드
 
@@ -93,7 +93,7 @@ OS에서 교차 빌드되지 않습니다(X64에서 빌드되는 ARM의 경우�
   * Xcode
   * Openssl
 
-빌드하려면 Windows의 경우 루트에서 `build.cmd`를 실행하고, Linux 및 macOS의 경우 루트에서 `build.sh`를 실행합니다. 테스트를 실행하지 않으려면 `build.cmd /t:Compile` 또는 `./build.sh /t:Compile`을 실행합니다. macOS Sierra에서 CLI를 빌드하려면 `export DOTNET_RUNTIME_ID=osx.10.11-x64`를 실행하여 DOTNET_RUNTIME_ID 환경 변수를 설정해야 합니다.
+빌드하려면 Windows의 경우 루트에서 `build.cmd`를 실행하고, Linux 및 macOS의 경우 루트에서 `build.sh`를 실행합니다. 테스트를 실행하지 않으려면 `build.cmd -t:Compile` 또는 `./build.sh -t:Compile`을 실행합니다. macOS Sierra에서 CLI를 빌드하려면 `export DOTNET_RUNTIME_ID=osx.10.11-x64`를 실행하여 DOTNET_RUNTIME_ID 환경 변수를 설정해야 합니다.
 
 ### <a name="using-your-build"></a>사용자의 빌드 사용
 
