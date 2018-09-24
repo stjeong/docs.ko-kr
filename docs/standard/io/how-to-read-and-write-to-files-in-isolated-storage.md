@@ -19,11 +19,11 @@ ms.assetid: f977ebdc-1b55-475a-bc3d-3376470b08ae
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 9aecf7aef9023439e145d408e40fb4adf5c0e986
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45592713"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46586389"
 ---
 # <a name="how-to-read-and-write-to-files-in-isolated-storage"></a>방법: 격리된 저장소의 파일 읽기 및 쓰기
 격리된 저장소에서 파일을 읽고 쓰기 위해, 스트림 판독기(<xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> 개체)를 가진 <xref:System.IO.StreamReader> 개체 또는 스트림 작성기(<xref:System.IO.StreamWriter> 개체)를 사용합니다.  

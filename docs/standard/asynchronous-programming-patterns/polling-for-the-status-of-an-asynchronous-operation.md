@@ -13,11 +13,11 @@ ms.assetid: b541af31-dacb-4e20-8847-1b1ff7c35363
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: d380e369d9620fc0fc87a2c443be318083174882
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45591388"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45991405"
 ---
 # <a name="polling-for-the-status-of-an-asynchronous-operation"></a>비동기 작업의 상태에 대한 폴링
 비동기 작업의 결과를 기다리는 동안 다른 작업을 수행할 수 있는 응용 프로그램은 작업이 완료될 때까지 차단되면 안 됩니다. 다음 옵션 중 하나를 사용하여 비동기 작업이 완료될 때까지 대기하는 동안 명령을 계속 실행합니다.  

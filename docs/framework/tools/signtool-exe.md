@@ -8,11 +8,11 @@ ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: b4cece1227b5210cf839aff0658267ae480b23b6
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45685909"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46485852"
 ---
 # <a name="signtoolexe-sign-tool"></a>SignTool.exe(서명 도구)
 서명 도구는 파일에 디지털 서명을 하고, 파일의 서명을 확인하고, 파일에 타임스탬프를 기록하는 명령줄 도구입니다.  

@@ -4,12 +4,12 @@ description: dotnet msbuild 명령은 MSBuild 명령줄에 대한 액세스 권�
 author: mairaw
 ms.author: mairaw
 ms.date: 05/25/2018
-ms.openlocfilehash: 58aac2a5314758b8711c0b014154022168fb671c
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: 76165590478b0e76d19d546c87e012da4716b6db
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34696847"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46578898"
 ---
 # <a name="dotnet-msbuild"></a>dotnet msbuild
 
@@ -37,12 +37,12 @@ ms.locfileid: "34696847"
 
 릴리스 구성을 사용하여 프로젝트 및 해당 종속성을 빌드합니다.
 
-`dotnet msbuild /p:Configuration=Release`
+`dotnet msbuild -p:Configuration=Release`
 
 게시 대상을 실행하고 `osx.10.11-x64` RID에 대해 게시합니다.
 
-`dotnet msbuild /t:Publish /p:RuntimeIdentifiers=osx.10.11-x64`
+`dotnet msbuild -t:Publish -p:RuntimeIdentifiers=osx.10.11-x64`
 
 SDK를 통해 포함된 모든 대상이 있는 전체 프로젝트를 확인합니다.
 
-`dotnet msbuild /pp`
+`dotnet msbuild -pp`

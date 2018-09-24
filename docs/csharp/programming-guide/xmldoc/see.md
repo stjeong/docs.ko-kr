@@ -11,11 +11,11 @@ helpviewer_keywords:
 - see C# XML tag
 ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
 ms.openlocfilehash: c37ad869b3eb904377cd4470a85cd557f6560290
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45591217"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45749676"
 ---
 # <a name="ltseegt-c-programming-guide"></a>&lt;see&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  

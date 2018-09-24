@@ -3,11 +3,11 @@ title: Func 및 Action 제네릭 대리자에 가변성 사용(C#)
 ms.date: 07/20/2015
 ms.assetid: 1826774f-2b7a-470f-b110-17cfdd6abdae
 ms.openlocfilehash: 903926bc86b1b96cea25b91314e35ed4771bbcb9
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45679134"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45970359"
 ---
 # <a name="using-variance-for-func-and-action-generic-delegates-c"></a>Func 및 Action 제네릭 대리자에 가변성 사용(C#)
 이러한 예제는 메서드를 다시 사용하고 코드의 유연성을 높이기 위해 `Func` 및 `Action` 제네릭 대리자에서 공변성(covariance) 및 반공변성(contravariance)을 사용하는 방법을 보여 줍니다.  

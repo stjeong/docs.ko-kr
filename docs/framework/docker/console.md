@@ -4,12 +4,12 @@ description: 기존 .NET Framework 콘솔 응용 프로그램을 가져와 Windo
 author: spboyer
 ms.date: 09/28/2016
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
-ms.openlocfilehash: 266c439163888962075f804a0f5651a8e7d83151
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f5a38ac63db969a58e920ea79bf4bf10bcfcf64f
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392686"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581261"
 ---
 # <a name="running-console-applications-in-windows-containers"></a>Windows 컨테이너에서 콘솔 응용 프로그램 실행
 
@@ -64,7 +64,7 @@ function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
     Invoke-Expression "$MSBuildPath $MSBuildParameters"
 }
 
-Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj /p:OutputPath=.\publish /p:Configuration=Release"
+Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj -p:OutputPath=.\publish -p:Configuration=Release"
 ```
 
 ## <a name="creating-the-dockerfile"></a>Dockerfile 만들기

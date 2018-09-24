@@ -3,11 +3,11 @@ title: '방법: LINQ 쿼리와 정규식 결합(C#)'
 ms.date: 07/20/2015
 ms.assetid: 6b003b65-20a4-4ca2-929e-2ee3f215aecc
 ms.openlocfilehash: c535620f2dee1ec9cd1b6ee994fbf860629601ba
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45641354"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46696689"
 ---
 # <a name="how-to-combine-linq-queries-with-regular-expressions-c"></a>방법: LINQ 쿼리와 정규식 결합(C#)
 이 예제에서는 <xref:System.Text.RegularExpressions.Regex> 클래스를 사용하여 더 복잡한 텍스트 문자열 일치를 찾는 정규식을 작성하는 방법을 보여 줍니다. LINQ 쿼리를 사용하면 손쉽게 정규식을 통해 검색하려는 파일을 정확히 필터링하고 결과를 구성할 수 있습니다.  

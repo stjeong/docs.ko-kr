@@ -5,11 +5,11 @@ helpviewer_keywords:
 - exceptions [C#], compiler-generated
 ms.assetid: 53b52f97-b366-4ed7-b05b-9eb78096b7f9
 ms.openlocfilehash: 476f5940b0b93d0c28bcd2bc9ca73147bc7bf3eb
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45668459"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45749968"
 ---
 # <a name="compiler-generated-exceptions-c-programming-guide"></a>컴파일러 생성 예외(C# 프로그래밍 가이드)
 기본 작업이 실패하면 .NET Framework의 CLR(공용 언어 런타임)에 의해 자동으로 일부 예외가 throw됩니다. 이러한 예외와 관련 오류 조건이 다음 표에 나와 있습니다.  

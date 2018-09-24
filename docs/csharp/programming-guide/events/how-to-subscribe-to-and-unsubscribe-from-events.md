@@ -7,11 +7,11 @@ helpviewer_keywords:
 - events [C#], creating using the IDE
 ms.assetid: 6319f39f-282c-4173-8a62-6c4657cf51cd
 ms.openlocfilehash: e27473ca34f634f4a3125a2e87e6d0ef918a6f9d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45675862"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45999142"
 ---
 # <a name="how-to-subscribe-to-and-unsubscribe-from-events-c-programming-guide"></a>방법: 이벤트 구독 및 구독 취소(C# 프로그래밍 가이드)
 해당 이벤트가 발생할 때 호출되는 사용자 지정 코드를 작성하려는 경우 다른 클래스에 의해 게시되는 이벤트를 구독합니다. 예를 들어 사용자가 단추를 클릭할 때 응용 프로그램에서 유용한 작업을 수행하도록 하려면 단추의 `click` 이벤트를 구독할 수 있습니다.  

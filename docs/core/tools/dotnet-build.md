@@ -4,12 +4,12 @@ description: dotnet build 명령은 프로젝트와 모든 종속성을 빌드�
 author: mairaw
 ms.author: mairaw
 ms.date: 05/25/2018
-ms.openlocfilehash: dc5970fa1c8f3172916676819fa7789d84a5386e
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: da33647e583af8441218f64fb8ac76d5de3cee38
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45692978"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46580111"
 ---
 # <a name="dotnet-build"></a>dotnet build
 
@@ -47,7 +47,7 @@ dotnet build [-h|--help]
 
 `dotnet build`는 MSBuild를 사용하여 프로젝트를 빌드하므로 병렬 및 증분 빌드를 모두 지원합니다. 자세한 내용은 [증분 빌드](/visualstudio/msbuild/incremental-builds)를 참조하세요.
 
-해당 옵션 외에도, `dotnet build` 명령은 속성 설정에 대한 `/p` 또는 로거를 정의하는 `/l`처럼 MSBuild 옵션도 수락합니다. 이러한 옵션에 대한 자세한 내용은 [MSBuild 명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference)를 확인하세요.
+해당 옵션 외에도, `dotnet build` 명령은 속성 설정에 대한 `-p` 또는 로거를 정의하는 `-l`처럼 MSBuild 옵션도 수락합니다. 이러한 옵션에 대한 자세한 내용은 [MSBuild 명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference)를 확인하세요.
 
 프로젝트가 실행 가능한지 아닌지 여부는 프로젝트 파일의 `<OutputType>` 속성으로 확인할 수 있습니다. 다음 예제에서는 실행 코드를 생성하는 프로젝트를 보여 줍니다.
 

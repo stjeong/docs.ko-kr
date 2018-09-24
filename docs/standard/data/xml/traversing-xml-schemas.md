@@ -10,11 +10,11 @@ ms.assetid: cce69574-5861-4a30-b730-2e18d915d8ee
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 5f2da2849bdf9ce922a89bf25e1758d868ee5ea8
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45616129"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46580085"
 ---
 # <a name="traversing-xml-schemas"></a>XML 스키마 통과
 SOM(스키마 개체 모델) API를 사용하여 XML 스키마를 통과하면 SOM에 저장된 요소, 특성 및 형식에 액세스할 수 있습니다. SOM에 로드된 XML 스키마를 통과하는 것은 SOM API를 사용하여 XML 스키마를 편집하는 첫 번째 단계이기도 합니다.  

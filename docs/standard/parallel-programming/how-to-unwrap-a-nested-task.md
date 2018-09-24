@@ -11,11 +11,11 @@ ms.assetid: a0769dd2-0f6d-48ca-8418-a9d39de7f450
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 224f9273b0c8c9445a6a9e25f064e9726acc84f0
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45616950"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45750195"
 ---
 # <a name="how-to-unwrap-a-nested-task"></a>방법: 중첩된 작업 래핑 취소
 메서드에서 작업을 반환한 후 다음 예제와 같이 해당 작업을 대기하거나 계속할 수 있습니다.  

@@ -3,11 +3,11 @@ title: '방법: XmlSerializer를 사용하여 serialize(C#)'
 ms.date: 07/20/2015
 ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
 ms.openlocfilehash: 32a23792947639c2c0eb1dc14b640c3786bdfd4c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45625804"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45990403"
 ---
 # <a name="how-to-serialize-using-xmlserializer-c"></a>방법: XmlSerializer를 사용하여 serialize(C#)
 이 항목에서는 <xref:System.Xml.Serialization.XmlSerializer>를 사용하여 serialize하고 deserialize하는 예제를 보여 줍니다.  

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - resource compiler option [C#]
 ms.assetid: 5212666e-98ab-47e4-a497-b5545ab15c7f
 ms.openlocfilehash: e02eda66ab9fadbc7b5b042c8940096c70ef6a03
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45593155"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45746129"
 ---
 # <a name="-resource-c-compiler-options"></a>-resource(C# 컴파일러 옵션)
 출력 파일에 지정된 리소스를 포함합니다.  

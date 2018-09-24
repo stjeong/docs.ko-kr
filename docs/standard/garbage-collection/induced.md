@@ -8,11 +8,11 @@ ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 69590b0efc924132d149621c135ef0816cac7d1e
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45645972"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46003067"
 ---
 # <a name="induced-collections"></a>인덱싱된 컬렉션
 대부분의 경우 가비지 수집기가 수집을 수행할 적절한 시기를 결정할 수 있으며 가비지 수집기가 독립적으로 실행되는 것이 좋습니다. 강제된 컬렉션이 응용 프로그램의 성능을 향상시키는 드문 경우도 있습니다. 이러한 경우에 가비지 수집을 강제하는 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 메서드를 사용하여 가비지 수집을 유도할 수 있습니다.  

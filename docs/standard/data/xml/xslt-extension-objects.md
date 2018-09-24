@@ -6,11 +6,11 @@ ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 40a530190ee4b19d72399ab877cf26bad1090b9f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45649330"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46000715"
 ---
 # <a name="xslt-extension-objects"></a>XSLT 확장명 개체
 확장명 개체를 사용하여 스타일시트의 기능을 확장할 수 있습니다. 확장 개체는 <xref:System.Xml.Xsl.XsltArgumentList> 클래스를 사용하여 유지 관리합니다.  

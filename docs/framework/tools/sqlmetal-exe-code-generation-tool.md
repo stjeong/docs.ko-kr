@@ -10,11 +10,11 @@ helpviewer_keywords:
 - LINQ to SQL, SQLMetal
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
 ms.openlocfilehash: 94ed6328857f6e77cea150d69719322d3aaaea69
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45597254"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002894"
 ---
 # <a name="sqlmetalexe-code-generation-tool"></a>SqlMetal.exe(코드 생성 도구)
 SqlMetal 명령줄 도구는 [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] 의 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]구성 요소에 사용할 코드 및 매핑을 생성합니다. 이 항목의 뒷부분에 나오는 옵션을 적용하면 SqlMetal을 통해 다음을 포함하는 다양한 작업을 수행할 수 있습니다.  

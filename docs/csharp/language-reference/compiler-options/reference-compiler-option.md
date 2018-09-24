@@ -14,11 +14,11 @@ helpviewer_keywords:
 - -reference compiler option [C#]
 ms.assetid: 8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4
 ms.openlocfilehash: 131cdf62917ab2fc8d564b85c30d13c8971e5809
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45648410"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46003631"
 ---
 # <a name="-reference-c-compiler-options"></a>-reference(C# 컴파일러 옵션)
 **-reference** 옵션을 사용하면 컴파일러가 지정된 파일의 [public](../../../csharp/language-reference/keywords/public.md) 형식 정보를 현재 프로젝트로 가져오므로 지정된 어셈블리 파일의 메타데이터를 참조할 수 있습니다.  

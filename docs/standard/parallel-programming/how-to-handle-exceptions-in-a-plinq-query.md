@@ -11,11 +11,11 @@ ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 40b98e01d6c34fb01a1f508f2ea52309f2f7938b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668764"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45989523"
 ---
 # <a name="how-to-handle-exceptions-in-a-plinq-query"></a>방법: PLINQ 쿼리의 예외 처리
 이 항목의 첫 번째 예제에서는 실행될 때 PLINQ 쿼리에서 throw될 수 있는 <xref:System.AggregateException?displayProperty=nameWithType>을 처리하는 방법을 보여줍니다. 두 번째 예제에서는 대리자 내에서 예외가 throw될 위치에 가능한 한 가깝게 try-catch 블록을 넣는 방법을 보여줍니다. 이 방법으로 예외가 발생한 즉시 예외를 catch하고 쿼리 실행을 계속할 수 있습니다. 예외가 가입된 스레드로 다시 버블 업될 수 있는 경우 예외가 발생한 후에도 쿼리에서 일부 항목을 계속 처리할 수 있습니다.  

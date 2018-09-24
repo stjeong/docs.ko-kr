@@ -7,11 +7,11 @@ helpviewer_keywords:
 - properties [C#], indexed
 ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
 ms.openlocfilehash: 0169bfa6eb3ba01a9a88c2b247ad3f78da67d59c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45648488"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45964490"
 ---
 # <a name="how-to-use-indexed-properties-in-com-interop-programming-c-programming-guide"></a>방법: COM Interop 프로그래밍에서 인덱싱된 속성 사용(C# 프로그래밍 가이드)
 *인덱싱된 속성*은 매개 변수가 있는 COM 속성이 C# 프로그래밍에서 사용되는 방식을 개선합니다. 인덱싱된 속성은 Visual C#의 다른 기능(예: [명명된 인수 및 선택적 인수](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)), 새 형식([dynamic](../../../csharp/language-reference/keywords/dynamic.md)), [포함된 형식 정보](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)와 함께 작동하여 Microsoft Office 프로그래밍을 개선합니다.  

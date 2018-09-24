@@ -11,11 +11,11 @@ ms.assetid: c4bc0f44-eba2-4e96-9e03-1cc787461e61
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 2af0f82e66da1c8db5e17863dfad861c8a7d195e
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45618756"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45742502"
 ---
 # <a name="how-to-return-a-value-from-a-task"></a>방법: 작업에서 값 반환
 다음 예제에서는 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> 형식을 사용하여 <xref:System.Threading.Tasks.Task%601.Result%2A> 속성의 값을 반환하는 방법을 보여 줍니다. 이 예제를 실행하려면 C:\Users\Public\Pictures\Sample Pictures\ 디렉터리가 있고 파일을 포함해야 합니다.  

@@ -19,11 +19,11 @@ author: mcleblanc
 ms.author: markl
 manager: markl
 ms.openlocfilehash: 640caf57638acae9bbe39d3f1039bc08c036785f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45624985"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002660"
 ---
 # <a name="listening-with-sockets"></a>소켓으로 수신
 수신기 또는 서버 소켓에서 네트워크의 포트를 열고 클라이언트가 해당 포트에 연결할 때까지 기다립니다. 다른 네트워크 주소 패밀리 및 프로토콜이 있어도 이 예제에서는 TCP/IP 네트워크에 대한 원격 서비스를 만드는 방법을 보여 줍니다.  

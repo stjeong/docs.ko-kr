@@ -16,11 +16,11 @@ ms.assetid: 5fcc75a5-09d7-45ae-a4c0-9ad6085ac83d
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e8c26608115a22a5402d671c5f5e51c75442a0a5
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45668875"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46567767"
 ---
 # <a name="regular-expression-example-changing-date-formats"></a>정규식 예제: 날짜 형식 변경
 다음 코드 예제에서는 <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> 메서드를 사용하여 *mm*/*dd*/*yy* 형식의 날짜를 *dd*-*mm*-*yy* 형식의 날짜로 바꿉니다.  

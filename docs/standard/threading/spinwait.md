@@ -11,11 +11,11 @@ ms.assetid: 36012f42-34e5-4f86-adf4-973f433ed6c6
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 1ff8b5b75d1d69d3d8c88810de1311540a239c52
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45625531"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45743634"
 ---
 # <a name="spinwait"></a>SpinWait
 <xref:System.Threading.SpinWait?displayProperty=nameWithType>는 커널 이벤트에 필요한 비용이 많이 드는 컨텍스트 스위치 및 커널 전환을 방지하기 위해 하위 수준 시나리오에서 사용할 수 있는 단순한 동기화 유형입니다. 멀티 코어 컴퓨터에서, 리소스를 장기간 보유하지 않아도 되는 경우 몇십 번 또는 몇백 번의 주기 동안 대기 스레드가 사용자 모드에서 회전한 다음, 리소스를 획득하려고 시도하는 것이 더 효율적일 수 있습니다. 회전 후에 리소스가 사용 가능해지면 몇천 번의 주기를 절약하는 것입니다. 리소스를 여전히 사용할 수 없는 경우에는 몇 번의 주기만 사용한 것이며 커널 기반의 대기를 계속 입력할 수 있습니다. 이 회전 후 대기 조합을 ‘2단계 대기 작업’이라고도 합니다.  

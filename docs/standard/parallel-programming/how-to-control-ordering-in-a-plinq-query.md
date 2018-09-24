@@ -11,11 +11,11 @@ ms.assetid: c67eccc7-004d-4b2f-987e-919cbbd62ef7
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: aaa08106126212345bb594cdeabe6e7281cd7b5e
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45668890"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46004301"
 ---
 # <a name="how-to-control-ordering-in-a-plinq-query"></a>방법: PLINQ 쿼리의 순서 제어
 다음 예제는 <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> 확장 메서드를 사용하여 PLINQ 쿼리에서 순서를 제어하는 방법을 보여줍니다.  

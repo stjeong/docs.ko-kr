@@ -10,11 +10,11 @@ ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 8c27bdb75ef9950d0b2b32f742b38e141cf4981b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45649590"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45991586"
 ---
 # <a name="how-to-get-progress-from-the-net-framework-45-installer"></a>방법: .NET Framework 4.5 설치 관리자에서 진행률 가져오기
 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]는 재배포 가능 런타임입니다. .NET Framework의 이 버전용 응용 프로그램을 개발하는 경우 응용 프로그램 설치 시 필수 구성 요소로 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 포함(연결)시킬 수 있습니다. 사용자 지정 설치 환경이나 통합 설치 환경을 제공하려면 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치 프로그램을 자동으로 시작하고 앱의 설치 진행률을 표시하는 동안 진행 상태를 추적하는 것이 좋습니다. 자동 추적을 사용하도록 설정하기 위해 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치 프로그램(감시할 수 있음)은 메모리 매핑된 I/O(MMIO) 세그먼트를 사용하여 설치 프로그램과 함께 통신할 프로토콜(감시자 또는 chainer)을 정의합니다. 이 프로토콜은 chainer가 진행률 정보를 가져오고, 자세한 결과를 확인하고. 메시지에 응답하고, [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 취소하는 방법을 정의합니다.  

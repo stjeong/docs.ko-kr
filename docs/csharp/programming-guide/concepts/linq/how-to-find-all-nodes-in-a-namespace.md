@@ -3,11 +3,11 @@ title: '방법: 네임스페이스에서 모든 노드 찾기(C#)'
 ms.date: 07/20/2015
 ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
 ms.openlocfilehash: 0675795da7c190e6d105ac61027c28f161961099
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45613958"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46696900"
 ---
 # <a name="how-to-find-all-nodes-in-a-namespace-c"></a>방법: 네임스페이스에서 모든 노드 찾기(C#)
 해당 특정 네임스페이스에서 모든 노드를 찾기 위해 각 요소나 특성의 네임스페이스를 기준으로 필터링할 수 있습니다.  

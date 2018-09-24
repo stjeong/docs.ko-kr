@@ -4,12 +4,12 @@ description: CLI(명령줄 인터페이스) 도구를 확장할 수 있는 방�
 author: blackdwarf
 ms.author: mairaw
 ms.date: 04/12/2017
-ms.openlocfilehash: a9cfebbeddbedc329432c805c5956b382a726a77
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 9f54479704f547ada567619a82b24a47a0b104c4
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45592064"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46326584"
 ---
 # <a name="net-core-cli-tools-extensibility-model"></a>.NET Core CLI 도구 확장성 모델
 
@@ -133,7 +133,7 @@ NuGet에는 [사용자 지정 MSBuild 대상 및 props 파일을 패키지](/nug
 
 사용자 지정 대상을 사용하는 작업은 확장되고 있는 프로젝트 내부 버전과 패키지를 가리키는 `<PackageReference>`를 제공함으로써 수행됩니다. 도구와 달리 사용자 지정 대상 패키지는 사용하는 프로젝트의 종속성 종료 항목에 포함됩니다.
 
-사용자 지정 대상을 사용하는 작업은 구성하는 방법에 따라 전적으로 달라집니다. MSBuild 대상이므로 지정된 대상에 따라 달라지고 다른 대상 이후에 실행될 수 있으며, `dotnet msbuild /t:<target-name>` 명령을 사용하여 수동으로 호출할 수도 있습니다.
+사용자 지정 대상을 사용하는 작업은 구성하는 방법에 따라 전적으로 달라집니다. MSBuild 대상이므로 지정된 대상에 따라 달라지고 다른 대상 이후에 실행될 수 있으며, `dotnet msbuild -t:<target-name>` 명령을 사용하여 수동으로 호출할 수도 있습니다.
 
 그러나 사용자에게 더 나은 사용자 환경을 제공하려는 경우 프로젝트별 도구 및 사용자 지정 대상을 결합할 수 있습니다. 이 시나리오에서 프로젝트별 도구는 기본적으로 매개 변수가 필요한 항목은 허용하고, 대상을 실행할 필수 [`dotnet msbuild`](dotnet-msbuild.md) 호출로 변환합니다. 이러한 종류의 시너지 효과는 [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) 프로젝트의 [MVP Summit 2016 Hackathon 샘플](https://github.com/dotnet/MVPSummitHackathon2016) 리포지토리에서 확인할 수 있습니다.
 

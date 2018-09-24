@@ -5,11 +5,11 @@ helpviewer_keywords:
 - files [C#], getting information about
 ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
 ms.openlocfilehash: 8ebacff0f3a1704ec001e3570d0df136f54baf9d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45589432"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46702961"
 ---
 # <a name="how-to-get-information-about-files-folders-and-drives--c-programming-guide"></a>방법: 파일, 폴더 및 드라이브에 대한 정보 가져오기(C# 프로그래밍 가이드)
 .NET Framework에서 다음 클래스를 사용하여 파일 시스템 정보에 액세스할 수 있습니다.  

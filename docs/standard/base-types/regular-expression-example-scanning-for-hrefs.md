@@ -16,11 +16,11 @@ ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: e6fe667ca908b2a4ba16e34e8e74dd39ca01f153
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45649057"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46507687"
 ---
 # <a name="regular-expression-example-scanning-for-hrefs"></a>정규식 예제: HREF 스캐닝
 다음 예제는 입력 문자열을 검색하고 모든 href="…" 값과 문자열에서의 해당 위치를 보여 줍니다.  

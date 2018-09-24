@@ -12,11 +12,11 @@ ms.assetid: 2be05b06-a42e-4c9d-a739-96c21d673927
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f7721ffaebfefadee332c923d867e68204b5205f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45678336"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46003687"
 ---
 # <a name="the-managed-thread-pool"></a>관리되는 스레드 풀
 

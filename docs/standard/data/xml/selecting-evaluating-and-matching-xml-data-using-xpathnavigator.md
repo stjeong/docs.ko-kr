@@ -6,11 +6,11 @@ ms.assetid: 46e059f8-4dc8-4185-9236-784be95228ed
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 2544070bb7ea891a804edd559a5d58e08b071771
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45618363"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46586489"
 ---
 # <a name="selecting-evaluating-and-matching-xml-data-using-xpathnavigator"></a>XPathNavigator를 사용하여 XML 데이터 선택, 평가 및 일치시키기
 <xref:System.Xml.XPath.XPathNavigator> 클래스는 XPath 쿼리를 사용하여 <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체에서 노드를 선택하고, XPath 식 결과를 계산 및 검사하고, <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체에 있는 노드가 지정된 XPath 식과 일치하는지 확인합니다. 다음 항목에서는 이를 포함하여 <xref:System.Xml.XPath.XPathDocument> 또는 <xref:System.Xml.XmlDocument> 개체에서 노드를 선택, 평가 및 일치시키는 것과 관련된 개념에 대해 설명합니다.  

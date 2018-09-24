@@ -13,11 +13,11 @@ ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 939630726f399184c264f73ee01270f50981e83a
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45595349"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002231"
 ---
 # <a name="registration-free-com-interop"></a>등록이 필요 없는 COM Interop
 등록이 필요 없는 COM interop는 Windows 레지스트리를 사용하여 어셈블리 정보를 저장하지 않고 구성 요소를 활성화합니다. 배포 중 컴퓨터에 구성 요소를 등록하는 대신 바인딩 및 활성화 정보를 포함하는 Win32 스타일의 매니페스트 파일을 디자인 타임에 만듭니다. 레지스트리 키 대신 이러한 매니페스트 파일에서 개체 활성화를 지시합니다.  

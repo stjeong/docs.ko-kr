@@ -3,11 +3,11 @@ title: '방법: 빈 쿼리 결과 집합 디버그(C#)'
 ms.date: 07/20/2015
 ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 ms.openlocfilehash: 4760b1e5274634954bd5fe4b3880fd4415af2510
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45677853"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46541004"
 ---
 # <a name="how-to-debug-empty-query-results-sets-c"></a>방법: 빈 쿼리 결과 집합 디버그(C#)
 XML 트리를 쿼리할 때 가장 일반적인 문제 중 하나는 XML 트리에 기본 네임스페이스가 있으면 개발자가 경우에 따라 XML이 네임스페이스에 없는 것처럼 쿼리를 작성하는 것입니다.  

@@ -12,11 +12,11 @@ ms.assetid: e8f58e17-2714-4821-802a-f8eb3b2baa62
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: fc3af01167fe97b701bdb0c7bc37af02d8e8a77c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45658589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46004181"
 ---
 # <a name="threadsuspend-garbage-collection-and-safe-points"></a>Thread.Suspend, 가비지 컬렉션, 안전한 시점
 스레드에서 <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType>를 호출하면 시스템에서 스레드 일시 중단이 요청되었음을 인식하고 스레드를 실제로 일시 중단하기 전에 안전 지점에 도달할 때까지 스레드가 실행되도록 합니다. 스레드의 안전 지점은 가비지 수집을 수행할 수 있는 실행 지점입니다.  

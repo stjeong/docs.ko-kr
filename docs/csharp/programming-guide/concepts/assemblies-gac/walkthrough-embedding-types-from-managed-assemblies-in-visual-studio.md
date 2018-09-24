@@ -3,11 +3,11 @@ title: '연습: Visual Studio에서 관리되는 어셈블리의 형식 포함(C
 ms.date: 07/20/2015
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
 ms.openlocfilehash: 1900c62d1ebaf611f141f8f1bdf95f8d11f82140
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668394"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46004327"
 ---
 # <a name="walkthrough-embedding-types-from-managed-assemblies-in-visual-studio-c"></a>연습: Visual Studio에서 관리되는 어셈블리의 형식 포함(C#)
 강력한 이름의 관리되는 어셈블리에서 형식 정보를 포함하는 경우 응용 프로그램에서 유형을 느슨하게 연결하여 버전 독립성을 확보할 수 있습니다. 즉, 각 버전에 대해 컴파일하지 않고도 관리되는 라이브러리의 여러 버전에서 형식을 사용하도록 프로그램을 작성할 수 있습니다.  

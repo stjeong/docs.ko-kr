@@ -3,11 +3,11 @@ title: WordprocessingML 문서의 모양(C#)
 ms.date: 07/20/2015
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
 ms.openlocfilehash: aeb047f23f60ba6951950a85a6e2ef57fcbd9dda
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45597312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002959"
 ---
 # <a name="shape-of-wordprocessingml-documents-c"></a>WordprocessingML 문서의 모양(C#)
 이 항목에서는 WordprocessingML 문서의 XML 모양에 대해 소개합니다.  

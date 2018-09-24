@@ -6,11 +6,11 @@ ms.assetid: 8e149d32-4b2f-493f-9e4b-d0d93475acde
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 3b299f09f3dc47b5d136284d4d1d285f2e5aad5f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45641328"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45970749"
 ---
 # <a name="outputs-from-an-xsltransform"></a>XslTransform 출력
 스타일시트는 `<xsl:output>` 특성과 `method` 문을 함께 사용하여 출력 형식을 결정할 수 있기 때문에 다음 표에서는 출력을 쓸 때 <xref:System.Xml.Xsl.XslTransform.Transform%2A> 메서드를 사용하고 출력 형식이 <xref:System.IO.Stream>이나 <xref:System.IO.TextWriter>로 선언된 경우의 출력 형식을 보여 줍니다.  

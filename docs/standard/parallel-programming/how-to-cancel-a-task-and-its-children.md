@@ -11,11 +11,11 @@ ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: cb520169f8e7925862d415a4dfb65af09263b0d2
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45613919"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46004233"
 ---
 # <a name="how-to-cancel-a-task-and-its-children"></a>방법: 작업 및 해당 자식 취소
 이 예제는 다음 작업을 수행하는 방법을 보여줍니다.  
