@@ -9,20 +9,20 @@ helpviewer_keywords:
 - out keyword [C#]
 ms.assetid: 7e911a0c-3f98-4536-87be-d539b7536ca8
 ms.openlocfilehash: ecdaf8e94b3b799f41d6750d6ba5fca6895f0e93
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44252553"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46697070"
 ---
-# <a name="out-c-reference"></a><span data-ttu-id="507a8-102">out(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="507a8-102">out (C# Reference)</span></span>
+# <a name="out-c-reference"></a><span data-ttu-id="075d0-102">out(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="075d0-102">out (C# Reference)</span></span>
 
-<span data-ttu-id="507a8-103">다음 두 가지 상황에서 `out` 키워드를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="507a8-103">You can use the `out` keyword in two contexts:</span></span>
+<span data-ttu-id="075d0-103">다음 두 가지 상황에서 `out` 키워드를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="075d0-103">You can use the `out` keyword in two contexts:</span></span>
 
-- <span data-ttu-id="507a8-104">값이 아닌 참조로 메서드에 인수를 전달할 수 있도록 하는 [매개 변수 한정자](out-parameter-modifier.md)로 사용</span><span class="sxs-lookup"><span data-stu-id="507a8-104">As a [parameter modifier](out-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.</span></span>
+- <span data-ttu-id="075d0-104">값이 아닌 참조로 메서드에 인수를 전달할 수 있도록 하는 [매개 변수 한정자](out-parameter-modifier.md)로 사용</span><span class="sxs-lookup"><span data-stu-id="075d0-104">As a [parameter modifier](out-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.</span></span>
 
-- <span data-ttu-id="507a8-105">형식 매개 변수를 공변(covariant)으로 지정하는 인터페이스 및 대리자에 대한 [제네릭 형식 매개 변수 선언](out-generic-modifier.md)에서 사용</span><span class="sxs-lookup"><span data-stu-id="507a8-105">In [generic type parameter declarations](out-generic-modifier.md) for interfaces and delegates, which specifies that a type parameter is covariant.</span></span>
+- <span data-ttu-id="075d0-105">형식 매개 변수를 공변(covariant)으로 지정하는 인터페이스 및 대리자에 대한 [제네릭 형식 매개 변수 선언](out-generic-modifier.md)에서 사용</span><span class="sxs-lookup"><span data-stu-id="075d0-105">In [generic type parameter declarations](out-generic-modifier.md) for interfaces and delegates, which specifies that a type parameter is covariant.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="507a8-106">참고 항목</span><span class="sxs-lookup"><span data-stu-id="507a8-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="075d0-106">참고 항목</span><span class="sxs-lookup"><span data-stu-id="075d0-106">See also</span></span>
 
-- [<span data-ttu-id="507a8-107">C# 참조</span><span class="sxs-lookup"><span data-stu-id="507a8-107">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="075d0-107">C# 참조</span><span class="sxs-lookup"><span data-stu-id="075d0-107">C# Reference</span></span>](../index.md)
