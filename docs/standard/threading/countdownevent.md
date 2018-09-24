@@ -11,11 +11,11 @@ ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 49b01fdd14d1adfe0480f93150ab6e996aa84dee
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45616503"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46562163"
 ---
 # <a name="countdownevent"></a>CountdownEvent
 <xref:System.Threading.CountdownEvent?displayProperty=nameWithType>는 특정 횟수만큼 신호를 받은 후 대기 스레드를 차단 해제하는 동기화 기본 형식입니다. <xref:System.Threading.CountdownEvent>는 <xref:System.Threading.ManualResetEvent> 또는 <xref:System.Threading.ManualResetEventSlim>을 사용하여 이벤트에 신호를 보내기 전에 변수를 수동으로 감소시켜야 하는 시나리오를 위해 설계되었습니다. 예를 들어, 포크/조인 시나리오에서 신호 수가 5인 <xref:System.Threading.CountdownEvent>을 생성한 다음, 스레드 풀에서 5개의 작업 항목을 시작하고 완료될 때 각 작업 항목이 <xref:System.Threading.CountdownEvent.Signal%2A>을 호출하도록 할 수 있습니다. <xref:System.Threading.CountdownEvent.Signal%2A>을 호출할 때마다 신호 수가 1씩 감소됩니다. 주 스레드에서 <xref:System.Threading.CountdownEvent.Wait%2A>에 대한 호출은 신호 수가 0일 때까지 차단됩니다.  

@@ -21,11 +21,11 @@ ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 1fe0ead93d1ff2b7867a52d80cf812e2850ea7b3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45647024"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46703559"
 ---
 # <a name="how-to-verify-that-strings-are-in-valid-email-format"></a>방법: 문자열이 올바른 전자 메일 형식인지 확인
 다음 예제에서는 정규식을 사용하여 문자열이 올바른 전자 메일 형식인지 확인합니다.  

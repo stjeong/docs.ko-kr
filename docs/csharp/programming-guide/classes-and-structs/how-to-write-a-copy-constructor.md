@@ -6,11 +6,11 @@ helpviewer_keywords:
 - copy constructor [C#]
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
 ms.openlocfilehash: d6ecfc3659dcf533db0f4e7b67fdffd620a584fd
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45638112"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46705279"
 ---
 # <a name="how-to-write-a-copy-constructor-c-programming-guide"></a>방법: 복사 생성자 작성(C# 프로그래밍 가이드)
 C#에서는 개체에 대한 복사 생성자를 제공하지 않지만 직접 작성할 수 있습니다.  

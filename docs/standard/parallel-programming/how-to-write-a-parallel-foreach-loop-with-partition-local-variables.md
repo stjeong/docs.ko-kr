@@ -11,11 +11,11 @@ ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 357cc488705ec3dab66543fa4814dbe3e6a22777
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45590999"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46562309"
 ---
 # <a name="how-to-write-a-parallelforeach-loop-with-partition-local-variables"></a>방법: 파티션 로컬 변수를 사용하는 Parallel.ForEach 루프 작성
 다음 예제에서는 파티션 지역 변수를 사용하는 <xref:System.Threading.Tasks.Parallel.ForEach%2A> 메서드를 작성하는 방법을 보여줍니다. <xref:System.Threading.Tasks.Parallel.ForEach%2A> 루프가 실행되면 해당 소스 컬렉션이 여러 파티션으로 나뉩니다. 각 파티션에는 고유한 파티션 지역 변수의 복사본이 있습니다. 파티션 지역 변수는 여러 파티션이 단일 스레드에서 실행될 수 있다는 점을 제외하고 [스레드 지역 변수](xref:System.Threading.ThreadLocal%601)와 유사합니다.

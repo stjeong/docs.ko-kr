@@ -15,11 +15,11 @@ ms.assetid: 38a345ca-6963-4436-9608-5c9defef9c64
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: bad5372af1d771dc93a20e61090ef84126f3e1eb
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45647819"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46705736"
 ---
 # <a name="asynchronous-programming-using-delegates"></a>대리자를 사용한 비동기 프로그래밍
 대리자를 사용하면 비동기 방식으로 동기 메서드를 호출할 수 있습니다. 대리자를 동기적으로 호출하면 `Invoke` 메서드는 현재 스레드에서 직접 대상 메서드를 호출합니다. `BeginInvoke` 메서드가 호출되면 CLR(공용 언어 런타임)에서 요청을 대기하고 호출자에게 즉시 반환합니다. 대상 메서드는 스레드 풀의 스레드에서 비동기적으로 호출됩니다. 요청을 제출하는 원래 스레드는 계속해서 대상 메서드와 함께 실행됩니다. `BeginInvoke` 메서드 호출에서 콜백 메서드가 지정된 경우 대상 메서드가 종료될 때 콜백 메서드가 호출됩니다. 콜백 메서드에서 `EndInvoke` 메서드는 반환 값 및 입/출력 또는 출력 전용 매개 변수를 가져옵니다. `BeginInvoke`를 호출할 때 콜백 메서드를 지정하지 않으면 `BeginInvoke`를 호출한 스레드에서 `EndInvoke`가 호출될 수 있습니다.  

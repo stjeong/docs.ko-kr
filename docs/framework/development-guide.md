@@ -6,12 +6,12 @@ helpviewer_keywords:
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c42311368bf94a2629f656b61b09cb7c2c5f68b6
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: a21f4cd8657a9d2c26ac481e7f2b00e6a2f502c9
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44205389"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581105"
 ---
 # <a name="net-framework-development-guide"></a>.NET Framework 개발 가이드
 이 섹션에서는 .NET Framework 앱을 생성, 구성, 디버그, 배포하고 보안을 적용하는 방법을 설명합니다. 이 섹션에서는 또한 동적 프로그래밍, 상호 운용성, 확장성, 메모리 관리 및 스레딩과 같은 기술 영역에 대한 정보를 제공합니다.  
@@ -64,10 +64,7 @@ ms.locfileid: "44205389"
   
  [성능](../../docs/framework/performance/index.md)  
  캐싱, 초기화 지연, 안정성 및 ETW 이벤트에 대한 정보를 제공합니다.  
-  
- <!--zz [Advanced Reading for the .NET Framework](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)  
- Provides information about advanced development tasks and techniques in the .NET Framework, including extensibility, interoperability, and reflection. Also includes the reference topics for unmanaged APIs that can be used by managed apps, such as runtime hosts, compilers, disassemblers, debuggers, and profilers.  --> 
-  
+ 
 ## <a name="reference"></a>참조  
  [.NET Framework 클래스 라이브러리](/dotnet/api/?view=netframework-4.7)  
  [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 네임스페이스에 포함된 각 클래스에 대한 구문, 코드 예제 및 사용 정보를 제공합니다.  

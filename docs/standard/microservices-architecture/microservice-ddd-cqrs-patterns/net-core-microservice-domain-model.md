@@ -5,11 +5,11 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/09/2017
 ms.openlocfilehash: bb11d87cacf5bb6cbc980c879b0c42fae76f6246
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45649577"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46577539"
 ---
 # <a name="implementing-a-microservice-domain-model-with-net-core"></a>.NET Core를 사용하여 마이크로 서비스 도메인 모델 구현 
 

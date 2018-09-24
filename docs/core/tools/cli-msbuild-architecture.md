@@ -3,12 +3,12 @@ title: .NET Core 명령줄 도구 아키텍처
 description: .NET Core 도구 레이어 및 최신 버전의 변경 내용에 대해 알아봅니다.
 author: blackdwarf
 ms.date: 03/06/2017
-ms.openlocfilehash: 1d96a0b1e19bf84af0ab645ebd104afc899ae656
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 85987129421e8ee22f7cf7fe1d44e0768d95a214
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245131"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46696337"
 ---
 # <a name="high-level-overview-of-changes-in-the-net-core-tools"></a>.NET Core 도구의 변경 내용에 대한 대략적인 개요
 
@@ -63,7 +63,7 @@ ms.locfileid: "39245131"
     
 이 명령은 "릴리스" 구성을 사용하여 응용 프로그램을 `pub` 폴더에 게시합니다. 내부적으로 이 명령은 다음과 같은 MSBuild 호출로 변환됩니다. 
 
-   `dotnet msbuild /t:Publish /p:OutputPath=pub /p:Configuration=Release`
+   `dotnet msbuild -t:Publish -p:OutputPath=pub -p:Configuration=Release`
 
 이 규칙에서 주목할 만한 예외는 `new` 및 `run` 명령으로 MSBuild 대상으로 구현되지 않았습니다.
 

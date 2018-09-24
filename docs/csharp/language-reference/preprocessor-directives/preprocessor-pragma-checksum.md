@@ -7,11 +7,11 @@ helpviewer_keywords:
 - '#pragma checksum [C#]'
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
 ms.openlocfilehash: 28a9ccfb9d36e648304a177294904ab1b7f18892
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45614507"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46568568"
 ---
 # <a name="pragma-checksum-c-reference"></a>#pragma checksum(C# 참조)
 [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] 페이지의 디버그를 돕기 위해 소스 파일에 대한 체크섬을 생성합니다.  

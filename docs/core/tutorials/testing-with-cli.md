@@ -5,11 +5,11 @@ author: cartermp
 ms.author: mairaw
 ms.date: 09/10/2018
 ms.openlocfilehash: 8131e51577bcad9191c0cacb61317fa146bf476d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668355"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46580360"
 ---
 # <a name="organizing-and-testing-projects-with-the-net-core-command-line"></a>.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트
 

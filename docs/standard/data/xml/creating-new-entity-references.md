@@ -6,11 +6,11 @@ ms.assetid: a42f81b3-0403-4e34-b346-7d2129804e54
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 67fdbcdbff64bcd91c80fbeaec0c41982b68d98f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45646144"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46695383"
 ---
 # <a name="creating-new-entity-references"></a>새 엔터티 참조 만들기
 **CreateEntityReference** 메서드는 새 **XmlEntityReference** 노드를 만듭니다. XML DOM(문서 개체 모델)에서는 참조될 엔터티 이름이 이미 선언되지 않았는지 확인합니다. 선언된 경우 **XmlEntityReference** 노드의 자식 노드가 엔터티 선언 노드에서 복사됩니다. 일치하는 엔터티 선언이 없으면 entityreference 노드의 유일한 자식으로 빈 텍스트 노드가 추가됩니다. **XmlEntityReference** 노드의 자식 노드는 다른 노드의 복사본이므로 이러한 자식 노드는 읽기 전용이며 수정할 수 없습니다.  

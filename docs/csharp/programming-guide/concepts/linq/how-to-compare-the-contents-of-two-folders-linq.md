@@ -3,11 +3,11 @@ title: '방법: 두 폴더의 내용 비교(LINQ)(C#)'
 ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
 ms.openlocfilehash: 1517d1f9e451306e40835e6032e2aff2fe3e60ab
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45616976"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46698939"
 ---
 # <a name="how-to-compare-the-contents-of-two-folders-linq-c"></a>방법: 두 폴더의 내용 비교(LINQ)(C#)
 이 예제에서는 두 파일 목록을 비교하는 세 가지 방법을 보여 줍니다.  

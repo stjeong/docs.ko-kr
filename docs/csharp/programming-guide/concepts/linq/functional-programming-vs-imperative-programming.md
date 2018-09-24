@@ -3,11 +3,11 @@ title: 함수형 프로그래밍과 명령형 프로그래밍 비교(C#)
 ms.date: 07/20/2015
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
 ms.openlocfilehash: 01be2758147b84af3410709aab62a0ca89b0c9cf
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44178340"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46696445"
 ---
 # <a name="functional-programming-vs-imperative-programming-c"></a>함수형 프로그래밍과 명령형 프로그래밍 비교(C#)
 이 항목에서는 함수형 프로그래밍을 더욱 일반적인 명령형(절차적) 프로그래밍과 비교하고 대조합니다.  

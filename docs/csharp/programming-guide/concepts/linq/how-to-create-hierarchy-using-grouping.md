@@ -3,11 +3,11 @@ title: '방법: 그룹화를 사용하여 계층 구조 만들기(C#)'
 ms.date: 07/20/2015
 ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
 ms.openlocfilehash: 8fa384ced04a90002f8f721266f163c874d6e0ff
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45649694"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46585562"
 ---
 # <a name="how-to-create-hierarchy-using-grouping-c"></a>방법: 그룹화를 사용하여 계층 구조 만들기(C#)
 이 예제에서는 데이터를 그룹화한 다음 그룹화에 따라 XML을 생성하는 방법을 보여 줍니다.  

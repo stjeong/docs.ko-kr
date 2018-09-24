@@ -21,11 +21,11 @@ ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 49708175f8501c735a77b0f7f965a106b6e086f2
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45652994"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46705762"
 ---
 # <a name="types-of-isolation"></a>격리 유형
 격리된 저장소에 대한 액세스는 항상 저장소를 만든 사용자로 제한됩니다. 이 유형의 격리를 구현하기 위해 공용 언어 런타임은 운영 체제에서 인식하고 저장소가 열릴 때 코드가 실행 중인 프로세스에 연결된 ID인 사용자 ID의 동일한 표기법을 사용합니다. 이 ID는 인증된 사용자 ID이지만 가장으로 인해 현재 사용자의 ID가 동적으로 변경될 수 있습니다.  
