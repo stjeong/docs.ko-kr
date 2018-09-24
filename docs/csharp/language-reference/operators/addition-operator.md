@@ -9,33 +9,33 @@ helpviewer_keywords:
 - addition operator [C#]
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ms.openlocfilehash: b49694bc8937c58bd295f0f8e57c378802d0dfb9
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45594600"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46470787"
 ---
-# <a name="-operator-c-reference"></a><span data-ttu-id="25dfc-102">+ 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="25dfc-102">+ Operator (C# Reference)</span></span>
-<span data-ttu-id="25dfc-103">`+` 연산자는 단항 또는 이항 연산자로 작동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-103">The `+` operator can function as either a unary or a binary operator.</span></span>  
+# <a name="-operator-c-reference"></a><span data-ttu-id="866df-102">+ 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="866df-102">+ Operator (C# Reference)</span></span>
+<span data-ttu-id="866df-103">`+` 연산자는 단항 또는 이항 연산자로 작동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="866df-103">The `+` operator can function as either a unary or a binary operator.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="25dfc-104">설명</span><span class="sxs-lookup"><span data-stu-id="25dfc-104">Remarks</span></span>  
- <span data-ttu-id="25dfc-105">단항 `+` 연산자는 모든 숫자 형식에 대해 미리 정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-105">Unary `+` operators are predefined for all numeric types.</span></span> <span data-ttu-id="25dfc-106">숫자 형식에 대한 단항 `+` 연산의 결과는 피연산자의 값입니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-106">The result of a unary `+` operation on a numeric type is just the value of the operand.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="866df-104">설명</span><span class="sxs-lookup"><span data-stu-id="866df-104">Remarks</span></span>  
+ <span data-ttu-id="866df-105">단항 `+` 연산자는 모든 숫자 형식에 대해 미리 정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="866df-105">Unary `+` operators are predefined for all numeric types.</span></span> <span data-ttu-id="866df-106">숫자 형식에 대한 단항 `+` 연산의 결과는 피연산자의 값입니다.</span><span class="sxs-lookup"><span data-stu-id="866df-106">The result of a unary `+` operation on a numeric type is just the value of the operand.</span></span>  
   
- <span data-ttu-id="25dfc-107">이항 `+` 연산자는 숫자 및 문자열 형식에 대해 미리 정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-107">Binary `+` operators are predefined for numeric and string types.</span></span> <span data-ttu-id="25dfc-108">숫자 형식의 경우 +는 두 피연산자의 합계를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-108">For numeric types, + computes the sum of its two operands.</span></span> <span data-ttu-id="25dfc-109">피연산자 중 하나 또는 둘 다가 문자열 형식이면 +는 피연산자의 문자열 표현을 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-109">When one or both operands are of type string, + concatenates the string representations of the operands.</span></span>  
+ <span data-ttu-id="866df-107">이항 `+` 연산자는 숫자 및 문자열 형식에 대해 미리 정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="866df-107">Binary `+` operators are predefined for numeric and string types.</span></span> <span data-ttu-id="866df-108">숫자 형식의 경우 +는 두 피연산자의 합계를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-108">For numeric types, + computes the sum of its two operands.</span></span> <span data-ttu-id="866df-109">피연산자 중 하나 또는 둘 다가 문자열 형식이면 +는 피연산자의 문자열 표현을 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-109">When one or both operands are of type string, + concatenates the string representations of the operands.</span></span>  
   
- <span data-ttu-id="25dfc-110">대리자 형식도 대리자 연결을 수행하는 이항 `+` 연산자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-110">Delegate types also provide a binary `+` operator, which performs delegate concatenation.</span></span>  
+ <span data-ttu-id="866df-110">대리자 형식도 대리자 연결을 수행하는 이항 `+` 연산자를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="866df-110">Delegate types also provide a binary `+` operator, which performs delegate concatenation.</span></span>  
   
- <span data-ttu-id="25dfc-111">사용자 정의 형식은 단항 `+` 및 이항 `+` 연산자를 오버로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-111">User-defined types can overload the unary `+` and binary `+` operators.</span></span> <span data-ttu-id="25dfc-112">정수 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="25dfc-112">Operations on integral types are generally allowed on enumeration.</span></span> <span data-ttu-id="25dfc-113">자세한 내용은 [연산자(C# 참조)](../../../csharp/language-reference/keywords/operator.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="25dfc-113">For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).</span></span>  
+ <span data-ttu-id="866df-111">사용자 정의 형식은 단항 `+` 및 이항 `+` 연산자를 오버로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="866df-111">User-defined types can overload the unary `+` and binary `+` operators.</span></span> <span data-ttu-id="866df-112">정수 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="866df-112">Operations on integral types are generally allowed on enumeration.</span></span> <span data-ttu-id="866df-113">자세한 내용은 [연산자(C# 참조)](../../../csharp/language-reference/keywords/operator.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="866df-113">For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="25dfc-114">예</span><span class="sxs-lookup"><span data-stu-id="25dfc-114">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="866df-114">예</span><span class="sxs-lookup"><span data-stu-id="866df-114">Example</span></span>  
  [!code-csharp[csRefOperators#28](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-operator_1.cs)]  
   
-## <a name="c-language-specification"></a><span data-ttu-id="25dfc-115">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="25dfc-115">C# Language Specification</span></span>  
+## <a name="c-language-specification"></a><span data-ttu-id="866df-115">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="866df-115">C# Language Specification</span></span>  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a><span data-ttu-id="25dfc-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="25dfc-116">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="866df-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="866df-116">See Also</span></span>
 
-- [<span data-ttu-id="25dfc-117">C# 참조</span><span class="sxs-lookup"><span data-stu-id="25dfc-117">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="25dfc-118">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="25dfc-118">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="25dfc-119">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="25dfc-119">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)  
-- [<span data-ttu-id="25dfc-120">연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="25dfc-120">operator (C# Reference)</span></span>](../../../csharp/language-reference/keywords/operator.md)
+- [<span data-ttu-id="866df-117">C# 참조</span><span class="sxs-lookup"><span data-stu-id="866df-117">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="866df-118">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="866df-118">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="866df-119">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="866df-119">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)  
+- [<span data-ttu-id="866df-120">연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="866df-120">operator (C# Reference)</span></span>](../../../csharp/language-reference/keywords/operator.md)

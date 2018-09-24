@@ -12,23 +12,23 @@ ms.assetid: e8f58e17-2714-4821-802a-f8eb3b2baa62
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: fc3af01167fe97b701bdb0c7bc37af02d8e8a77c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45658589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46004181"
 ---
-# <a name="threadsuspend-garbage-collection-and-safe-points"></a><span data-ttu-id="d976a-102">Thread.Suspend, 가비지 컬렉션, 안전한 시점</span><span class="sxs-lookup"><span data-stu-id="d976a-102">Thread.Suspend, Garbage Collection, and Safe Points</span></span>
-<span data-ttu-id="d976a-103">스레드에서 <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType>를 호출하면 시스템에서 스레드 일시 중단이 요청되었음을 인식하고 스레드를 실제로 일시 중단하기 전에 안전 지점에 도달할 때까지 스레드가 실행되도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="d976a-103">When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> on a thread, the system notes that a thread suspension has been requested and allows the thread to execute until it has reached a safe point before actually suspending the thread.</span></span> <span data-ttu-id="d976a-104">스레드의 안전 지점은 가비지 수집을 수행할 수 있는 실행 지점입니다.</span><span class="sxs-lookup"><span data-stu-id="d976a-104">A safe point for a thread is a point in its execution at which garbage collection can be performed.</span></span>  
+# <a name="threadsuspend-garbage-collection-and-safe-points"></a><span data-ttu-id="768e8-102">Thread.Suspend, 가비지 컬렉션, 안전한 시점</span><span class="sxs-lookup"><span data-stu-id="768e8-102">Thread.Suspend, Garbage Collection, and Safe Points</span></span>
+<span data-ttu-id="768e8-103">스레드에서 <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType>를 호출하면 시스템에서 스레드 일시 중단이 요청되었음을 인식하고 스레드를 실제로 일시 중단하기 전에 안전 지점에 도달할 때까지 스레드가 실행되도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="768e8-103">When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> on a thread, the system notes that a thread suspension has been requested and allows the thread to execute until it has reached a safe point before actually suspending the thread.</span></span> <span data-ttu-id="768e8-104">스레드의 안전 지점은 가비지 수집을 수행할 수 있는 실행 지점입니다.</span><span class="sxs-lookup"><span data-stu-id="768e8-104">A safe point for a thread is a point in its execution at which garbage collection can be performed.</span></span>  
   
- <span data-ttu-id="d976a-105">안전 지점에 도달하면 런타임에서 일시 중단된 스레드가 관리 코드에서 더 이상 진행되지 않도록 보장합니다.</span><span class="sxs-lookup"><span data-stu-id="d976a-105">Once a safe point is reached, the runtime guarantees that the suspended thread will not make any further progress in managed code.</span></span> <span data-ttu-id="d976a-106">관리 코드 외부에서 실행하는 스레드는 가비지 수집에 대해 항상 안전하며 관리 코드의 실행을 다시 시작하려고 할 때까지 실행이 계속됩니다.</span><span class="sxs-lookup"><span data-stu-id="d976a-106">A thread executing outside managed code is always safe for garbage collection, and its execution continues until it attempts to resume execution of managed code.</span></span>  
+ <span data-ttu-id="768e8-105">안전 지점에 도달하면 런타임에서 일시 중단된 스레드가 관리 코드에서 더 이상 진행되지 않도록 보장합니다.</span><span class="sxs-lookup"><span data-stu-id="768e8-105">Once a safe point is reached, the runtime guarantees that the suspended thread will not make any further progress in managed code.</span></span> <span data-ttu-id="768e8-106">관리 코드 외부에서 실행하는 스레드는 가비지 수집에 대해 항상 안전하며 관리 코드의 실행을 다시 시작하려고 할 때까지 실행이 계속됩니다.</span><span class="sxs-lookup"><span data-stu-id="768e8-106">A thread executing outside managed code is always safe for garbage collection, and its execution continues until it attempts to resume execution of managed code.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="d976a-107">가비지 수집을 수행하기 위해 런타임은 수집을 수행하는 스레드를 제외한 모든 스레드를 일시 중단해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d976a-107">In order to perform a garbage collection, the runtime must suspend all the threads except the thread performing the collection.</span></span> <span data-ttu-id="d976a-108">일시 중단하기 전에 각 스레드를 안전 지점으로 가져와야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d976a-108">Each thread must be brought to a safe point before it can be suspended.</span></span>  
+>  <span data-ttu-id="768e8-107">가비지 수집을 수행하기 위해 런타임은 수집을 수행하는 스레드를 제외한 모든 스레드를 일시 중단해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="768e8-107">In order to perform a garbage collection, the runtime must suspend all the threads except the thread performing the collection.</span></span> <span data-ttu-id="768e8-108">일시 중단하기 전에 각 스레드를 안전 지점으로 가져와야 합니다.</span><span class="sxs-lookup"><span data-stu-id="768e8-108">Each thread must be brought to a safe point before it can be suspended.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d976a-109">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d976a-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="768e8-109">참고 항목</span><span class="sxs-lookup"><span data-stu-id="768e8-109">See also</span></span>
 
 - <xref:System.Threading.Thread>  
 - <xref:System.GC>  
-- [<span data-ttu-id="d976a-110">스레딩</span><span class="sxs-lookup"><span data-stu-id="d976a-110">Threading</span></span>](../../../docs/standard/threading/index.md)  
-- [<span data-ttu-id="d976a-111">자동 메모리 관리</span><span class="sxs-lookup"><span data-stu-id="d976a-111">Automatic Memory Management</span></span>](../../../docs/standard/automatic-memory-management.md)
+- [<span data-ttu-id="768e8-110">스레딩</span><span class="sxs-lookup"><span data-stu-id="768e8-110">Threading</span></span>](../../../docs/standard/threading/index.md)  
+- [<span data-ttu-id="768e8-111">자동 메모리 관리</span><span class="sxs-lookup"><span data-stu-id="768e8-111">Automatic Memory Management</span></span>](../../../docs/standard/automatic-memory-management.md)

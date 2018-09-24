@@ -3,24 +3,24 @@ title: WordprocessingML 문서의 모양(C#)
 ms.date: 07/20/2015
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
 ms.openlocfilehash: aeb047f23f60ba6951950a85a6e2ef57fcbd9dda
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45597312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46002959"
 ---
-# <a name="shape-of-wordprocessingml-documents-c"></a><span data-ttu-id="f48bb-102">WordprocessingML 문서의 모양(C#)</span><span class="sxs-lookup"><span data-stu-id="f48bb-102">Shape of WordprocessingML Documents (C#)</span></span>
-<span data-ttu-id="f48bb-103">이 항목에서는 WordprocessingML 문서의 XML 모양에 대해 소개합니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-103">This topic introduces the XML shape of a WordprocessingML document.</span></span>  
+# <a name="shape-of-wordprocessingml-documents-c"></a><span data-ttu-id="ceb57-102">WordprocessingML 문서의 모양(C#)</span><span class="sxs-lookup"><span data-stu-id="ceb57-102">Shape of WordprocessingML Documents (C#)</span></span>
+<span data-ttu-id="ceb57-103">이 항목에서는 WordprocessingML 문서의 XML 모양에 대해 소개합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-103">This topic introduces the XML shape of a WordprocessingML document.</span></span>  
   
-## <a name="microsoft-office-formats"></a><span data-ttu-id="f48bb-104">Microsoft Office 형식</span><span class="sxs-lookup"><span data-stu-id="f48bb-104">Microsoft Office Formats</span></span>  
- <span data-ttu-id="f48bb-105">2007 Microsoft Office system의 기본 파일 형식은 Office Open XML(일반적으로 Open XML이라고 함)입니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-105">The native file format for the 2007 Microsoft Office system is Office Open XML (commonly called Open XML).</span></span> <span data-ttu-id="f48bb-106">Open XML은 Ecma 표준이며 현재 ISO-IEC 표준 과정을 거치고 있는 XML 기반 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-106">Open XML is an XML-based format that an Ecma standard and is currently going through the ISO-IEC standards process.</span></span> <span data-ttu-id="f48bb-107">Open XML에 있는 워드 프로세서 파일의 마크업 언어를 WordprocessingML이라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-107">The markup language for word processing files within Open XML is called WordprocessingML.</span></span> <span data-ttu-id="f48bb-108">이 자습서에서는 WordprocessingML 소스 파일을 예제의 입력으로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-108">This tutorial uses WordprocessingML source files as input for the examples.</span></span>  
+## <a name="microsoft-office-formats"></a><span data-ttu-id="ceb57-104">Microsoft Office 형식</span><span class="sxs-lookup"><span data-stu-id="ceb57-104">Microsoft Office Formats</span></span>  
+ <span data-ttu-id="ceb57-105">2007 Microsoft Office system의 기본 파일 형식은 Office Open XML(일반적으로 Open XML이라고 함)입니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-105">The native file format for the 2007 Microsoft Office system is Office Open XML (commonly called Open XML).</span></span> <span data-ttu-id="ceb57-106">Open XML은 Ecma 표준이며 현재 ISO-IEC 표준 과정을 거치고 있는 XML 기반 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-106">Open XML is an XML-based format that an Ecma standard and is currently going through the ISO-IEC standards process.</span></span> <span data-ttu-id="ceb57-107">Open XML에 있는 워드 프로세서 파일의 마크업 언어를 WordprocessingML이라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-107">The markup language for word processing files within Open XML is called WordprocessingML.</span></span> <span data-ttu-id="ceb57-108">이 자습서에서는 WordprocessingML 소스 파일을 예제의 입력으로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-108">This tutorial uses WordprocessingML source files as input for the examples.</span></span>  
   
- <span data-ttu-id="f48bb-109">Microsoft Office 2003을 사용하는 경우 Word, Excel 및 PowerPoint 2007 파일 형식용 Microsoft Office 호환 기능 팩을 설치했으면 Office Open XML 형식으로 문서를 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-109">If you are using Microsoft Office 2003, you can save documents in the Office Open XML format if you have installed the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.</span></span>  
+ <span data-ttu-id="ceb57-109">Microsoft Office 2003을 사용하는 경우 Word, Excel 및 PowerPoint 2007 파일 형식용 Microsoft Office 호환 기능 팩을 설치했으면 Office Open XML 형식으로 문서를 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-109">If you are using Microsoft Office 2003, you can save documents in the Office Open XML format if you have installed the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.</span></span>  
   
-## <a name="the-shape-of-wordprocessingml-documents"></a><span data-ttu-id="f48bb-110">WordprocessingML 문서의 모양</span><span class="sxs-lookup"><span data-stu-id="f48bb-110">The Shape of WordprocessingML Documents</span></span>  
- <span data-ttu-id="f48bb-111">먼저 WordprocessingML 문서의 모양을 이해해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-111">The first thing to understand is the shape of WordprocessingML documents.</span></span> <span data-ttu-id="f48bb-112">WordprocessingML 문서에는 문서의 단락이 포함된 `w:body`라는 본문 요소가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-112">A WordprocessingML document contains a body element (named `w:body`) that contains the paragraphs of the document.</span></span> <span data-ttu-id="f48bb-113">각 단락에는 `w:r`이라는 텍스트 실행이 하나 이상 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-113">Each paragraph contains one or more text runs (named `w:r`).</span></span> <span data-ttu-id="f48bb-114">각 텍스트 실행에는 `w:t`라는 텍스트가 하나 이상 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-114">Each text run contains one or more text pieces (named `w:t`).</span></span>  
+## <a name="the-shape-of-wordprocessingml-documents"></a><span data-ttu-id="ceb57-110">WordprocessingML 문서의 모양</span><span class="sxs-lookup"><span data-stu-id="ceb57-110">The Shape of WordprocessingML Documents</span></span>  
+ <span data-ttu-id="ceb57-111">먼저 WordprocessingML 문서의 모양을 이해해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-111">The first thing to understand is the shape of WordprocessingML documents.</span></span> <span data-ttu-id="ceb57-112">WordprocessingML 문서에는 문서의 단락이 포함된 `w:body`라는 본문 요소가 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-112">A WordprocessingML document contains a body element (named `w:body`) that contains the paragraphs of the document.</span></span> <span data-ttu-id="ceb57-113">각 단락에는 `w:r`이라는 텍스트 실행이 하나 이상 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-113">Each paragraph contains one or more text runs (named `w:r`).</span></span> <span data-ttu-id="ceb57-114">각 텍스트 실행에는 `w:t`라는 텍스트가 하나 이상 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-114">Each text run contains one or more text pieces (named `w:t`).</span></span>  
   
- <span data-ttu-id="f48bb-115">다음은 매우 간단한 WordprocessingML 문서입니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-115">The following is a very simple WordprocessingML document:</span></span>  
+ <span data-ttu-id="ceb57-115">다음은 매우 간단한 WordprocessingML 문서입니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-115">The following is a very simple WordprocessingML document:</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
@@ -51,11 +51,11 @@ xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
 </w:document>  
 ```  
   
- <span data-ttu-id="f48bb-116">이 문서에는 두 단락이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-116">This document contains two paragraphs.</span></span> <span data-ttu-id="f48bb-117">두 단락에는 모두 단일 텍스트 실행이 포함되어 있고 각 텍스트 실행에는 단일 텍스트가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-117">They both contain a single text run, and each text run contains a single text piece.</span></span>  
+ <span data-ttu-id="ceb57-116">이 문서에는 두 단락이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-116">This document contains two paragraphs.</span></span> <span data-ttu-id="ceb57-117">두 단락에는 모두 단일 텍스트 실행이 포함되어 있고 각 텍스트 실행에는 단일 텍스트가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-117">They both contain a single text run, and each text run contains a single text piece.</span></span>  
   
- <span data-ttu-id="f48bb-118">XML 형식으로 WordprocessingML 문서의 내용을 보는 가장 쉬운 방법은 Microsoft Word를 사용하여 문서를 만들어 저장한 후 XML을 콘솔에 출력하는 다음 프로그램을 실행하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-118">The easiest way to see the contents of a WordprocessingML document in XML form is to create one using Microsoft Word, save it, and then run the following program that prints the XML to the console.</span></span>  
+ <span data-ttu-id="ceb57-118">XML 형식으로 WordprocessingML 문서의 내용을 보는 가장 쉬운 방법은 Microsoft Word를 사용하여 문서를 만들어 저장한 후 XML을 콘솔에 출력하는 다음 프로그램을 실행하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-118">The easiest way to see the contents of a WordprocessingML document in XML form is to create one using Microsoft Word, save it, and then run the following program that prints the XML to the console.</span></span>  
   
- <span data-ttu-id="f48bb-119">이 예제에서는 WindowsBase 어셈블리의 클래스를 사용하고</span><span class="sxs-lookup"><span data-stu-id="f48bb-119">This example uses classes found in the WindowsBase assembly.</span></span> <span data-ttu-id="f48bb-120"><xref:System.IO.Packaging?displayProperty=nameWithType> 네임스페이스의 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="f48bb-120">It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.</span></span>  
+ <span data-ttu-id="ceb57-119">이 예제에서는 WindowsBase 어셈블리의 클래스를 사용하고</span><span class="sxs-lookup"><span data-stu-id="ceb57-119">This example uses classes found in the WindowsBase assembly.</span></span> <span data-ttu-id="ceb57-120"><xref:System.IO.Packaging?displayProperty=nameWithType> 네임스페이스의 형식을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb57-120">It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.</span></span>  
   
 ```csharp  
 const string documentRelationshipType =  
@@ -87,13 +87,13 @@ using (Package wdPackage = Package.Open("SampleDoc.docx", FileMode.Open, FileAcc
 }  
 ```  
   
-## <a name="external-resources"></a><span data-ttu-id="f48bb-121">외부 리소스</span><span class="sxs-lookup"><span data-stu-id="f48bb-121">External Resources</span></span>  
- [<span data-ttu-id="f48bb-122">Office(2007) Open XML 파일 형식 소개</span><span class="sxs-lookup"><span data-stu-id="f48bb-122">Introducing the Office (2007) Open XML File Formats</span></span>](https://msdn.microsoft.com/library/ms406049.aspx)  
- <span data-ttu-id="f48bb-123">[WordprocessingML의 개요](https://msdn.microsoft.com/library/aa212812(office.11).aspx)</span><span class="sxs-lookup"><span data-stu-id="f48bb-123">[Overview of WordprocessingML](https://msdn.microsoft.com/library/aa212812(office.11).aspx)</span></span>  
- <span data-ttu-id="f48bb-124">[Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)(WordProcessingML 파일의 구조)</span><span class="sxs-lookup"><span data-stu-id="f48bb-124">[Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)</span></span>  
- [<span data-ttu-id="f48bb-125">WordprocessingML 소개</span><span class="sxs-lookup"><span data-stu-id="f48bb-125">Introduction to WordprocessingML</span></span>](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
- [<span data-ttu-id="f48bb-126">Office 2003: XML 참조 스키마 다운로드 페이지</span><span class="sxs-lookup"><span data-stu-id="f48bb-126">Office 2003: XML Reference Schemas Download page</span></span>](https://www.microsoft.com/en-us/download/details.aspx?id=101)  
+## <a name="external-resources"></a><span data-ttu-id="ceb57-121">외부 리소스</span><span class="sxs-lookup"><span data-stu-id="ceb57-121">External Resources</span></span>  
+ [<span data-ttu-id="ceb57-122">Office(2007) Open XML 파일 형식 소개</span><span class="sxs-lookup"><span data-stu-id="ceb57-122">Introducing the Office (2007) Open XML File Formats</span></span>](https://msdn.microsoft.com/library/ms406049.aspx)  
+ <span data-ttu-id="ceb57-123">[WordprocessingML의 개요](https://msdn.microsoft.com/library/aa212812(office.11).aspx)</span><span class="sxs-lookup"><span data-stu-id="ceb57-123">[Overview of WordprocessingML](https://msdn.microsoft.com/library/aa212812(office.11).aspx)</span></span>  
+ <span data-ttu-id="ceb57-124">[Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)(WordProcessingML 파일의 구조)</span><span class="sxs-lookup"><span data-stu-id="ceb57-124">[Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)</span></span>  
+ [<span data-ttu-id="ceb57-125">WordprocessingML 소개</span><span class="sxs-lookup"><span data-stu-id="ceb57-125">Introduction to WordprocessingML</span></span>](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
+ [<span data-ttu-id="ceb57-126">Office 2003: XML 참조 스키마 다운로드 페이지</span><span class="sxs-lookup"><span data-stu-id="ceb57-126">Office 2003: XML Reference Schemas Download page</span></span>](https://www.microsoft.com/en-us/download/details.aspx?id=101)  
   
-## <a name="see-also"></a><span data-ttu-id="f48bb-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f48bb-127">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ceb57-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ceb57-127">See Also</span></span>
 
-- [<span data-ttu-id="f48bb-128">자습서: WordprocessingML 문서에서 내용 조작(C#)</span><span class="sxs-lookup"><span data-stu-id="f48bb-128">Tutorial: Manipulating Content in a WordprocessingML Document (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+- [<span data-ttu-id="ceb57-128">자습서: WordprocessingML 문서에서 내용 조작(C#)</span><span class="sxs-lookup"><span data-stu-id="ceb57-128">Tutorial: Manipulating Content in a WordprocessingML Document (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

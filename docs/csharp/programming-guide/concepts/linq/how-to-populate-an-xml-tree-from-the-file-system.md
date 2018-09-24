@@ -3,17 +3,17 @@ title: '방법: 파일 시스템에서 XML 트리 채우기(C#)'
 ms.date: 07/20/2015
 ms.assetid: 2aa2ccac-4a22-47ae-9107-3bb8df232576
 ms.openlocfilehash: 7bddab1942c5a673969e271338f17705914f81a4
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45609020"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46580553"
 ---
-# <a name="how-to-populate-an-xml-tree-from-the-file-system-c"></a><span data-ttu-id="24156-102">방법: 파일 시스템에서 XML 트리 채우기(C#)</span><span class="sxs-lookup"><span data-stu-id="24156-102">How to: Populate an XML Tree from the File System (C#)</span></span>
-<span data-ttu-id="24156-103">일반적으로 XML 트리는 계층적인 이름/값 데이터 저장소로 유용하게 사용될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24156-103">A common and useful application of XML trees is as a hierarchical name/value data store.</span></span> <span data-ttu-id="24156-104">계층적 데이터로 XML 트리를 채운 다음 쿼리 및 변환하고 필요한 경우 serialize할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="24156-104">You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it.</span></span> <span data-ttu-id="24156-105">이 사용 시나리오에서 네임스페이스 및 공백 동작과 같은 많은 XML 관련 의미는 중요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="24156-105">In this usage scenario, many of the XML specific semantics, such as namespaces and white space behavior, are not important.</span></span> <span data-ttu-id="24156-106">대신 XML 트리를 한 사용자가 사용하는 작고 계층적인 메모리 내 데이터베이스로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="24156-106">Instead, you are using the XML tree as a small, in memory, single user hierarchical database.</span></span>  
+# <a name="how-to-populate-an-xml-tree-from-the-file-system-c"></a><span data-ttu-id="bb201-102">방법: 파일 시스템에서 XML 트리 채우기(C#)</span><span class="sxs-lookup"><span data-stu-id="bb201-102">How to: Populate an XML Tree from the File System (C#)</span></span>
+<span data-ttu-id="bb201-103">일반적으로 XML 트리는 계층적인 이름/값 데이터 저장소로 유용하게 사용될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bb201-103">A common and useful application of XML trees is as a hierarchical name/value data store.</span></span> <span data-ttu-id="bb201-104">계층적 데이터로 XML 트리를 채운 다음 쿼리 및 변환하고 필요한 경우 serialize할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bb201-104">You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it.</span></span> <span data-ttu-id="bb201-105">이 사용 시나리오에서 네임스페이스 및 공백 동작과 같은 많은 XML 관련 의미는 중요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="bb201-105">In this usage scenario, many of the XML specific semantics, such as namespaces and white space behavior, are not important.</span></span> <span data-ttu-id="bb201-106">대신 XML 트리를 한 사용자가 사용하는 작고 계층적인 메모리 내 데이터베이스로 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="bb201-106">Instead, you are using the XML tree as a small, in memory, single user hierarchical database.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="24156-107">예</span><span class="sxs-lookup"><span data-stu-id="24156-107">Example</span></span>  
- <span data-ttu-id="24156-108">다음 예제에서는 재귀를 사용하여 로컬 파일 시스템에서 XML 트리를 채운 다음</span><span class="sxs-lookup"><span data-stu-id="24156-108">The following example populates an XML tree from the local file system using recursion.</span></span> <span data-ttu-id="24156-109">트리를 쿼리하고 트리에 있는 모든 파일의 총 크기를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="24156-109">It then queries the tree, calculating the total of the sizes of all files in the tree.</span></span>  
+## <a name="example"></a><span data-ttu-id="bb201-107">예</span><span class="sxs-lookup"><span data-stu-id="bb201-107">Example</span></span>  
+ <span data-ttu-id="bb201-108">다음 예제에서는 재귀를 사용하여 로컬 파일 시스템에서 XML 트리를 채운 다음</span><span class="sxs-lookup"><span data-stu-id="bb201-108">The following example populates an XML tree from the local file system using recursion.</span></span> <span data-ttu-id="bb201-109">트리를 쿼리하고 트리에 있는 모든 파일의 총 크기를 계산합니다.</span><span class="sxs-lookup"><span data-stu-id="bb201-109">It then queries the tree, calculating the total of the sizes of all files in the tree.</span></span>  
   
 ```csharp  
 class Program  
@@ -46,7 +46,7 @@ class Program
 }  
 ```  
   
- <span data-ttu-id="24156-110">이 예제의 결과는 다음과 유사합니다.</span><span class="sxs-lookup"><span data-stu-id="24156-110">This example produces output similar to the following:</span></span>  
+ <span data-ttu-id="bb201-110">이 예제의 결과는 다음과 유사합니다.</span><span class="sxs-lookup"><span data-stu-id="bb201-110">This example produces output similar to the following:</span></span>  
   
 ```xml  
 <Dir Name="Tmp">  
@@ -116,6 +116,6 @@ class Program
 Total File Size:59089  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="24156-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="24156-111">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bb201-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="bb201-111">See Also</span></span>
 
-- [<span data-ttu-id="24156-112">고급 쿼리 기술(LINQ to XML)(C#)</span><span class="sxs-lookup"><span data-stu-id="24156-112">Advanced Query Techniques (LINQ to XML) (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [<span data-ttu-id="bb201-112">고급 쿼리 기술(LINQ to XML)(C#)</span><span class="sxs-lookup"><span data-stu-id="bb201-112">Advanced Query Techniques (LINQ to XML) (C#)</span></span>](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

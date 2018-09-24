@@ -9,42 +9,42 @@ helpviewer_keywords:
 - operator keyword [C#]
 ms.assetid: 59218cce-e90e-42f6-a6bb-30300981b86a
 ms.openlocfilehash: 1e11d7767b61becc39b1158fae9cb2abe997e4bd
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45560164"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46525752"
 ---
-# <a name="operator-c-reference"></a><span data-ttu-id="10407-103">연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="10407-103">operator (C# Reference)</span></span>
+# <a name="operator-c-reference"></a><span data-ttu-id="3b323-103">연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="3b323-103">operator (C# Reference)</span></span>
 
-<span data-ttu-id="10407-104">`operator` 키워드를 사용하여 기본 제공 연산자를 오버로드하거나 클래스 또는 구조체 선언에서 사용자 정의 변환을 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10407-104">Use the `operator` keyword to overload a built-in operator or to provide a user-defined conversion in a class or struct declaration.</span></span>
+<span data-ttu-id="3b323-104">`operator` 키워드를 사용하여 기본 제공 연산자를 오버로드하거나 클래스 또는 구조체 선언에서 사용자 정의 변환을 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-104">Use the `operator` keyword to overload a built-in operator or to provide a user-defined conversion in a class or struct declaration.</span></span>
 
-<span data-ttu-id="10407-105">사용자 지정 클래스 또는 구조체에서 연산자를 오버로드하려면 해당 형식으로 연산자 선언문을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="10407-105">To overload an operator on a custom class or struct, you create an operator declaration in the corresponding type.</span></span> <span data-ttu-id="10407-106">기본 제공 C# 연산자를 오버로드하는 연산자 선언은 다음 규칙을 충족해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="10407-106">The operator declaration that overloads a built-in C# operator must satisfy the following rules:</span></span>
+<span data-ttu-id="3b323-105">사용자 지정 클래스 또는 구조체에서 연산자를 오버로드하려면 해당 형식으로 연산자 선언문을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-105">To overload an operator on a custom class or struct, you create an operator declaration in the corresponding type.</span></span> <span data-ttu-id="3b323-106">기본 제공 C# 연산자를 오버로드하는 연산자 선언은 다음 규칙을 충족해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-106">The operator declaration that overloads a built-in C# operator must satisfy the following rules:</span></span>
 
-- <span data-ttu-id="10407-107">`public` 및 `static` 한정자를 모두 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="10407-107">It includes both a `public` and a `static` modifier.</span></span>
-- <span data-ttu-id="10407-108">여기에는 `operator X`가 포함되며, 여기서 `X`는 오버로드되는 연산자의 이름 또는 기호입니다.</span><span class="sxs-lookup"><span data-stu-id="10407-108">It includes `operator X` where `X` is the name or symbol of the operator being overloaded.</span></span>
-- <span data-ttu-id="10407-109">단항 연산자는 매개 변수가 하나이고, 이항 연산자는 매개 변수가 두 개입니다.</span><span class="sxs-lookup"><span data-stu-id="10407-109">Unary operators have one parameter, and binary operators have two parameters.</span></span> <span data-ttu-id="10407-110">각각의 경우 적어도 하나의 매개 변수는 연산자를 선언하는 클래스나 구조체와 동일한 형식이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="10407-110">In each case, at least one parameter must be the same type as the class or struct that declares the operator.</span></span>
+- <span data-ttu-id="3b323-107">`public` 및 `static` 한정자를 모두 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-107">It includes both a `public` and a `static` modifier.</span></span>
+- <span data-ttu-id="3b323-108">여기에는 `operator X`가 포함되며, 여기서 `X`는 오버로드되는 연산자의 이름 또는 기호입니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-108">It includes `operator X` where `X` is the name or symbol of the operator being overloaded.</span></span>
+- <span data-ttu-id="3b323-109">단항 연산자는 매개 변수가 하나이고, 이항 연산자는 매개 변수가 두 개입니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-109">Unary operators have one parameter, and binary operators have two parameters.</span></span> <span data-ttu-id="3b323-110">각각의 경우 적어도 하나의 매개 변수는 연산자를 선언하는 클래스나 구조체와 동일한 형식이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-110">In each case, at least one parameter must be the same type as the class or struct that declares the operator.</span></span>
 
-<span data-ttu-id="10407-111">변환 연산자를 정의하는 방법에 대한 자세한 내용은 [explicit](explicit.md) 및 [implicit](implicit.md) 키워드 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="10407-111">For information about how to define conversion operators, see the [explicit](explicit.md) and [implicit](implicit.md) keyword articles.</span></span>
+<span data-ttu-id="3b323-111">변환 연산자를 정의하는 방법에 대한 자세한 내용은 [explicit](explicit.md) 및 [implicit](implicit.md) 키워드 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3b323-111">For information about how to define conversion operators, see the [explicit](explicit.md) and [implicit](implicit.md) keyword articles.</span></span>
 
-<span data-ttu-id="10407-112">오버로드할 수 있는 C# 연산자에 대한 개요는 [오버로드할 수 있는 연산자](../../programming-guide/statements-expressions-operators/overloadable-operators.md) 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="10407-112">For an overview of the C# operators that can be overloaded, see the [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md) article.</span></span>
+<span data-ttu-id="3b323-112">오버로드할 수 있는 C# 연산자에 대한 개요는 [오버로드할 수 있는 연산자](../../programming-guide/statements-expressions-operators/overloadable-operators.md) 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3b323-112">For an overview of the C# operators that can be overloaded, see the [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md) article.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10407-113">예</span><span class="sxs-lookup"><span data-stu-id="10407-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3b323-113">예</span><span class="sxs-lookup"><span data-stu-id="3b323-113">Example</span></span>
 
-<span data-ttu-id="10407-114">다음 예제에서는 소수를 나타내는 `Fraction` 형식을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="10407-114">The following example defines a `Fraction` type that represents fractional numbers.</span></span> <span data-ttu-id="10407-115">`+` 및 `*` 연산자를 오버로드하여 소수 더하기 및 곱하기를 수행하고 `Fraction` 형식을 `double` 형식으로 변환하는 변환 연산자도 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="10407-115">It overloads the `+` and `*` operators to perform fractional addition and multiplication, and also provides a conversion operator that converts a `Fraction` type to a `double` type.</span></span>
+<span data-ttu-id="3b323-114">다음 예제에서는 소수를 나타내는 `Fraction` 형식을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-114">The following example defines a `Fraction` type that represents fractional numbers.</span></span> <span data-ttu-id="3b323-115">`+` 및 `*` 연산자를 오버로드하여 소수 더하기 및 곱하기를 수행하고 `Fraction` 형식을 `double` 형식으로 변환하는 변환 연산자도 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="3b323-115">It overloads the `+` and `*` operators to perform fractional addition and multiplication, and also provides a conversion operator that converts a `Fraction` type to a `double` type.</span></span>
 
 [!code-csharp[csrefKeywordsConversion#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsConversion/CS/csrefKeywordsConversion.cs#6)]
 
-## <a name="c-language-specification"></a><span data-ttu-id="10407-116">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="10407-116">C# language specification</span></span>
+## <a name="c-language-specification"></a><span data-ttu-id="3b323-116">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="3b323-116">C# language specification</span></span>
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a><span data-ttu-id="10407-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="10407-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3b323-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3b323-117">See also</span></span>
 
-- [<span data-ttu-id="10407-118">C# 참조</span><span class="sxs-lookup"><span data-stu-id="10407-118">C# Reference</span></span>](../index.md)
-- [<span data-ttu-id="10407-119">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="10407-119">C# Programming Guide</span></span>](../../programming-guide/index.md)
-- [<span data-ttu-id="10407-120">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="10407-120">C# Keywords</span></span>](index.md)
-- [<span data-ttu-id="10407-121">implicit</span><span class="sxs-lookup"><span data-stu-id="10407-121">implicit</span></span>](implicit.md)
-- [<span data-ttu-id="10407-122">explicit</span><span class="sxs-lookup"><span data-stu-id="10407-122">explicit</span></span>](explicit.md)
-- [<span data-ttu-id="10407-123">오버로드할 수 있는 연산자</span><span class="sxs-lookup"><span data-stu-id="10407-123">Overloadable operators</span></span>](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
-- [<span data-ttu-id="10407-124">방법: 구조체 간의 사용자 정의 변환 구현</span><span class="sxs-lookup"><span data-stu-id="10407-124">How to: Implement User-Defined Conversions Between Structs</span></span>](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)
+- [<span data-ttu-id="3b323-118">C# 참조</span><span class="sxs-lookup"><span data-stu-id="3b323-118">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="3b323-119">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="3b323-119">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="3b323-120">C# 키워드</span><span class="sxs-lookup"><span data-stu-id="3b323-120">C# Keywords</span></span>](index.md)
+- [<span data-ttu-id="3b323-121">implicit</span><span class="sxs-lookup"><span data-stu-id="3b323-121">implicit</span></span>](implicit.md)
+- [<span data-ttu-id="3b323-122">explicit</span><span class="sxs-lookup"><span data-stu-id="3b323-122">explicit</span></span>](explicit.md)
+- [<span data-ttu-id="3b323-123">오버로드할 수 있는 연산자</span><span class="sxs-lookup"><span data-stu-id="3b323-123">Overloadable operators</span></span>](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
+- [<span data-ttu-id="3b323-124">방법: 구조체 간의 사용자 정의 변환 구현</span><span class="sxs-lookup"><span data-stu-id="3b323-124">How to: Implement User-Defined Conversions Between Structs</span></span>](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)
