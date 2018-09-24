@@ -1,7 +1,7 @@
 ---
 title: '&lt;AppContextSwitchOverrides&gt; 요소'
 ms.custom: updateeachrelease
-ms.date: 04/19/2018
+ms.date: 09/19/2018
 helpviewer_keywords:
 - AppContextSwitchOverrides
 - compatibility switches
@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d16ce7f2744869c812b9988e91edd153d9cb4fd2
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: c06b63c492d31d1391b53a36ced5b5c7277f5ad6
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "32747527"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47027375"
 ---
 # <a name="ltappcontextswitchoverridesgt-element"></a>&lt;AppContextSwitchOverrides&gt; 요소
 <xref:System.AppContext> 클래스에 사용되는 스위치를 하나 이상 정의하여 새 기능의 옵트아웃 메커니즘을 제공합니다.  
@@ -125,7 +125,21 @@ ms.locfileid: "32747527"
   
  라이브러리 개발자는 해당 라이브러리의 이후 버전에서 도입 되거나 변경 된 기능을 옵트아웃 하려면 호출자를 허용 하는 사용자 지정 스위치를 정의할 수도 있습니다. 자세한 내용은 <xref:System.AppContext> 클래스를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="switches-in-aspnet-applications"></a>ASP.NET 응용 프로그램에서 스위치
+
+추가 하 여 호환성 설정을 사용 하도록 ASP.NET 응용 프로그램을 구성할 수 있습니다는 [ \<추가 >](~/docs/framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) 요소를 [ \<appSettings >](~/docs/framework/configure-apps/file-schema/appsettings/index.md) web.config 파일의 섹션입니다. 
+
+다음 예제에서는 합니다 `<add>` 라는 두 가지 설정을 추가 하는 요소는 `<appSettings>` web.config 파일의 섹션:
+
+```xml
+<appSettings>
+  <add key="AppContext.SetSwitch:Switch.System.Globalization.NoAsyncCurrentCulture" value="true" />
+  <add key="AppContext.SetSwitch:Switch.System.Uri.DontEnableStrictRFC3986ReservedCharacterSets" value="true" />
+</appSettings>
+```
+
+## <a name="example"></a>예제
+
  다음 예제에서는 합니다 `AppContextSwitchOverrides` 단일 응용 프로그램 호환성 스위치를 정의 하는 요소 `Switch.System.Globalization.NoAsyncCurrentCulture`, 비동기 메서드 호출에서 스레드 간에 흐르지 문화권에 맞지 않는 합니다.  
   
 ```xml  
