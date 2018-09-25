@@ -9,13 +9,12 @@ helpviewer_keywords:
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: e0dc425327f6577606e1205a23fdaffcc39f6e01
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0a1a2c9ec34c43eb1b9559d90a8da0d70193c19e
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747456"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47109526"
 ---
 # <a name="ltaddgt-element-for-ltswitchesgt"></a>&lt;추가&gt; 요소에 대 한 &lt;스위치&gt;
 추적 스위치를 설정하는 수준을 지정합니다.  
@@ -39,7 +38,7 @@ ms.locfileid: "32747456"
   
 |특성|설명|  
 |---------------|-----------------|  
-|**name**|필수 특성입니다.<br /><br /> 스위치의 이름을 지정합니다. 이 특성의 값에 해당 하는 *displayName* 전환 생성자에 전달 되는 매개 변수입니다.|  
+|**name**|필수 특성입니다.<br /><br /> 스위치의 이름을 지정합니다. 이 특성의 값에 해당 합니다 *displayName* 전환 생성자에 전달 되는 매개 변수입니다.|  
 |**value**|필수 특성입니다.<br /><br /> 스위치의 수준을 지정합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -54,10 +53,10 @@ ms.locfileid: "32747456"
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 구성 파일에 배치 하 여 추적 스위치의 수준을 변경할 수 있습니다. 스위치가 경우는 <xref:System.Diagnostics.BooleanSwitch>를 켜거나 끌 수 있습니다. 스위치가 경우는 <xref:System.Diagnostics.TraceSwitch>, 서로 다른 수준 추적의 유형을 지정할 항목을 할당할 수 있습니다 또는 응용 프로그램 출력 하는 디버그 메시지입니다.  
+ 구성 파일에 배치 하 여 추적 스위치의 수준을 변경할 수 있습니다. 스위치가 <xref:System.Diagnostics.BooleanSwitch>를 켜거나 끌 수 있습니다. 스위치가 <xref:System.Diagnostics.TraceSwitch>, 추적의 유형을 지정 하 고 다른 수준을 할당할 수 있습니다 또는 디버그 메시지 응용 프로그램에서 출력 합니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는  **\<추가 >** 설정 하는 요소는 `General` 추적 스위치를는 <xref:System.Diagnostics.TraceLevel> 선택 하며, 사용 하도록 설정는 `Data` Boolean 추적 스위치입니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다는  **\<추가 >** 설정할 요소입니다는 `General` 추적 스위치를를 <xref:System.Diagnostics.TraceLevel> 수준 및 사용을 `Data` Boolean 추적 스위치.  
   
 ```xml  
 <configuration>  

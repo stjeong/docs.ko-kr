@@ -3,13 +3,12 @@ title: PeerSecuritySettings
 ms.date: 03/30/2017
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 58b372f26fee7dc180d75731fd4855db569c87c7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c74ee82d7aa3a23f0ee6a69185ad45857c31bb0b
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33484523"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47087881"
 ---
 # <a name="peersecuritysettings"></a>PeerSecuritySettings
 PeerSecuritySettings  
@@ -35,7 +34,7 @@ class PeerSecuritySettings
   
  액세스 형식: 읽기 전용  
   
- 바인딩으로 구성된 끝점이 메시지 수준 보안을 사용하는지 또는 전송 수준 보안을 사용하는지 여부입니다.  
+ 바인딩으로 구성된 엔드포인트가 메시지 수준 보안을 사용하는지 또는 전송 수준 보안을 사용하는지 여부입니다.  
   
 ### <a name="transport"></a>전송  
  데이터 형식: PeerTransportSecuritySettings  

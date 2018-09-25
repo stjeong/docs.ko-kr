@@ -3,13 +3,12 @@ title: 신뢰할 수 있는 보안 프로필
 ms.date: 03/30/2017
 ms.assetid: 921edc41-e91b-40f9-bde9-b6148b633e61
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: dfdafbcdc461c80192e310a86d5bff50f0885283
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 8bb7c6f9835fc7c0926e918563f85a28281f8a89
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46540939"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47073569"
 ---
 # <a name="reliable-secure-profile"></a>신뢰할 수 있는 보안 프로필
 이 샘플에서는 WCF를 작성 하는 방법을 보여 줍니다. 및 [Reliable Secure Profile](https://go.microsoft.com/fwlink/?LinkId=178140) (RSP). 이 샘플의 구현을 보여 줍니다.는 [Make Connection](https://go.microsoft.com/fwlink/?LinkId=178141) 함께 신뢰할 수 있는 메시징 및 필요에 따라 구성할 수 있는 채널 RSP 사양에 따라 신뢰할 수 있는 보안 바인딩을 만들려면 보안 채널을 합니다.  

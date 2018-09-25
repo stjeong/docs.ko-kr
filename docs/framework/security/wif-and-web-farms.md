@@ -3,13 +3,12 @@ title: WIF 및 웹 팜
 ms.date: 03/30/2017
 ms.assetid: fc3cd7fa-2b45-4614-a44f-8fa9b9d15284
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 365416a82881c32b8fdcd3211aa42acb9f273483
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f65e10fa44c9d245bc7d275ac0e1d8fe914bae0b
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502731"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47112512"
 ---
 # <a name="wif-and-web-farms"></a>WIF 및 웹 팜
 WIF(Windows Identity Foundation)를 사용하여 웹 팜에 배포된 RP(신뢰 당사자) 응용 프로그램의 리소스를 보호하는 경우 특정 단계를 수행하여 WIF가 팜의 여러 컴퓨터에서 실행되는 RP 응용 프로그램 인스턴스의 토큰을 처리할 수 있도록 해야 합니다. 이 처리에는 세션 토큰 시그니처의 유효성 검사, 세션 토큰 암호화 및 암호 해독, 세션 토큰 캐싱 및 재생된 보안 토큰 검색이 포함됩니다.  

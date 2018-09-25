@@ -8,16 +8,15 @@ helpviewer_keywords:
 - WCF, security
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 2fa8d753d5fb168c14ee71cbbf6de62e0e4aff9e
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: bf88073c25351aac0e421d69a947605de3e37759
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33806398"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47073207"
 ---
 # <a name="how-to-secure-a-service-with-windows-credentials"></a>방법: Windows 자격 증명을 사용하여 서비스에 보안 설정
-이 항목에서는 Windows 도메인에 있으며 동일한 도메인에 클라이언트에서 호출 하는 Windows Communication Foundation (WCF) 서비스에서 전송 보안을 사용 하는 방법을 보여 줍니다. 이 시나리오에 대 한 자세한 내용은 참조 [Windows 인증과 함께 전송 보안](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)합니다. 샘플 응용 프로그램에 대 한 참조는 [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) 샘플.  
+이 항목에서는 Windows 도메인에 있고 동일한 도메인의 클라이언트에서 호출 되는 Windows Communication Foundation (WCF) 서비스에서 전송 보안을 사용 하는 방법을 보여 줍니다. 이 시나리오에 대 한 자세한 내용은 참조 하세요. [Windows 인증을 사용 하 여 전송 보안](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)합니다. 샘플 응용 프로그램에 대 한 참조를 [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) 샘플입니다.  
   
  이 항목에서는 사용자의 기존 계약 인터페이스 및 구현이 이미 정의되어 있다고 가정하고 여기에 더 추가합니다. 사용자는 기존 서비스 및 클라이언트를 수정할 수도 있습니다.  
   
@@ -46,21 +45,21 @@ ms.locfileid: "33806398"
      [!code-vb[c_SecureWindowsService#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#1)]  
   
 ### <a name="using-the-binding-in-a-service"></a>서비스에 바인딩 사용  
- 이는 두 번째 프로시저로, 자체 호스트된 서비스에 바인딩을 사용하는 방법을 보여 줍니다. 서비스를 호스트 하는 방법에 대 한 자세한 내용은 참조 [호스팅 서비스](../../../docs/framework/wcf/hosting-services.md)합니다.  
+ 이는 두 번째 프로시저로, 자체 호스트된 서비스에 바인딩을 사용하는 방법을 보여 줍니다. 서비스를 호스트 하는 방법에 대 한 자세한 내용은 참조 하세요. [호스팅 서비스](../../../docs/framework/wcf/hosting-services.md)합니다.  
   
 ##### <a name="to-use-a-binding-in-a-service"></a>서비스에 바인딩을 사용하려면  
   
 1.  앞의 프로시저 코드 뒤에 이 프로시저 코드를 삽입합니다.  
   
-2.  <xref:System.Type>이라는 `contractType` 변수를 만들어 인터페이스(`ICalculator`)의 형식을 할당합니다. Visual Basic을 사용 하는 경우 사용 된 `GetType` C#을 사용 하 여 사용 하는 경우 현재 연산자는 `typeof` 키워드입니다.  
+2.  <xref:System.Type>이라는 `contractType` 변수를 만들어 인터페이스(`ICalculator`)의 형식을 할당합니다. Visual Basic을 사용 하는 경우 사용 합니다 `GetType` C#을 사용 하 여 사용 하는 경우 연산자는 `typeof` 키워드.  
   
 3.  `Type`이라는 두 번째 `serviceType` 변수를 만들어 구현된 계약(`Calculator`)의 형식을 할당합니다.  
   
-4.  서비스의 기본 주소를 사용하여 <xref:System.Uri>라는 `baseAddress` 클래스의 인스턴스를 만듭니다. 기본 주소에는 전송과 일치하는 체계가 있어야 합니다. 이 경우 전송 체계는 HTTP, 작성과 주소는 특수 식별자 URI (Uniform Resource) "localhost" 및 포트 번호 (8036)와 함께 기본 끝점 주소가 ("serviceModelSamples /): http://localhost:8036/serviceModelSamples/합니다.  
+4.  서비스의 기본 주소를 사용하여 <xref:System.Uri>라는 `baseAddress` 클래스의 인스턴스를 만듭니다. 기본 주소에는 전송과 일치하는 체계가 있어야 합니다. 이 경우 전송 체계는 HTTP 및 주소에는 특수 한 포함 됩니다. 기본 끝점 주소 뿐만 아니라 리소스 URI (Uniform Identifier) "localhost" 및 포트 번호 (8036) ("serviceModelSamples /): http://localhost:8036/serviceModelSamples/합니다.  
   
 5.  <xref:System.ServiceModel.ServiceHost> 및 `serviceType` 변수를 사용하여 `baseAddress` 클래스의 인스턴스를 만듭니다.  
   
-6.  `contractType`, 바인딩 및 끝점 이름(secureCalculator)을 사용하여 끝점을 서비스에 추가합니다. 클라이언트는 서비스에 대한 호출을 시작할 때 기본 주소와 끝점 이름을 연결해야 합니다.  
+6.  `contractType`, 바인딩 및 끝점 이름(secureCalculator)을 사용하여 끝점을 서비스에 추가합니다. 클라이언트는 서비스에 대한 호출을 시작할 때 기본 주소와 엔드포인트 이름을 연결해야 합니다.  
   
 7.  <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> 메서드를 호출하여 서비스를 시작합니다. 이 프로시저에 대한 코드는 다음과 같습니다.  
   
@@ -68,7 +67,7 @@ ms.locfileid: "33806398"
      [!code-vb[c_SecureWindowsService#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#2)]  
   
 ### <a name="using-the-binding-in-a-client"></a>클라이언트에 바인딩 사용  
- 이 프로시저에서는 서비스와 통신하는 프록시를 생성하는 방법을 보여 줍니다. 프록시 사용 하 여 생성 되는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 프록시를 만들려면 서비스 메타 데이터를 사용 하 합니다.  
+ 이 프로시저에서는 서비스와 통신하는 프록시를 생성하는 방법을 보여 줍니다. 프록시를 사용 하 여 생성 되는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 프록시를 만들려면 서비스 메타 데이터를 사용 하는 합니다.  
   
  또한 이 프로시저에서는 서비스와 통신하는 <xref:System.ServiceModel.WSHttpBinding> 클래스의 인스턴스를 만든 다음 서비스를 호출합니다.  
   
@@ -76,7 +75,7 @@ ms.locfileid: "33806398"
   
 ##### <a name="to-use-a-binding-in-a-client-with-code"></a>코드를 통해 클라이언트에 바인딩을 사용하려면  
   
-1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드를 생성합니다. 자세한 내용은 참조 [하는 방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다. 생성된 된 프록시 코드에서 상속 된 <xref:System.ServiceModel.ClientBase%601> 모든 클라이언트에 필요한 생성자, 메서드 및 WCF 서비스와 통신 하는 속성을 보장 하는 클래스입니다. 이 예제에서 생성된 코드에는 `CalculatorClient` 인터페이스를 구현하는 `ICalculator` 클래스가 포함되어 서비스 코드와의 호환성을 지원합니다.  
+1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드를 생성합니다. 자세한 내용은 [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다. 생성된 된 프록시 코드에서 상속 된 <xref:System.ServiceModel.ClientBase%601> 클래스를 사용 하면 모든 클라이언트에 필요한 생성자, 메서드 및 속성을 WCF 서비스와 통신 합니다. 이 예제에서 생성된 코드에는 `CalculatorClient` 인터페이스를 구현하는 `ICalculator` 클래스가 포함되어 서비스 코드와의 호환성을 지원합니다.  
   
 2.  이 프로시저의 코드는 클라이언트 프로그램에 대한 `Main` 메서드의 시작 부분에 삽입됩니다.  
   
@@ -96,13 +95,13 @@ ms.locfileid: "33806398"
 ## <a name="using-the-configuration-file"></a>구성 파일 사용  
  프로시저 코드를 사용하여 바인딩을 만드는 대신 구성 파일의 바인딩 섹션에 대해 표시된 다음 코드를 사용할 수 있습니다.  
   
- 정의 된 서비스 아직 없는 경우 참조 [서비스 디자인 및 구현](../../../docs/framework/wcf/designing-and-implementing-services.md), 및 [서비스 구성](../../../docs/framework/wcf/configuring-services.md)합니다.  
+ 정의 된 서비스가 아직 없는 경우 [서비스 디자인 및 구현](../../../docs/framework/wcf/designing-and-implementing-services.md), 및 [서비스 구성](../../../docs/framework/wcf/configuring-services.md)합니다.  
   
- **참고** 서비스와 클라이언트 구성 파일에서이 구성 코드를 사용 합니다.  
+ **참고** 서비스 및 클라이언트 구성 파일에서이 구성 코드를 사용 합니다.  
   
 #### <a name="to-enable-transfer-security-on-a-service-in-a-windows-domain-using-configuration"></a>구성을 사용하여 Windows 도메인의 서비스에서 전송 보안을 활성화하려면  
   
-1.  추가 [ \<wsHttpBinding >](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) 요소는 [ \<바인딩 >](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) 구성 파일의 요소 섹션.  
+1.  추가 [ \<wsHttpBinding >](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) 요소를 [ \<바인딩 >](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) 구성 파일의 요소 섹션입니다.  
   
 2.  <`binding`> 요소를 <`WSHttpBinding`> 요소에 추가하고 `configurationName` 특성을 응용 프로그램에 적합한 값으로 설정합니다.  
   
@@ -110,7 +109,7 @@ ms.locfileid: "33806398"
   
 4.  <`message`> 요소를 추가하고 `clientCredentialType` 특성을 Windows로 설정합니다.  
   
-5.  서비스의 구성 파일에서 `<bindings>` 섹션을 다음 코드로 바꿉니다. 서비스 구성 파일을 아직 없는 경우 참조 [구성 서비스 및 클라이언트에 대 한 바인딩을 사용 하 여](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)합니다.  
+5.  서비스의 구성 파일에서 `<bindings>` 섹션을 다음 코드로 바꿉니다. 서비스 구성 파일을 아직 없는 경우 [구성 서비스 및 클라이언트에 대 한 바인딩을 사용 하 여](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)입니다.  
   
     ```xml  
     <bindings>  
@@ -129,9 +128,9 @@ ms.locfileid: "33806398"
   
 ##### <a name="to-use-a-binding-in-a-client-with-configuration"></a>구성을 통해 클라이언트에 바인딩을 사용하려면  
   
-1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드 및 구성 파일을 생성합니다. 자세한 내용은 참조 [하는 방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
+1.  SvcUtil.exe 도구를 사용하여 서비스의 메타데이터에서 프록시 코드 및 구성 파일을 생성합니다. 자세한 내용은 [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)합니다.  
   
-2.  대체는 [ \<바인딩 >](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) 구성 코드는 이전 섹션에서 사용 하 여 생성 된 구성 파일의 섹션입니다.  
+2.  대체는 [ \<바인딩 >](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) 이전 섹션에서 구성 코드를 사용 하 여 생성 된 구성 파일의 섹션입니다.  
   
 3.  프로시저 코드는 클라이언트 프로그램에 대한 `Main` 메서드의 시작 부분에 삽입됩니다.  
   

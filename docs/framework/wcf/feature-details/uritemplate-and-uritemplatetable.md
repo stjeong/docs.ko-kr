@@ -2,12 +2,12 @@
 title: UriTemplate 및 UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 75ef447d8c79bded99bd29292a544c72627f113e
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.openlocfilehash: 66463248f66457aa61ceea22afd003f7b93717e1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46478599"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47090515"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate 및 UriTemplateTable
 웹 개발자는 서비스가 응답하는 URI의 셰이프 및 레이아웃을 설명할 수 있어야 합니다. Windows Communication Foundation (WCF) 개발자에 게 해당 Uri에 대 한 제어를 제공 하는 두 개의 새 클래스를 추가 합니다. <xref:System.UriTemplate> 및 <xref:System.UriTemplateTable> wcf에서 URI 기반 디스패치 엔진의 기초를 형성 합니다. 이러한 클래스는 템플릿 및 URI를 활용 하려면 개발자가 자신의 매핑 메커니즘에서 WCF 서비스를 구현 하지 않고도 사용할 수도 있습니다.  
@@ -192,7 +192,7 @@ foreach (string key in m1.BoundVariables.AllKeys)
 ```  
   
 > [!NOTE]
->  하지만와 같은 URI http://localhost:8000/// 위의 코드에 나열 된 템플릿과 일치 하지 않는와 같은 URI http://localhost:8000/ 않습니다.  
+> 하지만와 같은 URI `http://localhost:8000///` 위의 코드에 나열 된 템플릿과 일치 하지 않는와 같은 URI `http://localhost:8000/` 않습니다.  
   
  다음 코드에서는 템플릿을 사용하여 URI를 만들 때 기본 변수 값을 처리하는 방법을 보여 줍니다.  
   

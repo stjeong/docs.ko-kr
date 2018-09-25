@@ -1,5 +1,5 @@
 ---
-title: '&lt;필터&gt; 요소에 대 한 &lt;추가&gt; 에 대 한 &lt;sharedListeners&gt;'
+title: '&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;sharedListeners&gt;'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter
@@ -12,15 +12,14 @@ helpviewer_keywords:
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 3bbba1c805c6b300f7cf7b3d9112cde9df7607a8
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5172a2be163e178b9c7115825fa5dba4ff073a96
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745057"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47115141"
 ---
-# <a name="ltfiltergt-element-for-ltaddgt-for-ltsharedlistenersgt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가&gt; 에 대 한 &lt;sharedListeners&gt;
+# <a name="ltfiltergt-element-for-ltaddgt-for-ltsharedlistenersgt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;sharedListeners&gt;
 `sharedListeners` 컬렉션에 있는 수신기에 필터를 추가합니다.  
   
  \<configuration>  
@@ -43,7 +42,7 @@ ms.locfileid: "32745057"
   
 |특성|설명|  
 |---------------|-----------------|  
-|**type**|필수 특성입니다.<br /><br /> 필터의 유형을 지정합니다. 형식의 전체 이름을 사용할 수 있습니다 (의 형식에는 <xref:System.Type.FullName%2A?displayProperty=nameWithType> 속성), 하거나 어셈블리 정보를 포함 하 여 정규화 된 형식 이름을 사용할 수 있습니다 (의 형식에는 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> 속성). 정규화 된 형식 이름을 만드는 방법에 대 한 정보를 참조 하십시오. [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
+|**type**|필수 특성입니다.<br /><br /> 필터의 형식을 지정합니다. 형식의 전체 이름을 사용할 수 있습니다 (형식의 합니다 <xref:System.Type.FullName%2A?displayProperty=nameWithType> 속성), 어셈블리 정보를 포함 하 여 정규화 된 형식 이름을 사용할 수 있습니다 (형식의 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> 속성). 정규화 된 형식 이름 만들기에 대 한 내용은 참조 하세요 [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
 |**initializeData**|선택적 특성입니다.<br /><br /> 지정된 된 클래스에 대 한 생성자에 전달 된 문자열입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -55,16 +54,16 @@ ms.locfileid: "32745057"
 |-------------|-----------------|  
 |`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
-|`sharedListeners`|모든 원본이 나 추적 요소를 참조할 수 있는 수신기의 컬렉션입니다.|  
-|`add`|수신기를 추가 **sharedListeners** 컬렉션입니다.|  
+|`sharedListeners`|모든 소스 또는 추적 요소가 참조할 수 있는 수신기의 컬렉션입니다.|  
+|`add`|수신기를 추가 합니다 **sharedListeners** 컬렉션입니다.|  
   
 ## <a name="remarks"></a>설명  
- 수신기에 정의 된 경우는 `<add>` 의 요소는 `<sharedListeners>` 요소를 해당 수신기에 대 한 필터에 정의 되어야 합니다는 `<filter>` 의 자식인 요소는 `<add>` 요소입니다.  
+ 수신기에 정의 된 경우는 `<add>` 의 요소를 `<sharedListeners>` 요소에는 수신기에 대 한 필터를 정의 해야를 `<filter>` 의 자식 요소는 `<add>` 요소.  
   
- 이 요소는 응용 프로그램 구성 파일 및 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
+ 이 요소는 응용 프로그램 구성 파일과 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 `<filter>` 추적 수신기에 필터를 추가 하는 요소 `console` 에 `sharedListeners` 컬렉션입니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 `<filter>` 추적 수신기에 필터를 추가할 요소입니다 `console` 에 `sharedListeners` 컬렉션입니다.  
   
 ```xml  
 <configuration>  

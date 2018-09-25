@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Windows Forms controls, arranging
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
 ms.openlocfilehash: 170b79f03515ab371f7013c267b28ba85dafd0f5
-ms.sourcegitcommit: dfb2a100cfb4d3902c042f17b3204f49bc7635e7
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46525765"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47112915"
 ---
 # <a name="walkthrough-arranging-controls-on-windows-forms-using-snaplines"></a>연습: 맞춤선을 사용하여 Windows Forms에서 컨트롤 정렬
 폼의 정확한 컨트롤 배치는 많은 응용 프로그램에서 우선 순위가 높습니다. Windows Forms 디자이너를 이렇게 하려면 여러 레이아웃 도구를 제공 합니다. 가장 중요 한 것은 <xref:System.Windows.Forms.Design.Behavior.SnapLine> 기능입니다.  

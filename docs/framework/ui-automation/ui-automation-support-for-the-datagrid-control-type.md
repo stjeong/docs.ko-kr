@@ -8,13 +8,12 @@ helpviewer_keywords:
 ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 author: Xansky
 ms.author: mhopkins
-manager: markl
-ms.openlocfilehash: c0a64c87aadef98e7e838ec9aefb89bfb17034d4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 88ef124176642137e363a36563a236d6c6029398
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520327"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47086829"
 ---
 # <a name="ui-automation-support-for-the-datagrid-control-type"></a>DataGrid 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
