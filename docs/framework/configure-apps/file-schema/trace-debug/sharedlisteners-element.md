@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 57927d09f10e84e73c3da424c283846bd79b5044
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b312ea8180c464fb9f955e7d7079cac930c8bf05
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745577"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47070138"
 ---
 # <a name="ltsharedlistenersgt-element"></a>&lt;sharedListeners&gt; 요소
-소스 또는 추적 요소가 참조할 수 있는 수신기가 포함되어 있습니다.  기본적으로이 수신기에 설치 된 모든 수신 하지 않음 하 고 런타임 시 이러한 수신기를 검색할 수 없으면입니다. 공유 수신기로 식별 된 수신기 이름으로 원본 또는 추적에 추가할 수 있습니다.  
+소스 또는 추적 요소가 참조할 수 있는 수신기가 포함되어 있습니다.  이러한 수신기 기본적으로 모든 추적을 받지 않습니다 하 고 런타임 시 이러한 수신기를 검색할 수 없는 합니다. 공유 수신기로 식별 하는 수신기 이름으로 추적 소스를 추가할 수 있습니다.  
   
  \<configuration>  
 \<system.diagnostics >  
@@ -56,12 +55,12 @@ ms.locfileid: "32745577"
 |`system.diagnostics`|ASP.NET 구성 섹션의 루트 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 공유 수신기 컬렉션에 수신기를 추가 활성 수신기를 게 하지 않습니다. 여전히 추가 해야 추적 또는 추적 소스에 추가 하 여는 `Listeners` 해당 추적 요소에 대 한 컬렉션입니다. .NET Framework의 수신기 클래스에서 파생 되는 <xref:System.Diagnostics.TraceListener> 클래스입니다.  
+ 공유 수신기 컬렉션에 수신기를 추가 해도 해당 활성 수신기. 여전히 추가 해야 추적 또는 추적 소스에 추가 하 여는 `Listeners` 추적 요소의 컬렉션입니다. .NET Framework의 수신기 클래스에서 파생 된 <xref:System.Diagnostics.TraceListener> 클래스입니다.  
   
- 이 요소는 응용 프로그램 구성 파일 및 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
+ 이 요소는 응용 프로그램 구성 파일과 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 `<sharedListeners>` 수신기에 추가할 요소의 `console` 에 `Listeners` 컬렉션 모두에 대 한는 <xref:System.Diagnostics.TraceSource> 및 <xref:System.Diagnostics.Trace> 클래스입니다. 콘솔 추적 수신기에 대 한 호출을 통해 콘솔에 추적 정보를 쓰는 <xref:System.Diagnostics.TraceSource> 또는 <xref:System.Diagnostics.Trace>합니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다는 `<sharedListeners>` 수신기에 추가할 요소 `console` 에 `Listeners` 둘 다에 대 한 컬렉션을 <xref:System.Diagnostics.TraceSource> 및 <xref:System.Diagnostics.Trace> 클래스입니다. 콘솔 추적 수신기에 대 한 호출을 통해 콘솔에 추적 정보를 씁니다 <xref:System.Diagnostics.TraceSource> 또는 <xref:System.Diagnostics.Trace>합니다.  
   
 ```xml  
 <configuration>  

@@ -5,11 +5,11 @@ f1_keywords:
 - vbrTextFieldParser_MalFormedFixedWidthLine
 ms.assetid: 84e14245-dfdf-4b62-8b84-e83a31608899
 ms.openlocfilehash: d362ed594fd343c22345df9767c94a5770e5303a
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47027689"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47071623"
 ---
 # <a name="line-ltnumbergt-cannot-be-parsed-using-the-current-fieldwidths"></a>줄 &lt;번호&gt; 현재 FieldWidths를 사용 하 여 구문 분석할 수 없습니다
 해당 필드의 너비가 지정된 것과 다르기 때문에 지정한 줄을 구문 분석할 수 없습니다.  

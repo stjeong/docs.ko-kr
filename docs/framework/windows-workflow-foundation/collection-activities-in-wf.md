@@ -3,11 +3,11 @@ title: WF의 컬렉션 활동
 ms.date: 03/30/2017
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
 ms.openlocfilehash: 6b3a02cdd020d303519f605a206d62b42f4fe731
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46579175"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47084019"
 ---
 # <a name="collection-activities-in-wf"></a>WF의 컬렉션 활동
 컬렉션 활동은 워크플로에서 컬렉션 개체로 작업하는 데 사용됩니다. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]에는 컬렉션에서 항목을 추가 및 제거하고, 컬렉션에 항목이 있는지 테스트하고, 컬렉션을 지우는 시스템 제공 활동이 있습니다. `ExistsInCollection` 및 `RemoveFromCollection` 가 <xref:System.Activities.OutArgument%601> 형식의 <xref:System.Boolean>, 결과 나타냅니다.  

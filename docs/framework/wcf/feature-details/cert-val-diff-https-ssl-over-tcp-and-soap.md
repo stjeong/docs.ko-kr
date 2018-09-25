@@ -8,19 +8,18 @@ helpviewer_keywords:
 - certificates [WCF], validation differences
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 744d9208f6be47965b89ddd9555b99feab9e18b7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 79b5e86b689da0678b0d949d2a335dbfe3836f0e
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33489471"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47077215"
 ---
 # <a name="certificate-validation-differences-between-https-ssl-over-tcp-and-soap-security"></a>HTTPS, TCP를 통한 SSL 및 SOAP 보안의 인증서 유효성 검사 차이점
-인증서를 사용할 수 Windows Communication Foundation (WCF) (전송 계층 보안) 외에도 메시지 계층 (SOAP) 보안이 포함 된 HTTP (HTTPS) 또는 TCP를 통한 합니다. 이 항목에서는 이러한 인증서의 유효성을 검사하는 방법의 차이점에 대해 설명합니다.  
+인증서 사용할 수 있습니다 Windows Communication Foundation (WCF)에서 전송 계층 보안 (TLS) 외에도 메시지 계층 (SOAP) 보안이 HTTP (HTTPS) 또는 TCP를 통해. 이 항목에서는 이러한 인증서의 유효성을 검사하는 방법의 차이점에 대해 설명합니다.  
   
 ## <a name="validation-of-https-client-certificates"></a>HTTPS 클라이언트 인증서 유효성 검사  
- HTTPS를 사용하여 클라이언트와 서비스 간에 통신하는 경우 클라이언트에서 서비스를 인증하는 데 사용하는 인증서는 신뢰 체인을 지원해야 합니다. 즉, 신뢰할 수 있는 루트 인증 기관에 연결되어야 합니다. 연결되지 않은 경우 HTTP 계층에서 "원격 서버에서 (403) 사용할 수 없음 오류를 반환했습니다."라는 메시지와 함께 <xref:System.Net.WebException>이 발생합니다. WCF 표면으로이 예외는 <xref:System.ServiceModel.Security.MessageSecurityException>합니다.  
+ HTTPS를 사용하여 클라이언트와 서비스 간에 통신하는 경우 클라이언트에서 서비스를 인증하는 데 사용하는 인증서는 신뢰 체인을 지원해야 합니다. 즉, 신뢰할 수 있는 루트 인증 기관에 연결되어야 합니다. 연결되지 않은 경우 HTTP 계층에서 "원격 서버에서 (403) 사용할 수 없음 오류를 반환했습니다."라는 메시지와 함께 <xref:System.Net.WebException>이 발생합니다. 이 예외를 표시 합니다. WCF는 <xref:System.ServiceModel.Security.MessageSecurityException>합니다.  
   
 ## <a name="validation-of-https-service-certificates"></a>HTTPS 서비스 인증서 유효성 검사  
  HTTPS를 사용하여 클라이언트와 서비스 간에 통신하는 경우 서버에서 인증하는 데 사용하는 인증서는 신뢰 체인을 기본적으로 지원해야 합니다. 즉, 신뢰할 수 있는 루트 인증 기관에 연결되어야 합니다. 인증서가 해지되었는지 여부를 확인하기 위해 온라인 확인을 수행하지는 않습니다. 다음 코드에서처럼 <xref:System.Net.Security.RemoteCertificateValidationCallback> 콜백을 등록하여 이 동작을 재정의할 수 있습니다.  

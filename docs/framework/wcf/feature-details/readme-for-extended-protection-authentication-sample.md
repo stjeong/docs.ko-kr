@@ -3,18 +3,17 @@ title: 인증에 대한 확장된 보호 ReadMe 샘플
 ms.date: 03/30/2017
 ms.assetid: 80bf2e97-398d-4db5-9040-d96478a2ccab
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: d45271180b7f00ba78d106f2a93d5860375da5f1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d298f1f6668078d327cf0fd78110c0cbb7b4474c
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33495082"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47110325"
 ---
 # <a name="readme-for-extended-protection-authentication-sample"></a>인증에 대한 확장된 보호 ReadMe 샘플
-확장 된 보호는 공격자 (에서 "man에서-들기")는 클라이언트의 자격 증명을 가로채 고 하는 클라이언트의 의도 된 서버에서 보안 리소스에 액세스 하는 데 사용 중간자 개입 (mitm 메시지) 공격 으로부터 보호 하려면 보안 이니셔티브입니다.  
+확장 된 보호는 공격자 ("man-에-the-중간")는 클라이언트의 자격 증명을 가로채 고 하는 클라이언트의 의도 한 서버의 보안 리소스에 액세스 하는 데 사용 중간자 개입 (mitm 메시지 가로채기) 공격 으로부터 보호 하기 위해 보안 이니셔티브입니다.  
   
- 자세한 내용은 참조 [인증 개요에 대 한 확장 된 보호](../../../../docs/framework/wcf/feature-details/extended-protection-for-authentication-overview.md)합니다.  
+ 자세한 내용은 [확장 된 보호에 대 한 인증 개요](../../../../docs/framework/wcf/feature-details/extended-protection-for-authentication-overview.md)합니다.  
   
 > [!NOTE]
 >  이 샘플은 IIS에서 호스팅하는 경우에만 작동하며, HTTPS를 지원하지 않는 Visual Studio 개발 서버에서는 작동하지 않습니다.  
@@ -45,6 +44,6 @@ ms.locfileid: "33495082"
   
 10. 브라우저 창에서 URL에 액세스해 서비스를 테스트할 수 있습니다. 다중 컴퓨터 구성에서 이 URL에 액세스하려면 들어오는 모든 HTTP 및 HTTPS 연결에 대해 방화벽이 열려 있는지 확인하십시오.  
   
-11. 에 대 한 전체 컴퓨터 이름을 제공 하 고 클라이언트 구성 파일을 열고는 \<클라이언트 >- \<끝점 >-address 특성 << full_machine_name >> 대체 합니다.  
+11. 클라이언트 구성 파일을 열고 전체 컴퓨터 이름을 제공 합니다 \<클라이언트 >- \<끝점 >-address 특성에 << full_machine_name >> 대체 합니다.  
   
 12. 클라이언트를 실행합니다. 클라이언트가 보안 채널을 설정하고 자동으로 확장된 보호를 사용하여 서비스와 통신합니다.

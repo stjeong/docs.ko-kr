@@ -1,5 +1,5 @@
 ---
-title: '&lt;선택을 취소&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;소스&gt;'
+title: '&lt;지우기&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/clear
@@ -9,21 +9,20 @@ helpviewer_keywords:
 ms.assetid: 76796bb2-9c0b-4526-8135-8bf18b16d8d9
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 8c6ef51dae36e94fa4a4fdc5ad8983380e78bde3
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 3674b5e8f54735010da901c76b77bd617218891e
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746854"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47071755"
 ---
-# <a name="ltcleargt-element-for-ltlistenersgt-for-ltsourcegt"></a>&lt;선택을 취소&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;소스&gt;
+# <a name="ltcleargt-element-for-ltlistenersgt-for-ltsourcegt"></a>&lt;지우기&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;
 추적 소스의 `Listeners` 컬렉션을 지웁니다.  
   
  \<configuration>  
 \<system.diagnostics >  
-\<소스 >  
-\<소스 >  
+\<원본 >  
+\<원본 >  
 \<수신기 >  
 \<지우기 >  
   
@@ -53,13 +52,13 @@ ms.locfileid: "32746854"
 |`listeners`|수집, 저장 하 고 메시지를 라우팅하는 수신기를 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `<clear>` 에서 모든 수신기를 제거 하는 요소는 `Listeners` 추적 소스에 대 한 컬렉션 포함 하는 <xref:System.Diagnostics.DefaultTraceListener>합니다. 사용할 수는 `<clear>` 요소를 사용 하기 전에 `<add>` 요소를 컬렉션에 다른 활성 수신기가 없는지 확인할 수 있습니다.  
+ `<clear>` 요소에서 모든 수신기를 제거 합니다 `Listeners` 추적 원본에 대 한 컬렉션 포함 하 여는 <xref:System.Diagnostics.DefaultTraceListener>합니다. 사용할 수 있습니다를 `<clear>` 요소를 사용 하기 전에 `<add>` 요소 컬렉션에 다른 활성 수신기 수입니다.  
   
 ## <a name="configuration-file"></a>구성 파일  
- 이 요소는 응용 프로그램 구성 파일 및 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
+ 이 요소는 응용 프로그램 구성 파일과 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 `<clear>` 요소를 사용 하기 전에 `<add>` 요소를 추가 하는 수신기 `console` 및 `textListener` 에 `Listeners` 추적 소스에 대 한 컬렉션 `TraceSourceApp`합니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 `<clear>` 요소를 사용 하기 전에 `<add>` 수신기를 추가할 요소입니다 `console` 및 `textListener` 에 `Listeners` 추적 소스에 대 한 컬렉션 `TraceSourceApp`.  
   
 ```xml  
 <configuration>  

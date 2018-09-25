@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Line control [Visual Basic], topic list
 ms.assetid: 29ee3a5f-920f-4677-85bc-bd7425ab57e8
 ms.openlocfilehash: 6d052af15257f00f43ad21b08765ab3c882b31bf
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46579669"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47109315"
 ---
 # <a name="line-and-shape-controls-visual-studio"></a>Line 및 Shape 컨트롤(Visual Studio)
 Visual Basic Power Packs Line 및 Shape 컨트롤은 폼이나 컨테이너에서 수평선, 수직선, 대각선, 사각형, 정사각형, 타원형, 원형, 모서리가 둥근 사각형 및 정사각형을 그리는 데 사용되는 그래픽 컨트롤입니다.  

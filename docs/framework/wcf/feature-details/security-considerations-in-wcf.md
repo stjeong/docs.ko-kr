@@ -7,16 +7,15 @@ helpviewer_keywords:
 - WCF, security
 ms.assetid: 42055ee0-6d0c-443d-9d89-788dfc345d6d
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 9d26acf8443967bff36637c482dd3270ef034f40
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f26369a567e89fc502f777383c22e74b96fe503c
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33497531"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47109513"
 ---
 # <a name="security-considerations-in-wcf"></a>WCF에서의 보안 고려 사항
-이 섹션의 항목은 Windows Communication Foundation (WCF) 응용 프로그램을 디자인할 때 고려해 야 할 다양 한 보안 관련 항목을 나열 합니다.  
+이 섹션의에서 항목에서는 Windows Communication Foundation (WCF) 응용 프로그램을 디자인할 때 고려해 야 할 다양 한 보안 관련 항목을 나열 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [정보 공개](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  

@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 5903174f125938923a63fc031421a8d5a020e56d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 2aaf590975d9fd3f5d78cb64d8d2b1c38c0e8dc7
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32753588"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47113071"
 ---
 # <a name="ltservicepointmanagergt-element-network-settings"></a>&lt;servicePointManager&gt; 요소 (네트워크 설정)
 네트워크 리소스에 대 한 연결을 구성합니다.  
@@ -47,13 +46,13 @@ ms.locfileid: "32753588"
   
 |**특성**|**설명**|  
 |-------------------|---------------------|  
-|`checkCertificateName`|시스템이 인증서의 이름과 인증서를 사용 하기 전에 서버 호스트 이름이 일치 하는지 확인 해야 하는지 여부를 지정 합니다. 기본값은 `true`입니다.|  
-|`checkCertificateRevocationList`|시스템이 인증서를 사용 하기 전에 인증서 해지 여부를 확인 해야 하는지 여부를 지정 합니다. 기본값은 `false`입니다.|  
-|`dnsRefreshTimeout`|DNS 라운드 로빈 옵션 밀리초에서와 함께에서 시간 서비스 DNS (Domain Name) 해상도 캐시를 지정 합니다. 기본값은 120,000밀리초(2분)입니다.|  
-|`enableDnsRoundRobin`|호스트의 DNS 확인이 모든 주소를 또는 첫 번째 반환 여러 IP (인터넷 프로토콜) 주소와 이름을 있는지 여부를 지정 합니다. 기본값은 `false`입니다.|  
-|`encryptionPolicy`|SSL/TLS 세션에 적용 된 암호화 정책을 지정는 <xref:System.Net.ServicePointManager> 인스턴스. 가능한 값은에 대 한 값에 해당 하는 <xref:System.Net.Security.EncryptionPolicy> 열거형입니다. 사용 <xref:System.Security.Authentication.CipherAlgorithmType.Null> 암호화 정책을로 설정 된 경우에 필요한 `NoEncryption`합니다. 기본값은 `RequireEncryption`입니다.|  
-|`expect100Continue`|POST 메서드를 받을 예상 해야 하는지 여부를 지정 된 `100-continue` 서버 로부터 응답 합니다. 기본값은 `true`입니다.|  
-|`useNagleAlgorithm`|서비스 지점 관리자에 의해 제어 하는 연결 Nagle 알고리즘을 사용 하는지 여부를 지정 합니다. 기본값은 `true`입니다.|  
+|`checkCertificateName`|시스템은 인증서의 이름과 인증서를 사용 하기 전에 서버 호스트 이름과 일치 하는지 확인 해야 하는지 여부를 지정 합니다. 기본값은 `true`입니다.|  
+|`checkCertificateRevocationList`|시스템 인증서를 사용 하기 전에 인증서를 해지 되었는지 여부를 확인 해야 하는지 여부를 지정 합니다. 기본값은 `false`입니다.|  
+|`dnsRefreshTimeout`|밀리초 단위로 DNS 라운드 로빈 옵션을 함께 기간 서비스 DNS (도메인 이름) 해상도 캐시를 지정 합니다. 기본값은 120,000밀리초(2분)입니다.|  
+|`enableDnsRoundRobin`|모든 주소 또는 하나의 항목만 반환 여러 IP (인터넷 프로토콜) 주소를 사용 하 여 호스트의 DNS 확인 이름을 여부를 지정 합니다. 기본값은 `false`입니다.|  
+|`encryptionPolicy`|SSL/TLS 세션에 적용 된 암호화 정책을 지정을 <xref:System.Net.ServicePointManager> 인스턴스. 가능한 값은 값에 해당 하는 <xref:System.Net.Security.EncryptionPolicy> 열거형입니다. 사용 <xref:System.Security.Authentication.CipherAlgorithmType.Null> 암호화 정책으로 설정 된 경우 반드시 `NoEncryption`입니다. 기본값은 `RequireEncryption`입니다.|  
+|`expect100Continue`|POST 메서드를 받을 예상 해야 하는지 여부를 지정 된 `100-continue` 서버에서 응답 합니다. 기본값은 `true`입니다.|  
+|`useNagleAlgorithm`|서비스 지점 관리자에 의해 제어 되는 연결에 Nagle 알고리즘을 사용 하는지 여부를 지정 합니다. 기본값은 `true`입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

@@ -3,11 +3,11 @@ title: Discover a Service with Unique Listen Uri Mode 샘플
 ms.date: 03/30/2017
 ms.assetid: 9a6d35b2-0469-43c8-a0c9-63623e3d2733
 ms.openlocfilehash: 7e1c5ae0cb1a44c72a27566035b4bc20acbf1614
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46703598"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47077046"
 ---
 # <a name="discover-a-service-with-unique-listen-uri-mode-sample"></a>Discover a Service with Unique Listen Uri Mode 샘플
 이 샘플에서는 <xref:System.ServiceModel.Channels.BindingContext.ListenUriMode%2A> 속성이 <xref:System.ServiceModel.Description.ListenUriMode.Unique>로 설정된 서비스를 검색하는 방법을 보여 줍니다. <xref:System.ServiceModel.Channels.BindingContext.ListenUriMode%2A> 속성이 <xref:System.ServiceModel.Description.ListenUriMode.Unique>로 설정된 경우 포트를 고유하게 설정하거나 경로를 고유하게 하기 위해 GUID를 추가하는 방법으로 ListenUri를 고유하게 설정해야 합니다.  

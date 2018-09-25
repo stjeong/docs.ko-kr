@@ -1,5 +1,5 @@
 ---
-title: '&lt;소스&gt; 요소'
+title: '&lt;원본&gt; 요소'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources
@@ -11,20 +11,19 @@ helpviewer_keywords:
 ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 73fe0fb13c191843516a2218c708851abc1851b0
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a9c5c5529e349eca2ba089ed6fb71da4bd48430a
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752704"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47084451"
 ---
-# <a name="ltsourcesgt-element"></a>&lt;소스&gt; 요소
+# <a name="ltsourcesgt-element"></a>&lt;원본&gt; 요소
 추적 메시지를 시작 하는 추적 소스를 지정 합니다.  
   
  \<configuration>  
 \<system.diagnostics >  
-\<소스 >  
+\<원본 >  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,10 +53,10 @@ ms.locfileid: "32752704"
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소는 응용 프로그램 구성 파일 및 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
+ 이 요소는 응용 프로그램 구성 파일과 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 `<sources>` 추적 소스를 추가할 요소의 `mySource` 명명 된 소스 스위치에 대 한 수준을 설정 하 고 `sourceSwitch`합니다. 콘솔 추적 수신기는 추적 정보를 콘솔에 작성 하는 추가 됩니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 `<sources>` 추적 소스를 추가할 요소의 `mySource` 명명 된 소스 스위치의 수준을 설정 하 고 `sourceSwitch`입니다. 콘솔 추적 수신기는 추적 정보를 콘솔에 쓰는 추가 됩니다.  
   
 ```xml  
 <configuration>  

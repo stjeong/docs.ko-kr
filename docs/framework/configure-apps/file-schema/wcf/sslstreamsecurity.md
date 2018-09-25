@@ -3,13 +3,12 @@ title: '&lt;sslStreamSecurity&gt;'
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: a86e1aae7ddd5389f098e532ae2c2cc67f4085e3
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6eacf1833ecf980696d75c5dbcaaba3ba6403d92
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752405"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47087452"
 ---
 # <a name="ltsslstreamsecuritygt"></a>&lt;sslStreamSecurity&gt;
 SSL 스트림을 사용한 채널 보안을 지원하는 사용자 지정 바인딩 요소를 나타냅니다.  
@@ -34,7 +33,7 @@ SSL 스트림을 사용한 채널 보안을 지원하는 사용자 지정 바인
 |특성|설명|  
 |---------------|-----------------|  
 |requireClientCertificate|이 바인딩에 클라이언트 인증서가 필요한지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.|  
-|sslProtocols|지원되는 SslProtocols를 지정하는 SslProtocols 열거형 플래그 값입니다. 기본값은 Ssl3&#124;Tls&#124;Tls11&#124;t l s 12입니다.|  
+|sslProtocols|지원되는 SslProtocols를 지정하는 SslProtocols 열거형 플래그 값입니다. 기본값은 Ssl3&#124;Tls&#124;Tls11&#124;Tls12 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

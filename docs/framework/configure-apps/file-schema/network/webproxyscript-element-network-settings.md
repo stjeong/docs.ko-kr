@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 6843662b73f6b7d45dd12616f5118569a2d19975
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 1e1450d2df424b32aacc5c113b5936001f65915a
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32754508"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47085652"
 ---
 # <a name="ltwebproxyscriptgt-element-network-settings"></a>&lt;webProxyScript&gt; 요소 (네트워크 설정)
 웹 프록시 검색에 사용 되는 스크립트의 특성을 구성 합니다.  
@@ -41,7 +40,7 @@ ms.locfileid: "32754508"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`downloadTimeout`|시, 분 및 초에서 스크립트를 다운로드 하는 최대 시간을 지정 합니다. 기본값은 1 분입니다.|  
+|`downloadTimeout`|스크립트 시간, 분 및 초를 다운로드 하는 최대 시간을 지정 합니다. 기본값은 1 분입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

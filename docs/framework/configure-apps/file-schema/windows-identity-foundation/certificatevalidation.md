@@ -3,16 +3,15 @@ title: '&lt;certificateValidation&gt;'
 ms.date: 03/30/2017
 ms.assetid: 6c54c704-b55e-4631-88ff-4d4a5621554c
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: af4dc459da49b46d70276d3f4bcd5f94d2a91ffe
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 29881be43f02d275ad135efd97dc8b25a7409beb
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32756061"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47074790"
 ---
 # <a name="ltcertificatevalidationgt"></a>&lt;certificateValidation&gt;
-토큰 처리기 인증서의 유효성을 검사 하기 위해 사용 하는 설정을 제어 합니다. 특정 처리기 자체적인 검사기로 구성 된 경우이 설정은 무시 됩니다.  
+토큰 처리기 인증서의 유효성을 검사 하는 데 사용 되는 설정을 제어 합니다. 특정 처리기를 자체 유효성 검사기를 사용 하 여 구성 된 경우이 설정은 무시 됩니다.  
   
  \<system.identityModel>  
 \<identityConfiguration>  
@@ -39,15 +38,15 @@ ms.locfileid: "32756061"
   
 |특성|설명|  
 |---------------|-----------------|  
-|certificateValidationMode|<xref:System.ServiceModel.Security.X509CertificateValidationMode> X.509 인증서에 사용할 유효성 검사 모드를 지정 하는 값입니다. 기본값은 "PeerOrChainTrust"입니다. 사용자 지정 유효성 검사기를 지정 하려면이 특성을 "Custom"으로 설정 하 고 사용 하 여 유효성 검사기를 지정 된 [ \<certificateValidator >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidator.md) 요소입니다. 선택 사항입니다.|  
-|revocationMode|<xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> X.509 인증서에 대해 사용 하는 해지 모드를 지정 하는 값입니다. 기본값은 "Online"입니다. 선택 사항입니다.|  
-|trustedStoreLocation|A <xref:System.Security.Cryptography.X509Certificates.StoreLocation> X.509 인증서 저장소를 지정 하는 값입니다. 기본값은 "LocalMachine"입니다. 선택 사항입니다.|  
+|certificateValidationMode|<xref:System.ServiceModel.Security.X509CertificateValidationMode> 사용할 X.509 인증서의 유효성 검사 모드를 지정 하는 값입니다. 기본값은 "PeerOrChainTrust"입니다. 사용자 지정 유효성 검사기를 지정 하려면이 특성을 "Custom"으로 설정 하 고 사용 하 여 유효성 검사기를 지정 합니다 [ \<certificateValidator >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidator.md) 요소입니다. 선택 사항입니다.|  
+|revocationMode|<xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> 사용할 X.509 인증서의 해지 모드를 지정 하는 값입니다. 기본값은 "Online"입니다. 선택 사항입니다.|  
+|trustedStoreLocation|<xref:System.Security.Cryptography.X509Certificates.StoreLocation> X.509 인증서 저장소를 지정 하는 값입니다. 기본값은 "LocalMachine"입니다. 선택 사항입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<certificateValidator >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidator.md)|인증서 유효성 검사에 대 한 사용자 지정 형식을 지정합니다. 이 이와 같은 경우에 사용 되는 `certificateValidationMode` 특성에는 [ \<certificateValidation >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) "Custom"으로 설정 된 합니다.|  
+|[\<certificateValidator >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidator.md)|인증서 유효성 검사에 대 한 사용자 지정 형식을 지정합니다. 이 이와 같은 경우에 사용 됩니다 합니다 `certificateValidationMode` 특성을 [ \<certificateValidation >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) 요소 "Custom"으로 설정 됩니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -57,7 +56,7 @@ ms.locfileid: "32756061"
 |[\<securityTokenHandlerConfiguration >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|구성 컬렉션의 보안 토큰 처리기를 제공합니다.|  
   
 ## <a name="remarks"></a>설명  
- A `<certificateValidation>` 에서 서비스 수준에서 요소를 지정할 수 있습니다는 `<identityConfiguration>` 요소 또는 보안 토큰 처리기 컬렉션 수준 아래에 `<securityTokenHandlerConfiguration>` 요소입니다. 서비스에 지정 된 토큰 처리기 컬렉션에 대 한 설정을 재정의 합니다. 일부 토큰 처리기에는 구성에서 인증서 유효성 검사 설정을 지정할 수 있습니다. 서비스 수준에서 및 보안 토큰 처리기 컬렉션에 개별 토큰 처리기의 설정을 지정 된 재정의합니다.  
+ `<certificateValidation>` 요소 아래에 있는 서비스 수준에서 지정할 수 있습니다 합니다 `<identityConfiguration>` 요소 또는 보안 토큰 처리기 컬렉션 수준에서는 `<securityTokenHandlerConfiguration>` 요소입니다. 서비스에 지정 된 토큰 처리기 컬렉션의 설정을 무시 합니다. 일부 토큰 처리기를 사용 하면 구성에서 인증서 유효성 검사 설정을 지정할 수 있습니다. 서비스 수준 및 보안 토큰 처리기 컬렉션의 개별 토큰 처리기의 설정을 지정 된 재정의합니다.  
   
 ## <a name="example"></a>예제  
   

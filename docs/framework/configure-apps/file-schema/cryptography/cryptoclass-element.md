@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 728fff7b8626e227e692c713f4cb05049c14a9f1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e74cc5fa99473562b158cd5068fb8bbaeb6a4a17
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32742759"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47083915"
 ---
 # <a name="ltcryptoclassgt-element"></a>&lt;cryptoClass&gt; 요소
 [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) 요소에 있는 이름에 매핑되는 암호화 클래스가 포함되어 있습니다.  
@@ -41,7 +40,7 @@ ms.locfileid: "32742759"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`customClassName`|필수 특성입니다.<br /><br /> 암호화 클래스에 대 한 정보를 포함합니다. 클래스에 대 한 간단한 이름을 제공 하기 위해이 특성을 사용 합니다. 에 지정 된 요구 사항을 충족 하는 문자열을 지정 해야 [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
+|`customClassName`|필수 특성입니다.<br /><br /> 암호화 클래스에 대 한 정보를 포함합니다. 클래스에 대 한 짧은 이름을 제공 하기 위해이 특성을 사용 합니다. 에 지정 된 요구 사항을 충족 하는 문자열을 지정 해야 합니다 [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -57,7 +56,7 @@ ms.locfileid: "32742759"
 |`mscorlib`|[\<cryptographySettings>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md) 요소가 포함되어 있습니다.|  
   
 ## <a name="example"></a>예제  
- 다음 방법을 보여 주는 예제는  **\<cryptoClass >** 암호화 클래스를 참조 하 고 런타임을 구성 하는 요소입니다. "RSA" 문자열을 전달할 수 있습니다는 <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> 메서드 및 사용법은 <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> 반환 하는 메서드는 `MyCryptoRSAClass` 개체입니다.  
+ 다음 방법을 보여 주는 예제는  **\<cryptoClass >** 암호화 클래스를 참조 하 고 런타임 구성 요소입니다. "RSA" 문자열을 전달할 수 있습니다는 <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> 메서드 및 사용법을 <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> 반환 하는 방법을 `MyCryptoRSAClass` 개체입니다.  
   
 ```xml  
 <configuration>  

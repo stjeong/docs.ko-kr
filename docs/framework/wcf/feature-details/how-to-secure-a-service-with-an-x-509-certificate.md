@@ -6,22 +6,21 @@ dev_langs:
 - vb
 ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 73fd9919d1403ef592e5b81c11b6eb659baea669
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1c5ab5e76ebed549df09b365a5a271f81003a517
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33493044"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47073556"
 ---
 # <a name="how-to-secure-a-service-with-an-x509-certificate"></a>방법: X.509 인증서를 사용하여 서비스에 보안 설정
-X.509 인증서로 서비스를 보안은 대부분의 바인딩은 Windows Communication Foundation (WCF)에서 사용 하는 기본 기술입니다. 이 항목에서는 X.509 인증서와 함께 자체 호스팅된 서비스를 구성하는 단계에 대해 설명합니다.  
+X.509 인증서를 사용 하 여 서비스를 보안은 대부분의 바인딩은 Windows Communication Foundation (WCF)에서 사용 하는 기본 기술입니다. 이 항목에서는 X.509 인증서와 함께 자체 호스팅된 서비스를 구성하는 단계에 대해 설명합니다.  
   
- 필수 구성 요소는 서버를 인증하는 데 사용할 수 있는 유효한 인증서입니다. 인증서는 신뢰할 수 있는 인증 기관에 의해 서버에 발급되어야 합니다. 인증서가 유효하지 않은 경우, 서비스를 사용하려고 시도하는 클라이언트에서 해당 서비스를 신뢰할 수 없으며, 결과적으로 연결이 되지 않습니다. 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 [인증서 작업](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.  
+ 필수 구성 요소는 서버를 인증하는 데 사용할 수 있는 유효한 인증서입니다. 인증서는 신뢰할 수 있는 인증 기관에 의해 서버에 발급되어야 합니다. 인증서가 유효하지 않은 경우, 서비스를 사용하려고 시도하는 클라이언트에서 해당 서비스를 신뢰할 수 없으며, 결과적으로 연결이 되지 않습니다. 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.  
   
 ### <a name="to-configure-a-service-with-a-certificate-using-code"></a>코드를 사용하여 인증서와 함께 서비스를 구성하려면  
   
-1.  서비스 계약과 구현된 서비스를 만듭니다. 자세한 내용은 참조 [서비스 디자인 및 구현](../../../../docs/framework/wcf/designing-and-implementing-services.md)합니다.  
+1.  서비스 계약과 구현된 서비스를 만듭니다. 자세한 내용은 [서비스 디자인 및 구현](../../../../docs/framework/wcf/designing-and-implementing-services.md)합니다.  
   
 2.  다음 코드에서처럼 <xref:System.ServiceModel.WSHttpBinding> 클래스의 인스턴스를 만들고, 보안 모드를 <xref:System.ServiceModel.SecurityMode.Message>로 설정합니다.  
   
@@ -33,7 +32,7 @@ X.509 인증서로 서비스를 보안은 대부분의 바인딩은 Windows Comm
      [!code-csharp[C_SecureWithCertificate#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#2)]
      [!code-vb[C_SecureWithCertificate#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#2)]  
   
-4.  서비스의 기본 주소에 대해 <xref:System.Uri> 클래스의 인스턴스를 만듭니다. 때문에 `WSHttpBinding` 사용 하 여 해당 스키마와 함께 HTTP 전송의 식별자 URI (Uniform Resource)을 시작 해야 합니다 또는 Windows Communication Foundation (WCF)는 서비스가 열릴 때 예외가 throw 됩니다.  
+4.  서비스의 기본 주소에 대해 <xref:System.Uri> 클래스의 인스턴스를 만듭니다. 때문에 `WSHttpBinding` 사용 하 여 해당 스키마와 함께 HTTP 전송에는 리소스 URI (Uniform Identifier)를 시작 해야 합니다 또는 Windows Communication Foundation (WCF) 서비스를 열 때 예외가 throw 됩니다.  
   
      [!code-csharp[C_SecureWithCertificate#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#3)]
      [!code-vb[C_SecureWithCertificate#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#3)]  
@@ -43,7 +42,7 @@ X.509 인증서로 서비스를 보안은 대부분의 바인딩은 Windows Comm
      [!code-csharp[C_SecureWithCertificate#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#4)]
      [!code-vb[C_SecureWithCertificate#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#4)]  
   
-6.  <xref:System.ServiceModel.Description.ServiceEndpoint> 메서드를 사용하여 <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint%2A>를 서비스에 추가합니다. 다음 코드에서처럼 계약, 바인딩 및 끝점 주소를 생성자에 전달합니다.  
+6.  <xref:System.ServiceModel.Description.ServiceEndpoint> 메서드를 사용하여 <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint%2A>를 서비스에 추가합니다. 다음 코드에서처럼 계약, 바인딩 및 엔드포인트 주소를 생성자에 전달합니다.  
   
      [!code-csharp[C_SecureWithCertificate#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#5)]
      [!code-vb[C_SecureWithCertificate#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#5)]  

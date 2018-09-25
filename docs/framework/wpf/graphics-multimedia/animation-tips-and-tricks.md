@@ -15,11 +15,11 @@ helpviewer_keywords:
 - animations [WPF], use of system resources
 ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
 ms.openlocfilehash: df4aa7f3bf046ec871333f665ab77fa460c4095c
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46586460"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47088323"
 ---
 # <a name="animation-tips-and-tricks"></a>애니메이션에 대한 유용한 정보
 애니메이션을 사용할 때 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], 팁 가지 및 애니메이션을 만들 수 있는 트릭 더 잘 수행 줄이도록 하 합니다.  

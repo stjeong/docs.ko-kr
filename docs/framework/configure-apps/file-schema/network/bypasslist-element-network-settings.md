@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 2d2076ee5e95ab722fe828ee625392671a6281c1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 3ca7ba9b0e534b5806570580b207da5314243d8f
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32743903"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47109042"
 ---
 # <a name="ltbypasslistgt-element-network-settings"></a>&lt;bypasslist&gt; 요소 (네트워크 설정)
 프록시를 사용 하지 않는 주소를 설명 하는 정규식 집합을 제공 합니다.  
@@ -43,7 +42,7 @@ ms.locfileid: "32743903"
   
 |**요소**|**설명**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md)|프록시 무시 목록에 IP 주소 또는 DNS 이름을 추가합니다.|  
+|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md)|프록시 무시 목록에는 IP 주소 또는 DNS 이름을 추가합니다.|  
 |[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-bypasslist-network-settings.md)|무시 목록을 지웁니다.|  
 |[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-bypasslist-network-settings.md)|프록시 무시 목록에서 IP 주소 또는 DNS 이름을 제거합니다.|  
   
@@ -54,17 +53,17 @@ ms.locfileid: "32743903"
 |[defaultProxy](../../../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md)|HTTP(Hypertext Transfer Protocol) 프록시 서버를 구성합니다.|  
   
 ## <a name="remarks"></a>설명  
- 무시 목록 Uri를 설명 하는 정규식을 포함 하는 <xref:System.Net.WebRequest> 인스턴스에서 직접 대신의 프록시 서버를 통해 액세스 합니다.  
+ 바이패스 목록에는 Uri를 설명 하는 정규식을 포함 하는 <xref:System.Net.WebRequest> 인스턴스에서 직접 대신의 프록시 서버를 통해 액세스 합니다.  
   
- 이 요소에 대 한 정규식을 지정 하는 경우 주의 해야 합니다. 정규식 "[a-z] +\\.contoso\\.com" contoso.com 도메인에 호스트 된 일치 항목에도 모든 호스트 contoso.com.cpandl.com 도메인에 일치 합니다. Contoso.com 도메인의 호스트에만 일치 하는 앵커 ("$")를 사용 하 여: "[a-z] +\\.contoso\\.com$"입니다.  
+ 이 요소에 대 한 정규식을 지정 하는 경우 주의 해야 합니다. 정규식 "[a-z] +\\.contoso\\.com" contoso.com 도메인에 호스트 된 일치 항목의 모든 호스트 contoso.com.cpandl.com 도메인에 일치 합니다. Contoso.com 도메인의 호스트 에서만 일치 하는 앵커 ("$") 사용 하 여: "[a-z] +\\.contoso\\.com$"입니다.  
   
- 정규식에 대 한 자세한 내용은 다음을 참조 합니다. [.NET framework 정규식](../../../../../docs/standard/base-types/regular-expressions.md)합니다.  
+ 정규식에 대 한 자세한 내용은 다음을 참조 하세요. [.NET framework 정규식](../../../../../docs/standard/base-types/regular-expressions.md)합니다.  
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 무시 목록에 두 개의 주소를 추가합니다. 첫 번째; contoso.com 도메인의 모든 서버에 대 한 프록시를 무시합니다. 두 번째 192.168로 시작 하는 IP 주소가 속해 있는 모든 서버에 대 한 프록시를 무시 합니다.  
+ 다음 예제에서는 바이패스 목록에 두 개의 주소를 추가합니다. 첫 번째는 contoso.com 도메인의 모든 서버에 대 한 프록시를 무시합니다. 두 번째 192.168 사용 하 여 모든 서버의 IP 주소가 시작에 대 한 프록시를 무시 합니다.  
   
 ```xml  
 <configuration>  

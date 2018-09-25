@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 471e36bb584164b851e7a06c0e682ba9872f7910
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 4a9bcc6cd5d2bbf30f463da0a51e1bccbcd5a3f1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32742902"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47083889"
 ---
 # <a name="ltaddgt-element-for-authenticationmodules-network-settings"></a>&lt;추가&gt; authenticationModules (네트워크 설정)에 대 한 요소
-응용 프로그램에 사용자 지정 인증 모듈을 추가합니다.  
+응용 프로그램에 인증 모듈을 추가합니다.  
   
  \<configuration>  
 \<system.net>  
@@ -43,7 +42,7 @@ ms.locfileid: "32742902"
   
 |**특성**|**설명**|  
 |-------------------|---------------------|  
-|`type`|정규화 된 형식 이름 (으로 표시는 <xref:System.Type.FullName%2A> 속성)와 어셈블리 이름 (가리키는 <xref:System.Reflection.Assembly.FullName%2A> 속성)을 쉼표로 구분 합니다.|  
+|`type`|정규화 된 형식 이름을 (나타난를 <xref:System.Type.FullName%2A> 속성)와 어셈블리 이름 (나타난는 <xref:System.Reflection.Assembly.FullName%2A> 속성)을 쉼표로 구분 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -57,13 +56,13 @@ ms.locfileid: "32742902"
 ## <a name="remarks"></a>설명  
  `add` 요소는 등록된 인증 모듈 목록의 끝에 인증 모듈을 추가합니다. 인증 모듈 목록에 추가 된 순서 대로 호출 됩니다.  
   
- 에 대 한 값은 `type` 특성 유효한 형식 이름 및 쉼표로 구분 하 여 해당 어셈블리 이름 이어야 합니다.  
+ 에 대 한 값을 `type` 특성은 유효한 형식 이름 및 쉼표로 구분 하 여 해당 어셈블리 이름 이어야 합니다.  
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예에서는 기본 인증 모듈을 사용 합니다. 지정된 된 모듈에 대 한 올바른 값으로 PublicKeyToken 및 버전에 대 한 값 바꿔야 합니다.  
+ 다음 예제에서는 기본 인증 모듈입니다. 지정된 된 모듈에 대 한 올바른 값을 사용 하 여 PublicKeyToken 및 버전에 대 한 값을 바꿔야 합니다.  
   
 ```xml  
 <configuration>  

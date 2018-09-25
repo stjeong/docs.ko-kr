@@ -10,11 +10,11 @@ helpviewer_keywords:
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 ms.openlocfilehash: fe200add4e29fe4bbe0fdf335dcd94107b8ff1eb
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46567623"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47113571"
 ---
 # <a name="return-statement-visual-basic"></a>Return 문(Visual Basic)
 호출한 코드로 제어가 되돌아갑니다를 `Function`, `Sub`를 `Get`를 `Set`, 또는 `Operator` 프로시저입니다.  

@@ -3,13 +3,12 @@ title: 전송 보안 포함한 기본 바인딩
 ms.date: 03/30/2017
 ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 69257099338ae2d50c5ea184c0800d0057e020f4
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 6f68512089d6ab975557f58e883215ad70c3cc04
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46577832"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47088401"
 ---
 # <a name="basicbinding-with-transport-security"></a>전송 보안 포함한 기본 바인딩
 이 샘플에서는 기본 바인딩이 있는 SSL 전송 보안을 사용하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다.  

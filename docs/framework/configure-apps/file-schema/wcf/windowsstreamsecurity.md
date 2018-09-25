@@ -3,13 +3,12 @@ title: '&lt;windowsStreamSecurity&gt;'
 ms.date: 03/30/2017
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: a089a6fb61e8f7fac4116b2280a5c2fe0b703f94
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6c1253e6f402da6b818a4438142e122f8b31809c
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32755112"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47084262"
 ---
 # <a name="ltwindowsstreamsecuritygt"></a>&lt;windowsStreamSecurity&gt;
 사용자 지정의 바인딩에 대한 Windows 스트림 보안 설정을 지정합니다.  
@@ -45,7 +44,7 @@ ms.locfileid: "32755112"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|사용자 지정 바인딩의 모든 바인딩 기능을 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- TCP 및 명명된 파이프와 같은 스트림 지향 프로토콜을 사용하는 전송은 스트림 기반 전송 업그레이드를 지원합니다. 특히 WCF는 보안 업그레이드를 제공합니다. 이 전송 보안의 구성은 뿐이 구성 요소에 의해 캡슐화 됩니다 [ \<sslStreamSecurity >](../../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md), 구성 및 사용자 지정 바인딩에 추가할 수 있으며  
+ TCP 및 명명된 파이프와 같은 스트림 지향 프로토콜을 사용하는 전송은 스트림 기반 전송 업그레이드를 지원합니다. 특히 WCF는 보안 업그레이드를 제공합니다. 이 전송 보안의 구성은이 구성 요소에 캡슐화 [ \<sslStreamSecurity >](../../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md), 구성 및 사용자 지정 바인딩에 추가할 수 있는  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Channels.CustomBinding>  

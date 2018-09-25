@@ -1,5 +1,5 @@
 ---
-title: '&lt;수신기&gt; 요소에 대 한 &lt;소스&gt;'
+title: '&lt;수신기&gt; 요소에 대 한 &lt;원본&gt;'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners
@@ -9,21 +9,20 @@ helpviewer_keywords:
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: a711b8d6bfd5b6d73d3240cb84810841bdc5a2b6
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 86b85779f4eff72e8ab910a5ccd32fd369270509
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746841"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47085684"
 ---
-# <a name="ltlistenersgt-element-for-ltsourcegt"></a>&lt;수신기&gt; 요소에 대 한 &lt;소스&gt;
-추가 또는 제거의 수신기는 <xref:System.Diagnostics.TraceSource.Listeners%2A> 에 대 한 컬렉션은 <xref:System.Diagnostics.TraceSource>합니다. 수신기는 추적 출력을 로그, 창 또는 텍스트 파일 등의 적절 한 대상에 지시합니다.  
+# <a name="ltlistenersgt-element-for-ltsourcegt"></a>&lt;수신기&gt; 요소에 대 한 &lt;원본&gt;
+추가 하거나에서 수신기를 제거 합니다 <xref:System.Diagnostics.TraceSource.Listeners%2A> 컬렉션에 대 한는 <xref:System.Diagnostics.TraceSource>합니다. 수신기는 추적 출력을 로그, 창 또는 텍스트 파일과 같은 적절 한 대상에 전달합니다.  
   
  \<configuration>  
 \<system.diagnostics >  
-\<소스 >  
-\<소스 >  
+\<원본 >  
+\<원본 >  
 \<수신기 > 요소  
   
 ## <a name="syntax"></a>구문  
@@ -47,7 +46,7 @@ ms.locfileid: "32746841"
 |요소|설명|  
 |-------------|-----------------|  
 |[\<add>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-source.md)|`Listeners` 컬렉션에 수신기를 추가합니다.|  
-|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-source.md)|수신기를 제거는 `Listeners` 컬렉션입니다.|  
+|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-source.md)|수신기를 제거 합니다 `Listeners` 컬렉션입니다.|  
 |[\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)|추적 소스의 `Listeners` 컬렉션을 지웁니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
@@ -62,10 +61,10 @@ ms.locfileid: "32746841"
 ## <a name="remarks"></a>설명  
   
 ## <a name="configuration-file"></a>구성 파일  
- 이 요소는 응용 프로그램 구성 파일 및 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
+ 이 요소는 응용 프로그램 구성 파일과 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 `<listeners>` 콘솔 추적 수신기를 추가 하는 요소는 `mySource` 소스 기본 추적 수신기를 제거 하 고 있습니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 `<listeners>` 콘솔 추적 수신기를 추가 하는 요소는 `mySource` 원본 기본 추적 수신기를 제거 하려면.  
   
 ```xml  
 <configuration>  

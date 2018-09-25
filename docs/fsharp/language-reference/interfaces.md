@@ -3,11 +3,11 @@ title: 인터페이스(F#)
 description: 'F # 인터페이스는 다른 클래스에서 구현 관련된 멤버의 집합을 지정 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 6d7f8ee9ea17d2294933f88577c30a96975ae5d4
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46532336"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47115115"
 ---
 # <a name="interfaces"></a>인터페이스
 

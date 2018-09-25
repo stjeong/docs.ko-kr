@@ -3,11 +3,11 @@ title: '방법: 워크플로 응용 프로그램에서 서비스 액세스'
 ms.date: 03/30/2017
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
 ms.openlocfilehash: 460e5d0f1bbfdebf885176ed9fcc336b76731edd
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47027336"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47075247"
 ---
 # <a name="how-to-access-a-service-from-a-workflow-application"></a>방법: 워크플로 응용 프로그램에서 서비스 액세스
 이 항목에서는 워크플로 콘솔 응용 프로그램에서 워크플로 서비스를 호출하는 방법에 대해 설명합니다. 완료에 종속 합니다 [방법: 메시징 작업을 사용 하 여 워크플로 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md) 항목. 이 항목에서는 워크플로 응용 프로그램에서 워크플로 서비스를 호출 하는 방법을 설명 합니다 하지만 동일한 방법은 워크플로 응용 프로그램에서 모든 Windows Communication Foundation (WCF) 서비스를 호출 하려면 사용할 수 있습니다.
