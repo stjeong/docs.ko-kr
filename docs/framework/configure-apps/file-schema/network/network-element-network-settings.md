@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: e6cf78b06d5afe950dd97381e99ba9eb77f818ca
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 96a6c8a3c2d7114004278d3c40daf4d01b6c1d90
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874561"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47170024"
 ---
 # <a name="ltnetworkgt-element-network-settings"></a>&lt;네트워크&gt; 요소 (네트워크 설정)
 외부 전송 프로토콜 SMTP (Simple Mail) 서버에 대 한 네트워크 옵션을 구성 합니다.  
@@ -91,7 +90,7 @@ ms.locfileid: "37874561"
   
  합니다 <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> 속성의 현재 값을 가져오는 데 사용할 수는 `enableSsl` 해당 구성 파일에서 특성입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 기본 네트워크 자격 증명을 사용 하 여 전자 메일을 보내는 해당 SMTP 매개 변수를 지정 합니다.  
   
 ```xml  

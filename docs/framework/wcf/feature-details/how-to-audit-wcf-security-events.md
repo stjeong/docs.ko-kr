@@ -8,13 +8,12 @@ helpviewer_keywords:
 - security [WCF], auditing events
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 35d884c0e772deafdaa2326a47903e90691f8106
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 1efd651751e0f81b5125b64f81f7d2087d002d8d
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45969667"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47170628"
 ---
 # <a name="how-to-audit-windows-communication-foundation-security-events"></a>방법: Windows Communication Foundation 보안 이벤트 감사
 Windows Communication Foundation (WCF)를 사용 하면 Windows 이벤트 뷰어를 사용 하 여 볼 수 있는 Windows 이벤트 로그에 보안 이벤트를 기록할 수 있습니다. 이 항목에서는 보안 이벤트를 기록하도록 응용 프로그램을 설정하는 방법에 대해 설명합니다. WCF 감사 하는 방법에 대 한 자세한 내용은 참조 하세요. [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)합니다.  

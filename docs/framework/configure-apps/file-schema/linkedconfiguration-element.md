@@ -13,13 +13,12 @@ helpviewer_keywords:
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 71769efa1233fc8a693219dc02ae56ea39c164e7
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c5186aa94993ba551252db6fef55853b5b554789
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32743799"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47170823"
 ---
 # <a name="linkedconfiguration-element"></a>\<linkedConfiguration > 요소
 
@@ -39,7 +38,7 @@ ms.locfileid: "32743799"
 
 |           | 설명 |
 | --------- | ----------- |
-| **href**  | 필수 특성입니다.<br><br>포함할 구성 파일의 URL입니다. 에 대 한 지원 되는 유일한 형식은 **href** 특성은 `file://`합니다. 로컬 파일과 UNC 파일 지원 됩니다. |
+| **href**  | 필수 특성입니다.<br><br>포함할 구성 파일의 URL입니다. 형식만 지원 합니다 **href** 특성이 `file://`합니다. 로컬 파일 및 UNC 파일 지원 됩니다. |
 
 ## <a name="parent-element"></a>부모 요소
 
@@ -53,28 +52,28 @@ ms.locfileid: "32743799"
 
 ## <a name="remarks"></a>설명
 
-**\<linkedConfiguration >** 요소 구성 요소 어셈블리에 대 한 서비스를 단순화 합니다. 어셈블리를 사용 하는 응용 프로그램의 구성 파일 하나 이상의 응용 프로그램에서 잘 알려진 위치에 있는 구성 파일을 포함 하는 어셈블리를 사용 하는 경우 사용할 수는  **\<linkedConfiguration >** 직접 구성 정보를 포함 하는 것 보다는 어셈블리 구성 파일을 포함 하는 요소입니다. 구성 요소 어셈블리를 서비스를 제공 하는 경우 어셈블리를 사용 하는 모든 응용 프로그램에 업데이트 된 구성 정보를 제공 일반적인 구성 파일을 업데이트 합니다.
+합니다  **\<linkedConfiguration >** 요소 구성 요소 어셈블리에 대 한 서비스를 단순화 합니다. 하나 이상의 응용 프로그램에서 잘 알려진 위치에 있는 구성 파일을 포함 하는 어셈블리를 사용 하는 경우 어셈블리를 사용 하는 응용 프로그램의 구성 파일에 사용할 수는  **\<linkedConfiguration >** 구성 정보를 직접 포함 하지 않고 어셈블리 구성 파일을 포함 하는 요소입니다. 서비스는 구성 요소 어셈블리를 제공 하는 경우 어셈블리를 사용 하는 모든 응용 프로그램에 업데이트 된 구성 정보를 제공 공용 구성 파일을 업데이트 합니다.
 
 > [!NOTE]
-> **\<linkedConfiguration >** Windows-side-by-side 매니페스트도 응용 프로그램에 대 한 요소가 지원 되지 않습니다.
+> 합니다  **\<linkedConfiguration >** Windows side-by-side-매니페스트를 사용 하 여 응용 프로그램에 대 한 요소가 지원 되지 않습니다.
 
-연결 된 구성 파일의 사용을 통제 하는 다음 규칙:
+다음 규칙은 연결 된 구성 파일의 사용을 통제:
 
-- 만 포함 된 구성 파일에서 설정을 로더 바인딩 정책에 영향을 하 게 되 고 로더에 의해서만 사용 됩니다. 포함 된 구성 파일에는 바인딩 정책 이외의 설정이 있을 수 있지만 해당 설정에 영향을 줄 수 없습니다.
+- 포함 된 구성 파일에만 로더 바인딩 정책에 영향을 설정과 로더만 사용 됩니다. 포함 된 구성 파일 설정 바인딩 정책 이외의 수 있지만 이러한 설정이 아무런 효과가 없습니다.
 
-- 에 대 한 지원 되는 유일한 형식은 `href` 특성은 `file://`합니다. 로컬 파일과 UNC 파일 지원 됩니다.
+- 형식만 지원 합니다 `href` 특성은 `file://`합니다. 로컬 파일 및 UNC 파일 지원 됩니다.
 
-- 각 구성 파일에 연결 된 구성 수에 제한이 없습니다.
+- 구성 파일 마다 연결 된 구성 수에 제한이 없습니다.
 
-- 모든 연결 된 구성 파일의 동작과 비슷하지만 한 파일로 병합 됩니다는 `#include` C/c + +에서 지시문입니다.
+- 모든 연결 된 구성 파일의 동작과 비슷하게 하나의 파일로 병합 되는 `#include` C/c + +에서 지시문입니다.
 
-- **\<linkedConfiguration >** 요소를 응용 프로그램 구성 파일에만 사용할 수 있습니다.;에서 무시 됩니다 *Machine.config*합니다.
+- 합니다  **\<linkedConfiguration >** 요소를 응용 프로그램 구성 파일에만 사용할 수는;에서 무시 됩니다 *Machine.config*합니다.
 
-- 순환 참조를 감지 하 여 종료 합니다. 즉, 하는 경우는  **\<linkedConfiguration >** 루프를 형성 하는 일련의 구성 파일의 요소, 루프 감지 되 고 중지 합니다.
+- 순환 참조가 검색 하 고 종료 됩니다. 즉, 경우 합니다  **\<linkedConfiguration >** 루프를 형성 하는 일련의 구성 파일의 요소, 루프 검색 되 고 중지 됩니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에는 로컬 하드 디스크에서 구성 파일을 포함 하는 방법을 보여 줍니다.
+다음 예제에서는 구성 파일을 로컬 하드 디스크를 포함 하는 방법을 보여 줍니다.
 
 ```xml
 <configuration>
@@ -87,4 +86,4 @@ ms.locfileid: "32743799"
 ## <a name="see-also"></a>참고자료
 
 [**\<assemblyBinding >** 요소](~/docs/framework/configure-apps/file-schema/assemblybinding-element-for-configuration.md)   
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+[.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

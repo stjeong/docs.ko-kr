@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows Forms Designer [Windows Forms], interoperability with WPF
 - interoperability [WPF]
 ms.assetid: 03c85dce-26ad-44cd-bc1d-8e0cb56de096
-ms.openlocfilehash: 30b84f05898f823227415c410dc7ba5f89d58664
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: be925bdceea3dd01c568d85fe025d6e037066454
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504707"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47170472"
 ---
 # <a name="using-wpf-controls"></a>WPF 컨트롤 사용
 Windows Forms 기반 응용 프로그램에서 Windows Presentation Foundation (WPF) 컨트롤을 사용할 수 있습니다. 이러한 옵션은 두 가지 서로 다른 뷰 기술, 상호 운용 될 원활 하 게 합니다.  
@@ -24,16 +24,10 @@ Windows Forms 기반 응용 프로그램에서 Windows Presentation Foundation (
  Windows Form에 Windows Presentation Foundation 컨트롤을 복사 하는 방법을 보여 줍니다.  
   
  [연습: 디자인 타임에 Windows Forms에서 WPF 콘텐츠 정렬](../../../../docs/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time.md)  
- Windows Presentation Foundation 컨트롤을 정렬 하려면 고정 및 맞춤선 등의 Windows Forms 레이아웃 기능을 사용 하는 방법을 보여 줍니다.  
-  
- [연습: 디자인 타임에 호스팅된 WPF 요소의 속성 변경](../../../../docs/framework/winforms/advanced/walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time.md)  
- Windows Forms 디자이너 간의 워크플로 표시 하며 [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] WPF 컨트롤의 속성을 변경 합니다.  
+ Windows Presentation Foundation 컨트롤을 정렬 하려면 고정 및 맞춤선 등의 Windows Forms 레이아웃 기능을 사용 하는 방법을 보여 줍니다.
   
  [연습: 디자인 타임에 Windows Forms에서 새 WPF 콘텐츠 만들기](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)  
- Windows Forms 기반 응용 프로그램에서 사용 하기 위해 Windows Presentation Foundation 컨트롤을 만드는 방법을 보여 줍니다.  
-  
- [연습: ElementHost 컨트롤을 복사하여 다른 Windows Forms에 붙여넣기](../../../../docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md)  
- 하나의 Windows Form에서 Windows Presentation Foundation 컨트롤을 복사 하는 방법을 보여 줍니다.  
+ Windows Forms 기반 응용 프로그램에서 사용 하기 위해 Windows Presentation Foundation 컨트롤을 만드는 방법을 보여 줍니다.
   
  [연습: 디자인 타임에 Windows Forms에서 WPF 콘텐츠 할당](../../../../docs/framework/winforms/advanced/walkthrough-assigning-wpf-content-on-windows-forms-at-design-time.md)  
  폼에 표시 하려는 Windows Presentation Foundation 컨트롤 유형을 선택 하는 방법을 보여 줍니다.  
