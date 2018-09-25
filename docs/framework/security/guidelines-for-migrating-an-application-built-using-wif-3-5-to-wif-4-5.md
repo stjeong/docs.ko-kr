@@ -3,13 +3,12 @@ title: WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마�
 ms.date: 03/30/2017
 ms.assetid: 7a32fe6e-5f68-4693-9371-19411fa8063c
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 5db0925900a357134cf0103bbebbf5c9aac9e688
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: ec66803edc21f186fa9a8c5bcb91b5181789893d
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43386867"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47086868"
 ---
 # <a name="guidelines-for-migrating-an-application-built-using-wif-35-to-wif-45"></a>WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침
 ## <a name="applies-to"></a>적용 대상  

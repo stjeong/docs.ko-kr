@@ -12,13 +12,12 @@ helpviewer_keywords:
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 40eda14d4d578f10a77aa06843abd48f58c55f6a
-ms.sourcegitcommit: 9e18e4a18284ae9e54c515e30d019c0bbff9cd37
+ms.openlocfilehash: d0da0fd2edae4687ea80b4a23cc82a25ead9cb7b
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37073023"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47112207"
 ---
 # <a name="ltremovegt-element-for-webrequestmodules-network-settings"></a>&lt;제거&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 사용자 지정 웹 요청 모듈을 제거합니다.  
@@ -43,7 +42,7 @@ ms.locfileid: "37073023"
   
 |**특성**|**설명**|  
 |-------------------|---------------------|  
-|`prefix`|이 웹 요청 모듈에서 처리 요청에 대 한 URI 접두사입니다.|  
+|`prefix`|이 웹 요청 모듈에서 처리 하는 요청에 대 한 URI 접두사입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -55,15 +54,15 @@ ms.locfileid: "37073023"
 |[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|네트워크 호스트에서 정보를 요청 하는 데는 모듈을 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `remove` 요소에 지정된 된 URI 접두사에 대 한 등록된 웹 요청 모듈 제거 합니다.  
+ `remove` 요소는 지정된 된 URI 접두사에 대 한 등록 된 웹 요청 모듈을 제거 합니다.  
   
- 에 대 한 값은 `prefix` 특성에는 예를 들어 "http"는 유효한 URI의 선행 문자를 사용 해야 합니다. 또는 "`http://www.contoso.com` "입니다.  
+ 에 대 한 값을 `prefix` 특성에는 유효한 URI-예를 들어, "http"의 선행 문자를 사용 해야 합니다. 또는 "`http://www.contoso.com` "입니다.  
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
- 다음 예제에서는 HTTP에 대 한 기존 웹 요청 모듈을 제거 하 고 만든 다음 www.contoso.com에 대 한 HTTP 요청에 대 한 새 사용자 지정 웹 요청 모듈을 등록 합니다.  
+## <a name="example"></a>예제  
+ 다음 예제에서는 HTTP에 대 한 기존 웹 요청 모듈을 제거 하 고 www.contoso.com에 대 한 HTTP 요청에 대 한 새 사용자 지정 웹 요청 모듈을 등록 합니다.  
   
 ```xml  
 <configuration>  

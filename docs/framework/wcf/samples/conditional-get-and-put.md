@@ -3,11 +3,11 @@ title: 조건부 Get과 Put
 ms.date: 03/30/2017
 ms.assetid: 3d22067f-57b8-4e0f-a571-a694512187ae
 ms.openlocfilehash: 29819f89327128cdd71cc89eb8d14126522dc2df
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46580397"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47080196"
 ---
 # <a name="conditional-get-and-put"></a>조건부 Get과 Put
 이 샘플에서는 WCF REST 프로그래밍 모델을 위한 새 조건부 검색 및 업데이트 API를 사용하는 방법을 보여 줍니다. 조건부 검색 및 업데이트에 가장 적합 한 되므로 리소스 지향 및 REST 서비스에서이 샘플은 확장 합니다 [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) 샘플. 조건부 검색 및 업데이트에 대 한 지원 추가에 중점을 두고이 샘플은 [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) 에 도입 된 새 Api를 사용 하는 샘플 [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)]합니다.  

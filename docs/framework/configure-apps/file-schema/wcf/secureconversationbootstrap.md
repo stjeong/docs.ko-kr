@@ -3,13 +3,12 @@ title: '&lt;secureConversationBootstrap&gt;'
 ms.date: 03/30/2017
 ms.assetid: 66b46f95-fa2d-4b5b-b6ce-0572ab0cdd50
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: f7eab333899f5fc379db8fb5683ea3d29d04943c
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 703e89342cbfd4a957c10419d6583e85ec6f6d2a
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32751599"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47079846"
 ---
 # <a name="ltsecureconversationbootstrapgt"></a>&lt;secureConversationBootstrap&gt;
 보안 대화 서비스 개시에 사용되는 기본값을 지정합니다.  
@@ -54,8 +53,8 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 |`authenticationMode`|게시자와 응답자 간에 SOAP 인증 모드가 사용되도록 지정합니다.<br /><br /> 기본값은 sspiNegotiated입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Configuration.AuthenticationMode> 형식입니다.|  
 |`defaultAlgorithmSuite`|보안 알고리즘 모음은 정형화, 다이제스트, 키 래핑, 시그니처, 암호화 및 키 파생 알고리즘과 같은 다양한 알고리즘을 정의합니다. 각 보안 알고리즘 모음은 이러한 다양한 매개 변수의 값을 정의합니다. 이러한 알고리즘을 통해 메시지 기반 보안이 구현됩니다.<br /><br /> 이 특성은 기본값과 다른 알고리즘 집합에 적합한 다른 플랫폼에서 작업할 때 사용됩니다. 이 설정을 수정하는 경우 관련 알고리즘의 장점과 단점을 파악해야 합니다. 이 특성은 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> 형식입니다. 기본값은 `Basic256`입니다.|  
 |`includeTimestamp`|각 메시지에 타임스탬프가 포함되는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
-|`keyEntropyMode`|메시지 보안 설정을 위한 키의 계산 방식을 지정합니다. 키는 클라이언트 키 자료만을 기반으로 하거나 서비스 키 자료만을 기반으로 하거나 두 가지의 조합을 기반으로 할 수 있습니다. 올바른 값은 다음과 같습니다.<br /><br /> -ClientEntropy: 세션 키를 기반으로 클라이언트 키 자료를 제공 합니다.<br />-ServerEntropy: 세션 키를 기반으로 서비스 키 자료를 제공 합니다.<br />-CombinedEntropy: 세션 키를 기반으로 클라이언트 및 서비스 제공 키 자료.<br /><br /> 기본값은 CombinedEntropy입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> 형식입니다.|  
-|`messageProtectionOrder`|메시지 수준 보안 알고리즘이 메시지에 적용되는 순서를 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -SignBeforeEncrypt: 먼저 서명 다음 암호화 합니다.<br />-SignBeforeEncryptAndEncryptSignature: 서명, 암호화 하 고 서명 암호화 합니다.<br />-EncryptBeforeSign: 먼저 암호화 한 다음 서명 합니다.<br /><br /> WS-Security 1.1과 함께 상호 인증서를 사용하는 경우 기본값은 SignBeforeEncryptAndEncryptSignature입니다.  WS-Security 1.0을 사용하는 경우 기본값은 SignBeforeEncrypt입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.MessageProtectionOrder> 형식입니다.|  
+|`keyEntropyMode`|메시지 보안 설정을 위한 키의 계산 방식을 지정합니다. 키는 클라이언트 키 자료만을 기반으로 하거나 서비스 키 자료만을 기반으로 하거나 두 가지의 조합을 기반으로 할 수 있습니다. 올바른 값은 다음과 같습니다.<br /><br /> -ClientEntropy: 세션 키를 기반으로 클라이언트 키 자료를 제공 합니다.<br />-ServerEntropy: 세션 키를 기반으로 서비스 키 자료를 제공 합니다.<br />-CombinedEntropy: 세션 키를 기반으로 클라이언트 및 서비스 키 자료를 제공 합니다.<br /><br /> 기본값은 CombinedEntropy입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> 형식입니다.|  
+|`messageProtectionOrder`|메시지 수준 보안 알고리즘이 메시지에 적용되는 순서를 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -SignBeforeEncrypt: 먼저, 로그인 한 다음 암호화 합니다.<br />-SignBeforeEncryptAndEncryptSignature: 서명, 암호화 하 고 서명을 암호화 합니다.<br />-EncryptBeforeSign: 먼저 암호화 한 다음 로그인 합니다.<br /><br /> WS-Security 1.1과 함께 상호 인증서를 사용하는 경우 기본값은 SignBeforeEncryptAndEncryptSignature입니다.  WS-Security 1.0을 사용하는 경우 기본값은 SignBeforeEncrypt입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.MessageProtectionOrder> 형식입니다.|  
 |`messageSecurityVersion`|사용되는 WS-Security 버전을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -WSSecurityJan2004<br />-WSSecurityXXX2005<br /><br /> 기본값은 WSSecurityXXX2005입니다. 이 특성은 <xref:System.ServiceModel.MessageSecurityVersion> 형식입니다.|  
 |`requireDerivedKeys`|키를 원본 증명 키에서 파생할 수 있는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |`requireSecurityContextCancellation`|더 이상 필요하지 않은 보안 컨텍스트를 취소 및 종료할지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  

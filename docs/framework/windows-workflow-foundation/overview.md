@@ -3,11 +3,11 @@ title: Windows Workflow 개요
 ms.date: 03/30/2017
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
 ms.openlocfilehash: a516f454abc81ae8f6f1c15c815fe2b671ecd98f
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46577889"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47082541"
 ---
 # <a name="windows-workflow-overview"></a>Windows Workflow 개요
 워크플로 호출 하는 elemental 단위의 집합인 *활동* 실제 프로세스를 설명 하는 모델로 저장 되는 합니다. 워크플로를 통해 단기 실행 작업과 장기 실행 작업의 실행 순서와 종속 관계를 설명할 수 있습니다. 이 작업은 모델을 시작부터 끝까지 통과하며 활동은 사람이 실행하거나 시스템 함수로 실행될 수 있습니다.  
