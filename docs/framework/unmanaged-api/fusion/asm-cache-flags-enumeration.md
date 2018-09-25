@@ -17,16 +17,16 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5b712c6ae5978e83dab085f48dd1fd572757384a
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46577548"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47107898"
 ---
-# <a name="asmcacheflags-enumeration"></a><span data-ttu-id="b6383-102">ASM_CACHE_FLAGS 열거형</span><span class="sxs-lookup"><span data-stu-id="b6383-102">ASM_CACHE_FLAGS Enumeration</span></span>
-<span data-ttu-id="b6383-103">표현 되는 어셈블리의 소스를 나타냅니다 [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) 전역 어셈블리 캐시에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-103">Indicates the source of an assembly that is represented by [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) in the global assembly cache.</span></span>  
+# <a name="asmcacheflags-enumeration"></a><span data-ttu-id="d835d-102">ASM_CACHE_FLAGS 열거형</span><span class="sxs-lookup"><span data-stu-id="d835d-102">ASM_CACHE_FLAGS Enumeration</span></span>
+<span data-ttu-id="d835d-103">표현 되는 어셈블리의 소스를 나타냅니다 [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) 전역 어셈블리 캐시에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-103">Indicates the source of an assembly that is represented by [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) in the global assembly cache.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b6383-104">구문</span><span class="sxs-lookup"><span data-stu-id="b6383-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d835d-104">구문</span><span class="sxs-lookup"><span data-stu-id="d835d-104">Syntax</span></span>  
   
 ```  
 typedef enum {  
@@ -38,26 +38,26 @@ typedef enum {
 } ASM_CACHE_FLAGS;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="b6383-105">멤버</span><span class="sxs-lookup"><span data-stu-id="b6383-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="d835d-105">멤버</span><span class="sxs-lookup"><span data-stu-id="d835d-105">Members</span></span>  
   
-|<span data-ttu-id="b6383-106">멤버</span><span class="sxs-lookup"><span data-stu-id="b6383-106">Member</span></span>|<span data-ttu-id="b6383-107">설명</span><span class="sxs-lookup"><span data-stu-id="b6383-107">Description</span></span>|  
+|<span data-ttu-id="d835d-106">멤버</span><span class="sxs-lookup"><span data-stu-id="d835d-106">Member</span></span>|<span data-ttu-id="d835d-107">설명</span><span class="sxs-lookup"><span data-stu-id="d835d-107">Description</span></span>|  
 |------------|-----------------|  
-|`ASM_CACHE_ZAP`|<span data-ttu-id="b6383-108">Ngen.exe를 사용 하 여 미리 컴파일된 어셈블리의 캐시를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-108">Enumerates the cache of precompiled assemblies by using Ngen.exe.</span></span>|  
-|`ASM_CACHE_GAC`|<span data-ttu-id="b6383-109">전역 어셈블리 캐시를 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-109">Enumerates the global assembly cache.</span></span>|  
-|`ASM_CACHE_DOWNLOAD`|<span data-ttu-id="b6383-110">요청 시 다운로드 또는 섀도 복사 된 어셈블리를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-110">Enumerates the assemblies that have been downloaded on demand or that have been shadow-copied.</span></span>|  
-|`ASM_CACHE_ROOT`|<span data-ttu-id="b6383-111">나타내는 합니다 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수는 CLR (공용 언어 런타임) 버전 2.0에 대 한 전역 어셈블리 캐시에 경로 반환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-111">Indicates that the [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) function should return the path to the global assembly cache for the common language runtime (CLR) version 2.0.</span></span> <span data-ttu-id="b6383-112">에 대 한 호출의 컨텍스트에서 에서만 의미가 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-112">Meaningful only in the context of a call to [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md).</span></span>|  
-|`ASM_CACHE_ROOT_EX`|<span data-ttu-id="b6383-113">나타내는 합니다 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수를 전역 어셈블리 캐시에 clr 버전 4에 경로 반환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-113">Indicates that the [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) function should return the path to the global assembly cache for CLR version 4.</span></span> <span data-ttu-id="b6383-114">에 대 한 호출의 컨텍스트에서 에서만 의미가 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b6383-114">Meaningful only in the context of a call to [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md).</span></span>|  
+|`ASM_CACHE_ZAP`|<span data-ttu-id="d835d-108">Ngen.exe를 사용 하 여 미리 컴파일된 어셈블리의 캐시를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-108">Enumerates the cache of precompiled assemblies by using Ngen.exe.</span></span>|  
+|`ASM_CACHE_GAC`|<span data-ttu-id="d835d-109">전역 어셈블리 캐시를 열거합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-109">Enumerates the global assembly cache.</span></span>|  
+|`ASM_CACHE_DOWNLOAD`|<span data-ttu-id="d835d-110">요청 시 다운로드 또는 섀도 복사 된 어셈블리를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-110">Enumerates the assemblies that have been downloaded on demand or that have been shadow-copied.</span></span>|  
+|`ASM_CACHE_ROOT`|<span data-ttu-id="d835d-111">나타내는 합니다 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수는 CLR (공용 언어 런타임) 버전 2.0에 대 한 전역 어셈블리 캐시에 경로 반환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-111">Indicates that the [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) function should return the path to the global assembly cache for the common language runtime (CLR) version 2.0.</span></span> <span data-ttu-id="d835d-112">에 대 한 호출의 컨텍스트에서 에서만 의미가 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-112">Meaningful only in the context of a call to [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md).</span></span>|  
+|`ASM_CACHE_ROOT_EX`|<span data-ttu-id="d835d-113">나타내는 합니다 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) 함수를 전역 어셈블리 캐시에 clr 버전 4에 경로 반환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-113">Indicates that the [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) function should return the path to the global assembly cache for CLR version 4.</span></span> <span data-ttu-id="d835d-114">에 대 한 호출의 컨텍스트에서 에서만 의미가 [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="d835d-114">Meaningful only in the context of a call to [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md).</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="b6383-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="b6383-115">Requirements</span></span>  
- <span data-ttu-id="b6383-116">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="b6383-116">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="d835d-115">요구 사항</span><span class="sxs-lookup"><span data-stu-id="d835d-115">Requirements</span></span>  
+ <span data-ttu-id="d835d-116">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d835d-116">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="b6383-117">**헤더:** Fusion.h</span><span class="sxs-lookup"><span data-stu-id="b6383-117">**Header:** Fusion.h</span></span>  
+ <span data-ttu-id="d835d-117">**헤더:** Fusion.h</span><span class="sxs-lookup"><span data-stu-id="d835d-117">**Header:** Fusion.h</span></span>  
   
- <span data-ttu-id="b6383-118">**라이브러리:** MsCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="b6383-118">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="d835d-118">**라이브러리:** MsCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="d835d-118">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="b6383-119">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b6383-119">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="d835d-119">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d835d-119">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b6383-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b6383-120">See Also</span></span>  
- [<span data-ttu-id="b6383-121">GetCachePath 함수</span><span class="sxs-lookup"><span data-stu-id="b6383-121">GetCachePath Function</span></span>](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)  
- [<span data-ttu-id="b6383-122">IAssemblyCacheItem 인터페이스</span><span class="sxs-lookup"><span data-stu-id="b6383-122">IAssemblyCacheItem Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)  
- [<span data-ttu-id="b6383-123">Fusion 열거형</span><span class="sxs-lookup"><span data-stu-id="b6383-123">Fusion Enumerations</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+## <a name="see-also"></a><span data-ttu-id="d835d-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d835d-120">See Also</span></span>  
+ [<span data-ttu-id="d835d-121">GetCachePath 함수</span><span class="sxs-lookup"><span data-stu-id="d835d-121">GetCachePath Function</span></span>](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)  
+ [<span data-ttu-id="d835d-122">IAssemblyCacheItem 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d835d-122">IAssemblyCacheItem Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)  
+ [<span data-ttu-id="d835d-123">Fusion 열거형</span><span class="sxs-lookup"><span data-stu-id="d835d-123">Fusion Enumerations</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
