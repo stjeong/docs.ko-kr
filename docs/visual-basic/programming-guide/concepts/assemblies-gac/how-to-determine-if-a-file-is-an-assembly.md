@@ -3,11 +3,11 @@ title: '방법: 파일이 어셈블리 (Visual Basic) 인지 확인 합니다.'
 ms.date: 07/20/2015
 ms.assetid: de26f410-9bd1-4b55-a343-cc82f81684be
 ms.openlocfilehash: ced41279e7e192d6d5bed53dbce7378395b32e6d
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47027109"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47089401"
 ---
 # <a name="how-to-determine-if-a-file-is-an-assembly-visual-basic"></a>방법: 파일이 어셈블리 (Visual Basic) 인지 확인 합니다.
 파일은 관리되고 해당 메타데이터에 어셈블리 항목을 포함하는 경우에만 어셈블리입니다. 어셈블리 및 메타데이터에 대한 자세한 내용은 [어셈블리 매니페스트](../../../../framework/app-domains/assembly-manifest.md) 항목을 참조하세요.  

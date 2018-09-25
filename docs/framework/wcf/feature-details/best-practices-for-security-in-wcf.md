@@ -8,13 +8,12 @@ helpviewer_keywords:
 - best practices [WCF], security
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 2c1588fa48631aec4e185fd8362a02505aa15e58
-ms.sourcegitcommit: d8bf4976eafe3289275be3811e7cb721bfff7e1e
+ms.openlocfilehash: a45ec6b5cdd241cb92069e8097bc94baa65b2166
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753463"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47075631"
 ---
 # <a name="best-practices-for-security-in-wcf"></a>WCF 보안을 위한 최선의 방법
 다음 섹션에는 WCF(Windows Communication Foundation)를 사용하여 보안 응용 프로그램을 만들 때 고려할 최선의 방법이 나열되어 있습니다. 보안에 대한 자세한 내용은 [보안 관련 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md), [데이터에 대한 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md) 및 [메타데이터 관련 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)을 참조하세요.  
@@ -47,10 +46,10 @@ ms.locfileid: "34753463"
  메타데이터의 원본을 신뢰할 수 있는지, 다른 사람이 메타데이터를 훼손하지는 않았는지 확인합니다. HTTP 프로토콜을 사용하여 검색한 메타데이터는 일반 텍스트로 전송되며 변경할 수 있습니다. 서비스가 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> 및 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> 속성을 사용하는 경우 서비스 작성자가 제공하는 URL을 통해 HTTPS 프로토콜을 사용하여 데이터를 다운로드합니다.  
   
 ## <a name="publish-metadata-using-security"></a>보안을 사용하여 메타데이터 게시  
- 서비스의 게시된 메타데이터가 훼손되지 않게 하려면 전송 또는 메시지 수준 보안을 사용하여 메타데이터 교환 끝점의 보안을 설정합니다. 자세한 내용은 [메타데이터 엔드포인트 게시](../../../../docs/framework/wcf/publishing-metadata-endpoints.md) 및 [방법: 방법: 코드를 사용하여 서비스에 대한 메타데이터 게시](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md)를 참조하세요.  
+ 서비스의 게시된 메타데이터가 훼손되지 않게 하려면 전송 또는 메시지 수준 보안을 사용하여 메타데이터 교환 엔드포인트의 보안을 설정합니다. 자세한 내용은 [메타데이터 엔드포인트 게시](../../../../docs/framework/wcf/publishing-metadata-endpoints.md) 및 [방법: 방법: 코드를 사용하여 서비스에 대한 메타데이터 게시](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md)를 참조하세요.  
   
 ## <a name="ensure-use-of-local-issuer"></a>로컬 발급자 사용  
- 지정된 바인딩에 발급자 주소와 바인딩을 지정하면 해당 바인딩을 사용하는 끝점에는 로컬 발급자가 사용되지 않습니다. 로컬 발급자를 항상 사용해야 하는 클라이언트는 이러한 바인딩을 사용하지 않도록 하거나 발급자 주소가 null이 되도록 바인딩을 수정해야 합니다.  
+ 지정된 바인딩에 발급자 주소와 바인딩을 지정하면 해당 바인딩을 사용하는 엔드포인트에는 로컬 발급자가 사용되지 않습니다. 로컬 발급자를 항상 사용해야 하는 클라이언트는 이러한 바인딩을 사용하지 않도록 하거나 발급자 주소가 null이 되도록 바인딩을 수정해야 합니다.  
   
 ## <a name="saml-token-size-quotas"></a>SAML 토큰 크기 할당량  
  SAML(Security Assertions Markup Language) 토큰이 메시지에 serialize될 때 STS(보안 토큰 서비스)에서 해당 토큰을 발급하거나 클라이언트에서 인증의 일부로 해당 토큰을 서비스에 제공하는 경우, 최대 메시지 크기 할당량은 SAML 토큰 및 다른 메시지 부분을 수용할 수 있도록 충분히 커야 합니다. 일반적으로 기본 메시지 크기 할당량이면 충분합니다. 그러나 SAML 토큰에 수백 개의 클레임이 포함되어 있어 SAML 토큰이 큰 경우에는 serialize된 토큰을 수용할 수 있도록 할당량을 늘려야 합니다. 할당량에 대한 자세한 내용은 [데이터에 대한 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)을 참조하세요.  

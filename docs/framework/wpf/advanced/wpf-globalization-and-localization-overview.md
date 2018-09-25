@@ -5,12 +5,12 @@ helpviewer_keywords:
 - globalization [WPF], about globalization
 - localization [WPF], about localization
 ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
-ms.openlocfilehash: d8fef7965e3248d5361d866a441783bf4968460e
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.openlocfilehash: fcf5b8f872e2f97497ff5387adb755da1832bf8c
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46478904"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47111332"
 ---
 # <a name="wpf-globalization-and-localization-overview"></a>WPF 전역화 및 지역화 개요
 제품을 한 언어로만 제공하면 잠재적 고객 기반이 전 세계 65억 인구의 극히 일부로만 제한됩니다. 전 세계를 대상으로 하는 응용 프로그램을 만들려는 경우 가장 뛰어나고 경제적으로 고객에게 다가갈 수 있는 방법 중 하나는 바로 제품의 비용 효율적인 지역화입니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "46478904"
   
 -   절대 위치와 고정된 크기를 사용 하 여 콘텐츠를 레이아웃할 수 방지 대신 상대적 크기나 자동 크기 조정 합니다.
   
-    -   사용 하 여 <xref:System.Windows.Window.SizeToContent%2A>; 너비와 높이 설정 하 고 `Auto`입니다.  
+    -   사용 하 여 <xref:System.Windows.Window.SizeToContent%2A> 너비와 높이 설정 하 고 `Auto`입니다.  
   
     -   사용 하지 마세요 <xref:System.Windows.Controls.Canvas> 레이아웃 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]s입니다.  
   
@@ -39,7 +39,7 @@ ms.locfileid: "46478904"
   
 -   사용 하도록 설정 <xref:System.Windows.Controls.TextBlock.TextWrapping%2A> 에서 <xref:System.Windows.Controls.TextBlock> 클리핑을 피하기 위해.
   
--   설정 된 **xml: lang** 특성입니다. 이 특성에는 특정 요소 및 해당 자식 요소의 문화권을을 설명합니다. 이 속성의 값에서 몇 가지 기능의 동작 변경 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다. 예를 들어 하이픈 넣기, 맞춤법 검사, 숫자 대체, 복잡한 스크립트 셰이핑 및 글꼴 대체의 동작을 변경합니다. 참조 [WPF의 전역화](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md) 설정에 대 한 자세한 내용은 합니다 [xml: lang XAML 처리](../../../../docs/framework/xaml-services/xml-lang-handling-in-xaml.md)합니다.  
+-   설정 된 `xml:lang` 특성입니다. 이 특성에는 특정 요소 및 해당 자식 요소의 문화권을을 설명합니다. 이 속성의 값에서 몇 가지 기능의 동작 변경 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다. 예를 들어 하이픈 넣기, 맞춤법 검사, 숫자 대체, 복잡한 스크립트 셰이핑 및 글꼴 대체의 동작을 변경합니다. 참조 [WPF의 전역화](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md) 설정에 대 한 자세한 내용은 합니다 [xml: lang XAML 처리](../../../../docs/framework/xaml-services/xml-lang-handling-in-xaml.md)합니다.  
   
 -   다른 언어에 사용 되는 글꼴을 더욱 효과적으로 제어할를 사용자 지정된 합성 글꼴을 만듭니다. 기본적으로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Windows\Fonts 디렉터리에서 GlobalUserInterface.composite 글꼴을 사용 합니다.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "46478904"
   
          생략 하 여 주 어셈블리에서 소스 언어를 포함 하려는 경우는 `<UICulture>` 프로젝트 파일의 태그를 설정 합니다 `UltimateResourceFallback` 위성이 아닌 주 어셈블리와 위치 (예를 들어 `[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.MainAssembly)]`).  
   
-<a name="workflow_to_localize"></a>   
+<a name="workflow_to_localize" />   
 ## <a name="localize-a-wpf-application"></a>WPF 응용 프로그램 지역화  
  지역화 하는 경우는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 몇 가지 옵션이 있습니다. 예를 들어, 응용 프로그램의 지역화 가능한 리소스를 바인딩할 수 있습니다는 [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] 파일, 지역화 가능 텍스트를 resx 테이블에에서 저장 또는 사용 하 여 지역화 담당자가 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 파일입니다. 이 섹션에서는 몇 가지 이점을 제공 하는 XAML의 BAML 양식을 사용 하는 지역화 워크플로를 설명 합니다.  
   
@@ -92,7 +92,7 @@ ms.locfileid: "46478904"
   
  ![지역화되지 않은 워크플로](../../../../docs/framework/wpf/advanced/media/localizationworkflow2.png "LocalizationWorkflow2")  
   
-<a name="examples_of_localization"></a>   
+<a name="examples_of_localization" />   
 ## <a name="examples-of-wpf-localization"></a>WPF 지역화 예제  
  이 섹션에는 지역화 된 응용 프로그램을 빌드하고 지역화 하는 방법을 이해할 수 있도록 예가 포함 되어 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램입니다.  
   
@@ -137,7 +137,7 @@ ms.locfileid: "46478904"
   
  공유 크기 조정 기능을 사용 하는 예제 <xref:System.Windows.Controls.Grid>합니다. 마지막 세 열은 동일한 자체를 배치 하 여이 활용 하기 위해 <xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A>합니다. 속성의 이름에서 알 수 있듯이 이 속성을 통해 열은 같은 크기를 공유할 수 있습니다. 따라서 더 긴 문자열인 "찾아보기..."를 "찾아보기..." 가져옵니다 지역화 하는 경우 모든 단추 대신 작은 "확인" 단추 및 커집니다 "찾아보기..." 단추 너비에서 증가 합니다.  
   
- **Xml:lang**  
+ **Xml:lang**
   
  `Xml:lang="en-US"`  
   
@@ -146,7 +146,9 @@ ms.locfileid: "46478904"
  **위성 리소스 어셈블리 빌드**  
   
  *.csproj:*  
-  
+
+ 편집 된 `.csproj` 파일을 다음 태그를 무조건 추가 `<PropertyGroup>`:
+ 
  `<UICulture>en-US</UICulture>`  
   
  추가 확인을 `UICulture` 값입니다. 유효한로 설정 하면이 <xref:System.Globalization.CultureInfo> 값 예: EN-US, 프로젝트를 빌드할에 모든 지역화 가능 리소스를 사용 하 여 위성 어셈블리를 생성 합니다.  
@@ -197,7 +199,7 @@ ms.locfileid: "46478904"
   
  **LocBaml.exe /generate RunDialog.resources.dll /trans:RunDialog.resources.dll.CSV /out: . /cul:de-DE**  
   
- 독일어 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)],이 resources.dll이 주 어셈블리 옆의 DE-DE 폴더에 배치 되 면이 리소스 대신 EN-US 폴더에 자동으로 로드 됩니다. 독일어 버전이 없는 경우 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] 이 테스트 하려면 문화권의 문화권으로 설정 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] (예: EN-US)를 사용 하 고 원본 resources.dll을 대체 합니다.  
+ 독일어 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)],이 resources.dll이 주 어셈블리 옆의 DE-DE 폴더에 배치 되 면이 리소스 대신 EN-US 폴더에 자동으로 로드 됩니다. 독일어 버전이 없는 경우 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] 이 테스트 하려면 문화권의 문화권으로 설정 합니다 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] 사용 하는 (예를 들어 `en-US`), 원래 리소스 DLL을 바꿉니다.  
   
  **위성 리소스 로드**  
   
@@ -246,7 +248,7 @@ ms.locfileid: "46478904"
   
  **패널 및 컨트롤에 고정 크기 사용 피하기**  
   
- Homepage.xaml 살펴보세요에서 고정된 너비와 높이 전체에 대해 지정 하는 것 외 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 위쪽 <xref:System.Windows.Controls.DockPanel>, 가지 다른 고정된 차원이 없습니다. 지역화된 텍스트가 소스 텍스트보다 길어서 잘리는 것을 방지하기 위해 고정된 크기를 사용하지 않도록 하세요. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 패널 및 컨트롤은 포함된 콘텐츠에 따라 자동으로 크기가 조정됩니다. 대부분의 컨트롤에는 최소 및 최대 크기가 있어 더 세밀한 제어를 위해 값을 설정할 수 있습니다(예: MinWidth= "20"). 사용 하 여 <xref:System.Windows.Controls.Grid>를 사용 하 여 상대적 너비와 높이 설정할 수도 있습니다 ' *' (예: Width = "0.25\*") 하거나 해당 셀 크기 공유 기능을 사용 합니다.  
+ Homepage.xaml 살펴보세요에서 고정된 너비와 높이 전체에 대해 지정 하는 것 외 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 위쪽 <xref:System.Windows.Controls.DockPanel>, 가지 다른 고정된 차원이 없습니다. 지역화된 텍스트가 소스 텍스트보다 길어서 잘리는 것을 방지하기 위해 고정된 크기를 사용하지 않도록 하세요. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 패널 및 컨트롤은 포함된 콘텐츠에 따라 자동으로 크기가 조정됩니다. 또한 대부분의 컨트롤에는 더 많은 제어를 설정할 수 있는 최소 및 최대 크기 (예: MinWidth = "20"). 사용 하 여 <xref:System.Windows.Controls.Grid>를 사용 하 여 상대적 너비와 높이 설정할 수도 있습니다 '\*' (예를 들어 `Width="0.25*"`) 하거나 해당 셀 크기 공유 기능을 사용 합니다.  
   
  **지역화 주석**  
   
@@ -275,26 +277,20 @@ ms.locfileid: "46478904"
  [!code-xaml[LocalizationComAtt#LocalizationAttributesOverridden](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationComAtt/CSharp/Attributes.xaml#localizationattributesoverridden)]  
   
  기본 지역화 특성을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 제공 사용자 지정 컨트롤에 대 한 기본값을 올바르게 설정할 수 있는 코드를 통해 재정의할 수 있습니다. 예를 들어:  
-  
- `[Localizability(Readability = Readability.Readable, Modifiability=Modifiability.Unmodifiable, LocalizationCategory.None)]`  
-  
- `public class CorporateLogo: TextBlock`  
-  
- `{`  
-  
- `…`  
-  
- `..`  
-  
- `.`  
-  
- `}`  
-  
+
+```csharp 
+[Localizability(Readability = Readability.Readable, Modifiability=Modifiability.Unmodifiable, LocalizationCategory.None)] 
+public class CorporateLogo : TextBlock
+{
+    // ...
+}
+``` 
+ 
  설정 된 인스턴스별 특성 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 사용자 지정 컨트롤에서 코드에 설정 된 값 보다 우선적으로 적용 됩니다. 특성 및 주석에 대 한 자세한 내용은 참조 하세요. [지역화 특성과 주석을](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md)합니다.  
   
  **글꼴 대체 및 복합 글꼴**  
   
- 지정 된 코드 포인트 범위를 지원 하지 않는 글꼴을 지정 하는 경우 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Windows\Fonts 디렉터리에 있는 전역 사용자 Interface.compositefont를 사용 하 여 수행 하는 자동으로 대체 됩니다. 복합 글꼴은 다른 글꼴처럼 동작하며 요소의 FontFamily를 설정하여 명시적으로 사용할 수 있습니다(예: FontFamily= "Global User Interface"). 복합 글꼴을 직접 만들고 특정 코드 포인트 범위와 언어에 사용할 글꼴을 지정하여 글꼴 대체 기본 설정을 직접 지정할 수 있습니다.  
+ 지정 된 코드 포인트 범위를 지원 하지 않는 글꼴을 지정 하는 경우 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Windows\Fonts 디렉터리에 있는 전역 사용자 Interface.compositefont를 사용 하 여 수행 하는 자동으로 대체 됩니다. 복합 글꼴 것은 다른 글꼴 처럼 작동 하 고 요소를 설정 하 여 명시적으로 사용할 수 있습니다 `FontFamily` (예를 들어 `FontFamily="Global User Interface"`). 복합 글꼴을 직접 만들고 특정 코드 포인트 범위와 언어에 사용할 글꼴을 지정하여 글꼴 대체 기본 설정을 직접 지정할 수 있습니다.  
   
  복합 글꼴에 대 한 자세한 내용은 참조 하세요. <xref:System.Windows.Media.FontFamily>합니다.  
   

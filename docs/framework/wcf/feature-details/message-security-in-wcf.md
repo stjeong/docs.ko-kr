@@ -3,11 +3,11 @@ title: WCF의 메시지 보안
 ms.date: 03/30/2017
 ms.assetid: a80efb59-591a-4a37-bb3c-8fffa6ca0b7d
 ms.openlocfilehash: 81d9acde3c8fab1860904074199066cca55c7186
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46696146"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47113847"
 ---
 # <a name="message-security-in-wcf"></a>WCF의 메시지 보안
 Windows Communication Foundation (WCF)는 보안을 제공 하는 두 가지 주요 모드 (`Transport` 하 고 `Message`)와 세 번째 모드 (`TransportWithMessageCredential`) 둘을 조합 하 합니다. 이 항목에서는 메시지 보안과 메시지 보안을 사용하는 이유에 대해 설명합니다.  

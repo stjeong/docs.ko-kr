@@ -5,13 +5,12 @@ helpviewer_keywords:
 - message security [WCF]
 ms.assetid: e681f3bd-0c09-4a58-b0e4-0ecbdf1aa6c7
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 60aa4da95666de01daa087c4c8e826c8cf72ba85
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 111a0dd003b0427490b498f895a7e526bafb52b7
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003076"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47157599"
 ---
 # <a name="securing-services-and-clients"></a>서비스 및 클라이언트에 보안 설정
 이 섹션의 정보는 Windows Communication Foundation (WCF)에서 보안 프로그래밍에 중점을 둡니다. 일반적으로 여기에는 적절한 시스템 제공 바인딩 선택, 보안 요소의 속성 설정 및 서비스나 클라이언트에서 사용할 자격 증명을 검색하는 방법을 제어하는 서비스 동작의 속성 설정이 포함됩니다. 이러한 기법에 표시 된 대로 대부분의 시나리오에서 대부분의 사용자의 보안 요구 사항을 다루는 [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)합니다. 시나리오에 더 많은 기능이 필요한 경우 먼저 참조 [사용자 지정 바인딩을 사용 하는 보안 기능](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)솔루션은 명백 하는 경우 참조 [보안 확장](../../../../docs/framework/wcf/extending/extending-security.md)합니다. (만들거나와 상호 운용) 하는 경우 다양 한 클레임을 사용 하는 시스템에서 항목을 참조 하세요 [권한 부여](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)합니다.  

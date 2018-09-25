@@ -3,13 +3,12 @@ title: '방법: WIF를 사용하여 로그인 상태 표시'
 ms.date: 03/30/2017
 ms.assetid: 4d1174e4-5397-4962-9a5f-3b1ad7b3fc14
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 53ef5e8b3fae976bacff3be9a50c323a22aef0e9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7d3d23dc1f2e081c0a7c53fbdfaef749c9729fd4
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398920"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47108334"
 ---
 # <a name="how-to-display-signed-in-status-using-wif"></a>방법: WIF를 사용하여 로그인 상태 표시
 ## <a name="applies-to"></a>적용 대상  
@@ -53,7 +52,7 @@ ms.locfileid: "33398920"
 -   5단계 – WIF 및 ASP.NET 응용 프로그램 간 통합 테스트  
   
 ## <a name="step-1--install-the-identity-and-access-extension"></a>1단계 – ID 및 액세스 도구 확장 설치  
- 이 단계에서는 Visual Studio 2012에 대한 ID 및 액세스 확장을 구성하는 방법을 설명합니다. 이 확장은 STS 끝점과 통신하도록 응용 프로그램을 구성하는 프로세스를 자동화합니다.  
+ 이 단계에서는 Visual Studio 2012에 대한 ID 및 액세스 확장을 구성하는 방법을 설명합니다. 이 확장은 STS 엔드포인트와 통신하도록 응용 프로그램을 구성하는 프로세스를 자동화합니다.  
   
 #### <a name="to-install-the-identity-and-access-extension"></a>ID 및 액세스 확장을 설치하려면  
   

@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: db39d7de3566647b5171b71940c78a9a0ab6f5f1
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4ec2ba884f0f60182dd59bb6a4491e223f43ce1a
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350224"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47073543"
 ---
 # <a name="ltoidmapgt-element"></a>&lt;oidMap&gt; 요소
-클래스에 ASN.1 개체 식별자 (OID) 매핑을 포함합니다.  
+ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.  
   
  \<configuration>  
 \<mscorlib >  
@@ -43,7 +42,7 @@ ms.locfileid: "33350224"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<r y >](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md)|ASN.1 OID 이름에 매핑합니다.|  
+|[\<oidEntry >](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md)|ASN.1 OID 이름에 매핑됩니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -54,7 +53,7 @@ ms.locfileid: "33350224"
 |`mscorlib`|포함 된 `cryptographySettings` 요소입니다.|  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는  **\<oidMap >** 해당 해시 알고리즘의 구현에 ripemd-160 해시 알고리즘에 대 한 OID의 매핑을 포함 하는 요소입니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다  **\<oidMap >** 해당 해시 알고리즘의 구현에 RIPEMD-160 해시 알고리즘의 OID의 매핑을 포함 하는 요소입니다.  
   
 ```xml  
 <configuration>  

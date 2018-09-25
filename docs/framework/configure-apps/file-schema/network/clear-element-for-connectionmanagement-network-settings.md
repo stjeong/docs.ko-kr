@@ -12,13 +12,12 @@ helpviewer_keywords:
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 5bcd17cfe1f3bd7531453b62552a4907df5b96bc
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 9542332085d0b0319c55db63fd98c9dd8eb3f576
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32741986"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47070502"
 ---
 # <a name="ltcleargt-element-for-connectionmanagement-network-settings"></a>&lt;지우기&gt; connectionManagement (네트워크 설정)에 대 한 요소
 연결 관리 목록을 지웁니다.  
@@ -50,13 +49,13 @@ ms.locfileid: "32741986"
 |[connectionManagement](../../../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md)|네트워크 호스트에 대한 최대 연결 수를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- `clear` 요소는 연결 관리 목록에서 모든 항목을 제거 합니다.  
+ `clear` 요소는 연결 관리 목록에서 항목을 모두 지웁니다.  
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 연결 관리 목록 지우고 www.contoso.com 서버 및 다른 모든 네트워크 호스트에 대 한 새 연결 관리 항목을 추가 합니다.  
+ 다음 예제에서는 연결 관리 목록을 지우고 www.contoso.com 서버 및 다른 모든 네트워크 호스트에 대 한 새 연결 관리 항목을 추가 합니다.  
   
 ```xml  
 <configuration>  

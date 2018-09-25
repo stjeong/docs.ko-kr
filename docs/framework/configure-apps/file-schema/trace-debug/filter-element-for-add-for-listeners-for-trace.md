@@ -1,5 +1,5 @@
 ---
-title: '&lt;필터&gt; 요소에 대 한 &lt;추가&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;'
+title: '&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add/filter
@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 095212f73adb906d9d80db747c331c436c1cf846
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: be4f3dcce1a746b287e75e0e6d3ba6eaa1d9b57b
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745788"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47156871"
 ---
-# <a name="ltfiltergt-element-for-ltaddgt-for-ltlistenersgt-for-lttracegt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
-필터에 수신기를 추가 `Listeners` 추적에 대 한 컬렉션입니다.  
+# <a name="ltfiltergt-element-for-ltaddgt-for-ltlistenersgt-for-lttracegt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
+수신기에 필터를 추가 합니다 `Listeners` 추적에 대 한 컬렉션입니다.  
   
  \<configuration>  
 \<system.diagnostics >  
@@ -43,7 +42,7 @@ ms.locfileid: "32745788"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`type`|필수 특성입니다.<br /><br /> 상속 해야 하는 필터의 형식을 지정 된 <xref:System.Diagnostics.TraceFilter> 클래스입니다. 형식에 해당 하는 형식의 정규화 된 네임 스페이스 이름을 사용할 수 있습니다 <xref:System.Type.FullName%2A> 속성 또는 있습니다에 해당 하는 어셈블리 정보를 포함 한 정규화 된 형식 이름을 사용할 수는 <xref:System.Type.AssemblyQualifiedName%2A> 속성입니다. 정규화 된 형식 이름에 대 한 정보를 참조 하십시오. [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
+|`type`|필수 특성입니다.<br /><br /> 상속 해야 하는 필터의 유형을 지정 합니다 <xref:System.Diagnostics.TraceFilter> 클래스입니다. 형식에 해당 하는 형식의 정규화 된 네임 스페이스 이름을 사용할 수 있습니다 <xref:System.Type.FullName%2A> 속성에 해당 하는 어셈블리 정보를 포함 한 정규화 된 형식 이름을 사용할 수는 <xref:System.Type.AssemblyQualifiedName%2A> 속성입니다. 정규화 된 형식 이름에 대 한 자세한 내용은 [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
 |`initializeData`|선택적 특성입니다.<br /><br /> 지정 된 필터 클래스에 대 한 생성자에 전달 된 문자열입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -56,16 +55,16 @@ ms.locfileid: "32745788"
 |`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
 |`trace`|추적 메시지를 수집하고 저장하고 라우팅하는 수신기가 포함되어 있습니다.|  
-|`listeners`|수집, 저장 하 고 메시지를 라우팅하는 수신기를 포함 합니다. 수신기는 추적 출력을 적절 한 대상에 전달 합니다.|  
+|`listeners`|수집, 저장 하 고 메시지를 라우팅하는 수신기를 포함 합니다. 수신기는 추적 출력을 적절 한 대상입니다.|  
 |`add`|`Listeners` 컬렉션에 수신기를 추가합니다.|  
   
 ## <a name="remarks"></a>설명  
- `<filter>` 요소에 포함 되어야 합니다는 `<add>` 수신기의 유형을 지정 하는 추적 수신기에 대 한 요소에 정의 된 수신기의 이름 뿐 아니라는 [ \<sharedListeners >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md)합니다. 수신기에 정의 된 경우는 [ \<sharedListeners >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md), 해당 요소에 해당 수신기에 대 한 필터를 정의 해야 합니다.  
+ 합니다 `<filter>` 요소에 포함 되어야 합니다는 `<add>` 수신기의 형식을 지정 하는 추적 수신기에 대 한 요소에 정의 된 수신기의 이름 뿐 아니라는 [ \<sharedListeners >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md)합니다. 수신기에 정의 된 경우는 [ \<sharedListeners >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md)를 해당 수신기에 대 한 필터는 해당 요소에 정의 되어야 합니다.  
   
- 이 요소는 응용 프로그램 구성 파일 및 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
+ 이 요소는 응용 프로그램 구성 파일과 컴퓨터 구성 파일 (Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 `<filter>` 수신기에 필터를 추가 하는 요소 `console` 에 `Listeners` 으로 이벤트 수준 필터를 지정 하는 추적에 대 한 컬렉션 `Error`합니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 `<filter>` 수신기에 필터를 추가 하는 요소 `console` 에 `Listeners` 추적용으로 필터 이벤트 수준을 지정 하는 컬렉션 `Error`합니다.  
   
 ```xml  
 <configuration>  

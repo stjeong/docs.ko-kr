@@ -8,16 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: fac50aedbb11eba40482fab71c912f587d85f855
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a74dfaf883ea23514c6bc4641d9d576f5baf10b4
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744657"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47071712"
 ---
 # <a name="ltnamedcachesgt-element-cache-settings"></a>&lt;namedCaches&gt; 요소 (캐시 설정)
-명명 된 구성 설정의 컬렉션을 지정 <xref:System.Runtime.Caching.MemoryCache> 인스턴스. <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> 속성 구성 설정의 컬렉션을 하나 이상에서 참조 `namedCaches` 구성 파일의 요소입니다.  
+명명 된 구성 설정의 컬렉션을 지정 <xref:System.Runtime.Caching.MemoryCache> 인스턴스. 합니다 <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> 하나 이상의 구성 설정의 컬렉션을 참조 하는 속성 `namedCaches` 구성 파일의 요소입니다.  
   
  \<configuration>  
 \< system.runtime.caching >  
@@ -42,9 +41,9 @@ ms.locfileid: "32744657"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`cacheMemoryLimitMegabytes`|최대 허용 크기 (메가바이트)에서 지정 하는 정수 값 하의 인스턴스는 <xref:System.Runtime.Caching.MemoryCache> 증가할 수 있습니다. 기본값은 0으로의 크기 자동 조정 추론 하는 것을 의미는 <xref:System.Runtime.Caching.MemoryCache> 클래스는 기본적으로 사용 됩니다.|  
+|`cacheMemoryLimitMegabytes`|메가바이트에서의 최대 허용 크기를 지정 하는 정수 값은 인스턴스에 <xref:System.Runtime.Caching.MemoryCache> 증가할 수 있습니다. 기본값은 0으로, 자동 크기 조정 추론이의 의미는 <xref:System.Runtime.Caching.MemoryCache> 클래스는 기본적으로 사용 됩니다.|  
 |`name`|캐시의 이름입니다.|  
-|`physicalMemoryLimitPercentage`|캐시에서 사용할 수 있는 실제로 설치 된 컴퓨터 메모리의 최대 백분율을 지정 하는 0에서 100 사이의 정수 값입니다. 기본값은 0으로의 크기 자동 조정 추론 하는 것을 의미는 <xref:System.Runtime.Caching.MemoryCache> 클래스는 기본적으로 사용 됩니다.|  
+|`physicalMemoryLimitPercentage`|캐시에서 사용할 수 있는 물리적으로 설치 된 컴퓨터 메모리의 최대 백분율을 지정 하는 0과 100 사이의 정수 값입니다. 기본값은 0으로, 자동 크기 조정 추론이의 의미는 <xref:System.Runtime.Caching.MemoryCache> 클래스는 기본적으로 사용 됩니다.|  
 |`pollingInterval`|캐시 구현이 현재 메모리 로드를 캐시 인스턴스에 대해 설정된 절대 및 백분율 기반 메모리 제한과 비교하기까지의 시간 간격을 나타내는 값입니다. 이 값은 "hh: mm:" 형식으로 입력 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -62,16 +61,16 @@ ms.locfileid: "32744657"
 |[\<memoryCache>](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)|<xref:System.Runtime.Caching.MemoryCache> 클래스를 기반으로 하는 캐시 구성에 사용되는 요소를 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- Web.config 파일의 메모리 캐시 구성 섹션에 포함 될 수 있습니다 `add`, `remove`, 및 `clear` 에 대 한 특성은 `namedCaches` 컬렉션입니다. 각 `namedCaches` 항목으로 고유 하 게 식별 되는 `name` 특성입니다.  
+ Web.config 파일의 메모리 캐시 구성 섹션에 포함 될 수 있습니다 `add`, `remove`, 및 `clear` 에 대 한 특성을 `namedCaches` 컬렉션입니다. 각 `namedCaches` 항목으로 고유 하 게 식별 되는 `name` 특성입니다.  
   
- 응용 프로그램 구성 파일의 정보를 참조 하 여 메모리 캐시 항목의 인스턴스를 검색할 수 있습니다. 기본적으로 기본 캐시 인스턴스에 구성 파일에는 항목이 있습니다. 기본 캐시 인스턴스는에서 반환 되는 인스턴스는 <xref:System.Runtime.Caching.MemoryCache.Default%2A> 속성입니다.  
+ 응용 프로그램 구성 파일의 정보를 참조 하 여 메모리 캐시 항목의 인스턴스를 검색할 수 있습니다. 기본적으로 기본 캐시 인스턴스만 구성 파일에는 항목이 있습니다. 기본 캐시 인스턴스는에서 반환 되는 인스턴스는 <xref:System.Runtime.Caching.MemoryCache.Default%2A> 속성입니다.  
   
- Name 특성을 "기본값"으로 설정 하면 요소의 기본 메모리 캐시 인스턴스를 사용 합니다.  
+ 이름 특성을 "default"로 설정 하면 요소의 기본 메모리 캐시 인스턴스를 사용 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 설정 하 여 기본 캐시 항목 이름에는 캐시의 이름을 설정 하는 `name` 특성을 "default"입니다.  
+ 다음 예제에서는 기본 캐시 항목 이름을 설정 하 여 캐시의 이름을 설정 하는 방법을 보여 줍니다는 `name` 특성을 "기본값"입니다.  
   
- `cacheMemoryLimitMegabytes` 특성 및 `physicalMemoryPercentage` 특성은 0으로 설정됩니다. 이러한 특성을 0으로 설정 됨을 의미의 크기 자동 조정 추론은 <xref:System.Runtime.Caching.MemoryCache> 클래스 사용 됩니다. 캐시를 구현 하는 2 분 마다 절대 곡선과 백분율을 기준으로 메모리 제한에 대 한 현재 메모리 로드를 비교합니다.  
+ `cacheMemoryLimitMegabytes` 특성 및 `physicalMemoryPercentage` 특성은 0으로 설정됩니다. 자동 크기 조정 추론이 의미 이러한 특성을 0으로 설정 된 <xref:System.Runtime.Caching.MemoryCache> 클래스 사용 됩니다. 캐시 구현이 현재 메모리 로드를 절대 및 백분율 기반 메모리 제한과 2 분 마다 비교합니다.  
   
 ```xml  
 <configuration>  

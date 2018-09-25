@@ -1,5 +1,5 @@
 ---
-title: '&lt;r y&gt; 요소'
+title: '&lt;oidEntry&gt; 요소'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/oidMap/oidEntry
@@ -10,22 +10,21 @@ helpviewer_keywords:
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: db209bac487ccbb98f7f0aeb272f51169e7a0148
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c5be6ef95693f274e5cb2002e5642d5e58a7661a
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746357"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47082070"
 ---
-# <a name="ltoidentrygt-element"></a>&lt;r y&gt; 요소
+# <a name="ltoidentrygt-element"></a>&lt;oidEntry&gt; 요소
 ASN.1 OID(개체 식별자)를 이름에 매핑합니다.  
   
  \<configuration>  
 \<mscorlib >  
 \<cryptographySettings >  
 \<oidMap >  
-\<r y >  
+\<oidEntry >  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,8 +39,8 @@ ASN.1 OID(개체 식별자)를 이름에 매핑합니다.
   
 |특성|설명|  
 |---------------|-----------------|  
-|**OID**|필수 특성입니다.<br /><br /> 클래스에서 구현 되는 알고리즘에 대응 ASN.1 OID를 지정 합니다.|  
-|**name**|필수 특성입니다.<br /><br /> 에 대 한 값을 지정 된 **이름** 특성에 [ \<r y >](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) 태그입니다.|  
+|**OID**|필수 특성입니다.<br /><br /> 클래스에서 구현 되는 알고리즘에 해당 하는 ASN.1 OID를 지정 합니다.|  
+|**name**|필수 특성입니다.<br /><br /> 에 대 한 값을 지정 합니다 **이름** 특성을 [ \<nameEntry >](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) 태그 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -53,13 +52,13 @@ ASN.1 OID(개체 식별자)를 이름에 매핑합니다.
 |`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`cryptographySettings`|암호화 설정이 포함되어 있습니다.|  
 |`mscorlib`|포함 된 `cryptographySettings` 요소입니다.|  
-|`oidMap`|클래스에 ASN.1 개체 식별자 (OID) 매핑을 포함합니다.|  
+|`oidMap`|ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.|  
   
 ## <a name="remarks"></a>설명  
- ASN.1 개체 식별자는 일부 암호화 형식에서 알고리즘을 식별 합니다. 개체 식별자를 확인 하는 알고리즘에 대 한 알아보기 쉬운 이름을 매핑하십시오.  
+ ASN.1 개체 식별자는 일부 암호화 형식에서 알고리즘을 식별합니다. 개체 식별자를 식별 하려면 알고리즘 이름을 매핑하십시오.  
   
 ## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는  **\<r y >** ripemd-160 해시 알고리즘에 대 한 개체 식별자를 해당 해시 알고리즘의 구현에 매핑하는 요소입니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다  **\<oidEntry >** RIPEMD-160 해시 알고리즘에 대 한 개체 식별자는 해시 알고리즘의 구현에 매핑하는 요소입니다.  
   
 ```xml  
 <configuration>  
