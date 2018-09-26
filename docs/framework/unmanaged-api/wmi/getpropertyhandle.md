@@ -17,18 +17,18 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 94171b0708c97eb7510e916e451ed03645d706f3
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47109749"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47231468"
 ---
-# <a name="getpropertyhandle-function"></a><span data-ttu-id="55461-103">GetPropertyHandle 함수</span><span class="sxs-lookup"><span data-stu-id="55461-103">GetPropertyHandle function</span></span>
-<span data-ttu-id="55461-104">속성을 식별하는 고유한 핸들을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="55461-104">Returns a unique handle that identifies a property.</span></span>
+# <a name="getpropertyhandle-function"></a><span data-ttu-id="6366b-103">GetPropertyHandle 함수</span><span class="sxs-lookup"><span data-stu-id="6366b-103">GetPropertyHandle function</span></span>
+<span data-ttu-id="6366b-104">속성을 식별하는 고유한 핸들을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-104">Returns a unique handle that identifies a property.</span></span>
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
-## <a name="syntax"></a><span data-ttu-id="55461-105">구문</span><span class="sxs-lookup"><span data-stu-id="55461-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6366b-105">구문</span><span class="sxs-lookup"><span data-stu-id="6366b-105">Syntax</span></span>  
   
 ```  
 HRESULT GetPropertyHandle (
@@ -40,48 +40,48 @@ HRESULT GetPropertyHandle (
 ); 
 ```  
 
-## <a name="parameters"></a><span data-ttu-id="55461-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="55461-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6366b-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="6366b-106">Parameters</span></span>
 
 `vFunc`  
-<span data-ttu-id="55461-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="55461-107">[in] This parameter is unused.</span></span>
+<span data-ttu-id="6366b-107">[in] 이 매개 변수 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-107">[in] This parameter is unused.</span></span>
 
 `ptr`  
-<span data-ttu-id="55461-108">[in] 에 대 한 포인터를 [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="55461-108">[in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.</span></span>
+<span data-ttu-id="6366b-108">[in] 에 대 한 포인터를 [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="6366b-108">[in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.</span></span>
 
 `wszPropertyName`  
-<span data-ttu-id="55461-109">[in] 속성 이름을 포함 하는 UTF16 인코딩 characaters의 null 종료 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="55461-109">[in] A null-terminated string of UTF16-encoded characaters that contains the property name.</span></span>   
+<span data-ttu-id="6366b-109">[in] 속성 이름을 포함 하는 UTF16 인코딩 characaters의 null 종료 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-109">[in] A null-terminated string of UTF16-encoded characaters that contains the property name.</span></span>   
 
 `pType`  
-<span data-ttu-id="55461-110">[out] 에 대 한 포인터를 [ `CIMTYPE` ](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) 속성의 CIM 형식을 나타내는 열거형 멤버입니다.</span><span class="sxs-lookup"><span data-stu-id="55461-110">[out] A pointer to a [`CIMTYPE`](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) enumeration member that represents the CIM type of the property.</span></span>
+<span data-ttu-id="6366b-110">[out] 에 대 한 포인터를 [ `CIMTYPE` ](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) 속성의 CIM 형식을 나타내는 열거형 멤버입니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-110">[out] A pointer to a [`CIMTYPE`](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) enumeration member that represents the CIM type of the property.</span></span>
 
 `pHandle`   
-<span data-ttu-id="55461-111">[out] 속성 핸들을 포함 하는 정수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="55461-111">[out] A pointer to an integer that contains the property handle.</span></span>
+<span data-ttu-id="6366b-111">[out] 속성 핸들을 포함 하는 정수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-111">[out] A pointer to an integer that contains the property handle.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="55461-112">반환 값</span><span class="sxs-lookup"><span data-stu-id="55461-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6366b-112">반환 값</span><span class="sxs-lookup"><span data-stu-id="6366b-112">Return value</span></span>
 
-<span data-ttu-id="55461-113">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="55461-113">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
+<span data-ttu-id="6366b-113">이 함수에 의해 반환 되는 다음 값에 정의 된 합니다 *WbemCli.h* 헤더 파일에서 정의할 수 상수로 코드:</span><span class="sxs-lookup"><span data-stu-id="6366b-113">The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:</span></span>
 
-|<span data-ttu-id="55461-114">상수</span><span class="sxs-lookup"><span data-stu-id="55461-114">Constant</span></span>  |<span data-ttu-id="55461-115">값</span><span class="sxs-lookup"><span data-stu-id="55461-115">Value</span></span>  |<span data-ttu-id="55461-116">설명</span><span class="sxs-lookup"><span data-stu-id="55461-116">Description</span></span>  |
+|<span data-ttu-id="6366b-114">상수</span><span class="sxs-lookup"><span data-stu-id="6366b-114">Constant</span></span>  |<span data-ttu-id="6366b-115">값</span><span class="sxs-lookup"><span data-stu-id="6366b-115">Value</span></span>  |<span data-ttu-id="6366b-116">설명</span><span class="sxs-lookup"><span data-stu-id="6366b-116">Description</span></span>  |
 |---------|---------|---------|
-|`WBEM_E_NOT_FOUND` | <span data-ttu-id="55461-117">0x80041002</span><span class="sxs-lookup"><span data-stu-id="55461-117">0x80041002</span></span> | <span data-ttu-id="55461-118">지정된 된 속성 이름을 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="55461-118">The specified property name was not found.</span></span> |
-|`WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="55461-119">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="55461-119">0x80041008</span></span> | <span data-ttu-id="55461-120">매개 변수가 잘못 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="55461-120">A parameter is not valid.</span></span> |
-|`WBEM_E_NOT_SUPPORTED` | <span data-ttu-id="55461-121">0x8004100c</span><span class="sxs-lookup"><span data-stu-id="55461-121">0x8004100c</span></span> | <span data-ttu-id="55461-122">요청 된 속성이 형식의 됩니다 `CIM_OBJECT` 또는 `CIM_ARRAY`합니다.</span><span class="sxs-lookup"><span data-stu-id="55461-122">The requested property is of type are `CIM_OBJECT` or `CIM_ARRAY`.</span></span> |
-|`WBEM_S_NO_ERROR` | <span data-ttu-id="55461-123">0</span><span class="sxs-lookup"><span data-stu-id="55461-123">0</span></span> | <span data-ttu-id="55461-124">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="55461-124">The function call was successful.</span></span>  |
+|`WBEM_E_NOT_FOUND` | <span data-ttu-id="6366b-117">0x80041002</span><span class="sxs-lookup"><span data-stu-id="6366b-117">0x80041002</span></span> | <span data-ttu-id="6366b-118">지정된 된 속성 이름을 찾을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-118">The specified property name was not found.</span></span> |
+|`WBEM_E_INVALID_PARAMETER` | <span data-ttu-id="6366b-119">'(0x80041008</span><span class="sxs-lookup"><span data-stu-id="6366b-119">0x80041008</span></span> | <span data-ttu-id="6366b-120">매개 변수가 잘못 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-120">A parameter is not valid.</span></span> |
+|`WBEM_E_NOT_SUPPORTED` | <span data-ttu-id="6366b-121">0x8004100c</span><span class="sxs-lookup"><span data-stu-id="6366b-121">0x8004100c</span></span> | <span data-ttu-id="6366b-122">요청 된 속성이 형식의 됩니다 `CIM_OBJECT` 또는 `CIM_ARRAY`합니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-122">The requested property is of type are `CIM_OBJECT` or `CIM_ARRAY`.</span></span> |
+|`WBEM_S_NO_ERROR` | <span data-ttu-id="6366b-123">0</span><span class="sxs-lookup"><span data-stu-id="6366b-123">0</span></span> | <span data-ttu-id="6366b-124">함수 호출이 성공 했습니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-124">The function call was successful.</span></span>  |
   
-## <a name="remarks"></a><span data-ttu-id="55461-125">설명</span><span class="sxs-lookup"><span data-stu-id="55461-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6366b-125">설명</span><span class="sxs-lookup"><span data-stu-id="6366b-125">Remarks</span></span>
 
-<span data-ttu-id="55461-126">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::GetPropertyHandle](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle) 메서드.</span><span class="sxs-lookup"><span data-stu-id="55461-126">This function wraps a call to the [IWbemClassObject::GetPropertyHandle](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle) method.</span></span>
+<span data-ttu-id="6366b-126">이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::GetPropertyHandle](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle) 메서드.</span><span class="sxs-lookup"><span data-stu-id="6366b-126">This function wraps a call to the [IWbemClassObject::GetPropertyHandle](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle) method.</span></span>
 
-<span data-ttu-id="55461-127">이 핸들을 사용 하 여 속성을 사용 하는 경우 식별 [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) 읽기 또는 쓰기 속성 값에 대 한 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="55461-127">You can use this handle to identify properties when using  [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) methods to read or write property values.</span></span>
+<span data-ttu-id="6366b-127">이 핸들을 사용 하 여 속성을 사용 하는 경우 식별 [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) 읽기 또는 쓰기 속성 값에 대 한 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-127">You can use this handle to identify properties when using  [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) methods to read or write property values.</span></span>
 
-<span data-ttu-id="55461-128">이외의 모든 데이터 형식의 속성에 대 한 검색할 수 핸들 `CIM_OBJECT` 고 `CIM_ARRAY`입니다.</span><span class="sxs-lookup"><span data-stu-id="55461-128">Handles can be retrieved for properties of all data types other than `CIM_OBJECT` and `CIM_ARRAY`.</span></span> <span data-ttu-id="55461-129">클래스의 모든 인스턴스에서 처리 작업을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="55461-129">Returned handles work across all instances of a class.</span></span>
+<span data-ttu-id="6366b-128">이외의 모든 데이터 형식의 속성에 대 한 검색할 수 핸들 `CIM_OBJECT` 고 `CIM_ARRAY`입니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-128">Handles can be retrieved for properties of all data types other than `CIM_OBJECT` and `CIM_ARRAY`.</span></span> <span data-ttu-id="6366b-129">클래스의 모든 인스턴스에서 처리 작업을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="6366b-129">Returned handles work across all instances of a class.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="55461-130">요구 사항</span><span class="sxs-lookup"><span data-stu-id="55461-130">Requirements</span></span>  
-<span data-ttu-id="55461-131">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="55461-131">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="6366b-130">요구 사항</span><span class="sxs-lookup"><span data-stu-id="6366b-130">Requirements</span></span>  
+<span data-ttu-id="6366b-131">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="6366b-131">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="55461-132">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="55461-132">**Header:** WMINet_Utils.idl</span></span>  
+ <span data-ttu-id="6366b-132">**헤더:** WMINet_Utils.idl</span><span class="sxs-lookup"><span data-stu-id="6366b-132">**Header:** WMINet_Utils.idl</span></span>  
   
- <span data-ttu-id="55461-133">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="55461-133">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
+ <span data-ttu-id="6366b-133">**.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span><span class="sxs-lookup"><span data-stu-id="6366b-133">**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="55461-134">참고자료</span><span class="sxs-lookup"><span data-stu-id="55461-134">See also</span></span>  
-[<span data-ttu-id="55461-135">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="55461-135">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)
+## <a name="see-also"></a><span data-ttu-id="6366b-134">참고자료</span><span class="sxs-lookup"><span data-stu-id="6366b-134">See also</span></span>  
+[<span data-ttu-id="6366b-135">WMI 및 성능 카운터 (관리 되지 않는 API 참조)</span><span class="sxs-lookup"><span data-stu-id="6366b-135">WMI and Performance Counters (Unmanaged API Reference)</span></span>](index.md)

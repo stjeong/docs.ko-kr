@@ -18,16 +18,16 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 3a0b3242e8ae29b9d21dc50d3ea0476967e9746f
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47171974"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47192864"
 ---
-# <a name="iassemblycacheitemcreatestream-method"></a><span data-ttu-id="a6c7e-102">IAssemblyCacheItem::CreateStream 메서드</span><span class="sxs-lookup"><span data-stu-id="a6c7e-102">IAssemblyCacheItem::CreateStream Method</span></span>
-<span data-ttu-id="a6c7e-103">지정한 이름 및 형식을 사용 하 여 스트림을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-103">Creates a stream with the specified name and format.</span></span>  
+# <a name="iassemblycacheitemcreatestream-method"></a><span data-ttu-id="0c45d-102">IAssemblyCacheItem::CreateStream 메서드</span><span class="sxs-lookup"><span data-stu-id="0c45d-102">IAssemblyCacheItem::CreateStream Method</span></span>
+<span data-ttu-id="0c45d-103">지정한 이름 및 형식을 사용 하 여 스트림을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="0c45d-103">Creates a stream with the specified name and format.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a6c7e-104">구문</span><span class="sxs-lookup"><span data-stu-id="a6c7e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0c45d-104">구문</span><span class="sxs-lookup"><span data-stu-id="0c45d-104">Syntax</span></span>  
   
 ```  
 HRESULT CreateStream (  
@@ -40,31 +40,31 @@ HRESULT CreateStream (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="a6c7e-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="a6c7e-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="0c45d-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="0c45d-105">Parameters</span></span>  
  `dwFlags`  
- <span data-ttu-id="a6c7e-106">[in] 같은 값이 지원에 정의 된 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-106">[in] Flags defined in Fusion.idl.</span></span>  
+ <span data-ttu-id="0c45d-106">[in] 같은 값이 지원에 정의 된 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="0c45d-106">[in] Flags defined in Fusion.idl.</span></span>  
   
  `pszStreamName`  
- <span data-ttu-id="a6c7e-107">[in] 만들 스트림의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-107">[in] The name of the stream to be created.</span></span>  
+ <span data-ttu-id="0c45d-107">[in] 만들 스트림의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="0c45d-107">[in] The name of the stream to be created.</span></span>  
   
  `dwFormat`  
- <span data-ttu-id="a6c7e-108">[in] 스트리밍할 수 파일의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-108">[in] The format of the file to be streamed.</span></span>  
+ <span data-ttu-id="0c45d-108">[in] 스트리밍할 수 파일의 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="0c45d-108">[in] The format of the file to be streamed.</span></span>  
   
  `dwFormatFlags`  
- <span data-ttu-id="a6c7e-109">[in] 같은 값이 지원에 정의 된 형식에 따른 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-109">[in] Format-specific flags defined in Fusion.idl.</span></span>  
+ <span data-ttu-id="0c45d-109">[in] 같은 값이 지원에 정의 된 형식에 따른 플래그입니다.</span><span class="sxs-lookup"><span data-stu-id="0c45d-109">[in] Format-specific flags defined in Fusion.idl.</span></span>  
   
  `ppIStream`  
- <span data-ttu-id="a6c7e-110">[out] 반환 된 주소에 대 한 포인터 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-110">[out] A pointer to the address of the returned [IStream](/windows/desktop/api/objidl/nn-objidl-istream) instance.</span></span>  
+ <span data-ttu-id="0c45d-110">[out] 반환 된 주소에 대 한 포인터 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="0c45d-110">[out] A pointer to the address of the returned [IStream](/windows/desktop/api/objidl/nn-objidl-istream) instance.</span></span>  
   
  `puliMaxSize`  
- <span data-ttu-id="a6c7e-111">[in, 선택 사항] 참조 하는 스트림의 최대 크기 `ppIStream`합니다.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-111">[in, optional] The maximum size of the stream referenced by `ppIStream`.</span></span>  
+ <span data-ttu-id="0c45d-111">[in, 선택 사항] 참조 하는 스트림의 최대 크기 `ppIStream`합니다.</span><span class="sxs-lookup"><span data-stu-id="0c45d-111">[in, optional] The maximum size of the stream referenced by `ppIStream`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a6c7e-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="a6c7e-112">Requirements</span></span>  
- <span data-ttu-id="a6c7e-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="a6c7e-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="0c45d-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="0c45d-112">Requirements</span></span>  
+ <span data-ttu-id="0c45d-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0c45d-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a6c7e-114">**헤더:** Fusion.h</span><span class="sxs-lookup"><span data-stu-id="a6c7e-114">**Header:** Fusion.h</span></span>  
+ <span data-ttu-id="0c45d-114">**헤더:** Fusion.h</span><span class="sxs-lookup"><span data-stu-id="0c45d-114">**Header:** Fusion.h</span></span>  
   
- <span data-ttu-id="a6c7e-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a6c7e-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="0c45d-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="0c45d-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a6c7e-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a6c7e-116">See Also</span></span>  
- [<span data-ttu-id="a6c7e-117">IAssemblyCacheItem 인터페이스</span><span class="sxs-lookup"><span data-stu-id="a6c7e-117">IAssemblyCacheItem Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+## <a name="see-also"></a><span data-ttu-id="0c45d-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0c45d-116">See Also</span></span>  
+ [<span data-ttu-id="0c45d-117">IAssemblyCacheItem 인터페이스</span><span class="sxs-lookup"><span data-stu-id="0c45d-117">IAssemblyCacheItem Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
