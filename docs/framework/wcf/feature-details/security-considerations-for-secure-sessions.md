@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 0d5be591-9a7b-4a6f-a906-95d3abafe8db
 author: BrucePerlerMS
 ms.openlocfilehash: 470ffc007ed73b28beba24bd0eb9c670dea9337d
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47109383"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47199972"
 ---
 # <a name="security-considerations-for-secure-sessions"></a>보안 세션에 대한 보안 고려 사항
 보안 세션 구현 시 보안에 영향을 주는 다음 항목에 대해 고려해야 합니다. 보안 고려 사항에 대 한 자세한 내용은 참조 하세요. [보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md) 하 고 [보안 모범 사례](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)합니다.  

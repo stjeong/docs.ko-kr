@@ -11,11 +11,11 @@ ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 4ec2ba884f0f60182dd59bb6a4491e223f43ce1a
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47073543"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47196618"
 ---
 # <a name="ltoidmapgt-element"></a>&lt;oidMap&gt; 요소
 ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.  

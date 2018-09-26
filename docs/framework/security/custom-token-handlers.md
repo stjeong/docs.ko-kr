@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 5062669f-8bfc-420a-a25d-d8ab992ab10e
 author: BrucePerlerMS
 ms.openlocfilehash: c27abb5df7f895a9dec5f7f784f1a3ff0b31edb7
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47082385"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47200882"
 ---
 # <a name="custom-token-handlers"></a>사용자 지정 토큰 처리기
 이 항목에서는 WIF의 토큰 처리기 및 토큰 처리기를 사용하여 토큰을 처리하는 방법을 설명합니다. WIF에서 기본적으로 지원되지 않는 토큰 형식에 대한 사용자 지정 토큰 처리기를 만드는 데 필요한 항목에 대해서도 설명합니다.  

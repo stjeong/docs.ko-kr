@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: ef4c3229-b151-4d85-8091-e6456af9b935
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: ab1644d23e4d6d78b62e701902e5ec39e134b38b
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b15e569ff6e42298c0a1de02f77ab7c302c70d86
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745122"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47193514"
 ---
 # <a name="ltassertgt-element"></a>&lt;assert&gt; 요소
 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> 메서드를 호출할 때 메시지 상자를 표시할지 여부를 지정합니다. 또한 메시지를 작성할 파일의 이름도 지정합니다.  
@@ -38,8 +37,8 @@ ms.locfileid: "32745122"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`assertuienabled`|선택적 특성입니다.<br /><br /> 지정 여부를 표시 하는 메시지 상자는 **Debug.Assert** 메서드를 평가 **false**합니다.|  
-|`logfilename`|선택적 특성입니다.<br /><br /> 경우에는 메시지를 기록할 파일의 이름을 지정 **Debug.Assert** 계산 **false**합니다.|  
+|`assertuienabled`|선택적 특성입니다.<br /><br /> 상자 메시지를 표시할 때 여부를 지정 합니다 **Debug.Assert** 메서드를 평가 **false**합니다.|  
+|`logfilename`|선택적 특성입니다.<br /><br /> 가 메시지를 쓸 파일의 이름을 지정 **Debug.Assert** 로 평가 **false**합니다.|  
   
 ## <a name="assertuienabled-attribute"></a>assertuienabled 특성  
   
@@ -59,10 +58,10 @@ ms.locfileid: "32745122"
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 두 특성 모두에  **\<assert >** 요소는 선택 사항입니다. 메시지를 쓸 파일을 지정 하지 않고 메시지 상자를 해제할 수 있습니다 또는 메시지 상자가 활성화 된 상태에서 메시지를 쓸 파일을 지정할 수 있습니다.  
+ 두 특성 모두에  **\<assert >** 요소는 선택 사항입니다. 메시지를 쓸 파일을 지정 하지 않고 메시지 상자를 비활성화할 수 있습니다 또는 메시지 상자가 활성화 된 상태에서 메시지를 쓸 파일을 지정할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 호출 하는 경우 메시지 상자 표시를 해제 하는 방법을 보여 줍니다 **Debug.Assert** 에 메시지 쓰기 및 `c:\log.txt`합니다.  
+ 다음 예제에서는 호출 하는 경우 메시지 상자 표시를 사용 하지 않도록 설정 하는 방법을 보여 줍니다 **Debug.Assert** 메시지를 쓰고 `c:\log.txt`합니다.  
   
 ```xml  
 <configuration>  
