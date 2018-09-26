@@ -3,13 +3,12 @@ title: '&lt;claimsAuthorizationManager&gt;'
 ms.date: 03/30/2017
 ms.assetid: 9354eee3-f692-4ad6-8427-3169686b8bcc
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 06824e20286f8905ad3a8ac9d2b4a30366a6ec10
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a745339cffdada56a9b7f27f3f879b9d437c2da2
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32757374"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188689"
 ---
 # <a name="ltclaimsauthorizationmanagergt"></a>&lt;claimsAuthorizationManager&gt;
 들어오는 클레임에 대 한 클레임 권한 부여 관리자를 등록합니다.  
@@ -37,10 +36,10 @@ ms.locfileid: "32757374"
   
 |특성|설명|  
 |---------------|-----------------|  
-|type|사용자 지정 형식에서 파생 되는 <xref:System.Security.Claims.ClaimsAuthorizationManager> 클래스입니다. 지정 하는 방법에 대 한 자세한 내용은 `type` 특성을 참조 하십시오. [사용자 정의 형식 참조](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md)합니다.|  
+|type|사용자 지정 형식에서 파생 되는 <xref:System.Security.Claims.ClaimsAuthorizationManager> 클래스입니다. 지정 하는 방법에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오 [사용자 지정 형식 참조](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
- 없을 경우 없습니다 `type` 특성 또는 경우에는 `type` 특성 참조는 <xref:System.Security.Claims.ClaimsAuthenticationManager> 클래스는 `<claimsAuthorizationManager>` 요소는 자식 요소를 사용 하지 않는; 클래스에서 파생 되는 반면 <xref:System.Security.Claims.ClaimsAuthorizationManager> 자식 구성 요소를 정의할 수 있습니다.  
+ 없는 경우 없습니다 `type` 특성을 또는 경우에는 `type` 특성 참조를 <xref:System.Security.Claims.ClaimsAuthenticationManager> 클래스를 `<claimsAuthorizationManager>` 요소는 자식 요소를 사용 하지 않는; 클래스에서 파생 되는 반면 <xref:System.Security.Claims.ClaimsAuthorizationManager> 자식 구성 요소를 정의할 수 있습니다.  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -49,15 +48,15 @@ ms.locfileid: "32757374"
 |[\<identityConfiguration >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|서비스 수준 id 설정을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 기본 동작을 통해 제공 되는 <xref:System.Security.Claims.ClaimsAuthorizationManager> 클래스에는 항상 들어오는 클레임 권한을 부여 합니다. 되지 않은 경우 `type` 특성이 지정 된 경우는 `type` 특성 지정는 <xref:System.Security.Claims.ClaimsAuthorizationManager> 클래스는 `<claimsAuthorizationManager>` 요소는 자식 요소를 사용 하지 않습니다. 지정할 수는 `type` 에서 파생 된 특성 형식을 등록 하는 <xref:System.Security.Claims.ClaimsAuthorizationManager> 사용자 지정 동작을 구현 하는 클래스입니다. 파생된 클래스의 자식 요소를 통해 구성을 지원할 수 있습니다는 `<claimsAuthorizationManager>` 재정의 하 여 요소는 <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> 메서드 이러한 요소를 처리 합니다. 디자이너 클래스의 최대는 자식 요소에 대해 정의 된 스키마가입니다.  
+ 기본 동작을 통해 제공 된 <xref:System.Security.Claims.ClaimsAuthorizationManager> 클래스에는 항상 들어오는 클레임 권한을 부여 합니다. 없으면 `type` 특성을 지정 경우는 `type` 특성을 지정 합니다 <xref:System.Security.Claims.ClaimsAuthorizationManager> 클래스는 `<claimsAuthorizationManager>` 요소는 자식 요소를 사용 하지 않습니다. 지정할 수 있습니다 합니다 `type` 에서 파생 된 특성 형식을 등록 하는 <xref:System.Security.Claims.ClaimsAuthorizationManager> 사용자 지정 동작을 구현 하는 클래스입니다. 파생된 클래스의 자식 요소를 통해 구성을 지원할 수는 `<claimsAuthorizationManager>` 재정의 하 여 요소를 <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> 이러한 요소를 처리 하는 방법입니다. 자식 요소에 대해 정의 된 스키마 클래스의 디자이너에 게 달려 있습니다.  
   
 > [!IMPORTANT]
->  사용 하는 경우는 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 또는 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 에서 참조 되는 id 구성 코드에서 클레임 기반 액세스 제어를 제공 하는 클래스는 `<federationConfiguration>` 요소는 클레임 권한 부여 관리자 및 정책을 확인 하는 데 사용 되는 구성 권한 부여 결정 합니다. 수동 웹 시나리오 예: Windows Communication Foundation (WCF) 응용 프로그램 또는 응용 프로그램은 웹 기반을 하지 않은 시나리오에도 마찬가지입니다. 응용 프로그램 수동 웹 응용 프로그램이 아닌 경우는 `<claimsAuthorizationManager>` 요소 (및 해당 자식 정책 요소에 있는 경우)의 참조 된 id 구성이 적용 되는 유일한 설정 됩니다. 모든 다른 설정은 무시 됩니다. 자세한 내용은 참조는 [ \<federationConfiguration >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) 요소입니다.  
+>  사용 하는 경우는 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 또는 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 코드에서 참조 되는 id 구성에서 클레임 기반 액세스 제어를 제공 하는 클래스는 `<federationConfiguration>` 요소는 클레임 권한 부여 관리자와 확인 하는 데 사용 되는 정책 구성 권한 부여를 결정 합니다. 예를 들어 Windows Communication Foundation (WCF) 응용 프로그램 또는 웹을 기반으로 하지 않은 응용 프로그램 수동 웹 시나리오 하지 않은 시나리오에도 마찬가지입니다. 응용 프로그램 수동 웹 응용 프로그램이 아닌 경우는 `<claimsAuthorizationManager>` 요소 (및 해당 자식 정책 요소에 있는 경우) 참조 된 id 구성에 적용 되는 유일한 설정입니다. 다른 모든 설정은 무시 됩니다. 자세한 내용은 참조는 [ \<federationConfiguration >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) 요소입니다.  
   
- 설정 하는이 요소는 <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthorizationManager%2A?displayProperty=nameWithType> 속성입니다.  
+ 이 요소에 설정 된 <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthorizationManager%2A?displayProperty=nameWithType> 속성입니다.  
   
 ## <a name="example"></a>예제  
- 다음 XML 클레임 권한 부여에 대 한 구성을 부울 조합을 요청자에 게 리소스에 대해 작업을 수행할 수 있어야 하는 클레임을 지정 하며 각 리소스 작업 쌍으로 구성 정책을 구현 하는 관리자를 보여 줍니다. 이 정책을 사용할 수 있는 클레임 권한 부여 관리자를 구현 하는 코드에서 찾을 수 있습니다는 `ClaimsBasedAuthorization` 샘플.  
+ 다음 XML을 클레임 권한 부여에 대 한 구성을 요청 자가 리소스에 대해 작업을 수행할 수 있어야 하는 클레임의 부울 조합을 지정 하는 각 리소스 작업 쌍으로 이루어진 정책 구현 하는 관리자를 보여 줍니다. 이 정책을 사용할 수 있는 클레임 인증 관리자를 구현 하는 코드에서 찾을 수 있습니다는 `ClaimsBasedAuthorization` 샘플입니다.  
   
 ```xml  
 <system.identityModel>  

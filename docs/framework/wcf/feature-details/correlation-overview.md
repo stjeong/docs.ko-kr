@@ -2,12 +2,12 @@
 title: 상관 관계 개요
 ms.date: 03/30/2017
 ms.assetid: edcc0315-5d26-44d6-a36d-ea554c418e9f
-ms.openlocfilehash: 8ac5d39866b23bc134f009fdb0df6ebf56c6d234
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 342fa1d89bc179b6dabb59f87d63170980992a06
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47113938"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47205397"
 ---
 # <a name="correlation-overview"></a>상관 관계 개요
 상관 관계는 워크플로 서비스 메시지를 서로 연결하거나 응용 프로그램 상태와 연결하는 메커니즘입니다. 예를 들어 응답을 초기 요청과 연결하거나 특정 주문 ID를 주문 처리 워크플로의 지속된 상태와 연결할 수 있습니다. 이 항목에서는 상관 관계에 대해 간략하게 설명하고 이 단원의 다른 항목에서는 각 상관 관계 형식에 대해 자세히 설명합니다.  
@@ -20,10 +20,10 @@ ms.locfileid: "47113938"
 ## <a name="protocol-based-correlation"></a>프로토콜 기반 상관 관계  
  프로토콜 기반 상관 관계는 전송 메커니즘을 사용하여 메시지를 서로 연결하거나 적절한 인스턴스와 연결합니다. 일부 시스템 제공 프로토콜 상관 관계에는 요청-회신 상관 관계와 컨텍스트 기반 상관 관계가 포함됩니다. 요청-회신 상관 관계는 <xref:System.ServiceModel.Activities.Send>와 쌍을 이루는 <xref:System.ServiceModel.Activities.ReceiveReply> 또는 <xref:System.ServiceModel.Activities.Receive>와 쌍을 이루는 <xref:System.ServiceModel.Activities.SendReply>처럼 한 쌍의 메시징 작업을 상호 연결하여 양방향 작업을 만드는 데 사용됩니다. [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Workflow Designer에서는 이러한 패턴을 빠르게 구현할 수 있도록 작업 템플릿 집합도 제공합니다. 컨텍스트 기반 상관 관계에 설명 된 컨텍스트 교환 메커니즘을 기반으로 합니다 [.NET Context Exchange Protocol Specification](https://go.microsoft.com/fwlink/?LinkID=166059)합니다. 컨텍스트 상관 관계를 사용하려면 엔드포인트에서 <xref:System.ServiceModel.BasicHttpContextBinding>, <xref:System.ServiceModel.WSHttpContextBinding> 또는 <xref:System.ServiceModel.NetTcpContextBinding>을 사용해야 합니다.  
   
- 프로토콜 상관 관계에 대 한 자세한 내용은 참조 하세요. [컨텍스트 교환](../../../../docs/framework/wcf/feature-details/context-exchange-correlation.md)하십시오 [영 속 이중](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md), 및 [요청-회신](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md)합니다. 사용에 대 한 자세한 내용은 합니다 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Workflow Designer 작업 템플릿을 참조 하세요 [메시징 작업](../../../../docs/framework/wcf/feature-details/messaging-activities.md)합니다. 샘플 코드에 대 한 참조를 [영 속 이중 &#91;WF 샘플&#93; ](../../../../docs/framework/windows-workflow-foundation/samples/durable-duplex.md) 하 고 [NetContextExchangeCorrelation](https://msdn.microsoft.com/library/93c74a1a-b9e2-46c6-95c0-c9b0e9472caf) 샘플입니다.  
+ 프로토콜 상관 관계에 대 한 자세한 내용은 참조 하세요. [영 속 이중](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md), 및 [요청-회신](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md)합니다. 사용에 대 한 자세한 내용은 합니다 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Workflow Designer 작업 템플릿을 참조 하세요 [메시징 작업](../../../../docs/framework/wcf/feature-details/messaging-activities.md)합니다. 샘플 코드에 대 한 참조를 [영 속 이중 &#91;WF 샘플&#93; ](../../../../docs/framework/windows-workflow-foundation/samples/durable-duplex.md) 하 고 [NetContextExchangeCorrelation](https://msdn.microsoft.com/library/93c74a1a-b9e2-46c6-95c0-c9b0e9472caf) 샘플입니다.  
   
 ## <a name="content-based-correlation"></a>내용 기반 상관 관계  
- 내용 기반 상관 관계는 메시지에 있는 일부 정보를 사용하여 해당 메시지를 특정 인스턴스와 연결합니다. 프로토콜 기반 상관 관계와 달리 내용 기반 상관 관계는 응용 프로그램 작성자가 연결된 각 메시지에서 이러한 데이터를 찾을 수 있는 위치를 명시적으로 지정해야 합니다. 내용 기반 상관 관계를 사용하는 작업은 <xref:System.ServiceModel.MessageQuerySet>을 사용하여 이 메시지 데이터를 지정합니다. 내용 기반 상관 관계는 <xref:System.ServiceModel.BasicHttpContextBinding>과 같은 컨텍스트 바인딩 중 하나를 사용하지 않는 서비스와 통신할 때 유용합니다. 내용 기반 상관 관계에 대 한 자세한 내용은 참조 하세요. [콘텐츠 기반](../../../../docs/framework/wcf/feature-details/content-based-correlation.md)입니다. 샘플 코드에 대 한 참조를 [내용 기반 상관 관계](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md) 하 고 [계산기 상관 관계가 지정 된](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md) 샘플.  
+ 내용 기반 상관 관계는 메시지에 있는 일부 정보를 사용하여 해당 메시지를 특정 인스턴스와 연결합니다. 프로토콜 기반 상관 관계와 달리 내용 기반 상관 관계는 응용 프로그램 작성자가 연결된 각 메시지에서 이러한 데이터를 찾을 수 있는 위치를 명시적으로 지정해야 합니다. 내용 기반 상관 관계를 사용하는 작업은 <xref:System.ServiceModel.MessageQuerySet>을 사용하여 이 메시지 데이터를 지정합니다. 내용 기반 상관 관계는 <xref:System.ServiceModel.BasicHttpContextBinding>과 같은 컨텍스트 바인딩 중 하나를 사용하지 않는 서비스와 통신할 때 유용합니다. 샘플 코드에 대 한 참조를 [내용 기반 상관 관계](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md) 하 고 [계산기 상관 관계가 지정 된](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md) 샘플.  
   
 ## <a name="see-also"></a>참고 항목  
  [내용 기반 상관 관계](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)  

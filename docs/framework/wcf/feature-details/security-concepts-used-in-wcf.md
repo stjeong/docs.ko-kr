@@ -3,13 +3,12 @@ title: WCF에서 사용되는 보안 개념
 ms.date: 03/30/2017
 ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: c309b5e5c461b58e887ea634bf3b5177b7c0329b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9fdb9d2075fe6b9521a0df6804e0c46ca59c90f0
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521343"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188238"
 ---
 # <a name="security-concepts-used-in-wcf"></a>WCF에서 사용되는 보안 개념
 Windows Communication Foundation (WCF) 보안 개념을 이미 사용 중인 빌드 및 다양 한 보안 인프라에 배포 합니다.  

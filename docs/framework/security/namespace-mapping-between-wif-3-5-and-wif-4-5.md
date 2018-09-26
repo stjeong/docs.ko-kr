@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: a092d98c-444d-4336-a644-63c2e11e96c8
 author: BrucePerlerMS
 ms.openlocfilehash: f3de86e19d440a43f18b3a16ad4af749a476d1dd
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47157391"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47195904"
 ---
 # <a name="namespace-mapping-between-wif-35-and-wif-45"></a>WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑
 .NET 4.5부터 WIF(Windows Identity Foundation)는 완전히 .NET Framework에 통합되었습니다. 이와 같이 통합하면 이름이 변경되고 WIF 네임스페이스와 API 화면이 일부 통합됩니다. 이 항목에서는 WIF 3.5 네임스페이스와 WIF 4.5 네임스페이스 사이의 일반적인 매핑 및 지침을 제공합니다. 이 항목에서는 모든 정보를 제공하는 것이 아니라 WIF 4.5에서 익숙한 WIF 3.5 클래스가 있는 위치에 대한 일반적인 정보만 제공합니다. WIF 3.5와 WIF 4.5 간의 차이점에 대한 자세한 내용은 [Windows Identity Foundation 4.5의 새로운 기능](../../../docs/framework/security/whats-new-in-wif.md)을 참조하세요. WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 방법에 대한 지침은 [WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)을 참조하세요.  

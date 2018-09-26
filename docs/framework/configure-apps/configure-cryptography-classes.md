@@ -12,11 +12,11 @@ ms.assetid: eee3ccb8-2c0d-4f35-b38d-6892a46c14e5
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: b9153b4525063d6c52e22d754d68ffa42e914d00
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47074903"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47196956"
 ---
 # <a name="configuring-cryptography-classes"></a>암호화 클래스 구성
 [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] 컴퓨터 관리자는 기본 암호화 알고리즘 및 알고리즘 구현을 사용 하 여.NET Framework 및 적절 하 게 작성 된 응용 프로그램을 구성할 수 있습니다.  예를 들어, 암호화 알고리즘의 자체 구현이 있는 기업 가능 구현에는 구현에서 제공 하는 대신 기본값을 [!INCLUDE[winsdkshort](../../../includes/winsdkshort-md.md)]입니다. 암호화를 사용 하는 관리 되는 응용 프로그램 항상 특정 구현에 명시적으로 바인딩할 수도 있습니다, 있지만 암호화 구성 시스템을 사용 하 여 암호화 개체를 생성 하는 것이 좋습니다.  

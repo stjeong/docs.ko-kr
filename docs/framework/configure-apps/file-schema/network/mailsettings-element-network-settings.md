@@ -11,11 +11,11 @@ ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: f3a706edaeba551139368568a7467e0cdab3524c
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47171610"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47208596"
 ---
 # <a name="ltmailsettingsgt-element-network-settings"></a>&lt;mailSettings&gt; 요소 (네트워크 설정)
 메일 보내기 옵션을 구성 합니다.  

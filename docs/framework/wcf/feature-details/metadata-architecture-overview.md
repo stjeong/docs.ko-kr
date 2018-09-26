@@ -5,11 +5,11 @@ helpviewer_keywords:
 - metadata [WCF], overview
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
 ms.openlocfilehash: d0fc45b5ccabedb127061090eed1f6b63fd7acba
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47108392"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47199153"
 ---
 # <a name="metadata-architecture-overview"></a>메타데이터 아키텍처 개요
 Windows Communication Foundation (WCF) 내보내기, 게시, 검색 및 서비스 메타 데이터 가져오기에 대 한 다양 한 인프라를 제공 합니다. WCF 서비스 메타 데이터를 사용 하 여 Svcutil.exe와 같은 도구를 자동으로 서비스에 액세스 하기 위한 클라이언트 코드를 생성할 수 있도록 서비스의 끝점과 상호 작용 하는 방법을 설명 합니다.  

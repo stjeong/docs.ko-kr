@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: a4570ce7-864e-461b-85d8-0f7bcc53c2c8
 author: BrucePerlerMS
 ms.openlocfilehash: 22daa3edbda5be44ce67a6b9a93946505f3fcc12
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47070866"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47200063"
 ---
 # <a name="message-security-binding"></a>메시지 보안 바인딩
 이 섹션에는 WCF에서 Windows 서비스의 메시지 보안 바인딩을 보여 주는 샘플이 들어 있습니다.  

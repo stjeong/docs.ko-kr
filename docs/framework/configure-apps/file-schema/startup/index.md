@@ -9,11 +9,11 @@ ms.assetid: 03de6972-442a-4648-9f3e-efa654e3b949
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 4cdf6a051552ab1effd9c4d9c783297a62602f7a
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47078164"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47204926"
 ---
 # <a name="startup-settings-schema"></a>시작 설정 스키마
 시작 설정은 응용 프로그램을 실행해야 하는 공용 언어 런타임의 버전을 지정합니다.  

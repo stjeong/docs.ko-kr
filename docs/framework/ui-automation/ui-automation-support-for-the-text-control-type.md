@@ -9,11 +9,11 @@ ms.assetid: ab0d0ada-8a71-4547-9c03-aadf675938f2
 author: Xansky
 ms.author: mhopkins
 ms.openlocfilehash: 36a95ce3d00b52ecb3b83a6d95bff94dbeb43fb2
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47088700"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47200804"
 ---
 # <a name="ui-automation-support-for-the-text-control-type"></a>Text 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]

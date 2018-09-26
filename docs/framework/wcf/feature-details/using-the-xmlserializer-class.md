@@ -8,11 +8,11 @@ helpviewer_keywords:
 - XmlSerializer [WCF], using
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
 ms.openlocfilehash: abb679971771f6bff5bd1c84ff744e2fcbb9c45a
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46529835"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188728"
 ---
 # <a name="using-the-xmlserializer-class"></a>XmlSerializer 클래스 사용
 Windows Communication Foundation (WCF) 두 가지 다른 serialization 기술을 사용 하 여 클라이언트 및 서비스, 프로세스를 serialization 이라고 간에 전송 되는 XML로 응용 프로그램에서 데이터를 변환할 수 있습니다.  

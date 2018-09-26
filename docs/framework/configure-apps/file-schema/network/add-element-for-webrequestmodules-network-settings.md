@@ -12,13 +12,12 @@ helpviewer_keywords:
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: f3c3ea63df8d99154c42e40b359180ad1065f6c5
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 64df186be7d9e503ac22e177bca8da31e165f240
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47027015"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188186"
 ---
 # <a name="ltaddgt-element-for-webrequestmodules-network-settings"></a>&lt;추가&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에 사용자 지정 웹 요청 모듈을 추가합니다.  

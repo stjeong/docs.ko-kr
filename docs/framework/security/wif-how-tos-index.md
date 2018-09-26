@@ -3,13 +3,12 @@ title: WIF 방법 인덱스
 ms.date: 03/30/2017
 ms.assetid: 4e8c6d04-fc2e-4b55-8717-c4cbaf681381
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: b4251ea4afb149aaecf4b98706ca1d43840ea771
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a116486281c043ad9f35d3f671ef3e7f7dc503b8
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400057"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47206426"
 ---
 # <a name="wif-how-to39s-index"></a>WIF 방법 인덱스
 -   [방법: WIF를 사용하여 클레임 인식 ASP.NET MVC 웹 응용 프로그램 빌드](../../../docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  

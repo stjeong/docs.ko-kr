@@ -11,11 +11,11 @@ ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: fab681042055edac0291b917f55656350261d6af
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47083821"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47201038"
 ---
 # <a name="ltprovideroptiongt-element"></a>&lt;providerOption&gt; 요소
 언어 공급자에 대 한 컴파일러 버전 특성을 지정합니다.  

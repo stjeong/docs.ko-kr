@@ -3,11 +3,11 @@ title: 활성 패턴(F#)
 description: '활성 패턴을 사용 하 여 F # 프로그래밍 언어의 입력된 데이터를 분할 하는 명명 된 파티션을 정의 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 4fb7d3e2b9c7e6f1c1ed9d64a47728c7f40017c8
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47108964"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47216753"
 ---
 # <a name="active-patterns"></a>활성 패턴
 

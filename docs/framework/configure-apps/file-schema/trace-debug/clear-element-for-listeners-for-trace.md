@@ -10,11 +10,11 @@ ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 91b4b4f132138fa6752c1da9b28e7a3ab7fad006
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47082892"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47209725"
 ---
 # <a name="ltcleargt-element-for-ltlistenersgt-for-lttracegt"></a>&lt;지우기&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;추적&gt;
 추적의 `Listeners` 컬렉션을 지웁니다.  

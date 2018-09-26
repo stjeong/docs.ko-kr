@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 68862534-3b2e-4270-b097-8121b12a2c97
 author: BrucePerlerMS
 ms.openlocfilehash: 830339682f86d3882ff2cfc2d07d14145b987dde
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47157521"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47194102"
 ---
 # <a name="activity-tracing-in-message-security"></a>메시지 보안의 동작 추적
 이 항목에서는 보안 처리에 대한 동작 추적에 대해 설명합니다. 동작 추적은 다음과 같은 세 가지 단계로 발생합니다.  
