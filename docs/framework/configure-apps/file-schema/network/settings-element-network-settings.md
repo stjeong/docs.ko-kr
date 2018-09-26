@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 3f717705a6cd4cc29fe333f5012c7fec466d350b
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 9d6189c736e1f2843a986c3a96f8547e9a231db0
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752480"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47075150"
 ---
 # <a name="ltsettingsgt-element-network-settings"></a>&lt;설정&gt; 요소 (네트워크 설정)
 <xref:System.Net?displayProperty=nameWithType> 네임스페이스에 대한 기본 네트워크 옵션을 구성합니다.  
@@ -49,9 +48,9 @@ ms.locfileid: "32752480"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[HttpListener](../../../../../docs/framework/configure-apps/file-schema/network/httplistener-element-network-settings.md)|사용 하는 매개 변수를 사용자 지정은 <xref:System.Net.HttpListener> 클래스입니다.|  
-|[httpWebRequest](../../../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md)|웹 요청 매개 변수를 사용자 지정합니다.|  
-|[i p v 6](../../../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)|인터넷 프로토콜 버전 6 (IPv6)을 지원 합니다.|  
+|[httpListener](../../../../../docs/framework/configure-apps/file-schema/network/httplistener-element-network-settings.md)|매개 변수에서 사용 하는 사용자 지정을 <xref:System.Net.HttpListener> 클래스입니다.|  
+|[httpWebRequest](../../../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md)|웹 요청 매개 변수를 지정합니다.|  
+|[ipv6](../../../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)|인터넷 프로토콜 버전 6(ipv6)을 지원 합니다.|  
 |[\<performanceCounter > 요소 (네트워크 설정)](../../../../../docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md)|네트워크 성능 카운터를 사용 하도록 설정 합니다.|  
 |[servicePointManager](../../../../../docs/framework/configure-apps/file-schema/network/servicepointmanager-element-network-settings.md)|네트워크 리소스에 대 한 연결을 구성합니다.|  
 |[소켓](../../../../../docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md)|소켓 작업 완료 포트를 사용 하는지 여부를 지정 합니다.|  
