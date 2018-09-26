@@ -11,16 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: fb050a8d73c42094caf83ba00c5dfc2e4d472723
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0640b4c54b6f1429bce4947ec536352f240ca719
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748674"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47172734"
 ---
 # <a name="ltruntimegt-element"></a>&lt;런타임&gt; 요소
-응용 프로그램을 구성 하는 공용 언어 런타임에서 사용 되는 정보를 제공 합니다.  
+응용 프로그램을 구성 하려면 공용 언어 런타임에서 사용 되는 정보를 제공 합니다.  
   
  \<configuration>  
 \<runtime>  
@@ -51,7 +50,7 @@ ms.locfileid: "32748674"
 |[\<bypassTrustedAppStrongNames>](../../../../../docs/framework/configure-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md)|신뢰할 수 있는 어셈블리에 대한 강력한 이름 확인을 바이패스할지를 지정합니다.|  
 |[\<CompatSortNLSVersion>](../../../../../docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md)|문자열 비교를 수행할 때 런타임에서 레거시 정렬 동작을 사용 하도록 지정 합니다.|  
 |[\<developmentMode>](../../../../../docs/framework/configure-apps/file-schema/runtime/developmentmode-element.md)|런타임이 DEVPATH 환경 변수로 지정된 디렉터리에서 어셈블리를 검색할지를 지정합니다.|  
-|[\<disableCachingBindingFailures>](../../../../../docs/framework/configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md)|.NET Framework 버전 2.0의에서 기본 동작인 바인딩 실패 캐싱은 되지 않는지 여부를 지정 합니다.|  
+|[\<disableCachingBindingFailures>](../../../../../docs/framework/configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md)|.NET Framework 버전 2.0의에서 기본 동작인 바인딩 실패 캐싱 비활성화 되었는지 여부를 지정 합니다.|  
 |[\<disableCommitThreadStack>](../../../../../docs/framework/configure-apps/file-schema/runtime/disablecommitthreadstack-element.md)|스레드가 시작될 때 전체 스레드 스택을 커밋할지 여부를 지정합니다.|  
 |[\<disableFusionUpdatesFromADManager>](../../../../../docs/framework/configure-apps/file-schema/runtime/disablefusionupdatesfromadmanager-element.md)|런타임 호스트가 응용 프로그램 도메인에 대한 구성 설정을 재정의할 수 있도록 허용하는 기본 동작을 사용하지 않도록 설정할지를 지정합니다.|  
 |[\<EnableAmPmParseAdjustment>](../../../../../docs/framework/configure-apps/file-schema/runtime/enableampmparseadjustment-element.md)|날짜 및 시간 구문 분석 메서드가 조정된 규칙 집합을 사용하여 일, 월, 시간 및 오전/오후 지정자만 포함하는 날짜 문자열을 구문 분석할지를 결정합니다.|  
@@ -59,7 +58,7 @@ ms.locfileid: "32748674"
 |[\<etwEnable>](../../../../../docs/framework/configure-apps/file-schema/runtime/etwenable-element.md)|공용 언어 런타임 이벤트에 대해 ETW(Windows용 이벤트 추적)를 사용하도록 설정할지를 지정합니다.|  
 |[\<forcePerformanceCounterUniqueSharedMemoryReads>](../../../../../docs/framework/configure-apps/file-schema/runtime/forceperformancecounteruniquesharedmemoryreads-element.md)|PerfCounter.dll이 .NET Framework 버전 1.1 응용 프로그램에서 CategoryOptions 레지스트리 설정을 사용하여 성능 카운터 데이터를 범주별 공유 메모리에서 로드할지 또는 전역 메모리에서 로드할지를 결정하도록 지정합니다.|  
 |[\<gcAllowVeryLargeObjects>](../../../../../docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md)|64비트 플랫폼에서 총 크기가 2GB보다 큰 배열을 사용하도록 설정합니다.|  
-|[\<gcConcurrent>](../../../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md)|공용 언어 런타임의 가비지 컬렉션을 동시에 실행 여부를 지정 합니다.|  
+|[\<gcConcurrent>](../../../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md)|공용 언어 런타임은 가비지 컬렉션을 동시에 실행 되는지 여부를 지정 합니다.|  
 |[\<GCCpuGroup>](../../../../../docs/framework/configure-apps/file-schema/runtime/gccpugroup-element.md)|가비지 수집에서 여러 CPU 그룹을 지원할지를 지정합니다.|  
 |[\<gcServer>](../../../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md)|공용 언어 런타임이 서버 가비지 컬렉션을 실행하는지 여부를 지정합니다.|  
 |[\<generatePublisherEvidence>](../../../../../docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md)|런타임이 CAS(코드 액세스 보안) 게시자 정책을 사용할지를 지정합니다.|  
@@ -88,9 +87,9 @@ ms.locfileid: "32748674"
 |`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
   
 ## <a name="remarks"></a>설명  
- 자식 요소에는 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 구성 파일의 섹션을 사용 하는 공용 언어 런타임에 의해를 응용 프로그램 실행 되는 방식을 구성 합니다. 예를 들어는 [ \<gcServer >](../../../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) 요소 가비지 컬렉션이 워크스테이션 가비지 컬렉션 또는 서버 가비지 수집을 사용할지 여부를 결정은 [ \< UseRandomizedStringHashAlgorithm >](../../../../../docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md) 요소는 공용 언어 런타임에서 응용 프로그램 또는 응용 프로그램 도메인 단위로 문자열에 대 한 해시 코드를 계산할지 여부를 결정 및 `AppContextSwitchOverrides` 요소를 사용 하면 라이브러리 사용자 옵트인 하거나 라이브러리에서 제공 하는 변경 된 기능을 취소 합니다.  
+ 자식 요소를 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 구성 파일의 섹션에서는 응용 프로그램이 실행 되는 방식을 구성에 공용 언어 런타임에서 사용 되 합니다. 예를 들어 합니다 [ \<gcServer >](../../../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) 요소는 워크스테이션 가비지 컬렉션 또는 서버 가비지 컬렉션에서는 가비지 수집기를 사용 하는지 여부를 결정 합니다 [ \< UseRandomizedStringHashAlgorithm >](../../../../../docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md) 요소는 공용 언어 런타임에서 응용 프로그램별 또는 응용 프로그램 도메인 별로 문자열에 대 한 해시 코드를 계산할지 여부를 결정 하며 `AppContextSwitchOverrides` 요소를 사용 하면 라이브러리 사용자 옵트인 하려면 라이브러리에서 제공 하는 변경 된 기능을 옵트아웃 합니다.  
   
- 요소는 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션 응용 프로그램 시작 시 공용 언어 런타임에 의해 자동으로 읽습니다. 하 고 이름을 제공 하 여 기본이 아닌 응용 프로그램 도메인에 대 한 구성 파일을 정의할 수도 있습니다는 <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> 속성; 응용 프로그램 도메인이 로드 될 때 해당 설정이 자동으로 읽습니다. 또한 드물게 얻어지는 경우 나면 직접의 설정의 읽을 필요가 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 응용 프로그램의 구성 파일의 섹션입니다.  
+ 요소를 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션은 응용 프로그램 시작 시 공용 언어 런타임에 의해 자동으로 읽습니다. 해당 이름을 제공 하 여 기본이 아닌 응용 프로그램 도메인에 대 한 구성 파일을 정의할 수도 있습니다는 <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> 속성; 응용 프로그램 도메인 로드 될 때 해당 설정이 자동으로 읽습니다. 드물게 경우 어느 있어야 직접 설정의 읽을 필요가 합니다 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 응용 프로그램의 구성 파일의 섹션입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  

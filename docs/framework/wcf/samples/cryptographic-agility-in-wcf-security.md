@@ -3,13 +3,12 @@ title: WCF 보안의 암호화 유연성
 ms.date: 03/30/2017
 ms.assetid: c2c549e5-ac19-40c5-b686-8f67f52b6dbf
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: b9864fb38959cebfac21ed0f47dfd5bcb06a4dbd
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: df40a87e2fe58b93a963d53fc79f88bbc7bdb805
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519794"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47171623"
 ---
 # <a name="cryptographic-agility-in-wcf-security"></a>WCF 보안의 암호화 유연성
 이 샘플에는 Windows Communication Foundation (WCF) 클라이언트와 서비스에서 암호화 agile 구현을 제공 하려면 표준/사용자 지정 알고리즘을 지정 하는 방법을 보여 줍니다. 이 샘플은 다음 프로젝트로 구성되어 있습니다.  

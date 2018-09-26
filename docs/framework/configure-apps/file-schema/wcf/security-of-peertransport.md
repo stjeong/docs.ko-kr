@@ -3,13 +3,12 @@ title: '&lt;peerTransport&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 9d77c250b4843c9a0f83247cae5c2859429cf5bf
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 152087550d3fa881a7a88271d9c91dfcc5c894c8
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32749844"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47176762"
 ---
 # <a name="ltsecuritygt-of-ltpeertransportgt"></a>&lt;peerTransport&gt;의 &lt;security&gt;
 메시지 전송에 사용되는 인증 형식 및 보안을 비롯하여 피어 채널과 연결된 보안 설정을 포함합니다.  
@@ -18,7 +17,7 @@ ms.locfileid: "32749844"
 \<바인딩 >  
 \<customBinding>  
 \<바인딩 >  
-\<r t >  
+\<peerTransport >  
 \<security>  
   
 ## <a name="syntax"></a>구문  
@@ -57,7 +56,7 @@ ms.locfileid: "32749844"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<r t >](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|사용자 지정 바인딩에 대한 피어 전송을 정의합니다.|  
+|[\<peerTransport >](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|사용자 지정 바인딩에 대한 피어 전송을 정의합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.PeerSecurityElement>  

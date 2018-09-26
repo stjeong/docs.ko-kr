@@ -10,13 +10,12 @@ helpviewer_keywords:
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: a9afd992a12392ae0ad1c27eea305cb7e367686d
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: f3a706edaeba551139368568a7467e0cdab3524c
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874418"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47171610"
 ---
 # <a name="ltmailsettingsgt-element-network-settings"></a>&lt;mailSettings&gt; 요소 (네트워크 설정)
 메일 보내기 옵션을 구성 합니다.  
@@ -51,7 +50,7 @@ ms.locfileid: "37874418"
 |-----------------|---------------------|  
 |[\<system.Net> 요소(네트워크 설정)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|.NET Framework의 네트워크 연결 방법을 지정하는 설정을 포함합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 기본 네트워크 자격 증명을 사용 하 여 전자 메일을 보내는 해당 SMTP 매개 변수를 지정 합니다.  
   
 ```xml  

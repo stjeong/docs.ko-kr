@@ -1,5 +1,5 @@
 ---
-title: '&lt;선택을 취소&gt; 요소에 대 한 &lt;namedCaches&gt;'
+title: '&lt;지우기&gt; 요소에 대 한 &lt;namedCaches&gt;'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <clear> element for <namedCaches>
@@ -7,16 +7,15 @@ helpviewer_keywords:
 ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: cdd6e4a4849a031dc6bcad909509498406fcb129
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 17043cdd4bcabf2e5e14c7b9c31b8c1747d2c866
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745515"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47171948"
 ---
-# <a name="ltcleargt-element-for-ltnamedcachesgt"></a>&lt;선택을 취소&gt; 요소에 대 한 &lt;namedCaches&gt;
-모두 지웁니다 `namedCache` 의 항목은 `namedCaches` 메모리 내 캐시에 대 한 컬렉션입니다.  
+# <a name="ltcleargt-element-for-ltnamedcachesgt"></a>&lt;지우기&gt; 요소에 대 한 &lt;namedCaches&gt;
+모두 지웁니다 `namedCache` 에서 항목을 `namedCaches` 메모리 캐시에 대 한 컬렉션입니다.  
   
  \<system.runtime.caching>  
 \<memoryCache>  
@@ -51,7 +50,7 @@ ms.locfileid: "32745515"
 |[\<namedCaches>](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)|명명 된 구성 설정의 컬렉션을 포함 <xref:System.Runtime.Caching.MemoryCache> 인스턴스.|  
   
 ## <a name="remarks"></a>설명  
- `clear` 모두 삭제 하는 요소 `namedCache` 메모리 내 캐시에 대 한 명명 된 캐시 컬렉션의 항목입니다. 사용할 수는 `clear` 요소를 사용 하기 전에 `add` 명명 된 컬렉션에는 캐시 없는지 확인할 수 다른 하기 위해 새 명명 된 캐시 항목을 추가할 요소입니다.  
+ 합니다 `clear` 요소를 모두 지웁니다 `namedCache` 메모리 캐시에 대 한 명명 된 캐시 컬렉션의 항목입니다. 사용할 수는 `clear` 요소를 사용 하기 전에 `add` 명명 된 컬렉션에는 캐시는 다른 특정 되려면 새 명명 된 캐시 항목을 추가할 요소입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [\<namedCaches > 요소 (캐시 설정)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)

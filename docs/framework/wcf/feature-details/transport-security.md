@@ -3,23 +3,22 @@ title: 전송 보안
 ms.date: 03/30/2017
 ms.assetid: 86c94153-e48d-4539-b6cf-cd8060582e7f
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: e7f804d34a47c5508839636a6fe5045ebce3972e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7a52ac584abe766a7517436e697aff89333c9833
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33498217"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47171428"
 ---
 # <a name="transport-security"></a>전송 보안
 선택한 바인딩에 따라 전송 보안에서 Windows Communication Foundation (WCF)에 따라 달라 집니다. 바인딩이 구현하는 전송은 실제 보안 메커니즘을 결정합니다. 이 단원의 항목에서는 구현된 메커니즘 및 해당 옵션에 대해 설명합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [전송 보안 개요](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
- Wcf에서 전송 보안 기본 사항에 설명합니다.  
+ WCF 전송 보안의 기본 사항을 설명합니다.  
   
  [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)  
- WCF Secure Sockets Layer (SSL 또는 HTTPS)을 구현 하는 방법에 대해 설명 합니다.  
+ WCF Secure Sockets Layer (SSL 또는 HTTPS)를 구현 하는 방법을 설명 합니다.  
   
  [HTTP 인증 이해](../../../../docs/framework/wcf/feature-details/understanding-http-authentication.md)  
  기본, 다이제스트, NTLM(NT LAN Manager) 등과 같은 HTTP 인증 스키마에 대해 설명합니다.  
