@@ -14,13 +14,12 @@ helpviewer_keywords:
 ms.assetid: f1de5a0f-76c5-4833-819f-5222b8146340
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: c080ff7ebef680712581d1f77fd4eb1ec99c6a86
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 5783e63d81c8951afb6b1646b595fc619d51549c
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "32742616"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47193582"
 ---
 # <a name="network-settings-schema"></a>네트워크 설정 스키마
 네트워크 설정으로 .NET Framework의 인터넷 연결 방법을 지정합니다. 다음 표에서는 [\<system.Net> 요소(네트워크 설정)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)의 각 자식 구성 요소의 기능을 설명합니다.  
