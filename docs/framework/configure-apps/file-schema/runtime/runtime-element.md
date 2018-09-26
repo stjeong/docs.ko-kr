@@ -12,11 +12,11 @@ ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 0640b4c54b6f1429bce4947ec536352f240ca719
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47172734"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47208648"
 ---
 # <a name="ltruntimegt-element"></a>&lt;런타임&gt; 요소
 응용 프로그램을 구성 하려면 공용 언어 런타임에서 사용 되는 정보를 제공 합니다.  

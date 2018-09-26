@@ -2,12 +2,12 @@
 title: 워크플로 서비스 호스팅 개요
 ms.date: 03/30/2017
 ms.assetid: 19f3704f-06bf-4eeb-8724-5224e02d7ead
-ms.openlocfilehash: 7b5de31b5931af13b41b11af6e48a52b5628e27c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dbe271e30e9c4e98a52c01ffaa21de25c127c7ff
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33489562"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47208458"
 ---
 # <a name="hosting-workflow-services-overview"></a>워크플로 서비스 호스팅 개요
 워크플로 서비스를 실행하려면 호스팅해야 합니다. <xref:System.ServiceModel.WorkflowServiceHost>는 여러 인스턴스, 구성 및 WCF 메시징(워크플로가 호스팅되기 위해 메시징을 사용할 필요는 없지만)을 지원하는 즉시 사용 가능한 워크플로 호스트로,  서비스 동작의 집합을 통해 지속성, 추적 및 인스턴스 제어와 통합됩니다.  WCF의 <xref:System.ServiceModel.ServiceHost>와 마찬가지로 <xref:System.ServiceModel.WorkflowServiceHost>는 모든 관리되는 .NET 응용 프로그램에서 자체 호스팅되거나 IIS/WAS에서 .xamlx 파일로 웹 호스팅될 수 있습니다.  이 단원의 항목에서는 워크플로 서비스를 호스팅하는 방법에 대해 설명합니다.  
@@ -22,11 +22,8 @@ ms.locfileid: "33489562"
  [워크플로 서비스 호스트 확장성](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
  워크플로 서비스 호스트의 기능을 확장하는 방법에 대해 설명합니다.  
   
- [워크플로 제어 끝점](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md)  
- 워크플로 인스턴스를 만들 수 있는 끝점을 정의하는 방법에 대해 설명합니다.  
-  
- [방법: IIS에서 서비스가 아닌 워크플로 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md)  
- IIS에서 워크플로 서비스가 아닌 워크플로를 호스팅하는 방법을 보여 줍니다.  
+ [워크플로 제어 엔드포인트](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md)  
+ 워크플로 인스턴스를 만들 수 있는 엔드포인트를 정의하는 방법에 대해 설명합니다.
   
  [방법: Windows Server AppFabric을 사용하여 워크플로 서비스 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-workflow-service-with-windows-server-app-fabric.md)  
  Windows Server AppFabric에서 기존 워크플로 서비스를 호스팅하는 방법을 보여 줍니다.  
