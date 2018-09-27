@@ -2,17 +2,17 @@
 title: 워크플로 관리 엔드포인트 샘플
 ms.date: 03/30/2017
 ms.assetid: 3ac6e08f-c43d-4bb7-83c3-e3890a4dac03
-ms.openlocfilehash: 3d99cbef20895381f5e40ee939e1d94a409f1391
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 398ace1c198f0db0268c44083ccc98c5ba2d2c7f
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47078395"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47399127"
 ---
 # <a name="workflow-management-endpoint-sample"></a>워크플로 관리 엔드포인트 샘플
 이 샘플에서는 워크플로 제어 엔드포인트를 사용하여 로컬 및 원격으로 워크플로를 만들고 실행하는 방법과 제어 엔드포인트를 호스트하고 제어 엔드포인트를 호출하여 워크플로 인스턴스를 만들고 실행하는 클라이언트를 작성하는 방법을 보여 줍니다. 워크플로는 서비스가 아닙니다.  
   
- 샘플의 서비스 쪽에서 워크플로가 WorkflowServiceHost로 호스트되고 WorkflowControlEndpoint가 추가되므로 클라이언트는 일시 중단, 시작 등의 제어 작업을 수행할 수 있습니다. 사용자 정의 CreationEndpoint도 추가되어 워크플로를 만들 수 있습니다. 그런 다음 서비스는 이러한 끝점을 사용하여 일시 중단 상태의 워크플로를 시작한 후 워크플로를 다시 시작합니다. 클라이언트는 동일한 작업을 클라이언트 코드에서 수행합니다. 이 대 한 자세한 내용은 인터페이스에 대 한 [워크플로 제어 끝점](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md) 고 [방법: IIS에서 서비스가 아닌 워크플로 호스팅](../../../../docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md)  
+ 샘플의 서비스 쪽에서 워크플로가 WorkflowServiceHost로 호스트되고 WorkflowControlEndpoint가 추가되므로 클라이언트는 일시 중단, 시작 등의 제어 작업을 수행할 수 있습니다. 사용자 정의 CreationEndpoint도 추가되어 워크플로를 만들 수 있습니다. 그런 다음 서비스는 이러한 끝점을 사용하여 일시 중단 상태의 워크플로를 시작한 후 워크플로를 다시 시작합니다. 클라이언트는 동일한 작업을 클라이언트 코드에서 수행합니다. 이 대 한 자세한 내용은 인터페이스에 대 한 [워크플로 제어 끝점](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md)합니다.  
   
 #### <a name="to-run-the-sample"></a>이 샘플을 실행하려면  
   

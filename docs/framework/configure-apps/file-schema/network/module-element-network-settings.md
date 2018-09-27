@@ -11,11 +11,11 @@ ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 4d51010d6236103d252507802e14d01230d90219
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47075202"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47397191"
 ---
 # <a name="ltmodulegt-element-network-settings"></a>&lt;모듈&gt; 요소 (네트워크 설정)
 응용 프로그램에 새 프록시 모듈을 추가합니다.  

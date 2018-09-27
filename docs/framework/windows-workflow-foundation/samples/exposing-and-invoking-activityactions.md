@@ -3,11 +3,11 @@ title: ActivityAction 노출 및 호출
 ms.date: 03/30/2017
 ms.assetid: 97ce4797-426e-463d-9cc4-1261afad6df4
 ms.openlocfilehash: 99207c33d82ec9028da2355cc792c366dc5e0cc6
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47176401"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47398565"
 ---
 # <a name="exposing-and-invoking-activityactions"></a>ActivityAction 노출 및 호출
 이 샘플에서는 <xref:System.Activities.ActivityAction>이 있는 사용자 지정 활동을 개발하는 방법을 보여 줍니다. 또한 <xref:System.Activities.ActivityAction>의 구현을 제공하여 이 활동을 사용하는 방법도 보여 줍니다.  

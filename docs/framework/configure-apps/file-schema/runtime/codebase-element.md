@@ -12,11 +12,11 @@ ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: d7563d3a0ba545bfd8d1b80981fcce607d230873
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47073192"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47399244"
 ---
 # <a name="ltcodebasegt-element"></a>&lt;코드 베이스&gt; 요소
 공용 언어 런타임에서 어셈블리를 찾는 위치를 지정 합니다.  

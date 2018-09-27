@@ -13,11 +13,11 @@ ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: b6c72d9780088fddcaa59e644ff8069afbb4e43d
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47074981"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47397100"
 ---
 # <a name="ltremovegt-element-for-bypasslist-network-settings"></a>&lt;제거&gt; bypasslist (네트워크 설정)에 대 한 요소
 프록시 무시 목록에서 IP 주소 또는 DNS 이름을 제거합니다.  

@@ -2,15 +2,15 @@
 title: 워크플로 서비스
 ms.date: 03/30/2017
 ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
-ms.openlocfilehash: a8871685007cdb81848848da5c6b3483d014bb20
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e7295041fe4b17e7e2b1560704badf20992d4b92
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33499195"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47397243"
 ---
 # <a name="workflow-services"></a>워크플로 서비스
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]에서는 XAML을 사용하여 워크플로 기반 서비스를 선언적으로 자세히 설명할 수 있습니다. 즉, XAML을 사용하여 서비스를 구현하는 워크플로를 정의하고 서비스가 노출하는 끝점을 설명할 수 있습니다. 이 단원의 항목에서는 선언적 방식의 서비스 작성을 지원하는 프로그래밍 모델에 대해 자세히 설명합니다.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]에서는 XAML을 사용하여 워크플로 기반 서비스를 선언적으로 자세히 설명할 수 있습니다. 즉, XAML을 사용하여 서비스를 구현하는 워크플로를 정의하고 서비스가 노출하는 엔드포인트를 설명할 수 있습니다. 이 단원의 항목에서는 선언적 방식의 서비스 작성을 지원하는 프로그래밍 모델에 대해 자세히 설명합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [워크플로 서비스 개요](../../../../docs/framework/wcf/feature-details/workflow-services-overview.md)  
@@ -30,9 +30,6 @@ ms.locfileid: "33499195"
   
  [순서에 상관없이 메시지 처리](../../../../docs/framework/wcf/feature-details/out-of-order-message-processing.md)  
  순서가 맞지 않는 메시지를 허용하도록 서비스를 구성하는 방법에 대해 설명합니다.  
-  
- [방법: 다른 워크플로 서비스를 호출하는 워크플로 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md)  
- 다른 워크플로 서비스에서 워크플로 서비스를 동기적으로 호출하는 방법에 대해 설명합니다.  
   
  [계약 중심 워크플로 서비스 개발](../../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md)  
  기존 서비스 계약을 기반으로 워크플로 서비스를 만드는 방법에 대해 설명합니다.  

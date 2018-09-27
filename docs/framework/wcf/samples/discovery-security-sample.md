@@ -3,13 +3,12 @@ title: Discovery Security 샘플
 ms.date: 03/30/2017
 ms.assetid: b8db01f4-b4a1-43fe-8e31-26d4e9304a65
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 7a8dcd0a835bb669b669d5a510e01142c85ea07a
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: be915a0b619c800c79ef1acbec9b71812c749cf7
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43867531"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47399178"
 ---
 # <a name="discovery-security-sample"></a>Discovery Security 샘플
 검색 사양에서는 검색 프로세스에 참여하는 엔드포인트를 보호하도록 요구하지 않습니다. 그러나 검색 메시지의 보안을 강화하면 메시지 변경, 서비스 거부, 재생, 스푸핑 같은 다양한 형식의 공격을 완화할 수 있습니다. 이 샘플에서는 WS-Discovery 사양의 8.2단원에 설명된 압축 서명 형식을 사용하여 메시지 서명을 계산 및 확인하는 사용자 지정 채널을 구현합니다. 샘플 모두 지원 합니다 [2005 검색 사양](https://go.microsoft.com/fwlink/?LinkId=177912) 하며 [1.1 버전](https://go.microsoft.com/fwlink/?LinkId=179677)합니다.  

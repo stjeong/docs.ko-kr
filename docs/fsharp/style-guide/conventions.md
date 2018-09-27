@@ -3,11 +3,11 @@ title: 'F # 코딩 규칙'
 description: 'F # 코드를 작성할 때 일반 지침 및 코드에 알아봅니다.'
 ms.date: 05/14/2018
 ms.openlocfilehash: b9afd1fbfbd9d8e04d9bfaa07615de045b7e05fe
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47078482"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47237411"
 ---
 # <a name="f-coding-conventions"></a>F # 코딩 규칙
 
