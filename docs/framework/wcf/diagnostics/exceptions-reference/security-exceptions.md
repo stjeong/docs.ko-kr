@@ -3,12 +3,12 @@ title: 보안 예외
 ms.date: 03/30/2017
 ms.assetid: 76d5e5cd-e4f4-404f-9a5a-ec3522494ad8
 author: BrucePerlerMS
-manager: mbaldwin
-ms.openlocfilehash: 057d01ba918a41df0bdf2acc30c9bb35777ebc27
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9e5795da5765e3dadfb169b1819b7154bd6ce0a9
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233262"
 ---
 # <a name="security-exceptions"></a>보안 예외
 이 항목에서는 모든 보안 예외를 보여 줍니다.  
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/04/2018
 |BindingDoesNotSupportWindowsIdenityForImpersonation|지정된 계약 작업에는 자동 가장을 위한 Windows ID가 필요합니다. 호출자를 나타내는 Windows ID는 지정된 계약에 대해 지정된 바인딩에 의해 제공되지 않습니다.|  
 |CachedNegotiationStateQuotaReached|지정된 용량에 도달했기 때문에 서비스가 협상 상태를 캐시할 수 없습니다. 요청을 다시 시도하십시오.|  
 |CacheQuotaReached|항목을 추가할 수 없습니다. 최대 캐시 크기가 지정되었습니다.|  
-|CannotDetermineSPNBasedOnAddress|클라이언트가 SspiNegotiation/Kerberos 용도로 지정된 대상 주소의 ID에 기초하여 서비스 사용자 이름을 확인할 수 없습니다. 대상 주소 id는 UPN id 여야 합니다. (acmedomain 같은\\\alice) 또는 SPN id (예: 컴퓨터) 호스트/bobs 합니다.|  
+|CannotDetermineSPNBasedOnAddress|클라이언트가 SspiNegotiation/Kerberos 용도로 지정된 대상 주소의 ID에 기초하여 서비스 사용자 이름을 확인할 수 없습니다. 대상 주소 id는 UPN id 여야 합니다 (예: acmedomain\\\alice) 또는 SPN id (예 호스트/bobs-machine).|  
 |CannotFindCert|지정된 검색 조건인 StoreName, StoreLocation, FindType, FindValue를 사용하여 X.509 인증서를 찾을 수 없습니다.|  
 |CannotFindCertForTarget|지정된 대상에 대해 지정된 검색 조건인 StoreName, StoreLocation, FindType, FindValue를 사용하여 X.509 인증서를 찾을 수 없습니다.|  
 |CannotFindCorrelationStateForApplyingSecurity|응답자에서의 회신에 보안을 적용하기 위한 상관 관계 상태를 찾을 수 없습니다.|  
@@ -49,8 +49,8 @@ ms.lasthandoff: 05/04/2018
 |ClientCredentialTypeMustBeSpecifiedForMixedMode|ClientCredentialType.None은 TransportWithMessageCredential 보안 모드에 사용할 수 없습니다. 자격 증명 형식을 지정하거나 다른 보안 모드를 사용하십시오.|  
 |ConfigurationSchemaInsuffientForSecurityBindingElementInstance|구성 스키마가 다음 보안 바인딩 요소의 비표준 구성을 설명하는 데 충분하지 않습니다.|  
 |DerivedKeyTokenGenerationAndLengthTooHigh|파생 키의 지정된 생성 및 길이로 인해 허용되는 최대 오프셋보다 큰 키 파생 오프셋이 발생합니다.|  
-|DnsIdentityCheckFailedForIncomingMessage|들어오는 메시지의 ID를 검사하지 못했습니다. 원격 끝점의 필요한 DNS(Domain Name System) ID가 지정되었습니다. 원격 끝점이 지정된 DNS(Domain Name System) 클레임을 제공했습니다. 이 끝점이 올바른 원격 끝점인 경우 채널 프록시를 만들 때 Domain Name System ID를 EndpointAddress의 Identity 속성으로 지정하여 이 문제를 해결할 수 있습니다.|  
-|DnsIdentityCheckFailedForOutgoingMessage|보내는 메시지의 ID를 검사하지 못했습니다. 원격 끝점에 지정된 Domain Name System ID가 있어야 합니다. 원격 끝점이 DNS(Domain Name System) 클레임을 제공했습니다. 이 끝점이 올바른 원격 끝점인 경우 채널 프록시를 만들 때 DNS ID를 EndpointAddress의 Identity 속성으로 명시적으로 지정하여 이 문제를 해결할 수 있습니다.|  
+|DnsIdentityCheckFailedForIncomingMessage|들어오는 메시지의 ID를 검사하지 못했습니다. 원격 엔드포인트의 필요한 DNS(Domain Name System) ID가 지정되었습니다. 원격 엔드포인트가 지정된 DNS(Domain Name System) 클레임을 제공했습니다. 이 엔드포인트가 올바른 원격 엔드포인트인 경우 채널 프록시를 만들 때 Domain Name System ID를 EndpointAddress의 Identity 속성으로 지정하여 이 문제를 해결할 수 있습니다.|  
+|DnsIdentityCheckFailedForOutgoingMessage|보내는 메시지의 ID를 검사하지 못했습니다. 원격 엔드포인트에 지정된 Domain Name System ID가 있어야 합니다. 원격 엔드포인트가 DNS(Domain Name System) 클레임을 제공했습니다. 이 엔드포인트가 올바른 원격 엔드포인트인 경우 채널 프록시를 만들 때 DNS ID를 EndpointAddress의 Identity 속성으로 명시적으로 지정하여 이 문제를 해결할 수 있습니다.|  
 |DuplicateIdInMessageToBeVerified|확인을 위해 제공된 메시지에서 지정된 ID가 두 번 발견되었습니다.|  
 |EmptyBase64Attribute|필수 base-64 특성 이름 및 네임스페이스에 대한 빈 값을 찾았습니다.|  
 |ExportOfBindingWithAsymmetricAndTransportSecurityNotSupported|보안 정책을 내보내지 못했습니다. 바인딩에 AsymmetricSecurityBindingElement 및 보안 전송 바인딩 요소가 모두 포함되어 있습니다. 이러한 바인딩에 대한 정책 내보내기가 지원되지 않습니다.|  
@@ -59,9 +59,9 @@ ms.lasthandoff: 05/04/2018
 |FoundMultipleCerts|지정된 검색 조건을 사용하여 여러 X.509 인증서를 찾았습니다. StoreName, StoreLocation, FindType, FindValue. 더 구체적인 찾기 값을 제공하십시오.|  
 |FoundMultipleCertsForTarget|지정된 검색 조건을 사용하여 여러 X.509 인증서를 찾았습니다. StoreName, StoreLocation, FindType, FindValue(지정된 대상에 대한). 더 구체적인 찾기 값을 제공하십시오.|  
 |HeaderDecryptionNotSupportedInWsSecurityJan2004|SecurityVersion.WSSecurityJan2004가 헤더 암호 해독을 지원하지 않습니다. SecurityVersion.WsSecurityXXX2005 이상을 사용하거나 전송 보안을 사용하여 전체 메시지를 암호화하십시오.|  
-|IdentityCheckFailedForIncomingMessage|들어오는 메시지의 ID를 검사하지 못했습니다. 대상 끝점에 대해 필요한 ID가 지정되었습니다.|  
-|IdentityCheckFailedForOutgoingMessage|보내는 메시지의 ID를 검사하지 못했습니다. 대상 끝점에 대해 필요한 ID가 지정되었습니다.|  
-|IncorrectSpnOrUpnSpecified|SSPI(보안 지원 공급자 인터페이스) 인증에 실패했습니다. 서버가 지정된 ID를 가진 계정에서 실행 중이 아닐 수 있습니다. 서버가 서비스 계정(예: 네트워크 서비스)에서 실행 중인 경우 계정의 ServicePrincipalName을 서버의 EndpointAddress에서 ID로 지정하십시오. 서버가 사용자 계정에서 실행 중인 경우 계정의 UserPrincipalName을 서버의 EndpointAddress에서 ID로 지정하십시오.|  
+|IdentityCheckFailedForIncomingMessage|들어오는 메시지의 ID를 검사하지 못했습니다. 대상 엔드포인트에 대해 필요한 ID가 지정되었습니다.|  
+|IdentityCheckFailedForOutgoingMessage|보내는 메시지의 ID를 검사하지 못했습니다. 대상 엔드포인트에 대해 필요한 ID가 지정되었습니다.|  
+|IncorrectSpnOrUpnSpecified|SSPI(보안 지원 공급자 인터페이스) 인증에 실패했습니다. 서버가 지정된 ID를 가진 계정에서 실행 중이 아닐 수 있습니다. 서버가 서비스 계정(예: 네트워크 서비스)에서 실행 중인 경우 계정의 ServicePrincipalName을 서버의 EndpointAddress에서 ID로 지정하세요. 서버가 사용자 계정에서 실행 중인 경우 계정의 UserPrincipalName을 서버의 EndpointAddress에서 ID로 지정하세요.|  
 |InvalidAttributeInSignedHeader|지정한 서명된 헤더에 지정된 특성이 있습니다. 필요한 특성이 지정되었습니다.|  
 |InvalidCloseResponseAction|보안 세션 닫기 응답이 지정된 잘못된 동작과 함께 수신되었습니다.|  
 |InvalidQName|QName이 잘못되었습니다.|  
@@ -113,7 +113,7 @@ ms.lasthandoff: 05/04/2018
 |SecurityAuditFailToLoadDll|지정된 동적 연결 라이브러리(dll)를 로드할 수 없습니다.|  
 |SecurityAuditNotSupportedOnChannelFactory|SecurityAuditBehavior가 채널 팩터리에서 지원되지 않습니다.|  
 |SecurityAuditPlatformNotSupported|감사 메시지를 보안 로그에 쓰는 것이 현재 플랫폼에서 지원되지 않습니다. 감사 메시지는 응용 프로그램 로그에 써야 합니다.|  
-|SecurityBindingElementCannotBeExpressedInConfig|끝점에 대한 보안 정책을 가져왔습니다. Windows Communication Foundation 구성에서 나타낼 수 없는 요구 사항이 보안 정책에 포함되어 있습니다. 생성된 구성 파일에서 필요한 SecurityBindingElement 매개 변수에 대한 설명을 확인하십시오. 코드를 사용하여 올바른 바인딩 요소를 만드십시오. 구성 파일에 있는 바인딩 구성은 보안되지 않습니다.|  
+|SecurityBindingElementCannotBeExpressedInConfig|엔드포인트에 대한 보안 정책을 가져왔습니다. Windows Communication Foundation 구성에서 나타낼 수 없는 요구 사항이 보안 정책에 포함되어 있습니다. 생성된 구성 파일에서 필요한 SecurityBindingElement 매개 변수에 대한 설명을 확인하십시오. 코드를 사용하여 올바른 바인딩 요소를 만드십시오. 구성 파일에 있는 바인딩 구성은 보안되지 않습니다.|  
 |SecurityBindingSupportsOneWayOnly|지정된 계약의 지정된 바인딩에 대한 SecurityBinding은 OneWay 작업만 지원합니다.|  
 |SecurityContextDoesNotAllowImpersonation|지정된 동작을 가진 요청 메시지의 UltimateReceiver 역할에 대한 SecurityContext가 Windows ID에 매핑되지 않기 때문에 가장을 시작할 수 없습니다.|  
 |SecurityListenerClosing|수신기를 닫는 중이기 때문에 새 보안 대화를 수신기에서 수락하지 않습니다.|  

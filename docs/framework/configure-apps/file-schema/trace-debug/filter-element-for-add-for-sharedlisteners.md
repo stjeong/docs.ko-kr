@@ -13,11 +13,11 @@ ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 5172a2be163e178b9c7115825fa5dba4ff073a96
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47115141"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233056"
 ---
 # <a name="ltfiltergt-element-for-ltaddgt-for-ltsharedlistenersgt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;sharedListeners&gt;
 `sharedListeners` 컬렉션에 있는 수신기에 필터를 추가합니다.  

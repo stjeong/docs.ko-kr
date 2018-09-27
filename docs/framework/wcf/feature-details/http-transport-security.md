@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: d3439262-c58e-4d30-9f2b-a160170582bb
 author: BrucePerlerMS
 ms.openlocfilehash: c21769eed2f3040bf336860b5a9cd6cd450d5525
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47090242"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47232692"
 ---
 # <a name="http-transport-security"></a>HTTP 전송 보안
 HTTP를 전송으로 사용하는 경우 SSL(Secure Sockets Layer) 구현에서 보안을 제공합니다. SSL은 서비스를 클라이언트에 인증한 다음 채널에 기밀성(암호화)을 제공하기 위해 인터넷에서 널리 사용됩니다. 이 항목에서는 SSL 작동 원리 및 Windows Communication Foundation (WCF)에서 구현 되는 방법을 설명 합니다.  
