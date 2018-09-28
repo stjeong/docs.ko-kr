@@ -13,11 +13,11 @@ ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 2b313aa2481b1257715ac4dbc6d452e2120f4726
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47070385"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47425922"
 ---
 # <a name="ltcleargt-element-for-webrequestmodules-network-settings"></a>&lt;지우기&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 등록 된 모든 웹 요청 모듈을 제거합니다.  

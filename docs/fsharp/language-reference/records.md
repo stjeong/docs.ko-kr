@@ -3,11 +3,11 @@ title: 레코드(F#)
 description: 'F # 레코드에서 멤버를 사용 하 여 필요에 따라 명명 된 값의 간단한 집계를 표시 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 6103d96b6b80a9e2ed168755958dbe800f7fa862
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47111154"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47425968"
 ---
 # <a name="records"></a>레코드
 

@@ -9,11 +9,11 @@ ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
 author: Xansky
 ms.author: mhopkins
 ms.openlocfilehash: 44e1440ca9ab49ffcbc849991891eb5c4c0e7357
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47082658"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47421718"
 ---
 # <a name="ui-automation-support-for-the-statusbar-control-type"></a>StatusBar 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
