@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 33a20358-5e1b-458a-a6a9-15753bc7b99b
 author: BrucePerlerMS
 ms.openlocfilehash: 99f8e038657a620de56d1d759a95bbbdf93b1ed4
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47082853"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454304"
 ---
 # <a name="ws-transport-security"></a>WS 전송 보안
 이 샘플에서는 <xref:System.ServiceModel.WSHttpBinding> 바인딩의 SSL 전송 보안을 사용하는 방법을 보여 줍니다. 기본적으로 `wsHttpBinding` 바인딩은 HTTP 통신을 제공합니다. 전송 보안용으로 구성된 경우, 바인딩은 HTTPS 통신을 지원합니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다. `wsHttpBinding`은 클라이언트 및 서비스의 응용 프로그램 구성 파일에 지정 및 구성됩니다.  
