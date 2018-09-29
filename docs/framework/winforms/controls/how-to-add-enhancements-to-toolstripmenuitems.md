@@ -25,11 +25,11 @@ helpviewer_keywords:
 - ToolStripMenuItems [Windows Forms], showing separator bars
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
 ms.openlocfilehash: eb55796480bea896383da479fe23a5d8967a52e3
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47090528"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454975"
 ---
 # <a name="how-to-add-enhancements-to-toolstripmenuitems"></a>방법: ToolStripMenuItems에 향상된 기능 추가
 사용 편의성을 향상 시킬 수 있습니다 <xref:System.Windows.Forms.MenuStrip> 및 <xref:System.Windows.Forms.ContextMenuStrip> 다음과 같은 방법으로 제어 합니다.  
