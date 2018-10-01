@@ -3,12 +3,12 @@ title: 구문 변환 시작(Roslyn API)
 description: 구문 트리를 트래버스하고, 탐색하고, 쿼리하는 방법을 소개합니다.
 ms.date: 06/01/2018
 ms.custom: mvc
-ms.openlocfilehash: c372b1ba1e08a7d3b57ceea0d4449d03e55a39cf
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: acba7ac590154ad8458d0d9a8abac55a12e96265
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45618024"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47400792"
 ---
 # <a name="get-started-with-syntax-transformation"></a>구문 변환 시작
 
@@ -30,7 +30,7 @@ ms.locfileid: "45618024"
 
 첫 번째 구문 변환은 팩터리 메서드를 보여 줍니다. `using System.Collections;` 문을 `using System.Collections.Generic;` 문으로 바꾸려고 합니다. 이 예제는 <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> 팩터리 메서드를 사용하여 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxNode?displayProperty=nameWithType> 개체를 만드는 방법을 보여 줍니다. 각 종류의 **노드**, **토큰** 또는 **기타 정보**에 대해 해당 형식의 인스턴스를 만드는 팩터리 메서드가 있습니다. 노드를 상향식 계층 구조로 작성하여 구문 트리를 만듭니다. 그런 다음, 기존 노드를 직접 만든 새 트리로 바꿔서 기존 프로그램을 변환합니다.
 
-Visual Studio를 시작하고 새 C# **독립 실행형 코드 분석 도구** 프로젝트를 만듭니다. Visual Studio에서 **파일** > **새로 만들기* > **프로젝트**를 선택하여 [새 프로젝트] 대화 상자를 표시합니다. **Visual C#** > **확장성** 아래에서 **독립 실행형 코드 분석 도구**를 선택합니다. 이 빠른 시작에는 두 개의 예제 프로젝트가 있으므로 솔루션 이름을 **SyntaxTransformationQuickStart**로 지정하고 프로젝트 이름을 **ConstructionCS**로 지정합니다. **확인**을 클릭합니다.
+Visual Studio를 시작하고 새 C# **독립 실행형 코드 분석 도구** 프로젝트를 만듭니다. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 새 프로젝트 대화 상자를 표시합니다. **Visual C#** > **확장성** 아래에서 **독립 실행형 코드 분석 도구**를 선택합니다. 이 빠른 시작에는 두 개의 예제 프로젝트가 있으므로 솔루션 이름을 **SyntaxTransformationQuickStart**로 지정하고 프로젝트 이름을 **ConstructionCS**로 지정합니다. **확인**을 클릭합니다.
 
 이 프로젝트는 <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> 클래스 메서드를 사용하여 `System.Collections.Generic` 네임스페이스를 나타내는 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType>를 생성합니다.
 

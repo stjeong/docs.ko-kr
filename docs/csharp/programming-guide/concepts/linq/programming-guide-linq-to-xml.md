@@ -3,11 +3,11 @@ title: 프로그래밍 가이드(LINQ to XML)(C#)
 ms.date: 07/20/2015
 ms.assetid: 4b1ffd10-ab81-4a0d-a0ca-e9876478d924
 ms.openlocfilehash: acb8271ad9ea338d31516c35bae46593a5fd2f78
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46585218"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47199049"
 ---
 # <a name="programming-guide-linq-to-xml-c"></a>프로그래밍 가이드(LINQ to XML)(C#)
 이 단원에서는 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]을 사용한 프로그래밍의 개념과 방법에 대해 설명합니다.  

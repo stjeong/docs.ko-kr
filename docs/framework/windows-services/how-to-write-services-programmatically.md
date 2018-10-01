@@ -9,13 +9,12 @@ helpviewer_keywords:
 - Windows Service applications, creating
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
 author: ghogen
-manager: douge
-ms.openlocfilehash: 99fd44723bba21127e2a5e0ba3e9bfc4b90b52d7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 904a82a3cc725221defb6795bf813b8cbc490c41
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33513288"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47397022"
 ---
 # <a name="how-to-write-services-programmatically"></a>방법: 프로그래밍 방식으로 서비스 작성
 Windows 서비스 프로젝트 템플릿을 사용하지 않으려는 경우 상속 및 기타 인프라 요소를 직접 설정하여 고유한 서비스를 작성할 수 있습니다. 서비스를 프로그래밍 방식으로 만드는 경우 템플릿을 사용할 경우 자동으로 처리되는 다음과 같은 여러 단계를 직접 수행해야 합니다.  

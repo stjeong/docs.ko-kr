@@ -4,12 +4,12 @@ description: .NET Core 2.1에서 볼 수 있는 새로운 기능에 대해 알�
 author: rpetrusha
 ms.author: ronpet
 ms.date: 06/06/2018
-ms.openlocfilehash: 850df87666c5beb0594f0672d8f558c11653f973
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: aa80e6b7214f91c49803adde49a1e03d1971b3f6
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45625401"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47400069"
 ---
 # <a name="whats-new-in-net-core-21"></a>.NET Core 2.1의 새로운 기능
 
@@ -66,7 +66,7 @@ ms.locfileid: "45625401"
 
 .NET Core 2.1은 명령줄에서 전역으로 사용할 수 있는 사용자 지정 도구인 ‘전역 도구’를 지원합니다. 이전 버전 .NET Core의 확장성 모델은 [`DotnetCliToolReference`](../tools/extensibility.md#consuming-per-project-tools)를 사용하여 프로젝트별로만 사용 가능한 사용자 지정 도구를 만들었습니다.
 
-전역 도구를 설치하려면 [dotnet tool install](..\tools\dotnet-tool-install.md) 명령을 사용합니다. 예:
+전역 도구를 설치하려면 [dotnet tool install](../tools/dotnet-tool-install.md) 명령을 사용합니다. 예:
 
 ```console
 dotnet tool install -g dotnetsay

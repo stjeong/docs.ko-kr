@@ -2,11 +2,11 @@
 title: '연습: C#을 사용하여 개체 유지'
 ms.date: 04/26/2018
 ms.openlocfilehash: c3cff57f008eb524c2d2bec406431e4c41dca617
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47027323"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47231494"
 ---
 # <a name="walkthrough-persisting-an-object-using-c"></a>연습: C#을 사용하여 개체 유지 #
 

@@ -19,13 +19,12 @@ helpviewer_keywords:
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 59d7e30bfa9bbaf2308e78f47de03bb7be69c44d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f4ab27a8e6cc5bd38620148b130823070e5102fa
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393685"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47198451"
 ---
 # <a name="using-an-asynchronous-client-socket"></a>비동기 클라이언트 소켓 사용
 비동기 클라이언트 소켓은 네트워크 작업이 완료될 때까지 기다리는 동안 응용 프로그램을 일시 중단하지 않습니다. 대신, 표준 .NET Framework 비동기 프로그래밍 모델을 사용하여 응용 프로그램이 원래 스레드에서 계속 실행되는 동안 한 스레드에서 네트워크 연결을 처리합니다. 비동기 소켓은 네트워크를 많이 사용하거나 계속하기 전에 네트워크 작업이 완료될 때까지 기다릴 수 없는 응용 프로그램에 적합합니다.  
@@ -36,7 +35,7 @@ ms.locfileid: "33393685"
   
  비동기 소켓은 시스템 스레드 풀의 여러 스레드를 사용하여 네트워크 연결을 처리합니다. 한 스레드는 데이터 전송 또는 수신을 시작하고, 다른 스레드는 네트워크 장치에 대한 연결을 완료하고 데이터를 보내거나 받습니다. 다음 예제에서 <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> 클래스 인스턴스는 주 스레드의 실행을 일시 중단하고 실행을 계속할 수 있으면 알려주는 데 사용됩니다.  
   
- 다음 예제에서 비동기 소켓을 네트워크 장치에 연결하기 위해 `Connect` 메서드는 **Socket**을 초기화한 다음 <xref:System.Net.Sockets.Socket.Connect%2A?displayProperty=nameWithType> 메서드를 호출하고 네트워크 장치를 나타내는 원격 끝점, 연결 콜백 메서드 및 비동기 호출 간에 상태 정보를 전달하는 데 사용되는 상태 개체(클라이언트 **Socket**)를 전달합니다. 이 예제에서는 `Connect` 메서드를 구현하여 지정된 **Socket**을 지정된 끝점에 연결합니다. `connectDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
+ 다음 예제에서 비동기 소켓을 네트워크 장치에 연결하기 위해 `Connect` 메서드는 **Socket**을 초기화한 다음 <xref:System.Net.Sockets.Socket.Connect%2A?displayProperty=nameWithType> 메서드를 호출하고 네트워크 장치를 나타내는 원격 엔드포인트, 연결 콜백 메서드 및 비동기 호출 간에 상태 정보를 전달하는 데 사용되는 상태 개체(클라이언트 **Socket**)를 전달합니다. 이 예제에서는 `Connect` 메서드를 구현하여 지정된 **Socket**을 지정된 엔드포인트에 연결합니다. `connectDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
   
 ```vb  
 Public Shared Sub Connect(remoteEP As EndPoint, client As Socket)  

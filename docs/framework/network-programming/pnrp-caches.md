@@ -4,16 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: 270068d9-1b6b-4eb9-9e14-e02326bb88df
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: dfa7da476bd56b34d3fcb7b7e0f3bcc33fee032b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f0cda9fe5ea6d8c79249603f4a51c18a615fe839
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397483"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47205293"
 ---
 # <a name="pnrp-caches"></a>PNRP 캐시
-PNRP(피어 이름 확인 프로토콜) 캐시는 한 피어에서 유지 관리되며 알고리즘 방식으로 선택된 피어 끝점의 로컬 컬렉션입니다.  
+PNRP(피어 이름 확인 프로토콜) 캐시는 한 피어에서 유지 관리되며 알고리즘 방식으로 선택된 피어 엔드포인트의 로컬 컬렉션입니다.  
   
 ## <a name="pnrp-cache-initialization"></a>PNRP 캐시 초기화  
  PNRP 캐시 또는 Peer Name Reord Collection을 초기화하려면 피어 노드가 시작될 때 노드에서 다음 메서드를 사용할 수 있습니다.  
@@ -27,7 +26,7 @@ PNRP(피어 이름 확인 프로토콜) 캐시는 한 피어에서 유지 관리
   
  항상 이름 확인이 가능하도록 하기 위해 노드에서는 캐시의 최하위 수준에 항목을 추가할 때마다 항목의 복사본을 캐시의 마지막 수준 내에 있는 모든 노드로 전파합니다.  
   
- 캐시 항목은 시간이 지남에 따라 새로 고쳐지고 오래된 항목은 캐시에서 제거됩니다. 따라서 주소 레코드와 DNS 프로토콜에서 주소에 연결된 노드가 네트워크에서 작동 중인지 여부가 보장되지 않는 DNS와는 달리 PNRP ID의 분산된 해시 테이블은 현재 끝점을 기준으로 합니다.  
+ 캐시 항목은 시간이 지남에 따라 새로 고쳐지고 오래된 항목은 캐시에서 제거됩니다. 따라서 주소 레코드와 DNS 프로토콜에서 주소에 연결된 노드가 네트워크에서 작동 중인지 여부가 보장되지 않는 DNS와는 달리 PNRP ID의 분산된 해시 테이블은 현재 엔드포인트를 기준으로 합니다.  
   
 ## <a name="other-pnrp-caches"></a>다른 PNRP 캐시  
  또 다른 영구 데이터 저장소는 로컬 캐시입니다.  PNRP 활동에 필요한 다른 개체 외에도, 클라우드의 모든 멤버 간에 안전하게 게시 및 동기화되는 PNRP 클라우드 또는 공동 작업 세션과 연결된 레코드를 포함할 수 있습니다. 이 복제된 저장소는 그룹 데이터 보기를 나타내며, 모든 그룹 멤버에 대해 동일해야 합니다. 기술적으로 이러한 개체는 본질적으로 레코드가 아니라 로컬 캐시에 사용되는 개체 데이터, 현재 상태 및 응용 프로그램입니다. PNRP 클라우드를 사용하면 개체가 공동 작업 세션 또는 PNRP 클라우드의 모든 노드에 전파됩니다.  클라우드 멤버 간 레코드 복제에서는 암호화와 데이터 무결성을 제공하기 위해 SSL을 사용합니다.  

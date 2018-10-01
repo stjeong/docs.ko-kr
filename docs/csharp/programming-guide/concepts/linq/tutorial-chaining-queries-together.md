@@ -3,11 +3,11 @@ title: '자습서: 여러 쿼리 연결(C#)'
 ms.date: 07/20/2015
 ms.assetid: 44f54444-c4c5-4c23-9d19-986b957b8eda
 ms.openlocfilehash: cab012a6ae618bd731c26bc1a002c144b84d2169
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46489932"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47204520"
 ---
 # <a name="tutorial-chaining-queries-together-c"></a>자습서: 여러 쿼리 연결(C#)
 이 자습서에서는 쿼리를 연결할 때의 처리 모델을 보여 줍니다. 쿼리 연결은 함수 변환을 작성할 때 핵심 부분을 차지합니다. 연결된 쿼리의 작동 방식을 정확히 이해해야 합니다.  

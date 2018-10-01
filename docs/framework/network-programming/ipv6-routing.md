@@ -4,13 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: c3e2662eb444c70d2376a05e44ac84f472f27384
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4ff5f131cfd9fac48e653b98e05d5e46dcfb0bec
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397808"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47399023"
 ---
 # <a name="ipv6-routing"></a>IPv6 라우팅
 유연한 라우팅 메커니즘은 IPv6의 장점입니다. IPv4 네트워크 ID가 할당된 방식으로 인해 인터넷 백본에 있는 라우터에서 대규모 라우팅 테이블을 유지해야 합니다. 이러한 라우터는 인터넷의 모든 노드로 방향이 지정되는 패킷을 전달하기 위해 모든 경로를 알고 있어야 합니다. 주소를 집계하는 기능을 통해 IPv6에서는 유연하게 주소를 지정할 수 있고 라우팅 테이블의 크기가 대폭 감소됩니다. 이 새로운 주소 지정 아키텍처에서는 적절하게 메시지를 전달하기 위해 중간 라우터를 통해 네트워크의 로컬 부분만 계속 추적해야 합니다.  

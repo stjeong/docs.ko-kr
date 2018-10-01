@@ -4,13 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 225aa5f9-c54b-4620-ab64-5cd100cfd54c
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 0570241fa81b0870500daa9d6e94b45c28042737
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: ddf098d0da7411515592c5bfa5bbac2153d7f0eb
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865116"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47197125"
 ---
 # <a name="socket-performance-enhancements-in-version-35"></a>버전 3.5의 소켓 성능 향상
 <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> 클래스는 비동기 네트워크 I/O를 통해 성능을 최적화하는 응용 프로그램에서 사용하기 위해 버전 3.5에서 개선되었습니다. 특수화된 고성능 소켓 응용 프로그램에서 사용할 수 있는 대체 비동기 패턴을 제공하는 <xref:System.Net.Sockets.Socket> 클래스에 대한 향상된 기능 집합의 일부로 일련의 새로운 클래스가 추가되었습니다. 이러한 개선 사항은 특히 높은 성능이 필요한 네트워크 서버 응용 프로그램용으로 설계되었습니다. 응용 프로그램은 향상된 비동기 패턴을 단독으로 사용하거나, 응용 프로그램의 대상 핫 영역에서만 사용할 수 있습니다(예: 많은 양의 데이터를 수신하는 경우).  

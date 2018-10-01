@@ -6,13 +6,12 @@ helpviewer_keywords:
 - services, starting
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
 author: ghogen
-manager: douge
-ms.openlocfilehash: 3c8382d2e425d11dc8aa8b22e361b3cc5637744f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b3f04deb11a23957198864c444b4872aef45b2e4
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33516219"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47176749"
 ---
 # <a name="how-to-start-services"></a>방법: 서비스 시작
 서비스가 설치되면 서비스를 시작해야 합니다. 시작하면 서비스 클래스의 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드가 호출됩니다. 일반적으로 <xref:System.ServiceProcess.ServiceBase.OnStart%2A> 메서드는 서비스가 수행할 유용한 정의합니다. 시작된 후 서비스는 수동으로 일시 중지하거나 중지할 때까지 활성 상태로 유지됩니다.  

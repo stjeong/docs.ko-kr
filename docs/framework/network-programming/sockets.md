@@ -17,13 +17,12 @@ helpviewer_keywords:
 ms.assetid: 10d22735-bd37-42c1-a2be-c1932f979a7d
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: b234846e63eab59602069aa72125df116e30375d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ce7ded81ad23c2df55afa9360435e8391fea7a63
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398289"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47176827"
 ---
 # <a name="sockets"></a>소켓
 <xref:System.Net.Sockets> 네임스페이스에는 Windows 소켓 인터페이스의 관리되는 구현이 포함됩니다. <xref:System.Net> 네임스페이스에 있는 다른 모든 네트워크 액세스 클래스는 이 소켓 구현 위에 구축됩니다.  

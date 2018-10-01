@@ -3,11 +3,11 @@ title: '방법: 하위 요소 찾기(XPath 및 LINQ to XML)(C#)'
 ms.date: 07/20/2015
 ms.assetid: b318da39-bb8b-4c56-a019-e13b12b01831
 ms.openlocfilehash: df1b151948b7b11757f2f8f312fa1f0bba00673a
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46580644"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47078580"
 ---
 # <a name="how-to-find-descendant-elements-xpath-linq-to-xml-c"></a>방법: 하위 요소 찾기(XPath 및 LINQ to XML)(C#)
 이 항목에서는 특정 이름을 가진 하위 요소를 가져오는 방법을 보여 줍니다.  

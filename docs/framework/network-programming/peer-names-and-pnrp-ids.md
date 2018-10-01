@@ -4,16 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: afa538e8-948f-4a98-aa9f-305134004115
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 02e6d65baac0a0eab9bfde545a117d3636239c17
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cab8bb848596d4d6dc7f810d454b875f4fd58e47
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397587"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47216504"
 ---
 # <a name="peer-names-and-pnrp-ids"></a>피어 이름 및 PNRP ID
-피어 이름은 통신의 끝점을 나타내며, 컴퓨터, 사용자, 그룹, 서비스 또는 IPv6 주소로 확인될 수 있는 피어와 연결된 모든 항목이 될 수 있습니다. 피어 이름 확인 프로토콜(PNRP)은 클라우드 멤버를 확인하는 데 사용되는 PNRP ID를 만드는 데 통계적으로 고유한 피어 이름을 사용합니다.  
+피어 이름은 통신의 엔드포인트를 나타내며, 컴퓨터, 사용자, 그룹, 서비스 또는 IPv6 주소로 확인될 수 있는 피어와 연결된 모든 항목이 될 수 있습니다. 피어 이름 확인 프로토콜(PNRP)은 클라우드 멤버를 확인하는 데 사용되는 PNRP ID를 만드는 데 통계적으로 고유한 피어 이름을 사용합니다.  
   
 ## <a name="peer-names"></a>피어 이름  
  피어 이름은 보안되지 않음 또는 보안됨으로 등록될 수 있습니다. 보안되지 않은 이름은 단순한 텍스트 문자열로, 스푸핑이 가능하기 때문에 누구나 중복된 이름을 등록할 수 있습니다. 보안되지 않은 이름은 개인 네트워크 또는 보호되는 네트워크에 적합합니다. 반면 보안되는 이름은 인증서와 디지털 시그니처로 보호됩니다. 따라서 원래 게시자만 이 이름에 대한 소유권을 증명할 수 있습니다.  
@@ -27,7 +26,7 @@ ms.locfileid: "33397587"
   
  PNRP ID는 다음으로 구성됩니다.  
   
--   순위가 높은 128비트는 P2P(피어 투 피어) ID라고 하며 끝점에 할당된 피어 이름의 해시입니다. 피어 이름의 형식은 *Authority.Classifier*입니다. 보안되는 이름의 경우, *Authority*는 16진수 문자 형식의 피어 이름 공개 키의 SHA1(Secure Hash Algorithm 1) 해시입니다. 보안되지 않는 이름의 경우 *Authority*는 단일 문자 “0”입니다. *분류자*는 응용 프로그램을 식별하는 문자열입니다. 피어 이름 분류자는 `null` 종결자를 포함하여 길이지 149자를 초과할 수 없습니다.  
+-   순위가 높은 128비트는 P2P(피어 투 피어) ID라고 하며 엔드포인트에 할당된 피어 이름의 해시입니다. 피어 이름의 형식은 *Authority.Classifier*입니다. 보안되는 이름의 경우, *Authority*는 16진수 문자 형식의 피어 이름 공개 키의 SHA1(Secure Hash Algorithm 1) 해시입니다. 보안되지 않는 이름의 경우 *Authority*는 단일 문자 “0”입니다. *분류자*는 응용 프로그램을 식별하는 문자열입니다. 피어 이름 분류자는 `null` 종결자를 포함하여 길이지 149자를 초과할 수 없습니다.  
   
 -   순위가 낮은 128비트는 특정 클라우드에서 동일한 P2P ID의 여러 인스턴스를 식별하도록 생성된 수로 서비스 위치를 나타내는 데 사용됩니다.  
   

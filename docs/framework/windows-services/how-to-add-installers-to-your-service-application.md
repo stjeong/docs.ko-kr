@@ -11,13 +11,12 @@ helpviewer_keywords:
 - ServiceProcessInstaller class, adding installers to services
 ms.assetid: 8b698e9a-b88e-4f44-ae45-e0c5ea0ae5a8
 author: ghogen
-manager: douge
-ms.openlocfilehash: 77f41e696fed3d33282b6437e99129fda9e209e9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: b73d7cf694e7bce5d055f8a3c9f78c27bb8cd5b9
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44182059"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47196228"
 ---
 # <a name="how-to-add-installers-to-your-service-application"></a>방법: 서비스 응용 프로그램에 설치 관리자 추가
 Visual Studio에서는 서비스 응용 프로그램과 관련된 리소스를 설치할 수 있는 설치 구성 요소를 제공합니다. 설치 구성 요소는 서비스를 설치하는 시스템에 개별 서비스를 등록하고 서비스 제어 관리자에 서비스가 있음을 알립니다. 서비스 응용 프로그램을 작업할 때 속성 창의 링크를 선택하여 프로젝트에 적절한 설치 관리자를 자동으로 추가할 수 있습니다.  

@@ -3,11 +3,11 @@ title: '방법: 개체 그래프 프로젝션(C#)'
 ms.date: 07/20/2015
 ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
 ms.openlocfilehash: f8e15e80a6914a8dcb848d91a13958f7e4175342
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46706041"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47196085"
 ---
 # <a name="how-to-project-an-object-graph-c"></a>방법: 개체 그래프 프로젝션(C#)
 이 항목에서는 XML에서 개체 그래프를 프로젝션하거나 채우는 방법을 보여 줍니다.  

@@ -11,13 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5916c764-879f-4716-99fb-1d21c6237f1c
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 8b5dc8ed718402a128add375cc1adfb6d17713e8
-ms.sourcegitcommit: 88f251b08bf0718ce119f3d7302f514b74895038
+ms.openlocfilehash: 2edfeb85ee21b5d398938bc9500f463cd78a6c07
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33955955"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47198997"
 ---
 # <a name="synchronous-server-socket-example"></a>동기 서버 소켓 예제
 다음 예제 프로그램은 클라이언트의 연결 요청을 수신하는 서버를 만듭니다. 이 서버는 동기 소켓으로 빌드되므로 클라이언트의 연결을 대기하는 동안 서버 응용 프로그램의 실행이 일시 중단됩니다. 응용 프로그램은 클라이언트에서 문자열을 받아 콘솔에 문자열을 표시한 다음 문자열을 클라이언트에 다시 에코합니다. 클라이언트의 문자열에는 메시지의 끝을 알리는 “\<EOF >” 문자열이 포함되어야 합니다.  

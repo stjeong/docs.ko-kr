@@ -4,18 +4,17 @@ ms.date: 03/30/2017
 ms.assetid: b6216d88-bccb-4a59-9f1c-9f751708e811
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: a933c81105399a9411fcb749a06e47bf769cf532
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c81300d160e2ec175f61f286047fa92015345942
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397821"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47198152"
 ---
 # <a name="peer-to-peer-collaboration"></a>피어 투 피어 공동 작업
 피어 투 피어 네트워킹은 인터넷의 에지에서 클라이언트 기반 컴퓨팅 작업 이상을 수행하는 비교적 강력한 컴퓨터(개인용 컴퓨터)를 활용합니다. 최신 개인용 컴퓨터(PC)에는 매우 빠른 프로세서, 광대한 메모리 및 대형 하드 디스크가 있으며, 이러한 리소스는 이메일과 웹 검색 등의 일반적인 컴퓨팅 작업을 수행할 때 완전히 이용되지 않습니다. 최신 PC는 여러 형식의 응용 프로그램을 위한 서버(피어) 및 클라이언트로 사용될 수 있습니다.  
   
--   피어 투 피어 공동 작업 인프라는 Windows Vista 이상 플랫폼에서 주변 사람 찾기 서비스를 활용하는 Microsoft Windows 피어 투 피어 인프라의 간단한 구현입니다. 인터넷 끝점과 연락처의 서비스도 제공할 수 있지만, 주변 사람 찾기 서비스가 작동하는 서브넷에서 피어 지원 응용 프로그램용으로 가장 적합합니다. 연락처 끝점, 가용성 및 현재 상태를 확인하기 위해 Live Messenger 및 기타 Live 인식 응용 프로그램에서 사용하는 일반적인 연락처 관리자를 통합합니다.  
+-   피어 투 피어 공동 작업 인프라는 Windows Vista 이상 플랫폼에서 주변 사람 찾기 서비스를 활용하는 Microsoft Windows 피어 투 피어 인프라의 간단한 구현입니다. 인터넷 엔드포인트와 연락처의 서비스도 제공할 수 있지만, 주변 사람 찾기 서비스가 작동하는 서브넷에서 피어 지원 응용 프로그램용으로 가장 적합합니다. 연락처 엔드포인트, 가용성 및 현재 상태를 확인하기 위해 Live Messenger 및 기타 Live 인식 응용 프로그램에서 사용하는 일반적인 연락처 관리자를 통합합니다.  
   
 -  
   

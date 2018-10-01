@@ -19,20 +19,19 @@ helpviewer_keywords:
 ms.assetid: d1ce882e-653e-41f5-9289-844ec855b804
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 4f04255edf9533612dd6b0733331fb18587ff3f8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2e79c9a75e4513be91af1104195af3614b49092d
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33398146"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47398552"
 ---
 # <a name="using-a-synchronous-server-socket"></a>동기 서버 소켓 사용
 동기 서버 소켓은 소켓에 연결 요청이 수신될 때까지 응용 프로그램 실행을 일시 중단합니다. 동기 서버 소켓은 네트워크를 작업에 많이 사용하는 응용 프로그램에 적합하지 않지만 간단한 네트워크 응용 프로그램에는 적합할 수 있습니다.  
   
- <xref:System.Net.Sockets.Socket>이 <xref:System.Net.Sockets.Socket.Bind%2A> 및 <xref:System.Net.Sockets.Socket.Listen%2A> 메서드를 사용하여 끝점에서 수신 대기하도록 설정되면 <xref:System.Net.Sockets.Socket.Accept%2A> 메서드를 사용하여 들어오는 연결 요청을 허용할 수 있습니다. **Accept** 메서드를 호출하면 연결 요청이 수신될 때까지 응용 프로그램이 일시 중단됩니다.  
+ <xref:System.Net.Sockets.Socket>이 <xref:System.Net.Sockets.Socket.Bind%2A> 및 <xref:System.Net.Sockets.Socket.Listen%2A> 메서드를 사용하여 엔드포인트에서 수신 대기하도록 설정되면 <xref:System.Net.Sockets.Socket.Accept%2A> 메서드를 사용하여 들어오는 연결 요청을 허용할 수 있습니다. **Accept** 메서드를 호출하면 연결 요청이 수신될 때까지 응용 프로그램이 일시 중단됩니다.  
   
- 연결 요청이 수신되면 **Accept**는 연결 중인 클라이언트와 연결된 새 **Socket** 인스턴스를 반환합니다. 다음 예제에서는 클라이언트에서 데이터를 읽고 콘솔에 표시한 다음 데이터를 클라이언트에 다시 에코합니다. **Socket**은 메시징 프로토콜을 지정하지 않으므로 “\<EOF>” 문자열은 메시지 데이터의 끝을 표시합니다. `listener`라는 **Socket**이 초기화되었으며 끝점에 바인딩되었다고 가정합니다.  
+ 연결 요청이 수신되면 **Accept**는 연결 중인 클라이언트와 연결된 새 **Socket** 인스턴스를 반환합니다. 다음 예제에서는 클라이언트에서 데이터를 읽고 콘솔에 표시한 다음 데이터를 클라이언트에 다시 에코합니다. **Socket**은 메시징 프로토콜을 지정하지 않으므로 “\<EOF>” 문자열은 메시지 데이터의 끝을 표시합니다. `listener`라는 **Socket**이 초기화되었으며 엔드포인트에 바인딩되었다고 가정합니다.  
   
 ```vb  
 Console.WriteLine("Waiting for a connection...")  

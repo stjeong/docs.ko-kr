@@ -19,13 +19,12 @@ helpviewer_keywords:
 ms.assetid: c64a049c-5981-43bc-a2dc-1851473589c7
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: 600ea82965c332c8620db689abb50965f15f0067
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2ec87d45a4e7140aa2c1d901492952cd25634025
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396950"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47192225"
 ---
 # <a name="how-to-create-a-socket"></a>방법: 소켓 만들기
 소켓을 사용하여 원격 장치와 통신하려면 먼저 프로토콜 및 네트워크 주소 정보를 사용하여 소켓을 초기화해야 합니다. <xref:System.Net.Sockets.Socket> 클래스에 대한 생성자에는 소켓이 연결을 만드는 데 사용하는 주소 패밀리, 소켓 형식 및 프로토콜 형식을 지정하는 매개 변수가 있습니다.  
@@ -61,7 +60,7 @@ Dim s as New Socket(AddressFamily.InterNetwork, _
   
  <xref:System.Net.Sockets.ProtocolType> 열거형은 **소켓**에서 통신할 때 사용할 네트워크 프로토콜을 지정합니다. 예를 들어 **ProtocolType.Tcp**는 소켓이 TCP를 사용함을 나타내고 **ProtocolType.Udp**는 소켓이 UDP를 사용함을 나타냅니다.  
   
- **소켓**이 만들어진 후 원격 끝점에 대한 연결을 시작하거나 원격 장치에서 연결을 수신할 수 있습니다.  
+ **소켓**이 만들어진 후 원격 엔드포인트에 대한 연결을 시작하거나 원격 장치에서 연결을 수신할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [클라이언트 소켓 사용](../../../docs/framework/network-programming/using-client-sockets.md)  

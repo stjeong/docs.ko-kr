@@ -5,11 +5,11 @@ helpviewer_keywords:
 - keywords [C#], exception handling
 ms.assetid: 6d0323a3-3164-411c-9b84-a3606bd0e13c
 ms.openlocfilehash: 1d48981e0d36053fce1249b27cd15551ed59dc91
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46576946"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47208226"
 ---
 # <a name="exception-handling-statements-c-reference"></a>예외 처리문(C# 참조)
 C#은 프로그램 실행 중에 발생할 수 있는 비정상적인 상황(예외) 처리를 기본적으로 지원합니다. 이러한 예외는 정상적인 제어 흐름 외부에 있는 코드에 의해 처리됩니다.  

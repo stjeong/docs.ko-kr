@@ -17,13 +17,12 @@ helpviewer_keywords:
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
 author: mcleblanc
 ms.author: markl
-manager: markl
-ms.openlocfilehash: e44d752e5743d7d56bdce9b216b4cf5f5f920734
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e0f1ad373f8ec7687b44856a53e1e35b8b6baf8c
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33396187"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47089064"
 ---
 # <a name="internet-authentication"></a>인터넷 인증
 <xref:System.Net> 클래스는 표준 인터넷 인증 방법인 기본, 다이제스트, 협상, NTLM 및 Kerberos 인증뿐 아니라 직접 만들 수 있는 사용자 지정 방법을 포함한 다양한 클라이언트 인증 메커니즘을 지원합니다.  
