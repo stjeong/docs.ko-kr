@@ -2,12 +2,12 @@
 title: 계산 식(F#)
 description: '시퀀싱 할 수 있으며 제어 흐름 구문 및 바인딩을 사용 하 여 결합 하는 F # 계산을 작성 하는 편리한 구문을 만드는 방법에 알아봅니다.'
 ms.date: 07/27/2018
-ms.openlocfilehash: ce81af7966a436b3973de277fb2a78ec06f4c471
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 148d1a661fb7630782c6dc48507a66e7bdc1d56b
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45685740"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47459804"
 ---
 # <a name="computation-expressions"></a>계산 식
 
@@ -88,7 +88,7 @@ let doThingsAsync url =
 ```fsharp
 let doThingsAsync data url =
     async {
-        do! sumbitData data url
+        do! submitData data url
         ...
     }
 ```
