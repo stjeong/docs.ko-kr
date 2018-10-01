@@ -5,44 +5,44 @@ author: mairaw
 ms.author: mairaw
 ms.date: 05/25/2018
 ms.openlocfilehash: 76165590478b0e76d19d546c87e012da4716b6db
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46578898"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47421192"
 ---
-# <a name="dotnet-msbuild"></a><span data-ttu-id="6fe9b-103">dotnet msbuild</span><span class="sxs-lookup"><span data-stu-id="6fe9b-103">dotnet msbuild</span></span>
+# <a name="dotnet-msbuild"></a><span data-ttu-id="4dcd5-103">dotnet msbuild</span><span class="sxs-lookup"><span data-stu-id="4dcd5-103">dotnet msbuild</span></span>
 
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
-## <a name="name"></a><span data-ttu-id="6fe9b-104">name</span><span class="sxs-lookup"><span data-stu-id="6fe9b-104">Name</span></span>
+## <a name="name"></a><span data-ttu-id="4dcd5-104">name</span><span class="sxs-lookup"><span data-stu-id="4dcd5-104">Name</span></span>
 
-<span data-ttu-id="6fe9b-105">`dotnet msbuild` - 프로젝트 및 모든 종속성을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-105">`dotnet msbuild` - Builds a project and all of its dependencies.</span></span>
+<span data-ttu-id="4dcd5-105">`dotnet msbuild` - 프로젝트 및 모든 종속성을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-105">`dotnet msbuild` - Builds a project and all of its dependencies.</span></span>
 
-## <a name="synopsis"></a><span data-ttu-id="6fe9b-106">개요</span><span class="sxs-lookup"><span data-stu-id="6fe9b-106">Synopsis</span></span>
+## <a name="synopsis"></a><span data-ttu-id="4dcd5-106">개요</span><span class="sxs-lookup"><span data-stu-id="4dcd5-106">Synopsis</span></span>
 
 `dotnet msbuild <msbuild_arguments> [-h]`
 
-## <a name="description"></a><span data-ttu-id="6fe9b-107">설명</span><span class="sxs-lookup"><span data-stu-id="6fe9b-107">Description</span></span>
+## <a name="description"></a><span data-ttu-id="4dcd5-107">설명</span><span class="sxs-lookup"><span data-stu-id="4dcd5-107">Description</span></span>
 
-<span data-ttu-id="6fe9b-108">`dotnet msbuild` 명령을 사용하면 모든 기능을 갖춘 MSBuild에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-108">The `dotnet msbuild` command allows access to a fully functional MSBuild.</span></span>
+<span data-ttu-id="4dcd5-108">`dotnet msbuild` 명령을 사용하면 모든 기능을 갖춘 MSBuild에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-108">The `dotnet msbuild` command allows access to a fully functional MSBuild.</span></span>
 
-<span data-ttu-id="6fe9b-109">이 명령에는 기존 MSBuild 명령줄 클라이언트와 정확히 동일한 기능이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-109">The command has the exact same capabilities as existing MSBuild command-line client.</span></span> <span data-ttu-id="6fe9b-110">옵션은 모두 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-110">The options are all the same.</span></span> <span data-ttu-id="6fe9b-111">사용 가능한 옵션에 대한 자세한 내용은 [MSBuild 명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference)를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-111">For more information about the available options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).</span></span>
+<span data-ttu-id="4dcd5-109">이 명령에는 기존 MSBuild 명령줄 클라이언트와 정확히 동일한 기능이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-109">The command has the exact same capabilities as existing MSBuild command-line client.</span></span> <span data-ttu-id="4dcd5-110">옵션은 모두 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-110">The options are all the same.</span></span> <span data-ttu-id="4dcd5-111">사용 가능한 옵션에 대한 자세한 내용은 [MSBuild 명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference)를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-111">For more information about the available options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="6fe9b-112">예제</span><span class="sxs-lookup"><span data-stu-id="6fe9b-112">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4dcd5-112">예제</span><span class="sxs-lookup"><span data-stu-id="4dcd5-112">Examples</span></span>
 
-<span data-ttu-id="6fe9b-113">프로젝트 및 해당 종속성을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-113">Build a project and its dependencies:</span></span>
+<span data-ttu-id="4dcd5-113">프로젝트 및 해당 종속성을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-113">Build a project and its dependencies:</span></span>
 
 `dotnet msbuild`
 
-<span data-ttu-id="6fe9b-114">릴리스 구성을 사용하여 프로젝트 및 해당 종속성을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-114">Build a project and its dependencies using Release configuration:</span></span>
+<span data-ttu-id="4dcd5-114">릴리스 구성을 사용하여 프로젝트 및 해당 종속성을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-114">Build a project and its dependencies using Release configuration:</span></span>
 
 `dotnet msbuild -p:Configuration=Release`
 
-<span data-ttu-id="6fe9b-115">게시 대상을 실행하고 `osx.10.11-x64` RID에 대해 게시합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-115">Run the publish target and publish for the `osx.10.11-x64` RID:</span></span>
+<span data-ttu-id="4dcd5-115">게시 대상을 실행하고 `osx.10.11-x64` RID에 대해 게시합니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-115">Run the publish target and publish for the `osx.10.11-x64` RID:</span></span>
 
 `dotnet msbuild -t:Publish -p:RuntimeIdentifiers=osx.10.11-x64`
 
-<span data-ttu-id="6fe9b-116">SDK를 통해 포함된 모든 대상이 있는 전체 프로젝트를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe9b-116">See the whole project with all targets included by the SDK:</span></span>
+<span data-ttu-id="4dcd5-116">SDK를 통해 포함된 모든 대상이 있는 전체 프로젝트를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4dcd5-116">See the whole project with all targets included by the SDK:</span></span>
 
 `dotnet msbuild -pp`
