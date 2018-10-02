@@ -1,35 +1,27 @@
 ---
-title: WF(Windows Workflow) 샘플
-ms.date: 03/30/2017
+title: Windows WF (Workflow) 샘플 설명서
+ms.date: 09/24/2018
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
-ms.openlocfilehash: b6f614bd8543070ee69636344376b058988c2306
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 64153e885cd4203134d429d2d8b8e246628de5fb
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195266"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48026999"
 ---
-# <a name="windows-workflow-wf-samples"></a><span data-ttu-id="3d01f-102">WF(Windows Workflow) 샘플</span><span class="sxs-lookup"><span data-stu-id="3d01f-102">Windows Workflow (WF) Samples</span></span>
+# <a name="windows-workflow-wf-samples"></a><span data-ttu-id="46c3c-102">WF(Windows Workflow) 샘플</span><span class="sxs-lookup"><span data-stu-id="46c3c-102">Windows Workflow (WF) Samples</span></span>
 
-<span data-ttu-id="3d01f-103">이 이들은 다양 한 측면의 Windows WF (Workflow Foundation)에 지침을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-103">These samples provide instruction on various aspects of Windows Workflow Foundation (WF).</span></span>
+<span data-ttu-id="46c3c-103">할 수 있습니다 [Windows Workflow 샘플 다운로드](https://go.microsoft.com/fwlink/?LinkId=150780) 는 다양 한 측면의 Windows WF (Workflow Foundation)에 대 한 지침을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-103">You can [download Windows Workflow samples](https://go.microsoft.com/fwlink/?LinkId=150780) that provide instruction on various aspects of Windows Workflow Foundation (WF).</span></span>
 
-<span data-ttu-id="3d01f-104">[Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkId=150780)에서 샘플을 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-104">The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).</span></span>
+<span data-ttu-id="46c3c-104">이 섹션의에서 문서 다운로드 패키지에서 샘플의 일부를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-104">The articles in this section describe some of the samples in the download package.</span></span> <span data-ttu-id="46c3c-105">전체 설명서 집합의 모든 샘플에 설명 하는 경우를 확인 합니다 [.NET Framework 4 WF 샘플](/previous-versions/dotnet/netframework-4.0/dd483375(v%3dvs.100)) 섹션입니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-105">For a complete documentation set that covers all of the samples, check the [.NET Framework 4 WF samples](/previous-versions/dotnet/netframework-4.0/dd483375(v%3dvs.100)) section.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3d01f-105">이러한 샘플 Visual Studio 2010을 사용 하 여 만든 및 [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], 이후 버전의 Visual Studio와.NET Framework와 호환 되지만 합니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-105">These samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework.</span></span> <span data-ttu-id="3d01f-106">Windows Workflow Foundation에 대 한 추가 샘플 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] 에서 확인할 수 있습니다 [MSDN 코드 샘플](https://aka.ms/WF45Samples)합니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-106">Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).</span></span>
+> <span data-ttu-id="46c3c-106">다운로드 가능한 샘플 Visual Studio 2010을 사용 하 여 만든 및 [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], 이후 버전의 Visual Studio와.NET Framework와 호환 되지만 합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-106">The downloadable samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework.</span></span> <span data-ttu-id="46c3c-107">Windows Workflow Foundation에 대 한 추가 샘플 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] 에서 확인할 수 있습니다 [MSDN 코드 샘플](https://aka.ms/WF45Samples)합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-107">Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="3d01f-107">단원 내용</span><span class="sxs-lookup"><span data-stu-id="3d01f-107">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="46c3c-108">단원 내용</span><span class="sxs-lookup"><span data-stu-id="46c3c-108">In this section</span></span>
 
-[<span data-ttu-id="3d01f-108">응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="3d01f-108">Application</span></span>](../../../../docs/framework/windows-workflow-foundation/samples/application.md)
+<span data-ttu-id="46c3c-109">[응용 프로그램](../../../../docs/framework/windows-workflow-foundation/samples/application.md) -워크플로 응용 프로그램에 관련 된 샘플을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-109">[Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md) - Provides samples that are related to workflow applications.</span></span>
 
-<span data-ttu-id="3d01f-109">워크플로 응용 프로그램에 관련된 샘플을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-109">Provides samples that are related to workflow applications.</span></span>
+<span data-ttu-id="46c3c-110">[기본](../../../../docs/framework/windows-workflow-foundation/samples/basic.md) -기본 Windows WF (Workflow Foundation) 기능을 보여 주는 샘플을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-110">[Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md) - Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.</span></span>
 
-[<span data-ttu-id="3d01f-110">기본</span><span class="sxs-lookup"><span data-stu-id="3d01f-110">Basic</span></span>](../../../../docs/framework/windows-workflow-foundation/samples/basic.md)
-
-<span data-ttu-id="3d01f-111">기본 Windows WF (Workflow Foundation) 기능을 보여 주는 샘플을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-111">Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.</span></span>
-
-[<span data-ttu-id="3d01f-112">시나리오</span><span class="sxs-lookup"><span data-stu-id="3d01f-112">Scenario</span></span>](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md)
-
-<span data-ttu-id="3d01f-113">Windows WF (Workflow Foundation) 시나리오의 예제를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-113">Provides examples of Windows Workflow Foundation (WF) scenarios.</span></span>
-
-<span data-ttu-id="3d01f-114">[Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkId=150780)에서 샘플을 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3d01f-114">The samples can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=150780).</span></span>
+<span data-ttu-id="46c3c-111">[시나리오](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md) -Windows WF (Workflow Foundation) 시나리오의 예제를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="46c3c-111">[Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md) - Provides examples of Windows Workflow Foundation (WF) scenarios.</span></span>

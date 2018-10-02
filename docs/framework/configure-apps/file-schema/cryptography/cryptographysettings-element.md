@@ -11,48 +11,48 @@ ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: dc55acd7a698ef37d45e8a412db684c13a3b8b16
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47203377"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025460"
 ---
-# <a name="ltcryptographysettingsgt-element"></a><span data-ttu-id="47c29-102">&lt;cryptographySettings&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="47c29-102">&lt;cryptographySettings&gt; Element</span></span>
-<span data-ttu-id="47c29-103">암호화 설정이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-103">Contains cryptography settings.</span></span>  
+# <a name="ltcryptographysettingsgt-element"></a><span data-ttu-id="0c414-102">&lt;cryptographySettings&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="0c414-102">&lt;cryptographySettings&gt; Element</span></span>
+<span data-ttu-id="0c414-103">암호화 설정이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-103">Contains cryptography settings.</span></span>  
   
- <span data-ttu-id="47c29-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="47c29-104">\<configuration></span></span>  
-<span data-ttu-id="47c29-105">\<mscorlib ></span><span class="sxs-lookup"><span data-stu-id="47c29-105">\<mscorlib></span></span>  
-<span data-ttu-id="47c29-106">\<cryptographySettings ></span><span class="sxs-lookup"><span data-stu-id="47c29-106">\<cryptographySettings></span></span>  
+ <span data-ttu-id="0c414-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="0c414-104">\<configuration></span></span>  
+<span data-ttu-id="0c414-105">\<mscorlib ></span><span class="sxs-lookup"><span data-stu-id="0c414-105">\<mscorlib></span></span>  
+<span data-ttu-id="0c414-106">\<cryptographySettings ></span><span class="sxs-lookup"><span data-stu-id="0c414-106">\<cryptographySettings></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="47c29-107">구문</span><span class="sxs-lookup"><span data-stu-id="47c29-107">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0c414-107">구문</span><span class="sxs-lookup"><span data-stu-id="0c414-107">Syntax</span></span>  
   
 ```xml  
       <cryptographySettings>   
 </cryptographySettings>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="47c29-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="47c29-108">Attributes and Elements</span></span>  
- <span data-ttu-id="47c29-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="0c414-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="0c414-108">Attributes and Elements</span></span>  
+ <span data-ttu-id="0c414-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="47c29-110">특성</span><span class="sxs-lookup"><span data-stu-id="47c29-110">Attributes</span></span>  
- <span data-ttu-id="47c29-111">없음</span><span class="sxs-lookup"><span data-stu-id="47c29-111">None.</span></span>  
+### <a name="attributes"></a><span data-ttu-id="0c414-110">특성</span><span class="sxs-lookup"><span data-stu-id="0c414-110">Attributes</span></span>  
+ <span data-ttu-id="0c414-111">없음</span><span class="sxs-lookup"><span data-stu-id="0c414-111">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="47c29-112">자식 요소</span><span class="sxs-lookup"><span data-stu-id="47c29-112">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="0c414-112">자식 요소</span><span class="sxs-lookup"><span data-stu-id="0c414-112">Child Elements</span></span>  
   
-|<span data-ttu-id="47c29-113">요소</span><span class="sxs-lookup"><span data-stu-id="47c29-113">Element</span></span>|<span data-ttu-id="47c29-114">설명</span><span class="sxs-lookup"><span data-stu-id="47c29-114">Description</span></span>|  
+|<span data-ttu-id="0c414-113">요소</span><span class="sxs-lookup"><span data-stu-id="0c414-113">Element</span></span>|<span data-ttu-id="0c414-114">설명</span><span class="sxs-lookup"><span data-stu-id="0c414-114">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="47c29-115">\<cryptoNameMapping ></span><span class="sxs-lookup"><span data-stu-id="47c29-115">\<cryptoNameMapping></span></span>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptonamemapping-element.md)|<span data-ttu-id="47c29-116">이름에 대한 클래스의 매핑이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-116">Contains mappings of classes to friendly names.</span></span>|  
-|[<span data-ttu-id="47c29-117">\<oidMap ></span><span class="sxs-lookup"><span data-stu-id="47c29-117">\<oidMap></span></span>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|<span data-ttu-id="47c29-118">ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-118">Contains ASN.1 object identifier (OID) mappings to classes.</span></span>|  
+|[<span data-ttu-id="0c414-115">\<cryptoNameMapping ></span><span class="sxs-lookup"><span data-stu-id="0c414-115">\<cryptoNameMapping></span></span>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptonamemapping-element.md)|<span data-ttu-id="0c414-116">이름에 대한 클래스의 매핑이 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-116">Contains mappings of classes to friendly names.</span></span>|  
+|[<span data-ttu-id="0c414-117">\<oidMap ></span><span class="sxs-lookup"><span data-stu-id="0c414-117">\<oidMap></span></span>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|<span data-ttu-id="0c414-118">ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-118">Contains ASN.1 object identifier (OID) mappings to classes.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="47c29-119">부모 요소</span><span class="sxs-lookup"><span data-stu-id="47c29-119">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="0c414-119">부모 요소</span><span class="sxs-lookup"><span data-stu-id="0c414-119">Parent Elements</span></span>  
   
-|<span data-ttu-id="47c29-120">요소</span><span class="sxs-lookup"><span data-stu-id="47c29-120">Element</span></span>|<span data-ttu-id="47c29-121">설명</span><span class="sxs-lookup"><span data-stu-id="47c29-121">Description</span></span>|  
+|<span data-ttu-id="0c414-120">요소</span><span class="sxs-lookup"><span data-stu-id="0c414-120">Element</span></span>|<span data-ttu-id="0c414-121">설명</span><span class="sxs-lookup"><span data-stu-id="0c414-121">Description</span></span>|  
 |-------------|-----------------|  
-|`configuration`|<span data-ttu-id="47c29-122">공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-122">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
-|`mscorlib`|<span data-ttu-id="47c29-123">포함 된 `cryptographySettings` 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-123">Contains the `cryptographySettings` element.</span></span>|  
+|`configuration`|<span data-ttu-id="0c414-122">공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-122">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
+|`mscorlib`|<span data-ttu-id="0c414-123">포함 된 `cryptographySettings` 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-123">Contains the `cryptographySettings` element.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="47c29-124">예제</span><span class="sxs-lookup"><span data-stu-id="47c29-124">Example</span></span>  
- <span data-ttu-id="47c29-125">다음 방법을 보여 주는 예제는  **\<cryptographySettings >** 암호화 이름 매핑 및 OID 매핑이 포함 하는 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-125">The following example shows how use the **\<cryptographySettings>** element to contain cryptography name mappings and OID mappings.</span></span> <span data-ttu-id="47c29-126">이 예제에서는 런타임에 구성 있도록 <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> 반환을 `MyHashClass` 개체 및 `MyCryptoClass` 클래스 1.3.36.2.1 개체 식별자에 매핑됩니다.</span><span class="sxs-lookup"><span data-stu-id="47c29-126">This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.</span></span>  
+## <a name="example"></a><span data-ttu-id="0c414-124">예제</span><span class="sxs-lookup"><span data-stu-id="0c414-124">Example</span></span>  
+ <span data-ttu-id="0c414-125">다음 방법을 보여 주는 예제는  **\<cryptographySettings >** 암호화 이름 매핑 및 OID 매핑이 포함 하는 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-125">The following example shows how use the **\<cryptographySettings>** element to contain cryptography name mappings and OID mappings.</span></span> <span data-ttu-id="0c414-126">이 예제에서는 런타임에 구성 있도록 <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> 반환을 `MyHashClass` 개체 및 `MyCryptoClass` 클래스 1.3.36.2.1 개체 식별자에 매핑됩니다.</span><span class="sxs-lookup"><span data-stu-id="0c414-126">This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.</span></span>  
   
 ```xml  
 <configuration>  
@@ -78,7 +78,7 @@ ms.locfileid: "47203377"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="47c29-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="47c29-127">See Also</span></span>  
- [<span data-ttu-id="47c29-128">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="47c29-128">Configuration File Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [<span data-ttu-id="47c29-129">암호화 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="47c29-129">Cryptography Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
- [<span data-ttu-id="47c29-130">암호화 서비스</span><span class="sxs-lookup"><span data-stu-id="47c29-130">Cryptographic Services</span></span>](../../../../../docs/standard/security/cryptographic-services.md)
+## <a name="see-also"></a><span data-ttu-id="0c414-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0c414-127">See Also</span></span>  
+ [<span data-ttu-id="0c414-128">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="0c414-128">Configuration File Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+ [<span data-ttu-id="0c414-129">암호화 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="0c414-129">Cryptography Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+ [<span data-ttu-id="0c414-130">암호화 서비스</span><span class="sxs-lookup"><span data-stu-id="0c414-130">Cryptographic Services</span></span>](../../../../../docs/standard/security/cryptographic-services.md)

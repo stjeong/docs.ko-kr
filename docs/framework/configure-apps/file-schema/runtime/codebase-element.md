@@ -12,22 +12,22 @@ ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: d7563d3a0ba545bfd8d1b80981fcce607d230873
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47399244"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48028224"
 ---
-# <a name="ltcodebasegt-element"></a><span data-ttu-id="5d4c3-102">&lt;코드 베이스&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="5d4c3-102">&lt;codeBase&gt; Element</span></span>
-<span data-ttu-id="5d4c3-103">공용 언어 런타임에서 어셈블리를 찾는 위치를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-103">Specifies where the common language runtime can find an assembly.</span></span>  
+# <a name="ltcodebasegt-element"></a><span data-ttu-id="3ef51-102">&lt;코드 베이스&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="3ef51-102">&lt;codeBase&gt; Element</span></span>
+<span data-ttu-id="3ef51-103">공용 언어 런타임에서 어셈블리를 찾는 위치를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-103">Specifies where the common language runtime can find an assembly.</span></span>  
   
- <span data-ttu-id="5d4c3-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="5d4c3-104">\<configuration></span></span>  
-<span data-ttu-id="5d4c3-105">\<runtime></span><span class="sxs-lookup"><span data-stu-id="5d4c3-105">\<runtime></span></span>  
-<span data-ttu-id="5d4c3-106">\<assemblyBinding></span><span class="sxs-lookup"><span data-stu-id="5d4c3-106">\<assemblyBinding></span></span>  
-<span data-ttu-id="5d4c3-107">\<dependentAssembly ></span><span class="sxs-lookup"><span data-stu-id="5d4c3-107">\<dependentAssembly></span></span>  
-<span data-ttu-id="5d4c3-108">\<코드 베이스 ></span><span class="sxs-lookup"><span data-stu-id="5d4c3-108">\<codeBase></span></span>  
+ <span data-ttu-id="3ef51-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="3ef51-104">\<configuration></span></span>  
+<span data-ttu-id="3ef51-105">\<runtime></span><span class="sxs-lookup"><span data-stu-id="3ef51-105">\<runtime></span></span>  
+<span data-ttu-id="3ef51-106">\<assemblyBinding></span><span class="sxs-lookup"><span data-stu-id="3ef51-106">\<assemblyBinding></span></span>  
+<span data-ttu-id="3ef51-107">\<dependentAssembly ></span><span class="sxs-lookup"><span data-stu-id="3ef51-107">\<dependentAssembly></span></span>  
+<span data-ttu-id="3ef51-108">\<코드 베이스 ></span><span class="sxs-lookup"><span data-stu-id="3ef51-108">\<codeBase></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5d4c3-109">구문</span><span class="sxs-lookup"><span data-stu-id="5d4c3-109">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3ef51-109">구문</span><span class="sxs-lookup"><span data-stu-id="3ef51-109">Syntax</span></span>  
   
 ```xml  
    <codeBase    
@@ -35,43 +35,43 @@ version="Assembly version"
 href="URL of assembly"/>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="5d4c3-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="5d4c3-110">Attributes and Elements</span></span>  
- <span data-ttu-id="5d4c3-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="3ef51-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="3ef51-110">Attributes and Elements</span></span>  
+ <span data-ttu-id="3ef51-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="5d4c3-112">특성</span><span class="sxs-lookup"><span data-stu-id="5d4c3-112">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="3ef51-112">특성</span><span class="sxs-lookup"><span data-stu-id="3ef51-112">Attributes</span></span>  
   
-|<span data-ttu-id="5d4c3-113">특성</span><span class="sxs-lookup"><span data-stu-id="5d4c3-113">Attribute</span></span>|<span data-ttu-id="5d4c3-114">설명</span><span class="sxs-lookup"><span data-stu-id="5d4c3-114">Description</span></span>|  
+|<span data-ttu-id="3ef51-113">특성</span><span class="sxs-lookup"><span data-stu-id="3ef51-113">Attribute</span></span>|<span data-ttu-id="3ef51-114">설명</span><span class="sxs-lookup"><span data-stu-id="3ef51-114">Description</span></span>|  
 |---------------|-----------------|  
-|`href`|<span data-ttu-id="5d4c3-115">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-115">Required attribute.</span></span><br /><br /> <span data-ttu-id="5d4c3-116">런타임에서 어셈블리의 지정된 된 버전을 찾을 수 있는 URL을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-116">Specifies the URL where the runtime can find the specified version of the assembly.</span></span>|  
-|`version`|<span data-ttu-id="5d4c3-117">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-117">Required attribute.</span></span><br /><br /> <span data-ttu-id="5d4c3-118">코드 베이스에 적용 하는 어셈블리의 버전을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-118">Specifies the version of the assembly the codebase applies to.</span></span> <span data-ttu-id="5d4c3-119">어셈블리 버전 번호의 형식은 *major.minor.build.revision*합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-119">The format of an assembly version number is *major.minor.build.revision*.</span></span>|  
+|`href`|<span data-ttu-id="3ef51-115">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-115">Required attribute.</span></span><br /><br /> <span data-ttu-id="3ef51-116">런타임에서 어셈블리의 지정된 된 버전을 찾을 수 있는 URL을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-116">Specifies the URL where the runtime can find the specified version of the assembly.</span></span>|  
+|`version`|<span data-ttu-id="3ef51-117">필수 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-117">Required attribute.</span></span><br /><br /> <span data-ttu-id="3ef51-118">코드 베이스에 적용 하는 어셈블리의 버전을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-118">Specifies the version of the assembly the codebase applies to.</span></span> <span data-ttu-id="3ef51-119">어셈블리 버전 번호의 형식은 *major.minor.build.revision*합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-119">The format of an assembly version number is *major.minor.build.revision*.</span></span>|  
   
-## <a name="version-attribute"></a><span data-ttu-id="5d4c3-120">버전 특성</span><span class="sxs-lookup"><span data-stu-id="5d4c3-120">version Attribute</span></span>  
+## <a name="version-attribute"></a><span data-ttu-id="3ef51-120">버전 특성</span><span class="sxs-lookup"><span data-stu-id="3ef51-120">version Attribute</span></span>  
   
-|<span data-ttu-id="5d4c3-121">값</span><span class="sxs-lookup"><span data-stu-id="5d4c3-121">Value</span></span>|<span data-ttu-id="5d4c3-122">설명</span><span class="sxs-lookup"><span data-stu-id="5d4c3-122">Description</span></span>|  
+|<span data-ttu-id="3ef51-121">값</span><span class="sxs-lookup"><span data-stu-id="3ef51-121">Value</span></span>|<span data-ttu-id="3ef51-122">설명</span><span class="sxs-lookup"><span data-stu-id="3ef51-122">Description</span></span>|  
 |-----------|-----------------|  
-|<span data-ttu-id="5d4c3-123">버전 번호의 각 부분에 대 한 유효한 값은 0부터 65535 까지입니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-123">Valid values for each part of the version number are 0 to 65535.</span></span>|<span data-ttu-id="5d4c3-124">해당 사항 없음.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-124">Not applicable.</span></span>|  
+|<span data-ttu-id="3ef51-123">버전 번호의 각 부분에 대 한 유효한 값은 0부터 65535 까지입니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-123">Valid values for each part of the version number are 0 to 65535.</span></span>|<span data-ttu-id="3ef51-124">해당 사항 없음.</span><span class="sxs-lookup"><span data-stu-id="3ef51-124">Not applicable.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="5d4c3-125">자식 요소</span><span class="sxs-lookup"><span data-stu-id="5d4c3-125">Child Elements</span></span>  
- <span data-ttu-id="5d4c3-126">없음</span><span class="sxs-lookup"><span data-stu-id="5d4c3-126">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="3ef51-125">자식 요소</span><span class="sxs-lookup"><span data-stu-id="3ef51-125">Child Elements</span></span>  
+ <span data-ttu-id="3ef51-126">없음</span><span class="sxs-lookup"><span data-stu-id="3ef51-126">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="5d4c3-127">부모 요소</span><span class="sxs-lookup"><span data-stu-id="5d4c3-127">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="3ef51-127">부모 요소</span><span class="sxs-lookup"><span data-stu-id="3ef51-127">Parent Elements</span></span>  
   
-|<span data-ttu-id="5d4c3-128">요소</span><span class="sxs-lookup"><span data-stu-id="5d4c3-128">Element</span></span>|<span data-ttu-id="5d4c3-129">설명</span><span class="sxs-lookup"><span data-stu-id="5d4c3-129">Description</span></span>|  
+|<span data-ttu-id="3ef51-128">요소</span><span class="sxs-lookup"><span data-stu-id="3ef51-128">Element</span></span>|<span data-ttu-id="3ef51-129">설명</span><span class="sxs-lookup"><span data-stu-id="3ef51-129">Description</span></span>|  
 |-------------|-----------------|  
-|`buildproviders`|<span data-ttu-id="5d4c3-130">사용자 지정 리소스 파일의 컴파일에 사용되는 빌드 공급자의 컬렉션을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-130">Defines a collection of build providers used to compile custom resource files.</span></span> <span data-ttu-id="5d4c3-131">빌드 공급자 수에는 제한이 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-131">You can have any number of build providers.</span></span>|  
-|`compilation`|<span data-ttu-id="5d4c3-132">ASP.NET을 사용 하는 모든 컴파일 설정을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-132">Configures all the compilation settings that ASP.NET uses.</span></span>|  
-|`configuration`|<span data-ttu-id="5d4c3-133">공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-133">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
-|`System.web`|<span data-ttu-id="5d4c3-134">ASP.NET 구성 섹션의 루트 요소를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-134">Specifies the root element for the ASP.NET configuration section.</span></span>|  
+|`buildproviders`|<span data-ttu-id="3ef51-130">사용자 지정 리소스 파일의 컴파일에 사용되는 빌드 공급자의 컬렉션을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-130">Defines a collection of build providers used to compile custom resource files.</span></span> <span data-ttu-id="3ef51-131">빌드 공급자 수에는 제한이 없습니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-131">You can have any number of build providers.</span></span>|  
+|`compilation`|<span data-ttu-id="3ef51-132">ASP.NET을 사용 하는 모든 컴파일 설정을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-132">Configures all the compilation settings that ASP.NET uses.</span></span>|  
+|`configuration`|<span data-ttu-id="3ef51-133">공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-133">The root element in every configuration file used by the common language runtime and .NET Framework applications.</span></span>|  
+|`System.web`|<span data-ttu-id="3ef51-134">ASP.NET 구성 섹션의 루트 요소를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-134">Specifies the root element for the ASP.NET configuration section.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="5d4c3-135">설명</span><span class="sxs-lookup"><span data-stu-id="5d4c3-135">Remarks</span></span>  
- <span data-ttu-id="5d4c3-136">사용에 런타임에 대 한 합니다  **\<codeBase >** 컴퓨터 구성 파일 또는 게시자 정책 파일에서 설정 파일을 리디렉션해야 어셈블리 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-136">For the runtime to use the **\<codeBase>** setting in a machine configuration file or publisher policy file, the file must also redirect the assembly version.</span></span> <span data-ttu-id="5d4c3-137">응용 프로그램 구성 파일에는 어셈블리 버전 리디렉션 없이 코드 베이스 설정이 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-137">Application configuration files can have a codebase setting without redirecting the assembly version.</span></span> <span data-ttu-id="5d4c3-138">사용 하는 어셈블리 버전을 결정 한 후 런타임 버전을 결정 하는 파일의 코드 베이스 설정을 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-138">After determining which assembly version to use, the runtime applies the codebase setting from the file that determines the version.</span></span> <span data-ttu-id="5d4c3-139">없는 코드 베이스를 지정 하는 경우 런타임은 일반적인 방법으로 어셈블리를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-139">If no codebase is indicated, the runtime probes for the assembly in the usual way.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="3ef51-135">설명</span><span class="sxs-lookup"><span data-stu-id="3ef51-135">Remarks</span></span>  
+ <span data-ttu-id="3ef51-136">사용에 런타임에 대 한 합니다  **\<codeBase >** 컴퓨터 구성 파일 또는 게시자 정책 파일에서 설정 파일을 리디렉션해야 어셈블리 버전입니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-136">For the runtime to use the **\<codeBase>** setting in a machine configuration file or publisher policy file, the file must also redirect the assembly version.</span></span> <span data-ttu-id="3ef51-137">응용 프로그램 구성 파일에는 어셈블리 버전 리디렉션 없이 코드 베이스 설정이 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-137">Application configuration files can have a codebase setting without redirecting the assembly version.</span></span> <span data-ttu-id="3ef51-138">사용 하는 어셈블리 버전을 결정 한 후 런타임 버전을 결정 하는 파일의 코드 베이스 설정을 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-138">After determining which assembly version to use, the runtime applies the codebase setting from the file that determines the version.</span></span> <span data-ttu-id="3ef51-139">없는 코드 베이스를 지정 하는 경우 런타임은 일반적인 방법으로 어셈블리를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-139">If no codebase is indicated, the runtime probes for the assembly in the usual way.</span></span>  
   
- <span data-ttu-id="5d4c3-140">어셈블리에 강력한 이름을 하는 경우 코드 베이스 설정을 로컬 인트라넷 또는 인터넷에서 아무 곳 이나 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-140">If the assembly has a strong name, the codebase setting can be anywhere on the local intranet or the Internet.</span></span> <span data-ttu-id="5d4c3-141">전용 어셈블리를 어셈블리가 있는 경우 코드 베이스 설정을 응용 프로그램의 디렉터리에 상대적인 경로 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-141">If the assembly is a private assembly, the codebase setting must be a path relative to the application's directory.</span></span>  
+ <span data-ttu-id="3ef51-140">어셈블리에 강력한 이름을 하는 경우 코드 베이스 설정을 로컬 인트라넷 또는 인터넷에서 아무 곳 이나 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-140">If the assembly has a strong name, the codebase setting can be anywhere on the local intranet or the Internet.</span></span> <span data-ttu-id="3ef51-141">전용 어셈블리를 어셈블리가 있는 경우 코드 베이스 설정을 응용 프로그램의 디렉터리에 상대적인 경로 여야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-141">If the assembly is a private assembly, the codebase setting must be a path relative to the application's directory.</span></span>  
   
- <span data-ttu-id="5d4c3-142">강력한 이름이 없는 어셈블리의 경우 버전이 무시 되 고 로더는 첫 번째 모양의 \<codebase > 내에서 \<dependentAssembly >.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-142">For assemblies without a strong name, version is ignored and the loader uses the first appearance of \<codebase> inside \<dependentAssembly>.</span></span> <span data-ttu-id="5d4c3-143">다른 어셈블리 바인딩을 리디렉션하는 응용 프로그램 구성 파일에 항목이 있으면 리디렉션 어셈블리 버전 바인딩 요청과 일치 하지 않습니다 하는 경우에 우선을 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-143">If there is an entry in the application configuration file that redirects binding to another assembly, the redirection will take precedence even if the assembly version doesnt match the binding request.</span></span>  
+ <span data-ttu-id="3ef51-142">강력한 이름이 없는 어셈블리의 경우 버전이 무시 되 고 로더는 첫 번째 모양의 \<codebase > 내에서 \<dependentAssembly >.</span><span class="sxs-lookup"><span data-stu-id="3ef51-142">For assemblies without a strong name, version is ignored and the loader uses the first appearance of \<codebase> inside \<dependentAssembly>.</span></span> <span data-ttu-id="3ef51-143">다른 어셈블리 바인딩을 리디렉션하는 응용 프로그램 구성 파일에 항목이 있으면 리디렉션 어셈블리 버전 바인딩 요청과 일치 하지 않습니다 하는 경우에 우선을 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-143">If there is an entry in the application configuration file that redirects binding to another assembly, the redirection will take precedence even if the assembly version doesnt match the binding request.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="5d4c3-144">예제</span><span class="sxs-lookup"><span data-stu-id="5d4c3-144">Example</span></span>  
- <span data-ttu-id="5d4c3-145">다음 예제에서는 런타임에 어셈블리를 찾을 수 있습니다 위치를 지정 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5d4c3-145">The following example shows how to specify where the runtime can find an assembly.</span></span>  
+## <a name="example"></a><span data-ttu-id="3ef51-144">예제</span><span class="sxs-lookup"><span data-stu-id="3ef51-144">Example</span></span>  
+ <span data-ttu-id="3ef51-145">다음 예제에서는 런타임에 어셈블리를 찾을 수 있습니다 위치를 지정 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="3ef51-145">The following example shows how to specify where the runtime can find an assembly.</span></span>  
   
 ```xml  
 <configuration>  
@@ -89,8 +89,8 @@ href="URL of assembly"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="5d4c3-146">참고 항목</span><span class="sxs-lookup"><span data-stu-id="5d4c3-146">See Also</span></span>  
- [<span data-ttu-id="5d4c3-147">런타임 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="5d4c3-147">Runtime Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [<span data-ttu-id="5d4c3-148">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="5d4c3-148">Configuration File Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [<span data-ttu-id="5d4c3-149">어셈블리 위치 지정</span><span class="sxs-lookup"><span data-stu-id="5d4c3-149">Specifying an Assembly's Location</span></span>](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
- [<span data-ttu-id="5d4c3-150">런타임에서 어셈블리를 찾는 방법</span><span class="sxs-lookup"><span data-stu-id="5d4c3-150">How the Runtime Locates Assemblies</span></span>](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+## <a name="see-also"></a><span data-ttu-id="3ef51-146">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3ef51-146">See Also</span></span>  
+ [<span data-ttu-id="3ef51-147">런타임 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="3ef51-147">Runtime Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [<span data-ttu-id="3ef51-148">구성 파일 스키마</span><span class="sxs-lookup"><span data-stu-id="3ef51-148">Configuration File Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+ [<span data-ttu-id="3ef51-149">어셈블리 위치 지정</span><span class="sxs-lookup"><span data-stu-id="3ef51-149">Specifying an Assembly's Location</span></span>](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
+ [<span data-ttu-id="3ef51-150">런타임에서 어셈블리를 찾는 방법</span><span class="sxs-lookup"><span data-stu-id="3ef51-150">How the Runtime Locates Assemblies</span></span>](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

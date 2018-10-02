@@ -13,21 +13,21 @@ ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 4a9bcc6cd5d2bbf30f463da0a51e1bccbcd5a3f1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47206104"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48028769"
 ---
-# <a name="ltaddgt-element-for-authenticationmodules-network-settings"></a><span data-ttu-id="c9bb0-102">&lt;추가&gt; authenticationModules (네트워크 설정)에 대 한 요소</span><span class="sxs-lookup"><span data-stu-id="c9bb0-102">&lt;add&gt; Element for authenticationModules (Network Settings)</span></span>
-<span data-ttu-id="c9bb0-103">응용 프로그램에 인증 모듈을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-103">Adds an authentication module to the application.</span></span>  
+# <a name="ltaddgt-element-for-authenticationmodules-network-settings"></a><span data-ttu-id="ca41b-102">&lt;추가&gt; authenticationModules (네트워크 설정)에 대 한 요소</span><span class="sxs-lookup"><span data-stu-id="ca41b-102">&lt;add&gt; Element for authenticationModules (Network Settings)</span></span>
+<span data-ttu-id="ca41b-103">응용 프로그램에 인증 모듈을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-103">Adds an authentication module to the application.</span></span>  
   
- <span data-ttu-id="c9bb0-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="c9bb0-104">\<configuration></span></span>  
-<span data-ttu-id="c9bb0-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="c9bb0-105">\<system.net></span></span>  
-<span data-ttu-id="c9bb0-106">\<authenticationModules ></span><span class="sxs-lookup"><span data-stu-id="c9bb0-106">\<authenticationModules></span></span>  
-<span data-ttu-id="c9bb0-107">\<add></span><span class="sxs-lookup"><span data-stu-id="c9bb0-107">\<add></span></span>  
+ <span data-ttu-id="ca41b-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="ca41b-104">\<configuration></span></span>  
+<span data-ttu-id="ca41b-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="ca41b-105">\<system.net></span></span>  
+<span data-ttu-id="ca41b-106">\<authenticationModules ></span><span class="sxs-lookup"><span data-stu-id="ca41b-106">\<authenticationModules></span></span>  
+<span data-ttu-id="ca41b-107">\<add></span><span class="sxs-lookup"><span data-stu-id="ca41b-107">\<add></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c9bb0-108">구문</span><span class="sxs-lookup"><span data-stu-id="c9bb0-108">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ca41b-108">구문</span><span class="sxs-lookup"><span data-stu-id="ca41b-108">Syntax</span></span>  
   
 ```xml  
 <add
@@ -35,34 +35,34 @@ ms.locfileid: "47206104"
 />  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="c9bb0-109">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="c9bb0-109">Attributes and Elements</span></span>  
- <span data-ttu-id="c9bb0-110">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-110">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="ca41b-109">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="ca41b-109">Attributes and Elements</span></span>  
+ <span data-ttu-id="ca41b-110">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-110">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="c9bb0-111">특성</span><span class="sxs-lookup"><span data-stu-id="c9bb0-111">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="ca41b-111">특성</span><span class="sxs-lookup"><span data-stu-id="ca41b-111">Attributes</span></span>  
   
-|<span data-ttu-id="c9bb0-112">**특성**</span><span class="sxs-lookup"><span data-stu-id="c9bb0-112">**Attribute**</span></span>|<span data-ttu-id="c9bb0-113">**설명**</span><span class="sxs-lookup"><span data-stu-id="c9bb0-113">**Description**</span></span>|  
+|<span data-ttu-id="ca41b-112">**특성**</span><span class="sxs-lookup"><span data-stu-id="ca41b-112">**Attribute**</span></span>|<span data-ttu-id="ca41b-113">**설명**</span><span class="sxs-lookup"><span data-stu-id="ca41b-113">**Description**</span></span>|  
 |-------------------|---------------------|  
-|`type`|<span data-ttu-id="c9bb0-114">정규화 된 형식 이름을 (나타난를 <xref:System.Type.FullName%2A> 속성)와 어셈블리 이름 (나타난는 <xref:System.Reflection.Assembly.FullName%2A> 속성)을 쉼표로 구분 합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-114">The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma.</span></span>|  
+|`type`|<span data-ttu-id="ca41b-114">정규화 된 형식 이름을 (나타난를 <xref:System.Type.FullName%2A> 속성)와 어셈블리 이름 (나타난는 <xref:System.Reflection.Assembly.FullName%2A> 속성)을 쉼표로 구분 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-114">The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="c9bb0-115">자식 요소</span><span class="sxs-lookup"><span data-stu-id="c9bb0-115">Child Elements</span></span>  
- <span data-ttu-id="c9bb0-116">없음</span><span class="sxs-lookup"><span data-stu-id="c9bb0-116">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="ca41b-115">자식 요소</span><span class="sxs-lookup"><span data-stu-id="ca41b-115">Child Elements</span></span>  
+ <span data-ttu-id="ca41b-116">없음</span><span class="sxs-lookup"><span data-stu-id="ca41b-116">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="c9bb0-117">부모 요소</span><span class="sxs-lookup"><span data-stu-id="c9bb0-117">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="ca41b-117">부모 요소</span><span class="sxs-lookup"><span data-stu-id="ca41b-117">Parent Elements</span></span>  
   
-|<span data-ttu-id="c9bb0-118">**요소**</span><span class="sxs-lookup"><span data-stu-id="c9bb0-118">**Element**</span></span>|<span data-ttu-id="c9bb0-119">**설명**</span><span class="sxs-lookup"><span data-stu-id="c9bb0-119">**Description**</span></span>|  
+|<span data-ttu-id="ca41b-118">**요소**</span><span class="sxs-lookup"><span data-stu-id="ca41b-118">**Element**</span></span>|<span data-ttu-id="ca41b-119">**설명**</span><span class="sxs-lookup"><span data-stu-id="ca41b-119">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="c9bb0-120">authenticationModules</span><span class="sxs-lookup"><span data-stu-id="c9bb0-120">authenticationModules</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|<span data-ttu-id="c9bb0-121">네트워크 요청을 인증 하는 데 사용 되는 모듈을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-121">Specifies modules used to authenticate network requests.</span></span>|  
+|[<span data-ttu-id="ca41b-120">authenticationModules</span><span class="sxs-lookup"><span data-stu-id="ca41b-120">authenticationModules</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|<span data-ttu-id="ca41b-121">네트워크 요청을 인증 하는 데 사용 되는 모듈을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-121">Specifies modules used to authenticate network requests.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="c9bb0-122">설명</span><span class="sxs-lookup"><span data-stu-id="c9bb0-122">Remarks</span></span>  
- <span data-ttu-id="c9bb0-123">`add` 요소는 등록된 인증 모듈 목록의 끝에 인증 모듈을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-123">The `add` element adds an authentication module to the end of the list of registered authentication modules.</span></span> <span data-ttu-id="c9bb0-124">인증 모듈 목록에 추가 된 순서 대로 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-124">Authentication modules are called in the order in which they were added to the list.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="ca41b-122">설명</span><span class="sxs-lookup"><span data-stu-id="ca41b-122">Remarks</span></span>  
+ <span data-ttu-id="ca41b-123">`add` 요소는 등록된 인증 모듈 목록의 끝에 인증 모듈을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-123">The `add` element adds an authentication module to the end of the list of registered authentication modules.</span></span> <span data-ttu-id="ca41b-124">인증 모듈 목록에 추가 된 순서 대로 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-124">Authentication modules are called in the order in which they were added to the list.</span></span>  
   
- <span data-ttu-id="c9bb0-125">에 대 한 값을 `type` 특성은 유효한 형식 이름 및 쉼표로 구분 하 여 해당 어셈블리 이름 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-125">The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma.</span></span>  
+ <span data-ttu-id="ca41b-125">에 대 한 값을 `type` 특성은 유효한 형식 이름 및 쉼표로 구분 하 여 해당 어셈블리 이름 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-125">The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma.</span></span>  
   
-## <a name="configuration-files"></a><span data-ttu-id="c9bb0-126">구성 파일</span><span class="sxs-lookup"><span data-stu-id="c9bb0-126">Configuration Files</span></span>  
- <span data-ttu-id="c9bb0-127">이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-127">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
+## <a name="configuration-files"></a><span data-ttu-id="ca41b-126">구성 파일</span><span class="sxs-lookup"><span data-stu-id="ca41b-126">Configuration Files</span></span>  
+ <span data-ttu-id="ca41b-127">이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-127">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="c9bb0-128">예제</span><span class="sxs-lookup"><span data-stu-id="c9bb0-128">Example</span></span>  
- <span data-ttu-id="c9bb0-129">다음 예제에서는 기본 인증 모듈입니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-129">The following example enables the default authentication modules.</span></span> <span data-ttu-id="c9bb0-130">지정된 된 모듈에 대 한 올바른 값을 사용 하 여 PublicKeyToken 및 버전에 대 한 값을 바꿔야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c9bb0-130">You should replace the values for Version and PublicKeyToken with the correct values for the specified module.</span></span>  
+## <a name="example"></a><span data-ttu-id="ca41b-128">예제</span><span class="sxs-lookup"><span data-stu-id="ca41b-128">Example</span></span>  
+ <span data-ttu-id="ca41b-129">다음 예제에서는 기본 인증 모듈입니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-129">The following example enables the default authentication modules.</span></span> <span data-ttu-id="ca41b-130">지정된 된 모듈에 대 한 올바른 값을 사용 하 여 PublicKeyToken 및 버전에 대 한 값을 바꿔야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ca41b-130">You should replace the values for Version and PublicKeyToken with the correct values for the specified module.</span></span>  
   
 ```xml  
 <configuration>  
@@ -83,7 +83,7 @@ ms.locfileid: "47206104"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="c9bb0-131">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c9bb0-131">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="ca41b-131">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ca41b-131">See Also</span></span>  
  <xref:System.Net.IAuthenticationModule>  
  <xref:System.Net.AuthenticationManager>  
- [<span data-ttu-id="c9bb0-132">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="c9bb0-132">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+ [<span data-ttu-id="ca41b-132">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="ca41b-132">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -1,31 +1,27 @@
 ---
-title: WCF(Windows Communication Foundation) 샘플
-ms.date: 03/30/2017
+title: Windows Communication Foundation (WCF) 설명서 샘플
+ms.date: 09/24/2018
 ms.assetid: 89d4efce-7832-4dd5-82a8-0e574b3302f9
-ms.openlocfilehash: a8ac756a5c52093015f32942de3791853bdd17c4
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 5fe191aa3bc005aacf1e32bfb6533b8dfd6f23fb
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087604"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48027835"
 ---
-# <a name="windows-communication-foundation-wcf-samples"></a><span data-ttu-id="5d036-102">WCF(Windows Communication Foundation) 샘플</span><span class="sxs-lookup"><span data-stu-id="5d036-102">Windows Communication Foundation (WCF) Samples</span></span>
-<span data-ttu-id="5d036-103">이러한 샘플 Windows Communication Foundation (WCF)의 다양 한 측면에 지침을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-103">These samples provide instruction on various aspects of Windows Communication Foundation (WCF).</span></span>  
+# <a name="windows-communication-foundation-wcf-samples"></a><span data-ttu-id="6e618-102">Windows Communication Foundation (WCF) 샘플</span><span class="sxs-lookup"><span data-stu-id="6e618-102">Windows Communication Foundation (WCF) samples</span></span>
+
+<span data-ttu-id="6e618-103">다운로드할 수 있습니다 [.NET Framework 4 용 Windows Communication Foundation (WCF) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780)합니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-103">You can download [Windows Communication Foundation (WCF) samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780).</span></span> <span data-ttu-id="6e618-104">샘플은 Windows Communication Foundation (WCF)의 다양 한 측면에 대 한 지침을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-104">The samples provide instruction on various aspects of Windows Communication Foundation (WCF).</span></span>
   
--   <span data-ttu-id="5d036-104">C# 버전의 샘플로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780)합니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-104">For C# versions of the samples, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780).</span></span>  
+> [!TIP]
+> <span data-ttu-id="6e618-105">이 섹션의에서 문서 다운로드 패키지에서 샘플의 일부를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-105">The articles in this section describe some of the samples in the download package.</span></span> <span data-ttu-id="6e618-106">전체 설명서 집합의 모든 샘플에 설명 하는 경우를 확인 합니다 [WCF 샘플에 대 한.NET Framework 4 설명서](/previous-versions/dotnet/netframework-4.0/dd483346(v%3dvs.100))합니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-106">For a complete documentation set that covers all of the samples, check the [.NET Framework 4 documentation for WCF samples](/previous-versions/dotnet/netframework-4.0/dd483346(v%3dvs.100)).</span></span>
+
+<span data-ttu-id="6e618-107">Windows WF (Workflow Foundation) [응용 프로그램](../../windows-workflow-foundation/samples/application.md) 샘플도 몇 가지 WCF 기능을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-107">The Windows Workflow Foundation (WF) [application](../../windows-workflow-foundation/samples/application.md) samples also demonstrate several WCF features.</span></span>
   
--   <span data-ttu-id="5d036-105">Visual Basic 버전 샘플의 경우로 이동 [Visual Basic 2010 샘플](https://go.microsoft.com/fwlink/?LinkID=193373) 를 클릭 하 고 **WF HYPERLINK "javascript:__doPostBack('ctl00$ctl00$Content$TabContentPanel$Content$ReleaseFiles$FileList$ctl02$ FileNameLink', ') "_WCF_Samples.zip**합니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-105">For Visual Basic versions of the samples, go to [Visual Basic 2010 Samples](https://go.microsoft.com/fwlink/?LinkID=193373) and click **WF HYPERLINK "javascript:__doPostBack('ctl00$ctl00$Content$TabContentPanel$Content$ReleaseFiles$FileList$ctl02$FileNameLink','')" _WCF_Samples.zip**.</span></span>  
-  
- <span data-ttu-id="5d036-106">Windows WF (Workflow Foundation) [응용 프로그램](../../../../docs/framework/windows-workflow-foundation/samples/application.md) 샘플에는 또한 여러 WCFfeatures 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-106">The Windows Workflow Foundation (WF) [Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md) samples also demonstrate several WCFfeatures.</span></span>  
-  
- <span data-ttu-id="5d036-107">설명서 및 도움말 뷰어의 독립 실행형 버전을 설치 하려면 다음을 다운로드 합니다 [Microsoft Windows SDK v 7.1](https://go.microsoft.com/fwlink/?LinkID=194146)합니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-107">To install a stand-alone version of the documentation and a Help viewer, download the [Microsoft Windows SDK v 7.1](https://go.microsoft.com/fwlink/?LinkID=194146).</span></span>  
-  
-## <a name="in-this-section"></a><span data-ttu-id="5d036-108">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="5d036-108">In This Section</span></span>  
- [<span data-ttu-id="5d036-109">기본</span><span class="sxs-lookup"><span data-stu-id="5d036-109">Basic</span></span>](../../../../docs/framework/wcf/samples/basic.md)  
- <span data-ttu-id="5d036-110">기본 WCF 기능을 보여 주는 샘플을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-110">Shows samples that illustrate basic WCF functionality.</span></span>  
-  
- <span data-ttu-id="5d036-111">확장성</span><span class="sxs-lookup"><span data-stu-id="5d036-111">Extensibility</span></span>  
- <span data-ttu-id="5d036-112">검색 기능과 관련 있는 샘플을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-112">Shows samples that are related to the discovery feature.</span></span>  
-  
- [<span data-ttu-id="5d036-113">시나리오</span><span class="sxs-lookup"><span data-stu-id="5d036-113">Scenario</span></span>](../../../../docs/framework/wcf/samples/scenario.md)  
- <span data-ttu-id="5d036-114">WCF 시나리오를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5d036-114">Demonstrates a WCF scenario.</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6e618-108">단원 내용</span><span class="sxs-lookup"><span data-stu-id="6e618-108">In this section</span></span>  
+
+<span data-ttu-id="6e618-109">[기본](basic.md) -기본적인 WCF 기능을 보여 주는 샘플입니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-109">[Basic](basic.md) - Samples that illustrate basic WCF functionality.</span></span>  
+
+<span data-ttu-id="6e618-110">[확장성](extensibility.md) -검색 기능과 관련 된 샘플입니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-110">[Extensibility](extensibility.md) - Samples that are related to the discovery feature.</span></span>  
+
+<span data-ttu-id="6e618-111">[시나리오](scenario.md) -WCF 시나리오를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="6e618-111">[Scenario](scenario.md) - Demonstrates a WCF scenario.</span></span>
