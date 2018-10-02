@@ -126,8 +126,7 @@ ms.locfileid: "33548888"
 |[응용 프로그램 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md)|응용 프로그램 수명, 창, 응용 프로그램 리소스 및 탐색 관리를 비롯하여 <xref:System.Windows.Application> 클래스에 대해 개략적으로 설명합니다.|  
 |[WPF의 창](../../../../docs/framework/wpf/app-development/windows-in-wpf-applications.md)|<xref:System.Windows.Window> 클래스 및 대화 상자의 사용 방법을 비롯하여 응용 프로그램의 창 관리에 대해 세부적으로 설명합니다.|  
 |[탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)|응용 프로그램 페이지 간의 탐색 관리에 대해 개략적으로 설명합니다.|  
-|[호스팅](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|
-          [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]에 대한 개요를 설명합니다.|  
+|[호스팅](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|[!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]에 대한 개요를 설명합니다.|  
 |[빌드 및 배포](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)|WPF 응용 프로그램을 빌드하고 배포하는 방법에 대해 설명합니다.|  
 |[Visual Studio에서의 WPF 소개](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|WPF의 주요 기능에 대해 설명합니다.|  
 |[연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|페이지 탐색, 레이아웃, 컨트롤, 이미지, 스타일 및 바인딩을 사용하여 WPF 응용 프로그램을 만드는 방법을 보여 주는 연습입니다.|
