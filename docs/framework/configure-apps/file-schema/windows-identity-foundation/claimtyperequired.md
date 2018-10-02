@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: c469d71f-6c77-4a24-97aa-53efa126ceef
 author: BrucePerlerMS
 ms.openlocfilehash: df4494de6b76943849db2bedef8f43ad894b6bd1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47399413"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48031866"
 ---
 # <a name="ltclaimtyperequiredgt"></a>&lt;claimTypeRequired&gt;
 들어오는 보안 토큰에 대 한 필수 클레임 집합을 지정 합니다.  

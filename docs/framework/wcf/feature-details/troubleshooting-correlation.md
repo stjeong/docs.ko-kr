@@ -2,12 +2,12 @@
 title: 상관 관계 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 98003875-233d-4512-a688-4b2a1b0b5371
-ms.openlocfilehash: 56b17d0a865d1a6c1afaa2844878c82b755afdc7
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: fecfaf7374823bb19a4ad3d7f6cb2dbbdf139703
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397160"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48027925"
 ---
 # <a name="troubleshooting-correlation"></a>상관 관계 문제 해결
 상관 관계는 워크플로 서비스 메시지를 서로 연결하거나 올바른 워크플로 인스턴스에 연결하는 데 사용되지만, 제대로 구성되지 않으면 메시지가 수신되지 않고 응용 프로그램이 올바르게 작동하지 않습니다. 이 항목에서는 상관 관계 문제를 해결하기 위한 몇 가지 방법을 간략히 설명하고 상관 관계를 사용할 때 발생할 수 있는 일반적인 문제도 설명합니다.
@@ -76,7 +76,7 @@ class CustomFactory : WorkflowServiceHostFactory
 host.WorkflowExtensions.Add(new ConsoleTrackingParticipant());
 ```
 
- ConsoleTrackingParticipant와 같은 추적 참가자는 콘솔 창이 있는 자체 호스팅 워크플로 서비스에 유용합니다. 웹 호스팅 서비스의 경우 영 속 저장소에 추적 정보를 기록 하는 추적 참가자를 사용할지 같은 기본 제공 <xref:System.Activities.Tracking.EtwTrackingParticipant>, 또는 같은 파일에 정보를 기록 하는 사용자 지정 추적 참가자는 `TextWriterTrackingParticpant` 합니다 에서[ 텍스트 파일을 사용 하 여 추적](../../../../docs/framework/windows-workflow-foundation/samples/tracking-using-a-text-file.md) 샘플입니다.
+ ConsoleTrackingParticipant와 같은 추적 참가자는 콘솔 창이 있는 자체 호스팅 워크플로 서비스에 유용합니다. 웹 호스팅 서비스의 경우 영 속 저장소에 추적 정보를 기록 하는 추적 참가자를 사용할지 같은 기본 제공 <xref:System.Activities.Tracking.EtwTrackingParticipant>, 또는 파일에 정보를 기록 하는 사용자 지정 추적 참가자입니다.
 
  추적 및 웹 호스팅 워크플로 서비스에 대 한 추적을 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)하십시오 [워크플로에 대 한 추적 구성](../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md), 및 [ 추적 &#91;WF 샘플&#93; ](../../../../docs/framework/windows-workflow-foundation/samples/tracking.md) 샘플입니다.
 
@@ -214,7 +214,7 @@ sm:body()/xg0:AddItemMessage/xg0:CartId
 sm:header()/tempuri:CartId
 ```
 
- 이는 메시지 본문을 검사하여 확인할 수 있습니다.
+이는 메시지 본문을 검사하여 확인할 수 있습니다.
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -230,7 +230,7 @@ sm:header()/tempuri:CartId
 </s:Envelope>
 ```
 
- 다음 예제에서는 이전 메시지 계약을 사용하여 데이터를 받는 <xref:System.ServiceModel.Activities.Receive> 작업에 대해 구성된 `AddItem` 활동을 보여 줍니다. XPath 쿼리는 올바르게 구성되어 있습니다.
+다음 예제에서는 이전 메시지 계약을 사용하여 데이터를 받는 <xref:System.ServiceModel.Activities.Receive> 작업에 대해 구성된 `AddItem` 활동을 보여 줍니다. XPath 쿼리는 올바르게 구성되어 있습니다.
 
 ```xaml
 <Receive CorrelatesWith="[CCHandle] OperationName="AddItem" ServiceContractName="p:IService">
@@ -247,5 +247,3 @@ sm:header()/tempuri:CartId
   </ReceiveMessageContent>
 </Receive>
 ```
-
-내용 기반 상관 관계에 대 한 자세한 내용은 참조는 [상관 관계가 지정 된 계산기](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md) 샘플입니다.

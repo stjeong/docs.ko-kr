@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 76d5e5cd-e4f4-404f-9a5a-ec3522494ad8
 author: BrucePerlerMS
 ms.openlocfilehash: 9e5795da5765e3dadfb169b1819b7154bd6ce0a9
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233262"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48036229"
 ---
 # <a name="security-exceptions"></a>보안 예외
 이 항목에서는 모든 보안 예외를 보여 줍니다.  

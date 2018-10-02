@@ -13,11 +13,11 @@ ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 332f8eb4fb1a5a02df76c5745522037b029a2407
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47072795"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48028539"
 ---
 # <a name="ltremovegt-element-for-authenticationmodules-network-settings"></a>&lt;제거&gt; authenticationModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 인증 모듈을 제거합니다.  

@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 98a3e029-1a9b-4e0c-b5d0-29d3f23f5b15
 author: BrucePerlerMS
 ms.openlocfilehash: 8dab5cfbcf14707699e6672017f5f80db232f01d
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47454936"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025537"
 ---
 # <a name="how-to-build-claims-aware-aspnet-application-using-forms-based-authentication"></a>방법: 양식 기반 인증을 사용하여 클레임 인식 ASP.NET 응용 프로그램 빌드
 ## <a name="applies-to"></a>적용 대상  

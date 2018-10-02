@@ -17,11 +17,11 @@ topic_type:
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 7ca4cc9fb65d1a4bd8713f969bbda5551ce5a2e2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47236258"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48034222"
 ---
 # <a name="qualifiersetdelete-function"></a>QualifierSet_Delete 함수
 지정된 한정자를 이름으로 삭제합니다.  

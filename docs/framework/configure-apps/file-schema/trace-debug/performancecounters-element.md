@@ -11,11 +11,11 @@ ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 69d6deafb6aad88f5d379c7e8d4ac707e4c51815
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47209823"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48032467"
 ---
 # <a name="ltperformancecountersgt-element"></a>&lt;performanceCounters&gt; 요소
 성능 카운터에서 공유하는 전역 메모리의 크기를 지정합니다.  

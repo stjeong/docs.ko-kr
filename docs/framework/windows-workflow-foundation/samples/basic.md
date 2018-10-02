@@ -2,12 +2,12 @@
 title: Basic1
 ms.date: 03/30/2017
 ms.assetid: 84a315b6-3f96-4959-8306-49be37936a23
-ms.openlocfilehash: 4e6c4217eb50577a6649e09545db40492bac9a6f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 371c80bba9b7398af936415819609b531ddd1593
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33515638"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48031853"
 ---
 # <a name="basic"></a>Basic
 이 섹션에서는 기본 Windows WF (Workflow Foundation) 기능을 보여 주는 샘플을 제공 합니다.  
@@ -15,9 +15,6 @@ ms.locfileid: "33515638"
 ## <a name="in-this-section"></a>섹션 내용  
  [기본 제공 작업](../../../../docs/framework/windows-workflow-foundation/samples/built-in-activities.md)  
  기본 제공 활동 라이브러리를 사용하는 샘플이 들어 있습니다.  
-  
- [보정](../../../../docs/framework/windows-workflow-foundation/samples/compensation-samples.md)  
- 보정을 보여 주는 샘플이 들어 있습니다.  
   
  [사용자 지정 작업](../../../../docs/framework/windows-workflow-foundation/samples/custom-activities.md)  
  사용자 지정 활동을 만드는 방법을 보여 주는 샘플이 들어 있습니다.  
@@ -29,30 +26,7 @@ ms.locfileid: "33515638"
  활동 디자이너를 다시 호스트하는 방법을 보여 주는 샘플이 들어 있습니다.  
   
  [실행](../../../../docs/framework/windows-workflow-foundation/samples/execution.md)  
- 워크플로를 실행하는 방법을 보여 주는 샘플이 들어 있습니다.  
-  
- [식](../../../../docs/framework/windows-workflow-foundation/samples/expressions.md)  
- Windows WF (Workflow Foundation) 식을 보여 주는 샘플이 포함 되어 있습니다.  
-  
- [마이그레이션](../../../../docs/framework/windows-workflow-foundation/samples/migration.md)  
- 이전 버전의 Windows WF (Workflow Foundation)를 사용 하 여 만든 워크플로 마이그레이션하는 방법을 보여 주는 샘플이 들어 있습니다.  
-  
- [지속성](../../../../docs/framework/windows-workflow-foundation/samples/persistence.md)  
- 워크플로를 영구적인 매체에 유지하는 방법을 보여 주는 샘플이 들어 있습니다.  
-  
- [규칙 샘플](../../../../docs/framework/windows-workflow-foundation/samples/rules-samples.md)  
- [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)]의 워크플로 규칙 엔진을 사용하는 방법을 보여 주는 샘플이 들어 있습니다.  
-  
- [서비스](../../../../docs/framework/windows-workflow-foundation/samples/services.md)  
- 워크플로 서비스를 보여 주는 샘플이 들어 있습니다.  
+ 워크플로를 실행하는 방법을 보여 주는 샘플이 들어 있습니다.
   
  [추적](../../../../docs/framework/windows-workflow-foundation/samples/tracking.md)  
- 워크플로 추적을 보여 주는 샘플이 들어 있습니다.  
-  
- [트랜잭션](../../../../docs/framework/windows-workflow-foundation/samples/transactions.md)  
- 워크플로 트랜잭션을 보여 주는 샘플이 들어 있습니다.  
-  
- [유효성 검사](../../../../docs/framework/windows-workflow-foundation/samples/validation.md)  
- Windows Workflow Foundation의 유효성 검사를 보여 주는 샘플이 포함 되어 있습니다.  
-  
-## <a name="reference"></a>참조
+ 워크플로 추적을 보여 주는 샘플이 들어 있습니다.

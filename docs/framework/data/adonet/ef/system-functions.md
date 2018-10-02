@@ -3,11 +3,11 @@ title: 시스템 함수
 ms.date: 03/30/2017
 ms.assetid: b7c71b58-09e6-44ce-a3e5-a0fdb892fb86
 ms.openlocfilehash: 277f2f9c69610b134f3f95787f065f65b01712d2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47204468"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48035183"
 ---
 # <a name="system-functions"></a>시스템 함수
 .NET Framework Data Provider for SQL Server(SqlClient)에서는 다음 시스템 함수를 제공합니다.  

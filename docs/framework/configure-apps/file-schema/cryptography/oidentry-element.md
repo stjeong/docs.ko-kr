@@ -11,11 +11,11 @@ ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: c5be6ef95693f274e5cb2002e5642d5e58a7661a
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47206178"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48033131"
 ---
 # <a name="ltoidentrygt-element"></a>&lt;oidEntry&gt; 요소
 ASN.1 OID(개체 식별자)를 이름에 매핑합니다.  

@@ -11,11 +11,11 @@ ms.assetid: bc177b2f-7528-4ae4-83db-aacfb04b86d0
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 51cc5296a7b3f6d75b5e56d6bbc74330fa147848
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47232619"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030657"
 ---
 # <a name="design-guidelines-for-exceptions"></a>예외 디자인 지침
 예외 처리에는 반환 값에 따라 오류 보고를 통해 많은 이점이 있습니다. 좋은 프레임 워크로 디자인 예외의 이점을 응용 프로그램 개발자는 데 도움이 됩니다. 이 섹션에서는 예외의 장점을 설명 하 고 효과적으로 사용 하는 것에 대 한 지침을 제공 합니다.  

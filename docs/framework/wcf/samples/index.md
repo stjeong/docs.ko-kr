@@ -1,31 +1,27 @@
 ---
-title: WCF(Windows Communication Foundation) 샘플
-ms.date: 03/30/2017
+title: Windows Communication Foundation (WCF) 설명서 샘플
+ms.date: 09/24/2018
 ms.assetid: 89d4efce-7832-4dd5-82a8-0e574b3302f9
-ms.openlocfilehash: a8ac756a5c52093015f32942de3791853bdd17c4
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 5fe191aa3bc005aacf1e32bfb6533b8dfd6f23fb
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087604"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48027835"
 ---
-# <a name="windows-communication-foundation-wcf-samples"></a>WCF(Windows Communication Foundation) 샘플
-이러한 샘플 Windows Communication Foundation (WCF)의 다양 한 측면에 지침을 제공 합니다.  
+# <a name="windows-communication-foundation-wcf-samples"></a>Windows Communication Foundation (WCF) 샘플
+
+다운로드할 수 있습니다 [.NET Framework 4 용 Windows Communication Foundation (WCF) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780)합니다. 샘플은 Windows Communication Foundation (WCF)의 다양 한 측면에 대 한 지침을 제공 합니다.
   
--   C# 버전의 샘플로 이동 [Windows Communication Foundation (WCF) 및.NET Framework 4 용 Windows WF (Workflow Foundation) 샘플](https://go.microsoft.com/fwlink/?LinkId=150780)합니다.  
+> [!TIP]
+> 이 섹션의에서 문서 다운로드 패키지에서 샘플의 일부를 설명합니다. 전체 설명서 집합의 모든 샘플에 설명 하는 경우를 확인 합니다 [WCF 샘플에 대 한.NET Framework 4 설명서](/previous-versions/dotnet/netframework-4.0/dd483346(v%3dvs.100))합니다.
+
+Windows WF (Workflow Foundation) [응용 프로그램](../../windows-workflow-foundation/samples/application.md) 샘플도 몇 가지 WCF 기능을 보여 줍니다.
   
--   Visual Basic 버전 샘플의 경우로 이동 [Visual Basic 2010 샘플](https://go.microsoft.com/fwlink/?LinkID=193373) 를 클릭 하 고 **WF HYPERLINK "javascript:__doPostBack('ctl00$ctl00$Content$TabContentPanel$Content$ReleaseFiles$FileList$ctl02$ FileNameLink', ') "_WCF_Samples.zip**합니다.  
-  
- Windows WF (Workflow Foundation) [응용 프로그램](../../../../docs/framework/windows-workflow-foundation/samples/application.md) 샘플에는 또한 여러 WCFfeatures 보여 줍니다.  
-  
- 설명서 및 도움말 뷰어의 독립 실행형 버전을 설치 하려면 다음을 다운로드 합니다 [Microsoft Windows SDK v 7.1](https://go.microsoft.com/fwlink/?LinkID=194146)합니다.  
-  
-## <a name="in-this-section"></a>섹션 내용  
- [기본](../../../../docs/framework/wcf/samples/basic.md)  
- 기본 WCF 기능을 보여 주는 샘플을 보여 줍니다.  
-  
- 확장성  
- 검색 기능과 관련 있는 샘플을 보여 줍니다.  
-  
- [시나리오](../../../../docs/framework/wcf/samples/scenario.md)  
- WCF 시나리오를 보여 줍니다.
+## <a name="in-this-section"></a>단원 내용  
+
+[기본](basic.md) -기본적인 WCF 기능을 보여 주는 샘플입니다.  
+
+[확장성](extensibility.md) -검색 기능과 관련 된 샘플입니다.  
+
+[시나리오](scenario.md) -WCF 시나리오를 보여 줍니다.

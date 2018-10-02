@@ -13,11 +13,11 @@ ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: d249cc412a1638e62b57b4976adc23fdf8f36e80
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47425799"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48024586"
 ---
 # <a name="ltremovegt-element-for-connectionmanagement-network-settings"></a>&lt;제거&gt; connectionManagement (네트워크 설정)에 대 한 요소
 연결 관리 목록에서 IP 주소 또는 DNS 이름을 제거합니다.  

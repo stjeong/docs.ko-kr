@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
 author: BrucePerlerMS
 ms.openlocfilehash: 6c1253e6f402da6b818a4438142e122f8b31809c
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193163"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48032454"
 ---
 # <a name="ltwindowsstreamsecuritygt"></a>&lt;windowsStreamSecurity&gt;
 사용자 지정의 바인딩에 대한 Windows 스트림 보안 설정을 지정합니다.  

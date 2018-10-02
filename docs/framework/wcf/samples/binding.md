@@ -3,11 +3,11 @@ title: Binding1
 ms.date: 03/30/2017
 ms.assetid: 324fa627-d012-465a-b266-95594a09dac2
 ms.openlocfilehash: 124a4bd252f838b737a06b76452619182bc9dea1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47192251"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48026823"
 ---
 # <a name="binding"></a>바인딩
 이 단원에는 엔드포인트 요소의 바인딩 특성을 사용하는 방법을 보여 주는 샘플이 포함되어 있습니다.  

@@ -13,11 +13,11 @@ ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 4a9bcc6cd5d2bbf30f463da0a51e1bccbcd5a3f1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47206104"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48028769"
 ---
 # <a name="ltaddgt-element-for-authenticationmodules-network-settings"></a>&lt;추가&gt; authenticationModules (네트워크 설정)에 대 한 요소
 응용 프로그램에 인증 모듈을 추가합니다.  

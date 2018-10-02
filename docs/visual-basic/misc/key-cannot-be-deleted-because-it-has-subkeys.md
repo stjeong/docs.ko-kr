@@ -3,11 +3,11 @@ title: 하위 키가 있으므로 키를 삭제할 수 없습니다.
 ms.date: 07/20/2015
 ms.assetid: 71d7f28f-42ef-4eb7-a39e-512c40b79977
 ms.openlocfilehash: da784f0d22e0cdd5db5054645d977918fca47f4b
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47173423"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025388"
 ---
 # <a name="key-cannot-be-deleted-because-it-has-subkeys"></a>하위 키가 있으므로 키를 삭제할 수 없습니다.
 하위 키가 있으므로 키를 삭제할 수 없습니다.  

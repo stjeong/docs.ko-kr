@@ -2,12 +2,12 @@
 title: .NET Framework 4에서 Interop 활동과 함께 .NET Framework 3.0 WF 활동 사용
 ms.date: 03/30/2017
 ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c
-ms.openlocfilehash: b2dac91ffa0f4bf5e1c1afea1fc6f6629c345857
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 386f71f21a4164f6f0ffc0ed19aab68abbe5a0b5
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43467507"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48029265"
 ---
 # <a name="using-net-framework-30-wf-activities-in-net-framework-4-with-the-interop-activity"></a>.NET Framework 4에서 Interop 활동과 함께 .NET Framework 3.0 WF 활동 사용
 <xref:System.Activities.Statements.Interop> 활동은 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 워크플로에서 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)](WF 3.5) 활동을 래핑하는 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)](WF 4.5) 활동입니다. WF 3 활동은 단일 리프 활동이거나 전체 활동 트리입니다. [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 활동의 실행(취소 및 예외 처리 포함)과 지속성은 실행 중인 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 워크플로 인스턴스의 컨텍스트 내에서 발생합니다.  
@@ -52,7 +52,4 @@ ms.locfileid: "43467507"
   
 3.  <xref:System.Activities.Statements.Interop> 활동 내의 활동에 대한 WF 3 추적 레코드가 WF 4.5 추적 참가자에게 <xref:System.Activities.Tracking.InteropTrackingRecord> 개체로 제공됩니다. <xref:System.Activities.Tracking.InteropTrackingRecord>는 <xref:System.Activities.Tracking.CustomTrackingRecord>의 파생 항목입니다.  
   
-4.  WF 3 사용자 지정 활동은 WF 3 워크플로 런타임에서와 동일한 방식으로 상호 운용 환경에서 워크플로 큐를 사용하여 데이터에 액세스할 수 있습니다. 이때 사용자 지정 활동 코드를 변경할 필요가 없습니다. 호스트에서 데이터는 <xref:System.Activities.Bookmark>를 다시 시작하여 WF 3 워크플로 큐에 배치됩니다. 책갈피 이름은 <xref:System.IComparable> 워크플로 큐 이름의 문자열 형식입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [.NET Framework 4.5 워크플로에서 .NET Framework 3.0 또는 .NET Framework 3.5 작업 사용](../../../docs/framework/windows-workflow-foundation/samples/using-a-net-3-0-or-net-3-5-activity-in-a-net-4-5-workflow.md)
+4.  WF 3 사용자 지정 활동은 WF 3 워크플로 런타임에서와 동일한 방식으로 상호 운용 환경에서 워크플로 큐를 사용하여 데이터에 액세스할 수 있습니다. 이때 사용자 지정 활동 코드를 변경할 필요가 없습니다. 호스트에서 데이터는 <xref:System.Activities.Bookmark>를 다시 시작하여 WF 3 워크플로 큐에 배치됩니다. 책갈피 이름은 <xref:System.IComparable> 워크플로 큐 이름의 문자열 형식입니다.

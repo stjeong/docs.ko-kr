@@ -2,12 +2,12 @@
 title: 트랜잭션을 워크플로 서비스 내부 및 외부로 이동
 ms.date: 03/30/2017
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.openlocfilehash: 8b3d3e85b626d033c9ab50e93e3ceb3b86058a2f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f53bfa3c745a0d487a8daf23f399c1420e36c8ec
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33496099"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48036054"
 ---
 # <a name="flowing-transactions-into-and-out-of-workflow-services"></a>트랜잭션을 워크플로 서비스 내부 및 외부로 이동
 워크플로 서비스 및 클라이언트는 트랜잭션에 참여할 수 있습니다.  서비스 작업이 앰비언트 트랜잭션의 일부가 되도록 하려면 <xref:System.ServiceModel.Activities.Receive> 활동 내에 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동을 배치합니다. <xref:System.ServiceModel.Activities.Send> 내의 <xref:System.ServiceModel.Activities.SendReply> 또는 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동에서 실행하는 모든 호출은 앰비언트 트랜잭션 내에서도 실행됩니다. 워크플로 클라이언트 응용 프로그램에서는 <xref:System.Activities.Statements.TransactionScope> 활동을 사용하여 앰비언트 트랜잭션을 만들고 앰비언트 트랜잭션을 사용하여 서비스 작업을 호출할 수 있습니다. 이 항목에서는 트랜잭션에 참여하는 워크플로 서비스와 워크플로 클라이언트를 만드는 과정을 보여 줍니다.  
@@ -72,11 +72,11 @@ ms.locfileid: "33496099"
     }  
     ```  
   
-     이는 앰비언트 트랜잭션에 대한 정보를 표시하는 기본 활동으로서, 이 항목에 사용되는 서비스 및 클라이언트 워크플로 모두에 사용됩니다. 이 활동에서 사용할 수 있도록 솔루션을 빌드하는 **일반적인** 섹션은 **도구 상자**합니다.  
+     이는 앰비언트 트랜잭션에 대한 정보를 표시하는 기본 활동으로서, 이 항목에 사용되는 서비스 및 클라이언트 워크플로 모두에 사용됩니다. 이 활동에서 사용할 수 있도록 솔루션을 빌드합니다 합니다 **일반적인** 섹션을 **도구 상자**.  
   
 ### <a name="implement-the-workflow-service"></a>워크플로 서비스 구현  
   
-1.  라는 새 WCF 워크플로 서비스를 추가 `WorkflowService` 에 `Common` 프로젝트. 마우스 오른쪽 단추로 클릭이 작업을 수행 하는 `Common` 프로젝트를 **추가**, **새 항목...** 선택, **워크플로** 아래 **설치 된 템플릿** 선택 **WCF 워크플로 서비스**합니다.  
+1.  라는 새 WCF 워크플로 서비스 추가 `WorkflowService` 에 `Common` 프로젝트입니다. 이 마우스 오른쪽 단추로 클릭 작업을 수행 하는 `Common` 프로젝트를 **추가**, **새 항목...** 을 선택 **워크플로** 아래 **설치 된 템플릿** 선택한 **WCF Workflow Service**합니다.  
   
      ![워크플로 서비스 추가](../../../../docs/framework/wcf/feature-details/media/addwfservice.JPG "AddWFService")  
   
@@ -86,18 +86,18 @@ ms.locfileid: "33496099"
   
      ![WriteLine 활동 추가](../../../../docs/framework/wcf/feature-details/media/addwriteline.JPG "AddWriteLine")  
   
-4.  <xref:System.ServiceModel.Activities.TransactedReceiveScope>을 <xref:System.Activities.Statements.WriteLine> 활동 뒤로 끌어 놓습니다. <xref:System.ServiceModel.Activities.TransactedReceiveScope> 에서 활동을 확인할 수 있습니다는 **메시징** 의 섹션은 **도구 상자**합니다. <xref:System.ServiceModel.Activities.TransactedReceiveScope> 두 섹션으로 구성 된 활동 **요청** 및 **본문**합니다. **요청** 섹션에 포함 되어는 <xref:System.ServiceModel.Activities.Receive> 활동입니다. **본문** 섹션에는 메시지가 수신 된 후 트랜잭션 내에서 실행할 활동이 포함 되어 있습니다.  
+4.  <xref:System.ServiceModel.Activities.TransactedReceiveScope>을 <xref:System.Activities.Statements.WriteLine> 활동 뒤로 끌어 놓습니다. <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동에서 찾을 수 있습니다를 **메시징** 부분을 **도구 상자**. 합니다 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동 두 섹션으로 구성 된 **요청** 하 고 **본문**합니다. **요청** 섹션에 포함 된 <xref:System.ServiceModel.Activities.Receive> 활동. 합니다 **본문** 섹션에는 메시지를 받은 후 트랜잭션 내에서 실행할 활동 포함 되어 있습니다.  
   
      ![TransactedReceiveScope 활동 추가](../../../../docs/framework/wcf/feature-details/media/trs.JPG "TR")  
   
-5.  선택 된 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동과 클릭은 **변수** 단추입니다. 다음 변수를 추가합니다.  
+5.  선택 된 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동을 클릭 합니다 **변수** 단추. 다음 변수를 추가합니다.  
   
-     ![TransactedReceiveScope에 변수 추가](../../../../docs/framework/wcf/feature-details/media/trsvariables.JPG "TRSVariables")  
+     ![TransactedReceiveScope에 변수를 추가](../../../../docs/framework/wcf/feature-details/media/trsvariables.JPG "TRSVariables")  
   
     > [!NOTE]
     >  기본적으로 여기에 포함된 데이터 변수를 삭제할 수 있습니다. 기존 핸들 변수를 사용할 수도 있습니다.  
   
-6.  끌어서 놓기는 <xref:System.ServiceModel.Activities.Receive> 내의 활동에서 **요청** 의 섹션은 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동입니다. 다음 속성을 설정합니다.  
+6.  끌어서 놓기는 <xref:System.ServiceModel.Activities.Receive> 내의 활동에서는 **요청** 섹션을 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동. 다음 속성을 설정합니다.  
   
     |속성|값|  
     |--------------|-----------|  
@@ -109,7 +109,7 @@ ms.locfileid: "33496099"
   
      ![Receive 활동 추가](../../../../docs/framework/wcf/feature-details/media/serviceaddreceive.JPG "ServiceAddReceive")  
   
-7.  클릭는 **정의...**  연결에 <xref:System.ServiceModel.Activities.Receive> 활동 다음과 같이 설정 합니다.  
+7.  클릭 된 **정의 하는 중...**  링크를 <xref:System.ServiceModel.Activities.Receive> 활동 다음 설정을 확인 합니다.  
   
      ![Recieve 활동에 대 한 메시지 설정 지정](../../../../docs/framework/wcf/feature-details/media/receivemessagesettings.JPG "ReceiveMessageSettings")  
   
@@ -124,7 +124,7 @@ ms.locfileid: "33496099"
   
      ![WriteLine 활동 추가](../../../../docs/framework/wcf/feature-details/media/afteraddingwritelines.JPG "AfterAddingWriteLines")  
   
-9. 끌어서 놓기는 `PrintTransactionInfo` 두 번째 뒤로 <xref:System.Activities.Statements.WriteLine> 활동에는 **본문** 에 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동입니다.  
+9. 끌어서 놓기는 `PrintTransactionInfo` 후 두 번째 활동 <xref:System.Activities.Statements.WriteLine> 활동에는 **본문** 에 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동.  
   
      ![PrintTransactionInfo 추가 후](../../../../docs/framework/wcf/feature-details/media/afteraddingprinttransactioninfo.JPG "AfterAddingPrintTransactionInfo")  
   
@@ -141,11 +141,11 @@ ms.locfileid: "33496099"
   
      ![Assign 및 WriteLine 추가 후](../../../../docs/framework/wcf/feature-details/media/afteraddingsbrwriteline.JPG "AfterAddingSBRWriteLine")  
   
-12. 마우스 오른쪽 단추로 클릭는 <xref:System.ServiceModel.Activities.Receive> 활동과 선택 **SendReply 만들기** 지난 후 붙여 <xref:System.Activities.Statements.WriteLine> 활동입니다. 클릭는 **정의...**  연결에 `SendReplyToReceive` 활동 다음과 같이 설정 합니다.  
+12. 마우스 오른쪽 단추로 클릭 합니다 <xref:System.ServiceModel.Activities.Receive> 선택한 활동 **SendReply 만들기** 지난 후 붙여 넣습니다 <xref:System.Activities.Statements.WriteLine> 활동입니다. 클릭 된 **정의 하는 중...**  링크를 `SendReplyToReceive` 활동 다음 설정을 확인 합니다.  
   
-     ![회신 메시지 설정](../../../../docs/framework/wcf/feature-details/media/replymessagesettings.JPG "ReplyMessageSettings")  
+     ![메시지 설정을 회신](../../../../docs/framework/wcf/feature-details/media/replymessagesettings.JPG "ReplyMessageSettings")  
   
-13. 끌어서 놓기는 <xref:System.Activities.Statements.WriteLine> 뒤로 `SendReplyToReceive` 활동 집합과 있기 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성을 "Service: 보낸 회신 합니다."  
+13. 끌어서 놓기는 <xref:System.Activities.Statements.WriteLine> 활동 뒤로 `SendReplyToReceive` 활동 집합과 있기 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성을 "서비스: 회신을 보냈습니다."  
   
 14. <xref:System.Activities.Statements.WriteLine> 활동을 워크플로의 맨 아래로 끌어 놓고 해당 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성을 "Service: Workflow ends, press ENTER to exit"로 설정합니다.  
   
@@ -155,7 +155,7 @@ ms.locfileid: "33496099"
   
 ### <a name="implement-the-workflow-client"></a>워크플로 클라이언트 구현  
   
-1.  `WorkflowClient` 프로젝트에 `Common`라는 새 WCF 워크플로 응용 프로그램을 추가합니다. 마우스 오른쪽 단추로 클릭이 작업을 수행 하는 `Common` 프로젝트를 **추가**, **새 항목...** 선택, **워크플로** 아래 **설치 된 템플릿** 선택 **활동**합니다.  
+1.  `WorkflowClient` 프로젝트에 `Common`라는 새 WCF 워크플로 응용 프로그램을 추가합니다. 이 마우스 오른쪽 단추로 클릭 작업을 수행 하는 `Common` 프로젝트를 **추가**, **새 항목...** 을 선택 **워크플로** 아래 **설치 된 템플릿** 선택한 **활동**합니다.  
   
      ![활동 프로젝트 추가](../../../../docs/framework/wcf/feature-details/media/addactivity.JPG "AddActivity")  
   
@@ -173,7 +173,7 @@ ms.locfileid: "33496099"
   
 6.  `PrintTransactionInfo` 활동을 <xref:System.Activities.Statements.Sequence> 안으로 끌어 놓습니다.  
   
-7.  끌어서 놓기는 <xref:System.Activities.Statements.WriteLine> 뒤로 `PrintTransactionInfo` 활동 집합과 해당 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성을 "Client: Beginning Send"입니다. 이제 워크플로가 다음과 같이 나타납니다.  
+7.  끌어서 놓기는 <xref:System.Activities.Statements.WriteLine> 후 작업을 `PrintTransactionInfo` 활동 집합과 해당 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성을 "Client: Beginning Send"입니다. 이제 워크플로가 다음과 같이 나타납니다.  
   
      ![활동 추가](../../../../docs/framework/wcf/feature-details/media/clientaddcbswriteline.JPG "ClientAddCBSWriteLine")  
   
@@ -189,15 +189,15 @@ ms.locfileid: "33496099"
   
      ![Send 활동 속성 설정](../../../../docs/framework/wcf/feature-details/media/clientsendsettings.JPG "ClientSendSettings")  
   
-9. 클릭는 **정의...**  에 연결 하 고 다음과 같이 설정 합니다.  
+9. 클릭 된 **정의 하는 중...**  에 연결 하 고 다음 설정을 확인 합니다.  
   
      ![Send 활동 메시지 설정](../../../../docs/framework/wcf/feature-details/media/sendmessagesettings.JPG "SendMessageSettings")  
   
-10. 마우스 오른쪽 단추로 클릭는 <xref:System.ServiceModel.Activities.Send> 활동과 선택 **ReceiveReply 만들기**합니다. <xref:System.ServiceModel.Activities.ReceiveReply> 활동이 자동으로 <xref:System.ServiceModel.Activities.Send> 활동 뒤에 배치됩니다.  
+10. 마우스 오른쪽 단추로 클릭 합니다 <xref:System.ServiceModel.Activities.Send> 선택한 활동 **ReceiveReply 만들기**합니다. <xref:System.ServiceModel.Activities.ReceiveReply> 활동이 자동으로 <xref:System.ServiceModel.Activities.Send> 활동 뒤에 배치됩니다.  
   
 11. ReceiveReplyForSend 활동의 정의... 링크를 클릭하고 다음과 같이 설정합니다.  
   
-     ![ReceiveForSend 메시지 설정 지정](../../../../docs/framework/wcf/feature-details/media/clientreplymessagesettings.JPG "ClientReplyMessageSettings")  
+     ![ReceiveForSend 메시지 설정](../../../../docs/framework/wcf/feature-details/media/clientreplymessagesettings.JPG "ClientReplyMessageSettings")  
   
 12. <xref:System.Activities.Statements.WriteLine> 활동을 <xref:System.ServiceModel.Activities.Send> 활동과 <xref:System.ServiceModel.Activities.ReceiveReply> 활동 사이로 끌어 놓고 해당 <xref:System.Activities.Statements.WriteLine.Text%2A> 속성을 "Client: Send complete"로 설정합니다.  
   
@@ -313,6 +313,6 @@ ms.locfileid: "33496099"
     ```  
   
 ## <a name="see-also"></a>참고 항목  
- [워크플로 서비스](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
- [Windows Communication Foundation 트랜잭션 개요](../../../../docs/framework/wcf/feature-details/transactions-overview.md)  
- [TransactedReceiveScope 사용](../../../../docs/framework/windows-workflow-foundation/samples/use-of-transactedreceivescope.md)
+
+- [워크플로 서비스](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
+- [Windows Communication Foundation 트랜잭션 개요](../../../../docs/framework/wcf/feature-details/transactions-overview.md)

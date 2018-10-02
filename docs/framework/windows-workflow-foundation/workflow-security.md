@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], workflow security
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-ms.openlocfilehash: ebce4daf433647179a0bce5751f66cdfab7a4d80
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 726e41e8cde028fb86004ff06e2ad0663a042287
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195721"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030274"
 ---
 # <a name="workflow-security"></a>워크플로 보안
 Windows WF (Workflow Foundation)는 Microsoft SQL Server 및 Windows Communication Foundation (WCF)와 같은 몇 가지 다른 기술과 통합 되어 있습니다. 이러한 기술과 잘못 상호 작용하면 워크플로에 보안 문제가 발생할 수 있습니다.
@@ -40,7 +40,7 @@ Windows WF (Workflow Foundation)는 Microsoft SQL Server 및 Windows Communicati
 
 -   워크플로에서 사용 되는 Windows Communication Foundation (WCF) 끝점을 보호 되어야 합니다. 자세한 내용은 [WCF 보안 개요](https://go.microsoft.com/fwlink/?LinkID=164975)합니다.
 
--   <xref:System.ServiceModel.ServiceAuthorizationManager>를 사용하여 호스트 수준 권한 부여를 구현할 수 있습니다. 참조 [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](https://go.microsoft.com/fwlink/?LinkId=192228) 세부 정보에 대 한 합니다. 다음 샘플에서 에서도이 보여 줍니다. [워크플로 서비스 보안](../../../docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md)합니다.
+-   <xref:System.ServiceModel.ServiceAuthorizationManager>를 사용하여 호스트 수준 권한 부여를 구현할 수 있습니다. 참조 [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](https://go.microsoft.com/fwlink/?LinkId=192228) 세부 정보에 대 한 합니다.
 
 -   들어오는 메시지에 대한 ServiceSecurityContext는 OperationContext에 액세스하여 워크플로 내에서도 사용할 수 있습니다.
 

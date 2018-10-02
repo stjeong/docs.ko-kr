@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
-ms.openlocfilehash: 55869c3c8a957de98962378cc1a93e7058e24e38
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d79c8fc364d13c00049523f7788ada258af6ec98
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524872"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48028348"
 ---
 # <a name="how-to-enable-sql-persistence-for-workflows-and-workflow-services"></a>방법: 워크플로 및 워크플로 서비스에 SQL 지속성 사용
 
@@ -72,7 +72,7 @@ SQL 워크플로 인스턴스 저장소 기능을 사용하기 전에 이 기능
    ```
 
 > [!NOTE]
-> 참조를 [워크플로 응용 프로그램 유지](../../../docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md) 에 있는 샘플 [지 속성](../../../docs/framework/windows-workflow-foundation/samples/persistence.md) 사용 하 여 워크플로에 지 속성 사용의 예는 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, 및 [방법: 만들고 장기 실행 워크플로 실행할](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md) 의 단계를 [초보자를 위한 자습서](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md) 단계별 지침에 대 한 합니다.  
+> 참조를 [방법: 만들고 장기 실행 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md) 의 단계는 [초보자를 위한 자습서](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md) 단계별 지침에 대 한 합니다.  
 
 ## <a name="enabling-persistence-for-self-hosted-workflow-services-that-use-the-workflowservicehost"></a>WorkflowServiceHost를 사용하는 자체 호스팅 워크플로 서비스에 지속성 사용
 
@@ -82,7 +82,7 @@ SQL 워크플로 인스턴스 저장소 기능을 사용하기 전에 이 기능
 
 다음 절차에서는 <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> 클래스를 사용하여 자체 호스팅 워크플로 서비스에 지속성을 사용하는 방법을 설명합니다.  
 
-##### <a name="to-enable-persistence-using-sqlworkflowinstancestorebehavior"></a>SqlWorkflowInstanceStoreBehavior를 통해 지속성을 사용하려면
+#### <a name="to-enable-persistence-using-sqlworkflowinstancestorebehavior"></a>SqlWorkflowInstanceStoreBehavior를 통해 지속성을 사용하려면
 
 1.  System.ServiceModel.dll에 참조를 추가합니다.  
   
@@ -116,9 +116,6 @@ SQL 워크플로 인스턴스 저장소 기능을 사용하기 전에 이 기능
     ```csharp
     host.Open();
     ```
-
-> [!IMPORTANT]
-> 참조를 [기본 제공 구성](../../../docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) 에 있는 샘플 [지 속성](../../../docs/framework/windows-workflow-foundation/samples/persistence.md) 사용 하 여 워크플로 서비스에 대 한 지 속성 사용의 예는 `SqlWorkflowInstanceStoreBehavior` 클래스.  
 
 ### <a name="using-the-durableinstancingoptions-property"></a>DurableInstancingOptions 속성 사용
 
