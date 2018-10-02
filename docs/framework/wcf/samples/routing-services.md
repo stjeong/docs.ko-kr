@@ -3,11 +3,11 @@ title: 라우팅 서비스
 ms.date: 03/30/2017
 ms.assetid: 9a430b4c-46eb-4d15-afbc-8834f0e985ab
 ms.openlocfilehash: aab9f30a21037a0e9ad0c4678304dff46dc7987a
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
-ms.translationtype: MT
+ms.sourcegitcommit: daa8788af67ac2d1cecd24f9f3409babb2f978c9
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47235116"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47861655"
 ---
 # <a name="routing-services"></a>라우팅 서비스
 이 섹션에는 Windows Communication Foundation (WCF) 라우터를 사용 하는 방법을 보여 주는 샘플이 포함 됩니다.  
