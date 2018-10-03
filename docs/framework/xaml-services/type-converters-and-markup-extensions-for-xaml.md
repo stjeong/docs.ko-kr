@@ -63,7 +63,7 @@ ms.locfileid: "33565865"
   
 <a name="service_context_for_a_value_converter"></a>   
 ## <a name="service-context-for-a-value-converter"></a>값 변환기에 대한 서비스 컨텍스트  
- 값 변환기를 구현할 때 값 변환기가 적용되는 컨텍스트에 액세스해야 하는 경우가 많습니다. 이 컨텍스트를 서비스 컨텍스트라고 합니다. 서비스 컨텍스트에는 활성 XAML 스키마 컨텍스트와 같은 정보, XAML 스키마 컨텍스트 및 XAML 개체 작성기에서 제공하는 형식 매핑 시스템에 대한 액세스 권한 등이 포함될 수 있습니다. 값 변환기에 사용 가능한 서비스 컨텍스트 및 서비스 컨텍스트에서 제공하는 서비스에 액세스하는 방법에 대한 자세한 내용은 [Service Contexts Available to Type Converters and Markup Extensions](../../../docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md)를 참조하세요.  
+ 값 변환기를 구현할 때 값 변환기가 적용되는 컨텍스트에 액세스해야 하는 경우가 많습니다. 이 컨텍스트를 서비스 컨텍스트라고 합니다. 서비스 컨텍스트에는 활성 XAML 스키마 컨텍스트와 같은 정보, XAML 스키마 컨텍스트 및 XAML 개체 작성기에서 제공하는 형식 매핑 시스템에 대한 액세스 권한 등이 포함될 수 있습니다. 값 변환기에 사용 가능한 서비스 컨텍스트 및 서비스 컨텍스트에서 제공하는 서비스에 액세스하는 방법에 대한 자세한 내용은 [형식 변환기 또는 태그 확장에서 사용할 수 있는 서비스 컨텍스트](../../../docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Markup.MarkupExtension>  

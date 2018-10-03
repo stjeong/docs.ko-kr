@@ -42,7 +42,7 @@ ms.locfileid: "47397688"
   
  `CompanyName`, `ProductName`및 `ProductVersion` 값은 응용 프로그램의 어셈블리 정보에서 가져옵니다. 로그 파일 이름의 형식은 *AssemblyName*.log이며 여기서 *AssemblyName* 은 확장명을 제외한 어셈블리의 파일 이름입니다. 응용 프로그램에서 로그에 쓰려고 할 때 원본 로그를 사용할 수 없는 경우와 같이 둘 이상의 로그 파일이 필요한 경우 로그 파일 이름의 형식은 *AssemblyName*-*iteration*.log이며 여기서 `iteration` 은 양의 `Integer`을 클릭합니다.  
   
- 컴퓨터 및 응용 프로그램의 구성 파일을 추가하거나 변경하여 기본 동작을 재정의할 수 있습니다. 자세한 내용은 [Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)을 참조하십시오.  
+ 컴퓨터 및 응용 프로그램의 구성 파일을 추가하거나 변경하여 기본 동작을 재정의할 수 있습니다. 자세한 내용은 [연습: My.Application.Log가 정보를 기록하는 위치 변경](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)을 참조하십시오.  
   
 ## <a name="configuring-log-settings"></a>로그 설정 구성  
  `Log` 개체에는 응용 프로그램 구성 파일인 app.config 없이 작동하는 기본 구현이 있습니다. 기본값을 변경하려면 새 설정이 지정된 구성 파일을 추가해야 합니다. 자세한 내용은 [Walkthrough: Filtering My.Application.Log Output](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)을 참조하세요.  
