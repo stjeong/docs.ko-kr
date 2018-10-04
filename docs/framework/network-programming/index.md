@@ -10,11 +10,11 @@ ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: b949c9fd50ee4d09d7237bc14898a1b55689f2f4
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47216905"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48582634"
 ---
 # <a name="network-programming-in-the-net-framework"></a>.NET Framework의 네트워크 프로그래밍
 Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합할 수 있는 계층적이고 확장 가능하며 관리되는 인터넷 서비스 구현을 제공합니다. 네트워크 응용 프로그램은 플러그 가능한 프로토콜을 바탕으로 빌드하여 새 인터넷 프로토콜을 자동으로 이용하거나, Windows 소켓 인터페이스의 관리되는 구현을 사용하여 소켓 수준에서 네트워크 작업을 수행할 수 있습니다.  
