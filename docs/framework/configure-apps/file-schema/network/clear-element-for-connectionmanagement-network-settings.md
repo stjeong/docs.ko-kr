@@ -13,11 +13,11 @@ ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 9542332085d0b0319c55db63fd98c9dd8eb3f576
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48244817"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782001"
 ---
 # <a name="ltcleargt-element-for-connectionmanagement-network-settings"></a>&lt;지우기&gt; connectionManagement (네트워크 설정)에 대 한 요소
 연결 관리 목록을 지웁니다.  

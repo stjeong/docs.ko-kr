@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - msmqIntegrationBinding Element
 ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
-ms.openlocfilehash: 29caae11c72ff230d738e9dab1cd763899710843
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 1493cb6f9588ee618b085186b3bb63476a9a8930
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44207555"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48793539"
 ---
 # <a name="ltmsmqintegrationbindinggt"></a>&lt;msmqIntegrationBinding&gt;
 MSMQ를 통해 메시지를 라우팅하여 큐 지원을 제공하는 바인딩을 정의합니다.  
@@ -137,5 +137,5 @@ msmqIntegrationBinding
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

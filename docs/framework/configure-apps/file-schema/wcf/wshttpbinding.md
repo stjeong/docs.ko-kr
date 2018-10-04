@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wsHttpBinding Element
 ms.assetid: 0eee8ced-ad68-427d-b95a-97260e98deed
-ms.openlocfilehash: 480e10b9667712fbd2a3ffa95e1373d72ee1a9df
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: f0d7234007c3899220cbca99bd7fe8ea4e75abae
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47421179"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782092"
 ---
 # <a name="ltwshttpbindinggt"></a>&lt;wsHttpBinding&gt;
 비이중 서비스 계약에 적합한 안전하고 신뢰할 수 있으며 상호 운용할 수 있는 바인딩을 정의합니다. 이 바인딩은 안정성을 위해 WS-Reliable Messaging 사양을 구현하고, 메시지 보안 및 인증을 위해 WS-Security 사양을 구현합니다. 전송은 HTTP이며 메시지 인코딩은 Text/XML 인코딩입니다.  
@@ -140,5 +140,5 @@ ms.locfileid: "47421179"
  <xref:System.ServiceModel.Configuration.WSHttpBindingElement>  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

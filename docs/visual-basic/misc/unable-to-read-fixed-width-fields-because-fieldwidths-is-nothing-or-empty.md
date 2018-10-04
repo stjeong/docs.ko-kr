@@ -5,11 +5,11 @@ f1_keywords:
 - vbrTextFieldParser_FieldWidthsNothing
 ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
 ms.openlocfilehash: cb9051269bf46e23d5ae070956994212d3e98675
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48031460"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48781936"
 ---
 # <a name="unable-to-read-fixed-width-fields-because-fieldwidths-is-nothing-or-empty"></a>FieldWidths가 Nothing이거나 비어 있기 때문에 고정 폭 필드를 읽을 수 없습니다.
 `TextFieldParser` 속성이 `FieldWidths` 으로 설정되거나 비어 있기 때문에 `Nothing` 가 고정 폭 필드를 읽을 수 없습니다.  
