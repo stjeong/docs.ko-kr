@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: ac3f588e-5f75-4275-b969-2d492ecc3b47
 author: BrucePerlerMS
 ms.openlocfilehash: bd2272cb83dc0183d5008cfa178e11783f51ca2d
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48031986"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48261057"
 ---
 # <a name="lttokenreplaydetectiongt"></a>&lt;tokenReplayDetection&gt;
 토큰 재생 검색을 사용 하도록 설정 하 고 토큰에 대 한 만료 시간을 지정 합니다.  

@@ -13,11 +13,11 @@ ms.assetid: d67c14d8-c4dd-443f-affb-4ccae677c9b6
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: c3a0a51fc6055190f9a0189de2e17d98f88036ea
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48031762"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48261578"
 ---
 # <a name="static-class-design"></a>정적 클래스 디자인
 정적 멤버만 포함 하는 클래스로 정의 된 정적 클래스 (에서 상속 된 인스턴스 멤버 외에도 물론 <xref:System.Object?displayProperty=nameWithType> 및 private 생성자를 사용 가능한 경우). 일부 언어는 정적 클래스에 대 한 기본 제공 지원을 제공 합니다. C# 2.0 이상에서는 클래스를 static으로 선언 봉인 된 추상 하 고, 없는 인스턴스 멤버를 재정의 하거나 선언 합니다.  

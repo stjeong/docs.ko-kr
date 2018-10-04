@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-ms.openlocfilehash: 93cc0cf34d2bba23ff0938c8c13d7343d665192d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: a809dbc34d08fc864f6cfe8263489ab52ce41e35
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45649226"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580747"
 ---
 # <a name="adonet-code-examples"></a>ADO.NET 코드 예제
 이 항목에 나열된 코드에서는 다음과 같은 ADO.NET 기술을 사용하여 데이터베이스에서 데이터를 검색하는 방법을 보여 줍니다.
@@ -66,7 +66,7 @@ ms.locfileid: "45649226"
 다음에 나열된 코드에서는 EDM(엔터티 데이터 모델)의 엔터티를 쿼리하여 데이터 소스에서 데이터를 검색하는 방법을 보여 줍니다. 이러한 예에서 사용 된 [Northwind 모델](https://msdn.microsoft.com/74521f8c-e974-48cb-8858-c08deff52638)합니다. 자세한 내용은 [Entity Framework 개요](../../../../docs/framework/data/adonet/ef/overview.md)합니다.
 
 ### <a name="linq-to-entities"></a>LINQ to Entities
-이 예제 코드에서는 LINQ 쿼리를 사용하여 CategoryID와 CategoryName 속성만 포함된 익명 형식으로 프로젝션된 Categories 개체로 데이터를 반환합니다. 자세한 내용은 [LINQ to Entities 개요](https://msdn.microsoft.com/86d87a27-c17a-45ac-b28d-72c8500333c6)합니다.
+이 예제 코드에서는 LINQ 쿼리를 사용하여 CategoryID와 CategoryName 속성만 포함된 익명 형식으로 프로젝션된 Categories 개체로 데이터를 반환합니다. 자세한 내용은 [LINQ to Entities 개요](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)합니다.
 
 ```csharp
 using System;

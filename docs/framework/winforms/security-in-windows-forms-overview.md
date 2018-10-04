@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [Windows Forms], about security
 - access control [Windows Forms], Windows Forms
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
-ms.openlocfilehash: 54fc56e5e7d6ee5cd0e7bc55bd22c7d4127eb4d3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 36d38756f7df88ec04aca781525f0f6b0a48b768
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45747127"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580932"
 ---
 # <a name="security-in-windows-forms-overview"></a>Windows Forms의 보안 개요
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 릴리스 이전에는 사용자 컴퓨터에서 실행되는 모든 코드가 컴퓨터의 사용자와 동일한 리소스 액세스 권한을 가졌습니다. 예를 들어 사용자가 파일 시스템에 액세스할 수 있는 경우 코드에서 파일 시스템에 액세스할 수 있었습니다. 사용자가 데이터베이스에 액세스할 수 있는 경우 코드에서 해당 데이터베이스에 액세스할 수 있었습니다. 이러한 권한 또는 사용 권한은 사용자가 명시적으로 로컬 컴퓨터에 설치한 실행 파일의 코드에는 적합할 수 있지만 인터넷 또는 로컬 인트라넷에서 들어오는 잠재적 악성 코드에는 적합하지 않을 수 있습니다. 이 코드는 권한 없이 사용자의 컴퓨터 리소스에 액세스할 수 없어야 합니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "45747127"
   
  선택적 권한을 요청할 때는 응용 프로그램에서 부여되지 않은 권한이 필요한 작업을 수행하는 경우 생성되는 보안 예외를 처리해야 합니다. <xref:System.Security.SecurityException>을 적절히 처리하면 응용 프로그램이 계속 작동할 수 있습니다. 응용 프로그램은 예외를 사용하여 사용자에 대해 기능을 사용할 수 없도록 설정할지 여부를 결정할 수 있습니다. 예를 들어 필요한 파일 권한이 부여되지 않은 경우 응용 프로그램에서 **저장** 메뉴 옵션을 사용할 수 없습니다.  
   
- 적절한 권한을 모두 어설션했는지 확인하기 어려운 경우도 있습니다. 예를 들어 화면에서 무해한 것처럼 보이는 메서드 호출이 실행 중 특정 지점에서 파일 시스템에 액세스할 수도 있습니다. 필요한 모든 권한으로 응용 프로그램을 배포하지 않을 경우 데스크톱에서 디버그할 때는 정상적으로 테스트되지만 배포 시 실패할 수 있습니다. 모두를 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK 및 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] 응용 프로그램에 필요한 권한을 계산 하기 위한 도구가 포함 되어:는 MT.exe 명령줄 도구 및 Visual Studio의 권한 계산 기능이 명령을 각각.  
+ 적절한 권한을 모두 어설션했는지 확인하기 어려운 경우도 있습니다. 예를 들어 화면에서 무해한 것처럼 보이는 메서드 호출이 실행 중 특정 지점에서 파일 시스템에 액세스할 수도 있습니다. 필요한 모든 권한으로 응용 프로그램을 배포하지 않을 경우 데스크톱에서 디버그할 때는 정상적으로 테스트되지만 배포 시 실패할 수 있습니다. 모두는 [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK 및 Visual Studio 2005에는 응용 프로그램에 필요한 권한을 계산 하기 위한 도구가 포함 되어:는 MT.exe 명령줄 도구 및 Visual Studio의 권한 계산 기능이 명령을 각각.  
   
  다음 항목에서는 추가 Windows Forms 보안 기능을 설명합니다.  
   

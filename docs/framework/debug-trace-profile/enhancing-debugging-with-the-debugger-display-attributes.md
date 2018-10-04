@@ -16,11 +16,11 @@ ms.assetid: 72bb7aa9-459b-42c4-9163-9312fab4c410
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 4150658f713e626c5578c21cfada0f6410cbd37b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47208070"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48779597"
 ---
 # <a name="enhancing-debugging-with-the-debugger-display-attributes"></a>디버거 표시 특성을 사용하여 디버깅 향상
 

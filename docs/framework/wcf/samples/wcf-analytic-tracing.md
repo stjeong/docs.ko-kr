@@ -2,12 +2,12 @@
 title: WCF 분석 추적
 ms.date: 03/30/2017
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
-ms.openlocfilehash: 006f8aa0bc2f32e43269aa83433e8ca7a773a1c9
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 9464f2a4c9bc52134e439c98b06ae50c828a14f6
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46532810"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580446"
 ---
 # <a name="wcf-analytic-tracing"></a>WCF 분석 추적
 이 샘플에는 Windows Communication Foundation (WCF) ETW에 기록 하는 분석 추적 스트림에 고유한 추적 이벤트를 추가 하는 방법을 보여 줍니다. [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]합니다. 분석 추적은 성능을 크게 저하시키지 않으면서 서비스를 쉽게 확인할 수 있도록 하기 위한 것입니다. 이 샘플에 사용 하는 방법을 보여 줍니다는 <xref:System.Diagnostics.Eventing?displayProperty=nameWithType> WCF 서비스와 통합 하는 쓰기 이벤트에는 Api입니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "46532810"
   
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
-1.  [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]에서 WCFAnalyticTracingExtensibility.sln 솔루션 파일을 엽니다.  
+1.  WCFAnalyticTracingExtensibility.sln 솔루션 파일을 열고 Visual Studio 2012를 사용 합니다.  
   
 2.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "46532810"
   
 4.  WCF 테스트 클라이언트 (WcfTestClient.exe)를 실행 합니다.  
   
-     WCF 테스트 클라이언트 (WcfTestClient.exe)에 \< [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] Install > WcfTestClient.exe \Common7\IDE\ (기본 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] 설치 디렉터리는 C:\Program Files\Microsoft Visual Studio 10.0).  
+     WCF 테스트 클라이언트 (WcfTestClient.exe)에 \<Visual Studio 2012 설치 디렉터리 > \Common7\IDE\ WcfTestClient.exe (기본 Visual Studio 2012 설치 디렉터리는 C:\Program Files\Microsoft Visual Studio 10.0).  
   
 5.  WCF 테스트 클라이언트 내에서 선택 하 여 서비스를 추가할 **파일**를 차례로 **서비스 추가**합니다.  
   

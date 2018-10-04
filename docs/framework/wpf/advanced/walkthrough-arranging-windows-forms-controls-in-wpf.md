@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hybrid applications [WPF interoperability]
 - arranging controls [WPF]
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
-ms.openlocfilehash: 98b108be518a9fef03ee299d43ed591cf736f68f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 31afacd6bb387a4df9eb8d36d2dc224ead63cc68
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43786085"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48777981"
 ---
 # <a name="walkthrough-arranging-windows-forms-controls-in-wpf"></a>연습: WPF에서 Windows Forms 컨트롤 정렬
 이 연습에서는 사용 하는 방법을 보여 줍니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 정렬 레이아웃 기능 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 하이브리드 응용 프로그램에서 제어 합니다.  
@@ -53,9 +53,8 @@ ms.locfileid: "43786085"
  완료 되 면 하면 이해가 더 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 레이아웃 기능 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-기반 응용 프로그램입니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
-  
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+
+Visual Studio의이 연습을 완료 해야 합니다.
   
 ## <a name="creating-the-project"></a>프로젝트 만들기  
   
@@ -143,117 +142,117 @@ ms.locfileid: "43786085"
 3.  다음 코드를 복사 합니다 `MainWindow` 클래스 정의 합니다.  
   
      [!code-csharp[WpfLayoutHostingWfWithXaml#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#101)]
-     [!code-vb[WpfLayoutHostingWfWithXaml#101](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#101)]  
-  
-4.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다.  
-  
-5.  클릭 합니다 **Click me** 단추입니다. `button1_Click` 이벤트 처리기 설정 합니다 <xref:System.Windows.Forms.Control.Top%2A> 및 <xref:System.Windows.Forms.Control.Left%2A> 호스팅된 컨트롤의 속성입니다. 이렇게 하면 호스트 된 컨트롤 내의 위치를 변경할 수는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소입니다. 호스트는 동일한 화면 영역을 유지하지만 호스트된 컨트롤은 잘립니다. 호스팅된 컨트롤이 항상 채우는 대신는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소입니다.  
-  
-## <a name="understanding-z-order-limitations"></a>Z 순서 제한 사항 이해  
+     [!code-vb[WpfLayoutHostingWfWithXaml#101](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#101)]
+
+4.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다.
+
+5.  클릭 합니다 **Click me** 단추입니다. `button1_Click` 이벤트 처리기 설정 합니다 <xref:System.Windows.Forms.Control.Top%2A> 및 <xref:System.Windows.Forms.Control.Left%2A> 호스팅된 컨트롤의 속성입니다. 이렇게 하면 호스트 된 컨트롤 내의 위치를 변경할 수는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소입니다. 호스트는 동일한 화면 영역을 유지하지만 호스트된 컨트롤은 잘립니다. 호스팅된 컨트롤이 항상 채우는 대신는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소입니다.
+
+## <a name="understanding-z-order-limitations"></a>Z 순서 제한 사항 이해
  표시 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소는 항상 다른 WPF 요소를 기반으로 그려지며 z-순서 영향을 받지 않습니다. 이 z 순서 동작을 확인 하려면 다음을 수행 합니다.
 
 1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
 
-     [!code-xaml[WpfLayoutHostingWfWithXaml#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#8)]  
- 
-2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소가 레이블 요소 위에 그려집니다.  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#8)]
+
+2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소가 레이블 요소 위에 그려집니다.
 
 
-## <a name="docking"></a>도킹  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소가 지 원하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 도킹 합니다. 설정 합니다 <xref:System.Windows.Controls.DockPanel.Dock%2A> 연결 된 속성에서 호스트 된 컨트롤을 도킹을 <xref:System.Windows.Controls.DockPanel> 요소입니다.  
-  
-#### <a name="to-dock-a-hosted-control"></a>호스트된 컨트롤을 도킹하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#9)]  
-  
-2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 합니다 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소가 오른쪽에 도킹 됩니다는 <xref:System.Windows.Controls.DockPanel> 요소입니다.  
-  
-## <a name="setting-visibility"></a>표시 유형 설정  
- 할 수 있습니다 프로그램 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤이 보이지 않거나 설정 하 여 축소 합니다 <xref:System.Windows.UIElement.Visibility%2A> 속성에는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소. 컨트롤이 보이지 않으면 표시되지는 않지만 레이아웃 공간은 사용합니다. 컨트롤이 축소되면 표시되지 않고 레이아웃 공간도 자치하지 않습니다.  
-  
-#### <a name="to-set-the-visibility-of-a-hosted-control"></a>호스트된 컨트롤의 표시 유형을 설정하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#10)]  
-  
-2.  MainWindow.xaml.vb 또는 MainWindow.xaml.cs에서 다음 코드를 클래스 정의에 복사합니다.  
-  
+## <a name="docking"></a>도킹
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소가 지 원하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 도킹 합니다. 설정 합니다 <xref:System.Windows.Controls.DockPanel.Dock%2A> 연결 된 속성에서 호스트 된 컨트롤을 도킹을 <xref:System.Windows.Controls.DockPanel> 요소입니다.
+
+#### <a name="to-dock-a-hosted-control"></a>호스트된 컨트롤을 도킹하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#9)]
+
+2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 합니다 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소가 오른쪽에 도킹 됩니다는 <xref:System.Windows.Controls.DockPanel> 요소입니다.
+
+## <a name="setting-visibility"></a>표시 유형 설정
+ 할 수 있습니다 프로그램 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤이 보이지 않거나 설정 하 여 축소 합니다 <xref:System.Windows.UIElement.Visibility%2A> 속성에는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소. 컨트롤이 보이지 않으면 표시되지는 않지만 레이아웃 공간은 사용합니다. 컨트롤이 축소되면 표시되지 않고 레이아웃 공간도 자치하지 않습니다.
+
+#### <a name="to-set-the-visibility-of-a-hosted-control"></a>호스트된 컨트롤의 표시 유형을 설정하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#10)]
+
+2.  MainWindow.xaml.vb 또는 MainWindow.xaml.cs에서 다음 코드를 클래스 정의에 복사합니다.
+
      [!code-csharp[WpfLayoutHostingWfWithXaml#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#102)]
-     [!code-vb[WpfLayoutHostingWfWithXaml#102](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#102)]  
-  
-3.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다.  
-  
-4.  클릭 합니다 **보이지 않도록 하려면 클릭** 단추를 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소는 표시 되지 않습니다.  
-  
-5.  클릭 합니다 **축소 하려면 클릭** 숨기려면 단추는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소를 레이아웃에서 완전히 합니다. 경우는 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤 축소 되는 경우 해당 공간을 차지 하도록 주변 요소가 다시 정렬 됩니다.  
-  
-## <a name="hosting-a-control-that-does-not-stretch"></a>늘어나지 않는 컨트롤 호스트  
- 일부 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤은 고정 크기 및 레이아웃에 사용 가능한 공간을 채우도록 늘어나지 않습니다. 예를 들어를 <xref:System.Windows.Forms.MonthCalendar> 컨트롤은 고정 된 공간에 월을 표시 합니다.  
-  
-#### <a name="to-host-a-control-that-does-not-stretch"></a>늘어나지 않는 컨트롤을 호스트하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#11)]  
-  
-2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소를 그리드 행에서 가운데에 있지만 사용 가능한 공간을 채우도록 확장 되지 않습니다. 창이 충분히 큰 경우 호스팅된 하 여 표시 되는 월을 두 개 이상 표시 될 수 있습니다 <xref:System.Windows.Forms.MonthCalendar> 컨트롤 이지만 이러한 행에서 가운데 맞춤 됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃 엔진 센터 요소는 사용 가능한 공간에 맞게 크기를 조정할 수 없습니다.  
-  
-## <a name="scaling"></a>배율 조정  
- WPF 요소와는 달리 대부분의 Windows Forms 컨트롤은 지속적으로 확장 가능하지 없습니다. 사용자 지정 확장을 제공 하려면 재정의 <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A?displayProperty=nameWithType> 메서드. 
-  
-#### <a name="to-scale-a-hosted-control-by-using-the-default-behavior"></a>기본 동작을 사용하여 호스트된 컨트롤의 배율을 조정하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#12)]  
-  
+     [!code-vb[WpfLayoutHostingWfWithXaml#102](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#102)]
+
+3.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다.
+
+4.  클릭 합니다 **보이지 않도록 하려면 클릭** 단추를 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소는 표시 되지 않습니다.
+
+5.  클릭 합니다 **축소 하려면 클릭** 숨기려면 단추는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소를 레이아웃에서 완전히 합니다. 경우는 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤 축소 되는 경우 해당 공간을 차지 하도록 주변 요소가 다시 정렬 됩니다.
+
+## <a name="hosting-a-control-that-does-not-stretch"></a>늘어나지 않는 컨트롤 호스트
+ 일부 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤은 고정 크기 및 레이아웃에 사용 가능한 공간을 채우도록 늘어나지 않습니다. 예를 들어를 <xref:System.Windows.Forms.MonthCalendar> 컨트롤은 고정 된 공간에 월을 표시 합니다.
+
+#### <a name="to-host-a-control-that-does-not-stretch"></a>늘어나지 않는 컨트롤을 호스트하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#11)]
+
+2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소를 그리드 행에서 가운데에 있지만 사용 가능한 공간을 채우도록 확장 되지 않습니다. 창이 충분히 큰 경우 호스팅된 하 여 표시 되는 월을 두 개 이상 표시 될 수 있습니다 <xref:System.Windows.Forms.MonthCalendar> 컨트롤 이지만 이러한 행에서 가운데 맞춤 됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃 엔진 센터 요소는 사용 가능한 공간에 맞게 크기를 조정할 수 없습니다.
+
+## <a name="scaling"></a>배율 조정
+ WPF 요소와는 달리 대부분의 Windows Forms 컨트롤은 지속적으로 확장 가능하지 없습니다. 사용자 지정 확장을 제공 하려면 재정의 <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A?displayProperty=nameWithType> 메서드.
+
+#### <a name="to-scale-a-hosted-control-by-using-the-default-behavior"></a>기본 동작을 사용하여 호스트된 컨트롤의 배율을 조정하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#12)]
+
 2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 호스트된 컨트롤과 해당 주변 요소가 0.5의 비율로 배율 조정됩니다. 그러나 호스트된 컨트롤의 글꼴은 배율 조정되지 않습니다.
 
 <!-- This could use an example of custom scaling. -->
 
-## <a name="rotating"></a>회전  
+## <a name="rotating"></a>회전
  WPF 요소와는 달리 Windows Forms 컨트롤 회전을 지원 하지 않습니다. <xref:System.Windows.Forms.Integration.WindowsFormsHost> 회전 변환이 적용 될 때 다른 WPF 요소와 요소 회전 하지 않습니다. 180도 발생 이외의 모든 회전 값은 <xref:System.Windows.Forms.Integration.WindowsFormsHost.LayoutError> 이벤트입니다.
- 
-#### <a name="to-see-the-effect-of-rotation-in-a-hybrid-application"></a>혼합 응용 프로그램에서 회전의 결과를 확인하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#13)]  
-  
-2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 호스트된 컨트롤은 회전되지 않지만 주변 요소는 180도 각도로 회전됩니다. 요소를 표시하려면 창의 크기를 조정해야 할 수 있습니다.  
- 
 
-## <a name="setting-padding-and-margins"></a>안쪽 여백 및 여백 설정  
- 안쪽 여백 및 여백을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃은 안쪽 여백 및 여백을 비슷합니다 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]합니다. 설정 하기만 하면 됩니다는 <xref:System.Windows.Controls.Control.Padding%2A> 하 고 <xref:System.Windows.FrameworkElement.Margin%2A> 속성에는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소.  
-  
-#### <a name="to-set-padding-and-margins-for-a-hosted-control"></a>호스트된 컨트롤에 대해 안쪽 여백 및 여백을 설정하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#14)]  
-    [!code-xaml[WpfLayoutHostingWfWithXaml#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#15)]  
-  
-2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 안쪽 여백 및 여백 설정이 적용 됩니다 호스팅된 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤에 적용할 수는 동일한 방식으로 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]입니다.  
-  
-## <a name="using-dynamic-layout-containers"></a>동적 레이아웃 컨테이너 사용  
- [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 두 개의 동적 레이아웃 컨테이너를 제공 <xref:System.Windows.Forms.FlowLayoutPanel> 고 <xref:System.Windows.Forms.TableLayoutPanel>입니다. 이러한 컨테이너를 사용할 수도 있습니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃 합니다.  
-  
-#### <a name="to-use-a-dynamic-layout-container"></a>동적 레이아웃 컨테이너를 사용하려면  
-  
-1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.  
-  
-     [!code-xaml[WpfLayoutHostingWfWithXaml#16](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#16)]  
-  
-2.  MainWindow.xaml.vb 또는 MainWindow.xaml.cs에서 다음 코드를 클래스 정의에 복사합니다.  
-  
+#### <a name="to-see-the-effect-of-rotation-in-a-hybrid-application"></a>혼합 응용 프로그램에서 회전의 결과를 확인하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#13)]
+
+2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 호스트된 컨트롤은 회전되지 않지만 주변 요소는 180도 각도로 회전됩니다. 요소를 표시하려면 창의 크기를 조정해야 할 수 있습니다.
+
+
+## <a name="setting-padding-and-margins"></a>안쪽 여백 및 여백 설정
+ 안쪽 여백 및 여백을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃은 안쪽 여백 및 여백을 비슷합니다 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]합니다. 설정 하기만 하면 됩니다는 <xref:System.Windows.Controls.Control.Padding%2A> 하 고 <xref:System.Windows.FrameworkElement.Margin%2A> 속성에는 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소.
+
+#### <a name="to-set-padding-and-margins-for-a-hosted-control"></a>호스트된 컨트롤에 대해 안쪽 여백 및 여백을 설정하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#14)]
+    [!code-xaml[WpfLayoutHostingWfWithXaml#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#15)]
+
+2.  F5 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 안쪽 여백 및 여백 설정이 적용 됩니다 호스팅된 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤에 적용할 수는 동일한 방식으로 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]입니다.
+
+## <a name="using-dynamic-layout-containers"></a>동적 레이아웃 컨테이너 사용
+ [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 두 개의 동적 레이아웃 컨테이너를 제공 <xref:System.Windows.Forms.FlowLayoutPanel> 고 <xref:System.Windows.Forms.TableLayoutPanel>입니다. 이러한 컨테이너를 사용할 수도 있습니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 레이아웃 합니다.
+
+#### <a name="to-use-a-dynamic-layout-container"></a>동적 레이아웃 컨테이너를 사용하려면
+
+1.  에 다음 XAML을 복사 합니다 <xref:System.Windows.Controls.Grid> 요소입니다.
+
+     [!code-xaml[WpfLayoutHostingWfWithXaml#16](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#16)]
+
+2.  MainWindow.xaml.vb 또는 MainWindow.xaml.cs에서 다음 코드를 클래스 정의에 복사합니다.
+
      [!code-csharp[WpfLayoutHostingWfWithXaml#103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#103)]
-     [!code-vb[WpfLayoutHostingWfWithXaml#103](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#103)]  
-  
-3.  호출을 추가 합니다 `InitializeFlowLayoutPanel` 생성자에서 메서드.  
-  
+     [!code-vb[WpfLayoutHostingWfWithXaml#103](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#103)]
+
+3.  호출을 추가 합니다 `InitializeFlowLayoutPanel` 생성자에서 메서드.
+
      [!code-csharp[WpfLayoutHostingWfWithXaml#104](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#104)]
      [!code-vb[WpfLayoutHostingWfWithXaml#104](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#104)]  
   

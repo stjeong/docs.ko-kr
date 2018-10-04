@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting WPF content in Windows Forms [WPF]
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
-ms.openlocfilehash: 09f634c870eb78c16192ed30ffbbfdc71fdd5142
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: b49d09ce81c0605ecd82b67ec4c0b24973ac293c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43856168"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48582816"
 ---
 # <a name="walkthrough-hosting-a-wpf-composite-control-in-windows-forms"></a>연습: Windows Forms에서 WPF 복합 컨트롤 호스팅
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 응용 프로그램을 만들기 위한 다양한 환경을 제공합니다. 그러나 상당한 투자 경우 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 코드 수 기존 확장 하는 것이 효과적인 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 응용 프로그램으로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 처음부터 다시 작성 하는 대신 합니다. 일반적인 시나리오는 하나를 포함 하거나 더 많은 컨트롤이 구현 하는 경우 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Windows Forms 응용 프로그램 내에서. WPF 컨트롤 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하십시오 [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)합니다.  
@@ -27,9 +27,8 @@ ms.locfileid: "43856168"
  이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [Windows Forms 샘플에서 WPF 복합 컨트롤 호스팅](https://go.microsoft.com/fwlink/?LinkID=159996)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
-  
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+
+Visual Studio의이 연습을 완료 해야 합니다.  
   
 ## <a name="implementing-the-wpf-composite-control"></a>WPF 복합 컨트롤 구현  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 이 예제에서 사용 하는 복합 컨트롤은 사용자의 이름 및 주소를 사용 하는 간단한 데이터 입력 폼입니다. 사용자가 작업이 완료되었음을 나타내는 두 개의 단추 중 하나를 클릭하면 컨트롤에서 사용자 지정 이벤트가 발생하여 해당 정보가 호스트에 반환됩니다. 다음 그림에서는 렌더링된 컨트롤을 보여 줍니다.  

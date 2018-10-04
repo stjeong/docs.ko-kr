@@ -9,35 +9,35 @@ helpviewer_keywords:
 - Windows Forms, anchoring and docking WPF content
 - interoperability [WPF]
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
-ms.openlocfilehash: 1466591a06e9e7ca61f94683e037566f8d0cb31a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 062b9b943d187ccd4105f3772688c563f540d696
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509777"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48266678"
 ---
 # <a name="walkthrough-arranging-wpf-content-on-windows-forms-at-design-time"></a>연습: 디자인 타임에 Windows Forms에서 WPF 콘텐츠 정렬
-이 연습에서는 기준 위치 지정 및 맞춤선과 같은 Windows Forms 레이아웃 기능을 사용하여 WPF(Windows Presentation Foundation) 컨트롤을 정렬하는 방법을 보여 줍니다.  
-  
- 이 연습에서는 다음 작업을 수행합니다.  
-  
--   프로젝트를 만듭니다.  
-  
--   WPF 컨트롤을 만듭니다.  
-  
--   레이아웃 패널에서 WPF 컨트롤을 호스트합니다.  
-  
--   맞춤선을 사용하여 WPF 컨트롤을 맞춥니다.  
-  
--   WPF 컨트롤을 고정 및 도킹합니다.  
-  
+이 연습에서는 기준 위치 지정 및 맞춤선과 같은 Windows Forms 레이아웃 기능을 사용하여 WPF(Windows Presentation Foundation) 컨트롤을 정렬하는 방법을 보여 줍니다.
+
+ 이 연습에서는 다음 작업을 수행합니다.
+
+-   프로젝트를 만듭니다.
+
+-   WPF 컨트롤을 만듭니다.
+
+-   레이아웃 패널에서 WPF 컨트롤을 호스트합니다.
+
+-   맞춤선을 사용하여 WPF 컨트롤을 맞춥니다.
+
+-   WPF 컨트롤을 고정 및 도킹합니다.
+
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## <a name="creating-the-project"></a>프로젝트 만들기  
  첫 번째 단계에서는 Windows Forms 프로젝트를 만듭니다.  

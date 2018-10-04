@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 86161897-c20f-4ad8-9d7f-050c247251bf
 author: BrucePerlerMS
 ms.openlocfilehash: 65b8aa6fa4422579ce0d1c5e33d3418ea051612a
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48027769"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48776885"
 ---
 # <a name="ltcertificatevalidatorgt"></a>&lt;certificateValidator&gt;
 인증서 유효성 검사에 대 한 사용자 지정 형식을 지정합니다. 이 이와 같은 경우에 사용 됩니다 합니다 `certificateValidationMode` 특성을 [ \<certificateValidation >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) 요소 "Custom"으로 설정 됩니다.  

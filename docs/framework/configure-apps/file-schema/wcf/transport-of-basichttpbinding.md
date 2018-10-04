@@ -2,12 +2,12 @@
 title: '&lt;basicHttpBinding&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 4c5ba293-3d7e-47a6-b84e-e9022857b7e5
-ms.openlocfilehash: f3f9ad2c8b587a87abea7dc22abb98fdfb6ea77e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: f4e37281539106fef93dc4ab566d94d781c39d29
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864604"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48777723"
 ---
 # <a name="lttransportgt-of-ltbasichttpbindinggt"></a>&lt;basicHttpBinding&gt;의 &lt;transport&gt;
 HTTP 전송의 인증 매개 변수를 제어하는 속성을 정의합니다.  
@@ -125,5 +125,5 @@ HTTP 전송의 인증 매개 변수를 제어하는 속성을 정의합니다.
  [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

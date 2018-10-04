@@ -2,19 +2,19 @@
 title: '방법: 프로그래밍 방식으로 WCF 서비스 및 클라이언트에 검색 기능 추가'
 ms.date: 03/30/2017
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
-ms.openlocfilehash: e32128a20a765762249e6892232447c56036c2d8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 407777b1545fb12eb3ed1787fdba86991c894fdb
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524142"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48779896"
 ---
 # <a name="how-to-programmatically-add-discoverability-to-a-wcf-service-and-client"></a>방법: 프로그래밍 방식으로 WCF 서비스 및 클라이언트에 검색 기능 추가
 이 항목에서는 Windows Communication Foundation (WCF) 서비스를 검색할 수 있도록 설정 하는 방법에 설명 합니다. 기반이 되는 [Self-host](https://go.microsoft.com/fwlink/?LinkId=145523) 샘플입니다.  
   
 ### <a name="to-configure-the-existing-self-host-service-sample-for-discovery"></a>기존 자체 호스팅 서비스 샘플을 검색용으로 구성하려면  
   
-1.  [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]에서 자체 호스트 솔루션을 엽니다. 샘플은 TechnologySamples\Basic\Service\Hosting\SelfHost 디렉터리에 있습니다.  
+1.  Visual Studio 2012에서 자체 호스트 솔루션을 엽니다. 샘플은 TechnologySamples\Basic\Service\Hosting\SelfHost 디렉터리에 있습니다.  
   
 2.  서비스 프로젝트에 `System.ServiceModel.Discovery.dll`에 대한 참조를 추가합니다. "System 라는 오류 메시지가 표시 될 수 있습니다. 나타나면 또는 해당 종속성 중 하나 이상 버전이 필요 합니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ... 프로젝트에서 지정한 것 보다 " 이 메시지를 표시 하는 경우 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다. 에 **프로젝트 속성** 창 있는지 확인 합니다 **대상 프레임 워크** 는 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
   

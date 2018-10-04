@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c06b63c492d31d1391b53a36ced5b5c7277f5ad6
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: ed2a81c4ec4f679b99f5f5a4d2a2c21270691e93
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48028189"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48778408"
 ---
 # <a name="ltappcontextswitchoverridesgt-element"></a>&lt;AppContextSwitchOverrides&gt; 요소
 <xref:System.AppContext> 클래스에 사용되는 스위치를 하나 이상 정의하여 새 기능의 옵트아웃 메커니즘을 제공합니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "48028189"
 |`Switch.System.Security.Cryptography.`<br/>`DoNotAddrOfCspParentWindowHandle`|컨트롤 여부를 값을 [cspparameters.parentwindowhandle에](xref:System.Security.Cryptography.CspParameters.ParentWindowHandle) 속성은는 [IntPtr](xref:System.IntPtr) 나타내는 창에 메모리 위치 처리 또는 창 핸들 (HWND) 인지는. 자세한 내용은 [완화: CspParameters.ParentWindowHandle에 HWND 필요](Mitigation:%20CspParameters.ParentWindowHandle%20Expects%20an%20HWND.md)를 참조하세요. |.NET Framework 4.7|   
 |`Switch.System.Security.Cryptography.Pkcs.`<br/>`UseInsecureHashAlgorithms`|일부 SignedCMS 작업에 대 한 기본값은 SHA1 또는 SHA256 여부를 결정 합니다. |.NET Framework 4.7.1|
 |`Switch.System.Security.Cryptography.Xml.`<br/>`UseInsecureHashAlgorithms`|일부 SignedXML 작업에 대 한 기본값은 SHA1 또는 SHA256 여부를 결정 합니다. |.NET Framework 4.7.1|
-|`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|결정 하는지 여부를 `TransportWithMessageCredential` 보안 모드에서는 메시지를 부호 없는 "to" 헤더가 합니다. 이 옵트인 스위치입니다. 자세한 내용은 [.NET Framework 4.6.1의에서 런타임 변경 내용](https://msdn.microsoft.com/library/mt592686.aspx#WCF)합니다.|.NET Framework 4.6.1| 
+|`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|결정 하는지 여부를 `TransportWithMessageCredential` 보안 모드에서는 메시지를 부호 없는 "to" 헤더가 합니다. 이 옵트인 스위치입니다. 자세한 내용은 [.NET Framework 4.6.1의에서 런타임 변경 내용](~/docs/framework/migration-guide/runtime/4.5.2-4.6.1.md#windows-communication-foundation-wcf)합니다.|.NET Framework 4.6.1| 
 |`Switch.System.ServiceModel.`<br/>`DisableAddressHeaderCollectionValidation`>|컨트롤 여부를 합니다 <xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})> 생성자에서 throw를 <xref:System.ArgumentException> 요소 중 하나 이면 `null`합니다.|.NET Framework 4.7.1| 
 |`Switch.System.ServiceModel.`<br />`DisableCngCertificates`|CSG 키 저장소 공급자를 예외를 throw X509를 사용 하려고 인증서를 사용 하 여 여부를 결정 합니다. 자세한 내용은 [WCF 전송 보안에서 CNG를 사용 하 여 저장 한 인증서 지원](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#wcf-transport-security-supports-certificates-stored-using-cng)합니다.|.NET Framework 4.6.1|
 |`Switch.System.ServiceModel.`<br/>`DisableExplicitConnectionCloseHeader`|자체 호스팅된 서비스에서 HTTP 전송을 사용 하는 경우이 값을 설정 `true` 를 추가 하는 응용 프로그램을 무시 하려면 wcf는 `Connection: close` 헤더는 요청에 대 한 응답 헤더를 합니다. 이 값을 설정 `false` 을 추가할 수는 `Connection: close` 헤더 응답 헤더를 응답을 보낸 후 요청 소켓 닫기의 결과입니다.|.NET Framework 4.6|

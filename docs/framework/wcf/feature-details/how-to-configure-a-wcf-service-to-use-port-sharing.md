@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6400bc71-a858-4ac2-8d5a-caa72d3b5482
-ms.openlocfilehash: 2715e319772e4e0ae4cb38f3dbd1dd5133a2eef3
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: d66da04715f96dd37b8f36599d81924ec2f8d5cc
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864591"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48778694"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-service-to-use-port-sharing"></a>방법: 포트 공유를 사용하도록 Windows Communication Foundation 서비스 구성
 Windows Communication Foundation (WCF) 응용 프로그램에서 공유 net.tcp:// 포트를 사용 하는 가장 쉬운 방법은 사용 하 여 서비스를 노출 하는 것은 <xref:System.ServiceModel.NetTcpBinding>합니다.  
@@ -61,5 +61,5 @@ Windows Communication Foundation (WCF) 응용 프로그램에서 공유 net.tcp:
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Net.TCP 포트 공유](https://msdn.microsoft.com/library/f13692ee-a179-4439-ae72-50db9534eded)  
+ [Net.TCP 포트 공유](../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)  
  [방법: Net.TCP Port Sharing Service 사용](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)

@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
 author: BrucePerlerMS
 ms.openlocfilehash: 51db352913999d5527ead5273e6488cd09d88670
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48032701"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48582478"
 ---
 # <a name="security-concerns-and-useful-tips-for-tracing"></a>보안 고려 사항 및 추적에 대한 유용한 정보
 이 항목에서는 WebHost를 사용할 때의 유용한 팁뿐만 아니라 중요한 정보가 노출되지 않도록 보호할 수 있는 방법에 대해 설명합니다.  

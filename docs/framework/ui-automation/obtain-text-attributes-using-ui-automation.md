@@ -12,11 +12,11 @@ ms.assetid: fdefc6c3-b836-4cfe-8dec-1484bfdc5551
 author: Xansky
 ms.author: mhopkins
 ms.openlocfilehash: ced02347a27c85babb614cb4f0fea3248753f1b8
-ms.sourcegitcommit: daa8788af67ac2d1cecd24f9f3409babb2f978c9
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47862843"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48779740"
 ---
 # <a name="obtain-text-attributes-using-ui-automation"></a>UI 자동화를 사용하여 텍스트 특성 가져오기
 > [!NOTE]

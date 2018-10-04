@@ -2,15 +2,16 @@
 title: LINQ to DataSet 쿼리 디버깅
 ms.date: 03/30/2017
 ms.assetid: f4c54015-8ce2-4c5c-8d18-7038144cc66d
-ms.openlocfilehash: fd10e6c715529ba937ba09732a254d311158b0f1
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: c1014db4cad54420b917585becd2a2031638c1d9
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086006"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48266262"
 ---
 # <a name="debugging-linq-to-dataset-queries"></a>LINQ to DataSet 쿼리 디버깅
-[!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]은 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드 디버깅을 지원합니다. 그러나 몇 가지 디버깅 차이점 가지 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드 및 비-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드를 관리 합니다. 대부분의 디버깅 기능을 사용할 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 문 단계별 실행, 중단점 설정 및 디버거 창에 표시 된 결과 보기를 포함 합니다. 지연된 쿼리 실행에는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드를 디버깅할 때 고려해야 하는 몇 가지 의도하지 않은 결과가 발생할 수 있으며 편집하며 계속하기 사용과 관련된 몇 가지 제한이 있습니다. 이 항목에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]이 아닌 관리 코드와 비교하여 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에 고유한 디버깅 특성에 대해 설명합니다.  
+
+Visual Studio의 디버깅을 지원 하며 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드입니다. 그러나 몇 가지 디버깅 차이점 가지 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드 및 비-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드를 관리 합니다. 대부분의 디버깅 기능을 사용할 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 문 단계별 실행, 중단점 설정 및 디버거 창에 표시 된 결과 보기를 포함 합니다. 지연된 쿼리 실행에는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 코드를 디버깅할 때 고려해야 하는 몇 가지 의도하지 않은 결과가 발생할 수 있으며 편집하며 계속하기 사용과 관련된 몇 가지 제한이 있습니다. 이 항목에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]이 아닌 관리 코드와 비교하여 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에 고유한 디버깅 특성에 대해 설명합니다.  
   
 ## <a name="viewing-results"></a>결과 보기  
  DataTips, 조사식 창 및 간략한 조사식 대화 상자를 사용하여 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 문의 결과를 볼 수 있습니다. 소스 창을 사용할 때 소스 창의 쿼리 위에 포인터를 올려 놓으면 DataTips가 나타납니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 변수를 복사하여 조사식 창이나 간략한 조사식 대화 상자에 붙여 넣을 수 있습니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에서 쿼리는 작성되거나 선언될 때 계산되는 것이 아니라 쿼리가 실행될 때에만 계산됩니다. 이 이라고 *지연 된 실행*합니다. 따라서 쿼리가 계산되기 전까지는 쿼리 변수에 값이 없습니다. 자세한 내용은 [LINQ to DataSet에서에서 쿼리](../../../../docs/framework/data/adonet/queries-in-linq-to-dataset.md)합니다.  

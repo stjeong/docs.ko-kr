@@ -3,11 +3,11 @@ title: .NET Framework 4에서 Interop 활동과 함께 .NET Framework 3.0 WF 활
 ms.date: 03/30/2017
 ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c
 ms.openlocfilehash: 386f71f21a4164f6f0ffc0ed19aab68abbe5a0b5
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
-ms.translationtype: MT
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48029265"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48263338"
 ---
 # <a name="using-net-framework-30-wf-activities-in-net-framework-4-with-the-interop-activity"></a>.NET Framework 4에서 Interop 활동과 함께 .NET Framework 3.0 WF 활동 사용
 <xref:System.Activities.Statements.Interop> 활동은 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 워크플로에서 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)](WF 3.5) 활동을 래핑하는 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)](WF 4.5) 활동입니다. WF 3 활동은 단일 리프 활동이거나 전체 활동 트리입니다. [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 활동의 실행(취소 및 예외 처리 포함)과 지속성은 실행 중인 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 워크플로 인스턴스의 컨텍스트 내에서 발생합니다.  

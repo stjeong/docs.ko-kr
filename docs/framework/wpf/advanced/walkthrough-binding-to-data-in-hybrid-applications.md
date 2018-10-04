@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hybrid applications [WPF interoperability]
 - data binding [WPF interoperability]
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
-ms.openlocfilehash: 773708eab617e7f4cfdffad2e5019e66c60ebf37
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 7128b23790588a604989cb18918a7a7e8b598191
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43787066"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584219"
 ---
 # <a name="walkthrough-binding-to-data-in-hybrid-applications"></a>연습: 혼합 응용 프로그램에서 데이터 바인딩
 사용 하 여 기본 데이터에 대 한 액세스를 사용 하 여 사용자에 게 제공 하는 데 필수적입니다 데이터 소스 컨트롤에 바인딩 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 또는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다. 이 연습에서는 모두 포함 하는 하이브리드 응용 프로그램에서 데이터 바인딩을 사용 하는 방법을 보여 줍니다 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 고 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 컨트롤입니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "43787066"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+-   Visual Studio.  
   
 -   Microsoft SQL Server에서 실행 되는 Northwind 샘플 데이터베이스에 액세스 합니다.  
   
@@ -140,34 +140,34 @@ ms.locfileid: "43787066"
      이 코드는 선언 된 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 데이터베이스에 연결 하는 연관 된 도우미 클래스입니다.  
   
      [!code-csharp[WPFWithWFAndDatabinding#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#11)]
-     [!code-vb[WPFWithWFAndDatabinding#11](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]  
-  
-3.  다음 코드를 생성자에 복사합니다.  
-  
-     이 코드를 만들고 초기화 된 <xref:System.Windows.Forms.BindingSource> 구성 요소입니다.  
-  
+     [!code-vb[WPFWithWFAndDatabinding#11](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]
+
+3.  다음 코드를 생성자에 복사합니다.
+
+     이 코드를 만들고 초기화 된 <xref:System.Windows.Forms.BindingSource> 구성 요소입니다.
+
      [!code-csharp[WPFWithWFAndDatabinding#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#12)]
-     [!code-vb[WPFWithWFAndDatabinding#12](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]  
-  
-4.  MainWindow.xaml을 엽니다.  
-  
-5.  디자인 뷰 또는 XAML 뷰에서 선택 된 <xref:System.Windows.Window> 요소입니다.  
-  
-6.  속성 창에서 클릭 합니다 **이벤트** 탭 합니다.  
-  
-7.  두 번 클릭 하 여 <xref:System.Windows.FrameworkElement.Loaded> 이벤트입니다.  
-  
-8.  다음 코드를 복사 합니다 <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기입니다.  
-  
-     이 코드에서는 할당 합니다 <xref:System.Windows.Forms.BindingSource> 데이터 컨텍스트로 서 구성 요소 채웁니다 합니다 `Customers` 및 `Orders` 어댑터 개체입니다.  
-  
+     [!code-vb[WPFWithWFAndDatabinding#12](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]
+
+4.  MainWindow.xaml을 엽니다.
+
+5.  디자인 뷰 또는 XAML 뷰에서 선택 된 <xref:System.Windows.Window> 요소입니다.
+
+6.  속성 창에서 클릭 합니다 **이벤트** 탭 합니다.
+
+7.  두 번 클릭 하 여 <xref:System.Windows.FrameworkElement.Loaded> 이벤트입니다.
+
+8.  다음 코드를 복사 합니다 <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기입니다.
+
+     이 코드에서는 할당 합니다 <xref:System.Windows.Forms.BindingSource> 데이터 컨텍스트로 서 구성 요소 채웁니다 합니다 `Customers` 및 `Orders` 어댑터 개체입니다.
+
      [!code-csharp[WPFWithWFAndDatabinding#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#13)]
-     [!code-vb[WPFWithWFAndDatabinding#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#13)]  
-  
-9. 다음 코드를 복사 합니다 `MainWindow` 클래스 정의 합니다.  
-  
-     이 메서드를 처리 합니다 <xref:System.Windows.Data.CollectionView.CurrentChanged> 이벤트 및 데이터 바인딩의 현재 항목을 업데이트 합니다.  
-  
+     [!code-vb[WPFWithWFAndDatabinding#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#13)]
+
+9. 다음 코드를 복사 합니다 `MainWindow` 클래스 정의 합니다.
+
+     이 메서드를 처리 합니다 <xref:System.Windows.Data.CollectionView.CurrentChanged> 이벤트 및 데이터 바인딩의 현재 항목을 업데이트 합니다.
+
      [!code-csharp[WPFWithWFAndDatabinding#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#14)]
      [!code-vb[WPFWithWFAndDatabinding#14](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#14)]  
   

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - composite controls [Windows Forms], Windows Forms
 - controls [Windows Forms], composite
 ms.assetid: d086f2a3-baa3-4e09-b40c-a5bb3cfc51a6
-ms.openlocfilehash: 24fbf17f02072b2d9922ca0998805b916afc41b6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3bd8a91942cf41be62ff1e66bd97064e2db26692
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510162"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580812"
 ---
 # <a name="developing-a-composite-windows-forms-control"></a>Windows Forms 복합 컨트롤 개발
 다른 Windows Forms 컨트롤을 결합하여 복합 Windows Forms 컨트롤을 개발할 수 있습니다. 파생 된 복합 컨트롤 <xref:System.Web.UI.UserControl> 사용자 컨트롤 이라고 합니다. 기본 클래스 <xref:System.Windows.Forms.UserControl>은 자식 컨트롤에 대한 키보드 라우팅을 제공하므로 자식 컨트롤이 포커스를 받을 수 있습니다. 사용자 정의 컨트롤의 예제를 참조 하세요. 합니다 <xref:System.Windows.Forms.UserControl> 샘플 [방법: Windows Forms 컨트롤에서 특성 적용](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md)합니다.  
   
- [!INCLUDE[vsprvsext](../../../../includes/vsprvsext-md.md)]의 Windows Forms 디자이너에서는 사용자 컨트롤 작성에 대한 다양한 디자인 타임 지원을 제공합니다.  
+ Visual Studio에서 Windows Forms 디자이너는 사용자 컨트롤 작성에 대 한 다양 한 디자인 타임 지원을 제공 합니다.  
   
 -   [방법: 도구 상자 항목 선택 대화 상자에 컨트롤 표시](https://msdn.microsoft.com/library/9yxtkx75\(v=vs.110\))  
   

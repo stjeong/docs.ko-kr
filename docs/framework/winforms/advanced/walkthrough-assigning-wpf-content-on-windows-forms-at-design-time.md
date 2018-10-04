@@ -8,31 +8,31 @@ helpviewer_keywords:
 - Windows Forms, content assignments
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-ms.openlocfilehash: 6db75e9d8ec5aeb1a0c7310d39391f8f264649d3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 554153335c08c9c8911a5d4fda3696db1e0abf2a
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45689277"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48264228"
 ---
 # <a name="walkthrough-assigning-wpf-content-on-windows-forms-at-design-time"></a>연습: 디자인 타임에 Windows Forms에서 WPF 콘텐츠 할당
-이 연습에서는 폼에 표시할 WPF(Windows Presentation Foundation) 컨트롤 형식을 선택하는 방법을 보여 줍니다. 프로젝트에 포함된 모든 WPF 컨트롤 형식을 선택할 수 있습니다.  
-  
- 이 연습에서는 다음 작업을 수행합니다.  
-  
--   프로젝트를 만듭니다.  
-  
--   WPF 컨트롤 형식을 만듭니다.  
-  
--   WPF 컨트롤을 선택합니다.  
-  
+이 연습에서는 폼에 표시할 WPF(Windows Presentation Foundation) 컨트롤 형식을 선택하는 방법을 보여 줍니다. 프로젝트에 포함된 모든 WPF 컨트롤 형식을 선택할 수 있습니다.
+
+ 이 연습에서는 다음 작업을 수행합니다.
+
+-   프로젝트를 만듭니다.
+
+-   WPF 컨트롤 형식을 만듭니다.
+
+-   WPF 컨트롤을 선택합니다.
+
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## <a name="creating-the-project"></a>프로젝트 만들기  
  첫 번째 단계에서는 Windows Forms 프로젝트를 만듭니다.  

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Inheritance Picker dialog box
 - inherited forms [Windows Forms], creating
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
-ms.openlocfilehash: 5bcd29531858f9cf014042db7ee447cecfdd89b1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7a6de60ec7621792b4f19857a2743f64cbdc686c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525746"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48777411"
 ---
 # <a name="how-to-inherit-forms-using-the-inheritance-picker-dialog-box"></a>방법: 상속 선택 대화 상자를 사용하여 폼 상속
 양식이나 다른 개체를 상속하는 가장 쉬운 방법은 **상속 선택** 대화 상자를 사용하는 것입니다. 이 대화 상자에서는 다른 솔루션에서 이미 만든 코드 또는 UI(사용자 인터페이스)를 활용할 수 있습니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "43525746"
   
      **새 항목 추가** 대화 상자가 열립니다.  
   
-2.  **상속된 양식** 템플릿을 선택하고 **이름** 상자에서 이름을 지정합니다. **추가** 단추를 클릭하여 계속합니다.  
+2.  검색을 **상속 된 폼** searchbox 또는 클릭 하 여 템플릿을 **Windows Forms** 범주를 선택 하 고 이름에 **이름** 상자입니다. **추가** 단추를 클릭하여 계속합니다.  
   
      **상속 선택** 대화 상자가 열립니다. 현재 프로젝트에 이미 양식이 포함되어 있는 경우 **상속 선택** 대화 상자에 표시됩니다.  
   

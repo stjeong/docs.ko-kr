@@ -9,11 +9,11 @@ ms.assetid: 14b05ccf-bcd8-4045-9bae-f7679cd98711
 author: Xansky
 ms.author: mhopkins
 ms.openlocfilehash: 5b4bd79d9895a2868f9caf6ac4a2e67faef5f9c0
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030014"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48266860"
 ---
 # <a name="ui-automation-support-for-the-splitbutton-control-type"></a>SplitButton 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]

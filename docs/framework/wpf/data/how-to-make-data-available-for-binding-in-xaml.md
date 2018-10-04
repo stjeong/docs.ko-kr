@@ -9,11 +9,11 @@ helpviewer_keywords:
 - binding data [WPF], making data available for
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
 ms.openlocfilehash: 09a6fca48c06efca6f06b9e0617de9095197bd17
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48032389"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48261474"
 ---
 # <a name="how-to-make-data-available-for-binding-in-xaml"></a>방법: XAML의 바인딩에 사용할 수 있는 데이터 만들기
 이 항목에서는 다양 한 방법으로 사용할 수 있습니다 데이터에 대 한 바인딩 설명 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]응용 프로그램의 필요에 따라 합니다.  

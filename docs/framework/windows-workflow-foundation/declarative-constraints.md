@@ -2,12 +2,12 @@
 title: 선언적 제약 조건
 ms.date: 03/30/2017
 ms.assetid: 67001ed1-7f4d-4ada-ae57-a31176901a53
-ms.openlocfilehash: bf794d5b14d2d278dc4068309f25e6f0ddcf3342
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5599513405c77aa213b329b085075660baed5c47
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33517662"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580493"
 ---
 # <a name="declarative-constraints"></a>선언적 제약 조건
 선언적 제약 조건은 활동 및 활동과 다른 활동의 관계에 대한 강력한 유효성 검사 메서드를 제공합니다. 제약 조건이 제작 프로세스 중에 활동에 대해 구성되지만, 워크플로 호스트에서 추가 제약 조건을 지정할 수도 있습니다. 이 항목에서는 선언적 제약 조건을 사용하여 작업 유효성 검사를 제공하는 방법에 대해 간략하게 설명합니다.  
@@ -57,12 +57,13 @@ public sealed class SampleActivity : CodeActivity
   
  호스트에서 <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A>를 사용하여 워크플로의 활동에 대해 이 제약 조건을 지정할 수도 있습니다. 이에 대해서는 다음 단원에서 설명합니다.  
   
- <xref:System.Activities.Validation.AddValidationError> 활동은 식을 평가하지 않고 유효성 검사 오류 또는 경고를 생성하는 데 사용됩니다. 이 활동의 속성은 <xref:System.Activities.Validation.AssertValidation>과 비슷하며 이 활동은 <xref:System.Activities.Statements.If> 활동과 같은 제약 조건 흐름 제어 활동과 함께 사용할 수 있습니다.  
+ <xref:System.Activities.Validation.AddValidationError> 활동은 식을 평가하지 않고 유효성 검사 오류 또는 경고를 생성하는 데 사용됩니다. 이 활동의 속성은 <xref:System.Activities.Validation.AssertValidation>과 비슷하며 이 활동은 <xref:System.Activities.Statements.If> 활동과 같은 제약 조건 흐름 제어 활동과 함께 사용할 수 있습니다.
   
-### <a name="workflow-relationship-activities"></a>워크플로 관계 활동  
- 유효성 검사 중인 활동을 기준으로 워크플로의 다른 활동에 대한 정보를 제공하는 여러 유효성 검사 활동을 사용할 수 있습니다. <xref:System.Activities.Validation.GetParentChain>은 현재 활동과 루트 활동 사이의 모든 활동을 포함하는 활동 컬렉션을 반환합니다. <xref:System.Activities.Validation.GetChildSubtree>는 재귀 패턴의 자식 활동을 포함하는 활동 컬렉션을 제공하고 <xref:System.Activities.Validation.GetWorkflowTree>는 워크플로의 모든 활동을 가져옵니다.  
+### <a name="workflow-relationship-activities"></a>워크플로 관계 활동
+
+유효성 검사 중인 활동을 기준으로 워크플로의 다른 활동에 대한 정보를 제공하는 여러 유효성 검사 활동을 사용할 수 있습니다. <xref:System.Activities.Validation.GetParentChain>은 현재 활동과 루트 활동 사이의 모든 활동을 포함하는 활동 컬렉션을 반환합니다. <xref:System.Activities.Validation.GetChildSubtree>는 재귀 패턴의 자식 활동을 포함하는 활동 컬렉션을 제공하고 <xref:System.Activities.Validation.GetWorkflowTree>는 워크플로의 모든 활동을 가져옵니다.  
   
- 다음 예제에서는 [활동 관계 유효성 검사](../../../docs/framework/windows-workflow-foundation/samples/activity-relationships-validation.md) 샘플에서는 한 `CreateState` 활동을 정의 합니다. `CreateState` 활동이 `CreateCountry` 활동에 포함되어야 하고, `GetParent` 메서드는 이 요구 사항을 적용하는 제약 조건을 반환합니다. `GetParent`는 <xref:System.Activities.Validation.GetParentChain> 활동을 <xref:System.Activities.Statements.ForEach%601> 활동과 함께 사용하여 `CreateState` 활동의 부모 활동을 조사하여 요구 사항이 충족되는지 확인합니다.  
+다음 예제에서는 `CreateState` 활동을 정의합니다. `CreateState` 활동이 `CreateCountry` 활동에 포함되어야 하고, `GetParent` 메서드는 이 요구 사항을 적용하는 제약 조건을 반환합니다. `GetParent`는 <xref:System.Activities.Validation.GetParentChain> 활동을 <xref:System.Activities.Statements.ForEach%601> 활동과 함께 사용하여 `CreateState` 활동의 부모 활동을 조사하여 요구 사항이 충족되는지 확인합니다.  
   
 ```csharp  
 public sealed class CreateState : CodeActivity  
@@ -134,9 +135,7 @@ public sealed class CreateState : CodeActivity
         // not needed for the sample  
     }  
 }  
-```  
-  
- 자세한 내용은 참조는 Windows Workflow Foundation [유효성 검사](../../../docs/framework/windows-workflow-foundation/samples/validation.md) 샘플입니다.  
+```
   
 ## <a name="additional-constraints"></a>추가 제약 조건  
  워크플로 호스트 작성자는 제약 조건을 만든 후 <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A> 인스턴스의 <xref:System.Activities.Validation.ValidationSettings> 사전에 추가하여 워크플로의 활동에 대한 추가 유효성 검사 제약 조건을 지정할 수 있습니다. <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A>의 각 항목에는 제약 조건이 적용되는 활동 유형과 해당 활동 유형에 대한 추가 제약 조건 목록이 포함됩니다. 워크플로에 대한 유효성 검사를 호출하면 파생 클래스를 포함하여 지정된 유형의 각 활동에서 제약 조건을 평가합니다. 이 예제에서는 이전 섹션의 `ActivityDisplayNameIsNotSetWarning` 제약 조건이 워크플로의 모든 작업에 적용됩니다.  
@@ -177,4 +176,4 @@ else
 }  
 ```  
   
- <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints%2A>의 <xref:System.Activities.Validation.ValidationSettings> 속성이 `true`인 경우 <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>를 호출하여 유효성 검사를 호출하면 지정된 추가 제약 조건만 평가됩니다. 이 기능은 특정 유효성 검사 구성에 대한 워크플로를 검사할 때 유용합니다. 워크플로를 호출하면 워크플로에 구성된 유효성 검사 논리를 평가하여 통과해야 워크플로가 시작됩니다. 유효성 검사를 호출 하는 방법에 대 한 자세한 내용은 참조 [활동 유효성 검사 호출](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md)합니다.
+ <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints%2A>의 <xref:System.Activities.Validation.ValidationSettings> 속성이 `true`인 경우 <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>를 호출하여 유효성 검사를 호출하면 지정된 추가 제약 조건만 평가됩니다. 이 기능은 특정 유효성 검사 구성에 대한 워크플로를 검사할 때 유용합니다. 워크플로를 호출하면 워크플로에 구성된 유효성 검사 논리를 평가하여 통과해야 워크플로가 시작됩니다. 유효성 검사를 호출 하는 방법에 대 한 자세한 내용은 참조 하십시오 [활동 유효성 검사 호출](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md)합니다.

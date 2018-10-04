@@ -2,12 +2,12 @@
 title: 마이그레이션 고려 사항(Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
-ms.openlocfilehash: d6643986190b376e188b19851b044bcf05ff7f02
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: cf705caa84742d654465a2dba005f2d8f32abcca
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511024"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48778025"
 ---
 # <a name="migration-considerations-entity-framework"></a>마이그레이션 고려 사항(Entity Framework)
 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framework를 사용하면 기존 응용 프로그램보다 몇 가지 이점이 있습니다. 가장 중요한 이점 중 하나는 개념적 모델을 사용하여 응용 프로그램에서 사용되는 데이터 구조를 데이터 소스의 스키마와 구분할 수 있다는 것입니다. 이렇게 하면 응용 프로그램을 적절하게 변경하지 않아도 나중에 저장소 모델이나 데이터 소스 자체를 쉽게 변경할 수 있습니다. 사용 하는 이점에 대 한 자세한 내용은 합니다 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]를 참조 하세요 [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md) 및 [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)합니다.  
@@ -29,11 +29,11 @@ ms.locfileid: "43511024"
  기존 응용 프로그램을 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]로 마이그레이션하는 경로는 응용 프로그램 종류와 기존 데이터 액세스 전략에 따라 달라집니다. 그러나 기존 응용 프로그램을 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]로 마이그레이션하는 경우 항상 다음 작업을 수행해야 합니다.  
   
 > [!NOTE]
->  [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)] 이상과 함께 엔터티 데이터 모델 도구를 사용하면 이러한 모든 작업이 자동으로 수행됩니다. 자세한 내용은 [방법: 엔터티 데이터 모델 마법사를 사용 하 여](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d)입니다.  
+>  이러한 모든 작업이 수행 됩니다 자동으로 Visual Studio 2008 부터는 엔터티 데이터 모델 도구를 사용 하는 경우. 자세한 내용은 [방법: 엔터티 데이터 모델 마법사를 사용 하 여](https://msdn.microsoft.com/library/dadb058a-c5d9-4c5c-8b01-28044112231d)입니다.  
   
 1.  응용 프로그램을 업그레이드합니다.  
   
-     이전 버전의 Visual Studio를 사용 하 여 만든 프로젝트와 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 사용 하도록 업그레이드 해야 합니다 [!INCLUDE[vsOrcas](../../../../../includes/vsorcas-md.md)] SP1 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 버전 3.5 SP1 사용 하 여 시작 합니다.  
+     이전 버전의 Visual Studio를 사용 하 여 만든 프로젝트 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] Visual Studio 2008 SP1을 사용 하도록 업그레이드 해야 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 버전 3.5 SP1 사용 하 여 시작 합니다.  
   
 2.  모델 및 매핑을 정의합니다.  
   

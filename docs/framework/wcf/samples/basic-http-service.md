@@ -2,12 +2,12 @@
 title: 기본 HTTP 서비스
 ms.date: 03/30/2017
 ms.assetid: 27048b43-8a54-4f2a-9952-594bbfab10ad
-ms.openlocfilehash: f97fcab1200b9c13860ab8030378b5402b087d7a
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 2e4aee93341404df5f06b096a9a7bf18a3c94f56
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48028265"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48262393"
 ---
 # <a name="basic-http-service"></a>기본 HTTP 서비스
 이 샘플에는 일반적으로 "POX" (Plain Old XML) 서비스-Windows Communication Foundation (WCF) REST 프로그래밍 모델을 사용 하 여 라고 하는 HTTP 기반, RPC 기반 서비스를 구현 하는 방법을 보여 줍니다. 이 샘플은 두 가지 구성 요소로 구성 됩니다.: 자체 호스팅된 WCF HTTP 서비스 (Service.cs)와 서비스를 만들고 호출 하는 콘솔 응용 프로그램 (Program.cs).  
@@ -27,7 +27,7 @@ ms.locfileid: "48028265"
   
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
-1.  Basic Http Service 샘플의 솔루션을 엽니다. 관리자 권한으로 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]을 시작해야 샘플이 제대로 실행됩니다. 마우스 오른쪽 단추로 클릭 하 여이 작업을 수행 합니다 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] 아이콘을 선택 하 고 **관리자 권한으로 실행** 상황에 맞는 메뉴에서.  
+1.  Basic Http Service 샘플의 솔루션을 엽니다. Visual Studio 2012를 실행 하는 경우 성공적으로 실행 된 샘플에 대 한 관리자 권한으로 실행 해야 합니다. Visual Studio 2012 아이콘을 마우스 오른쪽 단추로 클릭 하 고 선택 하 여이 작업을 수행할 **관리자 권한으로 실행** 상황에 맞는 메뉴입니다.  
   
 2.  Ctrl+Shift+B를 눌러 솔루션을 빌드한 다음 Ctrl+F5를 눌러 디버깅하지 않고 콘솔 응용 프로그램을 실행합니다. 콘솔 창이 나타나고 실행 중인 서비스의 URI와 실행 중인 서비스에 대한 HTML 도움말 페이지의 URI가 제공됩니다. 언제든지 브라우저에서 HTML 도움말 페이지의 URI를 입력하면 해당 도움말 페이지를 볼 수 있습니다. 샘플이 실행되면 클라이언트에서는 현재 활동의 상태를 씁니다.  
   

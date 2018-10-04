@@ -3,12 +3,12 @@ title: '&lt;netTcpBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 author: BrucePerlerMS
-ms.openlocfilehash: 045fb60f6ae0fb54dce7fd9bc8c634caee5fddcd
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 8db4fd0a123ac798cae803240b0db98a7057fa97
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48245131"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48777385"
 ---
 # <a name="ltsecuritygt-of-ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;의 &lt;security&gt;
 바인딩에 대한 보안 설정을 정의합니다.  
@@ -78,5 +78,5 @@ ms.locfileid: "48245131"
  [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

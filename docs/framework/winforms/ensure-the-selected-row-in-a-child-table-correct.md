@@ -17,11 +17,11 @@ helpviewer_keywords:
 - current child position
 ms.assetid: c5fa2562-43a4-46fa-a604-52d8526a87bd
 ms.openlocfilehash: e1fdb007451c157e60a1ad723b5d2d06bc85ecdf
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48037082"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580782"
 ---
 # <a name="how-to-ensure-the-selected-row-in-a-child-table-remains-at-the-correct-position"></a>방법: 자식 테이블에서 선택된 행이 올바른 위치에 유지되도록 설정
 Windows Forms에서 데이터 바인딩을 사용할 때 부모/자식 또는 마스터/세부 정보 뷰에 데이터를 표시하는 경우가 많습니다. 이는 동일한 소스의 데이터가 두 컨트롤에 표시되는 데이터 바인딩 시나리오를 가리킵니다. 한 컨트롤에서 선택 항목을 변경하면 두 번째 컨트롤에 표시되는 데이터가 변경됩니다. 예를 들어 첫 번째 컨트롤에는 고객 목록이 포함되고 두 번째 컨트롤에는 첫 번째 컨트롤에서 선택한 고객과 관련된 주문 목록이 포함될 수 있습니다.  

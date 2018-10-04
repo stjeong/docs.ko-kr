@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 3ee8ee7f-caba-4267-9343-e313fae2876d
 author: BrucePerlerMS
 ms.openlocfilehash: 76b02a0e6869b0d4de181b59296a0858aa80948c
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48245142"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48778158"
 ---
 # <a name="building-my-first-claims-aware-aspnet-web-application"></a>내 첫 번째 클레임 인식 ASP.NET 웹 응용 프로그램 구축
 ## <a name="applies-to"></a>적용 대상  

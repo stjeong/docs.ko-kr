@@ -2,12 +2,12 @@
 title: 활동 대리자 사용
 ms.date: 03/30/2017
 ms.assetid: e33cf876-8979-440b-9b23-4a12d1139960
-ms.openlocfilehash: bb23f6a79b6f2390952f9aadc1cf08099acb289b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 7ed4032f8f8070648f8a2f0fcfb386101740f1ad
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43489931"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580888"
 ---
 # <a name="using-activity-delegates"></a>활동 대리자 사용
 작업 대리자를 사용하면 활동 작성자는 활동 사용자가 활동 기반 처리기를 제공할 수 있는 특정 시그니처가 있는 콜백을 노출할 수 있습니다. 두 가지 형식의 작업 대리자를 사용할 수 있습니다. <xref:System.Activities.ActivityAction%601>은 반환 값이 없는 작업 대리자를 정의하는 데 사용되고 <xref:System.Activities.ActivityFunc%601>은 반환 값이 있는 작업 대리자를 정의하는 데 사용됩니다.  
@@ -54,7 +54,4 @@ ms.locfileid: "43489931"
   
  `TextGenerator` 활동을 `WriteFillerText` 활동과 함께 사용하려면 이 활동을 <xref:System.Activities.ActivityDelegate.Handler%2A>로 지정합니다.  
   
- [!code-csharp[CFX_ActivityExample#5](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]  
-  
-## <a name="see-also"></a>참고 항목  
- [ActivityAction 노출 및 호출](../../../docs/framework/windows-workflow-foundation/samples/exposing-and-invoking-activityactions.md)
+ [!code-csharp[CFX_ActivityExample#5](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_ActivityExample/cs/Program.cs#5)]

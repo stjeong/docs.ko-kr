@@ -2,16 +2,16 @@
 title: 문서 승인 프로세스
 ms.date: 03/30/2017
 ms.assetid: 9b240937-76a7-45cd-8823-7f82c34d03bd
-ms.openlocfilehash: 874ee560407c3054b4f270a35e5100eaf9e174b8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 34b63acaacde274210343a1135f3ed39a2df885e
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43508932"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48582712"
 ---
 # <a name="document-approval-process"></a>문서 승인 프로세스
-이 샘플 많은 Windows WF (Workflow Foundation) 및 Windows Communication Foundation (WCF) 기능의 사용을 함께 보여 줍니다. 이 기능들은 문서 승인 프로세스 시나리오를 구현하는 데 함께 사용됩니다. 클라이언트 응용 프로그램은 승인이 필요한 문서를 제출하고 문서를 승인합니다. 클라이언트 사이의 원활한 통신을 지원하고 승인 프로세스의 규칙을 적용하는 데는 승인 관리자 응용 프로그램이 사용됩니다. 승인 프로세스는 여러 가지 유형의 승인을 실행할 수 있는 워크플로입니다. 단일 승인 프로세스, 정족수 승인(승인자 집합의 백분율) 프로세스 및 정족수 승인과 단일 승인이 차례로 이루어지는 복합 승인 프로세스를 처리하기 위하여 각기 다른 활동이 사용됩니다.  
-  
+이 샘플 많은 Windows WF (Workflow Foundation) 및 Windows Communication Foundation (WCF) 기능의 사용을 함께 보여 줍니다. 이 기능들은 문서 승인 프로세스 시나리오를 구현하는 데 함께 사용됩니다. 클라이언트 응용 프로그램은 승인이 필요한 문서를 제출하고 문서를 승인합니다. 클라이언트 사이의 원활한 통신을 지원하고 승인 프로세스의 규칙을 적용하는 데는 승인 관리자 응용 프로그램이 사용됩니다. 승인 프로세스는 여러 가지 유형의 승인을 실행할 수 있는 워크플로입니다. 단일 승인 프로세스, 정족수 승인(승인자 집합의 백분율) 프로세스 및 정족수 승인과 단일 승인이 차례로 이루어지는 복합 승인 프로세스를 처리하기 위하여 각기 다른 활동이 사용됩니다.
+
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
@@ -80,11 +80,11 @@ ms.locfileid: "43508932"
   
 ##### <a name="to-set-up-the-database"></a>데이터베이스를 설정하려면  
   
-1.  관리자 권한으로 [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트 창을 열고 이DocumentApprovalProcess 폴더로 이동한 다음 Setup.cmd를 실행합니다.  
+1.  관리자 권한으로 연 Visual Studio 2010 명령 프롬프트에서이 DocumentApprovalProcess 폴더로 이동한 다음 Setup.cmd를 실행 합니다.  
   
 ##### <a name="to-set-up-the-application"></a>응용 프로그램을 설정하려면  
   
-1.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]에서 DocumentApprovalProcess.sln 솔루션 파일을 엽니다.  
+1.  DocumentApprovalProcess.sln 솔루션 파일을 열고 Visual Studio 2010을 사용 합니다.  
   
 2.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
@@ -146,4 +146,4 @@ ms.locfileid: "43508932"
   
 ##### <a name="to-clean-up"></a>정리하려면  
   
-1.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] 명령 프롬프트에서 DocumentApprovalProcess 폴더로 이동하여 Cleanup.cmd를 실행합니다.
+1.  Visual Studio 2010 명령 프롬프트에서 DocumentApprovalProcess 폴더로 이동 하 고 Cleanup.cmd를 실행 합니다.

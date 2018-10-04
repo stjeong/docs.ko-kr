@@ -8,11 +8,11 @@ helpviewer_keywords:
 - My.Forms object
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
 ms.openlocfilehash: d15765b7673f321d4362ceea0adb73959a7e7726
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48035361"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48582660"
 ---
 # <a name="myforms-object"></a>My.Forms 개체
 현재 프로젝트에 선언 된 각 Windows form의 인스턴스에 액세스 하기 위한 속성을 제공 합니다.  

@@ -7,11 +7,11 @@ dev_langs:
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
 author: BrucePerlerMS
 ms.openlocfilehash: 25e48125cff5a9761d0b880bf755a94463d42f19
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193893"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580578"
 ---
 # <a name="securitybindingelement-authentication-modes"></a>SecurityBindingElement 인증 모드
 Windows Communication Foundation (WCF)는 클라이언트 및 서비스 인증 서로 몇 가지 모드를 제공 합니다. <xref:System.ServiceModel.Channels.SecurityBindingElement> 클래스에 정적 메서드를 사용하거나 구성을 통해 이러한 인증 모드의 보안 바인딩 요소를 만들 수 있습니다. 이 항목에서는 18가지의 인증 모드에 대해 간단히 설명합니다.  

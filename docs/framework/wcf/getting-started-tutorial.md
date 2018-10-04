@@ -6,20 +6,19 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], getting started
 - getting started [WCF]
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
-ms.openlocfilehash: 204869d0a7a7b8d56449c28cb37b18624a1701cf
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 5947e70b0dc4ef5838322722f2ee2a55034bae96
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47207129"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48582176"
 ---
 # <a name="getting-started-tutorial"></a>초보자를 위한 자습서
-
 이 단원의 항목에서는 프로그래밍 환경을 Windows Communication Foundation (WCF)에 대해 간략하게 위해 제공 됩니다. 이 항목 아래쪽에 나열된 순서대로 진행하세요. 이 자습서를 통해 WCF 서비스 및 클라이언트 응용 프로그램을 만드는 데 필요한 단계를 대략적으로 이해할을 제공 합니다. 서비스는 하나 이상의 엔드포인트를 노출하며 각 엔드포인트는 하나 이상의 서비스 작업을 노출합니다. 합니다 *끝점* 서비스의 서비스를 찾을 수 있는, 서비스 및 기능을 정의 하는 계약을 사용 하 여 통신 해야 하는 방법을 설명 하는 정보를 포함 하는 바인딩 주소를 지정 합니다. 클라이언트가 서비스에서 제공 합니다.
 
  이 자습서의 항목을 순서대로 수행하면 서비스를 실행하고 클라이언트에서 서비스를 호출할 수 있습니다. 첫 번째 세 개 항목에서는 서비스 계약을 정의하는 방법, 서비스 계약을 구현하는 방법 및 서비스를 호스트하는 방법을 설명합니다. 만들어진 서비스는 콘솔 응용 프로그램 내에서 자체 호스트됩니다. IIS(인터넷 정보 서비스)에서 서비스를 호스트할 수도 있습니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: IIS에서 WCF 서비스 호스팅](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)합니다. 서비스는 코드로 구성하지만 구성 파일 내에 서비스를 구성할 수도 있습니다. 구성 파일을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [구성 파일을 사용 하 여 서비스 구성](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)합니다.
 
- 다음 세 개 항목에서는 클라이언트 프록시를 만드는 방법, 클라이언트 응용 프로그램을 구성하는 방법 및 클라이언트 프록시를 사용하여 서비스에서 노출하는 서비스 작업을 호출하는 방법을 설명합니다. 서비스는 클라이언트 응용 프로그램이 서비스와 통신하는 데 필요한 정보를 정의하는 메타데이터를 게시합니다. [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서는 이 메타데이터에 액세스하는 프로세스를 자동화하고 해당 메타데이터를 사용하여 서비스에 대한 클라이언트 응용 프로그램을 생성 및 구성합니다. 사용 하지 않는 경우 [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]를 사용할 수는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 을 생성 및 서비스용 클라이언트 응용 프로그램을 구성 합니다.
+ 다음 세 개 항목에서는 클라이언트 프록시를 만드는 방법, 클라이언트 응용 프로그램을 구성하는 방법 및 클라이언트 프록시를 사용하여 서비스에서 노출하는 서비스 작업을 호출하는 방법을 설명합니다. 서비스는 클라이언트 응용 프로그램이 서비스와 통신하는 데 필요한 정보를 정의하는 메타데이터를 게시합니다. Visual Studio 2012이 메타이 데이터에 액세스 하는 프로세스를 자동화 및 생성 하 고 서비스에 대 한 클라이언트 응용 프로그램을 구성 하는 데 사용 합니다. Visual Studio 2012를 사용 하지 않는 경우 사용할 수 있습니다 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 을 생성 및 서비스용 클라이언트 응용 프로그램을 구성 합니다.
 
 이 섹션의에서 항목에서는 개발 환경으로 Visual Studio를 사용 한다고 가정 합니다. 다른 개발 환경을 사용 하는 경우 Visual Studio 관련 지침을 무시 합니다.
 

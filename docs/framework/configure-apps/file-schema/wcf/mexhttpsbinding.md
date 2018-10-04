@@ -2,12 +2,12 @@
 title: '&lt;mexHttpsBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
-ms.openlocfilehash: ff9ddf8e7486fb8abd174716002575520c546ea4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d56e90162f2a852ff4d0b66abcf3fe03c4110c37
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514357"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48777307"
 ---
 # <a name="ltmexhttpsbindinggt"></a>&lt;mexHttpsBinding&gt;
 HTTPS를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바인딩의 설정을 지정합니다.  
@@ -66,5 +66,5 @@ HTTPS를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바
  [메타데이터](../../../../../docs/framework/wcf/feature-details/metadata.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

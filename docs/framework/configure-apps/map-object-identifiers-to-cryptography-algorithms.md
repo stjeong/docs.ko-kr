@@ -11,11 +11,11 @@ ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: d23fc48a53ee47aacfc290b52887b800ce37477f
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48036861"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48263247"
 ---
 # <a name="mapping-object-identifiers-to-cryptography-algorithms"></a>개체 식별자를 암호화 알고리즘에 매핑
 디지털 서명을 다른 프로그램에서 전송 된 데이터 사용 하 여 훼손 되지 않았음을 확인 합니다. 일반적으로 디지털 서명에 서명할 데이터의 해시에 수치 연산 함수를 적용 하 여 계산 됩니다. 서명할 해시 값의 서식을 지정할 때 일부 디지털 서명 알고리즘 서식 지정 작업의 일부로 ASN.1 개체 식별자 (OID)을 추가 합니다. OID는 해시를 계산 하는 데 사용 된 알고리즘을 식별 합니다. 알고리즘 사용자 지정 알고리즘을 사용 하는 암호화 메커니즘을 확장 하는 개체 식별자를 매핑할 수 있습니다. 다음 예제에서는 새 해시 알고리즘에 개체 식별자를 매핑하는 방법을 보여 줍니다.  

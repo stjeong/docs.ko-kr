@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
 author: BrucePerlerMS
 ms.openlocfilehash: 3f0810a705b5f46ee68a891f9b4ced42efdcb757
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47399491"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48262476"
 ---
 # <a name="ltsecuritygt-of-ltmsmqintegrationbindinggt"></a>&lt;msmqIntegrationBinding&gt;의 &lt;security&gt;
 MSMQ(메시지 큐) 통합 채널을 위한 전송 보안 설정을 정의합니다.  

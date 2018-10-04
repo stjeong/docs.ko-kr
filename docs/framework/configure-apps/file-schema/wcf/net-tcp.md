@@ -2,12 +2,12 @@
 title: '&lt;net.tcp&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-ms.openlocfilehash: ae6837bf6dc8167e165a3adcd1fca8abc3dcd396
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c67aeca183eb476460fa0be2c6dcd9c6077165d8
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500813"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48579345"
 ---
 # <a name="ltnettcpgt"></a>&lt;net.tcp&gt;
 여러 프로세스에서 동일한 TCP 포트를 공유할 수 있도록 하는 NET.TCP Port Sharing Service에 대한 구성 설정을 지정합니다.  
@@ -71,9 +71,9 @@ ms.locfileid: "43500813"
 |[\<system.serviceModel.activation>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md)|수신기 프로세스 SMSvcHost.exe에 대한 구성 설정을 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 포트 공유에 대 한 자세한 내용은 참조 하세요. [Net.TCP 포트 공유](https://msdn.microsoft.com/library/f13692ee-a179-4439-ae72-50db9534eded)합니다. 포트 공유 서비스를 구성 하는 방법을 알아보려면 [Net.TCP Port Sharing Service 구성](https://msdn.microsoft.com/library/b6dd81fa-68b7-4e1b-868e-88e5901b7ea0)합니다.  
+ 포트 공유에 대 한 자세한 내용은 참조 하세요. [Net.TCP 포트 공유](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)합니다. 포트 공유 서비스를 구성 하는 방법을 알아보려면 [Net.TCP Port Sharing Service 구성](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>  
- [Net.TCP 포트 공유](https://msdn.microsoft.com/library/f13692ee-a179-4439-ae72-50db9534eded)  
- [Net.TCP Port Sharing Service 구성](https://msdn.microsoft.com/library/b6dd81fa-68b7-4e1b-868e-88e5901b7ea0)
+ [Net.TCP 포트 공유](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)  
+ [Net.TCP Port Sharing Service 구성](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)

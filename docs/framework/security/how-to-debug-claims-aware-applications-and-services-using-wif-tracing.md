@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 3d51ba59-3adb-4ca4-bd33-5027531af687
 author: BrucePerlerMS
 ms.openlocfilehash: e10d8d2ea869b03586b4680ad8320aeb2de90620
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48035281"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584275"
 ---
 # <a name="how-to-debug-claims-aware-applications-and-services-using-wif-tracing"></a>방법: WIF 추적을 사용하여 클레임 인식 응용 프로그램 및 서비스 디버그
 ## <a name="applies-to"></a>적용 대상  

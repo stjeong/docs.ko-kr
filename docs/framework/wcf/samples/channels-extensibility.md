@@ -3,11 +3,11 @@ title: 채널 확장성
 ms.date: 03/30/2017
 ms.assetid: 4cc3b20b-778a-4ae8-b58c-a3822fb13065
 ms.openlocfilehash: aeff683b786d81fc782914bd2df70adb10bcbcec
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47236516"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580552"
 ---
 # <a name="channels-extensibility"></a>채널 확장성
 이 단원에는 사용자 지정 채널을 보여 주는 샘플이 포함되어 있습니다.  

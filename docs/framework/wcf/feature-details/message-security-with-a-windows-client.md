@@ -7,11 +7,11 @@ dev_langs:
 ms.assetid: 01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8
 author: BrucePerlerMS
 ms.openlocfilehash: c24ced1a3f19297f06404403f1196b8a9139a919
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030579"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48579311"
 ---
 # <a name="message-security-with-a-windows-client"></a>Windows 클라이언트를 사용하는 메시지 보안
 이 시나리오에서는 메시지 보안 모드에 의해 보안이 설정 된 서버를 Windows Communication Foundation (WCF) 클라이언트를 보여 줍니다. 클라이언트와 서비스는 Windows 자격 증명을 사용하여 인증됩니다.  

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - <include> XML tag
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
 ms.openlocfilehash: da7a6c15c558fc56dbc6a874d4a28c4434f67668
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046385"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48778707"
 ---
 # <a name="ltincludegt-visual-basic"></a>&lt;포함&gt; (Visual Basic)
 형식 및 소스 코드에서 멤버를 설명 하는 다른 파일을 가리킵니다.  

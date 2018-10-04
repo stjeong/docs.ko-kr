@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0c77832a4c578ddb2c8a427b133e53ab4ab5c5e3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 0f5a70a01937c52197978db776b90028e1fcb7c6
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45595635"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48580159"
 ---
 # <a name="converting-times-between-time-zones"></a>표준 시간대 간 시간 변환
 
@@ -44,9 +44,6 @@ UTC로 변환 하는 가장 쉬운 방법은 호출 하는 것은 `static` (`Sha
 
 [!code-csharp[System.TimeZone2.Concepts#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#6)]
 [!code-vb[System.TimeZone2.Concepts#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#6)]
-
-> [!NOTE]
-> 합니다 <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> 메서드는 반드시 동일한 결과 생성 하지는 <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=nameWithType> 고 <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> 메서드. 호스트 시스템의 현지 표준 시간대 여러 조정 규칙을 포함 <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=nameWithType> 특정 날짜 및 시간에 적절 한 규칙을 적용 합니다. 다른 두 메서드는 항상 최신 조정 규칙을 적용합니다.
 
 날짜 및 시간 값이 현지 시간 또는 UTC를 나타내지 않는 경우는 <xref:System.DateTime.ToUniversalTime%2A> 메서드는 잘못 된 결과가 반환 수 있습니다. 그러나 사용할 수는 <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A?displayProperty=nameWithType> 지정된 된 표준 시간대의 날짜 및 시간을 변환 하는 방법. (검색에 대 한 세부 정보에 대 한는 <xref:System.TimeZoneInfo> 대상 표준 시간대를 나타내는 개체를 참조 하세요 [로컬 시스템에 정의 된 표준 시간대 찾기](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md).) 다음 코드에서는 <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A?displayProperty=nameWithType> 동부 표준시를 UTC로 변환 하는 방법입니다.
 

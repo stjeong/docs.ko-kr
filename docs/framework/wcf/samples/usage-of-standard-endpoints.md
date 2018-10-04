@@ -2,12 +2,12 @@
 title: 표준 엔드포인트 사용
 ms.date: 03/30/2017
 ms.assetid: ecd6a62f-9619-4778-a497-6f888087a9ea
-ms.openlocfilehash: b3e8cb32832763c7182f86f68c5c80d80ce8c3af
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5502d42d6a576509c826e05c8781662d374fbff4
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518228"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584288"
 ---
 # <a name="usage-of-standard-endpoints"></a>표준 엔드포인트 사용
 
@@ -110,7 +110,7 @@ public class CustomEndpointElement : StandardEndpointElement
 ```csharp
 public class CustomEndpoint : ServiceEndpoint
 {
-    public CustomEndpoint() 
+    public CustomEndpoint()
         : this(string.Empty)
     {
     }
@@ -139,7 +139,7 @@ public class CustomEndpoint : ServiceEndpoint
 
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면
 
-1.  [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]에서 StandardEndpoints.sln 파일을 엽니다.
+1.  StandardEndpoints.sln 파일을 열고 Visual Studio 2012를 사용 합니다.
 
 2.  여러 개의 프로젝트가 시작되도록 설정합니다.
 
