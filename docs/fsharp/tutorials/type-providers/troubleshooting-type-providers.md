@@ -3,11 +3,11 @@ title: 형식 공급자 문제 해결
 description: 'F # 형식 공급자를 사용 하는 경우 발생할 수 있는 문제에 대 한 잠재적인 솔루션을 검색 합니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: f3b8ffdaf615563305b7b84b45a9ed1e066d0dcc
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
-ms.translationtype: MT
+ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47204939"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244921"
 ---
 # <a name="troubleshooting-type-providers"></a>형식 공급자 문제 해결
 
