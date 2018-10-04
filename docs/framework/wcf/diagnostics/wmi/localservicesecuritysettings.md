@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 ms.assetid: 490aa0e5-5242-4f8d-b505-5ec6287633b4
 author: BrucePerlerMS
 ms.openlocfilehash: c79eb11fcc1973a3ef25a78afb8b141443d865c3
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47398867"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48777463"
 ---
-# <a name="localservicesecuritysettings"></a><span data-ttu-id="d53cf-102">LocalServiceSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="d53cf-102">LocalServiceSecuritySettings</span></span>
-<span data-ttu-id="d53cf-103">LocalServiceSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="d53cf-103">LocalServiceSecuritySettings</span></span>  
+# <a name="localservicesecuritysettings"></a><span data-ttu-id="6b2d5-102">LocalServiceSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="6b2d5-102">LocalServiceSecuritySettings</span></span>
+<span data-ttu-id="6b2d5-103">LocalServiceSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="6b2d5-103">LocalServiceSecuritySettings</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="d53cf-104">구문</span><span class="sxs-lookup"><span data-stu-id="d53cf-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6b2d5-104">구문</span><span class="sxs-lookup"><span data-stu-id="6b2d5-104">Syntax</span></span>  
   
 ```  
 class LocalServiceSecuritySettings  
@@ -35,115 +35,115 @@ class LocalServiceSecuritySettings
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="d53cf-105">메서드</span><span class="sxs-lookup"><span data-stu-id="d53cf-105">Methods</span></span>  
- <span data-ttu-id="d53cf-106">LocalServiceSecuritySettings 클래스는 메서드를 정의하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-106">The LocalServiceSecuritySettings class does not define any methods.</span></span>  
+## <a name="methods"></a><span data-ttu-id="6b2d5-105">메서드</span><span class="sxs-lookup"><span data-stu-id="6b2d5-105">Methods</span></span>  
+ <span data-ttu-id="6b2d5-106">LocalServiceSecuritySettings 클래스는 메서드를 정의하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-106">The LocalServiceSecuritySettings class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="d53cf-107">속성</span><span class="sxs-lookup"><span data-stu-id="d53cf-107">Properties</span></span>  
- <span data-ttu-id="d53cf-108">LocalServiceSecuritySettings 클래스에는 다음과 같은 속성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-108">The LocalServiceSecuritySettings class has the following properties:</span></span>  
+## <a name="properties"></a><span data-ttu-id="6b2d5-107">속성</span><span class="sxs-lookup"><span data-stu-id="6b2d5-107">Properties</span></span>  
+ <span data-ttu-id="6b2d5-108">LocalServiceSecuritySettings 클래스에는 다음과 같은 속성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-108">The LocalServiceSecuritySettings class has the following properties:</span></span>  
   
-### <a name="detectreplays"></a><span data-ttu-id="d53cf-109">DetectReplays</span><span class="sxs-lookup"><span data-stu-id="d53cf-109">DetectReplays</span></span>  
- <span data-ttu-id="d53cf-110">데이터 형식: boolean</span><span class="sxs-lookup"><span data-stu-id="d53cf-110">Data type: boolean</span></span>  
+### <a name="detectreplays"></a><span data-ttu-id="6b2d5-109">DetectReplays</span><span class="sxs-lookup"><span data-stu-id="6b2d5-109">DetectReplays</span></span>  
+ <span data-ttu-id="6b2d5-110">데이터 형식: boolean</span><span class="sxs-lookup"><span data-stu-id="6b2d5-110">Data type: boolean</span></span>  
   
- <span data-ttu-id="d53cf-111">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-111">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-111">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-112">채널에 대한 재생 공격이 검색되어 자동으로 처리되는지 여부를 지정하는 부울 값입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-112">A Boolean value that specifies whether replay attacks against the channel are detected and dealt with automatically.</span></span>  
+ <span data-ttu-id="6b2d5-112">채널에 대한 재생 공격이 검색되어 자동으로 처리되는지 여부를 지정하는 부울 값입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-112">A Boolean value that specifies whether replay attacks against the channel are detected and dealt with automatically.</span></span>  
   
-### <a name="inactivitytimeout"></a><span data-ttu-id="d53cf-113">InactivityTimeout</span><span class="sxs-lookup"><span data-stu-id="d53cf-113">InactivityTimeout</span></span>  
- <span data-ttu-id="d53cf-114">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-114">Data type: datetime</span></span>  
+### <a name="inactivitytimeout"></a><span data-ttu-id="6b2d5-113">InactivityTimeout</span><span class="sxs-lookup"><span data-stu-id="6b2d5-113">InactivityTimeout</span></span>  
+ <span data-ttu-id="6b2d5-114">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-114">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-115">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-115">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-115">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-115">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-116">서비스가 지원하는 보류 중인 보안 세션의 최대 수입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-116">The maximum number of pending security sessions that the service supports.</span></span>  
+ <span data-ttu-id="6b2d5-116">서비스가 지원하는 보류 중인 보안 세션의 최대 수입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-116">The maximum number of pending security sessions that the service supports.</span></span>  
   
-### <a name="issuedcookielifetime"></a><span data-ttu-id="d53cf-117">IssuedCookieLifetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-117">IssuedCookieLifetime</span></span>  
- <span data-ttu-id="d53cf-118">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-118">Data type: datetime</span></span>  
+### <a name="issuedcookielifetime"></a><span data-ttu-id="6b2d5-117">IssuedCookieLifetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-117">IssuedCookieLifetime</span></span>  
+ <span data-ttu-id="6b2d5-118">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-118">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-119">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-119">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-119">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-119">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-120">모든 새 보안 쿠키에 발급된 수명을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-120">A TimeSpan that specifies the lifetime issued to all new security cookies.</span></span>  
+ <span data-ttu-id="6b2d5-120">모든 새 보안 쿠키에 발급된 수명을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-120">A TimeSpan that specifies the lifetime issued to all new security cookies.</span></span>  
   
-### <a name="maxcachedcookies"></a><span data-ttu-id="d53cf-121">MaxCachedCookies</span><span class="sxs-lookup"><span data-stu-id="d53cf-121">MaxCachedCookies</span></span>  
- <span data-ttu-id="d53cf-122">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="d53cf-122">Data type: sint32</span></span>  
+### <a name="maxcachedcookies"></a><span data-ttu-id="6b2d5-121">MaxCachedCookies</span><span class="sxs-lookup"><span data-stu-id="6b2d5-121">MaxCachedCookies</span></span>  
+ <span data-ttu-id="6b2d5-122">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="6b2d5-122">Data type: sint32</span></span>  
   
- <span data-ttu-id="d53cf-123">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-123">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-123">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-123">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-124">캐시될 수 있는 최대 쿠키 수입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-124">The maximum number of cookies that can be cached.</span></span>  
+ <span data-ttu-id="6b2d5-124">캐시될 수 있는 최대 쿠키 수입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-124">The maximum number of cookies that can be cached.</span></span>  
   
-### <a name="maxclockskew"></a><span data-ttu-id="d53cf-125">MaxClockSkew</span><span class="sxs-lookup"><span data-stu-id="d53cf-125">MaxClockSkew</span></span>  
- <span data-ttu-id="d53cf-126">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-126">Data type: datetime</span></span>  
+### <a name="maxclockskew"></a><span data-ttu-id="6b2d5-125">MaxClockSkew</span><span class="sxs-lookup"><span data-stu-id="6b2d5-125">MaxClockSkew</span></span>  
+ <span data-ttu-id="6b2d5-126">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-126">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-127">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-127">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-127">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-127">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-128">통신하는 두 상대방의 시스템 시계 사이의 최대 시간 차이를 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-128">A TimeSpan that specifies the maximum time difference between the system clocks of the two communicating parties.</span></span>  
+ <span data-ttu-id="6b2d5-128">통신하는 두 상대방의 시스템 시계 사이의 최대 시간 차이를 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-128">A TimeSpan that specifies the maximum time difference between the system clocks of the two communicating parties.</span></span>  
   
-### <a name="maxpendingsessions"></a><span data-ttu-id="d53cf-129">MaxPendingSessions</span><span class="sxs-lookup"><span data-stu-id="d53cf-129">MaxPendingSessions</span></span>  
- <span data-ttu-id="d53cf-130">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="d53cf-130">Data type: sint32</span></span>  
+### <a name="maxpendingsessions"></a><span data-ttu-id="6b2d5-129">MaxPendingSessions</span><span class="sxs-lookup"><span data-stu-id="6b2d5-129">MaxPendingSessions</span></span>  
+ <span data-ttu-id="6b2d5-130">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="6b2d5-130">Data type: sint32</span></span>  
   
- <span data-ttu-id="d53cf-131">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-131">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-131">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-131">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-132">서비스에서 보류 중인 최대 연결 수입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-132">The maximum number of pending connections on the service.</span></span>  
+ <span data-ttu-id="6b2d5-132">서비스에서 보류 중인 최대 연결 수입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-132">The maximum number of pending connections on the service.</span></span>  
   
-### <a name="maxstatefulnegotiations"></a><span data-ttu-id="d53cf-133">MaxStatefulNegotiations</span><span class="sxs-lookup"><span data-stu-id="d53cf-133">MaxStatefulNegotiations</span></span>  
- <span data-ttu-id="d53cf-134">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="d53cf-134">Data type: sint32</span></span>  
+### <a name="maxstatefulnegotiations"></a><span data-ttu-id="6b2d5-133">MaxStatefulNegotiations</span><span class="sxs-lookup"><span data-stu-id="6b2d5-133">MaxStatefulNegotiations</span></span>  
+ <span data-ttu-id="6b2d5-134">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="6b2d5-134">Data type: sint32</span></span>  
   
- <span data-ttu-id="d53cf-135">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-135">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-135">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-135">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-136">동시에 활성화될 수 있는 보안 협상의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-136">The number of security negotiations that can be active concurrently.</span></span>  
+ <span data-ttu-id="6b2d5-136">동시에 활성화될 수 있는 보안 협상의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-136">The number of security negotiations that can be active concurrently.</span></span>  
   
-### <a name="negotiationtimeout"></a><span data-ttu-id="d53cf-137">NegotiationTimeout</span><span class="sxs-lookup"><span data-stu-id="d53cf-137">NegotiationTimeout</span></span>  
- <span data-ttu-id="d53cf-138">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-138">Data type: datetime</span></span>  
+### <a name="negotiationtimeout"></a><span data-ttu-id="6b2d5-137">NegotiationTimeout</span><span class="sxs-lookup"><span data-stu-id="6b2d5-137">NegotiationTimeout</span></span>  
+ <span data-ttu-id="6b2d5-138">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-138">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-139">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-139">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-139">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-139">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-140">서버와 클라이언트 간 보안 협상 단계에 대한 최대 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-140">A TimeSpan that specifies the maximum duration for the security negotiation phase between server and client.</span></span>  
+ <span data-ttu-id="6b2d5-140">서버와 클라이언트 간 보안 협상 단계에 대한 최대 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-140">A TimeSpan that specifies the maximum duration for the security negotiation phase between server and client.</span></span>  
   
-### <a name="reconnecttransportonfailure"></a><span data-ttu-id="d53cf-141">ReconnectTransportOnFailure</span><span class="sxs-lookup"><span data-stu-id="d53cf-141">ReconnectTransportOnFailure</span></span>  
- <span data-ttu-id="d53cf-142">데이터 형식: boolean</span><span class="sxs-lookup"><span data-stu-id="d53cf-142">Data type: boolean</span></span>  
+### <a name="reconnecttransportonfailure"></a><span data-ttu-id="6b2d5-141">ReconnectTransportOnFailure</span><span class="sxs-lookup"><span data-stu-id="6b2d5-141">ReconnectTransportOnFailure</span></span>  
+ <span data-ttu-id="6b2d5-142">데이터 형식: boolean</span><span class="sxs-lookup"><span data-stu-id="6b2d5-142">Data type: boolean</span></span>  
   
- <span data-ttu-id="d53cf-143">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-143">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-143">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-143">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-144">WS-Reliable Messaging을 사용하는 연결에서 전송 실패 후 다시 연결을 시도할지 여부를 지정하는 부울 값입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-144">A Boolean value that specifies whether connections using WS-Reliable messaging attempt to reconnect after transport failures.</span></span>  
+ <span data-ttu-id="6b2d5-144">WS-Reliable Messaging을 사용하는 연결에서 전송 실패 후 다시 연결을 시도할지 여부를 지정하는 부울 값입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-144">A Boolean value that specifies whether connections using WS-Reliable messaging attempt to reconnect after transport failures.</span></span>  
   
-### <a name="replaycachesize"></a><span data-ttu-id="d53cf-145">ReplayCacheSize</span><span class="sxs-lookup"><span data-stu-id="d53cf-145">ReplayCacheSize</span></span>  
- <span data-ttu-id="d53cf-146">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="d53cf-146">Data type: sint32</span></span>  
+### <a name="replaycachesize"></a><span data-ttu-id="6b2d5-145">ReplayCacheSize</span><span class="sxs-lookup"><span data-stu-id="6b2d5-145">ReplayCacheSize</span></span>  
+ <span data-ttu-id="6b2d5-146">데이터 형식: sint32</span><span class="sxs-lookup"><span data-stu-id="6b2d5-146">Data type: sint32</span></span>  
   
- <span data-ttu-id="d53cf-147">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-147">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-147">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-147">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-148">재생 검색에 사용되는 캐시된 nonces 수입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-148">The number of cached nonces used for replay detection.</span></span>  
+ <span data-ttu-id="6b2d5-148">재생 검색에 사용되는 캐시된 nonces 수입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-148">The number of cached nonces used for replay detection.</span></span>  
   
-### <a name="replaywindow"></a><span data-ttu-id="d53cf-149">ReplayWindow</span><span class="sxs-lookup"><span data-stu-id="d53cf-149">ReplayWindow</span></span>  
- <span data-ttu-id="d53cf-150">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-150">Data type: datetime</span></span>  
+### <a name="replaywindow"></a><span data-ttu-id="6b2d5-149">ReplayWindow</span><span class="sxs-lookup"><span data-stu-id="6b2d5-149">ReplayWindow</span></span>  
+ <span data-ttu-id="6b2d5-150">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-150">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-151">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-151">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-151">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-151">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-152">개별 메시지 nonce를 사용할 수 있는 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-152">A TimeSpan that specifies the duration in which individual message nonces are valid.</span></span>  
+ <span data-ttu-id="6b2d5-152">개별 메시지 nonce를 사용할 수 있는 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-152">A TimeSpan that specifies the duration in which individual message nonces are valid.</span></span>  
   
-### <a name="sessionkeyrenewalinterval"></a><span data-ttu-id="d53cf-153">SessionKeyRenewalInterval</span><span class="sxs-lookup"><span data-stu-id="d53cf-153">SessionKeyRenewalInterval</span></span>  
- <span data-ttu-id="d53cf-154">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-154">Data type: datetime</span></span>  
+### <a name="sessionkeyrenewalinterval"></a><span data-ttu-id="6b2d5-153">SessionKeyRenewalInterval</span><span class="sxs-lookup"><span data-stu-id="6b2d5-153">SessionKeyRenewalInterval</span></span>  
+ <span data-ttu-id="6b2d5-154">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-154">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-155">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-155">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-155">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-155">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-156">해당 기간이 지나면 개시자가 보안 세션에 대한 키를 갱신할 수 있는 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-156">A TimeSpan that specifies the duration after which the initiator renews the key for the security session.</span></span>  
+ <span data-ttu-id="6b2d5-156">해당 기간이 지나면 개시자가 보안 세션에 대한 키를 갱신할 수 있는 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-156">A TimeSpan that specifies the duration after which the initiator renews the key for the security session.</span></span>  
   
-### <a name="sessionkeyrolloverinterval"></a><span data-ttu-id="d53cf-157">SessionKeyRolloverInterval</span><span class="sxs-lookup"><span data-stu-id="d53cf-157">SessionKeyRolloverInterval</span></span>  
- <span data-ttu-id="d53cf-158">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-158">Data type: datetime</span></span>  
+### <a name="sessionkeyrolloverinterval"></a><span data-ttu-id="6b2d5-157">SessionKeyRolloverInterval</span><span class="sxs-lookup"><span data-stu-id="6b2d5-157">SessionKeyRolloverInterval</span></span>  
+ <span data-ttu-id="6b2d5-158">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-158">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-159">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-159">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-159">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-159">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-160">키 갱신 중에 들어오는 메시지에서 이전 세션 키를 사용할 수 있는 시간 간격을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-160">A TimeSpan that specifies the time interval a previous session key is valid on incoming messages during a key renewal.</span></span>  
+ <span data-ttu-id="6b2d5-160">키 갱신 중에 들어오는 메시지에서 이전 세션 키를 사용할 수 있는 시간 간격을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-160">A TimeSpan that specifies the time interval a previous session key is valid on incoming messages during a key renewal.</span></span>  
   
-### <a name="timestampvalidityduration"></a><span data-ttu-id="d53cf-161">TimestampValidityDuration</span><span class="sxs-lookup"><span data-stu-id="d53cf-161">TimestampValidityDuration</span></span>  
- <span data-ttu-id="d53cf-162">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="d53cf-162">Data type: datetime</span></span>  
+### <a name="timestampvalidityduration"></a><span data-ttu-id="6b2d5-161">TimestampValidityDuration</span><span class="sxs-lookup"><span data-stu-id="6b2d5-161">TimestampValidityDuration</span></span>  
+ <span data-ttu-id="6b2d5-162">데이터 형식: datetime</span><span class="sxs-lookup"><span data-stu-id="6b2d5-162">Data type: datetime</span></span>  
   
- <span data-ttu-id="d53cf-163">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="d53cf-163">Access type: Read-only</span></span>  
+ <span data-ttu-id="6b2d5-163">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="6b2d5-163">Access type: Read-only</span></span>  
   
- <span data-ttu-id="d53cf-164">타임스탬프를 사용할 수 있는 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-164">A TimeSpan that specifies the duration in which a time stamp is valid.</span></span>  
+ <span data-ttu-id="6b2d5-164">타임스탬프를 사용할 수 있는 기간을 지정하는 TimeSpan입니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-164">A TimeSpan that specifies the duration in which a time stamp is valid.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="d53cf-165">요구 사항</span><span class="sxs-lookup"><span data-stu-id="d53cf-165">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="6b2d5-165">요구 사항</span><span class="sxs-lookup"><span data-stu-id="6b2d5-165">Requirements</span></span>  
   
-|<span data-ttu-id="d53cf-166">MOF</span><span class="sxs-lookup"><span data-stu-id="d53cf-166">MOF</span></span>|<span data-ttu-id="d53cf-167">Servicemodel.mof에 선언되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-167">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="6b2d5-166">MOF</span><span class="sxs-lookup"><span data-stu-id="6b2d5-166">MOF</span></span>|<span data-ttu-id="6b2d5-167">Servicemodel.mof에 선언되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-167">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="d53cf-168">네임스페이스</span><span class="sxs-lookup"><span data-stu-id="d53cf-168">Namespace</span></span>|<span data-ttu-id="d53cf-169">root\ServiceModel에 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d53cf-169">Defined in root\ServiceModel</span></span>|  
+|<span data-ttu-id="6b2d5-168">네임스페이스</span><span class="sxs-lookup"><span data-stu-id="6b2d5-168">Namespace</span></span>|<span data-ttu-id="6b2d5-169">root\ServiceModel에 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6b2d5-169">Defined in root\ServiceModel</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="d53cf-170">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d53cf-170">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="6b2d5-170">참고 항목</span><span class="sxs-lookup"><span data-stu-id="6b2d5-170">See Also</span></span>  
  <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
