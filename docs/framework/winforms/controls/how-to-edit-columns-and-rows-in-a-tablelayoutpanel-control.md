@@ -19,9 +19,9 @@ ms.locfileid: "43500786"
 컬렉션 편집기를 사용할 수는 <xref:System.Windows.Forms.TableLayoutPanel> 호출을 **열 및 행 스타일** 대화 상자에서 행과 컨트롤의 열을 편집 하려면.  
   
 > [!NOTE]
->  여러 행 또는 열에 걸쳐 제어를 설정 합니다 `RowSpan` 및 `ColumnSpan` 컨트롤의 속성입니다. 자세한 내용은 [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
+>  여러 행 또는 열에 걸쳐 제어를 설정 합니다 `RowSpan` 및 `ColumnSpan` 컨트롤의 속성입니다. 자세한 내용은 [연습: TableLayoutPanel을 사용하여 Windows Forms에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
 >   
->  셀 내에 있는 컨트롤을 정렬 하려는 셀 내에서 확장 하려는 경우를 사용 하 여 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성입니다. 자세한 내용은 [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
+>  셀 내에 있는 컨트롤을 정렬 하려는 셀 내에서 확장 하려는 경우를 사용 하 여 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성입니다. 자세한 내용은 [연습: TableLayoutPanel을 사용하여 Windows Forms에서 컨트롤 정렬](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)을 참조하세요.  
 >   
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
