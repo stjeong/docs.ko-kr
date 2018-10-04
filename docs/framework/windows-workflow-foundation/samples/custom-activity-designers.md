@@ -3,11 +3,11 @@ title: 사용자 지정 활동 디자이너
 ms.date: 03/30/2017
 ms.assetid: dcf14dca-ce6d-4278-96ba-062f0a679075
 ms.openlocfilehash: c27ad19121f4faa0a3fca7b13b197a88a95c6d15
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48031905"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48781260"
 ---
 # <a name="custom-activity-designers"></a>사용자 지정 활동 디자이너
 이 단원에는 워크플로 디자이너에 표시할 사용자 지정 디자이너를 사용하는 활동 샘플이 포함되어 있습니다.  

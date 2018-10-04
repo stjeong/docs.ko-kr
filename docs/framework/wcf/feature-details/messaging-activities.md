@@ -2,12 +2,12 @@
 title: 메시징 활동
 ms.date: 03/30/2017
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
-ms.openlocfilehash: 5ccace3ebea42957e1cc66602579d85cd8634435
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3391f7442ef4922a847a58b6316eb177cbcfbd5e
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502715"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48780468"
 ---
 # <a name="messaging-activities"></a>메시징 활동
 메시징 작업을 사용하면 워크플로를 통해 WCF 메시지를 보내고 받을 수 있습니다. 워크플로에 메시징 작업을 추가하면 훨씬 더 복잡한 MEP(메시지 교환 패턴)를 모델링할 수 있습니다.
@@ -95,10 +95,10 @@ Request = rcv
 ```
 
 ## <a name="add-service-reference"></a>서비스 참조 추가
- 워크플로 응용 프로그램에서 워크플로 서비스를 호출하면 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]에서 요청/회신 MEP에 사용되는 일반적인 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply> 작업을 캡슐화하는 사용자 지정 메시징 작업을 생성합니다. 이 기능을 사용 하려면 Visual Studio에서 클라이언트 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가** > **서비스 참조**합니다. 주소 상자에 서비스의 기본 주소를 입력하고 이동을 클릭합니다. 사용 가능한 서비스에 표시 되는 **Services:** 상자입니다. 서비스 노드를 확장하여 지원되는 계약을 표시합니다. 호출 하려는 계약을 선택 하 고 사용 가능한 작업 목록에 표시 되는 **Operations** 상자입니다. 그런 다음 생성된 된 작업에 대 한 네임 스페이스를 지정 하 고 클릭 수 **확인**합니다. 그러면 프로젝트가 다시 빌드된 후 작업이 성공적으로 완료되었음을 알리고 사용자 지정 작업이 도구 상자에 표시된 대화 상자가 나타냅니다. 이 대화 상자에는 서비스 계약에 대해 정의된 작업마다 하나씩 작업이 있습니다. 프로젝트를 다시 빌드한 후에는 사용자 지정 작업을 워크플로에 끌어서 놓고 속성 창에서 필수 속성을 설정할 수 있습니다.
+ Visual Studio 2012 일반적인 캡슐화 하는 사용자 지정 메시징 작업을 생성 워크플로 응용 프로그램에서 워크플로 서비스를 호출할 때 <xref:System.ServiceModel.Activities.Send> 고 <xref:System.ServiceModel.Activities.ReceiveReply> 요청/회신 MEP에에서 사용 되는 작업입니다. 이 기능을 사용 하려면 Visual Studio에서 클라이언트 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가** > **서비스 참조**합니다. 주소 상자에 서비스의 기본 주소를 입력하고 이동을 클릭합니다. 사용 가능한 서비스에 표시 되는 **Services:** 상자입니다. 서비스 노드를 확장하여 지원되는 계약을 표시합니다. 호출 하려는 계약을 선택 하 고 사용 가능한 작업 목록에 표시 되는 **Operations** 상자입니다. 그런 다음 생성된 된 작업에 대 한 네임 스페이스를 지정 하 고 클릭 수 **확인**합니다. 그러면 프로젝트가 다시 빌드된 후 작업이 성공적으로 완료되었음을 알리고 사용자 지정 작업이 도구 상자에 표시된 대화 상자가 나타냅니다. 이 대화 상자에는 서비스 계약에 대해 정의된 작업마다 하나씩 작업이 있습니다. 프로젝트를 다시 빌드한 후에는 사용자 지정 작업을 워크플로에 끌어서 놓고 속성 창에서 필수 속성을 설정할 수 있습니다.
 
 <!--## Messaging Activity Templates
- To make setting up a request/response MEP on the client and service easier, [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] provides two messaging activity templates. <xref:System.ServiceModel.Activities.Design.ReceiveAndSendReply> is used on the service and <xref:System.ServiceModel.Activities.Design.SendAndReceiveReply> is used on the client. In both cases the templates add the appropriate messaging activities to your workflow. On the service, the <xref:System.ServiceModel.Activities.Design.ReceiveAndSendReply> adds a <xref:System.ServiceModel.Activities.Receive> activity followed by a <xref:System.ServiceModel.Activities.SendReply> activity. The <xref:System.ServiceModel.Activities.SendReply.Request> property is automatically set to the <xref:System.ServiceModel.Activities.Receive> activity. On the client, the <xref:System.ServiceModel.Activities.Design.SendAndReceiveReply> adds a <xref:System.ServiceModel.Activities.Send> activity followed by a <xref:System.ServiceModel.Activities.ReceiveReply>. The <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> property is automatically set to the <xref:System.ServiceModel.Activities.Send> activity. To use these templates, just drag and drop the appropriate template onto your workflow.
+ To make setting up a request/response MEP on the client and service easier, Visual Studio 2012 provides two messaging activity templates. <xref:System.ServiceModel.Activities.Design.ReceiveAndSendReply> is used on the service and <xref:System.ServiceModel.Activities.Design.SendAndReceiveReply> is used on the client. In both cases the templates add the appropriate messaging activities to your workflow. On the service, the <xref:System.ServiceModel.Activities.Design.ReceiveAndSendReply> adds a <xref:System.ServiceModel.Activities.Receive> activity followed by a <xref:System.ServiceModel.Activities.SendReply> activity. The <xref:System.ServiceModel.Activities.SendReply.Request> property is automatically set to the <xref:System.ServiceModel.Activities.Receive> activity. On the client, the <xref:System.ServiceModel.Activities.Design.SendAndReceiveReply> adds a <xref:System.ServiceModel.Activities.Send> activity followed by a <xref:System.ServiceModel.Activities.ReceiveReply>. The <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> property is automatically set to the <xref:System.ServiceModel.Activities.Send> activity. To use these templates, just drag and drop the appropriate template onto your workflow.
 -->
 ## <a name="messaging-activities-and-transactions"></a>메시징 작업 및 트랜잭션
  워크플로 서비스가 호출되면 트랜잭션을 서비스 작업에 전달할 수 있습니다. 이 작업을 수행하려면 <xref:System.ServiceModel.Activities.Receive> 작업 안에 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 작업을 배치합니다. <xref:System.ServiceModel.Activities.TransactedReceiveScope> 작업은 `Receive` 작업과 본문을 포함합니다. 서비스에 전달된 트랜잭션은 <xref:System.ServiceModel.Activities.TransactedReceiveScope>의 본문이 실행되는 동안 앰비언트 상태로 유지됩니다. 본문이 실행을 마치면 트랜잭션이 완료됩니다. 워크플로 및 트랜잭션에 대 한 자세한 내용은 참조 하세요 [워크플로 트랜잭션을](../../../../docs/framework/windows-workflow-foundation/workflow-transactions.md)합니다.

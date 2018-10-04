@@ -2,42 +2,42 @@
 title: 기업 구매 프로세스
 ms.date: 03/30/2017
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
-ms.openlocfilehash: a5e0d6191967c592d5a32baa7eee3f1659a27e50
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 1817b7af00abd9240eb427f61ed9f0255d51c60d
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43802913"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48781663"
 ---
 # <a name="corporate-purchase-process"></a>기업 구매 프로세스
-이 샘플에서는 최상의 제안을 자동으로 선택하는 구매 프로세스를 기반으로 매우 기본적인 RFP(제안 요청서)를 만드는 방법을 보여 줍니다. 여기에서는 <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601> 및 <xref:System.Activities.Statements.ForEach%601>과 사용자 지정 활동을 결합하여 이 프로세스를 나타내는 워크플로를 만듭니다.  
-  
- 이 샘플에는 다양한 참가자(최초 요청자 또는 특정 공급업체)로 프로세스와 상호 작용할 수 있도록 하는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 클라이언트 응용 프로그램이 포함되어 있습니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
--   [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)].  
-  
--   [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
-  
-## <a name="demonstrates"></a>세부 항목  
-  
--   사용자 지정 활동  
-  
--   활동의 컴퍼지션  
-  
--   책갈피  
-  
--   지속성  
-  
--   스키마화된 지속성  
-  
--   추적(Tracing)  
-  
--   추적(Tracking)  
-  
--   서로 다른 클라이언트([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 웹 응용 프로그램 및 WinForms 응용 프로그램)에 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 호스팅  
-  
+이 샘플에서는 최상의 제안을 자동으로 선택하는 구매 프로세스를 기반으로 매우 기본적인 RFP(제안 요청서)를 만드는 방법을 보여 줍니다. 여기에서는 <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601> 및 <xref:System.Activities.Statements.ForEach%601>과 사용자 지정 활동을 결합하여 이 프로세스를 나타내는 워크플로를 만듭니다.
+
+ 이 샘플에는 다양한 참가자(최초 요청자 또는 특정 공급업체)로 프로세스와 상호 작용할 수 있도록 하는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 클라이언트 응용 프로그램이 포함되어 있습니다.
+
+## <a name="requirements"></a>요구 사항
+
+-   Visual Studio 2012.
+
+-   [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].
+
+## <a name="demonstrates"></a>세부 항목
+
+-   사용자 지정 활동
+
+-   활동의 컴퍼지션
+
+-   책갈피
+
+-   지속성
+
+-   스키마화된 지속성
+
+-   추적(Tracing)
+
+-   추적(Tracking)
+
+-   서로 다른 클라이언트([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 웹 응용 프로그램 및 WinForms 응용 프로그램)에 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 호스팅
+
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   
@@ -143,7 +143,7 @@ ms.locfileid: "43802913"
   
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
-1.  [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)]에서 PurchaseProcess.sln 솔루션 파일을 엽니다.  
+1.  PurchaseProcess.sln 솔루션 파일을 열고 Visual Studio 2010을 사용 합니다.  
   
 2.  웹 클라이언트 프로젝트를 실행 하려면 엽니다 **솔루션 탐색기** 마우스 오른쪽 단추로 클릭 합니다 **웹 클라이언트** 프로젝트입니다. 선택 **시작 프로젝트로 설정**합니다.  
   

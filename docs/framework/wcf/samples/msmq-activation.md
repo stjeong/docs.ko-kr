@@ -2,12 +2,12 @@
 title: MSMQ 활성화
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: a03f5783e732c4a0f3f13cf6abd7ec4803c07c8f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: a179fca70a97b4fd9c7b21bdf548afdda59dda91
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43779314"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48780156"
 ---
 # <a name="msmq-activation"></a>MSMQ 활성화
 이 샘플에서는 메시지 큐에서 읽은 WAS(Windows Process Activation Service)에서 응용 프로그램을 호스트하는 방법을 보여 줍니다. 이 샘플에서는 합니다 `netMsmqBinding` 기반으로 합니다 [양방향 통신](../../../../docs/framework/wcf/samples/two-way-communication.md) 샘플입니다. 이 경우 서비스는 웹 호스팅 응용 프로그램이고 클라이언트는 자체 호스트되며 전송된 구매 주문의 상태를 확인하기 위해 콘솔에 출력됩니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "43779314"
 >   
 >  \<InstallDrive>:\WF_WCF_Samples  
 >   
->  이 디렉터리가 없으면 Windows Communication Foundation (WCF) 하이퍼링크를 이동 "https://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank" 및 Windows WF (Workflow Foundation) 샘플에 대 한 [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] 모든 WCF를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플입니다. 이 샘플은 다음 디렉터리에 있습니다.  
+>  이 디렉터리가 없으면 Windows Communication Foundation (WCF) 하이퍼링크를 이동 "https://go.microsoft.com/fwlink/?LinkId=150780"\t"\_빈" 및 Windows WF (Workflow Foundation) 샘플에 대 한 [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] 모든 WCF를 다운로드 하 고 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 샘플입니다. 이 샘플은 다음 디렉터리에 있습니다.  
 >   
 >  \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.  
   
@@ -76,7 +76,8 @@ public class OrderProcessorService : IOrderProcessor
             client.OrderStatus(po.PONumber, po.Status);  
             scope.Complete();  
         }  
-    }  
+    }
+}
 ```  
   
  사용할 클라이언트 바인딩은 구성 파일을 사용하여 지정됩니다.  
@@ -173,7 +174,7 @@ public class OrderStatusService : IOrderStatus
   
  주문 상태 큐는 `Main` 메서드에 생성됩니다. 다음 샘플 구성과 같이 클라이언트 구성에는 주문 상태 서비스를 호스트하는 주문 상태 서비스 구성이 포함됩니다.  
   
-```csharp  
+```xml  
 <appSettings>  
     <!-- use appSetting to configure MSMQ queue name -->  
     <add key="targetQueueName" value=".\private$\ServiceModelSamples/service.svc" />  
@@ -269,7 +270,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
         > [!NOTE]
         >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다.  
   
-         이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램을 사용 하 여 액세스할 수에 http://localhost/servicemodelsamples 및 net.msmq://localhost/servicemodelsamples 합니다.  
+         이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램에 사용 하 여 액세스할 수 `http://localhost/servicemodelsamples` 고 `net.msmq://localhost/servicemodelsamples`입니다.
   
 7.  아직 설정하지 않은 경우 MSMQ 활성화 서비스를 사용하도록 설정합니다. **시작** 메뉴에서 클릭 **실행**에서 형식과 `Services.msc`. 에 대 한 서비스 목록을 검색 합니다 **Net.Msmq Listener Adapter**합니다. 마우스 오른쪽 단추로 클릭 **속성**합니다. 설정 합니다 **시작 유형** 를 **자동**, 클릭 **적용** 클릭 합니다 **시작** 단추. 이 단계는 Net.Msmq Listener Adapter 서비스를 처음 사용하기 전에 한 번만 수행해야 합니다.  
   

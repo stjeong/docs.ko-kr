@@ -2,12 +2,12 @@
 title: 워크플로에서 OData 피드 사용
 ms.date: 03/30/2017
 ms.assetid: 1b26617c-53e9-476a-81af-675c36d95919
-ms.openlocfilehash: a7e2a0658294681b154b11f48563ebc562c47210
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 8d08a58cecead105f6e1f580ea40175cac93e417
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44221625"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48780104"
 ---
 # <a name="consuming-odata-feeds-from-a-workflow"></a>워크플로에서 OData 피드 사용
 
@@ -23,7 +23,7 @@ WCF Data Services에는 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.
 
 ### <a name="adding-a-service-reference-to-the-wcf-data-service"></a>WCF Data Services에 서비스 참조 추가
 
-Northwind 클라이언트 라이브러리를 생성하려면 **에서** 서비스 참조 추가 [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] 대화 상자를 사용하여 Northwind OData 서비스에 참조를 추가할 수 있습니다.
+Northwind 클라이언트 라이브러리를 생성 하려면 사용 합니다 **서비스 참조 추가** Northwind OData 서비스에 대 한 참조를 추가 하려면 Visual Studio 2012에서 대화 상자.
 
 ![서비스 참조 추가](../../../docs/framework/windows-workflow-foundation/media/addservicereferencetonorthwindodataservice.gif "AddServiceReferencetoNorthwindODataService")
 
@@ -43,7 +43,7 @@ Northwind 클라이언트 라이브러리를 생성하려면 **에서** 서비�
 
 <xref:System.Data.Services.Client.DataServiceQuery%601> 클래스는 OData 서비스를 비동기적으로 쿼리하기 위한 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 및 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 메서드를 제공합니다. 이러한 메서드는 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 파생 클래스의 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 및 <xref:System.Activities.AsyncCodeActivity> 재정의에서 호출할 수 있습니다. <xref:System.Activities.AsyncCodeActivity> <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의가 반환되면 워크플로가 유휴 상태가 될 수 있으며(그러나 유지되지는 않음), 비동기 작업이 완료되면 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 는 런타임에서 호출됩니다.
 
-다음 예제에서는 두 입력 인수를 가진 `OrdersByCustomer` 활동을 정의합니다. `CustomerId` 인수는 반환할 주문을 식별하는 고객을 나타내고, `ServiceUri` 인수는 쿼리할 OData 서비스의 URI를 나타냅니다. 활동이 `AsyncCodeActivity<IEnumerable<Order>>`에서 파생되기 때문에 쿼리의 결과를 반환하는 데 사용되는 <xref:System.Activities.Activity%601.Result%2A> 출력 인수도 있습니다. <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의는 지정된 고객의 모든 주문을 선택하는 LINQ 쿼리를 만듭니다. 이 쿼리는 전달된 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>의 <xref:System.Activities.AsyncCodeActivityContext>로 지정되며, 그런 다음 쿼리의 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 메서드가 호출됩니다. 쿼리의 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A>로 전달된 콜백과 상태는 활동의 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 메서드에 전달되는 콜백과 상태입니다. 쿼리 실행이 완료되면 활동의 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 메서드가 호출됩니다. 쿼리는 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>에서 검색되며, 그런 다음 쿼리의 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 메서드가 호출됩니다. 이 메서드는 지정된 엔터티 형식의 <xref:System.Collections.Generic.IEnumerable%601> 을 반환합니다. 이 경우에는 `Order`를 반환합니다. `IEnumerable<Order>` 가 <xref:System.Activities.AsyncCodeActivity%601>의 제네릭 형식이므로 이 `IEnumerable` 은 활동의 <xref:System.Activities.Activity%601.Result%2A> <xref:System.Activities.OutArgument%601> 로 설정됩니다.
+다음 예제에서는 두 입력 인수를 가진 `OrdersByCustomer` 활동을 정의합니다. `CustomerId` 인수는 반환할 주문을 식별하는 고객을 나타내고, `ServiceUri` 인수는 쿼리할 OData 서비스의 URI를 나타냅니다. 활동이 `AsyncCodeActivity<IEnumerable<Order>>` 에서 파생되기 때문에 쿼리의 결과를 반환하는 데 사용되는 <xref:System.Activities.Activity%601.Result%2A> 출력 인수도 있습니다. <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의는 지정된 고객의 모든 주문을 선택하는 LINQ 쿼리를 만듭니다. 이 쿼리는 전달된 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A> 의 <xref:System.Activities.AsyncCodeActivityContext>로 지정되며, 그런 다음 쿼리의 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 메서드가 호출됩니다. 쿼리의 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 로 전달된 콜백과 상태는 활동의 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 메서드에 전달되는 콜백과 상태입니다. 쿼리 실행이 완료되면 활동의 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 메서드가 호출됩니다. 쿼리는 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>에서 검색되며, 그런 다음 쿼리의 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 메서드가 호출됩니다. 이 메서드는 지정된 엔터티 형식의 <xref:System.Collections.Generic.IEnumerable%601> 을 반환합니다. 이 경우에는 `Order`를 반환합니다. `IEnumerable<Order>` 가 <xref:System.Activities.AsyncCodeActivity%601>의 제네릭 형식이므로 이 `IEnumerable` 은 활동의 <xref:System.Activities.Activity%601.Result%2A> <xref:System.Activities.OutArgument%601> 로 설정됩니다.
 
 [!code-csharp[CFX_WCFDataServicesActivityExample#100](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#100)]
 
@@ -68,23 +68,23 @@ Calling WCF Data Service...
 >
 > 처리되지 않은 예외: System.InvalidOperationException: 이 요청을 처리하는 동안 오류가 발생했습니다. ---> System.Net.WebException: 원격 서버에 연결할 수 없습니다. ---> System.Net.Sockets.SocketException: 연결된 구성원으로부터 응답이 없어 연결하지 못했거나, 호스트로부터 응답이 없어 연결이 끊어졌습니다.
 
-쿼리에서 반환된 데이터를 추가로 처리해야 하는 경우 활동의 <xref:System.Activities.AsyncCodeActivity%601.EndExecute%2A> 재정의에서 이를 수행할 수 있습니다. <xref:System.Activities.AsyncCodeActivity%601.BeginExecute%2A> 및 <xref:System.Activities.AsyncCodeActivity%601.EndExecute%2A>는 워크플로 스레드를 사용하여 호출되며 이러한 재정의의 모든 코드는 비동기적으로 실행되지 않습니다. 추가 처리가 광범위하거나 오래 실행되는 경우나 쿼리 결과가 페이징되는 경우 다음 단원에서 설명하는 방법을 고려해야 합니다. 이 방법에서는 대리자를 사용하여 쿼리를 실행하고 비동기적으로 추가 처리를 수행합니다.
+쿼리에서 반환된 데이터를 추가로 처리해야 하는 경우 활동의 <xref:System.Activities.AsyncCodeActivity%601.EndExecute%2A> 재정의에서 이를 수행할 수 있습니다. <xref:System.Activities.AsyncCodeActivity%601.BeginExecute%2A> 및 <xref:System.Activities.AsyncCodeActivity%601.EndExecute%2A> 는 워크플로 스레드를 사용하여 호출되며 이러한 재정의의 모든 코드는 비동기적으로 실행되지 않습니다. 추가 처리가 광범위하거나 오래 실행되는 경우나 쿼리 결과가 페이징되는 경우 다음 단원에서 설명하는 방법을 고려해야 합니다. 이 방법에서는 대리자를 사용하여 쿼리를 실행하고 비동기적으로 추가 처리를 수행합니다.
 
 ### <a name="using-a-delegate"></a>대리자 사용
 
-[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 기반 활동은 <xref:System.Activities.AsyncCodeActivity> 클래스의 비동기 메서드를 호출할 뿐만 아니라 해당 메서드 중 하나에서 비동기 논리도 정의할 수 있습니다. 이 메서드는 활동의 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의에서 대리자를 사용하여 지정됩니다. 메서드가 반환될 때 런타임에서 활동의 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 재정의를 호출합니다. 워크플로에서 OData 서비스를 호출할 때 이 메서드를 사용하여 서비스를 쿼리하고 추가 처리를 제공할 수 있습니다.
+[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 기반 활동은 <xref:System.Activities.AsyncCodeActivity>클래스의 비동기 메서드를 호출할 뿐만 아니라 해당 메서드 중 하나에서 비동기 논리도 정의할 수 있습니다. 이 메서드는 활동의 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의에서 대리자를 사용하여 지정됩니다. 메서드가 반환될 때 런타임에서 활동의 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 재정의를 호출합니다. 워크플로에서 OData 서비스를 호출할 때 이 메서드를 사용하여 서비스를 쿼리하고 추가 처리를 제공할 수 있습니다.
 
-다음 예제에서는 `ListCustomers` 활동을 정의합니다. 이 활동은 샘플 Northwind 데이터 서비스를 쿼리하고 Northwind 데이터베이스의 모든 고객이 포함된 `List<Customer>`를 반환합니다. 비동기 작업은 `GetCustomers` 메서드에서 수행됩니다. 이 메서드는 서비스에서 모든 고객을 쿼리하여 `List<Customer>`에 복사합니다. 그런 다음 결과가 페이징되는지 확인하고 페이징되면 서비스에서 결과의 다음 페이지를 쿼리하여 목록에 추가하고 모든 고객 데이터가 검색될 때까지 계속합니다.
+다음 예제에서는 `ListCustomers` 활동을 정의합니다. 이 활동은 샘플 Northwind 데이터 서비스를 쿼리하고 Northwind 데이터베이스의 모든 고객이 포함된 `List<Customer>` 를 반환합니다. 비동기 작업은 `GetCustomers` 메서드에서 수행됩니다. 이 메서드는 서비스에서 모든 고객을 쿼리하여 `List<Customer>`에 복사합니다. 그런 다음 결과가 페이징되는지 확인하고 페이징되면 서비스에서 결과의 다음 페이지를 쿼리하여 목록에 추가하고 모든 고객 데이터가 검색될 때까지 계속합니다.
 
 > [!NOTE]
 > WCF Data Services의 페이징에 대 한 자세한 내용은 다음을 참조 하세요. [방법: 페이징 결과 (WCF Data Services) 로드](https://go.microsoft.com/fwlink/?LinkId=193452)합니다.
 
-모든 고객이 추가되면 목록이 반환됩니다. `GetCustomers` 메서드는 활동의 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의에 지정됩니다. 메서드에 반환 값이 있으므로 `Func<string, List<Customer>>`가 메서드를 지정하기 위해 만들어집니다.
+모든 고객이 추가되면 목록이 반환됩니다. `GetCustomers` 메서드는 활동의 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 재정의에 지정됩니다. 메서드에 반환 값이 있으므로 `Func<string, List<Customer>>` 가 메서드를 지정하기 위해 만들어집니다.
 
 > [!NOTE]
 > 비동기 작업을 수행하는 메서드에 반환 값이 없는 경우 <xref:System.Action> 대신 <!--zz <xref:System.Func> --> `System.Func`이 사용됩니다. 두 방법 모두를 사용 하 여 비동기 예제를 만드는 방법의 예제를 참조 하세요 [비동기 활동 만들기](../../../docs/framework/windows-workflow-foundation/creating-asynchronous-activities-in-wf.md)합니다.
 
-이 <!--zz <xref:System.Func> --> `System.Func` 가 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>에 할당된 다음 `BeginInvoke` 가 호출됩니다. 호출될 메서드가 활동의 인수 환경에 액세스할 수 없으므로 `ServiceUri` 인수의 값이 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A>에 전달된 콜백 및 상태와 함께 첫 번째 매개 변수로 전달됩니다. `GetCustomers`가 반환되면 런타임에서 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A>를 호출합니다. <xref:System.Activities.AsyncCodeActivity.EndExecute%2A>의 코드에서는 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>에서 대리자를 검색하고 `EndInvoke`를 호출하며 `GetCustomers` 메서드에서 반환된 고객의 목록인 결과를 반환합니다.
+이 <!--zz <xref:System.Func> --> `System.Func` 가 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>에 할당된 다음 `BeginInvoke` 가 호출됩니다. 호출될 메서드가 활동의 인수 환경에 액세스할 수 없으므로 `ServiceUri` 인수의 값이 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A>에 전달된 콜백 및 상태와 함께 첫 번째 매개 변수로 전달됩니다. `GetCustomers` 가 반환되면 런타임에서 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A>를 호출합니다. <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 의 코드에서는 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>에서 대리자를 검색하고 `EndInvoke`를 호출하며 `GetCustomers` 메서드에서 반환된 고객의 목록인 결과를 반환합니다.
 
 [!code-csharp[CFX_WCFDataServicesActivityExample#200](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#200)]
 
@@ -114,7 +114,7 @@ OData는 URI로 주소를 지정할 수 있는 리소스로 데이터를 노출�
 
 ```console
 Raw data returned:
-<?xml version="1.0" encoding="utf-8" standalone="yes"?> 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ContactName xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices">Maria Anders</ContactName>
 ```
 
@@ -122,7 +122,7 @@ Raw data returned:
 
 [!code-csharp[CFX_WCFDataServicesActivityExample#3](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#3)]
 
-<xref:System.Activities.Expressions.InvokeMethod%601>는 클래스의 정적 메서드와 인스턴스 메서드를 모두 호출할 수 있습니다. <xref:System.Net.WebClient.DownloadString%2A>은 <xref:System.Net.WebClient> 클래스의 인스턴스 메서드이므로 <xref:System.Net.WebClient> 클래스의 새 인스턴스가 <xref:System.Activities.Expressions.InvokeMethod%601.TargetObject%2A>에 대해 지정됩니다. `DownloadString`은 <xref:System.Activities.Expressions.InvokeMethod%601.MethodName%2A>으로 지정되고, 쿼리가 포함된 URI는 <xref:System.Activities.Expressions.InvokeMethod%601.Parameters%2A> 컬렉션에 지정되고, 반환 값은 <xref:System.Activities.Activity%601.Result%2A> 값에 할당됩니다. <xref:System.Activities.Expressions.InvokeMethod%601.RunAsynchronously%2A> 값은 메서드 호출이 워크플로와 관련하여 비동기적으로 실행됨을 의미하는 `true`로 설정됩니다. 다음 예제에서는 <xref:System.Activities.Expressions.InvokeMethod%601> 활동을 사용하여 샘플 Northwind 데이터 서비스에서 특정 고객의 주문 목록을 쿼리하는 워크플로가 생성되며 반환된 데이터가 콘솔에 기록됩니다.
+<xref:System.Activities.Expressions.InvokeMethod%601> 는 클래스의 정적 메서드와 인스턴스 메서드를 모두 호출할 수 있습니다. <xref:System.Net.WebClient.DownloadString%2A> 은 <xref:System.Net.WebClient> 클래스의 인스턴스 메서드이므로 <xref:System.Net.WebClient> 클래스의 새 인스턴스가 <xref:System.Activities.Expressions.InvokeMethod%601.TargetObject%2A>에 대해 지정됩니다. `DownloadString` 은 <xref:System.Activities.Expressions.InvokeMethod%601.MethodName%2A>으로 지정되고, 쿼리가 포함된 URI는 <xref:System.Activities.Expressions.InvokeMethod%601.Parameters%2A> 컬렉션에 지정되고, 반환 값은 <xref:System.Activities.Activity%601.Result%2A> 값에 할당됩니다. <xref:System.Activities.Expressions.InvokeMethod%601.RunAsynchronously%2A> 값은 메서드 호출이 워크플로와 관련하여 비동기적으로 실행됨을 의미하는 `true`로 설정됩니다. 다음 예제에서는 <xref:System.Activities.Expressions.InvokeMethod%601> 활동을 사용하여 샘플 Northwind 데이터 서비스에서 특정 고객의 주문 목록을 쿼리하는 워크플로가 생성되며 반환된 데이터가 콘솔에 기록됩니다.
 
 [!code-csharp[CFX_WCFDataServicesActivityExample#1](../../../samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#1)]
 

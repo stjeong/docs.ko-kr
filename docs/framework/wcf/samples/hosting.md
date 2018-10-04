@@ -3,11 +3,11 @@ title: Hosting1
 ms.date: 03/30/2017
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4
 ms.openlocfilehash: 6cbd05bd0d478898807ef0bfadfc64f1feea0574
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030345"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48780234"
 ---
 # <a name="hosting"></a>호스팅
 이 섹션에는 호스팅 Windows Communication Foundation (WCF) 서비스를 보여 주는 샘플이 들어 있습니다.  
