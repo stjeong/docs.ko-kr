@@ -8,11 +8,11 @@ ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: f885416629ae58949cc688f4e6fbd41e77e872aa
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48781676"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838223"
 ---
 # <a name="ltremovegt-element-for-ltnamedcachesgt"></a>&lt;제거할&gt; 요소에 대 한 &lt;namedCaches&gt;
 메모리 캐시용으로 명명된 캐시 항목을 `namedCaches` 컬렉션에서 제거합니다.  

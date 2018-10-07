@@ -2,12 +2,12 @@
 title: Windows Communication Foundation 샘플 실행
 ms.date: 03/30/2017
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
-ms.openlocfilehash: d6fc93af217bfc282ce7030973be32baf7d864cd
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 3e49a88fa5369cc2ad2251e48f3eca74fa7c4445
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45618694"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48836916"
 ---
 # <a name="running-the-windows-communication-foundation-samples"></a>Windows Communication Foundation 샘플 실행
 Windows Communication Foundation (WCF) 샘플 단일 컴퓨터 또는 다중 컴퓨터 구성에서 실행할 수 있습니다. 샘플은 단일 컴퓨터 구성에서 실행할 준비가 된 상태로 제공됩니다. 다중 컴퓨터 구성에서는 샘플의 구성 파일 설정을 수정해야 합니다. 다음 절차에서는 단일 컴퓨터 및 다중 컴퓨터 구성에서 샘플을 실행하는 방법에 대해 설명합니다. IIS(인터넷 정보 서비스) 및 자체 호스팅 샘플에서 호스트되는 서비스에 적용되는 단계가 약간씩 다릅니다. 대부분의 샘플은 IIS에서 호스트됩니다. 이러한 샘플이 호스트되는 방법에 대한 자세한 내용은 샘플 추가 정보를 참조하세요.  
@@ -19,7 +19,7 @@ Windows Communication Foundation (WCF) 샘플 단일 컴퓨터 또는 다중 컴
   
 ### <a name="to-run-the-sample-on-the-same-machine"></a>단일 컴퓨터 구성에서 샘플을 실행하려면  
   
-1.  서비스가 IIS에서 호스트 되는 경우 다음 주소를 입력 하 여 브라우저를 사용 하 여 서비스에 액세스할 수 있는지 확인: http://localhost/servicemodelsamples/service.svc합니다. 확인 페이지가 응답으로 표시됩니다. 확인 페이지가 표시 되지 않으면, 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+1.  서비스가 IIS에서 호스트 되는 경우 다음 주소를 입력 하 여 브라우저를 사용 하 여 서비스에 액세스할 수 있는지 확인: `http://localhost/servicemodelsamples/service.svc`합니다. 확인 페이지가 응답으로 표시됩니다. 확인 페이지가 표시 되지 않으면, 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
   
 2.  서비스가 자체 호스트될 경우 언어별 폴더의 \service\bin에서 Service.exe를 실행합니다. 서비스 콘솔 창에 서비스 동작이 표시됩니다.  
   
@@ -63,7 +63,7 @@ Windows Communication Foundation (WCF) 샘플 단일 컴퓨터 또는 다중 컴
   
 2.  서비스가 IIS에서 호스트될 경우  
   
-    1.  브라우저의 주소를 입력 하 여 서비스를 활성화 http://localhost/servicemodelsamples/service.svc합니다.  
+    1.  브라우저의 주소를 입력 하 여 서비스를 활성화 `http://localhost/servicemodelsamples/service.svc`합니다.  
   
     2.  솔루션을 선택 합니다 **디버그** 메뉴와 **프로세스에 연결** 메뉴 항목입니다.  
   

@@ -13,11 +13,11 @@ ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
 author: mcleblanc
 ms.author: markl
 ms.openlocfilehash: 55a7eb431432b67b3252853d14bf93be304ee883
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48780819"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48845439"
 ---
 # <a name="lttracegt-element"></a>&lt;추적&gt; 요소
 추적 메시지를 수집하고 저장하고 라우팅하는 수신기가 포함되어 있습니다.  

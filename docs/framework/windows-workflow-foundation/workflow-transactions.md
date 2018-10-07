@@ -3,11 +3,11 @@ title: 워크플로 트랜잭션
 ms.date: 03/30/2017
 ms.assetid: 6081fb02-c0f2-483d-97b8-f3b7dc03011d
 ms.openlocfilehash: e2a0c301abac562904e976fe09e5a68697b191e5
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48779961"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838093"
 ---
 # <a name="workflow-transactions"></a>워크플로 트랜잭션
 

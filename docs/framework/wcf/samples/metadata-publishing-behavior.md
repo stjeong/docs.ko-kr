@@ -5,12 +5,12 @@ helpviewer_keywords:
 - service behaviors, metadata publishing sample
 - Metadata Publishing Behaviors Sample [Windows Communication Foundation]
 ms.assetid: 78c13633-d026-4814-910e-1c801cffdac7
-ms.openlocfilehash: c3e26454cc9b29620d80a86df7d7aee131e18200
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b728d1c5a794fa6e0cadef136050d8fa31fb4afe
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197099"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838795"
 ---
 # <a name="metadata-publishing-behavior"></a>메타데이터 게시 동작
 Metadata Publishing Behavior 샘플에서는 서비스의 메타데이터 게시 기능을 제어하는 방법을 보여 줍니다. 잠재적으로 중요 한 서비스 메타 데이터가 실수로 공개를 방지 하려면 Windows Communication Foundation (WCF) 서비스에 대 한 기본 구성 메타 데이터 게시를 해제 합니다. 이 동작은 기본적으로 안전하지만 구성에서 서비스의 메타데이터 게시 동작이 명시적으로 사용하도록 설정되어 있지 않은 경우 Svcutil.exe 등의 메타데이터 가져오기 도구를 사용하여 서비스를 호출하는 데 필요한 클라이언트 코드를 생성할 수 없습니다.  
@@ -23,7 +23,7 @@ Metadata Publishing Behavior 샘플에서는 서비스의 메타데이터 게시
 > [!NOTE]
 >  이 샘플의 설치 절차 및 빌드 지침은 이 항목의 끝부분에 나와 있습니다.  
   
- 서비스에서 메타데이터를 노출하려면 서비스에 <xref:System.ServiceModel.Description.ServiceMetadataBehavior>가 구성되어야 합니다. 이 동작이 존재하는 경우 <xref:System.ServiceModel.Description.IMetadataExchange> 계약을 WS-MetadataExchange(MEX) 프로토콜의 구현으로 노출하도록 엔드포인트를 구성함으로써 메타데이터를 게시할 수 있습니다. 편의상 이 계약에는 "IMetadataExchange"라는 약식 구성 이름이 지정되었습니다. 이 샘플에서는 보안 모드가 `mexHttpBinding`으로 설정된 `wsHttpBinding`과 동일한 `None`이라는 편리한 표준 바인딩을 사용합니다. "Mex"의 상대 주소는 끝점에는 확인 하는 경우 서비스의 기본 주소의 끝점 주소에서 결과 http://localhost/servicemodelsamples/service.svc/mex합니다. 다음에서는 동작 구성을 보여 줍니다.  
+ 서비스에서 메타데이터를 노출하려면 서비스에 <xref:System.ServiceModel.Description.ServiceMetadataBehavior>가 구성되어야 합니다. 이 동작이 존재하는 경우 <xref:System.ServiceModel.Description.IMetadataExchange> 계약을 WS-MetadataExchange(MEX) 프로토콜의 구현으로 노출하도록 엔드포인트를 구성함으로써 메타데이터를 게시할 수 있습니다. 편의상 이 계약에는 "IMetadataExchange"라는 약식 구성 이름이 지정되었습니다. 이 샘플에서는 보안 모드가 `mexHttpBinding`으로 설정된 `wsHttpBinding`과 동일한 `None`이라는 편리한 표준 바인딩을 사용합니다. "Mex"의 상대 주소는 끝점에는 확인 하는 경우 서비스의 기본 주소의 끝점 주소에서 결과 `http://localhost/servicemodelsamples/service.svc/mex`합니다. 다음에서는 동작 구성을 보여 줍니다.  
   
 ```xml  
 <behaviors>  
@@ -55,7 +55,7 @@ Metadata Publishing Behavior 샘플에서는 서비스의 메타데이터 게시
           contract="IMetadataExchange" />  
 ```  
   
- 이 샘플에서는 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정하며, 따라서 HTTP GET을 사용하여 서비스의 메타데이터를 노출합니다. HTTP GET 메타데이터 엔드포인트를 사용하려면 서비스가 HTTP 기본 주소를 가져야 합니다. 서비스의 기본 주소에 쿼리 문자열 `?wsdl`을 사용하여 메타데이터에 액세스합니다. 예를 들어, 웹 브라우저에서 서비스에 대 한 WSDL 참조에 사용할 주소 http://localhost/servicemodelsamples/service.svc?wsdl합니다. 또는 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>를 `true`로 설정하여 HTTPS를 통해 메타데이터를 노출하는 데 이 동작을 사용할 수 있습니다. 이 경우 HTTPS 기본 주소가 필요합니다.  
+ 이 샘플에서는 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정하며, 따라서 HTTP GET을 사용하여 서비스의 메타데이터를 노출합니다. HTTP GET 메타데이터 엔드포인트를 사용하려면 서비스가 HTTP 기본 주소를 가져야 합니다. 서비스의 기본 주소에 쿼리 문자열 `?wsdl`을 사용하여 메타데이터에 액세스합니다. 예를 들어, 웹 브라우저에서 서비스에 대 한 WSDL 참조에 사용할 주소 `http://localhost/servicemodelsamples/service.svc?wsdl`합니다. 또는 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>를 `true`로 설정하여 HTTPS를 통해 메타데이터를 노출하는 데 이 동작을 사용할 수 있습니다. 이 경우 HTTPS 기본 주소가 필요합니다.  
   
  서비스의 MEX 끝점 사용 하 여 액세스 하는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다.  
   
@@ -63,7 +63,7 @@ Metadata Publishing Behavior 샘플에서는 서비스의 메타데이터 게시
   
  그러면 서비스의 메타데이터를 기준으로 클라이언트가 생성됩니다.  
   
- HTTP GET을 사용 하는 서비스의 메타 데이터에 액세스 하려면 브라우저를 가리키고 http://localhost/servicemodelsamples/service.svc?wsdl합니다.  
+ HTTP GET을 사용 하는 서비스의 메타 데이터에 액세스 하려면 브라우저를 가리키고 `http://localhost/servicemodelsamples/service.svc?wsdl`합니다.  
   
  이 동작을 제거하고 서비스를 열려고 시도하면 예외가 발생합니다. 이 동작이 없으면 `IMetadataExchange` 계약이 구성된 엔드포인트에 구현이 없으므로 그러한 오류가 발생합니다.  
   

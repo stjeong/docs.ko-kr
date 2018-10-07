@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 34173812f4f6fac940632e23e6641e458250a4ee
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 7cd25b980afa067ac78fc081c0a7a8e65a23258b
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48028190"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838262"
 ---
 # <a name="ltwebrequestmodulesgt-element-network-settings"></a>&lt;webRequestModules&gt; 요소 (네트워크 설정)
 네트워크 호스트에서 정보를 요청 하는 데는 모듈을 지정 합니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "48028190"
 ## <a name="remarks"></a>설명  
  `webRequestModules` 요소는 <xref:System.Net.WebRequest> 클래스의 하위 클래스를 등록하여 네트워크 호스트로의 정보 요청을 처리합니다. 웹 요청 모듈을 구현 해야 합니다는 <xref:System.Net.IWebRequestCreate> 인터페이스입니다.  
   
- .NET Framework는 http://, https:// 및 file://을 시작 하는 Uri에 대 한 웹 요청 모듈을 포함 합니다. 구성 파일에서 사용자 지정 모듈을 등록에 의해서만 기본 모듈을 재정의할 수 있습니다.  
+ 로 시작 하는 Uri에 대 한 웹 요청 모듈을 포함 하는.NET Framework `http://`하십시오 `https://`, 및 `file://`합니다. 구성 파일에서 사용자 지정 모듈을 등록에 의해서만 기본 모듈을 재정의할 수 있습니다.  
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  

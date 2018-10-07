@@ -2,19 +2,19 @@
 title: '방법: Windows Server AppFabric을 사용하여 워크플로 서비스 호스팅'
 ms.date: 03/30/2017
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
-ms.openlocfilehash: d71052edaccd34bab7354c93431a260f41647f2b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2c1e4e8763ad9bd65099173c75d272965ac8caa8
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500032"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48840630"
 ---
 # <a name="how-to-host-a-workflow-service-with-windows-server-app-fabric"></a>방법: Windows Server AppFabric을 사용하여 워크플로 서비스 호스팅
 AppFabric에서 워크플로 서비스를 호스팅하는 것은 IIS/WAS에서 호스팅하는 것과 유사합니다. 유일한 차이점은 AppFabric에서 워크플로 서비스의 배포, 모니터링 및 관리를 위해 제공하는 도구입니다. 이 항목에서 만든 워크플로 서비스를 사용 합니다 [장기 실행 워크플로 서비스를 만드는](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)합니다. 이 항목에서는 워크플로 서비스를 만드는 방법을 안내하며, AppFabric을 사용하여 워크플로 서비스를 호스팅하는 방법을 설명합니다. Windows Server Appfabric에 대 한 자세한 내용은 참조 하세요. [Windows Server Appfabric](https://go.microsoft.com/fwlink/?LinkID=193037&clcid=0x409)합니다. 아래의 단계를 완료하기 전에 Windows Server AppFabric이 설치되어 있는지 확인합니다.  이 오픈 인터넷 정보 서비스 (inetmgr.exe)를 수행 하려면 서버 이름을 클릭 합니다 **연결** 사이트를 클릭 하 고 클릭 **기본 웹 사이트**합니다. 화면 오른쪽에 있는 이라는 섹션이 나타납니다 **App Fabric**합니다. 이 섹션(오른쪽 창의 맨 위에 있음)이 없으면 AppFabric이 설치되지 않은 것입니다. Windows Server Appfabric을 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows Server App Fabric 설치](https://go.microsoft.com/fwlink/?LinkId=193136)합니다.  
   
 ### <a name="creating-a-simple-workflow-service"></a>간단한 워크플로 서비스 만들기  
   
-1.  오픈 [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] 에서 만든 OrderProcessing 솔루션을 로드 합니다 [장기 실행 워크플로 서비스를 만드는](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md) 항목입니다.  
+1.  Visual Studio 2012를 열고에서 만든 OrderProcessing 솔루션을 로드 합니다 [장기 실행 워크플로 서비스를 만드는](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md) 항목입니다.  
   
 2.  마우스 오른쪽 단추로 클릭 합니다 **OrderService** 프로젝트를 마우스 **속성** 선택 합니다 **웹** 탭 합니다.  
   

@@ -3,11 +3,11 @@ title: '&lt;netTcpContextBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
 ms.openlocfilehash: aba2ab207ca39b88312c956550219e4ad5c133f5
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48778064"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838639"
 ---
 # <a name="ltnettcpcontextbindinggt"></a>&lt;netTcpContextBinding&gt;
 보호 수준을 서명해야 하는 <xref:System.ServiceModel.NetTcpBinding>의 컨텍스트를 지정합니다. NetTcpContextBinding의 contextExchangeMechanism은 SOAPHeader입니다.  

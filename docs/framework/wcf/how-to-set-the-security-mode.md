@@ -10,12 +10,12 @@ helpviewer_keywords:
 - WCF, security
 ms.assetid: 6e01dd9f-b5dd-4474-b24c-06e124de4ff7
 author: BrucePerlerMS
-ms.openlocfilehash: 32fd1ebede841488d1bfabd2f92bd3fb1ffb55e8
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 0efa9ecbe384009cc8fc4735ec9fc3db8ed3ce59
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48035658"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48841458"
 ---
 # <a name="how-to-set-the-security-mode"></a>방법: 보안 모드 설정
 Windows Communication Foundation (WCF) 보안에 가장 미리 정의 된 바인딩에서 발견 되는 세 가지 일반 보안 모드: 전송, 메시지 및 "메시지 자격 증명을 사용 하 여 전송 합니다." 두 개의 추가 모드는 두 바인딩에만 해당됩니다. 즉, "전송-자격 증명만" 모드는 <xref:System.ServiceModel.BasicHttpBinding>에서 사용되고, "모두" 모드는 <xref:System.ServiceModel.NetMsmqBinding>에서 사용됩니다. 그러나 이 항목에서는 세 가지 일반 보안 모드(<xref:System.ServiceModel.SecurityMode.Transport>, <xref:System.ServiceModel.SecurityMode.Message>, <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>)에 대해 중점적으로 설명합니다.  
@@ -88,7 +88,7 @@ Windows Communication Foundation (WCF) 보안에 가장 미리 정의 된 바인
     ```xml  
     <wsHttpBinding>  
     <binding name="TransportSecurity">  
-        <security mode="Transport" />  
+        <security mode="Transport" >  
            <transport clientCredentialType = "Windows" />  
         </security>  
     </binding>  
@@ -100,7 +100,7 @@ Windows Communication Foundation (WCF) 보안에 가장 미리 정의 된 바인
     ```xml  
     <wsHttpBinding>  
     <binding name="MessageSecurity">  
-        <security mode="Message" />  
+        <security mode="Message" >  
            <message clientCredentialType = "Certificate" />  
         </security>  
     </binding>  

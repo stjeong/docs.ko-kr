@@ -3,11 +3,11 @@ title: 사용자 지정 활동
 ms.date: 03/30/2017
 ms.assetid: 5cde06b3-51b2-4e46-900d-11140bae77f4
 ms.openlocfilehash: 66a22f254c2f5d7a6453bd6d4d85629018f40782
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48780117"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838119"
 ---
 # <a name="custom-activities"></a>사용자 지정 활동
 이 섹션에는 사용자 지정 활동에서 Windows WF (Workflow Foundation)를 만드는 방법을 보여 주는 샘플이 들어 있습니다.  

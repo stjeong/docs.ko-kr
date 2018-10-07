@@ -2,12 +2,12 @@
 title: 'F # 설치'
 description: 'F #의 경우이 사용자 환경에 따라 설치 하는 방법에 알아봅니다.'
 ms.date: 08/28/2018
-ms.openlocfilehash: 6c10b958e35bf7925965d076a48839b0ce19d2c0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 909e1c07ff7f6d52db77a987639d1c749146fdca
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515899"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48844009"
 ---
 # <a name="install-f"></a>F # 설치 #
 
@@ -17,13 +17,13 @@ ms.locfileid: "43515899"
 
 다운로드 하는 경우 [Visual Studio](https://visualstudio.microsoft.com/) 처음으로이 먼저 설치는 Visual Studio 설치 관리자입니다. 설치 관리자에서 적절 한 SKU의 Visual Studio를 설치 합니다. 이미 있는 경우 설치를 클릭 **수정**합니다.
 
-다음 워크 로드의 목록이 표시 됩니다. 선택 **ASP.NET 및 웹 개발**, F # 지원,.NET Core 지원 설치할지 및 ASP.NET Core에 대 한 지원 되는 F # 프로젝트입니다.
+다음 워크 로드의 목록이 표시 됩니다. 선택 **ASP.NET 및 웹 개발** F # 지원과 ASP.NET Core 프로젝트에 대 한.NET Core 지원을 설치할 됩니다.
 
 다음으로, 클릭 **수정** 오른쪽 아래에 있습니다.  그러면 선택한 모든 항목이 설치 됩니다. 클릭 하 여 F # 언어 지원과 Visual Studio 2017을 열고 다음 **시작**합니다.
 
 ## <a name="install-f-with-visual-studio-for-mac"></a>F # Visual Studio를 사용 하 여 Mac 용 설치
 
-F #에서 기본적으로 설치 됩니다 [Mac 용 Visual Studio](https://visualstudio.microsoft.com/vs/mac/), 어떤 구성에 관계 없이 선택 합니다.
+F #에서 기본적으로 설치 됩니다 [Mac 용 Visual Studio](https://visualstudio.microsoft.com/vs/mac/), 원하는 구성에 관계 없이 합니다.
 
 설치가 완료 되 면 "Visual Studio 시작"을 선택 합니다. 또한 macOS에서 Finder를 통해 시작할 수도 있습니다.
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Impersonating the Client Sample [Windows Communication Foundation]
 - impersonation, Windows Communication Foundation sample
 ms.assetid: 8bd974e1-90db-4152-95a3-1d4b1a7734f8
-ms.openlocfilehash: 5a13ab73e48616b38e583b1c9948fc1bf5eb8a64
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 29ed1f988819a47d8ac8845a379aeda5e15c655e
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522290"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48844295"
 ---
 # <a name="impersonating-the-client"></a>Impersonating the Client
 Impersonation 샘플에서는 서비스가 호출자를 대신하여 시스템 리소스에 액세스할 수 있도록 서비스에서 호출자 응용 프로그램을 가장하는 방법을 보여 줍니다.  
@@ -102,7 +102,7 @@ client.ClientCredentials.Windows.AllowedImpersonationLevel = TokenImpersonationL
  샘플을 실행하면 작업 요청 및 응답이 서비스와 클라이언트 콘솔 창 모두에 표시됩니다. 서비스와 클라이언트를 종료하려면 각 콘솔 창에서 Enter 키를 누릅니다.  
   
 > [!NOTE]
->  서비스 관리자 계정으로 실행 해야 합니다 또는 실행 되는 계정에 등록할 수 있는 권한이 부여 해야 합니다 http://localhost:8000/ServiceModelSamples HTTP 계층을 사용 하 여 URI입니다. 설정 하 여 이러한 권한을 부여할 수 있습니다는 [Namespace 예약](https://go.microsoft.com/fwlink/?LinkId=95012) 사용 하는 [Httpcfg.exe 도구](https://go.microsoft.com/fwlink/?LinkId=95010)합니다.  
+>  서비스 관리자 계정으로 실행 해야 합니다 또는 실행 되는 계정에 등록할 수 있는 권한이 부여 해야 합니다 `http://localhost:8000/ServiceModelSamples` HTTP 계층을 사용 하 여 URI입니다. 설정 하 여 이러한 권한을 부여할 수 있습니다는 [Namespace 예약](https://go.microsoft.com/fwlink/?LinkId=95012) 사용 하는 [Httpcfg.exe 도구](https://go.microsoft.com/fwlink/?LinkId=95010)합니다.  
   
 > [!NOTE]
 >  [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]을 실행하는 컴퓨터에서는 Host.exe 응용 프로그램에 가장 권한이 있는 경우에만 가장이 지원됩니다. 기본적으로 관리자만 이 사용 권한을 가집니다. 로 이동 하는 서비스를 실행 하는 계정에이 권한을 추가할 **관리 도구**오픈 **로컬 보안 정책**오픈 **로컬 정책**, 클릭 **사용자 권한 할당**, 선택한 **인증 후 클라이언트 가장** 를 두 번 클릭 하 고 **속성** 사용자 또는 그룹을 추가 합니다.  

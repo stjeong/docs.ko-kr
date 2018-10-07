@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 5bad60aa-6084-4c7b-aefd-9b581f04382e
 author: BrucePerlerMS
 ms.openlocfilehash: f7cd2268eefa0176ab71a3d5d3bc82c178664742
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48779773"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48837862"
 ---
 # <a name="endpoint-security-validation-and-authentication-failures"></a>엔드포인트: Security Validation and Authentication Failures
 카운터 이름: Security Validation and Authentication Failures  

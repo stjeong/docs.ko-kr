@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Svcutil.exe
 - clients [WCF], consuming services
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
-ms.openlocfilehash: f9ae53aeb988f23611adb4b00354f65918790d3b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 01a30ac6cb252eba51cfff8a221c28425f347b0a
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47200765"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48837266"
 ---
 # <a name="servicemodel-metadata-utility-tool-svcutilexe"></a>ServiceModel Metadata 유틸리티 도구(Svcutil.exe)
 
@@ -236,7 +236,7 @@ Svcutil.exe를 사용하면 응용 프로그램에 대해 컴파일된 어셈블
 
 svcutil을 사용하여 서비스에 대해 메타데이터를 생성할 때는 다음 메시지가 나타날 수 있습니다.
 
-오류:에서 메타 데이터를 가져올 수 없습니다 http://localhost:8000/somesservice/mex XML 데이터를 읽는 동안 최대 nametable 문자 수 할당량 (16384) 초과 합니다. nametable은 XML 처리 도중에 발견된 문자열을 저장하는 데 사용되는 데이터 구조입니다. 반복되지 않는 요소 이름, 특성 이름 및 특성 값을 가지는 긴 XML 문서로 인해 이 할당량이 트리거될 수 있습니다.  XML 판독기를 만들 때 사용되는 XmlDictionaryReaderQuotas 개체에서 MaxNameTableCharCount 속성을 변경하여 이 할당량을 늘릴 수 있습니다.
+오류:에서 메타 데이터를 가져올 수 없습니다 `http://localhost:8000/somesservice/mex` XML 데이터를 읽는 동안 최대 nametable 문자 수 할당량 (16384) 초과 합니다. nametable은 XML 처리 도중에 발견된 문자열을 저장하는 데 사용되는 데이터 구조입니다. 반복되지 않는 요소 이름, 특성 이름 및 특성 값을 가지는 긴 XML 문서로 인해 이 할당량이 트리거될 수 있습니다.  XML 판독기를 만들 때 사용되는 XmlDictionaryReaderQuotas 개체에서 MaxNameTableCharCount 속성을 변경하여 이 할당량을 늘릴 수 있습니다.
 
 이 오류는 큰 WSDL 파일의 메타데이터를 요청하면 해당 파일을 반환하는 서비스에서 발생할 수 있습니다. svcutil.exe 도구에 대한 문자 할당량이 초과되어 문제가 발생합니다. 이 값은 서비스 거부(dos) 공격을 방지하기 위해 설정됩니다. svcutil에 대해 다음 구성 파일을 지정하여 이 할당량을 늘릴 수 있습니다.
 

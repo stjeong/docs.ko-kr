@@ -2,12 +2,12 @@
 title: '&lt;scopedCertificates&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: c7b6fc35-d4b2-4c18-98bd-83e09591f1d3
-ms.openlocfilehash: d95e608fa9b94086dac72341eb599f258dae6097
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5b9bf4d25e23c8bdc4e3d01c2dfa61d059166117
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748866"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838282"
 ---
 # <a name="ltscopedcertificatesgt-element"></a>&lt;scopedCertificates&gt; 요소
 인증에 대해 범위가 지정된 특정 서비스가 제공하는 X.509 인증서 컬렉션을 나타냅니다. 이 컬렉션은 일반적으로 연합 시나리오에서 보안 토큰 서비스에 대한 서비스 인증서를 지정하는 데 사용됩니다.  
@@ -56,10 +56,10 @@ endpointBehaviors 섹션
   
  바인딩을 수행할 때 서비스용 인증서가 필요하고 서비스 URL에 대한 특정 인증서를 ScopedCertificates에서 찾을 수 없는 경우, 기본 인증서가 사용됩니다.  
   
- 자세한 내용은의 "범위가 지정 된 인증서" 섹션을 참조 하십시오. [하는 방법: 페더레이션 클라이언트 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)합니다.  
+ 자세한 내용은의 "범위가 지정 된 인증서" 섹션을 참조 하세요 [방법: 페더레이션 클라이언트 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 도메인 이름이 끝점과 통신할 때 사용할 클라이언트에 대 한 서비스 인증서를 지정 http://www.contoso.com HTTP 프로토콜을 통한 합니다.  
+ 다음 예제에서는 클라이언트가 도메인 이름이 끝점과 통신할 때 사용할 서비스 인증서를 지정 `http://www.contoso.com` HTTP 프로토콜을 통해.  
   
 ```xml  
 <serviceCertificate>  

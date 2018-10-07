@@ -5,12 +5,12 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/12/2018
 ms.custom: vs-dotnet
-ms.openlocfilehash: 7daac744238feb38358e4cc0ab185e90257aa98d
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: faae4b3e3ef96d1d8dd73b7ac313b0a5deffec34
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48027457"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838236"
 ---
 # <a name="using-visual-studio-tools-for-docker-visual-studio-on-windows"></a>Visual Studio Tools for Docker (Windows의 Visual Studio) 사용
 
@@ -65,6 +65,23 @@ Visual Studio 2017에 docker 지원이 포함 됩니다. 여기서 Visual Studio
 Visual Studio 2017의 솔루션 탐색기에서 그림 4-29: Docker 파일
 
 하는 경우 *docker compose.yml* 이미 하기만 하면 Visual Studio에 필요한 구성 코드 줄을 추가 합니다.
+
+## <a name="configure-docker-tools"></a>Docker 도구를 구성 합니다.
+
+주 메뉴에서 선택 **도구** > **옵션**을 확장 하 고 **컨테이너 도구** > **설정**합니다. 컨테이너 도구 설정이 표시 됩니다.
+
+![](./media/visual-studio-docker-tools-options.png)
+
+그림 4-30: Docker 도구 옵션
+
+다음 표에서 이러한 옵션을 설정 하는 방법을 결정 하는 데 도움이 될 수 있습니다.
+
+| 이름 | 기본 설정 | 설명 |
+| -----|:---------------:| ----------- |
+| 프로젝트 로드 시 필요한 Docker 이미지를 자동으로 풀 | 켜기 | 성능 향상된을 위해 프로젝트를 로드 하는 경우, Visual Studio는 Docker 가져오기 작업을 백그라운드에서 이미지가 이미 다운로드 될 때 코드를 실행할 준비가 되도록 또는 시작 다운로드 중입니다. 방금 프로젝트를 로드 하 고 코드를 검색, 경우 해제할 수 있습니다이 필요 하지 않습니다 하는 컨테이너 이미지 다운로드를 방지 합니다. |
+| 백그라운드에서 컨테이너를 자동으로 시작 합니다. | 켜기 | 다시 성능 향상된을 위해 Visual Studio 컨테이너를 만듭니다 볼륨 탑재를 사용 하 여 빌드하고 컨테이너를 실행 하는 데 적합 합니다. 컨테이너를 만들 때 제어 하려는 경우이 해제 합니다. |
+| Kill 컨테이너 솔루션에 자동으로 닫기 | 켜기 | 이 기능을 끌 솔루션을 닫기 또는 Visual Studio를 닫은 후에 계속 실행 하기 위해 솔루션에 대 한 컨테이너를 하려는 경우. |
+| Localhost SSL 인증서 신뢰에 대 한 확인 안 함 | 끄기 | Visual Studio는 SSL 인증서는 이전 프로젝트에 대 한 신뢰할 수 있는 된 후에 새 프로젝트에 대 한 프롬프트를 계속 됩니다. 다른 프로젝트를 열면 프롬프트를 시작 하지 않으려면이 확인란을 설정할 수 있습니다. |
 
 **자세한 정보:** 서비스 구현 및 Visual Studio Tools for Docker 사용에 자세한 내용은 다음 문서를 참조 하세요.
 

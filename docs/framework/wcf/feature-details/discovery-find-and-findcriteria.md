@@ -2,12 +2,12 @@
 title: 찾기 및 FindCriteria
 ms.date: 03/30/2017
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
-ms.openlocfilehash: bd54a7bc896870035972daf1ea6f56d84dc5414e
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 7c389a4f0b8fb9789db33fe3edbb01a1d6302137
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48583932"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48836805"
 ---
 # <a name="discovery-find-and-findcriteria"></a>찾기 및 FindCriteria
 찾기 작업은 하나 이상의 서비스를 검색하는 클라이언트에 의해 시작되며 검색 작업의 주요 동작 중 하나입니다. 찾기를 수행하면 네트워크를 통해 WS-Discovery Probe 메시지가 보내집니다. 지정된 조건과 일치하는 서비스는 WS-Discovery ProbeMatch 메시지를 사용하여 응답합니다. 검색 메시지에 대 한 자세한 내용은 참조는 [Ws-discovery 사양](https://go.microsoft.com/fwlink/?LinkID=122347)합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "48583932"
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType>는 기본 대/소문자 구분 문자열 비교를 수행합니다.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> 세그먼트 일치 하는 항목 구분 하 여 "/"입니다. 에 대 한 검색 http://contoso/building1 범위를 사용 하 여 서비스와 일치 http://contoso/building/floor1합니다. 일치 하지 않는 참고 http://contoso/building100 마지막 두 세그먼트가 일치 하지 않으므로 합니다.  
+    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> 세그먼트 일치 하는 항목 구분 하 여 "/"입니다. 에 대 한 검색 `http://contoso/building1` 범위를 사용 하 여 서비스와 일치 `http://contoso/building/floor1`합니다. 일치 하지 않는 참고 `http://contoso/building100` 마지막 두 세그먼트가 일치 하지 않으므로 합니다.  
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType>는 LDAP URL을 사용하여 세그먼트별로 범위를 일치시킵니다.  
   

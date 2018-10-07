@@ -2,12 +2,12 @@
 title: AJAX Service Using Complex Types 샘플
 ms.date: 03/30/2017
 ms.assetid: 88242b99-4811-4cbe-8201-52ddf48fb174
-ms.openlocfilehash: 4574e5d33ebed7184e229c71e03496db34a95575
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ef44dc0eddb165c93b912da4fed994074668a250
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528287"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48837562"
 ---
 # <a name="ajax-service-using-complex-types-sample"></a>AJAX Service Using Complex Types 샘플
 이 샘플에는 Windows Communication Foundation (WCF)를 사용 하 여 복합 형식의 인스턴스를 만들고 간에 서비스 및 클라이언트 JavaScript 개체 표기법 (JSON)으로 전송 하는 ASP.NET Asynchronous JavaScript and XML (AJAX) 서비스를 만드는 방법을 보여 줍니다. 웹 브라우저 클라이언트에서 JavaScript 코드를 사용하여 AJAX 서비스에 액세스할 수 있습니다. 이 샘플을 기반으로 합니다 [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md) 샘플입니다.  
@@ -55,7 +55,7 @@ function onSuccess(mathResult){
   
 2.  에 설명 된 대로 ComplexTypeAjaxService.sln 솔루션을 빌드합니다 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
-3.  이동할 http://localhost/ServiceModelSamples/ComplexTypeClientPage.aspx (열지 마십시오 ComplexTypeClientPage.aspx 브라우저의 프로젝트 디렉터리에서).  
+3.  이동할 `http://localhost/ServiceModelSamples/ComplexTypeClientPage.aspx` (열지 마십시오 ComplexTypeClientPage.aspx 브라우저의 프로젝트 디렉터리에서).  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  

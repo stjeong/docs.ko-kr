@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - basic samples [WCF], getting started
 ms.assetid: 967a3d94-0261-49ff-b85a-20bb07f1af20
-ms.openlocfilehash: dda11511904d452a3a5101417f8ab8a33c00204f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 74c3b825bbd51a082f20e8e2009e1ca5f0b35100
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857097"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48837156"
 ---
 # <a name="getting-started-sample"></a>Getting Started 샘플
 Getting Started 샘플에는 일반 서비스와 Windows Communication Foundation (WCF)를 사용 하 여 일반 클라이언트를 구현 하는 방법을 보여 줍니다. 이 샘플은 다른 모든 기본 기술 샘플의 기준이 됩니다.  
@@ -141,9 +141,9 @@ public class CalculatorService : ICalculator
   
  서비스는 IIS 또는 WAS 호스트에서 제공되는 기본 주소에서 엔드포인트를 노출합니다. 바인딩은 표준 <xref:System.ServiceModel.WSHttpBinding>을 사용하여 구성되어 주소 지정 및 보안을 위한 HTTP 통신 및 표준 웹 서비스 프로토콜을 제공합니다. 계약은 서비스에 의해 구현되는 `ICalculator`입니다.  
   
- 서비스에서 액세스할 수 있습니다 구성 된 대로 http://localhost/servicemodelsamples/service.svc 동일한 컴퓨터에 클라이언트에서. 원격 컴퓨터의 클라이언트가 서비스에 액세스하려면 localhost 대신 정규화된 도메인 이름을 지정해야 합니다.  
+ 서비스에서 액세스할 수 있습니다 구성 된 대로 `http://localhost/servicemodelsamples/service.svc` 동일한 컴퓨터에 클라이언트에서. 원격 컴퓨터의 클라이언트가 서비스에 액세스하려면 localhost 대신 정규화된 도메인 이름을 지정해야 합니다.  
   
- 기본적으로 프레임워크에서는 메타데이터를 노출하지 않습니다. 서비스 설정으로 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 에서 메타 데이터 교환 (MEX) 끝점을 노출 하 고 http://localhost/servicemodelsamples/service.svc/mex입니다. 다음 구성에서는 이를 보여 줍니다.  
+ 기본적으로 프레임워크에서는 메타데이터를 노출하지 않습니다. 서비스 설정으로 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 에서 메타 데이터 교환 (MEX) 끝점을 노출 하 고 `http://localhost/servicemodelsamples/service.svc/mex`입니다. 다음 구성에서는 이를 보여 줍니다.  
   
 ```xaml  
 <system.serviceModel>  

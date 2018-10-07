@@ -2,12 +2,12 @@
 title: SQL 추적
 ms.date: 03/30/2017
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
-ms.openlocfilehash: 84d3fb994c790301ceb55b945bf972c21ed2a971
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 741df337187b2a5fffe63052c9fafbd430f7c2fc
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584328"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48836383"
 ---
 # <a name="sql-tracking"></a>SQL 추적
 이 샘플에서는 SQL 데이터베이스에 추적 레코드를 기록하는 사용자 지정 SQL 추적 참가자를 작성하는 방법을 보여 줍니다. Windows WF (Workflow Foundation) 워크플로 인스턴스 실행에 대 한 가시성을 얻을 수를 추적 하는 워크플로 제공 합니다. 추적 런타임에서는 워크플로를 실행하는 동안 워크플로 추적 레코드를 내보냅니다. 워크플로 추적에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "48584328"
   
 7.  브라우저에 StockPriceService 페이지가 표시됩니다. 이 페이지에는 로컬 서비스 WSDL 주소가 포함되어 있습니다. 이 주소를 복사합니다.  
   
-     로컬 서비스 WSDL 주소의 예로 http://localhost:65193/StockPriceService.xamlx?wsdl합니다.  
+     로컬 서비스 WSDL 주소의 예로 `http://localhost:65193/StockPriceService.xamlx?wsdl`합니다.  
   
 8.  [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)]를 사용하여 WCF 테스트 클라이언트(WcfTestClient.exe)를 실행합니다. 이는 Microsoft Visual Studio 10.0\Common7\IDE 디렉터리에 있습니다.  
   

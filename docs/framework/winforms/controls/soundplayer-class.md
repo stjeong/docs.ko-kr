@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - sounds [Windows Forms], playing
 ms.assetid: f3945af9-045c-4e2d-b251-377c37ca2d77
-ms.openlocfilehash: 57d9affa76a5f24e8a3ab6b3d13516396a82eb92
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 29399beebef3de3e7b4ae8ce7f3611e3d158296f
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46002875"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48835583"
 ---
 # <a name="soundplayer-class"></a>SoundPlayer 클래스
 `SoundPlayer` 클래스를 사용하여 응용 프로그램에 소리를 쉽게 포함할 수 있습니다.  
@@ -51,4 +51,6 @@ ms.locfileid: "46002875"
  [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  사용 방법에 대한 정보 링크를 포함하는 Windows Forms 컨트롤의 전체 목록을 제공합니다.  
   
- 도 참조 하세요 [HYPERLINK "http://msdn.microsoft.com/library/11bxex12(v=vs.110)" My.Computer 개체](https://msdn.microsoft.com/library/11bxex12\(v=vs.110\)) 하거나 [My.Computer 개체](https://msdn.microsoft.com/library/11bxex12\(v=vs.120\))합니다.
+## <a name="see-also"></a>참고자료 
+
+- [My.Computer 개체](../../../visual-basic/language-reference/objects/my-computer-object.md)

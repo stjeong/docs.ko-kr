@@ -6,11 +6,11 @@ helpviewer_keywords:
 - permission XML tag
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
 ms.openlocfilehash: bcec5d968f5d0c5400c28e772df151b164888a47
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48793203"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838210"
 ---
 # <a name="ltpermissiongt-visual-basic"></a>&lt;권한&gt; (Visual Basic)
 멤버에 대 한 필요한 사용 권한을 지정 합니다.  
