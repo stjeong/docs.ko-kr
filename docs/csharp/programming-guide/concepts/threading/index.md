@@ -2,12 +2,12 @@
 title: 스레딩(C#)
 ms.date: 07/20/2015
 ms.assetid: 236d157d-37c0-4ee8-89fc-721e6c596325
-ms.openlocfilehash: ca5b2b2d38e72d3511a570c22a153e792a27a04a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c90816a14bfbcd2ddd469c1240e94d99bfbbb5e5
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507791"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48844880"
 ---
 # <a name="threading-c"></a>스레딩(C#)
 스레딩을 사용하면 C# 프로그램에서 동시 처리를 수행할 수 있으므로 한 번에 여러 작업을 진행할 수 있습니다. 예를 들어 스레딩을 사용하여 사용자의 입력을 모니터링하고, 백그라운드 작업을 수행하고, 동시 입력 스트림을 처리할 수 있습니다.  
@@ -37,5 +37,4 @@ ms.locfileid: "43507791"
   
 |제목|설명|  
 |-----------|-----------------|  
-|[스레드 동기화(C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)|스레드 조작을 제어하는 방법을 설명합니다.|  
 |[스레딩](../../../../../docs/standard/threading/index.md)|.NET Framework에서 스레딩을 구현하는 방법을 설명합니다.|
