@@ -2,12 +2,12 @@
 title: Windows Workflow Foundation 기능 특성
 ms.date: 03/30/2017
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
-ms.openlocfilehash: b18c6dd76762f4495ac475cd3dfa4e1995733b59
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 6929150f786f0d6b4a5887eb5c0758ebcfdd411c
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44205077"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48846008"
 ---
 # <a name="windows-workflow-foundation-feature-specifics"></a>Windows Workflow Foundation 기능 특성
 [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)]에서는 Windows Workflow Foundation에 많은 기능을 추가합니다. 이 문서에서는 여러 새로운 기능을 설명하고 이러한 기능이 유용할 수 있는 시나리오에 대한 세부 정보를 제공합니다.  
@@ -17,19 +17,11 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started-with-messaging-activities"></a>메시징 작업 시작  
   
--   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다. <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 쌍이 캔버스에 배치됩니다.  
+-   Visual Studio 2012에서 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다. <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 쌍이 캔버스에 배치됩니다.  
   
--   프로젝트를 마우스 오른쪽 단추로 클릭 **서비스 참조 추가**합니다.  기존 웹 서비스 WSDL 가리키고 클릭 **확인**합니다.  생성된 된 활동을 표시 하려면 프로젝트를 빌드합니다 (사용 하 여 구현 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply>) 도구 상자에 있습니다.  
+-   프로젝트를 마우스 오른쪽 단추로 클릭 **서비스 참조 추가**합니다.  기존 웹 서비스 WSDL 가리키고 클릭 **확인**합니다.  생성된 된 활동을 표시 하려면 프로젝트를 빌드합니다 (사용 하 여 구현 <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply>) 도구 상자에 있습니다.
   
--   이러한 작업에 대한 샘플은 다음 단원에서 확인할 수 있습니다.  
-  
-    -   Basic: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   시나리오: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
--   [개념 설명서](https://go.microsoft.com/fwlink/?LinkId=204801)  
-  
--   [메시징 작업 디자이너 설명서](https://go.microsoft.com/fwlink/?LinkId=204802)  
+-   [워크플로 서비스 설명서](../wcf/feature-details/workflow-services.md)
   
 ### <a name="messaging-activities-example-scenario"></a>메시징 작업 예제 시나리오  
  `BestPriceFinder` 특정 경로 대 한 최상의 티켓 가격을 찾기 위해 여러 항공사 서비스 서비스를 호출 합니다.  이 시나리오를 구현 해야 메시지 작업을 사용 하 여 가격 요청을 받고, 백 엔드 서비스에서 가격을 검색, 최상의 가격으로 가격 요청에 회신 하를 수 있습니다.  또한 해야 하므로 최상의 가격을 계산 하는 것에 대 한 비즈니스 논리를 만드는 다른 기본 제공 활동을 사용 하 합니다.  
@@ -47,15 +39,11 @@ ms.locfileid: "44205077"
   
 -   <xref:System.ServiceModel.WorkflowServiceHost>에 대한 샘플은 다음 단원에서 확인할 수 있습니다.  
   
-    -   [실행](../../../docs/framework/windows-workflow-foundation/samples/execution.md)  
+    -   [실행](samples/execution.md)
   
-    -   Basic: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
+    -   응용 프로그램: [인스턴스 관리를 일시 중단](samples/suspended-instance-management.md)  
   
-    -   시나리오: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   응용 프로그램: [인스턴스 관리를 일시 중단](../../../docs/framework/windows-workflow-foundation/samples/suspended-instance-management.md)  
-  
--   [WorkflowServiceHost 개념 설명서](https://go.microsoft.com/fwlink/?LinkId=204807)  
+-   [워크플로 서비스 호스팅 개요](../wcf/feature-details/hosting-workflow-services-overview.md)  
   
 ### <a name="workflowservicehost-scenario"></a>WorkflowServiceHost 시나리오  
  BestPriceFinder 서비스는 특정 경로 대 한 최상의 티켓 가격을 찾기 위해 여러 항공사 서비스를 호출 합니다.  이 시나리오를 구현 해야 하므로의 워크플로 호스트 <xref:System.ServiceModel.WorkflowServiceHost>합니다.  메시지 작업 가격 요청을 수신 하 고, 백 엔드 서비스에서 가격을 검색, 최상의 가격으로 가격 요청에 회신에 사용할 것입니다.  
@@ -79,15 +67,9 @@ ms.locfileid: "44205077"
   
 -   데이터를 서비스 인스턴스에 매핑하는 예로 데이터(예: 주문 ID)를 특정 워크플로 인스턴스에 매핑하는 콘텐츠 기반 상관 관계가 있습니다.  
   
-    -   아무 메시징 작업에서나 `CorrelationInitializers` 속성을 클릭하고 위에서 만든 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 변수를 사용하여 <xref:System.ServiceModel.Activities.CorrelationHandle>를 추가합니다. 드롭다운 메뉴에서 원하는 메시지 속성(예: OrderID)을 두 번 클릭합니다. `CorrelatesWith` 속성을 위에서 사용한 <xref:System.ServiceModel.Activities.CorrelationHandle> 변수로 설정합니다.  
+    -   아무 메시징 작업에서나 `CorrelationInitializers` 속성을 클릭하고 위에서 만든 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 변수를 사용하여 <xref:System.ServiceModel.Activities.CorrelationHandle>를 추가합니다. 드롭다운 메뉴에서 원하는 메시지 속성(예: OrderID)을 두 번 클릭합니다. `CorrelatesWith` 속성을 위에서 사용한 <xref:System.ServiceModel.Activities.CorrelationHandle> 변수로 설정합니다. 
   
--   샘플:  
-  
-    -   Basic: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   시나리오: [서비스](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   [상관 관계 개념 설명서](https://go.microsoft.com/fwlink/?LinkId=204939)  
+-   [상관 관계 개념 설명서](../wcf/feature-details/correlation.md)  
   
 ### <a name="correlation-scenario"></a>상관 관계 시나리오  
  새 주문 만들기 및 진행 중인 기존 주문을 업데이트를 처리 하는 주문 처리 워크플로 사용 됩니다.  이 시나리오를 구현 해야 하므로의 워크플로 호스트 <xref:System.ServiceModel.WorkflowServiceHost> 메시징 활동을 사용 합니다.  또한 상관 관계에 따라 필요는 `orderId` 에 올바른 워크플로가 업데이트 되도록 합니다.  
@@ -155,7 +137,7 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
--   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 순서도를 추가합니다.  
+-   Visual Studio 2012 워크플로 콘솔 응용 프로그램을 만듭니다. 워크플로 디자이너에서 순서도를 추가합니다.  
   
 -   순서도 기능은 다음 클래스를 사용합니다.  
   
@@ -171,9 +153,7 @@ ms.locfileid: "44205077"
   
 -   샘플:  
   
-    -   [Flowchart 작업에서 TryCatch를 사용하여 오류 처리](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
-  
-    -   [FlowChart와 Pick을 함께 사용하는 StateMachine 시나리오](../../../docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md)  
+    -   [Flowchart 작업에서 TryCatch를 사용하여 오류 처리](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) 
   
     -   [채용 프로세스](../../../docs/framework/windows-workflow-foundation/samples/hiring-process.md)  
   
@@ -201,7 +181,7 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
--   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 절차 작업을 추가합니다.  
+-   Visual Studio 2012 워크플로 콘솔 응용 프로그램을 만듭니다. 워크플로 디자이너에서 절차 작업을 추가합니다.  
   
 -   샘플:  
   
@@ -226,11 +206,7 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
--   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 <xref:System.Activities.Statements.InvokeMethod> 작업을 추가하고 정적 및 인스턴스 메서드를 구성합니다.  
-  
--   샘플:  
-  
-    -   [InvokeMethod](../../../docs/framework/windows-workflow-foundation/samples/invokemethod.md)  
+-   Visual Studio 2012 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 <xref:System.Activities.Statements.InvokeMethod> 작업을 추가하고 정적 및 인스턴스 메서드를 구성합니다.  
   
 -   디자이너 설명서: [InvokeMethod 활동 디자이너](/visualstudio/workflow-designer/invokemethod-activity-designer)  
   
@@ -245,13 +221,9 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
--   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 <xref:System.Activities.Statements.TryCatch> 작업을 추가합니다.  
+-   Visual Studio 2012 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 <xref:System.Activities.Statements.TryCatch> 작업을 추가합니다.  
   
--   샘플:  
-  
-    1.  [Flowchart 작업에서 TryCatch를 사용하여 오류 처리](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
-  
-    2.  [절차 작업 사용](../../../docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md)  
+-   샘플: [TryCatch를 사용 하 여 Flowchart 작업에서 처리 오류](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
   
 -   디자이너 설명서: [오류 처리 활동 디자이너](/visualstudio/workflow-designer/error-handling-activity-designers)  
   
@@ -263,7 +235,7 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
--   [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 <xref:System.Activities.Statements.Pick> 작업을 추가합니다.  
+-   Visual Studio 2012 워크플로 콘솔 응용 프로그램을 만듭니다. Workflow Designer에서 <xref:System.Activities.Statements.Pick> 작업을 추가합니다.  
   
 -   샘플: [Pick 활동 사용](../../../docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md)  
   
@@ -337,7 +309,7 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
-1.  [!INCLUDE[vs2010](../../../includes/vs2010-md.md)]에서 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다. 먼저 <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 쌍이 캔버스에 배치됩니다.  
+1.  Visual Studio 2010에서 WCF 워크플로 서비스 응용 프로그램 프로젝트를 만듭니다. 먼저 <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 쌍이 캔버스에 배치됩니다.  
   
 2.  web.config를 열고 프로필 없이 ETW 추적 동작을 추가합니다.  
   
@@ -358,7 +330,7 @@ ms.locfileid: "44205077"
   
 ### <a name="getting-started"></a>시작  
   
-1.  [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)]에서 암시적 또는 명시적 <xref:System.Activities.Statements.Persist> 작업이 포함된 워크플로를 만듭니다. 워크플로 서비스 호스트에 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 동작을 추가합니다. 이 작업은 코드나 응용 프로그램 구성 파일에서 수행할 수 있습니다.  
+1.  Visual Studio 2012에서 암시적 또는 명시적를 포함 하는 워크플로 만드는 <xref:System.Activities.Statements.Persist> 활동입니다. 워크플로 서비스 호스트에 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 동작을 추가합니다. 이 작업은 코드나 응용 프로그램 구성 파일에서 수행할 수 있습니다.  
   
 2.  샘플: [지 속성](../../../docs/framework/windows-workflow-foundation/samples/persistence.md)  
   

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], addresses
 - WCF [WCF], addresses
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
-ms.openlocfilehash: cc81e7ad45c308f5ecf476641dfd65fe47b36098
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 59b3aa87056cc2d32512c8b9ea68c0a6d5935814
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855717"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847413"
 ---
 # <a name="endpoint-addresses"></a>엔드포인트 주소
 모든 엔드포인트에는 해당 엔드포인트를 찾아서 식별하는 데 사용되는 연결된 주소가 있습니다. 이 주소는 주로 엔드포인트의 위치를 지정하는 URI(Uniform Resource Identifier)로 구성됩니다. 끝점 주소에서 Windows Communication Foundation (WCF) 프로그래밍 모델에 표시 됩니다는 <xref:System.ServiceModel.EndpointAddress> 선택적인 포함 하는 클래스 <xref:System.ServiceModel.EndpointAddress.Identity%2A> 다른 끝점에서 끝점을 인증할 수 있게 하는 속성을 exchange를 사용 하 여 메시지 및 선택적 집합이 <xref:System.ServiceModel.EndpointAddress.Headers%2A> 서비스에 도달 하는 데 필요한 다른 SOAP 헤더를 정의 하는 속성입니다. 선택적 헤더는 서비스 엔드포인트를 확인하거나 상호 작용하는 데 필요한 추가적인 자세한 주소 지정 정보를 제공합니다. 엔드포인트 주소는 통신 중에 WS-Addressing EPR(엔드포인트 참조)로 표시됩니다.  
   
 ## <a name="uri-structure-of-an-address"></a>주소의 URI 구조  
- 대부분 전송 주소 URI에는 네 가지 부분이 있습니다. 예를 들어, URI의 네 가지 부분 http://www.fabrikam.com:322/mathservice.svc/secureEndpoint 같이 항목별로 수 있습니다.  
+ 대부분 전송 주소 URI에는 네 가지 부분이 있습니다. 예를 들어, URI의 네 가지 부분 `http://www.fabrikam.com:322/mathservice.svc/secureEndpoint` 같이 항목별로 수 있습니다.  
   
--   스키마: http:  
+-   파티션 구성표: `http:`
   
 -   컴퓨터: `www.fabrikam.com`  
   
@@ -56,9 +56,9 @@ ms.locfileid: "43855717"
   
  예를 들어 사이트에 다음 기본 주소가 포함될 수 있습니다.  
   
--   http://payroll.myorg.com/Service.svc  
+- `http://payroll.myorg.com/Service.svc`
   
--   http://shipping.myorg.com/Service.svc  
+- `http://shipping.myorg.com/Service.svc`
   
  [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)]를 사용하여 구성 파일의 AppDomain 수준에서 접두사 필터를 지정합니다. 이 작업을 수행 합니다 [ \<baseAddressPrefixFilters >](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) 접두사 목록을 포함 하는 요소입니다. IIS에서 제공하는 들어오는 기본 주소는 선택적 접두사 목록을 기반으로 필터링됩니다. 기본적으로 접두사가 지정되지 않으면 모든 주소가 통과됩니다. 접두사를 지정하면 해당 스키마에서 일치하는 기본 주소만 통과됩니다.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "43855717"
 </system.serviceModel>  
 ```  
   
- 위의 예에서 net.tcp://payroll.myorg.com: 8000 및 http://shipping.myorg.com:8000 를 통해 전달 되는 해당 스키마에 대 한 유일한 기본 주소를 합니다.  
+ 위의 예에서 `net.tcp://payroll.myorg.com:8000` 및 `http://shipping.myorg.com:8000` 를 통해 전달 되는 해당 스키마에 대 한 유일한 기본 주소를 합니다.  
   
  `baseAddressPrefixFilter`는 와일드카드를 지원하지 않습니다.  
   

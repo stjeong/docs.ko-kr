@@ -3,12 +3,12 @@ title: '&lt;wsFederationHttpBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
 author: BrucePerlerMS
-ms.openlocfilehash: 7c7868561ea4d41b308d3bcd963e10e9b81df314
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 2e7ec6b73ec56aa679040e8d3ee50843c9286183
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397139"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847778"
 ---
 # <a name="ltsecuritygt-of-ltwsfederationhttpbindinggt"></a>&lt;wsFederationHttpBinding&gt;의 &lt;security&gt;
 보안 설정을 정의 합니다 [ \<wsFederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)합니다.  
@@ -119,5 +119,5 @@ ms.locfileid: "47397139"
  [자격 증명 형식 선택](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

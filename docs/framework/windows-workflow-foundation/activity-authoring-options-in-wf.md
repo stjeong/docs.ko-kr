@@ -3,11 +3,11 @@ title: WF의 활동 제작 옵션
 ms.date: 03/30/2017
 ms.assetid: b9061f5f-12c3-47f0-adbe-1330e2714c94
 ms.openlocfilehash: 219d759cd1390a83abfb90af509b21047085f6e9
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580877"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48848207"
 ---
 # <a name="activity-authoring-options-in-wf"></a>WF의 활동 제작 옵션
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]은 사용자 지정 활동을 만들기 위한 여러 옵션을 보여 줍니다. 지정한 활동을 작성하는 데 사용할 올바른 방법은 필요한 런타임 기능에 따라 결정됩니다.  

@@ -2,12 +2,12 @@
 title: WebContentTypeMapper 샘플
 ms.date: 03/30/2017
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
-ms.openlocfilehash: 91e5cca478521a343f7528f878f114b85eff2d08
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 572bea9fc38668d554ef467be7689ac01b652fb8
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45618534"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847607"
 ---
 # <a name="webcontenttypemapper-sample"></a>WebContentTypeMapper 샘플
 이 샘플에는 Windows Communication Foundation (WCF) 메시지 본문 형식에 새 콘텐츠 형식을 매핑하는 방법을 보여 줍니다.  
@@ -58,7 +58,7 @@ public class JsonContentTypeMapper : WebContentTypeMapper
   
 2.  에 설명 된 대로 WebContentTypeMapperSample.sln 솔루션을 빌드합니다 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
-3.  이동할 http://localhost/ServiceModelSamples/JCTMClientPage.htm (프로젝트 디렉터리 내에서 브라우저에서 사용 하 여 JCTMClientPage.htm를 열고 수행).  
+3.  이동할 `http://localhost/ServiceModelSamples/JCTMClientPage.htm` (프로젝트 디렉터리 내에서 브라우저에서 사용 하 여 JCTMClientPage.htm를 열고 수행).  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, security
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
 author: BrucePerlerMS
-ms.openlocfilehash: bf88073c25351aac0e421d69a947605de3e37759
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b9b7d78601790cfcd7cf54688db1750df96a19f9
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47200700"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48848233"
 ---
 # <a name="how-to-secure-a-service-with-windows-credentials"></a>방법: Windows 자격 증명을 사용하여 서비스에 보안 설정
 이 항목에서는 Windows 도메인에 있고 동일한 도메인의 클라이언트에서 호출 되는 Windows Communication Foundation (WCF) 서비스에서 전송 보안을 사용 하는 방법을 보여 줍니다. 이 시나리오에 대 한 자세한 내용은 참조 하세요. [Windows 인증을 사용 하 여 전송 보안](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)합니다. 샘플 응용 프로그램에 대 한 참조를 [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) 샘플입니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "47200700"
   
 3.  `Type`이라는 두 번째 `serviceType` 변수를 만들어 구현된 계약(`Calculator`)의 형식을 할당합니다.  
   
-4.  서비스의 기본 주소를 사용하여 <xref:System.Uri>라는 `baseAddress` 클래스의 인스턴스를 만듭니다. 기본 주소에는 전송과 일치하는 체계가 있어야 합니다. 이 경우 전송 체계는 HTTP 및 주소에는 특수 한 포함 됩니다. 기본 끝점 주소 뿐만 아니라 리소스 URI (Uniform Identifier) "localhost" 및 포트 번호 (8036) ("serviceModelSamples /): http://localhost:8036/serviceModelSamples/합니다.  
+4.  서비스의 기본 주소를 사용하여 <xref:System.Uri>라는 `baseAddress` 클래스의 인스턴스를 만듭니다. 기본 주소에는 전송과 일치하는 체계가 있어야 합니다. 이 경우 전송 체계는 HTTP 및 주소에는 특수 한 포함 됩니다. 기본 끝점 주소 뿐만 아니라 리소스 URI (Uniform Identifier) "localhost" 및 포트 번호 (8036) ("serviceModelSamples /): `http://localhost:8036/serviceModelSamples/`합니다.  
   
 5.  <xref:System.ServiceModel.ServiceHost> 및 `serviceType` 변수를 사용하여 `baseAddress` 클래스의 인스턴스를 만듭니다.  
   

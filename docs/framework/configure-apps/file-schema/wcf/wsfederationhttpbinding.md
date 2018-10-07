@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wsFederationBinding element
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-ms.openlocfilehash: 943887dd2bf3b309c0663a9eb06e658ee5957844
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: c9cf6e42aa9811a15e3b787599fe9d1def2c7efe
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45649967"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847741"
 ---
 # <a name="ltwsfederationhttpbindinggt"></a>&lt;wsFederationHttpBinding&gt;
 WS-Federation을 지원하는 바인딩을 정의합니다.  
@@ -194,5 +194,5 @@ wsFederationBinding 요소
  [방법: WSFederationHttpBinding 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

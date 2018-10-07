@@ -3,11 +3,11 @@ title: 구성 채널 팩터리
 ms.date: 03/30/2017
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
 ms.openlocfilehash: b5dbabf8cdc28cc2beaf343b0377528c6ced1c66
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48778590"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48846294"
 ---
 # <a name="configuration-channel-factory"></a>구성 채널 팩터리
 이 샘플에서는 <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>의 사용법에 대해 설명합니다. <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> WCF 클라이언트 구성 중앙에서 관리할 수 있습니다. 응용 프로그램 도메인의 로드 이후 구성이 선택되었거나 변경된 경우에도 유용합니다.

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WCF, privacy information
 - privacy information [WCF]
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-ms.openlocfilehash: 9c2a8d89fc62f8e3e0ce17f13604a6ba05df1a6f
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 717e38b15767b744816c0a57c97827a1a35c95b3
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44083883"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847817"
 ---
 # <a name="windows-communication-foundation-privacy-information"></a>Windows Communication Foundation 개인 정보 취급 방침
 Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할 것을 약속합니다. 버전 3.0, Windows Communication Foundation (WCF)를 사용 하 여 응용 프로그램을 빌드할 때 응용 프로그램의 최종 사용자가 개인 정보 보호를 달라질 수 있습니다. 예를 들어 응용 프로그램에서 사용자 연락처 정보를 명시적으로 수집하거나, 정보를 요청하거나 인터넷을 통해 정보를 웹 사이트로 보낼 수 있습니다. 응용 프로그램에 Microsoft 기술을 포함하는 경우 해당 기술의 동작이 개인 정보 보호에 영향을 줄 수 있습니다. WCF 보내지 않습니다 모든 정보를 Microsoft 응용 프로그램에서 우리에 게 보낼 사용자 또는 최종 사용자가 선택 하지 않으면.  
@@ -316,45 +316,45 @@ Microsoft는 최종 사용자의 개인 정보 보호를 위해 최선을 다할
   
  다음 각 작업에서도 정보가 제거됩니다.  
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Renew  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Renew`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Cancel  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Cancel`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Validate  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Validate`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Amend  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Amend`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Amend  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Amend`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Renew  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Renew`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Renew  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Renew`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Cancel  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT/Cancel`
   
- http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Cancel  
+- `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT/Cancel`
   
- http://schemas.xmlsoap.org/ws/2004/04/security/trust/RST/SCT  
+- `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RST/SCT`
   
- http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT  
+- `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT`
   
- http://schemas.xmlsoap.org/ws/2004/04/security/trust/RST/SCT-Amend  
+- `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RST/SCT-Amend`
   
- http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT-Amend  
+- `http://schemas.xmlsoap.org/ws/2004/04/security/trust/RSTR/SCT-Amend`
   
 #### <a name="no-information-is-removed-from-application-specific-headers-and-body-data"></a>응용 프로그램별 헤더 및 본문 데이터의 정보는 제거되지 않음  
  WCF는 응용 프로그램별 헤더 (예를 들어, 쿼리 문자열) 또는 본문 데이터 (예: 신용 카드 번호)의 개인 정보를 추적 하지 않습니다.  

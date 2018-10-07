@@ -2,12 +2,12 @@
 title: WCF 웹 HTTP 서비스에 대한 캐싱 지원
 ms.date: 03/30/2017
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
-ms.openlocfilehash: 25b564235b5d2b3b26b5d657f3e5f0bd5d594125
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: ef7a03a9e4c6e188e3c7a000fc4a6050e678556d
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45972990"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847643"
 ---
 # <a name="caching-support-for-wcf-web-http-services"></a>WCF 웹 HTTP 서비스에 대한 캐싱 지원
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] WCF 웹 HTTP 서비스에서 ASP.NET에 이미 사용 가능한 선언적 캐싱 메커니즘을 사용할 수 있습니다. 이렇게 하면 WCF 웹 HTTP 서비스 작업의 응답을 캐시할 수 있습니다. 사용자가 캐시용으로 구성된 서비스에 HTTP GET을 보내면 ASP.NET이 캐시된 응답을 다시 보내고 서비스 메서드가 호출되지 않습니다. 캐시가 만료되면 다음에 사용자가 HTTP GET을 보낼 때 서비스 메서드가 호출되고 응답이 다시 한 번 캐시됩니다. ASP.NET 캐싱에 대 한 자세한 내용은 참조 하세요. [ASP.NET 캐싱 개요](https://go.microsoft.com/fwlink/?LinkId=152534)  
@@ -58,7 +58,7 @@ public class Service
 </system.web>  
 ```  
   
- 이 요소는 ASP.NET 응용 프로그램에서 사용할 수 있는 구성 요소와 동일합니다. ASP.NET 캐시 프로필에 대 한 자세한 내용은 참조 하세요. <xref:System.Web.Configuration.OutputCacheProfile>합니다. 웹 HTTP 서비스의 경우 캐시 프로필에서 가장 중요한 특성이 `cacheDuration` 및 `varyByParam`입니다. 두 특성 모두 필요합니다. `cacheDuration`은 응답이 캐시되어야 하는 기간(초)을 설정합니다. `varyByParam`에서는 응답을 캐시하는 데 사용하는 쿼리 문자열 매개 변수를 지정할 수 있습니다. 여러 쿼리 문자열 매개 변수 값을 사용하여 수행한 모든 요청은 개별적으로 캐시됩니다. 예를 들어 초기 요청에 설정 되 면 http://MyServer/MyHttpService/MyOperation?param=10 동일한 URI를 사용 하 여 만든 모든 후속 요청 반환 됩니다 캐시 된 응답 (된다면 캐시 기간 경과 하지 않습니다). 동일하지만 쿼리 문자열 매개 변수 값이 다른 유사한 요청에 대한 응답은 개별적으로 캐시됩니다. 이 개별 캐시 동작을 사용하지 않으려면 `varyByParam`을 "none"으로 설정합니다.  
+ 이 요소는 ASP.NET 응용 프로그램에서 사용할 수 있는 구성 요소와 동일합니다. ASP.NET 캐시 프로필에 대 한 자세한 내용은 참조 하세요. <xref:System.Web.Configuration.OutputCacheProfile>합니다. 웹 HTTP 서비스의 경우 캐시 프로필에서 가장 중요한 특성이 `cacheDuration` 및 `varyByParam`입니다. 두 특성 모두 필요합니다. `cacheDuration`은 응답이 캐시되어야 하는 기간(초)을 설정합니다. `varyByParam`에서는 응답을 캐시하는 데 사용하는 쿼리 문자열 매개 변수를 지정할 수 있습니다. 여러 쿼리 문자열 매개 변수 값을 사용하여 수행한 모든 요청은 개별적으로 캐시됩니다. 예를 들어 초기 요청에 설정 되 면 `http://MyServer/MyHttpService/MyOperation?param=10`, 동일한 URI를 사용 하 여 만든 모든 후속 요청 반환 됩니다 캐시 된 응답 (된다면 캐시 기간 경과 하지 않습니다). 동일하지만 쿼리 문자열 매개 변수 값이 다른 유사한 요청에 대한 응답은 개별적으로 캐시됩니다. 이 개별 캐시 동작을 사용하지 않으려면 `varyByParam`을 "none"으로 설정합니다.  
   
 ## <a name="sql-cache-dependency"></a>SQL 캐시 종속성  
  웹 HTTP 서비스 응답도 SQL 캐시 종속성을 사용하여 캐시할 수 있습니다. WCF 웹 HTTP 서비스에서 SQL 데이터베이스에 저장된 데이터를 사용하는 경우 이 서비스의 응답을 캐시하고 SQL 데이터베이스 테이블의 데이터가 변경되면 캐시된 응답을 무효화할 수 있습니다. 이 동작은 Web.config 파일에서 완전히 구성할 수 있습니다. 연결 문자열을 정의 해야 합니다 <`connectionStrings`> 요소입니다.  

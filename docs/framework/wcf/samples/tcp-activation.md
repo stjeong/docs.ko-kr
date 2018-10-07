@@ -2,12 +2,12 @@
 title: TCP 활성화
 ms.date: 03/30/2017
 ms.assetid: bf8c215c-0228-4f4f-85c2-e33794ec09a7
-ms.openlocfilehash: c10cc1edfb06d55fc8a59a32bf905c95b20a19dc
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 0a65e5ca20a11f50133efc90e6da923280a30f46
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44084626"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48846554"
 ---
 # <a name="tcp-activation"></a>TCP 활성화
 이 샘플에서는 net.tcp 프로토콜을 통해 통신하는 서비스를 활성화하기 위해 WAS(Windows Process Activation Service)를 사용하는 서비스를 호스트하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
@@ -175,7 +175,7 @@ Press <ENTER> to terminate client.
         ```  
   
         > [!NOTE]
-        >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다. 이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램에 모두 사용 하 여 액세스할 수 http://localhost/servicemodelsamples 및 net.tcp://localhost/servicemodelsamples 합니다.  
+        > 이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다. 이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램에 모두 사용 하 여 액세스할 수 `http://localhost/servicemodelsamples` 고 `net.tcp://localhost/servicemodelsamples`입니다.  
   
 4.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - SyncLock statement [Visual Basic]
 - locks, threads
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
-ms.openlocfilehash: 6f5a89ebe359ca2fdae1d5545192dc2dcecca6a2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5a931199ff8d09412d536a173f3cd12e451def64
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529816"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48845982"
 ---
 # <a name="synclock-statement"></a>SyncLock 문
 블록을 실행 하기 전에 문 블록에 대 한 배타적 잠금을 획득 합니다.  
@@ -91,8 +91,8 @@ End SyncLock
   
 ### <a name="comments"></a>설명  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading>  
- <xref:System.Threading.Monitor>  
- [스레드 동기화](../../programming-guide/concepts/threading/thread-synchronization.md)  
- [스레딩](../../programming-guide/concepts/threading/index.md)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- <xref:System.Threading.Interlocked?displayProperty=nameWithType>
+- [동기화 기본 형식 개요](../../../standard/threading/overview-of-synchronization-primitives.md)

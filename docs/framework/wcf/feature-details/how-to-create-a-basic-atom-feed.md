@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6e0cacc1-9b11-4665-adb7-577a62626fd6
-ms.openlocfilehash: 229cc4a5a06059159eb045da234d9f09de0f6c0d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ac356ac9acd3f0b14fb3da902f1a9c3cfbdd9ef7
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33493031"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48847895"
 ---
 # <a name="how-to-create-a-basic-atom-feed"></a>방법: 기본 Atom 피드 만들기
 Windows Communication Foundation (WCF)를 사용 하면 배포 피드를 노출 하는 서비스를 만들 수 있습니다. 이 항목에서는 Atom 배포 피드를 노출하는 배포 서비스를 만드는 방법에 대해 설명합니다.  
@@ -23,7 +23,7 @@ Windows Communication Foundation (WCF)를 사용 하면 배포 피드를 노출 
      [!code-vb[htAtomBasic#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatombasic/vb/program.vb#0)]  
   
     > [!NOTE]
-    >  <xref:System.ServiceModel.Web.WebGetAttribute>를 적용하는 모든 서비스 작업은 HTTP GET 요청에 매핑됩니다. 작업을 다른 HTTP 메서드에 매핑하려면 <xref:System.ServiceModel.Web.WebInvokeAttribute>를 대신 사용합니다. 자세한 내용은 참조 [하는 방법: 기본 WCF 웹 HTTP 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)합니다.  
+    >  <xref:System.ServiceModel.Web.WebGetAttribute>를 적용하는 모든 서비스 작업은 HTTP GET 요청에 매핑됩니다. 작업을 다른 HTTP 메서드에 매핑하려면 <xref:System.ServiceModel.Web.WebInvokeAttribute>를 대신 사용합니다. 자세한 내용은 [방법: 기본 WCF 웹 HTTP 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)합니다.  
   
 2.  서비스 계약을 구현합니다.  
   
@@ -64,9 +64,9 @@ Windows Communication Foundation (WCF)를 사용 하면 배포 피드를 노출 
   
 ### <a name="to-call-getblog-with-an-http-get"></a>HTTP GET을 사용하여 GetBlog()를 호출하려면  
   
-1.  Internet Explorer를 열고 다음 URL을 입력 ENTER 키를 누릅니다. http://localhost:8000/BlogService/GetBlog  
+1.  Internet Explorer를 열고 다음 URL을 입력 합니다. ENTER 키를 누릅니다. `http://localhost:8000/BlogService/GetBlog`  
   
-     서비스의 기본 주소를 포함 하는 URL (http://localhost:8000/BlogService), 끝점 및 호출할 서비스 작업의 상대 주소입니다.  
+     서비스의 기본 주소를 포함 하는 URL (`http://localhost:8000/BlogService`), 끝점 및 서비스 작업 호출의 상대 주소입니다.  
   
 ### <a name="to-call-getblog-from-code"></a>코드에서 GetBlog()를 호출하려면  
   
