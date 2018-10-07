@@ -10,57 +10,57 @@ helpviewer_keywords:
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 34173812f4f6fac940632e23e6641e458250a4ee
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 7cd25b980afa067ac78fc081c0a7a8e65a23258b
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48028190"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48838262"
 ---
-# <a name="ltwebrequestmodulesgt-element-network-settings"></a><span data-ttu-id="4b419-102">&lt;webRequestModules&gt; 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="4b419-102">&lt;webRequestModules&gt; Element (Network Settings)</span></span>
-<span data-ttu-id="4b419-103">네트워크 호스트에서 정보를 요청 하는 데는 모듈을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-103">Specifies modules to use to request information from network hosts.</span></span>  
+# <a name="ltwebrequestmodulesgt-element-network-settings"></a><span data-ttu-id="000fc-102">&lt;webRequestModules&gt; 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="000fc-102">&lt;webRequestModules&gt; Element (Network Settings)</span></span>
+<span data-ttu-id="000fc-103">네트워크 호스트에서 정보를 요청 하는 데는 모듈을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-103">Specifies modules to use to request information from network hosts.</span></span>  
   
- <span data-ttu-id="4b419-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="4b419-104">\<configuration></span></span>  
-<span data-ttu-id="4b419-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="4b419-105">\<system.net></span></span>  
-<span data-ttu-id="4b419-106">\<webRequestModules></span><span class="sxs-lookup"><span data-stu-id="4b419-106">\<webRequestModules></span></span>  
+ <span data-ttu-id="000fc-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="000fc-104">\<configuration></span></span>  
+<span data-ttu-id="000fc-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="000fc-105">\<system.net></span></span>  
+<span data-ttu-id="000fc-106">\<webRequestModules></span><span class="sxs-lookup"><span data-stu-id="000fc-106">\<webRequestModules></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4b419-107">구문</span><span class="sxs-lookup"><span data-stu-id="4b419-107">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="000fc-107">구문</span><span class="sxs-lookup"><span data-stu-id="000fc-107">Syntax</span></span>  
   
 ```xml  
 <webRequestModules>   
 </webRequestModules>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="4b419-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="4b419-108">Attributes and Elements</span></span>  
- <span data-ttu-id="4b419-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="000fc-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="000fc-108">Attributes and Elements</span></span>  
+ <span data-ttu-id="000fc-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="4b419-110">특성</span><span class="sxs-lookup"><span data-stu-id="4b419-110">Attributes</span></span>  
- <span data-ttu-id="4b419-111">없음</span><span class="sxs-lookup"><span data-stu-id="4b419-111">None.</span></span>  
+### <a name="attributes"></a><span data-ttu-id="000fc-110">특성</span><span class="sxs-lookup"><span data-stu-id="000fc-110">Attributes</span></span>  
+ <span data-ttu-id="000fc-111">없음</span><span class="sxs-lookup"><span data-stu-id="000fc-111">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="4b419-112">자식 요소</span><span class="sxs-lookup"><span data-stu-id="4b419-112">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="000fc-112">자식 요소</span><span class="sxs-lookup"><span data-stu-id="000fc-112">Child Elements</span></span>  
   
-|<span data-ttu-id="4b419-113">**요소**</span><span class="sxs-lookup"><span data-stu-id="4b419-113">**Element**</span></span>|<span data-ttu-id="4b419-114">**설명**</span><span class="sxs-lookup"><span data-stu-id="4b419-114">**Description**</span></span>|  
+|<span data-ttu-id="000fc-113">**요소**</span><span class="sxs-lookup"><span data-stu-id="000fc-113">**Element**</span></span>|<span data-ttu-id="000fc-114">**설명**</span><span class="sxs-lookup"><span data-stu-id="000fc-114">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="4b419-115">add</span><span class="sxs-lookup"><span data-stu-id="4b419-115">add</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-webrequestmodules-network-settings.md)|<span data-ttu-id="4b419-116">응용 프로그램에 사용자 지정 웹 요청 모듈을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-116">Adds a custom Web request module to the application.</span></span>|  
-|[<span data-ttu-id="4b419-117">clear</span><span class="sxs-lookup"><span data-stu-id="4b419-117">clear</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-webrequestmodules-network-settings.md)|<span data-ttu-id="4b419-118">응용 프로그램에서 등록 된 모든 웹 요청 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-118">Removes all registered Web request modules from the application.</span></span>|  
-|[<span data-ttu-id="4b419-119">remove</span><span class="sxs-lookup"><span data-stu-id="4b419-119">remove</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-webrequestmodules-network-settings.md)|<span data-ttu-id="4b419-120">응용 프로그램에서 사용자 지정 웹 요청 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-120">Removes a custom Web request module from the application.</span></span>|  
+|[<span data-ttu-id="000fc-115">add</span><span class="sxs-lookup"><span data-stu-id="000fc-115">add</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-webrequestmodules-network-settings.md)|<span data-ttu-id="000fc-116">응용 프로그램에 사용자 지정 웹 요청 모듈을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-116">Adds a custom Web request module to the application.</span></span>|  
+|[<span data-ttu-id="000fc-117">clear</span><span class="sxs-lookup"><span data-stu-id="000fc-117">clear</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-webrequestmodules-network-settings.md)|<span data-ttu-id="000fc-118">응용 프로그램에서 등록 된 모든 웹 요청 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-118">Removes all registered Web request modules from the application.</span></span>|  
+|[<span data-ttu-id="000fc-119">remove</span><span class="sxs-lookup"><span data-stu-id="000fc-119">remove</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-webrequestmodules-network-settings.md)|<span data-ttu-id="000fc-120">응용 프로그램에서 사용자 지정 웹 요청 모듈을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-120">Removes a custom Web request module from the application.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="4b419-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="4b419-121">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="000fc-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="000fc-121">Parent Elements</span></span>  
   
-|<span data-ttu-id="4b419-122">**요소**</span><span class="sxs-lookup"><span data-stu-id="4b419-122">**Element**</span></span>|<span data-ttu-id="4b419-123">**설명**</span><span class="sxs-lookup"><span data-stu-id="4b419-123">**Description**</span></span>|  
+|<span data-ttu-id="000fc-122">**요소**</span><span class="sxs-lookup"><span data-stu-id="000fc-122">**Element**</span></span>|<span data-ttu-id="000fc-123">**설명**</span><span class="sxs-lookup"><span data-stu-id="000fc-123">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="4b419-124">system.net</span><span class="sxs-lookup"><span data-stu-id="4b419-124">system.net</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|<span data-ttu-id="4b419-125">.NET Framework의 네트워크 연결 방법을 지정하는 설정을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-125">Contains settings that specify how the .NET Framework connects to the network.</span></span>|  
+|[<span data-ttu-id="000fc-124">system.net</span><span class="sxs-lookup"><span data-stu-id="000fc-124">system.net</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|<span data-ttu-id="000fc-125">.NET Framework의 네트워크 연결 방법을 지정하는 설정을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-125">Contains settings that specify how the .NET Framework connects to the network.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="4b419-126">설명</span><span class="sxs-lookup"><span data-stu-id="4b419-126">Remarks</span></span>  
- <span data-ttu-id="4b419-127">`webRequestModules` 요소는 <xref:System.Net.WebRequest> 클래스의 하위 클래스를 등록하여 네트워크 호스트로의 정보 요청을 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-127">The `webRequestModules` element registers descendants of the <xref:System.Net.WebRequest> class to handle information requests to network hosts.</span></span> <span data-ttu-id="4b419-128">웹 요청 모듈을 구현 해야 합니다는 <xref:System.Net.IWebRequestCreate> 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-128">Web request modules must implement the <xref:System.Net.IWebRequestCreate> interface.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="000fc-126">설명</span><span class="sxs-lookup"><span data-stu-id="000fc-126">Remarks</span></span>  
+ <span data-ttu-id="000fc-127">`webRequestModules` 요소는 <xref:System.Net.WebRequest> 클래스의 하위 클래스를 등록하여 네트워크 호스트로의 정보 요청을 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-127">The `webRequestModules` element registers descendants of the <xref:System.Net.WebRequest> class to handle information requests to network hosts.</span></span> <span data-ttu-id="000fc-128">웹 요청 모듈을 구현 해야 합니다는 <xref:System.Net.IWebRequestCreate> 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-128">Web request modules must implement the <xref:System.Net.IWebRequestCreate> interface.</span></span>  
   
- <span data-ttu-id="4b419-129">.NET Framework는 http://, https:// 및 file://을 시작 하는 Uri에 대 한 웹 요청 모듈을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-129">The .NET Framework includes Web request modules for URIs that begin with http://, https://, and file://.</span></span> <span data-ttu-id="4b419-130">구성 파일에서 사용자 지정 모듈을 등록에 의해서만 기본 모듈을 재정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-130">You can override the default modules only by registering a custom module in the configuration file.</span></span>  
+ <span data-ttu-id="000fc-129">로 시작 하는 Uri에 대 한 웹 요청 모듈을 포함 하는.NET Framework `http://`하십시오 `https://`, 및 `file://`합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-129">The .NET Framework includes Web request modules for URIs that begin with `http://`, `https://`, and `file://`.</span></span> <span data-ttu-id="000fc-130">구성 파일에서 사용자 지정 모듈을 등록에 의해서만 기본 모듈을 재정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-130">You can override the default modules only by registering a custom module in the configuration file.</span></span>  
   
-## <a name="configuration-files"></a><span data-ttu-id="4b419-131">구성 파일</span><span class="sxs-lookup"><span data-stu-id="4b419-131">Configuration Files</span></span>  
- <span data-ttu-id="4b419-132">이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-132">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
+## <a name="configuration-files"></a><span data-ttu-id="000fc-131">구성 파일</span><span class="sxs-lookup"><span data-stu-id="000fc-131">Configuration Files</span></span>  
+ <span data-ttu-id="000fc-132">이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-132">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="4b419-133">예제</span><span class="sxs-lookup"><span data-stu-id="4b419-133">Example</span></span>  
- <span data-ttu-id="4b419-134">다음 예제에서는 기본 HTTP 모듈을 등록합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-134">The following example registers the default HTTP module.</span></span> <span data-ttu-id="4b419-135">지정된 된 모듈에 대 한 올바른 값을 사용 하 여 PublicKeyToken 및 버전에 대 한 값을 바꿔야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b419-135">You should replace the values for Version and PublicKeyToken with the correct values for the specified module.</span></span>  
+## <a name="example"></a><span data-ttu-id="000fc-133">예제</span><span class="sxs-lookup"><span data-stu-id="000fc-133">Example</span></span>  
+ <span data-ttu-id="000fc-134">다음 예제에서는 기본 HTTP 모듈을 등록합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-134">The following example registers the default HTTP module.</span></span> <span data-ttu-id="000fc-135">지정된 된 모듈에 대 한 올바른 값을 사용 하 여 PublicKeyToken 및 버전에 대 한 값을 바꿔야 합니다.</span><span class="sxs-lookup"><span data-stu-id="000fc-135">You should replace the values for Version and PublicKeyToken with the correct values for the specified module.</span></span>  
   
 ```xml  
 <configuration>  
@@ -75,7 +75,7 @@ ms.locfileid: "48028190"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="4b419-136">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4b419-136">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="000fc-136">참고 항목</span><span class="sxs-lookup"><span data-stu-id="000fc-136">See Also</span></span>  
  <xref:System.Net.WebRequest>  
  <xref:System.Net.IWebRequestCreate>  
- [<span data-ttu-id="4b419-137">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="4b419-137">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+ [<span data-ttu-id="000fc-137">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="000fc-137">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

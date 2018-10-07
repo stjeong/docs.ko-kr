@@ -3,23 +3,23 @@ title: '&lt;ws2007FederationHttpBinding&gt;의 &lt;security&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
 author: BrucePerlerMS
-ms.openlocfilehash: 6451d4c3cdcf649ae959012826eb433732d87c54
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: f413a7f978df1a0ef3d731abee93c34824c8a6c6
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47208713"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48841153"
 ---
-# <a name="ltsecuritygt-element-of-ltws2007federationhttpbindinggt"></a><span data-ttu-id="b4312-102">&lt;ws2007FederationHttpBinding&gt;의 &lt;security&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="b4312-102">&lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;</span></span>
-<span data-ttu-id="b4312-103">보안 설정을 정의 합니다 [ \<ws2007FederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-103">Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) element.</span></span>  
+# <a name="ltsecuritygt-element-of-ltws2007federationhttpbindinggt"></a><span data-ttu-id="cb973-102">&lt;ws2007FederationHttpBinding&gt;의 &lt;security&gt; 요소</span><span class="sxs-lookup"><span data-stu-id="cb973-102">&lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;</span></span>
+<span data-ttu-id="cb973-103">보안 설정을 정의 합니다 [ \<ws2007FederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-103">Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) element.</span></span>  
   
- <span data-ttu-id="b4312-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="b4312-104">\<system.ServiceModel></span></span>  
-<span data-ttu-id="b4312-105">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="b4312-105">\<bindings></span></span>  
-<span data-ttu-id="b4312-106">\<ws2007FederationHttpBinding></span><span class="sxs-lookup"><span data-stu-id="b4312-106">\<ws2007FederationHttpBinding></span></span>  
-<span data-ttu-id="b4312-107">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="b4312-107">\<binding></span></span>  
-<span data-ttu-id="b4312-108">\<security></span><span class="sxs-lookup"><span data-stu-id="b4312-108">\<security></span></span>  
+ <span data-ttu-id="cb973-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="cb973-104">\<system.ServiceModel></span></span>  
+<span data-ttu-id="cb973-105">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="cb973-105">\<bindings></span></span>  
+<span data-ttu-id="cb973-106">\<ws2007FederationHttpBinding></span><span class="sxs-lookup"><span data-stu-id="cb973-106">\<ws2007FederationHttpBinding></span></span>  
+<span data-ttu-id="cb973-107">\<바인딩 ></span><span class="sxs-lookup"><span data-stu-id="cb973-107">\<binding></span></span>  
+<span data-ttu-id="cb973-108">\<security></span><span class="sxs-lookup"><span data-stu-id="cb973-108">\<security></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b4312-109">구문</span><span class="sxs-lookup"><span data-stu-id="b4312-109">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="cb973-109">구문</span><span class="sxs-lookup"><span data-stu-id="cb973-109">Syntax</span></span>  
   
 ```xml  
 <ws2007FederationBinding>  
@@ -36,44 +36,44 @@ ms.locfileid: "47208713"
 </ws2007FederationBinding>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="b4312-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="b4312-110">Attributes and Elements</span></span>  
- <span data-ttu-id="b4312-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="cb973-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="cb973-110">Attributes and Elements</span></span>  
+ <span data-ttu-id="cb973-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="b4312-112">특성</span><span class="sxs-lookup"><span data-stu-id="b4312-112">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="cb973-112">특성</span><span class="sxs-lookup"><span data-stu-id="cb973-112">Attributes</span></span>  
   
-|<span data-ttu-id="b4312-113">특성</span><span class="sxs-lookup"><span data-stu-id="b4312-113">Attribute</span></span>|<span data-ttu-id="b4312-114">설명</span><span class="sxs-lookup"><span data-stu-id="b4312-114">Description</span></span>|  
+|<span data-ttu-id="cb973-113">특성</span><span class="sxs-lookup"><span data-stu-id="cb973-113">Attribute</span></span>|<span data-ttu-id="cb973-114">설명</span><span class="sxs-lookup"><span data-stu-id="cb973-114">Description</span></span>|  
 |---------------|-----------------|  
-|`mode`|<span data-ttu-id="b4312-115">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-115">Optional.</span></span> <span data-ttu-id="b4312-116">적용되는 보안 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-116">Specifies the type of security that is applied.</span></span> <span data-ttu-id="b4312-117">기본값은 `Message`입니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-117">The default value is `Message`.</span></span> <span data-ttu-id="b4312-118">이 특성은 <xref:System.ServiceModel.WSFederationHttpSecurityMode> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-118">This attribute is of type <xref:System.ServiceModel.WSFederationHttpSecurityMode>.</span></span>|  
+|`mode`|<span data-ttu-id="cb973-115">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-115">Optional.</span></span> <span data-ttu-id="cb973-116">적용되는 보안 형식을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-116">Specifies the type of security that is applied.</span></span> <span data-ttu-id="cb973-117">기본값은 `Message`입니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-117">The default value is `Message`.</span></span> <span data-ttu-id="cb973-118">이 특성은 <xref:System.ServiceModel.WSFederationHttpSecurityMode> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-118">This attribute is of type <xref:System.ServiceModel.WSFederationHttpSecurityMode>.</span></span>|  
   
-## <a name="mode-attribute"></a><span data-ttu-id="b4312-119">mode 특성</span><span class="sxs-lookup"><span data-stu-id="b4312-119">mode Attribute</span></span>  
+## <a name="mode-attribute"></a><span data-ttu-id="cb973-119">mode 특성</span><span class="sxs-lookup"><span data-stu-id="cb973-119">mode Attribute</span></span>  
   
-|<span data-ttu-id="b4312-120">값</span><span class="sxs-lookup"><span data-stu-id="b4312-120">Value</span></span>|<span data-ttu-id="b4312-121">설명</span><span class="sxs-lookup"><span data-stu-id="b4312-121">Description</span></span>|  
+|<span data-ttu-id="cb973-120">값</span><span class="sxs-lookup"><span data-stu-id="cb973-120">Value</span></span>|<span data-ttu-id="cb973-121">설명</span><span class="sxs-lookup"><span data-stu-id="cb973-121">Description</span></span>|  
 |-----------|-----------------|  
-|<span data-ttu-id="b4312-122">없음</span><span class="sxs-lookup"><span data-stu-id="b4312-122">None</span></span>|<span data-ttu-id="b4312-123">SOAP 메시지의 경우 전송 중에는 안전하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-123">The SOAP message is not secure during transfer.</span></span>|  
-|<span data-ttu-id="b4312-124">메시지</span><span class="sxs-lookup"><span data-stu-id="b4312-124">Message</span></span>|<span data-ttu-id="b4312-125">SOAP 메시지 보안을 사용하여 무결성, 기밀성, 서버 인증 및 클라이언트 인증을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-125">Integrity, confidentiality, server authentication and client authentication are provided using SOAP message security.</span></span> <span data-ttu-id="b4312-126">기본적으로 본문에는 암호화 및 서명이 수행됩니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-126">By default, the body is encrypted and signed.</span></span> <span data-ttu-id="b4312-127">인증서를 사용하여 서비스를 구성해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-127">The service must be configured with a certificate.</span></span> <span data-ttu-id="b4312-128">클라이언트 인증은 보안 토큰 서비스가 클라이언트에 발급한 토큰에 따라 수행됩니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-128">Client authentication is based on the token issued to the client by a security token service.</span></span>|  
-|<span data-ttu-id="b4312-129">TransportWithMessageCredential</span><span class="sxs-lookup"><span data-stu-id="b4312-129">TransportWithMessageCredential</span></span>|<span data-ttu-id="b4312-130">HTTPS를 사용하여 무결성, 기밀성 및 서버 인증을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-130">Integrity, confidentiality and server authentication are provided by HTTPS.</span></span> <span data-ttu-id="b4312-131">인증서를 사용하여 서비스를 구성해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-131">The service must be configured with a certificate.</span></span> <span data-ttu-id="b4312-132">클라이언트 인증은 SOAP 메시지 보안을 통해 제공되며 보안 토큰 서비스가 클라이언트에 발급한 토큰에 따라 수행됩니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-132">Client authentication is provided by means of SOAP message security and is based on the token issued to the client by a security token service.</span></span>|  
+|<span data-ttu-id="cb973-122">없음</span><span class="sxs-lookup"><span data-stu-id="cb973-122">None</span></span>|<span data-ttu-id="cb973-123">SOAP 메시지의 경우 전송 중에는 안전하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-123">The SOAP message is not secure during transfer.</span></span>|  
+|<span data-ttu-id="cb973-124">메시지</span><span class="sxs-lookup"><span data-stu-id="cb973-124">Message</span></span>|<span data-ttu-id="cb973-125">SOAP 메시지 보안을 사용하여 무결성, 기밀성, 서버 인증 및 클라이언트 인증을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-125">Integrity, confidentiality, server authentication and client authentication are provided using SOAP message security.</span></span> <span data-ttu-id="cb973-126">기본적으로 본문에는 암호화 및 서명이 수행됩니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-126">By default, the body is encrypted and signed.</span></span> <span data-ttu-id="cb973-127">인증서를 사용하여 서비스를 구성해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-127">The service must be configured with a certificate.</span></span> <span data-ttu-id="cb973-128">클라이언트 인증은 보안 토큰 서비스가 클라이언트에 발급한 토큰에 따라 수행됩니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-128">Client authentication is based on the token issued to the client by a security token service.</span></span>|  
+|<span data-ttu-id="cb973-129">TransportWithMessageCredential</span><span class="sxs-lookup"><span data-stu-id="cb973-129">TransportWithMessageCredential</span></span>|<span data-ttu-id="cb973-130">HTTPS를 사용하여 무결성, 기밀성 및 서버 인증을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-130">Integrity, confidentiality and server authentication are provided by HTTPS.</span></span> <span data-ttu-id="cb973-131">인증서를 사용하여 서비스를 구성해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-131">The service must be configured with a certificate.</span></span> <span data-ttu-id="cb973-132">클라이언트 인증은 SOAP 메시지 보안을 통해 제공되며 보안 토큰 서비스가 클라이언트에 발급한 토큰에 따라 수행됩니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-132">Client authentication is provided by means of SOAP message security and is based on the token issued to the client by a security token service.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="b4312-133">자식 요소</span><span class="sxs-lookup"><span data-stu-id="b4312-133">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="cb973-133">자식 요소</span><span class="sxs-lookup"><span data-stu-id="cb973-133">Child Elements</span></span>  
   
-|<span data-ttu-id="b4312-134">요소</span><span class="sxs-lookup"><span data-stu-id="b4312-134">Element</span></span>|<span data-ttu-id="b4312-135">설명</span><span class="sxs-lookup"><span data-stu-id="b4312-135">Description</span></span>|  
+|<span data-ttu-id="cb973-134">요소</span><span class="sxs-lookup"><span data-stu-id="cb973-134">Element</span></span>|<span data-ttu-id="cb973-135">설명</span><span class="sxs-lookup"><span data-stu-id="cb973-135">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="b4312-136">\<message></span><span class="sxs-lookup"><span data-stu-id="b4312-136">\<message></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-ws2007httpbinding.md)|<span data-ttu-id="b4312-137">메시지 수준 보안 설정을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-137">Defines the settings for the message-level security.</span></span> <span data-ttu-id="b4312-138">이 요소는 <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-138">This element is of type <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>.</span></span>|  
+|[<span data-ttu-id="cb973-136">\<message></span><span class="sxs-lookup"><span data-stu-id="cb973-136">\<message></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-ws2007httpbinding.md)|<span data-ttu-id="cb973-137">메시지 수준 보안 설정을 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-137">Defines the settings for the message-level security.</span></span> <span data-ttu-id="cb973-138">이 요소는 <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement> 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-138">This element is of type <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="b4312-139">부모 요소</span><span class="sxs-lookup"><span data-stu-id="b4312-139">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="cb973-139">부모 요소</span><span class="sxs-lookup"><span data-stu-id="cb973-139">Parent Elements</span></span>  
   
-|<span data-ttu-id="b4312-140">요소</span><span class="sxs-lookup"><span data-stu-id="b4312-140">Element</span></span>|<span data-ttu-id="b4312-141">설명</span><span class="sxs-lookup"><span data-stu-id="b4312-141">Description</span></span>|  
+|<span data-ttu-id="cb973-140">요소</span><span class="sxs-lookup"><span data-stu-id="cb973-140">Element</span></span>|<span data-ttu-id="cb973-141">설명</span><span class="sxs-lookup"><span data-stu-id="cb973-141">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="b4312-142">\<binding></span><span class="sxs-lookup"><span data-stu-id="b4312-142">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)|<span data-ttu-id="b4312-143">모든 바인딩 기능을 정의 합니다 [ \<wsDualHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="b4312-143">Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).</span></span>|  
+|[<span data-ttu-id="cb973-142">\<binding></span><span class="sxs-lookup"><span data-stu-id="cb973-142">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)|<span data-ttu-id="cb973-143">모든 바인딩 기능을 정의 합니다 [ \<wsDualHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="cb973-143">Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="b4312-144">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b4312-144">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="cb973-144">참고 항목</span><span class="sxs-lookup"><span data-stu-id="cb973-144">See Also</span></span>  
  <xref:System.ServiceModel.WSFederationHttpSecurity>  
  <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>  
  <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>  
- [<span data-ttu-id="b4312-145">방법: WSFederationHttpBinding 만들기</span><span class="sxs-lookup"><span data-stu-id="b4312-145">How to: Create a WSFederationHttpBinding</span></span>](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
- [<span data-ttu-id="b4312-146">서비스 및 클라이언트에 보안 설정</span><span class="sxs-lookup"><span data-stu-id="b4312-146">Securing Services and Clients</span></span>](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [<span data-ttu-id="b4312-147">자격 증명 형식 선택</span><span class="sxs-lookup"><span data-stu-id="b4312-147">Selecting a Credential Type</span></span>](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [<span data-ttu-id="b4312-148">바인딩</span><span class="sxs-lookup"><span data-stu-id="b4312-148">Bindings</span></span>](../../../../../docs/framework/wcf/bindings.md)  
- [<span data-ttu-id="b4312-149">시스템 제공 바인딩 구성</span><span class="sxs-lookup"><span data-stu-id="b4312-149">Configuring System-Provided Bindings</span></span>](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [<span data-ttu-id="b4312-150">바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성</span><span class="sxs-lookup"><span data-stu-id="b4312-150">Using Bindings to Configure Windows Communication Foundation Services and Clients</span></span>](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
- [<span data-ttu-id="b4312-151">\<binding></span><span class="sxs-lookup"><span data-stu-id="b4312-151">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)
+ [<span data-ttu-id="cb973-145">방법: WSFederationHttpBinding 만들기</span><span class="sxs-lookup"><span data-stu-id="cb973-145">How to: Create a WSFederationHttpBinding</span></span>](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
+ [<span data-ttu-id="cb973-146">서비스 및 클라이언트에 보안 설정</span><span class="sxs-lookup"><span data-stu-id="cb973-146">Securing Services and Clients</span></span>](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [<span data-ttu-id="cb973-147">자격 증명 형식 선택</span><span class="sxs-lookup"><span data-stu-id="cb973-147">Selecting a Credential Type</span></span>](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [<span data-ttu-id="cb973-148">바인딩</span><span class="sxs-lookup"><span data-stu-id="cb973-148">Bindings</span></span>](../../../../../docs/framework/wcf/bindings.md)  
+ [<span data-ttu-id="cb973-149">시스템 제공 바인딩 구성</span><span class="sxs-lookup"><span data-stu-id="cb973-149">Configuring System-Provided Bindings</span></span>](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [<span data-ttu-id="cb973-150">바인딩을 사용하여 서비스 및 클라이언트 구성</span><span class="sxs-lookup"><span data-stu-id="cb973-150">Using Bindings to Configure Services and Clients</span></span>](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+ [<span data-ttu-id="cb973-151">\<binding></span><span class="sxs-lookup"><span data-stu-id="cb973-151">\<binding></span></span>](../../../../../docs/framework/misc/binding.md)

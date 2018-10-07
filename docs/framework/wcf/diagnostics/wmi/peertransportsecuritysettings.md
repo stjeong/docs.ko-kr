@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 ms.assetid: 1df08cbb-68c5-4d36-9f88-a776a8117de8
 author: BrucePerlerMS
 ms.openlocfilehash: b49aea0ee78b68f199d1ac9e9a1050960342bcb2
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48777054"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48836273"
 ---
-# <a name="peertransportsecuritysettings"></a><span data-ttu-id="fe3d5-102">PeerTransportSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="fe3d5-102">PeerTransportSecuritySettings</span></span>
-<span data-ttu-id="fe3d5-103">PeerTransportSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="fe3d5-103">PeerTransportSecuritySettings</span></span>  
+# <a name="peertransportsecuritysettings"></a><span data-ttu-id="faf22-102">PeerTransportSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="faf22-102">PeerTransportSecuritySettings</span></span>
+<span data-ttu-id="faf22-103">PeerTransportSecuritySettings</span><span class="sxs-lookup"><span data-stu-id="faf22-103">PeerTransportSecuritySettings</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="fe3d5-104">구문</span><span class="sxs-lookup"><span data-stu-id="fe3d5-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="faf22-104">구문</span><span class="sxs-lookup"><span data-stu-id="faf22-104">Syntax</span></span>  
   
 ```  
 class PeerTransportSecuritySettings  
@@ -22,24 +22,24 @@ class PeerTransportSecuritySettings
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="fe3d5-105">메서드</span><span class="sxs-lookup"><span data-stu-id="fe3d5-105">Methods</span></span>  
- <span data-ttu-id="fe3d5-106">PeerTransportSecuritySettings 클래스는 메서드를 정의하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fe3d5-106">The PeerTransportSecuritySettings class does not define any methods.</span></span>  
+## <a name="methods"></a><span data-ttu-id="faf22-105">메서드</span><span class="sxs-lookup"><span data-stu-id="faf22-105">Methods</span></span>  
+ <span data-ttu-id="faf22-106">PeerTransportSecuritySettings 클래스는 메서드를 정의하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="faf22-106">The PeerTransportSecuritySettings class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="fe3d5-107">속성</span><span class="sxs-lookup"><span data-stu-id="fe3d5-107">Properties</span></span>  
- <span data-ttu-id="fe3d5-108">PeerTransportSecuritySettings 클래스에는 다음과 같은 속성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fe3d5-108">The PeerTransportSecuritySettings class has the following property:</span></span>  
+## <a name="properties"></a><span data-ttu-id="faf22-107">속성</span><span class="sxs-lookup"><span data-stu-id="faf22-107">Properties</span></span>  
+ <span data-ttu-id="faf22-108">PeerTransportSecuritySettings 클래스에는 다음과 같은 속성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faf22-108">The PeerTransportSecuritySettings class has the following property:</span></span>  
   
-### <a name="credentialtype"></a><span data-ttu-id="fe3d5-109">CredentialType</span><span class="sxs-lookup"><span data-stu-id="fe3d5-109">CredentialType</span></span>  
- <span data-ttu-id="fe3d5-110">데이터 형식: string</span><span class="sxs-lookup"><span data-stu-id="fe3d5-110">Data type: string</span></span>  
+### <a name="credentialtype"></a><span data-ttu-id="faf22-109">CredentialType</span><span class="sxs-lookup"><span data-stu-id="faf22-109">CredentialType</span></span>  
+ <span data-ttu-id="faf22-110">데이터 형식: string</span><span class="sxs-lookup"><span data-stu-id="faf22-110">Data type: string</span></span>  
   
- <span data-ttu-id="fe3d5-111">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="fe3d5-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="faf22-111">액세스 형식: 읽기 전용</span><span class="sxs-lookup"><span data-stu-id="faf22-111">Access type: Read-only</span></span>  
   
- <span data-ttu-id="fe3d5-112">피어 보안 요소의 전송 자격 증명 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="fe3d5-112">The transport credential type of the peer security element.</span></span>  
+ <span data-ttu-id="faf22-112">피어 보안 요소의 전송 자격 증명 형식입니다.</span><span class="sxs-lookup"><span data-stu-id="faf22-112">The transport credential type of the peer security element.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="fe3d5-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="fe3d5-113">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="faf22-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="faf22-113">Requirements</span></span>  
   
-|<span data-ttu-id="fe3d5-114">MOF</span><span class="sxs-lookup"><span data-stu-id="fe3d5-114">MOF</span></span>|<span data-ttu-id="fe3d5-115">Servicemodel.mof에 선언되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fe3d5-115">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="faf22-114">MOF</span><span class="sxs-lookup"><span data-stu-id="faf22-114">MOF</span></span>|<span data-ttu-id="faf22-115">Servicemodel.mof에 선언되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faf22-115">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="fe3d5-116">네임스페이스</span><span class="sxs-lookup"><span data-stu-id="fe3d5-116">Namespace</span></span>|<span data-ttu-id="fe3d5-117">root\ServiceModel에 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fe3d5-117">Defined in root\ServiceModel</span></span>|  
+|<span data-ttu-id="faf22-116">네임스페이스</span><span class="sxs-lookup"><span data-stu-id="faf22-116">Namespace</span></span>|<span data-ttu-id="faf22-117">root\ServiceModel에 정의되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="faf22-117">Defined in root\ServiceModel</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="fe3d5-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="fe3d5-118">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="faf22-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="faf22-118">See Also</span></span>  
  <xref:System.ServiceModel.PeerTransportSecuritySettings>
