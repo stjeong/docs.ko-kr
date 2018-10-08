@@ -5,11 +5,11 @@ helpviewer_keywords:
 - routing [WCF], message filters
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
 ms.openlocfilehash: fc4656a76894eb3a844bc9f2187847fd9eff0ffe
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
-ms.translationtype: HT
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48780455"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48839107"
 ---
 # <a name="message-filters"></a>메시지 필터
 라우팅 서비스는 내용 기반 라우팅을 구현하기 위해 주소, 엔드포인트 이름 또는 특정 XPath 문과 같은 메시지의 특정 섹션을 검사하는 <xref:System.ServiceModel.Dispatcher.MessageFilter> 구현을 사용합니다. [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]에 제공되는 메시지 필터 중 요구 사항을 충족하는 필터가 없는 경우 기본 <xref:System.ServiceModel.Dispatcher.MessageFilter> 클래스의 새 구현을 만드는 방법으로 사용자 지정 필터를 만들 수 있습니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "48780455"
 |EndpointAddressPrefix|사용 하는 <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> 클래스를 사용 하 여 <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison%2A>  ==  `true` 특정 주소 접두사가 포함 된 메시지를 일치 시킵니다.|가장 긴 접두사 일치를 사용하여 필터링을 적용할 주소입니다.|\<filter name="prefix1" filterType="EndpointAddressPrefix" filterData="http://host/" />|  
 |그리고|반환 전에 항상 두 조건을 모두 평가하는 <xref:System.ServiceModel.Dispatcher.StrictAndMessageFilter> 클래스를 사용합니다.|filterData는 사용 되지 않습니다. 대신 filter1 및 filter2가 있어야 하 고 (테이블)에 해당 메시지 필터의 이름을 **AND**적용 합니다.|\<filter name="and1" filterType="And" filter1="address1" filter2="action1" />|  
 |사용자 지정|<xref:System.ServiceModel.Dispatcher.MessageFilter> 클래스를 확장하고 문자열을 사용하는 생성자를 포함하는 사용자 정의 형식입니다.|customType 특성은 만들 클래스의 정규화된 형식 이름입니다. filterData는 필터를 만들 때 생성자에 전달할 문자열입니다.|\<filter name="custom1" filterType="Custom" customType="CustomAssembly.CustomMsgFilter, CustomAssembly" filterData="Custom Data" />|  
-|EndpointName|ph x="1" /&gt; 클래스를 사용하여 메시지가 도착하는 서비스 엔드포인트의 이름을 기반으로 메시지를 일치시킵니다.|서비스 끝점의 이름 예: "serviceEndpoint1"입니다.  이는 라우팅 서비스에서 노출되는 엔드포인트 중 하나여야 합니다.|\<filter name="stock1" filterType="Endpoint" filterData="SvcEndpoint" />|  
+|EndpointName|<xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> 클래스를 사용하여 메시지가 도착하는 서비스 엔드포인트의 이름을 기반으로 메시지를 일치시킵니다.|서비스 끝점의 이름 예: "serviceEndpoint1"입니다.  이는 라우팅 서비스에서 노출되는 엔드포인트 중 하나여야 합니다.|\<filter name="stock1" filterType="Endpoint" filterData="SvcEndpoint" />|  
 |MatchAll|<xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> 클래스를 사용합니다. 이 필터는 도착하는 메시지를 모두 일치시킵니다.|filterData는 사용되지 않습니다. 이 필터는 항상 모든 메시지를 일치시킵니다.|\<filter name="matchAll1" filterType="MatchAll" />|  
 |XPath|<xref:System.ServiceModel.Dispatcher.XPathMessageFilter> 클래스를 사용하여 메시지 내의 특정 XPath 쿼리를 일치시킵니다.|메시지를 대조할 때 사용하는 XPath 쿼리입니다.|\<필터 이름 = "XPath1" filterType "XPath" filterData = = "//ns:element" / >|  
   
