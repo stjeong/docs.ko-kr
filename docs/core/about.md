@@ -1,4 +1,4 @@
----
+﻿---
 title: .NET Core 정보
 description: .NET Core에 대한 자세히 알아봅니다.
 author: richlander
