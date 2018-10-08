@@ -3,11 +3,11 @@ title: 제약 조건(F#)
 description: '제네릭 형식 또는 함수 형식 인수에 대 한 요구 사항을 지정 하려면 제네릭 형식 매개 변수에 적용 되는 F # 제약 조건에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 9534db4ffd195022366af8c993658bd94f375f53
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48034839"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48579872"
 ---
 # <a name="constraints"></a>제약 조건
 
