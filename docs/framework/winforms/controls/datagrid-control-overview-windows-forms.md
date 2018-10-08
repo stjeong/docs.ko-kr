@@ -20,12 +20,12 @@ helpviewer_keywords:
 - parent table navigation in DataGrid
 - child tables [Windows Forms], dataGrid control
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-ms.openlocfilehash: 9f939175a77ff080b37491a36c15edbb8af15933
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: a4a8f33b45fa8433013cfa34fbc55f0db90737c4
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43462466"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48850689"
 ---
 # <a name="datagrid-control-overview-windows-forms"></a>DataGrid 컨트롤 개요(Windows Forms)
 > [!NOTE]
@@ -90,7 +90,7 @@ ms.locfileid: "43462466"
 |관련된 여러 테이블.|테이블을 선택하는 데 사용할 트리 뷰가 표 형태 창에 표시되거나, 부모 테이블이 표 형태 창에 표시되도록 지정할 수 있습니다. 사용자는 부모 테이블의 레코드를 통해 관련된 자식 행을 탐색할 수 있습니다.|  
   
 > [!NOTE]
->  데이터 집합의 테이블은 <xref:System.Data.DataRelation>을 사용하여 관련됩니다.  도 참조 하세요 [HYPERLINK "http://msdn.microsoft.com/library/dbwcse3d(v=vs.110)" 데이터 집합의 관계](https://msdn.microsoft.com/library/dbwcse3d\(v=vs.110\)) 하거나 [데이터 집합의 관계](https://msdn.microsoft.com/library/dbwcse3d\(v=vs.120\)).  
+> 데이터 집합의 테이블은 <xref:System.Data.DataRelation>을 사용하여 관련됩니다. 도 참조 하세요 [데이터 집합 간의 관계를 만들](/visualstudio/data-tools/relationships-in-datasets)합니다.
   
  <xref:System.Windows.Forms.DataGrid> 컨트롤에서 테이블을 표시하고 <xref:System.Windows.Forms.DataGrid.AllowSorting%2A> 속성이 `true`로 설정된 경우 열 머리글을 클릭하여 데이터를 다시 정렬할 수 있습니다. 사용자가 행을 추가하고 셀을 편집할 수도 있습니다.  
   

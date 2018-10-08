@@ -3,11 +3,11 @@ title: 영속 이중 상관 관계
 ms.date: 03/30/2017
 ms.assetid: 8eb0e49a-6d3b-4f7e-a054-0d4febee2ffb
 ms.openlocfilehash: f2f5fe557f1f8754758d0dd9b4042cacc62cc61f
-ms.sourcegitcommit: daa8788af67ac2d1cecd24f9f3409babb2f978c9
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47862898"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48850800"
 ---
 # <a name="durable-duplex-correlation"></a>영속 이중 상관 관계
 콜백 상관 관계라고도 하는 영속 이중은 워크플로 서비스를 사용하여 초기 호출자에게 콜백을 보내야 하는 경우에 유용합니다. WCF 이중과 달리 콜백은 나중에 언제든지 발생할 수 있으며 동일한 채널이나 채널 수명과 연결되지 않습니다. 따라서 유일한 요구 사항은 호출자에 콜백 메시지를 수신 대기하는 활성 엔드포인트가 있어야 한다는 점입니다. 그러면 장기 실행 대화에서 워크플로 서비스를 사용하여 통신할 수 있습니다. 이 항목에서는 영속 이중 상관 관계에 대해 간략하게 설명합니다.  

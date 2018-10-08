@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data contracts [WCF], collection types
 - collection types [WCF]
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
-ms.openlocfilehash: dccc53f13889e2073579af19e86459fe56b069e7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a2528699387a86ca276cb3ba63eab39544552a4f
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33496908"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48850878"
 ---
 # <a name="collection-types-in-data-contracts"></a>데이터 계약의 컬렉션 형식
 *컬렉션* 은 특정 형식의 항목으로 구성된 목록입니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 경우 이러한 목록은 배열이나 여러 형식(제네릭 목록, 제네릭 <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>또는 <xref:System.Collections.ArrayList>)을 사용하여 나타낼 수 있습니다. 예를 들어, 컬렉션은 지정된 고객에 대한 주소 목록을 보유할 수 있습니다. 실제 형식에 관계없이 이러한 컬렉션을 *목록 컬렉션*이라고 합니다.  
@@ -27,9 +27,9 @@ ms.locfileid: "33496908"
   
  `Add` 라는 메서드 및 기본 생성자를 사용하는 등 컬렉션 형식에 대한 추가 요구 사항은 다음 단원에서 자세히 설명합니다. 이렇게 하면 컬렉션 형식이 serialize되고 deserialize될 수 있습니다. 따라서 기본 생성자가 없는 제네릭 <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> 과 같은 일부 컬렉션은 직접 지원되지 않습니다. 이러한 제한을 해결하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 "컬렉션 인터페이스 형식 및 읽기 전용 컬렉션 사용" 단원을 참조하십시오.  
   
- 컬렉션에 포함된 형식은 데이터 계약 형식이거나 serialize할 수 있어야 합니다. 자세한 내용은 참조 [데이터 계약 Serializer에서 지 원하는 유형](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)합니다.  
+ 컬렉션에 포함된 형식은 데이터 계약 형식이거나 serialize할 수 있어야 합니다. 자세한 내용은 [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)합니다.  
   
- 컬렉션을 serialize 하는 방법에 대 한 뿐만 아니라 란 무엇이 고 간주 되는 하지 유효한 컬렉션에 대 한 자세한 내용은이 항목의 "고급 컬렉션 규칙" 섹션에서 직렬화 컬렉션에 대 한 정보를 참조 하세요.  
+ 컬렉션 serialize 되는 방법에 대 한 뿐만 아니라 이란 무엇 이며 어떤 유효한 컬렉션, 간주 되지 않습니다 하는 방법에 대 한 자세한 내용은이 항목의 "고급 컬렉션 규칙" 섹션에서 직렬화 컬렉션에 대 한 정보를 참조 하세요.  
   
 ## <a name="interchangeable-collections"></a>교환 가능 컬렉션  
  동일한 형식의 모든 목록 컬렉션은 이 항목 뒷부분에서 설명하는 것처럼 <xref:System.Runtime.Serialization.CollectionDataContractAttribute> 특성을 사용하여 사용자 지정되지 않는 한 동일한 데이터 계약을 가지는 것으로 간주됩니다. 예를 들어, 다음 데이터 계약은 동일합니다.  
@@ -73,12 +73,12 @@ ms.locfileid: "33496908"
   
  serialization을 수행하는 동안 선언된 형식이 인터페이스인 경우 사용된 실제 인스턴스 형식은 해당 인터페이스를 구현하는 모든 형식이 될 수 있습니다. 앞에서 설명한 제한 사항(기본 생성자 및 `Add` 메서드를 사용)은 적용되지 않습니다. 예를 들어, 제네릭 <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> 형식의 데이터 멤버를 직접 선언할 수 없는 경우에도 Customer2의 주소를 제네릭 주소 <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>의 인스턴스로 설정할 수 있습니다  
   
- deserialization을 수행하는 동안 선언된 형식이 인터페이스인 경우 serialization 엔진은 선언된 인터페이스를 구현하는 형식을 선택하고, 해당 형식은 인스턴스화됩니다. 알려진 형식 메커니즘은 (에 설명 된 [데이터 계약 알려진 형식을](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)) 아무 효과가 없습니다 선택한 형식 변환은에 WCF 합니다.  
+ deserialization을 수행하는 동안 선언된 형식이 인터페이스인 경우 serialization 엔진은 선언된 인터페이스를 구현하는 형식을 선택하고, 해당 형식은 인스턴스화됩니다. 알려진 형식 메커니즘은 (에서 설명한 [데이터 계약 알려진 형식을](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)) 영향을 주지 않습니다 선택한 형식은 WCF에 내장 되어 여기;.  
   
 ## <a name="customizing-collection-types"></a>컬렉션 형식 사용자 지정  
  여러 용도로 사용되는 <xref:System.Runtime.Serialization.CollectionDataContractAttribute> 특성을 사용하여 컬렉션 형식을 사용자 지정할 수 있습니다.  
   
- 컬렉션 형식을 사용자 지정하면 컬렉션 교환 가능성이 낮아지므로 가능하면 이 특성을 적용하지 않는 것이 좋습니다. 이 문제에 대 한 자세한 내용은이 항목의 뒷부분에 나오는 "고급 컬렉션 규칙" 단원을 참조 하십시오.  
+ 컬렉션 형식을 사용자 지정하면 컬렉션 교환 가능성이 낮아지므로 가능하면 이 특성을 적용하지 않는 것이 좋습니다. 이 문제에 대 한 자세한 내용은이 항목의 뒷부분에 나오는 "고급 컬렉션 규칙" 섹션을 참조 하세요.  
   
 ### <a name="collection-data-contract-naming"></a>컬렉션 데이터 계약 명명  
  컬렉션 형식의 명명 규칙은 [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md)에서 설명한 대로 일반 데이터 계약 형식의 명명 규칙과 유사하지만, 다음과 같은 중요한 차이점이 몇 개 있습니다.  
@@ -139,12 +139,12 @@ ms.locfileid: "33496908"
 </cust_list>  
 ```  
   
- 자세한 내용은이 항목의 뒷부분에 나오는 "고급 컬렉션 규칙" 단원을 참조 하십시오.  
+ 자세한 내용은이 항목의 뒷부분에 나오는 "고급 컬렉션 규칙" 섹션을 참조 하세요.  
   
 ### <a name="customizing-the-repeating-element-name-in-list-collections"></a>목록 컬렉션의 반복되는 요소 이름 사용자 지정  
  목록 컬렉션에는 반복되는 항목이 있습니다. 일반적으로 반복되는 각 항목은 컬렉션에 포함된 형식의 데이터 계약 이름에 따라 명명된 요소로 표시됩니다.  
   
- `CustomerList` 예제에서 컬렉션에는 문자열이 있습니다. 문자열 기본 형식의 데이터 계약 이름을 반복 되는 요소 기간은 "문자열"은 "\<문자열 >"입니다.  
+ `CustomerList` 예제에서 컬렉션에는 문자열이 있습니다. 문자열 기본 형식의 데이터 계약 이름 이므로 "string" 반복 요소가 "\<문자열 >"입니다.  
   
  그러나 <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> 특성의 <xref:System.Runtime.Serialization.CollectionDataContractAttribute> 속성을 사용하여 이 반복되는 요소 이름을 사용자 지정할 수 있습니다. 예를 보려면 다음 형식을 참조하십시오.  
   
@@ -190,7 +190,7 @@ ms.locfileid: "33496908"
 </CountriesOrRegionsWithCapitals>  
 ```  
   
- 사전 컬렉션에 대 한 자세한 내용은이 항목의 뒷부분에 나오는 "고급 컬렉션 규칙" 단원을 참조 하십시오.  
+ 사전 컬렉션에 대 한 자세한 내용은이 항목의 뒷부분에 나오는 "고급 컬렉션 규칙" 섹션을 참조 하세요.  
   
 ## <a name="collections-and-known-types"></a>컬렉션 및 알려진 형식  
  컬렉션 형식을 다른 컬렉션이나 컬렉션 인터페이스 대신 다형적으로 사용하는 경우 알려진 형식에 추가할 필요는 없습니다. 예를 들어, <xref:System.Collections.IEnumerable> 형식의 데이터 멤버를 선언하고 이를 사용하여 <xref:System.Collections.ArrayList>의 인스턴스를 보내는 경우 <xref:System.Collections.ArrayList> 를 알려진 형식에 추가할 필요가 없습니다.  
@@ -222,7 +222,7 @@ ms.locfileid: "33496908"
 ## <a name="collections-and-schema"></a>컬렉션 및 스키마  
  모든 동일한 컬렉션에는 동일한 표현의 XSD(XML 스키마 정의 언어) 스키마가 있습니다. 이 때문에 일반적으로 서버의 컬렉션 형식과 동일한 컬렉션 형식을 생성된 클라이언트 코드에서 얻을 수 없습니다. 예를 들어, 서버에서 정수 데이터 멤버의 제네릭 <xref:System.Collections.Generic.List%601> 와 함께 데이터 계약을 사용할 수 있지만, 생성된 클라이언트 코드에서 동일한 데이터 멤버가 정수 배열이 될 수 있습니다.  
   
- 사전 컬렉션은 사전; 되는지 여부를 나타내는 WCF 관련 스키마 주석으로 표시 됩니다. 그렇지 않으면 키 및 값을 가진 항목이 포함 된 단순 목록과 구분할 수 있습니다. 데이터 계약 스키마에서 컬렉션이 표시되는 방법에 대한 정확한 설명은 [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)를 참조하십시오.  
+ 사전 컬렉션 사전; 되는지 여부를 나타내는 WCF 관련 스키마 주석으로 표시 됩니다. 그렇지 않으면 키 및 값을 사용 하 여 항목을 포함 하는 간단한 목록 구분할 수 있습니다. 데이터 계약 스키마에서 컬렉션이 표시되는 방법에 대한 정확한 설명은 [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)를 참조하십시오.  
   
  기본적으로 가져온 코드의 사용자 지정되지 않은 컬렉션에 대해서는 형식이 생성되지 않습니다. 목록 컬렉션 형식의 데이터 멤버는 배열로 가져오며, 사전 컬렉션 형식의 데이터 멤버는 제네릭 사전으로 가져옵니다.  
   
@@ -245,7 +245,7 @@ ms.locfileid: "33496908"
  제네릭 형식을 참조할 때 해당 제네릭 형식은 완전 개방형 제네릭 형식 또는 완전 폐쇄형 제네릭 형식이어야 합니다.  
   
 > [!NOTE]
->  Svcutil.exe 도구를 사용하는 경우 **/collectionType** 명령줄 스위치(약식: **/ct**)를 사용하여 이 참조를 수행할 수 있습니다. 또한 **/reference** 스위치(약식: **/r**)를 사용하여 참조된 컬렉션 형식에 대한 어셈블리를 지정해야 합니다. 형식이 제네릭이면 뒤에는 역따옴표 및 제네릭 매개 변수의 수가 와야 합니다. 역따옴표(`)를 작은따옴표(‘) 문자와 혼동해서는 안 됩니다. **/collectionType** 스위치를 두 번 이상 사용하여 여러 개의 참조된 컬렉션 형식을 지정할 수 있습니다.  
+>  Svcutil.exe 도구를 사용하는 경우 **/collectionType** 명령줄 스위치(약식: **/ct**)를 사용하여 이 참조를 수행할 수 있습니다. 또한 **/reference** 스위치(약식: **/r**)를 사용하여 참조된 컬렉션 형식에 대한 어셈블리를 지정해야 합니다. 형식이 제네릭이면 뒤에는 역따옴표 및 제네릭 매개 변수의 수가 와야 합니다. 역따옴표 (\`)와 작은따옴표 (') 문자와 혼동 해서는 안 됩니다. **/collectionType** 스위치를 두 번 이상 사용하여 여러 개의 참조된 컬렉션 형식을 지정할 수 있습니다.  
   
  예를 들어, 모든 목록을 제네릭 <xref:System.Collections.Generic.List%601>로 가져오려면 다음을 사용합니다.  
   
@@ -305,7 +305,7 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
   
 -   컬렉션의 컬렉션이 있는 컬렉션 형식의 결합이 허용됩니다. 가변 배열은 컬렉션의 컬렉션으로 처리됩니다. 다차원 배열은 지원되지 않습니다.  
   
--   바이트의 배열 및 <xref:System.Xml.XmlNode> 의 배열은 컬렉션이 아닌 기본 형식으로 처리되는 특수 배열 형식입니다. 바이트의 배열을 serialize하면 각 바이트에 대한 별도의 요소 대신 Base64 인코딩된 데이터의 청크가 포함된 하나의 XML 요소가 됩니다. 방법에 대 한 자세한 내용은 배열을 <xref:System.Xml.XmlNode> 은 참조 처리 [XML 및 ADO.NET 형식 데이터 계약의](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md)합니다. 물론 이러한 특수 형식은 컬렉션에 참여할 수 있습니다. 바이트 배열의 배열은 여러 XML 요소가 되며 각 요소는 Base64 인코딩된 데이터의 청크를 포함합니다.  
+-   바이트의 배열 및 <xref:System.Xml.XmlNode> 의 배열은 컬렉션이 아닌 기본 형식으로 처리되는 특수 배열 형식입니다. 바이트의 배열을 serialize하면 각 바이트에 대한 별도의 요소 대신 Base64 인코딩된 데이터의 청크가 포함된 하나의 XML 요소가 됩니다. 방법에 대 한 자세한 내용은 배열을 <xref:System.Xml.XmlNode> 는 처리 [XML 및 ADO.NET 형식 데이터 계약의](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md)합니다. 물론 이러한 특수 형식은 컬렉션에 참여할 수 있습니다. 바이트 배열의 배열은 여러 XML 요소가 되며 각 요소는 Base64 인코딩된 데이터의 청크를 포함합니다.  
   
 -   <xref:System.Runtime.Serialization.DataContractAttribute> 특성이 컬렉션 형식에 적용되는 경우 해당 형식은 컬렉션이 아닌 일반 데이터 계약 형식으로 처리됩니다.  
   
@@ -342,13 +342,13 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ### <a name="collection-naming"></a>컬렉션 명명  
  컬렉션 명명 규칙 목록은 다음과 같습니다.  
   
--   모든 사전 컬렉션 데이터 계약에 대 한 것은 물론 기본 형식이 포함 된 목록 컬렉션 데이터 계약의 기본 네임 스페이스 http://schemas.microsoft.com/2003/10/Serialization/Arrays Namespace를 사용 하 여 재정의 되지 않는 경우. `char`, `Timespan`및 `Guid` 형식과 함께 기본 제공 XSD 형식에 매핑되는 형식은 이러한 목적으로 기본 형식으로 간주됩니다.  
+-   기본 형식을 포함 하는 목록 컬렉션 데이터 계약에 대 한 뿐만 아니라 모든 사전 컬렉션 데이터 계약에 대 한 기본 네임 스페이스는 `http://schemas.microsoft.com/2003/10/Serialization/Arrays` Namespace를 사용 하 여 재정의 되지 않는 경우. `char`, `Timespan`및 `Guid` 형식과 함께 기본 제공 XSD 형식에 매핑되는 형식은 이러한 목적으로 기본 형식으로 간주됩니다.  
   
 -   기본 형식이 아닌 형식이 포함된 컬렉션 형식의 기본 네임스페이스는 Namespace를 사용하여 재정의되지 않는 한 컬렉션에 포함된 형식의 데이터 계약 네임스페이스와 동일합니다.  
   
 -   목록 컬렉션 데이터 계약의 기본 이름은 Name을 사용하여 재정의되지 않는 한 컬렉션에 포함된 형식의 데이터 계약 이름과 결합된 문자열인 "ArrayOf"입니다. 예를 들어, 정수의 제네릭 목록에 대한 데이터 계약 이름은 "ArrayOfint"입니다. `Object` 의 데이터 계약 이름은 "anyType"이므로 <xref:System.Collections.ArrayList> 와 같은 제네릭이 아닌 목록의 데이터 계약 이름은 "ArrayOfanyType"입니다.  
   
- 사전 컬렉션 데이터 계약의 기본 이름은 `Name`을 사용하여 재정의되지 않는 한 값 형식의 데이터 계약 이름 앞에 나오는 키 형식의 데이터 계약 이름과 결합된 문자열 "ArrayOfKeyValueOf"입니다. 예를 들어, 문자열 및 정수의 제네릭 사전에 대한 데이터 계약 이름은 "ArrayOfKeyValueOfstringint"입니다. 또한 키 또는 값 형식 중 하나가 기본 형식이 아닌 경우 키 및 값 형식의 데이터 계약 네임스페이스의 네임스페이스 해시가 이름에 추가됩니다. 네임 스페이스 해시에 대 한 자세한 내용은 참조 [데이터 계약 이름을](../../../../docs/framework/wcf/feature-details/data-contract-names.md)합니다.  
+ 사전 컬렉션 데이터 계약의 기본 이름은 `Name`을 사용하여 재정의되지 않는 한 값 형식의 데이터 계약 이름 앞에 나오는 키 형식의 데이터 계약 이름과 결합된 문자열 "ArrayOfKeyValueOf"입니다. 예를 들어, 문자열 및 정수의 제네릭 사전에 대한 데이터 계약 이름은 "ArrayOfKeyValueOfstringint"입니다. 또한 키 또는 값 형식 중 하나가 기본 형식이 아닌 경우 키 및 값 형식의 데이터 계약 네임스페이스의 네임스페이스 해시가 이름에 추가됩니다. 네임 스페이스 해시에 대 한 자세한 내용은 참조 하세요. [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md)합니다.  
   
  각 사전 컬렉션 데이터 계약에는 사전에 있는 하나의 항목을 나타내는 도우미 데이터 계약이 있습니다. 이 계약의 이름은 "ArrayOf" 접두사를 제외하고 사전 데이터 계약과 동일하며 네임스페이스는 사전 데이터 계약과 동일합니다. 예를 들어, "ArrayOfKeyValueOfstringint" 사전 데이터 계약의 경우 "KeyValueofstringint" 데이터 계약은 사전에 있는 하나의 항목을 나타냅니다. 다음 단원에서 설명한 대로 `ItemName` 속성을 사용하여 이 데이터 계약의 이름을 사용자 지정할 수 있습니다.  
   
@@ -373,7 +373,7 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
  [!code-csharp[c_collection_types_in_data_contracts#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#11)]
  [!code-vb[c_collection_types_in_data_contracts#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#11)]  
   
- 이 경우 `Marks1` 의 인스턴스는 `testMarks`에 할당될 수 있습니다. 그러나 데이터 계약이 `Marks2` 데이터 계약과 동일하지 않으므로 `IList<int>` 를 사용해서는 안 됩니다. 데이터 계약 이름을 "아닌 Marks2" 및 "ArrayOfint", 이며 반복 되는 요소 이름 "\<표시 >"가 아닌 "\<int >"입니다.  
+ 이 경우 `Marks1` 의 인스턴스는 `testMarks`에 할당될 수 있습니다. 그러나 데이터 계약이 `Marks2` 데이터 계약과 동일하지 않으므로 `IList<int>` 를 사용해서는 안 됩니다. 데이터 계약 이름은 "Marks2" 이며 없습니다 "ArrayOfint"가, 고 반복 요소 이름은 "\<표시 >"가 아닌 "\<int >"입니다.  
   
  다음 표의 규칙은 컬렉션의 다형적 할당에 적용됩니다.  
   

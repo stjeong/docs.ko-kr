@@ -5,12 +5,12 @@ helpviewer_keywords:
 - include XML tag
 - <include> XML tag
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
-ms.openlocfilehash: da7a6c15c558fc56dbc6a874d4a28c4434f67668
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 0f143f8c023102f44b41e3898f29d18be0083128
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48778707"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48849492"
 ---
 # <a name="ltincludegt-visual-basic"></a>&lt;포함&gt; (Visual Basic)
 형식 및 소스 코드에서 멤버를 설명 하는 다른 파일을 가리킵니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "48778707"
 ## <a name="remarks"></a>설명  
  사용 된 `<include>` 태그를 다른 파일의 형식을 설명 하는 주석 및 소스 코드에서 멤버를 참조 하십시오. 소스 코드 파일에 직접 문서 주석을 포함하는 대신 사용되는 대안입니다.  
   
- `<include>` 태그 W3C XML Path Language (XPath) Version 1.0 권장 사항에 사용 합니다. 사용자 지정 하는 방법에 대 한 자세한 내용은 하 `<include>` 사용은 http://www.w3.org/TR/xpath합니다.  
+ `<include>` 태그 W3C XML Path Language (XPath) Version 1.0 권장 사항에 사용 합니다. 사용자 지정 하는 방법에 대 한 자세한 내용은 하 `<include>` 를 참조 하십시오 <https://www.w3.org/TR/xpath>합니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 합니다 `<include>` 멤버 문서 주석 이라는 파일에서 가져오려는 태그 `commentFile.xml`합니다.  

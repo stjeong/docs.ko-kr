@@ -2,12 +2,12 @@
 title: '디자인 패턴: 목록 기반 게시-구독'
 ms.date: 03/30/2017
 ms.assetid: f4257abc-12df-4736-a03b-0731becf0fd4
-ms.openlocfilehash: 2807cc8cc197ff39417e3b6375ebbd595cf73c54
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: caec9a9aa6de267cb5407ad4a7166701740f9a63
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45664698"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48850129"
 ---
 # <a name="design-patterns-list-based-publish-subscribe"></a>디자인 패턴: 목록 기반 게시-구독
 이 샘플 Windows Communication Foundation (WCF) 프로그램으로 구현 된 목록 기반 게시-구독 패턴을 보여 줍니다.  
@@ -118,7 +118,7 @@ public class PriceChangeEventArgs : EventArgs
   
 ### <a name="to-run-the-sample-on-the-same-machine"></a>단일 컴퓨터 구성에서 샘플을 실행하려면  
   
-1.  다음 주소를 입력 하 여 브라우저를 사용 하는 서비스에 액세스할 수 있는지 테스트: http://localhost/servicemodelsamples/service.svc합니다. 확인 페이지가 응답으로 표시됩니다.  
+1.  다음 주소를 입력 하 여 브라우저를 사용 하는 서비스에 액세스할 수 있는지 테스트: `http://localhost/servicemodelsamples/service.svc`합니다. 확인 페이지가 응답으로 표시됩니다.  
   
 2.  \Client\bin에서 Client.exe를 실행\\, 언어별 폴더입니다. 클라이언트 콘솔 창에 클라이언트 동작이 표시됩니다. 여러 클라이언트가 시작됩니다.  
   

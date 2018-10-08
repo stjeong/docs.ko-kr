@@ -3,11 +3,11 @@ title: '방법: 구성에서 서비스 엔드포인트 만들기'
 ms.date: 06/16/2016
 ms.assetid: f474e25d-2a27-4f31-84c5-395c442b8e70
 ms.openlocfilehash: 63a40576b805952197cec5af2f89a5dc4b5d3545
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48266275"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48850598"
 ---
 # <a name="how-to-create-a-service-endpoint-in-configuration"></a>방법: 구성에서 서비스 엔드포인트 만들기
 끝점은 Windows Communication Foundation (WCF) 서비스에서 제공 하는 기능에 대 한 액세스를 사용 하 여 클라이언트를 제공 합니다. 상대 및 절대 엔드포인트 주소 조합을 사용하여 엔드포인트를 하나 이상 정의할 수 있으며, 서비스 엔드포인트를 정의하지 않는 경우에는 런타임이 기본적으로 일부 엔드포인트를 자동으로 제공합니다. 이 항목에서는 상대 주소와 절대 주소를 모두 포함하는 구성 파일을 사용해 엔드포인트를 추가하는 방법을 보여 줍니다.  
