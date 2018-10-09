@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: 5eb4caee5c2057e112ed4f5a88f46fa82b1f57cc
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 33661061e1a5db4f7826c1a8eca188f8c782b58f
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44088039"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48873721"
 ---
 # <a name="data-contract-schema-reference"></a>데이터 계약 스키마 참조
 이 항목에서는 XML serialization에 대한 CLR(공용 언어 런타임) 형식을 설명하기 위해 <xref:System.Runtime.Serialization.DataContractSerializer> 에서 사용하는 XSD(XML 스키마) 하위 집합에 대해 설명합니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "44088039"
   
 ## <a name="general-information"></a>일반 정보  
   
--   스키마 네임 스페이스에 설명 되어 [XML 스키마](https://go.microsoft.com/fwlink/?LinkId=95475)합니다. 이 문서에서는 접두사 "xs"가 사용됩니다.  
+-   스키마 네임스페이스에 대해서는 [XML Schema](https://go.microsoft.com/fwlink/?LinkId=95475)에서 설명합니다. 이 문서에서는 접두사 "xs"가 사용됩니다.  
   
 -   스키마 네임스페이스가 아닌 네임스페이스를 가진 특성은 무시됩니다.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "44088039"
 |`elementFormDefault`|정규화되어야 합니다. `DataContractSerializer`에서 스키마를 지원하려면 모든 요소가 정규화되어야 합니다. 설정 하거나이 작업을 수행할 수 있습니다 xs:schema/@elementFormDefault 을 "qualified" 또는 설정 하 여 xs:element/@form 각 개별 요소 선언에 "qualified"로 합니다.|  
 |`finalDefault`|무시됩니다.|  
 |`Id`|무시됩니다.|  
-|`targetNamespace`|지원되며 데이터 계약 네임스페이스에 매핑됩니다. 이 특성을 지정하지 않으면 빈 네임스페이스가 사용됩니다. 예약된 된 네임 스페이스를 사용할 수 없습니다. http://schemas.microsoft.com/2003/10/Serialization/합니다.|  
+|`targetNamespace`|지원되며 데이터 계약 네임스페이스에 매핑됩니다. 이 특성을 지정하지 않으면 빈 네임스페이스가 사용됩니다. 예약된 된 네임 스페이스를 사용할 수 없습니다. `http://schemas.microsoft.com/2003/10/Serialization/`합니다.|  
 |`version`|무시됩니다.|  
   
 ### <a name="xsschema-contents"></a>\<xs: schema >: 콘텐츠  
@@ -56,7 +56,7 @@ ms.locfileid: "44088039"
 |--------------|------------|  
 |`include`|지원됩니다. `DataContractSerializer` 는 xs:include 및 xs:import를 지원합니다. 그러나 Svcutil.exe는 로컬 파일에서 메타데이터를 로드할 때 다음 `xs:include/@schemaLocation` 및 `xs:import/@location` 참조를 제한합니다. 이러한 경우 스키마 파일 목록은 `include` 가 아닌 out-of-band 메커니즘을 통해 전달해야 합니다. `include`된 스키마 문서는 무시됩니다.|  
 |`redefine`|사용할 수 없습니다. 보안상의 이유로 `xs:redefine` 는 `DataContractSerializer` 을 사용할 수 없습니다. `x:redefine` 을 사용하려면 `schemaLocation` 을 따라야 합니다. 상황에 따라 DataContract를 사용하는 Svcutil.exe는 `schemaLocation`사용을 제한합니다.|  
-|`import`|지원됩니다. `DataContractSerializer` 는 `xs:include` 및 `xs:import`를 지원합니다. 그러나 Svcutil.exe는 로컬 파일에서 메타데이터를 로드할 때 다음 `xs:include/@schemaLocation` 및 `xs:import/@location` 참조를 제한합니다. 이러한 경우 스키마 파일 목록은 `include` 가 아닌 out-of-band 메커니즘을 통해 전달해야 합니다. `include`된 스키마 문서는 무시됩니다.|  
+|`import`|지원됩니다. `DataContractSerializer` 는 `xs:include` 및 `xs:import`를 지원합니다. 그러나 Svcutil.exe는 로컬 파일에서 메타데이터를 로드할 때 다음 `xs:include/@schemaLocation` 및 `xs:import/@location` 참조를 제한합니다. 이러한 경우 스키마 파일 목록은 `include`가 아닌 out-of-band 메커니즘을 통해 전달해야 합니다. `include`된 스키마 문서는 무시됩니다.|  
 |`simpleType`|지원됩니다. `xs:simpleType` 단원을 참조하십시오.|  
 |`complexType`|지원되며 데이터 계약으로 매핑됩니다. `xs:complexType` 단원을 참조하십시오.|  
 |`group`|무시됩니다. `DataContractSerializer` 는 `xs:group`, `xs:attributeGroup`및 `xs:attribute`사용을 지원하지 않습니다. 이러한 선언은 `xs:schema`의 자식으로 무시되며 `complexType` 또는 기타 지원되는 구문 내에서 참조할 수 없습니다.|  
@@ -524,7 +524,7 @@ public class Employee : Person
 |`positiveInteger`|<xref:System.Int64>.|  
   
 ## <a name="iserializable-types-mapping"></a>ISerializable 형식 매핑  
- [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 은 `ISerializable` 버전 1.0에서 지속성이나 데이터 전송을 위해 개체를 serialize하는 일반 메커니즘으로 새로 추가되었습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 을 구현하고 응용 프로그램 간에 전달할 수 있는 다양한 `ISerializable` 형식이 있습니다. `DataContractSerializer` 는 기본적으로 `ISerializable` 클래스에 대한 지원을 제공합니다. `DataContractSerializer` 는 형식의 QName(정규화된 이름)에 의해서만 달라지는 효율적인 속성 컬렉션인 `ISerializable` 구현 스키마 형식을 매핑합니다. 예를 들어, 합니다 `DataContractSerializer` 매핑합니다 <xref:System.Exception> 된 다음 XSD 형식에 http://schemas.datacontract.org/2004/07/System 네임 스페이스입니다.  
+ [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 은 `ISerializable` 버전 1.0에서 지속성이나 데이터 전송을 위해 개체를 serialize하는 일반 메커니즘으로 새로 추가되었습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 을 구현하고 응용 프로그램 간에 전달할 수 있는 다양한 `ISerializable` 형식이 있습니다. `DataContractSerializer` 는 기본적으로 `ISerializable` 클래스에 대한 지원을 제공합니다. `DataContractSerializer` 는 형식의 QName(정규화된 이름)에 의해서만 달라지는 효율적인 속성 컬렉션인 `ISerializable` 구현 스키마 형식을 매핑합니다. 예를 들어, 합니다 `DataContractSerializer` 매핑합니다 <xref:System.Exception> 된 다음 XSD 형식에 `http://schemas.datacontract.org/2004/07/System` 네임 스페이스입니다.  
   
 ```xml  
 <xs:complexType name="Exception">  
@@ -541,7 +541,7 @@ public class Employee : Person
 ## <a name="datacontract-serialization-schema"></a>DataContract Serialization 스키마  
  `DataContractSerializer` 에서 내보낸 여러 스키마는 다음과 같은 특별한 데이터 계약 Serialization 네임스페이스의 형식, 요소 및 특성을 사용합니다.  
   
- http://schemas.microsoft.com/2003/10/Serialization  
+ `http://schemas.microsoft.com/2003/10/Serialization`
   
  다음은 전체 데이터 계약 Serialization 스키마 선언입니다.  
   

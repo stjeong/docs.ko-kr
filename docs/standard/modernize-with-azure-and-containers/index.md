@@ -4,12 +4,12 @@ description: 리프트 앤 시프트 및 Azure 클라우드 및이 전자책을 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 4/28/2018
-ms.openlocfilehash: 07e1a1e2ef145dce1b292d9425f33fcd99ffd1ae
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: b22ddd8a63d183571f9ca3a63fb7ae84ebb88510
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45747006"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48873504"
 ---
 # <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers-2nd-edition"></a>Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기존.NET 응용 프로그램 현대화 (2 판)
 
@@ -25,7 +25,7 @@ Copyright © 2018 by Microsoft Corporation
 
 All rights reserved. 이 가이드의 내용 중 어떤 부분도 게시자의 서면 허가 없이는 어떠한 형식이나 방법으로도 복제할 수 없습니다.
 
-이 책은 Microsoft의 여러 채널을 통해 사용할 수 있는 전자는 책 (전자책)의 형태로 무료로 같은 http://dot.net/architecture합니다.
+이 책은 Microsoft의 여러 채널을 통해 사용할 수 있는 전자는 책 (전자책)의 형태로 무료로 같은 <http://dot.net/architecture>합니다.
 
 이 책에 관한 질문이 있는 경우 [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book)으로 이메일을 보내 주세요.
 
@@ -33,7 +33,7 @@ All rights reserved. 이 가이드의 내용 중 어떤 부분도 게시자의 �
 
 여기에 설명된 일부 예제는 예시 용도로만 제공되며 실제 데이터가 아닙니다. 실제로 연관시키거나 관련시키려고 의도하거나 추론해서는 안 됩니다.
 
-"상표" 웹 페이지의 http://www.microsoft.com에 나열된 Microsoft 및 상표는 Microsoft 그룹 계열사의 상표입니다. 기타 모든 표시는 해당 소유자의 자산입니다.
+"상표" 웹 페이지의 <https://www.microsoft.com>에 나열된 Microsoft 및 상표는 Microsoft 그룹 계열사의 상표입니다. 기타 모든 표시는 해당 소유자의 자산입니다.
 
 만든 이:
 > **Cesar de la Torre**, 선임 PM, Microsoft Corp. .NET 제품 팀

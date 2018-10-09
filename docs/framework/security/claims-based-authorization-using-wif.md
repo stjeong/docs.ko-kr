@@ -3,12 +3,12 @@ title: WIF를 사용하여 클레임 기반 권한 부여
 ms.date: 03/30/2017
 ms.assetid: e24000a3-8fd8-4c0e-bdf0-39882cc0f6d8
 author: BrucePerlerMS
-ms.openlocfilehash: c13ea5c9f2f62c9c01139741d06de35dd2ff4be1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 65254b31570ebf65d10c4d8c1f0fa776a6e2bae1
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47236058"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48872929"
 ---
 # <a name="claims-based-authorization-using-wif"></a>WIF를 사용하여 클레임 기반 권한 부여
 신뢰 당사자 응용 프로그램에서 권한 부여에 따라 인증된 ID가 액세스할 수 있도록 허용되는 리소스 및 이러한 리소스에서 수행할 수 있도록 허용되는 작업이 결정됩니다. 권한 부여가 부적절하거나 취약한 상태인 경우 정보가 노출되거나 데이터가 변조될 수 있습니다. 이 항목에서는 ACS(Windows Azure Access Control Service)와 같은 STS(보안 토큰 서비스) 및 WIF(Windows Identity Foundation)를 사용하여 클레임 인식 ASP.NET 웹 응용 프로그램과 서비스에 대한 권한 부여를 구현하기 위해 사용할 수 있는 방법에 대해 간략하게 설명합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "47236058"
 ### <a name="expressing-roles-as-claims"></a>역할을 클레임으로 표시  
  **IsInRole()** 메서드가 호출되면 현재 사용자에게 해당 역할이 있는지 확인하는 검사가 수행됩니다. 클레임 인식 응용 프로그램에서는 역할이 토큰에서 사용할 수 있는 역할 클레임 형식으로 표시됩니다. 역할 클레임 형식은 다음 URI를 사용하여 표시됩니다.  
   
- http://schemas.microsoft.com/ws/2008/06/identity/claims/role  
+ `http://schemas.microsoft.com/ws/2008/06/identity/claims/role`
   
  여러 가지 방법으로 역할 클레임 형식을 사용하여 토큰을 보강할 수 있습니다.  
   

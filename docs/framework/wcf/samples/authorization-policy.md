@@ -2,12 +2,12 @@
 title: 권한 부여 정책
 ms.date: 03/30/2017
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
-ms.openlocfilehash: 78ca42abfd2df56edeeb273fcd8ba585aa16f635
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 16549b90692d8061abe729521075e0f248446513
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198321"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48873481"
 ---
 # <a name="authorization-policy"></a>권한 부여 정책
 
@@ -284,7 +284,7 @@ serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator =
 
 Windows Communication Foundation (WCF) 액세스 검사를 수행 하는 것에 대 한 풍부한 클레임 기반 모델을 제공 합니다. <xref:System.ServiceModel.ServiceAuthorizationManager> 개체는 액세스 검사를 수행하는 데 사용되며 클라이언트에 연결된 클레임이 서비스 메서드에 액세스하는 데 필요한 요구 사항을 충족시키는지 여부를 확인합니다.
 
-설명을 위해이 샘플 구현을 보여 줍니다 <xref:System.ServiceModel.ServiceAuthorizationManager> 를 구현 하는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> 형식의 클레임을 기반으로 하는 방법에 대 한 사용자의 액세스를 허용 하는 방법 http://example.com/claims/allowedoperation 값으로 가지는 작업의 동작 URI가 호출할 수 있습니다.
+설명을 위해이 샘플 구현을 보여 줍니다 <xref:System.ServiceModel.ServiceAuthorizationManager> 를 구현 하는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> 형식의 클레임을 기반으로 하는 방법에 대 한 사용자의 액세스를 허용 하는 방법 `http://example.com/claims/allowedoperation` 값으로 가지는 작업의 동작 URI가 호출할 수 있습니다.
 
 ```csharp
 public class MyServiceAuthorizationManager : ServiceAuthorizationManager
@@ -460,7 +460,7 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 1. Client.exe를 실행 *\client\bin*합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.
 
-  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.
+  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.
 
 ### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면
 
@@ -500,7 +500,7 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 14. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다.
 
-   클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.
+   클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.
 
 ### <a name="clean-up-after-the-sample"></a>샘플 실행 후 정리
 

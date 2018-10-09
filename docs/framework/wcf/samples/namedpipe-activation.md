@@ -2,12 +2,12 @@
 title: NamedPipe 활성화
 ms.date: 03/30/2017
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
-ms.openlocfilehash: 97221bfd00fb6b50b63eab11ed82356b002a38de
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5f277d2c72822d8828355d3d728864bedb6dc4f4
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504274"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48873364"
 ---
 # <a name="namedpipe-activation"></a>NamedPipe 활성화
 이 샘플에서는 WAS(Windows Process Activation Service)를 사용하는 서비스를 호스트하여 이름 파이프를 통해 통신하는 서비스를 활성화하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 하며 [!INCLUDE[wv](../../../../includes/wv-md.md)] 실행 합니다.  
@@ -196,7 +196,7 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         >  이 명령은 줄 바꿈 없이 한 줄로 입력해야 합니다.  
   
-         이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램에 모두 사용 하 여 액세스할 수 http://localhost/servicemodelsamples 및 net.tcp://localhost/servicemodelsamples 합니다.  
+         이 명령을 사용 하 여 /servicemodelsamples 응용 프로그램에 모두 사용 하 여 액세스할 수 `http://localhost/servicemodelsamples` 고 `net.tcp://localhost/servicemodelsamples`입니다.  
   
 4.  C# 또는 Visual Basic .NET 버전의 솔루션을 빌드하려면 [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)의 지침을 따릅니다.  
   
