@@ -5,11 +5,11 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
 ms.openlocfilehash: f7933cc25a5fde13113d0c9c278e9bd1730d4f9d
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48780715"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49085974"
 ---
 # <a name="architecting-container--and-microservice-based-applications"></a>컨테이너 및 마이크로 서비스 기반 응용 프로그램 설계
 
