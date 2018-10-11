@@ -2,12 +2,12 @@
 title: Windows용 WCF 서비스 및 이벤트 추척
 ms.date: 03/30/2017
 ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
-ms.openlocfilehash: 26ce5fcb07b06a52f69ad8655adea563c177b055
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 6684f6415fa6ee82a59fc9b54911b5c65d6dadb2
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48266873"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086585"
 ---
 # <a name="wcf-services-and-event-tracing-for-windows"></a>Windows용 WCF 서비스 및 이벤트 추척
 이 샘플에서 이벤트 추적에 대 한 Windows (ETW) 이벤트를 내보내는 분석 추적을 Windows Communication Foundation (WCF)를 사용 하는 방법을 보여 줍니다. 분석 추적은 프로덕션 환경에서 WCF 서비스의 문제를 해결할 수 있는 WCF 스택의 주요 지점에서 내보내는 이벤트입니다.
@@ -34,7 +34,7 @@ ms.locfileid: "48266873"
 
 5.  WCF 테스트 클라이언트 내에서 선택 하 여 서비스를 추가할 **파일**를 차례로 **서비스 추가**합니다.
 
-     입력 상자에 엔드포인트 주소를 추가합니다. 기본값은 http://localhost:1378/Calculator.svc입니다.
+     입력 상자에 엔드포인트 주소를 추가합니다. 기본값은 `http://localhost:1378/Calculator.svc`입니다.
 
 6.  이벤트 뷰어 응용 프로그램을 엽니다.
 

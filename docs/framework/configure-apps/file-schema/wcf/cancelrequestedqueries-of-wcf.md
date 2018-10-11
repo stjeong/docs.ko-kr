@@ -2,12 +2,12 @@
 title: WCF의 &lt;cancelRequestedQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: a7cc7125-9ea3-4d3f-99c0-878cdeb1258a
-ms.openlocfilehash: c9266d9ce1f6a61c4468fd95467e76730b966249
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 4d746290f01e702979d1dd0165ad3fc5299e1b75
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480628"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087754"
 ---
 # <a name="ltcancelrequestedqueriesgt-of-wcf"></a>WCF의 &lt;cancelRequestedQueries&gt;
 부모 활동에 의한 자식 활동 취소 요청을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 취소 요청 레코드 개체를 구독하려면 쿼리가 필요합니다.  
@@ -23,7 +23,16 @@ ms.locfileid: "43480628"
 ## <a name="syntax"></a>구문  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <cancelRequestQueries>
+        <cancelRequestQuery activityName="String"
+                            childActivityName="String"/>
+      </cancelRequestQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  

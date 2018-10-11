@@ -10,11 +10,11 @@ ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
 author: guardrex
 ms.author: mairaw
 ms.openlocfilehash: bcdac76528e7a8b07b56b6fd1d827c3c8072c371
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046372"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086325"
 ---
 # <a name="add-element-for-appsettings"></a>\<추가 > 요소에 대 한 \<appSettings >
 
@@ -37,7 +37,7 @@ ms.locfileid: "48046372"
 |           | 설명 |
 | --------- | ----------- |
 | **key**   | 필수 특성입니다.<br><br>추가할 키의 이름을 지정 합니다. |
-| **value** | 필수 특성입니다.<br><br>추가할 키의 값을 지정 합니다. |
+| **값** | 필수 특성입니다.<br><br>추가할 키의 값을 지정 합니다. |
 
 ## <a name="parent-element"></a>부모 요소
 

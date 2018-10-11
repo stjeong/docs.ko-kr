@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.assetid: 2afe044d-df4a-49a4-9865-38700474c3dd
 author: BrucePerlerMS
 ms.openlocfilehash: 09872b5422d9d66dd4f54753815067954be6c0bb
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48779792"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086494"
 ---
 # <a name="security-extensibility"></a>보안 확장성
 이 섹션에는 사용자 지정 보안에서 Windows Communication Foundation (WCF)를 보여 주는 샘플이 들어 있습니다.  

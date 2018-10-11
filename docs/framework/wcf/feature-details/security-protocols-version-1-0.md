@@ -3,33 +3,33 @@ title: 보안 프로토콜 버전 1.0
 ms.date: 03/30/2017
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
 author: BrucePerlerMS
-ms.openlocfilehash: 043a092855b7f5827c03b1d247b03328ba561edf
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 59d82fc3238f12b33f3111c88854b9d6348a5e27
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48036281"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086793"
 ---
 # <a name="security-protocols-version-10"></a>보안 프로토콜 버전 1.0
 Web Services Security 프로토콜은 모든 기존 엔터프라이즈 메시징 보안 요구 사항을 포함하는 Web Services Security 메커니즘을 제공합니다. 이 섹션에서는 Windows Communication Foundation (WCF) 버전 1.0 세부 정보를 설명 합니다. (에서 구현 되는 <xref:System.ServiceModel.Channels.SecurityBindingElement>) 다음 Web services security 프로토콜에 대 한 합니다.  
   
 |사양/문서|링크|  
 |-|-|  
-|WSS: SOAP Message Security 1.0|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf|  
-|WSS: Username Token Profile 1.0|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf|  
-|WSS: X509 Token Profile 1.0|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf|  
-|WSS: SAML 1.1 Token Profile 1.0|http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf|  
-|WSS: SOAP Message Security 1.1|http://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf|  
-|WSS Username Token Profile 1.1|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf|  
-|WSS: X.509 Token Profile 1.1|http://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf|  
-|WSS: Kerberos Token Profile 1.1|http://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf|  
-|WSS: SAML 1.1 Token Profile 1.1|http://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf|  
-|WS-Secure Conversation|http://msdn.microsoft.com/ws/2005/02/ws-secure-conversation/|  
-|WS-Trust|http://msdn.microsoft.com/ws/2005/02/ws-trust/|  
+|WSS: SOAP Message Security 1.0|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>|
+|WSS: Username Token Profile 1.0|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|
+|WSS: X509 Token Profile 1.0|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf>|
+|WSS: SAML 1.1 Token Profile 1.0|<https://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf>|
+|WSS: SOAP Message Security 1.1|<https://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf>|
+|WSS Username Token Profile 1.1|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|
+|WSS: X.509 Token Profile 1.1|<https://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf>|
+|WSS: Kerberos Token Profile 1.1|<https://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf>|
+|WSS: SAML 1.1 Token Profile 1.1|<https://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf>|
+|WS-Secure Conversation|<http://specs.xmlsoap.org/ws/2005/02/sc/WS-SecureConversation.pdf>|
+|WS-Trust|<http://specs.xmlsoap.org/ws/2005/02/trust/ws-trust.pdf>|
 |응용 프로그램 참고:<br /><br /> WS-Trust for TLS Handshake 사용|게시 예정|  
 |응용 프로그램 참고:<br /><br /> WS-Trust for SPNEGO 사용|게시 예정|  
 |응용 프로그램 참고:<br /><br /> Web Services Addressing 엔드포인트 참조 및 ID|게시 예정|  
-|WS-SecurityPolicy 1.1<br /><br /> (2005/07)|http://msdn.microsoft.com/ws/2005/07/ws-security-policy/<br /><br /> OASIS WS-SX Technical Committee에 제출 된 오류에 따라 수정 http://www.oasis-open.org/archives/ws-sx/200512/msg00017.html|  
+|WS-SecurityPolicy 1.1<br /><br /> (2005/07)|<http://specs.xmlsoap.org/ws/2005/07/securitypolicy/ws-securitypolicy.pdf><br /><br /> 에 따라 수정 [정오표](https://lists.oasis-open.org/archives/ws-sx/200512/msg00017.html) OASIS WS-SX Technical Committee에 제출 |  
   
  WCF에서 버전 1에서는 Web services security 구성에 대 한 기준으로 사용할 수 있는 17 가지 인증 모드를 제공 합니다. 각 모드는 다음과 같은 공통 배포 요구 사항에 대해 최적화된 것입니다.  
   
@@ -69,9 +69,9 @@ Web Services Security 프로토콜은 모든 기존 엔터프라이즈 메시징
   
 |접두사|네임스페이스|  
 |------------|---------------|  
-|s|http://www.w3.org/2003/05/soap-envelope|  
-|sp|http://schemas.xmlsoap.org/ws/2005/07/securitypolicy|  
-|a|http://www.w3.org/2005/08/addressing|  
+|s|<https://www.w3.org/2003/05/soap-envelope/>|
+|sp|<http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/>|
+|a|<https://www.w3.org/2005/08/addressing>|  
 |wsse|TBD – OASIS WSS 1.0 URI|  
 |wsse11|TBD – OASIS WSS 1.1 URI|  
 |wsu|TBD – OASIS WSS 1.0 Utility URI|  
@@ -79,8 +79,8 @@ Web Services Security 프로토콜은 모든 기존 엔터프라이즈 메시징
 |wst|TBD – WS-Trust 2005/02 URI|  
 |wssc|TBD – WS-SecureConversation 2005/02 URI|  
 |wsaw|TBD - WS-Addressing 정책 네임스페이스|  
-|wsp|http://schemas.xmlsoap.org/ws/2004/09/policy|  
-|mssp|http://schemas.microsoft.com/ws/2005/07/securitypolicy|  
+|wsp|<http://schemas.xmlsoap.org/ws/2004/09/policy>|  
+|mssp|<http://schemas.xmlsoap.org/ws/2005/07/securitypolicy>|
   
 ## <a name="1-token-profiles"></a>1. 토큰 프로필  
  Web Services Security 사양에서는 자격 증명을 보안 토큰으로서 나타냅니다. WCF는 다음과 같은 토큰 형식을 지원합니다.  

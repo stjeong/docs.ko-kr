@@ -9,29 +9,29 @@ helpviewer_keywords:
 - federation
 ms.assetid: 98e82101-4cff-4bb8-a220-f7abed3556e5
 author: BrucePerlerMS
-ms.openlocfilehash: dd2c4f32978107a82ce940e0ef984c70f461b2c3
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 6dbf0e2be0a75fccd84a82fe2b3c8ab41762de83
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046737"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087728"
 ---
 # <a name="how-to-create-a-security-token-service"></a>방법: 보안 토큰 서비스 만들기
 보안 토큰 서비스에서는 WS-Trust 사양에 정의된 프로토콜을 구현합니다. 이 프로토콜은 보안 토큰의 발행, 갱신, 취소 및 유효성 검사를 위한 메시지 형식 및 메시지 교환 패턴을 정의합니다. 지정된 보안 토큰 서비스에서는 하나 이상의 이러한 기능을 제공합니다. 이 항목에서는 가장 일반적인 시나리오인 토큰 발급 구현에 대해 살펴봅니다.  
   
 ## <a name="issuing-tokens"></a>토큰 발급  
- WS-Trust는 `RequestSecurityToken` XSD(XML 스키마 정의 언어) 스키마 요소에 따라 메시지 형식을 정의하고, 토큰 발행을 수행하기 위한 `RequestSecurityTokenResponse` XSD 스키마 요소를 정의합니다. 또한 연결된 동작 URI(Uniform Resource Identifier)도 정의합니다. URI가 연관 된 작업을 `RequestSecurityToken` 메시지는 http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue합니다. URI가 연관 된 작업을 `RequestSecurityTokenResponse` 메시지는 http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue합니다.  
+ WS-Trust는 `RequestSecurityToken` XSD(XML 스키마 정의 언어) 스키마 요소에 따라 메시지 형식을 정의하고, 토큰 발행을 수행하기 위한 `RequestSecurityTokenResponse` XSD 스키마 요소를 정의합니다. 또한 연결된 동작 URI(Uniform Resource Identifier)도 정의합니다. URI가 연관 된 작업을 `RequestSecurityToken` 메시지는 `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue`합니다. URI가 연관 된 작업을 `RequestSecurityTokenResponse` 메시지는 `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue`합니다.  
   
 ### <a name="request-message-structure"></a>요청 메시지 구조  
  일반적으로 발행 요청 메시지 구조는 다음과 같은 항목으로 구성됩니다.  
   
--   값을 사용 하 여 URI를 입력 하는 요청 http://schemas.xmlsoap.org/ws/2005/02/trust/Issue합니다.  
+-   값을 사용 하 여 URI를 입력 하는 요청 `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue`합니다.
   
--   토큰 형식 URI. 이 URI의 값은 보안 어설션을 Markup Language (SAML) 1.1 토큰에 대 한 http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1합니다.  
+-   토큰 형식 URI. 이 URI의 값은 보안 어설션을 Markup Language (SAML) 1.1 토큰에 대 한 `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`합니다.  
   
 -   발행된 토큰과 연결될 키의 비트 수를 나타내는 키 크기 값  
   
--   키 형식 URI. 이 URI의 값은 대칭 키에 대 한 http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey합니다.  
+-   키 형식 URI. 이 URI의 값은 대칭 키에 대 한 `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey`합니다.  
   
  또한 다음과 같은 몇 가지 다른 항목이 있을 수 있습니다.  
   

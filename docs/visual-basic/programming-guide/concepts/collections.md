@@ -3,11 +3,11 @@ title: 컬렉션 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
 ms.openlocfilehash: 60519de1f580bf1cfa4aa067d4a999b20ea8d54d
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48847466"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087377"
 ---
 # <a name="collections-visual-basic"></a>컬렉션 (Visual Basic)
 대부분의 응용 프로그램의 경우 관련 개체의 그룹을 만들고 관리하려고 합니다. 개체를 그룹화하는 방법에는 개체 배열을 만들거나 개체 컬렉션을 만드는 두 가지가 있습니다.  
@@ -228,13 +228,13 @@ End Class
 
 <a name="BKMK_VisualBasic"></a> 
 ###  <a name="visual-basic-collection-class"></a>Visual Basic 컬렉션 클래스  
- Visual Basic을 사용할 수 있습니다 <xref:Microsoft.VisualBasic.Collection> 항목에서 사용 하 여 컬렉션 숫자 인덱스 또는 액세스 클래스 `String` 키입니다. 키를 지정하거나 지정하지 않고 컬렉션 개체에 항목을 추가할 수 있습니다. 키 없이 항목을 추가하는 경우 숫자 인덱스를 사용해서 액세스해야 합니다.  
+ Visual Basic <xref:Microsoft.VisualBasic.Collection> 클래스를 사용하여 숫자 인덱스 또는 `String` 키를 통해 컬렉션 항목에 액세스할 수 있습니다. 키를 지정하거나 지정하지 않고 컬렉션 개체에 항목을 추가할 수 있습니다. 키 없이 항목을 추가하는 경우 숫자 인덱스를 사용해서 액세스해야 합니다.  
   
- Visual Basic `Collection` 클래스의 모든 요소를 형식으로 저장 `Object`이므로 모든 데이터 형식의 항목을 추가할 수 있습니다. 부적절한 데이터 형식이 추가되지 않도록 하는 보호 수단은 없습니다.  
+ Visual Basic `Collection` 클래스는 해당 요소를 모두 `Object` 형식으로 저장하므로 모든 데이터 형식의 항목을 추가할 수 있습니다. 부적절한 데이터 형식이 추가되지 않도록 하는 보호 수단은 없습니다.  
   
- Visual Basic을 사용 하는 경우 `Collection` 클래스, 컬렉션의 첫 번째 항목의 인덱스는 1입니다. 이는 시작 인덱스가 0인 .NET Framework 컬렉션 클래스와 다릅니다.  
+ Visual Basic `Collection` 클래스를 사용하는 경우 컬렉션의 첫 번째 항목에 대한 인덱스는 1입니다. 이는 시작 인덱스가 0인 .NET Framework 컬렉션 클래스와 다릅니다.  
   
- 가능 하면의 제네릭 컬렉션을 사용 해야 합니다 <xref:System.Collections.Generic?displayProperty=nameWithType> 네임 스페이스 또는 <xref:System.Collections.Concurrent> Visual Basic 대신 네임 스페이스 `Collection` 클래스입니다.  
+ 가능하면 항상 Visual Basic `Collection` 클래스 대신 <xref:System.Collections.Generic?displayProperty=nameWithType> 네임스페이스 또는 <xref:System.Collections.Concurrent> 네임스페이스의 제네릭 컬렉션을 사용해야 합니다.  
   
  자세한 내용은 <xref:Microsoft.VisualBasic.Collection>을 참조하세요.  
   

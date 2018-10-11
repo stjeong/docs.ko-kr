@@ -15,11 +15,11 @@ helpviewer_keywords:
 - Type markup extension in XAML [XAML Services]
 ms.assetid: e0e0ce6f-e873-49c7-8ad7-8b840eb353ec
 ms.openlocfilehash: e4d56c5b5deda0bd1df8827020e0b76cc6276c1c
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48844860"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086637"
 ---
 # <a name="xtype-markup-extension"></a>x:Type 태그 확장명
 CLR 제공 <xref:System.Type> 개체는 지정된 된 XAML 형식에 대 한 기본 형식입니다.  
@@ -52,7 +52,7 @@ CLR 제공 <xref:System.Type> 개체는 지정된 된 XAML 형식에 대 한 기
   
  특정 프레임 워크 구현에서는 일부 속성을 수행할 <xref:System.Type> 으로 값 형식 이름의 직접 수락할 수 있습니다 (형식의 문자열 값 `Name`). 그러나이 동작을 구현 복잡 한 시나리오입니다. 예를 들어 다음에 나오는 "WPF 사용 정보" 섹션을 참조 합니다.  
   
- 특성 구문은 이러한 태그 확장에 가장 많이 사용되는 구문입니다. `x:Type` 식별자 문자열 다음에 나오는 문자열 토큰은 기본 <xref:System.Windows.Markup.TypeExtension.TypeName%2A> 확장 클래스의 <xref:System.Windows.Markup.TypeExtension> 값으로 할당됩니다. 이 특성의 값은 CLR 형식에 따라.NET Framework XAML 서비스에 대 한 기본 XAML 스키마 컨텍스트에서 <xref:System.Reflection.MemberInfo.Name%2A> 원하는 형식의 포함 또는 <xref:System.Reflection.MemberInfo.Name%2A> 앞에 기본이 아닌 XAML 네임 스페이스에 대 한 접두사 매핑입니다.  
+ 특성 구문은 이러한 태그 확장에 가장 많이 사용되는 구문입니다. `x:Type` 식별자 문자열 다음에 나오는 문자열 토큰은 기본 <xref:System.Windows.Markup.TypeExtension.TypeName%2A> 확장명 클래스의 <xref:System.Windows.Markup.TypeExtension> 값으로 할당됩니다. 이 특성의 값은 CLR 형식에 따라.NET Framework XAML 서비스에 대 한 기본 XAML 스키마 컨텍스트에서 <xref:System.Reflection.MemberInfo.Name%2A> 원하는 형식의 포함 또는 <xref:System.Reflection.MemberInfo.Name%2A> 앞에 기본이 아닌 XAML 네임 스페이스에 대 한 접두사 매핑입니다.  
   
  `x:Type` 개체 요소 구문에서 태그 확장을 사용할 수 있습니다. 이 경우 값을 지정 하는 <xref:System.Windows.Markup.TypeExtension.TypeName%2A> 제대로 확장을 초기화 하기 위해 속성이 필요한 합니다.  
   

@@ -2,12 +2,12 @@
 title: WCF의 &lt;workflowInstanceQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3
-ms.openlocfilehash: c3b68dda42fd7a9356366a0887feb359d0232b32
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: bb4b3e37bd8e8e4f47fd7a0cd6d493d985c2536e
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767559"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087637"
 ---
 # <a name="ltworkflowinstancequerygt-of-wcf"></a>WCF의 &lt;workflowInstanceQuery&gt;
 시작된 이벤트나 완료된 이벤트와 같이 워크플로 인스턴스 수명 주기의 변경 내용을 추적하는 쿼리를 나타냅니다.  
@@ -24,7 +24,19 @@ ms.locfileid: "32767559"
 ## <a name="syntax"></a>구문  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <workflowInstanceQueries>             <workflowInstanceQuery>                <states>                   <state name="Name"/>                </states>            </workflowInstanceQuery>         </workflowInstanceQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <workflowInstanceQueries>
+        <workflowInstanceQuery>
+          <states>
+            <state name="Name"/>
+          </states>
+        </workflowInstanceQuery>
+      </workflowInstanceQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

@@ -2,17 +2,17 @@
 title: WCF의 &lt;add&gt;
 ms.date: 03/30/2017
 ms.assetid: c196f6d7-77f6-4266-973c-305b2b4dd8a2
-ms.openlocfilehash: 31c2274b4e9f40f503e9cd2e673572f61ef66083
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 8b1bd0ef77cb1ecad4ada8db66c6c7da3b6ba997
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748190"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087196"
 ---
 # <a name="ltaddgt-of-wcf"></a>WCF의 &lt;add&gt;
 런타임에서 내보내지는 추적 레코드를 수신하는 추적 참가자를 직접 구성하고 구성된 방식대로 처리합니다. 여기에는 특정 출력(예: 파일, 콘솔, ETW)에 쓰기, 레코드 처리/집계 또는 필요한 기타 조합이 포함됩니다.  
   
- 워크플로 추적 및 추적 참가자에 대 한 자세한 내용은 참조 하십시오. [워크플로 추적 및 트레이싱](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 및 [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)합니다.  
+ 워크플로 추적 및 추적 참가자에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 하 고 [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)합니다.  
   
  \<system.serviceModel>  
 \<tracking>  
@@ -22,7 +22,13 @@ ms.locfileid: "32748190"
 ## <a name="syntax"></a>구문  
   
 ```xml
-   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>
+<tracking>
+  <participants>
+    <add name="String"           
+         profileName="String"
+         type="String" />
+  </participants>
+</tracking>  
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Shape objects [WPF]
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 ms.openlocfilehash: 47df352c3b001f088f34ea057b34698efc4f4b53
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845802"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086806"
 ---
 # <a name="shapes-and-basic-drawing-in-wpf-overview"></a>WPF에서 Shape 및 기본 그리기 개요
 이 항목에서는 사용 하 여 그리는 방법에 대해 간략히 설명 <xref:System.Windows.Shapes.Shape> 개체입니다. A <xref:System.Windows.Shapes.Shape> 유형의 <xref:System.Windows.UIElement> 화면에 도형을 그릴 수 있도록 합니다. UI 요소 이므로 <xref:System.Windows.Shapes.Shape> 내에서 개체를 사용할 수 있습니다 <xref:System.Windows.Controls.Panel> 요소 및 대부분의 컨트롤입니다.  

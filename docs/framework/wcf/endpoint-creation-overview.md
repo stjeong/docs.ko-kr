@@ -8,11 +8,11 @@ helpviewer_keywords:
 - endpoints [WCF], overview
 ms.assetid: f4dce0fb-6f54-47e6-8054-86d7f574b91c
 ms.openlocfilehash: b72c3959b2a42c6a5abc8ef31975d5bdb9ce220e
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48781611"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086845"
 ---
 # <a name="endpoint-creation-overview"></a>엔드포인트 만들기 개요
 Windows Communication Foundation (WCF) 서비스와 모든 통신을 통해 발생 합니다 *끝점* 서비스입니다. 끝점 클라이언트는 WCF 서비스를 제공 하는 기능에 대 한 액세스를 제공 합니다. 이 단원에서는 엔드포인트의 구조에 대해 설명하고 구성 및 코드에서 엔드포인트를 정의하는 방법을 간략하게 설명합니다.  

@@ -3,11 +3,11 @@ title: 기본 HTTP 서비스
 ms.date: 03/30/2017
 ms.assetid: 27048b43-8a54-4f2a-9952-594bbfab10ad
 ms.openlocfilehash: 2e4aee93341404df5f06b096a9a7bf18a3c94f56
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48844711"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087156"
 ---
 # <a name="basic-http-service"></a>기본 HTTP 서비스
 이 샘플에는 일반적으로 "POX" (Plain Old XML) 서비스-Windows Communication Foundation (WCF) REST 프로그래밍 모델을 사용 하 여 라고 하는 HTTP 기반, RPC 기반 서비스를 구현 하는 방법을 보여 줍니다. 이 샘플은 두 가지 구성 요소로 구성 됩니다.: 자체 호스팅된 WCF HTTP 서비스 (Service.cs)와 서비스를 만들고 호출 하는 콘솔 응용 프로그램 (Program.cs).  
@@ -15,7 +15,7 @@ ms.locfileid: "48844711"
 ## <a name="sample-details"></a>샘플 세부 정보  
  WCF 서비스가 노출 하는 두 가지 작업을 `EchoWithGet` 및 `EchoWithPost`, 입력으로 전달 된 문자열을 반환 합니다.  
   
- `EchoWithGet` 작업에는 <xref:System.ServiceModel.Web.WebGetAttribute>가 주석으로 추가되어 있어 해당 작업이 HTTP `GET` 요청을 처리함을 나타냅니다. <xref:System.ServiceModel.Web.WebGetAttribute>는 <xref:System.UriTemplate>을 명시적으로 지정하지 않으므로 이 작업을 위해서는 이름이 `s`인 쿼리 문자열 매개 변수를 사용하여 입력 문자열을 전달해야 합니다. 서비스에 필요한 URI 형식은 <xref:System.ServiceModel.Web.WebGetAttribute.UriTemplate%2A> 속성을 사용하여 사용자 지정할 수 있습니다.  
+ `EchoWithGet` 작업에는 <xref:System.ServiceModel.Web.WebGetAttribute>를 주석을 달아 해당 작업이 HTTP `GET` 요청을 처리함을 나타냅니다. <xref:System.ServiceModel.Web.WebGetAttribute>는 <xref:System.UriTemplate>을 명시적으로 지정하지 않으므로 이 작업을 위해서는 이름이 `s`인 쿼리 문자열 매개 변수를 사용하여 입력 문자열을 전달해야 합니다. 서비스에 필요한 URI 형식은 <xref:System.ServiceModel.Web.WebGetAttribute.UriTemplate%2A> 속성을 사용하여 사용자 지정할 수 있습니다.  
   
  `EchoWithPost` 작업에는 <xref:System.ServiceModel.Web.WebInvokeAttribute>가 주석으로 추가되어 있어 해당 작업이 `GET` 작업이 아니며 의도하지 않은 결과가 발생함을 나타냅니다. <xref:System.ServiceModel.Web.WebInvokeAttribute>는 `Method`를 명시적으로 지정하지 않으므로 이 작업은 XML 형식과 같이 요청 본문에 문자열이 있는 HTTP `POST` 요청을 처리합니다. 요청에 대한 HTTP 메서드 및 URI 형식은 각각 <xref:System.ServiceModel.Web.WebInvokeAttribute.Method%2A> 및 <xref:System.ServiceModel.Web.WebInvokeAttribute.UriTemplate> 속성을 사용하여 사용자 지정할 수 있습니다.  
   

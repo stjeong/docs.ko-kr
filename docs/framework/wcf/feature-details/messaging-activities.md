@@ -3,11 +3,11 @@ title: 메시징 활동
 ms.date: 03/30/2017
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
 ms.openlocfilehash: 3391f7442ef4922a847a58b6316eb177cbcfbd5e
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48780468"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086344"
 ---
 # <a name="messaging-activities"></a>메시징 활동
 메시징 작업을 사용하면 워크플로를 통해 WCF 메시지를 보내고 받을 수 있습니다. 워크플로에 메시징 작업을 추가하면 훨씬 더 복잡한 MEP(메시지 교환 패턴)를 모델링할 수 있습니다.

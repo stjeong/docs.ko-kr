@@ -2,17 +2,17 @@
 title: WCF의 &lt;faultPropagationQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: fabafbc8-3e45-4feb-8321-0725e9f4079c
-ms.openlocfilehash: fe3dd90a5c6b26537ab461b4bf4993df5be625a8
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: df7119363e94a070bb898c984c12cf82755c3407
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747361"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087702"
 ---
 # <a name="ltfaultpropagationquerygt-of-wcf"></a>WCF의 &lt;faultPropagationQuery&gt;
 활동 내에서 발생하는 오류의 처리를 추적하는 데 사용되는 쿼리를 나타냅니다.  이 이벤트는 FaultHandler가 오류를 처리할 때마다 발생합니다. 활동 내에서 발생하는 오류 처리를 추적하려면 이러한 쿼리를 사용해야 합니다. 추적 참가자가 오류 전파 레코드를 구독하려면 쿼리가 필요합니다.  
   
- 추적 프로필 쿼리에 대 한 자세한 내용은 참조 하십시오. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)합니다.  
+ 추적 프로필 쿼리에 대 한 자세한 내용은 참조 하세요. [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)합니다.  
   
  \<system.serviceModel>  
 \<tracking>  
@@ -24,7 +24,16 @@ ms.locfileid: "32747361"
 ## <a name="syntax"></a>구문  
   
 ```xml
-<tracking>   <trackingProfile name="Name">       <workflow>          <faultPropagationQueries>             <faultPropagationQuery activityName="String"                 faultHandlerActivityName="String"/>          </faultPropagationQueries>       </workflow>   </trackingProfile></tracking>  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <faultPropagationQueries>
+        <faultPropagationQuery activityName="String"
+                               faultHandlerActivityName="String"/>
+      </faultPropagationQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

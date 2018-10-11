@@ -2,12 +2,12 @@
 title: 'F # 코딩 규칙'
 description: 'F # 코드를 작성할 때 일반 지침 및 코드에 알아봅니다.'
 ms.date: 05/14/2018
-ms.openlocfilehash: b9afd1fbfbd9d8e04d9bfaa07615de045b7e05fe
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 21119b6d69e00f359104bfb6eab7681bdbfb8d78
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47237411"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087390"
 ---
 # <a name="f-coding-conventions"></a>F # 코딩 규칙
 
@@ -420,7 +420,7 @@ let ``Test withdrawal transaction with 0.0 for balance``() =
 
 F #에 대 한 여러 옵션이 [액세스 제어](../language-reference/access-control.md).NET 런타임에서 사용할 수 있는 항목에서 상속 합니다. 이러한 형식에 대 한 바로 사용할 수 없는 경우-도 사용할 수 있습니다 이러한 함수에 대 한 합니다.
 
-* 비-선호`public` 형식 및 공개적으로 사용할 수 있도록 하는 데 필요할 때까지 멤버입니다. 또한 소비자 결합 되도록 하는 최소화
+* 비-선호`public` 형식 및 공개적으로 사용할 수 있도록 하는 데 필요할 때까지 멤버입니다. 또한 어떤 소비자 결합을 되도록 최소화 됩니다.
 * 모든 도우미 기능을 유지 하도록 `private`합니다.
 * 사용을 고려 `[<AutoOpen>]` 도우미 함수의 다양 한 경우 개인 모듈입니다.
 

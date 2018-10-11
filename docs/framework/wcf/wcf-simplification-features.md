@@ -3,11 +3,11 @@ title: WCF 단순화 기능
 ms.date: 03/30/2017
 ms.assetid: 4535a511-6064-4da0-b361-80262a891663
 ms.openlocfilehash: 2a2b1bc90729f2c8c3303c5d8ce6befc4dff3980
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48847960"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087364"
 ---
 # <a name="wcf-simplification-features"></a>WCF 단순화 기능
 이 항목에서는 WCF 응용 프로그램을 더 간단하게 작성할 수 있는 새로운 기능에 대해 설명합니다.  
@@ -105,7 +105,7 @@ ms.locfileid: "48847960"
 |할당량 이름|기본값|설명|  
 |----------------|-------------------|-----------------|  
 |<xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A>|Int32.MaxValue|허용되는 최대 배열 길이를 가져오거나 설정합니다. 이 할당량은 바이트 배열을 포함하여 XML 판독기가 반환하는 기본 형식 배열의 최대 크기를 제한합니다. 이 할당량은 XML 판독기 자체의 메모리 소비량은 제한하지 않지만 판독기를 사용하는 모든 구성 요소의 메모리 소비량을 제한합니다. 예를 들어, <xref:System.Runtime.Serialization.DataContractSerializer> 가 <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A>로 보안이 설정된 판독기를 사용하는 경우에는 이 할당량보다 큰 바이트 배열을 deserialize하지 않습니다.|  
-|<xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A>|Int32.MaxValue|각 읽기에 대해 반환되는 최대 허용 바이트를 가져오거나 설정합니다. 이 할당량은 요소 시작 태그와 해당 특성을 읽을 때 단일 읽기 작업에서 읽는 바이트 수를 제한합니다. 비스트리밍 작업의 경우 요소 이름 자체는 할당량 계산에서 제외됩니다. XML 특성이 너무 많으면 특성 이름의 고유성을 확인해야 하기 때문에 처리 시간이 과도하게 오래 걸릴 수 있습니다. <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A>는 이 위협을 완화합니다.|  
+|<xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A>|Int32.MaxValue|각 읽기에 대해 반환되는 최대 허용 바이트를 가져오거나 설정합니다. 이 할당량은 요소 시작 태그와 해당 특성을 읽을 때 단일 읽기 작업에서 읽는 바이트 수를 제한합니다. 비스트리밍 작업의 경우 요소 이름 자체는 할당량 계산에서 제외됩니다. XML 특성이 너무 많으면 특성 이름의 고유성을 확인해야 하기 때문에 처리 시간이 과도하게 오래 걸릴 수 있습니다. <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> 는 이 위협을 완화합니다.|  
 |<xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A>|128 노드 수준|이 할당량은 XML 요소의 최대 중첩 깊이를 제한합니다.  <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A>는 <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A>와 상호 작용합니다. 판독기는 항상 현재 요소와 모든 상위 요소의 데이터를 메모리에 유지하기 때문에 판독기의 최대 메모리 소비량은 이 두 설정을 곱한 값에 비례합니다. 여러 층으로 중첩된 개체 그래프를 deserialize할 때 deserializer가 전체 스택에 액세스하여 복구할 수 없는 <xref:System.StackOverflowException>이 throw될 수 있습니다. XML 중첩과 <xref:System.Runtime.Serialization.DataContractSerializer> 및 <xref:System.Xml.Serialization.XmlSerializer>모두의 개체 중첩 사이에는 직접적인 상관 관계가 있습니다. 이 위협을 완화하기 위해 <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A>를 사용합니다.|  
 |<xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A>|Int32.MaxValue|이 할당량은 nametable에 허용되는 최대 문자 수를 제한합니다. nametable에는 XML 문서를 처리할 때 표시되는 특정 문자열(예: 네임스페이스 및 접두사)이 포함됩니다. 이러한 문자열은 메모리에 버퍼링되기 때문에 스트리밍이 예상되는 경우 과도한 버퍼링을 방지하기 위해 이 할당량이 사용됩니다.|  
 |<xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A>|Int32.MaxValue|이 할당량은 XML 판독기에서 반환하는 최대 문자열 크기를 제한합니다. 이 할당량은 XML 판독기 자체에서는 메모리 소비량을 제한하지 않지만 판독기를 사용하는 구성 요소의 메모리 소비량을 제한합니다. 예를 들어, <xref:System.Runtime.Serialization.DataContractSerializer> 가 <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A>로 보안이 설정된 판독기를 사용하는 경우에는 이 할당량보다 큰 문자열을 deserialize하지 않습니다.|  
