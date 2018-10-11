@@ -10,25 +10,26 @@ helpviewer_keywords:
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d55b571ad313fae75e1f9a96d7a6b681416d8dbd
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 6ab205ad12b60651443e0fc409e890ea93168ebd
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44185904"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48848077"
 ---
-# <a name="whats-new-in-the-net-framework"></a>.NET Framework의 새로운 기능
-<a name="introduction"></a> 이 문서에서는 다음 버전의 .NET Framework에 새로 추가된 주요 기능과 향상된 내용에 대해 요약합니다.  
- 
-[.NET Framework 4.7.2](#v472)   
-[.NET Framework 4.7.1](#v471)    
-[.NET Framework 4.7](#v47)   
-[.NET Framework 4.6.2](#v462)   
-[.NET Framework 4.6.1](#v461)   
-[.NET 2015 및 .NET Framework 4.6](#v46)   
-[.NET Framework 4.5.2](#v452)   
-[.NET Framework 4.5.1](#v451)   
-[.NET Framework 4.5](#v45)   
+# .NET Framework의 새로운 기능<a name="introduction"></a>
+
+이 문서에서는 다음 버전의 .NET Framework에 새로 추가된 주요 기능과 향상된 내용에 대해 요약합니다.
+
+- [.NET Framework 4.7.2](#v472)
+- [.NET Framework 4.7.1](#v471)
+- [.NET Framework 4.7](#v47)
+- [.NET Framework 4.6.2](#v462)
+- [.NET Framework 4.6.1](#v461)
+- [.NET 2015 및 .NET Framework 4.6](#v46)
+- [.NET Framework 4.5.2](#v452)
+- [.NET Framework 4.5.1](#v451)
+- [.NET Framework 4.5](#v45)
 
 이 문서는 각 새로운 기능에 대한 포괄적인 정보를 제공하지 않으며 변경될 수 있습니다. .NET Framework에 대한 일반적인 내용은 [시작](../../../docs/framework/get-started/index.md)을 참조하십시오. 지원되는 플랫폼은 [시스템 요구 사항](~/docs/framework/get-started/system-requirements.md)을 참조하십시오. 다운로드 링크와 설치 지침은 [설치 가이드](../../../docs/framework/install/guide-for-developers.md)를 참조하십시오.
 
@@ -42,7 +43,7 @@ ms.locfileid: "44185904"
 .NET Framework 4.7.2는 .NET Framework 4.x의 이전 버전에서 빌드되며 제품의 안정성을 유지하면서 많은 새로운 수정 및 여러 가지 새 기능이 추가됩니다.
 
 ### <a name="downloading-and-installing-the-net-framework-472"></a>.NET Framework 4.7.2 다운로드 및 설치
- 
+
 다음 위치에서 .NET Framework 4.7.2를 다운로드할 수 있습니다.
 
 - [.NET Framework 4.7.2 웹 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=863262)
@@ -51,20 +52,20 @@ ms.locfileid: "44185904"
 
 .NET Framework 4.7.2는 Windows 10, Windows 8.1, Windows 7 SP1 및 Windows Server 2008 R2 SP1 이상의 해당 서버 플랫폼에 설치할 수 있습니다. 웹 설치 관리자 또는 오프라인 설치 관리자를 사용하여 .NET Framework 4.7.2를 설치할 수 있습니다. 대부분의 사용자에게 권장되는 방법은 웹 설치 관리자를 사용하는 것입니다.
 
-[.NET Framework 4.7.2 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=874338)을 설치하여 Visual Studio 2012 이상 버전에서 .NET Framework 4.7.2를 대상으로 할 수 있습니다. 
+[.NET Framework 4.7.2 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=874338)을 설치하여 Visual Studio 2012 이상 버전에서 .NET Framework 4.7.2를 대상으로 할 수 있습니다.
 
 ### <a name="whats-new-in-the-net-framework-472"></a>.NET Framework 4.7.2의 새로운 기능
 
 .NET Framework 4.7.2에는 다음과 같은 영역의 새 기능이 포함됩니다.
 
-- [코어](#core472)
+- [코어](#core-472)
 - [ASP.NET](#asp-net472)
 - [네트워킹](#net472)
 - [SQL](#sql472)
 - [WPF](#wpf472)
-- [ClickOnce](#ClickOnce472)
+- [ClickOnce](#clickonce)
 
-.NET Framework 4.7.2는 내게 필요한 옵션 기능을 개선하는 데 주력하여 응용 프로그램이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.2에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요. 
+.NET Framework 4.7.2는 내게 필요한 옵션 기능을 개선하는 데 주력하여 응용 프로그램이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.2에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요.
 
 <a name="core-472" />
 
@@ -83,7 +84,7 @@ using (RSA rsa = RSA.Create())
    rsa.ImportParameters(rsaParameters);
    // Other code to execute using the RSA instance.
 }
-``` 
+```
 
 ```vb
 ' Before .NET Framework 4.7.2
@@ -91,7 +92,7 @@ Using rsa = RSA.Create()
    rsa.ImportParameters(rsaParameters)
    ' Other code to execute using the rsa instance.
 End Using
-``` 
+```
 다음과 같은 코드를 사용합니다.
 ```csharp
 // Starting with .NET Framework 4.7.2
@@ -99,13 +100,13 @@ using (RSA rsa = RSA.Create(rsaParameters))
 {
    // Other code to execute using the rsa instance.
 }
-``` 
+```
 ```vb
 ' Starting with .NET Framework 4.7.2
 Using rsa = RSA.Create(rsaParameters)
    ' Other code to execute using the rsa instance.
 End Using
-``` 
+```
 
 <xref:System.Security.Cryptography.DSA.Create(System.Int32)?displayProperty=nameWithType> 및 <xref:System.Security.Cryptography.RSA.Create(System.Int32)?displayProperty=nameWithType> 메서드를 통해 특정 키 크기의 새로운 <xref:System.Security.Cryptography.DSA> 또는 <xref:System.Security.Cryptography.RSA> 키를 생성할 수 있습니다. 예:
 
@@ -114,19 +115,19 @@ using (DSA dsa = DSA.Create(2048))
 {
    // Other code to execute using the dsa instance.
 }
-``` 
+```
 ```vb
 Using dsa = DSA.Create(2048)
    ' Other code to execute using the dsa instance.
 End Using
-``` 
+```
 
 **Rfc2898DeriveBytes 생성자가 해시 알고리즘 이름을 수락**
 
 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 클래스에 키를 파생할 때 사용하는 HMAC 알고리즘을 식별하는 <xref:System.Security.Cryptography.HashAlgorithmName> 매개 변수를 사용하는 세 명의 새로운 생성자가 있습니다. SHA-1을 사용하는 대신 개발자는 다음 예제에 표시된 대로 SHA-256과 같은 SHA-2 기반 HMAC를 사용해야 합니다.
 
 ```csharp
-private static byte[] DeriveKey(string password, out int iterations, out byte[] salt, 
+private static byte[] DeriveKey(string password, out int iterations, out byte[] salt,
                                 out HashAlgorithmName algorithm)
 {
    iterations = 100000;
@@ -135,16 +136,16 @@ private static byte[] DeriveKey(string password, out int iterations, out byte[] 
    const int SaltSize = 32;
    const int DerivedValueSize = 32;
 
-   using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(password, SaltSize, 
+   using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(password, SaltSize,
                                                              iterations, algorithm))
    {
       salt = pbkdf2.Salt;
       return pbkdf2.GetBytes(DerivedValueSize);
    }
-} 
+}
 ```
 ```vb
-Private Shared Function DeriveKey(password As String, ByRef iterations As Integer, 
+Private Shared Function DeriveKey(password As String, ByRef iterations As Integer,
                                   ByRef salt AS Byte(), ByRef algorithm As HashAlgorithmName) As Byte()
    iterations = 100000
    algorithm = HashAlgorithmName.SHA256
@@ -156,7 +157,7 @@ Private Shared Function DeriveKey(password As String, ByRef iterations As Intege
       salt = pbkdf2.Salt
       Return pbkdf2.GetBytes(DerivedValueSize)
    End Using
-End Function 
+End Function
 ```
 
 **임시 키에 대한 지원**
@@ -192,12 +193,12 @@ Dim cStream = New CryptoStream(stream, transform, mode, leaveOpen:=true)
 
 **DeflateStream에서 압축 풀기 변경 내용**
 
-.NET Framework 4.7.2부터 <xref:System.IO.Compression.DeflateStream> 클래스에서 압축 풀기 작업의 구현은 기본적으로 네이티브 Windows API를 사용하는 것으로 변경되었습니다. 일반적으로 이로 인해 성능이 크게 향상됩니다. 
+.NET Framework 4.7.2부터 <xref:System.IO.Compression.DeflateStream> 클래스에서 압축 풀기 작업의 구현은 기본적으로 네이티브 Windows API를 사용하는 것으로 변경되었습니다. 일반적으로 이로 인해 성능이 크게 향상됩니다.
 
 Windows API를 사용한 압축 풀기에 대한 지원은 .NET Framework 4.7.2를 대상으로 하는 응용 프로그램에 기본적으로 사용할 수 있습니다. 이전 버전의 .NET Framework를 대상으로 하지만 .NET Framework 4.7.2에서 실행되는 응용 프로그램은 응용 프로그램 구성 파일에 다음 [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md)를 추가하여 이 동작을 옵트인(opt in)할 수 있습니다.
 
 ```xml
-<AppContextSwitchOverrides value="Switch.System.IO.Compression.DoNotUseNativeZipLibraryForDecompression=false" /> 
+<AppContextSwitchOverrides value="Switch.System.IO.Compression.DoNotUseNativeZipLibraryForDecompression=false" />
 ```
 
 **추가 컬렉션 API**
@@ -205,14 +206,19 @@ Windows API를 사용한 압축 풀기에 대한 지원은 .NET Framework 4.7.2�
 .NET Framework 4.7.2는 다양한 새 API를 <xref:System.Collections.Generic.SortedSet%601> 및 <xref:System.Collections.Generic.HashSet%601> 형식에 추가합니다. 여기에는 다음이 포함됩니다.
 
 - `TryGetValue` 메서드 - 이러한 두 가지 형식으로 다른 컬렉션 형식에 사용되는 try 패턴을 확장합니다. 이 메서드는 다음과 같습니다.
-   - [`public bool HashSet<T>.TryGetValue(T equalValue, out T actualValue);](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
-   - [`public bool SortedSet<T>.TryGetValue(T equalValue, out T actualValue);](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
+
+   - [public bool HashSet<T>.TryGetValue(T equalValue, out T actualValue)](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
+   - [public bool SortedSet<T>.TryGetValue(T equalValue, out T actualValue)](xref:System.Collections.Generic.SortedSet%601.TryGetValue%2A)
+
 - `Enumerable.To*` 확장 메서드 - 컬렉션을 <xref:System.Collections.Generic.HashSet%601>로 변환합니다.
-   - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source);](xref:System.Linq.Enumerable.ToHashSet%2A)
-   - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source, IEqualityComparer<TSource> comparer);](xref:System.Linq.Enumerable.ToHashSet%2A)
+
+   - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source)](xref:System.Linq.Enumerable.ToHashSet%2A)
+   - [public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source, IEqualityComparer<TSource> comparer)](xref:System.Linq.Enumerable.ToHashSet%2A)
+
 - 컬렉션의 용량을 설정할 수 있도록 하는 새 <xref:System.Collections.Generic.HashSet%601> 생성자 - 미리 <xref:System.Collections.Generic.HashSet%601>의 크기를 알고 있는 경우 성능상의 이점을 생성합니다.
+
    - [public HashSet(int capacity)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32))
-   - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))  
+   - [public HashSet(int capacity, IEqualityComparer<T> comparer)](xref:System.Collections.Generic.HashSet%601.%23ctor(System.Int32,System.Collections.Generic.IEqualityComparer%7B%600%7D))
 
 <xref:System.Collections.Concurrent.ConcurrentDictionary%602> 클래스에는 사전에서 값을 검색하거나 찾을 수 없는 경우 추가하고, 사전에 값을 추가하거나 이미 존재하는 경우 업데이트하는 <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> 및 <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> 메서드의 새 오버로드가 포함됩니다.
 
@@ -234,18 +240,18 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 
 **Web Forms에서 종속성 주입을 위한 지원**
 
-[DI(종속성 주입)](/aspnet/core/fundamentals/dependency-injection#what-is-dependency-injection)는 개체와 해당 종속성을 분리하여 종속성이 변경으로 인해 개체의 코드를 더 이상 분리할 필요가 없도록 합니다. .NET Framework 4.7.2를 대상으로 하는 ASP.NET 응용 프로그램을 개발하는 경우 다음 작업을 수행할 수 있습니다.
+[DI(종속성 주입)](/aspnet/core/fundamentals/dependency-injection#overview-of-dependency-injection)는 개체와 해당 종속성을 분리하여 종속성이 변경으로 인해 개체의 코드를 더 이상 분리할 필요가 없도록 합니다. .NET Framework 4.7.2를 대상으로 하는 ASP.NET 응용 프로그램을 개발하는 경우 다음 작업을 수행할 수 있습니다.
 
 - ASP.NET 웹 응용 프로그램 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반, 인터페이스 기반 및 생성자 기반 주입을 사용합니다.
 
 - ASP.NET 웹 사이트 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반 및 인터페이스 기반 주입을 사용합니다.
 
-- 다른 종속성 주입 프레임워크에 연결합니다. 
+- 다른 종속성 주입 프레임워크에 연결합니다.
 
 **동일한 사이트 쿠키에 대한 지원**
 
 [SameSite](https://tools.ietf.org/html/draft-west-first-party-cookies-07)는 브라우저가 사이트 간 요청과 함께 쿠키를 보낼 수 없도록 합니다. .NET Framework 4.7.2는 값이 <xref:System.Web.SameSiteMode?displayProperty=nameWithType> 열거형 멤버인 <xref:System.Web.HttpCookie.SameSite?displayProperty=nameWithType> 속성을 추가합니다. 해당 값이 <xref:System.Web.SameSiteMode.Strict?displayProperty=nameWithType> 또는 <xref:System.Web.SameSiteMode.Lax?displayProperty=nameWithType>인 경우 ASP.NET이 `SameSite` 특성을 set-cookie 헤더에 추가합니다. SameSite 지원은 <xref:System.Web.Security.FormsAuthentication> 및 <xref:System.Web.SessionState> 쿠키와 마찬가지로 <xref:System.Web.HttpCookie> 개체에 적용됩니다.
- 
+
 다음과 같이 <xref:System.Web.HttpCookie> 개체에 대한 SameSite를 설정할 수 있습니다.
 
 ```csharp
@@ -305,7 +311,7 @@ c.SameSite = SameSiteMode.Lax
 
 - <xref:System.Data.SqlClient.SqlConnectionStringBuilder.EnclaveAttestationUrl?displayProperty=nameWithType> - enclave 기반 Always Encrypted에 대한 URI를 지정합니다.
 
-- <xref:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider> - 모든 enclave 공급자가 파생되는 추상 클래스입니다. 
+- <xref:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider> - 모든 enclave 공급자가 파생되는 추상 클래스입니다.
 
 - <xref:System.Data.SqlClient.SqlEnclaveSession> - 주어진 enclave 세션에 대한 상태를 캡슐화합니다.
 
@@ -343,7 +349,6 @@ enclave 기반 Always Encrypted의 기본 흐름은 다음과 같습니다.
 
 .NET Framework 4.7.2부터 진단 도우미는 지정된 원본 URI에서 만든 <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.ResourceDictionaries>를 찾을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) 사용자는 Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미를 사용하면 변경 사항이 실행 중인 응용 프로그램에 적용될 수 있도록 ResourceDictionary를 편집할 수 있습니다. 이를 수행하기 위한 한 단계는 실행 중인 응용 프로그램이 편집 중인 사전에서 만든 모든 ResourceDictionaries를 찾는 것입니다. 예를 들어 응용 프로그램이 지정된 원본 URI에서 해당 콘텐츠가 복사된 ResourceDictionary를 선언할 수 있습니다.
 
-
 ```xml
 <ResourceDictionary Source="MyRD.xaml">
 ```
@@ -361,7 +366,7 @@ Dim dictionaries As IEnumerable(Of ResourceDictionary) = ResourceDictionaryDiagn
 
 **ResourceDictionary 소유자 찾기**
 
-.NET Framework 4.7.2부터 진단 도우미는 지정된 <xref:Windows.UI.Xaml.ResourceDictionary>의 소유자를 찾을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) <xref:Windows.UI.Xaml.ResourceDictionary>를 변경할 때마다 WPF는 변경 사항의 영향을 받을 수도 있는 모든 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조를 자동으로 찾습니다. 
+.NET Framework 4.7.2부터 진단 도우미는 지정된 <xref:Windows.UI.Xaml.ResourceDictionary>의 소유자를 찾을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) <xref:Windows.UI.Xaml.ResourceDictionary>를 변경할 때마다 WPF는 변경 사항의 영향을 받을 수도 있는 모든 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조를 자동으로 찾습니다.
 
 Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미는 [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조를 처리하기 위해 이를 확장할 수 있습니다. 이 프로세스의 첫 번째 단계는 사전의 소유자를 찾는 것입니다. 즉, `Resources` 속성이 사전을 참조하는 모든 개체를 찾습니다(<xref:System.Windows.ResourceDictionary.MergedDictionaries?displayProperty=nameWithType> 속성을 통해 직접 또는 간접적). `Resources` 속성이 있는 각 기본 형식을 위한 <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics?displayProperty=nameWithType> 클래스에서 구현된 세 개의 새로운 정적 메서드는 이 단계를 지원합니다.
 
@@ -375,13 +380,14 @@ Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우�
 
 **StaticResource 참조 찾기**
 
-이제 진단 도우미는 [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조가 확인될 때마다 알림을 받을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미는 해당 값이 <xref:Windows.UI.Xaml.ResourceDictionary> 변경 내용에 포함된 경우 리소스의 모든 사용을 업데이트해야 할 수도 있습니다. WPF는 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조에 대해 이를 자동으로 수행하지만, [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조에 대해서는 의도적으로 수행하지 않습니다. .NET Framework 4.7.2부터 진단 도우미는 이러한 알림을 사용하여 정적 리소스의 해당 사용을 찾을 수 있습니다. 
+이제 진단 도우미는 [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조가 확인될 때마다 알림을 받을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미는 해당 값이 <xref:Windows.UI.Xaml.ResourceDictionary> 변경 내용에 포함된 경우 리소스의 모든 사용을 업데이트해야 할 수도 있습니다. WPF는 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조에 대해 이를 자동으로 수행하지만, [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조에 대해서는 의도적으로 수행하지 않습니다. .NET Framework 4.7.2부터 진단 도우미는 이러한 알림을 사용하여 정적 리소스의 해당 사용을 찾을 수 있습니다.
 
 알림은 새로운 <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.StaticResourceResolved?displayProperty=nameWithType> 이벤트에 의해 구현됩니다.
 
 ```csharp
 public static event EventHandler<StaticResourceResolvedEventArgs> StaticResourceResolved;
 ```
+
 ```vb
 Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs)
 ```
@@ -403,8 +409,6 @@ public class StaticResourceResolvedEventArgs : EventArgs
 
 이벤트는 <xref:System.Windows.Diagnostics.VisualDiagnostics>가 활성화되고 [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) 환경 변수가 설정된 경우 외에는 발생하지 않습니다(및 해당 `add` 접근자는 무시됨).
 
-<a name="clickonce472" />
-
 #### <a name="clickonce"></a>ClickOnce
 
 Windows Forms, WPF(Windows Presentation Foundation) 및 VSTO(Visual Studio Tools for Office)에 대한 HDPI 인식 응용 프로그램은 모두 ClickOnce를 사용하여 배포할 수 있습니다. 다음 항목이 응용 프로그램 매니페스트에 있으면 .NET Framework 4.7.2에서 배포에 성공합니다.
@@ -422,13 +426,13 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 ## <a name="whats-new-in-the-net-framework-471"></a>.NET Framework 4.7.1의 새로운 기능
 
 .NET Framework 4.7.1에는 다음과 같은 영역의 새 기능이 포함됩니다.
- 
+
 - [코어](#core471)
 - [CLR(공용 언어 런타임)](#clr)
 - [네트워킹](#net471)
-- [ASP.NET](#asp-net471) 
+- [ASP.NET](#asp-net471)
 
-또한 .NET Framework 4.7.1은 내게 필요한 옵션 기능을 개선하는 데 주력하여 응용 프로그램이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.1에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요. 
+또한 .NET Framework 4.7.1은 내게 필요한 옵션 기능을 개선하는 데 주력하여 응용 프로그램이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.1에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요.
 
 <a name="core471" />
 
@@ -442,7 +446,7 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 
 구성 작성기를 사용하여 런타임 시 동적으로 응용 프로그램에 대한 구성 설정을 삽입하고 작성할 수 있습니다. 사용자 지정 구성 작성기를 사용하여 구성 섹션에 있는 기존 데이터를 수정하거나 구성 섹션을 처음부터 새로 작성할 수 있습니다. 구성 작성기를 사용하지 않으면 .config 파일이 정적이며, 응용 프로그램이 시작되기 얼마 전에 해당 파일의 설정이 정의됩니다.
 
-사용자 지정 구성 작성기를 만들려면 추상 클래스 <xref:System.Configuration.ConfigurationBuilder>에서 작성기를 파생시켜 <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> 및 <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>을 재정의합니다. 또한 .config 파일에 작성기를 정의할 수도 있습니다. 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "Configuration Builders"(구성 작성기) 섹션을 참조하세요. 
+사용자 지정 구성 작성기를 만들려면 추상 클래스 <xref:System.Configuration.ConfigurationBuilder>에서 작성기를 파생시켜 <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> 및 <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>을 재정의합니다. 또한 .config 파일에 작성기를 정의할 수도 있습니다. 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "Configuration Builders"(구성 작성기) 섹션을 참조하세요.
 
 **런타임 기능 검색**
 
@@ -462,7 +466,7 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 
 **가비지 수집 성능 향상**
 
-.NET Framework 4.7.1의 GC(가비지 수집) 기능이 변경되어 전반적인 성능이 개선되었으며, LOH(큰 개체 힙) 할당 성능이 특히 개선되었습니다. .NET Framework 4.7.1에서는 SOH(작은 개체 힙) 및 LOH 할당에 별도의 잠금이 사용되므로 BGC(백그라운드 GC)가 SOH를 비울 때 LOH 할당이 발생할 수 있습니다. 따라서 다수의 LOH 할당을 수행하는 응용 프로그램은 할당 잠금 경합 감소와 성능 향상 효과를 볼 수 있습니다. 자세한 내용은 [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/)(.NET Framework 4.7.1 런타임 및 컴파일러 기능) 블로그 게시물의 "Runtime -- GC Performance Improvements"(런타임 -- GC 성능 및 개선 사항) 섹션을 참조하세요. 
+.NET Framework 4.7.1의 GC(가비지 수집) 기능이 변경되어 전반적인 성능이 개선되었으며, LOH(큰 개체 힙) 할당 성능이 특히 개선되었습니다. .NET Framework 4.7.1에서는 SOH(작은 개체 힙) 및 LOH 할당에 별도의 잠금이 사용되므로 BGC(백그라운드 GC)가 SOH를 비울 때 LOH 할당이 발생할 수 있습니다. 따라서 다수의 LOH 할당을 수행하는 응용 프로그램은 할당 잠금 경합 감소와 성능 향상 효과를 볼 수 있습니다. 자세한 내용은 [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/)(.NET Framework 4.7.1 런타임 및 컴파일러 기능) 블로그 게시물의 "Runtime -- GC Performance Improvements"(런타임 -- GC 성능 및 개선 사항) 섹션을 참조하세요.
 
 <a name="net471"/>
 
@@ -478,11 +482,11 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 
 **ASP.NET 응용 프로그램의 실행 단계**
 
-ASP.NET은 23개 이벤트가 포함된 미리 정의된 파이프라인의 요청을 처리합니다. ASP.NET은 실행 단계로 각 이벤트 처리기를 실행합니다. .NET Framework 4.7 이하의 ASP.NET 버전에서는 전용 및 관리 스레드 간의 전환으로 인해 실행 컨텍스트를 진행할 수 없습니다. 대신, ASP.NET이 선택적으로 <xref:System.Web.HttpContext>만 진행합니다. .NET Framework 4.7.1부터는 <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> 메서드가 모듈의 앰비언트 데이터 복원도 허용합니다. 이 기능은 추적, 프로파일링, 진단 또는 트랜잭션과 관련된 라이브러리를 대상으로 합니다(예: 응용 프로그램의 실행 흐름 관리). 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET Execution Step Feature"(ASP.NET 실행 단계 기능)를 참조하세요. 
+ASP.NET은 23개 이벤트가 포함된 미리 정의된 파이프라인의 요청을 처리합니다. ASP.NET은 실행 단계로 각 이벤트 처리기를 실행합니다. .NET Framework 4.7 이하의 ASP.NET 버전에서는 전용 및 관리 스레드 간의 전환으로 인해 실행 컨텍스트를 진행할 수 없습니다. 대신, ASP.NET이 선택적으로 <xref:System.Web.HttpContext>만 진행합니다. .NET Framework 4.7.1부터는 <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> 메서드가 모듈의 앰비언트 데이터 복원도 허용합니다. 이 기능은 추적, 프로파일링, 진단 또는 트랜잭션과 관련된 라이브러리를 대상으로 합니다(예: 응용 프로그램의 실행 흐름 관리). 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET Execution Step Feature"(ASP.NET 실행 단계 기능)를 참조하세요.
 
 **ASP.NET HttpCookie 구문 분석**
 
-.NET Framework 4.7.1에는 문자열에서 <xref:System.Web.HttpCookie> 개체를 만들고 만료 날짜 및 경로와 같은 쿠키 값을 정확하게 할당하는 표준화된 방법을 제공하는 <xref:System.Web.HttpCookie.TryParse%2A?displayProperty=nameWithType>이라는 새로운 메서드가 포함되어 있습니다. 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET HttpCookie parsing"(ASP.NET HttpCookie 구문 분석)을 참조하세요. 
+.NET Framework 4.7.1에는 문자열에서 <xref:System.Web.HttpCookie> 개체를 만들고 만료 날짜 및 경로와 같은 쿠키 값을 정확하게 할당하는 표준화된 방법을 제공하는 <xref:System.Web.HttpCookie.TryParse%2A?displayProperty=nameWithType>이라는 새로운 메서드가 포함되어 있습니다. 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET HttpCookie parsing"(ASP.NET HttpCookie 구문 분석)을 참조하세요.
 
 **ASP.NET 양식 인증 자격 증명에 대한 SHA-2 해시 지원**
 
@@ -554,7 +558,7 @@ NET Framework 4.7에서 ASP.NET에는 다음과 같은 새 기능이 포함됩�
 .NET Framework 4.7부터 ASP.NET에서는 개발자가 메모리 내 개체 캐싱 및 메모리 모니터링을 위한 기본 ASP.NET 구현을 대체할 수 있도록 하는 새로운 API 집합을 추가적으로 제공합니다. 개발자는 이제 ASP.NET 구현이 적절하지 않은 경우 다음 세 가지 구성 요소 중 하나를 바꿀 수 있습니다.
 
 - **개체 캐시 저장소**. 개발자는 새 캐시 공급자 구성 섹션에서 새 **ICacheStoreProvider** 인터페이스를 사용하여 ASP.NET 응용 프로그램의 새로운 개체 캐시 구현을 연결할 수 있습니다.
- 
+
 - **메모리 모니터링**. ASP.NET의 기본 메모리 모니터는 프로세스에 대해 구성된 전용 바이트 제한에 가까워지거나 컴퓨터의 사용 가능한 총 실제 RAM이 부족할 때 응용 프로그램에 알립니다. 이러한 제한에 가까워지면 알림이 발생합니다. 일부 응용 프로그램의 경우 알림이 구성된 제한에 너무 가까운 상태에서 발생하여 제대로 대응하지 못하게 됩니다. 개발자는 <xref:System.Web.Hosting.ApplicationMonitors.MemoryMonitor%2A?displayProperty=nameWithType> 속성으로 메모리 모니터를 직접 작성해 기본 모니터를 대체할 수 있습니다.
 
 - **메모리 제한 반응**. 기본적으로 ASP.NET은 전용 바이트 제한에 가까워지면 개체 캐시를 트리밍하고 주기적으로 <xref:System.GC.Collect%2A?displayProperty=nameWithType>를 호출합니다. 일부 응용 프로그램의 경우 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 호출 빈도 또는 트리밍되는 캐시 양이 효율적이지 않습니다. 이제 개발자는 **IObserver** 구현을 응용 프로그램의 메모리 모니터에 구독하여 기본 동작을 바꾸거나 보완할 수 있습니다.
@@ -571,7 +575,7 @@ WCF(Windows Communication Foundation)는 다음과 같은 기능 및 변경 내�
 
 ```xml
 <runtime>
-   <AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols=false;Switch.System.Net.DontEnableSchUseStrongCrypto=false" /> 
+   <AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols=false;Switch.System.Net.DontEnableSchUseStrongCrypto=false" />
 </runtime>
 ```
 
@@ -608,7 +612,7 @@ WISP(Windows 잉크 서비스 플랫폼) 대신 [WM_POINTER 메시지](https://d
 
 **WPF 인쇄 API에 대한 새로운 구현**
 
-<xref:System.Printing.PrintQueue?displayProperty=nameWithType> 클래스의 WPF 인쇄 API는 사용되지 않는 [XPS 인쇄 API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx) 대신, Windows [인쇄 문서 패키지 API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx)를 호출합니다. 이러한 변경 내용이 응용 프로그램 호환성에 미치는 영향에 대해서는 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요. 
+<xref:System.Printing.PrintQueue?displayProperty=nameWithType> 클래스의 WPF 인쇄 API는 사용되지 않는 [XPS 인쇄 API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx) 대신, Windows [인쇄 문서 패키지 API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx)를 호출합니다. 이러한 변경 내용이 응용 프로그램 호환성에 미치는 영향에 대해서는 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
 
 <a name="v462" />
 
@@ -630,7 +634,7 @@ WISP(Windows 잉크 서비스 플랫폼) 대신 [WM_POINTER 메시지](https://d
 
 - [Windows WF(Workflow Foundation)](#WF462)
 
-- [ClickOnce](#ClickOnce)
+- [ClickOnce](#clickonce-1)
 
 - [Windows Forms 및 WPF 앱을 UWP 앱으로 변환](#UWPConvert)
 
@@ -639,12 +643,14 @@ WISP(Windows 잉크 서비스 플랫폼) 대신 [WM_POINTER 메시지](https://d
 .NET Framework 4.6.2에 추가된 새 API 목록은 GitHub에서 [.NET Framework 4.6.2 API 변경 내용](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md)을 참조하세요. .NET Framework 4.6.2의 향상된 기능 및 버그 수정 목록은 GitHub에서 [.NET Framework 4.6.2 변경 내용 목록](https://go.microsoft.com/fwlink/?LinkId=708778)을 참조하세요.  자세한 내용은 .NET 블로그에서 [.NET Framework 4.6.2 알림](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/)을 참조하십시오.
 
 <a name="ASPNET462" />
+
 ### <a name="aspnet"></a>ASP.NET
- [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]의 ASP.NET에는 다음과 같은 향상된 기능이 포함되어 있습니다.
 
- **데이터 주석 유효성 검사기의 지역화된 오류 메시지에 대한 지원 개선**
+[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]의 ASP.NET에는 다음과 같은 향상된 기능이 포함되어 있습니다.
 
- 데이터 주석 유효성 검사기를 통해 클래스 속성에 하나 이상의 특성을 추가하여 유효성 검사를 수행할 수 있습니다. 특성의 <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> 요소는 유효성 검사가 실패할 경우에 표시할 오류 메시지의 텍스트를 정의합니다. [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 이상에서는 ASP.NET을 사용하여 오류 메시지를 쉽게 지역화할 수 있습니다. 다음과 같은 경우에 오류 메시지를 지역화합니다.
+**데이터 주석 유효성 검사기의 지역화된 오류 메시지에 대한 지원 개선**
+
+데이터 주석 유효성 검사기를 통해 클래스 속성에 하나 이상의 특성을 추가하여 유효성 검사를 수행할 수 있습니다. 특성의 <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> 요소는 유효성 검사가 실패할 경우에 표시할 오류 메시지의 텍스트를 정의합니다. [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 이상에서는 ASP.NET을 사용하여 오류 메시지를 쉽게 지역화할 수 있습니다. 다음과 같은 경우에 오류 메시지를 지역화합니다.
 
 1.  <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType>가 유효성 검사 특성에 제공되는 경우
 
@@ -654,7 +660,7 @@ WISP(Windows 잉크 서비스 플랫폼) 대신 [WM_POINTER 메시지](https://d
 
 4.  리소스의 키 이름이 <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> 특성에 할당된 문자열이고 해당 값이 지역화된 오류 메시지인 경우
 
- 예를 들어, 다음 데이터 주석 특성은 잘못된 등급에 대한 기본 문화권의 오류 메시지를 정의합니다.
+예를 들어, 다음 데이터 주석 특성은 잘못된 등급에 대한 기본 문화권의 오류 메시지를 정의합니다.
 
 ```csharp
 public class RatingInfo
@@ -673,7 +679,7 @@ Public Class RatingInfo
 End Class
 ```
 
- 그런 다음 키가 오류 메시지 문자열이고 값이 지역화된 오류 메시지인 리소스 파일 DataAnnotation.Localization.fr.resx를 만들 수 있습니다. 해당 파일은 `App.LocalResources` 폴더에서 찾아야 합니다. 예를 들면, 다음은 지역화된 프랑스어(fr) 오류 메시지의 값과 키입니다.
+그런 다음 키가 오류 메시지 문자열이고 값이 지역화된 오류 메시지인 리소스 파일 DataAnnotation.Localization.fr.resx를 만들 수 있습니다. 해당 파일은 `App.LocalResources` 폴더에서 찾아야 합니다. 예를 들면, 다음은 지역화된 프랑스어(fr) 오류 메시지의 값과 키입니다.
 
 | name                                 | 값                                     |
 | ------------------------------------ | ----------------------------------------- |
@@ -747,7 +753,7 @@ public static byte[] SignDataDsaSha384(byte[] data, X509Certificate2 cert)
 }
 ```
 
-```vb 
+```vb
 Public Shared Function SignDataDsaSha384(data As Byte(), cert As X509Certificate2) As Byte()
     Using DSA As DSA = cert.GetDSAPrivateKey()
         Return DSA.SignData(data, HashAlgorithmName.SHA384)
@@ -755,7 +761,7 @@ Public Shared Function SignDataDsaSha384(data As Byte(), cert As X509Certificate
 End Function
 ```
 
- 다음 예제와 같이 <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A?displayProperty=nameWithType> 확장 메서드를 호출하여 서명된 데이터를 확인할 수 있습니다.
+다음 예제와 같이 <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A?displayProperty=nameWithType> 확장 메서드를 호출하여 서명된 데이터를 확인할 수 있습니다.
 
 ```csharp
 public static bool VerifyDataDsaSha384(byte[] data, byte[] signature, X509Certificate2 cert)
@@ -814,7 +820,7 @@ public static byte[] EncryptDataWithPersistedKey(byte[] data, byte[] iv)
 }
 ```
 
-```vb 
+```vb
 Public Shared Function EncryptDataWithPersistedKey(data As Byte(), iv As Byte()) As Byte()
     Using Aes As Aes = New AesCng("AesDemoKey", CngProvider.MicrosoftSoftwareKeyStorageProvider)
         Aes.IV = iv
@@ -861,7 +867,9 @@ End Function
 
  새로운 `PoolBlockingPeriod` 키워드를 추가하여 앱에 가장 적합한 차단 기간을 선택할 수 있습니다. 값은 다음과 같습니다.
 
- `Auto` Azure SQL Database에 연결하는 응용 프로그램에 대한 연결 풀 차단 기간은 비활성화되고, 다른 모든 SQL Server 인스턴스에 연결하는 응용 프로그램에 대한 연결 풀 차단 기간은 활성화됩니다. 기본값입니다. 서버 엔드포인트 이름이 다음 중 하나로 끝나는 경우 Azure SQL Database로 간주됩니다.
+`Auto`
+
+Azure SQL Database에 연결하는 응용 프로그램에 대한 연결 풀 차단 기간은 비활성화되고, 다른 SQL Server 인스턴스에 연결하는 응용 프로그램에 대한 연결 풀 차단 기간은 활성화됩니다. 기본값입니다. 서버 엔드포인트 이름이 다음 중 하나로 끝나는 경우 Azure SQL Database로 간주됩니다.
 
 - .database.windows.net
 
@@ -871,9 +879,13 @@ End Function
 
 - .database.cloudapi.de
 
- `AlwaysBlock` 연결 풀 차단 기간이 항상 활성화됩니다.
+`AlwaysBlock`
 
- `NeverBlock` 연결 풀 차단 기간이 항상 비활성화됩니다.
+연결 풀 차단 기간이 항상 활성화됩니다.
+
+`NeverBlock`
+
+연결 풀 차단 기간이 항상 비활성화됩니다.
 
  **상시 암호화 기능 향상**
 
@@ -933,7 +945,7 @@ AppContext.SetSwitch(disableCngCertificates, False)
  예를 들어 클라이언트가 `net.pipe://localhost/Service1`에서 수신하는 서비스에 연결하려고 하지만, 관리자 권한으로 실행 중인 컴퓨터의 다른 서비스에서 `net.pipe://localhost`를 수신하고 있습니다. 이 앱 설정을 `false`로 지정한 경우 클라이언트에서 잘못된 서비스에 연결하려고 시도합니다. 앱 설정을 `true`로 설정하면 클라이언트에서는 항상 가장 일치하는 서비스에 연결합니다.
 
 > [!NOTE]
->  <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하는 클라이언트는 전체 엔드포인트 주소 대신 서비스의 기준 주소(있는 경우)를 기반으로 서비스를 찾습니다. 이 설정을 항상 작동하게 하려면 서비스에서 고유 기준 주소를 사용해야 합니다.
+> <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하는 클라이언트는 전체 엔드포인트 주소 대신 서비스의 기준 주소(있는 경우)를 기반으로 서비스를 찾습니다. 이 설정을 항상 작동하게 하려면 서비스에서 고유 기준 주소를 사용해야 합니다.
 
  이 변경을 사용하려면 클라이언트 응용 프로그램의 App.config 또는 Web.config 파일에 다음 앱 설정을 추가합니다.
 
@@ -974,9 +986,9 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
 ```xaml
 <GroupDescriptions>
-     <PropertyGroupDescription 
-         PropertyName="Age" 
-         CustomSort= 
+     <PropertyGroupDescription
+         PropertyName="Age"
+         CustomSort=
               "{x:Static PropertyGroupDescription.CompareNamesAscending}"/>
      </PropertyGroupDescription>
 </GroupDescriptions>
@@ -1035,10 +1047,10 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
 - 순서도 활동 디자이너 또는 기타 워크플로 활동 디자이너는 연결된 속성 값과 달리 모든 개체를 기본 위치에 표시할 수 있습니다.
 
-<a name="ClickOnce" />
 
 ### <a name="clickonce"></a>ClickOnce
- ClickOnce는 이미 지원되는 1.0 프로토콜 외에 TLS 1.1 및 TLS 1.2를 지원하도록 업데이트되었습니다. ClickOnce는 필요한 프로토콜을 자동으로 검색하므로, TLS 1.1 및 1.2 지원하기 위해 ClickOnce 응용 프로그램에서 별도의 단계를 수행할 필요가 없습니다.
+
+ClickOnce는 이미 지원되는 1.0 프로토콜 외에 TLS 1.1 및 TLS 1.2를 지원하도록 업데이트되었습니다. ClickOnce는 필요한 프로토콜을 자동으로 검색하므로, TLS 1.1 및 1.2 지원하기 위해 ClickOnce 응용 프로그램에서 별도의 단계를 수행할 필요가 없습니다.
 
 <a name="UWPConvert" />
 
@@ -1059,7 +1071,8 @@ AppContext.SetSwitch(disableCngCertificates, False)
 <a name="v461" />
 
 ## <a name="whats-new-in-the-net-framework-461"></a>.NET Framework 4.6.1의 새로운 기능
- [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에는 다음과 같은 영역의 새 기능이 포함됩니다.
+
+[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에는 다음과 같은 영역의 새 기능이 포함됩니다.
 
 - [암호화](#Crypto)
 
@@ -1073,7 +1086,7 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
 - [NGen](#NGEN461)
 
- [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에 대한 자세한 내용은 다음 항목을 참조하세요.
+[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에 대한 자세한 내용은 다음 항목을 참조하세요.
 
 - [.NET Framework 4.6.1 변경 내용 목록](https://go.microsoft.com/fwlink/?LinkId=622964)
 
@@ -1110,7 +1123,7 @@ AppContext.SetSwitch(disableCngCertificates, False)
  HSM에 저장된 열 마스터 키로 보호된 상시 암호화 데이터에 액세스하려면 고객이 HSM 공급업체에서 제공한 CSP 공급자 또는 CNG 키 저장소 공급자를 앱 서버 또는 클라이언트 컴퓨터에 설치해야 합니다.
 
  **AlwaysOn의 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A> 연결 동작 개선**
- 
+
 SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠른 연결을 제공합니다. 응용 프로그램이 다른 서브넷의 AlwaysOn AG(가용성 그룹)에 연결되었는지 투명하게 감지하고 현재 활성 서버를 신속하게 검색하여 서버에 대한 연결을 제공합니다. 이 릴리스 전에는 AlwaysOn 가용성 그룹에 연결되었음을 나타내기 위해 응용 프로그램에서 `"MultisubnetFailover=true"`를 포함하도록 연결 문자열을 설정해야 했습니다. 연결 키워드를 `true`로 설정하지 않은 경우 응용 프로그램에서 AlwaysOn 가용성 그룹에 연결하는 동안 시간 초과가 발생할 수 있습니다. 이 릴리스에서는 더 이상 응용 프로그램에서 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>를 `true`로 설정할 필요가 *없습니다*. Always On 가용성 그룹의 SqlClient 지원에 대한 자세한 내용은 [고가용성 및 재해 복구에 대한 SqlClient 지원](../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md)을 참조하십시오.
 
 <a name="WPF461" />
@@ -1151,7 +1164,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 - 이러한 파일은 읽기 전용으로 간주되며 시스템에 의해 수정되지 않습니다.
 
 > [!NOTE]
->  이러한 새 파일 형식은 WPF 맞춤법 검사 API에 의해 직접 지원되지 않으며 응용 프로그램에서 WPF에 제공된 사용자 지정 사전은 계속 .lex 파일을 사용해야 합니다.
+> 이러한 새 파일 형식은 WPF 맞춤법 검사 API에 의해 직접 지원되지 않으며 응용 프로그램에서 WPF에 제공된 사용자 지정 사전은 계속 .lex 파일을 사용해야 합니다.
 
 **샘플**
 
@@ -1181,11 +1194,16 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 <a name="Profile461" />
 
 ### <a name="profiling"></a>프로파일링
- 관리되지 않는 프로파일링 API가 다음과 같이 개선되었습니다.
 
- [ICorProfilerInfo7](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md) 인터페이스에서 PDB 액세스에 대한 지원 개선. ASP.Net 5에서는 Roslyn에 의해 어셈블리가 메모리 내에서 컴파일되는 일이 더 많아지고 있습니다. 프로파일링 도구를 만드는 개발자에게 있어 이는 지금까지 디스크에 serialize되던 PDB가 더 이상 존재하지 않는다는 의미입니다. 프로파일러 도구는 종종 코드 검사 또는 줄 단위 성능 분석 등의 작업을 위해 PDB를 사용하여 코드를 다시 소스 줄에 매핑합니다. [ICorProfilerInfo7](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md) 인터 페이스는 [ICorProfilerInfo7::GetInMemorySymbolsLength](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-getinmemorysymbolslength-method.md)와 [ICorProfilerInfo7::ReadInMemorySymbols](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-readinmemorysymbols.md)의 두 가지 새로운 메서드를 포함합니다. 이 인터페이스에는 이제 메모리 내 PDB 데이터에 대한 액세스 권한과 함께 이러한 프로파일러 도구를 제공하는 새 메서드가 포함됩니다. 새 API를 사용하면 프로파일러가 메모리 내 PDB 콘텐츠를 바이트 배열로 가져온 다음 처리하거나 디스크로 직렬화할 수 있습니다.
+관리되지 않는 프로파일링 API가 다음과 같이 개선되었습니다.
 
- ICorProfiler 인터페이스를 사용하여 계측 향상. 동적 계측을 위해 `ICorProfiler` API의 ReJit 기능을 사용하는 프로파일러는 이제 일부 메타데이터를 수정할 수 있습니다. 이전에는 이러한 도구를 사용하여 언제든지 IL을 계측할 수 있었지만 메타데이터는 모듈 로드 시에만 수정할 수 있었습니다. IL은 메타데이터를 참조하므로 수행할 수 있는 계측 종류에 한계가 있었습니다. 모듈 로드 후의 메타데이터 하위 집합 편집을 지원하기 위해 [ICorProfilerInfo7::ApplyMetaData](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-applymetadata-method.md) 메서드를 추가하고 특히, 새 `AssemblyRef`, `TypeRef`, `TypeSpec`, `MemberRef`, `MemberSpec` 및 `UserString` 레코드를 추가하여 이러한 제한을 일부 상향했습니다. 이 변경을 통해 즉시 계측의 범위가 더 넓어졌습니다.
+- [ICorProfilerInfo7](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md) 인터페이스에서 PDB 액세스에 대한 지원 개선
+
+   ASP.NET Core에서는 Roslyn에 의해 어셈블리가 메모리 내에서 컴파일되는 경우가 더 많아지고 있습니다. 프로파일링 도구를 만드는 개발자에게 있어 이는 지금까지 디스크에 serialize되던 PDB가 더 이상 존재하지 않는다는 의미입니다. 프로파일러 도구는 종종 코드 검사 또는 줄 단위 성능 분석 등의 작업을 위해 PDB를 사용하여 코드를 다시 소스 줄에 매핑합니다. [ICorProfilerInfo7](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md) 인터 페이스는 [ICorProfilerInfo7::GetInMemorySymbolsLength](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-getinmemorysymbolslength-method.md)와 [ICorProfilerInfo7::ReadInMemorySymbols](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-readinmemorysymbols.md)의 두 가지 새로운 메서드를 포함합니다. 이 인터페이스에는 이제 메모리 내 PDB 데이터에 대한 액세스 권한과 함께 이러한 프로파일러 도구를 제공하는 새 메서드가 포함됩니다. 새 API를 사용하면 프로파일러가 메모리 내 PDB 콘텐츠를 바이트 배열로 가져온 다음 처리하거나 디스크로 직렬화할 수 있습니다.
+
+- ICorProfiler 인터페이스를 사용하여 계측 개선
+
+   동적 계측을 위해 `ICorProfiler` API의 ReJit 기능을 사용하는 프로파일러는 이제 일부 메타데이터를 수정할 수 있습니다. 이전에는 이러한 도구를 사용하여 언제든지 IL을 계측할 수 있었지만 메타데이터는 모듈 로드 시에만 수정할 수 있었습니다. IL은 메타데이터를 참조하므로 수행할 수 있는 계측 종류에 한계가 있었습니다. 모듈 로드 후의 메타데이터 하위 집합 편집을 지원하기 위해 [ICorProfilerInfo7::ApplyMetaData](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-applymetadata-method.md) 메서드를 추가하고 특히, 새 `AssemblyRef`, `TypeRef`, `TypeSpec`, `MemberRef`, `MemberSpec` 및 `UserString` 레코드를 추가하여 이러한 제한을 일부 상향했습니다. 이 변경을 통해 즉시 계측의 범위가 더 넓어졌습니다.
 
 <a name="NGEN461" />
 
@@ -1199,13 +1217,13 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 ## <a name="whats-new-in-net-2015"></a>.NET 2015의 새로운 기능
  .NET 2015에서는 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] 및 .NET Core가 도입되었습니다. 일부 새로운 기능은 둘 다에 적용되고 기타 기능은 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] 또는 [!INCLUDE[net_core](../../../includes/net-core-md.md)] 중 하나와 관련이 있습니다.
 
-- **ASP.NET 5**
+- **ASP.NET Core**
 
-     .NET 2015에는 최신 클라우드 기반 앱을 빌드하기 위한 린(lean) .NET 구현인 ASP.NET 5가 포함되어 있습니다. ASP.NET 5는 모듈식이므로 응용 프로그램에 필요한 기능만 포함할 수 있습니다. IIS에서 호스트되거나 사용자 지정 프로세스에서 자체 호스트될 수 있으며 동일한 서버에서 다양한 .NET Framework 버전으로 앱을 실행할 수 있습니다. 클라우드 배포용으로 설계된 새 환경 구성 시스템도 포함됩니다.
+     .NET 2015에는 최신 클라우드 기반 앱을 빌드하기 위한 린(lean) .NET 구현인 ASP.NET Core가 포함되어 있습니다. ASP.NET Core는 모듈식이므로 응용 프로그램에 필요한 기능만 포함할 수 있습니다. IIS에서 호스트되거나 사용자 지정 프로세스에서 자체 호스트될 수 있으며 동일한 서버에서 다양한 .NET Framework 버전으로 앱을 실행할 수 있습니다. 클라우드 배포용으로 설계된 새 환경 구성 시스템도 포함됩니다.
 
-     MVC, Web API 및 웹 페이지가 MVC 6이라는 단일 프레임워크로 통합됩니다. Visual Studio 2015의 새로운 도구를 통해 ASP.NET 5 앱을 빌드합니다. 기존 응용 프로그램도 새로운 .NET Framework에서 작동하지만 MVC 6 또는 SignalR 3을 사용하는 앱을 빌드하려면 Visual Studio 2015의 프로젝트 시스템을 사용해야 합니다.
+     MVC, Web API 및 웹 페이지가 MVC 6이라는 단일 프레임워크로 통합됩니다. Visual Studio 2015 이상의 도구를 통해 ASP.NET Core 앱을 빌드합니다. 기존 응용 프로그램도 새로운 .NET Framework에서 작동하지만 MVC 6 또는 SignalR 3을 사용하는 앱을 빌드하려면 Visual Studio 2015 이상의 프로젝트 시스템을 사용해야 합니다.
 
-     자세한 내용은 [ASP.NET 5](https://go.microsoft.com/fwlink/?LinkId=518238)를 참조하십시오.
+     자세한 내용은 [ASP.NET Core](http://go.microsoft.com/fwlink/?LinkId=518238)를 참조하세요.
 
 - **ASP.NET 업데이트**
 
@@ -1213,7 +1231,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
          이제 ASP.NET이 비동기 응답 플러시에 대한 간단한 작업 기반 API인 <xref:System.Web.HttpResponse.FlushAsync%2A?displayProperty=nameWithType>를 제공합니다. 이를 통해 해당 언어의 `async/await` 지원을 사용하여 응답을 비동기적으로 플러시할 수 있습니다.
 
-    - `Model binding supports task-returning methods`
+    - **모델 바인딩의 태스크 반환 메서드 지원**
 
          [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에 ASP.NET이 Web Forms 페이지 및 사용자 정의 컨트롤에서 CRUD 기반 데이터 작업으로 확장 가능하고 코드 중심의 접근이 가능하도록 모델 바인딩 기능을 추가했습니다. 이제 모델 바인딩 시스템이 <xref:System.Threading.Tasks.Task>를 반환하는 모델 바인딩 메서드를 지원합니다. 이 기능으로 Web Forms 개발자가 Entity Framework를 포함하여 새 버전의 ORM을 사용하는 경우 간편한 데이터 바인딩 시스템과 함께 비동기의 확장성 이점을 얻을 수 있습니다.
 
@@ -1236,7 +1254,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
          ASP.NET 응용 프로그램의 [PUSH_PROMISE](http://http2.github.io/http2-spec/#PUSH_PROMISE) 기능 사용 방법을 제공하기 위해 두 개의 오버로드(<xref:System.Web.HttpResponse.PushPromise%28System.String%29> 및 <xref:System.Web.HttpResponse.PushPromise%28System.String%2CSystem.String%2CSystem.Collections.Specialized.NameValueCollection%29>)와 함께 새 메서드가 <xref:System.Web.HttpResponse> 클래스에 추가되었습니다.
 
         > [!NOTE]
-        >  ASP.NET 5는 HTTP/2를 지원하는 반면 PUSH PROMISE 기능에 대한 지원은 아직 추가되지 않았습니다.
+        > ASP.NET Core는 HTTP/2를 지원하는 반면 PUSH PROMISE 기능에 대한 지원은 아직 추가되지 않았습니다.
 
          브라우저와 웹 서버(Windows의 IIS)가 모든 작업을 수행합니다. 사용자를 위해 직접 힘든 작업을 수행할 필요가 없습니다.
 
@@ -1343,16 +1361,16 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
          라이브러리는 소비자가 스위치 값을 선언했는지 확인한 다음 적절하게 동작해야 합니다.
 
         ```csharp
-        if (!AppContext.TryGetSwitch("Switch.AmazingLib.ThrowOnException", out shouldThrow)) 
+        if (!AppContext.TryGetSwitch("Switch.AmazingLib.ThrowOnException", out shouldThrow))
         {
-           // This is the case where the switch value was not set by the application. 
-           // The library can choose to get the value of shouldThrow by other means. 
-           // If no overrides nor default values are specified, the value should be 'false'. 
+           // This is the case where the switch value was not set by the application.
+           // The library can choose to get the value of shouldThrow by other means.
+           // If no overrides nor default values are specified, the value should be 'false'.
            // A false value implies the latest behavior.
         }
 
            // The library can use the value of shouldThrow to throw exceptions or not.
-           if (shouldThrow) 
+           if (shouldThrow)
            {
               // old code
            }
@@ -1474,7 +1492,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
      기본값은 60초입니다. `value`가 0으로 설정되면 순서가 잘못된 요청은 다음과 같은 텍스트의 오류로 인해 즉시 거부됩니다.
 
     ```
-    Operation 'Request3|{http://tempuri.org/}IService' on service instance with identifier '2b0667b6-09c8-4093-9d02-f6c67d534292' cannot be performed at this time. Please ensure that the operations are performed in the correct order and that the binding in use provides ordered delivery guarantees. 
+    Operation 'Request3|{http://tempuri.org/}IService' on service instance with identifier '2b0667b6-09c8-4093-9d02-f6c67d534292' cannot be performed at this time. Please ensure that the operations are performed in the correct order and that the binding in use provides ordered delivery guarantees.
     ```
 
      순서가 잘못된 작업 메시지를 수신하고 비 프로토콜 책갈피가 없다면 동일한 메시지를 수신한 것입니다.
@@ -1486,7 +1504,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
      이제 <xref:System.Transactions.TransactionException>에서 파생된 예외를 발생시킨 트랜잭션의 분산 트랜잭션 식별자를 포함할 수 있습니다. 이렇게 하려면 app.config 파일의 `appSettings` 섹션에 다음 키를 추가합니다.
 
     ```xml
-    <add key="Transactions:IncludeDistributedTransactionIdInExceptionMessage" value="true"/> 
+    <add key="Transactions:IncludeDistributedTransactionIdInExceptionMessage" value="true"/>
     ```
 
      기본값은 `false`입니다.
@@ -1531,7 +1549,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
      [!INCLUDE[net_core](../../../includes/net-core-md.md)]를 대상으로 하며 C# 또는 Visual Basic으로 작성된 Windows 10용 앱은 IL이 아니라 네이티브 코드로 앱을 컴파일하는 새 기술을 이용할 수 있습니다. 이렇게 생성된 앱은 시작 및 실행 시간이 훨씬 더 빠릅니다. 자세한 내용은 [.NET 네이티브로 앱 컴파일](../../../docs/framework/net-native/index.md)을 참조하십시오. JIT 컴파일 및 NGEN 둘 다와의 차이점 및 코드에 미치는 영향을 검사하는 .NET 네이티브의 개요는 [.NET 네이티브 및 컴파일](../../../docs/framework/net-native/net-native-and-compilation.md)을 참조하십시오.
 
-     Visual Studio 2015로 컴파일하는 경우 앱은 기본적으로 네이티브 코드로 컴파일됩니다. 자세한 내용은 [.NET 네이티브 시작](../../../docs/framework/net-native/getting-started-with-net-native.md)을 참조하십시오.
+     Visual Studio 2015 이상으로 컴파일하는 경우 앱은 기본적으로 네이티브 코드로 컴파일됩니다. 자세한 내용은 [.NET 네이티브 시작](../../../docs/framework/net-native/getting-started-with-net-native.md)을 참조하십시오.
 
      .NET 네이티브 앱 디버그를 지원하기 위해 다양한 인터페이스 및 열거형이 관리되지 않는 디버깅 API에 새로 추가되었습니다. 자세한 내용은 [디버깅(관리되지 않는 API 참조)](../../../docs/framework/unmanaged-api/debugging/index.md) 항목을 참조하십시오.
 
@@ -1553,13 +1571,14 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - **Windows Forms 컨트롤 크기 조정.** 이 기능은 확장되었습니다. 시스템 DPI 설정을 사용하여 다음과 같은 추가 컨트롤의 구성 요소 크기를 조정할 수 있습니다(예: 콤보 상자의 드롭다운 화살표).
 
-     <xref:System.Windows.Forms.ComboBox> <xref:System.Windows.Forms.ToolStripComboBox> 
-     <xref:System.Windows.Forms.ToolStripMenuItem> 
-     <xref:System.Windows.Forms.Cursor> 
-     <xref:System.Windows.Forms.DataGridView> 
-     <xref:System.Windows.Forms.DataGridViewComboBoxColumn>
+    - <xref:System.Windows.Forms.ComboBox>
+    - <xref:System.Windows.Forms.ToolStripComboBox>
+    - <xref:System.Windows.Forms.ToolStripMenuItem>
+    - <xref:System.Windows.Forms.Cursor>
+    - <xref:System.Windows.Forms.DataGridView>
+    - <xref:System.Windows.Forms.DataGridViewComboBoxColumn>
 
-     이 기능은 옵트인 기능입니다. 이 기능을 사용하려면 아래와 같이 응용 프로그램 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
+     이 기능은 옵트인(opt-in) 기능입니다. 이 기능을 사용하려면 아래와 같이 응용 프로그램 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
 
     ```xml
     <appSettings>
@@ -1577,13 +1596,23 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - **프로파일링 기능 향상.** 다음과 같은 관리되지 않는 새로운 프로파일링 API를 통해 더욱 강력한 프로파일링 기능이 제공됩니다.
 
-     [COR_PRF_ASSEMBLY_REFERENCE_INFO 구조](../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md) [COR_PRF_HIGH_MONITOR 열거형](../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) [GetAssemblyReferences 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md) [GetEventMask2 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) [SetEventMask2 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) [AddAssemblyReference 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-addassemblyreference-method.md)
+    - [COR_PRF_ASSEMBLY_REFERENCE_INFO 구조체](../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md)
+    - [COR_PRF_HIGH_MONITOR 열거형](../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md)
+    - [GetAssemblyReferences 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)
+    - [GetEventMask2 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md)
+    - [SetEventMask2 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)
+    - [AddAssemblyReference 메서드](../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-addassemblyreference-method.md)
 
      이전 `ICorProfiler` 구현에서는 종속 어셈블리에 대한 지연 로딩이 지원되었습니다. 새로운 프로파일링 API의 경우 프로파일러에 의해 삽입된 종속 어셈블리는 앱이 완전히 초기화된 후에 로드되는 것이 아니라 즉시 로드할 수 있어야 합니다. 기존 `ICorProfiler` API 사용자에게는 이 변경 내용이 영향을 주지 않습니다.
 
 - **디버깅 기능 향상.** 다음과 같은 관리되지 않는 새로운 디버깅 API를 통해 프로파일러와 더욱 완벽하게 통합할 수 있습니다. 덤프 디버깅 시 컴파일러 ReJIT 요청에 의해 생성된 로컬 변수 및 코드뿐 아니라 프로파일러가 삽입한 메타데이터를 액세스할 수 있습니다.
 
-     [SetWriteableMetadataUpdateMode 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md) [EnumerateLocalVariablesEx 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md) [GetLocalVariableEx 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md) [GetCodeEx 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md) [GetActiveReJitRequestILCode 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md) [GetInstrumentedILMap 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)
+    - [SetWriteableMetadataUpdateMode 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md)
+    - [EnumerateLocalVariablesEx 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md)
+    - [GetLocalVariableEx 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md)
+    - [GetCodeEx 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md)
+    - [GetActiveReJitRequestILCode 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md)
+    - [GetInstrumentedILMap 메서드](../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)
 
 - **이벤트 추적 변경 내용.** .NET Framework 4.5.2에서는 대형 노출 영역에 대해 out-of-process로 실행되는 ETW(Windows용 이벤트 추적) 기반 작업 추적이 가능합니다. 이를 통해 APM(고급 전원 관리) 공급업체는 스레드 간의 각 요청 및 작업에 대한 비용을 정확하게 추적하는 간단한 도구를 제공할 수 있습니다.  이러한 이벤트는 ETW 컨트롤러에 의해 활성화된 경우에만 발생되므로 이전에 작성된 ETW 코드나 비활성화된 ETW로 실행된 코드에는 변경 내용이 적용되지 않습니다.
 
@@ -1626,7 +1655,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
  .NET Framework 4.5.1의 주요 새로운 기능 및 향상된 기능은 다음과 같습니다.
 
-- 어셈블리에 대한 자동 바인딩 리디렉션. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]부터는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]을 대상으로 하는 응용 프로그램을 컴파일할 때 응용 프로그램 또는 해당 구성 요소가 동일한 어셈블리의 여러 버전을 참조할 경우 응용 프로그램 구성 파일에 바인딩 리디렉션을 추가할 수 있습니다. 또한 이전 버전의 .NET Framework를 대상으로 하는 프로젝트에 대해 이 기능을 사용하도록 설정할 수 있습니다. 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)를 참조하십시오.
+- 어셈블리에 대한 자동 바인딩 리디렉션. Visual Studio 2013부터는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]을 대상으로 하는 앱을 컴파일할 때 앱 또는 해당 구성 요소가 동일한 어셈블리의 여러 버전을 참조할 경우 앱 구성 파일에 바인딩 리디렉션을 추가할 수 있습니다. 또한 이전 버전의 .NET Framework를 대상으로 하는 프로젝트에 대해 이 기능을 사용하도록 설정할 수 있습니다. 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)를 참조하십시오.
 
 - 진단 정보를 수집하여 개발자가 서버 및 클라우드 응용 프로그램의 성능을 향상시키는 기능. 자세한 내용은 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> 클래스의 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> 및 <xref:System.Diagnostics.Tracing.EventSource> 메서드를 참조하세요.
 
@@ -1638,8 +1667,9 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - Windows Forms 컨트롤 크기 조정. 앱의 응용 프로그램 구성 파일(app.config)의 항목을 선택하여 시스템 DPI 설정으로 컨트롤 구성 요소(예: 속성 표에 표시되는 아이콘)의 크기를 조정할 수 있습니다. 이 기능은 현재 다음과 같은 Windows Forms 컨트롤에서 지원됩니다.
 
-     <xref:System.Windows.Forms.PropertyGrid> <xref:System.Windows.Forms.TreeView> 
-     <xref:System.Windows.Forms.DataGridView>의 일부 구성 요소(그 밖에 지원되는 컨트롤에 대해서는 [4.5.2의 새 기능](#v452) 참조)
+    - <xref:System.Windows.Forms.PropertyGrid>
+    - <xref:System.Windows.Forms.TreeView>
+    - <xref:System.Windows.Forms.DataGridView>의 일부 구성 요소(그 밖에 지원되는 컨트롤에 대해서는 [4.5.2의 새 기능](#v452) 참조)
 
      이 기능을 사용하려면 다음과 같이 새로운 \<appSettings> 요소를 구성 파일(app.config)에 추가하여 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정합니다.
 
@@ -1649,19 +1679,19 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
     </appSettings>
     ```
 
- [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]의 .NET Framework 응용 프로그램 디버깅 시 개선된 기능은 다음과 같습니다.
+ Visual Studio 2013의 .NET Framework 응용 프로그램 디버깅 시 개선된 기능은 다음과 같습니다.
 
-- Visual Studio 디버거에서 값 반환. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]에서 관리되는 응용 프로그램을 디버깅하면 자동 창에 메서드에 대한 반환 형식 및 값이 표시됩니다. 이 정보는 데스크톱, Windows 스토어 및 Windows Phone 응용 프로그램에서 사용할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [메서드 호출의 반환 값 검사](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx)를 참조하십시오.
+- Visual Studio 디버거에서 값 반환. Visual Studio 2013에서 관리되는 응용 프로그램을 디버깅하면 자동 창에 메서드에 대한 반환 형식 및 값이 표시됩니다. 이 정보는 데스크톱, Windows 스토어 및 Windows Phone 응용 프로그램에서 사용할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [메서드 호출의 반환 값 검사](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx)를 참조하십시오.
 
-- 64비트 응용 프로그램의 편집하며 계속하기. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]은 데스크톱, Windows 스토어 및 Windows Phone용 64비트 관리되는 응용 프로그램의 편집하며 계속하기 기능을 지원합니다. 기존 제한은 32비트 응용 프로그램과 64비트 응용 프로그램에서 그대로 적용됩니다. [지원되는 코드 변경 내용(C#)](/visualstudio/debugger/supported-code-changes-csharp) 문서의 마지막 섹션을 참조하십시오.
+- 64비트 응용 프로그램의 편집하며 계속하기. Visual Studio 2013은 데스크톱, Windows 스토어 및 Windows Phone용 64비트 관리되는 응용 프로그램의 편집하며 계속하기 기능을 지원합니다. 기존 제한은 32비트 응용 프로그램과 64비트 응용 프로그램에서 그대로 적용됩니다. [지원되는 코드 변경 내용(C#)](/visualstudio/debugger/supported-code-changes-csharp) 문서의 마지막 섹션을 참조하십시오.
 
-- 비동기 인식 디버깅. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]에서 비동기 응용 프로그램을 더 쉽게 디버깅하기 위해 호출 스택은 컴파일러에서 제공된 인프라 코드를 숨겨 비동기 프로그래밍을 지원하고, 논리 프로그램 실행을 보다 명확하게 반영할 수 있도록 논리 부모 프레임의 체인을 숨깁니다. 병렬 작업 창은 작업 창으로 대체되고 특정 중단점과 관련된 작업을 표시하며 응용 프로그램에서 현재 활성 상태이거나 예약된 다른 작업도 모두 표시합니다. 이 기능에 대한 자세한 내용을 [.NET Framework 4.5.1 알림](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/)의 "비동기 인식 디버깅" 섹션에서 확인할 수 있습니다.
+- 비동기 인식 디버깅. Visual Studio 2013에서 비동기 응용 프로그램을 더 쉽게 디버깅하기 위해 호출 스택은 컴파일러에서 제공된 인프라 코드를 숨겨 비동기 프로그래밍을 지원하고, 논리 프로그램 실행을 보다 명확하게 반영할 수 있도록 논리 부모 프레임의 체인을 숨깁니다. 병렬 작업 창은 작업 창으로 대체되고 특정 중단점과 관련된 작업을 표시하며 응용 프로그램에서 현재 활성 상태이거나 예약된 다른 작업도 모두 표시합니다. 이 기능에 대한 자세한 내용을 [.NET Framework 4.5.1 알림](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/)의 "비동기 인식 디버깅" 섹션에서 확인할 수 있습니다.
 
-- Windows 런타임 구성 요소에 대한 예외 지원 향상. [!INCLUDE[win81](../../../includes/win81-md.md)]에서는 다른 언어 간에도 예외의 원인인 오류에 대한 정보를 Windows 스토어 응용 프로그램에서 발생시킨 예외에 보존합니다. 이 기능에 대한 자세한 내용을 [.NET Framework 4.5.1 알림](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/)의 "Windows 스토어 앱 개발" 섹션에서 확인할 수 있습니다. 
+- Windows 런타임 구성 요소에 대한 예외 지원 향상. [!INCLUDE[win81](../../../includes/win81-md.md)]에서는 다른 언어 간에도 예외의 원인인 오류에 대한 정보를 Windows 스토어 응용 프로그램에서 발생시킨 예외에 보존합니다. 이 기능에 대한 자세한 내용을 [.NET Framework 4.5.1 알림](https://blogs.msdn.microsoft.com/dotnet/2013/06/26/announcing-the-net-framework-4-5-1-preview/)의 "Windows 스토어 앱 개발" 섹션에서 확인할 수 있습니다.
 
- [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]부터 [관리되는 프로필 기반 최적화 도구(Mpgo.exe)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)를 사용하여 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱과 데스크톱 앱을 최적화할 수 있습니다.
+ Visual Studio 2013부터는 [관리되는 프로필 기반 최적화 도구(Mpgo.exe)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)를 사용하여 데스크톱 앱뿐만 아니라 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 최적화할 수 있습니다.
 
- ASP.NET 4.5.1의 새로운 기능은 ASP.NET 사이트의 [ASP.NET 4.5.1 및 Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkID=309094)을 참조하십시오.
+ ASP.NET 4.5.1의 새로운 기능은 [Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보](/aspnet/visual-studio/overview/2013/release-notes)를 참조하세요.
 
  [맨 위로 이동](#introduction)
 
@@ -1722,7 +1752,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 ### <a name="tools"></a>도구
  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 리소스 파일 생성기(Resgen.exe)를 사용하면 .NET Framework 어셈블리에 포함된 .resources 파일에서 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에 사용할 .resw 파일을 만들 수 있습니다. 자세한 내용은 [Resgen.exe(리소스 파일 생성기)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 참조하십시오.
 
- 관리되는 프로필 기반 최적화(Mpgo.exe)를 사용하면 네이티브 이미지 어셈블리를 최적화하여 응용 프로그램 시작 시간, 메모리 사용률(작업 집합 크기) 및 처리량을 개선할 수 있습니다. 명령줄 도구는 네이티브 이미지 응용 프로그램 어셈블리에 대한 프로필 데이터를 생성합니다. [Mpgo.exe(관리되는 프로필 기반 최적화 도구)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)를 참조하십시오. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)]부터는 Mpgo.exe를 사용하여 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램과 데스크톱 응용 프로그램을 최적화할 수 있습니다.
+ 관리되는 프로필 기반 최적화(Mpgo.exe)를 사용하면 네이티브 이미지 어셈블리를 최적화하여 응용 프로그램 시작 시간, 메모리 사용률(작업 집합 크기) 및 처리량을 개선할 수 있습니다. 명령줄 도구는 네이티브 이미지 응용 프로그램 어셈블리에 대한 프로필 데이터를 생성합니다. [Mpgo.exe(관리되는 프로필 기반 최적화 도구)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)를 참조하십시오. Visual Studio 2013부터는 Mpgo.exe를 사용하여 데스크톱 앱뿐만 아니라 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 최적화할 수 있습니다.
 
 <a name="parallel" />
 
@@ -1732,20 +1762,20 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 <a name="web" />
 
 ### <a name="web"></a>웹
- ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성능 향상 및 기타 많은 기능을 바인딩하는 모델을 추가합니다. 자세한 내용은 다음 리소스를 참조하세요.
 
-- MSDN 라이브러리의 [ASP.NET 4.5 및 Visual Studio 2012](https://msdn.microsoft.com/library/ac9bb7f6-f094-4af7-bad0-acf49a5dbc55)
+ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성능 향상 및 기타 많은 기능을 바인딩하는 모델을 추가합니다. 자세한 내용은 다음 리소스를 참조하세요.
 
-- ASP.NET 사이트의 [ASP.NET 4.5.1 및 Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkID=309094)
+- [ASP.NET 4.5 및 Visual Studio 2012](https://msdn.microsoft.com/library/hh420390(v=vs.110).aspx)
 
-<a name="networking" />
+- [Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보](/aspnet/visual-studio/overview/2013/release-notes)
 
-### <a name="networking"></a>네트워킹
- [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서는 HTTP 응용 프로그램의 새로운 프로그래밍 인터페이스를 제공합니다. 자세한 내용은 새로운 <xref:System.Net.Http?displayProperty=nameWithType> 및 <xref:System.Net.Http.Headers?displayProperty=nameWithType> 네임스페이스를 참조하세요.
+### <a name="networking-a-namenetworking-"></a>네트워킹<a name="networking" />
 
- 기존의 <xref:System.Net.HttpListener> 및 관련 클래스를 사용하여 WebSocket 연결을 허용하고 이와 상호 작용하는 새로운 프로그래밍 인터페이스 지원도 포함되어 있습니다. 자세한 내용은 새로운 <xref:System.Net.WebSockets> 네임스페이스 및 <xref:System.Net.HttpListener> 클래스를 참조하세요.
+[!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서는 HTTP 응용 프로그램의 새로운 프로그래밍 인터페이스를 제공합니다. 자세한 내용은 새로운 <xref:System.Net.Http?displayProperty=nameWithType> 및 <xref:System.Net.Http.Headers?displayProperty=nameWithType> 네임스페이스를 참조하세요.
 
- 또한 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에는 다음 네트워킹 개선 사항이 포함되어 있습니다.
+기존의 <xref:System.Net.HttpListener> 및 관련 클래스를 사용하여 WebSocket 연결을 허용하고 이와 상호 작용하는 새로운 프로그래밍 인터페이스 지원도 포함되어 있습니다. 자세한 내용은 새로운 <xref:System.Net.WebSockets> 네임스페이스 및 <xref:System.Net.HttpListener> 클래스를 참조하세요.
+
+또한 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에는 다음 네트워킹 개선 사항이 포함되어 있습니다.
 
 - RFC 규격 URI 지원. 자세한 내용은 <xref:System.Uri> 및 관련 클래스를 참조하세요.
 
@@ -1875,16 +1905,19 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
  자세한 내용은 [Windows Workflow Foundation의 새로운 기능](https://go.microsoft.com/fwlink/?LinkId=228176)을 참조하십시오.
 
 <a name="tailored" />
-### [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]
- [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램은 특정 폼 팩터용으로 설계되었으며 Windows 운영 체제의 강력한 기능을 활용합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 또는 4.5.1의 하위 집합은 C# 또는 Visual Basic을 사용하여 Windows용 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 빌드하는 데 사용할 수 있습니다. 이 하위 집합을 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]이라고 하며 Windows 개발자 센터의 [개요](https://go.microsoft.com/fwlink/?LinkId=228491)에 설명되어 있습니다.
 
-<a name="portable" />
-### <a name="portable-class-libraries"></a>이식 가능한 클래스 라이브러리
- [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] 및 이후 버전의 이식 가능한 클래스 라이브러리 프로젝트를 사용하여 여러 .NET Framework 플랫폼에서 작동하는 관리되는 어셈블리를 작성하고 빌드할 수 있습니다. 이식 가능한 클래스 라이브러리 프로젝트를 사용하여 대상 플랫폼(예: Windows Phone 및 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)])을 선택합니다. 프로젝트에서 사용할 수 있는 형식 및 멤버는 이러한 플랫폼에서 공용 형식 및 멤버로 자동으로 제한됩니다. 자세한 내용은 [이식 가능한 클래스 라이브러리](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)를 참조하십시오.
+### [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]
+
+[!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램은 특정 폼 팩터용으로 설계되었으며 Windows 운영 체제의 강력한 기능을 활용합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 또는 4.5.1의 하위 집합은 C# 또는 Visual Basic을 사용하여 Windows용 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 빌드하는 데 사용할 수 있습니다. 이 하위 집합을 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]이라고 하며 Windows 개발자 센터의 [개요](https://go.microsoft.com/fwlink/?LinkId=228491)에 설명되어 있습니다.
+
+### <a name="portable-class-libraries-a-nameportable-"></a>이식 가능한 클래스 라이브러리<a name="portable" />
+
+Visual Studio 2012 및 이후 버전의 이식 가능한 클래스 라이브러리 프로젝트를 사용하여 여러 .NET Framework 플랫폼에서 작동하는 관리되는 어셈블리를 작성하고 빌드할 수 있습니다. 이식 가능한 클래스 라이브러리 프로젝트를 사용하여 대상 플랫폼(예: Windows Phone 및 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)])을 선택합니다. 프로젝트에서 사용할 수 있는 형식 및 멤버는 이러한 플랫폼에서 공용 형식 및 멤버로 자동으로 제한됩니다. 자세한 내용은 [이식 가능한 클래스 라이브러리](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)를 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
- [.NET Framework 및 번외 릴리스](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)   
- [.NET Framework에서 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)   
- [Visual Studio 2017의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)   
- [ASP.NET](/aspnet)   
- [Visual C++의 새로운 기능](/cpp/what-s-new-for-visual-cpp-in-visual-studio) 
+
+- [.NET Framework 및 번외 릴리스](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)
+- [.NET Framework에서 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)
+- [Visual Studio 2017의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)
+- [ASP.NET](/aspnet)
+- [Visual C++의 새로운 기능](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

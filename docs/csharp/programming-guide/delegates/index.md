@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, delegates
 - delegates [C#]
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
-ms.openlocfilehash: 3924d070ea012faf33f1d808b92b1328626ef567
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 96de5601c60dd309fe5467414affd20b8bc93d87
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43805457"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584209"
 ---
 # <a name="delegates-c-programming-guide"></a>대리자(C# 프로그래밍 가이드)
 [대리자](../../../csharp/language-reference/keywords/delegate.md)는 특정 매개 변수 목록 및 반환 형식이 있는 메서드에 대한 참조를 나타내는 형식입니다. 대리자를 인스턴스화하면 모든 메서드가 있는 인스턴스를 호환되는 시그니처 및 반환 형식에 연결할 수 있습니다. 대리자 인스턴스를 통해 메서드를 호출할 수 있습니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "43805457"
 ## <a name="delegates-overview"></a>대리자 개요  
  대리자에는 다음과 같은 속성이 있습니다.  
   
--   대리자는 C++의 함수 포인터와 유사하지만 형식이 안전합니다.  
+-   대리자는 C++ 함수 포인터와 유사하지만 C++ 함수 포인터와 달리 멤버 함수에 대해 완전히 개체 지향입니다. 대리자는 개체 인스턴스 및 메서드를 모두 캡슐화합니다.
   
 -   대리자를 통해 메서드를 매개 변수로 전달할 수 있습니다.  
   
