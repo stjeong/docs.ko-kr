@@ -1,20 +1,20 @@
 ---
 title: 비동기 프로그래밍
-ms.date: 03/30/2017
+ms.date: 10/18/2018
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-ms.openlocfilehash: 0c5c3f52f6afa0e1fa48d33167feabeb8d5b76f5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0c16fecc9e79f36c122c13909be0eeba848b7c20
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123659"
 ---
-# <a name="asynchronous-programming"></a><span data-ttu-id="3643d-102">비동기 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="3643d-102">Asynchronous Programming</span></span>
+# <a name="asynchronous-programming"></a><span data-ttu-id="d4842-102">비동기 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="d4842-102">Asynchronous Programming</span></span>
 
-<span data-ttu-id="3643d-103">이 항목에서는의 비동기 프로그래밍에 대 한 지원을 설명 합니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 에 도입 된 비동기 프로그래밍 기능을 지원 하려고 하는 향상 된 기능을 비롯 하 여 SQL Server (SqlClient)에 대 한 데이터 공급자 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-103">This topic discusses support for asynchronous programming in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (SqlClient) including enhancements made to support asynchronous programming functionality that was introduced in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].</span></span>  
+<span data-ttu-id="d4842-103">이 항목에서는의 비동기 프로그래밍에 대 한 지원을 설명 합니다 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 에 도입 된 비동기 프로그래밍 기능을 지원 하려고 하는 향상 된 기능을 비롯 하 여 SQL Server (SqlClient)에 대 한 데이터 공급자 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-103">This topic discusses support for asynchronous programming in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (SqlClient) including enhancements made to support asynchronous programming functionality that was introduced in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].</span></span>  
   
-## <a name="legacy-asynchronous-programming"></a><span data-ttu-id="3643d-104">레거시 비동기 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="3643d-104">Legacy Asynchronous Programming</span></span>  
- <span data-ttu-id="3643d-105">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 이전에 SqlClient의 비동기 프로그래밍은 다음 메서드 및 `Asynchronous Processing=true` 연결 속성을 사용하여 수행되었습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-105">Prior to [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:</span></span>  
+## <a name="legacy-asynchronous-programming"></a><span data-ttu-id="d4842-104">레거시 비동기 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="d4842-104">Legacy Asynchronous Programming</span></span>  
+ <span data-ttu-id="d4842-105">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 이전에 SqlClient의 비동기 프로그래밍은 다음 메서드 및 `Asynchronous Processing=true` 연결 속성을 사용하여 수행되었습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-105">Prior to [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:</span></span>  
   
 1.  <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A?displayProperty=nameWithType>  
   
@@ -22,35 +22,36 @@ ms.locfileid: "43504977"
   
 3.  <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>  
   
- <span data-ttu-id="3643d-106">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서 이 기능은 SqlClient에 남아 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-106">This functionality remains in SqlClient in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].</span></span>  
-  
- <span data-ttu-id="3643d-107">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]부터는 더 이상 이러한 메서드를 사용하기 위해 연결 문자열에서 `Asynchronous Processing=true`를 지정할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-107">Beginning in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], these methods no longer require `Asynchronous Processing=true` in the connection string.</span></span>  
-  
-## <a name="asynchronous-programming-features-added-in-includenetv45includesnet-v45-mdmd"></a><span data-ttu-id="3643d-108">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에 추가된 비동기 프로그래밍 기능</span><span class="sxs-lookup"><span data-stu-id="3643d-108">Asynchronous Programming Features Added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]</span></span>  
- <span data-ttu-id="3643d-109">새로운 비동기 프로그래밍 기능에서는 코드를 비동기화하는 간단한 기술을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-109">The new asynchronous programming feature provides a simple technique to make code asynchronous.</span></span>  
-  
- <span data-ttu-id="3643d-110">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서 도입된 비동기 프로그래밍 기능에 대한 자세한 내용은 다음을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3643d-110">For more information about the asynchronous programming feature that was introduced in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], see:</span></span>  
-  
-- [<span data-ttu-id="3643d-111">C#의 비동기 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="3643d-111">Asynchronous programming in C#</span></span>](../../../csharp/async.md)
+ <span data-ttu-id="d4842-106">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서 이 기능은 SqlClient에 남아 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-106">This functionality remains in SqlClient in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].</span></span>  
 
-- [<span data-ttu-id="3643d-112">Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="3643d-112">Asynchronous Programming with Async and Await (Visual Basic)</span></span>](../../../visual-basic/programming-guide/concepts/async/index.md)
+> [!TIP]
+> <span data-ttu-id="d4842-107">부터 합니다 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], 이러한 레거시 메서드에 더 이상 필요 합니다. `Asynchronous Processing=true` 연결 문자열에 없습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-107">Beginning in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], these legacy methods no longer require `Asynchronous Processing=true` in the connection string.</span></span>  
+  
+## <a name="asynchronous-programming-features-added-in-includenetv45includesnet-v45-mdmd"></a><span data-ttu-id="d4842-108">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에 추가된 비동기 프로그래밍 기능</span><span class="sxs-lookup"><span data-stu-id="d4842-108">Asynchronous Programming Features Added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]</span></span>  
+ <span data-ttu-id="d4842-109">새로운 비동기 프로그래밍 기능에서는 코드를 비동기화하는 간단한 기술을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-109">The new asynchronous programming feature provides a simple technique to make code asynchronous.</span></span>  
+  
+ <span data-ttu-id="d4842-110">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서 도입된 비동기 프로그래밍 기능에 대한 자세한 내용은 다음을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="d4842-110">For more information about the asynchronous programming feature that was introduced in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], see:</span></span>  
+  
+- [<span data-ttu-id="d4842-111">C#의 비동기 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="d4842-111">Asynchronous programming in C#</span></span>](../../../csharp/async.md)
 
-- [<span data-ttu-id="3643d-113">.NET (1 부) 4.5에서에서 SqlDataReader의 새로운 비동기 메서드를 사용 하 여</span><span class="sxs-lookup"><span data-stu-id="3643d-113">Using SqlDataReader’s new async methods in .Net 4.5 (Part 1)</span></span>](https://blogs.msdn.microsoft.com/adonet/2012/04/20/using-sqldatareaders-new-async-methods-in-net-4-5/)
+- [<span data-ttu-id="d4842-112">Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="d4842-112">Asynchronous Programming with Async and Await (Visual Basic)</span></span>](../../../visual-basic/programming-guide/concepts/async/index.md)
 
-- [<span data-ttu-id="3643d-114">.NET (2 부) 4.5에서에서 SqlDataReader의 새로운 비동기 메서드를 사용 하 여</span><span class="sxs-lookup"><span data-stu-id="3643d-114">Using SqlDataReader’s new async methods in .Net 4.5 (Part 2)</span></span>](https://blogs.msdn.microsoft.com/adonet/2012/07/15/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples/)
+- [<span data-ttu-id="d4842-113">.NET (1 부) 4.5에서에서 SqlDataReader의 새로운 비동기 메서드를 사용 하 여</span><span class="sxs-lookup"><span data-stu-id="d4842-113">Using SqlDataReader’s new async methods in .Net 4.5 (Part 1)</span></span>](https://blogs.msdn.microsoft.com/adonet/2012/04/20/using-sqldatareaders-new-async-methods-in-net-4-5/)
+
+- [<span data-ttu-id="d4842-114">.NET (2 부) 4.5에서에서 SqlDataReader의 새로운 비동기 메서드를 사용 하 여</span><span class="sxs-lookup"><span data-stu-id="d4842-114">Using SqlDataReader’s new async methods in .Net 4.5 (Part 2)</span></span>](https://blogs.msdn.microsoft.com/adonet/2012/07/15/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples/)
  
- <span data-ttu-id="3643d-115">사용자 인터페이스가 응답하지 않거나 서버가 확장되지 않을 경우 코드를 좀 더 비동기화해야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-115">When your user interface is unresponsive or your server does not scale, it is likely that you need your code to be more asynchronous.</span></span>  <span data-ttu-id="3643d-116">기존에는 비동기 코드를 작성하려면 비동기 작업이 완료될 때 발생하는 논리를 표현하기 위한 콜백 설치 과정(연속이라고도 함)이 필요했습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-116">Writing asynchronous code has traditionally involved installing a callback (also called continuation) to express the logic that occurs after the asynchronous operation finishes.</span></span> <span data-ttu-id="3643d-117">이로 인해 비동기 코드의 구조는 동기 코드에 비해 복잡했습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-117">This complicates the structure of asynchronous code as compared with synchronous code.</span></span>  
+ <span data-ttu-id="d4842-115">사용자 인터페이스가 응답하지 않거나 서버가 확장되지 않을 경우 코드를 좀 더 비동기화해야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-115">When your user interface is unresponsive or your server does not scale, it is likely that you need your code to be more asynchronous.</span></span>  <span data-ttu-id="d4842-116">기존에는 비동기 코드를 작성하려면 비동기 작업이 완료될 때 발생하는 논리를 표현하기 위한 콜백 설치 과정(연속이라고도 함)이 필요했습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-116">Writing asynchronous code has traditionally involved installing a callback (also called continuation) to express the logic that occurs after the asynchronous operation finishes.</span></span> <span data-ttu-id="d4842-117">이로 인해 비동기 코드의 구조는 동기 코드에 비해 복잡했습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-117">This complicates the structure of asynchronous code as compared with synchronous code.</span></span>  
   
- <span data-ttu-id="3643d-118">이제 콜백을 사용하거나 코드를 분할하지 않고도 여러 메서드나 람다 식에서 비동기 메서드를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-118">You can now call into asynchronous methods without using callbacks, and without splitting your code across multiple methods or lambda expressions.</span></span>  
+ <span data-ttu-id="d4842-118">이제 콜백을 사용하거나 코드를 분할하지 않고도 여러 메서드나 람다 식에서 비동기 메서드를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-118">You can now call into asynchronous methods without using callbacks, and without splitting your code across multiple methods or lambda expressions.</span></span>  
   
- <span data-ttu-id="3643d-119">`async` 한정자는 메서드가 비동기 메서드임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-119">The `async` modifier specifies that a method is asynchronous.</span></span> <span data-ttu-id="3643d-120">`async` 메서드를 호출하면 작업이 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-120">When calling an `async` method, a task is returned.</span></span> <span data-ttu-id="3643d-121">경우는 `await` 연산자가 작업에 적용 되어, 현재 메서드가 즉시 종료 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-121">When the `await` operator is applied to a task, the current method exits immediately.</span></span> <span data-ttu-id="3643d-122">작업이 끝나면 동일한 메서드에서 실행이 재개됩니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-122">When the task finishes, execution resumes in the same method.</span></span>
+ <span data-ttu-id="d4842-119">`async` 한정자는 메서드가 비동기 메서드임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-119">The `async` modifier specifies that a method is asynchronous.</span></span> <span data-ttu-id="d4842-120">`async` 메서드를 호출하면 작업이 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-120">When calling an `async` method, a task is returned.</span></span> <span data-ttu-id="d4842-121">경우는 `await` 연산자가 작업에 적용 되어, 현재 메서드가 즉시 종료 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-121">When the `await` operator is applied to a task, the current method exits immediately.</span></span> <span data-ttu-id="d4842-122">작업이 끝나면 동일한 메서드에서 실행이 재개됩니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-122">When the task finishes, execution resumes in the same method.</span></span>
   
 > [!WARNING]
->  <span data-ttu-id="3643d-123">응용 프로그램에서 `Context Connection` 연결 문자열 키워드도 사용하는 경우에는 비동기 호출이 지원되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-123">Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.</span></span>  
+>  <span data-ttu-id="d4842-123">응용 프로그램에서 `Context Connection` 연결 문자열 키워드도 사용하는 경우에는 비동기 호출이 지원되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-123">Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.</span></span>  
   
- <span data-ttu-id="3643d-124">`async` 메서드를 호출할 때는 추가 스레드가 할당되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-124">Calling an `async` method does not allocate any additional threads.</span></span> <span data-ttu-id="3643d-125">완료 시 기존 I/O 완료 스레드를 잠시 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-125">It may use the existing I/O completion thread briefly at the end.</span></span>  
+ <span data-ttu-id="d4842-124">`async` 메서드를 호출할 때는 추가 스레드가 할당되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-124">Calling an `async` method does not allocate any additional threads.</span></span> <span data-ttu-id="d4842-125">완료 시 기존 I/O 완료 스레드를 잠시 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-125">It may use the existing I/O completion thread briefly at the end.</span></span>  
   
- <span data-ttu-id="3643d-126">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서는 비동기 프로그래밍을 지원하기 위해 다음 메서드가 추가되었습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-126">The following methods were added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] to support asynchronous programming:</span></span>  
+ <span data-ttu-id="d4842-126">[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서는 비동기 프로그래밍을 지원하기 위해 다음 메서드가 추가되었습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-126">The following methods were added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] to support asynchronous programming:</span></span>  
   
 -   <xref:System.Data.Common.DbConnection.OpenAsync%2A?displayProperty=nameWithType>  
   
@@ -86,10 +87,13 @@ ms.locfileid: "43504977"
   
 -   <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>  
   
- <span data-ttu-id="3643d-127">지원 하기 위해 다른 비동기 멤버도 추가 되었습니다 [SqlClient 스트리밍 지원](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-127">Other asynchronous members were added to support [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md).</span></span>  
+ <span data-ttu-id="d4842-127">지원 하기 위해 다른 비동기 멤버도 추가 되었습니다 [SqlClient 스트리밍 지원](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-127">Other asynchronous members were added to support [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md).</span></span>  
+
+> [!TIP]
+> <span data-ttu-id="d4842-128">새로운 비동기 메서드와 않아도 `Asynchronous Processing=true` 연결 문자열에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-128">The new asynchronous methods don't require `Asynchronous Processing=true` in the connection string.</span></span>  
   
-### <a name="synchronous-to-asynchronous-connection-open"></a><span data-ttu-id="3643d-128">비동기에서 동기로의 연결 열기</span><span class="sxs-lookup"><span data-stu-id="3643d-128">Synchronous to Asynchronous Connection Open</span></span>  
- <span data-ttu-id="3643d-129">새 비동기 기능을 사용하도록 기존 응용 프로그램을 업그레이드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-129">You can upgrade an existing application to use the new asynchronous feature.</span></span> <span data-ttu-id="3643d-130">예를 들어 응용 프로그램이 동기 연결 알고리즘을 사용하며, 데이터베이스에 연결할 때마다 UI 스레드를 차단하고 연결 후에는 방금 로그인한 사용자를 다른 사용자에게 알리는 저장 프로시저를 호출한다고 가정해 봅니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-130">For example, assume an application has a synchronous connection algorithm and blocks the UI thread every time it connects to the database and, once connected, the application calls a stored procedure that signals other users of the one who just signed in.</span></span>  
+### <a name="synchronous-to-asynchronous-connection-open"></a><span data-ttu-id="d4842-129">비동기에서 동기로의 연결 열기</span><span class="sxs-lookup"><span data-stu-id="d4842-129">Synchronous to Asynchronous Connection Open</span></span>  
+ <span data-ttu-id="d4842-130">새 비동기 기능을 사용하도록 기존 응용 프로그램을 업그레이드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-130">You can upgrade an existing application to use the new asynchronous feature.</span></span> <span data-ttu-id="d4842-131">예를 들어 응용 프로그램이 동기 연결 알고리즘을 사용하며, 데이터베이스에 연결할 때마다 UI 스레드를 차단하고 연결 후에는 방금 로그인한 사용자를 다른 사용자에게 알리는 저장 프로시저를 호출한다고 가정해 봅니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-131">For example, assume an application has a synchronous connection algorithm and blocks the UI thread every time it connects to the database and, once connected, the application calls a stored procedure that signals other users of the one who just signed in.</span></span>  
   
 ```csharp
 using SqlConnection conn = new SqlConnection("…");  
@@ -102,7 +106,7 @@ using SqlConnection conn = new SqlConnection("…");
 }  
 ```  
   
- <span data-ttu-id="3643d-131">새로운 비동기 기능을 사용하도록 변환할 경우 프로그램은 다음과 같이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-131">When converted to use the new asynchronous functionality, the program would look like:</span></span>  
+ <span data-ttu-id="d4842-132">새로운 비동기 기능을 사용하도록 변환할 경우 프로그램은 다음과 같이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-132">When converted to use the new asynchronous functionality, the program would look like:</span></span>  
   
 ```csharp
 using System;  
@@ -131,8 +135,8 @@ class A {
 }  
 ```  
   
-### <a name="adding-the-new-asynchronous-feature-in-an-existing-application-mixing-old-and-new-patterns"></a><span data-ttu-id="3643d-132">기존 응용 프로그램에 새로운 비동기 기능 추가(기존 패턴과 새 패턴 혼합)</span><span class="sxs-lookup"><span data-stu-id="3643d-132">Adding the New Asynchronous Feature in an Existing Application (Mixing Old and New Patterns)</span></span>  
- <span data-ttu-id="3643d-133">기존 비동기 논리를 변경하지 않고 새로운 비동기 기능(SqlConnection::OpenAsync)을 추가할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-133">It is also possible to add new asynchronous capability (SqlConnection::OpenAsync) without changing the existing asynchronous logic.</span></span> <span data-ttu-id="3643d-134">예를 들어 응용 프로그램에서 현재 다음과 같은 알고리즘을 사용한다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-134">For example, if an application currently uses:</span></span>  
+### <a name="adding-the-new-asynchronous-feature-in-an-existing-application-mixing-old-and-new-patterns"></a><span data-ttu-id="d4842-133">기존 응용 프로그램에 새로운 비동기 기능 추가(기존 패턴과 새 패턴 혼합)</span><span class="sxs-lookup"><span data-stu-id="d4842-133">Adding the New Asynchronous Feature in an Existing Application (Mixing Old and New Patterns)</span></span>  
+ <span data-ttu-id="d4842-134">기존 비동기 논리를 변경하지 않고 새로운 비동기 기능(SqlConnection::OpenAsync)을 추가할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-134">It is also possible to add new asynchronous capability (SqlConnection::OpenAsync) without changing the existing asynchronous logic.</span></span> <span data-ttu-id="d4842-135">예를 들어 응용 프로그램에서 현재 다음과 같은 알고리즘을 사용한다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-135">For example, if an application currently uses:</span></span>  
   
 ```csharp
 AsyncCallback productList = new AsyncCallback(ProductList);  
@@ -142,7 +146,7 @@ SqlCommand cmd = new SqlCommand("SELECT * FROM [Current Product List]", conn);
 IAsyncResult ia = cmd.BeginExecuteReader(productList, cmd);  
 ```  
   
- <span data-ttu-id="3643d-135">이 기존 알고리즘을 크게 변경하지 않고도 새로운 비동기 패턴을 사용하기 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-135">You can begin to use the new asynchronous pattern without substantially changing the existing algorithm.</span></span>  
+ <span data-ttu-id="d4842-136">이 기존 알고리즘을 크게 변경하지 않고도 새로운 비동기 패턴을 사용하기 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-136">You can begin to use the new asynchronous pattern without substantially changing the existing algorithm.</span></span>  
   
 ```csharp
 using System;  
@@ -169,10 +173,10 @@ class A {
 }  
 ```  
   
-### <a name="using-the-base-provider-model-and-the-new-asynchronous-feature"></a><span data-ttu-id="3643d-136">기본 공급자 모델 및 새로운 비동기 기능 사용</span><span class="sxs-lookup"><span data-stu-id="3643d-136">Using the Base Provider Model and the New Asynchronous Feature</span></span>  
- <span data-ttu-id="3643d-137">다른 데이터베이스에 연결하고 쿼리를 실행할 수 있는 도구를 만들어야 하는 경우가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-137">You may need to create a tool that is able to connect to different databases and execute queries.</span></span> <span data-ttu-id="3643d-138">이러한 경우 기본 공급자 모델과 새로운 비동기 기능을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-138">You can use the base provider model and the new asynchronous feature.</span></span>  
+### <a name="using-the-base-provider-model-and-the-new-asynchronous-feature"></a><span data-ttu-id="d4842-137">기본 공급자 모델 및 새로운 비동기 기능 사용</span><span class="sxs-lookup"><span data-stu-id="d4842-137">Using the Base Provider Model and the New Asynchronous Feature</span></span>  
+ <span data-ttu-id="d4842-138">다른 데이터베이스에 연결하고 쿼리를 실행할 수 있는 도구를 만들어야 하는 경우가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-138">You may need to create a tool that is able to connect to different databases and execute queries.</span></span> <span data-ttu-id="d4842-139">이러한 경우 기본 공급자 모델과 새로운 비동기 기능을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-139">You can use the base provider model and the new asynchronous feature.</span></span>  
   
- <span data-ttu-id="3643d-139">서버에서 분산 트랜잭션을 사용하기 위해 MSDTC(Microsoft Distributed Transaction Coordinator)를 사용하도록 설정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-139">The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions.</span></span> <span data-ttu-id="3643d-140">MSDTC를 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [웹 서버에서 MSDTC를 사용 하는 방법을](https://msdn.microsoft.com/library/dd327979.aspx)합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-140">For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](https://msdn.microsoft.com/library/dd327979.aspx).</span></span>  
+ <span data-ttu-id="d4842-140">서버에서 분산 트랜잭션을 사용하기 위해 MSDTC(Microsoft Distributed Transaction Coordinator)를 사용하도록 설정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-140">The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions.</span></span> <span data-ttu-id="d4842-141">MSDTC를 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [웹 서버에서 MSDTC를 사용 하는 방법을](https://msdn.microsoft.com/library/dd327979.aspx)합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-141">For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](https://msdn.microsoft.com/library/dd327979.aspx).</span></span>  
   
 ```csharp
 using System;  
@@ -217,7 +221,7 @@ class A {
 }  
 ```  
   
-### <a name="using-sql-transactions-and-the-new-asynchronous-feature"></a><span data-ttu-id="3643d-141">SQL 트랜잭션 및 새로운 비동기 기능 사용</span><span class="sxs-lookup"><span data-stu-id="3643d-141">Using SQL Transactions and the New Asynchronous Feature</span></span>  
+### <a name="using-sql-transactions-and-the-new-asynchronous-feature"></a><span data-ttu-id="d4842-142">SQL 트랜잭션 및 새로운 비동기 기능 사용</span><span class="sxs-lookup"><span data-stu-id="d4842-142">Using SQL Transactions and the New Asynchronous Feature</span></span>  
   
 ```csharp
 using System;  
@@ -283,8 +287,8 @@ class Program {
 }  
 ```  
   
-### <a name="using-sql-transactions-and-the-new-asynchronous-feature"></a><span data-ttu-id="3643d-142">SQL 트랜잭션 및 새로운 비동기 기능 사용</span><span class="sxs-lookup"><span data-stu-id="3643d-142">Using SQL Transactions and the New Asynchronous Feature</span></span>  
- <span data-ttu-id="3643d-143">엔터프라이즈 응용 프로그램의 경우 일부 시나리오에서 분산 트랜잭션을 추가하여 여러 데이터베이스 서버 간에 트랜잭션을 사용하도록 설정해야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-143">In an enterprise application, you may need to add distributed transactions in some scenarios, to enable transactions between multiple database servers.</span></span> <span data-ttu-id="3643d-144">다음과 같이 System.Transactions 네임스페이스를 사용하고 분산 트랜잭션을 등록할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-144">You can use the System.Transactions namespace and enlist a distributed transaction, as follows:</span></span>  
+### <a name="using-sql-transactions-and-the-new-asynchronous-feature"></a><span data-ttu-id="d4842-143">SQL 트랜잭션 및 새로운 비동기 기능 사용</span><span class="sxs-lookup"><span data-stu-id="d4842-143">Using SQL Transactions and the New Asynchronous Feature</span></span>  
+ <span data-ttu-id="d4842-144">엔터프라이즈 응용 프로그램의 경우 일부 시나리오에서 분산 트랜잭션을 추가하여 여러 데이터베이스 서버 간에 트랜잭션을 사용하도록 설정해야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-144">In an enterprise application, you may need to add distributed transactions in some scenarios, to enable transactions between multiple database servers.</span></span> <span data-ttu-id="d4842-145">다음과 같이 System.Transactions 네임스페이스를 사용하고 분산 트랜잭션을 등록할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-145">You can use the System.Transactions namespace and enlist a distributed transaction, as follows:</span></span>  
   
 ```csharp
 using System;  
@@ -344,8 +348,8 @@ class Program {
 }  
 ```  
   
-### <a name="cancelling-an-asynchronous-operation"></a><span data-ttu-id="3643d-145">비동기 작업 취소</span><span class="sxs-lookup"><span data-stu-id="3643d-145">Cancelling an Asynchronous Operation</span></span>  
- <span data-ttu-id="3643d-146"><xref:System.Threading.CancellationToken>을 사용하여 비동기 요청을 취소할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-146">You can cancel an asynchronous request by using the <xref:System.Threading.CancellationToken>.</span></span>  
+### <a name="cancelling-an-asynchronous-operation"></a><span data-ttu-id="d4842-146">비동기 작업 취소</span><span class="sxs-lookup"><span data-stu-id="d4842-146">Cancelling an Asynchronous Operation</span></span>  
+ <span data-ttu-id="d4842-147"><xref:System.Threading.CancellationToken>을 사용하여 비동기 요청을 취소할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-147">You can cancel an asynchronous request by using the <xref:System.Threading.CancellationToken>.</span></span>  
   
 ```csharp
 using System;  
@@ -384,8 +388,8 @@ namespace Samples {
 }  
 ```  
   
-### <a name="asynchronous-operations-with-sqlbulkcopy"></a><span data-ttu-id="3643d-147">SqlBulkCopy의 비동기 작업</span><span class="sxs-lookup"><span data-stu-id="3643d-147">Asynchronous Operations with SqlBulkCopy</span></span>  
- <span data-ttu-id="3643d-148"><xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType>에도 <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>를 통해 비동기 기능이 추가되었습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-148">Asynchronous capabilities were also added to <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType> with <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>.</span></span>  
+### <a name="asynchronous-operations-with-sqlbulkcopy"></a><span data-ttu-id="d4842-148">SqlBulkCopy의 비동기 작업</span><span class="sxs-lookup"><span data-stu-id="d4842-148">Asynchronous Operations with SqlBulkCopy</span></span>  
+ <span data-ttu-id="d4842-149"><xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType>에도 <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>를 통해 비동기 기능이 추가되었습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-149">Asynchronous capabilities were also added to <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType> with <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>.</span></span>  
   
 ```csharp
 using System;  
@@ -626,11 +630,11 @@ namespace SqlBulkCopyAsyncCodeSample {
 }  
 ```  
   
-## <a name="asynchronously-using-multiple-commands-with-mars"></a><span data-ttu-id="3643d-149">MARS를 사용하여 여러 명령을 비동기적으로 사용</span><span class="sxs-lookup"><span data-stu-id="3643d-149">Asynchronously Using Multiple Commands with MARS</span></span>  
- <span data-ttu-id="3643d-150">이 예제에서는 단일 연결을 엽니다는 **AdventureWorks** 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-150">The example opens a single connection to the **AdventureWorks** database.</span></span> <span data-ttu-id="3643d-151"><xref:System.Data.SqlClient.SqlCommand> 개체를 사용하면 <xref:System.Data.SqlClient.SqlDataReader>가 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-151">Using a <xref:System.Data.SqlClient.SqlCommand> object, a <xref:System.Data.SqlClient.SqlDataReader> is created.</span></span> <span data-ttu-id="3643d-152">판독기를 사용하면 두 번째 <xref:System.Data.SqlClient.SqlDataReader>가 열리고 첫 번째 <xref:System.Data.SqlClient.SqlDataReader>의 데이터가 두 번째 판독기의 WHERE 절에 대한 입력으로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-152">As the reader is used, a second <xref:System.Data.SqlClient.SqlDataReader> is opened, using data from the first <xref:System.Data.SqlClient.SqlDataReader> as input to the WHERE clause for the second reader.</span></span>  
+## <a name="asynchronously-using-multiple-commands-with-mars"></a><span data-ttu-id="d4842-150">MARS를 사용하여 여러 명령을 비동기적으로 사용</span><span class="sxs-lookup"><span data-stu-id="d4842-150">Asynchronously Using Multiple Commands with MARS</span></span>  
+ <span data-ttu-id="d4842-151">이 예제에서는 단일 연결을 엽니다는 **AdventureWorks** 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-151">The example opens a single connection to the **AdventureWorks** database.</span></span> <span data-ttu-id="d4842-152"><xref:System.Data.SqlClient.SqlCommand> 개체를 사용하면 <xref:System.Data.SqlClient.SqlDataReader>가 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-152">Using a <xref:System.Data.SqlClient.SqlCommand> object, a <xref:System.Data.SqlClient.SqlDataReader> is created.</span></span> <span data-ttu-id="d4842-153">판독기를 사용하면 두 번째 <xref:System.Data.SqlClient.SqlDataReader>가 열리고 첫 번째 <xref:System.Data.SqlClient.SqlDataReader>의 데이터가 두 번째 판독기의 WHERE 절에 대한 입력으로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-153">As the reader is used, a second <xref:System.Data.SqlClient.SqlDataReader> is opened, using data from the first <xref:System.Data.SqlClient.SqlDataReader> as input to the WHERE clause for the second reader.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="3643d-153">다음 예제에서는 샘플 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-153">The following example uses the sample **AdventureWorks** database included with SQL Server.</span></span> <span data-ttu-id="3643d-154">샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-154">The connection string provided in the sample code assumes that the database is installed and available on the local computer.</span></span> <span data-ttu-id="3643d-155">사용자 환경의 필요에 따라 연결 문자열을 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-155">Modify the connection string as necessary for your environment.</span></span>  
+>  <span data-ttu-id="d4842-154">다음 예제에서는 샘플 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-154">The following example uses the sample **AdventureWorks** database included with SQL Server.</span></span> <span data-ttu-id="d4842-155">샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-155">The connection string provided in the sample code assumes that the database is installed and available on the local computer.</span></span> <span data-ttu-id="d4842-156">사용자 환경의 필요에 따라 연결 문자열을 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-156">Modify the connection string as necessary for your environment.</span></span>  
   
 ```csharp
 using System;  
@@ -696,13 +700,13 @@ class Class1 {
 }  
 ```  
   
-## <a name="asynchronously-reading-and-updating-data-with-mars"></a><span data-ttu-id="3643d-156">MARS를 사용하여 비동기적으로 데이터 읽기 및 업데이트</span><span class="sxs-lookup"><span data-stu-id="3643d-156">Asynchronously Reading and Updating Data with MARS</span></span>  
- <span data-ttu-id="3643d-157">MARS를 사용하면 하나의 연결을 둘 이상의 보류 중인 작업과 함께 읽기 작업 및 DML(데이터 조작 언어) 작업 모두에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-157">MARS allows a connection to be used for both read operations and data manipulation language (DML) operations with more than one pending operation.</span></span> <span data-ttu-id="3643d-158">이 기능을 사용하면 응용 프로그램에서 연결 사용 오류를 처리할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-158">This feature eliminates the need for an application to deal with connection-busy errors.</span></span> <span data-ttu-id="3643d-159">또한 MARS는 일반적으로 더 많은 리소스를 사용하는 서버측 커서의 사용자를 대체할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-159">In addition, MARS can replace the user of server-side cursors, which generally consume more resources.</span></span> <span data-ttu-id="3643d-160">마지막으로, 단일 연결에서 여러 작업 실행 될 수, 있으므로 사용 하지 않아도 동일한 트랜잭션 컨텍스트를 공유할 수 있습니다 **sp_getbindtoken** 하 고 **sp_bindsession** 시스템 저장 절차입니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-160">Finally, because multiple operations can operate on a single connection, they can share the same transaction context, eliminating the need to use **sp_getbindtoken** and **sp_bindsession** system stored procedures.</span></span>  
+## <a name="asynchronously-reading-and-updating-data-with-mars"></a><span data-ttu-id="d4842-157">MARS를 사용하여 비동기적으로 데이터 읽기 및 업데이트</span><span class="sxs-lookup"><span data-stu-id="d4842-157">Asynchronously Reading and Updating Data with MARS</span></span>  
+ <span data-ttu-id="d4842-158">MARS를 사용하면 하나의 연결을 둘 이상의 보류 중인 작업과 함께 읽기 작업 및 DML(데이터 조작 언어) 작업 모두에 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-158">MARS allows a connection to be used for both read operations and data manipulation language (DML) operations with more than one pending operation.</span></span> <span data-ttu-id="d4842-159">이 기능을 사용하면 응용 프로그램에서 연결 사용 오류를 처리할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-159">This feature eliminates the need for an application to deal with connection-busy errors.</span></span> <span data-ttu-id="d4842-160">또한 MARS는 일반적으로 더 많은 리소스를 사용하는 서버측 커서의 사용자를 대체할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-160">In addition, MARS can replace the user of server-side cursors, which generally consume more resources.</span></span> <span data-ttu-id="d4842-161">마지막으로, 단일 연결에서 여러 작업 실행 될 수, 있으므로 사용 하지 않아도 동일한 트랜잭션 컨텍스트를 공유할 수 있습니다 **sp_getbindtoken** 하 고 **sp_bindsession** 시스템 저장 절차입니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-161">Finally, because multiple operations can operate on a single connection, they can share the same transaction context, eliminating the need to use **sp_getbindtoken** and **sp_bindsession** system stored procedures.</span></span>  
   
- <span data-ttu-id="3643d-161">다음 콘솔 응용 프로그램에서는 두 개의 <xref:System.Data.SqlClient.SqlDataReader> 개체와 MARS가 활성화된 세 개의 <xref:System.Data.SqlClient.SqlCommand> 개체 및 하나의 <xref:System.Data.SqlClient.SqlConnection> 개체를 함께 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-161">The following Console application demonstrates how to use two <xref:System.Data.SqlClient.SqlDataReader> objects with three <xref:System.Data.SqlClient.SqlCommand> objects and a single <xref:System.Data.SqlClient.SqlConnection> object with MARS enabled.</span></span> <span data-ttu-id="3643d-162">첫 번째 명령 개체에서는 신용 등급이 5인 공급업체 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-162">The first command object retrieves a list of vendors whose credit rating is 5.</span></span> <span data-ttu-id="3643d-163">두 번째 명령 개체는 <xref:System.Data.SqlClient.SqlDataReader>에서 제공한 공급업체 ID를 사용하여 두 번째 <xref:System.Data.SqlClient.SqlDataReader>와 함께 특정 공급업체의 모든 제품을 로드합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-163">The second command object uses the vendor ID provided from a <xref:System.Data.SqlClient.SqlDataReader> to load the second <xref:System.Data.SqlClient.SqlDataReader> with all of the products for the particular vendor.</span></span> <span data-ttu-id="3643d-164">각 제품 레코드에는 두 번째 <xref:System.Data.SqlClient.SqlDataReader>에서 액세스합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-164">Each product record is visited by the second <xref:System.Data.SqlClient.SqlDataReader>.</span></span> <span data-ttu-id="3643d-165">새로운 결정할 계산을 수행 **OnOrderQty** 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-165">A calculation is performed to determine what the new **OnOrderQty** should be.</span></span> <span data-ttu-id="3643d-166">세 번째 명령 개체는 다음 업데이트 하는 데는 **ProductVendor** 새 값이 있는 테이블입니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-166">The third command object is then used to update the **ProductVendor** table with the new value.</span></span> <span data-ttu-id="3643d-167">이 전체 프로세스가 단일 트랜잭션에서 발생하며 프로세스가 끝나면 롤백됩니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-167">This entire process takes place within a single transaction, which is rolled back at the end.</span></span>  
+ <span data-ttu-id="d4842-162">다음 콘솔 응용 프로그램에서는 두 개의 <xref:System.Data.SqlClient.SqlDataReader> 개체와 MARS가 활성화된 세 개의 <xref:System.Data.SqlClient.SqlCommand> 개체 및 하나의 <xref:System.Data.SqlClient.SqlConnection> 개체를 함께 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-162">The following Console application demonstrates how to use two <xref:System.Data.SqlClient.SqlDataReader> objects with three <xref:System.Data.SqlClient.SqlCommand> objects and a single <xref:System.Data.SqlClient.SqlConnection> object with MARS enabled.</span></span> <span data-ttu-id="d4842-163">첫 번째 명령 개체에서는 신용 등급이 5인 공급업체 목록을 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-163">The first command object retrieves a list of vendors whose credit rating is 5.</span></span> <span data-ttu-id="d4842-164">두 번째 명령 개체는 <xref:System.Data.SqlClient.SqlDataReader>에서 제공한 공급업체 ID를 사용하여 두 번째 <xref:System.Data.SqlClient.SqlDataReader>와 함께 특정 공급업체의 모든 제품을 로드합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-164">The second command object uses the vendor ID provided from a <xref:System.Data.SqlClient.SqlDataReader> to load the second <xref:System.Data.SqlClient.SqlDataReader> with all of the products for the particular vendor.</span></span> <span data-ttu-id="d4842-165">각 제품 레코드에는 두 번째 <xref:System.Data.SqlClient.SqlDataReader>에서 액세스합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-165">Each product record is visited by the second <xref:System.Data.SqlClient.SqlDataReader>.</span></span> <span data-ttu-id="d4842-166">새로운 결정할 계산을 수행 **OnOrderQty** 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-166">A calculation is performed to determine what the new **OnOrderQty** should be.</span></span> <span data-ttu-id="d4842-167">세 번째 명령 개체는 다음 업데이트 하는 데는 **ProductVendor** 새 값이 있는 테이블입니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-167">The third command object is then used to update the **ProductVendor** table with the new value.</span></span> <span data-ttu-id="d4842-168">이 전체 프로세스가 단일 트랜잭션에서 발생하며 프로세스가 끝나면 롤백됩니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-168">This entire process takes place within a single transaction, which is rolled back at the end.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="3643d-168">다음 예제에서는 샘플 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-168">The following example uses the sample **AdventureWorks** database included with SQL Server.</span></span> <span data-ttu-id="3643d-169">샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-169">The connection string provided in the sample code assumes that the database is installed and available on the local computer.</span></span> <span data-ttu-id="3643d-170">사용자 환경의 필요에 따라 연결 문자열을 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="3643d-170">Modify the connection string as necessary for your environment.</span></span>  
+>  <span data-ttu-id="d4842-169">다음 예제에서는 샘플 **AdventureWorks** SQL Server에 포함 된 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-169">The following example uses the sample **AdventureWorks** database included with SQL Server.</span></span> <span data-ttu-id="d4842-170">샘플 코드에 제공된 연결 문자열은 데이터베이스가 로컬 컴퓨터에 설치되었으며 사용 가능하다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-170">The connection string provided in the sample code assumes that the database is installed and available on the local computer.</span></span> <span data-ttu-id="d4842-171">사용자 환경의 필요에 따라 연결 문자열을 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="d4842-171">Modify the connection string as necessary for your environment.</span></span>  
   
 ```csharp
 using System;  
@@ -812,5 +816,5 @@ class Program {
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="3643d-171">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3643d-171">See Also</span></span>  
- [<span data-ttu-id="3643d-172">ADO.NET에서 데이터 검색 및 수정</span><span class="sxs-lookup"><span data-stu-id="3643d-172">Retrieving and Modifying Data in ADO.NET</span></span>](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+## <a name="see-also"></a><span data-ttu-id="d4842-172">참고 항목</span><span class="sxs-lookup"><span data-stu-id="d4842-172">See Also</span></span>  
+ [<span data-ttu-id="d4842-173">ADO.NET에서 데이터 검색 및 수정</span><span class="sxs-lookup"><span data-stu-id="d4842-173">Retrieving and Modifying Data in ADO.NET</span></span>](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
