@@ -12,23 +12,23 @@ helpviewer_keywords:
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4c95074190419dd3e984c7659ede917b83b97f08
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 20dc7caa9e4c3e023bf2848b1dd8c63a9b94a01b
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524718"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47170011"
 ---
 # <a name="developer-command-prompt-for-visual-studio"></a>Visual Studio용 개발자 명령 프롬프트
 
-Visual Studio용 개발자 명령 프롬프트는 .NET Framework 도구를 쉽게 사용할 수 있는 환경 변수를 자동으로 설정합니다.
+Visual Studio에 대한 개발자 명령 프롬프트를 통해 .NET Framework 도구를 더 쉽게 사용할 수 있습니다. 이는 특정 환경 변수를 자동으로 설정하는 명령 프롬프트입니다.
 
 > [!div class="button"]
 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
-## <a name="searching-for-the-command-prompt-on-your-machine"></a>머신에서 명령 프롬프트 검색
+## <a name="search-for-the-command-prompt-on-your-machine"></a>머신에서 명령 프롬프트 검색
 
-설치한 Visual Studio의 버전과 추가 SDK에 따라 여러 개의 명령 프롬프트가 표시될 수 있습니다. 예를 들어 64비트 버전의 Visual Studio는 32비트 및 64비트 명령 프롬프트를 모두 제공합니다. (32비트 및 64비트 버전의 도구는 대부분 동일하지만, 몇 가지 도구는 32비트 및 64비트 환경에 맞게 변경됩니다.) 다음 단계가 작동하지 않는 경우 [머신에서 수동으로 파일 찾기](#manually-locating-the-files-on-your-machine) 또는 [Visual Studio 내에서 명령 프롬프트 실행](#running-command-prompt-from-inside-visual-studio)을 시도해 볼 수 있습니다.
+설치한 Visual Studio의 버전과 추가 SDK에 따라 여러 개의 명령 프롬프트가 표시될 수 있습니다. 예를 들어 64비트 버전의 Visual Studio는 32비트 및 64비트 명령 프롬프트를 모두 제공합니다. (32비트 및 64비트 버전의 도구는 대부분 동일하지만, 몇 가지 도구는 32비트 및 64비트 환경에 맞게 변경됩니다.) 다음 단계가 작동하지 않는 경우 [머신에서 수동으로 파일 찾기](#manually-locate-the-files-on-your-machine) 또는 [Visual Studio 내에서 명령 프롬프트 실행](#run-the-command-prompt-from-inside-visual-studio)을 시도해 볼 수 있습니다.
 
 ### <a name="in-windows-10"></a>Windows 10
 
@@ -40,7 +40,7 @@ Visual Studio용 개발자 명령 프롬프트는 .NET Framework 도구를 쉽�
 
 1. 키보드에서 Windows 로고 키 ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo")를 눌러 **시작** 화면으로 이동합니다.
 
-2. **시작** 화면에서 `CTRL + TAB`을 눌러 **앱** 목록을 열고 `V` 키를 누릅니다. 그러면 설치된 모든 Visual Studio 명령 프롬프트가 포함된 목록을 가져옵니다.
+2. **시작** 화면에서 **Ctrl**+**Tab**을 눌러 **앱** 목록을 열고 `V`를 입력합니다. 그러면 설치된 모든 Visual Studio 명령 프롬프트가 포함된 목록을 가져옵니다.
 
 3. **개발자 명령 프롬프트**(또는 사용할 명령 프롬프트)를 선택합니다.
 
@@ -66,7 +66,7 @@ Visual Studio용 개발자 명령 프롬프트는 .NET Framework 도구를 쉽�
 
 일반적으로 설치한 명령 프롬프트의 바로 가기는 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools와 같이 Visual Studio에 대한 **시작 메뉴** 폴더에 배치됩니다. 하지만 어떤 이유로 명령 프롬프트를 검색했는데 예상된 결과가 나타나지 않는 경우, 컴퓨터에서 수동으로 바로 가기를 찾을 수 있습니다. *VsDevCmd.bat*와 같은 명령 프롬프트 파일의 이름 검색을 시도하거나 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\Tools와 같은 도구 폴더로 이동합니다(경로는 Visual Studio 버전, 에디션 및 설치 위치에 따라 바뀜).
 
-## <a name="run-command-prompt-from-inside-visual-studio"></a>Visual Studio 내에서 명령 프롬프트 실행
+## <a name="run-the-command-prompt-from-inside-visual-studio"></a>Visual Studio 내에서 명령 프롬프트 실행
 
 Visual Studio 개발자 명령 프롬프트 또는 다른 명령 프롬프트를 Visual Studio의 **도구** 메뉴에 추가하면 쉽게 액세스할 수 있습니다. 도구를 사용 가능하도록 하려면 외부 도구 목록에 추가합니다. 단계는 다음과 같습니다.
 
@@ -87,6 +87,8 @@ Visual Studio 개발자 명령 프롬프트 또는 다른 명령 프롬프트를
 8. **확인** 단추를 선택합니다.
 
    새 메뉴 항목이 추가되고 **도구** 메뉴에서 명령 프롬프트에 액세스할 수 있습니다.
+
+   ![Visual Studio의 명령 프롬프트 메뉴 항목](media/command-prompt-vs-menu.png)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -4,12 +4,12 @@ description: 이식 프로세스를 이해하고 .NET Framework 프로젝트를 
 author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.openlocfilehash: bf4f50ca915f21cdda6b99ae6bdf9e837eca3ae7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d273b3abe46de59aa55b5b9a531d3c572a065124
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33210084"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48835394"
 ---
 # <a name="porting-to-net-core-from-net-framework"></a>.NET Framework에서 .NET Core로 이식
 
@@ -27,7 +27,7 @@ ms.locfileid: "33210084"
 
    그러면 .NET Core에서 특정 API를 지원할 수 없는 경우 .NET Framework 관련 대상에 API 대안을 사용할 수 있습니다.
    
-3. [API Portability Analyzer 도구](https://github.com/Microsoft/dotnet-apiport/)를 사용하여 어셈블리를 분석하고 결과에 따라 이식 계획을 수립합니다.
+3. [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md)를 사용하여 어셈블리를 분석하고 결과에 따라 이식 계획을 수립합니다.
 
    API Portability Analyzer 도구는 컴파일된 어셈블리를 분석하고 상위 수준 이식성 요약 및 .NET Core에서 사용할 수 없는 사용 중인 각 API에 대한 분석 결과를 보여 주는 보고서를 생성합니다.  코드베이스에 대한 분석과 함께 이 보고서를 사용하여 코드를 이식할 방법에 대한 계획을 개발할 수 있습니다.
    

@@ -1,6 +1,6 @@
 ---
 title: EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
-ms.date: 03/30/2017
+ms.date: 09/14/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - wait handles
@@ -9,40 +9,36 @@ helpviewer_keywords:
 ms.assetid: cd94fc34-ac15-427f-b723-a1240a4fab7d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2f61e614696e731a85a030e34aa4356137d9000d
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: be9c858d7c76fdcc1b3e02485eb0b459f4e7555c
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260151"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47205923"
 ---
 # <a name="eventwaithandle-autoresetevent-countdownevent-manualresetevent"></a>EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
-이벤트 대기 핸들을 통해 스레드가 서로 신호를 보내고 상대방의 신호를 대기하여 작업을 동기화할 수 있습니다. 이러한 동기화 이벤트는 Win32 대기 핸들을 기반으로 하고 신호를 보낼 때 자동으로 다시 설정되는 이벤트 및 수동으로 다시 설정되는 이벤트라는 두 가지 유형으로 나눌 수 있습니다.  
+
+이벤트 대기 핸들을 통해 스레드가 서로 신호를 보내고 상대방의 신호를 대기하여 작업을 동기화할 수 있습니다. 이러한 동기화 이벤트는 운영 체제 대기 핸들을 기반으로 하며, 신호를 보낼 때 자동으로 다시 설정되는 이벤트 및 수동으로 다시 설정되는 이벤트라는 두 가지 유형으로 나눌 수 있습니다.  
   
- 이벤트 대기 핸들은 <xref:System.Threading.Monitor> 클래스와 동일한 여러 동기화 시나리오에서 유용합니다. 이벤트 대기 핸들은 대개 <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType> 메서드보다 사용하기가 더 쉬우며 신호 보내기에 대해 더 많은 제어를 제공합니다. 명명된 이벤트 대기 핸들은 응용 프로그램 도메인 및 프로세스에 작업을 동기화하는 데 사용할 수 있습니다. 이 때 모니터는 응용 프로그램 도메인에 대해 로컬입니다.  
+이벤트 대기 핸들은 <xref:System.Threading.Monitor> 클래스와 동일한 여러 동기화 시나리오에서 유용합니다. 이벤트 대기 핸들은 대개 <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType> 및 <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType> 메서드보다 사용하기가 더 쉬우며 신호 보내기에 대해 더 많은 제어를 제공합니다. 명명된 이벤트 대기 핸들은 응용 프로그램 도메인 및 프로세스에 작업을 동기화하는 데 사용할 수 있습니다. 이 때 모니터는 응용 프로그램 도메인에 대해 로컬입니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
- [EventWaitHandle](../../../docs/standard/threading/eventwaithandle.md)  
- <xref:System.Threading.EventWaitHandle> 클래스는 자동 또는 수동 재설정 이벤트를 나타내거나 로컬 이벤트 또는 명명된 시스템 이벤트를 나타낼 수 있습니다.  
+## <a name="in-this-section"></a>단원 내용
+
+ [EventWaitHandle](eventwaithandle.md)  
+ <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType> 클래스는 자동 또는 수동 재설정 이벤트를 나타내거나 로컬 이벤트 또는 명명된 시스템 이벤트를 나타낼 수 있습니다.  
   
- [AutoResetEvent](../../../docs/standard/threading/autoresetevent.md)  
- <xref:System.Threading.AutoResetEvent> 클래스는 <xref:System.Threading.EventWaitHandle>에서 파생되며 자동으로 다시 설정되는 로컬 이벤트를 나타냅니다.  
+ [AutoResetEvent](autoresetevent.md)  
+ <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType> 클래스는 <xref:System.Threading.EventWaitHandle>에서 파생되며 자동으로 다시 설정되는 로컬 이벤트를 나타냅니다.  
   
- [ManualResetEvent 및 ManualResetEventSlim](../../../docs/standard/threading/manualresetevent-and-manualreseteventslim.md)  
- <xref:System.Threading.ManualResetEvent> 클래스는 <xref:System.Threading.EventWaitHandle>에서 파생되며 수동으로 다시 설정해야 하는 로컬 이벤트를 나타냅니다. <xref:System.Threading.ManualResetEventSlim> 클래스는 동일한 프로세스 내의 이벤트에 사용할 수 있는 간단하고 빠른 버전입니다.  
+ [ManualResetEvent 및 ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md)  
+ <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> 클래스는 <xref:System.Threading.EventWaitHandle>에서 파생되며 수동으로 다시 설정해야 하는 로컬 이벤트를 나타냅니다. <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> 클래스는 동일한 프로세스 내의 이벤트에 사용할 수 있는 간단하고 빠른 버전입니다.  
   
- [CountdownEvent](../../../docs/standard/threading/countdownevent.md)  
- <xref:System.Threading.CountdownEvent> 클래스는 대기 핸들을 사용하는 코드에서 포크/조인 병렬 처리 패턴을 구현하는 간단한 방법을 제공합니다.  
-  
-## <a name="related-sections"></a>관련 단원  
- [대기 핸들](https://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
- <xref:System.Threading.WaitHandle> 클래스는 <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.Semaphore> 및 <xref:System.Threading.Mutex> 클래스의 기본 클래스입니다. 여기에는 모든 유형의 대기 핸들에 대해 작업할 때 유용한 정적 메서드(예: <xref:System.Threading.WaitHandle.SignalAndWait%2A> 및 <xref:System.Threading.WaitHandle.WaitAll%2A>)가 포함됩니다.  
-  
+ [CountdownEvent](countdownevent.md)  
+ <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> 클래스는 대기 핸들을 사용하는 코드에서 포크/조인 병렬 처리 패턴을 구현하는 간단한 방법을 제공합니다.  
+
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Threading.EventWaitHandle>  
-- <xref:System.Threading.WaitHandle>  
-- <xref:System.Threading.AutoResetEvent>  
-- <xref:System.Threading.ManualResetEvent>  
-- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)  
-- [관리되는 스레딩 기본 사항](../../../docs/standard/threading/managed-threading-basics.md)
+- <xref:System.Threading.WaitHandle?displayProperty=nameWithType>
+- <xref:System.Threading.Barrier?displayProperty=nameWithType>
+- [스레딩 개체 및 기능](threading-objects-and-features.md)
+- [관리되는 스레딩 기본 사항](managed-threading-basics.md)

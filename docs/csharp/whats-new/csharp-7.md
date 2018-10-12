@@ -3,12 +3,12 @@ title: C# 7.0의 새로운 기능 - C# 가이드
 description: C# 언어의 새 버전 7에서 제공되는 새로운 기능을 간단히 살펴봅니다.
 ms.date: 12/21/2016
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
-ms.openlocfilehash: a78b30411d734d6dadc52b7dbd402763d4eb7f5e
-ms.sourcegitcommit: 88f251b08bf0718ce119f3d7302f514b74895038
+ms.openlocfilehash: 734fdf962ef481a3b434e9ce17e535eadd52f420
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956411"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47237386"
 ---
 # <a name="whats-new-in-c-70"></a>C# 7.0의 새로운 기능
 
@@ -159,7 +159,7 @@ C#에서는 디자인 의도를 설명하는 데 사용되는 클래스 및 구�
 [!code-csharp[Tuple-discard](../../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
 자세한 내용은 [버림](../discards.md)을 참조하세요.
- 
+
 ## <a name="pattern-matching"></a>패턴 일치
 
 *패턴 일치*는 개체 형식이 아닌 속성에 대한 메서드 디스패치를 구현할 수 있는 기능입니다. 개체 형식에 따른 메서드 디스패치에 이미 익숙할 수 있습니다. 개체 지향 프로그래밍에서 가상 및 재정의 메서드는 개체 형식에 따라 메서드 디스패치를 구현하기 위한 언어 구문을 제공합니다. 기본 및 파생 클래스는 서로 다른 구현을 제공합니다. 패턴 일치 식은 상속 계층 구조를 통해 관련되지 않은 형식 및 데이터 요소에 대한 비슷한 디스패치 패턴을 쉽게 구현할 수 있도록 이 개념을 확장합니다. 
@@ -277,7 +277,9 @@ C# 언어에는 `ref` local 및 return을 잘못 사용하는 경우를 방지�
 * `ref` local 및 return은 비동기 메서드와 함께 사용할 수 없습니다.
     - 컴파일러는 비동기 메서드가 반환될 때 참조된 변수가 최종 값으로 설정되었는지 여부를 알 수 없습니다.
 
-ref local 및 ref return을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다. 
+ref local 및 ref return을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다.
+
+`ref`를 반환 값에 추가하는 것은 [소스 호환 가능 변경](version-update-considerations.md#source-compatible-changes)입니다. 기존 코드는 컴파일되지만, 참조 반환 값은 할당 시 복사됩니다. 호출자는 반환 값 저장소를 `ref` 지역 변수로 업데이트하여 반환을 참조로 저장해야 합니다.
 
 ## <a name="local-functions"></a>로컬 함수
 
@@ -327,6 +329,8 @@ C# 6에서는 멤버 함수의 [식 본문 멤버](csharp-6.md#expression-bodied
 
 식 본문 멤버의 이러한 새 위치는 C# 언어에 대한 중요한 기준을 나타냅니다. 이러한 기능은 오픈 소스 [Roslyn](https://github.com/dotnet/Roslyn) 프로젝트에 대한 작업을 수행하는 커뮤니티 멤버가 구현했습니다.
 
+메서드를 식 본문 멤버로 변경하는 것은 [이진 호환 가능 변경](version-update-considerations.md#binary-compatible-changes)입니다.
+
 ## <a name="throw-expressions"></a>Throw 식
 
 C#에서 `throw`는 항상 문이었습니다. `throw`는 식이 아닌 문이므로 이 문을 사용할 수 없는 C# 구문이 있었습니다. 이러한 구문에는 조건식, null 병합 식 및 몇몇 람다 식이 포함되었습니다. 식 본문 멤버가 추가됨에 따라 `throw` 식이 유용할 수 있는 추가 위치도 추가됩니다. 이러한 구문을 작성할 수 있도록 C# 7.0에서는 *throw 식*을 추가합니다.
@@ -362,8 +366,10 @@ C#에서 `throw`는 항상 문이었습니다. `throw`는 식이 아닌 문이�
 간단한 최적화는 이전에 `Task`가 사용된 위치에서 `ValueTask`를 사용하는 것입니다. 그러나 추가 최적화를 직접 수행하려는 경우 비동기 작업에서 결과를 캐시하고 후속 호출에서 결과를 다시 사용할 수 있습니다. `ValueTask` 구조체에는 기존 비동기 메서드의 반환 값에서 `ValueTask`를 생성할 수 있도록 `Task` 매개 변수가 포함된 생성자가 있습니다.
 
 [!code-csharp[AsyncOptimizedValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#31_AsyncOptimizedValueTask "Return async result or cached value")]
- 
+
 모든 성능 권장 사항처럼 코드를 대규모로 변경하기 전에 두 가지 버전을 모두 벤치마크해야 합니다.
+
+반환 값이 `await` 문의 대상인 경우 <xref:System.Threading.Tasks.Task%601>에서 <xref:System.Threading.Tasks.ValueTask%601>로 API를 변경하는 것은 [소스 호환 가능 변경](version-update-considerations.md#source-compatible-changes)입니다. 일반적으로 `ValueTask`로 변경하는 것은 이에 해당하지 않습니다.
 
 ## <a name="numeric-literal-syntax-improvements"></a>숫자 리터럴 구문 개선 사항
 

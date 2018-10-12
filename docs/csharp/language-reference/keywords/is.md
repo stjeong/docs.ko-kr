@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is keyword [C#]
 ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
-ms.openlocfilehash: 974e0c3ab29da582e7b22c909650a61d179ec3f7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8e4103f8e71858ec74c348ee1f675828e6468eb2
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523941"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47170589"
 ---
 # <a name="is-c-reference"></a>is(C# 참조) #
 
@@ -128,6 +128,16 @@ C# 7.0부터는 `is` 및 [switch](../../../csharp/language-reference/keywords/sw
 다음 예제에서는 형식 패턴과 상수 패턴을 결합하여 개체가 `Dice` 인스턴스인지 여부를 테스트하고, 그럴 경우 주사위 굴리기 값이 6인지 여부를 확인합니다.
 
 [!code-csharp[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs#7)]
+
+상수 패턴을 사용하여 `null`을 검사할 수 있습니다. `null` 키워드는 `is` 문에서 지원됩니다. 사용되는 구문은 다음과 같습니다.
+
+```csharp 
+   expr is null
+```
+
+다음 예제는 `null` 검사의 비교를 보여 줍니다.
+
+[!code-csharp[is#11](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern11.cs#11)]
  
 ### <a name="var" /> var 패턴 </a>
 

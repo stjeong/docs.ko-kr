@@ -3,13 +3,13 @@ title: 일반 지침
 description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | 일반 지침
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/18/2017
-ms.openlocfilehash: bd654c23cf8a8d0986575642ef25d6864251a4e4
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.date: 09/11/2018
+ms.openlocfilehash: e77065614423cd2e7fdb51258a8c7650280d0400
+ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37104081"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46537828"
 ---
 # <a name="general-guidance"></a>일반 지침
 
@@ -27,7 +27,7 @@ ms.locfileid: "37104081"
 
 .NET Core를 사용하면 같은 머신 안에서 응용 프로그램에 대해 .NET 버전을 함께 실행한다는 또 다른 장점이 있습니다. 이러한 장점은 컨테이너가 앱이 필요한 .NET 버전을 격리하기 때문에 컨테이너를 사용하지 않는 서버나 VM에서 특히 중요합니다 (기본 OS와 호환되는 한).
 
-다음과 같은 상황에서는 컨테이너화된 Dockeer 서버 응용 프로그램에 대해 .NET Framework를 Windows Containers에 사용해야 합니다.
+다음과 같은 경우에는 컨테이너화된 Docker 서버 응용 프로그램에 대해 .NET Framework를 사용해야 합니다.
 
 -   응용 프로그램에서 현재 .NET Framework를 사용하며 Windows에 대한 의존도가 높습니다.
 
@@ -35,15 +35,15 @@ ms.locfileid: "37104081"
 
 -   .NET Core에 사용할 수 없는 타사 .NET 라이브러리 또는 NuGet 패키지를 사용해야 합니다.
 
-Docker에서 .NET Framework를 사용하면 배포 문제 최소화를 통해 배포 환경을 개선할 수 있습니다. 이러한 [*"이동 편의" 시나리오*](https://aka.ms/liftandshiftwithcontainersebook)는 ASP.NET WebForms, MVC 웹앱 또는 WCF(Windows Communication Foundation) 서비스 같은 기존 .NET Framework로 개발된 레거시 응용 프로그램을 컨테이너화하는 데 중요합니다.
+Docker에서 .NET Framework를 사용하면 배포 문제 최소화를 통해 배포 환경을 개선할 수 있습니다. 이러한 [“이동 전환”(lift and shift) 시나리오](https://aka.ms/liftandshiftwithcontainersebook)는 ASP.NET WebForms, MVC 웹앱 또는 WCF(Windows Communication Foundation) 서비스 같은 기존 .NET Framework로 개발된 레거시 응용 프로그램을 컨테이너화하는 데 중요합니다.
 
 ### <a name="additional-resources"></a>추가 자료
 
--   **전자책: Azure 및 Windows 컨테이너를 사용하여 기존 .NET Framework 응용 프로그램 현대화**
-    [*https://aka.ms/liftandshiftwithcontainersebook*](https://aka.ms/liftandshiftwithcontainersebook)
+-   **전자책: Azure 및 Windows 컨테이너를 사용하여 기존 .NET Framework 응용 프로그램 최신화**  
+    https://aka.ms/liftandshiftwithcontainersebook
 
--   **앱 샘플: Windows Containers를 사용하여 레거시 ASP.NET 웹앱 현대화**
-    [*https://aka.ms/eshopmodernizing*](https://aka.ms/eshopmodernizing)
+-   **샘플 앱: Windows 컨테이너를 사용하여 레거시 ASP.NET 웹앱 최신화**  
+    https://aka.ms/eshopmodernizing
 
 
 >[!div class="step-by-step"]

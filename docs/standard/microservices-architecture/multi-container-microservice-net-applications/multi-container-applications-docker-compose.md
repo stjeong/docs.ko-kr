@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/30/2017
-ms.openlocfilehash: 0c4eda54fbb1f48095d52fa798ea839eb509a636
-ms.sourcegitcommit: bd4fa78f5a46133efdead1bc692a9aa2811d7868
+ms.openlocfilehash: d1c4166129716ccbbc86855e38d631f493b82290
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42754731"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46937607"
 ---
 # <a name="defining-your-multi-container-application-with-docker-composeyml"></a>docker-compose.yml을 사용하여 다중 컨테이너 응용 프로그램 정의 
 
@@ -126,7 +126,7 @@ services:
 
 -   SQL Server 이름은 sql.data입니다. 이는 Linux용 SQL Server 인스턴스를 실행하는 컨테이너에 사용되는 동일한 이름입니다. 이 방법은 편리합니다. 이 이름 확인(Docker 호스트에 대한 내부)을 사용할 수 있는 것은 네트워크 주소를 해결하므로 다른 컨테이너에서 액세스하는 컨테이너에 대한 내부 IP를 알지 않아도 됩니다.
 
-연결 문자열은 환경 변수에 의해 정의되므로 다른 메커니즘을 통해 다른 시간에 해당 변수를 설정할 수 있습니다. 예를 들어 최종 호스트에서 프로덕션에 배포할 때 또는 VSTS 또는 기본 DevOps 시스템의 CI/CD 파이프라인에서 수행하여 다른 연결 문자열을 설정할 수 있습니다.
+연결 문자열은 환경 변수에 의해 정의되므로 다른 메커니즘을 통해 다른 시간에 해당 변수를 설정할 수 있습니다. 예를 들어 최종 호스트에서 프로덕션에 배포할 때 또는 Azure DevOps Services 또는 기본 DevOps 시스템의 CI/CD 파이프라인에서 수행하여 다른 연결 문자열을 설정할 수 있습니다.
 
 -   Docker 호스트 내에서 catalog.api 서비스에 대한 내부 엑세스에 대해 포트 80을 노출합니다. 호스트는 Linux용 Docker 이미지를 기반으로 하므로 현재 Linux VM이지만 Windows 이미지에서 대신 실행하도록 컨테이너를 구성할 수 있습니다.
 
@@ -180,7 +180,7 @@ Compose를 사용하여 원격 Docker 엔진에 배포할 수도 있습니다. �
 
 이전 섹션에 표시된 간소화된 예제에서와 같이 단일 docker-compose.yml 파일을 사용할 수 있습니다. 그러나 대부분의 응용 프로그램에 권장하지 않습니다.
 
-기본적으로 Compose는 두 개의 파일, docker-compose.yml 및 선택적 docker-compose.override.yml 파일을 읽습니다. 그림 8-11과 같이 Visual Studio를 사용하고 Docker 지원을 활성화한 경우 Visual Studio는 VSTS에서와 같이 CI/CD 파이프라인에서 사용하도록 추가 docker-compose.ci.build,yml 파일을 만듭니다.
+기본적으로 Compose는 두 개의 파일, docker-compose.yml 및 선택적 docker-compose.override.yml 파일을 읽습니다. 그림 8-11과 같이 Visual Studio를 사용하고 Docker 지원을 활성화한 경우 Visual Studio는 Azure DevOps Services와 같이 CI/CD 파이프라인에서 사용하도록 추가 docker-compose.ci.build,yml 파일을 만듭니다.
 
 ![](./media/image12.png)
 

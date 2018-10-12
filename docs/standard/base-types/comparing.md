@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b1fa907be4571e0a5f95ab798210bedb154e9170
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: d8f126aa5b69c99beae740de261ac3da3c5d2544
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44264677"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45698564"
 ---
 # <a name="comparing-strings-in-net"></a>.NET에서 문자열 비교
 .NET에서는 문자열의 값을 비교하는 여러 가지 메서드를 제공합니다. 다음 표에서는 값 비교 메서드를 나열하고 설명합니다.  
@@ -154,4 +154,5 @@ ms.locfileid: "44264677"
 
 - [기본적인 문자열 작업](../../../docs/standard/base-types/basic-string-operations.md)  
 - [Culture의 영향을 받지 않는 문자열 작업 수행](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
-- [정렬 가중치 테이블](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
+- [정렬 가중치 테이블(Windows의 .NET용)](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
+- [기본 유니코드 데이터 정렬 요소 테이블(Linux 및 macOS의 .NET Core용)](https://www.unicode.org/Public/UCA/latest/allkeys.txt)

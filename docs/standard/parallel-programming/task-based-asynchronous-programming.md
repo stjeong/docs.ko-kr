@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e3dad3e33968b72d199b412c65f04a4079020f78
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6a879cce8eb429e2daeaa5db963b3d95d1e944da
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33592591"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47171376"
 ---
 # <a name="task-based-asynchronous-programming"></a>작업 기반 비동기 프로그래밍
 TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하며 비동기 작업을 나타냅니다. 몇 가지 점에서 작업은 스레드 또는 <xref:System.Threading.ThreadPool> 작업 항목과 비슷하지만 추상화 수준은 더 높습니다. *작업 병렬 처리*는 동시에 실행되는 하나 이상의 독립적인 작업을 의미합니다. 작업을 사용할 때의 주된 이점 두 가지는 다음과 같습니다.  
@@ -59,10 +59,10 @@ TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하�
  [!code-csharp[TPL_TaskIntro#2](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/run1.cs#2)]
  [!code-vb[TPL_TaskIntro#2](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/run1.vb#2)]  
   
- <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> 메서드를 사용하여 한 번에 작업을 만들고 시작할 수도 있습니다. 생성 및 일정 예약을 구분할 필요가 없고 추가 작업 생성 옵션이나 특정 스케줄러를 사용할 필요가 있는 경우 또는 다음 예제와 같이 <xref:System.Threading.Tasks.Task.AsyncState%2A> 속성을 통해 작업에 추가 상태를 전달해야 하는 경우 이 메서드를 사용합니다.  
+ <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> 메서드를 사용하여 한 번에 작업을 만들고 시작할 수도 있습니다. 생성 및 일정 예약을 구분할 필요가 없고 추가 작업 생성 옵션이나 특정 스케줄러를 사용할 필요가 있는 경우 또는 다음 예제와 같이 <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> 속성을 통해 검색할 수 있는 작업에 추가 상태를 전달해야 하는 경우 이 메서드를 사용합니다.  
   
- [!code-csharp[TPL_TaskIntro#3](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/startnew1.cs#3)]
- [!code-vb[TPL_TaskIntro#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/startnew1.vb#3)]  
+ [!code-csharp[TPL_TaskIntro#3](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/asyncstate.cs#23)]
+ [!code-vb[TPL_TaskIntro#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/asyncstate.vb#23)]  
   
  <xref:System.Threading.Tasks.Task> 및 <xref:System.Threading.Tasks.Task%601>는 각각 <xref:System.Threading.Tasks.Task.Factory%2A>의 기본 인스턴스를 반환하는 정적 <xref:System.Threading.Tasks.TaskFactory> 속성을 노출하므로 메서드를 `Task.Factory.StartNew()`로 호출할 수 있습니다. 또한 다음 예제에서 작업은 <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> 형식이므로 계산 결과가 들어 있는 공용 <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> 속성이 각 작업에 포함됩니다. 작업은 비동기적으로 실행되며 완료 순서에는 제한이 없습니다. 계산이 완료되기 전에 <xref:System.Threading.Tasks.Task%601.Result%2A> 속성에 액세스할 경우 이 속성이 값을 사용할 수 있을 때까지 호출 스레드를 차단합니다.  
   
@@ -267,6 +267,7 @@ TPL(작업 병렬 라이브러리)은 *작업*이란 개념을 기반으로 하�
 |[데이터 병렬 처리](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)|<xref:System.Threading.Tasks.Parallel.For%2A> 및 <xref:System.Threading.Tasks.Parallel.ForEach%2A>를 사용하여 데이터에 대한 병렬 루프를 만드는 방법을 설명합니다.|  
 |[병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)|.NET Framework 병렬 프로그래밍의 최상위 노드입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
- [NET Framework를 사용한 병렬 프로그래밍 샘플](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)
+## <a name="see-also"></a>참고 항목
+
+- [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
+- [NET Framework를 사용한 병렬 프로그래밍 샘플](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)

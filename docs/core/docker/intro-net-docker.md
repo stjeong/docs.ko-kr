@@ -5,12 +5,12 @@ author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
 ms.custom: mvc
-ms.openlocfilehash: 0fe3fcdee1c508f5c8165b7709ca08e42d0b1d55
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: d578ec5a25dbb5de3c88386e212e68cf3b267749
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44251773"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45970645"
 ---
 # <a name="introduction-to-net-and-docker"></a>.NET 및 Docker 소개
 
@@ -147,11 +147,11 @@ Docker 컨테이너 개발을 위해 .NET Core와 .NET Framework 중에서 결�
 
 * [DockerHub의 Windows 컨테이너용 Microsoft SQL Server Developer Edition 이미지](https://hub.docker.com/r/microsoft/mssql-server-windows-developer/)
 
-#### <a name="visual-studio-team-services-vsts-agent"></a>VSTS(Visual Studio Team Services) 에이전트
+#### <a name="azure-devops-services-agent"></a>Azure DevOps Services 에이전트
 
-* [DockerHub의 VSTS(Visual Studio Team Services) 에이전트 이미지](https://hub.docker.com/r/microsoft/vsts-agent/)
+* [DockerHub에 있는 Azure DevOps Services 에이전트 이미지](https://hub.docker.com/r/microsoft/vsts-agent/)
 
-* [GitHub의 VSTS(Visual Studio Team Services) 에이전트 이미지](https://github.com/Microsoft/vsts-agent-docker)
+* [GitHub에 있는 Azure DevOps Services 에이전트 이미지](https://github.com/Microsoft/vsts-agent-docker)
 
 #### <a name="operations-management-suite-oms-linux-agent"></a>OMS(Operations Management Suite) Linux 에이전트
 

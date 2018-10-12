@@ -3,13 +3,13 @@ title: Docker 컨테이너에 대해 .NET Framework를 선택하는 경우
 description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 서비스 아키텍처 | Docker 컨테이너에 대해 .NET Framework를 선택하는 경우
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/07/2018
-ms.openlocfilehash: 2fdf0c24999891e48e1867e8fa7b4ba0f5302850
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.date: 09/11/2018
+ms.openlocfilehash: 9e1ff03421f1a5d23878c74f13423cec9625c4c5
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106712"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45609983"
 ---
 # <a name="when-to-choose-net-framework-for-docker-containers"></a>Docker 컨테이너에 대해 .NET Framework를 선택하는 경우
 
@@ -23,23 +23,27 @@ ms.locfileid: "37106712"
 
 ## <a name="using-third-party-net-libraries-or-nuget-packages-not-available-for-net-core"></a>.NET Core에 사용할 수 없는 타사 .NET 라이브러리 또는 NuGet 패키지 사용
 
-타사 라이브러리는 [.NET 표준](../../net-standard.md)을 빠르게 수용하여 .NET Core를 포함한 모든 .NET 계열에서 코드 공유를 사용할 수 있게 합니다. .NET Standard 라이브러리 2.0 이상에서는 서로 다른 프레임워크 간의 API 표면 호환성이 크게 증가하였으며, .NET Core 2.x에서는 응용 프로그램이 기존 .NET Framework 라이브러리를 직접 참조할 수도 있습니다([호환 shim](https://github.com/dotnet/standard/blob/master/docs/faq.md#how-does-net-standard-versioning-work) 참조).
+타사 라이브러리는 [.NET 표준](https://docs.microsoft.com/dotnet/articles/standard/library)을 빠르게 수용하여 .NET Core를 포함한 모든 .NET 계열에서 코드 공유를 사용할 수 있게 합니다. .NET Standard 라이브러리 2.0 이상에서는 서로 다른 프레임워크 간의 API 표면 호환성이 상당히 증가하였으며, .NET Core 2.x에서는 응용 프로그램이 기존 .NET Framework 라이브러리를 직접 참조할 수도 있습니다([호환 shim](https://github.com/dotnet/standard/blob/master/docs/netstandard-20/README.md#net-framework-461-supporting-net-standard-20) 참조).
 
-그러나 .NET Standard 2.0 및 .NET Core 2.0 이후의 뛰어난 발전에도 불구하고 특정 NuGet 패키지에서 Windows를 실행해야 하고 .NET Core를 지원하지 않는 경우가 있을 수도 있습니다. 이러한 패키지가 응용 프로그램에 매우 중요한 경우 Windows 컨테이너에서 .NET Framework를 사용해야 합니다.
+또한 Windows의 .NET Standard 2.0에 사용할 수 있는 API 노출을 확장하기 위해 2017년 11월에 [Windows 호환성 팩](https://docs.microsoft.com/dotnet/core/porting/windows-compat-pack)이 릴리스되었습니다. 이 팩을 사용하면 수정 사항이 거의 없거나 전혀 없이 Windows에서 실행하도록 대부분의 기존 코드를 .NET Standard 2.x에 다시 컴파일할 수 있습니다.
+
+그러나 .NET Standard 2.0 및 .NET Core 2.1 이후의 뛰어난 발전에도 불구하고 특정 NuGet 패키지에서 Windows를 실행해야 하고 .NET Core를 지원하지 않는 경우가 있을 수도 있습니다. 이러한 패키지가 응용 프로그램에 매우 중요한 경우 Windows 컨테이너에서 .NET Framework를 사용해야 합니다.
 
 ## <a name="using-net-technologies-not-available-for-net-core"></a>.NET Core에 사용할 수 없는 .NET 기술 사용 
 
 일부 .NET Framework 기술은 현재 버전의 .NET Core(이 문서를 작성한 시점 이후 버전 2.1)에서 사용할 수 없습니다. 그 중 일부는 이후 .NET Core 릴리스(.NET Core 2.x)에서 사용할 수 있지만, 다른 일부는 .NET Core에서 대상으로 하는 새 응용 프로그램 패턴에 적용되지 않으며 사용하지 못할 수도 있습니다.
 
-다음 목록에서는 .NET Core 2.1에서 사용할 수 없는 대부분의 기술을 보여 줍니다.
+다음 목록에서는 .NET Core 2.x에서 사용할 수 없는 대부분의 기술을 보여 줍니다.
 
 -   ASP.NET Web Forms. 이 기술은 .NET Framework에서만 사용할 수 있습니다. 현재 .NET Core에 ASP.NET Web Forms를 적용할 계획은 없습니다.
 
--   WCF 서비스. [WCF 클라이언트 라이브러리](https://github.com/dotnet/wcf)가 .NET Core에서 WCF 서비스를 사용할 수 있는 경우에도 2017년 중반부터 WCF 서버 구현은 .NET Framework에서만 사용할 수 있습니다. 이 시나리오는 .NET Core의 향후 릴리스에서 고려될 수 있습니다.
+-   WCF 서비스. .NET Core에서 WCF 서비스를 사용할 수 있는 [WCF-클라이언트 라이브러리](https://github.com/dotnet/wcf)가 있더라도(2017년 중순 기준) WCF 서버 구현은 .NET Framework에서만 사용할 수 있습니다. 이 시나리오는 .NET Core의 향후 릴리스에 대해 고려할 수 있으며, 이 경우 [Windows 호환성 팩](https://docs.microsoft.com/dotnet/core/porting/windows-compat-pack)에 일부 API를 포함하도록 고려되고 있습니다.
 
 -   워크플로 관련 서비스. Windows WF(Workflow Foundation), 워크플로 서비스(단일 서비스의 WCF + WF) 및 WCF Data Services(이전의 ADO.NET Data Services)는 .NET Framework에서만 사용할 수 있습니다. 현재 .NET Core로 가져올 계획은 없습니다.
 
 공식 [.NET Core 로드맵](https://github.com/aspnet/Home/wiki/Roadmap)에 나열된 기술 외에도 다른 기능이 .NET Core에 이식될 수도 있습니다. 전체 목록은 CoreFX GitHub 사이트에서 [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core) 태그로 지정된 항목을 살펴보세요. 이 목록은 이러한 구성 요소를 .NET Core로 가져오는 Microsoft의 약속을 나타내지는 않으며, 항목은 단순히 커뮤니티의 요청만 캡처합니다. 위에 나열된 구성 요소 중 하나에 관심이 있는 경우 자신의 의견에 대해 답변을 받을 수 있도록 GitHub의 토론에 참여해 보세요. 누락된 내용이 있다고 생각이 들면 [CoreFX 리포지토리에 새로운 문제를 등록](https://github.com/dotnet/corefx/issues/new)하세요.
+
+.NET Core 3(이 쓰기가 진행 중일 때)가 기존 .NET Framework API에 대한 지원을 포함하더라도, 이는 데스크톱 지향이므로 현재 컨테이너에서 사용하고 있지 않습니다.
 
 ## <a name="using-a-platform-or-api-that-does-not-support-net-core"></a>.NET Core를 지원하지 않는 플랫폼 또는 API 사용
 
@@ -49,16 +53,16 @@ ms.locfileid: "37106712"
 
 ### <a name="additional-resources"></a>추가 자료
 
--   **.NET Core 가이드**
-    [*https://docs.microsoft.com/dotnet/core/index*](../../../core/index.md)
+-   **.NET Core 가이드**  
+    [https://docs.microsoft.com/dotnet/articles/core/index](https://docs.microsoft.com/dotnet/articles/core/index)
 
--   **.NET Framework에서 .NET Core로 이식**
-    [*https://docs.microsoft.com/dotnet/core/porting/index*](../../../core/porting/index.md)
+-   **.NET Framework에서 .NET Core로 이식**  
+    [https://docs.microsoft.com/dotnet/articles/core/porting/index](https://docs.microsoft.com/dotnet/articles/core/porting/index)
 
--   **Docker 가이드의 .NET Framework**
-    [*https://docs.microsoft.com/dotnet/framework/docker/*](../../../framework/docker/index.md)
+-   **Docker 가이드의 .NET Framework**  
+    [https://docs.microsoft.com/dotnet/articles/framework/docker/](https://docs.microsoft.com/dotnet/articles/framework/docker/)
 
--   **.NET 구성 요소 개요**
+-   **.NET 구성 요소 개요**  
     [*https://docs.microsoft.com/dotnet/standard/components*](../../components.md)
 
 

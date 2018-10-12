@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cdb11b283cc008e7f4bb060d1c2cb18706c824b7
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 86376919d7456167c58ada4145d213b39e050e33
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44084720"
+ms.lasthandoff: 09/23/2018
+ms.locfileid: "46702779"
 ---
 # <a name="eventwaithandle"></a>EventWaitHandle
 <xref:System.Threading.EventWaitHandle> 클래스를 사용하면 여러 스레드가 신호를 보내고 신호를 대기하여 서로 통신할 수 있습니다. 이벤트 대기 핸들(단순히 이벤트라고도 함)은 하나 이상의 대기 스레드를 해제하기 위해 신호를 보낼 수 있는 대기 핸들입니다. 신호를 받은 후 이벤트 대기 핸들은 수동으로 또는 자동으로 다시 설정됩니다. <xref:System.Threading.EventWaitHandle> 클래스는 로컬 이벤트 대기 핸들(로컬 이벤트) 또는 명명된 시스템 이벤트 대기 핸들(모든 프로세스에 표시되는 명명된 이벤트 또는 시스템 이벤트)을 나타낼 수 있습니다.  
   
 > [!NOTE]
->  이벤트 대기 핸들은 .NET Framework에서 해당 단어가 사용되는 일반적인 의미의 이벤트가 아닙니다. 관련된 대리자 또는 이벤트 처리기가 없습니다. “이벤트”라는 단어는 기존에는 운영 체제 이벤트라고 했고 대기 핸들에 신호를 보내는 동작이 이벤트가 발생한 대기 스레드를 나타내기 때문에 이벤트를 설명하는 데 사용됩니다.  
+>  이벤트 대기 핸들은 .NET [이벤트](../events/index.md)가 아닙니다. 관련된 대리자 또는 이벤트 처리기가 없습니다. “이벤트”라는 단어는 기존에는 운영 체제 이벤트라고 했고 대기 핸들에 신호를 보내는 동작이 이벤트가 발생한 대기 스레드를 나타내기 때문에 이벤트를 설명하는 데 사용됩니다.  
   
  로컬 및 명명된 이벤트 대기 핸들은 모두 <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> 래퍼로 보호되는 시스템 동기화 개체를 사용하여 리소스가 해제되도록 합니다. <xref:System.Threading.WaitHandle.Dispose%2A> 메서드를 사용하여 개체 사용을 완료했을 때 즉시 리소스를 해제할 수 있습니다.  
   

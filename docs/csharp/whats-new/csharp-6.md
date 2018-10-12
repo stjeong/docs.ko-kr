@@ -3,12 +3,12 @@ title: C# 6의 새로운 기능 - C# 가이드
 description: C# 버전 6의 새로운 기능을 알아봅니다.
 ms.date: 09/22/2016
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
-ms.openlocfilehash: 5ba5d8f4cc5c7cecdda030594273324d14d1582a
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: f6f953eacc935d38cc7d45173109c96c52a5e2f3
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34565880"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47208187"
 ---
 # <a name="whats-new-in-c-6"></a>C# 6의 새로운 기능
 
@@ -45,7 +45,7 @@ C#의 6.0 릴리스에는 개발자의 생산성을 개선하는 많은 기능�
 
 이 항목의 나머지 부분에서는 이러한 기능을 각각 자세히 설명합니다.
 
-## <a name="auto-property-enhancements"></a>Auto 속성 향상된 기능 
+## <a name="auto-property-enhancements"></a>Auto 속성 향상된 기능
 
 자동으로 구현된 속성에 대한 구문(대개 “auto 속성"이라고 함) 덕분에 간단한 get 및 set 접근자가 포함된 속성을 매우 쉽게 만들 수 있습니다:
 
@@ -88,6 +88,8 @@ public class Student
 
 이 기능은 변경할 수 없는 형식을 만들고 더 간결하고 편리한 auto 속성 구문을 사용하기 위한 실제 언어 지원을 구현합니다.
 
+이 구문을 추가해도 액세스 가능 메서드가 제거되지 않으면 [이진 호환 가능 변경](version-update-considerations.md#binary-compatible-changes)입니다.
+
 ### <a name="auto-property-initializers"></a>Auto 속성 이니셜라이저
 
 *Auto 속성 이니셜라이저*를 통해 속성 선언의 일부로 auto 속성의 초기 값을 선언할 수 있습니다.  이전 버전에서는 이러한 속성에 setter를 포함해야 하고, 지원 필드에서 사용되는 데이터 저장소를 초기화하려면 해당 setter를 사용해야 합니다. 이름이 포함된 학생 및 학생의 성적 목록에 이 클래스를 사용하는 것이 좋습니다.
@@ -115,6 +117,9 @@ C# 6에서는 auto 속성 선언에서 auto 속성에 사용되는 저장소의 
 읽기 전용 속성에서도 식 본문 멤버를 사용할 수 있습니다.
 
 [!code-csharp[FullNameExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
+
+기존 멤버를 식 본문 멤버로 변경하는 것은 [이진 호환 가능 변경](version-update-considerations.md#binary-compatible-changes)입니다.
+
 
 ## <a name="using-static"></a>using static
 
@@ -398,4 +403,3 @@ C# 6 컴파일러에서는 `Task.Run(Func<Task>())`가 더 나은 선택인지 �
 기본적으로 컴파일이 실행될 때마다 고유한 출력이 생성됩니다. 컴파일러는 임의의 숫자에서 생성된 GUID와 타임스탬프를 추가합니다. 바이트별 출력을 비교하여 빌드 간 일관성을 유지하려면 이 옵션을 사용합니다.
 
 자세한 내용은 [-deterministic 컴파일러 옵션](../language-reference/compiler-options/deterministic-compiler-option.md) 문서를 참조하세요.
-

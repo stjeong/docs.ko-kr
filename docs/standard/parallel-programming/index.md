@@ -1,24 +1,28 @@
 ---
 title: .NET으로 병렬 프로그래밍
-ms.date: 03/30/2017
+ms.date: 09/12/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - parallel programming
 ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 372ffd7e17f60b8045cd5f89d52456c5f9655de1
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 3d1cd0b797373da4cab59484e3e6302927d821ed
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43802305"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47112726"
 ---
 # <a name="parallel-programming-in-net"></a>.NET으로 병렬 프로그래밍
 
-여러 개인용 컴퓨터 및 워크스테이션에는 여러 CPU 코어가 있기 때문에 다중 스레드가 동시에 실행될 수 있습니다. 가까운 미래에 컴퓨터의 코어 수는 대폭 증가할 것으로 예상됩니다. 현재 및 미래의 하드웨어를 활용하기 위해 코드를 병렬화하여 작업을 여러 프로세스에 분산할 수 있습니다. 이전의 병렬화에서는 스레드 및 잠금에 대한 저수준 조작이 필요했습니다. Visual Studio 2010 및 .NET Framework 4에서는 새로운 런타임, 새로운 클래스 라이브러리 형식 및 새로운 진단 도구를 제공하여 병렬 프로그래밍에 대한 지원이 향상되었습니다. 이러한 기능은 병렬 개발을 단순화하기 때문에 개발자는 스레드 또는 스레드 풀을 직접 건드릴 필요 없이 효율적이고 세부적이고 확장명 가능한 병렬 코드를 자연스러운 언어로 작성할 수 있습니다. 다음 그림에서는 .NET Framework 4의 병렬 프로그래밍 아키텍처에 대한 간략한 개요를 제공합니다.
+많은 개인용 컴퓨터 및 워크스테이션에는 여러 CPU 코어가 있기 때문에 다중 스레드를 동시에 실행할 수 있습니다. 하드웨어를 활용하기 위해 코드를 병렬화하여 작업을 여러 프로세서에 분산할 수 있습니다.
 
- ![.NET 병렬 프로그래밍 아키텍처](./media/tpl-architecture.png "TPL_Architecture")
+이전의 병렬화에서는 스레드 및 잠금에 대한 저수준 조작이 필요했습니다. Visual Studio 및 .NET Framework에서는 런타임, 클래스 라이브러리 형식 및 진단 도구를 제공하여 병렬 프로그래밍 지원을 개선합니다. .NET Framework 4에 도입된 이러한 기능은 병렬 개발을 단순화하므로, 스레드 또는 스레드 풀에 대해 직접 작업할 필요 없이 효율적이고 세분화된, 확장성 있는 병렬 코드를 자연스러운 언어로 작성할 수 있습니다.
+
+다음 그림은 .NET Framework의 병렬 프로그래밍 아키텍처에 대한 간략한 개요를 제공합니다.
+
+![.NET 병렬 프로그래밍 아키텍처](./media/tpl-architecture.png)
 
 ## <a name="related-topics"></a>관련 항목
 

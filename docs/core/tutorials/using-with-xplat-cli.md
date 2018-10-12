@@ -3,14 +3,14 @@ title: CLI를 사용하여 .NET Core 시작
 description: .NET Core CLI(명령줄 인터페이스)를 사용하여 Windows, Linux 또는 macOS에서 .NET Core를 시작하는 방법을 보여 주는 단계별 자습서입니다.
 author: cartermp
 ms.author: mairaw
-ms.date: 03/08/2017
+ms.date: 09/10/2018
 ms.technology: dotnet-cli
-ms.openlocfilehash: 5ec7168ebc2ee4fc428d1ab520e986842f111ca7
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: b31a0324c0d762e9898c681cc6581b3860d41f89
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44200319"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47203763"
 ---
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>명령줄을 사용하여 Windows/Linux/macOS에서 .NET Core 시작
 
@@ -20,7 +20,7 @@ ms.locfileid: "44200319"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- [.NET Core SDK 1.0](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 2.1](https://www.microsoft.com/net/download/core).
 - 선택하는 텍스트 편집기 또는 코드 편집기입니다.
 
 ## <a name="hello-console-app"></a>Hello, 콘솔 앱!
@@ -31,7 +31,6 @@ GitHub의 dotnet/samples 리포지토리에서 [샘플 코드를 보거나 다�
 
 ```console
 $ dotnet new console
-$ dotnet restore
 $ dotnet run
 ```
 
@@ -60,13 +59,12 @@ $ dotnet run
 
    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-2. `$ dotnet restore`
+   `dotnet new`는 [`dotnet restore`](../tools/dotnet-restore.md)를 암시적으로 호출합니다. `dotnet restore`는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자)을 호출하여 종속성 트리를 복원합니다. NuGet은 *Hello.csproj* 파일을 분석하고, 파일에 정의된 종속성을 다운로드하고(또는 머신의 캐시에서 종속성을 가져오고), 샘플을 컴파일 및 실행하는 데 필요한 *obj/project.assets.json* 파일을 작성합니다. 
+   
+   > [!IMPORTANT]
+   > SDK의 .NET Core 1.x 버전을 사용하는 경우 `dotnet new`를 호출한 후 `dotnet restore`를 직접 호출해야 합니다.
 
-   [`dotnet restore`](../tools/dotnet-restore.md)는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자)을 호출하여 종속성 트리를 복원합니다. NuGet은 *Hello.csproj* 파일을 분석하고, 파일에 명시된 종속성을 다운로드하고(또는 컴퓨터의 캐시에서 종속성을 가져오고), *obj/project.assets.json* 파일을 작성합니다.  *project.assets.json* 파일은 컴파일 및 실행하려면 필요합니다.
-
-   *project.assets.json* 파일은 NuGet 종속성 및 앱을 설명하는 기타 정보로 구성된 그래프의 지속적이고 전체적인 집합입니다.  [`dotnet build`](../tools/dotnet-build.md) 및 [`dotnet run`](../tools/dotnet-run.md) 같은 다른 도구에서는 이 파일을 읽고, NuGet 종속성 및 바인딩 확인의 올바른 집합으로 소스 코드를 처리합니다.
-
-3. `$ dotnet run`
+2. `$ dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md)은 [`dotnet build`](../tools/dotnet-build.md)를 호출하여 빌드 대상이 빌드되었는지를 확인하고 `dotnet <assembly.dll>`을 호출하여 대상 응용 프로그램을 실행합니다.
 
@@ -75,10 +73,9 @@ $ dotnet run
     Hello World!
     ```
 
-    또한 [`dotnet build`](../tools/dotnet-build.md)를 실행하여 빌드 콘솔 응용 프로그램을 실행하지 않고 코드를 컴파일할 수도 있습니다. 이로 인해 Windows에서는 `dotnet bin\Debug\netcoreapp1.0\Hello.dll`로, 다른 시스템에서는 `/`로 실행할 수 있는 컴파일된 응용 프로그램이 DLL 파일로 만들어집니다. 이 항목의 뒷부분에서 살펴보겠지만, 응용 프로그램에 인수를 지정할 수도 있습니다.
-
+    또한 [`dotnet build`](../tools/dotnet-build.md)를 실행하여 빌드 콘솔 응용 프로그램을 실행하지 않고 코드를 컴파일할 수도 있습니다. 이로 인해 Windows에서는 `dotnet bin\Debug\netcoreapp2.1\Hello.dll`로, 다른 시스템에서는 `/`로 실행할 수 있는 컴파일된 응용 프로그램이 DLL 파일로 만들어집니다. 이 항목의 뒷부분에서 살펴보겠지만, 응용 프로그램에 인수를 지정할 수도 있습니다.
     ```console
-    $ dotnet bin\Debug\netcoreapp1.0\Hello.dll
+    $ dotnet bin\Debug\netcoreapp2.1\Hello.dll
     Hello World!
     ```
 

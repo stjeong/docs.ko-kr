@@ -4,12 +4,12 @@ description: 패키지, 메타패키지 및 프레임워크 용어에 관해 알
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.openlocfilehash: f10965a8f5f2848f2b942b92577adf3185d8bd3c
-ms.sourcegitcommit: 77d9a94dac4c05827ed0663d95e0f9ad35d6682e
+ms.openlocfilehash: e68c63d26133ac76b718bb3696d16c81bd943dc2
+ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34472804"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45597690"
 ---
 # <a name="packages-metapackages-and-frameworks"></a>패키지, 메타패키지 및 프레임워크
 
@@ -56,7 +56,7 @@ ms.locfileid: "34472804"
 
 메타패키지는 서로 의미가 있는 패키지 집합을 기술하기 위한 NuGet 패키지 규칙입니다. 메타패키지는 종속성을 설정함으로써 이러한 패키지 집합을 나타냅니다. 선택적으로, 프레임워크를 지정하여 이 패키지 집합에 대한 프레임워크를 설정할 수 있습니다. 
 
-이전 버전의 .NET Core 도구(project.json 및 csproj 기반 도구)는 기본적으로 프레임워크와 메타패키지를 모두 지정했습니다. 그러나 현재 메타패키지는 암시적으로 대상 프레임워크에서 참조하므로 각 메타패키지는 대상 프레임워크에 연결됩니다. 예를 들어 `netstandard1.6` 프레임워크는 NetStandard.Library 버전 1.6.0 메타패키지를 참조합니다. 마찬가지로 `netcoreapp1.1` 프레임워크는 Microsoft.NETCore.App 버전 1.1.0 메타패키지를 참조합니다. 자세한 내용은 [Implicit metapackage package reference in the .NET Core SDK](https://github.com/dotnet/core/blob/master/release-notes/1.0/sdk/1.0-rc3-implicit-package-refs.md)(.NET Core SDK에서 암시적인 메타패키지 패키지 참조)를 참조하세요.
+이전 버전의 .NET Core 도구(project.json 및 csproj 기반 도구)는 기본적으로 프레임워크와 메타패키지를 모두 지정했습니다. 그러나 현재 메타패키지는 암시적으로 대상 프레임워크에서 참조하므로 각 메타패키지는 대상 프레임워크에 연결됩니다. 예를 들어 `netstandard1.6` 프레임워크는 NetStandard.Library 버전 1.6.0 메타패키지를 참조합니다. 마찬가지로 `netcoreapp2.1` 프레임워크는 Microsoft.NETCore.App 버전 2.1.0 메타패키지를 참조합니다. 자세한 내용은 [Implicit metapackage package reference in the .NET Core SDK](https://github.com/dotnet/core/blob/master/release-notes/1.0/sdk/1.0-rc3-implicit-package-refs.md)(.NET Core SDK에서 암시적인 메타패키지 패키지 참조)를 참조하세요.
 
 프레임워크 대상을 지정하고 메타패키지를 암시적으로 참조함으로써 각각의 종속된 패키지에 단일 제스처로서 참조를 추가하게 됩니다. 즉, IntelliSense(또는 유사한 환경) 및 앱 게시에 대해 해당 패키지의 모든 라이브러리를 사용할 수 있습니다.  
 

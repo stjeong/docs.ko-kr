@@ -13,12 +13,12 @@ helpviewer_keywords:
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
 author: blowdart
-ms.openlocfilehash: a45d57af1069bba9e3afe8c2e6e6d463115a4e39
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 96d37934b5e852b69c692bb1606d2998dac6f63a
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43798914"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47424482"
 ---
 # <a name="transport-layer-security-tls-best-practices-with-the-net-framework"></a>.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례
 
@@ -179,7 +179,10 @@ TLS 프로토콜에 대한 자세한 내용은 [완화: TLS 프로토콜](../mig
 
 ## <a name="configuring-security-via-the-windows-registry"></a>Windows 레지스트리를 통해 보안 구성
 
-하나 또는 두 `AppContext` 스위치를 모두 설정할 수 없는 경우에는 이 섹션에 설명된 Windows 레지스트리 키와 함께 앱에서 사용하는 보안 프로토콜을 제어할 수 있습니다. 앱이 4.6 이전의 .NET Framework 버전을 대상으로 하거나 구성 파일을 편집할 수 없는 경우에는 `AppContext` 스위치 중 하나 또는 모두를 사용할 수 없습니다. 레지스트리를 사용하여 보안을 구성하려면 코드에서 보안 프로토콜 값을 지정하지 마세요. 지정할 경우 레지스트리가 재정의됩니다.
+> [!WARNING]
+> 레지스트리 키를 설정하면 시스템의 모든 응용 프로그램에 영향을 줍니다. 머신에 대한 모든 권한이 있고 레지스트리의 변경 내용을 제거할 수 있는 경우에만 이 옵션을 사용합니다.
+
+하나 또는 두 `AppContext` 스위치를 모두 설정할 수 없는 경우에는 이 섹션에 설명된 Windows 레지스트리 키와 함께 앱에서 사용하는 보안 프로토콜을 제어할 수 있습니다. 앱이 .NET Framework 4.5.2 이하 버전에서 실행되거나 구성 파일을 편집할 수 없는 경우에는 `AppContext` 스위치 중 하나 또는 모두를 사용할 수 없습니다. 레지스트리를 사용하여 보안을 구성하려면 코드에서 보안 프로토콜 값을 지정하지 마세요. 지정할 경우 레지스트리 설정이 재정의됩니다.
 
 레지스트리 키의 이름은 해당 `AppContext` 스위치의 이름과 유사하지만 이름 앞에 `DontEnable`이 추가되지 않습니다. 예를 들어 `AppContext` 스위치 `DontEnableSchUseStrongCrypto`는 [SchUseStrongCrypto](#schusestrongcrypto)라는 레지스트리 키입니다.
 

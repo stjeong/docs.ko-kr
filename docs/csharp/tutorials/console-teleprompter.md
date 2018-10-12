@@ -3,12 +3,12 @@ title: 콘솔 응용 프로그램
 description: 이 자습서에서는 .NET Core 및 C# 언어의 다양한 기능에 대해 설명합니다.
 ms.date: 03/06/2017
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
-ms.openlocfilehash: bae03c9ae02f2888b1b70617ca712ef7927e9dce
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: da3f8f913d452b5c3c9dcda6079067c879a678dd
+ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37961419"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46937594"
 ---
 # <a name="console-application"></a>콘솔 응용 프로그램
 
@@ -20,7 +20,7 @@ ms.locfileid: "37961419"
 - .NET에 포함된 파일 I/O API의 기본 사항
 - .NET에 포함된 작업 비동기 프로그래밍의 기본 사항
 
-텍스트 파일을 읽고 콘솔에 해당 텍스트 파일의 내용을 에코하는 응용 프로그램을 빌드해 보겠습니다. 콘솔의 출력은 소리 내어 읽는 속도에 맞춰집니다. ‘<’ 또는 ‘>’ 키를 눌러 속도를 높이거나 낮출 수 있습니다.
+텍스트 파일을 읽고 콘솔에 해당 텍스트 파일의 내용을 에코하는 응용 프로그램을 빌드해 보겠습니다. 콘솔의 출력은 소리 내어 읽는 속도에 맞춰집니다. ‘<’(보다 작음) 또는 ‘>’(보다 큼) 키를 눌러 속도를 높이거나 낮출 수 있습니다.
 
 이 자습서에는 많은 기능이 있습니다. 하나씩 빌드해 보겠습니다.
 
@@ -190,7 +190,7 @@ ShowTeleprompter().Wait();
 > [!NOTE]
 > C# 7.1 이상을 사용하는 경우 [`async` `Main` 메서드](../whats-new/csharp-7-1.md#async-main)로 콘솔 응용 프로그램을 만들 수 있습니다.
 
-다음에는 두 번째 비동기 메서드를 작성하여 콘솔에서 읽고 '<’ 및 ‘>’ 키를 조사해야 합니다. 해당 작업에 대해 추가하는 메서드는 다음과 같습니다.
+다음에는 콘솔에서 읽는 두 번째 비동기 메서드를 작성하고 ‘<’(보다 작음) 또는 ‘>’(보다 큼) 키를 확인해야 합니다. 해당 작업에 대해 추가하는 메서드는 다음과 같습니다.
 
 ```csharp
 private static async Task GetInput()
@@ -214,7 +214,7 @@ private static async Task GetInput()
 }
 ```
 
-이 메서드는 콘솔에서 키를 읽고 사용자가 ‘<’ 또는 ‘>’를 누를 때 지연을 나타내는 지역 변수를 수정하는 <xref:System.Action> 대리자를 나타내는 람다 식을 만듭니다. 이 메서드는 <xref:System.Console.ReadKey> 를 사용하여 차단한 후 사용자가 키를 누를 때까지 기다립니다.
+이 메서드는 콘솔에서 키를 읽고 사용자가 ‘<’(보다 작음) 또는 ‘>’(보다 큼) 키를 누를 때 지연을 나타내는 지역 변수를 수정하는 <xref:System.Action> 대리자를 나타내는 람다 식을 만듭니다. 이 메서드는 <xref:System.Console.ReadKey> 를 사용하여 차단한 후 사용자가 키를 누를 때까지 기다립니다.
 
 이 기능을 완료하려면 이러한 두 작업(`GetInput` 및 `ShowTeleprompter`)을 시작하고 이러한 두 작업 간에 공유 데이터를 관리하는 새 `async Task` 반환 메서드를 만들어야 합니다.
 
@@ -277,10 +277,10 @@ private static async Task RunTeleprompter()
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
     var words = ReadFrom("sampleQuotes.txt");
-    foreach (var line in words)
+    foreach (var word in words)
     {
-        Console.Write(line);
-        if (!string.IsNullOrWhiteSpace(line))
+        Console.Write(word);
+        if (!string.IsNullOrWhiteSpace(word))
         {
             await Task.Delay(config.DelayInMilliseconds);
         }

@@ -14,6 +14,7 @@
 ### [스트림 작성](composing-streams.md)
 ### [방법: .NET Framework 스트림과 Windows 런타임 스트림 간 변환](how-to-convert-between-dotnet-streams-and-winrt-streams.md)
 ## [비동기 파일 I/O](asynchronous-file-i-o.md)
+## [I/O 오류 처리](handling-io-errors.md)
 ## [격리된 저장소](isolated-storage.md)
 ### [격리 유형](types-of-isolation.md)
 ### [방법: 격리된 저장소의 저장소 가져오기](how-to-obtain-stores-for-isolated-storage.md)

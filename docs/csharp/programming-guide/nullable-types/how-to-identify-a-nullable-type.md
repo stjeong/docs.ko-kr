@@ -1,20 +1,20 @@
 ---
 title: '방법: nullable 형식 식별(C# 프로그래밍 가이드)'
 description: 형식이 nullable 형식이거나 인스턴스가 nullable 형식인지 여부를 확인하는 방법 알아보기
-ms.date: 08/06/2018
+ms.date: 09/24/2018
 helpviewer_keywords:
 - nullable types [C#], identifying
 ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387
-ms.openlocfilehash: c65f80974154d81b5ddf239b617eeeda68434e09
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: f9957568d3c68f60cc9286718be9f5a496f876e6
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45624949"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47400545"
 ---
 # <a name="how-to-identify-a-nullable-type-c-programming-guide"></a>방법: nullable 형식 식별(C# 프로그래밍 가이드)
 
-다음 코드 예제에서는 <xref:System.Type?displayProperty=nameWithType> 인스턴스가 nullable 형식을 나타내는지 여부를 확인하는 방법을 보여줍니다.
+다음 예제는 <xref:System.Type?displayProperty=nameWithType> 인스턴스가 폐쇄형 제네릭 nullable 형식(지정된 형식 매개 변수 `T`가 포함된 <xref:System.Nullable%601?displayProperty=nameWithType> 형식)을 나타내는지 확인하는 방법을 보여 줍니다.
 
 [!code-csharp-interactive[whether Type is nullable](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#1)]
 

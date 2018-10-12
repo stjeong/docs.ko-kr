@@ -10,18 +10,16 @@ helpviewer_keywords:
 ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 216480e893f6dbebbb204cbf2bfebae8dc139ec4
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: ff604b94ecef1ffec5fe9845df7c5ba35f5857d7
+ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45593858"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46000270"
 ---
 # <a name="how-to-use-spinlock-for-low-level-synchronization"></a>방법: 낮은 수준의 동기화에 SpinLock 사용
-다음 예제는 <xref:System.Threading.SpinLock> 사용 방법을 보여줍니다.  
-  
-## <a name="example"></a>예  
- 이 예제에서 중요 섹션은 최소한의 작업을 수행하여 <xref:System.Threading.SpinLock>에 대해 적합한 후보를 만듭니다. 작업을 약간 늘리면 표준 잠금과 비교하여 <xref:System.Threading.SpinLock>의 성능이 향상됩니다. 그러나 SpinLock이 표준 잠금보다 비용이 드는 지점이 있습니다. 프로파일링 도구에서 동시성 프로파일링 기능을 사용하여 어떤 유형의 잠금이 프로그램에서 더 나은 성능을 제공하는지 확인할 수 있습니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer)를 참조하세요.  
+
+다음 예제는 <xref:System.Threading.SpinLock> 사용 방법을 보여줍니다. 이 예제에서 중요 섹션은 최소한의 작업을 수행하여 <xref:System.Threading.SpinLock>에 대해 적합한 후보를 만듭니다. 작업을 약간 늘리면 표준 잠금과 비교하여 <xref:System.Threading.SpinLock>의 성능이 향상됩니다. 그러나 SpinLock이 표준 잠금보다 비용이 드는 지점이 있습니다. 프로파일링 도구에서 동시성 프로파일링 기능을 사용하여 어떤 유형의 잠금이 프로그램에서 더 나은 성능을 제공하는지 확인할 수 있습니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer)를 참조하세요.  
   
  [!code-csharp[CDS_SpinLock#02](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_spinlock/cs/spinlockdemo.cs#02)]
  [!code-vb[CDS_SpinLock#02](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_spinlock/vb/spinlock_vb.vb#02)]  
@@ -30,8 +28,10 @@ ms.locfileid: "45593858"
   
  이 예제에서는 다중 스레드 액세스를 위해 사용자 동기화가 필요한 <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType> 클래스를 사용합니다. .NET Framework 버전 4를 대상으로 하는 응용 프로그램에서 다른 옵션은 사용자 잠금이 필요하지 않은 <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>를 사용하는 것입니다.  
   
- <xref:System.Threading.SpinLock.Exit%2A>에 대한 호출에서 `false`(Visual Basic의 경우 `False`)를 사용합니다. 그러면 최상의 성능을 제공합니다. IA64 아키텍처에서 `true`(`True`)을 지정하여 메모리 담장을 사용합니다. 그러면 쓰기 버퍼를 플러시하여 종료할 다른 스레드에서 잠금을 사용할 수 있는지 확인합니다.  
+ <xref:System.Threading.SpinLock.Exit%2A?displayProperty=nameWithType>에 대한 호출에서 `false`(Visual Basic의 경우 `False`)를 사용합니다. 그러면 최상의 성능을 제공합니다. IA64 아키텍처에서 `true`(Visual Basic에서 `True`)를 지정하여 메모리 담장을 사용합니다. 그러면 쓰기 버퍼를 플러시하여 종료할 다른 스레드에서 잠금을 사용할 수 있는지 확인합니다.  
   
 ## <a name="see-also"></a>참고 항목
 
-- [스레딩 개체 및 기능](../../../docs/standard/threading/threading-objects-and-features.md)
+- [스레딩 개체 및 기능](threading-objects-and-features.md)
+- [lock 문(C#)](../../csharp/language-reference/keywords/lock-statement.md)
+- [SyncLock 문(Visual Basic)](../../visual-basic/language-reference/statements/synclock-statement.md)

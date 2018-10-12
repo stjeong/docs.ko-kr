@@ -4,12 +4,12 @@ description: 기존 및 .NET Core csproj 파일 간의 차이점에 대해 알�
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.openlocfilehash: d868eb689af1d87ea2adb1f0069345cbb8195af7
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 1fd264da2863fbeb88900be0f6fe000acac08a09
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45646378"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47216918"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>.NET Core용 csproj 형식에 대한 추가 사항
 
@@ -83,11 +83,11 @@ csproj를 사용하는 경우 프로젝트에서 기본 GLOB를 제거하고 다
 
 해당 csproj 변경 내용은 프로젝트 파일을 크게 간소화하지만 SDK 및 해당 대상이 포함된 후 MSBuild에서 보는 것처럼 완전히 확장된 프로젝트를 확인해야 할 수 있습니다. 가져온 파일, 해당 소스 및 실제로 프로젝트를 빌드하지 않는 빌드에 대한 기여를 보여 주는 [`dotnet msbuild`](dotnet-msbuild.md) 명령의 [`/pp` 스위치](/visualstudio/msbuild/msbuild-command-line-reference#preprocess)를 사용하여 프로젝트를 전처리합니다.
 
-`dotnet msbuild /pp:fullproject.xml`
+`dotnet msbuild -pp:fullproject.xml`
 
 프로젝트에 대상 프레임워크가 여러 개 있는 경우 명령의 결과는 대상을 MSBuild 속성으로 지정하여 대상 프레임워크 중 하나에만 초점을 맞춰야 합니다.
 
-`dotnet msbuild /p:TargetFramework=netcoreapp2.0 /pp:fullproject.xml`
+`dotnet msbuild -p:TargetFramework=netcoreapp2.0 -pp:fullproject.xml`
 
 ## <a name="additions"></a>추가
 
@@ -265,3 +265,37 @@ nuget.exe 및 Visual Studio 패키지 관리자에 의해 적용되는, 이 패�
 
 ### <a name="nuspecproperties"></a>NuspecProperties
 key=value 쌍의 세미콜론으로 구분된 목록입니다.
+
+## <a name="assemblyinfo-properties"></a>AssemblyInfo 속성
+일반적으로 *AssemblyInfo* 파일에 있는 [어셈블리 특성](../../framework/app-domains/set-assembly-attributes.md)은 이제 속성에서 자동으로 생성됩니다.
+
+### <a name="properties-per-attribute"></a>특성별 속성
+
+각 특성에는 해당 콘텐츠를 제어하는 속성과 다음 표에 표시된 대로 생성을 사용하지 않도록 설정하는 또 다른 속성이 있습니다.
+
+| 특성                                                      | 속성               | 사용하지 않도록 설정할 속성                             |
+|----------------------------------------------------------------|------------------------|-------------------------------------------------|
+| <xref:System.Reflection.AssemblyCompanyAttribute>              | `Company`              | `GenerateAssemblyCompanyAttribute`              |
+| <xref:System.Reflection.AssemblyConfigurationAttribute>        | `Configuration`        | `GenerateAssemblyConfigurationAttribute`        |
+| <xref:System.Reflection.AssemblyCopyrightAttribute>            | `Copyright`            | `GenerateAssemblyCopyrightAttribute`            |
+| <xref:System.Reflection.AssemblyDescriptionAttribute>          | `Description`          | `GenerateAssemblyDescriptionAttribute`          |
+| <xref:System.Reflection.AssemblyFileVersionAttribute>          | `FileVersion`          | `GenerateAssemblyFileVersionAttribute`          |
+| <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `InformationalVersion` | `GenerateAssemblyInformationalVersionAttribute` |
+| <xref:System.Reflection.AssemblyProductAttribute>              | `Product`              | `GenerateAssemblyProductAttribute`              |
+| <xref:System.Reflection.AssemblyTitleAttribute>                | `AssemblyTitle`        | `GenerateAssemblyTitleAttribute`                |
+| <xref:System.Reflection.AssemblyVersionAttribute>              | `AssemblyVersion`      | `GenerateAssemblyVersionAttribute`              |
+| <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `NeutralLanguage`      | `GenerateNeutralResourcesLanguageAttribute`     |
+
+메모:
+
+* `AssemblyVersion` 및 `FileVersion` 기본값은 접미사 없이 `$(Version)` 값을 사용하는 것입니다. 예를 들어 `$(Version)`가 `1.2.3-beta.4`인 경우 값은 `1.2.3`입니다.
+* `InformationalVersion`은 기본적으로 `$(Version)` 값으로 설정됩니다.
+* 속성이 있는 경우 `InformationalVersion`에 `$(SourceRevisionId)`가 추가됩니다. `IncludeSourceRevisionInInformationalVersion`을 사용하여 사용하지 않도록 설정할 수 있습니다.
+* `Copyright` 및 `Description` 속성도 NuGet 메타데이터에 사용됩니다.
+* `Configuration`은 모든 빌드 프로세스와 공유되고 `dotnet` 명령의 `--configuration` 매개 변수를 통해 설정됩니다.
+
+### <a name="generateassemblyinfo"></a>GenerateAssemblyInfo 
+모든 AssemblyInfo 생성을 사용하거나 사용하지 않도록 설정하는 부울입니다. 기본값은 `true`입니다. 
+
+### <a name="generatedassemblyinfofile"></a>GeneratedAssemblyInfoFile 
+생성된 어셈블리 정보 파일의 경로입니다. 기본적으로 `$(IntermediateOutputPath)`(obj) 디렉터리의 파일로 설정합니다.

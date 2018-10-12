@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: dc5c76cf-7b12-406f-b79c-d1a023ec245d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0501bb2b67c6bbe23c46dc350aedea7d7be09ba1
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: ae8fbb47986e5baaecb919ce79ae384a8427737a
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42911733"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47231127"
 ---
 # <a name="marshaling-data-with-platform-invoke"></a>플랫폼 호출을 사용하여 데이터 마샬링
 관리되지 않는 라이브러리에서 내보낸 함수를 호출하려면 .NET Framework 응용 프로그램의 관리 코드에 관리되지 않는 함수를 나타내는 함수 프로토타입이 필요합니다. 데이터를 제대로 마샬링하도록 플랫폼에서 호출할 수 있는 프로토타입을 만들려면 다음을 수행해야 합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "42911733"
 ## <a name="platform-invoke-data-types"></a>플랫폼 호출 데이터 형식  
  다음 표에는 Win32 API(Wtypes.h에 나열됨) 및 C 스타일 함수에서 사용되는 데이터 형식이 나와 있습니다. 대부분 관리되지 않는 라이브러리에는 이들 데이터 형식을 매개 변수 및 반환 값으로 전달하는 함수가 있습니다. 세 번째 열에는 관리 코드에서 사용하는 것에 해당하는 .NET Framework 기본 제공 값 형식 또는 클래스가 나열됩니다. 경우에 따라 표에 나열된 형식 대신 같은 크기의 형식을 사용할 수 있습니다.  
   
-|Wtypes.h의 관리되지 않는 형식|관리되지 않는 C 언어 형식|관리되는 클래스 이름|설명|  
+|Wtypes.h의 관리되지 않는 형식|관리되지 않는 C 언어 형식|관리되지 않는 클래스 이름|설명|  
 |--------------------------------|-------------------------------|------------------------|-----------------|  
 |**VOID**|**void**|<xref:System.Void?displayProperty=nameWithType>|값을 반환하지 않는 함수에 적용됩니다.|
 |**HANDLE**|**void \***|<xref:System.IntPtr?displayProperty=nameWithType>|32비트 Windows 운영 체제의 32비트, 64비트 운영 체제의 64비트.|  
@@ -46,10 +46,10 @@ ms.locfileid: "42911733"
 |**ULONG**|**unsigned long**|<xref:System.UInt32?displayProperty=nameWithType>|32비트|  
 |**CHAR**|**char**|<xref:System.Char?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
 |**WCHAR**|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
-|**LPSTR**|**char \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
-|**LPCSTR**|**const char\***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
-|**LPWSTR**|**wchar_t \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
-|**LPCWSTR**|**const wchar_t \***|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
+|**LPSTR**|**char &ast;**|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
+|**LPCSTR**|**Const char &ast;**|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|ANSI로 데코레이트합니다.|  
+|**LPWSTR**|**wchar_t &ast;**|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
+|**LPCWSTR**|**Const wchar_t &ast;**|<xref:System.String?displayProperty=nameWithType> 또는 <xref:System.Text.StringBuilder?displayProperty=nameWithType>|유니코드로 데코레이트합니다.|  
 |**FLOAT**|**float**|<xref:System.Single?displayProperty=nameWithType>|32비트|  
 |**DOUBLE**|**double**|<xref:System.Double?displayProperty=nameWithType>|64비트|  
   
