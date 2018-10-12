@@ -3,61 +3,91 @@ title: 의사 결정 테이블. Docker에 사용할 .NET Framework
 description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | 의사 결정 테이블, Docker에 사용할 .NET Framework
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/18/2017
-ms.openlocfilehash: c45fbb9f26e6cd315e1b623ba2c79d5d038a6919
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.date: 09/11/2018
+ms.openlocfilehash: 74b3749077fdb375f84ddacd98221aa4afcf2f67
+ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105302"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47401240"
 ---
-# <a name="decision-table-net-frameworks-to-use-for-docker"></a><span data-ttu-id="17334-104">의사 결정 테이블: Docker에 사용할 .NET Framework</span><span class="sxs-lookup"><span data-stu-id="17334-104">Decision table: .NET frameworks to use for Docker</span></span>
+# <a name="decision-table-net-frameworks-to-use-for-docker"></a><span data-ttu-id="bcf2c-104">의사 결정 테이블: Docker에 사용할 .NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-104">Decision table: .NET frameworks to use for Docker</span></span>
 
-<span data-ttu-id="17334-105">다음은 .NET Framework 또는 .NET Core 중 무엇을, 그리고 Windows 또는 Linux 컨테이너 중 무엇을 사용할지 요약하는 내용입니다.</span><span class="sxs-lookup"><span data-stu-id="17334-105">The following summarizes whether to use .NET Framework or .NET Core, and Windows or Linux containers.</span></span> <span data-ttu-id="17334-106">Linux 컨테이너의 경우 Linux 기반 Docker 호스트(VM 또는 서버)가 필요하고, Windows 컨테이너의 경우 Windows Server 기반 Docker 호스트(VM 또는 서버)가 필요하다는 사실을 기억해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-106">Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers) and that for Windows Containers you need Windows Server based Docker hosts (VMs or servers).</span></span>
-
-<span data-ttu-id="17334-107">의사 결정에 영향을 주는 몇 가지 응용 프로그램 기능이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="17334-107">There are several features of your application that affect your decision.</span></span> <span data-ttu-id="17334-108">의사를 결정할 때 이러한 기능의 중요도에 가중치를 부여해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-108">You should weigh the importance of these features when making your decision.</span></span>
+<span data-ttu-id="bcf2c-105">다음 의사 결정 테이블에서는 .NET Framework 또는 .NET Core를 사용 할지 여부를 간략하게 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="bcf2c-105">The following decision table summarizes whether to use .NET Framework or .NET Core.</span></span> <span data-ttu-id="bcf2c-106">Linux 컨테이너의 경우 Linux 기반 Docker 호스트(VM 또는 서버)가 필요하고, Windows 컨테이너의 경우 Windows Server 기반 Docker 호스트(VM 또는 서버)가 필요하다는 사실을 기억해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bcf2c-106">Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers) and that for Windows Containers you need Windows Server based Docker hosts (VMs or servers).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="17334-109">개발 컴퓨터에서 Docker 호스트(Linux 또는 Windows)를 하나 실행해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-109">Your development machines will run one Docker host, either Linux or Windows.</span></span> <span data-ttu-id="17334-110">한 솔루션에서 함께 실행하고 테스트할 관련 마이크로 서비스가 전부 동일한 컨테이너 플랫폼에서 실행되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-110">Related microservices that you want to run and test together in one solution will all need to run on the same container platform.</span></span>
+> <span data-ttu-id="bcf2c-107">개발 컴퓨터에서 Docker 호스트(Linux 또는 Windows)를 하나 실행해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bcf2c-107">Your development machines will run one Docker host, either Linux or Windows.</span></span> <span data-ttu-id="bcf2c-108">한 솔루션에서 함께 실행하고 테스트할 관련 마이크로 서비스가 전부 동일한 컨테이너 플랫폼에서 실행되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bcf2c-108">Related microservices that you want to run and test together in one solution will all need to run on the same container platform.</span></span>
 
-* <span data-ttu-id="17334-111">응용 프로그램 아키텍처로 **컨테이너의 마이크로 서비스**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-111">Your application architecture choice is **Microservices on containers**.</span></span>
-    - <span data-ttu-id="17334-112">.NET 구현으로 *.NET Core*를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-112">Your .NET implementation choice should be *.NET Core*.</span></span>
-    - <span data-ttu-id="17334-113">컨테이너 플랫폼으로 *Linux 컨테이너*를 선택해도 되고 *Windows 컨테이너*를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-113">Your container platform choice can be either *Linux containers* or *Windows containers*.</span></span>
-* <span data-ttu-id="17334-114">응용 프로그램 아키텍처로 **모놀리식 응용 프로그램**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-114">Your application architecture choice is a **Monolithic application**.</span></span>
-    - <span data-ttu-id="17334-115">.NET 구현으로 *.NET Core*를 선택해도 되고 *.NET Framework*를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-115">Your .NET implementation choice can be either *.NET Core* or *.NET Framework*.</span></span>
-    - <span data-ttu-id="17334-116">*.NET Core*를 선택한 경우 컨테이너 플랫폼으로 *Linux 컨테이너*를 선택해도 되고 *Windows 컨테이너*를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-116">If you have chosen *.NET Core*, your container platform choice can be either *Linux containers* or *Windows containers*.</span></span>
-    - <span data-ttu-id="17334-117">*.NET Framework*를 선택한 경우 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-117">If you have chosen *.NET Framework*, your container platform choice must be *Windows containers*.</span></span>
-* <span data-ttu-id="17334-118">응용 프로그램은 **새 컨테이너 기반 개발("그린 필드")** 입니다.</span><span class="sxs-lookup"><span data-stu-id="17334-118">Your application is a  **New container-based development ("green-field")**.</span></span>
-    - <span data-ttu-id="17334-119">.NET 구현으로 *.NET Core*를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-119">Your .NET implementation choice should be *.NET Core*.</span></span>
-    - <span data-ttu-id="17334-120">컨테이너 플랫폼으로 *Linux 컨테이너*를 선택해도 되고 *Windows 컨테이너*를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-120">Your container platform choice can be either *Linux containers* or *Windows containers*.</span></span>
-* <span data-ttu-id="17334-121">응용 프로그램은 **컨테이너로의 Windows Server 레거시 앱("브라운 필드") 마이그레이션**</span><span class="sxs-lookup"><span data-stu-id="17334-121">Your application is a **Windows Server legacy app ("brown-field") migration to containers**</span></span>
-    - <span data-ttu-id="17334-122">.NET 구현으로 프레임워크 종속성 기반의 *.NET Framework*를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-122">Your .NET implementation choice is *.NET Framework* based on framework dependency.</span></span>
-    - <span data-ttu-id="17334-123">.NET Framework 종속성 때문에 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-123">Your container platform choice must be *Windows containers* because of the .NET Framework dependency.</span></span>
-* <span data-ttu-id="17334-124">응용 프로그램의 디자인 목표는 **동급 최고의 성능 및 확장성**입니다.</span><span class="sxs-lookup"><span data-stu-id="17334-124">Your application's design goal is **Best-in-class performance and scalability**.</span></span>
-    - <span data-ttu-id="17334-125">.NET 구현으로 *.NET Core*를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-125">Your .NET implementation choice should be *.NET Core*.</span></span>
-    - <span data-ttu-id="17334-126">컨테이너 플랫폼으로 *Linux 컨테이너*를 선택해도 되고 *Windows 컨테이너*를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-126">Your container platform choice can be either *Linux containers* or *Windows containers*.</span></span>
-* <span data-ttu-id="17334-127">**ASP.NET Core**를 사용하여 응용 프로그램을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-127">You built your application using **ASP.NET Core**.</span></span>
-    - <span data-ttu-id="17334-128">.NET 구현으로 *.NET Core*를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-128">Your .NET implementation choice should be *.NET Core*.</span></span>
-    - <span data-ttu-id="17334-129">다른 프레임워크 종속성이 있는 경우 *.NET Framework* 구현을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="17334-129">You can use the *.NET Framework* implementation, if you have other framework dependencies.</span></span>
-    - <span data-ttu-id="17334-130">*.NET Core*를 선택한 경우 컨테이너 플랫폼으로 *Linux 컨테이너*를 선택해도 되고 *Windows 컨테이너*를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-130">If you have chosen *.NET Core*, your container platform choice can be either *Linux containers* or *Windows containers*.</span></span>
-    - <span data-ttu-id="17334-131">*.NET Framework*를 선택한 경우 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-131">If you have chosen *.NET Framework*, your container platform choice must be *Windows containers*.</span></span>
-* <span data-ttu-id="17334-132">**ASP.NET 4(MVC 5, Web API 2 및 Web Forms)** 를 사용하여 응용 프로그램을 빌드합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-132">You built your application using **ASP.NET 4 (MVC 5, Web API 2, and Web Forms)**.</span></span>
-    - <span data-ttu-id="17334-133">.NET 구현으로 프레임워크 종속성 기반의 *.NET Framework*를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-133">Your .NET implementation choice is *.NET Framework* based on framework dependency.</span></span>
-    - <span data-ttu-id="17334-134">.NET Framework 종속성 때문에 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-134">Your container platform choice must be *Windows containers* because of the .NET Framework dependency.</span></span>
-* <span data-ttu-id="17334-135">응용 프로그램에서는 **SignalR 서비스**를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-135">Your application uses **SignalR services**.</span></span>
-    - <span data-ttu-id="17334-136">.NET 구현으로 *.NET Framework*를 선택해도 되고 *.NET Core 2.1 이상(릴리스된 경우)* 을 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-136">Your .NET implementation choice can be *.NET Framework*, or *.NET Core 2.1 (when released) or later*.</span></span>
-    - <span data-ttu-id="17334-137">.NET Framework에서 SignalR 구현을 선택한 경우 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-137">Your container platform choice must be *Windows containers* if you chose the SignalR implementation in .NET Framework.</span></span>
-    - <span data-ttu-id="17334-138">.NET Core 2.1 이상(릴리스된 경우)에서 SignalR 구현을 선택한 경우 컨테이너 플랫폼으로 Linux 컨테이너를 선택해도 되고 Windows 컨테이너를 선택해도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="17334-138">Your container platform choice can be either Linux containers or Windows containers if you chose the SignalR implementation in .NET Core 2.1 or later (when released).</span></span>  
-    - <span data-ttu-id="17334-139">**SignalR 서비스**가 *.NET Core*에서 실행되면 *Linux 컨테이너 또는 Windows 컨테이너*를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="17334-139">When **SignalR services** run on *.NET Core*, you can use *Linux containers or Windows Containers*.</span></span>
-* <span data-ttu-id="17334-140">응용 프로그램에서는 **WCF, WF 및 기타 레거시 프레임워크**를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-140">Your application uses **WCF, WF, and other legacy frameworks**.</span></span>
-    - <span data-ttu-id="17334-141">.NET 구현으로 *.NET Framework* 또는 *.NET Core(향후 릴리스에 대한 로드맵에 있는)* 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-141">Your .NET implementation choice is *.NET Framework*, or *.NET Core (in the roadmap for a future release)*.</span></span>
-    - <span data-ttu-id="17334-142">.NET Framework 종속성 때문에 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-142">Your container platform choice must be *Windows containers* because of the .NET Framework dependency.</span></span>
-* <span data-ttu-id="17334-143">응용 프로그램에서는 **Azure 서비스를 사용**합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-143">Your application involves **Consumption of Azure services**.</span></span>
-    - <span data-ttu-id="17334-144">.NET 구현으로 *.NET Framework* 또는 *.NET Core(궁극적으로 모든 Azure 서비스 클라이언트에서 SDKs for .NET Core 제공)* 를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-144">Your .NET implementation choice is *.NET Framework*, or *.NET Core (eventually all Azure services will provide client SDKs for .NET Core)*.</span></span>
-    - <span data-ttu-id="17334-145">.NET Framework 클라이언트 API를 사용하는 경우 컨테이너 플랫폼으로 *Windows 컨테이너*를 선택해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="17334-145">Your container platform choice must be *Windows containers* if you use .NET Framework client APIs.</span></span>
-    - <span data-ttu-id="17334-146">*.NET Core*에 제공되는 클라이언트 API를 사용하는 경우 *Linux 컨테이너 및 Windows 컨테이너* 중에 선택할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="17334-146">If you use client APIs available for *.NET Core*, you can also choose between *Linux containers and Windows containers*.</span></span>
+<table>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="bcf2c-109"><strong>아키텍처/앱 형식</strong></span><span class="sxs-lookup"><span data-stu-id="bcf2c-109"><strong>Architecture / App Type</strong></span></span></th>
+<th><span data-ttu-id="bcf2c-110"><strong>Linux 컨테이너</strong></span><span class="sxs-lookup"><span data-stu-id="bcf2c-110"><strong>Linux containers</strong></span></span></th>
+<th><span data-ttu-id="bcf2c-111"><strong>Windows 컨테이너</strong></span><span class="sxs-lookup"><span data-stu-id="bcf2c-111"><strong>Windows Containers</strong></span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="bcf2c-112">컨테이너의 마이크로 서비스</span><span class="sxs-lookup"><span data-stu-id="bcf2c-112">Microservices on containers</span></span></td>
+<td><span data-ttu-id="bcf2c-113">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-113">.NET Core</span></span></td>
+<td><span data-ttu-id="bcf2c-114">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-114">.NET Core</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="bcf2c-115">모놀리식 앱</span><span class="sxs-lookup"><span data-stu-id="bcf2c-115">Monolithic app</span></span></td>
+<td><span data-ttu-id="bcf2c-116">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-116">.NET Core</span></span></td>
+<td><p><span data-ttu-id="bcf2c-117">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-117">.NET Framework</span></span></p>
+<p><span data-ttu-id="bcf2c-118">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-118">.NET Core</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="bcf2c-119">최고의 성능 및 확장성</span><span class="sxs-lookup"><span data-stu-id="bcf2c-119">Best-in-class performance and scalability</span></span></td>
+<td><span data-ttu-id="bcf2c-120">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-120">.NET Core</span></span></td>
+<td><span data-ttu-id="bcf2c-121">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-121">.NET Core</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="bcf2c-122">컨테이너에 대한 Windows Server 레거시 앱(“갈색 필드”) 마이그레이션</span><span class="sxs-lookup"><span data-stu-id="bcf2c-122">Windows Server legacy app ("brown-field") migration to containers</span></span></td>
+<td>--</td>
+<td><span data-ttu-id="bcf2c-123">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-123">.NET Framework</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="bcf2c-124">새 컨테이너 기반 개발(“녹색 필드”)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-124">New container-based development ("green-field")</span></span></td>
+<td><span data-ttu-id="bcf2c-125">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-125">.NET Core</span></span></td>
+<td><span data-ttu-id="bcf2c-126">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-126">.NET Core</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="bcf2c-127">ASP.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-127">ASP.NET Core</span></span></td>
+<td><span data-ttu-id="bcf2c-128">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-128">.NET Core</span></span></td>
+<td><p><span data-ttu-id="bcf2c-129">.NET Core(권장)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-129">.NET Core (recommended)</span></span></p>
+<p><span data-ttu-id="bcf2c-130">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-130">.NET Framework</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="bcf2c-131">ASP.NET 4(MVC 5, Web API 2 및 Web Forms)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-131">ASP.NET 4 (MVC 5, Web API 2, and Web Forms)</span></span></td>
+<td>--</td>
+<td><span data-ttu-id="bcf2c-132">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-132">.NET Framework</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="bcf2c-133">SignalR 서비스</span><span class="sxs-lookup"><span data-stu-id="bcf2c-133">SignalR services</span></span></td>
+<td><span data-ttu-id="bcf2c-134">.NET Core 2.1 이상 버전</span><span class="sxs-lookup"><span data-stu-id="bcf2c-134">.NET Core 2.1 or higher version</span></span></td>
+<td><p><span data-ttu-id="bcf2c-135">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-135">.NET Framework</span></span></p>
+<p><span data-ttu-id="bcf2c-136">.NET Core 2.1 이상 버전</span><span class="sxs-lookup"><span data-stu-id="bcf2c-136">.NET Core 2.1 or higher version</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="bcf2c-137">WCF, WF 및 기타 레거시 프레임워크</span><span class="sxs-lookup"><span data-stu-id="bcf2c-137">WCF, WF, and other legacy frameworks</span></span></td>
+<td><span data-ttu-id="bcf2c-138">.NET Core의 WCF(WCF 클라이언트 라이브러리만)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-138">WCF in .NET Core (only the WCF client library)</span></span></td>
+<td><p><span data-ttu-id="bcf2c-139">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-139">.NET Framework</span></span></p>
+<p><span data-ttu-id="bcf2c-140">.NET Core의 WCF(WCF 클라이언트 라이브러리만)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-140">WCF in .NET Core (only the WCF client library)</span></span></p></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="bcf2c-141">Azure 서비스 사용</span><span class="sxs-lookup"><span data-stu-id="bcf2c-141">Consumption of Azure services</span></span></td>
+<td><p><span data-ttu-id="bcf2c-142">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-142">.NET Core</span></span></p>
+<p><span data-ttu-id="bcf2c-143">(궁극적으로 모든 Azure 서비스 클라이언트에서 SDKs for .NET Core 제공)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-143">(eventually all Azure services will provide client SDKs for .NET Core)</span></span></p></td>
+<td><p><span data-ttu-id="bcf2c-144">.NET Framework</span><span class="sxs-lookup"><span data-stu-id="bcf2c-144">.NET Framework</span></span></p>
+<p><span data-ttu-id="bcf2c-145">.NET Core</span><span class="sxs-lookup"><span data-stu-id="bcf2c-145">.NET Core</span></span></p>
+<p><span data-ttu-id="bcf2c-146">(궁극적으로 모든 Azure 서비스 클라이언트에서 SDKs for .NET Core 제공)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-146">(eventually all Azure services will provide client SDKs for .NET Core)</span></span></p></td>
+</tr>
+</tbody>
+</table>
 
 >[!div class="step-by-step"]
-<span data-ttu-id="17334-147">[이전](net-framework-container-scenarios.md)
-[다음](net-container-os-targets.md)</span><span class="sxs-lookup"><span data-stu-id="17334-147">[Previous](net-framework-container-scenarios.md)
+<span data-ttu-id="bcf2c-147">[이전](net-framework-container-scenarios.md)
+[다음](net-container-os-targets.md)</span><span class="sxs-lookup"><span data-stu-id="bcf2c-147">[Previous](net-framework-container-scenarios.md)
 [Next](net-container-os-targets.md)</span></span>

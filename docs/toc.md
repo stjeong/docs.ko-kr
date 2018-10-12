@@ -241,6 +241,7 @@
 ### [C# 6](csharp/whats-new/csharp-6.md)
 ### [C# 버전 기록](csharp/whats-new/csharp-version-history.md)
 ### [언어와 프레임워크 간 관계](csharp/whats-new/relationships-between-language-and-library.md)
+### [버전 및 업데이트 고려 사항](csharp/whats-new/version-update-considerations.md)
 <!-- End What's New -->
 ## C# 개념
 ### [C# 형식 시스템](csharp/programming-guide/types/index.md)
