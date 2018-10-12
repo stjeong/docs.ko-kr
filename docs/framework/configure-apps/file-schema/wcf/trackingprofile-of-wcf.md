@@ -3,11 +3,11 @@ title: WCF의 &lt;trackingProfile&gt;
 ms.date: 10/08/2018
 ms.assetid: 09b651c2-c0d2-4850-a101-b0e009a1dc3a
 ms.openlocfilehash: a11086ef07a2a605f3889bc4077d25e0b7748e5e
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49120923"
 ---
 # <a name="lttrackingprofilegt-of-wcf"></a>WCF의 &lt;trackingProfile&gt;
 워크플로 추적 레코드는 추적 참가자에 대 한 구독 만들기에 대 한 구성 섹션을 나타냅니다. 추적 프로필에는 추적 참가자가 런타임에 워크플로 인스턴스 상태가 변경될 때 발생하는 워크플로 이벤트를 구독할 수 있도록 허용하는 추적 쿼리가 포함됩니다. 추적 프로필 섹션 내에서 정의되는 쿼리는 구독에서 반환되는 이벤트의 종류를 정의합니다.  

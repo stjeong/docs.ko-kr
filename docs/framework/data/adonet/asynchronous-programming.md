@@ -1,13 +1,13 @@
 ---
 title: 비동기 프로그래밍
-ms.date: 03/30/2017
+ms.date: 10/18/2018
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-ms.openlocfilehash: 0c5c3f52f6afa0e1fa48d33167feabeb8d5b76f5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0c16fecc9e79f36c122c13909be0eeba848b7c20
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123659"
 ---
 # <a name="asynchronous-programming"></a>비동기 프로그래밍
 
@@ -23,8 +23,9 @@ ms.locfileid: "43504977"
 3.  <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>  
   
  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에서 이 기능은 SqlClient에 남아 있습니다.  
-  
- [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]부터는 더 이상 이러한 메서드를 사용하기 위해 연결 문자열에서 `Asynchronous Processing=true`를 지정할 필요가 없습니다.  
+
+> [!TIP]
+> 부터 합니다 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], 이러한 레거시 메서드에 더 이상 필요 합니다. `Asynchronous Processing=true` 연결 문자열에 없습니다.  
   
 ## <a name="asynchronous-programming-features-added-in-includenetv45includesnet-v45-mdmd"></a>[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]에 추가된 비동기 프로그래밍 기능  
  새로운 비동기 프로그래밍 기능에서는 코드를 비동기화하는 간단한 기술을 제공합니다.  
@@ -87,6 +88,9 @@ ms.locfileid: "43504977"
 -   <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>  
   
  지원 하기 위해 다른 비동기 멤버도 추가 되었습니다 [SqlClient 스트리밍 지원](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md)합니다.  
+
+> [!TIP]
+> 새로운 비동기 메서드와 않아도 `Asynchronous Processing=true` 연결 문자열에 있습니다.  
   
 ### <a name="synchronous-to-asynchronous-connection-open"></a>비동기에서 동기로의 연결 열기  
  새 비동기 기능을 사용하도록 기존 응용 프로그램을 업그레이드할 수 있습니다. 예를 들어 응용 프로그램이 동기 연결 알고리즘을 사용하며, 데이터베이스에 연결할 때마다 UI 스레드를 차단하고 연결 후에는 방금 로그인한 사용자를 다른 사용자에게 알리는 저장 프로시저를 호출한다고 가정해 봅니다.  

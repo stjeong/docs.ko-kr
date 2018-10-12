@@ -4,11 +4,11 @@ ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 154830ff-ddd3-4397-a3b5-5b334907777f
 ms.openlocfilehash: fe8d129769d0948160d581aa578b5ac2d0dc0e4d
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121803"
 ---
 # <a name="lttrackingprofilegt"></a>&lt;trackingProfile&gt;
 워크플로 추적 레코드는 추적 참가자에 대 한 구독 만들기에 대 한 구성 섹션을 나타냅니다. 추적 프로필에는 추적 참가자가 런타임에 워크플로 인스턴스 상태가 변경될 때 발생하는 워크플로 이벤트를 구독할 수 있도록 허용하는 추적 쿼리가 포함됩니다. 추적 프로필 섹션 내에서 정의되는 쿼리는 구독에서 반환되는 이벤트의 종류를 정의합니다.  

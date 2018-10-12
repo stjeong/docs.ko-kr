@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Windows Presentation Foundation [WPF], about security model
 - security model [WPF], operating system
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
-ms.openlocfilehash: 905092cfdcbcbeb95fdfa689c09a847491595d9d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 1b5bada61a9d6374a1b961603fcf575199dee591
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121404"
 ---
 # <a name="wpf-security-strategy---platform-security"></a>WPF 보안 전략 - 플랫폼 보안
 운영 체제를 포함 하는 기본 플랫폼의 보안 기능도 활용 다양 한 보안 서비스를 제공 하는 Windows Presentation Foundation (WPF), 합니다 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], 및 [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]합니다. 이러한 계층이 결합되어 다음 그림과 같이 단일 실패 지점을 방지하는 강력한 심층 방어 보안 모델인 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]를 제공합니다.  
@@ -88,7 +88,7 @@ ms.locfileid: "43857325"
 #### <a name="defense-in-depth-layer"></a>심층 방어 계층  
  [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]은 일반적으로 인터넷 영역 권한 집합을 통해 샌드박싱되므로 이러한 권한을 제거해도 호환성 관점에서 [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]에 나쁜 영향을 주지 않습니다. 대신, 추가 심층 방어 계층이 만들어집니다. 샌드박스 응용 프로그램이 다른 계층을 악용하고 프로세스를 가로챌 수 있는 경우 프로세스에 여전히 제한된 권한만 포함됩니다.  
   
- 참조 [최소 권한 사용자 계정을 사용 하 여](https://technet.microsoft.com/library/cc700846.aspx)입니다.  
+ 참조 [최소 권한 사용자 계정을 사용 하 여](https://docs.microsoft.com/previous-versions/tn-archive/cc700846%28v=technet.10%29)입니다.  
   
 <a name="Common_Language_Runtime_Security"></a>   
 ## <a name="common-language-runtime-security"></a>공용 언어 런타임 보안  

@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: 26dfac36-ae23-4909-9867-62495b55fb5e
 ms.openlocfilehash: da8b6adeede1fddf39c818568cfd884c3add317f
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48779935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123841"
 ---
 # <a name="how-to-update-the-definition-of-a-running-workflow-instance"></a>방법: 실행 중인 워크플로 인스턴스의 정의 업데이트
 동적 업데이트는 워크플로 응용 프로그램 개발자가 지속형 워크플로 인스턴스의 워크플로 정의를 업데이트하기 위한 메커니즘을 제공합니다. 필요한 변경을 통해 버그 수정 또는 새 요구 사항을 구현하거나 예기치 않은 변경 내용을 수용할 수 있습니다. 이 자습서의에서이 단계에서는 동적 업데이트를 사용 하 여 지속형된 인스턴스를 수정 하는 방법에 설명 합니다 `v1` 에 도입 된 새 기능에 맞게 숫자 추측 워크플로의 [방법: 호스트는 워크플로-병렬의 여러 버전 ](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).

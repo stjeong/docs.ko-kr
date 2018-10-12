@@ -3,13 +3,13 @@ title: Azure 클라우드 사용 하 여 기존.NET 응용 프로그램 및 Wind
 description: 리프트 앤 시프트 및 Azure 클라우드 및이 전자책을 사용 하 여 컨테이너에 기존 응용 프로그램을 현대화 하는 방법을 알아봅니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 4/28/2018
-ms.openlocfilehash: b22ddd8a63d183571f9ca3a63fb7ae84ebb88510
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.date: 04/28/2018
+ms.openlocfilehash: f4ca3789ec4b3d84960f2ecd4494a899339a787b
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121443"
 ---
 # <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers-2nd-edition"></a>Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기존.NET 응용 프로그램 현대화 (2 판)
 

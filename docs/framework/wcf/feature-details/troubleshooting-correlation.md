@@ -3,11 +3,11 @@ title: 상관 관계 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 98003875-233d-4512-a688-4b2a1b0b5371
 ms.openlocfilehash: fecfaf7374823bb19a4ad3d7f6cb2dbbdf139703
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48793736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121894"
 ---
 # <a name="troubleshooting-correlation"></a>상관 관계 문제 해결
 상관 관계는 워크플로 서비스 메시지를 서로 연결하거나 올바른 워크플로 인스턴스에 연결하는 데 사용되지만, 제대로 구성되지 않으면 메시지가 수신되지 않고 응용 프로그램이 올바르게 작동하지 않습니다. 이 항목에서는 상관 관계 문제를 해결하기 위한 몇 가지 방법을 간략히 설명하고 상관 관계를 사용할 때 발생할 수 있는 일반적인 문제도 설명합니다.

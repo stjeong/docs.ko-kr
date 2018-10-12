@@ -2,12 +2,12 @@
 title: Basic AJAX Service
 ms.date: 03/30/2017
 ms.assetid: d66d0c91-0109-45a0-a901-f3e4667c2465
-ms.openlocfilehash: d8da6469101511b6b5a9ce19a11f1e5e3fe9d83e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2218c8e062f8fe0b799213831099a112a2df732b
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121014"
 ---
 # <a name="basic-ajax-service"></a>Basic AJAX Service
 이 샘플에는 Windows Communication Foundation (WCF)를 사용 하 여 기본 ASP.NET Asynchronous JavaScript and XML (AJAX) 서비스 (웹 브라우저 클라이언트에서 JavaScript 코드를 사용 하 여 액세스할 수 있는 서비스)를 만드는 방법을 보여 줍니다. 이 서비스에서는 HTTP GET 요청에 응답하고 JSON(JavaScript Object Notation) 데이터 형식을 응답에 사용하도록 <xref:System.ServiceModel.Web.WebGetAttribute> 특성이 사용됩니다.  
@@ -29,7 +29,7 @@ public interface ICalculator
 }
 ```
 
- 샘플 .svc 파일은 <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> 표준 끝점을 서비스에 추가하는 <xref:System.ServiceModel.Description.WebScriptEndpoint>를 사용합니다. 엔드포인트는 .svc 파일을 기준으로 빈 주소에서 구성됩니다. 즉, 서비스 주소가 http://localhost/ServiceModelSamples/service.svc, 작업 이름이 아닌 추가 접미사를 사용 하 여 합니다.  
+ 샘플 .svc 파일은 <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> 표준 끝점을 서비스에 추가하는 <xref:System.ServiceModel.Description.WebScriptEndpoint>를 사용합니다. 엔드포인트는 .svc 파일을 기준으로 빈 주소에서 구성됩니다. 즉, 서비스 주소가 `http://localhost/ServiceModelSamples/service.svc`, 작업 이름이 아닌 추가 접미사를 사용 하 여 합니다.  
 
 ```svc
 <%@ServiceHost language="C#" Debug="true" Service="Microsoft.Samples.SimpleAjaxService.CalculatorService" Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>
@@ -48,7 +48,7 @@ public interface ICalculator
 </system.serviceModel>  
 ```  
   
- <xref:System.ServiceModel.Description.WebScriptEndpoint>는 서비스의 기본 데이터 형식을 XML 대신 JSON으로 설정합니다. 서비스를 호출 하려면 http://localhost/ServiceModelSamples/service.svc/Add?n1=100&n2=200 후 설치를 완료 하 고이 항목의 뒷부분에 나와 있는 단계를 작성 합니다. 이 테스트 기능은 HTTP GET 요청을 사용해 설정됩니다.  
+ <xref:System.ServiceModel.Description.WebScriptEndpoint>는 서비스의 기본 데이터 형식을 XML 대신 JSON으로 설정합니다. 서비스를 호출 하려면 `http://localhost/ServiceModelSamples/service.svc/Add?n1=100&n2=200` 후 설치를 완료 하 고이 항목의 뒷부분에 나와 있는 단계를 작성 합니다. 이 테스트 기능은 HTTP GET 요청을 사용해 설정됩니다.  
   
  클라이언트 웹 페이지 SimpleAjaxClientPage.aspx에는 사용자가 페이지에 있는 작업 단추 중 하나를 클릭할 때마다 서비스를 호출하는 ASP.NET 코드가 포함되어 있습니다. `ScriptManager` 컨트롤은 서비스에 대한 프록시를 JavaScript를 통해 액세스할 수 있게 만드는 데 사용됩니다.  
 

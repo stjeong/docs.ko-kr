@@ -3,11 +3,11 @@ title: 활동 라이브러리
 ms.date: 03/30/2017
 ms.assetid: 5323e9d4-71d6-47eb-bfa6-31feac62044d
 ms.openlocfilehash: 7e8777d0068e6cca9c9324a6fd2668e6ff9e9da7
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48844022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123126"
 ---
 # <a name="activity-library"></a>활동 라이브러리
 이 섹션에는 고급 사용자 지정 활동에서 Windows WF (Workflow Foundation)를 보여 주는 샘플이 들어 있습니다.  

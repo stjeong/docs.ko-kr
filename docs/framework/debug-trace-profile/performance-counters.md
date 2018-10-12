@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 40d8edd2b2166b0c90da1ce640dcd16bc33ed9f7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4839513f28de0fd79de7a8dc5245d4d0a2fb1622
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123802"
 ---
 # <a name="performance-counters-in-the-net-framework"></a>.NET Framework의 성능 카운터
-이 항목에서는 [성능 모니터](https://technet.microsoft.com/library/cc749249.aspx)에서 찾을 수 있는 성능 카운터 목록을 제공합니다.  
+이 항목에서 확인할 수 있는 성능 카운터의 목록을 제공 합니다 [Windows 성능 모니터](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29)합니다.  
   
 -   [예외 성능 카운터](#exception)  
   
@@ -122,7 +122,7 @@ ms.locfileid: "43525311"
 |**# Gen 0 Collections**|응용 프로그램이 시작된 이후 0세대 개체(즉, 가장 최근에 할당된 개체)가 가비지 수집된 횟수를 표시합니다.<br /><br /> 0세대 가비지 수집은 0세대에서 사용 가능한 메모리가 할당 요청을 충족하기에 충분하지 않을 때 발생합니다. 이 카운터는 0세대 가비지 수집이 끝날 때 증가됩니다. 상위 세대 가비지 수집에는 하위 세대 수집이 모두 포함됩니다. 이 카운터는 상위 세대(1세대 또는 2세대) 가비지 수집이 발생할 때 명시적으로 증가됩니다.<br /><br /> 이 카운터는 마지막으로 관찰된 값을 표시합니다. **_Global\_** 카운터 값은 정확하지 않으며 무시해야 합니다.|  
 |**# Gen 1 Collections**|응용 프로그램이 시작된 이후 1세대 개체가 가비지 수집된 횟수를 표시합니다.<br /><br /> 이 카운터는 1세대 가비지 수집이 끝날 때 증가됩니다. 상위 세대 가비지 수집에는 하위 세대 수집이 모두 포함됩니다. 이 카운터는 상위 세대(2세대) 가비지 수집이 발생할 때 명시적으로 증가됩니다.<br /><br /> 이 카운터는 마지막으로 관찰된 값을 표시합니다. **_Global\_** 카운터 값은 정확하지 않으며 무시해야 합니다.|  
 |**# Gen 2 Collections**|응용 프로그램이 시작된 이후 2세대 개체가 가비지 수집된 횟수를 표시합니다. 이 카운터는 2세대 가비지 수집(전체 가비지 수집이라고도 함)이 끝날 때 증가됩니다.<br /><br /> 이 카운터는 마지막으로 관찰된 값을 표시합니다. **_Global\_** 카운터 값은 정확하지 않으며 무시해야 합니다.|  
-|**# Induced GC**|명시적 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 호출로 인해 가비지 수집이 수행된 최대 횟수를 표시합니다. 가비지 수집기가 컬렉션 빈도를 조정하도록 하는 것이 좋습니다.|  
+|**# Induced GC**|명시적 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 호출로 인해 가비지 컬렉션이 수행된 최대 횟수를 표시합니다. 가비지 수집기가 컬렉션 빈도를 조정하도록 하는 것이 좋습니다.|  
 |**# of Pinned Objects**|마지막 가비지 컬렉션에서 발생한 고정된 개체 수를 표시합니다. 고정된 개체는 가비지 수집기가 메모리에서 이동할 수 없는 개체입니다. 이 카운터는 가비지 수집된 힙에서만 고정된 개체를 추적합니다. 예를 들어 0세대 가비지 컬렉션에서는 0세대 힙의 고정된 개체만 열거됩니다.|  
 |**# of Sink Blocks in use**|사용 중인 동기화 블록의 수를 나타냅니다. 동기화 블록은 동기화 정보를 저장하는 데 할당된 개체별 데이터 구조입니다. 동기화 블록은 관리되는 개체에 대한 약한 참조를 가지며 가비지 수집기에 의해 스캔됩니다. 동기화 블록에 동기화 정보뿐 아니라 COM interop 메타데이터를 저장할 수도 있습니다. 이 카운터는 동기화 기본 형식을 많이 사용할 때 발생하는 성능 문제를 나타냅니다.|  
 |**# Total committed Bytes**|가비지 컬렉션기에서 현재 커밋된 가상 메모리 크기(바이트)를 표시합니다. 커밋된 메모리는 디스크 페이징 파일에 공간이 예약된 실제 메모리입니다.|  

@@ -2,12 +2,12 @@
 title: '&lt;customBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
-ms.openlocfilehash: 514d0770bd94e55ef3eb7ce2421d1d031c90c3e9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 741f195a78c1716b95d8d4d88594207708ce6289
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43527137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123828"
 ---
 # <a name="ltcustombindinggt"></a>&lt;customBinding&gt;
 사용자에게 메시징 스택에 대한 모든 권한을 제공합니다.  
@@ -306,4 +306,4 @@ ms.locfileid: "43527137"
  [customBinding 요소](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

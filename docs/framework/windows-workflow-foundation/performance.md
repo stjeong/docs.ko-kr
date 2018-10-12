@@ -2,12 +2,12 @@
 title: Windows Workflow Foundation 4 성능
 ms.date: 03/30/2017
 ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
-ms.openlocfilehash: c7dc098eee5f17e18f76c0b54a097a22f5d844b1
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 78e9ac1cc350fe8c04222b2698569412961d3b52
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123815"
 ---
 # <a name="windows-workflow-foundation-4-performance"></a>Windows Workflow Foundation 4 성능
 Dustin Metzgar
@@ -287,7 +287,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  많은 깊이와 다수의 작업이 포함된 복잡한 워크플로에서도 성능 결과는 이 문서의 앞부분에 표시된 다른 처리량 수치와 일관됩니다.  WF4의 처리량은 몇 배나 더 빠르며 로그 눈금으로 비교해야 합니다.
 
 ### <a name="memory"></a>메모리
- Windows Workflow Foundation의 메모리 오버헤드는 워크플로 복잡성과 워크플로 정의 수의 두 가지 주요 영역에서 측정됩니다.  메모리 측정은 Windows 7 64비트 워크스테이션에서 수행되었습니다.  여러 가지 방법으로 작업 성능 카운터 모니터링, Environment.WorkingSet 폴링 또는에서 사용 가능한 VMMap와 같은 도구를 사용 하 여 같은 세트 크기 측정을 가져오려고 [VMMap](https://technet.microsoft.com/sysinternals/dd535533.aspx)합니다. 각 테스트의 결과를 얻고 확인하기 위해 여러 방법의 조합이 사용되었습니다.
+ Windows Workflow Foundation의 메모리 오버헤드는 워크플로 복잡성과 워크플로 정의 수의 두 가지 주요 영역에서 측정됩니다.  메모리 측정은 Windows 7 64비트 워크스테이션에서 수행되었습니다.  여러 가지 방법으로 작업 성능 카운터 모니터링, Environment.WorkingSet 폴링 또는에서 사용 가능한 VMMap와 같은 도구를 사용 하 여 같은 세트 크기 측정을 가져오려고 [VMMap](/sysinternals/downloads/vmmap)합니다. 각 테스트의 결과를 얻고 확인하기 위해 여러 방법의 조합이 사용되었습니다.
 
 ### <a name="workflow-complexity-test"></a>워크플로 복잡성 테스트
  워크플로 복잡성 테스트는 워크플로 복잡성을 기준으로 작업 집합 차이를 측정합니다.  이전 단원에서 사용된 복잡한 워크플로 외에도 단일 작업 워크플로 및 1000개 작업이 포함된 시퀀스의 두 가지 기본 사례를 다루기 위해 새 변형이 추가되었습니다.  이러한 테스트에서 워크플로는 완료될 때까지 1분 동안 단일 직렬 루프로 초기화 및 실행됩니다.  각 테스트 변형이 3회 실행되고 기록되는 데이터는 3회 실행의 평균입니다.

@@ -4,12 +4,12 @@ description: 검색 및 패딩을 사용 하 여 Cipher Block Chaining CBC () �
 ms.date: 06/12/2018
 author: blowdart
 ms.author: mairaw
-ms.openlocfilehash: 6d16b6849bfd4744f1828cda38a537f842243c1d
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 4f1d6df3c0368fa0273d871ff32564c159e62a2c
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123646"
 ---
 # <a name="timing-vulnerabilities-with-cbc-mode-symmetric-decryption-using-padding"></a>타이밍 취약점 패딩을 사용 하 여 CBC 모드 대칭적 암호 해독을
 
@@ -65,7 +65,7 @@ Oracle을 "알릴" 실행 하는 작업을 올바른 인지 여부에 대 한 �
 
 "Oracle 공격 패딩" 것으로 알려져 10 년에 대 한 알려진 취약점의 클래스입니다. 이 취약점 데이터 블록 마다 4096 개 이하로 시도 사용 하 여 AES 및 3DES와 같은 대칭 블록 알고리즘으로 암호화 된 데이터의 암호를 해독 하는 공격자가 있습니다. 이러한 취약성 확인 사용 하 여 암호화를 차단 하는 팩트의 끝에 패딩 검증할 수 있는 데이터를 사용 하 여 가장 자주 사용 됩니다. 공격자가 ciphertext를 사용 하 여 변조 여부 끝에 패딩 형식의 오류를 일으킨 변조 확인 수를 공격자가 데이터를 해독할 수 찾을 수 있습니다.
 
-처음에 실제 공격 기반 서비스에서 반환 되는 패딩 ASP.NET 취약점으로 인 한 같은 유효한 했는지 여부에 따라 다른 오류 코드 [m s 10 070](https://technet.microsoft.com/library/security/ms10-070.aspx)합니다. 그러나 Microsoft만 유효 하 고 잘못 된 안쪽 여백 처리 타이밍의 차이 사용 하 여 비슷한 공격을 수행할 수는 이제 생각 합니다.
+처음에 실제 공격 기반 서비스에서 반환 되는 패딩 ASP.NET 취약점으로 인 한 같은 유효한 했는지 여부에 따라 다른 오류 코드 [m s 10 070](/security-updates/SecurityBulletins/2010/ms10-070)합니다. 그러나 Microsoft만 유효 하 고 잘못 된 안쪽 여백 처리 타이밍의 차이 사용 하 여 비슷한 공격을 수행할 수는 이제 생각 합니다.
 
 모든 정보를 내보내지 않고 데이터 무결성을 확인할 수는 암호화 체계를 사용 하 여 서명 및 서명 확인 (내용)와 관계 없이 데이터의 지정 된 길이 대 한 고정 런타임에 수행 되는 통해 공격자는 [쪽 채널](https://en.wikipedia.org/wiki/Side-channel_attack)합니다. 변조 된 모든 메시지를 거부 하는 무결성 검사, 이후 패딩 oracle 위협 완화 됩니다.
 

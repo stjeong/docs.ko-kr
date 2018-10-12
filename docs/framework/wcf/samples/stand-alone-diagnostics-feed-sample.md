@@ -2,12 +2,12 @@
 title: 독립형 진단 피드 샘플
 ms.date: 03/30/2017
 ms.assetid: d31c6c1f-292c-4d95-8e23-ed8565970ea5
-ms.openlocfilehash: 64222297373f194a33b5520ecd71b0acc7755359
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 6def1d02ed46675d98db115f77ac36bb9f9401de
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43418299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123555"
 ---
 # <a name="stand-alone-diagnostics-feed-sample"></a>독립형 진단 피드 샘플
 이 샘플에는 RSS/Atom Windows Communication Foundation (WCF)를 사용 하 여 배포에 대 한 피드를 만드는 방법을 보여 줍니다. 개체 모델의 기본 사항 및 Windows Communication Foundation (WCF) 서비스에서 설정 하는 방법을 보여 주는 기본 "Hello World" 프로그램입니다.  
@@ -49,7 +49,7 @@ WebServiceHost host = new WebServiceHost(typeof(ProcessService), new Uri("http:/
 <%@ ServiceHost Language="C#|VB" Debug="true" Service="ProcessService" %>  
 ```  
   
- 이 서비스는 표준 HTTP GET을 사용하여 요청을 받기 때문에 RSS 또는 ATOM 인식 클라이언트를 사용하여 서비스에 액세스할 수 있습니다. 예를 들어,로 이동 하 여이 서비스의 출력을 볼 수 있습니다 http://localhost:8000/diagnostics/feed/?format=atom 또는 http://localhost:8000/diagnostics/feed/?format=rss Internet Explorer 7과 같은 RSS 인식 브라우저에서.  
+ 이 서비스는 표준 HTTP GET을 사용하여 요청을 받기 때문에 RSS 또는 ATOM 인식 클라이언트를 사용하여 서비스에 액세스할 수 있습니다. 예를 들어,로 이동 하 여이 서비스의 출력을 볼 수 있습니다 `http://localhost:8000/diagnostics/feed/?format=atom` 또는 `http://localhost:8000/diagnostics/feed/?format=rss` RSS 인식 브라우저에서.
   
  사용할 수도 있습니다는 [어떻게 the WCF 배포 개체 모델에 매핑됩니다 Atom 및 RSS](../../../../docs/framework/wcf/feature-details/how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md) 신디케이티드 데이터를 읽고 명령적 코드를 사용 하 여 처리 합니다.  
   
@@ -82,7 +82,7 @@ foreach (SyndicationItem i in feed.Items)
   
 3.  콘솔 응용 프로그램을 실행합니다.  
   
-4.  콘솔 응용 프로그램 실행 되는 동안 이동할 http://localhost:8000/diagnostics/feed/?format=atom 또는 http://localhost:8000/diagnostics/feed/?format=rss RSS 인식 브라우저를 사용 합니다.  
+4.  콘솔 응용 프로그램 실행 되는 동안 이동할 `http://localhost:8000/diagnostics/feed/?format=atom` 또는 `http://localhost:8000/diagnostics/feed/?format=rss` RSS 인식 브라우저를 사용 합니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  

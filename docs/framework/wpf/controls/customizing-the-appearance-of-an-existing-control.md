@@ -13,11 +13,11 @@ helpviewer_keywords:
 - templates [WPF], custom for existing controls
 ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
 ms.openlocfilehash: 435789e0d1bc601a9eb51488254407fefd334e05
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
-ms.translationtype: HT
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121469"
 ---
 # <a name="customizing-the-appearance-of-an-existing-control-by-creating-a-controltemplate"></a>ControlTemplate을 만들어 기존 컨트롤의 모양 사용자 지정
 <a name="introduction"></a> <xref:System.Windows.Controls.ControlTemplate> 시각적 구조 및 컨트롤의 시각적 동작을 지정 합니다. 새 제공 하 여 컨트롤의 모양을 사용자 지정할 수 있습니다 <xref:System.Windows.Controls.ControlTemplate>합니다. 만들 때는 <xref:System.Windows.Controls.ControlTemplate>, 해당 기능을 변경 하지 않고 기존 컨트롤의 모양을 바꿉니다. 예를 들어, 만들 수 단추 응용 프로그램에서 기본 사각형 모양 대신 둥근 있지만 단추에서 여전히 발생을 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트입니다.  

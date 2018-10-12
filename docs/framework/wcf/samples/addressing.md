@@ -2,12 +2,12 @@
 title: 주소 지정
 ms.date: 03/30/2017
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
-ms.openlocfilehash: 6f2ab732fd5758358c7347087694cab8d56703bf
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 0e18039db51a1060661b435640c356fd0610a68a
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43468367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123204"
 ---
 # <a name="addressing"></a>주소 지정
 Addressing 샘플에서는 엔드포인트 주소의 다양한 측면과 기능을 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 이 샘플에서 서비스는 자체 호스트됩니다. 서비스와 클라이언트는 모두 콘솔 응용 프로그램입니다. 서비스는 상대 및 절대 끝점 주소를 조합하여 여러 끝점을 정의합니다.  
@@ -40,7 +40,7 @@ Addressing 샘플에서는 엔드포인트 주소의 다양한 측면과 기능�
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- 이 경우 상대 주소가 비어 있으므로("") 엔드포인트 주소는 기본 주소와 동일합니다. 실제 끝점 주소는 http://localhost:8000/servicemodelsamples/service합니다.  
+ 이 경우 상대 주소가 비어 있으므로("") 엔드포인트 주소는 기본 주소와 동일합니다. 실제 끝점 주소는 `http://localhost:8000/servicemodelsamples/service`합니다.
   
  두 번째 엔드포인트 정의도 다음 샘플 구성에서처럼 상대 주소를 지정합니다.  
   
@@ -53,7 +53,7 @@ Addressing 샘플에서는 엔드포인트 주소의 다양한 측면과 기능�
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- 상대 주소 "test"가 기본 주소에 추가됩니다. 실제 끝점 주소는 http://localhost:8000/servicemodelsamples/service/test합니다.  
+ 상대 주소 "test"가 기본 주소에 추가됩니다. 실제 끝점 주소는 `http://localhost:8000/servicemodelsamples/service/test`합니다.
   
  세 번째 엔드포인트 정의는 다음 샘플 구성에서처럼 절대 주소를 지정합니다.  
   
@@ -63,9 +63,9 @@ Addressing 샘플에서는 엔드포인트 주소의 다양한 측면과 기능�
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- 주소에서 기본 주소는 아무런 역할도 하지 않습니다. 실제 끝점 주소는 http://localhost:8001/hello/servicemodelsamples합니다.  
+ 주소에서 기본 주소는 아무런 역할도 하지 않습니다. 실제 끝점 주소는 `http://localhost:8001/hello/servicemodelsamples`합니다.
   
- 네 번째 엔드포인트 주소는 절대 주소 및 다른 전송(TCP)을 지정합니다. 주소에서 기본 주소는 아무런 역할도 하지 않습니다. 실제 엔드포인트 주소는 net.tcp://localhost:9000/servicemodelsamples/service입니다.  
+ 네 번째 엔드포인트 주소는 절대 주소 및 다른 전송(TCP)을 지정합니다. 주소에서 기본 주소는 아무런 역할도 하지 않습니다. 실제 끝점 주소는 `net.tcp://localhost:9000/servicemodelsamples/service`합니다.
   
 ```xml  
 <!-- The absolute address specified, different transport: -->  

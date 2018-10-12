@@ -9,11 +9,11 @@ helpviewer_keywords:
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
 author: BrucePerlerMS
 ms.openlocfilehash: b9b7d78601790cfcd7cf54688db1750df96a19f9
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123412"
 ---
 # <a name="how-to-secure-a-service-with-windows-credentials"></a>방법: Windows 자격 증명을 사용하여 서비스에 보안 설정
 이 항목에서는 Windows 도메인에 있고 동일한 도메인의 클라이언트에서 호출 되는 Windows Communication Foundation (WCF) 서비스에서 전송 보안을 사용 하는 방법을 보여 줍니다. 이 시나리오에 대 한 자세한 내용은 참조 하세요. [Windows 인증을 사용 하 여 전송 보안](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)합니다. 샘플 응용 프로그램에 대 한 참조를 [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) 샘플입니다.  
