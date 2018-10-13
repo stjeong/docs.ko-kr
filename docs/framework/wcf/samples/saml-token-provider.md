@@ -3,11 +3,11 @@ title: SAML Token Provider
 ms.date: 03/30/2017
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
 ms.openlocfilehash: dfd693e262e7566c865d5b9faed5b9e00a8cfec9
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845322"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "49308528"
 ---
 # <a name="saml-token-provider"></a>SAML Token Provider
 이 샘플에서는 사용자 지정 클라이언트 SAML 토큰 공급자를 구현하는 방법을 보여 줍니다. 토큰 공급자를 Windows Communication Foundation (WCF)에서 보안 인프라에 자격 증명 제공에 사용 됩니다. 일반적으로 토큰 공급자는 대상을 검사하고 적절한 자격 증명을 발급하여 보안 인프라에서 메시지의 보안을 유지할 수 있도록 합니다. WCF는 기본 자격 증명 관리자 토큰 공급자를 사용 하 여 제공 됩니다. WCF도와 함께 제공 되는 [!INCLUDE[infocard](../../../../includes/infocard-md.md)] 토큰 공급자입니다. 사용자 지정 토큰 공급자는 다음과 같은 경우에 유용합니다.
@@ -371,7 +371,7 @@ ms.locfileid: "48845322"
   
 3.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
   
-4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
 #### <a name="to-run-the-sample-across-computers"></a>다중 컴퓨터 구성에서 샘플을 실행하려면  
   
@@ -393,7 +393,7 @@ ms.locfileid: "48845322"
   
 9. 클라이언트 컴퓨터의 명령 프롬프트 창에서 `Client.exe`를 실행합니다.  
   
-10. 클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+10. 클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
 #### <a name="to-clean-up-after-the-sample"></a>샘플 실행 후 정리를 수행하려면  
   

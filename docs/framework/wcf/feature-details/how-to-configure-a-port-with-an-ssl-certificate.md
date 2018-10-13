@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: e0595bcbd3dcae7977c8734b7d3858df2412c962
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 0a2ac22bfb5f84235d34a554df8cc1ad43ddc489
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857630"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "49308438"
 ---
 # <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>방법: SSL 인증서를 사용하여 포트 구성
 사용 하 여 자체 호스팅된 Windows Communication Foundation (WCF) 서비스를 만들 때의 <xref:System.ServiceModel.WSHttpBinding> 클래스를 사용 하 여 전송 보안, X.509 인증서로 포트를 구성 해야 합니다. 자체 호스트된 서비스를 만들지 않는 경우에는 IIS(인터넷 정보 서비스)에서 서비스를 호스트할 수 있습니다. 자세한 내용은 [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)합니다.  
@@ -130,4 +130,4 @@ ms.locfileid: "43857630"
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
 ## <a name="see-also"></a>참고 항목  
- [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+* [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

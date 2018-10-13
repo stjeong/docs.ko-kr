@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 84526045-496f-489d-8517-a258cf76f040
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f7f7a779cc10b32d66a184107359b502cf094979
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 569be83b902e7634a0c22e78c3f3c3a23985076c
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45649219"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "49308554"
 ---
 # <a name="code-contracts"></a>코드 계약
 코드 계약을 통해 코드에서 사전 조건, 사후 조건 및 개체 고정을 지정할 수 있습니다. 사전 조건은 메서드 또는 속성을 입력할 때 충족해야 하는 요구 사항입니다. 사후 조건은 메서드 또는 속성 코드가 종료될 때의 예상을 설명합니다. 개체 고정은 양호한 상태인 클래스의 예상 상태를 설명합니다.  
@@ -90,7 +90,7 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
   
 -   사후 조건의 사전 상태 값은 메서드 또는 속성의 시작 부분에 있는 식의 값을 참조합니다. `Contract.OldValue<T>(e)` 식을 사용합니다. 여기서 `T`는 `e`의 형식입니다. 컴파일러가 형식을 유추할 수 있는 경우 언제든지 제네릭 형식 인수를 생략할 수 있습니다. 예를 들어 C# 컴파일러는 인수를 사용하기 때문에 항상 형식을 유추합니다. `e`에서 발생할 수 있는 사항 및 이전 식이 나타날 수 있는 컨텍스트에 대한 몇 가지 제한 사항이 있습니다. 이전 식은 다른 이전 식을 포함할 수 없습니다. 무엇보다도 이전 식은 메서드의 사전 조건 상태에 있던 값을 참조해야 합니다. 즉, 메서드의 사전 조건이 `true`이기만 하면 평가할 수 있는 식이어야 합니다. 다음은 해당 규칙의 여러 인스턴스입니다.  
   
-    -   값은 메서드의 사전 조건 상태에 있어야 합니다. 개체의 필드를 참조하려면 사전 조건에서 해당 개체가 항상 null이 아니도록 보장해야 합니다.  
+    -   값은 메서드의 사전 조건 상태에 있어야 합니다. 개체의 필드를 참조 하려면 사전 개체는 null이 아닌 항상 보장 해야 합니다.  
   
     -   이전 식에서는 메서드의 반환 값을 참조할 수 없습니다.  
   
