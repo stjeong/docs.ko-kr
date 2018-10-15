@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 9542332085d0b0319c55db63fd98c9dd8eb3f576
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 7802a64716f8bde278fe3f8ed8214f6ac01eadbc
+ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48839477"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316521"
 ---
 # <a name="ltcleargt-element-for-connectionmanagement-network-settings"></a>&lt;지우기&gt; connectionManagement (네트워크 설정)에 대 한 요소
 연결 관리 목록을 지웁니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "48839477"
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 연결 관리 목록을 지우고 www.contoso.com 서버 및 다른 모든 네트워크 호스트에 대 한 새 연결 관리 항목을 추가 합니다.  
+ 다음 예제에서는 연결 관리 목록을 지우고 다음 서버에 대 한 새 연결 관리 항목을 추가 `www.contoso.com` 및 다른 모든 네트워크 호스트 합니다.  
   
 ```xml  
 <configuration>  

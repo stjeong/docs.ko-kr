@@ -2,12 +2,12 @@
 title: 동적 업데이트
 ms.date: 03/30/2017
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-ms.openlocfilehash: dea930de2103a24aa48b1d0a31a3cbf5fc0ae26c
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 9b26bde8e524275d2eef34afc3f6442e2ebeea6f
+ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44076721"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49323125"
 ---
 # <a name="dynamic-update"></a>동적 업데이트
 동적 업데이트는 워크플로 응용 프로그램 개발자가 지속형 워크플로 인스턴스의 워크플로 정의를 업데이트하기 위한 메커니즘을 제공합니다. 이를 통해 버그 수정 또는 새 요구 사항을 구현하거나 예기치 않은 변경 내용을 수용할 수 있습니다. 이 항목에서는 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에 도입된 동적 업데이트 기능에 대해 간략하게 설명합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "44076721"
 4.  [원하는 지속형된 워크플로 인스턴스에 업데이트 맵을 적용합니다](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Apply)  
   
 > [!NOTE]
->  업데이트 맵을 만드는 1~3단계와 업데이트를 적용하는 단계는 서로 독립적으로 수행할 수 있습니다. 일반적인 시나리오는 워크플로 개발자가 업데이트 맵을 오프라인으로 만든 다음 관리자가 나중에 업데이트를 적용하는 것입니다.  
+>  업데이트 맵을 만드는 1~3단계와 업데이트를 적용하는 단계는 서로 독립적으로 수행할 수 있습니다. 일반적인 시나리오는 워크플로 개발자 업데이트 맵을 오프 라인으로 만들어지고 다음 관리자는 나중에 업데이트를 적용 합니다.  
   
  이 항목에서는 컴파일된 XAML 워크플로의 지속형 인스턴스에 새 활동을 추가하는 동적 업데이트 프로세스에 대해 간략하게 설명합니다.  
   

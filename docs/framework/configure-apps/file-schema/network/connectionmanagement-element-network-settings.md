@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: bc0b75db5b3f35087df70c9155a1ba3b39ceae4d
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 1736dd8fcb308bceee5f100149919ff9ec45510d
+ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48028422"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316326"
 ---
 # <a name="ltconnectionmanagementgt-element-network-settings"></a>&lt;connectionManagement&gt; 요소 (네트워크 설정)
 네트워크 호스트에 대한 최대 연결 수를 지정합니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "48028422"
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 www.contoso.com 서버에 대 한 연결 4 및 다른 모든 서버에 두 개의 연결을 사용 하도록 응용 프로그램을 구성 합니다.  
+ 다음 예제에서는 구성 서버에 대 한 연결 4를 사용 하도록 응용 프로그램 `www.contoso.com` 및 다른 모든 서버에 두 개의 연결 합니다.  
   
 ```xml  
 <configuration>  
