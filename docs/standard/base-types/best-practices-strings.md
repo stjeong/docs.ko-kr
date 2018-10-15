@@ -1,6 +1,6 @@
 ---
 title: .NET에서 문자열 사용에 대한 모범 사례
-ms.date: 08/22/2018
+ms.date: 09/13/2018
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 14945cc6812e4bcb14085656337c7df1abc0a5bf
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 6114553c6bcdac8521c80c10f470d4c38b15e738
+ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43000153"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47080340"
 ---
 # <a name="best-practices-for-using-strings-in-net"></a>.NET에서 문자열 사용에 대한 모범 사례
 <a name="top"></a> .NET에서는 지역화된 응용 프로그램과 전역화된 응용 프로그램을 개발하기 위한 광범위한 지원을 제공하고 문자열 정렬 및 표시와 같은 일반적인 작업을 수행할 때 현재 문화권이나 특정 문화권의 규칙을 쉽게 적용할 수 있습니다. 그러나 문자열 정렬 및 비교가 항상 문화권이 구분되는 작업은 아닙니다. 예를 들어 응용 프로그램에서 내부적으로 사용되는 문자열은 대기 모든 문화권에서 동일하게 처리해야 합니다. XML 태그, HTML 태그, 사용자 이름, 파일 경로 및 시스템 개체 이름과 같이 문화권을 구분하지 않는 문자열 데이터가 문화권이 구분되는 것처럼 해석되면 응용 프로그램 코드에는 감지하기 어려운 버그, 성능 저하 및 경우에 따라 보안 문제가 발생할 수 있습니다.  
@@ -123,10 +123,12 @@ ms.locfileid: "43000153"
  문자열 비교는 특히 정렬 및 같음 테스트와 같은 다양한 문자열 관련 작업의 핵심입니다. 결정된 순서의 문자열 정렬: 정렬된 문자열 목록에서 "my"가 "string" 앞에 나타나면 "my"가 "string"과 같거나 작은지 비교해야 합니다. 또한 비교는 암시적으로 같음을 정의합니다. 비교 작업은 같은 것으로 판단되는 문자열에 대해 0을 반환합니다. 다른 문자열보다 작은 문자열이 없다고 해석하는 것이 적절합니다. 문자열과 관련된 대부분 의미 있는 작업에는 다른 문자열과 비교 및 잘 정의된 정렬 작업 실행이라는 두 가지 절차가 둘 다 또는 두 가지 중 하나가 포함됩니다.  
 
 > [!NOTE]
-> Windows 운영 체제에 대한 정렬 및 비교 작업에 사용되는 문자 가중치에 대한 정보를 포함하는 텍스트 파일의 집합, [가중치 테이블 정렬](https://www.microsoft.com/en-us/download/details.aspx?id=10921)을 다운로드할 수 있습니다.
+> Windows 운영 체제에 대한 정렬 및 비교 작업에 사용되는 문자 가중치에 대한 정보를 포함하는 텍스트 파일 집합인 [정렬 가중치 테이블](https://www.microsoft.com/en-us/download/details.aspx?id=10921) 및 Linux 및 macOS용 정렬 가중치 테이블의 최신 버전인 [기본 유니코드 데이터 정렬 요소 테이블](https://www.unicode.org/Public/UCA/latest/allkeys.txt)을 다운로드할 수 있습니다. Linux 및 macOS에서 정렬 가중치 테이블의 특정 버전은 시스템에 설치된 [International Components for Unicode](http://site.icu-project.org/) 라이브러리 버전에 따라 달라집니다. ICU 버전 및 ICU 버전이 구현하는 유니코드 버전에 대한 자세한 내용은 [ICU 다운로드](http://site.icu-project.org/download)를 참조하세요.
 
  그러나 두 문자열의 같음 또는 정렬 순서를 평가할 때 하나의 올바른 결과가 생성되지는 않습니다. 결과는 문자열 비교에 사용되는 기준에 따라 다릅니다. 특히 서수 문자열 비교나 현재 문화권이나 고정 문화권(영어를 기준으로 로캘을 구분하지 않는 문화권)의 대/소문자 구분 및 정렬 규칙을 기준으로 한 문자열 비교에서는 다른 결과가 생성될 수 있습니다.  
-  
+
+또한 다른 버전의 .NET을 사용하거나 다른 운영 체제 또는 운영 체제 버전의 .NET을 사용하여 문자열을 비교하면 다른 결과가 반환될 수 있습니다. 자세한 내용은 [문자열과 유니코드 표준](xref:System.String#Unicode)을 참조하세요. 
+
 <a name="current_culture"></a>   
 ### <a name="string-comparisons-that-use-the-current-culture"></a>현재 문화권을 사용하는 문자열 비교  
  문자열 비교 시 현재 문화권의 규칙을 사용하는 한 가기 기준이 포함됩니다. 현재 문화권을 기준으로 한 비교에는 스레드의 현재 문화권 또는 로캘이 사용됩니다. 사용자가 문화권을 설정하지 않으면 문화권은 기본적으로 제어판, **국가별 옵션** 창의 설정으로 지정됩니다. 데이터가 언어적으로 관련되는 경우와 문화권이 구분되는 사용자 조작을 반영하는 경우에는 항상 현재 문화권을 기준으로 한 비교를 사용해야 합니다.  
@@ -193,7 +195,7 @@ ms.locfileid: "43000153"
  [!code-csharp[Conceptual.Strings.BestPractices#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/embeddednulls2.cs#20)]
  [!code-vb[Conceptual.Strings.BestPractices#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/embeddednulls2.vb#20)]  
   
- 대/소문자를 구분하지 않는 서수 비교는 다음으로 가장 보수적인 접근 방법입니다. 이들 비교는 대부분 대/소문자 구분을 무시합니다. 예를 들어 "windows"는 "Windows"와 일치합니다. ASCII 문자를 처리할 때 이 정책은 사용 가능한 ASCII 대/소문자 구분을 무시한다는 점을 제외하고 <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>과 같습니다. 따라서 [A, Z] (\u0041-\u005A) 의 모든 문자는 [a,z] (\u0061-\007A) 의 해당 문자와 일치합니다. ASCII 범위를 벗어난 대/소문자 구분에는 고정 문화권 테이블이 사용됩니다. 따라서 다음 비교는  
+ 대/소문자를 구분하지 않는 서수 비교는 다음으로 가장 보수적인 접근 방법입니다. 이들 비교는 대부분 대/소문자 구분을 무시합니다. 예를 들어 "windows"는 "Windows"와 일치합니다. ASCII 문자를 처리할 때 이 정책은 사용 가능한 ASCII 대/소문자 구분을 무시한다는 점을 제외하고 <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>과 같습니다. 따라서 [A, Z]\(\u0041-\u005A)의 모든 문자는 [a,z]\(\u0061-\007A)의 해당 문자와 일치합니다. ASCII 범위를 벗어난 대/소문자 구분에는 고정 문화권 테이블이 사용됩니다. 따라서 다음 비교는  
   
  [!code-csharp[Conceptual.Strings.BestPractices#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison2.cs#4)]
  [!code-vb[Conceptual.Strings.BestPractices#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison2.vb#4)]  
@@ -370,5 +372,6 @@ ms.locfileid: "43000153"
 18.02.1905 15:12  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [문자열 조작](../../../docs/standard/base-types/manipulating-strings.md)
+## <a name="see-also"></a>참고 항목
+
+- [문자열 조작](../../../docs/standard/base-types/manipulating-strings.md)
