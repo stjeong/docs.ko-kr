@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9c0bf4aff9d7cc657b3005f0a19b09f3df10957c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dd0d9851f62381a16f628607c326c6690492628b
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393096"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347853"
 ---
 # <a name="ltgenericparametergt-element-net-native"></a>&lt;GenericParameter&gt; 요소(.NET 네이티브)
 제네릭 형식 또는 메서드의 매개 변수 형식에 정책을 적용합니다.  
@@ -74,7 +74,7 @@ ms.locfileid: "33393096"
 ## <a name="remarks"></a>설명  
  `<GenericParameter>` 요소는 [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) 또는 [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) 요소의 자식이며, 제네릭 형식 또는 메서드 시그니처에서 해당 이름으로 지정되는 특정 제네릭 형식 매개 변수에 정책을 적용하는 데 사용됩니다.  
   
- `<GenericParameter>` 요소는 serializer와 함께 사용하면 가장 유용합니다. 다음 예제에서는 `<GenericParameter>` 요소를 사용하여 NewtonSoft JSON 직렬 변환기의 [JsonConvert.DeserializeObject\<T>(String)](http://james.newtonking.com/json/help/index.html?topic=html/T_Newtonsoft_Json_JsonConvert.htm) 메서드 오버로드에 대한 호출에서 `T` 형식에 정책을 적용합니다.  
+ `<GenericParameter>` 요소는 serializer와 함께 사용하면 가장 유용합니다. 다음 예제에서는 `<GenericParameter>` 요소를 사용하여 NewtonSoft JSON 직렬 변환기의 [JsonConvert.DeserializeObject\<T>(String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) 메서드 오버로드에 대한 호출에서 `T` 형식에 정책을 적용합니다.  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  

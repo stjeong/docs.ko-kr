@@ -13,11 +13,11 @@ helpviewer_keywords:
 - types [Visual Basic], user-defined
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
 ms.openlocfilehash: 9377d889f56049720ab10439582300913f5cbb37
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848027"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347996"
 ---
 # <a name="structure-statement"></a>Structure 문
 구조의 이름을 선언 하 고 변수, 속성, 이벤트 및 구조를 구성 하는 프로시저의 정의 소개 합니다.  
@@ -38,10 +38,10 @@ End Structure
 |용어|정의|  
 |---|---|  
 |`attributelist`|선택 사항입니다. 참조 [특성 목록](../../../visual-basic/language-reference/statements/attribute-list.md)합니다.|  
-|`accessmodifier`|선택 사항입니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [공용](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br/>- [Private Protected](../../language-reference/modifiers/private-protected.md) <br /><br /> 참조 [액세스 수준을 Visual Basic의](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.|  
+|`accessmodifier`|선택 사항입니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [공용](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br/>- [Private Protected](../../language-reference/modifiers/private-protected.md) <br /><br /> [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.|  
 |`Shadows`|선택 사항입니다. 참조 [그림자](../../../visual-basic/language-reference/modifiers/shadows.md)합니다.|  
 |`Partial`|선택 사항입니다. 구조체의 부분 정의 나타냅니다. 참조 [부분](../../../visual-basic/language-reference/modifiers/partial.md)합니다.|  
-|`name`|필수. 이 구조체의 이름입니다. 참조 [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.|  
+|`name`|필수. 이 구조체의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.|  
 |`Of`|선택 사항입니다. 제네릭 구조체 임을 지정 합니다.|  
 |`typelist`|사용 하는 경우 필요 합니다 [의](../../../visual-basic/language-reference/statements/of-clause.md) 키워드입니다. 이 구조에 대 한 형식 매개 변수의 목록입니다. 참조 [유형 목록](../../../visual-basic/language-reference/statements/type-list.md)합니다.|  
 |`Implements`|선택 사항입니다. 이 구조는 하나 이상의 인터페이스 멤버를 구현 함을 나타냅니다. 참조 [문을 구현](../../../visual-basic/language-reference/statements/implements-statement.md)합니다.|  
@@ -95,7 +95,7 @@ End Structure
   
 -   **정규화 합니다.** 코드 구조 외부 멤버의 이름을 해당 구조체의 이름으로 한 정해야 합니다.  
   
-     중첩된 구조체 내부에서 코드를 프로그래밍 요소에 정규화 되지 않은 참조를 만드는 경우 Visual Basic 검색 요소에 대해 먼저 포함 하 여 구조를 다음에서 중첩 된 구조의 등 포함 하는 가장 바깥쪽 요소를 합니다. 자세한 내용은 [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)합니다.  
+     중첩된 구조체 내부에서 코드를 프로그래밍 요소에 정규화 되지 않은 참조를 만드는 경우 Visual Basic 검색 요소에 대해 먼저 포함 하 여 구조를 다음에서 중첩 된 구조의 등 포함 하는 가장 바깥쪽 요소를 합니다. 자세한 내용은 [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)을 참조하세요.  
   
 -   **메모리 사용량** 모든 복합 데이터 형식에서와 마찬가지로 해당 멤버의 일반 저장소 할당량을 함께 추가 하 여 구조체의 총 메모리 소비량을 안전 하 게 계산할 수 없습니다. 또한 가정할 수 없습니다는 메모리에서 저장소의 순서가 사용자의 선언 순서와 동일 합니다. 구조체의 저장소 레이아웃을 제어 해야 하는 경우 적용할 수 있습니다 합니다 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 특성을 `Structure` 문입니다.  
   

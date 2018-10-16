@@ -2,15 +2,15 @@
 title: WorkflowInvoker 및 WorkflowApplication 사용
 ms.date: 03/30/2017
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
-ms.openlocfilehash: 6cbfca14eddeb82fc2d88b70703cae0fe59d63ad
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cc315013ce50539eb4b72d26848a99164bb6b2d0
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33519628"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347983"
 ---
 # <a name="using-workflowinvoker-and-workflowapplication"></a>WorkflowInvoker 및 WorkflowApplication 사용
-Windows WF (Workflow Foundation) 워크플로 호스트 하는 여러 가지 방법을 제공 합니다. <xref:System.Activities.WorkflowInvoker> 는 메서드 호출과 같은 방식으로 워크플로를 호출하기 위한 간단한 방법을 제공하며, 지속성을 사용하지 않는 워크플로에만 사용될 수 있습니다. <xref:System.Activities.WorkflowApplication>은 수명 주기 이벤트 알림, 실행 제어, 책갈피 다시 시작 및 지속성을 비롯한 다양한 워크플로 실행 모델을 제공합니다. <xref:System.ServiceModel.Activities.WorkflowServiceHost>는 메시징 활동에 대한 지원을 제공하며 주로 워크플로 서비스에 사용됩니다. 이 항목에서는 <xref:System.Activities.WorkflowInvoker> 및 <xref:System.Activities.WorkflowApplication>을 사용하는 워크플로 호스팅을 소개합니다. 사용 하는 워크플로 호스트 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.Activities.WorkflowServiceHost>, 참조 [워크플로 서비스](../../../docs/framework/wcf/feature-details/workflow-services.md) 및 [호스팅 워크플로 서비스 개요](../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)합니다.  
+Windows WF (Workflow Foundation)는 호스팅 워크플로의 여러 메서드를 제공 합니다. <xref:System.Activities.WorkflowInvoker> 는 메서드 호출과 같은 방식으로 워크플로를 호출하기 위한 간단한 방법을 제공하며, 지속성을 사용하지 않는 워크플로에만 사용될 수 있습니다. <xref:System.Activities.WorkflowApplication>은 수명 주기 이벤트 알림, 실행 제어, 책갈피 다시 시작 및 지속성을 비롯한 다양한 워크플로 실행 모델을 제공합니다. <xref:System.ServiceModel.Activities.WorkflowServiceHost>는 메시징 활동에 대한 지원을 제공하며 주로 워크플로 서비스에 사용됩니다. 이 항목에서는 <xref:System.Activities.WorkflowInvoker> 및 <xref:System.Activities.WorkflowApplication>을 사용하는 워크플로 호스팅을 소개합니다. 사용 하 여 워크플로 호스트 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.Activities.WorkflowServiceHost>를 참조 하세요 [워크플로 서비스](../../../docs/framework/wcf/feature-details/workflow-services.md) 하 고 [호스팅 워크플로 서비스 개요](../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)합니다.  
   
 ## <a name="using-workflowinvoker"></a>WorkflowInvoker 사용  
  <xref:System.Activities.WorkflowInvoker>는 워크플로를 메서드 호출처럼 실행하는 방법을 제공합니다. <xref:System.Activities.WorkflowInvoker>를 사용하여 워크플로를 호출하려면 <xref:System.Activities.WorkflowInvoker.Invoke%2A> 메서드를 호출하고 호출할 워크플로의 워크플로 정의를 전달합니다. 이 예제에서는 <xref:System.Activities.Statements.WriteLine>를 사용하여 <xref:System.Activities.WorkflowInvoker> 활동을 호출합니다.  
@@ -60,14 +60,14 @@ Windows WF (Workflow Foundation) 워크플로 호스트 하는 여러 가지 방
  [!code-csharp[CFX_WorkflowApplicationExample#30](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#30)]  
   
 ### <a name="retrieving-output-arguments-of-a-workflow"></a>워크플로의 출력 인수 검색  
- 워크플로가 완료되면 <xref:System.Activities.WorkflowApplication.Completed%2A> 사전에 액세스하여 <xref:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs%2A?displayProperty=nameWithType> 처리기에서 출력 매개 변수를 검색할 수 있습니다. 다음 예제에서는 <xref:System.Activities.WorkflowApplication>을 사용하여 워크플로를 호스트합니다. 단일 <xref:System.Activities.WorkflowApplication> 활동으로 구성된 워크플로 정의를 사용하여 `DiceRoll` 인스턴스가 생성됩니다. `DiceRoll` 활동에는 주사위 굴리기 작업의 결과를 나타내는 두 개의 출력 인수가 있습니다. 워크플로가 완료되면 <xref:System.Activities.WorkflowApplication.Completed%2A> 처리기에서 출력이 검색됩니다.  
+ 워크플로가 완료되면 <xref:System.Activities.WorkflowApplication.Completed%2A> 사전에 액세스하여 <xref:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs%2A?displayProperty=nameWithType> 처리기에서 출력 매개 변수를 검색할 수 있습니다. 다음 예제에서는 <xref:System.Activities.WorkflowApplication>을 사용하여 워크플로를 호스트합니다. A <xref:System.Activities.WorkflowApplication> 인스턴스는 단일 구성 된 워크플로 정의 사용 하 여 생성 `DiceRoll` 활동입니다. `DiceRoll` 활동에는 주사위 굴리기 작업의 결과를 나타내는 두 개의 출력 인수가 있습니다. 워크플로가 완료되면 <xref:System.Activities.WorkflowApplication.Completed%2A> 처리기에서 출력이 검색됩니다.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#130](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#130)]  
   
  [!code-csharp[CFX_WorkflowApplicationExample#21](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#21)]  
   
 > [!NOTE]
->  <xref:System.Activities.WorkflowApplication> 및 <xref:System.Activities.WorkflowInvoker>는 입력 인수의 사전을 취하여 `out` 인수 사전을 반환합니다. 이 사전 매개 변수, 속성 및 반환 값은 `IDictionary<string, object>` 형식입니다. 전달되는 사전 클래스의 실제 인스턴스는 `IDictionary<string, object>`를 구현하는 클래스일 수 있습니다. 이 예제에서는 `Dictionary<string, object>`를 사용합니다. 사전에 대 한 자세한 내용은 참조 <xref:System.Collections.Generic.IDictionary%602> 및 <xref:System.Collections.Generic.Dictionary%602>합니다.  
+>  <xref:System.Activities.WorkflowApplication> 및 <xref:System.Activities.WorkflowInvoker>는 입력 인수의 사전을 취하여 `out` 인수 사전을 반환합니다. 이 사전 매개 변수, 속성 및 반환 값은 `IDictionary<string, object>` 형식입니다. 전달되는 사전 클래스의 실제 인스턴스는 `IDictionary<string, object>`를 구현하는 클래스일 수 있습니다. 이 예제에서는 `Dictionary<string, object>`를 사용합니다. 사전에 대 한 자세한 내용은 참조 하세요. <xref:System.Collections.Generic.IDictionary%602> 고 <xref:System.Collections.Generic.Dictionary%602>입니다.  
   
 ### <a name="passing-data-into-a-running-workflow-using-bookmarks"></a>책갈피를 사용하여 실행 중인 워크플로에 데이터 전달  
  책갈피는 활동이 다시 시작되기를 수동적으로 대기하는 메커니즘이자 실행 중인 워크플로 인스턴스에 데이터를 전달하기 위한 메커니즘입니다. 다음 예와 같이 활동이 데이터를 대기 중인 경우 <xref:System.Activities.Bookmark>를 만들고 <xref:System.Activities.Bookmark>를 다시 시작할 때 호출할 콜백 메서드를 등록할 수 있습니다.  
@@ -91,7 +91,7 @@ Windows WF (Workflow Foundation) 워크플로 호스트 하는 여러 가지 방
 
 [!code-csharp[CFX_WorkflowApplicationExample#14](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
   
- 다음 코드 예제에서는 <xref:System.Activities.WorkflowApplicationIdleEventArgs> 인스턴스의 <xref:System.Activities.WorkflowApplication.Idle%2A> 처리기로 전달된 <xref:System.Activities.WorkflowApplication>를 검사합니다. 이 예제에서는 유휴 상태로 전환되는 워크플로에 이름이 <xref:System.Activities.Bookmark>이고 `EnterGuess` 활동이 소유하는 `ReadInt` 한 개가 있습니다. 이 코드 예제는에 기반을 둔 [하는 방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)의 일부인는 [초보자를 위한 자습서](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)합니다. 이 단계에서 <xref:System.Activities.WorkflowApplication.Idle%2A> 처리기가 이 예제 코드를 포함하도록 수정되면 다음과 같은 출력이 표시됩니다.  
+ 다음 코드 예제에서는 <xref:System.Activities.WorkflowApplicationIdleEventArgs> 인스턴스의 <xref:System.Activities.WorkflowApplication.Idle%2A> 처리기로 전달된 <xref:System.Activities.WorkflowApplication>를 검사합니다. 이 예제에서는 유휴 상태로 전환되는 워크플로에 이름이 <xref:System.Activities.Bookmark>이고 `EnterGuess` 활동이 소유하는 `ReadInt` 한 개가 있습니다. 이 코드 예제는 기반을 둔 [방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)의 일부인 합니다 [초보자를 위한 자습서](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)합니다. 이 단계에서 <xref:System.Activities.WorkflowApplication.Idle%2A> 처리기가 이 예제 코드를 포함하도록 수정되면 다음과 같은 출력이 표시됩니다.  
   
  **BookmarkName: EnterGuess-OwnerDisplayName: ReadInt**
  

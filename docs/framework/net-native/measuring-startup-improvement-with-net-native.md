@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2603c29fe9108a32f3c3ba86a5aba9fae5042b17
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 9d8e104b5d32c07c4730154ff3fc69b452a024b7
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025521"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347905"
 ---
 # <a name="measuring-startup-improvement-with-net-native"></a>.NET 네이티브로 시작 속도 개선 측정
 [!INCLUDE[net_native](../../../includes/net-native-md.md)]를 사용하는 경우 앱 시작 시간이 크게 단축됩니다. 이러한 속도 개선은 휴대용 저전력 장치와 복잡한 앱에서 특히 두드러지게 나타납니다. 이 항목에서는 이러한 시작 속도 개선을 측정하는 데 필요한 기본적인 계측을 시작하는 방법을 설명합니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "48025521"
  앱이 계측되고 나면 이벤트를 수집할 수 있습니다.  
   
 ## <a name="gathering-events-with-perfview"></a>PerfView를 사용하여 이벤트 수집  
- PerfView는 앱에서 모든 종류의 성능 조사를 수행할 수 있도록 ETW 이벤트를 활용합니다. 또한 다양한 이벤트 유형에 대한 로깅을 설정하거나 해제할 수 있도록 구성 GUI도 포함되어 있습니다. PerfView는 무료 도구이며 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=28567)에서 다운로드할 수 있습니다. 자세한 내용은 [PerfView 자습서 비디오](http://channel9.msdn.com/Series/PerfView-Tutorial)를 보세요.  
+ PerfView는 앱에서 모든 종류의 성능 조사를 수행할 수 있도록 ETW 이벤트를 활용합니다. 또한 다양한 이벤트 유형에 대한 로깅을 설정하거나 해제할 수 있도록 구성 GUI도 포함되어 있습니다. PerfView는 무료 도구이며 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=28567)에서 다운로드할 수 있습니다. 자세한 내용은 [PerfView 자습서 비디오](https://channel9.msdn.com/Series/PerfView-Tutorial)를 보세요.  
   
 > [!NOTE]
 >  PerfView를 사용하여 ARM 시스템에 대한 이벤트를 수집할 수는 없습니다. ARM 시스템에 대한 이벤트를 수집하려면 WPR(Windows Performance Recorder)를 사용합니다. 자세한 내용은 [Vance Morrison의 블로그 게시물](https://blogs.msdn.com/b/vancem/archive/2012/12/19/collecting-etw-perfview-data-on-an-windows-rt-winrt-arm-surface-device.aspx)을 참조하세요.  
@@ -95,7 +95,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  Ctrl+A를 눌러 왼쪽 창에 나열된 모든 이벤트를 선택하고 **Enter** 키를 누릅니다. 이제 각 이벤트에서 타임스탬프를 확인할 수 있습니다. 이러한 타임스탬프는 추적 시작 시간을 기준으로 하므로 프로세스 시작 시간에서 각 이벤트의 시간을 빼서 시작 이후 경과된 시간을 확인해야 합니다. Ctrl 키를 누른 상태로 두 타임스탬프를 클릭하여 선택하면 해당 타임스탬프 간의 차이가 페이지 아래쪽 상태 표시줄에 표시됩니다. 따라서 표시된 두 이벤트(프로세스 시작 포함) 간에 경과된 시간을 쉽게 확인할 수 있습니다. 뷰의 바로 가기 메뉴를 열고 CSV 파일로 내보내기, Microsoft Excel을 열어 데이터 저장/처리 등의 여러 유용한 옵션 중에서 원하는 항목을 선택할 수 있습니다.  
   
- [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인을 사용하여 원래 앱과 직접 빌드한 버전 둘 다에 대해 이 절차를 반복하면 성능 차이를 비교할 수 있습니다.   일반적으로는 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱의 시작 속도가 [!INCLUDE[net_native](../../../includes/net-native-md.md)]가 아닌 앱에 비해 빠릅니다. 관련 정보를 보다 자세하게 파악하려는 경우 PerfView를 통해 시간이 가장 많이 걸리는 코드 부분도 확인할 수 있습니다. 자세한 내용은 [PerfView 자습서](http://channel9.msdn.com/Series/PerfView-Tutorial)를 보거나 [Vance Morrison의 블로그 게시물](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx)을 읽으세요.  
+ [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인을 사용하여 원래 앱과 직접 빌드한 버전 둘 다에 대해 이 절차를 반복하면 성능 차이를 비교할 수 있습니다.   일반적으로는 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱의 시작 속도가 [!INCLUDE[net_native](../../../includes/net-native-md.md)]가 아닌 앱에 비해 빠릅니다. 관련 정보를 보다 자세하게 파악하려는 경우 PerfView를 통해 시간이 가장 많이 걸리는 코드 부분도 확인할 수 있습니다. 자세한 내용은 [PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial)를 보거나 [Vance Morrison의 블로그 게시물](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx)을 읽으세요.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Diagnostics.Tracing.EventSource>

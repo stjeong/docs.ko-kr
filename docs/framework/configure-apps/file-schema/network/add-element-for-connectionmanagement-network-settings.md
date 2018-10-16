@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: cdc7e8501f7cf3f5cff4c29ca5b2d004ce7cd5c6
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 9f9b1b13c0a45d7a2e34a04b44f13be12947993f
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086182"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349032"
 ---
 # <a name="ltaddgt-element-for-connectionmanagement-network-settings"></a>&lt;추가&gt; connectionManagement (네트워크 설정)에 대 한 요소
 연결 관리 목록에 IP 주소 또는 DNS 이름을 추가합니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "49086182"
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 www.contoso.com 서버에 대 한 연결 4 및 다른 모든 서버에 두 개의 연결을 사용 하도록 응용 프로그램을 구성 합니다.  
+ 다음 예제에서는 구성 서버에 대 한 연결 4를 사용 하도록 응용 프로그램 `www.contoso.com` 및 다른 모든 서버에 두 개의 연결 합니다.  
   
 ```xml  
 <configuration>  

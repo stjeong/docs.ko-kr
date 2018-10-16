@@ -11,12 +11,12 @@ helpviewer_keywords:
 - declaring variables [Visual Basic], inferred
 - inferred variable declaration
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
-ms.openlocfilehash: f5c824df43997282d50c9c2a458fb1d854cc160a
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: d6a05abec36f97094adaac7572f6015b10874442
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862221"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347892"
 ---
 # <a name="option-infer-statement"></a>Option Infer 문
 변수를 선언할 때 지역 형식 유추를 사용하도록 설정합니다.  
@@ -50,7 +50,7 @@ Option Infer가 설정된 경우의 IntelliSense
 Option Infer가 해제된 경우의 IntelliSense  
   
 > [!NOTE]
->  변수가 `Object`로 선언되면 프로그램을 실행하는 동안 런타임 형식이 변경될 수 있습니다. 작업을 수행 하는 Visual Basic *boxing* 하 고 *unboxing* 간에 변환 하는 `Object` 및 값 형식을 실행 속도가 느려집니다. Boxing 및 unboxing에 대 한 내용은 참조는 [Visual Basic 언어 사양](../../../visual-basic/reference/language-specification/index.md)합니다.
+>  변수가 `Object`로 선언되면 프로그램을 실행하는 동안 런타임 형식이 변경될 수 있습니다. 작업을 수행 하는 Visual Basic *boxing* 하 고 *unboxing* 간에 변환 하는 `Object` 및 값 형식을 실행 속도가 느려집니다. Boxing 및 unboxing에 대 한 내용은 참조는 [Visual Basic 언어 사양](~/_vblang/spec/conversions.md#value-type-conversions)합니다.
   
  형식 유추는 프로시저 수준에서 적용되며 클래스, 구조체, 모듈 또는 인터페이스의 프로시저 외부에는 적용되지 않습니다.  
   

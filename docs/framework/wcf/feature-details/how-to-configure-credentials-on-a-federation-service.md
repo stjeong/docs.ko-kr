@@ -8,21 +8,21 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
-ms.openlocfilehash: 5bfea40a500dc1355b439ae7d949b0d96d3ab08c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 92c430ca5514441de01a630a6945e9d294a88c18
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33495611"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349084"
 ---
 # <a name="how-to-configure-credentials-on-a-federation-service"></a>방법: 페더레이션 서비스에서 자격 증명 구성
 Windows Communication Foundation (WCF), 페더레이션된 서비스를 만드는 다음과 같은 기본 절차 이루어져 있습니다.  
   
-1.  <xref:System.ServiceModel.WSFederationHttpBinding> 또는 유사한 사용자 지정 바인딩을 구성합니다. 적절 한 바인딩 만들기에 대 한 자세한 내용은 참조 [하는 방법: WSFederationHttpBinding 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)합니다.  
+1.  <xref:System.ServiceModel.WSFederationHttpBinding> 또는 유사한 사용자 지정 바인딩을 구성합니다. 적절 한 바인딩 만들기에 대 한 자세한 내용은 참조 하세요. [방법: WSFederationHttpBinding 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)합니다.  
   
 2.  서비스에 제공되는 발급된 토큰에 대한 인증 방법을 제어하는 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>을 구성합니다.  
   
- 이 항목에서는 두 번째 단계에 대해 자세히 설명합니다. 페더레이션된 서비스의 작동 방식에 대 한 자세한 내용은 참조 [페더레이션](../../../../docs/framework/wcf/feature-details/federation.md)합니다.  
+ 이 항목에서는 두 번째 단계에 대해 자세히 설명합니다. 페더레이션된 서비스 작동 방식에 대 한 자세한 내용은 참조 하세요. [페더레이션](../../../../docs/framework/wcf/feature-details/federation.md)합니다.  
   
 ### <a name="to-set-the-properties-of-issuedtokenservicecredential-in-code"></a>IssuedTokenServiceCredential의 속성을 코드로 설정하려면  
   
@@ -45,7 +45,7 @@ Windows Communication Foundation (WCF), 페더레이션된 서비스를 만드�
   
 ### <a name="to-set-the-properties-of-issuedtokenservicecredential-in-configuration"></a>IssuedTokenServiceCredential의 속성을 구성에서 설정하려면  
   
-1.  만들기는 `<issuedTokenAuthentication>` 의 자식으로 요소는 <`serviceCredentials`> 요소입니다.  
+1.  만들기는 `<issuedTokenAuthentication>` 의 자식 요소로 <`serviceCredentials`> 요소입니다.  
   
 2.  `allowUntrustedRsaIssuers` 카드와 같은 자체 발급 토큰을 인증하는 경우, `<issuedTokenAuthentication>` 요소의 `true` 특성을 [!INCLUDE[infocard](../../../../includes/infocard-md.md)]로 설정합니다.  
   
@@ -53,7 +53,7 @@ Windows Communication Foundation (WCF), 페더레이션된 서비스를 만드�
   
 4.  `<add>` 요소를 `<knownCertificates>` 요소의 자식으로 0개 이상 만들고 `storeLocation`, `storeName`, `x509FindType` 및 `findValue` 특성을 사용하여 인증서를 찾는 방법을 지정합니다.  
   
-5.  필요한 경우 설정 합니다는 `samlSerializer` 특성에는 <`issuedTokenAuthentication`> 요소를 사용자 지정의 형식 이름 <xref:System.IdentityModel.Tokens.SamlSerializer> 클래스입니다.  
+5.  필요한 경우 설정 합니다 `samlSerializer` 특성은 <`issuedTokenAuthentication`> 요소를 사용자 지정의 형식 이름 <xref:System.IdentityModel.Tokens.SamlSerializer> 클래스.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>의속성을 코드로 설정합니다.  
@@ -67,16 +67,16 @@ Windows Communication Foundation (WCF), 페더레이션된 서비스를 만드�
   
 -   발급된 토큰의 서명에 X.509 발급자 일련 번호, X.509 주체 키 식별자 또는 X.509 지문 보안 식별자를 사용하는 경우, 발급된 토큰은 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> 클래스의 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> 속성에 의해 반환된 컬렉션의 인증서를 통해 서명해야 합니다.  
   
--   발급된 토큰을 X.509 인증서를 통해 서명하는 경우에는 해당 인증서가 신뢰하는 상대에게 <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A>로 보내졌는지 또는 <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> 속성에서 가져온 것인지에 상관없이, 인증서에서는 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> 속성 값으로 지정된 의미 체계별로 유효성을 검사해야 합니다. X.509 인증서 유효성 검사에 대 한 자세한 내용은 참조 [인증서 작업](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.  
+-   발급된 토큰을 X.509 인증서를 통해 서명하는 경우에는 해당 인증서가 신뢰하는 상대에게 <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A>로 보내졌는지 또는 <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause> 속성에서 가져온 것인지에 상관없이, 인증서에서는 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> 속성 값으로 지정된 의미 체계별로 유효성을 검사해야 합니다. X.509 인증서 유효성 검사에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.  
   
- 예를 들어 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A>를 <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust>로 설정하면 서명 인증서가 `TrustedPeople` 인증서 저장소에 있는 발급된 모든 토큰을 인증하게 됩니다. 이 경우 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.TrustedStoreLocation%2A> 속성을 <xref:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser> 또는 <xref:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine>으로 설정합니다. <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> 등의 다른 모드를 선택할 수도 있습니다. `Custom`을 선택하면 <xref:System.IdentityModel.Selectors.X509CertificateValidator> 클래스의 인스턴스를 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CustomCertificateValidator%2A> 속성에 할당해야 합니다. 사용자 지정 유효성 검사기에서 원하는 조건을 사용하여 인증서의 유효성을 검사할 수 있습니다. 자세한 내용은 참조 [하는 방법: 사용자 지정 인증서 유효성 검사기를 사용 하는 서비스 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)합니다.  
+ 예를 들어 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A>를 <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust>로 설정하면 서명 인증서가 `TrustedPeople` 인증서 저장소에 있는 발급된 모든 토큰을 인증하게 됩니다. 이 경우 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.TrustedStoreLocation%2A> 속성을 <xref:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser> 또는 <xref:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine>으로 설정합니다. <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> 등의 다른 모드를 선택할 수도 있습니다. `Custom`을 선택하면 <xref:System.IdentityModel.Selectors.X509CertificateValidator> 클래스의 인스턴스를 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CustomCertificateValidator%2A> 속성에 할당해야 합니다. 사용자 지정 유효성 검사기에서 원하는 조건을 사용하여 인증서의 유효성을 검사할 수 있습니다. 자세한 내용은 [방법: 사용자 지정 인증서 유효성 검사기를 사용 하는 서비스 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [페더레이션](../../../../docs/framework/wcf/feature-details/federation.md)  
- [페더레이션 및 트러스트](../../../../docs/framework/wcf/feature-details/federation-and-trust.md)  
- [페더레이션 샘플](../../../../docs/framework/wcf/samples/federation-sample.md)  
- [방법: WSFederationHttpBinding에서 보안 세션을 사용하지 않도록 설정](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)  
- [방법: WSFederationHttpBinding 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
- [방법: 페더레이션 클라이언트 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- [인증서 작업](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [SecurityBindingElement 인증 모드](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md)
+* [페더레이션](../../../../docs/framework/wcf/feature-details/federation.md)  
+* [페더레이션 및 트러스트](../../../../docs/framework/wcf/feature-details/federation-and-trust.md)  
+* [페더레이션 샘플](../../../../docs/framework/wcf/samples/federation-sample.md)  
+* [방법: WSFederationHttpBinding에서 보안 세션을 사용하지 않도록 설정](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)  
+* [방법: WSFederationHttpBinding 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
+* [방법: 페더레이션 클라이언트 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
+* [인증서 작업](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
+* [SecurityBindingElement 인증 모드](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md)
