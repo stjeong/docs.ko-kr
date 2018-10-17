@@ -2,12 +2,12 @@
 title: KnownAssemblyAttribute
 ms.date: 03/30/2017
 ms.assetid: b3bc7f31-95ff-46e1-8308-d206ec426f6e
-ms.openlocfilehash: 02d151ee322cb2793df6f31e5e4b72dfb1027aec
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d17ded99e08fa4fb99fd87e220045c2869a35805
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522858"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372410"
 ---
 # <a name="knownassemblyattribute"></a>KnownAssemblyAttribute
 이 샘플에서는 <xref:System.Runtime.Serialization.DataContractResolver> 클래스를 사용하여 serialization 및 deserialization 프로세스를 사용자 지정하는 방법을 보여 줍니다. 또한 serialization 및 deserialization 동안 알려진 형식을 동적으로 추가하는 방법을 보여 줍니다.  
@@ -15,7 +15,7 @@ ms.locfileid: "43522858"
 ## <a name="sample-details"></a>샘플 세부 정보  
  이 샘플은 네 개의 프로젝트로 구성되어 있습니다. 이 중 하나는 IIS에서 호스트되며 다음 서비스 계약을 정의하는 서비스에 해당합니다.  
   
-```  
+```csharp
 // Definition of a service contract.  
 [ServiceContract(Namespace = "http://Microsoft.Samples.KAA")]  
 [KnownAssembly("Types")]  
@@ -40,7 +40,7 @@ public interface IDataContractCalculator
   
  서비스 계약은 다음 예제와 같이 구현됩니다.  
   
-```  
+```csharp
 // Service class that implements the service contract.  
  public class DataContractCalculatorService : IDataContractCalculator  
  {  
@@ -86,7 +86,7 @@ public interface IDataContractCalculator
   
  다른 프로젝트는 서버와 통신하면서 서버에서 노출하는 메서드를 호출하는 클라이언트에 해당합니다. 클라이언트는 다음 예제와 같이 정의됩니다.  
   
-```  
+```csharp  
  // Client implementation code.  
  class Client  
  {  
@@ -193,7 +193,7 @@ public interface IDataContractCalculator
   
  이 샘플에서는 다음 예제와 같이 `DataContractResolver`를 정의합니다.  
   
-```  
+```csharp
 public class MyDataContractResolver : DataContractResolver  
     {  
        Dictionary<string, XmlDictionaryString> dictionary = new Dictionary<string, XmlDictionaryString>();  
@@ -277,7 +277,7 @@ public class MyDataContractResolver : DataContractResolver
   
  이 샘플에서 사용되는 형식 라이브러리는 다음 예제와 같습니다.  
   
-```  
+```csharp 
  [DataContract]  
  public class ComplexNumber  
  {  
@@ -324,7 +324,7 @@ public class ComplexNumberWithMagnitude : ComplexNumber
   
  샘플이 빌드되어 실행될 때 클라이언트에서 얻는 예상 출력은 다음과 같습니다.  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Magnitude: 7.21110255092798  
   

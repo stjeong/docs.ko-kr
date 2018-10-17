@@ -2,19 +2,19 @@
 title: ServiceToEndpointAssociation
 ms.date: 03/30/2017
 ms.assetid: 03c3cd15-e1b2-4dc2-bdc2-59fdccdae110
-ms.openlocfilehash: b1e5b87b053e947432cba9f6e716f7d1ea8f013f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3d23a3ee10c47e04ea7bdba202ea5063c0d84fac
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33484331"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372189"
 ---
 # <a name="servicetoendpointassociation"></a>ServiceToEndpointAssociation
-서비스를 끝점에 매핑합니다.  
+서비스를 엔드포인트에 매핑합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```csharp
 class ServiceToEndpointAssociation  
 {  
   Service ref;  
@@ -34,7 +34,7 @@ class ServiceToEndpointAssociation
  액세스 형식: 읽기 전용  
 한정자: Key  
   
- 끝점과 연결된 서비스입니다.  
+ 엔드포인트와 연결된 서비스입니다.  
   
 ### <a name="ref"></a>ref  
  데이터 형식: Endpoint  
@@ -42,7 +42,7 @@ class ServiceToEndpointAssociation
  액세스 형식: 읽기 전용  
 한정자: Key  
   
- 서비스와 연결된 끝점입니다.  
+ 서비스와 연결된 엔드포인트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

@@ -2,12 +2,12 @@
 title: 메시지 로그 보기
 ms.date: 03/30/2017
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
-ms.openlocfilehash: 025d4020002a56deb9d5b8a2fe628f50cabad4d3
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 5d007efc9667ee5380b69349d6a960554ab0d4fe
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42912090"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374835"
 ---
 # <a name="viewing-message-logs"></a>메시지 로그 보기
 이 항목에서는 메시지 로그를 볼 수 있는 방법에 대해 설명합니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "42912090"
   
 -   세 로그 모두 보아야 한다면 합니다 [Service Trace Viewer 도구 (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) 동시에, 새 릴레이 서비스를 수정할 수 있습니다 <xref:System.ServiceModel.Channels.Message> 인스턴스. 이 인스턴스는 들어오는 메시지 본문의 복사본이어야 하며, `ActivityId` 및 `Action` 헤더를 제외한 모든 헤더여야 합니다. 다음 예제 코드에서는 이 작업을 수행하는 방법에 대해 보여 줍니다.  
   
-```  
+```csharp
 Message outgoingMessage = Message.CreateMessage(incomingMessage.Version, incomingMessage.Headers.Action, incomingMessage.GetReaderAtBodyContents());  
   
 for (int i = 0; i < incomingMessage.Headers.Count; i++)  

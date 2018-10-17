@@ -6,12 +6,12 @@ helpviewer_keywords:
 - technology overview [WCF]
 - WCF [WCF], technology overview
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
-ms.openlocfilehash: 0aaa72741a1bb75862a1e3a4c5569ea53919a7f3
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 1046f80ee094fa1c65c9f0f69febff84ccd36db0
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845582"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372061"
 ---
 # <a name="what-is-windows-communication-foundation"></a>Windows Communication Foundation 정의
 Windows Communication Foundation (WCF)은 서비스 지향 응용 프로그램을 빌드하기 위한 프레임 워크입니다. WCF를 사용 하 여 보낼 수 있습니다 데이터 비동기 메시지로 서비스 끝점에서 간에. 서비스 엔드포인트는 IIS에서 호스팅하는 계속 사용 가능한 서비스의 일부분일 수도 있고 응용 프로그램에서 호스팅되는 서비스일 수도 있습니다. 또한 엔드포인트는 서비스 엔드포인트에서 데이터를 요청하는 서비스의 클라이언트일 수 있습니다. 메시지는 XML로 전송되는 한 문자나 단어처럼 간단할 수도 있고 이진 데이터 스트림처럼 복잡할 수도 있습니다. 다음은 몇 가지 샘플 시나리오입니다.
@@ -103,4 +103,4 @@ Microsoft Silverlight는 상호 운용 가능하며 다양한 기능을 제공�
 - [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md)
 - [설명서에 대한 안내](../../../docs/framework/wcf/guide-to-the-documentation.md)
 - [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)
-- [Windows Communication Foundation 샘플](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
+- [Windows Communication Foundation 샘플](/previous-versions/dotnet/netframework-3.5/ms751514%28v=vs.90%29)

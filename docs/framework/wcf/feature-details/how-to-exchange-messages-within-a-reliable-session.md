@@ -2,12 +2,12 @@
 title: '방법: 신뢰할 수 있는 세션 내에서 메시지 교환'
 ms.date: 03/30/2017
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
-ms.openlocfilehash: 6b204749ce86b79bf46b2d5c96be1b00dca9500d
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 53e5661bf140540cd0fc7a9fcb739b67488b8491
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44037378"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374523"
 ---
 # <a name="how-to-exchange-messages-within-a-reliable-session"></a>방법: 신뢰할 수 있는 세션 내에서 메시지 교환
 
@@ -23,7 +23,7 @@ ms.locfileid: "44037378"
 
    [!code-csharp[c_HowTo_UseReliableSession#1121](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/service.cs#1121)]
 
-1. 서비스 클래스에 서비스 계약을 구현합니다. 서비스 구현 내 주소 또는 바인딩 정보는 지정 되지 note 합니다. 구성 파일에서 주소 또는 바인딩 정보 정보를 검색 하는 코드를 작성 하는 데 필요한 아닙니다.
+1. 서비스 클래스에 서비스 계약을 구현합니다. 서비스 구현 내 주소 또는 바인딩 정보는 지정 되지 note 합니다. 구성 파일에서 주소 또는 바인딩 정보를 검색 하는 코드를 작성 하는 데 필요한 아닙니다.
 
    [!code-csharp[c_HowTo_UseReliableSession#1122](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/service.cs#1122)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "44037378"
 
    [!code-csharp[C_HowTo_UseReliableSession#1221](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1221)]
 
-1. 또한 생성된 클라이언트 응용 프로그램에는 `ClientCalculator`의 구현이 포함되어 있습니다. 참고 서비스 구현 내에 주소 및 바인딩 정보를 어디서 나 지정 되지 않습니다. 구성 파일에서 주소 또는 바인딩 정보 정보를 검색 하는 코드를 작성 하는 데 필요한 아닙니다.
+1. 또한 생성된 클라이언트 응용 프로그램에는 `ClientCalculator`의 구현이 포함되어 있습니다. 참고 서비스 구현 내에 주소 및 바인딩 정보를 어디서 나 지정 되지 않습니다. 구성 파일에서 주소 또는 바인딩 정보를 검색 하는 코드를 작성 하는 데 필요한 아닙니다.
 
    [!code-csharp[C_HowTo_UseReliableSession#1222](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1222)]
 

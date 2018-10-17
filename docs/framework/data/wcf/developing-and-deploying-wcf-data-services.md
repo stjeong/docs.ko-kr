@@ -7,12 +7,12 @@ helpviewer_keywords:
 - deploying [WCF Data Services
 - developing applications [WCF Data Services]
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
-ms.openlocfilehash: cf1782eaf54701f0cf93576325b3d46e8bc4d3f1
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: d4b4c776db542b6326fcceb8f2fd057d9caabf94
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48261513"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372439"
 ---
 # <a name="develop-and-deploy-wcf-data-services"></a>개발 및 WCF Data Services를 배포 합니다.
 
@@ -80,9 +80,9 @@ WCF 데이터 서비스를 개발 하는 경우는 [!INCLUDE[vstecasp](../../../
 
 -   HTTP 검사 프로그램은 요청 및 응답 메시지의 내용을 검사할 수 있도록 하여 데이터 서비스를 디버깅할 때 아주 유용할 수 있습니다. 원시 패킷을 표시할 수 있는 네트워크 패킷 분석기를 사용하여 데이터 서비스와 주고받는 HTTP 요청 및 응답을 검사할 수 있습니다.
 
--   일반적인 작업을 수행할 때보다 데이터 서비스를 디버깅할 때 데이터 서비스에서 발생하는 오류에 대한 자세한 정보가 필요할 수 있습니다. <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> 에서 <xref:System.Data.Services.DataServiceConfiguration> 속성을 `true` 로 설정하고 데이터 서비스 클래스에서 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> 특성의 <xref:System.ServiceModel.Description.ServiceDebugBehavior> 속성을 `true`로 설정하여 데이터 서비스에서 추가 오류 정보를 가져올 수 있습니다. 자세한 내용은 게시물을 참조 하세요 [WCF Data Services 디버깅](https://go.microsoft.com/fwlink/?LinkId=201868)합니다. 또한 HTTP 메시징 계층에서 발생 하는 예외를 확인할 wcf에서 추적을 사용할 수 있습니다. 자세한 내용은 [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)을 참조하세요.
+-   데이터 서비스를 디버깅할 때에 일반 작업 중 보다 데이터 서비스에서 오류에 대 한 자세한 정보를 가져올 수는 것이 좋습니다. <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> 에서 <xref:System.Data.Services.DataServiceConfiguration> 속성을 `true` 로 설정하고 데이터 서비스 클래스에서 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> 특성의 <xref:System.ServiceModel.Description.ServiceDebugBehavior> 속성을 `true`로 설정하여 데이터 서비스에서 추가 오류 정보를 가져올 수 있습니다. 자세한 내용은 게시물을 참조 하세요 [WCF Data Services 디버깅](https://go.microsoft.com/fwlink/?LinkId=201868)합니다. 또한 HTTP 메시징 계층에서 발생 하는 예외를 확인할 wcf에서 추적을 사용할 수 있습니다. 자세한 내용은 [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)을 참조하세요.
 
--   으로 일반적으로 개발 되 고 데이터 서비스는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 있지만 응용 프로그램 프로젝트를 만들 수도 데이터 서비스는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Visual Studio에서 웹 사이트 프로젝트입니다. 두 가지 프로젝트 유형의 차이점에 대 한 정보를 참조 하세요 [NIB: 웹 응용 프로그램 프로젝트와 Visual Studio에서 웹 사이트 프로젝트 비교](https://msdn.microsoft.com/library/2861815e-f5a2-4378-a2f8-b8a86dc012f5)합니다.
+-   으로 일반적으로 개발 되 고 데이터 서비스는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 있지만 응용 프로그램 프로젝트를 만들 수도 데이터 서비스는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Visual Studio에서 웹 사이트 프로젝트입니다. 두 가지 프로젝트 유형의 차이점에 대한 정보는 [NIB: 웹 응용 프로그램 프로젝트와 Visual Studio의 웹 사이트 프로젝트 비교](https://msdn.microsoft.com/library/2861815e-f5a2-4378-a2f8-b8a86dc012f5)를 참조하세요.
 
 -   사용 하 여 데이터 서비스를 만들면 합니다 **새 항목 추가** Visual studio에서 데이터 서비스 대화 상자에서 호스팅되는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] IIS에서 합니다. [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 및 IIS가 데이터 서비스의 기본 호스트지만 다른 호스팅 옵션도 지원됩니다. 자세한 내용은 [데이터 서비스 호스팅](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)합니다.
 
@@ -98,7 +98,7 @@ WCF Data Services에서는 데이터 서비스를 호스트하는 프로세스�
 
         -   [웹 배포 패키지](https://msdn.microsoft.com/library/1f9713c8-9540-494c-b80d-9893b970ad6f)
 
-        -   [One-click 게시](https://msdn.microsoft.com/library/59226246-99ad-4aec-975d-7c61e8a8911c)
+        -   [One-Click 게시(One-Click Publishing)](https://msdn.microsoft.com/library/59226246-99ad-4aec-975d-7c61e8a8911c)
 
     -   **ASP.NET 웹 사이트를 위한 배포 기술**
 

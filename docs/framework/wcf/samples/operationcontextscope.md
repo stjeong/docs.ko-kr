@@ -2,12 +2,12 @@
 title: OperationContextScope
 ms.date: 03/30/2017
 ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
-ms.openlocfilehash: 09ead071c5d8320452724edbb1c7f7f5e0124421
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 499d3e9824ede493043b996d581b079ec23938f8
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857971"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49371994"
 ---
 # <a name="operationcontextscope"></a>OperationContextScope
 OperationContextScope 샘플에는 헤더를 사용 하 여 Windows Communication Foundation (WCF) 호출에서 추가 정보를 보내는 방법을 보여 줍니다. 이 샘플에서는 서버와 클라이언트 모두가 콘솔 응용 프로그램입니다.  
@@ -20,7 +20,7 @@ OperationContextScope 샘플에는 헤더를 사용 하 여 Windows Communicatio
 ## <a name="messageheaderreader"></a>MessageHeaderReader  
  클라이언트에서 메시지를 받은 후 <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A> 컬렉션에서 헤더 조회를 시도하는 샘플 서비스입니다. 클라이언트에서는 전송한 GUID를 헤더에 전달하고 서비스에서는 사용자 지정 헤더를 검색하며, 있는 경우 클라이언트에서 인수로 전달한 GUID와 비교합니다.  
   
-```  
+```csharp
 public bool RetrieveHeader(string guid)  
 {  
      MessageHeaders messageHeaderCollection =   
@@ -57,7 +57,7 @@ public bool RetrieveHeader(string guid)
 ## <a name="messageheaderclient"></a>MessageHeaderClient  
  생성 된 프록시를 사용 하는 클라이언트 구현 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 원격 서비스와 통신할 수 있습니다. 여기서는 먼저 `MessageHeaderReaderClient`의 프록시 개체 두 개를 만듭니다.  
   
-```  
+```csharp
 //Create two clients to the remote service.  
 MessageHeaderReaderClient client1 = new MessageHeaderReaderClient();  
 MessageHeaderReaderClient client2 = new MessageHeaderReaderClient();  
@@ -65,7 +65,7 @@ MessageHeaderReaderClient client2 = new MessageHeaderReaderClient();
   
  그러면 클라이언트에서 OperationContextScope를 만들고 범위를 `client1`로 지정합니다. 여기서는 <xref:System.ServiceModel.Channels.MessageHeader>를 <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A>에 추가하고 두 클라이언트 모두에 대해 한 번의 호출을 수행합니다. 헤더에만 전송 되지 않는다는 보장 `client1` 아닌 `client2` 의 반환 값을 확인 하 여는 `RetrieveHeader` 호출 합니다.  
   
-```  
+```csharp
 using (new OperationContextScope(client1.InnerChannel))  
 {  
     //Create a new GUID that is sent as the header.  
@@ -92,7 +92,7 @@ using (new OperationContextScope(client1.InnerChannel))
   
  이 샘플은 자체 호스팅됩니다. 샘플을 실행한 결과 다음 샘플 출력이 제공됩니다.  
   
-```  
+```console  
 Prompt> Service.exe  
 The service is ready.  
 Press <ENTER> to terminate service.  

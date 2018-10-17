@@ -2,12 +2,12 @@
 title: 서비스 설명
 ms.date: 03/30/2017
 ms.assetid: 7034b5d6-d608-45f3-b57d-ec135f83ff24
-ms.openlocfilehash: 1acd82fddd378a379023c7aa46ead2ce36c5b243
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: c31edae952b20823945403dd5aebb438bcbf0c11
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003349"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374068"
 ---
 # <a name="service-description"></a>서비스 설명
 Service Description 샘플에서는 런타임에 서비스에서 서비스 설명 정보를 검색하는 방법을 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), 서비스에 대 한 설명이 포함 된 정보를 반환 하도록 정의 하는 추가 서비스 작업을 사용 하 여 합니다. 반환되는 정보는 서비스의 기본 주소 및 엔드포인트를 나열합니다. 서비스는 <xref:System.ServiceModel.OperationContext>, <xref:System.ServiceModel.ServiceHost> 및 <xref:System.ServiceModel.Description.ServiceDescription> 클래스를 사용하여 이 정보를 제공합니다.  
@@ -19,7 +19,7 @@ Service Description 샘플에서는 런타임에 서비스에서 서비스 설�
   
  이 샘플에는 `IServiceDescriptionCalculator`라는 계산기 계약의 수정된 버전이 있습니다. 이 계약에서는 서비스의 기본 주소 및 서비스 엔드포인트를 설명하는 다중 선 문자열을 클라이언트에 반환하는 `GetServiceDescriptionInfo`라는 추가 서비스 작업을 정의합니다.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IServiceDescriptionCalculator  
 {  
@@ -38,7 +38,7 @@ public interface IServiceDescriptionCalculator
   
  `GetServiceDescriptionInfo`의 구현 코드에서는 <xref:System.ServiceModel.Description.ServiceDescription>을 사용하여 서비스 엔드포인트를 나열합니다. 서비스 엔드포인트는 상대 주소를 가질 수 있으므로 먼저 서비스의 기본 주소를 나열합니다. 이 정보를 모두 가져오기 위해 코드는 <xref:System.ServiceModel.OperationContext.Current%2A>를 사용하여 작업 컨텍스트를 가져옵니다. <xref:System.ServiceModel.ServiceHost> 및 해당 <xref:System.ServiceModel.Description.ServiceDescription> 개체는 작업 컨텍스트로부터 검색됩니다. 서비스의 기본 엔드포인트를 나열하기 위해 코드는 서비스 호스트의 <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A> 컬렉션에서 반복합니다. 서비스의 서비스 엔드포인트를 나열하기 위해 코드는 서비스 설명의 엔드포인트 컬렉션에서 반복합니다.  
   
-```  
+```csharp
 public string GetServiceDescriptionInfo()  
 {  
     string info = "";  
@@ -65,7 +65,7 @@ public string GetServiceDescriptionInfo()
   
  샘플을 실행하면 계산기 작업 및 `GetServiceDescriptionInfo` 작업에서 반환되는 서비스 정보가 나타납니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  

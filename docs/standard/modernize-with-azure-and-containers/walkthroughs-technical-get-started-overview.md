@@ -4,12 +4,12 @@ description: Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
-ms.openlocfilehash: 41fbeb3abc201ef03cf0c237a069e7687c98dd18
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 1c23acc16698446bc07c0047b68186e21c2ceb2d
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45594013"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372853"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>연습 및 기술 시작된 개요 가져오기
 
@@ -203,7 +203,7 @@ GitHub wiki의이 콘텐츠를 더 자세히 살펴보기
 
 ### <a name="overview"></a>개요
 
-[Azure ACI (Container Instances)](https://docs.microsoft.com/en-us/azure/container-instances/) 는 컨테이너의 단일 인스턴스를 배포할 수 있는 컨테이너 개발/테스트/준비 환경을 사용 하는 가장 빠른 방법입니다.
+[Azure ACI (Container Instances)](https://docs.microsoft.com/azure/container-instances/) 는 컨테이너의 단일 인스턴스를 배포할 수 있는 컨테이너 개발/테스트/준비 환경을 사용 하는 가장 빠른 방법입니다.
 
 ### <a name="goals"></a>목표
 

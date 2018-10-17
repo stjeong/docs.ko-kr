@@ -2,12 +2,12 @@
 title: 기본 샘플
 ms.date: 03/30/2017
 ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
-ms.openlocfilehash: 29edc8acb0293210e66e31660e3215220440fbae
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: c16ad22a63958bd7c7b2b3d94f2c82b5b7db6f65
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580318"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49373952"
 ---
 # <a name="basic-sample"></a>기본 샘플
 이 샘플에서는 서비스를 검색 가능하게 만드는 방법과 검색 가능한 서비스를 검색하고 호출하는 방법을 보여 줍니다. 이 샘플은 서비스와 클라이언트에 해당하는 두 개의 프로젝트로 구성되어 있습니다.
@@ -18,7 +18,7 @@ ms.locfileid: "48580318"
 ## <a name="service"></a>서비스  
  간단한 계산기 서비스 구현입니다. 검색 관련 코드는 `Main`에 있으며, 여기에서 다음 코드와 같이 <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>가 서비스 호스트에 추가되고 <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>가 추가됩니다.  
   
-```  
+```csharp
 using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress))  
 {  
     serviceHost.AddServiceEndpoint(typeof(ICalculatorService), new   

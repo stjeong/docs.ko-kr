@@ -2,12 +2,12 @@
 title: 오류 처리
 ms.date: 03/30/2017
 ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
-ms.openlocfilehash: 64b1af4b557d7792c7285866edc9aed08a0ef667
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 548d93e63440e256ddb54c3ca792a49817c9b059
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486156"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372239"
 ---
 # <a name="error-handling"></a>오류 처리
 ## <a name="error-handling-in-windows-communication-foundation"></a>Windows Communication Foundation의 오류 처리  
@@ -30,7 +30,7 @@ ms.locfileid: "43486156"
 ### <a name="dealing-with-unexpected-exceptions-using-an-ierrorhandler"></a>IErrorHandler를 사용하여 예기치 않은 예외 처리  
  예기치 않은 예외를 처리 하려면 권장 되는 작업 과정 IErrorHandler를 "후크" 하는 것입니다. WCF 런타임 수준 ("서비스" 모델"계층), 채널 계층에 없습니다. 오류 처리기 에서만 예외를 catch 합니다. 채널 수준에서 IErrorHandler를 후크하려면 사용자 지정 채널을 만드는 방법밖에 없지만 대부분의 시나리오에서 권장되지 않습니다.  
   
- "예기치 않은 예외"는 일반적으로 복구할 수 없는 예외 나 처리 예외가; 대신,이 예기치 않은 사용자 예외가 있습니다. 복구할 수 없는 예외 (예: 메모리 부족 예외)를 하나 일반적으로 처리 하 여는 [서비스 모델 예외 처리기](https://msdn.microsoft.com/library/system.servicemodel.dispatcher.exceptionhandler.aspx) 자동으로 일반적으로 처리할 수 없습니다. 정상적으로 및 이러한 예외를 처리 하는 유일한 이유 전혀 추가 로깅을 수행 될 수 있습니다 또는 클라이언트에 표준 예외를 반환 합니다. 처리 예외는 메시지 처리 중 serialization, 인코더 또는 포맷터 수준에서 발생하며 일반적으로 IErrorHandler로는 처리될 수 없습니다. 이는 예외 발생 시점에 오류 처리기가 개입하기에는 너무 이르거나 늦기 때문입니다. 마찬가지로 전송 예외도 IErrorHandler로 처리될 수 없습니다.  
+ "예기치 않은 예외"는 일반적으로 복구할 수 없는 예외 나 처리 예외가; 대신,이 예기치 않은 사용자 예외가 있습니다. 복구할 수 없는 예외 (예: 메모리 부족 예외)를 하나 일반적으로 처리 하 여는 [서비스 모델 예외 처리기](xref:System.ServiceModel.Dispatcher.ExceptionHandler) 자동으로 일반적으로 처리할 수 없습니다. 정상적으로 및 이러한 예외를 처리 하는 유일한 이유 전혀 추가 로깅을 수행 될 수 있습니다 또는 클라이언트에 표준 예외를 반환 합니다. 처리 예외는 메시지 처리 중 serialization, 인코더 또는 포맷터 수준에서 발생하며 일반적으로 IErrorHandler로는 처리될 수 없습니다. 이는 예외 발생 시점에 오류 처리기가 개입하기에는 너무 이르거나 늦기 때문입니다. 마찬가지로 전송 예외도 IErrorHandler로 처리될 수 없습니다.  
   
  IErrorHandler를 사용하면 예외가 throw될 때의 응용 프로그램 동작을 명시적으로 제어할 수 있습니다. 다음 작업을 수행할 수 있습니다.  
   

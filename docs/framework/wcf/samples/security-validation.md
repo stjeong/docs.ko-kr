@@ -3,12 +3,12 @@ title: 보안 유효성 검사
 ms.date: 03/30/2017
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
 author: BrucePerlerMS
-ms.openlocfilehash: 4b80457fb551c2ee99f910710c5f30fa59c53a01
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: df056287c216b92fa0bcbab2bcbc9bedf799873c
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123347"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374458"
 ---
 # <a name="security-validation"></a>보안 유효성 검사
 이 샘플에서는 사용자 지정 동작을 통해 컴퓨터에 있는 서비스의 유효성을 검사하여 특정 기준을 충족하는지 확인하는 방법을 보여 줍니다. 이 샘플에서는 서비스의 각 엔드포인트를 검사하여 보안 바인딩 요소가 포함되어 있는지 확인하는 방식으로 사용자 지정 동작을 통해 서비스의 유효성을 검사합니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
@@ -19,12 +19,12 @@ ms.locfileid: "49123347"
 ## <a name="endpoint-validation-custom-behavior"></a>엔드포인트 유효성 검사 사용자 지정 동작  
  `Validate` 인터페이스에 포함된 <xref:System.ServiceModel.Description.IServiceBehavior> 메서드에 사용자 코드를 추가함으로써 서비스 또는 엔드포인트에 사용자 지정 동작을 제공하여 사용자 정의 작업을 수행할 수 있습니다. 다음 코드는 서비스에 포함된 각 엔드포인트를 루프하여 바인딩 컬렉션에서 보안 바인딩을 검색하는 데 사용됩니다.  
   
-```  
+```csharp
 public void Validate(ServiceDescription serviceDescription,   
                                        ServiceHostBase serviceHostBase)  
 {  
-    // Loop through each endpoint individually gathering their    
-       binding elements.  
+    // Loop through each endpoint individually, gathering their    
+    // binding elements.  
     foreach (ServiceEndpoint endpoint in serviceDescription.Endpoints)  
     {  
         secureElementFound = false;  

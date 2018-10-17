@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - XML Reader
 ms.assetid: 60e5848d-7d9c-4ea5-bed9-22758c9ac16c
-ms.openlocfilehash: ce5c03d7bd169ee166e9444ee070c32df6e2801c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5ac97afd2efc1bb57a81f5cd2d78fed18ca3804d
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520948"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374679"
 ---
 # <a name="xmlreader-sample"></a>XmlReader 샘플
 XmlReader 샘플에서는 <xref:System.Xml.XmlReader>를 사용하는 메시지 본문의 처리를 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)를 계산기 서비스를 구현 하는 합니다. 더할 값의 배열이 포함된 메시지를 받는 서비스 작업인 `Sum`이 추가되었습니다. 이 서비스는 <xref:System.Xml.XmlReader>를 사용하여 메시지를 읽습니다.  
@@ -19,7 +19,7 @@ XmlReader 샘플에서는 <xref:System.Xml.XmlReader>를 사용하는 메시지 
   
  계산기 인터페이스는 다음 샘플 코드에서와 같이 `Sum` 매개 변수를 수락하는 <xref:System.ServiceModel.Channels.Message>이라는 서비스 작업을 포함합니다.  
   
-```  
+```csharp
 public interface ICalculator  
 {  
     [OperationContract]  
@@ -37,9 +37,10 @@ public interface ICalculator
   
  클라이언트는 다음 샘플 코드에서와 같이 먼저 정수 값의 배열을 만들고 그 배열로부터 메시지를 만든 다음 이 메시지를 사용하여 `Sum` 메서드를 호출하는 방법으로 `Sum`에 액세스합니다.  
   
-```  
+```csharp
 CalculatorClient client = new CalculatorClient();  
-...  
+//...  
+
 // Call the Sum service operation.  
 int[] values = { 1, 2, 3, 4, 5 };  
 using (new OperationContextScope(client.InnerChannel))  
@@ -54,7 +55,7 @@ using (new OperationContextScope(client.InnerChannel))
   
  서비스에서 `Sum` 서비스 작업의 구현은 <xref:System.Xml.XmlReader> 개체를 사용하여 합산할 값을 반복하면서 메시지 본문에 액세스합니다. 다음 샘플 코드에서와 같이 <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> 메서드가 호출되어 메시지 본문에 액세스합니다.  
   
-```  
+```csharp  
 public int Sum(Message message)  
 {  
     int sum = 0;  
@@ -81,7 +82,7 @@ public int Sum(Message message)
   
  샘플을 실행하면 작업의 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

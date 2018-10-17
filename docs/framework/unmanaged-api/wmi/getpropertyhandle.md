@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 94171b0708c97eb7510e916e451ed03645d706f3
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 2383003012ce1f6adffe0ad78ab614323840496f
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837442"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49371006"
 ---
 # <a name="getpropertyhandle-function"></a>GetPropertyHandle 함수
 속성을 식별하는 고유한 핸들을 반환합니다.
@@ -52,7 +52,7 @@ HRESULT GetPropertyHandle (
 [in] 속성 이름을 포함 하는 UTF16 인코딩 characaters의 null 종료 문자열입니다.   
 
 `pType`  
-[out] 에 대 한 포인터를 [ `CIMTYPE` ](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) 속성의 CIM 형식을 나타내는 열거형 멤버입니다.
+[out] 에 대 한 포인터를 [ `CIMTYPE` ](/windows/desktop/api/wbemcli/ne-wbemcli-tag_cimtype_enumeration) 속성의 CIM 형식을 나타내는 열거형 멤버입니다.
 
 `pHandle`   
 [out] 속성 핸들을 포함 하는 정수에 대 한 포인터입니다.

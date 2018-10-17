@@ -2,12 +2,12 @@
 title: 응용 프로그램 구성
 ms.date: 03/30/2017
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
-ms.openlocfilehash: e06c428526c5383c6908521075cd2eca977ce89f
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: e9a5429ef573fdee9478b63b76d2da8005215c93
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43481238"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49370928"
 ---
 # <a name="configuring-your-application"></a>응용 프로그램 구성
 Windows Communication Foundation (WCF).NET 구성 시스템을 사용 하 고 컴퓨터 및 응용 프로그램 범위에서 서비스를 구성할 수 있습니다.  
@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF).NET 구성 시스템을 사용 하 고 �
  응용 프로그램에서 정의한 구성 설정은 `<appSettings>` 섹션 그룹에 정의되어 있습니다. .NET 구성 파일에서 응용 프로그램 설정에 대 한 자세한 내용은 참조 하세요. [ \<appSettings >](https://go.microsoft.com/fwlink/?LinkId=95159)합니다.  
   
 ## <a name="using-the-configuration-editor"></a>Configuration Editor 사용  
- WCF[Configuration Editor 도구 (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md) 관리자와 개발자가 그래픽 사용자 인터페이스를 사용 하 여 WCF 서비스에 대 한 구성 설정을 만들고 수정할 수 있습니다. 이 도구를 사용 하 여 XML 구성 파일을 직접 편집 하지 않고도 WCF 바인딩, 동작, 서비스 및 진단에 대 한 설정을 관리할 수 있습니다.  
+ WCF [Configuration Editor 도구 (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md) 관리자와 개발자가 그래픽 사용자 인터페이스를 사용 하 여 WCF 서비스에 대 한 구성 설정을 만들고 수정할 수 있습니다. 이 도구를 사용 하 여 XML 구성 파일을 직접 편집 하지 않고도 WCF 바인딩, 동작, 서비스 및 진단에 대 한 설정을 관리할 수 있습니다.  
   
 ## <a name="editing-configuration-files-in-visual-studio"></a>Visual Studio에서 구성 파일 편집  
  Visual Studio에서 WCF 서비스 프로젝트의 구성 파일을 편집 하려면 마우스 오른쪽 단추로 클릭에 **솔루션 탐색기** 선택 합니다 **WCF 구성 편집** 상황에 맞는 메뉴 항목입니다. 그러면 합니다 [Configuration Editor 도구 (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)합니다.  

@@ -14,12 +14,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 40820a805310786eeb0effd7c5284c1a70a6e70b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 83928696fc7fdfaf2eb944f4cdb9eebecdece0b3
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33407602"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49373697"
 ---
 # <a name="cordebugehclause-structure"></a>CorDebugEHClause 구조
 [.NET Framework 4.5.2 이상 버전에서 지원됨]  
@@ -53,9 +53,9 @@ typedef struct _CorDebugEHClause {
 |`FilterOffset`|필터 기반 예외 처리기에 대한 메서드 본문 시작 지점부터의 오프셋(바이트)입니다.|  
   
 ## <a name="remarks"></a>설명  
- 배열을 `CoreDebugEHClause` 값에서 반환 되는 [GetEHClauses](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md) 메서드.  
+ 배열을 `CoreDebugEHClause` 에서 반환 하는 값을 [GetEHClauses](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md) 메서드.  
   
- EH 절 정보는 CLI 사양을 통해 정의됩니다. 자세한 내용은 참조 [표준 ecma-355: CLI 공용 언어 인프라 (), 6 판](http://www.ecma-international.org/publications/standards/Ecma-335.htm)합니다.  
+ EH 절 정보는 CLI 사양을 통해 정의됩니다. 자세한 내용은 [표준 ECMA-355: 공용 언어 인프라 (CLI), 여섯 번째 Edition](https://www.ecma-international.org/publications/standards/Ecma-335.htm)합니다.  
   
  `flags` 필드는 다음 플래그를 포함할 수 있습니다. 이러한 플래그는 CorDebug.idl 또는 CorDebug.h에서 정의되지 않습니다.  
   
@@ -67,13 +67,13 @@ typedef struct _CorDebugEHClause {
 |`COR_ILEXCEPTION_CLAUSE_FAULT`|0x00000004|fault 절, 즉 예외가 throw될 때만 호출되는 `finally` 절입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [GetEHClauses 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)  

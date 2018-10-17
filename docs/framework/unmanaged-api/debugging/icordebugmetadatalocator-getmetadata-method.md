@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1149a3c3589cec0e952088a772ca036028c58ff5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b905c8bb89e4b163952b9640b53fc3992ba5ca10
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521356"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49373886"
 ---
 # <a name="icordebugmetadatalocatorgetmetadata-method"></a>ICorDebugMetaDataLocator::GetMetaData 메서드
 디버거가 요청한 작업을 완료하는 데 필요한 메타데이터가 포함된 모듈의 전체 경로를 반환하도록 디버거에 요청합니다.  
@@ -46,7 +46,7 @@ HRESULT GetMetaData(
  [in] 파일의 전체 경로를 나타내는 null로 종료된 문자열입니다. 전체 경로 사용할 수 없는 경우 이름 및 파일의 확장명 (*filename*. *확장*).  
   
  `dwImageTimeStamp`  
- [in] 이미지 PE 파일 헤더의 타임스탬프입니다. 이 매개 변수 기호 서버에 사용 될 수 있습니다 ([SymSrv](https://msdn.microsoft.com/library/cc266470.aspx)) 조회 합니다.  
+ [in] 이미지 PE 파일 헤더의 타임스탬프입니다. 이 매개 변수 기호 서버에 사용 될 수 있습니다 ([SymSrv](/windows/desktop/debug/using-symsrv)) 조회 합니다.  
   
  `dwImageSize`  
  [in] PE 파일 헤더의 이미지 크기입니다. 이 매개 변수는 SymSrv 조회에 사용될 수 있습니다.  

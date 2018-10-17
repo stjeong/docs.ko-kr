@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WCF [WCF], routing
 - Windows communication Foundation [WCF], routing
 ms.assetid: bd56516c-420d-4c4e-97f9-f72d28d149a9
-ms.openlocfilehash: 065bbb5e20ddf1b26e98934d94c764e83969cc8a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 50b6cb78f5fb20344d5f682d268b6e646c17fb9e
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518906"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49370833"
 ---
 # <a name="routing"></a>라우팅
 이 단원의 항목에서는 라우팅 서비스에 대해 설명합니다. 라우팅 서비스는 내용 기반 라우팅을 구성하고, 프로토콜 브리징을 설정하고, 통신 오류를 처리하고, 런타임에 라우팅 논리를 동적으로 업데이트하는 데 사용할 수 있는 구성 가능한 제네릭 SOAP 매개자입니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "43518906"
  [라우팅 서비스](../../../../docs/framework/wcf/feature-details/routing-service.md)  
  라우팅 서비스의 기능에 대해 간략하게 설명합니다.  
   
- [라우팅 서비스](https://msdn.microsoft.com/library/5ac8718c-bcef-456f-bfd5-1e60a30d6eaa)  
+ [라우팅 서비스](../../../../docs/framework/wcf/feature-details/routing-service.md)  
  라우팅 서비스의 기능에 대해 설명합니다.  
   
  [라우팅 소개](../../../../docs/framework/wcf/feature-details/routing-introduction.md)  

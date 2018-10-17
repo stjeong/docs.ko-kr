@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8625f893c30700a47cc2db7b960715f748ccb299
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 6de9c7ee6fb03917e9405193f27739f3f903012f
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44038732"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372137"
 ---
 # <a name="ihosttaskmanagerenterruntime-method"></a>IHostTaskManager::EnterRuntime 메서드
 관리 되지 않는 메서드를 호출 메서드를 호출 하는 플랫폼와 같은 실행 결과 제어가 반환 되는 CLR (공용 언어 런타임) 호스트에 알립니다.  
@@ -61,7 +61,7 @@ HRESULT EnterRuntime ();
  **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
- [고급 COM 상호 운용성](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
+ [고급 COM 상호 운용성](/previous-versions/dotnet/netframework-4.0/bd9cdfyx)  
  [방법: PInvoke를 사용하여 관리 코드로부터 네이티브 DLL 호출](/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke)  
  [ICLRTask 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
  [ICLRTaskManager 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  

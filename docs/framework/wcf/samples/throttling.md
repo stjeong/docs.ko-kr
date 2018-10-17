@@ -5,12 +5,12 @@ helpviewer_keywords:
 - service behaviors, throttling sample
 - Throttling Sample [Windows Communication Foundation]
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
-ms.openlocfilehash: f214e3a5230d6cf16b3bde5d89078160ed95f96f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1337b5d1c4c18700f0722bbb6912e934b2170b01
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519168"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374042"
 ---
 # <a name="throttling"></a>스로틀
 Throttling 샘플에서는 스로틀 컨트롤을 사용하는 방법을 보여 줍니다. 스로틀은 리소스가 과도하게 사용되는 것을 방지하기 위해 동시 호출, 인스턴스 또는 세션 수를 제한합니다. 스로틀 동작은 서비스 구성 파일 설정에 지정됩니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다.  
@@ -40,7 +40,7 @@ Throttling 샘플에서는 스로틀 컨트롤을 사용하는 방법을 보여 
   
  스로틀을 보여 주기 위해 다음과 같이 서비스 메서드에 절전 모드 시간을 정의합니다.  
   
-```  
+```csharp
 public double Add(double n1, double n2)  
 {  
     System.Threading.Thread.Sleep(2000);  
@@ -50,7 +50,7 @@ public double Add(double n1, double n2)
   
  샘플을 실행하면 작업 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. Add 및 Subtract 메서드가 동시에 실행되고 Multiply 및 Divide 메서드가 동시에 실행되어 최대 2개의 메서드가 동시에 실행될 수 있으므로 스로틀을 볼 수 있습니다.  
   
-```  
+```console  
 Press <ENTER> to terminate client.  
 Add(100,15.99)  
 Subtract(145,76.54)  

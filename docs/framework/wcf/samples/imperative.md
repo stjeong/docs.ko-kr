@@ -2,12 +2,12 @@
 title: 명령적
 ms.date: 03/30/2017
 ms.assetid: 4f7ce807-c0e4-407a-92a6-22abafb40b51
-ms.openlocfilehash: 9039e2f0d13baefb8b0c2abcfb63dd11ce15ffd7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7547e3ed3d573cccce068aec239710e76d29bf38
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510728"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49370941"
 ---
 # <a name="imperative"></a>명령적
 이 샘플에는 정의 하는 방법을 보여 줍니다.는 <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> 정의 하는 대신 코드를 사용 하는 서비스에 대 한는 `wsHttpBinding` 구성의 바인딩. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "43510728"
   
  다음 코드는 코드에서 명령적으로 바인딩을 정의하는 방법을 보여 줍니다.  
   
-```  
+```csharp
 public static void Main()  
 {  
     WSHttpBinding binding = new WSHttpBinding();  
@@ -52,7 +52,7 @@ public static void Main()
   
  클라이언트는 다음 샘플 코드에서와 같이 서비스와 통신하기 위해 채널을 만듭니다.  
   
-```  
+```csharp
 WSHttpBinding binding = new WSHttpBinding();  
 binding.Name = "binding1";  
 binding.HostNameComparisonMode = HostNameComparisonMode.StrongWildcard;  
@@ -68,7 +68,7 @@ ICalculator channel = channelFactory.CreateChannel();
   
  샘플을 실행하면 작업 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

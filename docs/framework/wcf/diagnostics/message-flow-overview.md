@@ -2,12 +2,12 @@
 title: 메시지 흐름 개요
 ms.date: 03/30/2017
 ms.assetid: fb0899e1-84cc-4d90-b45b-dc5a50063943
-ms.openlocfilehash: 73ad66389d8458c0508c7a8cae28f54ca38ed574
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 54ffd8ec2349b2dd54ca61615b2fb1b997d02932
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841984"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372787"
 ---
 # <a name="message-flow-overview"></a>메시지 흐름 개요
 상호 연결된 서비스가 포함된 분산 시스템에서는 서비스 간의 인과 관계를 확인해야 합니다. 상태 모니터링, 문제 해결 및 근본 원인 분석과 같은 중요한 시나리오를 지원하기 위해 요청 흐름의 일부인 다양한 구성 요소를 이해하는 것이 중요합니다. 다양한 서비스 간 추적을 상호 연결할 수 있도록 하기 위해 .NET Framework 4에서는 다음 기능을 통한 지원이 추가되었습니다.
@@ -52,13 +52,13 @@ ms.locfileid: "48841984"
 
 8.  클라이언트의 Program.cs에서 다음 Using 문을 추가합니다.
 
-    ```
+    ```csharp
     using System.Diagnostics;
     ```
 
 9. 클라이언트 프로젝트의 program.cs 파일에 있는 Main 메서드에서 Trace GUID를 이벤트 로그에서 전파되도록 설정합니다.
 
-    ```
+    ```csharp
     Guid guid = Guid.NewGuid();
     Trace.CorrelationManager.ActivityId = guid;
     ```

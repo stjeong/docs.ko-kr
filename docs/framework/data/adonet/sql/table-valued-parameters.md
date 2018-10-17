@@ -1,16 +1,16 @@
 ---
 title: 테이블 반환 매개 변수
-ms.date: 03/30/2017
+ms.date: 10/12/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: 370c16d5-db7b-43e3-945b-ccaab35b739b
-ms.openlocfilehash: 333154f26a575886f19a914ce2f91beebd6be49e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 8654a415ee0701680064aec2ee45f975086ec2c0
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042584"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374653"
 ---
 # <a name="table-valued-parameters"></a>테이블 반환 매개 변수
 테이블 반환 매개 변수를 사용하면 클라이언트 응용 프로그램에서 여러 행 데이터를 반복적인 라운드트립이나 데이터 처리를 위한 특수한 서버측 논리를 사용하지 않고도 SQL Server로 쉽게 마샬링할 수 있습니다. 또한 테이블 반환 매개 변수를 사용하면 클라이언트 응용 프로그램에서 데이터 행을 캡슐화하여 매개 변수화된 단일 명령을 통해 데이터를 서버에 보낼 수 있습니다. 들어오는 데이터 행은 테이블 변수에 저장되며, 이러한 테이블 변수에 대해서는 [!INCLUDE[tsql](../../../../../includes/tsql-md.md)]을 사용하여 작업할 수 있습니다.  
@@ -87,7 +87,9 @@ INSERT INTO dbo.Categories (CategoryID, CategoryName)
   
 ## <a name="configuring-a-sqlparameter-example"></a>SqlParameter 예제 구성  
  <xref:System.Data.SqlClient> 테이블 반환 매개 변수를 채우는 지 원하는 <xref:System.Data.DataTable>, <xref:System.Data.Common.DbDataReader> 하거나 <xref:System.Collections.Generic.IEnumerable%601>  \  <xref:Microsoft.SqlServer.Server.SqlDataRecord> 개체입니다. 이 경우 <xref:System.Data.SqlClient.SqlParameter.TypeName%2A>의 <xref:System.Data.SqlClient.SqlParameter> 속성을 사용하여 테이블 반환 매개 변수의 형식 이름을 지정해야 합니다. `TypeName`은 이전에 서버에서 만든 호환 가능한 형식의 이름과 일치해야 합니다. 다음 코드 조각에서는 <xref:System.Data.SqlClient.SqlParameter>를 구성하여 데이터를 삽입하는 방법을 보여 줍니다.  
-  
+ 
+다음 예제에서는 `addedCategories` 변수에 포함을 <xref:System.Data.DataTable>합니다. 변수의 채워지는 방법을 보려면 다음 섹션의 예제를 참조 [저장 프로시저에 테이블 반환 매개 변수를 전달](#passing)합니다.
+
 ```csharp  
 // Configure the command and parameter.  
 SqlCommand insertCommand = new SqlCommand(sqlInsert, connection);  
@@ -126,7 +128,7 @@ Dim tvpParam As SqlParameter = _
 tvpParam.SqlDbType = SqlDbType.Structured  
 ```  
   
-## <a name="passing-a-table-valued-parameter-to-a-stored-procedure"></a>저장 프로시저에 테이블 반환 매개 변수 전달  
+## <a name="passing"></a> 저장된 프로시저에 테이블 반환 매개 변수를 전달합니다.  
  다음 예제에서는 테이블 반환 매개 변수 데이터를 저장 프로시저에 전달하는 방법을 보여 줍니다. 이 코드에서는 추가된 행을 <xref:System.Data.DataTable> 메서드를 사용하여 새 <xref:System.Data.DataTable.GetChanges%2A>에 추출합니다. 그런 다음 <xref:System.Data.SqlClient.SqlCommand> 속성을 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A>로 설정하여 <xref:System.Data.CommandType.StoredProcedure>를 정의합니다. <xref:System.Data.SqlClient.SqlParameter> 메서드를 사용하여 <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A>가 채워지고 <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A>이 `Structured`로 설정됩니다. 그런 다음 <xref:System.Data.SqlClient.SqlCommand> 메서드를 사용하여 <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>가 실행됩니다.  
   
 ```csharp  

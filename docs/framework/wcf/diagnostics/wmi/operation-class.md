@@ -2,19 +2,19 @@
 title: Operation 클래스
 ms.date: 03/30/2017
 ms.assetid: b19d1496-ef06-4d0c-b2ae-e728ec00cca0
-ms.openlocfilehash: d9256915afe9fdb8e4c91d186131fe41a7094c56
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 16de8b25594896349ea546d3def52dd256fe5c70
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33487570"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49371591"
 ---
 # <a name="operation-class"></a>Operation 클래스
 작업  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```csharp
 class Operation  
 {  
   string Action;  
@@ -50,7 +50,7 @@ class Operation
   
  액세스 형식: 읽기 전용  
   
- 작업을 사용 하 여 비동기적으로 구현 나타냅니다는 `Begin`[꺽쇠괄호 열기/닫기] 및 `End`[꺽쇠괄호 열기/닫기] 메서드 쌍을 서비스 계약에서 합니다.  
+ 작업을 사용 하 여 비동기적으로 구현 됨을 나타냅니다는 `Begin`[꺽쇠괄호 열기/닫기] 및 `End`서비스 계약에 [꺾쇠 괄호 열기/닫기] 메서드 쌍입니다.  
   
 ### <a name="behaviors"></a>동작  
  데이터 형식: Behavior array  

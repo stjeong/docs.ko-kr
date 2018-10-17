@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: c3904ad60df3d9d7ce2b58d5911e4e19a2ebb7e3
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 78c511555065528d1ab34ee3ec9f8859a15bbc61
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193907"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372392"
 ---
 # <a name="textpattern-and-embedded-objects-overview"></a>TextPattern 및 포함 개체 개요
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
   
  이 개요에서는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 에서 포함된 개체 또는 자식 요소를 텍스트 문서나 컨테이너 내에서 노출하는 방법을 설명합니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "47193907"
   
  텍스트 범위의 내용을 이동해야 하는 경우 <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> 메서드가 성공적으로 실행되려면 백그라운드에서 일련의 단계를 거쳐야 합니다.  
   
-1.  텍스트 범위가 정규화됩니다. 다시 말해서, 텍스트 범위가 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 엔드포인트에서 중복 제거 범위로 축소되어 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트가 불필요해집니다. 이 단계는 텍스트 범위에 걸쳐 있는 경우 모호성을 제거 하는 데 필요한 <xref:System.Windows.Automation.Text.TextUnit> 경계: 예를 들어 "{The U} RL [ http://www.microsoft.com ](https://www.microsoft.com) 텍스트에 포함 된" 위치 "{0}" 및 "}"는 텍스트 범위 끝점입니다.  
+1.  텍스트 범위가 정규화됩니다. 다시 말해서, 텍스트 범위가 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> 엔드포인트에서 중복 제거 범위로 축소되어 <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> 엔드포인트가 불필요해집니다. 이 단계는 텍스트 범위에 걸쳐 있는 경우 모호성을 제거 하는 데 필요한 <xref:System.Windows.Automation.Text.TextUnit> 경계: 예를 들어 `{The URL https://www.microsoft.com is embedded in text` 위치 "{0}" 및 "}"는 텍스트 범위 끝점입니다.  
   
 2.  결과 범위가 <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> 내에서 뒤쪽으로 옮겨져 요청된 <xref:System.Windows.Automation.Text.TextUnit> 경계의 시작 부분으로 이동하게 됩니다.  
   
@@ -66,22 +66,22 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
   
  } = <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End>  
   
-<a name="Hyperlink"></a>   
 ### <a name="hyperlink"></a>하이퍼링크  
- **예제 1 - 포함된 텍스트 하이퍼링크가 들어 있는 텍스트 범위**  
+
+**예제 1 - 포함된 텍스트 하이퍼링크가 들어 있는 텍스트 범위**
   
- {0} URL [ http://www.microsoft.com ](https://www.microsoft.com) 텍스트에 포함 된}.  
+`{The URL https://www.microsoft.com is embedded in text}.`
   
 |호출되는 메서드|결과|  
 |-------------------|------------|  
-|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|문자열을 반환 합니다 "URL http://www.microsoft.com 텍스트에 포함 된"입니다.|  
+|<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|`The URL https://www.microsoft.com is embedded in text` 문자열을 반환합니다.|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|텍스트 범위를 포함하는 가장 안쪽의 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다. 이 예제에서는 텍스트 공급자 자체를 나타내는 <xref:System.Windows.Automation.AutomationElement> 입니다.|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A>|하이퍼링크 컨트롤을 나타내는 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다.|  
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> 여기서 <xref:System.Windows.Automation.AutomationElement> 는 이전 `GetChildren` 메서드에서 반환되는 개체입니다.|나타내는 범위를 반환 합니다. "http://www.microsoft.com" 입니다.|  
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> 여기서 <xref:System.Windows.Automation.AutomationElement> 는 이전 `GetChildren` 메서드에서 반환되는 개체입니다.|나타내는 범위를 반환 합니다. "https://www.microsoft.com" 입니다.|  
   
  **예제 2 - 포함된 텍스트 하이퍼링크에 부분적으로 걸쳐 있는 텍스트 범위**  
   
- URL `http://{[www]}` 텍스트에 포함 됩니다.  
+ URL `https://{[www]}` 텍스트에 포함 됩니다.  
   
 |호출되는 메서드|결과|  
 |-------------------|------------|  
@@ -89,9 +89,9 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|텍스트 범위를 포함하는 가장 안쪽의 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다. 이 예제에서는 하이퍼링크를 컨트롤입니다.|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A>|텍스트 범위가 전체 URL 문자열로 확장되지 않기 때문에 `null` 을 반환합니다.|  
   
- **예 3-텍스트 컨테이너의 콘텐츠를 부분적으로 걸쳐 있는 텍스트 범위입니다. 텍스트 컨테이너에는 포함 된 텍스트 하이퍼링크가 텍스트 범위에 속하지 않습니다.**  
+**예 3-텍스트 컨테이너의 콘텐츠를 부분적으로 걸쳐 있는 텍스트 범위입니다. 텍스트 컨테이너에는 포함 된 텍스트 하이퍼링크가 텍스트 범위에 속하지 않습니다.**  
   
- {URL} [ http://www.microsoft.com ](https://www.microsoft.com) 텍스트에 포함 됩니다.  
+`{The URL} [https://www.microsoft.com](https://www.microsoft.com) is embedded in text.`
   
 |호출되는 메서드|결과|  
 |-------------------|------------|  
@@ -140,7 +140,7 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
 |<xref:System.Windows.Automation.GridPattern.GetItem%2A> 매개 변수는 (0, 0)|테이블 셀의 내용을 나타내는 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다. 이 예제에서 요소는 텍스트 컨트롤입니다.|  
 |<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> 여기서 <xref:System.Windows.Automation.AutomationElement> 는 이전 `GetItem` 메서드에서 반환되는 개체입니다.|이미지를 해당 하는 범위를 반환 ![포함 된 이미지 예제](../../../docs/framework/ui-automation/media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample")합니다.|  
 |이전<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A> 메서드에서 반환되는 개체에 대한 `RangeFromChild` 입니다.|테이블 셀을 나타내는 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다. 이 예제에서 요소는 TableItemPattern을 지원하는 텍스트 컨트롤입니다.|  
-|이전<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A> 메서드에서 반환되는 개체에 대한 `GetEnclosingElement` 입니다.|테이블을 나타내는 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다.|  
+|이전 `GetEnclosingElement` 메서드에서 반환되는 개체에 대한 <xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>입니다.|테이블을 나타내는 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다.|  
 |이전<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A> 메서드에서 반환되는 개체에 대한 `GetEnclosingElement` 입니다.|텍스트 공급자 자체를 나타내는 <xref:System.Windows.Automation.AutomationElement> 를 반환합니다.|  
   
  **예제 2 - 셀의 텍스트 콘텐츠 가져오기**  
@@ -148,7 +148,7 @@ Move() 및 ExpandToEnclosingUnit()에 따라 텍스트 범위가 조정되는 �
 |호출되는 메서드|결과|  
 |-------------------|------------|  
 |<xref:System.Windows.Automation.GridPattern.GetItem%2A> 매개 변수는 (1,1)|테이블 셀의 내용을 나타내는 <xref:System.Windows.Automation.AutomationElement>를 반환합니다. 이 예제에서 요소는 텍스트 컨트롤입니다.|  
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> 여기서 <xref:System.Windows.Automation.AutomationElement> 는 이전 `GetItem` 메서드에서 반환되는 개체입니다.|"Y"를 반환합니다.|  
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> 여기서 <xref:System.Windows.Automation.AutomationElement>는 이전 `GetItem` 메서드에서 반환되는 개체입니다.|"Y"를 반환합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Automation.TextPattern>  

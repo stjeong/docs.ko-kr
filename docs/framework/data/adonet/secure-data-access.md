@@ -2,12 +2,12 @@
 title: 보안 데이터 액세스
 ms.date: 03/30/2017
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
-ms.openlocfilehash: 7083f68457aa8f87b01f523abc5742d24bafcbfd
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e5bb96a091dcd64f12d086d864643d00c34d8f17
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513789"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372465"
 ---
 # <a name="secure-data-access"></a>보안 데이터 액세스
 보안 ADO.NET 코드를 쓰려면 내부 데이터 저장소 또는 데이터베이스에서 사용할 수 있는 보안 메커니즘을 알아야 합니다. 또한, 응용 프로그램에 포함된 다른 기능이나 구성 요소의 보안 문제도 고려해야 합니다.  
@@ -88,7 +88,7 @@ ms.locfileid: "43513789"
 |리소스|설명|  
 |--------------|-----------------|  
 |[비관리 코드와의 상호 운용](../../../../docs/framework/interop/index.md)|COM 구성 요소를 .NET Framework에 노출하는 방법과 .NET Framework 구성 요소를 COM에 노출하는 방법에 대해 설명하는 항목을 제공합니다.|  
-|[고급 COM 상호 운용성](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|주 interop 어셈블리, 스레딩 및 사용자 지정 마샬링 등에 대해 설명하는 고급 항목을 제공합니다.|  
+|[고급 COM 상호 운용성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)|주 interop 어셈블리, 스레딩 및 사용자 지정 마샬링 등에 대해 설명하는 고급 항목을 제공합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

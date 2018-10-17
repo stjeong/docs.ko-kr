@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 408f25c4-6d60-475c-92b1-7b52b777c6db
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3955329903af0d4c27bc7228c7c9025cb03e00f8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f68304b06c502672ae1aac9693a966ea546ee4dd
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394315"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49371838"
 ---
 # <a name="missingmetadataexception-class-net-native"></a>MissingMetadataException 클래스(.NET 네이티브)
 **Windows 10의 Windows 앱용 .NET, [!INCLUDE[net_native](../../../includes/net-native-md.md)]에만 해당**  
@@ -64,7 +64,7 @@ ms.locfileid: "33394315"
   
 ## <a name="events"></a>이벤트  
   
-|Event|설명|  
+|이벤트(event)|설명|  
 |-----------|-----------------|  
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|예외에 대한 serialize된 데이터를 포함하는 예외 상태 개체를 만들기 위해 예외를 serialize할 때 발생합니다. <xref:System.Exception?displayProperty=nameWithType>에서 상속됩니다.|  
   
@@ -76,8 +76,8 @@ ms.locfileid: "33394315"
 > [!IMPORTANT]
 >  이 예외는 응용 프로그램에 필요한 메타데이터를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
 >   
->  -   형식의 경우 [MissingMetadataException 문제 해결사](http://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
-> -   메서드의 경우 [MissingMetadataException 문제 해결사](http://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
+>  -   형식의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
+> -   메서드의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
   
  `MissingMetadataException` 클래스는 고유한 멤버를 포함하지 않으며 모든 멤버는 <xref:System.TypeAccessException>에서 상속됩니다.  
   

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - documents [WPF], features for
 ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
-ms.openlocfilehash: 5f8eb4afe53292b2589964f1a745f00d761ee019
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4a0d2b99368dc985c11951089adbabf8e1cdc8b9
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33542966"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372150"
 ---
 # <a name="documents"></a>문서
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 개발자가 고급 문서 기능 및 향상된 읽기 환경을 사용하여 응용 프로그램을 빌드할 수 있는 다양한 구성 요소 집합을 제공합니다. 고급 기능 및 품질 외에도 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 문서 패키징, 보안 및 저장을 위해 간소화된 관리 서비스도 제공합니다.  
@@ -28,4 +28,4 @@ ms.locfileid: "33542966"
  <xref:System.Windows.Controls.DocumentViewer>  
  <xref:System.Windows.Documents.FlowDocument>  
  <xref:System.Windows.Xps>  
- [isXPS.exe(isXPS 규칙 도구)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100))
+ [isXPS.exe(isXPS 규칙 도구)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))

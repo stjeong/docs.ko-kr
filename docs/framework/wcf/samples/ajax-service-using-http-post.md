@@ -2,12 +2,12 @@
 title: AJAX Service Using HTTP POST
 ms.date: 03/30/2017
 ms.assetid: 1ac80f20-ac1c-4ed1-9850-7e49569ff44e
-ms.openlocfilehash: c102d9d403cefb1bf3d4ab75859a81172895c2e0
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: df199b40a4a9ebb9a36cea7234b484273348cd9e
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041111"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372060"
 ---
 # <a name="ajax-service-using-http-post"></a>AJAX Service Using HTTP POST
 이 샘플에서는 Windows Communication Foundation (WCF)를 만드는 데는 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] HTTP POST를 사용 하는 Asynchronous JavaScript and XML (AJAX) 서비스입니다. AJAX 서비스는 웹 브라우저 클라이언트에서 기본 JavaScript 코드를 사용하여 액세스할 수 있는 서비스입니다. 이 샘플을 기반으로 합니다 [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md) 두 샘플 사이의 유일한 차이점은 HTTP GET 대신 HTTP post를 사용 하 여 샘플입니다.  
@@ -33,7 +33,7 @@ public interface ICalculator
 
  기본 AJAX 서비스 샘플에서와 마찬가지로, <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>를 사용하여 서비스에 AJAX 엔드포인트를 만듭니다.  
   
- GET 요청과 달리 브라우저에서 POST 서비스를 호출할 수는 없습니다. 예를 들어,로 이동 http://localhost/ServiceModelSamples/service.svc/Add?n1=100&n2=200 POST 서비스에서는 때문에 오류가 발생 합니다 `n1` 및 `n2` 메시지 본문에 전송할 매개 변수-JSON 형식으로-및 URL에 없습니다.  
+ GET 요청과 달리 브라우저에서 POST 서비스를 호출할 수는 없습니다. 예를 들어,로 이동 `http://localhost/ServiceModelSamples/service.svc/Add?n1=100&n2=200` POST 서비스에서는 때문에 오류가 발생 합니다 `n1` 및 `n2` URL 및 JSON 형식으로 메시지 본문에 전송할 매개 변수입니다.  
   
  클라이언트 웹 페이지 PostAjaxClientPage.aspx에는 사용자가 페이지에 있는 작업 단추 중 하나를 클릭할 때마다 서비스를 호출하는 ASP.NET 코드가 포함되어 있습니다. 서비스에서와 같이 동일한 방식으로 응답 합니다 [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md) GET 요청을 사용 하 여 샘플입니다.  
   
@@ -52,6 +52,4 @@ public interface ICalculator
   
 2.  에 설명 된 대로 PostAjaxService.sln 솔루션을 빌드합니다 [Building Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)합니다.  
   
-3.  이동할 http://localhost/ServiceModelSamples/PostAjaxClientPage.aspx (브라우저의 프로젝트 디렉터리에서 PostAjaxClientPage.aspx를 열고 수행).  
-  
-## <a name="see-also"></a>참고 항목
+3.  이동할 `http://localhost/ServiceModelSamples/PostAjaxClientPage.aspx` (브라우저의 프로젝트 디렉터리에서 PostAjaxClientPage.aspx를 열고 수행).

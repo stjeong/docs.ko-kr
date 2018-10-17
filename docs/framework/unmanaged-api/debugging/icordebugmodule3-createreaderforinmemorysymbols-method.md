@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 342739f6c71e9c576e557433dc6abd0adbf38c8c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e404228cbc6efb81ed90c135358b1832ddcd8954
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528845"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49373676"
 ---
 # <a name="icordebugmodule3createreaderforinmemorysymbols-method"></a>ICorDebugModule3::CreateReaderForInMemorySymbols 메서드
 동적 모듈에 대 한 디버그 기호 판독기를 만듭니다.  
@@ -58,7 +58,7 @@ HRESULT CreateReaderForInMemorySymbols (
 ## <a name="remarks"></a>설명  
  이 메서드가 될 수 있습니다도 메모리 내 (동적이 아닌) 모듈에 대 한 기호 판독기 개체를 만드는 데에 기호를 먼저 사용할 (나타난 합니다 [UpdateModuleSymbols 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-updatemodulesymbols-method.md) 콜백).  
   
- 이 메서드가 호출 될 때마다 새 판독기 인스턴스를 반환 합니다 (같은 [CComPtrBase::CoCreateInstance](https://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6)). 디버거에서 결과 캐시 하 고 기본 데이터를 변경한 경우에 새 인스턴스를 요청 해야 하므로 (즉을 [LoadClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md) 콜백을 수신).  
+ 이 메서드가 호출 될 때마다 새 판독기 인스턴스를 반환 합니다 (같은 [CComPtrBase::CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)). 디버거에서 결과 캐시 하 고 기본 데이터를 변경한 경우에 새 인스턴스를 요청 해야 하므로 (즉을 [LoadClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md) 콜백을 수신).  
   
  첫 번째 형식이 로드 될 때까지 동적 모듈에서는 사용할 수 있는 모든 기호를 있지 않은 (표시 된 대로 합니다 [LoadClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md) 콜백).  
   

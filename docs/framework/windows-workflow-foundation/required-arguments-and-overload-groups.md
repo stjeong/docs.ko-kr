@@ -2,12 +2,12 @@
 title: 필수 인수 및 오버로드 그룹
 ms.date: 03/30/2017
 ms.assetid: 4ca3ed06-b9af-4b85-8b70-88c2186aefa3
-ms.openlocfilehash: d25702e573acd9a0815c232cdf6935d6e9651631
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: d7cfe00d93f1eede77bcda5881c63843722c9a17
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842075"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374269"
 ---
 # <a name="required-arguments-and-overload-groups"></a>필수 인수 및 오버로드 그룹
 활동을 실행하기 위해 특정 인수를 바인딩하도록 활동을 구성할 수 있습니다. `RequiredArgument` 특성은 활동의 특정 인수가 필수 인수임을 나타내고 `OverloadGroup` 특성은 필수 인수 범주를 그룹화하는 데 사용됩니다. 활동 작성자는 특성을 사용하여 단순 활동 유효성 검사 구성 또는 복합 활동 유효성 검사 구성을 제공할 수 있습니다.  
@@ -63,7 +63,7 @@ public sealed class Add : CodeActivity<int>
   
  **필수 작업 인수 'Operand1'에 대 한 값을 제공 하지 않았습니다.**  
 > [!NOTE]
-> 검사 하 고 유효성 검사 오류 및 경고를 처리 하는 방법에 대 한에 대 한 자세한 내용은 참조 하세요 [활동 유효성 검사 호출](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md)합니다.  
+> 확인 하 고 유효성 검사 오류 및 경고 처리에 대 한 자세한 내용은 참조 하세요. [활동 유효성 검사 호출](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md)합니다.  
   
 ## <a name="using-overload-groups"></a>오버로드 그룹 사용
 

@@ -8,20 +8,20 @@ helpviewer_keywords:
 ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 12fc92c716cf0ff1ab15786a067ad955caee0d20
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: a99d42b4d61f3270b50e0c4698683cf89458ec9c
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47205306"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372267"
 ---
 # <a name="accessibility"></a>액세스 가능성
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)]는 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]에 대한 새로운 접근성 프레임워크입니다. [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]에 관한 정보에 대해 프로그래밍 방식의 액세스를 제공하여 보조 기술 제품 및 자동화된 테스트 프레임워크의 요구 사항을 해결합니다. 또한 컨트롤 및 응용 프로그램 개발자는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 통해 해당 제품에 액세스할 수 있습니다.  
   
- 이 문서에서는 관리 코드용 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)]에 대해 설명합니다. C++의 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 프로그래밍에 대한 자세한 내용은 [UI Automation for Win32 Applications](https://msdn.microsoft.com/library/ms726294.aspx)(Win32 응용 프로그램용 UI 자동화)를 참조하세요.  
+ 이 문서에서는 관리 코드용 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)]에 대해 설명합니다. C++의 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 프로그래밍에 대한 자세한 내용은 [UI Automation for Win32 Applications](/windows/desktop/winauto/windows-automation-api-portal)(Win32 응용 프로그램용 UI 자동화)를 참조하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [접근성 모범 사례](../../../docs/framework/ui-automation/accessibility-best-practices.md)  

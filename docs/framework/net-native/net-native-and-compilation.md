@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 046b71a8f1d948a785a15cfc148b93292bf673f7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0a89474ddfe3bcde1c44271818b7e3c730469f48
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395530"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372393"
 ---
 # <a name="net-native-and-compilation"></a>.NET 네이티브 및 컴파일
 .NET Framework를 대상으로 지정하는 Windows 8.1 응용 프로그램과 Windows 데스크톱 응용 프로그램은 특정 프로그래밍 언어로 작성되고 IL(중간 언어)로 컴파일됩니다. 런타임에 JIT(Just-In-Time) 컴파일러는 메서드가 처음 실행되기 바로 전에 로컬 컴퓨터에 대한 네이티브 코드로 IL을 컴파일합니다. 반대로 .NET 네이티브 도구 체인은 컴파일 타임에 소스 코드를 네이티브 코드로 변환합니다. 이 항목에서는 .NET Framework 앱에 사용할 수 있는 다른 컴파일 기술과 .NET 네이티브를 비교하고 .NET 네이티브로 컴파일된 코드에서 발생하는 예외가 JIT로 컴파일된 코드에서 발생하지 않는 이유를 이해하는 데 도움이 될 수 있는 네이티브 코드를 .NET 네이티브에서 생성하는 방법에 대한 실제적인 개요를 제공합니다.  
@@ -102,6 +102,6 @@ ms.locfileid: "33395530"
   
 ## <a name="see-also"></a>참고 항목  
  [메타데이터 및 자동 기술 구성 요소](../../../docs/standard/metadata-and-self-describing-components.md)  
- [내부.NET 네이티브 (Channel 9 비디오)](http://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
+ [내부.NET 네이티브 (Channel 9 비디오)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
  [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md)  
  [.NET 네이티브 일반 문제 해결](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

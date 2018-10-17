@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - XML Formatter
 ms.assetid: e0a2fe89-3534-48c8-aa3c-819862224571
-ms.openlocfilehash: ef1b01ff59fc32546dca8ed9c95f3a981ed408e3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 0086bdd41b9f87c14b3a9d0653a8f8982235b1ad
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45743880"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49371518"
 ---
 # <a name="datacontractserializer-sample"></a>DataContractSerializer 샘플
 DataContractSerializer 샘플은 데이터 계약 클래스에 대한 일반 serialization 및 deserialization 서비스를 수행하는 <xref:System.Runtime.Serialization.DataContractSerializer>를 보여 줍니다. 이 샘플에서는 만듭니다는 `Record` 개체, 메모리 스트림으로 serialize 및 deserialize 된 메모리 스트림을 다시 다른 `Record` 개체의 사용을 보여 합니다 <xref:System.Runtime.Serialization.DataContractSerializer>. 그런 다음 이진 작성기로 `Record` 개체를 deserialize하여 이진 작성기가 serialization에 미치는 영향을 보여 줍니다.  
@@ -19,7 +19,7 @@ DataContractSerializer 샘플은 데이터 계약 클래스에 대한 일반 ser
   
  `Record`에 대한 데이터 계약이 다음 샘플 코드에 나와 있습니다.  
   
-```  
+```csharp  
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 internal class Record  
 {  
@@ -74,14 +74,14 @@ internal class Record
   
  샘플 코드는 `Record`이라는 `record1` 개체를 만든 다음 해당 개체를 표시합니다.  
   
-```  
+```csharp
 Record record1 = new Record(1, 2, "+", 3);  
 Console.WriteLine("Original record: {0}", record1.ToString());  
 ```  
   
  이 샘플에서는 <xref:System.Runtime.Serialization.DataContractSerializer>를 사용하여 `record1`을 메모리 스트림으로 serialize합니다.  
   
-```  
+```csharp  
 MemoryStream stream1 = new MemoryStream();  
   
 //Serialize the Record object to a memory stream using DataContractSerializer.  
@@ -91,7 +91,7 @@ serializer.WriteObject(stream1, record1);
   
  그런 다음 샘플에서는 <xref:System.Runtime.Serialization.DataContractSerializer>를 사용하여 메모리 스트림을 다시 새 `Record` 개체로 deserialize하고 표시합니다.  
   
-```  
+```csharp  
 stream1.Position = 0;  
   
 //Deserialize the Record object back into a new record object.  
@@ -102,7 +102,7 @@ Console.WriteLine("Deserialized record: {0}", record2.ToString());
   
  기본적으로 `DataContractSerializer`는 XML의 텍스트 표현을 사용하여 개체를 스트림으로 인코딩합니다. 그러나 다른 작성기를 전달하여 XML의 인코딩에 영향을 줄 수 있습니다. 이 샘플에서는 <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>를 호출하여 이진 작성기를 만듭니다. 그런 다음 <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>를 호출할 때 작성기와 레코드 개체를 serializer에 전달합니다. 마지막으로 작성기를 플러시하고 스트림 길이를 보고합니다.  
   
-```  
+```csharp  
 MemoryStream stream2 = new MemoryStream();  
   
 XmlDictionaryWriter binaryDictionaryWriter = XmlDictionaryWriter.CreateBinaryWriter(stream2);  
@@ -116,7 +116,7 @@ Console.WriteLine("Binary Stream is {0} bytes long", stream2.Length);
   
  샘플을 실행하면 원래 레코드와 deserialize된 레코드가 표시된 다음 텍스트 인코딩과 이진 인코딩의 길이를 비교한 내용이 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Original record: Record: 1 + 2 = 3  
 Deserialized record: Record: 1 + 2 = 3  
 Text Stream is 233 bytes long  
