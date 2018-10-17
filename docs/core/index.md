@@ -5,12 +5,12 @@ author: richlander
 ms.author: mairaw
 ms.date: 08/01/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: b302b6fc7e097a811c718d2244f603246cb5c259
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 692d49cc940925f629e55cf5cc103522bd3cbb38
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121040"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348981"
 ---
 # <a name="net-core-guide"></a>.NET Core 가이드
 
@@ -18,7 +18,7 @@ ms.locfileid: "49121040"
 
 특성, 지원되는 언어 및 프레임워크, 키 API를 비롯한 .NET Core에 대한 자세한 내용은 [.NET Core 정보](about.md)를 참조하세요.
 
-.NET Core 응용 프로그램을 만드는 방법은 [.NET Core 자습서](tutorials/index.md)를 참조하세요. 첫 번째 앱을 만들고 실행하는 데 몇 분밖에 걸리지 않습니다. 브라우저에서 .NET Core를 사용하려면 [C#의 숫자](https://docs.microsoft.com/dotnet/csharp/quick-starts/numbers-in-csharp) 빠른 시작을 확인하세요.
+.NET Core 응용 프로그램을 만드는 방법은 [.NET Core 자습서](tutorials/index.md)를 참조하세요. 첫 번째 앱을 만들고 실행하는 데 몇 분밖에 걸리지 않습니다. 브라우저에서 .NET Core를 사용하려면 [C#의 숫자](../csharp/quick-starts/numbers-in-csharp.yml) 빠른 시작을 확인하세요.
 
 ## <a name="download-net-core-21"></a>.NET Core 2.1 다운로드
 

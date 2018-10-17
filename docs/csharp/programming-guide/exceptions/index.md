@@ -6,12 +6,12 @@ helpviewer_keywords:
 - exceptions [C#]
 - C# language, exceptions
 ms.assetid: 0001887f-4fa2-47e2-8034-2819477e2344
-ms.openlocfilehash: 9e92c253aa1981065274dc3413f9b8888b5f8849
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a0ec7b1a91dc701093131b8807b25e66d291a746
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500665"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49371923"
 ---
 # <a name="exceptions-and-exception-handling-c-programming-guide"></a>예외 및 예외 처리(C# 프로그래밍 가이드)
 C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하는 예기치 않은 문제나 예외 상황을 처리하는 데 도움이 됩니다. 예외 처리는 `try`, `catch` 및 `finally` 키워드를 사용하여 실패했을 수 있는 작업을 시도하고, 실패를 처리하는 것이 적절하다고 판단될 때 처리하고, 리소스를 정리합니다. 예외는 CLR(공용 언어 런타임), .NET Framework, 타사 라이브러리 또는 응용 프로그램 코드에서 생성될 수 있습니다. 예외는 `throw` 키워드를 사용하여 생성됩니다.  
@@ -43,7 +43,7 @@ C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하
   
 -   `finally` 블록의 코드는 예외가 throw되더라도 실행됩니다. `finally` 블록을 사용하여 `try` 블록에서 열려 있는 스트림이나 파일을 닫는 것처럼 리소스를 해제합니다.  
   
--   .NET Framework의 관리되는 예외는 Win32 구조적 예외 처리 메커니즘을 토대로 구현됩니다. 자세한 내용은 [구조적 예외 처리(C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) 및 [Win32 구조적 예외 처리에 대한 집중 과정](http://bytepointer.com/resources/pietrek_crash_course_depths_of_win32_seh.htm)을 참조하세요.  
+-   .NET Framework의 관리되는 예외는 Win32 구조적 예외 처리 메커니즘을 토대로 구현됩니다. 자세한 내용은 [구조적 예외 처리(C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) 및 [Win32 구조적 예외 처리에 대한 집중 과정](https://bytepointer.com/resources/pietrek_crash_course_depths_of_win32_seh.htm)을 참조하세요.  
   
 ## <a name="related-sections"></a>관련 단원  
  예외 및 예외 처리에 대한 자세한 내용은 다음 항목을 참조하세요.  
