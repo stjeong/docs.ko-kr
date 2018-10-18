@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6bd0187f831db7fd68272e14c022efb45c8260f2
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 05c8ad4436cbbe5659c66f16692119fac6593b7f
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025599"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49372036"
 ---
 # <a name="file-and-stream-io"></a>파일 및 스트림 I/O
 파일 및 스트림 I/O(입/출력)는 저장 매체로 데이터를 전송하거나 저장 매체로부터 데이터를 전송 받습니다. .NET Framework에서 `System.IO` 네임스페이스는 데이터 스트림과 파일에서 읽기 및 쓰기를 동기적 및 비동기적으로 사용하는 형식을 포함합니다. 이러한 네임스페이스는 파일의 압축 및 압축 풀기 기능을 수행하는 형식 및 파이프 및 직렬 포트를 통한 통신을 가능하도록 하는 형식을 포함합니다.  
@@ -122,7 +122,7 @@ ms.locfileid: "48025599"
 ## <a name="isolated-storage"></a>격리된 저장소  
  격리된 저장소는 코드와 저장된 데이터를 연결하는 표준화된 방법을 정의하여 격리와 안전을 제공하는 데이터 저장소 메커니즘입니다. 저장소는 사용자, 어셈블리 및 도메인(옵션)에 의해 격리된 가상 파일 시스템을 제공합니다. 격리된 저장소는 응용 프로그램에 사용자 파일을 액세스할 수 있는 권한이 없는 경우 특히 유용합니다. 컴퓨터의 보안 정책에 의해 제어되는 방식으로 응용 프로그램에 대한 설정이나 파일을 저장할 수 있습니다.  
   
- 격리된 저장소는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에 사용할 수 없습니다. 대신에, [Windows.Storage](/uwp/api/Windows.Storage) 네임스페이스의 응용 프로그램 데이터 클래스를 사용합니다. 자세한 내용은 Windows 개발자 센터에서 [응용 프로그램 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 참조하세요.  
+ 격리된 저장소는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)]앱에 사용할 수 없습니다. 대신 <xref:Windows.Storage?displayProperty=nameWithType>네임스페이스의 응용 프로그램 데이터 클래스를 사용합니다. 자세한 내용은 [응용 프로그램 데이터](/previous-versions/windows/apps/hh464917%28v=win.10%29)를 참조하세요.  
   
  다음의 클래스는 격리된 저장소를 구현할 때 자주 사용됩니다.  
   
@@ -139,13 +139,13 @@ ms.locfileid: "48025599"
   
  다음은 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에서 I/O 작업을 사용할 때 알아야 할 몇 가지 중요한 차이점입니다.  
   
--   특히 파일 작업에 관련된 형식(예: <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> 및 <xref:System.IO.DirectoryInfo>)은 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]에 포함되지 않습니다. 대신에 [!INCLUDE[wrt](../../../includes/wrt-md.md)]의 [Windows.Storage](https://msdn.microsoft.com/library/windows/apps/windows.storage.aspx) 네임스페이스에 있는 형식(예: [StorageFile](https://msdn.microsoft.com/library/windows/apps/windows.storage.storagefile.aspx) 및 [StorageFolder](https://msdn.microsoft.com/library/windows/apps/windows.storage.storagefolder.aspx))을 사용합니다.  
+-   특히 파일 작업에 관련된 형식(예: <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> 및 <xref:System.IO.DirectoryInfo>)은 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]에 포함되지 않습니다. 대신 <xref:Windows.Storage.StorageFile> 및 <xref:Windows.Storage.StorageFolder> 등 [!INCLUDE[wrt](../../../includes/wrt-md.md)]의 <xref:Windows.Storage?displayProperty=nameWithType> 네임스페이스에 있는 유형을 사용합니다.  
   
 -   격리된 저장소는 사용할 수 없습니다. 대신에 [응용 프로그램 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 사용합니다.  
   
 -   비동기 메서드(예: <xref:System.IO.Stream.ReadAsync%2A> 및 <xref:System.IO.Stream.WriteAsync%2A>)를 사용하여 UI 스레드를 차단하지 못하게 합니다.  
   
--   경로 기반 압축 형식 <xref:System.IO.Compression.ZipFile> 및 <xref:System.IO.Compression.ZipFileExtensions>는 사용할 수 없습니다. 대신에, [Windows.Storage.Compression](https://msdn.microsoft.com/library/windows/apps/windows.storage.compression.aspx) 네임스페이스에서 형식을 사용합니다.  
+-   경로 기반 압축 형식 <xref:System.IO.Compression.ZipFile> 및 <xref:System.IO.Compression.ZipFileExtensions>는 사용할 수 없습니다. 대신 <xref:Windows.Storage.Compression?displayProperty=nameWithType> 네임스페이스에 있는 유형을 사용합니다.  
   
  필요하다면 .NET Framework 스트림과 Windows 런타임 스트림 간에 변환할 수 있습니다. 자세한 내용은 [방법: .NET Framework 스트림과 Windows 런타임 스트림 간 변환](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md) 또는 [System.IO.WindowsRuntimeStreamExtensions](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions.aspx)를 참조하세요. <!--zz TODO: <xref:System.IO.WindowsRuntimeStreamExtensions>--> 
   
@@ -164,7 +164,7 @@ ms.locfileid: "48025599"
   
  파일, 디렉터리 및 스트림과 관련된 I/O 작업 목록과 각 작업에 대한 예제 및 관련 내용에 대한 링크를 제공합니다.  
   
--   [비동기 파일 I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
+-   [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
   
  비동기 I/O의 기본 연산 및 성능상의 이점에 대해 설명합니다.  
   

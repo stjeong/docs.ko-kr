@@ -2,12 +2,12 @@
 title: '방법: 엔터프라이즈에서 엔드포인트 잠그기'
 ms.date: 03/30/2017
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d
-ms.openlocfilehash: 032b69c1fae38576b0374b329f1ab6fe90e2b1a0
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 23264159d30790cd54557509b0bc7c62edc1b5b7
+ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836923"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49374159"
 ---
 # <a name="how-to-lock-down-endpoints-in-the-enterprise"></a>방법: 엔터프라이즈에서 엔드포인트 잠그기
 대형 엔터프라이즈에서는 응용 프로그램을 엔터프라이즈 보안 정책에 따라 개발해야 하는 경우가 종종 있습니다. 다음 항목에서는 개발 컴퓨터에 설치 된 모든 Windows Communication Foundation (WCF) 클라이언트 응용 프로그램의 유효성을 검사 하는 클라이언트 끝점 유효성 검사기를 설치 하는 방법을 설명 합니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "48836923"
   
 1.  적절한 메커니즘을 사용하여 엔드포인트 유효성 검사기를 설치합니다. 엔터프라이즈에서는 그룹 정책 및 SMS(Systems Management Server)를 사용해 수행할 수 있습니다.  
   
-2.  사용 하 여 전역 어셈블리 캐시에 강력한 이름의 어셈블리를 설치 합니다 [Gacutil.exe (전역 어셈블리 캐시 도구)](https://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx)합니다.  
+2.  사용 하 여 전역 어셈블리 캐시에 강력한 이름의 어셈블리를 설치 합니다 [Gacutil.exe (전역 어셈블리 캐시 도구)](../../../../docs/framework/tools/gacutil-exe-gac-tool.md)합니다.  
   
 3.  다음 작업에 <xref:System.Configuration?displayProperty=nameWithType> 네임스페이스 형식을 사용합니다.  
   
