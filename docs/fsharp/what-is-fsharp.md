@@ -45,7 +45,6 @@ F#은 다음과 같은 다양한 기능들이 있습니다.
 * 패턴 매칭
 * 비동기 프로그래밍
 
-기능들의 전체 모움은 [F# 언어 레퍼런스](language-reference/index.md)에 문서화 되어 있습니다.
 기능의 전체 집합에 설명 되어는 [F # 언어 참조](language-reference/index.md)합니다.
 
 ## <a name="rich-data-types"></a>다양 한 데이터 타입
