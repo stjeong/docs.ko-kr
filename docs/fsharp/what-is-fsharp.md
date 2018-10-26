@@ -4,7 +4,7 @@ description: 'F# 프로그래밍 언어란 무엇인지 그리고 F# 프로그�
 ms.date: 08/03/2018
 ms.openlocfilehash: 193747f380c61a387ed79ecca6abbcd90ee74376
 ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/06/2018
 ms.locfileid: "43863298"
@@ -16,18 +16,18 @@ F#은 정확하고 유지 보수가 쉬운 코드를 만들어주는 함수형 �
 F# 프로그래밍은 자동으로 타입이 유추되고 일반화된 타입 및 함수를 주로 정의하는 것을 포함합니다. 이를 통해 프로그래밍의 세부 사항보다는 계속해서 문제 도메인에 집중하고 데이터를 다루도록 해줍니다.
 
 ```fsharp
-open System // 시스템 네임스페이스의 기능에 대한 접근을 가져옵니다.
+open System // Gets access to functionality in System namespace.
 
-// 이름을 가져오고 인사를 만들어내는 함수를 정의합니다.
+// Defines a function that takes a name and produces a greeting.
 let getGreeting name =
     sprintf "Hello, %s! Isn't F# great?" name
 
 [<EntryPoint>]
 let main args =
-    // 이름들의 리스트를 정의합니다.
+    // Defines a list of names
     let names = [ "Don"; "Julia"; "Xi" ]
 
-    // 각 이름에 대한 인사를 출력합니다!
+    // Prints a greeting for each name!
     names
     |> List.map getGreeting
     |> List.iter (fun greeting -> printfn "%s" greeting)
@@ -52,7 +52,7 @@ F#은 다음과 같은 다양한 기능들이 있습니다.
 [레코드](language-reference/records.md) 및 [식별된 공용체](language-reference/discriminated-unions.md)와 같은 데이터 타입들을 사용하면 복잡한 데이터와 도메인들을 표현할 수 있습니다.
 
 ```fsharp
-// 레코드들로 데이터를 그룹화
+// Group data with Records
 type SuccessfulWithdrawal = {
     Amount: decimal
     Balance: decimal
@@ -64,7 +64,7 @@ type FailedWithdrawal = {
     IsOverdraft: bool
 }
 
-// 식별된 공용체를 사용하여 1개 이상의 양식 데이터를 표현
+// Use discriminated unions to represent data of 1 or more forms
 type WithdrawalResult =
     | Success of SuccessfulWithdrawal
     | InsufficientFunds of FailedWithdrawal
@@ -79,8 +79,8 @@ F# 레코드와 식별된 공용체는 기본적으로 null이 아니며 변경 
 F# 함수는 실제로 선언하기 쉽고 강력합니다. [패턴 매칭](language-reference/pattern-matching.md)과 함께 사용하면 컴파일러가 정확성을 적용하는 동작을 정의할 수 있습니다.
 
 ```fsharp
-// 인출 결과를 반환합니다.
-let withdrawMoney amount = // 구현 생략
+// Returns a WithdrawalResult
+let withdrawMoney amount = // Implementation elided
 
 let handleWithdrawal amount =
     let w = withdrawMoney amount
@@ -93,7 +93,7 @@ let handleWithdrawal amount =
     | UndisclosedFailure -> printfn "Failed: unknown :("
 ```
 
-F# 함수는 또한 일급함수이기 때문에 매개 변수로 전달되고 다른 함수에서 반환될 수 있습니다.
+F# 함수는 또한 일급 함수이기 때문에 매개 변수로 전달되고 다른 함수에서 반환될 수 있습니다.
 
 ## <a name="functions-to-define-operations-on-objects"></a>객체에 대한 연산을 정의하는 함수
 
@@ -101,11 +101,11 @@ F#은 객체를 완벽하게 지원합니다. 객체는 데이터와 함수를 �
 
 ```fsharp
 type Set<[<EqualityConditionOn>] ‘T when ‘T: comparison>(elements: seq<'T>) =
-    member s.IsEmpty = // 구현 생략
-    member s.Contains (value) =// 구현 생략
-    member s.Add (value) = // 구현 생략
+    member s.IsEmpty = // Implementation elided
+    member s.Contains (value) =// Implementation elided
+    member s.Add (value) = // Implementation elided
     // ...
-    // 더 많은 구현 생략
+    // Further Implementation elided
     // ...
     interface IEnumerable<‘T>
     interface IReadOnlyCollection<‘T>
@@ -123,4 +123,4 @@ F#에서는 객체 지향적 코드를 작성하는 것 보다 함수를 조작�
 
 ## <a name="next-steps"></a>다음 단계
 
-더 많은 F# 기능들의 모움은, [F# 둘러보기](tour.md)를 확인하십시오.
+더 많은 F# 기능 집합은 [F# 둘러보기](tour.md)를 확인하십시오.
