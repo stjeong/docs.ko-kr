@@ -78,7 +78,6 @@ F# 레코드와 식별된 공용체는 기본적으로 null이 아니며 변경 
 
 F# 함수는 실제로 선언하기 쉽고 강력합니다. [패턴 매칭](language-reference/pattern-matching.md)과 함께 사용하면 컴파일러가 정확성을 적용하는 동작을 정의할 수 있습니다.
 
-
 ```fsharp
 // 인출 결과를 반환합니다.
 let withdrawMoney amount = // 구현 생략
