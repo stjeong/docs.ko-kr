@@ -2,22 +2,21 @@
 title: Security Calls Not Authorized Per Second
 ms.date: 03/30/2017
 ms.assetid: 0f189767-8c05-478a-8f0b-9228e5d351e5
-author: BrucePerlerMS
-ms.openlocfilehash: 20c8da5fcdca0c99fd53fb5ce0d7cbf15552997a
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 15890506aece94a07d4b97101519007accf3570a
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48035755"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50037787"
 ---
-# <a name="security-calls-not-authorized-per-second"></a><span data-ttu-id="1a495-102">Security Calls Not Authorized Per Second</span><span class="sxs-lookup"><span data-stu-id="1a495-102">Security Calls Not Authorized Per Second</span></span>
-<span data-ttu-id="1a495-103">카운터 이름: Security Calls Not Authorized Per Second</span><span class="sxs-lookup"><span data-stu-id="1a495-103">Counter Name: Security Calls Not Authorized Per Second.</span></span>  
+# <a name="security-calls-not-authorized-per-second"></a><span data-ttu-id="c3bd4-102">Security Calls Not Authorized Per Second</span><span class="sxs-lookup"><span data-stu-id="c3bd4-102">Security Calls Not Authorized Per Second</span></span>
+<span data-ttu-id="c3bd4-103">카운터 이름: Security Calls Not Authorized Per Second</span><span class="sxs-lookup"><span data-stu-id="c3bd4-103">Counter Name: Security Calls Not Authorized Per Second.</span></span>  
   
-## <a name="description"></a><span data-ttu-id="1a495-104">설명</span><span class="sxs-lookup"><span data-stu-id="1a495-104">Description</span></span>  
- <span data-ttu-id="1a495-105">이 작업에서 권한 부여에 실패한 초당 호출 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="1a495-105">Number of calls that failed authorization in this operation in a second.</span></span>  
+## <a name="description"></a><span data-ttu-id="c3bd4-104">설명</span><span class="sxs-lookup"><span data-stu-id="c3bd4-104">Description</span></span>  
+ <span data-ttu-id="c3bd4-105">이 작업에서 권한 부여에 실패한 초당 호출 횟수입니다.</span><span class="sxs-lookup"><span data-stu-id="c3bd4-105">Number of calls that failed authorization in this operation in a second.</span></span>  
   
- <span data-ttu-id="1a495-106">이 카운터는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccess%2A> 메서드가 `false`를 반환할 때 증가합니다.</span><span class="sxs-lookup"><span data-stu-id="1a495-106">This counter is incremented when the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccess%2A> method returns `false`.</span></span> <span data-ttu-id="1a495-107">들어오는 메시지가 올바른 사용자로부터 전송되고 적절하게 보호되지만 해당 사용자에게 특정 작업을 수행할 수 있는 권한이 없음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="1a495-107">It indicates that the incoming message is from a valid user and protected properly, but the user is not authorized to do specific tasks.</span></span>  
+ <span data-ttu-id="c3bd4-106">이 카운터는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccess%2A> 메서드가 `false`를 반환할 때 증가합니다.</span><span class="sxs-lookup"><span data-stu-id="c3bd4-106">This counter is incremented when the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccess%2A> method returns `false`.</span></span> <span data-ttu-id="c3bd4-107">들어오는 메시지가 올바른 사용자로부터 전송되고 적절하게 보호되지만 해당 사용자에게 특정 작업을 수행할 수 있는 권한이 없음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c3bd4-107">It indicates that the incoming message is from a valid user and protected properly, but the user is not authorized to do specific tasks.</span></span>  
   
- <span data-ttu-id="1a495-108">이 카운터는 성능 카운터 형식 [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), 값은 다음 수식을 사용 하 여 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1a495-108">This counter is of performance counter type [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula.</span></span>  
+ <span data-ttu-id="c3bd4-108">이 카운터는 성능 카운터 형식 [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), 값은 다음 수식을 사용 하 여 계산 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c3bd4-108">This counter is of performance counter type [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula.</span></span>  
   
- <span data-ttu-id="1a495-109">(N 1 - N 0 ) / ( (D 1 -D 0 ) / F)</span><span class="sxs-lookup"><span data-stu-id="1a495-109">(N 1 - N 0 ) / ( (D 1 -D 0 ) / F)</span></span>
+ <span data-ttu-id="c3bd4-109">(N 1 - N 0 ) / ( (D 1 -D 0 ) / F)</span><span class="sxs-lookup"><span data-stu-id="c3bd4-109">(N 1 - N 0 ) / ( (D 1 -D 0 ) / F)</span></span>

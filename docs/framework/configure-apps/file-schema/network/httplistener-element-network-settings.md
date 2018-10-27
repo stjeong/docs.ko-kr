@@ -2,24 +2,22 @@
 title: '&lt;httpListener&gt; 요소 (네트워크 설정)'
 ms.date: 03/30/2017
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 7a8fbf172548ea68874f3e6c6c6c7a04bf17be19
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 3daf18fab81ea481be8e45e4d9ad682047ada6f3
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47078606"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50042638"
 ---
-# <a name="lthttplistenergt-element-network-settings"></a><span data-ttu-id="c5d60-102">&lt;httpListener&gt; 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="c5d60-102">&lt;httpListener&gt; Element (Network Settings)</span></span>
-<span data-ttu-id="c5d60-103">매개 변수에서 사용 하는 사용자 지정을 <xref:System.Net.HttpListener> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-103">Customizes parameters used by the <xref:System.Net.HttpListener> class.</span></span>  
+# <a name="lthttplistenergt-element-network-settings"></a><span data-ttu-id="343b6-102">&lt;httpListener&gt; 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="343b6-102">&lt;httpListener&gt; Element (Network Settings)</span></span>
+<span data-ttu-id="343b6-103">매개 변수에서 사용 하는 사용자 지정을 <xref:System.Net.HttpListener> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-103">Customizes parameters used by the <xref:System.Net.HttpListener> class.</span></span>  
   
- <span data-ttu-id="c5d60-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="c5d60-104">\<configuration></span></span>  
-<span data-ttu-id="c5d60-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="c5d60-105">\<system.net></span></span>  
-<span data-ttu-id="c5d60-106">\<settings></span><span class="sxs-lookup"><span data-stu-id="c5d60-106">\<settings></span></span>  
-<span data-ttu-id="c5d60-107">\<httpListener ></span><span class="sxs-lookup"><span data-stu-id="c5d60-107">\<httpListener></span></span>  
+ <span data-ttu-id="343b6-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="343b6-104">\<configuration></span></span>  
+<span data-ttu-id="343b6-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="343b6-105">\<system.net></span></span>  
+<span data-ttu-id="343b6-106">\<settings></span><span class="sxs-lookup"><span data-stu-id="343b6-106">\<settings></span></span>  
+<span data-ttu-id="343b6-107">\<httpListener ></span><span class="sxs-lookup"><span data-stu-id="343b6-107">\<httpListener></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c5d60-108">구문</span><span class="sxs-lookup"><span data-stu-id="c5d60-108">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="343b6-108">구문</span><span class="sxs-lookup"><span data-stu-id="343b6-108">Syntax</span></span>  
   
 ```xml  
 <httpListener  
@@ -27,96 +25,96 @@ ms.locfileid: "47078606"
 />  
 ```  
   
-## <a name="type"></a><span data-ttu-id="c5d60-109">형식</span><span class="sxs-lookup"><span data-stu-id="c5d60-109">Type</span></span>  
+## <a name="type"></a><span data-ttu-id="343b6-109">형식</span><span class="sxs-lookup"><span data-stu-id="343b6-109">Type</span></span>  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="c5d60-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="c5d60-110">Attributes and Elements</span></span>  
- <span data-ttu-id="c5d60-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="343b6-110">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="343b6-110">Attributes and Elements</span></span>  
+ <span data-ttu-id="343b6-111">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-111">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="c5d60-112">특성</span><span class="sxs-lookup"><span data-stu-id="c5d60-112">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="343b6-112">특성</span><span class="sxs-lookup"><span data-stu-id="343b6-112">Attributes</span></span>  
   
-|<span data-ttu-id="c5d60-113">특성</span><span class="sxs-lookup"><span data-stu-id="c5d60-113">Attribute</span></span>|<span data-ttu-id="c5d60-114">설명</span><span class="sxs-lookup"><span data-stu-id="c5d60-114">Description</span></span>|  
+|<span data-ttu-id="343b6-113">특성</span><span class="sxs-lookup"><span data-stu-id="343b6-113">Attribute</span></span>|<span data-ttu-id="343b6-114">설명</span><span class="sxs-lookup"><span data-stu-id="343b6-114">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="c5d60-115">unescapeRequestUrl</span><span class="sxs-lookup"><span data-stu-id="c5d60-115">unescapeRequestUrl</span></span>|<span data-ttu-id="c5d60-116">여부를 나타내는 부울 값을 <xref:System.Net.HttpListener> 인스턴스 변환 된 URI 대신 이스케이프 되지 않은 원시 URI를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-116">A Boolean value that indicates if a <xref:System.Net.HttpListener> instance uses the raw unescaped URI instead of the converted URI.</span></span>|  
+|<span data-ttu-id="343b6-115">unescapeRequestUrl</span><span class="sxs-lookup"><span data-stu-id="343b6-115">unescapeRequestUrl</span></span>|<span data-ttu-id="343b6-116">여부를 나타내는 부울 값을 <xref:System.Net.HttpListener> 인스턴스 변환 된 URI 대신 이스케이프 되지 않은 원시 URI를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-116">A Boolean value that indicates if a <xref:System.Net.HttpListener> instance uses the raw unescaped URI instead of the converted URI.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="c5d60-117">자식 요소</span><span class="sxs-lookup"><span data-stu-id="c5d60-117">Child Elements</span></span>  
- <span data-ttu-id="c5d60-118">없음</span><span class="sxs-lookup"><span data-stu-id="c5d60-118">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="343b6-117">자식 요소</span><span class="sxs-lookup"><span data-stu-id="343b6-117">Child Elements</span></span>  
+ <span data-ttu-id="343b6-118">없음</span><span class="sxs-lookup"><span data-stu-id="343b6-118">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="c5d60-119">부모 요소</span><span class="sxs-lookup"><span data-stu-id="c5d60-119">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="343b6-119">부모 요소</span><span class="sxs-lookup"><span data-stu-id="343b6-119">Parent Elements</span></span>  
   
-|<span data-ttu-id="c5d60-120">**요소**</span><span class="sxs-lookup"><span data-stu-id="c5d60-120">**Element**</span></span>|<span data-ttu-id="c5d60-121">**설명**</span><span class="sxs-lookup"><span data-stu-id="c5d60-121">**Description**</span></span>|  
+|<span data-ttu-id="343b6-120">**요소**</span><span class="sxs-lookup"><span data-stu-id="343b6-120">**Element**</span></span>|<span data-ttu-id="343b6-121">**설명**</span><span class="sxs-lookup"><span data-stu-id="343b6-121">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="c5d60-122">settings</span><span class="sxs-lookup"><span data-stu-id="c5d60-122">settings</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|<span data-ttu-id="c5d60-123"><xref:System.Net> 네임스페이스에 대한 기본 네트워크 옵션을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-123">Configures basic network options for the <xref:System.Net> namespace.</span></span>|  
+|[<span data-ttu-id="343b6-122">settings</span><span class="sxs-lookup"><span data-stu-id="343b6-122">settings</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|<span data-ttu-id="343b6-123"><xref:System.Net> 네임스페이스에 대한 기본 네트워크 옵션을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-123">Configures basic network options for the <xref:System.Net> namespace.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="c5d60-124">설명</span><span class="sxs-lookup"><span data-stu-id="c5d60-124">Remarks</span></span>  
- <span data-ttu-id="c5d60-125">합니다 **unescapeRequestUrl** 하는 경우 특성을 나타냅니다 <xref:System.Net.HttpListener> 는 백분율로 인코딩된 값 변환 되 고 다른 정규화 단계에 따라 변환 된 URI 대신 이스케이프 되지 않은 원시 URI를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-125">The **unescapeRequestUrl** attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="343b6-124">설명</span><span class="sxs-lookup"><span data-stu-id="343b6-124">Remarks</span></span>  
+ <span data-ttu-id="343b6-125">합니다 **unescapeRequestUrl** 하는 경우 특성을 나타냅니다 <xref:System.Net.HttpListener> 는 백분율로 인코딩된 값 변환 되 고 다른 정규화 단계에 따라 변환 된 URI 대신 이스케이프 되지 않은 원시 URI를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-125">The **unescapeRequestUrl** attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.</span></span>  
   
- <span data-ttu-id="c5d60-126">경우는 <xref:System.Net.HttpListener> 인스턴스를 통해 요청을 수신 합니다 `http.sys` 제공한 URI 문자열의 인스턴스를 만들고 서비스를 `http.sys`,으로 노출를 <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> 속성.</span><span class="sxs-lookup"><span data-stu-id="c5d60-126">When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.</span></span>  
+ <span data-ttu-id="343b6-126">경우는 <xref:System.Net.HttpListener> 인스턴스를 통해 요청을 수신 합니다 `http.sys` 제공한 URI 문자열의 인스턴스를 만들고 서비스를 `http.sys`,으로 노출를 <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> 속성.</span><span class="sxs-lookup"><span data-stu-id="343b6-126">When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.</span></span>  
   
- <span data-ttu-id="c5d60-127">`http.sys` 서비스는 두 요청 URI 문자열을 노출 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-127">The `http.sys` service exposes two request URI strings:</span></span>  
+ <span data-ttu-id="343b6-127">`http.sys` 서비스는 두 요청 URI 문자열을 노출 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-127">The `http.sys` service exposes two request URI strings:</span></span>  
   
--   <span data-ttu-id="c5d60-128">원시 URI</span><span class="sxs-lookup"><span data-stu-id="c5d60-128">Raw URI</span></span>  
+-   <span data-ttu-id="343b6-128">원시 URI</span><span class="sxs-lookup"><span data-stu-id="343b6-128">Raw URI</span></span>  
   
--   <span data-ttu-id="c5d60-129">변환 된 URI</span><span class="sxs-lookup"><span data-stu-id="c5d60-129">Converted URI</span></span>  
+-   <span data-ttu-id="343b6-129">변환 된 URI</span><span class="sxs-lookup"><span data-stu-id="343b6-129">Converted URI</span></span>  
   
- <span data-ttu-id="c5d60-130">원시 URI가는 <xref:System.Uri?displayProperty=nameWithType> HTTP 요청의 요청 줄에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-130">The raw URI is the <xref:System.Uri?displayProperty=nameWithType> provided in the request line of a HTTP request:</span></span>  
+ <span data-ttu-id="343b6-130">원시 URI가는 <xref:System.Uri?displayProperty=nameWithType> HTTP 요청의 요청 줄에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-130">The raw URI is the <xref:System.Uri?displayProperty=nameWithType> provided in the request line of a HTTP request:</span></span>  
   
  `GET /path/`  
   
  `Host: www.contoso.com`  
   
- <span data-ttu-id="c5d60-131">제공 된 URI의 원시 `http.sys` 위에서 언급 한 요청에 "경로 /"입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-131">The raw URI provided by `http.sys` for the request mentioned above, is "/path/".</span></span> <span data-ttu-id="c5d60-132">이 네트워크를 통해 전송 된 HTTP 동사를 다음 문자열을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-132">This represents the string following the HTTP verb as it was sent over the network.</span></span>  
+ <span data-ttu-id="343b6-131">제공 된 URI의 원시 `http.sys` 위에서 언급 한 요청에 "경로 /"입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-131">The raw URI provided by `http.sys` for the request mentioned above, is "/path/".</span></span> <span data-ttu-id="343b6-132">이 네트워크를 통해 전송 된 HTTP 동사를 다음 문자열을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-132">This represents the string following the HTTP verb as it was sent over the network.</span></span>  
   
- <span data-ttu-id="c5d60-133">`http.sys` 서비스는 HTTP 요청에서에서 제공 하는 URI를 사용 하 여 요청에 제공 된 정보에서 변환된 된 URI를 만듭니다 및 원본 서버에서 요청을 확인 하도록 호스트 헤더를 전달 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-133">The `http.sys` service creates a converted URI from the information provided in the request by using the URI provided in the HTTP request line and the Host header to determine the origin server the request should be forwarded to.</span></span> <span data-ttu-id="c5d60-134">이 등록 된 URI 접두사를 사용 하 여 요청에서 정보를 비교 하 여 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-134">This is done by comparing the information from the request with a set of registered URI prefixes.</span></span> <span data-ttu-id="c5d60-135">HTTP 서버 SDK 설명서 HTTP_COOKED_URL 구조는이 변환 된 URI를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-135">The HTTP Server SDK documentation refers to this converted URI as the HTTP_COOKED_URL structure.</span></span>  
+ <span data-ttu-id="343b6-133">`http.sys` 서비스는 HTTP 요청에서에서 제공 하는 URI를 사용 하 여 요청에 제공 된 정보에서 변환된 된 URI를 만듭니다 및 원본 서버에서 요청을 확인 하도록 호스트 헤더를 전달 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-133">The `http.sys` service creates a converted URI from the information provided in the request by using the URI provided in the HTTP request line and the Host header to determine the origin server the request should be forwarded to.</span></span> <span data-ttu-id="343b6-134">이 등록 된 URI 접두사를 사용 하 여 요청에서 정보를 비교 하 여 이루어집니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-134">This is done by comparing the information from the request with a set of registered URI prefixes.</span></span> <span data-ttu-id="343b6-135">HTTP 서버 SDK 설명서 HTTP_COOKED_URL 구조는이 변환 된 URI를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-135">The HTTP Server SDK documentation refers to this converted URI as the HTTP_COOKED_URL structure.</span></span>  
   
- <span data-ttu-id="c5d60-136">등록 된 URI 접두사를 사용 하 여 요청을 비교할 수 있도록 요청에 일부 정규화를 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-136">In order to be able to compare the request with registered URI prefixes, some normalization to the request needs to be done.</span></span> <span data-ttu-id="c5d60-137">변환 된 URI 위의 샘플은 다음과 같을 수 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-137">For the sample above the converted URI would be as follows:</span></span>  
+ <span data-ttu-id="343b6-136">등록 된 URI 접두사를 사용 하 여 요청을 비교할 수 있도록 요청에 일부 정규화를 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-136">In order to be able to compare the request with registered URI prefixes, some normalization to the request needs to be done.</span></span> <span data-ttu-id="343b6-137">변환 된 URI 위의 샘플은 다음과 같을 수 됩니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-137">For the sample above the converted URI would be as follows:</span></span>  
   
  `http://www.contoso.com/path/`  
   
- <span data-ttu-id="c5d60-138">합니다 `http.sys` 결합 서비스는 <xref:System.Uri.Host%2A?displayProperty=nameWithType> 속성 값과 문자열을 변환된 된 URI를 만드는 요청 줄에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-138">The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI.</span></span> <span data-ttu-id="c5d60-139">또한 `http.sys` 하며 <xref:System.Uri?displayProperty=nameWithType> 클래스는 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-139">In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also does the following:</span></span>  
+ <span data-ttu-id="343b6-138">합니다 `http.sys` 결합 서비스는 <xref:System.Uri.Host%2A?displayProperty=nameWithType> 속성 값과 문자열을 변환된 된 URI를 만드는 요청 줄에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-138">The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI.</span></span> <span data-ttu-id="343b6-139">또한 `http.sys` 하며 <xref:System.Uri?displayProperty=nameWithType> 클래스는 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-139">In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also does the following:</span></span>  
   
--   <span data-ttu-id="c5d60-140">이스케이프 해제 인코딩된 모든 백분율 값입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-140">Un-escapes all percent encoded values.</span></span>  
+-   <span data-ttu-id="343b6-140">이스케이프 해제 인코딩된 모든 백분율 값입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-140">Un-escapes all percent encoded values.</span></span>  
   
--   <span data-ttu-id="c5d60-141">Utf-16 문자 표현으로 변환 백분율로 인코딩된 비 ASCII 문자입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-141">Converts percent-encoded non-ASCII characters into a UTF-16 character representation.</span></span> <span data-ttu-id="c5d60-142">유니코드 문자 (유니코드 %uXXXX 형식을 사용 하 여 인코딩) 및 u t F-8과 ANSI/DBCS 문자는 사용할 수는 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-142">Note that UTF-8 and ANSI/DBCS characters are supported as well as Unicode characters (Unicode encoding using the %uXXXX format).</span></span>  
+-   <span data-ttu-id="343b6-141">Utf-16 문자 표현으로 변환 백분율로 인코딩된 비 ASCII 문자입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-141">Converts percent-encoded non-ASCII characters into a UTF-16 character representation.</span></span> <span data-ttu-id="343b6-142">유니코드 문자 (유니코드 %uXXXX 형식을 사용 하 여 인코딩) 및 u t F-8과 ANSI/DBCS 문자는 사용할 수는 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-142">Note that UTF-8 and ANSI/DBCS characters are supported as well as Unicode characters (Unicode encoding using the %uXXXX format).</span></span>  
   
--   <span data-ttu-id="c5d60-143">경로 압축 등의 다른 정규화 단계를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-143">Executes other normalization steps, like path compression.</span></span>  
+-   <span data-ttu-id="343b6-143">경로 압축 등의 다른 정규화 단계를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-143">Executes other normalization steps, like path compression.</span></span>  
   
- <span data-ttu-id="c5d60-144">백분율로 인코딩된 값에 사용 되는 인코딩에 대 한 정보가 요청 없으므로 백분율로 인코딩된 값을 구문 분석 하 여 올바른 인코딩을 결정 못할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-144">Since the request doesn't contain any information about the encoding used for percent-encoded values, it may not be possible to determine the correct encoding just by parsing the percent-encoded values.</span></span>  
+ <span data-ttu-id="343b6-144">백분율로 인코딩된 값에 사용 되는 인코딩에 대 한 정보가 요청 없으므로 백분율로 인코딩된 값을 구문 분석 하 여 올바른 인코딩을 결정 못할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-144">Since the request doesn't contain any information about the encoding used for percent-encoded values, it may not be possible to determine the correct encoding just by parsing the percent-encoded values.</span></span>  
   
- <span data-ttu-id="c5d60-145">따라서 `http.sys` 프로세스를 수정 하는 것에 대 한 두 개의 레지스트리 키를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-145">Therefore `http.sys` provides two registry keys for modifying the process:</span></span>  
+ <span data-ttu-id="343b6-145">따라서 `http.sys` 프로세스를 수정 하는 것에 대 한 두 개의 레지스트리 키를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-145">Therefore `http.sys` provides two registry keys for modifying the process:</span></span>  
   
-|<span data-ttu-id="c5d60-146">레지스트리 키</span><span class="sxs-lookup"><span data-stu-id="c5d60-146">Registry Key</span></span>|<span data-ttu-id="c5d60-147">기본값</span><span class="sxs-lookup"><span data-stu-id="c5d60-147">Default Value</span></span>|<span data-ttu-id="c5d60-148">설명</span><span class="sxs-lookup"><span data-stu-id="c5d60-148">Description</span></span>|  
+|<span data-ttu-id="343b6-146">레지스트리 키</span><span class="sxs-lookup"><span data-stu-id="343b6-146">Registry Key</span></span>|<span data-ttu-id="343b6-147">기본값</span><span class="sxs-lookup"><span data-stu-id="343b6-147">Default Value</span></span>|<span data-ttu-id="343b6-148">설명</span><span class="sxs-lookup"><span data-stu-id="343b6-148">Description</span></span>|  
 |------------------|-------------------|-----------------|  
-|<span data-ttu-id="c5d60-149">EnableNonUTF8</span><span class="sxs-lookup"><span data-stu-id="c5d60-149">EnableNonUTF8</span></span>|<span data-ttu-id="c5d60-150">1</span><span class="sxs-lookup"><span data-stu-id="c5d60-150">1</span></span>|<span data-ttu-id="c5d60-151">0 이면 `http.sys` u t F-8로 인코딩된 Url만 허용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-151">If zero, `http.sys` accepts only UTF-8-encoded URLs.</span></span><br /><br /> <span data-ttu-id="c5d60-152">0이 아닌 경우 `http.sys` 도 요청에서 ANSI로 인코딩된 또는 DBCS 인코딩된 Url을 허용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-152">If non-zero, `http.sys` also accepts ANSI-encoded or DBCS-encoded URLs in requests.</span></span>|  
-|<span data-ttu-id="c5d60-153">FavorUTF8</span><span class="sxs-lookup"><span data-stu-id="c5d60-153">FavorUTF8</span></span>|<span data-ttu-id="c5d60-154">1</span><span class="sxs-lookup"><span data-stu-id="c5d60-154">1</span></span>|<span data-ttu-id="c5d60-155">0이 아닌 경우 `http.sys` 디코딩할 URL u t F-8로 먼저 해당 변환에 실패 이며 EnableNonUTF8 0이 아닌 경우 항상 시도 차례로 Http.sys을 ANSI 또는 DBCS 디코딩해야 하는 작업을 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-155">If non-zero, `http.sys` always tries to decode a URL as UTF-8 first; if that conversion fails and EnableNonUTF8 is non-zero, Http.sys then tries to decode it as ANSI or DBCS.</span></span><br /><br /> <span data-ttu-id="c5d60-156">0 (그리고 EnableNonUTF8 0이 아닌 경우) `http.sys` 있는지을 ANSI 또는 DBCS; 디코딩 하려고 성공 하면를 u t F-8로 변환 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-156">If zero (and EnableNonUTF8 is non-zero), `http.sys` tries to decode it as ANSI or DBCS; if that is not successful, it tries a UTF-8 conversion.</span></span>|  
+|<span data-ttu-id="343b6-149">EnableNonUTF8</span><span class="sxs-lookup"><span data-stu-id="343b6-149">EnableNonUTF8</span></span>|<span data-ttu-id="343b6-150">1</span><span class="sxs-lookup"><span data-stu-id="343b6-150">1</span></span>|<span data-ttu-id="343b6-151">0 이면 `http.sys` u t F-8로 인코딩된 Url만 허용 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-151">If zero, `http.sys` accepts only UTF-8-encoded URLs.</span></span><br /><br /> <span data-ttu-id="343b6-152">0이 아닌 경우 `http.sys` 도 요청에서 ANSI로 인코딩된 또는 DBCS 인코딩된 Url을 허용 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-152">If non-zero, `http.sys` also accepts ANSI-encoded or DBCS-encoded URLs in requests.</span></span>|  
+|<span data-ttu-id="343b6-153">FavorUTF8</span><span class="sxs-lookup"><span data-stu-id="343b6-153">FavorUTF8</span></span>|<span data-ttu-id="343b6-154">1</span><span class="sxs-lookup"><span data-stu-id="343b6-154">1</span></span>|<span data-ttu-id="343b6-155">0이 아닌 경우 `http.sys` 디코딩할 URL u t F-8로 먼저 해당 변환에 실패 이며 EnableNonUTF8 0이 아닌 경우 항상 시도 차례로 Http.sys을 ANSI 또는 DBCS 디코딩해야 하는 작업을 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-155">If non-zero, `http.sys` always tries to decode a URL as UTF-8 first; if that conversion fails and EnableNonUTF8 is non-zero, Http.sys then tries to decode it as ANSI or DBCS.</span></span><br /><br /> <span data-ttu-id="343b6-156">0 (그리고 EnableNonUTF8 0이 아닌 경우) `http.sys` 있는지을 ANSI 또는 DBCS; 디코딩 하려고 성공 하면를 u t F-8로 변환 하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-156">If zero (and EnableNonUTF8 is non-zero), `http.sys` tries to decode it as ANSI or DBCS; if that is not successful, it tries a UTF-8 conversion.</span></span>|  
   
- <span data-ttu-id="c5d60-157">때 <xref:System.Net.HttpListener> 요청이 수신에서 변환 된 URI를 사용 하 여 `http.sys` 대 한 입력으로 <xref:System.Net.HttpListenerRequest.Url%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-157">When <xref:System.Net.HttpListener> receives a request, it uses the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.</span></span>  
+ <span data-ttu-id="343b6-157">때 <xref:System.Net.HttpListener> 요청이 수신에서 변환 된 URI를 사용 하 여 `http.sys` 대 한 입력으로 <xref:System.Net.HttpListenerRequest.Url%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-157">When <xref:System.Net.HttpListener> receives a request, it uses the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.</span></span>  
   
- <span data-ttu-id="c5d60-158">Uri에서 문자 및 숫자 이외의 문자를 지원할 필요가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-158">There is a need for supporting characters besides characters and numbers in URIs.</span></span> <span data-ttu-id="c5d60-159">예로 고객에 대 한 고객 정보를 검색 하는 데 사용 되는 다음 URI를 "1/3812" 번호:</span><span class="sxs-lookup"><span data-stu-id="c5d60-159">An example is the following URI, which is used to retrieve customer information for customer number "1/3812":</span></span>  
+ <span data-ttu-id="343b6-158">Uri에서 문자 및 숫자 이외의 문자를 지원할 필요가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-158">There is a need for supporting characters besides characters and numbers in URIs.</span></span> <span data-ttu-id="343b6-159">예로 고객에 대 한 고객 정보를 검색 하는 데 사용 되는 다음 URI를 "1/3812" 번호:</span><span class="sxs-lookup"><span data-stu-id="343b6-159">An example is the following URI, which is used to retrieve customer information for customer number "1/3812":</span></span>  
   
  `http://www.contoso.com/Customer('1%2F3812')/`  
   
- <span data-ttu-id="c5d60-160">Uri (%2F)의 백분율로 인코딩된 슬래시를 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-160">Note the percent-encoded slash in the Uri (%2F).</span></span> <span data-ttu-id="c5d60-161">이것이 필요 하므로 경우 슬래시 문자 데이터 및 경로 구분 기호가 아니라입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-161">This is necessary, since in this case the slash character represents data and not a path delimiter.</span></span>  
+ <span data-ttu-id="343b6-160">Uri (%2F)의 백분율로 인코딩된 슬래시를 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-160">Note the percent-encoded slash in the Uri (%2F).</span></span> <span data-ttu-id="343b6-161">이것이 필요 하므로 경우 슬래시 문자 데이터 및 경로 구분 기호가 아니라입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-161">This is necessary, since in this case the slash character represents data and not a path delimiter.</span></span>  
   
- <span data-ttu-id="c5d60-162">Uri 생성자에 문자열을 전달에 다음 URI를 일으킵니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-162">Passing the string to Uri constructor will lead to the following URI:</span></span>  
+ <span data-ttu-id="343b6-162">Uri 생성자에 문자열을 전달에 다음 URI를 일으킵니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-162">Passing the string to Uri constructor will lead to the following URI:</span></span>  
   
  `http://www.contoso.com/Customer('1/3812')/`  
   
- <span data-ttu-id="c5d60-163">경로를 세그먼트로 분한 다음 요소에 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-163">Splitting the path into its segments would result in the following elements:</span></span>  
+ <span data-ttu-id="343b6-163">경로를 세그먼트로 분한 다음 요소에 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-163">Splitting the path into its segments would result in the following elements:</span></span>  
   
  `Customer('1`  
   
  `3812')`  
   
- <span data-ttu-id="c5d60-164">요청을 보낸 사람의 의도 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-164">This is not the intent of the sender of the request.</span></span>  
+ <span data-ttu-id="343b6-164">요청을 보낸 사람의 의도 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-164">This is not the intent of the sender of the request.</span></span>  
   
- <span data-ttu-id="c5d60-165">경우는 **unescapeRequestUrl** 특성이로 설정 된 **false**때 합니다 <xref:System.Net.HttpListener> 요청이 수신 원시 URI를 사용 하 여 변환 된 URI 대신 `http.sys` 합니다 대한입력으로<xref:System.Net.HttpListenerRequest.Url%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-165">If the **unescapeRequestUrl** attribute is set to **false**, then when the <xref:System.Net.HttpListener> receives a request, it uses the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.</span></span>  
+ <span data-ttu-id="343b6-165">경우는 **unescapeRequestUrl** 특성이로 설정 된 **false**때 합니다 <xref:System.Net.HttpListener> 요청이 수신 원시 URI를 사용 하 여 변환 된 URI 대신 `http.sys` 합니다 대한입력으로<xref:System.Net.HttpListenerRequest.Url%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-165">If the **unescapeRequestUrl** attribute is set to **false**, then when the <xref:System.Net.HttpListener> receives a request, it uses the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.</span></span>  
   
- <span data-ttu-id="c5d60-166">기본값은 **unescapeRequestUrl** 특성이 **true**합니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-166">The default value for the **unescapeRequestUrl** attribute is **true**.</span></span>  
+ <span data-ttu-id="343b6-166">기본값은 **unescapeRequestUrl** 특성이 **true**합니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-166">The default value for the **unescapeRequestUrl** attribute is **true**.</span></span>  
   
- <span data-ttu-id="c5d60-167">합니다 <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> 속성의 현재 값을 가져오는 데 사용할 수는 **unescapeRequestUrl** 해당 구성 파일에서 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-167">The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property can be used to get the current value of the **unescapeRequestUrl** attribute from applicable configuration files.</span></span>  
+ <span data-ttu-id="343b6-167">합니다 <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> 속성의 현재 값을 가져오는 데 사용할 수는 **unescapeRequestUrl** 해당 구성 파일에서 특성입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-167">The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property can be used to get the current value of the **unescapeRequestUrl** attribute from applicable configuration files.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="c5d60-168">예제</span><span class="sxs-lookup"><span data-stu-id="c5d60-168">Example</span></span>  
- <span data-ttu-id="c5d60-169">다음 예제에서는 구성 방법을 보여 줍니다.는 <xref:System.Net.HttpListener> 클래스에서 변환 된 URI 대신 원시 URI를 사용 하는 요청을 받으면 `http.sys` 대 한 입력으로 <xref:System.Net.HttpListenerRequest.Url%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-169">The following example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.</span></span>  
+## <a name="example"></a><span data-ttu-id="343b6-168">예제</span><span class="sxs-lookup"><span data-stu-id="343b6-168">Example</span></span>  
+ <span data-ttu-id="343b6-169">다음 예제에서는 구성 방법을 보여 줍니다.는 <xref:System.Net.HttpListener> 클래스에서 변환 된 URI 대신 원시 URI를 사용 하는 요청을 받으면 `http.sys` 대 한 입력으로 <xref:System.Net.HttpListenerRequest.Url%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-169">The following example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.</span></span>  
   
 ```xml  
 <configuration>  
@@ -130,17 +128,17 @@ ms.locfileid: "47078606"
 </configuration>  
 ```  
   
-## <a name="element-information"></a><span data-ttu-id="c5d60-170">요소 정보</span><span class="sxs-lookup"><span data-stu-id="c5d60-170">Element Information</span></span>  
+## <a name="element-information"></a><span data-ttu-id="343b6-170">요소 정보</span><span class="sxs-lookup"><span data-stu-id="343b6-170">Element Information</span></span>  
   
 |||
 |-|-|  
-|<span data-ttu-id="c5d60-171">네임스페이스</span><span class="sxs-lookup"><span data-stu-id="c5d60-171">Namespace</span></span>|<span data-ttu-id="c5d60-172">System.Net</span><span class="sxs-lookup"><span data-stu-id="c5d60-172">System.Net</span></span>|  
-|<span data-ttu-id="c5d60-173">스키마 이름</span><span class="sxs-lookup"><span data-stu-id="c5d60-173">Schema Name</span></span>||  
-|<span data-ttu-id="c5d60-174">유효성 검사 파일</span><span class="sxs-lookup"><span data-stu-id="c5d60-174">Validation File</span></span>||  
-|<span data-ttu-id="c5d60-175">비워 둘 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c5d60-175">Can be Empty</span></span>||  
+|<span data-ttu-id="343b6-171">네임스페이스</span><span class="sxs-lookup"><span data-stu-id="343b6-171">Namespace</span></span>|<span data-ttu-id="343b6-172">System.Net</span><span class="sxs-lookup"><span data-stu-id="343b6-172">System.Net</span></span>|  
+|<span data-ttu-id="343b6-173">스키마 이름</span><span class="sxs-lookup"><span data-stu-id="343b6-173">Schema Name</span></span>||  
+|<span data-ttu-id="343b6-174">유효성 검사 파일</span><span class="sxs-lookup"><span data-stu-id="343b6-174">Validation File</span></span>||  
+|<span data-ttu-id="343b6-175">비워 둘 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="343b6-175">Can be Empty</span></span>||  
   
-## <a name="see-also"></a><span data-ttu-id="c5d60-176">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c5d60-176">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="343b6-176">참고 항목</span><span class="sxs-lookup"><span data-stu-id="343b6-176">See Also</span></span>  
  <xref:System.Net.Configuration.HttpListenerElement>  
  <xref:System.Net.HttpListener>  
  <xref:System.Net.HttpListenerRequest.Url%2A>  
- [<span data-ttu-id="c5d60-177">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="c5d60-177">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+ [<span data-ttu-id="343b6-177">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="343b6-177">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

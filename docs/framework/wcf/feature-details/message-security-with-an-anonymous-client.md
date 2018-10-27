@@ -5,46 +5,45 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
-author: BrucePerlerMS
-ms.openlocfilehash: f488d2e840ec2524f0cde8dc4b3e6c1cd10c554e
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
-ms.translationtype: MT
+ms.openlocfilehash: e90eeb787fd2141459dfa67f36fda94036cec94f
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49374172"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50036803"
 ---
-# <a name="message-security-with-an-anonymous-client"></a><span data-ttu-id="4197e-102">익명 클라이언트를 사용하는 메시지 보안</span><span class="sxs-lookup"><span data-stu-id="4197e-102">Message Security with an Anonymous Client</span></span>
-<span data-ttu-id="4197e-103">다음 시나리오에서는 클라이언트와 Windows Communication Foundation (WCF) 메시지 보안에 의해 보호 되는 서비스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-103">The following scenario shows a client and service secured by Windows Communication Foundation (WCF) message security.</span></span> <span data-ttu-id="4197e-104">이 디자인은 전송 보안 대신 메시지 보안을 사용하여 나중에 보다 다양한 클레임 기반 모델을 지원할 수 있도록 하는 것을 목적으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-104">A design goal is to use message security rather than transport security, so that in the future it can support a richer claims-based model.</span></span> <span data-ttu-id="4197e-105">권한 부여에 대 한 풍부한 클레임 사용에 대 한 자세한 내용은 참조 하세요. [관리 클레임 및 권한 부여 Id 모델을 사용 하 여](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)입니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-105">For more information about using rich claims for authorization, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).</span></span>  
+# <a name="message-security-with-an-anonymous-client"></a><span data-ttu-id="27681-102">익명 클라이언트를 사용하는 메시지 보안</span><span class="sxs-lookup"><span data-stu-id="27681-102">Message Security with an Anonymous Client</span></span>
+<span data-ttu-id="27681-103">다음 시나리오에서는 클라이언트와 Windows Communication Foundation (WCF) 메시지 보안에 의해 보호 되는 서비스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="27681-103">The following scenario shows a client and service secured by Windows Communication Foundation (WCF) message security.</span></span> <span data-ttu-id="27681-104">이 디자인은 전송 보안 대신 메시지 보안을 사용하여 나중에 보다 다양한 클레임 기반 모델을 지원할 수 있도록 하는 것을 목적으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-104">A design goal is to use message security rather than transport security, so that in the future it can support a richer claims-based model.</span></span> <span data-ttu-id="27681-105">권한 부여에 대 한 풍부한 클레임 사용에 대 한 자세한 내용은 참조 하세요. [관리 클레임 및 권한 부여 Id 모델을 사용 하 여](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)입니다.</span><span class="sxs-lookup"><span data-stu-id="27681-105">For more information about using rich claims for authorization, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).</span></span>  
   
- <span data-ttu-id="4197e-106">샘플 응용 프로그램을 참조 하세요 [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-106">For a sample application, see [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md).</span></span>  
+ <span data-ttu-id="27681-106">샘플 응용 프로그램을 참조 하세요 [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-106">For a sample application, see [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md).</span></span>  
   
- <span data-ttu-id="4197e-107">![메시지 보안 익명 클라이언트를 사용 하 여](../../../../docs/framework/wcf/feature-details/media/b361a565-831c-4c10-90d7-66d8eeece0a1.gif "b361a565-831c-4c10-90d7-66d8eeece0a1")</span><span class="sxs-lookup"><span data-stu-id="4197e-107">![Message security with an anynymous client](../../../../docs/framework/wcf/feature-details/media/b361a565-831c-4c10-90d7-66d8eeece0a1.gif "b361a565-831c-4c10-90d7-66d8eeece0a1")</span></span>  
+ <span data-ttu-id="27681-107">![메시지 보안 익명 클라이언트를 사용 하 여](../../../../docs/framework/wcf/feature-details/media/b361a565-831c-4c10-90d7-66d8eeece0a1.gif "b361a565-831c-4c10-90d7-66d8eeece0a1")</span><span class="sxs-lookup"><span data-stu-id="27681-107">![Message security with an anynymous client](../../../../docs/framework/wcf/feature-details/media/b361a565-831c-4c10-90d7-66d8eeece0a1.gif "b361a565-831c-4c10-90d7-66d8eeece0a1")</span></span>  
   
-|<span data-ttu-id="4197e-108">특성</span><span class="sxs-lookup"><span data-stu-id="4197e-108">Characteristic</span></span>|<span data-ttu-id="4197e-109">설명</span><span class="sxs-lookup"><span data-stu-id="4197e-109">Description</span></span>|  
+|<span data-ttu-id="27681-108">특성</span><span class="sxs-lookup"><span data-stu-id="27681-108">Characteristic</span></span>|<span data-ttu-id="27681-109">설명</span><span class="sxs-lookup"><span data-stu-id="27681-109">Description</span></span>|  
 |--------------------|-----------------|  
-|<span data-ttu-id="4197e-110">보안 모드</span><span class="sxs-lookup"><span data-stu-id="4197e-110">Security Mode</span></span>|<span data-ttu-id="4197e-111">메시지</span><span class="sxs-lookup"><span data-stu-id="4197e-111">Message</span></span>|  
-|<span data-ttu-id="4197e-112">상호 운용성</span><span class="sxs-lookup"><span data-stu-id="4197e-112">Interoperability</span></span>|<span data-ttu-id="4197e-113">WCF만</span><span class="sxs-lookup"><span data-stu-id="4197e-113">WCF only</span></span>|  
-|<span data-ttu-id="4197e-114">인증(서버)</span><span class="sxs-lookup"><span data-stu-id="4197e-114">Authentication (Server)</span></span>|<span data-ttu-id="4197e-115">초기 협상에 서버 인증이 필요하지만 클라이언트 인증은 필요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-115">Initial negotiation requires server authentication, but not client authentication</span></span>|  
-|<span data-ttu-id="4197e-116">인증(클라이언트)</span><span class="sxs-lookup"><span data-stu-id="4197e-116">Authentication (Client)</span></span>|<span data-ttu-id="4197e-117">없음</span><span class="sxs-lookup"><span data-stu-id="4197e-117">None</span></span>|  
-|<span data-ttu-id="4197e-118">무결성</span><span class="sxs-lookup"><span data-stu-id="4197e-118">Integrity</span></span>|<span data-ttu-id="4197e-119">예, 공유 보안 컨텍스트 사용</span><span class="sxs-lookup"><span data-stu-id="4197e-119">Yes, using shared security context</span></span>|  
-|<span data-ttu-id="4197e-120">기밀성</span><span class="sxs-lookup"><span data-stu-id="4197e-120">Confidentiality</span></span>|<span data-ttu-id="4197e-121">예, 공유 보안 컨텍스트 사용</span><span class="sxs-lookup"><span data-stu-id="4197e-121">Yes, using shared security context</span></span>|  
-|<span data-ttu-id="4197e-122">전송</span><span class="sxs-lookup"><span data-stu-id="4197e-122">Transport</span></span>|<span data-ttu-id="4197e-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="4197e-123">HTTP</span></span>|  
+|<span data-ttu-id="27681-110">보안 모드</span><span class="sxs-lookup"><span data-stu-id="27681-110">Security Mode</span></span>|<span data-ttu-id="27681-111">메시지</span><span class="sxs-lookup"><span data-stu-id="27681-111">Message</span></span>|  
+|<span data-ttu-id="27681-112">상호 운용성</span><span class="sxs-lookup"><span data-stu-id="27681-112">Interoperability</span></span>|<span data-ttu-id="27681-113">WCF만</span><span class="sxs-lookup"><span data-stu-id="27681-113">WCF only</span></span>|  
+|<span data-ttu-id="27681-114">인증(서버)</span><span class="sxs-lookup"><span data-stu-id="27681-114">Authentication (Server)</span></span>|<span data-ttu-id="27681-115">초기 협상에 서버 인증이 필요하지만 클라이언트 인증은 필요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="27681-115">Initial negotiation requires server authentication, but not client authentication</span></span>|  
+|<span data-ttu-id="27681-116">인증(클라이언트)</span><span class="sxs-lookup"><span data-stu-id="27681-116">Authentication (Client)</span></span>|<span data-ttu-id="27681-117">없음</span><span class="sxs-lookup"><span data-stu-id="27681-117">None</span></span>|  
+|<span data-ttu-id="27681-118">무결성</span><span class="sxs-lookup"><span data-stu-id="27681-118">Integrity</span></span>|<span data-ttu-id="27681-119">예, 공유 보안 컨텍스트 사용</span><span class="sxs-lookup"><span data-stu-id="27681-119">Yes, using shared security context</span></span>|  
+|<span data-ttu-id="27681-120">기밀성</span><span class="sxs-lookup"><span data-stu-id="27681-120">Confidentiality</span></span>|<span data-ttu-id="27681-121">예, 공유 보안 컨텍스트 사용</span><span class="sxs-lookup"><span data-stu-id="27681-121">Yes, using shared security context</span></span>|  
+|<span data-ttu-id="27681-122">전송</span><span class="sxs-lookup"><span data-stu-id="27681-122">Transport</span></span>|<span data-ttu-id="27681-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="27681-123">HTTP</span></span>|  
   
-## <a name="service"></a><span data-ttu-id="4197e-124">서비스</span><span class="sxs-lookup"><span data-stu-id="4197e-124">Service</span></span>  
- <span data-ttu-id="4197e-125">다음 코드와 구성은 독립적으로 실행되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-125">The following code and configuration are meant to run independently.</span></span> <span data-ttu-id="4197e-126">다음 작업 중 하나를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-126">Do one of the following:</span></span>  
+## <a name="service"></a><span data-ttu-id="27681-124">서비스</span><span class="sxs-lookup"><span data-stu-id="27681-124">Service</span></span>  
+ <span data-ttu-id="27681-125">다음 코드와 구성은 독립적으로 실행되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-125">The following code and configuration are meant to run independently.</span></span> <span data-ttu-id="27681-126">다음 작업 중 하나를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-126">Do one of the following:</span></span>  
   
--   <span data-ttu-id="4197e-127">구성 없이 코드를 사용하여 독립 실행형 서비스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-127">Create a stand-alone service using the code with no configuration.</span></span>  
+-   <span data-ttu-id="27681-127">구성 없이 코드를 사용하여 독립 실행형 서비스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="27681-127">Create a stand-alone service using the code with no configuration.</span></span>  
   
--   <span data-ttu-id="4197e-128">제공된 구성을 사용하여 서비스를 만들지만 엔드포인트를 정의하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-128">Create a service using the supplied configuration, but do not define any endpoints.</span></span>  
+-   <span data-ttu-id="27681-128">제공된 구성을 사용하여 서비스를 만들지만 엔드포인트를 정의하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="27681-128">Create a service using the supplied configuration, but do not define any endpoints.</span></span>  
   
-### <a name="code"></a><span data-ttu-id="4197e-129">코드</span><span class="sxs-lookup"><span data-stu-id="4197e-129">Code</span></span>  
- <span data-ttu-id="4197e-130">다음 코드에서는 메시지 보안을 사용하는 서비스 끝점을 만드는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-130">The following code shows how to create a service endpoint that uses message security.</span></span>  
+### <a name="code"></a><span data-ttu-id="27681-129">코드</span><span class="sxs-lookup"><span data-stu-id="27681-129">Code</span></span>  
+ <span data-ttu-id="27681-130">다음 코드에서는 메시지 보안을 사용하는 서비스 끝점을 만드는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="27681-130">The following code shows how to create a service endpoint that uses message security.</span></span>  
   
  [!code-csharp[C_SecurityScenarios#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#8)]
  [!code-vb[C_SecurityScenarios#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#8)]  
   
-### <a name="configuration"></a><span data-ttu-id="4197e-131">구성</span><span class="sxs-lookup"><span data-stu-id="4197e-131">Configuration</span></span>  
- <span data-ttu-id="4197e-132">코드 대신 다음 구성을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-132">The following configuration can be used instead of the code.</span></span> <span data-ttu-id="4197e-133">서비스 동작 요소를 사용하여 서비스를 클라이언트에 인증하는 데 사용되는 인증서를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-133">The service behavior element is used to specify a certificate that is used to authenticate the service to the client.</span></span> <span data-ttu-id="4197e-134">서비스 요소는 `behaviorConfiguration` 특성을 사용하여 동작을 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-134">The service element must specify the behavior using the `behaviorConfiguration` attribute.</span></span> <span data-ttu-id="4197e-135">바인딩 요소는 클라이언트 자격 증명 형식을 `None`으로 지정하여 익명 클라이언트가 서비스를 사용할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-135">The binding element specifies that the client credential type is `None`, allowing anonymous clients to use the service.</span></span>  
+### <a name="configuration"></a><span data-ttu-id="27681-131">구성</span><span class="sxs-lookup"><span data-stu-id="27681-131">Configuration</span></span>  
+ <span data-ttu-id="27681-132">코드 대신 다음 구성을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="27681-132">The following configuration can be used instead of the code.</span></span> <span data-ttu-id="27681-133">서비스 동작 요소를 사용하여 서비스를 클라이언트에 인증하는 데 사용되는 인증서를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-133">The service behavior element is used to specify a certificate that is used to authenticate the service to the client.</span></span> <span data-ttu-id="27681-134">서비스 요소는 `behaviorConfiguration` 특성을 사용하여 동작을 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-134">The service element must specify the behavior using the `behaviorConfiguration` attribute.</span></span> <span data-ttu-id="27681-135">바인딩 요소는 클라이언트 자격 증명 형식을 `None`으로 지정하여 익명 클라이언트가 서비스를 사용할 수 있게 합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-135">The binding element specifies that the client credential type is `None`, allowing anonymous clients to use the service.</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -85,24 +84,24 @@ ms.locfileid: "49374172"
 </configuration>  
 ```  
   
-## <a name="client"></a><span data-ttu-id="4197e-136">클라이언트</span><span class="sxs-lookup"><span data-stu-id="4197e-136">Client</span></span>  
- <span data-ttu-id="4197e-137">다음 코드와 구성은 독립적으로 실행되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-137">The following code and configuration are meant to run independently.</span></span> <span data-ttu-id="4197e-138">다음 작업 중 하나를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-138">Do one of the following:</span></span>  
+## <a name="client"></a><span data-ttu-id="27681-136">클라이언트</span><span class="sxs-lookup"><span data-stu-id="27681-136">Client</span></span>  
+ <span data-ttu-id="27681-137">다음 코드와 구성은 독립적으로 실행되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-137">The following code and configuration are meant to run independently.</span></span> <span data-ttu-id="27681-138">다음 작업 중 하나를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-138">Do one of the following:</span></span>  
   
--   <span data-ttu-id="4197e-139">이 코드와 클라이언트 코드를 사용하여 독립 실행형 클라이언트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-139">Create a stand-alone client using the code (and client code).</span></span>  
+-   <span data-ttu-id="27681-139">이 코드와 클라이언트 코드를 사용하여 독립 실행형 클라이언트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="27681-139">Create a stand-alone client using the code (and client code).</span></span>  
   
--   <span data-ttu-id="4197e-140">엔드포인트 주소를 정의하지 않는 클라이언트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-140">Create a client that does not define any endpoint addresses.</span></span> <span data-ttu-id="4197e-141">대신 구성 이름을 인수로 사용하는 클라이언트 생성자를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-141">Instead, use the client constructor that takes the configuration name as an argument.</span></span> <span data-ttu-id="4197e-142">예를 들면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-142">For example:</span></span>  
+-   <span data-ttu-id="27681-140">엔드포인트 주소를 정의하지 않는 클라이언트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="27681-140">Create a client that does not define any endpoint addresses.</span></span> <span data-ttu-id="27681-141">대신 구성 이름을 인수로 사용하는 클라이언트 생성자를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-141">Instead, use the client constructor that takes the configuration name as an argument.</span></span> <span data-ttu-id="27681-142">예를 들면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="27681-142">For example:</span></span>  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
-### <a name="code"></a><span data-ttu-id="4197e-143">코드</span><span class="sxs-lookup"><span data-stu-id="4197e-143">Code</span></span>  
- <span data-ttu-id="4197e-144">다음 코드에서는 클라이언트 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-144">The following code creates an instance of the client.</span></span> <span data-ttu-id="4197e-145">바인딩은 메시지 모드 보안을 사용하며 클라이언트 자격 증명 형식은 none으로 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-145">The binding uses message mode security, and the client credential type is set to none.</span></span>  
+### <a name="code"></a><span data-ttu-id="27681-143">코드</span><span class="sxs-lookup"><span data-stu-id="27681-143">Code</span></span>  
+ <span data-ttu-id="27681-144">다음 코드에서는 클라이언트 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="27681-144">The following code creates an instance of the client.</span></span> <span data-ttu-id="27681-145">바인딩은 메시지 모드 보안을 사용하며 클라이언트 자격 증명 형식은 none으로 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="27681-145">The binding uses message mode security, and the client credential type is set to none.</span></span>  
   
  [!code-csharp[C_SecurityScenarios#15](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#15)]
  [!code-vb[C_SecurityScenarios#15](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#15)]  
   
-### <a name="configuration"></a><span data-ttu-id="4197e-146">구성</span><span class="sxs-lookup"><span data-stu-id="4197e-146">Configuration</span></span>  
- <span data-ttu-id="4197e-147">다음 코드에서는 클라이언트를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="4197e-147">The following code configures the client.</span></span>  
+### <a name="configuration"></a><span data-ttu-id="27681-146">구성</span><span class="sxs-lookup"><span data-stu-id="27681-146">Configuration</span></span>  
+ <span data-ttu-id="27681-147">다음 코드에서는 클라이언트를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="27681-147">The following code configures the client.</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -132,9 +131,9 @@ ms.locfileid: "49374172"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="4197e-148">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4197e-148">See Also</span></span>  
- [<span data-ttu-id="4197e-149">보안 개요</span><span class="sxs-lookup"><span data-stu-id="4197e-149">Security Overview</span></span>](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [<span data-ttu-id="4197e-150">분산 응용 프로그램 보안</span><span class="sxs-lookup"><span data-stu-id="4197e-150">Distributed Application Security</span></span>](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
- [<span data-ttu-id="4197e-151">메시지 보안 익명</span><span class="sxs-lookup"><span data-stu-id="4197e-151">Message Security Anonymous</span></span>](../../../../docs/framework/wcf/samples/message-security-anonymous.md)  
- [<span data-ttu-id="4197e-152">서비스 ID 및 인증</span><span class="sxs-lookup"><span data-stu-id="4197e-152">Service Identity and Authentication</span></span>](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [<span data-ttu-id="4197e-153">Windows Server appfabric 보안 모델</span><span class="sxs-lookup"><span data-stu-id="4197e-153">Security Model for Windows Server App Fabric</span></span>](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a><span data-ttu-id="27681-148">참고 항목</span><span class="sxs-lookup"><span data-stu-id="27681-148">See Also</span></span>  
+ [<span data-ttu-id="27681-149">보안 개요</span><span class="sxs-lookup"><span data-stu-id="27681-149">Security Overview</span></span>](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [<span data-ttu-id="27681-150">분산 응용 프로그램 보안</span><span class="sxs-lookup"><span data-stu-id="27681-150">Distributed Application Security</span></span>](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
+ [<span data-ttu-id="27681-151">메시지 보안 익명</span><span class="sxs-lookup"><span data-stu-id="27681-151">Message Security Anonymous</span></span>](../../../../docs/framework/wcf/samples/message-security-anonymous.md)  
+ [<span data-ttu-id="27681-152">서비스 ID 및 인증</span><span class="sxs-lookup"><span data-stu-id="27681-152">Service Identity and Authentication</span></span>](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
+ [<span data-ttu-id="27681-153">Windows Server appfabric 보안 모델</span><span class="sxs-lookup"><span data-stu-id="27681-153">Security Model for Windows Server App Fabric</span></span>](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

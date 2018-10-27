@@ -7,35 +7,35 @@ helpviewer_keywords:
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 04e44a6b58fd334b6a23e113922b980f69de627b
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 8e583bf7768c60477effb6c1cf9b838ae4c8c182
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44198649"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50042534"
 ---
-# <a name="usage-guidelines"></a><span data-ttu-id="b2f2f-102">사용 지침</span><span class="sxs-lookup"><span data-stu-id="b2f2f-102">Usage guidelines</span></span>
+# <a name="usage-guidelines"></a><span data-ttu-id="3cd70-102">사용 지침</span><span class="sxs-lookup"><span data-stu-id="3cd70-102">Usage guidelines</span></span>
 
-<span data-ttu-id="b2f2f-103">이 섹션에서는 일반적인 형식을 사용 하 여 공개적으로 액세스할 수 있는 api에 대 한 지침을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="b2f2f-103">This section contains guidelines for using common types in publicly accessible APIs.</span></span> <span data-ttu-id="b2f2f-104">기본 제공 프레임 워크 형식 (예: serialization 특성) 및 일반적인 연산자 오버 로드를 직접 사용 하 여 다룹니다.</span><span class="sxs-lookup"><span data-stu-id="b2f2f-104">It deals with direct usage of built-in Framework types (e.g., serialization attributes) and overloading common operators.</span></span>
+<span data-ttu-id="3cd70-103">이 섹션에서는 일반적인 형식을 사용 하 여 공개적으로 액세스할 수 있는 api에 대 한 지침을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="3cd70-103">This section contains guidelines for using common types in publicly accessible APIs.</span></span> <span data-ttu-id="3cd70-104">기본 제공 프레임 워크 형식 (예: serialization 특성) 및 일반적인 연산자 오버 로드를 직접 사용 하 여 다룹니다.</span><span class="sxs-lookup"><span data-stu-id="3cd70-104">It deals with direct usage of built-in Framework types (e.g., serialization attributes) and overloading common operators.</span></span>
   
-<span data-ttu-id="b2f2f-105"><xref:System.IDisposable?displayProperty=nameWithType> 인터페이스는이 섹션에서는 다루지 않습니다 하지만 부분은 합니다 [Dispose 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md) 섹션.</span><span class="sxs-lookup"><span data-stu-id="b2f2f-105">The <xref:System.IDisposable?displayProperty=nameWithType> interface is not covered in this section, but is discussed in the [Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md) section.</span></span>
+<span data-ttu-id="3cd70-105"><xref:System.IDisposable?displayProperty=nameWithType> 인터페이스는이 섹션에서는 다루지 않습니다 하지만 부분은 합니다 [Dispose 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md) 섹션.</span><span class="sxs-lookup"><span data-stu-id="3cd70-105">The <xref:System.IDisposable?displayProperty=nameWithType> interface is not covered in this section, but is discussed in the [Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md) section.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b2f2f-106">지침 및 다른 일반적인 방법에 대 한에 대 한 추가 정보에 대 한 기본 제공.NET Framework 형식으로 다음 참조 항목을 참조 하세요. <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>, <xref:System.IEquatable%601?displayProperty=nameWithType>, <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType> , <xref:System.Uri?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="b2f2f-106">For guidelines and additional information about about other common, built-in .NET Framework types, see the reference topics for the following: <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>, <xref:System.IEquatable%601?displayProperty=nameWithType>, <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, <xref:System.Uri?displayProperty=nameWithType>.</span></span>
+> <span data-ttu-id="3cd70-106">.NET Framework의 기본 제공 형식 지침 및 다른 일반적인 방법에 대 한 자세한 내용은 다음 참조 항목을 참조 하십시오: <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>를 <xref:System.IEquatable%601?displayProperty=nameWithType>를 <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType> , <xref:System.Uri?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="3cd70-106">For guidelines and additional information about other common, built-in .NET Framework types, see the reference topics for the following: <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>, <xref:System.IEquatable%601?displayProperty=nameWithType>, <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, <xref:System.Uri?displayProperty=nameWithType>.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b2f2f-107">단원 내용</span><span class="sxs-lookup"><span data-stu-id="b2f2f-107">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="3cd70-107">단원 내용</span><span class="sxs-lookup"><span data-stu-id="3cd70-107">In this section</span></span>
 
-[<span data-ttu-id="b2f2f-108">배열</span><span class="sxs-lookup"><span data-stu-id="b2f2f-108">Arrays</span></span>](arrays.md)  
-[<span data-ttu-id="b2f2f-109">특성</span><span class="sxs-lookup"><span data-stu-id="b2f2f-109">Attributes</span></span>](attributes.md)  
-[<span data-ttu-id="b2f2f-110">컬렉션</span><span class="sxs-lookup"><span data-stu-id="b2f2f-110">Collections</span></span>](guidelines-for-collections.md)  
-[<span data-ttu-id="b2f2f-111">serialization</span><span class="sxs-lookup"><span data-stu-id="b2f2f-111">Serialization</span></span>](serialization.md)  
-[<span data-ttu-id="b2f2f-112">System.Xml 사용법</span><span class="sxs-lookup"><span data-stu-id="b2f2f-112">System.Xml Usage</span></span>](system-xml-usage.md)  
-[<span data-ttu-id="b2f2f-113">같음 연산자</span><span class="sxs-lookup"><span data-stu-id="b2f2f-113">Equality Operators</span></span>](equality-operators.md)  
+[<span data-ttu-id="3cd70-108">배열</span><span class="sxs-lookup"><span data-stu-id="3cd70-108">Arrays</span></span>](arrays.md)  
+[<span data-ttu-id="3cd70-109">특성</span><span class="sxs-lookup"><span data-stu-id="3cd70-109">Attributes</span></span>](attributes.md)  
+[<span data-ttu-id="3cd70-110">컬렉션</span><span class="sxs-lookup"><span data-stu-id="3cd70-110">Collections</span></span>](guidelines-for-collections.md)  
+[<span data-ttu-id="3cd70-111">serialization</span><span class="sxs-lookup"><span data-stu-id="3cd70-111">Serialization</span></span>](serialization.md)  
+[<span data-ttu-id="3cd70-112">System.Xml 사용법</span><span class="sxs-lookup"><span data-stu-id="3cd70-112">System.Xml Usage</span></span>](system-xml-usage.md)  
+[<span data-ttu-id="3cd70-113">같음 연산자</span><span class="sxs-lookup"><span data-stu-id="3cd70-113">Equality Operators</span></span>](equality-operators.md)  
 
-<span data-ttu-id="b2f2f-114">*Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*</span><span class="sxs-lookup"><span data-stu-id="b2f2f-114">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>
+<span data-ttu-id="3cd70-114">*Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*</span><span class="sxs-lookup"><span data-stu-id="3cd70-114">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>
 
-<span data-ttu-id="b2f2f-115">*Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span><span class="sxs-lookup"><span data-stu-id="b2f2f-115">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>
+<span data-ttu-id="3cd70-115">*Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span><span class="sxs-lookup"><span data-stu-id="3cd70-115">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b2f2f-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="b2f2f-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3cd70-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="3cd70-116">See also</span></span>
 
-- [<span data-ttu-id="b2f2f-117">프레임워크 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="b2f2f-117">Framework Design Guidelines</span></span>](../../../docs/standard/design-guidelines/index.md)
+- [<span data-ttu-id="3cd70-117">프레임워크 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="3cd70-117">Framework Design Guidelines</span></span>](../../../docs/standard/design-guidelines/index.md)
