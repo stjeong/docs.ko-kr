@@ -2,19 +2,19 @@
 title: Entity SQL 언어
 ms.date: 03/30/2017
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
-ms.openlocfilehash: 1df5372bed2c4c4b026662e0d1912683dd8752e9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f12a20f85a0449778614d3098f69d3da90902c95
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509611"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50048445"
 ---
 # <a name="entity-sql-language"></a>Entity SQL 언어
 Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다. Entity SQL을 사용하면 엔터티 데이터를 개체 또는 테이블 형식으로 쿼리할 수 있습니다. Entity SQL은 다음의 경우에 사용해야 합니다.  
   
 -   쿼리를 동적으로 런타임에 생성해야 하는 경우. 이 경우에는 런타임에 Entity SQL 쿼리 문자열을 생성하는 대신 <xref:System.Data.Objects.ObjectQuery%601>의 쿼리 작성기 메서드를 사용해야 합니다.  
   
--   쿼리를 모델 정의의 일부로 정의할 경우. Entity SQL만 데이터 모델에서 지원됩니다. 자세한 내용은 참조 하세요. [QueryView 요소 (MSL)](https://msdn.microsoft.com/library/f0426b34-45cb-4fd7-9777-e0570c5e0e80)  
+-   쿼리를 모델 정의의 일부로 정의할 경우. Entity SQL만 데이터 모델에서 지원됩니다. 자세한 내용은 참조 하세요. [QueryView 요소 (MSL)](/ef/ef6/modeling/designer/advanced/edmx/msl-spec#queryview-element-msl)  
   
 -   EntityClient에서 <xref:System.Data.EntityClient.EntityDataReader>를 사용하여 읽기 전용 엔터티 데이터를 행 집합으로 반환할 경우. 자세한 내용은 [Entity Framework 용 EntityClient 공급자](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)합니다.  
   

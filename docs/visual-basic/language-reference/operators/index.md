@@ -1,43 +1,46 @@
 ---
 title: 연산자(Visual Basic)
-ms.date: 07/20/2015
+ms.date: 10/17/2018
 helpviewer_keywords:
 - operators [Visual Basic]
 ms.assetid: 3d3421df-fcc5-4888-9249-d78f16774ce6
-ms.openlocfilehash: b6f590d81242d14e808e49c42bce8a4bfdc66f44
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e295d492c8c2e5cbd69f295e83f44b63c74ca553
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33601743"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49452523"
 ---
 # <a name="operators-visual-basic"></a>연산자(Visual Basic)
-## <a name="in-this-section"></a>섹션 내용  
- [Visual Basic에서의 연산자 우선 순위](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+## <a name="in-this-section"></a>단원 내용
+
+ [Visual Basic의 연산자 우선 순위](operator-precedence.md)  
   
- [기능별 연산자 목록](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
+ [기능별 연산자 목록](operators-listed-by-functionality.md)  
   
- [연산자 결과의 데이터 형식](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md)  
+ [연산자 결과의 데이터 형식](data-types-of-operator-results.md)  
   
- [DirectCast 연산자](../../../visual-basic/language-reference/operators/directcast-operator.md)  
+ [DirectCast 연산자](directcast-operator.md)  
   
- [TryCast 연산자](../../../visual-basic/language-reference/operators/trycast-operator.md)  
+ [TryCast 연산자](trycast-operator.md)  
   
- [New 연산자](../../../visual-basic/language-reference/operators/new-operator.md)  
+ [new 연산자](new-operator.md)  
+
+ [Null 조건부 연산자](null-conditional-operators.md)
+
+ [산술 연산자](arithmetic-operators.md)  
   
- [산술 연산자](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
+ [할당 연산자](assignment-operators.md)  
   
- [할당 연산자](../../../visual-basic/language-reference/operators/assignment-operators.md)  
+ [비트 시프트 연산자](bit-shift-operators.md)  
   
- [비트 시프트 연산자](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
+ [비교 연산자](comparison-operators.md)  
   
- [비교 연산자](../../../visual-basic/language-reference/operators/comparison-operators.md)  
+ [연결 연산자](concatenation-operators.md)  
   
- [연결 연산자](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
+ [논리/비트 연산자](logical-bitwise-operators.md)  
   
- [논리/비트 연산자](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
-  
- [기타 연산자](../../../visual-basic/language-reference/operators/miscellaneous-operators.md)  
+ [기타 연산자](miscellaneous-operators.md)  
   
 ## <a name="related-sections"></a>관련 단원  
  [Visual Basic 언어 참조](../../../visual-basic/language-reference/index.md)  

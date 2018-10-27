@@ -3,11 +3,11 @@ title: ADO.NET Entity Framework에서 연결 문자열
 ms.date: 10/15/2018
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ms.openlocfilehash: 99b6b1b7a38477dc17d3960ee5bc0b63ec0cb819
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
-ms.translationtype: MT
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372488"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50048155"
 ---
 # <a name="connection-strings-in-the-adonet-entity-framework"></a>ADO.NET Entity Framework에서 연결 문자열
 연결 문자열에는 데이터 공급자에서 데이터 소스에 매개 변수로 전달되는 초기화 정보가 있습니다. 연결 문자열 구문은 데이터 공급자에 따라 다르며 연결을 여는 동안 연결 문자열이 구문 분석됩니다. Entity Framework에서 사용하는 연결 문자열에는 Entity Framework를 지원하는 기본 ADO.NET 데이터 공급자에 연결하는 데 사용되는 정보가 들어 있습니다. 또한 필요한 모델 및 매핑 파일에 대한 정보도 들어 있습니다.  

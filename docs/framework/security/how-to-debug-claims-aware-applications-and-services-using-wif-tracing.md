@@ -3,12 +3,12 @@ title: '방법: WIF 추적을 사용하여 클레임 인식 응용 프로그램 
 ms.date: 03/30/2017
 ms.assetid: 3d51ba59-3adb-4ca4-bd33-5027531af687
 author: BrucePerlerMS
-ms.openlocfilehash: e10d8d2ea869b03586b4680ad8320aeb2de90620
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 38e168fff9bc351b6239c41197348d24129a4747
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584275"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453394"
 ---
 # <a name="how-to-debug-claims-aware-applications-and-services-using-wif-tracing"></a>방법: WIF 추적을 사용하여 클레임 인식 응용 프로그램 및 서비스 디버그
 ## <a name="applies-to"></a>적용 대상  
@@ -104,7 +104,7 @@ ms.locfileid: "48584275"
   
 |**오류 ID**|**오류 메시지**|**오류를 해결하는 데 필요한 작업**|  
 |-|-|-|  
-|ID4175|보안 토큰의 발급자가 IssuerNameRegistry에서 인식되지 않았습니다.  이 발급자의 보안 토큰을 수락하려면 이 발급자에 대한 유효한 이름을 반환하도록 IssuerNameRegistry를 구성합니다.|MMC 스냅인에서 지문을 복사하고 *Web.config* 파일에 붙여넣으면 이 오류가 발생할 수 있습니다. 특히, 인증서 속성 창에서 복사하는 경우 텍스트 문자열에서 인쇄할 수 없는 추가 문자를 가져올 수 있습니다. 이 추가 문자로 인해 지문 일치가 실패 합니다. 합니다. 지문을 올바르게 복사 하는 절차는 여기에서 찾을 수 있습니다. [http://msdn.microsoft.com/library/ff359102.aspx](https://msdn.microsoft.com/library/ff359102.aspx)|  
+|ID4175|보안 토큰의 발급자가 IssuerNameRegistry에서 인식되지 않았습니다.  이 발급자의 보안 토큰을 수락하려면 이 발급자에 대한 유효한 이름을 반환하도록 IssuerNameRegistry를 구성합니다.|MMC 스냅인에서 지문을 복사하고 *Web.config* 파일에 붙여넣으면 이 오류가 발생할 수 있습니다. 특히, 인증서 속성 창에서 복사하는 경우 텍스트 문자열에서 인쇄할 수 없는 추가 문자를 가져올 수 있습니다. 이 추가 문자로 인해 지문 일치가 실패 합니다. 합니다. 지문을 올바르게 복사 하는 절차를 찾을 수 있습니다 [Single Sign 클레임 기반-에서 웹 및 Microsoft Azure에 대 한](https://docs.microsoft.com/previous-versions/msp-n-p/ff359102%28v=pandp.10%29)합니다.|  
   
 ## <a name="related-items"></a>관련 항목  
   

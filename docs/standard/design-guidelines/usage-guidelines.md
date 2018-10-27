@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 04e44a6b58fd334b6a23e113922b980f69de627b
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 8e583bf7768c60477effb6c1cf9b838ae4c8c182
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44198649"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50042534"
 ---
 # <a name="usage-guidelines"></a>사용 지침
 
@@ -21,7 +21,7 @@ ms.locfileid: "44198649"
 <xref:System.IDisposable?displayProperty=nameWithType> 인터페이스는이 섹션에서는 다루지 않습니다 하지만 부분은 합니다 [Dispose 패턴](../../../docs/standard/design-guidelines/dispose-pattern.md) 섹션.
 
 > [!NOTE]
-> 지침 및 다른 일반적인 방법에 대 한에 대 한 추가 정보에 대 한 기본 제공.NET Framework 형식으로 다음 참조 항목을 참조 하세요. <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>, <xref:System.IEquatable%601?displayProperty=nameWithType>, <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType> , <xref:System.Uri?displayProperty=nameWithType>.
+> .NET Framework의 기본 제공 형식 지침 및 다른 일반적인 방법에 대 한 자세한 내용은 다음 참조 항목을 참조 하십시오: <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>를 <xref:System.IEquatable%601?displayProperty=nameWithType>를 <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType> , <xref:System.Uri?displayProperty=nameWithType>.
 
 ## <a name="in-this-section"></a>단원 내용
 

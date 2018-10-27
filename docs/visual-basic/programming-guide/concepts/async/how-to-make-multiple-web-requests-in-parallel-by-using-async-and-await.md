@@ -1,16 +1,16 @@
 ---
-title: '방법: Async를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)'
+title: '방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
-ms.openlocfilehash: 4d4ccda6657dd4d889e8495fa000715c1f7a5ba6
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
-ms.translationtype: MT
+ms.openlocfilehash: 44531ef643df6402ad318957c0a2bdc058c5bcb0
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34728445"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50049258"
 ---
-# <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-visual-basic"></a>방법: Async를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)
-비동기 메서드에서 작업은 만들어질 때 시작됩니다. [Await](../../../../visual-basic/language-reference/operators/await-operator.md) 연산자를 계속할 수 없습니다 작업이 완료 될 때까지 메서드의 지점에서 작업에 적용 됩니다. 다음 예제와 같이 작업이 생성되는 즉시 대기되는 경우가 많습니다.  
+# <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-visual-basic"></a>방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)
+비동기 메서드에서 작업은 만들어질 때 시작됩니다. 합니다 [Await](../../../../visual-basic/language-reference/operators/await-operator.md) 연산자를 계속할 수 없습니다 작업이 완료 될 때까지 메서드 지점에서 작업에 적용 됩니다. 다음 예제와 같이 작업이 생성되는 즉시 대기되는 경우가 많습니다.  
   
 ```vb  
 Dim result = Await someWebAccessMethodAsync(url)  
@@ -38,25 +38,25 @@ Dim result = Await myTask
 > [!NOTE]
 >  이 프로젝트를 완료하려면 Visual Studio 2012 이상 및 .NET Framework 4.5 이상이 컴퓨터에 설치되어 있어야 합니다.  
   
- 동시에 여러 작업을 시작 하는 또 다른 예로, 참조 [하는 방법: Task.WhenAll (Visual Basic)를 사용 하 여 비동기 연습 확장](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)합니다.  
+ 동시에 여러 작업을 시작 하는 다른 예제를 보려면 [방법: Task.WhenAll (Visual Basic)을 사용 하 여 비동기 연습 확장](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)합니다.  
   
  이 예제의 코드는 [개발자 코드 샘플](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)에서 다운로드할 수 있습니다.  
   
 ### <a name="to-set-up-the-project"></a>프로젝트를 설정하려면  
   
-1.  WPF 응용 프로그램을 설정하려면 다음 단계를 완료합니다. 이러한 단계에 대 한 자세한 지침을 찾을 수 [연습:를 사용 하 여 Async 및 Await (Visual Basic) 하 여 웹 서비스에 액세스](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)합니다.  
+1.  WPF 응용 프로그램을 설정하려면 다음 단계를 완료합니다. 이러한 단계에 대 한 자세한 지침을 찾을 수 있습니다 [연습:를 사용 하 여 Async 및 Await (Visual Basic) 하 여 웹에 액세스](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)합니다.  
   
     -   텍스트 상자와 단추가 포함된 WPF 응용 프로그램을 만듭니다. 단추의 이름을 `startButton`, 텍스트 상자의 이름을 `resultsTextBox`로 지정합니다.  
   
     -   <xref:System.Net.Http>에 대한 참조를 추가합니다.  
   
-    -   MainWindow.xaml.vb 파일에 추가 `Imports` 문을 `System.Net.Http`합니다.  
+    -   MainWindow.xaml.vb 파일에서 추가 `Imports` 방침 `System.Net.Http`합니다.  
   
 ### <a name="to-add-the-code"></a>코드를 추가하려면  
   
-1.  디자인 창 MainWindow.xaml에서에서 만들기 단추를 두 번 클릭은 `startButton_Click` MainWindow.xaml.vb의 이벤트 처리기입니다.  
+1.  디자인 창 MainWindow.xaml에서에서 만들기 단추를 두 번 클릭 합니다 `startButton_Click` MainWindow.xaml.vb의 이벤트 처리기입니다.  
   
-2.  다음 코드를 복사 하 고 본문에 붙여 `startButton_Click` MainWindow.xaml.vb에 있습니다.  
+2.  다음 코드를 복사 하 고 본문에 붙여 넣습니다 `startButton_Click` MainWindow.xaml.vb의 합니다.  
   
     ```vb  
     resultsTextBox.Clear()  
@@ -72,7 +72,7 @@ Dim result = Await myTask
   
     -   `DisplayResults`에 각 URL에 대한 바이트 배열의 바이트 수가 표시됩니다. 이 표시는 각 작업의 다운로드가 완료된 시간을 보여 줍니다.  
   
-     다음 메서드를 복사한 후 붙여는 `startButton_Click` MainWindow.xaml.vb의 이벤트 처리기입니다.  
+     다음 메서드를 복사한 후 붙여넣습니다는 `startButton_Click` MainWindow.xaml.vb의 이벤트 처리기입니다.  
   
     ```vb  
     Private Async Function ProcessURLAsync(url As String, client As HttpClient) As Task(Of Integer)  
@@ -88,8 +88,8 @@ Dim result = Await myTask
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
     ```  
@@ -117,11 +117,11 @@ Dim result = Await myTask
         ' Create and start the tasks. As each task finishes, DisplayResults   
         ' displays its length.  
         Dim download1 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com", client)  
+            ProcessURLAsync("https://msdn.microsoft.com", client)  
         Dim download2 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
         Dim download3 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client)  
   
         ' Await each task.  
         Dim length1 As Integer = Await download1  
@@ -140,7 +140,7 @@ Dim result = Await myTask
   
      프로그램을 여러 번 실행하여 세 가지 작업이 항상 동일한 순서로 완료되지는 않으며, 완료되는 순서가 생성 및 대기된 순서와 다를 수도 있음을 확인합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에는 전체 예제가 포함되어 있습니다.  
   
 ```vb  
@@ -165,11 +165,11 @@ Class MainWindow
         ' Create and start the tasks. As each task finishes, DisplayResults   
         ' displays its length.  
         Dim download1 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com", client)  
+            ProcessURLAsync("https://msdn.microsoft.com", client)  
         Dim download2 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
         Dim download3 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client)  
   
         ' Await each task.  
         Dim length1 As Integer = Await download1  
@@ -196,8 +196,8 @@ Class MainWindow
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
 End Class  

@@ -3,11 +3,11 @@ title: 활동
 ms.date: 03/30/2017
 ms.assetid: 70471705-f55f-4da1-919f-4b580f172665
 ms.openlocfilehash: 00115d51cff40be726ccf94c3cac09242c0bdab8
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372371"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453348"
 ---
 # <a name="activity"></a>활동
 이 항목에서는 Windows Communication Foundation (WCF) 추적 모델의 동작 추적을 설명 합니다. 동작은 실패의 범위를 줄이도록 돕는 처리 단위입니다. 동일한 동작에서 발생하는 오류는 직접적으로 관련됩니다. 예를 들어 메시지 암호 해독이 실패하면 작업이 실패합니다. 작업 실패와 메시지 암호 해독 실패 둘 다에 대한 추적은 동일한 동작에서 나타나며, 암호 해독 오류와 요청 오류 사이의 직접적인 상관 관계를 보여 줍니다.  

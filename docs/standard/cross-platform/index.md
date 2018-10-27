@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 ms.assetid: b153baaa-130c-4169-860b-e580591de91e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cf3a3b984936cb4eb947d650cc8c63db5a9a8ea5
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: a4eb01f0c23161f283c81ae928e327e0c6506c7c
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582150"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453046"
 ---
 # <a name="developing-for-multiple-platforms-with-the-net-framework"></a>.NET Framework로 여러 플랫폼 개발
 .NET Framework 및 Visual Studio를 사용하여 Microsoft 플랫폼과 Microsoft 이외의 플랫폼 둘 모두에서 사용할 수 있는 앱을 개발할 수 있습니다.  
@@ -28,4 +28,4 @@ ms.locfileid: "48582150"
 |Windows 8.1 및 Windows Phone 8.1 이외 플랫폼용 앱 간에 소스 코드 공유|**링크로 추가** 기능입니다.<br /><br /> -이 방법은 어떤 이유로 두 앱 모두에 공통적으로 적용 되지만 식은 가능 하지 않은 앱 논리에 적합 합니다. 이 기능은 C# 또는 Visual Basic 코드에 사용할 수 있습니다.<br />     예를 들어, Windows Phone 8 및 Windows 8은 Windows 런타임 API를 공유하지만 이식 가능한 클래스 라이브러리는 이러한 플랫폼에 Windows 런타임을 지원하지 않습니다. `Add as link`를 사용하여 Windows Phone 8 앱과 Windows 8이 대상인 Windows 스토어 앱 간에 공통 Windows 런타임 코드를 공유할 수 있습니다.<br /><br /> 자세한 내용은 다음 문서를 참조하세요.<br /><br /> -   [링크로 추가 사용 하 여 코드를 공유](https://msdn.microsoft.com/library/windowsphone/develop/jj714082\(v=vs.105\).aspx) (MSDN 문서)<br />-   [방법: 프로젝트에 기존 항목 추가](https://msdn.microsoft.com/library/vstudio/9f4t9t92\(v=vs.100\).aspx) (MSDN 문서)|  
 |.NET Framework를 사용하여 Windows 스토어 앱 쓰기 또는 .NET Framework 코드에서 Windows 런타임 API 호출|**Windows 런타임 Api** .NET Framework C# 또는 Visual Basic 코드에서.NET Framework Windows 스토어 앱 만들기를 사용 합니다. 두 플랫폼 간의 API 차이점을 알고 있어야 합니다. 그러나 이러한 차이점을 처리하는 데 도움이 되는 클래스가 있습니다.<br /><br /> 자세한 내용은 다음 문서를 참조하세요.<br /><br /> -   [Windows 스토어 앱 및 Windows 런타임용.NET framework 지원](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md) <br />-   [Windows 런타임에 URI 전달](../../../docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md) <br />-   <!--zz <xref:System.IO.WindowsRuntimeStreamExtensions>--> [`System.IO.WindowsRuntimeStreamExtensions`](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions(v=vs.110).aspx) (MSDN API 참조 페이지)<br />-   <!--zz <xref:System.WindowsRuntimeSystemExtensions>--> [`System.WindowsRuntimeSystemExtensions`](https://msdn.microsoft.com/library/system.windowsruntimesystemextensions(v=vs.110).aspx) (MSDN API 참조 페이지)|  
 |Microsoft 이외의 플랫폼용 .NET Framework 앱 빌드|**이식 가능한 클래스 라이브러리 참조 어셈블리** .NET Framework 및 Xamarin과 같은 Visual Studio 확장 프로그램이 나 타사 도구입니다.<br /><br /> 자세한 내용은 다음 문서를 참조하세요.<br /><br /> -   [이식 가능한 클래스 라이브러리를 이제 모든 플랫폼에서 사용할 수 있습니다.](https://blogs.msdn.com/b/dotnet/archive/2013/10/14/portable-class-library-pcl-now-available-on-all-platforms.aspx) (블로그 게시물)<br />-   [Xamarin 설명서](/xamarin)|  
-|플랫폼 간 개발에 JavaScript 및 HTML 사용|**유니버설 앱 템플릿을** Visual Studio 2013 업데이트 2를 Windows 8.1 및 Windows Phone 8.1 용 Windows 런타임 Api에 대해 개발 합니다. 현재 플랫폼 간 앱을 개발하기 위해 .NET Framework API를 JavaScript 및 HTML과 함께 사용할 수 없습니다.<br /><br /> 자세한 내용은 다음 문서를 참조하세요.<br /><br /> -   [JavaScript 프로젝트 템플릿](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx)<br />-   [Windows Phone는 JavaScript를 사용 하 여 Windows 런타임 앱에 이식](https://msdn.microsoft.com/library/windows/apps/dn636144.aspx)|
+|플랫폼 간 개발에 JavaScript 및 HTML 사용|**유니버설 앱 템플릿을** Visual Studio 2013 업데이트 2를 Windows 8.1 및 Windows Phone 8.1 용 Windows 런타임 Api에 대해 개발 합니다. 현재 플랫폼 간 앱을 개발하기 위해 .NET Framework API를 JavaScript 및 HTML과 함께 사용할 수 없습니다.<br /><br /> 자세한 내용은 다음 문서를 참조하세요.<br /><br /> -   [JavaScript 프로젝트 템플릿](https://docs.microsoft.com/previous-versions/windows/apps/hh758331%28v=win.10%29)<br />-   [Windows Phone는 JavaScript를 사용 하 여 Windows 런타임 앱에 이식](https://docs.microsoft.com/previous-versions/windows/apps/dn636144%28v=win.10%29)|

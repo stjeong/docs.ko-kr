@@ -8,14 +8,12 @@ helpviewer_keywords:
 - defaultProxy element
 - <defaultProxy> element
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: c1783776b62532a2bd28067ca9bdb6ae4c80c717
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 0d32e5d03b7c78f616f7d68c0fe0edc9a69dd42e
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48027444"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50037193"
 ---
 # <a name="ltdefaultproxygt-element-network-settings"></a>&lt;defaultProxy&gt; 요소 (네트워크 설정)
 HTTP(Hypertext Transfer Protocol) 프록시 서버를 구성합니다.  
@@ -51,7 +49,7 @@ HTTP(Hypertext Transfer Protocol) 프록시 서버를 구성합니다.
 |**요소**|**설명**|  
 |-----------------|---------------------|  
 |[bypasslist](../../../../../docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md)|프록시를 사용하지 않는 주소를 설명하는 정규식 집합을 제공합니다.|  
-|[모듈](../../../../../docs/framework/configure-apps/file-schema/network/module-element-network-settings.md)|응용 프로그램에 새 프록시 모듈을 추가합니다.|  
+|[module](../../../../../docs/framework/configure-apps/file-schema/network/module-element-network-settings.md)|응용 프로그램에 새 프록시 모듈을 추가합니다.|  
 |[프록시](../../../../../docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md)|프록시 서버를 정의합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  

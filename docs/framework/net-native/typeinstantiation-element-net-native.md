@@ -5,11 +5,11 @@ ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5277b056c11de4c3e32d33c72bafc8f64ee17d05
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49374561"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50033871"
 ---
 # <a name="lttypeinstantiationgt-element-net-native"></a>&lt;TypeInstantiation&gt; 요소(.NET 네이티브)
 생성된 제네릭 형식에 런타임 리플렉션 정책을 적용합니다.  

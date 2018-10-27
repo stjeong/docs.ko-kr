@@ -2,17 +2,17 @@
 title: XML 스키마에서 데이터 집합 관계형 구조 파생(XSD)
 ms.date: 03/30/2017
 ms.assetid: 8f6cd04d-6197-4bc4-9096-8c51c7e4acae
-ms.openlocfilehash: fd5c41272d3b050427804f08f7387328012065f4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: MT
+ms.openlocfilehash: 76fd0126f32eb2b22a12ee0b67e1f81794ff9445
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504949"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50033625"
 ---
 # <a name="deriving-dataset-relational-structure-from-xml-schema-xsd"></a>XML 스키마에서 데이터 집합 관계형 구조 파생(XSD)
 이 단원에서는 XSD(XML 스키마 정의 언어) 스키마 문서에서 `DataSet`의 관계형 스키마를 빌드하는 방법을 간략하게 설명합니다. 일반적으로 각각에 대해 `complexType` 스키마 요소의 자식 요소 테이블에서 생성 되는 `DataSet`합니다. 테이블 구조는 복합 형식의 정의에 의해 결정됩니다. 만들어진 테이블은 `DataSet` 스키마의 최상위 요소에 대 한 합니다. 그러나 테이블에만 만들어집니다 최상위 수준에 대 한 `complexType` 요소 때를 `complexType` 요소는 다른 내부에 중첩 `complexType` 는 요소인 경우 중첩 된 `complexType` 요소에 매핑되는 `DataTable` 내는 `DataSet`합니다.  
   
- XSD에 대 한 자세한 내용은 참조는 World Wide Web Consortium (W3C) XML Schema Part 0: Primer Recommendation, XML Schema Part 1: Structures Recommendation 및 XML Schema Part 2: Datatypes Recommendation을 위치한 [ http://www.w3.org/ ](http://www.w3.org/TR/).  
+ XSD에 대 한 자세한 내용은 World Wide Web Consortium (W3C)을 참조 하세요 [XML Schema Part 0: Primer Recommendation](https://www.w3.org/TR/xmlschema-0/)서 [XML Schema Part 1: Structures Recommendation](https://www.w3.org/TR/xmlschema-1/), 및 [XML Schema Part 2: Datatypes Recommendation](https://www.w3.org/TR/xmlschema-2/)합니다.  
   
  다음 예제에서는 XML 스키마를 보여 줍니다. 여기서 `customers` 의 자식 요소를 `MyDataSet` 요소의 **데이터 집합** 요소입니다.  
   

@@ -2,12 +2,12 @@
 title: 알려진 유형
 ms.date: 03/30/2017
 ms.assetid: 88d83720-ca38-4b2c-86a6-f149ed1d89ec
-ms.openlocfilehash: ec1dfa426c19b5471acb1c359f5068854fa8aa71
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 76e0dadd372df4bc2755db0c3ff7cce5cc31ba20
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44192498"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49454410"
 ---
 # <a name="known-types"></a>알려진 유형
 이 샘플에서는 파생 형식에 대한 정보를 데이터 계약에서 지정하는 방법을 보여 줍니다. 데이터 계약을 사용하면 서비스와 구조적 데이터를 주고 받을 수 있습니다. 개체 지향 프로그래밍에서는 다른 형식에서 상속되는 형식을 원래 형식 대신에 사용할 수 있습니다. 서비스 지향 프로그래밍에서는 형식이 아닌 스키마가 전달되므로 형식 간의 관계가 유지되지 않습니다. <xref:System.Runtime.Serialization.KnownTypeAttribute> 특성을 사용하면 파생 형식에 대한 정보를 데이터 계약에 포함할 수 있습니다. 이 메커니즘이 사용되지 않을 경우 기본 형식이 필요한 곳에서 파생 형식을 주고 받을 수 없습니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "44192498"
   
  다음 샘플 코드와 같이 서비스에 대한 서비스 계약에서는 복소수를 사용합니다.  
   
-```  
+```csharp
 // Define a service contract.  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
@@ -35,7 +35,7 @@ public interface ICalculator
   
  클라이언트와 서비스 간에 전달할 수 있는 클래스의 필드를 나타내기 위해 <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute>가 `ComplexNumber` 클래스에 적용됩니다. `ComplexNumberWithMagnitude` 대신 파생 `ComplexNumber` 클래스를 사용할 수 있습니다. <xref:System.Runtime.Serialization.KnownTypeAttribute> 형식의 `ComplexNumber` 특성에서 이를 나타냅니다.  
   
-```  
+```csharp
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 [KnownType(typeof(ComplexNumberWithMagnitude))]  
 public class ComplexNumber  
@@ -55,7 +55,7 @@ public class ComplexNumber
   
  `ComplexNumberWithMagnitude` 형식은 `ComplexNumber`에서 파생되지만 추가 데이터 멤버인 `Magnitude`를 추가합니다.  
   
-```  
+```csharp
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public class ComplexNumberWithMagnitude : ComplexNumber  
 {  
@@ -73,7 +73,7 @@ public class ComplexNumberWithMagnitude : ComplexNumber
   
  알려진된 형식 기능을 보여 주기 위해 서비스 등에서 구현 되는 반환 하는 방식으로 `ComplexNumberWithMagnitude` 더하기 및 빼기에 대해서만 합니다. 계약에서 `ComplexNumber`를 지정하지만 이는 `KnownTypeAttribute` 특성으로 인해 허용됩니다. 곱하기와 나누기 여전히 기본 반환 `ComplexNumber` 형식입니다.  
   
-```  
+```csharp
 public class DataContractCalculatorService : IDataContractCalculator  
 {  
     public ComplexNumber Add(ComplexNumber n1, ComplexNumber n2)  
@@ -116,14 +116,14 @@ public class DataContractCalculatorService : IDataContractCalculator
   
  생성 되는 generatedClient.cs 소스 파일에서에서 서비스 계약과 데이터 계약은 클라이언트에서 정의 된 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 서비스 메타 데이터에서 합니다. <xref:System.Runtime.Serialization.KnownTypeAttribute> 특성이 서비스의 데이터 계약에 지정되므로 클라이언트는 서비스를 사용할 때 `ComplexNumber` 및 `ComplexNumberWithMagnitude` 클래스를 둘 다 받을 수 있습니다. 클라이언트는 `ComplexNumberWithMagnitude`를 가져왔는지 감지하고 적절한 출력을 생성합니다.  
   
-```  
+```csharp
 // Create a client  
 DataContractCalculatorClient client =   
     new DataContractCalculatorClient();  
   
 // Call the Add service operation.  
-ComplexNumber value1 = new ComplexNumber(); value1.real = 1; value1.imaginary = 2;  
-ComplexNumber value2 = new ComplexNumber(); value2.real = 3; value2.imaginary = 4;  
+ComplexNumber value1 = new ComplexNumber() { real = 1, imaginary = 2 };  
+ComplexNumber value2 = new ComplexNumber() { real = 3, imaginary = 4 };  
 ComplexNumber result = client.Add(value1, value2);  
 Console.WriteLine("Add({0} + {1}i, {2} + {3}i) = {4} + {5}i",  
     value1.real, value1.imaginary, value2.real, value2.imaginary,  
@@ -141,7 +141,7 @@ else
   
  샘플을 실행하면 작업의 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 서비스가 구현된 방식으로 인해 크기는 더하기와 빼기의 경우 출력되지만 곱하기와 나누기의 경우 출력되지 않습니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Magnitude: 7.21110255092798  
 Subtract(1 + 2i, 3 + 4i) = -2 + -2i  

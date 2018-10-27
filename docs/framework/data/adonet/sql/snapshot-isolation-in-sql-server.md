@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
-ms.openlocfilehash: 52c5dba1a21b0e8d8e5af1dc159941e5f4b4aa5f
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: d2683ead92eb4e76494e3e23bff1c688578a316d
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45970075"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50034301"
 ---
 # <a name="snapshot-isolation-in-sql-server"></a>SQL Server의 스냅숏 격리
 스냅숏 격리를 통해 OLTP 응용 프로그램의 동시성이 향상됩니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "45970075"
   
  트랜잭션에서 사용되기 전에 ALLOW_SNAPSHOT_ISOLATION ON 데이터베이스 옵션을 설정하여 스냅샷 격리를 활성화해야 합니다. 이렇게 하면 임시 데이터베이스에 행 버전을 저장 하기 위한 메커니즘을 활성화 (**tempdb**). Transact-SQL ALTER DATABASE 문과 함께 사용하는 각 데이터베이스에서 스냅샷 격리를 활성화해야 합니다. 이 경우 스냅샷 격리는 구성을 필요로 하지 않는 READ COMMITTED, REPEATABLE READ, SERIALIZABLE 및 READ UNCOMMITTED와 같은 일반적인 격리 수준과 다릅니다. 다음 문은 스냅샷 격리를 활성화하고 기본 READ COMMITTED 동작을 SNAPSHOT으로 대체합니다.  
   
-```  
+```sql  
 ALTER DATABASE MyDatabase  
 SET ALLOW_SNAPSHOT_ISOLATION ON  
   
@@ -49,9 +49,9 @@ SET READ_COMMITTED_SNAPSHOT ON
   
 -   SERIALIZABLE은 전체 키를 잠그고 트랜잭션이 완료될 때까지 잠금을 유지하기 때문에 가장 제한적인 격리 수준입니다. 이 격리 수준은 REPEATABLE READ를 포함하며 트랜잭션이 완료될 때까지 다른 트랜잭션이 해당 트랜잭션에서 읽은 범위 내에 새 행을 삽입할 수 없도록 하는 제한을 추가합니다.  
   
- 자세한 내용은 SQL Server 온라인 설명서의 "Isolation Levels"를 참조하세요.  
+ 자세한 내용은 참조는 [트랜잭션 잠금 및 행 버전 관리 지침](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide)합니다.  
   
-### <a name="snapshot-isolation-level-extensions"></a>스냅샷 격리 수준 확장  
+### <a name="snapshot-isolation-level-extensions"></a>스냅샷 격리 수준 확장명  
  SQL Server에서는 SNAPSHOT 격리 수준을 도입하고 READ COMMITTED를 추가로 구현함으로써 SQL-92 격리 수준이 확장되었습니다. READ_COMMITTED_SNAPSHOT 격리 수준은 모든 트랜잭션에 대해 READ COMMITTED를 투명하게 대체할 수 있습니다.  
   
 -   SNAPSHOT 격리는 트랜잭션 내에서 읽은 데이터에 다른 동시 트랜잭션에서 발생한 변경 내용이 반영되지 않도록 지정합니다. 트랜잭션은 트랜잭션이 시작될 때 존재하는 데이터 행 버전을 사용합니다. 데이터를 읽을 때 데이터가 잠기지 않으므로 SNAPSHOT 트랜잭션이 다른 트랜잭션의 데이터 쓰기 동작을 차단하지 않습니다. 데이터를 쓰는 트랜잭션은 스냅샷 트랜잭션의 데이터 읽기 동작을 차단하지 않습니다. 스냅샷 격리를 사용하려면 ALLOW_SNAPSHOT_ISOLATION 데이터베이스 옵션을 설정하여 스냅샷 격리를 활성화해야 합니다.  
@@ -132,7 +132,7 @@ SqlTransaction sqlTran =
 ### <a name="using-lock-hints-with-snapshot-isolation"></a>스냅샷 격리와 함께 잠금 힌트 사용  
  앞의 예제에서는 첫 번째 트랜잭션에서 데이터를 선택한 후 첫 번째 트랜잭션이 완료되기 전에 두 번째 트랜잭션에서 데이터를 업데이트하므로 첫 번째 트랜잭션에서 동일한 행을 업데이트하려고 할 때 업데이트 충돌이 발생하게 됩니다. 트랜잭션을 시작할 때 잠금 힌트를 제공하면 장기 실행 스냅샷 트랜잭션에서 업데이트 충돌을 줄일 수 있습니다. 다음 SELECT 문에서는 UDPLOCK 힌트를 사용하여 선택한 행을 잠급니다.  
   
-```  
+```sql  
 SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)   
   WHERE PriKey BETWEEN 1 AND 3  
 ```  
@@ -143,4 +143,5 @@ SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
   
 ## <a name="see-also"></a>참고 항목  
  [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET 관리 되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)      
+ [트랜잭션 잠금 및 행 버전 관리 지침](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide)

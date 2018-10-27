@@ -2,12 +2,12 @@
 title: '&lt;netHttpsBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
-ms.openlocfilehash: 2dbcdbe7fff758bab0e932817feddab398ed9ed1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b59fe7277a266a7e006f980ac31e6987dbb5b977
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526506"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453415"
 ---
 # <a name="ltnethttpsbindinggt"></a>&lt;netHttpsBinding&gt;
 Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTPS를 통해 전달할 수 있는 끝점을 노출 하는 데 사용할 수 있는 바인딩을 나타냅니다. 이중 계약과 함께 사용하는 경우 WebSocket이 사용되고, 그렇지 않으면 HTTPS가 사용됩니다.  
@@ -181,5 +181,5 @@ Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTPS를 통�
  <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  
  [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용 하 여 Windows Communication Foundation 서비스 및 클라이언트 구성](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

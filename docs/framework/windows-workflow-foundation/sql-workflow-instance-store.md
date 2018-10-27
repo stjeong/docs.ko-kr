@@ -2,12 +2,12 @@
 title: SQL 워크플로 인스턴스 저장소
 ms.date: 03/30/2017
 ms.assetid: 8cd2f8a5-4bf8-46ea-8909-c7fdb314fabc
-ms.openlocfilehash: 680a233ca721cd8a0c620b797832419f460b13b6
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: d35cf6e94b010291276b5a543df1038715a0d50c
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45594287"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453020"
 ---
 # <a name="sql-workflow-instance-store"></a>SQL 워크플로 인스턴스 저장소
 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]는 워크플로가 SQL Server 2005 또는 SQL Server 2008 데이터베이스에서 워크플로 인스턴스에 대한 상태 정보를 유지할 수 있는 SQL 워크플로 인스턴스 저장소와 함께 제공됩니다. 이 기능은 주로 지속성 프레임워크의 추상 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 클래스에서 파생되는 <xref:System.Runtime.DurableInstancing.InstanceStore> 클래스의 형태로 구현됩니다. SQL 워크플로 인스턴스 저장소 기능은 호스트가 지속성 명령을 저장소에 보내는 데 사용하는 지속성 API의 구체적인 구현인 SQL 지속성 공급자를 구성합니다.  
@@ -18,7 +18,7 @@ ms.locfileid: "45594287"
   
  이 단원의 항목에서는 SQL 워크플로 인스턴스 저장소의 속성과 기능을 설명하고 저장소 구성에 대한 세부 정보를 제공합니다.  
   
- Windows Server AppFabric은 고유의 인스턴스 저장소 및 도구를 제공하여 구성 및 인스턴스 저장소의 사용을 단순화합니다. 자세한 내용은 참조 하십시오 [Windows Server App Fabric 인스턴스 스토어](https://go.microsoft.com/fwlink/?LinkId=201201)합니다. App Fabric SQL Server 지 속성 데이터베이스 참조에 대 한 자세한 내용은 [App Fabric SQL Server 지 속성 데이터베이스](https://go.microsoft.com/fwlink/?LinkId=201202)  
+ Windows Server AppFabric은 고유의 인스턴스 저장소 및 도구를 제공하여 구성 및 인스턴스 저장소의 사용을 단순화합니다. 자세한 내용은 [Windows Server App Fabric 인스턴스 스토어](https://go.microsoft.com/fwlink/?LinkId=201201)합니다. App Fabric SQL Server 지 속성 데이터베이스 참조에 대 한 자세한 내용은 [App Fabric SQL Server 지 속성 데이터베이스](https://go.microsoft.com/fwlink/?LinkId=201202)  
   
 ## <a name="in-this-section"></a>섹션 내용  
   

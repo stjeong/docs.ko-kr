@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: 147de1cdde79ee29f8f316399ba2e41f93921073
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 4302ee961fcd396c7e6a6ddb0d9bbe1bdb714cfc
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47201116"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453465"
 ---
 # <a name="working-with-certificates"></a>인증서 작업
 WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반적으로 X.509 디지털 인증서를 사용하여 클라이언트 및 서버를 인증하고, 암호화하고, 메시지에 디지털 서명합니다. 이 항목에서는 X.509 디지털 인증서 기능과 WCF에서 인증서 기능을 사용하는 방법을 간략하게 설명하며, 이러한 개념을 자세히 설명하거나 WCF 및 인증서를 사용하여 일반 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.  
@@ -42,7 +42,7 @@ WCF(Windows Communication Foundation) 보안을 프로그래밍하려면 일반�
   
 -   **개인**. 이 저장소는 컴퓨터 사용과 연관된 인증서에 사용됩니다. 일반적으로 이 저장소는 신뢰할 수 있는 루트 인증 기관 저장소에 있는 인증 기관 인증서 중 하나에서 발급한 인증서에 사용됩니다. 또한 여기에 있는 인증서는 응용 프로그램에서 자체 발급하고 신뢰할 수 있습니다.  
   
- 인증서 저장소에 대한 자세한 내용은 [인증서 저장소](https://go.microsoft.com/fwlink/?LinkId=88912)를 참조하세요.  
+ 인증서 저장소에 대한 자세한 내용은 [인증서 저장소](/windows/desktop/secauthn/certificate-stores)를 참조하세요.  
   
 ### <a name="selecting-a-store"></a>저장소 선택  
  인증서를 저장할 위치는 서비스 또는 클라이언트가 실행되는 방법과 시기에 따라 달라집니다. 다음과 같은 일반 규칙이 적용됩니다.  

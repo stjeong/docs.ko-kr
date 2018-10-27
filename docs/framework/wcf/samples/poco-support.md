@@ -2,12 +2,12 @@
 title: POCO 지원
 ms.date: 03/30/2017
 ms.assetid: 3846ca73-2819-4ca2-8367-dc739dde5a5b
-ms.openlocfilehash: beba1469d5d9575a5b2ef76a4db3747dfcc35d0c
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: bb4f8b0a5eb20be50a2d3ba9a15d66fd7fc573f8
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857604"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49452812"
 ---
 # <a name="poco-support"></a>POCO 지원
 이 샘플에서는 표시되지 않은 형식, 즉 serialization 특성이 적용되지 않은 형식을 소개합니다. 이러한 형식을 POCO(Plain Old CLR Object) 형식이라고도 합니다. <xref:System.Runtime.Serialization.DataContractSerializer>는 기본 생성자를 가진 표시되지 않은 모든 public 형식에 대한 데이터 계약을 유추합니다. 데이터 계약을 사용하면 서비스와 구조적 데이터를 주고 받을 수 있습니다. 표시 되지 않은 형식에 대 한 자세한 내용은 참조 하세요. [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "43857604"
   
  `ComplexNumber` 클래스는 `ServiceContract`에서 사용됩니다. 다음 샘플 코드에 나온 것처럼 `ComplexNumber` 형식에는 <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성이 없습니다. 기본적으로 모든 public 속성과 필드가 serialize됩니다.  
   
-```  
+```csharp
 public class ComplexNumber  
 {  
     public double Real;  

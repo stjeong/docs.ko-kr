@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f9bcd9b-8f8f-47fa-8f1e-0d47236eb800
-ms.openlocfilehash: 2e01d3de6ee7b415c7b3f18a20e840b8ec4ab9b6
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
-ms.translationtype: MT
+ms.openlocfilehash: 3de4bb4546d3ee20e961ecf5a9d130e8e6c713a8
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698447"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50037154"
 ---
 # <a name="how-to-access-a-wse-30-service-with-a-wcf-client"></a>방법: WCF 클라이언트를 사용하여 WSE 3.0 서비스에 액세스
 Windows Communication Foundation (WCF) 클라이언트는 WCF 클라이언트가 2004 년 8 월 버전의 Ws-addressing 사양 사용 하도록 구성 된 하는 경우 Microsoft.NET 서비스용 유선 수준으로 호환 Web Services Enhancements (WSE) 3.0 사용 하 여 합니다. 그러나 WSE 3.0 서비스 지원 하지 않습니다 메타 데이터 교환 (MEX) 프로토콜은 지금 사용 하는 경우는 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) WCF 클라이언트 클래스를 만들려면 보안 설정이 적용 되지 않습니다는 생성 된 WCF 클라이언트입니다. 따라서 보안 설정을 지정 해야 합니다는 WSE 3.0 서비스에 WCF 클라이언트 생성 된 후 필요 합니다.  
@@ -27,7 +27,7 @@ Windows Communication Foundation (WCF) 클라이언트는 WCF 클라이언트가
   
 2.  WSE 3.0 웹 서비스와 통신할 수 있는 바인딩을 나타내는 클래스를 만듭니다.  
   
-     다음 클래스의 일부인 합니다 [WSE와의 상호 운용](https://msdn.microsoft.com/library/f6816861-96a0-45f9-8736-8e4e82cd3a41) 샘플:  
+     다음 클래스의 일부인 합니다 [WSE와의 상호 운용](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29) 샘플:  
   
     1.  <xref:System.ServiceModel.Channels.Binding> 클래스에서 파생되는 클래스를 만듭니다.  
   
@@ -64,4 +64,4 @@ Windows Communication Foundation (WCF) 클라이언트는 WCF 클라이언트가
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Channels.Binding>  
- [WSE와의 상호 운용](https://msdn.microsoft.com/library/f6816861-96a0-45f9-8736-8e4e82cd3a41)
+ [WSE와의 상호 운용](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

@@ -3,11 +3,11 @@ title: 워크플로 디자이너 재호스트
 ms.date: 03/30/2017
 ms.assetid: bec1fc28-f902-4edb-86c5-436cec802c2b
 ms.openlocfilehash: f5964b5c150dbe2a4132d072672a621315270fd5
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48579935"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49452942"
 ---
 # <a name="rehosting-the-workflow-designer"></a>워크플로 디자이너 재호스트
 [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] 만들기, 수정 및 모니터링 워크플로에의 목적에 대 한 Visual Studio 2012 외부 환경에서 다시 호스트할 수 있습니다.

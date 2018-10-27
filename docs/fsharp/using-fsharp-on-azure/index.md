@@ -3,12 +3,12 @@ title: Azure에서 F# 사용
 description: 'F #을 사용 하 여 Azure 서비스 사용에 대 한 가이드'
 author: sylvanc
 ms.date: 09/22/2016
-ms.openlocfilehash: b0efa919e846086e2dee131fb5791abc409b5bcb
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 96dec342379b06e997107cc5d6cc05e9fc737452
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033547"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50033963"
 ---
 # <a name="using-f-on-azure"></a>Azure에서 F# 사용
 
@@ -23,7 +23,7 @@ F#은 클라우드 프로그래밍의 뛰어난 언어이며 웹 응용 프로�
 
 Azure는 다양한 VM(가상 머신) 구성을 지원합니다. [Linux 및 Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/)를 참조하세요.
 
-가상 머신에서 F#을 실행하고 컴파일하거나 스크립팅하도록 설치하려면 [Using F# on Linux](http://fsharp.org/use/linux)(Linux에서 F# 사용) 및 [Using F# on Windows](http://fsharp.org/use/windows)(Windows에서 F# 사용)를 참조하세요.
+가상 머신에서 F#을 실행하고 컴파일하거나 스크립팅하도록 설치하려면 [Using F# on Linux](https://fsharp.org/use/linux)(Linux에서 F# 사용) 및 [Using F# on Windows](https://fsharp.org/use/windows)(Windows에서 F# 사용)를 참조하세요.
 
 
 ## <a name="using-azure-functions-with-f"></a>Azure Functions F # 사용 #

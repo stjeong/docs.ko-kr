@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 244df48606f6d971d6b6e246c4f9b73f916cbdcd
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: fa4b789641034b6563b15c52e96cbfdfa13d989a
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193816"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50049284"
 ---
 # <a name="connectserverwmi-function"></a>ConnectServerWmi 함수
 DCOM 통해 지정된 컴퓨터의 WMI 네임스페이스에 대한 연결을 만듭니다.  
@@ -70,7 +70,7 @@ HRESULT ConnectServerWmi (
 | NTLMDOMAIN:*도메인 이름* | NT LAN Manager 인증을 사용 하 고이 매개 변수는 NTLM 도메인 이름을 포함 합니다. |
 
 `pCtx`   
-[in] 일반적으로이 매개 변수는 `null`합니다. 그렇지 않을 경우에 대 한 포인터를 [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) 개체가 하나 이상의 동적 클래스 공급자가 필요 합니다. 
+[in] 이 매개 변수는 일반적으로 `null`입니다. 그렇지 않을 경우에 대 한 포인터를 [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) 개체가 하나 이상의 동적 클래스 공급자가 필요 합니다. 
 
 `ppNamespace`  
 [out] 함수가 반환할 때 수신에 대 한 포인터를 [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) 개체가 지정된 된 네임 스페이스에 연결 합니다. 가리키도록 설정 됩니다 `null` 오류가 발생 하는 경우.
@@ -94,7 +94,7 @@ HRESULT ConnectServerWmi (
   
 ## <a name="remarks"></a>설명
 
-이 함수에 대 한 호출을 래핑하는 [IWbemLocator::ConnectServer](https://msdn.microsoft.com/libraryaa391769%28v=vs.85%29.aspx) 메서드.
+이 함수에 대 한 호출을 래핑하는 [IWbemLocator::ConnectServer](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemlocator-connectserver) 메서드.
 
  기본 네임 스페이스에 대 한 로컬 액세스에 대 한 `strNetworkResource` 단순 개체 경로일 수 있습니다. "root\default" 또는 "\\.\root\default"입니다. 원격 컴퓨터에서 기본 네임 스페이스에 대 한 액세스에 대 한 COM 또는 Microsoft 호환 네트워킹을 사용 하 여 컴퓨터 이름을 포함 합니다. "\\myserver\root\default"입니다. 또한 컴퓨터 이름을 DNS 이름 또는 IP 주소를 수 있습니다. `ConnectServerWmi` 함수 IPv6을 실행 하는 컴퓨터에 연결할 수 IPv6 주소를 사용 합니다.
 

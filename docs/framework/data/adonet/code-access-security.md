@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
-ms.openlocfilehash: 45c838fbac5e6f576a242c8839f849dc9529ef7d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: a608b91c78808af70bd5e9188926a12b945c5604
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43779275"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453179"
 ---
 # <a name="code-access-security-and-adonet"></a>코드 액세스 보안 및 ADO.NET
 .NET Framework는 역할 기반 보안과 CAS(코드 액세스 보안)를 제공합니다. 두 보안 기능 모두 CLR(공용 언어 런타임)이 제공하는 공용 인프라를 사용하여 구현되었습니다. 비관리 코드의 경우 대부분의 응용 프로그램은 사용자 또는 보안 주체 권한으로 실행됩니다. 결과적으로 높은 권한을 가진 사용자가 악의적이거나 오류가 많은 소프트웨어를 실행하면 컴퓨터 시스템과 개인 데이터가 손상될 수 있습니다.  
@@ -192,11 +192,11 @@ Failed, as expected: Request failed.
 ## <a name="interoperability-with-unmanaged-code"></a>비관리 코드와의 상호 운용성  
  CLR 외부에서 실행되는 코드를 비관리 코드라고 합니다. 따라서 비관리 코드에는 CAS와 같은 보안 메커니즘을 적용할 수 없습니다. 비관리 코드로는 COM 구성 요소, ActiveX 인터페이스, Win32 API 함수 등이 있습니다. 비관리 코드를 실행할 때에는 특수한 보안 고려 사항이 적용되므로 전체적인 응용 프로그램 보안이 손상되지 않습니다. 자세한 내용은 [비관리 코드 상호 운용](../../../../docs/framework/interop/index.md)을 참조하세요.  
   
- .NET Framework는 COM interop를 통해 액세스를 제공함으로써 기존 COM 구성 요소에 대한 이전 버전과의 호환성도 지원합니다. 즉, 관련 COM 형식을 가져오는 COM interop 도구를 사용하여 COM 구성 요소를 .NET Framework 응용 프로그램에 통합할 수 있습니다. COM 형식을 가져온 후에는 즉시 사용할 수 있습니다. COM interop을 사용하면 어셈블리 메타데이터를 형식 라이브러리로 내보내고 관리 구성 요소를 COM 구성 요소로 등록하여 COM 클라이언트에서 관리 코드에 액세스할 수도 있습니다. 자세한 내용은 [고급 COM 상호 운용성](https://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)합니다.  
+ .NET Framework는 COM interop를 통해 액세스를 제공함으로써 기존 COM 구성 요소에 대한 이전 버전과의 호환성도 지원합니다. 즉, 관련 COM 형식을 가져오는 COM interop 도구를 사용하여 COM 구성 요소를 .NET Framework 응용 프로그램에 통합할 수 있습니다. COM 형식을 가져온 후에는 즉시 사용할 수 있습니다. COM interop을 사용하면 어셈블리 메타데이터를 형식 라이브러리로 내보내고 관리 구성 요소를 COM 구성 요소로 등록하여 COM 클라이언트에서 관리 코드에 액세스할 수도 있습니다. 자세한 내용은 [고급 COM 상호 운용성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- [코드 액세스 보안](https://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03)  
- [역할 기반 보안](https://msdn.microsoft.com/library/239442e3-5be4-4203-b7fd-793baffea803)  
+ [코드 액세스 보안](../../../../docs/framework/misc/code-access-security.md)  
+ [역할 기반 보안](../../../../docs/standard/security/role-based-security.md)  
  [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

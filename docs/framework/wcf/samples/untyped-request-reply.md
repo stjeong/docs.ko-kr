@@ -2,12 +2,12 @@
 title: 형식화 되지 않은 요청-회신
 ms.date: 03/30/2017
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
-ms.openlocfilehash: 55692282aa06b8e988f44806394bdfcbb6e2f3ec
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: MT
+ms.openlocfilehash: b6e93ad0782fcacbc4ce20c0e9bb407abdf2366f
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528595"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50047633"
 ---
 # <a name="untyped-requestreply"></a>형식없는 요청/회신
 이 샘플에서는 Message 클래스를 사용하는 작업 계약을 정의하는 방법을 보여 줍니다.  
@@ -17,14 +17,14 @@ ms.locfileid: "43528595"
   
  이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 서비스 계약에서는 메시지 형식을 인수로 받는 작업을 하나 정의하고 메시지를 반환합니다. 작업에서는 필요한 데이터를 모두 수집하여 메시지 본문으로부터 합계를 계산한 다음 계산된 합계를 반환 메시지의 본문으로 보냅니다.  
   
-```  
+```csharp
 [OperationContract(Action = CalculatorService.RequestAction, ReplyAction = CalculatorService.ReplyAction)]  
 Message ComputeSum(Message request);  
 ```  
   
  서비스에서 작업은 입력 메시지로 전달된 정수의 배열을 검색한 다음 합계를 계산합니다. 샘플에서는 응답 메시지를 보내기 위해 적절한 메시지 버전 및 동작으로 새 메시지를 만들고 계산된 합계를 본문으로 추가합니다. 다음 샘플 코드에서는 이를 보여 줍니다.  
   
-```  
+```csharp
 public Message ComputeSum(Message request)  
 {  
     //The body of the message contains a list of numbers which will be   
@@ -45,7 +45,7 @@ public Message ComputeSum(Message request)
   
  클라이언트에서 생성 되는 코드를 사용 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 원격 서비스에 프록시를 만들려고 합니다. 요청 메시지를 보내려면 클라이언트에 내부 채널에 따라 결정되는 메시지 버전이 필요합니다. 따라서 여기서는 만들어지는 프록시 채널의 범위에 맞게 <xref:System.ServiceModel.OperationContextScope> 속성에 올바른 메시지 버전이 채워진 <xref:System.ServiceModel.OperationContext>를 만드는 새 `OutgoingMessageHeaders.MessageVersion`를 만듭니다. 클라이언트에서는 요청 메시지에 본문으로 입력 배열을 전달한 다음 프록시에서 `ComputeSum`을 호출합니다. 그런 다음 클라이언트에서는 회신 메시지에 있는 `GetBody<T>` 메서드에 액세스하여 전달한 입력의 합계를 검색합니다. 다음 샘플 코드에서는 이를 보여 줍니다.  
   
-```  
+```csharp
 using (new OperationContextScope(client.InnerChannel))  
 {  
     // Call the Sum service operation.  
@@ -63,7 +63,7 @@ using (new OperationContextScope(client.InnerChannel))
   
  이 샘플은 웹 호스팅 샘플이기 때문에 클라이언트 실행 파일만 실행해야 합니다. 다음은 클라이언트의 샘플 출력입니다.  
   
-```  
+```console  
 Prompt>Client.exe  
 Sum of numbers passed (1,2,3,4,5) = 15  
   

@@ -2,12 +2,12 @@
 title: 웹 서비스 프로토콜 상호 운용성 가이드
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-ms.openlocfilehash: 37416a80c8b6f2ac086dbface1cda37609698bfc
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 9aeceff9dc2b714016d2f7c379e538d885489bb9
+ms.sourcegitcommit: 4621e67f69e7a9503ea93313ff60d69683207889
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842157"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49995401"
 ---
 # <a name="web-services-protocols-interoperability-guide"></a>웹 서비스 프로토콜 상호 운용성 가이드
 Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 구현합니다. 이러한 프로토콜의 대부분에는 구현자가 결정하는 여러 가지 옵션과 확장 지점이 포함되어 있습니다. 이 항목에서는 WCF를 구현 하는 웹 서비스 프로토콜의 목록을 제공 합니다. 이 단원의 다른 항목에서는 지원되는 각 프로토콜의 구현에 대해 자세히 설명합니다.  
@@ -36,7 +36,7 @@ Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 
 |W3C Web Services Addressing 1.0 - Core|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=96688)|  
 |W3C Web Services Addressing 1.0 - SOAP 바인딩|[Web Services Addressing 1.0-SOAP 바인딩](https://go.microsoft.com/fwlink/?LinkId=96689)|  
 |W3C Web Services Addressing 1.0 - WSDL 바인딩*|[Web Services Addressing 1.0-WSDL 바인딩](https://go.microsoft.com/fwlink/?LinkId=96690)|  
-|W3C Web Services Addressing 1.0 Metadata|[웹 서비스 주소 지정 1.0-메타 데이터](http://www.w3.org/TR/ws-addr-metadata/)|  
+|W3C Web Services Addressing 1.0 Metadata|[웹 서비스 주소 지정 1.0-메타 데이터](https://www.w3.org/TR/ws-addr-metadata/)|  
 |WSDL SOAP1.1 바인딩|[WSDL (웹 서비스 설명 언어) 1.1](https://go.microsoft.com/fwlink/?LinkId=96160)|  
 |WSDL SOAP1.2 바인딩|[SOAP 1.2에 대 한 WSDL 1.1 바인딩 확장](https://go.microsoft.com/fwlink/?LinkId=96691)|  
   

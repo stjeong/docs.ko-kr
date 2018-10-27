@@ -5,13 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9f71b6ae-737c-4382-8d89-0a7b1c7e182b
-author: BrucePerlerMS
-ms.openlocfilehash: f1dae4b9d2976ddbc941e49843324a29ec8885a4
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: e6fbaabb97e4a8de3e4bdbcc0c105b6cf999c0d5
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836354"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50037589"
 ---
 # <a name="how-to-secure-metadata-endpoints"></a>방법: 메타데이터 엔드포인트 보안 설정
 서비스의 메타데이터에는 악의적인 사용자가 활용할 수 있는 응용 프로그램에 대한 중요한 정보가 들어 있습니다. 또한 서비스의 소비자는 서비스의 메타데이터를 가져오기 위한 보안 메커니즘이 필요할 수도 있습니다. 따라서 보안 엔드포인트를 사용하여 메타데이터를 게시해야 하는 경우가 있습니다.  

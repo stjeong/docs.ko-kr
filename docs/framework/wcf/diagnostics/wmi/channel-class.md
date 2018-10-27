@@ -2,19 +2,19 @@
 title: Channel 클래스
 ms.date: 03/30/2017
 ms.assetid: d9fae2ca-209c-4341-a0f5-6b79d1a67776
-ms.openlocfilehash: 4b7c66560c0c136a258c527d8a681d491eb50aae
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 108d5f8e3cd092863dbd48e2bb9d180798b091a4
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33485813"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50047373"
 ---
 # <a name="channel-class"></a>Channel 클래스
 채널  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```csharp
 class Channel  
 {  
   string LocalAddress;  
@@ -43,7 +43,7 @@ class Channel
   
  액세스 형식: 읽기 전용  
   
- 채널이 연결되는 끝점에 대한 참조입니다.  
+ 채널이 연결되는 엔드포인트에 대한 참조입니다.  
   
 ### <a name="remoteaddress"></a>RemoteAddress  
  데이터 형식: string  

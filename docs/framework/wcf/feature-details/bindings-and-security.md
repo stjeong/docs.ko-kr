@@ -7,13 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - bindings [WCF]
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
-author: BrucePerlerMS
-ms.openlocfilehash: 904ea64bd6e76e7bf99aa4a31ef752bfb2760c23
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
-ms.translationtype: MT
+ms.openlocfilehash: 9cd180c5e1bd8afff462c380ad3389a78027eb48
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198464"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50170369"
 ---
 # <a name="bindings-and-security"></a>바인딩 및 보안
 Windows Communication Foundation (WCF)를 사용 하 여 포함 된 시스템 제공 바인딩 WCF 응용 프로그램을 프로그래밍 하는 빠른 방법을 제공 합니다. 한 가지 예외를 통해 모든 바인딩의 기본 보안 스키마가 활성화됩니다. 이 항목은 보안 요구 사항에 적합한 바인딩을 선택하는 데 도움을 줍니다.  
@@ -132,7 +131,7 @@ Windows Communication Foundation (WCF)를 사용 하 여 포함 된 시스템 �
   
 -   Windows 보안을 사용하여 인증.  
   
- 자세한 내용은 <xref:System.ServiceModel.NetNamedPipeSecurity>, <xref:System.ServiceModel.NetNamedPipeSecurityMode> 및 <xref:System.ServiceModel.NamedPipeTransportSecurity>을 참조하십시오.  
+ 자세한 내용은 <xref:System.ServiceModel.NetNamedPipeSecurity>, <xref:System.ServiceModel.NetNamedPipeSecurityMode> 및 <xref:System.ServiceModel.NamedPipeTransportSecurity>을 참조하세요.  
   
 ### <a name="msmqintegrationbinding"></a>MsmqIntegrationBinding  
  코드를 사용 하 여는 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> 클래스, 구성에서 사용 합니다 [ \<msmqIntegrationBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)합니다.  

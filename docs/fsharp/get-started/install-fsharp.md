@@ -2,12 +2,12 @@
 title: 'F # 설치'
 description: 'F #의 경우이 사용자 환경에 따라 설치 하는 방법에 알아봅니다.'
 ms.date: 08/28/2018
-ms.openlocfilehash: 909e1c07ff7f6d52db77a987639d1c749146fdca
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
-ms.translationtype: MT
+ms.openlocfilehash: d53ecdcba5411db62208cb683a0fad795711b77c
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49120936"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50044647"
 ---
 # <a name="install-f"></a>F # 설치 #
 
@@ -33,7 +33,7 @@ F #에서 기본적으로 설치 됩니다 [Mac 용 Visual Studio](https://visua
 
 ### <a name="macostabmacos"></a>[macOS](#tab/macos)
 
-[Mono](http://www.mono-project.com) 되 [F # Interactive](../tutorials/fsharp-interactive/index.md) 지원 합니다. MacOS에서 Mono를 설치 하는 가장 쉬운 방법은 Homebrew 통해 됩니다. 터미널에 다음을 입력 하기만 하면 됩니다.
+[Mono](https://www.mono-project.com) 되 [F # Interactive](../tutorials/fsharp-interactive/index.md) 지원 합니다. MacOS에서 Mono를 설치 하는 가장 쉬운 방법은 Homebrew 통해 됩니다. 터미널에 다음을 입력 하기만 하면 됩니다.
 
 ```console
 brew install mono
