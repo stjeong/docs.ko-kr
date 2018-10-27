@@ -1,8 +1,0 @@
-# [자습서](index.md)
-## [콘솔 응용 프로그램](console-teleprompter.md)
-## [REST 클라이언트](console-webapiclient.md)
-## [C# 및 .NET의 상속](inheritance.md)
-## [LINQ 작업](working-with-linq.md)
-## [Docker에서 호스트되는 마이크로 서비스](microservices.md)
-## [문자열 보간](string-interpolation.md)
-## [특성 사용](attributes.md)
