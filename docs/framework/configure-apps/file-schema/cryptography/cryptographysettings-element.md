@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: dc55acd7a698ef37d45e8a412db684c13a3b8b16
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 4bad1d15bc8e2fd40d42581220888f035e515162
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025460"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181383"
 ---
 # <a name="ltcryptographysettingsgt-element"></a>&lt;cryptographySettings&gt; 요소
 암호화 설정이 포함되어 있습니다.  
@@ -79,6 +79,6 @@ ms.locfileid: "48025460"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
- [암호화 서비스](../../../../../docs/standard/security/cryptographic-services.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

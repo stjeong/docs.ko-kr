@@ -2,19 +2,19 @@
 title: ClientCredentials
 ms.date: 03/30/2017
 ms.assetid: 41dffd6b-8f14-4fed-aefb-2a1bb168efb3
-ms.openlocfilehash: aa852ff82c44a3b5009dbc70e1067face44cbbe9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8b6200f84f352d49cf142d9c8b97d1c2b36149b2
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33486378"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50180902"
 ---
 # <a name="clientcredentials"></a>ClientCredentials
 ClientCredentials  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```csharp
 class ClientCredentials : Behavior  
 {  
   string ClientCertificate;  
@@ -53,7 +53,7 @@ class ClientCredentials : Behavior
   
  액세스 형식: 읽기 전용  
   
- 로컬 보안 토큰 서비스에 연결하기 위해 사용되는 끝점 주소 및 바인딩입니다.  
+ 로컬 보안 토큰 서비스에 연결하기 위해 사용되는 엔드포인트 주소 및 바인딩입니다.  
   
 ### <a name="peer"></a>Peer  
  데이터 형식: string  

@@ -7,13 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - WCF, authentication
 ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
-author: BrucePerlerMS
-ms.openlocfilehash: cbedab4064173186251defead8394735de033cf7
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 2a6fc82b21d8530214923bdadcad7f52da947c82
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196579"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50088821"
 ---
 # <a name="how-to-create-a-custom-security-token-authenticator"></a>방법: 사용자 지정 보안 토큰 인증자 만들기
 이 항목에서는 사용자 지정 보안 토큰 인증자를 만드는 방법과 이를 사용자 지정 보안 토큰 관리자와 통합하는 방법에 대해 설명합니다. 보안 토큰 인증자는 들어오는 메시지와 함께 제공된 보안 토큰 내용의 유효성을 검사합니다. 유효성 검사에 성공하면, 인증자는 평가 시 클레임 집합이 반환되는 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 인스턴스 컬렉션을 반환합니다.  

@@ -21,14 +21,12 @@ helpviewer_keywords:
 - I literal type character [Visual Basic]
 - Integer data type
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: dc780cc845bfa6ef52fc9973ef3617d621167af1
-ms.sourcegitcommit: daa8788af67ac2d1cecd24f9f3409babb2f978c9
-ms.translationtype: MT
+ms.openlocfilehash: 989ce803849aa2dff9fc5c38a38bb356c937a945
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "44177525"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50045446"
 ---
 # <a name="integer-data-type-visual-basic"></a>정수 데이터 형식 (Visual Basic)
 -2,147,483,648에서 2,147,483,647까지의 값 범위에 속하는 부호 있는 32비트(4바이트) 정수를 저장합니다.  

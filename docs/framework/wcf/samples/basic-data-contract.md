@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Data Contract
 ms.assetid: b124e9e0-cb73-4ae0-b9c3-e6cdf5eced98
-ms.openlocfilehash: a170423a5ae132c70710e22b5d61f57c46fdfc28
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c2f16f74638341cfe6c6d0f3b25967082fc99c97
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523766"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50180168"
 ---
 # <a name="basic-data-contract"></a>기본 데이터 계약
 이 샘플에서는 데이터 계약을 구현하는 방법을 보여 줍니다. 데이터 계약을 사용하면 서비스와 구조적 데이터를 주고 받을 수 있습니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 하지만 기본 숫자 형식 대신 복소수를 사용 합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "43523766"
   
  다음 샘플 코드와 같이 이 서비스에 대한 서비스 계약에서는 복소수를 사용합니다.  
   
-```  
+```csharp
 // Define a service contract.  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
@@ -39,7 +39,7 @@ public interface ICalculator
   
  다음 샘플 코드와 같이 클라이언트와 서비스 간에 연결을 통해 전달할 수 있는 클래스의 필드를 나타내기 위해 <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute> 특성이 `ComplexNumber` 클래스 정의에 적용되었습니다.  
   
-```  
+```csharp
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public class ComplexNumber  
 {  
@@ -58,7 +58,7 @@ public class ComplexNumber
   
  서비스 구현은 적절한 결과를 계산하여 반환하며 `ComplexNumber` 형식의 숫자가 허용 및 반환됩니다.  
   
-```  
+```csharp
 // This is the service class that implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -97,16 +97,20 @@ public class CalculatorService : ICalculator
   
  클라이언트 구현에서도 복소수가 사용됩니다. 서비스 계약과 데이터 계약은 둘 다에서 생성 되는 generatedClient.cs 소스 파일에에서 정의 된 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 서비스 메타 데이터에서 합니다.  
   
-```  
+```csharp
 // Create a client.  
 DataContractCalculatorClient client = new DataContractCalculatorClient();  
 // Call the Add service operation.  
-ComplexNumber value1 = new ComplexNumber();   
-value1.Real = 1;   
-value1.Imaginary = 2;  
-ComplexNumber value2 = new ComplexNumber();   
-value2.Real = 3;  
-value2.Imaginary = 4;  
+ComplexNumber value1 = new ComplexNumber() 
+                    {
+                        Real = 1,   
+                        Imaginary = 2  
+                    };  
+ComplexNumber value2 = new ComplexNumber() 
+                    {
+                        Real = 3,  
+                        Imaginary = 4  
+                    };   
 ComplexNumber result = proxy.Add(value1, value2);  
 Console.WriteLine("Add({0} + {1}i, {2} + {3}i) = {4} + {5}i",  
       value1.Real, value1.Imaginary, value2.Real, value2.Imaginary,   
@@ -117,7 +121,7 @@ Console.WriteLine("Add({0} + {1}i, {2} + {3}i) = {4} + {5}i",
   
  샘플을 실행하면 작업의 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Subtract(1 + 2i, 3 + 4i) = -2 + -2i  
 Multiply(2 + 3i, 4 + 7i) = -13 + 26i  

@@ -36,14 +36,12 @@ helpviewer_keywords:
 - UL literal type characters [Visual Basic]
 - literal types [Visual Basic], default
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 31dc703598fa6d92b3f312b2b5f0bf5fadab9c04
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 1922282ece4dd90c8f55c8dea20ef2866d8b357c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42911824"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181402"
 ---
 # <a name="type-characters-visual-basic"></a>입력 문자 (Visual Basic)
 
@@ -55,7 +53,7 @@ ms.locfileid: "42911824"
 
 Visual Basic의 집합을 제공 *식별자 형식 문자* 데이터 형식의 변수 또는 상수를 지정 하는 선언에서 사용할 수 있습니다. 다음 표에서 사용 예제를 사용할 수 있는 식별자 형식 문자를 보여 줍니다.
   
-|식별자 형식 문자|데이터 형식|예|  
+|식별자 형식 문자|데이터 형식|예제|  
 |-------------------------------|---------------|-------------|  
 |`%`|`Integer`|`Dim L%`|  
 |`&`|`Long`|`Dim M&`|  
@@ -90,7 +88,7 @@ A *리터럴* 데이터 형식의 특정 값의 텍스트 표현입니다.
 
 Visual Basic의 집합을 제공 *리터럴 형식 문자*, 리터럴을 것 이외의 데이터 형식 형태로 가정에 적용할 수 있는 나타냅니다. 리터럴의 끝에 문자를 추가 하 여이 작업을 수행 합니다. 다음 표에서 사용 예제를 사용할 수 있는 리터럴 형식 문자를 보여 줍니다.
   
-|리터럴 형식 문자|데이터 형식|예|  
+|리터럴 형식 문자|데이터 형식|예제|  
 |----------------------------|---------------|-------------|  
 |`S`|`Short`|`I = 347S`|
 |`I`|`Integer`|`J = 347I`|
@@ -113,7 +111,7 @@ Visual Basic의 집합을 제공 *리터럴 형식 문자*, 리터럴을 것 이
 
 컴파일러는 일반적으로 정수 리터럴 10 진수 (밑수 10) 수 시스템을 해석 합니다. 16 진수 (기 수 16) 숫자로 정수 리터럴을 정의할 수도 있습니다는 `&H` (밑 2) 이진 숫자로 접두사는 `&B` 접두사는 8 진수 (기 수 8)으로 숫자를 `&O` 접두사. 접두사 뒤의 숫자는 숫자 체계에 적합 해야 합니다. 다음 표에서이 설명 합니다.  
   
-|기 수|접두사|유효한 숫자 값|예|
+|기 수|접두사|유효한 숫자 값|예제|
 |-----------------|------------|------------------------|-------------|
 |16진수|`&H`|0-9와 A-f|`&HFFFF`|
 |이진 (밑 2)|`&B`|0-1|`&B01111100`|
@@ -146,7 +144,7 @@ Dim number As Integer = &H_C305_F860
 
  [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [값 형식과 참조 형식](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+ [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
  [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
  [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [변수 선언](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  

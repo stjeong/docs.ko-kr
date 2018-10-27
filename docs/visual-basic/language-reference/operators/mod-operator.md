@@ -12,14 +12,12 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic], Mod
 - math operators [Visual Basic]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 456c19fc8e28517a0662b58e338028e1c75cd8c8
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: a04a294d5505180a41edeba4643d25667a301c1d
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47424404"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50170811"
 ---
 # <a name="mod-operator-visual-basic"></a>Mod 연산자 (Visual Basic)
 두 숫자를 나누고 나머지만 반환 합니다.  
@@ -90,7 +88,7 @@ End Module
  부동 소수점 숫자를 사용 하 여 작업할 때 없다는 점에 주의 해야 하는 항상 정확한 10 진수 표현을 메모리에서. 값 비교 등의 특정 작업에서 예기치 않은 결과가 발생할 수 있습니다 및 `Mod` 연산자입니다. 자세한 내용은 [데이터 형식 문제 해결](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)합니다.  
   
 ## <a name="overloading"></a>오버로딩  
- `Mod` 연산자 *오버 로드 된*, 즉, 클래스 또는 구조체의 동작을 재정의할 수는 있습니다. 코드에 적용 되는 경우 `Mod` 클래스 또는 이러한 오버 로드를 포함 하는 구조체의 인스턴스에 사용할 다시 정의 된 동작을 알고 있어야 합니다. 자세한 내용은 [연산자 프로시저](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)합니다.  
+ `Mod` 연산자 *오버 로드 된*, 즉, 클래스 또는 구조체의 동작을 재정의할 수는 있습니다. 코드에 적용 되는 경우 `Mod` 클래스 또는 이러한 오버 로드를 포함 하는 구조체의 인스턴스에 사용할 다시 정의 된 동작을 알고 있어야 합니다. 자세한 내용은 [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)을 참조하세요.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 `Mod` 두 숫자를 나누고 나머지만 반환 하는 연산자입니다. 부동 소수점 숫자로 번호 이거나을 사용 하는 경우 나머지를 나타내는 부동 소수점 숫자로 만들어집니다.  

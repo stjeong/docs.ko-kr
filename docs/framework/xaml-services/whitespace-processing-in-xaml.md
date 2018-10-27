@@ -7,12 +7,12 @@ helpviewer_keywords:
 - white-space processing in XAML [XAML Services]
 - characters [XAML Services], East Asian
 ms.assetid: cc9cc377-7544-4fd0-b65b-117b90bb0b23
-ms.openlocfilehash: 89f8a4675b3edc23913549bc24f0d9ae16917519
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 3eea3d6c8a28ace0cc79cbfeb7eb3a7a52c9b8ab
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873442"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50047529"
 ---
 # <a name="white-space-processing-in-xaml"></a>공백에서 XAML 처리
 XAML에 대 한 언어 규칙에 따르면 해당 유효 공백에서 처리 되어야 합니다는 [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] 프로세서 구현 합니다. 이 항목에서는 이들 XAML 언어 규칙에 대해 설명합니다. 정의한 추가 공백 처리도 문서화 된 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] XAML 프로세서 및 serialization에 대 한 XAML 작성기 구현의 합니다.  
@@ -59,7 +59,7 @@ XAML에 대 한 언어 규칙에 따르면 해당 유효 공백에서 처리 되
   
 <a name="east_asian_characters"></a>   
 ## <a name="east-asian-characters"></a>동아시아 문자  
- "동아시아 문자"는 [!INCLUDE[TLA2#tla_unicode](../../../includes/tla2sharptla-unicode-md.md)] 문자 범위 U+20000~U+2FFFD 및 U+30000~U+3FFFD의 집합으로 정의됩니다. 이 하위 집합을 "한중일 한자"라고도 합니다. 자세한 내용은 [http://www.unicode.org](http://www.unicode.org/)를 참조하세요.  
+ "동아시아 문자"는 [!INCLUDE[TLA2#tla_unicode](../../../includes/tla2sharptla-unicode-md.md)] 문자 범위 U+20000~U+2FFFD 및 U+30000~U+3FFFD의 집합으로 정의됩니다. 이 하위 집합을 "한중일 한자"라고도 합니다. 자세한 내용은 <https://www.unicode.org>을 참조하세요.  
   
 <a name="whitespace_and_text_content_models"></a>   
 ## <a name="white-space-and-text-content-models"></a>공백 및 텍스트 콘텐츠 모델  

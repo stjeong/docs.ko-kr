@@ -5,12 +5,12 @@ helpviewer_keywords:
 - clients [WCF], running
 - WCF clients [WCF], running
 ms.assetid: a67884cc-1c4b-416b-8c96-5c954099f19f
-ms.openlocfilehash: 1eadb5008575a1a53d685db14d68e42d0dce1360
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9572f3e2c0cddf75daf343f250b16e94bc2b0dbf
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197528"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181672"
 ---
 # <a name="how-to-create-a-windows-communication-foundation-client"></a>방법: Windows Communication Foundation 클라이언트 만들기
 
@@ -38,7 +38,7 @@ Windows Communication Foundation (WCF) 응용 프로그램을 만드는 데 필�
 
    2. 호스트가 실행 되 면 마우스 오른쪽 단추로 클릭 합니다 **참조** 폴더에서 GettingStartedClient 프로젝트 아래의 **솔루션 탐색기** 선택한 **추가**  >   **서비스 참조**합니다.
 
-   3. 주소 상자에 다음 URL을 입력 합니다 **서비스 참조 추가** 대화 상자: [http://localhost:8000/GettingStartedClient/Service](http://localhost:8000/GettingStartedClient/Service)
+   3. 주소 상자에 다음 URL을 입력 합니다 **서비스 참조 추가** 대화 상자: [http://localhost:8000/GettingStarted/CalculatorService](http://localhost:8000/GettingStarted/CalculatorService)
 
    4. 선택할 **이동**합니다.
 
@@ -49,11 +49,11 @@ Windows Communication Foundation (WCF) 응용 프로그램을 만드는 데 필�
     명령줄 도구를 사용할 수도 있습니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 클라이언트 코드를 만들려면 적절 한 스위치를 사용 하 여 합니다. 다음 예제에서는 서비스에 대해 코드 파일 및 구성 파일을 생성합니다. 첫 번째 예와 VB에서 프록시를 생성 하는 방법 및 두 번째 C#에서 프록시를 생성 하는 방법을 보여 줍니다.
 
     ```shell
-    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStartedClient/service
+    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStarted/CalculatorService
     ```
 
     ```shell
-    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStartedClient/service
+    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStarted/CalculatorService
     ```
 
 ## <a name="next-steps"></a>다음 단계

@@ -6,13 +6,12 @@ helpviewer_keywords:
 - security [WCF]
 - Windows Communication Foundation, security
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-author: BrucePerlerMS
-ms.openlocfilehash: 2d4f2d67c8afd1687d9de506cf8a7616408069d2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 36a7943ec9a4bab361784b99c569dbf6c42f61e5
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47200791"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181415"
 ---
 # <a name="windows-communication-foundation-security"></a>Windows Communication Foundation 보안
 이 섹션의에서 항목에서는 Windows Communication Foundation (WCF) 보안 기능 및 보안 메시지를 유용 하 게 활용 하는 방법을 설명 합니다.  

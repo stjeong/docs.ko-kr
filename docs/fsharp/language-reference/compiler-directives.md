@@ -2,12 +2,12 @@
 title: 컴파일러 지시문(F#)
 description: 'F # 언어 전처리기 지시문, 조건부 컴파일 지시문, 줄 지시문 및 컴파일러 지시문에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: eeb33cd3b1d6a228555724a307bf2e2407c6b4c3
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5ac375ac5acd0609a6556f9e0481d169df827c98
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042462"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181370"
 ---
 # <a name="compiler-directives"></a>컴파일러 지시문
 
@@ -33,7 +33,7 @@ ms.locfileid: "44042462"
 
 ## <a name="conditional-compilation-directives"></a>조건부 컴파일 지시문
 
-이러한 지시문 중 하나에 의해 비활성화 된 코드는 Visual studio 코드 편집기에서 흐리게 표시 됩니다.
+이러한 지시문 중 하나에 의해 비활성화 된 코드는 Visual Studio 코드 편집기에서 흐리게 표시 됩니다.
 
 >[!NOTE]
 다른 언어에 있는 그대로 동일한 조건부 컴파일 지시문의 동작을 볼 수 없습니다. 예를 들어 기호가 포함된 부울 식은 사용할 수 없으며 `true` 및 `false`가 특별한 의미를 가지지도 않습니다. `if` 지시문에 사용하는 기호는 명령줄이나 프로젝트 설정에서 정의해야 합니다. `define` 전처리기 지시문이 없습니다.

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 4c90e914273de9f9121a979accdb4798b31e05cb
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
-ms.translationtype: MT
+ms.openlocfilehash: 947e443fc1561e86cf9c5fe7c19d4290cc364bd5
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041657"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50170382"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>대형 응답성 .NET Framework 응용 프로그램 작성
 이 문서에서는 규모가 큰 .NET Framework 앱이나 파일 또는 데이터베이스와 같이 많은 양의 데이터를 처리하는 앱의 성능을 향상시키기 위한 팁을 제공합니다. 이러한 팁은 C# 및 Visual Basic 컴파일러를 관리 코드로 다시 작성하면서 수집되었으며, C# 컴파일러의 실제 몇 가지 예를 포함하고 있습니다.  
@@ -23,8 +23,7 @@ ms.locfileid: "44041657"
   
  최종 사용자는 앱과 상호 작용할 때 앱이 응답성을 유지할 것을 기대합니다.  입력이나 명령 처리가 차단되어서는 안 됩니다.  사용자가 입력을 계속하면 도움말은 신속하게 나타나거나 표시되지 않아야 합니다.  앱은 앱이 느리다고 느끼게 하는 오랜 계산으로 UI 스레드를 차단하는 것을 피해야 합니다.  
   
- Roslyn 컴파일러에 대 한 자세한 내용은 참조는 [dotnet/roslyn](https://github.com/dotnet/roslyn) github 리포지토리.
- <!-- TODO: replace with link to Roslyn conceptual docs once that's published -->
+ Roslyn 컴파일러에 대 한 자세한 내용은 참조 하세요. [.NET 컴파일러 플랫폼 SDK](../../csharp/roslyn-sdk/index.md)합니다.
   
 ## <a name="just-the-facts"></a>팩트  
  성능을 조정하고 응답성 있는 .NET Framework 앱을 만들 때는 다음 팩트를 고려하세요.  
@@ -40,7 +39,7 @@ ms.locfileid: "44041657"
 ### <a name="fact-3-good-tools-make-all-the-difference"></a>팩트 3: 좋은 도구가 모든 차별화를 이뤄냄  
  좋은 도구를 사용하면 가장 큰 성능 문제(CPU, 메모리 또는 디스크)에 신속하게 파고들어 해당 병목 현상을 일으키는 코드를 찾을 수 있습니다.  Microsoft는 [Visual Studio 프로파일러](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone 분석 도구](https://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f) 및 [PerfView](https://www.microsoft.com/download/details.aspx?id=28567)와 같은 다양한 성능 도구를 제공합니다.  
   
- PerfView는 디스크 I/O, GC 이벤트 및 메모리와 같은 깊이 있는 문제에 집중하는 데 도움을 주는 놀랄 만큼 강력한 도구로서 무료입니다.  성능 관련 ETW([Windows용 이벤트 추적](../../../docs/framework/wcf/samples/etw-tracing.md)) 이벤트를 캡처하여 앱, 프로세스, 스택 및 스레드 단위 정보를 쉽게 볼 수 있습니다.  PerfView는 앱에서 할당하는 메모리의 양과 종류뿐만 아니라 함수 또는 호출 스택으로 인해 메모리가 할당되는 양이 어느 정도인지를 보여 줍니다. 자세한 내용은 도구에 포함된 다양한 도움말 항목, 데모 및 비디오(예: Channel 9의 [PerfView 자습서](http://channel9.msdn.com/Series/PerfView-Tutorial))를 참조하세요.  
+ PerfView는 디스크 I/O, GC 이벤트 및 메모리와 같은 깊이 있는 문제에 집중하는 데 도움을 주는 놀랄 만큼 강력한 도구로서 무료입니다.  성능 관련 ETW([Windows용 이벤트 추적](../../../docs/framework/wcf/samples/etw-tracing.md)) 이벤트를 캡처하여 앱, 프로세스, 스택 및 스레드 단위 정보를 쉽게 볼 수 있습니다.  PerfView는 앱에서 할당하는 메모리의 양과 종류뿐만 아니라 함수 또는 호출 스택으로 인해 메모리가 할당되는 양이 어느 정도인지를 보여 줍니다. 자세한 내용은 도구에 포함된 다양한 도움말 항목, 데모 및 비디오(예: Channel 9의 [PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial))를 참조하세요.  
   
 ### <a name="fact-4-its-all-about-allocations"></a>팩트 4: 결국은 모두 할당에 관련된 문제임  
  응답성 있는 .NET Framework 앱을 빌드하는 것은 거품 정렬 대신 빠른 정렬을 사용하는 등 알고리즘에 대한 문제라고 생각할 수 있지만 그렇지 않습니다.  응답성 있는 앱을 빌드하는 데 있어서 가장 큰 요인은 메모리를 할당하는 것이며, 특히 앱의 규모가 매우 크거나 앱이 많은 양의 데이터를 처리하는 경우에 그렇습니다.  
@@ -461,13 +460,14 @@ class Compilation { /*...*/
   
 -   결국은 모두 할당에 관련된 문제임 – 이 부분이 바로 컴파일러 플랫폼 팀이 새 컴파일러의 성능을 향상시키기 위해 대부분의 시간을 사용하는 부분입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [이 항목의 프레젠테이션 비디오](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
- [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
- [성능](../../../docs/framework/performance/index.md)  
- [.NET 성능 팁](https://msdn.microsoft.com/library/ms973839.aspx)  
- [Windows Phone 성능 분석 도구](https://msdn.microsoft.com/magazine/hh781024.aspx)  
- [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)  
- [채널 9 PerfView 자습서](http://channel9.msdn.com/Series/PerfView-Tutorial)  
- [개괄적인 성능 팁](https://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
- [GitHub의 dotnet/roslyn 리포지토리](https://github.com/dotnet/roslyn)
+## <a name="see-also"></a>참고자료
+
+- [이 항목의 프레젠테이션 비디오](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
+- [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
+- [성능](../../../docs/framework/performance/index.md)  
+- [.NET 성능 팁](https://msdn.microsoft.com/library/ms973839.aspx)  
+- [Windows Phone 성능 분석 도구](https://msdn.microsoft.com/magazine/hh781024.aspx)  
+- [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)  
+- [채널 9 PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial)  
+- [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
+- [GitHub의 dotnet/roslyn 리포지토리](https://github.com/dotnet/roslyn)

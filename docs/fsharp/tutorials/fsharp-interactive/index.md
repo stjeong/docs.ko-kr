@@ -1,13 +1,13 @@
 ---
 title: F# Interactive(fsi.exe) 참조
-description: 'F # Interactive (fsi.exe) 사용량 콘솔에 F # 코드를 대화형으로 실행 하거나 F # 스크립트를 실행 하에 대해 알아봅니다.'
+description: 에 대해 알아봅니다 하는 방법 F# Interactive (fsi.exe) 실행 하는 F# 대화형으로 나 콘솔에서 실행할 코드 F# 스크립트입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: b16ebcfe361ef50c7c7ba8510f01f6704e62ce3b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: MT
+ms.openlocfilehash: 459a2a4ba49ba0f55455797617781d010efecc0b
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33564887"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50170720"
 ---
 # <a name="interactive-programming-with-f"></a>F#을 사용한 대화형 프로그래밍 #
 
@@ -19,7 +19,15 @@ API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 
 
 F# Interactive(fsi.exe)는 콘솔에서 F# 코드를 대화형으로 실행하거나 F# 스크립트를 실행하는 데 사용됩니다. 즉, F# Interactive는 F# 언어에 대해 REPL(읽기, 평가, 인쇄 루프)을 실행합니다.
 
-콘솔에서 F# Interactive를 실행하려면 fsi.exe를 실행합니다.  Fsi.exe에 "c:\Program 파일 (x86) \Microsoft SDKs\F#\<버전 > \Framework\<버전 >\"합니다. 사용 가능한 명령줄 옵션에 대한 정보는 [F# Interactive Options](../../language-reference/fsharp-interactive-options.md)(F# Interactive 옵션)를 참조하세요.
+콘솔에서 F# Interactive를 실행하려면 fsi.exe를 실행합니다.  fsi.exe를 찾을 수 있습니다.
+
+```console
+C:\Program Files (x86)\Microsoft Visual Studio\2017\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
+```
+
+여기서 `sku` 중 하나는 `Community`, `Professional`, 또는 `Enterprise`합니다.
+
+사용 가능한 명령줄 옵션에 대한 정보는 [F# Interactive Options](../../language-reference/fsharp-interactive-options.md)(F# Interactive 옵션)를 참조하세요.
 
 Visual Studio를 통해 F# Interactive를 실행하려면 **F# Interactive**라는 레이블이 있는 적절한 도구 모음 단추를 클릭하거나 **Ctrl+Alt+F** 키를 사용합니다. 이렇게 하면 대화형 창(F# Interactive 세션을 실행하는 도구 창)이 열립니다. 대화형 창에서 실행할 코드를 선택하고 **Alt+Enter** 키 조합을 눌러도 됩니다. 그러면 레이블이 **F# Interactive**인 도구 창에서 F# Interactive가 시작됩니다. 이 키 조합을 사용할 때 편집기 창에 포커스가 있는지 확인합니다.
 
@@ -91,5 +99,5 @@ test
 
 |제목|설명|
 |-----|-----------|
-|[F# Interactive 옵션](../../language-reference/fsharp-interactive-options.md)|명령줄 구문 및 F # Interactive에 대 한 옵션을 설명 fsi.exe 합니다.|
+|[F# Interactive 옵션](../../language-reference/fsharp-interactive-options.md)|명령줄 구문에 설명 하 고에 대 한 옵션을 F# Interactive, fsi.exe 합니다.|
 |[F# Interactive 라이브러리 참조](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-interactive-library-reference)|F# Interactive에서 코드를 실행할 때 사용할 수 있는 라이브러리 기능에 대해 설명합니다.|

@@ -2,12 +2,12 @@
 title: 단방향
 ms.date: 03/30/2017
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-ms.openlocfilehash: 25720285e29641c3c040444cb643af2790f10d3b
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 9a8af4bcdc76afd96ada595a7234cbc5e0250dfc
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43740729"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50180863"
 ---
 # <a name="one-way"></a>단방향
 이 샘플에서는 단방향 서비스 작업이 있는 서비스 계약을 보여 줍니다. 클라이언트는 양방향 서비스 작업에서처럼 서비스 작업이 완료될 때까지 대기하지 않습니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 사용 하는 `wsHttpBinding` 바인딩. 이 샘플의 서비스는 자체적으로 호스팅되는 콘솔 응용 프로그램으로서 이를 통해 요청을 수신하고 처리하는 서비스를 볼 수 있습니다. 클라이언트 역시 콘솔 응용 프로그램입니다.  
@@ -17,7 +17,7 @@ ms.locfileid: "43740729"
   
  단방향 서비스 계약을 만들려면 다음 샘플 코드에서와 같이 서비스 계약을 정의하고, <xref:System.ServiceModel.OperationContractAttribute> 클래스를 각 작업에 적용하여, <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>를 `true`로 설정합니다.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOneWayCalculator  
 {  
@@ -34,8 +34,8 @@ public interface IOneWayCalculator
   
  클라이언트가 서비스 작업이 완료될 때까지 기다리지 않음을 보여 주기 위해 이 샘플의 서비스 코드는 다음 샘플 코드에서와 같이 5초 지연을 구현합니다.  
   
-```  
-/ This service class implements the service contract.  
+```csharp
+// This service class implements the service contract.  
 // This code writes output to the console window.  
  [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple,  
     InstanceContextMode = InstanceContextMode.PerCall)]  
@@ -58,7 +58,7 @@ public class CalculatorService : IOneWayCalculator
   
  클라이언트가 서비스보다 먼저 종료하므로 단방향 서비스 작업이 완료될 때까지 클라이언트가 기다리지 않음을 보여 줍니다. 클라이언트 출력은 다음과 같습니다.  
   
-```  
+```console  
 Add(100,15.99)  
 Subtract(145,76.54)  
 Multiply(9,81.25)  
@@ -69,7 +69,7 @@ Press <ENTER> to terminate client.
   
  서비스 출력은 다음과 같습니다.  
   
-```  
+```console  
 The service is ready.  
 Press <ENTER> to terminate service.  
   

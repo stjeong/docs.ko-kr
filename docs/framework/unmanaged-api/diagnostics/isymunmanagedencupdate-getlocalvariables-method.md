@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 82e657e91e586d7fe409646ea4fb8946c026e84c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: a53493d666cb16fcc9b407ca3a46072afa306b97
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424341"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50182478"
 ---
 # <a name="isymunmanagedencupdategetlocalvariables-method"></a>ISymUnmanagedENCUpdate::GetLocalVariables 메서드
 지역 변수를 가져옵니다.  
@@ -38,21 +38,21 @@ HRESULT GetLocalVariables(
     [out] ULONG        *pceltFetched);  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+## <a name="parameters"></a>매개 변수  
  `mdMethodToken`  
  [in] 메서드의 메타 데이터 토큰입니다.  
   
  `cLocals`  
- [in] A `ULONG` 크기를 표시 하는 `rgLocals` 매개 변수입니다.  
+ [in] A `ULONG` 의 크기를 나타내는 `rgLocals` 매개 변수입니다.  
   
  `rgLocals`  
- [out] 반환된 된 배열 <!--zz<xref:ISymUnmanagedVariable>--> `ISymUnmanagedVariable` 인스턴스.  
+ [out] 반환된 된 배열 [ISymUnmanagedVariable](isymunmanagedvariable-interface.md) 인스턴스.  
   
  `pceltFetched`  
- [out] 에 대 한 포인터는 `ULONG` 의 크기를 받는 `rgLocals` 지역 변수를 포함 하는 데 필요한 버퍼입니다.  
+ [out] 에 대 한 포인터를 `ULONG` 의 크기를 받는 `rgLocals` 지역 변수를 포함 하는 데 필요한 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **Header:** CorSym.idl, CorSym.h  

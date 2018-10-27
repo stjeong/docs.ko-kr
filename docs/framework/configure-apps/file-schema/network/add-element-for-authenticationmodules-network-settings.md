@@ -10,14 +10,12 @@ helpviewer_keywords:
 - <authenticationModules>, add element
 - <add> element, authenticationModules
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 4a9bcc6cd5d2bbf30f463da0a51e1bccbcd5a3f1
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 0d7be1d525ff0f4d1e23155f350155837394297a
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873062"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181084"
 ---
 # <a name="ltaddgt-element-for-authenticationmodules-network-settings"></a>&lt;추가&gt; authenticationModules (네트워크 설정)에 대 한 요소
 응용 프로그램에 인증 모듈을 추가합니다.  
@@ -84,6 +82,6 @@ ms.locfileid: "48873062"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.IAuthenticationModule>  
- <xref:System.Net.AuthenticationManager>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.IAuthenticationModule>  
+- <xref:System.Net.AuthenticationManager>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

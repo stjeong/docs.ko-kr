@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a7b138aec8a64683ca4b42cbbc8bd3584c06cc90
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c1fa27a713890f2988a2fcd7983630080dc21d05
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397051"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50170343"
 ---
 # <a name="missingruntimeartifactexception-class-net-native"></a>MissingRuntimeArtifactException 클래스(.NET 네이티브)
 **Windows 10의 Windows 앱용 .NET, [!INCLUDE[net_native](../../../includes/net-native-md.md)]에만 해당**  
@@ -63,20 +63,20 @@ ms.locfileid: "33397051"
   
 ## <a name="events"></a>이벤트  
   
-|Event|설명|  
+|이벤트(event)|설명|  
 |-----------|-----------------|  
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|예외에 대한 serialize된 데이터를 포함하는 예외 상태 개체를 만들기 위해 예외를 serialize할 때 발생합니다. <xref:System.Exception?displayProperty=nameWithType>에서 상속됩니다.|  
   
 ## <a name="usage-details"></a>자세한 용도  
  형식 또는 멤버의 메타데이터는 있는데 해당 구현은 제거된 경우 형식을 인스턴스화하거나 형식 멤버를 호출하려고 하면 `MissingRuntimeArtifactException` 예외가 throw됩니다.  
   
- 메서드를 동적으로 실행하기 위한 구현 코드와 메타데이터를 앱에서 런타임에 사용할 수 있는지 여부는 런타임 지시문(XML 구성) 파일인 *.rd.xml에 의해 정의됩니다. 앱에서 이 예외가 throw되지 않도록 하려면 형식 또는 형식 멤버에 필요한 메타데이터가 런타임에 제공되도록 \*.rd.xml을 수정해야 합니다. \*.rd.xml 파일의 형식에 대한 자세한 내용은 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 확인하세요.  
+ 런타임 지시문 (XML 구성) 파일을 동적으로 메서드를 실행 하기 위한 구현 코드와 메타 데이터를 사용할 수 있는지를 앱에 런타임 시 정의한 \*. rd.xml 합니다. 앱에서 이 예외가 throw되지 않도록 하려면 형식 또는 형식 멤버에 필요한 메타데이터가 런타임에 제공되도록 \*.rd.xml을 수정해야 합니다. \*.rd.xml 파일의 형식에 대한 자세한 내용은 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 확인하세요.  
   
 > [!IMPORTANT]
->  이 예외는 응용 프로그램에 필요한 구현 코드를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 일반적으로는 런타임 지시문 파일(*.rd.xml 파일)에서 프로그램 요소에 대해 적절한 `Activate` 또는 `Dynamic` 정책을 지정하여 이 예외를 방지합니다. 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
+>  이 예외는 응용 프로그램에 필요한 구현 코드를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 적절 한을 지정 하 여이 예외를 제거 하는 일반적으로 `Activate` 나 `Dynamic` 런타임 지시문 파일에서 프로그램 요소에 대 한 정책 (\*..rd.xml 파일). 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
 >   
->  -   형식의 경우 [MissingMetadataException 문제 해결사](http://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
-> -   메서드의 경우 [MissingMetadataException 문제 해결사](http://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
+> - 형식의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
+> - 메서드의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
   
  `MissingRuntimeArtifactException` 클래스는 고유한 멤버를 포함하지 않으며 모든 멤버는 <xref:System.MemberAccessException>에서 상속됩니다.  
   

@@ -8,14 +8,12 @@ helpviewer_keywords:
 - mailSettings element
 - <mailSettings> element
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: f3a706edaeba551139368568a7467e0cdab3524c
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: e23b9e1fdf8a348d0d38575db8112b37c8dd9b69
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47208596"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50048764"
 ---
 # <a name="ltmailsettingsgt-element-network-settings"></a>&lt;mailSettings&gt; 요소 (네트워크 설정)
 메일 보내기 옵션을 구성 합니다.  

@@ -2,12 +2,12 @@
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: 730b1188a95d0e35d7431d43884e867e5520585e
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 6d568c1c78677b53f4b79f5aefd3a56d71c2685f
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48838980"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50182933"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 서비스 호스트를 생성하는 데 사용되는 팩터리를 호스트할 서비스 및 .svc 파일에 제공된 호스팅 코드에 액세스하거나 이를 컴파일하는 데 필요한 다른 프로그래밍 요소에 연결합니다.  
@@ -43,7 +43,7 @@ CodeBehind = "CodeBehind"%>
 ## <a name="remarks"></a>설명  
  <xref:System.ServiceModel.ServiceHost> 서비스를 호스트 하는 데 Windows Communication Foundation (WCF) 프로그래밍 모델에서 확장성 지점입니다. 팩터리 패턴은 호스팅 환경에서 직접 인스턴스화하면 안 되는 다형 형식이므로 <xref:System.ServiceModel.ServiceHost>를 인스턴스화하는 데 사용됩니다.  
   
- 기본 구현에서는 <xref:System.ServiceModel.Activation.ServiceHostFactory>를 사용하여 <xref:System.ServiceModel.ServiceHost>의 인스턴스를 만듭니다. 하지만에 팩터리 구현의 CLR 형식 이름을 지정 하 여 사용자의 고유 팩토리 (파생된 호스트를 반환 하나)를 제공할 수 있습니다 합니다 [ @ServiceHost ](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) 지시문입니다.  
+ 기본 구현에서는 <xref:System.ServiceModel.Activation.ServiceHostFactory>를 사용하여 <xref:System.ServiceModel.ServiceHost>의 인스턴스를 만듭니다. 하지만에 팩터리 구현의 CLR 형식 이름을 지정 하 여 사용자의 고유 팩토리 (파생된 호스트를 반환 하나)를 제공할 수 있습니다 합니다 [ \@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) 지시문입니다.  
   
  하면 고유의 사용자 지정 서비스 호스트 팩터리를 사용 하려면 기본 팩터리 대신 방금에 형식 이름을 제공 합니다 [ @ServiceHost ](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) 다음과 같은 지시문:  
   

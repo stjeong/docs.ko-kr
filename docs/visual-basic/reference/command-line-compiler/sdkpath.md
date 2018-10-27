@@ -9,14 +9,12 @@ helpviewer_keywords:
 - /sdkpath compiler option [Visual Basic]
 - sdkpath compiler option [Visual Basic]
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 162c7d58350c381ec667e8a4cd11c03e83fcdf44
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: bf665082f079901ec45122ce7797090b7519fafe
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925687"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50046801"
 ---
 # <a name="-sdkpath"></a>-sdkpath
 Mscorlib.dll 및 Microsoft.VisualBasic.dll의 위치를 지정 합니다.  
@@ -39,7 +37,7 @@ Mscorlib.dll 및 Microsoft.VisualBasic.dll의 위치를 지정 합니다.
   
  컴파일러를 사용 하 여 Visual Basic 런타임 라이브러리에 대 한 참조 없이 컴파일하도록 할지 지정할 수 있습니다는 `-vbruntime` 컴파일러 옵션입니다. 자세한 내용은 [-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 `Myfile.vb` 사용 하 여 합니다 [!INCLUDE[Compact](~/includes/compact-md.md)]의 기본 설치 디렉터리에서 찾을 Mscorlib.dll 및 Microsoft.VisualBasic.dll의 버전을 사용 하는 [!INCLUDE[Compact](~/includes/compact-md.md)] C 드라이브에 합니다. 최신 버전의 사용은 일반적으로 [!INCLUDE[Compact](~/includes/compact-md.md)]합니다.  
   
 ```console

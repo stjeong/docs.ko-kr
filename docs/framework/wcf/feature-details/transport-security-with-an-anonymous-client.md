@@ -5,13 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
-author: BrucePerlerMS
-ms.openlocfilehash: 54391356648a8f4a8c7175f690b00fd88393b712
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 858ceb217ce30708a7d24c62ca18f8f59ba49d4c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48914168"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183069"
 ---
 # <a name="transport-security-with-an-anonymous-client"></a>익명 클라이언트를 사용하는 전송 보안
 이 Windows Communication Foundation (WCF) 시나리오에서는 기밀성 및 무결성을 보장 하려면 전송 보안 (HTTPS)을 사용 합니다. 서버는 SSL(Secure Sockets Layer) 인증서로 인증되어야 하며 클라이언트는 서버의 인증서를 신뢰해야 합니다. 클라이언트는 어떤 메커니즘으로도 인증되지 않는 익명 클라이언트입니다.  

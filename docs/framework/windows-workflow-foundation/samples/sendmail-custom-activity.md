@@ -2,12 +2,12 @@
 title: SendMail 사용자 지정 활동
 ms.date: 03/30/2017
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
-ms.openlocfilehash: f51914ae01ea680ae09be8080cce1aa866bd6ec7
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 4cd2ed8c80bd5ab4c4e784f4c5c86a58ecceda2f
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845257"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181292"
 ---
 # <a name="sendmail-custom-activity"></a>SendMail 사용자 지정 활동
 이 샘플에서는 워크플로 응용 프로그램 내에서 사용하기 위해 <xref:System.Activities.AsyncCodeActivity>로부터 파생되는 사용자 지정 활동을 만들어 SMTP를 사용하여 메일을 보내는 방법을 보여 줍니다. 기능을 사용 하는 사용자 지정 활동 <xref:System.Net.Mail.SmtpClient> 비동기적으로 전자 메일을 보내려면 및 인증 된 메일을 보냅니다. 또한 테스트 모드, 토큰 바꾸기, 파일 템플릿 및 테스트 드롭 경로와 같은 몇 가지 최종 사용자 기능도 제공합니다.  
@@ -84,7 +84,7 @@ new SendMail
 ```  
   
 ### <a name="sending-mails-in-testing-mode"></a>테스트 모드에서 메일 보내기  
- 이 코드 조각은 두 개의 테스트 속성을 설정 하는 방법을 보여 줍니다: 설정 하 여 `TestMailTo` 모든 메시지를 보낼 john.doe@contoso.con (To, Cc, Bcc 값의 관계) 없이 합니다. TestDropPath를 설정하면 나가는 모든 전자 메일이 제공된 경로에도 기록됩니다. 이러한 속성은 서로 관련되어 있지 않으므로 독립적으로 설정할 수 있습니다.  
+ 이 코드 조각은 두 개의 테스트 속성을 설정 하는 방법을 보여 줍니다: 설정 하 여 `TestMailTo` 모든 메시지를 보낼 `john.doe@contoso.con` (To, Cc, Bcc 값의 관계) 없이 합니다. TestDropPath를 설정하면 나가는 모든 전자 메일이 제공된 경로에도 기록됩니다. 이러한 속성은 서로 관련되어 있지 않으므로 독립적으로 설정할 수 있습니다.  
   
 ```  
 new SendMail  
