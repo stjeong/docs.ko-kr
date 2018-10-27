@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 85bb386f2adbf02a8fde891c65c78b8e8d4537b2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ce84cf888145c85361d82e9b4c1d2c8c2db4fd5b
+ms.sourcegitcommit: 4621e67f69e7a9503ea93313ff60d69683207889
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33391279"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49995051"
 ---
 # <a name="net-framework-guide"></a>.NET Framework 가이드
 
@@ -28,7 +28,7 @@ ms.locfileid: "33391279"
 
 사용자와 개발자 모두를 위한 .NET Framework에 대한 일반적인 소개는 [시작](../../docs/framework/get-started/index.md)을 참조하십시오. .NET Framework의 아키텍처 및 주요 기능에 대한 소개는 [개요](../../docs/framework/get-started/overview.md)를 참조하세요.  
 
-[Windows 컨테이너](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview)를 통해 Docker와 함께 .NET Framework를 사용할 수 있습니다. [Docker를 통해 .NET Framework 응용 프로그램 배포](./docker/index.md)를 참조하여 Docker 컨테이너에서 응용 프로그램을 실행하는 방법을 알아봅니다.
+[Windows 컨테이너](/virtualization/windowscontainers/about/)를 통해 Docker와 함께 .NET Framework를 사용할 수 있습니다. [Docker를 통해 .NET Framework 응용 프로그램 배포](./docker/index.md)를 참조하여 Docker 컨테이너에서 응용 프로그램을 실행하는 방법을 알아봅니다.
 
 ## <a name="installation"></a>설치
 

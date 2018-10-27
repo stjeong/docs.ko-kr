@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f38ed31748560292753789e38595a5e30f6ea08a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a650fa0340ce63a573074746eef60994e2254c86
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509656"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453231"
 ---
 # <a name="deploying-the-net-framework-and-applications"></a>.NET Framework 및 응용 프로그램 배포
 이 문서는 응용 프로그램과 함께 .NET Framework 배포를 시작하는 데 도움이 됩니다. 대부분의 정보는 개발자, OEM 및 엔터프라이즈 관리자를 위한 것입니다. 컴퓨터에 .NET Framework를 설치하려는 사용자는 [.NET Framework 설치](~/docs/framework/install/index.md)를 읽어야 합니다.  
@@ -167,4 +167,4 @@ ms.locfileid: "43509656"
 |[방법: .NET Framework 4.5 설치 관리자에서 진행률 가져오기](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)|설치 진행 상황을 자체적으로 표시하면서 .NET Framework 설치 프로세스를 자동으로 시작하고 추적하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [개발 가이드](../../../docs/framework/development-guide.md)
+- [개발 가이드](../../../docs/framework/development-guide.md)

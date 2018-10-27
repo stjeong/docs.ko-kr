@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 99da0b0367270c4cea470a23ea97f0165a712a9b
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: 6d241f0f0c10be4a73c7ac55930e5dd24ef0b1e2
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349071"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453137"
 ---
 # <a name="get-started-with-the-net-framework"></a>.NET Framework 시작
 
@@ -89,7 +89,7 @@ Windows 8 이전 버전에서 .NET Framework를 제거하려는 경우에는 항
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET Framework 가이드](../../../docs/framework/index.md)   
-[새로운 기능](../../../docs/framework/whats-new/index.md)   
-[.NET API 브라우저](/dotnet/api/)   
-[개발 가이드](../../../docs/framework/development-guide.md)
+- [.NET Framework 가이드](../../../docs/framework/index.md)   
+- [새로운 기능](../../../docs/framework/whats-new/index.md)   
+- [.NET API 브라우저](/dotnet/api/)   
+- [개발 가이드](../../../docs/framework/development-guide.md)

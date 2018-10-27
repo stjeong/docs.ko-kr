@@ -5,12 +5,12 @@ helpviewer_keywords:
 - interfaces [C#]
 - C# language, interfaces
 ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
-ms.openlocfilehash: fba595cca4d96fc9cd0f0966f45d1668181b2ec9
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.openlocfilehash: 1365b3e0dbc2ae095698b66f2b527301fe474a00
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46321407"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49454436"
 ---
 # <a name="interfaces-c-programming-guide"></a>인터페이스(C# 프로그래밍 가이드)
 
@@ -36,7 +36,7 @@ ms.locfileid: "46321407"
   
 클래스 또는 구조체에서 인터페이스를 구현하는 경우 인터페이스에서 정의하는 모든 멤버에 대해 구현을 제공해야 합니다. 인터페이스 자체는 클래스 또는 구조체에서 기본 클래스 기능을 상속하는 방식으로 상속할 수 있는 기능을 제공하지 않습니다. 그러나 기본 클래스에서 인터페이스를 구현하는 경우에는 기본 클래스에서 파생되는 모든 클래스가 해당 구현을 상속합니다.  
   
-다음 예제에서는 IEquatable<T\> 인터페이스의 구현을 보여 줍니다. 구현 클래스 `Car`는 <xref:System.IEquatable%601.Equals%2A> 메서드의 구현을 제공해야 합니다.  
+다음 예제에서는 <xref:System.IEquatable%601> 인터페이스의 구현을 보여 줍니다. 구현 클래스 `Car`는 <xref:System.IEquatable%601.Equals%2A> 메서드의 구현을 제공해야 합니다.  
   
 [!code-csharp[csProgGuideInheritance#48](../classes-and-structs/codesnippet/CSharp/interfaces_2.cs)]  
   

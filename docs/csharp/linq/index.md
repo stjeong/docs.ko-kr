@@ -3,12 +3,12 @@ title: C#의 LINQ(Language-Integrated Query)
 description: C#의 LINQ(Language-Integrated Query) 소개
 ms.date: 11/30/2016
 ms.assetid: 007cc736-f5cf-4919-b99b-0c00ab2814ce
-ms.openlocfilehash: 89630245a33c03851c7607b3b299eb7b9c477177
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 18dafaf590697a3c9d669f346c956fd4df3378f0
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404582"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50038424"
 ---
 # <a name="language-integrated-query-linq"></a>LINQ(Language-Integrated Query)
 
@@ -30,7 +30,7 @@ LINQ(Language-Integrated Query)는 C# 언어에 직접 쿼리 기능을 통합�
 
 - 쿼리는 쿼리 변수를 반복할 때까지(예: `foreach` 문) 실행되지 않습니다. 자세한 내용은 [LINQ 쿼리 소개](../programming-guide/concepts/linq/introduction-to-linq-queries.md)를 참조하세요.
 
-- 컴파일 타임에 쿼리 식은 C# 사양에 명시된 규칙에 따라 표준 쿼리 연산자 메서드 호출으로 변환됩니다. 쿼리 구문을 사용하여 표현할 수 있는 모든 쿼리는 메서드 구문으로도 표현할 수 있습니다. 그러나 대부분의 경우 쿼리 구문이 더 읽기 쉽고 간결합니다. 자세한 내용은 [C# 언어 사양](../language-reference/language-specification/index.md) 및 [표준 쿼리 연산자 개요](../programming-guide/concepts/linq/standard-query-operators-overview.md)를 참조하세요.
+- 컴파일 타임에 쿼리 식은 C# 사양에 명시된 규칙에 따라 표준 쿼리 연산자 메서드 호출으로 변환됩니다. 쿼리 구문을 사용하여 표현할 수 있는 모든 쿼리는 메서드 구문으로도 표현할 수 있습니다. 그러나 대부분의 경우 쿼리 구문이 더 읽기 쉽고 간결합니다. 자세한 내용은 [C# 언어 사양](~/_csharplang/spec/expressions.md#query-expressions) 및 [표준 쿼리 연산자 개요](../programming-guide/concepts/linq/standard-query-operators-overview.md)를 참조하세요.
 
 - 일반적으로 LINQ 쿼리를 작성하는 경우 가능하면 쿼리 구문을 사용하고 필요한 경우 메서드 구문을 사용하는 것이 좋습니다. 두 개의 다른 폼 간에 의미 체계 또는 성능상의 차이는 없습니다. 쿼리 식이 메서드 구문으로 작성된 동급의 식보다 읽기 쉬운 경우가 많습니다.
 

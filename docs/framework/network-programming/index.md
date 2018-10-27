@@ -7,14 +7,12 @@ helpviewer_keywords:
 - Internet, .NET Framework Internet services
 - Network Resources
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: b949c9fd50ee4d09d7237bc14898a1b55689f2f4
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 1d35951aef3692d82bdfa648df48eb8c1bca88ff
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582634"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50045128"
 ---
 # <a name="network-programming-in-the-net-framework"></a>.NET Framework의 네트워크 프로그래밍
 Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합할 수 있는 계층적이고 확장 가능하며 관리되는 인터넷 서비스 구현을 제공합니다. 네트워크 응용 프로그램은 플러그 가능한 프로토콜을 바탕으로 빌드하여 새 인터넷 프로토콜을 자동으로 이용하거나, Windows 소켓 인터페이스의 관리되는 구현을 사용하여 소켓 수준에서 네트워크 작업을 수행할 수 있습니다.  
@@ -43,7 +41,7 @@ Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합�
  네트워크 추적을 사용하여 메서드 호출과 관리되는 응용 프로그램에서 생성되는 네트워크 트래픽에 대한 정보를 얻는 방법을 설명합니다.  
   
  [네트워크 응용 프로그램에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
- <xref:System.Net.WebClient?displayProperty=nameWithType>, <xref:System.Net.WebRequest?displayProperty=nameWithType> 및 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> 클래스를 사용하는 응용 프로그램에 대한 캐싱을 사용하는 방법을 설명합니다.  
+ <xref:System.Net.WebClient?displayProperty=nameWithType>, <xref:System.Net.WebRequest?displayProperty=nameWithType>및 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> 클래스를 사용하는 응용 프로그램에 대한 캐싱을 사용하는 방법을 설명합니다.  
   
  [네트워크 프로그래밍의 보안](../../../docs/framework/network-programming/security-in-network-programming.md)  
  표준 인터넷 보안 및 인증 기술을 사용하는 방법을 설명합니다.  
@@ -73,13 +71,13 @@ Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합�
  PNRP를 기반으로 빌드되는 피어 투 피어 공동 작업을 지원하기 위해 버전 3.5에 추가된 지원 기능을 설명합니다. 이런 새로운 기능은 <xref:System.Net.PeerToPeer.Collaboration?displayProperty=nameWithType> 네임스페이스에 의해 지원됩니다.  
   
  [버전 3.5 SP1에서 HttpWebRequest에 대한 NTLM 인증 변경 내용](../../../docs/framework/network-programming/changes-to-ntlm-authentication-for-httpwebrequest-in-version-3-5-sp1.md)  
- 버전 3.5 SP1에서 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType>, <xref:System.Net.HttpListener?displayProperty=nameWithType>, <xref:System.Net.Security.NegotiateStream?displayProperty=nameWithType> 및 System.Net 네임스페이스의 관련 클래스에 의해 통합 Windows 인증이 처리되는 방식에 영향을 미치는 보안 변경 사항을 설명합니다.  
+ 버전 3.5 SP1에서 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType>, <xref:System.Net.HttpListener?displayProperty=nameWithType>, <xref:System.Net.Security.NegotiateStream?displayProperty=nameWithType>및 System.Net 네임스페이스의 관련 클래스에 의해 통합 Windows 인증이 처리되는 방식에 영향을 미치는 보안 변경 사항을 설명합니다.  
   
  [확장된 보호를 사용하는 Windows 통합 인증](../../../docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md)  
  <xref:System.Net.HttpWebRequest?displayProperty=nameWithType>, <xref:System.Net.HttpListener?displayProperty=nameWithType>, <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>, <xref:System.Net.Security.SslStream?displayProperty=nameWithType>, <xref:System.Net.Security.NegotiateStream?displayProperty=nameWithType>, 그리고 <xref:System.Net?displayProperty=nameWithType> 및 관련 네임스페이스의 관련 클래스에 의해 통합 Windows 인증이 처리되는 방식에 영향을 미치는 확장된 보호를 위해 향상된 기능을 설명합니다.  
   
  [IPv6 및 Teredo를 사용하는 NAT 통과](../../../docs/framework/network-programming/nat-traversal-using-ipv6-and-teredo.md)  
- IPv6 및 Teredo를 사용하여 NAT 통과를 지원하기 위해 <xref:System.Net?displayProperty=nameWithType>, <xref:System.Net.NetworkInformation?displayProperty=nameWithType> 및 <xref:System.Net.Sockets?displayProperty=nameWithType> 네임스페이스에 추가된 향상된 기능을 설명합니다.  
+ IPv6 및 Teredo를 사용하여 NAT 통과를 지원하기 위해 <xref:System.Net?displayProperty=nameWithType>, <xref:System.Net.NetworkInformation?displayProperty=nameWithType>및 <xref:System.Net.Sockets?displayProperty=nameWithType> 네임스페이스에 추가된 향상된 기능을 설명합니다.  
   
  [Windows 스토어 앱에 대한 네트워크 격리](../../../docs/framework/network-programming/network-isolation-for-windows-store-apps.md)  
  <xref:System.Net>, <xref:System.Net.Http>및 <xref:System.Net.Http.Headers> 네임스페이스의 클래스가 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에서 사용될 때 네트워크 격리가 미치는 영향을 설명합니다.  

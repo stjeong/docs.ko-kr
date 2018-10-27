@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 08/31/2018
-ms.openlocfilehash: 38f638b76a38c470daf51cb7be8566feb4b6362f
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 7113a229726368a65f4372b14c28da1165c22eee
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121365"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50047704"
 ---
 # <a name="net-microservices-architecture-for-containerized-net-applications"></a>.NET 마이크로 서비스: 컨테이너화된 .NET 응용 프로그램을 위한 아키텍처
 
@@ -27,9 +27,9 @@ ms.locfileid: "49121365"
 
 * 참조 응용 프로그램인 [GitHub의 eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) 클론/포크
  
-* [Channel 9의 소개 비디오](http://aka.ms/microservices-video) 보기
+* [Channel 9의 소개 비디오](https://aka.ms/microservices-video) 보기
 
-* 지금 바로 [마이크로 서비스 아키텍처](http://aka.ms/MicroservicesArchitecture) 알아보기
+* 지금 바로 [마이크로 서비스 아키텍처](https://aka.ms/MicroservicesArchitecture) 알아보기
 
 ## <a name="introduction"></a>소개
 

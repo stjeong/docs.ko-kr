@@ -4,12 +4,12 @@ description: .NET Core 버전 관리의 작동 방식을 이해합니다.
 author: bleroy
 ms.author: mairaw
 ms.date: 07/26/2018
-ms.openlocfilehash: 0ce64aa266f8e1de2c2cefd366bcbfa3f5cfc8f0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9f77709abf59d5346bf5e3c6f512cfabbf9e50de
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518604"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50047438"
 ---
 # <a name="net-core-versioning"></a>.NET Core 버전 관리
 
@@ -43,7 +43,7 @@ SDK 버전 번호의 세 번째 위치는 보조 및 패치 번호를 모두 전
 
 ## <a name="semantic-versioning"></a>유의적 버전
 
-.NET Core *런타임*은 [유의적 버전(SemVer)](http://semver.org/)을 대략적으로 준수하며, `MAJOR.MINOR.PATCH` 버전 관리를 사용하고, 버전 번호의 다양한 부분으로 변경의 수준 및 종류를 설명합니다.
+.NET Core *런타임*은 [유의적 버전(SemVer)](https://semver.org/)을 대략적으로 준수하며, `MAJOR.MINOR.PATCH` 버전 관리를 사용하고, 버전 번호의 다양한 부분으로 변경의 수준 및 종류를 설명합니다.
 
 ```
 MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
