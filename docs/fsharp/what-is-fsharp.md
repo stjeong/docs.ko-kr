@@ -1,6 +1,6 @@
 ---
-title: 'F#이란'
-description: 'F# 프로그래밍 언어란 무엇인지 그리고 F# 프로그래밍이 어떤 것인지에 대해 배웁니다. 다양한 데이터 타입들, 함수들 그리고 이것들이 어떻게 함께 어울리는지에 대해 배웁니다.'
+title: F#이란
+description: '어떤 F # 프로그래밍 언어는 및와 같은 새로운 F # 프로그래밍에 알아봅니다. 다양 한 데이터 형식, 함수 및 서로 연결 되는 방법에 대해 알아봅니다.'
 ms.date: 08/03/2018
 ms.openlocfilehash: 193747f380c61a387ed79ecca6abbcd90ee74376
 ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/06/2018
 ms.locfileid: "43863298"
 ---
-# <a name="what-is-f"></a>F#이란
+# <a name="what-is-f"></a>F#이란 #
 
 F#은 정확하고 유지 보수가 쉬운 코드를 만들어주는 함수형 프로그래밍 언어입니다.
 
@@ -47,7 +47,7 @@ F#은 다음과 같은 다양한 기능들이 있습니다.
 
 기능의 전체 집합에 설명 되어는 [F # 언어 참조](language-reference/index.md)합니다.
 
-## <a name="rich-data-types"></a>다양 한 데이터 타입
+## <a name="rich-data-types"></a>다양 한 데이터 형식
 
 [레코드](language-reference/records.md) 및 [식별된 공용체](language-reference/discriminated-unions.md)와 같은 데이터 타입들을 사용하면 복잡한 데이터와 도메인들을 표현할 수 있습니다.
 
@@ -74,9 +74,9 @@ type WithdrawalResult =
 
 F# 레코드와 식별된 공용체는 기본적으로 null이 아니며 변경 불가능하며 비교할 수 있으므로 매우 쉽게 사용할 수 있습니다.
 
-## <a name="enforced-correctness-with-functions-and-pattern-matching"></a>함수 및 패턴 매칭을 통한 정확성 강화
+## <a name="enforced-correctness-with-functions-and-pattern-matching"></a>함수 및 패턴 일치를 사용 하 여 적용된 정확성
 
-F# 함수는 실제로 선언하기 쉽고 강력합니다. [패턴 매칭](language-reference/pattern-matching.md)과 함께 사용하면 컴파일러가 정확성을 적용하는 동작을 정의할 수 있습니다.
+F # 함수를 쉽게 선언할 수는 실제로 강력한입니다. 함께 사용 하면 [패턴 일치](language-reference/pattern-matching.md), 인 정확성 컴파일러에 의해 적용 되는 동작을 정의할 수 있습니다.
 
 ```fsharp
 // Returns a WithdrawalResult
@@ -93,7 +93,7 @@ let handleWithdrawal amount =
     | UndisclosedFailure -> printfn "Failed: unknown :("
 ```
 
-F# 함수는 또한 일급 함수이기 때문에 매개 변수로 전달되고 다른 함수에서 반환될 수 있습니다.
+F # 함수는 첫 번째 클래스를 매개 변수로 전달 되 고 다른 함수에서 반환 된 수를 의미 합니다. 또한입니다.
 
 ## <a name="functions-to-define-operations-on-objects"></a>객체에 대한 연산을 정의하는 함수
 
