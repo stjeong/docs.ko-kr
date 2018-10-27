@@ -2,12 +2,12 @@
 title: 'Visual Studio Code에서 F # 시작'
 description: 'Visual Studio Code 및 Ionide 플러그 인 도구 모음을 사용 하 여 F #을 사용 하는 방법에 알아봅니다.'
 ms.date: 05/28/2018
-ms.openlocfilehash: 1afe985a4fe73d18b1e47b071b119c15a4672022
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: e962be2796cf0d6eb90d459730659e492f864716
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37874353"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50192670"
 ---
 # <a name="get-started-with-f-in-visual-studio-code"></a>Visual Studio Code에서 F # 시작
 

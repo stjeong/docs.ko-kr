@@ -3,11 +3,11 @@ title: POX 응용 프로그램과 상호 운용
 ms.date: 03/30/2017
 ms.assetid: 449276b8-4633-46f0-85c9-81f01d127636
 ms.openlocfilehash: b7fdb4e16bce52025515ced065d0f48cffb7fa3f
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50036023"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50192644"
 ---
 # <a name="interoperability-with-pox-applications"></a>POX 응용 프로그램과 상호 운용
 
