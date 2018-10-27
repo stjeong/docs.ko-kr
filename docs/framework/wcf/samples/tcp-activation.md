@@ -2,12 +2,12 @@
 title: TCP 활성화
 ms.date: 03/30/2017
 ms.assetid: bf8c215c-0228-4f4f-85c2-e33794ec09a7
-ms.openlocfilehash: 0a65e5ca20a11f50133efc90e6da923280a30f46
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 1939f611067d65d70849748604e0589a8928b09d
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48846554"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50191170"
 ---
 # <a name="tcp-activation"></a>TCP 활성화
 이 샘플에서는 net.tcp 프로토콜을 통해 통신하는 서비스를 활성화하기 위해 WAS(Windows Process Activation Service)를 사용하는 서비스를 호스트하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "48846554"
   
  이 서비스는 요청-회신 통신 패턴을 정의하는 계약을 구현합니다. 다음 샘플 코드와 같이 계약은 수학 작업(Add, Subtract, Multifly 및 Divide)을 노출시키는 `ICalculator` 인터페이스에 의해 정의됩니다.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -45,7 +45,7 @@ public interface ICalculator
   
  서비스 구현에서는 해당 결과를 계산하여 반환합니다.  
   
-```  
+```csharp
 // Service class that implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -129,7 +129,7 @@ public class CalculatorService : ICalculator
   
  샘플을 실행하면 작업 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -160,7 +160,7 @@ Press <ENTER> to terminate client.
   
     1.  net.tcp 활성화를 지원하려면 먼저 기본 웹 사이트를 net.tcp 포트에 바인딩해야 합니다. IIS(인터넷 정보 서비스) 7.0 관리 도구 집합과 함께 설치되는 Appcmd.exe를 사용하여 이 작업을 수행할 수 있습니다. 관리자 수준 명령 프롬프트에서 다음 명령을 실행합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  
         ```  
   
@@ -169,7 +169,7 @@ Press <ENTER> to terminate client.
   
     2.  사이트 내의 모든 응용 프로그램이 공통된 net.tcp 바인딩을 공유하지만 각 응용 프로그램에서 개별적으로 net.tcp 지원을 사용하도록 설정할 수 있습니다. /servicemodelsamples 응용 프로그램에 대해 net.tcp를 사용하도록 설정하려면 관리자 수준 명령 프롬프트에서 다음 명령을 실행합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app   
         "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.tcp  
         ```  
@@ -187,7 +187,7 @@ Press <ENTER> to terminate client.
   
     1.  관리자 수준 명령 프롬프트에서 다음 명령을 실행하여 사용하도록 설정된 프로토콜 목록에서 net.tcp를 제거합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app   
         "Default Web Site/servicemodelsamples" /enabledProtocols:http  
         ```  
@@ -197,7 +197,7 @@ Press <ENTER> to terminate client.
   
     2.  관리자 수준 명령 프롬프트에서 다음 명령을 실행하여 net.tcp 사이트 바인딩을 제거합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
         --bindings.[protocol='net.tcp',bindingInformation='808:*']  
         ```  

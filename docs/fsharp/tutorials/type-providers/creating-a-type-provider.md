@@ -2,12 +2,12 @@
 title: '자습서: 형식 공급자 (F #) 만들기'
 description: '기본 개념을 보여 주는 몇 가지 간단한 형식 공급자를 검사 하 여 F # 3.0에서 사용자 고유의 F # 형식 공급자를 만드는 방법에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: 3c998377b2c3a408d536ef416f3799bf7f04b6bd
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: c9dedbeed3ee081a6b1e1ffffe843fc962d2c60b
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397961"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183921"
 ---
 # <a name="tutorial-create-a-type-provider"></a>자습서: 형식 공급자 만들기
 
@@ -353,7 +353,7 @@ t.AddMembersDelayed(fun () ->
           p.AddXmlDocDelayed(fun () -> 
               sprintf "This is StaticProperty%d on NestedType" i)
 
-          yield p ]
+          yield p ]
 
     staticPropsInNestedType)
 
@@ -748,7 +748,7 @@ do ()
 
 - 헤더 이름 중 하나는 단위를 사용 하지 않는 형식은 "Name (단위)" 및 쉼표를 포함 하지 않습니다.
 
-- 단위는으로 모두 사용 하 International (SI) 단위 합니다 [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames 모듈 (F #)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) 모듈을 정의 합니다.
+- 단위가으로 모든 International SI (시스템) 단위 합니다 [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames 모듈 (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) 모듈을 정의 합니다.
 
 - 단위는 모든 단순 (예를 들어, 측정기) (예를 들어, 미터 초당) 복합 대신 합니다.
 

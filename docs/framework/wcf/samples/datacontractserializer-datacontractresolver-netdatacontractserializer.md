@@ -2,77 +2,77 @@
 title: NetDataContractSerializer의 기능을 공급하기 위해 DataContractSerializer 및 DataContractResolver를 사용
 ms.date: 03/30/2017
 ms.assetid: 1376658f-f695-45f7-a7e0-94664e9619ff
-ms.openlocfilehash: b86ac822e7ce7f0b18962fe48adbb1c26d7259dd
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: a2efa9f66e4053b94dc85b3bbe73400630fa84d1
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43394301"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184525"
 ---
 # <a name="using-datacontractserializer-and-datacontractresolver-to-provide-the-functionality-of-netdatacontractserializer"></a>NetDataContractSerializer의 기능을 공급하기 위해 DataContractSerializer 및 DataContractResolver를 사용
-이 샘플에서는 <xref:System.Runtime.Serialization.DataContractSerializer>와 적절한 <xref:System.Runtime.Serialization.DataContractResolver>를 함께 사용하여 <xref:System.Runtime.Serialization.NetDataContractSerializer>와 동일한 기능을 제공하는 방법을 보여 줍니다. 이를 위해 적절한 <xref:System.Runtime.Serialization.DataContractResolver>를 만드는 방법과 이를 <xref:System.Runtime.Serialization.DataContractSerializer>에 추가하는 방법을 보여 줍니다.  
-  
-## <a name="sample-details"></a>샘플 세부 정보  
- <xref:System.Runtime.Serialization.NetDataContractSerializer>는 serialize된 XML에 CLR 형식 정보를 포함하지만 <xref:System.Runtime.Serialization.DataContractSerializer>는 그렇지 않으며 이는 <xref:System.Runtime.Serialization.NetDataContractSerializer>와 <xref:System.Runtime.Serialization.DataContractSerializer>의 중요한 차이점 중 하나입니다. 따라서 serialize하는 쪽과 deserialize하는 쪽이 모두 동일한 CLR 형식을 공유하는 경우에만 <xref:System.Runtime.Serialization.NetDataContractSerializer>를 사용할 수 있습니다. 그러나 <xref:System.Runtime.Serialization.DataContractSerializer>는 <xref:System.Runtime.Serialization.NetDataContractSerializer>보다 성능이 우수하므로 이를 사용하는 것이 좋습니다. <xref:System.Runtime.Serialization.DataContractSerializer>에서는 <xref:System.Runtime.Serialization.DataContractResolver>를 추가하여 serialize되는 정보를 변경할 수 있습니다.  
-  
- 이 샘플은 두 프로젝트로 구성되어 있습니다. 첫 번째 프로젝트에서는 <xref:System.Runtime.Serialization.NetDataContractSerializer>를 사용하여 개체를 serialize합니다. 두 번째 프로젝트에서는 <xref:System.Runtime.Serialization.DataContractSerializer>와 <xref:System.Runtime.Serialization.DataContractResolver>를 함께 사용하여 첫 번째 프로젝트와 동일한 기능을 제공합니다.  
-  
- 다음 코드 예제에서는 DCSwithDCR 프로젝트의 <xref:System.Runtime.Serialization.DataContractResolver>에 추가된 `MyDataContractResolver`라는 사용자 지정 <xref:System.Runtime.Serialization.DataContractSerializer>의 구현을 보여 줍니다.  
-  
-```  
-class MyDataContractResolver : DataContractResolver  
-{  
-    private XmlDictionary dictionary = new XmlDictionary();  
-  
-    public MyDataContractResolver()  
-    {  
-    }  
-  
-    // Used at deserialization  
-    // Allows users to map xsi:type name to any Type   
-    public override Type ResolveName(string typeName, string typeNamespace, DataContractResolver knownTypeResolver)  
-    {  
-        Type type = knownTypeResolver.ResolveName(typeName, typeNamespace, null);  
-        if (type == null)  
-        {  
-            type = Type.GetType(typeName + ", " + typeNamespace);  
-        }  
-        return type;  
-    }  
-  
-    // Used at serialization  
-    // Maps any Type to a new xsi:type representation  
-    public override void ResolveType(Type dataContractType, DataContractResolver knownTypeResolver, out XmlDictionaryString typeName, out XmlDictionaryString typeNamespace)  
-    {  
-        knownTypeResolver.ResolveType(dataContractType, null, out typeName, out typeNamespace);  
-        if (typeName == null || typeNamespace == null)  
-        {  
-            XmlDictionary dictionary = new XmlDictionary();  
-            typeName = dictionary.Add(dataContractType.FullName);  
-            typeNamespace = dictionary.Add(dataContractType.Assembly.FullName);  
-        }  
-    }  
-}  
-```  
-  
-#### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
-  
-1.  [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]에서 DCRSample.sln 솔루션 파일을 엽니다.  
-  
-2.  솔루션 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  
-  
-3.  에 **솔루션 속성 페이지** 대화 상자 아래에 있는 **공용 속성**, **시작 프로젝트**를 선택 **여러 개의 시작 프로젝트:**.  
-  
-4.  옆에 **DCSwithDCR** 프로젝트 선택 **시작** 에서 **작업** 드롭다운 합니다.  
-  
-5.  옆에 **NetDCS** 프로젝트 선택 **시작** 에서 **작업** 드롭다운 합니다.  
-  
-6.  클릭 **확인** 는 대화 상자를 닫습니다.  
-  
-7.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
-  
-8.  Ctrl+F5를 눌러 솔루션을 실행합니다.  
-  
+이 샘플에서는 <xref:System.Runtime.Serialization.DataContractSerializer>와 적절한 <xref:System.Runtime.Serialization.DataContractResolver>를 함께 사용하여 <xref:System.Runtime.Serialization.NetDataContractSerializer>와 동일한 기능을 제공하는 방법을 보여 줍니다. 이를 위해 적절한 <xref:System.Runtime.Serialization.DataContractResolver>를 만드는 방법과 이를 <xref:System.Runtime.Serialization.DataContractSerializer>에 추가하는 방법을 보여 줍니다.
+
+## <a name="sample-details"></a>샘플 세부 정보
+ <xref:System.Runtime.Serialization.NetDataContractSerializer>는 serialize된 XML에 CLR 형식 정보를 포함하지만 <xref:System.Runtime.Serialization.DataContractSerializer>는 그렇지 않으며 이는 <xref:System.Runtime.Serialization.NetDataContractSerializer>와 <xref:System.Runtime.Serialization.DataContractSerializer>의 중요한 차이점 중 하나입니다. 따라서 serialize하는 쪽과 deserialize하는 쪽이 모두 동일한 CLR 형식을 공유하는 경우에만 <xref:System.Runtime.Serialization.NetDataContractSerializer>를 사용할 수 있습니다. 그러나 <xref:System.Runtime.Serialization.DataContractSerializer>는 <xref:System.Runtime.Serialization.NetDataContractSerializer>보다 성능이 우수하므로 이를 사용하는 것이 좋습니다. <xref:System.Runtime.Serialization.DataContractSerializer>에서는 <xref:System.Runtime.Serialization.DataContractResolver>를 추가하여 serialize되는 정보를 변경할 수 있습니다.
+
+ 이 샘플은 두 프로젝트로 구성되어 있습니다. 첫 번째 프로젝트에서는 <xref:System.Runtime.Serialization.NetDataContractSerializer>를 사용하여 개체를 serialize합니다. 두 번째 프로젝트에서는 <xref:System.Runtime.Serialization.DataContractSerializer>와 <xref:System.Runtime.Serialization.DataContractResolver>를 함께 사용하여 첫 번째 프로젝트와 동일한 기능을 제공합니다.
+
+ 다음 코드 예제에서는 DCSwithDCR 프로젝트의 <xref:System.Runtime.Serialization.DataContractResolver>에 추가된 `MyDataContractResolver`라는 사용자 지정 <xref:System.Runtime.Serialization.DataContractSerializer>의 구현을 보여 줍니다.
+
+```csharp
+class MyDataContractResolver : DataContractResolver
+{
+    private XmlDictionary dictionary = new XmlDictionary();
+
+    public MyDataContractResolver()
+    {
+    }
+
+    // Used at deserialization
+    // Allows users to map xsi:type name to any Type
+    public override Type ResolveName(string typeName, string typeNamespace, DataContractResolver knownTypeResolver)
+    {
+        Type type = knownTypeResolver.ResolveName(typeName, typeNamespace, null);
+        if (type == null)
+        {
+            type = Type.GetType(typeName + ", " + typeNamespace);
+        }
+        return type;
+    }
+
+    // Used at serialization
+    // Maps any Type to a new xsi:type representation
+    public override void ResolveType(Type dataContractType, DataContractResolver knownTypeResolver, out XmlDictionaryString typeName, out XmlDictionaryString typeNamespace)
+    {
+        knownTypeResolver.ResolveType(dataContractType, null, out typeName, out typeNamespace);
+        if (typeName == null || typeNamespace == null)
+        {
+            XmlDictionary dictionary = new XmlDictionary();
+            typeName = dictionary.Add(dataContractType.FullName);
+            typeNamespace = dictionary.Add(dataContractType.Assembly.FullName);
+        }
+    }
+}
+```
+
+#### <a name="to-use-this-sample"></a>이 샘플을 사용하려면
+
+1.  DCRSample.sln 솔루션 파일을 열고 Visual Studio 2012를 사용 합니다.
+
+2.  솔루션 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.
+
+3.  에 **솔루션 속성 페이지** 대화 상자 아래에 있는 **공용 속성**, **시작 프로젝트**를 선택 **여러 개의 시작 프로젝트:**.
+
+4.  옆에 **DCSwithDCR** 프로젝트 선택 **시작** 에서 **작업** 드롭다운 합니다.
+
+5.  옆에 **NetDCS** 프로젝트 선택 **시작** 에서 **작업** 드롭다운 합니다.
+
+6.  클릭 **확인** 는 대화 상자를 닫습니다.
+
+7.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.
+
+8.  Ctrl+F5를 눌러 솔루션을 실행합니다.
+
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
 >   

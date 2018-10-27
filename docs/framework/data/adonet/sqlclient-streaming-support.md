@@ -2,17 +2,17 @@
 title: SqlClient 스트리밍 지원
 ms.date: 03/30/2017
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-ms.openlocfilehash: f881318677949f5507c3e1c4a4b5606dd880c396
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7c9c7300678b9e285965a3c1b673a92b6f26973e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33364738"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50191047"
 ---
 # <a name="sqlclient-streaming-support"></a>SqlClient 스트리밍 지원
-SQL Server 및 응용 프로그램 간의 스트리밍 지원 (의 새로운 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)])는 서버 (문서, 이미지 및 미디어 파일)에서 구조화 되지 않은 데이터를 지원 합니다. SQL Server 데이터베이스를 사용 하는 이진 대형 개체 (Blob)을 저장할 수 있지만 BLOB를 검색 하는 다량의 메모리를 사용할 수 있습니다.  
+SQL Server 및 응용 프로그램 간의 스트리밍 지원 (새로운 기능 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]) 서버 (문서, 이미지 및 미디어 파일)에서 구조화 되지 않은 데이터를 지원 합니다. SQL Server 데이터베이스를 binary large object (Blob)를 저장할 수 있지만 BLOB를 검색 하는 많은 양의 메모리를 사용할 수 있습니다.  
   
- 완전히 더 적은 메모리 오버플로 예외가 발생 하는 메모리에 데이터를 로드할 필요 없이 응용 프로그램 작성 해당 스트림 데이터를 단순화의 스트리밍 지원은 SQL Server에서 합니다.  
+ 완벽 하 게 더 적은 메모리 오버플로 예외가 발생 하는 메모리에 데이터를 로드 하지 않고도 응용 프로그램 작성 해당 스트림 데이터를 간소화의 스트리밍 지원은 SQL Server에서 합니다.  
   
  또한 스트리밍 지원을 통해 중간 계층 응용 프로그램의 확장성이 높아질 수 있습니다. 특히 대형 BLOB를 전송, 검색 및 조작하기 위해 비즈니스 개체를 SQL Azure에 연결하는 시나리오에서는 더욱 그렇습니다.  
   
@@ -22,9 +22,9 @@ SQL Server 및 응용 프로그램 간의 스트리밍 지원 (의 새로운 [!I
 >  스트리밍을 지원하기 위해 추가된 멤버는 쿼리에서 데이터를 검색하고 쿼리 및 저장 프로시저에 매개 변수를 전달하는 데 사용됩니다. 스트리밍 기능은 기본 OLTP 및 데이터 마이그레이션 시나리오를 처리하며 온-프레미스 및 오프-프레미스 데이터 마이그레이션 환경에 적용할 수 있습니다.  
   
 ## <a name="streaming-support-from-sql-server"></a>SQL Server에서의 스트리밍 지원  
- 새로운 기능에서는 SQL Server에서의 스트리밍 지원은 <xref:System.Data.Common.DbDataReader> 및는 <xref:System.Data.SqlClient.SqlDataReader> 가져오려면 클래스 <xref:System.IO.Stream>, <xref:System.Xml.XmlReader>, 및 <xref:System.IO.TextReader> 개체에 대응 하 합니다.  이러한 클래스는 쿼리에서 데이터를 검색하는 데 사용됩니다. 결과적으로, SQL Server에서 스트리밍 지원은 OLTP 시나리오를 처리 하며 온-프레미스 및 오프-프레미스 환경에 적용 됩니다 합니다.  
+ 새로운 기능에서는 SQL Server에서의 스트리밍 지원은 합니다 <xref:System.Data.Common.DbDataReader> 및는 <xref:System.Data.SqlClient.SqlDataReader> 얻으려면 클래스 <xref:System.IO.Stream>, <xref:System.Xml.XmlReader>, 및 <xref:System.IO.TextReader> 개체 및 반응할 수.  이러한 클래스는 쿼리에서 데이터를 검색하는 데 사용됩니다. 결과적으로, SQL Server에서 스트리밍 지원 OLTP 시나리오를 처리 하 고 온-프레미스 및 오프-프레미스 환경에 적용 됩니다.  
   
- 에 추가 된 다음 메서드는 <xref:System.Data.SqlClient.SqlDataReader> SQL Server에서의 스트리밍 지원을 사용 하도록 설정 하려면:  
+ 다음 멤버를 추가한 <xref:System.Data.SqlClient.SqlDataReader> SQL Server에서 스트리밍 지원을 사용 하도록 설정 합니다.  
   
 1.  <xref:System.Data.SqlClient.SqlDataReader.IsDBNullAsync%2A>  
   
@@ -38,7 +38,7 @@ SQL Server 및 응용 프로그램 간의 스트리밍 지원 (의 새로운 [!I
   
 6.  <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A>  
   
- 에 추가 된 다음 메서드는 <xref:System.Data.Common.DbDataReader> SQL Server에서의 스트리밍 지원을 사용 하도록 설정 하려면:  
+ 다음 멤버를 추가한 <xref:System.Data.Common.DbDataReader> SQL Server에서 스트리밍 지원을 사용 하도록 설정 합니다.  
   
 1.  <xref:System.Data.Common.DbDataReader.GetFieldValue%2A>  
   
@@ -47,7 +47,7 @@ SQL Server 및 응용 프로그램 간의 스트리밍 지원 (의 새로운 [!I
 3.  <xref:System.Data.Common.DbDataReader.GetTextReader%2A>  
   
 ## <a name="streaming-support-to-sql-server"></a>SQL Server로의 스트리밍 지원  
- 새로운 기능에서는 SQL Server로의 스트리밍 지원은 <xref:System.Data.SqlClient.SqlParameter> 수락 하 고에 반응할 수 있도록 클래스 <xref:System.Xml.XmlReader>, <xref:System.IO.Stream>, 및 <xref:System.IO.TextReader> 개체입니다. <xref:System.Data.SqlClient.SqlParameter>는 쿼리 및 저장 프로시저에 매개 변수를 전달하는 데 사용됩니다.  
+ 새로운 기능에서는 SQL Server로의 스트리밍 지원은 합니다 <xref:System.Data.SqlClient.SqlParameter> 수락 하 고에 대응할 수 있도록 클래스 <xref:System.Xml.XmlReader>를 <xref:System.IO.Stream>, 및 <xref:System.IO.TextReader> 개체입니다. <xref:System.Data.SqlClient.SqlParameter>는 쿼리 및 저장 프로시저에 매개 변수를 전달하는 데 사용됩니다.  
   
  <xref:System.Data.SqlClient.SqlCommand> 개체를 삭제하거나 <xref:System.Data.SqlClient.SqlCommand.Cancel%2A>을 호출할 때는 모든 스트리밍 작업이 취소되어야 합니다. 응용 프로그램에서 <xref:System.Threading.CancellationToken>을 전송하면 취소되지 않을 수 있습니다.  
   
@@ -67,13 +67,13 @@ SQL Server 및 응용 프로그램 간의 스트리밍 지원 (의 새로운 [!I
   
 -   **Xml**  
   
- **Xml** <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> 형식에 허용 된 <xref:System.Data.SqlClient.SqlParameter.Value%2A> 의 <xref:System.Xml.XmlReader>합니다.  
+ 합니다 **Xml** <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> 형식을 수락할를 <xref:System.Data.SqlClient.SqlParameter.Value%2A> 의 <xref:System.Xml.XmlReader>합니다.  
   
  <xref:System.Data.SqlClient.SqlParameter.SqlValue%2A>는 <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader> 및 <xref:System.IO.Stream> 형식의 값만 받아들일 수 있습니다.  
   
  <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader> 및 <xref:System.IO.Stream> 개체는 <xref:System.Data.SqlClient.SqlParameter.Size%2A>에 정의된 값까지 전송됩니다.  
   
-## <a name="sample----streaming-from-sql-server"></a>샘플-SQL Server에서 스트리밍  
+## <a name="sample----streaming-from-sql-server"></a>샘플-SQL Server에서의 스트리밍  
  다음 [!INCLUDE[tsql](../../../../includes/tsql-md.md)]에 따라 샘플 데이터베이스를 작성할 수 있습니다.  
   
 ```  
@@ -99,11 +99,11 @@ GO
   
 -   SQL server에서 큰 텍스트 파일을 전송 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
   
--   SQL server에서 큰 XML 파일을 전송 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
+-   SQL server에서 큰 XML 파일로 전송 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
   
 -   SQL Server에서 데이터를 검색 합니다.  
   
--   한 SQL Server 데이터베이스에서 메모리를 지나치게 소모 하지 않고 다른 큰 파일 (Blob)를 전송 합니다.  
+-   메모리 부족 하지 않고 다른 하나의 SQL Server 데이터베이스에서 큰 파일 (Blob)를 전송 합니다.  
   
 ```  
 using System;  
@@ -241,7 +241,7 @@ namespace StreamingFromServer {
             Async = true,  
             // Since we will immediately wrap the TextReader we are creating in an XmlReader, we will permit the XmlReader to take care of closing\disposing it  
             CloseInput = true,  
-            // If the Xml you are reading is not a valid document (as per http://msdn.microsoft.com/library/6bts1x50.aspx) you will need to set the conformance level to Fragment  
+            // If the Xml you are reading is not a valid document (as per <https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/6bts1x50(v=vs.100)>) you will need to set the conformance level to Fragment  
             ConformanceLevel = ConformanceLevel.Fragment  
          };  
   
@@ -294,7 +294,7 @@ namespace StreamingFromServer {
 }  
 ```  
   
-## <a name="sample----streaming-to-sql-server"></a>샘플-SQL Server로 스트리밍  
+## <a name="sample----streaming-to-sql-server"></a>샘플-SQL Server로의 스트리밍  
  다음 [!INCLUDE[tsql](../../../../includes/tsql-md.md)]에 따라 샘플 데이터베이스를 작성할 수 있습니다.  
   
 ```  
@@ -318,7 +318,7 @@ GO
   
  이 샘플에서는 다음 작업의 수행 방법을 보여 줍니다.  
   
--   큰 BLOB를 SQL Server에 전송 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
+-   큰 BLOB에서 SQL Server로 전송 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
   
 -   큰 텍스트 파일에서 SQL Server로 전송 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]합니다.  
   
@@ -328,7 +328,7 @@ GO
   
 -   큰 BLOB의 전송을 취소합니다.  
   
--   에 새로운 비동기 기능을 사용 하 여 다른 SQL Server 간에 스트리밍합니다.  
+-   새로운 비동기 기능을 사용 하 여 다른 하나의 SQL Server에서 스트리밍입니다.  
   
 ```  
 using System;  
@@ -450,8 +450,8 @@ namespace StreamingToServer {
 }  
 ```  
   
-## <a name="sample----streaming-from-one-sql-server-to-another-sql-server"></a>샘플-한 SQL Server에서 다른 SQL Server로 스트리밍  
- 이 샘플에 비동기적으로 취소를 지 원하는 다른 SQL Server 간에 큰 BLOB를 스트림 하는 방법을 보여 줍니다.  
+## <a name="sample----streaming-from-one-sql-server-to-another-sql-server"></a>샘플-하나의 SQL Server에서 다른 SQL Server로 스트리밍  
+ 이 샘플에는 비동기적으로 취소에 대 한 지원을 사용 하 여 다른 하나의 SQL Server에서 큰 BLOB을 스트림 하는 방법을 보여 줍니다.  
   
 ```  
 using System;  

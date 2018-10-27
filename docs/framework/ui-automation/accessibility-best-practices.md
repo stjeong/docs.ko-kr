@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 8bdb16ca40142f3ef989708c567b940e1da2c0ac
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.openlocfilehash: a7f3a13d05b8a3c4554810655bbda670efb2b3fd
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372683"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50191079"
 ---
 # <a name="accessibility-best-practices"></a>액세스 가능성에 대한 유용한 정보
 > [!NOTE]
@@ -135,4 +135,4 @@ ms.locfileid: "49372683"
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Automation.Peers>  
  [테마 및 UI 자동화 지원 샘플이 있는 NumericUpDown 사용자 지정 컨트롤](https://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
- [키보드 사용자 인터페이스 디자인에 대한 지침](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+ [키보드 사용자 인터페이스 디자인에 대한 지침](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

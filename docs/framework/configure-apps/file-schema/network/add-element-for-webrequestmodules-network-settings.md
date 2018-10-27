@@ -10,14 +10,12 @@ helpviewer_keywords:
 - add element, webRequestModules
 - <add> element, webRequestModules
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 64df186be7d9e503ac22e177bca8da31e165f240
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 4c823f366baf51b35c15a87c2a9f6c9c4d3102d0
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837013"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188543"
 ---
 # <a name="ltaddgt-element-for-webrequestmodules-network-settings"></a>&lt;추가&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에 사용자 지정 웹 요청 모듈을 추가합니다.  
@@ -84,5 +82,5 @@ ms.locfileid: "48837013"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.WebRequest>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

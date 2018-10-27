@@ -2,14 +2,12 @@
 title: '방법: 서명 되지 않은 Friend 어셈블리 (Visual Basic) 만들기'
 ms.date: 03/14/2018
 ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 873a5bf235b43b4460a1489a964539c4e4c18de3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5fb2310a5d883e65df0b59b6fe316aa4d4637b7f
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643067"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188332"
 ---
 # <a name="how-to-create-unsigned-friend-assemblies-visual-basic"></a>방법: 서명 되지 않은 Friend 어셈블리 (Visual Basic) 만들기
 이 예제에서는 서명되지 않은 어셈블리와 함께 friend 어셈블리를 사용하는 방법을 보여 줍니다.  
@@ -18,7 +16,7 @@ ms.locfileid: "33643067"
   
 1.  명령 프롬프트를 엽니다.  
   
-2.  Visual Basic 파일을 만듭니다 `friend_signed_A.` 다음 코드가 들어 있는입니다. 코드에서는 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 사용하여 friend_signed_B를 friend 어셈블리로 선언합니다.  
+2.  Visual Basic 파일을 만듭니다 `friend_signed_A.` 다음 코드를 포함 하는 합니다. 코드에서는 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 사용하여 friend_signed_B를 friend 어셈블리로 선언합니다.  
   
     ```vb  
     ' friend_unsigned_A.vb  
@@ -50,7 +48,7 @@ ms.locfileid: "33643067"
     vbc -target:library friend_unsigned_A.vb  
     ```  
   
-4.  Visual Basic 파일을 만듭니다 `friend_unsigned_B` 다음 코드가 들어 있는입니다. friend_unsigned_A는 friend_unsigned_B를 friend 어셈블리로 지정하기 때문에 friend_unsigned_B의 코드는 friend_unsigned_A의 `Friend` 형식과 멤버에 액세스할 수 있습니다.  
+4.  Visual Basic 파일을 만듭니다 `friend_unsigned_B` 다음 코드를 포함 하는 합니다. friend_unsigned_A는 friend_unsigned_B를 friend 어셈블리로 지정하기 때문에 friend_unsigned_B의 코드는 friend_unsigned_A의 `Friend` 형식과 멤버에 액세스할 수 있습니다.  
   
     ```vb  
     ' friend_unsigned_B.vb  
@@ -81,7 +79,7 @@ ms.locfileid: "33643067"
   
 6.  friend_signed_B.exe 파일을 실행합니다.  
   
-     두 문자열을 표시 하는 프로그램: "Class1.Test" 및 "Class2.Test"입니다.  
+     두 문자열을 표시 하는 프로그램: "Class1.Test" 및 "class2.test"를 인쇄 합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성과 <xref:System.Security.Permissions.StrongNameIdentityPermission> 클래스 간에는 유사점이 있습니다. 주요 차이점은 <xref:System.Security.Permissions.StrongNameIdentityPermission>은 코드의 특정 섹션을 실행하는 보안 권한을 요구할 수 있는 반면, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성은 `Friend` 형식 및 멤버의 표시 유형을 제어한다는 것입니다.  
@@ -91,4 +89,4 @@ ms.locfileid: "33643067"
  [어셈블리와 전역 어셈블리 캐시(Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Friend 어셈블리 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
  [방법: 서명 된 Friend 어셈블리 (Visual Basic) 만들기](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)  
- [프로그래밍 가이드 개요](../../../../visual-basic/programming-guide/concepts/index.md)
+ [프로그래밍 가이드 개념](../../../../visual-basic/programming-guide/concepts/index.md)

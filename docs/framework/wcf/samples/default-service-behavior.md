@@ -5,12 +5,12 @@ helpviewer_keywords:
 - service behaviors, defaults
 - Default Service Behavior Sample [Windows Communication Foundation]
 ms.assetid: 442d4f71-c64e-4c62-816a-a66c38e7d3ec
-ms.openlocfilehash: 8583c74f85d9638313db1779610c0f6dac9cfbe5
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 2c49c28d99bb3d300fd4589a088b2f086bdfd45d
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857760"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184480"
 ---
 # <a name="default-service-behavior"></a>기본 서비스 동작
 이 샘플에서는 서비스 동작 설정을 구성하는 방법을 보여 줍니다. 샘플을 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)를 구현 하는 `ICalculator` 서비스 계약입니다. 이 샘플에서는 <xref:System.ServiceModel.ServiceBehaviorAttribute> 및 <xref:System.ServiceModel.OperationBehaviorAttribute> 특성을 사용하여 서비스 동작 및 작업 동작을 명시적으로 정의합니다. 동작은 구성 파일에서 구성할 수도 있고 코드에서 명령적으로 구성할 수도 있습니다. 이 샘플에서는 코드에서 명령적으로 구성하는 방법을 보여 줍니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "43857760"
   
  서비스 클래스에서는 다음 코드 샘플에 표시된 것과 같이 <xref:System.ServiceModel.ServiceBehaviorAttribute> 및 <xref:System.ServiceModel.OperationBehaviorAttribute>에 동작을 지정합니다. 지정된 모든 값은 기본값입니다.  
   
-```  
+```csharp
 [ServiceBehavior(  
     AutomaticSessionShutdown=true,  
     ConcurrencyMode=ConcurrencyMode.Single,  
@@ -68,7 +68,7 @@ public class CalculatorService : ICalculator
   
  샘플을 실행하면 작업 요청 및 응답이 클라이언트 콘솔 창에 표시됩니다. 호출 사이의 지연은 서비스 작업에서 `System.Threading.Thread.Sleep()`에 대한 호출이 이루어진 결과로 발생합니다. 나머지 동작 샘플에서는 이런 동작에 대해 더 자세히 설명합니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

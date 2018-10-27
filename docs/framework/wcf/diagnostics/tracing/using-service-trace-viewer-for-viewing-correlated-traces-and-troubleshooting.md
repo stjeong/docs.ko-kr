@@ -2,20 +2,20 @@
 title: Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-ms.openlocfilehash: cfa1ec0e486943d196ec016be87544f17a0114e6
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: b43c7f3d8018c119dbabf8f55ec115a00e1ac077
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33806772"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188796"
 ---
 # <a name="using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting"></a>Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결
 이 항목에서는 추적 데이터 형식, 추적 데이터를 보는 방법 및 Service Trace Viewer를 사용하여 응용 프로그램 문제를 해결하는 방법에 대해 설명합니다.  
   
 ## <a name="using-the-service-trace-viewer-tool"></a>Service Trace Viewer 도구 사용  
- Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하는 오류의 근본 원인을 찾으려고 WCF 수신기에서 생성 한 진단 추적을 상호 연결할 수 있습니다. 이 도구는 쉽게 보고, 그룹화 하 고 진단, 복구 및 WCF 서비스와의 문제를 확인할 수 있도록 추적을 필터링 하는 방법을 제공 합니다. 이 도구를 사용 하는 방법에 대 한 자세한 내용은 참조 [Service Trace Viewer 도구 (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)합니다.  
+ Windows Communication Foundation (WCF) Service Trace Viewer 도구를 사용 하면 오류의 근본 원인을 찾으려고 WCF 수신기에 의해 생성 된 진단 추적 정보를 상호 연결할 수 있습니다. 도구를 쉽게 보고, 그룹화 하 고 진단, 복구 및 WCF 서비스를 사용 하 여 문제를 확인할 수 있도록 추적을 필터링 하는 방법을 제공 합니다. 이 도구를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Service Trace Viewer 도구 (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)합니다.  
   
- 이 항목에서는 실행 하 여 생성 된 추적의 스크린 샷을 [Tracing and Message Logging](../../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) 샘플을 사용 하 여 볼 때는 [Service Trace Viewer 도구 (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)합니다. 이 항목에서는 추적의 내용, 동작 및 상관 관계를 이해하는 방법과 문제 해결 시 많은 수의 추적을 분석하는 방법을 보여 줍니다.  
+ 이 항목에서는 실행 하 여 생성 된 추적의 스크린 샷을 합니다 [Tracing and Message Logging](../../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) 샘플을 사용 하 여 볼 때 합니다 [Service Trace Viewer 도구 (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)합니다. 이 항목에서는 추적의 내용, 동작 및 상관 관계를 이해하는 방법과 문제 해결 시 많은 수의 추적을 분석하는 방법을 보여 줍니다.  
   
 ## <a name="viewing-trace-content"></a>추적 내용 보기  
  추적 이벤트에는 다음과 같은 가장 중요한 정보가 들어 있습니다.  
@@ -32,30 +32,30 @@ ms.locfileid: "33806772"
   
 -   스레드 ID  
   
--   Microsoft Docs, 추적에 관련 된 자세한 정보를 얻을 수 있는 대상을 가리키는 url 고유한 추적 식별자입니다.  
+-   대상에 추적에 관련 된 자세한 정보를 얻을 수 있는 Microsoft 문서를 가리키는 URL 인 고유한 추적 식별자입니다.  
   
- 오른쪽 위 패널 또는 Service Trace Viewer에서에서 볼 수 있습니다 이러한 항목 모두는 **기본 정보** 추적을 선택할 때 오른쪽 아래 패널의 서식이 지정 된 보기에는 섹션입니다.  
+ 오른쪽 위 패널 또는 Service Trace Viewer에서에서 볼 수 있습니다 이러한 모든 합니다 **기본 정보** 추적을 선택할 때 오른쪽 아래 패널의 서식이 지정 된 보기에는 섹션입니다.  
   
 > [!NOTE]
->  클라이언트와 서비스가 동일한 컴퓨터에 있는 경우 두 응용 프로그램에 대한 추적이 있습니다. 이러한 필터링 할 수 있습니다를 사용 하 여 **프로세스 이름** 열입니다.  
+>  클라이언트와 서비스가 동일한 컴퓨터에 있는 경우 두 응용 프로그램에 대한 추적이 있습니다. 이러한 필터링 할 수 있습니다 사용 하 여 **프로세스 이름** 열.  
   
  서식이 지정된 보기에서는 사용 가능한 경우 추적 및 추가 세부 정보에 대한 설명을 볼 수도 있습니다. 추가 세부 정보에는 예외 형식 및 메시지, 호출 스택, 메시지 동작, 보낸 사람/받는 사람 필드 및 기타 예외 정보가 포함될 수 있습니다.  
   
  XML 보기에서 유용한 xml 태그는 다음과 같습니다.  
   
--   \<하위 형식 > (추적 수준).  
+-   `<SubType>` (추적 수준)입니다.  
   
--   \<TimeCreated > 합니다.  
+-   `<TimeCreated>`.  
   
--   \<소스 > (추적 소스 이름).  
+-   `<Source>` (추적 소스 이름)입니다.  
   
--   \<상관 관계 > (추적을 내보낼 때 설정 작업 id)입니다.  
+-   `<Correlation>` (작업 id에 추적을 내보낼 때 설정).  
   
--   \<실행 > (프로세스 및 스레드 id)입니다.  
+-   `<Execution>` (프로세스 및 스레드 id)입니다.  
   
--   \<컴퓨터 > 합니다.  
+-   `<Computer>`.  
   
--   \<ExtendedData >를 포함 하 여 \<작업 >, \<MessageID > 및 \<ActivityId > 메시지를 보낼 때 메시지 헤더에 설정 합니다.  
+-   `<ExtendedData>`를 포함 하 여 `<Action>`, `<MessageID>` 고 `<ActivityId>` 메시지를 보낼 때 메시지 헤더에 설정 합니다.  
   
  "채널을 통해 메시지를 보냈습니다." 추적을 검사하면 다음 내용을 볼 수 있습니다.  
   
@@ -105,13 +105,13 @@ ms.locfileid: "33806772"
 ```  
   
 ## <a name="servicemodel-e2e-tracing"></a>ServiceModel E2E 추적  
- 때는 `System.ServiceModel` 으로 설정 된 추적 소스는 `switchValue` Off가 아닌 및 `ActivityTracing`, 작업 및 전송에 WCF 처리에 대 한 WCF를 만듭니다.  
+ 경우는 `System.ServiceModel` 추적 원본으로 설정 된를 `switchValue` Off가 아닌 및 `ActivityTracing`, WCF 작업 및 처리 하는 WCF에 대 한 전송을 만듭니다.  
   
- 동작은 해당 처리 단위와 관련된 모든 추적을 그룹화하는 논리적인 처리 단위입니다. 예를 들어 요청별로 하나의 동작을 정의할 수 있습니다. 전송은 끝점 내의 동작 사이에 인과 관계를 만듭니다. 동작 ID를 전파하면 끝점을 통해 동작을 서로 연결할 수 있습니다. 설정 하 여이 작업을 수행할 수 있습니다 `propagateActivity` = `true` 모든 끝점에서 구성에서 합니다. 동작, 전송 및 전파를 통해 오류 상관 관계를 수행할 수 있습니다. 이 방법으로 오류에 대한 근본 원인을 신속하게 찾을 수 있습니다.  
+ 동작은 해당 처리 단위와 관련된 모든 추적을 그룹화하는 논리적인 처리 단위입니다. 예를 들어 요청별로 하나의 동작을 정의할 수 있습니다. 전송은 끝점 내의 동작 사이에 인과 관계를 만듭니다. 동작 ID를 전파하면 엔드포인트를 통해 동작을 서로 연결할 수 있습니다. 설정 하 여 이렇게 `propagateActivity` = `true` 모든 끝점에서 구성에서 합니다. 동작, 전송 및 전파를 통해 오류 상관 관계를 수행할 수 있습니다. 이 방법으로 오류에 대한 근본 원인을 신속하게 찾을 수 있습니다.  
   
- 클라이언트에서 각 개체 모델 호출 (예를 들어 Open ChannelFactory, Add, Divide 등 등과 합니다.)에 대해 하나의 WCF 활동을 만듭니다. 각 작업 호출은 "Process Action" 동작에서 처리 됩니다.  
+ 클라이언트에서 각 개체 모델 호출 (예를 들어, Open ChannelFactory, 추가, 나누기, 및 등입니다.)에 대해 하나의 WCF 동작이 만들어집니다. 각 작업 호출은 "Process Action" 동작에서 처리 됩니다.  
   
- 추출 된 다음 스크린샷에 [Tracing and Message Logging](../../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) 샘플 왼쪽된 패널 생성 시간으로 정렬 하는 클라이언트 프로세스에서 만든 활동 목록이 표시 됩니다. 다음은 발생한 동작 순서 목록입니다.  
+ 추출 된 다음 스크린샷에서 [Tracing and Message Logging](../../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) 왼쪽된 패널 샘플 만들기 시간을 기준으로 정렬 하는 클라이언트 프로세스에서 만들어진 활동의 목록을 표시 합니다. 다음은 발생한 동작 순서 목록입니다.  
   
 -   채널 팩터리 생성(ClientBase)  
   
@@ -128,74 +128,74 @@ ms.locfileid: "33806772"
  wsHttpBinding이 사용되기 때문에 보안 인프라 메시지가 표시됩니다.  
   
 > [!NOTE]
->  WCF, 별도 동작 (Process message)에서 처음 처리 되 고 응답 메시지 표시에 전송을 통해 요청 메시지를 포함 하는 해당 Process Action 동작 시키기 전에 합니다. 이는 인프라 메시지와 비동기 요청에 대해 발생하며, 그 이유는 메시지를 검사하고, activityId 헤더를 읽고, 이 ID를 갖는 기존의 Process Action 동작을 식별하여 서로 관련시켜야 하기 때문입니다. 동기 요청의 경우에는 응답을 차단하므로 응답이 어떤 Process Action과 연결되어 있는지 알 수 있습니다.  
+>  Wcf에서 응답 메시지를 별도 동작 (Process message)에서 처음 처리 되 고 살펴보겠습니다 전송을 통해 요청 메시지를 포함 하는 해당 Process Action 동작 시키기 전에 합니다. 이는 인프라 메시지와 비동기 요청에 대해 발생하며, 그 이유는 메시지를 검사하고, activityId 헤더를 읽고, 이 ID를 갖는 기존의 Process Action 동작을 식별하여 서로 관련시켜야 하기 때문입니다. 동기 요청의 경우에는 응답을 차단하므로 응답이 어떤 Process Action과 연결되어 있는지 알 수 있습니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace4.gif "e2eTrace4")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace4.gif "e2eTrace4")  
 만든 시간별로 나열된 WCF 클라이언트 동작(왼쪽 패널)과 중첩된 동작 및 추적(오른쪽 위 패널)  
   
  왼쪽 패널에서 동작을 선택하면 중첩된 동작과 추적이 오른쪽 위 패널에 표시됩니다. 따라서 이 보기는 선택한 부모 동작을 기준으로 왼쪽에 동작 목록을 축소한 계층 구조 보기입니다. 선택한 Process action Add가 첫 번째 요청이므로 이 동작에 Set Up Secure Session 동작(전송, 다시 전송)이 포함되며 추가 작업의 실제 처리를 추적합니다.  
   
- Process action Add 동작 왼쪽된 패널에서을 두 번 클릭 하는 경우 추가 관련 된 클라이언트 WCF 동작을 그래픽으로 표시 됩니다. 왼쪽의 첫 번째 동작은 기본 동작인 루트 동작(0000)입니다. WCF 전송 앰비언트 동작 합니다. 정의 되지 않은 경우 WCF 0000에서 전송 합니다. 이때 두 번째 동작인 Process Action Add가 0에서 전송합니다. 그런 다음 Setup Secure Session이 표시됩니다.  
+ Process action Add 동작 왼쪽된 패널에서 두 번 클릭, 추가 관련 된 클라이언트 WCF 작업의 그래픽 표시를 보면 합니다. 왼쪽의 첫 번째 동작은 기본 동작인 루트 동작(0000)입니다. WCF는 앰비언트 동작 전송합니다. 이 정의 되어 있지 않으면 WCF는 0000에서 전송 합니다. 이때 두 번째 동작인 Process Action Add가 0에서 전송합니다. 그런 다음 Setup Secure Session이 표시됩니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace5.gif "e2eTrace5")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace5.gif "e2eTrace5")  
 WCF 클라이언트 동작 그래프 보기: 앰비언트 동작(여기서 0), Process action 및 Set Up Secure Session  
   
  오른쪽 위 패널에서 Process Action Add 동작과 관련된 추적이 모두 표시됩니다. 특히 같은 동작으로 요청 메시지("채널을 통해 메시지를 보냈습니다.")를 보내고 응답("채널을 통해 메시지를 받았습니다")을 받았습니다. 다음 그래프에서 이를 확인할 수 있습니다. 쉽게 구별할 수 있도록 Set up Secure Session 동작은 그래프에 축소되어 있습니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace6.gif "e2eTrace6")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace6.gif "e2eTrace6")  
 Process Action 동작에 대한 추적 목록: 같은 동작으로 요청을 보내고 응답을 받습니다.  
   
- 여기에서 쉽게 구별할 수 있도록 클라이언트 추적을만 로드 하지만 서비스 추적 (받은 요청 메시지와 보낸 응답 메시지)도 도구에 로드 된 경우 동일한 동작에 나타납니다 및 `propagateActivity` 로 설정 된 `true.` 이 뒷부분에 나오는 그림에 나와 있습니다.  
+ 이때 클라이언트 추적만 이해를 돕기 위해 로드 하지만 서비스 추적 (받은 요청 메시지와 보낸 응답 메시지) 도구에 로드 이기도 한 경우 동일한 동작에서 나타나며 및 `propagateActivity` 로 설정 된 `true.` 뒷부분에 나오는 그림에 나와 있습니다.  
   
- 서비스에는 활동 모델 WCF 개념을 다음과 같이 매핑합니다.  
+ 서비스에서 활동 모델 WCF 개념을 다음과 같이 매핑합니다.  
   
 1.  ServiceHost를 생성하고 엽니다. 이렇게 하면 보안의 경우 여러 호스트 관련 동작을 만들 수 있습니다.  
   
 2.  Open ServiceHost 내부 및 외부로 전송하여 ServiceHost에서 각 수신기에 대한 Listen At 동작을 만듭니다.  
   
-3.  수신기는 클라이언트에서 시작 된 통신 요청을 감지 하면 클라이언트에서 보낸 모든 바이트가 처리 되는 "Receive Bytes" 동작을 전송 합니다. 이 동작에서 클라이언트-서비스 상호 작용 중에 발생한 연결 오류가 표시됩니다.  
+3.  수신기 클라이언트에서 시작 된 통신 요청을 감지 하면 클라이언트에서 보낸 모든 바이트가 처리 되는, "Receive Bytes" 동작으로 전송 합니다. 이 동작에서 클라이언트-서비스 상호 작용 중에 발생한 연결 오류가 표시됩니다.  
   
-4.  각 바이트 집합을 받은 메시지에 해당 하는에 대 한 처리 "메시지 처리" 동작에서 이러한 접두사 바이트는 WCF 메시지 개체를 만듭니다. 이 동작에서 악의적인 메시지 또는 잘못된 봉투와 관련된 오류가 표시됩니다.  
+4.  각 바이트 집합 수신 되는 메시지에 해당 하는,에서는 처리 "메시지 처리" 작업을 이러한 바이트는 WCF 메시지 개체를 만들겠습니다. 이 동작에서 악의적인 메시지 또는 잘못된 봉투와 관련된 오류가 표시됩니다.  
   
-5.  메시지가 형성되면 Process Action 동작으로 전송합니다. `propagateActivity`가 클라이언트와 서버에서 모두 `true`로 설정되는 경우 이 동작에는 클라이언트에서 정의되고 앞에서 설명한 것과 동일한 ID를 갖게 됩니다. 이 단계에서 시작 하기 위해 직접적인 상관 관계의 끝점을 통해 WCF에 포함 된 요청에 관련 된 모든 추적이 응답 메시지 처리를 포함 하 여 같은 동작에에 있기 때문에 합니다.  
+5.  메시지가 형성되면 Process Action 동작으로 전송합니다. `propagateActivity`가 클라이언트와 서버에서 모두 `true`로 설정되는 경우 이 동작에는 클라이언트에서 정의되고 앞에서 설명한 것과 동일한 ID를 갖게 됩니다. 이 단계에서 먼저 끝점을 통해 직접적인 상관 관계의 이점을 활용 하도록 요청에 관련 된 WCF에서 내보낸 모든 추적이 응답 메시지 처리를 포함 하 여 같은 동작에 있으므로 합니다.  
   
-6.  작업 중이 아닌 작업에 대 한 WCF에서 내보낸 추적과에서 사용자 코드에서 내보낸 추적을 격리 하기 위한 "사용자 코드 실행" 작업을 만듭니다. 앞의 예제에서 "서비스가 추가 응답을 보냅니다" 추적을 해당 하는 경우 클라이언트가 전파 한 동작이에 없는 "사용자 코드 실행" 동작에서 내보냅니다.  
+6.  Out of process 작업에 대 한 WCF에서 내보낸 추적과 사용자 코드에서 내보낸 추적을 격리 하기 위한 "사용자 코드 실행" 작업을 만들겠습니다. 앞의 예제에서 해당 하는 경우 클라이언트가 전파 한 동작이에 없는 사용자 코드 실행"작업의"서비스가 추가 응답을 보냅니다"추적을 내보냅니다.  
   
  다음 그림에서 왼쪽의 첫 번째 동작은 기본 동작인 루트 동작(0000)입니다. 다음 세 동작은 ServiceHost를 여는 동작입니다. 열 5의 동작은 수신기이고, 나머지 동작(6 - 8)은 바이트 처리부터 사용자 코드 활성화까지 메시지를 처리하는 WCF입니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace7.gif "e2eTrace7")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace7.gif "e2eTrace7")  
 WCF 서비스 동작 목록  
   
  다음 스크린샷에서는 클라이언트와 서비스 모두의 동작을 보여 주고 여러 프로세스에 걸쳐 Process Action Add 동작을 강조 표시합니다(주황색). 화살표는 클라이언트와 서비스가 보내고 받은 요청 및 응답 메시지를 서로 연결합니다. Process Action의 추적이 그래프에서 프로세스 간에 구분되어 있지만 오른쪽 위 패널에 같은 동작의 일부로 표시되어 있습니다. 이 패널에서 보낸 메시지에 대한 클라이언트 추적을 확인한 다음 받고 처리한 메시지에 대한 서비스 추적을 확인할 수 있습니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace8.gif "e2eTrace8")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace8.gif "e2eTrace8")  
 WCF 클라이언트 및 서비스 동작 모두에 대한 그래프 보기  
   
  다음 오류 시나리오에서 서비스 및 클라이언트의 오류와 경고 추적이 서로 관련되어 있습니다. 예외가 서비스의 사용자 코드에서 먼저 throw됩니다("서비스가 사용자 코드에서 이 요청을 처리할 수 없습니다." 예외에 대한 경고 추적이 포함된 맨 오른쪽의 녹색 동작). 응답이 클라이언트에게 전송되면 오류 메시지를 표시하기 위해 경고 추적이 다시 내보내집니다(왼쪽의 분홍색 동작). 그런 다음 클라이언트가 해당 WCF 클라이언트를 닫습니다(왼쪽 아래의 노란색 동작). 그러면 서비스에 대한 연결이 중단됩니다. 서비스가 오류를 throw합니다(오른쪽의 가장 긴 분홍색 동작).  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/wcfc-e2etrace9s.gif "wcfc_e2etrace9s")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/wcfc-e2etrace9s.gif "wcfc_e2etrace9s")  
 서비스와 클라이언트의 오류 상관 관계  
   
- 이러한 추적을 생성하는 데 사용된 샘플은 wsHttpBinding을 사용하는 일련의 동기 요청입니다. 보안을 사용하지 않거나 비동기 요청이 있는 시나리오의 경우 이 그래프에 차이가 있습니다. 여기서 Process Action 동작은 비동기 호출을 구성하는 시작 및 끝 작업을 포함하며 호출 동작에 대한 전송을 표시합니다. 추가 시나리오에 대 한 자세한 내용은 참조 [종단 간 추적 시나리오](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)합니다.  
+ 이러한 추적을 생성하는 데 사용된 샘플은 wsHttpBinding을 사용하는 일련의 동기 요청입니다. 보안을 사용하지 않거나 비동기 요청이 있는 시나리오의 경우 이 그래프에 차이가 있습니다. 여기서 Process Action 동작은 비동기 호출을 구성하는 시작 및 끝 작업을 포함하며 호출 동작에 대한 전송을 표시합니다. 추가 시나리오에 대 한 자세한 내용은 참조 하세요. [종단 간 추적 시나리오](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)합니다.  
   
 ## <a name="troubleshooting-using-the-service-trace-viewer"></a>Service Trace Viewer를 사용하여 문제 해결  
  Service Trace Viewer 도구에서 추적 파일을 로드하면 왼쪽 패널에서 빨간색 또는 노란색 동작을 선택하여 응용 프로그램에서 문제의 원인을 추적할 수 있습니다. 000 동작에는 일반적으로 사용자에게 버블링되는 처리되지 않은 예외가 있습니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace10.gif "e2eTrace10")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace10.gif "e2eTrace10")  
 문제 원인을 찾으려면 빨간색이나 노란색 동작 선택  
   
  오른쪽 위 패널에서는 왼쪽에서 선택한 동작에 대한 추적을 검사할 수 있습니다. 그런 다음 이 패널에서 빨간색 또는 노란색 추적을 검사하고 이들 추적이 상호 연결된 방식을 볼 수 있습니다. 앞의 그래프에서는 동일한 Process Action 동작에서 클라이언트와 서비스 모두에 대한 경고 추적을 볼 수 있습니다.  
   
- 이러한 추적이 오류의 근본 원인을 제공하지 않으면 왼쪽 패널에서 선택한 동작(여기서는 Process action)을 두 번 클릭하여 그래프를 사용할 수 있습니다. 그러면 관련된 동작이 있는 그래프가 표시됩니다. ("+" 기호 클릭) 하 여 관련된 활동을 확장 한 다음 관련된 된 동작에서 빨간색 이나 노란색에서 첫 번째로 내보낸된 추적을 찾을 수 있습니다. 문제의 근본 원인을 추적할 때까지 빨간색 또는 노란색 추적 바로 전에 발생한 동작을 계속 확장하면서 관련된 동작이나 끝점 간의 메시지 흐름으로의 전송을 살펴 봅니다.  
+ 이러한 추적이 오류의 근본 원인을 제공하지 않으면 왼쪽 패널에서 선택한 동작(여기서는 Process action)을 두 번 클릭하여 그래프를 사용할 수 있습니다. 그러면 관련된 동작이 있는 그래프가 표시됩니다. 확장할 수 있습니다 다음 관련된 활동 ("+" 기호 클릭) 관련된 작업에서 빨간색 이나 노란색에서 첫 번째로 내보낸된 추적을 찾으려고 합니다. 문제의 근본 원인을 추적할 때까지 빨간색 또는 노란색 추적 바로 전에 발생한 동작을 계속 확장하면서 관련된 동작이나 엔드포인트 간의 메시지 흐름으로의 전송을 살펴 봅니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/wcfc-e2etrace9s.gif "wcfc_e2etrace9s")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/wcfc-e2etrace9s.gif "wcfc_e2etrace9s")  
 동작을 확장하여 문제의 근본 원인 추적  
   
  ServiceModel `ActivityTracing`이 해제되어 있지만 ServiceModel 추적이 설정된 경우 0000 동작에 내보낸 ServiceModel 추적을 확인할 수 있습니다. 하지만 이렇게 하려면 이러한 추적의 상관 관계를 이해해야 합니다.  
   
  메시지 로깅을 사용하도록 설정된 경우 메시지 탭을 사용하여 오류의 영향을 받는 메시지를 확인할 수 있습니다. 빨간색 또는 노란색 메시지를 두 번 클릭하여 관련 동작에 대한 그래프 보기를 볼 수 있습니다. 이러한 동작은 오류가 발생한 요청과 가장 관련이 높은 동작입니다.  
   
- ![Trace Viewer를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace11.gif "e2eTrace11")  
+ ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace11.gif "e2eTrace11")  
 문제 해결을 시작하려면 빨간색 또는 노란색 메시지 추적을 선택하고 두 번 클릭하여 문제의 근본 원인을 추적합니다.  
   
 ## <a name="see-also"></a>참고 항목  

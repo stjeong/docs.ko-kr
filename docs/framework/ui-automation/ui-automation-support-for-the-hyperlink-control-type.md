@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 110cceea-5932-4955-a1a6-13afc51422b2
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 2e454f968bbb80f0e59142dc623fde5d455a78d1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 8e2140d02b39a181f55da2c0bed4826dc893f068
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47200435"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50185809"
 ---
 # <a name="ui-automation-support-for-the-hyperlink-control-type"></a>Hyperlink 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
   
  이 항목에서는 Hyperlink 컨트롤 형식에 대한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 지원 정보를 제공합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 컨트롤 형식은 <xref:System.Windows.Automation.AutomationElement.ControlTypeProperty> 속성을 사용하기 위해 컨트롤이 충족해야 하는 조건 집합입니다. 이 조건에는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 구조, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 값, 컨트롤 패턴에 대한 특정 지침이 포함됩니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "47200435"
 |---------------------------------------|--------------------|-----------|  
 |<xref:System.Windows.Automation.Provider.IInvokeProvider>|예|모든 하이퍼링크 컨트롤이 Invoke 패턴을 지원해야 합니다.|  
 |<xref:System.Windows.Automation.Provider.IValueProvider>|종속|링크에 사용자가 사용할 수 있고 의미가 있는 정보가 포함되면 하이퍼링크 컨트롤이 Value 컨트롤 패턴을 지원해야 합니다.|  
-|<xref:System.Windows.Automation.Provider.IValueProvider.Value>|예를 들면 `"http://www...."`과 같습니다.|인터넷 또는 인트라넷 주소의 URL은 사용자에게 의미 있는 정보가 포함된 하이퍼링크의 예입니다. 그러나 프로그래밍 링크는 응용 프로그램에만 의미가 있으며 Value 속성에는 권장되지 않습니다.|  
+|<xref:System.Windows.Automation.Provider.IValueProvider.Value>|예를 들면 `"https://www...."`과 같습니다.|인터넷 또는 인트라넷 주소의 URL은 사용자에게 의미 있는 정보가 포함된 하이퍼링크의 예입니다. 그러나 프로그래밍 링크는 응용 프로그램에만 의미가 있으며 Value 속성에는 권장되지 않습니다.|  
   
 <a name="Required_UI_Automation_Events"></a>   
 ## <a name="required-ui-automation-events"></a>필요한 UI 자동화 이벤트  

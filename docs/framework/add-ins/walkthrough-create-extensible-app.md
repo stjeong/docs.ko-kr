@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 694a33c5-a040-450d-aed5-ac49fc88ce61
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5d2aaeaffaf3abbe1e8efcdb57d40e6ae60f89b5
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 63780583d035d6fab6b3a79424857b82a910ef09
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45591957"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183895"
 ---
 # <a name="walkthrough-creating-an-extensible-application"></a>연습: 확장 가능한 응용 프로그램 만들기
 이 연습에서는 간단한 계산기 기능을 수행 하는 추가 기능에 대 한 파이프라인을 만드는 방법을 설명 합니다. 실제 시나리오; 보여 주지 않지만 대신, 파이프라인 및 방법으로 추가 기능 서비스를 제공할 수는 호스트의 기본 기능을 보여 줍니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "45591957"
   
 1.  Visual Studio에서 명명 된 새 프로젝트를 만듭니다 `Calc1Contract`합니다. 기반으로 합니다 **클래스 라이브러리** 템플릿.  
   
-2.  솔루션 이름을 `CalculatorV1`입니다.  
+2.  솔루션의 이름을 `CalculatorV1`로 지정합니다.  
   
 ## <a name="creating-the-pipeline-directory-structure"></a>파이프라인 디렉터리 구조 만들기  
  추가 기능 모델은 지정 된 디렉터리 구조에 배치 될 파이프라인 세그먼트 어셈블리 필요 합니다. 파이프라인 구조에 대 한 자세한 내용은 참조 하세요. [파이프라인 개발 요구 사항](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)합니다.  
@@ -195,7 +195,7 @@ ms.locfileid: "45591957"
   
  이 파이프라인에서 추가 기능에서 서비스를 제공 호스트 및 형식 흐름 호스트에 추가 기능에서. 형식이 없습니다. 추가 기능에 호스트에서 흐름을 하기 때문에 뷰-계약 어댑터를 포함할 필요가 없습니다.  
   
- 수명 관리를 구현 하려면 사용을 <xref:System.AddIn.Pipeline.ContractHandle> 계약의 수명 토큰을 연결 하는 개체입니다. 작업 수명 관리를 위해이 핸들에 대 한 참조를 유지 해야 합니다. 토큰이 적용 되 면 더 이상 사용 되지 않으며 가비지 수집에 사용할 수 있도록 하는 경우 개체의 추가 기능 시스템을 삭제할 수 때문에 없는 추가 프로그래밍이 필요 합니다. 자세한 내용은 [수명 관리](https://msdn.microsoft.com/library/57a9c87e-394c-4fef-89f2-aa4223a2aeb5)합니다.  
+ 수명 관리를 구현 하려면 사용을 <xref:System.AddIn.Pipeline.ContractHandle> 계약의 수명 토큰을 연결 하는 개체입니다. 작업 수명 관리를 위해이 핸들에 대 한 참조를 유지 해야 합니다. 토큰이 적용 되 면 더 이상 사용 되지 않으며 가비지 수집에 사용할 수 있도록 하는 경우 개체의 추가 기능 시스템을 삭제할 수 때문에 없는 추가 프로그래밍이 필요 합니다. 자세한 내용은 [수명 관리](https://msdn.microsoft.com/library/57a9c87e-394c-4fef-89f2-aa4223a2aeb5)를 참조하세요.  
   
 #### <a name="to-create-the-host-side-adapter"></a>호스트 쪽 어댑터를 만들려면  
   
@@ -355,8 +355,8 @@ ms.locfileid: "45591957"
 4.  형식 **종료** 누릅니다 합니다 **Enter** 키 응용 프로그램을 닫습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [연습: 호스트 변경으로 이전 버전과 호환성 설정](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
- [연습: 호스트와 추가 기능 간의 컬렉션 전달](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
- [파이프라인 개발 요구 사항](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)  
- [계약, 뷰 및 어댑터](https://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c)  
- [파이프라인 개발](../../../docs/framework/add-ins/pipeline-development.md)
+- [연습: 호스트 변경으로 이전 버전과 호환성 설정](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
+-  [연습: 호스트와 추가 기능 간의 컬렉션 전달](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
+-  [파이프라인 개발 요구 사항](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)  
+-  [계약, 뷰 및 어댑터](https://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c)  
+-  [파이프라인 개발](../../../docs/framework/add-ins/pipeline-development.md)

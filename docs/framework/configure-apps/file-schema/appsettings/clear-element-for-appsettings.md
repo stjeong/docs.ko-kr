@@ -1,5 +1,5 @@
 ---
-title: '&lt;선택을 취소&gt; 요소에 대 한 &lt;appSettings&gt;'
+title: '&lt;지우기&gt; 요소에 대 한 &lt;appSettings&gt;'
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/clear
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 525818309ddc142fdb3ad65ce841ea58c1d635a2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bc52e3149c213925ea64a8421ee65befeea4161e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350668"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184220"
 ---
-# <a name="clear-element-for-appsettings"></a>\<지우기 > 요소에 대 한 \<g s >
+# <a name="clear-element-for-appsettings"></a>\<지우기 > 요소에 대 한 \<appSettings >
 
 사용자 지정 응용 프로그램 설정을 지웁니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "33350668"
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | 파일 경로, XML 웹 서비스 Url 또는 기타 사용자 지정 응용 프로그램 구성 정보 같은 사용자 지정 응용 프로그램 설정을 포함합니다. |
+| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | 파일 경로, XML 웹 서비스 Url 또는 기타 사용자 지정 응용 프로그램 구성 정보와 같은 사용자 지정 응용 프로그램 설정을 포함합니다. |
 
 ## <a name="child-elements"></a>자식 요소
 
@@ -58,4 +58,4 @@ ms.locfileid: "33350668"
 
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+- [.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

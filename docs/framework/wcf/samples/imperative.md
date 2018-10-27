@@ -3,11 +3,11 @@ title: 명령적
 ms.date: 03/30/2017
 ms.assetid: 4f7ce807-c0e4-407a-92a6-22abafb40b51
 ms.openlocfilehash: 7547e3ed3d573cccce068aec239710e76d29bf38
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49370941"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50189539"
 ---
 # <a name="imperative"></a>명령적
 이 샘플에는 정의 하는 방법을 보여 줍니다.는 <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> 정의 하는 대신 코드를 사용 하는 서비스에 대 한는 `wsHttpBinding` 구성의 바인딩. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다.  

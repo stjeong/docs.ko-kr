@@ -2,14 +2,12 @@
 title: '방법: 서명 된 Friend 어셈블리 (Visual Basic) 만들기'
 ms.date: 03/14/2018
 ms.assetid: f2afd83d-b044-484b-a56d-56d0a8a40647
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 6b31a359167307a58d8393e9c29e7dab1575cfdc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6a9dcc65e7e496a436d81ad2d311a4174f111104
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643668"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188444"
 ---
 # <a name="how-to-create-signed-friend-assemblies-visual-basic"></a>방법: 서명 된 Friend 어셈블리 (Visual Basic) 만들기
 이 예제에서는 강력한 이름을 가진 어셈블리와 함께 friend 어셈블리를 사용하는 방법을 보여 줍니다. 두 어셈블리에 모두 강력한 이름을 지정해야 합니다. 이 예제의 두 어셈블리는 모두 동일한 키를 사용하지만 두 어셈블리에 서로 다른 키를 사용할 수 있습니다.  
@@ -18,7 +16,7 @@ ms.locfileid: "33643668"
   
 1.  명령 프롬프트를 엽니다.  
   
-2.  강력한 이름 도구와 함께 다음 명령 시퀀스를 사용하여 키 파일을 생성하고 해당 공개 키를 표시합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)]을 참조 하십시오.[Sn.exe (강력한 이름 도구)](../../../../framework/tools/sn-exe-strong-name-tool.md)).  
+2.  강력한 이름 도구와 함께 다음 명령 시퀀스를 사용하여 키 파일을 생성하고 해당 공개 키를 표시합니다. 자세한 내용은 [Sn.exe (강력한 이름 도구)]을 참조 하세요[Sn.exe (강력한 이름 도구)](../../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
     1.  이 예제에 대한 강력한 이름 키를 생성하고 FriendAssemblies.snk 파일에 저장합니다.  
   
@@ -32,7 +30,7 @@ ms.locfileid: "33643668"
   
          `sn -tp FriendAssemblies.publickey`  
   
-3.  Visual Basic 파일을 만듭니다 `friend_signed_A` 다음 코드가 들어 있는입니다. 코드에서는 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 사용하여 friend_signed_B를 friend 어셈블리로 선언합니다.  
+3.  Visual Basic 파일을 만듭니다 `friend_signed_A` 다음 코드를 포함 하는 합니다. 코드에서는 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 사용하여 friend_signed_B를 friend 어셈블리로 선언합니다.  
   
      강력한 이름 도구는 실행할 때마다 새 공개 키를 생성합니다. 따라서 다음 예제와 같이 다음 코드의 공개 키를 방금 생성한 공개 키로 대체해야 합니다.  
   
@@ -57,7 +55,7 @@ ms.locfileid: "33643668"
     Vbc -target:library -keyfile:FriendAssemblies.snk friend_signed_A.vb  
     ```  
   
-5.  라는 Visual Basic 파일 만들기 `friend_signed_B` 다음 코드를 포함 합니다. friend_signed_A는 friend_signed_B를 friend 어셈블리로 지정하기 때문에 friend_signed_B의 코드는 friend_signed_A의 `Friend` 형식과 멤버에 액세스할 수 있습니다. 파일에는 다음 코드가 포함되어 있습니다.  
+5.  라는 Visual Basic 파일을 만들 `friend_signed_B` 는 다음 코드가 포함 되어 있습니다. friend_signed_A는 friend_signed_B를 friend 어셈블리로 지정하기 때문에 friend_signed_B의 코드는 friend_signed_A의 `Friend` 형식과 멤버에 액세스할 수 있습니다. 파일에는 다음 코드가 포함되어 있습니다.  
   
     ```vb  
     ' friend_signed_B.vb  
@@ -77,11 +75,11 @@ ms.locfileid: "33643668"
     vbc -keyfile:FriendAssemblies.snk -r:friend_signed_A.dll friend_signed_B.vb  
     ```  
   
-     컴파일러에서 생성된 어셈블리 이름은 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성에 전달된 friend 어셈블리 이름과 일치해야 합니다. 사용 하 여 어셈블리를 명시적으로 설정할 수는 `-out` 컴파일러 옵션입니다. 자세한 내용은 참조 [-(Visual Basic) 아웃](../../../../visual-basic/reference/command-line-compiler/out.md)합니다.  
+     컴파일러에서 생성된 어셈블리 이름은 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성에 전달된 friend 어셈블리 이름과 일치해야 합니다. 사용 하 여 어셈블리를 명시적으로 설정할 수는 `-out` 컴파일러 옵션입니다. 자세한 내용은 [-(Visual Basic) out](../../../../visual-basic/reference/command-line-compiler/out.md)합니다.  
   
 7.  friend_signed_B.exe 파일을 실행합니다.  
   
-     프로그램 "Class1.Test" 문자열을 표시 합니다.  
+     프로그램에서 "Class1.Test" 문자열을 표시합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성과 <xref:System.Security.Permissions.StrongNameIdentityPermission> 클래스 간에는 유사점이 있습니다. 주요 차이점은 <xref:System.Security.Permissions.StrongNameIdentityPermission>은 코드의 특정 섹션을 실행하는 보안 권한을 요구할 수 있는 반면, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성은 `Friend` 형식 및 멤버의 표시 유형을 제어한다는 것입니다.  

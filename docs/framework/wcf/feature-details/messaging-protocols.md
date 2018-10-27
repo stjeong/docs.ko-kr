@@ -2,12 +2,12 @@
 title: 메시징 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
-ms.openlocfilehash: 7d94b917f3d8d2fd7faed28b9320edc240724e0b
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 4678980520266879b41bea6e10f075a2df116457
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46703013"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183856"
 ---
 # <a name="messaging-protocols"></a>메시징 프로토콜
 
@@ -47,7 +47,7 @@ Windows Communication Foundation (WCF) 채널 스택에 내부 메시지 표현�
 
 다음 XML 네임 스페이스 및 관련된 접두사는이 항목 전체에서 사용 됩니다.
 
-| 접두사 | Namespace Uniform Resource Identifier (URI) | [---|---| | s11 | `http://schemas.xmlsoap.org/soap/envelope`| | s12 | `http://www.w3.org/2003/05/soap-envelope`| | wsa | `http://www.w3.org/2004/08/addressing`| | wsam | `http://www.w3.org/2007/05/addressing/metadata`| | wsap | `http://schemas.xmlsoap.org/ws/2004/09/policy/addressing`| | wsa10 | `http://www.w3.org/2005/08/addressing`| | wsaw10 | `http://www.w3.org/2006/05/addressing/wsdl`| | xop | `http://www.w3.org/2004/08/xop/include`| | xmime |`http://www.w3.org/2004/06/xmlmime`<br /><br /> `http://www.w3.org/2005/05/xmlmime`| | dp |`http://schemas.microsoft.com/net/2006/06/duplex`|
+| 접두사 | Namespace Uniform Resource Identifier (URI) | [---|---| | s11 | `http://schemas.xmlsoap.org/soap/envelope` | | s12 | `http://www.w3.org/2003/05/soap-envelope` | | wsa | `http://www.w3.org/2004/08/addressing` | | wsam | `http://www.w3.org/2007/05/addressing/metadata` | | wsap | `http://schemas.xmlsoap.org/ws/2004/09/policy/addressing` | | wsa10 | `http://www.w3.org/2005/08/addressing` | | wsaw10 | `http://www.w3.org/2006/05/addressing/wsdl` | | xop | `http://www.w3.org/2004/08/xop/include` | | xmime |`http://www.w3.org/2004/06/xmlmime`<br /><br /> `http://www.w3.org/2005/05/xmlmime` | | dp |`http://schemas.microsoft.com/net/2006/06/duplex` |
 
 ## <a name="soap-11-and-soap-12"></a>SOAP 1.1 및 SOAP 1.2
 
@@ -190,20 +190,20 @@ WCF 끝점을 사용 하 여 메시지에 대해 구성 된 경우는 지정 된
 ### <a name="web-services-addressing-faults"></a>Web Services Addressing 오류
 R3411: WCF Ws-addressing 2004/08을 정의한 다음 오류를 생성 합니다.
 
-|코드|원인|
+| 코드 | 원인 |
 |----------|-----------|
-|`wsa:DestinationUnreachable`|이 채널에 대해 설정된 회신 주소와 다른 `ReplyTo`를 사용하여 메시지가 도착했습니다. 받는 사람 헤더에 지정된 주소에서 수신 대기하는 엔드포인트가 없습니다.|
-|`wsa:ActionNotSupported`|엔드포인트와 연결된 인프라 채널 또는 디스패처가 `Action` 헤더에 지정된 동작을 인식하지 못합니다.|
+| `wsa:DestinationUnreachable` | 이 채널에 대해 설정된 회신 주소와 다른 `ReplyTo`를 사용하여 메시지가 도착했습니다. 받는 사람 헤더에 지정된 주소에서 수신 대기하는 엔드포인트가 없습니다. |
+| `wsa:ActionNotSupported` | 엔드포인트와 연결된 인프라 채널 또는 디스패처가 `Action` 헤더에 지정된 동작을 인식하지 못합니다. |
 
 R3412: WCF Ws-addressing 1.0을 정의한 다음 오류를 생성 합니다.
 
-|코드|원인|
+| 코드 | 원인 |
 |----------|-----------|
-|`wsa10:InvalidAddressingHeader`|중복 `wsa:To`, `wsa:ReplyTo`하십시오 `wsa:From` 또는 `wsa:MessageID`합니다. 중복 `wsa:RelatesTo` 동일한 `RelationshipType`입니다.|
-|`wsa10:MessageAddressingHeaderRequired`|필수 주소 지정 헤더가 없습니다.|
-|`wsa10:DestinationUnreachable`|이 채널에 대해 설정된 회신 주소와 다른 `ReplyTo`를 사용하여 메시지가 도착했습니다. 받는 사람 헤더에 지정된 주소에서 수신 대기하는 엔드포인트가 없습니다.|
-|`wsa10:ActionNotSupported`|`Action` 헤더에 지정된 동작이 엔드포인트와 연결된 디스패처 또는 인프라 채널에서 인식되지 않습니다.|
-|`wsa10:EndpointUnavailable`|RM 채널에서 이 오류를 다시 보냅니다. 이는 엔드포인트에서 `CreateSequence` 메시지의 주소 지정 헤더를 검사하여 시퀀스를 처리하지 않는다는 것을 나타냅니다.|
+| `wsa10:InvalidAddressingHeader` | 중복 `wsa:To`, `wsa:ReplyTo`하십시오 `wsa:From` 또는 `wsa:MessageID`합니다. 중복 `wsa:RelatesTo` 동일한 `RelationshipType`입니다. |
+| `wsa10:MessageAddressingHeaderRequired` | 필수 주소 지정 헤더가 없습니다. |
+| `wsa10:DestinationUnreachable` | 이 채널에 대해 설정된 회신 주소와 다른 `ReplyTo`를 사용하여 메시지가 도착했습니다. 받는 사람 헤더에 지정된 주소에서 수신 대기하는 엔드포인트가 없습니다. |
+| `wsa10:ActionNotSupported` | `Action` 헤더에 지정된 동작이 엔드포인트와 연결된 디스패처 또는 인프라 채널에서 인식되지 않습니다. |
+| `wsa10:EndpointUnavailable` | RM 채널에서 이 오류를 다시 보냅니다. 이는 엔드포인트에서 `CreateSequence` 메시지의 주소 지정 헤더를 검사하여 시퀀스를 처리하지 않는다는 것을 나타냅니다. |
 
 위 표의 코드가 SOAP 1.1의 경우 `FaultCode`에 매핑되고 SOAP 1.2의 경우 `SubCode`(Code=Sender)에 매핑됩니다.
 

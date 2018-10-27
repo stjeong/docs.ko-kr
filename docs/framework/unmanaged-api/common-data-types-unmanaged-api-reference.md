@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: e4ab2c4c-9433-4eba-9e9a-096de406cafb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2c359c9b14452e82b7fd2425409b373ead430d3d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 561a6a5a8e778ab59a0d0f1f7f5327104ead2c79
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33407081"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50185536"
 ---
 # <a name="common-data-types-unmanaged-api-reference"></a>공통 데이터 유형(관리되지 않는 API 참조)
 이 항목에서는 C/C++ `typedef` 문에 의해 정의되는 .NET Framework용 관리되지 않는 API에서 사용하는 단순 데이터 형식을 소개합니다. 이러한 데이터 형식은 보통 C/C++ 원시 데이터 형식의 별칭입니다. 일반적으로 이러한 데이터 형식의 값은 불투명합니다. 즉, 이러한 값은 수정하지 않고도 다른 함수나 메서드로 전달할 수 있도록 특정 함수나 메서드에서 반환됩니다.  
@@ -33,8 +33,8 @@ ms.locfileid: "33407081"
 |ObjectID|`typedef UINT_PTR ObjectID;`|corprof.h|개체의 식별자입니다.|  
 |ProcessID|`typedef UINT_PTR ProcessID;`|corprof.h|관리되는 프로세스의 식별자입니다.|  
 |ReJITID|`typedef UINT_PTR ReJITID;`|corprof.h|JIT된 함수의 식별자입니다.|  
-|TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|식별자는 [ICLRTask](../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) 인스턴스.|  
+|TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|식별자를 [ICLRTask](../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) 인스턴스.|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|관리되는 스레드의 식별자입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [관리되지 않는 API 참조](../../../docs/framework/unmanaged-api/index.md)
+- [관리되지 않는 API 참조](../../../docs/framework/unmanaged-api/index.md)

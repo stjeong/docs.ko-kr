@@ -2,12 +2,12 @@
 title: 인터넷 정보 서비스 호스팅을 위한 최선의 방법
 ms.date: 03/30/2017
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
-ms.openlocfilehash: 2cb193cd2f504b5010ede6887e814e0c4d0a1a3c
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 5efa4c56cafe32dcc6864ba0bd68d14ea10b15e3
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840747"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50187572"
 ---
 # <a name="internet-information-services-hosting-best-practices"></a>인터넷 정보 서비스 호스팅을 위한 최선의 방법
 이 항목에서는 Windows Communication Foundation (WCF) 서비스를 호스트 하기 위한 몇 가지 모범 사례를 간략하게 설명 합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "48840747"
 ## <a name="wcf-in-multi-homed-or-multi-named-scenarios"></a>멀티홈 또는 여러 개의 이름이 지정된 시나리오의 WCF  
  컴퓨터 집합이 공용 외부 이름을 공유 하는 위치는 IIS 웹 팜 내에서 WCF 서비스를 배포할 수 있습니다 (같은 `http://www.contoso.com`)를 개별적으로 다른 호스트 이름을 처리할 수 있지만 (예를 들어 `http://www.contoso.com` 서로 다른 컴퓨터 트래픽을 보낼 수 있습니다 명명 된 `http://machine1.internal.contoso.com` 고 `http://machine2.internal.contoso.com`). 이 배포 시나리오는 WCF에서 완전히 지원 됩니다 하 하지만 올바른 (외부) 호스트 서비스의 메타 데이터 (Web Services Description Language)에 표시할 WCF 서비스를 호스팅하는 IIS 웹 사이트의 특별 한 구성이 필요 합니다.  
   
- WCF 서비스 메타 데이터에 올바른 호스트 이름이 표시 되는지 확인을 생성 하 고 명시적 호스트 이름을 사용 하 여을 WCF 서비스를 호스팅하는 IIS 웹 사이트에 대 한 기본 id를 구성 합니다. 예를 들어 www.contoso.com 팜 내에 있는 컴퓨터의 IIS 사이트 바인딩을 사용할지 * http:80:www.contoso.com 및 \*: 443:www.contoso.com HTTPS에 대 한 합니다.  
+ WCF 서비스 메타 데이터에 올바른 호스트 이름이 표시 되는지 확인을 생성 하 고 명시적 호스트 이름을 사용 하 여을 WCF 서비스를 호스팅하는 IIS 웹 사이트에 대 한 기본 id를 구성 합니다. 예를 들어 내부에 상주 하는 컴퓨터를 `www.contoso.com` 팜의 IIS 사이트 바인딩을 사용 해야 * http:80:www.contoso.com 및 \*: 443:www.contoso.com HTTPS에 대 한 합니다.  
   
  IIS MMC(Microsoft Management Console) 스냅인을 사용하여 IIS 웹 사이트 바인딩을 구성할 수 있습니다.  
   

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - user-defined bindings [WCF]
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
 ms.openlocfilehash: 7be7c156ec20a15cf8d1a12d8d1f429b6c2c33a9
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372236"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50186059"
 ---
 # <a name="creating-user-defined-bindings"></a>사용자 정의 바인딩 만들기
 시스템에서 제공하지 않는 바인딩은 다음과 같은 여러 가지 방법으로 만들 수 있습니다.  

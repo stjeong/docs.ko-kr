@@ -2,12 +2,12 @@
 title: WCF 서비스에서 REST 스타일 서비스 호출
 ms.date: 03/30/2017
 ms.assetid: 77df81d8-7f53-4daf-8d2d-bf7996e94d5a
-ms.openlocfilehash: 8f520b1f77b9ca41b9fd2b8d51c1b935ab1e0a87
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: be9f15d35ec00ba91a06abf5a0a413b59452270b
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33488513"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184246"
 ---
 # <a name="calling-a-rest-style-service-from-a-wcf-service"></a>WCF 서비스에서 REST 스타일 서비스 호출
 일반(SOAP 기반) WCF 서비스에서 REST 스타일의 서비스를 호출할 때 서비스 메서드의 작업 컨텍스트(들어오는 요청에 대한 정보 포함)가 나가는 요청에 사용되는 컨텍스트를 재정의합니다. 따라서 HTTP GET 요청이 HTTP POST 요청으로 변경됩니다. WCF 서비스가 REST 스타일 서비스를 호출하는 데 올바른 컨텍스트를 사용하도록 적용하려면 새 <xref:System.ServiceModel.OperationContextScope>를 만들고 작업 컨텍스트 범위 내에서 REST 스타일 서비스를 호출합니다. 이 항목에서는 이러한 기술을 설명하는 간단한 예제를 만드는 방법에 대해 설명합니다.  
@@ -80,7 +80,7 @@ public class NormalService : INormalInterface
 ```  
   
 ## <a name="create-the-client-proxy-for-the-rest-style-service"></a>REST 스타일 서비스에 대한 클라이언트 프록시 만들기  
- 사용 하 여 <!--zz<xref:System.ServiceModel.ClientBase%60>--> `System.ServiceModel.ClientBase` 클라이언트 프록시를 구현 합니다. 호출되는 각 메서드에 대해 새로운 <xref:System.ServiceModel.OperationContextScope>가 생성되고 작업 호출에 사용됩니다.  
+ 사용 하 여 <xref:System.ServiceModel.ClientBase%601> 클라이언트 프록시를 구현 합니다. 호출되는 각 메서드에 대해 새로운 <xref:System.ServiceModel.OperationContextScope>가 생성되고 작업 호출에 사용됩니다.  
   
 ```csharp
 public class MyRestClient : ClientBase<IRestInterface>, IRestInterface

@@ -9,14 +9,12 @@ helpviewer_keywords:
 - -win32resource compiler option [Visual Basic]
 - win32resource compiler option [Visual Basic]
 ms.assetid: e226946d-19ce-4cc9-91f5-aed24f77aa2b
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: ac495e10be2ec1534dc9d9081aef369773d93e17
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 4ecac4ffe665d724d625aaeb7cc1e008eb13ca54
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42933053"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50186085"
 ---
 # <a name="-win32resource"></a>-win32resource
 출력 파일에 Win32 리소스 파일을 삽입합니다.  
@@ -41,7 +39,7 @@ ms.locfileid: "42933053"
 > [!NOTE]
 >  `-win32resource` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 있는 명령줄에서 컴파일할 경우에 사용할 수 있는 것입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 컴파일을 `In.vb` Win32 리소스 파일, 연결 및 `Rf.res`:  
   
 ```console  

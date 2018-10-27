@@ -3,11 +3,11 @@ title: 응용 프로그램 구성
 ms.date: 03/30/2017
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
 ms.openlocfilehash: e9a5429ef573fdee9478b63b76d2da8005215c93
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49370928"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50187350"
 ---
 # <a name="configuring-your-application"></a>응용 프로그램 구성
 Windows Communication Foundation (WCF).NET 구성 시스템을 사용 하 고 컴퓨터 및 응용 프로그램 범위에서 서비스를 구성할 수 있습니다.  

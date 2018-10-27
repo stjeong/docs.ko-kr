@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 671302003c3a1f3a37e1773aeeae9cb09a457d13
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 8363351efd0b6cbcfee5b137cf9f222e16dcc425
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033365"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188744"
 ---
 # <a name="ltcryptoclassesgt-element"></a>&lt;cryptoClasses&gt; 요소
 [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) 요소에 있는 이름에 매핑되는 암호화 클래스의 목록이 포함되어 있습니다.  
@@ -79,9 +79,9 @@ ms.locfileid: "48033365"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Cryptography>  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
- [암호화 서비스](../../../../../docs/standard/security/cryptographic-services.md)  
- [System.Security.Cryptography.CryptoConfig.CreateFromName](Overload:System.Security.Cryptography.CryptoConfig.CreateFromName)  
- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- <xref:System.Security.Cryptography>  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+- [System.Security.Cryptography.CryptoConfig.CreateFromName](Overload:System.Security.Cryptography.CryptoConfig.CreateFromName)  
+- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

@@ -1,15 +1,15 @@
 ---
-title: 비동기 작업 또는 작업 (Visual Basic) 목록 취소
+title: 비동기 작업 또는 (Visual Basic) 작업 목록 취소
 ms.date: 07/20/2015
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-ms.openlocfilehash: 2823514bc462f198a43316b40eb05bc1ffed0e72
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: 0024cb1bf4ac7c27d64edcd695b4782dfbcd16af
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34728669"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183219"
 ---
-# <a name="cancel-an-async-task-or-a-list-of-tasks-visual-basic"></a>비동기 작업 또는 작업 (Visual Basic) 목록 취소
+# <a name="cancel-an-async-task-or-a-list-of-tasks-visual-basic"></a>비동기 작업 또는 (Visual Basic) 작업 목록 취소
 작업이 완료될 때까지 기다리지 않으려면 비동기 응용 프로그램을 취소할 때 사용하는 단추를 설정할 수 있습니다. 이 항목의 예제에 따라 한 웹 사이트 또는 웹 사이트 목록의 콘텐츠를 다운로드하는 응용 프로그램에 취소 단추를 추가할 수 있습니다.  
   
  예제에서는 UI를 사용 하는 [미세 조정 Your 비동기 응용 프로그램 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md) 에 대해 설명 합니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "34728669"
   
 2.  메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션**을 선택합니다.  
   
-3.  에 **프로젝트 열기** 대화 상자, 하면 압축을 푼 샘플 코드가 저장 된 폴더를 연 다음 AsyncFineTuningVB에 대 한 솔루션 (.sln) 파일을 엽니다.  
+3.  에 **프로젝트 열기** 대화 상자에서 압축을 해제 하는 샘플 코드를 포함 하는 폴더를 연 다음 AsyncFineTuningVB에 대 한 솔루션 (.sln) 파일을 엽니다.  
   
 4.  **솔루션 탐색기**에서 **CancelATask** 프로젝트에 대한 바로 가기 메뉴를 열고 **시작 프로젝트로 설정**을 선택합니다.  
   
@@ -35,14 +35,14 @@ ms.locfileid: "34728669"
   
      디버그하지 않고 프로젝트를 실행하려면 Ctrl+F5를 선택합니다.  
   
- 프로젝트를 다운로드 하지 않으려면 하는 경우이 항목의 끝부분에 MainWindow.xaml.vb 파일을 검토할 수 있습니다.  
+ 프로젝트를 다운로드 하지 않으려는 경우에이 항목의 끝에서 MainWindow.xaml.vb 파일을 검토할 수 있습니다.  
   
 ### <a name="building-the-example"></a>예제 빌드  
  다음 변경 내용은 웹 사이트를 다운로드하는 응용 프로그램에 **취소** 단추를 추가합니다. 예제를 다운로드하거나 빌드하지 않으려면 이 항목의 끝에 있는 “전체 예제” 섹션에서 최종 결과를 검토할 수 있습니다. 코드에서 변경 내용에는 별표가 표시됩니다.  
   
  직접 예제를 빌드하려면 "예제 다운로드" 섹션의 지침을 단계별로 따르지만 **시작 프로젝트**로 **CancelATask** 대신 **StarterCode**를 선택합니다.  
   
- 해당 프로젝트의 MainWindow.xaml.vb 파일에 다음과 같은 변경을 추가 합니다.  
+ 그런 다음 해당 프로젝트의 MainWindow.xaml.vb 파일에 다음 변경 내용의 추가 합니다.  
   
 1.  액세스하는 모든 메서드에 대한 범위 내에 있는 `CancellationTokenSource` 변수 `cts`를 선언합니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "34728669"
   
         ' GetAsync returns a Task(Of HttpResponseMessage).   
         ' ***The ct argument carries the message if the Cancel button is chosen.  
-        Dim response As HttpResponseMessage = Await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct)  
+        Dim response As HttpResponseMessage = Await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct)  
   
         ' Retrieve the website contents from the HttpResponseMessage.  
         Dim urlContents As Byte() = Await response.Content.ReadAsByteArrayAsync()  
@@ -145,7 +145,7 @@ ms.locfileid: "34728669"
   
 2.  메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션**을 선택합니다.  
   
-3.  에 **프로젝트 열기** 대화 상자, 하면 압축을 푼 샘플 코드가 저장 된 폴더를 연 다음 AsyncFineTuningVB에 대 한 솔루션 (.sln) 파일을 엽니다.  
+3.  에 **프로젝트 열기** 대화 상자에서 압축을 해제 하는 샘플 코드를 포함 하는 폴더를 연 다음 AsyncFineTuningVB에 대 한 솔루션 (.sln) 파일을 엽니다.  
   
 4.  **솔루션 탐색기**에서 **CancelAListOfTasks** 프로젝트에 대한 바로 가기 메뉴를 열고 **시작 프로젝트로 설정**을 선택합니다.  
   
@@ -153,7 +153,7 @@ ms.locfileid: "34728669"
   
      디버그하지 않고 프로젝트를 실행하려면 Ctrl+F5를 선택합니다.  
   
- 프로젝트를 다운로드 하지 않으려면 하는 경우이 항목의 끝부분에 MainWindow.xaml.vb 파일을 검토할 수 있습니다.  
+ 프로젝트를 다운로드 하지 않으려는 경우에이 항목의 끝에서 MainWindow.xaml.vb 파일을 검토할 수 있습니다.  
   
 ### <a name="building-the-example"></a>예제 빌드  
  직접 예제를 확장하려면 "예제 다운로드" 섹션의 지침을 단계별로 따르되, **CancelATask**를 **시작 프로젝트**로 선택합니다. 해당 프로젝트에 다음 변경 내용을 추가합니다. 프로그램에서 변경 내용에는 별표가 표시됩니다.  
@@ -166,13 +166,13 @@ ms.locfileid: "34728669"
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -253,7 +253,7 @@ ms.locfileid: "34728669"
  [Async 샘플: 응용 프로그램 미세 조정](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)에서 프로젝트를 다운로드할 수 있습니다.  
   
 ### <a name="cancel-a-task-example"></a>작업 취소 예제  
- 다음 코드는 단일 작업을 취소 하는 예제에 대 한 전체 MainWindow.xaml.vb 파일입니다.  
+ 다음 코드는 단일 작업을 취소 하는 예제의 전체 MainWindow.xaml.vb 파일입니다.  
   
 ```vb  
 ' Add an Imports directive and a reference for System.Net.Http.  
@@ -313,7 +313,7 @@ Class MainWindow
   
         ' GetAsync returns a Task(Of HttpResponseMessage).   
         ' ***The ct argument carries the message if the Cancel button is chosen.  
-        Dim response As HttpResponseMessage = Await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct)  
+        Dim response As HttpResponseMessage = Await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct)  
   
         ' Retrieve the website contents from the HttpResponseMessage.  
         Dim urlContents As Byte() = Await response.Content.ReadAsByteArrayAsync()  
@@ -337,7 +337,7 @@ End Class
 ```  
   
 ### <a name="cancel-a-list-of-tasks-example"></a>작업 목록 취소 예제  
- 다음 코드는 작업 목록 취소 예제에 대 한 전체 MainWindow.xaml.vb 파일입니다.  
+ 다음 코드는 작업 목록을 취소 하는 예제의 전체 MainWindow.xaml.vb 파일입니다.  
   
 ```vb  
 ' Add an Imports directive and a reference for System.Net.Http.  
@@ -412,13 +412,13 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  

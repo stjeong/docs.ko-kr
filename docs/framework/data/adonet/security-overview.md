@@ -2,12 +2,12 @@
 title: 보안 개요 2
 ms.date: 03/30/2017
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
-ms.openlocfilehash: 18a7496d39cd08e8b340e23c57fcd10dae5ed281
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: db7b45fef28b0b28e7da550c24d510da73c02aa9
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861860"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183531"
 ---
 # <a name="security-overview"></a>보안 개요
 응용 프로그램 보안은 지속적인 프로세스입니다. 새로운 기술로 인해 앞으로 어떠한 공격이 가해질지 예측할 수 없기 때문에 개발자가 응용 프로그램이 모든 공격으로부터 안전하다고 장담하는 것은 불가능합니다. 반대로, 아직까지 아무도 시스템의 보안 허점을 발견(또는 발표)하지 않았더라도 허점이 없다고 할 수는 없습니다. 보안 계획은 프로젝트 디자인 단계에서 수립해야 하며 아울러 응용 프로그램의 수명이 다할 때까지 이러한 보안을 어떻게 유지할지도 계획해야 합니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "43861860"
 |리소스|설명|  
 |--------------|-----------------|  
 |[코드 액세스 보안 및 ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md)|코드 액세스 보안, 역할 기반 보안, 부분적으로 신뢰할 수 있는 환경 간의 상호 작용을 ADO.NET 응용 프로그램의 측면에서 설명합니다.|  
-|[코드 액세스 보안](https://msdn.microsoft.com/library/23a20143-241d-4fe5-9d9f-3933fd594c03)|.NET Framework의 CAS에 대해 설명하는 추가 항목 링크를 제공합니다.|  
+|[코드 액세스 보안](../../../../docs/framework/misc/code-access-security.md)|.NET Framework의 CAS에 대해 설명하는 추가 항목 링크를 제공합니다.|  
   
 ## <a name="database-security"></a>데이터베이스 보안  
  데이터 소스에도 최소 권한의 원칙이 적용됩니다. 데이터베이스 보안을 위한 일반적인 지침 중 일부가 아래에 나와 있습니다.  

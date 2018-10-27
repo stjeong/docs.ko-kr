@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: ad1611701dca48244f3b2a93ecc3ea86363081ed
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3909b9cd012ef47f5a191dbc1e7978a5852e62fe
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47230796"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184168"
 ---
 # <a name="ltcryptonamemappinggt-element"></a>&lt;cryptoNameMapping&gt; 요소
 이름에 대한 클래스의 매핑이 포함되어 있습니다.  
@@ -77,7 +77,7 @@ ms.locfileid: "47230796"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
- [암호화 서비스](../../../../../docs/standard/security/cryptographic-services.md)  
- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

@@ -6,17 +6,15 @@ helpviewer_keywords:
 - -verbose compiler option [Visual Basic]
 - /verbose compiler option [Visual Basic]
 ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: a5f257fce67d8e348b69404411c12ded785cfd68
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e70496b552ced8e07cbe3cde34cda377d94da9f4
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33652131"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188419"
 ---
 # <a name="-verbose"></a>-verbose
-컴파일러가 상태 및 오류에 대 한 자세한 정보 메시지를 생성 합니다.  
+컴파일러에서 상태 및 오류에 대 한 자세한 정보 표시 메시지를 생성 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -26,16 +24,16 @@ ms.locfileid: "33652131"
   
 ## <a name="arguments"></a>인수  
  `+` &#124; `-`  
- 선택 사항입니다. 지정 `-verbose` 지정 하는 것과 같습니다 `-verbose+`, 자세한 정보 메시지를 내보낼 컴파일러가 합니다. 이 옵션의 기본값은 `-verbose-`합니다.  
+ 선택 사항입니다. 지정 `-verbose` 지정 하는 것 같습니다 `-verbose+`는 컴파일러가을 자세한 정보 표시 메시지를 내보냅니다. 이 옵션의 기본값은 `-verbose-`합니다.  
   
 ## <a name="remarks"></a>설명  
- `-verbose` 옵션은 컴파일러에서 생성 한 오류의 총 수에 대 한 정보를 표시 합니다. 모듈에 의해 로드 되 고 있는 어셈블리를 보고 하 고 현재 컴파일 중인 파일을 표시 합니다.  
+ `-verbose` 옵션은 컴파일러에서 생성 한 오류의 총 수에 대 한 정보를 표시, 모듈에서 어셈블리를 로드 하는 보고 및 현재 컴파일 중인 파일을 표시 합니다.  
   
 > [!NOTE]
->  `-verbose` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 없습니다; 명령줄에서 컴파일할 경우에 사용할 수는 있습니다.  
+>  `-verbose` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 있는 명령줄에서 컴파일할 경우에 사용할 수 있는 것입니다.  
   
 ## <a name="example"></a>예제  
- 다음 코드에서는 `In.vb` 자세한 상태 정보를 표시 하려면 컴파일러를 안내 합니다.  
+ 다음 코드에서는 `In.vb` 받고 자세한 상태 정보를 표시 하도록 컴파일러에 지시 합니다.  
   
 ```console  
 vbc -verbose in.vb  

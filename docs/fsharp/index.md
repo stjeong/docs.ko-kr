@@ -3,12 +3,12 @@ title: F# 가이드
 description: 이 가이드에서는 F#, .NET에서 실행되는 함수형 프로그래밍 언어에 대한 다양한 교육 자료에 대한 개요를 제공합니다.
 author: cartermp
 ms.date: 08/03/2018
-ms.openlocfilehash: d3e10b6eb99f35b8eddeaa1f0ae257dd17d5cc41
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 5cd5bd95373c8a52a8d2b2348a51970560e8b272
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43480680"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188367"
 ---
 # <a name="f-guide"></a>F# 가이드
 
@@ -56,7 +56,7 @@ F # 가이드는 F # 언어에 알아보려면 많은 리소스를 제공 합니
 
 합니다 [F # 코드 조각 웹 사이트](http://www.fssnip.net) 대규모 거의 항상 고급 조각 까지의 완전 초보자를 위한에서 F #에서 작업을 수행 하는 방법을 보여 주는 코드 조각 집합을 포함 합니다.
 
-합니다 [F # Software Foundation Slack](http://fsharp.org/guides/slack/) 좋은 초보자와 전문가 모두에 매우 활발에 있고 일부 프로그래머 세계에서 최상의 F # 채팅을 사용할 수 있습니다. 조인 하는 것이 좋습니다.
+합니다 [F # Software Foundation Slack](https://fsharp.org/guides/slack/) 좋은 초보자와 전문가 모두에 매우 활발에 있고 일부 프로그래머 세계에서 최상의 F # 채팅을 사용할 수 있습니다. 조인 하는 것이 좋습니다.
 
 ## <a name="the-f-software-foundation"></a>F# Software Foundation
 
@@ -64,4 +64,4 @@ Microsoft F # 언어 및 Visual Studio에서 해당 도구의 주 개발자 경�
 
 F# Software Foundation의 임무는 F# 프로그래밍 언어를 홍보하고 보호하고 발전시키며, F# 프로그래머의 다양한 국제 커뮤니티의 성장을 지원하고 용이하게 만드는 것입니다.
 
-자세한 내용을 알아보고 참여하려면 [fsharp.org](http://fsharp.org)를 참조하세요. 에 참가 하려면 무료 이며 F # foundation에서 개발자의 네트워크 기회를 놓치지 않으려면 것!
+자세한 내용을 알아보고 참여하려면 [fsharp.org](https://fsharp.org)를 참조하세요. 에 참가 하려면 무료 이며 F # foundation에서 개발자의 네트워크 기회를 놓치지 않으려면 것!

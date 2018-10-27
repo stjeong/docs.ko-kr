@@ -2,12 +2,12 @@
 title: '값 옵션 (F #)'
 description: '옵션 종류의 구조체 버전인는 F # 값 옵션 형식에 대해 알아봅니다.'
 ms.date: 06/16/2018
-ms.openlocfilehash: 5647ef61725401b10a6045b14eef11f5b041e3e9
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 978bd1713c16f7c050ccb097cb134973d10ef6f5
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041212"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50185838"
 ---
 # <a name="value-options"></a>값 옵션
 
@@ -20,19 +20,14 @@ F # 값 옵션 종류는 다음과 같은 두 가지 경우를 저장할 때 사
 
 ## <a name="definition"></a>정의
 
-값 옵션으로 정의 됩니다는 [구조체 구분 된 공용 구조체](discriminated-unions.md#struct-discriminated-unions) 참조 옵션 형식과 비슷한입니다.
+값 옵션으로 정의 됩니다는 [구분 된 공용 구조체 구조체](discriminated-unions.md#struct-discriminated-unions) 참조 옵션 형식과 비슷한입니다. 해당 정의가 이러한 방식으로 생각할 수 있습니다.
 
 ```fsharp
 [<StructuralEquality; StructuralComparison>]
-[<CompiledName("FSharpValueOption`1")>]
 [<Struct>]
 type ValueOption<'T> =
-    | ValueNone: 'T voption
-    | ValueSome: 'T -> 'T voption
-
-    member Value : 'T
-
-and 'T voption = ValueOption<'T>
+    | ValueNone
+    | ValueSome of 'T
 ```
 
 구조적 같음 및 비교 값 옵션이 따릅니다. 주요 차이점은는 컴파일된 이름, 형식 이름 및 경우 대/소문자가 모든 이라는 것을 나타내는 값 형식입니다.

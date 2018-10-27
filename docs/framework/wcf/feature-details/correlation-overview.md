@@ -2,12 +2,12 @@
 title: 상관 관계 개요
 ms.date: 03/30/2017
 ms.assetid: edcc0315-5d26-44d6-a36d-ea554c418e9f
-ms.openlocfilehash: d831452c384e5aede6ede37af7de6e86b6772342
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.openlocfilehash: cc165bb4b74c70b740632c5cb873ed200b2283bb
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372644"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50185866"
 ---
 # <a name="correlation-overview"></a>상관 관계 개요
 상관 관계는 워크플로 서비스 메시지를 서로 연결하거나 응용 프로그램 상태와 연결하는 메커니즘입니다. 예를 들어 응답을 초기 요청과 연결하거나 특정 주문 ID를 주문 처리 워크플로의 지속된 상태와 연결할 수 있습니다. 이 항목에서는 상관 관계에 대해 간략하게 설명하고 이 단원의 다른 항목에서는 각 상관 관계 형식에 대해 자세히 설명합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "49372644"
 
 프로토콜 기반 상관 관계는 전송 메커니즘을 사용하여 메시지를 서로 연결하거나 적절한 인스턴스와 연결합니다. 일부 시스템 제공 프로토콜 상관 관계에는 요청-회신 상관 관계와 컨텍스트 기반 상관 관계가 포함됩니다. 요청-회신 상관 관계는 <xref:System.ServiceModel.Activities.Send>와 쌍을 이루는 <xref:System.ServiceModel.Activities.ReceiveReply> 또는 <xref:System.ServiceModel.Activities.Receive>와 쌍을 이루는 <xref:System.ServiceModel.Activities.SendReply>처럼 한 쌍의 메시징 작업을 상호 연결하여 양방향 작업을 만드는 데 사용됩니다. Visual Studio Workflow Designer에는 또한 신속 하 게이 패턴을 구현 하려면 작업 템플릿 집합도 제공 합니다. 컨텍스트 기반 상관 관계에 설명 된 컨텍스트 교환 메커니즘을 기반으로 합니다 [.NET Context Exchange Protocol Specification](https://go.microsoft.com/fwlink/?LinkID=166059)합니다. 컨텍스트 상관 관계를 사용하려면 엔드포인트에서 <xref:System.ServiceModel.BasicHttpContextBinding>, <xref:System.ServiceModel.WSHttpContextBinding> 또는 <xref:System.ServiceModel.NetTcpContextBinding>을 사용해야 합니다.  
   
-프로토콜 상관 관계에 대 한 자세한 내용은 참조 하세요. [영 속 이중](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md) 하 고 [요청-회신](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md)합니다. Visual Studio Workflow Designer 작업 템플릿을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [메시징 활동](../../../../docs/framework/wcf/feature-details/messaging-activities.md)합니다. 샘플 코드에 대 한 참조를 [NetContextExchangeCorrelation](/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29) 샘플입니다.  
+프로토콜 상관 관계에 대 한 자세한 내용은 참조 하세요. [영 속 이중](../../../../docs/framework/wcf/feature-details/durable-duplex-correlation.md) 하 고 [요청-회신](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md)합니다. Visual Studio Workflow Designer 작업 템플릿을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [메시징 활동](../../../../docs/framework/wcf/feature-details/messaging-activities.md)합니다. 샘플 코드에 대 한 참조를 [NetContextExchangeCorrelation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29) 샘플입니다.  
   
 ## <a name="content-based-correlation"></a>내용 기반 상관 관계
 
@@ -29,4 +29,4 @@ ms.locfileid: "49372644"
   
 ## <a name="see-also"></a>참고 항목  
 
-- [NetContextExchangeCorrelation](/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29)
+- [NetContextExchangeCorrelation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29)

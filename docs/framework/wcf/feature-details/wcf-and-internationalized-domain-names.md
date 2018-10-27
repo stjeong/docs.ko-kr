@@ -2,12 +2,12 @@
 title: WCF 및 IDN(Internationalized Domain Name)
 ms.date: 03/30/2017
 ms.assetid: c8a3e10a-8bc2-4a78-8d86-a562ba6e65fa
-ms.openlocfilehash: 8431f5d47aa32d1c928190abdd3079831ca48618
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: a0d4a5b4fe5dd3bc7cf41c8c6ad320dd83861aec
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44208428"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50187925"
 ---
 # <a name="wcf-and-internationalized-domain-names"></a>WCF 및 IDN(Internationalized Domain Name)
 IDN(Internationalized Domain Name)을 사용하는 WCF 서비스에 대한 지원이 추가되었습니다. IDN(Internationalized Domain Name)은 비 ASCII 문자가 포함된 도메인 이름입니다. 이 지원을 통해 IDN 이름을 사용하는 WCF 서비스와 IDN 이름을 사용하는 웹 서비스와 통신하는 WCF 클라이언트를 둘 다 호스트할 수 있습니다.  
@@ -42,4 +42,4 @@ IDN(Internationalized Domain Name)을 사용하는 WCF 서비스에 대한 지�
 >  applicationHost.exe.config에 유니코드 문자를 추가하는 경우 파일을 UTF-8 인코딩으로 저장하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [System.Uri](https://msdn.microsoft.com/library/system.uri.aspx)
+ <xref:System.Uri?displayProperty=nameWithType>

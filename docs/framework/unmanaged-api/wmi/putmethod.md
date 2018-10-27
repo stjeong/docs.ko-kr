@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7cdf34ff6ae506ba209300685da3752820b250a2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 98ef688c1136a81a5b57c3fdfee73c53024186e7
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43516752"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50191044"
 ---
 # <a name="putmethod-function"></a>PutMethod 함수
 메서드를 만듭니다.
@@ -53,7 +53,7 @@ HRESULT PutMethod (
 [in] 만들려는 메서드의 이름입니다. 
 
 `lFlags`  
-[in] 예약 되어 있습니다. 이 매개 변수는 0 이어야 합니다.
+[in] 예약되어 있습니다. 이 매개 변수는 0 이어야 합니다.
 
 `pSignatureIn`  
 [in] 복사본에 대 한 포인터를 [__Parameters 시스템 클래스](/windows/desktop/WmiSdk/--parameters) 포함 하는 `in` 메서드의 매개 변수입니다. 이 매개 변수는 설정 `null`합니다.  
@@ -80,11 +80,11 @@ HRESULT PutMethod (
 
 이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::PutMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-putmethod) 메서드.
 
-경우에이 메서드 호출은 사용할 `ptr` CIM 클래스 정의입니다. 조작 메서드를 사용할 수 없기 [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396) CIM 인스턴스를 가리키는 포인터입니다.
+경우에이 메서드 호출은 사용할 `ptr` CIM 클래스 정의입니다. 조작 메서드를 사용할 수 없기 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) CIM 인스턴스를 가리키는 포인터입니다.
 
 사용자가 시작 또는 밑줄로 끝나야 하는 이름을 가진 메서드를 만들 수 없습니다. 이 시스템 클래스 및 속성에 대해 예약 됩니다.
 
-메서드의 경우는 `in` 하 고 `out` 매개 변수에서 속성으로 설명 됩니다 [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396) 개체입니다.
+메서드의 경우는 `in` 하 고 `out` 매개 변수에서 속성으로 설명 됩니다 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 개체입니다.
 
 `[in/out]` 에서 가리키는 개체를 모두에 동일한 속성을 추가 하 여 매개 변수를 정의할 수 있습니다 합니다 `pInSignature` 및 `pOutSignature` 매개 변수입니다. 이 경우 속성 공유 동일 **ID** 한정자 값입니다.
 

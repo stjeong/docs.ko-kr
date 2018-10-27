@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cea8a322fab6ef76873e668c622ac63e3a3f2862
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e133333d735ca53d194bbb535710bc62bde6bb0e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33428227"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188458"
 ---
 # <a name="isymunmanagedbinder2getreaderforfile2-method"></a>ISymUnmanagedBinder2::GetReaderForFile2 메서드
-메타 데이터 인터페이스와 파일 이름을 제공 올바른 반환 <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> 인터페이스를 모듈와 관련 된 디버깅 기호를 읽습니다.  
+지정 된 메타 데이터 인터페이스 및 파일 이름을 올바른 반환 [ISymUnmanagedReader](isymunmanagedreader-interface.md) 모듈과 관련 디버깅 기호를 읽는 인터페이스입니다.  
   
- 이 방법은 보다 프로그램 데이터베이스 (PDB) 파일에 대 한 보다 광범위 한 검색을 제공 된 [isymunmanagedbinder:: Getreaderforfile](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderforfile-method.md) 메서드.  
+ 이 메서드는 보다는 프로그램 데이터베이스 (PDB) 파일에 대 한 보다 광범위 한 검색을 제공 합니다 [isymunmanagedbinder:: Getreaderforfile](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderforfile-method.md) 메서드.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,7 +40,7 @@ HRESULT GetReaderForFile2(
     [out,retval] ISymUnmanagedReader  **pRetVal);  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+## <a name="parameters"></a>매개 변수  
  `importer`  
  [in] 메타 데이터 가져오기 인터페이스 포인터입니다.  
   
@@ -51,19 +51,19 @@ HRESULT GetReaderForFile2(
  [in] 검색 경로에 대 한 포인터입니다.  
   
  `searchPolicy`  
- [in] 값은 [CorSymSearchPolicyAttributes](../../../../docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md) 기호 판독기에 대 한 검색을 수행할 때 사용할 정책을 지정 하는 열거형입니다.  
+ [in] 값을 [CorSymSearchPolicyAttributes](../../../../docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md) 기호 판독기를 검색할 때 사용 되는 정책을 지정 하는 열거형입니다.  
   
  `pRetVal`  
- [out] 설정 된 포인터가 반환 된 <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> 인터페이스입니다.  
+ [out] 설정 된 포인터를 반환 [ISymUnmanagedReader](isymunmanagedreader-interface.md) 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **Header:** CorSym.idl, CorSym.h  
   
 ## <a name="remarks"></a>설명  
- 이 버전의 메서드 오른쪽 모듈에 있지 않은 영역에서 PDB 파일을 검색할 수 있습니다. 검색 정책 결합 하 여 제어할 수 있습니다 [CorSymSearchPolicyAttributes](../../../../docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md)합니다. 예를 들어 `AllowReferencePathAccess | AllowSymbolServerAccess` 옆에 있는 실행 파일 및 기호 서버에서 pdb 되지만 않습니다 레지스트리 나 실행 파일의 경로 사용 합니다. 경우는 `searchPath` 매개 변수를 제공,이 디렉터리는 항상 검색 됩니다.  
+ 이 버전의 메서드는 모듈 옆에 있는 오른쪽 이외의 영역에서 PDB 파일을 검색할 수 있습니다. 검색 정책을 결합 하 여 제어할 수 있습니다 [CorSymSearchPolicyAttributes](../../../../docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md)합니다. 예를 들어 `AllowReferencePathAccess | AllowSymbolServerAccess` pdb 기호 서버에서 실행 파일 옆에 있는 한 있지만 하거나 하지 않는 레지스트리 쿼리 실행 파일의 경로 사용 합니다. 경우는 `searchPath` 매개 변수를 제공, 해당 디렉터리 항상 검색 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ISymUnmanagedBinder2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-interface.md)  

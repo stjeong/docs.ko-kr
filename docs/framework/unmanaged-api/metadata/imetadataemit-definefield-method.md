@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fd0ddda898911da2c96a53d941c4290af9028154
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: b54ceb099df15855b6b30b8c28d7d8917a9c71eb
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33446576"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184951"
 ---
 # <a name="imetadataemitdefinefield-method"></a>IMetaDataEmit::DefineField 메서드
-지정한 메타 데이터 서명을 사용 하 여 필드에 대 한 정의 만들고 해당 필드 정의 하는 토큰을 가져옵니다.  
+지정 된 메타 데이터 서명을 사용 하 여 필드에 대 한 정의 만들고 해당 필드 정의 하는 토큰을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,16 +54,16 @@ HRESULT DefineField (
  [in] 필드 특성입니다. 이 비트 마스크의 `CorFieldAttr` 값입니다.  
   
  `pvSigBlob`  
- [in] BLOB로 필드 시그니처입니다.  
+ [in] BLOB으로 필드 시그니처입니다.  
   
  `cbSigBlob`  
- [in] 바이트 수 `pvSigBlob`합니다.  
+ [in] 바이트 수가 `pvSigBlob`합니다.  
   
- `dwCPlusTypeFlage`  
- [in] `ELEMENT_TYPE_` *\** 상수 값에 대 한 합니다. 이 한 `CorElementType` 값입니다. 필드에 대 한 상수 값을 정의 하지 않는 사용 하 여 `ELEMENT_TYPE_END`합니다.  
+ `dwCPlusTypeFlag`  
+ [in] 합니다 `ELEMENT_TYPE_` *\** 상수 값에 대 한 합니다. 이 `CorElementType` 값입니다. 필드에 대 한 상수 값을 정의 하지 않는, 사용 하 여 `ELEMENT_TYPE_END`입니다.  
   
  `pValue`  
- [in] 필드에 대 한 상수 값입니다.  
+ [in] 필드의 상수 값입니다.  
   
  `cchValue`  
  [in] \(유니코드) 문자의 크기 `pValue`합니다.  
@@ -72,13 +72,13 @@ HRESULT DefineField (
  [out] `mdFieldDef` 할당 된 토큰입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MSCorEE.dll에서 리소스로 사용  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [IMetaDataEmit 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  

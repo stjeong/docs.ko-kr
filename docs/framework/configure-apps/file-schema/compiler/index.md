@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: c64dd85103e818ae603435c1a3f80f76e672ac84
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 8992c9e47e2b62e90191a67fc7353e138502ebf1
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196774"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50185669"
 ---
 # <a name="compiler-and-language-provider-settings-schema"></a>컴파일러 및 언어 공급자 설정 스키마
 컴파일러 및 언어 공급자 설정은 사용 가능한 언어 공급자에 대한 컴파일러 구성 요소를 지정합니다. 각 컴파일러 구성 요소는 코드 공급자 형식 이름, 컴파일러 매개 변수, 지원되는 언어 이름 및 지원되는 파일 확장명을 지정합니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "47196774"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.CodeDom.Compiler.CompilerInfo>  
- <xref:System.CodeDom.Compiler.CodeDomProvider>  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<compiler> 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)
+- <xref:System.CodeDom.Compiler.CompilerInfo>  
+- <xref:System.CodeDom.Compiler.CodeDomProvider>  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [\<compiler> 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

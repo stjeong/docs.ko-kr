@@ -8,14 +8,12 @@ helpviewer_keywords:
 - <defaultFtpCachePolicy> element
 - defaultFtpCachePolicy element
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: e03fb02bd351058c1fcdedb8367d03318418a12c
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: a8c71551adc2b88b5300994134eaec329a083709
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316443"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188289"
 ---
 # <a name="ltdefaultftpcachepolicygt-element-network-settings"></a>&lt;defaultFtpCachePolicy&gt; 요소 (네트워크 설정)
 FTP 캐싱 활성화 되어 있는지 여부를 나타내고 기본 캐싱 정책은 설명 설명 합니다.  
@@ -82,7 +80,7 @@ FTP 캐싱 활성화 되어 있는지 여부를 나타내고 기본 캐싱 정�
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.Cache>  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.Cache.RequestCacheLevel>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Cache>  
+- <xref:System.Net.WebRequest>  
+- <xref:System.Net.Cache.RequestCacheLevel>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

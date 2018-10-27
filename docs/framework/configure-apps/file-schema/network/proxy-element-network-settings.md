@@ -8,14 +8,12 @@ helpviewer_keywords:
 - <proxy> element
 - proxy element
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: f4ab3d4e7ce6686a43e4c5258a56e72203c38ebd
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 3a6d5b080c74fbd3f6ebca9882c1667951cfcb91
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033391"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183675"
 ---
 # <a name="ltproxygt-element-network-settings"></a>&lt;프록시&gt; 요소 (네트워크 설정)
 프록시 서버를 정의합니다.  
@@ -93,5 +91,5 @@ ms.locfileid: "48033391"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

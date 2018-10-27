@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 27e1433415bdc6303555ab9ae04a20e097248535
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: e4dedc6b527706fc9f22add903feb30ad2884eab
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46937620"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188822"
 ---
 # <a name="clr-profilers-and-windows-store-apps"></a>CLR 프로파일러 및 Windows 스토어 앱
 
@@ -100,7 +100,7 @@ Windows Profiler DLL을 로드할 때 Profiler DLL 올바르게 서명 되었는
 
 - Profiler DLL의 서명을 확인 합니다.
 
-- 설치 해야 개발자 라이선스는 Windows 8 컴퓨터에서 도구를 사용 하기 전에 사용자를 알립니다. 이렇게 하려면 자동으로 Visual Studio 또는 명령 프롬프트에서 수동으로. 자세한 내용은 [개발자 라이선스 가져오기](https://msdn.microsoft.com/library/windows/apps/Hh974578.aspx)합니다.
+- 설치 해야 개발자 라이선스는 Windows 8 컴퓨터에서 도구를 사용 하기 전에 사용자를 알립니다. 이렇게 하려면 자동으로 Visual Studio 또는 명령 프롬프트에서 수동으로. 자세한 내용은 [개발자 라이선스 가져오기](https://docs.microsoft.com/previous-versions/windows/apps/hh974578(v=win.10))합니다.
 
 **파일 시스템 권한**
 
@@ -124,7 +124,7 @@ NET Runtime version 4.0.30319.17929 - Loading profiler failed during CoCreateIns
 
 첫째, 프로파일러 사용자는 Windows 스토어 앱 시작을 요청 해야 합니다. 데스크톱 앱에 대 한 파일 찾아보기 대화 상자를 표시는 아마도 및 사용자를 찾아.exe 파일을 선택 합니다. 하지만 Windows 스토어 앱은 서로 다르며 찾아보기 대화 상자를 사용 하 여은 적합 하지 않습니다. 대신, 사용자에서 선택 하려면 해당 사용자에 대해 설치 하는 Windows 스토어 앱의 목록을 표시 하는 것이 좋습니다.
 
-사용할 수는 [PackageManager 클래스](https://msdn.microsoft.com/library/windows/apps/windows.management.deployment.packagemanager.aspx) 이 목록을 생성 합니다. `PackageManager` 데스크톱 앱에 사용할 수 있는 Windows 런타임 클래스 이며 실제로 *만* 데스크톱 앱에 사용할 수 있습니다.
+사용할 수는 <xref:Windows.Management.Deployment.PackageManager> 이 목록을 생성 하는 클래스입니다. `PackageManager` 데스크톱 앱에 사용할 수 있는 Windows 런타임 클래스 이며 실제로 *만* 데스크톱 앱에 사용할 수 있습니다.
 
 C# yses에서 데스크톱 앱을 작성 하는 가상 Profiler UI에서 다음 코드 예제는 `PackageManager` Windows 앱의 목록을 생성 하려면:
 
@@ -137,7 +137,7 @@ IEnumerable<Package> packages = packageManager.FindPackagesForUser(currentUserSI
 
 **사용자 지정 환경 블록 지정**
 
-새 COM 인터페이스가 [IPackageDebugSettings](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx), 진단의 몇 가지 형태를 쉽게 수행할 수 있도록 Windows 스토어 앱의 실행 동작을 사용자 지정할 수 있습니다. 해당 메서드 중 하나 [EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=vs.85\).aspx), 시작 되 면 Windows 스토어 앱에는 환경 블록을 전달할 수 있도록 자동 프로세스가 일시 중단 해제 하는 등 기타 유용한 효과 함께 합니다. 환경 블록을이 환경 변수를 지정 해야 하는 위치 이기 때문에 중요 (`COR_PROFILER`, `COR_ENABLE_PROFILING`, 및 `COR_PROFILER_PATH)`) 하는 데 clr Profiler DLL을 로드 합니다.
+새 COM 인터페이스가 [IPackageDebugSettings](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings), 진단의 몇 가지 형태를 쉽게 수행할 수 있도록 Windows 스토어 앱의 실행 동작을 사용자 지정할 수 있습니다. 해당 메서드 중 하나 [EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging), 시작 되 면 Windows 스토어 앱에는 환경 블록을 전달할 수 있도록 자동 프로세스가 일시 중단 해제 하는 등 기타 유용한 효과 함께 합니다. 환경 블록을이 환경 변수를 지정 해야 하는 위치 이기 때문에 중요 (`COR_PROFILER`, `COR_ENABLE_PROFILING`, 및 `COR_PROFILER_PATH)`) 하는 데 clr Profiler DLL을 로드 합니다.
 
 다음 코드 조각을 살펴봅니다.
 
@@ -180,7 +180,7 @@ pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,
 
 **Windows 스토어 앱 시작**
 
-Windows 스토어 앱을 시작 하는 순간 마지막 도착 합니다. 이미 이미이 작업을 직접 수행을 시도 했다면 사용한, 했을 수 있는 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) Windows Store 앱 프로세스를 만드는 방법을 없습니다. 사용 해야 하는 대신 합니다 [IApplicationActivationManager::ActivateApplication](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication) 메서드. 이 위해 실행 하는 Windows 스토어 앱의 앱 사용자 모델 ID를 가져오려면 해야 합니다. 즉, 약간 꼼꼼히 매니페스트를 통해 수행 해야 하며
+Windows 스토어 앱을 시작 하는 순간 마지막 도착 합니다. 이미이 작업을 직접 수행을 시도 했다면 사용한, 했을 수 있는 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) Windows Store 앱 프로세스를 만드는 방법을 없습니다. 사용 해야 하는 대신 합니다 [IApplicationActivationManager::ActivateApplication](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication) 메서드. 이 위해 실행 하는 Windows 스토어 앱의 앱 사용자 모델 ID를 가져오려면 해야 합니다. 즉, 약간 꼼꼼히 매니페스트를 통해 수행 해야 하며
 
 패키지에 대해 반복 하는 동안 ("선택는 Windows 스토어 앱을 프로필"에서 참조를 [시작 부하](#startup-load) 이전 섹션), 현재 패키지의 매니페스트에 포함 된 응용 프로그램의 집합을 선택 하는 것이 좋습니다:
 
@@ -221,7 +221,7 @@ appActivationMgr.ActivateApplication(appUserModelId, appArgs, ACTIVATEOPTIONS.AO
 
 **DisableDebugging를 호출 해야 합니다.**
 
-호출 하는 경우 [IPackageDebugSettings::EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=VS.85\).aspx)를 호출 하 여 직접 후 정리 하는 약속을 수행 합니다 [IPackageDebugSettings::DisableDebugging](https://msdn.microsoft.com/library/hh438394\(v=vs.85\).aspx) 메서드를 수행 해야 통해 프로 파일링 세션의 경우.
+호출 하는 경우 [IPackageDebugSettings::EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging)를 호출 하 여 직접 후 정리 하는 약속을 수행 합니다 [IPackageDebugSettings::DisableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-disabledebugging) 메서드를 수행 해야 통해 프로 파일링 세션의 경우.
 
 ### <a name="attach-load"></a>부하를 연결 합니다.
 
@@ -229,7 +229,7 @@ appActivationMgr.ActivateApplication(appUserModelId, appArgs, ACTIVATEOPTIONS.AO
 
 **EnableDebugging**
 
-시작 부하와 마찬가지로 호출을 [IPackageDebugSettings::EnableDebugging](https://msdn.microsoft.com/library/hh438395\(v=VS.85\).aspx) 메서드. 환경 블록을 전달 하는 데 필요 하지 않지만 다른 기능 중 하나가 필요 합니다: 자동 프로세스가 일시 중단을 사용 하지 않도록 설정 합니다. Profiler UI를 호출 하는 경우 그러지 [AttachProfiler](iclrprofiling-attachprofiler-method.md), 대상 Windows 스토어 앱을 일시 중단 될 수 있습니다. 사실이 가능성이 사용자가 이제 하면 Profiler UI 상호 작용 하 고 Windows 스토어 앱에서 사용자의 화면에 활성 상태가 아닙니다. 하는 경우 Windows 스토어 앱이 일시 중단 수는 없습니다에 응답 하 고 CLR Profiler DLL에 연결할를 보냅니다는 신호입니다.
+시작 부하와 마찬가지로 호출을 [IPackageDebugSettings::EnableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-enabledebugging) 메서드. 환경 블록을 전달 하는 데 필요 하지 않지만 다른 기능 중 하나가 필요 합니다: 자동 프로세스가 일시 중단을 사용 하지 않도록 설정 합니다. Profiler UI를 호출 하는 경우 그러지 [AttachProfiler](iclrprofiling-attachprofiler-method.md), 대상 Windows 스토어 앱을 일시 중단 될 수 있습니다. 사실이 가능성이 사용자가 이제 하면 Profiler UI 상호 작용 하 고 Windows 스토어 앱에서 사용자의 화면에 활성 상태가 아닙니다. 하는 경우 Windows 스토어 앱이 일시 중단 수는 없습니다에 응답 하 고 CLR Profiler DLL에 연결할를 보냅니다는 신호입니다.
 
 따라서 다음과 같은 작업을 수행 하려는:
 
@@ -243,7 +243,7 @@ pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */,
 
 **DisableDebugging**
 
-늘 그렇듯이 이룰 [IPackageDebugSettings::DisableDebugging](https://msdn.microsoft.com/library/hh438394\(v=vs.85\).aspx) 프로 파일링 세션이 완료 되 면 합니다.
+늘 그렇듯이 이룰 [IPackageDebugSettings::DisableDebugging](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipackagedebugsettings-disabledebugging) 프로 파일링 세션이 완료 되 면 합니다.
 
 ## <a name="running-inside-the-windows-store-app"></a>Windows 스토어 앱 내에서 실행
 
@@ -273,7 +273,7 @@ Profiler DLL에 데스크톱 앱의 경우에 적용 되는 일부 Api를 호출
 
 ### <a name="reduced-permissions"></a>권한이 낮춰 진된
 
-Windows 스토어 앱 사용 권한 데스크톱 앱에서 다른 모든 방법을 표시 하려면이 항목의 범위를 벗어나는 것입니다. 하지만 분명 동작이 달라 지므로 Profiler DLL (데스크톱 앱을 비교 하 여 Windows 스토어 앱을 로드) 하는 경우 모든 리소스에 액세스 하려고 할 때마다. 파일 시스템은 가장 일반적인 예입니다. 있지만 디스크에 지정된 된 Windows 스토어 앱에 액세스할 수 있는 몇 가지 배치 (참조 [파일 액세스 및 사용 권한 (Windows 런타임 앱](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)), Profiler DLL 동일한 제한이 적용 됩니다. 코드를 철저히 테스트 합니다.
+Windows 스토어 앱 사용 권한 데스크톱 앱에서 다른 모든 방법을 표시 하려면이 항목의 범위를 벗어나는 것입니다. 하지만 분명 동작이 달라 지므로 Profiler DLL (데스크톱 앱을 비교 하 여 Windows 스토어 앱을 로드) 하는 경우 모든 리소스에 액세스 하려고 할 때마다. 파일 시스템은 가장 일반적인 예입니다. 있지만 디스크에 지정된 된 Windows 스토어 앱에 액세스할 수 있는 몇 가지 배치 (참조 [파일 액세스 및 사용 권한 (Windows 런타임 앱](https://docs.microsoft.com/previous-versions/windows/apps/hh967755(v=win.10))), Profiler DLL 동일한 제한이 적용 됩니다. 코드를 철저히 테스트 합니다.
 
 ### <a name="inter-process-communication"></a>프로세스 간 통신
 
@@ -298,7 +298,7 @@ ApplicationData appData =
 tempDir = appData.TemporaryFolder.Path;
 ```
 
-Profiler DLL 수 기본적으로 동일한 작업을 수행 하는 한편, 수 있지만 더 간단 하 게 액세스할 합니다 [ApplicationData](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.aspx) 사용 하 여 클래스를 [ApplicationData.Current](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.current.aspx) 속성입니다.
+Profiler DLL 수 기본적으로 동일한 작업을 수행 하는 한편, 수 있지만 더 간단 하 게 액세스할 합니다 <xref:Windows.Storage.ApplicationData> 를 사용 하 여 클래스를 [ApplicationData.Current](xref:Windows.Storage.ApplicationData.Current%2A) 속성입니다.
 
 **이벤트를 통해 통신**
 
@@ -412,8 +412,8 @@ CLR 프로 파일링 API를 사용 하 여 Windows 스토어 앱 내에서 실�
 
 **Windows 스토어 앱**
 
-- [파일 액세스 및 사용 권한 (Windows 런타임 앱](https://msdn.microsoft.com/library/windows/apps/hh967755.aspx)
+- [파일 액세스 및 사용 권한 (Windows 런타임 앱](https://docs.microsoft.com/previous-versions/windows/apps/hh967755%28v=win.10%29)
 
-- [개발자 라이선스 얻기](https://msdn.microsoft.com/library/windows/apps/Hh974578.aspx)
+- [개발자 라이선스 얻기](https://docs.microsoft.com/previous-versions/windows/apps/hh974578%28v=win.10%29)
 
-- [IPackageDebugSettings 인터페이스](https://msdn.microsoft.com/library/hh438393\(v=vs.85\).aspx)
+- [IPackageDebugSettings 인터페이스](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings)

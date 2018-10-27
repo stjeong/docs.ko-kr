@@ -2,12 +2,12 @@
 title: 스트림
 ms.date: 03/30/2017
 ms.assetid: 58a3db81-20ab-4627-bf31-39d30b70b4fe
-ms.openlocfilehash: 54601b92efcb621d36432d870514fe9a9dc0b46e
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: ed77d8231df8a2272e398f5b1a126c6ed8cab354
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861116"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50191183"
 ---
 # <a name="stream"></a>스트림
 Stream 샘플에서는 스트리밍 전송 모드 통신의 사용 방법을 보여 줍니다. 이 서비스는 스트림을 보내고 받는 몇 가지 작업을 노출합니다. 이 샘플은 자체 호스팅됩니다. 클라이언트와 서버는 모두 콘솔 프로그램입니다.  
@@ -20,7 +20,7 @@ Stream 샘플에서는 스트리밍 전송 모드 통신의 사용 방법을 보
 ## <a name="streaming-and-service-contracts"></a>스트리밍 및 서비스 계약  
  스트리밍은 서비스 계약을 설계할 때 고려할 사항입니다. 어떤 작업에서 많은 양의 데이터를 수신하거나 반환할 경우 입출력 메시지의 버퍼링 때문에 지나치게 많은 메모리가 사용되지 않도록 이 데이터를 스트리밍하는 것을 고려할 필요가 있습니다. 데이터를 스트리밍하려면 그 데이터를 포함하는 매개 변수가 메시지에서 유일한 매개 변수가 되어야 합니다. 예를 들어, 입력 메시지를 스트리밍할 경우 해당 작업은 단 하나의 입력 매개 변수만 가져야 합니다. 마찬가지로, 출력 메시지를 스트리밍할 경우 해당 작업에는 출력 매개 변수 또는 반환 값이 하나만 있어야 합니다. 두 경우 모두 매개 변수 또는 반환 값 형식은 `Stream`, `Message` 또는 `IXmlSerializable`이어야 합니다. 다음은 이 스트리밍 샘플에서 사용된 서비스 계약입니다.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IStreamingSample  
 {  
@@ -68,7 +68,7 @@ public interface IStreamingSample
   
  `GetReversedStream`은 `ReverseStream`의 새 인스턴스를 만들어 반환합니다. 시스템이 해당 `ReverseStream` 개체로부터 읽을 때 실제 처리가 이루어집니다. `ReverseStream.Read` 구현은 기본 파일로부터 바이트 청크를 읽고 이를 반대로 바꾼 다음 그 바이트를 반환합니다. 여기서 파일의 내용 전체를 반대로 바꾸지는 않습니다. 한 번에 하나의 바이트 청크를 반대로 바꿉니다. 이는 스트림에서 콘텐츠를 읽거나 기록하는 중에 스트림 처리를 수행하는 방법을 보여 주는 예제입니다.  
   
-```  
+```csharp
 class ReverseStream : Stream  
 {  
   
@@ -117,7 +117,7 @@ class ReverseStream : Stream
   
  서비스 출력:  
   
-```  
+```console  
 The streaming service is ready.  
 Press <ENTER> to terminate service.  
   
@@ -131,7 +131,7 @@ File D:\...\uploadedfile saved
   
  클라이언트 출력:  
   
-```  
+```console  
 Press <ENTER> when service is ready  
 ------ Using HTTP ------   
 Calling GetStream()  

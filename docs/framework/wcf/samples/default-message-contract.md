@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Message Contract
 ms.assetid: 5a200b78-1a46-4104-b7fb-da6dbab33893
-ms.openlocfilehash: 23ab534ef31773efc69b6a68e73ec30bde4f6e61
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9f5a7eff25fb202ba84f0bd49893748b507326fd
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502661"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188172"
 ---
 # <a name="default-message-contract"></a>기본 메시지 계약
 Default Message Contract 샘플에서는 사용자 지정 사용자 정의 메시지를 서비스 작업에 전달하고 전달받는 서비스를 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 형식화 된 서비스로 계산기 인터페이스를 구현 하는 합니다. 더하기, 빼기, 곱하기 및 나누기에서 사용에 대 한 개별 서비스 작업을 대신 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), 피연산자와 연산자를 포함 하 고 반환 하는 사용자 지정 메시지를 전달 하는이 샘플 산술 계산의 결과입니다.  
@@ -21,7 +21,7 @@ Default Message Contract 샘플에서는 사용자 지정 사용자 정의 메�
   
  서비스에서는 `MyMessage` 형식의 사용자 지정 메시지를 수락하고 반환하는 단일 서비스 작업이 정의됩니다. 이 샘플에서는 요청 및 응답 메시지의 형식이 동일하지만 필요한 경우 서로 다른 메시지 계약이 될 수 있습니다.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -33,7 +33,7 @@ public interface ICalculator
   
  사용자 지정 메시지 `MyMessage`는 <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute> 및 <xref:System.ServiceModel.MessageBodyMemberAttribute> 특성과 함께 주석 처리된 클래스에서 정의됩니다. 이 샘플에서는 세 번째 생성자만 사용됩니다. 메시지 계약을 사용하면 SOAP 메시지를 완전히 제어할 수 있습니다. 이 샘플에서는 <xref:System.ServiceModel.MessageHeaderAttribute> 특성을 사용하여 SOAP 헤더에 `Operation`을 배치합니다. 피연산자 `N1`, `N2` 및 `Result`에는 <xref:System.ServiceModel.MessageBodyMemberAttribute> 특성이 적용되어 있으므로 이러한 피연산자는 SOAP 본문 내에 표시됩니다.  
   
-```  
+```csharp
 [MessageContract]  
 public class MyMessage  
 {  
@@ -99,7 +99,7 @@ public class MyMessage
   
  구현 클래스에는 `Calculate` 서비스 작업의 코드가 포함됩니다. 다음 샘플 코드에서와 같이 `CalculateService` 클래스는 요청 메시지로부터 피연산자와 연산자를 받고 요청된 계산의 결과가 포함된 응답 메시지를 만듭니다.  
   
-```  
+```csharp
 // Service class which implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -133,29 +133,31 @@ public class CalculatorService : ICalculator
   
  클라이언트에 대해 생성 된 클라이언트 코드를 사용 하 여 만든 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 도구입니다. 필요한 경우 이 도구는 생성된 클라이언트 코드에 자동으로 메시지 계약 형식을 만듭니다. `/messageContract` 명령 옵션을 지정하여 메시지 계약을 강제로 생성할 수 있습니다.  
   
-```  
+```console  
 svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" /o:client\generatedClient.cs http://localhost/servicemodelsamples/service.svc/mex  
 ```  
   
  다음 샘플 코드에서는 `MyMessage` 메시지를 사용하는 클라이언트를 보여 줍니다.  
   
-```  
+```csharp
 // Create a client with given client endpoint configuration  
 CalculatorClient client = new CalculatorClient();  
   
 // Perform addition using a typed message.  
   
-MyMessage request = new MyMessage();  
-request.N1 = 100D;  
-request.N2 = 15.99D;  
-request.Operation = "+";  
+MyMessage request = new MyMessage() 
+                    {  
+                        N1 = 100D,  
+                        N2 = 15.99D,  
+                        Operation = "+"  
+                    };
 MyMessage response = ((ICalculator)client).Calculate(request);  
 Console.WriteLine("Add({0},{1}) = {2}", request.N1, request.N2, response.Result);  
 ```  
   
  샘플을 실행하면 계산이 클라이언트 콘솔 창에 표시됩니다. 클라이언트를 종료하려면 클라이언트 창에서 Enter 키를 누릅니다.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

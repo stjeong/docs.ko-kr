@@ -2,13 +2,12 @@
 title: 보안 프로토콜 버전 1.0
 ms.date: 03/30/2017
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-author: BrucePerlerMS
-ms.openlocfilehash: 59d82fc3238f12b33f3111c88854b9d6348a5e27
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 684ab50b6dab4b97577acf7673ed14c53e5af13e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086793"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183947"
 ---
 # <a name="security-protocols-version-10"></a>보안 프로토콜 버전 1.0
 Web Services Security 프로토콜은 모든 기존 엔터프라이즈 메시징 보안 요구 사항을 포함하는 Web Services Security 메커니즘을 제공합니다. 이 섹션에서는 Windows Communication Foundation (WCF) 버전 1.0 세부 정보를 설명 합니다. (에서 구현 되는 <xref:System.ServiceModel.Channels.SecurityBindingElement>) 다음 Web services security 프로토콜에 대 한 합니다.  

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - printing XPS files programmatically [WPF]
 - XPS files [WPF], printing programmatically
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
-ms.openlocfilehash: 25c0b34bd33bee626df14c8dbedce0b82e895b58
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: a42f9b2101266857e56dee6836f4c3b27b3c6f96
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857341"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188341"
 ---
 # <a name="how-to-programmatically-print-xps-files"></a>방법: 프로그래밍 방식으로 XPS 파일 인쇄
 한 오버 로드를 사용할 수는 <xref:System.Printing.PrintQueue.AddJob%2A> 인쇄 하는 방법 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 열지 않고 파일을 <xref:System.Windows.Controls.PrintDialog> 또는 원칙적으로 모든 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 전혀 합니다.  
   
- 인쇄할 수도 있습니다 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 다를 사용 하 여 파일 <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> 하 고 <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> 의 메서드는 <xref:System.Windows.Xps.XpsDocumentWriter>합니다. 이에 대한 자세한 내용은 [XPS 문서를 인쇄](https://msdn.microsoft.com/library/849555c8-0c4e-48c0-86bc-a5494c69b36c(v=vs.90))합니다.  
+ 인쇄할 수도 있습니다 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 다를 사용 하 여 파일 <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> 하 고 <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> 의 메서드는 <xref:System.Windows.Xps.XpsDocumentWriter>합니다. 이에 대한 자세한 내용은 [XPS 문서를 인쇄](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))합니다.  
   
  인쇄는 또 다른 방법은 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 사용 하는 것을 <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> 또는 <xref:System.Windows.Controls.PrintDialog.PrintVisual%2A> 의 메서드는 <xref:System.Windows.Controls.PrintDialog> 제어 합니다. [인쇄 호출 대화 상자](how-to-invoke-a-print-dialog.md)를 참조하세요.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "43857341"
   
  이 가장을 사용 하면 전달할 `true` 의 마지막 매개 변수로 <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> 있지만 예외가 발생 하지 않고  *\<PseudoXPSPrinter >* 는 실제로 XPSDrv 프린터가 가비지만 인쇄 됩니다.  
   
- **참고** 편의 위해 위의 예제에서는의 현재 상태는 \*.xps 확장 파일은 테스트로 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]합니다. 그러나 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] 파일이 이 확장명일 필요는 없습니다. [isXPS.exe(isXPS 규칙 도구)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100))는 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]의 유효성을 검사하기 위해 파일을 테스트하는 한 가지 방법입니다.  
+ **참고** 편의 위해 위의 예제에서는의 현재 상태는 \*.xps 확장 파일은 테스트로 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]합니다. 그러나 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] 파일이 이 확장명일 필요는 없습니다. [isXPS.exe(isXPS 규칙 도구)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))는 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]의 유효성을 검사하기 위해 파일을 테스트하는 한 가지 방법입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Printing.PrintQueue>  
@@ -64,8 +64,8 @@ ms.locfileid: "43857341"
  <xref:System.Threading.ApartmentState>  
  <xref:System.STAThreadAttribute>  
  [XPS](https://www.microsoft.com/xps)  
- [XPS 문서 인쇄](https://msdn.microsoft.com/library/849555c8-0c4e-48c0-86bc-a5494c69b36c(v=vs.90))  
- [관리 되는 스레딩과 관리 되지 않는 스레딩](https://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5(v=vs.100))  
- [isXPS.exe(isXPS 규칙 도구)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100))  
+ [XPS 문서 인쇄](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))  
+ [관리 되는 스레딩과 관리 되지 않는 스레딩](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
+ [isXPS.exe(isXPS 규칙 도구)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))  
  [WPF의 문서](documents-in-wpf.md)  
  [인쇄 개요](printing-overview.md)

@@ -2,12 +2,12 @@
 title: 구성 채널 팩터리
 ms.date: 03/30/2017
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
-ms.openlocfilehash: b5dbabf8cdc28cc2beaf343b0377528c6ced1c66
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: ec48743deddd52faed31b4a1a0af365909593414
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48846294"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50187155"
 ---
 # <a name="configuration-channel-factory"></a>구성 채널 팩터리
 이 샘플에서는 <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>의 사용법에 대해 설명합니다. <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> WCF 클라이언트 구성 중앙에서 관리할 수 있습니다. 응용 프로그램 도메인의 로드 이후 구성이 선택되었거나 변경된 경우에도 유용합니다.
@@ -22,7 +22,7 @@ ms.locfileid: "48846294"
 
  다음 코드에서는 클라이언트 응용 프로그램에 사용자 지정 구성 파일을 추가합니다.
 
-```
+```csharp
 ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
 fileMap.ExeConfigFilename = "Test.config";
 Configuration newConfiguration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);

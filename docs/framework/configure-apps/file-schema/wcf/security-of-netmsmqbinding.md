@@ -2,13 +2,12 @@
 title: '&lt;netMsmqBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-author: BrucePerlerMS
-ms.openlocfilehash: 90293cade964f6559c4783433914e1f858975c3c
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 8be7582ce5db88d9a79698193c44d9c50bdea4cb
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845116"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50184757"
 ---
 # <a name="ltsecuritygt-of-ltnetmsmqbindinggt"></a>&lt;netMsmqBinding&gt;의 &lt;security&gt;
 MSMQ 바인딩에 대한 보안 설정을 정의합니다. 이 클래스는 전송 또는 SOAP 보안의 사용 여부 그리고 보안이 사용된다면 어떤 인증 모드 및 보호 수준을 사용하는지를 지정합니다.  

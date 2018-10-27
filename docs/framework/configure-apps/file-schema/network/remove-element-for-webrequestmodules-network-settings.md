@@ -10,14 +10,12 @@ helpviewer_keywords:
 - <remove> element, webRequestModules
 - <webRequestModules>, remove element
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: d0da0fd2edae4687ea80b4a23cc82a25ead9cb7b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 2f787206c503c047a34383e12c5676296e39c1fe
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47208583"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50190751"
 ---
 # <a name="ltremovegt-element-for-webrequestmodules-network-settings"></a>&lt;제거&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 사용자 지정 웹 요청 모듈을 제거합니다.  
@@ -56,13 +54,14 @@ ms.locfileid: "47208583"
 ## <a name="remarks"></a>설명  
  `remove` 요소는 지정된 된 URI 접두사에 대 한 등록 된 웹 요청 모듈을 제거 합니다.  
   
- 에 대 한 값을 `prefix` 특성에는 유효한 URI-예를 들어, "http"의 선행 문자를 사용 해야 합니다. 또는 "`http://www.contoso.com` "입니다.  
+ 에 대 한 값을 `prefix` 특성은 올바른 URI-의 선행 문자를 예를 들어 이어야 합니다 "`http`", 또는 "`http://www.contoso.com`"입니다.  
   
 ## <a name="configuration-files"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 HTTP에 대 한 기존 웹 요청 모듈을 제거 하 고 www.contoso.com에 대 한 HTTP 요청에 대 한 새 사용자 지정 웹 요청 모듈을 등록 합니다.  
+
+다음 예제에서는 HTTP에 대 한 기존 웹 요청 모듈을 제거 하 고 다음 레지스터 새 사용자 지정 웹 요청 모듈에 대 한 HTTP 요청을 `www.contoso.com`입니다.
   
 ```xml  
 <configuration>  
@@ -79,5 +78,5 @@ ms.locfileid: "47208583"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.WebRequest>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

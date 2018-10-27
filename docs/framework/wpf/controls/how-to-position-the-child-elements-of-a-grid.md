@@ -7,25 +7,28 @@ dev_langs:
 helpviewer_keywords:
 - Grid control [WPF], positioning child elements
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c
-ms.openlocfilehash: 62508deee1b10b4a1287360f971b3699e57d4243
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5ccdcb3d166e1b703faff1dc8046e61ee213d12a
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33552151"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50186999"
 ---
 # <a name="how-to-position-the-child-elements-of-a-grid"></a>방법: Grid의 자식 요소 위치 지정
-Get를 사용 하 고에 정의 된 메서드를 설정 하는 방법을 보여 주는이 예제 <xref:System.Windows.Controls.Grid> 자식 요소의 위치입니다.  
+이 예제에서는 get을 사용 하 고에 정의 된 메서드를 설정 하는 방법을 보여 줍니다 <xref:System.Windows.Controls.Grid> 자식 요소의 위치입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 부모 <xref:System.Windows.Controls.Grid> 요소 (`grid1`)는에 세 개의 열 3 개와 행. 자식 <xref:System.Windows.Shapes.Rectangle> 요소 (`rect1`)에 추가 되 고 <xref:System.Windows.Controls.Grid> 0 열에서 위치 0 행을 합니다. <xref:System.Windows.Controls.Button> 요소 위치를 변경 하기 위해 호출할 수 있는 메서드를 나타냅니다는 <xref:System.Windows.Shapes.Rectangle> 내의 요소는 <xref:System.Windows.Controls.Grid>합니다. 사용자가 단추를 클릭 하면 관련된 메서드가 활성화 됩니다.  
+ 다음 예제에서는 부모 <xref:System.Windows.Controls.Grid> 요소 (`grid1`)는 세 개의 열과 행이 3입니다. 자식 <xref:System.Windows.Shapes.Rectangle> 요소 (`rect1`)에 추가 되는 <xref:System.Windows.Controls.Grid> 열 위치 0의에서 행 위치 0입니다. <xref:System.Windows.Controls.Button> 요소 위치를 변경 하기 위해 호출할 수 있는 메서드를 나타냅니다 합니다 <xref:System.Windows.Shapes.Rectangle> 내의 요소는 <xref:System.Windows.Controls.Grid>합니다. 사용자가 단추를 클릭 하면 관련된 메서드가 활성화 됩니다.  
   
- [!code-xaml[gridGetSetMethods#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml#1)]  
+ [!code-xaml[gridGetSetMethods](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml)]  
   
- 다음 코드 예제에서는 메서드를 처리 하는 단추 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트를 발생 시킵니다. 이 예제에서는 기록에 이러한 메서드 호출 <xref:System.Windows.Controls.TextBlock> 사용 관련 요소를 get 메서드를 문자열로 새 속성 값을 출력 합니다.  
+ 다음 코드 숨김 예제에서는 메서드를 처리 하는 단추 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트를 발생 시킵니다. 이 예제에서는 이러한 메서드 호출을 기록 <xref:System.Windows.Controls.TextBlock> 사용 하 여 관련 요소를 새 속성 값을 문자열로 출력 하는 메서드를 가져옵니다.  
   
  [!code-csharp[gridGetSetMethods#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml.cs#2)]
  [!code-vb[gridGetSetMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridGetSetMethods/VisualBasic/Window1.xaml.vb#2)]  
+ 최종된 결과 다음과 같습니다.
+ 
+ ![스크린 샷 두 개의 열을 사용 하 여 WPF 사용자 인터페이스, 오른쪽 3x3 격자에 보여 주며 왼쪽에 열과 그리드의 행 색이 지정 된 사각형을 이동 하는 단추가 있습니다.](./media/grid-methods-sample.png) 
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Controls.Grid>  
