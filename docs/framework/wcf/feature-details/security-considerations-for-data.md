@@ -6,11 +6,11 @@ dev_langs:
 - vb
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
 ms.openlocfilehash: 6471a8a8e257ea3bb6f26a8041694ef25151ad1a
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2018
-ms.locfileid: "50037297"
+ms.locfileid: "50195946"
 ---
 # <a name="security-considerations-for-data"></a>데이터에 대한 보안 고려 사항
 Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 범주 개수를 고려해 야 합니다. 다음 표에는 데이터 처리와 관련하여 가장 중요한 위협 클래스가 나열되어 있습니다. WCF는 이러한 위협을 완화 하는 도구를 제공 합니다.  

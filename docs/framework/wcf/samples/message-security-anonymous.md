@@ -5,11 +5,11 @@ helpviewer_keywords:
 - WS Security
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
 ms.openlocfilehash: 8b31ebc846992f51484ae058ce05d9aa12590372
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50040580"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50195192"
 ---
 # <a name="message-security-anonymous"></a>Message Security Anonymous
 Message Security Anonymous 샘플 어떻게 Windows Communication Foundation (WCF) 응용 프로그램을 구현 하는 메시지 수준 보안 없습니다 클라이언트 인증을 사용 하지만 서버의 X.509를 사용 하 여 서버 인증이 필요한을 보여 줍니다. 인증서입니다. 클라이언트와 서버 간의 모든 응용 프로그램 메시지는 서명 및 암호화됩니다. 이 샘플은 기반 합니다 [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) 샘플입니다. 이 샘플은 IIS(인터넷 정보 서비스)에 의해 호스트되는 클라이언트 콘솔 프로그램(.exe) 및 서비스 라이브러리(.dll)로 구성됩니다. 이 서비스는 요청-회신 통신 패턴을 정의하는 계약을 구현합니다.

@@ -3,11 +3,11 @@ title: 비동기 프로그램 (Visual Basic)의 제어 흐름
 ms.date: 07/20/2015
 ms.assetid: b0443af7-c586-4cb0-b476-742ae4098a96
 ms.openlocfilehash: 368422338f6452bf5dbe968d4798bc0d5e937c92
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2018
-ms.locfileid: "50041585"
+ms.locfileid: "50195218"
 ---
 # <a name="control-flow-in-async-programs-visual-basic"></a>비동기 프로그램 (Visual Basic)의 제어 흐름
 `Async` 및 `Await` 키워드를 사용하면 비동기 프로그램을 더 쉽게 쓰고 유지 관리할 수 있습니다. 그러나 프로그램 작동 방식을 이해하지 못한다면 결과가 놀라울 수 있습니다. 이 항목에서는 간단한 비동기 프로그램을 통해 제어 흐름을 추적하여 언제 메서드 간에 제어가 이동되고 매번 어떤 정보가 전달되는지 보여 줍니다.  

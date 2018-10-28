@@ -3,11 +3,11 @@ title: '방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들�
 ms.date: 07/20/2015
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
 ms.openlocfilehash: 44531ef643df6402ad318957c0a2bdc058c5bcb0
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50049258"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50195037"
 ---
 # <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-visual-basic"></a>방법: 비동기를 사용 하 여 병렬로 여러 웹 요청 만들기 및 Await (Visual Basic)
 비동기 메서드에서 작업은 만들어질 때 시작됩니다. 합니다 [Await](../../../../visual-basic/language-reference/operators/await-operator.md) 연산자를 계속할 수 없습니다 작업이 완료 될 때까지 메서드 지점에서 작업에 적용 됩니다. 다음 예제와 같이 작업이 생성되는 즉시 대기되는 경우가 많습니다.  

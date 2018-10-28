@@ -3,11 +3,11 @@ title: 속성의 사용 및 스타일 설정
 ms.date: 03/30/2017
 ms.assetid: c09a0600-116f-41cf-900a-1b7e4ea4e300
 ms.openlocfilehash: 6728ab0a02c4fc171019564fa2a55bc3a5afd394
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50039415"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50195907"
 ---
 # <a name="setting-the-use-and-style-properties"></a>속성의 사용 및 스타일 설정
 이 샘플에서는 <xref:System.ServiceModel.XmlSerializerFormatAttribute> 및 <xref:System.ServiceModel.DataContractFormatAttribute>에서 Use 및 Style 속성을 사용하는 방법을 보여 줍니다. 이러한 속성은 메시지 형식을 지정하는 방법에 영향을 줍니다. 기본적으로 메시지 본문 형식은 <xref:System.ServiceModel.OperationFormatStyle.Document>로 설정된 스타일을 사용하여 지정됩니다. 이러한 설정은 서비스 계약 수준이나 작업 계약 수준에서 지정할 수 있습니다.  

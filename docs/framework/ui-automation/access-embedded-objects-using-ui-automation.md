@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: a5b513ec-7fa6-4460-869f-c18ff04f7cf2
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 1e66106fc4592695d2901f11c507fb09df97be7b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 45db49cc2d8948becf86ce6953f15e752e0b96c1
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195981"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50193840"
 ---
 # <a name="access-embedded-objects-using-ui-automation"></a>UI 자동화를 사용하여 포함 개체에 액세스
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
   
  이 항목에서는 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 을 텍스트 컨트롤의 내용에 포함된 개체를 노출하는 데 사용하는 방법을 보여줍니다.  
   
@@ -38,8 +38,8 @@ ms.locfileid: "47195981"
 > [!NOTE]
 >  이미지 요소에는 해당 이미지를 설명하는 연관된 내장 텍스트가 있어야 하며, 일반적으로 <xref:System.Windows.Automation.AutomationElement.NameProperty> 에 있습니다(예: "파란색 고래"). 하지만 이미지 개체에 걸쳐 있는 텍스트 범위를 가져오면 텍스트 스트림에 이미지 또는 설명 텍스트가 반환되지 않습니다.  
   
- [!code-csharp[FindText#StartApp](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#startapp)]
- [!code-vb[FindText#StartApp](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#startapp)]  
+[!code-csharp[FindText#StartApp](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#startapp)]
+[!code-vb[FindText#StartApp](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#startapp)]  
 [!code-csharp[FindText#FindTextProvider](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#findtextprovider)]
 [!code-vb[FindText#FindTextProvider](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#findtextprovider)]  
 [!code-csharp[FindText#GetChildren](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#getchildren)]

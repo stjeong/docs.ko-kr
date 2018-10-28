@@ -3,11 +3,11 @@ title: NamedPipe 활성화
 ms.date: 03/30/2017
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
 ms.openlocfilehash: 05dea4e4faa91e4df9fdde8bdafc29473e49214e
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2018
-ms.locfileid: "50170499"
+ms.locfileid: "50195478"
 ---
 # <a name="namedpipe-activation"></a>NamedPipe 활성화
 이 샘플에서는 WAS(Windows Process Activation Service)를 사용하는 서비스를 호스트하여 이름 파이프를 통해 통신하는 서비스를 활성화하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 하며 [!INCLUDE[wv](../../../../includes/wv-md.md)] 실행 합니다.  

@@ -2,13 +2,12 @@
 title: Message Security 샘플
 ms.date: 03/30/2017
 ms.assetid: 82444166-6288-493a-85d4-85f43f134d19
-author: BrucePerlerMS
-ms.openlocfilehash: 46e17cb2d4fecc8a71988ff61287e6cc682654c9
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 8982e896f6ac383a1fd850bc5814bf99e5c3961d
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845348"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50193749"
 ---
 # <a name="message-security-sample"></a>Message Security 샘플
 이 샘플에서는 `basicHttpBinding` 및 메시지 보안을 사용하는 응용 프로그램을 구현하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다.  
@@ -127,7 +126,7 @@ Press <ENTER> to terminate client.
   
 3.  \client\bin에서 클라이언트 응용 프로그램을 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
   
-4.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+4.  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
 5.  샘플 사용을 마치면 Cleanup.bat를 실행하여 인증서를 제거합니다. 다른 보안 샘플에도 동일한 인증서가 사용됩니다.  
   
@@ -161,7 +160,7 @@ Press <ENTER> to terminate client.
   
 14. 클라이언트 컴퓨터의 명령 프롬프트 창에서 Client.exe를 실행합니다.  
   
-    1.  클라이언트와 서비스가 통신할 수 없는 경우 참조 [문제 해결 팁](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)합니다.  
+    1.  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
 ### <a name="to-clean-up-after-the-sample"></a>샘플 실행 후 정리를 수행하려면  
   

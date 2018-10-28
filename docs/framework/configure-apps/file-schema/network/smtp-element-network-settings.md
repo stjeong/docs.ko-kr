@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <smtp> element
 - smtp element
 ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
-ms.openlocfilehash: f095883ef32e57937c61a025b67f0cad2c8b096b
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.openlocfilehash: 362c5ba479c845a8183fe705e72ea3a12fb7a94c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50044856"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50195647"
 ---
 # <a name="ltsmtpgt-element-network-settings"></a>&lt;smtp&gt; 요소 (네트워크 설정)
 배달 형식, 배달 방법 구성 및 보내는 사람 전자 메일 보내기에 대 한 주소입니다.  
@@ -79,8 +79,8 @@ ms.locfileid: "50044856"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
- <xref:System.Net.Mail.SmtpDeliveryFormat>  
- <xref:System.Net.Mail.SmtpDeliveryMethod>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+- <xref:System.Net.Mail.SmtpDeliveryFormat>  
+- <xref:System.Net.Mail.SmtpDeliveryMethod>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

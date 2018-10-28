@@ -2,17 +2,17 @@
 title: '&lt;netHttpBinding&gt;의 &lt;security'
 ms.date: 03/30/2017
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
-ms.openlocfilehash: 912f53a9e0a5d1d145c308dd6f427df05b27c077
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 1c8a96759625da858d1491b7af59bf32e7e42a9e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48838535"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50193853"
 ---
 # <a name="ltsecuritygt-of-ltnethttpbinding"></a>&lt;netHttpBinding&gt;의 &lt;security
 보안 기능을 정의 합니다 [ \<basicHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)합니다.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<바인딩 >  
 \<netHttpBinding>  
 \<바인딩 >  
@@ -39,7 +39,7 @@ ms.locfileid: "48838535"
   
 |특성|설명|  
 |---------------|-----------------|  
-|모드|선택 사항입니다. 사용되는 보안 형식을 지정합니다. 기본값은 `None`입니다. 이 특성은 형식 <!--zz <xref:System.ServiceModel.NetHttpSecurityMode> --> `System.ServiceModel.NetHttpSecurityMode`합니다.|
+|모드|선택 사항입니다. 사용되는 보안 형식을 지정합니다. 기본값은 `None`입니다. 이 특성은 <xref:System.ServiceModel.BasicHttpSecurityMode> 형식입니다.|
   
 ## <a name="mode-attribute"></a>mode 특성  
   

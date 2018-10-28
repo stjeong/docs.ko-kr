@@ -2,12 +2,12 @@
 title: '연습: Async 및 Await를 사용하여 웹에 액세스(Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
-ms.openlocfilehash: e00798a5e591ed8621cd0b5dbb4adfd1d41989bd
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8998ed715306402f4d8cc98be82cbb8e4aac3f8e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43736298"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194165"
 ---
 # <a name="walkthrough-accessing-the-web-by-using-async-and-await-visual-basic"></a>연습: Async 및 Await를 사용하여 웹에 액세스(Visual Basic)
 async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직관적인 방식으로 작성할 수 있습니다. 동기 코드처럼 보이는 비동기 코드를 작성하고 일반적으로 비동기 코드에 수반되는 어려운 콜백 함수 및 연속 작업을 컴파일러에서 처리하도록 할 수 있습니다.  
@@ -172,16 +172,16 @@ async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직�
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290136.aspx",  
+                "https://msdn.microsoft.com/library/ee256749.aspx",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -215,8 +215,8 @@ async/await 기능을 사용하여 비동기 프로그램을 보다 쉽고 직�
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
     ```  
@@ -515,16 +515,16 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290136.aspx",  
+                "https://msdn.microsoft.com/library/ee256749.aspx",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -572,8 +572,8 @@ Class MainWindow
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
   
@@ -645,16 +645,16 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290136.aspx",  
+                "https://msdn.microsoft.com/library/ee256749.aspx",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -665,8 +665,8 @@ Class MainWindow
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
   

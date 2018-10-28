@@ -3,11 +3,11 @@ title: '방법: 명령줄 (Visual Basic)를 사용 하 여 어셈블리 만들�
 ms.date: 03/14/2018
 ms.assetid: 229ff9fb-1bd1-403b-946b-526104864c60
 ms.openlocfilehash: 3b9d3c45168020f22f7e263fdf59454e3789dd9e
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50036933"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194659"
 ---
 # <a name="how-to-create-and-use-assemblies-using-the-command-line-visual-basic"></a>방법: 명령줄 (Visual Basic)를 사용 하 여 어셈블리 만들기 및 사용
 어셈블리 또는 DLL(동적 연결 라이브러리)은 런타임 시 프로그램에 연결됩니다. DLL 빌드 및 사용을 보여 주려면 다음 시나리오를 고려합니다.  

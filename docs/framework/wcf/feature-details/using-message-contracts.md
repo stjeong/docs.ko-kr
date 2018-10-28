@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - message contracts [WCF]
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
-ms.openlocfilehash: 84640387e6d77e02d3b0d19b73c0d2b20d8d8831
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: c3f979d26c7e9c36fc242476ae5b3420b2e7d3ac
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848311"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194087"
 ---
 # <a name="using-message-contracts"></a>메시지 계약 사용
 일반적으로 Windows Communication Foundation (WCF) 응용 프로그램을 빌드하는 경우 개발자는 데이터 구조 및 serialization 문제에 주의 기울여야 및 데이터 전달 되는 메시지의 구조를 사용 하 여 고려할 필요가 없습니다. 이러한 응용 프로그램의 경우 매개 변수 또는 반환 값에 대한 데이터 계약을 만드는 과정은 간단합니다. (자세한 내용은 [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).)  
@@ -145,8 +145,8 @@ public class BankingTransaction
 ## <a name="controlling-whether-the-soap-body-parts-are-wrapped"></a>SOAP 본문 부분의 래핑 여부 제어  
  기본적으로 SOAP 본문 부분은 래핑된 요소 내부에서 serialize됩니다. 예를 들어 다음 코드에서는 `HelloGreetingMessage` 메시지에 대한 메시지 계약에서 <xref:System.ServiceModel.MessageContractAttribute> 형식의 이름으로부터 생성된 `HelloGreetingMessage` 래퍼 요소를 보여 줍니다.  
   
- [!code-csharp[MessageHeaderAttribute#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/messageheaderattribute/cs/services.cs#3)]
- [!code-vb[MessageHeaderAttribute#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/messageheaderattribute/vb/services.vb#3)]  
+[!code-csharp[MessageHeaderAttribute#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/messageheaderattribute/cs/services.cs#3)]
+[!code-vb[MessageHeaderAttribute#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/messageheaderattribute/vb/services.vb#3)]  
   
  래퍼 요소를 표시하지 않으려면 <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> 속성을 `false`로 설정합니다. 래퍼 요소의 이름 및 네임스페이스를 제어하려면 <xref:System.ServiceModel.MessageContractAttribute.WrapperName%2A> 및 <xref:System.ServiceModel.MessageContractAttribute.WrapperNamespace%2A> 속성을 사용합니다.  
   

@@ -2,12 +2,12 @@
 title: MSMQ 활성화
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: 649159f83dee2674f68cdd534a7000f173826bbf
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 20287af1c1d93bbdcfa83d88e5790284fbbff170
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840260"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194126"
 ---
 # <a name="msmq-activation"></a>MSMQ 활성화
 이 샘플에서는 메시지 큐에서 읽은 WAS(Windows Process Activation Service)에서 응용 프로그램을 호스트하는 방법을 보여 줍니다. 이 샘플에서는 합니다 `netMsmqBinding` 기반으로 합니다 [양방향 통신](../../../../docs/framework/wcf/samples/two-way-communication.md) 샘플입니다. 이 경우 서비스는 웹 호스팅 응용 프로그램이고 클라이언트는 자체 호스트되며 전송된 구매 주문의 상태를 확인하기 위해 콘솔에 출력됩니다.  
@@ -91,13 +91,13 @@ public class OrderProcessorService : IOrderProcessor
   
  Service.svc 파일 자체는 `OrderProcessorService`를 만들기 위한 지시문을 포함합니다.  
   
-```xml  
+```svc
 <%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>  
 ```  
   
  또한 Service.svc 파일은 System.Transactions.dll이 로드되도록 하는 어셈블리 지시문을 포함합니다.  
   
-```xml  
+```svc  
 <%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>  
 ```  
   
@@ -208,7 +208,7 @@ public class OrderStatusService : IOrderStatus
   
  클라이언트는 서버가 보낸 주문 상태 정보를 표시합니다.  
   
-```Output  
+```console  
 Press <ENTER> to terminate client.  
 Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending  
 ```  
@@ -251,7 +251,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  net.msmq 활성화를 지원하려면 먼저 기본 웹 사이트를 net.msmq 프로토콜에 바인딩해야 합니다. 이 작업은 [!INCLUDE[iisver](../../../../includes/iisver-md.md)] 관리 도구 집합과 함께 설치되는 appcmd.exe를 사용하여 수행할 수 있습니다. 권한이 높은 명령 프롬프트에서 다음 명령을 실행합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
         -+bindings.[protocol='net.msmq',bindingInformation='localhost']  
         ```  
@@ -263,7 +263,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     2.  사이트 내의 모든 응용 프로그램이 공통된 net.msmq 바인딩을 공유하지만 각 응용 프로그램에서 개별적으로 net.msmq 지원을 사용하도록 설정할 수 있습니다. /servicemodelsamples 응용 프로그램에서 net.msmq를 사용하도록 설정하려면 권한이 높은 명령 프롬프트에서 다음 명령을 실행합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.msmq  
         ```  
   
@@ -276,7 +276,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 8.  단일 컴퓨터 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다. 또한 구매 주문 전송 시에 큐의 URI에서 컴퓨터 이름이 반영되도록 구매 주문을 전송하는 클라이언트에서 코드를 변경합니다. 다음 코드를 사용합니다.  
   
-    ```  
+    ```csharp  
     client.SubmitPurchaseOrder(po, "net.msmq://localhost/private/ServiceModelSamples/OrderStatus");  
     ```  
   
@@ -286,7 +286,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  권한이 높은 명령 프롬프트에서 다음 명령을 실행하여 사용된 프로토콜 목록에서 net.msmq를 제거합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http  
         ```  
   
@@ -295,7 +295,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     2.  권한이 높은 명령 프롬프트에서 다음 명령을 실행하여 net.msmq 사이트 바인딩을 제거합니다.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.msmq',bindingInformation='localhost']  
         ```  
   
@@ -346,7 +346,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 5.  작업 그룹에서 서비스는 또한 제한되지 않은 토큰을 사용하여 실행되어야 합니다. 이렇게 하려면 명령 창에서 다음을 실행합니다.  
   
-    ```  
+    ```console  
     sc sidtype netmsmqactivator unrestricted  
     ```  
   
