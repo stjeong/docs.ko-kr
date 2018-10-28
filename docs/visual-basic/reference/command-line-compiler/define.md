@@ -10,16 +10,16 @@ helpviewer_keywords:
 - define compiler option [Visual Basic]
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
 ms.openlocfilehash: 4cab6bc968275bc12af4365fd3da5e3b5ff417f2
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
-ms.translationtype: HT
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2018
-ms.locfileid: "50044816"
+ms.locfileid: "50195179"
 ---
-# <a name="-define-visual-basic"></a><span data-ttu-id="8899b-102">-정의 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="8899b-102">-define (Visual Basic)</span></span>
-<span data-ttu-id="8899b-103">조건부 컴파일러 상수를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-103">Defines conditional compiler constants.</span></span>  
+# <a name="-define-visual-basic"></a><span data-ttu-id="0df2e-102">-정의 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="0df2e-102">-define (Visual Basic)</span></span>
+<span data-ttu-id="0df2e-103">조건부 컴파일러 상수를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-103">Defines conditional compiler constants.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8899b-104">구문</span><span class="sxs-lookup"><span data-stu-id="8899b-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0df2e-104">구문</span><span class="sxs-lookup"><span data-stu-id="0df2e-104">Syntax</span></span>  
   
 ```  
 -define:["]symbol[=value][,symbol[=value]]["]  
@@ -27,33 +27,33 @@ ms.locfileid: "50044816"
 -d:["]symbol[=value][,symbol[=value]]["]  
 ```  
   
-## <a name="arguments"></a><span data-ttu-id="8899b-105">인수</span><span class="sxs-lookup"><span data-stu-id="8899b-105">Arguments</span></span>  
+## <a name="arguments"></a><span data-ttu-id="0df2e-105">인수</span><span class="sxs-lookup"><span data-stu-id="0df2e-105">Arguments</span></span>  
   
-|<span data-ttu-id="8899b-106">용어</span><span class="sxs-lookup"><span data-stu-id="8899b-106">Term</span></span>|<span data-ttu-id="8899b-107">정의</span><span class="sxs-lookup"><span data-stu-id="8899b-107">Definition</span></span>|  
+|<span data-ttu-id="0df2e-106">용어</span><span class="sxs-lookup"><span data-stu-id="0df2e-106">Term</span></span>|<span data-ttu-id="0df2e-107">정의</span><span class="sxs-lookup"><span data-stu-id="0df2e-107">Definition</span></span>|  
 |---|---|  
-|`symbol`|<span data-ttu-id="8899b-108">필수 요소.</span><span class="sxs-lookup"><span data-stu-id="8899b-108">Required.</span></span> <span data-ttu-id="8899b-109">정의할 기호입니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-109">The symbol to define.</span></span>|  
-|`value`|<span data-ttu-id="8899b-110">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-110">Optional.</span></span> <span data-ttu-id="8899b-111">`symbol`을 할당할 값입니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-111">The value to assign `symbol`.</span></span> <span data-ttu-id="8899b-112">하는 경우 `value` 문자열은 백슬래시/따옴표 시퀀스로 묶어야 (\\") 따옴표 대신 합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-112">If `value` is a string, it must be surrounded by backslash/quotation-mark sequences (\\") instead of quotation marks.</span></span> <span data-ttu-id="8899b-113">값을 지정하지 않으면 True가 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-113">If no value is specified, then it is taken to be True.</span></span>|  
+|`symbol`|<span data-ttu-id="0df2e-108">필수 요소.</span><span class="sxs-lookup"><span data-stu-id="0df2e-108">Required.</span></span> <span data-ttu-id="0df2e-109">정의할 기호입니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-109">The symbol to define.</span></span>|  
+|`value`|<span data-ttu-id="0df2e-110">선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-110">Optional.</span></span> <span data-ttu-id="0df2e-111">`symbol`을 할당할 값입니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-111">The value to assign `symbol`.</span></span> <span data-ttu-id="0df2e-112">하는 경우 `value` 문자열은 백슬래시/따옴표 시퀀스로 묶어야 (\\") 따옴표 대신 합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-112">If `value` is a string, it must be surrounded by backslash/quotation-mark sequences (\\") instead of quotation marks.</span></span> <span data-ttu-id="0df2e-113">값을 지정하지 않으면 True가 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-113">If no value is specified, then it is taken to be True.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="8899b-114">설명</span><span class="sxs-lookup"><span data-stu-id="8899b-114">Remarks</span></span>  
- <span data-ttu-id="8899b-115">`-define` 옵션은 사용과 비슷합니다는 `#Const` 사용 하 여 정의 하는 상수를 제외 하 고 원본 파일에서 전처리기 지시문 `-define` 공용 이며 프로젝트의 모든 파일에 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-115">The `-define` option has an effect similar to using a `#Const` preprocessor directive in your source file, except that constants defined with `-define` are public and apply to all files in the project.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="0df2e-114">설명</span><span class="sxs-lookup"><span data-stu-id="0df2e-114">Remarks</span></span>  
+ <span data-ttu-id="0df2e-115">`-define` 옵션은 사용과 비슷합니다는 `#Const` 사용 하 여 정의 하는 상수를 제외 하 고 원본 파일에서 전처리기 지시문 `-define` 공용 이며 프로젝트의 모든 파일에 적용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-115">The `-define` option has an effect similar to using a `#Const` preprocessor directive in your source file, except that constants defined with `-define` are public and apply to all files in the project.</span></span>  
   
- <span data-ttu-id="8899b-116">이 옵션으로 만든 기호를 `#If`...`Then`...`#Else` 지시문과 함께 사용하면 소스 파일을 조건부 컴파일할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-116">You can use symbols created by this option with the `#If`...`Then`...`#Else` directive to compile source files conditionally.</span></span>  
+ <span data-ttu-id="0df2e-116">이 옵션으로 만든 기호를 `#If`...`Then`...`#Else` 지시문과 함께 사용하면 소스 파일을 조건부 컴파일할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-116">You can use symbols created by this option with the `#If`...`Then`...`#Else` directive to compile source files conditionally.</span></span>  
   
- <span data-ttu-id="8899b-117">`-d`는 약식 `-define`입니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-117">`-d` is the short form of `-define`.</span></span>  
+ <span data-ttu-id="0df2e-117">`-d`는 약식 `-define`입니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-117">`-d` is the short form of `-define`.</span></span>  
   
- <span data-ttu-id="8899b-118">쉼표를 사용해 기호 정의를 구분하여 `-define`으로 여러 기호를 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-118">You can define multiple symbols with `-define` by using a comma to separate symbol definitions.</span></span>  
+ <span data-ttu-id="0df2e-118">쉼표를 사용해 기호 정의를 구분하여 `-define`으로 여러 기호를 정의할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-118">You can define multiple symbols with `-define` by using a comma to separate symbol definitions.</span></span>  
   
-|<span data-ttu-id="8899b-119">Visual Studio 통합 개발 환경에서 /define을 설정하려면</span><span class="sxs-lookup"><span data-stu-id="8899b-119">To set /define in the Visual Studio integrated development environment</span></span>|  
+|<span data-ttu-id="0df2e-119">Visual Studio 통합 개발 환경에서 /define을 설정하려면</span><span class="sxs-lookup"><span data-stu-id="0df2e-119">To set /define in the Visual Studio integrated development environment</span></span>|  
 |---|  
-|<span data-ttu-id="8899b-120">1.  **솔루션 탐색기**에서 프로젝트를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-120">1.  Have a project selected in **Solution Explorer**.</span></span> <span data-ttu-id="8899b-121">**프로젝트** 메뉴에서 **속성**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-121">On the **Project** menu, click **Properties**.</span></span> <br /><span data-ttu-id="8899b-122">2.  **컴파일** 탭을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-122">2.  Click the **Compile** tab.</span></span><br /><span data-ttu-id="8899b-123">3.  **고급**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-123">3.  Click **Advanced**.</span></span><br /><span data-ttu-id="8899b-124">4.  값을 수정 합니다 **사용자 지정 상수** 상자입니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-124">4.  Modify the value in the **Custom Constants** box.</span></span>|  
+|<span data-ttu-id="0df2e-120">1.  **솔루션 탐색기**에서 프로젝트를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-120">1.  Have a project selected in **Solution Explorer**.</span></span> <span data-ttu-id="0df2e-121">**프로젝트** 메뉴에서 **속성**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-121">On the **Project** menu, click **Properties**.</span></span> <br /><span data-ttu-id="0df2e-122">2.  **컴파일** 탭을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-122">2.  Click the **Compile** tab.</span></span><br /><span data-ttu-id="0df2e-123">3.  **고급**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-123">3.  Click **Advanced**.</span></span><br /><span data-ttu-id="0df2e-124">4.  값을 수정 합니다 **사용자 지정 상수** 상자입니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-124">4.  Modify the value in the **Custom Constants** box.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="8899b-125">예제</span><span class="sxs-lookup"><span data-stu-id="8899b-125">Example</span></span>  
- <span data-ttu-id="8899b-126">다음 코드는 두 조건부 컴파일러 상수를 정의한 다음 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="8899b-126">The following code defines and then uses two conditional compiler constants.</span></span>  
+## <a name="example"></a><span data-ttu-id="0df2e-125">예제</span><span class="sxs-lookup"><span data-stu-id="0df2e-125">Example</span></span>  
+ <span data-ttu-id="0df2e-126">다음 코드는 두 조건부 컴파일러 상수를 정의한 다음 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="0df2e-126">The following code defines and then uses two conditional compiler constants.</span></span>  
   
  [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/define_1.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="8899b-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8899b-127">See Also</span></span>  
- [<span data-ttu-id="8899b-128">Visual Basic 명령줄 컴파일러</span><span class="sxs-lookup"><span data-stu-id="8899b-128">Visual Basic Command-Line Compiler</span></span>](../../../visual-basic/reference/command-line-compiler/index.md)  
- [<span data-ttu-id="8899b-129">#If...Then...#Else 지시문</span><span class="sxs-lookup"><span data-stu-id="8899b-129">#If...Then...#Else Directives</span></span>](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [<span data-ttu-id="8899b-130">#Const 지시문</span><span class="sxs-lookup"><span data-stu-id="8899b-130">#Const Directive</span></span>](../../../visual-basic/language-reference/directives/const-directive.md)  
- [<span data-ttu-id="8899b-131">샘플 컴파일 명령줄</span><span class="sxs-lookup"><span data-stu-id="8899b-131">Sample Compilation Command Lines</span></span>](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a><span data-ttu-id="0df2e-127">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0df2e-127">See Also</span></span>  
+ [<span data-ttu-id="0df2e-128">Visual Basic 명령줄 컴파일러</span><span class="sxs-lookup"><span data-stu-id="0df2e-128">Visual Basic Command-Line Compiler</span></span>](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [<span data-ttu-id="0df2e-129">#If...Then...#Else 지시문</span><span class="sxs-lookup"><span data-stu-id="0df2e-129">#If...Then...#Else Directives</span></span>](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
+ [<span data-ttu-id="0df2e-130">#Const 지시문</span><span class="sxs-lookup"><span data-stu-id="0df2e-130">#Const Directive</span></span>](../../../visual-basic/language-reference/directives/const-directive.md)  
+ [<span data-ttu-id="0df2e-131">샘플 컴파일 명령줄</span><span class="sxs-lookup"><span data-stu-id="0df2e-131">Sample Compilation Command Lines</span></span>](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
