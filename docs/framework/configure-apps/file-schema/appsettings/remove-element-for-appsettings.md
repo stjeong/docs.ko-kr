@@ -1,5 +1,5 @@
 ---
-title: '&lt;제거&gt; 요소에 대 한 &lt;appSettings&gt;'
+title: '&lt;제거할&gt; 요소에 대 한 &lt;appSettings&gt;'
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/remove
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 218c4464-e007-4539-803f-7c8b0a909fd8
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 21fedf064596979dbfb4190d9956da616295af3c
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e9b79a8319b320289f43adac5a82ef22fa5e32b0
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752119"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50199697"
 ---
-# <a name="remove-element-for-appsettings"></a>\<제거 > 요소에 대 한 \<g s >
+# <a name="remove-element-for-appsettings"></a>\<제거 > 요소에 대 한 \<appSettings >
 
 사용자 지정 응용 프로그램 설정을 제거합니다.
 
@@ -60,4 +60,4 @@ ms.locfileid: "32752119"
 
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+- [.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 95ef445d41672c5c2895bd7115afb6a73a57e8f9
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 90af7d01d78cf74cbb304e3b987d5fe58e23f76e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086139"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50196702"
 ---
 # <a name="formatfromrawvalue-function"></a>FormatFromRawValue 함수
 형식 변환이 시간 기반인 경우 하나의 원시 성능 데이터 값을 지정된 형식으로 변화하거나 두 개의 원시 성능 데이터 값으로 변환합니다.   
@@ -65,11 +65,11 @@ int FormatFromRawValue (
 `pTimeBase`  
 [in] 기본 시간을 형식으로 변환 하는 데 필요한 경우에 대 한 포인터입니다. 시간 기본 정보, 형식 변환에 대 한 필요가 없는 경우이 매개 변수의 값은 무시 됩니다.
 
-`pRawValue1` [in] 에 대 한 포인터를 [ `PDH_RAW_COUNTER` ](https://msdn.microsoft.com/library/windows/desktop/aa373060(v=vs.85).aspx) 원시 성능 값을 나타내는 구조체입니다.
+`pRawValue1` [in] 에 대 한 포인터를 [ `PDH_RAW_COUNTER` ](/windows/desktop/api/pdh/ns-pdh-_pdh_raw_counter) 원시 성능 값을 나타내는 구조체입니다.
 
-`pRawValue2` [in] 에 대 한 포인터를 [ `PDH_RAW_COUNTER` ](https://msdn.microsoft.com/library/windows/desktop/aa373060(v=vs.85).aspx) 두 번째 원시 성능 값을 나타내는 구조체입니다. 두 번째 원시 성능 값이 필요한 경우이 매개 변수 여야 합니다 `null`합니다.
+`pRawValue2` [in] 에 대 한 포인터를 [ `PDH_RAW_COUNTER` ](/windows/desktop/api/pdh/ns-pdh-_pdh_raw_counter) 두 번째 원시 성능 값을 나타내는 구조체입니다. 두 번째 원시 성능 값이 필요한 경우이 매개 변수 여야 합니다 `null`합니다.
 
-`pFmtValue` [out] 에 대 한 포인터를 [ `PDH_FMT_COUNTERVALUE` ](https://msdn.microsoft.com/library/windows/desktop/aa373050(v=vs.85).aspx) 구조체 형식이 지정 된 성능 값입니다.
+`pFmtValue` [out] 에 대 한 포인터를 [ `PDH_FMT_COUNTERVALUE` ](/windows/desktop/api/pdh/ns-pdh-_pdh_fmt_countervalue) 구조체 형식이 지정 된 성능 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -83,7 +83,7 @@ int FormatFromRawValue (
   
 ## <a name="remarks"></a>설명
 
-이 함수에 대 한 호출을 래핑하는 [FormatFromRawValue](https://msdn.microsoft.com/library/ms231047(v=vs.85).aspx) 함수입니다.
+이 함수에 대 한 호출을 래핑하는 [FormatFromRawValue](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms231047%28v=vs.85%29) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항  
  **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  

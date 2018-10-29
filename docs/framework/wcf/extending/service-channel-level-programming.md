@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8d8dcd85-0a05-4c44-8861-4a0b3b90cca9
-ms.openlocfilehash: 4d1ee0671a45b12e70f8f43ed2ea83b0a22d6c98
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: e00b5ae2c72a4d4dcd2140e9c280d5bfda3531c2
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805862"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50197199"
 ---
 # <a name="service-channel-level-programming"></a>서비스 채널 수준 프로그래밍
-이 항목에서는 사용 하지 않고 Windows Communication Foundation (WCF) 서비스 응용 프로그램을 작성 하는 방법을 설명는 <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> 및 관련된 개체 모델입니다.  
+이 항목에서는 사용 하지 않고 Windows Communication Foundation (WCF) 서비스 응용 프로그램을 작성 하는 방법을 설명 합니다 <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> 및 관련된 개체 모델입니다.  
   
 ## <a name="receiving-messages"></a>메시지 받기  
  메시지를 받은 다음 처리할 준비를 하려면 다음 단계가 필요합니다.  
@@ -29,12 +29,12 @@ ms.locfileid: "33805862"
 5.  모든 채널 개체를 닫습니다.  
   
 #### <a name="creating-a-binding"></a>바인딩 만들기  
- 메시지를 수신 대기하고 받는 첫 번째 단계는 바인딩을 만드는 것입니다. WCF 인스턴스화하여 즉시 둘 중 하나에 사용할 수 있는 여러 기본 제공 또는 시스템 제공 바인딩이 포함 되어 있습니다. 또한 목록 1의 코드가 수행하는 작업인 CustomBinding 클래스를 인스턴스화하여 사용자 지정 바인딩을 만들 수도 있습니다.  
+ 메시지를 수신 대기하고 받는 첫 번째 단계는 바인딩을 만드는 것입니다. WCF 인스턴스화 중 하나에서 직접 사용할 수 있는 여러 기본 제공 또는 시스템 제공 바인딩이 포함 되어 있습니다. 또한 목록 1의 코드가 수행하는 작업인 CustomBinding 클래스를 인스턴스화하여 사용자 지정 바인딩을 만들 수도 있습니다.  
   
  아래의 코드 예제에서는 <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType>의 인스턴스를 만들고 <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType>를 채널 스택을 빌드하는 데 사용되는 바인딩 요소의 컬렉션인 해당 요소 컬렉션에 추가합니다. 이 예제에서는 요소 컬렉션에 <xref:System.ServiceModel.Channels.HttpTransportBindingElement>만 있으므로 결과 채널 스택에는 HTTP 전송 채널만 있게 됩니다.  
   
 #### <a name="building-a-channellistener"></a>ChannelListener 빌드  
- 바인딩을 만든 후 이라고 <!--zz<xref:System.ServiceModel.Channels.Binding.BuildChannelListener%601%2A?displayProperty=nameWithType>--> `System.ServiceModel.Channels.Binding.BuildChannelListener` 형식 매개 변수가 만들 채널 셰이프 인 채널 수신기를 생성 합니다. 이 예제에서는 요청/회신 메시지 교환 패턴으로 들어오는 메시지를 수신 대기하려고 하므로 <xref:System.ServiceModel.Channels.IReplyChannel?displayProperty=nameWithType>을 사용합니다.  
+ 바인딩을 만든 후에 <xref:System.ServiceModel.Channels.Binding.BuildChannelListener%2A?displayProperty=nameWithType>을 호출하여 형식 매개 변수가 만들 채널 셰이프인 채널 수신기를 빌드합니다. 이 예제에서는 요청/회신 메시지 교환 패턴으로 들어오는 메시지를 수신 대기하려고 하므로 <xref:System.ServiceModel.Channels.IReplyChannel?displayProperty=nameWithType>을 사용합니다.  
   
  <xref:System.ServiceModel.Channels.IReplyChannel>은 요청 메시지를 받고 회신 메시지를 다시 보내는 데 사용됩니다. <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A?displayProperty=nameWithType>를 호출하면 요청 메시지를 받고 회신 메시지를 다시 보내는 데 사용할 수 있는 <xref:System.ServiceModel.Channels.IRequestChannel?displayProperty=nameWithType>을 반환합니다.  
   
