@@ -7,44 +7,44 @@ helpviewer_keywords:
 - out compiler option [Visual Basic]
 ms.assetid: 9f148c15-0909-4cb8-a2db-777f8a8b45ae
 ms.openlocfilehash: b619505f6e87efd1c3b18e1bed2862d3467984a7
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50041091"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50199931"
 ---
-# <a name="-out-visual-basic"></a><span data-ttu-id="22520-102">-out (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="22520-102">-out (Visual Basic)</span></span>
-<span data-ttu-id="22520-103">출력 파일의 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="22520-103">Specifies the name of the output file.</span></span>  
+# <a name="-out-visual-basic"></a><span data-ttu-id="bfcc9-102">-out (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="bfcc9-102">-out (Visual Basic)</span></span>
+<span data-ttu-id="bfcc9-103">출력 파일의 이름을 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-103">Specifies the name of the output file.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="22520-104">구문</span><span class="sxs-lookup"><span data-stu-id="22520-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="bfcc9-104">구문</span><span class="sxs-lookup"><span data-stu-id="bfcc9-104">Syntax</span></span>  
   
 ```  
 -out:filename  
 ```  
   
-## <a name="arguments"></a><span data-ttu-id="22520-105">인수</span><span class="sxs-lookup"><span data-stu-id="22520-105">Arguments</span></span>  
+## <a name="arguments"></a><span data-ttu-id="bfcc9-105">인수</span><span class="sxs-lookup"><span data-stu-id="bfcc9-105">Arguments</span></span>  
   
-|<span data-ttu-id="22520-106">용어</span><span class="sxs-lookup"><span data-stu-id="22520-106">Term</span></span>|<span data-ttu-id="22520-107">정의</span><span class="sxs-lookup"><span data-stu-id="22520-107">Definition</span></span>|  
+|<span data-ttu-id="bfcc9-106">용어</span><span class="sxs-lookup"><span data-stu-id="bfcc9-106">Term</span></span>|<span data-ttu-id="bfcc9-107">정의</span><span class="sxs-lookup"><span data-stu-id="bfcc9-107">Definition</span></span>|  
 |---|---|  
-|`filename`|<span data-ttu-id="22520-108">필수.</span><span class="sxs-lookup"><span data-stu-id="22520-108">Required.</span></span> <span data-ttu-id="22520-109">컴파일러 출력 파일의 이름을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="22520-109">The name of the output file the compiler creates.</span></span> <span data-ttu-id="22520-110">파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").</span><span class="sxs-lookup"><span data-stu-id="22520-110">If the file name contains a space, enclose the name in quotation marks (" ").</span></span>|  
+|`filename`|<span data-ttu-id="bfcc9-108">필수.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-108">Required.</span></span> <span data-ttu-id="bfcc9-109">컴파일러 출력 파일의 이름을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-109">The name of the output file the compiler creates.</span></span> <span data-ttu-id="bfcc9-110">파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").</span><span class="sxs-lookup"><span data-stu-id="bfcc9-110">If the file name contains a space, enclose the name in quotation marks (" ").</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="22520-111">설명</span><span class="sxs-lookup"><span data-stu-id="22520-111">Remarks</span></span>  
- <span data-ttu-id="22520-112">전체 이름 및 만들 파일의 확장명을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="22520-112">Specify the full name and extension of the file to create.</span></span> <span data-ttu-id="22520-113">.Exe 파일을 포함 하는 소스 코드 파일에서 해당 이름을 이렇게 하지 않으면 경우는 `Sub Main` 프로시저 및.dll 파일에서 첫 번째 소스 코드 파일의 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="22520-113">If you do not, the .exe file takes its name from the source-code file containing the `Sub Main` procedure, and the .dll file takes its name from the first source-code file.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="bfcc9-111">설명</span><span class="sxs-lookup"><span data-stu-id="bfcc9-111">Remarks</span></span>  
+ <span data-ttu-id="bfcc9-112">전체 이름 및 만들 파일의 확장명을 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-112">Specify the full name and extension of the file to create.</span></span> <span data-ttu-id="bfcc9-113">.Exe 파일을 포함 하는 소스 코드 파일에서 해당 이름을 이렇게 하지 않으면 경우는 `Sub Main` 프로시저 및.dll 파일에서 첫 번째 소스 코드 파일의 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-113">If you do not, the .exe file takes its name from the source-code file containing the `Sub Main` procedure, and the .dll file takes its name from the first source-code file.</span></span>  
   
- <span data-ttu-id="22520-114">.Exe 또는.dll 확장명 없이 파일 이름을 지정 하는 경우 컴파일러가 자동으로 추가 확장, 지정 된 값에 따라는 `-target` 컴파일러 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="22520-114">If you specify a file name without an .exe or .dll extension, the compiler automatically adds the extension for you, depending on the value specified for the `-target` compiler option.</span></span>  
+ <span data-ttu-id="bfcc9-114">.Exe 또는.dll 확장명 없이 파일 이름을 지정 하는 경우 컴파일러가 자동으로 추가 확장, 지정 된 값에 따라는 `-target` 컴파일러 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-114">If you specify a file name without an .exe or .dll extension, the compiler automatically adds the extension for you, depending on the value specified for the `-target` compiler option.</span></span>  
   
-|<span data-ttu-id="22520-115">확장은 Visual Studio 통합된 개발 환경에서 설정 하려면</span><span class="sxs-lookup"><span data-stu-id="22520-115">To set -out in the Visual Studio integrated development environment</span></span>|  
+|<span data-ttu-id="bfcc9-115">확장은 Visual Studio 통합된 개발 환경에서 설정 하려면</span><span class="sxs-lookup"><span data-stu-id="bfcc9-115">To set -out in the Visual Studio integrated development environment</span></span>|  
 |---|  
-|<span data-ttu-id="22520-116">1.  **솔루션 탐색기**에서 프로젝트를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="22520-116">1.  Have a project selected in **Solution Explorer**.</span></span> <span data-ttu-id="22520-117">**프로젝트** 메뉴에서 **속성**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="22520-117">On the **Project** menu, click **Properties**.</span></span> <br /><span data-ttu-id="22520-118">2.  **응용 프로그램** 탭을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="22520-118">2.  Click the **Application** tab.</span></span><br /><span data-ttu-id="22520-119">3.  값을 수정 합니다 **어셈블리 이름** 상자입니다.</span><span class="sxs-lookup"><span data-stu-id="22520-119">3.  Modify the value in the **Assembly Name** box.</span></span>|  
+|<span data-ttu-id="bfcc9-116">1.  **솔루션 탐색기**에서 프로젝트를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-116">1.  Have a project selected in **Solution Explorer**.</span></span> <span data-ttu-id="bfcc9-117">**프로젝트** 메뉴에서 **속성**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-117">On the **Project** menu, click **Properties**.</span></span> <br /><span data-ttu-id="bfcc9-118">2.  **응용 프로그램** 탭을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-118">2.  Click the **Application** tab.</span></span><br /><span data-ttu-id="bfcc9-119">3.  값을 수정 합니다 **어셈블리 이름** 상자입니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-119">3.  Modify the value in the **Assembly Name** box.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="22520-120">예제</span><span class="sxs-lookup"><span data-stu-id="22520-120">Example</span></span>  
- <span data-ttu-id="22520-121">다음 코드 컴파일을 `T2.vb` 출력 파일을 만들고 `T2.exe`합니다.</span><span class="sxs-lookup"><span data-stu-id="22520-121">The following code compiles `T2.vb` and creates output file `T2.exe`.</span></span>  
+## <a name="example"></a><span data-ttu-id="bfcc9-120">예제</span><span class="sxs-lookup"><span data-stu-id="bfcc9-120">Example</span></span>  
+ <span data-ttu-id="bfcc9-121">다음 코드 컴파일을 `T2.vb` 출력 파일을 만들고 `T2.exe`합니다.</span><span class="sxs-lookup"><span data-stu-id="bfcc9-121">The following code compiles `T2.vb` and creates output file `T2.exe`.</span></span>  
   
 ```console
 vbc t2.vb -out:t3.exe  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="22520-122">참고 항목</span><span class="sxs-lookup"><span data-stu-id="22520-122">See Also</span></span>  
- [<span data-ttu-id="22520-123">Visual Basic 명령줄 컴파일러</span><span class="sxs-lookup"><span data-stu-id="22520-123">Visual Basic Command-Line Compiler</span></span>](../../../visual-basic/reference/command-line-compiler/index.md)  
- [<span data-ttu-id="22520-124">-target (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="22520-124">-target (Visual Basic)</span></span>](../../../visual-basic/reference/command-line-compiler/target.md)  
- [<span data-ttu-id="22520-125">샘플 컴파일 명령줄</span><span class="sxs-lookup"><span data-stu-id="22520-125">Sample Compilation Command Lines</span></span>](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a><span data-ttu-id="bfcc9-122">참고 항목</span><span class="sxs-lookup"><span data-stu-id="bfcc9-122">See Also</span></span>  
+ [<span data-ttu-id="bfcc9-123">Visual Basic 명령줄 컴파일러</span><span class="sxs-lookup"><span data-stu-id="bfcc9-123">Visual Basic Command-Line Compiler</span></span>](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [<span data-ttu-id="bfcc9-124">-target (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="bfcc9-124">-target (Visual Basic)</span></span>](../../../visual-basic/reference/command-line-compiler/target.md)  
+ [<span data-ttu-id="bfcc9-125">샘플 컴파일 명령줄</span><span class="sxs-lookup"><span data-stu-id="bfcc9-125">Sample Compilation Command Lines</span></span>](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
