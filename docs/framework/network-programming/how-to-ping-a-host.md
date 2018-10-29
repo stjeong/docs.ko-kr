@@ -4,19 +4,17 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Ping
 ms.assetid: bbf20f5b-eca1-4661-af04-cb8837f9af05
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: e066af175982b71fb42bf2eec75fe9d92f532e61
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: ffade286882608f98c8771c0bdf2c70803769e38
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47402752"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50183570"
 ---
-# <a name="how-to-ping-a-host"></a><span data-ttu-id="69b9b-102">방법: 호스트 Ping</span><span class="sxs-lookup"><span data-stu-id="69b9b-102">How to: Ping a Host</span></span>
-<span data-ttu-id="69b9b-103">이 샘플에서는 원격 호스트를 ping하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="69b9b-103">This sample shows how to ping a remote host.</span></span>  
+# <a name="how-to-ping-a-host"></a><span data-ttu-id="66499-102">방법: 호스트 Ping</span><span class="sxs-lookup"><span data-stu-id="66499-102">How to: Ping a Host</span></span>
+<span data-ttu-id="66499-103">이 샘플에서는 원격 호스트를 ping하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="66499-103">This sample shows how to ping a remote host.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="69b9b-104">예</span><span class="sxs-lookup"><span data-stu-id="69b9b-104">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="66499-104">예</span><span class="sxs-lookup"><span data-stu-id="66499-104">Example</span></span>  
   
 ```  
 using System;  
@@ -122,7 +120,7 @@ namespace Examples.System.Net.NetworkInformation.PingTest
 }  
 ```  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="69b9b-105">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="69b9b-105">Compiling the Code</span></span>  
- <span data-ttu-id="69b9b-106">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="69b9b-106">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="66499-105">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="66499-105">Compiling the Code</span></span>  
+ <span data-ttu-id="66499-106">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="66499-106">This example requires:</span></span>  
   
--   <span data-ttu-id="69b9b-107">**System.Net** 네임스페이스에 대한 참조.</span><span class="sxs-lookup"><span data-stu-id="69b9b-107">References to the **System.Net** namespace.</span></span>
+-   <span data-ttu-id="66499-107">**System.Net** 네임스페이스에 대한 참조.</span><span class="sxs-lookup"><span data-stu-id="66499-107">References to the **System.Net** namespace.</span></span>

@@ -5,19 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 98ddbdb9-66b1-4080-92ad-51f5c447fcf8
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 1f78f98f94daa51c17a1294285e13dfddd457106
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 5f863aa61058e87a7911bab3b02c3ba345419596
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47230971"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50193606"
 ---
-# <a name="how-to-register-a-custom-protocol-using-webrequest"></a><span data-ttu-id="5702c-102">방법: WebRequest를 사용하여 사용자 지정 프로토콜 등록</span><span class="sxs-lookup"><span data-stu-id="5702c-102">How to: Register a Custom Protocol Using WebRequest</span></span>
-<span data-ttu-id="5702c-103">이 예제에서는 다른 곳에서 정의된 프로토콜별 클래스를 등록하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5702c-103">This example shows how to register a protocol specific classthat is defined elsewhere.</span></span> <span data-ttu-id="5702c-104">이 예제에서 `CustomWebRequestCreator`는 `CustomWebRequest` 개체를 반환하는 **Create** 메서드를 구현하는 사용자가 구현한 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="5702c-104">In this example, `CustomWebRequestCreator` is the user-implemented object that implements the **Create** method that returns the `CustomWebRequest` object.</span></span> <span data-ttu-id="5702c-105">코드 예제에서는 사용자 지정 프로토콜을 구현하는 `CustomWebRequest` 코드를 작성했다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="5702c-105">The code example assumes that you have written the `CustomWebRequest` code that implements the custom protocol.</span></span>  
+# <a name="how-to-register-a-custom-protocol-using-webrequest"></a><span data-ttu-id="b3471-102">방법: WebRequest를 사용하여 사용자 지정 프로토콜 등록</span><span class="sxs-lookup"><span data-stu-id="b3471-102">How to: Register a Custom Protocol Using WebRequest</span></span>
+<span data-ttu-id="b3471-103">이 예제에서는 다른 곳에서 정의된 프로토콜별 클래스를 등록하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="b3471-103">This example shows how to register a protocol specific classthat is defined elsewhere.</span></span> <span data-ttu-id="b3471-104">이 예제에서 `CustomWebRequestCreator`는 `CustomWebRequest` 개체를 반환하는 **Create** 메서드를 구현하는 사용자가 구현한 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="b3471-104">In this example, `CustomWebRequestCreator` is the user-implemented object that implements the **Create** method that returns the `CustomWebRequest` object.</span></span> <span data-ttu-id="b3471-105">코드 예제에서는 사용자 지정 프로토콜을 구현하는 `CustomWebRequest` 코드를 작성했다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="b3471-105">The code example assumes that you have written the `CustomWebRequest` code that implements the custom protocol.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="5702c-106">예</span><span class="sxs-lookup"><span data-stu-id="5702c-106">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="b3471-106">예</span><span class="sxs-lookup"><span data-stu-id="b3471-106">Example</span></span>  
   
 ```csharp  
 WebRequest.RegisterPrefix("custom", new CustomWebRequestCreator());  
@@ -29,10 +27,10 @@ WebRequest.RegisterPrefix("custom", New CustomWebRequestCreator())
 Dim req As WebRequest = WebRequest.Create("custom://customHost.contoso.com/")  
 ```  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="5702c-107">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="5702c-107">Compiling the Code</span></span>  
- <span data-ttu-id="5702c-108">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5702c-108">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="b3471-107">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="b3471-107">Compiling the Code</span></span>  
+ <span data-ttu-id="b3471-108">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="b3471-108">This example requires:</span></span>  
   
- <span data-ttu-id="5702c-109"><xref:System.Net> 네임스페이스에 대한 참조.</span><span class="sxs-lookup"><span data-stu-id="5702c-109">References to the <xref:System.Net> namespace.</span></span>  
+ <span data-ttu-id="b3471-109"><xref:System.Net> 네임스페이스에 대한 참조.</span><span class="sxs-lookup"><span data-stu-id="b3471-109">References to the <xref:System.Net> namespace.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5702c-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="5702c-110">See Also</span></span>  
- [<span data-ttu-id="5702c-111">플러그형 프로토콜 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="5702c-111">Programming Pluggable Protocols</span></span>](../../../docs/framework/network-programming/programming-pluggable-protocols.md)
+## <a name="see-also"></a><span data-ttu-id="b3471-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b3471-110">See Also</span></span>  
+ [<span data-ttu-id="b3471-111">플러그형 프로토콜 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="b3471-111">Programming Pluggable Protocols</span></span>](../../../docs/framework/network-programming/programming-pluggable-protocols.md)

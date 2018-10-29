@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b4336978825fbf7844b3ceaf179954f28660f08c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 04b28dec0f016d44692665fb0ce95a7e496f103c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409409"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200524"
 ---
-# <a name="icordebugblockingobjectenumnext-method"></a><span data-ttu-id="deb01-102">ICorDebugBlockingObjectEnum::Next 메서드</span><span class="sxs-lookup"><span data-stu-id="deb01-102">ICorDebugBlockingObjectEnum::Next Method</span></span>
-<span data-ttu-id="deb01-103">지정된 된 수의 가져옵니다 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 개체에서 현재 위치부터 시작 하는 열거형입니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-103">Gets the specified number of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) objects from the enumeration, starting at the current position.</span></span>  
+# <a name="icordebugblockingobjectenumnext-method"></a><span data-ttu-id="21b06-102">ICorDebugBlockingObjectEnum::Next 메서드</span><span class="sxs-lookup"><span data-stu-id="21b06-102">ICorDebugBlockingObjectEnum::Next Method</span></span>
+<span data-ttu-id="21b06-103">지정 된 개수를 가져옵니다 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 개체를 열거형에서 현재 위치에서 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-103">Gets the specified number of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) objects from the enumeration, starting at the current position.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="deb01-104">구문</span><span class="sxs-lookup"><span data-stu-id="deb01-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="21b06-104">구문</span><span class="sxs-lookup"><span data-stu-id="21b06-104">Syntax</span></span>  
   
 ```  
 HRESULT Next([in] ULONG  celt,  
@@ -36,44 +36,42 @@ HRESULT Next([in] ULONG  celt,
              [out] ULONG *pceltFetched;  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="deb01-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="deb01-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="21b06-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="21b06-105">Parameters</span></span>  
  `celt`  
- <span data-ttu-id="deb01-106">[in] 검색할 개체의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-106">[in] The number of objects to retrieve.</span></span>  
+ <span data-ttu-id="21b06-106">[in] 검색할 개체의 수입니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-106">[in] The number of objects to retrieve.</span></span>  
   
  `values`  
- <span data-ttu-id="deb01-107">[out] 에 대 한 포인터의 배열 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-107">[out] An array of pointers to [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) objects.</span></span>  
+ <span data-ttu-id="21b06-107">[out] 에 대 한 포인터의 배열을 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-107">[out] An array of pointers to [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) objects.</span></span>  
   
  `pceltFetched`  
- <span data-ttu-id="deb01-108">[out] 검색 된 개체의 수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-108">[out] A pointer to the number of objects that were retrieved.</span></span>  
+ <span data-ttu-id="21b06-108">[out] 검색 된 개체의 수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-108">[out] A pointer to the number of objects that were retrieved.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="deb01-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="deb01-109">Return Value</span></span>  
- <span data-ttu-id="deb01-110">이 메서드는 다음과 같은 특정 HRESULT를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-110">This method returns the following specific HRESULTs.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="21b06-109">반환 값</span><span class="sxs-lookup"><span data-stu-id="21b06-109">Return Value</span></span>  
+ <span data-ttu-id="21b06-110">이 메서드는 다음과 같은 특정 HRESULT를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-110">This method returns the following specific HRESULTs.</span></span>  
   
-|<span data-ttu-id="deb01-111">HRESULT</span><span class="sxs-lookup"><span data-stu-id="deb01-111">HRESULT</span></span>|<span data-ttu-id="deb01-112">설명</span><span class="sxs-lookup"><span data-stu-id="deb01-112">Description</span></span>|  
+|<span data-ttu-id="21b06-111">HRESULT</span><span class="sxs-lookup"><span data-stu-id="21b06-111">HRESULT</span></span>|<span data-ttu-id="21b06-112">설명</span><span class="sxs-lookup"><span data-stu-id="21b06-112">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="deb01-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="deb01-113">S_OK</span></span>|<span data-ttu-id="deb01-114">메서드가 완료되었습니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-114">The method completed successfully.</span></span>|  
-|<span data-ttu-id="deb01-115">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="deb01-115">S_FALSE</span></span>|<span data-ttu-id="deb01-116">`pceltFetched`이 `celt`와 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-116">`pceltFetched` does not equal `celt`.</span></span>|  
+|<span data-ttu-id="21b06-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="21b06-113">S_OK</span></span>|<span data-ttu-id="21b06-114">메서드가 완료되었습니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-114">The method completed successfully.</span></span>|  
+|<span data-ttu-id="21b06-115">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="21b06-115">S_FALSE</span></span>|<span data-ttu-id="21b06-116">`pceltFetched`이 `celt`와 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-116">`pceltFetched` does not equal `celt`.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="deb01-117">설명</span><span class="sxs-lookup"><span data-stu-id="deb01-117">Remarks</span></span>  
- <span data-ttu-id="deb01-118">이 메서드가 함수 같은 일반적인 COM 열거자입니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-118">This method functions like a typical COM enumerator.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="21b06-117">설명</span><span class="sxs-lookup"><span data-stu-id="21b06-117">Remarks</span></span>  
+ <span data-ttu-id="21b06-118">이 메서드가 함수는 일반적인 COM 열거자를 선호합니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-118">This method functions like a typical COM enumerator.</span></span>  
   
- <span data-ttu-id="deb01-119">입력된 배열 값 이상 이어야 합니다 크기의 `celt`합니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-119">The input array values must be at least of size `celt`.</span></span> <span data-ttu-id="deb01-120">배열을 채우는 사용 하 여 다음 `celt` 값을 열거형에 남아 있는 모든 값 보다 적으면 `celt` 유지 됩니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-120">The array will be filled with either the next `celt` values in the enumeration or with all remaining values if fewer than `celt` remain.</span></span> <span data-ttu-id="deb01-121">이 메서드가 반환 될 때 `pceltFetched` 검색 된 값의 수로 채워집니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-121">When this method returns, `pceltFetched` will be filled with the number of values that were retrieved.</span></span> <span data-ttu-id="deb01-122">경우 `values` 잘못 된 포인터를 포함 하거나 보다 작은 버퍼를 가리키는 `celt`, if 또는 `pceltFetched` 잘못 된 포인터는 결과가 정의 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-122">If `values` contains invalid pointers or points to a buffer that is smaller than `celt`, or if `pceltFetched` is an invalid pointer, the result is undefined.</span></span>  
+ <span data-ttu-id="21b06-119">입력된 배열 값 이상 이어야 합니다 크기인 `celt`합니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-119">The input array values must be at least of size `celt`.</span></span> <span data-ttu-id="21b06-120">배열 채워집니다 중 하나를 사용 하 여 다음 `celt` 값을 열거형에 남아 있는 모든 값 보다 적으면 `celt` 유지 합니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-120">The array will be filled with either the next `celt` values in the enumeration or with all remaining values if fewer than `celt` remain.</span></span> <span data-ttu-id="21b06-121">이 메서드는 반환 될 때 `pceltFetched` 검색 된 값의 수로 채워집니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-121">When this method returns, `pceltFetched` will be filled with the number of values that were retrieved.</span></span> <span data-ttu-id="21b06-122">경우 `values` 잘못 된 포인터를 포함 하거나 보다 작은 버퍼를 가리키는 `celt`, 또는 경우 `pceltFetched` 는 잘못 된 포인터는 결과가 정의 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-122">If `values` contains invalid pointers or points to a buffer that is smaller than `celt`, or if `pceltFetched` is an invalid pointer, the result is undefined.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="deb01-123">하지만 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) "ICorDebugValue" 인터페이스 내부에서 해제 되어야 하나요, 구조 해제 될 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-123">Although the [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structure does not need to be released, the "ICorDebugValue" interface inside of it does need to be released.</span></span>  
+>  <span data-ttu-id="21b06-123">하지만 [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) 구조를 해제할 필요가 없습니다, 내부 "ICorDebugValue" 인터페이스는 해제 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="21b06-123">Although the [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structure does not need to be released, the "ICorDebugValue" interface inside of it does need to be released.</span></span>  
   
--  
+## <a name="requirements"></a><span data-ttu-id="21b06-124">요구 사항</span><span class="sxs-lookup"><span data-stu-id="21b06-124">Requirements</span></span>  
+ <span data-ttu-id="21b06-125">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="21b06-125">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="deb01-124">요구 사항</span><span class="sxs-lookup"><span data-stu-id="deb01-124">Requirements</span></span>  
- <span data-ttu-id="deb01-125">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="deb01-125">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="21b06-126">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="21b06-126">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="deb01-126">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="deb01-126">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="21b06-127">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="21b06-127">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="deb01-127">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="deb01-127">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="21b06-128">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="21b06-128">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
- <span data-ttu-id="deb01-128">**.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="deb01-128">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="deb01-129">참고 항목</span><span class="sxs-lookup"><span data-stu-id="deb01-129">See Also</span></span>  
- [<span data-ttu-id="deb01-130">ICorDebugDataTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="deb01-130">ICorDebugDataTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)  
- [<span data-ttu-id="deb01-131">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="deb01-131">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [<span data-ttu-id="deb01-132">디버깅</span><span class="sxs-lookup"><span data-stu-id="deb01-132">Debugging</span></span>](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a><span data-ttu-id="21b06-129">참고 항목</span><span class="sxs-lookup"><span data-stu-id="21b06-129">See Also</span></span>  
+ [<span data-ttu-id="21b06-130">ICorDebugDataTarget 인터페이스</span><span class="sxs-lookup"><span data-stu-id="21b06-130">ICorDebugDataTarget Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)  
+ [<span data-ttu-id="21b06-131">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="21b06-131">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
+ [<span data-ttu-id="21b06-132">디버깅</span><span class="sxs-lookup"><span data-stu-id="21b06-132">Debugging</span></span>](../../../../docs/framework/unmanaged-api/debugging/index.md)
