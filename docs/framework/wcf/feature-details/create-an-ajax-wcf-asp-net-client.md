@@ -69,13 +69,13 @@ ms.locfileid: "48024612"
 
 ## <a name="configure-the-client-to-access-the-service"></a>서비스에 액세스 하는 클라이언트 구성
 
-1. 엽니다는 *WebForm1.aspx* 파일을 선택 합니다 **디자인** 보기.
+1. *WebForm1.aspx* 파일을 열어 **디자인** 보기를 선택합니다.
 
-2. **뷰** 메뉴에서 **도구 상자**합니다.
+2. **뷰** 메뉴에서 **도구 상자**를 선택합니다.
 
-3. 확장을 **AJAX 확장** 노드 및 끌어서 놓기는 **ScriptManager** 폼입니다.
+3. **AJAX 확장** 노드를 확장하여 **ScriptManager**를 폼에 드래그 앤 드롭하십시오.
 
-4. 다시 합니다 **원본** 보기, 사이 다음 코드를 추가 합니다  **\<ScriptManager >** WCF 서비스의 경로를 지정 하는 태그:
+4. **소스** 보기로 돌아가, 다음 코드와 같이 **\<ScriptManager >** 태그 사이에 WCF 서비스의 경로를 지정하십시오:
 
     ```html
     <Services>
