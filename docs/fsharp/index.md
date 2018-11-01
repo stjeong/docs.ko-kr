@@ -34,15 +34,15 @@ F# 가이드는 F# 언어를 배우기 위한 많은 리소스를 제공합니�
 
 ## <a name="references"></a>참조
 
-[F # 언어 참조](language-reference/index.md) 모든 F # 언어 기능에 대 한 공식, 포괄적인 참조 하는 것입니다. 각 문서는 구문에 설명 하 고 코드 샘플을 보여 줍니다. 특정 문서를 검색 하려면 필터 표시줄의 목차에서에서 사용할 수 있습니다.
+[F# 언어 참조](language-reference/index.md)는 모든 F# 언어 기능에 대한 공식적이고 포괄적인 참조 문서로, 각 문서는 구문을 설명하고 코드 샘플을 보여 줍니다. 목차에서 필터 표시줄을 사용하면 특정 문서를 검색할 수 있습니다. 특정 문서를 검색 하려면 필터 표시줄의 목차에서에서 사용할 수 있습니다.
 
 [F# 핵심 라이브러리 참조](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference)는 F# 핵심 라이브러리 API 참조입니다.
 
 ## <a name="additional-guides"></a>추가 가이드
 
-[F # 재미와 수익](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) 포괄적이 고 매우 자세한 F # 학습에 합니다. 해당 내용과 저자는 F # 커뮤니티에서 사랑 합니다. 대상 개체 지향 프로그래밍 배경의 개발자 주로 됩니다.
+[재미와 수익을 위한 F#](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/)은 F# 학습에 대한 포괄적이고 매우 자세한 책으로, 해당 내용과 저자는 F# 커뮤니티에서 사랑을 받고 있습니다. 대상 독자는 주로 객체 지향 프로그래밍 배경을 가진 개발자입니다.
 
-[F # 프로그래밍 Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) F # 학습 하는 방법에 대 한 wikibook 됩니다. F # 커뮤니티의 제품 이기도합니다. 대상 대상은 F #을 개체 지향 프로그래밍 배경의 약간 접하는 사람들입니다.
+[F# 프로그래밍 Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming)은 F# 학습에 대한 위키북으로, 이 또한 F# 커뮤니티에서 제작했습니다. 대상 독자는 F#을 처음 배우지만 약간의 객체 지향적 프로그래밍 지식이 있는 독자입니다.
 
 ## <a name="learn-f-through-videos"></a>비디오를 통한 F# 학습
 
@@ -50,7 +50,7 @@ F# 가이드는 F# 언어를 배우기 위한 많은 리소스를 제공합니�
 
 [F#을 사용한 프로그래밍 소개](https://www.youtube.com/watch?v=Teak30_pXHk&list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC)는 Visual Studio Code를 기본 편집기로 사용하는 유용한 비디오 시리즈입니다. 비디오 시리즈는 텍스트 기반 RPG 비디오 게임을 만드는 과정을 처음부터 보여줍니다. 대상 독자는 Visual Studio Code (또는 간편한 IDE)를 선호하고 F#을 처음 사용하는 개발자입니다.
 
-[F #에 대 한 개발자를 위한 Visual Studio 2017의 새로운](https://www.linkedin.com/learning/what-s-new-in-visual-studio-2017-for-f-sharp-for-developers) Visual Studio 2017에서 F #에 대 한 최신 기능 중 일부를 보여 주는 비디오 과정입니다. 대상 독자는 F#을 처음으로 접하는 Visual Studio 개발자입니다.
+[F# 개발자를 위한 Visual Studio 2017의 새로운 기능](https://www.linkedin.com/learning/what-s-new-in-visual-studio-2017-for-f-sharp-for-developers)은 Visual Studio 2017에서 F#의 최신 기능 중 일부를 보여주는 비디오 과정으로, F#을 처음 접하는 Visual Studio 개발자를 대상으로 합니다.
 
 ## <a name="other-useful-resources"></a>다른 유용한 리소스
 
