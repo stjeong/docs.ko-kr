@@ -1,13 +1,13 @@
 ---
 redirect_url: /dotnet/fsharp/index
 ms.openlocfilehash: e9328a08370f1e7188fe3959d5d8ab3b382f8baa
-ms.sourcegitcommit: bd1ef61f4bb794b25383d3d72e71041a5ced172e
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "25726540"
 ---
-# <a name="f-tutorials"></a><span data-ttu-id="12ba8-101">F# 자습서</span><span class="sxs-lookup"><span data-stu-id="12ba8-101">F# Tutorials</span></span>
+# <a name="f-tutorials"></a><span data-ttu-id="00349-101">F# 자습서</span><span class="sxs-lookup"><span data-stu-id="00349-101">F# Tutorials</span></span>
 
 > [!NOTE]
-<span data-ttu-id="12ba8-102">이 문서는 아직 작성 중입니다.</span><span class="sxs-lookup"><span data-stu-id="12ba8-102">This is still in-progress.</span></span>
+<span data-ttu-id="00349-102">이 문서는 아직 작성 중입니다.</span><span class="sxs-lookup"><span data-stu-id="00349-102">This is still in-progress.</span></span>
