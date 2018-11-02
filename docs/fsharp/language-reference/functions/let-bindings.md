@@ -3,10 +3,10 @@ title: let 바인딩(F#)
 description: "F # 'let' 식별자는 값 또는 함수를 사용 하 여 연결 하는 바인딩을 사용 하는 방법에 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 1a35b5a39f2768a18665b5c7fe768af0e7714577
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43777472"
 ---
 # <a name="let-bindings"></a>let 바인딩

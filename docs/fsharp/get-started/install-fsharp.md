@@ -3,10 +3,10 @@ title: 'F # 설치'
 description: 'F #의 경우이 사용자 환경에 따라 설치 하는 방법에 알아봅니다.'
 ms.date: 08/28/2018
 ms.openlocfilehash: d53ecdcba5411db62208cb683a0fad795711b77c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "50193905"
 ---
 # <a name="install-f"></a>F # 설치 #

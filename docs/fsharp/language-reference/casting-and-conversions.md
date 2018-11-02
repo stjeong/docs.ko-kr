@@ -3,10 +3,10 @@ title: 캐스팅 및 변환(F#)
 description: '제공 하는 방법을 F # 프로그래밍 언어 변환 연산자에 대 한 다양 한 기본 형식 간의 산술 변환에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: aca1a2523130ee485a7e7c9a6a45a410904cb246
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "45677932"
 ---
 # <a name="casting-and-conversions-f"></a>캐스팅 및 변환(F#)

@@ -2,12 +2,12 @@
 title: 매개 변수 및 인수(F#)
 description: '매개 변수를 정의 하 고 함수, 메서드 및 속성에 인수를 전달 하기 위한 F # 언어 지원에 알아봅니다.'
 ms.date: 05/16/2016
-ms.openlocfilehash: a1e2a70ca560bbb09d2cd10f47485cbe5c5e029d
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 6ccef89fe411096ed66f481dd4ae2d91259fe1c4
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123360"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50744459"
 ---
 # <a name="parameters-and-arguments"></a>매개 변수 및 인수
 
@@ -111,6 +111,8 @@ let angle (Polar(_, theta)) = theta
 
 매개 변수 이름 앞에 물음표를 사용 하 여 메서드에 대 한 선택적 매개 변수를 지정할 수 있습니다. 선택적 매개 변수를 사용 하 여 옵션 형식 쿼리는 정상적인 방법으로 쿼리할 수 있도록 F # 옵션 유형으로 해석 됩니다는 `match` 식을 `Some` 고 `None`입니다. 선택적 매개 변수를 사용 하 여 만든 함수에 없는 멤버에 대해서만 허용 됩니다 `let` 바인딩.
 
+값을 전달할 수 기존 선택적 메서드에 매개 변수 이름으로 같은 `?arg=None` 나 `?arg=Some(3)` 또는 `?arg=arg`합니다. 이 기능은 다른 메서드에 선택적 인수를 전달 하는 메서드를 작성 하는 경우에 유용할 수 있습니다.
+
 함수를 사용할 수도 있습니다 `defaultArg`, 선택적 인수의 기본값을 설정 합니다. `defaultArg` 함수는 첫 번째 인수는 선택적 매개 변수와 두 번째 기본 값을 가져옵니다.
 
 다음 예에서는 선택적 매개 변수의 사용을 하는 방법을 보여 줍니다.
@@ -123,7 +125,29 @@ let angle (Polar(_, theta)) = theta
 Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 Baud Rate: 300 Duplex: Half Parity: true
+Baud Rate: 9600 Duplex: Full Parity: false
+Baud Rate: 9600 Duplex: Full Parity: false
+Baud Rate: 4800 Duplex: Half Parity: false
 ```
+
+위해 C# 및 Visual Basic interop 특성을 사용할 수 있습니다 `[<Optional; DefaultParameterValue<(...)>]` 에서 F#호출자는 선택 사항으로 인수로 표시 되도록 합니다. 이 해당 인수에 선택적으로 정의 하는 C# 에서처럼 `MyMethod(int i = 3)`합니다.
+
+```fsharp
+open System
+open System.Runtime.InteropServices
+type C = 
+    static member Foo([<Optional; DefaultParameterValue("Hello world")>] message) =
+        printfn "%s" message
+```
+
+인수로 지정 된 값 `DefaultParameterValue` 형식과 일치 해야 매개 변수 즉, 다음은 허용 되지 않습니다.
+
+```fsharp
+type C =
+    static member Wrong([<Optional; DefaultParameterValue("string")>] i:int) = ()
+```
+
+이 경우 컴파일러는 경고를 생성 하 고 두 특성 모두 무시 됩니다. 기본값이 `null` 형식 주석이 지정 해야 경우 컴파일러에서 유추 잘못 된 형식, 즉 `[<Optional; DefaultParameterValue(null:obj)>] o:obj`합니다.
 
 ## <a name="passing-by-reference"></a>참조로 전달
 

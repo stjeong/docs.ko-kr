@@ -3,10 +3,10 @@ title: 클래스(F#)
 description: 'F # 클래스는 속성, 메서드 및 이벤트를 가질 수 있는 개체를 나타내는 형식 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 71cd713d192d28565e879b79b2fc9e0530e5f841
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "48845738"
 ---
 # <a name="classes"></a>클래스

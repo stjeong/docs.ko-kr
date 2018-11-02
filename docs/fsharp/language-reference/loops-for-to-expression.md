@@ -3,10 +3,10 @@ title: '루프: for...to 식(F#)'
 description: '참조 하는 방법을 F # 하십시오... 식으로 루프 변수 값의 범위에 대해 루프를 반복에 사용 됩니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 8160fd30c4f3afe8bb6b58f468802ef1c0ef32ee
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43800471"
 ---
 # <a name="loops-forto-expression"></a>루프: for...to 식

@@ -2,12 +2,12 @@
 title: F# 둘러보기
 description: F# 코드 샘플을 사용 하 여이 자습서에서 언어 프로그래밍의 주요 기능 중 일부를 검토 합니다.
 ms.date: 02/28/2018
-ms.openlocfilehash: d129e2312ae3da64f04b3bbb0bbd0b4d77aad36e
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 7a512b5fead8de69f025e791b6086c60dbfc1b24
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42924523"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50235715"
 ---
 # <a name="tour-of-f"></a>F# 둘러보기 #
 
@@ -193,6 +193,6 @@ F#에.NET 클래스에 대 한 전체 지원을 [인터페이스](language-refer
 
 지금까지 살펴본 언어의 주요 기능 중 일부는 이제 첫 번째 F# 프로그램 작성을 준비 해야 합니다!  체크 아웃 [Getting Started](tutorials/getting-started/index.md) 에 개발 환경을 설정 하 여 일부 코드를 작성 하는 방법을 알아봅니다.
 
-자세히 학습을 위한 다음 단계를 원하는 수 있지만 것이 좋습니다 [첫 번째 클래스 값으로 함수](introduction-to-functional-programming/functions-as-first-class-values.md) <!--[Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md)--> 핵심 함수형 프로그래밍 개념에 익숙하지 가져오려고 합니다.  이러한 강력한 프로그램 F# 빌드에 필수적인 됩니다.
+자세히 학습을 위한 다음 단계를 원하는 수 있지만 것이 좋습니다 [에 함수형 프로그래밍 소개 F# ](introduction-to-functional-programming/index.md) 핵심 함수형 프로그래밍 개념에 익숙하지 가져오려고 합니다.  이러한 강력한 프로그램 F# 빌드에 필수적인 됩니다.
 
 또한 체크 아웃 합니다 [F# 언어 참조](language-reference/index.md) F#에서 광범위 한 개념적 콘텐츠를 보려면.

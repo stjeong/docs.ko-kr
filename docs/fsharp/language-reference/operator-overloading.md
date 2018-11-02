@@ -3,10 +3,10 @@ title: 연산자 오버로드(F#)
 description: 'F #의 전역 수준에서 클래스 또는 레코드 형식에 산술 연산자를 오버 로드 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 6232ebf215289e6a22b9d77fbd5fa67b82460486
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "44087301"
 ---
 # <a name="operator-overloading"></a>연산자 오버로드

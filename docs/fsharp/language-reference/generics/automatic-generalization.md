@@ -3,10 +3,10 @@ title: 자동 일반화(F#)
 description: '어떻게 F # 자동 일반화 인수 및 함수의 유형은 가능한 경우 여러 형식으로 작동 되도록에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 84de9cbb2b9fcf2488393f7dbdfc3b610cdcffb0
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43855779"
 ---
 # <a name="automatic-generalization"></a>자동 일반화

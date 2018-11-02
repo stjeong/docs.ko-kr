@@ -3,10 +3,10 @@ title: 'F # 구성 요소 디자인 지침'
 description: '다른 호출자가 사용 하기 위한 F # 구성 요소를 작성 하는 것에 대 한 지침을 알아봅니다.'
 ms.date: 05/14/2018
 ms.openlocfilehash: 446cba0f810af9517b655ef5741ddf7a919676d5
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43488289"
 ---
 # <a name="f-component-design-guidelines"></a>F # 구성 요소 디자인 지침
