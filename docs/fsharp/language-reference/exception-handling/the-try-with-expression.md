@@ -3,10 +3,10 @@ title: '예외: try...with 식(F#)'
 description: "예외 처리에 대 한 F # '사용해...' 식을 사용 하는 방법을 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 588960c0f8ccedb431c37d0f1314bf1a293b638c
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "44042168"
 ---
 # <a name="exceptions-the-trywith-expression"></a>예외: try...with 식

@@ -1,12 +1,12 @@
 ---
 title: 예외 처리(F#)
-description: 'F #에서 예외 처리의 기본 사항을 설명 하 고 식과 함수를 처리 하는 예외에 대 한 링크를 찾습니다.'
+description: 예외 처리의 기본 사항을 알아봅니다 F# 식 및 함수를 처리 하는 예외에 대 한 링크를 찾아보십시오.
 ms.date: 05/16/2016
 ms.openlocfilehash: fc89feb0d21bc823cb105e435413f8309cd6174c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "33564328"
 ---
 # <a name="exception-handling"></a>예외 처리

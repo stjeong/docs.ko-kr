@@ -3,10 +3,10 @@ title: 인라인 함수(F#)
 description: 'F # 인라인 함수 호출 코드에 직접 통합을 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 47fca0fe34630792aeb0908b0cee02a927e2567d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "45745947"
 ---
 # <a name="inline-functions"></a>인라인 함수

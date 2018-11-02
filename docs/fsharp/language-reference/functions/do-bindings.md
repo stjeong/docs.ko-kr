@@ -3,10 +3,10 @@ title: do 바인딩(F#)
 description: "F # 'do' 바인딩에 사용법 함수 또는 값을 정의 하지 않고 코드를 실행할 수에 대해 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 78dbf8da0fe40b5af566ad98693df1109eede7e4
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "45973146"
 ---
 # <a name="do-bindings"></a>do 바인딩

@@ -3,10 +3,10 @@ title: '명시적 필드: val 키워드(F#)'
 description: "F # 'val' 알아봅니다 형식을 초기화 하지 않고 클래스 또는 구조체 형식의 값을 저장 하는 위치를 선언 하는 데 사용 되는 키워드입니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 9cd06f7e90192be79490dd0ff67f118cce4339c3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "45746389"
 ---
 # <a name="explicit-fields-the-val-keyword"></a>명시적 필드: val 키워드
@@ -67,7 +67,7 @@ val [ mutable ] [ access-modifier ] field-name : type-name
 
 명시적 필드는 루틴에 사용하기 위한 것이 아닙니다. 일반적으로는 가능한 경우 항상 명시적 필드 대신 클래스의 `let` 바인딩을 사용해야 합니다. 명시적 필드는 네이티브 API에 대한 플랫폼 호출에 사용할 구조체를 정의해야 하는 경우 등과 같은 특정 상호 운용성 시나리오나 COM interop 시나리오에서 유용하게 사용됩니다. 자세한 내용은 [외부 함수](../functions/external-functions.md)합니다. 명시적 필드가 필요할 수 있는 또 다른 상황으로는 기본 생성자가 없는 클래스를 만드는 F# 코드 생성기를 사용하여 작업해야 하는 경우를 들 수 있습니다. 명시적 필드는 스레드에 정적인 변수나 그와 유사한 구문에도 유용하게 사용됩니다. 자세한 내용은 `System.ThreadStaticAttribute`을 참조하십시오.
 
-`member val` 키워드가 형식 정의에 함께 표시되는 경우 이는 자동으로 구현된 속성의 정의입니다. 자세한 내용은 [속성](properties.md)합니다.
+`member val` 키워드가 형식 정의에 함께 표시되는 경우 이는 자동으로 구현된 속성의 정의입니다. 자세한 내용은 [속성](properties.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
 ## <a name="see-also"></a>참고자료
 

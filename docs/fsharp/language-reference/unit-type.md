@@ -3,10 +3,10 @@ title: 단위 형식(F#)
 description: "위치 값이 필요한 언어 구문을 사용 하 여 필요한 되었거나 필요한 값이 없는 경우 위치를 포함 하는 데 자주 사용 하는 F # 'unit' 형식 하는 방법에 대해 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: c3dfa5f63c25a1e8abc0f75b905c129b311479af
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "44204658"
 ---
 # <a name="unit-type"></a>단위 형식

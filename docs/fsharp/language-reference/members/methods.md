@@ -3,10 +3,10 @@ title: 메서드(F#)
 description: '어떻게는 F # 메서드는 노출 기능 및 개체 및 유형의 동작을 구현 하는 데 사용 되는 형식과 연결 된 함수에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 02d5a7d22d1ce79a06e15462637c373b33623f61
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "44253210"
 ---
 # <a name="methods"></a>메서드

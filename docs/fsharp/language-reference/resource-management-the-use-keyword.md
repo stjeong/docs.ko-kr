@@ -3,10 +3,10 @@ title: '리소스 관리: use 키워드(F#)'
 description: "F # 키워드 '사용' 및 초기화 및 리소스의 해제를 제어할 수는 'using' 함수를 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: ffa1cb515139a3705920d9d9f79be1a69602f7d8
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "45616071"
 ---
 # <a name="resource-management-the-use-keyword"></a>리소스 관리: use 키워드

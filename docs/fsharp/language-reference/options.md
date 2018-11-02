@@ -3,10 +3,10 @@ title: 옵션(F#)
 description: '명명 된 값 또는 변수에 대 한 F # 형식 때 실제 값이 존재 하지 않을 옵션을 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 0859cb42e72ef9e67551b884f5cf6130fb099a78
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "46479522"
 ---
 # <a name="options"></a>옵션
@@ -51,7 +51,7 @@ F # 라이브러리 함수를 다 수도 반환 존재 하지 않을 수 있는 
 |[IsNone](https://msdn.microsoft.com/library/f08532ca-1716-4f60-ae59-8ef6256df234)|`bool`|반환 `true` 옵션에는 `None` 값입니다.|
 |[IsSome](https://msdn.microsoft.com/library/c5088d51-c5d7-425f-a77f-12c379bb356f)|`bool`|반환 `true` 옵션을 하지 않은 값이 있으면 `None`합니다.|
 |[일부](https://msdn.microsoft.com/library/12f048d2-e293-4596-accb-de036ecd63fc)|`'T option`|옵션을 만드는 정적 멤버인 되지 않는 값이 `None`합니다.|
-|[Value](https://msdn.microsoft.com/library/c79f68e8-11fd-45b1-a053-e8fc38b56df7)|`'T`|기본 값을 반환 하거나 throw 된 `System.NullReferenceException` 값이 `None`합니다.|
+|[값](https://msdn.microsoft.com/library/c79f68e8-11fd-45b1-a053-e8fc38b56df7)|`'T`|기본 값을 반환 하거나 throw 된 `System.NullReferenceException` 값이 `None`합니다.|
 
 ## <a name="option-module"></a>Option 모듈
 

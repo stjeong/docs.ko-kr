@@ -3,10 +3,10 @@ title: Null 값(F#)
 description: 'F # 프로그래밍 언어에서 null 값은 사용 하는 방법을 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 8751ac402c43ddb07fb62e08b6c6d5403cbe9acc
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43787904"
 ---
 # <a name="null-values"></a>Null 값

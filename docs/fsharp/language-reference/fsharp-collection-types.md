@@ -3,10 +3,10 @@ title: F# 컬렉션 형식
 description: 'F # 컬렉션 형식 및.NET Framework의 컬렉션 형식에서 서로 어떻게에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: a3cfc3f06582c31a79dce43b583eca39f69ddf1e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43864763"
 ---
 # <a name="f-collection-types"></a>F# 컬렉션 형식

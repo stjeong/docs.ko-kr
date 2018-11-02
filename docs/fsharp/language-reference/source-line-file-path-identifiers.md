@@ -3,10 +3,10 @@ title: 소스 줄, 파일 및 경로 식별자(F#)
 description: '기본 F # 식별자 값 사용 하면 소스 줄 번호, 디렉터리 및 파일 이름을 코드에 액세스할 수 있도록 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 14f710d1412c3420ec627dc30216ba2e89f16bcd
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43865129"
 ---
 # <a name="source-line-file-and-path-identifiers"></a>소스 줄, 파일 및 경로 식별자

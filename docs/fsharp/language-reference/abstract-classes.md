@@ -3,10 +3,10 @@ title: 추상 클래스(F#)
 description: '개체 형식의 다양 한 집합의 공통 기능을 나타내는 및 구현 되지 않은 일부 또는 모든 멤버를 유지 하는 F # 추상 클래스에 대해 알아보세요.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 7e1bb9daca7e8a3b442cd7fb02ef99bb6a2085cb
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "43745452"
 ---
 # <a name="abstract-classes"></a>추상 클래스

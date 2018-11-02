@@ -3,10 +3,10 @@ title: '예외: try...finally 식(F#)'
 description: "에 대해 알아봅니다 어떻게 F # ' try... 마지막 ' 식을 사용 하면 코드 블록에 예외가 발생 하는 경우에 정리 코드를 실행할 수 있습니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 546a6b0619de6f51044600dc1ead73c6d5211299
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "45970320"
 ---
 # <a name="exceptions-the-tryfinally-expression"></a>예외: try...finally 식

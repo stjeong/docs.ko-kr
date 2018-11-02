@@ -3,10 +3,10 @@ title: 네임스페이스(F#)
 description: 'F # 네임 스페이스를 프로그램 요소의 그룹에 이름을 연결 하 여 관련 기능 영역으로 코드를 구성할 수 있습니다를 사용 하는 방법을 알아봅니다.'
 ms.date: 04/24/2017
 ms.openlocfilehash: 769a1241f76ac32d3a6a80bd637078493119bb3c
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
+ms.lasthandoff: 11/02/2018
 ms.locfileid: "44178259"
 ---
 # <a name="namespaces"></a>네임스페이스
