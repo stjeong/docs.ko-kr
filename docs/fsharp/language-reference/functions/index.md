@@ -1,6 +1,6 @@
 ---
 title: 함수(F#)
-description: F# 및 F#에서 지 원하는 방법 일반적인 함수형 프로그래밍 구문도 함수에 알아봅니다.
+description: 'F # 및 F #에서 지 원하는 방법 일반적인 함수형 프로그래밍 구문도 함수에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 717eba7e69398048d229173e07ccc376797171bb
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

@@ -1,6 +1,6 @@
 ---
 title: '재귀 함수: rec 키워드(F#)'
-description: "'Let' 키워드를 사용 하 여 재귀 함수를 정의 하는 F# 'rec' 키워드는 사용 하는 방법을 알아봅니다."
+description: "'Let' 키워드를 사용 하 여 재귀 함수를 정의 하는 F # 'rec' 키워드는 사용 하는 방법을 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 5aab6ed8ab0fc3c0f0bcfc93c3ce6518ec53254f
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -30,7 +30,7 @@ function2-body
 
 ## <a name="remarks"></a>설명
 
-재귀 함수를 직접 호출 하는 함수는 F# 언어에서 명시적으로 식별 됩니다. 이렇게 하면 함수의 범위에서 사용 가능한 정의 되는 식별자입니다.
+재귀 함수를 직접 호출 하는 함수는 F # 언어에서 명시적으로 식별 됩니다. 이렇게 하면 함수의 범위에서 사용 가능한 정의 되는 식별자입니다.
 
 다음 코드에서는 계산 하는 재귀 함수는 *n*<sup>th</sup> 피보나치 수입니다.
 

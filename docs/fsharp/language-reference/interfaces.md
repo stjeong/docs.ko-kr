@@ -1,6 +1,6 @@
 ---
 title: 인터페이스(F#)
-description: F# 인터페이스는 다른 클래스에서 구현 관련된 멤버의 집합을 지정 하는 방법에 대해 알아봅니다.
+description: 'F # 인터페이스는 다른 클래스에서 구현 관련된 멤버의 집합을 지정 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 6d7f8ee9ea17d2294933f88577c30a96975ae5d4
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -47,7 +47,7 @@ let class-name (argument-list) =
 
 인터페이스에 대 한 기본 액세스 가능성은 `public`합니다.
 
-필요에 따라 일반 F# 구문을 사용 하 여 이름을 각 메서드 매개 변수를 지정할 수 있습니다.
+필요에 따라 일반 F # 구문을 사용 하 여 이름을 각 메서드 매개 변수를 지정할 수 있습니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet24032.fs)]
 

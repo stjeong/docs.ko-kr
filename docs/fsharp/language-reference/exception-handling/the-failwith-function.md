@@ -1,6 +1,6 @@
 ---
 title: '예외: failwith 함수(F#)'
-description: "'Failwith' 함수에서 F# 예외를 생성 하는 방법에 대해 알아봅니다."
+description: "'Failwith' 함수에서 F # 예외를 생성 하는 방법에 대해 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: 69a2eb69e0157d3bde8cb8884cb0ae960634dddc
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -11,7 +11,7 @@ ms.locfileid: "43863431"
 ---
 # <a name="exceptions-the-failwith-function"></a>예외: failwith 함수
 
-`failwith` 함수에는 F# 예외가 발생 합니다.
+`failwith` 함수에는 F # 예외가 발생 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,7 +23,7 @@ failwith error-message-string
 
 합니다 *오류 메시지 문자열* 리터럴 문자열이 나 형식의 값은 이전 구문에서 `string`합니다. 되기는 `Message` 예외의 속성입니다.
 
-생성 되는 예외 `failwith` 은 `System.Exception` 이름이 참조 하는 예외를 `Failure` F# 코드에서. 다음 코드에서는 `failwith` 예외를 throw 합니다.
+생성 되는 예외 `failwith` 은 `System.Exception` 이름이 참조 하는 예외를 `Failure` F # 코드에서. 다음 코드에서는 `failwith` 예외를 throw 합니다.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet6001.fs)]
 

@@ -1,6 +1,6 @@
 ---
 title: 생성자(F#)
-description: 정의 하 고 F#에서 생성자를 사용 하 여 만들고 클래스 및 구조체 개체를 초기화 하는 방법을 알아봅니다.
+description: '정의 하 고 F #에서 생성자를 사용 하 여 만들고 클래스 및 구조체 개체를 초기화 하는 방법을 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: ff2463f890034cce0bbaa85d9a5c93e50427cd03
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

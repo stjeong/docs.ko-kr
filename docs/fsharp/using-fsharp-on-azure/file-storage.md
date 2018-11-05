@@ -1,5 +1,5 @@
 ---
-title: F#을 사용 하 여 Azure File storage 시작
+title: 'F #을 사용 하 여 Azure File storage 시작'
 description: Azure File storage 사용 하 여 클라우드에 파일 데이터를 저장 하 고 Azure 가상 머신 (VM)에서 클라우드 파일 공유를 탑재 또는 온-프레미스 응용 프로그램에서 Windows를 실행 합니다.
 author: sylvanc
 ms.date: 09/20/2016
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2018
 ms.locfileid: "33569345"
 ---
-# <a name="get-started-with-azure-file-storage-using-f"></a>F#을 사용 하 여 Azure File storage 시작 #
+# <a name="get-started-with-azure-file-storage-using-f"></a>F #을 사용 하 여 Azure File storage 시작 #
 
 Azure File storage는 표준을 사용 하 여 클라우드에서 파일 공유를 제공 하는 서비스 [서버 메시지 블록 (SMB) 프로토콜](https://msdn.microsoft.com/library/windows/desktop/aa365233.aspx)합니다. SMB 2.1과 SMB 3.0을 모두 지원 됩니다. Azure File storage를 사용 하 여 신속 하 고 비용이 많이 드는 재작성 없이 azure 파일 공유에 의존 하는 레거시 응용 프로그램을 마이그레이션할 수 있습니다. Azure virtual machines 또는 cloud services 또는 온-프레미스 클라이언트에서 실행 중인 응용 프로그램은 데스크톱 응용 프로그램이 일반적인 SMB 공유를 탑재 하는 것 처럼 클라우드에 파일 공유를 탑재할 수 있습니다. 응용 프로그램 구성 요소를 개수에 관계 없이 탑재 고 File storage 공유를 동시에 액세스할 수 있습니다.
 
@@ -21,9 +21,9 @@ File storage의 개념적인 개요를 참조 하세요 [file storage 용.NET �
 이 가이드를 사용 하려면 먼저 [Azure storage 계정 만들기](/azure/storage/storage-create-storage-account)합니다.
 또한이 계정에 대 한 저장소 액세스 키를 해야 합니다.
 
-## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F# 스크립트와 시작 F# 대화형
+## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F # 스크립트와 시작 F # 대화형
 
-이 문서의 샘플에에서는 F# 응용 프로그램 또는 F# 스크립트에서 사용할 수 있습니다. F# 스크립트를 만들려면 사용 하 여 파일을 만듭니다는 `.fsx` 확장명을 예를 들어 `files.fsx`, F# 개발 환경에서.
+이 문서의 샘플에에서는 F # 응용 프로그램 또는 F # 스크립트에서 사용할 수 있습니다. F # 스크립트를 만들려면 사용 하 여 파일을 만듭니다는 `.fsx` 확장명을 예를 들어 `files.fsx`, F # 개발 환경에서.
 
 다음을 사용 하 여는 [패키지 관리자](package-management.md) 와 같은 [Paket](https://fsprojects.github.io/Paket/) 또는 [NuGet](https://www.nuget.org/) 설치 하는 `WindowsAzure.Storage` 패키지 및 참조 `WindowsAzure.Storage.dll` 를사용하여스크립트에서`#r`지시문입니다.
 

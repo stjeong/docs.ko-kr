@@ -1,6 +1,6 @@
 ---
 title: 측정 단위(F#)
-description: 어떻게 부동 소수점 알아봅니다 및 F#의 부호 있는 정수 값, 측정 단위 길이, 볼륨 및 대용량을 나타내기 위해 일반적으로 사용 되는 연결 수입니다.
+description: '어떻게 부동 소수점 알아봅니다 및 F #의 부호 있는 정수 값, 측정 단위 길이, 볼륨 및 대용량을 나타내기 위해 일반적으로 사용 되는 연결 수입니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: ad2193e25f3c0cee6e73cd529ab43d1e4b6b549b
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -11,7 +11,7 @@ ms.locfileid: "45972519"
 ---
 # <a name="units-of-measure"></a>측정 단위
 
-F#의 부동 소수점 및 부호 있는 정수 값 대용량, 길이, 볼륨을 나타내기 위해 일반적으로 사용 되는 측정값을 단위가 연결 될 수 있습니다. 한지 확인 하려면 산술 관계 올바른 단위를 방지할 수 있는 컴파일러를 사용 하면 수량 단위를 사용 하 여 오류를 프로그래밍 합니다.
+F #의 부동 소수점 및 부호 있는 정수 값 대용량, 길이, 볼륨을 나타내기 위해 일반적으로 사용 되는 측정값을 단위가 연결 될 수 있습니다. 한지 확인 하려면 산술 관계 올바른 단위를 방지할 수 있는 컴파일러를 사용 하면 수량 단위를 사용 하 여 오류를 프로그래밍 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -113,7 +113,7 @@ That temperature in degrees Celsius is    32.22.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6906.fs)]
 
-## <a name="units-of-measure-in-the-f-core-library"></a>F# 핵심 라이브러리의 측정 단위
+## <a name="units-of-measure-in-the-f-core-library"></a>F # 핵심 라이브러리의 측정 단위
 
 단위 라이브러리에서 사용할 수는 `FSharp.Data.UnitSystems.SI` 네임 스페이스입니다. 기호 형식으로 모두의 SI 단위를 포함 (같은 `m` 미터에 대 한)에 `UnitSymbols` 하위 네임 스페이스와 전체 이름 (같은 `meter` 미터에 대 한)에서 `UnitNames` 하위 네임 스페이스입니다.
 

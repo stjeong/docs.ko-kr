@@ -1,6 +1,6 @@
 ---
 title: 클래스의 do 바인딩(F#)
-description: F# 'do' 개체가 생성 될 때나 형식을 처음 사용할 때 작업을 수행 하는 클래스 정의 바인딩을 사용 하는 방법에 알아봅니다.
+description: "F # 'do' 개체가 생성 될 때나 형식을 처음 사용할 때 작업을 수행 하는 클래스 정의 바인딩을 사용 하는 방법에 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: e54a5bde52bf6973cc338c929ba99e6fd5b53127
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

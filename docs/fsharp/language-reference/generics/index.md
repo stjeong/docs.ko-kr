@@ -1,6 +1,6 @@
 ---
 title: 제네릭(F#)
-description: F# 제네릭 함수 및 코드를 반복 하지 않고 다양 한 형식 사용 하는 코드를 쓸 수 있는 형식을 사용 하는 방법에 알아봅니다.
+description: 'F # 제네릭 함수 및 코드를 반복 하지 않고 다양 한 형식 사용 하는 코드를 쓸 수 있는 형식을 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: fc061f19c6c7fa737f7ca05aae83fd42c0010b37
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

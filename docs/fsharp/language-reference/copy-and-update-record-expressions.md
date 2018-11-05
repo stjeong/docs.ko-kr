@@ -1,5 +1,5 @@
 ---
-title: 복사 및 업데이트 레코드 식 (F#)
+title: '복사 및 업데이트 레코드 식 (F #)'
 description: 작성을 '복사 및 업데이트 레코드 expression' 복사는 기존 레코드를 업데이트 하는 필드 지정 및 업데이트 된 레코드를 반환 하는 방법에 알아봅니다.
 author: ChrSteinert
 ms.date: 06/04/2016

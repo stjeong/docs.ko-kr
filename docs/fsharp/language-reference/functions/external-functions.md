@@ -1,6 +1,6 @@
 ---
 title: 외부 함수(F#)
-description: 네이티브 코드의 함수를 호출 하는 것에 대 한 F# 언어 지원에 알아봅니다.
+description: '네이티브 코드의 함수를 호출 하는 것에 대 한 F # 언어 지원에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: db0d3362d867b07b333951f3380c6735ff471d5e
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -11,7 +11,7 @@ ms.locfileid: "45973107"
 ---
 # <a name="external-functions"></a>외부 함수
 
-이 항목에서는 네이티브 코드의 함수를 호출 하는 것에 대 한 F# 언어 지원을 설명 합니다.
+이 항목에서는 네이티브 코드의 함수를 호출 하는 것에 대 한 F # 언어 지원을 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,7 +34,7 @@ extern "C" void __declspec(dllexport) HelloWorld()
 }
 ```
 
-다음 코드를 사용 하 여 F#에서이 함수를 호출할 수 있습니다.
+다음 코드를 사용 하 여 F #에서이 함수를 호출할 수 있습니다.
 
 ```fsharp
 open System.Runtime.InteropServices
@@ -46,7 +46,7 @@ module InteropWithNative =
 InteropWithNative.HelloWorld()
 ```
 
-네이티브 코드와의 상호 운용성 이라고 *플랫폼 호출* 이며 CLR의 기능입니다. 자세한 내용은 [비관리 코드 상호 운용](../../../../docs/framework/interop/index.md)을 참조하세요. 이 섹션의 정보는 F#에 적용 됩니다.
+네이티브 코드와의 상호 운용성 이라고 *플랫폼 호출* 이며 CLR의 기능입니다. 자세한 내용은 [비관리 코드 상호 운용](../../../../docs/framework/interop/index.md)을 참조하세요. 이 섹션의 정보는 F #에 적용 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

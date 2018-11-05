@@ -1,6 +1,6 @@
 ---
 title: 산술 연산자(F#)
-description: F# 프로그래밍 언어에서 제공 하는 산술 연산자에 알아봅니다.
+description: 'F # 프로그래밍 언어에서 제공 하는 산술 연산자에 알아봅니다.'
 ms.date: 04/04/2018
 ms.openlocfilehash: 008aa84b8736bb3a734ce8bb9713d34c17f1b76e
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -11,7 +11,7 @@ ms.locfileid: "45597441"
 ---
 # <a name="arithmetic-operators"></a>산술 연산자
 
-이 항목에서는 F# 언어에서 제공 하는 산술 연산자를 설명 합니다.
+이 항목에서는 F # 언어에서 제공 하는 산술 연산자를 설명 합니다.
 
 ## <a name="summary-of-binary-arithmetic-operators"></a>이진 산술 연산자 요약
 
@@ -53,13 +53,13 @@ ms.locfileid: "45597441"
 
 ## <a name="overloaded-and-generic-operators"></a>제네릭 및 오버 로드 된 연산자
 
-에 정의 된 모든이 여기에 나온 연산자는 **Microsoft.FSharp.Core.Operators** 네임 스페이스입니다. 일부 연산자는 정적으로 확인 된 형식 매개 변수를 사용 하 여 정의 됩니다. 이 연산자를 사용 하 여 작동 하는 각 형식에 대 한 개별 정의 것을 의미 합니다. 이 범주에는 모든 단항 및 이항 산술 및 비트 연산자입니다. 비교 연산자는 제네릭 및 따라서 없습니다만 기본 산술 형식, 모든 유형과 함께 작동 합니다. 구별 된 공용 구조체 및 레코드 형식을 F# 컴파일러에서 생성 되는 고유한 사용자 지정 구현이 있어야 합니다. 메서드를 사용 하 여 클래스 형식 <xref:System.Object.Equals%2A>합니다.
+에 정의 된 모든이 여기에 나온 연산자는 **Microsoft.FSharp.Core.Operators** 네임 스페이스입니다. 일부 연산자는 정적으로 확인 된 형식 매개 변수를 사용 하 여 정의 됩니다. 이 연산자를 사용 하 여 작동 하는 각 형식에 대 한 개별 정의 것을 의미 합니다. 이 범주에는 모든 단항 및 이항 산술 및 비트 연산자입니다. 비교 연산자는 제네릭 및 따라서 없습니다만 기본 산술 형식, 모든 유형과 함께 작동 합니다. 구별 된 공용 구조체 및 레코드 형식을 F # 컴파일러에서 생성 되는 고유한 사용자 지정 구현이 있어야 합니다. 메서드를 사용 하 여 클래스 형식 <xref:System.Object.Equals%2A>합니다.
 
 일반 연산자는 사용자 지정할 수 있습니다. 비교 함수를 사용자 지정 하려면 재정의 <xref:System.Object.Equals%2A> 사용자 고유의 사용자 지정 같음 비교를 제공 하 고 다음 구현에 <xref:System.IComparable>입니다. 합니다 <xref:System.IComparable?displayProperty=nameWithType> 인터페이스에 단일 메서드는 <xref:System.IComparable.CompareTo%2A> 메서드.
 
 ## <a name="operators-and-type-inference"></a>연산자 및 형식 유추
 
-식에서 연산자를 사용 하는 연산자에는 형식 유추를 제한합니다. 또한 연산자는 연산자는 산술 형식 의미 하기 때문에 자동 일반화를 방지 합니다. 기타 정보는 없는 경우, F# 컴파일러에서 유추 `int` 산술 식의 형식으로 합니다. 다른 형식을 지정 하 여이 동작을 재정의할 수 있습니다. 인수 형식 및 반환 형식의 `function1` 다음 코드에서는 것으로 유추 됩니다 `int`에 대 한 형식이 `function2` 것으로 유추 됩니다 `float`합니다.
+식에서 연산자를 사용 하는 연산자에는 형식 유추를 제한합니다. 또한 연산자는 연산자는 산술 형식 의미 하기 때문에 자동 일반화를 방지 합니다. 기타 정보는 없는 경우, F # 컴파일러에서 유추 `int` 산술 식의 형식으로 합니다. 다른 형식을 지정 하 여이 동작을 재정의할 수 있습니다. 인수 형식 및 반환 형식의 `function1` 다음 코드에서는 것으로 유추 됩니다 `int`에 대 한 형식이 `function2` 것으로 유추 됩니다 `float`합니다.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3501.fs)]
 

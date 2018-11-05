@@ -1,6 +1,6 @@
 ---
 title: 지연 계산(F#)
-description: F# 지연 계산 앱 및 라이브러리의 성능을 향상 시킬 수 있습니다 하는 방법에 대해 알아봅니다.
+description: 'F # 지연 계산 앱 및 라이브러리의 성능을 향상 시킬 수 있습니다 하는 방법에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 8afe815f26978de96291a52973d54a9dbcc5eaf2
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

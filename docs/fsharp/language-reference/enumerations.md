@@ -1,6 +1,6 @@
 ---
 title: 열거형(F#)
-description: F# 열거형 리터럴 대신 더 읽기 쉽고 코드를 쉽게 사용 하는 방법에 알아봅니다.
+description: 'F # 열거형 리터럴 대신 더 읽기 쉽고 코드를 쉽게 사용 하는 방법에 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: 47fb353c2698f8b1474834ebbd1b0eff2c7f76e7
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -40,7 +40,7 @@ type enum-name =
 
 열거 형식은 다음 기본 형식 중 하나일 수 있습니다: `sbyte`, `byte`, `int16`, `uint16`, `int32`를 `uint32`, `int64`, `uint16`, `uint64`, 및 `char`합니다. 열거형 형식에서 상속 된 형식으로.NET Framework에서 표현 됩니다 `System.Enum`를 차례로에서 상속 됨 `System.ValueType`합니다. 따라서 스택 또는 인라인으로 포함 하는 개체에 있는 값 형식 및 기본 형식의 모든 값이 열거형의 유효한 값입니다. 중요 한 경우 이것이 열거형에 패턴 일치 값으로 명명 되지 않은 값을 catch 하는 패턴을 제공 해야 하기 때문입니다.
 
-`enum` 명명 된 값은 미리 정의 된 중이 아닌 값도 열거형 값을 생성 하는 F# 라이브러리에서 함수를 사용할 수 있습니다. 사용 된 `enum` 다음과 같이 작동 합니다.
+`enum` 명명 된 값은 미리 정의 된 중이 아닌 값도 열거형 값을 생성 하는 F # 라이브러리에서 함수를 사용할 수 있습니다. 사용 된 `enum` 다음과 같이 작동 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2103.fs)]
 
