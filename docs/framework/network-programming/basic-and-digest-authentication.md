@@ -19,19 +19,17 @@ helpviewer_keywords:
 - network resources, authentication
 - user authentication, digest
 ms.assetid: 8cce2742-8d52-4643-9dd2-64ddf38aa878
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 66b20c299252ff1f218a8131758e2cf03640aac6
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: db39bdcaf2c3a4457028e30f9458a5626aa7e795
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47199540"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50190673"
 ---
-# <a name="basic-and-digest-authentication"></a><span data-ttu-id="ae6d7-102">기본 인증 및 다이제스트 인증</span><span class="sxs-lookup"><span data-stu-id="ae6d7-102">Basic and Digest Authentication</span></span>
-<span data-ttu-id="ae6d7-103">기본 및 다이제스트 인증의 <xref:System.Net> 구현은 RFC2617 – HTTP 인증: 기본 및 다이제스트(www.w3.org의 World Wide Web 컨소시엄 웹 사이트에서 사용 가능)를 준수합니다.</span><span class="sxs-lookup"><span data-stu-id="ae6d7-103">The <xref:System.Net> implementation of basic and digest authentication complies with RFC2617 – HTTP Authentication: Basic and Digest Authentication (available on the World Wide Web Consortium's Web site at www.w3.org).</span></span>  
+# <a name="basic-and-digest-authentication"></a><span data-ttu-id="25fb0-102">기본 인증 및 다이제스트 인증</span><span class="sxs-lookup"><span data-stu-id="25fb0-102">Basic and Digest Authentication</span></span>
+<span data-ttu-id="25fb0-103">기본 및 다이제스트 인증의 <xref:System.Net> 구현은 RFC2617 – HTTP 인증: 기본 및 다이제스트([World Wide Web 컨소시엄](https://www.w3.org) 웹 사이트에서 사용 가능)를 준수합니다.</span><span class="sxs-lookup"><span data-stu-id="25fb0-103">The <xref:System.Net> implementation of basic and digest authentication complies with RFC2617 – HTTP Authentication: Basic and Digest Authentication (available on the [World Wide Web Consortium's](https://www.w3.org) website).</span></span>  
   
- <span data-ttu-id="ae6d7-104">기본 및 다이제스트 인증을 사용하려면 다음 예제와 같이 응용 프로그램이 인터넷에서 데이터를 요청하는 데 사용하는 <xref:System.Net.WebRequest> 개체의 <xref:System.Net.WebRequest.Credentials%2A> 속성에 사용자 이름 및 암호를 제공해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ae6d7-104">To use basic and digest authentication, an application must provide a user name and password in the <xref:System.Net.WebRequest.Credentials%2A> property of the <xref:System.Net.WebRequest> object that it uses to request data from the Internet, as shown in the following example.</span></span>  
+ <span data-ttu-id="25fb0-104">기본 및 다이제스트 인증을 사용하려면 다음 예제와 같이 응용 프로그램이 인터넷에서 데이터를 요청하는 데 사용하는 <xref:System.Net.WebRequest> 개체의 <xref:System.Net.WebRequest.Credentials%2A> 속성에 사용자 이름 및 암호를 제공해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="25fb0-104">To use basic and digest authentication, an application must provide a user name and password in the <xref:System.Net.WebRequest.Credentials%2A> property of the <xref:System.Net.WebRequest> object that it uses to request data from the Internet, as shown in the following example.</span></span>  
   
 ```vb  
 Dim MyURI As String = "http://www.contoso.com/"  
@@ -46,8 +44,8 @@ WReq.Credentials = new NetworkCredential(UserName, SecurelyStoredPassword);
 ```  
   
 > [!CAUTION]
->  <span data-ttu-id="ae6d7-105">기본 및 다이제스트 인증과 함께 전송된 데이터는 암호화되지 않으므로 악의적 사용자가 데이터를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ae6d7-105">Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary.</span></span> <span data-ttu-id="ae6d7-106">또한 기본 인증 자격 증명(사용자 이름 및 암호)은 일반 텍스트로 보내지므로 누군가 이를 가로챌 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ae6d7-106">Additionally, Basic Authentication credentials (user name and password) are sent in the clear and can be intercepted.</span></span>  
+>  <span data-ttu-id="25fb0-105">기본 및 다이제스트 인증과 함께 전송된 데이터는 암호화되지 않으므로 악의적 사용자가 데이터를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="25fb0-105">Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary.</span></span> <span data-ttu-id="25fb0-106">또한 기본 인증 자격 증명(사용자 이름 및 암호)은 일반 텍스트로 보내지므로 누군가 이를 가로챌 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="25fb0-106">Additionally, Basic Authentication credentials (user name and password) are sent in the clear and can be intercepted.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ae6d7-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ae6d7-107">See Also</span></span>  
- [<span data-ttu-id="ae6d7-108">NTLM 및 Kerberos 인증</span><span class="sxs-lookup"><span data-stu-id="ae6d7-108">NTLM and Kerberos Authentication</span></span>](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)  
- [<span data-ttu-id="ae6d7-109">인터넷 인증</span><span class="sxs-lookup"><span data-stu-id="ae6d7-109">Internet Authentication</span></span>](../../../docs/framework/network-programming/internet-authentication.md)
+## <a name="see-also"></a><span data-ttu-id="25fb0-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="25fb0-107">See Also</span></span>  
+ [<span data-ttu-id="25fb0-108">NTLM 및 Kerberos 인증</span><span class="sxs-lookup"><span data-stu-id="25fb0-108">NTLM and Kerberos Authentication</span></span>](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)  
+ [<span data-ttu-id="25fb0-109">인터넷 인증</span><span class="sxs-lookup"><span data-stu-id="25fb0-109">Internet Authentication</span></span>](../../../docs/framework/network-programming/internet-authentication.md)

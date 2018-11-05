@@ -6,18 +6,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 130c64c9-7b7f-4672-9b3b-d946bd2616c5
-ms.openlocfilehash: 26a02cdacfb73b9fa75976ee67c2ef09784cfc71
-ms.sourcegitcommit: f9e38d31288fe5962e6be5b0cc286da633482873
+ms.openlocfilehash: 924e6731ce585f127af319fdbfbdc8c12e61c46d
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37028216"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50197316"
 ---
-# <a name="how-to-list-directory-contents-with-ftp"></a><span data-ttu-id="0d862-103">방법: FTP로 디렉터리 내용 나열</span><span class="sxs-lookup"><span data-stu-id="0d862-103">How to: List directory contents with FTP</span></span>
+# <a name="how-to-list-directory-contents-with-ftp"></a><span data-ttu-id="9f46b-103">방법: FTP로 디렉터리 내용 나열</span><span class="sxs-lookup"><span data-stu-id="9f46b-103">How to: List directory contents with FTP</span></span>
 
-<span data-ttu-id="0d862-104">이 샘플은 FTP 서버의 디렉터리 콘텐츠를 나열하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="0d862-104">This sample shows how to list the directory contents of an FTP server.</span></span>
+<span data-ttu-id="9f46b-104">이 샘플은 FTP 서버의 디렉터리 콘텐츠를 나열하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="9f46b-104">This sample shows how to list the directory contents of an FTP server.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0d862-105">예</span><span class="sxs-lookup"><span data-stu-id="0d862-105">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9f46b-105">예</span><span class="sxs-lookup"><span data-stu-id="9f46b-105">Example</span></span>
 
 ```csharp
 using System;
@@ -79,4 +79,14 @@ Namespace Examples.System.Net
         End Sub
     End Module
 End Namespace
+```
+
+<span data-ttu-id="9f46b-106">특정 디렉터리를 나열해야 하는 경우 <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> 메서드에서 사용 중인 URI의 끝에 디렉터리를 추가하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="9f46b-106">If you need to list a specific directory, just add the directory to the end of the URI you're using in the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method:</span></span>
+
+```csharp
+FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.contoso.com/your_preferred_directory");
+```
+
+```vb
+Dim request As FtpWebRequest = CType(WebRequest.Create("ftp://www.contoso.com/your_preferred_directory"), FtpWebRequest)
 ```
