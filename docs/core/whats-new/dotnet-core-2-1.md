@@ -1,15 +1,18 @@
 ---
 title: .NET Core 2.1의 새로운 기능
 description: .NET Core 2.1에서 볼 수 있는 새로운 기능에 대해 알아봅니다.
+dev_langs:
+- csharp
+- vb
 author: rpetrusha
 ms.author: ronpet
-ms.date: 06/06/2018
-ms.openlocfilehash: aa80e6b7214f91c49803adde49a1e03d1971b3f6
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.date: 10/10/2018
+ms.openlocfilehash: bf14e21ec4d390d8ab753bfa45533442ff4f6e68
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47400069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49120949"
 ---
 # <a name="whats-new-in-net-core-21"></a>.NET Core 2.1의 새로운 기능
 
@@ -166,9 +169,11 @@ JIT 컴파일러가 수행하는 중요한 작업 중 하나는 코드 실행을
 
 이러한 형식이 없다면 배열의 일부 또는 메모리 버퍼의 섹션과 같은 항목을 전달할 경우 데이터의 일부를 복사한 다음, 메서드에 전달해야 합니다. 이러한 형식은 추가 메모리 할당 및 복사 작업이 없어도 해당 데이터의 가상 보기를 제공합니다.
 
-다음 예제에서는 <xref:System.Span%601> 인스턴스를 사용하여 배열의 10개 요소에 대한 가상 보기를 제공합니다.
+다음 예제에서는 <xref:System.Span%601> 및 <xref:System.Memory%601> 인스턴스를 사용하여 배열의 10개 요소에 대한 가상 보기를 제공합니다.
 
 [!CODE-csharp[Span\<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
+
+[!CODE-vb[Memory\<T>](~/samples/core/whats-new/whats-new-in-21/vb/program.vb)]
 
 ### <a name="brotli-compression"></a>Brotli 압축
 

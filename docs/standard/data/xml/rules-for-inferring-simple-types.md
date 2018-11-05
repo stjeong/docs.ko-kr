@@ -5,17 +5,17 @@ ms.technology: dotnet-standard
 ms.assetid: 394624d6-4da0-430a-8a88-46efe40f14de
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: dd5426de388ba2c7a22d66ce01d56a3139e36e38
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 2477b55f38167cc3497979d073f74d441a06f96d
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45615315"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49123581"
 ---
 # <a name="rules-for-inferring-simple-types"></a>단순 형식 유추 규칙
 <xref:System.Xml.Schema.XmlSchemaInference> 클래스가 특성 및 요소에 대한 데이터 형식을 유추하는 방법을 설명합니다.  
   
- <xref:System.Xml.Schema.XmlSchemaInference> 클래스는 특성 및 요소에 대한 데이터 형식을 단순 형식으로 유추합니다. 이 단원에서는 유추 가능한 형식, 여러 다른 값이 단일 형식으로 통일되는 방식 및 스키마 정의 `xsi` 특성을 처리하는 방법을 설명합니다.  
+ <xref:System.Xml.Schema.XmlSchemaInference> 클래스는 특성 및 요소에 대한 데이터 형식을 단순 형식으로 유추합니다. 이 단원에서는 유추 가능한 형식, 여러 다른 값이 단일 형식으로 조정되는 방식 및 스키마 정의 `xsi` 특성을 처리하는 방법을 설명합니다.  
   
 ## <a name="inferred-types"></a>유추된 형식  
  <xref:System.Xml.Schema.XmlSchemaInference> 클래스는 요소 및 특성 값을 단순 형식으로 유추하고 결과 스키마에 형식 특성을 포함시킵니다. 유추된 모든 형식은 단순 형식입니다. 기본 형식 또는 패싯은 결과로 생성된 스키마에 포함되지 않습니다.  
@@ -65,8 +65,9 @@ ms.locfileid: "45615315"
   
  첫 번째 `attr2` 값이 나타나면 `attr2` 값을 기준으로 `unsignedByte`의 형식이 `0`로 유추됩니다. 두 번째 `attr2`가 나타나면 `string` 클래스는 유추된 형식을 승격시킬 때 이전 값을 고려하기 때문에 그 형식은 현재 유추된 형식 `unsignedByte` 및 현재 값 `true`를 기준으로 <xref:System.Xml.Schema.XmlSchemaInference>으로 승격됩니다. 하지만 위에서 설명한 대로 `attr2`의 두 인스턴스가 다른 두 XML 문서가 아닌 같은 XML 문서에 나타나면 `attr2`는 `boolean`으로 유추됩니다.  
   
-### <a name="ignored-attributes-from-the-httpwwww3org2001xmlschema-instance-namespace"></a>http://www.w3.org/2001/XMLSchema-instance 네임스페이스에서 무시된 속성  
- 다음은 스키마 유추에서 무시된 스키마 정의 특성입니다.  
+### <a name="ignored-attributes-from-the-httpswwww3org2001xmlschema-instance-namespace"></a><https://www.w3.org/2001/XMLSchema-instance> 네임스페이스에서 무시된 특성
+
+다음은 스키마 유추에서 무시된 스키마 정의 특성입니다.  
   
 |특성|설명|  
 |---------------|-----------------|  

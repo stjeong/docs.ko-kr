@@ -2,7 +2,7 @@
 title: .NET Framework 시스템 요구 사항
 description: .NET Framework 4.5 이상 버전을 설치하기 위한 하드웨어, 운영 체제 및 소프트웨어 요구 사항을 확인하세요.
 ms.custom: updateeachrelease
-ms.date: 04/10/2018
+ms.date: 10/01/2018
 helpviewer_keywords:
 - software requirements
 - .NET Framework, system requirements
@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 909b9369aba6b22899ae3fe7ac15eb470c5c2697
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e9d1c6dff4a1a8722a2ca196763756336d512631
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509180"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50203945"
 ---
 # <a name="net-framework-system-requirements"></a>.NET Framework 시스템 요구 사항
 
@@ -26,6 +26,8 @@ ms.locfileid: "43509180"
 * .NET Framework 4.5 및 해당 포인트 릴리스(4.5.1 및 4.5.2)
 * .NET Framework 4.6 및 해당 포인트 릴리스(4.6.1 및 4.6.2)
 * .NET Framework 4.7 및 해당 포인트 릴리스(4.7.1 및 4.7.2)
+
+.NET Framework 4.5 이전의 .NET Framework 버전에 대한 자세한 내용은 [.NET Framework 버전 및 종속성](../migration-guide/versions-and-dependencies.md)을 참조하세요.
 
 .NET Framework용 앱을 개발할 수 있는 개발 환경을 구축하려면 또 다른 여러 가지 요구 사항을 충족해야 합니다.
 
@@ -53,6 +55,7 @@ ms.locfileid: "43509180"
 
 | 운영 체제 | 지원되는 버전 | OS가 사전 설치됨 | 별도로 설치 가능 |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows 10 2018년 10월 업데이트 | 32비트 및 64비트 | .NET Framework 4.7.2 |--|
 | Windows 10 2018년 4월 업데이트 | 32비트 및 64비트 | .NET Framework 4.7.2 |--|
 | Windows 10 Fall Creators Update | 32비트 및 64비트 | .NET Framework 4.7.1 | .NET Framework 4.7.2 |
 | Windows 10 크리에이터스 업데이트 | 32비트 및 64비트 | .NET Framework 4.7 | .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 | 
@@ -105,6 +108,6 @@ ms.locfileid: "43509180"
 
 ## <a name="see-also"></a>참고 항목
 
-[설치 가이드](../../../docs/framework/install/index.md)   
-[시작](../../../docs/framework/get-started/index.md)   
-[차단된 .NET Framework 설치 및 제거 문제 해결](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [설치 가이드](../../../docs/framework/install/index.md)   
+- [시작](../../../docs/framework/get-started/index.md)   
+- [차단된 .NET Framework 설치 및 제거 문제 해결](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

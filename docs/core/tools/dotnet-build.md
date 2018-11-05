@@ -4,12 +4,12 @@ description: dotnet build 명령은 프로젝트와 모든 종속성을 빌드�
 author: mairaw
 ms.author: mairaw
 ms.date: 05/25/2018
-ms.openlocfilehash: da33647e583af8441218f64fb8ac76d5de3cee38
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: c9d1478e3d3e298b01e707242cc7ad5cd924a9b3
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46580111"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200556"
 ---
 # <a name="dotnet-build"></a>dotnet build
 
@@ -23,14 +23,16 @@ ms.locfileid: "46580111"
 
 # <a name="net-core-2xtabnetcore2x"></a>[.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
+dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
     [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
+
 dotnet build [-h|--help]
 ```
 # <a name="net-core-1xtabnetcore1x"></a>[.NET Core 1.x](#tab/netcore1x)
 ```
-dotnet build [<PROJECT>] [-c|--configuration] [-f|--framework] [--no-dependencies] [--no-incremental] [-o|--output]
+dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--no-dependencies] [--no-incremental] [-o|--output]
     [-r|--runtime] [-v|--verbosity] [--version-suffix]
+
 dotnet build [-h|--help]
 ```
 ---
@@ -61,9 +63,9 @@ dotnet build [-h|--help]
 
 ## <a name="arguments"></a>인수
 
-`PROJECT`
+`PROJECT | SOLUTION`
 
-빌드할 프로젝트 파일입니다. 프로젝트 파일을 지정하지 않으면 MSBuild는 현재 작업 디렉터리에서 *proj*로 끝나는 파일 확장명이 있는 파일을 검색하고 해당 파일을 사용합니다.
+빌드할 프로젝트 또는 솔루션 파일입니다. 프로젝트 또는 솔루션 파일을 지정하지 않으면 MSBuild는 현재 작업 디렉터리에서 *proj* 또는 *sln*으로 끝나는 파일 확장명이 있는 파일을 검색하고 해당 파일을 사용합니다.
 
 ## <a name="options"></a>옵션
 

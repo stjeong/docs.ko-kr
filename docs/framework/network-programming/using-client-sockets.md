@@ -16,14 +16,12 @@ helpviewer_keywords:
 - sockets, client sockets
 - client sockets
 ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: ee10681c8beddac06d5c4eae453f4070b2bf1b4e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: ec789bcc5b675f3cde468f9464531a225e8c33db
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195552"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50198969"
 ---
 # <a name="using-client-sockets"></a>클라이언트 소켓 사용
 <xref:System.Net.Sockets.Socket>을 통해 대화를 시작하려면 먼저 응용 프로그램과 원격 장치 간에 데이터 파이프를 만들어야 합니다. 다른 네트워크 주소 패밀리 및 프로토콜이 있어도 이 예제에서는 원격 서비스에 대한 TCP/IP 연결을 만드는 방법을 보여 줍니다.  
@@ -42,7 +40,7 @@ IPHostEntry ipHostInfo = Dns.Resolve("host.contoso.com");
 IPAddress ipAddress = ipHostInfo.AddressList[0];  
 ```  
   
- Iana(Internet Assigned Numbers Authority)는 공통 서비스의 포트 번호를 정의합니다(자세한 내용은 www.iana.org/assignments/port-numbers 참조). 다른 서비스에는 1,024 ~ 65,535 범위의 등록된 포트 번호가 있을 수 있습니다. 다음 코드에서는 host.contoso.com의 IP 주소를 포트 번호와 결합하여 연결에 대한 원격 엔드포인트를 만듭니다.  
+ IANA(Internet Assigned Numbers Authority)는 공통 서비스의 포트 번호를 정의합니다. 자세한 내용은 [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)(서비스 이름 및 전송 프로토콜 포트 번호 레지스트리)를 참조하세요. 다른 서비스에는 1,024 ~ 65,535 범위의 등록된 포트 번호가 있을 수 있습니다. 다음 코드에서는 host.contoso.com의 IP 주소를 포트 번호와 결합하여 연결에 대한 원격 엔드포인트를 만듭니다.  
   
 ```vb  
 Dim ipe As New IPEndPoint(ipAddress, 11000)  

@@ -1,6 +1,6 @@
 ---
 title: let 바인딩(F#)
-description: "F # 'let' 식별자는 값 또는 함수를 사용 하 여 연결 하는 바인딩을 사용 하는 방법에 알아봅니다."
+description: F# 'let' 식별자는 값 또는 함수를 사용 하 여 연결 하는 바인딩을 사용 하는 방법에 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 1a35b5a39f2768a18665b5c7fe768af0e7714577
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -110,7 +110,7 @@ let function3 x =
     function1 x
 ```
 
-일부 모듈 특성이 [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15), 즉, 노출 되는 함수는 모듈의 이름으로 한정 되어야 합니다. 예를 들어, F # 목록 모듈에이 특성이 있습니다.
+일부 모듈 특성이 [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15), 즉, 노출 되는 함수는 모듈의 이름으로 한정 되어야 합니다. 예를 들어, F# 목록 모듈에이 특성이 있습니다.
 
 모듈 및 액세스 제어에 대 한 자세한 내용은 참조 하세요. [모듈](../modules.md) 하 고 [Access Control](../access-control.md)합니다.
 

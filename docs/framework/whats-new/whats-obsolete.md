@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e6835d159c9c30d09892bad8cc1d20753fe6f21c
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 58ef462fdccc31a7694721b3ab9c3bec52d66abe
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855337"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50183479"
 ---
 # <a name="what39s-obsolete-in-the-net-framework-class-library"></a>.NET Framework 클래스 라이브러리의 사용되지 않는 기능
 .NET Framework는 시간이 지남에 따라 변경됩니다. 새 버전이 나올 때마다 새로운 기능을 제공하는 새로운 형식 및 형식 멤버가 추가됩니다. 기존 형식과 해당 멤버도 시간이 지남에 따라 변경됩니다. 예를 들어 일부 형식은 지원하는 기술이 새로운 기술로 대체됨에 따라 덜 중요해지고 일부 메서드는 보다 편리하거나 보다 완전한 기능을 갖춘 최신 메서드로 대체됩니다.  

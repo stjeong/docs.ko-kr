@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: edc34eaa7704d788ff4b63328a2b6c0622d17e13
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8d78549d2822ad6c660fae39d458a98f23eca390
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502924"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50199893"
 ---
 # <a name="install-the-net-framework-for-developers"></a>개발자용 .NET Framework 설치
 
@@ -37,7 +37,7 @@ ms.locfileid: "43502924"
 
 |.NET Framework 버전|개발자 설치|재배포 가능 설치|플랫폼 지원|
 |----------------------------|----------------------------|----------------------------------|----------------------|
-|**4.7.2**|[NET Framework 4.7.2 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=874338)|[다운로드 센터 4.7.2 웹 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[다운로드 센터 4.7.2 오프라인 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=863265)|포함된 운영 체제: <br/>Windows 10 2018년 4월 업데이트<br /><br /> 설치 가능한 운영 체제:<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 크리에이터스 업데이트 <br /> Windows 10 1주년 업데이트<br /> Windows 8.1 및 이전 버전<br /> Windows Server, 버전 1709 이상<br /> (전체 목록은 [시스템 요구 사항](~/docs/framework/get-started/system-requirements.md) 참조)||
+|**4.7.2**|[NET Framework 4.7.2 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=874338)|[다운로드 센터 4.7.2 웹 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[다운로드 센터 4.7.2 오프라인 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=863265)|포함된 운영 체제: <br/>Windows 10 2018년 10월 업데이트<br/>Windows 10 2018년 4월 업데이트<br /><br /> 설치 가능한 운영 체제:<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 크리에이터스 업데이트 <br /> Windows 10 1주년 업데이트<br /> Windows 8.1 및 이전 버전<br /> Windows Server, 버전 1709 이상<br /> (전체 목록은 [시스템 요구 사항](~/docs/framework/get-started/system-requirements.md) 참조)||
 |**4.7.1**|[NET Framework 4.7.1 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=852105)|[4.7.1 웹 설치 관리자 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=852095)<br /><br /> [4.7.1 오프라인 설치 관리자 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=852107)|포함된 운영 체제: <br/>Windows 10 Fall Creators Update<br/>Windows Server, 버전 1709<br /><br /> 설치 가능한 운영 체제:<br/> Windows 10 크리에이터스 업데이트 <br /> Windows 10 1주년 업데이트<br /> Windows 8.1 및 이전 버전<br /> Windows Server 2016 이상<br /> (전체 목록은 [시스템 요구 사항](~/docs/framework/get-started/system-requirements.md) 참조)||
 |**4.7**|[NET Framework 4.7 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=825319)|[4.7 웹 설치 관리자의 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [4.7 오프라인 설치 관리자의 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=825303)|포함된 운영 체제: <br/>Windows 10 크리에이터스 업데이트<br /><br /> 설치 가능한 운영 체제:<br /> Windows 10 1주년 업데이트<br /> Windows 8.1 및 이전 버전<br /> Windows Server 2016 이상<br /> (전체 목록은 [시스템 요구 사항](~/docs/framework/get-started/system-requirements.md) 참조)||
 |**4.6.2**|[NET Framework 4.6.2 개발자 팩](https://go.microsoft.com/fwlink/?LinkId=780617)|[4.6.2 웹 설치 관리자의 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=780597)<br /><br /> [4.6.2 오프라인 설치 관리자의 다운로드 페이지](https://go.microsoft.com/fwlink/?LinkId=780601)|포함된 운영 체제: <br /> Windows 10 1주년 업데이트<br /><br /> 설치 가능한 운영 체제:<br /> Windows 10 11월 업데이트 <br/> Windows 10 <br /> Windows 8.1 및 이전 버전<br /> Windows Server 2012 R2 및 이전 버전<br /> (전체 목록은 [시스템 요구 사항](~/docs/framework/get-started/system-requirements.md) 참조)|
@@ -154,7 +154,7 @@ Visual Studio에서 응용 프로그램을 빌드하거나 명령줄에서 MSBui
 
 - [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], 해당 포인트 릴리스, .NET Framework 4.6 및 해당 포인트 릴리스와 .NET Framework 4.7 및 해당 포인트 릴리스를 설치하려면 관리자 자격 증명이 있어야 합니다.
 
-- .NET Framework 4.5 재배포 가능 패키지는 Microsoft에서 생성 및 서명된 파일의 디지털 서명이 중간에 만료되도록 한 디지털 서명의 부적절한 타임스탬프 관련 문제를 해결하기 위해 2012년 10월 9일 업데이트되었습니다. 이전에 2012년 8월 16일자 .NET Framework 4.5 재배포 가능 패키지를 설치한 경우 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=245484)에서 최신 재배포 가능 패키지로 업데이트하는 것이 좋습니다. 이 문제에 대한 자세한 내용은 [Microsoft 보안 공지 2749655](https://technet.microsoft.com/security/advisory/2749655) 및 [기술 자료 문서 2770445](https://support.microsoft.com/kb/2770445)를 참조하십시오.
+- .NET Framework 4.5 재배포 가능 패키지는 Microsoft에서 생성 및 서명된 파일의 디지털 서명이 중간에 만료되도록 한 디지털 서명의 부적절한 타임스탬프 관련 문제를 해결하기 위해 2012년 10월 9일 업데이트되었습니다. 이전에 2012년 8월 16일자 .NET Framework 4.5 재배포 가능 패키지를 설치한 경우 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=245484)에서 최신 재배포 가능 패키지로 업데이트하는 것이 좋습니다. 이 문제에 대한 자세한 내용은 [Microsoft 보안 공지 2749655](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655) 및 [기술 자료 문서 2770445](https://support.microsoft.com/kb/2770445)를 참조하십시오.
 
 ## <a name="to-install-language-packs"></a>언어 팩을 설치하려면
 

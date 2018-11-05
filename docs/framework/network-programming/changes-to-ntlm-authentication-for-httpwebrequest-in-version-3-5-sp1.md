@@ -2,14 +2,12 @@
 title: 버전 3.5 SP1에서 HttpWebRequest에 대한 NTLM 인증 변경 내용
 ms.date: 03/30/2017
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: b679c137d31c1212e1e6c82fd41f89b9de7a18d4
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: d20707bbecb7521408d2ea1a3d6a6e3d6e892504
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47231170"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50202870"
 ---
 # <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>버전 3.5 SP1에서 HttpWebRequest에 대한 NTLM 인증 변경 내용
 .NET Framework 버전 3.5 SP1 이상에서는 <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Security.NegotiateStream> 및 System.Net 네임스페이스의 관련 클래스에 의해 Windows 통합 인증이 처리되는 방식에 영향을 미치는 보안 변경 사항이 적용되었습니다. 이러한 변경 내용은 NTLM 기반의 Windows 통합 인증이 사용되는 경우 이러한 클래스를 통해 웹 요청을 만들고 응답을 수신하는 응용 프로그램에 영향을 줄 수 있습니다. 이 변경 내용은 Windows 통합 인증을 사용하도록 구성된 웹 서버 및 클라이언트 응용 프로그램에 영향을 미칠 수 있습니다.  
@@ -22,9 +20,9 @@ ms.locfileid: "47231170"
 ## <a name="changes"></a>변경 내용  
  Windows 통합 인증과 함께 사용되는 NTLM 인증 프로세스는 대상 컴퓨터에서 실행되고 다시 클라이언트 컴퓨터로 전송되는 시도를 포함합니다. 컴퓨터 자체가 생성한 시도를 수신하는 경우 연결이 루프백 연결(예: IPv4 주소 127.0.0.1)이 아니면 인증이 실패합니다.  
   
- 내부 웹 서버에서 실행되는 서비스에 액세스하는 경우 http://contoso/service 또는 https://contoso/service와 비슷한 URL을 사용하여 서비스에 액세스하는 것이 일반적입니다. 이름 “contoso”는 서비스가 배포된 컴퓨터의 컴퓨터 이름이 아닌 경우가 많습니다. <xref:System.Net> 및 관련 네임스페이스는 Active Directory, DNS, NetBIOS, 로컬 컴퓨터의 호스트 파일(예: 일반적으로 WINDOWS\system32\drivers\etc\hosts) 또는 로컬 컴퓨터의 lmhosts 파일(예: 일반적으로 WINDOWS\system32\drivers\etc\lmhosts)을 사용하여 이름을 주소로 확인하는 기능을 지원합니다. “contoso”로 전송된 요청이 적절한 서버 컴퓨터로 전송되도록 이름 “contoso”가 확인됩니다.  
+ 내부 웹 서버에서 실행되는 서비스에 액세스하는 경우 `http://contoso/service` 또는 `https://contoso/service`와 비슷한 URL을 사용하여 서비스에 액세스하는 것이 일반적입니다. 이름 “contoso”는 서비스가 배포된 컴퓨터의 컴퓨터 이름이 아닌 경우가 많습니다. <xref:System.Net> 및 관련 네임스페이스는 Active Directory, DNS, NetBIOS, 로컬 컴퓨터의 호스트 파일(예: 일반적으로 WINDOWS\system32\drivers\etc\hosts) 또는 로컬 컴퓨터의 lmhosts 파일(예: 일반적으로 WINDOWS\system32\drivers\etc\lmhosts)을 사용하여 이름을 주소로 확인하는 기능을 지원합니다. “contoso”로 전송된 요청이 적절한 서버 컴퓨터로 전송되도록 이름 “contoso”가 확인됩니다.  
   
- 대규모 배포용으로 구성된 경우 클라이언트 응용 프로그램 및 최종 사용자가 사용한 적이 없는 기본 컴퓨터 이름과 함께 하나의 가상 서버 이름을 배포에 지정하는 것이 일반적이기도 합니다. 예를 들어 www.contoso.com 서버를 호출하지만 내부 네트워크에서는 단순히 “contoso”를 사용할 수 있습니다. 이 이름을 클라이언트 웹 요청에서는 호스트 헤더라고 합니다. HTTP 프로토콜에 지정된 대로 호스트 요청-헤더 필드는 요청되는 리소스의 인터넷 호스트 및 포트 번호를 지정합니다. 이 정보는 사용자 또는 참조 리소스(일반적으로 HTTP URL)에 의해 지정된 원래 URI에서 가져옵니다. .NET Framework 버전 4에서는 클라이언트가 새 <xref:System.Net.HttpWebRequest.Host%2A> 속성을 사용하여 이 정보를 설정할 수도 있습니다.  
+ 대규모 배포용으로 구성된 경우 클라이언트 응용 프로그램 및 최종 사용자가 사용한 적이 없는 기본 컴퓨터 이름과 함께 하나의 가상 서버 이름을 배포에 지정하는 것이 일반적이기도 합니다. 예를 들어 `www.contoso.com` 서버를 호출하지만 내부 네트워크에서는 단순히 “contoso”를 사용할 수 있습니다. 이 이름을 클라이언트 웹 요청에서는 호스트 헤더라고 합니다. HTTP 프로토콜에 지정된 대로 호스트 요청-헤더 필드는 요청되는 리소스의 인터넷 호스트 및 포트 번호를 지정합니다. 이 정보는 사용자 또는 참조 리소스(일반적으로 HTTP URL)에 의해 지정된 원래 URI에서 가져옵니다. .NET Framework 버전 4에서는 클라이언트가 새 <xref:System.Net.HttpWebRequest.Host%2A> 속성을 사용하여 이 정보를 설정할 수도 있습니다.  
   
  <xref:System.Net.AuthenticationManager> 클래스는 <xref:System.Net.WebRequest> 파생 클래스와 <xref:System.Net.WebClient> 클래스에서 사용하는 관리되는 인증 구성 요소(“모듈”)를 제어합니다. <xref:System.Net.AuthenticationManager> 클래스는 응용 프로그램이 인증 중에 사용할 사용자 지정 SPN 문자열을 제공할 수 있도록 URI 문자열로 인덱싱된 <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType> 개체를 노출하는 속성을 제공합니다.  
   
@@ -50,7 +48,7 @@ ms.locfileid: "47231170"
   
  7. 레지스트리 편집기를 종료한 다음 IISAdmin 서비스를 다시 시작하고 IISReset을 실행합니다.  
   
- 보안 수준이 낮은 해결 방법은 [http://support.microsoft.com/kb/896861](https://go.microsoft.com/fwlink/?LinkID=179657)에 설명된 대로 루프백 검사를 사용하지 않도록 설정하는 것입니다. 이렇게 하면 리플렉션 공격에 대한 보호가 해제됩니다. 따라서 대체 이름 집합을 컴퓨터에서 실제로 사용할 것으로 예상되는 이름으로만 제한하는 것이 좋습니다.  
+ 보안 수준이 낮은 해결 방법은 <https://support.microsoft.com/kb/896861>에 설명된 대로 루프백 검사를 사용하지 않도록 설정하는 것입니다. 이렇게 하면 리플렉션 공격에 대한 보호가 해제됩니다. 따라서 대체 이름 집합을 컴퓨터에서 실제로 사용할 것으로 예상되는 이름으로만 제한하는 것이 좋습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType>  

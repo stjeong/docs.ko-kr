@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bc8082175047271c92f9a9a17a49534ffc9546a9
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 9c637d9842c05f47bfcaa0431dd2f9f1ee29cc09
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45677151"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50181240"
 ---
 # <a name="how-to-write-text-to-a-file"></a>방법: 파일에 텍스트 쓰기
 이 항목에서는 .NET Framework 응용 프로그램 또는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 위해 파일에 텍스트를 쓸 수 있는 여러 가지 방법을 보여 줍니다. 파일에 텍스트를 쓸 때는 일반적으로 다음 클래스 및 메서드가 사용됩니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "45677151"
   
 -   <xref:System.IO.File> - .NET Framework 응용 프로그램과 함께 사용됩니다. <xref:System.IO.File.WriteAllLines%2A> 및 <xref:System.IO.File.WriteAllText%2A>등 파일에 텍스트를 쓰거나 파일에 텍스트를 추가(<xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A> 또는 <xref:System.IO.File.AppendText%2A>)하는 정적 메서드를 제공합니다.  
   
--   [FileIO](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.aspx) - [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱과 함께 사용됩니다. 파일에 텍스트를 쓰거나([WriteLinesAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.writelinesasync.aspx) 또는 [WriteTextAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.writetextasync.aspx)) 파일에 텍스트를 추가([AppendLinesAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.appendlinesasync.aspx) 또는 [AppendTextAsync](https://msdn.microsoft.com/library/windows/apps/windows.storage.fileio.appendtextasync.aspx))하는 비동기 메서드가 포함됩니다.  
+-   <xref:Windows.Storage.FileIO> - [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱과 함께 사용됩니다. 파일에 텍스트를 쓰는 비동기 메서드(<xref:Windows.Storage.FileIO.WriteLinesAsync%2A> 또는 <xref:Windows.Storage.FileIO.WriteTextAsync%2A>)를 포함하거나 파일에 텍스트를 추가하는 비동기 메서드(<xref:Windows.Storage.FileIO.AppendLinesAsync%2A> 또는 <xref:Windows.Storage.FileIO.AppendTextAsync%2A>)를 포함합니다.  
 
 - <xref:System.IO.Path> - 파일이나 디렉터리 경로 정보가 포함된 문자열에서 사용됩니다. 파일이나 디렉터리 경로를 빌드하려면 문자열의 연결을 허용하는 <xref:System.IO.Path.Combine%2A> 메서드를 포함합니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "45677151"
  [!code-vb[Conceptual.BasicIO.TextFiles#WriteFile](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writefile)]  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 사용자 입력을 텍스트 파일에 비동기적으로 쓰는 방법을 보여 줍니다. 보안상의 이유로 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 파일을 열려면 일반적으로 [FileOpenPicker](https://msdn.microsoft.com/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx) 컨트롤을 사용해야 합니다. 이 예제에서 `FileOpenPicker` 는 텍스트 파일을 표시하도록 필터링되었습니다.  
+ 다음 예제에서는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 사용자 입력을 텍스트 파일에 비동기적으로 쓰는 방법을 보여 줍니다. 보안상의 이유로 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱에서 파일을 열려면 일반적으로 <xref:Windows.Storage.Pickers.FileOpenPicker> 컨트롤을 사용해야 합니다. 이 예제에서 `FileOpenPicker` 는 텍스트 파일을 표시하도록 필터링되었습니다.  
   
 ```xaml  
 <Page  

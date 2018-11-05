@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ [C#], features supporting LINQ
 ms.assetid: 524b0078-ebfd-45a7-b390-f2ceb9d84797
-ms.openlocfilehash: c617b2d7b56618867fe92cbe1d9ee04aa4c3ab64
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 51cc24fd8054b87b6c92a02450420a9c4abef525
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45653202"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50191092"
 ---
 # <a name="c-features-that-support-linq"></a>LINQ를 지원하는 C# 기능
 다음 섹션에서는 C# 3.0에 도입된 새로운 언어 구문을 소개합니다. 이러한 새 기능은 모두 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리에서 어느 정도 사용되지만 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]로 제한되지 않고 유용한 모든 컨텍스트에서 사용할 수 있습니다.  
@@ -47,13 +47,26 @@ var query = from str in stringArray
 ```csharp  
 Customer cust = new Customer { Name = "Mike", Phone = "555-1212" };  
 ```  
-  
- 자세한 내용은 [개체 및 컬렉션 이니셜라이저](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)를 참조하세요.  
-  
+계속해서 `Customer` 클래스를 사용하여 `IncomingOrders`라는 데이터 소스가 있다고 가정하고 큰 `OrderSize`가 있는 각 주문의 경우 해당 주문을 기반으로 새 `Customer`를 만들려고 한다고 가정합니다. LINQ 쿼리는 이 데이터 소스에서 실행하고 개체 초기화를 사용하여 컬렉션을 채울 수 있습니다.
+```csharp
+var newLargeOrderCustomers = from o in IncomingOrders
+                            where o.OrderSize > 5
+                            select new Customer { Name = o.Name, Phone = o.Phone };
+```
+데이터 소스에는 `Customer` 클래스보다 더 많은 속성(예: `OrderSize`)이 있을 수 있지만, 개체 초기화를 사용하면 쿼리에서 반환된 데이터가 원하는 데이터 형식으로 모델링되므로 클래스와 관련된 데이터를 선택합니다. 따라서 이제 `IEnumerable`이 원하는 새 `Customer`로 채워집니다. 위의 내용은 LINQ 메서드 구문으로 작성할 수도 있습니다.
+```csharp
+var newLargeOrderCustomers = IncomingOrders.Where(x => x.OrderSize > 5).Select(y => new Customer { Name = y.Name, Phone = y.Phone });
+```
+ 자세한 내용은 다음을 참조하세요.
+ 
+ - [개체 이니셜라이저 및 컬렉션 이니셜라이저](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+
+ - [표준 쿼리 연산자의 쿼리 식 구문](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
+
 ## <a name="anonymous-types"></a>익명 형식  
  무명 형식은 컴파일러에서 생성되며 형식 이름은 컴파일러에서만 사용할 수 있습니다. 무명 형식은 별도의 명명된 형식을 정의하지 않고 쿼리 결과에서 일시적으로 속성 집합을 그룹화하는 편리한 방법을 제공합니다. 무명 형식은 다음과 같이 새로운 식과 개체 이니셜라이저를 사용하여 초기화됩니다.  
   
-```  
+```csharp
 select new {name = cust.Name, phone = cust.Phone};  
 ```  
   
@@ -74,16 +87,7 @@ select new {name = cust.Name, phone = cust.Phone};
 -   [람다 식](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
   
 -   [식 트리(C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)  
-  
-## <a name="auto-implemented-properties"></a>자동으로 구현된 속성  
- 자동으로 구현된 속성을 통해 속성을 보다 간단하게 선언할 수 있습니다. 다음 예제와 같이 속성을 선언할 때 컴파일러는 getter 및 setter 속성을 통해서만 액세스할 수 있는 전용 무명 지원 필드를 만듭니다.  
-  
-```csharp  
-public string Name {get; set;}  
-```  
-  
- 자세한 내용은 [자동으로 구현된 속성](../../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)을 참조하세요.  
-  
+   
 ## <a name="see-also"></a>참고 항목
 
 - [LINQ(Language-Integrated Query)(C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

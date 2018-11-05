@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c12444e435fa844095827411ba0e068303163bf4
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: cfb1e29229393b44c193c4e88005ebc350dbcc6f
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47201142"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086858"
 ---
 # <a name="caspolexe-code-access-security-policy-tool"></a>Caspol.exe(코드 액세스 보안 정책 도구)
 CAS(코드 액세스 보안 정책 도구)(Caspol.exe)를 사용하면 사용자나 관리자가 컴퓨터 정책 수준, 사용자 정책 수준 및 엔터프라이즈 정책 수준의 보안 정책을 수정할 수 있습니다.  
@@ -90,7 +90,7 @@ caspol [options]
 |**-pub** { **-cert** *cert_file_name* &#124;<br /><br /> **-file** *signed_file_name* | **-hex**  *hex_string* }|인증서 파일, 파일의 서명 또는 X509 인증서의 16진수 표시가 나타내는 것처럼 지정된 소프트웨어 게시자가 포함된 코드를 지정합니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.PublisherMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
 |**-site** *website*|지정된 원본 사이트가 포함된 코드를 지정합니다. 예:<br /><br /> `-site** www.proseware.com`<br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.SiteMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
 |**-strong -file** *file_name* {*name* &#124; **-noname**} {*version* &#124; **-noversion**}|파일 이름, 문자열 형식의 어셈블리 이름 및 *major*.*minor*.*build*.*revision* 형식의 어셈블리 버전으로 지정된 강력한 이름의 코드를 지정합니다. 예:<br /><br /> **-strong -file** myAssembly.exe myAssembly 1.2.3.4<br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.StrongNameMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
-|**-url** *URL*|지정된 URL에서 시작되는 코드를 지정합니다. URL은 http:// 또는 ftp://와 같은 프로토콜을 포함해야 합니다. 또한 와일드카드 문자(\*)를 사용하여 특정 URL에서 여러 어셈블리를 지정할 수 있습니다. **참고:** URL은 여러 이름을 사용하여 식별할 수 있으므로 URL을 멤버 자격 조건으로 사용하는 것은 코드의 ID를 정확하게 식별하기 위한 안전한 방법이 아닙니다. 가능한 경우 강력한 이름 멤버 자격 조건, 게시자 멤버 자격 조건 또는 해시 멤버 자격 조건을 사용합니다. <br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.UrlMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
+|**-url** *URL*|지정된 URL에서 시작되는 코드를 지정합니다. URL은 `http://` 또는 `ftp://`와 같은 프로토콜을 포함해야 합니다. 또한 와일드카드 문자(\*)를 사용하여 특정 URL에서 여러 어셈블리를 지정할 수 있습니다. **참고:** URL은 여러 이름을 사용하여 식별할 수 있으므로 URL을 멤버 자격 조건으로 사용하는 것은 코드의 ID를 정확하게 식별하기 위한 안전한 방법이 아닙니다. 가능한 경우 강력한 이름 멤버 자격 조건, 게시자 멤버 자격 조건 또는 해시 멤버 자격 조건을 사용합니다. <br /><br /> 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.UrlMembershipCondition?displayProperty=nameWithType>을 참조하세요.|  
 |**-zone** *zonename*|지정된 원본 영역이 포함된 코드를 지정합니다. *zonename* 인수는 **MyComputer**, **Intranet**, **Trusted**, **Internet** 또는 **Untrusted** 중 하나일 수 있습니다. 이 멤버 자격 조건에 대한 자세한 내용은 <xref:System.Security.Policy.ZoneMembershipCondition> 클래스를 참조하십시오.|  
   
  **–addgroup** 및 **–chggroup** 옵션과 함께 사용할 수 있는 *flags* 인수는 다음 중 하나를 사용하여 지정합니다.  

@@ -3,32 +3,32 @@ title: C# 6의 새로운 기능 - C# 가이드
 description: C# 버전 6의 새로운 기능을 알아봅니다.
 ms.date: 09/22/2016
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
-ms.openlocfilehash: f6f953eacc935d38cc7d45173109c96c52a5e2f3
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: ad3515e1fc7d70e1377f007276c369d2884780f0
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47208187"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194035"
 ---
 # <a name="whats-new-in-c-6"></a>C# 6의 새로운 기능
 
 C#의 6.0 릴리스에는 개발자의 생산성을 개선하는 많은 기능이 추가되었습니다. 이 릴리스의 기능은 다음과 같습니다.
 
-* [읽기 전용 Auto 속성](#read-only-auto-properties):
+* [읽기 전용 auto 속성](#read-only-auto-properties):
     - 생성자에서만 설정할 수 있는 읽기 전용 auto 속성을 만들 수 있습니다.
-* [Auto 속성 이니셜라이저](#auto-property-initializers)
+* [Auto 속성 이니셜라이저](#auto-property-initializers):
     - Auto 속성의 초기 값을 설정하는 초기화 식을 작성할 수 있습니다.
 * [식 본문 함수 멤버](#expression-bodied-function-members):
     - 람다 식을 사용하여 한 줄 메서드를 작성할 수 있습니다.
 * [using static](#using-static):
     - 단일 클래스의 모든 메서드를 현재 네임스페이스로 가져올 수 있습니다.
-* [Null - 조건 연산자](#null-conditional-operators):
+* [Null 조건 연산자](#null-conditional-operators):
     - Null 조건 연산자를 사용하여 null이 있는지 계속 확인하면서 개체의 멤버에 간결하고 안전하게 액세스할 수 있습니다.
 * [문자열 보간](#string-interpolation):
     - 위치 인수 대신 인라인 식을 사용하여 문자열 서식 지정 식을 작성할 수 있습니다.
 * [예외 필터](#exception-filters):
     - 예외 속성 또는 기타 프로그램 상태에 따라 식을 catch할 수 있습니다. 
-* [nameof 식](#nameof-expressions):
+* [`nameof` 식](#the-nameof-expression):
     - 컴파일러를 통해 기호의 문자열 표현을 생성할 수 있습니다.
 * [catch 및 finally 블록의 await](#await-in-catch-and-finally-blocks):
     - 이전에 허용되지 않았던 위치에서 `await` 식을 사용할 수 있습니다.
@@ -92,7 +92,7 @@ public class Student
 
 ### <a name="auto-property-initializers"></a>Auto 속성 이니셜라이저
 
-*Auto 속성 이니셜라이저*를 통해 속성 선언의 일부로 auto 속성의 초기 값을 선언할 수 있습니다.  이전 버전에서는 이러한 속성에 setter를 포함해야 하고, 지원 필드에서 사용되는 데이터 저장소를 초기화하려면 해당 setter를 사용해야 합니다. 이름이 포함된 학생 및 학생의 성적 목록에 이 클래스를 사용하는 것이 좋습니다.
+‘Auto 속성 이니셜라이저’를 통해 속성 선언의 일부로 auto 속성의 초기 값을 선언할 수 있습니다.  이전 버전에서는 이러한 속성에 setter를 포함해야 하고, 지원 필드에서 사용되는 데이터 저장소를 초기화하려면 해당 setter를 사용해야 합니다. 이름이 포함된 학생 및 학생의 성적 목록에 이 클래스를 사용하는 것이 좋습니다.
 
 [!code-csharp[Construction](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Construction)]
  
@@ -211,34 +211,34 @@ this.SomethingHappened?.Invoke(this, eventArgs);
 
 ## <a name="string-interpolation"></a>문자열 보간
 
-C# 6에는 형식 문자열 및 다른 문자열 값을 생성하기 위해 계산되는 식에서 문자열을 작성하기 위한 새 구문이 포함됩니다.
+C# 6에는 문자열 및 다른 문자열 값을 생성하기 위해 계산되는 포함된 식에서 문자열을 작성하기 위한 새 구문이 포함됩니다.
 
-기존에는 `string.Format` 같은 메서드에서 위치 매개 변수를 사용해야 했습니다.
+기존에는 <xref:System.String.Format%2A?displayProperty=nameWithType> 같은 메서드에서 위치 매개 변수를 사용해야 했습니다.
 
 [!code-csharp[stringFormat](../../../samples/snippets/csharp/new-in-6/oldcode.cs#stringFormat)]
 
-C# 6에서는 새 [문자열 보간](../language-reference/tokens/interpolated.md) 기능을 통해 서식 문자열에 식을 포함할 수 있습니다. 간단히 문자열 앞에 `$`를 추가하면 됩니다.
+C# 6에서는 새 [문자열 보간](../language-reference/tokens/interpolated.md) 기능을 통해 문자열에 식을 포함할 수 있습니다. 간단히 문자열 앞에 `$`를 추가하면 됩니다.
 
 [!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
-이 초기 예제에서는 대체 식에 속성 식을 사용했습니다. 임의 식을 사용하도록 이 구문을 확장할 수 있습니다. 예를 들어 보간의 일부로 학생의 성적 점수 평균을 계산할 수 있습니다.
+이 예제에서는 대체 식에 속성 식을 사용합니다. 임의 식을 사용하도록 이 구문을 확장할 수 있습니다. 예를 들어 보간의 일부로 학생의 성적 점수 평균을 계산할 수 있습니다.
 
 [!code-csharp[stringInterpolationExpression](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationExpression)]
 
-이전 예제를 실행하면 `Grades.Average()`에 대한 출력에 원하는 것보다 더 많은 소수 자릿수가 포함됨을 알 수 있습니다. 문자열 보간 구문은 이전 서식 메서드를 통해 제공되는 모든 서식 문자열을 지원합니다. 중괄호 내에 서식 문자열을 추가합니다. 서식 지정할 식 다음에 `:`을 추가합니다.
+이전 예제를 실행하면 `Grades.Average()`에 대한 출력에 원하는 것보다 더 많은 소수 자릿수가 포함됨을 알 수 있습니다. 문자열 보간 구문은 이전 서식 메서드를 통해 제공되는 모든 서식 문자열을 지원합니다. 중괄호 안에 형식 문자열을 지정합니다. 서식 지정할 식 다음에 `:`을 추가합니다.
 
 [!code-csharp[stringInterpolationFormat](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationFormat)]
 
 이전 코드 줄은 소수 자릿수가 두 개인 부동 소수점 숫자로 `Grades.Average()` 값의 형식을 지정합니다.
 
-`:`은 항상 서식이 지정되는 식과 서식 문자열 사이의 구분 기호로 해석됩니다. 식에서 `:`을 조건 연산자와 같은 다른 방식으로 사용할 경우 이로 인해 문제가 발생할 수 있습니다.
+`:`은 항상 서식이 지정되는 식과 서식 문자열 사이의 구분 기호로 해석됩니다. 식에서 `:`을 [조건 연산자](../language-reference/operators/conditional-operator.md)와 같은 다른 방식으로 사용할 경우 이로 인해 문제가 발생할 수 있습니다.
 
 ```csharp
 public string GetGradePointPercentages() =>
     $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Any() ? Grades.Average() : double.NaN:F2}";
 ```
 
-이전 예제에서 `:`은 조건 연산자의 일부가 아닌 서식 문자열의 시작으로 구문 분석됩니다. 이 문제가 발생할 때마다 식을 괄호로 묶어 컴파일러가 식을 의도한 대로 해석하게 할 수 있습니다.
+이전 예제에서 `:`은 조건 연산자의 일부가 아닌 서식 문자열의 시작으로 구문 분석됩니다. 이 문제가 발생할 때마다 식을 괄호로 묶어 컴파일러가 식을 의도한 대로 해석하게 합니다.
 
 [!code-csharp[stringInterpolationConditional](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationConditional)]
 
@@ -249,19 +249,21 @@ public string GetGradePointPercentages() =>
 이 샘플에서 문자열 보간 식을 또 다른 문자열 보간 식 내부에 중첩할 수도 있음을 알 수 있습니다. 이 예제는 프로덕션 코드에서 원하는 것보다 훨씬 더 복잡할 수 있습니다.
 오히려 기능의 범위를 잘 보여 줍니다. 모든 C# 식은 보간된 문자열의 중괄호 사이에 배치할 수 있습니다.
 
+문자열 보간을 시작하려면 [C#의 문자열 보간](../tutorials/intro-to-csharp/interpolated-strings.yml) 대화형 자습서를 확인하세요.
+
 ### <a name="string-interpolation-and-specific-cultures"></a>문자열 보간 및 특정 문화권
 
-이전 섹션에 나와 있는 모든 예제는 코드가 실행되는 컴퓨터에서 현재 문화권과 언어를 사용하여 문자열의 서식을 지정합니다. 일반적으로 특정 문화권을 사용하여 생성된 문자열의 서식을 지정해야 할 수 있습니다.
-이렇게 하려면 문자열 보간에 의해 생성된 개체가 암시적으로 <xref:System.FormattableString>으로 변환될 수 있다는 사실을 참고하세요.
+이전 섹션에 나와 있는 모든 예제는 코드가 실행되는 머신에서 현재 문화권을 사용하여 문자열의 형식을 지정합니다. 일반적으로 특정 문화권을 사용하여 생성된 문자열의 서식을 지정해야 할 수 있습니다.
+이렇게 하려면 문자열 보간에 의해 생성된 개체가 암시적으로 <xref:System.FormattableString?displayProperty=nameWithType>으로 변환될 수 있다는 사실을 참고하세요.
 
-<xref:System.FormattableString> 인스턴스에는 서식 문자열 및 문자열로 변환하기 전에 식을 계산한 결과가 포함됩니다. <xref:System.FormattableString>의 public 메서드를 사용하여 문자열의 서식을 지정할 때 문화권을 지정할 수 있습니다. 예를 들어 다음 예에서는 독일 문화권을 사용하여 문자열을 생성합니다. (',' 문자를 소수 구분 기호로 사용하고 '.' 문자를 천 단위 구분 기호로 사용합니다.)
+<xref:System.FormattableString> 인스턴스에는 복합 형식 문자열 및 문자열로 변환하기 전에 식을 계산한 결과가 포함됩니다. 문자열 형식을 지정할 때 <xref:System.FormattableString.ToString(System.IFormatProvider)> 메서드를 사용하여 문화권을 지정합니다. 예를 들어 다음 예에서는 독일 문화권을 사용하여 문자열을 생성합니다. (',' 문자를 소수 구분 기호로 사용하고 '.' 문자를 천 단위 구분 기호로 사용합니다.)
 
 ```csharp
 FormattableString str = $"Average grade is {s.Grades.Average()}";
 var gradeStr = str.ToString(new System.Globalization.CultureInfo("de-DE"));
 ```
 
-자세한 내용은 [문자열 보간](../language-reference/tokens/interpolated.md) 토픽을 참조하세요.
+자세한 내용은 [문자열 보간](../language-reference/tokens/interpolated.md) 문서와 [C#의 문자열 보간](../tutorials/string-interpolation.md) 자습서를 참조하세요.
 
 ## <a name="exception-filters"></a>예외 필터
 
@@ -311,7 +313,7 @@ C# 6의 또 다른 새로운 기능은 *예외 필터*입니다. 예외 필터�
 코드에 이 예외 코드를 추가한 후 처리되지 않은 모든 예외에서 중단되도록 디버거를 설정합니다. 디버거에서 프로그램을 실행합니다. 그러면 `PerformFailingOperation()`이 `RecoverableException`을 throw할 때마다 디버거가 중단됩니다.
 false 반환 예외 필터로 인해 catch 절이 실행되지 않으므로 디버거가 프로그램을 중단합니다.
 
-## <a name="nameof-expressions"></a>`nameof` 식
+## <a name="the-nameof-expression"></a>`nameof` 식
 
 `nameof` 식은 기호 이름으로 계산됩니다. 변수, 속성 또는 멤버 필드의 이름이 필요할 때마다 도구를 작동하는 것이 좋습니다.
 

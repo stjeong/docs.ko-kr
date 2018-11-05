@@ -8,12 +8,12 @@ helpviewer_keywords:
 - GC [.NET ], large object heap
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8dfe3fdbf71918a7ed2b6dccca24f58688bc14f2
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: cdbbf3138cad0a2fae311bf03476eebba23b7320
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003089"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50202909"
 ---
 # <a name="the-large-object-heap-on-windows-systems"></a>Windows 시스템의 큰 개체 힙
 
@@ -164,7 +164,7 @@ LOH 성능에 대한 데이터를 수집하는 데 사용할 수 있는 도구�
 > [!NOTE]
 > ETW에서 훨씬 더 많은 정보를 제공하므로 성능 카운터 대신 ETW 이벤트를 사용하는 것이 좋습니다.
 
-### <a name="etw"></a>ETW
+### <a name="etw-events"></a>ETW 이벤트
 
 가비지 수집기는 힙에서 수행하는 작업과 그 이유를 파악하는 데 도움이 되는 다양한 ETW 이벤트 집합을 제공합니다. 다음 블로그 게시물에서는 ETW를 통해 GC 이벤트를 수집하고 파악하는 방법을 보여 줍니다.
 
@@ -204,7 +204,7 @@ perfview /GCOnly /AcceptEULA /nogui collect
 
 ### <a name="a-debugger"></a>디버거
 
-메모리 덤프만 있고 실제로 LOH에 있는 개체를 확인해야 하는 경우 .NET에서 제공하는 [SoS 디버거 확장](http://msdn2.microsoft.com/ms404370.aspx)을 사용할 수 있습니다.
+메모리 덤프만 있고 실제로 LOH에 있는 개체를 확인해야 하는 경우 .NET에서 제공하는 [SoS 디버거 확장](../../../docs/framework/tools/sos-dll-sos-debugging-extension.md)을 사용할 수 있습니다.
 
 > [!NOTE]
 > 이 섹션에서 설명하는 디버깅 명령은 [Windows 디버거](https://www.microsoft.com/whdc/devtools/debugging/default.mspx)에 적용할 수 있습니다.

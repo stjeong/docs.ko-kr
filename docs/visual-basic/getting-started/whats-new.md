@@ -1,6 +1,6 @@
 ---
 title: Visual Basic의 새로운 기능
-ms.date: 02/15/2018
+ms.date: 10/04/2018
 f1_keywords:
 - VB.StartPage.WhatsNew
 helpviewer_keywords:
@@ -8,14 +8,12 @@ helpviewer_keywords:
 - what's new [Visual Basic]
 - Visual Basic, what's new
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: ae29553b6a431c3f20f0e5e34614842946532a9b
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 5c7786bd0dc8789d156959dcf94ac6bf8f4fb906
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925613"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194061"
 ---
 # <a name="whats-new-for-visual-basic"></a>Visual Basic의 새로운 기능
 
@@ -69,6 +67,10 @@ Visual Basic 15.3 및 이전 버전에서 메서드 호출이 위치 및 이름�
 ```vb
 StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 ```
+
+[`Private Protected` 멤버 액세스 한정자](../language-reference/modifiers/private-protected.md)
+
+이 새 키워드 조합은 포함하는 클래스의 모든 멤버를 통해 액세스하고 포함하는 클래스에서 파생된 형식(해당 형식이 포함하는 어셈블리에 있는 경우에만)을 통해 액세스할 수 있는 멤버를 정의합니다. 구조체를 상속할 수 없으므로 `Private Protected`는 클래스의 멤버에만 적용할 수 있습니다.
 
 **선행 16진수/이진/8진수 구분 기호**
 
@@ -153,7 +155,7 @@ C# 7.0부터 C#에서 참조 반환 값을 지원합니다. 즉, 호출하는 �
 [문자열 보간](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  문자열 보간 식을 사용하여 문자열을 생성할 수 있습니다.  보간된 문자열 식은 식이 포함된 템플릿 문자열과 유사합니다.  보간된 문자열은 인수 측면에서 [Composite Formatting](../../standard/base-types/composite-format.md)보다 이해하기 쉽습니다.  
   
-[Null 조건부 멤버 액세스 및 인덱싱](../../csharp/language-reference/operators/null-conditional-operators.md)  
+[Null 조건부 멤버 액세스 및 인덱싱](../language-reference/operators/null-conditional-operators.md)  
 멤버 액세스(`?.`) 또는 인덱스(`?[]`) 작업을 수행하기 전에 매우 간단한 구문을 사용하여 null 테스트를 수행할 수 있습니다.  이러한 연산자는 null 검사의 처리를 위해 작성하는 코드의 양을 줄이는 데 도움이 되며 특히 데이터 구조에서 아래로 내려가는 경우에 유용합니다.  왼쪽 피연산자 또는 개체 참조가 null이면 연산에서 null이 반환됩니다.  
   
 [다중 선 문자열 리터럴](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  

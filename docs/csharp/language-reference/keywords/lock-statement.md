@@ -1,23 +1,23 @@
 ---
 title: lock 문(C# 참조)
 description: C# lock 문을 사용하여 공유 리소스에 대한 스레드 액세스 동기화
-ms.date: 08/28/2018
+ms.date: 10/01/2018
 f1_keywords:
 - lock_CSharpKeyword
 - lock
 helpviewer_keywords:
 - lock keyword [C#]
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
-ms.openlocfilehash: 2b6fbfb2f81d7745c4effb9ea0087f34cc872a6c
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 802f447e1ae01020fa80fa3048e3783ea24db3d3
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858358"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48850103"
 ---
 # <a name="lock-statement-c-reference"></a>lock 문(C# 참조)
 
-`lock` 문은 지정된 개체에 대한 상호 배제 잠금을 가져와서 명령문 블록을 실행한 다음, 잠금을 해제합니다. 잠금이 유지되는 동안 잠금을 보유하는 스레드는 잠금을 다시 가져오고 해제할 수 있습니다. 다른 스레드는 잠금을 가져올 수 없도록 차단되며 잠금이 해제될 때까지 대기합니다.
+`lock` 문은 지정된 개체에 대한 상호 배제 잠금을 획득하여 명령문 블록을 실행한 다음, 잠금을 해제합니다. 잠금이 유지되는 동안 잠금을 보유하는 스레드는 잠금을 다시 획득하고 해제할 수 있습니다. 다른 스레드는 잠금을 획득할 수 없도록 차단되며 잠금이 해제될 때까지 대기합니다.
 
 `lock` 문이 형식입니다.
 
@@ -50,13 +50,11 @@ finally
 
 ## <a name="remarks"></a>설명
 
-공유 리소스에스 레드 엑세스를 동기화하는 경우 전용 개체 인스턴스(예: `private readonly object balanceLock = new object();`) 또는 코드의 관련 없는 부분에서 잠금 개체로 사용되지 않을 가능성이 있는 다른 인스턴스에서 잠급니다. 교착 상태 또는 잠금 경합이 발생할 수 있으므로 다른 공유 리소스에 대해 동일한 잠금 개체 인스턴스를 사용하지 마세요. 특히,
+공유 리소스에 대한 스레드 액세스를 동기화하는 경우 전용 개체 인스턴스(예: `private readonly object balanceLock = new object();`) 또는 코드의 관련 없는 파트에서 잠금 개체로 사용되지 않을 가능성이 있는 다른 인스턴스를 잠급니다. 교착 상태 또는 잠금 경합이 발생할 수 있으므로 다른 공유 리소스에 대해 동일한 잠금 개체 인스턴스를 사용하지 마세요. 특히 다음을 잠금 개체로 사용하지 마세요.
 
-- `this`(호출자가 잠금으로 사용할 수 있음),
-- <xref:System.Type> 인스턴스([typeof](typeof.md) 연산자 또는 리플렉션에서 가져올 수 있음),
-- 문자열 인스턴스(문자열 리터럴 포함)의 경우,
-
-잠금 개체로 사용하지 마세요.
+- `this`(호출자가 잠금으로 사용할 수 있음).
+- <xref:System.Type> 인스턴스([typeof](typeof.md) 연산자 또는 리플렉션에서 획득할 수 있음).
+- 문자열 인스턴스(문자열 리터럴 포함)([인터닝](/dotnet/api/system.string.intern#remarks)될 수 있음).
 
 ## <a name="example"></a>예
 

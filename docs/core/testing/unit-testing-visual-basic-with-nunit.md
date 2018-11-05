@@ -2,23 +2,33 @@
 title: dotnet test 및 NUnit를 사용하여 .NET Core에서 Visual Basic 유닛 테스트
 description: NUnit를 사용하여 샘플 Visual Basic 솔루션을 단계별로 빌드하는 대화형 환경을 통해 .NET Core의 단위 테스트 개념을 알아봅니다.
 author: rprouse
-ms.date: 12/01/2017
+ms.date: 10/04/2018
 dev_langs:
 - vb
-ms.openlocfilehash: 552b60dd3937abc413c1b4410213948f3b509526
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bed43ac6b6f918b1ee45715101f9142c1add777f
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33217778"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48836927"
 ---
 # <a name="unit-testing-visual-basic-net-core-libraries-using-dotnet-test-and-nunit"></a>dotnet test 및 NUnit을 사용하여 Visual Basic .NET Core 라이브러리 유닛 테스트
 
 이 자습서에서는 샘플 솔루션을 단계별로 빌드하는 대화형 환경을 통해 단위 테스트 개념을 알아볼 수 있습니다. 미리 빌드된 솔루션을 사용하여 이 자습서를 진행하려는 경우 시작하기 전에 [샘플 코드를 보거나 다운로드](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-vb-nunit/). 다운로드 지침은 [샘플 및 자습서](../../samples-and-tutorials/index.md#viewing-and-downloading-samples)를 참조하세요.
 
+## <a name="prerequisites"></a>전제 조건 
+- [.NET Core SDK 2.1(v. 2.1.400)](https://www.microsoft.com/net/download) 이상 버전. 
+- 선택하는 텍스트 편집기 또는 코드 편집기입니다.
+
 ## <a name="creating-the-source-project"></a>소스 프로젝트 만들기
 
-셸 창을 엽니다. 솔루션을 저장하기 위한 *unit-testing-vb-nunit*라는 디렉터리를 만듭니다. 이 새 디렉터리 내에서 [`dotnet new sln`](../tools/dotnet-new.md)을 실행하여 새 솔루션을 만듭니다. 이 방법을 사용하면 클래스 라이브러리와 단위 테스트 프로젝트를 모두 쉽게 관리할 수 있습니다. 솔루션 디렉터리 내에 *PrimeService* 디렉터리를 만듭니다. 지금까지의 디렉터리 및 파일 구조는 다음과 같습니다.
+셸 창을 엽니다. 솔루션을 저장하기 위한 *unit-testing-vb-nunit*라는 디렉터리를 만듭니다. 이 새 디렉터리 내에서 다음 명령을 실행하여 클래스 라이브러리 및 테스트 프로젝트에 대한 새 솔루션 파일을 만듭니다.
+
+```console
+dotnet new sln
+```
+
+다음으로 *PrimeService* 디렉터리를 만듭니다. 다음 개요는 지금까지의 파일 구조를 보여 줍니다.
 
 ```
 /unit-testing-vb-nunit
@@ -26,7 +36,13 @@ ms.locfileid: "33217778"
     /PrimeService
 ```
 
-*PrimeService*를 현재 디렉터리로 만들고 [`dotnet new classlib -lang VB`](../tools/dotnet-new.md)를 실행하여 소스 프로젝트를 만듭니다. *Class1.VB*의 이름을 *PrimeService.VB*로 바꿉니다. TDD(테스트 기반 개발)를 사용하기 위해 `PrimeService` 클래스의 실패 구현을 만듭니다.
+*PrimeService*를 현재 디렉터리로 만들고 다음 명령을 실행하여 소스 프로젝트를 만듭니다.
+
+```console
+dotnet new classlib -lang VB
+```
+
+*Class1.VB*의 이름을 *PrimeService.VB*로 바꿉니다. TDD(테스트 기반 개발)를 사용하기 위해 `PrimeService` 클래스의 실패 구현을 만듭니다.
 
 ```vb
 Imports System
@@ -40,15 +56,11 @@ Namespace Prime.Services
 End Namespace
 ```
 
-디렉터리를 다시 *unit-testing-vb-using-stest* 디렉터리로 변경합니다. [`dotnet sln add .\PrimeService\PrimeService.vbproj`](../tools/dotnet-sln.md)를 실행하여 클래스 라이브러리 프로젝트를 솔루션에 추가합니다.
+디렉터리를 다시 *unit-testing-vb-using-stest* 디렉터리로 변경합니다. 다음 명령을 실행하여 클래스 라이브러리 프로젝트를 솔루션에 추가합니다.
 
-## <a name="install-the-nunit-project-template"></a>NUnit 프로젝트 템플릿 설치
-
-NUnit 테스트 프로젝트 템플릿은 테스트 프로젝트를 만들기 전에 설치해야 합니다. 이러한 작업은 새 NUnit 프로젝트를 만들 각 개발자 컴퓨터에서 한 번만 수행합니다. [`dotnet new -i NUnit3.DotNetNew.Template`](../tools/dotnet-new.md)를 실행하여 NUnit 템플릿을 설치합니다.
-
- ```
- dotnet new -i NUnit3.DotNetNew.Template
- ```
+```console
+dotnet sln add .\PrimeService\PrimeService.vbproj
+```
 
 ## <a name="creating-the-test-project"></a>테스트 프로젝트 만들기
 
@@ -63,19 +75,19 @@ NUnit 테스트 프로젝트 템플릿은 테스트 프로젝트를 만들기 �
     /PrimeService.Tests
 ```
 
-*PrimeService.Tests* 디렉터리를 현재 디렉터리로 만들고 [`dotnet new nunit -lang VB`](../tools/dotnet-new.md)를 사용하여 새 프로젝트를 만듭니다. 이 명령은 NUnit을 테스트 라이브러리로 사용하는 테스트 프로젝트를 만듭니다. 생성된 템플릿은 *PrimeServiceTests.vbproj*에 Test Runner를 구성합니다.
+*PrimeService.Tests* 디렉터리를 현재 디렉터리로 만들고 다음 명령을 사용하여 새 프로젝트를 만듭니다.
 
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-  <PackageReference Include="NUnit" Version="3.9.0" />
-  <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
-</ItemGroup>
+```console
+dotnet new nunit -lang VB
 ```
+
+[dotnet new](../tools/dotnet-new.md) 명령은 NUnit를 테스트 라이브러리로 사용하는 테스트 프로젝트를 만듭니다. 생성된 템플릿은 *PrimeServiceTests.vbproj* 파일에 Test Runner를 구성합니다.
+
+[!code-xml[Packages](~/samples/core/getting-started/unit-testing-vb-nunit/PrimeService.Tests/PrimeService.Tests.vbproj#Packages)]
 
 테스트 프로제트는 다른 패키지에 단위 테스트를 만들고 실행하도록 요구합니다. 이전 단계의 `dotnet new`는 NUnit 및 NUnit 테스트 어댑터를 추가했습니다. 이제 `PrimeService` 클래스 라이브러리를 프로젝트에 다른 종속성으로 추가합니다. [`dotnet add reference`](../tools/dotnet-add-reference.md) 명령을 사용합니다.
 
-```
+```console
 dotnet add reference ../PrimeService/PrimeService.vbproj
 ```
 
@@ -91,14 +103,18 @@ GitHub의 [샘플 리포지토리](https://github.com/dotnet/samples/blob/master
         PrimeService.vbproj
     /PrimeService.Tests
         Test Source Files
-        PrimeServiceTests.vbproj
+        PrimeService.Tests.vbproj
 ```
 
-*unit-testing-vb-nunit* 디렉터리에서 [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj`](../tools/dotnet-sln.md)를 실행합니다.
+*unit-testing-vb-nunit* 디렉터리에서 다음 명령을 실행합니다.
+
+```console
+dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj
+```
 
 ## <a name="creating-the-first-test"></a>첫 번째 테스트 만들기
 
-TDD 접근 방식에서는 하나의 실패 테스트를 작성하고, 통과시키고, 이 프로세스를 반복해야 합니다. *PrimeService.Tests* 디렉터리에서 *UnitTest1.vb*를 제거하고 새 Visual Basic 파일 *PrimeService_IsPrimeShould.VB*를 만듭니다. 다음 코드를 추가합니다.
+TDD 접근 방식에서는 하나의 실패 테스트를 작성하고, 통과시키고, 이 프로세스를 반복해야 합니다. *PrimeService.Tests* 디렉터리에서 *UnitTest1.vb* 파일의 이름을 *PrimeService_IsPrimeShould.VB*로 변경하고 전체 내용을 다음 코드로 바꿉니다.
 
 ```vb
 Imports NUnit.Framework
@@ -142,7 +158,7 @@ End Function
 
 [!code-vb[Sample_TestCode](../../../samples/core/getting-started/unit-testing-vb-nunit/PrimeService.Tests/PrimeService_IsPrimeShould.vb?name=Sample_TestCode)]
 
-`dotnet test`를 실행합니다. 그러면 이러한 테스트 중 2개가 실패합니다. 모든 테스트가 통과하도록 하려면 메서드의 시작 부분에서 `if` 절을 변경합니다.
+`dotnet test`를 실행합니다. 그러면 이러한 테스트 중 2개가 실패합니다. 모든 테스트를 통과하려면 *PrimeServices.cs* 파일에서 `Main` 메서드의 시작 부분에 있는 `if` 절을 변경합니다.
 
 ```vb
 if candidate < 2

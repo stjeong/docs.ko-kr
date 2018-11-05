@@ -5,12 +5,12 @@ author: bleroy
 ms.author: mairaw
 ms.date: 11/16/2016
 ms.custom: vs-dotnet
-ms.openlocfilehash: 15537ea8c68b5c873bbf26ab0519a19de0b13230
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: b3e466511fcae447f5bb54b83f13b25bc90c6539
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45969563"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50185081"
 ---
 # <a name="building-a-complete-net-core-solution-on-windows-using-visual-studio-2017"></a>Visual Studio 2017을 사용하여 Windows에서 완전한 .NET Core 솔루션 구축
 
@@ -24,7 +24,7 @@ Visual Studio 2017은 .NET Core 응용 프로그램 개발을 위해 필요한 �
 
 ### <a name="writing-the-library"></a>라이브러리 작성
 
-1. Visual Studio에서 **파일**, **새로 만들기**, **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드를 확장하고 **.NET Standard** 노드를 선택한 다음 **클래스 라이브러리(.NET Standard)** 를 선택합니다. 
+1. Visual Studio에서 **파일**, **새로 만들기**, **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드를 확장하고 **.NET Standard** 노드를 선택한 다음 **클래스 라이브러리(.NET Standard)** 를 선택합니다. 이렇게 하면 .NET Core를 대상으로 하는 .NET Standard 라이브러리와 [.NET Standard](../../standard/net-standard.md)의 버전 2.0을 지원하는 기타 .NET 구현이 만들어집니다.
 
 2. 프로젝트 이름을 "Library", 솔루션 이름을 "Golden"으로 지정합니다. **솔루션용 디렉터리 만들기** 확인란을 선택한 상태로 둡니다. **확인**을 클릭합니다.
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1874d5512f04f22b9c53bdc9e92d0c96e45d21c8
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 7a8fc72735c5e45fb87c503272871fc687bacd3e
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47199724"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453244"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>방법: 설치된 .NET Framework 버전 확인
 
@@ -97,7 +97,7 @@ ms.locfileid: "47199724"
     |Windows 10 1주년 업데이트 및 Windows Server 2016: 394802<br /><br /> 모든 다른 OS 버전: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
     |Windows 10 작성자 업데이트에서만: 460798<br/><br/> 다른 모든 OS 버전: 460805 | .NET Framework 4.7 |
     |Windows 10 가을 작성자 업데이트에서만: 461308<br/><br/> 다른 모든 OS 버전: 461310 | .NET Framework 4.7.1 |
-    |Windows 10 2018년 4월 업데이트에서만: 461808<br/><br/> 다른 모든 OS 버전: 461814| .NET Framework 4.7.2 |
+    |Windows 10 2018년 10월 업데이트에서만: 461814<br/><br/> Windows 10 2018년 4월 업데이트에서만: 461808<br/><br/> 다른 모든 OS 버전: 461814| .NET Framework 4.7.2 |
     
 <a name="net_c"></a> 
 ## <a name="to-find-net-framework-versions-by-querying-the-registry-in-code-net-framework-1-4"></a>코드로 레지스트리를 쿼리하여 .NET Framework 버전을 찾으려면(.NET Framework 1-4)
@@ -148,8 +148,9 @@ ms.locfileid: "47199724"
     |.NET Framework 4.7이 다른 모든 Windows OS 버전에 설치됨|460805|
     |Windows 10 Fall Creators Update에 설치된 .NET Framework 4.7.1|461308|
     |.NET Framework 4.7.1이 다른 모든 Windows OS 버전에 설치됨|461310|
+    |.NET Framework 4.7.2가 Windows 10 2018년 10월 업데이트에 설치됨|461814|
     |.NET Framework 4.7.2가 Windows 10 2018년 4월 업데이트에 설치됨|461808|
-    |.NET Framework 4.7.2가 다른 모든 Windows OS 버전에 설치됨|461814|
+    |.NET Framework 4.7.2가 Windows 10 Fall Creators Update 이하 OS 버전에 설치됨|461814|
     
      다음 예제에서는 레지스트리에서 `Release` 값을 확인하여 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 또는 이후 버전의 .NET Framework가 설치되어 있는지 확인합니다.
 

@@ -5,12 +5,12 @@ author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-cli
-ms.openlocfilehash: 6be94c2e2cef443f69b2d6df7c2d490cb1fb629d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 0be8d302568bc08d2c3dacfdf5738eff4b97d4b2
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44205064"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48848103"
 ---
 # <a name="how-to-create-a-nuget-package-with-cross-platform-tools"></a>플랫폼 간 도구로 NuGet 패키지를 만드는 방법
 
@@ -21,7 +21,7 @@ ms.locfileid: "44205064"
 
 NuGet을 통해 배포하려는 놀라운 새 라이브러리를 작성했다고 가정해 보세요.  플랫폼 간 도구를 사용하여 NuGet 패키지를 만들면 이 작업을 정확하게 수행할 수 있습니다.  다음 예제에서는 `netstandard1.0`을 대상으로 하는 **SuperAwesomeLibrary**라는 라이브러리를 가정합니다.
 
-전이적 종속성 즉, 다른 프로젝트에 종속되어 있는 프로젝트가 있는 경우 NuGet 패키지를 만들기 전에 `dotnet restore` 명령을 사용하여 전체 솔루션에 대한 패키지를 복원해야 합니다.  이렇게 복원하지 않으면 `dotnet pack` 명령이 제대로 작동하지 않습니다.
+전이적 종속성 즉, 다른 패키지에 종속된 프로젝트가 있는 경우 NuGet 패키지를 만들기 전에 `dotnet restore` 명령을 사용하여 전체 솔루션에 대한 패키지를 복원해야 합니다.  이렇게 복원하지 않으면 `dotnet pack` 명령이 제대로 작동하지 않습니다.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 

@@ -5,22 +5,23 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - MageUI.exe
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
-ms.openlocfilehash: eb93e53e7b77ee2747bce3fb9a45d7061450e65c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9037e03398aa29d496f1a689e0e57bdb60fea5b9
+ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43501663"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584393"
 ---
 # <a name="mageuiexe-manifest-generation-and-editing-tool-graphical-client"></a>MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)
-MageUI.exe는 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지만 Windows 기반 UI(사용자 인터페이스)를 사용합니다. 이 도구를 사용하면 배포 및 응용 프로그램 매니페스트를 만들고, 편집하고, 서명할 수 있습니다. MageUI.exe로 만든 새 매니페스트는 [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]을 대상으로 합니다. 이전 버전의 MageUI.exe는 이전 .NET Framework 버전을 대상으로 사용해야 합니다. 매니페스트에서 어셈블리를 추가하거나 제거 또는 기존 매니페스트를 다시 서명할 때 MageUI.exe는 매니페스트를 대상 [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]로 업데이트하지 않습니다. 자세한 내용은 [Mage.exe(매니페스트 생성 및 편집 도구)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)를 참조하세요.  
-  
- 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
-  
- Mage.exe 및 MageUI.exe의 두 버전이 [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)] 설치 프로그램의 구성 요소로 포함되어 있습니다. 버전 정보를 보려면 MageUI.exe를 실행하고 **도움말**을 선택하고 **정보**를 선택합니다. 이 설명서는 Mage.exe 및 MageUI.exe의 버전 4.0.x.x에 대해 설명합니다.  
-  
+
+MageUI.exe는 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지만 Windows 기반 UI(사용자 인터페이스)를 사용합니다. 이 도구를 사용하면 배포 및 응용 프로그램 매니페스트를 만들고, 편집하고, 서명할 수 있습니다. MageUI.exe로 만든 새 매니페스트는 [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]을 대상으로 합니다. 이전 버전의 MageUI.exe는 이전 .NET Framework 버전을 대상으로 사용해야 합니다. 매니페스트에서 어셈블리를 추가하거나 제거 또는 기존 매니페스트를 다시 서명할 때 MageUI.exe는 매니페스트를 대상 [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]로 업데이트하지 않습니다. 자세한 내용은 [Mage.exe(매니페스트 생성 및 편집 도구)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)를 참조하세요.
+
+ 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
+
+ Mage.exe 및 MageUI.exe의 두 버전이 Visual Studio의 구성 요소로 포함되어 있습니다. 버전 정보를 보려면 MageUI.exe를 실행하고 **도움말**을 선택하고 **정보**를 선택합니다. 이 설명서는 Mage.exe 및 MageUI.exe의 버전 4.0.x.x에 대해 설명합니다.
+
 > [!NOTE]
->  MageUI.exe를 사용하는 인증서로 이미 서명된 응용 프로그램 매니페스트를 저장할 때 MageUI.exe는 [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) 요소를 지원하지 않습니다. 대신, [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)를 사용해야 합니다.  
+> MageUI.exe를 사용하는 인증서로 이미 서명된 응용 프로그램 매니페스트를 저장할 때 MageUI.exe는 [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) 요소를 지원하지 않습니다. 대신, [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)를 사용해야 합니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  다음 표에서는 사용 가능한 메뉴 및 도구 모음 항목을 보여 줍니다.  

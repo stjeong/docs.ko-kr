@@ -2,28 +2,27 @@
 title: 피어 이름 게시 및 확인
 ms.date: 03/30/2017
 ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 436c84c948a867acedf69af1bc7b3e78c308ce54
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 98ccfc79a25d547c751d8153d0f290860e5eb743
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193553"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50184558"
 ---
 # <a name="peer-name-publication-and-resolution"></a>피어 이름 게시 및 확인
+
 ## <a name="publishing-a-peer-name"></a>피어 이름 게시  
+
  새 PNRP ID를 게시하기 위해 피어에서 다음을 수행합니다.  
   
 -   캐시 내에서 인접해 있는 피어(캐시의 최하위 수준에 PNRP ID가 등록된 피어)에 PNRP 게시 메시지를 보내 자신의 캐시를 시드합니다.  
   
 -   클라우드에서 인접해 있지 않은 임의 노드를 선택하고 PNRP 이름 확인 요청을 보내 해당 노드의 P2P ID를 확인합니다. 그 결과 수행되는 엔드포인트 확인 프로세스에서 클라우드에서 게시하는 피어의 PNRP ID를 가진 임의 노드의 캐시를 시드합니다.  
   
--  
+PNRP 버전 2 노드에서는 다른 P2P ID만 확인하는 경우 PNRP ID를 게시하지 않습니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global\SearchOnly=1 레지스트리 값(REG_DWORD 종류)은 피어에서 PNRP를 이름 확인에만 사용하고 이름 게시에는 사용하지 않도록 지정합니다. 이 레지스트리 값은 그룹 정책을 통해 구성할 수도 있습니다.  
   
- PNRP 버전 2 노드에서는 다른 P2P ID만 확인하는 경우 PNRP ID를 게시하지 않습니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global\SearchOnly=1 레지스트리 값(REG_DWORD 종류)은 피어에서 PNRP를 이름 확인에만 사용하고 이름 게시에는 사용하지 않도록 지정합니다. 이 레지스트리 값은 그룹 정책을 통해 구성할 수도 있습니다.  
-  
-## <a name="resolving-a-peer-name"></a>피어 이름 확인  
+## <a name="resolving-a-peer-name"></a>피어 이름 확인
+
  PNRP 네트워크 또는 클라우드에서 다른 피어를 찾는 것은 다음 두 단계로 구성된 프로세스입니다.  
   
 1.  엔드포인트 확인  
@@ -44,11 +43,9 @@ ms.locfileid: "47193553"
   
 -   해당 PNRP ID가 없고 캐시에 대상 PNRP ID에 근접한 PNRP ID도 없으면 요청받은 피어가 요청한 피어에 이러한 상황을 알리는 응답을 보냅니다. 그러면 요청한 피어는 다음으로 가장 근접한 PNRP ID를 선택합니다.  
   
--  
-  
- 요청한 피어는 이 프로세스를 연속적으로 반복하여 PNRP ID를 등록한 노드를 찾습니다.  
+요청한 피어는 이 프로세스를 연속적으로 반복하여 PNRP ID를 등록한 노드를 찾습니다.  
   
  <xref:System.Net.PeerToPeer> 네임스페이스에서 엔드포인트를 포함하는 <xref:System.Net.PeerToPeer.PeerName> 레코드 및 이와 통신하는 PNRP 클라우드 또는 메시 간에는 다대다 관계가 있습니다. 중복 항목 또는 오래된 항목이 있거나 피어 이름이 같은 노드가 여러 개인 경우 PNRP 노드에서는 <xref:System.Net.PeerToPeer.PeerNameResolver> 클래스를 사용하여 최신 정보를 가져올 수 있습니다. <xref:System.Net.PeerToPeer.PeerNameResolver> 메서드에서는 단일 피어 이름을 사용하여 큐브 뷰를 하나의 피어 대 여러 피어 이름 레코드 및 마찬가지로 한 피어 대 여러 클라우드로 간소화합니다. 관계형 테이블 조인을 사용한 쿼리와 비슷합니다. 성공적으로 완료되면 확인자 개체에서 지정된 피어 이름에 대해 <xref:System.Net.PeerToPeer.PeerNameRecordCollection>을 반환합니다.  예를 들어 피어 이름은 컬렉션의 모든 피어 이름 레코드에 표시되며 클라우드별로 순서가 지정됩니다. PNRP 기반 응용 프로그램에서 요청할 수 있는 지원 데이터가 있는 피어 이름의 인스턴스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Net.PeerToPeer>
+- <xref:System.Net.PeerToPeer>

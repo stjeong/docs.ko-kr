@@ -3,12 +3,12 @@ title: 런타임에 동적으로 조건자 필터 지정(C#의 LINQ)
 description: C#에서 LINQ를 사용하여 런타임에 동적으로 조건자 필터를 지정하는 방법을 알아봅니다.
 ms.date: 12/1/2016
 ms.assetid: 90238470-0767-497c-916c-52d0d16845e0
-ms.openlocfilehash: 6798b80d482bd6ae2133c0bf861f30c43f6738b1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ece5940edd615f30acab06a429de300e27811a66
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43512578"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50038490"
 ---
 # <a name="dynamically-specify-predicate-filters-at-runtime"></a>런타임에 동적으로 조건자 필터 지정
 

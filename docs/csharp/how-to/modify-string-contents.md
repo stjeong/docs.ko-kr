@@ -3,12 +3,12 @@ title: '방법: 문자열 내용 수정 - C# 가이드'
 ms.date: 02/26/2018
 helpviewer_keywords:
 - strings [C#], modifying
-ms.openlocfilehash: 23d52a52291b3d5c36fc2ed0f299ab82aa5ffabd
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 349269f8158f7d4db5e2058791087a258f504460
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260180"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453439"
 ---
 # <a name="how-to-modify-string-contents-in-c"></a>방법: C\#에서 문자열 내용 수정
 
@@ -65,7 +65,7 @@ ms.locfileid: "44260180"
 ## <a name="unsafe-modifications-to-string"></a>문자열에 대한 안전하지 않은 수정
 
 **unsafe** 코드를 사용하여 만들어진 후 문자열을 "적절히" 수정할 수 있습니다. 안전하지 않은 코드는 코드에서 특정 유형의 버그를 최소화하도록 설계된 .NET의 많은 기능을 무시합니다. 문자열 클래스는 **변경할 수 없는** 유형으로 디자인되었으므로 안전하지 않은 코드를 사용하여 문자열을 적절히 수정해야 합니다. 만들어지면 해당 값은 변경되지 않습니다. 안전하지 않은 코드는 일반 `string` 메서드를 사용하지 않고 `string`에서 사용되는 메모리에 액세스하고 수정하여 이 속성을 회피합니다.
-다음 예제는 안전하지 않은 코드를 사용하여 문자열을 적절히 수정하려는 드문 경우를 위해 제공됩니다. 이 예제에서는 `fixed` 키워드를 사용하는 방법을 보여 줍니다. `fixed` 키워드는 코드가 안전하지 않은 포인터를 사용하여 메모리에 액세스하는 동안 GC(가비지 수집기)가 메모리에서 문자열 개체를 이동하는 것을 방지합니다. 또한 문자열에 대한 안전하지 않은 작업의 가능한 부작용 중 하나를 보여 줍니다. 이 부작용은 C# 컴파일러가 문자열을 내부적으로 저장(intern)하는 방식에서 발생합니다. 일반적으로 이 방식은 반드시 필요한 경우에만 사용해야 합니다. [안전하지 않은](../language-reference/keywords/unsafe.md) 및 [수정 사항](../language-reference/keywords/fixed-statement.md)에 대해 문서에서 자세히 알아볼 수 있습니다. <xref:System.String.Intern%2A>에 대한 API 참조는 문자열 인터닝에 대한 정보를 포함합니다.
+다음 예제는 안전하지 않은 코드를 사용하여 문자열을 적절히 수정하려는 드문 경우를 위해 제공됩니다. 이 예제에서는 `fixed` 키워드를 사용하는 방법을 보여 줍니다. `fixed` 키워드는 코드가 안전하지 않은 포인터를 사용하여 메모리에 액세스하는 동안 GC(가비지 수집기)가 메모리에서 문자열 개체를 이동하는 것을 방지합니다. 또한 문자열에 대한 안전하지 않은 작업의 가능한 부작용 중 하나를 보여 줍니다. 이 부작용은 C# 컴파일러가 문자열을 내부적으로 저장(intern)하는 방식에서 발생합니다. 일반적으로 이 방식은 반드시 필요한 경우에만 사용해야 합니다. [안전하지 않은](../language-reference/keywords/unsafe.md) 및 [수정 사항](../language-reference/keywords/fixed-statement.md)에 대해 문서에서 자세히 알아볼 수 있습니다. <xref:System.String.Intern%2A>의 API 참조는 문자열 인터닝에 대한 정보를 포함합니다.
 
 [!code-csharp-interactive[unsafe ways to create a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#7)]
 

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5b59e0bda45b0b45b49c22d49ec2556fbcfef75d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 2f3bf29b9b4d216483ea0c81cc787c80fc8b9e6f
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44221911"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453361"
 ---
 # <a name="globalization"></a>전역화
 전역화는 다양한 문화권의 사용자를 위해 현지화된 인터페이스와 국가별 데이터를 지원하는 지역화 대비 응용 프로그램을 디자인하고 개발하는 작업을 수반합니다. 디자인 단계를 시작하기 전에 앱에서 지원할 문화권을 결정해야 합니다. 앱이 기본적으로 단일 문화권이나 국가를 대상으로 하더라도, 다른 문화권이나 국가의 사용자에게 쉽게 확장될 수 있도록 디자인하고 작성할 수 있습니다.  
@@ -116,7 +116,7 @@ ms.locfileid: "44221911"
   
  같음 비교에 <xref:System.String.Equals%2A?displayProperty=nameWithType> 메서드에 대한 호출이 아닌 검색 또는 부분 문자열 비교를 수반하는 경우가 있습니다. 경우에 따라, 부분 문자열이 다른 문자열과 같은지를 판단하기 위해 부분 문자열 검색을 사용할 수 있습니다. 비교의 목적이 비언어적인 경우, 검색은 문화권 구분이 아닌 서수여야 합니다.  
   
- 다음 예제는 비언어적인 데이터에 대한 문화권 구분 검색의 위험을 설명합니다. `AccessesFileSystem` 메서드는 "FILE"이라는 부분 문자열로 시작되는 URI에 대한 파일 시스템 액세스를 금지하도록 설계되었습니다. 이를 위해, URI의 시작 부분을 "FILE"이라는 문자열과 문화권을 구분하고 대/소문자를 구분하지 않는 비교를 수행합니다. 파일 시스템에 액세스하는 URI는 "FILE:" 또는 "file:"로 시작되기 때문에 "i"(U+0069)는 언제나 "I"(U+0049)에 해당하는 소문자라는 암묵적인 가정이 있습니다. 하지만 터키어 및 아제르바이잔어에서 "i"의 대문자 버전은 "İ"(U+0130)입니다. 이러한 불일치로 인해, 문화권 구분 비교는 파일 시스템 액세스를 금지해야 하는 경우에 액세스를 허용합니다.  
+ 다음 예제는 비언어적인 데이터에 대한 문화권 구분 검색의 위험을 설명합니다. `AccessesFileSystem` 메서드는 "FILE"이라는 부분 문자열로 시작되는 URI에 대한 파일 시스템 액세스를 금지하도록 설계되었습니다. 이를 위해, URI의 시작 부분을 "FILE"이라는 문자열과 문화권을 구분하고 대/소문자를 구분하지 않는 비교를 수행합니다. 파일 시스템에 액세스하는 URI는 “FILE:” 또는 “file:”로 시작되기 때문에 “i”(U+0069)는 언제나 “I”(U+0049)에 해당하는 소문자라는 암묵적인 가정이 있습니다. 하지만 터키어 및 아제르바이잔어에서 "i"의 대문자 버전은 "İ"(U+0130)입니다. 이러한 불일치로 인해, 문화권 구분 비교는 파일 시스템 액세스를 금지해야 하는 경우에 액세스를 허용합니다.  
   
  [!code-csharp[Conceptual.Globalization#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/equals1.cs#12)]
  [!code-vb[Conceptual.Globalization#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/equals1.vb#12)]  

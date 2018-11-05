@@ -6,12 +6,12 @@ ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: e48a263334ebb93a5d281032336aeb4073d8467c
-ms.sourcegitcommit: e8dc507cfdaad504fc9d4c83d28d24569dcef91c
+ms.openlocfilehash: 675b6821588f8d0dd9495346a13665a32986f060
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "34827341"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48841166"
 ---
 # <a name="building-docker-images-for-net-core-applications"></a>.NET Core 응용 프로그램에 대한 Docker 이미지 작성
 
@@ -130,17 +130,17 @@ Docker 클라이언트를 다음에 설치할 수 있습니다.
 
 * Linux 배포
 
-   * [CentOS](https://www.docker.com/docker-centos-distribution)
+   * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-   * [Debian](https://www.docker.com/docker-debian)
+   * [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
 
-   * [Fedora](https://www.docker.com/docker-fedora)
+   * [Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
 
-   * [Ubuntu](https://www.docker.com/docker-ubuntu)
+   * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-* [macOS](https://docs.docker.com/docker-for-mac/)
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
 
-* [Windows](https://docs.docker.com/docker-for-windows/)
+* [Windows](https://docs.docker.com/docker-for-windows/install/)
 
 #### <a name="installing-git-for-sample-repository"></a>샘플 리포지토리용 Git 설치
 
@@ -205,7 +205,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 ```
 
 > [!IMPORTANT]
-> Windows 컨테이너를 사용하는 경우 브라우저에서 **컨테이너 IP 주소**(http://localhost) 와 반대로)로 이동해야 합니다. 다음 단계를 사용하여 컨테이너의 IP 주소를 가져올 수 있습니다.
+> Windows 컨테이너를 사용하는 경우 브라우저에서 **컨테이너 IP 주소**(`http://localhost`와 반대로)로 이동해야 합니다. 다음 단계를 사용하여 컨테이너의 IP 주소를 가져올 수 있습니다.
 
 * 다른 명령 프롬프트를 엽니다.
 * `docker ps`를 실행하여 실행 중인 컨테이너를 봅니다. "aspnetcore_sample" 컨테이너가 있어야 합니다.

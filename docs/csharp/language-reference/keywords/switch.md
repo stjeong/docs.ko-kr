@@ -12,26 +12,26 @@ helpviewer_keywords:
 - case statement [C#]
 - default keyword [C#]
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-ms.openlocfilehash: 08b63d67b6175d18bee1317cc8908d876fbb4039
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b23c43ebdb8d4277344949a18b1bc999b27d60e9
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47193732"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188614"
 ---
 # <a name="switch-c-reference"></a>switch(C# 참조)
 
 `switch`는 *일치 식*을 사용한 패턴 일치를 기반으로 하여 후보 목록에서 실행할 *switch 섹션* 하나를 선택하는 선택 문입니다.
 
-[!code-csharp[switch#1](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]
+[!code-csharp[switch#1](~/samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]
 
 단일 식을 3개 이상의 조건에 대해 테스트하는 경우 `switch` 문이 [if-else](if-else.md) 구문 대신 사용되는 경우가 많습니다. 예를 들어 다음 `switch` 문은 `Color` 형식의 변수에 다음 세 가지 값 중 하나가 있는지 여부를 확인합니다.
 
-[!code-csharp[switch#3](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3.cs#1)]
+[!code-csharp[switch#3](~/samples/snippets/csharp/language-reference/keywords/switch/switch3.cs#1)]
 
 이 문은 `if`-`else` 구문을 사용하는 다음 예제와 같습니다.
 
-[!code-csharp[switch#3a](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3a.cs#1)]
+[!code-csharp[switch#3a](~/samples/snippets/csharp/language-reference/keywords/switch/switch3a.cs#1)]
 
 ## <a name="the-match-expression"></a>일치 식
 
@@ -98,7 +98,7 @@ C# 6에서 상수 패턴만 지원하고 상수 값의 반복을 허용하지 �
 
 - switch 섹션의 순서 변경
 
-- `case` 레이블에 </a name="when">when clause</a> 사용
+- `case` 레이블에서 [when 절](#when) 사용
 
 ## <a name="the-default-case"></a>`default` case
 
@@ -171,11 +171,11 @@ case null:
 
 다음 예제에서는 형식 패턴을 사용하여 다양한 종류의 컬렉션 형식에 대한 정보를 제공합니다.
 
-[!code-csharp[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern.cs#1)]
+[!code-csharp[type-pattern#1](~/samples/snippets/csharp/language-reference/keywords/switch/type-pattern.cs#1)]
 
 패턴 일치를 사용하지 않을 경우 이 코드를 다음과 같이 작성할 수 있습니다. 형식 패턴 일치를 사용하면 변환 결과가 `null`인지 여부를 테스트하거나 반복된 캐스트를 수행할 필요가 없으므로 더욱 단순하고 읽기 쉬운 코드가 생성됩니다.
 
-[!code-csharp[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
+[!code-csharp[type-pattern2#1](~/samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
 
 ## <a name="a-namewhen--the-case-statement-and-the-when-clause"></a><a name="when" /> `case` 문 및 `when` 절
 
@@ -183,13 +183,13 @@ C# 7.0부터 case 문이 상호 배타적일 필요가 없으므로 `when` 절�
 
 다음 예제에서는 기본 `Shape` 클래스, `Shape`에서 파생된 `Rectangle` 클래스 및 `Rectangle`에서 파생된 `Square` 클래스를 정의합니다. `when` 절을 사용하여 `ShowShapeInfo`에서 `Square` 개체로 인스턴스화되지 않은 경우에도 동일한 길이 및 너비가 할당된 `Rectangle` 개체를 `Square`로 처리하도록 합니다. 이 메서드는 `null`인 개체나 면적이 0인 도형에 대한 정보를 표시하지 않습니다.
 
-[!code-csharp[switch#8](../../../../samples/snippets/csharp/language-reference/keywords/switch/when-clause.cs#1)]
+[!code-csharp[when-clause#1](~/samples/snippets/csharp/language-reference/keywords/switch/when-clause.cs#1)]
 
 `Shape` 개체가 `null`인지 여부를 테스트하는 예제의 `when` 절은 실행되지 않습니다. `null`인지 테스트하는 올바른 형식 패턴은 `case null:`입니다.
 
 ## <a name="c-language-specification"></a>C# 언어 사양
 
-자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [switch 문](/dotnet/csharp/language-reference/language-specification/statements#the-switch-statement)을 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [switch 문](~/_csharplang/spec/statements.md#the-switch-statement)을 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
 
 ## <a name="see-also"></a>참고 항목
 

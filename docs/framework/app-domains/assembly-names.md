@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2e1ab9609fe6b2c1e232f188db8306fc05828285
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6447593ba81e4512afaf2b5798fcec00b755e63c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744137"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50184787"
 ---
 # <a name="assembly-names"></a>어셈블리 이름
 어셈블리 이름은 메타데이터에 저장되고 어셈블리 범위 및 응용 프로그램에 의한 사용에 상당한 영향을 미칩니다. 강력한 이름의 어셈블리에는 어셈블리의 이름, 문화권, 공개 키 및 버전 번호가 포함된 정규화된 이름이 있습니다. 이 이름을 보통 표시 이름이라고 하고 로드된 어셈블리의 경우 <xref:System.Reflection.Assembly.FullName%2A> 속성을 사용하여 가져올 수 있습니다.  
@@ -58,9 +58,9 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
 >  강력한 이름의 어셈블리를 전역 어셈블리 캐시에 포함할 경우 어셈블리의 파일 이름은 어셈블리 이름(.exe 또는 .dll 등의 파일 이름 확장명 제외)과 일치해야 합니다. 예를 들어 어셈블리의 파일 이름이 myAssembly.dll이면 어셈블리 이름은 myAssembly여야 합니다. 루트 응용 프로그램 디렉터리에만 배포된 전용 어셈블리의 이름은 파일 이름과 다를 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 어셈블리의 정규화된 이름 식별](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)  
- [어셈블리 만들기](../../../docs/framework/app-domains/create-assemblies.md)  
- [강력한 이름의 어셈블리](../../../docs/framework/app-domains/strong-named-assemblies.md)  
- [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [방법: 어셈블리의 정규화된 이름 식별](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)  
+- [어셈블리 만들기](../../../docs/framework/app-domains/create-assemblies.md)  
+- [강력한 이름의 어셈블리](../../../docs/framework/app-domains/strong-named-assemblies.md)  
+- [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)  
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
+- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)

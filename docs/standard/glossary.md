@@ -5,12 +5,12 @@ author: tdykstra
 ms.author: tdykstra
 ms.date: 07/08/2017
 ms.technology: dotnet-standard
-ms.openlocfilehash: 11fad691021ec897348177c67134750e72b4ff7c
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 4ffcf56ba171192048a736b58ddcfa591fd3af58
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698486"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48840273"
 ---
 # <a name="net-glossary"></a>.NET 용어
 
@@ -38,7 +38,7 @@ Ahead-Of-Time 컴파일러입니다.
 
 ## <a name="assembly"></a>어셈블리
 
-앱이나 다른 어셈블리에서 호출할 수 있는 API 컬렉션을 포함할 수 있는 *.dll*/*.exe* 파일입니다.
+응용 프로그램이나 다른 어셈블리에서 호출할 수 있는 API 컬렉션을 포함할 수 있는 *.dll*/*.exe* 파일입니다.
 
 어셈블리에는 인터페이스, 클래스, 구조체, 열거형 및 대리자와 같은 형식이 포함될 수 있습니다. 프로젝트의 *bin* 폴더에 있는 어셈블리를 *바이너리*라고도 합니다. [라이브러리](#library)를 참조하세요.
 
@@ -46,13 +46,13 @@ Ahead-Of-Time 컴파일러입니다.
 
 공용 언어 런타임입니다.
 
-정확한 의미는 컨텍스트에 따라 달라지지만 일반적으로 .NET Framework의 런타임을 나타냅니다. CLR은 메모리 할당 및 관리를 처리합니다. 또한 CLR은 앱을 실행할 뿐만 아니라 JIT 컴파일러를 사용하여 즉시 코드를 생성하고 컴파일하는 가상 머신입니다. 현재 Microsoft CLR 구현은 Windows 전용입니다.
+정확한 의미는 컨텍스트에 따라 달라지지만 일반적으로 .NET Framework의 런타임을 나타냅니다. CLR은 메모리 할당 및 관리를 처리합니다. 또한 CLR은 앱을 실행할 뿐만 아니라 [JIT](#jit) 컴파일러를 사용하여 즉시 코드를 생성하고 컴파일하는 가상 머신입니다. 현재 Microsoft CLR 구현은 Windows 전용입니다.
 
 ## <a name="coreclr"></a>CoreCLR
 
 .NET Core 공용 언어 런타임입니다.
 
-이 CLR은 CLR과 동일한 코드베이스에서 작성됩니다. 원래 CoreCLR은 Silverlight의 런타임이었으며 여러 플랫폼, 특히 Windows 및 OS X에서 실행되도록 설계되었습니다. 이제 CoreCLR은 .NET Core의 일부이며 CLR의 단순화된 버전을 나타냅니다. 이제 많은 Linux 배포에 대한 지원을 포함하는 플랫폼 간 런타임이기도 합니다. CoreCLR은 JIT 및 코드 실행 기능이 있는 가상 머신이기도 합니다.
+이 CLR은 CLR과 동일한 코드베이스에서 작성됩니다. 원래 CoreCLR은 Silverlight의 런타임이었으며 여러 플랫폼, 특히 Windows 및 OS X에서 실행되도록 설계되었습니다. 이제 CoreCLR은 .NET Core의 일부이며 CLR의 단순화된 버전을 나타냅니다. 이제 많은 Linux 배포에 대한 지원을 포함하는 [플랫폼 간](#cross-platform) 런타임이기도 합니다. CoreCLR은 JIT 및 코드 실행 기능이 있는 가상 머신이기도 합니다.
 
 ## <a name="corefx"></a>CoreFX
 
@@ -67,6 +67,10 @@ System.*(및 제한된 범위의 Microsoft.*) 네임스페이스를 구성하는
 CLR/CoreCLR과 달리 CoreRT는 가상 머신이 아닙니다. 즉, [JIT](#jit)를 포함하지 않으므로 즉시 코드를 생성하고 실행하는 기능을 포함하지 않습니다. 그러나 [GC](#gc)와 RTTI(런타임 형식 식별) 및 리플렉션에 대한 기능은 포함합니다. 그러나 해당 형식 시스템은 리플렉션에 대한 메타데이터가 필요하지 않도록 설계되었습니다. 따라서 불필요한 메타데이터를 분리하고 더 중요하게는 앱이 사용하지 않는 코드를 식별할 수 있는 [AOT](#aot) 도구 체인을 사용할 수 있습니다. CoreRT는 개발 중입니다.
 
 [.NET 네이티브 및 CoreRT 소개](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md)를 참조하세요.
+
+## <a name="cross-platform"></a>플랫폼 간
+
+각 운영 체제에 맞게 다시 작성할 필요 없이 Linux, Windows 및 iOS와 같은 다양한 운영 체제에서 사용할 수 있는 응용 프로그램을 개발하고 실행하는 기능입니다. 이를 통해 다양한 플랫폼에서 응용 프로그램 간에 코드를 다시 사용하고 일관성을 유지할 수 있습니다.
 
 ## <a name="ecosystem"></a>에코시스템
 
@@ -136,7 +140,7 @@ Just-In-Time 컴파일러입니다.
 
 ## <a name="mono"></a>Mono
 
-Mono는 작은 런타임이 필요할 때 주로 사용되는 .NET 구현입니다. 이는 Android, Mac, iOS, tvOS 및 watchOS에서 Xamarin 응용 프로그램의 성능을 향상하는 런타임으로, 주로 작은 사용 공간이 필요한 앱에 초점을 맞춥니다.
+Mono는 작은 런타임이 필요할 때 주로 사용되는 오픈 소스 [플랫폼 간](#cross-platform) .NET 구현입니다. 이는 Android, Mac, iOS, tvOS 및 watchOS에서 Xamarin 응용 프로그램의 성능을 향상하는 런타임으로, 주로 작은 사용 공간이 필요한 앱에 초점을 맞춥니다.
 
 Mono는 현재 게시된 .NET Standard 버전을 모두 지원합니다.
 

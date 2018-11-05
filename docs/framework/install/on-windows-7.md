@@ -5,12 +5,12 @@ description: Windows 7 SP1에서.NET Framework를 설치하는 방법을 알아�
 author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
-ms.openlocfilehash: 828680c0591f9603d14c57dd9e82fe1f3970ede3
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 091fb93f26695df01f2f95fdec7ed168d96ba90d
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861873"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200761"
 ---
 # <a name="install-the-net-framework-on-windows-7-sp1-and-windows-server-2008-r2"></a>Windows 7 SP1 및 Windows Server 2008 R2에 .NET Framework 설치
 
@@ -18,7 +18,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 
 ![이 응용 프로그램을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
 
-이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows 7 SP1 및 Windows Server 2008 R2에서 지원되고 [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
+이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows 7 SP1 및 Windows Server 2008 R2에서 지원되고 [Windows 10 2018년 10월 업데이트](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update) 및 [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
 
 ## <a name="net-framework-472"></a>.NET Framework 4.7.2
 

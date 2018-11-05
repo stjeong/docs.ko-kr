@@ -8,14 +8,12 @@ helpviewer_keywords:
 - Internet Protocol version 6, improvements
 - Internet Protocol version 6
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: fc7aa27c07946b3a3da7e1ede8adaea30c06e58f
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 6f956a8dc3e899012144ccf266a7cbe1c5f9dab4
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47201012"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50200009"
 ---
 # <a name="internet-protocol-version-6"></a>인터넷 프로토콜 버전 6
 IPv6(인터넷 프로토콜 버전 6)은 인터넷 네트워크 계층에 대한 새로운 표준 프로토콜 도구 모음입니다. IPv6은 주소 고갈, 보안, 자동 구성, 확장성 등에 관련된 현재 버전 인터넷 프로토콜 도구 모음(IPv4라고 함)의 많은 문제를 해결하도록 설계되었습니다. IPv6은 피어 투 피어 및 모바일 응용 프로그램을 포함한 새로운 종류의 응용 프로그램을 구현하기 위해 인터넷 기능을 확장합니다. 현재 IPv4 프로토콜의 주요 문제는 다음과 같습니다.  
@@ -47,7 +45,7 @@ IPv6(인터넷 프로토콜 버전 6)은 인터넷 네트워크 계층에 대한
  자세한 내용은 [IPv6 주소 지정](../../../docs/framework/network-programming/ipv6-addressing.md), [IPv6 라우팅](../../../docs/framework/network-programming/ipv6-routing.md), [IPv6 자동 구성](../../../docs/framework/network-programming/ipv6-auto-configuration.md), [IPv6 사용 및 사용 안 함](../../../docs/framework/network-programming/enabling-and-disabling-ipv6.md) 및 [방법: IPv6 지원을 사용하도록 컴퓨터 구성 파일 수정](../../../docs/framework/network-programming/how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md)을 참조하세요.  
   
 ## <a name="references"></a>참조  
- Internet Engineering Task Force 사이트([http://www.ietf.org](http://www.ietf.org/))에서 찾을 수 있는 선택된 RFC 문서는 다음과 같습니다.  
+ [IETF(Internet Engineering Task Force)](https://www.ietf.org/) 웹 사이트에서 찾을 수 있는 선택된 RFC 문서는 다음과 같습니다.  
   
 -   RFC 1287, Towards the Future Internet Architecture.  
   
@@ -57,9 +55,9 @@ IPv6(인터넷 프로토콜 버전 6)은 인터넷 네트워크 계층에 대한
   
 -   RFC 2374, An IPv6 Aggregatable Global Unicast Address Format.  
   
- 또한 [Technet의 IPv6 영역](https://go.microsoft.com/fwlink/?LinkID=179658)에서 IPv6 관련 정보를 찾을 수 있습니다.  
+ 또한 [IPv6(IP 버전 6)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379498%28v=ws.10%29)에서 IPv6 관련 정보를 찾을 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [IPv6 소켓 샘플](https://msdn.microsoft.com/library/ms180981(v=vs.85).aspx)  
+ [IPv6 소켓 샘플](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180981%28v=vs.85%29)  
  [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)  
  [소켓](../../../docs/framework/network-programming/sockets.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - application services host [client application services]
 - client application services, walkthroughs
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
-ms.openlocfilehash: b800848fc3cefb1f82fb5822007bc670c1684363
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: d09ad4b1f518ac6f4c42dffd4b3ca17249b95700
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43788930"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194321"
 ---
 # <a name="walkthrough-using-client-application-services"></a>연습: 클라이언트 응용 프로그램 서비스 사용
 이 항목에서는 클라이언트 응용 프로그램 서비스를 사용하여 사용자를 인증하고 사용자 역할 및 설정을 검색하는 Windows 응용 프로그램을 만드는 방법을 설명합니다.  
@@ -35,9 +35,8 @@ ms.locfileid: "43788930"
 -   오프라인 모드를 사용하도록 설정합니다. 사용자가 연결 상태를 지정할 수 있도록 확인란을 제공합니다. 그런 다음 이 값을 사용하여 클라이언트 응용 프로그램 서비스 공급자가 해당 웹 서비스에 액세스하는 대신 로컬에 캐시된 데이터를 사용할지 여부를 지정합니다. 끝으로, 응용 프로그램이 온라인 모드로 돌아가면 현재 사용자를 다시 인증합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
-  
--   [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)].  
+
+이 연습을 완료하려면 Visual Studio가 필요합니다.
   
 ## <a name="creating-the-client-application"></a>클라이언트 응용 프로그램 만들기  
  먼저 Windows Forms 프로젝트를 만듭니다. 이 연습에서는 익숙한 사용자가 더 많기 때문에 Windows Forms를 사용하지만 WPF(Windows Presentation Foundation) 프로젝트에 대한 프로세스는 유사합니다.  
@@ -328,7 +327,7 @@ ms.locfileid: "43788930"
   
      [!code-vb[ClientApplicationServices#110](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#110)]  
   
-9. 커서가 `IClientformsAuthenticationCredentialsProvider`뒤에 있는지 확인하고 Enter 키를 눌러 `GetCredentials` 메서드를 생성합니다.  
+9. 커서가 `IClientformsAuthenticationCredentialsProvider` 뒤에 있는지 확인하고 Enter 키를 눌러 `GetCredentials` 메서드를 생성합니다.  
   
 10. <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> 구현을 찾아 다음 코드로 바꿉니다.  
   

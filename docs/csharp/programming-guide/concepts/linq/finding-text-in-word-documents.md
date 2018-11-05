@@ -2,12 +2,12 @@
 title: Word 문서에서 텍스트 찾기(C#)
 ms.date: 07/20/2015
 ms.assetid: 82f86677-560b-49dc-a089-610409939b2a
-ms.openlocfilehash: 56a99dd548eb149f6fa85370cef6a114103ce91e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3213855716ebcfc581f213a34417e579c133e385
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47235600"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200504"
 ---
 # <a name="finding-text-in-word-documents-c"></a>Word 문서에서 텍스트 찾기(C#)
 이 항목에서는 이전 쿼리를 확장하여 문서에 있는 문자열을 모두 찾습니다.  

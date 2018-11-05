@@ -14,28 +14,21 @@ helpviewer_keywords:
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ddf8f52ab98d0188235d8c9f97293adced4bfe90
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 2e1db5447be5f46873b6648fc6791426b2886a75
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698317"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50192618"
 ---
 # <a name="application-domains"></a>응용 프로그램 도메인
+
 운영 체제와 런타임 환경은 일반적으로 응용 프로그램 간에 몇 가지 형식의 격리를 제공합니다. 예를 들어 Windows에서는 프로세스를 사용하여 응용 프로그램을 격리합니다. 격리는 한 응용 프로그램에서 실행 중인 코드가 서로 관련 없는 다른 응용 프로그램에 나쁜 영향을 주지 않도록 하기 위해 필요합니다.  
   
  응용 프로그램 도메인은 보안, 안정성, 버전 관리, 어셈블리 언로드를 위해 격리 경계를 제공합니다. 응용 프로그램 도메인은 일반적으로 응용 프로그램이 실행되기 전에 공용 언어 런타임을 부트스트래핑해야 하는 런타임 호스트에 의해 만들어집니다.  
   
- 문서의 이 단원에 있는 항목에서는 응용 프로그램 도메인을 사용하여 어셈블리 간에 격리를 제공하는 방법에 대해 설명합니다.  
-  
- 이 개요는 다음과 같은 단원으로 구성됩니다.  
-  
--   [응용 프로그램 격리의 장점](#benefits)  
-  
--   [참조](#reference)  
-  
-<a name="benefits"></a>   
-## <a name="the-benefits-of-isolating-applications"></a>응용 프로그램 격리의 장점  
+## <a name="the-benefits-of-isolating-applications"></a>응용 프로그램 격리의 장점
+
  지금까지는 동일한 컴퓨터에서 실행 중인 여러 응용 프로그램을 격리시키기 위해 프로세스 경계를 사용했습니다. 각 응용 프로그램은 독립된 프로세스에 로드되어 동일한 컴퓨터에서 실행 중인 다른 컴퓨터와 격리됩니다.  
   
  메모리 주소는 프로세스에 상대적이고 한 프로세스에서 다른 프로세스로 전달된 메모리 포인터는 대상 프로세스에서 의미 있는 방식으로 사용될 수 없으므로 응용 프로그램이 격리됩니다. 또한 두 프로세스를 서로 직접 호출할 수 없습니다. 대신 간접 참조 수준을 제공하는 프록시를 사용해야 합니다.  
@@ -61,9 +54,9 @@ ms.locfileid: "45698317"
   
 -   코드에 부여된 권한은 해당 코드가 실행 중인 응용 프로그램 도메인에서 제어할 수 있습니다.  
   
-  
-## <a name="application-domains-and-assemblies"></a>응용 프로그램 도메인 및 어셈블리  
- 이 항목에서는 응용 프로그램 도메인과 어셈블리 사이의 관계에 대해 설명합니다. 어셈블리에 포함되어 있는 코드를 실행하려면 먼저 해당 어셈블리를 응용 프로그램 도메인에 로드해야 합니다. 일반적으로 응용 프로그램을 실행하면 여러 어셈블리가 응용 프로그램 도메인에 로드됩니다.  
+## <a name="application-domains-and-assemblies"></a>응용 프로그램 도메인 및 어셈블리
+
+ 이 섹션에서는 응용 프로그램 도메인과 어셈블리 사이의 관계에 대해 설명합니다. 어셈블리에 포함되어 있는 코드를 실행하려면 먼저 해당 어셈블리를 응용 프로그램 도메인에 로드해야 합니다. 일반적으로 응용 프로그램을 실행하면 여러 어셈블리가 응용 프로그램 도메인에 로드됩니다.  
   
  어셈블리가 로드되는 방식에 따라 프로세스에서 여러 응용 프로그램 도메인이 해당 어셈블리의 JIT(Just-In-Time) 컴파일된 코드를 공유할 수 있는지 여부와 어셈블리를 프로세스에서 언로드할 수 있는지 여부가 결정됩니다.  
   
@@ -95,21 +88,24 @@ ms.locfileid: "45698317"
   
 -   어셈블리에 도메인 중립적으로 로드할 수 없는 종속 어셈블리가 있으면 해당 어셈블리가 도메인 중립적으로 로드되지 않으므로 어셈블리를 도메인 중립적으로 로드할 때는 해당 어셈블리의 모든 종속 어셈블리를 찾아서 로드해야 합니다.  
   
-## <a name="application-domains-and-threads"></a>응용 프로그램 도메인과 스레드  
+## <a name="application-domains-and-threads"></a>응용 프로그램 도메인과 스레드
+
  응용 프로그램 도메인은 보안, 버전 관리, 안정성 및 관리 코드 언로드를 위해 격리 경계를 구성합니다. 스레드는 코드를 실행하기 위해 공용 언어 런타임에서 사용하는 운영 체제 구문입니다. 런타임에서 모든 관리 코드는 응용 프로그램 도메인에 로드되고 하나 이상의 관리되는 스레드에 의해 실행됩니다.  
   
  응용 프로그램 도메인과 스레드 간에는 일대일 상관 관계가 없습니다. 일부 스레드는 어느 시점에서든 단일 응용 프로그램 도메인에서 실행될 수 있으며, 특정 스레드는 단일 응용 프로그램 도메인으로 제한되지 않습니다. 즉, 스레드는 크로스 응용 프로그램 도메인 경계에 종속되지 않고 각 응용 프로그램 도메인에 대해 새 스레드가 만들어지지 않습니다.  
   
- 어느 시점에서든 모든 스레드는 단일 응용 프로그램 도메인에서 실행됩니다. 지정된 응용 프로그램 도메인에서 0개, 한 개 또는 여러 개의 스레드가 실행 중일 수 있습니다. 런타임은 응용 프로그램 도메인에서 실행 중인 스레드를 추적하므로 사용자는 언제든지 <xref:System.Threading.Thread.GetDomain%2A?displayProperty=nameWithType> 메서드를 호출하여 스레드가 실행되고 있는 도메인을 찾을 수 있습니다.  
-  
-### <a name="application-domains-and-cultures"></a>응용 프로그램 도메인 및 문화권  
+ 어느 시점에서든 모든 스레드는 단일 응용 프로그램 도메인에서 실행됩니다. 지정된 응용 프로그램 도메인에서 0개, 한 개 또는 여러 개의 스레드가 실행 중일 수 있습니다. 런타임은 응용 프로그램 도메인에서 실행 중인 스레드를 추적하므로 사용자는 언제든지 <xref:System.Threading.Thread.GetDomain%2A?displayProperty=nameWithType> 메서드를 호출하여 스레드가 실행되고 있는 도메인을 찾을 수 있습니다.
+
+### <a name="application-domains-and-cultures"></a>응용 프로그램 도메인 및 문화권
+
  스레드와 연결된 <xref:System.Globalization.CultureInfo> 개체로 표현되는 문화권입니다. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 속성을 사용하여 현재 실행 중인 스레드와 연결된 문화권을 가져오고 <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> 속성을 사용하여 현재 실행 중인 스레드와 연결된 문화권을 가져오거나 설정할 수 있습니다. 스레드와 연결된 문화권을 <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> 속성을 사용하여 명시적으로 설정한 경우, 스레드가 응용 프로그램 도메인 경계를 넘나들 때 해당 스레드와 계속해서 연결됩니다. 어느 시점에서 문화권이 스레드와 연결되어 있는지 여부는 스레드가 실행 중인 응용 프로그램 도메인의 <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> 속성 값에 의해 결정됩니다.  
   
 -   속성 값이 `null`이 아닌 경우, 속성에 의해 반환되는 문화권은 스레드와 연결되어 있습니다. 따라서 <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> 및 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 속성에 의해 반환됩니다.  
   
 -   속성 값이 `null`인 경우 현재 시스템 문화권이 스레드와 연결되어 있습니다.  
   
-## <a name="programming-with-application-domains"></a>응용 프로그램 도메인으로 프로그래밍  
+## <a name="programming-with-application-domains"></a>응용 프로그램 도메인으로 프로그래밍
+
  응용 프로그램 도메인은 일반적으로 런타임 호스트가 프로그래밍 방식으로 만들고 조작합니다. 그러나 때때로 응용 프로그램에서 응용 프로그램 도메인을 사용할 수도 있습니다. 예를 들어, 전체 응용 프로그램을 중지하지 않고도 도메인과 구성 요소를 언로드할 수 있도록 응용 프로그램에서 응용 프로그램 구성 요소를 도메인에 로드할 수 있습니다.  
   
  <xref:System.AppDomain>은 응용 프로그램 도메인에 대한 프로그래밍 인터페이스입니다. 이 클래스는 도메인을 만들고 언로드하며 도메인에서 형식 인스턴스를 만들고 응용 프로그램 도메인 언로드와 같이 다양한 알림을 등록할 수 있는 메서드를 포함합니다. 다음 표에는 자주 사용되는 <xref:System.AppDomain> 메서드가 나열되어 있습니다.  
@@ -126,7 +122,8 @@ ms.locfileid: "45698317"
   
  또한 공용 언어 런타임 호스팅 인터페이스 사양에 설명되어 있는 관리되지 않는 인터페이스를 사용하여 응용 프로그램 도메인에 액세스할 수도 있습니다. 런타임 호스트는 비관리 코드에서 인터페이스를 사용하여 프로세스 내에서 응용 프로그램 도메인을 만들고 액세스할 수 있습니다.  
   
-## <a name="complusloaderoptimization-environment-variable"></a>COMPLUS_LoaderOptimization 환경 변수  
+## <a name="the-complusloaderoptimization-environment-variable"></a>COMPLUS_LoaderOptimization 환경 변수
+
  실행 가능한 응용 프로그램의 기본 로더 최적화 정책을 설정하는 환경 변수입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -135,7 +132,8 @@ ms.locfileid: "45698317"
 COMPLUS_LoaderOptimization = 1  
 ```  
   
-### <a name="remarks"></a>설명  
+### <a name="remarks"></a>설명
+
  일반적인 응용 프로그램은 포함된 코드를 실행하기 전에 응용 프로그램 도메인에 여러 어셈블리를 로드합니다.  
   
  어셈블리가 로드되는 방식에 따라 프로세스에서 여러 응용 프로그램 도메인이 해당 어셈블리의 JIT(Just-In-Time) 컴파일된 코드를 공유할 수 있는지 여부가 결정됩니다.  
@@ -149,7 +147,8 @@ COMPLUS_LoaderOptimization = 1
 > [!CAUTION]
 >  COMPLUS_LoaderOptimization 환경 플래그는 진단 및 테스트 시나리오에 사용할 수 있도록 설계되었습니다. 플래그가 설정되어 있으면 속도가 심각하게 느려지고 메모리 사용량이 증가할 수 있습니다.  
   
-### <a name="code-example"></a>코드 예제  
+### <a name="code-example"></a>코드 예제
+
  모든 어셈블리를 IISADMIN 서비스에 대해 도메인 중립적으로 로드되지 않게 하려면 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN 키에서 Environment의 다중 문자열 값에 `COMPLUS_LoaderOptimization=1`을 추가합니다.  
   
 ```  
@@ -159,6 +158,9 @@ Type = REG_MULTI_SZ
 Value (to append) = COMPLUS_LoaderOptimization=1  
 ```  
   
-<a name="reference"></a>   
-## <a name="reference"></a>참조  
- <xref:System.MarshalByRefObject?displayProperty=nameWithType>
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.AppDomain?displayProperty=nameWithType>
+- <xref:System.MarshalByRefObject?displayProperty=nameWithType>
+- [응용 프로그램 도메인 및 어셈블리를 사용한 프로그래밍](index.md)
+- [응용 프로그램 도메인 사용](use.md)

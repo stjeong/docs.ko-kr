@@ -4,16 +4,16 @@ ms.date: 03/06/2018
 helpviewer_keywords:
 - parameters [C#], in
 - in parameters [C#]
-ms.openlocfilehash: 54abd5192d0d9bb49be0a9feb8e5e4eaeb691a0c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 199d2d54a1937b9982131b8cc7f1c777f656d7a9
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43512017"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50199411"
 ---
 # <a name="in-parameter-modifier-c-reference"></a>in 매개 변수 한정자(C# 참조)
 
-`in` 키워드를 사용하면 참조를 통해 인수를 전달할 수 있습니다. 이 키워드는 호출된 메서드에서 `in` 인수를 수정할 수 없다는 점을 제외하고 [ref](ref.md) 또는 [out](out-parameter-modifier.md) 키워드와 유사합니다. `ref` 인수는 수정할 수 있지만 `out` 인수는 호출자가 수정해야 하며, 해당 수정 사항은 호출 컨텍스트에서 식별 가능합니다.
+`in` 키워드를 사용하면 참조를 통해 인수를 전달할 수 있습니다. 이 키워드는 호출된 메서드에서 `in` 인수를 수정할 수 없다는 점을 제외하고 [ref](ref.md) 또는 [out](out-parameter-modifier.md) 키워드와 유사합니다. `ref` 인수는 수정할 수 있지만 `out` 인수는 호출된 메서드가 수정해야 하며, 해당 수정 사항은 호출 컨텍스트에서 식별 가능합니다.
 
 [!code-csharp-interactive[cs-in-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/InParameterModifier.cs#1)]  
 
@@ -124,4 +124,4 @@ Method(in i); // passed by readonly reference, explicitly using `in`
 - [C# 프로그래밍 가이드](../../programming-guide/index.md)  
 - [C# 키워드](index.md)  
 - [메서드 매개 변수](method-parameters.md)  
-- [값 형식과 참조 의미 체계](../../reference-semantics-with-value-types.md)  
+- [안전하고 효율적인 코드 작성](../../write-safe-efficient-code.md)  

@@ -4,12 +4,12 @@ description: 할당되지 않은 무시 가능한 변수인 무시 항목에 대
 author: rpetrusha
 ms.author: ronpet
 ms.date: 07/21/2017
-ms.openlocfilehash: d70067194ea9921f8af31fe436d04e2b780e1a73
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 761fb69d3bc774975caf63b8aa665f8c19c0430a
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524205"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50045654"
 ---
 # <a name="discards---c-guide"></a>무시 항목 - C# 가이드
 

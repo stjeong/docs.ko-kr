@@ -1,6 +1,6 @@
 ---
-title: '명령줄 도구를 사용 하 여 F #을 사용 하 여 시작'
-description: '.NET Core CLI를 사용 하 여 모든 운영 체제 (Windows, macOs 또는 Linux)에서 F #에서 간단한 다중 프로젝트 솔루션을 빌드하는 방법에 알아봅니다.'
+title: 명령줄 도구를 사용 하 여 F#을 사용 하 여 시작
+description: .NET Core CLI를 사용 하 여 모든 운영 체제 (Windows, macOs 또는 Linux)에서 F#에서 간단한 다중 프로젝트 솔루션을 빌드하는 방법에 알아봅니다.
 ms.date: 03/26/2018
 ms.openlocfilehash: 8a82970f33c8bbe1b8cdd8fb6499b59b16d3cbf3
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -9,15 +9,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2018
 ms.locfileid: "45673911"
 ---
-# <a name="get-started-with-f-with-the-net-core-cli"></a>.NET Core CLI와 함께 F # 시작
+# <a name="get-started-with-f-with-the-net-core-cli"></a>.NET Core CLI와 함께 F# 시작
 
-이 문서에서는 어떻게 시작할 수 있습니다 F #을 사용한.NET Core CLI를 사용 하 여 모든 운영 체제 (Windows, macOS 또는 Linux)에서 다룹니다. 콘솔 응용 프로그램에 의해 호출 되는 클래스 라이브러리를 사용 하 여 다중 프로젝트 솔루션 빌드를 거치게 됩니다.
+이 문서에서는 어떻게 시작할 수 있습니다 F#을 사용한.NET Core CLI를 사용 하 여 모든 운영 체제 (Windows, macOS 또는 Linux)에서 다룹니다. 콘솔 응용 프로그램에 의해 호출 되는 클래스 라이브러리를 사용 하 여 다중 프로젝트 솔루션 빌드를 거치게 됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 시작 하려면 최신 설치 해야 합니다 [.NET Core SDK](https://www.microsoft.com/net/download/)합니다.
 
-이 문서는 방법을 알고 있다고 가정 하 고 명령줄을 사용 하 여 원하는 텍스트 편집기. 이미 사용 하지 않는 경우 [Visual Studio Code](get-started-vscode.md) F #에 대 한 텍스트 편집기로 유용한 옵션입니다.
+이 문서는 방법을 알고 있다고 가정 하 고 명령줄을 사용 하 여 원하는 텍스트 편집기. 이미 사용 하지 않는 경우 [Visual Studio Code](get-started-vscode.md) F#에 대 한 텍스트 편집기로 유용한 옵션입니다.
 
 ## <a name="build-a-simple-multi-project-solution"></a>간단한 다중 프로젝트 솔루션을 구축
 
@@ -151,4 +151,4 @@ I used to be World but now I'm ""World"" thanks to JSON.NET!
 
 ## <a name="next-steps"></a>다음 단계
 
-다음으로 체크 아웃 합니다 [F # 둘러보기](../tour.md) 다양 한 F # 기능에 자세히 알아보려면 합니다.
+다음으로 체크 아웃 합니다 [F# 둘러보기](../tour.md) 다양 한 F# 기능에 자세히 알아보려면 합니다.

@@ -4,12 +4,12 @@ description: .NET Core에서 프로그램에 대한 런타임 버전을 찾고 �
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/27/2018
-ms.openlocfilehash: 28a76cc17346c40517a21e8dc902bd6c2a84597f
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 5f6ec628a93dd349b003dfc9b89f84ff7a93a05a
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47233207"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48841542"
 ---
 # <a name="net-core-version-selection"></a>.NET Core 버전 선택
 
@@ -31,12 +31,12 @@ ms.locfileid: "47233207"
 
 ## <a name="the-sdk-uses-the-latest-installed-version"></a>SDK에서 설치된 최신 버전 사용
 
-SDK 명령에는 `dotnet new` 및 `dotnet run`이 포함됩니다. `dotnet` CLI는 모든 dotnet 명령의 SDK 버전을 선택해야 합니다. 다음 경우에도 .NET Core CLI는 기본적으로 머신에 설치된 최신 SDK를 사용합니다.
+SDK 명령에는 `dotnet new` 및 `dotnet run`이 포함됩니다. .NET Core CLI는 모든 `dotnet` 명령의 SDK 버전을 선택해야 합니다. 다음의 경우에도 기본적으로 머신에 설치된 최신 SDK를 사용합니다.
 
-* 프로젝트가 이전 버전을 대상으로 하는 경우
-* 최신 버전이 미리 보기 버전인 경우
+* 프로젝트가 이전 버전의 .NET Core 런타임을 대상으로 하는 경우
+* 최신 버전의 .NET Core SDK가 미리 보기 버전인 경우
 
-앱은 이전의 .NET Core 런타임 버전을 대상으로 하면서 최신 SDK 기능과 향상된 기능을 활용할 수 있습니다. 모든 프로젝트에 대해 동일한 SDK 도구를 사용하여 여러 프로젝트에서 .NET Core의 여러 런타임 버전을 대상으로 지정할 수 있습니다.
+이전의 .NET Core 런타임 버전을 대상으로 하면서 최신 SDK 기능과 향상된 기능을 활용할 수 있습니다. 모든 프로젝트에 대해 동일한 SDK 도구를 사용하여 여러 프로젝트에서 .NET Core의 여러 런타임 버전을 대상으로 지정할 수 있습니다.
 
 드물지만 경우에 따라 이전 버전의 SDK를 사용해야 할 수도 있습니다. 해당 버전은 [*global.json* 파일](../tools/global-json.md)에 지정합니다. "최신 버전 사용" 정책은 *global.json*을 사용하여 설치된 최신 버전보다 이전의 .NET Core SDK 버전을 지정한다는 것을 의미합니다.
 

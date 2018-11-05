@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 47643dfa6eda67c93c54d19da41d705a78c27d8c
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 3f6ad77f93236b524e1cd22bf895312920ca4eec
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43484755"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453478"
 ---
 # <a name="net-framework-deployment-guide-for-developers"></a>개발자를 위한 .NET Framework 배포 가이드
 이 항목에서는 앱과 함께 .NET Framework 4.5에서 [!INCLUDE[net_current](../../../includes/net-current-version.md)]까지의 모든 .NET Framework 버전을 설치하려는 개발자를 위한 정보를 제공합니다.
@@ -51,13 +51,13 @@ ms.locfileid: "43484755"
 
 - [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 포인트 릴리스를 설치하려면 관리자 권한이 있어야 합니다.
 
-- [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 는 [!INCLUDE[win8](../../../includes/win8-md.md)] 및 [!INCLUDE[winserver8](../../../includes/winserver8-md.md)]에 포함되었으므로 이러한 운영 체제에 응용 프로그램과 함께 배포할 필요가 없습니다. 마찬가지로 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 은 [!INCLUDE[win81](../../../includes/win81-md.md)] 및 Windows Server 2012 R2에 포함되어 있습니다. .NET Framework 4.5.2는 어느 운영 체제에도 들어 있지 않습니다. [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] 은 Windows 10에 포함되고 [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 은 Windows 10 11월 업데이트에 포함되고 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] Windows 10 1주년 업데이트에 포함되어 있습니다.  .NET Framework 4.7은 Windows 10 작성자 업데이트에 포함되어 있으며, .NET Framework 4.7.1은 Windows 10 가을 작성자 업데이트에 포함되어 있고, .NET Framework 4.7.2는 Windows 10 2018년 4월 업데이트에 포함되어 있습니다. 하드웨어 및 소프트웨어 요구 사항의 전체 목록은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하세요.
+- [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 는 [!INCLUDE[win8](../../../includes/win8-md.md)] 및 [!INCLUDE[winserver8](../../../includes/winserver8-md.md)]에 포함되었으므로 이러한 운영 체제에 응용 프로그램과 함께 배포할 필요가 없습니다. 마찬가지로 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 은 [!INCLUDE[win81](../../../includes/win81-md.md)] 및 Windows Server 2012 R2에 포함되어 있습니다. .NET Framework 4.5.2는 어느 운영 체제에도 들어 있지 않습니다. [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] 은 Windows 10에 포함되고 [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 은 Windows 10 11월 업데이트에 포함되고 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] Windows 10 1주년 업데이트에 포함되어 있습니다.  .NET Framework 4.7은 Windows 10 크리에이터스 업데이트에 포함되어 있고, .NET Framework 4.7.1은 Windows 10 Fall Creators Update에 포함되어 있고, .NET Framework 4.7.2는 Windows 10 2018년 10월 업데이트와 Windows 10 2018년 4월 업데이트에 포함되어 있습니다. 하드웨어 및 소프트웨어 요구 사항의 전체 목록은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하세요.
 
 - [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]부터 사용자는 설치하는 동안 실행 중인 .NET Framework 응용 프로그램의 목록을 보고 쉽게 닫을 수 있습니다. 이렇게 하면 .NET Framework 설치로 인해 시스템이 다시 시작되는 것을 방지할 수 있습니다. [시스템 다시 시작 사례 감소](../../../docs/framework/deployment/reducing-system-restarts.md)를 참조하세요.
 
 - [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 또는 해당 포인트 릴리스 중 하나를 제거하면 기존 [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] 파일도 제거됩니다. [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)](으)로 돌아가려면 해당 프로그램과 업데이트를 다시 설치해야 합니다. ( [.NET Framework 4 설치](https://msdn.microsoft.com/library/5a4x27ek\(v=vs.100\).aspx)참조)
 
-- .NET Framework 4.5 재배포 가능 패키지는 Microsoft에서 생성 및 서명된 파일의 디지털 서명이 중간에 만료되도록 한 디지털 서명의 부적절한 타임스탬프 관련 문제를 해결하기 위해 2012년 10월 9일 업데이트되었습니다. 이전에 2012년 8월 16일자 .NET Framework 4.5 재배포 가능 패키지를 설치한 경우 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=245484)에서 최신 재배포 가능 패키지로 업데이트하는 것이 좋습니다. 이 문제에 대한 자세한 내용은 [Microsoft 보안 공지 2749655](https://technet.microsoft.com/security/advisory/2749655)를 참조하세요.
+- .NET Framework 4.5 재배포 가능 패키지는 Microsoft에서 생성 및 서명된 파일의 디지털 서명이 중간에 만료되도록 한 디지털 서명의 부적절한 타임스탬프 관련 문제를 해결하기 위해 2012년 10월 9일 업데이트되었습니다. 이전에 2012년 8월 16일자 .NET Framework 4.5 재배포 가능 패키지를 설치한 경우 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=245484)에서 최신 재배포 가능 패키지로 업데이트하는 것이 좋습니다. 이 문제에 대한 자세한 내용은 [Microsoft 보안 공지 2749655](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655)를 참조하세요.
 
  시스템 관리자가 .NET Framework 및 시스템 종속성을 네트워크에 배포하는 방법에 대한 자세한 내용은 [관리자용 배포 가이드](../../../docs/framework/deployment/guide-for-administrators.md)를 참조하세요.
 
@@ -247,8 +247,9 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |버전|릴리스 DWORD의 값|
 |-------------|--------------------------------|
+|.NET Framework 4.7.2가 Windows 10 2018년 10월 업데이트에 설치됨|461814|
 |Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803에 설치된 .NET Framework 4.7.2|461808|
-|Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.2|461814|
+|.NET Framework 4.7.2가 Windows 10 2018년 10월 업데이트, Windows 10 2018년 4월 업데이트 및 Windows Server 버전 1803 이외의 모든 OS 버전에 설치됨|461814|
 |Windows 10 Fall Creators Update 및 Windows Server, 버전 1709에 설치된 .NET Framework 4.7.1|461308|
 |Windows 10 Fall Creators Update 및 Windows Server, 버전 1709 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.1|461310|
 |.NET Framework 4.7이 Windows 10 크리에이터 업데이트에 설치됨|460798|
@@ -403,9 +404,9 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 |3082|스페인어 - 스페인(현대 정렬)|es|
 
 ## <a name="see-also"></a>참고 항목
- [관리자를 위한 배포 가이드](../../../docs/framework/deployment/guide-for-administrators.md)  
- [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)  
- [개발자용 .NET Framework 설치](../../../docs/framework/install/guide-for-developers.md)  
- [차단된 .NET Framework 설치 및 제거 문제 해결](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
- [.NET Framework 4.5를 설치하는 동안 시스템 다시 시작 줄이기](../../../docs/framework/deployment/reducing-system-restarts.md)  
- [방법: .NET Framework 4.5 설치 관리자에서 진행률 가져오기](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)
+- [관리자를 위한 배포 가이드](../../../docs/framework/deployment/guide-for-administrators.md)  
+- [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)  
+- [개발자용 .NET Framework 설치](../../../docs/framework/install/guide-for-developers.md)  
+- [차단된 .NET Framework 설치 및 제거 문제 해결](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
+- [.NET Framework 4.5를 설치하는 동안 시스템 다시 시작 줄이기](../../../docs/framework/deployment/reducing-system-restarts.md)  
+- [방법: .NET Framework 4.5 설치 관리자에서 진행률 가져오기](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

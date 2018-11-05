@@ -21,14 +21,12 @@ helpviewer_keywords:
 - network resources, configuring Internet applications
 - Internet, default proxy
 ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: d2f3f015689510237142572f230b53ba7bd393ca
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: bdc63064d3f0d809c196e77a890ba697f9d4deea
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47237048"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50197238"
 ---
 # <a name="configuring-internet-applications"></a>인터넷 응용 프로그램 구성
 [\<system.Net> 요소(네트워크 설정)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) 구성 요소에는 응용 프로그램에 대한 네트워크 구성 정보가 들어 있습니다. [\<system.Net> 요소(네트워크 설정)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) 구성 요소를 사용하여 프록시 서버를 설정하고, 연결 관리 매개 변수를 설정하고, 응용 프로그램에 사용자 지정 인증 및 요청 모듈을 포함할 수 있습니다.  
@@ -37,7 +35,7 @@ ms.locfileid: "47237048"
   
  Microsoft Internet Explorer 설정은 구성 설정과 결합되고 구성 설정이 우선 적용된다는 점을 기억해야 합니다.  
   
- 다음 예제에서는 기본 프록시 서버 주소를 http://proxyserver로 설정하고, 로컬 주소에 프록시를 사용하지 않도록 지정하고, contoso.com 도메인에 있는 서버에 대한 모든 요청이 프록시를 바이패스하도록 지정합니다.  
+ 다음 예제에서는 기본 프록시 서버 주소를 `http://proxyserver`로 설정하고, 로컬 주소에 프록시를 사용하지 않도록 지정하고, contoso.com 도메인에 있는 서버에 대한 모든 요청이 프록시를 바이패스하도록 지정합니다.  
   
 ```xml  
 <configuration>  
@@ -56,7 +54,7 @@ ms.locfileid: "47237048"
 </configuration>  
 ```  
   
- [\<connectionManagement> 요소(네트워크 설정)](../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) 구성 요소를 사용하여 특정 서버 또는 모든 기타 서버에 대해 설정할 수 있는 영구 연결 수를 구성합니다. 다음 예제에서는 응용 프로그램에서 www.contoso.com에 대한 영구 연결 2개, IP 주소 192.168.1.2를 사용한 서버에 대한 영구 연결 4개, 모든 기타 서버에 대한 영구 연결 1개를 사용하도록 구성합니다.  
+ [\<connectionManagement> 요소(네트워크 설정)](../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) 구성 요소를 사용하여 특정 서버 또는 모든 기타 서버에 대해 설정할 수 있는 영구 연결 수를 구성합니다. 다음 예제에서는 응용 프로그램에서 `www.contoso.com`에 대한 영구 연결 2개, IP 주소 192.168.1.2를 사용한 서버에 대한 영구 연결 4개, 모든 기타 서버에 대한 영구 연결 1개를 사용하도록 구성합니다.  
   
 ```xml  
 <configuration>  

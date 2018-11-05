@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/09/2017
-ms.openlocfilehash: e672685666c846ea63bcd9cdb713af58f5e6fb1b
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 9a54679fc28bb2adf803a38fe5e43f67048a4cfd
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106254"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50048478"
 ---
 # <a name="designing-a-microservice-domain-model"></a>마이크로 서비스 도메인 모델 디자인
 
@@ -58,7 +58,7 @@ DDD에서 도메인 엔터티는 엔터티 데이터(메모리에 액세스된 �
 #### <a name="additional-resources"></a>추가 자료
 
 -   **DevIQ. 도메인 엔터티**
-    [*http://deviq.com/entity/*](http://deviq.com/entity/)
+    [*https://deviq.com/entity/*](https://deviq.com/entity/)
 
 -   **Martin Fowler. 도메인 모델**
     [*https://martinfowler.com/eaaCatalog/domainModel.html*](https://martinfowler.com/eaaCatalog/domainModel.html)
@@ -85,7 +85,7 @@ Eric Evans의 지적처럼 "많은 개체는 개념적 ID를 갖고 있지 않�
     [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
 -   **값 개체**
-    [*http://deviq.com/value-object/*](http://deviq.com/value-object/)
+    [*https://deviq.com/value-object/*](https://deviq.com/value-object/)
 
 -   **테스트 기반 개발에서 값 개체**
     [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
@@ -137,10 +137,10 @@ public class Order : Entity, IAggregateRoot
     [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_1.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf)
 
 -   **Vaughn Vernon. 효과적인 집계 디자인 - 2부: 집계 연동하기**
-    *<https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf> *
+    [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf)
 
--   **Vaughn Vernon. 효과적인 집계 디자인 - 3부: 검색을 통해 정보 얻기**
-    *<https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf> *
+-   **Vaughn Vernon. 효과적인 집계 디자인 - 3부: 검색을 통해 인사이트 얻기**
+    [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf)
 
 -   **Sergey Grybniak. DDD 전술적 디자인 패턴**
     [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
@@ -149,8 +149,7 @@ public class Order : Entity, IAggregateRoot
     [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
 
 -   **DevIQ. 집계 패턴**
-    [*http://deviq.com/aggregate-pattern/*](http://deviq.com/aggregate-pattern/)
-
+    [*https://deviq.com/aggregate-pattern/*](https://deviq.com/aggregate-pattern/)
 
 >[!div class="step-by-step"]
 [이전](ddd-oriented-microservice.md)

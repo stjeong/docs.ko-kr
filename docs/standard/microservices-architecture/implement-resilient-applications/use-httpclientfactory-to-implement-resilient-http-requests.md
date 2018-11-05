@@ -4,12 +4,12 @@ description: HttpClientFactory는 응용 프로그램에서 사용할 `HttpClien
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 07/03/2018
-ms.openlocfilehash: 6fd30a9358ca9c07b2a6e2ec591e4c5d7db54ccb
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f2be3daf1b04613fa8afc1d17cbcbca2d338e062
+ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513215"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347931"
 ---
 # <a name="use-httpclientfactory-to-implement-resilient-http-requests"></a>HttpClientFactory를 사용하여 복원력 있는 HTTP 요청 구현
 
@@ -21,7 +21,7 @@ ms.locfileid: "43513215"
 
 첫 번째 문제로, 이 클래스는 삭제할 수 있지만, `HttpClient` 개체를 삭제하는 경우에도 기본 소켓이 즉시 해제되지 않고 '소켓 소모'라는 심각한 문제가 발생할 수 있기 때문에 `using` 문과 함께 사용하는 것이 최선의 선택이 아니라는 것입니다. 이 문제에 대한 자세한 내용은 [HttpClient를 잘못 사용하고 있으며 소프트웨어가 불안정해지고 있습니다](https://aspnetmonsters.com/2016/08/2016-08-27-httpclientwrong/) 블로그 게시물을 참조하세요.
 
-따라서 `HttpClient`는 한 번 인스턴스화되어 응용 프로그램의 수명 동안 다시 사용됩니다. 모든 요청에 대해 `HttpClient` 클래스를 인스턴스화하면 과도한 부하에서 사용할 수 있는 소켓 수가 소진됩니다. 이 문제로 인해 `SocketException` 오류가 발생합니다. 이 문제를 해결하는 데 가능한 방법은 [HttpClient 사용에 관한 Microsoft 문서](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/console-webapiclient)에서 설명한 대로 `HttpClient` 개체를 싱글톤 또는 정적으로 만드는 것을 기반으로 합니다. 
+따라서 `HttpClient`는 한 번 인스턴스화되어 응용 프로그램의 수명 동안 다시 사용됩니다. 모든 요청에 대해 `HttpClient` 클래스를 인스턴스화하면 과도한 부하에서 사용할 수 있는 소켓 수가 소진됩니다. 이 문제로 인해 `SocketException` 오류가 발생합니다. 이 문제를 해결하는 데 가능한 방법은 [HttpClient 사용에 관한 Microsoft 문서](https://docs.microsoft.com/dotnet/csharp/tutorials/console-webapiclient)에서 설명한 대로 `HttpClient` 개체를 싱글톤 또는 정적으로 만드는 것을 기반으로 합니다. 
 
 하지만 `HttpClient`에는 싱글톤 또는 정적 개체로 사용할 때 발생할 수 있는 두 번째 문제가 있습니다. 이 경우 [.NET Core GitHub 리포지토리에서 이 문제](https://github.com/dotnet/corefx/issues/11224)에 대해 설명한 대로 싱글톤 또는 정적 `HttpClient`는 DNS 변경 내용을 따르지 않습니다. 
 
@@ -71,7 +71,7 @@ AddHttpClient()를 사용하여 형식화된 클라이언트 클래스를 추가
 
 ### <a name="httpclient-lifetimes"></a>HttpClient 수명
 
-IHttpClientFactory에서 `HttpClient` 개체를 가져올 때마다 `HttpClient`의 새 인스턴스가 반환됩니다. 형식화된 클라이언트에 지정되는 각 이름에는 HttpMessageHandler**가 있습니다. I`HttpClientFactory`는 리소스 소비를 줄이기 위해 팩터리에서 만든 HttpMessageHandler 인스턴스를 풀링합니다. 수명이 만료되지 않은 경우 HttpMessageHandler 인스턴스는 새 `HttpClient` 인스턴스를 만들 때 풀에서 다시 사용할 수 있습니다.
+IHttpClientFactory에서 `HttpClient` 개체를 가져올 때마다 `HttpClient`의 새 인스턴스가 반환됩니다. 형식화된 클라이언트에 지정되는 각 이름에는 HttpMessageHandler**가 있습니다. `IHttpClientFactory`는 리소스 소비를 줄이기 위해 팩터리에서 만든 HttpMessageHandler 인스턴스를 풀링합니다. 수명이 만료되지 않은 경우 HttpMessageHandler 인스턴스는 새 `HttpClient` 인스턴스를 만들 때 풀에서 다시 사용할 수 있습니다.
 
 각 처리기가 일반적으로 자체 기본 HTTP 연결을 관리하고 필요 이상으로 처리기를 만드는 것은 연결 지연을 발생시킬 수 있으므로 처리기의 풀링이 바람직합니다. 또한 일부 처리기는 무한정으로 연결을 열어 놓아 처리기가 DNS 변경에 대응하는 것을 방지할 수 있습니다.
 
@@ -155,7 +155,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 ## <a name="additional-resources"></a>추가 자료
 
 -   **.NET Core 2.1에서 HttpClientFactory 사용**
-    [*https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
+    [*https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
 
 
 -   **HttpClientFactory GitHub 리포지토리**

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - float keyword [C#]
 - floating-point numbers [C#], float keyword
 ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
-ms.openlocfilehash: 98f89ba3d79f7679b69ce10fd875b3caf69c5257
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: da697aa6f1f429418a69d9f58a13f46a3da9ac74
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47157706"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50187181"
 ---
 # <a name="float-c-reference"></a>float(C# 참조)
 
@@ -21,7 +21,7 @@ ms.locfileid: "47157706"
 
 |형식|근사 범위|전체 자릿수|.NET 형식|  
 |----------|-----------------------|---------------|-------------------------|  
-|`float`|±1.5 x 10<sup>−45</sup> ~ ±3.4 x 10<sup>38</sup>|7개의 자릿수|<xref:System.Single?displayProperty=nameWithType>|  
+|`float`|±1.5 x 10<sup>−45</sup> ~ ±3.4 x 10<sup>38</sup>|~6-9개 자릿수|<xref:System.Single?displayProperty=nameWithType>|  
 
 ## <a name="literals"></a>리터럴
 
@@ -51,7 +51,7 @@ float x = 3.5F;
 
 - 한정된 0이 아닌 값의 집합
 
-이러한 값에 대한 자세한 내용은 [IEEE](http://www.ieee.org) 웹 사이트에서 제공되는 이진 부동 소수점 연산에 대한 IEEE 표준을 참조하세요.
+이러한 값에 대한 자세한 내용은 [IEEE](https://www.ieee.org) 웹 사이트에서 제공되는 이진 부동 소수점 연산에 대한 IEEE 표준을 참조하세요.
 
 ## <a name="example"></a>예
 

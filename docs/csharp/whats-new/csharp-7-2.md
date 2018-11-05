@@ -2,12 +2,12 @@
 title: C# 7.2의 새로운 기능
 description: C# 7.2의 새로운 기능에 대한 개요입니다.
 ms.date: 08/16/2017
-ms.openlocfilehash: 87fd67b37a31a02960334a2b2a325724e0cc2c73
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 93b0a5281db841abdb8de0865dfe4b13be6d9ee2
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47400805"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181175"
 ---
 # <a name="whats-new-in-c-72"></a>C# 7.2의 새로운 기능
 
@@ -20,7 +20,7 @@ C# 7.2는 [언어 버전 선택](../language-reference/configure-language-versio
 
 이 릴리스의 새로운 언어 기능은 다음과 같습니다.
 
-* [값 형식과 참조 의미 체계](#reference-semantics-with-value-types)
+* [안전하고 효율적인 코드를 작성하는 방법](#safe-efficient-code-enhancements)
   - 참조 의미 체계를 사용하는 값 유형으로 작동할 수 있는 구문 개선의 조합입니다.
 * [뒤에 오지 않는 명명된 인수](#non-trailing-named-arguments)
   - 명명된 인수 뒤에는 위치 인수가 올 수 있습니다.
@@ -29,7 +29,7 @@ C# 7.2는 [언어 버전 선택](../language-reference/configure-language-versio
 * [`private protected` 액세스 한정자](#private-protected-access-modifier)
   - `private protected` 액세스 한정자는 동일한 어셈블리의 파생된 클래스에 대해 액세스를 사용합니다.
 
-## <a name="reference-semantics-with-value-types"></a>값 형식과 참조 의미 체계
+## <a name="safe-efficient-code-enhancements"></a>안전하고 효율적인 코드 개선 사항
 
 7.2에 도입된 언어 기능을 사용하면 참조 의미 체계를 사용하면서 값 형식을 처리할 수 있습니다. 참조 유형 사용과 관련된 메모리를 할당하지 않으면서 값 형식 복사를 최소화하여 성능을 향상시키도록 설계되어 있습니다. 포함된 기능은 다음과 같습니다.
 
@@ -38,7 +38,7 @@ C# 7.2는 [언어 버전 선택](../language-reference/configure-language-versio
  - `readonly struct` 선언은 구조체가 변경 가능하지 않으며 `in` 매개 변수로서 멤버 메서드로 전달되어야 함을 나타냅니다. 기존 구조체 선언에 `readonly` 한정자를 추가하는 것은 [이진 호환 가능 변경](version-update-considerations.md#binary-compatible-changes)입니다.
  - `ref struct` 선언은 구조체 유형이 관리되는 메모리에 직접 액세스하고 항상 스택에 할당되어야 함을 나타냅니다. 기존 `struct` 선언에 `ref` 한정자를 추가하는 것은 [호환되지 않는 변경](version-update-considerations.md#incompatible-changes)입니다. `ref struct`는 클래스의 멤버가 되거나 힙에 할당될 수 있는 다른 위치에서 사용될 수 없습니다.
 
-[참조 의미 체계와 함께 값 형식 사용](../reference-semantics-with-value-types.md)에서 모든 변경 사항에 대해 자세히 읽을 수 있습니다.
+[안전하고 효율적인 코드 작성](../write-safe-efficient-code.md)에서 모든 변경 내용을 자세히 읽을 수 있습니다.
 
 ## <a name="non-trailing-named-arguments"></a>뒤에 오지 않는 명명된 인수
 

@@ -4,12 +4,12 @@ description: .NET에서 서버 앱을 구축할 때 고려해야 할 .NET 구현
 author: cartermp
 ms.author: mairaw
 ms.date: 06/19/2018
-ms.openlocfilehash: dbb5bd21d2fa43167a9624be2baec3f591d10920
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 01e7222ccd4a764f75481e58d4ac305daadfe1a8
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864964"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50202239"
 ---
 # <a name="choosing-between-net-core-and-net-framework-for-server-apps"></a>서버 앱에 대해 .NET Core와 .NET Framework 중에 선택
 
@@ -87,7 +87,7 @@ Docker 컨테이너는 고유한 Linux 또는 Windows 인프라나 [Azure Contai
 
 * ASP.NET Web Forms 응용 프로그램: ASP.NET Web Forms는 .NET Framework에서만 사용할 수 있습니다. ASP.NET Core는 ASP.NET Web Forms에 사용할 수 없습니다. .NET Core에 ASP.NET Web Forms를 적용할 계획은 없습니다.
 
-* ASP.NET 웹 페이지 응용 프로그램: ASP.NET 웹 페이지는 ASP.NET Core에 포함되지 않습니다. ASP.NET Core [Razor 페이지](/aspnet/core/mvc/razor-pages/)는 웹 페이지와 많은 유사점이 있습니다.
+* ASP.NET 웹 페이지 응용 프로그램: ASP.NET 웹 페이지는 ASP.NET Core에 포함되지 않습니다. 
 
 * WCF 서비스 구현. .NET Core에서 WCF 서비스를 사용할 수 있는 [WCF-클라이언트 라이브러리](https://github.com/dotnet/wcf)가 있더라도 WCF 서버 구현은 현재 .NET Framework에서만 사용할 수 있습니다. 이 시나리오는 .NET Core에 대한 현재 계획의 일부가 아니지만 차후에 고려될 예정입니다.
 
@@ -104,6 +104,7 @@ Docker 컨테이너는 고유한 Linux 또는 Windows 인프라나 [Azure Contai
 ## <a name="see-also"></a>참고 항목
 
 * [ASP.NET 및 ASP.NET Core 중에서 선택](/aspnet/core/choose-aspnet-framework)
+* [.NET Framework를 대상으로 하는 ASP.NET Core](/aspnet/core#aspnet-core-targeting-net-framework)
 * [대상 프레임워크](frameworks.md)
 * [.NET Core 가이드](../core/index.md)  
 * [.NET Framework에서 .NET Core로 이식](../core/porting/index.md)  

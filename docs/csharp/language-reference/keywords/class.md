@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - class keyword [C#]
 ms.assetid: b95d8815-de18-4c3f-a8cc-a0a53bdf8690
-ms.openlocfilehash: 52ca30fe29025e637005b95ebc14fce8f320e8f4
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 3f30fb473b486efc8381faa9076b98763935b0ae
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44084756"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086066"
 ---
 # <a name="class-c-reference"></a>class(C# 참조)
 
@@ -39,7 +39,7 @@ C#에서는 단일 상속만 허용됩니다. 즉, 한 클래스는 하나의 �
 
 다른 클래스 내에 중첩되는 것이 아니라 네임스페이스 내에서 직접 선언되는 클래스는 [public](../../../csharp/language-reference/keywords/public.md) 또는 [internal](../../../csharp/language-reference/keywords/internal.md)일 수 있습니다. 기본적으로 클래스는 `internal`입니다.
 
-중첩 클래스를 포함한 클래스 멤버는 [public](../../../csharp/language-reference/keywords/public.md), `protected internal`, [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), [private](../../../csharp/language-reference/keywords/private.md) 또는 `private protected`일 수 있습니다. 기본적으로 멤버는 [private](../../../csharp/language-reference/keywords/private.md)입니다.
+중첩 클래스를 포함한 클래스 멤버는 [public](public.md), [protected internal](protected-internal.md), [protected](protected.md), [internal](internal.md), [private](private.md) 또는 [private protected](private-protected.md)일 수 있습니다. 기본적으로 멤버는 `private`입니다.
 
 자세한 내용은 [액세스 한정자](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)를 참조하세요.
 

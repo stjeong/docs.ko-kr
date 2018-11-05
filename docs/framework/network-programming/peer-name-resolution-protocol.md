@@ -2,14 +2,12 @@
 title: 피어 이름 확인 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: f17c5e7e2fa7a5eba66f0b9dd8c950a7464eea8e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: f04b0b2e27c03ed477c6ceb10a5cbe41e1c7ce7c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196758"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50185159"
 ---
 # <a name="peer-name-resolution-protocol"></a>피어 이름 확인 프로토콜
 피어 투 피어 환경에서 각 피어는 이름 또는 기타 유형의 식별자로 서로의 네트워크 위치(주소, 프로토콜 및 포트)를 확인하기 위해 고유한 이름 확인 시스템을 사용합니다. 과거에는 기본적으로 일시적이었던 연결과 DNS(Domain Name System)의 다른 단점으로 인해 피어 이름 확인이 복잡했습니다.  
@@ -20,7 +18,7 @@ ms.locfileid: "47196758"
   
  보안과 관련하여 피어 이름을 보안됨(보호) 또는 보안되지 않음(보호되지 않음)으로 게시할 수 있습니다. PNRP에서는 공개 키 암호화를 사용하여 보안 피어 이름을 스푸핑으로부터 보호합니다. 컴퓨터와 서비스 모두 PNRP를 사용하여 이름을 지정할 수 있습니다.  
   
--   피어 이름 확인 프로토콜은 다음 속성을 보여 줍니다.  
+피어 이름 확인 프로토콜은 다음 속성을 보여 줍니다.  
   
 -   분산되어 있으며 거의 완전히 서버가 없습니다. 서버는 부트스트랩 프로세스에만 필요합니다.  
   
@@ -30,21 +28,13 @@ ms.locfileid: "47196758"
   
 -   PNRP를 통한 이름 확인은 서비스를 위한 이름 확인도 허용하여 컴퓨터 이상으로 확대됩니다.  
   
--  
-  
 ## <a name="the-systemnetpeertopeer-namespace"></a>System.Net.PeerToPeer 네임스페이스  
   
 -   PNRP 기능은 .NET Framework 버전 3.5에 있는 <xref:System.Net.PeerToPeer> 네임스페이스를 통해 정의됩니다. 사용 가능한 PNRP 서비스로 피어 이름을 등록하고 확인하는 데 사용할 수 있는 형식 집합을 제공합니다.  
   
--  
-  
 -   (PNRP 및 사용자 지정 피어 확인자는 <xref:System.ServiceModel.PeerResolvers> 네임스페이스에 제공된 형식을 사용하여 만들고 인스턴스화할 수 있습니다.)  
   
--  
-  
 -   사용 가능한 PNRP 서비스로 이름을 등록하고 해결하는 데 사용하는 기본 형식은 다음과 같습니다.  
-  
--  
   
 -   <xref:System.Net.PeerToPeer.Cloud>: 해당 범위를 포함하여 사용 가능한 PNRP 클라우드를 설명하는 정보를 정의합니다.  
   
@@ -56,12 +46,8 @@ ms.locfileid: "47196758"
   
 -   <xref:System.Net.PeerToPeer.PeerNameResolver>: 확인할 동기 및 비동기 메서드를 포함하여 피어 이름을 네트워크 엔드포인트로 확인하는 프로세스를 정의합니다.  
   
--  
-  
--  
-  
 ## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.PeerResolvers>  
- <xref:System.Net.PeerToPeer>  
- [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)  
- [PeerToPeer 기술 샘플](https://go.microsoft.com/fwlink/?LinkID=179571)
+- <xref:System.ServiceModel.PeerResolvers>  
+- <xref:System.Net.PeerToPeer>  
+- [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)
+- [PeerToPeer 기술 샘플](https://go.microsoft.com/fwlink/?LinkID=179571)

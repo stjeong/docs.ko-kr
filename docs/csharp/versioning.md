@@ -3,12 +3,12 @@ title: C# 버전 관리 - C# 가이드
 description: C# 및 .NET에서 버전 관리의 작동 방식 이해
 ms.date: 01/08/2017
 ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
-ms.openlocfilehash: 949b7414116169cada62b48392f37809f26d7ff9
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: af81e5a8ad3165ce99a823f8b263cc798d5b6d2c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46585935"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183232"
 ---
 # <a name="versioning-in-c"></a>C#으로 버전 관리 #
 
@@ -20,7 +20,7 @@ ms.locfileid: "46585935"
 
 ### <a name="semantic-versioning"></a>유의적 버전
 
-[유의적 버전](http://semver.org/)(줄여서 SemVer)은 특정 중요 시점 이벤트를 나타내기 위해 라이브러리의 버전에 적용되는 명명 규칙입니다.
+[유의적 버전](https://semver.org/)(줄여서 SemVer)은 특정 중요 시점 이벤트를 나타내기 위해 라이브러리의 버전에 적용되는 명명 규칙입니다.
 라이브러리에 제공하는 버전 정보를 이용해 개발자가 동일한 라이브러리의 이전 버전을 사용하는 프로젝트와의 호환성을 확인하는 것이 가장 바람직합니다.
 
 SemVer에 대한 가장 기본적인 접근법은 3개 구성 요소 형식 `MAJOR.MINOR.PATCH`입니다. 여기서:

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dbc5909a3d4ea1ba2747fcc694bf1f34e20e7d2b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 612550dd2e3cda4e3549bfc14c9ada712c6653bf
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47235889"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50197563"
 ---
 # <a name="regular-expression-options"></a>정규식 옵션
 <a name="Top"></a> 기본적으로 입력 문자열을 정규식 패턴의 리터럴 문자와 비교할 때는 대/소문자를 구분하고, 정규식 패턴의 공백은 리터럴 공백 문자로 해석되며, 정규식의 캡처링 그룹은 명시적 및 암시적으로 명명됩니다. 정규식 옵션을 지정하여 기본 정규식 동작의 이러한 측면과 몇 가지 다른 측면을 수정할 수 있습니다. 다음 테이블에 나열되어 있는 이러한 옵션은 정규식 패턴의 일부로 인라인으로 포함되거나, <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> 클래스 생성자 또는 정적 패턴 일치 메서드에 <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> 열거형 값으로 제공될 수 있습니다.  

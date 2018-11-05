@@ -1,12 +1,12 @@
 ---
 title: '연습: C#을 사용하여 개체 유지'
 ms.date: 04/26/2018
-ms.openlocfilehash: c3cff57f008eb524c2d2bec406431e4c41dca617
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 85c447ae43086cc789338e77555b7400a523662a
+ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47231494"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49086079"
 ---
 # <a name="walkthrough-persisting-an-object-using-c"></a>연습: C#을 사용하여 개체 유지 #
 
@@ -28,6 +28,8 @@ serialization을 사용하면 인스턴스 간에 개체의 데이터를 유지�
 
 > [!TIP]
 > 코드 편집기를 설치해야 하나요? [Visual Studio](https://visualstudio.com/downloads)를 체험해 보세요.
+
+* 예제는 C# 7.3이 필요합니다. [C# 언어 버전 선택](../../../language-reference/configure-language-version.md)을 참조하세요. 
 
 [.NET 샘플 GitHub 리포지토리에서](https://github.com/dotnet/samples/tree/master/csharp/serialization) 온라인으로 샘플 코드를 검사할 수 있습니다.
 

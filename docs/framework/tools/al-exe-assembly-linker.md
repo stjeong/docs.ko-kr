@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: b5382965-0053-47cf-b92f-862860275a01
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5a9789669f6d896bfbaf4ccf5cbd0eccdd710980
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b4fe4c4f89056ae57c3516149a41a5a3bea4fcd2
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399719"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48848020"
 ---
 # <a name="alexe-assembly-linker"></a>Al.exe(어셈블리 링커)
 
 어셈블리 링커는 모듈 또는 리소스 파일인 하나 이상의 파일에서 어셈블리 매니페스트가 있는 파일을 생성합니다. 모듈이란 어셈블리 매니페스트가 없는 IL(Intermediate Language) 파일입니다.
 
 > [!NOTE]
-> [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)]부터 C# 및 Visual Basic 컴파일러가 모두 win32 매니페스트를 어셈블리에 자동으로 포함시킵니다. 자세한 내용은 [/win32manifest(C# 컴파일러 옵션)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md)을 참조하세요.
+> Visual Studio 2008부터 C# 및 Visual Basic 컴파일러가 모두 Win32 매니페스트를 어셈블리에 자동으로 포함합니다. 자세한 내용은 [/win32manifest(C# 컴파일러 옵션)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md)을 참조하세요.
 
 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
 
@@ -174,9 +174,9 @@ al t2.netmodule /target:exe /out:t2a.exe /main:MyClass.Main
 ```
 
 ## <a name="see-also"></a>참고 항목
- 
-[도구](../../../docs/framework/tools/index.md)  
-[*Sn.exe* (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)(Sn.exe(강력한 이름 도구))  
-[*Gacutil.exe* (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)(Gacutil.exe(전역 어셈블리 캐시 도구))  
-[어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)  
-[명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+
+- [도구](../../../docs/framework/tools/index.md)
+- [*Sn.exe* (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)(Sn.exe(강력한 이름 도구))
+- [*Gacutil.exe* (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)(Gacutil.exe(전역 어셈블리 캐시 도구))
+- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

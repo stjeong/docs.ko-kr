@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.openlocfilehash: b443f1b066d3c8ef0e798206510616aace32b377
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: bba0b93ee7e68ae0320460c6a45ab252ac34c326
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45617145"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48873501"
 ---
 # <a name="creating-a-simple-data-driven-crud-microservice"></a>단순 데이터 기반 CRUD 마이크로 서비스 만들기
 
@@ -393,7 +393,7 @@ public class Startup
   http://<your-root-url>/swagger/
 ```
 
-앞서 본 것처럼 URL에 대해 Swashbuckle에서 생성된 UI는 http://&lt;루트 URL&gt;/swagger/ui과 같습니다. 그림 8-9에서는 모든 API 메서드를 테스트하는 방법을 확인할 수 있습니다.
+앞서 본 것처럼 URL에 대해 Swashbuckle에서 생성된 UI는 `http://<your-root-url>/swagger/ui`와 같습니다. 그림 8-9에서는 모든 API 메서드를 테스트하는 방법을 확인할 수 있습니다.
 
 ![](./media/image10.png)
 

@@ -1,6 +1,6 @@
 ---
 title: + 연산자(C# 참조)
-ms.date: 07/20/2015
+ms.date: 10/22/2018
 f1_keywords:
 - +_CSharpKeyword
 helpviewer_keywords:
@@ -8,34 +8,57 @@ helpviewer_keywords:
 - concatenation operator [C#]
 - addition operator [C#]
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
-ms.openlocfilehash: b49694bc8937c58bd295f0f8e57c378802d0dfb9
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: ae2774d96bc50afa271fffdea445e640e68c3647
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47232386"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50192306"
 ---
 # <a name="-operator-c-reference"></a>+ 연산자(C# 참조)
-`+` 연산자는 단항 또는 이항 연산자로 작동할 수 있습니다.  
-  
-## <a name="remarks"></a>설명  
- 단항 `+` 연산자는 모든 숫자 형식에 대해 미리 정의됩니다. 숫자 형식에 대한 단항 `+` 연산의 결과는 피연산자의 값입니다.  
-  
- 이항 `+` 연산자는 숫자 및 문자열 형식에 대해 미리 정의됩니다. 숫자 형식의 경우 +는 두 피연산자의 합계를 계산합니다. 피연산자 중 하나 또는 둘 다가 문자열 형식이면 +는 피연산자의 문자열 표현을 연결합니다.  
-  
- 대리자 형식도 대리자 연결을 수행하는 이항 `+` 연산자를 제공합니다.  
-  
- 사용자 정의 형식은 단항 `+` 및 이항 `+` 연산자를 오버로드할 수 있습니다. 정수 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다. 자세한 내용은 [연산자(C# 참조)](../../../csharp/language-reference/keywords/operator.md)를 참조하세요.  
-  
-## <a name="example"></a>예  
- [!code-csharp[csRefOperators#28](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-operator_1.cs)]  
-  
-## <a name="c-language-specification"></a>C# 언어 사양  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+
+`+` 연산자는 두 개의 형식인 단항 더하기 연산자 또는 이항 더하기 연산자에서 지원됩니다.
+
+사용자 정의 형식은 단항 및 이항 `+` 연산자를 [오버로드](../keywords/operator.md)할 수 있습니다. 이항 `+` 연산자가 오버로드되면 [더하기 대입 연산자](addition-assignment-operator.md) `+=`도 암시적으로 오버로드됩니다.
+
+## <a name="unary-plus-operator"></a>단항 더하기 연산자
+
+단항 `+` 연산자는 피연산자의 값을 반환합니다. 모든 숫자 형식에서 지원됩니다.
+
+## <a name="numeric-addition"></a>숫자 더하기
+
+숫자 형식의 경우 `+` 연산자는 해당 피연산자의 합계를 계산합니다.
+
+[!code-csharp-interactive[numeric addition](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddNumerics)]
+
+## <a name="string-concatenation"></a>문자열 연결
+
+피연산자 중 하나 또는 둘 다가 [문자열](../keywords/string.md) 형식이면 `+` 연산자는 피연산자의 문자열 표현을 연결합니다.
+
+[!code-csharp-interactive[string concatenation](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddStrings)]
+
+C# 6부터 [문자열 보간](../tokens/interpolated.md)은 문자열 형식을 지정하는 더욱 편리한 방법을 제공합니다.
+
+[!code-csharp-interactive[string interpolation](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#UseStringInterpolation)]
+
+## <a name="delegate-combination"></a>대리자 조합
+
+[대리자](../keywords/delegate.md) 형식의 경우 `+` 연산자는 호출될 때 첫 번째 피연산자를 호출한 후 두 번째 피연산자를 호출하는 새 대리자 인스턴스를 반환합니다. 피연산자 중 하나라도 `null`이면 `+` 연산자는 다른 피연산자(`null`일 수도 있음)의 값을 반환합니다. 다음 예제는 `+` 연산자를 사용하여 대리자를 결합하는 방법을 보여 줍니다.
+
+[!code-csharp-interactive[delegate combination](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddDelegates)]
+
+대리자 형식에 대한 자세한 내용은 [대리자](../../programming-guide/delegates/index.md)를 참조하세요.
+
+## <a name="c-language-specification"></a>C# 언어 사양
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [단항 더하기 연산자](~/_csharplang/spec/expressions.md#unary-plus-operator) 및 [더하기 연산자](~/_csharplang/spec/expressions.md#addition-operator) 섹션을 참조하세요.
+
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 연산자](../../../csharp/language-reference/operators/index.md)  
-- [연산자(C# 참조)](../../../csharp/language-reference/keywords/operator.md)
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 연산자](index.md)
+- [문자열 보간](../tokens/interpolated.md)
+- [방법: 여러 문자열 연결](../../how-to/concatenate-multiple-strings.md)
+- [대리자](../../programming-guide/delegates/index.md)
+- [Checked 및 Unchecked](../keywords/checked-and-unchecked.md)

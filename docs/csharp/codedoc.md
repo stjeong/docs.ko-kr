@@ -3,12 +3,12 @@ title: XML 주석을 사용하여 코드 문서화
 description: XML 문서 주석을 사용하여 코드를 문서화하고 컴파일 시간에 XML 문서 파일을 생성하는 방법을 알아봅니다.
 ms.date: 02/14/2017
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
-ms.openlocfilehash: e211543a6a5cc5f6f29d8c195492b474eb24a38d
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 09e6b4aa75aababcebba96693d6e73b29a30fc6a
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397061"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453270"
 ---
 # <a name="documenting-your-code-with-xml-comments"></a>XML 주석을 사용하여 코드 문서화
 
@@ -51,7 +51,7 @@ XML 문서 주석에는 삼중 슬래시(`///`) 및 XML 형식의 주석 본문�
 샘플 라이브러리는 `int` 및 `double` 데이터 형식에서 네 가지 주요 산술 연산인 `add`, `subtract`, `multiply` 및 `divide`를 지원합니다.
 
 이제 라이브러리를 사용하지만 소스 코드에 대한 액세스 권한이 없는 타사 개발자를 위해 코드에서 API 참조 문서를 만들 수 있습니다.
-앞에서 설명한 대로 XML 문서 태그를 사용하여 이 작업을 수행할 수 있습니다. 이제 C# 컴파일러에서 지원하는 표준 XML 태그를 소개합니다.
+앞에서 언급한 대로 XML 문서 태그를 사용하여 이 작업을 수행할 수 있습니다. 이제 C# 컴파일러가 지원하는 표준 XML 태그를 소개하겠습니다.
 
 ### <a name="ltsummarygt"></a>&lt;요약&gt;
 

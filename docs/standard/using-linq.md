@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
-ms.openlocfilehash: 4e6e361666b6b6ae36b7d4bf02af55a379c8e16e
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 8ce7f39d78006765a49bbd4e3d46c611761a4bd1
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087032"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50181737"
 ---
 # <a name="linq-language-integrated-query"></a>LINQ(Language-Integrated Query)
 
@@ -201,7 +201,7 @@ var results = DirectionsProcessor.GetDirections(start, end)
               .ThenBy(direction => direction.EstimatedTime);
 ```
 
-*   마지막으로, 고급 샘플: 동일한 형식을 가진 두 인스턴스의 속성 값이 같은지 확인([이 StackOverflow 게시물](http://stackoverflow.com/a/844855)에서 가져와 수정함):
+*   마지막으로, 고급 샘플: 동일한 형식을 가진 두 인스턴스의 속성 값이 같은지 확인([이 StackOverflow 게시물](https://stackoverflow.com/a/844855)에서 가져와 수정함):
 
 ```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
@@ -224,7 +224,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 
 ## <a name="plinq"></a>PLINQ
 
-PLINQ 또는 병렬 LINQ는 LINQ 식에 대한 병렬 실행 엔진입니다. 즉, 여러 스레드 간에 LINQ 정규식을 일반적으로 병렬화할 수 있습니다. 이 작업은 식 앞의 `AsParallel()` 호출을 통해 수행됩니다.
+PLINQ 또는 병렬 LINQ는 LINQ 식에 대한 병렬 실행 엔진입니다. 즉, 여러 스레드 간에 LINQ 정규식을 일반적으로 병렬 처리할 수 있습니다. 이 작업은 식 앞의 `AsParallel()` 호출을 통해 수행됩니다.
 
 다음을 살펴보세요.
 

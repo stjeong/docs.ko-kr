@@ -3,12 +3,12 @@ title: 식 트리 변환
 description: 식 트리의 각 노드를 방문하고 해당 식 트리의 수정된 복사본을 작성하는 방법을 알아봅니다.
 ms.date: 06/20/2016
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
-ms.openlocfilehash: bd4aec2ef34e4dc972ae867c6b5070f92dcbc498
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 6fe35983119bba443ed9132ff0c52361e1f07da8
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45971898"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200537"
 ---
 # <a name="translating-expression-trees"></a>식 트리 변환
 

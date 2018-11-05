@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.openlocfilehash: 6ce9e40334e80e8bd17ce2f3d2569a1e3c39d09e
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 981a20ca80f0652a9c3597d36b960d6b44d97912
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003752"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50195829"
 ---
 # <a name="implement-background-tasks-in-microservices-with-ihostedservice-and-the-backgroundservice-class"></a>IHostedService 및 BackgroundService 클래스를 사용하여 마이크로 서비스에서 백그라운드 작업 구현
 
@@ -236,7 +236,7 @@ WebHost.CreateDefaultBuilder(args)
 
 ### <a name="deployment-considerations-and-takeaways"></a>배포 고려 사항 및 요점
 
-ASP.NET Core `WebHost` 또는 .NET Core `Host`를 배포하는 방법은 최종 솔루션에 영향을 줄 수 있습니다. 예를 들어 IIS에서 `WebHost` 또는 일반 Azure App Service를 배포하는 경우 호스트는 앱 풀 재활용으로 인해 종료될 수 있습니다. 하지만 호스트를 컨테이너로 Kubernetes 또는 Service Fabric과 같은 오케스트레이터에 배포하는 경우 호스트의 실제 인스턴스의 보증된 수를 제어할 수 있습니다. 또한 Azure Functions와 같은 해당 시나리오에 대해 특별히 만들어진 클라우드에서 다른 방법을 고려할 수 있습니다. 
+ASP.NET Core `WebHost` 또는 .NET Core `Host`를 배포하는 방법은 최종 솔루션에 영향을 줄 수 있습니다. 예를 들어 IIS에서 `WebHost` 또는 일반 Azure App Service를 배포하는 경우 호스트는 앱 풀 재활용으로 인해 종료될 수 있습니다. 하지만 호스트를 컨테이너로 Kubernetes 또는 Service Fabric과 같은 오케스트레이터에 배포하는 경우 호스트의 실제 인스턴스의 보증된 수를 제어할 수 있습니다. 또한 Azure Functions와 같은 해당 시나리오에 대해 특별히 만들어진 클라우드에서 다른 방법을 고려할 수 있습니다. 마지막으로 서비스가 항상 실행 중이어야 하고 Windows Server에 배포하는 경우 Windows 서비스를 사용할 수 있습니다.
 
 하지만 앱 풀에 배포된 `WebHost`의 경우에도 응용 프로그램의 메모리 내 캐시를 다시 채우거나 플러시하는 등의 시나리오가 있습니다. 이는 여전히 해당됩니다.
 

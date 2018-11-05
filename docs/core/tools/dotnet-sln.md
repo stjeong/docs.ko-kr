@@ -4,12 +4,12 @@ description: dotnet-sln 명령은 솔루션 파일의 프로젝트를 추가, �
 author: mairaw
 ms.author: mairaw
 ms.date: 06/13/2018
-ms.openlocfilehash: 65ae402ef5519863886c8cf833598f5314b4bdad
-ms.sourcegitcommit: 6bc4efca63e526ce6f2d257fa870f01f8c459ae4
+ms.openlocfilehash: 2651e8e14ad43f41354b8165179f95f65e732f4c
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36207793"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121223"
 ---
 # <a name="dotnet-sln"></a>dotnet sln
 
@@ -95,3 +95,6 @@ dotnet new sln
 와일드카드 사용 패턴을 사용하여 솔루션에서 여러 C# 프로젝트를 제거합니다.
 
 `dotnet sln todo.sln remove **/*.csproj`
+
+> [!NOTE]
+> 와일드카드 사용은 CLI 기능이 아니라 명령 셸의 기능입니다. 파일을 확장하려면 와일드카드 사용을 지원하는 셸을 사용해야 합니다. 와일드카드 사용에 대한 자세한 내용은 [Wikipedia](https://en.wikipedia.org/wiki/Glob_(programming))를 참조하세요.

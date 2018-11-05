@@ -6,12 +6,12 @@ ms.author: johalex
 ms.date: 07/02/2018
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 46db9dc7ff425c483f1a9f61da5e806e598b16d5
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: bb41fd317507c14b46aea94e1ce576e390932a65
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37937168"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49453192"
 ---
 # <a name="tutorial-use-mlnet-to-cluster-iris-flowers-clustering"></a>자습서: ML.NET을 사용하여 아이리스 꽃 클러스터(클러스터링)
 
@@ -138,19 +138,19 @@ private static PredictionModel<IrisData, ClusterPrediction> Train()
 
 [!code-csharp[Add step to load data](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#6)]
 
-다음 단계에서는 <xref:Microsoft.ML.Transforms.ColumnConcatenator> 변환 클래스를 사용하여 모든 기능 열을 **Features** 열에 결합합니다. 기본적으로, 학습 알고리즘은 **Features** 열의 기능만 처리합니다. 다음 코드를 추가합니다.
+다음 단계에서는 <xref:Microsoft.ML.Legacy.Transforms.ColumnConcatenator> 변환 클래스를 사용하여 모든 기능 열을 **Features** 열에 결합합니다. 기본적으로, 학습 알고리즘은 **Features** 열의 기능만 처리합니다. 다음 코드를 추가합니다.
 
 [!code-csharp[Add step to concatenate columns](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#7)]
 
 ## <a name="choose-a-learning-algorithm"></a>학습 알고리즘 선택
 
-파이프라인에 데이터를 추가하고 데이터를 올바른 입력 형식으로 변환한 후 학습 알고리즘(**학습자**)을 선택합니다. 학습자는 모델을 학습시킵니다. ML.NET은 [k-means 알고리즘](https://en.wikipedia.org/wiki/K-means_clustering)을 구현하는 <xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer> 학습자에게 초기 클러스터 중심을 선택하는 향상된 방법을 제공합니다.
+파이프라인에 데이터를 추가하고 데이터를 올바른 입력 형식으로 변환한 후 학습 알고리즘(**학습자**)을 선택합니다. 학습자는 모델을 학습시킵니다. ML.NET은 [k-means 알고리즘](https://en.wikipedia.org/wiki/K-means_clustering)을 구현하는 <xref:Microsoft.ML.Legacy.Trainers.KMeansPlusPlusClusterer> 학습자에게 초기 클러스터 중심을 선택하는 향상된 방법을 제공합니다.
 
 이전 단계에서 추가된 데이터 처리 코드 다음에 오는 `Train` 메서드에 다음 코드를 추가합니다.
 
 [!code-csharp[Add a learner step](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#8)]
 
-<xref:Microsoft.ML.Trainers.KMeansPlusPlusClusterer.K?displayProperty=nameWithType> 속성을 사용하여 클러스터 수를 지정합니다. 위의 코드는 데이터 집합을 3개의 클러스터로 분할해야 함을 지정합니다.
+<xref:Microsoft.ML.Legacy.Trainers.KMeansPlusPlusClusterer.K?displayProperty=nameWithType> 속성을 사용하여 클러스터 수를 지정합니다. 위의 코드는 데이터 집합을 3개의 클러스터로 분할해야 함을 지정합니다.
 
 ## <a name="train-the-model"></a>모델 학습
 

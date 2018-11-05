@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.openlocfilehash: aab939af29849ceeef76d6f61b3d4f59d701094c
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 25175e2a4409d53be412ae72be5af1c07c3ec68d
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105464"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50199665"
 ---
 # <a name="orchestrating-microservices-and-multi-container-applications-for-high-scalability-and-availability"></a>높은 확장성 및 가용성을 위한 마이크로 서비스 및 다중 컨테이너 응용 프로그램 오케스트레이션
 
@@ -39,7 +39,7 @@ ms.locfileid: "37105464"
 
 Kubernetes
 
-![https://pbs.twimg.com/media/Bt\_pEfqCAAAiVyz.png](./media/image24.png)
+![Kubernetes 로고](./media/image24.png)
 
 > Kubernetes는 클러스터 인프라와 컨테이너 예약에서 기능 오케스트레이션에 이르기까지 다양한 기능을 제공하는 오픈 소스 제품입니다. 이를 통해 호스트 클러스터 전체에서 응용 프로그램 컨테이너의 배포, 확장 및 작업을 자동화할 수 있습니다.
 >
@@ -49,7 +49,7 @@ Kubernetes
 
 Docker Swarm
 
-![http://rancher.com/wp-content/themes/rancher-2016/assets/images/swarm.png?v=2016-07-10-am](./media/image25.png)
+![Docker Swarm 로고](./media/image25.png)
 
 > Docker Swarm을 사용하면 Docker 컨테이너를 클러스터링하고 예약할 수 있습니다. Swarm을 사용하면 Docker 호스트 풀을 단일 가상 Docker 호스트로 전환할 수 있습니다. 클라이언트는 호스트에 수행한 방식과 동일하게 API 요청을 수행할 수 있습니다. 즉, Swarm을 사용하면 응용 프로그램을 여러 호스트로 쉽게 확장할 수 있습니다.
 >
@@ -59,7 +59,7 @@ Docker Swarm
 
 Mesosphere DC/OS
 
-![https://mesosphere.com/wp-content/uploads/2016/04/logo-horizontal-styled.png](./media/image26.png)
+![Mesosphere DC/OS 로고](./media/image26.png)
 
 > Mesosphere Enterprise DC/OS(Apache Mesos 기반)는 컨테이너 및 분산 응용 프로그램을 실행하기 위한 프로덕션 지원 플랫폼입니다.
 >
@@ -69,11 +69,11 @@ Mesosphere DC/OS
 
 Azure Service Fabric
 
-![https://azure.microsoft.com/svghandler/service-fabric?width=600&height=315](./media/image27.png)
+![Azure Service Fabric 로고](./media/image27.png)
 
-> [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)은 응용 프로그램을 빌드하기 위한 Microsoft 마이크로 서비스 플랫폼입니다. 서비스의 [오케스트레이터](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction)이며, 컴퓨터로 구성된 클러스터를 만듭니다. Service Fabric은 서비스를 컨테이너 또는 일반 프로세스로 배포할 수 있습니다. 또한 동일한 응용 프로그램 및 클러스터 내의 컨테이너에 있는 서비스와 프로세스에 있는 서비스를 혼합할 수도 있습니다.
+> [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)은 응용 프로그램을 빌드하기 위한 Microsoft 마이크로 서비스 플랫폼입니다. 서비스의  [오케스트레이터](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) 이며, 머신으로 구성된 클러스터를 만듭니다. Service Fabric은 서비스를 컨테이너 또는 일반 프로세스로 배포할 수 있습니다. 또한 동일한 응용 프로그램 및 클러스터 내의 컨테이너에 있는 서비스와 프로세스에 있는 서비스를 혼합할 수도 있습니다.
 >
-> Service Fabric은 [상태 저장 서비스](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) 및 [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction)와 같이 규범적 [Service Fabric 프로그래밍 모델](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework)(추가 및 선택 사양)을 제공합니다.
+> Service Fabric은 [상태 저장 서비스](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) 및 [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction)와 같이 규범적  [Service Fabric 프로그래밍 모델 ](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework)(추가 및 선택 사양)을 제공합니다.
 >
 > Service Fabric의 완성도는 Windows에서 높았지만(Windows에서 진화), Linux에서는 그렇지 못했습니다. 
 > 2017년 이후 Service Fabric에서 Linux 및 Windows 컨테이너를 모두 지원합니다.

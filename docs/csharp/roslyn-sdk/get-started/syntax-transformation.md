@@ -3,12 +3,12 @@ title: 구문 변환 시작(Roslyn API)
 description: 구문 트리를 트래버스하고, 탐색하고, 쿼리하는 방법을 소개합니다.
 ms.date: 06/01/2018
 ms.custom: mvc
-ms.openlocfilehash: acba7ac590154ad8458d0d9a8abac55a12e96265
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3f8d152a2e17bc9e480bd0a76488c563720a63b1
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47400792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49122586"
 ---
 # <a name="get-started-with-syntax-transformation"></a>구문 변환 시작
 
@@ -120,7 +120,7 @@ public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatem
 ```
 
 > [!NOTE]
-> 많은 Roslyn API는 반환된 실제 런타임 형식의 기본 클래스인 반환 형식을 선언합니다. n개의 시나리오, 한 종류의 노드는 다른 종류의 노드로 완전히 바뀌거나 제거될 수도 있습니다. 이 예제에서 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement(Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax)> 메서드는 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> 파생 형식 대신 <xref:Microsoft.CodeAnalysis.SyntaxNode>를 반환합니다. 이 재작성기는 기존 노드를 기반으로 새 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> 노드를 반환합니다.
+> 많은 Roslyn API는 반환된 실제 런타임 형식의 기본 클래스인 반환 형식을 선언합니다. 대부분 시나리오에서 한 종류의 노드는 다른 종류의 노드로 완전히 바뀌거나 제거될 수도 있습니다. 이 예제에서 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement(Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax)> 메서드는 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> 파생 형식 대신 <xref:Microsoft.CodeAnalysis.SyntaxNode>를 반환합니다. 이 재작성기는 기존 노드를 기반으로 새 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> 노드를 반환합니다.
 
 이 빠른 시작은 지역 변수 선언을 처리합니다. 이 선언은 `foreach` 루프, `for` 루프, LINQ식 및 람다 식과 같은 다른 선언으로 확장할 수 있습니다. 또한 이 재작성기는 가장 단순한 형식의 선언만 변환합니다.
 

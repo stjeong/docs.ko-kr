@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 5baac3aa-e603-4fa6-9f89-0f2c1084e6b1
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ef464b0d4c22d04d42f9b6f953abefe7582b4957
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 5049ed1b44155f3c21c53bef24a13006fe97a3fa
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44188542"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49452588"
 ---
 # <a name="threads-and-threading"></a>스레드 및 스레딩
 운영 체제에서는 프로세스를 사용하여 실행 중인 서로 다른 응용 프로그램을 분리합니다. 스레드는 운영 체제가 프로세서 시간을 할당하는 기본 단위이며 둘 이상의 스레드가 해당 프로세스 내에서 코드를 실행 중일 수 있습니다. 각 스레드는 예외 처리기, 예약 우선 순위 및 시스템에서 스레드가 예약될 때까지 스레드 컨텍스트를 저장하는 데 사용하는 구조 집합을 유지 관리합니다. 스레드 컨텍스트에는 스레드의 CPU 레지스터 및 스택 집합을 포함하여 스레드가 실행을 원활하게 재개하는 데 필요한 모든 정보가 스레드 호스트 프로세스의 주소 공간에 포함됩니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "44188542"
  시간 조각 길이는 운영 체제와 프로세서에 따라 다릅니다. 각 시간 조각은 작으므로 하나의 프로세서만 있는 경우에도 동시에 여러 스레드가 실행되는 것처럼 보입니다. 이 경우는 실제로 실행 가능 스레드가 사용 가능한 프로세서 간에 분산되는 멀티 프로세서 시스템에서 나타납니다.  
   
 ## <a name="when-to-use-multiple-threads"></a>다중 스레드 사용 시기  
- 사용자 조작이 필요한 소프트웨어는 풍부한 사용자 환경을 제공하기 위해 가능한 한 빠르게 사용자 활동에 대응해야 합니다. 그러나 동시에 사용자에게 데이터를 가능한 한 빠르게 제공하는 데 필요한 계산을 수행해야 합니다. 응용 프로그램에서 실행 스레드를 하나만 사용하는 경우 [비동기 프로그래밍](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)을 [.NET Framework 원격](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)과 결합하거나 ASP.NET으로 만든 [XML Web services](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)와 결합하면 자체 처리 시간 이외에 다른 컴퓨터의 처리 시간을 사용하여 사용자에게 더 빠르게 응답하고 응용 프로그램의 데이터 처리 시간을 단축할 수 있습니다. 집약적인 입/출력 작업을 수행하는 경우 I/O 완료 포트를 사용하여 응용 프로그램의 응답성을 향상할 수도 있습니다.  
+ 사용자 조작이 필요한 소프트웨어는 풍부한 사용자 환경을 제공하기 위해 가능한 한 빠르게 사용자 활동에 대응해야 합니다. 그러나 동시에 사용자에게 데이터를 가능한 한 빠르게 제공하는 데 필요한 계산을 수행해야 합니다. 응용 프로그램에서 실행 스레드를 하나만 사용하는 경우 [비동기 프로그래밍](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)을 [.NET Framework 원격](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kwdt6w2k(v=vs.100))과 결합하거나 ASP.NET으로 만든 [XML Web services](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))와 결합하면 자체 처리 시간 이외에 다른 컴퓨터의 처리 시간을 사용하여 사용자에게 더 빠르게 응답하고 응용 프로그램의 데이터 처리 시간을 단축할 수 있습니다. 집약적인 입/출력 작업을 수행하는 경우 I/O 완료 포트를 사용하여 응용 프로그램의 응답성을 향상할 수도 있습니다.  
   
 ### <a name="advantages-of-multiple-threads"></a>여러 스레드의 장점  
  그러나 둘 이상의 스레드를 사용하는 것이 사용자에 대한 응답성을 향상하고 작업을 거의 동시에 완료하는 데 필요한 데이터를 처리할 수 있는 가장 강력한 방법입니다. 하나의 프로세서가 있는 컴퓨터에서 여러 스레드가 이 효과를 만들 수 있으므로 사용자 이벤트 간의 짧은 시간을 활용하여 데이터를 백그라운드에서 처리할 수 있습니다. 예를 들어 다른 스레드가 동일한 응용 프로그램 내에서 스프레드시트의 다른 부분을 다시 계산하는 동안 사용자가 스프레드시트를 편집할 수 있습니다.  

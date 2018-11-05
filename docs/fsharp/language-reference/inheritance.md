@@ -1,6 +1,6 @@
 ---
 title: 상속(F#)
-description: "'상속' 키워드를 사용 하 여 F # 상속 관계를 지정 하는 방법에 알아봅니다."
+description: "'상속' 키워드를 사용 하 여 F# 상속 관계를 지정 하는 방법에 알아봅니다."
 ms.date: 05/16/2016
 ms.openlocfilehash: e4d79244fb9bada5db0c5c4c7179d4bfe6e21f3d
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -34,7 +34,7 @@ type MyDerived(...) =
 
 ## <a name="virtual-methods-and-overrides"></a>가상 메서드 및 재정의
 
-가상 메서드 (및 속성) 다소 다르게 작동 F #의 다른.NET 언어를 비교 하 여 합니다. 새 가상 멤버를 선언 하려면 사용 된 `abstract` 키워드입니다. 해당 메서드에 대 한 기본 구현을 제공 하는 여부에 관계 없이이 작업을 수행 합니다. 따라서 기본 클래스에서 가상 메서드의 완료 정의이 패턴을 따릅니다.
+가상 메서드 (및 속성) 다소 다르게 작동 F#의 다른.NET 언어를 비교 하 여 합니다. 새 가상 멤버를 선언 하려면 사용 된 `abstract` 키워드입니다. 해당 메서드에 대 한 기본 구현을 제공 하는 여부에 관계 없이이 작업을 수행 합니다. 따라서 기본 클래스에서 가상 메서드의 완료 정의이 패턴을 따릅니다.
 
 ```fsharp
 abstract member [method-name] : [type]

@@ -4,12 +4,12 @@ description: 이 항목에서는 재사용 가능한 라이브러리 및 단위 
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.openlocfilehash: 17d7cc5b085b4d47ebf1e5ed9a766be9d5d8b01f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: fbbbbc20b45981a41695eac73dcc251ef74a0cb6
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530498"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50186020"
 ---
 # <a name="building-a-complete-net-core-solution-on-macos-using-visual-studio-for-mac"></a>Visual Studio for Mac을 사용하여 macOS에서 완전한 .NET Core 솔루션 빌드
 
@@ -20,7 +20,7 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
 > [!NOTE]
 > 사용자 의견은 매우 중요합니다. Mac용 Visual Studio의 개발 팀에 다음 두 가지 방법으로 의견을 제공할 수 있습니다.
 > * Mac용 Visual Studio의 메뉴에서 **도움말** > **문제 보고**를 선택하거나 시작 화면에서 **문제 보고**를 선택하면 버그 보고서를 작성하기 위한 창이 열립니다. [Developer Community](https://developercommunity.visualstudio.com/spaces/41/index.html)(개발자 커뮤니티) 포털에서 의견을 추적할 수 있습니다.
-> * 제안하려면 메뉴에서 **도움말** > **제안하기**를 선택하거나 시작 화면에서 **제안하기**를 선택합니다. 그러면 [Mac용 Visual Studio UserVoice 웹 페이지](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac)로 이동됩니다.
+> * 제안하려면 메뉴에서 **도움말** > **제안하기**를 선택하거나 시작 화면에서 **제안하기**를 선택합니다. 그러면 [Mac용 Visual Studio Developer Community 웹 페이지](https://developercommunity.visualstudio.com/content/idea/post.html?space=41)로 이동됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -32,7 +32,7 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
 
 ## <a name="building-a-library"></a>라이브러리 빌드
 
-1. 시작 화면에서 **새 프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 **다중 플랫폼** 노드에서 **.NET 표준 라이브러리** 템플릿을 선택합니다. **새로 만들기**를 선택합니다.
+1. 시작 화면에서 **새 프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 **.NET Core** 노드에서 **.NET Standard 라이브러리** 템플릿을 선택합니다. 이렇게 하면 .NET Core를 대상으로 하는 .NET Standard 라이브러리와 [.NET Standard](../../standard/net-standard.md)의 버전 2.0을 지원하는 기타 .NET 구현이 만들어집니다. **새로 만들기**를 선택합니다.
 
    ![새 프로젝트 대화 상자](./media/using-on-mac-vs-full-solution/vsmacfull01.png)
 

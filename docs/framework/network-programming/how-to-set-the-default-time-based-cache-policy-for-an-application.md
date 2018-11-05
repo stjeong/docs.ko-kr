@@ -9,17 +9,15 @@ helpviewer_keywords:
 - cache [.NET Framework], time-based policies
 - default time-based cache policy
 ms.assetid: 6bfce066-a2e7-4add-a05e-85c12ec9f07f
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 1e08026f8d1ec8b39f7ef3c2c34efad9e51b8fe9
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: cdb93f802d313c0812bb50236ff5962c44251b4e
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47235704"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50182920"
 ---
 # <a name="how-to-set-the-default-time-based-cache-policy-for-an-application"></a>방법: 응용 프로그램에 대해 시간 기반 캐시 정책 설정
-기본 시간 기반 캐시 정책을 사용하면 [http://www.ietf.org](http://www.ietf.org/)에서 제공되는 RFC 2616의 섹션 13 및 14에 정의된 캐시 동작 및 캐시된 리소스와 함께 전송된 헤더를 통해 정의된 캐시 동작이 응용 프로그램에 나타날 수 있습니다. 이것은 대부분의 응용 프로그램에서 적절한 캐시 동작입니다.  
+기본 시간 기반 캐시 정책을 사용하면 [IETF(Internet Engineering Task Force)](https://www.ietf.org/) 웹 사이트에서 제공되는 RFC 2616의 섹션 13 및 14에 정의된 캐시 동작 및 캐시된 리소스와 함께 전송된 헤더를 통해 정의된 캐시 동작이 응용 프로그램에 나타날 수 있습니다. 이것은 대부분의 응용 프로그램에서 적절한 캐시 동작입니다.  
   
 ### <a name="to-set-the-default-automatic-policy-for-an-application"></a>응용 프로그램에 대한 기본 자동 정책을 설정하려면  
   

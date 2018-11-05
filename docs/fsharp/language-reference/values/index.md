@@ -1,6 +1,6 @@
 ---
 title: 값(F#)
-description: '특정 형식을 가진 수량이 F #의 값이 하는 방법에 대해 알아봅니다.'
+description: 특정 형식을 가진 수량이 F#의 값이 하는 방법에 대해 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: f645481ce8395c11ae920aee06cbf07955aeb684
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

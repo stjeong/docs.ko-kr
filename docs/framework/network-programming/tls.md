@@ -1,7 +1,7 @@
 ---
 title: .NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례
 description: .NET Framework와 함께 TLS(전송 계층 보안)를 사용한 모범 사례를 설명합니다.
-ms.date: 03/15/2018
+ms.date: 10/22/2018
 helpviewer_keywords:
 - sending data, Internet security
 - protocols, Internet security
@@ -12,17 +12,16 @@ helpviewer_keywords:
 - Internet, security
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
-author: blowdart
-ms.openlocfilehash: 96d37934b5e852b69c692bb1606d2998dac6f63a
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9cb7dbdfb1ad221e00823d8d55e7fd3c52cabe8b
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47424482"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50194139"
 ---
 # <a name="transport-layer-security-tls-best-practices-with-the-net-framework"></a>.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례
 
-TLS(전송 계층 보안) 프로토콜은 인터넷을 통해 전달되는 개인 정보를 보호하는 데 도움이 되도록 설계된 업계 표준입니다. [TLS 1.2](https://tools.ietf.org/html/rfc5246)는 릴리스된 가장 새로운 표준이며 이전 버전보다 향상된 보안을 제공합니다. TLS 1.2는 최종적으로 [TLS 1.3](https://tools.ietf.org/html/draft-ietf-tls-tls13-22)으로 교체됩니다. 이 문서에서는 TLS 프로토콜을 사용하는 .NET Framework 응용 프로그램을 보호하기 위한 권장 사항을 제공합니다.
+TLS(전송 계층 보안) 프로토콜은 인터넷을 통해 전달되는 개인 정보를 보호하는 데 도움이 되도록 설계된 업계 표준입니다. [TLS 1.2](https://tools.ietf.org/html/rfc5246)는 이전 버전보다 향상된 보안을 제공하는 표준입니다. TLS 1.2는 더 빠르고 보안이 향상된 가장 최근 릴리스된 표준 [TLS 1.3](https://tools.ietf.org/html/rfc8446)으로 대체됩니다. 이 문서에서는 TLS 프로토콜을 사용하는 .NET Framework 응용 프로그램을 보호하기 위한 권장 사항을 제공합니다.
 
 .NET Framework 응용 프로그램이 안전하게 유지되도록 하려면 TLS 버전을 하드 코드하면 **안 됩니다**. .NET Framework 응용 프로그램에서는 OS(운영 체제)가 지원하는 TLS 버전을 사용해야 합니다.
 
@@ -278,7 +277,7 @@ TLS 1.2 및/또는 TLS 1.1을 지원하는 시스템에서 이를 사용하도�
 | Windows Server 2008 | TLS 1.2 및 TLS 1.1 지원에는 업데이트가 필요합니다. [Windows Server 2008 SP2에서 TLS 1.1 및 TLS 1.2에 대한 지원을 추가하는 업데이트](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s)를 참조하세요. |
 | Windows Vista | 지원되지 않습니다. |
 
-Windows의 각 버전에서 기본적으로 사용하도록 설정되는 TLS/SSL 프로토콜에 대한 자세한 내용은 [Protocols in TLS/SSL (Schannel SSP)](https://msdn.microsoft.com/library/windows/desktop/mt808159)(TLS/SSL의 프로토콜(Schannel SSP))을 참조하세요.
+Windows의 각 버전에서 기본적으로 사용하도록 설정되는 TLS/SSL 프로토콜에 대한 자세한 내용은 [Protocols in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-)(TLS/SSL의 프로토콜(Schannel SSP))을 참조하세요.
 
 **.NET Framework 3.5에서 TLS 1.2를 지원하는 요구 사항**
 
@@ -305,6 +304,6 @@ Windows의 각 버전에서 기본적으로 사용하도록 설정되는 TLS/SSL
 
 ### <a name="azure-guest-os-registry-settings"></a>Azure 게스트 OS 레지스트리 설정
 
-[Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/)의 Azure 게스트 OS 이미지에는 이미 `SchUseStrongCrypto` 레지스트리 키가 1로 설정되어 있습니다. 자세한 내용은 [SchUseStrongCrypto](#schusestrongcrypto)를 참조하세요.
+[Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/)의 Azure 게스트 OS 제품군 5 이미지에는 이미 `SchUseStrongCrypto` 레지스트리 키가 1로 설정되어 있습니다. 자세한 내용은 [SchUseStrongCrypto](#schusestrongcrypto)를 참조하세요.
 
 [SystemDefaultTlsVersions](#systemdefaulttlsversions) 레지스트리 키를 1로 설정합니다. [Windows 레지스트리를 통해 보안 구성](#configuring-security-via-the-windows-registry)을 참조하세요.

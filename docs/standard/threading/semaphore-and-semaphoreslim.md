@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8e98862aba937724c799adef597260a06ed495f6
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: e7d7f791fbc68a526f428f4f79d9b379a23ca771
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44199767"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50199489"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>세마포 및 SemaphoreSlim
 로컬 또는 명명된(시스템 전체) 세마포를 나타내는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스는 Win32 세마포 개체를 묶는 씬 래퍼입니다. Win32 세마포는 리소스 풀에 대한 액세스를 제어하는 데 사용할 수 있는 가산 세마포입니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "44199767"
  <xref:System.Threading.SemaphoreSlim> 클래스는 대기 시간이 매우 짧을 것으로 예상될 때 단일 프로세스 내에서 대기하는 데 사용할 수 있는 간단하고 빠른 세마포를 나타냅니다. <xref:System.Threading.SemaphoreSlim>은 CLR(공용 언어 런타임)에서 제공하는 동기화 기본 형식을 최대한 활용합니다. 그러나 필요에 따라 여러 세마포에 대해 대기를 지원할 수 있도록 지연 초기화된 커널 기반 대기 핸들도 제공합니다. 또한 <xref:System.Threading.SemaphoreSlim>은 취소 토큰 사용도 지원하지만 명명된 세마포 또는 동기화용 대기 핸들 사용은 지원하지 않습니다.  
   
 ## <a name="managing-a-limited-resource"></a>제한된 리소스 관리  
- 스레드는 <xref:System.Threading.WaitHandle.WaitOne%2A> 메서드를 호출하여 세마포를 입력합니다. 이 메서드는 <xref:System.Threading.WaitHandle> 개체의 경우 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스에서 상속되고 <xref:System.Threading.SemaphoreSlim.Wait%2A?displayProperty=nameWithType> 개체의 경우에는 <xref:System.Threading.SemaphoreSlim.WaitAsync%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.SemaphoreSlim> 메서드에서 상속됩니다. 호출이 반환되면 세마포 수가 감소합니다. 스레드가 항목을 요청할 때 개수가 0이면 해당 스레드는 차단됩니다. 스레드가 <xref:System.Threading.Semaphore.Release%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.SemaphoreSlim.Release%2A?displayProperty=nameWithType> 메서드를 호출하여 세마포를 해제하면 차단된 스레드를 입력할 수 있게 됩니다. FIFO(선입 선출) 또는 LIFO(후입 선출)와 같이 차단된 스레드가 세마포에 입력되는 보장된 순서는 없습니다.  
+ 스레드는 <xref:System.Threading.WaitHandle.WaitOne%2A> 메서드를 호출하여 세마포를 입력합니다. 이 메서드는 <xref:System.Threading.WaitHandle> 개체의 경우 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스에서 상속되고 <xref:System.Threading.SemaphoreSlim> 개체의 경우에는 <xref:System.Threading.SemaphoreSlim.Wait%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.SemaphoreSlim.WaitAsync%2A?displayProperty=nameWithType> 메서드에서 상속됩니다. 호출이 반환되면 세마포 수가 감소합니다. 스레드가 항목을 요청할 때 개수가 0이면 해당 스레드는 차단됩니다. 스레드가 <xref:System.Threading.Semaphore.Release%2A?displayProperty=nameWithType> 또는 <xref:System.Threading.SemaphoreSlim.Release%2A?displayProperty=nameWithType> 메서드를 호출하여 세마포를 해제하면 차단된 스레드를 입력할 수 있게 됩니다. FIFO(선입 선출) 또는 LIFO(후입 선출)와 같이 차단된 스레드가 세마포에 입력되는 보장된 순서는 없습니다.  
   
  스레드는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 개체의 <xref:System.Threading.WaitHandle.WaitOne%2A> 메서드 또는 <xref:System.Threading.SemaphoreSlim> 개체의 <xref:System.Threading.SemaphoreSlim.Wait%2A> 메서드를 반복적으로 호출하여 세마포를 여러 번 입력할 수 있습니다. 세마포를 해제하려는 경우 스레드는 <xref:System.Threading.Semaphore.Release?displayProperty=nameWithType> 또는 <xref:System.Threading.SemaphoreSlim.Release?displayProperty=nameWithType> 메서드 오버로드를 같은 횟수만큼 호출하거나 <xref:System.Threading.Semaphore.Release%28System.Int32%29?displayProperty=nameWithType> 또는 <xref:System.Threading.SemaphoreSlim.Release%28System.Int32%29?displayProperty=nameWithType> 메서드 오버로드를 호출하고 해제할 항목 수를 지정할 수 있습니다.  
   

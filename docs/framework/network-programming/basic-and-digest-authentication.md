@@ -19,17 +19,15 @@ helpviewer_keywords:
 - network resources, authentication
 - user authentication, digest
 ms.assetid: 8cce2742-8d52-4643-9dd2-64ddf38aa878
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 66b20c299252ff1f218a8131758e2cf03640aac6
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: db39bdcaf2c3a4457028e30f9458a5626aa7e795
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47199540"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50190673"
 ---
 # <a name="basic-and-digest-authentication"></a>기본 인증 및 다이제스트 인증
-기본 및 다이제스트 인증의 <xref:System.Net> 구현은 RFC2617 – HTTP 인증: 기본 및 다이제스트(www.w3.org의 World Wide Web 컨소시엄 웹 사이트에서 사용 가능)를 준수합니다.  
+기본 및 다이제스트 인증의 <xref:System.Net> 구현은 RFC2617 – HTTP 인증: 기본 및 다이제스트([World Wide Web 컨소시엄](https://www.w3.org) 웹 사이트에서 사용 가능)를 준수합니다.  
   
  기본 및 다이제스트 인증을 사용하려면 다음 예제와 같이 응용 프로그램이 인터넷에서 데이터를 요청하는 데 사용하는 <xref:System.Net.WebRequest> 개체의 <xref:System.Net.WebRequest.Credentials%2A> 속성에 사용자 이름 및 암호를 제공해야 합니다.  
   

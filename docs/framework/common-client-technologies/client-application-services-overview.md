@@ -5,15 +5,15 @@ helpviewer_keywords:
 - client application services, classes
 - client application services, about client application services
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1
-ms.openlocfilehash: 55d96039f430bece3cda6136d63dbf287e8fc744
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: fda9c47f6c446369e0cd774a61375a06825e772f
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515384"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48836980"
 ---
 # <a name="client-application-services-overview"></a>클라이언트 응용 프로그램 서비스 개요
-클라이언트 응용 프로그램 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 응용 프로그램에서 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스는 [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)] 및 [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]에 포함된 Microsoft ASP.NET 2.0 AJAX 확장에 들어 있습니다. 이 서비스를 통해 여러 웹 응용 프로그램과 Windows 기반 응용 프로그램이 단일 서버에서 사용자 정보와 사용자 관리 기능을 공유할 수 있습니다.  
+클라이언트 응용 프로그램 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 응용 프로그램에서 [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] 응용 프로그램 서비스는 Visual Studio 2008 및 [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]에 포함된 Microsoft ASP.NET 2.0 AJAX 확장에 들어 있습니다. 이 서비스를 통해 여러 웹 응용 프로그램과 Windows 기반 응용 프로그램이 단일 서버에서 사용자 정보와 사용자 관리 기능을 공유할 수 있습니다.  
   
  클라이언트 응용 프로그램 서비스에는 Windows 기반 응용 프로그램에서 다음 기능을 사용할 수 있도록 웹 서비스 확장성 모델에 연결하는 클라이언트 서비스 공급자가 포함됩니다.  
   

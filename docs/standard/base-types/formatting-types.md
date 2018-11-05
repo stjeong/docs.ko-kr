@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2c26f4602623e1eb8979ef08c5d14404cc84e031
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b0185d79d8663d552378248f0e021a7fee8f0522
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502217"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50189721"
 ---
 # <a name="formatting-types-in-net"></a>.NET의 서식 지정 형식
 <a name="Introduction"></a> 형식 지정은 대개 결과 문자열을 사용자에게 표시하거나 deserialize하여 원본 데이터 형식으로 복원하기 위해 클래스, 구조체 또는 열거형 값의 인스턴스를 해당 문자열 표현으로 변환하는 프로세스입니다. 이 변환 프로세스에는 다음과 같은 여러 가지 문제점이 나타날 수 있습니다.  
@@ -114,18 +114,18 @@ ms.locfileid: "43502217"
   
 <a name="DefaultToString"></a>   
 ## <a name="default-formatting-using-the-tostring-method"></a>ToString 메서드를 사용한 기본 형식 지정  
- <xref:System.Object?displayProperty=nameWithType>에서 파생되는 모든 형식은 기본적으로 형식의 이름을 반환하는 매개 변수가 없는 `ToString` 메서드를 상속합니다. 다음 예제에서는 기본 `ToString` 메서드를 보여 줍니다. 이 예제에서는 구현이 없는 `Automobile` 이라는 클래스를 정의합니다. 클래스가 인스턴스화되고 `ToString` 메서드가 호출되면 해당 형식 이름이 표시됩니다. 예제에서는 `ToString` 메서드를 명시적으로 호출하지 않습니다. <xref:System.Console.WriteLine%28System.Object%29?displayProperty=nameWithType> 메서드는 인수로 전달되는 개체의 `ToString` 메서드를 암시적으로 호출합니다.  
+ <xref:System.Object?displayProperty=nameWithType> 에서 파생되는 모든 형식은 기본적으로 형식의 이름을 반환하는 매개 변수가 없는 `ToString` 메서드를 상속합니다. 다음 예제에서는 기본 `ToString` 메서드를 보여 줍니다. 이 예제에서는 구현이 없는 `Automobile` 이라는 클래스를 정의합니다. 클래스가 인스턴스화되고 `ToString` 메서드가 호출되면 해당 형식 이름이 표시됩니다. 예제에서는 `ToString` 메서드를 명시적으로 호출하지 않습니다. <xref:System.Console.WriteLine%28System.Object%29?displayProperty=nameWithType> 메서드는 인수로 전달되는 개체의 `ToString` 메서드를 암시적으로 호출합니다.  
   
  [!code-csharp[Conceptual.Formatting.Overview#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/default1.cs#1)]
  [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]  
   
 > [!WARNING]
->  [!INCLUDE[win81](../../../includes/win81-md.md)]부터 [!INCLUDE[wrt](../../../includes/wrt-md.md)]에는 기본 형식 지원을 제공하는 단일 메서드([IStringable.ToString](https://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx))를 사용하는 [IStringable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx)인터페이스가 포함됩니다. 그러나 관리되는 형식은 `IStringable` 인터페이스를 구현하지 않는 것이 좋습니다. 자세한 내용은 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 참조 페이지의 "`IStringable` 및 <xref:System.Object.ToString%2A?displayProperty=nameWithType> 인터페이스" 단원을 참조하세요.  
+>  [!INCLUDE[win81](../../../includes/win81-md.md)]부터 [!INCLUDE[wrt](../../../includes/wrt-md.md)]에는 기본 형식 지원을 제공하는 단일 메서드([IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A))를 사용하는 <xref:Windows.Foundation.IStringable> 인터페이스가 포함됩니다. 그러나 관리되는 형식은 `IStringable` 인터페이스를 구현하지 않는 것이 좋습니다. 자세한 내용은 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 참조 페이지의 "`IStringable` 및 <xref:System.Object.ToString%2A?displayProperty=nameWithType> 인터페이스" 단원을 참조하세요.  
   
  인터페이스를 제외한 모든 형식이 <xref:System.Object>에서 파생되기 때문에 이 함수는 사용자 지정 클래스 또는 구조체에 자동으로 제공됩니다. 그러나 기본 `ToString` 메서드에서 제공하는 기능은 제한되어 있기 때문에 형식을 정의하더라도 해당 형식의 인스턴스에 대한 정보를 제공할 수 없습니다. 이 개체에 대한 정보를 제공하는 개체의 문자열 표현을 제공하려면 `ToString` 메서드를 재정의해야 합니다.  
   
 > [!NOTE]
->  구조체는 <xref:System.ValueType>에서 상속되며, 이 형식은 다시 <xref:System.Object>에서 파생됩니다. <xref:System.ValueType>이 <xref:System.Object.ToString%2A?displayProperty=nameWithType>을 재정의해도 해당 구현은 동일합니다.  
+>  구조체는 <xref:System.ValueType>에서 상속되며, 이 형식은 다시 <xref:System.Object>에서 파생됩니다. <xref:System.ValueType> 이 <xref:System.Object.ToString%2A?displayProperty=nameWithType>을 재정의해도 해당 구현은 동일합니다.  
   
  [맨 위로 이동](#Introduction)  
   
@@ -286,7 +286,7 @@ ms.locfileid: "43502217"
 |<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|<xref:System.ICustomFormatter?displayProperty=nameWithType>|  
   
 > [!NOTE]
->  숫자 형식과 날짜 및 시간 형식의 `ToString` 메서드는 오버로드되며, 일부 오버로드에만 <xref:System.IFormatProvider> 매개 변수가 포함됩니다. 메서드에 <xref:System.IFormatProvider> 형식의 매개 변수가 없으면 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 속성에 의해 반환되는 개체가 대신 전달됩니다. 예를 들어, 기본 <xref:System.Int32.ToString?displayProperty=nameWithType> 메서드를 호출하면 결과적으로 `Int32.ToString("G", System.Globalization.CultureInfo.CurrentCulture)` 같은 메서드가 호출됩니다.  
+>  숫자 형식과 날짜 및 시간 형식의 `ToString` 메서드는 오버로드되며, 일부 오버로드에만 <xref:System.IFormatProvider> 매개 변수가 포함됩니다. 메서드에 <xref:System.IFormatProvider> 형식의 매개 변수가 없으면 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 속성에 의해 반환되는 개체가 대신 전달됩니다. 예를 들어, 기본 <xref:System.Int32.ToString?displayProperty=nameWithType> 메서드를 호출하면 결과적으로 `Int32.ToString("G", System.Globalization.CultureInfo.CurrentCulture)`같은 메서드가 호출됩니다.  
   
  .NET에는 <xref:System.IFormatProvider>를 구현하는 세 가지 클래스가 있습니다.  
   
@@ -320,7 +320,7 @@ ms.locfileid: "43502217"
   
 <a name="dateCulture"></a>   
 ### <a name="culture-sensitive-formatting-of-date-and-time-values"></a>날짜 및 시간 값의 문화권 구분 서식 지정  
- 기본적으로 날짜 및 시간 값의 형식은 문화권을 구분합니다. 형식 지정 메서드를 호출할 때 문화권을 지정하지 않으면 현재 스레드 문화권의 형식 규칙이 사용됩니다. 이는 현재 스레드 문화권을 4번 변경한 후 <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> 메서드를 호출하는 다음 예제에 나와 있습니다. 각각의 경우 결과 문자열은 현재 문화권의 형식 규칙을 반영합니다. 이는 <xref:System.DateTime.ToString?displayProperty=nameWithType>, <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType> 및 <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> 메서드가 <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 및 <xref:System.DateTimeOffset.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 메서드에 대한 호출을 래핑하기 때문입니다.  
+ 기본적으로 날짜 및 시간 값의 형식은 문화권을 구분합니다. 형식 지정 메서드를 호출할 때 문화권을 지정하지 않으면 현재 스레드 문화권의 형식 규칙이 사용됩니다. 이는 현재 스레드 문화권을 4번 변경한 후 <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> 메서드를 호출하는 다음 예제에 나와 있습니다. 각각의 경우 결과 문자열은 현재 문화권의 형식 규칙을 반영합니다. 이는 <xref:System.DateTime.ToString?displayProperty=nameWithType>, <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType>및 <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> 메서드가 <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 및 <xref:System.DateTimeOffset.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 메서드에 대한 호출을 래핑하기 때문입니다.  
   
  [!code-csharp[Conceptual.Formatting.Overview#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific1.cs#17)]
  [!code-vb[Conceptual.Formatting.Overview#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific1.vb#17)]  
@@ -344,7 +344,7 @@ ms.locfileid: "43502217"
   
 -   <xref:System.Convert> 클래스를 사용한 문자열 변환을 지원합니다. <xref:System.Convert.ToString%28System.Object%29?displayProperty=nameWithType> 및 <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 메서드를 호출하면 <xref:System.IFormattable> 구현이 자동으로 호출됩니다.  
   
--   복합 형식 지정을 지원합니다. 형식 문자열을 포함한 형식 항목이 사용자 지정 형식의 형식을 지정하는 데 사용되면 공용 언어 런타임에서 자동으로 <xref:System.IFormattable> 구현을 호출하고 이를 형식 문자열에 전달합니다. <xref:System.String.Format%2A?displayProperty=nameWithType> 또는 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 같은 메서드를 사용하는 복합 형식 지정에 대한 자세한 내용은 [복합 형식 지정](#CompositeFormatting) 섹션을 참조하세요.  
+-   복합 형식 지정을 지원합니다. 형식 문자열을 포함한 형식 항목이 사용자 지정 형식의 형식을 지정하는 데 사용되면 공용 언어 런타임에서 자동으로 <xref:System.IFormattable> 구현을 호출하고 이를 형식 문자열에 전달합니다. <xref:System.String.Format%2A?displayProperty=nameWithType> 또는 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>같은 메서드를 사용하는 복합 형식 지정에 대한 자세한 내용은 [복합 형식 지정](#CompositeFormatting) 단원을 참조하세요.  
   
  다음 예제에서는 `Temperature` 인터페이스를 구현하는 <xref:System.IFormattable> 클래스를 정의합니다. 이 클래스는 온도를 섭씨로 표시하는 "C" 또는 "G" 형식 지정자, 온도를 화씨로 표시하는 "F" 형식 지정자 또는 온도를 켈빈으로 표시하는 "K" 형식 지정자를 지원합니다.  
   
@@ -382,16 +382,16 @@ ms.locfileid: "43502217"
   
 <a name="Custom"></a>   
 ## <a name="custom-formatting-with-icustomformatter"></a>ICustomFormatter를 사용한 사용자 지정 형식 지정  
- 두 복합 형식 지정 메서드(<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 및 <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>)에 사용자 지정 형식을 지원하는 형식 공급자 매개 변수가 포함되어 있습니다. 이러한 형식 지정 메서드 중 하나를 호출하면 <xref:System.Type> 인터페이스를 나타내는 <xref:System.ICustomFormatter> 개체가 형식 공급자의 <xref:System.IFormatProvider.GetFormat%2A> 메서드에 전달됩니다. 그러면 <xref:System.IFormatProvider.GetFormat%2A> 메서드가 사용자 지정 형식 지정을 제공하는 <xref:System.ICustomFormatter> 구현을 반환합니다.  
+ 두 복합 형식 지정 메서드( <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 및 <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>)에 사용자 지정 형식을 지원하는 형식 공급자 매개 변수가 포함되어 있습니다. 이러한 형식 지정 메서드 중 하나를 호출하면 <xref:System.Type> 인터페이스를 나타내는 <xref:System.ICustomFormatter> 개체가 형식 공급자의 <xref:System.IFormatProvider.GetFormat%2A> 메서드에 전달됩니다. 그러면 <xref:System.IFormatProvider.GetFormat%2A> 메서드가 사용자 지정 형식 지정을 제공하는 <xref:System.ICustomFormatter> 구현을 반환합니다.  
   
- <xref:System.ICustomFormatter> 인터페이스에는 복합 형식 지정 메서드에 의해 자동으로 복합 형식 문자열의 각 형식 항목에 대해 한 번씩 호출되는 <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29>라는 메서드가 하나 있습니다. <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29> 메서드에는 세 개의 매개 변수 즉, 형식 항목의 `formatString` 인수를 나타내는 형식 문자열, 형식을 지정할 개체 및 형식 지정 서비스를 제공하는 <xref:System.IFormatProvider> 개체가 포함되어 있습니다. 일반적으로 <xref:System.ICustomFormatter> 를 구현하는 클래스는 <xref:System.IFormatProvider>도 구현하여 이 마지막 매개 변수가 사용자 지정 형식 지정 클래스를 참조하도록 합니다. 이 메서드는 형식을 지정할 개체의 사용자 지정 형식 문자열 표현을 반환합니다. 이 메서드가 개체의 형식을 지정할 수 없는 경우에는 null 참조(Visual Basic의 경우`Nothing` )가 반환되어야 합니다.  
+ <xref:System.ICustomFormatter> 인터페이스에는 복합 형식 지정 메서드에 의해 자동으로 복합 형식 문자열의 각 형식 항목에 대해 한 번씩 호출되는 <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29>라는 메서드가 하나 있습니다. <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29> 메서드에는 세 개의 매개 변수 즉, 형식 항목의 `formatString` 인수를 나타내는 형식 문자열, 형식을 지정할 개체 및 형식 지정 서비스를 제공하는 <xref:System.IFormatProvider> 개체가 포함되어 있습니다. 일반적으로 <xref:System.ICustomFormatter> 를 구현하는 클래스는 <xref:System.IFormatProvider>도 구현하여 이 마지막 매개 변수가 사용자 지정 형식 지정 클래스를 참조하도록 합니다. 이 메서드는 형식을 지정할 개체의 사용자 지정 형식 문자열 표현을 반환합니다. 이 메서드가 개체의 형식을 지정할 수 없는 경우에는 null 참조(Visual Basic의 경우 `Nothing`)가 반환되어야 합니다.  
   
  다음 예제에서는 정수 값을 뒤에 공백이 오는 두 자리 16진수 값 시퀀스로 표시하는 <xref:System.ICustomFormatter> 라는 `ByteByByteFormatter` 구현을 제공합니다.  
   
  [!code-csharp[Conceptual.Formatting.Overview#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/icustomformatter1.cs#15)]
  [!code-vb[Conceptual.Formatting.Overview#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/icustomformatter1.vb#15)]  
   
- 다음 예제에서는 `ByteByByteFormatter` 클래스를 사용하여 정수 값의 형식을 지정합니다. <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> 메서드는 두 번째 <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드 호출에서 두 번 이상 호출되고 세 번째 메서드 호출에서는 기본 <xref:System.Globalization.NumberFormatInfo> 공급자가 사용된다는 점에 유의하세요. 그 이유는 .`ByteByByteFormatter.Format` )를 반환하기 때문에 세 번째 메서드 호출에서는 기본`Nothing` )와 동일한 형식 지정자에 대한 지원.  
+ 다음 예제에서는 `ByteByByteFormatter` 클래스를 사용하여 정수 값의 형식을 지정합니다. 예제에서는 <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> 메서드는 두 번째 <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드 호출에서 두 번 이상 호출되고 <xref:System.Globalization.NumberFormatInfo> 메서드가 "N0" 형식 문자열을 인식하지 못하고 null 참조(Visual Basic의 경우`ByteByByteFormatter.Format` )를 반환하기 때문에 세 번째 메서드 호출에서는 기본`Nothing` )와 동일한 형식 지정자에 대한 지원.  
   
  [!code-csharp[Conceptual.Formatting.Overview#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/icustomformatter1.cs#16)]
  [!code-vb[Conceptual.Formatting.Overview#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/icustomformatter1.vb#16)]  
@@ -410,7 +410,7 @@ ms.locfileid: "43502217"
 |[표준 TimeSpan 서식 문자열](../../../docs/standard/base-types/standard-timespan-format-strings.md)|시간 간격의 일반적으로 사용되는 문자열 표현을 만드는 표준 형식 문자열에 대해 설명합니다.|  
 |[사용자 지정 TimeSpan 서식 문자열](../../../docs/standard/base-types/custom-timespan-format-strings.md)|시간 간격의 응용 프로그램별 형식을 만드는 사용자 지정 형식 문자열에 대해 설명합니다.|  
 |[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|열거형 값의 문자열 표현을 만드는 데 사용되는 표준 형식 문자열에 대해 설명합니다.|  
-|[복합 형식 지정](../../../docs/standard/base-types/composite-formatting.md)|문자열에 형식이 지정된 하나 이상의 값을 포함시키는 방법에 대해 설명합니다. 그런 후 해당 문자열을 콘솔에 표시하거나 스트림에 쓸 수 있습니다.|  
+|[복합 형식 지정](../../../docs/standard/base-types/composite-formatting.md)|문자열에 형식이 지정된 하나 이상의 값을 포함하는 방법에 대해 설명합니다. 그런 후 해당 문자열을 콘솔에 표시하거나 스트림에 쓸 수 있습니다.|  
 |[서식 지정 작업 수행](../../../docs/standard/base-types/performing-formatting-operations.md)|특정 형식 지정 작업을 수행하기 위한 단계별 지침을 제공하는 항목을 나열합니다.|  
 |[Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)|개체를 해당 개체의 문자열 표현으로 표시되는 값으로 초기화하는 방법에 대해 설명합니다. 구문 분석은 형식 지정의 역순으로 진행됩니다.|  
   

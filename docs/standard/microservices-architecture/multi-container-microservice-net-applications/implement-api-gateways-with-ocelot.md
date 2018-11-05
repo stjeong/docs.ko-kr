@@ -4,12 +4,12 @@ description: Ocelot을 사용하여 API 게이트웨이를 구현하는 방법�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 07/03/2018
-ms.openlocfilehash: dbb3fdb27175a86291d3a942ff168a5aae787c0c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 26b3c3510aa06fb1c7aa4c3a44f23c8e526fe60c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522202"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200035"
 ---
 # <a name="implementing-api-gateways-with-ocelot"></a>Ocelot을 사용하여 API 게이트웨이 구현
 
@@ -271,7 +271,7 @@ DownstreamHostAndPorts는 요청을 전달하려는 모든 다운스트림 서�
 
 UpstreamPathTemplate은 Ocelot에서 클라이언트로부터 지정된 요청에 사용할 DownstreamPathTemplate을 식별하는 데 사용할 URL입니다. 마지막으로, Ocelot에서 동일한 URL에 대한 다른 요청(GET, POST, PUT)을 구별할 수 있도록 UpstreamHttpMethod를 사용합니다.
 
-이 시점에서 하나 또는 여러 개의 [병합된 configuration.json 파일](http://ocelot.readthedocs.io/en/latest/features/configuration.html#merging-configuration-files)을 사용하여 단일 Ocelot API 게이트웨이(ASP.NET Core WebHost)를 만들거나 [Consul KV 저장소에 구성을 저장](http://ocelot.readthedocs.io/en/latest/features/configuration.html#store-configuration-in-consul)할 수도 있습니다. 
+이 시점에서 하나 또는 여러 개의 [병합된 configuration.json 파일](https://ocelot.readthedocs.io/en/latest/features/configuration.html#merging-configuration-files)을 사용하여 단일 Ocelot API 게이트웨이(ASP.NET Core WebHost)를 만들거나 [Consul KV 저장소에 구성을 저장](https://ocelot.readthedocs.io/en/latest/features/configuration.html#store-configuration-in-consul)할 수도 있습니다.
 
 그러나 구성 및 설계 섹션에서 소개한 대로 자치 마이크로 서비스를 실제로 원하는 경우, 단일 모놀리식 API 게이트웨이를 여러 API 게이트웨이 및/또는 BFF(프런트 엔드에 대한 백 엔드)로 분할하는 것이 좋습니다. 이를 위해 Docker 컨테이너를 사용하여 이 방법을 구현하는 방법을 살펴보겠습니다.
 
@@ -346,9 +346,9 @@ webshoppingapigw:
 webmarketingapigw:
   environment:
     - ASPNETCORE_ENVIRONMENT=Development
-    - IdentityUrl=http://identity.api              
+    - IdentityUrl=http://identity.api
   ports:
-    - "5203:80"   
+    - "5203:80"
   volumes:
     - ./src/ApiGateways/Web.Bff.Marketing/apigw:/app/configuration
 ```
@@ -363,25 +363,25 @@ API 게이트웨이를 여러 API 게이트웨이로 분할하면 마이크로 �
 
 이제 API 게이트웨이(eShopOnContainers-ServicesAndWebApps.sln 솔루션을 열거나 "docker-compose up"을 실행하는 경우 기본적으로 VS에 포함됨)를 사용하여 eShopOnContainers를 실행하면 다음과 같은 샘플 경로가 수행됩니다. 
 
-예를 들어 webshoppingapigw API 게이트웨이에서 제공하는 업스트림 URL(http://localhost:5202/api/v1/c/catalog/items/2/)을 방문하면 다음 브라우저와 같이 Docker 호스트 내의 내부 다운스트림 URL(http://catalog.api/api/v1/2)에서 결과를 가져옵니다.
+예를 들어 webshoppingapigw API 게이트웨이에서 제공하는 업스트림 URL(`http://localhost:5202/api/v1/c/catalog/items/2/`)을 방문하면 다음 브라우저와 같이 Docker 호스트 내의 내부 다운스트림 URL(`http://catalog.api/api/v1/2`)에서 결과를 가져옵니다.
 
 ![](./media/image35.png)
 
-**그림 8-34** API 게이트웨이에서 제공하는 URL을 통해 마이크로 서비스에 액세스 
+**그림 8-34** API 게이트웨이에서 제공하는 URL을 통해 마이크로 서비스에 액세스
 
-테스트 또는 디버깅 이유로 인해 API 게이트웨이를 통과하지 않고 Catalog Docker 컨테이너에 직접 액세스하려는 경우(개발 환경에서만), 'catalog.api'는 Docker 호스트 내부의 DNS 확인(docker-compose 서비스 이름으로 처리되는 서비스 검색)이므로 컨테이너에 직접 액세스하는 유일한 방법은 다음 브라우저의 http://localhost:5101/api/v1/Catalog/items/1과 같이 개발 테스트용으로만 제공되는 docker-compose.override.yml에 게시된 외부 포트를 통해 액세스하는 것입니다.
+테스트 또는 디버깅 이유로 인해 API 게이트웨이를 통과하지 않고 Catalog Docker 컨테이너에 직접 액세스하려는 경우(개발 환경에서만), 'catalog.api'는 Docker 호스트 내부의 DNS 확인(docker-compose 서비스 이름으로 처리되는 서비스 검색)이므로 컨테이너에 직접 액세스하는 유일한 방법은 다음 브라우저의 `http://localhost:5101/api/v1/Catalog/items/1`과 같이 개발 테스트용으로만 제공되는 docker-compose.override.yml에 게시된 외부 포트를 통해 액세스하는 것입니다.
 
 ![](./media/image36.png)
 
 **그림 8-35** 테스트 목적으로 마이크로 서비스에 직접 액세스 
 
-그러나 응용 프로그램은 직접 포트 "바로 가기"가 아니라 API 게이트웨이를 통해 모든 마이크로 서비스에 액세스하도록 구성됩니다. 
+그러나 응용 프로그램은 직접 포트 "바로 가기"가 아니라 API 게이트웨이를 통해 모든 마이크로 서비스에 액세스하도록 구성됩니다.
 
 ### <a name="the-gateway-aggregation-pattern-in-eshoponcontainers"></a>eShopOnContainers의 게이트웨이 집계 패턴
 
-앞에서 설명한 대로 요청 집계를 구현하는 유연한 방법은 코드에서 사용자 지정 서비스를 사용하는 것입니다. 또한 Ocelot의 요청 집계 기능을 사용하여 요청 집계를 구현할 수 있지만 필요에 따라 유연하지 않을 수도 있습니다. 따라서 eShopOnContainers에서 집계를 구현하기 위해 선택한 방법은 각 집계에 대해 ASP.NET Core Web API 서비스를 사용하는 것입니다. 
+앞에서 설명한 대로 요청 집계를 구현하는 유연한 방법은 코드에서 사용자 지정 서비스를 사용하는 것입니다. 또한 Ocelot의 요청 집계 기능을 사용하여 요청 집계를 구현할 수 있지만 필요에 따라 유연하지 않을 수도 있습니다. 따라서 eShopOnContainers에서 집계를 구현하기 위해 선택한 방법은 각 집계에 대해 ASP.NET Core Web API 서비스를 사용하는 것입니다.
 
-이 방법에 따르면 앞에서 보여 준 간소화된 전역 아키텍처 다이어그램에 표시되지 않은 집계 서비스를 고려할 때 API 게이트웨이 컴퍼지션 다이어그램은 실제로 조금 더 확대됩니다. 
+이 방법에 따르면 앞에서 보여 준 간소화된 전역 아키텍처 다이어그램에 표시되지 않은 집계 서비스를 고려할 때 API 게이트웨이 컴퍼지션 다이어그램은 실제로 조금 더 확대됩니다.
 
 다음 다이어그램에서는 집계 서비스에서 관련 API 게이트웨이를 사용하는 방식도 확인할 수 있습니다.
 
@@ -389,13 +389,13 @@ API 게이트웨이를 여러 API 게이트웨이로 분할하면 마이크로 �
 
 **그림 8-36** 집계 서비스가 있는 eShopOnContainers 아키텍처
 
-다음 이미지는 더 확대되어 "쇼핑" 비즈니스 영역에 대한 방법을 확인할 수 있습니다. API 게이트웨이 영역에서 이러한 집계 서비스를 사용하는 경우 마이크로 서비스를 통해 데이터 전송량을 줄여 클라이언트 응용 프로그램을 향상시킬 수 있습니다. 
+다음 이미지는 더 확대되어 "쇼핑" 비즈니스 영역에 대한 방법을 확인할 수 있습니다. API 게이트웨이 영역에서 이러한 집계 서비스를 사용하는 경우 마이크로 서비스를 통해 데이터 전송량을 줄여 클라이언트 응용 프로그램을 향상시킬 수 있습니다.
 
  ![](./media/image38.png)
 
 **그림 8-37** 집계 서비스의 비전 확대
 
-다이어그램에 API 게이트웨이에서 들어오는 가능한 요청이 표시되는 경우 이는 매우 복잡해질 수 있습니다. 클라이언트 응용 프로그램 관점에서 청색 화살표가 간소화될 수 있는 방법을 알 수 있지만, 통신의 데이터 전송량과 대기 시간을 줄여 집계 패턴을 사용하는 경우 궁극적으로 특히 원격 응용 프로그램(모바일 및 SPA 응용 프로그램)의 사용자 환경이 크게 향상됩니다. 
+다이어그램에 API 게이트웨이에서 들어오는 가능한 요청이 표시되는 경우 이는 매우 복잡해질 수 있습니다. 클라이언트 응용 프로그램 관점에서 청색 화살표가 간소화될 수 있는 방법을 알 수 있지만, 통신의 데이터 전송량과 대기 시간을 줄여 집계 패턴을 사용하는 경우 궁극적으로 특히 원격 응용 프로그램(모바일 및 SPA 응용 프로그램)의 사용자 환경이 크게 향상됩니다.
 
 "마케팅" 비즈니스 영역 및 마이크로 서비스의 경우 매우 간단한 사용 사례이므로 집계를 사용할 필요는 없지만 필요한 경우 사용할 수도 있습니다.
 
@@ -466,9 +466,12 @@ namespace OcelotApiGw
                     x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
                     {
                         ValidAudiences = new[] { "orders", "basket", "locations", "marketing", "mobileshoppingagg", "webshoppingagg" }
-                    };                   
+                    };
                 });
             //...
+        }
+    }
+}
 ```
 
 그런 다음, 다음 Basket 마이크로 서비스 컨트롤러와 같이 마이크로 서비스처럼 액세스할 모든 리소스에 대해 [Authorize] 특성을 사용하여 권한 부여를 설정해야 합니다.
@@ -479,7 +482,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
     [Route("api/v1/[controller]")]
     [Authorize]
     public class BasketController : Controller
-    {   
+    {
       //...
     }
 }
@@ -506,9 +509,9 @@ services.AddAuthentication(options =>
 });
 ```
 
-다음 단계로, http://localhost:5202/api/v1/b/basket/1과 같은 API 게이트웨이를 기반으로 하는 재라우팅 URL을 사용하여 Basket 마이크로 서비스와 같은 보안 마이크로 서비스에 액세스하려고 할 때 유효한 토큰을 제공하지 않으면 401 권한이 없음이 표시됩니다. 반면에 재라우팅 URL이 인증되면 Ocelot에서 이(내부 마이크로 서비스 URL)와 연결된 다운스트림 구성표를 호출합니다.
+다음 단계로, `http://localhost:5202/api/v1/b/basket/1`과 같은 API 게이트웨이를 기반으로 하는 재라우팅 URL을 사용하여 Basket 마이크로 서비스와 같은 보안 마이크로 서비스에 액세스하려고 할 때 유효한 토큰을 제공하지 않으면 401 권한이 없음이 표시됩니다. 반면에 재라우팅 URL이 인증되면 Ocelot에서 이(내부 마이크로 서비스 URL)와 연결된 다운스트림 구성표를 호출합니다.
 
-**Ocelot의 재라우팅 계층에서 권한 부여.**  Ocelot은 인증 후에 평가된 클레임 기반 권한 부여를 지원합니다. 재라우팅 구성에 다음 코드를 추가하여 경로 수준에서 권한 부여를 설정합니다. 
+**Ocelot의 재라우팅 계층에서 권한 부여.**  Ocelot은 인증 후에 평가된 클레임 기반 권한 부여를 지원합니다. 재라우팅 구성에 다음 코드를 추가하여 경로 수준에서 권한 부여를 설정합니다.
 
 ```
 "RouteClaimsRequirement": {
@@ -516,13 +519,13 @@ services.AddAuthentication(options =>
 }
 ```
 
-이 예제에서 권한 부여 미들웨어가 호출되면 Ocelot에서 사용자의 토큰에 'UserType' 클레임 유형이 있고 해당 클레임의 값이 'employee'인지 여부를 확인합니다. 그렇지 않은 경우 해당 사용자에게 권한이 부여되지 않으며 응답은 403 사용할 수 없음이 됩니다. 
+이 예제에서 권한 부여 미들웨어가 호출되면 Ocelot에서 사용자의 토큰에 'UserType' 클레임 유형이 있고 해당 클레임의 값이 'employee'인지 여부를 확인합니다. 그렇지 않은 경우 해당 사용자에게 권한이 부여되지 않으며 응답은 403 사용할 수 없음이 됩니다.
 
 ## <a name="using-kubernetes-ingress-plus-ocelot-api-gateways"></a>Kubernetes 수신 및 Ocelot API 게이트웨이 사용
 
-Azure Kubernetes Service 클러스터에서와 같이 Kubernetes를 사용하는 경우 일반적으로 *Nginx*를 기반으로 하는 [Kuberentes 수신 계층](https://kubernetes.io/docs/concepts/services-networking/ingress/)을 통해 모든 HTTP 요청을 통합합니다. 
+Azure Kubernetes Service 클러스터에서처럼 Kubernetes를 사용하는 경우 일반적으로 *Nginx*를 기반으로 하는 [Kubernetes 수신 계층](https://kubernetes.io/docs/concepts/services-networking/ingress/)을 통해 모든 HTTP 요청을 통합합니다. 
 
-Kuberentes에서 수신 방식을 사용하지 않으면 서비스와 Pod에 클러스터 네트워크에서만 라우팅할 수 있는 IP가 있습니다. 
+Kubernetes에서 수신 방식을 사용하지 않으면 서비스와 Pod에 클러스터 네트워크에서만 라우팅할 수 있는 IP가 있습니다. 
 
 하지만 수신 방식을 사용하는 경우 인터넷과 서비스(API 게이트웨이 포함) 사이에 역방향 프록시 역할을 하는 중간 계층이 있습니다.
 
@@ -530,19 +533,19 @@ Kuberentes에서 수신 방식을 사용하지 않으면 서비스와 Pod에 클
 
 eShopOnContainers에서 로컬로 개발하고 개발 머신을 Docker 호스트로만 사용하는 경우 수신이 아니라 여러 API 게이트웨이만 사용합니다. 
 
-그러나 Kuberentes에 기반한 "프로덕션" 환경을 대상으로 하는 경우 eShopOnCOntainers에서는 API 게이트웨이 앞에 수신을 사용합니다. 그러면 클라이언트에서 동일한 기본 URL을 계속 호출하지만 요청은 여러 API 게이트웨이 또는 BFF로 라우팅됩니다. 
+그러나 Kubernetes를 기반으로 한 “프로덕션” 환경을 대상으로 하는 경우 eShopOnContainers에서는 API 게이트웨이 앞에 수신을 사용합니다. 그러면 클라이언트에서 동일한 기본 URL을 계속 호출하지만 요청은 여러 API 게이트웨이 또는 BFF로 라우팅됩니다. 
 
-API 게이트웨이는 서비스만 표시하는 프런트 엔드 또는 외관이며, 일반적으로 서비스 범위를 벗어나는 웹 응용 프로그램이 아닙니다. 또한 API 게이트웨이는 특정 내부 마이크로 서비스를 숨길 수 있습니다. 
+API 게이트웨이는 서비스만 표시하는 프런트 엔드 또는 외관이며, 일반적으로 서비스 범위를 벗어나는 웹 응용 프로그램이 아닙니다. 또한 API 게이트웨이는 특정 내부 마이크로 서비스를 숨길 수 있습니다.
 
 하지만 수신은 HTTP 요청만 리디렉션하고, 마이크로 서비스 또는 웹앱을 숨기려고 하지 않습니다.
 
-다음 다이어그램과 같이 Kuberentes에서 웹 응용 프로그램과 여러 Ocelot API 게이트웨이/BFF 앞에 수신 Nginx 계층이 있는 것이 이상적인 아키텍처입니다.
+다음 다이어그램과 같이 Kubernetes에서 웹 응용 프로그램과 여러 Ocelot API 게이트웨이/BFF 앞에 수신 Nginx 계층이 있는 것이 이상적인 아키텍처입니다.
 
  ![](./media/image41.png)
 
 **그림 8-40** Kubernetes에 배포 시 eShopOnContainers의 수신 계층
 
-eShopOnContainers를 Kuberentes에 배포하면 _수신_을 통해 몇 가지 서비스 또는 엔드포인트만 노출되며, URL에 대한 접미사 목록은 기본적으로 다음과 같습니다.
+eShopOnContainers를 Kubernetes에 배포하면 _수신_을 통해 몇 가지 서비스 또는 엔드포인트만 노출되며, URL에 대한 접미사 목록은 기본적으로 다음과 같습니다.
 
 -   `/`: 클라이언트 SPA 웹 응용 프로그램의 경우
 -   `/webmvc`: 클라이언트 MVC 웹 응용 프로그램의 경우
@@ -552,32 +555,28 @@ eShopOnContainers를 Kuberentes에 배포하면 _수신_을 통해 몇 가지 �
 -   `/mobileshoppingapigw`: 모바일 BFF 및 쇼핑 비즈니스 프로세스의 경우
 -   `/mobilemarketingapigw`: 모바일 BFF 및 마케팅 비즈니스 프로세스의 경우
 
-Kubernetes에 배포하는 경우 각 Ocelot API 게이트웨이는 API 게이트웨이를 실행하는 각 _Pod_에 대해 서로 다른 "configuration.json" 파일을 사용합니다. 이러한 "configuration.json" 파일은 'ocelot'이라는 Kuberentes _구성 맵_에 따라 만들어진 볼륨을 탑재하여(원래는 deploy.ps1 스크립트 사용) 제공됩니다. 각 컨테이너는 `/app/configuration`이라는 컨테이너 폴더에 관련 구성 파일을 탑재합니다.
+Kubernetes에 배포하는 경우 각 Ocelot API 게이트웨이는 API 게이트웨이를 실행하는 각 _Pod_에 대해 서로 다른 "configuration.json" 파일을 사용합니다. 이러한 “configuration.json” 파일은 ‘ocelot’이라는 Kubernetes ‘구성 맵’에 따라 만들어진 볼륨을 탑재하여(원래는 deploy.ps1 스크립트 사용) 제공됩니다. 각 컨테이너는 `/app/configuration`이라는 컨테이너 폴더에 관련 구성 파일을 탑재합니다.
 
 eShopOnContainers의 소스 코드 파일에서 원래 "configuration.json" 파일은 `k8s/ocelot/` 폴더 내에서 찾을 수 있습니다. 각 BFF/API 게이트웨이마다 하나의 구성 파일이 있습니다.
-
 
 ## <a name="additional-cross-cutting-features-in-an-ocelot-api-gateway"></a>Ocelot API 게이트웨이의 추가 교차 편집 기능
 
 Ocelot API 게이트웨이를 사용하는 경우 연구하고 사용할 다른 중요한 기능이 있으며, 다음 링크에서 설명하고 있습니다.
 
 -   **Ocelot과 Consul 또는 Eureka를 통합한 클라이언트 쪽 서비스 검색** 
-    [*http://ocelot.readthedocs.io/en/latest/features/servicediscovery.html*](http://ocelot.readthedocs.io/en/latest/features/servicediscovery.html)
+    [*https://ocelot.readthedocs.io/en/latest/features/servicediscovery.html*](https://ocelot.readthedocs.io/en/latest/features/servicediscovery.html)
 
 -   **API 게이트웨이 계층에서 캐싱** 
-    [*http://ocelot.readthedocs.io/en/latest/features/caching.html*](http://ocelot.readthedocs.io/en/latest/features/caching.html)
+    [*https://ocelot.readthedocs.io/en/latest/features/caching.html*](https://ocelot.readthedocs.io/en/latest/features/caching.html)
 
 -   **API 게이트웨이 계층에서 로깅** 
-    [*http://ocelot.readthedocs.io/en/latest/features/logging.html*](http://ocelot.readthedocs.io/en/latest/features/logging.html)
+    [*https://ocelot.readthedocs.io/en/latest/features/logging.html*](https://ocelot.readthedocs.io/en/latest/features/logging.html)
 
 -   **API 게이트웨이 계층의 서비스 품질(다시 시도 및 회로 차단기)** 
-    [*http://ocelot.readthedocs.io/en/latest/features/qualityofservice.html*](http://ocelot.readthedocs.io/en/latest/features/qualityofservice.html)
+    [*https://ocelot.readthedocs.io/en/latest/features/qualityofservice.html*](https://ocelot.readthedocs.io/en/latest/features/qualityofservice.html)
 
 -   **속도 제한** 
-    [*http://ocelot.readthedocs.io/en/latest/features/ratelimiting.html*](http://ocelot.readthedocs.io/en/latest/features/ratelimiting.html )
-
-
-
+    [*https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html*](https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html )
 
 >[!div class="step-by-step"]
 [이전] (background-tasks-with-ihostedservice.md) [다음] (../microservice-ddd-cqrs-patterns/index.md)

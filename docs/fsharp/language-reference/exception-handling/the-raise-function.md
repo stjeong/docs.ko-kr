@@ -1,6 +1,6 @@
 ---
 title: '예외: raise 함수(F#)'
-description: "오류 또는 예외 조건이 발생 했음을 알리는 데 F # 'raise' 함수를 사용 하는 방법을 알아봅니다."
+description: 오류 또는 예외 조건이 발생 했음을 알리는 데 F# 'raise' 함수를 사용 하는 방법을 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 537d274659d29404380bfdd56310ac267372bb98
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

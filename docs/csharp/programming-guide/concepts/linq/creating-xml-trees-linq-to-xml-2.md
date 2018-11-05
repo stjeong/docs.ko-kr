@@ -2,12 +2,12 @@
 title: C#에서 XML 트리 만들기(LINQ to XML)
 ms.date: 08/31/2018
 ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
-ms.openlocfilehash: 98bad6bfc3b563b39f9e58eadbff673f202646c1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9fb03800f04a3c0615fa5b7fc44eb078e224eebc
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502286"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49452419"
 ---
 # <a name="creating-xml-trees-in-c-linq-to-xml"></a>C#에서 XML 트리 만들기(LINQ to XML)
 이 단원에서는 C#에서 XML 트리를 만드는 방법에 대해 설명합니다.  
@@ -168,7 +168,23 @@ Console.WriteLine(contacts);
   </Contact>  
 </Contacts>  
 ```  
+
+### <a name="creating-an-xelement-with-an-xattribute"></a>XAttribute를 사용하여 XElement 만들기
+ <xref:System.Xml.Linq.XAttribute> 클래스의 인스턴스를 내용 인수로 전달하면 생성자가 특성을 사용하여 요소를 만듭니다.
+
+```csharp  
+XElement phone = new XElement("Phone",  
+    new XAttribute("Type", "Home"),  
+    "555-555-5555");  
+Console.WriteLine(phone);  
+```  
   
+ 이 예제는 다음과 같은 출력을 생성합니다.  
+  
+```xml  
+<Phone Type="Home">555-555-5555</Phone>
+```   
+
 ### <a name="creating-an-empty-element"></a>빈 요소 만들기  
  빈 <xref:System.Xml.Linq.XElement>를 만들려면 내용을 생성자에 전달하지 않습니다. 다음 예제에서는 빈 요소를 만듭니다.  
   

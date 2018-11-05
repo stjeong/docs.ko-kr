@@ -4,12 +4,12 @@ description: 기존 및 .NET Core csproj 파일 간의 차이점에 대해 알�
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.openlocfilehash: 1fd264da2863fbeb88900be0f6fe000acac08a09
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3de168b8cebeb435a45861138aea26580663c135
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47216918"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50203958"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>.NET Core용 csproj 형식에 대한 추가 사항
 
@@ -72,7 +72,7 @@ ms.locfileid: "47216918"
 **모든 암시적 glob**를 비활성화하기 위해 다음 예제와 같이 `<EnableDefaultItems>` 속성을 `false`로 설정할 수 있습니다.
 ```xml
 <PropertyGroup>
-    <EnableDefaultItems>false</EnableDefaultItems>
+    <EnableDefaultItems>false</EnableDefaultItems>
 </PropertyGroup>
 ```
 
@@ -92,10 +92,11 @@ csproj를 사용하는 경우 프로젝트에서 기본 GLOB를 제거하고 다
 ## <a name="additions"></a>추가
 
 ### <a name="sdk-attribute"></a>SDK 특성 
-*.csproj* 파일의 `<Project>` 요소에 `Sdk`라고 하는 새 특성이 있습니다. `Sdk`는 프로젝트에서 사용될 SDK를 지정합니다. [레이어 문서](cli-msbuild-architecture.md)에 설명된 것처럼 SDK는 .NET Core 코드를 빌드할 수 있는 MSBuild [작업](/visualstudio/msbuild/msbuild-tasks) 및 [대상](/visualstudio/msbuild/msbuild-targets)의 집합입니다. .NET Core 도구와 함께 다음의 두 주요 SDK가 제공됩니다.
+*.csproj* 파일의 `<Project>` 요소에 `Sdk`라고 하는 새 특성이 있습니다. `Sdk`는 프로젝트에서 사용될 SDK를 지정합니다. [레이어 문서](cli-msbuild-architecture.md)에 설명된 것처럼 SDK는 .NET Core 코드를 빌드할 수 있는 MSBuild [작업](/visualstudio/msbuild/msbuild-tasks) 및 [대상](/visualstudio/msbuild/msbuild-targets)의 집합입니다. .NET Core 도구와 함께 다음 세 가지 주요 SDK가 제공됩니다.
 
 1. `Microsoft.NET.Sdk`의 ID와 함께 .NET Core SDK
 2. `Microsoft.NET.Sdk.Web`의 ID와 함께 .NET Core 웹 SDK
+3. `Microsoft.NET.Sdk.Razor`의 ID와 함께 .NET Core Razor 클래스 라이브러리 SDK
 
 .NET Core 도구를 사용하고 코드를 빌드하려면 `<Project>` 요소의 해당 ID 중 하나에 대한 `Sdk` 특성 집합이 있어야 합니다. 
 
@@ -112,9 +113,9 @@ csproj를 사용하는 경우 프로젝트에서 기본 GLOB를 제거하고 다
 #### <a name="includeassets-excludeassets-and-privateassets"></a>IncludeAssets, ExcludeAssets 및 PrivateAssets
 `IncludeAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용해야 하는 자산을 지정합니다. 
 
-`ExcludeAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용하지 말아야 하는 자산을 지정합니다.
+`ExcludeAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용하면 안 되는 자산을 지정합니다.
 
-`PrivateAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용해야 하지만 다음 프로젝트로 전달하지 말아야 하는 자산을 지정합니다. 
+`PrivateAssets` 특성은 `<PackageReference>`에서 지정한 패키지에 속하여 사용하지만 다음 프로젝트로 전달하지 말아야 하는 자산을 지정합니다. 
 
 > [!NOTE]
 > `PrivateAssets`는 *project.json*/*xproj* `SuppressParent` 요소와 같습니다.

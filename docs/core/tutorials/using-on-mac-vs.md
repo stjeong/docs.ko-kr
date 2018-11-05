@@ -4,21 +4,21 @@ description: 이 항목에서는 Mac 및 .NET Core용 Visual Studio를 사용하
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.openlocfilehash: dd8262a7d2fa03ab06f9f85e91c298f52e3c0849
-ms.sourcegitcommit: c217b067985905cb21eafc5dd9a83568d7ff4e45
+ms.openlocfilehash: f751e7532e9627de3d3733476f7214654089e468
+ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36315149"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50170733"
 ---
 # <a name="getting-started-with-net-core-on-macos-using-visual-studio-for-mac"></a>Visual Studio for Mac을 사용하여 macOS에서 .NET Core 시작
 
 Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요한 전기능 IDE(통합 개발 환경)를 제공합니다. 이 항목에서는 Mac 및 .NET Core용 Visual Studio를 사용하여 간단한 콘솔 응용 프로그램을 빌드하는 과정을 안내합니다.
 
 > [!NOTE]
-> 사용자 의견은 매우 중요합니다. 두 가지가 Visual Studio for Mac의 개발 팀에 다음 두 가지 방법으로 의견을 제공할 수 있습니다.
+> 사용자 의견은 매우 중요합니다. Mac용 Visual Studio의 개발 팀에 다음 두 가지 방법으로 의견을 제공할 수 있습니다.
 > * Mac용 Visual Studio의 메뉴에서 **도움말** > **문제 보고**를 선택하거나 시작 화면에서 **문제 보고**를 선택하면 버그 보고서를 작성하기 위한 창이 열립니다. [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)(개발자 커뮤니티) 포털에서 의견을 추적할 수 있습니다.
-> * 제안하려면 메뉴에서 **도움말** > **제안하기**를 선택하거나 시작 화면에서 **제안하기**를 선택합니다. 그러면 [Mac용 Visual Studio UserVoice 웹 페이지](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac)로 이동됩니다.
+> * 제안하려면 메뉴에서 **도움말** > **제안하기**를 선택하거나 시작 화면에서 **제안하기**를 선택합니다. 그러면 [Mac용 Visual Studio Developer Community 웹 페이지](https://developercommunity.visualstudio.com/content/idea/post.html?space=41)로 이동됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

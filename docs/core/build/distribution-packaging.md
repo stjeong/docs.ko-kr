@@ -4,12 +4,12 @@ description: 배포를 위해 .NET Core를 패키지하고 이름과 버전을 �
 author: bleroy
 ms.author: mairaw
 ms.date: 06/28/2017
-ms.openlocfilehash: 084de6bbb3ce280beb0846431aeceacbb57d9a32
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: df1ba6a93106cd6b3ceafa93b7c548287878c3fe
+ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33217404"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48840497"
 ---
 # <a name="net-core-distribution-packaging"></a>.NET Core 배포 패키징
 
@@ -120,4 +120,4 @@ SDK 버전은 동일한 `[major].[minor]`를 사용하고, SDK의 기능 및 패
 
 ## <a name="building-packages"></a>패키지 빌드
 
-https://github.com/dotnet/source-build 리포지토리는 .NET Core SDK 및 모든 해당 구성 요소의 소스 tarball을 빌드하는 방법에 대한 지침을 제공합니다. 원본 빌드 리포지토리의 출력은 이 아티클의 첫 번째 섹션에 설명된 레이아웃과 일치합니다.
+[dotnet/source-build](https://github.com/dotnet/source-build) 리포지토리는 .NET Core SDK 및 모든 해당 구성 요소의 소스 Tarball을 빌드하는 방법에 대한 지침을 제공합니다. 원본 빌드 리포지토리의 출력은 이 아티클의 첫 번째 섹션에 설명된 레이아웃과 일치합니다.

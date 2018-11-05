@@ -5,12 +5,12 @@ ms.custom: updateeachrelease
 author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
-ms.openlocfilehash: 6dafc118d9c5c68446a5c2ba4e14614396f301eb
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: eb62bfe992e5b3774c4a8123eb9ca3f790eaf0b9
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43744902"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50192878"
 ---
 # <a name="install-the-net-framework-on-windows-xp-and-windows-server-2003"></a>Windows XP 및 Windows Server 2003에 .NET Framework 설치
 
@@ -21,7 +21,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 
 ![이 응용 프로그램을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
 
-이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows XP 및 Windows Server 2003에서 지원되지 않습니다. [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
+이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows XP 및 Windows Server 2003에서 지원되지 않습니다. [Windows 10 2018년 10월 업데이트](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update) 및 [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
 
 ## <a name="net-framework-403"></a>.NET Framework 4.0.3
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: cbda7114-c752-4f3e-ada1-b1e8dd262f2b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 069a95656e7ceaf454c01c47d61ff391bcbed2fe
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 6f96286da84e41e79fb0b6253d6f20eea89da21a
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46538887"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50201357"
 ---
 # <a name="interlocked-operations"></a>연동 작업
 
@@ -37,7 +37,7 @@ ms.locfileid: "46538887"
   
  최신 프로세서에서 <xref:System.Threading.Interlocked> 클래스의 메서드는 일반적으로 단일 명령으로 구현될 수 있습니다. 따라서 고성능 동기화를 제공하며 스핀 잠금과 같은 더 높은 수준의 동기화 메커니즘을 빌드하는 데 사용될 수 있습니다.  
   
- 조합에서 <xref:System.Threading.Monitor> 및 <xref:System.Threading.Interlocked> 클래스를 사용하는 예제는 [Monitor](https://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)를 참조하세요.  
+ <xref:System.Threading.Monitor> 및 <xref:System.Threading.Interlocked> 클래스를 함께 사용하는 예제는 <xref:System.Threading.Monitor>를 참조하세요.  
   
 ## <a name="compareexchange-example"></a>CompareExchange 예제
 

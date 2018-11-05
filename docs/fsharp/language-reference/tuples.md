@@ -1,6 +1,6 @@
 ---
 title: 튜플(F#)
-description: 'F # 튜플, 명명 되지는 않았지만 순서가 지정 된 값의 그룹화에 알아봅니다.'
+description: F# 튜플, 명명 되지는 않았지만 순서가 지정 된 값의 그룹화에 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: e7628e4c4b538c2fe52fca25d2597b10fec28d1c
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -22,7 +22,7 @@ struct(element, ... ,element )
 
 ## <a name="remarks"></a>설명
 
-각 *요소* 이전 구문에서 유효한 모든 F # 식일 수 있습니다.
+각 *요소* 이전 구문에서 유효한 모든 F# 식일 수 있습니다.
 
 ## <a name="examples"></a>예제
 
@@ -88,7 +88,7 @@ int * float * string
 
 ## <a name="interoperation-with-c-tuples"></a>C# 튜플와의 상호 운용
 
-C# 7.0에서는 튜플 언어 소개합니다.  C#의 튜플 구조체 이며 F #의 구조체 튜플에 해당 합니다.  C#을 사용 하 여 상호 운용 해야 하는 경우에 구조체 튜플을 사용 해야 합니다.
+C# 7.0에서는 튜플 언어 소개합니다.  C#의 튜플 구조체 이며 F#의 구조체 튜플에 해당 합니다.  C#을 사용 하 여 상호 운용 해야 하는 경우에 구조체 튜플을 사용 해야 합니다.
 
 작업을 수행 하는 것과 쉽습니다.  예를 들어 C# 클래스에 튜플을 전달 하 고는 튜플을 해당 결과 사용할 수 있다고 가정해 보겠습니다.
 
@@ -103,7 +103,7 @@ namespace CSharpTupleInterop
 }
 ```
 
-F # 코드에서 구조체 튜플 매개 변수로 전달 하 고 구조체 튜플 결과가 사용 다음 수 있습니다.
+F# 코드에서 구조체 튜플 매개 변수로 전달 하 고 구조체 튜플 결과가 사용 다음 수 있습니다.
 
 ```fsharp
 open TupleInterop
@@ -126,7 +126,7 @@ let struct (newX, newY) = Example.AddOneToXAndY(struct (1, 2))
 
 이 섹션에서는 컴파일하면 튜플 형식의 설명 합니다.  정보에는.NET Framework 3.5를 대상으로 하는 경우가 아니면를 읽는 데 필요한 이하로 하지 않습니다.
 
-튜플 형식의 몇 가지 일반, 모든 명명 된 개체 컴파일됩니다 `System.Tuple`, 인자 수, 또는 형식 매개 변수의 개수를 오버 로드 됩니다.입니다. 튜플 형식 또는 F # 구문을 인식 되지 않는 도구를 사용 하는 경우 C# 또는 Visual Basic과 같은 다른 언어에서 볼 때이 폼에 나타납니다. `Tuple` 형식을.NET Framework 4에서 도입 되었습니다. 이전 버전의.NET Framework를 대상으로 하는 경우 컴파일러의 버전을 사용 [System.Tuple](https://msdn.microsoft.com/library/5ac7953d-acdc-4a58-bfb7-c1f6406c0fa3) F # 핵심 라이브러리의 2.0 버전에서 합니다. 이 라이브러리의 형식은 2.0, 3.0 및 3.5 버전의.NET Framework를 대상으로 하는 응용 프로그램에만 사용 됩니다. 형식 전달은.NET Framework 2.0 및.NET Framework 4 F # 구성 요소 간의 이진 호환성을 유지 하는 데 사용 됩니다.
+튜플 형식의 몇 가지 일반, 모든 명명 된 개체 컴파일됩니다 `System.Tuple`, 인자 수, 또는 형식 매개 변수의 개수를 오버 로드 됩니다.입니다. 튜플 형식 또는 F# 구문을 인식 되지 않는 도구를 사용 하는 경우 C# 또는 Visual Basic과 같은 다른 언어에서 볼 때이 폼에 나타납니다. `Tuple` 형식을.NET Framework 4에서 도입 되었습니다. 이전 버전의.NET Framework를 대상으로 하는 경우 컴파일러의 버전을 사용 [System.Tuple](https://msdn.microsoft.com/library/5ac7953d-acdc-4a58-bfb7-c1f6406c0fa3) F# 핵심 라이브러리의 2.0 버전에서 합니다. 이 라이브러리의 형식은 2.0, 3.0 및 3.5 버전의.NET Framework를 대상으로 하는 응용 프로그램에만 사용 됩니다. 형식 전달은.NET Framework 2.0 및.NET Framework 4 F# 구성 요소 간의 이진 호환성을 유지 하는 데 사용 됩니다.
 
 ### <a name="compiled-form-of-struct-tuples"></a>컴파일된 구조체 튜플 형식
 

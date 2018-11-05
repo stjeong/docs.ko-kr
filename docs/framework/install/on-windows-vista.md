@@ -5,12 +5,12 @@ ms.custom: updateeachrelease
 author: rlander
 ms.author: mairaw
 ms.date: 08/03/2017
-ms.openlocfilehash: c54679292fb8bce16ec572e5a2fee12c1b47292a
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: e848b079d2c665052d8a5b5cfcd8fe379333b4b9
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44197104"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50192384"
 ---
 # <a name="install-the-net-framework-on-windows-vista-and-windows-server-2008"></a>Windows Vista 및 Windows Server 2008에 .NET Framework 설치
 
@@ -18,7 +18,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 
 ![이 응용 프로그램을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
 
-이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows Vista 및 Windows Server 2008에서 지원되지 않습니다. [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
+이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows Vista 및 Windows Server 2008에서 지원되지 않습니다. [Windows 10 2018년 10월 업데이트](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update) 및 [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
 
 ## <a name="net-framework-46"></a>.NET Framework 4.6
 

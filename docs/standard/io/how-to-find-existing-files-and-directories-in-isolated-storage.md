@@ -19,15 +19,16 @@ helpviewer_keywords:
 ms.assetid: eb28458a-6161-4e7a-9ada-30ef93761b5c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 09c112374458b70a464291e898e9a880c8679773
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9fd5bc2a8db8d98791cdd1a75b007555226c050b
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47398958"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50202096"
 ---
 # <a name="how-to-find-existing-files-and-directories-in-isolated-storage"></a>방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기
-격리된 저장소에서 디렉터리를 검색하려면 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A?displayProperty=nameWithType> 메서드를 사용합니다. 이 메서드는 검색 패턴을 나타내는 문자열을 사용합니다. 검색 패턴에서 단일 문자(?) 및 여러 문자(*) 와일드카드 문자를 모두 사용할 수 있지만, 와일드카드 문자는 이름의 마지막 부분에 표시되어야 합니다. 예를 들어, `directory1/*ect*`는 올바른 검색 문자열이지만 `*ect*/directory2`는 잘못된 검색 문자열입니다.  
+
+격리된 저장소에서 디렉터리를 검색하려면 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A?displayProperty=nameWithType> 메서드를 사용합니다. 이 메서드는 검색 패턴을 나타내는 문자열을 사용합니다. 검색 패턴에서 단일 문자(?) 및 여러 문자(\*) 와일드카드 문자를 모두 사용할 수 있지만, 와일드카드 문자는 이름의 마지막 부분에 표시되어야 합니다. 예를 들어, `directory1/*ect*`는 올바른 검색 문자열이지만 `*ect*/directory2`는 잘못된 검색 문자열입니다.  
   
  파일을 검색하려면 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A?displayProperty=nameWithType> 메서드를 사용합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A>에 적용되는 검색 문자열의 와일드카드 문자 제한 사항이 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A>에도 똑같이 적용됩니다.  
   

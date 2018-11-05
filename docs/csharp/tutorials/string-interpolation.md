@@ -3,16 +3,16 @@ title: C#의 문자열 보간
 description: 문자열 보간을 사용하여 C#으로 결과 문자열에 서식이 지정된 식 결과를 포함하는 방법을 알아봅니다.
 author: pkulikov
 ms.date: 05/09/2018
-ms.openlocfilehash: b28890034cc0ab73f96c825b5548223e1c5cd1f4
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 1a5d451f6fef926f0f142c7f09f564ce95618b39
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086705"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50188640"
 ---
 # <a name="string-interpolation-in-c"></a>C#의 문자열 보간 #
 
-이 자습서에서는 [문자열 보간](../language-reference/tokens/interpolated.md)을 사용하여 결과 문자열에서 식 결과의 서식을 지정하고 포함하는 방법을 보여줍니다. 예제에서는 사용자가 기본 C# 개념 및 .NET 형식 서식 지정에 익숙하다고 가정합니다. 문자열 보간 또는 .NET 형식 서식 지정을 처음 접하는 경우 [대화형 문자열 보간 빠른 시작](../quick-starts/interpolated-strings.yml)을 먼저 체크 아웃합니다. .NET에서 형식 서식 지정하는 방법에 대한 자세한 내용은 [.NET의 형식 지정](../../standard/base-types/formatting-types.md) 항목을 참조하세요.
+이 자습서에서는 [문자열 보간](../language-reference/tokens/interpolated.md)을 사용하여 결과 문자열에서 식 결과의 서식을 지정하고 포함하는 방법을 보여줍니다. 예제에서는 사용자가 기본 C# 개념 및 .NET 형식 서식 지정에 익숙하다고 가정합니다. 문자열 보간 또는 .NET 형식 서식 지정을 처음 접하는 경우 [대화형 문자열 보간 자습서](../tutorials/intro-to-csharp/interpolated-strings.yml)을 먼저 체크 아웃합니다. .NET에서 형식 서식 지정하는 방법에 대한 자세한 내용은 [.NET의 형식 지정](../../standard/base-types/formatting-types.md) 항목을 참조하세요.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 

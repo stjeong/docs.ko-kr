@@ -8,29 +8,30 @@ dev_langs:
 ms.assetid: 9404d758-679f-4ffb-995d-3d07d817659e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1d8b8c21af8ca0a21d97e8246ad82c42aaaf4974
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 7f835cfb45848ca2790c3dcb541629564e9cc48a
+ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45971970"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48261396"
 ---
 # <a name="migrating-from-the-xsltransform-class"></a>XslTransform 클래스에서 마이그레이션
-XSLT 아키텍처는 [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md)] 릴리스에서 다시 디자인되었습니다. <xref:System.Xml.Xsl.XslTransform> 클래스는 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스로 대체되었습니다.  
-  
- 다음 단원에서는 <xref:System.Xml.Xsl.XslCompiledTransform> 및 <xref:System.Xml.Xsl.XslTransform> 클래스 사이의 주요 차이점에 대해 설명합니다.  
-  
-## <a name="performance"></a>성능  
- <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 여러 가지로 성능이 향상되었습니다. CLR(공용 언어 런타임)이 다른 프로그래밍 언어에 대해 수행하는 것과 비슷하게 새 XSLT 프로세서는 XSLT 스타일시트를 공용 중간 형식으로 컴파일합니다. 스타일시트를 컴파일한 후 캐시하고 다시 사용할 수 있습니다.  
-  
- 또한 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 <xref:System.Xml.Xsl.XslTransform> 클래스보다 훨씬 빠르게 작동하도록 최적화되었습니다.  
-  
+
+XSLT 아키텍처는 Visual Studio 2005 릴리스에서 다시 디자인되었습니다. <xref:System.Xml.Xsl.XslTransform> 클래스는 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스로 대체되었습니다.
+
+ 다음 단원에서는 <xref:System.Xml.Xsl.XslCompiledTransform> 및 <xref:System.Xml.Xsl.XslTransform> 클래스 사이의 주요 차이점에 대해 설명합니다.
+
+## <a name="performance"></a>성능
+ <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 여러 가지로 성능이 향상되었습니다. CLR(공용 언어 런타임)이 다른 프로그래밍 언어에 대해 수행하는 것과 비슷하게 새 XSLT 프로세서는 XSLT 스타일시트를 공용 중간 형식으로 컴파일합니다. 스타일시트를 컴파일한 후 캐시하고 다시 사용할 수 있습니다.
+
+ 또한 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 <xref:System.Xml.Xsl.XslTransform> 클래스보다 훨씬 빠르게 작동하도록 최적화되었습니다.
+
 > [!NOTE]
->  <xref:System.Xml.Xsl.XslCompiledTransform> 클래스의 전체적인 성능이 <xref:System.Xml.Xsl.XslTransform> 클래스보다 좋지만 <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 클래스의 <xref:System.Xml.Xsl.XslCompiledTransform> 메서드는 변환에 대해 처음 호출될 때 <xref:System.Xml.Xsl.XslTransform.Load%2A> 클래스의 <xref:System.Xml.Xsl.XslTransform> 메서드보다 느리게 수행될 수 있습니다. 이는 XSLT 파일이 로드되기 전에 컴파일되어야 하기 때문입니다. 자세한 내용은 [XslCompiledTransform Slower than XslTransform?](https://blogs.msdn.microsoft.com/antosha/2006/07/16/xslcompiledtransform-slower-than-xsltransform/)(XslCompiledTransform이 XslTransform보다 느린가?)라는 블로그 게시물을 참조하세요.  
-  
-## <a name="security"></a>보안  
- <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 기본적으로 XSLT `document()` 함수 및 포함된 스크립팅에 대한 지원을 비활성화합니다. 이 기능을 활성화하는 <xref:System.Xml.Xsl.XsltSettings> 개체를 만들고 <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 메서드에 전달하여 이러한 기능을 활성화할 수 있습니다. 다음 예제에서는 스크립팅을 활성화하고 XSLT 변형을 수행하는 방법을 보여 줍니다.  
-  
+>  <xref:System.Xml.Xsl.XslCompiledTransform> 클래스의 전체적인 성능이 <xref:System.Xml.Xsl.XslTransform> 클래스보다 좋지만 <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 클래스의 <xref:System.Xml.Xsl.XslCompiledTransform> 메서드는 변환에 대해 처음 호출될 때 <xref:System.Xml.Xsl.XslTransform.Load%2A> 클래스의 <xref:System.Xml.Xsl.XslTransform> 메서드보다 느리게 수행될 수 있습니다. 이는 XSLT 파일이 로드되기 전에 컴파일되어야 하기 때문입니다. 자세한 내용은 [XslCompiledTransform Slower than XslTransform?](https://blogs.msdn.microsoft.com/antosha/2006/07/16/xslcompiledtransform-slower-than-xsltransform/)(XslCompiledTransform이 XslTransform보다 느린가?)라는 블로그 게시물을 참조하세요.
+
+## <a name="security"></a>보안
+ <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 기본적으로 XSLT `document()` 함수 및 포함된 스크립팅에 대한 지원을 비활성화합니다. 이 기능을 활성화하는 <xref:System.Xml.Xsl.XsltSettings> 개체를 만들고 <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 메서드에 전달하여 이러한 기능을 활성화할 수 있습니다. 다음 예제에서는 스크립팅을 활성화하고 XSLT 변형을 수행하는 방법을 보여 줍니다.
+
  [!code-csharp[XML_Migration#16](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#16)]
  [!code-vb[XML_Migration#16](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#16)]  
   
@@ -44,7 +45,7 @@ XSLT 아키텍처는 [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md
  모든 임시 파일이 클라이언트에서 제거되도록 <xref:System.Xml.Xsl.XslCompiledTransform.TemporaryFiles%2A> 속성을 사용하여 추가 정리할 수도 있습니다.  
   
 ### <a name="support-for-the-xsloutput-element-and-xmlwriter"></a>xsl:output 요소 및 XmlWriter 지원  
- 변환 출력을 <xref:System.Xml.Xsl.XslTransform> 개체로 보낸 경우 `xsl:output` 클래스에서는 <xref:System.Xml.XmlWriter> 설정을 무시합니다. <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 스타일시트의 <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings%2A> 요소에서 파생된 출력 정보가 있는 <xref:System.Xml.XmlWriterSettings> 개체를 반환하는 `xsl:output` 개체를 포함합니다. <xref:System.Xml.XmlWriterSettings> 개체를 사용하여 <xref:System.Xml.XmlWriter> 메서드로 전달될 수 있는 올바른 설정을 가진 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> 개체를 만들 수 있습니다. 다음 C# 코드에서는 이 동작을 보여 줍니다.  
+ 변형 출력을 <xref:System.Xml.Xsl.XslTransform> 개체로 보낸 경우 `xsl:output` 클래스에서는 <xref:System.Xml.XmlWriter> 설정을 무시합니다. <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 스타일시트의 <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings%2A> 요소에서 파생된 출력 정보가 있는 <xref:System.Xml.XmlWriterSettings> 개체를 반환하는 `xsl:output` 개체를 포함합니다. <xref:System.Xml.XmlWriterSettings> 개체를 사용하여 <xref:System.Xml.XmlWriter> 메서드로 전달될 수 있는 올바른 설정을 가진 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> 개체를 만들 수 있습니다. 다음 C# 코드에서는 이 동작을 보여 줍니다.  
   
 ```  
 // Create the XslTransform object and load the style sheet.  
@@ -68,7 +69,7 @@ writer.Close();
 ## <a name="behavioral-differences"></a>동작 차이점  
   
 ### <a name="transforming-to-an-xmlreader"></a>XmlReader로 변형  
- <xref:System.Xml.Xsl.XslTransform> 클래스에는 변환 결과를 <xref:System.Xml.XmlReader> 개체로 반환하는 여러 변환 오버로드가 있습니다. 이러한 오버로드를 사용하여 결과 XML 트리의 serialization 및 deserialization 오버헤드 없이 변환 결과를 메모리 내 표현(예: <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XPath.XPathDocument>)으로 로드할 수 있습니다. 다음 C# 코드에서는 변환 결과를 <xref:System.Xml.XmlDocument> 개체로 로드하는 방법을 보여 줍니다.  
+ <xref:System.Xml.Xsl.XslTransform> 클래스에는 변형 결과를 <xref:System.Xml.XmlReader> 개체로 반환하는 여러 변형 오버로드가 있습니다. 이러한 오버로드를 사용하여 결과 XML 트리의 serialization 및 deserialization 오버헤드 없이 변환 결과를 메모리 내 표현(예: <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XPath.XPathDocument>)으로 로드할 수 있습니다. 다음 C# 코드에서는 변형 결과를 <xref:System.Xml.XmlDocument> 개체로 로드하는 방법을 보여 줍니다.  
   
 ```  
 // Load the style sheet  
@@ -80,7 +81,7 @@ XmlDocument doc = new XmlDocument();
 doc.Load(xslt.Transform(input, (XsltArgumentList)null));  
 ```  
   
- <xref:System.Xml.Xsl.XslCompiledTransform> 클래스에서는 <xref:System.Xml.XmlReader> 개체로 변환하는 작업을 지원하지 않습니다. 그러나 <xref:System.Xml.XPath.XPathNavigator.CreateNavigator%2A>에서 직접 결과 XML 트리를 로드하기 위해 <xref:System.Xml.XmlWriter> 메서드를 사용하여 유사한 작업을 할 수 있습니다. 다음 C# 코드에서는 <xref:System.Xml.Xsl.XslCompiledTransform>을 사용하여 동일한 작업을 수행하는 방법을 보여 줍니다.  
+ <xref:System.Xml.Xsl.XslCompiledTransform> 클래스에서는 <xref:System.Xml.XmlReader> 개체로 변형하는 작업을 지원하지 않습니다. 그러나 <xref:System.Xml.XPath.XPathNavigator.CreateNavigator%2A>에서 직접 결과 XML 트리를 로드하기 위해 <xref:System.Xml.XmlWriter> 메서드를 사용하여 유사한 작업을 할 수 있습니다. 다음 C# 코드에서는 <xref:System.Xml.Xsl.XslCompiledTransform>을 사용하여 동일한 작업을 수행하는 방법을 보여 줍니다.  
   
 ```  
 // Transform input document to XmlDocument for additional processing  
@@ -115,7 +116,7 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
   
 -   XPath 확장 함수: [ms:string-compare 함수](https://msdn.microsoft.com/library/20616b82-9e27-444c-b714-4f1e09b73aee), [ms:utc 함수](https://msdn.microsoft.com/library/ef26fc88-84c6-4fb9-9c3b-f2f5264b864f), [ms:namespace-uri 함수](https://msdn.microsoft.com/library/91f9cabf-ab93-4dbe-9c12-e6a75214f4c7), [ms:local-name 함수](https://msdn.microsoft.com/library/10ed60a1-17a9-4d74-8b98-7940ac97c0b5), [ms:number 함수](https://msdn.microsoft.com/library/b94fc08e-1f31-4f48-b1a8-6d78c1b5d954), [ms:format-date 함수](https://msdn.microsoft.com/library/51f35609-89a9-4098-a166-88bf01300bf5) 및 [ms:format-time 함수](https://msdn.microsoft.com/library/e5c2df2d-e8fb-4a8f-bfc0-db84ea12a5d5)가 이제 지원됩니다.  
   
--   스키마 관련 XPath 확장 함수: 이러한 함수는 기본적으로 <xref:System.Xml.Xsl.XslCompiledTransform>에서 지원되지 않습니다. 그러나 이러한 함수를 확장명 함수로 구현할 수 있습니다.  
+-   스키마 관련 XPath 확장명 함수: 이러한 함수는 기본적으로 <xref:System.Xml.Xsl.XslCompiledTransform>에서 지원되지 않습니다. 그러나 이러한 함수를 확장명 함수로 구현할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목
 

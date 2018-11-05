@@ -2,12 +2,12 @@
 title: LINQ 쿼리에 대한 데이터 소스 활성화1
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
-ms.openlocfilehash: 204d2d6104a065f1d1cf9e731dc01f400218f91b
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 1aa3a22028b0b3d7c705076a3e16379e09323271
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49122703"
 ---
 # <a name="enabling-a-data-source-for-linq-querying"></a>LINQ 쿼리에 대한 데이터 소스 활성화
 다양한 방법으로 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]를 확장하여 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 패턴에서 원하는 데이터 소스를 쿼리할 수 있습니다. 데이터 소스의 예를 몇 가지 들자면 데이터 구조, 웹 서비스, 파일 시스템 또는 데이터베이스가 있습니다. 쿼리의 구문과 패턴은 변경되지 않으므로 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 패턴을 사용하면 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리가 활성화된 데이터 소스를 클라이언트가 쉽게 쿼리할 수 있습니다. 다음은 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]를 다양한 데이터 소스로 확장할 수 있는 방법입니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "44253184"
  메모리 내 데이터의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 활성화하는 방법에는 두 가지가 있습니다. 데이터가 <xref:System.Collections.Generic.IEnumerable%601>을 구현하는 형식이라면 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects를 사용하여 데이터를 쿼리할 수 있습니다. 하지만 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스를 구현하여 형식의 열거형을 활성화하는 것이 바람직하지 않다면 해당 형식에서 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 표준 쿼리 연산자 메서드를 정의하거나 해당 형식을 확장하는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 표준 쿼리 연산자 메서드를 만들 수 있습니다. 표준 쿼리 연산자의 사용자 지정 구현에서는 지연된 실행을 사용하여 결과를 반환해야 합니다.  
   
 ### <a name="remote-data"></a>원격 데이터  
- 원격 데이터 소스의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 활성화하는 가장 좋은 방법은 <xref:System.Linq.IQueryable%601> 인터페이스를 구현하는 것입니다. 하지만 이 방식은 데이터 소스에서 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 같은 공급자를 확장하는 방식과 다릅니다. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]과 같은 기존 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 기술을 [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)]에서 사용할 수 있는 다른 데이터 소스 형식으로 확장하는 공급자 모델은 없습니다.  
+ 원격 데이터 소스의 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리를 활성화하는 가장 좋은 방법은 <xref:System.Linq.IQueryable%601> 인터페이스를 구현하는 것입니다. 하지만 이 방식은 데이터 소스에서 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 같은 공급자를 확장하는 방식과 다릅니다. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]과 같은 기존 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 기술을 Visual Studio 2008에서 사용할 수 있는 다른 데이터 소스 형식으로 확장하는 공급자 모델은 없습니다.
   
 ## <a name="iqueryable-linq-providers"></a>IQueryable LINQ 공급자  
  <xref:System.Linq.IQueryable%601>을 구현하는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자의 복잡성은 경우에 따라 크게 다릅니다. 이 단원에서는 이러한 복잡성의 차이에 대해 설명합니다.  

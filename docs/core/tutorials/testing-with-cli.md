@@ -4,12 +4,12 @@ description: 이 자습서에서는 명령줄에서 .NET Core 프로젝트를 �
 author: cartermp
 ms.author: mairaw
 ms.date: 09/10/2018
-ms.openlocfilehash: 8131e51577bcad9191c0cacb61317fa146bf476d
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9984b4f43ca8c09cc0948cad7e6c176127384361
+ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47235389"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49415226"
 ---
 # <a name="organizing-and-testing-projects-with-the-net-core-command-line"></a>.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트
 
@@ -101,7 +101,7 @@ Meow!
 
 ### <a name="testing-the-sample"></a>샘플 테스트
 
-`NewTypes` 프로젝트가 구현되었으며, 애완 동물 관련 유형을 폴더에 보관하여 구성했습니다. 다음으로, 테스트 프로젝트를 만들고 [xUnit](https://xunit.github.io/) 테스트 프레임워크를 사용하여 테스트 작성을 시작합니다. 유닛 테스트를 사용하면 애완 동물 유형의 동작을 자동으로 검사하여 제대로 작동하는지 확인할 수 있습니다.
+`NewTypes` 프로젝트가 구현되었으며, 애완 동물 관련 유형을 폴더에 보관하여 구성했습니다. 다음으로, 테스트 프로젝트를 만들고 [xUnit](https://xunit.github.io/) 테스트 프레임워크를 사용하여 테스트 작성을 시작합니다. 유닛 테스트를 사용하면 애완동물 유형의 동작을 자동으로 검사하여 제대로 작동하는지 확인할 수 있습니다.
 
 *test* 폴더를 만들고, 이 폴더 안에 *NewTypesTests* 폴더를 만듭니다. *NewTypesTests* 폴더의 명령 프롬프트에서 `dotnet new xunit`를 실행합니다. 그러면 *NewTypesTests.csproj* 및 *UnitTest1.cs*라는 두 파일이 생성됩니다.
 

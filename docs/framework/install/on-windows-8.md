@@ -5,12 +5,12 @@ description: Windows 8에 .NET Framework를 설치하는 방법 알아보기
 author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
-ms.openlocfilehash: f1edc928318ec56853df06c1382465e24d9604c9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2304e8e2865c00ef480cc3d595195248db3f4d2a
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515886"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50196546"
 ---
 # <a name="install-the-net-framework-on-windows-8-and-windows-server-2012"></a>Windows 8 및 Windows Server 2012에 .NET Framework 설치
 
@@ -18,7 +18,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 
 ![이 응용 프로그램을 시작할 수 없습니다.](./media/this-application-could-not-be-started.png)
 
-이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows Server 2012에서 지원되지만 Windows 8에서 지원되지 않습니다. [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
+이러한 지침은 필요한 .NET Framework 버전을 설치하는 데 도움이 됩니다. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 최신 버전입니다. Windows Server 2012에서 지원되지만 Windows 8에서 지원되지 않습니다. [Windows 10 2018년 10월 업데이트](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update) 및 [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)와 함께 포함됩니다.
 
 ## <a name="net-framework-472"></a>.NET Framework 4.7.2
 

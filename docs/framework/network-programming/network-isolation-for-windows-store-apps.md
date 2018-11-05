@@ -2,14 +2,12 @@
 title: Windows 스토어 앱에 대한 네트워크 격리
 ms.date: 03/30/2017
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 97096d6fa41cd25a92c23cd47008b33fb6037190
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 537d94201b3e0ae92707c858f10032848a690004
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195409"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50182673"
 ---
 # <a name="network-isolation-for-windows-store-apps"></a>Windows 스토어 앱에 대한 네트워크 격리
 <xref:System.Net>, <xref:System.Net.Http> 및 <xref:System.Net.Http.Headers> 네임스페이스의 클래스는 Windows 스토어 앱 또는 데스크톱 앱을 개발하는 데 사용할 수 있습니다. Windows 스토어 앱에서 사용할 때 이러한 네임스페이스의 클래스는 [!INCLUDE[win8](../../../includes/win8-md.md)]에서 사용한 응용 프로그램 보안 모델의 일부인 네트워크 격리의 영향을 받습니다. 시스템의 Windows 스토어 앱에서 네트워크에 액세스할 수 있도록 앱 매니페스트에서 적절한 네트워크 기능을 사용해야 합니다.  
@@ -19,7 +17,7 @@ ms.locfileid: "47195409"
   
 1.  앱에 필요한 네트워크 액세스 요청의 방향을 결정합니다. 이 방향은 아웃바운드 클라이언트에서 시작된 요청 또는 원치 않는 인바운드 요청이거나, 이러한 두 네트워크 요청 유형을 조합한 것일 수 있습니다.  
   
-2.  이러한 앱과 통신하는 네트워크 리소스의 유형을 결정합니다. 앱이 홈 또는 회사 네트워크에서 신뢰할 수 있는 리소스와 통신해야 할 수도 있습니다. 앱에서 인터넷에 있는 리소스와 통신해야 할 수도 있습니다. 앱에서 두 가지 유형의 네트워크 리소스 모두에 액세스해야 할 수도 있습니다.  
+2.  앱과 통신하는 네트워크 리소스의 유형을 결정합니다. 앱이 홈 또는 회사 네트워크에서 신뢰할 수 있는 리소스와 통신해야 할 수도 있습니다. 앱에서 인터넷에 있는 리소스와 통신해야 할 수도 있습니다. 앱에서 두 가지 유형의 네트워크 리소스 모두에 액세스해야 할 수도 있습니다.  
   
 3.  앱 매니페스트에서 필요한 최소 네트워킹 격리 기능을 구성합니다.  
   

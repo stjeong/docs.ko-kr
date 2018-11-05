@@ -3,12 +3,12 @@ title: 콘솔 응용 프로그램
 description: 이 자습서에서는 .NET Core 및 C# 언어의 다양한 기능에 대해 설명합니다.
 ms.date: 03/06/2017
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
-ms.openlocfilehash: da3f8f913d452b5c3c9dcda6079067c879a678dd
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 9255ad9b1fefc828e767fb8e6ccc62b2eaf23fd6
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46937594"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "50183622"
 ---
 # <a name="console-application"></a>콘솔 응용 프로그램
 
@@ -155,7 +155,7 @@ if (lineLength > 70)
 
 ## <a name="async-tasks"></a>비동기 작업
 
-이 마지막 단계에서는 텍스트 표시 속도를 높이거나 낮추려는 경우 사용자로부터 입력을 읽는 작업을 실행하면서 다른 작업에서 비동기적으로 출력을 쓰는 코드를 추가합니다. 이 과정은 몇 가지 단계로 진행되며 마지막에 필요한 모든 업데이트가 수행됩니다.
+이 마지막 단계에서는 텍스트 표시 속도를 높이거나 낮추려는 경우 또는 텍스트 표시를 완전히 중지하려는 경우 사용자로부터 입력을 읽는 작업을 실행하면서 다른 작업에서 비동기적으로 출력을 쓰는 코드를 추가합니다. 이 과정은 몇 가지 단계로 진행되며 마지막에 필요한 모든 업데이트가 수행됩니다.
 첫 번째 단계는 지금까지 파일을 읽고 표시하기 위해 만든 코드를 나타내는 비동기 <xref:System.Threading.Tasks.Task> 반환 메서드를 만드는 것입니다.
 
 이 메서드를 `Program` 클래스(`Main` 메서드 본문에서 가져옴)에 추가합니다.
@@ -190,7 +190,7 @@ ShowTeleprompter().Wait();
 > [!NOTE]
 > C# 7.1 이상을 사용하는 경우 [`async` `Main` 메서드](../whats-new/csharp-7-1.md#async-main)로 콘솔 응용 프로그램을 만들 수 있습니다.
 
-다음에는 콘솔에서 읽는 두 번째 비동기 메서드를 작성하고 ‘<’(보다 작음) 또는 ‘>’(보다 큼) 키를 확인해야 합니다. 해당 작업에 대해 추가하는 메서드는 다음과 같습니다.
+다음에는 콘솔에서 읽는 두 번째 비동기 메서드를 작성하고 ‘<’(보다 작음), ‘>’(보다 큼) 및 ‘X’ 또는 ‘x’ 키를 확인해야 합니다. 해당 작업에 대해 추가하는 메서드는 다음과 같습니다.
 
 ```csharp
 private static async Task GetInput()
@@ -208,13 +208,18 @@ private static async Task GetInput()
             {
                 delay += 10;
             }
+            else if (key.KeyChar == 'X' || key.KeyChar == 'x')
+            {
+                break;
+            }
         } while (true);
     };
     await Task.Run(work);
 }
 ```
 
-이 메서드는 콘솔에서 키를 읽고 사용자가 ‘<’(보다 작음) 또는 ‘>’(보다 큼) 키를 누를 때 지연을 나타내는 지역 변수를 수정하는 <xref:System.Action> 대리자를 나타내는 람다 식을 만듭니다. 이 메서드는 <xref:System.Console.ReadKey> 를 사용하여 차단한 후 사용자가 키를 누를 때까지 기다립니다.
+이 메서드는 콘솔에서 키를 읽고 사용자가 ‘<’(보다 작음) 또는 ‘>’(보다 큼) 키를 누를 때 지연을 나타내는 지역 변수를 수정하는 <xref:System.Action> 대리자를 나타내는 람다 식을 만듭니다. 사용자가 ‘X’ 또는 ‘x’ 키를 누를 때 대리자 메서드가 완료되면 사용자가 언제든지 텍스트 표시를 중지할 수 있습니다.
+이 메서드는 <xref:System.Console.ReadKey> 를 사용하여 차단한 후 사용자가 키를 누를 때까지 기다립니다.
 
 이 기능을 완료하려면 이러한 두 작업(`GetInput` 및 `ShowTeleprompter`)을 시작하고 이러한 두 작업 간에 공유 데이터를 관리하는 새 `async Task` 반환 메서드를 만들어야 합니다.
 

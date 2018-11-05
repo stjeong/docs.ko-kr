@@ -1,15 +1,15 @@
-﻿---
+---
 title: .NET Core 정보
 description: .NET Core에 대한 자세히 알아봅니다.
 author: richlander
 ms.author: mairaw
 ms.date: 08/01/2018
-ms.openlocfilehash: d9943246b683c8fd892e7bc5fd09a10b72e31a5f
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: fc4b76df8b71865b14caf27c7e21906cccc88d07
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "48252227"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50197655"
 ---
 # <a name="about-net-core"></a>.NET Core 정보
 
@@ -25,24 +25,19 @@ ms.locfileid: "48252227"
 
 ## <a name="languages"></a>언어
 
-C#, Visual Basic 및 F# 언어를 사용하여 .NET Core에 대한 응용 프로그램 및 라이브러리를 작성할 수 있습니다. 이러한 언어는 [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text 및 Vim을 비롯한 즐겨찾는 텍스트 편집기 및 IDE에 통합될 수 있습니다. 이 통합은 [OmniSharp](http://www.omnisharp.net/) 및 [Ionide](http://ionide.io) 프로젝트의 적합한 담당자에 의해 부분적으로 제공됩니다.
+C#, Visual Basic 및 F# 언어를 사용하여 .NET Core에 대한 응용 프로그램 및 라이브러리를 작성할 수 있습니다. 이러한 언어는 [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text 및 Vim을 비롯한 즐겨찾는 텍스트 편집기 및 IDE에 통합될 수 있습니다. 이 통합은 [OmniSharp](https://www.omnisharp.net/) 및 [Ionide](http://ionide.io) 프로젝트의 적합한 담당자에 의해 부분적으로 제공됩니다.
 
 ## <a name="apis"></a>API
 
 .NET Core는 다음과 같은 여러 시나리오에서 API를 노출합니다.
 
-- [bool][bool] 및 [int][int]와 같은 기본 형식
+- [bool](../csharp/language-reference/keywords/bool.md) 및 [int](../csharp/language-reference/keywords/int.md)와 같은 기본 형식
 - <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> 및 <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>과 같은 컬렉션
 - <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> 및 <xref:System.IO.FileStream?displayProperty=nameWithType>과 같은 유틸리티 형식
-- <xref:System.Data.DataSet?displayProperty=nameWithType> 및 [DbSet][dbset]과 같은 데이터 형식
-- <xref:System.Numerics.Vector?displayProperty=nameWithType> 및 [파이프라인][pipelines]과 같은 고성능 형식입니다.
+- <xref:System.Data.DataSet?displayProperty=nameWithType> 및 [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/)과 같은 데이터 형식
+- <xref:System.Numerics.Vector?displayProperty=nameWithType> 및 [파이프라인](https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/)과 같은 고성능 형식
 
 .NET Core는 [.NET Standard](../standard/net-standard.md) 사양을 구현하여 .NET Framework 및 Mono API에서 호환성을 제공합니다.
-
-[bool]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool
-[int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
-[pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
-[dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 
 ## <a name="frameworks"></a>프레임워크
 
@@ -111,7 +106,7 @@ Windows 및 Unix 구현은 크기가 비슷합니다. CoreFX는 [Microsoft.Win32
 
 ### <a name="comparison-with-mono"></a>Mono와 비교
 
-[Mono](http://www.mono-project.com/)는 원래 플랫폼 간 [오픈 소스](https://github.com/mono/mono) .NET 구현으로, 2004년에 처음 제공되었습니다. .NET Framework의 커뮤니티 복제본으로 생각할 수 있습니다. Mono 프로젝트 팀은 호환되는 구현을 제공하기 위해 Microsoft에서 게시한 오픈 [.NET 표준](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md)(특히 ECMA 335)을 사용했습니다.
+[Mono](https://www.mono-project.com/)는 원래 플랫폼 간 [오픈 소스](https://github.com/mono/mono) .NET 구현으로, 2004년에 처음 제공되었습니다. .NET Framework의 커뮤니티 복제본으로 생각할 수 있습니다. Mono 프로젝트 팀은 호환되는 구현을 제공하기 위해 Microsoft에서 게시한 오픈 [.NET 표준](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md)(특히 ECMA 335)을 사용했습니다.
 
 .NET Core와 Mono 간의 주요 차이점은 다음과 같습니다.
 

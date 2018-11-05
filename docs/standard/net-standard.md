@@ -6,12 +6,12 @@ ms.author: mairaw
 ms.date: 07/19/2018
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.openlocfilehash: 91dbbefd247b5e175da7dc3560b6323cbec1972b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: bdaaa22f20f21e823459914a900997050a6624a6
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45595563"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50186072"
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -49,6 +49,8 @@ ms.locfileid: "45595563"
 
 1. 다음으로 낮은 버전의 .NET 표준을 대상으로 지정하고 프로젝트를 빌드합니다.
 2. 프로젝트가 성공적으로 빌드되면 1단계를 반복합니다. 그렇지 않으면 다음으로 높은 버전으로 대상을 변경합니다. 이 버전을 사용해야 합니다.
+
+그러나 하위 .NET Standard 버전을 대상으로 지정하면 많은 지원 종속성이 도입됩니다. 프로젝트에서 .NET 1.x를 대상으로 지정하는 경우에는 .NET Standard 2.0 ‘또한 대상으로 지정’하는 것이 좋습니다. 이렇게 하면 .NET Standard 2.0 호환 프레임워크에서 실행되는 라이브러리의 사용자에 대한 종속성 그래프가 단순화되고 다운로드해야 하는 패키지 수가 감소합니다.
 
 ### <a name="net-standard-versioning-rules"></a>.NET 표준 버전 관리 규칙
 

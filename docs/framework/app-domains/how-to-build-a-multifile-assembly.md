@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 916db7ec9bee0c85db1f2fcf4db7a9f8a61f9be3
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 3072be4e870b64edcea32bb7159db8c64c50d840
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744085"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50183102"
 ---
 # <a name="how-to-build-a-multifile-assembly"></a>방법: 다중 파일 어셈블리 빌드
 이 문서는 다중 파일 어셈블리를 만드는 방법을 설명하고 프로시저의 각 단계를 보여 주는 코드를 제공합니다.  
@@ -97,7 +97,7 @@ ms.locfileid: "32744085"
      [MSIL 디스어셈블러(Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)를 사용하면 어셈블리의 콘텐츠를 검사 할 수 있으며, 파일이 어셈블리인지 모듈인지를 결정할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [어셈블리 만들기](../../../docs/framework/app-domains/create-assemblies.md)  
- [방법: 어셈블리 내용 보기](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [다중 파일 어셈블리](../../../docs/framework/app-domains/multifile-assemblies.md)
+- [어셈블리 만들기](../../../docs/framework/app-domains/create-assemblies.md)  
+- [방법: 어셈블리 내용 보기](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)  
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
+- [다중 파일 어셈블리](../../../docs/framework/app-domains/multifile-assemblies.md)

@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: be32659a270cd7c6b7e3551594934926eabf0d31
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2861d2364d2c29d15b25911524ef28aa78130913
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399771"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50202922"
 ---
 # <a name="mdbgexe-net-framework-command-line-debugger"></a>MDbg.exe(.NET Framework 명령줄 디버거)
 도구 공급업체와 응용 프로그램 개발자는 .NET Framework 명령줄 디버거를 사용하여 .NET Framework 공용 언어 런타임을 대상으로 하는 프로그램에서 버그를 찾고 수정할 수 있습니다. 이 도구에는 디버깅 서비스를 제공하기 위해 런타임 디버깅 API가 사용됩니다. MDbg.exe를 사용하여 관리 코드만 디버깅할 수 있습니다. 관리되지 않는 코드의 디버깅은 지원하지 않습니다.  
   
- 이 도구는 NuGet을 통해 사용할 수 있습니다. 설치 정보는 [MDbg 0.1.0](http://www.nuget.org/packages/MDbg/0.1.0)을 참조하세요. 도구를 실행하려면 패키지 관리자 콘솔을 사용합니다. 패키지 관리자 콘솔을 사용하는 방법에 대한 자세한 내용은 [패키지 관리자 콘솔 사용](http://docs.nuget.org/docs/start-here/Using-the-Package-Manager-Console)을 참조하세요.  
+이 도구는 NuGet을 통해 사용할 수 있습니다. 설치 정보는 [MDbg 0.1.0](https://www.nuget.org/packages/MDbg/0.1.0)을 참조하세요. 도구를 실행하려면 패키지 관리자 콘솔을 사용합니다. 패키지 관리자 콘솔을 사용하는 방법에 대한 자세한 내용은 [패키지 관리자 콘솔](/nuget/tools/package-manager-console) 문서를 참조하세요.
   
- 패키지 관리자 프롬프트에 다음을 입력합니다.  
+패키지 관리자 프롬프트에 다음을 입력합니다.  
   
 ## <a name="syntax"></a>구문  
   

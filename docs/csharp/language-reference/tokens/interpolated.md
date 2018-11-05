@@ -12,12 +12,12 @@ helpviewer_keywords:
 - interpolated string [C#]
 author: pkulikov
 ms.author: ronpet
-ms.openlocfilehash: 2009b3620bc4874520221a4ea847222feafca01b
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 2758a724b7e1e410fd1e1ba262db451b7f994164
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44251734"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50196991"
 ---
 # <a name="---string-interpolation-c-reference"></a>$ - 문자열 보간(C# 참조)
 
@@ -86,7 +86,7 @@ ms.locfileid: "44251734"
 
 ## <a name="additional-resources"></a>추가 자료
 
-문자열 보간을 처음 접하는 경우 [C#의 문자열 보간](../../quick-starts/interpolated-strings.yml)을 참조하세요. 자세한 내용은 [C#의 문자열 보간](../../tutorials/string-interpolation.md) 자습서를 참조하세요.
+문자열 보간을 처음 접하는 경우 [C#의 문자열 보간](../../tutorials/intro-to-csharp/interpolated-strings.yml) 대화형 자습서를 참조하세요. 또는 머신에서 로컬로 [C#의 문자열 보간](../../tutorials/string-interpolation.md) 자습서를 시도할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -17,17 +17,15 @@ helpviewer_keywords:
 - minimum freshness policy
 - age of cached resources
 ms.assetid: 74f0bcaf-5c95-40c1-9967-f3bbf1d2360a
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: d24fa2ece34d20a3d9e8d6f971eebae5da0f496e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 650b7e17cc486068ba72436931e8bc96a6d0261c
+ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198087"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50200074"
 ---
 # <a name="time-based-cache-policies"></a>시간 기반 캐시 정책
-시간 기반 캐시 정책은 리소스가 검색된 시간, 리소스와 함께 반환된 헤더, 현재 시간을 사용하여 캐시된 항목의 새로 고침을 정의합니다. 시간 기반 캐시 정책을 설정하는 경우 <xref:System.Net.Cache.HttpRequestCacheLevel.Default> 시간 기반 정책을 사용하거나 사용자 지정 시간 기반 정책을 만들 수 있습니다. HTTP(Hypertext Transfer Protocol)를 사용하여 얻은 리소스에 대한 기본 시간 기반 정책을 사용하는 경우 정확한 캐시 동작은 [http://www.ietf.org](http://www.ietf.org/)에 있는 RFC 2616의 섹션 13 및 14에 지정된 동작 및 캐시된 응답에 포함된 헤더에 의해 결정됩니다. HTTP 리소스에 대한 기본 시간 기반 정책을 설정하는 방법을 보여 주는 코드 예제는 [방법: 응용 프로그램에 대한 기본 시간 기반 캐시 정책 설정](../../../docs/framework/network-programming/how-to-set-the-default-time-based-cache-policy-for-an-application.md)을 참조하세요. 캐시 정책을 만들고 사용하는 방법을 보여 주는 코드 예제는 [네트워크 응용 프로그램에서 캐싱 구성](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)을 참조하세요.  
+시간 기반 캐시 정책은 리소스가 검색된 시간, 리소스와 함께 반환된 헤더, 현재 시간을 사용하여 캐시된 항목의 새로 고침을 정의합니다. 시간 기반 캐시 정책을 설정하는 경우 <xref:System.Net.Cache.HttpRequestCacheLevel.Default> 시간 기반 정책을 사용하거나 사용자 지정 시간 기반 정책을 만들 수 있습니다. HTTP(Hypertext Transfer Protocol)를 사용하여 얻은 리소스에 대한 기본 시간 기반 정책을 사용하는 경우 정확한 캐시 동작은 [IETF(Internet Engineering Task Force)](https://www.ietf.org/) 웹 사이트에 있는 RFC 2616의 섹션 13 및 14에 지정된 동작 및 캐시된 응답에 포함된 헤더에 의해 결정됩니다. HTTP 리소스에 대한 기본 시간 기반 정책을 설정하는 방법을 보여 주는 코드 예제는 [방법: 응용 프로그램에 대한 기본 시간 기반 캐시 정책 설정](../../../docs/framework/network-programming/how-to-set-the-default-time-based-cache-policy-for-an-application.md)을 참조하세요. 캐시 정책을 만들고 사용하는 방법을 보여 주는 코드 예제는 [네트워크 응용 프로그램에서 캐싱 구성](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)을 참조하세요.  
   
 ## <a name="criteria-to-determine-freshness-of-cached-entries"></a>캐시된 항목의 새로 고침을 결정하는 조건  
  시간 기반 캐시 정책을 사용자 지정하려면 다음 조건 중 하나 이상을 사용하여 캐시된 항목의 새로 고침을 결정하도록 지정할 수 있습니다.  

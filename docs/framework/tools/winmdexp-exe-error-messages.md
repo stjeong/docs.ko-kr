@@ -159,15 +159,15 @@ helpviewer_keywords:
 ms.assetid: 8271973c-deba-47a6-8e5e-04ce63f146ad
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f051af9284ddbf583e5454f7bdc106a061489d3c
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 95d971003a28ec411b3734009bcb978c630cb811
+ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44075461"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48873789"
 ---
 # <a name="winmdexpexe-error-messages"></a>Winmdexp.exe 오류 메시지
-[!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)]에서 **[!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소** 템플릿을 사용할 때 빌드 프로세스는 [Winmdexp.exe(Windows 런타임 메타데이터 내보내기 도구)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md)를 호출하므로 Winmdexp.exe 오류 메시지가 **오류 목록**에 표시됩니다. Winmdexp.exe는 `/target:winmdobj` 옵션으로 컴파일된 모듈에서 작동합니다. 컴파일된 모듈이 입력으로 필요하므로 컴파일에 성공하지 않으면 해당 오류 메시지가 나타나지 않습니다.  
+Visual Studio 2012에서 **[!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소** 템플릿을 사용할 때 빌드 프로세스는 [Winmdexp.exe(Windows 런타임 메타데이터 내보내기 도구)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md)를 호출하므로 Winmdexp.exe 오류 메시지가 **오류 목록**에 표시됩니다. Winmdexp.exe는 `/target:winmdobj` 옵션으로 컴파일된 모듈에서 작동합니다. 컴파일된 모듈이 입력으로 필요하므로 컴파일에 성공하지 않으면 해당 오류 메시지가 나타나지 않습니다.  
   
  오류 메시지는 보고되는 오류 조건을 해결하는 데 필요한 모든 정보를 포함하도록 설계되었습니다. 그러나 몇 가지 문제에는 메시지에 표시되는 것보다 많은 정보가 필요합니다. 추가 정보는 Windows 개발자 센터의 [Windows 런타임 구성 요소 오류 조건 진단](https://go.microsoft.com/fwlink/p/?LinkId=251127)에서 찾을 수 있습니다.  
   

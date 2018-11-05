@@ -1,6 +1,6 @@
 ---
-title: '일치 식 (F #)'
-description: 'F # 일치 식 패턴 집합을 사용 하 여 식의 비교를 기반으로 하는 분기 제어를 제공 하는 방법에 대해 알아봅니다.'
+title: 일치 식 (F#)
+description: F# 일치 식 패턴 집합을 사용 하 여 식의 비교를 기반으로 하는 분기 제어를 제공 하는 방법에 대해 알아봅니다.
 ms.date: 04/19/2018
 ms.openlocfilehash: e4cb82f20fe82bff562736557c2346562c557f59
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

@@ -4,17 +4,17 @@ ms.date: 03/30/2017
 ms.assetid: 7667770e-d163-4ad6-a303-085cf73db2f2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9cb7807fbfc1fbaf039fd7aef04331210dfa7cfa
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 39b7228de775f4dc92e932731ad9967315437e6e
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47089937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121118"
 ---
 # <a name="mef-for-net-for-windows-store-apps"></a>Windows 스토어 앱용 .NET을 위한 MEF
 <xref:System.Composition?displayProperty=nameWithType> 및 자식 네임스페이스에는 MEF(Managed Extensibility Framework)를 사용하여 확장 가능한 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 개발하기 위한 형식이 포함되어 있습니다. 이러한 네임스페이스는 [!INCLUDE[win8](../../../includes/win8-md.md)] 운영 체제에 대한 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] 하위 집합의 일부입니다.  
   
- 이 네임스페이스는 .NET Framework와 함께 배포되는 핵심 클래스 라이브러리의 일부가 아닙니다. 이 네임스페이스를 설치하려면 [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)]에서 프로젝트를 열고 **프로젝트** 메뉴에서 **NuGet 패키지 관리**를 선택한 다음, Microsoft.Composition 패키지를 온라인으로 검색합니다.  
+ 이 네임스페이스는 .NET Framework와 함께 배포되는 핵심 클래스 라이브러리의 일부가 아닙니다. 이 네임스페이스를 설치하려면 Visual Studio에서 프로젝트를 열고 **프로젝트** 메뉴에서 **NuGet 패키지 관리**를 선택한 다음, Microsoft.Composition 패키지를 온라인으로 검색합니다.  
   
 -   <xref:System.Composition?displayProperty=nameWithType>은 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱용 핵심 MEF를 구성하는 클래스를 제공합니다.  
   

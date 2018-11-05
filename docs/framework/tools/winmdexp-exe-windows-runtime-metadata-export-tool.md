@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8a228513bd29e35e8793124846de16f1c8bf4c10
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 44a21426bd4fea8bbb42801d59c6590f2ee0aee8
+ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47237178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49121391"
 ---
 # <a name="winmdexpexe-windows-runtime-metadata-export-tool"></a>Winmdexp.exe(Windows 런타임 메타데이터 내보내기 도구)
 [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool(Winmdexp.exe)은 .NET Framework 모듈을 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 메타데이터가 포함되는 파일로 변환합니다. .NET Framework 어셈블리 및 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 메타데이터 파일이 같은 물리적 형식을 사용하지만 메타데이터 테이블의 내용에 차이가 있습니다. 즉, .NET Framework 어셈블리는 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소로 자동으로 사용할 수 있습니다. .NET Framework 모듈을 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소로 전환하는 프로세스를 *내보내기*라고 합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]에서 결과 Windows 메타데이터(.winmd) 파일은 메타데이터와 구현이 모두 포함됩니다.  
   
- **Windows 스토어**(C#용) 및 [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] 또는 [!INCLUDE[vs_dev11_ext](../../../includes/vs-dev11-ext-md.md)]의 Visual Basic에 있는 **[!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소** 템플릿을 사용하면 컴파일러 대상은 .winmdobj 파일이고, 이후 빌드 단계에서는 Winmdexp.exe를 호출하여 .winmdobj 파일을 .winmd 파일로 내보냅니다. 이러한 방법으로 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소를 빌드하는 것이 좋습니다. Visual Studio가 제공하는 것보다 빌드 프로세스를 더 자세하게 제어하려면 Winmdexp.exe를 사용합니다.  
+ **Microsoft Store**에 있는 Visual Studio 2013 또는 Visual Studio 2012의 C# 및 Visual Basic에 대한 **[!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소** 템플릿을 사용할 경우 컴파일러 대상은 .winmdobj 파일이고, 이후 빌드 단계에서는 Winmdexp.exe를 호출하여 .winmdobj 파일을 .winmd 파일로 내보냅니다. 이러한 방법으로 [!INCLUDE[wrt](../../../includes/wrt-md.md)] 구성 요소를 빌드하는 것이 좋습니다. Visual Studio가 제공하는 것보다 빌드 프로세스를 더 자세하게 제어하려면 Winmdexp.exe를 사용합니다.  
   
  이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
   
