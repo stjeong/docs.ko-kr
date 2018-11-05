@@ -75,7 +75,7 @@ ms.locfileid: "48024612"
 
 3. **AJAX 확장** 노드를 확장하여 **ScriptManager**를 폼에 드래그 앤 드롭하십시오.
 
-4. 다시 합니다 **원본** 보기, 사이 다음 코드를 추가 합니다  **\<ScriptManager >** WCF 서비스의 경로를 지정 하는 태그:
+4. **소스** 보기로 돌아가, **\<ScriptManager >** 태그 사이에 다음 코드를 추가하여 WCF 서비스의 경로를 지정하십시오.
 
     ```html
     <Services>
