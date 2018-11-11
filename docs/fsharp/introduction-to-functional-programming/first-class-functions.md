@@ -27,7 +27,7 @@ ms.locfileid: "50744640"
 
 ## <a name="give-the-value-a-name"></a>값 이름을
 
-함수는 첫 번째 클래스 값 이면 해야 이름을 할 것 처럼 정수, 문자열 및 다른 기본 제공 형식 이름을 지정할 수 있습니다. 이 식별자 값에 바인딩 함수형 프로그래밍 문서에서 참조 됩니다. F #에서는 [ `let` 바인딩을](../language-reference/functions/let-bindings.md) 이름 값에 바인딩할: `let <identifier> = <value>`합니다. 다음 코드는 두 가지 예제를 보여줍니다.
+함수는 첫 번째 클래스 값 이면 해야 이름을 할 것 처럼 정수, 문자열 및 다른 기본 제공 형식 이름을 지정할 수 있습니다. 이 식별자 값에 바인딩 함수형 프로그래밍 문서에서 참조 됩니다. F#에서는 [ `let` 바인딩을](../language-reference/functions/let-bindings.md) 이름 값에 바인딩할: `let <identifier> = <value>`합니다. 다음 코드는 두 가지 예제를 보여줍니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet20.fs)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "50744640"
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet21.fs)]
 
-F #-다음을 제공 하는 중 더 간결한 구문을 입력으로 동일한 결과 얻을 수 있습니다.
+F#-다음을 제공 하는 중 더 간결한 구문을 입력으로 동일한 결과 얻을 수 있습니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet22.fs)]
 
@@ -57,7 +57,7 @@ F #-다음을 제공 하는 중 더 간결한 구문을 입력으로 동일한 �
 
 ## <a name="pass-the-value-as-an-argument"></a>값을 인수로 전달
 
-값에 최상위 상태 언어의 경우 함수에 인수로 전달할 수 있습니다. 예를 들어, 정수 및 문자열 인수로 전달에 공통적으로 적용 됩니다. 다음 코드는 정수 및 F #에 인수로 전달 된 문자열을 보여 줍니다.
+값에 최상위 상태 언어의 경우 함수에 인수로 전달할 수 있습니다. 예를 들어, 정수 및 문자열 인수로 전달에 공통적으로 적용 됩니다. 다음 코드는 정수 및 F#에 인수로 전달 된 문자열을 보여 줍니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet26.fs)]
 
@@ -69,7 +69,7 @@ F #-다음을 제공 하는 중 더 간결한 구문을 입력으로 동일한 �
 
 다른 함수에 인수로 맵 또는 필터 작업 같은 함수형 프로그래밍 언어에서 일반적인 추상화의 기반이 되는 함수를 보낼 수 있습니다. 예를 들어 맵 작업에는 목록을 단계별로 각 요소에 작업을 수행 하 고 다음 결과의 목록을 반환 하는 함수에서 공유 하는 계산을 캡처하는 고차 함수입니다. 정수 목록의 각 요소를 증가 시킬 각 요소인 정사각형 또는 문자열 목록의 각 요소를 대문자로 변경 좋습니다. 계산의 오류가 발생 하기 쉬운 부분 재귀 프로세스 목록을 통해 해당 단계 이며 반환할 결과의 목록을 작성 합니다. 일부는 매핑 함수에 캡처됩니다. 특정 응용 프로그램 작성 해야 모든는 개별적으로 목록의 각 요소에 적용 하려는 하는 함수 (추가, 제곱 대/소문자 바꾸기). 함수를 보내 인수로 하도록 매핑 함수 처럼 `squareIt` 보낼 `applyIt` 이전 예제에서 합니다.
 
-F # 같은 대부분의 컬렉션 형식에 대 한 지도 메서드를 제공 합니다. [나열](../language-reference/lists.md)를 [배열을](../language-reference/arrays.md), 및 [시퀀스](../language-reference/sequences.md)합니다. 다음 예제에서는 목록을 사용 합니다. 구문은 `List.map <the function> <the list>`합니다.
+F# 같은 대부분의 컬렉션 형식에 대 한 지도 메서드를 제공 합니다. [나열](../language-reference/lists.md)를 [배열을](../language-reference/arrays.md), 및 [시퀀스](../language-reference/sequences.md)합니다. 다음 예제에서는 목록을 사용 합니다. 구문은 `List.map <the function> <the list>`합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet28.fs)]
 
@@ -99,7 +99,7 @@ F # 같은 대부분의 컬렉션 형식에 대 한 지도 메서드를 제공 �
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet33.fs)]
 
-다음 예제에서는 함수의 고급 상태 F # 함수를 선언 하려면 `compose`, 반환 하는 두 함수 인수를 구성 합니다.
+다음 예제에서는 함수의 고급 상태 F# 함수를 선언 하려면 `compose`, 반환 하는 두 함수 인수를 구성 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet34.fs)]
 
@@ -111,7 +111,7 @@ F # 같은 대부분의 컬렉션 형식에 대 한 지도 메서드를 제공 �
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet35.fs)]
 
 >[!NOTE]
-F #-두 연산자를 제공 하는 중 `<<` 및 `>>`, 구성 하는 함수입니다. 예를 들어 `let squareAndDouble2 = doubleIt << squareIt` 같습니다 `let squareAndDouble = compose doubleIt squareIt` 이전 예제에서 합니다.
+F#-두 연산자를 제공 하는 중 `<<` 및 `>>`, 구성 하는 함수입니다. 예를 들어 `let squareAndDouble2 = doubleIt << squareIt` 같습니다 `let squareAndDouble = compose doubleIt squareIt` 이전 예제에서 합니다.
 
 함수 호출의 값으로 함수를 반환 하는 다음 예제에서는 간단한 맞추기 게임을 만듭니다. 게임을 만들려면 호출 `makeGame` 값을 사용 하 여 다른 사람이 추측 하기 원하는 전송에 대 한 `target`합니다. 함수에서 반환 값 `makeGame` 는 하나의 인수 (추측) 및 추측이 올바른지 여부를 보고 하는 함수입니다.
 
@@ -123,7 +123,7 @@ F #-두 연산자를 제공 하는 중 `<<` 및 `>>`, 구성 하는 함수입니
 
 ## <a name="curried-functions"></a>커리 된 함수
 
-암시적의 활용 하 여 더 간결 하 게 작성할 수 다양 한 이전 섹션에서 예제 *(currying)* F # 함수 선언에 있습니다. (Currying) 각각에 단일 매개 변수가 포함 된 함수의 계열로 둘 이상의 매개 변수가 있는 함수를 변환 하는 프로세스입니다. F #에서 둘 이상의 매개 변수가 있는 함수 본질적으로 변환 됩니다. 예를 들어 `compose` 이전 섹션에서 작성할 수 있습니다 다음 간결한 스타일에서 세 개의 매개 변수를 사용 하 여 표시 된 것과 같이 합니다.
+암시적의 활용 하 여 더 간결 하 게 작성할 수 다양 한 이전 섹션에서 예제 *(currying)* F# 함수 선언에 있습니다. (Currying) 각각에 단일 매개 변수가 포함 된 함수의 계열로 둘 이상의 매개 변수가 있는 함수를 변환 하는 프로세스입니다. F#에서 둘 이상의 매개 변수가 있는 함수 본질적으로 변환 됩니다. 예를 들어 `compose` 이전 섹션에서 작성할 수 있습니다 다음 간결한 스타일에서 세 개의 매개 변수를 사용 하 여 표시 된 것과 같이 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet38.fs)]
 
@@ -160,9 +160,9 @@ F #-두 연산자를 제공 하는 중 `<<` 및 `>>`, 구성 하는 함수입니
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet44.fs)]
 
-## <a name="functions-are-first-class-values-in-f"></a>함수는 f #의 첫 번째 클래스 값\#
+## <a name="functions-are-first-class-values-in-f"></a>함수는 F#의 첫 번째 클래스 값\#
 
-이전 섹션의 예제 F # 함수에서 F # 첫 번째 클래스 값에 대 한 조건을 충족 하는 방법을 보여 줍니다.
+이전 섹션의 예제 F# 함수에서 F# 첫 번째 클래스 값에 대 한 조건을 충족 하는 방법을 보여 줍니다.
 
 - 함수 정의에 식별자를 바인딩할 수 있습니다.
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet21.fs)]
@@ -176,7 +176,7 @@ F #-두 연산자를 제공 하는 중 `<<` 및 `>>`, 구성 하는 함수입니
 - 함수 호출의 값으로 함수를 반환할 수 있습니다.
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet32.fs)]
 
-F #에 대 한 자세한 내용은 참조는 [F # 언어 참조](../language-reference/index.md)합니다.
+F#에 대 한 자세한 내용은 참조는 [F# 언어 참조](../language-reference/index.md)합니다.
 
 ## <a name="example"></a>예제
 

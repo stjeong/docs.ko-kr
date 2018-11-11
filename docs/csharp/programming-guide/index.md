@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual C#, programming concepts
 - C# language, concepts
 ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
-ms.openlocfilehash: a145e3e1b73db6fdfbc5f1408231e78f55b559d1
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.openlocfilehash: 3827ebfe401938e4fa1b530672352123ae2ac826
+ms.sourcegitcommit: 0fbd677fcdc5bf46c4d827f492eaaa970edc07b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45515140"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50235741"
 ---
 # <a name="c-programming-guide"></a>C# 프로그래밍 가이드
 이 섹션에서는 핵심 C# 언어 기능과 .NET Framework를 통해 C#에서 액세스할 수 있는 기능에 대한 자세한 정보를 제공합니다.  
   
- 이 섹션 대부분에서는 사용자가 C# 및 일반적인 프로그래밍 개념을 이미 알고 있다고 가정합니다. 프로그래밍 또는 C# 초급자인 경우 프로그래밍에 대한 사전 지식이 필요하지 않은 [C# 빠른 시작](../quick-starts/index.md) 또는 [C# 시작](https://www.microsoft.com/net/tutorials/csharp/getting-started) 대화형 자습서를 참조할 수 있습니다.  
+ 이 섹션 대부분에서는 사용자가 C# 및 일반적인 프로그래밍 개념을 이미 알고 있다고 가정합니다. 프로그래밍 또는 C# 초급자인 경우 프로그래밍에 대한 사전 지식이 필요하지 않은 [C# 자습서 소개](../tutorials/intro-to-csharp/index.md) 또는 [C# 시작](https://www.microsoft.com/net/tutorials/csharp/getting-started) 대화형 자습서를 참조할 수 있습니다.  
   
  특정 키워드, 연산자 및 전처리기 지시문에 대한 자세한 내용은 [C# 참조](../../csharp/language-reference/index.md)를 참조하세요. C# 언어 사양에 대한 자세한 내용은 [C# 언어 사양](../../csharp/language-reference/language-specification/index.md)을 참조하세요.  
   

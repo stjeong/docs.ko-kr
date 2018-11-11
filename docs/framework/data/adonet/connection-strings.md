@@ -2,12 +2,12 @@
 title: ADO.NET의 연결 문자열
 ms.date: 10/10/2018
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
-ms.openlocfilehash: 4dab2656ae8f39976b21f949c9548a3f718dfafc
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: 078fdab257115296f9ff00330265cb14ff8674c8
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50409459"
 ---
 # <a name="connection-strings-in-adonet"></a>ADO.NET의 연결 문자열
 
@@ -21,7 +21,7 @@ ms.locfileid: "49347944"
   
 키워드는 대/소문자 구분 하지 않습니다. 그러나 값을 않을 대/소문자 구분, 데이터 원본에 따라 합니다. 키워드와 값이 포함 될 수 있습니다 [공백 문자](https://en.wikipedia.org/wiki/Whitespace_character#Unicode)합니다. 선행 및 후행 공백을 키워드에서 무시 되 고 따옴표가 값입니다.
 
-값에 세미콜론을 포함 되어 있으면 [유니코드 제어 문자](https://en.wikipedia.org/wiki/Unicode_control_characters), 단일 또는 이중 따옴표로 묶어야 합니다 선행 또는 후행 공백, 또는 합니다. 예를 들어:
+값을 세미콜론을 포함 하는 경우 [유니코드 제어 문자](https://en.wikipedia.org/wiki/Unicode_control_characters), 또는 단일 또는 이중 따옴표로 묶어야 합니다 선행 또는 후행 공백을 삭제 합니다. 예를 들어:
 
     Keyword=" whitespace  ";
     Keyword='special;character';

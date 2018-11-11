@@ -1,6 +1,6 @@
 ---
 title: '리소스 관리: use 키워드(F#)'
-description: "F # 키워드 '사용' 및 초기화 및 리소스의 해제를 제어할 수는 'using' 함수를 알아봅니다."
+description: F# 키워드 '사용' 및 초기화 및 리소스의 해제를 제어할 수는 'using' 함수를 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: ffa1cb515139a3705920d9d9f79be1a69602f7d8
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -19,7 +19,7 @@ ms.locfileid: "45616071"
 
 ## <a name="managing-resources"></a>리소스 관리
 
-책임 지 고 효율적으로 응용 프로그램에서 리소스를 관리 하려면 신속 하 게 하 고 예측 가능한 방식으로 리소스를 해제 해야 합니다. .NET Framework를 사용 하면 제공 하 여이 작업을 수행 합니다 `System.IDisposable` 인터페이스입니다. 구현 하는 형식을 `System.IDisposable` 에 `System.IDisposable.Dispose` 메서드를 올바르게 리소스를 해제 합니다. 응용 프로그램을 잘 작성 된 `System.IDisposable.Dispose` 제한 된 리소스를 보유 하는 모든 개체에 더 이상 필요 없는 경우 즉시 호출 됩니다. 다행 스럽게도 대부분의.NET 언어를 더 쉽게 확인 하려면 지원 하 고 F # 예외가 없습니다. Dispose 패턴을 지 원하는 두 가지 유용한 언어 구문이: 합니다 `use` 바인딩 및 `using` 함수입니다.
+책임 지 고 효율적으로 응용 프로그램에서 리소스를 관리 하려면 신속 하 게 하 고 예측 가능한 방식으로 리소스를 해제 해야 합니다. .NET Framework를 사용 하면 제공 하 여이 작업을 수행 합니다 `System.IDisposable` 인터페이스입니다. 구현 하는 형식을 `System.IDisposable` 에 `System.IDisposable.Dispose` 메서드를 올바르게 리소스를 해제 합니다. 응용 프로그램을 잘 작성 된 `System.IDisposable.Dispose` 제한 된 리소스를 보유 하는 모든 개체에 더 이상 필요 없는 경우 즉시 호출 됩니다. 다행 스럽게도 대부분의.NET 언어를 더 쉽게 확인 하려면 지원 하 고 F# 예외가 없습니다. Dispose 패턴을 지 원하는 두 가지 유용한 언어 구문이: 합니다 `use` 바인딩 및 `using` 함수입니다.
 
 ## <a name="use-binding"></a>바인딩을 사용합니다
 

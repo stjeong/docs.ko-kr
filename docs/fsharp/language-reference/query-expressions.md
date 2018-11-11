@@ -1,6 +1,6 @@
 ---
 title: 쿼리 식(F#)
-description: 'F # 프로그래밍 언어에서 LINQ 쿼리 식 지원에 알아봅니다.'
+description: F# 프로그래밍 언어에서 LINQ 쿼리 식 지원에 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 6586d991dde550380d04c4d9831bb954eb94a715
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -14,7 +14,7 @@ ms.locfileid: "48033495"
 > [!NOTE]
 이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
-쿼리 식을 사용 하 여 데이터 원본을 쿼리하고 원하는 폼에 데이터를 넣을 수 있습니다. 쿼리 식에는 F #의 LINQ에 대 한 지원을 제공합니다.
+쿼리 식을 사용 하 여 데이터 원본을 쿼리하고 원하는 폼에 데이터를 넣을 수 있습니다. 쿼리 식에는 F#의 LINQ에 대 한 지원을 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -24,7 +24,7 @@ query { expression }
 
 ## <a name="remarks"></a>설명
 
-쿼리 식은 계산 식 시퀀스 식과 유사한 형식입니다. 시퀀스 식에서 코드를 제공 하 여 시퀀스를 지정 하는 것 처럼 쿼리 식에서 코드를 제공 하 여 데이터 집합을 지정 합니다. 시퀀스 식에는 `yield` 키워드 결과 시퀀스의 일부로 반환 될 데이터를 식별 합니다. 쿼리 식에는 `select` 키워드 같은 기능을 수행 합니다. 외에 `select` 키워드를 F #에서는 다양 한 SQL SELECT 문 부분 처럼는 쿼리 연산자입니다. Northwind OData 원본에 연결 하는 코드와 함께 간단한 쿼리 식의 예는 다음과 같습니다.
+쿼리 식은 계산 식 시퀀스 식과 유사한 형식입니다. 시퀀스 식에서 코드를 제공 하 여 시퀀스를 지정 하는 것 처럼 쿼리 식에서 코드를 제공 하 여 데이터 집합을 지정 합니다. 시퀀스 식에는 `yield` 키워드 결과 시퀀스의 일부로 반환 될 데이터를 식별 합니다. 쿼리 식에는 `select` 키워드 같은 기능을 수행 합니다. 외에 `select` 키워드를 F#에서는 다양 한 SQL SELECT 문 부분 처럼는 쿼리 연산자입니다. Northwind OData 원본에 연결 하는 코드와 함께 간단한 쿼리 식의 예는 다음과 같습니다.
 
 ```fsharp
 // Use the OData type provider to create types that can be used to access the Northwind database.
@@ -56,7 +56,7 @@ query1
 
 쿼리 식에서 SQL로 변환할 수 식만 허용 됩니다. 사용 하는 경우 함수 호출 하지 않고 식에서 허용 하는 예를 들어를 `where` 쿼리 연산자입니다.
 
-표 1에서는 사용 가능한 쿼리 연산자를 보여 줍니다. 또한 SQL 쿼리 및 해당 하는 F # 쿼리 식이이 항목의 뒷부분에 비교 하는 Table2를 참조 하세요. 일부 쿼리 연산자는 일부 형식 공급자에서 지원 되지 않습니다. 특히 OData 형식 공급자는 OData의 제한으로 인해 지원 되는 쿼리 연산자에서 제한 됩니다. 자세한 내용은 [ODataService 형식 공급자 (F #)](https://msdn.microsoft.com/library/bac609dd-9d12-4bf9-a662-24bdf4faa43e)합니다.
+표 1에서는 사용 가능한 쿼리 연산자를 보여 줍니다. 또한 SQL 쿼리 및 해당 하는 F# 쿼리 식이이 항목의 뒷부분에 비교 하는 Table2를 참조 하세요. 일부 쿼리 연산자는 일부 형식 공급자에서 지원 되지 않습니다. 특히 OData 형식 공급자는 OData의 제한으로 인해 지원 되는 쿼리 연산자에서 제한 됩니다. 자세한 내용은 [ODataService 형식 공급자 (F#)](https://msdn.microsoft.com/library/bac609dd-9d12-4bf9-a662-24bdf4faa43e)합니다.
 
 이 테이블에는 다음 형식으로 데이터베이스를 가정합니다.
 
@@ -499,7 +499,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </table>
 
 ## <a name="comparison-of-transact-sql-and-f-query-expressions"></a>Transact-SQL과 F# 쿼리 식 비교
-다음 표에서 F #의 몇 가지 일반적인 Transact SQL 쿼리 및 해당을 보여 줍니다. 또한이 테이블의 코드 앞의 테이블 및 형식 공급자를 설정 하려면 동일한 초기 코드 같은 데이터베이스를 가정 합니다.
+다음 표에서 F#의 몇 가지 일반적인 Transact SQL 쿼리 및 해당을 보여 줍니다. 또한이 테이블의 코드 앞의 테이블 및 형식 공급자를 설정 하려면 동일한 초기 코드 같은 데이터베이스를 가정 합니다.
 
 
 ### <a name="table-2-transact-sql-and-f-query-expressions"></a>표 2입니다. Transact-SQL 및 F# 쿼리 식
@@ -508,7 +508,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 <table style="width:100%">
   <tr>
     <th>Transact SQL (없습니다 대/소문자 구분)</th>
-    <th>F # 쿼리 식 (대/소문자 구분)</th>
+    <th>F# 쿼리 식 (대/소문자 구분)</th>
   </tr>
 <tr><td>
 테이블에서 모든 필드를 선택 합니다.</br>
@@ -1864,7 +1864,7 @@ query {
 |> Seq.iter (fun (studentName, courseName) -> printfn "%s %s" studentName courseName)
 ```
 
-및 F # Interactive에서이 코드가 실행 되 면 전체 출력은 같습니다.
+및 F# Interactive에서이 코드가 실행 되 면 전체 출력은 같습니다.
 
 ```
 --> Referenced 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll'

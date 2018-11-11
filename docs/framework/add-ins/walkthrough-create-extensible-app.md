@@ -14,11 +14,11 @@ ms.assetid: 694a33c5-a040-450d-aed5-ac49fc88ce61
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 63780583d035d6fab6b3a79424857b82a910ef09
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183895"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744615"
 ---
 # <a name="walkthrough-creating-an-extensible-application"></a>연습: 확장 가능한 응용 프로그램 만들기
 이 연습에서는 간단한 계산기 기능을 수행 하는 추가 기능에 대 한 파이프라인을 만드는 방법을 설명 합니다. 실제 시나리오; 보여 주지 않지만 대신, 파이프라인 및 방법으로 추가 기능 서비스를 제공할 수는 호스트의 기본 기능을 보여 줍니다.  

@@ -1,6 +1,6 @@
 ---
 title: '조건식: if... then...else(F#)'
-description: 'F # 코드의 다른 분기를 실행 하려면 조건부 식을 작성 하는 방법을 알아봅니다.'
+description: F# 코드의 다른 분기를 실행 하려면 조건부 식을 작성 하는 방법을 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 10e4224bef772f00520cf5a0fff2f2920147c2fc
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2

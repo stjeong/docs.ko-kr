@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 06661cb2c34d1da9085fa2129cb0c3307b99097e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 7590d5628f4951a8c7c2199f0e954007ed9fa962
+ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865555"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "50757428"
 ---
 # <a name="choosing-between-class-and-struct"></a>클래스와 구조체 간의 선택
 모든 프레임 워크 디자이너 얼굴 기본 디자인 결정 사항 중 하나 (참조 형식) 클래스 또는 구조체 (값 형식) 형식이 디자인 여부입니다. 값 형식과 참조 동작의 차이점 이해 하는 것은이 선택 하는 중요 합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "43865555"
   
  다음으로, 형식은 참조의 배열 힙에 있는 참조 형식의 인스턴스에 대 한만 참조 아웃 아웃오브 라인, 배열 요소를 의미를 할당 합니다. 값 형식 배열의 배열 요소 값 형식의 실제 인스턴스 즉 인라인으로 할당 됩니다. 따라서, 할당 및 할당 취소 값 형식 배열의 할당 및 할당 취소는 참조 형식 배열 보다 훨씬 저렴 합니다. 또한은 대부분의 경우 값 형식 배열 참조의 효율이 훨씬을 나타냅니다.  
   
- 다음 차이점 메모리 사용량 관련이 있습니다. 값 형식은 참조 형식 또는 구현 하는 인터페이스 중 하나를 변환할 때는 boxed 가져옵니다. Unboxed 받게 경우 값 형식으로 다시 캐스팅 합니다. 상자 개체 힙에 할당 되는 가비지 수집, 너무 boxing 및 unboxing 되는 힙, 가비지 수집기 및 궁극적으로 응용 프로그램의 성능에 부정적인 영향을 줄을 수도 있습니다.  반면, 참조 형식 캐스팅 하는 이러한 boxing 되지 않습니다 발생 합니다.  
+ 다음 차이점 메모리 사용량 관련이 있습니다. 값 형식은 참조 형식 또는 구현 하는 인터페이스 중 하나를 변환할 때는 boxed 가져옵니다. Unboxed 받게 경우 값 형식으로 다시 캐스팅 합니다. 상자 개체 힙에 할당 되는 가비지 수집, 너무 boxing 및 unboxing 되는 힙, 가비지 수집기 및 궁극적으로 응용 프로그램의 성능에 부정적인 영향을 줄을 수도 있습니다.  반면, 참조 형식 캐스팅 하는 이러한 boxing 되지 않습니다 발생 합니다. (자세한 내용은 [Boxing 및 Unboxing](../../csharp/programming-guide/types/boxing-and-unboxing.md)).
   
  다음으로, 참조 형식 할당 값 형식 할당 전체 값을 복사 하는 반면 참조를 복사 합니다. 따라서 큰 참조 형식의 할당은 큰 값 형식 할당 보다 저렴 합니다.  
   

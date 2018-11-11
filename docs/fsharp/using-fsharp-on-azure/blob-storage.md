@@ -1,5 +1,5 @@
 ---
-title: 'F #을 사용 하 여 Azure Blob storage 시작'
+title: F#을 사용 하 여 Azure Blob storage 시작
 description: Azure Blob storage 사용 하 여 클라우드에 구조화 되지 않은 데이터를 저장 합니다.
 author: sylvanc
 ms.date: 09/20/2016
@@ -10,11 +10,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2018
 ms.locfileid: "44037284"
 ---
-# <a name="get-started-with-azure-blob-storage-using-f"></a>F #을 사용 하 여 Azure Blob storage 시작 #
+# <a name="get-started-with-azure-blob-storage-using-f"></a>F#을 사용 하 여 Azure Blob storage 시작 #
 
 Azure Blob Storage는 클라우드에서 구조화되지 않은 데이터를 개체/Blob으로 저장하는 서비스입니다. Blob Storage는 문서, 미디어 파일, 응용 프로그램 설치 관리자 등과 같은 모든 유형의 텍스트 또는 이진 데이터를 저장할 수 있습니다. Blob Storage를 개체 저장소라고도 합니다.
 
-이 문서에서는 Blob storage를 사용 하 여 일반적인 작업을 수행 하는 방법을 보여 줍니다. 샘플은 Azure Storage 클라이언트 라이브러리를 사용 하 여.NET 용 F #을 사용 하 여 작성 되었습니다. 대상 작업을 업로드, 나열, 다운로드 및 blob을 삭제 하는 방법을 포함 합니다.
+이 문서에서는 Blob storage를 사용 하 여 일반적인 작업을 수행 하는 방법을 보여 줍니다. 샘플은 Azure Storage 클라이언트 라이브러리를 사용 하 여.NET 용 F#을 사용 하 여 작성 되었습니다. 대상 작업을 업로드, 나열, 다운로드 및 blob을 삭제 하는 방법을 포함 합니다.
 
 Blob 저장소의 개념적인 개요를 참조 하세요 [blob storage에 대 한.NET 가이드](/azure/storage/storage-dotnet-how-to-use-blobs)합니다.
 
@@ -22,9 +22,9 @@ Blob 저장소의 개념적인 개요를 참조 하세요 [blob storage에 대 �
 
 이 가이드를 사용 하려면 먼저 [Azure storage 계정 만들기](/azure/storage/storage-create-storage-account)합니다. 이 계정에 대 한 저장소 액세스 키도 필요 합니다.
 
-## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F # 스크립트와 시작 F # 대화형
+## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F# 스크립트와 시작 F# 대화형
 
-이 문서의 샘플에에서는 F # 응용 프로그램 또는 F # 스크립트에서 사용할 수 있습니다. F # 스크립트를 만들려면 사용 하 여 파일을 만듭니다는 `.fsx` 확장명을 예를 들어 `blobs.fsx`, F # 개발 환경에서.
+이 문서의 샘플에에서는 F# 응용 프로그램 또는 F# 스크립트에서 사용할 수 있습니다. F# 스크립트를 만들려면 사용 하 여 파일을 만듭니다는 `.fsx` 확장명을 예를 들어 `blobs.fsx`, F# 개발 환경에서.
 
 다음을 사용 하 여는 [패키지 관리자](package-management.md) 와 같은 [Paket](https://fsprojects.github.io/Paket/) 또는 [NuGet](https://www.nuget.org/) 설치 하는 `WindowsAzure.Storage` 및 `Microsoft.WindowsAzure.ConfigurationManager` 패키지와 참조 `WindowsAzure.Storage.dll` 및 `Microsoft.WindowsAzure.Configuration.dll` 사용 하 여 스크립트를 `#r` 지시문입니다.
 
@@ -230,8 +230,8 @@ Blob 데이터를 암호화에 대 한 내용은 참조 하세요 [암호화 blo
 이제 Blob 저장소의 기본 사항을 배웠으므로 다음 링크를 자세히 알아보세요.
 
 ### <a name="tools"></a>도구
-- [F # AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/) 는 F # 형식 공급자는 Blob, 테이블 및 큐 Azure Storage 자산을 탐색 하 고 쉽게 CRUD 작업을 적용할 수 있습니다.
-- [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) Microsoft Azure Table Storage 서비스를 사용 하는 F # API
+- [F# AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/) 는 F# 형식 공급자는 Blob, 테이블 및 큐 Azure Storage 자산을 탐색 하 고 쉽게 CRUD 작업을 적용할 수 있습니다.
+- [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) Microsoft Azure Table Storage 서비스를 사용 하는 F# API
 - [Microsoft Azure Storage 탐색기 (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 는 Windows, OS X 및 Linux에서 Azure Storage 데이터로 시각적으로 작업할 수 있도록 하는 Microsoft에서 무료로 사용할 수 있는 독립 실행형 앱입니다.
 
 ### <a name="blob-storage-reference"></a>Blob storage 참조

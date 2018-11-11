@@ -1,6 +1,6 @@
 ---
 title: 네임스페이스(F#)
-description: 'F # 네임 스페이스를 프로그램 요소의 그룹에 이름을 연결 하 여 관련 기능 영역으로 코드를 구성할 수 있습니다를 사용 하는 방법을 알아봅니다.'
+description: F# 네임 스페이스를 프로그램 요소의 그룹에 이름을 연결 하 여 관련 기능 영역으로 코드를 구성할 수 있습니다를 사용 하는 방법을 알아봅니다.
 ms.date: 04/24/2017
 ms.openlocfilehash: 769a1241f76ac32d3a6a80bd637078493119bb3c
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -74,7 +74,7 @@ Module2 5 6
 
 ## <a name="recursive-namespaces"></a>재귀 네임 스페이스
 
-F # 4.1에 포함 된 모든 코드 상호 재귀를 허용 하는 네임 스페이스 개념이 도입 되었습니다.  이 통해 이루어집니다 `namespace rec`합니다.  사용 `namespace rec` 의 종류와 모듈 간의 상호 참조 코드를 쓸 수 없는 몇 가지 문제를 완화할 수 있습니다.  다음은이 예제입니다.
+F# 4.1에 포함 된 모든 코드 상호 재귀를 허용 하는 네임 스페이스 개념이 도입 되었습니다.  이 통해 이루어집니다 `namespace rec`합니다.  사용 `namespace rec` 의 종류와 모듈 간의 상호 참조 코드를 쓸 수 없는 몇 가지 문제를 완화할 수 있습니다.  다음은이 예제입니다.
 
 ```fsharp
 namespace rec MutualReferences
@@ -115,12 +115,12 @@ module BananaHelpers =
         | Down -> b |> peelSides
 ```
 
-예외 `DontSqueezeTheBananaException` 및 클래스 `Banana` 모두 서로를 참조 합니다.  또한 모듈 `BananaHelpers` 및 클래스 `Banana` 서로 참조할 수도 있습니다.  하지 않는 것이 제거한 경우 F #에서 표현할 수는 `rec` 키워드는 `MutualReferences` 네임 스페이스입니다.
+예외 `DontSqueezeTheBananaException` 및 클래스 `Banana` 모두 서로를 참조 합니다.  또한 모듈 `BananaHelpers` 및 클래스 `Banana` 서로 참조할 수도 있습니다.  하지 않는 것이 제거한 경우 F#에서 표현할 수는 `rec` 키워드는 `MutualReferences` 네임 스페이스입니다.
 
-이 기능은 또한에 사용할 수 있는 최상위 [모듈](modules.md) F # 4.1 이상.
+이 기능은 또한에 사용할 수 있는 최상위 [모듈](modules.md) F# 4.1 이상.
 
 ## <a name="see-also"></a>참고자료
 
 - [F# 언어 참조](index.md)
 - [모듈](modules.md)
-- [F # RFC FS-1009-파일 내에서 더 큰 범위를 통한 상호 참조 형식 및 모듈 허용](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)
+- [F# RFC FS-1009-파일 내에서 더 큰 범위를 통한 상호 참조 형식 및 모듈 허용](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

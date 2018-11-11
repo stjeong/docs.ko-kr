@@ -1,26 +1,38 @@
 ---
-title: '방법: 자동 바인딩 리디렉션 사용 설정 및 해제'
-ms.date: 09/12/2018
+title: 자동 생성 된 바인딩 리디렉션을 사용 하지 않도록 설정 하거나 사용
+ms.date: 10/30/2018
 helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 9b9c9cbdb89ccf67942dcccee37ea410c6fa39a5
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 284c2a08f2b78d2c6a1ab9752a3f2283e87fd734
+ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48036203"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "50980835"
 ---
 # <a name="how-to-enable-and-disable-automatic-binding-redirection"></a>방법: 자동 바인딩 리디렉션 사용 설정 및 해제
 
-대상으로 하는 Visual Studio에서 앱을 컴파일할 때의 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 이상 버전에서는 바인딩 리디렉션이 어셈블리 통합을 재정의 하도록 앱 구성 파일을에 자동으로 추가 될 수 있습니다. 수동으로 바인딩 리디렉션을 응용 프로그램의 구성 파일에 지정할 지라도 응용 프로그램 또는 해당 구성 요소가 동일 어셈블리의 두 개 이상의 버전을 참조할 경우 바인딩 리디렉션을 추가합니다. 자동 바인딩 리디렉션 기능에 영향을 기존 데스크톱 앱 및 web apps의 대상으로 하는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 이상 버전, 웹 앱에 대 한 동작을 약간 다릅니다. 하지만 합니다. 이전 버전의 .NET Framework를 대상으로 하는 기존 응용 프로그램이 있는 경우 자동 바인딩 리디렉션을 사용할 수 있으며, 수동으로 작성되는 바인딩 리디렉션을 유지하려는 경우에는 이 기능을 비활성화할 수 있습니다.
+대상으로 하는 Visual Studio에서 앱을 컴파일할 때의 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 이상 버전에서는 바인딩 리디렉션이 어셈블리 통합을 재정의 하도록 앱 구성 파일을에 자동으로 추가 될 수 있습니다. 수동으로 바인딩 리디렉션을 응용 프로그램의 구성 파일에 지정할 지라도 응용 프로그램 또는 해당 구성 요소가 동일 어셈블리의 두 개 이상의 버전을 참조할 경우 바인딩 리디렉션을 추가합니다. 자동 바인딩 리디렉션 기능에 영향을 데스크톱 앱 및 웹 앱 대상으로 하는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 이상 버전, 웹 앱에 대 한 동작을 약간 다릅니다. 하지만 합니다. 수동으로 바인딩 리디렉션을 작성 하려는 경우에이 기능을 비활성화할 수 있습니다 또는 기존 앱 해당 이전 버전의 대상으로.NET Framework를 있는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다.
 
 ## <a name="disable-automatic-binding-redirects-in-desktop-apps"></a>데스크톱 앱에서 자동 바인딩 리디렉션을 사용 하지 않도록 설정
 
-자동 바인딩 리디렉션은 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]을 대상으로 하는 기존 데스크톱 앱에 대해 기본적으로 사용하도록 설정됩니다. 응용 프로그램이 컴파일되고 그렇지 않으면 발생할 수 있는 어셈블리 통합을 재정의할 때 바인딩 리디렉션이 출력 구성(app.config) 파일에 추가됩니다. 소스 app.config 파일은 수정되지 않습니다. 응용 프로그램에 대한 프로젝트 파일을 수정하여 이 기능을 비활성화할 수 있습니다.
+대상으로 하는 Windows 데스크톱 앱에 대해 기본적으로 자동 바인딩 리디렉션을 사용할 수는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 이상. 바인딩 리디렉션이 출력 구성에 추가 됩니다 (**app.config**) 앱을 컴파일하면 파일과 그렇지 않은 경우에 발생할 수 있는 어셈블리 통합을 재정의 합니다. 소스 **app.config** 파일은 수정 되지 않습니다. 앱 용 프로젝트 파일을 수정 하 여 또는 Visual Studio에서 프로젝트의 속성에 있는 확인란을 선택 취소 하 여이 기능을 비활성화할 수 있습니다.
+
+### <a name="disable-through-project-properties"></a>프로젝트 속성을 통해 사용 하지 않도록 설정
+
+Visual Studio 2017 버전 15.7 이상의 경우 프로젝트의 속성 페이지에서 자동으로 생성 된 바인딩 리디렉션을 쉽게 해제할 수 있습니다.
+
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+
+2. 에 **응용 프로그램** 페이지에서 선택 취소 합니다 **자동 생성 바인딩 리디렉션을** 옵션입니다.
+
+3. 키를 눌러 **Ctrl**+**S** 변경 내용을 저장 합니다.
+
+### <a name="disable-manually-in-the-project-file"></a>프로젝트 파일에서 수동으로 사용 하지 않도록 설정
 
 1. 다음 방법 중 하나를 사용 하 여 편집할 프로젝트 파일을 엽니다.
 
@@ -75,9 +87,9 @@ ms.locfileid: "48036203"
 
 ## <a name="enable-automatic-binding-redirects-in-web-apps"></a>Web apps에서 자동 바인딩 리디렉션을 사용 하도록 설정
 
-자동 바인딩 리디렉션은 웹 응용 프로그램마다 다르게 구현됩니다. 웹 응용 프로그램에 대한 원본 구성(web.config) 파일을 수정해야 하기 때문에 구성 파일에 바인딩 리디렉션은 자동으로 추가되지 않습니다. 하지만 Visual Studio는 바인딩 충돌을 경고하고 충돌 해결을 위해 바인딩 리디렉션을 추가할 수 있습니다. 항상 바인딩 리디렉션을 추가 하는 메시지가 때문에 명시적으로 웹 앱에 대해이 기능을 사용 하지 않도록 설정할 필요가 없습니다.
+자동 바인딩 리디렉션은 웹 응용 프로그램마다 다르게 구현됩니다. 때문에 원본 구성 (**web.config**) 웹 앱에 대 한 파일을 수정 해야, 바인딩 리디렉션을 추가 되지 않습니다 자동으로 구성 파일에 있습니다. 하지만 Visual Studio는 바인딩 충돌을 경고하고 충돌 해결을 위해 바인딩 리디렉션을 추가할 수 있습니다. 항상 바인딩 리디렉션을 추가 하는 메시지가 때문에 명시적으로 웹 앱에 대해이 기능을 사용 하지 않도록 설정할 필요가 없습니다.
 
-Web.config 파일에 바인딩 리디렉션을 추가 합니다.
+바인딩 리디렉션을 추가 하는 **web.config** 파일:
 
 1. Visual Studio에서 응용 프로그램을 컴파일하고 빌드 경고를 확인합니다.
 
@@ -85,7 +97,7 @@ Web.config 파일에 바인딩 리디렉션을 추가 합니다.
 
 2. 어셈블리 바인딩 충돌이 있을 경우 경고가 나타납니다. 경고를 두 번 클릭 하거나 선택 하 고 경고 press **Enter**합니다.
 
-   필요한 바인딩 리디렉션을 소스 web.config 파일에 자동으로 추가할 수 있는 대화 상자가 나타납니다.
+   필요한 바인딩을 자동으로 추가할 수 있는 대화 상자를 원본 리디렉션됩니다 **web.config** 파일이 표시 됩니다.
 
    ![바인딩 리디렉션 권한 대화 상자](../../../docs/framework/configure-apps/media/clr-addbindingredirect.png "CLR_AddBindingRedirect")
 

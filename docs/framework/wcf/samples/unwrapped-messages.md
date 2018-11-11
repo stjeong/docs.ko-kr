@@ -3,11 +3,11 @@ title: 래핑되지 않은 메시지
 ms.date: 03/30/2017
 ms.assetid: 019657bd-1f9b-4315-ad74-eaa4e7551ff6
 ms.openlocfilehash: 835312101ba9e0daaa7986a78c9a0040535881b9
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50044623"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50743942"
 ---
 # <a name="unwrapped-messages"></a>래핑되지 않은 메시지
 이 샘플에서는 래핑되지 않은 메시지를 보여 줍니다. 기본적으로 메시지 본문은 서비스 작업 매개 변수가 래핑되도록 서식이 지정됩니다. 다음 샘플에서는 `Add` 서비스에 `ICalculator` 요청 메시지를 래핑된 모드로 표시합니다.  

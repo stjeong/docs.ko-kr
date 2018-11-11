@@ -14,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], integral
 - SByte data type
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-ms.openlocfilehash: 1b10379e626c8e53b2e1e6eddaa964f13f9e4b62
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c353aa8c5ac1d1912bc303f8f741ff0911cdf021
+ms.sourcegitcommit: 4bca8f7e172fd019ef437a4803bf5895c6bc4781
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50196923"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50980822"
 ---
 # <a name="sbyte-data-type-visual-basic"></a>SByte 데이터 형식 (Visual Basic)
 
@@ -58,7 +58,7 @@ Dim number As SByte = &H_F9
 
 - 사용 하 여 컴파일하면 정수 범위 검사를 사용 하지 않도록 설정 된 `/removeintchecks` 컴파일러 스위치입니다.
 
-- 사용 하 여는 [형식 문자](../../programming-guide\language-features\data-types/type-characters.md) 명시적으로 할당 하려는 리터럴 값을 정의 하는 `SByte`합니다. 다음 예제에서는 할당 음수 리터럴이 `Short` 값을 `SByte`입니다. 음수를 참고 하십시오 숫자 리터럴의 상위 단어의 상위 비트를 설정 해야 합니다. 이 예의 경우이 비트는 리터럴 15 `Short` 값입니다.
+- 사용 하 여는 [형식 문자](../../programming-guide/language-features/data-types/type-characters.md) 명시적으로 할당 하려는 리터럴 값을 정의 하는 `SByte`합니다. 다음 예제에서는 할당 음수 리터럴이 `Short` 값을 `SByte`입니다. 음수를 참고 하십시오 숫자 리터럴의 상위 단어의 상위 비트를 설정 해야 합니다. 이 예의 경우이 비트는 리터럴 15 `Short` 값입니다.
 
    [!code-vb[SByteTypeChars](../../../../samples/snippets/visualbasic/language-reference/data-types/sbyte-assignment.vb#1)]
 

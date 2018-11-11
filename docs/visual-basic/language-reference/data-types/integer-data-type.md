@@ -21,12 +21,12 @@ helpviewer_keywords:
 - I literal type character [Visual Basic]
 - Integer data type
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-ms.openlocfilehash: 989ce803849aa2dff9fc5c38a38bb356c937a945
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8c349104ed566e9a663afe01da3838f0167dc74e
+ms.sourcegitcommit: 296183dbe35077b5c5e5e74d5fbe7f399bc507ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193866"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50982765"
 ---
 # <a name="integer-data-type-visual-basic"></a>정수 데이터 형식 (Visual Basic)
 -2,147,483,648에서 2,147,483,647까지의 값 범위에 속하는 부호 있는 32비트(4바이트) 정수를 저장합니다.  
@@ -59,7 +59,7 @@ Dim number As Integer = &H_C305_F860
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-숫자 리터럴을 포함할 수도 있습니다는 `I` [문자를 입력](../../programming-guide\language-features\data-types/type-characters.md) 나타내기 위해는 `Integer` 다음 예제와 같이 데이터 형식입니다.
+숫자 리터럴을 포함할 수도 있습니다는 `I` [문자를 입력](../../programming-guide/language-features/data-types/type-characters.md) 나타내기 위해는 `Integer` 다음 예제와 같이 데이터 형식입니다.
 
 ```vb
 Dim number = &H_035826I

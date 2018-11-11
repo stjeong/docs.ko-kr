@@ -7,11 +7,11 @@ helpviewer_keywords:
 - indexers [C#]
 - C# language, indexers
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
-ms.openlocfilehash: 6a98cd9f2ff6f40a200a9e30fc65de717b6e788e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 405de22ea7e48a5964de48eb20becdaf5fc5ae01
+ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 11/07/2018
 ms.locfileid: "43503635"
 ---
 # <a name="indexers-c-programming-guide"></a>인덱서(C# 프로그래밍 가이드)
@@ -64,7 +64,8 @@ C# 7.0부터 get 및 set 접근자 모두를 식 본문 멤버로 구현할 수 
 -   [접근자 접근성 제한](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
   
 ## <a name="c-language-specification"></a>C# 언어 사양  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+자세한 내용은 [C# 언어 사양](../../language-reference/language-specification/index.md)의 [인덱서](~/_csharplang/spec/classes.md#indexers)를 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
   
 ## <a name="see-also"></a>참고 항목
 

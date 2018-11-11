@@ -5,11 +5,11 @@ helpviewer_keywords:
 - binding elements [WCF]
 ms.assetid: 765ff77b-7682-4ea3-90eb-e4d751e37379
 ms.openlocfilehash: ca013c939e3db2136ffa1504ae0eedd7b870d773
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.sourcegitcommit: 296183dbe35077b5c5e5e74d5fbe7f399bc507ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372542"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50982830"
 ---
 # <a name="bindings-and-binding-elements"></a>바인딩 및 바인딩 요소
 바인딩에 라는 특수 한 구성 요소의 모음 *바인딩 요소*때마다 클라이언트 서비스 런타임에 의해 평가 되, 서비스 끝점이 생성 될 합니다. 한 바인딩 내에 있는 바인딩 요소의 형식과 순서는 엔드포인트 채널 스택에서 프로토콜 및 전송 채널의 선택 및 스택 순서를 결정합니다.  

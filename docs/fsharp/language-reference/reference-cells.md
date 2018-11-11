@@ -1,6 +1,6 @@
 ---
 title: 참조 셀(F#)
-description: 'F # 참조 셀은 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치 하는 방법에 대해 알아봅니다.'
+description: F# 참조 셀은 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치 하는 방법에 대해 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: e2e1a91c62fd76e4992bc5ae11bb672766850718
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -74,7 +74,7 @@ let ref x = { contents = x }
 
 필드 `contents`는 다른 ML 버전과의 호환성을 위해 제공되며 컴파일 과정에서 이 필드로 인해 경고가 발생합니다. 경고가 발생하지 않도록 하려면 `--mlcompatibility` 컴파일러 옵션을 사용해야 합니다. 자세한 내용은 [컴파일러 옵션](compiler-options.md)을 참조하세요.
 
-C# 프로그래머는 알아야 `ref` C# 없는 동일 `ref` F #에서. F #의 해당 구문이 [byref](byrefs.md)는 참조 셀에서 다른 개념입니다.
+C# 프로그래머는 알아야 `ref` C# 없는 동일 `ref` F#에서. F#의 해당 구문이 [byref](byrefs.md)는 참조 셀에서 다른 개념입니다.
 
 값으로 표시 `mutable`에 자동으로 승격 될 수 있습니다 `'a ref` 클로저;에 의해 캡처된 참조 [값](values/index.md)합니다.
 

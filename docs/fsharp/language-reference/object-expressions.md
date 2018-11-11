@@ -1,6 +1,6 @@
 ---
 title: 개체 식(F#)
-description: '명명 된 형식을 추가 코드와 새로 만드는 데 필요한 오버 헤드를 방지 하려는 경우 F # 식 개체를 사용 하는 방법에 알아봅니다.'
+description: 명명 된 형식을 추가 코드와 새로 만드는 데 필요한 오버 헤드를 방지 하려는 경우 F# 식 개체를 사용 하는 방법에 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 1a971044d680d3bf5a6fff38affdaf001d5403b4
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
