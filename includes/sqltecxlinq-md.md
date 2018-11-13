@@ -1,1 +1,1 @@
-<span data-ttu-id="8a0d1-101">LINQ to XML</span><span class="sxs-lookup"><span data-stu-id="8a0d1-101">LINQ to XML</span></span>
+<span data-ttu-id="fdb32-101">LINQ to XML</span><span class="sxs-lookup"><span data-stu-id="fdb32-101">LINQ to XML</span></span>

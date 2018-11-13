@@ -1,6 +1,6 @@
 ---
 title: 참조 셀(F#)
-description: 'F # 참조 셀은 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치 하는 방법에 대해 알아봅니다.'
+description: F# 참조 셀은 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치 하는 방법에 대해 알아봅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: e2e1a91c62fd76e4992bc5ae11bb672766850718
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -9,61 +9,61 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2018
 ms.locfileid: "44192267"
 ---
-# <a name="reference-cells"></a><span data-ttu-id="4b460-103">참조 셀</span><span class="sxs-lookup"><span data-stu-id="4b460-103">Reference Cells</span></span>
+# <a name="reference-cells"></a><span data-ttu-id="2b747-103">참조 셀</span><span class="sxs-lookup"><span data-stu-id="2b747-103">Reference Cells</span></span>
 
-<span data-ttu-id="4b460-104">*참조 셀* 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-104">*Reference cells* are storage locations that enable you to create mutable values with reference semantics.</span></span>
+<span data-ttu-id="2b747-104">*참조 셀* 참조 의미론을 통해 변경할 수 있는 값을 만드는 데 사용할 수 있는 저장소 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-104">*Reference cells* are storage locations that enable you to create mutable values with reference semantics.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4b460-105">구문</span><span class="sxs-lookup"><span data-stu-id="4b460-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2b747-105">구문</span><span class="sxs-lookup"><span data-stu-id="2b747-105">Syntax</span></span>
 
 ```fsharp
 ref expression
 ```
 
-## <a name="remarks"></a><span data-ttu-id="4b460-106">설명</span><span class="sxs-lookup"><span data-stu-id="4b460-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2b747-106">설명</span><span class="sxs-lookup"><span data-stu-id="2b747-106">Remarks</span></span>
 
-<span data-ttu-id="4b460-107">값 앞에 `ref` 연산자를 사용하여 값을 캡슐화하는 새 참조 셀을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-107">You use the `ref` operator before a value to create a new reference cell that encapsulates the value.</span></span> <span data-ttu-id="4b460-108">이는 변경 가능한 변수이므로 참조 셀을 만든 다음 내부 값을 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-108">You can then change the underlying value because it is mutable.</span></span>
+<span data-ttu-id="2b747-107">값 앞에 `ref` 연산자를 사용하여 값을 캡슐화하는 새 참조 셀을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-107">You use the `ref` operator before a value to create a new reference cell that encapsulates the value.</span></span> <span data-ttu-id="2b747-108">이는 변경 가능한 변수이므로 참조 셀을 만든 다음 내부 값을 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-108">You can then change the underlying value because it is mutable.</span></span>
 
-<span data-ttu-id="4b460-109">참조 셀은 단순한 주소가 아니라 실제 값을 저장하는 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-109">A reference cell holds an actual value; it is not just an address.</span></span> <span data-ttu-id="4b460-110">`ref` 연산자를 사용하여 참조 셀을 만들면 캡슐화되고 변경 가능한 값으로 내부 값의 복사본이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-110">When you create a reference cell by using the `ref` operator, you create a copy of the underlying value as an encapsulated mutable value.</span></span>
+<span data-ttu-id="2b747-109">참조 셀은 단순한 주소가 아니라 실제 값을 저장하는 위치입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-109">A reference cell holds an actual value; it is not just an address.</span></span> <span data-ttu-id="2b747-110">`ref` 연산자를 사용하여 참조 셀을 만들면 캡슐화되고 변경 가능한 값으로 내부 값의 복사본이 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-110">When you create a reference cell by using the `ref` operator, you create a copy of the underlying value as an encapsulated mutable value.</span></span>
 
-<span data-ttu-id="4b460-111">`!`(느낌표) 연산자를 사용하여 참조 셀을 역참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-111">You can dereference a reference cell by using the `!` (bang) operator.</span></span>
+<span data-ttu-id="2b747-111">`!`(느낌표) 연산자를 사용하여 참조 셀을 역참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-111">You can dereference a reference cell by using the `!` (bang) operator.</span></span>
 
-<span data-ttu-id="4b460-112">다음 코드 예제에서는 참조 셀을 선언하고 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-112">The following code example illustrates the declaration and use of reference cells.</span></span>
+<span data-ttu-id="2b747-112">다음 코드 예제에서는 참조 셀을 선언하고 사용하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-112">The following code example illustrates the declaration and use of reference cells.</span></span>
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2201.fs)]
 
-<span data-ttu-id="4b460-113">출력은 `50`입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-113">The output is `50`.</span></span>
+<span data-ttu-id="2b747-113">출력은 `50`입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-113">The output is `50`.</span></span>
 
-<span data-ttu-id="4b460-114">참조 셀은 다음과 같이 선언되는 `Ref` 제네릭 레코드 형식의 인스턴스입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-114">Reference cells are instances of the `Ref` generic record type, which is declared as follows.</span></span>
+<span data-ttu-id="2b747-114">참조 셀은 다음과 같이 선언되는 `Ref` 제네릭 레코드 형식의 인스턴스입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-114">Reference cells are instances of the `Ref` generic record type, which is declared as follows.</span></span>
 
 ```fsharp
 type Ref<'a> =
 { mutable contents: 'a }
 ```
 
-<span data-ttu-id="4b460-115">형식 `'a ref`는 `Ref<'a>`와 같은 의미입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-115">The type `'a ref` is a synonym for `Ref<'a>`.</span></span> <span data-ttu-id="4b460-116">IDE의 컴파일러와 IntelliSense에서는 이 형식을 전자와 같이 표시하지만 그 내부 정의는 후자와 같습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-116">The compiler and IntelliSense in the IDE display the former for this type, but the underlying definition is the latter.</span></span>
+<span data-ttu-id="2b747-115">형식 `'a ref`는 `Ref<'a>`와 같은 의미입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-115">The type `'a ref` is a synonym for `Ref<'a>`.</span></span> <span data-ttu-id="2b747-116">IDE의 컴파일러와 IntelliSense에서는 이 형식을 전자와 같이 표시하지만 그 내부 정의는 후자와 같습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-116">The compiler and IntelliSense in the IDE display the former for this type, but the underlying definition is the latter.</span></span>
 
-<span data-ttu-id="4b460-117">`ref` 연산자는 새 참조 셀을 만드는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-117">The `ref` operator creates a new reference cell.</span></span> <span data-ttu-id="4b460-118">다음 코드는 `ref` 연산자의 선언입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-118">The following code is the declaration of the `ref` operator.</span></span>
+<span data-ttu-id="2b747-117">`ref` 연산자는 새 참조 셀을 만드는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-117">The `ref` operator creates a new reference cell.</span></span> <span data-ttu-id="2b747-118">다음 코드는 `ref` 연산자의 선언입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-118">The following code is the declaration of the `ref` operator.</span></span>
 
 ```fsharp
 let ref x = { contents = x }
 ```
 
-<span data-ttu-id="4b460-119">다음 표에는 참조 셀에 사용할 수 있는 기능이 나와 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-119">The following table shows the features that are available on the reference cell.</span></span>
+<span data-ttu-id="2b747-119">다음 표에는 참조 셀에 사용할 수 있는 기능이 나와 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-119">The following table shows the features that are available on the reference cell.</span></span>
 
-|<span data-ttu-id="4b460-120">연산자, 멤버 또는 필드</span><span class="sxs-lookup"><span data-stu-id="4b460-120">Operator, member, or field</span></span>|<span data-ttu-id="4b460-121">설명</span><span class="sxs-lookup"><span data-stu-id="4b460-121">Description</span></span>|<span data-ttu-id="4b460-122">형식</span><span class="sxs-lookup"><span data-stu-id="4b460-122">Type</span></span>|<span data-ttu-id="4b460-123">정의</span><span class="sxs-lookup"><span data-stu-id="4b460-123">Definition</span></span>|
+|<span data-ttu-id="2b747-120">연산자, 멤버 또는 필드</span><span class="sxs-lookup"><span data-stu-id="2b747-120">Operator, member, or field</span></span>|<span data-ttu-id="2b747-121">설명</span><span class="sxs-lookup"><span data-stu-id="2b747-121">Description</span></span>|<span data-ttu-id="2b747-122">형식</span><span class="sxs-lookup"><span data-stu-id="2b747-122">Type</span></span>|<span data-ttu-id="2b747-123">정의</span><span class="sxs-lookup"><span data-stu-id="2b747-123">Definition</span></span>|
 |--------------------------|-----------|----|----------|
-|<span data-ttu-id="4b460-124">`!`(역참조 연산자)</span><span class="sxs-lookup"><span data-stu-id="4b460-124">`!` (dereference operator)</span></span>|<span data-ttu-id="4b460-125">내부 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-125">Returns the underlying value.</span></span>|`'a ref -> 'a`|`let (!) r = r.contents`|
-|<span data-ttu-id="4b460-126">`:=`(할당 연산자)</span><span class="sxs-lookup"><span data-stu-id="4b460-126">`:=` (assignment operator)</span></span>|<span data-ttu-id="4b460-127">내부 값을 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-127">Changes the underlying value.</span></span>|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
-|<span data-ttu-id="4b460-128">`ref`(연산자)</span><span class="sxs-lookup"><span data-stu-id="4b460-128">`ref` (operator)</span></span>|<span data-ttu-id="4b460-129">값을 새 참조 셀로 캡슐화합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-129">Encapsulates a value into a new reference cell.</span></span>|`'a -> 'a ref`|`let ref x = { contents = x }`|
-|<span data-ttu-id="4b460-130">`Value`(속성)</span><span class="sxs-lookup"><span data-stu-id="4b460-130">`Value` (property)</span></span>|<span data-ttu-id="4b460-131">내부 값을 가져오거나 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-131">Gets or sets the underlying value.</span></span>|`unit -> 'a`|`member x.Value = x.contents`|
-|<span data-ttu-id="4b460-132">`contents`(레코드 필드)</span><span class="sxs-lookup"><span data-stu-id="4b460-132">`contents` (record field)</span></span>|<span data-ttu-id="4b460-133">내부 값을 가져오거나 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-133">Gets or sets the underlying value.</span></span>|`'a`|`let ref x = { contents = x }`|
-<span data-ttu-id="4b460-134">내부 값에 액세스하는 데는 여러 가지 방법이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-134">There are several ways to access the underlying value.</span></span> <span data-ttu-id="4b460-135">역참조 연산자(`!`)를 통해 반환되는 값은 할당 가능한 값이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-135">The value returned by the dereference operator (`!`) is not an assignable value.</span></span> <span data-ttu-id="4b460-136">따라서 내부 값을 수정하는 경우에는 할당 연산자(`:=`)를 대신 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-136">Therefore, if you are modifying the underlying value, you must use the assignment operator (`:=`) instead.</span></span>
+|<span data-ttu-id="2b747-124">`!`(역참조 연산자)</span><span class="sxs-lookup"><span data-stu-id="2b747-124">`!` (dereference operator)</span></span>|<span data-ttu-id="2b747-125">내부 값을 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-125">Returns the underlying value.</span></span>|`'a ref -> 'a`|`let (!) r = r.contents`|
+|<span data-ttu-id="2b747-126">`:=`(할당 연산자)</span><span class="sxs-lookup"><span data-stu-id="2b747-126">`:=` (assignment operator)</span></span>|<span data-ttu-id="2b747-127">내부 값을 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-127">Changes the underlying value.</span></span>|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
+|<span data-ttu-id="2b747-128">`ref`(연산자)</span><span class="sxs-lookup"><span data-stu-id="2b747-128">`ref` (operator)</span></span>|<span data-ttu-id="2b747-129">값을 새 참조 셀로 캡슐화합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-129">Encapsulates a value into a new reference cell.</span></span>|`'a -> 'a ref`|`let ref x = { contents = x }`|
+|<span data-ttu-id="2b747-130">`Value`(속성)</span><span class="sxs-lookup"><span data-stu-id="2b747-130">`Value` (property)</span></span>|<span data-ttu-id="2b747-131">내부 값을 가져오거나 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-131">Gets or sets the underlying value.</span></span>|`unit -> 'a`|`member x.Value = x.contents`|
+|<span data-ttu-id="2b747-132">`contents`(레코드 필드)</span><span class="sxs-lookup"><span data-stu-id="2b747-132">`contents` (record field)</span></span>|<span data-ttu-id="2b747-133">내부 값을 가져오거나 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-133">Gets or sets the underlying value.</span></span>|`'a`|`let ref x = { contents = x }`|
+<span data-ttu-id="2b747-134">내부 값에 액세스하는 데는 여러 가지 방법이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-134">There are several ways to access the underlying value.</span></span> <span data-ttu-id="2b747-135">역참조 연산자(`!`)를 통해 반환되는 값은 할당 가능한 값이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-135">The value returned by the dereference operator (`!`) is not an assignable value.</span></span> <span data-ttu-id="2b747-136">따라서 내부 값을 수정하는 경우에는 할당 연산자(`:=`)를 대신 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-136">Therefore, if you are modifying the underlying value, you must use the assignment operator (`:=`) instead.</span></span>
 
-<span data-ttu-id="4b460-137">`Value` 속성과 `contents` 필드는 둘 다 할당 가능한 값입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-137">Both the `Value` property and the `contents` field are assignable values.</span></span> <span data-ttu-id="4b460-138">따라서 다음 코드에서와 같이 이들 속성과 필드를 사용하여 내부 값에 액세스하거나 내부 값을 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-138">Therefore, you can use these to either access or change the underlying value, as shown in the following code.</span></span>
+<span data-ttu-id="2b747-137">`Value` 속성과 `contents` 필드는 둘 다 할당 가능한 값입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-137">Both the `Value` property and the `contents` field are assignable values.</span></span> <span data-ttu-id="2b747-138">따라서 다음 코드에서와 같이 이들 속성과 필드를 사용하여 내부 값에 액세스하거나 내부 값을 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-138">Therefore, you can use these to either access or change the underlying value, as shown in the following code.</span></span>
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2203.fs)]
 
-<span data-ttu-id="4b460-139">출력은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-139">The output is as follows.</span></span>
+<span data-ttu-id="2b747-139">출력은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-139">The output is as follows.</span></span>
 
 ```
 10
@@ -72,15 +72,15 @@ let ref x = { contents = x }
 12
 ```
 
-<span data-ttu-id="4b460-140">필드 `contents`는 다른 ML 버전과의 호환성을 위해 제공되며 컴파일 과정에서 이 필드로 인해 경고가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-140">The field `contents` is provided for compatibility with other versions of ML and will produce a warning during compilation.</span></span> <span data-ttu-id="4b460-141">경고가 발생하지 않도록 하려면 `--mlcompatibility` 컴파일러 옵션을 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-141">To disable the warning, use the `--mlcompatibility` compiler option.</span></span> <span data-ttu-id="4b460-142">자세한 내용은 [컴파일러 옵션](compiler-options.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="4b460-142">For more information, see [Compiler Options](compiler-options.md).</span></span>
+<span data-ttu-id="2b747-140">필드 `contents`는 다른 ML 버전과의 호환성을 위해 제공되며 컴파일 과정에서 이 필드로 인해 경고가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-140">The field `contents` is provided for compatibility with other versions of ML and will produce a warning during compilation.</span></span> <span data-ttu-id="2b747-141">경고가 발생하지 않도록 하려면 `--mlcompatibility` 컴파일러 옵션을 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-141">To disable the warning, use the `--mlcompatibility` compiler option.</span></span> <span data-ttu-id="2b747-142">자세한 내용은 [컴파일러 옵션](compiler-options.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="2b747-142">For more information, see [Compiler Options](compiler-options.md).</span></span>
 
-<span data-ttu-id="4b460-143">C# 프로그래머는 알아야 `ref` C# 없는 동일 `ref` F #에서.</span><span class="sxs-lookup"><span data-stu-id="4b460-143">C# programmers should know that `ref` in C# is not the same thing as `ref` in F#.</span></span> <span data-ttu-id="4b460-144">F #의 해당 구문이 [byref](byrefs.md)는 참조 셀에서 다른 개념입니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-144">The equivalent constructs in F# are [byrefs](byrefs.md), which are a different concept from reference cells.</span></span>
+<span data-ttu-id="2b747-143">C# 프로그래머는 알아야 `ref` C# 없는 동일 `ref` F#에서.</span><span class="sxs-lookup"><span data-stu-id="2b747-143">C# programmers should know that `ref` in C# is not the same thing as `ref` in F#.</span></span> <span data-ttu-id="2b747-144">F#의 해당 구문이 [byref](byrefs.md)는 참조 셀에서 다른 개념입니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-144">The equivalent constructs in F# are [byrefs](byrefs.md), which are a different concept from reference cells.</span></span>
 
-<span data-ttu-id="4b460-145">값으로 표시 `mutable`에 자동으로 승격 될 수 있습니다 `'a ref` 클로저;에 의해 캡처된 참조 [값](values/index.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="4b460-145">Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).</span></span>
+<span data-ttu-id="2b747-145">값으로 표시 `mutable`에 자동으로 승격 될 수 있습니다 `'a ref` 클로저;에 의해 캡처된 참조 [값](values/index.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="2b747-145">Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](values/index.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4b460-146">참고자료</span><span class="sxs-lookup"><span data-stu-id="4b460-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2b747-146">참고자료</span><span class="sxs-lookup"><span data-stu-id="2b747-146">See also</span></span>
 
-- [<span data-ttu-id="4b460-147">F# 언어 참조</span><span class="sxs-lookup"><span data-stu-id="4b460-147">F# Language Reference</span></span>](index.md)
-- [<span data-ttu-id="4b460-148">매개 변수 및 인수</span><span class="sxs-lookup"><span data-stu-id="4b460-148">Parameters and Arguments</span></span>](parameters-and-arguments.md)
-- [<span data-ttu-id="4b460-149">기호 및 연산자 참조</span><span class="sxs-lookup"><span data-stu-id="4b460-149">Symbol and Operator Reference</span></span>](symbol-and-operator-reference/index.md)
-- [<span data-ttu-id="4b460-150">값</span><span class="sxs-lookup"><span data-stu-id="4b460-150">Values</span></span>](values/index.md)
+- [<span data-ttu-id="2b747-147">F# 언어 참조</span><span class="sxs-lookup"><span data-stu-id="2b747-147">F# Language Reference</span></span>](index.md)
+- [<span data-ttu-id="2b747-148">매개 변수 및 인수</span><span class="sxs-lookup"><span data-stu-id="2b747-148">Parameters and Arguments</span></span>](parameters-and-arguments.md)
+- [<span data-ttu-id="2b747-149">기호 및 연산자 참조</span><span class="sxs-lookup"><span data-stu-id="2b747-149">Symbol and Operator Reference</span></span>](symbol-and-operator-reference/index.md)
+- [<span data-ttu-id="2b747-150">값</span><span class="sxs-lookup"><span data-stu-id="2b747-150">Values</span></span>](values/index.md)

@@ -7,7 +7,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2018
 ms.locfileid: "25726420"
 ---
-# <a name="using-f-on-azure-service-fabric"></a><span data-ttu-id="181b2-101">Azure 서비스 패브릭에서 F# 사용</span><span class="sxs-lookup"><span data-stu-id="181b2-101">Using F# on Azure Service Fabric</span></span>
+# <a name="using-f-on-azure-service-fabric"></a><span data-ttu-id="498d8-101">Azure 서비스 패브릭에서 F# 사용</span><span class="sxs-lookup"><span data-stu-id="498d8-101">Using F# on Azure Service Fabric</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="181b2-102">이 문서는 아직 작성 중입니다.</span><span class="sxs-lookup"><span data-stu-id="181b2-102">This is still in progress.</span></span>
+> <span data-ttu-id="498d8-102">이 문서는 아직 작성 중입니다.</span><span class="sxs-lookup"><span data-stu-id="498d8-102">This is still in progress.</span></span>
