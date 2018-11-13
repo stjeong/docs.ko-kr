@@ -5,12 +5,12 @@ f1_keywords:
 - nameof_CSharpKeyword
 - nameof
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-ms.openlocfilehash: 726abfd903f37826a247e6e98c0d11f230447550
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 01c87f8d63264aa342b04b8d3fcfc7e6f38db44b
+ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48035255"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "50744358"
 ---
 # <a name="nameof-c-reference"></a>nameof(C# 참조)
 
@@ -131,8 +131,9 @@ class C {
  "`Method1 (str, str)`"과 같은 서명 정보를 가져올 수 있는 방법은 없습니다.  이 작업을 수행하는 한 가지 방법은 `Expression e = () => A.B.Method1("s1", "s2")` 식을 사용하고 결과 식 트리에서 MemberInfo를 끌어오는 것입니다.  
   
 ## <a name="language-specifications"></a>언어 사양  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [Nameof 식](~/_csharplang/spec/expressions.md#nameof-expressions)을 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
+ 
 ## <a name="see-also"></a>참고 항목
 
 - [C# 참조](../../../csharp/language-reference/index.md)  

@@ -7,11 +7,11 @@ ms.assetid: 4fe17546-d56e-4344-a930-6d8e4a545914
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 89724e9a322f2f28dbe5d18ae697acbdd0a32d8e
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50041624"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744472"
 ---
 # <a name="how-to-debug-clr-activation-issues"></a>방법: CLR 활성화 문제 디버깅
 응용 프로그램이 올바른 버전의 CLR(공용 언어 런타임)로 실행되도록 하는 데 문제가 있는 경우 CLR 활성화 로그를 보고 디버그할 수 있습니다. 이러한 로그는 응용 프로그램이 예상과 다른 CLR 버전을 로드하거나 CLR을 로드하지 않을 때 활성화 문제의 근본 원인을 파악하는 데 매우 유용할 수 있습니다. [.NET Framework 초기화 오류: 사용자 경험 관리](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md)에서는 응용 프로그램에 대한 CLR이 없는 경우의 경험에 대해 설명합니다.  

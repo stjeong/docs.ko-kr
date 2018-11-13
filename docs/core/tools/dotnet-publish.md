@@ -4,11 +4,11 @@ description: dotnet publish 명령은 .NET Core 프로젝트를 디렉터리에 
 author: mairaw
 ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: a60777d613573076f41fba3e5ed610b236884063
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 17bacc92eea90072b95b2d42a87cb57e9fa0be67
+ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 11/07/2018
 ms.locfileid: "43511426"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
@@ -58,7 +58,7 @@ dotnet publish [-h|--help]
 
 `PROJECT`
 
-게시할 프로젝트입니다. 지정하지 않으면 현재 디렉터리로 기본 설정됩니다.
+게시할 프로젝트입니다. [C#](csproj.md), F# 또는 Visual Basic 프로젝트 파일의 경로 및 파일 이름이거나 C#, F# 또는 Visual Basic 프로젝트 파일을 포함하는 디렉터리의 경로입니다. 지정하지 않으면 현재 디렉터리로 기본 설정됩니다.
 
 ## <a name="options"></a>옵션
 

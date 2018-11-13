@@ -11,11 +11,11 @@ helpviewer_keywords:
 - protocols, pluggable
 ms.assetid: 9810c177-973e-43d7-823c-14960bd625ea
 ms.openlocfilehash: 859593c6c53d9f6dc89047efae1c682a6a9873a7
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181266"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744407"
 ---
 # <a name="deriving-from-webrequest"></a>WebRequest에서 파생
 <xref:System.Net.WebRequest> 클래스는 .NET Framework 플러그형 프로토콜 모델에 적합한 프로토콜별 요청 처리기를 만들기 위한 기본 메서드 및 속성을 제공하는 추상 기본 클래스입니다. **WebRequest** 클래스를 사용하는 응용 프로그램은 사용되는 프로토콜을 지정할 필요 없이 지원되는 모든 프로토콜을 사용하여 데이터를 요청할 수 있습니다.  

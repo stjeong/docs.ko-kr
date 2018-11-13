@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f646927d4ddf88ae117f6cacafc2e42df4e3abee
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 844e9e53c752be0c993255fc356ade1723109b39
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195686"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744589"
 ---
 # <a name="net-framework-deployment-guide-for-administrators"></a>관리자를 위한 .NET Framework 배포 가이드
 이 단계별 문서에서는 시스템 관리자가 Microsoft System Center Configuration Manager를 사용하여 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 시스템 종속성을 네트워크 전체에 배포할 수 있는 방법에 대해 설명합니다. 이 문서에서는 .NET Framework 4의 최소 요구 사항이 모든 대상 클라이언트 컴퓨터에서 충족되는 것으로 가정합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 위한 소프트웨어와 하드웨어 요구 사항 목록은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
@@ -176,8 +176,8 @@ ms.locfileid: "50195686"
   
 9. 마법사의 **사용자 경험** 페이지에서 기본값을 사용하고 **다음**을 선택합니다.  
   
-    > [!WARNING]
-    >  프로덕션 환경에는 배포 일정에 대해 다른 선택 항목을 요구하는 정책이 있을 수도 있습니다. 이러한 옵션에 대한 자세한 내용은 TechNet 라이브러리의 [광고 이름 속성: 일정 탭](https://technet.microsoft.com/library/bb694016.aspx)을 참조하세요.  
+> [!WARNING]
+> 프로덕션 환경에는 배포 일정에 대해 다른 선택 항목을 요구하는 정책이 있을 수도 있습니다. 이러한 옵션에 대한 자세한 내용은 [Advertisement Name Properties: Schedule Tab](https://docs.microsoft.com/previous-versions/system-center/configuration-manager-2007/bb694016%28v=technet.10%29)(보급 알림 이름 속성: 일정 탭)을 참조하세요.
   
 10. 마법사의 **배포 지점** 페이지에서 기본값을 사용하고 **다음**을 선택합니다.  
   
@@ -207,7 +207,7 @@ ms.locfileid: "50195686"
   
 -   [System Center 2012 Configuration Manager의 사이트 관리](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg681983%28v=technet.10%29)  
   
--   [Configuration Manager 단일 사이트 계획 및 배포](https://technet.microsoft.com/library/bb680961.aspx)  
+-   [Configuration Manager 단일 사이트 계획 및 배포](https://docs.microsoft.com/previous-versions/system-center/configuration-manager-2007/bb680961%28v=technet.10%29)  
   
  **Windows 컴퓨터용 System Center 2012 Configuration Manager 클라이언트:**  
   

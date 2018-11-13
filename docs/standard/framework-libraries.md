@@ -6,12 +6,12 @@ ms.author: ronpet
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
-ms.openlocfilehash: dd8baa481e51aa44c4c884b4b165bdf319ac1c4d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1b5099c73264f3175aa05094f4460c1c97774533
+ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33576284"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50743965"
 ---
 # <a name="framework-libraries"></a>프레임워크 라이브러리
 
@@ -59,4 +59,4 @@ BCL은 가장 기본적인 형식과 유틸리티 기능을 제공하며 다른 
 
 여러 회사에서 제공하는, .NET에 사용할 수 있는 많은 앱 모델이 있습니다.
 
-*   [ASP.NET](http://asp.net) - 웹 사이트와 서비스를 구축하기 위한 웹 프레임워크를 제공합니다. Windows, Linux 및 macOS에서 지원됩니다(ASP.NET 버전에 따라 다름).
+*   [ASP.NET](https://www.asp.net) - 웹 사이트와 서비스를 구축하기 위한 웹 프레임워크를 제공합니다. Windows, Linux 및 macOS에서 지원됩니다(ASP.NET 버전에 따라 다름).

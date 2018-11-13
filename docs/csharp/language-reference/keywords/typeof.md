@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - typeof keyword [C#]
 ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d
-ms.openlocfilehash: 2493e78fd0782eebee17afd979e1c429339d0a3f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: aff7462f0df938a8e96cca33155489bee4891da0
+ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529210"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "50744446"
 ---
 # <a name="typeof-c-reference"></a>typeof(C# 참조)
 형식의 `System.Type` 개체를 가져오는 데 사용됩니다. `typeof` 식의 형식은 다음과 같습니다.  
@@ -44,8 +44,9 @@ System.Type type = i.GetType();
  [!code-csharp[csrefKeywordsOperator#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_2.cs)]  
   
 ## <a name="c-language-specification"></a>C# 언어 사양  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [typeof 연산자](~/_csharplang/spec/expressions.md#the-typeof-operator)를 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
+ 
 ## <a name="see-also"></a>참고 항목
 
 - <xref:System.Type?displayProperty=nameWithType>  

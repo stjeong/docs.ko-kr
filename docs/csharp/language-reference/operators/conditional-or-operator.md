@@ -1,6 +1,6 @@
 ---
 title: '|| 연산자(C# 참조)'
-ms.date: 07/20/2015
+ms.date: 11/06/2018
 f1_keywords:
 - '||_CSharpKeyword'
 helpviewer_keywords:
@@ -8,40 +8,34 @@ helpviewer_keywords:
 - conditional-OR operator (||) [C#]
 - '|| operator [C#]'
 ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
-ms.openlocfilehash: 58e5fd72a3748e7af0894093fc461c4efb543608
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: a391078372e4ec0a3882bed4515733adedffb547
+ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
+ms.lasthandoff: 11/07/2018
 ms.locfileid: "42925542"
 ---
 # <a name="-operator-c-reference"></a>|| 연산자(C# 참조)
-조건부 OR 연산자(`||`)는 해당 `bool` 피연산자의 논리적 OR을 수행합니다. 첫 번째 피연산자가 `true`이면 두 번째 피연산자는 계산되지 않습니다. 첫 번째 피연산자가 `false`이면 두 번째 피연산자에 의해 OR 식 전체가 `true` 또는 `false`인지가 결정됩니다.  
-  
-## <a name="remarks"></a>설명  
- 이 작업은  
-  
-```csharp  
-x || y  
-```  
-  
- 연산에 해당합니다.  
-  
-```csharp  
-x | y  
-```  
-  
- 단, `x`가 `true`이면 `y`는 평가되지 않습니다. `y` 값과 관계없이 OR 연산이 `true`이기 때문입니다. 이 개념을 “단락” 평가라고 합니다.  
-  
- 조건부 OR 연산자는 오버로드될 수 없지만 일반 논리 연산자와 [true](../../../csharp/language-reference/keywords/true.md) 및 [false](../../../csharp/language-reference/keywords/false.md) 연산자의 오버로드는 조건부 논리 연산자의 오버로드로 간주합니다(특정 제한 사항 있음).  
-  
-## <a name="example"></a>예  
- 다음 예제에서 `||`를 사용하는 식은 첫 번째 피연산자만 계산합니다. `|`를 사용하는 식은 두 피연산자를 모두 계산합니다. 두 번째 예제에서 두 피연산자가 모두 계산되면 런타임 예외가 발생합니다.  
-  
- [!code-csharp[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
-  
+
+"단락(short-circuiting)" 논리 OR 연산자로도 알려져 있는 조건부 논리 OR 연산자 `||`는 [bool](../keywords/bool.md) 피연산자의 논리 OR을 계산합니다. `x` 또는 `y`가 `true`로 평가되면 `x || y`의 결과는 `true`입니다. 그렇지 않으면 결과는 `false`입니다. 첫 번째 피연산자가 `true`로 평가되면 두 번째 피연산자는 평가되지 않고 작업 결과는 `true`입니다. 다음 예제에서는 해당 동작을 보여줍니다.
+
+[!code-csharp-interactive[conditional logical OR](~/samples/snippets/csharp/language-reference/operators/ConditionalLogicalOperatorsExamples.cs#Or)]
+
+[논리 OR 연산자](or-operator.md) `|`도 해당 `bool` 피연산자의 논리 OR을 계산하지만 항상 두 피연산자를 평가합니다.
+
+## <a name="operator-overloadability"></a>연산자 오버로드 가능성
+
+사용자 정의 형식으로 조건부 논리 OR 연산자를 오버로드할 수 없습니다. 그러나 사용자 정의 형식이 특정 방식으로 [논리 OR](or-operator.md), [true](../keywords/true-operator.md) 및 [false](../keywords/false-operator.md) 연산자를 오버로드하는 경우 `||` 작업은 해당 형식의 피연산자에 대해 평가할 수 있습니다. 자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [사용자 정의 조건부 논리 연산자](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) 섹션을 참조하세요.
+
+## <a name="c-language-specification"></a>C# 언어 사양
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [조건부 논리 연산자](~/_csharplang/spec/expressions.md#conditional-logical-operators) 섹션을 참조하세요.
+
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 연산자](index.md)
+- [&& 연산자](conditional-and-operator.md)
+- [! 연산자](logical-negation-operator.md)
+- [| 연산자](or-operator.md)

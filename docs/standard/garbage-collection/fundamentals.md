@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 741ddd0171244daceb4d5e283c0172e71b82f3d2
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: a7fa240ea42fe1bee4011a228595e48eb163e1a9
+ms.sourcegitcommit: 296183dbe35077b5c5e5e74d5fbe7f399bc507ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582751"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50982869"
 ---
 # <a name="fundamentals-of-garbage-collection"></a>가비지 컬렉션 기본 사항
 <a name="top"></a> CLR(공용 언어 런타임)에서 가비지 수집은 자동 메모리 관리자 역할을 합니다. 가비지 수집은 다음과 같은 이점을 제공합니다.  
@@ -172,7 +172,7 @@ ms.locfileid: "48582751"
   
  가비지 수집기는 다음 정보를 사용하여 개체가 활성 개체인지 여부를 판단합니다.  
   
--   **스택 루트**. JIT(Just-In-Time) 컴파일러 및 스택 워크에서 제공한 스택 변수  
+-   **스택 루트**. JIT(Just-In-Time) 컴파일러 및 스택 워크에서 제공한 스택 변수 JIT 최적화는 가비지 수집기로 보고되는 스택 변수 내에서 코드 영역을 늘리거나 줄일 수 있습니다.
   
 -   **가비지 수집 핸들**. 관리되는 개체를 가리키며 사용자 코드 또는 공용 언어 런타임에 의해 할당될 수 있는 핸들입니다.  
   

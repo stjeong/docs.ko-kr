@@ -9,12 +9,12 @@ helpviewer_keywords:
 - path formats, Windows
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5821d15e71492bd54fa6b5d891f2ff38a2902a06
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 05146467f321a3c83f3637e2eecc4c7c42dc4ba0
+ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47424391"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51214196"
 ---
 # <a name="file-path-formats-on-windows-systems"></a>Windows 시스템의 파일 경로 형식
 
@@ -202,7 +202,7 @@ Windows API에 전달되는 거의 모든 경로는 정규화됩니다. 정규�
 Windows 이외의 사용자와 개발자가 혼동을 일으키는 Windows 파일 시스템의 특징은 경로 및 디렉터리 이름이 대/소문자를 구분하지 않는다는 것입니다. 즉, 디렉터리 및 파일 이름은 생성될 때 사용하는 문자열의 대/소문자를 반영합니다. 예를 들어 다음 메서드 호출은
 
 ```csharp
-Directory.Create(TeStDiReCtOrY);
+Directory.Create("TeStDiReCtOrY");
 ```
 TeStDiReCtOrY라는 디렉터리를 생성합니다. 해당 대/소문자를 변경하기 위해 디렉터리 또는 파일을 이름 변경하는 경우, 디렉터리 또는 파일 이름은 이름 변경할 당시에 사용한 문자열의 대/소문자를 반영합니다. 예를 들어 다음 코드는 test.txt라는 파일을 Test.txt로 이름 변경합니다.
 
