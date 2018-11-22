@@ -2,11 +2,11 @@
 title: 사용자 지정 인코더
 ms.date: 03/30/2017
 ms.assetid: fa0e1d7f-af36-4bf4-aac9-cd4eab95bc4f
-ms.openlocfilehash: cd8b9172278ce5bcca2965872d697b03698bd850
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.openlocfilehash: 036cbff9046df2d1179c5cc0921dd8d89757558b
+ms.sourcegitcommit: 8145ad08288bf141d68e3256cb1f7a3ad842ca33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
+ms.lasthandoff: 11/22/2018
 ms.locfileid: "50034388"
 ---
 # <a name="custom-encoders"></a>사용자 지정 인코더
@@ -60,7 +60,7 @@ ms.locfileid: "50034388"
  동적 사전 키를 처리하는 이외에도 성공적으로 버퍼링된 메시지를 고유한 방식으로 수신합니다. 이진 인코더는 문서에 대한 판독기를 만들어 문서를 처리하는 대신 내부 `MessagePatterns` 클래스를 사용하여 이진 스트림을 해체합니다. 개념은 대부분의 메시지를 특정 헤더 집합이 WCF에 의해 생성 된 순서 대로 표시 되는 것입니다. 패턴 시스템은 필요에 따라 메시지를 분리합니다. 성공하면 XML을 구문 분석하지 않고 <xref:System.ServiceModel.Channels.MessageHeaders> 개체를 초기화합니다. 실패하면 표준 메서드로 변경됩니다.  
   
 ### <a name="mtom-encoding"></a>MTOM 인코딩  
- <<!--zz xref:System.ServiceModel.Channels.MTOMMessageEncodingBindingElement --> `System.ServiceModel.Channels.MTOMMessageEncodingBindingElement`> 클래스에 추가 구성 속성인 <<!--zz xref:System.ServiceModel.Channels.MTOMMessageEncodingBindingElement --> `System.ServiceModel.Channels.MTOMMessageEncodingBindingElement`.MaxBufferSize%2A>. 이 속성은 메시지를 읽는 동안 버퍼링할 수 있는 데이터의 크기에 대한 상한을 지정합니다. 모든 MIME 부분을 단일 메시지로 다시 어셈블하려면 XML Infoset(정보 집합) 또는 다른 MIME 부분을 버퍼링해야 할 수도 있습니다.  
+ <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> 클래스에는 <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement.MaxBufferSize%2A>라는 추가 구성 속성이 있습니다. 이 속성은 메시지를 읽는 동안 버퍼링할 수 있는 데이터의 크기에 대한 상한을 지정합니다. 모든 MIME 부분을 단일 메시지로 다시 어셈블하려면 XML Infoset(정보 집합) 또는 다른 MIME 부분을 버퍼링해야 할 수도 있습니다.  
   
  HTTP에서 올바로 작동하기 위해 내부 MTOM 메시지 인코더 클래스는 내부 `GetContentType` 및 public이며 재정의 가능한 `WriteMessage`에 대한 몇 가지 내부 API를 제공합니다. HTTP 헤더의 값과 MIME 헤더의 값이 일치하려면 더 많은 통신이 수행되어야 합니다.  
   
