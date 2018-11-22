@@ -36,5 +36,5 @@ ms.locfileid: "43529237"
 - [C# 프로그래밍 가이드](../../programming-guide/index.md)
 - [C# 연산자](index.md)
 - [|| 연산자](conditional-or-operator.md)
-- [! 연산자](logical-negation-operator.md)
+- [\! 연산자](logical-negation-operator.md)
 - [& 연산자](and-operator.md)
