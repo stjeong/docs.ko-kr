@@ -8,11 +8,11 @@ helpviewer_keywords:
 - security [WCF], creating a session
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
 ms.openlocfilehash: c0e5281d227d343d8734809b27b57d8a2bead627
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185806"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297116"
 ---
 # <a name="how-to-create-a-secure-session"></a>방법: 보안 세션 만들기
 제외 된 [ \<basicHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) 바인딩 시스템 제공 바인딩은 Windows Communication Foundation (WCF)에서 자동으로 사용 하 여 메시지 보안을 사용 하는 경우 보안 세션입니다.  

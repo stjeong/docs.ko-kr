@@ -10,12 +10,12 @@ helpviewer_keywords:
 - RaiseEvent statement [Visual Basic]
 - event handlers, connecting events to
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-ms.openlocfilehash: ef4dce290a7a7f6340b15aa4083cd40518e37d0d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ba4c05b3ef69d180f43ac3b90aa8fd6dee9c80fb
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507394"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296869"
 ---
 # <a name="raiseevent-statement"></a>RaiseEvent 문
 클래스, 폼 또는 문서의 모듈 수준에서 선언한 이벤트를 트리거합니다.  
@@ -73,7 +73,7 @@ RaiseEvent eventname[( argumentlist )]
  F5 키를 눌러 앞의 예제를 실행 하 고 레이블이 붙은 단추를 클릭 **시작**합니다. 첫 번째 텍스트 상자에서 초를 카운트 다운하기 시작합니다. 전체 시간(10초)이 경과되면 첫 번째 텍스트 상자에 "Done"이 표시됩니다.  
   
 > [!NOTE]
->  `My.Application.DoEvents` 메서드 이벤트를 처리 하지 동일한 방식으로 폼 마찬가지로 합니다. 폼에 직접 이벤트를 처리할 수 있도록을 따르면 다중 스레딩 합니다. 자세한 내용은 [스레딩](../../programming-guide/concepts/threading/index.md)합니다.  
+>  `My.Application.DoEvents` 메서드 이벤트를 처리 하지 동일한 방식으로 폼 마찬가지로 합니다. 폼에 직접 이벤트를 처리할 수 있도록을 따르면 다중 스레딩 합니다. 자세한 내용은 [관리 되는 스레딩](../../../standard/threading/index.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [이벤트](../../../visual-basic/programming-guide/language-features/events/index.md)  

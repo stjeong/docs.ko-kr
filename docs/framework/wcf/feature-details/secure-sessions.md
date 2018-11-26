@@ -3,11 +3,11 @@ title: 보안 세션
 ms.date: 03/30/2017
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
 ms.openlocfilehash: 1f3a1e23f7cac2540216365acfca5c23cddfce71
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50190842"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296934"
 ---
 # <a name="secure-sessions"></a>보안 세션
 Windows Communication Foundation (WCF)의 기능은 메시지는 전송 된 순서에서를 보장 하는 신뢰할 수 있는 세션입니다. 이 단원의 항목에서는 신뢰할 수 있는 세션을 만들 때 고려해야 할 보안 관련 문제에 대해 설명합니다. 신뢰할 수 있는 세션에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 세션](../../../../docs/framework/wcf/using-sessions.md)합니다.  
