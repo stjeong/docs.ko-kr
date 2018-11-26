@@ -1,18 +1,18 @@
 ---
 title: 배열(F#)
-description: 만들기 및 F# 프로그래밍 언어에서 배열 사용 방법에 알아봅니다.
+description: 만들기 및 배열을 사용 하는 방법을 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 27b73efc900ac2efc813fe66f81baa2e9ae1e843
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 0f72718988ee401631c53b74f02948030e83aac1
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48032733"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297194"
 ---
 # <a name="arrays"></a>배열
 
 > [!NOTE]
-API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
+> API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
 배열은 동일한 형식의 모든 연속 데이터 요소의 고정 크기 이며 0부터 시작 변경 가능한 컬렉션입니다.
 
@@ -57,7 +57,7 @@ API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 
 
 ## <a name="array-types-and-modules"></a>배열 형식과 모듈
 
-모든 F# 배열의 형식은.NET Framework 형식 <xref:System.Array?displayProperty=nameWithType>합니다. F# 배열에서 사용할 수 있는 모든 기능을 지원 하므로 <xref:System.Array?displayProperty=nameWithType>합니다.
+모든 유형의 F# 는.NET Framework 형식이 배열 <xref:System.Array?displayProperty=nameWithType>합니다. 따라서 F# 배열에서 사용할 수 있는 모든 기능을 지 원하는 <xref:System.Array?displayProperty=nameWithType>합니다.
 
 라이브러리 모듈 [ `Microsoft.FSharp.Collections.Array` ](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1) 1 차원 배열에 대 한 작업을 지원 합니다. 모듈 `Array2D`, `Array3D`, 및 `Array4D` 각각 2, 3 및 4 차원 배열에 대 한 작업을 지 원하는 함수를 포함 합니다. 배열 차수를 사용 하 여 4 보다 큰 만들면 <xref:System.Array?displayProperty=nameWithType>합니다.
 
@@ -218,7 +218,7 @@ matrix.[*, 1..3]
 matrix.[1..3, 1..3]
 ```
 
-F# 3.1부터 분해할 수 있습니다 다차원 배열을 동일 하거나 낮은 차원의 하위 배열의 합니다. 예를 들어, 단일 행 또는 열을 지정 하 여 매트릭스에서 벡터를 얻을 수 있습니다.
+F# 3.1 다차원 배열을 동일 하거나 낮은 차원의 하위 배열의에 분해할 수 있습니다. 예를 들어, 단일 행 또는 열을 지정 하 여 매트릭스에서 벡터를 얻을 수 있습니다.
 
 ```fsharp
 // Get row 3 from a matrix as a vector:
@@ -228,7 +228,7 @@ matrix.[3, *]
 matrix.[*, 3]
 ```
 
-이 사용 하 여 요소 액세스 연산자를 구현 하 고 오버 로드 된 형식 위한 조각화 구문이 `GetSlice` 메서드. 예를 들어, 다음 코드를 만드는 F# 2D 배열을 래핑하고 배열 인덱싱에 대 한 지원을 제공 하는 항목 속성을 구현의 세 가지 버전을 구현 하는 행렬 형식 `GetSlice`합니다. 이 코드를 매트릭스 형식을 위한 템플릿으로 사용할 수 있습니다, 하는 경우이 섹션에서 설명 하는 모든 조각 작업을 사용할 수 있습니다.
+이 사용 하 여 요소 액세스 연산자를 구현 하 고 오버 로드 된 형식 위한 조각화 구문이 `GetSlice` 메서드. 다음 코드를 래핑하는 매트릭스 형식을 만듭니다 하는 예를 들어는 F# 2D 배열의 배열 인덱싱에 대 한 지원을 제공 하는 항목 속성을 구현 하 고 세 가지 버전의 구현 `GetSlice`합니다. 이 코드를 매트릭스 형식을 위한 템플릿으로 사용할 수 있습니다, 하는 경우이 섹션에서 설명 하는 모든 조각 작업을 사용할 수 있습니다.
 
 ```fsharp
 type Matrix<'T>(N: int, M: int) =

@@ -2,19 +2,18 @@
 title: Windows 시스템의 파일 경로 형식
 ms.date: 06/28/2018
 ms.technology: dotnet-standard
-ms.topic: article
 helpviewer_keywords:
 - I/O, long paths
 - long paths
 - path formats, Windows
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 05146467f321a3c83f3637e2eecc4c7c42dc4ba0
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: 1b79ff1991f1d9b803b0c35b4ae9565f70de0b56
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51214196"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296830"
 ---
 # <a name="file-path-formats-on-windows-systems"></a>Windows 시스템의 파일 경로 형식
 
@@ -90,8 +89,8 @@ DOS 장치 경로는 다음 구성 요소로 구성됩니다.
 
    호출된 UNC에 대한 특정 링크가 있습니다(당연히 `UNC`). 예:
 
-      `\\.\UNC\Server\Share\Test\Foo.txt`
-      `\\?\UNC\Server\Share\Test\Foo.txt`
+  `\\.\UNC\Server\Share\Test\Foo.txt`  
+  `\\?\UNC\Server\Share\Test\Foo.txt`
 
     장치 UNC의 경우, 서버/공유 부분이 볼륨을 형성합니다. 예를 들어 `\\?\server1\e:\utilities\\filecomparer\`에서 서버/공유 부분은 server1\utilities입니다. 이는 상대 디렉터리 경로를 사용하여 <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> 같은 메서드를 호출할 때 중요하며, 볼륨을 지나서 탐색하는 것은 불가능합니다. 
 
@@ -114,7 +113,7 @@ Windows API에 전달되는 거의 모든 경로는 정규화됩니다. 정규�
 - 상대 디렉터리 구성 요소(현재 디렉터리의 경우 `.` 및 부모 디렉터리의 경우 `..`)를 평가합니다.
 - 특정 문자를 잘라냅니다.
 
-이 정규화는 암시적으로 일어나지만 [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx) 호출을 래핑하는 <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> 메서드를 호출하여 명시적으로 수행할 수도 있습니다. 또한 P/Invoke를 사용하여 Windows [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).aspx)를 직접 호출할 수도 있습니다. 다음을 호출할 수도 있음 
+이 정규화는 암시적으로 일어나지만 [GetFullPathName() 함수](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) 호출을 래핑하는 <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> 메서드를 호출하여 명시적으로 수행할 수도 있습니다. 또한 P/Invoke를 사용하여 Windows [GetFullPathName() 함수](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea)를 직접 호출할 수도 있습니다.
 
 ### <a name="identifying-the-path"></a>경로 식별
 

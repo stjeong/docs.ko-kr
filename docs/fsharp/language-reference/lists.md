@@ -1,18 +1,18 @@
 ---
 title: 목록(F#)
-description: F# 목록 같은 형식의 요소를 정렬 된, 변경할 수 없는 계열에 알아봅니다.
+description: 에 대해 알아봅니다 F# 는 정렬 된, 변경할 수 없는 일련의 동일한 형식의 요소를 나열 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: b48bf04f5ec490b49e63462affc0d4eadebe10ef
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: f7b9054226a1dd004ac78673a059bd1c35e325a5
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50201626"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297506"
 ---
 # <a name="lists"></a>목록
 
 > [!NOTE]
-이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
+> 이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
 F#의 목록은 순서가 지정되고 변경할 수 없는 일련의 동일 형식 요소입니다. 목록에서 기본 작업을 수행 하려면 함수를 사용 합니다 [List 모듈](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788)합니다.
 
@@ -56,7 +56,7 @@ F#의 목록은 순서가 지정되고 변경할 수 없는 일련의 동일 형
 
 F#의 목록은 변경이 불가능하므로 수정 작업을 수행하면 기존 목록이 수정되는 대신 새 목록이 생성됩니다.
 
-F#의 목록은 목록 헤드에만 액세스 하는 작업은 O(1)는 되므로 단일 연결된 목록으로 구현 되 고 요소 액세스는 O (*n*).
+목록 F# 헤드 목록에만 액세스 하는 작업은 O(1), 요소 액세스는 O 의미 단일 연결된 목록으로 구현 됩니다 (*n*).
 
 ## <a name="properties"></a>속성
 

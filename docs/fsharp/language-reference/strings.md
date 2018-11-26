@@ -1,24 +1,24 @@
 ---
 title: 문자열(F#)
-description: F# 'string' 유형의 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 표시 하는 방법에 대해 알아봅니다.
+description: 설명 하는 방법을 F# 'string' 형식은 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 나타냅니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 21971602093bc84b0df47d4ae46a14fb936c28bb
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 158e30224fe50c2324e40d550b75e6abaf843597
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43799345"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296791"
 ---
 # <a name="strings"></a>문자열
 
 > [!NOTE]
-이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
+> 이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
 `string` 형식은 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 나타냅니다. `string`은 .NET Framework에서 `System.String`의 별칭입니다.
 
 ## <a name="remarks"></a>설명
 
-문자열 리터럴은 따옴표 (") 문자로 구분 됩니다. 백슬래시 문자 ( \\ ) 특정 특수 문자를 인코딩하는 데 사용 됩니다. 백슬래시와 함께 다음 문자는 라고는 *이스케이프 시퀀스*합니다. F# 문자열 리터럴은 다음 표에 나와에서 지원 되는 시퀀스를 이스케이프 합니다.
+문자열 리터럴은 따옴표 (") 문자로 구분 됩니다. 백슬래시 문자 ( \\ ) 특정 특수 문자를 인코딩하는 데 사용 됩니다. 백슬래시와 함께 다음 문자는 라고는 *이스케이프 시퀀스*합니다. 이스케이프 시퀀스에서 지원 되는 F# 문자열 리터럴은 다음 표에 표시 됩니다.
 
 |문자|이스케이프 시퀀스|
 |---------|---------------|
@@ -78,7 +78,7 @@ def
 
 ## <a name="string-class"></a>String 클래스
 
-F#에서 문자열 형식이 실제로.NET Framework `System.String` 모든 입력을 `System.String` 멤버를 사용할 수 있습니다. 여기에 `+` 연산자에 사용 되는 문자열을 연결 하는 `Length` 속성 및 `Chars` 유니코드 문자의 배열 문자열을 반환 하는 속성입니다. 문자열에 대 한 자세한 내용은 참조 하세요. `System.String`합니다.
+문자열 형식에서 F# 는 실제로.NET 프레임 워크 `System.String` all을 입력 합니다 `System.String` 멤버를 사용할 수. 여기에 `+` 연산자에 사용 되는 문자열을 연결 하는 `Length` 속성 및 `Chars` 유니코드 문자의 배열 문자열을 반환 하는 속성입니다. 문자열에 대 한 자세한 내용은 참조 하세요. `System.String`합니다.
 
 사용 하 여 합니다 `Chars` 속성의 `System.String`, 다음 코드에 표시 된 대로 인덱스를 지정 하 여 문자열의 개별 문자를 액세스할 수 있습니다.
 

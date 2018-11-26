@@ -1,13 +1,13 @@
 ---
 title: '리소스 관리: use 키워드(F#)'
-description: F# 키워드 '사용' 및 초기화 및 리소스의 해제를 제어할 수는 'using' 함수를 알아봅니다.
+description: 알아봅니다는 F# 키워드 'use' 및 'using' 함수를 초기화 및 리소스의 해제를 제어할 수 있습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: ffa1cb515139a3705920d9d9f79be1a69602f7d8
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 300fb4113019f676625f75541d117458eab3f6ab
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45616071"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296882"
 ---
 # <a name="resource-management-the-use-keyword"></a>리소스 관리: use 키워드
 
@@ -19,7 +19,7 @@ ms.locfileid: "45616071"
 
 ## <a name="managing-resources"></a>리소스 관리
 
-책임 지 고 효율적으로 응용 프로그램에서 리소스를 관리 하려면 신속 하 게 하 고 예측 가능한 방식으로 리소스를 해제 해야 합니다. .NET Framework를 사용 하면 제공 하 여이 작업을 수행 합니다 `System.IDisposable` 인터페이스입니다. 구현 하는 형식을 `System.IDisposable` 에 `System.IDisposable.Dispose` 메서드를 올바르게 리소스를 해제 합니다. 응용 프로그램을 잘 작성 된 `System.IDisposable.Dispose` 제한 된 리소스를 보유 하는 모든 개체에 더 이상 필요 없는 경우 즉시 호출 됩니다. 다행 스럽게도 대부분의.NET 언어를 더 쉽게 확인 하려면 지원 하 고 F# 예외가 없습니다. Dispose 패턴을 지 원하는 두 가지 유용한 언어 구문이: 합니다 `use` 바인딩 및 `using` 함수입니다.
+책임 지 고 효율적으로 응용 프로그램에서 리소스를 관리 하려면 신속 하 게 하 고 예측 가능한 방식으로 리소스를 해제 해야 합니다. .NET Framework를 사용 하면 제공 하 여이 작업을 수행 합니다 `System.IDisposable` 인터페이스입니다. 구현 하는 형식을 `System.IDisposable` 에 `System.IDisposable.Dispose` 메서드를 올바르게 리소스를 해제 합니다. 응용 프로그램을 잘 작성 된 `System.IDisposable.Dispose` 제한 된 리소스를 보유 하는 모든 개체에 더 이상 필요 없는 경우 즉시 호출 됩니다. 다행 스럽게도 대부분의.NET 언어 제공이 쉽게 지원 및 F# 도 예외가 아닙니다. Dispose 패턴을 지 원하는 두 가지 유용한 언어 구문이: 합니다 `use` 바인딩 및 `using` 함수입니다.
 
 ## <a name="use-binding"></a>바인딩을 사용합니다
 
@@ -33,8 +33,8 @@ ms.locfileid: "45616071"
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6301.fs)]
 
->[!NOTE]
-사용할 수 있습니다 `use` 계산 식에 사용자 지정된 버전의 경우는 `use` 식이 사용 됩니다. 자세한 내용은 [시퀀스](sequences.md)를 [비동기 워크플로](asynchronous-workflows.md), 및 [계산 식](computation-expressions.md)합니다.
+> [!NOTE]
+> 사용할 수 있습니다 `use` 계산 식에 사용자 지정된 버전의 경우는 `use` 식이 사용 됩니다. 자세한 내용은 [시퀀스](sequences.md)를 [비동기 워크플로](asynchronous-workflows.md), 및 [계산 식](computation-expressions.md)합니다.
 
 ## <a name="using-function"></a>함수를 사용 하 여
 

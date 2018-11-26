@@ -1,18 +1,18 @@
 ---
 title: 기호 및 연산자 참조(F#)
-description: 기호 및 F# 프로그래밍 언어에서 사용 되는 연산자에 알아봅니다.
+description: 기호 및 연산자에 사용 되는 방법을 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 04/04/2018
-ms.openlocfilehash: 0e36f6cfc75b7d2e79bcf7acb89d260fd4e9b1ad
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: f6f99f8fa563b71c935122c6f8597599c59b5c7f
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "47216829"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297334"
 ---
 # <a name="symbol-and-operator-reference"></a>기호 및 연산자 참조
 
 > [!NOTE]
-이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
+> 이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
 이 항목에는 F# 언어에서 사용되는 기호와 연산자의 표가 나와 있습니다.
 

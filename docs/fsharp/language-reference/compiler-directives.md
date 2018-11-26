@@ -1,13 +1,13 @@
 ---
 title: 컴파일러 지시문(F#)
-description: F# 언어 전처리기 지시문, 조건부 컴파일 지시문, 줄 지시문 및 컴파일러 지시문에 알아봅니다.
+description: 에 대해 알아봅니다 F# 언어 전처리기 지시문, 조건부 컴파일 지시문, 줄 지시문 및 컴파일러 지시문입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 5ac375ac5acd0609a6556f9e0481d169df827c98
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: bb23096e03584f2a50cfe069075ba94a35c4753c
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50181370"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296505"
 ---
 # <a name="compiler-directives"></a>컴파일러 지시문
 
@@ -35,8 +35,8 @@ ms.locfileid: "50181370"
 
 이러한 지시문 중 하나에 의해 비활성화 된 코드는 Visual Studio 코드 편집기에서 흐리게 표시 됩니다.
 
->[!NOTE]
-다른 언어에 있는 그대로 동일한 조건부 컴파일 지시문의 동작을 볼 수 없습니다. 예를 들어 기호가 포함된 부울 식은 사용할 수 없으며 `true` 및 `false`가 특별한 의미를 가지지도 않습니다. `if` 지시문에 사용하는 기호는 명령줄이나 프로젝트 설정에서 정의해야 합니다. `define` 전처리기 지시문이 없습니다.
+> [!NOTE]
+> 다른 언어에 있는 그대로 동일한 조건부 컴파일 지시문의 동작을 볼 수 없습니다. 예를 들어 기호가 포함된 부울 식은 사용할 수 없으며 `true` 및 `false`가 특별한 의미를 가지지도 않습니다. `if` 지시문에 사용하는 기호는 명령줄이나 프로젝트 설정에서 정의해야 합니다. `define` 전처리기 지시문이 없습니다.
 
 다음 코드에서는 `#if`, `#else` 및 `#endif` 지시문을 사용하는 방법을 보여 줍니다. 이 예제의 코드에는 `function1`에 대한 두 가지 버전의 정의가 포함되어 있습니다. 때 `VERSION1` 를 사용 하 여 정의 된를 [-define 컴파일러 옵션](https://msdn.microsoft.com/library/434394ae-0d4a-459c-a684-bffede519a04), 사이 코드를 `#if` 지시문 및 `#else` 활성화 됩니다. 그렇지 않은 경우에는 `#else`와 `#endif` 사이의 코드가 활성화됩니다.
 
@@ -65,7 +65,7 @@ F#에는 `#define` 전처리기 지시문이 없습니다. `#if` 지시문에 �
 |지시문|설명|
 |---------|-----------|
 |`#light` ["on"&#124;"off"]|다른 ML 버전과의 호환성을 위해 간단한 구문을 사용하거나 사용하지 않도록 설정합니다. 기본적으로 간단한 구문을 사용하도록 설정됩니다. 자세한 구문은 항상 사용할 수 있도록 설정됩니다. 따라서 간단한 구문과 자세한 구문을 함께 사용할 수 있습니다. `#light` 지시문 자체는 `#light "on"`과 같습니다. `#light "off"`를 지정하는 경우에는 모든 언어 구문에 대해 자세한 구문 형식을 사용해야 합니다. F# 관련 설명에 나오는 구문은 간단한 구문을 사용하는 것을 전제로 하여 제시됩니다. 자세한 내용은 [자세한 구문](verbose-syntax.md)합니다.|
-해석기 (fsi.exe) 지시문을 참조 하세요 [F#을 사용한 대화형 프로그래밍](../tutorials/fsharp-interactive/index.md)합니다.
+해석기 (fsi.exe) 지시문을 참조 하세요 [를 사용한 대화형 프로그래밍 F# ](../tutorials/fsharp-interactive/index.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
