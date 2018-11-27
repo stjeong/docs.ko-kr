@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Help, Visual C# documentation
 - C# language
 - Visual C#
-ms.openlocfilehash: 32da68206e2415d42df9cc820ff1ca2814fbf58f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 5b0f3cc4a090e3479489285631a8d13b8b134c56
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195842"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52296752"
 ---
 # <a name="c-guide"></a>C# 가이드
 
@@ -36,7 +36,7 @@ C# 가이드에는 여러 섹션이 있습니다. 순서대로 읽거나 가장 
   * 이 섹션에서는 기본 플랫폼에서 C# 개발 환경을 위해 설치해야 하는 항목을 소개합니다. 이 섹션의 다른 항목에서는 지원되는 다양한 환경에서 첫 번째 C# 프로그램을 만드는 방법을 설명합니다.
 
 * [C# 소개 자습서](tutorials/intro-to-csharp/index.md):
-  * C# 소개 자습서는 완전 초보 개발자가 REPL(Read-Eval-Print Loop) 인터페이스를 사용하여 브라우저에서 C# 언어를 살펴보고 배울 수 있는 대화형 학습서를 제공합니다. 대화형 단원을 완료한 후 머신에서 같은 단원을 연습하여 코딩 기술을 향상할 수 있습니다.
+  * C# 소개 자습서는 완전 초보 개발자가 REPL(Read-Eval-Print Loop) 인터페이스를 사용하여 브라우저에서 C# 언어를 살펴보고 배울 수 있는 대화형 학습서를 제공합니다. 대화형 단원을 완료한 후 컴퓨터에서 같은 단원을 연습하여 코딩 기술을 향상할 수 있습니다.
 
 * [자습서](tutorials/index.md)
   * 이 섹션에서는 설명 및 코드를 비롯하여 다양한 종단 간 시나리오를 제시합니다. 특정 코드 관용구가 선호되는 이유, 다양한 상황에서 가장 잘 작동하는 C# 기능 및 일반적인 작업에 대한 참조 구현을 보여 줍니다. 코드를 통해 최고의 모범 사례를 배우려면 이 섹션부터 시작하세요. 모든 코드를 다운로드하고 사용자 환경에서 테스트해볼 수도 있습니다.
@@ -67,5 +67,5 @@ C# 가이드에는 여러 섹션이 있습니다. 순서대로 읽거나 가장 
 ## <a name="see-also"></a>참고 항목
 
 * [Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
-* [.NET 개발](https://msdn.microsoft.com/library/ff361664)  
+* [.NET 가이드](../standard/index.md)  
 * [C# 샘플](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)  
