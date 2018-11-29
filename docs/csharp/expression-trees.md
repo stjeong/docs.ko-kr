@@ -1,5 +1,5 @@
 ---
-title: Expression Trees
+title: 식 트리
 description: .NET Core의 식 트리에 대해 알아본 다음 이를 사용하여 검사, 수정 및 실행할 수 있는 구조로 코드를 나타내는 방법을 알아봅니다.
 ms.date: 06/20/2016
 ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/28/2018
 ms.locfileid: "50190738"
 ---
-# <a name="expression-trees"></a>Expression Trees
+# <a name="expression-trees"></a>식 트리
 
 LINQ를 사용했다면 `Func` 형식이 API 집합의 일부인 풍부한 라이브러리 경험이 있는 것입니다. LINQ에 익숙하지 않은 경우 [LINQ 자습서](linq/index.md) 및 [람다 식](lambda-expressions.md)에 대한 자습서를 먼저 읽어보는 것이 좋습니다. *식 트리*에서는 함수인 인수를 사용하는 보다 풍부한 조작을 제공합니다.
 
