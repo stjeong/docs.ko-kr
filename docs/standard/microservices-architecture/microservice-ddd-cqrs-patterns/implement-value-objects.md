@@ -1,37 +1,37 @@
 ---
 title: 값 개체 구현
-description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | 값 개체 구현
+description: 컨테이너화된 .NET 애플리케이션의 .NET 마이크로 서비스 아키텍처 | 새로운 Entity Framework 기능을 사용하여 값 개체를 구현하는 세부 정보 및 옵션을 가져옵니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/12/2017
-ms.openlocfilehash: 4ba2e48e742e580a1c96743fa89e413c488b8dc7
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.date: 10/08/2018
+ms.openlocfilehash: 057e2e65f975c1de8f332b77c8a23d07329381e6
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106725"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297480"
 ---
-# <a name="implementing-value-objects"></a>값 개체 구현
+# <a name="implement-value-objects"></a>값 개체 구현
 
 엔터티 및 집계에 대한 이전 섹션에서 설명한 대로, ID는 엔터티의 근본입니다. 그러나 시스템에는 값 개체처럼 ID 및 ID 추적이 필요 없는 여러 개체와 데이터 항목이 있습니다.
 
 값 개체는 다른 엔터티를 참조할 수 있습니다. 예를 들어 한 지점에서 다른 지점으로 이동하는 경로를 생성하는 응용 프로그램에서는 해당 경로가 값 개체입니다. 특정 경로에 있는 지점의 스냅숏이 되겠지만, 이 제안 경로는 내부적으로 도시, 로드 등의 엔터티를 참조하더라도 ID를 갖지 않습니다.
 
-그림 9-13은 순서 집계 내부의 주소 값 개체를 보여줍니다.
+그림 7-13은 순서 집계 내의 주소 값 개체를 보여줍니다.
 
-![](./media/image14.png)
+![순서 집계 내의 주소 값 개체](./media/image14.png)
 
-**그림 9-13**. 순서 집계 내부의 주소 값 개체
+**그림 7-13** 순서 집계 내부의 주소 값 개체
 
-그림 9-13에 보이는 것처럼, 엔터티는 일반적으로 여러 특성으로 구성됩니다. 예를 들어 `Order` 엔터티는 ID가 있는 엔터티로 모델링하고 내부적으로 OrderId, OrderDate, OrderItems 등의 특성 집합으로 구성할 수 있습니다. 하지만 국가, 거리, 도시 등으로 구성되는 복잡한 값인 주소는 이 도메인에서 ID를 갖지 않으며, 값 개체로 모델링하고 처리해야 합니다.
+그림 7-13에 표시된 것처럼, 엔터티는 일반적으로 여러 특성으로 구성됩니다. 예를 들어 `Order` 엔터티는 ID가 있는 엔터티로 모델링하고 내부적으로 OrderId, OrderDate, OrderItems 등의 특성 집합으로 구성할 수 있습니다. 하지만 국가, 거리, 도시 등으로 구성되고 이 도메인의 ID를 갖지 않는 복잡한 값인 주소는 값 개체로 모델링되고 처리되어야 합니다.
 
 ## <a name="important-characteristics-of-value-objects"></a>값 개체의 중요한 특징
 
 값 개체의 두 가지 주요 특징이 있습니다.
 
--   ID가 없습니다.
+- ID가 없습니다.
 
--   변경할 수 없습니다.
+- 변경할 수 없습니다.
 
 첫 번째 특징은 이미 설명했습니다. 변경 불가능은 중요한 요구 사항입니다. 일단 개체가 생성된 후에는 값 개체의 값을 변경할 수 없어야 합니다. 따라서 개체가 생성될 때 필요한 값을 제공해야 하지만, 개체의 수명 주기 동안 값이 변경되는 것을 허용하면 안 됩니다.
 
@@ -102,11 +102,11 @@ public abstract class ValueObject
 ```csharp
 public class Address : ValueObject
 {
-    public String Street { get; }
-    public String City { get; }
-    public String State { get; }
-    public String Country { get; }
-    public String ZipCode { get; }
+    public String Street { get; private set; }
+    public String City { get; private set; }
+    public String State { get; private set; }
+    public String Country { get; private set; }
+    public String ZipCode { get; private set; }
 
     private Address() { }
 
@@ -130,6 +130,12 @@ public class Address : ValueObject
     }
 }
 ```
+
+주소의 이 값 개체 구현에 ID가 없으며 따라서 Address 클래스 및 ValueObject 클래스에도 ID 필드가 없도록 하는 방법을 확인할 수 있습니다.
+
+ID가 없는 값 개체를 구현하는 데 크게 데 도움이 되는 EF Core 2.0까지는 클래스에 Entity Framework에서 사용할 ID 필드가 있습니다. 정확한 다음 섹션의 설명입니다. 
+
+변경할 수 없는 개체 값이 읽기 전용(예: 가져오기 전용 속성)이라고 주장할 수 있고 실제로 그렇습니다. 그러나 값 개체는 일반적으로 직렬화되고 deserialize되어 메시지 큐를 거치고 읽기 전용이므로 deserializer가 값을 할당하지 않도록 중지합니다. 따라서 읽기 전용이 충분히 실용적인 비공개 집합으로 둡니다.
 
 ## <a name="how-to-persist-value-objects-in-the-database-with-ef-core-20"></a>EF Core 2.0을 사용하여 데이터베이스에서 개체 값을 유지하는 방법
 
@@ -164,18 +170,17 @@ DDD의 정식 값 개체 패턴과 EF Core의 소유된 엔터티 형식 사이�
 
 소유된 엔터티 형식 기능은 EF Core 버전 2.0부터 추가되었습니다.
 
-소유된 엔터티 형식을 사용하면 엔터티 내의 값 개체처럼 도메인 모델에 명시적으로 정의된 자체 ID가 없고 속성으로 사용되는 형식을 매핑할 수 있습니다. 소유된 엔터티 형식은 다른 엔터티 형식과 동일한 CLR 형식을 공유합니다. 정의 탐색을 포함하는 엔터티는 소유자 엔터티입니다. 소유자를 쿼리할 때 소유된 형식은 기본적으로 포함됩니다.
+소유된 엔터티 형식을 사용하면 엔터티 내의 값 개체처럼 도메인 모델에 명시적으로 정의된 고유 ID가 없고 속성으로 사용되는 형식을 매핑할 수 있습니다. 소유된 엔터티 형식은 다른 엔터티 형식과 동일한 CLR 형식을 공유합니다(즉, 일반 클래스임). 정의 탐색을 포함하는 엔터티는 소유자 엔터티입니다. 소유자를 쿼리할 때 소유된 형식은 기본적으로 포함됩니다.
 
-도메인 모델을 그냥 보면 소유된 형식에는 ID가 없는 것처럼 보입니다.
-하지만 내부로 들어가면 소유된 형식에 ID가 있고 소유자 탐색 속성은 이 ID의 일부입니다.
+도메인 모델을 그냥 보면 소유된 형식에는 ID가 없는 것처럼 보입니다. 하지만 내부로 들어가면 소유된 형식에 ID가 있고 소유자 탐색 속성은 이 ID의 일부입니다.
 
-자체 형식의 인스턴스 ID가 오직 그 자체로만 구성되는 것은 아닙니다. 다음과 같은 세 가지 구성 요소로 구성됩니다.
+고유 형식의 인스턴스 ID가 오직 그 자체로만 구성되는 것은 아닙니다. 다음과 같은 세 가지 구성 요소로 구성됩니다.
 
 - 소유자 ID
 
 - 소유자 ID를 가리키는 탐색 속성
 
-- 소유된 형식의 컬렉션인 경우 독립 구성 요소(아직 EF Core 2.0에서 지원되지 않음).
+- 소유된 형식의 컬렉션인 경우 독립 구성 요소(아직 EF Core 2.0에서 지원되지 않으며 2.2에서 제공될 예정임).
 
 예를 들어 eShopOnContainers의 주문 도메인 모델에서, 주문 엔터티의 일부로 주소 값 개체가 소유자 엔터티 내부의 소유된 엔터티 형식으로 구현되며, 이것이 주문 엔터티입니다. 주소는 도메인 모델에 정의된 ID 속성이 없는 형식입니다. 특정 주문의 배송 주소를 지정하기 위한 Order 형식 속성으로 사용됩니다.
 
@@ -266,64 +271,64 @@ public class Address
 
 ### <a name="additional-details-on-owned-entity-types"></a>소유된 엔터티 형식에 대한 추가 정보
 
-•   소유된 형식은 소유 OwnsOne 흐름 API를 사용하여 탐색 속성을 특정 형식으로 구성할 때 정의됩니다.
+- 소유된 형식은 OwnsOne 흐름 API를 사용하여 탐색 속성을 특정 형식으로 구성할 때 정의됩니다.
 
-•   메타데이터 모델의 소유된 형식 정의는 소유자 형식, 탐색 속성 및 소유된 형식의 CLR 형식으로 구성됩니다.
+- 메타데이터 모델의 소유된 형식 정의는 소유된 형식의 소유자 형식, 탐색 속성 및 CLR 형식으로 구성됩니다.
 
-•   스택의 소유된 형식 인스턴스의 ID(키)는 소유자 형식의 ID와 소유된 형식의 정의로 구성됩니다.
+- 스택의 소유된 형식 인스턴스의 ID(키)는 소유자 형식의 ID와 소유된 형식의 정의로 구성됩니다.
 
 #### <a name="owned-entities-capabilities"></a>소유된 엔터티 기능:
 
-•   소유된 형식은 소유된 엔터티든(중첩된 소유된 형식) 아니면 소유되지 않은 엔터티든(다른 엔터티에 대한 일반 참조 탐색 속성), 다른 엔터티를 참조할 수 있습니다.
+- 소유된 형식은 소유된 엔터티(중첩된 소유된 형식) 또는 소유되지 않은 엔터티(다른 엔터티에 대한 일반 참조 탐색 속성)라는 다른 엔터티를 참조할 수 있습니다.
 
-•   별도의 탐색 속성을 통해 동일한 소유자 엔터티의 다른 소유된 형식과 동일한 CLR 형식을 매핑할 수 있습니다.
+- 별도의 탐색 속성을 통해 동일한 소유자 엔터티의 다른 소유된 형식과 동일한 CLR 형식을 매핑할 수 있습니다.
 
-•   테이블 분할은 규칙에 따라 설정되지만, ToTable을 사용하여 소유된 형식을 다른 테이블로 매핑하여 옵트아웃할 수 있습니다.
+- 테이블 분할은 규칙에 따라 설정되지만, ToTable을 사용하여 소유된 형식을 다른 테이블로 매핑하여 옵트아웃할 수 있습니다.
 
-•   즉시 로드(eager loading)는 소유된 형식에서 자동으로 수행되므로 쿼리에서 include()를 호출할 필요가 없습니다.
+- 즉시 로드는 소유된 형식에서 자동으로 수행되므로 쿼리에서 include()를 호출할 필요가 없습니다.
+
+- EF Core 2.1으로 \[소유된\] 특성을 사용하여 구성될 수 있습니다.
 
 #### <a name="owned-entities-limitations"></a>소유된 엔터티의 제한 사항:
 
-•   소유된 형식의 DbSet<T>을 만들 수 없습니다(의도된 동작).
+- 소유된 형식의 DbSet\<T\>를 만들 수 없습니다(설계 상).
 
-•   소유된 형식에 대해 ModelBuilder.Entity<T>()를 호출할 수 없습니다(현재는 의도된 동작).
+- 소유된 형식에 대해 ModelBuilder.Entity\<T\>()를 호출할 수 없습니다(현재 설계 상).
 
-•   아직은 소유된 형식의 컬렉션이 없습니다(하지만 EF Core 2.0 이후 버전부터 지원 예정).
+- 아직 EF Core 2.1로 소유된 형식의 컬렉션이 없습니다(하지만 2.2에서 지원될 예정).
 
-•   특성을 통해 구성할 수 없습니다.
+- 동일한 테이블(예: 테이블 분할 사용)에서 소유자로 매핑되는 선택적(예: null 허용) 소유된 형식이 지원되지 않습니다. 각 속성에 대해 매핑이 수행되기 때문에 null 복합 값에 대한 별도 sentinel이 전체로 포함되지 않습니다.
 
-•   동일한 테이블의 소유자와 매핑되는(즉, 테이블 분할을 사용하는) 선택적(즉, null 허용) 소유된 형식이 지원되지 않습니다. null에 대한 별도의 sentinel이 없기 때문입니다.
-
-•   소유된 형식에 대한 상속 매핑이 지원되지 않지만, 다른 소유된 형식과 상속 계층 구조가 동일한 두 가지 리프 형식을 매핑할 수 있습니다. EF Core는 이러한 형식이 동일한 계층 구조의 일부라는 사실의 근거가 되지 못합니다.
+- 소유된 형식에 대한 상속 매핑이 지원되지 않지만, 다른 소유된 형식과 상속 계층 구조가 동일한 두 가지 리프 형식을 매핑할 수 있습니다. EF Core는 이러한 형식이 동일한 계층 구조의 일부라는 사실의 근거가 되지 못합니다.
 
 #### <a name="main-differences-with-ef6s-complex-types"></a>EF6의 복합 형식과 다른 주요 차이점
 
-•   테이블 분할은 선택 사항입니다. 즉, 별도 테이블에 선택적으로 매핑할 수 있으며 계속해서 소유된 형식이 될 수 있습니다.
+- 테이블 분할은 선택 사항입니다. 즉, 별도 테이블에 선택적으로 매핑할 수 있으며 계속해서 소유된 형식이 될 수 있습니다.
 
-•   다른 엔터티를 참조할 수 있습니다. 즉, 다른 소유되지 않은 형식과의 관계에서 종속되는 쪽의 역할을 할 수 있습니다.
-
+- 다른 엔터티를 참조할 수 있습니다. 즉, 다른 소유되지 않은 형식과의 관계에서 종속되는 쪽의 역할을 할 수 있습니다.
 
 ## <a name="additional-resources"></a>추가 자료
 
--   **Martin Fowler. ValueObject 패턴**
-    [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
+- **Martin Fowler. ValueObject 패턴** \
+  [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
--   **Eric Evans. 도메인 기반 디자인: 소프트웨어 핵심에서 복잡성 처리.** (도서; 값 개체의 토론 포함) [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- **Eric Evans. 도메인 기반 디자인: 소프트웨어 핵심에서 복잡성 처리.** (도서; 값 개체의 토론 포함) \
+  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
--   **Vaughn Vernon. 도메인 기반 디자인 구현.** (도서; 값 개체의 토론 포함) [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
+- **Vaughn Vernon. 도메인 기반 디자인 구현.** (도서; 값 개체의 토론 포함) \
+  [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
 
--   **섀도 속성**
-    [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
+- **섀도 속성** \
+  [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
--   **복합 형식 및/또는 값 개체**. EF Core GitHub 리포지토리에서 토론(문제 탭) [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
+- **복합 형식 및/또는 값 개체**. EF Core GitHub 리포지토리에서 토론(문제 탭) \
+  [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
 
--   **ValueObject.cs.** eShopOnContainers의 기준 값 개체 클래스.
-    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
+- **ValueObject.cs.** eShopOnContainers의 기준 값 개체 클래스.**  \
+  [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
 
--   **주소 클래스.** eShopOnContainers의 동일한 값 개체 클래스.
-    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
-
-
+- **주소 클래스.** eShopOnContainers의 동일한 값 개체 클래스. \
+  [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
 
 >[!div class="step-by-step"]
 [이전](seedwork-domain-model-base-classes-interfaces.md)

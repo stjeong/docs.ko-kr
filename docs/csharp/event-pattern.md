@@ -3,12 +3,12 @@ title: 표준 .NET 이벤트 패턴
 description: 표준 이벤트 소스를 만들고 코드에서 표준 이벤트를 구독 및 처리하는 방법과 .NET 이벤트 패턴에 대해 알아봅니다.
 ms.date: 06/20/2016
 ms.assetid: 8a3133d6-4ef2-46f9-9c8d-a8ea8898e4c9
-ms.openlocfilehash: 0b10c440f4d05533032aa94819ec879f6a1ca2a4
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 16a091dabe34a064ab3ee65a6d9f3e0ab36f1db4
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48266771"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297038"
 ---
 # <a name="standard-net-event-patterns"></a>표준 .NET 이벤트 패턴
 
@@ -117,7 +117,7 @@ EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
 
 ## <a name="adding-another-event-declaration"></a>다른 이벤트 선언 추가
 
-기능을 하나 더 추가하고 이벤트에 대한 다른 언어 관용구를 보여 드리겠습니다. 파일 검색에서 모든 하위 디렉터리를 트래버스하는 `Search()` 메서드의 오버로드를 추가해 보겠습니다.
+기능을 하나 더 추가하고 이벤트에 대한 다른 언어 관용구를 보여 드리겠습니다. 파일 검색에서 모든 하위 디렉터리를 트래버스하는 `Search` 메서드의 오버로드를 추가해 보겠습니다.
 
 하위 디렉터리가 많은 디렉터리에서 이 작업은 시간이 오래 걸릴 수 있습니다. 각각의 새 디렉터리 검색이 시작될 때 발생되는 이벤트를 추가해 보겠습니다. 이렇게 하면 구독자가 진행률을 추적하고 진행률에 대해 사용자에게 업데이트할 수 있습니다. 지금까지 만든 모든 샘플은 public입니다. 이제 내부 이벤트로 만들어 보겠습니다. 즉, 인수에 사용된 형식을 내부 형식으로 설정할 수도 있습니다.
 
@@ -133,7 +133,7 @@ EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
 
 여러 측면에서, 여기에서 작성하는 코드는 앞에서 살펴본 필드 이벤트 정의에 대해 컴파일러에서 생성하는 코드를 미러링합니다. [속성](properties.md)에 사용된 것과 매우 유사한 구문을 사용하여 이벤트를 만듭니다. 처리기의 이름은 `add`와 `remove`로 다릅니다. 이러한 처리기를 호출하여 이벤트를 구독하거나 이벤트에서 구독을 취소합니다. 또한 이벤트 변수를 저장하려면 private 지원 필드를 선언해야 합니다. 이 필드는 null로 초기화됩니다.
 
-다음으로 하위 디렉터리를 트래버스하고 두 이벤트를 발생시키는 Search() 메서드의 오버로드를 추가해 보겠습니다. 이 작업을 수행하는 가장 쉬운 방법은 기본 인수를 사용하여 모든 디렉터리를 검색하도록 지정하는 것입니다.
+다음으로 하위 디렉터리를 트래버스하고 두 이벤트를 발생시키는 `Search` 메서드의 오버로드를 추가해 보겠습니다. 이 작업을 수행하는 가장 쉬운 방법은 기본 인수를 사용하여 모든 디렉터리를 검색하도록 지정하는 것입니다.
 
 [!code-csharp[SearchImplementation](../../samples/csharp/events/Program.cs#FinalImplementation "Implementation to search directories")]
 

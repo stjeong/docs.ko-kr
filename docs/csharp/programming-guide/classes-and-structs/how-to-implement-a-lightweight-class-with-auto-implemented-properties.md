@@ -5,17 +5,17 @@ helpviewer_keywords:
 - auto-implemented properties [C#]
 - properties [C#], auto-implemented
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.openlocfilehash: fb5d11ed43246f2c4dd67ef35b71e899ab978fc4
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: cdd90685985b4a48b8fb98451eba0d4ebbbbc6bf
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837908"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297207"
 ---
 # <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a>방법: 자동으로 구현된 속성을 사용하여 간단한 클래스 구현(C# 프로그래밍 가이드)
 이 예제에서는 자동 구현 속성 집합을 캡슐화하는 데만 사용되는 변경할 수 없는 간단한 클래스를 만드는 방법을 보여 줍니다. 참조 형식 의미 체계를 사용해야 하는 경우 구조체 대신 이러한 종류의 구문을 사용합니다.  
   
- 변경할 수 없는 속성은 두 가지 방법으로 만들 수 있습니다.  [set](../../../csharp/language-reference/keywords/set.md) 접근자를 [private](../../../csharp/language-reference/keywords/private.md)로 선언할 수 있습니다.  속성은 형식 내에서만 설정할 수 있고 소비자는 변경할 수 없습니다.  또는 [get](../../../csharp/language-reference/keywords/get.md) 접근자만 선언하여 형식의 생성자를 제외한 어떤 위치에서도 속성을 변경할 수 없도록 만들 수 있습니다.  
+ 변경할 수 없는 속성은 두 가지 방법으로 만들 수 있습니다.  [set](../../../csharp/language-reference/keywords/set.md) 접근자를 [비공개](../../../csharp/language-reference/keywords/private.md)로 선언할 수 있습니다.  속성은 형식 내에서만 설정할 수 있고 소비자는 변경할 수 없습니다.  또는 [get](../../../csharp/language-reference/keywords/get.md) 접근자만 선언하여 형식의 생성자를 제외한 어떤 위치에서도 속성을 변경할 수 없도록 만들 수 있습니다.  
   
  private `set` 접근자를 선언하는 경우 개체 이니셜라이저를 사용하여 속성을 초기화할 수 없습니다. 생성자나 팩터리 메서드를 사용해야 합니다.  
   

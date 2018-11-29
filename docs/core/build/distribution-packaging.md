@@ -4,12 +4,12 @@ description: 배포를 위해 .NET Core를 패키지하고 이름과 버전을 �
 author: bleroy
 ms.author: mairaw
 ms.date: 06/28/2017
-ms.openlocfilehash: df1ba6a93106cd6b3ceafa93b7c548287878c3fe
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 41e8729d3058c2e3e1ea1cab9a8f28b3062bb93c
+ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840497"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52297220"
 ---
 # <a name="net-core-distribution-packaging"></a>.NET Core 배포 패키징
 
@@ -46,7 +46,7 @@ ms.locfileid: "48840497"
 
 - (1) **dotnet** 호스트("muxer"라고도 함)는 런타임을 활성화하여 응용 프로그램을 시작하고 SDK를 활성화하여 명령을 보내는 두 가지의 고유한 역할을 가지고 있습니다. 호스트는 네이티브 실행 파일(`dotnet.exe`)입니다.
 
-단일 호스트가 있지만 다른 구성 요소는 대부분 버전이 지정된 디렉터리(2,3,5,6)에 있습니다. 즉, 여러 버전이 나란히 설치되므로 시스템에 표시될 수 있습니다.
+단일 호스트가 있지만 다른 구성 요소는 대부분 버전이 지정된 디렉터리(2,3,5,6)에 있습니다. 여러 버전이 나란히 설치되므로 시스템에 여러 버전이 표시될 수 있습니다.
 
 - (2) **host/fxr/\<fxr 버전>** 에는 호스트에서 사용하는 프레임워크 확인 논리가 포함됩니다. 호스트는 설치된 최신 hostfxr을 사용합니다. hostfxr는 .NET Core 응용 프로그램을 실행할 때 적합한 런타임을 선택하는 일을 담당합니다. 예를 들어 .NET Core 2.0.0에 대해 빌드된 응용 프로그램을 사용할 수 있는 경우 2.0.5 런타임을 사용합니다. 마찬가지로 hostfxr은 개발 중에 적절한 SDK를 선택합니다.
 
