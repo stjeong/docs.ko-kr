@@ -9,20 +9,20 @@ helpviewer_keywords:
 - <settings> element
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
 ms.openlocfilehash: 87a944eca6ea4158f15c9911c6b13fd4d3c0921d
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50191955"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672360"
 ---
-# <a name="ltsettingsgt-element-network-settings"></a><span data-ttu-id="56a7d-102">&lt;설정&gt; 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="56a7d-102">&lt;settings&gt; Element (Network Settings)</span></span>
-<span data-ttu-id="56a7d-103"><xref:System.Net?displayProperty=nameWithType> 네임스페이스에 대한 기본 네트워크 옵션을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-103">Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.</span></span>  
+# <a name="ltsettingsgt-element-network-settings"></a><span data-ttu-id="6dd49-102">&lt;설정&gt; 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="6dd49-102">&lt;settings&gt; Element (Network Settings)</span></span>
+<span data-ttu-id="6dd49-103"><xref:System.Net?displayProperty=nameWithType> 네임스페이스에 대한 기본 네트워크 옵션을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-103">Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.</span></span>  
   
- <span data-ttu-id="56a7d-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="56a7d-104">\<configuration></span></span>  
-<span data-ttu-id="56a7d-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="56a7d-105">\<system.net></span></span>  
-<span data-ttu-id="56a7d-106">\<settings></span><span class="sxs-lookup"><span data-stu-id="56a7d-106">\<settings></span></span>  
+ <span data-ttu-id="6dd49-104">\<configuration></span><span class="sxs-lookup"><span data-stu-id="6dd49-104">\<configuration></span></span>  
+<span data-ttu-id="6dd49-105">\<system.net></span><span class="sxs-lookup"><span data-stu-id="6dd49-105">\<system.net></span></span>  
+<span data-ttu-id="6dd49-106">\<settings></span><span class="sxs-lookup"><span data-stu-id="6dd49-106">\<settings></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="56a7d-107">구문</span><span class="sxs-lookup"><span data-stu-id="56a7d-107">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6dd49-107">구문</span><span class="sxs-lookup"><span data-stu-id="6dd49-107">Syntax</span></span>  
   
 ```xml  
 <settings>  
@@ -36,35 +36,35 @@ ms.locfileid: "50191955"
 </settings>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="56a7d-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="56a7d-108">Attributes and Elements</span></span>  
- <span data-ttu-id="56a7d-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="6dd49-108">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="6dd49-108">Attributes and Elements</span></span>  
+ <span data-ttu-id="6dd49-109">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="56a7d-110">특성</span><span class="sxs-lookup"><span data-stu-id="56a7d-110">Attributes</span></span>  
- <span data-ttu-id="56a7d-111">없음</span><span class="sxs-lookup"><span data-stu-id="56a7d-111">None.</span></span>  
+### <a name="attributes"></a><span data-ttu-id="6dd49-110">특성</span><span class="sxs-lookup"><span data-stu-id="6dd49-110">Attributes</span></span>  
+ <span data-ttu-id="6dd49-111">없음</span><span class="sxs-lookup"><span data-stu-id="6dd49-111">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="56a7d-112">자식 요소</span><span class="sxs-lookup"><span data-stu-id="56a7d-112">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="6dd49-112">자식 요소</span><span class="sxs-lookup"><span data-stu-id="6dd49-112">Child Elements</span></span>  
   
-|<span data-ttu-id="56a7d-113">요소</span><span class="sxs-lookup"><span data-stu-id="56a7d-113">Element</span></span>|<span data-ttu-id="56a7d-114">설명</span><span class="sxs-lookup"><span data-stu-id="56a7d-114">Description</span></span>|  
+|<span data-ttu-id="6dd49-113">요소</span><span class="sxs-lookup"><span data-stu-id="6dd49-113">Element</span></span>|<span data-ttu-id="6dd49-114">설명</span><span class="sxs-lookup"><span data-stu-id="6dd49-114">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="56a7d-115">httpListener</span><span class="sxs-lookup"><span data-stu-id="56a7d-115">httpListener</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/httplistener-element-network-settings.md)|<span data-ttu-id="56a7d-116">매개 변수에서 사용 하는 사용자 지정을 <xref:System.Net.HttpListener> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-116">Customizes parameters used by the <xref:System.Net.HttpListener> class.</span></span>|  
-|[<span data-ttu-id="56a7d-117">httpWebRequest</span><span class="sxs-lookup"><span data-stu-id="56a7d-117">httpWebRequest</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md)|<span data-ttu-id="56a7d-118">웹 요청 매개 변수를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-118">Customizes Web request parameters.</span></span>|  
-|[<span data-ttu-id="56a7d-119">ipv6</span><span class="sxs-lookup"><span data-stu-id="56a7d-119">ipv6</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)|<span data-ttu-id="56a7d-120">인터넷 프로토콜 버전 6(ipv6)을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-120">Enables Internet Protocol version 6 (IPv6) support.</span></span>|  
-|[<span data-ttu-id="56a7d-121">\<performanceCounter > 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="56a7d-121">\<performanceCounter> Element (Network Settings)</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md)|<span data-ttu-id="56a7d-122">네트워크 성능 카운터를 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-122">Enables network performance counters.</span></span>|  
-|[<span data-ttu-id="56a7d-123">servicePointManager</span><span class="sxs-lookup"><span data-stu-id="56a7d-123">servicePointManager</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/servicepointmanager-element-network-settings.md)|<span data-ttu-id="56a7d-124">네트워크 리소스에 대 한 연결을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-124">Configures connections to network resources.</span></span>|  
-|[<span data-ttu-id="56a7d-125">소켓</span><span class="sxs-lookup"><span data-stu-id="56a7d-125">socket</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md)|<span data-ttu-id="56a7d-126">소켓 작업 완료 포트를 사용 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-126">Specifies whether socket operations use completion ports.</span></span>|  
-|[<span data-ttu-id="56a7d-127">\<webProxyScript > 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="56a7d-127">\<webProxyScript> Element (Network Settings)</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/webproxyscript-element-network-settings.md)|<span data-ttu-id="56a7d-128">웹 프록시 검색에 사용 되는 스크립트의 특성을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-128">Configures the characteristics of the script used to discover Web proxies.</span></span>|  
+|[<span data-ttu-id="6dd49-115">httpListener</span><span class="sxs-lookup"><span data-stu-id="6dd49-115">httpListener</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/httplistener-element-network-settings.md)|<span data-ttu-id="6dd49-116">매개 변수에서 사용 하는 사용자 지정을 <xref:System.Net.HttpListener> 클래스입니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-116">Customizes parameters used by the <xref:System.Net.HttpListener> class.</span></span>|  
+|[<span data-ttu-id="6dd49-117">httpWebRequest</span><span class="sxs-lookup"><span data-stu-id="6dd49-117">httpWebRequest</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md)|<span data-ttu-id="6dd49-118">웹 요청 매개 변수를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-118">Customizes Web request parameters.</span></span>|  
+|[<span data-ttu-id="6dd49-119">ipv6</span><span class="sxs-lookup"><span data-stu-id="6dd49-119">ipv6</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)|<span data-ttu-id="6dd49-120">인터넷 프로토콜 버전 6(ipv6)을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-120">Enables Internet Protocol version 6 (IPv6) support.</span></span>|  
+|[<span data-ttu-id="6dd49-121">\<performanceCounter > 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="6dd49-121">\<performanceCounter> Element (Network Settings)</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md)|<span data-ttu-id="6dd49-122">네트워크 성능 카운터를 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-122">Enables network performance counters.</span></span>|  
+|[<span data-ttu-id="6dd49-123">servicePointManager</span><span class="sxs-lookup"><span data-stu-id="6dd49-123">servicePointManager</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/servicepointmanager-element-network-settings.md)|<span data-ttu-id="6dd49-124">네트워크 리소스에 대 한 연결을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-124">Configures connections to network resources.</span></span>|  
+|[<span data-ttu-id="6dd49-125">소켓</span><span class="sxs-lookup"><span data-stu-id="6dd49-125">socket</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md)|<span data-ttu-id="6dd49-126">소켓 작업 완료 포트를 사용 하는지 여부를 지정 합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-126">Specifies whether socket operations use completion ports.</span></span>|  
+|[<span data-ttu-id="6dd49-127">\<webProxyScript > 요소 (네트워크 설정)</span><span class="sxs-lookup"><span data-stu-id="6dd49-127">\<webProxyScript> Element (Network Settings)</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/webproxyscript-element-network-settings.md)|<span data-ttu-id="6dd49-128">웹 프록시 검색에 사용 되는 스크립트의 특성을 구성 합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-128">Configures the characteristics of the script used to discover Web proxies.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="56a7d-129">부모 요소</span><span class="sxs-lookup"><span data-stu-id="56a7d-129">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="6dd49-129">부모 요소</span><span class="sxs-lookup"><span data-stu-id="6dd49-129">Parent Elements</span></span>  
   
-|<span data-ttu-id="56a7d-130">요소</span><span class="sxs-lookup"><span data-stu-id="56a7d-130">Element</span></span>|<span data-ttu-id="56a7d-131">설명</span><span class="sxs-lookup"><span data-stu-id="56a7d-131">Description</span></span>|  
+|<span data-ttu-id="6dd49-130">요소</span><span class="sxs-lookup"><span data-stu-id="6dd49-130">Element</span></span>|<span data-ttu-id="6dd49-131">설명</span><span class="sxs-lookup"><span data-stu-id="6dd49-131">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="56a7d-132">system.net</span><span class="sxs-lookup"><span data-stu-id="56a7d-132">system.net</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|<span data-ttu-id="56a7d-133">.NET Framework의 네트워크 연결 방법을 지정하는 설정을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-133">Contains settings that specify how the .NET Framework connects to the network.</span></span>|  
+|[<span data-ttu-id="6dd49-132">system.net</span><span class="sxs-lookup"><span data-stu-id="6dd49-132">system.net</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|<span data-ttu-id="6dd49-133">.NET Framework의 네트워크 연결 방법을 지정하는 설정을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-133">Contains settings that specify how the .NET Framework connects to the network.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="56a7d-134">설명</span><span class="sxs-lookup"><span data-stu-id="56a7d-134">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="6dd49-134">설명</span><span class="sxs-lookup"><span data-stu-id="6dd49-134">Remarks</span></span>  
   
-## <a name="configuration-files"></a><span data-ttu-id="56a7d-135">구성 파일</span><span class="sxs-lookup"><span data-stu-id="56a7d-135">Configuration Files</span></span>  
- <span data-ttu-id="56a7d-136">이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="56a7d-136">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
+## <a name="configuration-files"></a><span data-ttu-id="6dd49-135">구성 파일</span><span class="sxs-lookup"><span data-stu-id="6dd49-135">Configuration Files</span></span>  
+ <span data-ttu-id="6dd49-136">이 요소는 응용 프로그램 구성 파일 또는 컴퓨터 구성 파일(Machine.config)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6dd49-136">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="56a7d-137">참고 항목</span><span class="sxs-lookup"><span data-stu-id="56a7d-137">See Also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="6dd49-137">참고 항목</span><span class="sxs-lookup"><span data-stu-id="6dd49-137">See Also</span></span>  
 - <xref:System.Net?displayProperty=nameWithType>  
-- [<span data-ttu-id="56a7d-138">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="56a7d-138">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [<span data-ttu-id="6dd49-138">네트워크 설정 스키마</span><span class="sxs-lookup"><span data-stu-id="6dd49-138">Network Settings Schema</span></span>](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
