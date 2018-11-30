@@ -5,12 +5,12 @@ helpviewer_keywords:
 - arrays [C#]
 - C# language, arrays
 ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
-ms.openlocfilehash: e0ed2d678363a29bb870a496846fc6f054769a4b
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 2c3f22cb2a011aea9f0fff9ef49d1fd780d6d832
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47111115"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52671981"
 ---
 # <a name="arrays-c-programming-guide"></a>배열(C# 프로그래밍 가이드)
 
@@ -54,6 +54,5 @@ ms.locfileid: "47111115"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [컬렉션](../../../csharp/programming-guide/concepts/collections.md)  
-- [배열 컬렉션 유형](https://msdn.microsoft.com/library/8a9964de-8941-47b1-a3cf-a01bc88db9e8)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [컬렉션](../../../csharp/programming-guide/concepts/collections.md)
