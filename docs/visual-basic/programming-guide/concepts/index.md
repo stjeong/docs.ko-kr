@@ -2,12 +2,12 @@
 title: 프로그래밍 개념(Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
-ms.openlocfilehash: 85e23fcca0607e9f42daa94334c983462f6cf881
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fbdf2d6de7abf1d8d80ca3e88621fa569248996c
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643388"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672058"
 ---
 # <a name="programming-concepts-visual-basic"></a>프로그래밍 개념(Visual Basic)
 이 섹션에서는 Visual Basic 언어의 프로그래밍 개념을 설명합니다.  
@@ -28,7 +28,6 @@ ms.locfileid: "33643388"
 |[개체 지향 프로그래밍(Visual Basic)](../../../visual-basic/programming-guide/concepts/object-oriented-programming.md)|캡슐화, 상속, 다형성 등의 일반적인 개체 지향 개념에 대해 설명합니다.|  
 |[리플렉션(Visual Basic)](../../../visual-basic/programming-guide/concepts/reflection.md)|리플렉션을 사용하면 동적으로 형식 인스턴스를 만들거나, 형식을 기존 개체에 바인딩하거나, 기존 개체에서 형식을 가져와 해당 메서드를 호출하거나, 필드 및 속성에 액세스하는 방법을 설명합니다.|
 |[Serialization(Visual Basic)](../../../visual-basic/programming-guide/concepts/serialization/index.md)|이진, XML 및 SOAP serialization의 주요 개념에 대해 설명합니다.|  
-|[스레딩(Visual Basic)](../../../visual-basic/programming-guide/concepts/threading/index.md)|.NET 스레딩 모델의 개요를 제공하고 동시에 여러 작업을 수행하는 코드를 작성하여 성능 및 응용 프로그램의 응답성을 향상시키는 방법을 보여 줍니다.|  
   
 ## <a name="related-sections"></a>관련 단원  
   

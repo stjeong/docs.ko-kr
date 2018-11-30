@@ -3,11 +3,11 @@ title: 컴파일러 지시문(F#)
 description: 에 대해 알아봅니다 F# 언어 전처리기 지시문, 조건부 컴파일 지시문, 줄 지시문 및 컴파일러 지시문입니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: bb23096e03584f2a50cfe069075ba94a35c4753c
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296505"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672097"
 ---
 # <a name="compiler-directives"></a>컴파일러 지시문
 
@@ -25,7 +25,7 @@ ms.locfileid: "52296505"
 |`#else`|조건부 컴파일을 지원합니다. 위의 `#if`와 함께 사용되는 기호를 정의하지 않은 경우 포함할 코드 섹션을 표시합니다.|
 |`#endif`|조건부 컴파일을 지원합니다. 코드의 조건부 섹션이 끝나는 지점을 표시합니다.|
 |`#`[line] *int*,<br/>`#`[line] *int* *string*,<br/>`#`[line] *int* *verbatim-string*|디버깅을 위해 원본 소스 코드 줄과 파일 이름을 표시합니다. 이 기능은 F# 소스 코드를 생성하는 도구에서 사용할 수 있습니다.|
-|`#nowarn` *warningcode*|컴파일러 경고를 해제합니다. 경고를 해제하려면 컴파일러 출력에서 해당 번호를 찾아 따옴표에 포함합니다. "FS" 접두사를 생략합니다. 같은 줄에서 여러 경고 번호를 해제하려면 각 번호를 따옴표에 포함하고 각 문자열을 공백으로 구분합니다. 예를 들어:
+|`#nowarn` *warningcode*|컴파일러 경고를 해제합니다. 경고를 해제하려면 컴파일러 출력에서 해당 번호를 찾아 따옴표에 포함합니다. "FS" 접두사를 생략합니다. 같은 줄에서 여러 경고 번호를 해제하려면 각 번호를 따옴표에 포함하고 각 문자열을 공백으로 구분합니다. 예를 들어 다음과 같습니다.
 
 `#nowarn "9" "40"`
 

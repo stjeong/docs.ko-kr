@@ -4,12 +4,12 @@ description: Azure 서버 리스 플랫폼 즉시 확장 이벤트를 트리거�
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: bf3196fa9fe51bfe88ac33162fb31a634a240417
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 6149e79f45422be0b4f1ebc719543efd1b0b750c
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370175"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672282"
 ---
 # <a name="azure-serverless-platform"></a>Azure 서버 리스 플랫폼
 
@@ -22,5 +22,5 @@ Application Insights에서 진단 추적 및 원격 분석 캡처를 위해 서�
 이 장에서 각 구성 요소에 대 한 기본적인 세분화 합니다.
 
 >[!div class="step-by-step"]
-[이전](serverless-design-examples.md)
-[다음](azure-functions.md)
+>[이전](serverless-design-examples.md)
+>[다음](azure-functions.md)

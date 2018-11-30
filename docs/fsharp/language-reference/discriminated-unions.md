@@ -1,13 +1,13 @@
 ---
 title: Discriminated Unions(F#)
-description: F#을 사용 하는 방법을 알아봅니다 구별 된 공용 구조체입니다.
+description: 사용 하는 방법을 알아봅니다 F# 구별 된 공용 구조체입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 06d6c154790f659c0c7ff73290357ab50a134362
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: f833539f2e31ffc6db4182bdbd2088e6dc2bb2cc
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43788125"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672248"
 ---
 # <a name="discriminated-unions"></a>구별된 공용 구조체
 
@@ -51,7 +51,7 @@ let prism = Prism(5., 2.0, height = 3.0)
 
 이 코드는 초기화에서 명명된 된 필드를 사용할 수 있습니다 하거나 선언에서 필드의 순서에 의존 하 고 차례로 각 필드에 대 한 값을 방금 제공 보여 줍니다. 에 대 한 생성자 호출 `rect` 이전 코드에서 명명된 된 필드를 하지만 대 한 생성자 호출을 사용 하 여 `circ` 순서 지정을 사용 합니다. 순서가 지정 된 필드를 혼합할 수 및 생성와 같이 라는 `prism`합니다.
 
-`option` 형식은 F# 핵심 라이브러리의 간단한 구별 된 공용 구조체입니다. `option` 형식을 다음과 같이 선언 됩니다.
+`option` 형식은 간단한 구별된 된 공용 구조체에는 F# 핵심 라이브러리입니다. `option` 형식을 다음과 같이 선언 됩니다.
 
 ```fsharp
 // The option type is a discriminated union.
@@ -84,7 +84,7 @@ let getShapeHeight shape =
 
 ### <a name="unwrapping-discriminated-unions"></a>래핑 해제 구별 된 공용 구조체
 
-F# 구별 된 공용 구조체의에서 자주 사용 되 도메인 모델링 래핑 단일 형식에 대 한 합니다. 패턴으로 일치를 통해 기본 값을 추출 하는 것이 쉽습니다. 일치 식을 사용 하 여 단일 사례에 대 한 필요가 없습니다.
+F# 구별 된 공용 구조체는 보통 단일 형식 래핑에 대 한 도메인 모델링에 사용 됩니다. 패턴으로 일치를 통해 기본 값을 추출 하는 것이 쉽습니다. 일치 식을 사용 하 여 단일 사례에 대 한 필요가 없습니다.
 
 ```fsharp
 let ([UnionCaseName] [values]) = [UnionValue]
@@ -95,15 +95,23 @@ let ([UnionCaseName] [values]) = [UnionValue]
 ```fsharp
 type ShaderProgram = | ShaderProgram of id:int
 
-let someMethodUsingShaderProgram shaderProgram =
+let someFunctionUsingShaderProgram shaderProgram =
     let (ShaderProgram id) = shaderProgram
     // Use the unwrapped value
-    ..
+    ...
+```
+
+패턴 일치는 사용할 수 함수 매개 변수에서 직접 있으므로 단일 사례를 래핑 해제할 수 있습니다.
+
+```fsharp
+let someFunctionUsingShaderProgram (ShaderProgram id) =
+    // Use the unwrapped value
+    ...
 ```
 
 ## <a name="struct-discriminated-unions"></a>구조체를 구별 된 공용 구조체
 
-F# 4.1 부터는 구조체로 구별 된 공용 구조체를도 나타낼 수 있습니다.  그러려면는 `[<Struct>]` 특성입니다.
+부터 F# 4.1 구조체로 구별 된 공용 구조체를 나타낼 수도 있습니다.  그러려면는 `[<Struct>]` 특성입니다.
 
 ```fsharp
 [<Struct>]
