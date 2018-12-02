@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: a2fe2c325377ec49f89199ad2e36c950ebab6a24
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 17dabb143a1948cbcfa748b4c3bbcff5a57d2c24
+ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50757350"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743271"
 ---
 # <a name="monolithic-applications"></a>모놀리식 응용 프로그램
 
@@ -69,7 +69,6 @@ Azure App Service를 사용 하는 것은 직관적인 수 있습니다 및 유�
 
 게시 흐름은 다른 Docker 레지스트리 또는 Azure Container Registry (레지스트리 근처 Azure에서 배포 및 Azure Active Directory 그룹 및 계정에서 보호) 수는 컨테이너 레지스트리를 통해 이미지를 푸시합니다는 또한 그림 4-4에서 보여 줍니다. Docker 허브 또는 온-프레미스 레지스트리 같은.
 
-
 >[!div class="step-by-step"]
-[이전](common-container-design-principles.md)
-[다음](state-and-data-in-docker-applications.md)
+>[이전](common-container-design-principles.md)
+>[다음](state-and-data-in-docker-applications.md)
