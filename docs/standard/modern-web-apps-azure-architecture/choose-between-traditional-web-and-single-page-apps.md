@@ -4,12 +4,12 @@ description: 웹 응용 프로그램을 구축하는 경우 기존 웹 앱과 SP
 author: ardalis
 ms.author: wiwagn
 ms.date: 6/28/2018
-ms.openlocfilehash: 40b17d07b008c2a3a9457bffc26b612e6b5c9fe5
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: abeee719c15263fea04a3bcf80a6e41c43b640d2
+ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404150"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52745305"
 ---
 # <a name="choose-between-traditional-web-apps-and-single-page-apps-spas"></a>기존 웹앱 및 SPA(단일 페이지 앱) 중에서 선택
 
@@ -73,7 +73,7 @@ SPA를 작성하려면 JavaScript 및/또는 TypeScript와 클라이언트 쪽 �
 > - **Angular**  
 >   <https://angular.io>
 > - **JavaScript 프레임워크 비교**  
->   <https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/>
+>   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
 
 **응용 프로그램이 다른(내부 또는 공용) 클라이언트용 API를 이미 노출해야 하는 경우**
 
@@ -91,5 +91,5 @@ SPA를 작성하려면 JavaScript 및/또는 TypeScript와 클라이언트 쪽 �
 | 다양하고 복잡한 사용자 인터페이스 요구 사항            | **제한적**             | **적합**             |
 
 >[!div class="step-by-step"]
-[이전](modern-web-applications-characteristics.md)
-[다음](architectural-principles.md)
+>[이전](modern-web-applications-characteristics.md)
+>[다음](architectural-principles.md)

@@ -4,12 +4,12 @@ description: .NET 라이브러리를 NuGet에 게시하는 모범 사례 권장 
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
-ms.openlocfilehash: e0244d2a9d09382c289c74a45969bca0a1311445
-ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
+ms.openlocfilehash: 036aa99c89790274628c40824be7e230d81850fe
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "50757311"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672071"
 ---
 # <a name="publishing-a-nuget-package"></a>NuGet 패키지 게시
 
@@ -43,5 +43,5 @@ NuGet 패키지는 패키지 리포지토리에서 게시되고 사용됩니다.
 **✔️** 패키지가 게시될 때 전자 메일 알림을 사용하도록 설정합니다.
 
 >[!div class="step-by-step"]
-[이전](./sourcelink.md)
-[다음](./versioning.md)
+>[이전](sourcelink.md)
+>[다음](versioning.md)

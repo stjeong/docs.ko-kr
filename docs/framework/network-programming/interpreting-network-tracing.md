@@ -10,11 +10,11 @@ helpviewer_keywords:
 - includehex
 ms.assetid: ad22b4b8-00af-4778-9cca-cb609ce1f8ff
 ms.openlocfilehash: 94a64efcd7b4f354eaa22d1b646f36212f9c8fbb
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50042300"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672295"
 ---
 # <a name="interpreting-network-tracing"></a>네트워크 추적 해석
 네트워크 추적이 사용하도록 설정되면 추적 기능을 사용하여 응용 프로그램이 다양한 <xref:System.Net> 클래스 멤버에 대해 실행하는 호출을 캡처할 수 있습니다. 이러한 호출의 출력은 다음 예제와 비슷할 수 있습니다.  
