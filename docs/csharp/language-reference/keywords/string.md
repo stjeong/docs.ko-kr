@@ -10,12 +10,12 @@ helpviewer_keywords:
 - string literals [C#]
 - string keyword [C#]
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
-ms.openlocfilehash: ab2e69c60872aed19d46450f17becc918ffe2a38
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 66b1729363878f69f868b8b8fd6e9e7011426f27
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181462"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672006"
 ---
 # <a name="string-c-reference"></a>string(C# 참조)
 
@@ -108,7 +108,6 @@ C#의 문자열에 대한 자세한 내용은 [문자열](../../programming-guid
 - [C# 프로그래밍 가이드](../../programming-guide/index.md)
 - [문자열 사용에 대한 모범 사례](../../../standard/base-types/best-practices-strings.md)
 - [C# 키워드](index.md)
-- [C# 프로그래밍 가이드](../../programming-guide/index.md)
 - [참조 형식](reference-types.md)
 - [값 형식](value-types.md)
 - [기본적인 문자열 작업](../../../standard/base-types/basic-string-operations.md)

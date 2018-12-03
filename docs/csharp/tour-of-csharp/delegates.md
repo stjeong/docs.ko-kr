@@ -3,12 +3,12 @@ title: C# 대리자 - C# 언어 둘러보기
 description: C# 대리자를 사용한 런타임에 바인딩 알아보기
 ms.date: 08/10/2016
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884
-ms.openlocfilehash: 1dcd078b275d951b049b0c5bb6e084a4083d042d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2744f774392ef021974535de535b063264ae9a54
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360572"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52672043"
 ---
 # <a name="delegates"></a>대리자
 
@@ -29,5 +29,5 @@ ms.locfileid: "33360572"
 대리자의 흥미롭고 유용한 속성은 참조하는 메서드의 클래스를 알지 못하거나 관심을 두지 않는다는 것입니다. 참조되는 메서드가 대리자와 동일한 매개 변수 및 반환 형식을 갖는다는 것만 중요합니다.
 
 >[!div class="step-by-step"]
-[이전](enums.md)
-[다음](attributes.md)
+>[이전](enums.md)
+>[다음](attributes.md)
