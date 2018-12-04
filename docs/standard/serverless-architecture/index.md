@@ -1,19 +1,19 @@
 ---
 title: '서버를 사용하지 않는 앱: 아키텍처, 패턴 및 Azure 구현'
-description: 서버를 사용하지 않는 아키텍처에 대한 가이드입니다. 엔터프라이즈 응용 프로그램에 대해 서버를 사용하지 않는 아키텍처([IaaS](Infrastructure as a Service) 또는 [PaaS](Platform as a Service) 대신)를 구현하는 시기, 이유 및 방법을 알아봅니다.
+description: 서버를 사용하지 않는 아키텍처에 대한 가이드입니다. 엔터프라이즈 응용 프로그램에 대해 서버를 사용하지 않는 아키텍처([IaaS]\(Infrastructure as a Service) 또는 [PaaS]\(Platform as a Service) 대신)를 구현하는 시기, 이유 및 방법을 알아봅니다.
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 6/26/2018
-ms.openlocfilehash: 89e5f387e218703a2f6311ef848b3d613a9279f7
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: a19784f42c63914e9cf8f42ee6408ec9aa46e4f3
+ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404823"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52745318"
 ---
-![](./media/Cover.jpg)
-
 # <a name="serverless-apps-architecture-patterns-and-azure-implementation"></a>서버를 사용하지 않는 앱: 아키텍처, 패턴 및 Azure 구현
+
+![](./media/Cover.jpg)
 
 > 다운로드 위치: <https://aka.ms/serverless-ebook>
 
@@ -61,7 +61,7 @@ Mac 및 macOS는 Apple Inc.의 상표입니다.
 
 ## <a name="introduction"></a>소개
 
-서버를 사용하지 않는 기능은 순수 클라우드 네이티브 코드의 흐름인 클라우드 플랫폼의 진화입니다. 서버를 사용하지 않는 기능은 인프라 문제와 격리하는 동안 개발자에게 비즈니스 논리를 제공합니다. "서버 없음"이 아닌 "적은 서버"를 의미하는 패턴입니다. 서버를 사용하지 않는 코드는 이벤트 기반입니다. 코드는 타이머에 대한 기존 HTTP 웹 요청 또는 파일을 업로드하는 결과로 인해 트리거될 수 있습니다. 서버를 사용하지 않는 인프라를 사용하면 인스턴트 규모가 탄력적 요구 사항을 충족하고 실제로 "사용한 만큼 지불"하는 마이크로 청구를 제공할 수 있습니다. 서버를 사용하지 않는 기능은 응용 프로그램을 빌드하는 새로운 사고 및 접근법으로 모든 문제에 적합한 솔루션입니다. 개발자가 다음을 결정해야 합니다.
+[서버리스](https://azure.microsoft.com/solutions/serverless/) 기능은 순수 클라우드 네이티브 코드의 흐름에서 클라우드 플랫폼이 진화한 결과입니다. 서버를 사용하지 않는 기능은 인프라 문제와 격리하는 동안 개발자에게 비즈니스 논리를 제공합니다. "서버 없음"이 아닌 "적은 서버"를 의미하는 패턴입니다. 서버를 사용하지 않는 코드는 이벤트 기반입니다. 코드는 타이머에 대한 기존 HTTP 웹 요청 또는 파일을 업로드하는 결과로 인해 트리거될 수 있습니다. 서버를 사용하지 않는 인프라를 사용하면 인스턴트 규모가 탄력적 요구 사항을 충족하고 실제로 "사용한 만큼 지불"하는 마이크로 청구를 제공할 수 있습니다. 서버를 사용하지 않는 기능은 응용 프로그램을 빌드하는 새로운 사고 및 접근법으로 모든 문제에 적합한 솔루션입니다. 개발자가 다음을 결정해야 합니다.
 
 * 서버를 사용하지 않는 장단점은 무엇인가요?
 * 자신의 응용 프로그램에 대해 서버를 사용하지 않도록 해야 하는 이유는 무엇인가요?
@@ -138,4 +138,4 @@ Mac 및 macOS는 Apple Inc.의 상표입니다.
 가이드 및 관련 샘플은 지속적으로 진화합니다. 여러분의 피드백을 기다리고 있습니다! 이 가이드를 향상시킬 수 있는 방법에 대한 주석이 있으면 [GitHub 문제](https://github.com/dotnet/docs/issues)에 빌드된 페이지의 맨 아래에서 피드백 섹션을 사용합니다.
 
 >[!div class="step-by-step"]
-[다음](architecture-approaches.md)
+>[다음](architecture-approaches.md)
