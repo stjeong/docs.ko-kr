@@ -8,11 +8,11 @@ helpviewer_keywords:
 - methods [C#], passing parameters
 - C# language, method parameters
 ms.assetid: a5c3003f-7441-4710-b8b1-c79de77e0b77
-ms.openlocfilehash: a9538ee9f5f49554e9fe1822367404ab1d1e858d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 241beb56b0e0f00dae63e12ea775b2b982200efc
+ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
+ms.lasthandoff: 12/03/2018
 ms.locfileid: "44194855"
 ---
 # <a name="passing-parameters-c-programming-guide"></a>매개 변수 전달(C# 프로그래밍 가이드)
@@ -29,7 +29,8 @@ C#에서는 인수를 값 또는 참조로 매개 변수에 전달할 수 있습
 -   [참조 형식 매개 변수 전달](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)  
   
 ## <a name="c-language-specification"></a>C# 언어 사양  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+자세한 내용은 [C# 언어 사양](../../language-reference/language-specification/index.md)의 [인수 목록](~/_csharplang/spec/expressions.md#argument-lists)을 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
   
 ## <a name="see-also"></a>참고 항목
 

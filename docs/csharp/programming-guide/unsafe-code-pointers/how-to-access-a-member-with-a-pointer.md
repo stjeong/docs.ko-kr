@@ -1,17 +1,17 @@
 ---
-title: '방법: 포인터로 멤버 액세스(C# 프로그래밍 가이드)'
+title: '방법: 포인터로 멤버에 액세스(C# 프로그래밍 가이드)'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - pointers [C#], member access
 ms.assetid: 1e998498-8c85-4a78-8ce2-4d8c20f08342
-ms.openlocfilehash: 715bc2c493b58757154aa114d1e0527cbad46f46
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b51239be8da8c45aa2d7f1ff0700884c43c07299
+ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511304"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52671975"
 ---
-# <a name="how-to-access-a-member-with-a-pointer-c-programming-guide"></a>방법: 포인터로 멤버 액세스(C# 프로그래밍 가이드)
+# <a name="how-to-access-a-member-with-a-pointer-c-programming-guide"></a>방법: 포인터로 멤버에 액세스(C# 프로그래밍 가이드)
 안전하지 않은 컨텍스트에서 선언된 구조체 멤버에 액세스하기 위해 다음 예제에 제시된 멤버 액세스 연산자를 사용할 수 있습니다. 여기에서 `p`는 멤버 `x`가 포함된 [구조체](../../../csharp/language-reference/keywords/struct.md)에 대한 포인터입니다.  
   
 ```  
