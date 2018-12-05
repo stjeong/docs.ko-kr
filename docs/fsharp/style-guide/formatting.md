@@ -1,27 +1,27 @@
 ---
-title: F# 코드 서식 지정 지침
-description: F# 코드 서식 지정에 대 한 지침을 알아봅니다.
-ms.date: 05/14/2018
-ms.openlocfilehash: 0d7d2d1771710db55bf990f3a06079b2aec48fd7
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+title: F#코드 서식 지정 지침
+description: 서식 지정에 대 한 지침을 알아보려면 F# 코드입니다.
+ms.date: 11/26/2018
+ms.openlocfilehash: 993ba8d42570d92789a9fc1967b8185b45643d56
+ms.sourcegitcommit: 2151690e10d91545e2c20d6b5ad222c162b6b83d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 ms.locfileid: "43858007"
 ---
-# <a name="f-code-formatting-guidelines"></a>F# 코드 서식 지정 지침
+# <a name="f-code-formatting-guidelines"></a>F#코드 서식 지정 지침
 
-이 문서는 F# 코드 되도록 프로그램 코드의 서식을 지정 하는 방법에 대 한 지침을 제공 합니다.
+이 문서에서는 프로그램 코드의 서식을 지정 하는 방법에 대 한 지침을 제공 하 여 F# 코드는:
 
 * 일반적으로 보다 쉽게 읽을 것으로 간주
 * Visual Studio의 도구 및 다른 편집기를 지정 하 여 적용 되는 규칙에 따라는
 * 다른 온라인으로 코드와 유사
 
-다음이 지침에 기반한 [F# 서식 지정 규칙에 대 한 포괄적인 지침](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) 하 여 [Anh 똥 Phan](https://github.com/dungpa)합니다.
+다음이 지침에 기반한 [에 대 한 포괄적인 지침 F# 서식 지정 규칙](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) 하 여 [Anh 똥 Phan](https://github.com/dungpa)합니다.
 
 ## <a name="general-rules-for-indentation"></a>들여쓰기에 대 한 일반 규칙
 
-F# 기본적으로 유효 공백 문자를 사용합니다. 다음 지침을 적용할 수이 하는 몇 가지 과제를 다루어야 하는 방법에 대 한 지침을 제공 하려는.
+F#기본적으로 유효 공백 문자를 사용합니다. 다음 지침을 적용할 수이 하는 몇 가지 과제를 다루어야 하는 방법에 대 한 지침을 제공 하려는.
 
 ### <a name="using-spaces"></a>공간 사용
 
@@ -30,6 +30,63 @@ F# 기본적으로 유효 공백 문자를 사용합니다. 다음 지침을 적
 **들여쓰기 당 4 개의 공백을 사용 하는 것이 좋습니다.**
 
 즉, 프로그램의 들여쓰기는 주관적입니다. 변형 좋은지 이지만 첫 번째 규칙을 따라야 *들여쓰기 일관성*합니다. 들여쓰기의 일반적으로 허용 되는 스타일을 선택 하 고 코드 베이스 전체에서 체계적으로 사용 합니다.
+
+## <a name="formatting-white-space"></a>공백 문자 서식 지정
+
+F#공백 문자는 중요 합니다. 공백에서 대부분의 의미 체계를 적절 한 들여쓰기 하 여 처리 되지만 몇 가지 다른 고려해 야 합니다.
+
+### <a name="formatting-operators-in-arithmetic-expressions"></a>산술 식의 연산자를 서식 지정
+
+항상 이진 산술 연산자 주위의 공백을 사용 합니다.
+
+```fsharp
+let subtractThenAdd x = x - 1 + 3
+```
+
+단항 `-` 연산자에는 부정 되는 값을 가져야 합니다. 다음에 나와야 합니다.
+
+```fsharp
+// OK
+let negate x = -x
+
+// Bad
+let negateBad x = - x
+```
+
+다음 공백 문자를 추가 합니다 `-` 연산자 다른 혼란이 발생할 수 있습니다.
+
+이 요약 하자면, 항상 중요 합니다.
+
+* 공백 문자를 사용 하 여 서라운드 이항 연산자
+* 단항 연산자 뒤에 후행 공백이 절대로
+
+이진 산술 연산자 지침 특히 유용합니다. 이진 파일을 묶을 실패 `-` 연산자를 특정 형식 지정 옵션을 함께 사용 하면 단항으로 해석 될 수 있습니다 `-`합니다.
+
+### <a name="surround-a-custom-operator-definition-with-white-space"></a>주위에 공백 문자를 사용 하 여 사용자 지정 연산자 정의
+
+항상 사용 하 여 공백 묶을 연산자 정의:
+
+```fsharp
+// OK
+let ( !> ) x f = f x
+
+// Bad
+let (!>) x f = f x
+```
+
+로 시작 하는 모든 사용자 지정 연산자에 대 한 `*`, 컴파일러 모호성을 피하기 위해 정의의 시작 부분에 공백을 추가 해야 합니다. 이 인해 단일 공백 문자를 사용 하 여 모든 연산자의 정의 간단히 입력 하는 것이 좋습니다.
+
+### <a name="surround-function-parameter-arrows-with-white-space"></a>주위에 공백 문자를 사용 하 여 함수 매개 변수 화살표
+
+함수의 시그니처를 정의할 때는 주위의 공백을 사용 하 여는 `->` 기호:
+
+```fsharp
+// OK
+type MyFun = int -> int -> string
+
+// Bad
+type MyFunBad = int->int->string
+```
 
 ## <a name="formatting-blank-lines"></a>빈 줄을 서식 지정
 
@@ -62,7 +119,7 @@ let f x = x + 1 // Increment by one.
 
 ### <a name="use-camelcase-for-class-bound-expression-bound-and-pattern-bound-values-and-functions"></a>CamelCase를 사용 하 여 클래스 바인딩, 바인딩 식 및 패턴 바인딩된 값 및 함수에 대 한
 
-일반적인 되며 모든 이름에 대 한 camelCase를 사용 하도록 허용 된 F# 스타일 바인딩된 지역 변수 또는 패턴 일치에 함수 정의입니다.
+일반적이 고 허용 F# 모든 이름은 지역 변수 또는 패턴 일치에 바인딩되고 정의 함수에 대 한 camelCase를 사용 하는 스타일입니다.
 
 ```fsharp
 // OK
@@ -165,13 +222,13 @@ type SchoolPerson =
 
 ### <a name="avoid-underscores-in-names"></a>이름에 밑줄을 방지 합니다.
 
-지금까지 일부 F# 라이브러리 이름에 밑줄을 사용 했습니다. 그러나이 더 이상 광범위 하 게 수락 되 면.NET 명명 규칙을 사용 하 여 충돌 하기 때문입니다. 즉, 일부 F# 프로그래머가 사용 하 여 밑줄 많이, 부분적으로 기록 상의 용도로 허용 오차 존경 하는 것이 중요 합니다. 그러나 사용할 것인지 선택할 수 있는 다른 사용자가 스타일은 종종 싫는 주의 합니다.
+지금까지 일부 F# 라이브러리 이름에 밑줄을 사용 했습니다. 그러나이 더 이상 광범위 하 게 수락 되 면.NET 명명 규칙을 사용 하 여 충돌 하기 때문입니다. 즉, 일부 F# 프로그래머 밑줄 많이, 부분적으로 기록 상의 용도로 및 사용 허용 오차 존경 하는 것이 중요 합니다. 그러나 사용할 것인지 선택할 수 있는 다른 사용자가 스타일은 종종 싫는 주의 합니다.
 
 밑줄을 매우 자주 네이티브 구성 요소와의 상호 운용 하는 몇 가지 예외 포함 되어 있습니다.
 
-### <a name="use-standard-f-operators"></a>표준 F# 연산자를 사용 합니다.
+### <a name="use-standard-f-operators"></a>사용 하 여 표준 F# 연산자
 
-다음 연산자를 F# 표준 라이브러리에 정의 되어 있고 해당 항목을 정의 하는 대신 사용 해야 합니다. 더 읽기 쉽고 자연 스러운 코드를 확인 하는 경향이 있습니다 이러한 연산자를 사용 하 여 것이 좋습니다. OCaml 또는 다른 함수형 프로그래밍 언어에서 배경의 개발자가 익숙한 다른 관용구를 수 있습니다. 다음 목록에는 권장 되는 F# 연산자 요약 되어 있습니다.
+에 정의 된 다음 연산자는 F# 표준 라이브러리 항목을 정의 하는 대신 사용 해야 합니다. 더 읽기 쉽고 자연 스러운 코드를 확인 하는 경향이 있습니다 이러한 연산자를 사용 하 여 것이 좋습니다. OCaml 또는 다른 함수형 프로그래밍 언어에서 배경의 개발자가 익숙한 다른 관용구를 수 있습니다. 다음 목록은 요약 권장 되는 F# 연산자입니다.
 
 ```fsharp
 x |> f // Forward pipeline
@@ -193,11 +250,11 @@ x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 
 ### <a name="use-prefix-syntax-for-generics-foot-in-preference-to-postfix-syntax-t-foo"></a>제네릭에 대 한 접두사 구문을 사용 하 여 (`Foo<T>`) 후 위 구문 보다 우선적으로 (`T Foo`)
 
-F# 제네릭 형식 명명 모두는 후 위 ML 스타일을 상속 합니다. (예를 들어 `int list`)와.NET 스타일 접두사 (예를 들어, `list<int>`). 네 개의 특정 형식 제외 하 고.NET 스타일을 선호 합니다.
+F#제네릭 형식 명명 모두는 후 위 ML 스타일 상속 (예를 들어 `int list`) 접두사.NET 스타일 뿐만 아니라 (예를 들어 `list<int>`). 네 개의 특정 형식 제외 하 고.NET 스타일을 선호 합니다.
 
-1. F# 목록에서는, 후 위 형식 사용: `int list` 대신 `list<int>`합니다.
-2. F# 옵션에 대해 후 위 형식 사용: `int option` 대신 `option<int>`합니다.
-3. F# 배열의 경우 구문 이름을 사용 하 여 `int[]` 대신 `int array` 또는 `array<int>`합니다.
+1. 에 대 한 F# 목록, 후 위 형식 사용: `int list` 대신 `list<int>`합니다.
+2. 에 대 한 F# 옵션을 사용 후 위 형식: `int option` 대신 `option<int>`합니다.
+3. 에 대 한 F# 배열 구문 이름을 사용 하 여 `int[]` 대신 `int array` 하거나 `array<int>`합니다.
 4. 참조 셀에 대 한 사용 `int ref` 대신 `ref<int>` 또는 `Ref<int>`합니다.
 
 다른 모든 형식에 대 한 접두사 형식을 사용 합니다.
@@ -411,13 +468,13 @@ else e4
 ```fsharp
 // OK
 match l with
-| { him = x; her = "Posh" } :: tail -> _
+| { him = x; her = "Posh" } :: tail -> x
 | _ :: tail -> findDavid tail
 | [] -> failwith "Couldn't find David"
 
 // Not OK
 match l with
-    | { him = x; her = "Posh" } :: tail -> _
+    | { him = x; her = "Posh" } :: tail -> x
     | _ :: tail -> findDavid tail
     | [] -> failwith "Couldn't find David"
 ```
@@ -591,7 +648,7 @@ let comparer =
 
 ### <a name="formatting-white-space-in-expressions"></a>식에서 공백 서식 지정
 
-F# 식에 불필요 한 공백을 사용 하지 않습니다.
+불필요 한 공백을 사용 하지 않습니다 F# 식입니다.
 
 ```fsharp
 // OK
@@ -610,3 +667,59 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 // Not OK
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
+
+## <a name="formatting-attributes"></a>서식 지정 특성
+
+[특성](../language-reference/attributes.md) 구문 위에 배치 됩니다.
+
+```fsharp
+[<SomeAttribute>]
+type MyClass() = ...
+
+[<RequireQualifiedAccess>]
+module M =
+    let f x = x
+
+[<Struct>]
+type MyRecord =
+    { Label1: int
+      Label2: string }
+```
+
+### <a name="formatting-attributes-on-parameters"></a>매개 변수에 대 한 서식 특성
+
+특성의 매개 변수 위치 일 수도 있습니다. 이 경우 이름을 매개 변수로 전과 동일한 줄에 다음 배치 합니다.
+
+```fsharp
+// Defines a class that takes an optional value as input defaulting to false.
+type C() =
+    member __.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
+```
+
+### <a name="formatting-multiple-attributes"></a>여러 특성을 서식 지정
+
+여러 특성 매개 변수 없는 구문에 적용 되 면 배치 되어야 줄당 하나의 특성이 되도록 합니다.
+
+```fsharp
+[<Struct>]
+[<IsByRefLike>]
+type MyRecord =
+    { Label1: int
+      Label2: string }
+```
+
+매개 변수를 적용 하면 동일한 줄에 있어야 하며 구분을 `;` 구분 기호입니다.
+
+## <a name="formatting-literals"></a>형식 지정 리터럴
+
+[F#리터럴](../language-reference/literals.md) 를 사용 하 여는 `Literal` 특성 자체 줄에 특성을 배치 하며 camelCase 명명을 사용 해야 합니다.
+
+```fsharp
+[<Literal>]
+let path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+
+[<Literal>]
+let myUrl = "www.mywebsitethatiamworkingwith.com"
+```
+
+특성 값으로 동일한 줄에 배치 하지 마십시오.
