@@ -1,21 +1,21 @@
 ---
 title: 키워드 참조(F#)
-description: 모든 F# 언어 키워드에 대 한 정보 링크를를 찾습니다.
+description: 모든 정보에 대 한 링크를 찾습니다는 F# 언어 키워드입니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 0016f68b2872183a2b4dd865ce229b6a76250b78
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.sourcegitcommit: 2151690e10d91545e2c20d6b5ad222c162b6b83d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/05/2018
 ms.locfileid: "43856026"
 ---
 # <a name="keyword-reference"></a>키워드 참조
 
-이 항목에서는 모든 F# 언어 키워드에 대 한 정보에 대 한 링크를 포함합니다.
+모든 정보에 대 한 링크를 포함 하는이 항목에서는 F# 언어 키워드입니다.
 
-## <a name="f-keyword-table"></a>F# 키워드 테이블
+## <a name="f-keyword-table"></a>F#키워드 테이블
 
-다음 표에서 간략 한 설명 및 자세한 정보가 포함 된 관련 항목에 대 한 링크와 함께 사전순으로 모든 F# 키워드를 보여 줍니다.
+다음 표에서 모두 표시 F# 키워드에 대 한 간략 한 설명 및 자세한 정보가 포함 된 관련 항목에 대 한 링크와 함께 사전순으로 합니다.
 
 |키워드|링크|설명|
 |-------|----|-----------|
@@ -90,7 +90,7 @@ ms.locfileid: "43856026"
 |`yield`|[시퀀스](sequences.md)|시퀀스 식에는 시퀀스에 대 한 값을 생성 하는 데 사용 합니다.|
 |`yield!`|[계산 식](computation-expressions.md)<br /><br />[비동기 워크플로](asynchronous-workflows.md)|계산 식에 포함 하는 계산 식에 대 한 결과 컬렉션에 지정 된 계산 식의 결과 추가 하는 데 사용 합니다.|
 
-다음 토큰으로 OCaml 언어의 키워드 이기 때문에 F#에서 예약 되어 있습니다.
+예약 된 다음 토큰을 F# 으로 OCaml 언어의 키워드 이기 때문에:
 
 * `asr`
 * `land`
@@ -103,7 +103,7 @@ ms.locfileid: "43856026"
 
 사용 하는 경우는 `--mlcompatibility` 컴파일러 옵션을 식별자로 위의 키워드를 사용할 수 있습니다.
 
-다음 토큰을 F# 언어의 향후 확장에 대 한 키워드로 예약 되어 있습니다.
+다음과 같은 토큰의 향후 확장에 대 한 키워드로 예약 되어는 F# 언어:
 
 * `atomic`
 * `break`
