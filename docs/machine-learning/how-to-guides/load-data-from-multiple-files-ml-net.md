@@ -4,11 +4,11 @@ description: ML.NET를 사용하여 기계 학습 모델을 빌드하고, 학습
 ms.date: 11/07/2018
 ms.custom: mvc,how-to
 ms.openlocfilehash: c9b34bd6bcbac62e9f9c33226f5d0feb41168392
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672411"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150734"
 ---
 # <a name="load-data-from-multiple-files-for-machine-learning-processing---mlnet"></a>기계 학습 처리를 위해 여러 파일의 데이터 로드 - ML.NET
 

@@ -2,12 +2,12 @@
 title: WordprocessingML 문서의 모양(C#)
 ms.date: 07/20/2015
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
-ms.openlocfilehash: aeb047f23f60ba6951950a85a6e2ef57fcbd9dda
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 11dfd06f6236b2815989b0f7570868e436c7047a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46002959"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125735"
 ---
 # <a name="shape-of-wordprocessingml-documents-c"></a>WordprocessingML 문서의 모양(C#)
 이 항목에서는 WordprocessingML 문서의 XML 모양에 대해 소개합니다.  
@@ -88,8 +88,8 @@ using (Package wdPackage = Package.Open("SampleDoc.docx", FileMode.Open, FileAcc
 ```  
   
 ## <a name="external-resources"></a>외부 리소스  
- [Office(2007) Open XML 파일 형식 소개](https://msdn.microsoft.com/library/ms406049.aspx)  
- [WordprocessingML의 개요](https://msdn.microsoft.com/library/aa212812(office.11).aspx)  
+ [Office(2007) Open XML 파일 형식 소개](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205%28v=office.12%29)  
+ [WordprocessingML의 개요](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812%28v=office.11%29)  
  [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)(WordProcessingML 파일의 구조)  
  [WordprocessingML 소개](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
  [Office 2003: XML 참조 스키마 다운로드 페이지](https://www.microsoft.com/en-us/download/details.aspx?id=101)  

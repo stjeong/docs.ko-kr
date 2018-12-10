@@ -11,11 +11,11 @@ helpviewer_keywords:
 - string keyword [C#]
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
 ms.openlocfilehash: 66b1729363878f69f868b8b8fd6e9e7011426f27
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672006"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153126"
 ---
 # <a name="string-c-reference"></a>string(C# 참조)
 
@@ -94,7 +94,7 @@ Console.WriteLine(a);
 
 C#의 문자열에 대한 자세한 내용은 [문자열](../../programming-guide/strings/index.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [!code-csharp[csrefKeywordsTypes#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#17)]  
 

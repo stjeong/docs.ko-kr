@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 08/31/2018
-ms.openlocfilehash: bc99bbfc3adee4cdc7008a91f42659ebcaa7a1b1
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: cf86640456af03d4c44f537fe1ff3282521f2200
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45658433"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147953"
 ---
 # <a name="introduction-to-containers-and-docker"></a>컨테이너 및 Docker 소개
 
@@ -29,7 +29,6 @@ ms.locfileid: "45658433"
 
 즉, 컨테이너는 전체 응용 프로그램 수명 주기 워크플로에서 격리, 이식성, 민첩성, 확장성, 제어에 대한 이점이 있습니다. 가장 중요한 이점은 개발 및 작업 사이에서 환경 격리를 제공한다는 것입니다.
 
-
 >[!div class="step-by-step"]
-[이전](../index.md)
-[다음](docker-defined.md)
+>[이전](../index.md)
+>[다음](docker-defined.md)

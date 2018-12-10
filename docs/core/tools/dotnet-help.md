@@ -1,15 +1,13 @@
 ---
 title: dotnet help 명령 - .NET Core CLI
 description: dotnet help 명령은 지정된 명령에 대한 자세한 온라인 설명서를 표시합니다.
-author: mairaw
-ms.author: mairaw
-ms.date: 05/25/2018
-ms.openlocfilehash: ed152717e32ffb294f5d5bd8e5eb74d55e33e506
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.date: 12/04/2018
+ms.openlocfilehash: 60d1cc706ca5c78fa3be877bd679888181213e88
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34696600"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152177"
 ---
 # <a name="dotnet-help-reference"></a>dotnet help reference
 
@@ -29,18 +27,20 @@ ms.locfileid: "34696600"
 
 ## <a name="arguments"></a>인수
 
-`COMMAND_NAME`
+* **`COMMAND_NAME`**
 
-.NET Core CLI 명령의 이름입니다. 유효한 CLI 명령 목록은 [CLI 명령](index.md#cli-commands)을 참조하세요.
+  .NET Core CLI 명령의 이름입니다. 유효한 CLI 명령 목록은 [CLI 명령](index.md#cli-commands)을 참조하세요.
 
 ## <a name="options"></a>옵션
 
-`-h|--help`
+* **`-h|--help`**
 
-명령에 대한 간단한 도움말을 출력합니다.
+  명령에 대한 간단한 도움말을 출력합니다.
 
 ## <a name="examples"></a>예제
 
-[dotnet new](dotnet-new.md) 명령에 대한 설명서 페이지를 엽니다.
+* [dotnet new](dotnet-new.md) 명령에 대한 설명서 페이지를 엽니다.
 
-`dotnet help new`
+  ```console
+  dotnet help new
+  ```

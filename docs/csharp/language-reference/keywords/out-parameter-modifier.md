@@ -4,12 +4,12 @@ ms.date: 03/06/2018
 helpviewer_keywords:
 - parameters [C#], out
 - out parameters [C#]
-ms.openlocfilehash: bc31ae202ccbfee467dc0f6fa2cf515c751825ed
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 58654133b7bd7197502ec1550bc78c99aeb0bf0e
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837882"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155303"
 ---
 # <a name="out-parameter-modifier-c-reference"></a>out 매개 변수 한정자(C# 참조)
 `out` 키워드를 사용하면 참조를 통해 인수를 전달할 수 있습니다. 이러한 방식은 [ref](ref.md) 키워드와 비슷합니다. 단, `ref`의 경우에는 변수를 전달하기 전에 초기화해야 합니다. `in`이 호출된 메서드에서 인수 값 수정을 허용하지 않는 것을 제외하고 [in](in-parameter-modifier.md) 키워드와도 같습니다. `out` 매개 변수를 사용하려면 메서드 정의와 호출 메서드가 모두 명시적으로 `out` 키워드를 사용해야 합니다. 예:  
@@ -53,7 +53,7 @@ class CS0663_Example
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 
- [Try 패턴](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md)은 `bool`을 반환하여 작업의 성공 또는 실패를 나타내고 작업에서 생성된 값을 `out` 인수에 반환해야 합니다. [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) 메서드와 같은 다양한 구문 분석 메서드에서 이 패턴을 사용합니다.
+ [Try 패턴](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods)은 `bool`을 반환하여 작업의 성공 또는 실패를 나타내고 작업에서 생성된 값을 `out` 인수에 반환해야 합니다. [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) 메서드와 같은 다양한 구문 분석 메서드에서 이 패턴을 사용합니다.
    
 ## <a name="calling-a-method-with-an-out-argument"></a>`out` 인수를 사용하여 메서드 호출
 

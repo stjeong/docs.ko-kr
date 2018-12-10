@@ -3,12 +3,12 @@ title: C# 형식 및 변수 - C# 언어 둘러보기
 description: C#에서 형식 정의 및 변수 선언에 대한 자세한 정보
 ms.date: 08/10/2016
 ms.assetid: f8a8051e-0049-43f1-b594-9c84cc7b1224
-ms.openlocfilehash: 752ff490ec91919dc54539c3e39f6d0c527d6260
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 34b724dff17feb699d797e9ed9aea25d85d8c5a9
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352137"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129521"
 ---
 # <a name="types-and-variables"></a>형식 및 변수
 
@@ -116,5 +116,5 @@ C#에는 필드, 배열 요소, 지역 변수 및 매개 변수를 포함하는 
     - `null` 참조 또는 호환되는 대리자 형식의 인스턴스에 대한 참조
 
 >[!div class="step-by-step"]
-[이전](program-structure.md)
-[다음](expressions.md)
+>[이전](program-structure.md)
+>[다음](expressions.md)
