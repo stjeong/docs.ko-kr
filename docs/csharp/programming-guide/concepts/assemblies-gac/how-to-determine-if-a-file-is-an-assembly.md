@@ -2,12 +2,12 @@
 title: '방법: 파일이 어셈블리인지 확인(C#)'
 ms.date: 07/20/2015
 ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
-ms.openlocfilehash: ee2313677fba21624ccdb44db779633f6c4503bf
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 0cf9258aa4a5a1a633ee0bb04808d384de8f48d0
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861012"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125537"
 ---
 # <a name="how-to-determine-if-a-file-is-an-assembly-c"></a>방법: 파일이 어셈블리인지 확인(C#)
 파일은 관리되고 해당 메타데이터에 어셈블리 항목을 포함하는 경우에만 어셈블리입니다. 어셈블리 및 메타데이터에 대한 자세한 내용은 [어셈블리 매니페스트](../../../../../docs/framework/app-domains/assembly-manifest.md) 항목을 참조하세요.  
@@ -29,7 +29,7 @@ ms.locfileid: "43861012"
 ## <a name="example"></a>예  
  이 예제에서는 DLL을 테스트하여 어셈블리인지 확인합니다.  
   
-```  
+```csharp
 class TestAssembly  
 {  
     static void Main()  

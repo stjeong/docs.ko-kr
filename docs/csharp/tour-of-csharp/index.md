@@ -3,12 +3,12 @@ title: C# 둘러보기 - C# 가이드
 description: C#을 처음 사용하시나요? 언어의 기본 사항에 대해 알아봅니다.
 ms.date: 08/10/2016
 ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
-ms.openlocfilehash: bdb8a84083b391c27d39f5c566a01b2db318123f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bece954c095870651126e486c2c6eb978e78f96d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359009"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150396"
 ---
 # <a name="a-tour-of-the-c-language"></a>C# 언어 둘러보기  
 
@@ -76,4 +76,4 @@ C#에 대해 자세히 알아볼 수 있는 많은 리소스가 있습니다.  �
     * ***특성***을 사용하면 프로그램에서 형식, 멤버 및 다른 엔터티에 대한 추가 선언 정보를 지정할 수 있습니다.
 
 >[!div class="step-by-step"]
-[다음](program-structure.md)
+>[다음](program-structure.md)

@@ -4,11 +4,11 @@ description: ML.NET에서 기계 학습 모델 품질을 평가하고 확인하�
 ms.date: 11/07/2018
 ms.custom: mvc,how-to
 ms.openlocfilehash: 6fd4dfab6104b4398918e42ed70584b04169a8c1
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297570"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149525"
 ---
 # <a name="calculate-metrics-to-evaluate-machine-learning-model-quality---mlnet"></a>메트릭을 계산하여 기계 학습 모델 품질 평가 - ML.NET
 

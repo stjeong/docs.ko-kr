@@ -2,17 +2,17 @@
 title: '방법: 디렉터리 트리의 중복 파일 쿼리(LINQ)(C#)'
 ms.date: 07/20/2015
 ms.assetid: 1ff5562b-0d30-46d1-b426-a04e8f78c840
-ms.openlocfilehash: 09ce574c68cbf11c0ee50df663692fd207038758
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 66bdcf1b713a80f2a7cda753cb0f39c016178b9b
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44189237"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126603"
 ---
 # <a name="how-to-query-for-duplicate-files-in-a-directory-tree-linq-c"></a>방법: 디렉터리 트리의 중복 파일 쿼리(LINQ)(C#)
 동일한 이름을 가진 파일이 둘 이상의 폴더에 있는 경우도 있습니다. 예를 들어 Visual Studio 설치 폴더 아래의 여러 폴더에 readme.htm 파일이 있습니다. 이 예제에서는 지정된 루트 폴더 아래에서 이러한 중복 파일 이름을 쿼리하는 방법을 보여 줍니다. 두 번째 예제에서는 크기 및 생성 시간도 일치하는 파일을 쿼리하는 방법을 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp  
 class QueryDuplicateFileNames  
@@ -74,12 +74,12 @@ class QueryDuplicateFileNames
   
         public override int GetHashCode()  
         {  
-            string str = String.Format("{0}{1}{2}", this.CreationTime, this.Length, this.Name);  
+            string str = $"{this.CreationTime}{this.Length}{this.Name}";
             return str.GetHashCode();  
         }  
         public override string ToString()  
         {  
-            return String.Format("{0} {1} {2}", this.Name, this.Length, this.CreationTime);  
+            return $"{this.Name} {this.Length} {this.CreationTime}";
         }  
     }  
     static void QueryDuplicates2()  

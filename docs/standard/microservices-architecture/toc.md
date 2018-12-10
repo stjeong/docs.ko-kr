@@ -30,8 +30,6 @@
 ### [Azure Service Fabric 사용](architect-microservice-container-applications/using-azure-service-fabric.md)
 ## [Docker 기반 응용 프로그램에 대한 개발 프로세스](docker-application-development-process/index.md)
 ### [Docker 앱에 대한 개발 워크플로](docker-application-development-process/docker-app-development-workflow.md)
-## [Linux 또는 Windows Nano 서버 호스트에 단일 컨테이너 기반 .NET Core 웹 응용 프로그램 배포](net-core-single-containers-linux-windows-server-hosts/index.md)
-## [Windows 컨테이너로 레거시 모놀리식 .NET Framework 응용 프로그램 마이그레이션](containerize-net-framework-applications/index.md)
 ## [다중 컨테이너 및 마이크로 서비스 기반 NET 응용 프로그램 디자인 및 개발](multi-container-microservice-net-applications/index.md)
 ### [마이크로 서비스 지향 응용 프로그램 디자인](multi-container-microservice-net-applications/microservice-application-design.md)
 ### [단순 데이터 기반 CRUD 마이크로 서비스 만들기](multi-container-microservice-net-applications/data-driven-crud-microservice.md)

@@ -4,16 +4,16 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - overriding Equals method [C#]
 - object equivalence [C#]
-- Equals method [C#] , overriding
+- Equals method [C#], overriding
 - value equality [C#]
 - equivalence [C#]
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.openlocfilehash: 365aa5a71eb3d07a79920f565a66fcac67de0b42
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 8abcace9c648ba2132d2b6849ae1c9d347d6fd29
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042623"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126785"
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>방법: 형식의 값 일치 정의(C# 프로그래밍 가이드)
 클래스 또는 구조체를 정의할 때 형식에 대한 값 같음(또는 동등)의 사용자 지정 정의를 만드는 것이 적합한지 결정합니다. 일반적으로 형식의 개체를 일종의 컬렉션에 추가해야 하는 경우 또는 주요 용도가 필드 또는 속성 집합 저장인 경우 값 같음을 구현합니다. 형식의 모든 필드 및 속성 비교를 기준으로 값 같음의 정의를 만들거나, 하위 집합을 기준으로 정의를 만들 수 있습니다. 그러나 두 경우 모두, 클래스와 구조체 둘 다에서 구현이 동등의 5가지 사항을 따라야 합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "44042623"
   
  뒤에 오는 첫 번째 예제에서는 클래스의 구현 방법을 보여 줍니다. 두 번째 예제에서는 구조체의 구현 방법을 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 클래스(참조 형식)에서 값 같음을 구현하는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideStatements#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_1.cs)]  
@@ -53,7 +53,7 @@ ms.locfileid: "44042623"
   
  클래스에서 재정의하지 않는 경우에도 `==` 및 `!=` 연산자를 클래스와 함께 사용할 수 있습니다. 그러나 기본 동작은 참조가 같은지 검사하는 것입니다. 클래스에서 `Equals` 메서드를 오버로드하는 경우 `==` 및 `!=` 연산자를 오버로드해야 하지만 필수는 아닙니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 구조체(값 형식)에서 값 같음을 구현하는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideStatements#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_2.cs)]  

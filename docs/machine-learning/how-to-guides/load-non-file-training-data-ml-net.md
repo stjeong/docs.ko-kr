@@ -4,11 +4,11 @@ description: ML.NET를 사용하여 기계 학습 모델 학습의 파일이 아
 ms.date: 11/07/2018
 ms.custom: mvc,how-to
 ms.openlocfilehash: 971c5c62acc9dd7bf29aa11ce898c2b76822c3d7
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672084"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125404"
 ---
 # <a name="train-a-machine-learning-model-with-data-thats-not-in-a-text-file---mlnet"></a>텍스트 파일에 포함되지 않은 데이터를 사용하여 기계 학습 모델 학습 - ML.NET
 

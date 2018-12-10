@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.openlocfilehash: 61bc9ca6fed8f5249dcb125619aa1b07f290ba7e
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 7736c1fe4cb1a2a4553ba36cecceab37e2fe90c4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106881"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144470"
 ---
 # <a name="development-process-for-docker-based-applications"></a>Docker 기반 응용 프로그램에 대한 개발 프로세스
 
@@ -44,7 +44,6 @@ ms.locfileid: "37106881"
 
 이 가이드의 이전 섹션에서 언급했듯이 Docker 컨테이너화된 .NET 응용 프로그램을 개발할 때 .NET Framework, .NET Core 또는 오픈 소스 Mono 프로젝트를 사용할 수 있습니다. Linux 또는 Windows 컨테이너를 대상으로 할 때 사용 중인 .NET Framework에 따라 C\#, F\# 또는 Visual Basic으로 개발할 수 있습니다. .NET 언어에 대한 자세한 내용은 블로그 게시물, [The .NET Language Strategy](https://blogs.msdn.microsoft.com/dotnet/2017/02/01/the-net-language-strategy/)(.NET 언어 전략)를 참조하세요.
 
-
 >[!div class="step-by-step"]
-[이전](../architect-microservice-container-applications/using-azure-service-fabric.md)
-[다음](docker-app-development-workflow.md)
+>[이전](../architect-microservice-container-applications/using-azure-service-fabric.md)
+>[다음](docker-app-development-workflow.md)

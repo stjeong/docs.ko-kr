@@ -5,11 +5,11 @@ author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.openlocfilehash: 6da7404415e8d485533fc1c9a619cb0706a26aca
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50040883"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152341"
 ---
 # <a name="reducing-package-dependencies-with-projectjson"></a>project.json으로 패키지 종속성 감소
 
@@ -38,7 +38,7 @@ ms.locfileid: "50040883"
 1. 시행착오.  패키지를 제거하고 복원하면서 여전히 컴파일되는지를 알아보고 이 프로세스를 반복합니다.
 2. 참조를 피킹하여 실제로 어떤 코드가 사용되는지를 알아보기 위해 [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------) 또는 [.NET Reflector](https://www.red-gate.com/products/dotnet-development/reflector) 같은 도구를 사용합니다.  그런 다음 사용 중인 형식에 해당하지 않는 패키지를 제거할 수 있습니다.
 
-## <a name="example"></a>예 
+## <a name="example"></a>예제 
 
 제네릭 컬렉션 형식에 추가 기능을 제공한 라이브러리를 작성했다고 가정해 보겠습니다.  그런 라이브러리는 `System.Collections` 같은 패키지에 종속되어야 하지만, `System.Net.Http` 같은 패키지에는 전혀 종속되지 않을 수 있습니다.  따라서 이 라이브러리에 필요한 것으로만 패키지 종속성을 잘라낼 수 있습니다.
 

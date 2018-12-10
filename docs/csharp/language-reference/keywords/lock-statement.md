@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - lock keyword [C#]
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
-ms.openlocfilehash: 802f447e1ae01020fa80fa3048e3783ea24db3d3
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: cacc703e40f268c1dbca4174dc866ecae83cbd6c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850103"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125758"
 ---
 # <a name="lock-statement-c-reference"></a>lock 문(C# 참조)
 
@@ -56,7 +56,7 @@ finally
 - <xref:System.Type> 인스턴스([typeof](typeof.md) 연산자 또는 리플렉션에서 획득할 수 있음).
 - 문자열 인스턴스(문자열 리터럴 포함)([인터닝](/dotnet/api/system.string.intern#remarks)될 수 있음).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 전용 `balanceLock` 인스턴스에 잠금을 설정하여 해당 개인 `balance` 필드에 대한 액세스를 동기화하는 `Account` 클래스를 정의합니다. 동일한 인스턴스를 잠금에 사용하면 `Debit` 또는 `Credit` 메서드를 동시에 호출하려는 두 스레드에 의해 `balance` 필드가 동시에 업데이트되지 않습니다.
 
@@ -74,5 +74,4 @@ finally
 - [C# 참조](../index.md)
 - [C# 키워드](index.md)
 - [문 키워드](statement-keywords.md)
-- [연동 작업](../../../standard/threading/interlocked-operations.md)
 - [동기화 기본 형식 개요](../../../standard/threading/overview-of-synchronization-primitives.md)

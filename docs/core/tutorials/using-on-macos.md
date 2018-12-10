@@ -4,25 +4,25 @@ description: 이 문서에서는 Visual Studio Code를 사용하여 .NET Core �
 author: bleroy
 ms.author: mairaw
 ms.date: 03/23/2017
-ms.openlocfilehash: 5a4b2734137f59b29535f302dd17fb94329d676f
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 0e089ff093ee76dbf9c1accda4145bd8b8fc82e6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39245593"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127591"
 ---
 # <a name="getting-started-with-net-core-on-macos"></a>macOS에서 .NET Core 시작
 
 이 문서에서는 macOS용 .NET Core 솔루션을 만드는 단계와 워크플로를 제공합니다. 프로젝트 및 단위 테스트를 만들고, 디버깅 도구를 사용하고, [NuGet](https://www.nuget.org/)을 통해 타사 라이브러리를 통합하는 방법을 알아봅니다.
 
 > [!NOTE]
-> 이 문서에서는 macOS의 [Visual Studio Code](http://code.visualstudio.com)를 사용합니다.
+> 이 문서에서는 macOS의 [Visual Studio Code](https://code.visualstudio.com)를 사용합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 [.NET Core SDK](https://www.microsoft.com/net/core)를 설치합니다. .NET Core SDK에는 최신 버전의 .NET Core 프레임워크 및 런타임이 포함되어 있습니다.
 
-[Visual Studio Code](http://code.visualstudio.com)를 설치합니다. 이 문서를 진행하면서 .NET Core 개발자 환경을 개선하는 Visual Studio Code 확장도 설치하게 됩니다.
+[Visual Studio Code](https://code.visualstudio.com)를 설치합니다. 이 문서를 진행하면서 .NET Core 개발자 환경을 개선하는 Visual Studio Code 확장도 설치하게 됩니다.
 
 Visual Studio Code 팔레트를 열려면 Visual Studio Code를 열고 <kbd>F1</kbd> 키를 눌러 Visual Studio Code C# 확장을 설치합니다. **ext install**을 입력하여 확장 목록을 표시합니다. C# 확장을 선택합니다. Visual Studio Code를 다시 시작하여 확장을 활성화합니다. 자세한 내용은 [Visual Studio Code C# 확장 문서](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)를 참조하세요.
 

@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 0e55a68432dfd44c7a73ae51512f50d481ae100c
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: 7ee559f3881101a2382e6767607d5de1482d74ba
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37937035"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126473"
 ---
 # <a name="securing-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 응용 프로그램 보안
 
@@ -130,7 +130,7 @@ Visual Studio에서 ASP.NET Core 웹 응용 프로그램 프로젝트를 만들 
 
 ASP.NET Core ID(또는 ID 및 외부 인증 공급자)를 사용한 인증은 사용자 정보를 쿠키에 저장하는 것이 적합한 다수의 웹 응용 프로그램 시나리오에 대해 효과적으로 작동합니다. 그러나 다른 시나리오의 경우 쿠키는 데이터를 유지하고 전송하는 자연스러운 방법이 아닙니다.
 
-예를 들어 SPA(단일 페이지 응용 프로그램), 네이티브 클라이언트 또는 다른 웹 API에서 액세스할 수 있는 RESTful 끝점을 노출하는 ASP.NET Core 웹 API에서는 쿠키 대신 일반적으로 전달자 토큰 인증을 사용하는 것이 좋습니다. 이러한 유형의 응용 프로그램은 쿠키와는 작동하지 않지만 간편하게 전달자 토큰을 검색하여 후속 요청의 인증 헤더에 포함합니다. 토큰 인증을 사용하기 위해 ASP.NET Core는 [OAuth 2.0](https://oauth.net/2/) 및 [OpenID Connect](https://openid.net/connect/) 사용에 대한 몇 가지 옵션을 지원합니다.
+예를 들어 SPA(단일 페이지 응용 프로그램), 네이티브 클라이언트 또는 다른 웹 API에서 액세스할 수 있는 RESTful 엔드포인트를 노출하는 ASP.NET Core 웹 API에서는 쿠키 대신 일반적으로 전달자 토큰 인증을 사용하는 것이 좋습니다. 이러한 유형의 응용 프로그램은 쿠키와는 작동하지 않지만 간편하게 전달자 토큰을 검색하여 후속 요청의 인증 헤더에 포함합니다. 토큰 인증을 사용하기 위해 ASP.NET Core는 [OAuth 2.0](https://oauth.net/2/) 및 [OpenID Connect](https://openid.net/connect/) 사용에 대한 몇 가지 옵션을 지원합니다.
 
 ## <a name="authenticating-with-an-openid-connect-or-oauth-20-identity-provider"></a>OpenID Connect 또는 OAuth 2.0 ID 공급자를 사용한 인증
 
@@ -158,7 +158,7 @@ app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
 
 [IdentityServer4](https://github.com/IdentityServer/IdentityServer4) 및 [OpenIddict](https://github.com/openiddict/openiddict-core)는 ASP.NET Core ID와 쉽게 통합하여 ASP.NET Core 서비스에서 보안 토큰을 발급할 수 있도록 허용하는 OpenID Connect 공급자입니다. [IdentityServer4 설명서](https://identityserver4.readthedocs.io/en/release/)에는 라이브러리 사용에 대한 자세한 지침이 있습니다. 그러나 IdentityServer4를 사용하여 토큰을 발급하는 기본 단계는 다음과 같습니다.
 
-1.  Startup.Configure 메서드에서 app.UseIdentityServer를 호출하여 IdentityServer4를 응용 프로그램의 HTTP 요청 처리 파이프라인에 추가합니다. 이렇게 하면 라이브러리 서버에서 /connect/token과 같은 OpenID Connect 및 OAuth2 끝점에 요청할 수 있습니다.
+1.  Startup.Configure 메서드에서 app.UseIdentityServer를 호출하여 IdentityServer4를 응용 프로그램의 HTTP 요청 처리 파이프라인에 추가합니다. 이렇게 하면 라이브러리 서버에서 /connect/token과 같은 OpenID Connect 및 OAuth2 엔드포인트에 요청할 수 있습니다.
 
 2.  services.AddIdentityServer를 호출하여 Startup.ConfigureServices에서 IdentityServer4를 구성합니다.
 
@@ -195,7 +195,7 @@ services.AddIdentityServer()
 
 ## <a name="consuming-security-tokens"></a>보안 토큰 사용
 
-OpenID Connect 끝점에 대해 인증하거나 고유 보안 토큰을 발행하는 방법은 일부 시나리오에서 사용할 수 있습니다. 그러나 다른 서비스에서 제공받은 유효한 보안 토큰이 있는 사용자의 액세스를 제한해야 하는 서비스에는 어떤 방법을 사용해야 할까요?
+OpenID Connect 엔드포인트에 대해 인증하거나 고유 보안 토큰을 발행하는 방법은 일부 시나리오에서 사용할 수 있습니다. 그러나 다른 서비스에서 제공받은 유효한 보안 토큰이 있는 사용자의 액세스를 제한해야 하는 서비스에는 어떤 방법을 사용해야 할까요?
 
 이 시나리오의 경우 JWT 토큰을 처리하는 인증 미들웨어를 Microsoft.AspNetCore.Authentication.JwtBearer 패키지에서 사용할 수 있습니다. JWT는 “[JSON Web Token](https://tools.ietf.org/html/rfc7519)”을 의미하며 보안 클레임 통신을 위한 일반적인 보안 토큰 형식(RFC 7519에 의해 정의됨)입니다. 미들웨어를 사용하여 이러한 토큰을 사용하는 방법의 간단한 예는 다음 예제처럼 표시될 수 있습니다. 이 코드는 ASP.NET Core MVC 미들웨어(app.UseMvc)에 대한 호출 앞에 와야 합니다.
 
@@ -248,7 +248,6 @@ JWT 전달자 인증 미들웨어는 인증 기관을 사용할 수 없는 경�
 -   **IdentityServer4. 공식 문서**
     [*https://identityserver4.readthedocs.io/en/release/*](https://identityserver4.readthedocs.io/en/release/)
 
-
 >[!div class="step-by-step"]
-[이전](../implement-resilient-applications/monitor-app-health.md)
-[다음](authorization-net-microservices-web-applications.md)
+>[이전](../implement-resilient-applications/monitor-app-health.md)
+>[다음](authorization-net-microservices-web-applications.md)
