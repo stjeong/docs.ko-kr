@@ -4,19 +4,19 @@ description: 모델의 예측에 대한 정확도 수준을 강화하기 위해 
 ms.date: 11/07/2018
 ms.custom: mvc,how-to
 ms.openlocfilehash: 41b99415d736b6583a8d43434c031e677e6f3ac8
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297580"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145964"
 ---
-# <a name="train-a-machine-learning-model-using-cross-validation---mlnet"></a><span data-ttu-id="7ee2d-103">교차 유효성 검사를 사용하여 기계 학습 모델 학습 - ML.NET</span><span class="sxs-lookup"><span data-stu-id="7ee2d-103">Train a machine learning model using cross-validation - ML.NET</span></span>
+# <a name="train-a-machine-learning-model-using-cross-validation---mlnet"></a><span data-ttu-id="b6690-103">교차 유효성 검사를 사용하여 기계 학습 모델 학습 - ML.NET</span><span class="sxs-lookup"><span data-stu-id="b6690-103">Train a machine learning model using cross-validation - ML.NET</span></span>
 
-<span data-ttu-id="7ee2d-104">[교차 유효성 검사](https://en.wikipedia.org/wiki/Cross-validation_(statistics))는 ML 애플리케이션에 대한 유용한 기술입니다.</span><span class="sxs-lookup"><span data-stu-id="7ee2d-104">[Cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) is a useful technique for ML applications.</span></span> <span data-ttu-id="7ee2d-105">실행 간에 모델 품질의 분산을 예측하고 평가를 위해 설정된 별도 테스트를 추출할 필요를 제거할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7ee2d-105">It helps estimate the variance of the model quality from one run to another and also eliminates the need to extract a separate test set for evaluation.</span></span>
+<span data-ttu-id="b6690-104">[교차 유효성 검사](https://en.wikipedia.org/wiki/Cross-validation_(statistics))는 ML 애플리케이션에 대한 유용한 기술입니다.</span><span class="sxs-lookup"><span data-stu-id="b6690-104">[Cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) is a useful technique for ML applications.</span></span> <span data-ttu-id="b6690-105">실행 간에 모델 품질의 분산을 예측하고 평가를 위해 설정된 별도 테스트를 추출할 필요를 제거할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b6690-105">It helps estimate the variance of the model quality from one run to another and also eliminates the need to extract a separate test set for evaluation.</span></span>
 
-<span data-ttu-id="7ee2d-106">(모든 전처리가 하나의 학습 파이프라인에 있으면) ML.NET는 자동으로 기능화를 올바르게 적용한 다음, '계층 열' 개념을 사용하여 관련 예제가 분리되지 않도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ee2d-106">ML.NET automatically applies featurization correctly (as long as all of the preprocessing resides in one learning pipeline) then use the 'stratification column' concept to make sure that related examples don't get separated.</span></span>
+<span data-ttu-id="b6690-106">(모든 전처리가 하나의 학습 파이프라인에 있으면) ML.NET는 자동으로 기능화를 올바르게 적용한 다음, '계층 열' 개념을 사용하여 관련 예제가 분리되지 않도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="b6690-106">ML.NET automatically applies featurization correctly (as long as all of the preprocessing resides in one learning pipeline) then use the 'stratification column' concept to make sure that related examples don't get separated.</span></span>
 
-<span data-ttu-id="7ee2d-107">임의의 90/10 학습-테스트 분할 및 5가지 교차 유효성 검사를 사용하는 아이리스 데이터 세트에 대한 학습 예제는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="7ee2d-107">Here's a training example on an Iris dataset using randomized 90/10 train-test split, and a 5-fold cross-validation:</span></span>
+<span data-ttu-id="b6690-107">임의의 90/10 학습-테스트 분할 및 5가지 교차 유효성 검사를 사용하는 아이리스 데이터 세트에 대한 학습 예제는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="b6690-107">Here's a training example on an Iris dataset using randomized 90/10 train-test split, and a 5-fold cross-validation:</span></span>
 
 ```csharp
 // Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
