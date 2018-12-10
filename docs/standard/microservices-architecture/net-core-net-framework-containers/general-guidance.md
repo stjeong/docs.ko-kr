@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/11/2018
-ms.openlocfilehash: e77065614423cd2e7fdb51258a8c7650280d0400
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 6ff6170fd1cdd0c69ecc8729cc8199cceea43ffa
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46537828"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128481"
 ---
 # <a name="general-guidance"></a>일반 지침
 
@@ -45,7 +45,6 @@ Docker에서 .NET Framework를 사용하면 배포 문제 최소화를 통해 �
 -   **샘플 앱: Windows 컨테이너를 사용하여 레거시 ASP.NET 웹앱 최신화**  
     https://aka.ms/eshopmodernizing
 
-
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](net-core-container-scenarios.md)
+>[이전](index.md)
+>[다음](net-core-container-scenarios.md)

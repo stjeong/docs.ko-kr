@@ -2,12 +2,12 @@
 title: '방법: Task.WhenAll을 사용하여 비동기 연습 확장(C#)'
 ms.date: 07/20/2015
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
-ms.openlocfilehash: e809ea3c2b2bcc0f547dd53280835a83f52e079b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 66636476d0c76f26f87198bc58146e034bdad6af
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188042"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151124"
 ---
 # <a name="how-to-extend-the-async-walkthrough-by-using-taskwhenall-c"></a>방법: Task.WhenAll을 사용하여 비동기 연습 확장(C#)
 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> 메서드를 사용하여 [연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)에서 비동기 솔루션의 성능을 향상할 수 있습니다. 이 메서드는 작업 컬렉션으로 표시되는 여러 개의 비동기 작업을 비동기적으로 기다립니다.  
@@ -246,7 +246,7 @@ namespace AsyncExampleWPF_WhenAll
   
             // Display the total count for all of the websites.  
             resultsTextBox.Text +=  
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }  
   
         private List<string> SetUpURLList()  
@@ -307,9 +307,8 @@ namespace AsyncExampleWPF_WhenAll
             var bytes = content.Length;  
             // Strip off the "https://".  
             var displayURL = url.Replace("https://", "");  
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
-  
-        }  
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
+        }
     }  
 }  
 ```  
@@ -393,7 +392,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
   
             // Display the total count for all of the web addresses.  
             resultsTextBox.Text +=  
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }  
   
         private List<string> SetUpURLList()  
@@ -429,7 +428,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
             var bytes = content.Length;  
             // Strip off the "https://".  
             var displayURL = url.Replace("https://", "");  
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
         }  
     }  
 }  

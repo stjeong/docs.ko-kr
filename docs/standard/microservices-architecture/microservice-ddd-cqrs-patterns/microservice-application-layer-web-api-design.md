@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션을 위한 .NET 마이크
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 03e08d757917b5ff658e9d4dd282a096c8dd23d5
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: f31c712143a448e12350db1ed242da7561a7a286
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296772"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147498"
 ---
 # <a name="design-the-microservice-application-layer-and-web-api"></a>마이크로 서비스 애플리케이션 계층 및 웹 API 설계하기
 
@@ -47,5 +47,5 @@ SOLID에 대해서는 다른 가이드에서 자세히 다룰 것입니다. 따�
   [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
 
 >[!div class="step-by-step"]
-[이전](nosql-database-persistence-infrastructure.md)
-[다음](microservice-application-layer-implementation-web-api.md)
+>[이전](nosql-database-persistence-infrastructure.md)
+>[다음](microservice-application-layer-implementation-web-api.md)

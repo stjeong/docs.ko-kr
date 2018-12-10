@@ -5,19 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0da481a9-b414-4230-beb0-e3ceba882fe5
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 2be271123e34f155a79269d3b810c50fe24a40c6
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: bda2da2400c97b3cc0ad2bbc573283cff8035310
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48849934"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129066"
 ---
 # <a name="how-to-override-a-global-proxy-selection"></a>방법: 전역 프록시 선택 재정의
 이 예제에서는 글로벌 프록시 선택을 포트 80의 `alternateproxy`라는 프록시 서버로 재정의하는 **WebRequest**를 `www.contoso.com`에 보냅니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp  
 WebRequest req = WebRequest.Create("http://www.contoso.com/");  

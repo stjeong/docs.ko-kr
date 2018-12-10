@@ -3,12 +3,12 @@ title: C#의 클래스 및 개체 - C# 언어 둘러보기
 description: C#을 처음 사용하시나요? 클래스, 개체 및 상속 개요 읽어보기
 ms.date: 08/10/2016
 ms.assetid: 63a89bde-0f05-4bc4-b0cd-4f693854f0cd
-ms.openlocfilehash: 8e6b327c8391c3a3c97f7806f87dbb9656f0d00d
-ms.sourcegitcommit: 736ec4d3e2c74895b47a0d36126657b95da383c9
+ms.openlocfilehash: 51661a0728e9a68c0c646f493b648120897f95fd
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2018
-ms.locfileid: "37140283"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147556"
 ---
 # <a name="classes-and-objects"></a>클래스 및 개체
 
@@ -294,5 +294,5 @@ set 접근자는 value라는 단일 매개 변수를 가지며 반환 형식이 
 `using` 문은 개체 소멸을 위한 더 나은 방법을 제공합니다.
 
 >[!div class="step-by-step"]
-[이전](statements.md)
-[다음](structs.md)
+>[이전](statements.md)
+>[다음](structs.md)

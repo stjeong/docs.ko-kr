@@ -4,12 +4,12 @@ description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 응용 프로�
 author: ardalis
 ms.author: wiwagn
 ms.date: 6/28/2018
-ms.openlocfilehash: 692c1bf243c26ef6dcf441be9324e43d6a93fe50
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: eb5612e0cbdc52e397ba367b4cc744796174d06c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404608"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153893"
 ---
 # <a name="common-client-side-web-technologies"></a>일반 클라이언트측 웹 기술
 
@@ -165,5 +165,5 @@ JavaScript 프레임워크는 지속적으로 매우 빠르게 발전하고 있�
 > <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282>
 
 >[!div class="step-by-step"]
-[이전](common-web-application-architectures.md)
-[다음](develop-asp-net-core-mvc-apps.md)
+>[이전](common-web-application-architectures.md)
+>[다음](develop-asp-net-core-mvc-apps.md)

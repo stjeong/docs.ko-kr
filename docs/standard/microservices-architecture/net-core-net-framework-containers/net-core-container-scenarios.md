@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/11/2018
-ms.openlocfilehash: fa5efd3c2478965ef01efc39b57918ec2d35962a
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: b283916d6ae4d19fdc6a4f7976a3adbb66d26b2c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873377"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143411"
 ---
 # <a name="when-to-choose-net-core-for-docker-containers"></a>Docker 컨테이너에 대해 .NET Core를 선택할 경우
 
@@ -53,7 +53,6 @@ IDE 및 편집기 외에도 지원되는 모든 플랫폼에 [.NET Core CLI](htt
 
 수백 개의 마이크로 서비스(컨테이너)를 실행하는 마이크로 서비스 아키텍처의 경우 특히 그렇습니다. Linux 또는 Windows Nano의 ASP.NET Core 이미지(.NET Core 런타임 기반)를 통해 더 적은 수의 서버나 VM으로 시스템을 실행하여 인프라 및 호스트 비용을 절감할 수 있습니다.
 
-
 >[!div class="step-by-step"]
-[이전](general-guidance.md)
-[다음](net-framework-container-scenarios.md)
+>[이전](general-guidance.md)
+>[다음](net-framework-container-scenarios.md)

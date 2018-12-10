@@ -10,11 +10,11 @@ ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 8a0679dafda7935034d3a3ab0f4c43656ab5668b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185250"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151410"
 ---
 # <a name="obsolete-members-in-the-net-framework"></a>.NET Framework에서 사용되지 않는 멤버
 이 문서의 표에는 .NET Framework 4.5 이상 버전에서 사용되지 않은 형식 멤버가 어셈블리별로 구성되어 있습니다. 각 어셈블리에서 사용되지 않는 멤버 목록과 권장되는 대체 항목을 확인하려면 다음 링크를 사용합니다. 사용되지 않는 형식의 멤버는 이 항목에 나열되지 않습니다. 사용되지 않는 형식 목록은 [사용되지 않는 형식](../../../docs/framework/whats-new/obsolete-types.md)을 참조하세요.  

@@ -4,12 +4,12 @@ description: '컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/08/2018
-ms.openlocfilehash: 723719b22c1c7de63f19f68acf91e6499c1a4e43
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: 94239fc30292760b2bb28849f8c6ab72c7ceb33d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37875185"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144730"
 ---
 # <a name="handling-partial-failure"></a>부분 실패 처리
 
@@ -39,7 +39,6 @@ ms.locfileid: "37875185"
 
 또한 마이크로 서비스 및 클라이언트 응용 프로그램을 디자인하여 부분 실패를 처리하는 것이 중요합니다. 즉, 복원력 있는 마이크로 서비스 및 클라이언트 응용 프로그램을 구축하는 것입니다. 
 
-
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](partial-failure-strategies.md)
+>[이전](index.md)
+>[다음](partial-failure-strategies.md)

@@ -4,12 +4,12 @@ description: API 게이트웨이 패턴과 클라이언트-마이크로 서비�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: 36b95f8b6308773dbb49cc68e4f8e2099bdd1ff0
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: c0c98733271e74e119373fe359b9aa6121930a40
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297315"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152645"
 ---
 # <a name="the-api-gateway-pattern-versus-the-direct-client-to-microservice-communication"></a>API 게이트웨이 패턴과 클라이언트-마이크로 서비스 간 직접 통신
 
@@ -194,5 +194,5 @@ Azure API Management를 통해 키, 토큰 및 IP 필터링을 사용하여 API�
   [*https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
 
 >[!div class="step-by-step"]
-[이전](identify-microservice-domain-model-boundaries.md)
-[다음](communication-in-microservice-architecture.md)
+>[이전](identify-microservice-domain-model-boundaries.md)
+>[다음](communication-in-microservice-architecture.md)

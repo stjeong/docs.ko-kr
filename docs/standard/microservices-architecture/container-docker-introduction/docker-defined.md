@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 08/31/2018
-ms.openlocfilehash: 63f3714fce317d915b65075922b323f2aa5061f0
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0493e7c08a742abed26ff00ce84b9d77da73ea63
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50185929"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153867"
 ---
 # <a name="what-is-docker"></a>Docker란?
 
@@ -83,5 +83,5 @@ Docker에서 각 계층은 프로그램 설치 등의 명령을 실행한 후 �
 마찬가지로 컨테이너는 이미지 하드 디스크가 설치된 “컴퓨터”로 생각할 수 있습니다. 컴퓨터처럼 컨테이너의 전원을 켜거나 끌 수 있습니다.
 
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](docker-terminology.md)
+>[이전](index.md)
+>[다음](docker-terminology.md)

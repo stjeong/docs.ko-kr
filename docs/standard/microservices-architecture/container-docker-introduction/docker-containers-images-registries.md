@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 용용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 08/31/2018
-ms.openlocfilehash: 651da766bc5931f5afa06699d1ec11fa40147e82
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: f10d7d03bbf88ed8f7a89a5d3919a39b3c124ae0
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45678271"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53130236"
 ---
 # <a name="docker-containers-images-and-registries"></a>Docker 컨테이너, 이미지 및 레지스트리
 
@@ -34,5 +34,5 @@ Docker를 사용할 때, 개발자는 앱 또는 서비스를 만들고 컨테�
 -   이미지와 선택한 배포 환경 사이에는 최소 네트워크 대기 시간이 요구됩니다. 예를 들어, 프로덕션 환경이 Azure 클라우드인 경우 [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)에 이미지를 저장하여 네트워크 대기 시간을 최소화할 수 있습니다. 프로덕션 환경이 동일한 로컬 네트워크 내에서 사용 가능한 온-프레미스 Docker Trusted Registry인 경우에도 마찬가지입니다.
 
 >[!div class="step-by-step"]
-[이전](docker-terminology.md)
-[다음](../net-core-net-framework-containers/index.md)
+>[이전](docker-terminology.md)
+>[다음](../net-core-net-framework-containers/index.md)

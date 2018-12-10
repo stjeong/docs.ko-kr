@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 12/11/2017
-ms.openlocfilehash: 62d4e9a26710a5c4b191287bf76192972f7e991b
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 35f6d773d714878f56a5e9151320072ebcd51e06
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106543"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145977"
 ---
 # <a name="health-monitoring"></a>상태 모니터링
 
@@ -196,5 +196,5 @@ Azure Service Fabric을 사용하는 경우 단순한 상태 검사보다 더 �
     [*https://www.microsoft.com/en-us/cloud-platform/operations-management-suite*](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite)
 
 >[!div class="step-by-step"]
-[이전](implement-circuit-breaker-pattern.md)
-[다음](../secure-net-microservices-web-applications/index.md)
+>[이전](implement-circuit-breaker-pattern.md)
+>[다음](../secure-net-microservices-web-applications/index.md)

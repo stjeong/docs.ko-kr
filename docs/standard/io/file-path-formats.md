@@ -2,18 +2,21 @@
 title: Windows 시스템의 파일 경로 형식
 ms.date: 06/28/2018
 ms.technology: dotnet-standard
+dev_langs:
+- csharp
+- vb
 helpviewer_keywords:
 - I/O, long paths
 - long paths
 - path formats, Windows
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1b79ff1991f1d9b803b0c35b4ae9565f70de0b56
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: 1ac96ac86fb3ebf35af9176a025f0a5f71451f88
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296830"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144860"
 ---
 # <a name="file-path-formats-on-windows-systems"></a>Windows 시스템의 파일 경로 형식
 
@@ -203,30 +206,14 @@ Windows 이외의 사용자와 개발자가 혼동을 일으키는 Windows 파�
 ```csharp
 Directory.Create("TeStDiReCtOrY");
 ```
+
+```vb
+Directory.Create("TeStDiReCtOrY")
+```
+
 TeStDiReCtOrY라는 디렉터리를 생성합니다. 해당 대/소문자를 변경하기 위해 디렉터리 또는 파일을 이름 변경하는 경우, 디렉터리 또는 파일 이름은 이름 변경할 당시에 사용한 문자열의 대/소문자를 반영합니다. 예를 들어 다음 코드는 test.txt라는 파일을 Test.txt로 이름 변경합니다.
 
-```csharp
-using System;
-using System.IO;
-
-class Example
-{
-   public static void Main()
-   {
-      var fi = new FileInfo(@".\test.txt");
-      fi.MoveTo(@".\Test.txt");
-   }
-}
-``` 
-```vb
-Imports System.IO
-
-Module Example
-   Public Sub Main()
-      Dim fi As New FileInfo(".\test.txt")
-      fi.MoveTo(".\Test.txt")
-   End Sub
-End Module
-```
+[!code-csharp[case-and-renaming](~/samples/snippets/standard/io/file-names/cs/rename.cs)]
+[!code-vb[case-and-renaming](~/samples/snippets/standard/io/file-names/vb/rename.vb)]
 
 그러나 디렉터리 및 파일 이름 비교는 대/소문자를 구분하지 않습니다. "test.txt"라는 파일을 검색하는 경우, .NET 파일 시스템 API는 비교 시 대/소문자를 무시합니다. Test.txt, TEST.TXT, test.TXT 및 다른 어떤 대/소문자 조합도 "test.txt"와 일치합니다.

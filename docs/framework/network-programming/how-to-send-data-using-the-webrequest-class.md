@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Sending data to a host, using WebRequest class
 ms.assetid: 66686878-38ac-4aa6-bf42-ffb568ffc459
 ms.openlocfilehash: 1f10c5e0c6c266b7b31d658ec561bd8d6d85697b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192657"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129469"
 ---
 # <a name="how-to-send-data-using-the-webrequest-class"></a>방법: WebRequest 클래스를 사용하여 데이터 보내기
 다음 프로시저에서는 서버에 데이터를 보내는 데 사용되는 단계를 설명합니다. 이 프로시저는 일반적으로 웹 페이지에 데이터를 게시하는 데 사용됩니다.  
@@ -156,7 +156,7 @@ ms.locfileid: "50192657"
     response.Close()  
     ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp  
 using System;  

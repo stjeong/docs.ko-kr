@@ -4,12 +4,12 @@ description: .NET 라이브러리에 강력한 이름을 지정하는 모범 사
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/16/2018
-ms.openlocfilehash: 6f5743c7a8c6fdbdcdcf3aa80d2f92f2e04621f2
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 99905a795c4cdb3c79884716b39ed4e38cfe39d6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201454"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129001"
 ---
 # <a name="strong-naming"></a>강력한 이름 지정
 
@@ -71,5 +71,5 @@ ms.locfileid: "50201454"
 > 두 패키지를 게시하면 개발자 에코시스템이 포크됩니다. 또한 응용 프로그램이 두 패키지에 모두 종속하게 되면 개발자가 형식 이름 충돌을 발견할 수 있습니다. 적어도 .NET의 경우 어셈블리마다 형식이 다릅니다.
 
 >[!div class="step-by-step"]
-[이전](./cross-platform-targeting.md)
-[다음](./nuget.md)
+>[이전](cross-platform-targeting.md)
+>[다음](nuget.md)

@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 7b2981579f28c083a31d7af6ae42f4e3ca8bbd88
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 53202d0f890df040480b9f54c54aaefdd025dffa
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105503"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149568"
 ---
 # <a name="about-authorization-in-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 응용 프로그램의 권한 부여 정보
 
@@ -125,9 +125,6 @@ DateOfBirth 클레임에 따라 사용자의 연령을 확인하기 위한 사�
 -   **사용자 지정 정책 기반 권한 부여**
     [*https://docs.microsoft.com/aspnet/core/security/authorization/policies*](https://docs.microsoft.com/aspnet/core/security/authorization/policies)
 
-
-
-
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](developer-app-secrets-storage.md)
+>[이전](index.md)
+>[다음](developer-app-secrets-storage.md)

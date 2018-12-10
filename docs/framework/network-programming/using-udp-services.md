@@ -18,11 +18,11 @@ helpviewer_keywords:
 - application protocols, UDP
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
 ms.openlocfilehash: 40cf14936fef7c29f00112a143203ced605f482b
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296817"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126565"
 ---
 # <a name="using-udp-services"></a>UDP 서비스 사용
 <xref:System.Net.Sockets.UdpClient> 클래스는 UDP를 사용하여 네트워크 서비스와 통신합니다. <xref:System.Net.Sockets.UdpClient> 클래스의 속성 및 메서드는 UDP를 사용하여 데이터를 요청 및 수신하는 <xref:System.Net.Sockets.Socket>을 만들기 위한 세부 정보를 추상화합니다.

@@ -3,12 +3,12 @@ title: C# 프로그램 구조 - C# 언어 둘러보기
 description: C# 프로그램의 기본 구성 요소에 대해 알아보기
 ms.date: 08/10/2016
 ms.assetid: 984f0314-507f-47a0-af56-9011243f5e65
-ms.openlocfilehash: 9efd2542d449da5ddcd9d3170c2e598282a34c39
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: de10cd000b4028a66ce6dd6f21e39c013e38ecd2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34565753"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53131029"
 ---
 # <a name="program-structure"></a>프로그램 구조
 
@@ -52,5 +52,5 @@ csc /r:acme.dll example.cs
 C#은 프로그램의 소스 텍스트가 여러 소스 파일에 저장되도록 허용합니다. 다중 파일 C# 프로그램이 컴파일되면 모든 소스 파일이 함께 처리되고 소스 파일은 서로 자유롭게 참조될 수 있습니다. 개념적으로는 마치 모든 소스 파일이 처리되기 전에 하나의 큰 파일로 연결되는 것처럼 보입니다. 극소수의 경우를 제외하고 선언 순서는 중요하지 않으므로 C#에서는 정방향 선언이 절대 필요하지 않습니다. C#은 소스 파일을 하나의 공용 형식만 선언하도록 제한하거나 소스 파일 이름이 소스 파일에 선언된 형식과 일치하도록 요구하지 않습니다.
 
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](types-and-variables.md)
+>[이전](index.md)
+>[다음](types-and-variables.md)

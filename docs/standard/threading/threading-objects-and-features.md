@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1ba47ece16c74555b58780733e14de9833718c33
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 9a355c2e996ddb00dad804dfeb22987923d91aa6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873309"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144522"
 ---
 # <a name="threading-objects-and-features"></a>스레딩 개체 및 기능
 
@@ -26,8 +26,6 @@ ms.locfileid: "48873309"
 |[동기화 기본 형식 개요](overview-of-synchronization-primitives.md)|공유 리소스에 대한 액세스를 동기화하거나 스레드 상호 작용을 제어하는 데 사용할 수 있는 형식을 설명합니다.|
 |[EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|신호 전송 및 신호 대기를 통해 스레드 작업을 동기화하는 데 사용되는 관리되는 이벤트 대기 핸들을 설명합니다.|
 |[뮤텍스](mutexes.md)|공유 리소스에 대한 배타적 액세스 권한을 부여하는 <xref:System.Threading.Mutex?displayProperty=nameWithType>에 대해 설명합니다.|
-|[연동 작업](interlocked-operations.md)|다중 스레드에서 공유하는 변수에 대한 원자 단위 연산을 제공하는 <xref:System.Threading.Interlocked?displayProperty=nameWithType> 클래스를 설명합니다.|
-|[판독기 및 작성기 잠금](reader-writer-locks.md)|공유 리소스에 대한 단일 작성기/다중 판독기 액세스 권한을 제공하는 <xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> 클래스를 설명합니다.|
 |[세마포 및 SemaphoreSlim](semaphore-and-semaphoreslim.md)|공유 리소스 또는 리소스 풀에 동시에 액세스할 수 있는 스레드 수를 제한하는 <xref:System.Threading.Semaphore?displayProperty=nameWithType> 클래스를 설명합니다.|
 |[장벽](barrier.md)|단계별 작업에서 스레드를 조정하기 위해 장벽 패턴을 구현하는 <xref:System.Threading.Barrier?displayProperty=nameWithType> 클래스를 설명합니다.|
 |[스핀 잠금](spinlock.md)|특정 하위 수준 잠금 시나리오의 <xref:System.Threading.Monitor?displayProperty=nameWithType> 클래스에 대한 간단한 대체 항목인 <xref:System.Threading.SpinLock?displayProperty=nameWithType> 구조체를 설명합니다.|

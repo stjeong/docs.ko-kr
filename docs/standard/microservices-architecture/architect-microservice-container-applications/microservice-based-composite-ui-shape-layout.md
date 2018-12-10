@@ -4,12 +4,12 @@ description: 마이크로 서비스 아키텍처 백 엔드에 대해서만은 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: 597927b8eb5463fd3acc651d854404edc24ed96e
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: 95f6c9dca62f3c524a6530b344daaebb118040b9
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296479"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126040"
 ---
 # <a name="creating-composite-ui-based-on-microservices"></a>마이크로 서비스 기반 복합 UI 만들기
 
@@ -57,5 +57,5 @@ ms.locfileid: "52296479"
   [*https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html*](https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html)
 
 >[!div class="step-by-step"]
-[이전](microservices-addressability-service-registry.md)
-[다음](resilient-high-availability-microservices.md)
+>[이전](microservices-addressability-service-registry.md)
+>[다음](resilient-high-availability-microservices.md)

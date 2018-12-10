@@ -6,11 +6,11 @@ helpviewer_keywords:
 - unsafe buffers [C#]
 - unsafe code [C#], fixed size buffers
 ms.openlocfilehash: 134a219acd02caa2b16c5a6e8716c3245579ecca
-ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744004"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53148515"
 ---
 # <a name="fixed-size-buffers-c-programming-guide"></a>고정 크기 버퍼(C# 프로그래밍 가이드)
 

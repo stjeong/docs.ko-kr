@@ -4,12 +4,12 @@ description: 참조 반환 및 참조 로컬 값을 정의하고 사용하는 �
 author: rpetrusha
 ms.author: ronpet
 ms.date: 04/04/2018
-ms.openlocfilehash: ca518b124bc95a5bc3a2910d9c3d9e5338e1b464
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6399079e17a53ac5bf283eaa5c799964360350f4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193762"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146068"
 ---
 # <a name="ref-returns-and-ref-locals"></a>참조 반환 및 참조 로컬
 
@@ -125,4 +125,4 @@ refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to differe
 ## <a name="see-also"></a>참고 항목
 
 - [ref 키워드](../../language-reference/keywords/ref.md)  
-- [안전하고 효율적인 코드 작성](../../../csharp/write-safe-efficient-code.md)
+- [안전하고 효율적인 코드 작성](../../write-safe-efficient-code.md)

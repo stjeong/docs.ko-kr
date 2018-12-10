@@ -4,12 +4,12 @@ description: 기존 .NET Framework 콘솔 응용 프로그램을 가져와 Windo
 author: spboyer
 ms.date: 09/28/2016
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
-ms.openlocfilehash: bf21357efc234ea99836b190ce34c70f2644ea6a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 379e0814d7d254935ef23a483d5e0f9163babcd1
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200576"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145282"
 ---
 # <a name="running-console-applications-in-windows-containers"></a>Windows 컨테이너에서 콘솔 응용 프로그램 실행
 
@@ -59,7 +59,7 @@ Windows 컨테이너를 지원하려면 Windows용 Docker 버전 1.12 베타 26 
 
 `Invoke-MSBuild` 호출에서 `OutputPath`는 **publish**로 설정되고 `Configuration`은 **릴리스**로 설정됩니다. 
 
-```
+```powershell
 function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
     Invoke-Expression "$MSBuildPath $MSBuildParameters"
 }
@@ -133,7 +133,7 @@ docker run --rm console-random-answer-generator "Are you a square container?"
 
 실행하려면 PowerShell을 열고 다음 명령을 사용합니다.
 
-```
+```powershell
 .\run.ps1 "Is this easy or what?"
 ```
 

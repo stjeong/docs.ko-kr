@@ -17,12 +17,12 @@ helpviewer_keywords:
 - join clause [LINQ in C#]
 - group clause [LINQ in C#]
 ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
-ms.openlocfilehash: 8b8237a09b36114f7100c90cee0bd753236789fd
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 60b9e1862c7ffd212f19cdc331930e3b5d120763
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522622"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53131302"
 ---
 # <a name="basic-linq-query-operations-c"></a>기본 LINQ 쿼리 작업(C#)
 이 항목에서는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 식 및 쿼리에서 수행하는 일부 일반적인 작업을 간단히 소개합니다. 자세한 내용은 다음 항목을 참조하세요.  
@@ -90,7 +90,7 @@ ms.locfileid: "43522622"
   
  [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]의 외래 키는 개체 모델에서 항목 컬렉션을 포함하는 속성으로 표현되므로 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]에서는 SQL에서처럼 자주 `join`을 사용할 필요가 없습니다. 예를 들어 `Customer` 개체에는 `Order` 개체의 컬렉션이 포함됩니다. 조인을 수행하지 않고 점 표기법을 사용하여 주문에 액세스합니다.  
   
-```  
+```csharp
 from order in Customer.Orders...  
 ```  
   

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - when keyword [C#]
 ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
-ms.openlocfilehash: a71cbdce256b1c1bd5d101d66f216fb229d70adf
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: ab533bc6b8bcff54774d849510c66ec3436ad3b5
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48844906"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146961"
 ---
  # <a name="when-c-reference"></a>when(C# 참조)
 
@@ -23,10 +23,10 @@ ms.locfileid: "48844906"
 
 ## <a name="when-in-a-catch-statement"></a>`catch` 문의 `when`
 
-C# 6부터, 특정 예외에 대한 처리기를 실행하기 위해 참이 되어야 하는 조건을 지정하기 위해 `catch` 문에서 `When`을 사용할 수 있습니다. 사용되는 구문은 다음과 같습니다.
+C# 6부터, 특정 예외에 대한 처리기를 실행하기 위해 참이 되어야 하는 조건을 지정하기 위해 `catch` 문에서 `when`을 사용할 수 있습니다. 사용되는 구문은 다음과 같습니다.
 
 ```csharp
-catch ExceptionType [e] when (expr)
+catch (ExceptionType [e]) when (expr)
 ```
 여기서 *expr*은 부울 값으로 계산되는 식입니다. `true`가 반환되면 예외 처리기가 실행되고, `false`가 반환되면 실행되지 않습니다. 
 

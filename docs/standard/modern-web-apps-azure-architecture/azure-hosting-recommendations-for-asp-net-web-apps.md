@@ -4,12 +4,12 @@ description: ASP.NET Core 및 Azure를 사용하여 최신 웹 응용 프로그�
 author: ardalis
 ms.author: wiwagn
 ms.date: 06/27/2018
-ms.openlocfilehash: a70cb822c789638ca107b090d1aed2b88ccc6a5d
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 221ea2a9fc154468f16ce09195a0415883ada9df
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404530"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125934"
 ---
 # <a name="azure-hosting-recommendations-for-aspnet-core-web-apps"></a>ASP.NET Core 웹앱에 대한 Azure 호스팅 권장 사항
 
@@ -128,4 +128,4 @@ Azure는 다양한 데이터 저장 옵션을 제공하므로, 응용 프로그�
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>
 
 >[!div class="step-by-step"]
-[이전](development-process-for-azure.md)
+>[이전](development-process-for-azure.md)

@@ -4,12 +4,12 @@ description: .NET 라이브러리의 버전을 관리하는 모범 사례 권장
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
-ms.openlocfilehash: f95c8ade1f91af5c13184b839b327c9397c6fe5a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: bacd3891c2fc15a1084f952ca913cf99b6d087dc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187860"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144561"
 ---
 # <a name="versioning"></a>버전 관리
 
@@ -97,5 +97,5 @@ Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 �
 > SourceLink에서 NuGet 및 소스 제어 메타데이터가 포함된 버전을 자동으로 생성하도록 허용합니다.
 
 >[!div class="step-by-step"]
-[이전](./publish-nuget-package.md)
-[다음](./breaking-changes.md)
+>[이전](publish-nuget-package.md)
+>[다음](breaking-changes.md)

@@ -4,12 +4,12 @@ description: .NET 라이브러리 빌드를 시작합니다.
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
-ms.openlocfilehash: 6377e3fe606bf7603b418decdd0e3f9d2de6a510
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 05466de1469fc765570b8250301e8404cd5df173
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201245"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145727"
 ---
 # <a name="get-started"></a>시작
 
@@ -46,5 +46,5 @@ NuGet.org가 가장 널리 알려지고 사용되는 리포지토리지만, NuGe
 .NET 라이브러리에서 기존 사용자를 위한 안정성과 미래를 위한 혁신 간에 균형을 맞추는 것이 중요합니다. 이전 버전과의 호환성을 유지하면서 새로운 기능을 추가하기 위한, 여러 종류의 호환성이 손상되는 변경 및 전략에 대해 알아봅니다.
 
 >[!div class="step-by-step"]
-[이전](./index.md)
-[다음](./cross-platform-targeting.md)
+>[이전](index.md)
+>[다음](cross-platform-targeting.md)

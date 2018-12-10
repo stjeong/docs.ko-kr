@@ -4,12 +4,12 @@ description: 가능한 HTTP 오류 시나리오를 처리하기 위해 지수 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 06/08/2018
-ms.openlocfilehash: c323b8c4e783ed18c601562cfb25e1ca4986d499
-ms.sourcegitcommit: 59b51cd7c95c75be85bd6ef715e9ef8c85720bac
+ms.openlocfilehash: b7aaad9199bb275f45fd088a6207d707e8e5751c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37878750"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145100"
 ---
 # <a name="explore-custom-http-call-retries-with-exponential-backoff"></a>지수 백오프를 사용하여 사용자 지정 HTTP 호출 다시 시도 탐색
 
@@ -116,7 +116,6 @@ public async Task<Catalog> GetCatalogItems(int page,int take, int? brand, int? t
 이 코드는 개념 증명으로만 적합합니다. 다음 섹션에서는 HttpClientFactory를 사용하여 더 정교하지만 간단하게 사용할 수 있는 방법에 대해 설명합니다.
 HttpClientFactory는 Polly와 같이 입증된 복원력 라이브러리가 있는 .NET Core 2.1부터 사용할 수 있습니다. 
 
-
 >[!div class="step-by-step"]
-[이전](implement-resilient-entity-framework-core-sql-connections.md)
-[다음](use-httpclientfactory-to-implement-resilient-http-requests.md)
+>[이전](implement-resilient-entity-framework-core-sql-connections.md)
+>[다음](use-httpclientfactory-to-implement-resilient-http-requests.md)

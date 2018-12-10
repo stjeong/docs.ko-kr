@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 57c4af55bab9b17da5809f912d7c2d0b76eba40b
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: 31f4807c956a8b4fb9381145f8e9b5eaffafe698
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296713"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149499"
 ---
 # <a name="use-enumeration-classes-instead-of-enum-types"></a>열거형 형식 대신 열거형 클래스 사용하기
 
@@ -125,8 +125,6 @@ public abstract class CardType : Enumeration
 - **SmartEnum**. Ardalis-.NET에서 더 강력한 형식의 스마트한 열거형을 생성하는데 도움을 준 클래스입니다. \
   [*https://www.nuget.org/packages/Ardalis.SmartEnum/*](https://www.nuget.org/packages/Ardalis.SmartEnum/)
 
-
 >[!div class="step-by-step"]
-[이전](implement-value-objects.md)
-[다음](domain-model-layer-validations.md)
-
+>[이전](implement-value-objects.md)
+>[다음](domain-model-layer-validations.md)

@@ -4,11 +4,11 @@ description: C# 대리자를 사용한 런타임에 바인딩 알아보기
 ms.date: 08/10/2016
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884
 ms.openlocfilehash: 2744f774392ef021974535de535b063264ae9a54
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672043"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151280"
 ---
 # <a name="delegates"></a>대리자
 

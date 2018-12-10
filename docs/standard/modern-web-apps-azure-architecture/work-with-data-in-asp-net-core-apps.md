@@ -4,12 +4,12 @@ description: ASP.NET Core 및 Azure를 사용하여 현대식 웹 응용 프로�
 author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
-ms.openlocfilehash: 069bfacd1ae08b5c84d6e304b2f12f18e1eecb22
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: efadf3a0d216197b05d6cd4cfe94ee3eb24bb18e
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49122853"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147176"
 ---
 # <a name="working-with-data-in-aspnet-core-apps"></a>ASP.NET Core 앱에서 데이터 작업
 
@@ -440,5 +440,5 @@ _cache.Get<CancellationTokenSource>("cts").Cancel();
 캐싱은 반복해서 데이터베이스에서 동일한 값을 요청하는 웹 페이지의 성능을 크게 향상시킬 수 있습니다. 캐싱을 적용하기 전에 데이터 액세스 및 페이지 성능을 측정하고, 개선이 필요한 경우에만 캐싱을 적용해야 합니다. 캐싱은 웹 서버 메모리 리소스를 사용하고 응용 프로그램의 복잡성을 증가시키므로 이 기술을 조급하게 활용하지 않는 것이 중요합니다.
 
 >[!div class="step-by-step"]
-[이전](develop-asp-net-core-mvc-apps.md)
-[다음](test-asp-net-core-mvc-apps.md)
+>[이전](develop-asp-net-core-mvc-apps.md)
+>[다음](test-asp-net-core-mvc-apps.md)

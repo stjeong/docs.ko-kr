@@ -5,12 +5,12 @@ author: rlander
 ms.author: mairaw
 ms.date: 04/10/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: f456bbe771608258307673337693c1e8a5c45f39
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 6db1a3f5fd2011a13a28551a38b319995039ab38
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49454371"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153615"
 ---
 # <a name="install-the-net-framework-on-windows-10-and-windows-server-2016"></a>Windows 10 및 Windows Server 2016에 .NET Framework 설치
 
@@ -29,7 +29,7 @@ Windows에서 많은 응용 프로그램을 실행하는 데 .NET Framework가 �
 * [Windows 10 2018년 4월 업데이트](https://www.microsoft.com/software-download/windows10)
 
 > [!div class="button"]
-[.NET Framework 4.7.2 다운로드](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
+> [.NET Framework 4.7.2 다운로드](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
 [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255)는 .NET Framework 4.0~4.7.1용으로 빌드된 응용 프로그램을 실행하는 데 사용될 수 있습니다.
 

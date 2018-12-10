@@ -5,11 +5,11 @@ helpviewer_keywords:
 - pointers [C#], member access
 ms.assetid: 1e998498-8c85-4a78-8ce2-4d8c20f08342
 ms.openlocfilehash: b51239be8da8c45aa2d7f1ff0700884c43c07299
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52671975"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53130848"
 ---
 # <a name="how-to-access-a-member-with-a-pointer-c-programming-guide"></a>방법: 포인터로 멤버에 액세스(C# 프로그래밍 가이드)
 안전하지 않은 컨텍스트에서 선언된 구조체 멤버에 액세스하기 위해 다음 예제에 제시된 멤버 액세스 연산자를 사용할 수 있습니다. 여기에서 `p`는 멤버 `x`가 포함된 [구조체](../../../csharp/language-reference/keywords/struct.md)에 대한 포인터입니다.  
@@ -19,7 +19,7 @@ CoOrds* p = &home;
 p -> x = 25; //member access operator ->  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `x` 및 `y`라는 두 좌표가 포함된 [구조체](../../../csharp/language-reference/keywords/struct.md) `CoOrds`를 선언하고 인스턴스화합니다. 멤버 액세스 연산자 `->`와 인스턴스 `home`에 대한 포인터를 사용하면 `x`와 `y`에 값이 할당됩니다.  
   
 > [!NOTE]

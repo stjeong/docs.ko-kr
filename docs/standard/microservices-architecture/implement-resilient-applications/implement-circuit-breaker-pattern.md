@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 �
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 07/03/2018
-ms.openlocfilehash: b961ebd186953e614658915c7246e1c83c40e7e9
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 08467184f40611888a05c3aa1fa4783b73c6b8ee
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453154"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147269"
 ---
 # <a name="implement-the-circuit-breaker-pattern"></a>회로 차단기 패턴 구현
 
@@ -146,14 +146,11 @@ public class CartController : Controller
 
 마지막으로, `CircuitBreakerPolicy`에 대한 또 다른 가능성은 `Isolate`(회로를 강제로 열고 열려 있는 상태로 유지) 및 `Reset`(회로를 다시 닫음)을 사용하는 것입니다. 이를 사용하여 정책에서 직접 분리 및 재설정을 호출하는 유틸리티 HTTP 엔드포인트를 구성할 수 있습니다.  이러한 HTTP 엔드포인트는 업그레이드 등의 상황에서 다운스트림을 임시 분리하기 위해 프로덕션에서 적절히 안전하게 사용할 수도 있습니다. 또는 오류가 있다고 의심되는 다운스트림 시스템을 보호하기 위해 회로를 수동으로 이동할 수 있습니다.
 
-
 ## <a name="additional-resources"></a>추가 자료
-
 
 -   **회로 차단기 패턴**
     [*https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 
-
 >[!div class="step-by-step"]
-[이전](implement-http-call-retries-exponential-backoff-polly.md)
-[다음](monitor-app-health.md)
+>[이전](implement-http-call-retries-exponential-backoff-polly.md)
+>[다음](monitor-app-health.md)

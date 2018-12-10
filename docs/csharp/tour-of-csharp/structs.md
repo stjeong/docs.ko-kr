@@ -3,12 +3,12 @@ title: C# 구조체 - C# 언어 둘러보기
 description: 구조체라고 하는 C# 값 형식의 기본 사항에 대해 알아보기
 ms.date: 08/10/2016
 ms.assetid: 88a74571-f741-4a31-a2b5-1ccf165535b8
-ms.openlocfilehash: 2b1870713b488f706f5f3a54413461052173bab6
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: 6b165dd040213b33f91d1baf1b0fb4909101666d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49323099"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53142738"
 ---
 # <a name="structs"></a>구조체
 
@@ -35,5 +35,5 @@ ms.locfileid: "49323099"
 이전 예제에는 구조체의 제한 사항 중 두 가지를 집중적으로 보여 줍니다. 첫째, 일반적으로 전체 구조체를 복사하는 것이 개체 참조를 복사하는 것보다 덜 효율적이므로 대입 및 값 매개 변수 전달이 참조 형식보다 덜 경제적일 수 있습니다. 둘째, `in`, `ref` 및 `out` 매개 변수를 제외하고, 구조체에 대한 참조를 만들 수 없으므로 다양한 상황에서 사용하는 것이 불가능합니다.
 
 >[!div class="step-by-step"]
-[이전](classes-and-objects.md)
-[다음](arrays.md)
+>[이전](classes-and-objects.md)
+>[다음](arrays.md)

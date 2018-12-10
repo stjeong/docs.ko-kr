@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이�
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 5738b81c90c886aff48451742881807dc09a9ff9
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: cbe893dcdd71f0ce8bf8a26a8502d6c0b3a0dedb
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863989"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151150"
 ---
 # <a name="using-azure-key-vault-to-protect-secrets-at-production-time"></a>Azure Key Vault를 사용하여 프로덕션 시 비밀 보호
 
@@ -75,5 +75,5 @@ var kvClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(asyn
     [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)
 
 >[!div class="step-by-step"]
-[이전](developer-app-secrets-storage.md)
-[다음](../key-takeaways.md)
+>[이전](developer-app-secrets-storage.md)
+>[다음](../key-takeaways.md)

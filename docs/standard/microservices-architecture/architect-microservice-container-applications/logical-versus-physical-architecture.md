@@ -4,12 +4,12 @@ description: 논리적 및 물리적 아키텍처 사이의 차이점 이해하�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: fe3833a4b65317e2ebbeb562e19b473ff0374ddd
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: e8ed375899637d06db8eb9b12a0e1cb0c05591f9
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296128"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129924"
 ---
 # <a name="logical-architecture-versus-physical-architecture"></a>논리적 아키텍처 대 물리적 아키텍처
 
@@ -36,5 +36,5 @@ ms.locfileid: "52296128"
 즉, 마이크로 서비스의 논리적 아키텍처가 항상 물리적 배포 아키텍처와 일치하지는 않습니다. 이 가이드에서는 마이크로 서비스에 대해 언급할 때마다 하나 이상의 물리적 서비스에 매핑될 수 있는 비즈니스 또는 논리적 마이크로 서비스를 의미합니다. 대부분의 사례에서 이것은 단일 서비스이지만 더 많을 수도 있습니다.
 
 >[!div class="step-by-step"]
-[이전](data-sovereignty-per-microservice.md)
-[다음](distributed-data-management.md)
+>[이전](data-sovereignty-per-microservice.md)
+>[다음](distributed-data-management.md)
