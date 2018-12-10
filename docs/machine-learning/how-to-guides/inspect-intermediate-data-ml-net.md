@@ -4,21 +4,21 @@ description: ML.NET 기계 학습 파이프라인을 처리하는 동안 실제 
 ms.date: 11/07/2018
 ms.custom: mvc,how-to
 ms.openlocfilehash: cd229c120f7599c9a304a84a1669947e613fc917
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297590"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151540"
 ---
-# <a name="inspect-intermediate-data-values-during-mlnet-pipeline-processing"></a><span data-ttu-id="71ac8-103">ML.NET 파이프라인을 처리하는 동안 중간 데이터 값 검사</span><span class="sxs-lookup"><span data-stu-id="71ac8-103">Inspect intermediate data values during ML.NET pipeline processing</span></span>
+# <a name="inspect-intermediate-data-values-during-mlnet-pipeline-processing"></a><span data-ttu-id="56055-103">ML.NET 파이프라인을 처리하는 동안 중간 데이터 값 검사</span><span class="sxs-lookup"><span data-stu-id="56055-103">Inspect intermediate data values during ML.NET pipeline processing</span></span>
 
-<span data-ttu-id="71ac8-104">실험 중에 지정된 지점에서 데이터 처리 결과를 관찰하고 확인하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="71ac8-104">During the experiment, you may want to observe and validate the data processing results at a given point.</span></span> <span data-ttu-id="71ac8-105">ML.NET 작업이 지연되어 데이터의 '프라미스'인 개체를 생성하는 것이 쉽지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="71ac8-105">This isn't easy since ML.NET operations are lazy, constructing objects that are 'promises' of data.</span></span>
+<span data-ttu-id="56055-104">실험 중에 지정된 지점에서 데이터 처리 결과를 관찰하고 확인하려고 합니다.</span><span class="sxs-lookup"><span data-stu-id="56055-104">During the experiment, you may want to observe and validate the data processing results at a given point.</span></span> <span data-ttu-id="56055-105">ML.NET 작업이 지연되어 데이터의 '프라미스'인 개체를 생성하는 것이 쉽지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="56055-105">This isn't easy since ML.NET operations are lazy, constructing objects that are 'promises' of data.</span></span>
 
-<span data-ttu-id="71ac8-106">`GetColumn<T>` 확장 메서드를 사용하면 중간 데이터를 검사할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="71ac8-106">The `GetColumn<T>` extension method lets you inspect the intermediate data.</span></span> <span data-ttu-id="71ac8-107">그러면 한 데이터 열의 콘텐츠를 `IEnumerable`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="71ac8-107">It returns the contents of one data column as an `IEnumerable`.</span></span>
+<span data-ttu-id="56055-106">`GetColumn<T>` 확장 메서드를 사용하면 중간 데이터를 검사할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="56055-106">The `GetColumn<T>` extension method lets you inspect the intermediate data.</span></span> <span data-ttu-id="56055-107">그러면 한 데이터 열의 콘텐츠를 `IEnumerable`로 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="56055-107">It returns the contents of one data column as an `IEnumerable`.</span></span>
 
-<span data-ttu-id="71ac8-108">다음 예제에서는 `GetColumn<T>` 확장 메서드를 사용하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="71ac8-108">The following example shows how to use the `GetColumn<T>` extension method:</span></span>
+<span data-ttu-id="56055-108">다음 예제에서는 `GetColumn<T>` 확장 메서드를 사용하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="56055-108">The following example shows how to use the `GetColumn<T>` extension method:</span></span>
 
-<span data-ttu-id="71ac8-109">[예제 파일](https://github.com/dotnet/machinelearning/tree/master/test/data/adult.tiny.with-schema.txt):</span><span class="sxs-lookup"><span data-stu-id="71ac8-109">[Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/adult.tiny.with-schema.txt):</span></span>
+<span data-ttu-id="56055-109">[예제 파일](https://github.com/dotnet/machinelearning/tree/master/test/data/adult.tiny.with-schema.txt):</span><span class="sxs-lookup"><span data-stu-id="56055-109">[Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/adult.tiny.with-schema.txt):</span></span>
 ```
 Label   Workclass   education   marital-status
 0   Private 11th    Never-married
@@ -28,7 +28,7 @@ Label   Workclass   education   marital-status
 
 ```
 
-<span data-ttu-id="71ac8-110">클래스는 다음과 같이 정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="71ac8-110">Our class is defined as follows:</span></span>
+<span data-ttu-id="56055-110">클래스는 다음과 같이 정의됩니다.</span><span class="sxs-lookup"><span data-stu-id="56055-110">Our class is defined as follows:</span></span>
 
 ```csharp
 private class InspectedRow
