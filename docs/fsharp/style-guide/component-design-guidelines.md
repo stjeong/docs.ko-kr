@@ -74,7 +74,7 @@ type Point =
 |-----------|------|------|----------|-------|
 | 구체적인 형식 | PascalCase | 명사 adjective / | 목록, Double, 복잡 한 | 구체적인 형식은 구조체, 클래스, 열거형, 대리자, 레코드 및 공용 구조체입니다. 형식 이름은 일반적으로 OCaml에서 소문자 있지만 F# 는 형식에 대 한.NET 명명 체계를 채택 했습니다.
 | DLL           | PascalCase |                 | Fabrikam.Core.dll |  |
-| 공용 구조체 태그     | PascalCase | 명사 | 일부 추가, 성공 | 공용 Api에서 접두사를 사용 하지 마세요. 필요에 따라 내부와 같은 경우에 접두사를 사용 하 여 ' 팀 입력 TAlpha = | TBeta | 생성 합니다.' |
+| 공용 구조체 태그     | PascalCase | 명사 | 일부 추가, 성공 | 공용 Api에서 접두사를 사용 하지 마세요. 필요에 따라 내부와 같은 경우에 접두사를 사용 하 여 `팀 입력 TAlpha = | TBeta | 생성 합니다` |
 | 이벤트          | PascalCase | 동사 | ValueChanged / ValueChanging |  |
 | 예외     | PascalCase |      | WebException | 이름을 "Exception" 끝나야 합니다. |
 | 필드          | PascalCase | 명사 | CurrentName  | |
