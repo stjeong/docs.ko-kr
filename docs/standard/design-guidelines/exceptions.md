@@ -1,6 +1,6 @@
 ---
 title: 예외 디자인 지침
-ms.date: 03/30/2017
+ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - exceptions [.NET Framework], design guidelines
@@ -8,26 +8,25 @@ helpviewer_keywords:
 - errors [.NET Framework], exceptions
 - reporting errors
 ms.assetid: bc177b2f-7528-4ae4-83db-aacfb04b86d0
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 51cc5296a7b3f6d75b5e56d6bbc74330fa147848
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+author: KrzysztofCwalina
+ms.openlocfilehash: 60c3d25138c224f5eabf44d06b6c9a8373eb5f96
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030657"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153199"
 ---
-# <a name="design-guidelines-for-exceptions"></a><span data-ttu-id="f3269-102">예외 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="f3269-102">Design Guidelines for Exceptions</span></span>
-<span data-ttu-id="f3269-103">예외 처리에는 반환 값에 따라 오류 보고를 통해 많은 이점이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f3269-103">Exception handling has many advantages over return-value-based error reporting.</span></span> <span data-ttu-id="f3269-104">좋은 프레임 워크로 디자인 예외의 이점을 응용 프로그램 개발자는 데 도움이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f3269-104">Good framework design helps the application developer realize the benefits of exceptions.</span></span> <span data-ttu-id="f3269-105">이 섹션에서는 예외의 장점을 설명 하 고 효과적으로 사용 하는 것에 대 한 지침을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="f3269-105">This section discusses the benefits of exceptions and presents guidelines for using them effectively.</span></span>  
+# <a name="design-guidelines-for-exceptions"></a><span data-ttu-id="0f6fb-102">예외 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="0f6fb-102">Design Guidelines for Exceptions</span></span>
+<span data-ttu-id="0f6fb-103">예외 처리에는 반환 값에 따라 오류 보고를 통해 많은 이점이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0f6fb-103">Exception handling has many advantages over return-value-based error reporting.</span></span> <span data-ttu-id="0f6fb-104">좋은 프레임 워크로 디자인 예외의 이점을 응용 프로그램 개발자는 데 도움이 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0f6fb-104">Good framework design helps the application developer realize the benefits of exceptions.</span></span> <span data-ttu-id="0f6fb-105">이 섹션에서는 예외의 장점을 설명 하 고 효과적으로 사용 하는 것에 대 한 지침을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="0f6fb-105">This section discusses the benefits of exceptions and presents guidelines for using them effectively.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="f3269-106">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="f3269-106">In This Section</span></span>  
- [<span data-ttu-id="f3269-107">예외 throw</span><span class="sxs-lookup"><span data-stu-id="f3269-107">Exception Throwing</span></span>](../../../docs/standard/design-guidelines/exception-throwing.md)  
- [<span data-ttu-id="f3269-108">표준 예외 형식 사용</span><span class="sxs-lookup"><span data-stu-id="f3269-108">Using Standard Exception Types</span></span>](../../../docs/standard/design-guidelines/using-standard-exception-types.md)  
- [<span data-ttu-id="f3269-109">예외 및 성능</span><span class="sxs-lookup"><span data-stu-id="f3269-109">Exceptions and Performance</span></span>](../../../docs/standard/design-guidelines/exceptions-and-performance.md)  
- <span data-ttu-id="f3269-110">*Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*</span><span class="sxs-lookup"><span data-stu-id="f3269-110">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="0f6fb-106">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="0f6fb-106">In This Section</span></span>  
+ [<span data-ttu-id="0f6fb-107">예외 throw</span><span class="sxs-lookup"><span data-stu-id="0f6fb-107">Exception Throwing</span></span>](../../../docs/standard/design-guidelines/exception-throwing.md)  
+ [<span data-ttu-id="0f6fb-108">표준 예외 형식 사용</span><span class="sxs-lookup"><span data-stu-id="0f6fb-108">Using Standard Exception Types</span></span>](../../../docs/standard/design-guidelines/using-standard-exception-types.md)  
+ [<span data-ttu-id="0f6fb-109">예외 및 성능</span><span class="sxs-lookup"><span data-stu-id="0f6fb-109">Exceptions and Performance</span></span>](../../../docs/standard/design-guidelines/exceptions-and-performance.md)  
+ <span data-ttu-id="0f6fb-110">*Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*</span><span class="sxs-lookup"><span data-stu-id="0f6fb-110">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>  
   
- <span data-ttu-id="f3269-111">*Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span><span class="sxs-lookup"><span data-stu-id="f3269-111">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>  
+ <span data-ttu-id="0f6fb-111">*사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*</span><span class="sxs-lookup"><span data-stu-id="0f6fb-111">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f3269-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="f3269-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0f6fb-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0f6fb-112">See also</span></span>
 
-- [<span data-ttu-id="f3269-113">프레임워크 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="f3269-113">Framework Design Guidelines</span></span>](../../../docs/standard/design-guidelines/index.md)
+- [<span data-ttu-id="0f6fb-113">프레임워크 디자인 지침</span><span class="sxs-lookup"><span data-stu-id="0f6fb-113">Framework Design Guidelines</span></span>](../../../docs/standard/design-guidelines/index.md)
