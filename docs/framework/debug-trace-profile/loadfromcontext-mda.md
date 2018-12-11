@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e1ba65194c49f76bb5c29ed28b1b038c02cf1a59
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3ee575cacbc51fc910770cca145a4280f97b66db
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33393083"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144440"
 ---
 # <a name="loadfromcontext-mda"></a>loadFromContext MDA
 `loadFromContext` MDA(관리 디버깅 도우미)는 어셈블리가 `LoadFrom` 컨텍스트에 로드되면 활성화됩니다. 이 상황은 <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>을 호출하거나 비슷한 메서드를 호출한 결과 발생할 수 있습니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "33393083"
 ## <a name="output"></a>출력  
  MDA는 어셈블리가 `LoadFrom` 컨텍스트에 로드되었음을 보고합니다. 어셈블리의 단순한 이름과 경로를 지정합니다. `LoadFrom` 컨텍스트를 사용하지 못하게 완화하도록 제안합니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -55,7 +55,7 @@ ms.locfileid: "33393083"
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 이 MDA를 활성화할 수 있는 상황을 보여 줍니다.  
   
-```  
+```csharp
 using System.Reflection;  
 namespace ConsoleApplication1  
 {  

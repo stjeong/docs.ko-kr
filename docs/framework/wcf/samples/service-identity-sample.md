@@ -3,11 +3,11 @@ title: Service Identity 샘플
 ms.date: 03/30/2017
 ms.assetid: 79fa8c1c-85bb-4b67-bc67-bfaf721303f8
 ms.openlocfilehash: 341e4922089634c3e46929d6cdb474b2dfbd0666
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49633913"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152732"
 ---
 # <a name="service-identity-sample"></a>Service Identity 샘플
 이 Service Identity 샘플에서는 서비스의 ID를 설정하는 방법을 보여 줍니다. 클라이언트는 디자인 타임에 서비스의 메타데이터를 사용하여 ID를 검색한 다음 런타임에 서비스의 ID를 인증할 수 있습니다. 서비스 ID의 개념을 사용하면 클라이언트가 작업을 호출하기 전에 서비스를 인증함으로써 인증되지 않은 호출로부터 클라이언트를 보호할 수 있습니다. 보안 연결에서는 또한 서비스가 클라이언트의 액세스를 허용하기 전에 클라이언트의 자격 증명을 인증하는데, 이 부분은 샘플에서 다루지 않습니다. 샘플을 참조 하세요 [클라이언트](../../../../docs/framework/wcf/samples/client.md) 서버 인증을 보여 줍니다.
@@ -115,7 +115,7 @@ class CustomIdentityVerifier : IdentityVerifier
 
 ### <a name="to-run-the-sample-on-the-same-computer"></a>단일 컴퓨터 구성에서 샘플을 실행하려면
 
-1.  [!INCLUDE[wxp](../../../../includes/wxp-md.md)] 또는 [!INCLUDE[wv](../../../../includes/wv-md.md)]에서 MMC 스냅인 도구를 사용하여 ID 솔루션 폴더의 Identity.pfx 인증서 파일을 LocalMachine/My(개인) 인증서 저장소로 가져옵니다. 이 파일은 암호로 보호됩니다. 가져오는 동안 암호를 묻는 메시지가 나타납니다. 형식 `xyz` 암호 상자에 있습니다. 자세한 내용은 참조는 [방법: MMC 스냅인을 사용 하 여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md) 항목입니다. 이 작업을 마쳤으면 관리자 권한으로 Visual Studio 명령 프롬프트를 열고 Setup.bat를 실행하여 이 인증서를 CurrentUser/Trusted People 저장소로 복사하여 클라이언트에서 사용할 수 있게 합니다.
+1.  [!INCLUDE[wxp](../../../../includes/wxp-md.md)] 또는 [!INCLUDE[wv](../../../../includes/wv-md.md)]에서 MMC 스냅인 도구를 사용하여 ID 솔루션 폴더의 Identity.pfx 인증서 파일을 LocalMachine/My(개인) 인증서 저장소로 가져옵니다. 이 파일은 암호로 보호됩니다. 가져오는 동안 암호를 묻는 메시지가 나타납니다. 형식 `xyz` 암호 상자에 있습니다. 자세한 내용은 참조는 [방법: MMC 스냅인을 사용 하 여 인증서를 보려면](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md) 항목입니다. 이 작업을 마쳤으면 관리자 권한으로 Visual Studio 명령 프롬프트를 열고 Setup.bat를 실행하여 이 인증서를 CurrentUser/Trusted People 저장소로 복사하여 클라이언트에서 사용할 수 있게 합니다.
 
 2.  [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], 관리자 권한으로 Visual Studio 2012 명령 프롬프트에서 샘플 설치 폴더에서 Setup.bat를 실행 합니다. 이 작업은 샘플 실행에 필요한 모든 인증서를 설치합니다.
 
@@ -157,6 +157,6 @@ class CustomIdentityVerifier : IdentityVerifier
 -   샘플 실행을 완료했으면 샘플 폴더에서 Cleanup.bat를 실행합니다.  
   
     > [!NOTE]
-    >  다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하는 Windows Communication Foundation (WCF) 샘플을 실행 하는 경우에 CurrentUser-TrustedPeople 저장소에에서 설치 된 서비스 인증서를 선택 취소 해야 합니다. 이를 수행하려면 `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 명령을 사용합니다(예: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`).
+    >  다중 컴퓨터 구성에서 이 샘플을 실행할 경우에는 이 스크립트로 클라이언트의 서비스 인증서를 제거할 수 없습니다. 컴퓨터 인증서를 사용 하는 Windows Communication Foundation (WCF) 샘플을 실행 하는 경우에 CurrentUser-TrustedPeople 저장소에에서 설치 된 서비스 인증서를 선택 취소 해야 합니다. 이 작업을 수행 하려면 다음 명령을 사용 합니다. `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` 예를 들어: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`합니다.
 
 ## <a name="see-also"></a>참고 항목

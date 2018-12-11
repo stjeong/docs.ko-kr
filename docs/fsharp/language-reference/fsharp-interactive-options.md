@@ -2,17 +2,17 @@
 title: F# Interactive 옵션
 description: 지 원하는 명령줄 옵션에 알아보려면 F# Interactive, fsi.exe 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: a461dd0eeff2de3d15e557ba37138fbd62ca43ba
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: cca1ef6671878acb1b837d6590139d5de7b7167d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "33565807"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128156"
 ---
 # <a name="f-interactive-options"></a>F# Interactive 옵션
 
 > [!NOTE]
-이 문서에서는 현재 Windows만을 위한 환경에 대해 설명합니다.  다시 작성될 예정입니다.
+> 이 문서에서는 현재 Windows만을 위한 환경에 대해 설명합니다.  다시 작성될 예정입니다.
 
 이 항목에서 지 원하는 명령줄 옵션에 설명 합니다 F# 대화형 `fsi.exe`합니다. F#대화형 허용으로 동일한 명령줄 옵션의 대다수는 F# 컴파일러 있지만 사용할 수 있는 몇 가지 추가 옵션이 합니다.
 

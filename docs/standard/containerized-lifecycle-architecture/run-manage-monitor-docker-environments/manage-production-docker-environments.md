@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: 3bafdd9f6a6aa4f850fd28b6315e68c643d1f8c0
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f968b5199f838e35f336dfa8c7d15aa9e5298951
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50202857"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147297"
 ---
 # <a name="manage-production-docker-environments"></a>프로덕션 Docker 환경 관리
 
@@ -44,7 +44,6 @@ Azure Virtual Machine Scale Sets를 사용 하 여 이러한 클러스터를 배
 
 -   [Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) 는 insights 및 Service Fabric 클러스터 노드/v m의 관점에서 응용 프로그램 및 서비스의 관점에서 특정 작업을 제공 하는 특수 한 웹 UI 도구입니다.
 
-
 >[!div class="step-by-step"]
-[이전](run-microservices-based-applications-in-production.md)
-[다음](monitor-containerized-application-services.md)
+>[이전](run-microservices-based-applications-in-production.md)
+>[다음](monitor-containerized-application-services.md)

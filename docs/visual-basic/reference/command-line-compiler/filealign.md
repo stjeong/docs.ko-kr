@@ -10,11 +10,11 @@ helpviewer_keywords:
 - filealign compiler option [Visual Basic]
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
 ms.openlocfilehash: db70749f28592ae6711b6d9544f8704af9416490
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181724"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128169"
 ---
 # <a name="-filealign"></a>-filealign
 출력 파일의 섹션에 맞출 위치를 지정합니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "50181724"
   
 ## <a name="arguments"></a>인수  
  `number`  
- 필수. 출력 파일의 섹션 맞춤을 지정 하는 값입니다. 유효한 값은 512, 1024, 2048, 4096 및 8192입니다. 이러한 값은 바이트 단위입니다.  
+ 필수 요소. 출력 파일의 섹션 맞춤을 지정 하는 값입니다. 유효한 값은 512, 1024, 2048, 4096 및 8192입니다. 이러한 값은 바이트 단위입니다.  
   
 ## <a name="remarks"></a>설명  
  사용할 수는 `-filealign` 출력 파일의 섹션 맞춤을 지정 하는 옵션입니다. 섹션은 코드 또는 데이터를 포함 하는 PE (이식 가능) 파일의 연속 된 메모리 블록입니다. `-filealign` 옵션 비표준 맞춤을 사용 하 여 응용 프로그램을 컴파일할 수 있습니다; 대부분의 개발자가이 옵션을 사용할 필요가 없습니다.  

@@ -4,12 +4,12 @@ description: 다양 한 일정 및 이벤트 기반 처리 파일 트리거를 �
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 0261b9f17f133942d635cf331d8cef414378bd90
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: cf46c601ac6aa401c7c37bd64c1f8981589ebd2e
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370222"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146714"
 ---
 # <a name="serverless-design-examples"></a>서버 리스 디자인 예제
 
@@ -89,5 +89,5 @@ API 게이트웨이 클라이언트에 대 한 항목의 단일 지점을 제공
 * [변경 피드 지원의 Azure Cosmos DB를 사용 하 여 작업](https://docs.microsoft.com/azure/cosmos-db/change-feed)
 
 >[!div class="step-by-step"]
-[이전](serverless-architecture-considerations.md)
-[다음](azure-serverless-platform.md)
+>[이전](serverless-architecture-considerations.md)
+>[다음](azure-serverless-platform.md)

@@ -3,11 +3,11 @@ title: '연습: SQL 생성'
 ms.date: 03/30/2017
 ms.assetid: 16c38aaa-9927-4f3c-ab0f-81636cce57a3
 ms.openlocfilehash: cbc400671e5194494772580e77316af07b5669ff
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672019"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149044"
 ---
 # <a name="walkthrough-sql-generation"></a>연습: SQL 생성
 이 항목에서는 SQL 생성에서 발생 하는 방법을 보여 줍니다.는 [Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0)합니다. 다음 Entity SQL 쿼리는 샘플 공급자에 포함된 모델을 사용합니다.  
@@ -136,7 +136,7 @@ LEFT OUTER JOIN [dbo].[InternationalOrders] AS [Extent5] ON [Extent4].[OrderID] 
   
  ![Diagram](../../../../../docs/framework/data/adonet/ef/media/1ec61ed3-fcdd-4649-9089-24385be7e423.gif "1ec61ed3-fcdd-4649-9089-24385be7e423")  
   
- Join3에 대해 IsParentAJoin은 false를 반환하고 새 SqlSelectStatement(SelectStatement1)를 시작하여 스택에 제공해야 합니다. 이전의 조인을 처리할 때와 마찬가지로 처리가 계속되며 새 범위가 스택에 제공되고 자식이 처리됩니다. 왼쪽 자식이 익스텐트(Extent3)이고 오른쪽 자식이 조인(Join2)이며, 이 오른쪽 자식 역시 새 SqlSelectStatement(SelectStatement2)를 시작해야 합니다. Join2의 자식도 익스텐트이며 SelectStatement2로 집계됩니다.  
+ Join3에 대해 IsParentAJoin은 false를 반환하고 새 SqlSelectStatement(SelectStatement1)를 시작하여 스택에 제공해야 합니다. 이전의 조인을 처리할 때와 마찬가지로 처리가 계속되며 새 범위가 스택에 제공되고 자식이 처리됩니다. 왼쪽된 자식이 익스텐트 (Extent3) 이며,이 오른쪽 자식 새 SqlSelectStatement를 시작 해야 하는 조인 (Join2): SelectStatement2 합니다. Join2의 자식도 익스텐트이며 SelectStatement2로 집계됩니다.  
   
  Join2를 방문한 직후, 사후 처리(ProcessJoinInputResult)가 수행되기 전의 방문자의 상태가 다음 그림에 표시되어 있습니다.  
   
