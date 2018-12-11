@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f5d106dd3b7b9a7a0aeedca86e63a6fccbb1cc27
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 9572a203336aa32f1a37a834b99bf0dac35c7f1c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44192486"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127929"
 ---
 # <a name="handling-and-raising-events"></a>이벤트 처리 및 발생
 .NET Framework에서 이벤트는 대리자 모델을 기반으로 합니다. 대리자 모델은 구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 관찰자 디자인 패턴을 따릅니다. 이벤트 전송자는 이벤트가 발생했음을 알리고, 이벤트 수신자는 해당 알림을 수신하고 그에 대한 응답을 정의합니다. 이 문서에서는 대리자 모델의 주요 구성 요소, 응용 프로그램에서 이벤트를 사용하는 방법 및 코드에서 이벤트를 구현하는 방법에 대해 설명합니다.  

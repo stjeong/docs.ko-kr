@@ -1,23 +1,25 @@
 ---
-title: csproj 형식으로 .NET Core 마이그레이션
-description: .NET Core project.json을 csproj로 마이그레이션
+title: project.json에서 .NET Core 마이그레이션
+description: project.json을 사용하여 이전 .NET Core 프로젝트를 마이그레이션하는 방법 알아보기
 author: blackdwarf
 ms.author: mairaw
 ms.date: 07/19/2017
-ms.openlocfilehash: da1995ed3b77cb802d1f3d04e6d741809de20927
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 47d9cab48d83581afb9deb2fd91c4c9a6dc85201
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584340"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143287"
 ---
-# <a name="migrating-net-core-projects-to-the-csproj-format"></a>.csproj 형식으로 .NET Core 프로젝트 마이그레이션
+# <a name="migrating-net-core-projects-from-projectjson"></a>project.json에서 .NET Core 프로젝트 마이그레이션
 
 이 문서에서는 .NET Core 프로젝트에 대한 마이그레이션 시나리오를 설명하고 다음 세 가지 마이그레이션 시나리오를 살펴봅니다.
 
 1. [*project.json*의 유효한 스키마에서 *csproj*로 마이그레이션](#migration-from-projectjson-to-csproj)
 2. [DNX에서 csproj로 마이그레이션](#migration-from-dnx-to-csproj)
 3. [RC3 및 이전 .NET Core csproj 프로젝트에서 최종 형식으로 마이그레이션](#migration-from-earlier-net-core-csproj-formats-to-rtm-csproj)
+
+이 문서는 여전히 project.json을 사용하는 이전 .NET Core 프로젝트에만 적용할 수 있습니다. .NET Framework에서 .NET Core로 마이그레이션하는 경우에는 적용할 수 없습니다.
 
 ## <a name="migration-from-projectjson-to-csproj"></a>project.json에서 csproj로 마이그레이션
 

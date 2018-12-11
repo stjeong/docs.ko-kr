@@ -1,17 +1,17 @@
 ---
-title: 컨테이너 및 마이크로 서비스 기반 응용 프로그램 설계
-description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | 컨테이너 및 마이크로 서비스 기반 응용 프로그램 설계
+title: 컨테이너 및 마이크로 서비스 기반 애플리케이션 설계
+description: 컨테이너 및 마이크로 서비스 기반 애플리케이션 설계는 간단한 작업이 아니므로 가볍게 여겨서는 안 됩니다. 이 장에서 핵심 개념을 알아보세요.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
-ms.openlocfilehash: f7933cc25a5fde13113d0c9c278e9bd1730d4f9d
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.date: 09/20/2018
+ms.openlocfilehash: 6b1d5f7f0ab18e4f1d4b5c2200ac0c6f40c701ee
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49085974"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155420"
 ---
-# <a name="architecting-container--and-microservice-based-applications"></a>컨테이너 및 마이크로 서비스 기반 응용 프로그램 설계
+# <a name="architecting-container-and-microservice-based-applications"></a>컨테이너 및 마이크로 서비스 기반 애플리케이션 설계
 
 *마이크로 서비스는 기존 아키텍처에 비해 다양한 이점이 있지만, 해결해야 할 새로운 과제도 있습니다. 마이크로 서비스 아키텍처 패턴은 마이크로 서비스 기반 응용 프로그램을 만들 때 중추적인 역할을 합니다.*
 
@@ -23,13 +23,12 @@ ms.locfileid: "49085974"
 
 컨테이너 모델에서 컨테이너 이미지 인스턴스는 단일 프로세스를 나타냅니다. 컨테이너 이미지를 프로세스 경계로 정의하여 프로세스 크기를 조정하거나 일괄 처리하는 데 사용할 수 있는 기본 형식을 만들 수 있습니다.
 
-컨테이너 이미지를 디자인할 때 Dockerfile에서 [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/) 정의가 표시됩니다. 이는 컨테이너의 수명을 제어하는 수명의 프로세스를 정의합니다. 프로세스가 완료되면 컨테이너 수명 주기가 종료됩니다. 컨테이너는 웹 서버와 같은 장기 실행 프로세스를 나타낼 수 있지만 이전에 Azure [WebJobs](https://docs.microsoft.com/azure/app-service-web/websites-webjobs-resources)로 구현되었을 수 있는 일괄 작업과 같은 단기 실행 프로세스를 나타낼 수도 있습니다.
+컨테이너 이미지를 디자인하는 경우 Dockerfile에 [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) 정의가 표시됩니다. 이는 컨테이너의 수명을 제어하는 수명의 프로세스를 정의합니다. 프로세스가 완료되면 컨테이너 수명 주기가 종료됩니다. 컨테이너는 웹 서버와 같은 장기 실행 프로세스를 나타낼 수 있지만 이전에 Azure [WebJobs](https://github.com/Azure/azure-webjobs-sdk/wiki)로 구현되었을 수 있는 일괄 작업과 같은 단기 실행 프로세스를 나타낼 수도 있습니다.
 
 프로세스에 실패할 경우 컨테이너가 종료되며 조정자가 이어서 프로세스를 진행합니다. 조정자가 5개의 인스턴스는 실행하고 1개는 실패하도록 구성된 경우 조정자는 실패한 프로세스를 바꾸기 위해 다른 컨테이너 인스턴스를 만듭니다. 일괄 작업에서 프로세스는 매개 변수와 함께 시작됩니다. 프로세스가 완료되면 작업이 완료됩니다. 이 설명서의 뒷부분에서는 오케스트레이터에 대해 자세히 설명합니다.
 
-여러 프로세스를 단일 컨테이너에서 실행하려는 시나리오가 발생할 수 있습니다. 이러한 시나리오의 경우 컨테이너 1개당 진입점 1개만 허용되므로 필요에 따라 가능한 한 많은 프로그램을 시작하는 컨테이너에서 스크립트를 실행할 수 있습니다. 예를 들어 [감독자](http://supervisord.org/) 또는 비슷한 도구를 사용하여 단일 컨테이너 내에서 여러 프로세스를 시작하는 것을 관리할 수 있습니다. 그러나 컨테이너당 여러 프로세스를 실행하는 아키텍처를 확인할 수 있을지라도 이러한 접근 방식은 일반적인 방법이 아닙니다.
-
+여러 프로세스를 단일 컨테이너에서 실행하려는 시나리오가 발생할 수 있습니다. 이러한 시나리오의 경우 컨테이너 1개당 진입점 1개만 허용되므로 필요에 따라 가능한 한 많은 프로그램을 시작하는 컨테이너에서 스크립트를 실행할 수 있습니다. 예를 들어 [감독자](http://supervisord.org/) 또는 비슷한 도구를 사용하여 단일 컨테이너 내에서 여러 프로세스를 시작하는 것을 관리할 수 있습니다. 그러나 컨테이너당 여러 프로세스를 실행하는 아키텍처를 확인할 수 있더라도 이러한 접근 방식은 일반적인 방법이 아닙니다.
 
 >[!div class="step-by-step"]
-[이전](../net-core-net-framework-containers/official-net-docker-images.md)
-[다음](containerize-monolithic-applications.md)
+>[이전](../net-core-net-framework-containers/official-net-docker-images.md)
+>[다음](containerize-monolithic-applications.md)

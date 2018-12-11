@@ -5,12 +5,12 @@ author: billwagner
 ms.author: billwagner
 ms.date: 01/24/2018
 ms.technology: dotnet-standard
-ms.openlocfilehash: ec153b8fed08ef245a3a0f58970b4e3955dfacb5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 226482d1d385078811f2b1c5ee138e24287a785e
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33567265"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154335"
 ---
 # <a name="the-roslyn-based-analyzers"></a>Roslyn 기반 분석기
 
@@ -33,5 +33,6 @@ Roslyn 기반 분석기는 프로젝트에서 NuGet 패키지로 설치합니다
 
 이 섹션에서는 다음과 같은 분석기를 다룹니다.
 
-[API 분석기](api-analyzer.md): 이 분석기는 코드에서 잠재적인 호환성 위험이나 더 이상 사용되지 않는 API의 사용이 있는지 검사합니다.    
-[프레임워크 분석기](framework-analyzer.md): 이 분석기는 코드가 .NET Framework 응용 프로그램에 대한 지침을 따르는지 검사합니다. 이러한 규칙에는 여러 보안 기반 권장 사항이 포함됩니다.
+* [API 분석기](api-analyzer.md): 이 분석기는 코드에서 잠재적인 호환성 위험이나 더 이상 사용되지 않는 API의 사용이 있는지 검사합니다.    
+* [프레임워크 분석기](framework-analyzer.md): 이 분석기는 코드가 .NET Framework 응용 프로그램에 대한 지침을 따르는지 검사합니다. 이러한 규칙에는 여러 보안 기반 권장 사항이 포함됩니다.
+* [.NET 이식성 분석기](portability-analyzer.md): 이 분석기는 코드를 검사하여 애플리케이션이 iOS, Android 및 Mac용 .NET Core, .NET Standard, UWP 및 Xamarin을 비롯한 다른 .NET 구현 및 프로필과 호환되도록 하는 데 필요한 작업량을 확인합니다. 

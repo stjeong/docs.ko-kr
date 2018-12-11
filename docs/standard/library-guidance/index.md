@@ -1,15 +1,15 @@
 ---
-title: 오픈 소스 라이브러리 지침
+title: 오픈 소스 .NET 라이브러리 지침
 description: 고품질 .NET 라이브러리를 만드는 개발자를 위한 모범 사례 권장 사항입니다.
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/17/2018
-ms.openlocfilehash: ca95cb5ba1ebf27464397b7850ac02aabded1a5b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a656094066eb43ffe64ab405784f4577621b5c46
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188627"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128072"
 ---
 # <a name="open-source-library-guidance"></a>오픈 소스 라이브러리 지침
 
@@ -48,4 +48,4 @@ ms.locfileid: "50188627"
 **❌ 금지** 강력한 이름이 지정되고 강력하지 않은 이름이 지정된 버전의 라이브러리를 게시합니다. 예를 들어 `Contoso.Api` 및 `Contoso.Api.StrongNamed`를 지정합니다.
 
 >[!div class="step-by-step"]
-[다음](./get-started.md)
+>[다음](get-started.md)

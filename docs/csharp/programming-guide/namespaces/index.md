@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, namespaces
 - namespaces [C#]
 ms.assetid: b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a
-ms.openlocfilehash: c4011092a6c605137053b544d4b9f14cce2fdb4c
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: c5431e5141b1b4b1981f4a1399ca11939fe7dc45
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46002816"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151118"
 ---
 # <a name="namespaces-c-programming-guide"></a>네임스페이스(C# 프로그래밍 가이드)
 
@@ -38,8 +38,8 @@ ms.locfileid: "46002816"
   
 - 대규모 코드 프로젝트를 구성합니다.  
 - `.` 연산자를 사용하여 구분됩니다.  
-- `using directive`는 모든 클래스에 대해 네임스페이스의 이름을 지정할 필요가 없습니다.  
-- `global` 네임스페이스는 "루트" 네임스페이스입니다. `global::System`은 항상 .NET Framework 네임스페이스 `System`을 참조합니다.  
+- `using` 지시문은 모든 클래스에 대해 네임스페이스 이름을 지정할 필요가 없습니다.  
+- `global` 네임스페이스는 “루트” 네임스페이스입니다. `global::System`은 항상 .NET <xref:System> 네임스페이스를 가리킵니다.  
 
 ## <a name="c-language-specification"></a>C# 언어 사양
 
@@ -56,4 +56,3 @@ ms.locfileid: "46002816"
 - [using 지시문](../../language-reference/keywords/using-directive.md)  
 - [:: 연산자](../../language-reference/operators/namespace-alias-qualifer.md)  
 - [. 연산자](../../language-reference/operators/member-access-operator.md)
->>>>>>> 식별자 이름 지정 규칙 추가

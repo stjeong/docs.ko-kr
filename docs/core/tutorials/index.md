@@ -4,14 +4,15 @@ description: .NET Core 학습을 위한 자습서에 따라 Mac, Linux 및 Windo
 author: richlander
 ms.author: mairaw
 ms.date: 03/16/2017
-ms.openlocfilehash: 858fc0b95772d4be14363a1dbcfcd533040b8040
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: seodec18
+ms.openlocfilehash: 16f468ffdff3ea4fff1ab2400ac7dd3d270c781c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33210148"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53130738"
 ---
-# <a name="net-core-tutorials"></a>.NET Core 자습서
+# <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a>자습서에서 .NET Core 및 .NET Core SDK 도구 알아보기
 
 다음 자습서를 사용하여 .NET Core에 대해 알아볼 수 있습니다.
 

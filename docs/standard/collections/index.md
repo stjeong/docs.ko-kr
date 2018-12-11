@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 2fcff6d701b177d125eddaffe74383446f5f7b2d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: af76322cac08d7cf4e7e30e503c7fa2c97414898
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33577230"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154910"
 ---
 # <a name="collections-and-data-structures"></a>컬렉션 및 데이터 구조
 비슷한 데이터는 컬렉션으로 저장 및 조작하면 보다 효율적으로 처리할 수 있는 경우가 많습니다. <xref:System.Array?displayProperty=nameWithType> 클래스 또는 <xref:System.Collections>, <xref:System.Collections.Generic> 및 <xref:System.Collections.Concurrent>, System.Collections.Immutable 네임스페이스의 클래스를 사용하여 컬렉션의 개별 요소 또는 일정 범위의 요소를 추가, 제거 및 수정할 수 있습니다.  
@@ -60,6 +60,7 @@ ms.locfileid: "33577230"
 <a name="BKMK_Choosingacollection"></a>   
 ## <a name="choosing-a-collection"></a>컬렉션 선택  
  일반적으로는 제네릭 컬렉션을 사용해야 합니다. 다음 표에는 몇 가지 일반적인 컬렉션 시나리오와 이러한 시나리오에서 사용할 수 있는 컬렉션 클래스에 대해 설명합니다. 제네릭 컬렉션을 처음 사용하는 경우 이 표의 내용을 참조하여 작업에 가장 적합한 제네릭 컬렉션을 선택할 수 있습니다.  
+ 
 |수행할 작업|제네릭 컬렉션 옵션|제네릭이 아닌 컬렉션 옵션|스레드로부터 안전하거나 변경할 수 없는 컬렉션 옵션|  
 |-|-|-|-|  
 |키별로 빠르게 조회할 수 있도록 항목을 키/값 쌍으로 저장|<xref:System.Collections.Generic.Dictionary%602>|<xref:System.Collections.Hashtable><br /><br /> (키의 해시 코드를 기준으로 구성되는 키/값 쌍 컬렉션)|<xref:System.Collections.Concurrent.ConcurrentDictionary%602><br /><br /> <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602><br /><br /> <xref:System.Collections.Immutable.ImmutableDictionary%602>|  

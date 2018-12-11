@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, strings
 - strings [C#]
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
-ms.openlocfilehash: a06a5144e91901417906f071efd8e19c10cf2cba
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 7034d37c141d79301bf108b9e7b41ab3e27e2572
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47170654"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143924"
 ---
 # <a name="strings-c-programming-guide"></a>문자열(C# 프로그래밍 가이드)
 문자열은 값이 텍스트인 <xref:System.String> 형식의 개체입니다. 내부적으로 텍스트는 <xref:System.Char> 개체의 순차적 읽기 전용 컬렉션으로 저장됩니다. C# 문자열의 끝에 null 종료 문자가 없으므로 C# 문자열에는 포함된 null 문자('\0')를 여러 개 사용할 수 있습니다. 문자열의 <xref:System.String.Length%2A> 속성은 유니코드 문자 수가 아닌 포함된 `Char` 개체 수를 나타냅니다. 문자열에서 개별 유니코드 코드 포인트에 액세스하려면 <xref:System.Globalization.StringInfo> 개체를 사용합니다.  
@@ -70,11 +70,21 @@ ms.locfileid: "47170654"
 >  컴파일 시 축자 문자열은 모두 동일한 이스케이프 시퀀스가 포함된 일반 문자열로 변환됩니다. 따라서 디버거 조사식 창에서 축자 문자열을 확인할 경우 소스 코드의 축자 버전이 아니라 컴파일러에 의해 추가된 이스케이프 문자가 나타납니다. 예를 들어 축자 문자열 @"C:\files.txt"는 조사식 창에 "c:\\\files.txt"로 나타납니다.  
   
 ## <a name="format-strings"></a>형식 문자열  
- 형식 문자열은 콘텐츠가 런타임 시 동적으로 결정될 수 있는 문자열입니다. 정적 <xref:System.String.Format%2A> 메서드를 사용하고, 런타임 시 다른 값으로 바뀔 자리 표시자를 중괄호에 포함하여 형식 문자열을 만들 수 있습니다. 다음 예제에서는 형식 문자열을 사용하여 루프의 각 반복의 결과를 출력합니다.  
+ 형식 문자열은 콘텐츠가 런타임에 동적으로 결정되는 문자열입니다. 형식 문자열은 문자열 내의 중괄호 안에 ‘보간된 식’이나 자리 표시자를 포함하여 만들어집니다. 중괄호(`{...}`) 안의 모든 내용은 런타임에 하나의 값으로 확인되고 형식화된 문자열로 출력됩니다. 형식 문자열을 만드는 두 가지 방법은 문자열 보간 및 복합 형식 지정입니다.
+
+### <a name="string-interpolation"></a>문자열 보간
+C# 6.0 이상에서 사용 가능한 [‘보간된 문자열’](../../language-reference/tokens/interpolated.md)은 `$` 특수 문자로 식별되고 중괄호 안에 보간된 식을 포함합니다. 문자열 보간을 처음 접하는 경우 빠른 개요를 위해 [문자열 보간 - C# 대화형 자습서](../../tutorials/intro-to-csharp/interpolated-strings.yml)를 참조하세요.
+
+코드의 가독성과 유지 관리를 개선하려면 문자열 보간을 사용합니다. 문자열 보간은 `String.Format` 메서드와 동일한 결과를 제공하지만 더 편리하고 인라인 명확성이 향상됩니다.
+
+[!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringInterpolation)]
+
+### <a name="composite-formatting"></a>복합 형식 지정
+<xref:System.String.Format%2A?displayProperty=nameWithType>은 중괄호 안에 자리 표시자를 활용하여 형식 문자열을 만듭니다. 이 예제는 위에서 사용한 문자열 보간 방법과 유사한 출력을 생성합니다.
   
- [!code-csharp[csProgGuideStrings#26](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_6.cs)]  
-  
- <xref:System.Console.WriteLine%2A> 메서드를 한 번 오버로드하면 형식 문자열을 매개 변수로 가져옵니다. 따라서 메서드에 대한 명시적 호출이 없어도 형식 문자열 리터럴을 포함할 수 있습니다. 그러나 <xref:System.Diagnostics.Trace.WriteLine%2A>은 형식 문자열이 아닌 문자열만 허용하므로, <xref:System.Diagnostics.Trace.WriteLine%2A> 메서드를 사용하여 Visual Studio **출력** 창에 디버그 출력을 표시할 경우에는 <xref:System.String.Format%2A> 메서드를 명시적으로 호출해야 합니다. 형식 문자열에 대한 자세한 내용은 [형식 서식 지정](../../../standard/base-types/formatting-types.md)을 참조하세요.  
+[!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringFormat)]
+
+.NET 형식의 서식 지정에 대한 자세한 내용은 [.NET 형식의 서식 지정](../../../standard/base-types/formatting-types.md)을 참조하세요.
   
 ## <a name="substrings"></a>부분 문자열  
  부분 문자열은 문자열에 포함된 임의의 문자 시퀀스입니다. 원래 문자열 일부에서 새 문자열을 만들려면 <xref:System.String.Substring%2A> 메서드를 사용하세요. <xref:System.String.IndexOf%2A> 메서드를 사용하면 부분 문자열 항목을 하나 이상 검색할 수 있습니다. 지정된 부분 문자열의 모든 항목을 새 문자열로 바꾸려면 <xref:System.String.Replace%2A> 메서드를 사용하세요. <xref:System.String.Substring%2A> 메서드와 마찬가지로, <xref:System.String.Replace%2A>는 실제로 새 문자열을 반환하며, 원래 문자열은 수정되지 않습니다. 자세한 내용은 [방법: 문자열 검색](../../how-to/search-strings.md) 및 [방법: 문자열 내용 수정](../../how-to/modify-string-contents.md)을 참조하세요.  
@@ -125,7 +135,7 @@ string s = String.Empty;
 |[방법: 문자열이 숫자 값을 나타내는지 확인](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|문자열에 올바른 숫자 값이 있는지 여부를 확인할 수 있도록 문자열을 안전하게 구문 분석하는 방법을 보여 줍니다.|  
 |[문자열 보간](../../language-reference/tokens/interpolated.md)|문자열의 서식을 지정하는 편리한 구문을 제공하는 문자열 보간 기능에 대해 설명합니다.|
 |[기본적인 문자열 작업](../../../../docs/standard/base-types/basic-string-operations.md)|<xref:System.String?displayProperty=nameWithType> 및 <xref:System.Text.StringBuilder?displayProperty=nameWithType> 메서드를 사용하여 기본적인 문자열 작업을 수행하는 항목에 대한 링크를 제공합니다.|  
-|[문자열 구문 분석](../../../standard/base-types/parsing-strings.md)|.NET 기본 형식의 문자열 표현을 해당 형식의 인스턴스로 변환하는 방법에 대해 설명합니다.|  
+|[Parsing Strings](../../../standard/base-types/parsing-strings.md)|.NET 기본 형식의 문자열 표현을 해당 형식의 인스턴스로 변환하는 방법에 대해 설명합니다.|  
 |[.NET에서 날짜 및 시간 문자열 구문 분석](../../../standard/base-types/parsing-datetime.md)|"01/24/2008"과 같은 문자열을 <xref:System.DateTime?displayProperty=nameWithType> 개체로 변환하는 방법을 보여 줍니다.|  
 |[문자열 비교](../../../../docs/standard/base-types/comparing.md)|문자열을 비교하는 방법에 대한 정보가 포함되어 있으며, C# 및 Visual Basic의 예제를 제공합니다.|  
 |[StringBuilder 클래스 사용](../../../standard/base-types/stringbuilder.md)|<xref:System.Text.StringBuilder> 클래스를 사용하여 동적 문자열 개체를 만들고 수정하는 방법을 설명합니다.|  

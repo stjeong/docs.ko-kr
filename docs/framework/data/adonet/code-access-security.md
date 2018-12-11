@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
-ms.openlocfilehash: a608b91c78808af70bd5e9188926a12b945c5604
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: a5e5826dddbf60e92a50fd4f83322e7c1062f636
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453179"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144873"
 ---
 # <a name="code-access-security-and-adonet"></a>코드 액세스 보안 및 ADO.NET
 .NET Framework는 역할 기반 보안과 CAS(코드 액세스 보안)를 제공합니다. 두 보안 기능 모두 CLR(공용 언어 런타임)이 제공하는 공용 인프라를 사용하여 구현되었습니다. 비관리 코드의 경우 대부분의 응용 프로그램은 사용자 또는 보안 주체 권한으로 실행됩니다. 결과적으로 높은 권한을 가진 사용자가 악의적이거나 오류가 많은 소프트웨어를 실행하면 컴퓨터 시스템과 개인 데이터가 손상될 수 있습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "49453179"
  CLR은 코드에 수행 권한이 있는 작업만 수행하도록 허용합니다. 코드에서 권한을 요청할 수 있으며 이러한 요청은 관리자가 설정한 보안 정책에 따라 허용 여부가 결정됩니다.  
   
 > [!NOTE]
->  CLR에서 수행되는 코드는 자신에게 권한을 부여할 수 없습니다. 예를 들어 코드에서 보안 정책이 허용하는 것보다 낮은 권한을 요청하고 부여 받을 수는 있지만 그 이상의 권한은 부여 받을 수 없습니다. 권한을 부여할 때는 아무런 권한 없이 시작한 다음 수행하는 특정 작업에 필요한 최소한의 권한만 추가합니다. 모든 권한을 부여한 다음 필요하지 않은 권한을 개별적으로 허용하지 않으면 필요 이상의 권한이 주어질 수 있으므로 의도하지 않은 보안 허점이 생길 수 있습니다. 따라서 응용 프로그램이 안전하지 않을 수 있습니다. 자세한 내용은 [NIB: 보안 정책 구성](https://msdn.microsoft.com/library/0f130bcd-1bba-4346-b231-0bcca7dab1a4) 하 고 [NIB: 보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)합니다.  
+>  CLR에서 수행되는 코드는 자신에게 권한을 부여할 수 없습니다. 예를 들어 코드에서 보안 정책이 허용하는 것보다 낮은 권한을 요청하고 부여 받을 수는 있지만 그 이상의 권한은 부여 받을 수 없습니다. 권한을 부여할 때는 아무런 권한 없이 시작한 다음 수행하는 특정 작업에 필요한 최소한의 권한만 추가합니다. 모든 권한을 부여한 다음 필요하지 않은 권한을 개별적으로 허용하지 않으면 필요 이상의 권한이 주어질 수 있으므로 의도하지 않은 보안 허점이 생길 수 있습니다. 따라서 응용 프로그램이 안전하지 않을 수 있습니다. 자세한 내용은 참조 하세요. [NIB: 보안 정책 구성](https://msdn.microsoft.com/library/0f130bcd-1bba-4346-b231-0bcca7dab1a4) 고 [NIB: 보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)합니다.  
   
  코드 액세스 권한에는 다음 세 가지 형식이 있습니다.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "49453179"
 ### <a name="requesting-permissions"></a>권한 요청  
  권한을 요청하는 것은 응용 프로그램 실행에 필요한 권한에 대한 정보를 런타임으로 전달하고 실제 필요한 권한만 부여되도록 하기 위한 것입니다. 예를 들어 응용 프로그램에서 로컬 디스크에 데이터를 써야 한다면 <xref:System.Security.Permissions.FileIOPermission>이 필요합니다. 해당 권한이 부여되어 있지 않으면 응용 프로그램에서 디스크에 쓰려고 할 때 오류가 발생합니다. 하지만 응용 프로그램이 `FileIOPermission`을 요청하나 해당 권한이 부여되어 있지 않으면 응용 프로그램이 초기에 예외를 생성하여 로드되지 않습니다.  
   
- 응용 프로그램이 디스크에서 데이터를 읽어 오기만 하면 되는 경우에는 쓰기 권한이 부여되지 않도록 요청할 수 있습니다. 이렇게 하면 버그나 악의적인 공격이 발생해도 코드가 작업 중인 데이터를 손상시킬 수 없습니다. 자세한 내용은 [NIB: 권한 요청](https://msdn.microsoft.com/library/0447c49d-8cba-45e4-862c-ff0b59bebdc2)합니다.  
+ 응용 프로그램이 디스크에서 데이터를 읽어 오기만 하면 되는 경우에는 쓰기 권한이 부여되지 않도록 요청할 수 있습니다. 이렇게 하면 버그나 악의적인 공격이 발생해도 코드가 작업 중인 데이터를 손상시킬 수 없습니다. 자세한 내용은 참조 하세요. [NIB: 사용 권한을 요청](https://msdn.microsoft.com/library/0447c49d-8cba-45e4-862c-ff0b59bebdc2)합니다.  
   
 ## <a name="role-based-security-and-cas"></a>역할 기반 보안 및 CAS  
  역할 기반 보안과 CAS(코드 액세스 보안)를 모두 구현하면 응용 프로그램의 전체적인 보안이 향상됩니다. 역할 기반 보안은 현재 스레드에서 보안 주체 관련 정보를 사용할 수 있도록 하여 Windows 계정이나 사용자 지정 ID에 따라 다르게 적용되도록 할 수 있습니다. 또한, 응용 프로그램은 주로 사용자가 제공하는 자격 증명에 따라 데이터 또는 리소스에 액세스하는 데 필요합니다. 일반적으로 이러한 응용 프로그램에서는 사용자의 역할을 확인한 후 해당 역할에 따라 리소스에 대한 액세스 권한을 제공합니다.  
@@ -71,8 +71,8 @@ ms.locfileid: "49453179"
 |-----------------------------------|-----------------|  
 |`Action`|보안 동작을 가져오거나 설정합니다. <xref:System.Security.Permissions.SecurityAttribute>에서 상속됩니다.|  
 |`AllowBlankPassword`|연결 문자열에서 빈 암호 사용을 활성화하거나 비활성화합니다. 빈 암호 사용을 활성화하는 `true`와 빈 암호 사용을 비활성화하는 `false`를 값으로 사용할 수 있습니다. <xref:System.Data.Common.DBDataPermissionAttribute>에서 상속됩니다.|  
-|`ConnectionString`|허용되는 연결 문자열을 지정합니다. 여러 개의 연결 문자열을 식별할 수 있습니다. **참고:** 연결 문자열에 사용자 ID 또는 암호를 포함 하지 않습니다. 이번 릴리스에서는 .NET Framework 구성 도구를 사용하여 연결 문자열 제한을 변경할 수 없습니다. <br /><br /> <xref:System.Data.Common.DBDataPermissionAttribute>에서 상속됩니다.|  
-|`KeyRestrictions`|허용되거나 허용되지 않는 연결 문자열 매개 변수를 식별합니다. 연결 문자열 매개 변수 형식으로 식별 됩니다  *\<매개 변수 이름 > =* 합니다. 여러 매개 변수를 세미콜론(;)으로 구분하여 지정할 수 있습니다. **참고:** 지정 하지 않는 경우 `KeyRestrictions`를 설정 하지만 `KeyRestrictionBehavior` 속성을 `AllowOnly` 또는 `PreventUsage`, 추가 연결 문자열 매개 변수 없이 허용 됩니다. <xref:System.Data.Common.DBDataPermissionAttribute>에서 상속됩니다.|  
+|`ConnectionString`|허용되는 연결 문자열을 지정합니다. 여러 개의 연결 문자열을 식별할 수 있습니다. **참고:**  연결 문자열은 사용자 ID 또는 암호를 포함할 수 없습니다. 이번 릴리스에서는 .NET Framework 구성 도구를 사용하여 연결 문자열 제한을 변경할 수 없습니다. <br /><br /> <xref:System.Data.Common.DBDataPermissionAttribute>에서 상속됩니다.|  
+|`KeyRestrictions`|허용되거나 허용되지 않는 연결 문자열 매개 변수를 식별합니다. 연결 문자열 매개 변수 형식으로 식별 됩니다  *\<매개 변수 이름 > =* 합니다. 여러 매개 변수를 세미콜론(;)으로 구분하여 지정할 수 있습니다. **참고:**  `KeyRestrictions`를 지정하지 않고 `KeyRestrictionBehavior` 속성을 `AllowOnly` 또는 `PreventUsage`로 설정한 경우에는 추가 연결 문자열 매개 변수가 허용되지 않습니다. <xref:System.Data.Common.DBDataPermissionAttribute>에서 상속됩니다.|  
 |`KeyRestrictionBehavior`|연결 문자열 매개 변수를 허용되는 유일한 추가 매개 변수(`AllowOnly`)로 식별하거나 허용되지 않는 추가 매개 변수(`PreventUsage`)로 식별합니다. 기본값은 `AllowOnly`입니다. <xref:System.Data.Common.DBDataPermissionAttribute>에서 상속됩니다.|  
 |`TypeID`|파생 클래스에서 구현될 때 이 특성의 고유 식별자를 가져옵니다. <xref:System.Attribute>에서 상속됩니다.|  
 |`Unrestricted`|리소스에 무제한 권한이 선언되었는지 여부를 나타냅니다. <xref:System.Security.Permissions.SecurityAttribute>에서 상속됩니다.|  
@@ -160,7 +160,7 @@ AllowBlankPassword="False">
 ```  
   
 ## <a name="verifying-adonet-code-access-using-security-permissions"></a>보안 권한을 사용하여 ADO.NET 코드 액세스 확인  
- 부분 신뢰 권한의 경우 <xref:System.Data.SqlClient.SqlClientPermissionAttribute>를 지정하여 코드의 특정 메서드에 대해 CAS 권한을 요구할 수 있습니다. 제한된 보안 정책의 적용으로 이 권한이 허용되지 않는 경우 코드가 실행되기 전에 예외가 throw됩니다. 보안 정책에 대 한 자세한 내용은 참조 하세요. [NIB: 보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9) 하 고 [NIB: 보안 정책에 대 한 유용한 정보](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)합니다.  
+ 부분 신뢰 권한의 경우 <xref:System.Data.SqlClient.SqlClientPermissionAttribute>를 지정하여 코드의 특정 메서드에 대해 CAS 권한을 요구할 수 있습니다. 제한된 보안 정책의 적용으로 이 권한이 허용되지 않는 경우 코드가 실행되기 전에 예외가 throw됩니다. 보안 정책에 대 한 자세한 내용은 참조 하세요. [NIB: 보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9) 고 [NIB: 보안 정책에 대 한 유용한 정보](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)합니다.  
   
 ### <a name="example"></a>예제  
  다음 예제에서는 특정 연결 문자열을 필요로 하는 코드를 작성하는 방법을 보여 줍니다. 또한 이 예제에서는 시스템 관리자가 실제로 CAS 정책을 사용하여 구현하는 <xref:System.Data.SqlClient>에 대한 무제한 권한을 거부하는 것을 시뮬레이션합니다.  
@@ -197,6 +197,5 @@ Failed, as expected: Request failed.
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- [코드 액세스 보안](../../../../docs/framework/misc/code-access-security.md)  
  [역할 기반 보안](../../../../docs/standard/security/role-based-security.md)  
  [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

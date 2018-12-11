@@ -1,17 +1,18 @@
 ---
-title: .NET Core 버전 관리
-description: .NET Core 버전 관리의 작동 방식을 이해합니다.
+title: .NET Core 런타임 및 SDK의 버전 관리 방법
+description: 이 문서에서는 .NET Core SDK 및 런타임의 버전 관리 방법을 설명합니다(유의적 버전과 유사함).
 author: bleroy
 ms.author: mairaw
 ms.date: 07/26/2018
-ms.openlocfilehash: 9f77709abf59d5346bf5e3c6f512cfabbf9e50de
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.custom: seodec18
+ms.openlocfilehash: 12bb270584eb0f63973acf40afd3f6a30363c9c6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188471"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126053"
 ---
-# <a name="net-core-versioning"></a>.NET Core 버전 관리
+# <a name="overview-of-how-net-core-is-versioned"></a>.NET Core의 버전 관리 방법 개요
 
 .NET core는 응용 프로그램을 개발하는 데 필요한 도구를 포함하는 .NET Core 런타임 및 .NET Core SDK를 가리킵니다. .NET Core SDK는 이전 버전의 .NET Core 런타임에서 작동하도록 설계되었습니다. 이 문서에서는 런타임 및 SDK 버전 전략을 설명합니다. .NET Standard의 버전 번호에 대한 설명은 [.NET Standard](../../standard/net-standard.md#net-implementation-support)를 소개하는 문서에 있습니다.
 
@@ -82,11 +83,11 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 ### <a name="preview-versions"></a>미리 보기 버전
 
-미리 보기 버전에는 `-preview[number]-([build]|"final")`이 추가됩니다. 예를 들어, `2.0.0-preview1-final`을 입력합니다.
+미리 보기 버전에는 `-preview[number]-([build]|"final")`이 추가됩니다. 예를 들어 `2.0.0-preview1-final`과 같은 형식입니다.
 
 ### <a name="servicing-versions"></a>서비스 버전
 
-릴리스가 출시된 후에 릴리스 분기는 일반적으로 매일 빌드 만들기를 중지하고 대신 서비스 빌드를 만들기 시작합니다. 서비스 버전에는 `-servicing-[number]`이 추가됩니다. 예를 들어, `2.0.1-servicing-006924`을 입력합니다.
+릴리스가 출시된 후에 릴리스 분기는 일반적으로 매일 빌드 만들기를 중지하고 대신 서비스 빌드를 만들기 시작합니다. 서비스 버전에는 `-servicing-[number]`이 추가됩니다. 예를 들어 `2.0.1-servicing-006924`과 같은 형식입니다.
 
 ## <a name="relationship-to-net-standard-versions"></a>.NET Standard 버전과의 관계
 
