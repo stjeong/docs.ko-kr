@@ -1,51 +1,51 @@
 ---
-title: 오픈 소스 라이브러리 지침
+title: 오픈 소스 .NET 라이브러리 지침
 description: 고품질 .NET 라이브러리를 만드는 개발자를 위한 모범 사례 권장 사항입니다.
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/17/2018
-ms.openlocfilehash: ca95cb5ba1ebf27464397b7850ac02aabded1a5b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a656094066eb43ffe64ab405784f4577621b5c46
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188627"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128072"
 ---
-# <a name="open-source-library-guidance"></a><span data-ttu-id="4cda7-103">오픈 소스 라이브러리 지침</span><span class="sxs-lookup"><span data-stu-id="4cda7-103">Open-source library guidance</span></span>
+# <a name="open-source-library-guidance"></a><span data-ttu-id="5018f-103">오픈 소스 라이브러리 지침</span><span class="sxs-lookup"><span data-stu-id="5018f-103">Open-source library guidance</span></span>
 
-<span data-ttu-id="4cda7-104">이 지침에서는 고품질 .NET 라이브러리를 만드는 개발자를 위한 권장 사항을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-104">This guidance provides recommendations for developers to create high-quality .NET libraries.</span></span> <span data-ttu-id="4cda7-105">이 설명서는 .NET 라이브러리를 빌드하는 경우 *방법*이 아닌 *내용* 및 *이유*에 중점을 둡니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-105">This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.</span></span>
+<span data-ttu-id="5018f-104">이 지침에서는 고품질 .NET 라이브러리를 만드는 개발자를 위한 권장 사항을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-104">This guidance provides recommendations for developers to create high-quality .NET libraries.</span></span> <span data-ttu-id="5018f-105">이 설명서는 .NET 라이브러리를 빌드하는 경우 *방법*이 아닌 *내용* 및 *이유*에 중점을 둡니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-105">This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.</span></span>
 
-<span data-ttu-id="4cda7-106">고품질 오픈 소스 .NET 라이브러리의 측면:</span><span class="sxs-lookup"><span data-stu-id="4cda7-106">Aspects of high-quality open-source .NET libraries:</span></span>
+<span data-ttu-id="5018f-106">고품질 오픈 소스 .NET 라이브러리의 측면:</span><span class="sxs-lookup"><span data-stu-id="5018f-106">Aspects of high-quality open-source .NET libraries:</span></span>
 
 > [!div class="checklist"]
-> * <span data-ttu-id="4cda7-107">**포괄적** - 우수한 .NET 라이브러리는 여러 플랫폼, 프로그래밍 언어 및 응용 프로그램을 지원하기 위해 노력합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-107">**Inclusive** - Good .NET libraries strive to support many platforms, programming languages, and applications.</span></span>
-> * <span data-ttu-id="4cda7-108">**안정적** - 우수한 .NET 라이브러리는 에코시스템에서 공존하며 다양한 라이브러리를 사용하여 빌드된 응용 프로그램에서 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-108">**Stable** - Good .NET libraries coexist in the .NET ecosystem, running in applications built with many libraries.</span></span>
-> * <span data-ttu-id="4cda7-109">**진화하도록 설계** - .NET 라이브러리는 시간이 지남에 따라 개선되고 진화하는 동시에 기존 사용자를 지원해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-109">**Designed to evolve** - .NET libraries should improve and evolve over time, while supporting existing users.</span></span>
-> * <span data-ttu-id="4cda7-110">**디버깅 가능** - .NET 라이브러리는 사용자에 대해 뛰어난 디버깅 환경을 만드는 최신 도구를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-110">**Debuggable** - .NET libraries should use the latest tools to create a great debugging experience for users.</span></span>
-> * <span data-ttu-id="4cda7-111">**신뢰할 수 있음** - .NET 라이브러리는 보안 모범 사례를 사용하는 NuGet에 게시하여 개발자의 신뢰를 얻고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-111">**Trusted** - .NET libraries have developers' trust by publishing to NuGet using security best practices.</span></span>
+> * <span data-ttu-id="5018f-107">**포괄적** - 우수한 .NET 라이브러리는 여러 플랫폼, 프로그래밍 언어 및 응용 프로그램을 지원하기 위해 노력합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-107">**Inclusive** - Good .NET libraries strive to support many platforms, programming languages, and applications.</span></span>
+> * <span data-ttu-id="5018f-108">**안정적** - 우수한 .NET 라이브러리는 에코시스템에서 공존하며 다양한 라이브러리를 사용하여 빌드된 응용 프로그램에서 실행됩니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-108">**Stable** - Good .NET libraries coexist in the .NET ecosystem, running in applications built with many libraries.</span></span>
+> * <span data-ttu-id="5018f-109">**진화하도록 설계** - .NET 라이브러리는 시간이 지남에 따라 개선되고 진화하는 동시에 기존 사용자를 지원해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-109">**Designed to evolve** - .NET libraries should improve and evolve over time, while supporting existing users.</span></span>
+> * <span data-ttu-id="5018f-110">**디버깅 가능** - .NET 라이브러리는 사용자에 대해 뛰어난 디버깅 환경을 만드는 최신 도구를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-110">**Debuggable** - .NET libraries should use the latest tools to create a great debugging experience for users.</span></span>
+> * <span data-ttu-id="5018f-111">**신뢰할 수 있음** - .NET 라이브러리는 보안 모범 사례를 사용하는 NuGet에 게시하여 개발자의 신뢰를 얻고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-111">**Trusted** - .NET libraries have developers' trust by publishing to NuGet using security best practices.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="4cda7-112">시작</span><span class="sxs-lookup"><span data-stu-id="4cda7-112">Get Started</span></span>](./get-started.md)
+> [<span data-ttu-id="5018f-112">시작</span><span class="sxs-lookup"><span data-stu-id="5018f-112">Get Started</span></span>](./get-started.md)
 
-## <a name="types-of-recommendations"></a><span data-ttu-id="4cda7-113">권장 사항 유형</span><span class="sxs-lookup"><span data-stu-id="4cda7-113">Types of recommendations</span></span>
+## <a name="types-of-recommendations"></a><span data-ttu-id="5018f-113">권장 사항 유형</span><span class="sxs-lookup"><span data-stu-id="5018f-113">Types of recommendations</span></span>
 
-<span data-ttu-id="4cda7-114">각 문서에서는 **수행**, **고려**, **회피** 및 **금지**의 네 가지 권장 사항 유형을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-114">Each article presents four types of recommendations: **Do**, **Consider**, **Avoid**, and **Do not**.</span></span> <span data-ttu-id="4cda7-115">각 권장 사항 유형은 수행해야 하는 필요성의 정도를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-115">The type of recommendation indicates how strongly it should be followed.</span></span>
+<span data-ttu-id="5018f-114">각 문서에서는 **수행**, **고려**, **회피** 및 **금지**의 네 가지 권장 사항 유형을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-114">Each article presents four types of recommendations: **Do**, **Consider**, **Avoid**, and **Do not**.</span></span> <span data-ttu-id="5018f-115">각 권장 사항 유형은 수행해야 하는 필요성의 정도를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-115">The type of recommendation indicates how strongly it should be followed.</span></span>
 
-<span data-ttu-id="4cda7-116">**수행** 권장 사항은 거의 항상 따라야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-116">You should almost always follow a **Do** recommendation.</span></span> <span data-ttu-id="4cda7-117">예:</span><span class="sxs-lookup"><span data-stu-id="4cda7-117">For example:</span></span>
+<span data-ttu-id="5018f-116">**수행** 권장 사항은 거의 항상 따라야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-116">You should almost always follow a **Do** recommendation.</span></span> <span data-ttu-id="5018f-117">예:</span><span class="sxs-lookup"><span data-stu-id="5018f-117">For example:</span></span>
 
-<span data-ttu-id="4cda7-118">**✔️ 수행** NuGet 패키지를 사용하여 라이브러리를 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-118">**✔️ DO** distribute your library using a NuGet package.</span></span>
+<span data-ttu-id="5018f-118">**✔️ 수행** NuGet 패키지를 사용하여 라이브러리를 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-118">**✔️ DO** distribute your library using a NuGet package.</span></span>
 
-<span data-ttu-id="4cda7-119">한편으로 **고려** 권장 사항은 일반적으로 따라야 하지만 규칙에 대한 정당한 예외가 있거나 지침을 따르지 않아도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-119">On the other hand, **Consider** recommendations should generally be followed, but there are legitimate exceptions to the rule and you shouldn't feel bad about not following the guidance:</span></span>
+<span data-ttu-id="5018f-119">한편으로 **고려** 권장 사항은 일반적으로 따라야 하지만 규칙에 대한 정당한 예외가 있거나 지침을 따르지 않아도 됩니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-119">On the other hand, **Consider** recommendations should generally be followed, but there are legitimate exceptions to the rule and you shouldn't feel bad about not following the guidance:</span></span>
 
-<span data-ttu-id="4cda7-120">**✔️ 고려** [SemVer 2.0.0](https://semver.org/)을 사용하여 NuGet 패키지 버전을 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-120">**✔️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.</span></span>
+<span data-ttu-id="5018f-120">**✔️ 고려** [SemVer 2.0.0](https://semver.org/)을 사용하여 NuGet 패키지 버전을 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-120">**✔️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.</span></span>
 
-<span data-ttu-id="4cda7-121">**회피** 권장 사항은 일반적으로 좋지는 않지만 규칙을 깨는 것이 적합한 경우를 언급합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-121">**Avoid** recommendations mention things that are generally not a good idea, but breaking the rule sometimes makes sense:</span></span>
+<span data-ttu-id="5018f-121">**회피** 권장 사항은 일반적으로 좋지는 않지만 규칙을 깨는 것이 적합한 경우를 언급합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-121">**Avoid** recommendations mention things that are generally not a good idea, but breaking the rule sometimes makes sense:</span></span>
 
-<span data-ttu-id="4cda7-122">**❌ 회피** 정확한 버전을 요구하는 NuGet 패키지 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-122">**❌ AVOID** NuGet package references that demand an exact version.</span></span>
+<span data-ttu-id="5018f-122">**❌ 회피** 정확한 버전을 요구하는 NuGet 패키지 참조입니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-122">**❌ AVOID** NuGet package references that demand an exact version.</span></span>
 
-<span data-ttu-id="4cda7-123">마지막으로, **금지**는 수행하지 않아야 하는 항목을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-123">And finally, **Do not** recommendations indicate something you should almost never do:</span></span>
+<span data-ttu-id="5018f-123">마지막으로, **금지**는 수행하지 않아야 하는 항목을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-123">And finally, **Do not** recommendations indicate something you should almost never do:</span></span>
 
-<span data-ttu-id="4cda7-124">**❌ 금지** 강력한 이름이 지정되고 강력하지 않은 이름이 지정된 버전의 라이브러리를 게시합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-124">**❌ DO NOT** publish strong-named and non-strong-named versions of your library.</span></span> <span data-ttu-id="4cda7-125">예를 들어 `Contoso.Api` 및 `Contoso.Api.StrongNamed`를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="4cda7-125">For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.</span></span>
+<span data-ttu-id="5018f-124">**❌ 금지** 강력한 이름이 지정되고 강력하지 않은 이름이 지정된 버전의 라이브러리를 게시합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-124">**❌ DO NOT** publish strong-named and non-strong-named versions of your library.</span></span> <span data-ttu-id="5018f-125">예를 들어 `Contoso.Api` 및 `Contoso.Api.StrongNamed`를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="5018f-125">For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.</span></span>
 
 >[!div class="step-by-step"]
-[<span data-ttu-id="4cda7-126">다음</span><span class="sxs-lookup"><span data-stu-id="4cda7-126">Next</span></span>](./get-started.md)
+>[<span data-ttu-id="5018f-126">다음</span><span class="sxs-lookup"><span data-stu-id="5018f-126">Next</span></span>](get-started.md)

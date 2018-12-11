@@ -1,39 +1,51 @@
 ---
-title: ML.NET 가이드
+title: ML.NET 콘텐츠 가이드
 description: ML.NET를 사용하여 사용자 지정 AI 솔루션을 빌드하고 .NET 응용 프로그램에 통합하는 방법을 알아봅니다.
-author: aditidugar
-ms.date: 05/07/2018
-ms.openlocfilehash: a5be91283d8b8d00b727ec43d1137a0a245175d3
-ms.sourcegitcommit: 2ad7d06f4f469b5d8a5280ac0e0289a81867fc8e
+ms.date: 11/06/2018
+ms.custom: seodec18
+ms.openlocfilehash: 0ba32490e30051616ae5270a050d8666490c9eef
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34862339"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126252"
 ---
-# <a name="mlnet-guide"></a><span data-ttu-id="01546-103">ML.NET 가이드</span><span class="sxs-lookup"><span data-stu-id="01546-103">ML.NET Guide</span></span>
+# <a name="mlnet-content-guide"></a><span data-ttu-id="c3879-103">ML.NET 콘텐츠 가이드</span><span class="sxs-lookup"><span data-stu-id="c3879-103">ML.NET Content Guide</span></span>
 
-<span data-ttu-id="01546-104">ML.NET은 사용자 지정 기계 학습 솔루션을 빌드하고 .NET 응용 프로그램에 통합할 수 있도록 하는 무료 오픈 소스 플랫폼 간 기계 학습 프레임워크입니다.</span><span class="sxs-lookup"><span data-stu-id="01546-104">ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications.</span></span> <span data-ttu-id="01546-105">이 가이드는 ML.NET를 사용하는 방법에 대한 많은 리소스를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="01546-105">This guide provides many resources about working with ML.NET.</span></span>
+<span data-ttu-id="c3879-104">이 가이드에서는 기본 개념을 설명하고 ML.NET 작업에 대한 자습서 및 API 참조를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-104">This guide explains basic concepts and provides tutorials and an API reference for working with ML.NET.</span></span>
 
-<span data-ttu-id="01546-106">ML.NET에 대한 자세한 내용은 .NET 블로그의 [ML.NET 소개: 플랫폼 간 검증된 오픈 소스 기계 학습 프레임워크](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/introducing-ml-net-cross-platform-proven-and-open-source-machine-learning-framework/) 게시물을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="01546-106">For more information about ML.NET, see [Introducing ML.NET: Cross-platform, Proven and Open Source Machine Learning Framework](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/introducing-ml-net-cross-platform-proven-and-open-source-machine-learning-framework/) post on the .NET blog.</span></span>
+> [!NOTE]
+> <span data-ttu-id="c3879-105">이 문서는 현재 미리 보기로 제공되고 있는 ML.NET을 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-105">This documentation refers to ML.NET, which is currently in Preview.</span></span> <span data-ttu-id="c3879-106">자료가 변경될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-106">Material may be subject to change.</span></span> <span data-ttu-id="c3879-107">자세한 내용은 [ML.NET 소개](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="c3879-107">For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="01546-107">시작</span><span class="sxs-lookup"><span data-stu-id="01546-107">Get started</span></span>
+## <a name="get-started"></a><span data-ttu-id="c3879-108">시작</span><span class="sxs-lookup"><span data-stu-id="c3879-108">Get started</span></span>
 
-<span data-ttu-id="01546-108">ML.NET을 시작하려면 [아이리스 꽃잎 예측 빠른 시작](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet/get-started) 또는 심층 [자습서](tutorials/index.md)를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="01546-108">To get started with ML.NET, check out the [Iris Petal Prediction quickstart](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet/get-started) or the more in-depth [tutorials](tutorials/index.md).</span></span>
+<span data-ttu-id="c3879-109">ML.NET을 설치하고 빌드를 시작하려면 [시작 자습서](https://www.microsoft.com/net/learn/machinelearning-ai/ml-dotnet-get-started-tutorial)를 따르세요.</span><span class="sxs-lookup"><span data-stu-id="c3879-109">To install and start building in ML.NET, follow the [Get started tutorial](https://www.microsoft.com/net/learn/machinelearning-ai/ml-dotnet-get-started-tutorial).</span></span>
 
-<span data-ttu-id="01546-109">기계 학습을 처음 접하는 경우 [기계 학습 기본 사항](resources/basics.md)을 검토할 수도 있습니다. 여기서 기계 학습 리소스를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="01546-109">If you are new to machine learning, you can also review the [Machine Learning Basics](resources/basics.md), where you'll find machine learning resources to assist you.</span></span>
+<span data-ttu-id="c3879-110">ML.NET에 대해 알아보려면 [ML.NET이란?](what-is-mldotnet.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="c3879-110">To learn about ML.NET, see [What is ML.NET?](what-is-mldotnet.md)</span></span>
 
-## <a name="how-the-mlnet-guide-is-organized"></a><span data-ttu-id="01546-110">ML.NET 가이드의 구성 방식</span><span class="sxs-lookup"><span data-stu-id="01546-110">How the ML.NET guide is organized</span></span>
+<span data-ttu-id="c3879-111">기본 사항을 이해하려면 [ML.NET의 모델 학습에 대한 기본 개념](basic-concepts-model-training-in-mldotnet.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="c3879-111">To understand basics, see [Basic concepts for model training in ML.NET](basic-concepts-model-training-in-mldotnet.md).</span></span>
 
-<span data-ttu-id="01546-111">ML.NET 가이드에는 여러 섹션이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="01546-111">There are several sections in the ML.NET Guide.</span></span> <span data-ttu-id="01546-112">순서대로 읽거나 가장 많이 관심이 가는 부분으로 직접 이동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="01546-112">You can read them in order, or jump directly to what interests you the most.</span></span>
+## <a name="tutorials"></a><span data-ttu-id="c3879-112">자습서</span><span class="sxs-lookup"><span data-stu-id="c3879-112">Tutorials</span></span>
 
-<span data-ttu-id="01546-113">**[자습서](tutorials/index.md)**</span><span class="sxs-lookup"><span data-stu-id="01546-113">**[Tutorials](tutorials/index.md)**</span></span>
+<span data-ttu-id="c3879-113">[이진 분류 모델을 사용하여 감정 분석](tutorials/sentiment-analysis.md)에서는 감정이 긍정적인지 부정적인지를 판별하는 앱을 빌드하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-113">[Analyze sentiment using a binary classification model](tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.</span></span>
 
-<span data-ttu-id="01546-114">이 섹션에서는 일반적인 개발자 시나리오에서 사용자 지정 기계 학습 모델을 빌드하는 방법을 설명하는 단계별 자습서를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="01546-114">In this section, you find step-by-step tutorials that guide you through building custom machine learning models for common developer scenarios.</span></span>
+<span data-ttu-id="c3879-114">[회귀 모델을 사용하여 택시 요금 예측](tutorials/taxi-fare.md)에서는 기록 데이터의 여러 요소를 사용하여 응답을 판별하는 예측 앱을 빌드하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-114">[Predict taxi fare using a regression model](tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.</span></span>
 
-<span data-ttu-id="01546-115">**[용어](resources/glossary.md)**</span><span class="sxs-lookup"><span data-stu-id="01546-115">**[Glossary](resources/glossary.md)**</span></span>
+<span data-ttu-id="c3879-115">[기능으로 아이리스 꽃 분류](tutorials/iris-clustering.md)에서는 클러스터링 모델을 사용하여 아이리스 데이터 세트를 분석하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-115">[Classify iris flowers by features](tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set.</span></span> 
 
-<span data-ttu-id="01546-116">기계 학습 용어 및 해당 정의의 목록을 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="01546-116">Find a list of machine learning terminology and their definitions.</span></span>
+## <a name="how-to-guide"></a><span data-ttu-id="c3879-116">방법 가이드</span><span class="sxs-lookup"><span data-stu-id="c3879-116">How to guide</span></span>
 
-## <a name="api-reference"></a><span data-ttu-id="01546-117">API 참조</span><span class="sxs-lookup"><span data-stu-id="01546-117">API reference</span></span>
+<span data-ttu-id="c3879-117">[Infer.NET 및 확률 프로그래밍을 사용하여 게임 대전 목록 앱 빌드](how-to-guides/matchup-app-infer-net.md)에서는 Xbox 게임에서 보는 것과 같은 간단한 버전의 대전 앱을 빌드하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-117">[Build a game match-up list app with Infer.NET and probabilistic programming](how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.</span></span>
 
-<span data-ttu-id="01546-118">[ML.NET API 참조](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)에서 사용 가능한 API 범위를 확인하세요.</span><span class="sxs-lookup"><span data-stu-id="01546-118">Check out the [ML.NET API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet) to see the breadth of APIs available.</span></span>
+## <a name="resources"></a><span data-ttu-id="c3879-118">자료</span><span class="sxs-lookup"><span data-stu-id="c3879-118">Resources</span></span>
+
+<span data-ttu-id="c3879-119">[기계 학습 용어집](resources/glossary.md)에서는 주요 용어를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-119">[Machine learning glossary](resources/glossary.md) defines key terminology.</span></span>
+
+<span data-ttu-id="c3879-120">[기계 학습 작업](resources/tasks.md)에서는 분류 및 변칙 검색과 같은 작업을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-120">[Machine learning tasks](resources/tasks.md) describes tasks, such as classification and anomaly detection.</span></span> 
+
+<span data-ttu-id="c3879-121">[데이터 변환](resources/transforms.md)에서는 ML.NET의 데이터 준비 기능을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-121">[Data transforms](resources/transforms.md) describes data preparation capabilities in ML.NET.</span></span>
+
+
+## <a name="api-reference"></a><span data-ttu-id="c3879-122">API 참조</span><span class="sxs-lookup"><span data-stu-id="c3879-122">API reference</span></span>
+
+<span data-ttu-id="c3879-123">[ML.NET API 참조](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)에서는 사용 가능한 API 범위를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="c3879-123">[ML.NET API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet) describes the breadth of APIs available.</span></span>
