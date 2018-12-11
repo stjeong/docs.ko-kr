@@ -2,12 +2,12 @@
 title: 수정 SQL 생성
 ms.date: 03/30/2017
 ms.assetid: 2188a39d-46ed-4a8b-906a-c9f15e6fefd1
-ms.openlocfilehash: 8e0568e32094b6cc27137409f3d908928d82cebb
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: bfeb4f826022d39b2a45132a5b2bf344ef4c99c6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836941"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127071"
 ---
 # <a name="modification-sql-generation"></a>수정 SQL 생성
 이 단원에서는 SQL:1999 규격 데이터베이스 공급자에 대한 수정 SQL 생성 모듈을 개발하는 방법에 대해 설명합니다. 이 모듈은 수정 명령 트리를 적절한 SQL INSERT, UPDATE 또는 DELETE 문으로 변환하는 작업을 담당합니다.  
@@ -83,7 +83,7 @@ The elements of the list are specified as type DbModificationClause, which speci
 -   DbOrExpression  
   
 ## <a name="modification-sql-generation-in-the-sample-provider"></a>샘플 공급자의 수정 SQL 생성  
- 합니다 [Entity Framework Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616) 지 원하는 ADO.NET 데이터 공급자의 구성 요소를 보여 줍니다는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]합니다. 샘플 공급자는 SQL Server 2005 데이터베이스를 대상으로 하며 System.Data.SqlClient ADO.NET 2.0 데이터 공급자 위에 래퍼로 구현됩니다.  
+ 합니다 [Entity Framework Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) 지 원하는 ADO.NET 데이터 공급자의 구성 요소를 보여 줍니다는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]합니다. 샘플 공급자는 SQL Server 2005 데이터베이스를 대상으로 하며 System.Data.SqlClient ADO.NET 2.0 데이터 공급자 위에 래퍼로 구현됩니다.  
   
  샘플 공급자의 수정 SQL 생성 모듈(SQL Generation\DmlSqlGenerator.cs 파일에 있음)은 DbModificationCommandTree를 입력으로 사용하고 단일 수정 SQL 문을 생성합니다. 이 문 뒤에는 DbModificationCommandTree에서 지정된 경우 판독기를 반환하기 위해 SELECT 문이 올 수 있습니다. 생성된 명령의 모양은 대상 SQL Server 데이터베이스의 영향을 받습니다.  
   

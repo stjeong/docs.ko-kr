@@ -2,12 +2,12 @@
 title: 보안 데이터 액세스
 ms.date: 03/30/2017
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
-ms.openlocfilehash: e5bb96a091dcd64f12d086d864643d00c34d8f17
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d7964a084c1d5936b034d76b8c6e46053e8dcb0a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185942"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129196"
 ---
 # <a name="secure-data-access"></a>보안 데이터 액세스
 보안 ADO.NET 코드를 쓰려면 내부 데이터 저장소 또는 데이터베이스에서 사용할 수 있는 보안 메커니즘을 알아야 합니다. 또한, 응용 프로그램에 포함된 다른 기능이나 구성 요소의 보안 문제도 고려해야 합니다.  
@@ -66,11 +66,8 @@ ms.locfileid: "50185942"
 |리소스|설명|  
 |--------------|-----------------|  
 |[보안 고려 사항 및 Access 2007에 대 한 지침](https://go.microsoft.com/fwlink/?LinkId=98354)|파일 암호화, 암호 관리, 새로운 ACCDB 및 ACCDE 형식으로 데이터베이스 변환, 기타 보안 옵션 사용 등 Access 2007의 보안 기술에 대해 설명합니다.|  
-|[사용자 수준 보안 (MDB) 사용 하 여 Access 데이터베이스를 보호 합니다.](https://go.microsoft.com/fwlink/?LinkId=47697)|Access 2003에 적용됩니다. Access 2003의 데이터를 보호할 수 있는 사용자 수준의 보안을 구현하기 위한 지침을 제공합니다.|  
 |[액세스 보안에서 작업 그룹 정보 파일 역할 이해](https://support.microsoft.com/kb/305542)|Access 2003 보안에서 작업 그룹 정보 파일의 역할 및 관계에 대해 설명합니다.|  
 |[자주 묻는 질문에 대 한 액세스를 위한 Microsoft 보안 Microsoft Access 버전 2.0 ~ 2000](https://go.microsoft.com/fwlink/?LinkId=47698)|Microsoft Access Security FAQ의 다운로드 버전입니다.|  
-|[보안 및 보호 문제 해결](https://go.microsoft.com/fwlink/?LinkId=47703)|Excel 2003의 일반적인 보안 관련 문제에 대한 해결책을 제공합니다.|  
-  
 ## <a name="enterprise-services"></a>엔터프라이즈 서비스  
  COM+에는 Windows NT 계정 및 프로세스/스레드 가장을 사용하는 고유의 보안 모델이 포함되어 있습니다. <xref:System.EnterpriseServices> 네임스페이스에서는 <xref:System.EnterpriseServices.ServicedComponent> 클래스를 통해 .NET 응용 프로그램에서 관리 코드를 COM+ 보안 서비스와 통합할 수 있도록 하는 래퍼를 제공합니다.  
   
@@ -87,9 +84,9 @@ ms.locfileid: "50185942"
   
 |리소스|설명|  
 |--------------|-----------------|  
-|[비관리 코드와의 상호 운용](../../../../docs/framework/interop/index.md)|COM 구성 요소를 .NET Framework에 노출하는 방법과 .NET Framework 구성 요소를 COM에 노출하는 방법에 대해 설명하는 항목을 제공합니다.|  
-|[고급 COM 상호 운용성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)|주 interop 어셈블리, 스레딩 및 사용자 지정 마샬링 등에 대해 설명하는 고급 항목을 제공합니다.|  
-  
+|[비관리 코드와의 상호 운용](../../../../docs/framework/interop/index.md)|COM 구성 요소를 .NET Framework에 노출하는 방법과 .NET Framework 구성 요소를 COM에 노출하는 방법에 대해 설명하는 항목을 제공합니다.|
+|[고급 COM 상호 운용성](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|주 interop 어셈블리, 스레딩 및 사용자 지정 마샬링 등에 대해 설명하는 고급 항목을 제공합니다.|
+
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  

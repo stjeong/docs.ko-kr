@@ -3,11 +3,11 @@ title: 문자열(F#)
 description: 설명 하는 방법을 F# 'string' 형식은 유니코드 문자 시퀀스로 변경할 수 없는 텍스트를 나타냅니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 158e30224fe50c2324e40d550b75e6abaf843597
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296791"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127682"
 ---
 # <a name="strings"></a>문자열
 
@@ -88,6 +88,6 @@ def
 
 문자열 처리에 대 한 추가 기능이 포함 된 `String` 모듈에는 `FSharp.Core` 네임 스페이스. 자세한 내용은 [Core.String 모듈](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)

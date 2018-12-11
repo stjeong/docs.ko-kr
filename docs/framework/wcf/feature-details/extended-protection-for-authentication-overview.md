@@ -3,11 +3,11 @@ title: 인증에 대한 확장된 보호 개요
 ms.date: 03/30/2017
 ms.assetid: 3d2ceffe-a7bf-4bd9-a5a2-9406423bd7f8
 ms.openlocfilehash: 6063aa7093ed6c70e835364fdf5dd1c4293dd2eb
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296200"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149746"
 ---
 # <a name="extended-protection-for-authentication-overview"></a>인증에 대한 확장된 보호 개요
 인증에 대한 보호를 강화하면 공격자가 클라이언트의 자격 증명을 가로채서 서버로 전달하는 MITM(Man-In-The-Middle) 공격을 방지할 수 있습니다.  

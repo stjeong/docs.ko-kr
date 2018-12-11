@@ -12,11 +12,11 @@ ms.assetid: 932788f2-b87d-44cf-82f9-04492a8b2722
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: f981d667f3cbf35ab010ac5bd26a9ecd5c2aae11
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50135448"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151345"
 ---
 # <a name="pipeline-development"></a>파이프라인 개발
 추가 기능 파이프라인에는 서로 통신 하도록 호스트 응용 프로그램과 해당 추가 기능을 사용 해야 하는 파이프라인 세그먼트의 경로입니다.  
@@ -80,7 +80,7 @@ ms.locfileid: "50135448"
   
      계산기 추가 기능에 호스트에 대 한 더하기, 빼기, 곱하기 및 나누기 계산을 수행 하는 설명 합니다.  
   
--   [연습: 호스트 변경으로 이전 버전과 호환성 설정](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
+-   [연습: 호스트 변경으로 이전 버전과 호환성을 사용 하도록 설정](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
   
      계산기 추가 기능에 향상 된 계산 기능 및 첫 번째 계산기 추가 기능을 사용 하 여 호환성을 유지 하는 방법에 설명 합니다.  
   

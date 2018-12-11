@@ -4,12 +4,12 @@ description: Azure Event Grid는 안정적인 이벤트 배달 및 이벤트별 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: b2507da61cbea3b4bdc51c6eecfe4d784737e924
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 240542014a34235aea9fd0f8162748749f23eacf
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370207"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143664"
 ---
 # <a name="event-grid"></a>Event Grid
 
@@ -142,5 +142,5 @@ Event Grid의 하나라도 온-프레미스를 실행 하는 응용 프로그램
 * [Azure Functions 프록시 사용](https://docs.microsoft.com/azure/azure-functions/functions-proxies)
 
 >[!div class="step-by-step"]
-[이전](logic-apps.md)
-[다음](durable-azure-functions.md)
+>[이전](logic-apps.md)
+>[다음](durable-azure-functions.md)

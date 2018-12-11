@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: 9b048beb0eb913fc6587dcc639a16df8153c550b
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 7454b25cdb1bede87c6f0bd179fcabd489922263
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123230"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154179"
 ---
 # <a name="state-and-data-in-docker-applications"></a>Docker 응용 프로그램의 상태 및 데이터
 
@@ -49,7 +49,6 @@ A [데이터 볼륨 컨테이너](https://docs.docker.com/glossary/?term=volume)
 
 원격 데이터 원본 및 SQL Database, DocumentDB 또는 Redis와 같은 원격 캐시와 같은 캐시 컨테이너 없이 개발할 같을 수는 있습니다. 비즈니스 응용 프로그램 데이터를 저장 하는 기본 및 검증 방법 중 하나입니다.
 
-
 >[!div class="step-by-step"]
-[이전](monolithic-applications.md)
-[다음](soa-applications.md)
+>[이전](monolithic-applications.md)
+>[다음](soa-applications.md)

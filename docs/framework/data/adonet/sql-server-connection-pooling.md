@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
-ms.openlocfilehash: f416ae8252d9991905da7eeaf4ce6398ff0e7461
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7086bdfbbd2ebace25f2999a0787bcee48494ab8
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514965"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147680"
 ---
 # <a name="sql-server-connection-pooling-adonet"></a>SQL Server 연결 풀링(ADO.NET)
 데이터베이스 서버에 연결하는 과정은 일반적으로 시간이 많이 걸리는 여러 단계로 이루어져 있습니다. 즉, 소켓이나 명명된 파이프 같은 실제 채널을 설정하고 서버와의 초기 핸드셰이크를 발생시키며 연결 문자열 정보를 구문 분석할 뿐 아니라 서버에 연결을 인증하고 현재 트랜잭션에 인리스트먼트하기 위해 검사를 실행해야 하는 등의 단계를 거쳐야 합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "43514965"
   
  다음 C# 예제에서는 새로운 <xref:System.Data.SqlClient.SqlConnection> 개체를 세 개 만들지만, 두 개의 연결 풀로만 이를 관리해야 합니다. 첫 번째와 두 번째 연결 문자열은 `Initial Catalog`에 대해 할당된 값이 다릅니다.  
   
-```  
+```csharp
 using (SqlConnection connection = new SqlConnection(  
   "Integrated Security=SSPI;Initial Catalog=Northwind"))  
     {  
@@ -67,7 +67,7 @@ using (SqlConnection connection = new SqlConnection(
  연결 풀러는 연결이 다시 풀로 회수될 때 연결을 다시 할당하여 연결 요청을 처리합니다. 최대 풀 크기에 도달했는데 사용 가능한 연결이 없으면 요청이 대기됩니다. 그러면 풀러는 시간 제한(기본값 15초)에 도달할 때까지 연결을 회수합니다. 연결 제한 시간을 초과하기 전에 풀러가 요청을 처리하지 못하면 예외가 throw됩니다.  
   
 > [!CAUTION]
->  사용이 끝난 연결은 풀로 반환되도록 항상 닫는 것이 좋습니다. 중 하나를 사용 하 여 수행할 수 있습니다 합니다 `Close` 또는 `Dispose` 의 메서드는 `Connection` 개체 또는 내에서 모든 연결을 열면 됩니다는 `using` C#의 문은 또는 `Using` Visual Basic의 문. 명시적으로 닫히지 않은 연결은 풀에 추가되거나 반환되지 않을 수 있습니다. 자세한 내용은 [문을 사용 하 여](~/docs/csharp/language-reference/keywords/using-statement.md) 또는 [방법: 시스템 리소스를 삭제](~/docs/visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md) Visual Basic에 대 한 합니다.  
+>  사용이 끝난 연결은 풀로 반환되도록 항상 닫는 것이 좋습니다. 중 하나를 사용 하 여 수행할 수 있습니다 합니다 `Close` 또는 `Dispose` 의 메서드는 `Connection` 개체 또는 내에서 모든 연결을 열면 됩니다는 `using` C#의 문은 또는 `Using` Visual Basic의 문. 명시적으로 닫히지 않은 연결은 풀에 추가되거나 반환되지 않을 수 있습니다. 자세한 내용은 [문을 사용 하 여](~/docs/csharp/language-reference/keywords/using-statement.md) 또는 [방법: 시스템 리소스 해제](~/docs/visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md) Visual Basic에 대 한 합니다.  
   
 > [!NOTE]
 >  클래스의 `Close` 메서드에 있는 `Dispose`, `Connection` 또는 다른 관리 개체에 `DataReader` 또는 `Finalize`를 호출해서는 안 됩니다. 종료자에서는 클래스에 직접 속한 관리되지 않는 리소스만 해제합니다. 클래스에 관리되지 않는 리소스가 없는 경우 클래스 정의에 `Finalize` 메서드를 포함하지 마세요. 자세한 내용은 [가비지 수집](../../../../docs/standard/garbage-collection/index.md)합니다.  

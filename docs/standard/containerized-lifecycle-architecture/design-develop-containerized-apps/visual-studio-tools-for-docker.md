@@ -5,12 +5,12 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/12/2018
 ms.custom: vs-dotnet
-ms.openlocfilehash: c58c680c6500bc3b9adec50e18c26af3329122c9
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 79e9b5cc9bac317a368583013abbc5124ef2c9ac
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086390"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151215"
 ---
 # <a name="using-visual-studio-tools-for-docker-visual-studio-on-windows"></a>Visual Studio Tools for Docker (Windows의 Visual Studio) 사용
 
@@ -41,7 +41,7 @@ Visual Studio 2017에 docker 지원이 포함 됩니다. 여기서 Visual Studio
 
 ![Visual Studio에서 새 ASP.NET Core 웹 앱에 대 한 Docker 지원 사용](./media/enable-docker-support-visual-studio.png)
 
-그림 4-27: Visual Studio 2017에서 프로젝트를 만드는 동안 Docker 지원 사용
+그림 4-27: Visual Studio 2017에서 프로젝트를 만드는 동안 Docker 지원을 사용 하도록 설정
 
 를 추가 하거나 Docker 지원을 사용 하도록 설정 하는 경우 Visual Studio 추가 된 *Dockerfile* 프로젝트 파일입니다.
 
@@ -62,7 +62,7 @@ Visual Studio 2017에 docker 지원이 포함 됩니다. 여기서 Visual Studio
 
 ![Visual Studio의 솔루션 탐색기에서 docker 파일](media/docker-support-solution-explorer.png)
 
-Visual Studio 2017의 솔루션 탐색기에서 그림 4-29: Docker 파일
+그림 4-29: Visual Studio 2017의 솔루션 탐색기에서 docker 파일
 
 하는 경우 *docker compose.yml* 이미 하기만 하면 Visual Studio에 필요한 구성 코드 줄을 추가 합니다.
 
@@ -93,5 +93,5 @@ Visual Studio 2017의 솔루션 탐색기에서 그림 4-29: Docker 파일
 ASP.NET Core Docker 컨테이너를 컨테이너 레지스트리에 배포 합니다. [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 >[!div class="step-by-step"]
-[이전](docker-apps-inner-loop-workflow.md)
-[다음](set-up-windows-containers-with-powershell.md)
+>[이전](docker-apps-inner-loop-workflow.md)
+>[다음](set-up-windows-containers-with-powershell.md)

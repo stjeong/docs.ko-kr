@@ -2,12 +2,12 @@
 title: 본문 요소에 의한 디스패치
 ms.date: 03/30/2017
 ms.assetid: f64a3c04-62b4-47b2-91d9-747a3af1659f
-ms.openlocfilehash: 449c153092d80bb457a2059b80158ea665bfc645
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 58d505770a495e5e423104b9fb912d088ca56f86
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43396380"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143160"
 ---
 # <a name="dispatch-by-body-element"></a>본문 요소에 의한 디스패치
 이 샘플에서는 들어오는 메시지를 작업에 할당하는 대체 알고리즘을 구현하는 방법을 보여 줍니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "43396380"
   
  클래스 생성자에는 `XmlQualifiedName`과 문자열 쌍으로 채워진 사전이 필요합니다. 여기에서 정규화된 이름은 SOAP 본문에서 첫 번째 자식의 이름을 나타내고 문자열은 일치하는 작업 이름을 나타냅니다. `defaultOperationName`은 이 사전과 일치하지 않는 모든 메시지를 받는 작업의 이름입니다.  
   
-```  
+```csharp
 class DispatchByBodyElementOperationSelector : IDispatchOperationSelector  
 {  
     Dictionary<XmlQualifiedName, string> dispatchDictionary;  
@@ -31,13 +31,14 @@ class DispatchByBodyElementOperationSelector : IDispatchOperationSelector
         this.dispatchDictionary = dispatchDictionary;  
         this.defaultOperationName = defaultOperationName;  
     }  
+}
 ```  
   
  <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> 구현은 인터페이스 <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation%2A>에 메서드가 하나만 있으므로 매우 간단하게 빌드할 수 있습니다. 이 메서드의 작업은 들어오는 메시지를 검사하고 현재 엔드포인트에 대한 서비스 계약의 메서드 이름과 동일한 문자열을 반환하는 것입니다.  
   
  이 샘플에서 작업 선택기는 <xref:System.Xml.XmlDictionaryReader>를 사용하여 들어오는 메시지의 본문에 대한 <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>를 가져옵니다. 이 메서드는 메시지 본문의 첫 번째 자식에 판독기를 미리 배치하여 현재 요소의 이름과 네임스페이스 URI를 가져와서 `XmlQualifiedName`에 결합한 다음 작업 선택기에서 보유하고 있는 사전에서 해당 작업을 조회하는 데 사용할 수 있도록 합니다.  
   
-```  
+```csharp
 public string SelectOperation(ref System.ServiceModel.Channels.Message message)  
 {  
     XmlDictionaryReader bodyReader = message.GetReaderAtBodyContents();  
@@ -57,7 +58,7 @@ public string SelectOperation(ref System.ServiceModel.Channels.Message message)
   
  <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> 또는 메시지 본문 내용에 액세스할 수 있는 권한을 제공하는 다른 메서드를 사용하여 메시지 본문에 액세스하면 메시지가 "읽음"으로 표시됩니다. 즉, 메시지를 추가로 처리할 수 없습니다. 따라서 작업 선택기는 다음 코드에 표시된 메서드를 사용하여 들어오는 메시지의 복사본을 만듭니다. 판독기의 위치는 검사 중에 변경되지 않기 때문에 새로 만든 메시지에서 이를 참조할 수 있습니다. 입력 메시지의 메시지 속성 및 메시지 헤더도 이 새 메시지에 복사되므로 원본 메시지가 정확하게 복제됩니다.  
   
-```  
+```csharp
 private Message CreateMessageCopy(Message message,   
                                      XmlDictionaryReader body)  
 {  
@@ -77,7 +78,7 @@ private Message CreateMessageCopy(Message message,
   
  간단한 설명을 위해 다음에 인용된 코드에서는 이 샘플에 사용된 디스패처의 구성 변경에 영향을 주는 <xref:System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior%2A> 메서드의 구현만 보여 줍니다. 다른 메서드는 작업을 수행하지 않고 호출자에게 반환되기 때문에 표시되지 않습니다.  
   
-```  
+```csharp
 [AttributeUsage(AttributeTargets.Class|AttributeTargets.Interface)]  
 class DispatchByBodyElementBehaviorAttribute : Attribute, IContractBehavior  
 {  
@@ -92,7 +93,7 @@ class DispatchByBodyElementBehaviorAttribute : Attribute, IContractBehavior
   
  사전이 채워지면 이 정보로 새 `DispatchByBodyElementOperationSelector`가 생성되고 디스패치 런타임의 작업 선택기로 설정됩니다.  
   
-```  
+```csharp
 public void ApplyDispatchBehavior(ContractDescription contractDescription, ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.DispatchRuntime dispatchRuntime)  
 {  
     Dictionary<XmlQualifiedName,string> dispatchDictionary =   
@@ -123,7 +124,7 @@ public void ApplyDispatchBehavior(ContractDescription contractDescription, Servi
   
  작업 선택기는 메시지 본문 요소만을 기준으로 디스패치하고 "Action"을 무시하므로 `ReplyAction`의 <xref:System.ServiceModel.OperationContractAttribute> 속성에 와일드카드 "*"를 할당하여 반환된 회신에서 "Action" 헤더를 검사하지 않도록 런타임에 알려야 합니다. "Action" 속성이 와일드 카드를 설정 하는 기본 작업이 있어야 하는 데 필요한 것 또한 "\*"입니다. 기본 작업은 디스패치할 수 없는 모든 메시지를 받으므로 `DispatchBodyElementAttribute`이 없습니다.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples"),  
                             DispatchByBodyElementBehavior]  
 public interface IDispatchedByBody  

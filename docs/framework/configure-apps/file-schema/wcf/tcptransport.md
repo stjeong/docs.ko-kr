@@ -2,12 +2,12 @@
 title: '&lt;tcpTransport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
-ms.openlocfilehash: 92590f556d93859e8681eea8f8f05da4f560e150
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 39fb57af6ad97c1a0e51a2c5dcf06245ddf293ba
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43738182"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152471"
 ---
 # <a name="lttcptransportgt"></a>&lt;tcpTransport&gt;
 사용자 지정 바인딩에 대한 메시지를 전송하기 위해 채널이 사용할 수 있는 TCP 전송을 정의합니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "43738182"
 |channelInitializationTimeout|수락할 채널을 초기화하기 위한 시간 제한을 가져오거나 설정합니다.  연결이 끊어지기 전에 채널이 초기화 상태를 유지할 수 있는 최대 시간(초)입니다. 이 할당량에는 TCP 연결이 .Net 메시지 프레이밍 프로토콜을 사용하여 자체 인증하는 데 걸릴 수 있는 시간이 포함됩니다. 서버가 인증을 수행하는 데 충분한 정보를 가지려면 클라이언트가 몇 가지 초기 데이터를 보내야 합니다. 기본값은 30초입니다.|  
 |connectionBufferSize|통신 중에 클라이언트나 서비스로부터 serialize된 메시지 청크를 전송할 때 사용되는 버퍼의 크기를 가져오거나 설정합니다.|  
 |hostNameComparisonMode|URI 비교 시 서비스에 액세스하는 데 호스트 이름이 사용되는지 여부를 나타내는 값을 가져오거나 설정합니다.|  
-|listenBacklog|웹 서비스에 대해 보류할 수 있는 최대 대기 중인 연결 요청 수입니다. `connectionLeaseTimeout` 특성은 연결 예외가 throw되기 전에 클라이언트가 연결을 대기하는 시간을 제한합니다. 웹 서비스에 대해 보류할 수 있는 최대 대기 중인 연결 요청 수를 제어하는 소켓 수준 속성입니다. ListenBacklog 값이 너무 낮으면 WCF는 요청 수락을 중지하므로 서버가 기존의 대기 중인 연결 일부를 인식할 때까지 새 연결을 삭제합니다. 기본값은 16 * 프로세서 수입니다.|  
+|listenBacklog|웹 서비스에 대해 보류할 수 있는 최대 대기 중인 연결 요청 수입니다. `connectionLeaseTimeout` 특성은 연결 예외가 throw되기 전에 클라이언트가 연결을 대기하는 시간을 제한합니다. 웹 서비스에 대해 보류할 수 있는 최대 대기 중인 연결 요청 수를 제어하는 소켓 수준 속성입니다. ListenBacklog 너무 낮은 경우 WCF는 요청 수락을 중지 하므로 기존 큐에 대기 중인된 연결의 일부 서버 승인 될 때까지 새 연결을 삭제 합니다. 기본값은 16 * 프로세서 수입니다.|  
 |manualAddressing|메시지의 주소를 수동으로 지정해야 하는지 여부를 나타내는 값을 가져오거나 설정합니다.|  
 |maxBufferPoolSize|전송에 사용되는 최대 버퍼 풀 크기를 가져오거나 설정합니다.|  
 |maxBufferSize|사용할 버퍼의 최대 크기를 가져오거나 설정합니다. 스트리밍된 메시지의 경우 이 값은 버퍼링된 모드에서 읽어오는 메시지 헤더의 최대 예상 크기 이상이어야 합니다.|  

@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: e9f81c5fecc06b19ebd84cc4b2cc232686768a90
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: c2a6b9802bbb995939d33c5c40ef9c1afa1620e5
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106634"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53148823"
 ---
 # <a name="introduction-to-containers-and-docker"></a>컨테이너 및 Docker 소개
 
@@ -27,10 +27,9 @@ ms.locfileid: "37106634"
 
 이 예제에서는 Docker 호스트가 컨테이너 호스트이며 앱 1, 앱 2, Svc 1, Svc 2가 컨테이너화된 응용 프로그램 또는 서비스입니다.
 
-컨테이너화로 얻을 수 있는 또 다른 이점은 확장성입니다. 단기 작업에 대한 새 컨테이너를 만들어 신속하게 스케일 아웃할 수 있습니다. 응용 프로그램의 관점에서 볼 때 *이미지 인스턴스화*(컨테이너 생성)는 서비스 또는 웹앱과 같은 프로세스 인스턴스화와 비슷합니다. 그러나 안정성을 생각한다면, 동일한 이미지의 여러 인스턴스를 여러 호스트 서버에서 실행할 경우 일반적으로 기본 도메인이 다른 다양한 호스트 서버 또는 VM에서 각 컨테이너(이미지 인스턴스)를 실행하려 할 것입니다.
+컨테이너화로 얻을 수 있는 또 다른 이점은 확장성입니다. 단기 작업에 대한 새 컨테이너를 만들어 신속하게 스케일 아웃할 수 있습니다. 응용 프로그램의 관점에서 볼 때 *이미지 인스턴스화*(컨테이너 생성)는 서비스 또는 웹앱과 같은 프로세스 인스턴스화와 비슷합니다. 하지만 안정성을 제공, 여러 호스트 서버에 동일한 이미지의 여러 인스턴스를 실행할 때 일반적으로 원하는 각 컨테이너는 다른 호스트 서버에서 실행 되도록 (이미지 인스턴스) 또는 다른 장애 도메인에 VM.
 
 즉, 컨테이너는 전체 응용 프로그램 수명 주기 워크플로에서 격리, 이식성, 민첩성, 확장성, 제어에 대한 이점이 있습니다. 가장 중요한 이점은 개발 및 작업 사이에서 격리를 제공한다는 것입니다.
 
-
 >[!div class="step-by-step"]
-[다음](what-is-docker.md)
+>[다음](what-is-docker.md)

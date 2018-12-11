@@ -3,11 +3,11 @@ title: 개체 지향 프로그래밍 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
 ms.openlocfilehash: 058d8b932e50f784d4a5cefa9fadfb31953687f0
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297090"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153930"
 ---
 # <a name="object-oriented-programming-visual-basic"></a>개체 지향 프로그래밍 (Visual Basic)
 
@@ -173,7 +173,7 @@ Class SampleClass
 End Class
 ```
 
-자세한 내용은 참조 하십시오: [개체 수명: 개체가 만들어지고 소멸 되는 하는 방법](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)합니다.
+자세한 내용은 다음을 참조하세요. [개체 수명: 개체가 만들어지고 제거 하는 방법을](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)합니다.
 
 #### <a name="destructors"></a>소멸자
 
@@ -254,7 +254,7 @@ Dim sampleObject = New SampleClass With
 자세한 내용은 다음을 참조하세요.
 
 - [New 연산자](../../../visual-basic/language-reference/operators/new-operator.md)
-- [개체 이니셜라이저: 명명된 형식과 익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 
 ### <a name="shared-classes-and-members"></a>공유 클래스 및 멤버
 
@@ -293,7 +293,7 @@ Dim sampleObject =
     New With {Key .FirstProperty = "A", .SecondProperty = "B"}
 ```
 
-자세한 내용은 [무명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)을 참조하세요.
+자세한 내용은 다음을 참조하세요. [익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)합니다.
 
 ## <a name="inheritance"></a>상속
 
@@ -434,6 +434,6 @@ End Class
 - [Delegate 문](../../../visual-basic/language-reference/statements/delegate-statement.md)
 - [AddressOf 연산자](../../../visual-basic/language-reference/operators/addressof-operator.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Basic 프로그래밍 가이드](../../../visual-basic/programming-guide/index.md)

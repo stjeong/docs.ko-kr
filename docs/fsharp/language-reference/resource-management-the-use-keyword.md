@@ -1,15 +1,15 @@
 ---
-title: '리소스 관리: use 키워드(F#)'
+title: '리소스 관리: 키워드를 사용 하 여 (F#)'
 description: 알아봅니다는 F# 키워드 'use' 및 'using' 함수를 초기화 및 리소스의 해제를 제어할 수 있습니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 300fb4113019f676625f75541d117458eab3f6ab
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296882"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147634"
 ---
-# <a name="resource-management-the-use-keyword"></a>리소스 관리: use 키워드
+# <a name="resource-management-the-use-keyword"></a>리소스 관리: Use 키워드
 
 키워드에 설명 `use` 하며 `using` 함수, 초기화 및 리소스의 해제를 제어할 수 있습니다.
 
@@ -58,6 +58,6 @@ ms.locfileid: "52296882"
 
 합니다 `using` 함수 및 `use` 바인딩은 거의 같은 방식으로 동일한 작업을 수행 합니다. 합니다 `using` 키워드 좀 더 잘 제어할 때 `Dispose` 라고 합니다. 사용 하는 경우 `using`, `Dispose` 사용 하는 경우, 함수 또는 람다 식의 끝에서 호출 되는 `use` 키워드를 `Dispose` 포함 하는 코드 블록의 끝에 호출 됩니다. 일반적으로 사용 하려는 `use` of를 `using` 함수입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)

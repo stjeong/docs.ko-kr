@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-ms.openlocfilehash: a809dbc34d08fc864f6cfe8263489ab52ce41e35
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8719ffc458297191514cfe65714d5b6dd862dd60
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183804"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143625"
 ---
 # <a name="adonet-code-examples"></a>ADO.NET 코드 예제
 이 항목에 나열된 코드에서는 다음과 같은 ADO.NET 기술을 사용하여 데이터베이스에서 데이터를 검색하는 방법을 보여 줍니다.
@@ -63,7 +63,7 @@ ms.locfileid: "50183804"
  [!code-vb[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Oracle/VB/source.vb#1)]
 
 ## <a name="entity-framework-examples"></a>Entity Framework 예제
-다음에 나열된 코드에서는 EDM(엔터티 데이터 모델)의 엔터티를 쿼리하여 데이터 소스에서 데이터를 검색하는 방법을 보여 줍니다. 이러한 예에서 사용 된 [Northwind 모델](https://msdn.microsoft.com/74521f8c-e974-48cb-8858-c08deff52638)합니다. 자세한 내용은 [Entity Framework 개요](../../../../docs/framework/data/adonet/ef/overview.md)합니다.
+다음에 나열된 코드에서는 EDM(엔터티 데이터 모델)의 엔터티를 쿼리하여 데이터 소스에서 데이터를 검색하는 방법을 보여 줍니다. 이러한 예제는 Northwind 샘플 데이터베이스를 기반으로 모델을 사용 합니다. Entity Framework에 대 한 자세한 내용은 참조 하세요. [Entity Framework 개요](../../../../docs/framework/data/adonet/ef/overview.md)합니다.
 
 ### <a name="linq-to-entities"></a>LINQ to Entities
 이 예제 코드에서는 LINQ 쿼리를 사용하여 CategoryID와 CategoryName 속성만 포함된 익명 형식으로 프로젝션된 Categories 개체로 데이터를 반환합니다. 자세한 내용은 [LINQ to Entities 개요](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)합니다.
@@ -343,10 +343,10 @@ Class LinqSqlSample
 End Class
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)  
  [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [데이터 응용 프로그램 만들기](https://msdn.microsoft.com/library/ab334d5f-4f49-4346-bce0-3325d6130b3e)  
  [엔터티 데이터 모델 (Entity Framework 작업) 쿼리](https://msdn.microsoft.com/187f1caa-e4d3-4e31-bd99-5d5c2b329c77)  
- [방법: 익명 형식 개체를 반환 하는 쿼리 실행](https://msdn.microsoft.com/3b264025-e911-4d73-90ce-992d2b9d189d)  
+ [어떻게: 익명 형식 개체를 반환 하는 쿼리 실행](https://msdn.microsoft.com/3b264025-e911-4d73-90ce-992d2b9d189d)  
  [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)  

@@ -1,13 +1,13 @@
 ---
 title: 제네릭(F#)
-description: F# 제네릭 함수 및 코드를 반복 하지 않고 다양 한 형식 사용 하는 코드를 쓸 수 있는 형식을 사용 하는 방법에 알아봅니다.
+description: 사용 하는 방법을 알아봅니다 F# 제네릭 함수 및 형식 코드를 반복 하지 않고 다양 한 형식 사용 하는 코드를 작성할 수 있습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: fc061f19c6c7fa737f7ca05aae83fd42c0010b37
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 7eae69bc0286bff4997c6399c7417bde119c2204
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44084964"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147007"
 ---
 # <a name="generics"></a>제네릭
 
@@ -71,8 +71,8 @@ F# 컴파일러가 코드에서 형식을 유추할 경우 제네릭일 수 있�
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1702.fs)]
 
->[!NOTE]
-제네릭 형식을 이름으로 참조하는 방법에는 두 가지가 있습니다. 예를 들어 `list<int>` 및 `int list`는 단일 형식 인수 `int`를 포함하는 제네릭 형식 `list`를 참조하는 두 가지 방법입니다. 두 번째 형식은 일반적으로 기본 제공된 F# 형식(예: `list` 및 `option`)에서만 사용됩니다. 형식 인수가 여러 개 있으면 일반적으로 `Dictionary<int, string>` 구문을 사용할 수 있지만 `(int, string) Dictionary` 구문을 사용할 수도 있습니다.
+> [!NOTE]
+> 제네릭 형식을 이름으로 참조하는 방법에는 두 가지가 있습니다. 예를 들어 `list<int>` 및 `int list`는 단일 형식 인수 `int`를 포함하는 제네릭 형식 `list`를 참조하는 두 가지 방법입니다. 두 번째 형식은 일반적으로 기본 제공된 F# 형식(예: `list` 및 `option`)에서만 사용됩니다. 형식 인수가 여러 개 있으면 일반적으로 `Dictionary<int, string>` 구문을 사용할 수 있지만 `(int, string) Dictionary` 구문을 사용할 수도 있습니다.
 
 ## <a name="wildcards-as-type-arguments"></a>형식 인수로 와일드카드 사용
 
@@ -92,7 +92,7 @@ F# 프로그램에서 사용할 수 있는 두 가지 종류의 형식 매개 �
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1705.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [언어 참조](../index.md)
 - [유형](../fsharp-types.md)

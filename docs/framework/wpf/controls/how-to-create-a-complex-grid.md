@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Grid control [WPF], creating [WPF], complex grid
 ms.assetid: 4ce3040a-a156-4364-9596-98ca1eca5550
 ms.openlocfilehash: e2356113457e8c9a6737132e9779e49c05a23d77
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52295842"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149785"
 ---
 # <a name="how-to-create-a-complex-grid"></a>복잡 한 모눈을 만드는 방법
 
@@ -30,7 +30,7 @@ ms.locfileid: "52295842"
 
 ![결과 컨트롤의 스크린샷](./media/how-to-create-a-complex-grid/wpf-manual-calendar.png)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Windows.Controls.Grid?displayProperty=nameWithType>
 - <xref:System.Windows.Documents.TableCell?displayProperty=nameWithType>

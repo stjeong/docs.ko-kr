@@ -3,11 +3,11 @@ title: LINQ to DataSet 프로젝트 Visual Studio에서 만들기
 ms.date: 08/15/2018
 ms.assetid: 49ba6cb0-cdd2-4571-aeaa-25bf0f40e9b3
 ms.openlocfilehash: 22763d3b9581d09d7bdda0c09480f8d36bb8e2ec
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297018"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154036"
 ---
 # <a name="how-to-create-a-linq-to-dataset-project-in-visual-studio"></a>방법: LINQ to DataSet 프로젝트 Visual Studio에서 만들기
 
@@ -37,6 +37,6 @@ LINQ to DataSet 기능 기존 프로젝트에서 사용 하도록 설정 하려�
 
 1. 필요에 따라 추가 `using` 지시문 (또는 `Imports` 문)에 대 한 **System.Data.Common** 하거나 **System.Data.SqlClient**데이터베이스에 연결 하는 방법에 따라 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [LINQ to DataSet 사용 하 여 시작](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)

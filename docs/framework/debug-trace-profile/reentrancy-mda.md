@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5aea903a7b16491a84998d8290270044e167b79f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cc2e725ecb2208256f6d0e025d4cc79339f385cd
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33387863"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53130119"
 ---
 # <a name="reentrancy-mda"></a>reentrancy MDA
 이전에 수행된 관리 코드에서 네이티브 코드로의 전환이 순서대로 수행되지 않은 경우 네이티브 코드에서 관리 코드로 전환하려고 하면 `reentrancy` MDA(관리 디버깅 도우미)가 활성화됩니다.  
@@ -56,7 +56,7 @@ low-level native extensibility points. Managed Debugging Assistant
 ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.  
 ```  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -69,7 +69,7 @@ ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.
 ## <a name="example"></a>예제  
  다음 코드 예제는 <xref:System.AccessViolationException>가 throw되는 원인이 됩니다.  따라서 벡터화된 예외 처리를 지원하는 Windows 버전에서 관리되는 벡터화된 예외 처리기가 호출됩니다.  `reentrancy` MDA가 사용되면 운영 체제의 벡터화된 예외 처리 지원 코드에서 `MyHandler`를 호출하려는 동안 MDA가 활성화됩니다.  
   
-```  
+```csharp
 using System;  
 public delegate int ExceptionHandler(IntPtr ptrExceptionInfo);  
   

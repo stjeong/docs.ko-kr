@@ -1,24 +1,24 @@
 ---
 title: 리터럴(F#)
-description: F# 프로그래밍 언어의 리터럴 형식에 알아봅니다.
+description: 리터럴 형식에 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: e6d34acd928edce8447c793105b08085ab0757b9
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 7a531cd63c5a4dc1123834d481fc998216b0d82d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44087627"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53131341"
 ---
 # <a name="literals"></a>리터럴
 
 > [!NOTE]
-이 문서의 API 참조 링크 하면 MSDN (당분간).
+> 이 문서의 API 참조 링크 하면 MSDN (당분간).
 
-이 항목에서는 F#의 리터럴 형식을 지정 하는 방법을 보여 주는 테이블을 제공 합니다.
+이 항목에서는 테이블의 리터럴 형식을 지정 하는 방법을 보여 주는 F#입니다.
 
 ## <a name="literal-types"></a>리터럴 형식
 
-다음 표에서 F#의 리터럴 형식을 보여 줍니다. 16 진수 표기법으로 숫자를 나타내는 문자; 대/소문자 구분 하지 않습니다. 문자 형식을 식별 하는 대/소문자를 구분 하지 않습니다.
+다음 표에서 리터럴 형식에서 F#입니다. 16 진수 표기법으로 숫자를 나타내는 문자; 대/소문자 구분 하지 않습니다. 문자 형식을 식별 하는 대/소문자를 구분 하지 않습니다.
 
 |형식|설명|접미사 또는 접두사|예제|
 |----|-----------|----------------|--------|
@@ -47,20 +47,20 @@ ms.locfileid: "44087627"
 
 유니코드 문자열에는 명시적 인코딩을 사용 하 여 지정할 수 있는 포함 될 수 있습니다 `\u` 뒤에 16 비트 16 진수 코드 또는 UTF-32 인코딩을 사용 하 여 지정할 수 있는 `\U` 뒤에 유니코드를 나타내는 32 비트 16 진수 코드 서로게이트 쌍입니다.
 
-F# 3.1부터 사용할 수는 `+` 문자열 리터럴을 결합 하 여 로그인 합니다. 비트 이용할 수 있습니다 또는 (`|||`) 열거형 플래그를 결합 하는 연산자입니다. 예를 들어, 다음 코드는 F# 3.1에서 유효 합니다.
+F# 3.1에서는 사용할 수는 `+` 문자열 리터럴을 결합 하 여 로그인 합니다. 비트 이용할 수 있습니다 또는 (`|||`) 열거형 플래그를 결합 하는 연산자입니다. 예를 들어, 다음 코드는에서 사용할 F# 3.1:
 
 ```fsharp
 [<Literal>]
-let Literal1 = "a" + "b"
+let literal1 = "a" + "b"
 
 [<Literal>]
-let FileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let fileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let Literal2 = 1 ||| 64
+let literal2 = 1 ||| 64
 
 [<Literal>]
-let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
+let literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
 
 다른 비트 연산자의 사용이 허용 되지 않습니다.
@@ -82,16 +82,16 @@ let Numbers = (0x9F, 0o77, 0b1010)
 
 ## <a name="underscores-in-numeric-literals"></a>숫자 리터럴의 밑줄
 
-F# 4.1 부터는을 구분할 수 있습니다 자리 밑줄 문자 (`_`).
+부터 F# 4.1 밑줄 문자를 사용 하 여 숫자를 구분할 수 있습니다 (`_`).
 
 ```fsharp
-let DeadBeef = 0xDEAD_BEEF
+let value = 0xDEAD_BEEF
 
-let DeadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
+let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
-let ExampleSSN = 123_456_7890
+let exampleSSN = 123_456_7890
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Core.LiteralAttribute 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)

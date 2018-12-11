@@ -3,11 +3,11 @@ title: 보안 세션
 ms.date: 03/30/2017
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
 ms.openlocfilehash: 1f3a1e23f7cac2540216365acfca5c23cddfce71
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296934"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126694"
 ---
 # <a name="secure-sessions"></a>보안 세션
 Windows Communication Foundation (WCF)의 기능은 메시지는 전송 된 순서에서를 보장 하는 신뢰할 수 있는 세션입니다. 이 단원의 항목에서는 신뢰할 수 있는 세션을 만들 때 고려해야 할 보안 관련 문제에 대해 설명합니다. 신뢰할 수 있는 세션에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 세션](../../../../docs/framework/wcf/using-sessions.md)합니다.  
@@ -20,8 +20,8 @@ Windows Communication Foundation (WCF)의 기능은 메시지는 전송 된 순�
 |||  
 |-|-|  
 |[보안 대화 및 보안 세션](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)|보안 대화 및 보안 세션은 동의어입니다. 이 항목에서는 보안 대화가 작동하는 방식과 패턴을 사용하는 시기와 이유에 대해 설명합니다.|  
-|[방법: 보안 세션 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-secure-session.md)|기본적인 보안 세션 만들기에 대해 설명합니다.|  
-|[방법: 보안 세션에 대한 보안 컨텍스트 토큰 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)|클라이언트로 상태 및 세션을 관리할 웹 팜을 만드는 단계에 대해 설명합니다.|  
+|[어떻게: 보안 세션 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-secure-session.md)|기본적인 보안 세션 만들기에 대해 설명합니다.|  
+|[어떻게: 보안 컨텍스트 토큰이 보안 세션](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)|클라이언트로 상태 및 세션을 관리할 웹 팜을 만드는 단계에 대해 설명합니다.|  
 |[보안 세션에 대한 보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md)|보안 세션에 대해 고려할 사항에 대해 설명합니다.|  
   
 ## <a name="reference"></a>참조  
@@ -35,6 +35,6 @@ Windows Communication Foundation (WCF)의 기능은 메시지는 전송 된 순�
  [서비스 디자인 및 구현](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 메시지 재생을 검색하도록 설정](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)  
+ [어떻게: 메시지 재생 검색 사용](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)  
  [재생 공격](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
- [방법: 세션이 필요한 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
+ [어떻게: 세션이 필요한 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)

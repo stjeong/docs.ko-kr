@@ -7,12 +7,12 @@ helpviewer_keywords:
 - WPF [WPF], creating Direct3D9 content
 - Direct3D9 [WPF interoperability], creating Direct3D9 content
 ms.assetid: 286e98bc-1eaa-4b5e-923d-3490a9cca5fc
-ms.openlocfilehash: 321c4ba8659bd2226fff96e74e81ef24f0077c3d
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 192036836dfb010274944006feea44e5d81ff4e3
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200916"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168756"
 ---
 # <a name="walkthrough-creating-direct3d9-content-for-hosting-in-wpf"></a>연습: WPF에서 호스팅할 Direct3D9 콘텐츠 만들기
 이 연습에는 Windows Presentation Foundation (WPF) 응용 프로그램에서 호스팅에 적합 한 Direct3D9 콘텐츠를 만드는 방법을 보여 줍니다. WPF 응용 프로그램에서 호스팅할 Direct3D9 콘텐츠 호스팅에 대 한 자세한 내용은 참조 하세요. [WPF 및 Direct3D9 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md)합니다.
@@ -30,7 +30,7 @@ ms.locfileid: "50200916"
 
 -   Visual Studio 2010
 
--   DirectX SDK 9or에 나중에 해당 합니다.
+-   DirectX SDK 9 이상입니다.
 
 ## <a name="creating-the-direct3d9-project"></a>Direct3D9 프로젝트 만들기
  첫 번째 단계는 Direct3D9 프로젝트 만들기 및 구성 하는 것입니다.
@@ -137,7 +137,7 @@ ms.locfileid: "50200916"
 
 ## <a name="next-steps"></a>다음 단계
 
--   WPF 응용 프로그램에서 호스팅할 Direct3D9 콘텐츠를 호스트 합니다. 자세한 내용은 [연습: WPF에서 Direct3D9 콘텐츠 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md)합니다.
+-   WPF 응용 프로그램에서 호스팅할 Direct3D9 콘텐츠를 호스트 합니다. 자세한 내용은 참조 하세요. [연습: WPF에서 Direct3D9 콘텐츠 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

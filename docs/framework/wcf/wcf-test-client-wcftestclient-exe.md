@@ -3,11 +3,11 @@ title: WCF 테스트 클라이언트(WcfTestClient.exe)
 ms.date: 03/30/2017
 ms.assetid: d4302855-677f-4640-aa90-c5d785d72fb7
 ms.openlocfilehash: 4e3531b91382c4d47aed73198bd8dd954ae4ca1f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181594"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149005"
 ---
 # <a name="wcf-test-client-wcftestclientexe"></a>WCF 테스트 클라이언트(WcfTestClient.exe)
 Windows Communication Foundation (WCF) 테스트 클라이언트 (WcfTestClient.exe)는 테스트 매개 변수를 입력 하 여 해당 서비스에 입력을 사용 하면 서비스가 다시 보낸 응답을 확인 하는 GUI 도구입니다. 서비스를 매끄럽게 테스트할 WCF 서비스 호스트를 함께 사용 하면 환경을 제공 합니다.  
@@ -136,7 +136,7 @@ Windows Communication Foundation (WCF) 테스트 클라이언트 (WcfTestClient.
 ## <a name="features-supported-by-wcf-test-client"></a>WCF 테스트 클라이언트에서 지원되는 기능  
  다음은 WCF 테스트 클라이언트에서 지 원하는 기능 목록입니다.  
   
--   서비스 호출: 요청/응답 및 단방향 메시지.  
+-   서비스 호출: 요청/응답 및 단방향 메시지입니다.  
   
 -   바인딩: Svcutil.exe에서 지원되는 모든 바인딩.  
   
@@ -156,7 +156,7 @@ Windows Communication Foundation (WCF) 테스트 클라이언트 (WcfTestClient.
   
 -   보안: [!INCLUDE[infocard](../../../includes/infocard-md.md)] , 인증서 및 이름/암호  
   
--   바인딩: WSFederationbinding, 컨텍스트 바인딩 및 Https 바인딩, WebHttpbinding(Json 응답 메시지 지원)  
+-   바인딩: WSFederationbinding, Context 바인딩 및 Https 바인딩, WebHttpbinding (Json 응답 메시지 지원).  
   
 ## <a name="closing-wcf-test-client"></a>WCF 테스트 클라이언트 닫기  
  다음과 같은 방법으로 WCF 테스트 클라이언트를 닫을 수 있습니다.  

@@ -1,15 +1,15 @@
 ---
-title: 'Windows Communication Foundation 채택 예상: 이후의 통합을 용이하게 함'
+title: 'Windows Communication Foundation 채택 예상: 향후 통합 간소화'
 ms.date: 03/30/2017
 ms.assetid: 3028bba8-6355-4ee0-9ecd-c56e614cb474
 ms.openlocfilehash: f4cc450b04fd05d390a1f41f3d14c19f4b23be29
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296496"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155147"
 ---
-# <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-integration"></a>Windows Communication Foundation 채택 예상: 이후의 통합을 용이하게 함
+# <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-integration"></a>Windows Communication Foundation 채택 예상: 향후 통합 간소화
 현재 ASP.NET을 사용 하 고 나중에 WCF를 사용 하는 경우이 항목에서는 새 ASP.NET 웹 서비스는 WCF 응용 프로그램과 함께 잘 작동 하는지 확인 하기 위한 지침을 제공 합니다.  
   
 ## <a name="general-recommendations"></a>일반 권장 사항  
@@ -44,4 +44,4 @@ public interface IEcho
  IIS(인터넷 정보 서비스)에서 제공하는 인증 옵션은 사용하지 마십시오. WCF 클라이언트 지원 하지 않습니다. 서비스를 보호 해야 하는 경우 이러한 옵션은 더 풍부 하며 표준 프로토콜을 기반으로 하기 때문에 WCF에서 제공 하는 옵션을 사용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation 채택 예상: 이후의 마이그레이션을 용이하게 함](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)
+ [Windows Communication Foundation 채택 예상: 향후 마이그레이션 간소화](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)

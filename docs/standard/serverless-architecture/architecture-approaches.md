@@ -4,12 +4,12 @@ description: 서버 리스 N 계층 아키텍처에서 클라우드 기반 엔�
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 21e191f17e7d0b4f2d64454fb14c46a4831a8375
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 04ad383586f974bb2dccc4623a9a254f5668dab4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "49370286"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126747"
 ---
 # <a name="architecture-approaches"></a>아키텍처 접근 방식
 
@@ -97,5 +97,5 @@ ms.locfileid: "49370286"
 궁극적으로 모든 나중에 설명 하는 서버 리스의 이점 이용을 포함 하 여 이러한 문제를 해결 하는 솔루션을 있습니다.
 
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](architecture-deployment-approaches.md)
+>[이전](index.md)
+>[다음](architecture-deployment-approaches.md)

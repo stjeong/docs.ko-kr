@@ -1,6 +1,6 @@
 ---
 title: 매개 변수 디자인
-ms.date: 03/30/2017
+ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - member design guidelines [.NET Framework], parameters
@@ -9,14 +9,13 @@ helpviewer_keywords:
 - parameters, design guidelines
 - reserved parameters
 ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: ea5311de8cef266af23b259d943568bfa95eaf72
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+author: KrzysztofCwalina
+ms.openlocfilehash: a639e1389d0771dfcb5635b7d78982150b684fd3
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45964818"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150812"
 ---
 # <a name="parameter-design"></a>매개 변수 디자인
 이 섹션에서는 매개 변수 디자인, 인수를 확인 하는 것에 대 한 지침을 사용 하 여 섹션을 비롯 한 광범위 한 지침을 제공 합니다. 에 설명 된 지침을 참조 해야 뿐만 [매개 변수 명명](../../../docs/standard/design-guidelines/naming-parameters.md)합니다.  
@@ -154,9 +153,9 @@ public class String {
   
  *Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*  
   
- *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

@@ -4,12 +4,12 @@ ms.date: 04/23/2017
 helpviewer_keywords:
 - tuples [Visual Basic]
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
-ms.openlocfilehash: d76c14aa83fcf47faea41946614e83cfbc8ad57b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c0198cde88b66f5e115c82b5454bd8a32db7ef96
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195504"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143716"
 ---
 # <a name="tuples-visual-basic"></a>튜플 (Visual Basic)
 
@@ -50,7 +50,7 @@ Visual Basic 15.3부터 Visual Basic 유추할 수 있는 튜플 요소 이름 �
 
 [!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
 
-수감 되어 튜플 요소 이름을 사용 하도록 설정, Visual Basic 프로젝트에서는 Visual Basic 컴파일러의 버전을 정의 해야 합니다 (\*.vbproj) 파일: 
+유추 된 튜플 요소 이름을 사용 하도록 설정, Visual Basic 프로젝트에서는 Visual Basic 컴파일러의 버전을 정의 해야 합니다 (\*.vbproj) 파일: 
 
 ```xml 
 <PropertyGroup> 
@@ -171,6 +171,6 @@ Visual Basic 튜플은의 인스턴스를 **System.ValueTuple** .NET Framework 4
 
 [!code-vb[Convert](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple2.vb#1)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Visual Basic 언어 참조](index.md)  

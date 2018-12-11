@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ULong data type
 - UL literal type characters [Visual Basic]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-ms.openlocfilehash: 13dec9f298655a4bfe6672e2dbba7c7262379cc4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 60f39d7bd294a737b5e3c6d5877f5d7e46269dc1
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50202883"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125511"
 ---
 # <a name="ulong-data-type-visual-basic"></a>ULong 데이터 형식 (Visual Basic)
 
@@ -48,7 +48,7 @@ Visual Basic 2017부터 사용할 수도 있습니다 밑줄 문자 `_`, 가독�
 
 [!code-vb[ULong](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#LongS)]
 
-Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
+Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어 다음과 같습니다.
 
 ```vb
 Dim number As ULong = &H_F9AC_0326_1489_D68C
@@ -56,7 +56,7 @@ Dim number As ULong = &H_F9AC_0326_1489_D68C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-숫자 리터럴을 포함할 수도 있습니다는 `UL` 또는 `ul` [문자를 입력](../../programming-guide\language-features\data-types/type-characters.md) 나타내기 위해는 `ULong` 다음 예제와 같이 데이터 형식입니다.
+숫자 리터럴을 포함할 수도 있습니다는 `UL` 또는 `ul` [문자를 입력](../../programming-guide/language-features/data-types/type-characters.md) 나타내기 위해는 `ULong` 다음 예제와 같이 데이터 형식입니다.
 
 ```vb
 Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
@@ -78,11 +78,11 @@ Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
   
 -   **Framework 형식입니다.** .NET Framework에서 해당하는 형식은 <xref:System.UInt64?displayProperty=nameWithType> 구조체입니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
  <xref:System.UInt64>  
  [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
  [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [방법: 부호 없는 형식을 사용하는 Windows 함수 호출](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
+ [어떻게: 부호 없는 형식을 사용 하는 Windows 함수 호출](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
  [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

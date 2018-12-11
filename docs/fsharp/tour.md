@@ -1,19 +1,23 @@
 ---
 title: F# 둘러보기
 description: F# 코드 샘플을 사용 하 여이 자습서에서 언어 프로그래밍의 주요 기능 중 일부를 검토 합니다.
-ms.date: 02/28/2018
-ms.openlocfilehash: 7a512b5fead8de69f025e791b6086c60dbfc1b24
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.date: 11/06/2018
+ms.openlocfilehash: 32bf892e97b29fcaf426791ef9ada15c9c35b5ae
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50235715"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143750"
 ---
 # <a name="tour-of-f"></a>F# 둘러보기 #
 
-F#에 대해 자세히 알아보려면 읽기 및 F# 코드를 작성 하는 가장 좋은 방법은 합니다.  이 문서는 F# 언어의 주요 기능 중 일부 둘러보기 프록시로 컴퓨터에서 실행할 수 있는 몇 가지 코드 조각을 제공 합니다.  개발 환경을 설정 하는 데 대 한 자세한 내용은 체크 아웃 [Getting Started](tutorials/getting-started/index.md)합니다.
+F#에 대해 자세히 알아보려면 읽기 및 F# 코드를 작성 하는 가장 좋은 방법은 합니다. 이 문서는 F# 언어의 주요 기능 중 일부 둘러보기 프록시로 컴퓨터에서 실행할 수 있는 몇 가지 코드 조각을 제공 합니다. 개발 환경을 설정 하는 데 대 한 자세한 내용은 체크 아웃 [Getting Started](tutorials/getting-started/index.md)합니다.
 
 F#에 두 가지 기본 개념이 있습니다: 함수 및 형식입니다.  이 둘러보기가이 두 개념에 해당 하는 언어의 기능을 강조 됩니다.
+
+## <a name="executing-the-code-online"></a>온라인에서 코드를 실행합니다.
+
+없는 경우 F# 컴퓨터에 설치를 실행할 수 있습니다 사용 하 여 온라인 샘플의 모든 합니다 [페이블 REPL](http://fable.io/repl/)합니다. 페이블 언어는 F# 브라우저에서 직접 실행 합니다. REPL에서 나오는 예제를 보려는 체크 아웃 **샘플 > 알아보기 > 둘러보기 F#**  페이블 REPL.의 왼쪽 메뉴 모음에서
 
 ## <a name="functions-and-modules"></a>함수 및 모듈
 
@@ -81,8 +85,8 @@ F# 4.1을 기준으로 만들 수도 있습니다 `struct` 튜플.  이러한도
 
 컬렉션 또는 요소의 시퀀스로 처리는 사용 하 여 일반적으로 수행 됩니다 [재귀](language-reference/functions/index.md#recursive-functions) F#에 있습니다.  F#에 루프 및 명령형 프로그래밍에 대 한 지원으로 재귀는 정확성을 보장 하기 위해 더 쉽기 때문에 기본 설정 합니다.
 
->[!NOTE]
-다음 예제에서는 패턴 일치를 통해 사용 된 `match` 식입니다.  이 문서의 뒷부분에서이 기본 구문을 다룹니다.
+> [!NOTE]
+> 다음 예제에서는 패턴 일치를 통해 사용 된 `match` 식입니다.  이 문서의 뒷부분에서이 기본 구문을 다룹니다.
 
 [!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L461-L500)]
 

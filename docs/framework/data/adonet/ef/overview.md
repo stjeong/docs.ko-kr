@@ -2,12 +2,12 @@
 title: Entity Framework 개요
 ms.date: 09/17/2018
 ms.assetid: a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0
-ms.openlocfilehash: 35eb3b1503c8754752662aef0c5101251d60d49c
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: a6649744c4ad719c760ebc6ce5d97b51815c8ee6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47216944"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145795"
 ---
 # <a name="entity-framework-overview"></a>Entity Framework 개요
 
@@ -26,11 +26,11 @@ ms.locfileid: "47216944"
 
  엔터티 데이터 모델 도구를 사용하여 작업할 때 개념적 모델, 저장소 모델 및 이 두 모델 간의 매핑은 XML 기반 스키마로 표현되고 해당 확장명의 파일에 정의됩니다.
 
--   CSDL(개념 스키마 정의 언어)은 개념적 모델을 정의합니다. CSDL은는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]의 구현의 합니다 [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)합니다. 파일 확장명은 .csdl입니다.
+- CSDL(개념 스키마 정의 언어)은 개념적 모델을 정의합니다. CSDL은는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]의 구현의 합니다 [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)합니다. 파일 확장명은 .csdl입니다.
 
--   SSDL(저장소 스키마 정의 언어)은 논리 모델이라고도 하는 저장소 모델을 정의합니다. 파일 확장명은 .ssdl입니다.
+- SSDL(저장소 스키마 정의 언어)은 논리 모델이라고도 하는 저장소 모델을 정의합니다. 파일 확장명은 .ssdl입니다.
 
--   MSL(매핑 사양 언어)은 저장소 모델과 개념적 모델 간의 매핑을 정의합니다. 파일 확장명은 .msl입니다.
+- MSL(매핑 사양 언어)은 저장소 모델과 개념적 모델 간의 매핑을 정의합니다. 파일 확장명은 .msl입니다.
 
 저장소 모델과 매핑은 개념적 모델, 데이터 클래스 또는 응용 프로그램 코드를 변경하지 않고도 필요에 따라 변경할 수 있습니다. 저장소 모델은 공급자와 관련이 있으므로 다양한 데이터 소스에서 일관성 있는 개념적 모델을 사용할 수 있습니다.
 
@@ -45,9 +45,9 @@ ms.locfileid: "47216944"
 
 단순한 개체-관계형 매핑 솔루션 이상의 의미가 있는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]는 근본적으로 응용 프로그램이 개념적 모델의 엔터티 및 관계로 표현된 데이터에 액세스하여 변경할 수 있도록 합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]는 모델 및 매핑 파일의 정보를 사용하여 개념적 모델로 표현된 엔터티 형식에 대한 개체 쿼리를 데이터 소스에 대한 쿼리로 변환합니다. 쿼리 결과를 개체로 구체화 되는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 관리 합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 개념적 모델을 쿼리하고 개체를 반환 하는 다음 방법을 제공 합니다.
 
--   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)]. 개념적 모델에 정의된 엔터티 형식을 쿼리하기 위한 LINQ(Language-Integrated Query) 지원을 제공합니다. 자세한 내용은 [LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)합니다.
+- [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)]. 개념적 모델에 정의된 엔터티 형식을 쿼리하기 위한 LINQ(Language-Integrated Query) 지원을 제공합니다. 자세한 내용은 [LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)합니다.
 
--   [!INCLUDE[esql](../../../../../includes/esql-md.md)]. 개념적 모델의 엔터티를 직접 사용 하며 지 원하는 SQL 저장소에 독립적인 언어 [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] 개념입니다. [!INCLUDE[esql](../../../../../includes/esql-md.md)] 개체 쿼리와 EntityClient 공급자를 사용 하 여 실행 된 쿼리를 모두 사용 됩니다. 자세한 내용은 [Entity SQL 개요](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)합니다.
+- [!INCLUDE[esql](../../../../../includes/esql-md.md)]. 개념적 모델의 엔터티를 직접 사용 하며 지 원하는 SQL 저장소에 독립적인 언어 [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] 개념입니다. [!INCLUDE[esql](../../../../../includes/esql-md.md)] 개체 쿼리와 EntityClient 공급자를 사용 하 여 실행 된 쿼리를 모두 사용 됩니다. 자세한 내용은 [Entity SQL 개요](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)합니다.
 
 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에는 EntityClient 데이터 공급자가 포함되어 있습니다. 이 공급자는 연결을 관리하고, 엔터티 쿼리를 데이터 소스 특정 쿼리로 변환하며, [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 엔터티 데이터를 개체로 구체화할 때 사용하는 데이터 판독기를 반환합니다. 개체 구체화가 필요한 경우 EntityClient 공급자도 처럼 사용할 수 있습니다 표준 [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] 응용 프로그램 실행을 사용 하 여 데이터 공급자 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 쿼리하고 반환 된 읽기 전용 데이터 판독기를 사용 합니다. 자세한 내용은 [Entity Framework 용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)합니다.
 
@@ -71,12 +71,12 @@ ms.locfileid: "47216944"
 
 에 대 한 자세한는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]를 참조 하세요.
 
-[Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md) -시작 하는 방법에 대 한 정보를 제공 하 고 신속 하 게 사용 하 여 실행 합니다 [빠른 시작](https://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675)는 간단한 방법을 보여 주는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램입니다.
+[Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md) -시작 하는 방법에 대 한 정보를 제공 하 고 신속 하 게 사용 하 여 실행 합니다 [빠른 시작](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399182(v=vs.100))는 간단한 방법을 보여 주는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램입니다.
 
 [Entity Framework 용어](../../../../../docs/framework/data/adonet/ef/terminology.md) -대부분의 엔터티 데이터 모델을 여 도입 된 용어를 정의 하며 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 에서 사용 되는 및 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 설명서.
 
 [Entity Framework 리소스](../../../../../docs/framework/data/adonet/ef/resources.md) 개념 항목에 대 한 링크를 제공 하 고 외부 항목 및 구성에 대 한 리소스에 연결- [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)

@@ -3,11 +3,11 @@ title: 웹 서비스 프로토콜 상호 운용성 가이드
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
 ms.openlocfilehash: 9aeceff9dc2b714016d2f7c379e538d885489bb9
-ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744550"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154348"
 ---
 # <a name="web-services-protocols-interoperability-guide"></a>웹 서비스 프로토콜 상호 운용성 가이드
 Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 구현합니다. 이러한 프로토콜의 대부분에는 구현자가 결정하는 여러 가지 옵션과 확장 지점이 포함되어 있습니다. 이 항목에서는 WCF를 구현 하는 웹 서비스 프로토콜의 목록을 제공 합니다. 이 단원의 다른 항목에서는 지원되는 각 프로토콜의 구현에 대해 자세히 설명합니다.  
@@ -31,7 +31,7 @@ Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 
 |-----------------------------|----------|  
 |XML|[Extensible Markup Language (XML) 1.0 (1.0(fourth Edition)](https://go.microsoft.com/fwlink/?LinkId=15139)|  
 |SOAP 1.1|[Simple Object Access Protocol (SOAP) 1.1](https://go.microsoft.com/fwlink/?LinkId=96687)|  
-|SOAP 1.2 Core|[SOAP Version 1.2 Part 1: Messaging Framework (Second Edition)](https://go.microsoft.com/fwlink/?LinkId=94664)|  
+|SOAP 1.2 Core|[SOAP Version 1.2 Part 1: 메시징 프레임 워크 (Second Edition)](https://go.microsoft.com/fwlink/?LinkId=94664)|  
 |WS-Addressing 2004/08|[웹 서비스 주소 지정 (Ws-addressing)](https://go.microsoft.com/fwlink/?LinkId=81239)|  
 |W3C Web Services Addressing 1.0 - Core|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=96688)|  
 |W3C Web Services Addressing 1.0 - SOAP 바인딩|[Web Services Addressing 1.0-SOAP 바인딩](https://go.microsoft.com/fwlink/?LinkId=96689)|  
@@ -54,14 +54,14 @@ Windows Communication Foundation (WCF) 다양 한 웹 서비스 프로토콜을 
 |사양/문서|링크|  
 |-----------------------------|----------|  
 |WSS: SOAP Message Security 1.0|[Web Services Security: SOAP Message Security 1.0](https://go.microsoft.com/fwlink/?LinkId=94684)|  
-|WSS: Username Token Profile 1.0|[Web Services Security UsernameToken Profile 1.0](https://go.microsoft.com/fwlink/?LinkId=95334)<br /><br /> 필요한 Password/@Type후 (기본값) =|  
-|WSS: X.509 Token Profile 1.0|[Web Services Security X.509 인증서 토큰 프로필](https://go.microsoft.com/fwlink/?LinkId=95335)|  
-|WSS: SAML 1.1 Token Profile 1.0|[Web Services Security: SAML 토큰 프로필](https://go.microsoft.com/fwlink/?LinkId=96693)|  
-|WSS: SOAP Message Security 1.1|[Web Services Security: SOAP 메시지 보안 1.1](https://go.microsoft.com/fwlink/?LinkId=91240)|  
+|WSS: 사용자 이름 토큰 프로필 1.0|[Web Services Security UsernameToken Profile 1.0](https://go.microsoft.com/fwlink/?LinkId=95334)<br /><br /> 필요한 Password/@Type후 (기본값) =|  
+|WSS: X.509 토큰 프로필 1.0|[Web Services Security X.509 인증서 토큰 프로필](https://go.microsoft.com/fwlink/?LinkId=95335)|  
+|WSS: SAML 1.1 토큰 프로필 1.0|[Web Services Security: SAML 토큰 프로필](https://go.microsoft.com/fwlink/?LinkId=96693)|  
+|WSS: SOAP 메시지 보안 1.1|[Web Services Security: SOAP 메시지 보안 1.1](https://go.microsoft.com/fwlink/?LinkId=91240)|  
 |WSS Username Token Profile 1.1|[Web Services Security UsernameToken Profile 1.1](https://go.microsoft.com/fwlink/?LinkId=95331)<br /><br /> 암호 기반 키 파생을 구현하지 않음<br /><br /> 필요한 Password/@Type후 (기본값) =|  
-|WSS: X509 Token Profile 1.1|[Web Services Security X.509 인증서 토큰 프로필 1.1](https://go.microsoft.com/fwlink/?LinkId=95332)|  
-|WSS: Kerberos Token Profile 1.1|[Web Services Security Kerberos 토큰 프로필 1.1](https://go.microsoft.com/fwlink/?LinkId=95333)|  
-|WSS: SAML 1.1 Token Profile 1.1|[Web Services Security SAML 토큰 프로필 1.1](https://go.microsoft.com/fwlink/?LinkId=96694)|  
+|WSS: X509 토큰 프로필 1.1|[Web Services Security X.509 인증서 토큰 프로필 1.1](https://go.microsoft.com/fwlink/?LinkId=95332)|  
+|WSS: Kerberos 토큰 프로필 1.1|[Web Services Security Kerberos 토큰 프로필 1.1](https://go.microsoft.com/fwlink/?LinkId=95333)|  
+|WSS: SAML 1.1 토큰 프로필 1.1|[Web Services Security SAML 토큰 프로필 1.1](https://go.microsoft.com/fwlink/?LinkId=96694)|  
 |WS-Secure Conversation|[Web Services Secure Conversation Language](https://go.microsoft.com/fwlink/?LinkId=95317)|  
 |WS-Trust 1.4|[웹 서비스 트러스트 언어](https://go.microsoft.com/fwlink/?LinkId=169514)|  
 |WS-SecurityPolicy 2005/07|[Web Services Secure Conversation Language](https://go.microsoft.com/fwlink/?LinkId=95317)<br /><br /> OASIS WS-SX Technical Committee에 제출된 오류에 따라 수정됨<br /><br /> [ws-sx 메시지](https://go.microsoft.com/fwlink/?LinkId=96700)|  

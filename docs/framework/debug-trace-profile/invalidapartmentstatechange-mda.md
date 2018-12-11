@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 864367e71f3ed05af87931b2a87f576df42dcbf5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 73f96ea8cf215c1392857635e85556f530784397
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33390694"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147660"
 ---
 # <a name="invalidapartmentstatechange-mda"></a>invalidApartmentStateChange MDA
 `invalidApartmentStateChange` MDA(관리 디버깅 도우미)는 다음 두 문제 중 하나가 발생하면 활성화됩니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "33390694"
 ## <a name="output"></a>출력  
  현재 스레드의 COM 아파트 상태 및 코드에서 적용하려고 시도한 상태.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -63,7 +63,7 @@ ms.locfileid: "33390694"
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 이 MDA를 활성화할 수 있는 상황을 보여 줍니다.  
   
-```  
+```csharp
 using System.Threading;  
 namespace ApartmentStateMDA  
 {  

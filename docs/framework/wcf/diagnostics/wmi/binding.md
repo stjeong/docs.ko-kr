@@ -3,11 +3,11 @@ title: Binding2
 ms.date: 03/30/2017
 ms.assetid: 09511c6c-5749-4bb0-874e-0f0be36bfe04
 ms.openlocfilehash: 84e304f3dedcbd785d6238e6cb5eb142c288b995
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50198891"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149707"
 ---
 # <a name="binding"></a>바인딩
 wmi 바인딩  
@@ -35,7 +35,7 @@ class Binding
  Binding 클래스에는 다음과 같은 속성이 있습니다.  
   
 ### <a name="bindingelements"></a>BindingElements  
- 데이터 형식: BindingElement array  
+ 데이터 형식: BindingElement 배열  
   
  액세스 형식: 읽기 전용  
   

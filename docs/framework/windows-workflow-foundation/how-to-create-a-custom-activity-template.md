@@ -3,11 +3,11 @@ title: '방법: 사용자 지정 활동 템플릿 만들기'
 ms.date: 03/30/2017
 ms.assetid: 6760a5cc-6eb8-465f-b4fa-f89b39539429
 ms.openlocfilehash: 87acf0d084154c9c3e5cbc97da4af9821709f0a5
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50044842"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53131445"
 ---
 # <a name="how-to-create-a-custom-activity-template"></a>방법: 사용자 지정 활동 템플릿 만들기
 

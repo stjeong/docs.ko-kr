@@ -3,11 +3,11 @@ title: 비동기 워크플로(F#)
 description: 지원에 대해 알아봅니다는 F# 계산을 비동기적으로 수행 하는 것에 대 한 다른 작업의 실행을 차단 하지 않고 실행 되는 언어를 프로그래밍 합니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 720996106d2b90392eacc75eb99147691ee83334
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297077"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127747"
 ---
 # <a name="asynchronous-workflows"></a>비동기 워크플로
 
@@ -65,7 +65,7 @@ let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet8003.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [계산 식](computation-expressions.md)

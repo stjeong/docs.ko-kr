@@ -2,12 +2,12 @@
 title: Entity Framework 리소스
 ms.date: 03/30/2017
 ms.assetid: 0bb04c18-4a14-42a4-baa9-a63d556c9f49
-ms.openlocfilehash: d32b88e0df0b29ccf7fb5e9ba2d5a43585e0fb44
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bc1a5b76ecc038d8059b04f4dc222126e796f03d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509166"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128676"
 ---
 # <a name="entity-framework-resources"></a>Entity Framework 리소스
 다음 외부 리소스는 Entity Framework 응용 프로그램을 만들기 위한 정보와 지원을 제공합니다.  
@@ -24,8 +24,8 @@ ms.locfileid: "43509166"
  [데이터 플랫폼 어떻게 할까요? 비디오: Entity Framework 시리즈](https://go.microsoft.com/fwlink/?LinkId=124600)  
  다양한 Entity Framework 구성 요소를 사용하여 응용 프로그램을 빌드하는 방법을 보여 주는 일련의 비디오 화면 캐스트가 포함되어 있습니다.  
   
- [Entity Framework FAQ](https://go.microsoft.com/fwlink/?LinkID=213877)  
- Entity Framework에 대한 질문과 대답이 포함된 블로그입니다.  
+ [Entity Framework FAQ](https://social.technet.microsoft.com/wiki/contents/articles/3737.entity-framework-faq.aspx)  
+ Wiki 섹션 포함 된 자주 묻는 질문 Entity Framework에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)  

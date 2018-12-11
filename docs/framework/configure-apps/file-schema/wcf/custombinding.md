@@ -2,12 +2,12 @@
 title: '&lt;customBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
-ms.openlocfilehash: 741f195a78c1716b95d8d4d88594207708ce6289
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: c927ba59ccdb6e5a717fcaccde9294845a2c41cc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123828"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153906"
 ---
 # <a name="ltcustombindinggt"></a>&lt;customBinding&gt;
 사용자에게 메시징 스택에 대한 모든 권한을 제공합니다.  
@@ -222,7 +222,7 @@ ms.locfileid: "49123828"
   
 5.  인코더(선택적)  
   
- 시스템에서 제공하는 바인딩 중 하나가 사용자의 서비스 요구 사항을 충족하지 않을 때 사용자 지정 바인딩을 사용하세요. 사용자 지정 바인딩을 사용하면 예를 들어 서비스 끝점에서 새 전송 또는 새 인코더 사용을 활성화할 수 있습니다.  
+ 시스템에서 제공하는 바인딩 중 하나가 사용자의 서비스 요구 사항을 충족하지 않을 때 사용자 지정 바인딩을 사용하세요. 사용자 지정 바인딩을 사용하면 예를 들어 서비스 엔드포인트에서 새 전송 또는 새 인코더 사용을 활성화할 수 있습니다.  
   
  사용자 지정 바인딩은 특정 순서로 "스택"되는 바인딩 요소 컬렉션에서 <xref:System.ServiceModel.Channels.CustomBinding.%23ctor%2A> 중 하나를 사용하여 생성됩니다.  
   
@@ -285,14 +285,13 @@ ms.locfileid: "49123828"
 |보안|대칭, 비대칭, 전송 수준|아니요|  
 |Shape Change|<xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>|아니요|  
 |Transport Upgrades|SSL 스트림, Windows 스트림, 피어 확인자|아니요|  
-|Encoding|텍스트, 이진, MTOM, 사용자 지정|예|  
+|인코딩|텍스트, 이진, MTOM, 사용자 지정|예|  
 |전송|TCP, 명명된 파이프, HTTP, HTTPS, MSMQ 버전, 사용자 지정|예|  
   
  또한 고유의 바인딩 요소를 정의하여 이전에 정의된 계층 사이에 삽입할 수 있습니다.  
   
- 사용자 지정 시스템 제공 바인딩을 수정 하는 바인딩을 사용 하는 방법에 대 한 논의 참조 하세요 [방법: 시스템 제공 바인딩 사용자 지정](../../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)합니다.  
-  
-1.  
+ 사용자 지정 시스템 제공 바인딩을 수정 하는 바인딩을 사용 하는 방법에 대 한 논의 참조 하세요. [방법: 시스템 제공 바인딩 사용자 지정](../../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)합니다.  
+    
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Channels.Binding>  

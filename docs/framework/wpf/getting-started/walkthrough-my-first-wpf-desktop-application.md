@@ -1,6 +1,6 @@
 ---
 title: Visual Studio에서 WPF 응용 프로그램 만들기
-ms.date: 04/12/2018
+ms.date: 10/26/2018
 dev_langs:
 - csharp
 - vb
@@ -11,16 +11,16 @@ ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
 ms.custom: vs-dotnet
-ms.openlocfilehash: 1a9c82a0bca25fa1242b29393e41e6eb4ce7f3b9
-ms.sourcegitcommit: f513a91160b3fec289dd06646d0d6f81f8fcf910
+ms.openlocfilehash: 6ea5997906c0bf34de67a6a125552d2b2c4e1a43
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46007258"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150747"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 
-이 문서에서는 대부분의 WPF 응용 프로그램에 공통 된 요소를 포함 하는 간단한 Windows Presentation Foundation (WPF) 응용 프로그램을 개발 하는 방법을 보여 줍니다: Extensible Application Markup Language (XAML) 태그, 코드 숨김, 응용 프로그램 정의 컨트롤, 레이아웃, 데이터 바인딩 및 스타일.
+이 문서에서는 대부분의 WPF 응용 프로그램에 공통 된 요소를 포함 하는 간단한 Windows Presentation Foundation (WPF) 응용 프로그램을 개발 하는 방법을 보여 줍니다. Extensible Application Markup Language (XAML) 태그, 코드 숨김, 응용 프로그램 정의 컨트롤, 레이아웃, 데이터 바인딩 및 스타일.
 
 이 연습에는 다음 단계가 포함 됩니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "46007258"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- Visual Studio 2012 이상 (이 기사는 Visual Studio 2017에서 기준)
+- Visual Studio 2017 이상
 
    Visual Studio의 최신 버전을 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다.
 
@@ -57,7 +57,7 @@ ms.locfileid: "46007258"
 
       합니다 **새 프로젝트** 대화 상자가 열립니다.
 
-   2. 아래는 **설치 됨** 범주를 확장 합니다 **Visual C#** 또는 **Visual Basic** 노드를 선택한 후 **Windows 클래식 바탕 화면**.
+   2. 아래는 **설치 됨** 범주를 확장 합니다 **Visual C#**  또는 **Visual Basic** 노드를 선택한 후 **Windows 데스크톱**.
 
    3. 선택 된 **WPF 앱 (.NET Framework)** 템플릿. 이름을 입력 **`ExpenseIt`** 선택한 후 **확인**합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "46007258"
       Visual Studio 프로젝트를 만들고 이라는 기본 응용 프로그램 창에 대 한 디자이너를 엽니다 **MainWindow.xaml**합니다.
 
    > [!NOTE]
-   > 이 연습에서는 <xref:System.Windows.Controls.DataGrid> 컨트롤 이상.NET Framework 4에서 사용할 수 있습니다. 프로젝트가.NET Framework 4를 대상으로 하는지 이상 이어야 합니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)을 참조하세요.
+   > 이 연습에서는 <xref:System.Windows.Controls.DataGrid> 컨트롤 이상.NET Framework 4에서 사용할 수 있습니다. 프로젝트가.NET Framework 4를 대상으로 하는지 이상 이어야 합니다. 자세한 내용은 [방법: .NET Framework의 버전을 대상](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)합니다.
 
 2. 오픈 *Application.xaml* (Visual Basic) 또는 *App.xaml* (C#).
 
@@ -254,7 +254,7 @@ ms.locfileid: "46007258"
 
     [!code-xaml[ExpenseIt#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt3/ExpenseItHome.xaml#8)]
 
-    합니다 <xref:System.Windows.Controls.RowDefinition.Height%2A> 로 설정 되어 두 행의 <xref:System.Windows.GridLength.Auto%2A>, 행의 콘텐츠를 기준으로 행 크기가 조정 되는 의미입니다. 기본값 <xref:System.Windows.Controls.RowDefinition.Height%2A> 는 <xref:System.Windows.GridUnitType.Star> 행 높이가 사용 가능한 공간에 대 한 가중치 임을 의미 하는 크기 조정 합니다. 예를 들어 두 행을 <xref:System.Windows.Controls.RowDefinition.Height%2A> 의 "*"를 사용 가능한 공간의 절반는 높이가 각각.
+    합니다 <xref:System.Windows.Controls.RowDefinition.Height%2A> 로 설정 되어 두 행의 <xref:System.Windows.GridLength.Auto%2A>, 행의 내용에 따라 행 크기는 의미입니다. 기본값 <xref:System.Windows.Controls.RowDefinition.Height%2A> 는 <xref:System.Windows.GridUnitType.Star> 행 높이가 사용 가능한 공간에 대 한 가중치 임을 의미 하는 크기 조정 합니다. 예를 들어 두 행을 <xref:System.Windows.Controls.RowDefinition.Height%2A> 의 "*"를 사용 가능한 공간의 절반는 높이가 각각.
 
     프로그램 <xref:System.Windows.Controls.Grid> 다음 XAML 다음과 같아집니다.
 
@@ -327,7 +327,7 @@ ms.locfileid: "46007258"
 
 1. 오픈 *`ExpenseItHome.xaml`* 합니다.
 
-2. 추가 된 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를는 <xref:System.Windows.Controls.Button> 요소입니다. 자세한 내용은 [방법: 간단한 이벤트 처리기를 만들고](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480)합니다.
+2. 추가 된 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를는 <xref:System.Windows.Controls.Button> 요소입니다. 자세한 내용은 [방법: 단순 이벤트 처리기를 만들고](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480)합니다.
 
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]
 
@@ -353,7 +353,7 @@ ms.locfileid: "46007258"
 3. 응용 프로그램을 빌드 및 실행합니다.
 
     > [!NOTE]
-    > 오류가 발생 하는 경우는 <xref:System.Windows.Controls.DataGrid> 찾을 수 없습니다 또는 존재 하지 않거나, 프로젝트가.NET Framework 4 이상을 대상으로 하는지 확인 합니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)을 참조하세요.
+    > 오류가 발생 하는 경우는 <xref:System.Windows.Controls.DataGrid> 찾을 수 없습니다 또는 존재 하지 않거나, 프로젝트가.NET Framework 4 이상을 대상으로 하는지 확인 합니다. 자세한 내용은 [방법: .NET Framework의 버전을 대상](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)합니다.
 
 4. 선택 된 **보기** 단추입니다.
 
@@ -375,17 +375,17 @@ ms.locfileid: "46007258"
 
     이 XAML은 다음 스타일을 추가합니다.
 
-    - `headerTextStyle`: 페이지 제목 <xref:System.Windows.Controls.Label>의 형식을 지정합니다.
+    - `headerTextStyle`: 페이지 제목 서식을 지정 하려면 <xref:System.Windows.Controls.Label>합니다.
 
-    - `labelStyle`: <xref:System.Windows.Controls.Label> 컨트롤의 형식을 지정합니다.
+    - `labelStyle`: 형식을 지정 하는 <xref:System.Windows.Controls.Label> 컨트롤입니다.
 
-    - `columnHeaderStyle`: <xref:System.Windows.Controls.Primitives.DataGridColumnHeader>의 형식을 지정합니다.
+    - `columnHeaderStyle`: 형식을 지정 하는 <xref:System.Windows.Controls.Primitives.DataGridColumnHeader>합니다.
 
-    - `listHeaderStyle`: 목록 헤더 <xref:System.Windows.Controls.Border> 컨트롤의 형식을 지정합니다.
+    - `listHeaderStyle`: 목록 헤더 형식을 <xref:System.Windows.Controls.Border> 컨트롤입니다.
 
-    - `listHeaderTextStyle`: 목록 헤더의 형식을 사용 하려면 <xref:System.Windows.Controls.Label>합니다.
+    - `listHeaderTextStyle`: 목록 헤더 형식을 <xref:System.Windows.Controls.Label>합니다.
 
-    - `buttonStyle`: 서식을 지정 하려면 다음을 수행 합니다는 <xref:System.Windows.Controls.Button> 에서 `ExpenseItHome.xaml`합니다.
+    - `buttonStyle`: 형식을 지정 하는 <xref:System.Windows.Controls.Button> 에서 `ExpenseItHome.xaml`합니다.
 
     스타일의 자식 이며 리소스는는 <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> 속성 요소입니다. 이 위치에서 스타일은 응용 프로그램의 모든 요소에 적용됩니다. .NET Framework 응용 프로그램에서 리소스를 사용 하 여 예제를 참조 하세요 [사용 하 여 응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md)합니다.
 
@@ -505,7 +505,7 @@ ms.locfileid: "46007258"
 - [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)
 - [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
 - [데이터 템플릿 개요](../../../../docs/framework/wpf/data/data-templating-overview.md)

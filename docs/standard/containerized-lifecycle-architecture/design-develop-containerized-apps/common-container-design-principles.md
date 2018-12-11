@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: 3af174279e8b6f56a10413817b05ef68cfcabea5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8aa388c7c19f532829d64208a48b6e556e43d802
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50202180"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152879"
 ---
 # <a name="common-container-design-principles"></a>일반적인 컨테이너 설계 원칙
 
@@ -21,7 +21,6 @@ ms.locfileid: "50202180"
 
 여러 프로세스를 단일 컨테이너에서 실행 하려는 경우를 확인할 수 있습니다. 아키텍처 문서에서 되지 않습니다는 "never," 항상 새로운 기술이 나는 "항상"입니다. 여러 프로세스를 요구 하는 시나리오에 대 한 일반적인 패턴을 사용 하는 것 [감독자](http://supervisord.org/)합니다.
 
-
 >[!div class="step-by-step"]
-[이전](design-docker-applications.md)
-[다음](monolithic-applications.md)
+>[이전](design-docker-applications.md)
+>[다음](monolithic-applications.md)

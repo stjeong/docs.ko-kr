@@ -16,23 +16,23 @@ helpviewer_keywords:
 ms.assetid: 21dc2169-947d-453a-b0e2-3dac3ba0cc9f
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c7a912386d93e727a1f4cd2253ad06be76ae3385
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bc81e1e13f942f5db4fec5cc607264d499b63629
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33388344"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146081"
 ---
 # <a name="how-to-use-tracesource-and-filters-with-trace-listeners"></a>방법: 추적 수신기와 함께 TraceSource 및 필터 사용
 .NET Framework 버전 2.0의 새로운 기능 중 하나는 향상된 추적 시스템입니다. 기본 전제는 변경되지 않습니다. 추적 메시지는 스위치를 통해 수신기로 전송되고 이러한 수신기는 데이터를 연결된 출력 매체에 보고합니다. 버전 2.0에 대한 주요 차이점은 추적이 <xref:System.Diagnostics.TraceSource> 클래스의 인스턴스를 통해 시작될 수 있다는 것입니다. <xref:System.Diagnostics.TraceSource>는 향상된 추적 시스템으로 작동해야 하고 오래된 <xref:System.Diagnostics.Trace> 및 <xref:System.Diagnostics.Debug> 추적 클래스의 정적 메서드 대신 사용될 수 있습니다. 익숙한 <xref:System.Diagnostics.Trace> 및 <xref:System.Diagnostics.Debug> 클래스가 있지만 추적에는 <xref:System.Diagnostics.TraceSource> 클래스를 사용하는 것이 좋습니다.  
   
- 이 항목에서는 응용 프로그램 구성 파일과 함께 <xref:System.Diagnostics.TraceSource>를 사용하는 방법을 설명합니다.  권장되지는 않지만 구성 파일을 사용하지 않고 <xref:System.Diagnostics.TraceSource>를 사용하여 추적할 수 있습니다. 구성 파일 없이 추적하는 방법에 대한 자세한 내용은 [방법: 추적 소스 생성 및 초기화](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources.md)를 참조하세요.  
+ 이 항목에서는 응용 프로그램 구성 파일과 함께 <xref:System.Diagnostics.TraceSource>를 사용하는 방법을 설명합니다.  권장되지는 않지만 구성 파일을 사용하지 않고 <xref:System.Diagnostics.TraceSource>를 사용하여 추적할 수 있습니다. 구성 파일 없이 추적 정보를 참조 하세요. [방법: 추적 소스 생성 및 초기화](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources.md)합니다.  
   
 ### <a name="to-create-and-initialize-your-trace-source"></a>추적 소스를 만들고 초기화하려면  
   
 1.  추적을 통해 응용 프로그램을 계측하는 첫 번째 단계는 추적 소스를 만드는 것입니다. 다양한 구성 요소가 포함된 대규모 프로젝트에서 각 구성 요소에 대한 개별 추적 소스를 만들 수 있습니다. 추적 소스 이름에 대해 응용 프로그램 이름을 사용하는 것이 좋습니다. 이렇게 하면 여러 추적을 쉽게 분리할 수 있습니다. 다음 코드에서는 이벤트를 추적하는 새 추적 소스(`mySource)`)를 만들고 메서드(`Activity1`)를 호출합니다.  추적 메시지는 기본 추적 수신기에서 작성됩니다.  
   
-    ```  
+    ```csharp
     using System;  
     using System.Diagnostics;  
     using System.Threading;  
@@ -101,7 +101,7 @@ ms.locfileid: "33388344"
   
 1.  구성 파일은 응용 프로그램이 초기화될 때 추적 소스에 대한 설정을 초기화합니다. 해당 설정을 변경하려면 구성 파일을 변경하고 응용 프로그램을 다시 시작하거나, <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=nameWithType> 메서드를 사용하여 응용 프로그램을 프로그래밍 방식으로 새로 고쳐야 합니다. 응용 프로그램은 구성 파일에서 설정되는 속성을 동적으로 변경하여 사용자가 지정한 설정을 재정의할 수 있습니다.  예를 들어, 현재의 구성 설정과 관계없이 중대 오류 메시지를 항상 텍스트 파일로 보내도록 할 수 있습니다.  
   
-    ```  
+    ```csharp
     using System;  
     using System.Diagnostics;  
     using System.Threading;  
@@ -168,5 +168,5 @@ ms.locfileid: "33388344"
  <xref:System.Diagnostics.TextWriterTraceListener>  
  <xref:System.Diagnostics.ConsoleTraceListener>  
  <xref:System.Diagnostics.EventTypeFilter>  
- [방법: 추적 소스 생성 및 초기화](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources.md)  
+ [어떻게: 추적 소스 생성 및 초기화](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources.md)  
  [추적 수신기](../../../docs/framework/debug-trace-profile/trace-listeners.md)

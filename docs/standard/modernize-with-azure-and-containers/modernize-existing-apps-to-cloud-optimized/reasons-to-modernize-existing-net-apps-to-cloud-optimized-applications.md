@@ -4,12 +4,12 @@ description: Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
-ms.openlocfilehash: 17838381f42a760caa7fba7e09ab798c6284bccb
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 8a59a78bbf7ec38f32b14e67d4cb35a9c2375e94
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45683205"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151067"
 ---
 # <a name="reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"></a>클라우드 액세스에 최적화 된 응용 프로그램에 기존.NET 앱을 현대화 하는 이유
 
@@ -68,5 +68,5 @@ ms.locfileid: "45683205"
 다음 섹션에서는 이러한 혜택 자세히 설명 하 고 특정 기술에 연결 된입니다.
 
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](microsoft-technologies-in-cloud-optimized-applications.md)
+>[이전](index.md)
+>[다음](microsoft-technologies-in-cloud-optimized-applications.md)

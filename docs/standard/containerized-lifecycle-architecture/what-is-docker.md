@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/21/2017
-ms.openlocfilehash: 056fb613c078cc407380060dc11890406ac8cffd
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 360a404e38651b78acc3a52d8102a4dae71f3e30
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50197680"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152724"
 ---
 # <a name="what-is-docker"></a>Docker란?
 
@@ -17,7 +17,7 @@ ms.locfileid: "50197680"
 
 ![](./media/image2.png)
 
-그림 1-2: Docker 하이브리드 클라우드의 모든 계층에서 컨테이너를 배포 합니다.
+그림 1-2: Docker는 하이브리드 클라우드의 모든 계층에서 컨테이너를 배포
 
 Docker 이미지 컨테이너는 Linux 및 Windows에서 기본적으로 실행할 수 있습니다. 그러나 Windows 이미지 Windows 호스트 에서만 실행할 수 있으며 Linux 이미지는 Linux 호스트, 즉 호스트 서버 또는 VM에만 실행할 수 있습니다.
 
@@ -51,7 +51,6 @@ Docker를 사용 하는 경우 예를 들어 개발자를 들에서는 "작동 �
 
 그림 1-3: 기존 Vm Docker 컨테이너 비교
 
-
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](docker-terminology.md)
+>[이전](index.md)
+>[다음](docker-terminology.md)

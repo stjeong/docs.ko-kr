@@ -4,12 +4,12 @@ description: Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
-ms.openlocfilehash: 1c23acc16698446bc07c0047b68186e21c2ceb2d
-ms.sourcegitcommit: e42d09e5966dd9fd02847d3e7eeb4ec0877069f8
+ms.openlocfilehash: f5a9d0c7c1c45a6afca390e93384af4c8386fe09
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49372853"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150592"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>연습 및 기술 시작된 개요 가져오기
 
@@ -36,7 +36,7 @@ ms.locfileid: "49372853"
 - **Azure Service Fabric에 Windows 컨테이너 기반 앱을 배포 합니다.**
 
 
-## <a name="walkthrough-1-tour-of-eshop-legacy-apps"></a>연습 1: eShop 레거시 앱 둘러보기
+## <a name="walkthrough-1-tour-of-eshop-legacy-apps"></a>연습 1: 레거시 앱 eShop 둘러보기
 
 ### <a name="technical-walkthrough-availability"></a>기술 연습 가용성
 
@@ -79,7 +79,7 @@ ms.locfileid: "49372853"
 
 ### <a name="benefits"></a>이점
 
-이 연습에서는 이점은 간단한: 초기 앱 코드와 익숙해질 것입니다.
+이 연습의 혜택은 간단 합니다. 초기 앱 코드와 친숙 한 효과만 합니다.
 
 ### <a name="next-steps"></a>다음 단계
 
@@ -89,7 +89,7 @@ GitHub wiki의이 콘텐츠를 더 자세히 살펴보기
   - [기본 WCF 서비스 및 WinForms (3 계층) "레거시" 앱에 대 한 둘러보기](https://github.com/dotnet-architecture/eShopModernizing/wiki/21.-Tour-on-the-WCF-service-and-WinForms-apps)
 
 
-## <a name="walkthrough-2-containerize-your-existing-net-applications-with-windows-containers"></a>연습 2: Windows 컨테이너를 사용 하 여 기존.NET 응용 프로그램 컨테이너 화
+## <a name="walkthrough-2-containerize-your-existing-net-applications-with-windows-containers"></a>연습 2: Windows 컨테이너를 사용 하 여 기존.NET 응용 프로그램을 컨테이너 화
 
 ### <a name="overview"></a>개요
 
@@ -159,7 +159,7 @@ Windows Server 2016 가상 머신 (VM) Azure에서 Docker 호스트에 배포할
 
 몇 가지 시나리오는이 연습에 포함 됩니다.
 
-#### <a name="scenario-a-deploy-to-an-azure-vm-from-a-dev-pc-through-docker-engine-connection"></a>Azure VM에 Docker 엔진 연결을 통해 개발 PC 시나리오 a: 배포
+#### <a name="scenario-a-deploy-to-an-azure-vm-from-a-dev-pc-through-docker-engine-connection"></a>시나리오 a: Docker 엔진 연결을 통해 개발 PC에서에서 Azure VM에 배포
 
 ![Docker 엔진 연결을 통해 개발 PC에서에서 Azure VM에 배포](./media/image5-4.png)
 
@@ -171,7 +171,7 @@ Windows Server 2016 가상 머신 (VM) Azure에서 Docker 호스트에 배포할
 
 > **그림 5-5.** Docker 레지스트리를 통해 Azure VM에 배포
 
-#### <a name="scenario-c-deploy-to-an-azure-vm-from-cicd-pipelines-in-azure-devops-services"></a>Azure DevOps 서비스의 CI/CD 파이프라인에서 Azure VM에 시나리오 c: 배포
+#### <a name="scenario-c-deploy-to-an-azure-vm-from-cicd-pipelines-in-azure-devops-services"></a>시나리오: c: Azure DevOps 서비스의 CI/CD 파이프라인에서 Azure VM에 배포
 
 ![Azure DevOps 서비스의 CI/CD 파이프라인에서 Azure VM에 배포](./media/image5-6.png)
 
@@ -193,7 +193,7 @@ GitHub wiki의이 콘텐츠를 더 자세히 살펴보기
 
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD))
 
-## <a name="walkthrough-4-deploy-your-windows-containers-based-apps-to-azure-container-instances-aci"></a>Azure Container Instances (ACI)에 Windows 컨테이너 기반 앱을 배포 하는 연습 4:
+## <a name="walkthrough-4-deploy-your-windows-containers-based-apps-to-azure-container-instances-aci"></a>연습 4: Azure Container Instances (ACI)에 Windows 컨테이너 기반 앱을 배포 합니다.
 
 ### <a name="technical-walkthrough-availability"></a>기술 연습 가용성
 
@@ -232,7 +232,7 @@ GitHub wiki의이 콘텐츠를 더 자세히 살펴보기
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances)TBD)
 
 
-## <a name="walkthrough-5-deploy-your-windows-containers-based-apps-to-kubernetes-in-azure-container-service"></a>Azure Container Service에서 Kubernetes에 Windows 컨테이너 기반 앱을 배포 하는 연습 5:
+## <a name="walkthrough-5-deploy-your-windows-containers-based-apps-to-kubernetes-in-azure-container-service"></a>연습 5: Azure Container Service에서 Kubernetes에 Windows 컨테이너 기반 앱을 배포 합니다.
 
 ### <a name="technical-walkthrough-availability"></a>기술 연습 가용성
 
@@ -254,13 +254,13 @@ Kubernetes에 Windows 컨테이너 기반 응용 프로그램을 배포 하는 �
 
 ### <a name="scenarios"></a>시나리오
 
-#### <a name="scenario-a-deploy-directly-to-a-kubernetes-cluster-from-a-dev-environment"></a>개발 환경에서 Kubernetes 클러스터에 직접 시나리오 a: 배포
+#### <a name="scenario-a-deploy-directly-to-a-kubernetes-cluster-from-a-dev-environment"></a>시나리오 a: 개발 환경에서 Kubernetes 클러스터에 직접 배포
 
 ![개발 환경에서 Kubernetes 클러스터에 직접 배포](./media/image5-7.png)
 
 > **그림 5-7.** 개발 환경에서 Kubernetes 클러스터에 직접 배포
 
-#### <a name="scenario-b-deploy-to-a-kubernetes-cluster-from-cicd-pipelines-in-azure-devops-services"></a>Azure DevOps 서비스 시나리오 b: Kubernetes 클러스터에서에서 배포는 CI/CD 파이프라인
+#### <a name="scenario-b-deploy-to-a-kubernetes-cluster-from-cicd-pipelines-in-azure-devops-services"></a>시나리오 b: Azure DevOps 서비스의 CI/CD 파이프라인에서 Kubernetes 클러스터에 배포
 
 ![Azure DevOps 서비스의 CI/CD 파이프라인에서 Kubernetes 클러스터에 배포](./media/image5-8.png)
 
@@ -292,7 +292,7 @@ Kubernetes를 사용 하 여 개발자 수행해 볼 수 있습니다 실제 및
 
 GitHub wiki의이 콘텐츠를 더 자세히 살펴보기 [https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-C-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-C-CD))
 
-## <a name="walkthrough-6-deploy-your-windows-containers-based-apps-to-azure-service-fabric"></a>Azure Service Fabric에 Windows 컨테이너 기반 앱을 배포 하는 연습 6:
+## <a name="walkthrough-6-deploy-your-windows-containers-based-apps-to-azure-service-fabric"></a>연습 6: Azure Service Fabric에 Windows 컨테이너 기반 앱을 배포 합니다.
 
 ### <a name="technical-walkthrough-availability"></a>기술 연습 가용성
 
@@ -314,13 +314,13 @@ Windows 컨테이너를 신속 하 게 기반 응용 프로그램 플랫폼에�
 
 ### <a name="scenarios"></a>시나리오
 
-#### <a name="scenario-a-deploy-directly-to-a-service-fabric-cluster-from-a-dev-environment"></a>개발 환경에서 Service Fabric 클러스터에 직접 시나리오 a: 배포
+#### <a name="scenario-a-deploy-directly-to-a-service-fabric-cluster-from-a-dev-environment"></a>시나리오 a: 개발 환경에서 Service Fabric 클러스터에 직접 배포
 
 ![개발 환경에서 Service Fabric 클러스터에 직접 배포](./media/image5-9.png)
 
 > **그림 5-9.** 개발 환경에서 Service Fabric 클러스터에 직접 배포
 
-### <a name="scenario-b-deploy-to-a-service-fabric-cluster-from-cicd-pipelines-in-azure-devops-services"></a>Azure DevOps 서비스 시나리오 b: Service Fabric 클러스터에서에서 배포는 CI/CD 파이프라인
+### <a name="scenario-b-deploy-to-a-service-fabric-cluster-from-cicd-pipelines-in-azure-devops-services"></a>시나리오 b: Azure DevOps 서비스의 CI/CD 파이프라인에서 Service Fabric 클러스터에 배포
 
 ![Azure DevOps 서비스의 CI/CD 파이프라인에서 Service Fabric 클러스터에 배포](./media/image5-10.png)
 
@@ -367,5 +367,5 @@ GitHub wiki의이 콘텐츠를 더 자세히 살펴보기
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-How-to-deploy-your-Windows-Containers-based-apps-into-Azure-Service-Fabric-(Including-CI-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-How-to-deploy-your-Windows-Containers-based-apps-into-Azure-Service-Fabric-(Including-CI-CD))
 
 >[!div class="step-by-step"]
-[이전](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)
-[다음](conclusions.md)
+>[이전](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)
+>[다음](conclusions.md)

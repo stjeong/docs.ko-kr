@@ -4,12 +4,12 @@ description: Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/30/2018
-ms.openlocfilehash: c4d3eaa50f6c7645c954ca65bf42c6c1eab3a68d
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: c4eeb5606d3ea93b76efee58ddfecae0abbbd743
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47070788"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128182"
 ---
 # <a name="modernize-your-apps-lifecycle-with-cicd-pipelines-and-devops-tools-in-the-cloud"></a>CI/CD 파이프라인 및 클라우드에서 DevOps 도구를 사용 하 여 앱의 수명 주기 현대화
 
@@ -36,5 +36,5 @@ Azure DevOps 서비스는 다양 한 공식 Azure DevOps 서비스 배포 작업
 > **그림 4-12입니다.** Azure DevOps 서비스 연속 배포 파이프라인을 Kubernetes 클러스터에 배포
 
 >[!div class="step-by-step"]
-[이전](modernize-your-apps-with-monitoring-and-telemetry.md)
-[다음](migrate-to-hybrid-cloud-scenarios.md)
+>[이전](modernize-your-apps-with-monitoring-and-telemetry.md)
+>[다음](migrate-to-hybrid-cloud-scenarios.md)

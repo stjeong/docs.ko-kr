@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: 4bdc4470624ce6e905ab858a2bd8b607c8d3d646
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 5630bfcc3173def670e2fa780d28024799b7c2a1
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47232926"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153926"
 ---
 # <a name="monitor-containerized-application-services"></a>컨테이너 화 된 응용 프로그램 서비스를 모니터링 합니다.
 
@@ -60,7 +60,7 @@ Application Insights 리소스를 만들려면 다음에 나오는 목록에 표
 
 ![](./media/image2.png)
 
-Operations Management Suite에서 표시 하는 Docker 컨테이너에 대 한 그림 6-2: 정보
+그림 6-2: Operations Management Suite에서 표시 하는 Docker 컨테이너에 대 한 정보
 
 Application Insights 및 Operations Management Suite 작업;를 모니터링에 중점 그러나 Application Insights는 앱 내에서 실행 되는 SDK 통해 앱 모니터링에 더 집중 합니다. 그러나 Operations Management Suite에 중점을 둡니다 훨씬 호스트 관련 인프라와 매우 유연한 데이터 기반 검색/쿼리 시스템을 제공 하는 동안 로그 규모에 대 한 심층 분석을 제공 합니다.
 
@@ -90,12 +90,12 @@ Operations Management Suite 컨테이너 솔루션을 사용 하 여, 있습니�
 
 ![DockerPerfMetricsView](./media/image3.png){width="5.78625in" height="3.25in"}
 
-Operations Management Suite에서 표시 하는 Docker 호스트의 그림 6-3: 성능 메트릭
+그림 6-3: Operations Management Suite에서 표시 하는 Docker 호스트의 성능 메트릭
 
 Operations Management Suite의 표준 기능은 또한 쿼리를 저장 및 도움이 될 수 있습니다 유용한 및 시스템의 추세를 검색 하는 쿼리를 유지 합니다.
 
 **자세한 내용은** 의 컨테이너 솔루션 설치 및 Docker를 구성에 대 한 정보를 찾으려면 [Operations Management Suite](https://microsoft.com/oms)으로 이동 하 여 <https://docs.microsoft.com/azure/log-analytics/log-analytics-containers>입니다.
 
 >[!div class="step-by-step"]
-[이전](manage-production-docker-environments.md)
-[다음](../key-takeaways/index.md)
+>[이전](manage-production-docker-environments.md)
+>[다음](../key-takeaways/index.md)

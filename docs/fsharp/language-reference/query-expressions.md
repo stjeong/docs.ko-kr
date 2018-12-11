@@ -3,11 +3,11 @@ title: 쿼리 식(F#)
 description: LINQ에 대 한 쿼리 식 지원에 대해 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 00398e7cb8876f9bbe11606b7a1024da9d2c35f3
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297155"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143768"
 ---
 # <a name="query-expressions"></a>쿼리 식
 
@@ -2428,7 +2428,7 @@ module Queries2 = begin
 end
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [Linq.QueryBuilder 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)

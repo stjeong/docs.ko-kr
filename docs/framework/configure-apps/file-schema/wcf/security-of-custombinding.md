@@ -3,11 +3,11 @@ title: '&lt;customBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 ms.openlocfilehash: eb8cd4172a83d618f3fd83519a8d9d2f4c864067
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50042131"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128957"
 ---
 # <a name="ltsecuritygt-of-ltcustombindinggt"></a>&lt;customBinding&gt;의 &lt;security&gt;
 사용자 지정 바인딩에 대한 보안 옵션을 지정합니다.  
@@ -54,12 +54,12 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 |defaultAlgorithmSuite|선택 사항입니다. 메시지 암호화 및 키 래핑 알고리즘을 설정합니다. 알고리즘과 키 크기는 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> 클래스로 결정됩니다. 이러한 알고리즘은 WS-SecurityPolicy(Security Policy Language) 사양에 지정된 알고리즘에 매핑됩니다.<br /><br /> 가능한 값이 아래에 나와 있습니다. 기본값은 `Basic256`입니다.<br /><br /> 이 특성은 기본값과 다른 알고리즘 집합에 적합한 다른 플랫폼에서 작업할 때 사용됩니다. 이 설정을 수정하는 경우 관련 알고리즘의 장점과 단점을 파악해야 합니다. 이 특성은 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> 형식입니다.|  
 |includeTimestamp|각 메시지에 타임스탬프가 포함되는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |keyEntropyMode|메시지 보안 설정을 위한 키의 계산 방식을 지정합니다. 키는 클라이언트 키 자료만을 기반으로 하거나 서비스 키 자료만을 기반으로 하거나 두 가지의 조합을 기반으로 할 수 있습니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `ClientEntropy`: 세션 키는 클라이언트가 제공한 키 데이터를 기반으로 합니다.<br />-   `ServerEntropy`: 세션 키는 서버가 제공한 키 데이터를 기반으로 합니다.<br />-   `CombinedEntropy`: 세션 키는 클라이언트 및 서비스가 제공한 키 데이터를 기반으로 합니다.<br /><br /> 기본값은 `CombinedEntropy`입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> 형식입니다.|  
-|MessageProtectionOrder|메시지 수준 보안 알고리즘이 메시지에 적용되는 순서를 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `SignBeforeEncrypt`: 서명한 다음 암호화 합니다.<br />-   `SignBeforeEncryptAndEncryptSignature`: 먼저 서명, 암호화 한 다음 서명을 암호화 합니다.<br />-   `EncryptBeforeSign`: 암호화 한 다음 로그인 합니다.<br /><br /> 기본값은 사용되는 WS-Security 버전에 따라 달라집니다. WS-Security 1.1을 사용하는 경우 기본값은 `SignBeforeEncryptAndEncryptSignature`입니다. WS-Security 1.0을 사용하는 경우 기본값은 `SignBeforeEncrypt`입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.MessageProtectionOrder> 형식입니다.|  
+|MessageProtectionOrder|메시지 수준 보안 알고리즘이 메시지에 적용되는 순서를 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `SignBeforeEncrypt`: 첫째, 로그인 한 다음 암호화 합니다.<br />-   `SignBeforeEncryptAndEncryptSignature`: 먼저 로그인 하 고 암호화 한 다음 서명을 암호화 합니다.<br />-   `EncryptBeforeSign`: 먼저 암호화 한 다음 로그인 합니다.<br /><br /> 기본값은 사용되는 WS-Security 버전에 따라 달라집니다. WS-Security 1.1을 사용하는 경우 기본값은 `SignBeforeEncryptAndEncryptSignature`입니다. WS-Security 1.0을 사용하는 경우 기본값은 `SignBeforeEncrypt`입니다.<br /><br /> 이 특성은 <xref:System.ServiceModel.Security.MessageProtectionOrder> 형식입니다.|  
 |messageSecurityVersion|선택 사항입니다. 사용되는 WS-Security 버전을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11<br />-WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br />-WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br /><br /> 기본값은 WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11이며 간단하게 `Default`와 같이 XML로 나타낼 수 있습니다. 이 특성은 <xref:System.ServiceModel.MessageSecurityVersion> 형식입니다.|  
 |requireDerivedKeys|키를 원본 증명 키에서 파생할 수 있는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |requireSecurityContextCancellation|선택 사항입니다. 더 이상 필요하지 않은 보안 컨텍스트를 취소 및 종료할지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |requireSignatureConfirmation|선택 사항입니다. WS-Security 시그니처 확인을 사용할 수 있는지 여부를 지정하는 부울 값입니다. `true`로 설정되면 응답자는 메시지 시그니처를 확인합니다.  사용자 지정 바인딩이 상호 인증서에 대해 구성되었거나 발급된 토큰(WSS 1.1 바인딩)을 사용하도록 구성된 경우 이 특성은 기본적으로 `true`로 설정됩니다. 그렇지 않으면 기본값은 `false`입니다.<br /><br /> 서비스가 요청을 완전히 인식하고 응답하는지 확인하기 위해 시그니처 확인이 사용됩니다.|  
-|securityHeaderLayout|선택 사항입니다. 보안 헤더의 요소 순서를 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `Strict`일반적인 "사용 전 선언" 원칙에 따라 보안 헤더에 항목이 추가 됩니다.<br />-   `Lax`WSS을 확인 하는 임의의 순서로 보안 헤더에 항목이 추가 됩니다: SOAP 메시지 보안입니다.<br />-   `LaxWithTimestampFirst`WSS을 확인 하는 임의의 순서로 보안 헤더에 항목이 추가 됩니다: SOAP 메시지 보안 점을 제외 하 고는 보안 헤더의 첫 번째 요소는 wsse: timestamp 요소 여야 합니다.<br />-   `LaxWithTimestampLast`WSS을 확인 하는 임의의 순서로 보안 헤더에 항목이 추가 됩니다: SOAP 메시지 보안 점을 제외 하 고는 보안 헤더의 마지막 요소는 wsse: timestamp 요소 여야 합니다.<br /><br /> 기본값은 `Strict`입니다.<br /><br /> 이 요소는 <xref:System.ServiceModel.Channels.SecurityHeaderLayout> 형식입니다.|  
+|securityHeaderLayout|선택 사항입니다. 보안 헤더의 요소 순서를 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `Strict`: 일반적인 “사용 전 선언” 원칙에 따라 항목이 보안 헤더에 추가됩니다.<br />-   `Lax`: 항목은 WSS를 확인 하는 순서로 보안 헤더에 추가 됩니다. SOAP 메시지 보안입니다.<br />-   `LaxWithTimestampFirst`: 항목은 WSS를 확인 하는 순서로 보안 헤더에 추가 됩니다. SOAP 메시지 보안 점을 제외 하 고 보안 헤더의 첫 번째 요소는 wsse: timestamp 요소 여야 합니다.<br />-   `LaxWithTimestampLast`: 항목은 WSS를 확인 하는 순서로 보안 헤더에 추가 됩니다. SOAP 메시지 보안 점을 제외 하 고 보안 헤더의 마지막 요소는 wsse: timestamp 요소 여야 합니다.<br /><br /> 기본값은 `Strict`입니다.<br /><br /> 이 요소는 <xref:System.ServiceModel.Channels.SecurityHeaderLayout> 형식입니다.|  
   
 ## <a name="authenticationmode-attribute"></a>authenticationMode 특성  
   
@@ -104,7 +104,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|사용자 지정 바인딩의 모든 바인딩 기능을 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [SecurityBindingElement 인증 모드](../../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md) 하 고 [방법: SecurityBindingElement를 사용자 지정 바인딩을 사용 하 여 만들](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)합니다.  
+ 이 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [SecurityBindingElement 인증 모드](../../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md) 고 [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩을 만들려면](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)합니다.  
   
 ## <a name="example"></a>예제  
  다음 예에서는 사용자 지정 바인딩을 사용하여 보안을 구성하는 방법을 보여 줍니다. 여기서는 사용자 지정 바인딩을 사용하여 메시지를 안전하게 전송하고 메시지 수준 보안을 가능하게 하는 방법을 보여 줍니다. 이러한 방법은 클라이언트와 서비스 간에 메시지를 전송하는 데 보안 전송이 요구되면서 동시에 메시지가 메시지 수준에서 보호되어야 하는 경우에 유용합니다. 이 구성은 시스템 제공 바인딩에서는 지원되지 않습니다.  
@@ -175,5 +175,5 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
  [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
  [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [방법: SecurityBindingElement를 사용하여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
+ [어떻게: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [사용자 지정 바인딩 보안](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

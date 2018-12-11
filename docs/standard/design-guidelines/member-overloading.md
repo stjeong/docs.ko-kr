@@ -1,6 +1,6 @@
 ---
 title: 멤버 오버로드
-ms.date: 03/30/2017
+ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - default arguments
@@ -9,14 +9,13 @@ helpviewer_keywords:
 - overloaded members
 - signatures, members
 ms.assetid: 964ba19e-8b94-4b5b-b1e3-5a0b531a0bb1
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: 2127497d294cbfd4e1bb24d033f432378627ff13
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+author: KrzysztofCwalina
+ms.openlocfilehash: 93b294c4b535e015c7f4b021e0f950f038a60361
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45964204"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152437"
 ---
 # <a name="member-overloading"></a>멤버 오버로드
 멤버 오버 로드 매개 변수의 형식이 나 개수 에서만 차이가 있지만 이름이 같은 동일한 형식에 두 개 이상의 멤버를 만드는 것을 의미 합니다. 예를 들어, 다음 표에 `WriteLine` 메서드가 오버 로드 됩니다.  
@@ -56,9 +55,9 @@ public static class Console {
   
  *Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*  
   
- *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

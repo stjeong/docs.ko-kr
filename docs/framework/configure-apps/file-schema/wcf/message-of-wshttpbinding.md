@@ -3,11 +3,11 @@ title: '&lt;wsHttpBinding&gt;의 &lt;message&gt;'
 ms.date: 03/30/2017
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
 ms.openlocfilehash: db0825d0abe05564d040903304d8654fa75ed0ee
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50184796"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126226"
 ---
 # <a name="ltmessagegt-of-ltwshttpbindinggt"></a>&lt;wsHttpBinding&gt;의 &lt;message&gt;
 메시지 수준 보안 설정을 정의 합니다 [ \<wsHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)합니다.  

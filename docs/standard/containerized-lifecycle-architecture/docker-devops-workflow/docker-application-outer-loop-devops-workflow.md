@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/10/2018
-ms.openlocfilehash: a03853a508cfb3d5dd5fbfe66e4ef484b685faaa
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 37dd5481da571be56f134a5e142b7ba46427d7d8
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45653241"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143651"
 ---
 # <a name="steps-in-the-outer-loop-devops-workflow-for-a-docker-application"></a>Docker 응용 프로그램에 대 한 외부 루프 DevOps 워크플로의 단계
 
@@ -17,7 +17,7 @@ ms.locfileid: "45653241"
 
 ![](./media/image1.png)
 
-Microsoft 도구를 사용 하 여 Docker 응용 프로그램에 대 한 그림 5-1: DevOps 외부 루프 워크플로
+그림 5-1: Microsoft 도구를 사용 하 여 Docker 응용 프로그램에 대 한 DevOps 외부 루프 워크플로
 
 이제 이러한 각 단계를 자세히 살펴보겠습니다.
 
@@ -25,7 +25,7 @@ Microsoft 도구를 사용 하 여 Docker 응용 프로그램에 대 한 그림 
 
 이 단계는 4 장에에서 자세히 설명 되어 있지만 정리 하자면, 여기 있는 외부 루프 시작 되는, 현재는 개발자는 CI 파이프라인 작업을 시작 하는 소스 제어 관리 시스템 (예: Git) 코드를 푸시합니다.
 
-## <a name="step-2-source-code-control-integration-and-management-with-azure-devops-services-and-git"></a>2 단계: 소스 코드 컨트롤 통합과 Azure DevOps Services 및 Git를 사용 하 여 관리
+## <a name="step-2-source-code-control-integration-and-management-with-azure-devops-services-and-git"></a>2단계: 소스 코드 컨트롤 통합과 Azure DevOps Services 및 Git를 사용 하 여 관리
 
 이 단계에서 버전 제어 시스템이 통합된 버전을 팀의 다른 개발자 로부터 들어오는 모든 코드를 수집 하도록 해야 합니다.
 
@@ -35,7 +35,7 @@ Microsoft 도구를 사용 하 여 Docker 응용 프로그램에 대 한 그림 
 
 Azure DevOps 서비스 및 Team Foundation Server Git 및 Team Foundation 버전 제어를 지원합니다. 선택 하 고 엔드-투-엔드 Microsoft 환경을 사용할 수 있습니다. 그러나을 관리할 수도 있습니다 (예: GitHub, 온-프레미스 Git 리포지토리 또는 Subversion) 외부 리포지토리에서 코드를 연결 하 여 DevOps CI 파이프라인에 대 한 시작 점으로 코드를 가져올 수 있습니다.
 
-## <a name="step-3-build-ci-integrate-and-test-with-azure-devops-services-and-docker"></a>3 단계: 빌드, CI, 통합 및 Azure DevOps를 사용 하 여 서비스 및 Docker
+## <a name="step-3-build-ci-integrate-and-test-with-azure-devops-services-and-docker"></a>3 단계: CI 빌드를 통합 하 고 Azure DevOps를 사용 하 여 테스트 서비스 및 Docker
 
 CI는 최신 소프트웨어 테스트 및 배달에 대 한 표준으로 부상 했습니다. Docker 솔루션 개발 및 운영 팀 간의 명확히 분리를 유지 관리합니다. Docker 이미지의 불변성 개발, CI를 통해 테스트 및 프로덕션 환경에서 실행에 어떤 간의 반복 가능한 배포를 확인 합니다. Docker 엔진 개발자 노트북에서 배포 및 테스트 인프라 전반에서 컨테이너 노트북 환경입니다.
 
@@ -47,11 +47,11 @@ CI는 최신 소프트웨어 테스트 및 배달에 대 한 표준으로 부상
 
 "최종 아티팩트" 배포에 대해 Docker를 사용 하는 경우 배포할 응용 프로그램 또는 서비스를 사용 하 여 Docker 이미지 내에 포함 되 고 있습니다. 이러한 이미지는 푸시 되거나 게시 된 *Docker 레지스트리* (Azure Container Registry에 있을 수 있는 것 처럼 Docker Hub 레지스트리에서 공식 기본 이미지에 대 한 일반적으로 사용 되는 또는 공용 같은 개인 리포지토리에서).
 
-다음 기본 개념은: CI 파이프라인 꺼집니다 시작-Git와 같은 소스 코드 제어 리포지토리에 커밋으로 합니다. 커밋 그림 5-2에서와 같이 Azure DevOps 서비스는 Docker 컨테이너 내에서 빌드 작업을 실행 하 고 해당 작업을 성공적으로 완료 되 면 Docker 레지스트리에 Docker 이미지를 푸시 하면 됩니다.
+다음은 기본 개념이입니다. CI 파이프라인이 꺼집니다 시작-Git와 같은 소스 코드 제어 리포지토리에 커밋으로 합니다. 커밋 그림 5-2에서와 같이 Azure DevOps 서비스는 Docker 컨테이너 내에서 빌드 작업을 실행 하 고 해당 작업을 성공적으로 완료 되 면 Docker 레지스트리에 Docker 이미지를 푸시 하면 됩니다.
 
 ![](./media/image2.png)
 
-그림 5-2: 단계 CI
+그림 5-2: CI 단계
 
 Docker 및 Azure DevOps 서비스를 사용 하 여 기본 CI 워크플로 단계는 다음과 같습니다.
 
@@ -145,7 +145,7 @@ Docker 레지스트리는 "진실의 원본" QA 또는 프로덕션 환경에 �
 
 ![](./media/image4.png)
 
-그림 5-4: 사용자 지정 이미지를 Docker 레지스트리에 게시
+그림 5-4: Docker 레지스트리에 사용자 지정 이미지 게시
 
 Azure Container Registry, Amazon 웹 서비스 컨테이너 레지스트리, Google Container Registry, Quay 레지스트리 등 클라우드 공급 업체에서 Docker 레지스트리의 여러 제품 있습니다.
 
@@ -169,13 +169,13 @@ Docker 이미지의 불변성 개발, CI를 통해 테스트 및 프로덕션 �
 
 ![](./media/image6.png)
 
-그림 5-6: 간단 하 게 Docker 호스트 환경 레지스트리에 응용 프로그램 컨테이너를 배포합니다.
+그림 5 ~ 6: 간단한 Docker 호스트 환경 레지스트리에 응용 프로그램 컨테이너 배포
 
 그림 5-7 작업 추가 대화 상자에서 Docker Compose를 클릭 하 여 Azure DevOps 서비스를 통해 QA/테스트 환경에 빌드 CI를 연결할 수는 방법을 강조 표시 합니다. 그러나 스테이징 또는 프로덕션 환경에 배포할 때 일반적으로 사용 여러 환경을 처리 하는 릴리스 관리 기능 (같은 QA, 스테이징 및 프로덕션). Azure DevOps 서비스를 사용 하는 단일 Docker 호스트에 배포 하는 경우 "Docker Compose" 작업 (docker를 호출 하는 것입니다-내부에서 명령을 작성). Azure Container Service에 배포 하는 경우 다음에 나오는 섹션에서 설명 했 듯이 Docker 배포 작업을 사용 합니다.
 
 ![](./media/image7.png)
 
-Azure DevOps 서비스 파이프라인에서 Docker Compose 작업을 추가 하는 그림 5-7:
+그림 5-7: Azure DevOps 서비스 파이프라인의 Docker Compose 작업을 추가합니다.
 
 Azure DevOps Services에서 릴리스를 만들 때 입력된 아티팩트 집합을 사용 합니다. 그 이유는 다양 한 환경에서 릴리스 수명 동안 변경할 수 없어야 하기 위해서입니다. 컨테이너를 도입 하는 경우 입력된 아티팩트를 배포 하는 레지스트리에서 이미지를 식별 합니다. 를 확인 하는 방법에 따라 docker-compose 파일에서 "myimage:latest"를 참조 하는 경우 가장 뚜렷한 사례는 릴리스 기간 동안 동일 하 게 보장 되지 않습니다.
 
@@ -187,7 +187,7 @@ Azure DevOps 서비스 확장을 통해 하 수 새 이미지를 빌드하고, D
 
 ![](./media/image8.png)
 
-Azure DevOps 서비스 Release Management에서 Azure DevOps 서비스 Docker Compose 작업을 구성 하는 그림 5-8:
+그림 5 ~ 8: Azure DevOps 서비스 Release Management에서 Azure DevOps 서비스 Docker Compose 작업 구성
 
 그러나 그림 5-6에서 표시 하 고 그림 5-8의 구현 시나리오 간단한 Docker 호스트 및 Vm에 배포 되는 것과 단일 컨테이너 또는 이미지 당 인스턴스 수는 상당히 기본적 이며 아마도 sc 개발 또는 테스트에 대해서만 사용할 수 해야 염두에서에 둡니다 enarios 합니다. 대부분의 엔터프라이즈 프로덕션 시나리오에서 HA (고가용성)가 하려는 및 분산 하 여 여러 노드, 서버 및 Vm의 경우와 "지능형 장애 조치"에서 따라서 하는 경우 서버 또는 노드를 관리 하기 쉬운 확장성에 실패 하면 해당 서비스 및 컨테이너는 다른 호스트 서버 또는 VM으로 이동 됩니다. 이 경우 컨테이너 클러스터, 오 케 스트레이 터, 스케줄러 등 고급 기술이 필요합니다. 따라서 해당 클러스터에 배포 하는 방법은 다음 섹션에 설명 된 고급 시나리오를 통해 정확 하 게 됩니다.
 
@@ -201,13 +201,13 @@ Azure DevOps 서비스는 CD의 관점에서 특히에서 실행할 수 있습�
 
 ![](./media/image9.png)
 
-그림 5-9: Container Service에 배포 응용 프로그램 배포
+그림 5-9: 컨테이너 서비스에 분산된 된 응용 프로그램 배포
 
 처음에 특정 클러스터 또는 오 케 스트레이 터에 배포할 때 일반적으로 사용 특정 배포 스크립트 및 각 오 케 스트레이 터 (즉, Mesosphere DC/OS 또는 Kubernetes는 Docker 및 Docker 보다 다양 한 배포 메커니즘이 메커니즘 Swarm) 대신를 간단 하 고 사용 하기 쉬운 docker compose docker compose.yml 정의 파일을 기반으로 하는 도구입니다. 그러나 그림 5-10에서 표시 된 Microsoft Azure DevOps 서비스 Docker 배포 작업 덕분 있습니다 이제도 배포할 수 DC/OS에만 Microsoft는 해당 "변환"를 수행 하기 때문에 친숙 한 docker compose.yml 파일을 사용 하 여 (에서 프로그램 docker compose.yml 파일 DC/OS에 필요한 다른 형식으로).
 
 ![](./media/image10.png)
 
-그림 5-10: 환경 RM에 Docker 배포 작업 추가
+그림 5-10: 환경 RM에서 Docker 배포 작업 추가
 
 그림 5-11 Docker 배포 작업을 편집 대상 유형 (Azure Container Service DC/OS,이 경우), Docker Compose 파일 및 Docker 레지스트리 연결 (예: Azure Container Registry 또는 Docker 허브)을 지정 하는 방법을 보여 줍니다. 태스크는 DC/OS 클러스터에서 컨테이너를 배포할 준비 쉬운 사용자 지정 Docker 이미지를 검색 하는 위치입니다.
 
@@ -234,5 +234,5 @@ Mesosphere DC/OS: <https://mesosphere.com/product/>
 모니터링 및 진단 DevOps 영역 내에서 100%가 하는 경우에 모니터링 하는 프로세스 및 테스트 또는 베타 환경에 대 한 개발 팀에서 수행 하는 분석 됩니다. 부하 테스트를 수행 하 여 또는 베타 또는 QA 환경에서 베타 테스터 새 버전을 시도 하는 모니터링 하 여 수행 됩니다.
 
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](../run-manage-monitor-docker-environments/index.md)
+>[이전](index.md)
+>[다음](../run-manage-monitor-docker-environments/index.md)

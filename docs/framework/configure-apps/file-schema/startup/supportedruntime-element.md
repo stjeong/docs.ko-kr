@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: b86ffdd242a95a0c5c34efb3f38b3501f3f2ba6c
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b6303f765d1cc4a17fe19261c7326d8961ac1080
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197801"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129249"
 ---
 # <a name="ltsupportedruntimegt-element"></a>&lt;supportedRuntime&gt; 요소
 
@@ -36,8 +36,8 @@ ms.locfileid: "47197801"
   
 |특성|설명|  
 |---------------|-----------------|  
-|**version**|선택적 특성입니다.<br /><br /> 응용 프로그램이 지원하는 공용 언어 런타임(CLR) 버전을 지정하는 문자열 값입니다. 유효한 값에 대 한는 `version` 특성을 참조 합니다 ["런타임 버전" 값](#version) 섹션. **참고:** .NET Framework 3.5를 통해를 "*런타임 버전이*" 형식으로 지정 *주요*. *사소한*. *빌드*합니다. [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)]부터는 주 및 부 버전 번호만 필요합니다(즉, "v4.0.30319"가 아니라 "v4.0"만 필요). 짧은 문자열이 권장됩니다.|  
-|**sku**|선택적 특성입니다.<br /><br /> 이 응용 프로그램이 지원하는 .NET Framework 버전을 지정하는 SKU(Stock Keeping Unit)를 지정하는 문자열 값입니다.<br /><br /> .NET Framework 4.0의 사용을 시작 합니다 `sku` 특성을 사용 하는 것이 좋습니다.  존재한다면 앱이 대상으로 하는 .NET Framework의 버전을 나타냅니다.<br /><br /> Sku 특성의 유효한 값에 대 한 참조를 ["sku id" 값](#sku) 섹션입니다.|  
+|**version**|선택적 특성입니다.<br /><br /> 응용 프로그램이 지원하는 공용 언어 런타임(CLR) 버전을 지정하는 문자열 값입니다. 유효한 값에 대 한는 `version` 특성을 참조 합니다 ["런타임 버전" 값](#version) 섹션. **참고:**  .NET Framework 3.5를 통해를 "*런타임 버전*" 형식으로 지정 *주요*. *사소한*. *빌드*합니다. [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)]부터는 주 및 부 버전 번호만 필요합니다(즉, "v4.0.30319"가 아니라 "v4.0"만 필요). 짧은 문자열이 권장됩니다.|  
+|**sku**|선택적 특성입니다.<br /><br /> 이 응용 프로그램이 지원하는 .NET Framework 버전을 지정하는 SKU(Stock Keeping Unit)를 지정하는 문자열 값입니다.<br /><br /> .NET Framework 4.0을 시작할 때에는 `sku` 특성을 사용하는 것이 좋습니다.  존재한다면 앱이 대상으로 하는 .NET Framework의 버전을 나타냅니다.<br /><br /> Sku 특성의 유효한 값에 대 한 참조를 ["sku id" 값](#sku) 섹션입니다.|  
   
 ## <a name="remarks"></a>설명
 
@@ -48,7 +48,7 @@ ms.locfileid: "47197801"
 > [!NOTE]
 >  사용 하는 경우는 [CorBindToRuntimeByCfg](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md) 구성 파일을 지정 하려면 함수를 사용 해야 합니다는 `<requiredRuntime>` 런타임의 모든 버전에 대 한 요소입니다. 합니다 `<supportedRuntime>` 사용 하는 경우 요소는 무시 됩니다 [CorBindToRuntimeByCfg](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)합니다.  
   
-.NET Framework 1.1~3.5의 런타임 버전을 지원하는 앱의 경우 여러 버전의 런타임이 지원되면 첫 번째 요소는 우선 순위가 가장 높은 런타임 버전을 지정하고 마지막 요소는 우선 순위가 가장 낮은 버전을 지정해야 합니다. .NET Framework 4.0 또는 이상 버전에서 지 원하는 앱에 대 한 합니다 `version` .NET Framework 4 및 이후 버전에 공통적으로 적용 되는 CLR 버전을 나타내는 특성 및 `sku` 특성 단일.NET Framework 버전을 나타내는 하는 앱 대상으로 합니다.  
+.NET Framework 1.1~3.5의 런타임 버전을 지원하는 앱의 경우 여러 버전의 런타임이 지원되면 첫 번째 요소는 우선 순위가 가장 높은 런타임 버전을 지정하고 마지막 요소는 우선 순위가 가장 낮은 버전을 지정해야 합니다. .NET Framework 4.0 이상 버전을 원하는 앱의 경우 `version` 특성은 .NET Framework 4 이상 버전에 공통적으로 적용되는 CLR 버전을 나타내며, `sku` 특성은 앱이 대상으로 하는 단일 .NET Framework 버전을 나타냅니다.  
   
 > [!NOTE]
 >  응용 프로그램에서는 사용 레거시 활성화 경로 같은 합니다 [CorBindToRuntimeEx 함수](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md), 해당 경로 이전 버전 대신 CLR 버전 4를 활성화 하 고 를사용하여응용프로그램을빌드할경우또는[!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)]종속 되어 있지만 이전 버전의.NET Framework를 사용 하 여 빌드된 혼합 모드 어셈블리에 없는 지정 하는 데 충분 합니다 [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)] 지원 되는 런타임 목록에서. 또한 합니다 [ \<시작 > 요소](../../../../../docs/framework/configure-apps/file-schema/startup/startup-element.md) 구성 파일에서 설정 해야 합니다 `useLegacyV2RuntimeActivationPolicy` 특성을 `true`입니다. 그러나 이 특성을 `true`로 설정하면 .NET Framework의 이전 버전으로 빌드된 모든 구성 요소가 빌드 시 사용된 런타임 대신 [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)]을(를) 사용하여 실행됩니다.  
@@ -77,12 +77,12 @@ ms.locfileid: "47197801"
 |----------------------------|---------------------|  
 |4.0|".NETFramework,Version=v4.0"|  
 |4.0, Client Profile|".NETFramework,Version=v4.0,Profile=Client"|  
-|4.0, 플랫폼 업데이트 1|.NETFramework,Version=v4.0.1|  
-|4.0, Client Profile, 업데이트 1|.NETFramework,Version=v4.0.1,Profile=Client|  
-|4.0, 플랫폼 업데이트 2|.NETFramework,Version=v4.0.2|  
-|4.0, Client Profile, 업데이트 2|.NETFramework,Version=v4.0.2,Profile=Client|  
-|4.0, 플랫폼 업데이트 3|.NETFramework,Version=v4.0.3|  
-|4.0, Client Profile, 업데이트 3|.NETFramework,Version=v4.0.3,Profile=Client|  
+|4.0, 플랫폼 업데이트 1|". NETFramework, 버전 = v4.0.1 "|  
+|4.0, Client Profile, 업데이트 1|". NETFramework, 버전 = v4.0.1, 프로필 = Client "|  
+|4.0, 플랫폼 업데이트 2|". NETFramework, 버전 = v4.0.2 "|  
+|4.0, Client Profile, 업데이트 2|". NETFramework, 버전 = v4.0.2, 프로필 = Client "|  
+|4.0, 플랫폼 업데이트 3|". NETFramework, 버전 = v4.0.3 "|  
+|4.0, Client Profile, 업데이트 3|". NETFramework, 버전 = v4.0.3, 프로필 = Client "|  
 |4.5|".NETFramework,Version=v4.5"|  
 |4.5.1|".NETFramework,Version=v4.5.1"|  
 |4.5.2|".NETFramework,Version=v4.5.2"|  
@@ -108,7 +108,7 @@ ms.locfileid: "47197801"
 
 이 요소는 응용 프로그램 구성 파일에 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
  [시작 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
  [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  

@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: be9c3fe165be32df43073919904b85120c52d595
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f7acb60e6136c0250d18bdce23ac21fb6aa80b34
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50034463"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53148865"
 ---
 # <a name="inner-loop-development-workflow-for-docker-apps"></a>Docker 앱에 대 한 내부 루프 개발 워크플로
 
@@ -39,7 +39,7 @@ Docker 이미지의 인스턴스를 컨테이너에 이러한 구성 요소를 �
 
 ![](./media/image19.png)
 
-Docker CLI를 사용 하 여 컨테이너 화 된 Docker 응용 프로그램 수명 주기에 대 한 개략적인 워크플로 그림 4-15:
+그림 4-15: Docker CLI를 사용 하 여 컨테이너 화 된 Docker 응용 프로그램 수명 주기에 대 한 개략적인 워크플로
 
 ### <a name="step-1-start-coding-in-visual-studio-code-and-create-your-initial-appservice-baseline"></a>1 단계: Visual Studio Code에서 코딩을 시작 하 고 초기 앱/서비스 기준 만들기
 
@@ -61,13 +61,13 @@ Microsoft 제공 Mac, Windows, 및 Linux에서 지원 되 고 사용 하 여 Int
 
 Docker CLI를 사용 하 여 작업 하 고 어떤 코드 편집기를 사용 하 여 코드를 작성할 수 있지만 쉽게 작성 Dockerfile 및 docker-compose.yml 파일 작업 영역에는 Visual Studio Code를 사용 하는 경우. 또한 아래에 있는 Docker CLI를 사용 하 여 상세 작업 실행 될 수 있는 스크립트를 일으키는 IDE에서 Visual Studio Code 작업을 실행할 수 있습니다.
 
-Visual Studio Code는 설치 해야 하는 확장에 의해 제공 됩니다. 이렇게 하려면 키를 눌러 Ctrl + Shift + P를 입력 **ext 설치**, 그런 다음 확장을 실행 하 고: Marketplace 확장 목록을 표시 하려면 확장 설치 명령입니다. 그런 다음 입력 **docker** 결과 필터링 하 여 다음 그림 4-16에 표시 된 대로 Dockerfile 및 Docker Compose 파일 (yml) 지원 확장을 선택 합니다.
+Visual Studio Code는 설치 해야 하는 확장에 의해 제공 됩니다. 이렇게 하려면 키를 눌러 Ctrl + Shift + P를 입력 **ext 설치**, 한 다음 확장을 실행 합니다. Marketplace 확장 목록을 불러오려면 명령 확장을 설치 합니다. 그런 다음 입력 **docker** 결과 필터링 하 여 다음 그림 4-16에 표시 된 대로 Dockerfile 및 Docker Compose 파일 (yml) 지원 확장을 선택 합니다.
 
 ![](./media/image20.png)
 
-그림 4-16: Visual Studio Code의 Docker 확장 설치
+그림 4-16: Visual Studio Code의 Docker 확장을 설치합니다.
 
-### <a name="step-2-create-a-dockerfile-related-to-an-existing-image-plain-os-or-dev-environments-like-net-core-nodejs-and-ruby"></a>2 단계: 기존 이미지 (일반 OS 또는.NET Core, Node.js 및 Ruby와 같은 개발 환경)와 관련 된 DockerFile 만들기
+### <a name="step-2-create-a-dockerfile-related-to-an-existing-image-plain-os-or-dev-environments-like-net-core-nodejs-and-ruby"></a>2단계: 기존 이미지 (일반 OS 또는.NET Core, Node.js 및 Ruby와 같은 개발 환경)와 관련 된 DockerFile 만들기
 
 만들려는 사용자 지정 이미지 및 컨테이너 배포 당 DockerFile 해야, 따라서 단일 사용자 지정 서비스의 앱 옵션을 구성 된 경우 단일 DockerFile 해야 합니다. 하지만 서비스 당 하나의 Dockerfile 경우 앱은 여러 서비스 (예: 마이크로 서비스 아키텍처)으로 구성 해야 합니다.
 
@@ -92,7 +92,7 @@ DockerFile는 앱 또는 서비스의 루트 폴더 내에서 일반적으로 �
 
 DockerFile에서 기본 Docker 이미지를 사용 하기 (예: "에서 microsoft/dotnet:1.0.0-core" 사용) 지정할 수 있습니다. 일반적으로 사용자 지정 이미지에서 공식 리포지토리에서 얻을 수 있는 기본 이미지를 기반으로 빌드됩니다 합니다 [Docker Hub 레지스트리에서](https://hub.docker.com/) (같은 [.NET Core에 대 한 이미지](https://hub.docker.com/r/microsoft/dotnet/) 이상의 [Node.js용](https://hub.docker.com/_/node/)).
 
-***옵션 a: 사용 하 여 기존 공식 Docker 이미지***
+***옵션 a: 기존 공식 Docker 이미지를 사용 하 여***
 
 버전 번호를 사용 하 여 언어 스택의 공식 리포지토리를 사용 하 여 동일한 언어 기능 (개발, 테스트 및 프로덕션 포함)는 모든 컴퓨터에서 사용할 수 있는지 확인 합니다.
 
@@ -128,11 +128,11 @@ Docker에서 앱을 실행 하는 방법을 알 수 있도록 언어/프레임 �
 
 Windows 컨테이너 널리 퍼져 있을 경우 단일 리포지토리는 Linux 및 Windows 이미지 같은 플랫폼 변형을 포함할 수 있습니다. 이 공급 업체와 같은 여러 플랫폼에 맞게 단일 리포지토리를 사용할 수 있도록 하는 Docker에서 새로운 기능인 [microsoft/aspdotnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) DockerHub 레지스트리에서 사용할 수 있는 저장소입니다. 기능 상태가 유지 되 면으로 Windows 호스트에서이 이미지를 끌어오려면 끌어오면 Windows 변형을 Linux 호스트에서 동일한 이미지 이름을 가져오는 끌어오면 Linux 변형을 반면 합니다.
 
-***부터 기본 이미지 b: 만들기 옵션***
+***옵션 b: 기본 이미지를 처음부터 만들기***
 
 이 항목에 설명 된 대로 처음부터 사용자 고유의 Docker 기본 이미지를 만들 수 있습니다 [문서](https://docs.docker.com/engine/userguide/eng-image/baseimages/) Docker에서. Docker로 시작 하는 경우에 가장 적합 한 않을 하는 시나리오 이지만 고유한 기본 이미지의 특정 비트를 설정 하려는 경우 수행할 수 있습니다.
 
-### <a name="step-3-create-your-custom-docker-images-embedding-your-service-in-it"></a>3 단계: 서비스를 포함 하 여 사용자 지정 Docker 이미지 만들기
+### <a name="step-3-create-your-custom-docker-images-embedding-your-service-in-it"></a>3 단계: 에 서비스를 포함 하 여 사용자 지정 Docker 이미지 만들기
 
 앱을 구성 하는 각 사용자 지정 서비스에 대 한 관련된 이미지를 만드는 해야 합니다. 단일 서비스 또는 웹 앱의 앱 옵션을 구성 된 경우에 단일 이미지를 방금 해야 합니다.
 
@@ -147,7 +147,7 @@ Windows 컨테이너 널리 퍼져 있을 경우 단일 리포지토리는 Linux
 
 ![](./media/image25.png)
 
-그림 4-19: docker 빌드를 실행합니다.
+그림 4-19: 실행 중인 docker 빌드
 
 필요에 따라 직접 docker를 실행 하는 대신 프로젝트의 폴더에서 빌드를 처음 실행된 dotnet을 사용 하 여 명령을 게시 하 고 docker 빌드를 실행 하 여.NET 라이브러리를 사용 하 여 배포 가능 폴더를 생성할 수 있습니다.
 
@@ -157,9 +157,9 @@ Windows 컨테이너 널리 퍼져 있을 경우 단일 리포지토리는 Linux
 
 ![](./media/image26.png)
 
-그림 4-20: docker 이미지를 사용 하 여 기존 이미지 보기
+그림 4-20: Docker 이미지를 사용 하 여 보기 기존 이미지
 
-### <a name="step-4-optional-define-your-services-in-docker-composeyml-when-building-a-composed-docker-app-with-multiple-services"></a>4 단계: (선택 사항) 정의 여러 서비스를 사용 하 여 구성 된 Docker 앱을 빌드할 때 docker-compose.yml에서 서비스
+### <a name="step-4-optional-define-your-services-in-docker-composeyml-when-building-a-composed-docker-app-with-multiple-services"></a>4 단계: (선택 사항) 여러 서비스를 사용 하 여 구성 된 Docker 앱을 빌드할 때 docker-compose.yml에서 서비스 정의
 
 Docker compose.yml 파일을 사용 하 여 다음 단계 섹션에서 설명한 배포 명령을 사용 하 여 구성된 된 응용 프로그램으로 배포할 관련된 서비스 집합을 정의할 수 있습니다.
 
@@ -196,7 +196,7 @@ Redis 서비스에서 사용 하는 [최신 공개 redis 이미지](https://hub.
 
 앱에 단일 컨테이너만 경우 Docker 호스트 (VM 또는 물리적 서버)에 배포 하 여 실행 하기만 하면 됩니다. 그러나 경우 앱은 여러 서비스로 구성 된, 해야 *구성*도 합니다. 다양 한 옵션을 확인해 보겠습니다.
 
-***옵션 a: 실행 단일 컨테이너 또는 서비스***
+***옵션 a: 단일 컨테이너 또는 서비스를 실행 합니다.***
 
 여기에 나와 있는 것 처럼 docker run 명령을 사용 하 여 Docker 이미지를 실행할 수 있습니다.
 
@@ -207,19 +207,19 @@ cesardl/netcore-webapi-microservice-docker:first
 
 이 특정 배포에서는 됩니다 수 리디렉션 내부 포트 5000에 포트 80에 전송 된 요청 note 합니다. 이제 응용 프로그램 호스트 수준에서 80 외부 포트에서 수신 대기 합니다.
 
-***옵션 b: Compose 및 다중 컨테이너 응용 프로그램을 실행***
+***옵션 b: 작성 및 다중 컨테이너 응용 프로그램을 실행 합니다.***
 
 대부분의 엔터프라이즈 시나리오에서 Docker 응용 프로그램을 여러 서비스로 구성 됩니다. 이러한 경우 명령을 실행할 수 있습니다 docker compose 설치 (그림 4-21), 이전에 만든 수 docker compose.yml 파일을 사용 하는 합니다. 이 명령을 실행의 모든 해당 관련된 컨테이너를 사용 하 여 구성 된 응용 프로그램을 배포 합니다.
 
 ![](./media/image27.png)
 
-그림 4-21: "docker compose 구성" 명령을 실행 결과
+그림 4-21: "Docker compose 구성" 명령을 실행 한 결과
 
 Docker를 실행 한 후-등록 구성, VM 표현에서 그림 4-22에서와 같이 응용 프로그램 및 해당 관련된 컨테이너에 Docker 호스트에 배포 합니다.
 
 ![](./media/image28.png)
 
-배포 된 Docker 컨테이너를 사용 하 여 그림 4-22: VM
+그림 4-22: Docker 컨테이너가 배포된 VM
 
 참고 docker compose 구성 및 실행 하는 docker 컨테이너 개발 환경에서 테스트를 위해 충분할 수 있습니다 하지 않지만 하지 사용 해당 전혀 Docker 클러스터 작업을 위해 예상 되 고 Docker Swarm, Mesosphere DC/OS 또는 Kubernetes 오 케 스트레이 터와 같은 경우 하기 위해 확장할 수 있습니다. 같은 클러스터를 사용 하는 경우 [Docker Swarm mode](https://docs.docker.com/engine/swarm/) 배포 하 고 있다면 또는 단일 서비스에 대 한 docker 서비스 만들기와 같은 추가 명령을 사용 하 여 테스트 해야 (사용 가능 Docker에 대 한 Windows 및 Mac 버전 1.12부터), 번들 작성 docker를 사용 하 여 여러 컨테이너로 구성 된 앱을 배포 하 고 docker 문서에 설명 된 대로 스택으로 구성 된 앱을 배포 하 여 myBundleFile를 배포 [분산 응용 프로그램 번들](https://blog.docker.com/2016/06/docker-app-bundle/) Docker에서.
 
@@ -239,7 +239,7 @@ Docker 호스트에서 브라우저를 열고 해당 사이트로; 이동 그림
 
 ![](./media/image29.png)
 
-그림 4-23: localhost를 사용 하 여 로컬로 Docker 응용 프로그램 테스트
+그림 4-23: Localhost를 사용 하 여 로컬로 Docker 응용 프로그램 테스트
 
 방법으로 배포 되었기를 실행 하는 docker를 사용 하 여 앞에서 설명한 대로 이기 때문에 포트 80을 사용 하지만 내부적으로 포트 5000에 리디렉션되지 된 note 합니다.
 
@@ -257,7 +257,6 @@ Visual Studio Code는 Node.js 및.NET Core 컨테이너 등의 다른 플랫폼�
 
 **자세한 정보:** 로 Node.js Docker 컨테이너를 디버깅 하는 방법에 대 한 자세한 내용은 <https://blog.docker.com/2016/07/live-debugging-docker/> 하 고 [ https://blogs.msdn.microsoft.com/\ 사용자\_ed/2016/02/27 / visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/](https://blogs.msdn.microsoft.com/user_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/)합니다.
 
-
 >[!div class="step-by-step"]
-[이전](docker-apps-development-environment.md)
-[다음](visual-studio-tools-for-docker.md)
+>[이전](docker-apps-development-environment.md)
+>[다음](visual-studio-tools-for-docker.md)

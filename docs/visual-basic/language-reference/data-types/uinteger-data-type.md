@@ -16,12 +16,12 @@ helpviewer_keywords:
 - UI literal type characters [Visual Basic]
 - data types [Visual Basic], integral
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
-ms.openlocfilehash: 660e51338d274bbe25da800ca701e6fb9eccbcda
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c63b9a25c1830f142002e9854e9ce275f55ef54b
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183206"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154827"
 ---
 # <a name="uinteger-data-type"></a>UInteger 데이터 형식
 
@@ -48,7 +48,7 @@ Visual Basic 2017부터 사용할 수도 있습니다 밑줄 문자 `_`, 가독�
 
 [!code-vb[UInteger](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#UIntS)]  
 
-Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
+Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어 다음과 같습니다.
 
 ```vb
 Dim number As UInteger = &H_0F8C_0326
@@ -56,7 +56,7 @@ Dim number As UInteger = &H_0F8C_0326
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-숫자 리터럴을 포함할 수도 있습니다는 `UI` 또는 `ui` [문자를 입력](../../programming-guide\language-features\data-types/type-characters.md) 나타내기 위해는 `UInteger` 다음 예제와 같이 데이터 형식입니다.
+숫자 리터럴을 포함할 수도 있습니다는 `UI` 또는 `ui` [문자를 입력](../../programming-guide/language-features/data-types/type-characters.md) 나타내기 위해는 `UInteger` 다음 예제와 같이 데이터 형식입니다.
 
 ```vb
 Dim number = &H_0FAC_14D7ui
@@ -83,5 +83,5 @@ Dim number = &H_0FAC_14D7ui
  [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
  [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [방법: 부호 없는 형식을 사용하는 Windows 함수 호출](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
+ [어떻게: 부호 없는 형식을 사용 하는 Windows 함수 호출](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
  [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

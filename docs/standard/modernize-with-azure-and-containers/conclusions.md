@@ -4,12 +4,12 @@ description: Azure 클라우드 및 Windows 컨테이너를 사용 하 여 기�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.openlocfilehash: af6151d04622c72acdb7f27ebb220bf611418b4c
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 62a9a38ccbe696c34ef799b574c0f5a95bc8f726
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45743971"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147926"
 ---
 # <a name="conclusions"></a>결론
 
@@ -30,4 +30,4 @@ ms.locfileid: "45743971"
 - Microsoft Azure에 Windows 컨테이너, 클라우드 인프라 및 PaaS 서비스를 사용 하 여 기존.NET Framework 응용 프로그램을 현대화 하기 가장 포괄적이 고 전체 환경을 제공 합니다.
 
 >[!div class="step-by-step"]
-[이전](walkthroughs-technical-get-started-overview.md)
+>[이전](walkthroughs-technical-get-started-overview.md)

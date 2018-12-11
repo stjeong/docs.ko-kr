@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Visual Basic, arrays
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
 ms.openlocfilehash: f8bd0f3eed8599f7f9e316df8274e8204a69c48f
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297454"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149902"
 ---
 # <a name="arrays-in-visual-basic"></a>Visual Basic의 배열
 
@@ -126,7 +126,7 @@ Dim sales()() As Double = New Double(11)() {}
 
 [!code-vb[nested-type-inference](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#6)]
 
-추가 예제를 보려면 [방법: Visual Basic에서 배열 변수 초기화](../../language-features/arrays/how-to-initialize-an-array-variable.md)를 참조하세요.
+추가 예제를 보려면 [방법: Visual Basic에서 배열 변수 초기화](../../language-features/arrays/how-to-initialize-an-array-variable.md)합니다.
 
 ## <a name="iterating-through-an-array"></a>배열 반복
 
@@ -219,13 +219,13 @@ Dim sales()() As Double = New Double(11)() {}
 
 ## <a name="zero-length-arrays"></a>길이가 0 인 배열
 
-Visual Basic 초기화 되지 않은 배열 구별 (값이 배열을 `Nothing`) 및 *길이가 0 인 배열을* 이거나 빈 배열 (요소가 없는 배열입니다.) 초기화 되지 않은 배열이 차원이 구분 되지 않습니다는 하나 또는 모든 값을 할당 합니다. 예를 들어:
+Visual Basic 초기화 되지 않은 배열 구별 (값이 배열을 `Nothing`) 및 *길이가 0 인 배열을* 이거나 빈 배열 (요소가 없는 배열입니다.) 초기화 되지 않은 배열이 차원이 구분 되지 않습니다는 하나 또는 모든 값을 할당 합니다. 예를 들어 다음과 같습니다.
 
 ```vb
 Dim arr() As String
 ```
 
-길이가 0 인 배열은 1 차원으로 선언 됩니다. 예를 들어:
+길이가 0 인 배열은 1 차원으로 선언 됩니다. 예를 들어 다음과 같습니다.
 
 ```vb
 Dim arrZ(-1) As String
@@ -299,12 +299,12 @@ Dim arrZ(-1) As String
 |용어|정의|
 |----------|----------------|
 |[Array Dimensions in Visual Basic](../../language-features/arrays/array-dimensions.md)|배열의 차수 및 차원을 설명합니다.|
-|[방법: Visual Basic에서 배열 변수 초기화](../../language-features/arrays/how-to-initialize-an-array-variable.md)|배열에 초기 값을 채우는 방법을 설명합니다.|
-|[방법: Visual Basic에서 배열 정렬](../../language-features/arrays/how-to-sort-an-array.md)|배열의 요소를 사전순으로 정렬하는 방법을 보여 줍니다.|
-|[방법: 한 배열에 다른 배열 할당](../../language-features/arrays/how-to-assign-one-array-to-another-array.md)|다른 배열 변수에 배열을 할당하는 규칙 및 단계를 설명합니다.|
+|[어떻게: Visual Basic에서 배열 변수 초기화](../../language-features/arrays/how-to-initialize-an-array-variable.md)|배열에 초기 값을 채우는 방법을 설명합니다.|
+|[어떻게: Visual Basic에서 배열 정렬](../../language-features/arrays/how-to-sort-an-array.md)|배열의 요소를 사전순으로 정렬하는 방법을 보여 줍니다.|
+|[어떻게: 하나의 배열에 다른 배열 할당](../../language-features/arrays/how-to-assign-one-array-to-another-array.md)|다른 배열 변수에 배열을 할당하는 규칙 및 단계를 설명합니다.|
 |[배열 문제 해결](../../language-features/arrays/troubleshooting-arrays.md)|배열에서 작업할 때 발생할 수 있는 몇 가지 일반적인 문제를 설명합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Array?displayProperty=nameWithType>
 - [Dim 문](../../../language-reference/statements/dim-statement.md)

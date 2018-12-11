@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
-ms.openlocfilehash: 8b072c739b56d191e79b4cc2eff195adfe9da2eb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 61731c4d9590892bdae8e90717d77b4dddf1d71d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365672"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147621"
 ---
 # <a name="sql-clr-type-mismatches"></a>SQL-CLR 형식 불일치
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 개체 모델과 SQL Server 간의 변환을 대부분 자동화합니다. 하지만 정확한 변환이 불가능한 경우도 있습니다. 공용 언어 런타임 (CLR) 형식 및 SQL Server 데이터베이스 형식 간의 주요 이러한 불일치는 다음 섹션에 요약 되어 있습니다. 특정 형식 매핑과 함수로 변환 하는 방법에 대 한 자세한 정보를 볼 수 [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) 및 [데이터 형식 및 함수](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)합니다.  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 개체 모델과 SQL Server 간의 변환을 대부분 자동화합니다. 하지만 정확한 변환이 불가능한 경우도 있습니다. 공용 언어 런타임 (CLR) 형식 및 SQL Server 데이터베이스 형식 간의 주요 이러한 불일치는 다음 섹션에 요약 되어 있습니다. 특정 형식 매핑 및 함수 변환에 대 한 자세한 정보를 찾을 수 있습니다 [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) 하 고 [데이터 형식 및 함수](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)합니다.  
   
 ## <a name="data-types"></a>데이터 형식  
  CLR과 SQL Server 간의 변환은 쿼리가 데이터베이스로 전송될 때와 쿼리 결과가 개체 모델로 반환될 때 수행됩니다. 예를 들어 다음 Transact-SQL 쿼리에는 두 번의 값 변환이 필요합니다.  
@@ -40,16 +40,16 @@ Select DateOfBirth From Customer Where CustomerId = @id
   
 -   SQL Server의 불일치  
   
-    -   **고정 길이 문자 형식**합니다. Transact SQL 유니코드와 비유니코드 범주를 구분 하 고 각 범주에는 3 가지 고유 형식: 고정 길이 `nchar` / `char`, 가변 길이 `nvarchar` / `varchar`, 및 크기가 더 큰 `ntext` / `text`합니다. 고정 길이 문자 형식은 문자를 검색하기 위해 CLR의 <xref:System.Char?displayProperty=nameWithType> 형식에 매핑될 수 있지만 실제 변환 및 동작은 동일한 형식과 일치하지 않습니다.  
+    -   **고정 길이 문자 형식**합니다. TRANSACT-SQL 구분 유니코드와 비유니코드 범주 및 각 범주에는 다음 세 가지 유형이: 고정 길이 `nchar` / `char`, 가변 길이 `nvarchar` / `varchar`, 및 크기가 더 큰 `ntext` / `text`합니다. 고정 길이 문자 형식은 문자를 검색하기 위해 CLR의 <xref:System.Char?displayProperty=nameWithType> 형식에 매핑될 수 있지만 실제 변환 및 동작은 동일한 형식과 일치하지 않습니다.  
   
-    -   **비트**합니다. `bit` 도메인에는 `Nullable<Boolean>`과 동일한 수의 값이 있지만 형식이 서로 다릅니다. `Bit` 에 값이 `1` 및 `0` 대신 `true` / `false`, 부울 식에 동등 개체로 사용할 수 없습니다.  
+    -   **비트**합니다. `bit` 도메인에는 `Nullable<Boolean>`과 동일한 수의 값이 있지만 형식이 서로 다릅니다. `Bit` 값을 사용 `1` 하 고 `0` of `true` / `false`를 부울 식에는 동등 개체로 사용할 수 없습니다.  
   
     -   **타임 스탬프**합니다. CLR의 <xref:System.TimeSpan?displayProperty=nameWithType> 형식과 달리 SQL Server의 `TIMESTAMP` 형식은 각 업데이트에 고유하고 <xref:System.DateTime> 값 간의 차이를 기반으로 하지 않는 데이터베이스에서 생성된 8바이트 숫자를 나타냅니다.  
   
-    -   **Money** 및 **SmallMoney**합니다. 이 형식은 <xref:System.Decimal>에 매핑될 수 있지만 기본적으로 다른 형식이며 서버 기반 함수와 변환에서 다른 형식으로 취급됩니다.  
+    -   **Money** 하 고 **SmallMoney**합니다. 이 형식은 <xref:System.Decimal>에 매핑될 수 있지만 기본적으로 다른 형식이며 서버 기반 함수와 변환에서 다른 형식으로 취급됩니다.  
   
 ### <a name="multiple-mappings"></a>다중 매핑  
- 여러 SQL Server 데이터 형식을 하나 이상의 CLR 데이터 형식에 매핑할 수 있습니다. 또한 여러 CLR 형식을 하나 이상의 SQL Server 형식에 매핑할 수도 있습니다. LINQ to SQL에서 매핑을 지원하지만 그렇다고 해서 CLR 및 SQL Server 간에 매핑되는 두 형식의 정밀도, 범위 및 의미 체계가 완벽하게 일치하는 것은 아닙니다. 일부 매핑에는 이러한 차원의 일부 또는 전체에 있어 차이가 있을 수 있습니다. 다양 한 매핑 가능성에 대 한 잠재적 이러한 차이점에 대 한 세부 정보를 찾을 수 있습니다 [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)합니다.  
+ 여러 SQL Server 데이터 형식을 하나 이상의 CLR 데이터 형식에 매핑할 수 있습니다. 또한 여러 CLR 형식을 하나 이상의 SQL Server 형식에 매핑할 수도 있습니다. LINQ to SQL에서 매핑을 지원하지만 그렇다고 해서 CLR 및 SQL Server 간에 매핑되는 두 형식의 정밀도, 범위 및 의미 체계가 완벽하게 일치하는 것은 아닙니다. 일부 매핑에는 이러한 차원의 일부 또는 전체에 있어 차이가 있을 수 있습니다. 다양 한 매핑 가능성에 대 한 잠재적인 이러한 차이점에 대 한 정보를 찾을 수 있습니다 [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)합니다.  
   
 ### <a name="user-defined-types"></a>사용자 정의 형식  
  사용자 정의 CLR 형식은 형식 시스템의 차이를 좁히는 역할을 합니다. 하지만 형식 버전 관리 측면에서 흥미로운 문제를 발생시킵니다. 클라이언트의 버전 변경이 데이터베이스 서버에 저장된 형식 변경과 일치하지 않을 수 있습니다. 이러한 변경으로 인해 형식 의미 체계가 일치하지 않을 수 있는 다른 형식 불일치가 발생하고 버전 차이가 표시될 수 있습니다. 상속 계층이 연속 버전에서 리팩터링되므로 추가 복잡한 문제가 발생합니다.  
@@ -107,7 +107,7 @@ or col1 != col2
   
  앞의 경우에서 SQL을 생성할 때 동등한 동작을 얻을 수는 있지만 변환이 사용자 의도를 정확하게 반영하지 못할 수 있습니다.  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 적용 하지 않는 C# `null` 또는 Visual Basic `nothing` 비교 의미 체계를 SQL 합니다. 비교 연산자는 구문상 동등한 SQL 항목으로 변환됩니다. 의미 체계는 서버 또는 연결 설정에 정의된 SQL 의미 체계를 반영합니다. 설정을 변경하여 의미 체계를 변경할 수 있지만 기본 SQL Server 설정에서는 두 개의 null 값이 같지 않은 것으로 고려됩니다. 하지만 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]은 쿼리 변환에서 서버 설정을 고려하지 않습니다.  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 적용 하지 않습니다 C# `null` 또는 Visual Basic `nothing` 비교 의미 체계를 SQL입니다. 비교 연산자는 구문상 동등한 SQL 항목으로 변환됩니다. 의미 체계는 서버 또는 연결 설정에 정의된 SQL 의미 체계를 반영합니다. 설정을 변경하여 의미 체계를 변경할 수 있지만 기본 SQL Server 설정에서는 두 개의 null 값이 같지 않은 것으로 고려됩니다. 하지만 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]은 쿼리 변환에서 서버 설정을 고려하지 않습니다.  
   
  리터럴 `null`(`nothing`)을 사용한 비교는 해당 SQL 버전(`is null` 또는 `is not null`)으로 변환됩니다.  
   
@@ -144,7 +144,7 @@ Where Col1 = Col2
 -- Error, collation conflict.  
 ```  
   
- 실제로 데이터 정렬 하위 절을 만듭니다는 *형식 제한* 대체할 수 없는 합니다.  
+ 데이터 정렬 하위 절 생성을 *형식 제한* 대체할 수 없는 합니다.  
   
  마찬가지로 형식 시스템에서 정렬 순서가 크게 다를 수 있습니다. 이러한 차이는 결과 정렬에 영향을 줍니다. <xref:System.Guid>는 모든 16바이트에서 사전순으로 정렬되는 반면(`IComparable()`), T-SQL은 node(10-15), clock-seq(8-9), time-high(6-7), time-mid(4-5), time-low(0-3)의 순서로 GUID를 비교합니다. 이러한 순서는 NT에서 생성된 GUID가 8진수 순서를 가지고 있을 때 SQL 7.0에서 정해졌습니다. 이 접근 방식을 사용하면 동일한 노드 클러스터에서 생성된 GUID가 타임스탬프에 따라 순서대로 표시됩니다. 이 접근 방식은 인덱스 작성에도 유용합니다. 임의의 IO 대신 삽입이 추가가 됩니다. 개인 정보 보호를 위해 나중에 Windows에서 순서가 스크램블되었지만 SQL에서 호환성을 유지해야 합니다. 해결 방법을 사용 하는 것 <xref:System.Data.SqlTypes.SqlGuid> 대신 <xref:System.Guid>합니다.  
   
@@ -153,9 +153,9 @@ Where Col1 = Col2
   
 -   C#은 논리 연산자 `&&` 및 `||`에 대한 연산자의 사전순에 따라 단락 의미 체계를 지정합니다. 반면 SQL은 세트 기반 쿼리를 대상으로 하므로 최적화 프로그램에서 보다 자유롭게 실행 순서를 결정할 수 있습니다. 몇 가지 함축된 의미에는 다음이 포함됩니다.  
   
-    -   의미 체계 상 동등한 변환 해야 "`CASE` ... `WHEN` … `THEN`"피연산자 실행 순서를 변경 하지 않으려면 SQL 구문이 필요 합니다.  
+    -   의미상 동등한 변환 해야 "`CASE` ... `WHEN` … `THEN`"에서 피연산자 실행 순서를 다시 매기지 않으려면 SQL에 생성 합니다.  
   
-    -   느슨하게 변환 `AND` / `OR` 연산자 C# 식의 첫 번째 피연산자의 계산 결과 기반으로 하는 두 번째 피연산자를 평가에 사용 하는 경우 예기치 않은 오류가 발생할 수 있습니다.  
+    -   느슨하게 변환 `AND` / `OR` 연산자 경우 예기치 않은 오류가 발생할 수는 C# 식을 첫 번째 피연산자의 계산 결과 기반으로 하는 두 번째 피연산자 평가에 의존 합니다.  
   
 -   `Round()` 함수는 [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] 및 T-SQL에서 의미 체계가 다릅니다.  
   
@@ -168,7 +168,7 @@ Where Col1 = Col2
     > [!NOTE]
     >  이 `Like` 연산자 동작은 C#에만 적용됩니다. Visual Basic `Like` 키워드는 변경되지 않습니다.  
   
--   오버플로 항상 SQL에서 확인 되었지만 (Visual Basic의 경우)에 없는 C#에서 명시적으로 지정 되어야 래핑을 방지 하기 위해 합니다. C1+C2가 C3에 저장되는 경우 정수 열 C1, C2 및 C3이 지정됩니다(Update T Set C3 = C1 + C2).  
+-   오버플로 항상 SQL에서 확인 되었지만 명시적으로 지정 하려면 C# 래핑을 방지 하기 위해 (아닌 Visual Basic). C1+C2가 C3에 저장되는 경우 정수 열 C1, C2 및 C3이 지정됩니다(Update T Set C3 = C1 + C2).  
   
     ```  
     create table T3 (  
@@ -186,7 +186,7 @@ Where Col1 = Col2
   
 -   SQL은 대칭 산술 반올림을 수행하는 반면 [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)]는 banker’s rounding을 사용합니다. 자세한 내용은 기술 자료 문서 196652를 참조하세요.  
   
--   기본적으로 일반 로캘의 경우 SQL에서 문자열 비교는 대/소문자를 구분하지 않습니다. Visual Basic 및 C#에서는 대/소문자를 구분합니다. 예를 들어 `s == "Food"` (`s = "Food"` Visual basic에서) 및 `s == "Food"` 다른 결과가 나타날 수 `s` 은 `food`합니다.  
+-   기본적으로 일반 로캘의 경우 SQL에서 문자열 비교는 대/소문자를 구분하지 않습니다. Visual Basic 및 C#에서는 대/소문자를 구분합니다. 예를 들어 `s == "Food"` (`s = "Food"` Visual basic에서) 및 `s == "Food"` 하는 경우 다른 결과가 나타날 수 있습니다 `s` 는 `food`합니다.  
   
     ```  
     -- Assume default US-English locale (case insensitive).  
@@ -257,7 +257,7 @@ Where Col1 + Col2 > 4
 ```  
   
 ## <a name="performance-issues"></a>성능 문제  
- 일부 SQL Server와 CLR 형식의 차이로 인해 CLR 및 SQL Server 형식 시스템을 거치는 동안 성능이 저하될 수 있습니다. 성능에 영향을 주는 시나리오에는 다음과 같은 것이 있습니다.  
+ 계정에 대 한 몇 가지 SQL Server와 CLR 형식 차이 발생할 성능이 저하 형식 시스템 CLR과 SQL Server 간의 교차 하는 경우. 성능에 영향을 주는 시나리오에는 다음과 같은 것이 있습니다.  
   
 -   논리 AND/OR 연산자의 강제 계산 순서  
   

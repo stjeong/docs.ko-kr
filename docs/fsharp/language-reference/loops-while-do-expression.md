@@ -2,12 +2,12 @@
 title: '루프: while...do 식(F#)'
 description: 참조 하는 방법을... 하는 동안 수행 식은 지정된 된 테스트 조건이 참인 동안 반복 실행 (루프)를 수행 하는데 사용 됩니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 5cf4461669221f91cb50e238c25494f03a10bbc2
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 43e2098ad6c7f103babc2471aebe987040feb989
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45664711"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127279"
 ---
 # <a name="loops-whiledo-expression"></a>루프: while...do 식
 
@@ -35,10 +35,10 @@ while test-expression do
 Found a 10!
 ```
 
->[!NOTE]
-사용할 수 있습니다 `while...do` 시퀀스 식 및 기타 계산 식, 사용자 지정된 버전의 경우는 `while...do` 식이 사용 됩니다. 자세한 내용은 [시퀀스](sequences.md)를 [비동기 워크플로](asynchronous-workflows.md), 및 [계산 식](computation-expressions.md)합니다.
+> [!NOTE]
+> 사용할 수 있습니다 `while...do` 시퀀스 식 및 기타 계산 식, 사용자 지정된 버전의 경우는 `while...do` 식이 사용 됩니다. 자세한 내용은 [시퀀스](sequences.md)를 [비동기 워크플로](asynchronous-workflows.md), 및 [계산 식](computation-expressions.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [루프: `for...in` 식](loops-for-in-expression.md)

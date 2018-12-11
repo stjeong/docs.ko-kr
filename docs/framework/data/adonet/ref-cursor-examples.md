@@ -2,12 +2,12 @@
 title: REF CURSOR 예제
 ms.date: 03/30/2017
 ms.assetid: c257da03-c6c9-4cf8-b591-b7740a962c40
-ms.openlocfilehash: 803c921b76369aa9268c7fd34d1f15dd51bb17f3
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 7edb9cd41c7949dba6c4a5c24179c30d01309214
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43406061"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127955"
 ---
 # <a name="ref-cursor-examples"></a>REF CURSOR 예제
 REF CURSOR 예제는 REF CURSOR를 사용하는 다음 세 개의 Microsoft Visual Basic 예제로 구성됩니다.  
@@ -26,7 +26,7 @@ REF CURSOR 예제는 REF CURSOR를 사용하는 다음 세 개의 Microsoft Visu
 ## <a name="creating-the-oracle-package-and-package-body"></a>Oracle 패키지 및 패키지 본문 만들기  
  이러한 예제를 사용하려면 서버에 다음 PL/SQL 패키지 및 패키지 본문이 있어야 합니다. Oracle 서버에 다음과 같은 Oracle 패키지를 만듭니다.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE CURSPKG AS   
     TYPE T_CURSOR IS REF CURSOR;   
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
@@ -39,7 +39,7 @@ END CURSPKG;
   
  Oracle 서버에 다음 Oracle 패키지 본문을 만듭니다.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS  
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,  
                                IO_CURSOR IN OUT T_CURSOR)  

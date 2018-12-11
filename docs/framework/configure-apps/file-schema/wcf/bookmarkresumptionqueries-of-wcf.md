@@ -3,11 +3,11 @@ title: WCF의 &lt;bookmarkResumptionQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: ed086712-1dc7-4932-a592-d1116a0155f3
 ms.openlocfilehash: d2b3365f3793c114003bbd9b9da664448bbac243
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50135105"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147654"
 ---
 # <a name="ltbookmarkresumptionqueriesgt-of-wcf"></a>WCF의 &lt;bookmarkResumptionQueries&gt;
 
@@ -59,7 +59,7 @@ ms.locfileid: "50135105"
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType> 
 - <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>       

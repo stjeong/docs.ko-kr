@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c1a78fa8-9f0c-40bc-a372-5575a48708fe
-ms.openlocfilehash: da9e5bd39cebce27dbaf89ac020c2bf8f154adcc
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 2b2d487484f026be7637185ef759fb87db571b3a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44211842"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145808"
 ---
 # <a name="queries-in-linq-to-dataset"></a>LINQ to DataSet에서 쿼리
 쿼리는 데이터 소스에서 데이터를 검색하는 식입니다. 관계형 데이터베이스에는 SQL이 사용되고 XML에는 XQuery가 사용되는 것과 같이 쿼리는 일반적으로 특수화된 쿼리 언어로 표현됩니다. 따라서 개발자는 쿼리하는 데이터 소스나 데이터 형식에 따라 새로운 쿼리 언어를 배워야 했습니다. [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)]는 다양한 데이터 소스 및 형식에 사용할 수 있는 간단하고 일관된 모델을 제공합니다. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 쿼리에서는 항상 프로그래밍 개체를 사용합니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "44211842"
   
  값 시퀀스를 반환하는 쿼리의 경우 쿼리 변수 자체에는 쿼리 결과가 저장되지 않고 쿼리 명령만 저장됩니다. 쿼리 실행은 `foreach` 또는 `For Each` 루프에서 쿼리 변수가 반복될 때까지 지연됩니다. 이 이라고 *지연 된 실행*; 실행 시간이 구성 된 후 발생 하는 쿼리, 합니다. 즉, 원하는 때에 언제라도 쿼리를 실행할 수 있습니다. 예를 들어, 이 기능은 다른 응용 프로그램에서 업데이트되는 데이터베이스가 있을 때 유용합니다. 사용자의 응용 프로그램에서 최신 정보를 검색하는 쿼리를 만든 다음 쿼리를 반복적으로 실행하여 업데이트된 정보를 항상 반환할 수 있습니다.  
   
- 값 시퀀스를 반환하는 지연된 쿼리와는 달리 singleton 값을 반환하는 쿼리는 즉시 실행됩니다. singleton 쿼리의 예로는 <xref:System.Linq.Enumerable.Count%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Average%2A> 및 <xref:System.Linq.Enumerable.First%2A>가 있습니다. singleton 결과를 계산하려면 쿼리 결과가 필요하므로 이러한 쿼리는 즉시 실행됩니다. 예를 들어, 쿼리 결과의 평균을 구하려면 평균 함수에 사용할 입력 데이터를 얻기 위해 쿼리를 실행해야 합니다. 또한 쿼리에서 <xref:System.Linq.Enumerable.ToList%2A> 또는 <xref:System.Linq.Enumerable.ToArray%2A> 메서드를 사용하여 singleton 값을 생성하지 않는 쿼리를 즉시 실행할 수도 있습니다. 쿼리 결과를 캐시하려는 경우 즉시 실행을 적용하는 이러한 기술을 유용하게 사용할 수 있습니다. 지연 및 즉시 쿼리 실행에 대 한 자세한 내용은 참조 하세요. [Getting Started with LINQ](https://msdn.microsoft.com/library/6cc9af04-950a-4cc3-83d4-2aeb4abe4de9)합니다.  
+ 값 시퀀스를 반환하는 지연된 쿼리와는 달리 singleton 값을 반환하는 쿼리는 즉시 실행됩니다. singleton 쿼리의 예로는 <xref:System.Linq.Enumerable.Count%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Average%2A> 및 <xref:System.Linq.Enumerable.First%2A>가 있습니다. singleton 결과를 계산하려면 쿼리 결과가 필요하므로 이러한 쿼리는 즉시 실행됩니다. 예를 들어, 쿼리 결과의 평균을 구하려면 평균 함수에 사용할 입력 데이터를 얻기 위해 쿼리를 실행해야 합니다. 또한 쿼리에서 <xref:System.Linq.Enumerable.ToList%2A> 또는 <xref:System.Linq.Enumerable.ToArray%2A> 메서드를 사용하여 singleton 값을 생성하지 않는 쿼리를 즉시 실행할 수도 있습니다. 쿼리 결과를 캐시하려는 경우 즉시 실행을 적용하는 이러한 기술을 유용하게 사용할 수 있습니다.
   
 ## <a name="queries"></a>쿼리  
  [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 쿼리는 쿼리 식 구문과 메서드 기반 쿼리 구문이라는 두 가지 구문 형식으로 만들 수 있습니다.  

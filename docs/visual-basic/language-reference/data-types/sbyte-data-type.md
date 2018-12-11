@@ -15,11 +15,11 @@ helpviewer_keywords:
 - SByte data type
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
 ms.openlocfilehash: c353aa8c5ac1d1912bc303f8f741ff0911cdf021
-ms.sourcegitcommit: 4bca8f7e172fd019ef437a4803bf5895c6bc4781
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50980822"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145688"
 ---
 # <a name="sbyte-data-type-visual-basic"></a>SByte 데이터 형식 (Visual Basic)
 
@@ -46,7 +46,7 @@ Visual Basic 2017부터 사용할 수도 있습니다 밑줄 문자 `_`, 가독�
 
 [!code-vb[SByteSeparator](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByteS)]  
 
-Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
+Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어 다음과 같습니다.
 
 ```vb
 Dim number As SByte = &H_F9
@@ -72,7 +72,7 @@ Dim number As SByte = &H_F9
   
 -   **Framework 형식입니다.** .NET Framework에서 해당하는 형식은 <xref:System.SByte?displayProperty=nameWithType> 구조체입니다.
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
  <xref:System.SByte?displayProperty=nameWithType>  
  [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  

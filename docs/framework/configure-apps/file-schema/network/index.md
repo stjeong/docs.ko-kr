@@ -12,14 +12,12 @@ helpviewer_keywords:
 - connections [.NET Framework], network configuration elements
 - network resources, network configuration elements
 ms.assetid: f1de5a0f-76c5-4833-819f-5222b8146340
-author: mcleblanc
-ms.author: markl
-ms.openlocfilehash: 5783e63d81c8951afb6b1646b595fc619d51549c
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 93248823284389a865111f9ab47cdac026be55b4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837484"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143209"
 ---
 # <a name="network-settings-schema"></a>네트워크 설정 스키마
 네트워크 설정으로 .NET Framework의 인터넷 연결 방법을 지정합니다. 다음 표에서는 [\<system.Net> 요소(네트워크 설정)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)의 각 자식 구성 요소의 기능을 설명합니다.  
@@ -42,5 +40,5 @@ ms.locfileid: "48837484"
 |[\<schemeSettings> 요소 (URI 설정)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|특정 체계에 대해 <xref:System.Uri>가 구문 분석되는 방법을 지정합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [인터넷 응용 프로그램 구성](../../../../../docs/framework/network-programming/configuring-internet-applications.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [인터넷 응용 프로그램 구성](../../../../../docs/framework/network-programming/configuring-internet-applications.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

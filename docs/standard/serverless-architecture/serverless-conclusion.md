@@ -4,12 +4,12 @@ description: 서버 없이 많은 장점을 제공 및 고유한 문제가 있�
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 055facf7ef46c18f8cda518da9a9f3e114dec1a2
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 6f4951dc85f739b92e56e84d0bd0262166181bd4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370085"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128845"
 ---
 # <a name="conclusion"></a>결론
 
@@ -30,4 +30,4 @@ ms.locfileid: "49370085"
 **서버 리스 도구로, 도구 상자 없습니다.** 서버 리스는 응용 프로그램 아키텍처 전용 솔루션 아님입니다. 기존 계층, 모놀리식 백 엔드 및 컨테이너를 포함할 수 있는 하이브리드 응용 프로그램의 일부로 활용할 수 있는 도구입니다. 서버 없이 기존 솔루션을 향상 시키기 위해 사용할 수 있습니다 및 응용 프로그램 개발에는 이것 아니면 저것 인 접근 방식을 아닙니다.
 
 >[!div class="step-by-step"]
-[이전](serverless-business-scenarios.md)
+>[이전](serverless-business-scenarios.md)

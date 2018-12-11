@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 2b0d7968ce2cf8f326004c9e564cb2e7912c1a0a
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 2d82aed13e185b2957a22f097b60e12265a5f190
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025612"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128208"
 ---
 # <a name="ltassemblyidentitygt-element-for-ltruntimegt"></a>&lt;assemblyIdentity&gt; 요소에 대 한 &lt;런타임&gt;
 어셈블리에 대 한 식별 정보를 포함합니다.  
@@ -52,10 +52,10 @@ culture="assembly culture"/>
   
 |값|설명|  
 |-----------|-----------------|  
-|`amd64`|64 비트 AMD 프로세서 전용입니다.|  
-|`ia64`|64 비트 Intel 프로세서 전용입니다.|  
-|`msil`|프로세서 및 워드 당 비트에 대해 중립적|  
-|`x86`|32 비트 Intel 프로세서, 네이티브 또는 64 비트 플랫폼에서 Windows (WOW) 환경에서 Windows에서.|  
+|`amd64`|AMD 64 x86 아키텍처에만 해당 합니다.|  
+|`ia64`|Intel Itanium 아키텍처에만 해당 합니다.|  
+|`msil`|프로세서 및 워드 당 비트에 대해 중립적입니다.|  
+|`x86`|32 비트 x86 프로세서, 네이티브 또는 64 비트 플랫폼에서 Windows (WOW) 환경에서 Windows에서.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

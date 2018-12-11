@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 26ada5af-175c-4576-931a-9f07fa1723e9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1a75efaf6703858fdb48a3f09635da1be4463d34
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d6cf0c944fc904a50a5b652f666f50c457a60204
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33364702"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53130842"
 ---
 # <a name="bindingfailure-mda"></a>bindingFailure MDA
 `bindingFailure` MDA(관리 디버깅 도우미)는 어셈블리 로드에 실패할 때 활성화됩니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "33364702"
   
  CLR이 해당 데이터를 사용할 수 없는 경우 표시 이름이나 요청된 경로가 비어 있을 수 있습니다. <xref:System.Reflection.Assembly.Load%2A> 메서드 호출이 실패한 경우 런타임이 어셈블리의 표시 이름을 확인할 수 없어 실패했을 가능성이 큽니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -77,7 +77,7 @@ ms.locfileid: "33364702"
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 이 MDA를 활성화할 수 있는 상황을 보여 줍니다.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.Text;  

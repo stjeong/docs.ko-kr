@@ -2,16 +2,16 @@
 title: 수학 함수
 ms.date: 03/30/2017
 ms.assetid: b040c7cb-156d-40f2-9152-61065b18148c
-ms.openlocfilehash: e6c58d781d7138f8295f2d0a2f0db110ad4b1dd6
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 63f83532c399f77e268913da3198327345b9c2ee
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837312"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143677"
 ---
 # <a name="mathematical-functions"></a>수학 함수
 
-.NET Framework Data Provider for SQL Server(SqlClient)에서는 인수로 제공된 입력 값에 대해 계산을 수행한 다음 숫자 값으로 된 결과를 반환하는 수치 연산 함수를 제공합니다. 이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다. 공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다. 다음 표에서는 SqlClient 수치 함수에 대해 설명합니다.  
+.NET Framework Data Provider for SQL Server(SqlClient)에서는 인수로 제공된 입력 값에 대해 계산을 수행한 다음 숫자 값으로 된 결과를 반환하는 수치 연산 함수를 제공합니다. 이 함수는 SqlClient를 사용할 때 사용 가능한 SqlServer 네임스페이스에 있습니다. 공급자의 네임스페이스 속성이 있으면 특정 구문(예: 형식 및 함수)에 대해 이 공급자가 사용하는 접두사를 Entity Framework에서 찾을 수 있습니다. 다음 표에서 SqlClient 수치 함수를 설명합니다.  
   
 ## <a name="absexpression"></a>ABS(expression)
 
@@ -19,7 +19,7 @@ ms.locfileid: "48837312"
 
 **인수**
 
-`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.
+`expression`: `Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.
 
 **반환 값**
 
@@ -35,7 +35,7 @@ ms.locfileid: "48837312"
 
 **인수**
 
-`expression`: `Double`입니다.
+`expression`: `Double`
 
 **반환 값**
 
@@ -51,7 +51,7 @@ ms.locfileid: "48837312"
 
 **인수**
 
-`expression`: `Double`입니다.
+`expression`: `Double`
 
 **반환 값**
 
@@ -67,7 +67,7 @@ ms.locfileid: "48837312"
 
 **인수**
 
-`expression`: `Double`입니다.
+`expression`: `Double`
 
 **반환 값**
 
@@ -83,7 +83,7 @@ ms.locfileid: "48837312"
 
 **인수**
 
-`expression`: `Double`입니다.
+`expression`: `Double`
 
 **반환 값**
 
@@ -99,7 +99,7 @@ ms.locfileid: "48837312"
 
 **인수**
 
-`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다.
+`expression`: `Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다.
 
 **반환 값**
 
@@ -116,7 +116,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -132,7 +132,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -148,7 +148,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다. 
+`expression`: `Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다. 
 
 **반환 값** 
 
@@ -164,7 +164,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -178,7 +178,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -195,7 +195,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -211,7 +211,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -258,7 +258,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Int32`, `Int64`, `Double` 또는 `Decimal`입니다. 
+`expression`: `Int32`, `Int64`를 `Double`, 또는 `Decimal`합니다. 
 
 **반환 값** 
 
@@ -326,7 +326,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -340,7 +340,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -354,7 +354,7 @@ ms.locfileid: "48837312"
 
 **인수** 
 
-`expression`: `Double`입니다. 
+`expression`: `Double` 
 
 **반환 값** 
 
@@ -380,7 +380,7 @@ ms.locfileid: "48837312"
 
 `SqlServer.TAN(45.0)`
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 SqlClient에서 지원하는 수치 함수에 대한 자세한 내용은 SqlClient 공급자 매니페스트에 지정한 SQL Server 버전의 설명서를 참조하세요.  
   

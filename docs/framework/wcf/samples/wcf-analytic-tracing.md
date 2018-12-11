@@ -3,11 +3,11 @@ title: WCF 분석 추적
 ms.date: 03/30/2017
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
 ms.openlocfilehash: a5e4b82bd28cae18f393a4143325623634d4bbaf
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181659"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147426"
 ---
 # <a name="wcf-analytic-tracing"></a>WCF 분석 추적
 이 샘플에는 Windows Communication Foundation (WCF) ETW에 기록 하는 분석 추적 스트림에 고유한 추적 이벤트를 추가 하는 방법을 보여 줍니다. [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]합니다. 분석 추적은 성능을 크게 저하시키지 않으면서 서비스를 쉽게 확인할 수 있도록 하기 위한 것입니다. 이 샘플에 사용 하는 방법을 보여 줍니다는 <xref:System.Diagnostics.Eventing?displayProperty=nameWithType> WCF 서비스와 통합 하는 쓰기 이벤트에는 Api입니다.  
@@ -106,7 +106,7 @@ ms.locfileid: "50181659"
 4.  클릭 **의 선택을 취소** 이벤트의 선택을 취소 합니다.  
   
 ## <a name="known-issue"></a>알려진 문제  
- 알려진 문제가 합니다 **이벤트 뷰어** ETW 이벤트가 디코딩되지 실패할 수 있습니다. 라는 오류 메시지가 표시 될 수 있습니다: "이벤트 ID에 대 한 설명을 \<id > 원본에서 Microsoft-Windows-응용 프로그램 서버-응용 프로그램을 찾을 수 없습니다. 이 이벤트를 발생시킨 구성 요소가 로컬 컴퓨터에 설치되어 있지 않거나 설치가 손상되었습니다. 설치 또는 로컬 컴퓨터의 구성 요소를 복구 합니다. " 이 오류가 발생 하는 경우 선택할 **새로 고침** 에서 합니다 **작업** 메뉴. 그러면 이벤트가 올바르게 디코딩됩니다.  
+ 알려진 문제가 합니다 **이벤트 뷰어** ETW 이벤트가 디코딩되지 실패할 수 있습니다. 라는 오류 메시지가 표시 될 수 있습니다. "이벤트 ID에 대 한 설명을 \<id > 원본 Microsoft-Windows-응용 프로그램 서버-응용 프로그램을 찾을 수 없습니다. 이 이벤트를 발생시킨 구성 요소가 로컬 컴퓨터에 설치되어 있지 않거나 설치가 손상되었습니다. 설치 또는 로컬 컴퓨터의 구성 요소를 복구 합니다. " 이 오류가 발생 하는 경우 선택할 **새로 고침** 에서 합니다 **작업** 메뉴. 그러면 이벤트가 올바르게 디코딩됩니다.  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  

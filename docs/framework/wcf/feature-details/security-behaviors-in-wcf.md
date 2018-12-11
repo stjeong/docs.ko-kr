@@ -3,11 +3,11 @@ title: WCF의 보안 동작
 ms.date: 03/30/2017
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
 ms.openlocfilehash: 221e9cb23e05378b68e4b53bc9d678c119738af5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192904"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127422"
 ---
 # <a name="security-behaviors-in-wcf"></a>WCF의 보안 동작
 Windows Communication Foundation (WCF), 동작 서비스 수준 또는 끝점 수준에서 런타임 동작을 수정합니다. (일반적으로 참조 동작에 대 한 자세한 내용은 [서비스 런타임 동작 지정](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *보안 동작* 감사 로그 및 자격 증명, 인증, 권한 부여에 대 한 제어를 허용 합니다. 프로그래밍 또는 구성을 통해 동작을 사용할 수 있습니다. 이 항목에서는 보안 기능과 관련된 다음 동작의 구성에 대해 중점적으로 설명합니다.  
@@ -53,7 +53,7 @@ Windows Communication Foundation (WCF), 동작 서비스 수준 또는 끝점 �
 ### <a name="servicecertificate-element"></a>\<serviceCertificate > 요소  
  이 요소를 사용하여 메시지 보안 모드를 사용하는 클라이언트에 대한 서비스를 인증하는 데 사용할 X.509 인증서를 지정합니다. 주기적으로 갱신되는 인증서를 사용하는 경우 지문이 변경됩니다. 이러한 경우 인증서를 동일한 주체 이름으로 다시 발급할 수 있기 때문에 주체 이름으로 `X509FindType`을 사용합니다.  
   
- 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
+ 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 클라이언트 자격 증명 값 지정](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
   
 ### <a name="certificate-of-clientcertificate-element"></a>\<인증서 >의 \<clientCertificate > 요소  
  사용 된 [ \<인증서 >](../../../../docs/framework/configure-apps/file-schema/wcf/certificate-of-clientcertificate-element.md) 요소 서비스에 통신 하기 위해 안전 하 게 클라이언트를 사용 하 여 클라이언트의 인증서가 있어야 합니다. 이는 양방향 통신 패턴을 사용하는 경우 발생합니다. 대부분의 일반적인 요청-회신 패턴의 경우, 클라이언트는 요청 시 서비스가 클라이언트에게 해당 응답을 안전하게 보내기 위해 사용하는 인증서를 포함합니다. 그러나 양방향 통신 패턴에는 요청 및 회신이 없습니다. 서비스는 통신에서 클라이언트의 인증서를 유추할 수 없기 때문에 서비스는 클라이언트에 대해 메시지 보안을 유지하기 위해 클라이언트 인증서를 필요로 합니다. 클라이언트 인증서를 out-of-band 방식으로 가져와서 이 요소를 사용하여 인증서를 지정해야 합니다. 이중 서비스에 대 한 자세한 내용은 참조 하세요. [방법: 이중 계약 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)합니다.  
@@ -115,13 +115,13 @@ Windows Communication Foundation (WCF), 동작 서비스 수준 또는 끝점 �
 ```  
   
 #### <a name="clientcertifictate-element"></a>\<clientCertifictate > 요소  
- 이 요소로 클라이언트를 인증하는 데 사용하는 인증서를 설정합니다. 자세한 내용은 [방법: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
+ 이 요소로 클라이언트를 인증하는 데 사용하는 인증서를 설정합니다. 자세한 내용은 [방법: 클라이언트 자격 증명 값 지정](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
   
 #### <a name="httpdigest"></a>\<httpDigest >  
  이 기능은 Windows 및 IIS(인터넷 정보 서비스)의 Active Directory를 통해 사용해야 합니다. 자세한 내용은 [IIS 6.0의 다이제스트 인증](https://go.microsoft.com/fwlink/?LinkId=88443)합니다.  
   
 #### <a name="issuedtoken-element"></a>\<issuedToken > 요소  
- 합니다 [ \<issuedToken >](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) 토큰 또는 보안 토큰 서비스를 사용 하는 동작의 로컬 발급자를 구성 하는 데 필요한 요소를 포함 합니다. 로컬 발급자를 사용 하는 클라이언트를 구성 하는 방법에 지침은 참조 하세요 [방법: 로컬 발급자 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)합니다.  
+ 합니다 [ \<issuedToken >](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) 토큰 또는 보안 토큰 서비스를 사용 하는 동작의 로컬 발급자를 구성 하는 데 필요한 요소를 포함 합니다. 로컬 발급자를 사용 하는 클라이언트를 구성 하는 방법에 지침을 참조 하세요. [방법: 로컬 발급자 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)합니다.  
   
 #### <a name="localissueraddress"></a>\<localIssuerAddress >  
  기본 보안 토큰 서비스 주소를 지정합니다. 이 때를 <xref:System.ServiceModel.WSFederationHttpBinding> 페더레이션 바인딩의 발급자 주소가 때 또는 보안 토큰 서비스에 대 한 URL을 제공 하지 않습니다 `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` 또는 `null`합니다. 이러한 경우 로컬 발급자의 주소와 이 발급자와 통신하는 데 사용할 바인딩을 사용하여 <xref:System.ServiceModel.Description.ClientCredentials>를 구성해야 합니다.  

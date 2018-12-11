@@ -2,12 +2,12 @@
 title: 개발을 기반으로 ASP.NET 웹 서비스와 WCF 비교
 ms.date: 03/30/2017
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
-ms.openlocfilehash: 6292c863e4e72187b78d28e32044633fe938abc8
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: c4c07d24ba322c957aac5ba9fa6ed3a5f337fb9a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580711"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127370"
 ---
 # <a name="comparing-aspnet-web-services-to-wcf-based-on-development"></a>개발을 기반으로 ASP.NET 웹 서비스와 WCF 비교
 Windows Communication Foundation (WCF)에 WCF 응용 프로그램을 프로그래밍 하 고 ASP.NET 웹 서비스와 마찬가지로 구성 동작을 모방 하는 ASP.NET 호환 모드 옵션이 있습니다. 다음 섹션에서는 ASP.NET 웹 서비스를 비교 하 고 WCF에 따라 두 기술을 사용 하 여 응용 프로그램을 개발 하는 데 필요한 키를 누릅니다.  
@@ -29,7 +29,7 @@ Windows Communication Foundation (WCF)에 WCF 응용 프로그램을 프로그�
   
  WCF<xref:System.Runtime.Serialization.DataContractAttribute> 고 <xref:System.Runtime.Serialization.DataMemberAttribute> 다음 샘플 코드에 표시 된 대로 특정 필드 또는 형식의 속성을 직렬화 하는 XML로 serialize 할 형식의 인스턴스가 되도록 하려면.NET Framework 형식에 추가할 수 있습니다.  
   
-```  
+```csharp  
 //Example One:   
 [DataContract]  
 public class LineItem  
@@ -149,7 +149,7 @@ public class LineItem
   
 -   <xref:System.Xml.Serialization.XmlSerializer> 및 <xref:System.Xml.Serialization> 네임스페이스의 특성은 .NET Framework 형식을 XML 스키마에 정의된 유효한 형식에 매핑할 수 있도록 고안되었으므로 .NET Framework 형식을 XML로 표현하는 방식을 매우 자세하게 제어할 수 있습니다. <xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.DataContractAttribute> 및 <xref:System.Runtime.Serialization.DataMemberAttribute>는 형식을 XML로 표현하는 방식을 거의 제어하지 않습니다. 형식과 해당 필드 또는 속성을 XML로 표현하는 데 사용되는 네임스페이스와 이름, 그리고 필드와 속성이 XML로 나타나는 순서만 지정할 수 있습니다.  
   
-    ```  
+    ```csharp  
     [DataContract(  
     Namespace="urn:Contoso:2006:January:29",  
     Name="LineItem")]  
@@ -184,7 +184,7 @@ public class LineItem
   
  이러한 모든 차이점에도 불구하고 <xref:System.Xml.Serialization.XmlSerializer>에서 기본적으로 형식을 serialize하는 XML은 해당 XML에 대한 네임스페이스가 명시적으로 정의되어 있는 경우 <xref:System.Runtime.Serialization.DataContractSerializer>에서 형식을 serialize하는 XML과 의미상 동일합니다. 두 serializer 사용에 대 한 특성에는 다음 클래스는 의미상 동일한 XML로 변환 합니다 <xref:System.Xml.Serialization.XmlSerializer> 및는 <xref:System.Runtime.Serialization.DataContractAttribute>:  
   
-```  
+```csharp  
 [Serializable]  
 [XmlRoot(Namespace="urn:Contoso:2006:January:29")]  
 [DataContract(Namespace="urn:Contoso:2006:January:29")]  
@@ -207,7 +207,7 @@ public class LineItem
 ## <a name="service-development"></a>서비스 개발  
  ASP.NET을 사용하여 서비스를 개발하려면 일반적으로 클래스에 <xref:System.Web.Services.WebService> 특성을 추가하고 서비스의 작업이 되는 해당 클래스의 메서드에 <xref:System.Web.Services.WebMethodAttribute>를 추가했었습니다.  
   
-```  
+```csharp  
 [WebService]  
 public class Service : T:System.Web.Services.WebService  
 {  
@@ -221,7 +221,7 @@ public class Service : T:System.Web.Services.WebService
   
  ASP.NET 2.0에는 클래스가 아니라 인터페이스에 <xref:System.Web.Services.WebService> 및 <xref:System.Web.Services.WebMethodAttribute> 특성을 추가하고 해당 인터페이스를 구현하기 위해 클래스를 작성하는 옵션이 추가되었습니다.  
   
-```  
+```csharp  
 [WebService]  
 public interface IEcho  
 {  
@@ -245,7 +245,7 @@ public class Service : IEcho
   
  일반적으로 서비스 계약은 다음과 같이 인터페이스에 <xref:System.ServiceModel.ServiceContractAttribute> 및 <xref:System.ServiceModel.OperationContractAttribute>를 추가함으로써 정의됩니다.  
   
-```  
+```csharp  
 [ServiceContract]  
 public interface IEcho  
 {  
@@ -258,7 +258,7 @@ public interface IEcho
   
  서비스 계약은 일단 정의되면 다음과 같이 클래스로 하여금 서비스 계약을 정의하는 인터페이스를 구현하도록 함으로써 클래스에서 구현됩니다.  
   
-```  
+```csharp  
 public class Service : IEcho  
 {  
     public string Echo(string input)  
@@ -308,7 +308,7 @@ public class Service : IEcho
   
  서비스 유형의 내부 동작은 동작이라는 클래스 모음의 속성을 사용하여 조정할 수 있습니다. 다음 예제에서는 <xref:System.ServiceModel.ServiceBehaviorAttribute> 클래스를 사용하여 서비스 유형이 다중 스레드되도록 지정합니다.  
   
-```  
+```csharp  
 [ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple]  
 public class DerivativesCalculatorServiceType: IDerivativesCalculator  
 ```  
@@ -346,7 +346,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
   
  .NET 응용 프로그램 내에서 WCF 서비스를 호스트 하려면 서비스 유형을 응용 프로그램에서 참조 하는 클래스 라이브러리 어셈블리로 컴파일하고 사용 하 여 서비스 호스트 응용 프로그램을 프로그래밍 합니다 <xref:System.ServiceModel.ServiceHost> 클래스입니다. 다음은 필요한 기본 프로그래밍 예제입니다.  
   
-```  
+```csharp  
 string httpBaseAddress = "http://www.contoso.com:8000/";  
 string tcpBaseAddress = "net.tcp://www.contoso.com:8080/";  
   
@@ -375,7 +375,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
   
 1.  프로그래머는 <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> 특성을 서비스 유형에 추가하여 ASP.NET 호환 모드가 허용되는지 또는 필수인지 지정해야 합니다.  
   
-    ```  
+    ```csharp  
     [System.ServiceModel.Activation.AspNetCompatibilityRequirements(  
           RequirementsMode=AspNetCompatbilityRequirementsMode.Require)]  
     public class DerivativesCalculatorServiceType: IDerivativesCalculator  
@@ -426,7 +426,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
 ## <a name="message-representation"></a>메시지 표현  
  ASP.NET 웹 서비스에서 보내고 받는 SOAP 메시지의 헤더를 사용자 지정할 수 있습니다. <xref:System.Web.Services.Protocols.SoapHeader>에서 클래스가 파생되어 헤더의 구조가 정의된 다음 <xref:System.Web.Services.Protocols.SoapHeaderAttribute>가 헤더의 존재를 나타내는 데 사용됩니다.  
   
-```  
+```csharp  
 public class SomeProtocol : SoapHeader  
 {  
      public long CurrentValue;  
@@ -473,7 +473,7 @@ public class Service: WebService, IEcho
   
  WCF 특성을 제공 <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, 및 <xref:System.ServiceModel.MessageBodyMemberAttribute> 서비스에서 보내고 받는 SOAP 메시지의 구조를 설명 합니다.  
   
-```  
+```csharp  
 [DataContract]  
 public class SomeProtocol  
 {  
@@ -536,7 +536,7 @@ public interface IItemService
   
  ASP.NET 2.0을 통해 서비스가 WS-I(웹 서비스 상호 운용성) 조직의 Basic Profile 1.1과 호환되는지 확인하고 서비스가 WSDL과 호환된다는 클레임을 넣을 수 있게 되었습니다. 다음과 같이 `ConformsTo` 특성의 `EmitConformanceClaims` 및 <xref:System.Web.Services.WebServiceBindingAttribute> 매개 변수를 사용하면 됩니다.  
   
-```  
+```csharp  
 [WebService(Namespace = "http://tempuri.org/")]  
 [WebServiceBinding(  
      ConformsTo = WsiProfiles.BasicProfile1_1,  
@@ -572,7 +572,7 @@ public interface IEcho
   
  SOAP 오류를 클라이언트에게 반환하려면 데이터 계약 형식을 제네릭 형식으로 사용하여 제네릭 형식의 <xref:System.ServiceModel.FaultException%601> 인스턴스를 throw할 수 있습니다. 또한 <xref:System.ServiceModel.FaultContractAttribute> 특성을 작업에 추가하여 작업에서 발생 가능한 오류를 지정할 수 있습니다.  
   
-```  
+```csharp  
 [DataContract]  
 public class MathFault  
 {   
@@ -593,7 +593,7 @@ public interface ICalculator
   
  이렇게 하면 가능한 오류가 서비스에 대한 WSDL에 알려지기 때문에 클라이언트 프로그래머가 작업에서 발생할 수 있는 오류를 정확히 예상하고 적절한 catch 문을 작성할 수 있습니다.  
   
-```  
+```csharp  
 try  
 {  
      result = client.Divide(value1, value2);  
@@ -610,7 +610,7 @@ catch (FaultException<MathFault> e)
 ## <a name="state-management"></a>상태 관리  
  ASP.NET 웹 서비스를 구현하는 데 사용되는 클래스는 <xref:System.Web.Services.WebService>에서 파생될 수 있습니다.  
   
-```  
+```csharp  
 public class Service : WebService, IEcho  
 {  
   
@@ -629,14 +629,14 @@ public class Service : WebService, IEcho
   
  여기, 서비스 유형 `TradingSystem`에 <xref:System.ServiceModel.ServiceBehaviorAttribute> 동일한 WCF 클라이언트 인스턴스의 모든 호출이 서비스 유형의 같은 인스턴스로 라우팅되도록 지정 하는 합니다.  
   
-```  
+```csharp  
 [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
 public class TradingSystem: ITradingService  
 ```  
   
  `DealData` 클래스는 서비스 유형의 같은 인스턴스 내에서 실행되는 코드로 액세스할 수 있는 상태를 정의합니다.  
   
-```  
+```csharp  
 internal class DealData: IExtension<InstanceContext>  
 {  
  public string DealIdentifier = null;  
@@ -646,7 +646,7 @@ internal class DealData: IExtension<InstanceContext>
   
  서비스 계약의 작업 중 하나를 구현하는 서비스 유형의 코드에서 `DealData` 상태 개체는 서비스 유형의 현재 인스턴스에 대한 상태에 추가됩니다.  
   
-```  
+```csharp  
 string ITradingService.BeginDeal()  
 {  
  string dealIdentifier = Guid.NewGuid().ToString();  
@@ -658,7 +658,7 @@ string ITradingService.BeginDeal()
   
  그런 다음 이 상태 개체는 서비스 계약의 작업 중 다른 하나를 구현하는 코드로 검색하고 수정할 수 있습니다.  
   
-```  
+```csharp  
 void ITradingService.AddTrade(Trade trade)  
 {  
  DealData dealData =  OperationContext.Current.InstanceContext.Extensions.Find<DealData>();  
@@ -672,7 +672,7 @@ void ITradingService.AddTrade(Trade trade)
  ASP.NET 웹 서비스의 보안을 유지하기 위한 옵션은 IIS 응용 프로그램의 보안을 유지하는 옵션과 같습니다. IIS 내에서 뿐만 아니라.NET 실행 파일 내에서 WCF 응용 프로그램을 호스팅할 수 있습니다, 되므로 WCF 응용 프로그램 보안에 대 한 옵션 이루어져야 iis 기능과 별도로 합니다. 그러나 ASP.NET 웹 서비스에 제공 되는 기능은 ASP.NET 호환 모드에서 실행 되는 WCF 서비스에 대해 사용할 수 있습니다.  
   
 ### <a name="security-authentication"></a>보안: 인증  
- IIS는 응용 프로그램에 대한 액세스를 제어하는 기능을 제공하므로 이 기능을 통해 Windows 인증, 다이제스트 인증, 기본 인증, .NET Passport 인증 등 다양한 모드의 인증을 선택할 수 있습니다. Windows 인증 옵션을 사용하면 ASP.NET 웹 서비스에 대한 액세스를 제어할 수 있습니다. 그러나 WCF 응용 프로그램을 IIS에서 호스팅되는 경우에 IIS 다양 한 다른 옵션과 함께 Windows 인증을 지 원하는 자체 WCF에서 해당 인증을 관리할 수 있도록 응용 프로그램에 익명 액세스를 허용 하도록 구성 되어야 합니다. 기본 제공되는 다른 옵션으로는 사용자 이름 토큰, X.509 인증서, SAML 토큰, CardSpace 카드 등이 있으며 사용자 지정 인증 메커니즘을 정의할 수도 있습니다.  
+ IIS는 익명 액세스 또는 다양 한 인증 모드를 선택할 수는 응용 프로그램에 대 한 액세스 제어 기능을 제공 합니다. Windows 인증, 다이제스트 인증, 기본 인증 및.NET Passport 인증 합니다. Windows 인증 옵션을 사용하면 ASP.NET 웹 서비스에 대한 액세스를 제어할 수 있습니다. 그러나 WCF 응용 프로그램을 IIS에서 호스팅되는 경우에 IIS 다양 한 다른 옵션과 함께 Windows 인증을 지 원하는 자체 WCF에서 해당 인증을 관리할 수 있도록 응용 프로그램에 익명 액세스를 허용 하도록 구성 되어야 합니다. 기본 제공되는 다른 옵션으로는 사용자 이름 토큰, X.509 인증서, SAML 토큰, CardSpace 카드 등이 있으며 사용자 지정 인증 메커니즘을 정의할 수도 있습니다.  
   
 ### <a name="security-impersonation"></a>보안: 가장  
  ASP.NET에서는 ASP.NET 웹 서비스가 특정 사용자로, 또는 현재 요청에서 제공된 사용자의 자격 증명으로 가장할 수 있도록 하는 ID 요소를 제공합니다. ASP.NET 호환 모드에서 실행 하는 WCF 응용 프로그램에서 가장을 구성 하려면 해당 요소를 사용할 수 있습니다.  
@@ -691,12 +691,12 @@ void ITradingService.AddTrade(Trade trade)
   
  서비스 작업은 현재 요청에서 제공된 사용자의 자격 증명으로 가장하도록 구성할 수 있습니다.  
   
-```  
+```csharp  
 [OperationBehavior(Impersonation = ImpersonationOption.Required)]  
 public void Receive(Message input)  
 ```  
   
-### <a name="security-authorization-using-access-control-lists"></a>보안: 액세스 제어 목록을 사용하여 권한 부여  
+### <a name="security-authorization-using-access-control-lists"></a>보안: Access Control 목록을 사용 하 여 권한 부여  
  ACL(Access Control 목록)을 사용하면 .asmx 파일에 대한 액세스를 제한할 수 있습니다. 그러나 ASP.NET 호환 모드에서 WCF.svc 파일의 Acl은 제외 하 고 무시 됩니다.  
   
 ### <a name="security-role-based-authorization"></a>보안: 역할 기반 권한 부여  

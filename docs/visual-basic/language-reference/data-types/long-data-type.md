@@ -20,12 +20,12 @@ helpviewer_keywords:
 - data types [Visual Basic], assigning
 - Long data type
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
-ms.openlocfilehash: 040306b49bbf6b0f30556309457510ca873d8a74
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 357b7b42c7ad609b2a86ec3ee79a0f6f38dd9471
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50197225"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155121"
 ---
 # <a name="long-data-type-visual-basic"></a>Long 데이터 형식 (Visual Basic)
 
@@ -52,7 +52,7 @@ Visual Basic 2017부터 사용할 수도 있습니다 밑줄 문자 `_`, 가독�
 
 [!code-vb[long](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#LongS)]
 
-Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
+Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어 다음과 같습니다.
 
 ```vb
 Dim number As Long = &H_0FAC_0326_1489_D68C
@@ -60,7 +60,7 @@ Dim number As Long = &H_0FAC_0326_1489_D68C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-숫자 리터럴을 포함할 수도 있습니다는 `L` [문자를 입력](../../programming-guide\language-features\data-types/type-characters.md) 나타내기 위해는 `Long` 다음 예제와 같이 데이터 형식입니다.
+숫자 리터럴을 포함할 수도 있습니다는 `L` [문자를 입력](../../programming-guide/language-features/data-types/type-characters.md) 나타내기 위해는 `Long` 다음 예제와 같이 데이터 형식입니다.
 
 ```vb
 Dim number = &H_0FAC_0326_1489_D68CL
@@ -76,7 +76,7 @@ Dim number = &H_0FAC_0326_1489_D68CL
   
 -   **Framework 형식입니다.** .NET Framework에서 해당하는 형식은 <xref:System.Int64?displayProperty=nameWithType> 구조체입니다.  
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 <xref:System.Int64>
 [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)   

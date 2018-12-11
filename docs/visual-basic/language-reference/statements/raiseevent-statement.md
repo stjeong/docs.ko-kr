@@ -11,11 +11,11 @@ helpviewer_keywords:
 - event handlers, connecting events to
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 ms.openlocfilehash: ba4c05b3ef69d180f43ac3b90aa8fd6dee9c80fb
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52296869"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143300"
 ---
 # <a name="raiseevent-statement"></a>RaiseEvent 문
 클래스, 폼 또는 문서의 모듈 수준에서 선언한 이벤트를 트리거합니다.  
@@ -28,7 +28,7 @@ RaiseEvent eventname[( argumentlist )]
   
 ## <a name="parts"></a>요소  
  `eventname`  
- 필수. 트리거할 이벤트의 이름입니다.  
+ 필수 요소. 트리거할 이벤트의 이름입니다.  
   
  `argumentlist`  
  선택 사항입니다. 변수, 배열 또는 식의 쉼표로 구분 된 목록입니다. `argumentlist` 인수를 괄호로 묶어야 합니다. 인수가 없는 경우에 괄호를 생략 되어야 합니다.  

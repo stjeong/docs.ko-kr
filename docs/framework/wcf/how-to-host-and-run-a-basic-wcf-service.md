@@ -1,5 +1,5 @@
 ---
-title: '방법: 기본 Windows Communication Foundation 서비스 호스트 및 실행'
+title: '방법: 호스트 및 기본 Windows Communication Foundation 서비스를 실행 합니다.'
 ms.date: 09/14/2018
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - WCF services [WCF]
 - WCF services [WCF], running
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-ms.openlocfilehash: b79c3246b7c12a3a99a5c68586387fc30573dcb6
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 710ccd69d7b0f8cd8cd3e04729fd952308a3fb4a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562296"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129378"
 ---
-# <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>방법: 기본 Windows Communication Foundation 서비스 호스트 및 실행
+# <a name="how-to-host-and-run-a-basic-windows-communication-foundation-service"></a>방법: 호스트 및 기본 Windows Communication Foundation 서비스를 실행 합니다.
 
 WCF(Windows Communication Foundation) 응용 프로그램을 만드는 데 필요한 6가지 작업 중 세 번째 작업입니다. 6가지 모든 작업에 대한 개요는 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md) 항목을 참조하세요.
 
@@ -149,7 +149,7 @@ End Module
 
 **4 단계** – 메타 데이터 교환을 사용 하도록 설정 합니다. 클라이언트는 메타데이터 교환을 사용하여 서비스 작업을 호출하는 데 사용되는 프록시를 생성합니다. 메타데이터 교환을 활성화하려면 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 인스턴스를 만들고 해당 <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> 속성을 `true`로 설정한 다음, 동작을 <xref:System.ServiceModel.ServiceHost> 인스턴스의 <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` 컬렉션에 추가합니다.
 
-**5 단계** Open –는 <xref:System.ServiceModel.ServiceHost> 들어오는 메시지를 수신 대기 합니다. 코드는 사용자가 Enter를 누를 때까지 기다립니다. 이를 수행하지 않으면 응용 프로그램이 즉시 닫히고 서비스가 종료합니다. 또한 사용된 try/catch 블록도 주의하십시오. <xref:System.ServiceModel.ServiceHost>를 인스턴스화한 후에는 나머지 코드가 try/catch 블록에 배치됩니다. <xref:System.ServiceModel.ServiceHost>에서 throw된 예외를 안전하게 catch하는 방법에 대한 자세한 내용은 [Using 문 사용 시 문제 회피](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)를 참조하세요.
+**5 단계** Open –는 <xref:System.ServiceModel.ServiceHost> 들어오는 메시지를 수신 대기 합니다. 코드는 사용자가 Enter를 누를 때까지 기다립니다. 이를 수행하지 않으면 응용 프로그램이 즉시 닫히고 서비스가 종료합니다. 또한 사용된 try/catch 블록도 주의하십시오. <xref:System.ServiceModel.ServiceHost>를 인스턴스화한 후에는 나머지 코드가 try/catch 블록에 배치됩니다. 안전 하 게에서 throw 된 예외를 catch 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.ServiceHost>를 참조 하세요 [사용 하 여 닫기 및 중단 WCF 클라이언트 리소스를 해제 하려면](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)
 
 > [!IMPORTANT]
 > 코드에서 변경한 내용을 반영 하도록 GettingStartedLib에서 App.config를 편집 합니다.
@@ -403,11 +403,11 @@ End Module
 서비스가 실행되고 있습니다. 다음 태스크에서는 WCF 클라이언트를 만듭니다.
 
 > [!div class="nextstepaction"]
-> [방법: WCF 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+> [어떻게: WCF 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
 
 문제 해결 정보는 [초보자를 위한 자습서 문제 해결](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [시작](../../../docs/framework/wcf/samples/getting-started-sample.md)
 - [자체 호스팅](../../../docs/framework/wcf/samples/self-host.md)

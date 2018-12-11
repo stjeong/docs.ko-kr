@@ -1,18 +1,18 @@
 ---
 title: 시퀀스(F#)
-description: 대규모 데이터의 컬렉션을 정렬 있지만 모든 요소를 사용 하 여 반드시 않을 때 F# 시퀀스를 사용 하는 방법에 알아봅니다.
+description: 사용 하는 방법을 알아봅니다 F# 시퀀스는 많은 경우 데이터의 컬렉션을 정렬 하지만 모든 요소를 사용 하 여 반드시 예상 하지도 않습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: cfe8d1e350a8ac46b7700c12aa84d250f8b35855
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 835aa5fdc32f98efdc7e1795efd09541a5f1b791
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48838912"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129209"
 ---
 # <a name="sequences"></a>시퀀스
 
 > [!NOTE]
-이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
+> 이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
 A *시퀀스* 논리는 일련의 요소는 한 가지 유형의 모든 합니다. 시퀀스는 대규모 데이터의 컬렉션을 정렬 있지만 모든 요소를 사용 하려면 반드시 예상 되지 않는 경우에 특히 유용 합니다. 시퀀스는 목록의 모든 요소는 사용할 수 있는 경우 보다 더 나은 성능을 제공할 수 있도록 개별 시퀀스 요소로만 계산 됩니다 필요 합니다. 시퀀스가 표시 됩니다는 `seq<'T>` 별칭인 형식에 대 한 `System.Collections.Generic.IEnumerable`합니다. 구현 하는.NET Framework 형식 따라서 `System.IEnumerable` 시퀀스로 사용할 수 있습니다. 합니다 [Seq 모듈](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) 시퀀스를 포함 하는 조작에 대 한 지원을 제공 합니다.
 
@@ -22,7 +22,7 @@ A *식 시퀀스* 시퀀스 계산 되는 식입니다. 시퀀스 식에는 여�
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1502.fs)]
 
-시퀀스 식 시퀀스의 값을 생성 하는 F# 식으로 이루어져 있습니다. 사용할 수는 `yield` 시퀀스에 포함 되는 값을 생성 하는 키워드입니다.
+시퀀스 식으로 이루어져 있습니다 F# 시퀀스의 값을 생성 하는 식입니다. 사용할 수는 `yield` 시퀀스에 포함 되는 값을 생성 하는 키워드입니다.
 
 다음은 예제입니다.
 
@@ -62,7 +62,7 @@ A *식 시퀀스* 시퀀스 계산 되는 식입니다. 시퀀스 식에는 여�
 
 시퀀스를 지 원하는 다양 한 기능을 동일 [나열](lists.md)합니다. 시퀀스는 그룹화 키 생성 함수를 사용 하 여 계산 등 작업을 지원 합니다. 또한 시퀀스는 하위 시퀀스를 추출 하는 것에 대 한 더 다양 한 함수를 지원 합니다.
 
-목록, 배열, 집합 및 지도 같은 많은 데이터 형식을 열거 가능한 컬렉션 이기 때문에 암시적으로 시퀀스입니다. 인수로 작동 하므로 일반적인 F# 데이터 형식 중 하나를 사용 하 여 또한 구현 하는 모든.NET Framework 데이터 형식으로 시퀀스를 사용 하는 함수 `System.Collections.Generic.IEnumerable<'T>`합니다. 이 목록에만 사용할 수 있습니다는 인수로 목록을 사용 하는 함수를 대조해 보세요. 형식 `seq<'T>` 에 대 한 형식 약어 `IEnumerable<'T>`합니다. 즉, 제네릭 구현 하는 형식 `System.Collections.Generic.IEnumerable<'T>`, 배열, 목록, 포함 하는 설정 및 F#, 및도 대부분의.NET Framework 컬렉션 형식을, 지도와 호환 되는 `seq` 입력 하 고 시퀀스 필요한 곳 마다 사용할 수 있습니다.
+목록, 배열, 집합 및 지도 같은 많은 데이터 형식을 열거 가능한 컬렉션 이기 때문에 암시적으로 시퀀스입니다. 일반적인 중 하나를 사용 하 여 작동 하므로 인수 시퀀스를 사용 하는 함수 F# 데이터 형식을 구현 하는.NET Framework 데이터 형식 외에도 `System.Collections.Generic.IEnumerable<'T>`합니다. 이 목록에만 사용할 수 있습니다는 인수로 목록을 사용 하는 함수를 대조해 보세요. 형식 `seq<'T>` 에 대 한 형식 약어 `IEnumerable<'T>`합니다. 즉, 제네릭 구현 하는 형식 `System.Collections.Generic.IEnumerable<'T>`, 설정 및 맵 배열, 목록, 포함 하는 F#, 및도 대부분의.NET Framework 컬렉션 형식을와 호환 되는 `seq` 입력 하 고 시퀀스 필요한 곳 마다 사용할 수 있습니다 .
 
 ## <a name="module-functions"></a>모듈 함수
 
@@ -120,7 +120,7 @@ The sequence fib contains Fibonacci numbers.
 
 ## <a name="searching-and-finding-elements"></a>검색 및 요소 찾기
 
-시퀀스 목록을 사용 하 여 사용할 수 있는 기능을 지원 합니다. [Seq.exists](https://msdn.microsoft.com/library/428c97bf-599d-4c39-a5b9-f8717c198ad1), [Seq.exists2](https://msdn.microsoft.com/library/efdf14a4-27f7-4dc1-9281-52639e66d565)를 [Seq.find](https://msdn.microsoft.com/library/02c21ecd-97e5-4e99-a4c1-b4d0b730b7d8), [Seq.findIndex](https://msdn.microsoft.com/library/96dfe86b-df15-4d92-8316-7cd6055e09f3), [ Seq.pick](https://msdn.microsoft.com/library/a87bc771-55f7-43f9-94f9-33d8f9bf325d)하십시오 [Seq.tryFind](https://msdn.microsoft.com/library/ac43c6f5-4dc7-4e9a-a222-00b5736aee47), 및 [Seq.tryFindIndex](https://msdn.microsoft.com/library/c357b221-edf6-4f68-bf40-82a3156d945a)합니다. 시퀀스에 사용할 수 있는 이러한 함수의 버전은 검색 되는 요소까지만 시퀀스를 평가 합니다. 예제를 보려면 [나열](https://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d)합니다.
+시퀀스는 목록을 사용 하 여 사용할 수 있는 기능을 지원합니다. [Seq.exists](https://msdn.microsoft.com/library/428c97bf-599d-4c39-a5b9-f8717c198ad1), [Seq.exists2](https://msdn.microsoft.com/library/efdf14a4-27f7-4dc1-9281-52639e66d565)합니다 [Seq.find](https://msdn.microsoft.com/library/02c21ecd-97e5-4e99-a4c1-b4d0b730b7d8)를 [Seq.findIndex](https://msdn.microsoft.com/library/96dfe86b-df15-4d92-8316-7cd6055e09f3)를 [Seq.pick](https://msdn.microsoft.com/library/a87bc771-55f7-43f9-94f9-33d8f9bf325d), [Seq.tryFind ](https://msdn.microsoft.com/library/ac43c6f5-4dc7-4e9a-a222-00b5736aee47), 및 [Seq.tryFindIndex](https://msdn.microsoft.com/library/c357b221-edf6-4f68-bf40-82a3156d945a)합니다. 시퀀스에 사용할 수 있는 이러한 함수의 버전은 검색 되는 요소까지만 시퀀스를 평가 합니다. 예제를 보려면 [나열](https://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d)합니다.
 
 ## <a name="obtaining-subsequences"></a>시퀀스 가져오기
 
@@ -245,7 +245,7 @@ Moving average:
 
 [Seq.fold](https://msdn.microsoft.com/library/30c4c95a-9563-4c96-bbe1-f7aacfd026e3), [Seq.reduce](https://msdn.microsoft.com/library/a2ad4f64-ac69-47d2-92f0-7173d9dfeae9), 및 [Seq.scan](https://msdn.microsoft.com/library/7e2d23e9-f153-4411-a884-b6d415ff627e) 목록에 사용할 수 있는 해당 함수와 같은 됩니다. 시퀀스는 지원이 요약 되어 있는 이러한 함수의 전체 변형은 하위 집합을 지원 합니다. 자세한 내용 및 예제를 참조 하세요 [나열](lists.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [F# 형식](fsharp-types.md)

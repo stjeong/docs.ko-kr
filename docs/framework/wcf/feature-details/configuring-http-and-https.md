@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - configuring HTTP [WCF]
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
-ms.openlocfilehash: 36dbf725dfcd6fefe6482f7de69daea9356d3d07
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 3094c82382292be3295238ef9cf2687f6eeb98f8
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087701"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149889"
 ---
 # <a name="configuring-http-and-https"></a>HTTP 및 HTTPS 구성
 WCF 서비스 및 클라이언트는 HTTP 및 HTTPS를 통해 통신할 수 있습니다. HTTP/HTTPS 설정은 IIS(인터넷 정보 서비스)나 명령줄 도구를 사용하여 구성합니다. WCF 서비스가 IIS 아래에서 호스팅되거나 IIS에서 inetmgr.exe 도구를 사용하여 HTTP 또는 HTTPS 설정을 구성할 수 있는 경우입니다. WCF 서비스가 자체 호스팅되는 경우 HTTP 또는 HTTPS 설정은 명령줄 도구를 사용하여 구성됩니다.  
@@ -32,7 +32,7 @@ WCF 서비스 및 클라이언트는 HTTP 및 HTTPS를 통해 통신할 수 있�
   
  다음은 `set urlacl` 옵션이 있는 Httpcfg 명령 구문을 보여 줍니다.  
   
-```  
+```console  
 httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /aACL  
 ```  
   
@@ -42,14 +42,14 @@ httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /aACL
   
  다음에서는 이 명령을 사용하는 예를 보여 줍니다.  
   
-```  
+```console  
 httpcfg.exe set urlacl /u http://myhost:8000/ /a "O:AOG:DAD:(A;;RPWPCCDCLCSWRCWDWOGA;;;S-1-0-0)"  
 ```  
   
 ### <a name="running-windows-vista-windows-server-2008-r2-or-windows-7"></a>Windows Vista, Windows Server 2008 R2 또는 Windows 7 실행  
  [!INCLUDE[wv](../../../../includes/wv-md.md)], Windows Server 2008 R2 또는 Windows 7에서 실행 중인 경우에는 Netsh.exe 도구를 사용합니다. 다음에서는 이 명령을 사용하는 예를 보여 줍니다.  
   
-```  
+```console  
 netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user  
 ```  
   
@@ -63,7 +63,7 @@ netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
   
  인증서는 연결 IP 주소 및 연결 포트 번호에 따라 중앙 저장소에 저장됩니다. 특수 IP 주소 0.0.0.0은 로컬 시스템의 IP 주소와 일치합니다. 인증서 저장소는 경로에 따라 URL을 구분하지 않습니다. IP 주소와 포트 조합이 같은 서비스는 서비스의 URL 경로가 다른 경우에도 인증서를 공유해야 합니다.  
   
- 단계별 지침은 [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)합니다.  
+ 단계별 지침을 참조 하세요. [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)합니다.  
   
 ## <a name="configuring-the-ip-listen-list"></a>IP 수신 대기 목록 구성  
  사용자가 URL을 등록하면 HTTP Server API는 IP 주소 및 포트에만 바인딩됩니다. 기본적으로 HTTP Server API는 모든 시스템 IP 주소에 대한 URL의 포트에 바인딩됩니다. HTTP Server API를 사용하지 않는 응용 프로그램이 이전에 해당 IP 주소 및 포트 조합에 바인딩된 경우 충돌이 발생합니다. IP 수신 목록에는 컴퓨터의 IP 주소 중 일부에 대 한 포트를 사용 하는 응용 프로그램과 함께 WCF 서비스 수 있습니다. IP 수신 대기 목록에 항목이 포함된 경우 HTTP Server API는 목록에서 지정한 IP 주소에만 바인딩됩니다. IP 수신 대기 목록을 수정하려면 관리자 권한이 필요합니다.  
@@ -71,14 +71,14 @@ netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
 ### <a name="running-windows-xp-or-server-2003"></a>Windows XP 또는 Server 2003 실행  
  다음 예제와 같이 httpcfg 도구를 사용하여 IP 수신 대기 목록을 수정합니다. 합니다 [Windows 지원 도구 설명서](https://go.microsoft.com/fwlink/?LinkId=94840) httpcfg.exe 도구에 대 한 구문을 설명 합니다.  
   
-```  
+```console  
 httpcfg.exe set iplisten -i 0.0.0.0:8000  
 ```  
   
 ### <a name="running-windows-vista-or-windows-7"></a>Windows Vista 또는 Windows 7 실행  
  다음 예제와 같이 netsh 도구를 사용하여 IP 수신 대기 목록을 수정합니다.  
   
-```  
+```console  
 netsh http add iplisten ipaddress=0.0.0.0:8000  
 ```  
   
@@ -92,4 +92,4 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.WSDualHttpBinding>  
- [방법: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+ [어떻게: SSL 인증서로 포트 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)

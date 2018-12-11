@@ -1,6 +1,6 @@
 ---
 title: 삭제 패턴
-ms.date: 03/30/2017
+ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - Dispose method
@@ -9,14 +9,13 @@ helpviewer_keywords:
 - customizing Dispose method name
 - Finalize method
 ms.assetid: 31a6c13b-d6a2-492b-9a9f-e5238c983bcb
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: ff52e17cfe4a4236e4d165c0961ca3a23fed9a72
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+author: KrzysztofCwalina
+ms.openlocfilehash: ee6e9898ae93e2e6628eadec150a3c9c05f5d9c5
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864646"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147719"
 ---
 # <a name="dispose-pattern"></a>삭제 패턴
 모든 프로그램 실행 하는 동안 메모리, 시스템 핸들 또는 데이터베이스 연결 같은 하나 이상의 시스템 리소스를 획득합니다. 개발자는 획득 되 고 사용 후 릴리스해야 합니다. 때문에 이러한 시스템 리소스를 사용할 때는 주의 해야 해야 합니다.  
@@ -213,7 +212,7 @@ public class ComplexResourceHolder : IDisposable {
     }  
   
     protected virtual void Dispose(bool disposing) {  
-            ReleaseBuffer(buffer); // release unmanaged memory  
+        ReleaseBuffer(buffer); // release unmanaged memory  
         if (disposing) { // release other disposable objects  
             if (resource!= null) resource.Dispose();  
         }  
@@ -277,9 +276,9 @@ public class ComplexResourceHolder : IDisposable {
   
  *Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*  
   
- *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>  
 - <xref:System.Object.Finalize%2A?displayProperty=nameWithType>  

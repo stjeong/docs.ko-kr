@@ -4,12 +4,12 @@ description: 모바일 백 엔드 및 ETL 파이프라인에서 이미지 처리
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: c38d1c6c4e04f3fa38946c97af5d94758b3ed6f7
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 4299768b701336e427b22b295bc459424bfc5927
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370206"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153789"
 ---
 # <a name="serverless-business-scenarios-and-use-cases"></a>서버 리스 비즈니스 시나리오 및 사용 사례
 
@@ -27,7 +27,7 @@ ms.locfileid: "49370206"
 
 ![자동화 된 이미지 갤러리](./media/automated-image-gallery.png)
 
-전체 리포지토리 및 논리 앱을 작성 하기 위한 지침에서 제공 됩니다. [Event grid 글 루](https://github.com/JeremyLikness/Event-Grid-Glue).
+논리 앱을 작성 하기 위한 지침 확인 하 고 전체 저장소는 다음과 같습니다. [Event grid 붙이기](https://github.com/JeremyLikness/Event-Grid-Glue)합니다.
 
 ## <a name="cross-platform-mobile-client-using-xamarinforms-and-functions"></a>Xamarin.Forms 및 함수를 사용 하 여 플랫폼 간 모바일 클라이언트
 
@@ -55,7 +55,7 @@ Azure 웹 포털에서 또는 Visual Studio에서 간단한 서버 리스 Azure 
 
 프록시 서버 리스 functions로 이동 하는 것 처럼 개별 요청을 다시 라우팅하도록 업데이트 되는 단일 API 끝점을 제공 합니다.
 
-전체 마이그레이션 과정을 안내 하는 비디오를 볼 수 있습니다: [리프트 앤 시프트 서버 리스 Azure functions 사용 하 여](https://channel9.msdn.com/Events/Connect/2017/E102)입니다. 샘플 코드에 액세스 합니다. [고유한 앱 가져오기](https://github.com/JeremyLikness/bring-own-app-connect-17)합니다.
+전체 마이그레이션 과정을 안내 하는 비디오를 볼 수 있습니다. [리프트 앤 시프트 서버 리스 Azure functions를 사용 하 여](https://channel9.msdn.com/Events/Connect/2017/E102)입니다. 샘플 코드에 액세스 합니다. [사용자 고유 앱 가져오기](https://github.com/JeremyLikness/bring-own-app-connect-17)합니다.
 
 ## <a name="parse-a-csv-file-and-insert-into-a-database"></a>CSV 파일을 구문 분석 하 고 데이터베이스에 삽입
 
@@ -77,7 +77,7 @@ Azure Functions는 단일 페이지 응용 프로그램 (SPA) 긴 URL을 붙여�
 
 ![Power BI 예제](./media/power-bi-example.png)
 
-다음 지침을 사용 하 여 전체 링크 shortener 리포지토리는 사용할 수 있습니다: [서버 리스 URL shortener](https://github.com/jeremylikness/serverless-url-shortener)합니다. 여기에 간소화 된 버전을 확인할 수 있습니다: [분 후에 서버 리스.NET 앱에 대 한 Azure Storage](https://blogs.msdn.microsoft.com/webdev/2018/01/25/azure-storage-for-serverless-net-apps-in-minutes/)합니다.
+지침을 사용 하 여 전체 링크 shortener 리포지토리는 여기 제공 됩니다. [서버 리스 URL shortener](https://github.com/jeremylikness/serverless-url-shortener)합니다. 여기서는 간소화 된 버전에 대 한 읽을 수 있습니다. [몇 분 안에 서버 리스.NET 앱에 대 한 azure Storage](https://blogs.msdn.microsoft.com/webdev/2018/01/25/azure-storage-for-serverless-net-apps-in-minutes/)합니다.
 
 ## <a name="verify-device-connectivity-using-a-ping"></a>Ping을 사용 하 여 장치 연결 확인
 
@@ -98,5 +98,5 @@ Azure IoT Hub 및 Azure Function의 샘플 구성 됩니다. IoT Hub에서 메�
 * [서버 리스 URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
 
 >[!div class="step-by-step"]
-[이전](orchestration-patterns.md)
-[다음](serverless-conclusion.md)
+>[이전](orchestration-patterns.md)
+>[다음](serverless-conclusion.md)

@@ -4,12 +4,12 @@ description: Azure functions는 여러 언어 (C#, JavaScript, Java)에서 서�
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: f08ba20b485197acd3bb5cdfe5699cd6be991d7c
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 2d8729276a5797bd8b89c39d8fb03c6f20646ea0
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370191"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145165"
 ---
 # <a name="azure-functions"></a>Azure Functions
 
@@ -17,17 +17,17 @@ Azure functions는 서버 리스 계산 환경을 제공 합니다. 함수를 �
 
 ![Azure functions 로고](./media/azure-functions-logo.png)
 
-Azure Functions 프레임 워크의 두 가지 버전이 있습니다. 레거시 버전을 전체.NET Framework를 지원 하 고 새 런타임 플랫폼 간.NET Core 응용 프로그램을 지원 합니다. C# JavaScript, F # 및 Java와 같은 외에도 추가 언어 지원 됩니다. 포털에서 만든 함수는 다양 한 스크립팅 구문을 제공 합니다. 독립 실행형 프로젝트로 만든 함수는 전체 플랫폼 지원 및 기능을 사용 하 여 배포할 수 있습니다.
+Azure Functions 프레임 워크의 두 가지 버전이 있습니다. 레거시 버전을 전체.NET Framework를 지원 하 고 새 런타임 플랫폼 간.NET Core 응용 프로그램을 지원 합니다. 추가 언어 외에도 C# JavaScript 등 F#, 및 Java 지원 됩니다. 포털에서 만든 함수는 다양 한 스크립팅 구문을 제공 합니다. 독립 실행형 프로젝트로 만든 함수는 전체 플랫폼 지원 및 기능을 사용 하 여 배포할 수 있습니다.
 
 자세한 내용은 [Azure Functions 설명서](https://docs.microsoft.com/azure/azure-functions)합니다.
 
 ## <a name="functions-v1-vs-v2"></a>Functions v1 및 v2
 
-두 가지 버전의 Azure Functions 런타임: 1.x 및 2.x입니다. 버전 1.x는 일반 공급 (GA). 포털 또는 Windows 컴퓨터에서.NET 개발을 지원 하 고.NET Framework를 사용 합니다. 1.x는 Python, PHP, TypeScript, Batch, Bash 및 PowerShell에 대해 실험적 지원을 사용 하 여 C#, JavaScript 및 F #을 지원합니다.
+두 가지 버전의 Azure Functions 런타임: 1.x 및 2.x입니다. 버전 1.x는 일반 공급 (GA). 포털 또는 Windows 컴퓨터에서.NET 개발을 지원 하 고.NET Framework를 사용 합니다. 1.x 지원 C#, JavaScript 및 F#, Python, PHP, TypeScript, Batch, Bash 및 PowerShell에 대 한 실험적 지원 합니다.
 
 버전 2.x는 미리 보기로 제공 됩니다. .NET Core를 활용 하 고 Windows, macOS 및 Linux 컴퓨터에서 플랫폼 간 개발을 지원 합니다. 2.x는 Java에 대 한 최상의 지원을 추가 하지만 실험적 언어 중 하나로 직접 지원 아직 하지 않습니다. 버전 2.x에 바인딩 독립 된 버전 관리 플랫폼에 타사 확장을 사용 하도록 설정 하는 새 바인딩 확장성 모델을 사용 하 여 및 더 효율적인 실행 환경입니다.
 
-> **1.x를 중인 알려진된 문제 [바인딩 리디렉션 지원](https://github.com/Azure/azure-functions-host/issues/992)합니다.** 이 문제는.NET 개발와 관련이 있습니다. 라이브러리에 런타임이 포함 된 라이브러리에서 다른 버전에 대 한 종속성을 사용 하 여 프로젝트에 영향 을지 않습니다. 기능 팀은 문제에 대 한 구체적인 진행 하기 위해 노력 했습니다. 일반 공급으로 이동 하기 전에 팀에서 2.x에 바인딩 리디렉션을 해결 됩니다. 제안 된 수정 사항 및 해결 방법을 사용 하 여 공식 팀 문을 제공 됩니다. [Azure Functions에서 어셈블리 확인](https://github.com/Azure/azure-functions-host/wiki/Assembly-Resolution-in-Azure-Functions)합니다.
+> **1.x를 중인 알려진된 문제 [바인딩 리디렉션 지원](https://github.com/Azure/azure-functions-host/issues/992)합니다.** 이 문제는.NET 개발와 관련이 있습니다. 라이브러리에 런타임이 포함 된 라이브러리에서 다른 버전에 대 한 종속성을 사용 하 여 프로젝트에 영향 을지 않습니다. 기능 팀은 문제에 대 한 구체적인 진행 하기 위해 노력 했습니다. 일반 공급으로 이동 하기 전에 팀에서 2.x에 바인딩 리디렉션을 해결 됩니다. 제안 된 수정 사항 및 해결 방법을 사용 하 여 공식 팀 문을 여기 제공 됩니다. [Azure Functions에서 어셈블리 확인](https://github.com/Azure/azure-functions-host/wiki/Assembly-Resolution-in-Azure-Functions)합니다.
 
 자세한 내용은 [1.x와 2.x 비교](https://docs.microsoft.com/azure/azure-functions/functions-versions)합니다.
 
@@ -175,10 +175,10 @@ public static string Run(Stream myBlob, string name, TraceWriter log)
 
 합니다 `Root` 프록시는 루트 URL로 전송 하는 아무 것도 (`https://--shorturl--/`) 설명서 사이트에 리디렉션합니다.
 
-프록시를 사용 하는 예제 비디오에서 표시 됩니다 [Azure: 앱 서버 리스 Azure Functions를 사용 하 여 클라우드로 가져올](https://channel9.msdn.com/events/Connect/2017/E102)합니다. 실시간으로 로컬 SQL Server에서 실행 되는 ASP.NET Core 응용 프로그램은 Azure 클라우드로 마이그레이션됩니다. 프록시는 함수를 사용 하도록 기존 Web API 프로젝트를 리팩터링 하는 데 사용 됩니다.
+비디오에서 프록시를 사용 하는 예가 나와 있습니다 [Azure: 앱 서버 리스 Azure Functions를 사용 하 여 클라우드로 가져올](https://channel9.msdn.com/events/Connect/2017/E102)합니다. 실시간으로 로컬 SQL Server에서 실행 되는 ASP.NET Core 응용 프로그램은 Azure 클라우드로 마이그레이션됩니다. 프록시는 함수를 사용 하도록 기존 Web API 프로젝트를 리팩터링 하는 데 사용 됩니다.
 
 프록시에 대 한 자세한 내용은 참조 하세요. [Azure Functions 프록시 사용](https://docs.microsoft.com/azure/azure-functions/functions-proxies)합니다.
 
 >[!div class="step-by-step"]
-[이전](azure-serverless-platform.md)
-[다음](application-insights.md)
+>[이전](azure-serverless-platform.md)
+>[다음](application-insights.md)

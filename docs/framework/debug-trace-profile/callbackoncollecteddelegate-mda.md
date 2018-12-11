@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0aa9ecd357a192eba64cc14f8940b264461b5e74
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8441e1b2c623126e844d8a641d7f002aef495e9d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356358"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145886"
 ---
 # <a name="callbackoncollecteddelegate-mda"></a>callbackOnCollectedDelegate MDA
-대리자가 함수 포인터로 관리 코드에서 비관리 코드로 마샬링되고 대리자가 가비지 수집된 후 콜백이 해당 함수 포인터에 배치된 경우 `callbackOnCollectedDelegate` MDA(관리 디버깅 도우미)가 활성화됩니다.  
+대리자가 함수 포인터로 관리 코드에서 비관리 코드로 마샬링되고 대리자가 가비지 컬렉션된 후 콜백이 해당 함수 포인터에 배치된 경우 `callbackOnCollectedDelegate` MDA(관리 디버깅 도우미)가 활성화됩니다.  
   
 ## <a name="symptoms"></a>증상  
  관리되는 대리자에서 가져온 함수 포인터를 통해 관리 코드를 호출하려고 하면 액세스 위반이 발생합니다. 이러한 오류는 CLR(공용 언어 런타임) 버그가 아니지만 CLR 코드에서 액세스 위반이 발생하기 때문에 버그처럼 보일 수도 있습니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "33356358"
 ## <a name="example"></a>예제  
  다음 예제에서는 이 MDA를 활성화할 수 있는 상황을 보여 줍니다.  
   
-```  
+```cpp
 // Library.cpp : Defines the unmanaged entry point for the DLL application.  
 #include "windows.h"  
 #include "stdio.h"  
@@ -76,8 +76,10 @@ void __stdcall Initialize(void __stdcall pfTarget())
 void __stdcall Callback()  
 {  
     g_pfTarget();  
-}  
-// ---------------------------------------------------  
+}
+```
+
+```csharp
 // C# Client  
 using System;  
 using System.Runtime.InteropServices;  

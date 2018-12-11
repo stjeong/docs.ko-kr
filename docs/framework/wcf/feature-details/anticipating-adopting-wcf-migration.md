@@ -1,15 +1,15 @@
 ---
-title: 'Windows Communication Foundation 채택 예상: 이후의 마이그레이션을 용이하게 함'
+title: 'Windows Communication Foundation 채택 예상: 향후 마이그레이션 간소화'
 ms.date: 03/30/2017
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b
-ms.openlocfilehash: 171a31b375eae4c032849c2a1c2090f5d9ff856f
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 306ffbae86058a2caad70d3788fb7bb4e7998eec
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837403"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129586"
 ---
-# <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-migration"></a>Windows Communication Foundation 채택 예상: 이후의 마이그레이션을 용이하게 함
+# <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-migration"></a>Windows Communication Foundation 채택 예상: 향후 마이그레이션 간소화
 새 ASP.NET 응용 프로그램을 WCF의 향후 마이그레이션이 원활 해지 되도록 앞에서 설명한 권장 뿐만 아니라 다음 권장 사항을 따릅니다.  
   
 ## <a name="protocols"></a>프로토콜  
@@ -36,7 +36,7 @@ ms.locfileid: "48837403"
   
 -   `MessageName`의 <xref:System.Web.Services.WebMethodAttribute> 매개 변수를 사용하여 서비스 작업에 명시적 이름을 제공합니다.  
   
-    ```  
+    ```csharp  
     [WebMethod(MessageName="ExplicitName")]  
     string Echo(string input);  
     ```  
@@ -47,7 +47,7 @@ ms.locfileid: "48837403"
   
 -   <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute>를 사용하여 HTTP 요청을 메서드로 라우트할 SOAPAction HTTP 헤더에 명시적 값을 제공합니다.  
   
-    ```  
+    ```csharp  
     [WebMethod]  
     [SoapDocumentMethod(RequestElementName="ExplicitAction")]  
     string Echo(string input);  
@@ -63,7 +63,7 @@ ms.locfileid: "48837403"
 ## <a name="exception-handling"></a>예외 처리  
  서비스에서 보내고 받을 데이터 형식의 구조를 디자인할 때 클라이언트로 전달하려는 서비스에서 발생할 수 있는 다양한 종류의 예외를 표시하기 위한 구조도 디자인합니다.  
   
-```  
+```csharp  
 [Serializable]  
 [XmlRoot(  
      Namespace="ExplicitNamespace", IsNullable=true)]  
@@ -84,7 +84,7 @@ ms.locfileid: "48837403"
   
  다음과 같이 해당 클래스에 자신을 XML로 serialize할 수 있는 기능을 부여합니다.  
   
-```  
+```csharp  
 public XmlNode ToXML()  
 {  
      XmlSerializer serializer = new XmlSerializer(  
@@ -103,7 +103,7 @@ public XmlNode ToXML()
   
  그러면 해당 클래스를 사용하여 명시적으로 throw된 <xref:System.Web.Services.Protocols.SoapException> 인스턴스에 대한 자세한 정보를 제공할 수 있습니다.  
   
-```  
+```csharp  
 AnctipatedException exception = new AnticipatedException();  
 exception.AnticipatedExceptionInformation = "…";  
 throw new SoapException(  
@@ -113,7 +113,7 @@ throw new SoapException(
      exception.ToXML());  
 ```  
   
- 이러한 예외 클래스는 WCF를 사용 하 여 쉽게 다시 사용할<xref:System.ServiceModel.FaultException%601> 새 시키려면 클래스 `FaultException<AnticipatedException>(anticipatedException);`  
+ 이러한 예외 클래스는 WCF를 사용 하 여 쉽게 다시 사용할 <xref:System.ServiceModel.FaultException%601> 새 시키려면 클래스 `FaultException<AnticipatedException>(anticipatedException);`  
   
 ## <a name="security"></a>보안  
  다음은 몇 가지 보안 권장 사항입니다.  
@@ -125,4 +125,4 @@ throw new SoapException(
 -   서비스 리소스에 대한 액세스 권한을 부여할 때 ASP.NET 2.0 역할 공급자를 사용할 것을 고려해 보세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation 채택 예상: 이후의 통합을 용이하게 함](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
+ [Windows Communication Foundation 채택 예상: 향후 통합 간소화](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)

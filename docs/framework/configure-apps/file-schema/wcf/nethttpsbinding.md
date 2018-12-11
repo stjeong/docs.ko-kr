@@ -2,12 +2,12 @@
 title: '&lt;netHttpsBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
-ms.openlocfilehash: b59fe7277a266a7e006f980ac31e6987dbb5b977
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 63766a6865497da18b07a5d6423e6d2b8e306684
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453415"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53128975"
 ---
 # <a name="ltnethttpsbindinggt"></a>&lt;netHttpsBinding&gt;
 Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTPS를 통해 전달할 수 있는 끝점을 노출 하는 데 사용할 수 있는 바인딩을 나타냅니다. 이중 계약과 함께 사용하는 경우 WebSocket이 사용되고, 그렇지 않으면 HTTPS가 사용됩니다.  
@@ -75,7 +75,7 @@ Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTPS를 통�
 |`proxyAddress`|HTTP 프록시의 주소를 포함하는 URI입니다. `useSystemWebProxy`를 `true`로 설정할 경우 이 설정은 `null`이어야 합니다. 기본값은 `null`입니다.|  
 |`receiveTimeout`|받기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:10:00입니다.|  
 |`sendTimeout`|보내기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
-|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />-Unicode: 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />유니코드를 지원 합니다. 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
 |`transferMode`|메시지가 요청 또는 응답에서 버퍼링되는지 또는 스트리밍되는지를 지정하는 유효한 <xref:System.ServiceModel.TransferMode> 값입니다.|  
 |`useDefaultWebProxy`|시스템의 자동 구성된 HTTP 프록시가 있는 경우 이를 사용할지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |||  
@@ -136,7 +136,7 @@ Windows Communication Foundation (WCF) 서비스를 구성 하 고 HTTPS를 통�
 ```  
   
 ## <a name="example"></a>예제  
- [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)]부터는 바인딩 및 동작에 이름이 필요하지 않습니다. 엔드포인트 주소에서 bindingConfiguration을 제거하고 바인딩에서 이름을 제거하면 이전 예제의 기능을 얻을 수 있습니다.  
+ [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)]부터는 바인딩 및 동작에 이름이 필요하지 않습니다. 바인딩의 이름과 끝점 주소에서 bindingConfiguration을 제거 하 여 이전 예제의 기능을 수행할 수 있습니다.  
   
 ```xml  
 <system.serviceModel>   

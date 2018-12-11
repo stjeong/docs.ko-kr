@@ -3,11 +3,11 @@ title: 배열(F#)
 description: 만들기 및 배열을 사용 하는 방법을 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: 0f72718988ee401631c53b74f02948030e83aac1
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297194"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129976"
 ---
 # <a name="arrays"></a>배열
 
@@ -415,7 +415,7 @@ Found an element 4096 with square root 64 and cube root 16.
 
 모듈 [ `Array.Parallel` ](https://msdn.microsoft.com/library/60f30b77-5af4-4050-9a5c-bcdb3f5cbb09) 배열에서 병렬 계산을 수행 하기 위한 함수가 포함 되어 있습니다. 이 모듈의 버전 4 이전의.NET Framework 버전을 대상으로 하는 응용 프로그램에서 사용할 수 없는 경우
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [F#; 형식](fsharp-types.md)

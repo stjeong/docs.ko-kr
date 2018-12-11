@@ -7,11 +7,11 @@ helpviewer_keywords:
 - out compiler option [Visual Basic]
 ms.assetid: 9f148c15-0909-4cb8-a2db-777f8a8b45ae
 ms.openlocfilehash: b619505f6e87efd1c3b18e1bed2862d3467984a7
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199931"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152610"
 ---
 # <a name="-out-visual-basic"></a>-out (Visual Basic)
 출력 파일의 이름을 지정합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "50199931"
   
 |용어|정의|  
 |---|---|  
-|`filename`|필수. 컴파일러 출력 파일의 이름을 만듭니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").|  
+|`filename`|필수 요소. 컴파일러 출력 파일의 이름을 만듭니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").|  
   
 ## <a name="remarks"></a>설명  
  전체 이름 및 만들 파일의 확장명을 지정 합니다. .Exe 파일을 포함 하는 소스 코드 파일에서 해당 이름을 이렇게 하지 않으면 경우는 `Sub Main` 프로시저 및.dll 파일에서 첫 번째 소스 코드 파일의 이름을 가져옵니다.  

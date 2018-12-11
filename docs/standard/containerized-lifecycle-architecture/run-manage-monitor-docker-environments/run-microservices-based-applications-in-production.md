@@ -4,12 +4,12 @@ description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 D
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.openlocfilehash: 18e6cb1fb5f496b66c89cb8e009a67894b8a76ad
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 003bf794f5427e7b2f10d1e04fd27605b980cdfe
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123152"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126304"
 ---
 # <a name="run-composed-and-microservices-based-applications-in-production-environments"></a>프로덕션 환경에서 구성 및 마이크로 서비스 기반 응용 프로그램을 실행 합니다.
 
@@ -33,7 +33,6 @@ ms.locfileid: "49123152"
 
 오 케 스트레이 터 및 스케줄러에서 제공 하는 기능을 처음부터 만들고 개발 매우 복잡 한 되며 따라서 일반적으로 만들려는 오케스트레이션 솔루션을 사용 하 여 공급 업체에서 제공 합니다.
 
-
 >[!div class="step-by-step"]
-[이전](index.md)
-[다음](manage-production-docker-environments.md)
+>[이전](index.md)
+>[다음](manage-production-docker-environments.md)

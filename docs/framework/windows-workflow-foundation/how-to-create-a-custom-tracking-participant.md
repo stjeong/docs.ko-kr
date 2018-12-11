@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1b612c7e-2381-4a7c-b07a-77030415f2a3
-ms.openlocfilehash: a9a83f64b7ea0de275631d7d3b8d2755671223ce
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 0f8d21ca4f08ad4dc2e5f5e62695b9b14aff13d5
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864484"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53156724"
 ---
 # <a name="how-to-create-a-custom-tracking-participant"></a>방법: 사용자 지정 추적 참가자 만들기
 워크플로 추적을 통해 워크플로 실행 상태를 볼 수 있습니다. 워크플로 런타임은 워크플로 수명 주기 이벤트, 활동 수명 주기 이벤트, 책갈피 다시 시작 및 오류를 설명하는 추적 레코드를 내보냅니다. 이러한 추적 레코드는 추적 참가자에서 사용됩니다. Windows WF (Workflow Foundation) 추적 레코드 이벤트 추적에 대 한 Windows (ETW) 이벤트로 기록 하는 표준 추적 참가자를 포함 합니다. 표준 참가자가 요구 사항에 맞지 않는 경우 사용자 지정 추적 참가자를 작성할 수도 있습니다. 이 자습서 단계에서는 `WriteLine` 활동의 출력을 캡처하여 사용자에게 표시될 수 있도록 하는 추적 프로필 및 사용자 지정 추적 참가자를 만드는 방법에 대해 설명합니다.  
@@ -320,7 +320,7 @@ ms.locfileid: "43864484"
     }  
     ```  
   
-###  <a name="BKMK_BuildAndRun"></a> 빌드 및 응용 프로그램을 실행 하려면  
+###  <a name="BKMK_BuildAndRun"></a> 응용 프로그램을 빌드하고 실행하려면  
   
 1.  Ctrl+Shift+B를 눌러 응용 프로그램을 빌드합니다.  
   
@@ -334,8 +334,9 @@ ms.locfileid: "43864484"
  **1과 10 사이의 숫자를 입력 하세요.**  
 **예상이 너무 높습니다.**   
 **1과 10 사이의 숫자를 입력 하세요.**    
+
     > [!NOTE]
-    >  이 정보는 난수의 범위를 결정하는 데 유용하지만 이전에 추측한 값에 대한 정보는 포함되지 않습니다. 이 정보는 다음 단계 [방법: 호스트는 워크플로-병렬의 여러 버전](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md)합니다.  
+    >  이 정보는 난수의 범위를 결정하는 데 유용하지만 이전에 추측한 값에 대한 정보는 포함되지 않습니다. 이 정보는 다음 단계에서 [방법: 여러 버전을 워크플로-Side-by-side의 호스트](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md)합니다.  
   
      워크플로 인스턴스 ID를 적어 두고 게임을 완료될 때까지 실행합니다.  
   
@@ -345,4 +346,4 @@ ms.locfileid: "43864484"
 **예상이 너무 높습니다.**   
 **1과 10 사이의 숫자를 입력 하세요.**   
 **예상이 너무 높습니다.**   
-**1과 10 사이의 숫자를 입력 하십시오** 이 추적 데이터가 사용자의 추측 값 뿐 아니라, 워크플로의 최종 추측에 대 한 정보를 포함 하지 않습니다. 추적 정보는 워크플로의 `WriteLine` 출력과 워크플로가 완료된 후 `Completed` 처리기에 의해 표시되는 최종 메시지로만 구성되기 때문입니다. 자습서의 다음 단계인 [방법: 호스트는 워크플로-병렬의 여러 버전](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md), 기존 `WriteLine` 활동을 수정 하 여 사용자의 추측 값을 추가로 표시할 `WriteLine` 활동을 추가 하는 최종 결과 표시합니다. 이러한 변경 내용을 통합 된 후 [방법: 호스트는 워크플로-병렬의 여러 버전](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md) 동시에 여러 버전의 워크플로 호스트 하는 방법에 설명 합니다.
+**1과 10 사이의 숫자를 입력 하십시오** 이 추적 데이터가 사용자의 추측 값 뿐 아니라, 워크플로의 최종 추측에 대 한 정보를 포함 하지 않습니다. 추적 정보는 워크플로의 `WriteLine` 출력과 워크플로가 완료된 후 `Completed` 처리기에 의해 표시되는 최종 메시지로만 구성되기 때문입니다. 자습서의 다음 단계에서 [방법: 여러 버전을 워크플로-Side-by-side의 호스트](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md), 기존 `WriteLine` 활동을 수정 하 여 사용자의 추측 값을 추가로 표시할 `WriteLine` 최종 결과 표시 하는 작업을 추가 합니다. 이러한 변경 내용을 통합 된 경우 후 [방법: 여러 버전을 워크플로-Side-by-side의 호스트](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md) 동시에 여러 버전의 워크플로 호스트 하는 방법에 설명 합니다.

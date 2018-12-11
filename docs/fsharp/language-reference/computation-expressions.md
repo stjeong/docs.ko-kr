@@ -1,17 +1,17 @@
 ---
 title: 계산 식(F#)
-description: 시퀀싱 할 수 있으며 제어 흐름 구문 및 바인딩을 사용 하 여 결합 하는 F# 계산을 작성 하는 편리한 구문을 만드는 방법에 알아봅니다.
+description: 계산을 작성 하기 위한 편리한 구문을 만드는 방법을 알아봅니다 F# 는 제어할 수 있습니다 수 사용 하 여 시퀀스 및 결합 된 바인딩과 흐름 구문이 구현 되었습니다.
 ms.date: 07/27/2018
-ms.openlocfilehash: 148d1a661fb7630782c6dc48507a66e7bdc1d56b
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: b1fee11f68e99e53d19b47bef9eca6298cce2f45
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48839871"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169848"
 ---
 # <a name="computation-expressions"></a>계산 식
 
-F# 계산 식을 제어 흐름 구문 및 바인딩을 사용 하 여 결합 및 시퀀싱 할 수 있는 계산을 작성 하는 것에 대 한 간편한 구문을 제공 합니다. 계산 식의 종류에 따라 이러한 생각할 수 있습니다 monads, monoids, monad 변환기 및 applicative 함수를 표현 하는 방법으로 합니다. 그러나 다른 언어와 달리 (같은 *do 표기법* Haskell에서), 단일 추상화를 얽매여 있지 않는 하며 매크로 또는 다른 형태의에 의존 하지 마십시오 편리 하 고 상황에 맞는 구문을 위해 메타 프로그래밍 합니다.
+계산 식에 F# 제어 흐름 구문 및 바인딩을 사용 하 여 결합 및 시퀀싱 할 수 있는 계산을 작성 하는 것에 대 한 간편한 구문을 제공 합니다. 계산 식의 종류에 따라 이러한 생각할 수 있습니다 monads, monoids, monad 변환기 및 applicative 함수를 표현 하는 방법으로 합니다. 그러나 다른 언어와 달리 (같은 *do 표기법* Haskell에서), 단일 추상화를 얽매여 있지 않는 하며 매크로 또는 다른 형태의에 의존 하지 마십시오 편리 하 고 상황에 맞는 구문을 위해 메타 프로그래밍 합니다.
 
 ## <a name="overview"></a>개요
 
@@ -22,7 +22,7 @@ F# 계산 식을 제어 흐름 구문 및 바인딩을 사용 하 여 결합 및
 * Effectful 계산
 * 인기 계산
 
-일반적으로 더 *상황에 맞는* 응용 프로그램의 특정 부분에서 수행 해야 하는 계산 합니다. 상황에 맞는 코드를 작성이 이므로 이렇게 않도록 하는 추상화 하지 않고 지정된 된 컨텍스트 외부에서 "누수" 계산 하기가 어려울 수 있습니다. 이러한 추상화는 F#에 수행 하는 일반화 된 방법은 소위 이유는 직접 쓸 까다로운 것은 종종 **계산 식**합니다.
+일반적으로 더 *상황에 맞는* 응용 프로그램의 특정 부분에서 수행 해야 하는 계산 합니다. 상황에 맞는 코드를 작성이 이므로 이렇게 않도록 하는 추상화 하지 않고 지정된 된 컨텍스트 외부에서 "누수" 계산 하기가 어려울 수 있습니다. 이러한 추상화는 이유는 직접 쓸 까다로운 것은 종종 F# 가 수행 하는 일반화 된 방법은 소위 **계산 식**합니다.
 
 계산 식 상황에 맞는 계산 인코딩에 대 한 구문 및 추상화 한 균일 모델을 제공 합니다.
 
@@ -61,9 +61,9 @@ expr { return! ... }
 expr { match! ... }
 ```
 
-각 이러한 키워드 및 다른 표준 F# 키워드는 지원 작성기 형식에서 정의한 경우에 계산 식에서 사용할 수 있습니다. 이 유일한 예외는 `match!`에 자체를 사용 하기 위한 syntactic sugar `let!` 패턴 일치 결과에 옵니다.
+이러한 키워드 및 다른 표준의 각 F# 키워드 지원 작성기 형식에 정의 되어 있는 경우에 계산 식에서 사용할 수 있습니다. 이 유일한 예외는 `match!`에 자체를 사용 하기 위한 syntactic sugar `let!` 패턴 일치 결과에 옵니다.
 
-작성기 유형이 계산 식 조각의; 결합 하는 방법을 제어 하는 특수 메서드를 정의 하는 개체 즉, 해당 메서드 계산 식의 동작 방식을 제어 합니다. 다른 작성기 클래스를 설명 방법은 사용할 수 있는 것의 루프 및 바인딩 같은 많은 F# 구문, 작업을 사용자 지정할 수 있습니다.
+작성기 유형이 계산 식 조각의; 결합 하는 방법을 제어 하는 특수 메서드를 정의 하는 개체 즉, 해당 메서드 계산 식의 동작 방식을 제어 합니다. 작성기 클래스를 설명 하는 또 다른 방법은 대부분의 작업을 사용자 지정할 수 있도록에 F# 루프 등 바인딩을 생성 합니다.
 
 ### `let!`
 
@@ -179,7 +179,7 @@ let result = Async.RunSynchronously req
 
 ### `match!`
 
-F# 4.5부터는 `match!` 키워드를 사용 하면 인라인 해당 결과에 다른 계산 식 및 패턴 일치에 대 한 호출 합니다.
+부터 F# 4.5 합니다 `match!` 키워드를 사용 하면 인라인 해당 결과에 다른 계산 식 및 패턴 일치에 대 한 호출 합니다.
 
 ```fsharp
 let doThingsAsync url =
@@ -194,7 +194,7 @@ let doThingsAsync url =
 
 ## <a name="built-in-computation-expressions"></a>기본 제공 계산 식
 
-F# 핵심 라이브러리는 세 개의 기본 제공 계산 식을 정의 합니다. [시퀀스 식](sequences.md), [비동기 워크플로](asynchronous-workflows.md), 및 [쿼리 식](query-expressions.md)합니다.
+F# 핵심 라이브러리는 세 개의 기본 제공 계산 식을 정의 합니다. [식 시퀀스](sequences.md), [비동기 워크플로](asynchronous-workflows.md), 및 [쿼리 식을](query-expressions.md)합니다.
 
 ## <a name="creating-a-new-type-of-computation-expression"></a>계산 식의 새 형식 만들기
 
@@ -227,7 +227,7 @@ F# 핵심 라이브러리는 세 개의 기본 제공 계산 식을 정의 합�
 builder.Run(builder.Delay(fun () -> {| cexpr |}))
 ```
 
-위의 코드에 대 한 호출에서 `Run` 고 `Delay` 계산 식 작성기 클래스에 정의 되지 않은 경우 생략 됩니다. 여기로 표시, 계산 식의 본문이 `{| cexpr |}`, 다음 표에 설명 된 번역으로 작성기 클래스의 메서드를 포함 하는 호출으로 변환 됩니다. 계산 식 `{| cexpr |}` 가 이러한 변환에 따라 정의 된 재귀적으로 위치 `expr` F# 식 및 `cexpr` 계산 식입니다.
+위의 코드에 대 한 호출에서 `Run` 고 `Delay` 계산 식 작성기 클래스에 정의 되지 않은 경우 생략 됩니다. 여기로 표시, 계산 식의 본문이 `{| cexpr |}`, 다음 표에 설명 된 번역으로 작성기 클래스의 메서드를 포함 하는 호출으로 변환 됩니다. 계산 식 `{| cexpr |}` 가 이러한 변환에 따라 정의 된 재귀적으로 위치 `expr` 는 F# 식 및 `cexpr` 계산 식입니다.
 
 |식|변환|
 |----------|-----------|
@@ -251,6 +251,7 @@ builder.Run(builder.Delay(fun () -> {| cexpr |}))
 |<code>{&#124; cexpr1; cexpr2 &#124;}</code>|<code>builder.Combine({&#124;cexpr1 &#124;}, {&#124; cexpr2 &#124;})</code>|
 |<code>{&#124; other-expr; cexpr &#124;}</code>|<code>expr; {&#124; cexpr &#124;}</code>|
 |<code>{&#124; other-expr &#124;}</code>|`expr; builder.Zero()`|
+
 이전 표에 `other-expr` 그렇지 않은 경우 테이블에 나열 되지 않은 식에 설명 합니다. 작성기 클래스는 모든 메서드를 구현 하 고 이전 표에 나열 된 번역의 모든 지원 필요가 없습니다. 구현 되지 않은 이러한 구문 형식의 계산 식에서 사용할 수 없는 경우 예를 들어, 지원 하지 않을 경우 합니다 `use` 계산 식에서 키워드의 정의 생략할 수 있습니다 `Use` 작성기 클래스에 있습니다.
 
 다음 코드 예제에는 일련의 단계는 한 번에 한 번 계산한 계산을 캡슐화 하는 계산 식을 보여 줍니다. 공용 구조체 형식 구별 된 `OkOrException`, 지금까지 계산한 식의 오류 상태를 인코딩합니다. 이 코드를 상용구 구현의 일부 작성기 메서드 같은 계산 식에서 사용할 수 있는 몇 가지 일반적인 패턴을 보여 줍니다.
@@ -266,7 +267,7 @@ module Eventually =
     // computation.
     let rec bind func expr =
         match expr with
-        | Done value -> NotYetDone (fun () -> func value)
+        | Done value -> func value
         | NotYetDone work -> NotYetDone (fun () -> bind func (work()))
 
     // Return the final value wrapped in the Eventually type.
@@ -372,13 +373,8 @@ comp |> step |> step
 
 // prints "x = 1"
 // prints "x = 2"
-// returns "NotYetDone <closure>"
-comp |> step |> step |> step |> step |> step |> step
-
-// prints "x = 1"
-// prints "x = 2"
 // returns "Done 7"
-comp |> step |> step |> step |> step |> step |> step |> step |> step
+comp |> step |> step |> step |> step 
 ```
 
 계산 식에는 식을 반환 하는 내부 형식을 있습니다. 계산된 결과 또는 지연 된 계산을 수행할 수 있는 기본 형식을 나타낼 수 또는 일종의 컬렉션을 반복 하는 방법을 제공할 수 있습니다. 이전 예제에서는 기본 형식이 되었습니다 **결국**합니다. 시퀀스 식에 대 한 기본 형식은 <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>합니다. 쿼리 식에 대 한 기본 형식은 <xref:System.Linq.IQueryable?displayProperty=nameWithType>합니다. 비동기 워크플로에 대 한 기본 형식은 [ `Async` ](https://msdn.microsoft.com/library/03eb4d12-a01a-4565-a077-5e83f17cf6f7)합니다. `Async` 개체 결과 계산 하기 위해 수행 해야 하는 작업을 나타냅니다. 호출 하는 예를 들어 [ `Async.RunSynchronously` ](https://msdn.microsoft.com/library/0a6663a9-50f2-4d38-8bf3-cefd1a51fd6b) 계산을 실행 하 고 결과 반환 합니다.
@@ -401,7 +397,7 @@ type Microsoft.FSharp.Linq.QueryBuilder with
         Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [비동기 워크플로](asynchronous-workflows.md)

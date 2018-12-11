@@ -10,28 +10,30 @@ helpviewer_keywords:
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 93fdb548882422634e1d2456b4d37f434b278f8d
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 9e0a23411f4bc37a1e09460113d15f4861e0a190
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845374"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151166"
 ---
 # <a name="ltaddgt-element-for-ltsharedlistenersgt"></a>&lt;추가&gt; 요소에 대 한 &lt;sharedListeners&gt;
 `sharedListeners` 컬렉션에 수신기를 추가합니다. `sharedListeners` 이 수신기의 컬렉션인 모든 [ \<소스 >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) 또는 [ \<추적 >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) 참조할 수 있습니다.  기본적으로 수신기에는 `sharedListeners` 컬렉션에 있지 않은지를 `Listeners` 컬렉션입니다. 이름으로 추가 해야 합니다 [ \<소스 >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) 또는 [ \<추적 >](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md)합니다. 수신기에서 가져올 수 없는 `sharedListeners` 런타임 시 코드의 컬렉션입니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<sharedListeners > 요소  
-\<add>  
+&nbsp;&nbsp;\<system.diagnostics >  
+&nbsp;&nbsp;&nbsp;&nbsp;\<sharedListeners > 요소  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<추가 >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
 <add name="name"   
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
-  initializeData="data"/>  
-```  
+  initializeData="data"
+  traceOutputOptions = "None"
+/>  
+```
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
  다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
@@ -43,7 +45,8 @@ ms.locfileid: "48845374"
 |`name`|필수 특성입니다.<br /><br /> 공유 수신기를 추가 하는 데 사용 되는 수신기의 이름을 지정는 `Listeners` 컬렉션입니다.|  
 |`type`|필수 특성입니다.<br /><br /> 수신기의 형식을 지정합니다. 에 지정 된 요구 사항을 충족 하는 문자열을 사용 해야 합니다 [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|  
 |`initializeData`|선택적 특성입니다.<br /><br /> 지정된 된 클래스에 대 한 생성자에 전달 된 문자열입니다.|  
-  
+|`traceOutputOptions`|선택적 특성입니다.<br/><br/>하나 이상의의 문자열 표현을 <xref:System.Diagnostics.TraceOptions> 추적 출력에 쓸 데이터를 나타내는 열거형 멤버입니다. 여러 항목은 쉼표로 구분 됩니다. 기본값은 "None"입니다.|
+
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
@@ -69,8 +72,8 @@ ms.locfileid: "48845374"
 |추적 수신기 클래스|initializeData 특성 값|  
 |--------------------------|------------------------------------|  
 |<xref:System.Diagnostics.ConsoleTraceListener>|합니다 `useErrorStream` 에 대 한 값을 <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> 생성자입니다.  설정 된 `initializeData` 특성을 "`true`"쓸 추적 및 디버그 출력을 표준 오류 스트림에;로 설정"`false`" 표준 출력 스트림에 쓸입니다.|  
-|<xref:System.Diagnostics.DelimitedListTraceListener>|파일의 이름을 합니다 <xref:System.Diagnostics.DelimitedListTraceListener> 를 씁니다.|  
-|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|기존 이벤트 로그 원본의 이름입니다.|  
+|<xref:System.Diagnostics.DelimitedListTraceListener>|<xref:System.Diagnostics.DelimitedListTraceListener>가 쓸 파일 이름입니다.|  
+|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|기존 이벤트 로그 소스의 이름입니다.|  
 |<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|파일의 이름을는 <xref:System.Diagnostics.EventSchemaTraceListener> 를 씁니다.|  
 |<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|파일의 이름을는 <xref:System.Diagnostics.TextWriterTraceListener> 를 씁니다.|  
 |<xref:System.Diagnostics.XmlWriterTraceListener>|파일의 이름을는 <xref:System.Diagnostics.XmlWriterTraceListener> 를 씁니다.|  

@@ -2,12 +2,12 @@
 title: XML Serializer 생성기 도구(Sgen.exe)
 ms.date: 03/30/2017
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
-ms.openlocfilehash: e0fee890f86f4e377a9372d7e4c47ef78effc9fa
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 1e11a4d762950b4227b0a9accef10500fd89886d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45668472"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53148121"
 ---
 # <a name="xml-serializer-generator-tool-sgenexe"></a>XML Serializer 생성기 도구(Sgen.exe)
 XML Serializer 생성기에서 지정된 어셈블리의 형식에 대해 XML serialization 어셈블리를 만들면 지정된 형식의 개체를 serialize 또는 deserialize할 때 <xref:System.Xml.Serialization.XmlSerializer>의 시작 성능을 높일 수 있습니다.  
@@ -22,18 +22,18 @@ sgen [options]
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/a**[**ssembly**]**:***filename*|*filename*에서 지정한 어셈블리 또는 실행 파일에 있는 모든 형식에 대해 serialization 코드를 생성합니다. 파일 이름은 하나만 제공할 수 있습니다. 이 인수가 반복되면 마지막 파일 이름이 사용됩니다.|  
+|**/a**[**ssembly**]**:**_filename_|*filename*에서 지정한 어셈블리 또는 실행 파일에 있는 모든 형식에 대해 serialization 코드를 생성합니다. 파일 이름은 하나만 제공할 수 있습니다. 이 인수가 반복되면 마지막 파일 이름이 사용됩니다.|  
 |**/c[ompiler]:** *options*|C# 컴파일러로 전달될 옵션을 지정합니다. 모든 csc.exe 옵션이 컴파일러로 전달되어 지원됩니다. 이 옵션은 어셈블리에서 서명되도록 지정할 때와 키 파일을 지정할 때 사용할 수 있습니다.|  
 |**/d**[**ebug**]|디버거에서 사용할 수 있는 이미지를 생성합니다.|  
 |**/f[orce]**|이름이 같은 기존 어셈블리를 덮어쓰게 합니다. 기본값은 **false**입니다.|  
 |**/help 또는 /?**|이 도구의 명령 구문 및 옵션을 표시합니다.|  
 |**/k**[**eep**]|생성된 소스 파일 및 기타 임시 파일이 serialization 어셈블리로 컴파일된 후에는 이 파일을 삭제하지 않습니다. 이 도구에서 특정 형식에 대해 serialization 코드를 생성하는지 여부를 확인하는 데 사용할 수 있습니다.|  
 |**/n**[**ologo**]|Microsoft 시작 배너를 표시하지 않습니다.|  
-|**/o**[**ut**]**:***path*|생성된 어셈블리를 저장할 디렉터리를 지정합니다. **참고:** 생성된 어셈블리의 이름은 입력 어셈블리의 이름과 “xmlSerializers.dll”로 구성됩니다.|  
+|**/o**[**ut**]**:**_path_|생성된 어셈블리를 저장할 디렉터리를 지정합니다. **참고:**  생성된 어셈블리의 이름은 입력 어셈블리의 이름과 "xmlSerializers.dll"로 구성됩니다.|  
 |**/p**[**roxytypes**]|XML Web services 프록시 형식에 대해서만 serialization 코드를 생성합니다.|  
-|**/r**[**eference**]**:***assemblyfiles*|XML serialization이 필요한 형식에서 참조하는 어셈블리를 지정합니다. 여러 개의 어셈블리 파일을 쉼표로 구분할 수 있도록 허용합니다.|  
+|**/r**[**eference**]**:**_assemblyfiles_|XML serialization이 필요한 형식에서 참조하는 어셈블리를 지정합니다. 여러 개의 어셈블리 파일을 쉼표로 구분할 수 있도록 허용합니다.|  
 |**/s**[**ilent**]|성공 메시지를 표시하지 않습니다.|  
-|**/t**[**ype**]**:***type*|지정된 형식에 대해서만 serialization 코드를 생성합니다.|  
+|**/t**[**ype**]**:**_type_|지정된 형식에 대해서만 serialization 코드를 생성합니다.|  
 |**/v**[**erbose**]|디버깅에 대한 자세한 출력을 표시합니다. 대상 어셈블리에서 <xref:System.Xml.Serialization.XmlSerializer>로 serialize할 수 없는 형식을 나열합니다.|  
 |**/?**|이 도구의 명령 구문 및 옵션을 표시합니다.|  
   
@@ -55,7 +55,7 @@ sgen Data.dll
   
  Data.XmlSerializers.dll 어셈블리는 Data.dll의 형식을 serialize/deserialize해야 하는 코드에서 참조할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [도구](../../../docs/framework/tools/index.md)  
 - [XML Web Services 개요](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)  

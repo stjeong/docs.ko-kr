@@ -2,18 +2,18 @@
 title: '&lt;udpTransportSettings&gt;'
 ms.date: 03/30/2017
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
-ms.openlocfilehash: f1ec25a5747186ade1d721f266ff58fa5e559a49
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 50e3b283bb10ba3f34303acbbd76b42d37fa7078
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767598"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127799"
 ---
 # <a name="ltudptransportsettingsgt"></a>&lt;udpTransportSettings&gt;
 이 구성 요소에 대 한 UDP 전송 설정을 노출 [ \<udpDiscoveryEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md)합니다.  
   
 \<system.ServiceModel>  
-\<d a r d >  
+\<standardEndpoints >  
 \<udpDiscoveryEndpoint >  
   
 ## <a name="syntax"></a>구문  
@@ -52,7 +52,7 @@ ms.locfileid: "32767598"
 |maxReceivedMessageSize|바인딩에서 처리할 수 있는 메시지의 최대 크기를 지정하는 정수입니다.<br /><br /> 기본값은 65507입니다.|  
 |maxUnicastRetransmitCount|메시지를 처음 보낸 후 재전송해야 하는 최대 횟수를 지정하는 정수입니다.  메시지를 유니캐스트 주소로 보내고 응답 메시지가 해당 RelatesTo 헤더에서 수신되면 구성된 횟수만큼 재전송하기 하기 전에 재전송이 일찍 종료될 수 있습니다.<br /><br /> 기본값은 1입니다.|  
 |multicastInterfaceId|멀티홈 컴퓨터에서 멀티캐스트 트래픽을 보내고 받을 때 사용해야 하는 네트워크 어댑터를 고유하게 식별하는 문자열입니다. 런타임에 전송에서 이 특성 값을 사용하여 인터페이스 인덱스를 조회합니다. 이 인덱스는 `IP_MULTICAST_IF` 및 `IPV6_MULTICAST_IF` 소켓 옵션을 설정하는 데 사용됩니다.  해당되는 경우 동일한 인터페이스 인덱스가 멀티캐스트 그룹을 조인할 때 사용됩니다.<br /><br /> 기본값은 `null`입니다.|  
-|socketReceiveBufferSize|기본 WinSock 소켓의 수신 버퍼 크기를 지정하는 정수입니다.<br /><br /> 수신 채널의 사용자는 바인딩의 이 특성을 사용하여 데이터를 받을 때 시스템이 동작하는 방식을 제어할 수 있습니다.  예를 들어 최대 임계값으로 인바운드 WCF 메시지를 사용하는 특정 응용 프로그램에서 이 특성에 더 큰 값을 사용하면 응용 프로그램에서 메시지를 처리할 수 있을 때까지 대기하는 동안 메시지가 WinSock 버퍼에 쌓이게 됩니다.  같은 상황에서 더 작은 값을 사용하면 메시지가 삭제됩니다. 이 특성은 기본 WinSock `SO_RCVBUF` 소켓 옵션을 노출합니다. 이 특성의 값은 적어도 `maxReceivedMessageSize` 크기 이상이어야 합니다.   이 값을 `maxReceivedMessageSize`보다 작은 값으로 설정하며 런타임 예외가 발생합니다.<br /><br /> 기본값은 65536입니다.|  
+|socketReceiveBufferSize|기본 WinSock 소켓의 수신 버퍼 크기를 지정하는 정수입니다.<br /><br /> 수신 채널의 사용자는 바인딩의 이 특성을 사용하여 데이터를 받을 때 시스템이 동작하는 방식을 제어할 수 있습니다.  예를 들어 최대 임계값으로 인바운드 WCF 메시지를 사용하는 특정 응용 프로그램에서 이 특성에 더 큰 값을 사용하면 응용 프로그램에서 메시지를 처리할 수 있을 때까지 대기하는 동안 메시지가 WinSock 버퍼에 쌓이게 됩니다.  같은 상황에서 더 작은 값을 사용하면 결과적으로 메시지가 삭제됩니다. 이 특성은 기본 WinSock 노출 `SO_RCVBUF` 소켓 옵션입니다. 이 특성 값이 최소 크기 여야 합니다 `maxReceivedMessageSize`합니다.   보다 작은 값으로 설정 된 `maxReceivedMessageSize` 런타임 예외가 발생 합니다.<br /><br /> 기본값은 65536입니다.|  
 |timeToLive|멀티캐스트 패킷이 이동할 수 있는 네트워크 세그먼트 홉의 수를 지정하는 정수입니다.  이 특성은 `IP_MULTICAST_TTL` 및 `IP_TTL` 소켓 옵션과 관련된 기능을 노출합니다.<br /><br /> 기본값은 1입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -62,7 +62,7 @@ ms.locfileid: "32767598"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<udpDiscoveryEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md)|고정 검색 계약 및 UDP 전송 바인딩이 있는 표준 끝점입니다.|  
+|[\<udpDiscoveryEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md)|고정 검색 계약 및 UDP 전송 바인딩이 있는 표준 엔드포인트입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Discovery.UdpTransportSettings>

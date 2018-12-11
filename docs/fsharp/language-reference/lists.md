@@ -3,11 +3,11 @@ title: 목록(F#)
 description: 에 대해 알아봅니다 F# 는 정렬 된, 변경할 수 없는 일련의 동일한 형식의 요소를 나열 합니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: f7b9054226a1dd004ac78673a059bd1c35e325a5
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297506"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152749"
 ---
 # <a name="lists"></a>목록
 
@@ -441,7 +441,7 @@ List.iteri2: element 2 of list1 is 3; element 2 of list2 is 6
 
 목록에 추가 작업에 대 한 자세한 라이브러리 참조 항목을 참조 하세요 [Collections.List 모듈](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.list-module-%5bfsharp%5d)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [F# 형식](fsharp-types.md)

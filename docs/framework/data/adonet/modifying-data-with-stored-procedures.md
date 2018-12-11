@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 7d8e9a46-1af6-4a02-bf61-969d77ae07e0
-ms.openlocfilehash: c975913ab5df9c2e7f792ed73f8c5d20bdca1c5a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c868528edbccfeb32e6aca02c92b87d51bb0b829
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526887"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144769"
 ---
 # <a name="modifying-data-with-stored-procedures"></a>저장 프로시저로 데이터 수정
 저장 프로시저는 입력 매개 변수로 데이터를 받아들이고 출력 매개 변수, 결과 집합 또는 반환 값으로 데이터를 반환할 수 있습니다. 다음 샘플에서는 ADO.NET에서 입력 매개 변수, 출력 매개 변수 및 반환 값을 보내고 받는 방법을 보여 줍니다. 이 예제에서는 기본 키 열이 SQL Server 데이터베이스의 ID 열인 테이블에 새 레코드를 삽입합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "43526887"
 ## <a name="example"></a>예제  
  샘플에 새 범주를 삽입 하려면 다음 저장된 프로시저를 사용 하 여 **Northwind** **범주** 테이블입니다. 저장된 프로시저 값을 사용 합니다 **CategoryName** scope_identity () 사용 하 여 입력된 매개 변수 열 id 필드의 새 값을 검색할 함수 **CategoryID**를 반환 하 고 출력 매개 변수입니다. RETURN 문을 사용 하는 @@ROWCOUNT 삽입 된 행의 수를 반환 하는 함수입니다.  
   
-```  
+```sql
 CREATE PROCEDURE dbo.InsertCategory  
   @CategoryName nvarchar(15),  
   @Identity int OUT  

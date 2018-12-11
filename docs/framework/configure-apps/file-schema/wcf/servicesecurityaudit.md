@@ -2,12 +2,12 @@
 title: '&lt;serviceSecurityAudit&gt;'
 ms.date: 03/30/2017
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-ms.openlocfilehash: 4a3ac74ad369864f01fc6925657d4ab4c140495e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 36215709f0ede32c25739ea47f2f285e4122f098
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183732"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144439"
 ---
 # <a name="ltservicesecurityauditgt"></a>&lt;serviceSecurityAudit&gt;
 서비스 작업 중에 보안 이벤트의 감사를 사용하도록 하는 설정을 지정합니다.  
@@ -35,10 +35,10 @@ ms.locfileid: "50183732"
   
 |특성|설명|  
 |---------------|-----------------|  
-|auditLogLocation|감사 로그의 위치를 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -기본: 보안 이벤트를 쓰는 응용 프로그램 로그에 Windows XP에서 이벤트 로그에 Windows Server 2003 및 Windows Vista에서.<br />응용 프로그램: 감사 이벤트가 응용 프로그램 이벤트 로그에 기록 됩니다.<br />-보안: 감사 이벤트가 보안 이벤트 로그에 기록 됩니다.<br /><br /> 기본값은 Default입니다. 자세한 내용은 <xref:System.ServiceModel.AuditLogLocation>을 참조하세요.|  
+|auditLogLocation|감사 로그의 위치를 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -기본: 보안 이벤트를 쓰는 응용 프로그램 로그에 Windows XP에서 이벤트 로그에 Windows Server 2003 및 Windows Vista에서.<br />응용 프로그램: 감사 이벤트는 응용 프로그램 이벤트 로그에 기록 됩니다.<br />-보안: 감사 이벤트가 보안 이벤트 로그에 기록 됩니다.<br /><br /> 기본값은 Default입니다. 자세한 내용은 <xref:System.ServiceModel.AuditLogLocation>을 참조하세요.|  
 |suppressAuditFailure|감사 로그에 쓰기 실패를 표시하지 않기 위한 동작을 지정하는 부울 값입니다.<br /><br /> 응용 프로그램은 감사 로그 쓰기 실패에 대해 알림을 받아야 합니다. 해당 응용 프로그램에 감사 실패 처리 기능이 없는 경우 감사 로그에 쓰기 실패를 표시하지 않으려면 이 특성을 사용해야 합니다.<br /><br /> 이 특성이 `true`이면 감사 이벤트 쓰기 시도로 인해 발생한 OutOfMemoryException, StackOverFlowException, ThreadAbortException 및 ArgumentException 이외의 예외는 시스템에 의해 처리되며 응용 프로그램으로 전파되지 않습니다. 이 특성이 `false`이면 감사 이벤트 쓰기 시도로 인해 발생한 모든 예외가 응용 프로그램까지 전달됩니다.<br /><br /> 기본값은 `true`입니다.|  
-|serviceAuthorizationAuditLevel|감사 로그에 기록되는 인증 이벤트의 형식을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -None: 서비스 인증 이벤트의 감사 안 수행 됩니다.<br />-Success: 성공적인 서비스 권한 부여 이벤트만 감사 됩니다.<br />-실패: 오류 서비스 권한 부여 이벤트만 감사 됩니다.<br />-둘 다 SuccessOrFailure: 성공 및 실패 서비스 권한 부여 이벤트만 감사 됩니다.<br /><br /> 기본값은 None입니다. 자세한 내용은 <xref:System.ServiceModel.AuditLevel>을 참조하세요.|  
-|messageAuthenticationAuditLevel|기록되는 메시지 인증 감사 이벤트 형식을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -None: 감사 이벤트가 생성 됩니다.<br />-Success: 성공적인 보안 (전체 유효성 검사 메시지 시그니처 유효성 검사, 암호화 및 토큰 유효성 검사를 포함 하 여) 이벤트만 기록 됩니다.<br />-오류: 실패 한 이벤트만 기록 됩니다.<br />-둘 다 SuccessOrFailure: 성공 및 실패 이벤트가 기록 됩니다.<br /><br /> 기본값은 None입니다. 자세한 내용은 <xref:System.ServiceModel.AuditLevel>을 참조하세요.|  
+|serviceAuthorizationAuditLevel|감사 로그에 기록되는 인증 이벤트의 형식을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -None. 서비스 권한 부여 이벤트의 감사 안 수행 됩니다.<br />성공: 성공적인 서비스 권한 부여 이벤트만 감사 됩니다.<br />-오류: 오류 서비스 권한 부여 이벤트만 감사 됩니다.<br />-SuccessOrFailure: 성공 및 실패 모두 서비스 권한 부여 이벤트만 감사 됩니다.<br /><br /> 기본값은 None입니다. 자세한 내용은 <xref:System.ServiceModel.AuditLevel>을 참조하세요.|  
+|messageAuthenticationAuditLevel|기록되는 메시지 인증 감사 이벤트 형식을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -None. 감사 이벤트가 생성 됩니다.<br />성공: 성공적인 보안 (전체 유효성 검사 메시지 시그니처 유효성 검사, 암호화 및 토큰 유효성 검사를 포함 하 여) 이벤트만 기록 됩니다.<br />-오류: 실패 한 이벤트만 기록 됩니다.<br />-SuccessOrFailure: 성공 및 실패 이벤트가 기록 됩니다.<br /><br /> 기본값은 None입니다. 자세한 내용은 <xref:System.ServiceModel.AuditLevel>을 참조하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -82,5 +82,5 @@ ms.locfileid: "50183732"
  <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
  [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  [감사](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [방법: 보안 이벤트 감사](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
+ [어떻게: 보안 이벤트 감사](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
  [서비스 감사 동작](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)

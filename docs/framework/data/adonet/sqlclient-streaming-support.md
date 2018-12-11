@@ -2,12 +2,12 @@
 title: SqlClient 스트리밍 지원
 ms.date: 03/30/2017
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-ms.openlocfilehash: 7c9c7300678b9e285965a3c1b673a92b6f26973e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a393274a7cf40b01399c5909c2d5ec4097ec9310
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50191047"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152892"
 ---
 # <a name="sqlclient-streaming-support"></a>SqlClient 스트리밍 지원
 SQL Server 및 응용 프로그램 간의 스트리밍 지원 (새로운 기능 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]) 서버 (문서, 이미지 및 미디어 파일)에서 구조화 되지 않은 데이터를 지원 합니다. SQL Server 데이터베이스를 binary large object (Blob)를 저장할 수 있지만 BLOB를 검색 하는 많은 양의 메모리를 사용할 수 있습니다.  
@@ -76,7 +76,7 @@ SQL Server 및 응용 프로그램 간의 스트리밍 지원 (새로운 기능 
 ## <a name="sample----streaming-from-sql-server"></a>샘플-SQL Server에서의 스트리밍  
  다음 [!INCLUDE[tsql](../../../../includes/tsql-md.md)]에 따라 샘플 데이터베이스를 작성할 수 있습니다.  
   
-```  
+```sql
 CREATE DATABASE [Demo]  
 GO  
 USE [Demo]  
@@ -105,7 +105,7 @@ GO
   
 -   메모리 부족 하지 않고 다른 하나의 SQL Server 데이터베이스에서 큰 파일 (Blob)를 전송 합니다.  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -297,7 +297,7 @@ namespace StreamingFromServer {
 ## <a name="sample----streaming-to-sql-server"></a>샘플-SQL Server로의 스트리밍  
  다음 [!INCLUDE[tsql](../../../../includes/tsql-md.md)]에 따라 샘플 데이터베이스를 작성할 수 있습니다.  
   
-```  
+```sql
 CREATE DATABASE [Demo2]  
 GO  
 USE [Demo2]  
@@ -330,7 +330,7 @@ GO
   
 -   새로운 비동기 기능을 사용 하 여 다른 하나의 SQL Server에서 스트리밍입니다.  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -453,7 +453,7 @@ namespace StreamingToServer {
 ## <a name="sample----streaming-from-one-sql-server-to-another-sql-server"></a>샘플-하나의 SQL Server에서 다른 SQL Server로 스트리밍  
  이 샘플에는 비동기적으로 취소에 대 한 지원을 사용 하 여 다른 하나의 SQL Server에서 큰 BLOB을 스트림 하는 방법을 보여 줍니다.  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  

@@ -1,31 +1,33 @@
 ---
 title: 네임스페이스(F#)
-description: F# 네임 스페이스를 프로그램 요소의 그룹에 이름을 연결 하 여 관련 기능 영역으로 코드를 구성할 수 있습니다를 사용 하는 방법을 알아봅니다.
-ms.date: 04/24/2017
-ms.openlocfilehash: 769a1241f76ac32d3a6a80bd637078493119bb3c
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+description: 에 대해 알아봅니다 어떻게는 F# 네임 스페이스를 사용 하면 프로그램 요소의 그룹에 이름을 연결 하 여 관련 기능 영역으로 코드를 구성할 수 있습니다.
+ms.date: 12/08/2018
+ms.openlocfilehash: ad5cca8947d09d8480bfa418b003c84546edc29b
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44178259"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169036"
 ---
 # <a name="namespaces"></a>네임스페이스
 
-네임스페이스를 통해 프로그램 요소의 그룹에 이름을 연결하여 관련 기능 영역으로 코드를 체계화할 수 있습니다.
+네임 스페이스 이름을 그룹에 연결할 수 있도록 하 여 관련 기능 영역으로 코드를 구성할 수 있습니다 F# 요소를 프로그래밍 합니다. 네임 스페이스에서 일반적으로 최상위 요소는 F# 파일입니다.
 
 ## <a name="syntax"></a>구문
 
 ```fsharp
-namespace [parent-namespaces.]identifier
+namespace [rec] [parent-namespaces.]identifier
 ```
 
 ## <a name="remarks"></a>설명
 
-네임 스페이스에 코드를 배치 하려는 경우 파일의 첫 번째 선언은 네임 스페이스를 선언 해야 합니다. 전체 파일의 내용에는 다음 네임 스페이스의 일부가 됩니다.
+네임 스페이스에 코드를 배치 하려는 경우 파일의 첫 번째 선언은 네임 스페이스를 선언 해야 합니다. 그런 다음 전체 파일의 내용을 네임 스페이스의 일부가, 다른 네임 스페이스 선언이 없는 존재 제공 파일에 추가 합니다. 하는 경우 다음 네임 스페이스 선언까지 모든 코드는 첫 번째 네임 스페이스에 있는 것으로 간주 됩니다.
 
 네임 스페이스 값 및 함수에 직접 포함할 수 없습니다. 대신 값 및 함수 모듈에 포함 되어야 하며 모듈이 네임 스페이스에 포함 됩니다. 네임 스페이스에는 모듈 형식을 포함할 수 있습니다.
 
-네임 스페이스 선언할 수 있습니다 명시적으로 네임 스페이스 키워드를 사용 하거나 암시적으로 모듈을 선언 하는 경우. 네임 스페이스를 명시적으로 선언 하려면 네임 스페이스 이름 뒤에 네임 스페이스 키워드를 사용 합니다. 다음 예제에서는 형식과 해당 네임 스페이스에 포함 된 모듈을 사용 하 여 위젯을 네임 스페이스를 선언 하는 코드 파일을 보여 줍니다.
+XML 문서 주석 위에 네임 스페이스를 선언할 수 있습니다 있지만 무시 됩니다. 컴파일러 지시문은 네임 스페이스 위에 선언할 수 있습니다.
+
+네임 스페이스 선언할 수 있습니다 명시적으로 네임 스페이스 키워드를 사용 하거나 암시적으로 모듈을 선언 하는 경우. 네임 스페이스를 명시적으로 선언 하려면 네임 스페이스 이름 뒤에 네임 스페이스 키워드를 사용 합니다. 다음 예제에서는 네임 스페이스를 선언 하는 코드 파일 `Widgets` 형식과 해당 네임 스페이스에 포함 된 모듈을 사용 합니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6406.fs)]
 
@@ -74,7 +76,7 @@ Module2 5 6
 
 ## <a name="recursive-namespaces"></a>재귀 네임 스페이스
 
-F# 4.1에 포함 된 모든 코드 상호 재귀를 허용 하는 네임 스페이스 개념이 도입 되었습니다.  이 통해 이루어집니다 `namespace rec`합니다.  사용 `namespace rec` 의 종류와 모듈 간의 상호 참조 코드를 쓸 수 없는 몇 가지 문제를 완화할 수 있습니다.  다음은이 예제입니다.
+상호 재귀를 모두 포함 된 코드에 대 한 허용 하도록 자동으로 네임 스페이스를 선언할 수도 있습니다.  이 통해 이루어집니다 `namespace rec`합니다. 사용 `namespace rec` 의 종류와 모듈 간의 상호 참조 코드를 쓸 수 없는 몇 가지 문제를 완화할 수 있습니다. 다음은이 예제입니다.
 
 ```fsharp
 namespace rec MutualReferences
@@ -115,12 +117,12 @@ module BananaHelpers =
         | Down -> b |> peelSides
 ```
 
-예외 `DontSqueezeTheBananaException` 및 클래스 `Banana` 모두 서로를 참조 합니다.  또한 모듈 `BananaHelpers` 및 클래스 `Banana` 서로 참조할 수도 있습니다.  하지 않는 것이 제거한 경우 F#에서 표현할 수는 `rec` 키워드는 `MutualReferences` 네임 스페이스입니다.
+예외 `DontSqueezeTheBananaException` 및 클래스 `Banana` 모두 서로를 참조 합니다.  또한 모듈 `BananaHelpers` 및 클래스 `Banana` 서로 참조할 수도 있습니다. 에 표시할 수 없을 것임이 F# 를 제거한 경우 합니다 `rec` 키워드를는 `MutualReferences` 네임 스페이스입니다.
 
-이 기능은 또한에 사용할 수 있는 최상위 [모듈](modules.md) F# 4.1 이상.
+이 기능은 또한에 사용할 수 있는 최상위 [모듈](modules.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [모듈](modules.md)
-- [F# RFC FS-1009-파일 내에서 더 큰 범위를 통한 상호 참조 형식 및 모듈 허용](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)
+- [F#RFC FS-1009-파일 내에서 더 큰 범위를 통한 상호 참조 형식 및 모듈 허용](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - security terms [WCF]
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 ms.openlocfilehash: 8b8f92697181c76710e75d6e5a07296b1fcf9188
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297064"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126824"
 ---
 # <a name="wcf-security-terminology"></a>WCF 보안 용어
 보안을 설명할 때 사용되는 일부 용어는 생소할 수 있습니다. 이 항목에서는 일부 보안 용어에 대해 간략하게 설명하며, 모든 항목을 포괄적으로 설명하지는 않습니다.  
@@ -120,7 +120,7 @@ ms.locfileid: "52297064"
  CA 계층 구조의 맨 위에 있는 CA입니다. 루트 기관은 계층 구조의 다음 수준에 속하는 CA를 인증합니다.  
   
  SHA(Secure Hash Algorithm)  
- 메시지 다이제스트를 생성하는 해시 알고리즘입니다. SHA는 DSS(디지털 서명 표준) 등 여러 위치에서 DSA(디지털 서명 알고리즘)와 함께 사용됩니다. SHA는 SHA-1, SHA-256, SHA-384, SHA-512의 네 가지가 있습니다. SHA-1은 160비트 메시지 다이제스트를 생성합니다. SHA-256, SHA-384 및 SHA-512는 각각 256비트, 384비트 및 512비트 메시지 다이제스트를 생성합니다. SHA는 NIST(National Institute of Standards and Technology)와 NSA(National Security Agency)에 의해 개발되었습니다.  
+ 메시지 다이제스트를 생성하는 해시 알고리즘입니다. SHA는 DSS(디지털 서명 표준) 등 여러 위치에서 DSA(디지털 서명 알고리즘)와 함께 사용됩니다. SHA의 방법은 네 가지가 있습니다. Sha-1, SHA-256, SHA-384 및 SHA-512. SHA-1은 160비트 메시지 다이제스트를 생성합니다. SHA-256, SHA-384 및 SHA-512는 각각 256비트, 384비트 및 512비트 메시지 다이제스트를 생성합니다. SHA는 NIST(National Institute of Standards and Technology)와 NSA(National Security Agency)에 의해 개발되었습니다.  
   
  SSL(Secure Sockets Layer)  
  공개 및 비밀 키 기술을 함께 사용하는 보안 네트워크 통신을 위한 프로토콜입니다.  

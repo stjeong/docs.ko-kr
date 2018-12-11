@@ -1,18 +1,18 @@
 ---
-title: '가져오기 선언: open 키워드(F#)'
-description: 정규화 된 이름을 사용 하지 않고 참조할 수 있는 해당 요소의 F# 가져오기 선언 및 모듈 또는 네임 스페이스를 지정 하는 방법에 대해 알아봅니다.
+title: '가져오기 선언: Open 키워드 (F#)'
+description: 에 대해 알아봅니다 F# 선언 및 모듈 또는 네임 스페이스 정규화 된 이름을 사용 하지 않고 참조할 수 있는 요소를 지정 하는 방법을 가져옵니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 8cae4b4f5418689bfb0933b7db4ec23a313d5ed8
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 1f6fa791f993459178646687195037563da82540
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "46586625"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127305"
 ---
-# <a name="import-declarations-the-open-keyword"></a>가져오기 선언:는 `open` 키워드
+# <a name="import-declarations-the-open-keyword"></a>가져오기 선언: `open` 키워드
 
 > [!NOTE]
-이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
+> 이 문서의 API 참조 링크를 통해 MSDN으로 이동됩니다.  docs.microsoft.com API 참조가 완전하지 않습니다.
 
 *가져오기 선언* 모듈이 나 네임 스페이스 정규화 된 이름을 사용 하지 않고 참조할 수 있는 요소를 지정 합니다.
 
@@ -36,7 +36,7 @@ open module-or-namespace-name
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6801.fs)]
 
-F# 컴파일러를 내보내지는지 않습니다 오류 또는 경고를 이름이 같은 둘 이상의 열기 모듈 또는 네임 스페이스에서 발생 하는 경우 모호성을 발생 합니다. 모호성이 발생 하면 F# 제공 더 최근에 연 모듈 또는 네임 스페이스를 기본 설정 합니다. 예를 들어, 다음 코드에서에서 `empty` 의미 `Seq.empty`경우에 `empty` 둘 다에 `List` 고 `Seq` 모듈.
+F# 컴파일러를 내보내지는지 않습니다 오류 또는 경고를 둘 이상 열려 모듈 또는 네임 스페이스 이름이 발생 하면 모호성이 발생 합니다. 모호성이 발생 하면 F# 기본 설정 보다 최근에 연 모듈 또는 네임 스페이스를 제공 합니다. 예를 들어, 다음 코드에서에서 `empty` 의미 `Seq.empty`경우에 `empty` 둘 다에 `List` 고 `Seq` 모듈.
 
 ```fsharp
 open List
@@ -48,11 +48,11 @@ printfn "%A" empty
 
 ## <a name="namespaces-that-are-open-by-default"></a>기본적으로 열려 있는 네임 스페이스
 
-일부 네임 스페이스 열리는 암시적 선언의 명시적으로 가져올 필요 없이 F# 코드에서 자주 사용 됩니다. 다음 표에서 기본적으로 열려 있는 네임 스페이스를 보여 줍니다.
+일부 네임 스페이스에서 자주 사용 됩니다 F# 열리는 암시적 선언의 명시적으로 가져올 필요 없이 코드입니다. 다음 표에서 기본적으로 열려 있는 네임 스페이스를 보여 줍니다.
 
 |네임스페이스|설명|
 |---------|-----------|
-|`Microsoft.FSharp.Core`|와 같은 기본 제공 형식에 대 한 F# 형식 정의 기본 포함 `int` 고 `float`입니다.|
+|`Microsoft.FSharp.Core`|기본 포함 F# 와 같은 기본 제공 형식에 대 한 정의 입력 `int` 하 고 `float`합니다.|
 |`Microsoft.FSharp.Core.Operators`|같은 기본 산술 연산이 포함 되어 있습니다 `+` 고 `*`입니다.|
 |`Microsoft.FSharp.Collections`|변경 불가능 컬렉션 클래스를 같은 포함 `List` 고 `Array`입니다.|
 |`Microsoft.FSharp.Control`|지연 계산 등 비동기 워크플로 제어 구문에 대 한 형식을 포함합니다.|
@@ -66,7 +66,7 @@ printfn "%A" empty
 
 일부 모듈, 레코드 또는 공용 구조체 형식을 지정할 수는 `RequireQualifiedAccess` 특성입니다. 이러한 모듈, 레코드 또는 공용 구조체의 요소를 참조할 때 가져오기 선언을 포함 여부에 관계 없이 정규화 된 이름을 사용 해야 합니다. 에 전략적으로이 특성을 사용 하면 일반적으로 정의 하는 형식 이름을 사용한 경우 이름 충돌을 방지 하 고 있으므로 복원 력을 코드 라이브러리의 변경 내용에 도움이 합니다. 자세한 내용은 [Core.RequireQualifiedAccessAttribute 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.requirequalifiedaccessattribute-class-%5Bfsharp%5D)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [# 언어 참조](index.md)
 - [네임스페이스](namespaces.md)

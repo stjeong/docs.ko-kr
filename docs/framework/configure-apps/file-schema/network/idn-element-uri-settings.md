@@ -2,12 +2,12 @@
 title: '&lt;idn&gt; 요소 (Uri 설정)'
 ms.date: 03/30/2017
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
-ms.openlocfilehash: 96d70f76f8d29368505dd5054edf3db253b89016
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.openlocfilehash: e68fa040123180ee31af40e82f45d6efd076d8aa
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50037011"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153360"
 ---
 # <a name="ltidngt-element-uri-settings"></a>&lt;idn&gt; 요소 (Uri 설정)
 다국어 도메인 이름 (IDN) 구문 분석 된 도메인 이름에 적용 됩니다 지정 합니다.  
@@ -62,7 +62,7 @@ ms.locfileid: "50037011"
   
 -   idn 사용 = All  
   
-     이 값은 punycode (IDN 이름)에 어떠한 유니코드 도메인 이름도 변환 합니다.  
+     이 값은 모든 유니코드 도메인 이름을 해당하는 Punycode 항목(IDN 이름)으로 변환합니다.  
   
 -   사용 하도록 설정 하는 idn AllExceptIntranet =  
   
@@ -70,7 +70,7 @@ ms.locfileid: "50037011"
   
 -   idn 사용 = 없음  
   
-     이 값은 Punycode를 사용 하도록 어떠한 유니코드 도메인 이름도 변환 하지 않습니다. .NET Framework 2.0 동작을 사용 하 여 일치 하는 기본 값입니다.  
+     이 값은 Punycode를 사용하도록 어떠한 유니코드 도메인 이름도 변환하지 않습니다. .NET Framework 2.0 동작을 사용 하 여 일치 하는 기본 값입니다.  
   
  IDN을 사용하면 도메인 이름의 모든 유니코드 레이블이 해당 Punycode 문자로 변환됩니다. Punycode 이름에는 ASCII 문자만 사용되며 항상 xn-- 접두사로 시작합니다. 대부분의 DNS 서버는 ASCII 문자만 지원하므로(RFC 3940 참조) 이렇게 해야 인터넷에서 기존 DNS 서버를 지원할 수 있습니다.  
   
@@ -94,6 +94,6 @@ ms.locfileid: "50037011"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+- [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -15,11 +15,11 @@ topic_type:
 author: mairaw
 ms.author: mairaw
 ms.openlocfilehash: 8b934e5ee69c2e6ebd5cf4da7de2790669c68986
-ms.sourcegitcommit: 4bca8f7e172fd019ef437a4803bf5895c6bc4781
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50980598"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129365"
 ---
 # <a name="datamemberlisteditor-class"></a>DataMemberListEditor 클래스
 
@@ -44,6 +44,6 @@ internal class DataMemberListEditor : UITypeEditor
   
 **.NET framework 버전:** 2.0부터 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Windows.Forms.Design?displayProperty=nameWithType>

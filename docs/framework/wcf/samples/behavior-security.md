@@ -3,11 +3,11 @@ title: 동작 보안
 ms.date: 03/30/2017
 ms.assetid: 19710ae3-f197-4d28-ba9d-52e465006819
 ms.openlocfilehash: f5fd9cdb5fa0a84a151bc00ba63f1f5e89530629
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192813"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146903"
 ---
 # <a name="behavior-security"></a>동작 보안
 이 단원에는 서비스 동작에 대한 보안을 구성하는 방법을 보여 주는 샘플이 포함되어 있습니다.  

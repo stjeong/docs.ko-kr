@@ -2,17 +2,17 @@
 title: 아키텍처 및 디자인
 ms.date: 03/30/2017
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
-ms.openlocfilehash: 5a0d8aac401a3485bc5f158bcda893ad9ab424e8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 281f321e45b019178aa82946eb451e56f5c04841
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530472"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154270"
 ---
 # <a name="architecture-and-design"></a>아키텍처 및 디자인
-SQL 생성 모듈은 [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616) 명령 트리를 나타내는 식 트리의 방문자로 구현 됩니다. 생성은 식 트리에 대한 단일 패스로 수행됩니다.  
+SQL 생성 모듈은 [Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) 명령 트리를 나타내는 식 트리의 방문자로 구현 됩니다. 생성은 식 트리에 대한 단일 패스로 수행됩니다.  
   
- 트리의 노드는 아래쪽에서 위쪽으로 처리됩니다. 먼저 중간 구조인 SqlSelectStatement 또는 SqlBuilder가 생성되며, 둘 다 ISqlFragment를 구현합니다. 그런 다음 이 구조에서 SQL 문 문자열이 생성됩니다. 중간 구조를 사용하는 이유는 두 가지입니다.  
+ 트리의 노드는 아래쪽에서 위쪽으로 처리됩니다. 먼저 중간 구조 생성 됩니다. SqlSelectStatement 또는 SqlBuilder를 둘 다 ISqlFragment 구현 합니다. 그런 다음 이 구조에서 SQL 문 문자열이 생성됩니다. 중간 구조를 사용하는 이유는 두 가지입니다.  
   
 -   논리적으로 SQL SELECT 문은 순서에 관계없이 채워집니다. FROM 절에 참여하는 노드는 WHERE, GROUP BY 및 ORDER BY 절에 참여하는 노드 전에 방문됩니다.  
   
@@ -25,7 +25,7 @@ SQL 생성 모듈은 [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=1
  두 번째 단계에서는 실제 문자열을 생성하는 동안 별칭의 이름이 바뀝니다.  
   
 ## <a name="data-structures"></a>데이터 구조  
- 이 섹션에 사용 되는 형식을 설명 합니다 [샘플 공급자](https://go.microsoft.com/fwlink/?LinkId=180616) 사용 하 여 SQL 문을 작성 합니다.  
+ 이 섹션에 사용 되는 형식을 설명 합니다 [샘플 공급자](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) 사용 하 여 SQL 문을 작성 합니다.  
   
 ### <a name="isqlfragment"></a>ISqlFragment  
  이 단원에서는 다음 두 가지 용도로 사용되는 ISqlFragment 인터페이스를 구현하는 클래스를 살펴봅니다.  
@@ -226,7 +226,7 @@ private bool IsParentAJoin{get}
  조인 별칭 평면화는 DbPropertyExpression 단원에 설명된 대로 DbPropertyExpression을 방문할 때 수행됩니다.  
   
 ### <a name="column-name-and-extent-alias-renaming"></a>열 이름 및 익스텐트 별칭 이름 바꾸기  
- 열 이름 및 익스텐트 별칭 이름 바꾸기의 문제는 SQL 생성의 두 번째 단계: 문자열 명령 생성 단원에 설명된 대로 생성의 두 번째 단계에서 별칭으로만 대체되는 기호를 사용하여 해결됩니다.  
+ SQL 생성의 두 번째 단계 섹션에 설명 된 생성의 두 번째 단계에서 별칭 으로만 대체 하는 기호 사용 하 여 열 이름 및 익스텐트 별칭 이름 바꾸기의 문제를 해결 합니다. 문자열 명령을 생성 합니다.  
   
 ## <a name="first-phase-of-the-sql-generation-visiting-the-expression-tree"></a>SQL 생성의 첫 번째 단계: 식 트리 방문  
  이 단원에서는 쿼리를 나타내는 식이 방문되고 중간 구조 SqlSelectStatement 또는 SqlBuilder가 생성되는 SQL 생성의 첫 번째 단계에 대해 설명합니다.  

@@ -1,17 +1,17 @@
 ---
 title: 기본 형식 (F#)
-description: F# 언어에서 사용 되는 기본 기본 형식을 검색 합니다.
+description: 에 사용 되는 기본 기본 형식을 검색 합니다 F# 언어입니다.
 ms.date: 07/09/2018
-ms.openlocfilehash: 8f948d066323527b09b1d3f9f4167b95b1c875cf
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: a8a1154a211d8c87571b47cb41cb091096569472
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48026945"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145126"
 ---
 # <a name="basic-types"></a>기본 형식
 
-이 항목에서는 F# 언어에서 정의 된 기본 형식을 나열 합니다. 이러한 유형은 거의 모든 F# 프로그램의 토대를 형성할 F#의 가장 기본적인입니다. 이들은.NET 기본 형식의 상위 집합입니다.
+이 항목에 정의 된 기본 유형을 나열 합니다 F# 언어입니다. 이러한 유형은에서 가장 기본적인 F#, 거의 모든의 토대를 형성할 F# 프로그램입니다. 이들은.NET 기본 형식의 상위 집합입니다.
 
 |형식|.NET 형식|설명|
 |----|---------|-----------|
@@ -34,9 +34,9 @@ ms.locfileid: "48026945"
 |`float32`, `single`|<xref:System.Single>|32 비트 부동 소수점 형식입니다.|
 |`float`, `double`|<xref:System.Double>|64 비트 부동 소수점 형식입니다.|
 
->[!NOTE]
-사용 하 여 64 비트 정수 형식에 대해 너무 큰 정수를 사용 하 여 계산을 수행할 수 있습니다 합니다 [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) 형식입니다. `bigint` 기본 형식으로 간주 되지 않습니다. 약어 `System.Numerics.BigInteger`합니다.
+> [!NOTE]
+> 사용 하 여 64 비트 정수 형식에 대해 너무 큰 정수를 사용 하 여 계산을 수행할 수 있습니다 합니다 [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) 형식입니다. `bigint` 기본 형식으로 간주 되지 않습니다. 약어 `System.Numerics.BigInteger`합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)

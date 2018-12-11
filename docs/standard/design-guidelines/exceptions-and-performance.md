@@ -1,6 +1,6 @@
 ---
 title: 예외 및 성능
-ms.date: 03/30/2017
+ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - tester-doer pattern
@@ -9,14 +9,13 @@ helpviewer_keywords:
 - exceptions, performance
 - throwing exceptions, performance
 ms.assetid: 3ad6aad9-08e6-4232-b336-0e301f2493e6
-author: rpetrusha
-ms.author: ronpet
-ms.openlocfilehash: d664b7b61394bd9bfe6d0abd7130f9f0191e7a03
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+author: KrzysztofCwalina
+ms.openlocfilehash: ab125117836545b9a2436347375ed0e08c591c7b
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44083548"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153750"
 ---
 # <a name="exceptions-and-performance"></a>예외 및 성능
 예외와 관련 된 한 가지 일반적인 문제는 예외를 지속적으로 실패 하는 코드를 사용 하는 경우 구현의 성능은 허용 되지 경우 이 맞는 말입니다. 멤버에서 예외를 throw 하는 경우 해당 성능이 크기가 커져 느린 수 있습니다. 그러나 오류 코드를 사용 하 여 허용 하지 않는 예외 지침을 준수할 엄격 하 게 하는 동안 적절 한 성능을 달성 하는 것이 같습니다. 이 섹션에서 설명 하는 두 가지 패턴에는이 작업을 수행 하는 방법을 제안 합니다.  
@@ -71,9 +70,9 @@ public struct DateTime {
   
  *Portions © 2005, 2009 Microsoft Corporation. 모든 권리 보유.*  
   
- *Pearson Education, Inc의 동의로 재인쇄. 출처: [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) 작성자: Krzysztof Cwalina 및 Brad Abrams, 출판 정보: Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
 - [예외 디자인 지침](../../../docs/standard/design-guidelines/exceptions.md)

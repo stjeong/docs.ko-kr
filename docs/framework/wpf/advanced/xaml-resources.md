@@ -7,12 +7,12 @@ helpviewer_keywords:
 - reusing commonly defined objects [WPF]
 - XAML [WPF], reusing resources
 ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
-ms.openlocfilehash: c43505497b947004ffb282346459967579d52375
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: e02c80f4c1fdacbfdcb50ed57d89cc9df1f277f9
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44199546"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126405"
 ---
 # <a name="xaml-resources"></a>XAML 리소스
 리소스는 응용 프로그램의 여러 위치에서 다시 사용할 수 있는 개체입니다. 리소스의 예로는 브러시와 스타일이 있습니다. 이 개요에서 리소스를 사용 하는 방법에 설명 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]합니다. 또한 만들고 하 하거나 코드 서로 바꿔 코드를 사용 하 여 리소스에 액세스 하 고 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]입니다. 자세한 내용은 [리소스 및 코드](../../../../docs/framework/wpf/advanced/resources-and-code.md)합니다.  
@@ -147,7 +147,7 @@ ms.locfileid: "44199546"
   
  스타일 실제로 키가: 암시적 키는 `typeof(` <xref:System.Windows.Controls.Button> `)`합니다. 태그를 지정할 수 있습니다는 <xref:System.Windows.Style.TargetType%2A> 형식으로 직접 이름 (또는 필요에 따라 사용할 수 있습니다 [{x: Type...}](../../../../docs/framework/xaml-services/x-type-markup-extension.md) 반환할는 <xref:System.Type>합니다.  
   
- 사용 하는 기본 테마 스타일 메커니즘을 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], 스타일의 런타임 스타일으로 적용 되지 않음을 <xref:System.Windows.Controls.Button> 페이지에서도 합니다 <xref:System.Windows.Controls.Button> 자체를 지정 하지 않습니다 해당 <xref:System.Windows.FrameworkElement.Style%2A> 속성 또는 특정 리소스 스타일에 대 한 참조입니다. 페이지에 정의된 스타일은 테마 사전 스타일에 있는 동일한 키를 사용하여 테마 사전 스타일보다 빠른 조회 순서를 통해 먼저 발견됩니다. 만 지정할 수 있습니다 `<Button>Hello</Button>` 어디에 페이지를 사용 하 여 정의 된 스타일 <xref:System.Windows.Style.TargetType%2A> 의 `Button` 해당 단추에 적용 됩니다. 동일한 형식 값을 사용 하 여 스타일을 명시적으로 키를 <xref:System.Windows.Style.TargetType%2A>에 있지만 태그에서 명확 하 게는 선택 사항입니다.  
+ 사용 하는 기본 테마 스타일 메커니즘을 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], 스타일의 런타임 스타일으로 적용 되지 않음을 <xref:System.Windows.Controls.Button> 페이지에서도 합니다 <xref:System.Windows.Controls.Button> 자체를 지정 하지 않습니다 해당 <xref:System.Windows.FrameworkElement.Style%2A> 속성 또는 특정 리소스 스타일에 대 한 참조입니다. 페이지에 정의 된 스타일은 테마 사전 스타일에는 동일한 키를 사용 하 여 테마 사전 스타일 보다 조회 시퀀스 앞 있습니다. 만 지정할 수 있습니다 `<Button>Hello</Button>` 어디에 페이지를 사용 하 여 정의 된 스타일 <xref:System.Windows.Style.TargetType%2A> 의 `Button` 해당 단추에 적용 됩니다. 동일한 형식 값을 사용 하 여 스타일을 명시적으로 키를 <xref:System.Windows.Style.TargetType%2A>에 있지만 태그에서 명확 하 게는 선택 사항입니다.  
   
  암시적 키는 스타일의 경우 컨트롤에 적용 되지 않습니다 <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> 됩니다 `true` (또한 <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> 대신 명시적으로 컨트롤의 인스턴스 컨트롤 클래스에 대 한 기본 동작의 일부로 설정할 수 있습니다). 또한 파생 된 클래스 시나리오에 대 한 암시적 키를 지원 하기 위해 컨트롤 재정의 해야 합니다 <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> (모든 기존 컨트롤의 일부로 제공 된 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 이 작업을 수행). 스타일, 테마 및 컨트롤 디자인에 대 한 자세한 내용은 참조 하세요. [컨트롤을 디자인 하기 위한 지침](../../../../docs/framework/wpf/controls/guidelines-for-designing-stylable-controls.md)합니다.  
   

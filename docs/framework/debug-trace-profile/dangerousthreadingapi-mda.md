@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 3e5efbc5-92e4-4229-b31f-ce368a1adb96
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 02f16bd9560346cca9b24d4e5b8e760fdb3afd18
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1bfc3aa2bb7d1819f5f6221154ba1d276e0c202c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357315"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149369"
 ---
 # <a name="dangerousthreadingapi-mda"></a>dangerousThreadingAPI MDA
 `dangerousThreadingAPI` MDA(관리 디버깅 도우미)는 <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> 메서드가 현재 스레드 이외의 스레드에서 호출될 때 활성화됩니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "33357315"
 ## <a name="output"></a>출력  
  MDA는 MDA를 활성화시키는 위험한 스레딩 메서드를 식별합니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -54,7 +54,7 @@ ms.locfileid: "33357315"
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 `dangerousThreadingAPI`를 활성화시키는 <xref:System.Threading.Thread.Suspend%2A> 메서드에 대한 호출을 보여 줍니다.  
   
-```  
+```csharp
 using System.Threading;  
 void FireMda()  
 {  

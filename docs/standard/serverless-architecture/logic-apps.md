@@ -4,12 +4,12 @@ description: Azure Logic Apps를 사용 하도록 앱을 통합 하는 확장성
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 019539f0da1d38259870907c38ed0eb6a62f1929
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 14670a8459db3b80b8fbe3139c2675321cf9592c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370190"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147960"
 ---
 # <a name="azure-logic-apps"></a>Azure Logic Apps
 
@@ -34,5 +34,5 @@ Logic Apps 대시보드 워크플로 및 각 실행 여부 완료 성공적으�
 자세한 내용은 참조 하세요 [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)합니다.
 
 >[!div class="step-by-step"]
-[이전](application-insights.md)
-[다음](event-grid.md)
+>[이전](application-insights.md)
+>[다음](event-grid.md)

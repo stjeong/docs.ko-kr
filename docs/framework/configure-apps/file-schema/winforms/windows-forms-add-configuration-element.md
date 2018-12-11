@@ -8,11 +8,11 @@ ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 5cb0d058cd1ade65bfdc966819c0c41d9c1a9750
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672123"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155095"
 ---
 # <a name="windows-forms-add-configuration-element"></a>Windows Forms 구성 요소를 추가합니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "52672123"
 | 특성 | 설명 |
 | --------- | ----------- |
 | `key`     | 필수 특성입니다. 특정 Windows Forms 사용자 지정 가능한 기능에 해당 하는 미리 정의 된 키 이름입니다. |
-| `value`   | 필수 특성입니다. 에 할당할 값 `key`합니다. |
+| `value`   | 필수 특성입니다. `key`에 할당할 값입니다. |
 
 ### <a name="key-attribute-names-and-associated-values"></a>`key` 특성 이름 및 연결 된 값
 
@@ -108,7 +108,7 @@ Windows Forms 응용 프로그램의 높은 DPI 지원의 활용에 자세한 �
 
 단일 또는 다중 전달 확장에 영향을 줍니다 사용자 인터페이스의 체감된 응답성 및 사용자 인터페이스 요소의 모양을으로 크기가 조정 됩니다. .NET Framework 4.7부터 Windows Forms 크기 조정 단일 패스로 사용 합니다. .NET Framework의 이전 버전에서는 크기 조정 필요 하는 것 보다 몇 가지 컨트롤 확장을 발생 하는 여러 패스를 통해 수행 되었습니다. 크기 조정 단일 패스는 사용할 수 응용 프로그램이 이전 동작에 종속 하는 경우.  
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  
 [Windows Forms 구성 섹션](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)   
 [Windows Forms의 높은 DPI 지원](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

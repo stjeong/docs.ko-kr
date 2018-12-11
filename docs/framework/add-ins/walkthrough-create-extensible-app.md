@@ -14,11 +14,11 @@ ms.assetid: 694a33c5-a040-450d-aed5-ac49fc88ce61
 author: rpetrusha
 ms.author: ronpet
 ms.openlocfilehash: 63780583d035d6fab6b3a79424857b82a910ef09
-ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744615"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155079"
 ---
 # <a name="walkthrough-creating-an-extensible-application"></a>연습: 확장 가능한 응용 프로그램 만들기
 이 연습에서는 간단한 계산기 기능을 수행 하는 추가 기능에 대 한 파이프라인을 만드는 방법을 설명 합니다. 실제 시나리오; 보여 주지 않지만 대신, 파이프라인 및 방법으로 추가 기능 서비스를 제공할 수는 호스트의 기본 기능을 보여 줍니다.  
@@ -43,11 +43,11 @@ ms.locfileid: "50744615"
   
 -   호스트 응용 프로그램을 실행 합니다.  
   
- 이 파이프라인만 직렬화 가능 형식 전달 (<xref:System.Double> 고 <xref:System.String>), 호스트와 추가 기능 사이입니다. 복잡 한 데이터 형식의 컬렉션을 전달 하는 방법을 보여 주는 예제를 참조 하세요 [연습: 추가 기능 및 호스트 간의 컬렉션 전달](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)합니다.  
+ 이 파이프라인만 직렬화 가능 형식 전달 (<xref:System.Double> 고 <xref:System.String>), 호스트와 추가 기능 사이입니다. 복잡 한 데이터 형식의 컬렉션을 전달 하는 방법을 보여 주는 예제를 참조 하세요. [연습: 호스트와 추가 기능 간의 컬렉션 전달](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)합니다.  
   
  이 파이프라인에 대 한 계약의 네 가지 산술 작업 개체 모델을 정의 합니다: 추가, 빼기, 곱하기, 및 분할 합니다. 호스트가 2 + 2와 같은 계산 수식을 사용 하 여 추가 기능에서 제공 하 고 추가 호스트에 결과 반환 합니다.  
   
- 버전 2는 계산기 추가 기능에 추가 계산 기능을 제공 하 고 버전 관리를 보여 줍니다. 설명한 것 [연습: 호스트 변경 내용으로 사용 하도록 설정 하면 이전 버전과 호환성](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)합니다.  
+ 버전 2는 계산기 추가 기능에 추가 계산 기능을 제공 하 고 버전 관리를 보여 줍니다. 에 설명 되어 [연습: 호스트 변경으로 이전 버전과 호환성을 사용 하도록 설정 하면](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 진행하려면 먼저 다음 작업을 수행해야 합니다.  
@@ -86,7 +86,7 @@ ms.locfileid: "50744615"
      파이프라인 폴더 구조에 응용 프로그램 폴더에 배치할 필요는 없습니다. 편의 위해 여기 수행 됩니다. 연습을 적절 한 단계에서 파이프라인 폴더 구조가 다른 위치에 코드를 변경 하는 방법에 설명 합니다. 디렉터리 요구 사항에 파이프라인의 설명을 참조 하세요 [파이프라인 개발 요구 사항](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)합니다.  
   
     > [!NOTE]
-    >  합니다 `CalcV2` 폴더는이 연습에서 사용 되지 않으므로 자리 표시자 [연습: 호스트 변경 내용으로 사용 하도록 설정 하면 이전 버전과 호환성](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)합니다.  
+    >  합니다 `CalcV2` 폴더는이 연습에서 사용 되지 않으므로 자리 표시자 [연습: 호스트 변경으로 이전 버전과 호환성을 사용 하도록 설정 하면](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)합니다.  
   
 ## <a name="creating-the-contract-and-views"></a>계약 및 뷰 만들기  
  이 파이프라인에 대 한 계약 세그먼트를 정의 합니다 `ICalc1Contract` 4 개의 메서드를 정의 하는 인터페이스: `add`를 `subtract`, `multiply`, 및 `divide`합니다.  
@@ -355,7 +355,7 @@ ms.locfileid: "50744615"
 4.  형식 **종료** 누릅니다 합니다 **Enter** 키 응용 프로그램을 닫습니다.  
   
 ## <a name="see-also"></a>참고 항목  
-- [연습: 호스트 변경으로 이전 버전과 호환성 설정](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
+- [연습: 호스트 변경으로 이전 버전과 호환성을 사용 하도록 설정](https://msdn.microsoft.com/library/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
 -  [연습: 호스트와 추가 기능 간의 컬렉션 전달](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5)  
 -  [파이프라인 개발 요구 사항](https://msdn.microsoft.com/library/ef9fa986-e80b-43e1-868b-247f4c1d9da5)  
 -  [계약, 뷰 및 어댑터](https://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c)  

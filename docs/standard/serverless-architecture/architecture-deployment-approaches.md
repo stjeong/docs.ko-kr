@@ -4,12 +4,12 @@ description: 다양 한 방법으로 엔터프라이즈 아키텍처에 대 한 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 6566971d8984ec046b8b5fa2db295c1d48c30b20
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 5477b8c4531780fdebf194e4f798564e59cd2953
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "49370214"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152671"
 ---
 # <a name="architecture-deployment-approaches"></a>아키텍처 배포 방법
 
@@ -166,5 +166,5 @@ Docker 컨테이너에 대 한 자세한 내용은 참조 하세요. [Docker 란
 * [Wingtip Tickets SaaS 응용 프로그램](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
 >[!div class="step-by-step"]
-[이전](architecture-approaches.md)
-[다음](serverless-architecture.md)
+>[이전](architecture-approaches.md)
+>[다음](serverless-architecture.md)

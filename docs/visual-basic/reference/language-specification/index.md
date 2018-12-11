@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual Basic code, specifications
 - specifications, Visual Basic
 ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
-ms.openlocfilehash: 6708ad107a2ee5b4ba2896d811c103ed49b476b8
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: afba7e742c665712ec41d62e8248e81d3b0d74cc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45970775"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153321"
 ---
 # <a name="visual-basic-language-specification"></a>Visual Basic 언어 사양
 Visual Basic 언어 사양 Visual Basic 문법 및 구문에 대 한 모든 질문에 대 한 답변에 대 한 믿을 만한 원본 됩니다. Visual Basic 참조 설명서에서 다루지 않은 여러 항목을 포함 하 여 언어에 대 한 자세한 정보가 있습니다.  
@@ -26,4 +26,4 @@ Visual Basic 언어 사양 Visual Basic 문법 및 구문에 대 한 모든 질�
  [Visual Basic 언어 참조](../../../visual-basic/language-reference/index.md)
 
 >[!div class="step-by-step"]
-[다음](../../../../_vblang/spec/introduction.md)
+>[다음](../../../../_vblang/spec/introduction.md)

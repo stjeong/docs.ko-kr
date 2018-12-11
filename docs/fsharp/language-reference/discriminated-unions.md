@@ -3,11 +3,11 @@ title: Discriminated Unions(F#)
 description: 사용 하는 방법을 알아봅니다 F# 구별 된 공용 구조체입니다.
 ms.date: 05/16/2016
 ms.openlocfilehash: f833539f2e31ffc6db4182bdbd2088e6dc2bb2cc
-ms.sourcegitcommit: 7f7664837d35320a0bad3f7e4ecd68d6624633b2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52672248"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154413"
 ---
 # <a name="discriminated-unions"></a>구별된 공용 구조체
 
@@ -39,7 +39,7 @@ type Shape =
     | Prism of width : float * float * height : float
 ```
 
-위의 코드는 선언 구별된 된 공용 구조체의 세 가지 경우 중 하나는 값을 포함할 수 있는 셰이프: 사각형, 원 및 프리즘 합니다. 각각의 경우에는 다른 필드 집합이 있습니다. 사각형 경우 두 개의 명명 된 필드의 형식은 모두 `float`, 이름 너비 및 길이가 있는 합니다. 원형 케이스는 하나의 명명 된 필드, 반지름입니다. 프리즘의 경우 세 개의 필드가 있는 (너비 및 높이)의 두 필드 라고 합니다. 명명 되지 않은 필드는 익명 필드 라고 합니다.
+위의 코드는 구별된 된 공용 구조체의 세 가지 경우 중 하나는 값을 포함할 수 있는 셰이프를 선언 합니다. 사각형, 원 및 프리즘 합니다. 각각의 경우에는 다른 필드 집합이 있습니다. 사각형 경우 두 개의 명명 된 필드의 형식은 모두 `float`, 이름 너비 및 길이가 있는 합니다. 원형 케이스는 하나의 명명 된 필드, 반지름입니다. 프리즘의 경우 세 개의 필드가 있는 (너비 및 높이)의 두 필드 라고 합니다. 명명 되지 않은 필드는 익명 필드 라고 합니다.
 
 다음 예제에 따라 명명 된 형식과 익명 필드에 대 한 값을 제공 하 여 개체를 생성 합니다.
 
@@ -173,6 +173,6 @@ Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000
 * `[NoComparison]`
 * `[Struct]`
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
