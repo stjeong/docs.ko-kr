@@ -2,14 +2,14 @@
 title: project.json에서 .NET Core 마이그레이션
 description: project.json을 사용하여 이전 .NET Core 프로젝트를 마이그레이션하는 방법 알아보기
 author: blackdwarf
-ms.author: mairaw
 ms.date: 07/19/2017
-ms.openlocfilehash: 47d9cab48d83581afb9deb2fd91c4c9a6dc85201
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: 40a0aaf9d687a580b83e11811effad458f708a85
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143287"
+ms.locfileid: "53170693"
 ---
 # <a name="migrating-net-core-projects-from-projectjson"></a>project.json에서 .NET Core 프로젝트 마이그레이션
 
@@ -60,7 +60,7 @@ project.json 및 csproj 형식 간을 비교하려면 [project.json 및 csproj �
 
 ### <a name="common-issues"></a>일반적인 문제
 
-- “No executable found matching command dotnet-migrate”(dotnet-migrate 명령과 일치하는 실행 파일을 찾을 수 없습니다.) 오류가 발생하는 경우 다음을 수행합니다.
+-  “No executable found matching command dotnet-migrate"(dotnet-migrate 명령과 일치하는 실행 파일을 찾을 수 없습니다.) 오류가 발생하는 경우 다음을 수행합니다.
 
 `dotnet --version`을 실행하여 사용 중인 버전을 확인합니다. [`dotnet migrate`](../tools/dotnet-migrate.md)을 사용하려면 .NET Core CLI RC3 이상이 필요합니다.
 *global.json* 파일이 현재 또는 상위 디렉터리에 있고 `sdk` 버전이 이전 버전으로 설정된 경우 이 오류가 발생합니다.
