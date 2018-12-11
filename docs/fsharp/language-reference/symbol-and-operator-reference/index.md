@@ -2,12 +2,12 @@
 title: 기호 및 연산자 참조(F#)
 description: 기호 및 연산자에 사용 되는 방법을 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 04/04/2018
-ms.openlocfilehash: f6f99f8fa563b71c935122c6f8597599c59b5c7f
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.openlocfilehash: a382400213aa288bb134faefd8ce747a7319a76f
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297334"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169874"
 ---
 # <a name="symbol-and-operator-reference"></a>기호 및 연산자 참조
 
@@ -61,7 +61,7 @@ ms.locfileid: "52297334"
 |`::`|[목록](../lists.md)<br /><br />[일치 식](../match-expressions.md)|<ul><li>목록을 만듭니다. 왼쪽의 요소가 오른쪽의 목록 앞에 추가됩니다.<br /></li><li>패턴 일치에서 목록의 파트를 구분하는 데 사용됩니다.<br /></li></ul>|
 |`:=`|[참조 셀](../reference-cells.md)|<ul><li>참조 셀에 값을 할당합니다.<br /></li></ul>|
 |`:>`|[캐스팅 및 변환](../casting-and-conversions.md)|<ul><li>특정 형식을 계층 구조의 상위 수준 형식으로 변환합니다.<br /></li></ul>|
-|`:?`|[일치 식](../match-expressions.md)|<ul><li>값이 지정한 형식과 일치하면 `true`를 반환하고 그렇지 않으면 `false`를 반환합니다(형식 테스트 연산자).<br /></li></ul>|
+|`:?`|[일치 식](../match-expressions.md)|<ul><li>반환 `true` 값 (하위 형식인 경우 포함); 지정 된 형식과 일치 하는 경우, 그렇지 `false` (형식 테스트 연산자).<br /></li></ul>|
 |`:?>`|[캐스팅 및 변환](../casting-and-conversions.md)|<ul><li>특정 형식을 계층 구조의 하위 수준 형식으로 변환합니다.<br /></li></ul>|
 |`;`|[자세한 구문](../verbose-syntax.md)<br /><br />[목록](../lists.md)<br /><br />[레코드](../records.md)|<ul><li>식을 구분합니다(대개 자세한 구문에서 사용됨).<br /></li><li>목록의 요소를 구분합니다.<br /></li><li>레코드의 필드를 구분합니다.<br /></li></ul>|
 |`<`|[산술 연산자](arithmetic-operators.md)|<ul><li>작음 연산을 계산합니다.<br /></li></ul>|
@@ -146,9 +146,10 @@ ms.locfileid: "52297334"
 |`.`|왼쪽|
 |`f(x)`|왼쪽|
 |`f<`*형식*`>`|왼쪽|
+
 F#에서는 사용자 지정 연산자 오버로드를 지원합니다. 즉, 고유한 연산자를 정의할 수 있습니다. 위의 표에서 *연산자*는 유효한 모든 연산자 문자 시퀀스(기본 제공 또는 사용자 정의)일 수 있으며 비어 있을 수도 있습니다. 따라서 이 표를 참조하여 원하는 수준의 우선 순위를 적용하기 위해 사용자 지정 연산자에 사용할 문자의 순서를 결정할 수 있습니다. 선행 `.` 문자는 컴파일러에서 우선 순위를 결정할 때 무시됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](../index.md)
 - [연산자 오버로드](../operator-overloading.md)
