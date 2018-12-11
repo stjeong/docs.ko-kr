@@ -2,21 +2,21 @@
 title: '방법: 트랜잭션 서비스 만들기'
 ms.date: 03/30/2017
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154
-ms.openlocfilehash: bba3a1f9c1d08e882cd5e4117c97f9f84d0c2be8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c4d2db0ca912be8840788bc363f86d621fa76e34
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509869"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245641"
 ---
 # <a name="how-to-create-a-transactional-service"></a>방법: 트랜잭션 서비스 만들기
 이 샘플에서는 트랜잭션 서비스 만들기의 다양한 측면과 함께, 클라이언트에서 시작한 트랜잭션을 사용하여 서비스 작업을 조정하는 방법을 보여 줍니다.  
   
 ### <a name="creating-a-transactional-service"></a>트랜잭션 서비스 만들기  
   
-1.  서비스 계약을 만들고 <xref:System.ServiceModel.TransactionFlowOption> 열거형에서 원하는 설정으로 작업에 주석을 추가하여 들어오는 트랜잭션의 요구 사항을 지정합니다. 구현 중인 서비스 클래스에도 <xref:System.ServiceModel.TransactionFlowAttribute>를 배치할 수 있습니다. 이렇게 하면 트랜잭션 설정을 모든 구현에서 사용하는 대신 단일 구현에서만 사용하게 됩니다.  
+1.  서비스 계약을 만들고 <xref:System.ServiceModel.TransactionFlowOption> 열거형에서 원하는 설정으로 작업에 주석을 달아 들어오는 트랜잭션의 요구 사항을 지정합니다. 구현 중인 서비스 클래스에도 <xref:System.ServiceModel.TransactionFlowAttribute>를 배치할 수 있습니다. 이렇게 하면 트랜잭션 설정을 모든 구현에서 사용하는 대신 단일 구현에서만 사용하게 됩니다.  
   
-    ```  
+    ```csharp
     [ServiceContract]  
     public interface ICalculator  
     {  
@@ -33,7 +33,7 @@ ms.locfileid: "43509869"
   
 2.  구현 클래스를 만들고 <xref:System.ServiceModel.ServiceBehaviorAttribute>를 사용하여 필요한 경우 <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> 및 <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A>을 지정할 수 있습니다. 대부분의 경우 <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A>의 기본값은 60초, <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A>의 기본값은 `Unspecified`가 적절합니다. 각 작업에 대해 <xref:System.ServiceModel.OperationBehaviorAttribute> 특성을 사용하여, 메서드 내에서 수행된 작업이 <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> 특성의 값에 따라 트랜잭션 범위 내에서 수행되어야 하는지 여부를 지정할 수 있습니다. 이 경우 `Add` 메서드에 사용된 트랜잭션은 클라이언트로부터 들어오는 필수 트랜잭션과 동일하며, `Subtract` 메서드에 사용된 트랜잭션은 트랜잭션이 클라이언트로부터 들어오는 경우 해당 트랜잭션과 동일하며, 그렇지 않은 경우 암시적으로 로컬에서 만들어진 새 트랜잭션과 동일합니다.  
   
-    ```  
+    ```csharp
     [ServiceBehavior(  
         TransactionIsolationLevel = System.Transactions.IsolationLevel.Serializable,  
         TransactionTimeout = "00:00:45")]  
@@ -43,7 +43,7 @@ ms.locfileid: "43509869"
         public double Add(double n1, double n2)  
         {  
             // Perform transactional operation  
-            RecordToLog(String.Format("Adding {0} to {1}", n1, n2));  
+            RecordToLog($"Adding {n1} to {n2}");
             return n1 + n2;  
         }  
   
@@ -51,7 +51,7 @@ ms.locfileid: "43509869"
         public double Subtract(double n1, double n2)  
         {  
             // Perform transactional operation  
-            RecordToLog(String.Format("Subtracting {0} from {1}", n2, n1));  
+            RecordToLog($"Subtracting {n2} from {n1}");
             return n1 - n2;  
         }  
   
@@ -128,7 +128,7 @@ ms.locfileid: "43509869"
   
 1.  기본적으로 WCF 작업 자동으로 트랜잭션을 완료할 경우 처리 되지 않은 예외가 throw 됩니다. <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> 속성 및 <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> 메서드를 사용하면 이 동작을 수정할 수 있습니다. debit 및 credit 연산 등 다른 연산과 동일한 트랜잭션 내에서 연산을 수행해야 하는 경우 다음 <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> 연산 예제에서처럼 `false` 속성을 `Debit`로 설정하여 autocomplete 동작을 비활성화할 수 있습니다. `Debit` 연산에서 사용하는 트랜잭션은 <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> 연산에서처럼 `true`로 설정된 `Credit1` 속성을 가진 메서드가 호출될 때까지 또는 <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> 연산에서처럼 트랜잭션 완료를 명시적으로 표시하기 위해 `Credit2` 메서드가 호출될 때까지 완료되지 않습니다. 설명의 목적으로 두 개의 credit 연산을 예로 들었지만 하나의 credit 연산이 보다 일반적입니다.  
   
-    ```  
+    ```csharp
     [ServiceBehavior]  
     public class CalculatorService : IAccount  
     {  
@@ -164,7 +164,7 @@ ms.locfileid: "43509869"
   
 2.  트랜잭션의 상관 관계를 위해 <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> 속성을 `false`로 설정하려면 세션 바인딩을 사용해야 합니다. 이 요구 사항은 `SessionMode`의 <xref:System.ServiceModel.ServiceContractAttribute> 속성을 사용하여 지정합니다.  
   
-    ```  
+    ```csharp
     [ServiceContract(SessionMode = SessionMode.Required)]  
     public interface IAccount  
     {  
@@ -184,7 +184,7 @@ ms.locfileid: "43509869"
   
 1.  WCF를 사용 하는 <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> 트랜잭션 완료 시 기본 서비스 인스턴스가 해제 될 지 여부를 지정 하는 속성입니다. 기본값은 이후 `true`WCF 우리는 효율적이 고 예측 가능한 "-just-in-time" 활성화 동작 구성이 고, 그렇지 않으면입니다. 후속 트랜잭션에서의 서비스에 대한 호출은 이전 트랜잭션 상태가 남아 있지 않은 새 서비스 인스턴스가 됩니다. 이는 대개의 경우에 유용하지만 때로는 트랜잭션 완료와 관계없이 서비스 인스턴스 내의 상태를 유지해야 하는 경우가 있습니다. 예를 들면 필요한 상태 또는 리소스에 대한 핸들을 검색하거나 다시 구성하는 데 비용이 많이 드는 경우입니다. <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> 속성을 `false`로 설정하면 서비스 인스턴스 내의 상태를 유지할 수 있습니다. 이렇게 설정하면 인스턴스 및 그와 관련된 모든 상태를 후속 호출에서 사용할 수 있습니다. 이 설정을 사용하는 경우에는 상태 및 트랜잭션을 지우고 완료하는 시기와 방법에 대해 주의 깊게 고려해야 합니다. 다음 샘플에서는 `runningTotal` 변수를 사용하여 인스턴스를 유지 관리함으로써 이 작업을 수행하는 방법을 보여 줍니다.  
   
-    ```  
+    ```csharp
     [ServiceBehavior(TransactionIsolationLevel = [ServiceBehavior(  
         ReleaseServiceInstanceOnTransactionComplete = false)]  
     public class CalculatorService : ICalculator  
@@ -195,7 +195,7 @@ ms.locfileid: "43509869"
         public double Add(double n)  
         {  
             // Perform transactional operation  
-            RecordToLog(String.Format("Adding {0} to {1}", n, runningTotal));  
+            RecordToLog($"Adding {n} to {runningTotal}");
             runningTotal = runningTotal + n;  
             return runningTotal;  
         }  
@@ -204,7 +204,7 @@ ms.locfileid: "43509869"
         public double Subtract(double n)  
         {  
             // Perform transactional operation  
-            RecordToLog(String.Format("Subtracting {0} from {1}", n, runningTotal));  
+            RecordToLog($"Subtracting {n} from {runningTotal}");
             runningTotal = runningTotal - n;  
             return runningTotal;  
         }  

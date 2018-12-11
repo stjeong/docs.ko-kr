@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ae2ea457-0764-4b06-8977-713c77e85bd2
-ms.openlocfilehash: c80f65ad2a4c7c48e32615c3cfdf754996f91bc1
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6fb1883812237c778e1ecfab3e86fb57de52efc5
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187873"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237963"
 ---
 # <a name="windows-applications-using-callbacks"></a>콜백을 사용하는 Windows 응용 프로그램
 대부분의 비동기 처리 시나리오에서 사용자는 데이터베이스 작업을 시작하면서 해당 데이터베이스 작업이 완료되기 전에 다른 프로세스를 계속해서 실행하고자 합니다. 그러나 많은 시나리오에서는 일단 데이터베이스 작업이 종료된 후 다른 작업을 수행해야 합니다. 예를 들어, Windows 응용 프로그램에서는 장기 실행 작업을 배경 스레드에 위임하면서 사용자 인터페이스 스레드가 응답을 유지하도록 할 수 있습니다. 그러나 데이터베이스 작업이 완료되면 결과를 사용하여 폼을 채웁니다. 이러한 종류의 시나리오는 콜백을 사용할 때 가장 효과적으로 구현됩니다.  
@@ -127,9 +127,7 @@ Imports System.Data.SqlClient
   
             Catch ex As Exception  
                 isExecuting = False  
-                DisplayStatus( _  
-                    String.Format("Ready (last error: {0})", _  
-                    ex.Message))  
+                DisplayStatus($"Ready (last error: {ex.Message})")
                 If connection IsNot Nothing Then  
                     connection.Close()  
                 End If  
@@ -183,7 +181,7 @@ Imports System.Data.SqlClient
             ' invoke it, like this:  
             Me.Invoke(New _  
                 DisplayInfoDelegate(AddressOf DisplayStatus), _  
-                String.Format("Ready(last error: {0}", ex.Message))  
+                $"Ready (last error: {ex.Message}")
         Finally  
             isExecuting = False  
             If connection IsNot Nothing Then  
@@ -301,8 +299,7 @@ private void button1_Click(object sender, System.EventArgs e)
         catch (Exception ex)  
         {  
             isExecuting = false;  
-            DisplayStatus(   
-             string.Format("Ready (last error: {0})", ex.Message));  
+            DisplayStatus($"Ready (last error: {ex.Message})");
             if (connection != null)  
             {  
                 connection.Close();  
@@ -358,7 +355,7 @@ private void HandleCallback(IAsyncResult result)
         // You can create the delegate instance as you   
         // invoke it, like this:  
         this.Invoke(new DisplayInfoDelegate(DisplayStatus),  
-        String.Format("Ready(last error: {0}", ex.Message));  
+            $"Ready (last error: {ex.Message}");
     }  
     finally  
     {  

@@ -58,7 +58,7 @@ Ahead-Of-Time 컴파일러입니다.
 
 .NET Core BCL(기본 클래스 라이브러리)
 
-System.*(및 제한된 범위의 Microsoft.*) 네임스페이스를 구성하는 라이브러리 집합입니다. BCL은 ASP.NET Core 같은 상위 수준 응용 프로그램 프레임워크의 기반이 되는 하위 수준의 범용 프레임워크입니다. .NET Core BCL의 소스 코드는 [CoreFX 리포지토리](https://github.com/dotnet/corefx)에 포함되어 있습니다. 그러나 대부분의 .NET Core API는 .NET Framework에서 사용할 수도 있으므로 CoreFX를 .NET Framework BCL의 포크로 생각할 수 있습니다.
+System.\* (및 제한된 범위의 Microsoft.\*) 네임스페이스를 구성하는 라이브러리 집합입니다. BCL은 ASP.NET Core 같은 상위 수준 응용 프로그램 프레임워크의 기반이 되는 하위 수준의 범용 프레임워크입니다. .NET Core BCL의 소스 코드는 [CoreFX 리포지토리](https://github.com/dotnet/corefx)에 포함되어 있습니다. 그러나 대부분의 .NET Core API는 .NET Framework에서 사용할 수도 있으므로 CoreFX를 .NET Framework BCL의 포크로 생각할 수 있습니다.
 
 ## <a name="corert"></a>CoreRT
 

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d1bd9a8c-0e29-40e3-bda8-d89176b72fb1
-ms.openlocfilehash: 8feffd5c3a6205dcb67072f8e17b0e771a0f0d6b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: b8e082b98870a59e8fb6f42fa7bedb86c2832d33
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144743"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245628"
 ---
 # <a name="updating-data-sources-with-dataadapters"></a>DataAdapter로 데이터 원본 업데이트
 `Update`의 <xref:System.Data.Common.DataAdapter> 메서드를 호출하면 <xref:System.Data.DataSet>의 변경 내용이 데이터 소스에 다시 적용됩니다. `Update` 메서드는 `Fill` 메서드와 마찬가지로 `DataSet`의 인스턴스, 선택적 <xref:System.Data.DataTable> 개체 또는 `DataTable` 이름을 인수로 사용합니다. `DataSet` 인스턴스는 변경 내용을 포함하는 `DataSet`이며 `DataTable`은 변경 내용을 검색할 테이블을 식별합니다. `DataTable`을 지정하지 않으면 `DataTable`의 첫 번째 `DataSet`이 사용됩니다.  
@@ -294,9 +294,9 @@ class Program {
   
       // Build the query string  
       String primaryCols = String.Join(",", primaryColumns.Select(col => col.ColumnName));  
-      String resetCols = String.Join(",", resetColumns.Select(col => "Max(" + col.ColumnName + ") as " + col.ColumnName));  
+      String resetCols = String.Join(",", resetColumns.Select(col => $"Max({col.ColumnName}) as {col.ColumnName}"));
   
-      String selectString = String.Format("Select {0},{1} from Course Group by {0}", primaryCols, resetCols);  
+      String selectString = $"Select {primaryCols},{resetCols} from Course Group by {primaryCols}");
   
       SqlCommand selectCommand = new SqlCommand(selectString);  
   

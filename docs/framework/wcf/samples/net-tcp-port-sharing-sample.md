@@ -2,12 +2,12 @@
 title: Net.TCP Port Sharing 샘플
 ms.date: 03/30/2017
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
-ms.openlocfilehash: db4cd5be73e3c170f2feaa1e76f275eb7d9cd226
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 7ddfb3340c010b57b78fa913601451b6a2af3674
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47089739"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235139"
 ---
 # <a name="nettcp-port-sharing-sample"></a>Net.TCP Port Sharing 샘플
 TCP/IP 프로토콜은 포트라는 16비트 숫자를 사용하여 동일한 컴퓨터에서 실행되는 여러 네트워크 응용 프로그램에 대한 연결을 구분합니다. 응용 프로그램이 포트에서 수신 대기 중이면 이 포트의 모든 TCP 트래픽이 해당 응용 프로그램으로 이동합니다. 다른 응용 프로그램이 동시에 이 포트에서 수신 대기할 수는 없습니다.  
@@ -25,7 +25,7 @@ TCP/IP 프로토콜은 포트라는 16비트 숫자를 사용하여 동일한 �
   
  NetTcp 포트 공유 비슷하게 여러 네트워크 응용 프로그램이 하나의 포트를 공유할 수 있도록 하는 Windows Communication Foundation (WCF) 기능입니다. NetTcp 포트 공유 서비스는 net.tcp 프로토콜을 사용하여 연결을 받은 다음 대상 주소를 기준으로 메시지를 전달합니다.  
   
- NetTcp 포트 공유 서비스는 기본적으로 사용되지 않습니다. 이 샘플을 실행하기 전에 수동으로 이 서비스를 사용하도록 설정해야 합니다. 자세한 내용은 [방법: Net.TCP Port Sharing Service를 사용 하도록 설정](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)합니다. 서비스를 사용하지 않으면 서버 응용 프로그램이 시작될 때 예외가 throw됩니다.  
+ NetTcp 포트 공유 서비스는 기본적으로 사용되지 않습니다. 이 샘플을 실행하기 전에 수동으로 이 서비스를 사용하도록 설정해야 합니다. 자세한 내용은 [방법: Net.TCP port Sharing Service](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)합니다. 서비스를 사용하지 않으면 서버 응용 프로그램이 시작될 때 예외가 throw됩니다.  
   
 ```  
 Unhandled Exception: System.ServiceModel.CommunicationException: The TransportManager failed to listen on the supplied URI using the NetTcpPortSharing service: failed to start the service because it is disabled. An administrator can enable it by running 'sc.exe config NetTcpPortSharing start= demand'.. ---> System.InvalidOperationException: Cannot start service NetTcpPortSharing on computer '.'. ---> System.ComponentModel.Win32Exception: The service cannot be started, either because it is disabled or because it has no enabled devices associated with it  
@@ -44,8 +44,7 @@ binding.PortSharingEnabled = true;
 // Start a service on a fixed TCP port  
 ServiceHost host = new ServiceHost(typeof(CalculatorService));  
 ushort salt = (ushort)new Random().Next();  
-string address =  
-   String.Format("net.tcp://localhost:9000/calculator/{0}", salt);  
+string address = $"net.tcp://localhost:9000/calculator/{salt}";
 host.AddServiceEndpoint(typeof(ICalculator), binding, address);  
 host.Open();  
 ```
@@ -66,7 +65,7 @@ class client
    {  
       Console.Write("Enter the service number to test: ");  
       ushort salt = ushort.Parse(Console.ReadLine());  
-      string address = String.Format("net.tcp://localhost:9000/calculator/{0}", salt);  
+      string address = $"net.tcp://localhost:9000/calculator/{salt}";
       ChannelFactory<ICalculator> factory = new ChannelFactory<ICalculator>(new NetTcpBinding());  
       ICalculator proxy = factory.CreateChannel(new EndpointAddress(address));  
   

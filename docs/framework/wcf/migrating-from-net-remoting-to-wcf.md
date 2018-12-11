@@ -2,12 +2,12 @@
 title: .NET Remoting에서 WCF로 마이그레이션
 ms.date: 03/30/2017
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
-ms.openlocfilehash: 91cbfa33c6645fbc0a8d9b513e3a59799114a710
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: cca303cf9b906fd395e594111fae808ae4ab6435
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200100"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245680"
 ---
 # <a name="migrating-from-net-remoting-to-wcf"></a>.NET Remoting에서 WCF로 마이그레이션
 이 문서에서는 WCF(Windows Communication Foundation)를 사용하기 위해 .NET Remoting을 사용하는 응용 프로그램을 마이그레이션하는 방법을 설명합니다. 이러한 제품 간의 비슷한 개념을 비교한 다음 WCF의 몇 가지 일반적인 Remoting 시나리오를 수행하는 방법을 설명합니다.  
@@ -89,8 +89,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
     serviceHost.AddServiceEndpoint(typeof(IWCFServer), binding, baseAddress);  
     serviceHost.Open();  
   
-    Console.WriteLine(String.Format("The WCF server is ready at {0}.",  
-                                    baseAddress));  
+    Console.WriteLine($"The WCF server is ready at {baseAddress}.");
     Console.WriteLine("Press <ENTER> to terminate service...");  
     Console.WriteLine();  
     Console.ReadLine();  
@@ -121,8 +120,7 @@ RemotingServer server = (RemotingServer)Activator.GetObject(
                             "tcp://localhost:8080/RemotingServer");  
   
 RemotingCustomer customer = server.GetCustomer(42);  
-Console.WriteLine(String.Format("Customer {0} {1} received.",   
-                                 customer.FirstName, customer.LastName));  
+Console.WriteLine($"Customer {customer.FirstName} {customer.LastName} received.");
 ```  
   
  Activator.GetObject()에서 반환된 RemotingServer 인스턴스는 "투명 프록시"라고 합니다. 클라이언트에 RemotingServer 형식의 공용 API를 구현하지만, 모든 메서드에서 다른 프로세스나 컴퓨터에서 실행 중인 서버 개체를 호출합니다.  
@@ -139,8 +137,7 @@ ChannelFactory<IWCFServer> channelFactory =
 IWCFServer server = channelFactory.CreateChannel();  
   
 Customer customer = server.GetCustomer(42);  
-Console.WriteLine(String.Format("  Customer {0} {1} received.",  
-                    customer.FirstName, customer.LastName));  
+Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received.");
 ```  
   
  이 예제는 Remoting 예제와 가장 비슷하므로 채널 수준의 프로그래밍을 보여 줍니다. 또한 사용할 수 있습니다는 **서비스 참조 추가** 클라이언트 프로그래밍을 간소화 하는 코드를 생성 하는 Visual Studio의 접근 방식입니다. 자세한 내용은 다음 항목을 참조하세요.  
@@ -269,8 +266,7 @@ try
 }  
 catch (FaultException<CustomerServiceFault> fault)  
 {  
-    Console.WriteLine(String.Format("Fault received: {0}",  
-    fault.Detail.ErrorMessage));  
+    Console.WriteLine($"Fault received: {fault.Detail.ErrorMessage}");
 }  
 ```  
   
@@ -307,7 +303,7 @@ catch (FaultException<CustomerServiceFault> fault)
   
 -   **(선택 사항) 오류 계약을 만듭니다.** 오류가 발생하면 서버와 클라이언트 간에 교환될 유형을 만듭니다. 이러한 형식을 직렬화할 수 있도록 [DataContract] 및 [DataMember]로 표시합니다. [OperationContract]로 표시한 모든 서비스 작업도 [FaultContract]로 표시하여 해당 작업에서 반환할 수 있는 오류를 표시합니다.  
   
--   **구성 하 고 서비스를 호스트 합니다.** 서비스 계약이 생성되면 다음 단계는 엔드포인트에 서비스를 노출하도록 바인딩을 구성하는 것입니다. 자세한 내용은 [끝점: 주소, 바인딩 및 계약](./feature-details/endpoints-addresses-bindings-and-contracts.md)합니다.  
+-   **구성 하 고 서비스를 호스트 합니다.** 서비스 계약이 생성되면 다음 단계는 엔드포인트에 서비스를 노출하도록 바인딩을 구성하는 것입니다. 자세한 내용은 참조 하세요. [끝점: 주소, 바인딩 및 계약](./feature-details/endpoints-addresses-bindings-and-contracts.md)합니다.  
   
  Remoting 응용 프로그램이 WCF로 마이그레이션된 후에도 .NET Remoting에서 종속성을 제거하는 것이 중요합니다. 그러면 응용 프로그램에서 Remoting의 취약성이 제거됩니다. 이 단계에는 다음이 포함됩니다.  
   
@@ -343,7 +339,7 @@ public class RemotingServer : MarshalByRefObject
 }  
 ```  
   
-#### <a name="scenario-1-service-returns-an-object-by-value"></a>시나리오 1: 서비스에서 값 방식으로 개체 반환  
+#### <a name="scenario-1-service-returns-an-object-by-value"></a>시나리오 1: 서비스 값으로 개체를 반환합니다.  
  이 시나리오에서는 값 방식으로 클라이언트에 개체를 반환하는 서버를 설명합니다. WCF에서는 항상 값 방식으로 서버에서 개체를 반환하므로, 다음 단계는 단순히 일반적인 WCF 서비스를 빌드하는 방법만 설명합니다.  
   
 1.  WCF 서비스의 공용 인터페이스를 정의하여 시작한 다음 [ServiceContract] 특성으로 표시합니다. 여기서는 [OperationContract]를 사용하여 클라이언트에서 호출할 서버 측 메서드를 식별합니다.  
@@ -442,7 +438,7 @@ public class RemotingServer : MarshalByRefObject
     </configuration>  
     ```  
   
-     사용에 대 한 자세한 내용은 **서비스 참조 추가**를 참조 하십시오 [방법: 추가, 업데이트 또는 서비스 참조를 제거](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)합니다.  
+     사용에 대 한 자세한 내용은 **서비스 참조 추가**를 참조 하세요 [방법: 추가, 업데이트 또는 서비스 참조를 제거](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)합니다.  
   
 7.  이제 클라이언트에서 WCF 서비스를 호출할 수 있습니다. 해당 서비스의 채널 팩터리를 만들고, 채널을 요청한 다음, 해당 채널에서 원하는 메서드를 직접 호출하여 수행할 수 있습니다. 채널에서 서비스의 인터페이스를 구현하고 기본 요청/응답 논리를 처리하므로 가능합니다. 이 메서드 호출의 반환 값은 역직렬화된 서버 응답 복사본입니다.  
   
@@ -451,13 +447,12 @@ public class RemotingServer : MarshalByRefObject
        new ChannelFactory<ICustomerService>("customerservice");  
    ICustomerService service = factory.CreateChannel();  
    Customer customer = service.GetCustomer(42);  
-   Console.WriteLine(String.Format("  Customer {0} {1} received.",  
-           customer.FirstName, customer.LastName));  
+   Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received.");
    ```  
   
  WCF를 통해 서버에서 클라이언트에 반환하는 개체는 항상 값 방식을 사용합니다. 개체는 서버에서 보낸 데이터의 역직렬화된 복사본입니다. 클라이언트에서 콜백을 통해 서버 코드를 호출하는 위험 없이 이러한 로컬 복사본에서 메서드를 호출할 수 있습니다.  
   
-#### <a name="scenario-2-server-returns-an-object-by-reference"></a>시나리오 2: 서버에서 참조 방식으로 개체 반환  
+#### <a name="scenario-2-server-returns-an-object-by-reference"></a>시나리오 2: 서버 참조 하 여 개체를 반환합니다.  
  이 시나리오에서는 참조 방식으로 클라이언트에 개체를 제공하는 서버를 설명합니다. .NET Remoting에서는 참조 방식으로 직렬화되는 MarshalByRefObject에서 파생된 모든 형식에 대해 자동으로 처리됩니다. 이 시나리오의 예제에서는 여러 클라이언트에 개별 세션 서버 측 개체가 있을 수 있습니다. 앞서 설명한 것처럼, WCF 서비스에서 반환된 개체는 언제나 값 방식을 사용하므로 직접적으로 대응되는 참조 방식 개체가 없지만 <xref:System.ServiceModel.EndpointAddress10> 개체를 사용하여 참조 방식 의미 체계와 비슷한 작업을 수행할 수 있습니다. 이는 서버에서 세션 참조 방식 개체를 가져오기 위해 클라이언트에서 사용할 수 있는 직렬화 가능 값 방식 개체입니다. 따라서 개별 세션 서버 측 개체가 있는 클라이언트가 여러 개인 시나리오가 가능하게 됩니다.  
   
 1.  먼저 세션 개체 자체에 해당하는 WCF 서비스 계약을 정의해야 합니다.  
@@ -640,7 +635,7 @@ public class RemotingServer : MarshalByRefObject
   
  WCF에서는 언제나 값 방식으로 개체를 반환하지만, EndpointAddress10을 사용하여 상응하는 참조 방식 의미 체계를 지원할 수 있습니다. 그러면 클라이언트에서 세션 WCF 서비스 인스턴스를 요청할 수 있으므로 다른 WCF 서비스와 마찬가지로 상호 작용할 수 있습니다.  
   
-#### <a name="scenario-3-client-sends-server-a-by-value-instance"></a>시나리오 3: 클라이언트에서 서버에 값 방식 인스턴스 전송  
+#### <a name="scenario-3-client-sends-server-a-by-value-instance"></a>시나리오 3: 클라이언트 전송 서버 값으로 인스턴스  
  이 시나리오에서는 기본 형식이 아닌 개체 인스턴스를 값 방식으로 서버에 보내는 클라이언트를 설명합니다.  WCF에서는 값 방식으로만 개체를 전송하므로 이 시나리오에서는 일반 WCF 사용을 설명합니다.  
   
 1.  시나리오 1과 동일한 WCF 서비스를 사용합니다.  
@@ -657,7 +652,7 @@ public class RemotingServer : MarshalByRefObject
    CustomerId = 43,   
    AccountId = 99};  
    bool success = service.UpdateCustomer(customer);  
-   Console.WriteLine(String.Format("  Server returned {0}.", success));  
+   Console.WriteLine($"  Server returned {success}.");
    ```  
   
      Customer 개체가 직렬화되어 서버에 전송되면 이 서버에서 해당 개체의 새 복사본으로 역직렬화됩니다.  

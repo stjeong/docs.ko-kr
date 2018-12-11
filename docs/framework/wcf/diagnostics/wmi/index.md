@@ -2,12 +2,12 @@
 title: 진단에 Windows Management Instrumentation 사용
 ms.date: 03/30/2017
 ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
-ms.openlocfilehash: 91d126eb75c9cac2823b756010351dd692b2e24e
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: a5dae1479c9be7954b9eec1eed197f358eb48e4f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453218"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239516"
 ---
 # <a name="using-windows-management-instrumentation-for-diagnostics"></a>진단에 Windows Management Instrumentation 사용
 Windows Communication Foundation (WCF) WCF Windows Management Instrumentation (WMI) 공급자를 통해 런타임으로 서비스 검사 데이터를 노출 합니다.  
@@ -172,8 +172,7 @@ Whoami /user
  <xref:System.Management> 네임스페이스에서 제공한 클래스를 사용하여 원격 WMI 인스턴스를 프로그래밍 방식으로 액세스할 수도 있습니다. 다음 코드 샘플에서는 이를 수행하는 방법을 보여 줍니다.  
   
 ```csharp
-String wcfNamespace = String.Format(@"\\{0}\Root\ServiceModel",      
-   this.serviceMachineName);  
+String wcfNamespace = $@"\\{this.serviceMachineName}\Root\ServiceModel");
   
 ConnectionOptions connection = new ConnectionOptions();  
 connection.Authentication = AuthenticationLevel.PacketPrivacy;  
