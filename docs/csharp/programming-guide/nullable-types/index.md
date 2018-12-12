@@ -1,5 +1,6 @@
 ---
-title: nullable 형식(C# 프로그래밍 가이드)
+title: nullable 형식 - C# 프로그래밍 가이드
+ms.custom: seodec18
 description: C# nullable 형식 및 사용 방법 알아보기
 ms.date: 07/30/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - C# language, nullable types
 - types [C#], nullable
 ms.assetid: e473cb01-28ca-42be-9cea-f717055d72c6
-ms.openlocfilehash: 2af0704abcad00c75a5d40bfe2d0523d07ee6a3f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: cd5ac40ca73f7c528a903d5863f3cf5880738f11
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45658706"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245132"
 ---
 # <a name="nullable-types-c-programming-guide"></a>nullable 형식(C# 프로그래밍 가이드)
 
@@ -52,7 +53,7 @@ null 허용 형식은 다음 특성을 갖습니다.
   
 - 중첩된 null 허용 형식은 허용되지 않습니다. 다음 줄은 컴파일되지 않습니다. `Nullable<Nullable<int>> n;`  
 
-자세한 내용은 [nullable 형식 사용](using-nullable-types.md) 및 [방법: nullable 형식 식별](how-to-identify-a-nullable-type.md) 항목을 참조하세요.
+자세한 내용은 [Nullable 형식 사용](using-nullable-types.md) 및 [방법: Nullable 형식 식별](how-to-identify-a-nullable-type.md) 항목을 참조하세요.
   
 ## <a name="see-also"></a>참고 항목
 

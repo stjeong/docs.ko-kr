@@ -1,16 +1,16 @@
 ---
 title: .NET Core 및 .NET Standard의 단위 테스트
-description: .NET Core 및 .NET Standard 프로젝트의 단위 테스트
+description: 이 문서에서는 .NET Core 및 .NET Standard 프로젝트에 대한 단위 테스트의 간략한 개요를 제공합니다.
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
 ms.custom: seodec18
-ms.openlocfilehash: b63b2706a9a97413a7166c87ae25cbe964e4610b
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 3fdacd5beb2c6cbfc631d58e99a8741f7a6b233c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170017"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243983"
 ---
 # <a name="unit-testing-in-net-core-and-net-standard"></a>.NET Core 및 .NET Standard의 단위 테스트
 
@@ -30,6 +30,8 @@ C#, F# 및 Visual Basic에서 개인 프로젝트에 대한 시작점으로 기�
 > ASP.NET 팀은 [이러한 규칙](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests)을 따라 개발자가 테스트 클래스 및 메서드에 대해 적절한 이름을 제공할 수 있도록 합니다.
 
 단위 테스트를 작성하는 경우 인프라에 대한 종속성을 도입하지 않습니다. 테스트가 느리고 불안정해지며 통합 테스트를 위해 예약되어야 합니다. [명시적 종속성 원칙](https://deviq.com/explicit-dependencies-principle/)을 따르고 [종속성 주입](/aspnet/core/fundamentals/dependency-injection)을 사용하여 애플리케이션에서 이러한 종속성을 방지할 수 있습니다. 통합 테스트의 개별 프로젝트에서 단위 테스트를 유지할 수도 있습니다. 이렇게 하면 단위 테스트 프로젝트가 인프라 패키지에 대한 참조 또는 종속성을 갖지 않습니다.
+
+## <a name="next-steps"></a>다음 단계
 
 .NET Core 프로젝트의 단위 테스트에 대한 자세한 내용:
 

@@ -1,16 +1,17 @@
 ---
-title: 인터페이스(C# 프로그래밍 가이드)
+title: 인터페이스 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords:
 - interfaces [C#]
 - C# language, interfaces
 ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
-ms.openlocfilehash: ce4580f9fab80cc85a281786d5de262d8de7a679
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 33e3feb874b8ddb13788a2a3a2bb69a199335e54
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181516"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245443"
 ---
 # <a name="interfaces-c-programming-guide"></a>인터페이스(C# 프로그래밍 가이드)
 
@@ -71,7 +72,7 @@ ms.locfileid: "50181516"
 
 - [인터페이스 속성](../classes-and-structs/interface-properties.md)  
 - [인터페이스의 인덱서](../indexers/indexers-in-interfaces.md)  
-- [방법: 인터페이스 이벤트 구현](../events/how-to-implement-interface-events.md)  
+- [방법:  인터페이스 이벤트 구현](../events/how-to-implement-interface-events.md)  
 - [클래스 및 구조체](../classes-and-structs/index.md)  
 - [상속](../classes-and-structs/inheritance.md)  
 - [메서드](../classes-and-structs/methods.md)  
@@ -83,7 +84,7 @@ ms.locfileid: "50181516"
   
 ## <a name="featured-book-chapter"></a>중요 설명서 장
 
-[Interfaces](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652489%28v%3Dorm.10%29) in [Learning C# 3.0: Master the Fundamentals of C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v%253dorm.10%29)
+[C# 3.0 학습: C# 3.0의 기본 사항 마스터](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v%253dorm.10%29)의 [인터페이스](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652489%28v%3Dorm.10%29)
 
 ## <a name="see-also"></a>참고 항목
 
