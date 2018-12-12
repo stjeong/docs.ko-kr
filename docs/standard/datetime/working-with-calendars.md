@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 055c7db652426651dd3c2a74825a11e305d939f1
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: b6f759523acab1a248b92c69b95227b878696bbf
+ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183908"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53286587"
 ---
 # <a name="working-with-calendars"></a>달력 작업
 
@@ -137,6 +137,9 @@ ms.locfileid: "50183908"
 
 달력에서 날짜는 일반적으로 연대로 구분됩니다. 그러나 합니다 <xref:System.Globalization.Calendar> .net에서 클래스, 일정 및 대부분의 정의 된 모든 연대가 지원 하지는 <xref:System.Globalization.Calendar> 클래스에서는 단일 연대만 지원 합니다. <xref:System.Globalization.JapaneseCalendar> 및 <xref:System.Globalization.JapaneseLunisolarCalendar> 클래스에서만 여러 연대가 지원됩니다.
 
+> [!IMPORTANT]
+>  새로운 시대에는 <xref:System.Globlalization.JapaneseCalendar> 고 <xref:System.Globalization.JapaneseLunisolarCalendar> 2019 년 5 월 1 일에 시작 합니다. 이 변경에는 이러한 달력을 사용 하는 모든 응용 프로그램에 적용 합니다. 참조 [일본식 달력.net에서의 새로운 시대 처리](https://blogs.msdn.microsoft.com/dotnet/2018/11/14/handling-a-new-era-in-the-japanese-calendar-in-net/) 자세한 내용 및 응용 프로그램에 영향을 받는지 여부를 확인 합니다. 참조 [일본어 연대 변경에 대 한 응용 프로그램 준비](~/windows/uwp/design/globalizing/japanese-era-change) 연대 변경 될 준비가 되었는지 확인 하려면 Windows에서 응용 프로그램 테스트에 대 한 정보에 대 한 합니다.
+
 ### <a name="eras-and-era-names"></a>연대 및 연대 이름
 
 .NET에서는 특정 달력 구현에서 지원 되는 연대를 나타내는 정수에 역순으로 저장 되는 <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> 배열입니다. 현재 연대는 0번 인덱스에 있으며, 여러 연대를 지원하는 <xref:System.Globalization.Calendar> 클래스의 경우 각 연속되는 인덱스에 이전 연대가 반영됩니다. 정적 <xref:System.Globalization.Calendar.CurrentEra?displayProperty=nameWithType> 속성은 <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> 배열에서 현재 연대의 인덱스를 정의하며 값이 항상 0인 상수입니다. 개별 <xref:System.Globalization.Calendar> 클래스에는 또한 현재 연대의 값을 반환하는 정적 필드가 포함됩니다. 이러한 필드는 다음 표에 나열되어 있습니다.
@@ -191,7 +194,7 @@ ms.locfileid: "50183908"
 [!code-csharp[Conceptual.Calendars#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings3.cs#10)]
 [!code-vb[Conceptual.Calendars#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings3.vb#10)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 * [방법: 그레고리오 력이 아닌 달력의 날짜 표시](../../../docs/standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md)
-* [샘플: Calendar week 범위 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)
+* [샘플: Calendar week range 유틸리티](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)

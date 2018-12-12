@@ -2,12 +2,12 @@
 title: F#코드 서식 지정 지침
 description: 서식 지정에 대 한 지침을 알아보려면 F# 코드입니다.
 ms.date: 11/26/2018
-ms.openlocfilehash: 993ba8d42570d92789a9fc1967b8185b45643d56
-ms.sourcegitcommit: 2151690e10d91545e2c20d6b5ad222c162b6b83d
+ms.openlocfilehash: edaa8c8b759377e71fcba705b30e8af9a8c2a716
+ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "43858007"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53286548"
 ---
 # <a name="f-code-formatting-guidelines"></a>F#코드 서식 지정 지침
 
@@ -343,16 +343,23 @@ type PostalAddress =
     }
 ```
 
-열기 토큰을 새 줄에 닫는 토큰과 같은 줄 배치도 정상 이지만 사용 해야 합니다 [자세한 구문](../language-reference/verbose-syntax.md) 멤버를 정의 (의 `with` 키워드):
+열기 토큰을 새 줄의 닫는 토큰을 새 줄에 배치 하는 것은 레코드에서 인터페이스 구현 또는 멤버를 선언 하는 것 보다 좋습니다.
 
 ```fsharp
-//  OK, but verbose syntax required
-type PostalAddress = { 
-    Address: string
-    City: string
-    Zip: string
-} with
+// Declaring additional members on PostalAddress
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string
+    } with
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    
+type MyRecord =
+    {
+        SomeField : int
+    }
+    interface IMyInterface
 ```
 
 ## <a name="formatting-records"></a>레코드 형식
@@ -371,27 +378,51 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-새 줄에 닫는 토큰과 같은 줄에 여 토큰을 배치 해도 됩니다.
+배치를 여는 새 줄에 토큰 콘텐츠 탭 하나를 통해 범위 하 고 새 줄에 닫는 토큰은 경우에 따라서:
+
+* 다양 한 들여쓰기 범위를 사용 하 여 코드 내에서 레코드를 이동
+* 함수에 파이프 하
 
 ```fsharp
-let rainbow = {
-    Boss1 = "Jeffrey"
-    Boss2 = "Jeffrey"
-    Boss3 = "Jeffrey"
-    Boss4 = "Jeffrey"
-    Boss5 = "Jeffrey"
-    Boss6 = "Jeffrey"
-    Boss7 = "Jeffrey"
-    Boss8 = "Jeffrey"
-    Lackeys = ["Zippy"; "George"; "Bungle"]
-}
+let rainbow =
+    {
+        Boss1 = "Jeffrey"
+        Boss2 = "Jeffrey"
+        Boss3 = "Jeffrey"
+        Boss4 = "Jeffrey"
+        Boss5 = "Jeffrey"
+        Boss6 = "Jeffrey"
+        Boss7 = "Jeffrey"
+        Boss8 = "Jeffrey"
+        Lackeys = ["Zippy"; "George"; "Bungle"]
+    }
+    
+type MyRecord =
+    {
+        SomeField : int
+    }
+    interface IMyInterface
+
+let foo a =
+    a
+    |> Option.map (fun x ->
+        {
+            MyField = x
+        })
 ```
 
 목록 및 배열 요소에 대 한 동일한 규칙이 적용 됩니다.
 
 ## <a name="formatting-lists-and-arrays"></a>서식 지정 목록 및 배열
 
-쓰기 `x :: l` 주위에 공백을 사용 하 여는 `::` 연산자 (`::` 는 공백으로 둘러싸인 따라서 중 위 연산자,) 및 `[1; 2; 3]` (`;` 는 구분 기호, 공백 뒤에 있으므로).
+작성할 `x :: l` 주위에 공백을 사용 하 여 합니다 `::` 연산자 (`::` 는 공백으로 둘러싸인 따라서 중 위 연산자,)입니다.
+
+목록과 배열 선언 줄에 여는 괄호 뒤와 닫는 괄호 앞에 공백이 있어야 합니다.
+
+```fsharp
+let xs = [ 1; 2; 3 ]
+let ys = [| 1; 2; 3; |]
+```
 
 항상 두 명의 고유 중괄호 같은 연산자 사이 하나 이상의 공백을 사용 합니다. 예를 들어 사이 공백을 둡니다를 `[` 및 `{`합니다.
 
@@ -414,18 +445,21 @@ let rainbow = {
 목록 및 여러 줄 분할 되는 배열 레코드와 마찬가지로 비슷한 규칙을 따릅니다.
 
 ```fsharp
-let pascalsTriangle = [|
-    [|1|]
-    [|1; 1|]
-    [|1; 2; 1|]
-    [|1; 3; 3; 1|]
-    [|1; 4; 6; 4; 1|]
-    [|1; 5; 10; 10; 5; 1|]
-    [|1; 6; 15; 20; 15; 6; 1|]
-    [|1; 7; 21; 35; 35; 21; 7; 1|]
-    [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
-|]
+let pascalsTriangle =
+    [|
+        [|1|]
+        [|1; 1|]
+        [|1; 2; 1|]
+        [|1; 3; 3; 1|]
+        [|1; 4; 6; 4; 1|]
+        [|1; 5; 10; 10; 5; 1|]
+        [|1; 6; 15; 20; 15; 6; 1|]
+        [|1; 7; 21; 35; 35; 21; 7; 1|]
+        [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
+    |]
 ```
+
+와 레코드와 마찬가지로 자체 줄에 여는 태그와 닫는 괄호를 선언 보다 쉽게 이동 코딩 및 함수에 파이핑 합니다.
 
 ## <a name="formatting-if-expressions"></a>경우에 형식 지정 식
 

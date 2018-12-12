@@ -7,12 +7,12 @@ helpviewer_keywords:
 - fundamentals [WCF]
 - Windows Communication Foundation [WCF], concepts
 ms.assetid: 3e7e0afd-7913-499d-bafb-eac7caacbc7a
-ms.openlocfilehash: c19169d61a96314e9fcfad94b013af18440e1ff5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9957b937dd59f82a5d1962fee33593d7a0c1b7c1
+ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43503616"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53286561"
 ---
 # <a name="fundamental-windows-communication-foundation-concepts"></a>기본적인 Windows Communication Foundation 개념
 이 문서에서는 Windows Communication Foundation (WCF) 아키텍처의 상위 수준 보기를 제공 합니다. 또한 핵심 개념 및 이러한 개념이 서로 어떻게 연결되는지에 대해 설명합니다. WCF 서비스 및 클라이언트의 가장 간단한 버전을 만드는 방법에 대 한 자습서를 참조 하세요 [초보자를 위한 자습서](../../../docs/framework/wcf/getting-started-tutorial.md)합니다. WCF 프로그래밍에 알아보려면 [기본 WCF 프로그래밍](../../../docs/framework/wcf/basic-wcf-programming.md)합니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "43503616"
  하나 이상의 엔드포인트를 노출하는 구문이며 각 엔드포인트는 하나 이상의 서비스 작업을 노출합니다.  
   
  엔드포인트(endpoint)  
- 메시지가 전송 및/또는 수신되는 구문입니다. 끝점은 메시지가 전송될 수 있는 장소를 정의하는 위치(주소), 메시지가 전송되는 방법을 설명하는 통신 메커니즘의 사양(바인딩) 및 전송될 수 있는 메시지를 설명하는 위치에서 전송 및/또는 수신될 수 있는 메시지 집합의 정의(서비스 계약)로 구성됩니다.  
+ 메시지가 전송 및/또는 수신되는 구문입니다. 이때 메시지를 보낼 수 있는, 메시지 전송 되는 방법을 설명 하는 통신 메커니즘 (바인딩)의 사양을 정의 하는 위치 (주소) 및 전송 되거나 수신 될 수 있는 메시지 집합에 대 한 정의 (또는 둘 다) 구성 위치 (서비스 계약)는 어떤 메시지를 보낼 수에 대해 설명 합니다.  
   
  WCF 서비스는 엔드포인트 컬렉션으로 전역에 노출됩니다.  
   
@@ -144,7 +144,7 @@ HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
  전송 계층 메커니즘(예: HTTPS)에 의해 제공되는 기밀성, 무결성 및 인증을 지정합니다. HTTPS와 같은 전송을 사용하면 이 모드는 성능이 효율적이며 인터넷에서 널리 사용되기 때문에 이해하기 쉽습니다. 단점은 이러한 종류의 보안이 통신 경로의 각 홉에서 개별적으로 적용되기 때문에 통신이 "메시지 가로채기(man in the middle)" 공격을 받기 쉽습니다.  
   
  메시지 보안 모드  
- 사양과 같은 하나 이상의 보안 사양을 구현 하 여 보안을 제공 하도록 지정 [Web Services Security: SOAP Message Security](https://go.microsoft.com/fwlink/?LinkId=94684)합니다. 각 메시지에는 전송 중에 보안을 제공하고 수신자가 변조를 감지하거나 메시지를 해독하는 데 필요한 메커니즘이 포함되어 있습니다. 따라서 보안은 모든 메시지 내에 캡슐화되어 여러 홉 전반에 걸쳐 종단 간 보안을 제공합니다. 있기 때문에 보안 정보를 사용 하면 메시지의 일부가도 여러 종류의 메시지를 사용 하 여 자격 증명을 포함 하도록 (이러한 이라고 *클레임*). 또한 이러한 접근 방식은 원본 및 대상 간 여러 전송을 포함하여 메시지가 전송을 통해 안전하게 전달될 수 있는 이점이 있습니다. 그러나 관련 암호화 메커니즘이 복잡하기 때문에 성능이 떨어질 수 있다는 단점이 있습니다.  
+ 사양과 같은 하나 이상의 보안 사양을 구현 하 여 보안을 제공 하도록 지정 [Web Services Security: SOAP 메시지 보안](https://go.microsoft.com/fwlink/?LinkId=94684)합니다. 각 메시지에는 전송 중에 보안을 제공하고 수신자가 변조를 감지하거나 메시지를 해독하는 데 필요한 메커니즘이 포함되어 있습니다. 따라서 보안은 모든 메시지 내에 캡슐화되어 여러 홉 전반에 걸쳐 종단 간 보안을 제공합니다. 있기 때문에 보안 정보를 사용 하면 메시지의 일부가도 여러 종류의 메시지를 사용 하 여 자격 증명을 포함 하도록 (이러한 이라고 *클레임*). 또한 이러한 접근 방식은 원본 및 대상 간 여러 전송을 포함하여 메시지가 전송을 통해 안전하게 전달될 수 있는 이점이 있습니다. 그러나 관련 암호화 메커니즘이 복잡하기 때문에 성능이 떨어질 수 있다는 단점이 있습니다.  
   
  메시지 자격 증명을 사용한 전송 보안 모드  
  전송 계층을 사용하여 메시지 기밀성, 인증 및 무결성을 제공하도록 지정합니다. 각 메시지에는 메시지 수신자에게 필요한 여러 자격 증명(클레임)이 포함될 수 있습니다.  
