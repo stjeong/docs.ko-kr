@@ -1,6 +1,6 @@
 ---
 title: F# 컬렉션 형식
-description: F# 컬렉션 형식 및.NET Framework의 컬렉션 형식에서 서로 어떻게에 대해 알아봅니다.
+description: 'F # 컬렉션 형식 및.NET Framework의 컬렉션 형식에서 서로 어떻게에 대해 알아봅니다.'
 ms.date: 05/16/2016
 ms.openlocfilehash: a3cfc3f06582c31a79dce43b583eca39f69ddf1e
 ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
@@ -11,13 +11,13 @@ ms.locfileid: "43864763"
 ---
 # <a name="f-collection-types"></a>F# 컬렉션 형식
 
-이 항목을 검토 하 여 F# 컬렉션 형식을 최상의 특정 요구에 적합 한 것을 확인할 수 있습니다. 같은.NET framework에서 컬렉션 형식에서 이러한 컬렉션 형식이 다를 `System.Collections.Generic` 네임 스페이스는 개체 지향 측면 보다는 기능을 프로그래밍 관점에서 설계 된 F# 컬렉션 형식에 합니다. 보다 구체적으로, 배열 컬렉션만 요소가 변경할 수 있습니다. 따라서 컬렉션을 수정 하면 원래 컬렉션을 변경 하는 대신 수정 된 컬렉션의 인스턴스를 만듭니다.
+이 항목을 검토 하 여 F # 컬렉션 형식을 최상의 특정 요구에 적합 한 것을 확인할 수 있습니다. 같은.NET framework에서 컬렉션 형식에서 이러한 컬렉션 형식이 다를 `System.Collections.Generic` 네임 스페이스는 개체 지향 측면 보다는 기능을 프로그래밍 관점에서 설계 된 F # 컬렉션 형식에 합니다. 보다 구체적으로, 배열 컬렉션만 요소가 변경할 수 있습니다. 따라서 컬렉션을 수정 하면 원래 컬렉션을 변경 하는 대신 수정 된 컬렉션의 인스턴스를 만듭니다.
 
 컬렉션 형식 개체 저장 되는 데이터 구조체의 형식 차이점도 있습니다. 해시 테이블, 연결 된 목록 및 배열과 같은 데이터 구조에는 다양 한 성능 특성 및 다른 사용 가능한 작업 집합입니다.
 
 ## <a name="f-collection-types"></a>F# 컬렉션 형식
 
-다음 표에서 F# 컬렉션 형식입니다.
+다음 표에서 F # 컬렉션 형식입니다.
 
 |형식|설명|관련 링크|
 |----|-----------|-------------|
@@ -25,11 +25,11 @@ ms.locfileid: "43864763"
 |[배열](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1)|동일한 형식의 모든 연속 데이터 요소의 고정 크기 이며 0부터 시작 변경 가능한 컬렉션입니다.|[배열](arrays.md)<br /><br />[Array 모듈](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1)<br /><br />[Array2D 모듈](https://msdn.microsoft.com/library/ae1a9746-7817-4430-bcdb-a79c2411bbd3)<br /><br />[Array3D 모듈](https://msdn.microsoft.com/library/c8355e2d-add8-48a4-8aa6-1c57ae74c560)|
 |[seq](https://msdn.microsoft.com/library/2f0c87c6-8a0d-4d33-92a6-10d1d037ce75)|한 형식의 모든 있는 요소의 논리적으로 연속입니다. 시퀀스는 대규모 데이터의 컬렉션을 정렬 있지만 필요 하지 않을 요소를 사용 하는 경우에 특히 유용 합니다. 모든 요소를 사용 하는 없으면 시퀀스 목록을 보다 더 잘 수행할 수 있도록 개별 시퀀스 요소로만 계산 됩니다 필요 합니다. 시퀀스가 표시 됩니다는 `seq<'T>` 별칭인 형식에 대 한 `IEnumerable<T>`합니다. 구현 하는.NET Framework 형식 따라서 `System.Collections.Generic.IEnumerable<'T>` 시퀀스로 사용할 수 있습니다.|[시퀀스](sequences.md)<br /><br />[Seq 모듈](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684)|
 |[맵](https://msdn.microsoft.com/library/975316ea-55e3-4987-9994-90897ad45664)|요소는 변경할 수 없는 사전입니다. 키로는 요소에 대 한 액세스입니다.|[Map 모듈](https://msdn.microsoft.com/library/bfe61ead-f16c-416f-af98-56dbcbe23e4f)|
-|[Set](https://msdn.microsoft.com/library/50cebdce-0cd7-4c5c-8ebc-f3a9e90b38d8)|비교는 F# 구조적 비교 함수를 잠재적으로 사용 하는 구현 하는 이진 트리를 기반으로 하는 변경할 수 없는 집합을 `System.IComparable` 키 값에 대 한 인터페이스입니다.|[모듈 설정](https://msdn.microsoft.com/library/61efa732-d55d-4c32-993f-628e2f98e6a0)|
+|[Set](https://msdn.microsoft.com/library/50cebdce-0cd7-4c5c-8ebc-f3a9e90b38d8)|비교는 F # 구조적 비교 함수를 잠재적으로 사용 하는 구현 하는 이진 트리를 기반으로 하는 변경할 수 없는 집합을 `System.IComparable` 키 값에 대 한 인터페이스입니다.|[모듈 설정](https://msdn.microsoft.com/library/61efa732-d55d-4c32-993f-628e2f98e6a0)|
 
 ### <a name="table-of-functions"></a>함수는 테이블
 
-이 섹션에서는 F# 컬렉션 형식에서 사용할 수 있는 함수를 비교 합니다. 여기서 N은 첫 번째 컬렉션의 크기 및 M 크기가 두 번째 컬렉션의 경우 모든 함수의 계산 복잡성이 제공 됩니다. 대시 (-)는이 함수는 컬렉션에 사용할 수 없습니다 나타냅니다. 시퀀스 지연 평가 되므로 Seq.distinct 등의 함수 될 수 O(1) 즉시 반환 하기 때문에 있지만 시퀀스를 열거 하는 경우의 성능에 영향을 계속 합니다.
+이 섹션에서는 F # 컬렉션 형식에서 사용할 수 있는 함수를 비교 합니다. 여기서 N은 첫 번째 컬렉션의 크기 및 M 크기가 두 번째 컬렉션의 경우 모든 함수의 계산 복잡성이 제공 됩니다. 대시 (-)는이 함수는 컬렉션에 사용할 수 없습니다 나타냅니다. 시퀀스 지연 평가 되므로 Seq.distinct 등의 함수 될 수 O(1) 즉시 반환 하기 때문에 있지만 시퀀스를 열거 하는 경우의 성능에 영향을 계속 합니다.
 
 |기능|배열|목록|Sequence|맵|Set|설명|
 |--------|-----|----|--------|---|---|-----------|
