@@ -128,7 +128,6 @@
 ### [게시된 출력 단위 테스트](core/testing/unit-testing-published-output.md)
 ### [Visual Studio를 사용한 Live Unit Testing .NET Core 프로젝트](/visualstudio/test/live-unit-testing-start)
 ## [버전 관리](core/versions/index.md)
-### [.NET Core 버전 기록](core/versions/version-history.md)
 ### [.NET Core 버전 선택 영역](core/versions/selection.md)
 ### [오래된 런타임 및 SDK 제거](core/versions/remove-runtime-sdk-versions.md)
 ## [런타임 식별자 카탈로그](core/rid-catalog.md)
