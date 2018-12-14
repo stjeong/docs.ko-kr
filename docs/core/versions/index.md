@@ -4,18 +4,18 @@ description: 이 문서에서는 .NET Core SDK 및 런타임의 버전 관리 �
 author: bleroy
 ms.date: 07/26/2018
 ms.custom: seodec18
-ms.openlocfilehash: 54b09a6b74b2cf213cea781dec95a413ac2ad059
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: e4ab5e3a6dd487437e267aec042639c70fdc61ad
+ms.sourcegitcommit: 8598d446303b545eed2d520a6ccd061c1a7d00cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170719"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53334810"
 ---
 # <a name="overview-of-how-net-core-is-versioned"></a>.NET Core의 버전 관리 방법 개요
 
 .NET core는 응용 프로그램을 개발하는 데 필요한 도구를 포함하는 .NET Core 런타임 및 .NET Core SDK를 가리킵니다. .NET Core SDK는 이전 버전의 .NET Core 런타임에서 작동하도록 설계되었습니다. 이 문서에서는 런타임 및 SDK 버전 전략을 설명합니다. .NET Standard의 버전 번호에 대한 설명은 [.NET Standard](../../standard/net-standard.md#net-implementation-support)를 소개하는 문서에 있습니다.
 
-.NET Core 런타임 및.NET Core SDK는 다른 속도로 새 기능을 추가합니다. 일반적으로 .NET Core SDK는 .NET Core 런타임이 프로덕션 환경에서 사용하는 런타임을 변경하는 것보다 신속하게 업데이트된 도구를 제공합니다. 안타깝게도 이 문제는 지난 몇 년 동안 몇 가지 버전 관리 전략을 가져왔습니다. [.NET Core 버전 관리](version-history.md) 문서에서 이력에 대해 알아볼 수 있습니다.
+.NET Core 런타임 및.NET Core SDK는 다른 속도로 새 기능을 추가합니다. 일반적으로 .NET Core SDK는 .NET Core 런타임이 프로덕션 환경에서 사용하는 런타임을 변경하는 것보다 신속하게 업데이트된 도구를 제공합니다.
 
 ## <a name="versioning-details"></a>버전 관리 정보
 
@@ -32,7 +32,7 @@ SDK 버전 번호의 세 번째 위치는 보조 및 패치 번호를 모두 전
 | 런타임 및 SDK 패치 | 2.2.1             | 2.2.102           |
 | SDK 기능 변경    | 2.2.1             | 2.2.200           |
 
-(\*) 이 차트는 향후 2.2 .NET Core Runtime를 사용합니다. 기록 아티팩트는 예제와 같이 .NET Core 2.1에 대한 첫 번째 SDK가 2.1.300이기 때문입니다. 자세한 내용은 [.NET Core 버전 관리 기록](version-history.md)을 참조하세요.
+(\*) 이 차트는 향후 2.2 .NET Core Runtime를 사용합니다. 기록 아티팩트는 예제와 같이 .NET Core 2.1에 대한 첫 번째 SDK가 2.1.300이기 때문입니다. 자세한 내용은 [.NET Core 버전 선택](selection.md)을 참조하세요.
 
 참고:
 
