@@ -1,44 +1,50 @@
 ---
 title: -&gt; 연산자(C# 참조)
-ms.date: 07/20/2015
+ms.date: 11/26/2018
 f1_keywords:
 - ->_CSharpKeyword
 helpviewer_keywords:
 - member access operator (->) [C#]
 - -> operator [C#]
 ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
-ms.openlocfilehash: fb95e508ce1339868723bcc3178851e8c1355c1f
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 178724ede105d809bd812461121a38d5a0e90517
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45609529"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144132"
 ---
-# <a name="-gt-operator-c-reference"></a><span data-ttu-id="12392-102">-&gt; 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="12392-102">-&gt; Operator (C# Reference)</span></span>
-<span data-ttu-id="12392-103">`->` 연산자는 포인터 역참조와 멤버 액세스를 결합합니다.</span><span class="sxs-lookup"><span data-stu-id="12392-103">The `->` operator combines pointer dereferencing and member access.</span></span>  
-  
-## <a name="remarks"></a><span data-ttu-id="12392-104">설명</span><span class="sxs-lookup"><span data-stu-id="12392-104">Remarks</span></span>  
- <span data-ttu-id="12392-105">다음 형태의 식이 있다고 가정합니다.</span><span class="sxs-lookup"><span data-stu-id="12392-105">An expression of the form,</span></span>  
-  
-```csharp  
-x->y  
-```  
-  
- <span data-ttu-id="12392-106">여기서 `x`는 `T*` 형식의 포인터이고 `y`는 `T`의 멤버입니다. 이 식은 다음 식과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="12392-106">(where `x` is a pointer of type `T*` and `y` is a member of `T`) is equivalent to,</span></span>  
-  
-```csharp  
-(*x).y  
-```  
-  
- <span data-ttu-id="12392-107">`->` 연산자는 [unsafe](../../../csharp/language-reference/keywords/unsafe.md)로 표시된 코드에만 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="12392-107">The `->` operator can be used only in code that is marked as [unsafe](../../../csharp/language-reference/keywords/unsafe.md).</span></span>  
-  
- <span data-ttu-id="12392-108">`->` 연산자를 오버로드할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="12392-108">The `->` operator cannot be overloaded.</span></span>  
-  
-## <a name="example"></a><span data-ttu-id="12392-109">예</span><span class="sxs-lookup"><span data-stu-id="12392-109">Example</span></span>  
- [!code-csharp[csRefOperators#15](../../../csharp/language-reference/operators/codesnippet/CSharp/dereference-operator_1.cs)]  
-  
-## <a name="see-also"></a><span data-ttu-id="12392-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="12392-110">See Also</span></span>
+# <a name="-gt-operator-c-reference"></a><span data-ttu-id="e1746-102">-&gt; 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="e1746-102">-&gt; Operator (C# Reference)</span></span>
 
-- [<span data-ttu-id="12392-111">C# 참조</span><span class="sxs-lookup"><span data-stu-id="12392-111">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="12392-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="12392-112">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="12392-113">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="12392-113">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)
+<span data-ttu-id="e1746-103">포인터 멤버 액세스 연산자 `->`는 포인터 간접 참조 및 멤버 액세스를 결합합니다.</span><span class="sxs-lookup"><span data-stu-id="e1746-103">The pointer member access operator `->` combines pointer indirection and member access.</span></span>
+
+<span data-ttu-id="e1746-104">`x`가 `T*` 형식의 포인터이고 `y`가 `T`의 액세스 가능한 멤버인 경우 다음 형식의 식을 가정해 보세요.</span><span class="sxs-lookup"><span data-stu-id="e1746-104">If `x` is a pointer of the type `T*` and `y` is an accessible member of `T`, an expression of the form</span></span>
+
+```csharp
+x->y
+```
+
+<span data-ttu-id="e1746-105">위의 식은 아래의 식과 동일합니다.</span><span class="sxs-lookup"><span data-stu-id="e1746-105">is equivalent to</span></span>
+
+```csharp
+(*x).y
+```
+
+<span data-ttu-id="e1746-106">`->` 연산자에 [안전하지 않은](../keywords/unsafe.md) 컨텍스트가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="e1746-106">The `->` operator requires [unsafe](../keywords/unsafe.md) context.</span></span>
+
+<span data-ttu-id="e1746-107">자세한 내용은 [방법: 포인터를 사용하여 멤버 액세스](../../programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e1746-107">For more information, see [How to: access a member with a pointer](../../programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer.md).</span></span>
+
+## <a name="operator-overloadability"></a><span data-ttu-id="e1746-108">연산자 오버로드 가능성</span><span class="sxs-lookup"><span data-stu-id="e1746-108">Operator overloadability</span></span>
+
+<span data-ttu-id="e1746-109">`->` 연산자를 오버로드할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e1746-109">The `->` operator cannot be overloaded.</span></span>
+
+## <a name="c-language-specification"></a><span data-ttu-id="e1746-110">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="e1746-110">C# language specification</span></span>
+
+<span data-ttu-id="e1746-111">자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [포인터 멤버 액세스](~/_csharplang/spec/unsafe-code.md#pointer-member-access) 섹션을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e1746-111">For more information, see the [Pointer member access](~/_csharplang/spec/unsafe-code.md#pointer-member-access) section of the [C# language specification](../language-specification/index.md).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="e1746-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e1746-112">See also</span></span>
+
+- [<span data-ttu-id="e1746-113">C# 참조</span><span class="sxs-lookup"><span data-stu-id="e1746-113">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="e1746-114">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="e1746-114">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="e1746-115">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="e1746-115">C# Operators</span></span>](index.md)
+- [<span data-ttu-id="e1746-116">포인터 형식</span><span class="sxs-lookup"><span data-stu-id="e1746-116">Pointer types</span></span>](../../programming-guide/unsafe-code-pointers/pointer-types.md)
