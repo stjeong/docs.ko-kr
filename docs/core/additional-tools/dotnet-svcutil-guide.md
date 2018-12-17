@@ -1,17 +1,18 @@
 ---
-title: Microsoft WCF dotnet-svcutil 도구
+title: WCF svcutil 도구 개요 - .NET Core
 description: .NET Framework 프로젝트용 WCF svcutil 도구와 유사하게, .NET Core 및 ASP.NET Core 프로젝트 기능을 추가하는 Microsoft WCF dotnet-svcutil 도구에 대한 개요입니다.
 author: mlacouture
 ms.author: jralexander
 ms.date: 08/20/2018
-ms.openlocfilehash: bb4d8e5f3997318b720535b0f1e07fc33d13338a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.custom: seodec18
+ms.openlocfilehash: 7372d88a9c1d77ec0b77e9d82fe5b24ebc357a74
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511888"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126018"
 ---
-# <a name="microsoft-wcf-dotnet-svcutil-tool"></a>Microsoft WCF dotnet-svcutil 도구
+# <a name="wcf-dotnet-svcutil-tool-for-net-core"></a>.NET Core용 WCF dotnet-svcutil 도구
 
 WCF(Windows Communication Foundation) **dotnet-svcutil** 도구는 네트워크 위치의 웹 서비스 또는 WSDL 파일에서 메타데이터를 검색하고, 해당 웹 서비스 작업에 액세스하는 클라이언트 프록시 메서드가 포함된 WCF 클래스를 생성하는 .NET Core CLI 도구입니다.
 
@@ -24,7 +25,7 @@ WCF(Windows Communication Foundation) **dotnet-svcutil** 도구는 네트워크 
 
 ## <a name="prerequisites"></a>전제 조건
 
-* [.NET Core SDK](https://www.microsoft.com/net/download) v1.0.4 이상 버전
+* [.NET Core SDK](https://dotnet.microsoft.com/download) v1.0.4 이상 버전
 * 선호하는 코드 편집기
 
 ## <a name="getting-started"></a>시작

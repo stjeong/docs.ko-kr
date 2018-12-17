@@ -8,12 +8,12 @@ helpviewer_keywords:
 - from clause [C#]
 - from keyword [C#]
 ms.assetid: 1aefd18c-1314-47f8-99ec-9bcefb09e699
-ms.openlocfilehash: c8c124f44df292b8323560cce541cca2765e2790
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 9af24d9c2a99a9c763c6ad3aac9895e7dddcf8ee
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033404"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129040"
 ---
 # <a name="from-clause-c-reference"></a>from 절(C# 참조)
 
@@ -33,7 +33,7 @@ ms.locfileid: "48033404"
 
 컴파일러는 데이터 소스가 <xref:System.Collections.Generic.IEnumerable%601>을 구현할 경우 범위 변수의 형식을 유추합니다. 예를 들어, 소스의 형식이 `IEnumerable<Customer>`일 경우 범위 변수는 `Customer`로 유추됩니다. 소스가 <xref:System.Collections.ArrayList>와 같이 제네릭이 아닌 `IEnumerable` 형식인 경우에만 형식을 명시적으로 지정하면 됩니다. 자세한 내용은 [LINQ를 사용하여 ArrayList 쿼리](../../programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)를 참조하세요.
 
-위의 예제에서 `num`은 `int` 형식으로 유추됩니다. 범위 변수가 강력한 형식이므로 범위 변수에서 메서드를 호출하거나 다른 작업에서 범위 변수를 사용할 수 있습니다. 예를 들어 `select num`을 작성하는 대신에 `select num.ToString()`을 작성하여 쿼리 식에서 정수 대신 문자열 시퀀스를 반환하게 할 수 있습니다. 또는 `select n + 10`을 작성하여 식에서 14, 11, 13, 12, 10 시퀀스를 반환하게 할 수 있습니다. 자세한 내용은 [select 절](select-clause.md)을 참조하세요.
+위의 예제에서 `num`은 `int` 형식으로 유추됩니다. 범위 변수가 강력한 형식이므로 범위 변수에서 메서드를 호출하거나 다른 작업에서 범위 변수를 사용할 수 있습니다. 예를 들어 `select num`을 작성하는 대신에 `select num.ToString()`을 작성하여 쿼리 식에서 정수 대신 문자열 시퀀스를 반환하게 할 수 있습니다. 또는 `select num + 10`을 작성하여 식에서 14, 11, 13, 12, 10 시퀀스를 반환하게 할 수 있습니다. 자세한 내용은 [select 절](select-clause.md)을 참조하세요.
 
 범위 변수가 소스의 데이터를 실제로 저장하지 않는다는 매우 중요한 한 가지 차이점을 제외하면 범위 변수는 [foreach](foreach-in.md) 문의 반복 변수와 같습니다. 범위 변수는 단순히 쿼리 실행 시에 발생하는 작업을 쿼리에서 설명할 수 있게 하는 구문상의 편리함을 제공합니다. 자세한 내용은 [LINQ 쿼리 소개(C#)](../../programming-guide/concepts/linq/introduction-to-linq-queries.md)를 참조하세요.
 

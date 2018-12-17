@@ -1,20 +1,20 @@
 ---
-title: Visual Studio 2017에서 .NET Core 및 Visual Basic을 사용하여 Hello World 응용 프로그램 빌드
+title: Visual Studio 2017의 Visual Basic을 사용하는 .NET Core Hello World 애플리케이션
 description: Visual Studio 2017에서 Visual Basic을 사용하여 간단한 .NET Core 콘솔 응용 프로그램을 빌드하는 방법을 알아봅니다.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs:
 - vb
-ms.custom: vs-dotnet
-ms.openlocfilehash: d6b58e491b2857f83fe9b2e55ed35630c42b79ed
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.custom: vs-dotnet, seodec18
+ms.openlocfilehash: 612de47c4d40d1272eb330a0343302109040f434
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45969878"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149383"
 ---
-# <a name="build-a-visual-basic-hello-world-application-with-net-core-in-visual-studio-2017"></a>Visual Studio 2017에서 .NET Core를 사용하여 Visual Basic Hello World 응용 프로그램 빌드
+# <a name="build-a-net-core-visual-basic-hello-world-application-in-visual-studio-2017"></a>Visual Studio 2017에서 .NET Core Visual Basic Hello World 애플리케이션 빌드
 
 이 항목에서는 Visual Studio 2017에서 Visual Basic을 사용하여 간단한 .NET Core 콘솔 응용 프로그램을 빌드, 디버그 및 게시하는 과정을 단계별로 소개합니다. Visual Studio 2017은 .NET Core 응용 프로그램 빌드를 위해 필요한 모든 기능을 갖춘 개발 환경을 제공합니다. 플랫폼 특정 종속성이 없는 응용 프로그램은 .NET Core에서 대상으로 하는 모든 플랫폼과 .NET Core가 설치된 모든 시스템에서 실행할 수 있습니다.
 

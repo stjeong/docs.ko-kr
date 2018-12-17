@@ -1,26 +1,26 @@
 ---
-title: ML.NET을 사용하여 아이리스 꽃 클러스터(클러스터링)
+title: 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링 - ML.NET
 description: 클러스터링 시나리오에서 ML.NET을 사용하는 방법 알아보기
 author: pkulikov
 ms.author: johalex
 ms.date: 07/02/2018
 ms.topic: tutorial
-ms.custom: mvc
-ms.openlocfilehash: bb41fd317507c14b46aea94e1ce576e390932a65
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.custom: mvc, seodec18
+ms.openlocfilehash: 5bd73c774f60466daaf52215c34e7e17b5f5cc9c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453192"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145633"
 ---
-# <a name="tutorial-use-mlnet-to-cluster-iris-flowers-clustering"></a>자습서: ML.NET을 사용하여 아이리스 꽃 클러스터(클러스터링)
+# <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>자습서: ML.NET를 통해 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링
 
 > [!NOTE]
 > 이 항목은 현재 미리 보기로 제공되는 ML.NET을 참조하며, 자료는 변경될 수 있습니다. 자세한 내용은 [ML.NET 소개](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)를 참조하세요.
 
 이 자습서에서는 ML.NET을 사용하여 [아이리스 꽃 데이터 집합](https://en.wikipedia.org/wiki/Iris_flower_data_set)을 위해 [클러스터링 모델](../resources/tasks.md#clustering)을 빌드하는 방법을 보여줍니다.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > - 문제 이해
 > - 적절한 기계 학습 작업 선택
@@ -98,7 +98,7 @@ ms.locfileid: "49453192"
 
 *Program.cs* 파일로 돌아가서 두 개의 필드를 추가하여 데이터 집합 파일에 대한 경로와 모델을 저장할 파일에 대한 경로를 저장합니다.
 
-- `_dataPath`에는 모델을 학습하는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
+- `_dataPath`에는 모델을 학습시키는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
 - `_modelPath`에는 학습된 모델이 저장되는 파일에 대한 경로가 포함됩니다.
 
 `Main` 메서드 바로 위에 다음 코드를 추가하여 해당 경로를 지정합니다.
@@ -203,7 +203,7 @@ Distances: 0.4192338 0.0008847713 0.9660053
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 다음 방법을 학습했습니다.
+본 자습서에서는 다음 작업에 관한 방법을 학습했습니다.
 > [!div class="checklist"]
 > - 문제 이해
 > - 적절한 기계 학습 작업 선택

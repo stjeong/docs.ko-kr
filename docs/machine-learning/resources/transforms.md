@@ -1,15 +1,16 @@
 ---
-title: 데이터 변환
+title: ML.NET의 데이터 변환
 description: ML.NET에서 지원되는 다양한 데이터 변환을 살펴봅니다.
+author: JRAlexander
 ms.date: 10/16/2018
-ms.openlocfilehash: 5df4598de6fcd08689d72c378f51d792860ef49c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c169319937dac13747935e451952bd75d4cc174d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187743"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143950"
 ---
-# <a name="data-transforms"></a>데이터 변환
+# <a name="data-transforms-in-mlnet"></a>ML.NET의 데이터 변환
 
 다음 표는 ML.NET에서 지원되는 모든 데이터 변환에 대한 정보를 포함합니다(데이터 변환 형식을 선택하여 해당 테이블로 이동).
 

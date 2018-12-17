@@ -4,12 +4,12 @@ description: 기존 및 .NET Core csproj 파일 간의 차이점에 대해 알�
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.openlocfilehash: 3de168b8cebeb435a45861138aea26580663c135
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f2ab476ee20ae90a84de7a6ccc76ce72738c1343
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50203958"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143703"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>.NET Core용 csproj 형식에 대한 추가 사항
 
@@ -75,9 +75,6 @@ ms.locfileid: "50203958"
     <EnableDefaultItems>false</EnableDefaultItems>
 </PropertyGroup>
 ```
-
-### <a name="recommendation"></a>권장 사항
-csproj를 사용하는 경우 프로젝트에서 기본 GLOB를 제거하고 다양한 시나리오(예: 런타임 및 NuGet 패키징)에 대해 앱/라이브러리에서 필요로 하는 아티팩트에 대한 GLOB가 있는 파일 경로만 추가하는 것이 좋습니다.
 
 ## <a name="how-to-see-the-whole-project-as-msbuild-sees-it"></a>MSBuild에서 보는 것처럼 전체 프로젝트를 보는 방법
 
@@ -195,8 +192,12 @@ MSbuild로 전환하면서 NuGet 패키지를 압축할 때 사용되는 입력 
 ### <a name="authors"></a>만든 이
 nuget.org에서 프로필 이름과 일치하는, 세미콜론으로 구분된 패키지 작성자 목록입니다. 이러한 목록은 nuget.org의 NuGet 갤러리에 표시되고 동일한 작성자가 패키지를 상호 참조하는 데 사용됩니다.
 
-### <a name="description"></a>설명
+### <a name="packagedescription"></a>PackageDescription
+
 UI 표시를 위한 패키지에 대한 자세한 설명입니다.
+
+### <a name="description"></a>설명
+어셈블리에 대한 자세한 설명입니다. `PackageDescription`을 지정하지 않으면 이 속성이 패키지 설명으로도 사용됩니다.
 
 ### <a name="copyright"></a>Copyright
 패키지에 대한 저작권 정보입니다.

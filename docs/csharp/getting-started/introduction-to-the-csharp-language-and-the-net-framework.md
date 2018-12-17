@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, about C# language
 - Visual C#, about
 ms.assetid: 0a2dff4e-cd84-42ff-8141-e89889b24081
-ms.openlocfilehash: 75ef14032ee2211d3b8d355f050ced67b4a04930
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: ff0845f7d15a7b65cee755110d26a1e56a9b94af
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46579848"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153945"
 ---
 # <a name="introduction-to-the-c-language-and-the-net-framework"></a>C# 언어 및 .NET Framework 소개
 
@@ -38,7 +38,7 @@ ms.locfileid: "46579848"
   
 - [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]: 다양한 데이터 소스에 대한 기본 제공 쿼리 기능을 제공합니다.  
   
- COM 개체 또는 네이티브 Win32 DLL 등의 다른 Windows 소프트웨어와 상호 작용해야 하는 경우 C#에서 "Interop"이라는 프로세스를 통해 작업할 수 있습니다. Interop을 사용하면 네이티브 C++ 응용 프로그램에서 수행할 수 있는 거의 모든 작업을 C# 프로그램으로 수행할 수 있습니다. C#은 직접 메모리 액세스가 절대적으로 중요한 경우를 위한 "안전하지 않은" 코드 개념 및 포인터까지도 지원합니다.  
+ COM 개체 또는 네이티브 Win32 DLL 등의 다른 Windows 소프트웨어와 상호 작용해야 하는 경우 C#에서 “Interop”라는 프로세스를 통해 작업할 수 있습니다. Interop을 사용하면 네이티브 C++ 응용 프로그램에서 수행할 수 있는 거의 모든 작업을 C# 프로그램으로 수행할 수 있습니다. C#은 직접 메모리 액세스가 절대적으로 중요한 경우를 위한 "안전하지 않은" 코드 개념 및 포인터까지도 지원합니다.  
   
  C# 빌드 프로세스는 C 및 C++과 비교해서 비교적 간단하며 Java의 경우보다 좀 더 유연합니다. 별도 헤더 파일이 없으며, 메서드 및 형식을 특정 순서로 선언할 필요도 없습니다. C# 소스 파일은 원하는 수의 클래스, 구조체, 인터페이스 및 이벤트를 정의할 수 있습니다.  
   

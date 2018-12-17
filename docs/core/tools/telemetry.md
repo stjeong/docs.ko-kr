@@ -4,12 +4,12 @@ description: 어떤 데이터가 수집되고 수집 기능을 사용하지 않�
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2018
-ms.openlocfilehash: a20d79e132726cb342064b681218ee568fab2c13
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: c8c6688b7b29c7e65c723e1f1ff31b3bd4c8c1ff
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841627"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129144"
 ---
 # <a name="net-core-sdk-telemetry"></a>.NET Core SDK 원격 분석
 
@@ -52,7 +52,7 @@ ms.locfileid: "48841627"
 
 &#8224;이 메트릭은 게시됩니다.
 
-.NET Core SDK 2.0부터 새 데이터 요소가 수집됩니다.
+.NET Core 2.0 SDK부터 새 데이터 요소가 수집됩니다.
 
 - `dotnet` 명령 인수 및 옵션: 알려진 인수 및 옵션만 수집됩니다(임의 문자열이 아님).
 - SDK가 컨테이너에서 실행 중인지 여부.

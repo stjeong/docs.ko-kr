@@ -7,12 +7,12 @@ dev_langs:
 author: rpetrusha
 ms.author: ronpet
 ms.date: 10/10/2018
-ms.openlocfilehash: bf14e21ec4d390d8ab753bfa45533442ff4f6e68
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 7d8c89793f26ab07917e71832d5f3511d9b1aa5a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49120949"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127552"
 ---
 # <a name="whats-new-in-net-core-21"></a>.NET Core 2.1의 새로운 기능
 
@@ -79,7 +79,7 @@ dotnet tool install -g dotnetsay
 
 ### <a name="tool-management-with-the-dotnet-tool-command"></a>`dotnet tool` 명령을 사용한 도구 관리
 
-.NET Core SDK 2.1(v 2.1.300)에서 모든 도구 작업에는 `dotnet tool` 명령을 사용합니다. 다음 옵션을 사용할 수 있습니다.
+.NET Core 2.1 SDK에서 모든 도구 작업은 `dotnet tool` 명령을 사용합니다. 다음 옵션을 사용할 수 있습니다.
 
 - [`dotnet tool install`](../tools/dotnet-tool-install.md) - 도구를 설치합니다.
 

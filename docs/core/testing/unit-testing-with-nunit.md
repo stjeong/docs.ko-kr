@@ -3,12 +3,12 @@ title: NUnit 및 .NET Core를 사용한 C# 유닛 테스트
 description: dotnet test 및 NUnit을 사용하여 샘플 솔루션을 단계별로 빌드하는 대화형 환경을 통해 C# 및 .NET Core의 단위 테스트 개념을 알아봅니다.
 author: rprouse
 ms.date: 08/31/2018
-ms.openlocfilehash: 253e07c16740a39566cf37ee5742a32342c78c49
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: d33a223a5cfc7f40f251175a4e88076976bd63ed
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45746746"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146959"
 ---
 # <a name="unit-testing-c-with-nunit-and-net-core"></a>NUnit 및 .NET Core를 사용한 C# 유닛 테스트
 
@@ -16,7 +16,7 @@ ms.locfileid: "45746746"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- [.NET Core SDK 2.1(v. 2.1.400)](https://www.microsoft.com/net/download) 이상 버전.
+- [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) 이상 버전.
 - 선택하는 텍스트 편집기 또는 코드 편집기입니다.
 
 ## <a name="creating-the-source-project"></a>소스 프로젝트 만들기

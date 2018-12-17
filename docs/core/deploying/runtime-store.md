@@ -1,15 +1,16 @@
 ---
 title: 런타임 패키지 저장소
-description: 이 항목에서는 .NET Core에서 사용되는 런타임 패키지 저장소 및 대상 매니페스트에 대해 설명합니다.
+description: 런타임 패키지 저장소를 사용하여 .NET Core에서 사용되는 매니페스트를 대상으로 지정하는 방법을 알아봅니다.
 author: bleroy
 ms.author: mairaw
 ms.date: 08/12/2017
-ms.openlocfilehash: df2776ac2e4a2eed7f54b3031f13ab41fc714aae
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.custom: seodec18
+ms.openlocfilehash: b9daac6f50008bf661ae0c727d3a3e0e53a0d6b4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511586"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145217"
 ---
 # <a name="runtime-package-store"></a>런타임 패키지 저장소
 

@@ -4,12 +4,12 @@ description: dotnet new 명령은 지정된 템플릿을 기반으로 새 .NET C
 author: mairaw
 ms.author: mairaw
 ms.date: 10/24/2018
-ms.openlocfilehash: 56d76f1dd54097f9cf20129d74057235290c273c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a8d486f569f31d68d5659ac6a80d615474ef2506
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188206"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53131484"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -71,6 +71,7 @@ dotnet new [-h|--help]
 | 클래스 라이브러리                                | `classlib`       | [C#], F#, VB  |
 | 단위 테스트 프로젝트                            | `mstest`         | [C#], F#, VB  |
 | xUnit 테스트 프로젝트                           | `xunit`          | [C#], F#, VB  |
+| NUnit 테스트 프로젝트                           | `nunit`          | [C#], F#, VB  |
 | Razor 페이지                                   | `page`           | [C#]          |
 | MVC ViewImports                              | `viewimports`    | [C#]          |
 | MVC ViewStart                                | `viewstart`      | [C#]          |

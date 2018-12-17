@@ -1,17 +1,18 @@
 ---
-title: .NET Core 버전 선택
-description: .NET Core에서 프로그램에 대한 런타임 버전을 찾고 선택하는 방법을 알아봅니다.
+title: 사용할 .NET Core 버전 선택
+description: .NET Core에서 프로그램에 대한 런타임 버전을 자동으로 찾아 선택하는 방법을 알아봅니다. 또한 이 문서에서는 특정 버전을 강제로 적용하는 방법을 설명합니다.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/27/2018
-ms.openlocfilehash: 5f6ec628a93dd349b003dfc9b89f84ff7a93a05a
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.custom: seodec18
+ms.openlocfilehash: 3e9a60221a5769d124bcc137d9401367a7713abb
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841542"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127240"
 ---
-# <a name="net-core-version-selection"></a>.NET Core 버전 선택
+# <a name="select-the-net-core-version-to-use"></a>사용할 .NET Core 버전 선택
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
@@ -80,7 +81,7 @@ SDK 버전을 선택하는 프로세스는 다음과 같습니다.
 
 ## <a name="framework-dependent-apps-roll-forward"></a>프레임워크 종속 응용 프로그램 롤포워드
 
-[`dotnet run`](../tools/dotnet-run.md)을 사용하여 원본에서 응용 프로그램을 실행합니다. `dotnet run`은 응용 프로그램을 빌드하고 실행합니다. `dotnet` 실행 파일은 개발 환경에서 응용 프로그램에 대한 **호스트**입니다.
+[`dotnet run`](../tools/dotnet-run.md)를 사용하여 소스에서, [`dotnet myapp.dll`](../tools/dotnet.md#description)을 사용하여 [**프레임워크 종속 배포**](../deploying/index.md#framework-dependent-deployments-fdd)에서 또는 `myapp.exe`를 사용하여 [**프레임워크 종속 실행 파일**](../deploying/index.md#framework-dependent-executables-fde)에서 애플리케이션을 실행하는 경우 `dotnet` 실행 파일이 애플리케이션의 **호스트**입니다.
 
 호스트는 머신에 설치된 최신 패치 버전을 선택합니다. 예를 들어 프로젝트 파일에서 `netcoreapp2.0`을 지정하고 `2.0.4`가 설치된 최신 .NET 런타임인 경우 `2.0.4` 런타임이 사용됩니다.
 

@@ -1,17 +1,18 @@
 ---
-title: .NET Core 호스트
-description: 네이티브 코드에서 .NET Core 런타임 호스트
+title: 사용자 지정 .NET Core 런타임 호스트 작성
+description: .NET Core 런타임의 작동 방식을 제어해야 하는 고급 시나리오를 지원하기 위해 네이티브 코드에서 .NET Core 런타임을 호스트하는 방법을 알아봅니다.
 author: mjrousos
 ms.author: mairaw
-ms.date: 2/3/2017
-ms.openlocfilehash: 96f51c8480bf75b1d7f824a8c87d2cdd6c7f9dd6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.date: 02/03/2017
+ms.custom: seodec18
+ms.openlocfilehash: 7e30536a27408c529743ef623aa1bb837c327f96
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33218608"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146958"
 ---
-# <a name="hosting-net-core"></a>.NET Core 호스트
+# <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>사용자 지정 .NET Core 호스트를 작성하여 네이티브 코드에서 .NET 런타임 제어
 
 모든 관리 코드와 같이 .NET Core 응용 프로그램은 호스트에서 실행됩니다. 호스트는 런타임(가비지 수집기 및 JIT와 같은 구성 요소 포함)을 시작하고 AppDomain을 만들고 관리 진입점을 호출합니다.
 
@@ -82,7 +83,6 @@ AppDomain 플래그는 보안 및 interop와 관련된 AppDomain 동작을 지�
 *  `APP_NI_PATHS` 이 목록은 네이티브 이미지에 대해 검색되는 경로를 제외하고, APP_PATHS와 아주 비슷합니다.
 *  `NATIVE_DLL_SEARCH_DIRECTORIES` 이 속성은 p/invoke를 통해 호출되는 네이티브 DLL을 찾을 때 로더에서 검색해야 하는 경로 목록입니다.
 *  `PLATFORM_RESOURCE_ROOTS` 이 목록에는 (문화권별 하위 디렉터리에서) 리소스 위성 어셈블리에 대해 검색하는 경로가 포함됩니다.
-*  `AppDomainCompatSwitch` 이 문자열은 명시적 대상 프레임워크 모니커(어셈블리에서 실행할 프레임워크를 나타내는 어셈블리 수준 특성)가 없는 어셈블리에 대해 사용해야 할 호환성 쿼크를 지정합니다. 일반적으로 `"UseLatestBehaviorWhenTFMNotSpecified"`로 설정되어야 하지만 일부 호스트에서는 대신 이전 Silverlight 또는 Windows Phone 호환성 쿼크를 가져올 수도 있습니다.
 
 [간단한 샘플 호스트](https://github.com/dotnet/samples/tree/master/core/hosting)에서는 이러한 속성이 다음과 같이 설정됩니다.
 

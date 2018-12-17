@@ -2,14 +2,13 @@
 title: dotnet nuget push 명령 - .NET Core CLI
 description: dotnet nuget push 명령은 서버에 패키지를 푸시하고 게시합니다.
 author: karann-msft
-ms.author: mairaw
-ms.date: 09/04/2018
-ms.openlocfilehash: b9c0fad886cd1234325c58bf61b1a010bce421d9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.date: 12/04/2018
+ms.openlocfilehash: 090dbfbe3db83b2bb234867aed295ac416b27865
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50200028"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143063"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
@@ -21,16 +20,10 @@ ms.locfileid: "50200028"
 
 ## <a name="synopsis"></a>개요
 
-# <a name="net-core-21tabnetcore21"></a>[.NET Core 2.1](#tab/netcore21)
+# <a name="net-core-2xtabnetcore2x"></a>[.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [-k|--api-key] [-n|--no-symbols]
+dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [--interactive] [-k|--api-key] [-n|--no-symbols]
     [--no-service-endpoint] [-s|--source] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
-dotnet nuget push [-h|--help]
-```
-# <a name="net-core-20tabnetcore20"></a>[.NET Core 2.0](#tab/netcore20)
-```
-dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [-k|--api-key] [-n|--no-symbols]
-    [-s|--source] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
 dotnet nuget push [-h|--help]
 ```
 # <a name="net-core-1xtabnetcore1x"></a>[.NET Core 1.x](#tab/netcore1x)
@@ -47,154 +40,132 @@ dotnet nuget push [-h|--help]
 
 ## <a name="arguments"></a>인수
 
-`ROOT`
+* **`ROOT`**
 
-푸시되는 패키지에 대한 파일 경로를 지정합니다.
+  푸시되는 패키지에 대한 파일 경로를 지정합니다.
 
 ## <a name="options"></a>옵션
 
-# <a name="net-core-21tabnetcore21"></a>[.NET Core 2.1](#tab/netcore21)
+# <a name="net-core-2xtabnetcore2x"></a>[.NET Core 2.x](#tab/netcore2x)
 
-`-d|--disable-buffering`
+* **`-d|--disable-buffering`**
 
-메모리 사용량을 줄이려면 HTTP(S) 서버로 푸시할 때 버퍼링을 사용하지 않도록 설정합니다.
+  메모리 사용량을 줄이려면 HTTP(S) 서버로 푸시할 때 버퍼링을 사용하지 않도록 설정합니다.
 
-`--force-english-output`
+* **`--force-english-output`**
 
-고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
+  고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
 
-`-h|--help`
-
-명령에 대한 간단한 도움말을 출력합니다.
-
-`-k|--api-key <API_KEY>`
-
-서버에 대한 API 키입니다.
-
-`-n|--no-symbols`
-
-기호를 푸시하지 않습니다(있는 경우).
-
-`--no-service-endpoint`
-
-소스 URL에 “api/v2/package”를 추가하지 마세요.
-
-`-s|--source <SOURCE>`
-
-서버 URL을 지정합니다. 이 옵션은 NuGet 구성 파일에 `DefaultPushSource` 구성 값이 설정되어 있지 않을 때 필요합니다.
-
-`-sk|--symbol-api-key <API_KEY>`
-
-기호 서버에 대한 API 키입니다.
-
-`-ss|--symbol-source <SOURCE>`
-
-기호 서버 URL을 지정합니다.
-
-`-t|--timeout <TIMEOUT>`
-
-서버에 푸시하기 위한 제한 시간(초)을 지정합니다. 기본값은 300 초(5 분)입니다. 0(0초)을 지정하면 기본값이 적용됩니다.
-
-# <a name="net-core-20tabnetcore20"></a>[.NET Core 2.0](#tab/netcore20)
-
-`-d|--disable-buffering`
-
-메모리 사용량을 줄이려면 HTTP(S) 서버로 푸시할 때 버퍼링을 사용하지 않도록 설정합니다.
-
-`--force-english-output`
-
-고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
-
-`-h|--help`
+* **`-h|--help`**
 
 명령에 대한 간단한 도움말을 출력합니다.
 
-`-k|--api-key <API_KEY>`
+* **`--interactive`**
 
-서버에 대한 API 키입니다.
+  명령 차단을 허용하고 인증 등의 작업에 대해 수동 작업을 요구합니다. .NET Core 2.2 SDK 이후 사용할 수 있는 옵션입니다.
 
-`-n|--no-symbols`
+* **`-k|--api-key <API_KEY>`**
 
-기호를 푸시하지 않습니다(있는 경우).
+  서버에 대한 API 키입니다.
 
-`-s|--source <SOURCE>`
+* **`-n|--no-symbols`**
 
-서버 URL을 지정합니다. 이 옵션은 NuGet 구성 파일에 `DefaultPushSource` 구성 값이 설정되어 있지 않을 때 필요합니다.
+  기호를 푸시하지 않습니다(있는 경우).
 
-`-sk|--symbol-api-key <API_KEY>`
+* **`--no-service-endpoint`**
 
-기호 서버에 대한 API 키입니다.
+  소스 URL에 “api/v2/package”를 추가하지 마세요. .NET Core 2.1 SDK 이후 사용할 수 있는 옵션입니다.
 
-`-ss|--symbol-source <SOURCE>`
+* **`-s|--source <SOURCE>`**
 
-기호 서버 URL을 지정합니다.
+  서버 URL을 지정합니다. 이 옵션은 NuGet 구성 파일에 `DefaultPushSource` 구성 값이 설정되어 있지 않을 때 필요합니다.
 
-`-t|--timeout <TIMEOUT>`
+* **`-sk|--symbol-api-key <API_KEY>`**
 
-서버에 푸시하기 위한 제한 시간(초)을 지정합니다. 기본값은 300 초(5 분)입니다. 0(0초)을 지정하면 기본값이 적용됩니다.
+  기호 서버에 대한 API 키입니다.
+
+* **`-ss|--symbol-source <SOURCE>`**
+
+  기호 서버 URL을 지정합니다.
+
+* **`-t|--timeout <TIMEOUT>`**
+
+  서버에 푸시하기 위한 제한 시간(초)을 지정합니다. 기본값은 300 초(5 분)입니다. 0(0초)을 지정하면 기본값이 적용됩니다.
 
 # <a name="net-core-1xtabnetcore1x"></a>[.NET Core 1.x](#tab/netcore1x)
 
-`-d|--disable-buffering`
+* **`-d|--disable-buffering`**
 
-메모리 사용량을 줄이려면 HTTP(S) 서버로 푸시할 때 버퍼링을 사용하지 않도록 설정합니다.
+  메모리 사용량을 줄이려면 HTTP(S) 서버로 푸시할 때 버퍼링을 사용하지 않도록 설정합니다.
 
-`--force-english-output`
+* **`--force-english-output`**
 
-고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
+  고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
 
-`-h|--help`
+* **`-h|--help`**
 
-명령에 대한 간단한 도움말을 출력합니다.
+  명령에 대한 간단한 도움말을 출력합니다.
 
-`-k|--api-key <API_KEY>`
+* **`-k|--api-key <API_KEY>`**
 
-서버에 대한 API 키입니다.
+  서버에 대한 API 키입니다.
 
-`-n|--no-symbols`
+* **`-n|--no-symbols`**
 
-기호를 푸시하지 않습니다(있는 경우).
+  기호를 푸시하지 않습니다(있는 경우).
 
-`-s|--source <SOURCE>`
+* **`-s|--source <SOURCE>`**
 
-서버 URL을 지정합니다. 이 옵션은 NuGet 구성 파일에 `DefaultPushSource` 구성 값이 설정되어 있지 않을 때 필요합니다.
+  서버 URL을 지정합니다. 이 옵션은 NuGet 구성 파일에 `DefaultPushSource` 구성 값이 설정되어 있지 않을 때 필요합니다.
 
-`-sk|--symbol-api-key <API_KEY>`
+* **`-sk|--symbol-api-key <API_KEY>`**
 
-기호 서버에 대한 API 키입니다.
+  기호 서버에 대한 API 키입니다.
 
-`-ss|--symbol-source <SOURCE>`
+* **`-ss|--symbol-source <SOURCE>`**
 
-기호 서버 URL을 지정합니다.
+  기호 서버 URL을 지정합니다.
 
-`-t|--timeout <TIMEOUT>`
+* **`-t|--timeout <TIMEOUT>`**
 
-서버에 푸시하기 위한 제한 시간(초)을 지정합니다. 기본값은 300 초(5 분)입니다. 0(0초)을 지정하면 기본값이 적용됩니다.
+  서버에 푸시하기 위한 제한 시간(초)을 지정합니다. 기본값은 300 초(5 분)입니다. 0(0초)을 지정하면 기본값이 적용됩니다.
 
 ---
 
 ## <a name="examples"></a>예제
 
-기본 푸시 소스에 *foo.nupkg*를 푸시하여 API 키를 지정합니다.
+* 기본 푸시 소스에 *foo.nupkg*를 푸시하여 API 키를 지정합니다.
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a`
+  ```console
+  dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
+  ```
 
-사용자 지정 푸시 소스 `https://customsource`에 *foo.nupkg*를 푸시하여 API 키를 지정합니다.
+* 사용자 지정 푸시 소스 `https://customsource`에 *foo.nupkg*를 푸시하여 API 키를 지정합니다.
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/`
+  ```console
+  dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
+  ```
 
-기본 푸시 소스 *foo.nupkg*를 푸시합니다.
+* 기본 푸시 소스 *foo.nupkg*를 푸시합니다.
 
-`dotnet nuget push foo.nupkg`
+  ```console
+  dotnet nuget push foo.nupkg
+  ```
 
-기본 기호 소스에 *foo.symbols.nupkg*를 푸시합니다.
+* 기본 기호 소스에 *foo.symbols.nupkg*를 푸시합니다.
 
-`dotnet nuget push foo.symbols.nupkg`
+  ```console
+  dotnet nuget push foo.symbols.nupkg
+  ```
 
-360초 시간 제한을 지정하여 기본 푸시 소스에 *foo.nupkg*를 푸시합니다.
+* 360초 시간 제한을 지정하여 기본 푸시 소스에 *foo.nupkg*를 푸시합니다.
 
-`dotnet nuget push foo.nupkg --timeout 360`
+  ```console
+  dotnet nuget push foo.nupkg --timeout 360
+  ```
 
-기본 푸시 소스에 현재 디렉터리에 있는 모든 *.nupkg* 파일을 푸시합니다.
+* 기본 푸시 소스에 현재 디렉터리에 있는 모든 *.nupkg* 파일을 푸시합니다.
 
-`dotnet nuget push *.nupkg`
+  ```console
+  dotnet nuget push *.nupkg
+  ```

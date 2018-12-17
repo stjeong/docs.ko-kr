@@ -1,32 +1,53 @@
 ---
 title: -- 연산자(C# 참조)
-ms.date: 07/20/2015
+ms.date: 11/26/2018
 f1_keywords:
 - --_CSharpKeyword
 helpviewer_keywords:
 - -- operator [C#]
 - decrement operator (--) [C#]
 ms.assetid: 6b9cfe86-63c7-421f-9379-c9690fea8720
-ms.openlocfilehash: 615b100447233856ab3740d075d69e3ae19285fd
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 0858321d6fe192a55bc548f169c558542238a981
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45648784"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53153341"
 ---
 # <a name="---operator-c-reference"></a>-- 연산자(C# 참조)
-감소 연산자(`--`)는 피연산자를 1씩 감소시킵니다. 감소 연산자는 피연산자 앞이나 뒤에 나타날 수 있습니다(`--variable` 및 `variable--`). 첫 번째 형태는 전위 감소 연산입니다. 연산 결과는 감소된 후의 피연산자 값입니다. 두 번째 형태는 후위 감소 연산입니다. 연산 결과는 감소되기 전의 피연산자 값입니다.  
-  
-## <a name="remarks"></a>설명  
- 숫자 및 열거형 형식에는 미리 정의된 감소 연산자가 있습니다.  
-  
- 사용자 정의 형식은 `--` 연산자를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조). 정수 계열 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.  
-  
-## <a name="example"></a>예  
- [!code-csharp[csRefOperators#8](../../../csharp/language-reference/operators/codesnippet/CSharp/decrement-operator_1.cs)]  
-  
+
+단항 감소 연산자(`--`)는 피연산자를 1씩 감소합니다. 후위 감소 연산자 `x--` 및 전위 감소 연산자 `--x`의 두 가지 형태로 지원됩니다.
+
+## <a name="postfix-decrement-operator"></a>후위 감소 연산자
+
+`x--`의 결과는 다음 예제와 같이 연산 ‘전’ `x`의 값입니다.
+
+[!code-csharp-interactive[postfix decrement](~/samples/snippets/csharp/language-reference/operators/DecrementAndIncrementExamples.cs#PostfixDecrement)]
+
+## <a name="prefix-decrement-operator"></a>후위 감소 연산자
+
+`--x`의 결과는 다음 예제와 같이 연산 ‘후’ `x`의 값입니다.
+
+[!code-csharp-interactive[prefix decrement](~/samples/snippets/csharp/language-reference/operators/DecrementAndIncrementExamples.cs#PrefixDecrement)]
+
+## <a name="remarks"></a>설명
+
+감소 연산자는 모든 [정수 형식](../keywords/integral-types-table.md)([char](../keywords/char.md) 형식 포함), [부동 소수점 형식](../keywords/floating-point-types-table.md) 및 모든 [열거형](../keywords/enum.md) 형식에 대해 미리 정의됩니다.
+
+감소 연산자의 피연산자는 변수, [속성](../../programming-guide/classes-and-structs/properties.md) 액세스 또는 [인덱서](../../../csharp/programming-guide/indexers/index.md) 액세스여야 합니다.
+
+## <a name="operator-overloadability"></a>연산자 오버로드 가능성
+
+사용자 정의 형식은 `--` 연산자를 [오버로드](../keywords/operator.md)할 수 있습니다.
+
+## <a name="c-language-specification"></a>C# 언어 사양
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [후위 증가 및 감소 연산자](~/_csharplang/spec/expressions.md#postfix-increment-and-decrement-operators) 및 [전위 증가 및 감소 연산자](~/_csharplang/spec/expressions.md#prefix-increment-and-decrement-operators) 섹션을 참조하세요.
+
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 연산자](index.md)
+- [++ 연산자](increment-operator.md)
+- [방법: 포인터 증가 및 감소](../../programming-guide/unsafe-code-pointers/how-to-increment-and-decrement-pointers.md)

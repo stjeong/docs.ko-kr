@@ -1,18 +1,18 @@
 ---
-title: 기계 학습 용어집
-description: 기계 학습 용어집입니다.
-ms.date: 05/31/2018
-ms.topic: conceptual
-ms.openlocfilehash: 22fcd4d2bdf53efd046cd594af42afe50a853f61
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+title: 기계 학습 용어집 - ML.NET
+description: ML.NET에서 사용자 지정 모델을 빌드할 때 유용한 중요한 기계 학습 용어 모음입니다.
+ms.custom: seodec18
+ms.date: 12/06/2018
+ms.openlocfilehash: 4db28a62fccca2e8bedc9f48485a61b6f4ab1801
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453205"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150578"
 ---
-# <a name="machine-learning-glossary"></a>기계 학습 용어집
+# <a name="machine-learning-glossary-of-important-terms"></a>중요한 용어가 포함된 기계 학습 용어집
 
-다음 목록은 사용자 지정 모델을 빌드할 때 유용한 중요한 기계 학습 용어 모음입니다.
+다음 목록은 ML.NET에서 사용자 지정 모델을 빌드할 때 유용한 중요한 기계 학습 용어 모음입니다.
 
 ## <a name="accuracy"></a>정확도
 

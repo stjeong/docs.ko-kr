@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - for keyword [C#]
 ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
-ms.openlocfilehash: c6ef926d6fb2c79b7b7f71c3b24b86a7ab057c88
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6584889f527e1459090bea322720f0cd8d9694f6
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511730"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149239"
 ---
 # <a name="for-c-reference"></a>for(C# 참조)
 
-`for` 문은 지정된 부울 식이 `true`로 평가되는 동안 명령문 또는 명령문 블록을 실행합니다.
+`for` 문은 지정된 부울 식이 `true`로 계산되는 동안 문 또는 문 블록을 실행합니다.
 
 `for` 문 블록 내 원하는 지점에서 [break](break.md) 문을 사용하여 루프를 중단하거나 [continue](continue.md) 문을 사용하여 루프의 다음 반복을 한 단계 실행할 수 있습니다. [goto](goto.md), [return](return.md) 또는 [throw](throw.md) 문으로 `for` 루프를 종료할 수도 있습니다.
 
@@ -105,14 +105,12 @@ i++
 
 ## <a name="c-language-specification"></a>C# 언어 사양
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [for 문](~/_csharplang/spec/statements.md#the-for-statement) 섹션을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-- [for 문(C# 언어 사양)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
 - [C# 참조](../index.md)
 - [C# 프로그래밍 가이드](../../programming-guide/index.md)
 - [C# 키워드](index.md)
-- [foreach, in](foreach-in.md)
-- [for 문(C++)](/cpp/cpp/for-statement-cpp)
 - [반복 문](iteration-statements.md)
+- [foreach, in](foreach-in.md)

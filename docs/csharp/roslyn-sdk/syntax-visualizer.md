@@ -3,12 +3,12 @@ title: Visual Studio에서 Roslyn 구문 시각화 도우미를 사용하여 코
 description: 구문 시각화 도우미는 .NET Compiler Platform SDK에서 코드용으로 생성하는 모델을 탐색할 수 있는 시각적 도구를 제공합니다.
 ms.date: 03/07/2018
 ms.custom: mvc, vs-dotnet
-ms.openlocfilehash: 97a058eed8c0babebd3a41ec91875bef83ac3527
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 9b283f656b5c468a2270abe9818a89218ce63d16
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45750208"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143567"
 ---
 # <a name="explore-code-with-the-roslyn-syntax-visualizer-in-visual-studio"></a>Visual Studio에서 Roslyn 구문 시각화 도우미를 사용하여 코드 탐색
 
@@ -32,7 +32,7 @@ ms.locfileid: "45750208"
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![C# 구문 트리 시각화](media/syntax-visualizer/visualize-csharp.png)
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 ![VB 구문 트리 시각화](media/syntax-visualizer/visualize-visual-basic.png)
 
 ---
@@ -62,7 +62,7 @@ ms.locfileid: "45750208"
 시각화 도우미는 선택한 항목을 루트로 하는 하위 트리의 그래픽 표현을 표시합니다. C# 예제에서 `Main()`메서드에 해당하는 **MethodDeclaration** 노드에 대해 이 단계를 시도합니다. 시각화 도우미는 다음과 같이 보이는 구문 그래프를 표시합니다.
 
 ![C# 구문 그래프 보기](media/syntax-visualizer/csharp-syntax-graph.png)
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 위의 VB 예제에서 `Main()` 메서드에 해당하는 **SubBlock** 노드에 대해 동일하게 시도합니다. 시각화 도우미는 다음과 같이 보이는 구문 그래프를 표시합니다.
 
@@ -128,7 +128,7 @@ End Module
 
 위의 VB 예제는 C#에서 쉽게 복제할 수 있습니다. 별칭에 대해 `Imports C = System.Console` 대신 `using C = System.Console;`을 입력합니다. C#의 앞 단계는 시각화 도우미 창에서 동일한 결과를 생성합니다.
 
-의미 체계 검사 작업은 노드에서만 사용할 수 있습니다. 토큰 또는 퀴즈에는 사용할 수 없습니다. 모든 노드에 검사할 흥미있는 의미 체계 정보가 있는 것은 아닙니다. 노드에 흥미있는 의미 체계 정보가 없으면 *** 기호 보기(있는 경우)** 를 클릭하면 빈 속성 그리드가 표시됩니다.
+의미 체계 검사 작업은 노드에서만 사용할 수 있습니다. 토큰 또는 퀴즈에는 사용할 수 없습니다. 모든 노드에 검사할 흥미있는 의미 체계 정보가 있는 것은 아닙니다. 노드에 흥미로운 의미 체계 정보가 없을 경우 **\* 기호 보기(있는 경우)** 를 클릭하면 빈 속성 그리드가 표시됩니다.
 
 [의미 체계와 함께 작업](work-with-semantics.md) 개요 문서에서 의미 체계 분석을 수행하기 위한 API에 대해 자세히 읽을 수 있습니다.
 

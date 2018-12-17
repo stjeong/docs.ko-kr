@@ -1,15 +1,13 @@
 ---
 title: dotnet clean 명령 - .NET Core CLI
 description: dotnet clean 명령은 현재 디렉터리를 정리합니다.
-author: mairaw
-ms.author: mairaw
-ms.date: 05/25/2018
-ms.openlocfilehash: 5553e4b4423a2d824c05caf7114c47b5f1c20477
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.date: 12/04/2018
+ms.openlocfilehash: 9930d2905f234e7125f27367cda36aa85ae23b87
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45988337"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144457"
 ---
 # <a name="dotnet-clean"></a>dotnet clean
 
@@ -21,17 +19,10 @@ ms.locfileid: "45988337"
 
 ## <a name="synopsis"></a>개요
 
-# <a name="net-core-2xtabnetcore2x"></a>[.NET Core 2.x](#tab/netcore2x)
 ```
 dotnet clean [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-r|--runtime] [-v|--verbosity]
 dotnet clean [-h|--help]
 ```
-# <a name="net-core-1xtabnetcore1x"></a>[.NET Core 1.x](#tab/netcore1x)
-```
-dotnet clean [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-v|--verbosity]
-dotnet clean [-h|--help]
-```
----
 
 ## <a name="description"></a>설명
 
@@ -45,62 +36,40 @@ dotnet clean [-h|--help]
 
 ## <a name="options"></a>옵션
 
-# <a name="net-core-2xtabnetcore2x"></a>[.NET Core 2.x](#tab/netcore2x)
+* **`-c|--configuration {Debug|Release}`**
 
-`-c|--configuration {Debug|Release}`
+  빌드 구성을 정의합니다. 기본값은 `Debug`입니다. 이 옵션은 빌드 시에 지정한 경우에만 정리 시에도 필요합니다.
 
-빌드 구성을 정의합니다. 기본값은 `Debug`입니다. 이 옵션은 빌드 시에 지정한 경우에만 정리 시에도 필요합니다.
+* **`-f|--framework <FRAMEWORK>`**
 
-`-f|--framework <FRAMEWORK>`
+  빌드 시 지정한 [프레임워크](../../standard/frameworks.md)입니다. 프레임워크는 [프로젝트 파일](csproj.md)에 정의해야 합니다. 빌드 시에 프레임워크를 지정한 경우 정리할 때도 프레임워크를 지정해야 합니다.
 
-빌드 시 지정한 [프레임워크](../../standard/frameworks.md)입니다. 프레임워크는 [프로젝트 파일](csproj.md)에 정의해야 합니다. 빌드 시에 프레임워크를 지정한 경우 정리할 때도 프레임워크를 지정해야 합니다.
+* **`-h|--help`**
 
-`-h|--help`
+  명령에 대한 간단한 도움말을 출력합니다.
 
-명령에 대한 간단한 도움말을 출력합니다.
+* **`-o|--output <OUTPUT_DIRECTORY>`**
 
-`-o|--output <OUTPUT_DIRECTORY>`
+  빌드 출력이 배치된 디렉터리입니다. 프로젝트를 빌드할 때 프레임워크를 지정한 경우 `-f|--framework <FRAMEWORK>` 스위치와 출력 디렉터리 스위치를 함께 지정합니다.
 
-빌드 출력이 배치된 디렉터리입니다. 프로젝트를 빌드할 때 프레임워크를 지정한 경우 `-f|--framework <FRAMEWORK>` 스위치와 출력 디렉터리 스위치를 함께 지정합니다.
+* **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-`-r|--runtime <RUNTIME_IDENTIFIER>`
+  지정된 런타임의 출력 폴더를 정리합니다. [자체 포함된 배포](../deploying/index.md#self-contained-deployments-scd)가 만들어진 경우 사용됩니다. .NET Core 2.0 SDK 이후 사용할 수 있는 옵션입니다.
 
-지정된 런타임의 출력 폴더를 정리합니다. [자체 포함된 배포](../deploying/index.md#self-contained-deployments-scd)가 만들어진 경우 사용됩니다.
+* **`-v|--verbosity <LEVEL>`**
 
-`-v|--verbosity <LEVEL>`
-
-명령의 세부 정보 표시 수준을 설정합니다. 허용되는 수준은 q[uiet], m[inimal], n[ormal], d[etailed] 및 diag[nostic]입니다.
-
-# <a name="net-core-1xtabnetcore1x"></a>[.NET Core 1.x](#tab/netcore1x)
-
-`-c|--configuration {Debug|Release}`
-
-빌드 구성을 정의합니다. 기본값은 `Debug`입니다. 이 옵션은 빌드 시에 지정한 경우에만 정리 시에도 필요합니다.
-
-`-f|--framework <FRAMEWORK>`
-
-빌드 시 지정한 [프레임워크](../../standard/frameworks.md)입니다. 프레임워크는 [프로젝트 파일](csproj.md)에 정의해야 합니다. 빌드 시에 프레임워크를 지정한 경우 정리할 때도 프레임워크를 지정해야 합니다.
-
-`-h|--help`
-
-명령에 대한 간단한 도움말을 출력합니다.
-
-`-o|--output <OUTPUT_DIRECTORY>`
-
-빌드 출력이 배치된 디렉터리입니다. 프로젝트를 빌드할 때 프레임워크를 지정한 경우 `-f|--framework <FRAMEWORK>` 스위치와 출력 디렉터리 스위치를 함께 지정합니다.
-
-`-v|--verbosity <LEVEL>`
-
-명령의 세부 정보 표시 수준을 설정합니다. 허용되는 수준은 q[uiet], m[inimal], n[ormal], d[etailed] 및 diag[nostic]입니다.
-
----
+  명령의 세부 정보 표시 수준을 설정합니다. 허용되는 수준은 q[uiet], m[inimal], n[ormal], d[etailed] 및 diag[nostic]입니다.
 
 ## <a name="examples"></a>예제
 
-프로젝트의 기본 빌드 정리:
+* 프로젝트의 기본 빌드 정리:
 
-`dotnet clean`
+  ```console
+  dotnet clean
+  ```
 
-릴리스 구성을 사용하여 빌드한 프로젝트 정리:
+* 릴리스 구성을 사용하여 빌드한 프로젝트 정리:
 
-`dotnet clean --configuration Release`
+  ```console
+  dotnet clean --configuration Release
+  ```

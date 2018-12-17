@@ -3,12 +3,12 @@ title: 튜플 형식 - C# 가이드
 description: C#의 명명되지 않은 튜플 형식과 명명된 튜플 형식에 대한 자세한 정보
 ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
-ms.openlocfilehash: 572e926b6345fc27278f78d1faf2e3b27f017f2e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 32d089d36328d30de344e14fb7e88e80eacf5ed0
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50186033"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155134"
 ---
 # <a name="c-tuple-types"></a>C# 튜플 형식 #
 
@@ -88,7 +88,7 @@ C# 7.1부터 튜플에 대한 필드 이름은 튜플을 초기화하는 데 사
 
 ## <a name="equality-and-tuples"></a>같음 및 튜플
 
-C# 7.3부터 튜플 형식에서는 `==` 및 `!=` 연산자를 지원합니다. 이러한 연산자는 왼쪽 인수의 각 멤버를 오른쪽 인수의 각 멤버와 차례로 비교하여 작동합니다. 이러한 비교는 단락(short-circuit)됩니다. `==` 연산자는 한 쌍이 같지 않으면 멤버 계산을 즉시 중지하고, `!=` 연산자는 한 쌍이 같으면 멤버 계산을 즉시 중지합니다. 다음 코드 예제에서는 `==`을 사용하지만 비교 규칙은 모두 `!=`에 적용됩니다. 다음 코드 예제는 두 쌍의 정수에 대한 같은 비교를 보여줍니다.
+C# 7.3부터 튜플 형식에서는 `==` 및 `!=` 연산자를 지원합니다. 이러한 연산자는 왼쪽 인수의 각 멤버를 오른쪽 인수의 각 멤버와 차례로 비교하여 작동합니다. 이러한 비교는 단락(short-circuit)됩니다. 한 쌍이 같지 않으면 멤버 계산을 즉시 중지합니다. 다음 코드 예제에서는 `==`을 사용하지만 비교 규칙은 모두 `!=`에 적용됩니다. 다음 코드 예제는 두 쌍의 정수에 대한 같은 비교를 보여줍니다.
 
 [!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 

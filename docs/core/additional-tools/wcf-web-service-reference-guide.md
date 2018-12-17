@@ -1,18 +1,18 @@
 ---
-title: Microsoft WCF Web Service Reference Provider 도구
+title: WCF Web Service Reference 추가 - .NET Core
 description: .NET Framework 프로젝트용 서비스 참조 추가와 유사하게, .NET Core 및 ASP.NET Core 프로젝트 기능을 추가하는 Microsoft WCF Web Service Reference Provider 도구에 대한 개요입니다.
 author: mlacouture
 ms.author: johalex
 ms.date: 04/19/2018
-ms.custom: mvc
-ms.openlocfilehash: 416ca4dbedcf6e610aa5307c87934c0cb18be749
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: mvc, seodec18
+ms.openlocfilehash: a1c5f389a5928a34ce1cbf13b2ef27a95b18d031
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33215380"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53148784"
 ---
-# <a name="microsoft-wcf-web-service-reference-provider-tool"></a>Microsoft WCF Web Service Reference Provider 도구
+# <a name="use-the-wcf-web-service-reference-provider-tool"></a>WCF Web Service Reference Provider 도구 사용
 
 지난 몇 년 동안, 많은 Visual Studio 개발자가 .NET Framework 프로젝트에서 웹 서비스에 액세스해야 할 때 제공된 [**서비스 참조 추가**](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference) 도구를 통해 생산성을 향상시킬 수 있었습니다.  **WCF Web Service Reference** 도구는 .NET Core 및 ASP.NET Core 프로젝트에 대한 서비스 참조 추가 기능과 같은 환경을 제공하는 Visual Studio 연결된 서비스 확장입니다. 이 도구는 현재 솔루션, 네트워크 위치 또는 WSDL 파일의 웹 서비스에서 메타 데이터를 검색하고, 해당 웹 서비스를 액세스하는 데 사용할 수 있는 WCF(Windows Communication Foundation) 클라이언트 프록시 코드가 포함된 .NET Core 호환 소스 파일을 생성합니다.
 
@@ -37,11 +37,11 @@ ms.locfileid: "33215380"
 
 다음 이미지와 같이 **연결된 서비스** 페이지가 표시됩니다.
 
-![[연결된 서비스] 탭](./media/wcf-web-service-reference-guide/wcfcs-ConnectedServicesPage.png)
+![.NET Core용 Visual Studio 연결된 서비스 탭](./media/wcf-web-service-reference-guide/wcfcs-ConnectedServicesPage.png)
 
 2. **연결된 서비스** 페이지에서 **Microsoft WCF Web Service Reference Provider**를 클릭합니다. 그러면 **WCF Web Service Reference 구성** 마법사가 나타납니다.
 
-![[서비스 끝점] 탭](./media/wcf-web-service-reference-guide/wcfcs-ServiceEndpointPage.png)
+![.NET Core용 Visual Studio 서비스 엔드포인트 탭](./media/wcf-web-service-reference-guide/wcfcs-ServiceEndpointPage.png)
 
 3. 서비스를 선택합니다.
 
@@ -58,7 +58,7 @@ ms.locfileid: "33215380"
 
 4. **데이터 형식 옵션** 양식을 사용하여 생성된 서비스 참조 구성 설정을 구체화할 수 있습니다.
 
-![데이터 형식 옵션 탭](./media/wcf-web-service-reference-guide/wcfcs-DataTypesPage.png)
+![.NET Core용 Visual Studio 데이터 형식 옵션 탭](./media/wcf-web-service-reference-guide/wcfcs-DataTypesPage.png)
 
 > [!NOTE]
 > **참조된 어셈블리의 형식 재사용** 확인란 옵션은 서비스 참조 코드 생성에 필요한 데이터 형식이 프로젝트의 참조 어셈블리 중 하나에 정의될 때 유용합니다.  컴파일 시간 형식 충돌 또는 런타임 문제를 피하기 위해 기존 데이터 형식을 다시 사용하는 것이 중요합니다.
@@ -74,7 +74,7 @@ ms.locfileid: "33215380"
 * *reference.cs*라는 파일에 서비스 참조 코드를 생성하고 **연결된 서비스** 노드 아래의 프로젝트에 추가합니다. 
 * 대상 플랫폼에서 컴파일 및 실행하는 데 필요한 NuGet 패키지 참조로 프로젝트 파일(.csproj)을 업데이트합니다.
 
-![진행률 창](./media/wcf-web-service-reference-guide/wcfcs-ProgressWindow.png)
+![Visual Studio 진행률 창](./media/wcf-web-service-reference-guide/wcfcs-ProgressWindow.png)
 
 이러한 과정을 완료하면 생성된 WCF 클라이언트 형식의 인스턴스를 만들고 서비스 작업을 호출할 수 있습니다.
 

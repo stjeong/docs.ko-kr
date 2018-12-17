@@ -1,6 +1,6 @@
 ---
 title: CCW
-ms.date: 03/30/2017
+ms.date: 10/23/2018
 dev_langs:
 - csharp
 - vb
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d04be3b5-27b9-4f5b-8469-a44149fabf78
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 21f7b0d56a788b4161fb7e99899b4dd15a434152
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 75a8fb01fd22a7f84fadaf355a269b3ad3de63ab
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394968"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145178"
 ---
 # <a name="com-callable-wrapper"></a>CCW
 COM 클라이언트가.NET 개체를 호출할 때 공용 언어 런타임에서는 관리되는 개체 및 개체에 대한 COM 호출 가능 래퍼(CCW)를 만듭니다. .NET 개체를 직접 참조할 수는 없으며, COM 클라이언트는 CCW를 관리되는 개체에 대한 프록시로 사용합니다.  
@@ -62,7 +62,7 @@ COM 인터페이스 및 COM 호출 가능 래퍼
 |인터페이스|설명|  
 |---------------|-----------------|  
 |(\_*classname*) 클래스 인터페이스|관리되는 개체에서 명시적으로 노출되는 모든 공용 인터페이스, 메서드, 속성 및 필드를 노출하는, 런타임에서 노출되고 명시적으로 정의되지 않는 인터페이스입니다.|  
-|**IConnectionPoint** 및 **IconnectionPointContainer**|대리자 기반 이벤트(이벤트 구독자를 등록하기 위한 인터페이스)의 소스가 되는 개체에 대한 인터페이스입니다.|  
+|**IConnectionPoint** 및 **IConnectionPointContainer**|대리자 기반 이벤트(이벤트 구독자를 등록하기 위한 인터페이스)의 소스가 되는 개체에 대한 인터페이스입니다.|  
 |**IdispatchEx**|클래스가 **IExpando**를 구현하는 경우 런타임에서 제공되는 인터페이스입니다. **IDispatchEx** 인터페이스는 **IDispatch**와 달리 멤버의 대/소문자 구분 호출, 열거형, 추가, 삭제를 가능하게 하는 **IDispatch** 인터페이스의 확장입니다.|  
 |**IEnumVARIANT**|클래스가 **IEnumerable**을 구현하는 경우 컬렉션에서 개체를 열거하는 컬렉션 형식 클래스에 대한 인터페이스입니다.|  
   
@@ -84,17 +84,17 @@ Public Class Mammal
 End Class  
 ```  
   
-```csharp  
-// Applies the ClassInterfaceAttribute to set the interface to dual.  
-[ClassInterface(ClassInterfaceType.AutoDual)]  
-// Implicitly extends System.Object.  
-public class Mammal  
-{  
-    void  Eat();  
-    void  Breathe():  
-    void  Sleep();  
-}  
-```  
+```csharp
+// Applies the ClassInterfaceAttribute to set the interface to dual.
+[ClassInterface(ClassInterfaceType.AutoDual)]
+// Implicitly extends System.Object.
+public class Mammal
+{
+    public void Eat() {}
+    public void Breathe() {}
+    public void Sleep() {}
+}
+```
   
  COM 클라이언트는 [형식 라이브러리 내보내기(Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md) 도구에서 생성한 형식 라이브러리에 설명된 `_Mammal`이라는 클래스 인터페이스에 대한 포인터를 가져올 수 있습니다. `Mammal` 클래스가 인터페이스를 하나 이상 구현하면 인터페이스가 coclass 아래에 표시됩니다.  
   
@@ -139,12 +139,13 @@ coclass Mammal
 End Class  
 ```  
   
-```csharp  
-[ClassInterface(ClassInterfaceType.None)]  
-public class LoanApp : IExplicit {  
-    void M();  
-}  
-```  
+```csharp
+[ClassInterface(ClassInterfaceType.None)]
+public class LoanApp : IExplicit
+{
+    int IExplicit.M() { return 0; }
+}
+```
   
  **ClassInterfaceType.None** 값은 클래스 메타데이터가 형식 라이브러리에 노출될 때 클래스 인터페이스가 생성되지 않도록 방지합니다. 이전 예제에서 COM 클라이언트는 `IExplicit` 인터페이스를 통해서만 `LoanApp` 클래스에 액세스할 수 있습니다.  
   
@@ -163,20 +164,31 @@ public class LoanApp : IExplicit {
 End Class  
 ```  
   
-```csharp  
-[ClassInterface(ClassInterfaceType.AutoDispatch]  
-public class LoanApp : IAnother {  
-    void M();  
-}  
-```  
+```csharp
+[ClassInterface(ClassInterfaceType.AutoDispatch)]
+public class LoanApp
+{
+    public int M() { return 0; }
+}
+```
   
  런타임에 인터페이스 멤버의 DispId를 가져오려고 COM 클라이언트는 **IDispatch.GetIdsOfNames**를 호출합니다. 인터페이스에서 메서드를 호출하려면 반환된 DispId를 인수로 **IDispatch.Invoke**에 전달합니다.  
   
 ### <a name="restrict-using-the-dual-interface-option-for-the-class-interface"></a>클래스 인터페이스의 이중 인터페이스 옵션 사용을 제한하세요.  
  이중 인터페이스를 사용하면 COM 클라이언트에서 인터페이스 멤버를 초기에 바인딩하고 런타임에 바인딩할 수 있습니다. 디자인 타임이나 테스트 중에는 클래스 인터페이스를 이중으로 설정하는 것이 유용할 수 있습니다. 수정되지 않는 관리되는 클래스(및 해당 기본 클래스)에도 이 옵션을 적용할 수 있습니다. 이외의 경우에는 클래스 인터페이스를 이중으로 설정하지 마세요.  
   
- 드물지만 자동으로 생성된 이중 인터페이스가 적절할 수 있지만 버전과 관련해서 복잡해지는 경우가 더 많습니다. 예를 들어 파생 클래스의 클래스 인터페이스를 사용하는 COM 클라이언트는 기본 클래스가 변경될 때 쉽게 중단될 수 있습니다. 타사에서 기본 클래스를 제공할 경우 클래스 인터페이스의 레이아웃을 제어할 수 없습니다. 또한 디스패치 전용 인터페이스와 달리 이중 인터페이스(**ClassInterface.AutoDual**)는 내보낸 형식 라이브러리에서 클래스 인터페이스의 설명을 제공합니다. 이 설명은 런타임에 바인딩된 클라이언트가 런타임에 DispId를 캐시하도록 권장합니다.  
+ 드물지만 자동으로 생성된 이중 인터페이스가 적절할 수 있지만 버전과 관련해서 복잡해지는 경우가 더 많습니다. 예를 들어 파생 클래스의 클래스 인터페이스를 사용하는 COM 클라이언트는 기본 클래스가 변경될 때 쉽게 중단될 수 있습니다. 타사에서 기본 클래스를 제공할 경우 클래스 인터페이스의 레이아웃을 제어할 수 없습니다. 또한 디스패치 전용 인터페이스와 달리 이중 인터페이스(**ClassInterfaceType.AutoDual**)는 내보낸 형식 라이브러리에서 클래스 인터페이스의 설명을 제공합니다. 이 설명은 런타임에 바인딩된 클라이언트가 런타임에 DispId를 캐시하도록 권장합니다.  
   
+### <a name="ensure-that-all-com-event-notifications-are-late-bound"></a>모든 COM 이벤트 알림이 런타임에 바인딩되는지 확인합니다.
+
+기본적으로 COM 형식 정보는 관리되는 어셈블리에 직접 포함되므로 PIA(주 interop 어셈블리)가 필요하지 않습니다. 그러나 포함 형식 정보의 제한 사항 중 하나는 초기 바인딩된 vtable 호출에 의한 COM 이벤트 알림 전송을 지원하지 않고 런타임에 바인딩된 `IDispatch::Invoke` 호출만 지원합니다.
+
+애플리케이션에 COM 이벤트 인터페이스 메서드에 대한 초기 바인딩된 호출이 필요한 경우 Visual Studio에서 **Interop 형식 포함** 속성을 `true`로 설정하거나 프로젝트 파일에 다음 요소를 포함할 수 있습니다.
+
+```xml
+<EmbedInteropTypes>True</EmbedInteropTypes>
+```
+
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
  [COM 래퍼](com-wrappers.md)  

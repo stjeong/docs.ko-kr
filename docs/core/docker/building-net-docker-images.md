@@ -1,21 +1,21 @@
 ---
-title: .NET Core Docker 이미지 작성
-description: Docker 이미지 및 .NET Core 이해
+title: Docker 이미지 개요 - .NET Core
+description: Docker 레지스트리에서 게시된 .NET Core Docker 이미지를 사용하는 방법을 알아봅니다. 이미지를 풀하고 고유 이미지를 작성하는 방법도 알아보겠습니다.
 author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
-ms.custom: mvc
-ms.openlocfilehash: 675b6821588f8d0dd9495346a13665a32986f060
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.custom: mvc, seodec18
+ms.openlocfilehash: 34ff6ce7d990412fa0ac4896d1e2e39b307681f0
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841166"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145834"
 ---
-# <a name="building-docker-images-for-net-core-applications"></a>.NET Core 응용 프로그램에 대한 Docker 이미지 작성
+# <a name="learn-about-docker-images-for-net-core"></a>.NET Core용 Docker 이미지에 대한 자세한 정보
 
- 이 자습서에서는 Docker에서 .NET Core를 사용하는 방법에 초점을 둡니다. 먼저 Microsoft에서 제공되고 관리되는 서로 다른 Docker 이미지를 살펴보고 사례를 사용합니다. 그런 다음 ASP.NET Core 앱을 빌드하고 Docker화하는 방법을 배웁니다.
+이 자습서에서는 Docker에서 .NET Core를 사용하는 방법에 초점을 둡니다. 먼저 Microsoft에서 제공되고 관리되는 서로 다른 Docker 이미지를 살펴보고 사례를 사용합니다. 그런 다음 ASP.NET Core 앱을 빌드하고 Docker화하는 방법을 배웁니다.
 
 이 자습서를 진행하면서 다음을 익히게 됩니다.
 > [!div class="checklist"]
@@ -115,7 +115,7 @@ ms.locfileid: "48841166"
 
 #### <a name="net-core-21-sdk"></a>.NET Core 2.1 SDK
 
-* [.NET Core SDK 2.1](https://www.microsoft.com/net/core)을 설치합니다.
+* [.NET Core 2.1 SDK](https://www.microsoft.com/net/core)를 설치합니다.
 
 * 아직 없는 경우 즐겨 찾는 코드 편집기를 설치합니다.
 

@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 98423e6c103f7eb93b4bfa35ef19b6551c0df0e0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 806ccb1d33d9a7b66c740099864decd651c9213f
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399596"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53144886"
 ---
 # <a name="gacutilexe-global-assembly-cache-tool"></a>Gacutil.exe(전역 어셈블리 캐시 도구)
 전역 어셈블리 캐시 도구를 사용하면 전역 어셈블리 캐시와 다운로드 캐시의 내용을 보고 조작할 수 있습니다.  
@@ -93,7 +93,23 @@ myAssembly1,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 myAssembly2,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab  
 myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab  
 ```  
-  
+
+> [!NOTE]
+>  79자와 91자(파일 확장명 제외) 사이보다 긴 파일 이름을 가진 어셈블리를 설치하려고 하면 다음 오류가 발생할 수 있습니다.
+> ```
+> Failure adding assembly to the cache:   The file name is too long.
+> ```
+> 이는 내부적으로 Gacutil.exe가 다음 요소로 구성된 최대 MAX_PATH 문자 수의 경로를 생성하기 때문입니다.
+> - GAC 루트 - 34자(즉, `C:\Windows\Microsoft.NET\assembly\`)
+> - 아키텍처 - 7자 또는 9자(즉, `GAC_32\`, `GAC_64\`, `GAC_MSIL`)
+> - AssemblyName - 다른 요소의 크기에 따라 최대 91자(예: `System.Xml.Linq\`)
+> - AssemblyInfo - 다음으로 구성된 31-48자 이상
+>   - 프레임워크 - 5자(예: `v4.0_`)
+>   - AssemblyVersion - 8-24자(예: `9.0.1000.0_`)
+>   - AssemblyLanguage - 1-8자(예: `de_`, `sr-Cyrl_`)
+>   - PublicKey - 17자(예: `31bf3856ad364e35\`)
+> - DllFileName - 최대 91 + 4자(즉, `<AssemblyName>.dll`)
+
 ## <a name="examples"></a>예제  
  다음 명령은 전역 어셈블리 캐시에 `mydll.dll` 어셈블리를 설치합니다.  
   

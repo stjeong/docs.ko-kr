@@ -3,12 +3,12 @@ title: C# 6의 새로운 기능 - C# 가이드
 description: C# 버전 6의 새로운 기능을 알아봅니다.
 ms.date: 09/22/2016
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
-ms.openlocfilehash: ad3515e1fc7d70e1377f007276c369d2884780f0
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6aa070d54bb1b571d4fa51538b0521a554073cbc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194035"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146747"
 ---
 # <a name="whats-new-in-c-6"></a>C# 6의 새로운 기능
 
@@ -94,9 +94,9 @@ public class Student
 
 ‘Auto 속성 이니셜라이저’를 통해 속성 선언의 일부로 auto 속성의 초기 값을 선언할 수 있습니다.  이전 버전에서는 이러한 속성에 setter를 포함해야 하고, 지원 필드에서 사용되는 데이터 저장소를 초기화하려면 해당 setter를 사용해야 합니다. 이름이 포함된 학생 및 학생의 성적 목록에 이 클래스를 사용하는 것이 좋습니다.
 
-[!code-csharp[Construction](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Construction)]
+[!code-csharp[Student](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Student)]
  
-이 클래스가 커지면 다른 생성자를 포함할 수 있습니다. 각 생성자는 이 필드를 초기화해야 합니다. 초기화하지 않으면 오류가 발생합니다.
+이 클래스가 커지면 다른 생성자를 포함할 수 있습니다. 각 생성자는 Grades 속성을 초기화해야 합니다. 초기화하지 않으면 오류가 발생합니다.
 
 C# 6에서는 auto 속성 선언에서 auto 속성에 사용되는 저장소의 초기 값을 할당할 수 있습니다.
 
@@ -104,7 +104,7 @@ C# 6에서는 auto 속성 선언에서 auto 속성에 사용되는 저장소의 
 
 `Grades` 멤버는 선언된 위치에서 초기화됩니다. 따라서 더 쉽게 정확히 한 번 초기화를 수행할 수 있습니다. 초기화가 속성 선언의 일부이므로 `Student` 개체에 대한 public 인터페이스를 통해 저장소를 균등하게 할당하기 쉽습니다.
 
-다음과 같이 속성 이니셜라이저는 읽기 전용 속성 및 읽기/쓰기 속성과 함께 사용할 수 있습니다.
+속성 이니셜라이저는 위와 같이 읽기 전용 속성과 함께 사용할 수 있으며, 다음과 같이 읽기/쓰기 속성과 함께 사용할 수도 있습니다.
 
 [!code-csharp[ReadWriteInitialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 

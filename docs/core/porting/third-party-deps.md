@@ -1,26 +1,27 @@
 ---
-title: .NET Core로 이식 - 타사 종속성 분석
-description: .NET Framework에서 .NET Core로 프로젝트를 이식하기 위해 타사 종속성을 분석하는 방법을 알아봅니다.
+title: .NET Core로 코드를 포팅하기 위해 종속성 분석
+description: .NET Framework에서 .NET Core로 프로젝트를 포팅하기 위해 외부 종속성을 분석하는 방법을 알아봅니다.
 author: cartermp
 ms.author: mairaw
-ms.date: 02/15/2018
-ms.openlocfilehash: 06d8d36d8369680c54af4d16513b2b871b57079c
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.date: 12/04/2018
+ms.custom: seodec18
+ms.openlocfilehash: 7d18d4c52a37878e160f71aeea4cfd00045fe6b4
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46001003"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146877"
 ---
-# <a name="analyze-your-third-party-dependencies"></a>타사 종속성 분석
+# <a name="analyze-your-dependencies-to-port-code-to-net-core"></a>.NET Core로 코드를 포팅하기 위해 종속성 분석
 
-.NET Core 또는 .NET Standard에 코드를 이식하려는 경우 이식 프로세스의 첫 번째 단계는 타사 종속성을 이해하는 것입니다. 타사 종속성은 [NuGet 패키지](#analyze-referenced-nuget-packages-on-your-project) 또는 프로젝트에서 참조 중인 [DLL](#analyze-dependencies-that-arent-nuget-packages)입니다. 각 종속성을 평가하고 .NET Core와 호환되지 않는 종속성에 대한 대체 계획을 개발합니다. 이 문서에서는 종속성이 .NET Core와 호환되는지 확인하는 방법을 보여 줍니다.
+코드를 .NET Core 또는 .NET Standard로 포팅하려면 종속성을 파악해야 합니다. 외부 종속성은 프로젝트에서 참조하지만 빌드하지 않는 [NuGet 패키지](#analyze-referenced-nuget-packages-on-your-project) 또는 [DLL](#analyze-dependencies-that-arent-nuget-packages)입니다. 각 종속성을 평가하고 .NET Core와 호환되지 않는 종속성에 대한 대체 계획을 개발합니다. 종속성이 .NET Core와 호환되는지 확인하는 방법은 다음과 같습니다.
 
-## <a name="analyze-referenced-nuget-packages-in-your-project"></a>프로젝트에서 참조된 NuGet 패키지 분석
+## <a name="analyze-referenced-nuget-packages-in-your-projects"></a>프로젝트에서 참조된 NuGet 패키지 분석
 
 프로젝트에서 NuGet 패키지를 참조하는 경우 .NET Core와 호환되는지 확인해야 합니다.
 여기에는 두 가지 방법이 있습니다.
 
-* [NuGet 패키지 탐색기 앱 사용](#analyze-nuget-packages-using-nuget-package-explorer)(가장 안정적인 방법)
+* [NuGet 패키지 탐색기 앱 사용](#analyze-nuget-packages-using-nuget-package-explorer)
 * [nuget.org 사이트 사용](#analyze-nuget-packages-using-nugetorg)
 
 패키지를 분석한 후 .NET Core 및 대상 .NET Framework와 호환되지 않는 경우 [.NET Framework 호환 모드](#net-framework-compatibility-mode)가 이식 프로세스에 도움이 될 수 있는지 확인할 수 있습니다.
@@ -52,6 +53,7 @@ netcoreapp1.0
 netcoreapp1.1
 netcoreapp2.0
 netcoreapp2.1
+netcoreapp2.2
 portable-net45-win8
 portable-win8-wpa8
 portable-net451-win81
@@ -63,24 +65,6 @@ portable-net45-win8-wpa8-wpa81
 > [!IMPORTANT]
 > 패키지에서 지원하는 TFM을 살펴볼 때 호환되는 동안 `netcoreapp*`은 .NET Standard 프로젝트용이 아닌 .NET Core 프로젝트용입니다.
 > `netstandard*`가 아닌 `netcoreapp*`만을 대상으로 하는 라이브러리는 다른 .NET Core 앱에서만 사용할 수 있습니다.
-
-호환 가능한 .NET Core의 시험판에서 사용되는 일부 레거시 TFM도 있습니다.
-
-```
-dnxcore50
-dotnet5.0
-dotnet5.1
-dotnet5.2
-dotnet5.3
-dotnet5.4
-dotnet5.5
-```
-
-이러한 TFM은 코드와 호환될 수는 있지만 호환성이 보장되지는 않습니다. 이러한 TFM이 포함된 패키지는 시험판 .NET Core 패키지로 빌드된 것입니다. 이러한 TFM을 사용하여 패키지가 .NET Standard 기반으로 업데이트되는 경우를 기록해 둡니다.
-
-> [!NOTE]
-> 기존 PCL 또는 시험판 .NET Core를 대상으로 하는 패키지를 사용하려면 프로젝트 파일에서 `PackageTargetFallback` MSBuild 요소를 사용해야 합니다.
-> 이 MSBuild 요소에 대한 자세한 내용은 [`PackageTargetFallback`](../tools/csproj.md#packagetargetfallback)을 참조하세요.
 
 ### <a name="analyze-nuget-packages-using-nugetorg"></a>nuget.org를 사용하여 NuGet 패키지 분석
 
@@ -109,6 +93,12 @@ NuGet 패키지를 분석한 후 대부분의 NuGet 패키지와 마찬가지로
 ```
 
 Visual Studio에서 컴파일러 경고를 제거하는 방법에 대한 자세한 내용은 [NuGet 패키지에 대한 경고 표시 안 함](/visualstudio/ide/how-to-suppress-compiler-warnings#suppressing-warnings-for-nuget-packages)을 참조하세요.
+
+### <a name="port-your-packages-to-packagereference"></a>`PackageReference`로 패키지 포팅
+
+.NET Core는 [PackageReference](/nuget/consume-packages/package-references-in-project-files)를 사용하여 패키지 종속성을 지정합니다. [packages.config](/nuget/reference/packages-config)를 사용하여 패키지를 지정하는 경우 `PackageReference`로 변환해야 합니다.
+
+[packages.config에서 PackageReference로 마이그레이션](/nuget/reference/migrate-packages-config-to-package-reference)에서 자세히 알아볼 수 있습니다.
 
 ### <a name="what-to-do-when-your-nuget-package-dependency-doesnt-run-on-net-core"></a>NuGet 패키지 종속성이 .NET Core에서 실행되지 않는 경우 수행할 작업
 

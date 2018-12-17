@@ -2,12 +2,12 @@
 title: C# 소개 - 개발 도구 익히기
 description: 이 문서에서는 머신에서 C# 및 .NET 응용 프로그램을 개발하는 데 사용할 도구의 기본 사항을 소개합니다.
 ms.date: 10/23/2018
-ms.openlocfilehash: ec7e55fbf2a89a8ec45db956fc575edeb2283f56
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: cf5bf68c1497bf62826656aa9cd2bd981128d3a2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200164"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129989"
 ---
 # <a name="become-familiar-with-the-net-development-tools"></a>.NET 개발 도구 익히기
 
@@ -22,7 +22,7 @@ ms.locfileid: "50200164"
 
 사용할 다른 명령은 실행 파일을 빌드하기 위한 [`dotnet build`](../../../core/tools/dotnet-build.md) 및 실행 파일을 실행하기 위한 [`dotnet run`](../../../core/tools/dotnet-run.md)입니다.
 
-## <a name="pick-your-turorial"></a>자습서 선택
+## <a name="pick-your-tutorial"></a>자습서 선택
 
 다음과 같은 자습서 중 하나를 시작할 수 있습니다.
 

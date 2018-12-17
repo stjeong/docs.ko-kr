@@ -1,20 +1,18 @@
 ---
-title: Visual Studio 2017에서 C# 또는 Visual Basic Hello World .NET Core 응용 프로그램 디버깅
+title: Visual Studio 2017을 사용하여 Hello World .NET Core 애플리케이션 디버그
 description: Visual Studio 2017에서 C# 또는 Visual Basic으로 작성된 Hello World 앱을 디버그하는 방법을 알아봅니다.
-author: BillWagner
-ms.author: wiwagn
 ms.date: 12/15/2017
-ms.custom: vs-dotnet
-ms.openlocfilehash: 53e4549f4790bc0756cd0ad0b903b3dc25d2f66a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.custom: vs-dotnet, seodec18
+ms.openlocfilehash: df153740e492b33c91b4cfc2f148a4113f1ab5d0
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200126"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147530"
 ---
-# <a name="debug-your-hello-world-application-with-visual-studio-2017"></a>Visual Studio 2017을 사용하여 Hello World 응용 프로그램 디버그
+# <a name="debug-your-c-or-visual-basic-net-core-hello-world-application-using-visual-studio-2017"></a>Visual Studio 2017을 사용하여 C# 또는 Visual Basic .NET Core Hello World 애플리케이션 디버그
 
-지금까지 [Visual Studio 2017에서 .NET Core를 사용하여 C# Hello World 응용 프로그램 빌드](.\with-visual-studio.md) 또는 [Visual Studio 2017에서 .NET Core를 사용하여 Visual Basic Hello World 응용 프로그램 빌드](vb-with-visual-studio.md)의 단계에 따라 간단한 콘솔 응용 프로그램을 만들고 실행했습니다. 응용 프로그램을 작성하고 컴파일했으면 테스트를 시작할 수 있습니다. Visual Studio에는 응용 프로그램을 테스트하고 문제를 해결하는 데 사용할 수 있는 포괄적인 디버깅 도구 집합이 포함되어 있습니다.
+지금까지 [Visual Studio 2017에서 .NET Core를 사용하여 C# Hello World 응용 프로그램 빌드](with-visual-studio.md) 또는 [Visual Studio 2017에서 .NET Core를 사용하여 Visual Basic Hello World 응용 프로그램 빌드](vb-with-visual-studio.md)의 단계에 따라 간단한 콘솔 응용 프로그램을 만들고 실행했습니다. 응용 프로그램을 작성하고 컴파일했으면 테스트를 시작할 수 있습니다. Visual Studio에는 응용 프로그램을 테스트하고 문제를 해결하는 데 사용할 수 있는 포괄적인 디버깅 도구 집합이 포함되어 있습니다.
 
 ## <a name="debugging-in-debug-mode"></a>디버그 모드에서 디버깅
 
@@ -228,4 +226,4 @@ Visual Studio에서 프로그램을 한 줄씩 단계별로 실행하고 해당 
 
 F5 키를 누르거나 **빌드** 메뉴에서 **솔루션 빌드**를 선택하면 Visual Studio에서 콘솔 응용 프로그램의 릴리스 버전을 컴파일합니다. 응용 프로그램의 디버그 버전처럼 릴리스 버전을 테스트할 수 있습니다.
 
-응용 프로그램 디버그를 마친 후의 다음 단계는 배포 가능한 응용 프로그램 버전을 게시하는 것입니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 Hello World 응용 프로그램 게시](./publishing-with-visual-studio.md)를 참조하세요.
+응용 프로그램 디버그를 마친 후의 다음 단계는 배포 가능한 응용 프로그램 버전을 게시하는 것입니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 사용하여 Hello World 응용 프로그램 게시](publishing-with-visual-studio.md)를 참조하세요.

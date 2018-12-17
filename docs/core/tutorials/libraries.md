@@ -1,15 +1,16 @@
 ---
 title: 플랫폼 간 도구로 라이브러리 개발
-description: .NET Core CLI 도구를 사용하여 .NET용 라이브러리를 만드는 방법에 관해 알아봅니다.
+description: .NET Core CLI 도구를 사용하여 .NET Core 라이브러리를 만드는 방법을 알아봅니다. 여러 프레임워크를 지원하는 라이브러리를 만듭니다.
 author: cartermp
 ms.author: mairaw
 ms.date: 05/01/2017
-ms.openlocfilehash: a6db7a15c484122600afd54814d19ea11bd1abc1
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.custom: seodec18
+ms.openlocfilehash: a8028883b3424588d0fb926dcb73f400a8c620dc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43256198"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53148537"
 ---
 # <a name="developing-libraries-with-cross-platform-tools"></a>플랫폼 간 도구로 라이브러리 개발
 
@@ -19,9 +20,9 @@ ms.locfileid: "43256198"
 
 컴퓨터에 [.NET Core SDK 및 CLI](https://www.microsoft.com/net/core)를 설치해야 합니다.
 
-.NET Framework 버전을 다루는 이 문서의 섹션에서는 [.NET Framework](http://getdotnet.azurewebsites.net/)가 설치된 Windows 컴퓨터가 필요합니다.
+.NET Framework 버전을 다루는 이 문서의 섹션에서는 [.NET Framework](https://dotnet.microsoft.com)가 설치된 Windows 컴퓨터가 필요합니다.
 
-또한 이전.NET Framework 대상을 지원하려는 경우 [.NET 대상 플랫폼 페이지](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)에서 이전 프레임워크 버전용 타기팅/개발자 팩을 설치해야 합니다. 다음 표를 참조하세요.
+또한 이전 .NET Framework 대상을 지원하려는 경우 [.NET 다운로드 보관 페이지](https://dotnet.microsoft.com/download/archives)에서 이전 프레임워크 버전용 타기팅/개발자 팩을 설치해야 합니다. 다음 표를 참조하세요.
 
 | .NET Framework 버전 | 다운로드할 파일                                       |
 | ---------------------- | ------------------------------------------------------ |
@@ -39,7 +40,7 @@ ms.locfileid: "43256198"
 
 이 문서에는 .NET 표준을 다양한 구현에 매핑하는 표가 있습니다.
 
-[!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
+[!INCLUDE [net-standard-table](../../../includes/net-standard-table.md)]
 
 라이브러리 만들기 작업에서 이 표의 의미는 다음과 같습니다.
 
@@ -136,7 +137,7 @@ ms.locfileid: "43256198"
 
 빌드 시스템은 `#if` 지시문에 사용된 다음의 전처리기 기호를 인식합니다.
 
-[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+[!INCLUDE [Preprocessor symbols](../../../includes/preprocessor-symbols.md)]
 
 대상당 조건부 컴파일을 사용하는 예는 다음과 같습니다.
 
@@ -167,7 +168,7 @@ namespace MultitargetLib
         // .NET Framework 4.0 does not have async/await
         public string GetDotNetCount()
         {
-            string url = "http://www.dotnetfoundation.org/";
+            string url = "https://www.dotnetfoundation.org/";
 
             var uri = new Uri(url);
 
@@ -187,7 +188,7 @@ namespace MultitargetLib
         // .NET 4.5+ can use async/await!
         public async Task<string> GetDotNetCountAsync()
         {
-            string url = "http://www.dotnetfoundation.org/";
+            string url = "https://www.dotnetfoundation.org/";
 
             // HttpClient is thread-safe, so no need to explicitly lock here
             var result = await _client.GetStringAsync(url);
@@ -213,7 +214,7 @@ netstandard1.4/
 
 ## <a name="how-to-test-libraries-on-net-core"></a>.NET Core에서 라이브러리를 테스트하는 방법
 
-플랫폼 간에 테스트할 수 있는 기능이 중요합니다. 기본적으로 [xUnit](http://xunit.github.io/) 또는 MSTest를 사용할 수 있습니다. 둘 다 .NET Core에서 라이브러리를 단위 테스트하는 데 적합합니다. 테스트 프로젝트로 솔루션을 설정하는 방법은 [솔루션 구조](#structuring-a-solution)에 따라 달라집니다. 다음 예제에서는 테스트 및 원본 디렉터리가 동일한 최상위 디렉터리에 있다고 가정합니다.
+플랫폼 간에 테스트할 수 있는 기능이 중요합니다. 기본적으로 [xUnit](https://xunit.github.io/) 또는 MSTest를 사용할 수 있습니다. 둘 다 .NET Core에서 라이브러리를 단위 테스트하는 데 적합합니다. 테스트 프로젝트로 솔루션을 설정하는 방법은 [솔루션 구조](#structuring-a-solution)에 따라 달라집니다. 다음 예제에서는 테스트 및 원본 디렉터리가 동일한 최상위 디렉터리에 있다고 가정합니다.
 
 > [!NOTE]
 > 일부 [.NET Core CLI 명령](../tools/index.md)이 사용됩니다. 자세한 내용은 [dotnet new](../tools/dotnet-new.md) 및 [dotnet sln](../tools/dotnet-sln.md)을 참조하세요.
@@ -253,7 +254,7 @@ netstandard1.4/
    dotnet build
    ```
 
-   [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+   [!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]
 
 1. `dotnet test` 명령을 실행하여 xUnit가 실행되는지 확인합니다. MSTest를 사용하도록 선택한 경우 MSTest 콘솔 실행기가 대신 실행되어야 합니다.
     

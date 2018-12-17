@@ -6,14 +6,15 @@ helpviewer_keywords:
 - pointers [C#], & operator
 - pointer expressions [C#], address-of operator
 ms.assetid: 44fe2cd9-a64f-4ef5-be2a-09ce807c0182
-ms.openlocfilehash: 40a7ac34a4e68df7aa316adc3cbd1999d975eabe
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: bb752306bcdb630d652d331e95a765aee6afac3d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43741882"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150942"
 ---
 # <a name="how-to-obtain-the-address-of-a-variable-c-programming-guide"></a>방법: 변수의 주소 가져오기(C# 프로그래밍 가이드)
+
 고정 변수로 계산되는 단항 식의 주소를 가져오려면 address-of 연산자 `&`를 사용합니다.  
   
 ```csharp  
@@ -27,7 +28,7 @@ int* p = &number; //address-of operator &
   
  상수 또는 값의 주소를 가져올 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `int`에 대한 포인터인 `p`가 선언되고 정수 변수 `number`의 주소가 할당됩니다. `number` 변수는 `*p`에 대한 할당 결과로 초기화됩니다. 이 대입문을 주석으로 처리하면 `number` 변수의 초기화가 제거되지만 컴파일 시간 오류가 발생하지 않습니다.  
 
 > [!NOTE]

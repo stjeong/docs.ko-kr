@@ -7,12 +7,12 @@ helpviewer_keywords:
 - exceptions [C#], creating
 - exceptions [C#], throwing
 ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
-ms.openlocfilehash: 43d566fed4e2963489da0b7a11c78a54740b7ab1
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: c81332307542608e2c7a3f3a5fa89900862f1e84
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "44260073"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145597"
 ---
 # <a name="creating-and-throwing-exceptions-c-programming-guide"></a>예외 만들기 및 Throw(C# 프로그래밍 가이드)
 예외는 프로그램을 실행하는 동안 오류가 발생했음을 나타내는 데 사용됩니다. 오류를 설명하는 예외 개체가 만들어지고 [throw](../../../csharp/language-reference/keywords/throw.md) 키워드를 통해 *throw*됩니다. 그런 다음 런타임에 가장 호환성이 높은 예외 처리기를 검색합니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "44260073"
   
  모든 예외에 이름이 <xref:System.Exception.Message%2A>인 속성이 포함되어 있습니다. 예외의 이유를 설명하려면 이 문자열을 설정해야 합니다. 보안이 중요한 정보는 메시지 텍스트에 넣으면 안 됩니다. <xref:System.Exception.Message%2A> 외에 <xref:System.ArgumentException>에는 예외를 throw한 인수의 이름으로 설정해야 하는 <xref:System.ArgumentException.ParamName%2A> 속성이 포함되어 있습니다. 속성 setter의 경우 <xref:System.ArgumentException.ParamName%2A>을 `value`로 설정해야 합니다.  
   
- Public 및 protected 메서드 멤버는 의도한 함수를 완료할 수 없을 때마다 예외를 throw해야 합니다. throw된 예외 클래스는 오류 조건에 맞을 수 있는 가장 구체적인 예외여야 합니다. 이러한 예외는 클래스 기능의 일부로 문서화해야 하고 파생 클래스 또는 원래 클래스의 업데이트는 이전 버전과의 호환성을 위해 같은 동작을 유지해야 합니다.  
+ public 및 protected 메서드는 의도한 함수를 완료할 수 없을 때마다 예외를 throw해야 합니다. throw된 예외 클래스는 오류 조건에 맞을 수 있는 가장 구체적인 예외여야 합니다. 이러한 예외는 클래스 기능의 일부로 문서화해야 하고 파생 클래스 또는 원래 클래스의 업데이트는 이전 버전과의 호환성을 위해 같은 동작을 유지해야 합니다.  
   
 ## <a name="things-to-avoid-when-throwing-exceptions"></a>예외를 throw할 때 피해야 하는 작업  
  다음 목록은 예외를 throw할 때 피해야 할 사례를 나타냅니다.  

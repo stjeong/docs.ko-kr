@@ -1,19 +1,17 @@
 ---
-title: .NET Core와 Docker 기본 사항 알아보기
-description: Docker 및 .NET Core 기본 자습서
-author: jralexander
-ms.author: johalex
-ms.date: 11/06/2017
+title: Docker를 사용하여 앱 컨테이너화 - .NET Core
+description: 이 자습서에서는 기본 .NET Core 애플리케이션을 만들고 Docker를 사용하여 컨테이너화하는 방법을 설명합니다.
+ms.date: 10/11/2018
 ms.topic: tutorial
-ms.custom: mvc
-ms.openlocfilehash: 543b9454e826022a72752d9a24bc43b77d2501f5
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.custom: mvc, seodec18
+ms.openlocfilehash: 8f08936142b0cc44baf268f100e228f68920b69d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45615302"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126370"
 ---
-# <a name="learn-docker-basics-with-net-core"></a>.NET Core와 Docker 기본 사항 알아보기
+# <a name="how-to-containerize-a-net-core-application"></a>.NET Core 애플리케이션을 컨테이너화하는 방법
 
 이 자습서에서는 Docker 컨테이너 빌드 및 .NET Core 응용 프로그램에 대한 배포 작업을 설명합니다. [Docker 플랫폼](https://docs.docker.com/engine/docker-overview/#the-docker-platform)은 [Docker 엔진](https://docs.docker.com/engine/docker-overview/#docker-engine)을 사용하여 [Docker 이미지](https://docs.docker.com/glossary/?term=image)로 앱을 신속하게 빌드하고 패키지합니다. 이러한 이미지는 [계층화된 컨테이너](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers)에서 배포되고 실행되도록 [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) 형식으로 작성됩니다.
 
@@ -38,38 +36,38 @@ Docker 이미지를 만들기 전에 컨테이너화할 응용 프로그램이 �
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-#### <a name="net-core-20-sdk"></a>.NET Core 2.0 SDK
+#### <a name="net-core-sdk"></a>.NET Core SDK
 
-* [.NET Core SDK 2.0](https://www.microsoft.com/net/core)을 설치합니다.
+* [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) 이상을 설치합니다.
 
-지원 OS 버전 중 .NET Core 2.x를 지원하는 운영 체제 및 수명 주기 정책 링크는 [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)(.NET Core 2.x가 지원되는 OS 버전)를 참조하세요.
+.NET Core 2.1이 지원되는 운영 체제, 지원되지 않는 OS 버전 및 수명 주기 정책 링크의 전체 목록은 [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)(.NET Core 2.1이 지원되는 OS 버전)를 참조하세요.
 
 * 아직 없는 경우 즐겨 찾는 코드 편집기를 설치합니다.
 
 > [!TIP]
-> 코드 편집기를 설치해야 하나요? [Visual Studio](https://visualstudio.com/downloads)를 체험해 보세요.
+> 코드 편집기를 설치해야 하나요? [Visual Studio Code](https://code.visualstudio.com/download)를 사용해 보세요.
 
 #### <a name="installing-docker-client"></a>Docker 클라이언트 설치
 
-[Docker 17.06](https://docs.docker.com/release-notes/docker-ce/) 이상의 Docker 클라이언트를 설치합니다.
+[Docker 18.06](https://docs.docker.com/release-notes/docker-ce/) 이상의 Docker 클라이언트를 설치합니다.
 
 Docker 클라이언트를 다음에 설치할 수 있습니다.
 
 * Linux 배포
 
-   * [CentOS](https://www.docker.com/docker-centos-distribution)
+   * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-   * [Debian](https://www.docker.com/docker-debian)
+   * [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
 
-   * [Fedora](https://www.docker.com/docker-fedora)
+   * [Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
 
-   * [Ubuntu](https://www.docker.com/docker-ubuntu)
+   * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-* [macOS](https://docs.docker.com/docker-for-mac/)
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
 
-* [Windows](https://docs.docker.com/docker-for-windows/)
+* [Windows](https://docs.docker.com/docker-for-windows/install/)
 
-### <a name="create-a-net-core-20-console-app-for-dockerization"></a>Dockerization에 대한 .NET Core 2.0 콘솔 앱 만들기
+### <a name="create-a-net-core-21-console-app-for-dockerization"></a>Dockerization에 대한 .NET Core 2.1 콘솔 앱 만들기
 
 명령 프롬프트를 열고 *Hello*라는 폴더를 만듭니다. 만든 폴더로 이동하고 다음 명령을 입력합니다.
 
@@ -83,13 +81,13 @@ dotnet run
 1. `$ dotnet new console`
 
    [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  응용 프로그램에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
-   
+
    `Hello.csproj`:
 
    프로젝트 파일은 종속성을 복원하고 프로그램을 빌드하는 데 필요한 모든 항목을 지정합니다.
 
    * `OutputType` 태그에서는 실행 파일, 즉 콘솔 응용 프로그램을 빌드하고 있음을 지정합니다.
-   * `TargetFramework` 태그에서는 대상으로 하는 .NET 구현을 지정합니다. 고급 시나리오에서는 여러 대상 프레임워크를 지정하고 단일 작업에서 지정된 프레임워크로 빌드할 수 있습니다. 이 자습서에서는 .NET Core 2.0에 대해 빌드합니다.
+   * `TargetFramework` 태그에서는 대상으로 하는 .NET 구현을 지정합니다. 고급 시나리오에서는 여러 대상 프레임워크를 지정하고 단일 작업에서 지정된 프레임워크로 빌드할 수 있습니다. 이 자습서에서는 .NET Core 2.1용으로 빌드합니다.
 
    `Program.cs`:
 
@@ -97,26 +95,21 @@ dotnet run
 
    그런 다음 `Hello`라는 네임스페이스를 정의합니다. 네임스페이스를 원하는 값으로 변경할 수 있습니다. `Program`이라는 클래스는 해당 네임스페이스 내에서 인수로 문자열 배열을 사용하는 `Main` 메서드로 정의됩니다. 이 배열에는 컴파일된 프로그램을 호출할 때 전달된 인수 목록이 포함되어 있습니다. 예제에서 프로그램은 콘솔에 "Hello World!"만 표시합니다.
 
-2. `$ dotnet restore`
-
-   .NET Core 2.x에서 **dotnet new**는 [`dotnet restore`](../tools/dotnet-restore.md) 명령을 실행합니다. **Dotnet restore**는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자) 호출로 종속성 트리를 복원합니다.
+   **dotnet new**는 [`dotnet restore`](../tools/dotnet-restore.md) 명령을 실행합니다. **Dotnet restore**는 [NuGet](https://www.nuget.org/)(.NET 패키지 관리자) 호출로 종속성 트리를 복원합니다.
    NuGet은 다음 작업을 수행합니다.
-   * *Hello.csproj* 파일 분석 
-   * 파일 종속성 다운로드(또는 컴퓨터 캐시에서 가져오기)
-   * *obj/project.assets.json* 파일 작성
+   * *Hello.csproj* 파일을 분석합니다.
+   * 파일 종속성을 다운로드하거나 머신 캐시에서 가져옵니다.
+   * *obj/project.assets.json* 파일을 작성합니다.
 
-<a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-   
    *project.assets.json* 파일은 NuGet 종속성 그래프, 바인딩 해상도 및 다른 앱 메타데이터의 전체 집합입니다. 이 필수 파일은 소스 코드를 올바르게 처리하도록 [`dotnet build`](../tools/dotnet-build.md) 및 [`dotnet run`](../tools/dotnet-run.md) 등의 다른 도구에서 사용됩니다.
-   
-3. `$ dotnet run`
+
+2. `$ dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md)는 성공적인 필드를 확인하기 위해 [`dotnet build`](../tools/dotnet-build.md)를 호출한 다음 응용 프로그램을 실행하기 위해 `dotnet <assembly.dll>`을 호출합니다.
-   
+
     ```console
     $ dotnet run
-    
+
     Hello World!
     ```
 
@@ -133,7 +126,7 @@ Hello .NET Core 콘솔 앱은 성공적으로 로컬로 실행됩니다. 이제 
 Linux 또는 [Windows 컨테이너](https://docs.microsoft.com/virtualization/windowscontainers/about/)용 다음 Docker 명령을 새 파일에 추가합니다. 완료되면 확장명 없이 Hello 디렉터리의 루트에 **Dockerfile**로 저장합니다(파일 형식을 `All types (*.*)` 또는 유사한 것으로 설정해야 할 수 있음).
 
 ```Dockerfile
-FROM microsoft/dotnet:2.0-sdk
+FROM microsoft/dotnet:2.1-sdk
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -148,10 +141,10 @@ ENTRYPOINT ["dotnet", "out/Hello.dll"]
 
 Dockerfile은 순서대로 실행되는 Docker 빌드 명령을 포함합니다.
 
-첫 번째 명령은 [**FROM**](https://docs.docker.com/engine/reference/builder/#from)이어야 합니다. 이 명령은 새 빌드 단계를 초기화하고 나머지 명령에 대한 기본 이미지를 설정합니다. 다중 아키텍처 태그는 Windows [컨테이너 모드](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers)용 Docker에 따라 Windows 또는 Linux 컨테이너를 끌어옵니다. 샘플에 대한 기본 이미지는 microsoft/dotnet 리포지토리에서 2.0-sdk 이미지입니다.
+첫 번째 명령은 [**FROM**](https://docs.docker.com/engine/reference/builder/#from)이어야 합니다. 이 명령은 새 빌드 단계를 초기화하고 나머지 명령에 대한 기본 이미지를 설정합니다. 다중 아키텍처 태그는 Windows [컨테이너 모드](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers)용 Docker에 따라 Windows 또는 Linux 컨테이너를 끌어옵니다. 샘플에 대한 기본 이미지는 microsoft/dotnet 리포지토리에 있는 2.1-sdk 이미지입니다.
 
 ```Dockerfile
-FROM microsoft/dotnet:2.0-sdk
+FROM microsoft/dotnet:2.1-sdk
 ```
 
 [**WORKDIR**](https://docs.docker.com/engine/reference/builder/#workdir) 명령은 나머지 RUN, CMD, ENTRYPOINT, COPY 및 ADD Dockerfile 명령에 대해 작업 디렉터리를 설정합니다. 디렉터리가 없을 경우 만들어집니다. 이 경우 WORKDIR은 앱 디렉터리로 설정됩니다.
@@ -196,7 +189,7 @@ ENTRYPOINT ["dotnet", "out/Hello.dll"]
 * 이미지에 대한 앱의 종속성
 * 앱이 실행 파일로 실행되도록 빌드
 
-### <a name="build-and-run-the-hello-net-core-20-app"></a>Hello .NET Core 2.0 앱 빌드 및 실행
+### <a name="build-and-run-the-hello-net-core-app"></a>Hello .NET Core 앱 빌드 및 실행
 
 #### <a name="essential-docker-commands"></a>필수 Docker 명령
 
@@ -222,9 +215,9 @@ docker run --rm dotnetapp-dev Hello from Docker
 `docker build` 명령의 출력은 다음 콘솔 출력과 유사해야 합니다.
 
 ```console
-Sending build context to Docker daemon   72.7kB
-Step 1/7 : FROM microsoft/dotnet:2.0-sdk
- ---> d84f64b126a6
+Sending build context to Docker daemon   173.1kB
+Step 1/7 : FROM microsoft/dotnet:2.1-sdk
+ ---> 288f8c45f7c2
 Step 2/7 : WORKDIR /app
  ---> Using cache
  ---> 9af1fbdc7972
@@ -243,7 +236,7 @@ Step 6/7 : RUN dotnet publish -c Release -o out
 Step 7/7 : ENTRYPOINT dotnet out/Hello.dll
  ---> Using cache
  ---> 53c337887e18
-Successfully built 53c337887e18
+Successfully built 46db075bd98d
 Successfully tagged dotnetapp-dev:latest
 ```
 
@@ -261,14 +254,12 @@ Hello World!
 > * 첫 번째 컨테이너를 빌드하도록 Dockerfile 생성
 > * Docker화된 앱 빌드 및 실행
 
-
-
 ## <a name="next-steps"></a>다음 단계
 
 수행할 수 있는 몇 가지 다음 단계는 다음과 같습니다.
 
 * [.NET Docker 이미지 비디오 소개](https://channel9.msdn.com/Shows/Code-Conversations/Introduction-to-NET-Docker-Images-with-Kendra-Havens?term=docker)
-* [Visual Studio, Docker 및 Azure Container Instances의 시너지 효과!](https://blogs.msdn.microsoft.com/alimaz/2017/08/17/visual-studio-docker-azure-container-instances-better-together/)
+* [Visual Studio, Docker 및 Azure Container Instances의 시너지 효과!](https://medium.com/@AliMazaheri/visual-studio-docker-azure-container-instances-better-together-bf8c2f0419ae)
 * [Azure 빠른 시작용 Docker](https://docs.docker.com/docker-for-azure/#docker-community-edition-ce-for-azure)
 * [Azure용 Docker에서 앱 배포](https://docs.docker.com/docker-for-azure/deploy/)
 
@@ -279,7 +270,7 @@ Hello World!
 
 이 샘플에서는 다음 Docker 이미지가 사용됨
 
-* [`microsoft/dotnet:2.0-sdk`](https://hub.docker.com/r/microsoft/dotnet)
+* [`microsoft/dotnet:2.1-sdk`](https://hub.docker.com/r/microsoft/dotnet)
 
 ## <a name="related-resources"></a>관련 참고 자료
 

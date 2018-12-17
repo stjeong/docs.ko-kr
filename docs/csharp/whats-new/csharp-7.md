@@ -3,12 +3,12 @@ title: C# 7.0의 새로운 기능 - C# 가이드
 description: C# 언어의 새 버전 7에서 제공되는 새로운 기능을 간단히 살펴봅니다.
 ms.date: 12/21/2016
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
-ms.openlocfilehash: 734fdf962ef481a3b434e9ce17e535eadd52f420
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 0a8b20606e5133c45f26377ea1c2eba58a1aa3af
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47237386"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155290"
 ---
 # <a name="whats-new-in-c-70"></a>C# 7.0의 새로운 기능
 
@@ -22,7 +22,7 @@ C# 7.0에서는 C# 언어에 많은 새로운 기능을 추가합니다.
 * [패턴 일치](#pattern-matching)
     - 임의 형식 및 해당 형식의 멤버 값에 따라 분기 논리를 만들 수 있습니다.
 * [`ref` local 및 return](#ref-locals-and-returns)
-    - 메서드 인수와 지역 변수는 다른 저장소에 대한 참조일 수 있습니다.
+    - 메서드 지역 변수와 반환 값은 다른 스토리지에 대한 참조일 수 있습니다.
 * [로컬 함수](#local-functions)
     - 함수를 다른 함수 내부에 중첩하여 범위와 표시 여부를 제한할 수 있습니다.
 * [추가 식 본문 멤버](#more-expression-bodied-members)
@@ -218,7 +218,7 @@ C#에서는 디자인 의도를 설명하는 데 사용되는 클래스 및 구�
 
 패턴 일치에 대한 자세한 내용은 [C#의 패턴 일치](../pattern-matching.md)에 관련된 항목을 참조하세요.
 
-## <a name="ref-locals-and-returns"></a>Ref local 및 return
+## <a name="ref-locals-and-returns"></a>ref 지역 및 반환
 
 이 기능을 통해 다른 곳에 정의된 변수에 대한 참조를 사용 및 반환하는 알고리즘이 가능해집니다. 한 가지 예는 큰 매트릭스를 사용하고 특정 특징을 가진 하나의 위치를 찾는 것입니다. 하나의 메서드가 매트릭스에 있는 하나의 위치에 대한 두 개의 인덱스를 반환합니다.
 
@@ -277,9 +277,11 @@ C# 언어에는 `ref` local 및 return을 잘못 사용하는 경우를 방지�
 * `ref` local 및 return은 비동기 메서드와 함께 사용할 수 없습니다.
     - 컴파일러는 비동기 메서드가 반환될 때 참조된 변수가 최종 값으로 설정되었는지 여부를 알 수 없습니다.
 
-ref local 및 ref return을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다.
+ref 지역 및 ref 반환을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다.
 
 `ref`를 반환 값에 추가하는 것은 [소스 호환 가능 변경](version-update-considerations.md#source-compatible-changes)입니다. 기존 코드는 컴파일되지만, 참조 반환 값은 할당 시 복사됩니다. 호출자는 반환 값 저장소를 `ref` 지역 변수로 업데이트하여 반환을 참조로 저장해야 합니다.
+
+자세한 내용은 [ref 키워드](../language-reference/keywords/ref.md) 문서를 참조하세요.
 
 ## <a name="local-functions"></a>로컬 함수
 

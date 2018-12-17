@@ -3,12 +3,12 @@ title: C#의 역사 - C# 가이드
 description: 이 언어의 초창기 버전은 어떤 모습이었으며 이후 어떻게 변했는가?
 author: erikdietrich
 ms.date: 09/20/2017
-ms.openlocfilehash: 5e8ecdd971a043dc47c50b10c974d86f836818dc
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: e58f719031cc614f728226232c09f54f6b874475
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316261"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145334"
 ---
 # <a name="the-history-of-c"></a>C#의 역사 #
 
@@ -33,7 +33,7 @@ C# 1.0의 주요 기능에는 다음이 포함되어 있습니다.
 - [식](../programming-guide/statements-expressions-operators/expressions.md)
 - [문](../programming-guide/statements-expressions-operators/statements.md)
 - [특성](../programming-guide/concepts/attributes/index.md)
-- 리터럴
+- [리터럴](../language-reference/keywords/literal-keywords.md)
 
 ## <a name="c-version-12"></a>C# 버전 1.2
 
@@ -69,12 +69,12 @@ C# 버전 2.0에서는 반복기라는 기능이 도입되었습니다. 간단�
 
 C# 버전 3.0은 Visual Studio 2008과 함께 2007년말에 출시되었지만 언어 기능을 완전히 갖춘 버전은 .NET Framework 버전 3.5와 함께 제공됩니다. 이 버전은 C#의 성장에 큰 변화를 가져왔습니다. C#은 진정으로 강력한 프로그래밍 언어로 자리매김했습니다. 이 버전의 몇 가지 주요 특징을 살펴보겠습니다.
 
-- [자동 구현된 속성](../programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [자동 구현 속성](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [무명 형식](../programming-guide/classes-and-structs/anonymous-types.md)
 - [쿼리 식](../linq/query-expression-basics.md)
-- [람다 식](https://www.daedtech.com/introduction-to-c-lambda-expressions/)
-- [식 트리](https://blogs.msdn.microsoft.com/charlie/2008/01/31/expression-tree-basics/)
-- [확장 메서드](https://www.codeproject.com/Tips/709310/Extension-Method-In-Csharp)
+- [람다 식](../lambda-expressions.md)
+- [식 트리](../expression-trees.md)
+- [확장 메서드](../programming-guide/classes-and-structs/extension-methods.md)
 - [암시적 형식 지역 변수](../language-reference/keywords/var.md)
 - [부분 메서드](../language-reference/keywords/partial-method.md)
 - [개체 및 컬렉션 이니셜라이저](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
@@ -96,7 +96,7 @@ C# 버전 4.0은 버전 3.0의 혁신적인 상태를 유지하느라 힘든 시
 - [동적 바인딩](../language-reference/keywords/dynamic.md)
 - [명명된/선택적 인수](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [제네릭 공변(covariant) 및 반공변(contravariant)](../../standard/generics/covariance-and-contravariance.md)
-- [포함된 interop 형식](https://stackoverflow.com/questions/20514240/whats-the-difference-setting-embed-interop-types-true-and-false-in-visual-studi)
+- [포함된 interop 형식](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
 
 포함된 interop 형식은 배포의 어려움을 완화합니다. 제네릭 공변성(Covariance)과 반공변성(Contravariance)은 제네릭을 사용하는 기능을 더 많이 제공하지만, 약간 학문적이며, 프레임워크와 라이브러리 작성자에게 가장 높은 평가를 받을 것입니다. 명명되고 선택적인 매개 변수를 사용하면 많은 메서드 오버로드를 제거하고 편리성을 제공할 수 있습니다. 그러나 이러한 기능 중 어느 것도 정확히 패러다임의 변화는 아닙니다.
 
@@ -123,13 +123,13 @@ C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한
 
 버전 3.0과 5.0에서 C#은 개체 지향 언어의 주요 새 기능을 추가했습니다. 버전 6.0에서 지배적인 핵심 기능을 수행하지 않는 대신 C# 프로그래밍을 보다 생산적으로 만드는 많은 작은 기능을 릴리스했습니다. 다음은 몇 가지 예입니다.
 
-- [정적 가져오기](../language-reference/keywords/using-static.md)
-- [예외 필터](https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/)
-- [속성 이니셜라이저](http://geekswithblogs.net/WinAZ/archive/2015/06/30/whatrsquos-new-in-c-6.0-auto-property-initializers.aspx)
-- [식 본문 멤버](https://lostechies.com/jimmybogard/2015/12/17/c-6-feature-review-expression-bodied-function-members/)
-- [Null 전파자](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
-- [문자열 보간](../language-reference/tokens/interpolated.md)
-- [nameof 연산자](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
+- [정적 가져오기](./csharp-6.md#using-static)
+- [예외 필터](./csharp-6.md#exception-filters)
+- [Auto 속성 이니셜라이저](./csharp-6.md#auto-property-initializers)
+- [식 본문 멤버](./csharp-6.md#expression-bodied-function-members)
+- [Null 전파자](./csharp-6.md#null-conditional-operators)
+- [문자열 보간](./csharp-6.md#string-interpolation)
+- [nameof 연산자](./csharp-6.md#the-nameof-expression)
 - [인덱스 이니셜라이저](csharp-6.md#index-initializers)
 
 기타 새로운 기능은 다음과 같습니다.
@@ -145,20 +145,19 @@ C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한
 
 최신 주요 버전은 C# 버전 7.0입니다. 이 버전에는 C# 6.0 방식의 혁신적이고 유용한 기능이 있지만 서비스형 컴파일러는 없습니다. 다음은 새 기능 중 일부입니다.
 
-- [외부 변수](https://www.c-sharpcorner.com/article/out-variables-in-c-sharp-7-0/)
-- [튜플 및 분해](https://www.thomaslevesque.com/2016/08/23/tuple-deconstruction-in-c-7/)
+- [외부 변수](./csharp-7.md#out-variables)
+- [튜플 및 분해](./csharp-7.md#tuples)
 - [패턴 일치](./csharp-7.md#pattern-matching)
-- [로컬 함수](https://www.infoworld.com/article/3182416/application-development/c-7-in-depth-exploring-local-functions.html)
+- [로컬 함수](./csharp-7.md#local-functions)
 - [확장된 식 본문 멤버](./csharp-7.md#more-expression-bodied-members)
-- [참조 로컬 및 반환](./csharp-7.md#ref-locals-and-returns)
+- [ref 지역 및 반환](./csharp-7.md#ref-locals-and-returns)
 
 이러한 기능에는 다음이 포함됩니다.
 
-- [삭제](../discards.md)
-- [이진 리터럴](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/binary-literals.md)
-- [자릿수 구분 기호](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/digit-separators.md)
-- 참조 반환 및 로컬
-- [Throw 식](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.0/throw-expression.md)
+- [삭제](./csharp-7.md#discards)
+- [이진 리터럴 및 자릿수 구분 기호](./csharp-7.md#numeric-literal-syntax-improvements)
+- [ref 반환 및 지역](./csharp-7.md#ref-locals-and-returns)
+- [Throw 식](./csharp-7.md#throw-expressions)
 
 이러한 모든 기능은 개발자에게 멋진 새 기능과 이전보다 훨씬 깔끔한 코드를 작성할 수 있는 기회를 제공합니다. 하이라이트는 `out` 키워드와 함께 사용할 변수의 선언을 압축하고 튜플을 통해 여러 개의 반환 값을 허용하는 것입니다.
 

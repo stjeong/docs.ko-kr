@@ -1,21 +1,21 @@
 ---
-title: Visual Studio를 사용한 .NET Core 앱 배포
-description: Visual Studio를 사용한 .NET Core 앱 배포에 대해 알아봅니다.
+title: Visual Studio를 사용하여 .NET Core 앱 배포
+description: Visual Studio를 사용하여 .NET Core 앱을 배포하는 방법을 알아봅니다.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 09/03/2018
 dev_langs:
 - csharp
 - vb
-ms.custom: vs-dotnet
-ms.openlocfilehash: 7a9410ca99f621ee6d0e8b263354ebc536f71a4a
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.custom: vs-dotnet, seodec18
+ms.openlocfilehash: 095c0f02df0de0b276c3677095e224316ac76cff
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584394"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53127110"
 ---
-# <a name="deploying-net-core-apps-with-visual-studio"></a>Visual Studio를 사용하여 .NET Core 앱 배포
+# <a name="deploy-net-core-apps-with-visual-studio"></a>Visual Studio를 사용하여 .NET Core 앱 배포
 
 .NET Core 응용 프로그램은 응용 프로그램 이진을 포함하지만 대상 시스템에 .NET Core가 있는지 여부에 따라 달라지는 *프레임워크 종속 배포* 또는 응용 프로그램과 .NET Core 이진을 모두 포함하는 *자체 포함 배포*로 배포할 수 있습니다. .NET Core 응용 프로그램 배포 개요는 [.NET Core 응용 프로그램 배포](index.md)를 참조하세요.
 
@@ -144,7 +144,7 @@ Visual Studio에서 앱을 게시하려면 다음을 수행합니다.
 
       1. **게시** 탭에서 **게시**를 선택합니다. Visual Studio에서 응용 프로그램을 구성하는 파일을 로컬 파일 시스템에 작성합니다.
 
-      1. 이제 **게시** 탭에 단일 프로필 **FolderProfile**이 표시됩니다. 프로필의 구성 설정이 탭의 **요약** 섹션에 표시됩니다. 대상 런타임은 게시된 런타임을 식별하고, **대상 위치**는 자체 포함 배포의 파일이 작성된 위치를 식별합니다.
+      1. 이제 **게시** 탭에 단일 프로필 **FolderProfile**이 표시됩니다. 프로필의 구성 설정이 탭의 **요약** 섹션에 표시됩니다. **대상 런타임**은 게시된 런타임을 식별하고, **대상 위치**는 자체 포함 배포의 파일이 작성된 위치를 식별합니다.
 
       1. Visual Studio는 기본적으로 게시된 모든 파일을 단일 디렉터리에 작성합니다. 편의상, 각 대상 런타임에 대해 별도 프로필을 만들고 게시된 파일을 플랫폼별 디렉터리에 배치하는 것이 좋습니다. 이렇게 하려면 각 대상 플랫폼에 대해 별도 게시 프로필을 만들어야 합니다. 따라서 이제 다음을 수행하여 각 플랫폼용 응용 프로그램을 다시 빌드합니다.
 

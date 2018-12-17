@@ -7,11 +7,11 @@ f1_keywords:
 helpviewer_keywords:
 - parameters [C#], ref
 - ref keyword [C#]
-ms.openlocfilehash: 9165a388122eeda5ca0499c6d75c2266780a6004
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 99d02ca33025a5f80ff8fafde84447ba3df9f42a
+ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
+ms.lasthandoff: 12/04/2018
 ms.locfileid: "50195972"
 ---
 # <a name="ref-c-reference"></a>ref(C# 참조)
@@ -90,9 +90,9 @@ return ref DecimalArray[0];
 
 호출자가 개체 상태를 수정하려면 참조 반환 값을 [참조 로컬](#ref-locals)로 명시적으로 정의된 변수에 저장해야 합니다.
 
-호출된 메서드는 `ref readonly`로 반환 값을 선언하여 참조를 통해 값을 반환하고 호출 코드가 반환된 값을 수정할 수 없도록 합니다. 호출 메서드는 로컬 [ref readonly](#ref-readonly-locals) 변수에 값을 저장하여 반환된 값을 복사하지 않도록 할 수 있습니다.
+호출된 메서드는 `ref readonly`로 반환 값을 선언하여 참조를 통해 값을 반환하고 호출 코드가 반환된 값을 수정할 수 없도록 합니다. 호출 메서드는 지역 [ref readonly](#ref-readonly-locals) 변수에 값을 저장하여 반환된 값을 복사하지 않도록 할 수 있습니다.
 
-예를 들어 [참조 반환 및 참조 로컬 예제](#a-ref-returns-and-ref-locals-example)를 참조하세요.
+예를 들어 [ref 반환 및 ref 지역 예제](#a-ref-returns-and-ref-locals-example)를 참조하세요.
 
 ## <a name="ref-locals"></a>참조 로컬
 
@@ -114,11 +114,13 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 두 예에서 `ref` 키워드는 두 위치에 모두 사용해야 합니다. 그렇지 않으면 컴파일러 오류 CS8172, "값을 사용하여 참조 형식 변수를 초기화할 수 없습니다."가 생성됩니다.
 
+C# 7.3부터 `foreach` 문의 반복 변수는 ref 지역 또는 ref readonly 지역 변수일 수 있습니다. 자세한 내용은 [foreach 문](foreach-in.md) 문서를 참조하세요.
+
 ## <a name="ref-readonly-locals"></a>Ref readonly 로컬
 
 Ref readonly 로컬은 해당 시그니처에 `ref readonly`가 있고 `return ref`를 사용하는 메서드 또는 속성을 통해 반환된 값을 참조하는 데 사용됩니다. `ref readonly` 변수는 `ref` 지역 변수의 속성을 `readonly` 변수와 결합합니다. 이는 할당된 저장소의 별칭이고 수정할 수 없습니다. 
 
-## <a name="a-ref-returns-and-ref-locals-example"></a>참조 반환 및 참조 로컬 예제
+## <a name="a-ref-returns-and-ref-locals-example"></a>ref 반환 및 ref 지역 예제
 
 다음 예제에서는 두 개의 <xref:System.String> 필드 `Title` 및 `Author`가 있는 `Book` 클래스를 정의합니다. 또한 `Book` 개체의 private 배열을 포함하는 `BookCollection` 클래스를 정의합니다. 개별 책 개체는 해당 `GetBookByTitle` 메서드를 호출하여 참조로 반환됩니다.
 
@@ -152,6 +154,9 @@ Ref readonly 로컬은 해당 시그니처에 `ref readonly`가 있고 `return r
 ## <a name="see-also"></a>참고 항목
 
 - [안전하고 효율적인 코드 작성](../../write-safe-efficient-code.md)  
+- [ref 반환 및 ref 지역](../../programming-guide/classes-and-structs/ref-returns.md)
+- [조건부 ref 식](../operators/conditional-operator.md#conditional-ref-expression)
+- [ref 대입 연산자](../operators/assignment-operator.md#ref-assignment-operator)
 - [매개 변수 전달](../../programming-guide/classes-and-structs/passing-parameters.md)  
 - [메서드 매개 변수](method-parameters.md)  
 - [C# 참조](../index.md)  

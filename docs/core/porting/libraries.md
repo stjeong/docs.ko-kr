@@ -1,19 +1,20 @@
 ---
-title: .NET Core로 이식 - 라이브러리
+title: .NET Core로 라이브러리 포팅
 description: .NET Framework에서 .NET Core로 라이브러리 프로젝트를 이식하는 방법에 관해 알아봅니다.
 author: cartermp
 ms.author: mairaw
 ms.date: 07/14/2017
-ms.openlocfilehash: eb6b8506d8df218a053242cd0b8d3097fa6d9fd3
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.custom: seodec18
+ms.openlocfilehash: 2701027ce606c215ca9c2bd4bc665bc0600342dc
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199853"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143586"
 ---
-# <a name="porting-to-net-core---libraries"></a>.NET Core로 이식 - 라이브러리
+# <a name="port-net-framework-libraries-to-net-core"></a>.NET Core로 .NET Framework 라이브러리 포팅
 
-이 문서에서는 플랫폼 간에 실행되도록 .NET Core에 라이브러리 코드를 이식하는 방법에 관해 설명합니다.
+.NET Framework 라이브러리 코드를 .NET Core로 포팅하고, 플랫폼 간에 실행하고, 코드를 사용하는 앱의 도달 범위를 확장하는 방법을 알아봅니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -73,34 +74,17 @@ CAS와 마찬가지로 보안 투명도는 샌드박스 코드를 보안상 중�
 
 최소한의 권한으로 프로세스를 실행하려면 가상화, 컨테이너 또는 사용자 계정과 같은 운영 체제에서 제공하는 보안 경계를 사용할 수 있습니다.
 
-## <a name="converting-a-pcl-project"></a>PCL 프로젝트 변환
+## <a name="retargeting-your-net-framework-code-to-net-framework-472"></a>.NET Framework 4.7.2로 .NET Framework 코드 대상 다시 지정
 
-Visual Studio 2017에서 라이브러리를 로드하고 다음 단계를 수행하여 PCL 프로젝트의 대상을 .NET 표준으로 변환할 수 있습니다.
-
-1. 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
-1. **라이브러리** 아래에서 **.NET 플랫폼 표준을 대상으로 지정**을 선택합니다.
-
-패키지가 NuGet 3.0을 지원하면 프로젝트의 대상이 .NET 표준으로 다시 지정됩니다.
-
-패키지가 NuGet 3.0을 지원하지 않으면 Visual Studio에서 현재 패키지를 제거하라는 대화 상자가 나타납니다. 이 알림을 받으면 다음 단계를 수행합니다.
-
-1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다.
-1. 프로젝트의 패키지를 기록해 둡니다.
-1. 하나씩 패키지를 제거합니다.
-1. 제거 프로세스를 완료하려면 Visual Studio를 다시 시작해야 합니다. 이 경우 **NuGet 패키지 관리자** 창에 **다시 시작** 단추가 표시됩니다.
-1. 프로젝트를 다시 로드하면 .NET 표준이 대상이 됩니다. 제거해야 하는 패키지를 추가합니다.
-
-## <a name="retargeting-your-net-framework-code-to-net-framework-462"></a>.NET Framework 4.6.2로 .NET Framework 코드 대상 다시 지정
-
-코드가 .NET Framework 4.6.2를 대상으로 하지 않는 경우 .NET Framework 4.6.2로 대상을 다시 지정하는 것이 좋습니다. 그러면 .NET 표준에서 기존 API를 지원할 수 없는 경우 최신 API를 대신 사용할 수 있습니다.
+코드가 .NET Framework 4.7.2를 대상으로 하지 않는 경우 .NET Framework 4.7.2로 대상을 다시 지정하는 것이 좋습니다. 그러면 .NET 표준에서 기존 API를 지원할 수 없는 경우 최신 API를 대신 사용할 수 있습니다.
 
 Visual Studio에서 이식하려는 각 프로젝트에 대해 다음을 수행합니다.
 
-1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 속성을 선택합니다.
-1. **대상 프레임워크** 드롭다운에서 **.NET Framework 4.6.2**를 선택합니다.
+1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+1. **대상 프레임워크** 드롭다운에서 **.NET Framework 4.7.2**를 선택합니다.
 1. 프로젝트를 다시 컴파일합니다.
 
-프로젝트가 .NET Framework 4.6.2를 대상으로 하기 때문에 해당 버전의 .NET Framework를 코드 이식의 기반으로 사용할 수 있습니다.
+프로젝트가 .NET Framework 4.7.2를 대상으로 하기 때문에 해당 버전의 .NET Framework를 코드 포팅의 기반으로 사용합니다.
 
 ## <a name="determining-the-portability-of-your-code"></a>코드의 이식성 확인
 
@@ -151,7 +135,7 @@ Visual Studio에서 이식하려는 각 프로젝트에 대해 다음을 수행�
  
 분석 단계는 코드베이스의 크기에 따라 다소 시간이 걸릴 수 있습니다. 이 단계에서 시간을 할애하여 필요한 변경의 범위를 철저하게 이해하고 계획을 개발하면 장기 실행, 특히 복잡한 코드베이스가 있는 경우 일반적으로 시간이 절약됩니다.
 
-계획에 코드베이스의 중요한 변경 작업을 포함하는 동시에 .NET Framework 4.6.2를 계속 대상으로 지정할 수 있으므로 이전 접근 방식보다 더 구조화된 버전으로 만들 수 있습니다. 계획 실행을 시작하는 방법은 코드베이스에 따라 달라집니다.
+계획에 코드베이스의 중요한 변경 작업을 포함하는 동시에 .NET Framework 4.7.2를 계속 대상으로 지정할 수 있으므로 이전 접근 방식보다 더 구조화된 버전으로 만들 수 있습니다. 계획 실행을 시작하는 방법은 코드베이스에 따라 달라집니다.
 
 ### <a name="mixing-approaches"></a>접근 방식 혼합
 

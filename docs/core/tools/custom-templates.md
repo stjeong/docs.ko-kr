@@ -4,12 +4,12 @@ description: 모든 형식의 .NET 프로젝트 또는 파일에 대한 사용�
 author: guardrex
 ms.author: mairaw
 ms.date: 08/11/2017
-ms.openlocfilehash: 5cb160683ad373f1192945163495bf3e7957567b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4e5dd11df8204d86009b0ece108ef877dc54f23e
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525969"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126265"
 ---
 # <a name="custom-templates-for-dotnet-new"></a>dotnet new에 대한 사용자 지정 템플릿
 
@@ -129,7 +129,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### <a name="to-uninstall-a-template-from-a-local-nupkg-file"></a>로컬 nupkg 파일에서 템플릿을 제거하려면
 
-템플릿을 제거하려는 경우 *nupkg* 파일의 경로를 사용하지 마세요. *`dotnet new -u <PATH_TO_NUPKG_FILE>`을 사용하여 템플릿을 제거하는 시도가 실패합니다.* `id`를 통해 패키지를 참조합니다.
+템플릿을 제거하려면 *nupkg* 파일의 경로를 사용하지 마세요. `dotnet new -u <PATH_TO_NUPKG_FILE>`을 사용하여 템플릿을 제거하는 시도가 실패합니다. `id`를 통해 패키지를 참조합니다.
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
@@ -137,7 +137,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### <a name="to-uninstall-a-template-from-a-file-system-directory"></a>파일 시스템 디렉터리에서 템플릿을 제거하려면
 
-`FILE_SYSTEM_DIRECTORY`는 프로젝트 및 *.template.config* 폴더가 포함된 프로젝트 폴더입니다.
+`FILE_SYSTEM_DIRECTORY`는 프로젝트 및 *.template.config* 폴더가 포함된 프로젝트 폴더입니다. 제공한 경로는 절대 경로여야 합니다. 상대 경로를 사용하여 템플릿을 제거하려고 하면 실패합니다. 자세한 내용은 [dotnet new](dotnet-new.md) 문서를 참조하세요.
 
 ```console
 dotnet new -u <FILE_SYSTEM_DIRECTORY>
@@ -153,8 +153,8 @@ dotnet new <TEMPLATE>
 
 ## <a name="see-also"></a>참고 항목
 
-* [dotnet new에 대한 사용자 지정 템플릿(자습서)](../tutorials/create-custom-template.md)  
-* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)(dotnet/templating GitHub 리포지토리 Wiki)  
-* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)(dotnet/dotnet-template-samples GitHub 리포지토리)  
-* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)(dotnet new에 대한 사용자 지정 템플릿을 만드는 방법)  
-* [*template.json* JSON 스키마 저장소에 대 한 스키마](http://json.schemastore.org/template)  
+* [dotnet new에 대한 사용자 지정 템플릿(자습서)](../tutorials/create-custom-template.md)
+* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)(dotnet/templating GitHub 리포지토리 Wiki)
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)(dotnet/dotnet-template-samples GitHub 리포지토리)
+* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)(dotnet new에 대한 사용자 지정 템플릿을 만드는 방법)
+* [*template.json* JSON 스키마 저장소에 대 한 스키마](http://json.schemastore.org/template)

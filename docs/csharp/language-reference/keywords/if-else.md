@@ -10,16 +10,16 @@ helpviewer_keywords:
 - else keyword [C#]
 - if keyword [C#]
 ms.assetid: d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2
-ms.openlocfilehash: 77ee6e86017eb24d565842b3401533ebda1add35
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2cbfab57ffaf294109f9f01f228f2826097fc299
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525591"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151397"
 ---
 # <a name="if-else-c-reference"></a>if-else(C# 참조)
 
-`if` 문은 `Boolean` 식의 값에 따라 실행할 문을 식별합니다. 다음 예제에서는 `Boolean` 변수 `result` 가 `true` 로 설정된 다음 `if` 문에서 확인됩니다. 출력은 `The variable is set to true.`입니다.
+`if` 문은 부울 식의 값에 따라 실행할 문을 식별합니다. 다음 예제에서는 `bool` 변수 `result` 가 `true` 로 설정된 다음 `if` 문에서 확인됩니다. 출력은 `The variable is set to true.`입니다.
 
 [!code-csharp[csrefKeywordsSelection#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#1)]
 
@@ -57,25 +57,25 @@ if (condition)
 
 [!code-csharp[csrefKeywordsSelection#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#2)]
 
-`Result2` 이 false일 때 `(m > 10)` 를 대신 표시하려는 경우 다음 예제와 같이 중괄호로 중첩된 `if` 문의 시작 및 끝을 설정하여 해당 연결을 지정할 수 있습니다.
+`(m > 10)`이 false일 때 `Result2`를 대신 표시하려는 경우 다음 예제와 같이 중괄호로 중첩된 `if` 문의 시작 및 끝을 설정하여 해당 연결을 지정할 수 있습니다.
 
 [!code-csharp[csrefKeywordsSelection#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#3)]
 
 조건 `(m > 10)`이 false이면 `Result2`가 나타납니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 키보드에서 문자 하나를 입력하며, 프로그램이 중첩된 `if` 문을 사용하여 입력 문자가 영문자인지 여부를 확인합니다. 입력 문자가 영문자이면 프로그램에서 입력 문자가 소문자인지 대문자인지를 확인합니다. 각 경우에 대한 메시지가 나타납니다.
 
 [!code-csharp[csrefKeywordsSelection#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#4)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 부분 코드와 같이 `if` 문을 else 블록 안에 중첩할 수도 있습니다. 예제에서는 `if` 문을 else 블록 2개와 then 블록 1개 안에 중첩합니다. 주석은 각 블록에서 true 또는 false인 조건을 지정합니다.
 
 [!code-csharp[csrefKeywordsSelection#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#5)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 입력 문자가 소문자, 대문자 또는 숫자인지를 확인합니다. 세 가지 조건이 모두 false이면 문자는 영숫자 문자가 아닙니다. 예제에서는 각 경우에 대한 메시지가 표시됩니다.
 
