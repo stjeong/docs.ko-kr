@@ -4,12 +4,12 @@ description: ASP.NET Core 및 Azure를 사용하여 최신 웹 응용 프로그�
 author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
-ms.openlocfilehash: b6c881a445f5848829ab5ccc6ce8547a390d89f3
-ms.sourcegitcommit: 4c158beee818c408d45a9609bfc06f209a523e22
+ms.openlocfilehash: 96a004cc49773346eeb8f88e2ba99beebf8598bf
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37404621"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53154205"
 ---
 # <a name="test-aspnet-core-mvc-apps"></a>ASP.NET Core MVC 앱 테스트
 
@@ -219,7 +219,7 @@ public class LocalFileImageServiceGetImageBytesById
 
 ASP.NET Core 응용 프로그램의 경우 TestServer 클래스를 사용하면 기능 테스트를 매우 쉽게 작성할 수 있습니다. 직접 WebHostBuilder를 사용하거나(일반적으로 응용 프로그램에 수행하는 것과 동일), WebApplicationFactory 형식을 사용하여(2.1에서 사용 가능) TestServer를 구성합니다. 테스트는 앱이 프로덕션 환경에서 수행하는 것과 유사한 동작을 실행하므로 프로덕션 호스트에 테스트 호스트를 최대한 유사하게 일치시키는 것이 좋습니다. WebApplicationFactory 클래스는 ASP.NET Core에서 보기와 같은 정적 리소스를 찾는 데 사용되는 TestServer의 ContentRoot를 구성하는 데 유용합니다.
 
-TEntry가 웹 응용 프로그램의 스타트업 클래스인 IClassFixture<WebApplicationFactory<TEntry>>를 구현하는 테스트 클래스를 만들면 간단한 기능 테스트를 만들 수 있습니다. 이를 구현하면 테스트 픽스쳐에서 팩터리의 CreateClient 메서드를 사용하여 클라이언트를 만들 수 있습니다.
+TEntry가 웹 애플리케이션의 스타트업 클래스인 IClassFixture\<WebApplicationFactory\<TEntry>>를 구현하는 테스트 클래스를 만들면 간단한 기능 테스트를 만들 수 있습니다. 이를 구현하면 테스트 픽스쳐에서 팩터리의 CreateClient 메서드를 사용하여 클라이언트를 만들 수 있습니다.
 
 ```cs
 public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>
@@ -347,5 +347,5 @@ namespace FunctionalTests.WebRazorPages
 이 기능 테스트는 해당 위치에 있을 수 있는 모든 미들웨어, 필터, 바인더 등을 포함하여 ASP.NET Core MVC / Razor Pages 응용 프로그램 스택 전체를 수행합니다. 지정된 경로(“/”)가 예상된 성공 상태 코드 및 HTML 출력을 반환하는지 확인합니다. 실제 웹 서버를 설정하지 않아도 이렇게 하므로 테스트를 위해 실제 웹 서버를 사용할 때 발생할 수 있는 많은 오류(예: 방화벽 설정 문제)를 방지할 수 있습니다. TestServer에 대해 실행되는 기능 테스트는 일반적으로 통합 및 단위 테스트보다 느리지만 네트워크를 통해 테스트 웹 서버에 실행되는 테스트보다 훨씬 빠릅니다. 응용 프로그램의 프런트 엔드 스택이 예상대로 작동되도록 기능 테스트를 사용해야 합니다. 이러한 테스트는 컨트롤러 또는 페이지에서 중복을 찾거나 필터를 추가하여 중복을 해결하는 경우 특히 유용합니다. 이상적으로 이 리팩터링은 응용 프로그램의 동작을 변경하지 않으며, 기능 테스트 모음은 이 경우에 해당되는지 확인합니다.
 
 >[!div class="step-by-step"]
-[이전](work-with-data-in-asp-net-core-apps.md)
-[다음](development-process-for-azure.md)
+>[이전](work-with-data-in-asp-net-core-apps.md)
+>[다음](development-process-for-azure.md)

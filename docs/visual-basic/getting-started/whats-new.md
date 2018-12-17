@@ -1,6 +1,6 @@
 ---
 title: Visual Basic의 새로운 기능
-ms.date: 10/04/2018
+ms.date: 10/24/2018
 f1_keywords:
 - VB.StartPage.WhatsNew
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - what's new [Visual Basic]
 - Visual Basic, what's new
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-ms.openlocfilehash: 5c7786bd0dc8789d156959dcf94ac6bf8f4fb906
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e77dca6f87e5039f4aa668a8e08ec112c9eb1b9b
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194061"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146159"
 ---
 # <a name="whats-new-for-visual-basic"></a>Visual Basic의 새로운 기능
 
@@ -21,10 +21,13 @@ ms.locfileid: "50194061"
   
 ## <a name="current-version"></a>현재 버전
 
-Visual Basic 15.5 / Visual Studio 2017 버전 15.5  
-새로운 기능은 [Visual Basic 15.5](#visual-basic-155)를 참조하세요.
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8  
+새로운 기능은 [Visual Basic 15.8](#visual-basic-158)을 참조하세요.
 
 ## <a name="previous-versions"></a>이전 버전
+
+Visual Basic 15.5 / Visual Studio 2017 버전 15.5  
+새로운 기능은 [Visual Basic 15.5](#visual-basic-155)를 참조하세요.
 
 Visual Basic 15.3 / Visual Studio 2017 버전 15.3  
 새로운 기능은 [Visual Basic 15.3](#visual-basic-153)을 참조하세요.
@@ -55,6 +58,39 @@ Visual Basic / Visual Studio .NET 2003
 
 Visual Basic / Visual Studio .NET 2002   
 Visual Basic .NET의 첫 번째 릴리스
+
+## <a name="visual-basic-158"></a>Visual Basic 15.8
+
+**최적화된 부동 소수점-정수 변환**
+
+이전 버전의 Visual Basic에서 [Double](../language-reference/data-types/double-data-type.md) 및 [Single](../language-reference/data-types/single-data-type.md) 값을 정수로 변환하면 성능이 상대적으로 떨어졌습니다. Visual Basic 15.8은 다음 메서드 중 하나에 의해 반환된 값을 [내장 Visual Basic 정수 변환 함수](../language-reference/functions/type-conversion-functions.md)(CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng) 중 하나에 전달하거나, [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md)가 `Off`로 설정된 경우 다음 메서드 중 하나로 반환되는 값이 암시적으로 정수 형식으로 캐스팅될 때 정수에 대한 부동 소수점 변환의 성능을 크게 향상시킵니다.
+
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Single)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Single)?displayProperty=nameWithType>
+- <xref:System.Math.Ceiling(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Floor(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
+
+이 최적화에는 코드를를 더 빠르게-많은 수의 정수 형식 변환 수행 하는 코드에 대 한 빠른 배까지 실행할 수 있습니다. 다음 예제에서는 이 최적화에 영향을 받는 몇 가지 간단한 메서드 호출을 보여줍니다.
+
+```vb
+Dim s As Single = 173.7619
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+
+```
+
+부동 소수점 값을 반올림하는 것이 아니라 잘린다는 점에 유의하세요.
 
 ## <a name="visual-basic-155"></a>Visual Basic 15.5
 

@@ -1,29 +1,29 @@
 ---
 title: Web API를 사용하여 마이크로 서비스 응용 프로그램 계층 구현
-description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | Web API를 사용하여 마이크로 서비스 응용 프로그램 계층 구현
+description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서비스 아키텍처 | Web API 애플리케이션 계층에서 종속성 주입 및 중재자 패턴과 해당 구현 정보를 이해합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/12/2017
-ms.openlocfilehash: 1af8d0290eea26d57f4744bbd6d9819d886d4db4
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.date: 10/08/2018
+ms.openlocfilehash: 332829d30f10dde49727c63e9e80a91f24e1123a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37106556"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53151189"
 ---
-# <a name="implementing-the-microservice-application-layer-using-the-web-api"></a>Web API를 사용하여 마이크로 서비스 응용 프로그램 계층 구현
+# <a name="implement-the-microservice-application-layer-using-the-web-api"></a>Web API를 사용하여 마이크로 서비스 에플리케이션 계층 구현
 
-## <a name="using-dependency-injection-to-inject-infrastructure-objects-into-your-application-layer"></a>종속성 주입을 사용하여 응용 프로그램 계층에 인프라 개체 주입
+## <a name="use-dependency-injection-to-inject-infrastructure-objects-into-your-application-layer"></a>종속성 주입을 사용하여 애플리케이션 계층에 인프라 개체 주입
 
-앞에서 언급했듯이 응용 프로그램 계층은 구축하고 있는 아티팩트(예: Web API 프로젝트나 MVC 웹앱 프로젝트)의 일부로 구현될 수 있습니다. ASP.NET Core로 구축된 마이크로 서비스의 경우 응용 프로그램 계층은 일반적으로 Web API 라이브러리입니다. ASP.NET Core(인프라와 컨트롤러)를 사용자 지정 응용 프로그램 계층 코드에서 분리하려는 경우 응용 프로그램 계층을 별도의 클래스 라이브러리에 배치할 수도 있지만 이것은 선택 사항입니다.
+앞에서 언급했듯이 애플리케이션 계층은 Web API 프로젝트 또는 MVC 웹앱 프로젝트와 같이 빌드하고 있는 아티팩트(어셈블리)의 일부로 구현될 수 있습니다. ASP.NET Core로 구축된 마이크로 서비스의 경우 응용 프로그램 계층은 일반적으로 Web API 라이브러리입니다. ASP.NET Core(인프라와 컨트롤러)를 사용자 지정 응용 프로그램 계층 코드에서 분리하려는 경우 응용 프로그램 계층을 별도의 클래스 라이브러리에 배치할 수도 있지만 이것은 선택 사항입니다.
 
-예를 들어, Ordering(주문) 마이크로 서비스의 응용 프로그램 계층 코드는 그림 9-23과 같이 **Ordering.API** 프로젝트(ASP.NET Core Web API 프로젝트)의 일부로 직접 구현됩니다.
+예를 들어 Ordering(주문) 마이크로 서비스의 애플리케이션 계층 코드는 그림 7-23과 같이 **Ordering.API** 프로젝트(ASP.NET Core Web API 프로젝트)의 일부로 직접 구현됩니다.
 
-![](./media/image20.png)
+![애플리케이션 폴더 아래의 하위 폴더(동작, 명령, DomainEventHandlers, IntegrationEvents, 모델, 쿼리 및 유효성 검사)를 표시하는 Ordering.API 마이크로 서비스의 솔루션 탐색기 보기입니다.](./media/image20.png)
 
-**그림 9-23**. Ordering.API ASP.NET Core Web API 프로젝트의 응용 프로그램 계층
+**그림 7-23**. Ordering.API ASP.NET Core Web API 프로젝트의 응용 프로그램 계층
 
-ASP.NET Core에는 생성자 주입을 기본으로 지원하는 간단한 [내장 IoC 컨테이너](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)(IServiceProvider 인터페이스로 표시됨)가 포함되며, ASP.NET은 DI를 통해 특정 서비스를 사용할 수 있도록 합니다. ASP.NET Core는 DI를 통해 주입될 사용자가 등록하는 모든 형식에 *서비스*라는 용어를 사용합니다. 내장 컨테이너의 서비스는 응용 프로그램의 Startup 클래스에 있는 ConfigureServices 메서드에 구성합니다. 종속성은 형식에 필요한 서비스에 구현됩니다.
+ASP.NET Core에는 생성자 주입을 기본으로 지원하는 간단한 [내장 IoC 컨테이너](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)(IServiceProvider 인터페이스로 표시됨)가 포함되며, ASP.NET은 DI를 통해 특정 서비스를 사용할 수 있도록 합니다. ASP.NET Core는 DI를 통해 주입될 사용자가 등록하는 모든 형식에 *서비스*라는 용어를 사용합니다. 내장 컨테이너의 서비스는 응용 프로그램의 Startup 클래스에 있는 ConfigureServices 메서드에 구성합니다. 종속성은 형식에 필요하며 IoC 컨테이너에 등록하는 서비스에 구현됩니다.
 
 일반적으로 인프라 개체를 구현하는 종속성을 주입하려고 합니다. 매우 일반적으로 주입하는 종속성은 리포지토리입니다. 하지만 다른 인프라 종속성을 주입할 수도 있습니다. 간단한 구현을 위해 작업 단위 패턴 개체(EF DbContext 개체)를 직접 주입할 수 있는데, DBContext 역시 인프라 지속성 개체의 구현이기 때문입니다.
 
@@ -78,11 +78,11 @@ public class CreateOrderCommandHandler
 
 클래스는 삽입된 리포지토리를 사용하여 트랜잭션을 실행하고 상태 변경 내용을 유지합니다. 클래스가 명령 처리기이든, .NET Core Web API 컨트롤러 메서드이든 [DDD 응용 프로그램 서비스](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/)이든 상관없습니다. 궁극적으로 리포지토리, 도메인 엔터티 및 기타 응용 프로그램 조합을 명령 처리기와 비슷한 방식으로 사용하는 간단한 클래스입니다. 종속성 주입은 생성자를 기반으로 DI를 사용하는 예제처럼 언급된 모든 클래스에 대해 동일한 방식으로 작동합니다.
 
-### <a name="registering-the-dependency-implementation-types-and-interfaces-or-abstractions"></a>종속성 구현 형식 및 인터페이스 또는 추상화 등록
+### <a name="register-the-dependency-implementation-types-and-interfaces-or-abstractions"></a>종속성 구현 형식 및 인터페이스 또는 추상화 등록
 
 생성자를 통해 주입된 개체를 사용하기 전에 DI를 통해 응용 프로그램 클래스에 삽입되는 개체를 생성하는 인터페이스와 클래스를 어디에 등록해야 하는지 알아야 합니다. (이전에 표시된 생성자에 기반한 DI와 유사합니다.)
 
-#### <a name="using-the-built-in-ioc-container-provided-by-aspnet-core"></a>ASP.NET Core에 제공되는 내장 IoC 컨테이너 사용
+#### <a name="use-the-built-in-ioc-container-provided-by-aspnet-core"></a>ASP.NET Core에 제공되는 기본 제공 IoC 컨테이너 사용
 
 ASP.NET Core에 제공되는 내장 IoC 컨테이너를 사용하는 경우, Startup.cs 파일의 ConfigureServices 메서드에 삽입할 형식을 다음 코드와 같이 등록합니다.
 
@@ -105,21 +105,19 @@ public void ConfigureServices(IServiceCollection services)
 
 IoC 컨테이너에 형식을 등록할 때 가장 일반적인 패턴은 한 쌍의 형식(인터페이스 및 관련된 구현 클래스)을 등록하는 것입니다. 그런 다음, 생성자를 통해 IoC 컨테이너에서 개체를 요청하면 특정 형식의 인터페이스 개체를 요청합니다. 예를 들어, 이전 예제의 마지막 줄에는 IMyCustomRepository에 대한 종속성이 있는 생성자가 있으면 IoC 컨테이너는 MyCustomSQLServerRepository 구현 클래스의 인스턴스를 삽입한다는 내용이 언급되어 있습니다.
 
-#### <a name="using-the-scrutor-library-for-automatic-types-registration"></a>자동 형식 등록을 위해 Scrutor 라이브러리 사용
+#### <a name="use-the-scrutor-library-for-automatic-types-registration"></a>자동 형식 등록을 위해 Scrutor 라이브러리 사용
 
 .NET Core에서 DI를 사용하는 경우 어셈블리를 스캔하고 규칙에 따라 해당 형식을 자동으로 등록할 수 있도록 하는 것이 좋습니다. 이 기능은 현재 ASP.NET Core에서 사용할 수 없습니다. 하지만 [Scrutor](https://github.com/khellang/Scrutor) 라이브러리를 대신 사용할 수 있습니다. 이 방법은 IoC 컨테이너에 등록해야 하는 형식이 수십 개인 경우에 유용합니다.
 
 #### <a name="additional-resources"></a>추가 자료
 
--   **Matthew King. Registering services with Scrutor**(Scrutor에 서비스 등록)
-    [*https://mking.net/blog/registering-services-with-scrutor*](https://mking.net/blog/registering-services-with-scrutor)
+- **Matthew King. Scrutor에 서비스 등록** \
+  [*https://www.mking.net/blog/registering-services-with-scrutor*](https://www.mking.net/blog/registering-services-with-scrutor)
 
-<!-- -->
+- **Kristian Hellang. Scrutor.** GitHub 리포지토리 \
+  [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
 
--   **Kristian Hellang. Scrutor.** GitHub 리포지토리
-    [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
-
-#### <a name="using-autofac-as-an-ioc-container"></a>IoC 컨테이너로 Autofac 사용
+#### <a name="use-autofac-as-an-ioc-container"></a>IoC 컨테이너로 Autofac 사용
 
 또한 추가 IoC 컨테이너를 사용하고 이것을 ASP.NET Core 파이프라인에 연결할 수도 있습니다. 이것은 [Autofac](https://autofac.org/)을 사용하는 eShopOnContainers의 Ordering(주문) 마이크로 서비스와 유사합니다. Autofac을 사용할 때 일반적으로 모듈을 통해 형식을 등록하기 때문에, 응용 프로그램 형식을 여러 클래스 라이브러리에 분산할 수 있듯이, 형식의 위치에 따라 여러 파일 간에 등록 형식을 분할할 수 있습니다.
 
@@ -152,40 +150,42 @@ public class ApplicationModule : Autofac.Module
 }
 ```
 
+Autofac에는 [이름 규칙에 따라 어셈블리 및 등록 형식 검사](https://autofac.readthedocs.io/en/latest/register/scanning.html)에 대한 기능도 있습니다.
+
 등록 프로세스와 개념은 내장 ASP.NET Core IoC 컨테이너로 형식을 등록하는 방식과 매우 유사하지만 Autofac을 사용하는 경우에는 구문이 조금 다릅니다.
 
 예제 코드에서 추상화 IOrderRepository는 구현 클래스 OrderRepository와 함께 등록됩니다. 즉, 생성자가 IOrderRepository 추상화 또는 인터페이스를 통해 종속성을 선언할 때마다 IoC 컨테이너는 OrderRepository 클래스의 인스턴스를 주입합니다.
 
 인스턴스 범위 형식은 동일한 서비스 또는 종속성에 대한 요청 사이에 인스턴스가 공유되는 방식을 결정합니다. 종속성에 대한 요청이 있을 때 IoC 컨테이너는 다음을 반환할 수 있습니다.
 
--   수명 범위당 단일 인스턴스(ASP.NET Core IoC 컨테이너에 *scoped*(범위 지정됨)라고 참조됨)
+- 수명 범위당 단일 인스턴스(ASP.NET Core IoC 컨테이너에 *scoped*(범위 지정됨)라고 참조됨)
 
--   종속성당 새 인스턴스 하나(ASP.NET Core IoC 컨테이너에 *transient*(일시적 )라고 참조됨)
+- 종속성당 새 인스턴스 하나(ASP.NET Core IoC 컨테이너에 *transient*(일시적 )라고 참조됨)
 
--   IoC 컨테이너를 사용하는 모든 개체에서 공유되는 단일 인스턴스(ASP.NET Core IoC 컨테이너에 *singleton*(단일)으로 참조됨)
+- IoC 컨테이너를 사용하는 모든 개체에서 공유되는 단일 인스턴스(ASP.NET Core IoC 컨테이너에 *singleton*(단일)으로 참조됨)
 
 #### <a name="additional-resources"></a>추가 자료
 
--   **ASP.NET Core에서 종속성 주입 소개**
-    [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
+- **ASP.NET Core에서 종속성 주입 소개** \
+  [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
--   **Autofac.** 공식 문서.
-    [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)
+- **Autofac.** 공식 문서. \
+  [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)
 
--   **ASP.NET Core IoC 컨테이너 서비스 수명과 Autofac IoC 컨테이너 인스턴스 범위 비교 - Cesar de la Torre.**
-    [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
+- **ASP.NET Core IoC 컨테이너 서비스 수명과 Autofac IoC 컨테이너 인스턴스 범위 비교 - Cesar de la Torre.** \
+  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
-## <a name="implementing-the-command-and-command-handler-patterns"></a>명령 및 명령 처리기 패턴 구현
+## <a name="implement-the-command-and-command-handler-patterns"></a>명령 및 명령 처리기 패턴 구현
 
-이전 섹션의 DI-through-constructor(생성자를 통한 DI) 예제에서 IoC 컨테이너는 클래스의 생성자를 통해 리포지토리를 주입했습니다. 그렇다면 정확이 어디에 주입했습니까? 간단한 Web API(예: eShopOnContainers의 카탈로그 마이크로 서비스)에서는 컨트롤러 생성자의 MVC 컨트롤러 수준에 주입합니다. 하지만 이 섹션의 초기 코드(eShopOnContainers의 Ordering.API 서비스에 있는 [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) 클래스)에서 종속성 주입은 특정 명령 처리기의 생성자를 통해 수행됩니다. 명령 처리기가 무엇인지 왜 사용해야 하는지에 대해 설명해 드리겠습니다.
+이전 섹션의 DI-through-constructor(생성자를 통한 DI) 예제에서 IoC 컨테이너는 클래스의 생성자를 통해 리포지토리를 주입했습니다. 그렇다면 정확이 어디에 주입했습니까? 간단한 Web API(예: eShopOnContainers의 카탈로그 마이크로 서비스)에서는 ASP.NET Core의 요청 파이프라인의 일부로 컨트롤러 생성자의 MVC 컨트롤러 수준에 주입합니다. 하지만 이 섹션의 초기 코드(eShopOnContainers의 Ordering.API 서비스에 있는 [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) 클래스)에서 종속성 주입은 특정 명령 처리기의 생성자를 통해 수행됩니다. 명령 처리기가 무엇인지 왜 사용해야 하는지에 대해 설명해 드리겠습니다.
 
 명령 패턴은 이 가이드의 앞부분에 소개된 CQRS 패턴과 본질적으로 관련이 있습니다. CQRS에는 두 가지 측면이 있습니다. 첫 번째 영역은 앞에서 설명한 [Dapper](https://github.com/StackExchange/dapper-dot-net) 마이크로 ORM으로 간단한 쿼리를 사용하는 쿼리입니다. 두 번째 영역은 트랜잭션의 시작점인 명령과 서비스 외부의 입력 채널입니다.
 
-그림 9-24에서 볼 수 있듯이, 패턴은 클라이언트 쪽의 명령을 수락하고, 이 명령을 도메인 모델 규칙을 기반으로 처리하고, 마지막으로 트랜잭션으로 상태를 유지하는 것을 기반으로 합니다.
+그림 7-24에서 볼 수 있듯이, 패턴은 클라이언트 쪽의 명령을 수락하고, 이 명령을 도메인 모델 규칙에 따라 처리하고, 마지막으로 트랜잭션으로 상태를 유지하는 것을 기반으로 합니다.
 
-![](./media/image21.png)
+![CQRS의 쓰기 쪽에 대한 상위 수준 보기: UI 앱은 도메인 모델 및 데이터베이스를 업데이트할 인프라에 따라 달라지는 CommandHandler를 가져오는 API를 통해 명령을 보냅니다.](./media/image21.png)
 
-**그림 9-24**. CQRS 패턴의 명령 또는 "트랜잭션 쪽"에 대한 개괄적인 보기
+**그림 7-24**. CQRS 패턴의 명령 또는 "트랜잭션 쪽"에 대한 개괄적인 보기
 
 ### <a name="the-command-class"></a>명령 클래스
 
@@ -201,7 +201,7 @@ public class ApplicationModule : Autofac.Module
 
 도메인의 비즈니스 규칙 및 불변성에 적합한 경우 명령과 업데이트를 idempotent로 만드는 것이 좋습니다. 예를 들어, 동일한 예제를 사용하기 위해, 어떤 이유로든(다시 시도 논리, 해킹 등) 동일한 CreateOrder 명령이 시스템에 여러 번 도달하면, 이것을 식별하고 주문이 여러 건 생성되지 않도록 해야 합니다. 이렇게 하려면 작업에 일종의 ID를 첨부하여 명령이나 업데이트가 이미 처리되었는지 식별해야 합니다.
 
-명령은 단일 수신자에게 보내는 것이며 게시하는 것이 아닙니다. 게시는 (무언가가 발생했고 이벤트 수신기가 관심을 가질 수 있다는) 팩트를 설명하는 통합 이벤트를 위한 것입니다. 이벤트의 경우, 게시자는 어떤 수신자가 이벤트를 받았는지, 또는 무엇을 하는지에 대해 아무 관심이 없습니다. 하지만 통합 이벤트는 이전 섹션에서 이미 소개한 내용과 다릅니다.
+명령은 단일 수신자에게 보내는 것이며 게시하는 것이 아닙니다. 게시는 무언가가 발생했고 이벤트 수신기가 관심을 가질 수 있다는 팩트를 설명하는 이벤트를 위한 것입니다. 이벤트의 경우, 게시자는 어떤 수신자가 이벤트를 받았는지, 또는 무엇을 하는지에 대해 아무 관심이 없습니다. 하지만 도메인 또는 통합 이벤트는 이전 섹션에서 이미 소개한 내용과 다릅니다.
 
 명령은 명령을 실행하는 데 필요한 모든 정보가 있는 데이터 필드나 컬렉션이 포함된 클래스로 구현됩니다. 명령은 변경이나 트랜잭션을 요청하는 데 명확히 사용되는 특별한 종류의 DTO(데이터 전송 개체)입니다. 명령 자체는 명령 처리에 필요한 정확한 정보만을 기반으로 합니다.
 
@@ -252,13 +252,13 @@ public class CreateOrderCommand
         _orderItems = new List<OrderItemDTO>();
     }
 
-    public CreateOrderCommand(List<OrderItemDTO> orderItems, string city,
+    public CreateOrderCommand(List<BasketItem> basketItems, string city,
         string street,
         string state, string country, string zipcode,
         string cardNumber, string cardHolderName, DateTime cardExpiration,
         string cardSecurityNumber, int cardTypeId) : this()
     {
-        _orderItems = orderItems;
+        _orderItems = MapToOrderItems(basketItems);
         City = city;
         Street = street;
         State = state;
@@ -283,9 +283,11 @@ public class CreateOrderCommand
 }
 ```
 
-기본적으로 명령 클래스에는 도메인 모델 개체를 사용하여 비즈니스 트랜잭션을 수행하는 데 필요한 모든 데이터가 포함됩니다. 따라서 명령은 읽기 전용 데이터가 포함되고 동작은 포함되지 않은 데이터 구조 일뿐입니다 명령의 이름은 용도를 나타냅니다. C\#과 같은 많은 언어에서 명령은 클래스로 표현되지만 실제 개체 지향적 의미에서는 진정한 클래스가 아닙니다.
+기본적으로 명령 클래스에는 도메인 모델 개체를 사용하여 비즈니스 트랜잭션을 수행하는 데 필요한 모든 데이터가 포함됩니다. 따라서 명령은 읽기 전용 데이터가 포함되고 동작은 포함되지 않은 데이터 구조일 뿐입니다. 명령의 이름은 용도를 나타냅니다. C\#과 같은 많은 언어에서 명령은 클래스로 표현되지만 실제 개체 지향적 의미에서는 진정한 클래스가 아닙니다.
 
 명령의 추가적인 특징은 변경할 수 없다는 점입니다. 예상되는 사용법이 도메인 모델에 의해 직접 처리되기 때문입니다. 예상된 수명 내에 변경할 필요가 없습니다. C\# 클래스에서 불변성은 setter 또는 내부 상태를 변경하는 다른 메서드를 두지 않는 방식으로 달성할 수 있습니다.
+
+명령이 직렬화/역 직렬화 프로세스를 수행하는 것을 의도하거나 기대한다면 속성에는 전용 setter와 `[DataMemeber]`(또는 `[JsonProperty]`) 특성이 있어야 하며, 그렇지 않으면 deserializer는 필요한 값을 사용하여 대상에 개체를 다시 구성할 수 없습니다.
 
 예를 들어 주문 생성을 위한 명령 클래스가 데이터 측면에서는 생성하려는 주문과 유사할 수 있지만 동일한 특성이 필요하지 않을 수도 있습니다. 예를 들어 CreateOrderCommand에는 주문 ID가 없는데, 이것은 주문이 아직 생성되지 않았기 때문입니다.
 
@@ -313,19 +315,21 @@ public class UpdateOrderStatusCommand
 
 각 명령에 대해 특정 명령 처리기 클래스를 구현해야 합니다. 이런 식으로 패턴이 작동하며 여기에 명령 개체, 도메인 개체 및 인프라 리포지토리 개체를 사용합니다. 명령 처리기는 실제로 CQRS와 DDD 측면에서 응용 프로그램 계층의 핵심입니다. 하지만 모든 도메인 논리는 도메인 클래스 내에 포함되어야 합니다. 집계 루트(루트 엔터티), 자식 엔터티 또는 [도메인 서비스](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/) 내에 포함되어야 하지만 응용 프로그램 계층의 클래스인 명령 처리기 내에 포함되지 말아야 합니다.
 
+명령 처리기 클래스는 이전 섹션에서 언급한 SRP(Single Resposibility Principle)를 달성하기 위한 강력한 발판을 제공합니다.
+
 명령 처리기는 명령을 수신하고 사용된 집계로부터 결과를 가져옵니다. 결과는 명령 실행 성공 또는 예외가 되어야 합니다. 예외의 경우 시스템 상태가 변경되지 않아야 합니다.
 
 명령 처리기는 일반적으로 다음 단계를 수행합니다.
 
--   DTO와 같은 명령 개체를 수신합니다([중재자](https://en.wikipedia.org/wiki/Mediator_pattern)(mediator) 또는 기타 인프라 개체로부터).
+- DTO와 같은 명령 개체를 수신합니다([중재자](https://en.wikipedia.org/wiki/Mediator_pattern)(mediator) 또는 기타 인프라 개체로부터).
 
--   명령이 유효한지 검사합니다(중재자(mediator)가 유효성을 검사하지 않은 경우).
+- 명령이 유효한지 검사합니다(중재자(mediator)가 유효성을 검사하지 않은 경우).
 
--   현재 명령의 대상인 집계 루트 인스턴스를 인스턴스화합니다.
+- 현재 명령의 대상인 집계 루트 인스턴스를 인스턴스화합니다.
 
--   집계 루트 인스턴스에서 메서드를 실행하여 명령으로부터 필요한 데이터를 가져옵니다.
+- 집계 루트 인스턴스에서 메서드를 실행하여 명령으로부터 필요한 데이터를 가져옵니다.
 
--   집계의 새로운 상태를 관련 데이터베이스에 유지합니다. 이 마지막 작업이 실제 트랜잭션입니다.
+- 집계의 새로운 상태를 관련 데이터베이스에 유지합니다. 이 마지막 작업이 실제 트랜잭션입니다.
 
 일반적으로 명령 처리기는 집계 루트(루트 엔터티)에서 발생한 단일 집계를 처리합니다. 단일 명령을 수신하여 여러 집합체가 영향을 받는 경우에는 도메인 이벤트를 사용하여 여러 집합체에 상태나 동작을 전파할 수 있습니다.
 
@@ -384,28 +388,28 @@ public class CreateOrderCommandHandler
 
 다음은 명령 처리기에서 수행해야 하는 추가 단계입니다.
 
--   명령의 데이터를 사용하여 집계 루트의 메서드 및 동작을 작동시킵니다.
+- 명령의 데이터를 사용하여 집계 루트의 메서드 및 동작을 작동시킵니다.
 
--   내부적으로 도메인 개체 내에서, 트랜잭션이 실행되는 동안 도메인 이벤트를 발생시키지만 명령 처리기 관점에서 볼 때 투명합니다.
+- 내부적으로 도메인 개체 내에서, 트랜잭션이 실행되는 동안 도메인 이벤트를 발생시키지만 명령 처리기 관점에서 볼 때 투명합니다.
 
--   집계의 작업 결과가 성공적이면 트랜잭션이 완료된 후 통합 이벤트 명령 처리기를 발생시킵니다. (리포지토리와 같은 인프라 클래스를 통해 발생시킬 수도 있습니다.)
+- 집계의 작업 결과가 성공적이면 트랜잭션이 완료된 후 통합 이벤트를 발생시킵니다. (리포지토리와 같은 인프라 클래스를 통해 발생시킬 수도 있습니다.)
 
 #### <a name="additional-resources"></a>추가 자료
 
--   **Mark Seemann. At the Boundaries, Applications are Not Object-Oriented**(경계에서, 응용 프로그램은 개체 지향적이지 않음)
-    [*http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
+- **Mark Seemann. 경계에서 애플리케이션은 개체 지향적이지 않음** \
+  [*http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
 
--   **Commands and events**(명령 및 이벤트)
-    [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
+- **명령 및 이벤트** \
+  [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
 
--   **What does a command handler do?**(명령 처리기는 무엇을 수행하나요?)
-    [*http://cqrs.nu/Faq/command-handlers*](http://cqrs.nu/Faq/command-handlers)
+- **명령 처리기는 무엇을 수행하나요?** \
+  [*http://cqrs.nu/Faq/command-handlers*](http://cqrs.nu/Faq/command-handlers)
 
--   **Jimmy Bogard. Domain Command Patterns – Handlers**(도메인 명령 패턴 - 처리기)
-    [*https://jimmybogard.com/domain-command-patterns-handlers/*](https://jimmybogard.com/domain-command-patterns-handlers/)
+- **Jimmy Bogard. 도메인 명령 패턴 - 처리기** \
+  [*https://jimmybogard.com/domain-command-patterns-handlers/*](https://jimmybogard.com/domain-command-patterns-handlers/)
 
--   **Jimmy Bogard. Domain Command Patterns – Validation**(도메인 명령 패턴 - 유효성 검사)
-    [*https://jimmybogard.com/domain-command-patterns-validation/*](https://jimmybogard.com/domain-command-patterns-validation/)
+- **Jimmy Bogard. 도메인 명령 패턴 - 유효성 검사** \
+  [*https://jimmybogard.com/domain-command-patterns-validation/*](https://jimmybogard.com/domain-command-patterns-validation/)
 
 ## <a name="the-command-process-pipeline-how-to-trigger-a-command-handler"></a>명령 프로세스 파이프라인: 명령 처리기를 트리거하는 방법
 
@@ -413,17 +417,17 @@ public class CreateOrderCommandHandler
 
 권장되는 다른 두 가지 주요 옵션은 다음과 같습니다.
 
--   메모리 내 중재자(mediator) 패턴 아티팩트를 통해
+- 메모리 내 중재자(mediator) 패턴 아티팩트를 통해
 
--   컨트롤러와 처리기 사이에 비동기 메시지 큐를 통해
+- 컨트롤러와 처리기 사이에 비동기 메시지 큐를 통해
 
-### <a name="using-the-mediator-pattern-in-memory-in-the-command-pipeline"></a>명령 파이프라인에 중재자(mediator) 패턴(메모리 내) 사용
+### <a name="use-the-mediator-pattern-in-memory-in-the-command-pipeline"></a>명령 파이프라인에 중재자 패턴(메모리 내) 사용
 
-그림 9-25에서 볼 수 있듯이 CQRS 방식에서는 메모리 내 버스와 유사한 지능형 중재자(mediator)를 사용하며, 수신되는 명령 또는 DTO의 형식을 기반으로 올바른 명령 처리기로 리디렉션할만큼 스마트합니다. 구성 요소 사이의 검은색 화살표는 관련 상호 작용이 있는 개체(많은 경우에 DI를 통해 주입됨) 간의 종속성을 나타냅니다.
+그림 7-25에서 볼 수 있듯이 CQRS 방식에서는 메모리 내 버스와 유사한 지능형 중재자(mediator)를 사용하며, 수신되는 명령 또는 DTO의 형식을 기반으로 올바른 명령 처리기로 리디렉션할만큼 스마트합니다. 구성 요소 사이의 검은색 화살표는 관련 상호 작용이 있는 개체(많은 경우에 DI를 통해 주입됨) 간의 종속성을 나타냅니다.
 
-![](./media/image22.png)
+![이전 이미지에서 확대/축소: ASP.NET Core 컨트롤러는 MediatR의 명령 파이프라인에 명령을 전송하여 적절한 처리기로 보냅니다.](./media/image22.png)
 
-**그림 9-25**. 단일 CQRS 마이크로 서비스의 프로세스에 중재자(Mediator) 패턴 사용
+**그림 7-25**. 단일 CQRS 마이크로 서비스의 프로세스에 중재자(Mediator) 패턴 사용
 
 중재자(Mediator) 패턴을 사용하는 것이 타당한 이유는 엔터프라이즈 응용 프로그램에서 처리 요청이 복잡해질 수 있기 때문입니다. 로깅, 유효성 검사, 감사 및 보안과 같은 여러 가지 교차 편집 문제를 추가하는 것이 필요할 수 있습니다. 이런 경우 중재자(mediator) 파이프라인([중재자(Mediator) 패턴](https://en.wikipedia.org/wiki/Mediator_pattern) 참조)에 의존하여 이러한 추가 동작이나 교차 편집 문제를 위한 수단을 제공할 수 있습니다.
 
@@ -431,17 +435,17 @@ public class CreateOrderCommandHandler
 
 데코레이터(decorator)와 동작은 AOP([Aspect Oriented Programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming))와 유사하며 중재자(mediator) 구성 요소가 관리하는 특정 프로세스 파이프라인에만 적용됩니다. 교차 편집 문제를 구현하는 AOP의 측면은 컴파일 시간에 주입된 *관점 생성기(aspect weaver)* 또는 개체 호출 인터셉션을 기반으로 적용됩니다. 일반적인 APO 방식은 AOP가 해당 작업을 어떻게 수행하는지 보기가 쉽지 않기 때문에 "마술처럼" 작동한다고 말하기도 합니다. 심각한 문제나 버그를 처리할 때 AOP는 디버그가 어려울 수 있습니다. 이러한 데코레이터/동작은 명시적이며 중재자(mediator)의 맥락에서만 적용되기 때문에 디버깅을 훨씬 더 쉽게 예측할 수 있습니다.
 
-예를 들어 eShopOnContainers Ordering(주문) 마이크로 서비스에 [LogBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/LoggingBehavior.cs) 클래스 및 [ValidatorBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/ValidatorBehavior.cs) 클래스라는 두 가지 샘플 동작을 구현했습니다. 동작의 구현은 다음 섹션에 eShopOnContainers가 [MediatR 3](https://www.nuget.org/packages/MediatR/3.0.0) [동작](https://github.com/jbogard/MediatR/wiki/Behaviors)을 어떻게 구현하는지 보여주면서 설명되어 있습니다.
+예를 들어 eShopOnContainers Ordering(주문) 마이크로 서비스에 [LogBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/LoggingBehavior.cs) 클래스 및 [ValidatorBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/ValidatorBehavior.cs) 클래스라는 두 가지 샘플 동작을 구현했습니다. 동작의 구현은 eShopOnContainers가 [MediatR 3](https://www.nuget.org/packages/MediatR/3.0.0) [동작](https://github.com/jbogard/MediatR/wiki/Behaviors)을 사용하는 방법을 보여줌으로써 다음 섹션에 설명되어 있습니다.
 
-### <a name="using-message-queues-out-of-proc-in-the-commands-pipeline"></a>명령의 파이프라인에서 메시지 큐(out-of-proc) 사용
+### <a name="use-message-queues-out-of-proc-in-the-commands-pipeline"></a>명령의 파이프라인에서 메시지 큐(out-of-proc) 사용
 
-또 다른 옵션은 그림 9-26과 같이 broker 또는 메시지 큐를 기반으로 비동기 메시지를 사용하는 것입니다. 이 옵션은 명령 처리기 바로 전에 중재자(mediator) 구성 요소와 결합될 수도 있습니다.
+또 다른 옵션은 그림 7-26과 같이 broker 또는 메시지 큐를 기반으로 비동기 메시지를 사용하는 것입니다. 이 옵션은 명령 처리기 바로 전에 중재자(mediator) 구성 요소와 결합될 수도 있습니다.
 
-![](./media/image23.png)
+![명령의 파이프라인은 고가용성 메시지 큐에 의해 처리되어 명령을 해당 처리기로 전달할 수도 있습니다.](./media/image23.png)
 
-**그림 9-26**. CQRS 명령으로 메시지 큐(프로세스 외부 및 프로세스 간 통신) 사용
+**그림 7-26**. CQRS 명령으로 메시지 큐(프로세스 외부 및 프로세스 간 통신) 사용
 
-메시지 큐를 사용하여 명령을 수락하면 명령의 파이프라인이 복잡해질 수 있습니다. 파이프라인을 외부 메시지 큐를 통해 연결된 두 개의 프로세스로 분할하는 것이 필요할 수 있기 때문입니다. 하지만 비동기 메시지를 기반으로 확장성과 성능을 향상시키려면 사용해야 합니다. 그림 9-26의 경우 컨트롤러는 명령 메시지를 큐에 게시만 하고 반환합니다. 그런 다음, 명령 처리기는 원하는 속도로 메시지를 처리합니다. 이것이 큐의 커다란 장점입니다. 주식 또는 송신 데이터가 대규모인 그 밖의 시나리오와 같이 엄청난 확장성이 필요한 경우에, 메시지 큐는 버퍼로 작동할 수 있습니다.
+메시지 큐를 사용하여 명령을 수락하면 명령의 파이프라인이 복잡해질 수 있습니다. 파이프라인을 외부 메시지 큐를 통해 연결된 두 개의 프로세스로 분할하는 것이 필요할 수 있기 때문입니다. 하지만 비동기 메시지를 기반으로 확장성과 성능을 향상시키려면 사용해야 합니다. 그림 7-26의 경우 컨트롤러는 명령 메시지를 큐에 게시만 하고 반환합니다. 그런 다음, 명령 처리기는 원하는 속도로 메시지를 처리합니다. 이것이 큐의 커다란 장점입니다. 주식 또는 송신 데이터가 대규모인 그 밖의 시나리오와 같이 엄청난 확장성이 필요한 경우에, 메시지 큐는 버퍼로 작동할 수 있습니다.
 
 하지만 메시지 큐의 비동기적인 특성으로 인해, 명령 프로세스의 성공 또는 실패에 대해 클라이언트 응용 프로그램과 통신할 방법을 알아내야 합니다. 원칙적으로 “fire and forget”명령은 절대 사용하지 말아야 합니다. 모든 비즈니스 응용 프로그램은 명령이 성공적으로 처리되었는지 아니면 최소한 유효성이 검사되고 수락되었는지를 알아야 합니다.
 
@@ -449,9 +453,9 @@ public class CreateOrderCommandHandler
 
 또한 비동기 명령은 단방향 명령이기 때문에 많은 경우에 필요하지 않으며, 이 내용은 [온라인 대화](https://groups.google.com/forum/#!msg/dddcqrs/xhJHVxDx2pM/WP9qP8ifYCwJ)에 있는 Burtsev Alexey와 Greg Young 사이의 다음과 같은 흥미로운 대화에 설명되어 있습니다.
 
-\[Burtsev Alexey\] 많은 코드에서 아무 이유 없이 비동기 코드 처리 또는 단방향 명령 메시지를 사용하는 경우를 봤습니다. (긴 작업을 수행하는 경우도, 외부 비동기 코드를 실행하는 경우도, 심지어 메시지 버스를 사용하기 위해 응용 프로그램 경계를 넘는 경우도 아닙니다.) 이런 불필요한 복잡성을 적용하는 이유가 무엇인가요? 그리고 실제로 명령 처리기를 차단하는 CQRS 코드를 여태까지 본 적이 없습니다. 대부분의 경우 제대로 작동할 텐데도 말입니다.
-
-\[Greg Young\] \[...\] 비동기 명령은 존재하지 않으며 실제로는 또 다른 이벤트입니다. 상대방이 내게 보낸 것을 수락해야 하고 동의하지 않는 경우 이벤트를 발생시켜야 한다면, 내게 수행하라고 알려주는 것이 아니고 수행이 완료되었다는 것을 알려 주는 것입니다. 처음엔 약간의 차이처럼 보이지만 여기에는 많은 내용이 함축되어 있습니다.
+> \[Burtsev Alexey\] 많은 코드에서 아무 이유 없이 비동기 코드 처리 또는 단방향 명령 메시지를 사용하는 경우를 봤습니다. (긴 작업을 수행하는 경우도, 외부 비동기 코드를 실행하는 경우도, 심지어 메시지 버스를 사용하기 위해 응용 프로그램 경계를 넘는 경우도 아닙니다.) 이런 불필요한 복잡성을 적용하는 이유가 무엇인가요? 그리고 실제로 명령 처리기를 차단하는 CQRS 코드를 여태까지 본 적이 없습니다. 대부분의 경우 제대로 작동할 텐데도 말입니다.
+>
+> \[Greg Young\] \[...\] 비동기 명령은 존재하지 않으며 실제로는 또 다른 이벤트입니다. 상대방이 내게 보낸 것을 받아들이고 동의하지 않는 경우 이벤트를 발생시켜야 한다면, 더 이상 내게 무언가를 수행하라고 알려주는 것이 아닙니다. \[ 즉, 명령이 아닙니다\]. 수행이 완료되었다는 것을 알려 주는 것입니다. 처음엔 약간의 차이처럼 보이지만 여기에는 많은 내용이 함축되어 있습니다.
 
 비동기 명령은 실패를 나타낼 간단한 방법이 없기 때문에 시스템의 복잡성을 크게 증가시킵니다. 따라서 크기 조정 요구 사항이 필요하거나 메시지를 통해 내부 마이크로 서비스를 통신하는 특수한 경우가 아니라면 비동기 명령은 사용하지 않는 것이 좋습니다. 이런 경우 장애에 대한 별도의 보고 및 복구 시스템을 설계해야 합니다.
 
@@ -459,7 +463,7 @@ eShopOnContainers의 초기 버전에서, HTTP 요청으로 시작하여 중재�
 
 어떤 경우에서든, 이러한 결정은 응용 프로그램 또는 마이크로 서비스의 비즈니스 요구 사항에 기반하여 내려져야 합니다.
 
-## <a name="implementing-the-command-process-pipeline-with-a-mediator-pattern-mediatr"></a>Mediator 패턴(MediatR)으로 명령 프로세스 파이프라인 구현
+## <a name="implement-the-command-process-pipeline-with-a-mediator-pattern-mediatr"></a>중재자 패턴(MediatR)으로 명령 프로세스 파이프라인 구현
 
 샘플 구현인 이 가이드에서는 중재자(Mediator) 패턴을 기반으로 in-process 파이프라인을 사용하여 명령 수집을 유도하고 명령을 메모리 내에서 올바른 명령 처리기로 라우팅할 것을 제안합니다. 또한 이 가이드에서는 교차 편집 문제를 분리하기 위해 [동작](https://github.com/jbogard/MediatR/wiki/Behaviors) 적용을 제안합니다.
 
@@ -469,7 +473,7 @@ Mediator 패턴을 사용하면 작업을 수행하는 처리기(이 경우 명�
 
 Mediator 패턴을 사용하는 또 다른 좋은 이유는 이 가이드를 검토하면서 Jimmy Bogard가 다음과 같이 설명했습니다.
 
-시스템 동작에 일관된 창을 제공하기 때문에 테스트를 언급하는 것이 유용하다고 생각합니다. 요청이 들어가고(Request-in), 응답이 나오는(response-out) 이러한 측면은 일관되게 동작하는 테스트를 구축하는 데 매우 유용했습니다.
+> 시스템 동작에 일관된 창을 제공하기 때문에 테스트를 언급하는 것이 유용하다고 생각합니다. 요청이 들어가고(Request-in), 응답이 나오는(response-out) 이러한 측면은 일관되게 동작하는 테스트를 구축하는 데 매우 유용했습니다.
 
 먼저, 중재자(mediator) 개체를 실제로 사용할 샘플 WebAPI 컨트롤러를 살펴보겠습니다. 중재자(mediator) 개체를 사용하지 않는 경우에는 해당 컨트롤러에 대한 모든 종속성(예: 로거 개체 등)을 주입해야 합니다. 따라서 생성자가 매우 복잡합니다. 반면에 중재자(mediator) 개체를 사용하면, 교차 편집 작업당 종속성이 하나일 경우 다수의 종속성이 있지만 다음 예제와 같이 적은 수의 종속성만 있기 때문에 컨트롤러의 생성자는 훨씬 더 간단해 질 수 있습니다.
 
@@ -495,9 +499,9 @@ public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand
 }
 ```
 
-### <a name="implementing-idempotent-commands"></a>idempotent 명령 구현
+### <a name="implement-idempotent-commands"></a>idempotent 명령 구현
 
-eShopOnContainers에서는 위의 경우보다 고급 예제가 Ordering(주문) 마이크로 서비스에서 CreateOrderCommand 개체를 제출합니다. 하지만 Ordering 비즈니스 프로세스가 좀 더 복잡하고, 이 경우, 실제로는 Basket 마이크로 서비스에서 시작되기 때문에 CreateOrderCommand 개체를 제출하는 동작은 이전의 간단한 예제에서처럼 클라이언트 앱에서 호출되는 간단한 WebAPI 컨트롤로 대신 [UserCheckoutAcceptedIntegrationEvent.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs)라는 통합 이벤트 처리기에서 수행됩니다. 
+**eShopOnContainers**에서는 위의 경우보다 고급 예제가 Ordering(주문) 마이크로 서비스에서 CreateOrderCommand 개체를 제출합니다. 하지만 Ordering 비즈니스 프로세스가 좀 더 복잡하고, 이 경우, 실제로는 Basket 마이크로 서비스에서 시작되기 때문에 CreateOrderCommand 개체를 제출하는 동작은 이전의 간단한 예제에서처럼 클라이언트 앱에서 호출되는 간단한 WebAPI 컨트롤로 대신 >UserCheckoutAcceptedIntegrationEvent.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs)라는 통합 이벤트 처리기에서 수행됩니다.
 
 그럼에도 불구하고 MediatR에 명령을 제출하는 동작은 다음 코드와 매우 유사합니다.
 
@@ -519,7 +523,7 @@ result = await _mediator.Send(requestCreateOrder);
 
 하지만 이 경우는 idempotent 명령도 구현하기 때문에 조금 더 고급입니다. CreateOrderCommand 프로세스는 idempotent여야 하기 때문에 동일한 메시지가 네트워크를 통해 중복되어 들어오면(재시도 등과 같은 이유로 인해) 동일한 비즈니스 명령은 한 번만 처리됩니다.
 
-이러한 내용은 비즈니스 명령(이 경우 CreateOrderCommand)을 래핑하고, idempotent여야 하는 네트워크를 통해 들어오는 모든 메시지의 ID로 추적되는 제네릭 IdentifiedCommand에 embed하여 구현됩니다.
+이러한 내용은 비즈니스 명령(이 경우 CreateOrderCommand)을 래핑하고, idempotent여야 하는 네트워크를 통해 들어오는 모든 메시지의 ID로 추적되는 제네릭 IdentifiedCommand에 포함하여 구현됩니다.
 
 아래 코드에서 IdentifiedCommand는 ID와 래핑된 비즈니스 명령 개체가 있는 DTO에 불과하다는 것을 알 수 있습니다.
 
@@ -583,7 +587,7 @@ public class IdentifiedCommandHandler<T, R> :
 
 IdentifiedCommand는 비즈니스 명령의 봉투(Envelope)처럼 작동하기 때문에 반복된 ID가 아니라서 비즈니스 명령을 처리해야 하는 경우에는, [IdentifiedCommandHandler.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/IdentifiedCommandHandler.cs)에서 `_mediator.Send(message.Command)`를 실행할 때 위에 표시된 코드의 마지막 부분처럼 내부 비즈니스 명령을 가져다가 중재자(Mediator)에 다시 제출합니다.
 
-그렇게 하면 이 경우 다음 코드와 같이 Ordering 데이터베이스에 대해 트랜잭션을 실행하는 CreateOrderCommandHandler 비즈니스 명령 처리기를 연결하고 실행합니다.
+그렇게 하면 이 경우 다음 코드와 같이 Ordering 데이터베이스에 대해 트랜잭션을 실행하는 [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) 비즈니스 명령 처리기를 연결하고 실행합니다.
 
 ```csharp
 // CreateOrderCommandHandler.cs
@@ -630,7 +634,7 @@ public class CreateOrderCommandHandler
 }
 ```
 
-### <a name="registering-the-types-used-by-mediatr"></a>MediatR에서 사용하는 형식 등록
+### <a name="register-the-types-used-by-mediatr"></a>MediatR에서 사용하는 형식 등록
 
 MediatR에서 명령 처리기 클래스를 인식하려면 IoC 컨테이너에 중재자(mediator) 클래스와 명령 처리기 클래스를 등록해야 합니다. 기본적으로 MediatR은 Autofac을 IoC 컨테이너로 사용하지만 내장 ASP.NET Core IoC 컨테이너 또는 MediatR에서 지원하는 다른 컨테이너를 사용할 수도 있습니다.
 
@@ -655,9 +659,9 @@ public class MediatorModule : Autofac.Module
 }
 ```
 
-여기가 MediatR로 "마술이 일어나는 곳"입니다. 
+여기가 MediatR로 "마술이 일어나는 곳"입니다.
 
-각 명령 처리기는 제네릭 IAsyncRequestHandler&lt;T&gt; 인터페이스를 구현하기 때문에 어셈블리를 등록할 때 코드는 RegisteredAssemblyType에 등록되고 다음 예제와 같이 CommandHandler 클래스에 명시된 관계 덕분에 CommandHandler를 명령과 연결하는 동안 모든 형식을 RequestHandler로 만듭니다.
+각 명령 처리기는 제네릭 `IAsyncRequestHandler<T>` 인터페이스를 구현하기 때문에 어셈블리를 등록할 때 코드는 다음 예제와 같이 `CommandHandler` 클래스에 명시된 관계 덕분에 `CommandHandlers`를 해당 `Commands`와 연결하는 동안 `IAsyncRequestHandler`으로 표시된 모든 유형을 `RegisteredAssemblyTypes`에 등록합니다.
 
 ```csharp
 public class CreateOrderCommandHandler
@@ -665,9 +669,9 @@ public class CreateOrderCommandHandler
 {
 ```
 
-이것이 명령을 명령 처리기와 연관시키는 코드입니다. 처리기는 단지 간단한 클래스이지만 RequestHandler&lt;T&gt;를 상속받으며 MediatR은 올바른 페이로드로 호출되는지 확인합니다.
+이것이 명령을 명령 처리기와 연관시키는 코드입니다. 처리기는 단지 간단한 클래스이지만 `RequestHandler<T>`에서 상속받습니다. 여기서 T는 명령 유형이며 MediatR은 올바른 페이로드(명령)로 호출되는지 확인합니다.
 
-## <a name="applying-cross-cutting-concerns-when-processing-commands-with-the-behaviors-in-mediatr"></a>MediatR의 동작을 사용하여 명령을 처리하는 경우 교차 편집 문제 적용
+## <a name="apply-cross-cutting-concerns-when-processing-commands-with-the-behaviors-in-mediatr"></a>MediatR의 동작을 사용하여 명령을 처리하는 경우 교차 편집 문제 적용
 
 한 가지가 더 있습니다. 중재자(mediator) 파이프라인에 교차 편집 문제를 적용할 수 있습니다. Autofac 등록 모듈 코드의 끝에서 동작 형식, 특히 LoggingBehavior 클래스 및 ValidatorBehavior 클래스를 어떻게 등록하는지 볼 수도 있습니다. 하지만 다른 사용자 지정 동작도 추가할 수 있습니다.
 
@@ -715,46 +719,9 @@ public class LoggingBehavior<TRequest, TResponse>
 }
 ```
 
-이 데코레이터(decorator) 클래스를 구현하고 이와 함께 파이프라인을 데코레이팅하면 MediatR을 통해 처리되는 모든 명령은 실행에 대한 정보를 로깅합니다.
+이 동작 클래스를 구현하고 파이프라인(위의 MediatorModule에서)에 등록하는 것만으로 MediatR을 통해 처리되는 모든 명령은 실행에 대한 정보를 로깅합니다.
 
 eShopOnContainers Ordering(주문) 마이크로 서비스는 기본 유효성 검사의 두 번째 동작도 적용하며 이것은 다음 코드와 같이 [FluentValidation](https://github.com/JeremySkinner/FluentValidation) 라이브러리에 의존하는 [ValidatorBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/ValidatorBehavior.cs) 클래스입니다.
-
-```csharp
-public class ValidatorDecorator<TRequest, TResponse>
-    : IAsyncRequestHandler<TRequest, TResponse>
-    where TRequest : IAsyncRequest<TResponse>
-{
-    private readonly IAsyncRequestHandler<TRequest, TResponse> _inner;
-    private readonly IValidator<TRequest>[] _validators;
-
-    public ValidatorDecorator(
-        IAsyncRequestHandler<TRequest, TResponse> inner,
-        IValidator<TRequest>[] validators)
-    {
-        _inner = inner;
-        _validators = validators;
-    }
-
-    public async Task<TResponse> Handle(TRequest message)
-    {
-        var failures = _validators
-            .Select(v => v.Validate(message))
-            .SelectMany(result => result.Errors)
-            .Where(error => error != null)
-            .ToList();
-            if (failures.Any())
-            {
-                throw new OrderingDomainException(
-                $"Command Validation Errors for type {typeof(TRequest).Name}",
-                new ValidationException("Validation exception", failures));
-            }
-            var response = await _inner.Handle(message);
-        return response;
-    }
-}
-```
-
-그런 다음, [FluentValidation](https://github.com/JeremySkinner/FluentValidation) 라이브러리를 기반으로 다음 코드와 같이 CreateOrderCommand와 함께 전달된 데이터에 대한 유효성 검사를 생성했습니다.
 
 ```csharp
 public class ValidatorBehavior<TRequest, TResponse> 
@@ -786,7 +753,9 @@ public class ValidatorBehavior<TRequest, TResponse>
 }
 ```
 
-그런 다음, FluentValidation 라이브러리를 기반으로 다음 코드와 같이 CreateOrderCommand와 함께 전달된 데이터에 대한 유효성 검사를 생성했습니다.
+여기서 동작은 유효성 검사가 실패할 경우 예외를 발생시키지만, 성공한 경우에는 명령 결과를, 그렇지 않으면 유효성 검사 메시지가 포함된 결과 개체를 반환할 수도 있습니다. 이렇게 하면 사용자에게 유효성 검사 결과를 더 쉽게 표시할 수 있습니다.
+
+그런 다음, [FluentValidation](https://github.com/JeremySkinner/FluentValidation) 라이브러리를 기반으로 다음 코드와 같이 CreateOrderCommand와 함께 전달된 데이터에 대한 유효성 검사를 생성했습니다.
 
 ```csharp
 public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
@@ -827,45 +796,45 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
 
 ##### <a name="the-mediator-pattern"></a>중재자(mediator) 패턴
 
--   **중재자(mediator) 패턴**
-    [*https://en.wikipedia.org/wiki/Mediator\_pattern*](https://en.wikipedia.org/wiki/Mediator_pattern)
+- **중재자(mediator) 패턴** \
+  [*https://en.wikipedia.org/wiki/Mediator\_pattern*](https://en.wikipedia.org/wiki/Mediator_pattern)
 
 ##### <a name="the-decorator-pattern"></a>데코레이터(decorator) 패턴
 
--   **데코레이터(decorator) 패턴**
-    [*https://en.wikipedia.org/wiki/Decorator\_pattern*](https://en.wikipedia.org/wiki/Decorator_pattern)
+- **데코레이터(decorator) 패턴** \
+  [*https://en.wikipedia.org/wiki/Decorator\_pattern*](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 ##### <a name="mediatr-jimmy-bogard"></a>MediatR(Jimmy Bogard)
 
--   **MediatR.** GitHub 리포지토리
-    [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
+- **MediatR.** GitHub 리포지토리 \
+  [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
 
--   **CQRS with MediatR and AutoMapper**(CQRS 및 MediatR/AutoMapper)
-    [*https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/*](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
+- **MediatR 및 AutoMapper를 포함한 CQRS** \
+  [*https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/*](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
 
--   **Put your controllers on a diet: POSTs and commands.**(다이어트 중에 컨트롤러 넣기: POST 및 명령.)
-    [*https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/*](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
+- **다이어트에 컨트롤러 넣기: POST 및 명령.** \
+  [*https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/*](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
 
--   **Tackling cross-cutting concerns with a mediator pipeline**(중재자(mediator) 파이프라인으로 교차 편집 문제 해결)
-    [*https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/*](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
+- **중재자(mediator) 파이프라인으로 교차 편집 문제 해결** \
+  [*https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/*](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
 
--   **CQRS and REST: the perfect match**(CQRS 및 REST: 완벽한 일치)
-    [*https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/*](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
+- **CQRS 및 REST: 완벽한 일치 항목** \
+  [*https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/*](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
 
--   **MediatR Pipeline Examples**(MediatR 파이프라인 예제)
-    [*https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/*](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
+- **MediatR 파이프라인 예제** \
+  [*https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/*](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
 
--   **Vertical Slice Test Fixtures for MediatR and ASP.NET Core**(MediatR 및 ASP.NET Core에 대한 수직 조각 테스트 설비)
-    *<https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/> *
+- **MediatR 및 ASP.NET Core에 대한 수직 조각 테스트 설비** \
+  [*https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/*](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
 
--   **MediatR Extensions for Microsoft Dependency Injection Released**(Microsoft 종속성 주입에 대한 MediatR 확장이 릴리스됨)
-    [*https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/*](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
+- **Microsoft 종속성 주입에 대한 MediatR 확장이 릴리스됨** \
+  [*https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/*](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
 
 ##### <a name="fluent-validation"></a>Fluent validation
 
--   **Jeremy Skinner. FluentValidation.** GitHub 리포지토리
-    [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
+- **Jeremy Skinner. FluentValidation.** GitHub 리포지토리 \
+  [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
 >[!div class="step-by-step"]
-[이전](microservice-application-layer-web-api-design.md)
-[다음](../implement-resilient-applications/index.md)
+>[이전](microservice-application-layer-web-api-design.md)
+>[다음](../implement-resilient-applications/index.md)

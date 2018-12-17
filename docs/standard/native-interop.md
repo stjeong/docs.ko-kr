@@ -6,12 +6,12 @@ ms.author: ronpet
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
-ms.openlocfilehash: 7da86cfe483a2355c53206f4c491fbd07e4c3046
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2f427eb5d8f41f730d4263425e268213db92236d
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33591926"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143190"
 ---
 # <a name="native-interoperability"></a>기본 상호 운용성
 
@@ -260,7 +260,7 @@ namespace PInvokeSamples {
 
 **마샬링**은 관리되는 경계를 넘어 네이티브로 변환되거나 그 반대로 변환되어야 할 때 형식을 변환하는 프로세스입니다.
 
-마샬링이 필요한 이유는 관리 코드와 비관리 코드의 형식이 서로 다르기 때문입니다. 예를 들어 관리 코드에서는 `String`을 사용하지만 관리되지 않는 환경에서는 문자열이 유니코드(“와이드”), 비유니코드, null 종료, ASCII 등일 수 있습니다. 기본적으로 P/Invoke 하위 시스템은 [MSDN](../../docs/framework/interop/default-marshaling-behavior.md)에서 확인할 수 있는 기본 동작에 따라 올바른 작업을 수행하려고 합니다. 그러나 추가 제어가 필요한 경우 `MarshalAs` 특성을 사용하여 관리되지 않는 쪽에서 필요한 형식을 지정할 수 있습니다. 예를 들어 문자열을 null 종료 ANSI 문자열로 보내려는 경우 다음과 같이 할 수 있습니다.
+마샬링이 필요한 이유는 관리 코드와 비관리 코드의 형식이 서로 다르기 때문입니다. 예를 들어 관리 코드에서는 `String`을 사용하지만 관리되지 않는 환경에서는 문자열이 유니코드(“와이드”), 비유니코드, null 종료, ASCII 등일 수 있습니다. 기본적으로 P/Invoke 하위 시스템은 [기본 동작](../../docs/framework/interop/default-marshaling-behavior.md)에 따라 올바른 작업을 수행하려고 합니다. 그러나 추가 제어가 필요한 경우 [MarshalAs](xref:System.Runtime.InteropServicxes.MarshalAs) 특성을 사용하여 관리되지 않는 쪽에서 필요한 형식을 지정할 수 있습니다. 예를 들어 문자열을 null 종료 ANSI 문자열로 보내려는 경우 다음과 같이 할 수 있습니다.
 
 ```csharp
 [DllImport("somenativelibrary.dll")]

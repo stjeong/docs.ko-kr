@@ -9,12 +9,12 @@ helpviewer_keywords:
 - streams
 - streams, definition
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
-ms.openlocfilehash: c978f79571494d9b716df4e8a42e7f40d20766f6
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 5ce95d84782f02df1a4f9f362629bab776a8060c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332959"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53155027"
 ---
 # <a name="basics-of-net-framework-file-io-and-the-file-system-visual-basic"></a>.NET Framework 파일 I/O 및 파일 시스템의 기본 사항(Visual Basic)
 <xref:System.IO> 네임스페이스의 클래스는 드라이브, 파일 및 디렉터리 작업에 사용됩니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "39332959"
 ## <a name="stream-operations"></a>스트림 작업  
  스트림에 포함된 데이터는 메모리, 파일 또는 TCP/IP 소켓에서 온 것일 수 있습니다. 스트림에는 적용 가능한 기본 작업이 있습니다.  
   
--   읽기. 스트림에서 읽을 수 있고, 스트림에서 데이터 구조(예: 문자열 또는 바이트 배열)로 데이터를 전송할 수 있습니다.  
+-   **읽기**. 스트림에서 읽을 수 있고, 스트림에서 데이터 구조(예: 문자열 또는 바이트 배열)로 데이터를 전송할 수 있습니다.  
   
 -   **쓰기**. 스트림에 쓸 수 있고, 데이터 소스에서 스트림으로 데이터를 전송할 수 있습니다.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "39332959"
   
  다음 표에서는 스트림을 사용하여 일반적으로 수행되는 작업을 보여 줍니다.  
   
-|후|보기|
+|후|참조|
 |---|---|   
 |데이터 파일 읽기 및 쓰기|[방법: 새로 만든 데이터 파일 읽기 및 쓰기](../../../../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |파일에서 텍스트 읽기|[방법: 파일의 텍스트 읽기](../../../../standard/io/how-to-read-text-from-a-file.md)|  
@@ -72,7 +72,7 @@ ms.locfileid: "39332959"
   
  다음 표에서는 파일 액세스 및 파일 특성과 관련된 작업을 보여 줍니다.  
   
-|대상|보기|  
+|대상|참조|  
 |---|---|
 |로그 파일 열기 및 텍스트 추가|[방법: 로그 파일 열기 및 추가](../../../../standard/io/how-to-open-and-append-to-a-log-file.md)|  
 |파일의 특성 확인|<xref:System.IO.FileAttributes>|  
@@ -85,7 +85,7 @@ ms.locfileid: "39332959"
   
  다음 표에서는 격리된 파일 저장소와 일반적으로 관련된 작업을 보여 줍니다.  
   
-|대상|보기|
+|대상|참조|
 |---|---|  
 |격리된 저장소 만들기|[방법: 격리된 저장소의 저장소 가져오기](../../../../standard/io/how-to-obtain-stores-for-isolated-storage.md)|  
 |격리된 저장소 열거|[방법: 격리된 저장소의 저장소 열거](../../../../standard/io/how-to-enumerate-stores-for-isolated-storage.md)|  
@@ -101,5 +101,5 @@ ms.locfileid: "39332959"
 ## <a name="see-also"></a>참고 항목  
  [스트림 작성](../../../../standard/io/composing-streams.md)  
  [파일 및 스트림 I/O](../../../../standard/io/index.md)  
- [비동기 파일 I/O](../../../../standard/io/asynchronous-file-i-o.md)  
+ [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  
  [.NET Framework 파일 I/O 및 파일 시스템에 사용되는 클래스(Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/classes-used-in-net-framework-file-io-and-the-file-system.md)

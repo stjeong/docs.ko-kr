@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f4d1010069e9d95488a99133f949ca112dc08f0e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 37ab502277cb413a116aa1301d1127f700097a45
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201600"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53146578"
 ---
 # <a name="overview-of-synchronization-primitives"></a>동기화 기본 형식 개요
 
@@ -79,9 +79,9 @@ ms.locfileid: "50201600"
 
 ### <a name="readerwriterlockslim-class"></a>ReaderWriterLockSlim 클래스
 
-<xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> 클래스는 쓰기 위해 공유 리소스에 대한 배타적 액세스 권한을 부여하고, 읽기 위해 여러 스레드가 동시에 리소스에 액세스하도록 허용합니다. <xref:System.Threading.ReaderWriterLockSlim>을 사용하여 스레드로부터 안전한 읽기 작업을 지원하지만 쓰기 작업을 수행할 배타적 액세스 권한이 필요한 공유 데이터 구조에 대한 액세스를 동기화할 수 있습니다. 스레드가 배타적 액세스를 요청하면(예: <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A?displayProperty=nameWithType> 메서드 호출을 통해) 모든 기존 판독기가 잠금을 종료하고 작성기가 잠금을 시작 및 종료할 때까지 이후 작성기 요청이 차단됩니다.
+<xref:System.Threading.ReaderWriterLockSlim?displayProperty=nameWithType> 클래스는 쓰기 위해 공유 리소스에 대한 배타적 액세스 권한을 부여하고, 읽기 위해 여러 스레드가 동시에 리소스에 액세스하도록 허용합니다. <xref:System.Threading.ReaderWriterLockSlim>을 사용하여 스레드로부터 안전한 읽기 작업을 지원하지만 쓰기 작업을 수행할 배타적 액세스 권한이 필요한 공유 데이터 구조에 대한 액세스를 동기화할 수 있습니다. 스레드가 배타적 액세스를 요청하면(예: <xref:System.Threading.ReaderWriterLockSlim.EnterWriteLock%2A?displayProperty=nameWithType> 메서드 호출을 통해) 모든 기존 판독기가 잠금을 종료하고 작성기가 잠금을 시작 및 종료할 때까지 후속 판독기 및 작성기 요청이 차단됩니다.
   
-자세한 내용은 [판독기 및 작성기 잠금](reader-writer-locks.md) 문서 및 <xref:System.Threading.ReaderWriterLockSlim> API 참조를 참조하세요.
+자세한 내용은 <xref:System.Threading.ReaderWriterLockSlim> API 참조를 참조하세요.
 
 ### <a name="semaphore-and-semaphoreslim-classes"></a>세마포 및 SemaphoreSlim 클래스
 
@@ -134,7 +134,7 @@ Windows에서는 프로세스 간 동기화에 <xref:System.Threading.EventWaitH
 
 <xref:System.Threading.Interlocked?displayProperty=nameWithType> 클래스는 변수에서 단순 원자성 작업을 수행하는 정적 메서드를 제공합니다. 해당 원자성 작업에는 비교에 따른 추가, 증가 및 감소, 교환, 조건부 교환이 포함되고 64비트 정수 값을 읽는 작업이 포함됩니다.
 
-자세한 내용은 [연동 작업](interlocked-operations.md) 문서 및 <xref:System.Threading.Interlocked> API 참조를 참조하세요.
+자세한 내용은 <xref:System.Threading.Interlocked> API 참조를 참조하세요.
 
 ## <a name="spinwait-structure"></a>SpinWait 구조체
 

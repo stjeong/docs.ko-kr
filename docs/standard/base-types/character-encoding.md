@@ -1,5 +1,6 @@
 ---
 title: .NET의 문자 인코딩
+description: .NET에서 문자 인코딩 및 디코딩에 대해 알아봅니다.
 ms.date: 12/22/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -12,12 +13,13 @@ helpviewer_keywords:
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: cac7e0fca4a009b7f5b6f677abed70cf2519052d
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.custom: seodec18
+ms.openlocfilehash: 55eb1d713c25314877fffd8a683ce5a8d9516d92
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711759"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149928"
 ---
 # <a name="character-encoding-in-net"></a>.NET의 문자 인코딩
 문자는 다양한 방법으로 표현할 수 있는 추상 엔터티입니다. 문자 인코딩은 지원되는 문자 집합의 각 문자와 해당 문자를 나타내는 일부 값의 쌍을 만드는 시스템입니다. 예를 들어 모르스 부호는 로마 알파벳의 각 문자와 전화선을 통한 전송에 적합한 점과 대시 패턴의 쌍을 만드는 문자 인코딩입니다. 컴퓨터의 문자 인코딩은 지원되는 문자 집합의 각 문자와 해당 문자를 나타내는 숫자 값의 쌍을 만듭니다. 문자 인코딩에는 다음 두 가지 구성 요소가 있습니다.  
@@ -159,7 +161,7 @@ ms.locfileid: "46711759"
 > [!NOTE]
 >  인코딩에 대한 사용자 지정 최적 대체(fallback) 매핑을 구현할 수도 있습니다. 자세한 내용은 [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) 섹션을 참조하세요.  
   
- 최적 대체(fallback)가 인코딩 개체에 대한 기본값인 경우 <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> 또는 <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> 오버로드를 호출하여 <xref:System.Text.Encoding> 개체를 검색할 때 다른 대체(fallback) 전략을 선택할 수 있습니다. 다음 섹션에는 코드 페이지 1252로 매핑할 수 없는 각 문자를 별표(*)로 대체하는 예제가 포함되어 있습니다.  
+ 최적 대체(fallback)가 인코딩 개체에 대한 기본값인 경우 <xref:System.Text.Encoding> 또는 <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> 오버로드를 호출하여 <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> 개체를 검색할 때 다른 대체(fallback) 전략을 선택할 수 있습니다. 다음 섹션에는 코드 페이지 1252로 매핑할 수 없는 각 문자를 별표(*)로 대체하는 예제가 포함되어 있습니다.  
   
  [!code-csharp[Conceptual.Encoding#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.encoding/cs/bestfit1a.cs#3)]
  [!code-vb[Conceptual.Encoding#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/bestfit1a.vb#3)]  
@@ -233,7 +235,7 @@ ms.locfileid: "46711759"
   
  인코더 또는 디코더에 대한 사용자 지정 대체(fallback) 솔루션을 만드는 경우 다음과 같은 멤버를 구현해야 합니다.  
   
--   <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 또는 <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 메서드. <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType>은 인코딩할 수 없는 문자 정보를 대체(fallback) 버퍼에 제공하기 위해 인코더에서 호출됩니다. 인코딩할 문자가 서로게이트 쌍일 수 있으므로 이 메서드는 오버로드됩니다. 하나의 오버로드에는 인코딩할 문자 및 문자열에서 해당 인덱스가 전달됩니다. 두 번째 오버로드에는 상위 및 하위 서로게이트와 문자열에서 해당 인덱스가 전달됩니다. <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 메서드는 디코딩할 수 없는 바이트 정보를 대체(fallback) 버퍼에 제공하기 위해 디코더에서 호출됩니다. 이 메서드에는 디코딩할 수 없는 바이트 배열 및 첫 번째 바이트의 인덱스가 전달됩니다. 대체(fallback) 버퍼가 최적 또는 교체 문자를 제공할 수 있는 경우 대체(fallback) 메서드에서 `true` 를 반환해야 하고, 그러지 않으면 `false`를 반환해야 합니다. 예외 대체(fallback)의 경우 대체(fallback) 메서드에서 예외를 발생시켜야 합니다.  
+-   <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 또는 <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 메서드. <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 은 인코딩할 수 없는 문자 정보를 대체(fallback) 버퍼에 제공하기 위해 인코더에서 호출됩니다. 인코딩할 문자가 서로게이트 쌍일 수 있으므로 이 메서드는 오버로드됩니다. 하나의 오버로드에는 인코딩할 문자 및 문자열에서 해당 인덱스가 전달됩니다. 두 번째 오버로드에는 상위 및 하위 서로게이트와 문자열에서 해당 인덱스가 전달됩니다. <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> 메서드는 디코딩할 수 없는 바이트 정보를 대체(fallback) 버퍼에 제공하기 위해 디코더에서 호출됩니다. 이 메서드에는 디코딩할 수 없는 바이트 배열 및 첫 번째 바이트의 인덱스가 전달됩니다. 대체(fallback) 버퍼가 최적 또는 교체 문자를 제공할 수 있는 경우 대체(fallback) 메서드에서 `true` 를 반환해야 하고, 그러지 않으면 `false`를 반환해야 합니다. 예외 대체(fallback)의 경우 대체(fallback) 메서드에서 예외를 발생시켜야 합니다.  
   
 -   인코더 또는 디코더가 대체(fallback) 버퍼에서 다음 문자를 가져오기 위해 반복적으로 호출하는 <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A?displayProperty=nameWithType> 또는 <xref:System.Text.DecoderFallbackBuffer.GetNextChar%2A?displayProperty=nameWithType> 메서드. 모든 대체(fallback) 문자가 반환되고 나면 메서드에서 U+0000을 반환해야 합니다.  
   

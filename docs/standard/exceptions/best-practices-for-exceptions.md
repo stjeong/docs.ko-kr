@@ -1,6 +1,6 @@
 ---
 title: 최선의 예외 구현 방법
-ms.date: 03/30/2017
+ms.date: 12/05.2018
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -9,26 +9,22 @@ dev_langs:
 helpviewer_keywords:
 - exceptions, best practices
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
-author: mairaw
-ms.author: mairaw
-ms.openlocfilehash: b6aa1049c531550687a2c6289ccd87e763ca2f58
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: fb2da0d37a3c72941e9ffdac52a6fdf24ec71b3a
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199632"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53149590"
 ---
 # <a name="best-practices-for-exceptions"></a>예외에 대한 모범 사례
 
 잘 설계된 응용 프로그램이 응용 프로그램 충돌을 방지하기 위해 예외와 오류를 처리합니다. 이 섹션에서는 예외를 처리하고 만들기 위한 모범 사례를 설명합니다.
 
-## <a name="use-trycatchfinally-blocks"></a>try/catch/finally 블록 사용
+## <a name="use-trycatchfinally-blocks-to-recover-from-errors-or-release-resources"></a>Try/catch/finally 블록을 사용하여 오류를 복구하거나 리소스를 해제합니다.
 
-잠재적으로 예외를 생성할 수 있는 코드 주변에서 `try`/`catch`/`finally` 블록을 사용합니다. 
+잠재적으로 예외를 생성***하고*** 코드가 해당 예외에서 복구될 수 있는 코드 주위에 `try`/`catch` 블록을 사용합니다. `catch` 블록에서 항상 가장 많이 파생된 것부터 가장 적게 파생된 것까지 예외를 정렬합니다. 모든 예외는 <xref:System.Exception>에서 파생됩니다. 더 많이 파생된 예외는 기본 예외 클래스에 대한 catch 절 앞에 오는 catch 절에 의해 처리되지 않습니다. 예외에서 코드를 복구할 수 없는 경우 해당 예외를 catch하지 마세요. 가능한 경우 메서드를 호출 스택 위에 추가하여 복구하세요.
 
-`catch` 블록에서 항상 가장 특정한 예외부터 가장 일반적인 예외의 순서로 예외를 지정합니다.
-
-복구 가능 여부에 관계없이 `finally` 블록을 사용하여 리소스를 정리합니다.
+`using` 문 또는 `finally` 블록으로 할당된 리소스를 정리하세요. 예외가 throw될 때 리소스를 자동으로 정리하려면 `using` 문을 사용하는 것이 좋습니다. `finally` 블록을 사용하여 <xref:System.IDisposable>을 구현하지 않는 리소스를 정리합니다. `finally` claus의 코드는 예외가 throw되더라도 거의 항상 실행됩니다.
 
 ## <a name="handle-common-conditions-without-throwing-exceptions"></a>예외를 throw하지 않고 일반적인 조건 처리
 
@@ -58,11 +54,11 @@ ms.locfileid: "50199632"
 [!code-csharp[Conceptual.Exception.Handling#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]
 [!code-vb[Conceptual.Exception.Handling#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#5)]  
 
-예외를 방지하는 또 다른 방법은 매우 일반적인 오류의 경우 예외를 throw하는 대신 null을 반환하는 것입니다. 매우 흔한 오류 사례는 정상적인 제어 흐름으로 간주할 수 있습니다. 이러한 경우에 null을 반환함으로써, 응용 프로그램의 성능에 미치는 영향을 최소화합니다.
+예외를 방지하는 또 다른 방법은 매우 일반적인 오류의 경우 예외를 throw하는 대신 `null`을 반환하는 것입니다. 매우 흔한 오류 사례는 정상적인 제어 흐름으로 간주할 수 있습니다. 이러한 경우에 `null`을 반환함으로써, 앱의 성능에 미치는 영향을 최소화합니다.
 
 ## <a name="throw-exceptions-instead-of-returning-an-error-code"></a>오류 코드를 반환하는 대신 예외 throw
 
-예외는 호출하는 코드에서 반환 코드를 확인하지 않아 오류가 발견되지 않는 것을 방지합니다. 
+예외는 호출하는 코드에서 반환 코드를 확인하지 않아 오류가 발견되지 않는 것을 방지합니다.
 
 ## <a name="use-the-predefined-net-exception-types"></a>미리 정의된 .NET 예외 형식 사용
 
@@ -132,7 +128,7 @@ ms.locfileid: "50199632"
   
 예외의 생성자를 사용하여 예외를 작성하는 것이 더 적합한 경우도 있습니다. 예를 들어 <xref:System.ArgumentException>과 같은 전역 예외 클래스가 있습니다.
 
-## <a name="clean-up-intermediate-results-when-throwing-an-exception"></a>예외를 throw할 때 중간 결과 정리
+## <a name="restore-state-when-methods-dont-complete-due-to-exceptions"></a>예외로 인해 메서드가 완료되지 않을 때의 상태 복원
 
 호출자가 메서드에서 예외가 throw될 때 의도하지 않은 결과가 발생하지 않는다고 가정할 수 있어야 합니다. 예를 들어 하나의 계좌에서 출금한 후 다른 계좌에 입금하여 돈을 이체하는 코드가 있고 입금을 실행하는 동안 예외가 발생할 경우 출금이 적용되기를 원하지 않을 것입니다.
 
@@ -144,6 +140,8 @@ public void TransferFunds(Account from, Account to, decimal amount)
     to.Deposit(amount);
 }
 ```
+
+위의 메서드는 직접적으로 예외를 throw하지 않지만, 입금 작업이 실패하는 경우 출금이 취소되도록 방어적으로 작성해야 합니다.
 
 이 상황을 처리하는 한 가지 방법은 입금 트랜잭션에서 throw된 예외를 catch하고 출금을 롤백하는 것입니다.
 
@@ -172,8 +170,8 @@ catch (Exception ex)
     throw new TransferFundsException("Withdrawal failed", innerException: ex)
     {
         From = from,
-    To = to,
-    Amount = amount
+        To = to,
+        Amount = amount
     };
 }
 ```

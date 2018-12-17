@@ -4,12 +4,12 @@ description: .NET 라이브러리용 NuGet을 사용하여 패키지하는 모�
 author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
-ms.openlocfilehash: 479d1786c232ef1f843877169954e847453681c9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8ac01046f25176b781240baeba8bf1efb9376689
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185627"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53129612"
 ---
 # <a name="nuget"></a>NuGet
 
@@ -37,8 +37,6 @@ NuGet 패키지를 만드는 방법에는 크게 두 가지가 있습니다. 최
 NuGet 패키지를 만드는 이전 방법은 `*.nuspec` 파일 및 `nuget.exe` 명령줄 도구를 사용하는 것입니다. nuspec 파일을 사용하면 제어 기능이 향상되지만 최종 NuGet 패키지에 포함할 어셈블리 및 대상을 신중하게 지정해야 합니다. 실수하거나, 다른 사람이 변경할 때 nuspec 업데이트를 잊어버리기 쉽습니다. nuspec의 장점은 아직 SDK 스타일 프로젝트 파일을 지원하지 않는 프레임워크에 대한 NuGet 패키지를 만드는 데 사용할 수 있다는 것입니다.
 
 **✔** SDK 스타일 프로젝트 파일을 사용하여 NuGet 패키지를 만드세요.
-
-**✔️** SourceLink를 설정하여 어셈블리 및 NuGet 패키지에 소스 제어 메타데이터를 추가하세요.
 
 ## <a name="package-dependencies"></a>패키지 종속성
 
@@ -73,6 +71,12 @@ NuGet 패키지는 많은 [메타데이터 속성](/nuget/reference/nuspec)을 �
 
 **✔️** 보기 결과를 최적화하기 위해 64x64이고 투명한 배경을 가진 패키지 아이콘 이미지를 사용합니다.
 
+**✔️** [SourceLink](./sourcelink.md)를 설정하여 어셈블리 및 NuGet 패키지에 소스 제어 메타데이터를 추가하세요.
+
+> SourceLink는 `RepositoryUrl` 및 `RepositoryType` 메타데이터를 NuGet 패키지에 자동으로 추가합니다.
+> SourceLink는 패키지가 빌드된 정확한 소스 코드에 대한 정보도 추가합니다.
+> 예를 들어 Git 리포지토리에서 만든 패키지에는 메타데이터로 추가된 커밋 해시가 있습니다.
+
 ## <a name="pre-release-packages"></a>시험판 패키지
 
 버전 접미사가 있는 NuGet 패키지는 [시험판](/nuget/create-packages/prerelease-packages)으로 간주됩니다. 기본적으로 NuGet 패키지 관리자 UI는 사용자가 시험판 패키지를 옵트인하지 않는 한 안정적인 릴리스를 표시하므로, 시험판 패키지는 제한된 사용자 테스트에 적합합니다.
@@ -92,9 +96,14 @@ NuGet 패키지는 많은 [메타데이터 속성](/nuget/reference/nuspec)을 �
 
 ## <a name="symbol-packages"></a>기호 패키지
 
-기호 파일(`*.pdb`)은 어셈블리와 함께 .NET 컴파일러에서 생성됩니다. 기호 파일은 실행 위치를 원래 소스 코드에 매핑하므로, 디버거를 사용하여 실행 중인 소스 코드를 한 단계씩 실행할 수 있습니다. NuGet은 .NET 어셈블리를 포함하는 주 패키지와 함께 기호 파일을 포함하는 [별도의 기호 패키지 생성](/nuget/create-packages/symbol-packages)을 지원합니다. 기호 패키지는 기호 서버에서 호스트되며 요청 시 Visual Studio와 같은 도구에서만 다운로드되도록 설계되었습니다.
+기호 파일(`*.pdb`)은 어셈블리와 함께 .NET 컴파일러에서 생성됩니다. 기호 파일은 실행 위치를 원래 소스 코드에 매핑하므로, 디버거를 사용하여 실행 중인 소스 코드를 한 단계씩 실행할 수 있습니다. NuGet은 .NET 어셈블리를 포함하는 주 패키지와 함께 기호 파일을 포함하는 [별도의 기호 패키지(`*.snupkg`) 생성](/nuget/create-packages/symbol-packages-snupkg)을 지원합니다. 기호 패키지는 기호 서버에서 호스트되며 요청 시 Visual Studio와 같은 도구에서만 다운로드되도록 설계되었습니다.
 
-현재, 기호의 기본 공용 호스트인 [SymbolSource](http://www.symbolsource.org/)는 SDK 스타일 프로젝트에서 생성되는 새로운 [이식 가능한 기호 파일](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)(`*.pdb`)을 지원하지 않으며, 기호 패키지가 유용하지 않습니다. 기호 패키지에 대한 권장 호스트가 있을 때까지 기호 파일을 기본 NuGet 패키지에 포함할 수 있습니다. SDK 스타일 프로젝트를 사용하여 NuGet 패키지를 빌드하는 경우 `AllowedOutputExtensionsInPackageBuildOutputFolder` 속성을 설정하여 기호 파일을 포함할 수 있습니다. 
+NuGet.org는 자체 [기호 서버 리포지토리](/nuget/create-packages/symbol-packages-snupkg#nugetorg-symbol-server)를 호스팅합니다. 개발자는 해당 [Visual Studio의 심볼 소스](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)에 `https://symbols.nuget.org/download/symbols`를 추가하여 NuGet.org 기호 서버에 게시된 기호를 사용할 수 있습니다.
+
+> [!IMPORTANT]
+> NuGet.org 기호 서버는 SDK 스타일 프로젝트에서 생성한 새 [이식 가능한 기호 파일](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)(`*.pdb`)만 지원합니다.
+
+기호 패키지를 만드는 대신 기본 NuGet 패키지에 기호 파일을 포함시킬 수 있습니다. 기본 NuGet 패키지는 더 클 것이지만 포함된 기호 파일은 개발자가 NuGet.org 기호 서버를 구성할 필요가 없음을 의미합니다. SDK 스타일 프로젝트를 사용하여 NuGet 패키지를 빌드하는 경우 `AllowedOutputExtensionsInPackageBuildOutputFolder` 속성을 설정하여 기호 파일을 포함시킬 수 있습니다.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -107,8 +116,10 @@ NuGet 패키지는 많은 [메타데이터 속성](/nuget/reference/nuspec)을 �
 
 **✔️** 기호 파일을 기본 NuGet 패키지에 포함합니다.
 
-**❌** 기호 파일을 포함하는 기호 패키지를 만들지 않습니다.
+> 기본 NuGet 패키지에 기호 파일을 포함하면 개발자가 기본적으로 더 나은 디버깅 환경을 제공합니다. 개발자는 기호 파일을 가져오기 위해 해당 IDE에서 NuGet 기호 서버를 찾아 구성할 필요가 없습니다.
+>
+> 포함된 기호 파일의 단점은 SDK 스타일 프로젝트를 사용하여 컴파일된 .NET 라이브러리의 패키지 크기가 약 30% 증가한다는 것입니다. 패키지 크기가 중요한 경우 기호 패키지에 기호를 게시해야 합니다.
 
 >[!div class="step-by-step"]
-[이전](./strong-naming.md)
-[다음](./dependencies.md)
+>[이전](strong-naming.md)
+>[다음](dependencies.md)

@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/11/2018
-ms.openlocfilehash: 5d42ec77958e056b75b0e379f8ab520ac926c72a
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: c1948693edbc197b8527ce8ce82c196206a16876
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47075585"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53131380"
 ---
 # <a name="official-net-docker-images"></a>공식 .NET Docker 이미지
 
@@ -50,7 +50,6 @@ Docker 허브에서 .NET 이미지 리포지토리를 탐색하는 경우 태그
 | microsoft/dotnet:**2.1-aspnetcore-runtime** | Linux 및 Windows에서 런타임 전용 및 ASP.NET Core 최적화가 포함된 ASP.NET Core(다중 아키텍처) |
 | microsoft/dotnet:**2.1-sdk**                | Linux 및 Windows에서 SDK가 포함된 .NET Core(다중 아키텍처)                                  |
 
-
 >[!div class="step-by-step"]
-[이전](net-container-os-targets.md)
-[다음](../architect-microservice-container-applications/index.md)
+>[이전](net-container-os-targets.md)
+>[다음](../architect-microservice-container-applications/index.md)

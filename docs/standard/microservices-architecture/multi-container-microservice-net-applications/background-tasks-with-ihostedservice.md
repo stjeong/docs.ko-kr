@@ -1,35 +1,37 @@
 ---
 title: IHostedService 및 BackgroundService 클래스를 사용하여 마이크로 서비스에서 백그라운드 작업 구현
-description: 컨테이너화된 .NET 응용 프로그램에 대한 .NET 마이크로 서비스 아키텍처 | IHostedService 및 BackgroundService 클래스를 사용하여 마이크로 서비스에서 백그라운드 작업 구현
+description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서비스 아키텍처 | IHostedService 및 BackgroundService를 사용하여 마이크로 서비스 .NET Core에서 백그라운드 작업을 구현하는 새 옵션을 이해합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
-ms.openlocfilehash: 981a20ca80f0652a9c3597d36b960d6b44d97912
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.date: 10/02/2018
+ms.openlocfilehash: 3fe1f4bdf80943394688941c17d3041ea90256da
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195829"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126084"
 ---
 # <a name="implement-background-tasks-in-microservices-with-ihostedservice-and-the-backgroundservice-class"></a>IHostedService 및 BackgroundService 클래스를 사용하여 마이크로 서비스에서 백그라운드 작업 구현
 
 백그라운드 작업 및 예약된 작업은 마이크로 서비스 기반 응용 프로그램 또는 모든 종류의 응용 프로그램에서 결국 구현해야 하는 것입니다. 마이크로 서비스 아키텍처를 사용하는 경우 차이점은 이러한 백그라운드 작업을 호스팅하기 위한 단일 마이크로 서비스 프로세스/컨테이너를 구현할 수 있으므로 필요에 따라 축소/확대하거나 해당 마이크로 서비스 프로세스/컨테이너의 단일 인스턴스를 실행하는지 확인할 수도 있다는 점입니다.
 
-일반 관점에서 호스트/응용 프로그램/마이크로 서비스 내에서 호스팅하는 서비스/논리이기 때문에 .NET Core에서 이러한 유형의 호스팅 서비스를 호출했습니다. 이 경우 호스팅 서비스는 단순히 백그라운드 작업 논리가 있는 클래스를 의미합니다.
+일반 관점에서 호스트/애플리케이션/마이크로 서비스 내에서 호스팅하는 서비스/논리이기 때문에 .NET Core에서 이러한 유형의 작업 *호스팅 서비스*를 호출했습니다. 이 경우 호스팅 서비스는 단순히 백그라운드 작업 논리가 있는 클래스를 의미합니다.
 
-.NET Core 2.0부터 프레임워크는 호스팅 서비스를 쉽게 구현할 수 있도록 돕는 <xref:Microsoft.Extensions.Hosting.IHostedService>라는 새 인터페이스를 제공합니다. 기본적인 개념은 아래 그림에 나와 있는 것처럼 웹 호스트 또는 호스트를 실행하는 동안 백그라운드에서 실행하는 여러 백그라운드 작업(호스팅 서비스)을 등록할 수 있다는 것입니다.
+.NET Core 2.0부터 프레임워크는 호스팅 서비스를 쉽게 구현할 수 있도록 돕는 <xref:Microsoft.Extensions.Hosting.IHostedService>라는 새 인터페이스를 제공합니다. 기본적인 개념은 이미지 6-26에 나와 있는 것처럼 웹 호스트 또는 호스트를 실행하는 동안 백그라운드에서 실행하는 여러 백그라운드 작업(호스팅 서비스)을 등록할 수 있다는 것입니다.
 
-![](./media/image26.png)
+![ASP.NET Core 1.x 및 2.x는 웹앱의 백그라운드 프로세스용 IWebHost를 지원하며, .NET Core 2.1은 일반 콘솔 앱으로 백그라운드 프로세스용 IHost를 지원합니다.](./media/image26.png)
 
-**그림 8-25.** WebHost 및 Host에서 IHostedService 사용 비교
+**그림 6-26**. WebHost 및 Host에서 IHostedService 사용 비교
 
-`WebHost`와 `Host` 사이에서 만들어진 차이점입니다. ASP.NET Core 2.0의 `WebHost`(`IWebHost`를 구현하는 기본 클래스)는 MVC 웹앱 또는 Web API 서비스를 구현하는 경우와 같이 프로세스에 HTTP 서버 기능을 제공하는 데 사용하는 인프라 아티팩트입니다. 종속성 주입을 사용하고 HTTP 파이프라인 등에 미들웨어를 넣고 백그라운드 작업에 대해 이러한 `IHostedServices`를 정확하게 사용할 수 있도록 하는 ASP.NET Core의 새로운 모든 인프라 장점을 제공합니다.
+`WebHost`와 `Host` 사이에서 만들어진 차이점입니다. 
+
+ASP.NET Core 2.0의 `WebHost`(`IWebHost`를 구현하는 기본 클래스)는 MVC 웹앱 또는 Web API 서비스를 구현하는 경우와 같이 프로세스에 HTTP 서버 기능을 제공하는 데 사용하는 인프라 아티팩트입니다. 종속성 주입을 사용하고 요청 파이프라인 등에 미들웨어를 넣고 백그라운드 작업에 대해 이러한 `IHostedServices`를 정확하게 사용할 수 있도록 하는 ASP.NET Core의 새로운 모든 인프라 장점을 제공합니다.
 
 그러나 `Host`(`IHost`를 구현하는 기본 클래스)는 .NET Core 2.1에서 새로운 것입니다. 기본적으로 `Host`를 통해 `WebHost`(종속성 주입, 호스팅 서비스 등)를 사용하여 가진 것보다 유사한 인프라를 가질 수 있지만 이 경우 MVC, Web API 또는 HTTP 서버 기능과 관련이 없는 호스트로 간단하고 쉬운 프로세스를 갖길 원합니다.
 
 따라서 `IHostedServices`를 호스트하기 위해 만들어진 마이크로 서비스와 같은 호스팅 서비스 및 그 밖의 것을 처리하도록 IHost로 특수화된 호스트 프로세스를 선택하고 만들 수 있거나 기존 ASP.NET Core Web API 또는 MVC 앱과 같이 기존 ASP.NET Core `WebHost`를 대안으로 확장할 수 있습니다. 
 
-각 방식은 비즈니스 및 확장성 요구에 따라 장점과 단점을 갖습니다. 요점은 기본적으로 백그라운드 작업에 HTTP(IWebHost)를 사용하여 수행할 작업이 없는 경우 .NET Core 2.1에서 사용 가능할 때 IHost를 사용해야 한다는 것입니다.
+각 방식은 비즈니스 및 확장성 요구에 따라 장점과 단점을 갖습니다. 요점은 기본적으로 백그라운드 작업에 HTTP(IWebHost)를 사용하여 수행할 작업이 없는 경우 IHost(.NET Core 2.1 사용)를 사용해야 합니다.
 
 ## <a name="registering-hosted-services-in-your-webhost-or-host"></a>WebHost 또는 Host에서 호스팅 서비스 등록
 
@@ -66,7 +68,6 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 `IHostedService`를 사용하지 않고 항상 백그라운드 스레드를 시작하여 작업을 실행할 수 있습니다. 차이점은 정상적인 정리 작업을 실행할 기회를 갖지 않고 해당 스레드가 그냥 제거되는 경우 정확하게 앱의 종료 시간에 있습니다.
 
-
 ## <a name="the-ihostedservice-interface"></a>IHostedService 인터페이스
 
 `IHostedService`를 등록할 때 .NET Core는 응용 프로그램 시작 및 중지 중에 각각 `IHostedService` 유형의 `StartAsync()` 및 `StopAsync()` 메서드를 호출합니다. 특히 서버가 시작되고 `IApplicationLifetime.ApplicationStarted`가 트리거된 후 시작이 호출됩니다.
@@ -102,9 +103,7 @@ namespace Microsoft.Extensions.Hosting
 
 그러나 대부분의 백그라운드 작업은 취소 토큰 관리 및 기타 일반적인 작업과 관련하여 비슷한 요구 사항이 있으므로 .NET Core 2.1에서 BackgroundService라는 파생시킬 수 있는 매우 편리한 추상 기본 클래스를 제공합니다.
 
-해당 클래스는 백그라운드 작업을 설정하는 데 필요한 주요 작업을 제공합니다. 이 클래스는 .NET Core 2.1 라이브러리에서 제공되므로 작성할 필요가 없습니다.
-
-그러나 이 문서의 작성 당시 .NET Core 2.1은 릴리스되지 않았습니다. 따라서 현재 .NET Core 2.0을 사용하는 eShopOnContainers에서 .NET Core 2.0의 현재 IHostedService 인터페이스와 호환되므로 .NET Core 2.1 오픈 소스 리포지토리의 해당 클래스를 일시적으로 통합합니다(오픈 소스 라이선스 이외의 독점 라이선스가 필요 없음). .NET Core 2.1이 릴리스되면 적절한 NuGet 패키지를 가리켜야 합니다.
+해당 클래스는 백그라운드 작업을 설정하는 데 필요한 주요 작업을 제공합니다.
 
 다음 코드는 .NET Core 2.1에서 구현되는 추상 BackgroundService 기본 클래스입니다.
 
@@ -212,7 +211,7 @@ public class GracePeriodManagerService : BackgroundService
 }
 ```
 
-eShopOnContainers에 대한 이 특정 경우에 특정 상태로 주문을 조회하는 데이터베이스 테이블을 쿼리하는 응용 프로그램 메서드를 실행하고, 변경 내용을 적용하는 경우 이벤트 버스를 통해 통합 이벤트를 게시합니다(아래에서 RabbitMQ 또는 Azure Service Bus를 사용할 수 있음). 
+eShopOnContainers에 대한 이 특정 경우에 특정 상태로 주문을 조회하는 데이터베이스 테이블을 쿼리하는 애플리케이션 메서드를 실행하고, 변경 내용을 적용하는 경우 이벤트 버스를 통해 통합 이벤트를 게시합니다(아래에서 RabbitMQ 또는 Azure Service Bus를 사용할 수 있음).
 
 물론 다른 비즈니스 백그라운드 작업을 대신 실행할 수 있습니다.
 
@@ -228,11 +227,11 @@ WebHost.CreateDefaultBuilder(args)
 
 ### <a name="summary-class-diagram"></a>요약 클래스 다이어그램
 
-다음 그림 8-26은 IHostedServices를 구현할 때 관련되는 클래스 및 인터페이스의 시각적 개체 요약을 보여 줍니다.
+다음 이미지는 IHostedServices를 구현할 때 관련되는 클래스 및 인터페이스의 시각적 개체 요약을 보여줍니다.
  
-![](./media/image27.png)
+![클래스 다이어그램: IWebHost와 IHost는 IHostedService를 구현하는 BackgroundService에서 상속되는 많은 서비스를 호스팅할 수 있습니다.](./media/image27.png)
 
-**그림 8-26.** IHostedService와 관련된 다중 클래스 및 인터페이스를 보여 주는 클래스 다이어그램
+**그림 6-27**. IHostedService와 관련된 다중 클래스 및 인터페이스를 보여 주는 클래스 다이어그램
 
 ### <a name="deployment-considerations-and-takeaways"></a>배포 고려 사항 및 요점
 
@@ -242,21 +241,17 @@ ASP.NET Core `WebHost` 또는 .NET Core `Host`를 배포하는 방법은 최종 
 
 `IHostedService` 인터페이스는 ASP.NET Core 웹 응용 프로그램(.NET Core 2.0에서) 또는 모든 프로세스/호스트(`IHost`로 .NET Core 2.1에서 시작)에서 백그라운드 작업을 시작하는 편리한 방법을 제공합니다. 주요 혜택은 호스트 자체가 종료될 때 백그라운드 작업의 정리 코드에 대한 정상적인 취소를 얻는 기회입니다.
 
-
 #### <a name="additional-resources"></a>추가 자료
 
--   **ASP.NET Core/Standard 2.0에서 예약된 작업 빌드** 
-
+-   **ASP.NET Core/Standard 2.0에서 예약된 작업 빌드** <br/>
     [*https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html*](https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html)
 
--   **ASP.NET Core 2.0에서 IHostedService 구현** 
-
+-   **ASP.NET Core 2.0에서 IHostedService 구현** <br/>
     [*https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice*](https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice)
 
--   **ASP.NET Core 2.1 호스팅 샘플** 
-
+-   **ASP.NET Core 2.1 호스팅 샘플** <br/>
     [*https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
 
 >[!div class="step-by-step"]
-[이전](test-aspnet-core-services-web-apps.md)
-[다음](../microservice-ddd-cqrs-patterns/index.md)
+>[이전](test-aspnet-core-services-web-apps.md)
+>[다음](implement-api-gateways-with-ocelot.md)

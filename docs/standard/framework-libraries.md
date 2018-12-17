@@ -6,12 +6,12 @@ ms.author: ronpet
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
-ms.openlocfilehash: 1b5099c73264f3175aa05094f4460c1c97774533
-ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
+ms.openlocfilehash: b3cfc44c430a02ec9ffce75ebff5c8f9cc46505c
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50743965"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143378"
 ---
 # <a name="framework-libraries"></a>프레임워크 라이브러리
 
@@ -53,7 +53,8 @@ BCL은 가장 기본적인 형식과 유틸리티 기능을 제공하며 다른 
 
 *   <xref:System.Net.Http.HttpClient> - URI로 식별되는 리소스에서 HTTP 요청을 보내고 HTTP 응답을 받기 위한 API입니다.
 *   <xref:System.Xml.Linq.XDocument> - XML 문서를 로드하고 LINQ를 사용하여 쿼리하기 위한 API입니다.
-*   <xref:System.IO.StreamReader> - 파일을 읽기 위한 API입니다. (<xref:System.IO.StringWriter>) 파일을 쓰는 데 사용할 수 있습니다.
+*   <xref:System.IO.StreamReader> - 파일을 읽기 위한 API. 
+*   <xref:System.IO.StreamWriter> - 파일을 쓰기 위한 API.
 
 ## <a name="app-model-apis"></a>앱 모델 API
 

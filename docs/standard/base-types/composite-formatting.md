@@ -1,6 +1,6 @@
 ---
 title: 복합 형식 지정
-ms.date: 03/30/2017
+ms.date: 10/26/2018
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -15,31 +15,34 @@ helpviewer_keywords:
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 17ec17d3b90dc7248d1497be1f7d31a324ad10b2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 60ccf478e974e24b437aa75bc9452033bd19a00f
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397935"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53126863"
 ---
 # <a name="composite-formatting"></a>복합 형식 지정
+
 .NET의 복합 형식 지정 기능에는 개체 목록과 복합 형식 문자열이 입력으로 사용됩니다. 합성 서식 문자열은 고정 텍스트와 목록의 개체에 해당하는 인덱싱된 자리 표시자(서식 항목이라고 함)가 결합된 형태로 구성됩니다. 서식 지정 작업을 통해 원래의 고정 텍스트와 목록에 있는 개체의 문자열 표현이 결합된 형태의 결과 문자열을 얻을 수 있습니다.  
   
- 다음과 같은 메서드에서 합성 형식 지정 기능을 지원합니다.  
+> [!IMPORTANT]
+> 복합 형식 문자열을 사용하는 대신 사용 중인 언어 및 언어 버전에서 지원하는 경우 *보간된 문자열*을 사용할 수 있습니다. 보간된 문자열은 *보간된 식*이 포함된 문자열입니다. 각 보간된 표현식은 표현식의 값으로 해석되고 문자열이 할당될 때 결과 문자열에 포함됩니다. 자세한 내용은 [문자열 보간(C# 참조)](../../csharp/language-reference/tokens/interpolated.md) 및 [문자열 보간(Visual Basic 참조)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)을 참조하세요.
+
+다음과 같은 메서드에서 합성 형식 지정 기능을 지원합니다.  
   
--   서식이 지정된 결과 문자열을 반환하는 <xref:System.String.Format%2A?displayProperty=nameWithType>.  
+- 서식이 지정된 결과 문자열을 반환하는 <xref:System.String.Format%2A?displayProperty=nameWithType>.  
   
--   서식이 지정된 결과 문자열을 <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> 개체에 추가하는 <xref:System.Text.StringBuilder>.  
+- 서식이 지정된 결과 문자열을 <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> 개체에 추가하는 <xref:System.Text.StringBuilder>.   
+- 콘솔에 서식이 지정된 결과 문자열을 표시하는 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 메서드의 과부하.  
   
--   콘솔에 서식이 지정된 결과 문자열을 표시하는 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 메서드의 과부하.  
+- 스트림 또는 파일에 서식이 지정된 결과 문자열을 쓰는 <xref:System.IO.TextWriter.WriteLine%2A?displayProperty=nameWithType> 메서드의 과부하. <xref:System.IO.TextWriter> 및 <xref:System.IO.StreamWriter>와 같은 <xref:System.Web.UI.HtmlTextWriter>에서 파생된 클래스도 이 기능을 공유합니다.  
   
--   스트림 또는 파일에 서식이 지정된 결과 문자열을 쓰는 <xref:System.IO.TextWriter.WriteLine%2A?displayProperty=nameWithType> 메서드의 과부하. <xref:System.IO.TextWriter> 및 <xref:System.IO.StreamWriter>와 같은 <xref:System.Web.UI.HtmlTextWriter>에서 파생된 클래스도 이 기능을 공유합니다.  
+- 추적 수신기로 서식이 지정된 메시지를 출력하는 <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>.  
   
--   추적 수신기로 서식이 지정된 메시지를 출력하는 <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>.  
+- 추적 수신기로 서식이 지정된 메시지를 출력하는 <xref:System.Diagnostics.Trace.TraceError%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 및 <xref:System.Diagnostics.Trace.TraceWarning%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드.  
   
--   추적 수신기로 서식이 지정된 메시지를 출력하는 <xref:System.Diagnostics.Trace.TraceError%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 및 <xref:System.Diagnostics.Trace.TraceWarning%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드.  
-  
--   추적 수신기에 정보 메서드를 쓰는 <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드.  
+- 추적 수신기에 정보 메서드를 쓰는 <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> 메서드.  
   
 ## <a name="composite-format-string"></a>합성 서식 문자열  
  합성 서식 문자열과 개체 목록은 합성 서식 지정 기능을 지원하는 메서드의 인수로 사용됩니다. 합성 서식 문자열은 0개 이상의 고정 텍스트가 하나 이상의 서식 항목과 결합된 형태로 구성됩니다. 고정 텍스트는 사용자가 선택하는 임의의 문자열이고, 각 서식 항목은 목록의 개체나 boxed 구조체에 해당합니다. 합성 서식 지정 기능은 각 서식 항목을 목록에 있는 해당 개체의 문자열 표현으로 바꿔 새로운 결과 문자열을 반환합니다.  
@@ -84,7 +87,7 @@ ms.locfileid: "47397935"
   
  다음 표에는 미리 정의된 서식 문자열 집합을 지원하는 .NET Framework 클래스 라이브러리의 형식 또는 형식 범주와 지원되는 서식 문자열을 나열하는 항목에 대한 링크가 나와 있습니다. 문자열 서식 지정은 응용 프로그램 정의 형식에서 지원하는 형식 문자열 집합을 정의하는, 모든 기존 형식을 위한 새 형식 문자열을 정의하는 확장 가능한 메커니즘입니다. 자세한 내용은 <xref:System.IFormattable> 및 <xref:System.ICustomFormatter> 인터페이스 항목을 참조하세요.  
   
-|형식 또는 형식 범주|보기|  
+|형식 또는 형식 범주|참조|  
 |---------------------------|---------|  
 |날짜 및 시간 형식(<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[표준 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)<br /><br /> [사용자 지정 날짜 및 시간 형식 문자열](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|  
 |열거형 형식(<xref:System.Enum?displayProperty=nameWithType>에서 파생되는 모든 형식)|[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|  

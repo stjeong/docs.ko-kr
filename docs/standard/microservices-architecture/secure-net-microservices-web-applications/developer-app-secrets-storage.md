@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.openlocfilehash: 560120db35ae190bdef1f95d72ac1e5de697124e
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 6f5dfbb53b99fec4d7cc66c528fe866c71c2172f
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105948"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53143872"
 ---
 # <a name="storing-application-secrets-safely-during-development"></a>개발하는 동안 응용 프로그램 비밀 저장
 
@@ -39,7 +39,7 @@ ms.locfileid: "37105948"
 
 ## <a name="storing-secrets-using-the-aspnet-core-secret-manager"></a>ASP.NET Core 암호 관리자를 사용하여 암호 저장
 
-ASP.NET Core [암호 관리자](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) 도구는 소스 코드에서 암호를 유지하는 또 다른 방법을 제공합니다. 암호 관리자 도구를 사용하려면 프로젝트 파일에서 Microsoft.Extensions.SecretManager.Tools 패키지에 도구 참조(DotNetCliToolReference)를 포함합니다. 해당 종속성이 표시되고 복원되면 dotnet 사용자 암호 명령은 명령줄에서 암호 값을 설정하는 데 사용할 수 있습니다. 이러한 암호는 소스 코드와 다르게 사용자의 프로필 디렉터리에 있는 JSON 파일에 저장됩니다(세부 정보는 운영 체제에 따라 다름).
+ASP.NET Core [암호 관리자](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) 도구는 소스 코드에서 암호를 유지하는 또 다른 방법을 제공합니다. 암호 관리자 도구를 사용하려면 프로젝트 파일에서 Microsoft.Extensions.SecretManager.Tools 패키지에 도구 참조(DotNetCliToolReference)를 포함합니다. 해당 종속성이 표시되고 복원되면 dotnet 사용자 비밀 명령은 명령줄에서 비밀 값을 설정하는 데 사용할 수 있습니다. 이러한 암호는 소스 코드와 다르게 사용자의 프로필 디렉터리에 있는 JSON 파일에 저장됩니다(세부 정보는 운영 체제에 따라 다름).
 
 암호 관리자 도구에 의해 설정된 암호는 암호를 사용하는 프로젝트의 UserSecretsId 속성으로 구성됩니다. 따라서 프로젝트 파일에서 UserSecretsId 속성을 설정해야 합니다(아래 코드 조각에 표시된 대로). ID로 사용되는 실제 문자열은 프로젝트에서 고유하기만 하면 됩니다.
 
@@ -53,5 +53,5 @@ ASP.NET Core [암호 관리자](https://docs.microsoft.com/aspnet/core/security/
 
 
 >[!div class="step-by-step"]
-[이전](authorization-net-microservices-web-applications.md)
-[다음](azure-key-vault-protects-secrets.md)
+>[이전](authorization-net-microservices-web-applications.md)
+>[다음](azure-key-vault-protects-secrets.md)

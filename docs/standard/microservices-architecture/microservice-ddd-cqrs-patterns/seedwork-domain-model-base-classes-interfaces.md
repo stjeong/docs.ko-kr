@@ -1,31 +1,31 @@
 ---
 title: Seedwork(도메인 모델에 대해 재사용이 가능한 기본 클래스 및 인터페이스)
-description: 컨테이너 화 된.NET 응용 프로그램을 위한 .NET Microservices 아키텍처 | Seedwork(도메인 모델에 대해 재사용이 가능한 기본 클래스 및 인터페이스)
+description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서비스 아키텍처 | DDD 지향 도메인 모델의 구현을 시작하려면 시드워크 개념을 시작점으로 사용합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/12/2017
-ms.openlocfilehash: 7a38d90caab2232c17d8d58ca0c57d5bb56b3ce9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.date: 10/08/2018
+ms.openlocfilehash: 9a7ddbc8a15e4064b4446ff322148720312e7937
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50198398"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152235"
 ---
 # <a name="seedwork-reusable-base-classes-and-interfaces-for-your-domain-model"></a>Seedwork(도메인 모델에 대해 재사용이 가능한 기본 클래스 및 인터페이스)
 
-솔루션 폴더에 *SeedWork* 폴더가 포함되어 있습니다. *SeedWork* 폴더 도메인 엔터티 및 값 개체에 대 한 기본으로 사용할 수 있는 사용자 지정 기본 클래스를 포함 합니다. 각 도메인의 개체 클래스에 중복 코드가 없으므로 이러한 기본 클래스를 사용합니다. 이러한 유형의 클래스의 폴더는 *SeedWork*라고 하며 *프레임 워크* 같은 것이 아닙니다. *SeedWork*라고 하는 이유는 이 폴더에는 실제로 프레임워크라고 할 수 없는 재사용이 가능한 클래스의 작은 하위 집합 포함하기 때문입니다. *Seedwork*는 [Michael Feathers](https://www.artima.com/forums/flat.jsp?forum=106&thread=8826)가 도입해 [Martin Fowler](https://martinfowler.com/bliki/Seedwork.html)에 의해 유명해진 용어지만 해당 폴더를 Common, SharedKernel 또는 비슷한 이름으로 부를 수도 있습니다.
+솔루션 폴더에 *SeedWork* 폴더가 포함되어 있습니다. 이 폴더에는 도메인 엔터티 및 값 개체의 기반으로 사용할 수 있는 사용자 지정 기본 클래스가 포함되어 있습니다. 각 도메인의 개체 클래스에 중복 코드가 없으므로 이러한 기본 클래스를 사용합니다. 이러한 유형의 클래스의 폴더는 *SeedWork*라고 하며 *프레임 워크* 같은 것이 아닙니다. *SeedWork*라고 하는 이유는 이 폴더에는 실제로 프레임워크라고 할 수 없는 재사용이 가능한 클래스의 작은 하위 집합 포함하기 때문입니다. *Seedwork*는 [Michael Feathers](https://www.artima.com/forums/flat.jsp?forum=106&thread=8826)가 도입해 [Martin Fowler](https://martinfowler.com/bliki/Seedwork.html)에 의해 유명해진 용어지만 해당 폴더를 Common, SharedKernel 또는 비슷한 이름으로 부를 수도 있습니다.
 
-그림 9-12는 정렬 마이크로 서비스에서 도메인 모델 의 시드워크를 구성하는 클래스를 보여줍니다. 시드워크에는 엔터티와 ValueObject, 열거형을 포함한 몇 가지 인터페이스처럼 사용자 지정 기본 클래스가 있습니다. 이러한 인터페이스(IRepository 및 IUnitOfWork)는 인프라 계층에게 구현되어야 할 사항에 대해 알려줍니다. 이러한 인터페이스는 또한 응용 프로그램 계층에서 종속성 주입을 통해 사용됩니다.
+그림 7-12는 정렬 마이크로 서비스에서 도메인 모델의 시드워크를 구성하는 클래스를 보여줍니다. 시드워크에는 엔터티와 ValueObject, 열거형을 포함한 몇 가지 인터페이스처럼 사용자 지정 기본 클래스가 있습니다. 이러한 인터페이스(IRepository 및 IUnitOfWork)는 인프라 계층에게 구현되어야 할 사항에 대해 알려줍니다. 이러한 인터페이스는 또한 응용 프로그램 계층에서 종속성 주입을 통해 사용됩니다.
 
-![](./media/image13.PNG)
+![기본 클래스 및 인터페이스인 Entity.cs, Enumeration.cs, IAggregateRoot.cs, IRepository.cs, IUnitOfWork.cs 및 ValueObject.cs를 포함하는 SeedWork 폴더의 자세한 내용](./media/image13.PNG)
 
-**그림 9-12**. 도메인 모델인 "시드워크" 기본 클래스 및 인터페이스의 샘플 집합
+**그림 7-12**. 도메인 모델인 "시드워크" 기본 클래스 및 인터페이스의 샘플 집합
 
 이 집합은 대부분 개발자가 공식 프레임 워크가 아닌 프로젝트 간에 공유하는 재사용을 복사하기 및 붙여넣기하는 형식입니다. 모든 레이어 또는 라이브러리에 시드워크가 있을 수 있니다. 그러나 클래스 및 인터페이스 집합이 충분히 큰 경우 단일 클래스 라이브러리를 만드는 것이 좋습니다.
 
 ## <a name="the-custom-entity-base-class"></a>사용자 지정 엔터티 기본 클래스
 
-다음 코드는 엔터티 ID, [같음 연산자](/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal), 엔터티별 도메인 이벤트 목록 같은 모든 도메인 엔터티가 같은 방법으로 사용할 수 있는 코드를 배치할 수 있는 엔터티 기본 클래스의 예제입니다.
+다음 코드는 엔터티 ID, [같음 연산자](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/equality-comparison-operator), 엔터티별 도메인 이벤트 목록 같은 모든 도메인 엔터티가 같은 방법으로 사용할 수 있는 코드를 배치할 수 있는 엔터티 기본 클래스의 예제입니다.
 
 ```csharp
 // COMPATIBLE WITH ENTITY FRAMEWORK CORE (1.1 and later)
@@ -105,13 +105,13 @@ public abstract class Entity
 }
 ```
 
-엔터티별 도메인 이벤트 목록을 사용하는 이전 코드는 도메인 이벤트에 중점인 다음 섹션에서 설명됩니다. 
+엔터티별 도메인 이벤트 목록을 사용하는 이전 코드는 도메인 이벤트에 중점인 다음 섹션에서 설명됩니다.
 
 ## <a name="repository-contracts-interfaces-in-the-domain-model-layer"></a>도메인 모델 계층에서의 리포지토리 계약(인터페이스)
 
-리포지토리 계약은 단순히 각 집계에 사용할 리포지토리의 계약 요구사항을 나타내는 .NET 인터페이스입니다. 
+리포지토리 계약은 단순히 각 집계에 사용할 리포지토리의 계약 요구사항을 나타내는 .NET 인터페이스입니다.
 
-EF Core 코드 또는 기타 모든 인프라 종속성과 코드(Linq, SQL, 등)를 갖춘 리포지토리는 도메인 모델 내에서 구현되어서는 안 되며, 해당 리포지토리는 사용자가 정의하는 인터페이스만을 구현해야합니다. 
+EF Core 코드 또는 기타 모든 인프라 종속성과 코드(Linq, SQL, 등)를 갖춘 리포지토리 자체는 도메인 모델 내에서 구현되어서는 안 되며, 해당 리포지토리는 도메인 모델에서 정의하는 인터페이스만을 구현해야 합니다.
 
 이 방법(리포지토리 인터페이스를 도메인 모델 계층에 배치하는 것)과 관련된 패턴은 분리된 인터페이스 패턴입니다. Martin Fowler가 [설명](https://www.martinfowler.com/eaaCatalog/separatedInterface.html)한 것처럼 “분리된 인터페이스를 사용해 한 패키지의 인터페이스를 정의하되 또 다른 패키지의 인터페이스는 구현하십시오. 이처럼 인터페이스에 종속되어 있는 클라이언트는 해당 구현을 전혀 인식할 수 없습니다.”
 
@@ -124,7 +124,7 @@ EF Core 코드 또는 기타 모든 인프라 종속성과 코드(Linq, SQL, 등
 public interface IOrderRepository : IRepository<Order>
 {
     Order Add(Order order);
-        
+
     void Update(Order order);
 
     Task<Order> GetAsync(int orderId);
@@ -139,10 +139,9 @@ public interface IRepository<T> where T : IAggregateRoot
 
 ## <a name="additional-resources"></a>추가 자료
 
--   **Martin Fowler. 분리된 인터페이스.**
-    [*https://www.martinfowler.com/eaaCatalog/separatedInterface.html*](https://www.martinfowler.com/eaaCatalog/separatedInterface.html)
-
+- **Martin Fowler. 분리된 인터페이스.** \
+  [*https://www.martinfowler.com/eaaCatalog/separatedInterface.html*](https://www.martinfowler.com/eaaCatalog/separatedInterface.html)
 
 >[!div class="step-by-step"]
-[이전](net-core-microservice-domain-model.md)
-[다음](implement-value-objects.md)
+>[이전](net-core-microservice-domain-model.md)
+>[다음](implement-value-objects.md)

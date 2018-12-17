@@ -1,23 +1,23 @@
 ---
 title: 높은 확장성 및 가용성을 위한 마이크로 서비스 및 다중 컨테이너 응용 프로그램 오케스트레이션
-description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 서비스 아키텍처 | 높은 확장성 및 가용성을 위한 마이크로 서비스 및 다중 컨테이너 응용 프로그램 오케스트레이션
+description: Kubernetes 애플리케이션 수명 주기를 개발하는 동안 높은 확장성과 가용성 및 Azure Dev Spaces의 가능성을 위해 마이크로 서비스 및 다중 컨테이너 애플리케이션을 오케스트레이션하는 옵션을 검색합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/18/2017
-ms.openlocfilehash: 25175e2a4409d53be412ae72be5af1c07c3ec68d
-ms.sourcegitcommit: 296183dbe35077b5c5e5e74d5fbe7f399bc507ee
+ms.date: 09/20/2018
+ms.openlocfilehash: c3a40d5a9229ec754f5a5c2e2637af964f25ba08
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50982778"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152731"
 ---
 # <a name="orchestrating-microservices-and-multi-container-applications-for-high-scalability-and-availability"></a>높은 확장성 및 가용성을 위한 마이크로 서비스 및 다중 컨테이너 응용 프로그램 오케스트레이션
 
-응용 프로그램이 마이크로 서비스를 기반으로 하거나 단순히 여러 컨테이너로 분할되는 경우 프로덕션 지원 응용 프로그램에 오케스트레이터를 사용해야 합니다. 이전에 소개한 대로 마이크로 서비스 기반 방법에서 각 마이크로 서비스마다 모델 및 데이터를 소유하므로 개발 및 배포 관점에서 독립적입니다. 그러나 SOA와 같은 여러 서비스로 구성된 기존 응용 프로그램이 있는 경우에도 분산 시스템으로 배포해야 하는 단일 비즈니스 응용 프로그램을 구성하는 여러 컨테이너 또는 서비스가 제공됩니다. 이러한 종류의 시스템은 규모 확장 및 관리가 복잡합니다. 따라서 프로덕션을 지원하고 확장성 있는 다중 컨테이너 응용 프로그램을 원하는 경우 오케스트레이터가 반드시 필요합니다.
+응용 프로그램이 마이크로 서비스를 기반으로 하거나 단순히 여러 컨테이너로 분할되는 경우 프로덕션 지원 응용 프로그램에 오케스트레이터를 사용해야 합니다. 이전에 소개한 대로 마이크로 서비스 기반 방법에서 각 마이크로 서비스마다 모델 및 데이터를 소유하므로 개발 및 배포 관점에서 독립적입니다. 그러나 SOA와 같은 여러 서비스로 구성된 기존 애플리케이션이 있는 경우에도 분산 시스템으로 배포해야 하는 단일 비즈니스 애플리케이션을 구성하는 여러 컨테이너 또는 서비스가 제공됩니다. 이러한 종류의 시스템은 규모 확장 및 관리가 복잡합니다. 따라서 프로덕션을 지원하고 확장성 있는 다중 컨테이너 응용 프로그램을 원하는 경우 오케스트레이터가 반드시 필요합니다.
 
 그림 4-23에서는 여러 마이크로 서비스(컨테이너)로 구성된 응용 프로그램의 클러스터에 배포하는 방법을 보여 줍니다.
 
-![](./media/image23.PNG)
+![클러스터에서 Docker 애플리케이션 구성: 각 서비스 인스턴스마다 하나의 컨테이너를 사용합니다. Docker 컨테이너는 "배포 단위"이고 컨테이너는 많은 컨테이너를 처리하는 Docker.A 호스트의 인스턴스입니다.](./media/image23.png)
 
 **그림 4-23** 컨테이너의 클러스터
 
@@ -27,113 +27,133 @@ ms.locfileid: "50982778"
 
 개별 컨테이너 또는 매우 간단하게 구성된 앱을 관리하는 것 외에도, 마이크로 서비스가 있는 대규모 엔터프라이즈 응용 프로그램으로 이동하려면 오케스트레이션 및 클러스터링 플랫폼으로 전환해야 합니다.
 
-아키텍처 및 개발 관점에서 마이크로 서비스 기반 응용 프로그램으로 구성된 대규모 엔터프라이즈를 구축하는 경우 고급 시나리오를 지원하는 다음 플랫폼과 제품을 이해해야 합니다.
+아키텍처 및 개발 관점에서 마이크로 서비스 기반 애플리케이션으로 구성된 대규모 엔터프라이즈를 구축하는 경우 고급 시나리오를 지원하는 다음 플랫폼과 제품을 이해해야 합니다.
 
-**클러스터 및 오케스트레이터** 대규모 마이크로 서비스 기반 응용 프로그램과 같이 많은 Docker 호스트에서 응용 프로그램을 확장해야 하는 경우, 기본 플랫폼의 복잡성을 추상화하여 모든 호스트를 단일 클러스터로 관리할 수 있어야 합니다. 이는 컨테이너 클러스터 및 오케스트레이터에서 제공하는 것입니다. 오케스트레이터의 예로, Azure Service Fabric, Kubernetes, Docker Swarm 및 Mesosphere DC/OS가 있습니다. 마지막 세 개의 오픈 소스 오케스트레이터는 Azure에서 Azure Container Service를 통해 사용할 수 있습니다.
+**클러스터 및 오케스트레이터.** 대규모 마이크로 서비스 기반 애플리케이션과 같이 많은 Docker 호스트에서 애플리케이션을 확장해야 하는 경우, 기본 플랫폼의 복잡성을 추상화하여 모든 호스트를 단일 클러스터로 관리할 수 있어야 합니다. 이는 컨테이너 클러스터 및 오케스트레이터에서 제공하는 것입니다. 오케스트레이터의 예로는 Azure Service Fabric 및 Kubernetes가 있습니다. Kubernetes는 Azure Kubernetes Service를 통해 Azure에서 제공됩니다.
 
-**스케줄러** *예약*은 관리자가 클러스터에서 컨테이너를 시작하여 UI도 제공할 수 있는 기능을 의미합니다. 클러스터 스케줄러에는 클러스터 리소스를 효율적으로 사용하고, 사용자가 제공하는 제약 조건을 설정하며, 노드 또는 호스트 간에 컨테이너를 효율적으로 부하 분산하고, 고가용성을 제공하면서 오류에 대해 강력한 기능을 제공하기 위한 여러 가지 역할이 있습니다.
+**스케줄러.** *예약*은 관리자가 클러스터에서 컨테이너를 시작하여 UI도 제공할 수 있는 기능을 의미합니다. 클러스터 스케줄러에는 클러스터 리소스를 효율적으로 사용하고, 사용자가 제공하는 제약 조건을 설정하며, 노드 또는 호스트 간에 컨테이너를 효율적으로 부하 분산하고, 고가용성을 제공하면서 오류에 대해 강력한 기능을 제공하기 위한 여러 가지 역할이 있습니다.
 
 클러스터 및 스케줄러의 개념은 밀접하게 관련되어 있으므로 여러 공급업체에서 제공하는 제품은 종종 두 가지 기능의 집합을 제공합니다. 다음 목록에서는 클러스터 및 스케줄러에 가장 중요한 플랫폼 및 소프트웨어 선택 항목을 보여 줍니다. 이러한 오케스트레이터는 일반적으로 Azure와 같은 공용 클라우드에서 제공됩니다.
 
 ## <a name="software-platforms-for-container-clustering-orchestration-and-scheduling"></a>컨테이너 클러스터링, 오케스트레이션 및 예약용 소프트웨어 플랫폼
 
-Kubernetes
+### <a name="kubernetes"></a>Kubernetes
 
 ![Kubernetes 로고](./media/image24.png)
 
-> Kubernetes는 클러스터 인프라와 컨테이너 예약에서 기능 오케스트레이션에 이르기까지 다양한 기능을 제공하는 오픈 소스 제품입니다. 이를 통해 호스트 클러스터 전체에서 응용 프로그램 컨테이너의 배포, 확장 및 작업을 자동화할 수 있습니다.
+> [*Kubernetes*](https://kubernetes.io/)는 클러스터 인프라와 컨테이너 예약에서 기능 오케스트레이션에 이르기까지 다양한 기능을 제공하는 오픈 소스 제품입니다. 이를 통해 호스트 클러스터 전체에서 응용 프로그램 컨테이너의 배포, 확장 및 작업을 자동화할 수 있습니다.
 >
-> Kubernetes는 쉽게 관리하고 검색할 수 있도록 응용 프로그램 컨테이너를 논리 단위로 그룹화하는 컨테이너 중심 인프라를 제공합니다.
+> *Kubernetes*는 쉽게 관리하고 검색할 수 있도록 애플리케이션 컨테이너를 논리 단위로 그룹화하는 컨테이너 중심 인프라를 제공합니다.
 >
-> Kubernetes의 완성도는 Linux에서 높았지만, Windows에서는 그렇지 못했습니다.
+> *Kubernetes*의 완성도는 Linux에서 높았지만, Windows에서는 그렇지 못했습니다.
 
-Docker Swarm
+### <a name="azure-kubernetes-service-aks"></a>AKS(Azure Kubernetes Service)
 
-![Docker Swarm 로고](./media/image25.png)
+![Azure Kubernetes Service 로고](./media/image41.png)
 
-> Docker Swarm을 사용하면 Docker 컨테이너를 클러스터링하고 예약할 수 있습니다. Swarm을 사용하면 Docker 호스트 풀을 단일 가상 Docker 호스트로 전환할 수 있습니다. 클라이언트는 호스트에 수행한 방식과 동일하게 API 요청을 수행할 수 있습니다. 즉, Swarm을 사용하면 응용 프로그램을 여러 호스트로 쉽게 확장할 수 있습니다.
->
-> Docker Swarm은 Docker 회사의 제품입니다.
->
-> Docker v1.12 이상에서는 네이티브 및 기본 제공 Swarm 모드를 실행할 수 있습니다.
+> [AKS(Azure Kubernetes Service)](https://azure.microsoft.com/services/kubernetes-service/)는 Kubernetes 클러스터의 관리, 배포 및 운영을 간소화하는 Azure에서 관리되는 Kubernetes 컨테이너 오케스트레이션 서비스입니다.
 
-Mesosphere DC/OS
-
-![Mesosphere DC/OS 로고](./media/image26.png)
-
-> Mesosphere Enterprise DC/OS(Apache Mesos 기반)는 컨테이너 및 분산 응용 프로그램을 실행하기 위한 프로덕션 지원 플랫폼입니다.
->
-> DC/OS는 클러스터에서 사용할 수 있는 리소스 컬렉션을 추상화하고 이를 기반으로 하여 빌드된 구성 요소에서 이러한 리소스를 사용할 수 있도록 함으로써 작동합니다. Marathon은 일반적으로 DC/OS와 통합된 스케줄러로 사용됩니다.
->
-> DC/OS의 완성도는 Linux에서 높았지만, Windows에서는 그렇지 못했습니다.
-
-Azure Service Fabric
+### <a name="azure-service-fabric"></a>Azure Service Fabric
 
 ![Azure Service Fabric 로고](./media/image27.png)
 
-> [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)은 응용 프로그램을 빌드하기 위한 Microsoft 마이크로 서비스 플랫폼입니다. 서비스의  [오케스트레이터](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) 이며, 머신으로 구성된 클러스터를 만듭니다. Service Fabric은 서비스를 컨테이너 또는 일반 프로세스로 배포할 수 있습니다. 또한 동일한 응용 프로그램 및 클러스터 내의 컨테이너에 있는 서비스와 프로세스에 있는 서비스를 혼합할 수도 있습니다.
+> [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)은 응용 프로그램을 빌드하기 위한 Microsoft 마이크로 서비스 플랫폼입니다. 서비스의 [오케스트레이터](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction)이며, 머신의 클러스터를 만듭니다. Service Fabric은 서비스를 컨테이너 또는 일반 프로세스로 배포할 수 있습니다. 또한 동일한 응용 프로그램 및 클러스터 내의 컨테이너에 있는 서비스와 프로세스에 있는 서비스를 혼합할 수도 있습니다.
 >
-> Service Fabric은 [상태 저장 서비스](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) 및 [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction)와 같이 규범적  [Service Fabric 프로그래밍 모델 ](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework)(추가 및 선택 사양)을 제공합니다.
+> *Service Fabric* 클러스터는 Azure, 온-프레미스 또는 모든 클라우드에 배포할 수 있습니다. 그러나 Azure에서의 배포는 관리 방식으로 간소화됩니다.
 >
-> Service Fabric의 완성도는 Windows에서 높았지만(Windows에서 진화), Linux에서는 그렇지 못했습니다. 
+> *Service Fabric*은 [상태 저장 서비스](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) 및[ Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction)와 같이 규범적 [Service Fabric 프로그래밍 모델](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework)(추가 및 선택 사양)을 제공합니다.
+>
+> *Service Fabric*의 완성도는 Windows에서 높았지만(Windows에서 진화), Linux에서는 그렇지 못했습니다.
+>
 > 2017년 이후 Service Fabric에서 Linux 및 Windows 컨테이너를 모두 지원합니다.
+
+### <a name="azure-service-fabric-mesh"></a>Azure Service Fabric Mesh
+
+![Azure Service Fabric Mesh 로고](./media/image35.png)
+
+> [*Azure Service Fabric Mesh*](https://docs.microsoft.com/azure/service-fabric-mesh/service-fabric-mesh-overview)는 Service Fabric과 동일한 안정성, 중요 업무용 성능 및 규모를 제공하지만 완전 관리형과 서버리스 플랫폼을 제공합니다. 클러스터, VM, 스토리지 또는 네트워킹 구성을 관리할 필요가 없습니다. 애플리케이션의 개발에만 주력할 수 있습니다.
+>
+> *Service Fabric Mesh*는 Windows 및 Linux 컨테이너를 모두 지원하므로 원하는 프로그래밍 언어와 프레임워크를 사용하여 개발할 수 있습니다.
 
 ## <a name="using-container-based-orchestrators-in-microsoft-azure"></a>Microsoft Azure에서 컨테이너 기반 오케스트레이션 사용
 
-여러 클라우드 공급업체에서 Microsoft Azure, Amazon EC2 Container Service 및 Google Container Engine을 포함하여 Docker 컨테이너 지원 및 Docker 클러스터/오케스트레이션 지원을 제공합니다. Microsoft Azure는 다음 섹션에서 설명한 대로 ACS(Azure Container Service)를 통해 Docker 클러스터 및 오케스트레이터 지원을 제공합니다.
+여러 클라우드 공급업체에서 Microsoft Azure, Amazon EC2 Container Service 및 Google Container Engine을 포함하여 Docker 컨테이너 지원 및 Docker 클러스터/오케스트레이션 지원을 제공합니다. Microsoft Azure는 AKS(Azure Kubernetes Service)와 Azure Service Fabric 및 Azure Service Fabric Mesh를 통해 Docker 클러스터 및 오케스트레이터 지원을 제공합니다.
 
-또 다른 선택 사항으로, Microsoft Azure Service Fabric(마이크로 서비스 플랫폼)을 사용하는 것이며, Linux 및 Windows 컨테이너 기반 Docker도 지원합니다. Service Fabric은 Azure 또는 다른 클라우드에서 실행되며, [온-프레미스](https://docs.microsoft.com/azure/service-fabric/service-fabric-deploy-anywhere)에서도 실행됩니다.
+## <a name="using-azure-kubernetes-service"></a>Azure Kubernetes Service 사용
 
-## <a name="using-azure-container-service"></a>Azure Container Service 사용
+Kubernetes 클러스터는 여러 Docker 호스트를 풀링하고 단일 가상 Docker 호스트로 공개하여 여러 컨테이너를 클러스터에 배포하고 여러 컨테이너 인스턴스로 스케일 아웃할 수 있습니다. 클러스터는 확장성, 상태 등 모든 복잡한 관리 작업을 처리합니다.
 
-Docker 클러스터는 여러 Docker 호스트를 풀링하고 단일 가상 Docker 호스트로 공개하여 여러 컨테이너를 클러스터에 배포할 수 있습니다. 클러스터는 확장성, 상태 등 모든 복잡한 관리 작업을 처리합니다. 그림 4-24에서는 구성된 응용 프로그램용 Docker 클러스터가 ACS(Azure Container Service)에 매핑되는 방법을 보여 줍니다.
+AKS는 컨테이너화된 애플리케이션을 실행하도록 미리 구성된 Azure의 가상 머신 클러스터의 만들기, 구성 및 관리를 단순화할 수 있는 방법을 제공합니다. 인기 있는 오픈 소스 일정 예약 및 오케스트레이션 도구의 최적화된 구성을 통해 AKS를 사용하면 기존 기술을 사용하거나 광범위한 커뮤니티 전문 분야에 집중하여 Microsoft Azure에서 컨테이너 기반 애플리케이션을 배포하고 관리할 수 있습니다.
 
-ACS는 컨테이너화된 응용 프로그램을 실행하도록 미리 구성된 가상 머신 클러스터를 만들기, 구성 및 관리를 단순화할 수 있는 방법을 제공합니다. 인기 있는 오픈 소스 일정 예약 및 오케스트레이션 도구의 최적화된 구성을 통해 ACS를 사용하면 기존 기술을 사용하거나 광범위한 커뮤니티 전문 분야에 집중하여 Microsoft Azure에서 컨테이너 기반 응용 프로그램을 배포하고 관리할 수 있습니다.
+Azure Kubernetes Service는 Azure용으로 특별히 인기 있는 Docker 클러스터링 오픈 소스 도구 및 기술의 구성을 최적화합니다. 컨테이너와 응용 프로그램 구성 모두에 이식성을 제공하는 개방형 솔루션을 얻을 수 있습니다. 사용자가 크기, 호스트 수, 오케스트레이터 도구를 선택하고, AKS에서 다른 모든 작업을 처리합니다.
 
-Azure Container Service는 Azure용으로 특별히 인기 있는 Docker 클러스터링 오픈 소스 도구 및 기술의 구성을 최적화합니다. 컨테이너와 응용 프로그램 구성 모두에 이식성을 제공하는 개방형 솔루션을 얻을 수 있습니다. 사용자가 크기, 호스트 수, 오케스트레이터 도구를 선택하고, Container Service에서 다른 모든 작업을 처리합니다.
+![Kubernetes 클러스터 구조: DNS, 스케줄러, 프록시 등을 처리하는 하나의 마스터 노드와 컨테이너를 호스트하는 여러 작업자 노드가 있습니다.](media/image36.png)
 
-![](./media/image28.png)
+**그림 4-24** Kubernetes 클러스터의 단순화된 구조 및 토폴로지
 
-**그림 4-24** Azure Container Service의 클러스터링 선택 항목
+그림 4-24에서는 마스터 노드(VM)가 클러스터 조정의 대부분을 제어하고 애플리케이션의 관점에서 단일 풀로 관리되는 나머지 노드에 컨테이너를 배포할 수 있는 Kubernetes 클러스터의 구조를 볼 수 있으며, 수천 또는 수만 개의 컨테이너로 확장할 수 있습니다.
 
-ACS는 Docker 이미지를 활용하여 응용 프로그램 컨테이너를 완벽하게 이식할 수 있도록 합니다. 이는 DC/OS(Apache Mesos로 구동), Kubernetes(원래 Google에서 개발), Docker Swarm과 같은 오픈 소스 오케스트레이션 플랫폼을 선택하여 이러한 응용 프로그램을 수천 개 또는 수만 개의 컨테이너로 확장할 수 있도록 지원합니다 .
+## <a name="development-environment-for-kubernetes"></a>Kubernetes를 위한 개발 환경
 
-Azure Container Service를 사용하면 Azure의 엔터프라이즈급 기능을 활용하면서 오케스트레이션 계층을 포함하여 응용 프로그램 이식성을 계속 유지할 수 있습니다.
+개발 환경에서 Kubernetes가 [Docker Desktop](https://docs.docker.com/install/)을 설치하기만 하면 단일 개발 머신(Windows 10 또는 macOS)에서도 실행할 수 있는 [Docker를 2018년 7월에 발표](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/)했습니다. 그림 4-25와 같이 나중에 통합 테스트를 위해 클라우드(AKS)에 배포할 수 있습니다.
 
-![](./media/image29.png)
+![Docker는 Docker Desktop으로 Kubernetes 클러스터에 대한 개발 머신 지원을 2018년 7월에 발표했습니다.](media/image37.png) 
 
-**그림 4-25** ACS의 오케스트레이터
+**그림 4-25** 개발 머신 및 클라우드에서 Kubernetes 실행
 
-그림 4-25와 같이 Azure Container Service는 DC/OS, Kubernetes 또는 Docker Swarm을 배포하기 위해 Azure에서 제공하는 인프라이지만, ACS는 오케스트레이터를 추가로 구현하지 않습니다. 따라서 ACS는 이처럼 오케스트레이터 자체가 아니며, 기존의 컨테이너용 오픈 소스 오케스트레이터를 활용하는 인프라입니다.
+## <a name="getting-started-with-azure-kubernetes-service-aks"></a>AKS(Azure Kubernetes Service) 시작 
 
-사용 관점에서, Azure Container Service의 목표는 인기 있는 오픈 소스 도구 및 기술을 사용하여 컨테이너 호스팅 환경을 제공하는 것입니다. 이를 위해 선택한 오케스트레이터의 표준 API 엔드포인트를 공개합니다. 이 엔드포인트를 사용하면 해당 엔드포인트와 통신할 수 있는 모든 소프트웨어를 활용할 수 있습니다. 예를 들어 Docker Swarm 엔드포인트의 경우 Docker CLI(명령줄 인터페이스)를 사용하도록 선택할 수 있습니다. DC/OS의 경우 DC/OS CLI를 사용하도록 선택할 수 있습니다.
+AKS를 사용하여 시작하려면 Azure Portal에서 또는 CLI를 사용하여 AKS 클러스터를 배포합니다. Azure Container Service 클러스터 배포에 대한 자세한 내용은 [AKS(Azure Kubernetes Service) 클러스터 배포](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)를 참조하세요.
 
-### <a name="getting-started-with-azure-container-service"></a>Azure Container Service 시작 
+기본적으로 AKS의 일부로 설치된 소프트웨어에 대해서는 추가 비용이 없습니다. 모든 기본 옵션은 오픈 소스 소프트웨어로 구현됩니다. AKS는 Azure의 여러 가상 머신에서 사용할 수 있습니다. 선택한 컴퓨팅 인스턴스 및 사용되는 다른 기본 인프라 리소스(예: 스토리지 및 네트워킹)에 대해서만 요금이 청구됩니다. AKS 자체에 대한 추가 비용은 없습니다.
 
-Azure Container Service의 사용을 시작하려면 Azure Resource Manager 템플릿 또는 [CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)를 사용하여 Azure Portal에서 Azure Container Service 클러스터를 배포합니다. 사용 가능한 템플릿으로, [Docker Swarm](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-swarm), [Kubernetes](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-kubernetes) 및 [DC/OS](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-dcos)가 있습니다. 빠른 시작 템플릿은 추가 또는 고급 Azure 구성을 포함하도록 수정할 수 있습니다. Azure Container Service 클러스터 배포에 대한 자세한 내용은 Azure 웹 사이트에서 [Azure Container Service 클러스터 배포](https://docs.microsoft.com/azure/container-service/container-service-deployment)를 참조하세요.
+kubectl 및 원본 .yaml 파일을 기반으로 Kubernetes에 배포하는 방법에 대한 자세한 구현 정보는 [AKS(Azure Kubernetes Service)에서 eShopOnContainers 설정](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.-Setting-the-solution-up-in-AKS-(Azure-Kubernetes-Service))에 대한 게시물을 확인하세요.
 
-기본적으로 ACS의 일부로 설치된 소프트웨어에 대해서는 추가 비용이 없습니다. 모든 기본 옵션은 오픈 소스 소프트웨어로 구현됩니다.
+## <a name="deploying-with-helm-charts-into-kubernetes-clusters"></a>Helm 차트를 사용하여 Kubernetes 클러스터에 배포
 
-ACS는 현재 Azure의 표준 A, D, DS, G 및 GS 시리즈 Linux 가상 머신에서 사용할 수 있습니다. 선택한 계산 인스턴스 및 사용되는 다른 기본 인프라 리소스(예: 저장소 및 네트워킹)에 대해서만 요금이 청구됩니다. ACS 자체에 대한 추가 비용은 없습니다.
+애플리케이션을 Kubernetes 클러스터에 배포할 때, 이전 섹션에서 이미 언급한 네이티브 형식(.yaml 파일)에 따라 배포 파일을 사용하여 원래 kubectl.exe CLI 도구를 사용할 수 있습니다. 그러나 복잡한 마이크로 서비스 기반 애플리케이션을 배포할 때와 같이 더 복잡한 Kubernetes 애플리케이션의 경우 [Helm](https://helm.sh/)을 사용하는 것이 좋습니다.
+
+Helm 차트를 사용하면 가장 복잡한 Kubernetes 애플리케이션도 정의, 버전 지정, 설치, 공유, 업그레이드 또는 롤백할 수 있습니다.
+
+더 나아가, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)와 같은 Azure의 추가 Kubernetes 환경도 Helm 차트를 기반으로 하기 때문에 Helm 사용이 권장됩니다.
+
+Microsoft, Google, Bitnami 및 Helm 기여자 커뮤니티와 협력하여 [CNCF(Cloud Native Computing Foundation)](https://www.cncf.io/)에서 Helm을 유지 관리합니다.
+
+Helm 차트 및 Kubernetes에 대한 자세한 구현 정보는 [Helm 차트를 사용하여 AKS에 eShopOnContainers 배포](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.1-Deploying-to-AKS-using-Helm-Charts)의 게시물을 확인하세요.
+
+## <a name="use-azure-dev-spaces-for-your-kubernetes-application-lifecycle"></a>Kubernetes 애플케이션 수명 주기에 Azure Dev Spaces 사용
+
+[Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)는 팀을 위해 신속하고 반복적인 Kubernetes 개발 환경을 제공합니다. 최소한의 개발 머신 설치만으로 AKS(Azure Kubernetes Service)에서 직접 컨테이너를 반복적으로 실행하고 디버그할 수 있습니다. Visual Studio, Visual Studio Code 또는 명령줄 같은 친숙한 도구를 사용하여 Windows, Mac 또는 Linux에서 개발합니다.
+
+언급한 바와 같이, Azure Dev Spaces는 컨테이너 기반 애플리케이션을 배포할 때 Helm 차트를 사용합니다.
+
+Azure Dev Spaces는 Visual Studio 2017 또는 Visual Studio Code를 사용하기만 하면 Azure의 글로벌 Kubernetes 클러스터에서 직접 반복하고 디버그할 수 있기 때문에 개발 팀이 Kubernetes에서 생산성을 높일 수 있습니다. Azure에 있는 Kubernetes 클러스터는 공유된 관리 Kubernetes 클러스터이므로, 팀은 함께 협력할 수 있습니다. 코드를 따로 개발한 다음, 글로벌 클러스터에 배포하고 종속성을 복제 또는 모의하지 않고 다른 구성 요소를 사용하여 엔드투엔드 테스트를 수행합니다.
+
+그림 4-26과 같이 Azure Dev Spaces의 가장 다른 기능은 클러스터에 글로벌 배포의 나머지 부분과 통합하여 실행할 수 있는 ' 공간'을 만드는 기능입니다.
+
+![Azure Dev Spaces는 새 버전의 테스트를 쉽게 하기 위해 개발 컨테이너 인스턴스와 프로덕션 마이크로 서비스를 투명하게 혼합하여 일치시킬 수 있습니다.](media/image38.png)
+
+**그림 4-26**. Azure Dev Spaces에서 여러 공간 사용
+
+기본적으로 Azure에 공유 개발 공간을 설정할 수 있습니다. 각 개발자는 애플리케이션에서 자신이 맡은 부분에만 집중할 수 있으며 자신의 시나리오에 의존하는 다른 모든 서비스 및 클라우드 리소스가 포함된 개발 공간에서 커밋 전 코드를 반복해서 개발할 수 있습니다. 종속성은 항상 최신 상태로 유지되며 개발자가 생산을 미러링하는 방식으로 작업합니다.
+
+Azure Dev Spaces는 팀 구성원과 분리될 걱정 없이 격리되어 작업할 수 있는 공간의 개념을 제공합니다. 이 기능은 URL 사전 수정에 기반함으로, 모든 컨테이너의 요청에 대해 URL의 개발 공간 접두사를 사용하는 경우 존재하는 공간에 대해 컨테이너의 특별한 버전을 실행합니다. 그렇지 않으면 글로벌/통합 버전을 실행합니다.
+
+구체적인 예에 대한 실용적인 보기를 가져오려면 [Azure Dev Spaces의 eShopOnContainers wiki 페이지](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.2-Using-Azure-Dev-Spaces-and-AKS)를 참조할 수 있습니다.
+
+자세한 내용은 [Azure Dev Spaces로 팀 개발](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore)에 대한 문서를 확인하세요.
 
 ## <a name="additional-resources"></a>추가 자료
 
--   **Azure Container Service를 사용한 Docker 컨테이너 호스팅 솔루션 소개**
-    [*https://docs.microsoft.com/azure/container-service/container-service-intro*](https://docs.microsoft.com/azure/container-service/container-service-intro)
+- **AKS(Azure Kubernetes Service) 시작** \
+  [*https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal*](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)
 
--   **Docker Swarm 개요**
-    [*https://docs.docker.com/swarm/overview/*](https://docs.docker.com/swarm/overview/)
+- **Azure Dev Spaces** \
+  [*https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces*](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)
 
--   **Swarm 모드 개요**
-    [*https://docs.docker.com/engine/swarm/*](https://docs.docker.com/engine/swarm/)
-
--   **Mesosphere DC/OS 개요**
-    [*https://docs.mesosphere.com/1.7/overview/*](https://docs.mesosphere.com/1.7/overview/)
-
--   **Kubernetes.** 공식 사이트는 다음과 같습니다.
-    [*https://kubernetes.io/*](https://kubernetes.io/)
-
+- **Kubernetes** 공식 사이트. \
+  [*https://kubernetes.io/*](https://kubernetes.io/)
 
 >[!div class="step-by-step"]
-[이전](resilient-high-availability-microservices.md)
-[다음](using-azure-service-fabric.md)
+>[이전](resilient-high-availability-microservices.md)
+>[다음](using-azure-service-fabric.md)

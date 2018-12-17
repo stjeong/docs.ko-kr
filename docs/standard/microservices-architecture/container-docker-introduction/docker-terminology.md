@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 08/31/2018
-ms.openlocfilehash: 39a3c0e0aac2980e67a1c87a472d1a77baed6113
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 8bf26087564e4f592d5f89afc6da211c5d1cff57
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47216853"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150656"
 ---
 # <a name="docker-terminology"></a>Docker 용어
 
@@ -51,7 +51,6 @@ ms.locfileid: "47216853"
 
 **오케스트레이터**: 클러스터 및 Docker 호스트의 관리를 간소화하는 도구입니다. 오케스트레이터를 사용하면 CLI(명령줄 인터페이스)또는 그래픽 UI를 통해 해당 이미지, 컨테이너 및 호스트를 관리할 수 있습니다. 컨테이너 네트워킹, 구성, 부하 분산, 서비스 검색, 고가용성, Docker 호스트 구성 등을 관리할 수 있습니다. 오케스트레이터는 노드 컬렉션 간에 워크로드를 실행하고, 배포하고, 크기를 조정하고. 복구하는 작업을 담당합니다. 일반적으로 오케스트레이터 제품은 출시된 다른 제품 중에서 Kubernetes 및 Azure Service Fabric과 같은 클러스터 인프라를 제공하는 동일한 제품입니다. 
 
-
 >[!div class="step-by-step"]
-[이전](docker-defined.md)
-[다음](docker-containers-images-registries.md)
+>[이전](docker-defined.md)
+>[다음](docker-containers-images-registries.md)

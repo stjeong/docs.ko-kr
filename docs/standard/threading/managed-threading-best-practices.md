@@ -1,6 +1,6 @@
 ---
 title: 관리되는 스레딩을 구현하는 최선의 방법
-ms.date: 11/30/2017
+ms.date: 10/15/2018
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f95fb3ccab7362021a7a195ea199a1370e003dd2
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: ab33474fa8f3d62fb21c86a0699bbfcb75e7a270
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562374"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150617"
 ---
-# <a name="managed-threading-best-practices"></a>관리되는 스레딩을 구현하는 최선의 방법
+# <a name="managed-threading-best-practices"></a>관리 스레딩을 구현하는 최선의 방법
 다중 스레딩에는 신중한 프로그래밍이 필요합니다. 대부분의 작업의 경우 스레드 풀 스레드로 실행에 대한 요청을 큐에 대기시켜 복잡성을 줄일 수 있습니다. 이 항목에서는 다중 스레드의 작업 조정 또는 차단되는 스레드 처리 등의 더욱 어려운 상황을 다룹니다.  
   
 > [!NOTE]
@@ -70,37 +70,18 @@ else {
   
  경합 상태는 다중 스레드의 작업을 동기화할 때에도 발생할 수 있습니다. 코드 줄을 작성할 때마다 줄을 실행하기 전에(또는 줄을 구성하는 개별 컴퓨터 명령 전에) 스레드가 선점되었고 다른 스레드가 먼저 사용한 경우 발생할 수 있는 상황을 고려해야 합니다.  
   
-## <a name="number-of-processors"></a>프로세서 수  
- 이제 대부분의 컴퓨터와 태블릿 및 휴대폰과 같은 소형 장치에도 다중 프로세서(코어라고도 함)가 있습니다. 단일 프로세서 컴퓨터에서도 실행되는 소프트웨어를 개발 중임을 아는 경우 다중 스레딩은 단일 프로세서 컴퓨터 및 다중 프로세서 컴퓨터에 대해 다른 문제를 해결한다는 것을 알아야 합니다.  
-  
-### <a name="multiprocessor-computers"></a>다중 프로세서 컴퓨터  
- 다중 스레딩은 더 높은 처리량을 제공합니다. 10개의 프로세서는 한 개의 프로세서보다 10배의 작업을 수행할 수 있지만 모든 10개의 프로세서가 한 번에 작업할 수 있도록 작업이 나뉘어져 있는 경우에만 스레드는 작업을 나누고 추가 처리 능력을 활용하는 쉬운 방법을 제공합니다. 다중 프로세서 컴퓨터에서 다중 스레딩을 사용하는 경우:  
-  
--   동시에 실행할 수 있는 스레드 수는 프로세서의 수로 제한됩니다.  
-  
--   백그라운드 스레드는 포그라운드 스레드 실행 수가 프로세서 수보다 작은 경우에만 실행합니다.  
-  
--   스레드에서 <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> 메서드를 호출하는 경우 해당 스레드는 프로세서의 수와 현재 실행 대기 중인 스레드의 수에 따라 실행을 즉시 시작하거나 시작하지 않을 수 있습니다.  
-  
--   경합 상태는 스레드가 예기치 않게 선점되었기 때문에만 아니라 다른 프로세서에서 실행되는 두 개의 스레드가 동일한 코드 블록에 도달하기 위해 경쟁할 수 있기 때문에 발생할 수 있습니다.  
-  
-### <a name="single-processor-computers"></a>단일 프로세서 컴퓨터  
- 다중 스레딩은 컴퓨터 사용자에게 큰 응답성을 제공하고 백그라운드 작업에 유휴 시간을 사용합니다. 단일 프로세서 컴퓨터에서 다중 스레딩을 사용하는 경우:  
-  
--   어떠한 경우든 하나의 스레드만 실행합니다.  
-  
--   백그라운드 스레드는 주 사용자 스레드가 유휴 상태일 때에만 실행합니다. 지속적으로 실행하는 포그라운드 스레드는 백그라운드 스레드의 프로세서 시간을 가져와서 사용합니다.  
-  
--   스레드에서 <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> 메서드를 호출하는 경우 해당 스레드는 현재 스레드가 양보하거나 운영 체제에 의해 선점될 때까지 실행을 시작하지 않습니다.  
-  
--   경합 상태는 일반적으로 스레드가 가끔 다른 스레드가 코드 블록에 먼저 도달하도록 허용하는 곤란한 상황에서 선점될 수 있다는 사실을 프로그래머가 예측하지 않았기 때문에 발생합니다.  
-  
 ## <a name="static-members-and-static-constructors"></a>정적 멤버 및 정적 생성자  
  클래스는 해당 클래스 생성자(C#에서 `static` 생성자, Visual Basic에서 `Shared Sub New`)가 실행을 완료할 때까지 초기화되지 않습니다. 초기화되지 않는 형식에서 코드의 실행을 방지하려면 공용 언어 런타임은 클래스 생성자가 실행을 완료할 때까지 다른 스레드에서 클래스의 `static` 멤버(Visual Basic에서 `Shared` 멤버)로 모든 호출을 차단합니다.  
   
  예를 들어 클래스 생성자가 새 스레드를 시작하고 스레드 프로시저가 클래스의 `static` 멤버를 호출하는 경우 새 스레드는 클래스 생성자가 완료할 때까지 차단됩니다.  
   
  이는 `static` 생성자를 가질 수 있는 모든 형식에 적용됩니다.  
+
+## <a name="number-of-processors"></a>프로세서 수
+
+시스템에 다중 프로세서 또는 하나의 프로세스만 사용할 수 있는지 여부에 따라 다중 스레드 아키텍처가 영향을 받을 수 있습니다. 자세한 내용은 [프로세서의 수](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/1c9txz50(v%3dvs.71)#number-of-processors)를 참조하세요.
+
+런타임 시 사용 가능한 프로세서 수를 확인하려면 <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> 속성을 사용합니다.
   
 ## <a name="general-recommendations"></a>일반 권장 사항  
  다중 스레드를 사용하는 경우 다음 지침을 고려합니다.  
@@ -145,7 +126,7 @@ else {
     ```  
   
     > [!NOTE]
-    >  .NET Framework 버전 2.0에서 <xref:System.Threading.Interlocked.Add%2A> 메서드는 1보다 큰 단위로 원자성 업데이트를 제공합니다.  
+    > .NET Framework 2.0 이상에서는 1보다 큰 원자성 증분에 대해 <xref:System.Threading.Interlocked.Add%2A> 메서드를 사용합니다.  
   
      두 번째 예제에서 참조 형식 변수는 null 참조인 경우에만 업데이트됩니다(Visual Basic에서 `Nothing`).  
   
@@ -183,7 +164,7 @@ else {
     ```  
   
     > [!NOTE]
-    >  .NET Framework 버전 2.0에서 <xref:System.Threading.Interlocked.CompareExchange%2A> 메서드에는 참조 형식의 형식이 안전한 교체에 사용될 수 있는 제네릭 오버로드가 있습니다.  
+    > .NET Framework 2.0 부터는 <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> 메서드 오버 로드 참조 형식의 형식이 안전한 대안을 제공 합니다.
   
 ## <a name="recommendations-for-class-libraries"></a>클래스 라이브러리에 대한 권장 사항  
  다중 스레딩에 대한 클래스 라이브러리를 설계할 때 다음 지침을 고려합니다.  

@@ -1,27 +1,27 @@
 ---
 title: 마이크로 서비스(통합 이벤트) 간 이벤트 기반 통신 구현
-description: 컨테이너 화 된.NET 응용 프로그램에 대한 .NET Microservices 아키텍처 | 마이크로 서비스(통합 이벤트) 간 이벤트 기반 통신 구현
+description: 컨테이너화된 .NET 애플리케이션용 .NET Microservices 아키텍처 | 마이크로 서비스 간의 이벤트 기반 통신을 구현하기 위해 통합 이벤트를 이해합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
-ms.openlocfilehash: 6a365c284d66ea24a9bb4caae51c63f22c79877b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.date: 10/02/2018
+ms.openlocfilehash: 844d4bd8ac18bc31b5abeff5882df1f9a4acaab5
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194048"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53147264"
 ---
 # <a name="implementing-event-based-communication-between-microservices-integration-events"></a>마이크로 서비스(통합 이벤트) 간 이벤트 기반 통신 구현
 
-앞서 설명한 대로 이벤트 기반 통신을 사용할 경우 마이크로 서비스는 비즈니스 엔터티를 업데이트할 때처럼 주목할 만한 무엇인가 발생할 때 이벤트를 게시합니다. 다른 마이크로 서비스는 해당 이벤트를 구독합니다. 마이크로 서비스가 이벤트를 수신하면 자체 비즈니스 엔터티를 업데이트할 수 있고 더 많은 이벤트가 게시되도록 할 수 있습니다. 해당 게시/구독 시스템은 일반적으로 이벤트 버스의 구현을 통해 수행됩니다. 이벤트 버스는 이벤트를 구독하고 취소하고 또 이벤트를 게시하기 위해 필요한 API를 갖춘 인터페이스로서 설계 가능합니다. 이벤트 버스는 비동기 통신을 지원하는 메시징 큐 또는 서비스 및 게시/구독 모델 같은 프로세스 간 통신 또는 메시징 서비스에 기반한 하나 이상의 구현이 가능합니다.
+앞서 설명한 대로 이벤트 기반 통신을 사용할 경우 마이크로 서비스는 비즈니스 엔터티를 업데이트할 때처럼 주목할 만한 무엇인가 발생할 때 이벤트를 게시합니다. 다른 마이크로 서비스는 해당 이벤트를 구독합니다. 마이크로 서비스가 이벤트를 수신하면 자체 비즈니스 엔터티를 업데이트할 수 있고 더 많은 이벤트가 게시되도록 할 수 있습니다. 이는 최종 일관성 개념의 핵심입니다. 해당 게시/구독 시스템은 일반적으로 이벤트 버스의 구현을 통해 수행됩니다. 이벤트 버스는 이벤트를 구독하고 취소하고 또 이벤트를 게시하기 위해 필요한 API를 갖춘 인터페이스로서 설계 가능합니다. 이벤트 버스는 비동기 통신을 지원하는 메시징 큐 또는 서비스 및 게시/구독 모델 같은 프로세스 간 통신 또는 메시징 서비스에 기반한 하나 이상의 구현이 가능합니다.
 
 다양한 서비스로 확장하는 비즈니스 트랜잭션을 구현할 이벤트를 사용하여 해당 서비스 간의 최종 일관성을 제공합니다. 결국 일관된 트랜잭션은 일련의 배포된 작업으로 구성돼 있습니다. 각 작업에서 마이크로 서비스는 비즈니스 엔터티를 업데이트하고 다음 작업을 트리거하는 이벤트를 게시합니다.
 
-![](./media/image19.PNG)
+![이벤트 버스를 통해 이벤트 기반 통신을 사용하는 카탈로그 마이크로 서비스로, 장바구니 및 추가 마이크로 서비스와의 최종 일관성을 달성합니다.](./media/image19.png)
 
-**그림 8-18**. 이벤트 버스에 기반한 이벤트 구동 통신
+**그림 6-18**. 이벤트 버스에 기반한 이벤트 구동 통신
 
-이 섹션에서는 그림 8-18에 보이는 것 같이 일반 이벤트 버스 인터페이스를 사용하여 .NET와의 통신을 구현할 수 있는 방법을 설명합니다. RabbitMQ, Azure Service Bus 또는 기타 다른 타사 오픈 소스나 상용 서비스 버스 같은 인프라 또는 다른 기술을 사용하는 다양한 잠재적인 구현이 있습니다.
+이 섹션에서는 그림 6-18에 보이는 것 같이 일반 이벤트 버스 인터페이스를 사용하여 .NET와의 통신을 구현할 수 있는 방법을 설명합니다. RabbitMQ, Azure Service Bus 또는 기타 다른 타사 오픈 소스나 상용 서비스 버스 같은 인프라 또는 다른 기술을 사용하는 다양한 잠재적인 구현이 있습니다.
 
 ## <a name="using-message-brokers-and-services-buses-for-production-systems"></a>생산 시스템을 위해 메시지 브로커나 서비스 버스 사용
 
@@ -32,6 +32,8 @@ ms.locfileid: "50194048"
 분산 개발을 더 쉽게 만드는 장기 운영 프로세스를 위한 [Sagas](https://docs.particular.net/nservicebus/sagas/) 같이 고수준의 추상적 개념과 더 풍성한 기능을 요구하는 경우, NServiceBus, MassTransit, Brighter 같은 기타 상업용 및 오픈소스 서비스 버스는 평가할 만한 가치가 있습니다. 이 경우 사용할 추상적 개념과 API는 일반적으로 사용자 자신의 추상적 개념([eShopOnContainers에 제공되는 단순 이벤트 버스 추상적 개념](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/BuildingBlocks/EventBus/EventBus/Abstractions/IEventBus.cs)과 같은)이 아닌 고수준의 서비스 버스에서 제공하는 추상적 개념이 됩니다. 이를 위해 [NServiceBus를 사용하여 포크된 eShopOnContainers](https://go.particular.net/eShopOnContainers)(특정 소프트웨어에 의해 구현된 추가 파생 샘플) 연구 가능
 
 물론, RabbitMQ 및 Docker 같은 저수준의 기술을 기반으로 한 사용자 고유의 서비스 버스 기능은 항상 빌드할 수 있지만 "항목을 새로 개발하기 위해" 필요한 작업은 사용자 지정 엔터프라이즈 응용 프로그램에 지나치게 높은 비용이 들 수 있습니다.
+
+다시 말하면: eShopOnContainers 샘플에 소개된 샘플 이벤트 버스 추상화 및 구현은 개념 증명으로만 사용하기 위한 것입니다. 현재 섹션에 설명된 대로 비동기 및 이벤트 기반 통신을 원하는 경우 프로덕션 요구 사항에 가장 적합한 서비스 버스 제품을 선택해야 합니다.
 
 ## <a name="integration-events"></a>통합 이벤트
 
@@ -62,11 +64,11 @@ public class ProductPriceChangedIntegrationEvent : IntegrationEvent
 
 ## <a name="the-event-bus"></a>이벤트 버스
 
-이벤트 버스는 그림 8-19에 나와 있는 것 처럼 서로를 명확히 인식하기 위한 구성 요소를 요구 하지 않고 마이크로 서비스 간의 게시/구독-스타일 통신을 허용 합니다.
+이벤트 버스는 그림 6-19에 나와 있는 것처럼 서로를 명확히 인식하기 위한 구성 요소를 요구하지 않고 마이크로 서비스 간의 게시/구독 스타일 통신을 허용합니다.
 
-![](./media/image20.png)
+![기본 pub/sub 패턴, 마이크로 서비스 A는 게시자가 susbcribers를 알 필요 없이, 마이크로 서비스 B와 C를 susbcribing 마이크로 서비스에 배포하는 이벤트 버스에 게시합니다.](./media/image20.png)
 
-**그림 8-19**. 이벤트 버스를 사용한 게시/구독 기본 사항
+**그림 6-19**. 이벤트 버스를 사용한 게시/구독 기본 사항
 
 이벤트 버스는 관찰자 패턴 및 게시-구독 패턴과 관련이 있습니다.
 
@@ -74,9 +76,9 @@ public class ProductPriceChangedIntegrationEvent : IntegrationEvent
 
 [관찰자 패턴](https://en.wikipedia.org/wiki/Observer_pattern)에서, 기본 개체(관찰 가능한 객체라고도 함)가 관련 정보(이벤트)를 관심 있는 다른 개체(관찰자 라고도 함)에게 알려줍니다.
 
-### <a name="publish-subscribe-pubsub-pattern"></a>게시-구독(Pub/Sub) 패턴 
+### <a name="publishsubscribe-pubsub-pattern"></a>게시-구독(Pub/Sub) 패턴 
 
-[Pub/Sub 패턴](https://msdn.microsoft.com/library/ff649664.aspx)의 목적은 관찰자 패턴과 동일합니다. 특정 이벤트가 발생할 경우 다른 서비스에 알립니다. 하지만 관찰자 패턴과 Pub/Sub 패턴 간에는 중요한 차이가 있습니다. 관찰자 패턴에서는 관찰 가능 객체가 직접 관찰자에게 브로드캐스트를 수행함으로써 서로를 “알게”됩니다. 하지만 Pub/Sub 패턴을 사용할 경우 게시자 및 구독자 모두 알고 있는 브로커 또는 메시지 브로커 또는 이벤트 버스라는 세 번째 구성 요소가 있습니다. 따라서 Pub/Sub 패턴을 사용 하는 경우 게시자와 구독자는 앞서 언급한 이벤트 버스 또는 메시지 브로커 덕분에 정확하게 분리됩니다.
+[게시/구독 패턴](https://msdn.microsoft.com/library/ff649664.aspx)의 목적은 관찰자 패턴과 동일합니다. 특정 이벤트가 발생할 경우 다른 서비스에 알립니다. 하지만 관찰자 패턴과 Pub/Sub 패턴 간에는 중요한 차이가 있습니다. 관찰자 패턴에서는 관찰 가능 객체가 직접 관찰자에게 브로드캐스트를 수행함으로써 서로를 “알게”됩니다. 하지만 Pub/Sub 패턴을 사용할 경우 게시자 및 구독자 모두 알고 있는 브로커 또는 메시지 브로커 또는 이벤트 버스라는 세 번째 구성 요소가 있습니다. 따라서 Pub/Sub 패턴을 사용 하는 경우 게시자와 구독자는 앞서 언급한 이벤트 버스 또는 메시지 브로커 덕분에 정확하게 분리됩니다.
 
 ### <a name="the-middleman-or-event-bus"></a>매개자 또는 이벤트 버스 
 
@@ -88,15 +90,15 @@ public class ProductPriceChangedIntegrationEvent : IntegrationEvent
 
 -   하나 이상의 구현입니다.
 
-그림 8-19에서는 응용 프로그램의 관점에서 이벤트 버스가 어떻게 Pub/Sub 채널에 불과한지 알 수 있습니다. 이 비동기 통신을 구현하는 방법은 달라질 수 있습니다. 환경 요구 사항에 따라 두 요구 사항(예를 들어, 생산 대 개발 환경)을 서로 교체할 수 있도록 다양한 구현 방법을 가질 수 있습니다.
+그림 6-19에서는 애플리케이션의 관점에서 이벤트 버스가 어떻게 Pub/Sub 채널에 불과한지 알 수 있습니다. 이 비동기 통신을 구현하는 방법은 달라질 수 있습니다. 환경 요구 사항에 따라 두 요구 사항(예를 들어, 생산 대 개발 환경)을 서로 교체할 수 있도록 다양한 구현 방법을 가질 수 있습니다.
 
-그림 8-20에서는 RabbitMQ, Azure Service Bus 또는 다른 이벤트/메시지 브로커 같은 메시징 인프라 기술을 기반으로 다중 구현을 통해 이벤트 버스의 추상적 개념을 확인할 수 있습니다. 
+그림 6-20에서는 RabbitMQ, Azure Service Bus 또는 다른 이벤트/메시지 브로커 같은 메시징 인프라 기술을 기반으로 다중 구현을 통해 이벤트 버스의 추상적 개념을 확인할 수 있습니다.
 
-![](./media/image21.png)
+![RabbitMQ Azure Service bus 등 여러 기술로 구현할 수 있도록 인터페이스를 통해 이벤트 버스를 정의하는 것이 좋습니다.](./media/image21.png)
 
-**그림 8- 20.** 이벤트 버스의 다중 구현
+**그림 6-20.** 이벤트 버스의 다중 구현
 
-그러나 전에 언급 한 것 처럼 고유한 추상적 개념(이벤트 버스 인터페이스) 사용은 추상적 개념의 지원을 받는 기본 이벤트 버스 기능이 필요한 경우에만 유용합니다. 더 풍부한 서비스 버스 기능이 필요하면 고유한 추상적 개념 대신에 선호하는 상업용 서비스 버스가 제공하는 추상적 개념과 API를 사용해야 할지도 모릅니다. 
+그러나 전에 언급 한 것 처럼 고유한 추상적 개념(이벤트 버스 인터페이스) 사용은 추상적 개념의 지원을 받는 기본 이벤트 버스 기능이 필요한 경우에만 유용합니다. 더 풍부한 서비스 버스 기능이 필요하면 고유한 추상적 개념 대신에 선호하는 상업용 서비스 버스가 제공하는 추상적 개념과 API를 사용해야 할지도 모릅니다.
 
 ### <a name="defining-an-event-bus-interface"></a>이벤트 버스 인터페이스 정의
 
@@ -127,7 +129,6 @@ public interface IEventBus
 
 `Subscribe` 메서드(인수에 따라 몇 가지 구현이 있을 수 있습니다)는 이벤트를 수신하려는 마이크로 서비스에서 사용됩니다. 이 메서드는 두 개의 인수를 갖습니다. 첫 번째는 (`IntegrationEvent`)을 구독할 통합 이벤트입니다. 두 번째 인수는 `IIntegrationEventHandler<T>`로 명명된 통합 이벤트 처리기(또는 콜백 메서드)로서, 수신기 마이크로 서비스가 해당 통합 이벤트 메시지를 수신할 때 실행됩니다.
 
-
 >[!div class="step-by-step"]
-[이전](database-server-container.md)
-[다음](rabbitmq-event-bus-development-test-environment.md)
+>[이전](database-server-container.md)
+>[다음](rabbitmq-event-bus-development-test-environment.md)
