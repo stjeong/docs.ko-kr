@@ -1,5 +1,6 @@
 ---
-title: 정규식의 역행 검사
+title: .NET 정규식의 역행 검사
+description: 정규식 패턴 일치에서 역추적을 제어하는 방법을 알아봅니다.
 ms.date: 11/12/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -18,12 +19,13 @@ helpviewer_keywords:
 ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 343249f5411d4e5c2335446e7c892b989c8033f2
-ms.sourcegitcommit: 35316b768394e56087483cde93f854ba607b63bc
+ms.custom: seodec18
+ms.openlocfilehash: 3a61c65b108cba6bb256949a120afc76b58949f2
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52297363"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53130093"
 ---
 # <a name="backtracking-in-regular-expressions"></a>정규식의 역행 검사
 <a name="top"></a> 역추적은 정규식 패턴에 선택적인 [수량자](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) 또는 [교체 구문](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)이 포함되어 있고 정규식 엔진이 일치 항목을 계속 검색하기 위해 이전에 저장된 상태로 되돌아갈 때 발생합니다. 역추적은 정규식 성능의 핵심입니다. 역추적을 사용하면 식의 성능과 유연성을 높일 수 있으며 매우 복잡한 패턴도 검색할 수 있습니다. 하지만 이러한 장점에는 단점이 수반됩니다. 역추적은 종종 정규식 엔진의 성능에 영향을 주는 가장 중요한 단일 요소입니다. 다행히도 개발자는 정규식 엔진의 동작과 역추적 사용 방식을 제어할 수 있습니다. 이 항목에서는 역추적의 작동 방식 및 역추적을 제어할 수 있는 방법에 대해 설명합니다.  
@@ -133,7 +135,7 @@ ms.locfileid: "52297363"
 > [!IMPORTANT]
 >  정규식이 역추적에 의존하는 경우에는 항상 시간 제한 간격을 설정하는 것이 좋습니다.  
   
- <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> 예외는 정규식이 지정된 시간 제한 간격 내에 일치 항목을 찾지 못했음을 나타내지만, 예외가 throw된 이유를 나타내지는 않습니다. 과도한 역추적이 원인일 수 있지만, 예외가 throw된 시점의 시스템 부하에서 시간 제한 간격이 너무 낮게 설정되었을 가능성도 있습니다. 예외를 처리할 때 입력 문자열을 포함한 다른 일치 항목을 버리거나 시간 제한 간격을 늘리고 일치 검사 작업을 재시도하는 방법 중에서 선택할 수 있습니다.  
+ <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> 예외는 정규식 엔진이 지정된 시간 제한 간격 내에 일치 항목을 찾지 못했음을 나타내지만, 예외가 throw된 이유를 나타내지는 않습니다. 과도한 역추적이 원인일 수 있지만, 예외가 throw된 시점의 시스템 부하에서 시간 제한 간격이 너무 낮게 설정되었을 가능성도 있습니다. 예외를 처리할 때 입력 문자열을 포함한 다른 일치 항목을 버리거나 시간 제한 간격을 늘리고 일치 검사 작업을 재시도하는 방법 중에서 선택할 수 있습니다.  
   
  예를 들어, 다음 코드는 <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> 생성자를 호출하여 1초의 시간 제한 값으로 <xref:System.Text.RegularExpressions.Regex> 개체를 인스턴스화합니다. 줄의 끝에 하나 이상의 "a" 문자가 포함된 하나 이상의 시퀀스와 일치하는 정규식 패턴 `(a+)+$`는 과도한 역추적의 대상이 됩니다. <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> 이 throw되는 경우, 이 예제에서는 시간 제한 값을 최대 간격인 3초까지 늘립니다. 그 후에는 패턴 일치를 찾는 시도를 취소합니다.  
   

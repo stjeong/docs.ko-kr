@@ -1,5 +1,6 @@
 ---
 title: .NET의 정규식에 대한 모범 사례
+description: .NET에서 효율적이고 효과적인 정규식을 만드는 방법을 알아봅니다.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,12 +12,13 @@ helpviewer_keywords:
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 271042fc167331def9e427cd4fc8b510e5f2f32e
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.custom: serodec18
+ms.openlocfilehash: 02847a813566c4675f7df2c88fa2e4e1f6138ecb
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925726"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53152814"
 ---
 # <a name="best-practices-for-regular-expressions-in-net"></a>.NET의 정규식에 대한 모범 사례
 <a name="top"></a>.NET의 정규식 엔진은 리터럴 텍스트에 대한 비교 및 검색 대신 패턴 일치를 기반으로 텍스트를 처리하는 완벽한 기능을 갖춘 강력한 도구입니다. 대부분의 경우 신속하고 효율적인 방식으로 패턴 일치가 수행됩니다. 하지만 일부 경우에는 정규식 엔진의 실행 속도가 매우 느리게 보일 수 있습니다. 심한 경우에는 입력 크기가 비교적 적은데도 처리하는 데 시간이 몇 시간 또는 며칠씩 걸려서 응답이 멎은 것처럼 보일 수도 있습니다.  
@@ -218,7 +220,7 @@ ms.locfileid: "42925726"
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack4.cs#11)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack4.vb#11)]  
   
- .NET의 정규식 언어에는 중첩된 수량자를 제거하는 데 사용할 수 있는 다음과 같은 언어 요소가 포함되어 있습니다. 자세한 내용은 [그룹화 구문](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md)을 참조하세요.  
+ .NET의 정규식 언어에는 중첩된 수량자를 제거하는 데 사용할 수 있는 다음과 같은 언어 요소가 포함되어 있습니다. 자세한 내용은 [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md)을 참조하세요.  
   
 |언어 요소|설명|  
 |----------------------|-----------------|  
@@ -283,7 +285,7 @@ ms.locfileid: "42925726"
   
 -   <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> 옵션을 사용합니다. 이 옵션은 정규식 패턴에서 모든 명명되지 않은 캡처 또는 암시적인 캡처를 비활성화합니다. 이 옵션을 사용하면 `(?<name>subexpression)` 언어 요소로 정의된 명명된 그룹과 일치하는 부분 문자열만 캡처할 수 있습니다. <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> 플래그는 `options` 클래스 생성자의 <xref:System.Text.RegularExpressions.Regex> 매개 변수에 전달하거나 `options` 정적 일치 메서드의 <xref:System.Text.RegularExpressions.Regex> 매개 변수에 전달할 수 있습니다.  
   
--   `n` 언어 요소에서 `(?imnsx)` 옵션을 사용합니다. 이 옵션은 정규식 패턴에서 요소가 나타나는 지점으로부터 모든 명명되지 않은 캡처 또는 암시적인 캡처를 비활성화합니다. 캡처는 패턴의 끝에 도달하거나 `(-n)` 옵션으로 명명되지 않은 캡처 또는 암시적인 캡처가 활성화될 때가지 비활성화됩니다. 자세한 내용은 [기타 구문](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md)을 참조하세요.  
+-   `n` 언어 요소에서 `(?imnsx)` 옵션을 사용합니다. 이 옵션은 정규식 패턴에서 요소가 나타나는 지점으로부터 모든 명명되지 않은 캡처 또는 암시적인 캡처를 비활성화합니다. 캡처는 패턴의 끝에 도달하거나 `(-n)` 옵션으로 명명되지 않은 캡처 또는 암시적인 캡처가 활성화될 때가지 비활성화됩니다. 자세한 내용은 [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md)을 참조하세요.  
   
 -   `n` 언어 요소에서 `(?imnsx:subexpression)` 옵션을 사용합니다. 이 옵션은 `subexpression`에서 모든 명명되지 않은 캡처 또는 암시적인 캡처를 비활성화합니다. 명명되지 않은 또는 암시적인 중첩된 캡처링 그룹에 의한 캡처도 함께 비활성화됩니다.  
   

@@ -1,17 +1,17 @@
 ---
 title: DDD 중심 마이크로 서비스 설계
-description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | DDD 중심 마이크로 서비스 설계
+description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서비스 아키텍처 | DDD 지향 주문 마이크로 서비스 및 해당 애플리케이션 계층의 디자인을 이해합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/06/2017
-ms.openlocfilehash: 4d6810e03414e8462dd90c4da686476da0b66032
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.date: 10/08/2018
+ms.openlocfilehash: 65a1a58d0c70c7e788aea420006c1ad617628f93
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183505"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53145610"
 ---
-# <a name="designing-a-ddd-oriented-microservice"></a>DDD 중심 마이크로 서비스 설계
+# <a name="design-a-ddd-oriented-microservice"></a>DDD 지향 마이크로 서비스 디자인
 
 DDD(도메인 기반 설계)는 사용 사례와 관련하여 현실의 비즈니스에 근거한 모델링을 대표합니다. 응용 프로그램 빌드의 컨텍스트에서 DDD는 문제를 도메인으로 설명합니다. 경계가 정해진 컨텍스트로 독립적인 문제 영역을 설명하며(각 바인딩된 컨텍스트가 마이크로 서비스에 상관됨) 문제 해결에 관해 설명하는 공통 언어를 강조합니다. 내부 구현 지원을 위해 많은 모델([anemic-도메인 모델](https://martinfowler.com/bliki/AnemicDomainModel.html) 없음), 값 개체, 집계 및 집계 루트(또는 루트 엔터티) 규칙이 있는 도메인 엔터티처럼 여러 기술적 개념과 패턴도 제시합니다. 이 섹션에서는 이러한 내부 패턴의 설계와 구현을 소개합니다.
 
@@ -33,21 +33,21 @@ DDD(도메인 기반 설계)는 사용 사례와 관련하여 현실의 비즈�
 
 예를 들어 데이터베이스에서 엔터티를 로드할 수 있습니다. 그런 다음, 이 정보의 일부나, 다른 엔터티의 추가 데이터를 포함한 정보의 집계를 REST Web API를 통해 클라이언트 UI로 보낼 수 있습니다. 여기서의 핵심은 도메인 개체가 도메인 모델 계층 안에 포함된다는 점이며 프레젠테이션 계층처럼 자신이 속하지 않은 다른 영역으로 전파되서는 안 됩니다.
 
-또한 집계 루트(루트 엔터티)에서 제어되는 항상 유효한 엔터티([도메인 모델 계층의 유효성 검사 설계](#designing-validations-in-the-domain-model-layer) 섹션 참조)가 필요합니다. 따라서 엔터티는 클라이언트 뷰에 바인딩되어서는 안됩니다. UI 수준에서는 일부 데이터가 여전히 유효성 검사되지 않을 수 있기 때문입니다. 이 때문에 ViewModel이 있습니다. ViewModel은 프레젠테이션 계층에만 필요한 데이터 모델입니다. 도메인 엔터티는 ViewModel에 직접 속해 있지 않습니다. 대신 ViewModel과 도메인 엔터티 사이에 상호 변환이 필요합니다.
+또한 집계 루트(루트 엔터티)에서 제어되는 항상 유효한 엔터티([도메인 모델 계층의 유효성 검사 설계](domain-model-layer-validations.md) 섹션 참조)가 필요합니다. 따라서 엔터티는 클라이언트 뷰에 바인딩되어서는 안됩니다. UI 수준에서는 일부 데이터가 여전히 유효성 검사되지 않을 수 있기 때문입니다. 이 때문에 ViewModel이 있습니다. ViewModel은 프레젠테이션 계층에만 필요한 데이터 모델입니다. 도메인 엔터티는 ViewModel에 직접 속해 있지 않습니다. 대신 ViewModel과 도메인 엔터티 사이에 상호 변환이 필요합니다.
 
 복잡성을 해결할 때는 도메인 모델을 엔터티 그룹(집계)과 관련한 모든 고정 및 규칙이 단일 진임 지점 또는 게이트인 집계 루트를 통해 수행되도록 하는 집계 루트에서 제어하는 것이 중요합니다. 
 
-그림 9-5는 eShopOnContainers 응용 프로그램에서 계층화된 디자인을 구현하는 방법을 보여 줍니다.
+그림 7-5는 eShopOnContainers 애플리케이션에서 계층화된 디자인을 구현하는 방법을 보여줍니다.
 
-![](./media/image6.png)
+![Ordering과 같은 DDD 마이크로 서비스의 세 계층. 각 계층은 VS 프로젝트로 애플리케이션 계층은 Ordering.API, 도메인 계층은 Ordering.Domain, 인프라 계층은 Ordering.Infrastructure입니다.](./media/image6.png)
 
-**그림 9-5**. eShopOnContainers 주문 마이크로 서비스의 DDD 계층
+**그림 7-5**. eShopOnContainers 주문 마이크로 서비스의 DDD 계층
 
-각 계층이 특정 다른 계층과만 통신하도록 시스템을 설계하려 합니다. 계층이 다른 클래스 라이브러리로 구현된다면 라이브러리 간에 어떠한 종속성이 있는지 분명히 식별할 수 있기 때문에 시행이 더 쉬울 것입니다. 예를 들어, 도메인 모델 계층은 다른 계층에 대해 종속성이 있어서는 안됩니다(도메인 모델 클래스는 일반 기존 CLR 개체이거나 [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), 클래스여야 함). 그림 9-6에서 보듯 **Ordering.Domain** 계층 라이브러리에는 .NET Core 라이브러리 또는 NuGet 패키지에 대한 종속성만 있고 데이터 라이브러리나 지속 라이브러리 같은 다른 사용자 지정 라이브러리에는 종속성이 없습니다.
+각 계층이 특정 다른 계층과만 통신하도록 시스템을 설계하려 합니다. 계층이 다른 클래스 라이브러리로 구현된다면 라이브러리 간에 어떠한 종속성이 있는지 분명히 식별할 수 있기 때문에 시행이 더 쉬울 것입니다. 예를 들어, 도메인 모델 계층은 다른 계층에 대해 종속성이 있어서는 안됩니다(도메인 모델 클래스는 일반 기존 CLR 개체이거나 [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), 클래스여야 함). 그림 7-6에서 보듯이 **Ordering.Domain** 계층 라이브러리에는 .NET Core 라이브러리 또는 NuGet 패키지에 대한 종속성만 있고 데이터 라이브러리나 지속 라이브러리 같은 다른 사용자 지정 라이브러리에는 종속성이 없습니다.
 
-![](./media/image7.PNG)
+![Ordering.Domain 종속성의 솔루션 탐색기 보기는 .NET Core 라이브러리에 따라 다릅니다.](./media/image7.png)
 
-**그림 9-6**. 라이브러리로 구현되는 계층은 레이어 간의 종속성을 더 잘 제어할 수 있습니다.
+**그림 7-6**. 라이브러리로 구현되는 계층은 레이어 간의 종속성을 더 잘 제어할 수 있습니다.
 
 ### <a name="the-domain-model-layer"></a>도메인 모델 계층
 
@@ -85,26 +85,25 @@ Entity Framework Core와 같은 대부분의 최신 ORM 프레임워크에서는
 
 앞에서 언급한 [지속성 무시](https://deviq.com/persistence-ignorance/) 및 [인프라 무시](https://ayende.com/blog/3137/infrastructure-ignorance) 원칙에 따라 인프라 계층은 도메인 모델 계층을 "오염" 시키지 않아야 합니다. 프레임워크에 대한 고정 종속성을 지양함으로써 도메인 모델 엔터티 클래스는 데이터 유지에 사용되는 인프라(EF 또는 기타 프레임워크)와는 무관하게 유지해야 합니다. 도메인 모델 계층 클래스 라이브러리에는 자체 도메인 코드인 소프트웨어의 핵심을 구현하는 [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object) 엔터티 소프트웨어만 있어야 하며 인프라 기술과는 완전히 분리되어야 합니다.
 
-따라서 그림 9-7에서처럼 계층 또는 클래스 라이브러리와 프로젝트는 결과적으로 도메인 모델 계층(라이브러리)에 종속되어야 하며 그 반대의 경우는 아닙니다.
+따라서 그림 7-7에서와 같이 계층 또는 클래스 라이브러리와 프로젝트는 결과적으로 도메인 모델 계층(라이브러리)에 종속되어야 하며 그 반대의 경우는 아닙니다.
 
-![](./media/image8.png)
+![DDD 서비스의 종속성, 애플리케이션 계층은 도메인 및 인프라에 따라 다르며 인프라는 도메인에 종속되지만 도메인은 모든 계층에 종속되지 않습니다.](./media/image8.png)
 
-**그림 9-7**. DDD의 계층 간 종속성
+**그림 7-7**. DDD의 계층 간 종속성
 
 이 계층 설계는 각각의 마이크로 서비스마다 독립적입니다. 앞서 언급한 것처럼 DDD 패턴에 따라 가장 복잡한 마이크로 서비스를 구현할 수 있고 더 간단한 데이터 중심 마이크로 서비스(단일 계층의 간단한 CRUD)는 더 간단한 방법으로 구현합니다.
 
 #### <a name="additional-resources"></a>추가 자료
 
--   **DevIQ. 지속성 무시 원칙**
-    [*https://deviq.com/persistence-ignorance/*](https://deviq.com/persistence-ignorance/)
+- **DevIQ. 지속성 무시 원칙** \
+  [*https://deviq.com/persistence-ignorance/*](https://deviq.com/persistence-ignorance/)
 
--   **Oren Eini. 인프라 무시**
-    [*https://ayende.com/blog/3137/infrastructure-ignorance*](https://ayende.com/blog/3137/infrastructure-ignorance)
+- **Oren Eini. 인프라 무시** \
+  [*https://ayende.com/blog/3137/infrastructure-ignorance*](https://ayende.com/blog/3137/infrastructure-ignorance)
 
--   **Angel Lopez. 도메인 기반 디자인의 계층화된 아키텍처**
-    [*https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/*](https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/)
-
+- **Angel Lopez. 도메인 기반 디자인의 계층화된 아키텍처** \
+  [*https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/*](https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/)
 
 >[!div class="step-by-step"]
-[이전](cqrs-microservice-reads.md)
-[다음](microservice-domain-model.md)
+>[이전](cqrs-microservice-reads.md)
+>[다음](microservice-domain-model.md)

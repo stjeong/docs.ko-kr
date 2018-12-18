@@ -1,5 +1,6 @@
 ---
 title: .NET에서 문자열 사용에 대한 모범 사례
+description: .NET 애플리케이션에서 문자열을 효율적으로 사용하는 방법을 알아봅니다.
 ms.date: 09/13/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -19,12 +20,13 @@ helpviewer_keywords:
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6114553c6bcdac8521c80c10f470d4c38b15e738
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.custom: seodec18
+ms.openlocfilehash: f5ed250df1c8d4d96dee5a0561f952193078ddda
+ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47080340"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53150981"
 ---
 # <a name="best-practices-for-using-strings-in-net"></a>.NET에서 문자열 사용에 대한 모범 사례
 <a name="top"></a> .NET에서는 지역화된 응용 프로그램과 전역화된 응용 프로그램을 개발하기 위한 광범위한 지원을 제공하고 문자열 정렬 및 표시와 같은 일반적인 작업을 수행할 때 현재 문화권이나 특정 문화권의 규칙을 쉽게 적용할 수 있습니다. 그러나 문자열 정렬 및 비교가 항상 문화권이 구분되는 작업은 아닙니다. 예를 들어 응용 프로그램에서 내부적으로 사용되는 문자열은 대기 모든 문화권에서 동일하게 처리해야 합니다. XML 태그, HTML 태그, 사용자 이름, 파일 경로 및 시스템 개체 이름과 같이 문화권을 구분하지 않는 문자열 데이터가 문화권이 구분되는 것처럼 해석되면 응용 프로그램 코드에는 감지하기 어려운 버그, 성능 저하 및 경우에 따라 보안 문제가 발생할 수 있습니다.  
@@ -146,13 +148,13 @@ ms.locfileid: "47080340"
   
 -   <xref:System.String.CompareTo%2A?displayProperty=nameWithType> 오버로드.  
   
--   기본 <xref:System.String.StartsWith%28System.String%29?displayProperty=nameWithType> 메서드 및 `null`<xref:System.Globalization.CultureInfo> 매개 변수를 포함하는 <xref:System.String.StartsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> 메서드.  
+-   기본 <xref:System.String.StartsWith%28System.String%29?displayProperty=nameWithType> 메서드 및 <xref:System.String.StartsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> null `null`<xref:System.Globalization.CultureInfo> 오버로드.  
   
--   기본 <xref:System.String.EndsWith%28System.String%29?displayProperty=nameWithType> 메서드 및 `null`<xref:System.Globalization.CultureInfo> 매개 변수를 포함하는 <xref:System.String.EndsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> 메서드.  
+-   기본 <xref:System.String.EndsWith%28System.String%29?displayProperty=nameWithType> 메서드 및 <xref:System.String.EndsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> null `null`<xref:System.Globalization.CultureInfo> 오버로드.  
   
--   <xref:System.String>을 검색 매개 변수로 사용하고 <xref:System.StringComparison> 매개 변수를 포함하지 않는 <xref:System.String.IndexOf%2A?displayProperty=nameWithType> 오버로드.  
+-   <xref:System.String.IndexOf%2A?displayProperty=nameWithType> 을 검색 매개 변수로 사용하고 <xref:System.String> 매개 변수를 포함하지 않는 <xref:System.StringComparison> 오버로드.  
   
--   <xref:System.String>을 검색 매개 변수로 사용하고 <xref:System.StringComparison> 매개 변수를 포함하지 않는 <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> 오버로드.  
+-   <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> 을 검색 매개 변수로 사용하고 <xref:System.String> 매개 변수를 포함하지 않는 <xref:System.StringComparison> 오버로드.  
   
  모든 경우에 메서드 호출의 의도를 분명하게 나타내도록 <xref:System.StringComparison> 매개 변수를 포함하는 오버로드를 호출하는 것이 좋습니다.  
   
@@ -362,7 +364,7 @@ ms.locfileid: "47080340"
  [!code-csharp[Conceptual.Strings.BestPractices#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/persistence.cs#21)]
  [!code-vb[Conceptual.Strings.BestPractices#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/persistence.vb#21)]  
   
- 그러나 <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 및 <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>에 대한 호출에서 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 속성을 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>로 바꾸면 다음 출력과 같이 영구 날짜 및 시간 데이터가 성공적으로 복원됩니다.  
+ 그러나 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> 및 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> 에 대한 호출에서 <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> 속성을 <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>로 바꾸면 다음 출력과 같이 영구 날짜 및 시간 데이터가 성공적으로 복원됩니다.  
   
 ```  
 06.05.1758 21:26  
