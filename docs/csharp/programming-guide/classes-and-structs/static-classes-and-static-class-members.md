@@ -1,5 +1,6 @@
 ---
-title: 정적 클래스 및 정적 클래스 멤버(C# 프로그래밍 가이드)
+title: 정적 클래스 및 정적 클래스 멤버 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, static members
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - C# language, static classes
 - static class members [C#]
 ms.assetid: 235614b5-1371-4dbd-9abd-b406a8b0298b
-ms.openlocfilehash: 6709344002ebc433c8d13d9cfa48a179fae9991b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ef1b5262e8cb9906fb0e0d0e8cfef9257f1223a4
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125995"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243202"
 ---
 # <a name="static-classes-and-static-class-members-c-programming-guide"></a>정적 클래스 및 정적 클래스 멤버(C# 프로그래밍 가이드)
 [정적](../../../csharp/language-reference/keywords/static.md) 클래스는 기본적으로 비정적 클래스와 동일하지만, 정적 클래스는 인스턴스화할 수 없다는 한 가지 차이점이 있습니다. 즉, [new](../../../csharp/language-reference/keywords/new.md) 키워드를 사용하여 클래스 형식의 변수를 만들 수 없습니다. 인스턴스 변수가 없기 때문에 클래스 이름 자체를 사용하여 정적 클래스의 멤버에 액세스합니다. 예를 들어 public 메서드 `MethodA`를 포함하는 `UtilityClass`라는 정적 클래스가 있는 경우 다음 예제와 같이 메서드를 호출합니다.  
@@ -55,7 +56,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  정적 클래스는 봉인되므로 상속할 수 없습니다. <xref:System.Object>를 제외하고 어떤 클래스에서도 상속할 수 없습니다. 정적 클래스는 인스턴스 생성자를 포함할 수 없지만 정적 생성자를 포함할 수 있습니다. 또한 클래스에 특수한 초기화가 필요한 정적 멤버가 포함된 경우 비정적 클래스에서 정적 생성자도 정의해야 합니다. 자세한 내용은 [정적 생성자](../../../csharp/programming-guide/classes-and-structs/static-constructors.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  온도를 섭씨에서 화씨로, 화씨에서 섭씨로 변환하는 두 메서드를 포함하는 정적 클래스의 예는 다음과 같습니다.  
   
  [!code-csharp[csProgGuideObjects#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-classes-and-static-class-members_1.cs)]  
