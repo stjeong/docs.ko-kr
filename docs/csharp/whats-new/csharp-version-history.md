@@ -3,16 +3,28 @@ title: C#의 역사 - C# 가이드
 description: 이 언어의 초창기 버전은 어떤 모습이었으며 이후 어떻게 변했는가?
 author: erikdietrich
 ms.date: 09/20/2017
-ms.openlocfilehash: e58f719031cc614f728226232c09f54f6b874475
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ad05e803000393800764a4b3aa1bf6288f765fd4
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145334"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245602"
 ---
 # <a name="the-history-of-c"></a>C#의 역사 #
 
-이 언어의 초창기 구현은 어떤 모습이었는가? 이후에 몇 년간 어떻게 진화했는가?
+이 문서에서는 C# 언어의 각 주요 릴리스에 대한 기록을 제공합니다. C# 팀은 계속해서 새로운 기능을 혁신하고 추가하고 있습니다. 예정된 릴리스에서 고려되는 기능을 비롯한 자세한 언어 기능 상태는 GitHub의 [dotnet/roslyn 리포지토리에서](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md) 확인할 수 있습니다.
+
+> [!IMPORTANT]
+> C # 언어는 C# 사양이 일부 기능에 대해 *표준 라이브러리*로 정의하는 형식 및 메서드를 사용합니다. .NET 플랫폼은 다양한 패키지에서 이러한 유형과 메서드를 제공합니다. 한 가지 예는 예외 처리입니다. 모든 `throw` 문 또는 식은 throw된 개체가 <xref:System.Exception>에서 파생되는지 확인합니다. 마찬가지로 모든 `catch`는 발견되는 형식이 <xref:System.Exception>에서 파생되는지 확인합니다. 각 버전은 새 요구 사항을 추가할 수 있습니다. 이전 환경에서 최신 언어 기능을 사용하려면 특정 라이브러리를 설치해야 합니다. 이러한 종속성은 각 특정 버전에 대한 페이지에서 설명합니다. 이 종속성의 배경은 [언어 및 라이브러리 간 관계](relationships-between-language-and-library.md)에서 자세히 알아볼 수 있습니다.
+
+C# 빌드 도구는 최신 주요 언어 릴리스가 기본 언어 버전으로 고려합니다. 주요 릴리스 사이에는 이 섹션의 다른 문서에서 상세히 설명한 포인트 릴리스가 있을 수 있습니다. 포인트 릴리스에서 최신 기능을 사용하려면 [컴파일러 언어 버전을 구성](../language-reference/configure-language-version.md)하고 해당 버전을 선택해야 합니다. C# 7.0 이후 세 가지 포인트 릴리스가 있습니다.
+
+* [C# 7.3](csharp-7-3.md):
+  - C# 7.3은 현재 [Visual Studio 2017 버전 15.7](https://visualstudio.microsoft.com/vs/whatsnew/) 및 [.NET Core 2.1 SDK 2.1.300 RC1](../../core/whats-new/index.md)에서 사용 가능합니다.
+* [C# 7.2](csharp-7-2.md):
+  - C# 7.2는 현재 [Visual Studio 2017 버전 15.5](https://visualstudio.microsoft.com/vs/whatsnew/) 및 [.NET Core 2.0 SDK](../../core/whats-new/index.md)에서 사용 가능합니다.
+* [C# 7.1](csharp-7-1.md):
+  - 이러한 기능은 [Visual Studio 2017 버전 15.3](https://visualstudio.microsoft.com/vs/whatsnew/) 및 [.NET Core 2.0 SDK](../../core/whats-new/index.md)에 추가되었습니다.
 
 ## <a name="c-version-10"></a>C# 버전 1.0
 
@@ -113,7 +125,7 @@ C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한
 
 ### <a name="see-also"></a>참고 항목
 
-* [코드 프로젝트: C# 5.0에서 호출자 정보 특성](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
+* [코드 프로젝트: C# 5.0의 호출자 정보 특성](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 호출자 정보 특성을 사용하면 엄청난 양의 상용구 리플렉션 코드를 사용하지 않고도 실행 중인 컨텍스트에 대한 정보를 쉽게 검색할 수 있습니다. 진단 및 로깅 작업의 용도는 매우 다양합니다.
 
@@ -150,7 +162,7 @@ C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한
 - [패턴 일치](./csharp-7.md#pattern-matching)
 - [로컬 함수](./csharp-7.md#local-functions)
 - [확장된 식 본문 멤버](./csharp-7.md#more-expression-bodied-members)
-- [ref 지역 및 반환](./csharp-7.md#ref-locals-and-returns)
+- [참조 로컬 및 반환](./csharp-7.md#ref-locals-and-returns)
 
 이러한 기능에는 다음이 포함됩니다.
 

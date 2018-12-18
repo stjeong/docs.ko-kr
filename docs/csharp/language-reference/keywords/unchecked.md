@@ -1,5 +1,6 @@
 ---
-title: unchecked 키워드(C# 참조)
+title: unchecked 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - unchecked_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - unchecked keyword [C#]
 ms.assetid: 0c021f7c-923f-4b3d-a58f-55336f5ac27e
-ms.openlocfilehash: 301e054c627ae7fc9a07c55c9d2b9a7738b9fb73
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 44301333f7a36e6b0baa6ea9e089d930bb485a45
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53146707"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53238457"
 ---
 # <a name="unchecked-c-reference"></a>unchecked(C# 참조)
 
@@ -28,7 +29,7 @@ unchecked 컨텍스트에서 식이 대상 형식의 범위를 벗어난 값을 
 
 오버플로를 확인하는 데 시간이 걸리기 때문에 오버플로 위험이 없는 상황에서는 unchecked 코드를 사용하여 성능을 향상할 수 있습니다. 그러나 오버플로가 발생할 가능성이 있는 경우 checked 환경을 사용해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 샘플에서는 `unchecked` 키워드를 사용하는 방법을 보여 줍니다.
 
