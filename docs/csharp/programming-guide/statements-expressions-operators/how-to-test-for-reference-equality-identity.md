@@ -1,18 +1,19 @@
 ---
-title: '방법: 참조 일치(같음) 테스트(C# 프로그래밍 가이드)'
+title: '방법: 참조 같음(ID) 테스트 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - object identity [C#]
 - reference equality [C#]
 ms.assetid: 91307fda-267b-4fd2-a338-2aada39ee791
-ms.openlocfilehash: 4faa674f3f3d65b7c555d7feb9789637f39e9bd7
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6aa3aebdc03fc54233ac1cc027241fcb36cc8535
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125473"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237053"
 ---
-# <a name="how-to-test-for-reference-equality-identity-c-programming-guide"></a>방법: 참조 일치(같음) 테스트(C# 프로그래밍 가이드)
+# <a name="how-to-test-for-reference-equality-identity-c-programming-guide"></a>방법: 참조 같음(ID) 테스트(C# 프로그래밍 가이드)
 형식에서 참조 같음 비교를 지원하기 위해 사용자 지정 논리를 구현할 필요는 없습니다. 이 기능은 정적 <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> 메서드가 모든 형식에 대해 제공합니다.  
   
  다음 예제에서는 두 변수에 *참조 같음*이 있는지 여부, 즉 메모리의 동일한 개체를 참조하는지 여부를 확인하는 방법을 보여 줍니다.  

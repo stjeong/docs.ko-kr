@@ -1,17 +1,18 @@
 ---
-title: '#line(C# 참조)'
+title: '#line - C# 참조'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - '#line'
 helpviewer_keywords:
 - '#line directive [C#]'
 ms.assetid: 6439e525-5dd5-4acb-b8ea-efabb32ff95b
-ms.openlocfilehash: f3ebecda7761e6249656e0b9f8543ae1252b844e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5933cf04a3fc8a1e986bff95ad1f38481883a340
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524540"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244996"
 ---
 # <a name="line-c-reference"></a>#line(C# 참조)
 `#line`을 사용하면 오류 및 경고에 대한 컴파일러의 줄 번호 매기기 및 파일 이름 출력(선택 사항)을 수정할 수 있습니다.

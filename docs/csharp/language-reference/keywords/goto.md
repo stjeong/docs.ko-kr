@@ -1,5 +1,6 @@
 ---
-title: goto 문(C# 참조)
+title: goto 문 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - goto_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - goto keyword [C#]
 ms.assetid: 2c03c9c1-8119-44ef-b740-fb3d287a42fe
-ms.openlocfilehash: d4fd9f1f26b82b409d704c45e4bcf18cceef8282
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bfc997631cc147bf5718ec91a57e2995cead052f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507525"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236767"
 ---
 # <a name="goto-c-reference"></a>goto(C# 참조)
 
@@ -22,7 +23,7 @@ ms.locfileid: "43507525"
 
 `goto` 문은 많이 중첩된 루프를 회피하는 데도 유용합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 [switch](switch.md) 문에서 `goto`의 사용 방법을 보여 줍니다.
 

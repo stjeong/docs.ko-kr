@@ -1,15 +1,16 @@
 ---
-title: Main() 반환 값(C# 프로그래밍 가이드)
+title: Main() 반환 값 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 08/02/2017
 helpviewer_keywords:
 - Main method [C#], return values
 ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
-ms.openlocfilehash: ea63bedd207a9904a5f6aa656ed19469394290fa
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8337303f97a3a654f5a3718bf0714ee876a7dc9f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50205216"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242652"
 ---
 # <a name="main-return-values-c-programming-guide"></a>Main() 반환 값(C# 프로그래밍 가이드)
 
@@ -23,7 +24,7 @@ ms.locfileid: "50205216"
 
 `Main`의 반환 값을 사용하지 않는 경우 `void`를 반환하면 코드가 다소 단순해집니다. 그러나 정수를 반환하면 프로그램이 실행 파일을 호출하는 다른 프로그램 또는 스크립트에 상태 정보를 전달할 수 있습니다. `Main`의 반환 값은 프로세스에 대한 종료 코드로 처리됩니다. 다음 예제에서는 `Main`의 반환 값을 어떻게 액세스할 수 있는지를 보여 줍니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 [.NET Core](../../../core/index.md) 명령줄 도구를 사용합니다. .NET Core 명령줄 도구에 대해 잘 모르는 경우 이 [시작 항목](../../../core/tutorials/using-with-xplat-cli.md)에서 알아볼 수 있습니다.
 

@@ -1,17 +1,18 @@
 ---
-title: 익명 함수(C# 프로그래밍 가이드)
+title: 익명 함수 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - lambda expressions [C#], as anonymus functions
 - anonymous functions [C#]
 - anonymous methods [C#]
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
-ms.openlocfilehash: 90a5a71f83a7117a7468bab0d9fe9d013685ebbe
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9e0225960f16756820cdc095668cf7acfd4395cb
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515241"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242882"
 ---
 # <a name="anonymous-functions-c-programming-guide"></a>익명 함수(C# 프로그래밍 가이드)
 익명 함수는 대리자 형식이 예상되는 곳에서 항상 사용할 수 있는 “인라인” 문 또는 식입니다. 이를 사용하여 명명된 대리자를 초기화하거나 명명된 대리자 형식 대신 이를 메서드 매개 변수로 전달할 수 있습니다.  

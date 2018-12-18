@@ -1,16 +1,17 @@
 ---
-title: XML 파일 처리(C# 프로그래밍 가이드)
+title: XML 파일 처리 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML processing [C#]
 - XML [C#], processing
 ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
-ms.openlocfilehash: 1cc5925f33c2d06054e7a88c6c6f90ef026f4dee
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b5699535553629fb22e4e5789538fd9d598c9f88
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506030"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235087"
 ---
 # <a name="processing-the-xml-file-c-programming-guide"></a>XML 파일 처리(C# 프로그래밍 가이드)
 컴파일러는 문서 생성을 위해 태그가 지정되는 코드의 각 구문에 대해 ID 문자열을 생성합니다. 코드에 태그를 지정하는 방법에 대한 자세한 내용은 [문서 주석에 대한 권장 태그](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)를 참조하세요. ID 문자열은 구문을 고유하게 식별합니다. XML 파일을 처리하는 프로그램은 ID 문자열을 사용하여 문서가 적용되는 해당 .NET Framework 메타데이터/리플렉션 항목을 식별할 수 있습니다.  

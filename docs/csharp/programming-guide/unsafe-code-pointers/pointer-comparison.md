@@ -1,15 +1,16 @@
 ---
-title: 포인터 비교(C# 프로그래밍 가이드)
+title: 포인터 비교 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - pointers [C#], comparison
 ms.assetid: fcafd514-7405-4deb-8490-cc58efda5495
-ms.openlocfilehash: fa980c944159c477c333762ffad569332fba9402
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 72d9017064959c801bd2702ff585ee16b1592da6
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086641"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236793"
 ---
 # <a name="pointer-comparison-c-programming-guide"></a>포인터 비교(C# 프로그래밍 가이드)
 다음 연산자를 적용하여 임의 형식의 포인터를 비교할 수 있습니다.  
@@ -18,7 +19,7 @@ ms.locfileid: "44086641"
   
  비교 연산자는 부호 없는 정수처럼 두 피연산자의 주소를 비교합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuidePointers#16](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-comparison_1.cs)]  
   
  [!code-csharp[csProgGuidePointers#17](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-comparison_2.cs)]  

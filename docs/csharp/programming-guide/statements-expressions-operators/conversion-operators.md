@@ -1,5 +1,6 @@
 ---
-title: 변환 연산자(C# 프로그래밍 가이드)
+title: 변환 연산자 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, conversion operators
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - operators [C#], conversion
 - user-defined conversions [C#]
 ms.assetid: c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc
-ms.openlocfilehash: cbf6a83d43a1b3a69e82a35d5d0875f62422cd3f
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: a55a2148ce161deca79d8ba8e64a217e474f0284
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44183316"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236819"
 ---
 # <a name="conversion-operators-c-programming-guide"></a>변환 연산자(C# 프로그래밍 가이드)
 C#을 사용하면 프로그래머가 클래스 또는 구조체를 다른 클래스 또는 구조체나 기본 형식으로/에서 변환할 수 있도록 클래스 또는 구조체에서 변환을 선언할 수 있습니다. 변환은 연산자처럼 정의되며 변환 결과의 형식에 따라 이름이 지정됩니다. 변환할 인수의 형식이나 변환 결과의 형식 중 하나만 포함 형식이어야 하며 둘 다 포함 형식이면 안 됩니다.  

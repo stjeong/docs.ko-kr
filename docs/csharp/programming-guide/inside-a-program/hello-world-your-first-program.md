@@ -1,5 +1,6 @@
 ---
-title: Hello World -- 프로그램 처음 만들기(C# 프로그래밍 가이드)
+title: Hello World -- 프로그램 처음 만들기 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - cs.program
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - examples [C#], Hello World
 - Hello World example [C#]
 ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
-ms.openlocfilehash: 90f0ec6b88a2822cb3429948681c76c70f3d3f18
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 40c869d267dcabf4bd209b2ee86085f899a93231
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45593051"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236390"
 ---
 # <a name="hello-world----your-first-program-c-programming-guide"></a>Hello World -- 프로그램 처음 만들기(C# 프로그래밍 가이드)
 다음 절차에서는 기존 "Hello World!" 프로그램의 C# 버전을 만듭니다. 이 프로그램은 문자열 `Hello World!`를 표시합니다.  
@@ -78,7 +79,7 @@ ms.locfileid: "45593051"
   
  `Main` 메서드의 매개 변수 `args`는 프로그램을 호출하는 데 사용된 명령줄 인수가 포함된 `string` 배열입니다. C++의 경우와는 달리 배열에 실행(exe) 파일의 이름이 포함되지 않습니다.  
   
- 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [Main() 및 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md) 및 [How to: Create and Use Assemblies Using the Command Line](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)(방법: 명령줄을 사용하여 어셈블리 만들기 및 사용)의 예제를 참조하세요.  
+ 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [Main() 및 명령줄 인수](../../../csharp/programming-guide/main-and-command-args/index.md) 및 [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)을 참조하세요.  
   
  `Main` 메서드가 끝날 때 <xref:System.Console.ReadKey%2A>를 호출하면 프로그램을 디버그 모드에서 실행할 경우 F5 키를 눌러 출력을 읽을 수 있게 될 때까지 콘솔 창이 닫히지 않습니다.  
   

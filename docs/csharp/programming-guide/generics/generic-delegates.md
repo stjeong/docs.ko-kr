@@ -1,16 +1,17 @@
 ---
-title: 제네릭 대리자(C# 프로그래밍 가이드)
+title: 제네릭 대리자 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - generics [C#], delegates
 - delegates [C#], generic
 ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
-ms.openlocfilehash: 7596ace0ea404cc345d73c0979fa7bd03a26b047
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 56e715aa0be91c250e243a3a37195e7ee037de82
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857538"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241076"
 ---
 # <a name="generic-delegates-c-programming-guide"></a>제네릭 대리자(C# 프로그래밍 가이드)
 [대리자](../../../csharp/language-reference/keywords/delegate.md)는 자체 형식 매개 변수를 정의할 수 있습니다. 제네릭 대리자를 참조하는 코드는 다음 예제와 같이 제네릭 클래스를 인스턴스화하거나 제네릭 메서드를 호출하는 것과 같은 방법으로 형식 인수를 지정하여 폐쇄형 생성 형식을 만들 수 있습니다.  

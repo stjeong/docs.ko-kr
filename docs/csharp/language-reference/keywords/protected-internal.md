@@ -1,19 +1,20 @@
 ---
-title: protected internal(C# 참조)
+title: protected internal - C# 참조
+ms.custom: seodec18
 ms.date: 11/15/2017
 author: sputier
-ms.openlocfilehash: e5763830a29d4e627dbb8efa0e86fca536bbb26c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 09685e38e879de787b0f6bab8c189a8815433904
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193775"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53238652"
 ---
 # <a name="protected-internal-c-reference"></a>protected internal(C# 참조)
 
 `protected internal` 키워드 조합은 멤버 액세스 한정자입니다. protected internal 멤버는 포함하는 클래스에서 파생된 형식이나 현재 어셈블리에서 액세스할 수 있습니다. `protected internal` 및 다른 액세스 한정자와 비교는 [액세스 가능성 수준](accessibility-levels.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 기본 클래스의 protected internal 멤버는 포함하는 어셈블리 내의 모든 형식에서 액세스할 수 있습니다. 또한 액세스가 파생된 클래스 형식의 변수를 통해 발생하는 경우에만 다른 어셈블리에 있는 파생 클래스에서 액세스할 수 있습니다. 예를 들어 다음 코드 세그먼트를 고려하세요.
 

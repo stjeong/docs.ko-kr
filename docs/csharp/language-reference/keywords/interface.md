@@ -1,17 +1,18 @@
 ---
-title: interface(C# 참조)
+title: interface - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - interface_CSharpKeyword
 helpviewer_keywords:
 - interface keyword [C#]
 ms.assetid: 7da38e81-4f99-4bc5-b07d-c986b687eeba
-ms.openlocfilehash: 4adc7ba106e0044ba6aff94ea3180d9c8e3ded7b
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 2cb3121907b50d8151257739de0b66fcb597f364
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48872945"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237898"
 ---
 # <a name="interface-c-reference"></a>interface(C# 참조)
 
@@ -19,7 +20,7 @@ ms.locfileid: "48872945"
 
 자세한 내용과 예제는 [인터페이스](../../programming-guide/interfaces/index.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [!code-csharp[csrefKeywordsTypes#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#14)]
 
@@ -41,7 +42,7 @@ ms.locfileid: "48872945"
 
 명시적 인터페이스 구현에 대한 자세한 내용과 코드 예제는 [명시적 인터페이스 구현](../../programming-guide/interfaces/explicit-interface-implementation.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 인터페이스의 구현 방법을 보여 줍니다. 이 예제에서 인터페이스에는 속성 선언이 포함되어 있고, 클래스에는 구현이 포함되어 있습니다. `IPoint`를 구현하는 클래스의 모든 인스턴스에는 정수 속성 `x` 및 `y`가 있습니다.
 

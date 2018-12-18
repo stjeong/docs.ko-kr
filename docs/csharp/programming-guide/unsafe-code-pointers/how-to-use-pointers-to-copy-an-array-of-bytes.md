@@ -1,16 +1,17 @@
 ---
-title: '방법: 포인터를 사용하여 바이트 배열 복사(C# 프로그래밍 가이드)'
+title: '방법: 포인터를 사용하여 바이트 배열 복사 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords:
 - byte arrays [C#]
 - arrays [C#], byte
 - pointers [C#], to copy bytes
-ms.openlocfilehash: 061bbbc4557cb25d39edfb1f6235bb065a5de7bd
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 49151c6d2a573a24e63f733a5279faeee40de1b7
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087984"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241128"
 ---
 # <a name="how-to-use-pointers-to-copy-an-array-of-bytes--c-programming-guide"></a>방법: 포인터를 사용하여 바이트 배열 복사(C# 프로그래밍 가이드)
 
@@ -20,7 +21,7 @@ ms.locfileid: "44087984"
 
 이 예제에서는 두 번째 관리되지 않는 포인터보다는 인덱스를 사용하여 두 배열의 요소에 액세스합니다. `pSource` 및 `pTarget` 포인터의 선언은 배열을 고정합니다. 이 기능은 C# 7.3부터 사용할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [!code-csharp[Struct with embedded inline array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#8)]
 

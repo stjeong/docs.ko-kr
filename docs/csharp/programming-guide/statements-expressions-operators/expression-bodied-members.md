@@ -1,17 +1,18 @@
 ---
-title: 식 본문 멤버(C# 프로그래밍 가이드)
+title: 식 본문 멤버 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - expression-bodied members[C#]
 - C# language, expresion-bodied members
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2e58afadae78d3f6b15a8e859edc8d554d84c393
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 36f71352dca584c107af4f45850ce21bb016ba01
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42911908"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53238119"
 ---
 # <a name="expression-bodied-members-c-programming-guide"></a>식 본문 멤버(C# 프로그래밍 가이드)
 식 본문 정의를 사용하면 간결하고 읽을 수 있는 형식으로 멤버 구현을 제공할 수 있습니다. 메서드 또는 속성과 같은 지원되는 멤버에 대한 논리가 단일 식으로 구성된 경우 식 본문 정의를 사용할 수 있습니다. 식 본문 정의의 일반 구문은 다음과 같습니다.

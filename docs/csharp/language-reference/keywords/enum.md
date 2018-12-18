@@ -1,5 +1,6 @@
 ---
-title: enum 키워드(C# 참조)
+title: enum 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - enum
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - enum keyword [C#]
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
-ms.openlocfilehash: de11a306937626a7dbbb184e509a9f89e63dbae5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f2439bb955f821b58acc818ede308c379d5b68a6
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187808"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243558"
 ---
 # <a name="enum-c-reference"></a>enum(C# 참조)
 
@@ -65,7 +66,7 @@ int x = (int)Day.Sun;
 
 다른 개발자가 코드를 사용할 경우 `enum` 형식에 새 요소가 추가된다면 해당 코드에서 이를 적절히 처리할 수 있도록 지침을 제공해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 열거형 `Day`를 선언합니다. 두 개의 열거자를 명시적으로 정수로 변환하여 정수 변수에 대입합니다.
 
@@ -77,7 +78,7 @@ int x = (int)Day.Sun;
 
 [!code-csharp[csrefKeywordsTypes#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#11)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에서는 <xref:System.FlagsAttribute?displayProperty=nameWithType> 선언에 `enum` 특성을 사용하는 방법과 그 결과를 보여 줍니다.
 

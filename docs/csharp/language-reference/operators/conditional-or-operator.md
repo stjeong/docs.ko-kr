@@ -1,5 +1,6 @@
 ---
-title: '|| 연산자(C# 참조)'
+title: '|| 연산자 - C# 참조'
+ms.custom: seodec18
 ms.date: 11/06/2018
 f1_keywords:
 - '||_CSharpKeyword'
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - conditional-OR operator (||) [C#]
 - '|| operator [C#]'
 ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
-ms.openlocfilehash: a391078372e4ec0a3882bed4515733adedffb547
-ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
+ms.openlocfilehash: f4bb7ada12fbcebcb90fb7cd22d6e6bccad5fb57
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "42925542"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244572"
 ---
 # <a name="-operator-c-reference"></a>|| 연산자(C# 참조)
 
@@ -25,7 +26,7 @@ ms.locfileid: "42925542"
 
 ## <a name="operator-overloadability"></a>연산자 오버로드 가능성
 
-사용자 정의 형식으로 조건부 논리 OR 연산자를 오버로드할 수 없습니다. 그러나 사용자 정의 형식이 특정 방식으로 [논리 OR](or-operator.md), [true](../keywords/true-operator.md) 및 [false](../keywords/false-operator.md) 연산자를 오버로드하는 경우 `||` 작업은 해당 형식의 피연산자에 대해 평가할 수 있습니다. 자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [사용자 정의 조건부 논리 연산자](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) 섹션을 참조하세요.
+사용자 정의 형식으로 조건부 논리 OR 연산자를 오버로드할 수 없습니다. 그러나 사용자 정의 형식이 특정 방식으로 [논리 OR](or-operator.md)과 [true 및 false 연산자](../keywords/true-false-operators.md)를 오버로드하는 경우 `||` 작업은 해당 형식의 피연산자에 대해 평가할 수 있습니다. 자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [사용자 정의 조건부 논리 연산자](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) 섹션을 참조하세요.
 
 ## <a name="c-language-specification"></a>C# 언어 사양
 

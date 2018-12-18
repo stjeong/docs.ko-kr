@@ -1,5 +1,6 @@
 ---
-title: 숫자 결과 형식 지정 표(C# 참조)
+title: 숫자 결과 형식 지정 표 - C# 참조
+ms.custom: seodec18
 description: C# 표준 숫자 형식 문자열에 대한 자세한 정보
 ms.date: 09/20/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - numeric formatting [C#]
 - String.Format method
 ms.assetid: 120ba537-4448-4c62-8676-7a8fdd98f496
-ms.openlocfilehash: 6f1cb5b49139cf9661e678cfc0ecc884a2749622
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 12fe89e3aa63e9d3d8c3f102fe5a01a5f2225375
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "47863704"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239971"
 ---
 # <a name="formatting-numeric-results-table-c-reference"></a>숫자 결과 형식 지정 표(C# 참조)
 

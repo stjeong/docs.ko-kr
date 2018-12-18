@@ -1,5 +1,6 @@
 ---
-title: 추상 및 봉인 클래스와 클래스 멤버(C# 프로그래밍 가이드)
+title: 추상 및 봉인 클래스와 클래스 멤버 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - abstract classes [C#]
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - C# language, abstract classes
 - C# language, sealed
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
-ms.openlocfilehash: 0e80357a51bde270d5ed012f16f7b2e821f084c8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8c0b8e9814bf692e486624dd8a4a99d98337bca9
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517344"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235857"
 ---
 # <a name="abstract-and-sealed-classes-and-class-members-c-programming-guide"></a>추상 및 봉인 클래스와 클래스 멤버(C# 프로그래밍 가이드)
 [abstract](../../../csharp/language-reference/keywords/abstract.md) 키워드를 사용하면, 불완전하여 파생 클래스에서 구현해야 하는 클래스 및 [클래스](../../../csharp/language-reference/keywords/class.md) 멤버를 만들 수 있습니다.  

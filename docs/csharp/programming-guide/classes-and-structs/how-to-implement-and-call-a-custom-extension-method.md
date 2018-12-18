@@ -1,17 +1,18 @@
 ---
-title: '방법: 사용자 지정 확장명 메서드 구현 및 호출(C# 프로그래밍 가이드)'
+title: '방법: 사용자 지정 확장 메서드 구현 및 호출 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - extension methods [C#], implementing and calling
 ms.assetid: 7dab2a56-cf8e-4a47-a444-fe610a02772a
-ms.openlocfilehash: 7a09fa34b88c024bdaa0197bf82471a6bd6c2ae8
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 9f1f7994043288f8896b48a3f12d1c7ee93c3661
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43739235"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245550"
 ---
-# <a name="how-to-implement-and-call-a-custom-extension-method-c-programming-guide"></a>방법: 사용자 지정 확장명 메서드 구현 및 호출(C# 프로그래밍 가이드)
+# <a name="how-to-implement-and-call-a-custom-extension-method-c-programming-guide"></a>방법: 사용자 지정 확장 메서드 구현 및 호출(C# 프로그래밍 가이드)
 이 항목에서는 모든 .NET 형식에 대한 사용자 고유의 확장 메서드를 구현하는 방법을 보여 줍니다. 클라이언트 코드는 확장 메서드를 포함하는 DLL에 대한 참조를 추가하고 확장 메서드가 정의된 네임스페이스를 지정하는 [using](../../../csharp/language-reference/keywords/using-directive.md) 지시문을 추가하여 확장 메서드를 사용할 수 있습니다.  
   
 ## <a name="to-define-and-call-the-extension-method"></a>확장 메서드를 정의하고 호출하려면  
@@ -30,7 +31,7 @@ ms.locfileid: "43739235"
   
      연산자가 적용되는 형식을 나타내기 때문에 첫 번째 매개 변수는 호출 코드에서 지정되지 않고 컴파일러가 개체 형식을 이미 알고 있습니다. 매개 변수 2 ~ `n`에 대한 인수만 제공하면 됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CustomExtensions.StringExtension` 클래스에 `WordCount`라는 확장 메서드를 구현합니다. 이 메서드는 첫 번째 메서드 매개 변수로 지정된 <xref:System.String> 클래스에 대해 작동합니다. `CustomExtensions` 네임스페이스를 응용 프로그램 네임스페이스로 가져오고, `Main` 메서드 내부에서 메서드가 호출됩니다.  
   
  [!code-csharp[csProgGuideExtensionMethods#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-and-call-a-custom-extension-method_1.cs)]  

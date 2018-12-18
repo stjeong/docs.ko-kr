@@ -1,17 +1,18 @@
 ---
-title: '방법: 문자열이 숫자 값을 나타내는지 확인(C# 프로그래밍 가이드)'
+title: '방법: 문자열이 숫자 값을 나타내는지 확인 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - numeric strings [C#]
 - validating numeric input [C#]
 - strings [C#], numeric
 ms.assetid: a4e84e10-ea0a-489f-a868-503dded9d85f
-ms.openlocfilehash: b3eed35180b38236498f241fed59d71262946c37
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a20850e6fc34b28975dbb2b6be819bf2e88f1f27
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509069"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244559"
 ---
 # <a name="how-to-determine-whether-a-string-represents-a-numeric-value-c-programming-guide"></a>방법: 문자열이 숫자 값을 나타내는지 확인(C# 프로그래밍 가이드)
 문자열이 지정된 숫자 형식의 유효한 표현인지 확인하려면 모든 기본 숫자 형식 및 <xref:System.DateTime>, <xref:System.Net.IPAddress> 등의 형식에 의해서도 구현되는 정적 `TryParse` 메서드를 사용합니다. 다음 예제에서는 "108"이 유효한 [int](../../../csharp/language-reference/keywords/int.md)인지 확인하는 방법을 보여 줍니다.  
@@ -27,7 +28,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 > [!NOTE]
 >  문자열이 숫자만 포함해도 사용하는 `TryParse` 메서드의 형식에 유효하지 않을 수도 있습니다. 예를 들어 "256"은 `byte`에 유효한 값이 아니지만 `int`에는 유효합니다. "98.6"은 `int`에 유효한 값이 아니지만 유효한 `decimal`입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는`long`, `byte` 및 `decimal` 값의 문자열 표현과 함께 `TryParse`를 사용하는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideStrings#14](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-determine-whether-a-string-represents-a-numeric-value_1.cs)]  

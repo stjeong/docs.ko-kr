@@ -1,15 +1,16 @@
 ---
-title: 명령줄 인수(C# 프로그래밍 가이드)
+title: 명령줄 인수 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - command-line arguments [C#]
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
-ms.openlocfilehash: a55e40a4a4880c39c74186c55b0886e06dc33bcb
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 5bc73ece0560abfde7966678518ff57a8af3733f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44083951"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236078"
 ---
 # <a name="command-line-arguments-c-programming-guide"></a>명령줄 인수(C# 프로그래밍 가이드)
 다음 방법 중 하나로 메서드를 정의하여 인수를 `Main` 메서드에 보낼 수 있습니다.  
@@ -45,7 +46,7 @@ long num = Convert.ToInt64(s);
   
  자세한 내용은 <xref:System.Int64.Parse%2A> 및 <xref:System.Convert>를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 콘솔 응용 프로그램에서 명령줄 인수를 사용하는 방법을 보여 줍니다. 응용 프로그램은 런타임에 하나의 인수를 사용하고, 인수를 정수로 변환하고, 숫자의 계승을 계산합니다. 인수가 제공되지 않으면 응용 프로그램에서는 프로그램의 올바른 사용법을 설명하는 메시지를 표시합니다.  
   
  명령 프롬프트에서 응용 프로그램을 컴파일 및 실행하려면 다음 단계를 수행합니다.  
@@ -71,7 +72,7 @@ long num = Convert.ToInt64(s);
 > [!NOTE]
 >  Visual Studio에서 응용 프로그램을 실행할 경우 [프로젝트 디자이너, 디버그 페이지](/visualstudio/ide/reference/debug-page-project-designer)에서 명령줄 인수를 지정할 수 있습니다.  
   
- 명령줄 인수를 사용하는 방법에 대한 자세한 내용은 [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)을 참조하세요.  
+ 명령줄 인수를 사용하는 방법에 대한 예제는 [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목
 

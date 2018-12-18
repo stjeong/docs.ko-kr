@@ -1,16 +1,17 @@
 ---
-title: '방법: 추상 속성 정의(C# 프로그래밍 가이드)'
+title: '방법: 추상 속성 정의 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - properties [C#], abstract
 - abstract properties [C#]
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
-ms.openlocfilehash: 549867cac99784ce885b8fce8a1638c40ad88cec
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 70f344fb4e5a74940219688190324beb8183d32b
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46002985"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237313"
 ---
 # <a name="how-to-define-abstract-properties-c-programming-guide"></a>방법: 추상 속성 정의(C# 프로그래밍 가이드)
 다음 예제에서는 [abstract](../../../csharp/language-reference/keywords/abstract.md) 속성을 정의하는 방법을 보여 줍니다. 추상 속성 선언은 속성 접근자의 구현을 제공하지 않습니다. 클래스가 속성을 지원하도록 선언하지만 접근자 구현은 파생 클래스에서 처리되도록 합니다. 다음 예제에서는 기본 클래스에서 상속된 추상 속성을 구현하는 방법을 보여 줍니다.  
@@ -29,7 +30,7 @@ ms.locfileid: "46002985"
   
  그러면 shapetest.exe 실행 파일이 생성됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 파일에서는 `double` 형식의 `Area` 속성을 포함하는 `Shape` 클래스를 선언합니다.  
   
  [!code-csharp[csProgGuideInheritance#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-abstract-properties_1.cs)]  
@@ -42,7 +43,7 @@ ms.locfileid: "46002985"
   
 -   추상 속성(이 예제의 `Area`)을 선언할 때는 단순히 사용할 수 있는 속성 접근자를 나타내고 구현하지 않습니다. 이 예제에서는 [get](../../../csharp/language-reference/keywords/get.md) 접근자만 사용할 수 있으므로 속성은 읽기 전용입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 `Shape`의 세 가지 서브클래스와 이러한 서브클래스에서 `Area` 속성을 재정의하여 고유한 구현을 제공하는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideInheritance#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-abstract-properties_2.cs)]  

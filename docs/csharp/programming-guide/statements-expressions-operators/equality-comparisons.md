@@ -1,15 +1,16 @@
 ---
-title: 같음 비교(C# 프로그래밍 가이드)
+title: 같음 비교 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - object equality [C#]
 ms.assetid: 10b865ea-4e7b-4127-9242-c9b8f57d9f04
-ms.openlocfilehash: 07607f96acb2ca44142bd6a8b4fdd84ea0d1b532
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 2bf1e788c635dd466739178f80b0f2f147c04cfd
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43788638"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235360"
 ---
 # <a name="equality-comparisons-c-programming-guide"></a>같음 비교(C# 프로그래밍 가이드)
 두 값이 같은지를 비교해야 하는 경우가 있습니다. 때로는 두 변수에 포함된 값이 같음을 의미하는 *값 같음*(*동등*이라고도 함)을 테스트합니다. 다른 경우에는 두 변수가 메모리에서 동일한 기본 개체를 참조하는지 여부를 확인해야 합니다. 이 유형의 같음을 *참조 같음* 또는 *ID*라고 합니다. 이 항목에서는 이러한 두 종류의 같음을 설명하고 자세한 정보가 있는 다른 항목에 대한 링크를 제공합니다.  
@@ -39,7 +40,7 @@ if( b == a)
   
  대부분의 다른 형식에서는 값 같음 테스트가 더 복잡한데, 형식에서 정의된 방식을 알아야 하기 때문입니다. 여러 필드나 속성이 있는 클래스 및 구조체의 경우 값 같음은 대체로 모든 필드 또는 속성에 동일한 값이 있다는 의미로 정의됩니다. 예를 들어 pointA.X가 pointB.X와 같고 pointA.Y가 pointB.Y와 같으면 두 `Point` 개체가 동일한 것으로 정의할 수 있습니다.  
   
- 그러나 동등이 형식의 모든 필드를 기반으로 해야 한다는 요구 사항은 없습니다. 하위 집합을 기반으로 할 수도 있습니다. 소유하지 않은 형식을 비교하는 경우 해당 형식에 대해 동등이 정의된 방식을 구체적으로 알아야 합니다. 사용자 고유의 클래스 및 구조체에서 값 같음을 정의하는 방법에 대한 자세한 내용은 [방법: 형식에 대한 값 같음 정의](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md)를 참조하세요.  
+ 그러나 동등이 형식의 모든 필드를 기반으로 해야 한다는 요구 사항은 없습니다. 하위 집합을 기반으로 할 수도 있습니다. 소유하지 않은 형식을 비교하는 경우 해당 형식에 대해 동등이 정의된 방식을 구체적으로 알아야 합니다. 사용자 고유의 클래스 및 구조체에서 값 같음을 정의하는 방법에 대한 자세한 내용은 [방법: 형식의 값 일치 정의](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md)를 참조하세요.  
   
 ### <a name="value-equality-for-floating-point-values"></a>부동 소수점 값에 대한 값 같음  
  부동 소수점 값([double](../../../csharp/language-reference/keywords/double.md) 및 [float](../../../csharp/language-reference/keywords/float.md))의 같음 비교에서는 이진 컴퓨터의 부정확한 부동 소수점 연산 때문에 문제가 발생합니다. 자세한 내용은 <xref:System.Double?displayProperty=nameWithType> 항목의 설명을 참조하세요.  

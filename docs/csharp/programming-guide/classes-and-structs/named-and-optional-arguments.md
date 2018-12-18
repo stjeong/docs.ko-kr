@@ -1,5 +1,6 @@
 ---
-title: 명명된 인수와 선택적 인수(C# 프로그래밍 가이드)
+title: 명명된 인수와 선택적 인수 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - namedParameter_CSharpKeyword
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - parameters [C#], optional
 - named and optional arguments [C#]
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
-ms.openlocfilehash: f536499e95611bad6ac1766e117d4a2f1463e53d
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: df590cf9d18b6de81caccfb77e544451da9ee0df
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857984"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244910"
 ---
 # <a name="named-and-optional-arguments-c-programming-guide"></a>명명된 인수와 선택적 인수(C# 프로그래밍 가이드)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)]에서는 명명된 인수 및 선택적 인수를 소개합니다. *명명된 인수*를 사용하면 인수를 매개 변수 목록 내의 매개 변수 위치가 아니라 매개 변수 이름과 연결하여 특정 매개 변수에 대한 인수를 지정할 수 있습니다. *선택적 인수*를 사용하면 일부 매개 변수에 대한 인수를 생략할 수 있습니다. 두 기법 모두 메서드, 인덱서, 생성자 및 대리자에 사용할 수 있습니다.  
@@ -57,7 +58,7 @@ ms.locfileid: "43857984"
  PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
  ```
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드는 몇 가지 추가 코드와 함께 이 섹션의 예제를 구현합니다.  
   
  [!code-csharp[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_1.cs)]  
@@ -114,7 +115,7 @@ AutoFormat 매개 변수
   
  [!code-csharp[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_5.cs)]  
   
- 자세한 내용 및 예제는 [방법: Office 프로그래밍에 명명된 인수와 선택적 인수 사용](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md) 및 [방법: Visual C# 기능을 사용하여 Office Interop 개체에 액세스](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)를 참조하세요.  
+ 자세한 내용과 예제는 [방법: Office 프로그래밍에 명명된 인수와 선택적 인수 사용](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md) 및 [방법: Visual C# 기능을 사용하여 Office Interop 개체에 액세스](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)를 참조하세요.  
   
 ## <a name="overload-resolution"></a>Overload Resolution  
  명명된 인수 및 선택적 인수를 사용하면 다음과 같은 방법으로 오버로드 확인에 영향을 줍니다.  

@@ -1,15 +1,16 @@
 ---
-title: '방법: 대리자 선언, 인스턴스화 및 사용(C# 프로그래밍 가이드)'
+title: '방법: 대리자 선언, 인스턴스화 및 사용 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - delegates [C#], declaring and instantiating
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
-ms.openlocfilehash: 6c53d7572074db44976494e5eed596bf95aaf456
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: bc9fc81a74d438aca57779fa565fdbeba3968087
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858862"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237066"
 ---
 # <a name="how-to-declare-instantiate-and-use-a-delegate-c-programming-guide"></a>방법: 대리자 선언, 인스턴스화 및 사용(C# 프로그래밍 가이드)
 C# 1.0 이상 버전에서는 다음 예제와 같이 대리자를 선언할 수 있습니다.  
@@ -36,7 +37,7 @@ C# 1.0 이상 버전에서는 다음 예제와 같이 대리자를 선언할 수
   
  대리자를 사용하면 서점 데이터베이스와 클라이언트 코드 간에 기능을 효율적으로 구분할 수 있습니다. 클라이언트 코드는 책이 저장되는 방식이나 서점 코드가 문고판 책을 찾는 방식을 알 수 없습니다. 서점 코드는 발견된 문고판 책에 대해 수행되는 처리를 알 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuideDelegates#12](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-declare-instantiate-and-use-a-delegate_6.cs)]  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  

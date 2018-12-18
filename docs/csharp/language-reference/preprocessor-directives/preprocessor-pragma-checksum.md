@@ -1,17 +1,18 @@
 ---
-title: '#pragma checksum(C# 참조)'
+title: '#pragma checksum - C# 참조'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - '#pragma checksum'
 helpviewer_keywords:
 - '#pragma checksum [C#]'
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
-ms.openlocfilehash: 28a9ccfb9d36e648304a177294904ab1b7f18892
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 83cc6c56f18e5ce284d9e10294f3b3974578fc91
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48024547"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235627"
 ---
 # <a name="pragma-checksum-c-reference"></a>#pragma checksum(C# 참조)
 [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] 페이지의 디버그를 돕기 위해 소스 파일에 대한 체크섬을 생성합니다.  
@@ -27,7 +28,7 @@ ms.locfileid: "48024547"
  변경 내용이나 업데이트를 모니터링해야 하는 파일의 이름입니다.  
   
  `"{guid}"`  
- 해시 알고리즘의 GUID(Globally Unique Identifier)입니다.  
+ 해시 알고리즘의 GUID(Globally Unique Identifier)입니다.  
   
  `"checksum_bytes"`  
  체크섬의 바이트를 나타내는 16진수 문자열입니다. 짝수의 16진수여야 합니다. 홀수를 사용하면 컴파일 시간 경고가 발생하고 지시문이 무시됩니다.  

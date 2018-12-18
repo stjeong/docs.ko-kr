@@ -1,5 +1,6 @@
 ---
-title: where 절(C# 참조)
+title: where 절 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - whereclause_CSharpKeyword
@@ -7,27 +8,27 @@ helpviewer_keywords:
 - where keyword [C#]
 - where clause [C#]
 ms.assetid: 7f9bf952-7744-4f91-b676-cddb55d107c3
-ms.openlocfilehash: 8607c79a8b1e9a9fd999e4f5b77ecfac786161b3
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4b9a5169baa07f2b0363778afbea64ba34eee1d8
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499863"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53238674"
 ---
 # <a name="where-clause-c-reference"></a>where 절(C# 참조)
 `where` 절은 데이터 소스의 어떤 요소가 쿼리 식에서 반환될지를 지정하기 위해 쿼리 식에서 사용됩니다. 또한 각 소스 요소(범위 변수로 참조됨)에 부울 조건(*predicate*)을 적용하고 지정된 조건이 참인 요소를 반환합니다. 단일 쿼리 식에는 여러 `where` 절을 포함할 수 있으며 단일 절에는 여러 조건부 하위 식을 포함할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 `where` 절은 5보다 작은 숫자를 제외한 모든 숫자를 필터링합니다. `where` 절을 제거하면 데이터 소스의 모든 숫자가 반환됩니다. `num < 5` 식은 각 요소에 적용되는 조건자입니다.  
   
  [!code-csharp[cscsrefQueryKeywords#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_1.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  단일 `where` 절 내에서 [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) 및 [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md) 연산자를 사용하여 조건자를 필요한 만큼 지정할 수 있습니다. 다음 예제에서 쿼리는 5 미만의 짝수만 선택하도록 두 개의 조건자를 지정합니다.  
   
  [!code-csharp[cscsrefQueryKeywords#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_2.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `where` 절에는 부울 값을 반환하는 메서드를 하나 이상 포함할 수 있습니다. 다음 예제에서 `where` 절은 메서드를 사용하여 범위 변수의 현재 값이 짝수인지 홀수인지를 확인합니다.  
   
  [!code-csharp[cscsrefQueryKeywords#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_3.cs)]  

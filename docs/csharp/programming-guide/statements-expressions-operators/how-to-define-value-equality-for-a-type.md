@@ -1,5 +1,6 @@
 ---
-title: '방법: 형식의 값 일치 정의(C# 프로그래밍 가이드)'
+title: '방법: 형식의 값 일치 정의 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - overriding Equals method [C#]
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - value equality [C#]
 - equivalence [C#]
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.openlocfilehash: 8abcace9c648ba2132d2b6849ae1c9d347d6fd29
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a2d71994647e50afc8d343725e639b6e9d24831f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126785"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244429"
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>방법: 형식의 값 일치 정의(C# 프로그래밍 가이드)
 클래스 또는 구조체를 정의할 때 형식에 대한 값 같음(또는 동등)의 사용자 지정 정의를 만드는 것이 적합한지 결정합니다. 일반적으로 형식의 개체를 일종의 컬렉션에 추가해야 하는 경우 또는 주요 용도가 필드 또는 속성 집합 저장인 경우 값 같음을 구현합니다. 형식의 모든 필드 및 속성 비교를 기준으로 값 같음의 정의를 만들거나, 하위 집합을 기준으로 정의를 만들 수 있습니다. 그러나 두 경우 모두, 클래스와 구조체 둘 다에서 구현이 동등의 5가지 사항을 따라야 합니다.  
@@ -34,7 +35,7 @@ ms.locfileid: "53126785"
   
 1.  [virtual](../../../csharp/language-reference/keywords/virtual.md) <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> 메서드를 재정의합니다. 대부분의 경우 `bool Equals( object obj )` 구현에서 <xref:System.IEquatable%601?displayProperty=nameWithType> 인터페이스 구현인 형식별 `Equals` 메서드만 호출하면 됩니다. 2단계를 참조하세요.  
   
-2.  형식별 `Equals` 메서드를 제공하여 <xref:System.IEquatable%601?displayProperty=nameWithType> 인터페이스를 구현합니다. 여기서 실제 동등 비교가 수행됩니다. 예를 들어 형식에서 한 개나 두 개의 필드만 비교하여 같음 정의를 결정할 수도 있습니다. `Equals`에서 예외를 throw하지 않습니다. 클래스만 해당: 이 메서드는 클래스에 선언되어 있는 필드만 검사해야 합니다. `base.Equals`를 호출하여 기본 클래스에 있는 필드를 검사해야 합니다. 형식이 <xref:System.Object>에서 직접 상속하는 경우에는 이 작업을 수행하지 마세요. <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>의 <xref:System.Object> 구현에서 참조 같음 검사를 수행합니다.  
+2.  형식별 `Equals` 메서드를 제공하여 <xref:System.IEquatable%601?displayProperty=nameWithType> 인터페이스를 구현합니다. 여기서 실제 동등 비교가 수행됩니다. 예를 들어 형식에서 한 개나 두 개의 필드만 비교하여 같음 정의를 결정할 수도 있습니다. `Equals`에서 예외를 throw하지 않습니다. 클래스만 해당: 이 메서드는 클래스에 선언된 필드만 검사해야 합니다. `base.Equals`를 호출하여 기본 클래스에 있는 필드를 검사해야 합니다. 형식이 <xref:System.Object>에서 직접 상속하는 경우에는 이 작업을 수행하지 마세요. <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>의 <xref:System.Object> 구현에서 참조 같음 검사를 수행합니다.  
   
 3.  선택 사항이지만 권장됨: [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) 및 [!=](../../../csharp/language-reference/operators/not-equal-operator.md) 연산자를 오버로드합니다.  
   

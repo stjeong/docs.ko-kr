@@ -1,5 +1,6 @@
 ---
-title: internal(C# 참조)
+title: internal - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - internal_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - internal keyword [C#]
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
-ms.openlocfilehash: 28e74671894297e9fe81e681ba793d0806c9f28a
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: 48e7dcfd5bbe569a37ceb3ec746e7c3e53a7cdd9
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "43523363"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235269"
 ---
 # <a name="internal-c-reference"></a>internal(C# 참조)
 `internal` 키워드는 형식 및 형식 멤버에 대한 [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)입니다. 
@@ -37,7 +38,7 @@ public class BaseClass
   
  정의 시 사용된 어셈블리 외부에서 내부 액세스로 형식 또는 멤버를 참조하면 오류가 발생합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에는 `Assembly1.cs` 및 `Assembly1_a.cs`의 두 파일이 포함되어 있습니다. 첫 번째 파일에는 내부 기본 클래스인 `BaseClass`가 포함되어 있습니다. 두 번째 파일에서 `BaseClass`를 인스턴스화하려고 하면 오류가 발생합니다.  
   
 ```csharp  
@@ -61,7 +62,7 @@ class TestAccess
 }  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 예제 1에서 사용한 것과 동일한 파일을 사용하고 `BaseClass`의 액세스 가능성 수준을 `public`으로 변경합니다. 또한 `IntM` 멤버의 액세스 가능성 수준을 `internal`로 변경합니다. 이 경우 클래스를 인스턴스화할 수 있지만 내부 멤버에는 액세스할 수 없습니다.  
   
 ```csharp  

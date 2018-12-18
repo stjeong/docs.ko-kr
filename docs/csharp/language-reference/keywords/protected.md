@@ -1,5 +1,6 @@
 ---
-title: protected 키워드(C# 참조)
+title: protected 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - protected
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - protected keyword [C#]
 ms.assetid: 05ce3794-6675-4025-bddb-eaaa0ec22892
-ms.openlocfilehash: 6e3f72226d10910152f7a2139a5a1be35e681ec7
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: 6d625b2fd0a1f42a0bde7f68ebc332510a4e56ef
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "50183180"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239659"
 ---
 # <a name="protected-c-reference"></a>protected(C# 참조)
 
@@ -24,7 +25,7 @@ protected 멤버는 해당 클래스 내에서 파생 클래스 인스턴스가 
 
 `protected` 및 다른 액세스 한정자와 비교는 [액세스 가능성 수준](accessibility-levels.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 기본 클래스의 protected 멤버는 파생 클래스 형식을 통해 액세스가 발생하는 경우에만 파생 클래스에서 액세스할 수 있습니다. 예를 들어 다음 코드 세그먼트를 고려하세요.
 
@@ -34,7 +35,7 @@ protected 멤버는 해당 클래스 내에서 파생 클래스 인스턴스가 
 
 구조체를 상속할 수 없기 때문에 구조체 멤버는 보호할 수 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서 `DerivedPoint` 클래스는 `Point`에서 파생됩니다. 따라서 파생 클래스에서 직접 기본 클래스의 protected 멤버를 액세스할 수 있습니다.
 

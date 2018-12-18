@@ -1,15 +1,16 @@
 ---
-title: 생성자 사용(C# 프로그래밍 가이드)
+title: 생성자 사용 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - constructors [C#], about constructors
 ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
-ms.openlocfilehash: d10b0de0a3811e615297b31d2d9c8934c9338078
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: 1924e218f151a86b0524df6f3c91bdbe78131922
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "43529022"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236169"
 ---
 # <a name="using-constructors-c-programming-guide"></a>생성자 사용(C# 프로그래밍 가이드)
 [class](../../../csharp/language-reference/keywords/class.md) 또는 [struct](../../../csharp/language-reference/keywords/struct.md)가 만들어지면 생성자가 호출됩니다. 생성자는 클래스 또는 구조체와 이름이 같으며 일반적으로 새 개체의 데이터 멤버를 초기화합니다.  

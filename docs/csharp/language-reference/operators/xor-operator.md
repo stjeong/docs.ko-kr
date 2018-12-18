@@ -1,5 +1,6 @@
 ---
-title: ^ 연산자(C# 참조)
+title: ^ 연산자 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - ^_CSharpKeyword
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ^ operator [C#]
 - bitwise exclusive OR operator [C#]
 ms.assetid: b09bc815-570f-4db6-a637-5b4ed99d014a
-ms.openlocfilehash: b1333f9d06e2804029550e6364a225558e096431
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: f6f09f197502af1bc38bcdef97dd1db0ad9c7c08
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925300"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236949"
 ---
 # <a name="-operator-c-reference"></a>^ 연산자(C# 참조)
 이항 `^` 연산자는 정수 형식 및 `bool`에 대해 미리 정의되어 있습니다. 정수 형식의 경우 `^` 연산자는 해당 피연산자의 배타적 비트 OR 연산자를 계산합니다. `bool` 피연산자의 경우 `^` 연산자는 피연산자의 배타적 논리 OR 연산을 계산합니다. 즉 피연산자 중 정확히 하나가 `true`일 경우에만 결과가 `true`입니다.  

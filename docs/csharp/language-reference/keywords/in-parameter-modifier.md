@@ -1,15 +1,16 @@
 ---
-title: in 매개 변수 한정자(C# 참조)
+title: in 매개 변수 한정자 - C# 참조
+ms.custom: seodec18
 ms.date: 03/06/2018
 helpviewer_keywords:
 - parameters [C#], in
 - in parameters [C#]
-ms.openlocfilehash: 199d2d54a1937b9982131b8cc7f1c777f656d7a9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d08b135c92cab176e402fec73999083fe4309362
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199411"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236299"
 ---
 # <a name="in-parameter-modifier-c-reference"></a>in 매개 변수 한정자(C# 참조)
 

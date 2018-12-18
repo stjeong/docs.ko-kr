@@ -1,16 +1,17 @@
 ---
-title: 포인터 조작(C# 프로그래밍 가이드)
+title: 포인터 조작 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - pointers [C#], manipulation
 - pointer expressions [C#], operators
 ms.assetid: a5fb36ee-dd5b-4a60-b4a4-6d94b9901988
-ms.openlocfilehash: 3a757734d7dbc89b40e9398931fbebbda6ca9e7c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a156404e89bf771b5ef89c5012f65e7a102fdf99
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504023"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239607"
 ---
 # <a name="manipulating-pointers-c-programming-guide"></a>포인터 조작(C# 프로그래밍 가이드)
 이 섹션에는 다음 포인터 작업이 포함되어 있습니다.  

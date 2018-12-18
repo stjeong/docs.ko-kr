@@ -1,5 +1,6 @@
 ---
-title: '- 연산자(C# 참조)'
+title: '- 연산자 - C# 참조'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - -_CSharpKeyword
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - '- operator [C#]'
 - subtraction operator (-) [C#]
 ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
-ms.openlocfilehash: bd852f96ece9c8d5d5e2ec42e802596e795ce04a
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 5a467e8383d7510260ad3044976601deca7cafdb
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44210106"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242232"
 ---
 # <a name="--operator-c-reference"></a>- 연산자(C# 참조)
 `-` 연산자는 단항 또는 이항 연산자로 작동할 수 있습니다.  
@@ -26,7 +27,7 @@ ms.locfileid: "44210106"
   
  사용자 정의 형식은 단항 `-` 및 이항 `-` 연산자를 오버로드할 수 있습니다. 자세한 내용은 [연산자(C# 참조)](../../../csharp/language-reference/keywords/operator.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csRefOperators#40](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-operator_1.cs)]  
   
 ## <a name="see-also"></a>참고 항목

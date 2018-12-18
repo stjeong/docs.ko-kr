@@ -1,5 +1,6 @@
 ---
-title: static 한정자(C# 참조)
+title: static 한정자 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - static
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - static keyword [C#]
 ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
-ms.openlocfilehash: f07dfa1f4354f9aa132ad6b06f9f502f495cc5b1
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 90b043fa13f1737db81518151daaeceabf930c5c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187051"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239158"
 ---
 # <a name="static-c-reference"></a>static(C# 참조)
 
 `static` 한정자를 사용하여 특정 개체가 아니라 형식 자체에 속하는 정적 멤버를 선언할 수 있습니다. `static` 한정자는 클래스, 필드, 메서드, 속성, 연산자, 이벤트 및 생성자와 함께 사용할 수 있지만 인덱서, 종료자 또는 클래스 이외의 형식에는 사용할 수 없습니다. 자세한 내용은 [static 클래스 및 static 클래스 멤버](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 클래스는 `static`으로 선언되며 `static` 메서드만 포함합니다.
 
@@ -55,7 +56,7 @@ Console.WriteLine(MyBaseC.MyStruct.x);
 
 [!code-csharp[csrefKeywordsModifiers#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#20)]  
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 아직 선언되지 않은 다른 정적 필드를 사용하여 정적 필드를 초기화할 수 있지만 정적 필드에 값을 명시적으로 할당할 때까지 결과가 정의되지 않음을 보여 줍니다.
 

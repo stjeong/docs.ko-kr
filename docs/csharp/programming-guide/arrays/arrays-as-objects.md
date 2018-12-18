@@ -1,15 +1,16 @@
 ---
-title: 개체 형식 배열(C# 프로그래밍 가이드)
+title: 개체 형식 배열 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - arrays [C#], as objects
 ms.assetid: f76d4403-bd0a-42a0-9bc8-694c55b2c926
-ms.openlocfilehash: f1abe10839c30d48f56ac6044d75d290a59b4cce
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0bbbf7ecc5eff650f7a2edc73546833afd2be094
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43505561"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242336"
 ---
 # <a name="arrays-as-objects-c-programming-guide"></a>개체 형식 배열(C# 프로그래밍 가이드)
 
@@ -19,7 +20,7 @@ C#의 배열은 C 및 C++와 같이 인접한 메모리의 주소 지정 가능�
   
  <xref:System.Array> 클래스는 배열의 정렬, 검색 및 복사를 위한 다른 여러 유용한 메서드와 속성을 제공합니다.  
   
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
  이 예제에서는 <xref:System.Array.Rank%2A> 속성을 사용하여 배열의 차원 수를 표시합니다.  
   

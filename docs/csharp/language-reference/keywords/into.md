@@ -1,5 +1,6 @@
 ---
-title: into(C# 참조)
+title: into - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - into_CSharpKeyword
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - into keyword [C#]
 ms.assetid: 81ec62c1-f0b1-4755-8a31-959876e77f65
-ms.openlocfilehash: 6d46ae67dd84650172125c62ea70dc109671a89b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4445674c77be397bd6e1d7e385dbd839fbb916aa
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507845"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53238184"
 ---
 # <a name="into-c-reference"></a>into(C# 참조)
 
 `into` 상황별 키워드를 사용하여 [group](group-clause.md), [join](join-clause.md), [select](select-clause.md) 절의 결과를 새 식별자에 저장하기 위한 임시 식별자를 만들 수 있습니다. 이 식별자 자체는 추가 쿼리 명령의 생성기일 수 있습니다. `group` 또는 `select` 절에 사용할 경우 새 식별자의 사용을 *연속*이라고도 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `into` 키워드를 사용하여 임시 식별자 `fruitGroup`을 활성화하는 방법을 보여 줍니다. 이 식별자는 `IGrouping`의 유추된 형식을 갖습니다. 식별자를 사용하여 각 그룹에서 <xref:System.Linq.Enumerable.Count%2A> 메서드를 호출하고 둘 이상의 단어를 포함하는 그룹만 선택할 수 있습니다.
 

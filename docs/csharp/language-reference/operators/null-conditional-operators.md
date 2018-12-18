@@ -1,17 +1,18 @@
 ---
-title: Null 조건 연산자(C# 참조)
+title: Null 조건 연산자 - C# 참조
+ms.custom: seodec18
 ms.date: 04/03/2015
 helpviewer_keywords:
 - null-conditional operators [C#]
 - ?. operator [C#]
 - ?[] operator [C#]
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
-ms.openlocfilehash: 823b9dc886bf2448ca9da4ac640bfe56f90d3ff3
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4189b07fd280192a4cb39400e4e77cef702c9d08
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194854"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239555"
 ---
 # <a name="-and--null-conditional-operators-c-and-visual-basic"></a>?. 및 ?[] Null 조건부 연산자(C# 및 Visual Basic)
 멤버 액세스(`?.`) 또는 인덱스(`?[]`) 작업을 수행하기 전에 Null에서 왼쪽 피연산자의 값을 테스트합니다. 왼쪽 피연산자가 `null`로 계산하는 경우 `null`을 반환합니다. 
@@ -49,7 +50,8 @@ PropertyChanged?.Invoke(…)
  새로운 방식은 컴파일러가 `PropertyChanged`를 한 번만 평가하는 코드를 생성하고 결과를 임시 변수에 유지하기 때문에 스레드로부터 안전합니다. null 조건부 대리자 호출 구문 `PropertyChanged?(e)`가 없기 때문에 `Invoke` 메서드를 명시적으로 호출해야 합니다.  
   
 ## <a name="language-specifications"></a>언어 사양  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [Null 결합 연산자](~/_csharplang/spec/expressions.md#null-conditional-operator)를 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
   
 ## <a name="see-also"></a>참고 항목
 

@@ -1,5 +1,6 @@
 ---
-title: abstract(C# 참조)
+title: abstract - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - abstract
@@ -7,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - abstract keyword [C#]
 ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb
-ms.openlocfilehash: d0a51afe61e75b750ed8bf336ca4636cb58dfbba
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 43497d3680917917894f1d904852d787fce0888c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45742247"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53240452"
 ---
 # <a name="abstract-c-reference"></a>abstract(C# 참조)
 `abstract` 한정자는 수정되는 항목에 누락되거나 불완전한 구현이 있음을 나타냅니다. abstract 한정자는 클래스, 메서드, 속성, 인덱서 및 이벤트와 함께 사용될 수 있습니다. 클래스 선언에서 `abstract` 한정자를 사용하여 클래스가 다른 클래스의 기본 클래스로만 사용됨을 나타냅니다. abstract로 표시되거나 추상 클래스에 포함된 멤버는 추상 클래스에서 파생 클래스에 의해 구현되어야 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서 `Square` 클래스는 `ShapesClass`에서 파생되므로 `Area` 구현을 제공해야 합니다.  
   
  [!code-csharp[csrefKeywordsModifiers#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#1)]
@@ -64,7 +65,7 @@ ms.locfileid: "45742247"
   
 [!code-csharp[csrefKeywordsModifiers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#2)]
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서 `DerivedClass` 클래스는 추상 클래스 `BaseClass`에서 파생됩니다. 추상 클래스에는 추상 메서드 `AbstractMethod` 및 두 개의 추상 속성 `X` 및 `Y`가 포함됩니다.  
   
 [!code-csharp[csrefKeywordsModifiers#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#3)]

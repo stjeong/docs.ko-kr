@@ -1,16 +1,17 @@
 ---
-title: '방법: 자동으로 구현된 속성을 사용하여 간단한 클래스 구현(C# 프로그래밍 가이드)'
+title: '방법: 자동으로 구현된 속성을 사용하여 간단한 클래스 구현 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - auto-implemented properties [C#]
 - properties [C#], auto-implemented
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.openlocfilehash: cdd90685985b4a48b8fb98451eba0d4ebbbbc6bf
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: faf7f635a42ece1a30c5bac096a909e32095fc0c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126517"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237235"
 ---
 # <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a>방법: 자동으로 구현된 속성을 사용하여 간단한 클래스 구현(C# 프로그래밍 가이드)
 이 예제에서는 자동 구현 속성 집합을 캡슐화하는 데만 사용되는 변경할 수 없는 간단한 클래스를 만드는 방법을 보여 줍니다. 참조 형식 의미 체계를 사용해야 하는 경우 구조체 대신 이러한 종류의 구문을 사용합니다.  

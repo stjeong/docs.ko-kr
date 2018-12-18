@@ -1,5 +1,6 @@
 ---
-title: '|= 연산자(C# 참조)'
+title: '|= 연산자 - C# 참조'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - '|=_CSharpKeyword'
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - OR assignment operator (|=) [C#]
 - '|= operator (OR assignment) [C#]'
 ms.assetid: 8315b8cf-dd15-402f-92f0-c7db931696ca
-ms.openlocfilehash: fe56005ce94656b5e8a075cddfb91dc0da096cf7
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: ad8d5c8e65c2768d1dfc4644323e801189a4399c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562085"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245339"
 ---
 # <a name="-operator-c-reference"></a>|= 연산자(C# 참조)
 OR 대입 연산자입니다.  
@@ -34,7 +35,7 @@ x = x | y
   
  `|=` 연산자를 직접 오버로드할 수는 없지만 사용자 정의 형식은 [&#124; 연산자](../../../csharp/language-reference/operators/or-operator.md)를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조).  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csRefOperators#10](../../../csharp/language-reference/operators/codesnippet/CSharp/or-assignment-operator_1.cs)]  
   
 ## <a name="see-also"></a>참고 항목

@@ -1,17 +1,18 @@
 ---
-title: 확장명 메서드(C# 프로그래밍 가이드)
+title: 확장 메서드 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - methods [C#], adding to existing types
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: 7ebd04665d91f599edcb4a5c07680216dfb8925a
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 8da1deec2238f74a9b594c85feab0445ec2a35b7
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840903"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241316"
 ---
 # <a name="extension-methods-c-programming-guide"></a>확장명 메서드(C# 프로그래밍 가이드)
 확장명 메서드를 사용하면 새 파생 형식을 만들거나 다시 컴파일하거나 원래 형식을 수정하지 않고도 기존 형식에 메서드를 "추가"할 수 있습니다. 확장 메서드는 특수한 종류의 정적 메서드이지만 확장 형식의 인스턴스 메서드인 것처럼 호출됩니다. C#, F# 및 Visual Basic에서 작성된 클라이언트 코드의 경우 확장명 메서드를 호출하는 것과 형식에 실제로 정의된 메서드를 호출하는 데는 명백한 차이가 없습니다.  
@@ -56,7 +57,7 @@ using System.Linq;
 ## <a name="binding-extension-methods-at-compile-time"></a>컴파일 타임에 확장 메서드 바인딩  
  확장 메서드를 사용하여 클래스 또는 인터페이스를 확장할 수 있지만 재정의할 수는 없습니다. 이름과 시그니처가 인터페이스 또는 클래스 메서드와 동일한 확장 메서드는 호출되지 않습니다. 컴파일 시간에 확장 메서드는 항상 형식 자체에서 정의된 인스턴스 메서드보다 우선 순위가 낮습니다. 즉, 형식에 `Process(int i)`라는 메서드가 있고 동일한 시그니처를 가진 확장 메서드가 있는 경우 컴파일러는 항상 인스턴스 메서드에 바인딩합니다. 컴파일러는 메서드 호출을 발견할 경우 먼저 형식의 인스턴스 메서드에서 일치 항목을 찾습니다. 일치 항목이 없으면 형식에 대해 정의된 확장 메서드를 검색하고 찾은 첫 번째 확장 메서드에 바인딩합니다. 다음 예제에서는 컴파일러가 바인딩할 확장명 메서드 또는 인스턴스 메서드를 확인하는 방법을 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 C# 컴파일러가 메서드 호출을 형식의 인스턴스 메서드 또는 확장명 메서드에 바인딩할 것인지 결정할 때 따르는 규칙을 보여 줍니다. 정적 클래스 `Extensions`는 `IMyInterface`를 구현하는 모든 형식에 대해 정의된 확장 메서드를 포함합니다. `A`, `B` 및 `C` 클래스는 모두 인터페이스를 구현합니다.  
   
  `MethodB` 확장 메서드는 이름과 시그니처가 클래스에서 이미 구현된 메서드와 정확하게 일치하므로 호출되지 않습니다.  

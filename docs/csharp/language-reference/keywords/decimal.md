@@ -1,5 +1,6 @@
 ---
-title: decimal 키워드(C# 참조)
+title: decimal 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - decimal_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - decimal keyword [C#]
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
-ms.openlocfilehash: c9d40238ca4c34238d5663185f93afbce73195cf
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f26d812d8f4da8fae73ebbaee15441cd88860d04
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506521"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239461"
 ---
 # <a name="decimal-c-reference"></a>decimal(C# 참조)
 
@@ -60,7 +61,7 @@ myMoney = (decimal)x;
 
 `String.Format` 메서드를 사용하거나 <xref:System.Console.Write%2A?displayProperty=nameWithType>을 호출하는 `String.Format()` 메서드를 통해 결과의 서식을 지정할 수 있습니다. 통화 서식은 이 문서 뒷부분에 있는 두 번째 예제처럼 표준 통화 서식 문자열 "C" 또는 "c"를 사용하여 지정합니다. `String.Format` 메서드에 대한 자세한 내용은 <xref:System.String.Format%2A?displayProperty=nameWithType>을 참조하십시오.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음은 [double](../../../csharp/language-reference/keywords/double.md) 및 `decimal` 변수를 추가하려고 시도하여 컴파일러 오류가 발생하는 예제입니다.
 
@@ -104,4 +105,4 @@ Console.WriteLine((double)dec + dub);
 - [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)  
 - [암시적 숫자 변환 표](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
 - [명시적 숫자 변환 표](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-- [표준 숫자 형식 문자열](../../../standard/base-types/standard-numeric-format-strings.md)
+- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

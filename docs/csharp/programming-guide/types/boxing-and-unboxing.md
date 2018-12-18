@@ -1,5 +1,6 @@
 ---
-title: Boxing 및 Unboxing(C# 프로그래밍 가이드)
+title: Boxing 및 Unboxing - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - cs.boxing
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - unboxing [C#]
 - boxing [C#]
 ms.assetid: 8da9bbf4-bce9-4b08-b2e5-f64c11c56514
-ms.openlocfilehash: ded8840231c4860d538eeb8c24d1472c60426087
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 4fdaea6a9b69f50fa61ee40a43bf34953e72cef1
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44084830"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237339"
 ---
 # <a name="boxing-and-unboxing-c-programming-guide"></a>Boxing 및 Unboxing(C# 프로그래밍 가이드)
 Boxing은 [값 형식](../../../csharp/language-reference/keywords/value-types.md)을 `object` 형식 또는 이 값 형식에서 구현된 임의의 인터페이스 형식으로 변환하는 프로세스입니다. CLR은 값 형식을 boxing할 때 값을 System.Object 내부에 래핑하고 관리되는 힙에 저장합니다. unboxing하면 개체에서 값 형식이 추출됩니다. Boxing은 암시적이며 unboxing은 명시적입니다. Boxing 및 unboxing의 개념은 개체로 처리할 수 있는 모든 값 형식에서 형식 시스템의 C#에 통합된 뷰의 기반이 됩니다.  

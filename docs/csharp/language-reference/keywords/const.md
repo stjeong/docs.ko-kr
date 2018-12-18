@@ -1,5 +1,6 @@
 ---
-title: const 키워드(C# 참조)
+title: const 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - const_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - const keyword [C#]
 ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
-ms.openlocfilehash: f586b6d097a8592fd74e92df7886b519d623e478
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 63fb86ed24dd4e30d3783d70e3249b9f8e5e20bd
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513386"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245524"
 ---
 # <a name="const-c-reference"></a>const(C# 참조)
 
@@ -48,11 +49,11 @@ public const int c2 = c1 + 100;
 > [!NOTE]
 > [readonly](../../../csharp/language-reference/keywords/readonly.md) 키워드는 `const` 키워드와 다릅니다. `const` 필드는 필드 선언에서만 초기화될 수 있습니다. `readonly` 필드는 선언이나 생성자에서 초기화될 수 있습니다. 따라서 `readonly` 필드는 사용된 생성자에 따라 다른 값을 가질 수 있습니다. 또한 `const` 필드가 컴파일 시간 상수라고 하더라도 `readonly` 필드는 다음 줄에서와 같이 런타임 상수에 사용될 수 있습니다. `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [!code-csharp[csrefKeywordsModifiers#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#5)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 상수를 지역 변수로 사용하는 방법을 보여 줍니다.
 

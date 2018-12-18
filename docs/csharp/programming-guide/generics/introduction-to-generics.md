@@ -1,15 +1,16 @@
 ---
-title: 제네릭 소개(C# 프로그래밍 가이드)
+title: 제네릭 소개 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - generics [C#], about generics
 ms.assetid: a1ad761e-42f7-41dd-a62f-452a2de26b9d
-ms.openlocfilehash: 17f4c67792732be7a678ec858b6627fa712194c5
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: fd53e0abaab4ff7d242b32d6f26be13e97f20c44
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861289"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239029"
 ---
 # <a name="introduction-to-generics-c-programming-guide"></a>제네릭 소개(C# 프로그래밍 가이드)
 제네릭 클래스 및 메서드는 제네릭이 아닌 클래스 및 메서드에서는 결합할 수 없는 방식으로 재사용성, 형식 안전성 및 효율성을 결합합니다. 제네릭은 컬렉션 및 해당 컬렉션에서 작동하는 메서드에서 가장 자주 사용됩니다. .NET Framework 클래스 라이브러리 2.0 버전은 여러 가지 새로운 제네릭 기반 컬렉션 클래스가 포함된 새로운 네임스페이스 <xref:System.Collections.Generic>을 제공합니다. .NET Framework 2.0 이상을 대상으로 하는 모든 응용 프로그램은 <xref:System.Collections.ArrayList> 같은 이전의 제네릭이 아닌 컬렉션 클래스 대신 새로운 제네릭 컬렉션 클래스를 사용하는 것이 좋습니다. 자세한 내용은 [.NET의 제네릭](../../../standard/generics/index.md)을 참조하세요.  

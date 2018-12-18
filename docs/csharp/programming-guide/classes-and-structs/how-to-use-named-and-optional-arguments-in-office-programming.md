@@ -1,19 +1,20 @@
 ---
-title: '방법: Office 프로그래밍에 명명된 인수와 선택적 인수 사용(C# 프로그래밍 가이드)'
+title: '방법: Office 프로그래밍에서 명명된 인수 및 선택적 인수 사용 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - named and optional arguments [C#], Office programming
 - optional arguments [C#], Office programming
 - named arguments [C#], Office programming
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
-ms.openlocfilehash: f86509b7257f25e8faaadfc107ad70ca794aeee0
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 20228886cabd47b976506509a29f6cfd50137e5f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44190977"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243805"
 ---
-# <a name="how-to-use-named-and-optional-arguments-in-office-programming-c-programming-guide"></a>방법: Office 프로그래밍에 명명된 인수와 선택적 인수 사용(C# 프로그래밍 가이드)
+# <a name="how-to-use-named-and-optional-arguments-in-office-programming-c-programming-guide"></a>방법: Office 프로그래밍에서 명명된 인수 및 선택적 인수 사용(C# 프로그래밍 가이드)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)]에서 도입된 명명된 인수 및 선택적 인수는 C# 프로그래밍의 편의성, 유연성 및 가독성을 향상합니다. 또한 이러한 기능은 Microsoft Office 자동화 API와 같은 COM 인터페이스에 대한 액세스에 큰 도움이 됩니다.  
   
  다음 예제의 [ConvertToTable](<xref:Microsoft.Office.Interop.Word.Range.ConvertToTable%2A>) 메서드에는 열과 행 수, 서식, 테두리, 글꼴, 색 등의 테이블 특성을 나타내는 매개 변수 16개가 있습니다. 대부분의 경우 모든 매개 변수에 대해 특정 값을 지정하지는 않으므로 16개 매개 변수는 모두 선택 사항입니다. 그러나 명명된 인수와 선택적 인수를 사용하지 않을 경우 각 매개 변수에 대해 값 또는 자리 표시자 값을 제공해야 합니다. 명명된 인수와 선택적 인수를 사용할 경우 프로젝트에 필요한 매개 변수의 값만 지정합니다.  
@@ -101,7 +102,7 @@ ConvertToTable 매개 변수
   
      [!code-csharp[csProgGuideNamedAndOptional#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_8.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에는 전체 예제가 포함되어 있습니다.  
   
  [!code-csharp[csProgGuideNamedAndOptional#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_9.cs)]  

@@ -1,17 +1,18 @@
 ---
-title: using 정적 지시문(C# 참조)
+title: using 정적 지시문 - C# 참조
+ms.custom: seodec18
 ms.date: 03/10/2017
 helpviewer_keywords:
 - using static directive [C#]
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 04e7368a6b6a4453f2dd07c7afdc0bffa7473ed1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c17f74fc16e8c9774086c5270a66e9e9d7cc425b
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506674"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237781"
 ---
 # <a name="using-static-directive-c-reference"></a>using 정적 지시문(C# 참조)
 
@@ -21,7 +22,7 @@ ms.locfileid: "43506674"
 using static <fully-qualified-type-name>;
 ```
 
-여기서 *fully-qualified-type-name*은 형식 이름을 지정하지 않고 정적 멤버 및 중첩 형식을 참조할 수 있는 형식의 이름입니다. 정규화된 형식 이름(전체 네임스페이스 및 형식 이름)을 제공하지 않으면 C#은 컴파일러 오류 [CS0246](../compiler-messages/cs0246.md), "'type/namespace' 형식 또는 네임스페이스 이름을 찾을 수 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인합니다."를 생성합니다.
+여기서 *fully-qualified-type-name*은 형식 이름을 지정하지 않고 정적 멤버 및 중첩 형식을 참조할 수 있는 형식의 이름입니다. 정규화된 형식 이름(전체 네임스페이스 및 형식 이름)을 제공하지 않으면 C#에 컴파일러 오류 [CS0246](../compiler-messages/cs0246.md): “‘type/namespace’ 형식 또는 네임스페이스 이름을 찾을 수 없습니다(사용 중인 지시문 또는 어셈블리 참조가 없습니까?).”가 발생합니다.
 
 `using static` 지시문은 정적 멤버(또는 중첩 형식)가 있는 모든 형식에 적용됩니다(인스턴스 멤버가 있는 경우에도). 그러나 인스턴스 멤버는 형식 인스턴스를 통해서만 호출할 수 있습니다.
 

@@ -1,5 +1,6 @@
 ---
-title: break 문(C# 참조)
+title: break 문 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - break
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C#]
 ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
-ms.openlocfilehash: 9dc71cce3cc0ca4035df483d2b3a3ab9a3bab9c5
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 02d12ef92e1361bc8d46603d803a1b8b7c06a0a0
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47215849"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243203"
 ---
 # <a name="break-c-reference"></a>break(C# 참조)
 
 `break` 문은 배치된 지점에서 가장 가까운 바깥쪽 루프 또는 [switch](../../../csharp/language-reference/keywords/switch.md) 문을 종료합니다. 제어는 종료된 문 뒤의 문으로 전달됩니다(있는 경우).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제의 조건문에는 1부터 100까지 개수를 계산하는 카운터가 포함되지만 `break` 문은 4회 계산 후에 루프를 종료합니다.
 
@@ -30,7 +31,7 @@ ms.locfileid: "47215849"
 
 [!code-csharp[csrefKeywordsJump#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#7)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 [switch](../../../csharp/language-reference/keywords/switch.md) 문에서 `break`의 사용을 보여 줍니다.
 

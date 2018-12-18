@@ -1,16 +1,17 @@
 ---
-title: 익명 형식(C# 프로그래밍 가이드)
+title: 익명 형식 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [C#]
 - C# Language, anonymous types
 ms.assetid: 59c9d7a4-3b0e-475e-b620-0ab86c088e9b
-ms.openlocfilehash: b732de508c8738de5e5e55168a6e17a1d88a3b02
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 234190beb2cde69906df9d5c5f468689b7399535
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259823"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235987"
 ---
 # <a name="anonymous-types-c-programming-guide"></a>익명 형식(C# 프로그래밍 가이드)
 익명 형식을 사용하면 먼저 명시적으로 형식을 정의할 필요 없이 읽기 전용 속성 집합을 단일 개체로 편리하게 캡슐화할 수 있습니다. 형식 이름은 컴파일러에 의해 생성되며 소스 코드 수준에서 사용할 수 없습니다. 각 속성의 형식은 컴파일러에서 유추합니다.  

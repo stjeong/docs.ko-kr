@@ -1,16 +1,17 @@
 ---
-title: 식(C# 프로그래밍 가이드)
+title: 식 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 05/11/2017
 helpviewer_keywords:
 - expressions [C#]
 - C# language, expressions
 ms.assetid: c7d8feb0-0e58-4f94-8bf6-4d070550a832
-ms.openlocfilehash: 3cf084102186d9e13727c36ed14e2ea72ca324f9
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: b2975403c38dbb2b73c10b147a6903013a1e5573
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45615263"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239292"
 ---
 # <a name="expressions-c-programming-guide"></a>식(C# 프로그래밍 가이드)
 *expression*은 단일 값, 개체, 메서드 또는 네임스페이스로 평가될 수 있는 하나 이상의 피연산자 및 0개 이상의 연산자 시퀀스입니다. 식은 리터럴 값, 메서드 호출, 연산자 및 피연산자, *단순 이름* 등으로 구성될 수 있습니다. 단순한 이름이란 변수, 형식 멤버, 메서드 매개 변수, 네임스페이스 또는 형식의 이름일 수 있습니다.  

@@ -1,5 +1,6 @@
 ---
-title: orderby 절(C# 참조)
+title: orderby 절 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - orderby
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - orderby clause [C#]
 - orderby keyword [C#]
 ms.assetid: 21f87f48-d69d-4e95-9a52-6fec47b37e1f
-ms.openlocfilehash: de649a7e1608e6a653f3280bfd5c4e52a3b661be
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: fc6e47270c4ae035a6387bf0e8d29efcd42e902f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259534"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53240985"
 ---
 # <a name="orderby-clause-c-reference"></a>orderby 절(C# 참조)
 
@@ -25,7 +26,7 @@ ms.locfileid: "44259534"
 
 [!code-csharp[cscsrefQueryKeywords#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Orderby.cs#20)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 학생의 성을 기준으로 1차 정렬을 수행한 다음 이름을 기준으로 2차 정렬을 수행합니다.
 

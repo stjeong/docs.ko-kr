@@ -1,5 +1,6 @@
 ---
-title: event(C# 참조)
+title: event - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - event
@@ -9,18 +10,18 @@ f1_keywords:
 helpviewer_keywords:
 - event keyword [C#]
 ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
-ms.openlocfilehash: 35a42692bc87da63c69d7ccbce1b49396a84f5a2
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: a0729324131c5b3d5c49618c715fc4081af40964
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259703"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53240530"
 ---
 # <a name="event-c-reference"></a>event(C# 참조)
 `event` 키워드는 게시자 클래스에서 이벤트를 선언하는 데 사용됩니다.  
   
-## <a name="example"></a>예  
- 다음 예제에서는 <xref:System.EventHandler>를 기본 대리자 형식으로 사용하는 이벤트를 선언하고 발생시키는 방법을 보여 줍니다. 제네릭 <xref:System.EventHandler%601> 대리자 형식을 사용하는 방법 및 이벤트를 구독하고 이벤트 처리기 메서드를 만드는 방법을 보여 주는 전체 코드 예제는 [방법: .NET Framework 지침을 따르는 이벤트 게시](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)를 참조하세요.  
+## <a name="example"></a>예제  
+ 다음 예제에서는 <xref:System.EventHandler>를 기본 대리자 형식으로 사용하는 이벤트를 선언하고 발생시키는 방법을 보여 줍니다. 제네릭 <xref:System.EventHandler%601> 대리자 형식을 사용하는 방법 및 이벤트를 구독하고 이벤트 처리기 메서드를 만드는 방법을 보여주는 전체 코드 예제는 [방법: .NET Framework 지침을 따르는 이벤트 게시](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)를 참조하세요.  
   
  [!code-csharp[csrefKeywordsModifiers#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#7)]
   
@@ -53,4 +54,4 @@ ms.locfileid: "44259703"
 - [add](../../../csharp/language-reference/keywords/add.md)  
 - [remove](../../../csharp/language-reference/keywords/remove.md)  
 - [한정자](../../../csharp/language-reference/keywords/modifiers.md)  
-- [방법: 대리자 조합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+- [방법: 대리자 결합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

@@ -1,16 +1,17 @@
 ---
-title: 전용 생성자(C# 프로그래밍 가이드)
+title: 전용 생성자 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, private constructors
 - private constructors [C#]
 ms.assetid: 29eeaa7d-8d81-453c-94b9-0e2800172621
-ms.openlocfilehash: 5b387447046e4755287fc9f6a8813a19752799c2
-ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
+ms.openlocfilehash: a0ff8f69f7725b40eaac01acef74857c2a99247c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "50980718"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53240504"
 ---
 # <a name="private-constructors-c-programming-guide"></a>전용 생성자(C# 프로그래밍 가이드)
 전용 생성자는 특수 인스턴스 생성자입니다. 일반적으로 정적 멤버만 포함하는 클래스에서 사용됩니다. 클래스에 하나 이상의 private 생성자가 있고 public 생성자가 없는 경우 중첩 클래스를 제외한 다른 클래스는 이 클래스의 인스턴스를 만들 수 없습니다. 예:  
@@ -21,7 +22,7 @@ ms.locfileid: "50980718"
   
  private 생성자는 <xref:System.Math> 클래스 등의 인스턴스 필드 또는 메서드가 없는 경우 또는 메서드를 호출하여 클래스 인스턴스를 가져오는 경우 클래스 인스턴스를 만들 수 없도록 하는 데 사용됩니다. 클래스의 모든 메서드가 정적인 경우 전체 클래스를 정적 클래스로 만드는 것이 좋습니다. 자세한 내용은 [정적 클래스 및 정적 클래스 멤버](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음은 private 생성자를 사용하는 클래스의 예입니다.  
   
  [!code-csharp[csProgGuideObjects#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/private-constructors_2.cs)]  

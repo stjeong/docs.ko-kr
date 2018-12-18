@@ -1,5 +1,6 @@
 ---
-title: double 키워드(C# 참조)
+title: double 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - double
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - double data type [C#]
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
-ms.openlocfilehash: 3354f22f5d1c1f1807388542c4ada5e67a9d5a14
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 3c0fbe4f03edb829321971831c47f669d75f4d8c
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50192709"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53240374"
 ---
 # <a name="double-c-reference"></a>double(C# 참조)
 
@@ -50,7 +51,7 @@ double x = 3D;
 
 이러한 값에 대한 자세한 내용은 [IEEE](https://www.ieee.org) 웹 사이트에서 제공되는 이진 부동 소수점 연산에 대한 IEEE 표준을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 [int](../../../csharp/language-reference/keywords/int.md), [short](../../../csharp/language-reference/keywords/short.md), [float](../../../csharp/language-reference/keywords/float.md) 및 `double`을 함께 더하여 `double` 결과를 제공합니다.
 

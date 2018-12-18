@@ -1,16 +1,17 @@
 ---
-title: 기본값 식(C# 프로그래밍 가이드)
+title: 기본값 식 - C# 프로그래밍 가이드
+ms.custom: seodec18
 description: 기본값 식은 참조 형식 또는 값 형식에 대해 기본값을 생성합니다.
 ms.date: 04/25/2018
 helpviewer_keywords:
 - generics [C#], default keyword
 - default keyword [C#], generic programming
-ms.openlocfilehash: 94866f22fb3ad921a834cffb16fe17e44cef5965
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 4b14714a55f77763425299ffc13ba579ead57810
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47192630"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237287"
 ---
 # <a name="default-value-expressions-c-programming-guide"></a>기본값 식(C# 프로그래밍 가이드)
 

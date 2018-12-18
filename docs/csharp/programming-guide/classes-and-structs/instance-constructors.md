@@ -1,16 +1,17 @@
 ---
-title: 인스턴스 생성자(C# 프로그래밍 가이드)
+title: 인스턴스 생성자 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - constructors [C#], instance constructors
 - instance constructors [C#]
 ms.assetid: 24663779-c1e5-4af4-a942-ca554e4c542d
-ms.openlocfilehash: cd7105ec61e5c878dc148c30b27706b1eda3ae72
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 5cc7c06a763c4b274b154afc581e495a7e2aa09b
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530381"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241657"
 ---
 # <a name="instance-constructors-c-programming-guide"></a>인스턴스 생성자(C# 프로그래밍 가이드)
 인스턴스 생성자는 [new](../../../csharp/language-reference/keywords/new.md) 식을 사용하여 [class](../../../csharp/language-reference/keywords/class.md)의 개체를 만들 때 인스턴스 멤버 변수를 만들고 초기화하는 데 사용됩니다. [정적](../../../csharp/language-reference/keywords/static.md) 클래스 또는 비정적 클래스의 정적 변수를 초기화하려면 정적 생성자를 정의해야 합니다. 자세한 내용은 [정적 생성자](../../../csharp/programming-guide/classes-and-structs/static-constructors.md)를 참조하세요.  

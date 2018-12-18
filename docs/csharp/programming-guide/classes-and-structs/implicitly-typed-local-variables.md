@@ -1,16 +1,17 @@
 ---
-title: 암시적으로 형식화된 지역 변수(C# 프로그래밍 가이드)
+title: 암시적으로 형식화된 지역 변수 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - implicitly-typed local variables [C#]
 - var [C#]
 ms.assetid: b9218fb2-ef5d-4814-8a8e-2bc29b0bbc9b
-ms.openlocfilehash: 2e678886162196c3a0fe4762bf766596cdc02225
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 68c0ff055c91f4f1deca6fcfada0f14577439731
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43501405"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237014"
 ---
 # <a name="implicitly-typed-local-variables-c-programming-guide"></a>암시적으로 형식화된 지역 변수(C# 프로그래밍 가이드)
 명시적 형식을 제공하지 않고 지역 변수를 선언할 수 있습니다. `var` 키워드는 초기화 문의 오른쪽에 있는 식에서 변수의 형식을 유추하도록 컴파일러에 지시합니다. 유추된 형식은 기본 제공 형식, 무명 형식, 사용자 정의 형식 또는 .NET Framework 클래스 라이브러리에 정의된 형식일 수 있습니다. `var`을 사용하여 배열을 초기화하는 방법에 대한 자세한 내용은 [암시적으로 형식화된 배열](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md)을 참조하세요.  

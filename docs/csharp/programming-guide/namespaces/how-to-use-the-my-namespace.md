@@ -1,15 +1,16 @@
 ---
-title: '방법: My 네임스페이스 사용(C# 프로그래밍 가이드)'
+title: '방법: My 네임스페이스 사용 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, My namespace access
 ms.assetid: e7152414-0ea5-4c8e-bf02-c8d5bbe45ff4
-ms.openlocfilehash: a8ec3a96534693142d37d26ac0c08eec9298b178
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 00f9083fb9d0ef6c96e19e085a6cff0e0e36f2b0
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526208"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236715"
 ---
 # <a name="how-to-use-the-my-namespace-c-programming-guide"></a>방법: My 네임스페이스 사용(C# 프로그래밍 가이드)
 <xref:Microsoft.VisualBasic.MyServices> 네임스페이스(Visual Basic의 `My`)는 .NET Framework 클래스에 대한 쉽고 직관적인 액세스를 제공하여 컴퓨터, 응용 프로그램, 설정, 리소스 등을 조작하는 코드를 작성할 수 있게 해줍니다. 원래 Visual Basic에서 사용하도록 설계되었지만 `MyServices` 네임스페이스는 C# 응용 프로그램에서 사용할 수 있습니다.  
@@ -29,7 +30,7 @@ ms.locfileid: "43526208"
   
      [!code-csharp[csProgGuideNamespaces#18](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-my-namespace_1.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `MyServices` 네임스페이스에 포함된 다양한 정적 메서드를 호출합니다. 이 코드를 컴파일하려면 Microsoft.VisualBasic.DLL에 대한 참조를 프로젝트에 추가해야 합니다.  
   
  [!code-csharp[csProgGuideNamespaces#19](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-my-namespace_2.cs)]  

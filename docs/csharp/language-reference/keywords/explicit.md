@@ -1,5 +1,6 @@
 ---
-title: explicit 키워드(C# 참조)
+title: explicit 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 08/24/2018
 f1_keywords:
 - explicit_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - explicit keyword [C#]
 ms.assetid: cfb8f42a-e411-4db2-af9b-796b05644846
-ms.openlocfilehash: 3567a2c5aa549aa3141ed59c3e93e7b07975da70
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1b5e03ffa0f956d7404c7c41f04aef1bfd8769df
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525463"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53238561"
 ---
 # <a name="explicit-c-reference"></a>explicit(C# 참조)
 
@@ -32,13 +33,13 @@ ms.locfileid: "43525463"
 
 자세한 내용은 [변환 연산자 사용](../../programming-guide/statements-expressions-operators/using-conversion-operators.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `Fahrenheit` 및 `Celsius` 클래스를 제공하며, 각 클래스는 다른 클래스에 명시적 변환 연산자를 제공합니다.
 
 [!code-csharp[csrefKeywordsConversion#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsConversion/CS/csrefKeywordsConversion.cs#1)]
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 한 자리 숫자를 나타내는 `Digit` 구조체를 정의합니다. `byte`에서 `Digit`로 변환하는 연산자를 정의하지만 일부 바이트는 `Digit`로 변환할 수 없기 때문에 명시적 변환이 됩니다.
 

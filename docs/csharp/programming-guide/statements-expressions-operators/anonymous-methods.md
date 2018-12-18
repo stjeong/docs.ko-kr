@@ -1,17 +1,18 @@
 ---
-title: 무명 메서드(C# 프로그래밍 가이드)
+title: 무명 메서드 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous methods [C#]
 - methods [C#], anonymous
 - delegates [C#], anonymous methods
 ms.assetid: a62441fa-f0a3-4acb-9aa6-93762a635275
-ms.openlocfilehash: 26d4b7f46783b9aa41035775928a4fe322d0af44
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6f7eb71b6208b1991044b770a3c42cc05d8fb721
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506659"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243982"
 ---
 # <a name="anonymous-methods-c-programming-guide"></a>무명 메서드(C# 프로그래밍 가이드)
 2.0 이전의 C# 버전에서 [delegate](../../../csharp/language-reference/keywords/delegate.md)를 선언하는 유일한 방법은 [명명된 메서드](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)를 사용하는 것이었습니다. C# 2.0에서는 무명 메서드가 도입되었고, C# 3.0 이상에서는 람다 식이 인라인 코드를 작성하는 기본 방법으로 무명 메서드를 대체합니다. 그러나 이 항목의 무명 메서드 관련 정보는 람다 식에도 적용됩니다. 무명 메서드가 람다 식에서 찾을 수 없는 기능을 제공하는 한 가지 경우가 있습니다. 무명 메서드를 사용하여 매개 변수 목록을 생략할 수 있습니다. 즉, 무명 메서드를 여러 시그니처를 가진 대리자로 변환할 수 있습니다. 람다 식에서는 이 작업이 불가능합니다. 람다 식에 대한 자세한 내용은 [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)을 참조하세요.  
@@ -45,7 +46,7 @@ ms.locfileid: "43506659"
   
  [is](../../../csharp/language-reference/keywords/is.md) 연산자의 왼쪽에는 무명 메서드를 사용할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 대리자를 인스턴스화하는 다음 두 가지 방법을 보여 줍니다.  
   
 -   무명 메서드에 대리자 연결  

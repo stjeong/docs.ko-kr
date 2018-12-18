@@ -1,16 +1,17 @@
 ---
-title: '대리자 비교: 명명된 메서드 및 무명 메서드(C# 프로그래밍 가이드)'
+title: '대리자 비교: 명명된 메서드 및 무명 메서드 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - delegates [C#], with named vs. anonymous methods
 - methods [C#], in delegates
 ms.assetid: 98fa8c61-66b6-4146-986c-3236c4045733
-ms.openlocfilehash: 6d7dcb3c7c6fa8f1d55237504c23cf468aa0e79d
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 586ad5a59eebb03ed9ed6bea68d232a6b249c3c9
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45678524"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241493"
 ---
 # <a name="delegates-with-named-vs-anonymous-methods-c-programming-guide"></a>대리자 비교: 명명된 메서드 및 무명 메서드(C# 프로그래밍 가이드)
 [대리자](../../../csharp/language-reference/keywords/delegate.md)는 명명된 메서드에 연결할 수 있습니다. 명명된 메서드를 사용하여 대리자를 인스턴스화하면 메서드가 매개 변수로 전달됩니다. 예를 들면 다음과 같습니다.  
@@ -41,5 +42,5 @@ ms.locfileid: "45678524"
 - [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
 - [대리자](../../../csharp/programming-guide/delegates/index.md)  
 - [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
-- [방법: 대리자 조합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
+- [방법: 대리자 결합(멀티캐스트 대리자)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
 - [이벤트](../../../csharp/programming-guide/events/index.md)

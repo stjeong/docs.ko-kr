@@ -1,17 +1,18 @@
 ---
-title: '#pragma warning(C# 참조)'
+title: '#pragma warning - C# 참조'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - '#pragma warning'
 helpviewer_keywords:
 - '#pragma warning [C#]'
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
-ms.openlocfilehash: 89ff8151d55ac58a1b114f7727297704ce26b9a7
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 3b50585e0ae0964cf19379573bd85923daa552f4
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44083654"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242739"
 ---
 # <a name="pragma-warning-c-reference"></a>#pragma warning(C# 참조)
 `#pragma warning`은 특정 경고를 사용하거나 사용하지 않도록 설정합니다.  
@@ -32,7 +33,7 @@ ms.locfileid: "44083654"
 > [!NOTE]
 >  Visual Studio에서 경고 번호를 찾으려면 프로젝트를 빌드하고 **출력** 창에서 경고 번호를 찾습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp
 // pragma_warning.cs  

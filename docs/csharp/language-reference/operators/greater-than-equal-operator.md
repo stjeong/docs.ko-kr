@@ -1,5 +1,6 @@
 ---
-title: '&gt;= 연산자(C# 참조)'
+title: '&gt;= 연산자 - C# 참조'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - '>=_CSharpKeyword'
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - greater than or equal to operator (>=) [C#]
 - '>= operator [C#]'
 ms.assetid: 0db4dcaf-56a3-4884-a7ad-35f64978a58d
-ms.openlocfilehash: 8749d1dc0670a5a76bda5ee0d69a4a142671c1e6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9bea9034d2998a589fefca19f41444c9aced6e13
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511095"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237716"
 ---
 # <a name="gt-operator-c-reference"></a>&gt;= 연산자(C# 참조)
 모든 숫자 형식과 열거형은 첫 번째 피연산자가 두 번째 피연산자보다 크거나 같을 경우에 `true`를 반환하고, 그렇지 않으면 `false`를 반환하는 “크거나 같음" 관계 연산자(`>=`)를 정의합니다.  
@@ -20,7 +21,7 @@ ms.locfileid: "43511095"
 ## <a name="remarks"></a>설명  
  사용자 정의 형식은 `>=` 연산자를 오버로드할 수 있습니다. 자세한 내용은 [operator](../../../csharp/language-reference/keywords/operator.md)를 참조하세요. `>=` 연산자가 오버로드되면 [<=](../../../csharp/language-reference/operators/less-than-equal-operator.md) 또한 오버로드되어야 합니다. 정수 계열 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csRefOperators#39](../../../csharp/language-reference/operators/codesnippet/CSharp/greater-than-equal-operator_1.cs)]  
   
 ## <a name="see-also"></a>참고 항목

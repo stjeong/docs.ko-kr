@@ -1,5 +1,6 @@
 ---
-title: '&lt;para&gt;(C# 프로그래밍 가이드)'
+title: '&lt;para&gt; - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - <para>
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <para> C# XML tag
 - para C# XML tag
 ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
-ms.openlocfilehash: e51df23db97aadddbc4c4e8c3cb38bda7ff7e3a4
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 807b2297dd1b8e00aa9b646f28fefbcb1148fe83
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47192838"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237950"
 ---
 # <a name="ltparagt-c-programming-guide"></a>&lt;para&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -31,7 +32,7 @@ ms.locfileid: "47192838"
   
  [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  \<para>를 사용한 예제는 [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목

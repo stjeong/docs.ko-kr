@@ -1,15 +1,16 @@
 ---
-title: 액세스 한정자(C# 참조)
+title: 액세스 한정자 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - access modifiers [C#]
 ms.assetid: 61c3fa51-c00f-48cb-9b49-c805dedd62d7
-ms.openlocfilehash: ff313df9683dbc76bab684ff484b746ad05e065a
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 0fb435a35b928cb78511d8969f1dfce9f94869eb
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45988194"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242024"
 ---
 # <a name="access-modifiers-c-reference"></a>액세스 한정자(C# 참조)
 액세스 한정자는 멤버 또는 형식의 선언된 접근성을 지정하는 데 사용되는 키워드입니다. 이 섹션에서는 다음 네 가지 액세스 한정자를 소개합니다.  
@@ -35,11 +36,11 @@ ms.locfileid: "45988194"
   
  이 섹션에서는 다음 내용도 소개합니다.  
   
--   [접근성 수준](../../../csharp/language-reference/keywords/accessibility-levels.md): 네 가지 액세스 한정자를 사용하여 여섯 가지 접근성 수준을 선언합니다.  
+-   [액세스 가능성 수준](../../../csharp/language-reference/keywords/accessibility-levels.md): 네 가지 액세스 한정자를 사용하여 여섯 가지 액세스 가능성 수준을 선언합니다.  
   
--   [접근성 도메인](../../../csharp/language-reference/keywords/accessibility-domain.md): 프로그램 섹션에서 멤버를 참조할 수 있는 위치를 지정합니다.  
+-   [액세스 가능성 도메인](../../../csharp/language-reference/keywords/accessibility-domain.md): 프로그램 섹션에서 멤버를 참조할 수 있는 위치를 지정합니다.  
   
--   [접근성 수준 사용에 대한 제한](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md): 선언된 접근성 수준 사용에 대한 제한 사항 요약입니다.  
+-   [액세스 가능성 수준 사용에 대한 제한](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md): 선언된 접근성 수준 사용에 대한 제한 요약입니다.  
   
 ## <a name="see-also"></a>참고 항목  
 - [C# 참조](../../../csharp/language-reference/index.md)  

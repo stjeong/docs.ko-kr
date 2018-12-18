@@ -1,15 +1,16 @@
 ---
-title: '방법: 파생 클래스에서 기본 클래스 이벤트 발생(C# 프로그래밍 가이드)'
+title: '방법: 파생 클래스에서 기본 클래스 이벤트 발생 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - events [C#], in derived classes
 ms.assetid: 2d20556a-0aad-46fc-845e-f85d86ea617a
-ms.openlocfilehash: 51bc6621d49bbb16313c900a92b539c30eb61ff0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 11f34e230a1f953ba3d886e416f1ece4253e3c8d
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525201"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239620"
 ---
 # <a name="how-to-raise-base-class-events-in-derived-classes-c-programming-guide"></a>방법: 파생 클래스에서 기본 클래스 이벤트 발생(C# 프로그래밍 가이드)
 다음 간단한 예제에서는 파생 클래스에서도 발생할 수 있도록 기본 클래스에서 이벤트를 선언하는 표준 방법을 보여 줍니다. 이 패턴은 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 클래스 라이브러리의 Windows Forms 클래스에서 광범위하게 사용됩니다.  
@@ -19,7 +20,7 @@ ms.locfileid: "43525201"
 > [!NOTE]
 >  기본 클래스에서 가상 이벤트를 선언하지 말고 파생 클래스에서 재정의합니다. C# 컴파일러는 이러한 이벤트를 올바르게 처리하지 않으며, 파생 이벤트의 구독자가 실제로 기본 클래스 이벤트를 구독할지 여부를 예측할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-raise-base-class-events-in-derived-classes_1.cs)]  
   
 ## <a name="see-also"></a>참고 항목

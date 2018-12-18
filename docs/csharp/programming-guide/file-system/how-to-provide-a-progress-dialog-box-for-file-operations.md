@@ -1,15 +1,16 @@
 ---
-title: '방법: 파일 작업에 대한 진행률 대화 상자 제공(C# 프로그래밍 가이드)'
+title: '방법: 파일 작업에 대한 진행률 대화 상자 제공 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - progress dialog [C#]
 ms.assetid: 01b71fe7-8178-4dc8-aeb1-12053be7b51c
-ms.openlocfilehash: e93ce06a01046dfaf4465470ba7fdc687effa58d
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 13f924566df0d7fe601e32bfe74878c18d8e64b8
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47207405"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245391"
 ---
 # <a name="how-to-provide-a-progress-dialog-box-for-file-operations-c-programming-guide"></a>방법: 파일 작업에 대한 진행률 대화 상자 제공(C# 프로그래밍 가이드)
 <xref:Microsoft.VisualBasic?displayProperty=nameWithType> 네임스페이스의 <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%28System.String%2CSystem.String%2CMicrosoft.VisualBasic.FileIO.UIOption%29> 메서드를 사용하는 경우 Windows에서 파일 작업 진행률을 보여 주는 표준 대화 상자를 제공할 수 있습니다.  

@@ -1,5 +1,6 @@
 ---
-title: 네임스페이스 사용(C# 프로그래밍 가이드)
+title: 네임스페이스 사용 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - cs.names
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - fully qualified names [C#]
 - namespaces [C#], how to use
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
-ms.openlocfilehash: 81876d1818a6e82764e4aea0ae2b6f9e091f0ba3
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: d29de118e928522dcc3a4b4ab32fe2d2c4d1f2f9
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123399"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235786"
 ---
 # <a name="using-namespaces-c-programming-guide"></a>네임스페이스 사용(C# 프로그래밍 가이드)
 네임스페이스는 C# 프로그램 내에서 두 가지 방법으로 많이 사용됩니다. 첫째, .NET Framework 클래스는 네임스페이스를 사용하여 많은 클래스를 구성합니다. 둘째, 고유한 네임스페이스를 선언하면 대규모 프로그래밍 프로젝트에서 클래스 및 메서드 이름의 범위를 제어할 수 있습니다.  

@@ -1,5 +1,6 @@
 ---
-title: '&lt;include&gt;(C# 프로그래밍 가이드)'
+title: '&lt;include&gt; - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - include
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <include> C# XML tag
 - include C# XML tag
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
-ms.openlocfilehash: 854c8b61fa8164bccfc9451f2f163dab4a56388f
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 05c671f029e9597db05fe2104424545d0ee2b98f
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48035190"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239414"
 ---
 # <a name="ltincludegt-c-programming-guide"></a>&lt;include&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -40,7 +41,7 @@ ms.locfileid: "48035190"
   
  \<include> 태그는 XML XPath 구문을 사용합니다. \<include> 사용을 사용자 지정하는 방법은 XPath 설명서를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다중 파일 예제입니다. 아래에는 \<include>를 사용하는 첫 번째 파일이 나와 있습니다.  
   
  [!code-csharp[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
@@ -66,7 +67,7 @@ The summary for this other type.
 ```  
   
 ## <a name="program-output"></a>프로그램 출력  
- `/doc:DocFileName.xml.` 명령줄을 사용하여 Test 및 Test2 클래스를 컴파일하면 다음 출력이 생성됩니다. Visual Studio에서 프로젝트 디자이너의 빌드 창에 있는 XML 문서 주석 옵션을 지정합니다. C# 컴파일러는 \<inclue> 태그를 발견할 경우 현재 소스 파일 대신 xml_include_tag.doc에서 문서 주석을 검색합니다. 그런 다음 컴파일러는 DocFileName.xml을 생성합니다. 이 파일은 [Sandcastle](https://github.com/EWSoftware/SHFB) 등의 문서 도구에서 최종 문서를 생성하는 데 사용하는 파일입니다.  
+ 다음 명령줄을 사용하여 테스트 및 Test2 클래스를 컴파일하는 경우 다음 출력이 생성됩니다. `/doc:DocFileName.xml.` Visual Studio에서 프로젝트 디자이너의 빌드 창에 XML 문서 주석 옵션을 지정합니다. C# 컴파일러는 \<inclue> 태그를 발견할 경우 현재 소스 파일 대신 xml_include_tag.doc에서 문서 주석을 검색합니다. 그런 다음 컴파일러는 DocFileName.xml을 생성합니다. 이 파일은 [Sandcastle](https://github.com/EWSoftware/SHFB) 등의 문서 도구에서 최종 문서를 생성하는 데 사용하는 파일입니다.  
   
 ```xml  
 <?xml version="1.0"?>   

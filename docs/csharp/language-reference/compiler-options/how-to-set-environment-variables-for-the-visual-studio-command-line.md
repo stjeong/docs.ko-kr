@@ -15,16 +15,16 @@ helpviewer_keywords:
 - Visual C# compiler, enabling
 - compiling source code, from command line
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
-ms.openlocfilehash: 77375e428fe0563c0b533ca97abd21070e850682
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 3563f668dfd4610e1c5cd7d7f8633943c654f193
+ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857851"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53286444"
 ---
 # <a name="how-to-set-environment-variables-for-the-visual-studio-command-line"></a>방법: Visual Studio 명령줄에 필요한 환경 변수 설정
 
-VsDevCmd.bat 파일은 명령줄 빌드를 사용하도록 적절한 환경 변수를 설정합니다. VsDevCmd.bat에 대한 자세한 내용은 [기술 자료 문서 Q248802](https://support.microsoft.com/help/248802/you-receive-the-out-of-environment-space-error-message-when-you-execut)를 참조하세요.  
+VsDevCmd.bat 파일은 명령줄 빌드를 사용하도록 적절한 환경 변수를 설정합니다.
 
 > [!NOTE]
 > VsDevCmd.bat 파일은 Visual Studio 2017과 함께 제공되는 새로운 파일입니다. Visual Studio 2015 및 이전 버전에서도 VSVARS32.bat가 같은 용도로 사용됩니다. 이 파일은 \Program Files\Microsoft Visual Studio\\*Version*\Common7\Tools 또는 Program Files (x86)\Microsoft Visual Studio\\*Version*\Common7\Tools에 저장되었습니다.
@@ -41,7 +41,14 @@ Visual Studio의 이전 버전이 설치된 컴퓨터에 Visual Studio의 최신
   
     > [!CAUTION]
     >  VsDevCmd.bat는 컴퓨터마다 다를 수 있습니다. 누락되거나 손상된 VsDevCmd.bat 파일을 다른 컴퓨터의 VsDevCmd.bat 파일로 바꾸지 마세요. 대신 설치 프로그램을 다시 실행하여 누락된 파일을 교체하십시오.  
-  
+
+### <a name="available-options-for-vsdevcmdbat"></a>VsDevCmd.BAT에 사용 가능한 옵션
+
+VsDevCmd.BAT에 사용 가능한 옵션을 보려면 `-help` 옵션을 사용하여 명령을 실행하세요.
+```console
+VsDevCmd.bat -help
+```
+
 ## <a name="see-also"></a>참고 항목  
 
 - [csc.exe를 사용한 명령줄 빌드](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

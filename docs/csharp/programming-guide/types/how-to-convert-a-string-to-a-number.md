@@ -1,5 +1,6 @@
 ---
-title: '방법: 문자열을 숫자로 변환(C# 프로그래밍 가이드)'
+title: '방법: 문자열을 숫자로 변환 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - conversions [C#]
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - converting strings to int [C#]
 - strings [C#], converting to int
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
-ms.openlocfilehash: 1f11ba3981b219d3b3a7817afd75fa78f2ccf78a
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a75d6dd5fdb74ca3cb6fe28db7415aeb478e2237
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521755"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243220"
 ---
 # <a name="how-to-convert-a-string-to-a-number-c-programming-guide"></a>방법: 문자열을 숫자로 변환(C# 프로그래밍 가이드)
 <xref:System.Convert> 클래스의 메서드를 사용하거나 다양한 숫자 형식(int, long, float 등)에 있는 `TryParse` 메서드를 사용하여 [문자열](../../../csharp/language-reference/keywords/string.md)을 숫자로 변환할 수 있습니다.  
@@ -21,7 +22,7 @@ ms.locfileid: "43521755"
   
  `Parse` 또는 `TryParse` 메서드는 <xref:System.Int32?displayProperty=nameWithType> 형식과 같이 문자열에 포함되는 숫자 형식에서 사용할 수 있습니다.  <xref:System.Convert.ToUInt32%2A?displayProperty=nameWithType> 메서드는 <xref:System.Int32.Parse%2A>를 내부적으로 사용합니다.  문자열이 올바른 형식이 아닌 경우 `Parse`는 예외를 throw하는 반면 `TryParse`는 [false](../../../csharp/language-reference/keywords/false.md)를 반환합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  `Parse` 및 `TryParse` 메서드는 문자열의 시작과 끝에 있는 공백을 무시하지만 다른 모든 문자는 적절한 숫자 형식(int, long, ulong, float, 10진수 등)을 구성하는 문자여야 합니다.  숫자를 구성하는 문자 내에 공백이 있으면 오류가 발생합니다.  예를 들어 `decimal.TryParse`를 사용하여 "10", "10.3", "  10  "은 구문 분석할 수 있지만 이 메서드를 사용하여 "10X", "1 0"(공백 포함), "10 .3"(공백 포함), "10e1"(`float.TryParse` 사용) 등에서 10을 구문 분석할 수는 없습니다.  
   
  다음 예제에서는 `Parse` 및 `TryParse`에 대한 호출이 성공하는 경우와 실패하는 경우를 모두 보여 줍니다.  

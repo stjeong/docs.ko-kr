@@ -1,5 +1,6 @@
 ---
-title: ?? 연산자(C# 참조)
+title: ?? 연산자 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - ??_CSharpKeyword
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ?? operator [C#]
 - conditional-AND operator (&&) [C#]
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
-ms.openlocfilehash: fbcfda07cc55628aeed82eb7561516f7012bc4fe
-ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
+ms.openlocfilehash: 153accdc4995065563b00da0fd62992341c06cf1
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "50980676"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241881"
 ---
 # <a name="-operator-c-reference"></a>?? 연산자(C# 참조)
 `??` 연산자는 null 병합 연산자라고 합니다.  이 연산자는 피연산자가 null이 아닐 경우 왼쪽 피연산자를 반환하고 null일 경우 오른쪽 피연산자를 반환합니다.  
@@ -25,7 +26,7 @@ ms.locfileid: "50980676"
   
  ?? 연산자의 결과는 해당 두 인수가 모두 상수인 경우에도 상수로 간주되지 않습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
   
 ## <a name="c-language-specification"></a>C# 언어 사양  

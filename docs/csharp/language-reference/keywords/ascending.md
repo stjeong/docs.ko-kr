@@ -1,5 +1,6 @@
 ---
-title: ascending(C# 참조)
+title: ascending - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - ascending
@@ -7,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - ascending keyword [C#]
 ms.assetid: 57fbb619-8187-481c-b68e-3a91996fde69
-ms.openlocfilehash: 77801fcf443556515e6f1414490a1deeb4fa7bc4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 66e5bf2f0ce912fc64124de6983ffba8874dff05
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513297"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242986"
 ---
 # <a name="ascending-c-reference"></a>ascending(C# 참조)
 `ascending` 상황별 키워드는 쿼리 식의 [orderby 절](../../../csharp/language-reference/keywords/orderby-clause.md)에서 사용되어 정렬 순서를 가장 작은 값에서 가장 큰 값의 오름차순으로 지정합니다. `ascending`은 기본 정렬 순서이므로 지정할 필요가 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 [orderby 절](../../../csharp/language-reference/keywords/orderby-clause.md)에 `ascending`을 사용하는 방법을 보여 줍니다.  
   
 [!code-csharp[csrefKeywordsContextual#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#14)]

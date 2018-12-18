@@ -1,16 +1,17 @@
 ---
-title: 멤버(C# 프로그래밍 가이드)
+title: 멤버 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - types [C#], nested types
 - C# language, type members
 ms.assetid: 4a30a4ab-d690-4936-9124-92ce9448665a
-ms.openlocfilehash: dbfd0c48dc59b094af49e65d2ed4fcd4e2a70ff0
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: e8429df6ef633f11df50ee5526496f9688f845ea
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087561"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245106"
 ---
 # <a name="members-c-programming-guide"></a>멤버(C# 프로그래밍 가이드)
 클래스 및 구조체에는 해당 데이터와 동작을 나타내는 멤버가 있습니다. 클래스의 멤버에는 클래스에서 선언된 모든 멤버가 상속 계층 구조의 모든 클래스에서 선언된 모든 멤버(생성자 및 종료자 제외)와 함께 포함됩니다. 기본 클래스의 private 멤버는 상속되지만 파생 클래스에서 액세스할 수 없습니다.  

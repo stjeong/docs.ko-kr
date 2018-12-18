@@ -1,5 +1,6 @@
 ---
-title: sealed 한정자(C# 참조)
+title: sealed 한정자 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - sealed
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - sealed keyword [C#]
 ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
-ms.openlocfilehash: cf6b85e2a04870b454b3bfea4d534680d22da8d1
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: babad3b07c5faea1381e6af13d3c713122de2332
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188588"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53235178"
 ---
 # <a name="sealed-c-reference"></a>sealed(C# 참조)
 
@@ -25,7 +26,7 @@ sealed class B : A {}
 
 기본 클래스의 가상 메서드 또는 속성을 재정의하는 메서드 또는 속성에 `sealed` 한정자를 사용할 수도 있습니다. 이렇게 하면 사용자 클래스에서 클래스가 파생되고 특정 가상 메서드 또는 속성을 재정의하지 못하도록 할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서 `Z`는 `Y`에서 상속하지만 `Z`는 `X`에서 선언되고 `Y`에서 봉인된 가상 함수 `F`를 재정의할 수 없습니다.
 
@@ -43,7 +44,7 @@ sealed class B : A {}
 
 더 많은 예제를 보려면 [추상 및 봉인 클래스와 클래스 멤버](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [!code-csharp[csrefKeywordsModifiers#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#17)]
 

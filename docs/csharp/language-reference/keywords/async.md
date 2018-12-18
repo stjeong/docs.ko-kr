@@ -1,5 +1,6 @@
 ---
-title: async(C# 참조)
+title: async - C# 참조
+ms.custom: seodec18
 ms.date: 05/22/2017
 f1_keywords:
 - async_CSharpKeyword
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - async method [C#]
 - async [C#]
 ms.assetid: 16f14f09-b2ce-42c7-a875-e4eca5d50674
-ms.openlocfilehash: 021a4291f550eca517cbdc9769c2a9f0aca99d1e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 7bf45a701b10372d8cc4061db13f347eb0ddae91
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199879"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242434"
 ---
 # <a name="async-c-reference"></a>async(C# 참조)
 `async` 한정자를 사용하여 메서드, [람다 식](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) 또는 [무명 메서드](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)를 비동기로 지정합니다. 메서드 또는 식에 이 한정자를 사용하면 *비동기 메서드*라고 합니다. 다음 예제에서는 `ExampleMethodAsync`라는 비동기 메서드를 정의합니다. 
@@ -62,7 +63,7 @@ Visual Studio에서 이 코드를 WPF(Windows Presentation Foundation) 앱 또�
 [!code-csharp[wpf-async](../../../../samples/snippets/csharp/language-reference/keywords/async/wpf/mainwindow.xaml.cs#1)]
   
 > [!IMPORTANT]
->  작업 및 작업 완료를 기다리는 동안 실행되는 코드에 대한 자세한 내용은 [async 및 await를 사용한 비동기 프로그래밍](../../../csharp/programming-guide/concepts/async/index.md)을 참조하세요. 비슷한 요소를 사용하는 전체 WPF 예제에 대해서는 [연습: Async 및 Await를 사용하여 웹에 액세스](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)를 참조하세요.  
+>  작업 및 작업 완료를 기다리는 동안 실행되는 코드에 대한 자세한 내용은 [async 및 await를 사용한 비동기 프로그래밍](../../../csharp/programming-guide/concepts/async/index.md)을 참조하세요. 비슷한 요소를 사용하는 전체 WPF 예제를 보려면 [연습: Async 및 Await를 사용하여 웹에 액세스](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)를 참조하세요.  
   
 ## <a name="return-types"></a>반환 형식  
 비동기 메서드의 반환 형식은 다음과 같을 수 있습니다.

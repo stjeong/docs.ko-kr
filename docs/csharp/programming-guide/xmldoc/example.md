@@ -1,5 +1,6 @@
 ---
-title: '&lt;예제&gt;(C# 프로그래밍 가이드)'
+title: '&lt;예제&gt;C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - <example>
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <example> C# XML tag
 - example C# XML tag
 ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
-ms.openlocfilehash: 9998f64eb1dffd3441bcf02f2eb60950910f01d1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 92f28e630d18800ddea0f31adbd9f0291e06d202
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520788"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244221"
 ---
 # <a name="ltexamplegt-c-programming-guide"></a>&lt;예제&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -31,7 +32,7 @@ ms.locfileid: "43520788"
   
  [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/example_1.cs)]  
   
 ## <a name="see-also"></a>참고 항목

@@ -1,20 +1,21 @@
 ---
-title: using 문(C# 참조)
+title: using 문 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - using statement [C#]
 ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3
-ms.openlocfilehash: ec4849dda0f28ad1f0e0ebb2c493a33005107db4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9569b04e4d4f7bfca90390bfd803cdd02b3f3632
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500974"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244598"
 ---
 # <a name="using-statement-c-reference"></a>using 문(C# 참조)
 <xref:System.IDisposable> 개체의 올바른 사용을 보장하는 편리한 구문을 제공합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `using` 문을 사용하는 방법을 보여 줍니다.  
   
  [!code-csharp[csrefKeywordsNamespace#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_1.cs)]  

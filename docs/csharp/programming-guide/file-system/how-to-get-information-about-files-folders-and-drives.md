@@ -1,15 +1,16 @@
 ---
-title: '방법: 파일, 폴더 및 드라이브에 대한 정보 가져오기(C# 프로그래밍 가이드)'
+title: '방법: 파일, 폴더 및 드라이브에 대한 정보 가져오기 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - files [C#], getting information about
 ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
-ms.openlocfilehash: 8ebacff0f3a1704ec001e3570d0df136f54baf9d
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: e3b0834f27fd0673687dc00b861e80752a585737
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46702961"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243961"
 ---
 # <a name="how-to-get-information-about-files-folders-and-drives--c-programming-guide"></a>방법: 파일, 폴더 및 드라이브에 대한 정보 가져오기(C# 프로그래밍 가이드)
 .NET Framework에서 다음 클래스를 사용하여 파일 시스템 정보에 액세스할 수 있습니다.  
@@ -34,7 +35,7 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
   
  <xref:System.IO.Directory?displayProperty=nameWithType> 및 <xref:System.IO.File?displayProperty=nameWithType> 클래스는 디렉터리와 파일에 대한 정보를 가져오기 위한 정적 메서드를 제공합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 파일 및 폴더에 대한 정보에 액세스하는 다양한 방법을 보여 줍니다.  
   
  [!code-csharp[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-get-information-about-files-folders-and-drives_1.cs)]  

@@ -1,5 +1,6 @@
 ---
-title: yield(C# 참조)
+title: yield - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - yield
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - yield keyword [C#]
 ms.assetid: 1089194f-9e53-46a2-8642-53ccbe9d414d
-ms.openlocfilehash: be93b91ceaecdcf00029be57f07b9237a60c07b9
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: 7b718417fc421b9024e023964c4f29478b52c4ca
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48261543"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239279"
 ---
 # <a name="yield-c-reference"></a>yield(C# 참조)
 문에 `yield` [상황별 키워드](../../../csharp/language-reference/keywords/index.md#contextual-keywords)를 사용하는 경우 해당 메서드, 연산자, 또는 이 키워드가 나타나는 `get` 접근자가 반복기임을 나타냅니다. `yield`를 사용하여 반복기를 정의할 경우 사용자 지정 컬렉션 형식에 <xref:System.Collections.Generic.IEnumerator%601> 및 <xref:System.Collections.IEnumerable> 패턴을 구현하면 명시적 추가 클래스(열거형의 상태를 보관하는 클래스, 예제는 <xref:System.Collections.IEnumerator> 참조)를 사용하지 않아도 됩니다.  

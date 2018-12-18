@@ -1,5 +1,6 @@
 ---
-title: float 키워드(C# 참조)
+title: float 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - float
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - float keyword [C#]
 - floating-point numbers [C#], float keyword
 ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
-ms.openlocfilehash: da697aa6f1f429418a69d9f58a13f46a3da9ac74
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4ca256bf7204cdaad7d49ed19c662ab81bb01bf9
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50187181"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242453"
 ---
 # <a name="float-c-reference"></a>float(C# 참조)
 
@@ -53,7 +54,7 @@ float x = 3.5F;
 
 이러한 값에 대한 자세한 내용은 [IEEE](https://www.ieee.org) 웹 사이트에서 제공되는 이진 부동 소수점 연산에 대한 IEEE 표준을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 [int](int.md), [short](short.md) 및 `float`가 수학 식에 포함되어 `float` 결과를 제공합니다. (`float`는 <xref:System.Single?displayProperty=nameWithType> 형식의 별칭입니다.) 식에 [double](double.md)이 없습니다.
 

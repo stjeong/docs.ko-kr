@@ -1,5 +1,6 @@
 ---
-title: as(C# 참조)
+title: as - C# 참조
+ms.custom: seodec18
 ms.date: 10/11/2018
 f1_keywords:
 - as_CSharpKeyword
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - type conversion [C#], as keyword
 - as keyword [C#]
 ms.assetid: a9be126b-cbf4-4990-a70d-d0e1983cad0e
-ms.openlocfilehash: d6c9d44ff22881e6e5e7a542e1df41bbf77b23d8
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: 7559c24151a3c9acc79c0554112c923a23a88564
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "49122727"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244351"
 ---
 # <a name="as-c-reference"></a>as(C# 참조)
 `as` 연산자를 사용하여 호환되는 참조 형식 또는 [nullable 형식](../../../csharp/programming-guide/nullable-types/index.md) 간에 특정 형식의 변환을 수행할 수 있습니다. 다음 코드는 예제를 보여 줍니다.  
@@ -37,7 +38,7 @@ expression is type ? (type)expression : (type)null
   
  `as` 연산자는 참조 변환, nullable 변환 및 boxing 변환만 수행합니다. `as` 연산자는 캐스트 식을 사용하여 수행해야 하는 사용자 정의 변환 등의 기타 변환을 수행할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
 
 [!code-csharp[csrefKeywordsOperator#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#2)]
   

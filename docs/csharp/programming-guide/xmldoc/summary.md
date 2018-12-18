@@ -1,5 +1,6 @@
 ---
-title: '&lt;summary&gt;(C# 프로그래밍 가이드)'
+title: '&lt;summary&gt; - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - <summary>
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <summary> C# XML tag
 - summary C# XML tag
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-ms.openlocfilehash: cd52d68a5b59648aa2253c515dabd334c22dad5d
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 5aaa9b08b422c06cc6b009e5e9d781e8be46af7e
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259836"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237300"
 ---
 # <a name="ltsummarygt-c-programming-guide"></a>&lt;summary&gt;(C# 프로그래밍 가이드)
 ## <a name="syntax"></a>구문  
@@ -33,7 +34,7 @@ ms.locfileid: "44259836"
   
  [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)로 컴파일하여 문서 주석을 파일로 처리합니다. 컴파일러에서 생성한 파일을 기반으로 최종 문서를 만들려면 사용자 지정 도구를 만들거나 [Sandcastle](https://github.com/EWSoftware/SHFB)과 같은 도구를 사용하면 됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_1.cs)]  
   
  앞의 예제에서는 다음 XML 파일을 생성합니다.  
@@ -61,7 +62,7 @@ ms.locfileid: "44259836"
 </doc>  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 제네릭 형식에 대한 `cref` 참조를 만드는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_2.cs)]  

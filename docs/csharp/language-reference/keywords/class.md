@@ -1,5 +1,6 @@
 ---
-title: class 키워드(C# 참조)
+title: class 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/18/2017
 f1_keywords:
 - class_CSharpKeyword
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - class keyword [C#]
 ms.assetid: b95d8815-de18-4c3f-a8cc-a0a53bdf8690
-ms.openlocfilehash: 3f30fb473b486efc8381faa9076b98763935b0ae
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: d436dee14280d86062834ac131bbe4775705d748
+ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086066"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53286496"
 ---
 # <a name="class-c-reference"></a>class(C# 참조)
 
@@ -75,7 +76,7 @@ C#에서는 단일 상속만 허용됩니다. 즉, 한 클래스는 하나의 �
 
 - [열거형](../../../csharp/programming-guide/enumeration-types.md)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 클래스 필드, 생성자 및 메서드를 선언하는 방법을 보여 줍니다. 또한 개체 인스턴스화 및 인스턴스 데이터 출력을 보여 줍니다. 이 예제에서는 두 개의 클래스가 선언됩니다. 첫 번째 클래스인 `Child`는 private 필드 2개(`name` 및 `age`), public 생성자 2개, public 메서드 1개를 포함합니다. 두 번째 클래스인 `StringTest`는 `Main`을 포함하는 데 사용됩니다.
 
@@ -93,7 +94,7 @@ Console.Write(child1.name);   // Error
 
 액세스 한정자 없이 클래스 내부에 선언된 형식은 기본적으로 `private`로 설정되므로 키워드가 제거된 경우 이 예제의 데이터 멤버는 `private`입니다.
 
-마지막으로 기본 생성자(`child3`)를 사용하여 만들어진 개체의 경우 연령 필드는 기본적으로 0으로 초기화되었습니다.
+마지막으로 기본 생성자(`child3`)를 사용하여 만들어진 개체의 경우 `age` 필드는 기본적으로 0으로 초기화되었습니다.
 
 ## <a name="c-language-specification"></a>C# 언어 사양
 

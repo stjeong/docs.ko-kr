@@ -1,24 +1,25 @@
 ---
-title: '방법: finally를 사용하여 정리 코드 실행(C# 프로그래밍 가이드)'
+title: '방법: finally를 사용하여 정리 코드 실행 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - try/finally blocks [C#]
 - exceptions [C#], try/finally block
 - exception handling [C#], try/finally block
 ms.assetid: 1b1e5aef-3f32-4a88-9d39-b5fffb33bdaf
-ms.openlocfilehash: 47e9bb368deb077ef10ce474683d81e0cb56cef8
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 67ef164232a27b8110dfcd108a0345d9d63e8f91
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44183787"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53244949"
 ---
 # <a name="how-to-execute-cleanup-code-using-finally-c-programming-guide"></a>방법: finally를 사용하여 정리 코드 실행(C# 프로그래밍 가이드)
 `finally` 문은 예외가 throw된 경우에도 개체, 일반적으로 외부 리소스를 포함하는 개체의 필요한 정리가 즉시 수행되도록 합니다. 이러한 정리 작업의 한 가지 예로 다음과 같이 개체가 공용 언어 런타임에 의해 수집될 때까지 기다리지 않고 사용 후 즉시 <xref:System.IO.FileStream>에서 <xref:System.IO.Stream.Close%2A>를 호출하는 것을 들 수 있습니다.  
   
  [!code-csharp[csProgGuideExceptions#16](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-execute-cleanup-code-using-finally_1.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이전 코드를 `try-catch-finally` 문으로 바꾸려면 다음과 같이 정리 코드와 작업 코드를 구분합니다.  
   
  [!code-csharp[csProgGuideExceptions#17](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-execute-cleanup-code-using-finally_2.cs)]  

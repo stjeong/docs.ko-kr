@@ -1,15 +1,16 @@
 ---
-title: 액세스 키워드(C# 참조)
+title: 액세스 키워드 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - access keywords [C#]
 ms.assetid: 3b680d9c-0998-42df-8ba7-5783f7abda75
-ms.openlocfilehash: 7700c49a609a90faf9b3b8b90719a223952d7e9e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9ab459e6d65fc3b61308adff09ccd46372a665c3
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47233004"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237768"
 ---
 # <a name="access-keywords-c-reference"></a>액세스 키워드(C# 참조)
 이 섹션에서는 다음과 같은 액세스 키워드를 소개합니다.  

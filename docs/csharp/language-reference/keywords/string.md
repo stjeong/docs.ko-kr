@@ -1,5 +1,6 @@
 ---
-title: string(C# 참조)
+title: string - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - string
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - string literals [C#]
 - string keyword [C#]
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
-ms.openlocfilehash: 66b1729363878f69f868b8b8fd6e9e7011426f27
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f6c76f8effc5aef82803014b9a7257c2ad6865b8
+ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153126"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53286483"
 ---
 # <a name="string-c-reference"></a>string(C# 참조)
 
@@ -55,6 +56,18 @@ b += "ello";
 string str = "test";
 char x = str[2];  // x = 's';
 ```
+
+비슷한 방식으로 [] 연산자도 `string`의 각 문자를 반복하는 데 사용할 수 있습니다.
+
+```csharp
+string str = "test";
+
+for (int i = 0; i < str.Length; i++)
+{
+  Console.Write(str[i] + " ");
+}
+// Output: t e s t
+``` 
 
 문자열 리터럴은 `string` 형식이며, quoted 및 @-quoted의 두 가지 형태로 작성될 수 있습니다. 따옴표가 있는 문자열 리터럴은 큰따옴표(")로 묶여 있습니다.
 

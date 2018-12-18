@@ -1,16 +1,17 @@
 ---
-title: 상수(C# 프로그래밍 가이드)
+title: 상수 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, constants
 - constants [C#]
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
-ms.openlocfilehash: 0ae8ca8b1bc9259ab259ed8fdfea450e4471891e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b723bb23559f88e7498c22295a6b2f70312461fc
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513857"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241933"
 ---
 # <a name="constants-c-programming-guide"></a>상수(C# 프로그래밍 가이드)
 상수는 컴파일 시간에 알려진 변경할 수 없는 값입니다. 프로그램 수명 동안 변경하지 마세요. 상수는 [const](../../../csharp/language-reference/keywords/const.md) 한정자로 선언됩니다. C# 기본 제공 형식(<xref:System.Object?displayProperty=nameWithType> 제외)만 `const`로 선언할 수 있습니다. 기본 제공 형식 목록은 [기본 제공 형식 표](../../../csharp/language-reference/keywords/built-in-types-table.md)를 참조하세요. 클래스, 구조체 및 배열을 비롯한 사용자 정의 형식은 `const`가 될 수 없습니다. [readonly](../../../csharp/language-reference/keywords/readonly.md) 한정자를 사용하여 런타임에 한 번 초기화되고(예: 생성자에서) 이후 변경할 수 없는 클래스, 구조체 또는 배열을 만듭니다.  
@@ -52,4 +53,4 @@ ms.locfileid: "43513857"
 - [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)  
 - [유형](../../../csharp/programming-guide/types/index.md)  
 - [readonly](../../../csharp/language-reference/keywords/readonly.md)  
-- [Immutability in C# Part One: Kinds of Immutability](https://blogs.msdn.microsoft.com/ericlippert/2007/11/13/immutability-in-c-part-one-kinds-of-immutability)(C#의 불변성 1부: 불변성 종류)
+- [C# 파트 1의 불변성: 불변성의 종류](https://blogs.msdn.microsoft.com/ericlippert/2007/11/13/immutability-in-c-part-one-kinds-of-immutability)

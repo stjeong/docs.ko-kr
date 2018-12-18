@@ -1,15 +1,16 @@
 ---
-title: 액세스 가능성 수준 사용에 대한 제한(C# 참조)
+title: 액세스 가능성 수준 사용에 대한 제한 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - access modifiers [C#], accessibility level restrictions
 ms.assetid: 987e2f22-46bf-4fea-80ee-270b9cd01045
-ms.openlocfilehash: 2bcf2b12d1aa1488e6d3e46f5b37ac9535b138dd
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: ef1c0a93da2a53f1e199627fb7f83894d01e714a
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47208843"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239331"
 ---
 # <a name="restrictions-on-using-accessibility-levels-c-reference"></a>액세스 가능성 수준 사용에 대한 제한(C# 참조)
 
@@ -36,7 +37,7 @@ public class MyClass: BaseClass {...} // Error
 |[연산자](../../programming-guide/statements-expressions-operators/operators.md)|연산자의 반환 형식 및 매개 변수 형식은 적어도 연산자 자체 수준만큼 액세스 가능해야 합니다.|
 |[생성자](../../programming-guide/classes-and-structs/constructors.md)|생성자의 매개 변수 형식은 적어도 생성자 자체 수준만큼 액세스 가능해야 합니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에는 다양한 종류의 잘못된 선언이 포함되어 있습니다. 각 선언 다음의 주석은 예상된 컴파일러 오류를 나타냅니다.
 

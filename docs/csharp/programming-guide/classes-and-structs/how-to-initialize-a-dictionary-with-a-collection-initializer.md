@@ -1,15 +1,16 @@
 ---
-title: 컬렉션 이니셜라이저를 사용하여 사전을 초기화하는 방법(C# 프로그래밍 가이드)
+title: 컬렉션 이니셜라이저를 사용하여 사전을 초기화하는 방법 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - collection initializers [C#], with Dictionary
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
-ms.openlocfilehash: ca2f508e5500cc135b2712362bcfb71778a664c1
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 42deee85b3a425531ddadfa96cfaff6d342d1221
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45676560"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243883"
 ---
 # <a name="how-to-initialize-a-dictionary-with-a-collection-initializer-c-programming-guide"></a>컬렉션 이니셜라이저를 사용하여 사전을 초기화하는 방법(C# 프로그래밍 가이드)
 

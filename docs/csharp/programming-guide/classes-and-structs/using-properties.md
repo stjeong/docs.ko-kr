@@ -1,17 +1,18 @@
 ---
-title: 속성 사용(C# 프로그래밍 가이드)
+title: 속성 사용 - C# 프로그래밍 가이드
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - set accessor [C#]
 - get accessor [C#]
 - properties [C#], about properties
 ms.assetid: f7f67b05-0983-4cdb-96af-1855d24c967c
-ms.openlocfilehash: 50dda6a27081762a4e8b407ca5af94659b47da45
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: dd5d85feb520e10a5d89cf91878d092695efb13a
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515856"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243064"
 ---
 # <a name="using-properties-c-programming-guide"></a>속성 사용(C# 프로그래밍 가이드)
 속성은 필드 및 메서드 모두의 측면을 결합합니다. 개체의 사용자에게 속성은 필드로 표시되며, 속성에 액세스하려면 동일한 구문이 필요합니다. 클래스의 구현자에게 속성은 [get](../../../csharp/language-reference/keywords/get.md) 접근자 및/또는 [set](../../../csharp/language-reference/keywords/set.md) 접근자를 나타내는 하나 또는 두 개의 코드 블록입니다. `get` 접근자에 대한 코드 블록은 속성을 읽을 때 실행되고, `set` 접근자에 대한 코드 블록은 속성에 새 값을 할당할 때 실행됩니다. `set` 접근자가 없는 속성은 읽기 전용으로 간주됩니다. `get` 접근자가 없는 속성은 쓰기 전용으로 간주됩니다. 두 접근자가 모두 있는 속성은 읽기/쓰기입니다.  
@@ -77,7 +78,7 @@ ms.locfileid: "43515856"
   
  [!code-csharp[csProgGuideProperties#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-properties_8.cs)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 파생 클래스에서 이름이 같은 다른 속성에 의해 숨겨진 기본 클래스의 속성에 액세스하는 방법을 보여 줍니다.  
   
  [!code-csharp[csProgGuideProperties#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-properties_9.cs)]  
