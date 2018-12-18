@@ -1,26 +1,27 @@
 ---
-title: '방법: XML 문서 기능 사용(C# 프로그래밍 가이드)'
+title: '방법: XML 문서 기능 사용 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 06/01/2018
 helpviewer_keywords:
 - XML documentation [C#]
 - C# language, XML documentation features
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
-ms.openlocfilehash: 48654968e5099164874bae8a00767d12c8fe4582
-ms.sourcegitcommit: 76a304c79a32aa13889ebcf4b9789a4542b48e3e
+ms.openlocfilehash: ce14de1f5aef4703a0c9b3868852104dc313e728
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45514446"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53241670"
 ---
-# <a name="how-to-use-the-xml-documentation-features"></a><span data-ttu-id="aa1b7-102">방법: XML 문서 기능 사용</span><span class="sxs-lookup"><span data-stu-id="aa1b7-102">How to: Use the XML documentation features</span></span>
+# <a name="how-to-use-the-xml-documentation-features"></a><span data-ttu-id="ebc4d-102">방법: XML 문서 기능 사용</span><span class="sxs-lookup"><span data-stu-id="ebc4d-102">How to: Use the XML documentation features</span></span>
 
-<span data-ttu-id="aa1b7-103">다음 샘플은 문서화된 형식에 대한 기본 개요를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-103">The following sample provides a basic overview of a type that has been documented.</span></span>
+<span data-ttu-id="ebc4d-103">다음 샘플은 문서화된 형식에 대한 기본 개요를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-103">The following sample provides a basic overview of a type that has been documented.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aa1b7-104">예</span><span class="sxs-lookup"><span data-stu-id="aa1b7-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ebc4d-104">예제</span><span class="sxs-lookup"><span data-stu-id="ebc4d-104">Example</span></span>
 
 [!code-csharp[csProgGuideDocComments#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#15)]
 
-<span data-ttu-id="aa1b7-105">이 예제에서는 다음 내용과 같은 내용의 .xml 파일을 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-105">The example generates an .xml file with the following contents:</span></span>
+<span data-ttu-id="ebc4d-105">이 예제에서는 다음 내용과 같은 내용의 .xml 파일을 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-105">The example generates an .xml file with the following contents:</span></span>
 
 ```xml
 <?xml version="1.0"?>
@@ -106,33 +107,33 @@ ms.locfileid: "45514446"
 </doc>
 ```
 
-## <a name="compiling-the-code"></a><span data-ttu-id="aa1b7-106">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="aa1b7-106">Compiling the code</span></span>
+## <a name="compiling-the-code"></a><span data-ttu-id="ebc4d-106">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="ebc4d-106">Compiling the code</span></span>
 
-<span data-ttu-id="aa1b7-107">예제를 컴파일하려면 다음 명령줄을 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-107">To compile the example, type the following command line:</span></span>
+<span data-ttu-id="ebc4d-107">예제를 컴파일하려면 다음 명령줄을 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-107">To compile the example, type the following command line:</span></span>
 
 `csc XMLsample.cs /doc:XMLsample.xml`
 
-<span data-ttu-id="aa1b7-108">이 명령으로 TYPE 명령을 사용하거나 브라우저에서 볼 수 있는 XML 파일 *XMLsample.xml*이 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-108">This command creates the XML file *XMLsample.xml*, which you can view in your browser or by using the TYPE command.</span></span>
+<span data-ttu-id="ebc4d-108">이 명령으로 TYPE 명령을 사용하거나 브라우저에서 볼 수 있는 XML 파일 *XMLsample.xml*이 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-108">This command creates the XML file *XMLsample.xml*, which you can view in your browser or by using the TYPE command.</span></span>
 
-## <a name="robust-programming"></a><span data-ttu-id="aa1b7-109">강력한 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="aa1b7-109">Robust programming</span></span>
+## <a name="robust-programming"></a><span data-ttu-id="ebc4d-109">강력한 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="ebc4d-109">Robust programming</span></span>
 
-<span data-ttu-id="aa1b7-110">XML 문서는 ///로 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-110">XML documentation starts with ///.</span></span> <span data-ttu-id="aa1b7-111">새 프로젝트를 만드는 경우 마법사에서 몇 개의 시작 /// 줄을 자동으로 넣습니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-111">When you create a new project, the wizards put some starter /// lines in for you.</span></span> <span data-ttu-id="aa1b7-112">이러한 주석의 처리에는 몇 가지 제한이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-112">The processing of these comments has some restrictions:</span></span>
+<span data-ttu-id="ebc4d-110">XML 문서는 ///로 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-110">XML documentation starts with ///.</span></span> <span data-ttu-id="ebc4d-111">새 프로젝트를 만드는 경우 마법사에서 몇 개의 시작 /// 줄을 자동으로 넣습니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-111">When you create a new project, the wizards put some starter /// lines in for you.</span></span> <span data-ttu-id="ebc4d-112">이러한 주석의 처리에는 몇 가지 제한이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-112">The processing of these comments has some restrictions:</span></span>
 
-- <span data-ttu-id="aa1b7-113">문서는 잘 구성된 XML이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-113">The documentation must be well-formed XML.</span></span> <span data-ttu-id="aa1b7-114">XML이 잘 구성되지 않은 경우 경고가 생성되고, 문서 파일에 오류가 발생했다는 주석이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-114">If the XML is not well-formed, a warning is generated and the documentation file will contain a comment that says that an error was encountered.</span></span>
+- <span data-ttu-id="ebc4d-113">문서는 잘 구성된 XML이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-113">The documentation must be well-formed XML.</span></span> <span data-ttu-id="ebc4d-114">XML이 잘 구성되지 않은 경우 경고가 생성되고, 문서 파일에 오류가 발생했다는 주석이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-114">If the XML is not well-formed, a warning is generated and the documentation file will contain a comment that says that an error was encountered.</span></span>
 
-- <span data-ttu-id="aa1b7-115">개발자는 각자 고유한 태그 집합을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-115">Developers are free to create their own set of tags.</span></span> <span data-ttu-id="aa1b7-116">권장 태그 집합이 있습니다([문서 주석에 대한 권장 태그](recommended-tags-for-documentation-comments.md) 참조).</span><span class="sxs-lookup"><span data-stu-id="aa1b7-116">There is a recommended set of tags (see [Recommended tags for documentation comments](recommended-tags-for-documentation-comments.md)).</span></span> <span data-ttu-id="aa1b7-117">권장 태그 중 일부는 특별한 의미가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-117">Some of the recommended tags have special meanings:</span></span>
+- <span data-ttu-id="ebc4d-115">개발자는 각자 고유한 태그 집합을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-115">Developers are free to create their own set of tags.</span></span> <span data-ttu-id="ebc4d-116">권장 태그 집합이 있습니다([문서 주석에 대한 권장 태그](recommended-tags-for-documentation-comments.md) 참조).</span><span class="sxs-lookup"><span data-stu-id="ebc4d-116">There is a recommended set of tags (see [Recommended tags for documentation comments](recommended-tags-for-documentation-comments.md)).</span></span> <span data-ttu-id="ebc4d-117">권장 태그 중 일부는 특별한 의미가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-117">Some of the recommended tags have special meanings:</span></span>
 
-  - <span data-ttu-id="aa1b7-118">\<param> 태그는 매개 변수를 설명하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-118">The \<param> tag is used to describe parameters.</span></span> <span data-ttu-id="aa1b7-119">사용되는 경우 컴파일러는 매개 변수가 있고 모든 매개 변수가 문서에서 설명되었는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-119">If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation.</span></span> <span data-ttu-id="aa1b7-120">확인에 실패하면 컴파일러가 경고를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-120">If the verification failed, the compiler issues a warning.</span></span>
+  - <span data-ttu-id="ebc4d-118">\<param> 태그는 매개 변수를 설명하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-118">The \<param> tag is used to describe parameters.</span></span> <span data-ttu-id="ebc4d-119">사용되는 경우 컴파일러는 매개 변수가 있고 모든 매개 변수가 문서에서 설명되었는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-119">If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation.</span></span> <span data-ttu-id="ebc4d-120">확인에 실패하면 컴파일러가 경고를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-120">If the verification failed, the compiler issues a warning.</span></span>
 
-  - <span data-ttu-id="aa1b7-121">`cref` 특성을 태그에 연결하여 코드 요소에 대한 참조를 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-121">The `cref` attribute can be attached to any tag to provide a reference to a code element.</span></span> <span data-ttu-id="aa1b7-122">컴파일러에서 이 코드 요소가 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-122">The compiler verifies that this code element exists.</span></span> <span data-ttu-id="aa1b7-123">확인에 실패하면 컴파일러가 경고를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-123">If the verification failed, the compiler issues a warning.</span></span> <span data-ttu-id="aa1b7-124">컴파일러는 `cref` 특성에 설명된 형식을 찾을 때 모든 `using` 문을 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-124">The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.</span></span>
+  - <span data-ttu-id="ebc4d-121">`cref` 특성을 태그에 연결하여 코드 요소에 대한 참조를 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-121">The `cref` attribute can be attached to any tag to provide a reference to a code element.</span></span> <span data-ttu-id="ebc4d-122">컴파일러에서 이 코드 요소가 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-122">The compiler verifies that this code element exists.</span></span> <span data-ttu-id="ebc4d-123">확인에 실패하면 컴파일러가 경고를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-123">If the verification failed, the compiler issues a warning.</span></span> <span data-ttu-id="ebc4d-124">컴파일러는 `cref` 특성에 설명된 형식을 찾을 때 모든 `using` 문을 따릅니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-124">The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.</span></span>
 
-  - <span data-ttu-id="aa1b7-125">\<summary> 태그는 Visual Studio 내의 IntelliSense에서 형식 또는 멤버에 대한 추가 정보를 표시하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-125">The \<summary> tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.</span></span>
+  - <span data-ttu-id="ebc4d-125">\<summary> 태그는 Visual Studio 내의 IntelliSense에서 형식 또는 멤버에 대한 추가 정보를 표시하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-125">The \<summary> tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="aa1b7-126">XML 파일은 형식 및 멤버에 대한 전체 정보를 제공하지 않습니다(예: 형식 정보가 포함되지 않음).</span><span class="sxs-lookup"><span data-stu-id="aa1b7-126">The XML file does not provide full information about the type and members (for example, it does not contain any type information).</span></span> <span data-ttu-id="aa1b7-127">형식 또는 멤버에 대한 전체 정보를 가져오려면 실제 형식 또는 멤버에 대한 리플렉션과 함께 문서 파일을 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b7-127">To get full information about a type or member, the documentation file must be used together with reflection on the actual type or member.</span></span>
+    > <span data-ttu-id="ebc4d-126">XML 파일은 형식 및 멤버에 대한 전체 정보를 제공하지 않습니다(예: 형식 정보가 포함되지 않음).</span><span class="sxs-lookup"><span data-stu-id="ebc4d-126">The XML file does not provide full information about the type and members (for example, it does not contain any type information).</span></span> <span data-ttu-id="ebc4d-127">형식 또는 멤버에 대한 전체 정보를 가져오려면 실제 형식 또는 멤버에 대한 리플렉션과 함께 문서 파일을 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ebc4d-127">To get full information about a type or member, the documentation file must be used together with reflection on the actual type or member.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="aa1b7-128">참고 항목</span><span class="sxs-lookup"><span data-stu-id="aa1b7-128">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ebc4d-128">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ebc4d-128">See Also</span></span>
 
-- [<span data-ttu-id="aa1b7-129">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="aa1b7-129">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="aa1b7-130">/doc(C# 컴파일러 옵션)</span><span class="sxs-lookup"><span data-stu-id="aa1b7-130">/doc (C# Compiler Options)</span></span>](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
-- [<span data-ttu-id="aa1b7-131">XML 문서 주석</span><span class="sxs-lookup"><span data-stu-id="aa1b7-131">XML Documentation Comments</span></span>](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+- [<span data-ttu-id="ebc4d-129">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="ebc4d-129">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="ebc4d-130">/doc(C# 컴파일러 옵션)</span><span class="sxs-lookup"><span data-stu-id="ebc4d-130">/doc (C# Compiler Options)</span></span>](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
+- [<span data-ttu-id="ebc4d-131">XML 문서 주석</span><span class="sxs-lookup"><span data-stu-id="ebc4d-131">XML Documentation Comments</span></span>](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  

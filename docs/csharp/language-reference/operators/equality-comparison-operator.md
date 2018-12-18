@@ -1,5 +1,6 @@
 ---
-title: == 연산자(C# 참조)
+title: == 연산자 - C# 참조
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords:
 - ==_CSharpKeyword
@@ -7,24 +8,24 @@ helpviewer_keywords:
 - == operator [C#]
 - equality operator [C#]
 ms.assetid: 34c6b597-caa2-4855-a7cd-38ecdd11bd07
-ms.openlocfilehash: d9d7dcf3b38939e681fb51d6c674151cee78b3d0
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: c6f93be4d422fe42787e36f5b86e2cccbfc645b7
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43779170"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239016"
 ---
-# <a name="-operator-c-reference"></a><span data-ttu-id="5cc7d-102">== 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="5cc7d-102">== Operator (C# Reference)</span></span>
-<span data-ttu-id="5cc7d-103">미리 정의된 값 형식의 경우 같음 연산자(`==`)는 피연산자의 값이 같으면 true, 같지 않으면 `false`를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="5cc7d-103">For predefined value types, the equality operator (`==`) returns true if the values of its operands are equal, `false` otherwise.</span></span> <span data-ttu-id="5cc7d-104">[string](../../../csharp/language-reference/keywords/string.md)을 제외한 참조 형식의 경우 `==`은 두 피연산자가 동일한 개체를 참조하면 `true`를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="5cc7d-104">For reference types other than [string](../../../csharp/language-reference/keywords/string.md), `==` returns `true` if its two operands refer to the same object.</span></span> <span data-ttu-id="5cc7d-105">`string` 형식의 경우 `==`은 문자열의 값을 비교합니다.</span><span class="sxs-lookup"><span data-stu-id="5cc7d-105">For the `string` type, `==` compares the values of the strings.</span></span>  
+# <a name="-operator-c-reference"></a><span data-ttu-id="65f39-102">== 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="65f39-102">== Operator (C# Reference)</span></span>
+<span data-ttu-id="65f39-103">미리 정의된 값 형식의 경우 같음 연산자(`==`)는 피연산자의 값이 같으면 true, 같지 않으면 `false`를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="65f39-103">For predefined value types, the equality operator (`==`) returns true if the values of its operands are equal, `false` otherwise.</span></span> <span data-ttu-id="65f39-104">[string](../../../csharp/language-reference/keywords/string.md)을 제외한 참조 형식의 경우 `==`은 두 피연산자가 동일한 개체를 참조하면 `true`를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="65f39-104">For reference types other than [string](../../../csharp/language-reference/keywords/string.md), `==` returns `true` if its two operands refer to the same object.</span></span> <span data-ttu-id="65f39-105">`string` 형식의 경우 `==`은 문자열의 값을 비교합니다.</span><span class="sxs-lookup"><span data-stu-id="65f39-105">For the `string` type, `==` compares the values of the strings.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="5cc7d-106">설명</span><span class="sxs-lookup"><span data-stu-id="5cc7d-106">Remarks</span></span>  
- <span data-ttu-id="5cc7d-107">사용자 정의 값 형식은 `==` 연산자를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조).</span><span class="sxs-lookup"><span data-stu-id="5cc7d-107">User-defined value types can overload the `==` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)).</span></span> <span data-ttu-id="5cc7d-108">사용자 정의 참조 형식의 경우도 마찬가지입니다. 하지만 기본적으로 `==`은 미리 정의된 참조 형식과 사용자 정의 참조 형식 모두에 대해 위에서 설명한 대로 동작합니다.</span><span class="sxs-lookup"><span data-stu-id="5cc7d-108">So can user-defined reference types, although by default `==` behaves as described above for both predefined and user-defined reference types.</span></span> <span data-ttu-id="5cc7d-109">`==` 연산자가 오버로드되면 [!=](../../../csharp/language-reference/operators/not-equal-operator.md) 또한 오버로드되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5cc7d-109">If `==` is overloaded, [!=](../../../csharp/language-reference/operators/not-equal-operator.md) must also be overloaded.</span></span> <span data-ttu-id="5cc7d-110">정수 계열 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="5cc7d-110">Operations on integral types are generally allowed on enumeration.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="65f39-106">설명</span><span class="sxs-lookup"><span data-stu-id="65f39-106">Remarks</span></span>  
+ <span data-ttu-id="65f39-107">사용자 정의 값 형식은 `==` 연산자를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조).</span><span class="sxs-lookup"><span data-stu-id="65f39-107">User-defined value types can overload the `==` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)).</span></span> <span data-ttu-id="65f39-108">사용자 정의 참조 형식의 경우도 마찬가지입니다. 하지만 기본적으로 `==`은 미리 정의된 참조 형식과 사용자 정의 참조 형식 모두에 대해 위에서 설명한 대로 동작합니다.</span><span class="sxs-lookup"><span data-stu-id="65f39-108">So can user-defined reference types, although by default `==` behaves as described above for both predefined and user-defined reference types.</span></span> <span data-ttu-id="65f39-109">`==` 연산자가 오버로드되면 [!=](../../../csharp/language-reference/operators/not-equal-operator.md) 또한 오버로드되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="65f39-109">If `==` is overloaded, [!=](../../../csharp/language-reference/operators/not-equal-operator.md) must also be overloaded.</span></span> <span data-ttu-id="65f39-110">정수 계열 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="65f39-110">Operations on integral types are generally allowed on enumeration.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="5cc7d-111">예</span><span class="sxs-lookup"><span data-stu-id="5cc7d-111">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="65f39-111">예제</span><span class="sxs-lookup"><span data-stu-id="65f39-111">Example</span></span>  
  [!code-csharp[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/CSharp/equality-comparison-operator_1.cs)]  
   
-## <a name="see-also"></a><span data-ttu-id="5cc7d-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="5cc7d-112">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="65f39-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="65f39-112">See Also</span></span>
 
-- [<span data-ttu-id="5cc7d-113">C# 참조</span><span class="sxs-lookup"><span data-stu-id="5cc7d-113">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="5cc7d-114">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="5cc7d-114">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="5cc7d-115">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="5cc7d-115">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)
+- [<span data-ttu-id="65f39-113">C# 참조</span><span class="sxs-lookup"><span data-stu-id="65f39-113">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
+- [<span data-ttu-id="65f39-114">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="65f39-114">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
+- [<span data-ttu-id="65f39-115">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="65f39-115">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)
