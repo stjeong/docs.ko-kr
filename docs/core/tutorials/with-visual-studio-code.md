@@ -13,7 +13,7 @@ ms.locfileid: "50192585"
 ---
 # <a name="get-started-with-c-and-visual-studio-code"></a>C# 및 Visual Studio Code 시작
 
-.NET Core는 Windows, Linux 및 macOS에서 실행되는 응용 프로그램을 만들기 위한 빠른 모듈식 플랫폼을 제공합니다. C# 확장이 있는 Visual Studio Code를 사용하면 C# 인텔리센스(스마트 코드 완성) 및 디버깅을 완벽하게 지원하는 강력한 편집 환경을 구현할 .
+.NET Core는 Windows, Linux 및 macOS에서 실행되는 응용 프로그램을 만들기 위한 빠른 모듈식 플랫폼을 제공합니다. C# 확장이 있는 Visual Studio Code를 사용하면 C# IntelliSense(스마트 코드 완성) 및 디버깅을 완벽하게 지원하는 강력한 편집 환경이 구현됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -34,7 +34,7 @@ ms.locfileid: "50192585"
       ![VSCodeOpenFolder](media/with-visual-studio-code/vscodeopenfolder.png)
 
 2. C# 프로젝트 초기화
-    * 주 메뉴에서 **보기** > **터미널**을 선택하여 Visual Studio Code에서 통합 터미널을 엽니다.
+    * 주 메뉴에서 **보기** > **통합 터미널**을 선택하여 Visual Studio Code에서 통합 터미널을 엽니다.
     * 터미널 창에서 `dotnet new console`을 입력합니다.
     * 이 명령은 폴더에 이미 작성된 간단한 "Hello World" 프로그램이 있는 `Program.cs` 파일을 만들고 `HelloWorld.csproj`라는 C# 프로젝트 파일을 만듭니다.
 
@@ -62,11 +62,11 @@ ms.locfileid: "50192585"
 
     ![Program.cs 파일 열기](media/with-visual-studio-code/opencs.png)
 
-2. Visual Studio Code는 앱을 빌드하고 디버그하기 위해 누락된 자산을 추가하라는 메시지를 표시할 수 있습니다. **예**를 선택합니다.
+2. Visual Studio Code에 앱을 빌드하고 디버그하기 위해 누락된 자산을 추가하라는 메시지가 표시됩니다. **예**를 선택합니다.
 
     ![누락된 자산에 대한 프롬프트](media/with-visual-studio-code/missing-assets.png)
 
-3. 디버그 보기를 열려면 왼쪽 메뉴에서 디버그 아이콘을 클릭합니다.
+3. 디버그 보기를 열려면 왼쪽 메뉴에서 디버깅 아이콘을 클릭합니다.
 
     ![디버그 탭 열기](media/with-visual-studio-code/opendebug.png)
 
@@ -92,7 +92,7 @@ ms.locfileid: "50192585"
 
 ### <a name="im-missing-required-assets-to-build-and-debug-c-in-visual-studio-code-my-debugger-says-no-configuration"></a>Visual Studio Code에서 C#을 빌드하고 디버그하는 데 필요한 자산이 누락되었습니다. 내 디버거에서 "구성 없음"이라고 표시됩니다.
 
-Visual Studio Code C# 확장에서 빌드 및 디버그할 자산을 생성할 수 있습니다. Visual Studio Code는 C# 프로젝트를 처음 열 때 이러한 자산을 생성하라는 메시지를 표시합니다. 자산을 생성하지 않은 경우 명령 팔레트(**보기 > 명령 팔레트**)를 열고 ">.NET: Generate Assets Build and Debug"을 입력하여 이 명령을 실행할 수 있습니다. 이를 선택하면 필요한 .vscode, launch.json 및 tasks.json 구성 파일이 생성됩니다.
+Visual Studio Code C# 확장에서 빌드 및 디버그할 자산을 생성할 수 있습니다. C# 프로젝트를 처음 열면 Visual Studio Code에 이러한 자산을 생성하라는 메시지가 표시됩니다. 자산을 생성하지 않은 경우 명령 팔레트(**보기 > 명령 팔레트**)를 열고 ">.NET: Generate Assets Build and Debug"을 입력하여 이 명령을 실행할 수 있습니다. 이를 선택하면 필요한 .vscode, launch.json 및 tasks.json 구성 파일이 생성됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
