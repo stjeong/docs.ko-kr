@@ -1,5 +1,6 @@
 ---
-title: '방법: Visual C# 기능을 사용하여 Office Interop 개체에 액세스(C# 프로그래밍 가이드)'
+title: '방법: Visual C# 기능을 사용하여 Office Interop 개체에 액세스 - C# 프로그래밍 가이드'
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
 - optional parameters [C#], Office programming
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - named arguments [C#], Office programming
 - Office programming [C#]
 ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
-ms.openlocfilehash: 9d07f8e7b2f4c31af572829256065cf6aa3383bb
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 803c3bd4099b838ddc71fea530565f26bd4142df
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260219"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236572"
 ---
 # <a name="how-to-access-office-interop-objects-by-using-visual-c-features-c-programming-guide"></a>방법: Visual C# 기능을 사용하여 Office Interop 개체에 액세스(C# 프로그래밍 가이드)
 Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능이 있습니다. 새로운 기능에는 명명된 인수와 선택적 인수, `dynamic`이라는 새 형식 그리고 인수를 값 매개 변수처럼 COM 메서드의 참조 매개 변수로 전달하는 기능이 포함됩니다.  
@@ -137,7 +138,7 @@ Visual C#에는 Office API 개체에 간편하게 액세스할 수 있는 기능
   
 ## <a name="to-set-the-embed-interop-types-property"></a>Interop 형식 포함 속성을 설정하려면  
   
-1.  런타임에 PIA(주 interop 어셈블리)를 사용하지 않아도 되는 COM 형식을 호출할 때는 코드를 추가로 개선할 수 있습니다. PIA에 대한 종속성을 제거하면 버전을 독립적으로 실행할 수 있으며 보다 쉽게 배포할 수 있습니다. PIA를 사용하지 않는 프로그래밍의 장점에 대한 자세한 내용은 [Walkthrough: Embedding Types from Managed Assemblies](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)(연습: 관리되는 어셈블리의 형식 포함)를 참조하세요.  
+1.  런타임에 PIA(주 interop 어셈블리)를 사용하지 않아도 되는 COM 형식을 호출할 때는 코드를 추가로 개선할 수 있습니다. PIA에 대한 종속성을 제거하면 버전을 독립적으로 실행할 수 있으며 보다 쉽게 배포할 수 있습니다. PIA를 사용하지 않는 프로그래밍의 장점에 대한 자세한 내용은 [연습: 관리되는 어셈블리의 형식 포함](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)을 참조하세요.  
   
      또한 COM 메서드에서 사용해야 하며 반환되는 형식은 `dynamic`가 아닌 `Object` 형식을 사용하여 표시할 수 있으므로 프로그램이 더욱 쉬워집니다. `dynamic` 형식이 포함된 변수는 런타임까지 평가되지 않으므로 명시적 캐스팅을 수행할 필요가 없습니다. 자세한 내용은 [dynamic 형식 사용](../../../csharp/programming-guide/types/using-type-dynamic.md)을 참조하세요.  
   
