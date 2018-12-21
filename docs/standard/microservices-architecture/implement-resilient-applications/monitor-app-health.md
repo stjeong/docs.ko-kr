@@ -31,7 +31,7 @@ ASP.NET Core 마이크로 서비스 또는 웹 응용 프로그램을 개발할 
 
 eShopOnContainers 샘플 응용 프로그램에서 HealthChecks 라이브러리가 사용되는 방식을 확인할 수 있습니다. 시작하려면 각 마이크로 서비스에 대한 성능 상태를 구성하는 항목을 정의해야 합니다. 샘플 응용 프로그램에서 마이크로 서비스 API가 HTTP를 통해 액세스할 수 있고 관련 SQL Server 데이터베이스도 사용할 수 있으면 마이크로 서비스가 정상입니다.
 
-나중에 HealthChecks 라이브러리를 NuGet 패키지로 설치할 수 있습니다. 그러나 이 문서를 작성한 시점 이후로는 코드를 솔루션의 일부로 다운로드하고 컴파일해야 합니다. https://github.com/dotnet-architecture/HealthChecks에서 사용할 수 있는 코드를 복제하고 솔루션에 다음 폴더를 복사합니다.
+나중에 HealthChecks 라이브러리를 NuGet 패키지로 설치할 수 있습니다. 그러나 이 문서를 작성한 시점 이후로는 코드를 솔루션의 일부로 다운로드하고 컴파일해야 합니다. [https://github.com/dotnet-architecture/HealthChecks](https://github.com/dotnet-architecture/HealthChecks)에서 사용할 수 있는 코드를 복제하고 솔루션에 다음 폴더를 복사합니다.
 
   - src/common
   - src/Microsoft.AspNetCore.HealthChecks
