@@ -52,7 +52,7 @@ End
   
  [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/end-statement_1.vb)]  
   
-## <a name="smart-device-developer-notes"></a>스마트 장치 개발자 노트  
+## <a name="smart-device-developer-notes"></a>스마트 디바이스 개발자 노트  
  이 문은 지원 되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  

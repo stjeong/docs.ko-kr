@@ -62,7 +62,7 @@ ms.locfileid: "53129820"
   
 <a name="creating_a_collection"></a>   
 ### <a name="create-a-collection"></a>컬렉션 만들기  
- 이 단계에서는 패키지와 프로그램을 배포할 컴퓨터를 선택하고 이런 컴퓨터를 장치 컬렉션으로 그룹화합니다. Configuration Manager에서 컬렉션을 만들려면 직접 멤버 자격 규칙(컬렉션 멤버를 수동으로 지정함) 또는 쿼리 규칙(사용자가 지정하는 기준을 바탕으로 Configuration Manager가 컬렉션 멤버를 결정함)을 사용할 수 있습니다. 쿼리와 직접 규칙을 포함한 멤버 자격 규칙에 대한 자세한 내용은 Configuration Manager 문서 라이브러리에서 [System Center Configuration Manager의 컬렉션 소개](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.  
+ 이 단계에서는 패키지와 프로그램을 배포할 컴퓨터를 선택하고 이런 컴퓨터를 디바이스 컬렉션으로 그룹화합니다. Configuration Manager에서 컬렉션을 만들려면 직접 멤버 자격 규칙(컬렉션 멤버를 수동으로 지정함) 또는 쿼리 규칙(사용자가 지정하는 기준을 바탕으로 Configuration Manager가 컬렉션 멤버를 결정함)을 사용할 수 있습니다. 쿼리와 직접 규칙을 포함한 멤버 자격 규칙에 대한 자세한 내용은 Configuration Manager 문서 라이브러리에서 [System Center Configuration Manager의 컬렉션 소개](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.  
   
  컬렉션을 만들려면  
   

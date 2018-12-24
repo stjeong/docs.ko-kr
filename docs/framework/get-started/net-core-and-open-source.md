@@ -16,7 +16,7 @@ ms.locfileid: "49454397"
   
 <a name="BKMK_WhatisNETCore"></a>   
 ## <a name="what-is-net-core"></a>.NET Core란?  
- .NET Core는 .NET Standard의 일반적인 용도를 위한 모듈식 플랫폼 간 오픈 소스 구현입니다. .NET Framework와 동일한 많은 API를 포함하고 있으며(.NET Core는 작은 집합) 다양한 운영 체제 및 대상 칩을 지원하는 런타임, 프레임워크, 컴파일러 및 도구 구성 요소를 포함합니다. .NET Core 구현은 주로 ASP.NET Core 작업을 기반으로 하지만 많은 최신 구현에 대한 필요와 욕구에 의해서도 구현됩니다. 장치, 클라우드 및 포함/IoT 시나리오에 사용할 수 있습니다.  
+ .NET Core는 .NET Standard의 일반적인 용도를 위한 모듈식 플랫폼 간 오픈 소스 구현입니다. .NET Framework와 동일한 많은 API를 포함하고 있으며(.NET Core는 작은 집합) 다양한 운영 체제 및 대상 칩을 지원하는 런타임, 프레임워크, 컴파일러 및 도구 구성 요소를 포함합니다. .NET Core 구현은 주로 ASP.NET Core 작업을 기반으로 하지만 많은 최신 구현에 대한 필요와 욕구에 의해서도 구현됩니다. 디바이스, 클라우드 및 포함/IoT 시나리오에 사용할 수 있습니다.  
   
  .NET Core를 시작하려면 [.NET Core 홈 페이지](https://www.microsoft.com/net/core)를 방문하십시오.  
   

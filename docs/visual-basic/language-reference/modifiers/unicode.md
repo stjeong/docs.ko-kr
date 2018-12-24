@@ -30,7 +30,7 @@ Visual Basic을 선언 되는 외부 프로시저의 이름에 관계 없이 유
   
  [Declare 문](../../../visual-basic/language-reference/statements/declare-statement.md)  
   
-## <a name="smart-device-developer-notes"></a>스마트 장치 개발자 노트  
+## <a name="smart-device-developer-notes"></a>스마트 디바이스 개발자 노트  
  이 키워드는 지원 되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  

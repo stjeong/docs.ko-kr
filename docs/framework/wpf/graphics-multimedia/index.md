@@ -34,7 +34,7 @@ ms.locfileid: "44198883"
   
 -   레이아웃 조정  
   
-     개체 가장자리가 픽셀 장치 중앙에 놓이면 DPI 독립적 그래픽 시스템은 흐릿한 가장자리 또는 반투명 가장자리와 같은 렌더링 아티팩트를 만들 수 있습니다. 이전 버전의 WPF에는 이러한 경우를 처리하는 데 도움이 되는 픽셀 맞추기 기능이 포함되어 있습니다. Silverlight 2에서는 가장자리가 전체 픽셀 경계에 딱 맞게 요소를 이동하는 또 다른 방법인 레이아웃 조정이 도입되었습니다. WPF는 이제 사용 하 여 레이아웃을 <xref:System.Windows.FrameworkElement.UseLayoutRounding%2A> 연결 된 속성을 <xref:System.Windows.FrameworkElement>입니다.  
+     개체 가장자리가 픽셀 디바이스 중앙에 놓이면 DPI 독립적 그래픽 시스템은 흐릿한 가장자리 또는 반투명 가장자리와 같은 렌더링 아티팩트를 만들 수 있습니다. 이전 버전의 WPF에는 이러한 경우를 처리하는 데 도움이 되는 픽셀 맞추기 기능이 포함되어 있습니다. Silverlight 2에서는 가장자리가 전체 픽셀 경계에 딱 맞게 요소를 이동하는 또 다른 방법인 레이아웃 조정이 도입되었습니다. WPF는 이제 사용 하 여 레이아웃을 <xref:System.Windows.FrameworkElement.UseLayoutRounding%2A> 연결 된 속성을 <xref:System.Windows.FrameworkElement>입니다.  
   
 -   캐시된 컴퍼지션  
   

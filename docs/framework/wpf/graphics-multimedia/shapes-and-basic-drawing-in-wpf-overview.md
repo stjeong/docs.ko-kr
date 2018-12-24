@@ -35,7 +35,7 @@ ms.locfileid: "49086806"
   
 -   <xref:System.Windows.Shapes.Shape.Fill%2A>: 도형의 내부가 그려지는 방법을 설명 합니다.  
   
--   장치 독립적 픽셀 단위로 측정된 좌표 및 꼭지점을 지정하는 데이터 속성입니다.  
+-   디바이스 독립적 픽셀 단위로 측정된 좌표 및 꼭지점을 지정하는 데이터 속성입니다.  
   
  파생 되므로 <xref:System.Windows.UIElement>, 패널 및 대부분의 컨트롤 내에서 셰이프 개체를 사용할 수 있습니다. <xref:System.Windows.Controls.Canvas> 패널은 자식 개체의 절대 위치 지정을 지원 하기 때문에 복잡 한 그리기를 만들기 위한 특히 적합 합니다.  
   

@@ -224,7 +224,7 @@ ms.locfileid: "33549765"
   
  에 대 한 일반이 계정에 대 한 예외 <xref:System.Windows.RoutedEventArgs.Handled%2A> 고의적으로 무시 하도록 등록 하는 이벤트 처리기를 입력 하는 것이 상태가 <xref:System.Windows.RoutedEventArgs.Handled%2A> 경로 중 하나 여전히 호출 되는 이벤트 데이터의 상태입니다. 자세한 내용은 [미리 보기 이벤트](../../../../docs/framework/wpf/advanced/preview-events.md) 또는 [라우트된 이벤트를 처리된 것으로 표시 및 클래스 처리](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)를 참조하세요.  
   
- 터널링 이벤트와 버블링 이벤트 간에 공유된 이벤트 데이터 모델과 터널링 이벤트 다음에 버블링 이벤트가 발생하는 순차적 발생은 일반적으로 모든 라우트된 이벤트에 적용되는 개념이 아닙니다. 이 동작은 특별히 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 입력 장치가 입력 이벤트 쌍을 발생시키고 연결하도록 선택하는 방법을 통해 구현됩니다. 자체 입력 이벤트를 구현하는 것은 고급 시나리오이지만 자체 입력 이벤트에 대해 해당 모델을 따르도록 선택할 수도 있습니다.  
+ 터널링 이벤트와 버블링 이벤트 간에 공유된 이벤트 데이터 모델과 터널링 이벤트 다음에 버블링 이벤트가 발생하는 순차적 발생은 일반적으로 모든 라우트된 이벤트에 적용되는 개념이 아닙니다. 이 동작은 특별히 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 입력 디바이스가 입력 이벤트 쌍을 발생시키고 연결하도록 선택하는 방법을 통해 구현됩니다. 자체 입력 이벤트를 구현하는 것은 고급 시나리오이지만 자체 입력 이벤트에 대해 해당 모델을 따르도록 선택할 수도 있습니다.  
   
  특정 클래스는 대개 특정 사용자 기반 입력 이벤트가 해당 컨트롤 내에서 가지는 의미를 다시 정의하고 새 이벤트를 발생시키기 위해 특정 입력 이벤트를 클래스에서 처리하도록 선택합니다. 자세한 내용은 [라우트된 이벤트를 처리된 것으로 표시 및 클래스 처리](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)를 참조하세요.  
   

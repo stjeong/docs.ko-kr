@@ -16,7 +16,7 @@ ms.lasthandoff: 09/07/2018
 ms.locfileid: "44086039"
 ---
 # <a name="graphics-rendering-tiers"></a>그래픽 렌더링 계층
-렌더링 계층은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 실행하는 장치의 그래픽 하드웨어 기능과 성능 수준을 정의합니다.  
+렌더링 계층은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 실행하는 디바이스의 그래픽 하드웨어 기능과 성능 수준을 정의합니다.  
   
 
   
@@ -42,10 +42,10 @@ ms.locfileid: "44086039"
   
 -   **렌더링 계층 2** 대부분의 그래픽 기능에서는 그래픽 하드웨어 가속을 사용합니다. [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전 수준은 버전 9.0 이상입니다.  
   
- <xref:System.Windows.Media.RenderCapability.Tier%2A?displayProperty=nameWithType> 속성을 사용 하면 응용 프로그램 런타임 시 렌더링 계층을 검색할 수 있습니다. 렌더링 계층을 사용하여 장치에서 특정 하드웨어 가속 그래픽 기능을 지원하는지 결정합니다. 그러면 장치에서 지원하는 렌더링 계층에 따라 응용 프로그램에서 런타임 시 다른 코드 경로를 사용할 수 있습니다.  
+ <xref:System.Windows.Media.RenderCapability.Tier%2A?displayProperty=nameWithType> 속성을 사용 하면 응용 프로그램 런타임 시 렌더링 계층을 검색할 수 있습니다. 렌더링 계층을 사용하여 디바이스에서 특정 하드웨어 가속 그래픽 기능을 지원하는지 결정합니다. 그러면 디바이스에서 지원하는 렌더링 계층에 따라 응용 프로그램에서 런타임 시 다른 코드 경로를 사용할 수 있습니다.  
   
 ### <a name="rendering-tier-0"></a>렌더링 계층 0  
- 렌더링 계층 값이 0이면 장치의 응용 프로그램에서 사용할 수 있는 그래픽 하드웨어 가속이 없습니다. 이 계층 레벨에서는 하드웨어 가속 없이 소프트웨어를 통해 모든 그래픽이 렌더링된다고 가정해야 합니다. 이 계층의 기능은 9.0 미만인 [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전에 해당합니다.  
+ 렌더링 계층 값이 0이면 디바이스의 응용 프로그램에서 사용할 수 있는 그래픽 하드웨어 가속이 없습니다. 이 계층 레벨에서는 하드웨어 가속 없이 소프트웨어를 통해 모든 그래픽이 렌더링된다고 가정해야 합니다. 이 계층의 기능은 9.0 미만인 [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전에 해당합니다.  
   
 ### <a name="rendering-tier-1-and-rendering-tier-2"></a>렌더링 계층 1 및 렌더링 계층 2  
   

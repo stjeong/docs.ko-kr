@@ -20,7 +20,7 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33549466"
 ---
 # <a name="drag-and-drop-overview"></a>끌어서 놓기 개요
-이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램의 끌어서 놓기 지원에 대해 개괄적으로 설명합니다. 끌어서 놓기는 일반적으로 마우스(또는 다른 포인팅 장치)를 사용하여 하나 이상의 개체를 선택하고 이러한 개체를 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]에서 원하는 놓기 대상 위로 끌어서 놓는 데이터 전송 방법을 가리킵니다.  
+이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램의 끌어서 놓기 지원에 대해 개괄적으로 설명합니다. 끌어서 놓기는 일반적으로 마우스(또는 다른 포인팅 디바이스)를 사용하여 하나 이상의 개체를 선택하고 이러한 개체를 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]에서 원하는 놓기 대상 위로 끌어서 놓는 데이터 전송 방법을 가리킵니다.  
   
   
 <a name="Drag_and_Drop_Support"></a>   
@@ -29,7 +29,7 @@ ms.locfileid: "33549466"
   
  끌어서 놓기로 조작할 수 있는 개체의 유형과 개수는 완전히 임의로 지정됩니다. 예를 들어 파일, 폴더 및 선택한 콘텐츠는 끌어서 놓기 작업을 통해 조작되는 보다 일반적인 개체 중 일부입니다.  
   
- 끌어서 놓기 작업 중 수행되는 특정 작업은 응용 프로그램과 관련이 있으며 컨텍스트에 의해 결정되는 경우가 많습니다.  예를들어 동일한 저장 장치의 폴더 간에 선택한 파일을 끌어서 놓으면 기본적으로 파일이 이동하는 반면, [!INCLUDE[TLA#tla_unc](../../../../includes/tlasharptla-unc-md.md)] 공유에서 로컬 폴더로 파일을 끌어서 놓으면 기본적으로 파일이 복사됩니다.  
+ 끌어서 놓기 작업 중 수행되는 특정 작업은 응용 프로그램과 관련이 있으며 컨텍스트에 의해 결정되는 경우가 많습니다.  예를들어 동일한 저장 디바이스의 폴더 간에 선택한 파일을 끌어서 놓으면 기본적으로 파일이 이동하는 반면, [!INCLUDE[TLA#tla_unc](../../../../includes/tlasharptla-unc-md.md)] 공유에서 로컬 폴더로 파일을 끌어서 놓으면 기본적으로 파일이 복사됩니다.  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 제공하는 끌어서 놓기 기능은 다양한 끌어서 놓기 시나리오를 지원하도록 매우 유연하고 사용자 지정 가능하도록 설계되었습니다.  끌어서 놓기는 단일 응용 프로그램 내에서 또는 서로 다른 응용 프로그램 간에 개체 조작을 지원합니다. 드래그 앤 드롭 간의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램 및 다른 Windows 응용 프로그램도 완전히 지원 됩니다.  
   

@@ -91,7 +91,7 @@ public IEnumerable<int> GetSingleDigitNumbers()
 }
 ```
 
-이 구문은 기본 구문입니다. 반복기 메서드를 작성하는 실제 예제를 살펴보겠습니다. IoT 프로젝트를 진행하고 있고 장치 센서는 매우 큰 데이터 스트림을 생성한다고 가정합니다. 데이터를 파악하려면 N번째 데이터 요소마다 샘플링하는 메서드를 작성할 수 있습니다. 이 작은 반복기 메서드면 충분합니다.
+이 구문은 기본 구문입니다. 반복기 메서드를 작성하는 실제 예제를 살펴보겠습니다. IoT 프로젝트를 진행하고 있고 디바이스 센서는 매우 큰 데이터 스트림을 생성한다고 가정합니다. 데이터를 파악하려면 N번째 데이터 요소마다 샘플링하는 메서드를 작성할 수 있습니다. 이 작은 반복기 메서드면 충분합니다.
 
 ```csharp
 public static IEnumerable<T> Sample(this IEnumerable<T> sourceSequence, int interval)

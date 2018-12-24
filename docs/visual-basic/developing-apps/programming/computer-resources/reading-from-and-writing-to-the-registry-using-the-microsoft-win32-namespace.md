@@ -22,7 +22,7 @@ ms.locfileid: "42792331"
 |<xref:Microsoft.Win32.Registry.ClassesRoot>|문서의 형식 및 그러한 형식과 관련된 속성을 정의합니다.|  
 |<xref:Microsoft.Win32.Registry.CurrentConfig>|사용자와 관련되지 않은 하드웨어 구성 정보를 포함합니다.|  
 |<xref:Microsoft.Win32.Registry.CurrentUser>|현재 사용자 기본 설정(예: 환경 변수)에 대한 정보를 포함합니다.|  
-|<xref:Microsoft.Win32.Registry.DynData>|가상 장치 드라이버에서 사용하는 것과 같은 동적 레지스트리 데이터를 포함합니다.|  
+|<xref:Microsoft.Win32.Registry.DynData>|가상 디바이스 드라이버에서 사용하는 것과 같은 동적 레지스트리 데이터를 포함합니다.|  
 |<xref:Microsoft.Win32.Registry.LocalMachine>|로컬 컴퓨터에 대한 구성 데이터를 유지하는 5개의 하위 키(하드웨어, SAM, 보안, 소프트웨어 및 시스템)를 포함합니다.|  
 |<xref:Microsoft.Win32.Registry.PerformanceData>|소프트웨어 구성 요소에 대한 성능 정보를 포함합니다.|  
 |<xref:Microsoft.Win32.Registry.Users>|기본 사용자 기본 설정에 대한 정보를 포함합니다.|  

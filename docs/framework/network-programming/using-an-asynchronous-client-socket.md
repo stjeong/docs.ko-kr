@@ -29,11 +29,11 @@ ms.locfileid: "50194958"
   
  <xref:System.Net.Sockets.Socket> 클래스는 비동기 메서드에 대한 .NET Framework 명명 패턴을 따릅니다. 예를 들어 동기 <xref:System.Net.Sockets.Socket.Receive%2A> 메서드는 비동기 <xref:System.Net.Sockets.Socket.BeginReceive%2A> 및 <xref:System.Net.Sockets.Socket.EndReceive%2A> 메서드에 해당합니다.  
   
- 비동기 작업에서는 콜백 메서드가 작업 결과를 반환해야 합니다. 응용 프로그램이 결과를 알 필요가 없는 경우 콜백 메서드가 필요하지 않습니다. 이 섹션의 예제 코드에서는 메서드를 사용하여 네트워크 장치에 연결을 시작하고 콜백 메서드를 사용하여 연결을 완료하는 방법, 메서드를 사용하여 데이터 전송을 시작하고 콜백 메서드를 사용하여 전송을 완료하는 방법, 메서드를 사용하여 데이터 수신을 시작하고 콜백 메서드를 사용하여 데이터 수신을 끝내는 방법을 보여 줍니다.  
+ 비동기 작업에서는 콜백 메서드가 작업 결과를 반환해야 합니다. 응용 프로그램이 결과를 알 필요가 없는 경우 콜백 메서드가 필요하지 않습니다. 이 섹션의 예제 코드에서는 메서드를 사용하여 네트워크 디바이스에 연결을 시작하고 콜백 메서드를 사용하여 연결을 완료하는 방법, 메서드를 사용하여 데이터 전송을 시작하고 콜백 메서드를 사용하여 전송을 완료하는 방법, 메서드를 사용하여 데이터 수신을 시작하고 콜백 메서드를 사용하여 데이터 수신을 끝내는 방법을 보여 줍니다.  
   
- 비동기 소켓은 시스템 스레드 풀의 여러 스레드를 사용하여 네트워크 연결을 처리합니다. 한 스레드는 데이터 전송 또는 수신을 시작하고, 다른 스레드는 네트워크 장치에 대한 연결을 완료하고 데이터를 보내거나 받습니다. 다음 예제에서 <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> 클래스 인스턴스는 주 스레드의 실행을 일시 중단하고 실행을 계속할 수 있으면 알려주는 데 사용됩니다.  
+ 비동기 소켓은 시스템 스레드 풀의 여러 스레드를 사용하여 네트워크 연결을 처리합니다. 한 스레드는 데이터 전송 또는 수신을 시작하고, 다른 스레드는 네트워크 디바이스에 대한 연결을 완료하고 데이터를 보내거나 받습니다. 다음 예제에서 <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> 클래스 인스턴스는 주 스레드의 실행을 일시 중단하고 실행을 계속할 수 있으면 알려주는 데 사용됩니다.  
   
- 다음 예제에서 비동기 소켓을 네트워크 장치에 연결하기 위해 `Connect` 메서드는 **Socket**을 초기화한 다음 <xref:System.Net.Sockets.Socket.Connect%2A?displayProperty=nameWithType> 메서드를 호출하고 네트워크 장치를 나타내는 원격 엔드포인트, 연결 콜백 메서드 및 비동기 호출 간에 상태 정보를 전달하는 데 사용되는 상태 개체(클라이언트 **Socket**)를 전달합니다. 이 예제에서는 `Connect` 메서드를 구현하여 지정된 **Socket**을 지정된 엔드포인트에 연결합니다. `connectDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
+ 다음 예제에서 비동기 소켓을 네트워크 디바이스에 연결하기 위해 `Connect` 메서드는 **Socket**을 초기화한 다음 <xref:System.Net.Sockets.Socket.Connect%2A?displayProperty=nameWithType> 메서드를 호출하고 네트워크 디바이스를 나타내는 원격 엔드포인트, 연결 콜백 메서드 및 비동기 호출 간에 상태 정보를 전달하는 데 사용되는 상태 개체(클라이언트 **Socket**)를 전달합니다. 이 예제에서는 `Connect` 메서드를 구현하여 지정된 **Socket**을 지정된 엔드포인트에 연결합니다. `connectDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
   
 ```vb  
 Public Shared Sub Connect(remoteEP As EndPoint, client As Socket)  
@@ -95,7 +95,7 @@ private static void ConnectCallback(IAsyncResult ar) {
 }  
 ```  
   
- 예제 메서드 `Send`는 지정된 문자열 데이터를 ASCII 형식으로 인코드하고 지정된 소켓이 나타내는 네트워크 장치에 비동기적으로 보냅니다. 다음 예제에서는 `Send` 메서드를 구현합니다.  
+ 예제 메서드 `Send`는 지정된 문자열 데이터를 ASCII 형식으로 인코드하고 지정된 소켓이 나타내는 네트워크 디바이스에 비동기적으로 보냅니다. 다음 예제에서는 `Send` 메서드를 구현합니다.  
   
 ```vb  
 Private Shared Sub Send(client As Socket, data As [String])  
@@ -119,7 +119,7 @@ private static void Send(Socket client, String data) {
 }  
 ```  
   
- 전송 콜백 메서드 `SendCallback`은 <xref:System.AsyncCallback> 대리자를 구현합니다. 네트워크 장치가 수신할 준비가 되면 데이터를 보냅니다. 다음 예제에서는 `SendCallback` 메서드의 구현을 보여 줍니다. `sendDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
+ 전송 콜백 메서드 `SendCallback`은 <xref:System.AsyncCallback> 대리자를 구현합니다. 네트워크 디바이스가 수신할 준비가 되면 데이터를 보냅니다. 다음 예제에서는 `SendCallback` 메서드의 구현을 보여 줍니다. `sendDone`이라는 전역 **ManualResetEvent**를 가정합니다.  
   
 ```vb  
 Private Shared Sub SendCallback(ar As IAsyncResult)  
@@ -219,7 +219,7 @@ private static void Receive(Socket client) {
 }  
 ```  
   
- 수신 콜백 메서드 `ReceiveCallback`은 **AsyncCallback** 대리자를 구현합니다. 네트워크 장치에서 데이터를 수신하고 메시지 문자열을 작성합니다. 네트워크에서 1바이트 이상의 데이터를 데이터 버퍼로 읽어온 다음 클라이언트에서 보낸 데이터가 완료될 때까지 **BeginReceive** 메서드를 다시 호출합니다. 클라이언트에서 모든 데이터를 읽은 후 `ReceiveCallback`은 **ManualResetEvent** `sendDone`을 설정하여 데이터가 완료되었음을 응용 프로그램 스레드에 알립니다.  
+ 수신 콜백 메서드 `ReceiveCallback`은 **AsyncCallback** 대리자를 구현합니다. 네트워크 디바이스에서 데이터를 수신하고 메시지 문자열을 작성합니다. 네트워크에서 1바이트 이상의 데이터를 데이터 버퍼로 읽어온 다음 클라이언트에서 보낸 데이터가 완료될 때까지 **BeginReceive** 메서드를 다시 호출합니다. 클라이언트에서 모든 데이터를 읽은 후 `ReceiveCallback`은 **ManualResetEvent** `sendDone`을 설정하여 데이터가 완료되었음을 응용 프로그램 스레드에 알립니다.  
   
  다음 예제 코드에서는 `ReceiveCallback` 메서드를 구현합니다. 받은 문자열을 저장하는 `response`라는 전역 문자열과 `receiveDone`이라는 전역 **ManualResetEvent**를 가정합니다. 서버는 네트워크 세션을 종료하기 위해 클라이언트 소켓을 정상적으로 종료해야 합니다.  
   

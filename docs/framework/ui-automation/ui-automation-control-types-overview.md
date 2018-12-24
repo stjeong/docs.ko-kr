@@ -20,7 +20,7 @@ ms.locfileid: "47197775"
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 컨트롤 형식은 콤보 상자나 단추와 같은 특정 요소가 구현하는 컨트롤의 종류를 나타내기 위해 사용할 수 있는 알려진 식별자입니다.  
   
- 알려진 식별자를 사용하면 보조 기술 장치가 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 에서 사용 가능한 컨트롤의 형식 및 이 컨트롤을 조작하는 방식을 더 쉽게 확인할 수 있습니다.  
+ 알려진 식별자를 사용하면 보조 기술 디바이스가 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 에서 사용 가능한 컨트롤의 형식 및 이 컨트롤을 조작하는 방식을 더 쉽게 확인할 수 있습니다.  
   
 <a name="UI_Automation_Control_Type_Requisites"></a>   
 ## <a name="ui-automation-control-type-requisites"></a>UI 자동화 컨트롤 형식 필수 요소  

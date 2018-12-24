@@ -61,7 +61,7 @@ ms.locfileid: "48842790"
 ### <a name="stylus-input"></a>스타일러스 입력
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에 대 한 지원을 통합 합니다 <xref:System.Windows.Input.Stylus>합니다.  합니다 <xref:System.Windows.Input.Stylus> 에서 인기 있는 펜 입력을 [!INCLUDE[TLA#tla_tpc](../../../../includes/tlasharptla-tpc-md.md)]입니다.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램은 마우스 [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)]를 사용하여 스타일러스를 마우스로 처리할 수 있지만 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]는 키보드 및 마우스와 비슷한 모델을 사용하는 스타일러스 장치 추상화도 노출합니다.  스타일러스와 관련된 모든 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]에는 “Stylus”라는 단어가 포함됩니다.
 
- 스타일러스는 마우스처럼 동작할 수 있으므로 마우스 입력만 지원하는 응용 프로그램도 약간의 스타일러스 지원을 자동으로 받을 수 있습니다. 이러한 방식으로 스타일러스를 사용하는 경우 응용 프로그램은 알맞은 스타일러스 이벤트를 처리한 다음 해당 마우스 이벤트를 처리할 수 있게 됩니다. 뿐만 아니라 스타일러스 장치 추상화를 통해 잉크 입력과 같은 높은 수준의 서비스도 사용할 수 있습니다.  잉크 입력에 대한 자세한 내용은 [잉크 시작](../../../../docs/framework/wpf/advanced/getting-started-with-ink.md)을 참조하세요.
+ 스타일러스는 마우스처럼 동작할 수 있으므로 마우스 입력만 지원하는 응용 프로그램도 약간의 스타일러스 지원을 자동으로 받을 수 있습니다. 이러한 방식으로 스타일러스를 사용하는 경우 응용 프로그램은 알맞은 스타일러스 이벤트를 처리한 다음 해당 마우스 이벤트를 처리할 수 있게 됩니다. 뿐만 아니라 스타일러스 디바이스 추상화를 통해 잉크 입력과 같은 높은 수준의 서비스도 사용할 수 있습니다.  잉크 입력에 대한 자세한 내용은 [잉크 시작](../../../../docs/framework/wpf/advanced/getting-started-with-ink.md)을 참조하세요.
 
 <a name="event_routing"></a>
 ## <a name="event-routing"></a>이벤트 라우팅
@@ -75,7 +75,7 @@ ms.locfileid: "48842790"
 ## <a name="handling-input-events"></a>입력 이벤트 처리
  요소에서 입력을 받으려면 특정 이벤트에 이벤트 처리기를 연결해야 합니다.  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]에서는 이 작업이 매우 간단합니다. 이 이벤트를 수신할 요소의 특성으로 이벤트 이름을 참조합니다.  그런 다음 대리자에 따라 정의하는 이벤트 처리기의 이름으로 특성 값을 설정하기만 하면 됩니다.  이벤트 처리기는 C#과 같은 코드 작성 해야 하 고 코드 숨김 파일에 포함 될 수 있습니다.
 
- 키보드 이벤트는 키보드 포커스가 요소에 있는 동안 발생하는 키 동작을 운영 체제에서 보고할 때 발생합니다. 마우스 및 스타일러스 이벤트는 각각 요소를 기준으로 포인터 위치의 변경을 보고하는 이벤트와 장치 단추의 상태 변경을 보고하는 이벤트의 두 범주로 나뉩니다.
+ 키보드 이벤트는 키보드 포커스가 요소에 있는 동안 발생하는 키 동작을 운영 체제에서 보고할 때 발생합니다. 마우스 및 스타일러스 이벤트는 각각 요소를 기준으로 포인터 위치의 변경을 보고하는 이벤트와 디바이스 단추의 상태 변경을 보고하는 이벤트의 두 범주로 나뉩니다.
 
 ### <a name="keyboard-input-event-example"></a>키보드 입력 이벤트 예제
  다음 예제에서는 왼쪽 화살표 키 누르기를 수신합니다.  A <xref:System.Windows.Controls.StackPanel> 만들어집니다에 <xref:System.Windows.Controls.Button>합니다.  왼쪽된 화살표 키 누름에 연결할 때 수신 하는 이벤트 처리기는 <xref:System.Windows.Controls.Button> 인스턴스.
@@ -112,7 +112,7 @@ ms.locfileid: "48842790"
 
 <a name="text_input"></a>
 ## <a name="text-input"></a>텍스트 입력
- <xref:System.Windows.ContentElement.TextInput> 이벤트를 사용 하면 장치 독립적인 방식으로 텍스트 입력을 수신할 수 있습니다. 텍스트 입력에는 주로 키보드를 사용하지만 음성, 필기 및 기타 입력 장치를 통해서도 텍스트 입력을 생성할 수 있습니다.
+ <xref:System.Windows.ContentElement.TextInput> 이벤트를 사용 하면 장치 독립적인 방식으로 텍스트 입력을 수신할 수 있습니다. 텍스트 입력에는 주로 키보드를 사용하지만 음성, 필기 및 기타 입력 디바이스를 통해서도 텍스트 입력을 생성할 수 있습니다.
 
  키보드 입력에 대 한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 먼저 적절 한 보냅니다 <xref:System.Windows.ContentElement.KeyDown> / <xref:System.Windows.ContentElement.KeyUp> 이벤트입니다. 해당 이벤트가 처리 되지 않습니다 하 고 키가 (방향 화살표와 같은 제어 키) 또는 기능 키 대신 텍스트는 <xref:System.Windows.ContentElement.TextInput> 이벤트가 발생 합니다.  없는 항상 간의 간단한 일대일 매핑을 <xref:System.Windows.ContentElement.KeyDown> / <xref:System.Windows.ContentElement.KeyUp> 고 <xref:System.Windows.ContentElement.TextInput> 이벤트 여러 키 입력 텍스트 입력의 단일 문자를 생성할 수 있으며 단일 키 입력에서 다중 문자를 생성할 수 있으므로 문자열입니다.  이는 특히 각 언어의 알파벳으로 수천 개의 가능한 문자를 생성하는 데 [!INCLUDE[TLA#tla_ime#plural](../../../../includes/tlasharptla-imesharpplural-md.md)]를 사용하는 한국어, 중국어 및 일본어 등의 언어에서 더욱 그렇습니다.
 
@@ -149,12 +149,12 @@ ms.locfileid: "48842790"
 
 -   Windows 7
 
--   Windows Touch를 지원하는 터치 스크린과 같은 장치
+-   Windows Touch를 지원하는 터치 스크린과 같은 디바이스
 
 ### <a name="terminology"></a>용어
  터치에 대해 설명할 때 다음 용어가 사용됩니다.
 
--   **터치**는 Windows 7에서 인식되는 사용자 입력 형식입니다. 일반적으로 터치 스크린에 손가락을 대면 터치가 시작됩니다. 랩톱 컴퓨터에서 일반적으로 사용되는 터치 패드와 같은 장치는 장치가 손가락의 위치와 움직임을 마우스 입력으로 단순히 변환하는 경우 터치를 지원하지 않습니다.
+-   **터치**는 Windows 7에서 인식되는 사용자 입력 형식입니다. 일반적으로 터치 스크린에 손가락을 대면 터치가 시작됩니다. 랩톱 컴퓨터에서 일반적으로 사용되는 터치 패드와 같은 디바이스는 디바이스가 손가락의 위치와 움직임을 마우스 입력으로 단순히 변환하는 경우 터치를 지원하지 않습니다.
 
 -   **멀티 터치**는 둘 이상의 지점에서 동시에 발생하는 터치입니다. Windows 7 및 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 멀티 터치를 지원합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에 대한 설명서에서 터치를 설명할 때마다 이 개념이 멀티 터치에 적용됩니다.
 
@@ -355,11 +355,11 @@ ms.locfileid: "48842790"
 
 <a name="mouse_capture"></a>
 ## <a name="mouse-capture"></a>마우스 캡처
- 마우스 장치에는 마우스 캡처라고 하는 모달 특성이 있습니다. 마우스 캡처는 끌어서 놓기 작업이 시작될 때 전환되는 입력 상태를 유지함으로써 마우스 포인터의 명목상 화면 위치와 관련된 다른 작업이 발생할 필요가 없도록 하기 위해 사용됩니다. 마우스를 끄는 동안 끌어서 놓기 작업을 중단하지 않고는 클릭할 수 없으므로 끌기 원점에서 마우스 캡처를 보유하는 동안에는 대부분의 마우스 이동 동작이 적절하지 않게 됩니다. 입력 시스템은 마우스 캡처 상태를 확인할 수 있는 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]와 특정 요소에 마우스 캡처를 적용하거나 마우스 캡처 상태를 지울 수 있는 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]를 제공합니다. 끌어서 놓기 작업에 대한 자세한 내용은 [끌어서 놓기 개요](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)를 참조하세요.
+ 마우스 디바이스에는 마우스 캡처라고 하는 모달 특성이 있습니다. 마우스 캡처는 끌어서 놓기 작업이 시작될 때 전환되는 입력 상태를 유지함으로써 마우스 포인터의 명목상 화면 위치와 관련된 다른 작업이 발생할 필요가 없도록 하기 위해 사용됩니다. 마우스를 끄는 동안 끌어서 놓기 작업을 중단하지 않고는 클릭할 수 없으므로 끌기 원점에서 마우스 캡처를 보유하는 동안에는 대부분의 마우스 이동 동작이 적절하지 않게 됩니다. 입력 시스템은 마우스 캡처 상태를 확인할 수 있는 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]와 특정 요소에 마우스 캡처를 적용하거나 마우스 캡처 상태를 지울 수 있는 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]를 제공합니다. 끌어서 놓기 작업에 대한 자세한 내용은 [끌어서 놓기 개요](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)를 참조하세요.
 
 <a name="commands"></a>
 ## <a name="commands"></a>명령
- 명령을 사용하면 장치 입력에 비해 보다 의미적 수준에서 입력을 처리할 수 있습니다.  명령은 `Cut`, `Copy`, `Paste` 또는 `Open`과 같은 단순한 지시문입니다.  명령은 명령 논리를 중앙 집중화하는 데 유용합니다.  동일한 명령에서 액세스할 수 있습니다는 <xref:System.Windows.Controls.Menu>의 <xref:System.Windows.Controls.ToolBar>, 또는 바로 가기 키입니다. 또한 명령은 명령을 사용할 수 없을 때 컨트롤을 비활성화하는 메커니즘도 제공합니다.
+ 명령을 사용하면 디바이스 입력에 비해 보다 의미적 수준에서 입력을 처리할 수 있습니다.  명령은 `Cut`, `Copy`, `Paste` 또는 `Open`과 같은 단순한 지시문입니다.  명령은 명령 논리를 중앙 집중화하는 데 유용합니다.  동일한 명령에서 액세스할 수 있습니다는 <xref:System.Windows.Controls.Menu>의 <xref:System.Windows.Controls.ToolBar>, 또는 바로 가기 키입니다. 또한 명령은 명령을 사용할 수 없을 때 컨트롤을 비활성화하는 메커니즘도 제공합니다.
 
  <xref:System.Windows.Input.RoutedCommand> [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 구현의 <xref:System.Windows.Input.ICommand>합니다.  경우는 <xref:System.Windows.Input.RoutedCommand> 실행 되는 <xref:System.Windows.Input.CommandManager.PreviewExecuted> 및 <xref:System.Windows.Input.CommandManager.Executed> 터널링 및 버블링 요소 트리를 통해 다른 입력과 마찬가지로 명령 대상에서 이벤트가 합니다.  명령 대상이 설정되어 있지 않으면 키보드 포커스가 있는 요소가 명령 대상이 됩니다.  에 연결 된 명령을 수행 하는 논리는 <xref:System.Windows.Input.CommandBinding>합니다.  경우는 <xref:System.Windows.Input.CommandManager.Executed> 이벤트가 도달할를 <xref:System.Windows.Input.CommandBinding> 해당 특정 명령에 대 한는 <xref:System.Windows.Input.ExecutedRoutedEventHandler> 에 <xref:System.Windows.Input.CommandBinding> 라고 합니다.  이 처리기는 명령의 작업을 수행합니다.
 

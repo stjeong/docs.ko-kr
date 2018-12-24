@@ -13,7 +13,7 @@ ms.locfileid: "50192332"
 ---
 # <a name="visual-basic-guide"></a>Visual Basic 가이드
 
-Visual Basic은 형식이 안전한 개체 지향 응용 프로그램을 생산적으로 빌드하기 위해 엔지니어링되었습니다. Visual Basic를 사용하면 Windows, 웹, 모바일 장치를 대상으로 할 수 있습니다. Microsoft .NET Framework를 대상으로 하는 모든 언어처럼, Visual Basic으로 작성된 프로그램에는 보안 및 언어 상호 운용성의 장점이 있습니다.  
+Visual Basic은 형식이 안전한 개체 지향 응용 프로그램을 생산적으로 빌드하기 위해 엔지니어링되었습니다. Visual Basic를 사용하면 Windows, 웹, 모바일 디바이스를 대상으로 할 수 있습니다. Microsoft .NET Framework를 대상으로 하는 모든 언어처럼, Visual Basic으로 작성된 프로그램에는 보안 및 언어 상호 운용성의 장점이 있습니다.  
   
  Visual Basic 이번 버전에는 .NET Framework 기반 응용 프로그램을 만드는 쉽고 빠른 방법을 제공하는 전통 방식이 계속됩니다.  
   

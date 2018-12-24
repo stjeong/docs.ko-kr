@@ -27,7 +27,7 @@ ms.locfileid: "50188302"
 ## <a name="files-and-directories"></a>파일 및 디렉터리  
  사용자는 이 형식들을 <xref:System.IO?displayProperty=nameWithType> 네임스페이스에서 파일 및 디렉터리와 상호 작용하기 위해 사용할 수 있습니다. 예를 들어, 파일 및 디렉터리에 대한 속성을 가져오고 설정할 수 있고, 검색 조건에 따라 파일 및 디렉터리의 컬렉션을 검색할 수 있습니다.  
 
-.NET Core 1.1 및 .NET Framework 4.6.2 이상에서 지원되는 DOS 장치 구문을 비롯한 Windows 시스템에 대한 경로 명명 규칙 및 파일 경로를 표현하는 방법은 [Windows 시스템의 파일 경로 형식](file-path-formats.md)을 참조하세요. 
+.NET Core 1.1 및 .NET Framework 4.6.2 이상에서 지원되는 DOS 디바이스 구문을 비롯한 Windows 시스템에 대한 경로 명명 규칙 및 파일 경로를 표현하는 방법은 [Windows 시스템의 파일 경로 형식](file-path-formats.md)을 참조하세요. 
   
  다음은 몇 가지 흔히 사용되는 파일 및 디렉터리 클래스입니다.  
   

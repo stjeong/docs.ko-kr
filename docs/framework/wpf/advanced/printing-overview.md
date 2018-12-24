@@ -55,7 +55,7 @@ Microsoft.NET Framework를 사용 하 여 Windows Presentation Foundation (WPF)�
   
  [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)]는 확장성을 염두에 두고 설계되었습니다. 확장성 프레임워크를 사용하여 모듈형 방식으로 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)]에 기능 및 특성을 추가할 수 있습니다. 확장성 기능은 다음과 같습니다.  
   
--   인쇄 스키마. 공용 스키마는 정기적으로 업데이트되며 장치 기능을 빠르게 확장할 수 있게 해줍니다. 아래의 **PrintTicket 및 PrintCapabilities**를 참조하세요.  
+-   인쇄 스키마. 공용 스키마는 정기적으로 업데이트되며 디바이스 기능을 빠르게 확장할 수 있게 해줍니다. 아래의 **PrintTicket 및 PrintCapabilities**를 참조하세요.  
   
 -   확장 가능한 필터 파이프라인. [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 프린터 드라이버(XPSDrv) 필터 파이프라인은 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 문서의 직접 인쇄와 확장 가능한 인쇄를 둘 다 사용할 수 있도록 설계되었습니다. ("XPSDrv"에 [Windows 드라이버 키트](https://msdn.microsoft.com/library/windows/hardware/ff557573.aspx).)  
   
@@ -122,7 +122,7 @@ Microsoft.NET Framework를 사용 하 여 Windows Presentation Foundation (WPF)�
   
 -   매우 복잡하거나 다중 계층이거나 비효율적으로 작성된 벡터 그래픽은 동일한 그래픽의 비트맵 버전보다 클 수 있습니다.  
   
--   화면 표시를 위해 XPS 파일은 장치 글꼴과 컴퓨터 기반 글꼴을 포함하는 반면 GDI 스풀 파일은 장치 글꼴을 포함하지 않습니다. 그러나 두 종류의 글꼴은 모두 하위 집합으로 지정되며(아래 참조), 프린터 드라이버가 파일을 프린터로 전송하기 전에 장치 글꼴을 제거할 수 있습니다.  
+-   화면 표시를 위해 XPS 파일은 디바이스 글꼴과 컴퓨터 기반 글꼴을 포함하는 반면 GDI 스풀 파일은 디바이스 글꼴을 포함하지 않습니다. 그러나 두 종류의 글꼴은 모두 하위 집합으로 지정되며(아래 참조), 프린터 드라이버가 파일을 프린터로 전송하기 전에 디바이스 글꼴을 제거할 수 있습니다.  
   
  스풀 크기 감소는 다음과 같은 여러 메커니즘을 통해 수행됩니다.  
   

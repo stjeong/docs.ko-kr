@@ -97,7 +97,7 @@ ms.locfileid: "50195920"
   
  시간이 많이 종종 할애 하 여의 출력 측면에 대 한 설명 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] – <xref:System.Windows.Media.Visual> 및 관련 개체입니다. 입력 측면에도 새로운 내용이 매우 많습니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]의 입력 모델에서 가장 근본적인 변화는 입력 이벤트가 시스템을 통해 라우트되는 일관된 모델입니다.  
   
- 입력은 커널 모드 장치 드라이버의 신호로 시작되며 Windows 커널 및 User32가 관련된 복잡한 프로세스를 통해 올바른 프로세스 및 스레드로 라우트됩니다. 입력에 해당하는 User32 메시지가 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]로 라우트되면 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 원시 입력 메시지로 변환되고 디스패처로 전송됩니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]는 원시 입력 이벤트를 여러 개의 실제 이벤트로 변환하여 "MouseEnter"와 같은 기능이 시스템의 낮은 수준에서 구현될 수 있도록 합니다. 이 경우 이러한 기능의 배달이 보장됩니다.  
+ 입력은 커널 모드 디바이스 드라이버의 신호로 시작되며 Windows 커널 및 User32가 관련된 복잡한 프로세스를 통해 올바른 프로세스 및 스레드로 라우트됩니다. 입력에 해당하는 User32 메시지가 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]로 라우트되면 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 원시 입력 메시지로 변환되고 디스패처로 전송됩니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]는 원시 입력 이벤트를 여러 개의 실제 이벤트로 변환하여 "MouseEnter"와 같은 기능이 시스템의 낮은 수준에서 구현될 수 있도록 합니다. 이 경우 이러한 기능의 배달이 보장됩니다.  
   
  각 입력 이벤트는 최소한 두 개의 이벤트인 "미리 보기" 이벤트와 실제 이벤트로 변환됩니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]에 있는 모든 이벤트는 요소 트리를 통해 라우트되는 개념입니다. 루트에는 트리의 대상에서 트래버스 하며 루트에서 시작 하는 대상으로 아래로 이동할 경우에 "터널링" 라고 하는 경우 이벤트를 "버블링" 라고 합니다. 입력 미리 보기 이벤트는 터널링되어 트리에 있는 각 요소가 이벤트를 필터링하거나 이벤트에 대한 작업을 수행할 수 있는 기회를 제공합니다. 그런 다음 일반(미리 보기 아님) 이벤트가 대상에서 루트로 위로 버블링됩니다.  
   

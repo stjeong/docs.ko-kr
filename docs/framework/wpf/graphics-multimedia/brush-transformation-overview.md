@@ -25,7 +25,7 @@ Brush 클래스는 두 개의 변환 속성을 제공 합니다. <xref:System.Wi
   
 <a name="transformversusrelativetransform"></a>   
 ## <a name="differences-between-the-transform-and-relativetransform-properties"></a>Transform 및 RelativeTransform 속성 간 차이점  
- 브러시의에 변환을 적용할 때 <xref:System.Windows.Media.Brush.Transform%2A> 가운데를 중심으로 브러시 콘텐츠를 변환 하려는 경우 그려지는 영역의 크기를 알아야 할 속성입니다. 그려지는 영역의 장치 독립적 픽셀 크기를 너비 200, 높이 150으로 가정합니다.  사용 하는 경우는 <xref:System.Windows.Media.RotateTransform> 가운데를 중심으로 45도 출력 브러시를 회전 하려면를 지정 합니다 <xref:System.Windows.Media.RotateTransform> 는 <xref:System.Windows.Media.RotateTransform.CenterX%2A> 100 및 <xref:System.Windows.Media.RotateTransform.CenterY%2A> 75.  
+ 브러시의에 변환을 적용할 때 <xref:System.Windows.Media.Brush.Transform%2A> 가운데를 중심으로 브러시 콘텐츠를 변환 하려는 경우 그려지는 영역의 크기를 알아야 할 속성입니다. 그려지는 영역의 디바이스 독립적 픽셀 크기를 너비 200, 높이 150으로 가정합니다.  사용 하는 경우는 <xref:System.Windows.Media.RotateTransform> 가운데를 중심으로 45도 출력 브러시를 회전 하려면를 지정 합니다 <xref:System.Windows.Media.RotateTransform> 는 <xref:System.Windows.Media.RotateTransform.CenterX%2A> 100 및 <xref:System.Windows.Media.RotateTransform.CenterY%2A> 75.  
   
  브러시의에 변환을 적용할 때 <xref:System.Windows.Media.Brush.RelativeTransform%2A> 속성을 해당 출력이 그려지는 영역에 매핑되기 전에 해당 변환 브러시에 적용 됩니다. 다음 목록에서는 브러시 콘텐츠가 처리되고 변환되는 순서를 보여 줍니다.  
   

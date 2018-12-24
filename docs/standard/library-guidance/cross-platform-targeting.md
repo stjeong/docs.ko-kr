@@ -13,7 +13,7 @@ ms.locfileid: "53129716"
 ---
 # <a name="cross-platform-targeting"></a>플랫폼 간 대상 지정
 
-최신 .NET은 여러 운영 체제와 장치를 지원합니다. .NET 오픈 소스 라이브러리는 Azure에 호스트되는 ASP.NET 웹 사이트를 빌드하든, Unity에서 .NET 게임을 빌드하든 간에, 가능한 한 많은 개발자를 지원하는 것이 중요합니다.
+최신 .NET은 여러 운영 체제와 디바이스를 지원합니다. .NET 오픈 소스 라이브러리는 Azure에 호스트되는 ASP.NET 웹 사이트를 빌드하든, Unity에서 .NET 게임을 빌드하든 간에, 가능한 한 많은 개발자를 지원하는 것이 중요합니다.
 
 ## <a name="net-standard"></a>.NET Standard
 

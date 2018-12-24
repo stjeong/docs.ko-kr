@@ -34,7 +34,7 @@ ms.locfileid: "33588936"
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  다음 조건에서는 예외가 throw될 수 있습니다.  
   
--   길이가 0인 문자열이거나, 공백만 포함하거나, 잘못된 문자를 포함하거나, 경로가 장치 경로인 경우(\\\\.\\로 시작됨)와 같은 여러 가지 이유 중 하나로 경로가 올바르지 않은 경우(<xref:System.ArgumentException>)  
+-   길이가 0인 문자열이거나, 공백만 포함하거나, 잘못된 문자를 포함하거나, 경로가 디바이스 경로인 경우(\\\\.\\로 시작됨)와 같은 여러 가지 이유 중 하나로 경로가 올바르지 않은 경우(<xref:System.ArgumentException>)  
   
 -   시스템이 절대 경로를 검색할 수 없는 경우(<xref:System.ArgumentException>)  
   

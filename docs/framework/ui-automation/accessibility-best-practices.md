@@ -18,7 +18,7 @@ ms.locfileid: "50191079"
 > [!NOTE]
 >  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
   
- 컨트롤이나 응용 프로그램에서 다음 모범 사례를 구현하면 [!INCLUDE[TLA#tla_at](../../../includes/tlasharptla-at-md.md)] 장치 사용자에 대한 액세스 가능성이 향상됩니다. 이들 모범 사례는 대부분 효율적인 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 디자인에 초점을 맞춥니다. 각 모범 사례에는 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] 컨트롤 또는 응용 프로그램에 대한 구현 정보가 포함됩니다. 대부분 경우에 이들 모범 사례에 맞는 작업이 이미 [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] 컨트롤에 포함되어 있습니다.  
+ 컨트롤이나 응용 프로그램에서 다음 모범 사례를 구현하면 [!INCLUDE[TLA#tla_at](../../../includes/tlasharptla-at-md.md)] 디바이스 사용자에 대한 액세스 가능성이 향상됩니다. 이들 모범 사례는 대부분 효율적인 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 디자인에 초점을 맞춥니다. 각 모범 사례에는 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] 컨트롤 또는 응용 프로그램에 대한 구현 정보가 포함됩니다. 대부분 경우에 이들 모범 사례에 맞는 작업이 이미 [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] 컨트롤에 포함되어 있습니다.  
   
 <a name="Programmatic_Access"></a>   
 ## <a name="programmatic-access"></a>프로그래밍 방식 액세스  
@@ -32,7 +32,7 @@ ms.locfileid: "50191079"
   
 <a name="Place_Names__Titles_and_Descriptions_on_UI_Objects_"></a>   
 ### <a name="place-names-titles-and-descriptions-on-ui-objects-frames-and-pages"></a>UI 개체, 프레임 및 페이지에 대한 위치 이름, 제목 및 설명  
- 보조 기술, 특히 화면 읽기 프로그램에서는 제목을 사용하여 탐색 체계에서 프레임, 개체 또는 페이지의 위치를 인식합니다. 따라서 제목은 구체적인 설명을 포함해야 합니다. 예를 들어 사용자가 특정 영역을 자세히 탐색한 경우에는 웹 페이지 제목이 "Microsoft 웹 페이지"인 것은 도움이 되지 않습니다. 시각 장애가 있고 화면 읽기 프로그램에 의존하는 사용자에게는 구체적인 설명이 포함된 제목이 중요합니다. 마찬가지로 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] 컨트롤의 경우 <xref:System.Windows.Automation.AutomationProperties.NameProperty> 장치에 대한 <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> 및 [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] 가 중요합니다.  
+ 보조 기술, 특히 화면 읽기 프로그램에서는 제목을 사용하여 탐색 체계에서 프레임, 개체 또는 페이지의 위치를 인식합니다. 따라서 제목은 구체적인 설명을 포함해야 합니다. 예를 들어 사용자가 특정 영역을 자세히 탐색한 경우에는 웹 페이지 제목이 "Microsoft 웹 페이지"인 것은 도움이 되지 않습니다. 시각 장애가 있고 화면 읽기 프로그램에 의존하는 사용자에게는 구체적인 설명이 포함된 제목이 중요합니다. 마찬가지로 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] 컨트롤의 경우 <xref:System.Windows.Automation.AutomationProperties.NameProperty> 디바이스에 대한 <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> 및 [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] 가 중요합니다.  
   
  이 모범 사례를 따르면 [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)]가 샘플 컨트롤 및 응용 프로그램에서 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 를 식별 및 조작할 수 있습니다.  
   
@@ -129,8 +129,8 @@ ms.locfileid: "50191079"
  색을 사용하여 다른 수단으로 표시된 정보를 개선, 강조 또는 반복하지만 색만 사용해서 정보를 전달하지는 않습니다. 색맹이거나 단색 디스플레이를 사용하는 사용자는 색의 대안이 필요합니다.  
   
 <a name="Use_Standard_Input_APIs_with_Devices_Independent"></a>   
-### <a name="use-standard-input-apis-with-device-independent-calls"></a>장치 독립적 호출을 통해 표준 입력 API 사용  
- 장치 독립적 호출을 사용하면 키보드 기능과 마우스 기능이 동일해지고 [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] 에 대한 필요한 정보와 함께 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]을(를) 제공합니다.  
+### <a name="use-standard-input-apis-with-device-independent-calls"></a>디바이스 독립적 호출을 통해 표준 입력 API 사용  
+ 디바이스 독립적 호출을 사용하면 키보드 기능과 마우스 기능이 동일해지고 [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] 에 대한 필요한 정보와 함께 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]을(를) 제공합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Windows.Automation.Peers>  

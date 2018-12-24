@@ -67,7 +67,7 @@ ms.locfileid: "33549103"
   
 <a name="Images"></a>   
 ## <a name="images"></a>이미지  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 이미징은 이전 버전의 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]보다 크게 향상된 이미징 기능을 제공합니다. 비트맵을 표시하거나 공용 컨트롤에 이미지를 사용하는 등의 이미징 기능은 원래 주로 Microsoft Windows GDI(그래픽 장치 인터페이스) 또는 Microsoft Windows GDI+ API(응용 프로그래밍 인터페이스)에 의해 처리되었습니다. 이러한 API는 기준 이미징 기능은 제공했지만 코덱 확장성 및 고품질 이미지 지원 등과 같은 기능이 없었습니다. WPF 이미징 API는 GDI 및 GDI+의 단점을 보완하고 응용 프로그램 내에서 이미지를 표시 및 사용하기 위한 새로운 API 집합을 제공하도록 다시 디자인되었습니다.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 이미징은 이전 버전의 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]보다 크게 향상된 이미징 기능을 제공합니다. 비트맵을 표시하거나 공용 컨트롤에 이미지를 사용하는 등의 이미징 기능은 원래 주로 Microsoft Windows GDI(그래픽 디바이스 인터페이스) 또는 Microsoft Windows GDI+ API(응용 프로그래밍 인터페이스)에 의해 처리되었습니다. 이러한 API는 기준 이미징 기능은 제공했지만 코덱 확장성 및 고품질 이미지 지원 등과 같은 기능이 없었습니다. WPF 이미징 API는 GDI 및 GDI+의 단점을 보완하고 응용 프로그램 내에서 이미지를 표시 및 사용하기 위한 새로운 API 집합을 제공하도록 다시 디자인되었습니다.  
   
  이미지를 사용할 경우 더 나은 성능을 얻으려면 다음 권장 사항을 고려하세요.  
   

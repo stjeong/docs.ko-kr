@@ -56,7 +56,7 @@ ms.locfileid: "43862019"
 ### <a name="output-caching"></a>출력 캐싱  
  응용 프로그램 데이터를 수동으로 캐시하려면 ASP.NET의 <xref:System.Runtime.Caching.MemoryCache> 클래스를 사용할 수 있습니다. ASP.NET은 페이지, 컨트롤 및 HTTP 응답의 생성된 출력을 메모리에 저장하는 출력 캐싱도 지원합니다. ASP.NET 웹 페이지에서 선언적으로 또는 Web.config 파일의 설정을 사용하여 출력 캐싱을 구성할 수 있습니다. 자세한 내용은 [caching 요소에 대한 outputCache 요소(ASP.NET 설정 스키마)](https://msdn.microsoft.com/library/47cd2b47-316f-4dfd-bbf8-539be3066fee)를 참조하세요.  
   
- ASP.NET에서는 사용자 지정 출력 캐시 공급자를 만들어 출력 캐싱을 확장할 수 있습니다. 사용자 지정 공급자를 사용하면 디스크, 클라우드 저장소, 분산된 캐시 엔진 등의 다른 저장소 장치를 사용하여 캐시된 콘텐츠를 저장할 수 있습니다. 사용자 지정 출력 캐시 공급자를 만들려면 <xref:System.Web.Caching.OutputCacheProvider> 클래스에서 파생되는 클래스를 만들고 사용자 지정 출력 캐시 공급자를 사용하도록 응용 프로그램을 구성합니다.  
+ ASP.NET에서는 사용자 지정 출력 캐시 공급자를 만들어 출력 캐싱을 확장할 수 있습니다. 사용자 지정 공급자를 사용하면 디스크, 클라우드 저장소, 분산된 캐시 엔진 등의 다른 저장소 디바이스를 사용하여 캐시된 콘텐츠를 저장할 수 있습니다. 사용자 지정 출력 캐시 공급자를 만들려면 <xref:System.Web.Caching.OutputCacheProvider> 클래스에서 파생되는 클래스를 만들고 사용자 지정 출력 캐시 공급자를 사용하도록 응용 프로그램을 구성합니다.  
   
 ## <a name="caching-in-wcf-rest-services"></a>WCF REST 서비스의 캐싱  
  WCF REST 서비스의 경우 .NET Framework를 통해 ASP.NET에서 사용 가능한 선언적 출력 캐싱을 활용할 수 있습니다. 이렇게 하면 WCF REST 서비스 작업의 응답을 캐시할 수 있습니다. 사용자가 캐시용으로 구성된 서비스에 HTTP GET 요청을 보내면 ASP.NET이 캐시된 응답을 다시 보내고 서비스 메서드가 호출되지 않습니다. 캐시가 만료된 후 다음에 사용자가 HTTP GET 요청을 보낼 때 서비스 메서드가 호출되고 응답이 다시 캐시됩니다.  

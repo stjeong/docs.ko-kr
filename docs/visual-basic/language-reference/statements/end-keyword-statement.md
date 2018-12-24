@@ -95,7 +95,7 @@ End With
 
 합니다 [End 문](end-statement.md), 추가 키워드, 실행을 즉시 종료 합니다.
 
-## <a name="smart-device-developer-notes"></a>스마트 장치 개발자 노트  
+## <a name="smart-device-developer-notes"></a>스마트 디바이스 개발자 노트  
 
 `End` 추가 키워드, 문이 지원 되지 않습니다.  
   

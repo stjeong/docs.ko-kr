@@ -138,9 +138,9 @@ ms.locfileid: "46703026"
   
 <a name="LayoutSystem_LayoutRounding"></a>   
 ## <a name="sub-pixel-rendering-and-layout-rounding"></a>하위 픽셀 렌더링 및 레이아웃 반올림  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 시스템에서는 해상도와 장치의 영향을 받지 않기 위해 장치 독립적 단위를 사용합니다. 각 장치 독립적 픽셀은 시스템의 [!INCLUDE[TLA#tla_dpi](../../../../includes/tlasharptla-dpi-md.md)] 설정에 맞게 자동으로 크기가 조정됩니다. 이를 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램에서 다양한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 설정에 적합하게 크기를 조정할 수 있으며 자동으로 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)]를 인식할 수 있도록 합니다.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 시스템에서는 해상도와 장치의 영향을 받지 않기 위해 장치 독립적 단위를 사용합니다. 각 디바이스 독립적 픽셀은 시스템의 [!INCLUDE[TLA#tla_dpi](../../../../includes/tlasharptla-dpi-md.md)] 설정에 맞게 자동으로 크기가 조정됩니다. 이를 통해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램에서 다양한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 설정에 적합하게 크기를 조정할 수 있으며 자동으로 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)]를 인식할 수 있도록 합니다.  
   
- 그러나 이러한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 독립성은 앤티앨리어싱으로 인해 불규칙한 가장자리 렌더링을 만들 수 있습니다. 일반적으로 흐리거나 반투명한 가장자리로 표시되는 이러한 아티팩트는 가장자리의 위치가 장치 픽셀 사이가 아닌 장치 픽셀 가운데에 있을 때 발생할 수 있습니다. 레이아웃 시스템에서는 레이아웃 반올림을 사용하여 조정할 수 있는 방법을 제공합니다. 레이아웃 반올림에서 레이아웃 단계 동안 모든 비정수 픽셀 값을 레이아웃 시스템이 반올림합니다.  
+ 그러나 이러한 [!INCLUDE[TLA2#tla_dpi](../../../../includes/tla2sharptla-dpi-md.md)] 독립성은 앤티앨리어싱으로 인해 불규칙한 가장자리 렌더링을 만들 수 있습니다. 일반적으로 흐리거나 반투명한 가장자리로 표시되는 이러한 아티팩트는 가장자리의 위치가 디바이스 픽셀 사이가 아닌 디바이스 픽셀 가운데에 있을 때 발생할 수 있습니다. 레이아웃 시스템에서는 레이아웃 반올림을 사용하여 조정할 수 있는 방법을 제공합니다. 레이아웃 반올림에서 레이아웃 단계 동안 모든 비정수 픽셀 값을 레이아웃 시스템이 반올림합니다.  
   
  레이아웃 반올림은 기본적으로 사용되지 않습니다. 레이아웃 반올림을 사용 하도록 설정 하려면 설정 합니다 <xref:System.Windows.FrameworkElement.UseLayoutRounding%2A> 속성을 `true` 에서 <xref:System.Windows.FrameworkElement>합니다. 종속성 속성이므로 값이 시각적 트리의 모든 자식에 전파됩니다. 전체 UI에 대해 레이아웃 반올림을 사용 하려면 <xref:System.Windows.FrameworkElement.UseLayoutRounding%2A> 에 `true` 루트 컨테이너에서. 예제를 보려면 <xref:System.Windows.FrameworkElement.UseLayoutRounding%2A>를 참조하십시오.  
   
