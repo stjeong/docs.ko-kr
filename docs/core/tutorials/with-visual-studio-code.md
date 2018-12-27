@@ -136,7 +136,7 @@ Hello World! Happy coding!
 
 ### <a name="im-missing-required-assets-to-build-and-debug-c-in-visual-studio-code-my-debugger-says-no-configuration"></a>Visual Studio Code에서 C#을 빌드하고 디버그하는 데 필요한 자산이 누락되었습니다. 내 디버거에서 "구성 없음"이라고 표시됩니다.
 
-Visual Studio Code C# 확장에서 빌드 및 디버그할 자산을 생성할 수 있습니다. Visual Studio Code는 C# 프로젝트를 처음 열 때 이러한 자산을 생성하라는 메시지를 표시합니다. 자산을 생성하지 않은 경우 명령 팔레트(**보기 > 명령 팔레트**)를 열고 ">.NET: 빌드 및 디버그용 자산 생성"을 입력하여 이 명령을 실행할 수 있습니다. 이를 선택하면 필요한 .vscode, launch.json 및 tasks.json 구성 파일이 생성됩니다.
+Visual Studio Code C# 확장에서 빌드 및 디버그할 자산을 생성할 수 있습니다. C# 프로젝트를 처음 열면 Visual Studio Code에 이러한 자산을 생성하라는 메시지가 표시됩니다. 자산을 생성하지 않은 경우 명령 팔레트(**보기 > 명령 팔레트**)를 열고 ">.NET: Generate Assets Build and Debug"을 입력하여 이 명령을 실행할 수 있습니다. 이를 선택하면 필요한 .vscode, launch.json 및 tasks.json 구성 파일이 생성됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
