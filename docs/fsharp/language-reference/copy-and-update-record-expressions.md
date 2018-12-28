@@ -1,14 +1,14 @@
 ---
-title: 복사 및 업데이트 레코드 식 (F#)
+title: 레코드 식 복사 및 업데이트
 description: 작성을 '복사 및 업데이트 레코드 expression' 복사는 기존 레코드를 업데이트 하는 필드 지정 및 업데이트 된 레코드를 반환 하는 방법에 알아봅니다.
 author: ChrSteinert
 ms.date: 06/04/2016
-ms.openlocfilehash: d2b089e8a7fc5c7ee26139003e23d2eaa8a3174e
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 5f9b13ebf6c456aff73872b7522d7670c068dd88
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45990845"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613312"
 ---
 # <a name="copy-and-update-record-expressions"></a>레코드 식 복사 및 업데이트
 
@@ -34,7 +34,7 @@ A *복사 및 업데이트 레코드 식* 은 기존 레코드를 복사 하 고
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1906.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [레코드](records.md)
 - [F# 언어 참조](index.md)

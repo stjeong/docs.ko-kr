@@ -1,13 +1,13 @@
 ---
-title: 서명 파일 (F#)
-description: F# 시그니처 파일 형식, 네임 스페이스, 모듈 등 F# 프로그램 요소를 집합의 공개 서명에 대 한 정보를 보관을 사용 하는 방법을 알아봅니다.
+title: 서명 파일
+description: 사용 하는 방법을 알아봅니다 F# 집합의 공개 서명에 대 한 정보를 저장 하는 서명 파일 F# 프로그램 형식, 네임 스페이스, 모듈 등의 요소입니다.
 ms.date: 06/15/2018
-ms.openlocfilehash: f0836aa7f638dc9e2b066b0f46bbb6c086347615
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 88938309a7c2bd12428f06ba8088141fd5349e80
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45991235"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613416"
 ---
 # <a name="signatures"></a>서명
 
@@ -29,6 +29,7 @@ ms.locfileid: "45991235"
 |---------|-----------|
 |`[<Sealed>]`|추상 멤버가 없거나 확장되지 않아야 하는 형식에 사용됩니다.|
 |`[<Interface>]`|인터페이스인 형식에 사용됩니다.|
+
 구현 파일의 선언과 서명 간에 특성이 일치하지 않는 경우 컴파일러에서 오류가 발생합니다.
 
 `val` 키워드를 사용하여 값 또는 함수 값에 대한 서명을 만듭니다. `type` 키워드는 형식 서명을 소개합니다.
@@ -65,7 +66,7 @@ ms.locfileid: "45991235"
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/fssignatures/snippet9001.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [Access Control](access-control.md)

@@ -1,18 +1,18 @@
 ---
-title: '&#39;StrConv.LinguisticCasing&#39; 필요 &#39;StrConv.LowerCase&#39; 또는 &#39;StrConv.UpperCase&#39;'
+title: "'StrConv.LinguisticCasing'에는 'StrConv.LowerCase' 또는 'StrConv.UpperCase'가 필요합니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbrLinguisticRequirements
 ms.assetid: 99cdb11d-9488-460b-84fb-a27f43da8be4
-ms.openlocfilehash: fc117c6b8993619e0610d5f51287e0fd0369729f
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 4ba166d499e722fcebba2a0f2d751bcfe2857304
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45741854"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53770548"
 ---
-# <a name="39strconvlinguisticcasing39-requires-39strconvlowercase39-or-39strconvuppercase39"></a>&#39;StrConv.LinguisticCasing&#39; 필요 &#39;StrConv.LowerCase&#39; 또는 &#39;StrConv.UpperCase&#39;
-`StrConv.LinguisticCasing`또는 `StrConv.LowerCase` 과 함께 사용하는 경우에만 유효한 `StrConv.UpperCase`를 사용하려고 했습니다.  
+# <a name="strconvlinguisticcasing-requires-strconvlowercase-or-strconvuppercase"></a>'StrConv.LinguisticCasing'에는 'StrConv.LowerCase' 또는 'StrConv.UpperCase'가 필요합니다.
+`StrConv.LowerCase` 또는 `StrConv.UpperCase`과 함께 사용하는 경우에만 유효한 `StrConv.LinguisticCasing`를 사용하려고 했습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   

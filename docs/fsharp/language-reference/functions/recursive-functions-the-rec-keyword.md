@@ -1,13 +1,13 @@
 ---
-title: '재귀 함수: Rec 키워드 (F#)'
+title: '재귀 함수: Rec 키워드'
 description: 설명 하는 방법을 F# 'rec' 키워드는 'let' 키워드를 사용 하 여 재귀 함수를 정의 하는 데 사용 됩니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 0db3ed7f85a1380654f2827b4773985b661589c7
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 9f9c7e1a4468de9551b3852d0e7b4381025b2699
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127734"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612909"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>재귀 함수: Rec 키워드
 
