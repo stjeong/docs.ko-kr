@@ -1,13 +1,13 @@
 ---
-title: 제약 조건(F#)
+title: 제약 조건
 description: 에 대해 알아봅니다 F# 제네릭 형식 또는 함수 형식 인수에 대 한 요구 사항을 지정 하려면 제네릭 형식 매개 변수에 적용 되는 제약 조건입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 2dfc99e0ef41a224fbd03f325582365b7caab78b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: b253ce50707512a0d46c41bba2dde34adcc24d0e
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152496"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612233"
 ---
 # <a name="constraints"></a>제약 조건
 
