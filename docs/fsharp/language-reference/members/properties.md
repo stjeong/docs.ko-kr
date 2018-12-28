@@ -1,13 +1,13 @@
 ---
-title: 속성(F#)
-description: F# 속성을 개체에 연결 된 값을 나타내는 멤버에 알아봅니다.
+title: 속성
+description: 에 대해 알아봅니다 F# 개체에 연결 된 값을 나타내는 멤버 수 있는 속성입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 75d21415b44ccc1c26ef5f478d5f5de20c3412e8
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 8e74e0bc0850b5f07c4697f624d5393813bec6e0
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50197927"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614508"
 ---
 # <a name="properties"></a>속성
 
@@ -143,7 +143,7 @@ Entity Framework와 같은 일부 라이브러리가 (`System.Data.Entity`) 자�
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3207.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](index.md)
 - [메서드](methods.md)

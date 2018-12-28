@@ -1,27 +1,27 @@
 ---
-title: 캐스팅 및 변환(F#)
-description: 제공 하는 방법을 F# 프로그래밍 언어 변환 연산자에 대 한 다양 한 기본 형식 간의 산술 변환에 알아봅니다.
+title: 캐스팅 및 변환
+description: 에 대해 알아봅니다 하는 방법을 F# 프로그래밍 언어 다양 한 기본 형식 간의 산술 변환에 대 한 변환 연산자를 제공 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: aca1a2523130ee485a7e7c9a6a45a410904cb246
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 2a12d48106a267edfc67c9e7b3d3a7bd41d8261c
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45677932"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53655987"
 ---
 # <a name="casting-and-conversions-f"></a>캐스팅 및 변환(F#)
 
-이 항목에서는 F#의 형식 변환에 대 한 지원을 설명 합니다.
+이 항목의 형식 변환에 대 한 지원에 설명 합니다 F#입니다.
 
 ## <a name="arithmetic-types"></a>산술 형식
 
-F# 변환 연산자 다양 한 기본 형식 간 산술 변환에 대 한 같은 제공 정수 및 부동 소수점 형식 간의 합니다. 변환 연산자는 정수 계열 및 char 체크 및 unchecked forms; 부동 소수점 연산자 및 `enum` 변환 연산자는 하지 않습니다. 검사 되지 않은 형식에 정의 된 `Microsoft.FSharp.Core.Operators` checked 형식은 정의 되어 `Microsoft.FSharp.Core.Operators.Checked`입니다. Checked 형식은 오버플로 검사 하 고 결과 값을 대상 형식 한도 초과 하는 경우 런타임 예외를 생성 합니다.
+F#정수 및 부동 소수점 형식 간에 같은 다양 한 기본 형식 간 산술 변환에 대 한 변환 연산자를 제공합니다. 변환 연산자는 정수 계열 및 char 체크 및 unchecked forms; 부동 소수점 연산자 및 `enum` 변환 연산자는 하지 않습니다. 검사 되지 않은 형식에 정의 된 `Microsoft.FSharp.Core.Operators` checked 형식은 정의 되어 `Microsoft.FSharp.Core.Operators.Checked`입니다. Checked 형식은 오버플로 검사 하 고 결과 값을 대상 형식 한도 초과 하는 경우 런타임 예외를 생성 합니다.
 
 이러한 각 연산자 이름이 동일한 대상 형식의 이름입니다. 예를 들어, 다음 코드는 유형에 명시적으로 주석 처리를에서 `byte` 두 가지 의미를 사용 하 여 표시 됩니다. 맨 처음 발견 되는 형식이 며 두 번째 변환 연산자입니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4401.fs)]
 
-다음 표에서 F#에 정의 된 변환 연산자를 보여 줍니다.
+다음 표에서 변환 연산자에 정의 된 F#입니다.
 
 |연산자|설명|
 |--------|-----------|
@@ -40,6 +40,7 @@ F# 변환 연산자 다양 한 기본 형식 간 산술 변환에 대 한 같은
 |`decimal`|변환할 `System.Decimal`합니다.|
 |`char`|변환할 `System.Char`, 유니코드 문자입니다.|
 |`enum`|열거형된 형식으로 변환 합니다.|
+
 기본 제공 기본 유형 외에도 구현 하는 형식을 사용 하 여 이러한 연산자를 사용할 수 있습니다 `op_Explicit` 또는 `op_Implicit` 적절 한 시그니처가 있는 메서드. 예를 들어 합니다 `int` 변환 연산자는 정적 메서드를 제공 하는 모든 형식 `op_Explicit` 형식을 매개 변수로 받아서 반환 하는 `int`합니다. 반환 형식 메서드를 오버 로드할 수 없습니다는 일반 규칙에 특수 예외로 수에 이렇게 `op_Explicit` 고 `op_Implicit`입니다.
 
 ## <a name="enumerated-types"></a>열거형된 형식
@@ -67,7 +68,7 @@ let col4 : Color = enum 2u
 
 개체 계층 구조에서 형식 간의 변환은 개체 지향 프로그래밍의 기본입니다. 두 가지가 기본 변환: (업 캐스트) 위로 캐스팅 및 캐스팅 (다운 캐스팅) 다운 합니다. 계층 구조 위로 캐스팅은 기본 개체 참조에 대 한 파생 된 개체 참조에서 캐스팅을 의미합니다. 이러한 캐스트는 기본 클래스는 파생된 클래스의 상속 계층 구조에서 정상적으로 작동 하도록 보장 됩니다. 파생 된 개체 참조에 대 한 기본 개체 참조에서 계층 구조 아래로 캐스팅 개체가 실제로 올바른 대상 (파생) 형식 또는 대상 형식에서 파생 된 형식 인스턴스의 경우에 성공 합니다.
 
-F#에서는 이러한 유형의 변환에 대 한 연산자를 제공 합니다. 합니다 `:>` 연산자는 계층 구조 위로 캐스팅 및 `:?>` 연산자 계층 구조 아래로 캐스팅 합니다.
+F#이러한 유형의 변환에 대 한 연산자를 제공합니다. 합니다 `:>` 연산자는 계층 구조 위로 캐스팅 및 `:?>` 연산자 계층 구조 아래로 캐스팅 합니다.
 
 ### <a name="upcasting"></a>업 캐스트
 
@@ -115,6 +116,6 @@ let base1 = upcast d1
 
 형식 테스트에 대 한 자세한 내용은 참조 하세요. [일치 식](match-Expressions.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)

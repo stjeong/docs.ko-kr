@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 21ab18cded2b9a16fe2520547287198d3cfe6b74
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 25d083b730117a791fb8ab550b36f7b2e6c5f5be
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529313"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613715"
 ---
 # <a name="ltgccpugroupgt-element"></a>&lt;GCCpuGroup&gt; 요소
 가비지 수집에서 여러 CPU 그룹을 지원할지를 지정합니다.  
@@ -73,7 +73,7 @@ ms.locfileid: "43529313"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [방법: 동시 가비지 수집을 사용 하지 않도록 설정](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
- [워크스테이션 및 서버 가비지 수집](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [방법: 동시 가비지 수집을 사용 하지 않도록 설정](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
+- [워크스테이션 및 서버 가비지 수집](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)

@@ -1,13 +1,13 @@
 ---
-title: 시퀀스(F#)
+title: 시퀀스
 description: 사용 하는 방법을 알아봅니다 F# 시퀀스는 많은 경우 데이터의 컬렉션을 정렬 하지만 모든 요소를 사용 하 여 반드시 예상 하지도 않습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 835aa5fdc32f98efdc7e1795efd09541a5f1b791
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a86d22c834b377d4e92cfa610cdd3b498dd86dfa
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129209"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611999"
 ---
 # <a name="sequences"></a>시퀀스
 
@@ -58,7 +58,7 @@ A *식 시퀀스* 시퀀스 계산 되는 식입니다. 시퀀스 식에는 여�
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1509.fs)]
 
-## <a name="using-sequences"></a>시퀀스를 사용 하 여
+## <a name="using-sequences"></a>시퀀스 사용
 
 시퀀스를 지 원하는 다양 한 기능을 동일 [나열](lists.md)합니다. 시퀀스는 그룹화 키 생성 함수를 사용 하 여 계산 등 작업을 지원 합니다. 또한 시퀀스는 하위 시퀀스를 추출 하는 것에 대 한 더 다양 한 함수를 지원 합니다.
 

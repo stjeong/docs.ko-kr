@@ -1,17 +1,17 @@
 ---
 title: Visual Studio에서 인식 되는 DPI를 사용 하지 않도록 설정
 description: HDPI 모니터에 Windows Forms 디자이너 및 DPI를 인식 하지 못하는 프로세스로 Visual Studio를 실행 하는 방법의 제한 사항에 설명 합니다.
-ms.date: 08/14/2018
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 2d3466476c33a3e5faa8be96d63f1d11442c5d70
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 0820450fb9ae257cba87b3055ea1dde91112b19e
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151267"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656000"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio에서 인식 되는 DPI를 사용 하지 않도록 설정
 
@@ -29,7 +29,7 @@ Visual Studio 2017 버전 15.8 및 나중에 폼을 여는 경우에 **Windows F
 
 메시지 읽고 **기본 디스플레이에 크기 조정 (192dpi) 200%로 설정 됩니다. 디자이너 창에서 렌더링 문제를 발생할 수 있습니다이 있습니다.**
 
-디자이너에서 작동 하지 않는 경우 폼의 레이아웃을 조정할 필요가 없습니다 정보 표시줄을 무시 하 고 다른 형식의 디자이너 또는 코드 편집기에서 작업을 계속할 수 있습니다. 만 **Windows Forms 디자이너** 영향을 받습니다. 작업할 필요가 없는 경우는 **Windows Forms 디자이너**, 다음 섹션에서는 도움이 [문제를 해결](#to-resolve-the-problem)합니다.
+디자이너에서 작동 하지 않는 경우 폼의 레이아웃을 조정할 필요가 없습니다 정보 표시줄을 무시 하 고 다른 형식의 디자이너 또는 코드 편집기에서 작업을 계속할 수 있습니다. (할 수도 있습니다 [알림 사용 안 함](#disable-notifications) 표시할 정보 가로 막대형 계속 되지 않도록 합니다.) 만 **Windows Forms 디자이너** 영향을 받습니다. 작업할 필요가 없는 경우는 **Windows Forms 디자이너**, 다음 섹션에서는 도움이 [문제를 해결](#to-resolve-the-problem)합니다.
 
 ## <a name="to-resolve-the-problem"></a>문제를 해결 하려면
 
@@ -68,6 +68,16 @@ Visual Studio DPI를 인식 하지 못하는 프로세스로 실행 되 면 디�
 Windows 10에서 100%로 설정 크기 조정 하 여 표시를 설정 하려면 다음을 입력 **설정 표시** 작업 표시줄을 선택 하 고 검색 상자에에서 **표시 설정 변경**합니다. 에 **설정을** 창에서 **텍스트, 앱 및 기타 항목의 크기를 변경** 에 **100%** 합니다.
 
 100%로 크기 조정 디스플레이 설정 적절 하지 않을, 있으므로 사용자 인터페이스를 사용할 수 있으려면 너무 작습니다.
+
+## <a name="disable-notifications"></a>알림 사용 안 함
+
+Visual Studio에서 문제를 크기 조정의 DPI 알릴 필요가 선택할 수 있습니다. 예를 들어 디자이너에서 작업 하지 않는 경우 알림을 사용 하지 않도록 설정 하려는 경우.
+
+알림 사용 안 함, 선택 **도구** > **옵션** 열려는 합니다 **옵션** 대화 합니다. 그런 다음, 선택 **Windows Forms 디자이너** > **일반**, 설정 **DPI 크기 조정 알림** 에 **False**합니다.
+
+![Visual Studio에서 알림 옵션을 확장 하는 DPI](media/disable-dpi-awareness-visual-studio/notifications-option.png)
+
+나중에 다시 크기 조정 알림을 사용 하도록 설정 하려는 경우 속성을 설정 **True**합니다.
 
 ## <a name="troubleshoot"></a>문제 해결
 

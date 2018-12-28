@@ -1,17 +1,17 @@
 ---
 title: 형식 공급자 보안
-description: 형식 공급자의 신뢰 설정을 변경 하는 방법을 포함 하 여 F# 형식 공급자 보안에 알아봅니다.
+description: 형식 공급자 보안에 대 한 자세한 F#, 형식 공급자의 신뢰 설정을 변경 하는 방법을 포함 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 26f95ad3950b37a668c497f293b9941ed13a18c7
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 9ccb33d7298736c3d6b54980b6fe09bc9f2e0259
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43861909"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611193"
 ---
 # <a name="type-provider-security"></a>형식 공급자 보안
 
-형식 공급자는 어셈블리 (Dll) F# 프로젝트 또는 스크립트에서 참조 된 외부 데이터 원본에 연결 하 여 F# 형식 환경에이 형식 정보를 노출 하는 코드를 포함 하는입니다. 일반적으로 참조 된 어셈블리의 코드를 컴파일 및 다음 코드를 실행 (또는 스크립트의 경우 코드는 F# Interactive로 보내기) 하는 경우에 실행 됩니다. 그러나 편집기에서 코드를 단순히 찾아볼 때 형식 공급자 어셈블리를 Visual Studio 내에서 실행 됩니다. 이 형식 공급자를 실행 하 고 IntelliSense 완성, 빠른 정보 도구 설명 등의 편집기를에 추가 정보를 추가 해야 하기 때문에 발생 합니다. 결과적으로, 추가 보안 고려 사항이 형식에 대 한 공급자 어셈블리를 Visual Studio 프로세스 내에서 자동으로 실행 되므로 있습니다.
+형식 공급자에서 참조 하는 어셈블리 (Dll)는 사용자 F# 외부 데이터 원본에 연결 하 여이 형식 정보를 노출 하는 코드가 포함 된 프로젝트 또는 스크립트를 F# 환경을 입력 합니다. 일반적으로 참조 된 어셈블리의 코드에만 실행 됩니다 컴파일 및 코드를 실행 하는 경우 (또는 송신 하는 코드를 스크립트의 경우 F# 대화형). 그러나 편집기에서 코드를 단순히 찾아볼 때 형식 공급자 어셈블리를 Visual Studio 내에서 실행 됩니다. 이 형식 공급자를 실행 하 고 IntelliSense 완성, 빠른 정보 도구 설명 등의 편집기를에 추가 정보를 추가 해야 하기 때문에 발생 합니다. 결과적으로, 추가 보안 고려 사항이 형식에 대 한 공급자 어셈블리를 Visual Studio 프로세스 내에서 자동으로 실행 되므로 있습니다.
 
 ## <a name="security-warning-dialog"></a>보안 경고 대화 상자
 
@@ -27,6 +27,6 @@ Visual Studio에서 직접 신뢰 설정을 변경 하려는 경우 다음 단�
 
 2. 선택 `Type Providers`, 형식 공급자의 목록에서 신뢰 하는 형식 공급자에 대 한 확인란을 선택 하 고 신뢰할 수 없는 것에 대 한 확인란의 선택을 취소 하 고 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [형식 공급자](index.md)

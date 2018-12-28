@@ -1,18 +1,18 @@
 ---
-title: 인수 &#39;수명&#39; 0 일 수 없습니다
+title: "'Life' 인수는 0일 수 없습니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbrFinancial_LifeNEZero
 ms.assetid: c402da97-a2b2-4219-a83a-0cebbfdffef2
-ms.openlocfilehash: 0a8cb22250c798ffa3f3211be88c6086449c1836
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c5cc06d2375536fbc4c02d7e8174a7e7f908ce4a
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33597701"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53773590"
 ---
-# <a name="argument-39life39-cannot-be-zero"></a>인수 &#39;수명&#39; 0 일 수 없습니다
-자산의 내용 연수 길이를 지정하는 `Life`이어야 하는 `Double` 에 대한 인수가 잘못되었습니다.  
+# <a name="argument-life-cannot-be-zero"></a>'Life' 인수는 0일 수 없습니다.
+자산의 내용 연수 길이를 지정하는 `Double`이어야 하는 `Life`에 대한 인수가 잘못되었습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   

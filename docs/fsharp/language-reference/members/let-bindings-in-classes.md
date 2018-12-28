@@ -1,17 +1,17 @@
 ---
-title: 클래스의 let 바인딩(F#)
-description: 클래스 정의에 'let' 바인딩을 사용 하 여 개인 필드와 F# 클래스에 대 한 전용 함수를 정의 하는 방법에 알아봅니다.
+title: 클래스의 let 바인딩
+description: Private 필드 및 private 함수를 정의 하는 방법을 알아봅니다 F# 클래스를 사용 하 여 'let' 클래스 정의에서 바인딩.
 ms.date: 05/16/2016
-ms.openlocfilehash: 237eb98a57571a21c9187abf31f05160374cf4fc
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 03dd583a141971284e6a8ddaad02272236cd1e4c
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48033222"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611128"
 ---
 # <a name="let-bindings-in-classes"></a>클래스의 let 바인딩
 
-사용 하 여 개인 필드와 F# 클래스에 대 한 전용 함수를 정의할 수 있습니다 `let` 클래스 정의에서 바인딩.
+Private 필드 및 private 함수를 정의할 수 있습니다 F# 클래스를 사용 하 여 `let` 클래스 정의에서 바인딩.
 
 ## <a name="syntax"></a>구문
 
@@ -45,11 +45,11 @@ A `let` 아닙니다 바인딩을 정적 것을 인스턴스라고 부릅니다 
 
 ## <a name="alternative-ways-to-create-fields"></a>필드를 만드는 방법
 
-사용할 수도 있습니다는 `val` 키워드를 개인 필드를 만듭니다. 사용 하는 경우는 `val` 키워드를 필드 값이 주어 지는 개체가 만들어지면 하지만 대신 기본값을 사용 하 여 초기화 됩니다. 자세한 내용은 [명시적 필드: val 키워드](explicit-fields-the-val-keyword.md)합니다.
+사용할 수도 있습니다는 `val` 키워드를 개인 필드를 만듭니다. 사용 하는 경우는 `val` 키워드를 필드 값이 주어 지는 개체가 만들어지면 하지만 대신 기본값을 사용 하 여 초기화 됩니다. 자세한 내용은 참조 하세요. [명시적 필드: Val 키워드](explicit-fields-the-val-keyword.md)합니다.
 
 멤버 정의 사용 하 여 키워드를 추가 하 여 클래스에서 private 필드를 정의할 수도 있습니다 `private` 정의 합니다. 이 코드를 다시 작성 하지 않고 멤버의 액세스 가능성을 변경 하려는 경우에 유용할 수 있습니다. 자세한 내용은 [액세스 제어](../access-control.md)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](index.md)
 - [클래스의 `do` 바인딩](do-bindings-in-classes.md)

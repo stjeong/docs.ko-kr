@@ -1,18 +1,18 @@
 ---
-title: 사용 하 여 &#39;FilePutObject&#39; 대신 &#39;FilePut&#39; 형식의 인수를 사용 하는 경우 &#39;개체&#39;
+title: "'Object' 형식의 인수를 사용하는 경우 'FilePut' 대신 'FilePutObject'를 사용하세요."
 ms.date: 07/20/2015
 f1_keywords:
 - vbrUseFilePutObject
 ms.assetid: d207b9b7-5898-4c13-8b03-9feefac5f726
-ms.openlocfilehash: 529352d98c175981c20861205ce04c8a2ebcdca9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: df7d7c54992984bcb1684e41f60ae8361a3aed03
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33641130"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53774227"
 ---
-# <a name="use-39fileputobject39-instead-of-39fileput39-when-using-argument-of-type-39object39"></a>사용 하 여 &#39;FilePutObject&#39; 대신 &#39;FilePut&#39; 형식의 인수를 사용 하는 경우 &#39;개체&#39;
-`FilePut` 형식의 인수를 포함 하는 메서드 `Object`합니다. 모호성을 피하기 위해`FilePutObject` 대신 `FilePut` 를 사용해야 합니다.  
+# <a name="use-fileputobject-instead-of-fileput-when-using-argument-of-type-object"></a>'Object' 형식의 인수를 사용하는 경우 'FilePut' 대신 'FilePutObject'를 사용하세요.
+`FilePut` 메서드는 `Object`형식의 인수를 포함합니다. 모호성을 피하기 위해`FilePutObject` 대신 `FilePut` 를 사용해야 합니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   

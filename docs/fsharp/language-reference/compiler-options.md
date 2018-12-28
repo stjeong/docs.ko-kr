@@ -1,13 +1,13 @@
 ---
-title: 컴파일러 옵션(F#)
+title: 컴파일러 옵션
 description: 사용 하 여 F# 의 컴파일을 제어 하는 컴파일러 명령줄 옵션에 F# 앱 및 라이브러리입니다.
 ms.date: 12/10/2018
-ms.openlocfilehash: dafd872a22bf4ec4b36910f28b7c5bfe9370af8d
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
-ms.translationtype: HT
+ms.openlocfilehash: d8e4331bcacd7082d7560ddc6fcadb4ce2b61cf8
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170875"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614495"
 ---
 # <a name="compiler-options"></a>컴파일러 옵션
 
@@ -67,10 +67,9 @@ ms.locfileid: "53170875"
 |`--warnon:warning-number-list`|기본적으로 해제 될 수 있습니다 하거나 다른 명령줄 옵션이 사용 하지 않도록 설정 하는 특정 경고를 사용 하도록 설정 합니다. F# 기본적으로 꺼져 3.0에서는 경고 1182 (사용 되지 않는 변수)만 합니다.|
 |<code>--warnaserror[+&#124;-] [warning-number-list]</code>|사용 하거나 경고를 오류로 보고 하는 옵션을 사용 하지 않도록 설정 합니다. 특정 경고 번호를 사용 하지 않도록 설정 하거나 사용 하지를 제공할 수 있습니다. 옵션 명령줄의 뒷부분에 나오는 명령줄의 앞부분에서 옵션을 재정의합니다. 예를 들어 오류로 보고 하지 않을 경고를 지정 하려면 지정할 `--warnaserror+` `--warnaserror-:warning-number-list`합니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;warnaserror &#40;C&#35; 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/406xhdz3.aspx)합니다.|
 |`--win32manifest:manifest-filename`|Win32 매니페스트 파일을 컴파일에 추가합니다. 이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;win32manifest &#40;C&#35; 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/bb545961.aspx)합니다.|
-|`--win32res:resource-filename`|Win32 리소스 파일을 컴파일에 추가합니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;win32res (&#40;c&#35); 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/8f2f5x2e.aspx)합니다.|
+|`--win32res:resource-filename`|Win32 리소스 파일을 컴파일에 추가합니다.<br /><br />이 컴파일러 옵션은 해당 하는 C# 같은 이름의 컴파일러 옵션입니다. 자세한 내용은 [ &#47;win32res (&#40;C&#35;) 컴파일러 옵션&#41;](https://msdn.microsoft.com/library/8f2f5x2e.aspx)합니다.|
 
 ## <a name="related-articles"></a>관련 문서
-
 
 |제목|설명|
 |-----|-----------|

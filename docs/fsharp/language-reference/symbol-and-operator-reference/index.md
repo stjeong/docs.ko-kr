@@ -1,13 +1,13 @@
 ---
-title: 기호 및 연산자 참조(F#)
+title: 기호 및 연산자 참조
 description: 기호 및 연산자에 사용 되는 방법을 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 04/04/2018
-ms.openlocfilehash: a382400213aa288bb134faefd8ce747a7319a76f
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 385ddbef2a3519d26dd7ad6abe90da1368f0a2a4
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169874"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613806"
 ---
 # <a name="symbol-and-operator-reference"></a>기호 및 연산자 참조
 
@@ -52,7 +52,7 @@ ms.locfileid: "53169874"
 |`.`|[멤버](../members/index.md)<br /><br />[기본 형식](../primitive-types.md)|<ul><li>멤버에 액세스하고 개별 이름을 정규화된 이름으로 구분합니다.<br /></li><li>부동 소수점 수로 소수점을 지정합니다.<br /></li></ul>|
 |`..`|[루프: `for...in` 식](../loops-for-in-expression.md)|<ul><li>범위를 지정합니다.<br /></li></ul>|
 |`.. ..`|[루프: `for...in` 식](../loops-for-in-expression.md)|<ul><li>증분을 포함하여 범위를 지정합니다.<br /></li></ul>|
-|`.[...]`|[배열](../arrays.md)|<ul><li>배열 요소에 액세스합니다.<br /></li></ul>|
+|`.[...]`|[배열 (C++)](../arrays.md)|<ul><li>배열 요소에 액세스합니다.<br /></li></ul>|
 |`/`|[산술 연산자](arithmetic-operators.md)<br /><br />[측정 단위](../units-of-measure.md)|<ul><li>좌변(분자)으로 우변(분모)을 나눕니다.<br /></li><li>측정 단위 형식에서 사용됩니다.<br /></li></ul>|
 |`/?`|[null 허용 연산자](nullable-operators.md)|<ul><li>우변이 nullable 형식이면 좌변으로 우변을 나눕니다.<br /></li></ul>|
 |`//`||<ul><li>한 줄로 된 주석의 시작을 나타냅니다.<br /></li></ul>|
@@ -95,7 +95,7 @@ ms.locfileid: "53169874"
 |`?>=?`, `?>?`, `?<=?`, `?<?`, `?=?`, `?<>?`, `?+?`, `?-?`, `?*?`, `?/?`|[null 허용 연산자](nullable-operators.md)|<ul><li>바깥쪽 물음표가 없는 해당 연산자와 동일합니다. 좌변과 우변이 모두 nullable 형식입니다.<br /></li></ul>|
 |`@`|[목록](../lists.md)<br /><br />[문자열](../strings.md)|<ul><li>두 목록을 연결합니다.<br /></li><li>문자열 리터럴 앞에 배치하면 이스케이프 문자를 해석하지 않고 문자열을 축자로 해석함을 나타냅니다.<br /></li></ul>|
 |`[...]`|[목록](../lists.md)|<ul><li>목록의 요소를 구분합니다.<br /></li></ul>|
-|<code>[&#124;...&#124;]</code>|[배열](../arrays.md)|<ul><li>배열의 요소를 구분합니다.<br /></li></ul>|
+|<code>[&#124;...&#124;]</code>|[배열 (C++)](../arrays.md)|<ul><li>배열의 요소를 구분합니다.<br /></li></ul>|
 |`[<...>]`|[특성](../attributes.md)|<ul><li>특성을 구분합니다.<br /></li></ul>|
 |`\`|[문자열](../strings.md)|<ul><li>다음 문자를 이스케이프합니다. 문자 및 문자열 리터럴에 사용됩니다.<br /></li></ul>|
 |`^`|[정적으로 확인된 형식 매개 변수](../generics/statically-resolved-type-parameters.md)<br /><br />[문자열](../strings.md)|<ul><li>런타임이 아닌 컴파일 타임에 확인해야 하는 형식 매개 변수를 지정합니다.<br /></li><li>문자열을 연결합니다.<br /></li></ul>|
