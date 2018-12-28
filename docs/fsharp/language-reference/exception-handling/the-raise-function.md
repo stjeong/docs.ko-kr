@@ -1,13 +1,13 @@
 ---
-title: '예외: raise 함수(F#)'
-description: 오류 또는 예외 조건이 발생 했음을 알리는 데 F# 'raise' 함수를 사용 하는 방법을 알아봅니다.
+title: '예외: raise 함수'
+description: 설명 하는 방법을 F# 'raise' 함수는 오류 또는 예외 조건이 발생 했음을 알리는 데 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 537d274659d29404380bfdd56310ac267372bb98
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 87773ead7773c62a325c7e7ff105c729e10dd69c
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43778261"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610153"
 ---
 # <a name="exceptions-the-raise-function"></a>예외: raise 함수
 
@@ -33,9 +33,9 @@ raise (expression)
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet5802.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [예외 처리](index.md)
+- [Visual C++에서 예외 처리](index.md)
 - [예외 형식](exception-types.md)
 - [예외: `try...with` 식](the-try-with-expression.md)
 - [예외: `try...finally` 식](the-try-finally-expression.md)

@@ -1,15 +1,15 @@
 ---
-title: '명시적 필드: val 키워드(F#)'
-description: F# 'val' 알아봅니다 형식을 초기화 하지 않고 클래스 또는 구조체 형식의 값을 저장 하는 위치를 선언 하는 데 사용 되는 키워드입니다.
+title: '명시적 필드: Val 키워드'
+description: 알아봅니다는 F# 형식을 초기화 하지 않고 클래스 또는 구조체 형식의 값을 저장 하는 위치를 선언 하는 데 사용 되는 'val' 키워드입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 9cd06f7e90192be79490dd0ff67f118cce4339c3
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 492541f6eeba94d2177e92de935fa524b9def567
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45746389"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53773629"
 ---
-# <a name="explicit-fields-the-val-keyword"></a>명시적 필드: val 키워드
+# <a name="explicit-fields-the-val-keyword"></a>명시적 필드: Val 키워드
 
 `val` 키워드는 클래스 또는 구조체 형식의 값을 초기화하지 않고 저장할 위치를 선언하는 데 사용됩니다. 이런이 방식으로 선언 하는 저장소 위치 라고 *명시적 필드*합니다. `val` 키워드는 `member` 키워드와 함께 자동으로 구현된 속성을 선언하는 데에도 사용됩니다. 자동 구현 속성에 대 한 자세한 내용은 참조 하세요. [속성](properties.md)합니다.
 
@@ -65,11 +65,15 @@ val [ mutable ] [ access-modifier ] field-name : type-name
 
 출력은 `11 xyz`입니다.
 
+**주의**사용 하 여 구조를 초기화 하려는 경우 `mutable` 없이 필드 `mutable` 키워드를 사용자 지정 할당 직후 삭제 됩니다는 구조체의 복사본에서 작동 합니다. 따라서 구조 변경 되지 않습니다.
+
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet6704.fs)]
+
 명시적 필드는 루틴에 사용하기 위한 것이 아닙니다. 일반적으로는 가능한 경우 항상 명시적 필드 대신 클래스의 `let` 바인딩을 사용해야 합니다. 명시적 필드는 네이티브 API에 대한 플랫폼 호출에 사용할 구조체를 정의해야 하는 경우 등과 같은 특정 상호 운용성 시나리오나 COM interop 시나리오에서 유용하게 사용됩니다. 자세한 내용은 [외부 함수](../functions/external-functions.md)합니다. 명시적 필드가 필요할 수 있는 또 다른 상황으로는 기본 생성자가 없는 클래스를 만드는 F# 코드 생성기를 사용하여 작업해야 하는 경우를 들 수 있습니다. 명시적 필드는 스레드에 정적인 변수나 그와 유사한 구문에도 유용하게 사용됩니다. 자세한 내용은 `System.ThreadStaticAttribute`을 참조하십시오.
 
 `member val` 키워드가 형식 정의에 함께 표시되는 경우 이는 자동으로 구현된 속성의 정의입니다. 자세한 내용은 [속성](properties.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [속성](properties.md)
 - [멤버](index.md)

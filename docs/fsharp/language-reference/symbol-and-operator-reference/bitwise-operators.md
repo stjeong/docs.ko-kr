@@ -1,21 +1,21 @@
 ---
-title: 비트 연산자(F#)
-description: F# 프로그래밍 언어에서 사용할 수 있는 비트 연산자에 알아봅니다.
+title: 비트 연산자
+description: 사용할 수 있는 비트 연산자에 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 07/20/2018
-ms.openlocfilehash: ed76fcf5f9c569a2f288cf260e99dc29fd65ef3b
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 01c68be485525b49eb3121dfaea6dce0adfe3972
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48581510"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611973"
 ---
 # <a name="bitwise-operators"></a>비트 연산자
 
-이 항목에서는 F# 언어에서 사용할 수 있는 비트 연산자를 설명 합니다.
+이 항목에서는에서 사용할 수 있는 비트 연산자를 설명 합니다 F# 언어입니다.
 
 ## <a name="summary-of-bitwise-operators"></a>비트 연산자 요약
 
-다음 표에서 F# 언어에서 unboxed 정수 계열 형식에 대 한 지원 되는 비트 연산자를 설명 합니다.
+다음 표에서 unboxed 정수 계열 형식에 대 한 지원 되는 비트 연산자는 F# 언어입니다.
 
 |연산자|노트|
 |--------|-----|
@@ -28,7 +28,7 @@ ms.locfileid: "48581510"
 
 형식은 비트 연산자를 사용 하 여 사용할 수: `byte`, `sbyte`, `int16`, `uint16`, `int32 (int)`를 `uint32`, `int64`를 `uint64`, `nativeint`, 및 `unativeint`합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [기호 및 연산자 참조](index.md)
 - [산술 연산자](arithmetic-operators.md)

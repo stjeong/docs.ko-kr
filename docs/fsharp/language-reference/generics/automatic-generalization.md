@@ -1,21 +1,21 @@
 ---
-title: 자동 일반화(F#)
-description: 어떻게 F# 자동 일반화 인수 및 함수의 유형은 가능한 경우 여러 형식으로 작동 되도록에 대해 알아봅니다.
+title: 자동 일반화
+description: 에 대해 알아봅니다 하는 방법 F# 자동으로 인수 및 함수의 유형은 일반화 하 여 가능한 경우 여러 형식으로 작동 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 84de9cbb2b9fcf2488393f7dbdfc3b610cdcffb0
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 15ecf8e6f07da19bb015fd028a7465ba8b837190
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43855779"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611713"
 ---
 # <a name="automatic-generalization"></a>자동 일반화
 
-F# 함수 및 식은 유형의 평가 형식 유추를 사용 합니다. 이 항목에서는 어떻게 F# 자동으로 일반화 인수 및 함수의 유형은 가능한 경우 이러한 변경 작업을 여러 형식을 설명 합니다.
+F#사용 유형 함수와 식을 평가 하는 유추를 입력 합니다. 이 항목에 설명 하는 방법 F# 자동으로 인수 및 함수의 유형은 일반화 하 여 가능한 경우 여러 형식으로 작동 합니다.
 
 ## <a name="automatic-generalization"></a>자동 일반화
 
-F# 컴파일러는 함수에서 형식 유추를 수행 하는 경우에 지정된 된 매개 변수에 제네릭 수 있는지 여부를 결정 합니다. 컴파일러는 각 매개 변수를 검사 하 고 함수 해당 매개 변수의 특정 형식에 종속 되어 있는지 여부를 결정 합니다. 표시 되지 않는 형식은 제네릭으로 유추 됩니다.
+F# 컴파일러에서 형식 유추는 함수에서 수행 하는 경우 지정된 된 매개 변수에 제네릭 수 있는지 여부를 결정 합니다. 컴파일러는 각 매개 변수를 검사 하 고 함수 해당 매개 변수의 특정 형식에 종속 되어 있는지 여부를 결정 합니다. 표시 되지 않는 형식은 제네릭으로 유추 됩니다.
 
 다음 코드 예제에서는 제네릭인 것으로 컴파일러에서 유추 하는 함수를 보여 줍니다.
 
@@ -82,7 +82,7 @@ let emptyList10 = Array.create 10 []
 let emptyList10 () = Array.create 10 []
 ```
 
-사례 4: 추가 형식 매개 변수입니다.
+사례 4: 형식 매개 변수를 추가합니다.
 
 ```fsharp
 let arrayOf10Lists = Array.create 10 []
@@ -97,7 +97,7 @@ let intLists = arrayOf10Lists<int>
 let floatLists = arrayOf10Lists<float>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [형식 유추](../type-inference.md)
 - [제네릭](index.md)

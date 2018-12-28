@@ -1,13 +1,13 @@
 ---
-title: 인라인 함수(F#)
-description: F# 인라인 함수 호출 코드에 직접 통합을 사용 하는 방법에 알아봅니다.
+title: 인라인 함수
+description: 사용 하는 방법을 알아봅니다 F# 호출 코드에 직접 통합 되는 인라인 함수입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 47fca0fe34630792aeb0908b0cee02a927e2567d
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 12c175e3e46e12d978fe02d3e1fe83142e71a25d
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45745947"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610569"
 ---
 # <a name="inline-functions"></a>인라인 함수
 
@@ -39,7 +39,7 @@ ms.locfileid: "45745947"
 
 즉, 함수를 변환할 수 있는 모든 형식을 허용 하는지 **float**합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [함수](index.md)
 - [제약 조건](../generics/constraints.md)

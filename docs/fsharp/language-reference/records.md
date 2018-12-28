@@ -1,17 +1,17 @@
 ---
-title: 레코드(F#)
-description: F# 레코드에서 멤버를 사용 하 여 필요에 따라 명명 된 값의 간단한 집계를 표시 하는 방법에 대해 알아봅니다.
+title: 레코드
+description: 에 대해 알아봅니다 하는 방법 F# 레코드는 멤버를 사용 하 여 필요에 따라 명명 된 값의 간단한 집계를 나타냅니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 6103d96b6b80a9e2ed168755958dbe800f7fa862
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: a499755383654ddaf76af12776ee93f27834b7b0
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48261292"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656143"
 ---
 # <a name="records"></a>레코드
 
-레코드는 명명된 값의 간단한 집계(경우에 따라 멤버가 포함된)를 나타냅니다.  F# 4.1 부터는 이러한 수 구조체 또는 참조 형식입니다.  기본적으로 참조 형식입니다.
+레코드는 명명된 값의 간단한 집계(경우에 따라 멤버가 포함된)를 나타냅니다.  부터 F# 4.1, 구조체 또는 참조 형식 일 수 있습니다.  기본적으로 참조 형식입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -90,6 +90,29 @@ let defaultRecord2 = { Field1 = 1; Field2 = 25 }
 let rr3 = { defaultRecord1 with Field2 = 42 }
 ```
 
+## <a name="creating-mutually-recursive-records"></a>상호 재귀 레코드 만들기
+
+레코드를 만들 때에 잠시 나중에 정의 하려는 다른 형식에 종속 되 게 하는 것이 좋습니다. 상호 재귀를 레코드 종류를 정의 하지 않으면 컴파일 오류입니다.
+
+완료 정의 상호 재귀 레코드는 `and` 키워드입니다. 이렇게 하면 2 개 이상의 레코드 종류를 함께 연결할 수 있습니다.
+
+예를 들어, 다음 코드는 정의 `Person` 고 `Address` 상호 재귀 형식:
+
+```fsharp
+// Create a Person type and use the Address type that is not defined
+type Person =
+  { Name: string
+    Age: int
+    Address: Address }
+// Define the Address type which is used in the Person record
+and Address =
+  { Line1: string
+    Line2: string
+    PostCode: string }
+```
+
+없이 앞의 예제를 정의 하는 경우는 `and` 키워드를 컴파일되지 않습니다. `and` 상호 재귀 정의 대 한 키워드를 사용 합니다.
+
 ## <a name="pattern-matching-with-records"></a>레코드를 사용한 패턴 일치
 
 레코드 패턴 일치에 사용할 수 있습니다. 일부 필드를 명시적으로 지정 하 고 일치 하는 경우에 할당 되는 다른 필드에 대 한 변수를 제공할 수 있습니다. 다음 코드 예제에서는 그 구체적인 방법을 보여 줍니다.
@@ -122,7 +145,7 @@ The records are equal.
 
 레코드에 대 한 같음, 참조 해야 하는 경우 추가 특성 `[<ReferenceEquality>]` 레코드 위에 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 형식](fsharp-types.md)
 - [클래스](classes.md)

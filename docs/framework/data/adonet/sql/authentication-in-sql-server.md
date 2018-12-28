@@ -2,12 +2,12 @@
 title: SQL Server에서 인증
 ms.date: 05/22/2018
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
-ms.openlocfilehash: 8d7fcb149059c06b7875663e4df5272312121c87
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0172259446724e0be85bd7ca2d15cf299db04e27
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521519"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613104"
 ---
 # <a name="authentication-in-sql-server"></a>SQL Server에서 인증
 SQL Server에서는 Windows 인증 모드와 혼합 모드의 두 가지 인증 모드를 지원합니다.  
@@ -19,7 +19,7 @@ SQL Server에서는 Windows 인증 모드와 혼합 모드의 두 가지 인증 
 > [!IMPORTANT]
 >  가급적 Windows 인증을 사용하는 것이 좋습니다. Windows 인증은 일련의 암호화된 메시지를 사용하여 SQL Server에서 사용자를 인증합니다. SQL Server 로그인을 사용 하는 SQL Server 로그인 이름과 암호화 된 암호 수 있으므로 덜 안전한 네트워크를 통해 전달 됩니다.  
   
- Windows 인증을 사용하는 경우 사용자가 Windows에 이미 로그온되어 있으므로 SQL Server에 별도로 로그온할 필요가 없습니다. 다음 `SqlConnection.ConnectionString`은 사용자 이름이나 암호를 제공할 필요가 없는 Windows 인증을 지정합니다.  
+ Windows 인증을 사용하는 경우 사용자가 Windows에 이미 로그온되어 있으므로 SQL Server에 별도로 로그온할 필요가 없습니다. 다음 `SqlConnection.ConnectionString` 사용자가 사용자 이름 또는 암호를 제공 하지 않고도 Windows 인증을 지정 합니다.  
   
 ```  
 "Server=MSSQL1;Database=AdventureWorks;Integrated Security=true;  

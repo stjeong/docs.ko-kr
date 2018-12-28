@@ -1,22 +1,22 @@
 ---
-title: 값 옵션 (F#)
-description: 옵션 종류의 구조체 버전인는 F# 값 옵션 형식에 대해 알아봅니다.
+title: 값 옵션
+description: 에 대해 알아봅니다는 F# 옵션 종류의 구조체 버전인 값 옵션 종류입니다.
 ms.date: 06/16/2018
-ms.openlocfilehash: 978bd1713c16f7c050ccb097cb134973d10ef6f5
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: d5209e620d53e12e9344faea09321f640af21491
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50185838"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613429"
 ---
 # <a name="value-options"></a>값 옵션
 
-F# 값 옵션 종류는 다음과 같은 두 가지 경우를 저장할 때 사용 됩니다.
+값 옵션 형식 F# 다음 두 경우 저장할 때 사용 됩니다.
 
-1. 시나리오에 적합 한 [F# 옵션](options.md)합니다.
+1. 시나리오에 적합 한 [ F# 옵션](options.md)합니다.
 2. 구조체를 사용 하는 시나리오의 성능 이점을 제공 합니다.
 
-일부 성능에 민감한 시나리오는 "해결" 구조체를 사용 하 여 합니다. 참조 형식 대신 사용 하는 경우 복사 하는 추가 비용을 고려해 야 합니다. 그러나 큰 F# 프로그램 일반적으로 인스턴스화할 실행 부하 과다 경로 통해 이동 하는 많은 선택적 형식 구조체 때로는 프로그램의 수명 동안 전반적인 성능 향상을 위해을 얻을 수 있습니다.
+일부 성능에 민감한 시나리오는 "해결" 구조체를 사용 하 여 합니다. 참조 형식 대신 사용 하는 경우 복사 하는 추가 비용을 고려해 야 합니다. 그러나 많은 F# 구조체 수 경우에 따라 성능이 향상 전체 프로그램의 수명 동안 때문에 일반적으로 프로그램 실행 부하 과다 경로 통해 이동 하는 다양 한 선택적 형식을 인스턴스화합니다.
 
 ## <a name="definition"></a>정의
 
@@ -73,6 +73,6 @@ val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T
 
 이때 값 옵션에 대 한 다른 모듈 바인딩된 함수가 없는 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [옵션](options.md)
