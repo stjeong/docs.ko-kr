@@ -1,13 +1,13 @@
 ---
-title: 일치 식 (F#)
-description: F# 일치 식 패턴 집합을 사용 하 여 식의 비교를 기반으로 하는 분기 제어를 제공 하는 방법에 대해 알아봅니다.
+title: 일치 식
+description: 에 대해 알아봅니다 하는 방법을 F# 일치 식 패턴 집합을 사용 하 여 식의 비교를 기반으로 하는 분기 제어를 제공 합니다.
 ms.date: 04/19/2018
-ms.openlocfilehash: e4cb82f20fe82bff562736557c2346562c557f59
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 8972cc012d2746cb720eeed1acee403948941425
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44221846"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611570"
 ---
 # <a name="match-expressions"></a>일치 식
 
@@ -43,7 +43,7 @@ fun arg ->
     | ...
 ```
 
-람다 식에 대 한 자세한 내용은 참조 하십시오 [람다 식: 합니다 `fun` 키워드](functions/lambda-expressions-the-fun-keyword.md)합니다.
+람다 식에 대 한 자세한 내용은 참조 하세요. [람다 식: 합니다 `fun` 키워드](functions/lambda-expressions-the-fun-keyword.md)합니다.
 
 패턴의 전체 집합 입력 변수의 가능한 모든 일치 항목을 포함 해야 합니다. 와일드 카드 패턴을 사용 하는 경우가 많습니다 (`_`) 이전에 일치 하지 않는 모든 입력된 값과 일치 하는 마지막 패턴으로 합니다.
 
@@ -80,8 +80,8 @@ let foo() =
 foo() // returns 42
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [F# 언어 참조](index.md)  
-- [활성 패턴](active-patterns.md)  
-- [패턴 일치](pattern-matching.md)  
+- [F# 언어 참조](index.md)
+- [활성 패턴](active-patterns.md)
+- [패턴 일치](pattern-matching.md)

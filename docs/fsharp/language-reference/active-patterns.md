@@ -1,13 +1,13 @@
 ---
-title: 활성 패턴(F#)
-description: 활성 패턴을 사용 하 여 F# 프로그래밍 언어의 입력된 데이터를 분할 하는 명명 된 파티션을 정의 하는 방법에 알아봅니다.
+title: 활성 패턴
+description: 활성 패턴을 사용 하 여 입력된 데이터를 분할 하는 명명 된 파티션을 정의 하는 방법을 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 4fb7d3e2b9c7e6f1c1ed9d64a47728c7f40017c8
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: c830011b69809bd399aab0c8a8bc25d40d5c82cc
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48838314"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612844"
 ---
 # <a name="active-patterns"></a>활성 패턴
 
@@ -128,7 +128,7 @@ Hello, random citizen!
 Hello, George!
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [일치 식](match-expressions.md)

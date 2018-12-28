@@ -1,5 +1,5 @@
 ---
-title: '&lt;검색이&gt; 요소'
+title: '&lt;검색&gt; 요소'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/probing
@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8cab16e83466b5954bfebac07dd79c9a8b5e4594
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a5b9be3050da21c0a99931ca70cf990b0b8bf1fe
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745005"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612311"
 ---
-# <a name="ltprobinggt-element"></a>&lt;검색이&gt; 요소
-공용 언어 런타임에서 어셈블리를 로드할 때 검색에 대 한 응용 프로그램 기본 하위 디렉터리를 지정 합니다.  
+# <a name="ltprobinggt-element"></a>&lt;검색&gt; 요소
+공용 언어 런타임에서 어셈블리를 로드할 때 검색할 하위 응용 프로그램 기본 디렉터리를 지정 합니다.  
   
  \<configuration>  
 \<runtime>  
 \<assemblyBinding>  
-\<조사 >  
+\<검색 >  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ ms.locfileid: "32745005"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`privatePath`|필수 특성입니다.<br /><br /> 어셈블리에 포함 될 수 있는 응용 프로그램의 기본 디렉터리의 하위 디렉터리를 지정 합니다. 각 하위 디렉터리를 세미콜론으로 구분 합니다.|  
+|`privatePath`|필수 특성입니다.<br /><br /> 어셈블리를 포함할 수 있는 응용 프로그램의 기본 디렉터리의 하위 디렉터리를 지정 합니다. 각 하위 디렉터리를 세미콜론으로 구분 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -53,7 +53,7 @@ ms.locfileid: "32745005"
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 런타임에 어셈블리를 검색 해야 응용 프로그램 기본 하위 디렉터리를 지정 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 런타임에서 어셈블리에 대 한 검색 응용 프로그램 기본 하위 디렉터리를 지정 하는 방법을 보여 줍니다.  
   
 ```xml  
 <configuration>  
@@ -66,7 +66,7 @@ ms.locfileid: "32745005"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [어셈블리 위치 지정](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [어셈블리 위치 지정](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
+- [런타임에서 어셈블리를 찾는 방법](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

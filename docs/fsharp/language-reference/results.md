@@ -1,17 +1,17 @@
 ---
-title: 결과 (F#)
-description: 오류 코드를 작성할 수 있도록 F# '결과' 형식을 사용 하는 방법에 알아봅니다.
+title: 결과
+description: 사용 하는 방법을 알아봅니다는 F# 오류 코드를 작성할 수 있도록 'Result'를 입력 합니다.
 ms.date: 04/24/2017
-ms.openlocfilehash: a7ce2e1f6b8c6a32d99a2feaf9547c4b67b152b8
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 8b419412b406018a21f2c23103c8193fec8766f2
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44213042"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612714"
 ---
 # <a name="results"></a>결과
 
-F# 4.1을 사용 하 여부터 `Result<'T,'TFailure>` 종류입니다. 구성할 수 있는 오류 코드를 작성에 사용할 수 있습니다.
+부터 F# 4.1 있습니다는 `Result<'T,'TFailure>` 종류입니다. 구성할 수 있는 오류 코드를 작성에 사용할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -27,9 +27,9 @@ type Result<'T,'TError> =
 
 ## <a name="remarks"></a>설명
 
-결과 형식은 [구조체 구분 된 공용 구조체](discriminated-unions.md#struct-discriminated-unions), F# 4.1에서 도입 된 또 다른 기능인 합니다.  구조적 같음 의미 체계 여기에 적용 됩니다.
+결과 형식은 [구조체 구분 된 공용 구조체](discriminated-unions.md#struct-discriminated-unions)에 또 다른 기능은에 도입 F# 4.1 합니다.  구조적 같음 의미 체계 여기에 적용 됩니다.
 
-합니다 `Result` 유형은 monadic 오류 처리에는 라 불리는 일반적으로 사용 됩니다 [철도 지향 프로그래밍](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/posts/recipe-part2.html) F# 커뮤니티 내에서.  다음 간단한 예제에서는이 방법을 보여 줍니다.
+합니다 `Result` 유형은 monadic 오류 처리에는 라 불리는 일반적으로 사용 됩니다 [철도 지향 프로그래밍](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/posts/recipe-part2.html) 내에서 F# 커뮤니티입니다.  다음 간단한 예제에서는이 방법을 보여 줍니다.
 
 ```fsharp
 // Define a simple type which has fields that can be validated
@@ -82,7 +82,7 @@ test()
 
 알 수 있듯이 무척 쉽습니다 모두 반환 하려면 할 경우 다양 한 유효성 검사 함수 함께 연결 하는 `Result`합니다.  수 있도록 필요에 따라 구성할 수 있는 작은 조각으로 다음과 같은 기능을 중단할 수이 있습니다.  이 역시의 추가 가치 *적용* 사용 [패턴 일치](pattern-matching.md) 끝에 일련의 유효성 검사, 결과적으로 적용 하는 더 높은 수준의 프로그램 정확성을 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [구별된 공용 구조체](discriminated-unions.md)
 - [패턴 일치](pattern-matching.md)

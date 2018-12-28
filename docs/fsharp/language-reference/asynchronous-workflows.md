@@ -1,13 +1,13 @@
 ---
-title: 비동기 워크플로(F#)
+title: 비동기 워크플로
 description: 지원에 대해 알아봅니다는 F# 계산을 비동기적으로 수행 하는 것에 대 한 다른 작업의 실행을 차단 하지 않고 실행 되는 언어를 프로그래밍 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 720996106d2b90392eacc75eb99147691ee83334
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 7643a26469ee6a6cf15940f90611fd430beef42e
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127747"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610790"
 ---
 # <a name="asynchronous-workflows"></a>비동기 워크플로
 

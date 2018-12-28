@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 54036baee6fc2d7af49e818a1c112dec8eac80aa
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a5b0d3bfb7e4db2fec39f37c9fb794731cdf5bbc
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32744914"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613299"
 ---
 # <a name="ltdependentassemblygt-element"></a>&lt;dependentAssembly&gt; 요소
 각 어셈블리에 대한 바인딩 정책 및 어셈블리 위치를 캡슐화합니다. 하나를 사용 하 여 `dependentAssembly` 각 어셈블리에 대 한 요소입니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "32744914"
 |`assemblyIdentity`|어셈블리에 대 한 식별 정보를 포함합니다. 이 요소는 각각에 포함 되어야 합니다 `dependentAssembly` 요소입니다.|  
 |`codeBase`|런타임 컴퓨터에 설치 되지 않은 경우 공유 어셈블리를 찾을 수를 지정 합니다.|  
 |`bindingRedirect`|어셈블리 버전을 다른 버전으로 리디렉션합니다.|  
-|`publisherPolicy`|런타임에서이 어셈블리에 대 한 게시자 정책을 적용할지 지정 합니다.|  
+|`publisherPolicy`|런타임에서이 어셈블리에 대 한 게시자 정책을 적용할지 여부를 지정 합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -57,7 +57,7 @@ ms.locfileid: "32744914"
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 두 명의 어셈블리에 대 한 어셈블리 정보를 캡슐화 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 두 어셈블리에 대 한 어셈블리 정보를 캡슐화 하는 방법을 보여 줍니다.  
   
 ```xml  
 <configuration>  
@@ -81,6 +81,6 @@ ms.locfileid: "32744914"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

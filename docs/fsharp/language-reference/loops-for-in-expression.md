@@ -1,13 +1,13 @@
 ---
-title: '루프: for...in 식(F#)'
+title: '루프: for...in 식'
 description: 참조 하는 방법을 F# 하십시오... 식 구문을 반복을 사용 하는 열거 가능한 컬렉션에서 특정 패턴의 일치를 반복 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: c4fba1f1dea3993cafa2e37ad0f32d9fb2eed85a
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: adaf448a49cf53c63c41f9156d40ee5d1ad3caeb
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48027236"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614412"
 ---
 # <a name="loops-forin-expression"></a>루프: for...in 식
 
@@ -133,7 +133,7 @@ Number of elements in list1: 5
 
 `Note` 사용할 수 있습니다 `for...in` 시퀀스 식 및 기타 계산 식, 사용자 지정된 버전의 경우는 `for...in` 식이 사용 됩니다. 자세한 내용은 [시퀀스](sequences.md)를 [비동기 워크플로](asynchronous-workflows.md), 및 [계산 식](computation-expressions.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [루프: `for...to` 식](loops-for-to-expression.md)

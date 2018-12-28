@@ -1,21 +1,21 @@
 ---
-title: 패턴 일치(F#)
-description: F#의 논리 구조를 사용 하 여 데이터를 비교, 데이터를 구성 부분으로 분해 하거나 데이터에서 정보를 추출 패턴을 사용 하는 방법을 알아봅니다.
+title: 패턴 일치
+description: 패턴을 사용 하는 방법을 알아봅니다 F# 논리 구조를 사용 하 여 데이터를 비교 하려면 데이터를 구성 부분으로 분해 하거나 데이터에서 정보를 추출 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 5ad3d3e1a78246afdfa2948fd0fb84fa04686d30
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: bb6b41f6d15612e4a65abd4a3d5d7291d84a8f3c
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45991426"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613585"
 ---
 # <a name="pattern-matching"></a>패턴 일치
 
-패턴은 입력된 데이터를 변환 하는 것에 대 한 규칙입니다. 논리적 구조체 또는 구조체를 사용 하 여 데이터를 비교, 데이터를 구성 부분으로 분해 또는 다양 한 방법으로 데이터에서 정보를 추출 하는 F# 언어 전체에서 사용 됩니다.
+패턴은 입력된 데이터를 변환 하는 것에 대 한 규칙입니다. 전체에서 사용 되는 F# 논리적 구조체 또는 구조체를 사용 하 여 데이터를 비교 하는 언어 구성 요소에 데이터를 분해 또는 다양 한 방법으로 데이터에서 정보를 추출 합니다.
 
 ## <a name="remarks"></a>설명
 
-패턴은 같은 여러 가지 언어 구문에 사용 되는 `match` 식입니다. 함수에 대 한 인수를 처리 하는 경우 사용할 `let` 바인딩, 람다 식에 연결 된 예외 처리기는 `try...with` 식입니다. 자세한 내용은 [일치 식](match-expressions.md), [let 바인딩](functions/let-bindings.md)를 [람다 식: 합니다 `fun` 키워드](functions/lambda-expressions-the-fun-keyword.md), 및 [예외: 합니다 `try...with` 식](exception-handling/the-try-with-expression.md)합니다.
+패턴은 같은 여러 가지 언어 구문에 사용 되는 `match` 식입니다. 함수에 대 한 인수를 처리 하는 경우 사용할 `let` 바인딩, 람다 식에 연결 된 예외 처리기는 `try...with` 식입니다. 자세한 내용은 [일치 식](match-expressions.md)를 [let 바인딩](functions/let-bindings.md), [람다 식: 합니다 `fun` 키워드](functions/lambda-expressions-the-fun-keyword.md), 및 [예외: 합니다 `try...with` 식](exception-handling/the-try-with-expression.md)합니다.
 
 예를 들어를 `match` 식을 *패턴* 파이프 기호 뒤에 오는 됩니다.
 
@@ -103,7 +103,7 @@ match shape with
 
 활성 패턴을 사용 하 여 더 복잡 한 사용자 지정 패턴 일치를 정의할 수 있습니다. 활성 패턴에 대 한 자세한 내용은 참조 하세요. [활성 패턴](active-patterns.md)합니다.
 
-식별자가 예외가 있는 경우는 예외 처리기의 컨텍스트에서 일치 하는 패턴에 사용 됩니다. 예외 처리의 패턴 일치에 대 한 정보를 참조 하세요 [예외: 합니다 `try...with` 식](exception-handling/the-try-with-expression.md)합니다.
+식별자가 예외가 있는 경우는 예외 처리기의 컨텍스트에서 일치 하는 패턴에 사용 됩니다. 예외 처리의 패턴 일치에 대 한 자세한 내용은 참조 하세요. [예외: 합니다 `try...with` 식](exception-handling/the-try-with-expression.md)합니다.
 
 ## <a name="variable-patterns"></a>변수 패턴
 
@@ -201,7 +201,7 @@ Null 패턴은 null 값을 허용 하는 형식을 사용 하 여 작업할 때 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4817.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [일치 식](match-expressions.md)
 - [활성 패턴](active-patterns.md)

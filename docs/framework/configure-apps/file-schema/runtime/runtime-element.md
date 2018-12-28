@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 0640b4c54b6f1429bce4947ec536352f240ca719
-ms.sourcegitcommit: daa8788af67ac2d1cecd24f9f3409babb2f978c9
+ms.openlocfilehash: 5ab9fafeb6c836f1561752a8e2bdfddb97296399
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47863628"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610680"
 ---
 # <a name="ltruntimegt-element"></a>&lt;런타임&gt; 요소
 응용 프로그램을 구성 하려면 공용 언어 런타임에서 사용 되는 정보를 제공 합니다.  
@@ -92,5 +92,5 @@ ms.locfileid: "47863628"
  요소를 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션은 응용 프로그램 시작 시 공용 언어 런타임에 의해 자동으로 읽습니다. 해당 이름을 제공 하 여 기본이 아닌 응용 프로그램 도메인에 대 한 구성 파일을 정의할 수도 있습니다는 <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> 속성; 응용 프로그램 도메인 로드 될 때 해당 설정이 자동으로 읽습니다. 드물게 경우 어느 있어야 직접 설정의 읽을 필요가 합니다 [ \<런타임 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 응용 프로그램의 구성 파일의 섹션입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

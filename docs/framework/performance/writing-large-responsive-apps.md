@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 8c73f1a4373583530d5afde113c5c4ec049bcea4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 9f98d85e5fd01a631352f5db7bba6ed309449d68
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195894"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613520"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>대형 응답성 .NET Framework 응용 프로그램 작성
 이 문서에서는 규모가 큰 .NET Framework 앱이나 파일 또는 데이터베이스와 같이 많은 양의 데이터를 처리하는 앱의 성능을 향상시키기 위한 팁을 제공합니다. 이러한 팁은 C# 및 Visual Basic 컴파일러를 관리 코드로 다시 작성하면서 수집되었으며, C# 컴파일러의 실제 몇 가지 예를 포함하고 있습니다. 
@@ -28,20 +28,20 @@ ms.locfileid: "50195894"
 ## <a name="just-the-facts"></a>팩트  
  성능을 조정하고 응답성 있는 .NET Framework 앱을 만들 때는 다음 팩트를 고려하세요. 
   
-### <a name="fact-1-dont-prematurely-optimize"></a>팩트 1: 너무 이르게 최적화하지 말 것  
+### <a name="fact-1-dont-prematurely-optimize"></a>팩트 1: 너무 이르게 최적화 하지  
  필요 이상으로 복잡한 코드를 작성하면 유지 관리, 디버깅 및 개선 비용이 발생합니다. 숙련된 프로그래머는 코딩 문제를 해결하는 방법에 대한 직관적인 감각을 지니고 있으며 보다 효율적인 코드를 작성합니다. 그러나 때로는 코드를 너무 이르게 최적화합니다. 예를 들어, 단순 배열이면 충분한 경우에 해시 테이블을 사용하거나 단순히 값을 다시 계산하는 대신 메모리를 누수시킬 수 있는 복잡한 캐싱을 사용합니다. 숙련된 프로그래머라 하더라도 성능에 대해 테스트하고 문제를 발견할 경우 코드를 분석해야 합니다. 
   
-### <a name="fact-2-if-youre-not-measuring-youre-guessing"></a>팩트 2: 측정하는 것이 아니라면 추측하는 것일 뿐임  
+### <a name="fact-2-if-youre-not-measuring-youre-guessing"></a>팩트 2: 추측 하는 경우 측정 하지 하는,  
  프로필과 측정값은 거짓말하지 않습니다. 프로필은 CPU가 완전히 로드되었는지 여부나 사용자가 디스크 I/O에서 차단되었는지 여부를 보여 줍니다. 프로필을 보면 할당하는 메모리의 종류와 양을 알 수 있을 뿐만 아니라 CPU가 GC([가비지 수집](../../../docs/standard/garbage-collection/index.md))에 많은 시간을 소비하고 있는지 여부도 알 수 있습니다. 
   
  앱의 핵심 사용자 환경 또는 시나리오에 대한 성능 목표를 설정하고 성능을 측정하기 위한 테스트를 작성해야 합니다. 과학적인 방법을 적용하여 실패 테스트를 조사합니다. 즉, 프로필을 사용하여 사용자를 안내하고, 문제가 무엇일지 가설을 세우고, 실험이나 코드 변경으로 가설을 테스트합니다. 정기 테스트로 시간의 흐름에 따른 기준 성능 측정값을 설정하여 성능 저하를 일으키는 변경 내용을 구분할 수 있습니다. 엄격한 방식으로 성능 작업에 접근하면 불필요한 코드 업데이트로 시간을 낭비하는 일이 없습니다. 
   
-### <a name="fact-3-good-tools-make-all-the-difference"></a>팩트 3: 좋은 도구가 모든 차별화를 이뤄냄  
+### <a name="fact-3-good-tools-make-all-the-difference"></a>팩트 3: 좋은 도구가 모든 차이 만듭니다.  
  좋은 도구를 사용하면 가장 큰 성능 문제(CPU, 메모리 또는 디스크)에 신속하게 파고들어 해당 병목 현상을 일으키는 코드를 찾을 수 있습니다. Microsoft는 [Visual Studio 프로파일러](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone 분석 도구](https://msdn.microsoft.com/library/e67e3199-ea43-4d14-ab7e-f7f19266253f) 및 [PerfView](https://www.microsoft.com/download/details.aspx?id=28567)와 같은 다양한 성능 도구를 제공합니다. 
   
  PerfView는 디스크 I/O, GC 이벤트 및 메모리와 같은 깊이 있는 문제에 집중하는 데 도움을 주는 놀랄 만큼 강력한 도구로서 무료입니다. 성능 관련 ETW([Windows용 이벤트 추적](../../../docs/framework/wcf/samples/etw-tracing.md)) 이벤트를 캡처하여 앱, 프로세스, 스택 및 스레드 단위 정보를 쉽게 볼 수 있습니다. PerfView는 앱에서 할당하는 메모리의 양과 종류뿐만 아니라 함수 또는 호출 스택으로 인해 메모리가 할당되는 양이 어느 정도인지를 보여 줍니다. 자세한 내용은 도구에 포함된 다양한 도움말 항목, 데모 및 비디오(예: Channel 9의 [PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial))를 참조하세요. 
   
-### <a name="fact-4-its-all-about-allocations"></a>팩트 4: 결국은 모두 할당에 관련된 문제임  
+### <a name="fact-4-its-all-about-allocations"></a>팩트 4: 할당에 대 한 모든 것  
  응답성 있는 .NET Framework 앱을 빌드하는 것은 거품 정렬 대신 빠른 정렬을 사용하는 등 알고리즘에 대한 문제라고 생각할 수 있지만 그렇지 않습니다. 응답성 있는 앱을 빌드하는 데 있어서 가장 큰 요인은 메모리를 할당하는 것이며, 특히 앱의 규모가 매우 크거나 앱이 많은 양의 데이터를 처리하는 경우에 그렇습니다. 
   
  새 컴파일러 API를 사용하여 응답성 있는 IDE 환경을 빌드하는 작업의 거의 전부는 할당을 피하고 캐싱 전략을 관리하는 것에 관련되었습니다. PerfView 추적은 새 C# 및 Visual Basic 컴파일러의 성능이 거의 CPU 바인딩이 아니라는 사실을 보여 줍니다. 이러한 새 컴파일러는 수십만 또는 수백만 개의 코드 줄을 읽고 메타데이터를 읽거나 생성된 코드를 내보낼 때 I/O 바인딩일 수 있습니다. UI 스레드 지연은 거의 전부 가비지 수집 때문입니다. .NET Framework GC는 성능을 위해 많이 조정되었고 앱 코드가 실행되는 동안 해당 작업의 많은 부분을 동시에 수행합니다. 그러나 한 번의 할당으로 많은 비용이 드는 [gen2](../../../docs/standard/garbage-collection/fundamentals.md) 컬렉션이 트리거되어 모든 스레드가 중지될 수 있습니다. 
@@ -278,7 +278,7 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
 ### <a name="linq-and-lambdas"></a>LINQ 및 람다  
 언어 통합 쿼리 (LINQ), 람다 식과 함께에서는 예제는 생산성 기능입니다. 그러나 사용 시간이 지남에 따라 성능에 상당한 영향을 미칠 수 있습니다 하 고 코드를 다시 작성 해야 할 수 있습니다.
   
- **예제 5: 람다, List\<T> 및 IEnumerable\<T>**  
+ **예제 5: 람다 식, 목록\<T >를 및 IEnumerable\<T >**  
   
  이 예제에서는 이름 문자열이 제공될 경우 [LINQ 및 기능 스타일 코드](https://blogs.msdn.com/b/charlie/archive/2007/01/26/anders-hejlsberg-on-linq-and-functional-programming.aspx)를 사용하여 컴파일러 모델에서 기호를 찾습니다.  
   
@@ -361,7 +361,8 @@ public Symbol FindMatchingSymbol(string name)
  이 코드에서는 LINQ 확장 메서드, 람다 또는 열거자를 사용하지 않으며 할당도 발생하지 않습니다. 컴파일러가 `symbols` 컬렉션이 <xref:System.Collections.Generic.List%601>이고, boxing을 피하기 위한 올바른 형식을 사용하여 결과 열거자(구조)를 로컬 변수에 바인딩할 수 있다는 사실을 알 수 있기 때문에 할당이 없습니다. 이 함수의 원래 버전은 C#의 표현 기능과 .NET Framework의 생산성을 보여 주는 좋은 예였습니다. 보다 효율적인 이 새 버전은 유지 관리할 복잡할 코드를 추가하지 않고 이러한 품질을 유지합니다. 
   
 ### <a name="async-method-caching"></a>비동기 메서드 캐싱  
- 다음 예제에서는 [async](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) 메서드에 캐시된 결과를 사용하려고 할 때 발생하는 일반적인 문제를 보여 줍니다. 
+
+다음 예제에서는 [async](../../csharp/programming-guide/concepts/async/index.md) 메서드에 캐시된 결과를 사용하려고 할 때 발생하는 일반적인 문제를 보여 줍니다.
   
  **예제 6: 비동기 메서드의 캐싱**  
   
@@ -460,7 +461,7 @@ class Compilation { /*...*/
   
 -   결국은 모두 할당에 관련된 문제임 – 이 부분이 바로 컴파일러 플랫폼 팀이 새 컴파일러의 성능을 향상시키기 위해 대부분의 시간을 사용하는 부분입니다. 
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [이 항목의 프레젠테이션 비디오](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
 - [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)  

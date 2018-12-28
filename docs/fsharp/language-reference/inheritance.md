@@ -1,13 +1,13 @@
 ---
-title: 상속(F#)
-description: "'상속' 키워드를 사용 하 여 F# 상속 관계를 지정 하는 방법에 알아봅니다."
+title: 상속
+description: 지정 하는 방법을 알아봅니다 F# '상속' 키워드를 사용 하 여 상속 관계입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: e4d79244fb9bada5db0c5c4c7179d4bfe6e21f3d
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 775ee52039caf4c4ab65f82fa21d4e536135a12a
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43864471"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610140"
 ---
 # <a name="inheritance"></a>상속
 
@@ -34,7 +34,7 @@ type MyDerived(...) =
 
 ## <a name="virtual-methods-and-overrides"></a>가상 메서드 및 재정의
 
-가상 메서드 (및 속성) 다소 다르게 작동 F#의 다른.NET 언어를 비교 하 여 합니다. 새 가상 멤버를 선언 하려면 사용 된 `abstract` 키워드입니다. 해당 메서드에 대 한 기본 구현을 제공 하는 여부에 관계 없이이 작업을 수행 합니다. 따라서 기본 클래스에서 가상 메서드의 완료 정의이 패턴을 따릅니다.
+가상 메서드 (및 속성)에서 약간 다르게 작동 F# 다른.NET 언어를 비교 하 여 합니다. 새 가상 멤버를 선언 하려면 사용 된 `abstract` 키워드입니다. 해당 메서드에 대 한 기본 구현을 제공 하는 여부에 관계 없이이 작업을 수행 합니다. 따라서 기본 클래스에서 가상 메서드의 완료 정의이 패턴을 따릅니다.
 
 ```fsharp
 abstract member [method-name] : [type]
@@ -62,7 +62,7 @@ override [self-identifier].[method-name] [argument-list] = [method-body]
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2602.fs)]
 
-생성자가 여러 개인 경우 다음 코드를 사용할 수 있습니다. 파생된 클래스 생성자의 첫 번째 줄은는 `inherit` 절 및 필드를 사용 하 여 선언 된 필드를 명시적으로 표시 된 `val` 키워드입니다. 자세한 내용은 [명시적 필드: 합니다 `val` 키워드](members/explicit-fields-the-val-keyword.md)합니다.
+생성자가 여러 개인 경우 다음 코드를 사용할 수 있습니다. 파생된 클래스 생성자의 첫 번째 줄은는 `inherit` 절 및 필드를 사용 하 여 선언 된 필드를 명시적으로 표시 된 `val` 키워드입니다. 자세한 내용은 참조 하세요. [명시적 필드: 합니다 `val` 키워드](members/explicit-fields-the-val-keyword.md)합니다.
 
 ```fsharp
 type BaseClass =
@@ -91,7 +91,7 @@ let obj2 = DerivedClass("A")
 
 개체 계층 구조를 만들 때에 상속 하는 대신 구별된 된 공용 구조체를 사용 하는 것이 좋습니다. 구별 된 공용 구조체는 전체 공용 형식을 공유 하는 다른 개체의 동작을 모델링할 수도 있습니다. 단일 구별 된 공용 구조체 파생된 클래스는 서로 조금씩 여러 필요가 종종 수 없습니다. 구별 된 공용 구조체에 대 한 정보를 참조 하세요 [구별 된 공용 구조체](discriminated-unions.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [개체 식](object-expressions.md)
 - [F# 언어 참조](index.md)

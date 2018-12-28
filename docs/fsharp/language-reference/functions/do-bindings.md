@@ -1,13 +1,13 @@
 ---
-title: do 바인딩(F#)
-description: F# 'do' 바인딩에 사용법 함수 또는 값을 정의 하지 않고 코드를 실행할 수에 대해 알아봅니다.
+title: do 바인딩
+description: 에 대해 알아봅니다 어떻게는 F# 함수 또는 값을 정의 하지 않고 코드를 실행 하는 바인딩 ' 않습니다'.
 ms.date: 05/16/2016
-ms.openlocfilehash: 78dbf8da0fe40b5af566ad98693df1109eede7e4
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: d29f8557fda06097d2e85748ab6286f0415730b3
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45973146"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614521"
 ---
 # <a name="do-bindings"></a>do 바인딩
 
@@ -28,7 +28,7 @@ ms.locfileid: "45973146"
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet201.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](../index.md)
 - [함수](index.md)

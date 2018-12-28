@@ -1,15 +1,15 @@
 ---
-title: 파일&#39;s 모드가 열고&#39;t 유효한 값으로 설정 합니다.
+title: 파일의 열기 모드가 올바른 값으로 설정되지 않았습니다.
 ms.date: 07/20/2015
 ms.assetid: 969541f6-9ff6-4804-ba61-0d17370060ef
-ms.openlocfilehash: be5c44def071577a82a648ee36935b69e5f00f2c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2d4c12aaffad9be961f501ada75b5ea54e598bf3
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33635908"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53761617"
 ---
-# <a name="file39s-open-mode-wasn39t-set-to-a-valid-value"></a>파일&#39;s 모드가 열고&#39;t 유효한 값으로 설정 합니다.
+# <a name="files-open-mode-wasnt-set-to-a-valid-value"></a>파일의 열기 모드가 올바른 값으로 설정되지 않았습니다.
 파일의 열기 모드에 대해 제공된 값이 잘못되었습니다. 다음 표에서는 <xref:Microsoft.VisualBasic.OpenMode> 열거형에 유효한 값을 보여 줍니다.  
   
 |값|모드|  

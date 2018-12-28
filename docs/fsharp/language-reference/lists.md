@@ -1,13 +1,13 @@
 ---
-title: 목록(F#)
+title: 목록
 description: 에 대해 알아봅니다 F# 는 정렬 된, 변경할 수 없는 일련의 동일한 형식의 요소를 나열 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: f7b9054226a1dd004ac78673a059bd1c35e325a5
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: cc4e292280cca0dca37f69cf5a46ec2822d08d5c
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152749"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656338"
 ---
 # <a name="lists"></a>목록
 
@@ -65,11 +65,12 @@ F#의 목록은 변경이 불가능하므로 수정 작업을 수행하면 기�
 |속성|형식|설명|
 |--------|----|-----------|
 |[헤드](https://msdn.microsoft.com/library/5f9414fd-6bdb-470a-8b72-40016db30740)|`'T`|첫 번째 요소입니다.|
-|[빈](https://msdn.microsoft.com/library/44406ecb-1918-4d32-b32a-ca1f69840386)|`'T list`|해당 형식의 빈 목록을 반환하는 정적 속성입니다.|
+|[비어 있음](https://msdn.microsoft.com/library/44406ecb-1918-4d32-b32a-ca1f69840386)|`'T list`|해당 형식의 빈 목록을 반환하는 정적 속성입니다.|
 |[IsEmpty](https://msdn.microsoft.com/library/3ba087b2-2fc2-406d-b10a-cff6a19322da)|`bool`|목록에 요소가 없으면 `true`입니다.|
 |[Item](https://msdn.microsoft.com/library/bdb2553a-0e54-4ff8-baed-ab1aac8f5dae)|`'T`|지정한 인덱스에 있는 요소로서 0부터 시작합니다.|
 |[길이](https://msdn.microsoft.com/library/25f715c8-9daa-4c4d-a6c7-26772f9dab4d)|`int`|요소의 수입니다.|
 |[비상](https://msdn.microsoft.com/library/2a6f8eb9-dc32-41aa-8b62-2baffaface91)|`'T list`|첫 번째 요소가 없는 목록입니다.|
+
 이러한 속성을 사용하는 몇 가지 예는 다음과 같습니다.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1307.fs)]
@@ -446,5 +447,5 @@ List.iteri2: element 2 of list1 is 3; element 2 of list2 is 6
 - [F# 언어 참조](index.md)
 - [F# 형식](fsharp-types.md)
 - [시퀀스](sequences.md)
-- [배열](arrays.md)
+- [배열 (C++)](arrays.md)
 - [옵션](options.md)

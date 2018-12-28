@@ -1,13 +1,13 @@
 ---
-title: 형식 약어(F#)
-description: 형식에 이름을 더 의미 있는 코드를 쉽게 읽을 수 있도록 하기 위해 F# 형식 약어에 알아봅니다.
+title: 형식 약어
+description: 에 대해 알아봅니다 F# 형식에 이름을 더 의미 있는 코드를 쉽게 읽을 수 있도록 하기 위해 약어를 입력 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 259cd6c84e22fc7c98e08255d3e0ded5b87af352
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 0deaef789367aad413e5a537bf7164034e1275c0
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48842427"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613351"
 ---
 # <a name="type-abbreviations"></a>형식 약어
 
@@ -33,10 +33,10 @@ type [accessibility-modifier] type-abbreviation = type-name
 
 이전 코드에서 `Transform` 형식의 단일 인수를 사용 하는 함수를 나타내는 형식 약어 이며 동일한 형식의 단일 값을 반환 합니다.
 
-.NET Framework MSIL 코드에서 형식 약어 유지 되지 않습니다. 따라서 다른.NET Framework 언어에서 F# 어셈블리를 사용 하면 형식 약어에 대 한 기본 형식 이름을 사용 해야 합니다.
+.NET Framework MSIL 코드에서 형식 약어 유지 되지 않습니다. 따라서 사용 하는 경우는 F# 어셈블리 다른.NET Framework 언어에서 형식 약어에 대 한 기본 형식 이름을 사용 해야 합니다.
 
 측정 단위 형식 약어를 사용할 수도 있습니다. 자세한 내용은 [측정 단위를](units-of-measure.md)입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)

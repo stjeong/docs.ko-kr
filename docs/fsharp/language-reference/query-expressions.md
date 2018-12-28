@@ -1,13 +1,13 @@
 ---
-title: 쿼리 식(F#)
+title: 쿼리 식
 description: LINQ에 대 한 쿼리 식 지원에 대해 알아봅니다는 F# 프로그래밍 언어입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 00398e7cb8876f9bbe11606b7a1024da9d2c35f3
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e4a36305b607f573c29744f50a841be078c8061f
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143768"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611375"
 ---
 # <a name="query-expressions"></a>쿼리 식
 

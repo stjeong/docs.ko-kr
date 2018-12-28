@@ -1,13 +1,13 @@
 ---
-title: 이벤트(F#)
+title: 이벤트
 description: 에 대해 알아봅니다 하는 방법 F# 이벤트를 사용 하면 GUI 프로그래밍에서 중요 한 사용자 작업을 사용 하 여 함수 호출을 연결할 수 있습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 82cde0e1df980a2ae204ad0923f4bac0769f0831
-ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
+ms.openlocfilehash: 38eb15e59611d018b6005f64a957c9275ec931a4
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52745344"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612168"
 ---
 # <a name="events"></a>이벤트
 
@@ -175,11 +175,11 @@ let appForm = new AppForm()
 Application.Run(appForm)
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](index.md)
 - [이벤트 처리 및 발생](../../../../docs/standard/events/index.md)
-- [람다 식:는 `fun` 키워드](../functions/lambda-expressions-the-fun-keyword.md)
+- [람다 식: `fun` 키워드](../functions/lambda-expressions-the-fun-keyword.md)
 - [Control.Event 모듈](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event-module-%5bfsharp%5d)
 - [Control.Event&#60;없습니다&#62; 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event%5b%27t%5d-class-%5bfsharp%5d)
 - [Control.Event&#60;'대리자' Args&#62; 클래스](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event%5b%27delegate%2c%27args%5d-class-%5bfsharp%5d)

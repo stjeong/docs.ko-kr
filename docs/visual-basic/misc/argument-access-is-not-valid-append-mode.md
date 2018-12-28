@@ -1,17 +1,17 @@
 ---
-title: 인수 &#39;액세스&#39; 올바르지 않습니다. 추가 모드에 대 한 유효한 값은 &#39;OpenAccess.Write&#39; 및 &#39;OpenAccess.Default&#39;
+title: "'Access' 인수가 잘못되었습니다. 추가 모드의 올바른 값은 'OpenAccess.Write'와 'OpenAccess.Default'입니다."
 ms.date: 07/20/2015
 f1_keywords:
 - vbrFileSystem_IllegalAppendAccess
 ms.assetid: f584056e-5eb7-401f-b43d-d08252e66d1c
-ms.openlocfilehash: d168ff90c37ef8488f9afb2ce740fa8d3caeae9a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 655a2097d2e486b1aae843b4a4137d7c941a450d
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33600622"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53758461"
 ---
-# <a name="argument-39access39-is-not-valid-valid-values-for-append-mode-are-39openaccesswrite39-and-39openaccessdefault39"></a>인수 &#39;액세스&#39; 올바르지 않습니다. 추가 모드에 대 한 유효한 값은 &#39;OpenAccess.Write&#39; 및 &#39;OpenAccess.Default&#39;
+# <a name="argument-access-is-not-valid-valid-values-for-append-mode-are-openaccesswrite-and-openaccessdefault"></a>'Access' 인수가 잘못되었습니다. 추가 모드의 올바른 값은 'OpenAccess.Write'와 'OpenAccess.Default'입니다.
 액세스 값이 추가 모드에서 유효하지 않습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  

@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7a8858059159edddb4456561719c572fb9268be7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3070e293fc335bb24dd1234007307773d152ceee
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509485"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611401"
 ---
 # <a name="ltloadfromremotesourcesgt-element"></a>&lt;loadFromRemoteSources&gt; 요소
 지정 여부를 원격 원본에서 로드 된 어셈블리의.NET Framework 4 이상 완전 신뢰를 부여 해야 합니다.
   
 > [!NOTE]
->  이 항목에서는 Visual Studio 프로젝트 오류 목록 또는 빌드 오류가 오류 메시지로 인해 연결 된, 참조 [방법: Visual Studio에서 웹에서 어셈블리를 사용 하 여](https://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070)입니다.  
+>  이 항목에서는 Visual Studio 프로젝트 오류 목록 또는 빌드 오류가 오류 메시지로 인해 연결 된, 참조 [방법: 웹에서 어셈블리를 사용 하 여 Visual Studio에서](https://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070)합니다.  
   
  \<configuration>  
 \<runtime>  
@@ -74,7 +74,7 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 
 에 어셈블리를 로드 하 고 해당 코드를 실행 하거나 다음을 수행 해야 합니다.
 
-- 어셈블리에 대 한 샌드박스를 명시적으로 만들거나 (참조 [방법: 부분적으로 신뢰할 수 있는 코드 실행 샌드박스에서](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
+- 어셈블리에 대 한 샌드박스를 명시적으로 만들거나 (참조 [방법: 샌드박스에서 부분적으로 신뢰할 수 있는 코드 실행](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
 
 - 완전 신뢰에서 어셈블리의 코드를 실행 합니다. 구성 하 여이 작업을 수행 합니다 `<loadFromRemoteSources>` 요소입니다. 이전 버전의.NET Framework에서 부분 신뢰로 실행 되는 어셈블리의.NET Framework 4 및 이후 버전에서 완전 신뢰에서 이제 실행 되도록 지정할 수 있습니다.
 
@@ -115,10 +115,10 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 </configuration>  
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[CAS 정책의 암시적 사용: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
-[방법: 샌드박스에서 부분적으로 신뢰할 수 있는 코드 실행](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
-[런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-[구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
+- [CAS 정책의 암시적 사용: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
+- [방법: 샌드박스에서 부분적으로 신뢰할 수 있는 코드 실행](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  

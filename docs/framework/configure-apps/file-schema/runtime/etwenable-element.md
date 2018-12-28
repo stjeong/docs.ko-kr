@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 267a4a29282881d18201d0cb2062e91b4ff974a9
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b6ea2f8a32a18dfce6be54ce52ce8fef4abf92ce
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745177"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610777"
 ---
 # <a name="ltetwenablegt-element"></a>&lt;etwEnable&gt; 요소
 공용 언어 런타임 이벤트에 대해 ETW(Windows용 이벤트 추적)를 사용하도록 설정할지를 지정합니다.  
@@ -40,8 +40,8 @@ ms.locfileid: "32745177"
   
 |값|설명|  
 |-----------|-----------------|  
-|true|ETW를 사용 하도록 설정 합니다. Windows Vista 및 Windows Server 2008 운영 체제부터 Windows 버전에 대 한 기본값입니다.|  
-|False|ETW를 사용 하지 않도록 설정 합니다. 이전 버전의 Windows에 대 한 기본값입니다.|  
+|true|ETW를 사용 하도록 설정 합니다. 이것은 Windows Vista 및 Windows Server 2008 운영 체제를 사용 하 여 시작 하는 Windows 버전에 대 한 기본값입니다.|  
+|False|ETW를 사용 하지 않도록 설정 합니다. 이것은 이전 버전의 Windows에 대 한 기본값입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -54,10 +54,10 @@ ms.locfileid: "32745177"
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- Windows Vista부터, ETW 기본적으로 사용 됩니다. 이 요소를 사용 하 여 응용 프로그램에 대 한 ETW를 사용 하지 않도록 설정 합니다. 이전 버전의 Windows에서 응용 프로그램에 대 한 ETW를 사용 하도록 설정 하려면이 요소를 사용 합니다.  
+ Windows Vista 부터는 ETW 기본적으로 사용 됩니다. 이 요소를 사용 하 여 응용 프로그램에 대 한 ETW를 사용 하지 않도록 설정 합니다. Windows의 이전 버전에서는 응용 프로그램에 대 한 ETW를 사용 하도록 설정 하려면이 요소를 사용 합니다.  
   
 > [!NOTE]
->  ETW는 사용 하도록 설정 또는 레지스트리 설정을 사용 하 여 서버에 전체적으로 해제 수 있습니다. 참조 [.NET Framework 로깅 제어](../../../../../docs/framework/performance/controlling-logging.md)합니다.  
+>  ETW는 사용 하도록 설정 또는 레지스트리 설정을 사용 하 여 서버에서 전역적으로 해제할 수 있습니다. 참조 [.NET Framework 로깅 제어](../../../../../docs/framework/performance/controlling-logging.md)입니다.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 응용 프로그램에 대 한 ETW 추적을 사용 하는 방법을 보여 줍니다.  
@@ -71,6 +71,6 @@ ms.locfileid: "32745177"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [.NET Framework 로깅 제어](../../../../../docs/framework/performance/controlling-logging.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [.NET Framework 로깅 제어](../../../../../docs/framework/performance/controlling-logging.md)

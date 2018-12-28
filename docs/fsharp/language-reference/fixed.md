@@ -1,17 +1,17 @@
 ---
-title: Fixed 키워드 (F#)
-description: 고정할 수 있으므로' ' 하는 방법으로 스택에 F#을 사용 하 여 컬렉션을 방지 하기 위해 로컬 'fixed' 키워드에 알아봅니다.
+title: Fixed 키워드
+description: 하는 방법에 대해 알아봅니다. 'p i를 스택으로 사용 하 여 컬렉션을 방지 하기 위해 로컬 합니다 F# 'fixed' 키워드입니다.
 ms.date: 04/24/2017
-ms.openlocfilehash: 1bf1b2ad67d2dd7f854e569cfca7c06e8aec7f4c
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 7fdf66560f3e2ab7584b00c7e4584d7f6c161858
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45624511"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614359"
 ---
 # <a name="the-fixed-keyword"></a>Fixed 키워드
 
-F# 4.1 소개를 `fixed` "고정" 스택에 로컬 수집 되거나 가비지 수집 하는 동안 이동 하지 못하게 할 수 있는 키워드입니다.  하위 수준 프로그래밍 시나리오에 사용 됩니다.
+F#4.1 소개를 `fixed` "고정" 스택에 로컬 수집 되거나 가비지 수집 하는 동안 이동 하지 못하게 할 수 있는 키워드입니다.  하위 수준 프로그래밍 시나리오에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -61,6 +61,6 @@ let doPointerWork() =
 doPointerWork()
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [NativePtr 모듈](https://msdn.microsoft.com/visualfsharpdocs/conceptual/nativeinterop.nativeptr-module-%5Bfsharp%5D)

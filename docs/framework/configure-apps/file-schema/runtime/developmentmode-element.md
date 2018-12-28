@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 71b4eb1dfb50774cea2f7a50d5e5350b0338f41e
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 982bc04e362f82760226b1cd2b8b3febe9cc7107
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745502"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612051"
 ---
 # <a name="ltdevelopmentmodegt-element"></a>&lt;developmentMode&gt; 요소
 런타임이 DEVPATH 환경 변수로 지정된 디렉터리에서 어셈블리를 검색할지를 지정합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "32745502"
 |값|설명|  
 |-----------|-----------------|  
 |**true**|DEVPATH 환경 변수로 지정 된 디렉터리에서 어셈블리를 검색 합니다.|  
-|**false**|DEVPATH 환경 변수로 지정 된 디렉터리에서 어셈블리를 검색 하지 않습니다. 이것이 기본 설정|  
+|**false**|DEVPATH 환경 변수로 지정 된 디렉터리에서 어셈블리에 대 한 검색 하지 않습니다. 이것이 기본값|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -58,10 +58,10 @@ ms.locfileid: "32745502"
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 개발 시에만이 설정을 사용 합니다. 런타임에서 DEVPATH에서 발견 된 강력한 이름의 어셈블리에 있는 버전을 확인 하지 않습니다. 단순히 처음 발견 한 어셈블리를 사용 합니다.  
+ 개발 타임에만이 설정을 사용 합니다. 런타임에서 DEVPATH에 있는 강력한 이름의 어셈블리의 버전을 확인 하지 않습니다. 단순히 찾은 첫 번째 어셈블리를 사용 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 런타임에서 DEVPATH 환경 변수로 지정 된 디렉터리에서 어셈블리를 검색 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 런타임이 DEVPATH 환경 변수로 지정 된 디렉터리에서 어셈블리를 검색 하는 방법을 보여 줍니다.  
   
 ```xml  
 <configuration>  
@@ -72,6 +72,6 @@ ms.locfileid: "32745502"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [방법: DEVPATH를 사용하여 어셈블리 찾기](../../../../../docs/framework/configure-apps/how-to-locate-assemblies-by-using-devpath.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [방법: DEVPATH를 사용 하 여 어셈블리를 찾습니다](../../../../../docs/framework/configure-apps/how-to-locate-assemblies-by-using-devpath.md)

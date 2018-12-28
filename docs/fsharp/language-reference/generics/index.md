@@ -1,13 +1,13 @@
 ---
-title: 제네릭(F#)
+title: 제네릭
 description: 사용 하는 방법을 알아봅니다 F# 제네릭 함수 및 형식 코드를 반복 하지 않고 다양 한 형식 사용 하는 코드를 작성할 수 있습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 7eae69bc0286bff4997c6399c7417bde119c2204
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: bafb80893df2f3fab85840ee844bc78d1fb33428
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147007"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614378"
 ---
 # <a name="generics"></a>제네릭
 

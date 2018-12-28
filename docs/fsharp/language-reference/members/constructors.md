@@ -1,13 +1,13 @@
 ---
-title: 생성자(F#)
-description: 정의 하 고 F#에서 생성자를 사용 하 여 만들고 클래스 및 구조체 개체를 초기화 하는 방법을 알아봅니다.
+title: 생성자
+description: 정의에서 생성자를 사용 하는 방법을 알아봅니다 F# 를 만들고 클래스 및 구조체 개체를 초기화 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: ff2463f890034cce0bbaa85d9a5c93e50427cd03
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 34989e2877b29f6f9fe1f6cc05e3fd7c90a1306a
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45743919"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612077"
 ---
 # <a name="constructors"></a>생성자
 
@@ -42,7 +42,7 @@ Initialized object that has coordinates (0, 0, 0)
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet3502.fs)]
 
-자세한 내용은 [명시적 필드: 합니다 `val` 키워드](explicit-fields-the-val-keyword.md)합니다.
+자세한 내용은 참조 하세요. [명시적 필드: 합니다 `val` 키워드](explicit-fields-the-val-keyword.md)합니다.
 
 ## <a name="executing-side-effects-in-constructors"></a>생성자의 파생 작업 실행
 
@@ -90,6 +90,6 @@ Created an invalid person object.
 
 정적 개체를 만들기 위한 코드를 지정 하는 것 외에도 `let` 고 `do` 바인딩 형식 수준에서 초기화를 수행 하는 형식을 처음으로 사용 하기 전에 실행 되는 클래스 형식에서 작성할 수 있습니다. 자세한 내용은 참조 하세요. [ `let` 클래스의 바인딩](let-bindings-in-classes.md) 및 [ `do` 클래스에 바인딩](do-bindings-in-classes.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](index.md)

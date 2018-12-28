@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 750b0dbc925ec484dd80e1796ba991435e354709
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a5e0a443f86848a446a7233a2c2e80f693cae9be
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745229"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611414"
 ---
 # <a name="ltgcallowverylargeobjectsgt-element"></a>&lt;gcAllowVeryLargeObjects&gt; 요소
 64비트 플랫폼에서 총 크기가 2GB보다 큰 배열을 사용하도록 설정합니다.  
@@ -35,14 +35,14 @@ ms.locfileid: "32745229"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`enabled`|필수 특성입니다.<br /><br /> 64 비트 플랫폼에서의 총 크기가 2GB 보다 큰 않는 배열을 사용 되는지 여부를 지정 합니다.|  
+|`enabled`|필수 특성입니다.<br /><br /> 64 비트 플랫폼에서 총 크기가 2GB 보다 큰 배열을 사용 되는지 여부를 지정 합니다.|  
   
 ## <a name="enabled-attribute"></a>enabled 특성  
   
 |값|설명|  
 |-----------|-----------------|  
 |`false`|총 크기가 2GB 보다 큰 배열 사용 되지 않습니다. 이 값이 기본값입니다.|  
-|`true`|64 비트 플랫폼에서의 총 크기가 2GB 보다 큰 배열 활성화 됩니다.|  
+|`true`|총 크기가 2GB 보다 큰 배열 64 비트 플랫폼에서 사용할 수 있습니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -55,19 +55,19 @@ ms.locfileid: "32745229"
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소를 사용 하 여 응용 프로그램 구성 파일에 크기가 2GB 보다 큰 배열에 있지만 개체 크기 또는 배열 크기에 대 한 다른 제한 변경 되지 않습니다.  
+ 이 요소를 사용 하 여 응용 프로그램 구성 파일의 크기가 2GB 보다 큰 배열을 사용 하도록 설정 하지만 개체 크기 또는 배열 크기에 대 한 다른도 변경 되지 않습니다.  
   
 -   배열에 있는 요소의 최대 수는 <xref:System.UInt32.MaxValue?displayProperty=nameWithType>합니다.  
   
--   임의의 단일 차원에 있는 최대 인덱스 2,147,483,591 바이트 배열 및 단일 바이트 구조의 배열에 대 한 (0x7FFFFFC7) 및 다른 형식에 대 한 2,146,435,071 (0X7FEFFFFF)는입니다.  
+-   임의의 단일 차원에 있는 최대 색인 2,147,483,591 바이트 배열 및 싱글바이트 구조의 배열에 대 한 (0x7FFFFFC7) 및 다른 유형의 2,146,435,071 (0X7FEFFFFF).  
   
--   문자열 및 기타 배열이 아닌 개체에 대 한 최대 크기는 변경 되지 않습니다.  
+-   문자열 및 기타 비 배열 개체에 대 한 최대 크기 변경 되지 않습니다.  
   
 > [!CAUTION]
->  이 기능을 사용 하기 전에 응용 프로그램 모든 배열이 크기가 2GB 보다 작은 가정 하는 안전 하지 않은 코드를 포함 하지 않습니다 확인 합니다. 예를 들어 배열 2GB를 초과 하지 것입니다 가정에 작성 된 경우 버퍼도 배열을 사용 하는 안전 하지 않은 코드 버퍼 오버런에 취약 수 있습니다.  
+>  이 기능을 사용 하기 전에 응용 프로그램 크기가 2GB 보다 작은 모든 배열은 가정 하는 안전 하지 않은 코드에 포함 되지 않습니다 확인 합니다. 예를 들어, 배열 2GB를 초과 하지 것입니다 가정 하에서 작성 된 경우 버퍼 배열을 사용 하는 안전 하지 않은 코드 버퍼 오버런에 취약할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 응용 프로그램에 대 한이 기능을 사용 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 응용 프로그램에 대해이 기능을 사용 하도록 설정 하는 방법을 보여 줍니다.  
   
 ```xml  
 <configuration>  
@@ -78,5 +78,5 @@ ms.locfileid: "32745229"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

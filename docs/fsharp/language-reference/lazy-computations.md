@@ -1,13 +1,13 @@
 ---
-title: 지연 계산(F#)
-description: F# 지연 계산 앱 및 라이브러리의 성능을 향상 시킬 수 있습니다 하는 방법에 대해 알아봅니다.
+title: 지연 계산
+description: 설명 하는 방법 F# 지연 계산에는 앱 및 라이브러리의 성능을 향상 시킬 수 있습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 8afe815f26978de96291a52973d54a9dbcc5eaf2
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 35f4a3f7a88ef1650497e0c943234b3574d13b38
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45698212"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610075"
 ---
 # <a name="lazy-computations"></a>지연 계산
 
@@ -33,7 +33,7 @@ let identifier = lazy ( expression )
 
 지연 계산 하지 않고는 `Lazy` 입력, 시퀀스에도 사용 됩니다. 자세한 내용은 [시퀀스](sequences.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [LazyExtensions 모듈](https://msdn.microsoft.com/library/86671f40-84a0-402a-867d-ae596218d948)

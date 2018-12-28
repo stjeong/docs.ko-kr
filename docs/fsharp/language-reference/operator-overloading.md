@@ -1,13 +1,13 @@
 ---
-title: 연산자 오버로드(F#)
-description: F#의 전역 수준에서 클래스 또는 레코드 형식에 산술 연산자를 오버 로드 하는 방법에 알아봅니다.
+title: 연산자 오버로드
+description: 전역 수준에서 클래스 또는 레코드 형식에 산술 연산자를 오버 로드 하는 방법을 알아봅니다 F#입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 6232ebf215289e6a22b9d77fbd5fa67b82460486
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: c4b52b02522b750aa55ca6cf4097295e35ab1739
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44087301"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610764"
 ---
 # <a name="operator-overloading"></a>연산자 오버로드
 
@@ -47,11 +47,11 @@ static member (~-) (v : Vector)
 
 연산자만 `?` 하 고 `?<-` 로 시작할 수 `?`입니다.
 
-F#의 모든 연산자의 우선 순위를 표시 하는 테이블에서 찾을 수 있습니다 [기호 및 연산자 참조](symbol-and-operator-reference/index.md)합니다.
+모든 연산자의 우선 순위를 보여 주는 테이블이 F# 에서 찾을 수 있습니다 [기호 및 연산자 참조](symbol-and-operator-reference/index.md)합니다.
 
 ## <a name="overloaded-operator-names"></a>오버 로드 된 연산자 이름
 
-F# 컴파일러는 연산자 식 컴파일되면 해당 연산자에 대 한 컴파일러에서 생성 된 이름을 가진 메서드를 생성 합니다. 이 MSIL (Microsoft intermediate language) 방법의 경우에 리플렉션 및 IntelliSense에 표시 되는 이름입니다. 일반적으로 F# 코드에서 이러한 이름을 사용할 필요가 없습니다.
+경우는 F# 컴파일러 컴파일합니다 연산자 식 연산자에 대 한 컴파일러에서 생성 된 이름을 가진 메서드를 생성 합니다. 이 MSIL (Microsoft intermediate language) 방법의 경우에 리플렉션 및 IntelliSense에 표시 되는 이름입니다. 일반적으로에서 이러한 이름을 사용할 필요가 없습니다 F# 코드입니다.
 
 다음 표에서 표준 연산자를 보여 줍니다. 하 고 해당 이름을 생성 했습니다.
 
@@ -151,10 +151,10 @@ F# 컴파일러는 연산자 식 컴파일되면 해당 연산자에 대 한 컴
 
 위 코드의 출력은 `12`합니다.
 
-새로 정의 된 연산자는 기본 제공 연산자 보다 우선적으로 적용 하는 F#에 대 한 범위 지정 규칙 지정 하기 때문에이 방식으로 일반 산술 연산자를 재정의할 수 있습니다.
+규칙에 대 한 범위 지정 하기 때문에이 방식으로 일반 산술 연산자를 재정의할 수 있습니다 F# 는 새로 정의 된 연산자 보다 우선 기본 제공 연산자를 지정 합니다.
 
 키워드 `inline` 호출 코드에 가장 잘 통합 되는 작은 함수는 전역 연산자를 사용 하 여 자주 사용 됩니다. 또한 making 연산자 함수 인라인을 사용 하면 제네릭 정적으로 확인 된 코드를 생성 하기 위해 정적으로 확인 된 형식 매개 변수를 사용 하 여 작업할 수 있도록 합니다. 자세한 내용은 [인라인 함수](functions/inline-functions.md) 하 고 [정적으로 확인 한 형식 매개](generics/statically-resolved-type-parameters.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](members/index.md)

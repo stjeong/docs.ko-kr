@@ -1,13 +1,13 @@
 ---
-title: 인덱싱된 속성(F#)
+title: 인덱싱된 속성
 description: 인덱싱된 속성에 대해 알아봅니다 F#를 정렬 된 데이터에 대 한 배열 유사 액세스를 허용 합니다.
 ms.date: 10/17/2018
-ms.openlocfilehash: 3dac60eba3d9e7a9c3e76ad7ee051e6b30b88636
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 3817290505339803814e981cd5408cd4df6bd283
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "49452250"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611778"
 ---
 # <a name="indexed-properties"></a>인덱싱된 속성
 
@@ -66,6 +66,6 @@ seven seventh eight eighth nine ninth ten tenth
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3302.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](index.md)

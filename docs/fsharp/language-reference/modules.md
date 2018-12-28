@@ -1,17 +1,17 @@
 ---
-title: 모듈(F#)
-description: F# 모듈은 F#와 같은 코드의 값, 형식 및 함수 값을 F# 프로그램을 그룹화 하는 방법에 대해 알아봅니다.
+title: 모듈
+description: 에 대해 알아봅니다 어떻게는 F# 모듈은 그룹의 F# , 값, 형식 및 함수 값 등의 코드는 F# 프로그램입니다.
 ms.date: 04/24/2017
-ms.openlocfilehash: fb0aa1d508d1141933b4fbdf10633f67ed078dc7
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 9e5bef4ffe3301a69bbe32483625652d988f8a35
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45528528"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611115"
 ---
 # <a name="modules"></a>모듈
 
-F# 언어의 컨텍스트에서 *모듈* 값, 형식 및 함수 값을 F# 프로그램 같은 F# 코드의 그룹화입니다. 모듈로 코드를 그룹화하면 관련 코드를 함께 유지하고, 프로그램의 이름 충돌을 방지하는 데 도움이 됩니다.
+컨텍스트에서 F# 언어를 *모듈* 그룹화 한 것 F# , 값, 형식 및 함수 값 등의 코드는 F# 프로그램입니다. 모듈로 코드를 그룹화하면 관련 코드를 함께 유지하고, 프로그램의 이름 충돌을 방지하는 데 도움이 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,7 +26,7 @@ module [accessibility-modifier] module-name =
 
 ## <a name="remarks"></a>설명
 
-F# 모듈은 F# 코드 구문의 형식, 값, 함수 값의 코드 등의 그룹화 `do` 바인딩. 정적 멤버만 있는 공용 언어 런타임 (CLR) 클래스로 구현 됩니다. 모듈 선언에 전체 파일을 모듈에 포함 되는지 여부에 따라 두 가지가: 최상위 모듈 선언 및 로컬 모듈 선언 합니다. 모듈의 전체 파일을 포함 하는 최상위 모듈 선언 합니다. 최상위 모듈 선언 파일의 첫 번째 선언 에서만 나타날 수 있습니다.
+F# 모듈은 그룹의 F# 형식, 값, 함수 값의 코드 등 코드 생성 `do` 바인딩. 정적 멤버만 있는 공용 언어 런타임 (CLR) 클래스로 구현 됩니다. 모듈 선언에 전체 파일을 모듈에 포함 되는지 여부에 따라 두 가지가: 최상위 모듈 선언 및 로컬 모듈 선언 합니다. 모듈의 전체 파일을 포함 하는 최상위 모듈 선언 합니다. 최상위 모듈 선언 파일의 첫 번째 선언 에서만 나타날 수 있습니다.
 
 최상위 모듈 선언에서 선택적 구문에서 *정규화 된 네임 스페이스* 모듈이 들어 있는 중첩 된 네임 스페이스 이름의 시퀀스입니다. 정규화 된 네임 스페이스는 이전에 선언할 필요가 없습니다.
 
@@ -44,7 +44,7 @@ F# 모듈은 F# 코드 구문의 형식, 값, 함수 값의 코드 등의 그룹
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/modules/snippet6603.fs)]
 
-프로젝트 또는 단일 컴파일에서 여러 파일이 있는 경우 또는 라이브러리를 빌드하는 경우 파일의 맨 위에 있는 모듈 선언 또는 네임 스페이스 선언을 포함 해야 합니다. F# 컴파일러만 모듈 이름을 암시적으로 때 결정 프로젝트 또는 컴파일 명령줄에 하나의 파일이 있고 응용 프로그램을 작성 하는 합니다.
+프로젝트 또는 단일 컴파일에서 여러 파일이 있는 경우 또는 라이브러리를 빌드하는 경우 파일의 맨 위에 있는 모듈 선언 또는 네임 스페이스 선언을 포함 해야 합니다. F# 컴파일러만 결정 모듈 이름을 암시적으로 프로젝트 또는 컴파일 명령줄에 하나의 파일이 있고 응용 프로그램을 작성 하는 경우.
 
 *접근성 한정자* 다음 중 하나일 수 있습니다: `public`, `private`, `internal`합니다. 자세한 내용은 [액세스 제어](access-control.md)를 참조하세요. 기본값은 public입니다.
 
@@ -88,7 +88,7 @@ F# 모듈은 F# 코드 구문의 형식, 값, 함수 값의 코드 등의 그룹
 
 ## <a name="recursive-modules"></a>재귀 모듈
 
-F# 4.1 상호 재귀를 모두 포함 된 코드에 대 한 허용 하는 모듈의 개념을 소개 합니다.  이 통해 이루어집니다 `module rec`합니다.  사용 `module rec` 의 종류와 모듈 간의 상호 참조 코드를 쓸 수 없는 몇 가지 문제를 완화할 수 있습니다.  다음은이 예제입니다.
+F#4.1 상호 재귀를 모두 포함 된 코드에 대 한 허용 하는 모듈의 개념을 소개 합니다.  이 통해 이루어집니다 `module rec`합니다.  사용 `module rec` 의 종류와 모듈 간의 상호 참조 코드를 쓸 수 없는 몇 가지 문제를 완화할 수 있습니다.  다음은이 예제입니다.
 
 ```fsharp
 module rec RecursiveModule =
@@ -128,12 +128,12 @@ module rec RecursiveModule =
             | Down -> b |> peelSides
 ```
 
-예외 `DontSqueezeTheBananaException` 및 클래스 `Banana` 모두 서로를 참조 합니다.  또한 모듈 `BananaHelpers` 및 클래스 `Banana` 서로 참조할 수도 있습니다.  하지 않는 것이 제거한 경우 F#에서 표현할 수는 `rec` 키워드는 `RecursiveModule` 모듈입니다.
+예외 `DontSqueezeTheBananaException` 및 클래스 `Banana` 모두 서로를 참조 합니다.  또한 모듈 `BananaHelpers` 및 클래스 `Banana` 서로 참조할 수도 있습니다.  하지 않는 것이에서 표현할 수 F# 를 제거한 경우 합니다 `rec` 키워드를는 `RecursiveModule` 모듈입니다.
 
-이 기능에서 가능한 이기도 [네임 스페이스](namespaces.md) F# 4.1을 사용 하 여 합니다.
+이 기능에서 가능한 이기도 [네임 스페이스](namespaces.md) 와 F# 4.1 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [F# 언어 참조](index.md)  
-- [네임스페이스](namespaces.md)  
-- [F# RFC FS-1009-파일 내에서 더 큰 범위를 통한 상호 참조 형식 및 모듈 허용](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)  
+- [F# 언어 참조](index.md)
+- [네임스페이스](namespaces.md)
+- [F#RFC FS-1009-파일 내에서 더 큰 범위를 통한 상호 참조 형식 및 모듈 허용](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

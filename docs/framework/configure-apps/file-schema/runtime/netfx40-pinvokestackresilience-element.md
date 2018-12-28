@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0cfd8c971edd4537de6e073c49f128f86eb8a042
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 49dc991fd1f30bce6c328725a794750c753145cd
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748999"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613286"
 ---
 # <a name="ltnetfx40pinvokestackresiliencegt-element"></a>&lt;NetFx40_PInvokeStackResilience&gt; 요소
 런타임이 잘못된 플랫폼 호출 선언을 실행 시간에 자동으로 수정할지를 지정합니다. 자동 수정을 수행하는 경우 관리 코드와 비관리 코드 간 전환 속도가 느려집니다.  
@@ -34,14 +34,14 @@ ms.locfileid: "32748999"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`enabled`|필수 특성입니다.<br /><br /> 런타임에서 잘못 된 플랫폼 감지 하는지 여부를 지정 합니다. 호출 선언 및 32 비트 플랫폼에서 런타임 시 스택의 자동으로 해결 합니다.|  
+|`enabled`|필수 특성입니다.<br /><br /> 런타임이 잘못 된 플랫폼 검색 여부를 지정 합니다. 호출 선언 및 32 비트 플랫폼에서 런타임 시 스택의 자동으로 수정 합니다.|  
   
 ## <a name="enabled-attribute"></a>enabled 특성  
   
 |값|설명|  
 |-----------|-----------------|  
-|`0`|런타임에서 사용 하는 빠른 interop 마샬링에 도입 된 아키텍처는 [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], 감지 하지 못한 및 수정 프로그램 잘못 된 플랫폼 호출 선언 합니다. 이 값이 기본값입니다.|  
-|`1`|검색 하 여 잘못 된 플랫폼을 수정 하는 런타임 사용 하 여 느린 전환 호출 선언 합니다.|  
+|`0`|런타임에서 사용 하는 빠른 interop 마샬링에 도입 된 아키텍처는 [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], 검색 하지는 않으며 수정 잘못 된 플랫폼 호출 선언 합니다. 이 값이 기본값입니다.|  
+|`1`|검색 하 고 잘못 된 플랫폼을 수정 하는 런타임을 사용 하 여 느린 전환 호출 선언 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -54,19 +54,19 @@ ms.locfileid: "32748999"
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소를 사용 하면 빠른 interop 마샬링을 실행 시 복원 기능 잘못 된 플랫폼 호출 선언에 대 한 수 있습니다.  
+ 이 요소를 사용 하면 빠른 interop 마샬링을 런타임 시에도 잘못 된 플랫폼 호출 선언에 대 한 수 있습니다.  
   
- 부터는 [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], 합리적인된 interop 마샬링 아키텍처는 관리 코드에서 비관리 코드로 전환에 대 한 성능이 크게 향상을 제공 합니다. .NET Framework의 이전 버전에서 마샬링 계층 검색 잘못 된 플랫폼 32 비트 플랫폼에서 선언 호출과 스택을 자동으로 해결 합니다. 마샬링 새로운 아키텍처는이 단계를 제거 합니다. 결과적으로, 전이 매우 빠르게 있지만 잘못 된 플랫폼 호출 선언 프로그램 오류를 발생 시킬 수 있습니다.  
+ 부터 [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], 간소화 된 interop 마샬링 아키텍처는 관리 코드에서 비관리 코드로 전환 성능이 크게 향상을 제공 합니다. .NET Framework의 이전 버전에서는 마샬링 계층 검색 된 잘못 된 플랫폼 32 비트 플랫폼에서 선언을 호출 하 고 스택의 자동으로 수정 합니다. 새로운 마샬링 아키텍처는이 단계를 제거 합니다. 결과적으로 전이 매우 빠르며 있지만 잘못 된 플랫폼 호출 선언 프로그램 오류를 발생 시킬 수 있습니다.  
   
- 쉽게 개발 하는 동안 잘못 된 선언 검색 Visual Studio 디버깅 환경을 향상 되었습니다. [및](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md) 관리 디버깅 도우미 (MDA) 디버거가 연결 된 응용 프로그램을 실행 하는 경우 하면 잘못 된 플랫폼 호출 선언에 알립니다.  
+ 쉽게 개발 하는 동안 잘못 된 선언을 감지 Visual Studio 디버깅 환경을 향상 되었습니다. 합니다 [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md) MDA (관리 디버깅 도우미) 디버거가 연결 된 응용 프로그램이 실행 중일 때의 잘못 된 플랫폼 호출 선언에 알립니다.  
   
- 응용 프로그램 구성 요소를 다시 컴파일할 수 및 사용할 수 있는 잘못 된 플랫폼 호출 선언를 사용 하는 경우 주소 시나리오에는 `NetFx40_PInvokeStackResilience` 요소입니다. 이 요소와 응용 프로그램 구성 파일에 추가 `enabled="1"` 이전 버전의.NET Framework 느린 전환 비용의 동작과 호환 모드로 opts 합니다. 이전 버전의.NET Framework에 대해 컴파일된 어셈블리는 자동으로이 호환성 모드를 선택 하며 및이 요소가 필요 하지 않습니다.  
+ 응용 프로그램에서 다시 컴파일할 수를 사용할 수 있는 잘못 된 플랫폼 호출 선언, 구성 요소를 사용 하는 경우 시나리오를 처리 하는 `NetFx40_PInvokeStackResilience` 요소입니다. 이 요소를 사용 하 여 응용 프로그램 구성 파일 추가 `enabled="1"` 전환 속도가 느려집니다.NET Framework의 이전 버전의 동작을 사용 하 여 호환성 모드를 옵트인 합니다. 이전 버전의.NET Framework에 대해 컴파일된 어셈블리는 호환성 모드로이 자동으로 옵트인 및이 요소가 필요 하지 않습니다.  
   
 ## <a name="configuration-file"></a>구성 파일  
  이 요소는 응용 프로그램 구성 파일에만 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 잘못 된 복원 기능 향상된을 선택 하도록 플랫폼 호출 사이의 느린 전환 비용 응용 프로그램에 대 한 선언 관리 및 비관리 코드 합니다.  
+ 다음 예제에서는 플랫폼 호출 간 전환 속도가 느려집니다 응용 프로그램에 대 한 선언에 대해 잘못 된 복원 력 증가 옵트인 하는 방법을 코드와 비관리 코드.  
   
 ```xml  
 <configuration>  
@@ -77,6 +77,6 @@ ms.locfileid: "32748999"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md)

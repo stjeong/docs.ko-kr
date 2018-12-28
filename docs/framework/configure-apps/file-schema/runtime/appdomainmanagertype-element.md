@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8fb771d58a99e42ad53a465008e8848cff0a87fd
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5e7f37fd652ce98e24d2e2e99edcd3d59a0e597b
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32743487"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610433"
 ---
 # <a name="ltappdomainmanagertypegt-element"></a>&lt;appDomainManagerType&gt; 요소
 기본 응용 프로그램 도메인용 응용 프로그램 도메인 관리자로 사용되는 유형을 지정합니다.  
@@ -48,20 +48,20 @@ ms.locfileid: "32743487"
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 응용 프로그램 도메인 관리자의 종류를 지정 하려면이 두 요소를 지정 해야 하며 [ \<appDomainManagerAssembly >](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) 요소입니다. 이러한 요소 중 하나를 지정 하지 않은 경우 다른 무시 됩니다.  
+ 응용 프로그램 도메인 관리자의 형식을 지정 하려면이 두 요소를 지정 해야 하며 [ \<appDomainManagerAssembly >](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) 요소입니다. 이러한 요소 중 하나를 지정 하지 않은 경우 다른 무시 됩니다.  
   
- 기본 응용 프로그램 도메인 로드 되 면 <xref:System.TypeLoadException> 지정된 된 형식으로 지정 된 어셈블리에 없는 경우 throw 되는 [ \<appDomainManagerAssembly >](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) 요소로 및에 프로세스 실패 시작 합니다.  
+ 기본 응용 프로그램 도메인 로드 되 면 <xref:System.TypeLoadException> 지정된 된 형식으로 지정 된 어셈블리에 없는 경우 throw 되는 [ \<appDomainManagerAssembly >](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) ; 요소와 프로세스 못함 시작 합니다.  
   
- 기본 응용 프로그램 도메인에 대 한 응용 프로그램 도메인 관리자 유형을 지정 하면 다른 응용 프로그램 도메인은 기본 응용 프로그램 도메인에서 만든 응용 프로그램 도메인 관리자 형식을 상속 합니다. 사용 하 여는 <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType> 및 <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType> 새 응용 프로그램 도메인에 대 한 다른 응용 프로그램 도메인 관리자 유형을 지정 하는 속성입니다.  
+ 기본 응용 프로그램 도메인에 대 한 응용 프로그램 도메인 관리자 종류를 지정 하면 기본 응용 프로그램 도메인에서 만든 응용 프로그램 도메인을 다른 응용 프로그램 도메인 관리자 형식을 상속 합니다. 사용 된 <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType> 및 <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType> 새 응용 프로그램 도메인의 다른 응용 프로그램 도메인 관리자 유형을 지정 하는 속성입니다.  
   
- 응용 프로그램 도메인 관리자 유형을 지정 하는 응용 프로그램이 완전 신뢰 필요 합니다. (예를 들어 데스크톱에서 실행 중인 응용 프로그램에 완전 신뢰.) 응용 프로그램에 완전 신뢰가 없는 경우는 <xref:System.TypeLoadException> throw 됩니다.  
+ 응용 프로그램 도메인 관리자 유형을 지정 하는 응용 프로그램에 완전 신뢰에 필요 합니다. (예를 들어, 데스크톱에서 실행 중인 응용 프로그램에 완전 신뢰) 응용 프로그램에 완전 신뢰가 없는 경우는 <xref:System.TypeLoadException> throw 됩니다.  
   
- 유형 및 네임 스페이스의 형식은 동일한 형식에 사용 되는 <xref:System.Type.FullName%2A?displayProperty=nameWithType> 속성입니다.  
+ 형식 및 네임 스페이스의 형식은 동일한 형식에 사용 되는 여 <xref:System.Type.FullName%2A?displayProperty=nameWithType> 속성입니다.  
   
  이 구성 요소는 에서만 사용할 수는 [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] 이상.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 프로세스의 기본 응용 프로그램 도메인에 대 한 응용 프로그램 도메인 관리자 임을 지정 하는 방법을 보여 줍니다는 `MyMgr` 에 입력 된 `AdMgrExample` 어셈블리입니다.  
+ 다음 예제에서는 프로세스의 기본 응용 프로그램 도메인에 대 한 응용 프로그램 도메인 관리자는 지정 하는 방법을 보여 줍니다 합니다 `MyMgr` 입력을 `AdMgrExample` 어셈블리입니다.  
   
 ```xml  
 <configuration>  
@@ -74,9 +74,9 @@ ms.locfileid: "32743487"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
- [\<appDomainManagerAssembly > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)  
- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [SetAppDomainManagerType 메서드](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
+- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
+- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
+- [\<appDomainManagerAssembly > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)  
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [SetAppDomainManagerType 메서드](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

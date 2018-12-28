@@ -2,12 +2,12 @@
 title: SqlClient 스트리밍 지원
 ms.date: 03/30/2017
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-ms.openlocfilehash: a393274a7cf40b01399c5909c2d5ec4097ec9310
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: eeec8f2a88894762fd8dab93bf0b3b11941ba17a
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152892"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613000"
 ---
 # <a name="sqlclient-streaming-support"></a>SqlClient 스트리밍 지원
 SQL Server 및 응용 프로그램 간의 스트리밍 지원 (새로운 기능 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]) 서버 (문서, 이미지 및 미디어 파일)에서 구조화 되지 않은 데이터를 지원 합니다. SQL Server 데이터베이스를 binary large object (Blob)를 저장할 수 있지만 BLOB를 검색 하는 많은 양의 메모리를 사용할 수 있습니다.  
@@ -326,7 +326,7 @@ GO
   
 -   새로운 비동기 기능과 await 키워드를 사용하여 큰 BLOB를 전송합니다.  
   
--   큰 BLOB의 전송을 취소합니다.  
+-   큰 BLOB의 전송을 취소 합니다.  
   
 -   새로운 비동기 기능을 사용 하 여 다른 하나의 SQL Server에서 스트리밍입니다.  
   

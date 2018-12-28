@@ -1,13 +1,13 @@
 ---
-title: 키워드 참조(F#)
+title: 키워드 참조
 description: 모든 정보에 대 한 링크를 찾습니다는 F# 언어 키워드입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 0016f68b2872183a2b4dd865ce229b6a76250b78
-ms.sourcegitcommit: 2151690e10d91545e2c20d6b5ad222c162b6b83d
+ms.openlocfilehash: 75adc609dc6feeda2be9aa76bbb50b47b3d738ea
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "43856026"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611752"
 ---
 # <a name="keyword-reference"></a>키워드 참조
 
@@ -35,14 +35,14 @@ ms.locfileid: "43856026"
 |`elif`|[조건식: `if...then...else`](conditional-expressions-if-then-else.md)|조건부 분기에 사용 합니다. 약식 형태 `else if`합니다.|
 |`else`|[조건식: `if...then...else`](conditional-expressions-if-then-else.md)|조건부 분기에 사용 합니다.|
 |`end`|[구조체](structures.md)<br /><br />[구별된 공용 구조체](discriminated-unions.md)<br /><br />[레코드](records.md)<br /><br />[형식 확장명](type-extensions.md)<br /><br />[자세한 구문](verbose-syntax.md)|형식 정의에 형식 확장 멤버 정의 섹션의 끝을 나타냅니다.<br /><br />로 시작 하는 코드 블록의 끝을 지정 하는 데 자세한 구문에서은 `begin` 키워드입니다.|
-|`exception`|[예외 처리](exception-handling/index.md)<br /><br />[예외 형식](exception-handling/exception-types.md)|예외 형식을 선언 하는 데 사용 합니다.|
+|`exception`|[Visual C++에서 예외 처리](exception-handling/index.md)<br /><br />[예외 형식](exception-handling/exception-types.md)|예외 형식을 선언 하는 데 사용 합니다.|
 |`extern`|[외부 함수](functions/external-functions.md)|선언 된 프로그램 요소를 다른 어셈블리 또는 이진 파일에 정의 됨을 나타냅니다.|
 |`false`|[기본 형식](primitive-types.md)|부울 리터럴은으로 사용 됩니다.|
 |`finally`|[예외: `try...finally` 식](exception-handling/the-try-finally-expression.md)|와 함께 사용 `try` 예외 발생 여부에 관계 없이 실행 되는 코드 블록을 소개 합니다.|
 |`fixed`|[고정](fixed.md)|에 대 한 포인터를 가비지 수집 되지 않도록 스택에 "고정" 하는 데 사용 합니다.|
 |`for`|[루프: `for...to` 식](loops-for-to-expression.md)<br /><br />[루프: for...in 식](loops-for-in-expression.md)|루프 구문에 사용 합니다.|
-|`fun`|[람다 식:는 `fun` 키워드](functions/lambda-expressions-the-fun-keyword.md)|람다 식, 라고도 익명 함수에에서 사용 합니다.|
-|`function`|[일치 식](match-expressions.md)<br /><br />[람다 식: fun 키워드](functions/lambda-expressions-the-fun-keyword.md)|하는 더 짧은 대체 방법으로 사용 합니다 `fun` 키워드 및 `match` 단일 인수에 패턴 일치를 사용 하는 람다 식 식.|
+|`fun`|[람다 식: `fun` 키워드](functions/lambda-expressions-the-fun-keyword.md)|람다 식, 라고도 익명 함수에에서 사용 합니다.|
+|`function`|[일치 식](match-expressions.md)<br /><br />[람다 식: Fun 키워드](functions/lambda-expressions-the-fun-keyword.md)|하는 더 짧은 대체 방법으로 사용 합니다 `fun` 키워드 및 `match` 단일 인수에 패턴 일치를 사용 하는 람다 식 식.|
 |`global`|[네임스페이스](namespaces.md)|최상위.NET 네임 스페이스를 참조 하는 데 사용 합니다.|
 |`if`|[조건식: `if...then...else`](conditional-expressions-if-then-else.md)|조건부 분기 구문에 사용 합니다.|
 |`in`|[루프: for...in 식](loops-for-in-expression.md)<br /><br />[자세한 구문](verbose-syntax.md)|하는 데 시퀀스 식 및 자세한 구문에서 바인딩 식을 구분 합니다.|
@@ -59,11 +59,11 @@ ms.locfileid: "43856026"
 |`module`|[모듈](modules.md)|사용 그룹을 논리적으로 다른 코드에서 분리 하는 관련된 형식, 값 및 함수에 이름을 연결 합니다.|
 |`mutable`|[let 바인딩](functions/let-bindings.md)|변경할 수 있는 값, 변수를 선언 하는 데 사용 합니다.|
 |`namespace`|[네임스페이스](namespaces.md)|이름이 관련된 형식 및 모듈을 논리적으로 다른 코드에서 분리 그룹과 연결 하는 데 사용 합니다.|
-|`new`|[생성자](members/constructors.md)<br /><br />[제약 조건](generics/constraints.md)|선언, 정의 또는 생성 하거나 개체를 만들 수 있는 생성자를 호출 하는 데 사용 합니다.<br /><br />또한 제네릭 매개 변수 제약 조건에 나타내는 데 형식 특정 생성자를 있어야 합니다.|
+|`new`|[생성자(C++)](members/constructors.md)<br /><br />[제약 조건](generics/constraints.md)|선언, 정의 또는 생성 하거나 개체를 만들 수 있는 생성자를 호출 하는 데 사용 합니다.<br /><br />또한 제네릭 매개 변수 제약 조건에 나타내는 데 형식 특정 생성자를 있어야 합니다.|
 |`not`|[기호 및 연산자 참조](symbol-and-operator-reference/index.md)<br /><br />[제약 조건](generics/constraints.md)|실제로 키워드입니다. 그러나 `not struct` 조합 하 여 제네릭 매개 변수 제약 조건으로 사용 됩니다.|
 |`null`|[Null 값](values/null-values.md)<br /><br />[제약 조건](generics/constraints.md)|개체의 없음을 나타냅니다.<br /><br />제네릭 매개 변수 제약 조건에도 사용 합니다.|
 |`of`|[구별된 공용 구조체](discriminated-unions.md)<br /><br />[대리자](delegates.md)<br /><br />[예외 형식](exception-handling/exception-types.md)|대리자 및 예외 선언 및 범주 값의 형식을 지정 하기 위해 구별 된 공용 구조체에 사용 합니다.|
-|`open`|[가져오기 선언: `open` 키워드](import-declarations-the-open-keyword.md)|네임 스페이스 또는 모듈의 콘텐츠를 한정자 없이 사용할 수 있도록 하는 데 사용 합니다.|
+|`open`|[선언 가져오기: `open` 키워드](import-declarations-the-open-keyword.md)|네임 스페이스 또는 모듈의 콘텐츠를 한정자 없이 사용할 수 있도록 하는 데 사용 합니다.|
 |`or`|[기호 및 연산자 참조](symbol-and-operator-reference/index.md)<br /><br />[제약 조건](generics/constraints.md)|부울 조건을 사용 하 여 부울 값으로 사용할 `or` 연산자입니다. 같음 '||`.<br /><br />또한 멤버 제약 조건을 사용합니다.|
 |`override`|[멤버](members/index.md)|추상 또는 가상 메서드는 기본 버전과에서 다른 버전을 구현 하는 데 사용 합니다.|
 |`private`|[Access Control](access-control.md)|코드에 동일한 형식이 나 모듈 멤버에 대 한 액세스를 제한합니다.|
@@ -74,10 +74,10 @@ ms.locfileid: "43856026"
 |`select`|[쿼리 식](query-expressions.md)|쿼리 식의 필드 또는 추출 하는 열을 지정 하는 데 사용 합니다. 이 실제로 예약어 있지 않으며 적절 한 상황에 맞는 키워드 처럼만 작동 키워드 note 합니다.|
 |`static`|[멤버](members/index.md)|메서드 또는 속성 형식의 인스턴스 없이 호출할 수 있는 형식의 모든 인스턴스 간에 공유 되는 값 멤버를 나타내는 데 사용 합니다.|
 |`struct`|[구조체](structures.md)<br /><br />[제약 조건](generics/constraints.md)|구조체 형식을 선언 하는 데 사용 합니다.<br /><br />제네릭 매개 변수 제약 조건에도 사용 합니다.<br /><br />모듈 정의에 OCaml 호환성을 위해서 사용 합니다.|
-|`then`|[조건식: `if...then...else`](conditional-expressions-if-then-else.md)<br /><br />[생성자](members/constructors.md)|조건부 식에 사용 합니다.<br /><br />또한 개체 생성 후 파생 작업을 수행 하는 데 사용 합니다.|
+|`then`|[조건식: `if...then...else`](conditional-expressions-if-then-else.md)<br /><br />[생성자(C++)](members/constructors.md)|조건부 식에 사용 합니다.<br /><br />또한 개체 생성 후 파생 작업을 수행 하는 데 사용 합니다.|
 |`to`|[루프: `for...to` 식](loops-for-to-expression.md)|에 사용 되는 `for` 루프 범위를 나타냅니다.|
 |`true`|[기본 형식](primitive-types.md)|부울 리터럴은으로 사용 됩니다.|
-|`try`|[예외: try...with 식](exception-handling/the-try-with-expression.md)<br /><br />[: 예외 마지막 식](exception-handling/the-try-finally-expression.md)|예외를 생성할 수 있는 코드 블록을 소개 하는 데 사용 합니다. 함께 사용할 `with` 또는 `finally`합니다.|
+|`try`|[예외: try...with 식](exception-handling/the-try-with-expression.md)<br /><br />[예외: Try... 마지막 식](exception-handling/the-try-finally-expression.md)|예외를 생성할 수 있는 코드 블록을 소개 하는 데 사용 합니다. 함께 사용할 `with` 또는 `finally`합니다.|
 |`type`|[F# 형식](fsharp-types.md)<br /><br />[클래스](classes.md)<br /><br />[레코드](records.md)<br /><br />[구조체](structures.md)<br /><br />[열거형](enumerations.md)<br /><br />[구별된 공용 구조체](discriminated-unions.md)<br /><br />[형식 약어](type-abbreviations.md)<br /><br />[측정 단위](units-of-measure.md)|클래스, 레코드, 구조, 구별 된 공용 구조체, 열거형 형식, 단위를 선언 하거나 약어를 입력 하는 데 사용 합니다.|
 |`upcast`|[캐스팅 및 변환](casting-and-conversions.md)|상위 상속 체인에 있는 형식으로 변환 하는 데 사용 합니다.|
 |`use`|[리소스 관리: `use` 키워드](resource-management-the-use-keyword.md)|대신 사용 `let` 필요로 하는 값에 대 한 `Dispose` 리소스를 호출할 수 있습니다.|
@@ -131,7 +131,7 @@ ms.locfileid: "43856026"
 * `virtual`
 * `volatile`
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [F# 언어 참조](index.md)
 - [기호 및 연산자 참조](symbol-and-operator-reference/index.md)

@@ -1,13 +1,13 @@
 ---
-title: '예외: try...finally 식(F#)'
-description: 에 대해 알아봅니다 어떻게 F# ' try... 마지막 ' 식을 사용 하면 코드 블록에 예외가 발생 하는 경우에 정리 코드를 실행할 수 있습니다.
+title: '예외: try...finally 식'
+description: 에 대해 알아봅니다 하는 방법을 F# ' try... 마지막 ' 식을 사용 하면 코드 블록에 예외가 발생 하는 경우에 정리 코드를 실행할 수 있습니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 546a6b0619de6f51044600dc1ead73c6d5211299
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 24613185818c8ea30b27dcf639b22af320c4b401
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "45970320"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611622"
 ---
 # <a name="exceptions-the-tryfinally-expression"></a>예외: try...finally 식
 
@@ -47,7 +47,7 @@ Exception handled.
 
 계산 식의 컨텍스트에서 시퀀스 식 및 비동기 워크플로 비롯 한 **try... 마지막** 식에는 사용자 지정 구현을 가질 수 있습니다. 자세한 내용은 [계산 식](../computation-expressions.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [예외 처리](index.md)
+- [Visual C++에서 예외 처리](index.md)
 - [예외: `try...with` 식](the-try-with-expression.md)

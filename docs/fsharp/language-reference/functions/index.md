@@ -1,13 +1,13 @@
 ---
-title: 함수(F#)
-description: F# 및 F#에서 지 원하는 방법 일반적인 함수형 프로그래밍 구문도 함수에 알아봅니다.
+title: 함수
+description: 함수에 대 한 자세한 F# 방법과 F# 일반적인 함수형 프로그래밍 구문도 지원 합니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 717eba7e69398048d229173e07ccc376797171bb
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 6e9ef916388745d2dd6874295d06dca656971b3f
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "48839577"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610920"
 ---
 # <a name="functions"></a>함수
 
@@ -142,7 +142,7 @@ F#에서 모든 함수는 값으로 간주됩니다. 사실 이들을 *함수 �
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet112.fs)]
 
-`fun` 키워드를 사용하여 람다 식을 정의합니다. 람다 식은 함수 정의와 유사합니다. 단, `=` 토큰 대신 `->` 토큰이 함수 본문에서 인수 목록을 구분하는 데 사용됩니다. 일반 함수 정의에서와 같이, 인수 형식이 명시적으로 유추되거나 지정될 수 있으며 람다 식의 반환 형식은 본문의 마지막 식 형식에서 유추됩니다. 자세한 내용은 [람다 식: `fun` 키워드](../functions/lambda-expressions-the-fun-keyword.md)를 참조하세요.
+`fun` 키워드를 사용하여 람다 식을 정의합니다. 람다 식은 함수 정의와 유사합니다. 단, `=` 토큰 대신 `->` 토큰이 함수 본문에서 인수 목록을 구분하는 데 사용됩니다. 일반 함수 정의에서와 같이, 인수 형식이 명시적으로 유추되거나 지정될 수 있으며 람다 식의 반환 형식은 본문의 마지막 식 형식에서 유추됩니다. 자세한 내용은 참조 하세요. [람다 식: 합니다 `fun` 키워드](../functions/lambda-expressions-the-fun-keyword.md)합니다.
 
 ## <a name="function-composition-and-pipelining"></a>함수 컴퍼지션 및 파이프라인
 
@@ -202,7 +202,7 @@ let result4 = Pipeline2 2
 
 특정 형식의 메서드는 오버로드할 수 있지만 함수를 오버로드할 수는 없습니다. 자세한 내용은 [메서드](../members/methods.md)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [값](../values/index.md)
 - [F# 언어 참조](../index.md)

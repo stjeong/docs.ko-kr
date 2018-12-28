@@ -1,13 +1,13 @@
 ---
-title: '예외: try...with 식 (F#)'
+title: '예외: try...with 식'
 description: 사용 하는 방법을 알아봅니다는 F# 'try...with' 예외 처리에 대 한 식입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 946cf56f7abc4bd5e3a9f9acc52b868bd6c7f84a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 742e0b595525c69b83a55682c3c8b9b650326ac7
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127409"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614430"
 ---
 # <a name="exceptions-the-trywith-expression"></a>예외: try...with 식
 
@@ -58,6 +58,6 @@ with
 
 ## <a name="see-also"></a>참고 항목
 
-- [예외 처리](index.md)
+- [Visual C++에서 예외 처리](index.md)
 - [예외 형식](exception-types.md)
 - [예외: `try...finally` 식](the-try-finally-expression.md)

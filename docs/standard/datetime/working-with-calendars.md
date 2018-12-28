@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b6f759523acab1a248b92c69b95227b878696bbf
-ms.sourcegitcommit: d6e419f9d9cd7e8f21ebf5acde6d016c16332579
+ms.openlocfilehash: b3cb060d46703e41c4751c92d8a35e0ff7f72976
+ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53286587"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53396957"
 ---
 # <a name="working-with-calendars"></a>달력 작업
 
@@ -138,7 +138,7 @@ ms.locfileid: "53286587"
 달력에서 날짜는 일반적으로 연대로 구분됩니다. 그러나 합니다 <xref:System.Globalization.Calendar> .net에서 클래스, 일정 및 대부분의 정의 된 모든 연대가 지원 하지는 <xref:System.Globalization.Calendar> 클래스에서는 단일 연대만 지원 합니다. <xref:System.Globalization.JapaneseCalendar> 및 <xref:System.Globalization.JapaneseLunisolarCalendar> 클래스에서만 여러 연대가 지원됩니다.
 
 > [!IMPORTANT]
->  새로운 시대에는 <xref:System.Globlalization.JapaneseCalendar> 고 <xref:System.Globalization.JapaneseLunisolarCalendar> 2019 년 5 월 1 일에 시작 합니다. 이 변경에는 이러한 달력을 사용 하는 모든 응용 프로그램에 적용 합니다. 참조 [일본식 달력.net에서의 새로운 시대 처리](https://blogs.msdn.microsoft.com/dotnet/2018/11/14/handling-a-new-era-in-the-japanese-calendar-in-net/) 자세한 내용 및 응용 프로그램에 영향을 받는지 여부를 확인 합니다. 참조 [일본어 연대 변경에 대 한 응용 프로그램 준비](~/windows/uwp/design/globalizing/japanese-era-change) 연대 변경 될 준비가 되었는지 확인 하려면 Windows에서 응용 프로그램 테스트에 대 한 정보에 대 한 합니다.
+>  <xref:System.Globalization.JapaneseCalendar> 및 <xref:System.Globalization.JapaneseLunisolarCalendar>의 새로운 세대가 2019년 5월 1일에 시작합니다. 이번 변경 내용은 달력을 사용하는 모든 애플리케이션에 영향을 줍니다. 자세한 내용 및 현재 애플리케이션이 영향을 받는지 확인하는 방법은 [.NET에서 일본식 달력의 새로운 세대 처리](https://blogs.msdn.microsoft.com/dotnet/2018/11/14/handling-a-new-era-in-the-japanese-calendar-in-net/)를 참조하세요. 참조 [일본어 연대 변경에 대 한 응용 프로그램 준비](/windows/uwp/design/globalizing/japanese-era-change) 연대 변경 될 준비가 되었는지 확인 하려면 Windows에서 응용 프로그램 테스트에 대 한 정보에 대 한 합니다.
 
 ### <a name="eras-and-era-names"></a>연대 및 연대 이름
 

@@ -1,13 +1,13 @@
 ---
-title: 계산 식(F#)
+title: 계산 식
 description: 계산을 작성 하기 위한 편리한 구문을 만드는 방법을 알아봅니다 F# 는 제어할 수 있습니다 수 사용 하 여 시퀀스 및 결합 된 바인딩과 흐름 구문이 구현 되었습니다.
 ms.date: 07/27/2018
-ms.openlocfilehash: b1fee11f68e99e53d19b47bef9eca6298cce2f45
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 79159146e24dc50f851c29e3cf7fffe892c6d196
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53169848"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610699"
 ---
 # <a name="computation-expressions"></a>계산 식
 
@@ -229,7 +229,7 @@ builder.Run(builder.Delay(fun () -> {| cexpr |}))
 
 위의 코드에 대 한 호출에서 `Run` 고 `Delay` 계산 식 작성기 클래스에 정의 되지 않은 경우 생략 됩니다. 여기로 표시, 계산 식의 본문이 `{| cexpr |}`, 다음 표에 설명 된 번역으로 작성기 클래스의 메서드를 포함 하는 호출으로 변환 됩니다. 계산 식 `{| cexpr |}` 가 이러한 변환에 따라 정의 된 재귀적으로 위치 `expr` 는 F# 식 및 `cexpr` 계산 식입니다.
 
-|식|변환|
+|식|이동|
 |----------|-----------|
 |<code>{&#124; let binding in cexpr &#124;}</code>|<code>let binding in {&#124; cexpr &#124;}</code>|
 |<code>{&#124; let! pattern = expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|

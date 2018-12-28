@@ -1,13 +1,13 @@
 ---
-title: 메서드(F#)
-description: 어떻게는 F# 메서드는 노출 기능 및 개체 및 유형의 동작을 구현 하는 데 사용 되는 형식과 연결 된 함수에 알아봅니다.
+title: 메서드
+description: 에 대해 알아봅니다 어떻게는 F# 메서드는 노출 기능 및 개체 및 유형의 동작을 구현 하는 데 사용 되는 형식과 연결 된 함수입니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 02d5a7d22d1ce79a06e15462637c373b33623f61
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 03150cc67f79bfde58cf27e4a9d4dfa9e9ff3f55
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "44253210"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53614027"
 ---
 # <a name="methods"></a>메서드
 
@@ -59,7 +59,7 @@ override self-identifier.method-name parameter-list [ : return-type ] =
 
 ## <a name="instance-methods"></a>인스턴스 메서드
 
-인스턴스 메서드를 사용 하 여 선언 된 `member` 키워드 및 *자체 식별자*고 뒤에 마침표 (.) 및 메서드 이름과 매개 변수. 대/소문자를 있는 그대로 `let` 바인딩 합니다 *매개 변수 목록을* 패턴 일 수 있습니다. 일반적으로 다른.NET Framework 언어에서 생성 될 때 F#에서 메서드를 매개 변수 방식으로 메서드는 튜플 형식에 대 한 괄호 안에 표시 묶습니다. 그러나 일반적인 이기도 커리 된 형식 (공백으로 구분 하 여 매개 변수) 및 다른 패턴도 지원 됩니다.
+인스턴스 메서드를 사용 하 여 선언 된 `member` 키워드 및 *자체 식별자*고 뒤에 마침표 (.) 및 메서드 이름과 매개 변수. 대/소문자를 있는 그대로 `let` 바인딩 합니다 *매개 변수 목록을* 패턴 일 수 있습니다. 표시 된 방식으로 메서드는 튜플 형식에 대 한 괄호 안에 매개 변수의 메서드를 포함 하는 일반적으로 F# 다른.NET Framework 언어로 만들어질 때. 그러나 일반적인 이기도 커리 된 형식 (공백으로 구분 하 여 매개 변수) 및 다른 패턴도 지원 됩니다.
 
 다음 예제에서는 추상이 아닌 인스턴스 메서드를 사용 하 고 정의 보여 줍니다.
 
@@ -97,11 +97,11 @@ override self-identifier.method-name parameter-list [ : return-type ] =
 
 ## <a name="overloaded-methods"></a>오버로드된 메서드
 
-오버 로드 된 메서드는 지정된 된 형식에서 동일한 이름을 갖지만 다른 인수를 포함 하는 메서드입니다. F#에서 선택적 인수가 일반적으로 오버 로드 된 메서드 대신 사용 됩니다. 그러나 오버 로드 된 메서드는 인수는 튜플 형식으로 변환된 하지 형식은 언어에서 허용 됩니다.
+오버 로드 된 메서드는 지정된 된 형식에서 동일한 이름을 갖지만 다른 인수를 포함 하는 메서드입니다. F#, 선택적 인수는 일반적으로 오버 로드 된 메서드 대신 사용 됩니다. 그러나 오버 로드 된 메서드는 인수는 튜플 형식으로 변환된 하지 형식은 언어에서 허용 됩니다.
 
 ## <a name="optional-arguments"></a>선택적 인수
 
-F# 4.1 부터는 할 수도 있습니다는 기본 매개 변수 값을 사용 하 여 선택적 인수 방법에서입니다.  이 C# 코드와의 상호 운용성을 용이 하 게 하는 데 도움이 됩니다.  다음 예에서는 구문을 보여 줍니다.
+부터 F# 4.1 메서드에서 기본 매개 변수 값을 사용 하 여 선택적 인수를 할 수도 있습니다.  이 C# 코드와의 상호 운용성을 용이 하 게 하는 데 도움이 됩니다.  다음 예에서는 구문을 보여 줍니다.
 
 ```fsharp
 // A class with a method M, which takes in an optional integer argument.
@@ -111,12 +111,12 @@ type C() =
 
 에 대 한 값을 전달 하는 참고 `DefaultParameterValue` 입력된 형식과 일치 해야 합니다.  에서는 위 예제에서는 `int`합니다.  에 정수가 아닌 값을 전달 하 려 `DefaultParameterValue` 컴파일 오류를 초래 합니다.
 
-## <a name="example-properties-and-methods"></a>예: 속성 및 메서드
+## <a name="example-properties-and-methods"></a>예제: 속성 및 메서드
 
 다음 예제에서는 형식에 필드, 전용 함수, 속성 및 정적 메서드는 예가 포함 되어 있습니다.
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3406.fs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [멤버](index.md)

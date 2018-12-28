@@ -1,13 +1,13 @@
 ---
-title: '루프: while...do 식(F#)'
+title: '루프: while...do 식'
 description: 참조 하는 방법을... 하는 동안 수행 식은 지정된 된 테스트 조건이 참인 동안 반복 실행 (루프)를 수행 하는데 사용 됩니다.
 ms.date: 05/16/2016
-ms.openlocfilehash: 43e2098ad6c7f103babc2471aebe987040feb989
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d2a77e0bfefe3b6b026012e6b2938ba670326bcf
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127279"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613013"
 ---
 # <a name="loops-whiledo-expression"></a>루프: while...do 식
 
