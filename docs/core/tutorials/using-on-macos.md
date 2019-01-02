@@ -2,14 +2,14 @@
 title: macOS에서 .NET Core 시작
 description: 이 문서에서는 Visual Studio Code를 사용하여 .NET Core 솔루션을 만드는 단계와 워크플로를 제공합니다.
 author: bleroy
-ms.author: mairaw
 ms.date: 03/23/2017
-ms.openlocfilehash: 0e089ff093ee76dbf9c1accda4145bd8b8fc82e6
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: ad403ed96435f162899e600a317d00bab00638f2
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127591"
+ms.locfileid: "53170287"
 ---
 # <a name="getting-started-with-net-core-on-macos"></a>macOS에서 .NET Core 시작
 
@@ -28,7 +28,7 @@ Visual Studio Code 팔레트를 열려면 Visual Studio Code를 열고 <kbd>F1</
 
 ## <a name="getting-started"></a>시작
 
-이 자습서에서는 라이브러리 프로젝트, 해당 라이브러리 프로젝트에 대한 테스트, 라이브러리를 사용하는 콘솔 응용 프로그램 등 프로젝트 3개를 만듭니다. GitHub의 dotnet/samples 리포지토리에서 이 항목에 대한 [소스를 보거나 다운로드](https://github.com/dotnet/samples/tree/master/core/getting-started/golden)할 수 있습니다. 다운로드 지침은 [샘플 및 자습서](../../samples-and-tutorials/index.md#viewing-and-downloading-samples)를 참조하세요.
+이 자습서에서는 라이브러리 프로젝트, 해당 라이브러리 프로젝트에 대한 테스트, 라이브러리를 사용하는 콘솔 애플리케이션 등 프로젝트 3개를 만듭니다. GitHub의 dotnet/samples 리포지토리에서 이 항목에 대한 [소스를 보거나 다운로드](https://github.com/dotnet/samples/tree/master/core/getting-started/golden)할 수 있습니다. 다운로드 지침은 [샘플 및 자습서](../../samples-and-tutorials/index.md#viewing-and-downloading-samples)를 참조하세요.
 
 Visual Studio Code를 시작합니다. <kbd>Ctrl</kbd>+<kbd>\`</kbd> 키(역따옴표 또는 억음 문자)를 누르거나 메뉴에서 **보기 > 통합 터미널**을 선택하여 Visual Studio Code에서 포함된 터미널을 엽니다. Visual Studio Code 외부에서 작업하려는 경우 탐색기 **명령 프롬프트에서 열기** 명령(Mac 또는 Linux에서는 **터미널에서 열기**)을 사용하여 외부 셸을 열 수 있습니다.
 
@@ -172,7 +172,7 @@ dotnet test test-library/test-library.csproj
 
 다음 단계에 따라 만든 콘솔 앱은 이전에 만든 라이브러리 프로젝트에 대한 종속성을 가지며, 실행 시 해당 라이브러리 메서드를 호출합니다. 이 개발 패턴을 사용하면 여러 프로젝트에 재사용 가능한 라이브러리를 만드는 방법을 확인할 수 있습니다.
 
-*golden* 폴더에서 새 콘솔 응용 프로그램을 만듭니다.
+*golden* 폴더에서 새 콘솔 애플리케이션을 만듭니다.
 
 ```console
 dotnet new console -o app
@@ -203,13 +203,13 @@ using static System.Console;
 using Library;
 ```
 
-다음 `dotnet run` 명령을 실행하여 실행 파일을 실행합니다. 여기서 `dotnet run`에 대한 `-p` 옵션은 주 응용 프로그램에 대한 프로젝트를 지정합니다. 앱이 "The answer is 42" 문자열을 생성합니다.
+다음 `dotnet run` 명령을 실행하여 실행 파일을 실행합니다. 여기서 `dotnet run`에 대한 `-p` 옵션은 주 애플리케이션에 대한 프로젝트를 지정합니다. 앱이 "The answer is 42" 문자열을 생성합니다.
 
 ```console
 dotnet run -p app/app.csproj
 ```
 
-## <a name="debug-the-application"></a>응용 프로그램 디버그
+## <a name="debug-the-application"></a>애플리케이션 디버그
 
 `Main` 메서드의 `WriteLine` 문에 중단점을 설정합니다. 이렇게 하려면 `WriteLine` 줄에 커서를 놓고 <kbd>F9</kbd> 키를 누르거나 중단점을 설정할 줄의 왼쪽 여백에서 마우스를 클릭합니다. 코드 줄 옆의 여백에 빨간색 원이 나타납니다. 중단점에 도달하면 중단점 줄이 실행되기 *전에* 코드 실행이 중지됩니다.
 
@@ -217,7 +217,7 @@ Visual Studio Code 도구 모음에서 디버그 아이콘을 선택하거나, �
 
 ![Visual Studio Code 디버거](./media/using-on-macos/vscodedebugger.png)
 
-디버거에서 응용 프로그램을 시작하려면 재생 단추를 누릅니다. 앱이 실행을 시작하고 중단점까지 실행되며, 여기서 중단됩니다. `Get` 메서드를 단계별로 실행하며 올바른 인수를 전달했는지 확인합니다. 응답이 42인지 확인합니다.
+디버거에서 애플리케이션을 시작하려면 재생 단추를 누릅니다. 앱이 실행을 시작하고 중단점까지 실행되며, 여기서 중단됩니다. `Get` 메서드를 단계별로 실행하며 올바른 인수를 전달했는지 확인합니다. 응답이 42인지 확인합니다.
 
 <a name="dotnet-restore-note"></a>
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

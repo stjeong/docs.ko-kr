@@ -1,15 +1,13 @@
 ---
-title: dotnet 명령 - .NET Core CLI
+title: dotnet 명령
 description: dotnet 명령(.NET Core CLI 도구에 대한 일반 드라이버) 및 사용법에 대해 알아봅니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 06/04/2018
-ms.openlocfilehash: 53e8f8bab1cbaabaa7926aa68197c18843b0b637
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 081f295cc71c3cd46de465efb12f131e7b2d36d9
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45615579"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53170853"
 ---
 # <a name="dotnet-command"></a>dotnet 명령
 
@@ -42,7 +40,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `dotnet`은 .NET 소스 코드 및 이진 파일을 관리하기 위한 도구입니다. [`dotnet build`](dotnet-build.md) 및 [`dotnet run`](dotnet-run.md)와 같은 특정 작업을 수행하는 명령을 표시합니다. 각 명령은 자체 인수를 정의합니다. 각 명령 다음에 `--help`를 입력하면 간단한 도움말 설명서에 액세스할 수 있습니다.
 
-`dotnet`은 `dotnet myapp.dll`과 같은 응용 프로그램 DLL을 지정하여 응용 프로그램을 실행하는 데 사용할 수 있습니다. 배포 옵션에 대해 자세히 알아보려면 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요.
+`dotnet`은 `dotnet myapp.dll`과 같은 애플리케이션 DLL을 지정하여 애플리케이션을 실행하는 데 사용할 수 있습니다. 배포 옵션에 대해 자세히 알아보려면 [.NET Core 애플리케이션 배포](../deploying/index.md)를 참조하세요.
 
 ## <a name="options"></a>옵션
 
@@ -62,7 +60,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--fx-version <VERSION>`
 
-응용 프로그램 실행에 사용할 .NET Core 런타임의 버전입니다.
+애플리케이션 실행에 사용할 .NET Core 런타임의 버전입니다.
 
 `-h|--help`
 
@@ -108,7 +106,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--fx-version <VERSION>`
 
-응용 프로그램 실행에 사용할 .NET Core 런타임의 버전입니다.
+애플리케이션 실행에 사용할 .NET Core 런타임의 버전입니다.
 
 `-h|--help`
 
@@ -142,7 +140,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--fx-version <VERSION>`
 
-응용 프로그램 실행에 사용할 .NET Core 런타임의 버전입니다.
+애플리케이션 실행에 사용할 .NET Core 런타임의 버전입니다.
 
 `-h|--help`
 
@@ -170,7 +168,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 | 명령                                       | 함수                                                            |
 | --------------------------------------------- | ------------------------------------------------------------------- |
-| [dotnet build](dotnet-build.md)               | .NET Core 응용 프로그램을 빌드합니다.                                     |
+| [dotnet build](dotnet-build.md)               | .NET Core 애플리케이션을 빌드합니다.                                     |
 | [dotnet build-server](dotnet-build-server.md) | 빌드에서 시작된 서버와 상호 작용합니다.                          |
 | [dotnet clean](dotnet-clean.md)               | 빌드 출력을 정리합니다.                                                |
 | [dotnet help](dotnet-help.md)                 | 명령에 대한 자세한 온라인 설명서를 표시합니다.           |
@@ -178,9 +176,9 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 | [dotnet msbuild](dotnet-msbuild.md)           | MSBuild 명령줄에 대한 액세스 권한을 제공합니다.                        |
 | [dotnet new](dotnet-new.md)                   | 지정한 템플릿에 대해 C# 또는 F# 프로젝트를 초기화합니다.                |
 | [dotnet pack](dotnet-pack.md)                 | 코드의 NuGet 패키지를 만듭니다.                               |
-| [dotnet publish](dotnet-publish.md)           | .NET Framework 종속형 또는 자체 포함 응용 프로그램을 게시합니다. |
-| [dotnet restore](dotnet-restore.md)           | 지정된 응용 프로그램에 대한 종속성을 복원합니다.                  |
-| [dotnet run](dotnet-run.md)                   | 소스에서 응용 프로그램을 실행합니다.                                   |
+| [dotnet publish](dotnet-publish.md)           | .NET Framework 종속형 또는 자체 포함 애플리케이션을 게시합니다. |
+| [dotnet restore](dotnet-restore.md)           | 지정된 애플리케이션에 대한 종속성을 복원합니다.                  |
+| [dotnet run](dotnet-run.md)                   | 소스에서 애플리케이션을 실행합니다.                                   |
 | [dotnet sln](dotnet-sln.md)                   | 솔루션 파일에 프로젝트를 추가, 제거 및 나열하는 옵션입니다.       |
 | [dotnet store](dotnet-store.md)               | 어셈블리를 런타임 패키지 저장소에 저장합니다.                     |
 | [dotnet test](dotnet-test.md)                 | Test Runner를 사용하여 테스트를 실행합니다.                                     |
@@ -189,16 +187,16 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 | 명령                             | 함수                                                            |
 | ----------------------------------- | ------------------------------------------------------------------- |
-| [dotnet build](dotnet-build.md)     | .NET Core 응용 프로그램을 빌드합니다.                                     |
+| [dotnet build](dotnet-build.md)     | .NET Core 애플리케이션을 빌드합니다.                                     |
 | [dotnet clean](dotnet-clean.md)     | 빌드 출력을 정리합니다.                                              |
 | [dotnet help](dotnet-help.md)       | 명령에 대한 자세한 온라인 설명서를 표시합니다.           |
 | [dotnet migrate](dotnet-migrate.md) | 유효한 Preview 2 프로젝트를 .NET Core SDK 1.0 프로젝트로 마이그레이션합니다.  |
 | [dotnet msbuild](dotnet-msbuild.md) | MSBuild 명령줄에 대한 액세스 권한을 제공합니다.                        |
 | [dotnet new](dotnet-new.md)         | 지정한 템플릿에 대해 C# 또는 F# 프로젝트를 초기화합니다.                |
 | [dotnet pack](dotnet-pack.md)       | 코드의 NuGet 패키지를 만듭니다.                               |
-| [dotnet publish](dotnet-publish.md) | .NET Framework 종속형 또는 자체 포함 응용 프로그램을 게시합니다. |
-| [dotnet restore](dotnet-restore.md) | 지정된 응용 프로그램에 대한 종속성을 복원합니다.                  |
-| [dotnet run](dotnet-run.md)         | 소스에서 응용 프로그램을 실행합니다.                                   |
+| [dotnet publish](dotnet-publish.md) | .NET Framework 종속형 또는 자체 포함 애플리케이션을 게시합니다. |
+| [dotnet restore](dotnet-restore.md) | 지정된 애플리케이션에 대한 종속성을 복원합니다.                  |
+| [dotnet run](dotnet-run.md)         | 소스에서 애플리케이션을 실행합니다.                                   |
 | [dotnet sln](dotnet-sln.md)         | 솔루션 파일에 프로젝트를 추가, 제거 및 나열하는 옵션입니다.       |
 | [dotnet store](dotnet-store.md)     | 어셈블리를 런타임 패키지 저장소에 저장합니다.                     |
 | [dotnet test](dotnet-test.md)       | Test Runner를 사용하여 테스트를 실행합니다.                                     |
@@ -207,15 +205,15 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 | 명령                             | 함수                                                            |
 | ----------------------------------- | ------------------------------------------------------------------- |
-| [dotnet build](dotnet-build.md)     | .NET Core 응용 프로그램을 빌드합니다.                                     |
+| [dotnet build](dotnet-build.md)     | .NET Core 애플리케이션을 빌드합니다.                                     |
 | [dotnet clean](dotnet-clean.md)     | 빌드 출력을 정리합니다.                                              |
 | [dotnet migrate](dotnet-migrate.md) | 유효한 Preview 2 프로젝트를 .NET Core SDK 1.0 프로젝트로 마이그레이션합니다.  |
 | [dotnet msbuild](dotnet-msbuild.md) | MSBuild 명령줄에 대한 액세스 권한을 제공합니다.                        |
 | [dotnet new](dotnet-new.md)         | 지정한 템플릿에 대해 C# 또는 F# 프로젝트를 초기화합니다.                |
 | [dotnet pack](dotnet-pack.md)       | 코드의 NuGet 패키지를 만듭니다.                               |
-| [dotnet publish](dotnet-publish.md) | .NET Framework 종속형 또는 자체 포함 응용 프로그램을 게시합니다. |
-| [dotnet restore](dotnet-restore.md) | 지정된 응용 프로그램에 대한 종속성을 복원합니다.                  |
-| [dotnet run](dotnet-run.md)         | 소스에서 응용 프로그램을 실행합니다.                                   |
+| [dotnet publish](dotnet-publish.md) | .NET Framework 종속형 또는 자체 포함 애플리케이션을 게시합니다. |
+| [dotnet restore](dotnet-restore.md) | 지정된 애플리케이션에 대한 종속성을 복원합니다.                  |
+| [dotnet run](dotnet-run.md)         | 소스에서 애플리케이션을 실행합니다.                                   |
 | [dotnet sln](dotnet-sln.md)         | 솔루션 파일에 프로젝트를 추가, 제거 및 나열하는 옵션입니다.       |
 | [dotnet test](dotnet-test.md)       | Test Runner를 사용하여 테스트를 실행합니다.                                     |
 
@@ -271,11 +269,11 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 ## <a name="examples"></a>예제
 
-새 .NET Core 콘솔 응용 프로그램을 만듭니다.
+새 .NET Core 콘솔 애플리케이션을 만듭니다.
 
 `dotnet new console`
 
-지정된 응용 프로그램에 대한 종속성을 복원합니다.
+지정된 애플리케이션에 대한 종속성을 복원합니다.
 
 `dotnet restore`
 
@@ -285,7 +283,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `dotnet build`
 
-`myapp.dll`과 같은 응용 프로그램 DLL을 실행합니다.
+`myapp.dll`과 같은 애플리케이션 DLL을 실행합니다.
 
 `dotnet myapp.dll`
 

@@ -1,19 +1,17 @@
 ---
 title: .NET Core RID(런타임 식별자) 카탈로그
 description: RID(런타임 식별자) 및 .NET Core에서 RID의 사용 방법에 관해 알아봅니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 07/19/2018
-ms.openlocfilehash: ff0449f7c6f878131f0ec4b16d685d2c02d26719
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b801b7866b563ae06499d8ccd2d07cf5fd52b928
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517381"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53170212"
 ---
 # <a name="net-core-rid-catalog"></a>.NET Core RID 카탈로그
 
-RID는 *Runtime IDentifier(런타임 식별자)* 의 약어입니다. RID 값은 응용 프로그램을 실행하는 대상 플랫폼을 식별하는 데 사용됩니다.
+RID는 *Runtime IDentifier(런타임 식별자)* 의 약어입니다. RID 값은 애플리케이션을 실행하는 대상 플랫폼을 식별하는 데 사용됩니다.
 NuGet 패키지에서 .NET 패키지의 플랫폼 관련 자산을 나타내는 데 사용됩니다. RID 값의 예로 `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, `osx.10.12-x64` 등을 들 수 있습니다.
 기본 종속성이 있는 패키지의 경우 RID는 패키지를 복원할 수 있는 플랫폼을 지정합니다.
 
@@ -29,9 +27,9 @@ NuGet 패키지에서 .NET 패키지의 플랫폼 관련 자산을 나타내는 
 
 구체적인 운영 체제를 나타내는 RID는 일반적으로 `[os].[version]-[architecture]-[additional qualifiers]`의 패턴을 따릅니다. 각각은 다음과 같습니다.
 
-- `[os]` - 운영 체제/플랫폼 모니커입니다. 예를 들어, `ubuntu`을 입력합니다.
+- `[os]` - 운영 체제/플랫폼 모니커입니다. 예를 들어 `ubuntu`과 같은 형식입니다.
 
-- `[version]` - 점으로 구분된(`.`) 버전 번호 형식의 운영 체제 버전입니다. 예를 들어, `15.10`을 입력합니다.
+- `[version]` - 점으로 구분된(`.`) 버전 번호 형식의 운영 체제 버전입니다. 예를 들어 `15.10`과 같은 형식입니다.
 
   - 버전은 마케팅 버전이어서는 **안 됩니다**. 마케팅 버전은 종종 다양한 플랫폼 API 노출 영역이 있는 운영 체제의 여러 개별 버전을 나타내기 때문입니다.
 

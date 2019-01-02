@@ -2,14 +2,14 @@
 title: .NET Core 1.0에 대한 패키지 종속성 버전을 관리하는 방법
 description: .NET Core 라이브러리 및 앱에 대한 패키지 종속성 버전 관리에 관해 알아봅니다.
 author: cartermp
-ms.author: mairaw
 ms.date: 06/20/2016
-ms.openlocfilehash: 96d154f045303e32de606475e77ab2e6b4f7bcda
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: seodec18
+ms.openlocfilehash: 7d7133ddb8717db1b830e531955454925c31a728
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33211340"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168613"
 ---
 # <a name="how-to-manage-package-dependency-versions-for-net-core-10"></a>.NET Core 1.0에 대한 패키지 종속성 버전을 관리하는 방법
 
@@ -79,4 +79,4 @@ ms.locfileid: "33211340"
 
 [모든 런타임 패키지 및 1.0에 대한 해당 버전을 나열합니다](https://github.com/dotnet/versions/blob/master/build-info/dotnet/coreclr/release/1.0.0/LKG_Packages.txt).
 
-[모든 .NET Core 응용 프로그램 패키지 및 1.0에 대한 해당 버전을 나열합니다](https://github.com/dotnet/versions/blob/master/build-info/dotnet/core-setup/release/1.0.0/Latest_Packages.txt).
+[모든 .NET Core 애플리케이션 패키지 및 1.0에 대한 해당 버전을 나열합니다](https://github.com/dotnet/versions/blob/master/build-info/dotnet/core-setup/release/1.0.0/Latest_Packages.txt).

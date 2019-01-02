@@ -1,19 +1,19 @@
 ---
 title: Visual Studio for Mac을 사용하여 macOS에서 .NET Core 시작
-description: 이 항목에서는 Mac 및 .NET Core용 Visual Studio를 사용하여 간단한 콘솔 응용 프로그램을 빌드하는 과정을 안내합니다.
+description: 이 항목에서는 Mac 및 .NET Core용 Visual Studio를 사용하여 간단한 콘솔 애플리케이션을 빌드하는 과정을 안내합니다.
 author: guardrex
-ms.author: mairaw
 ms.date: 06/12/2017
-ms.openlocfilehash: f751e7532e9627de3d3733476f7214654089e468
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: 471bdfdaa10b2d66c19177ae36b8bd18ce19e468
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150800"
+ms.locfileid: "53169575"
 ---
 # <a name="getting-started-with-net-core-on-macos-using-visual-studio-for-mac"></a>Visual Studio for Mac을 사용하여 macOS에서 .NET Core 시작
 
-Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요한 전기능 IDE(통합 개발 환경)를 제공합니다. 이 항목에서는 Mac 및 .NET Core용 Visual Studio를 사용하여 간단한 콘솔 응용 프로그램을 빌드하는 과정을 안내합니다.
+Visual Studio for Mac은 .NET Core 애플리케이션 개발을 위해 필요한 전기능 IDE(통합 개발 환경)를 제공합니다. 이 항목에서는 Mac 및 .NET Core용 Visual Studio를 사용하여 간단한 콘솔 애플리케이션을 빌드하는 과정을 안내합니다.
 
 > [!NOTE]
 > 사용자 의견은 매우 중요합니다. Mac용 Visual Studio의 개발 팀에 다음 두 가지 방법으로 의견을 제공할 수 있습니다.
@@ -34,25 +34,25 @@ Visual Studio for Mac은 .NET Core 응용 프로그램 개발을 위해 필요�
 
 1. 시작 화면에서 **새 프로젝트**를 선택합니다.
 
-   ![Visual Studio for Mac 시작 화면의 새 프로젝트 단추](./media/using-on-mac-vs/vsmac1.png)
+   ![Visual Studio for Mac 시작 화면의 새 프로젝트 단추](./media/using-on-mac-vs/visual-studio-mac-new-project.png)
 
-1. **새 프로젝트** 대화 상자에서 **.NET Core** 노드 아래에서 **앱**을 선택합니다. **콘솔 응용 프로그램** 템플릿을 선택하고 **다음**을 선택합니다.
+1. **새 프로젝트** 대화 상자에서 **.NET Core** 노드 아래에서 **앱**을 선택합니다. **콘솔 애플리케이션** 템플릿을 선택하고 **다음**을 선택합니다.
 
-   ![새 프로젝트 템플릿 목록](./media/using-on-mac-vs/vsmac2.png)
+   ![새 프로젝트 템플릿 목록](./media/using-on-mac-vs/visual-studio-mac-new-dialog.png)
 
 1. **프로젝트 이름**으로 "HelloWorld"를 입력합니다. **만들기**를 선택합니다.
 
-   ![새 콘솔 응용 프로그램 대화 상자 구성](./media/using-on-mac-vs/vsmac3.png)
+   ![새 콘솔 애플리케이션 대화 상자 구성](./media/using-on-mac-vs/visual-studio-mac-new-options.png)
 
 1. 프로젝트의 종속성이 복원되는 동안 기다립니다. 프로젝트에는 `Main` 메서드가 있는 `Program` 클래스를 포함하는 C# 파일 *Program.cs*가 있습니다. 앱이 실행되면 `Console.WriteLine` 문은 "Hello World!"를 콘솔에 출력합니다.
 
-   ![Program.cs 파일이 열려 있는 주 창](./media/using-on-mac-vs/vsmac4.png)
+   ![Program.cs 파일이 열려 있는 주 창](./media/using-on-mac-vs/visual-studio-mac-editor.png)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
 <kbd>F5</kbd> 키를 사용하여 디버그 모드에서 또는 <kbd>Ctrl</kbd>+<kbd>F5</kbd>를 사용하여 릴리스 모드에서 이 앱을 실행합니다.
 
-![응용 프로그램 출력 창에 Hello World!가 표시됩니다.](./media/using-on-mac-vs/vsmac5.png)
+![애플리케이션 출력 창에 Hello World!가 표시됩니다.](./media/using-on-mac-vs/visual-studio-mac-output.png)
 
 ## <a name="next-step"></a>다음 단계
 

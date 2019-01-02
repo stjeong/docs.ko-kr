@@ -2,19 +2,18 @@
 title: Visual Studio 2017을 사용하여 Windows에서 완전한 .NET Core 솔루션 구축
 description: Windows의 Visual Studio 2017에서 완전한 .NET Core 솔루션을 구축하는 방법에 관해 알아봅니다.
 author: bleroy
-ms.author: mairaw
 ms.date: 11/16/2016
-ms.custom: vs-dotnet
-ms.openlocfilehash: b3e466511fcae447f5bb54b83f13b25bc90c6539
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: vs-dotnet, seodec18
+ms.openlocfilehash: 0130ae10cc3bac445892faf0f9a18cf2f23dc036
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149954"
+ms.locfileid: "53170524"
 ---
 # <a name="building-a-complete-net-core-solution-on-windows-using-visual-studio-2017"></a>Visual Studio 2017을 사용하여 Windows에서 완전한 .NET Core 솔루션 구축
 
-Visual Studio 2017은 .NET Core 응용 프로그램 개발을 위해 필요한 모든 기능을 갖춘 개발 환경을 제공합니다. 이 문서의 절차에서는 재사용 가능한 라이브러리, 테스트 및 타사 라이브러리 사용을 비롯하여 일반적인 .NET Core 솔루션을 빌드하는 데 필요한 단계를 설명합니다. 
+Visual Studio 2017은 .NET Core 애플리케이션 개발을 위해 필요한 모든 기능을 갖춘 개발 환경을 제공합니다. 이 문서의 절차에서는 재사용 가능한 라이브러리, 테스트 및 타사 라이브러리 사용을 비롯하여 일반적인 .NET Core 솔루션을 빌드하는 데 필요한 단계를 설명합니다. 
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -73,6 +72,6 @@ Visual Studio 2017은 .NET Core 응용 프로그램 개발을 위해 필요한 �
 
 8. 방금 추가한 줄 뒤에 중단점을 설정합니다.
 
-9. F5 키를 눌러 응용 프로그램을 실행합니다.
+9. F5 키를 눌러 애플리케이션을 실행합니다.
 
-   응용 프로그램이 오류 없이 빌드되고 중단점에 도달합니다. 또한 응용 프로그램 출력이 "The answer is 42."인지 확인할 수 있습니다.
+   애플리케이션이 오류 없이 빌드되고 중단점에 도달합니다. 또한 애플리케이션 출력이 "The answer is 42."인지 확인할 수 있습니다.

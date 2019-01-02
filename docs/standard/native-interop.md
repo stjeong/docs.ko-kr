@@ -6,12 +6,12 @@ ms.author: ronpet
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
-ms.openlocfilehash: 2f427eb5d8f41f730d4263425e268213db92236d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 14dfe7639a160af64e925018a4fd9e2bd44d4fe1
+ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143190"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53396814"
 ---
 # <a name="native-interoperability"></a>기본 상호 운용성
 
@@ -32,7 +32,7 @@ ms.locfileid: "53143190"
 
 P/Invoke는 관리 코드에서 관리되지 않는 라이브러리의 구조체, 콜백 및 함수에 액세스할 수 있는 기술입니다. P/Invoke API는 대부분 `System` 및 `System.Runtime.InteropServices`라는 두 네임스페이스에 포함되어 있습니다. 이러한 두 네임스페이스를 사용하면 기본 구성 요소와 통신하는 방법을 설명하는 특성에 액세스할 수 있습니다.
 
-관리 코드에서 관리되지 않는 함수를 호출하는 가장 일반적인 예제에서 시작하겠습니다. 명령줄 응용 프로그램에서 메시지 상자를 표시하겠습니다.
+관리 코드에서 관리되지 않는 함수를 호출하는 가장 일반적인 예제에서 시작하겠습니다. 명령줄 애플리케이션에서 메시지 상자를 표시하겠습니다.
 
 ```csharp
 using System.Runtime.InteropServices;
@@ -59,7 +59,7 @@ public class Program {
 
 예제의 나머지 부분에서는 단순히 다른 관리되는 메서드와 마찬가지로 메서드를 호출합니다.
 
-macOS에 대한 샘플도 이와 비슷합니다. 물론 macOS에서는 다른 동적 라이브러리 명명 체계를 사용하므로 `DllImport` 특성의 라이브러리 이름을 변경해야 합니다. 아래 샘플에서는 `getpid(2)` 함수를 사용하여 응용 프로그램의 프로세스 ID를 가져오고 콘솔에 출력합니다.
+macOS에 대한 샘플도 이와 비슷합니다. 물론 macOS에서는 다른 동적 라이브러리 명명 체계를 사용하므로 `DllImport` 특성의 라이브러리 이름을 변경해야 합니다. 아래 샘플에서는 `getpid(2)` 함수를 사용하여 애플리케이션의 프로세스 ID를 가져오고 콘솔에 출력합니다.
 
 ```csharp
 using System;
@@ -260,7 +260,7 @@ namespace PInvokeSamples {
 
 **마샬링**은 관리되는 경계를 넘어 네이티브로 변환되거나 그 반대로 변환되어야 할 때 형식을 변환하는 프로세스입니다.
 
-마샬링이 필요한 이유는 관리 코드와 비관리 코드의 형식이 서로 다르기 때문입니다. 예를 들어 관리 코드에서는 `String`을 사용하지만 관리되지 않는 환경에서는 문자열이 유니코드(“와이드”), 비유니코드, null 종료, ASCII 등일 수 있습니다. 기본적으로 P/Invoke 하위 시스템은 [기본 동작](../../docs/framework/interop/default-marshaling-behavior.md)에 따라 올바른 작업을 수행하려고 합니다. 그러나 추가 제어가 필요한 경우 [MarshalAs](xref:System.Runtime.InteropServicxes.MarshalAs) 특성을 사용하여 관리되지 않는 쪽에서 필요한 형식을 지정할 수 있습니다. 예를 들어 문자열을 null 종료 ANSI 문자열로 보내려는 경우 다음과 같이 할 수 있습니다.
+마샬링이 필요한 이유는 관리 코드와 비관리 코드의 형식이 서로 다르기 때문입니다. 예를 들어 관리 코드에서는 `String`을 사용하지만 관리되지 않는 환경에서는 문자열이 유니코드(“와이드”), 비유니코드, null 종료, ASCII 등일 수 있습니다. 기본적으로 P/Invoke 하위 시스템은 [기본 동작](../../docs/framework/interop/default-marshaling-behavior.md)에 따라 올바른 작업을 수행하려고 합니다. 그러나 추가 제어가 필요한 경우 [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) 특성을 사용하여 관리되지 않는 쪽에서 필요한 형식을 지정할 수 있습니다. 예를 들어 문자열을 null 종료 ANSI 문자열로 보내려는 경우 다음과 같이 할 수 있습니다.
 
 ```csharp
 [DllImport("somenativelibrary.dll")]

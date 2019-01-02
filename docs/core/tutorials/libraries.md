@@ -2,15 +2,14 @@
 title: 플랫폼 간 도구로 라이브러리 개발
 description: .NET Core CLI 도구를 사용하여 .NET Core 라이브러리를 만드는 방법을 알아봅니다. 여러 프레임워크를 지원하는 라이브러리를 만듭니다.
 author: cartermp
-ms.author: mairaw
 ms.date: 05/01/2017
 ms.custom: seodec18
-ms.openlocfilehash: a8028883b3424588d0fb926dcb73f400a8c620dc
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: f93c39d6225eef180634b238414fcda99750189f
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148537"
+ms.locfileid: "53169367"
 ---
 # <a name="developing-libraries-with-cross-platform-tools"></a>플랫폼 간 도구로 라이브러리 개발
 

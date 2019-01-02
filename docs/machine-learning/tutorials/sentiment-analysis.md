@@ -1,22 +1,22 @@
 ---
 title: 감정 분석 이진 분류 시나리오에서 ML.NET 사용
 description: 감정 예측을 통해 적절한 작업을 수행하는 방법을 이해하기 위해 이진 분류 시나리오에서 ML.NET을 사용하는 방법을 살펴봅니다.
-ms.date: 11/06/2018
+ms.date: 12/20/2018
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: cffce6258685502191e1dd33ef8282d664ea2d4c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 90f3b79226b16ac1ea4cbbe49ce07d95a138323b
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149655"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53779142"
 ---
 # <a name="tutorial-use-mlnet-in-a-sentiment-analysis-binary-classification-scenario"></a>자습서: 감정 분석 이진 분류 시나리오에서 ML.NET 사용
 
 > [!NOTE]
 > 이 항목은 현재 미리 보기로 제공되는 ML.NET을 참조하며, 자료는 변경될 수 있습니다. 자세한 내용은 [ML.NET 소개](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)를 참조하세요.
 
-이 샘플 자습서에서는 ML.NET을 사용하여 Visual Studio 2017에서 C#를 사용하는 .NET Core 콘솔 응용 프로그램을 통해 감정 분류자를 만드는 방법에 대해 설명합니다.
+이 샘플 자습서에서는 ML.NET을 사용하여 Visual Studio 2017에서 C#를 사용하는 .NET Core 콘솔 애플리케이션을 통해 감정 분류자를 만드는 방법에 대해 설명합니다.
 
 이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
@@ -93,7 +93,7 @@ ms.locfileid: "53149655"
 * 이진: A 또는 B.
 * 다중 클래스: 단일 모델을 사용하여 예측할 수 있는 여러 범주.
 
-## <a name="create-a-console-application"></a>콘솔 응용 프로그램 만들기
+## <a name="create-a-console-application"></a>콘솔 애플리케이션 만들기
 
 1. Visual Studio 2017을 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드와 **.NET Core** 노드를 차례로 선택합니다. 그런 다음 **콘솔 앱(.NET Core)** 프로젝트 템플릿을 선택합니다. **이름** 텍스트 상자에 “SentimentAnalysis”를 입력한 다음, **확인** 단추를 선택합니다.
 
@@ -122,7 +122,7 @@ ms.locfileid: "53149655"
 * `_trainDataPath`에는 모델을 학습시키는 데 사용되는 데이터 집합의 경로가 포함됩니다.
 * `_testDataPath`에는 모델을 평가하는 데 사용되는 데이터 집합의 경로가 포함됩니다.
 * `_modelPath`에는 학습된 모델이 저장되는 경로가 포함됩니다.
-* `_reader`는 데이터 세트를 로드하고 변환하는 데 사용되는 <xref:Microsoft.ML.Runtime.Data.TextLoader>입니다.
+* `_textLoader`는 데이터 세트를 로드하고 변환하는 데 사용되는 <xref:Microsoft.ML.Runtime.Data.TextLoader>입니다.
 
 `Main` 메서드 바로 위의 줄에 다음 코드를 추가하여 해당 경로와 `_textLoader` 변수를 지정합니다.
 
@@ -216,7 +216,7 @@ ML.NET의 변환 파이프라인은 학습 또는 테스트 전에 데이터에 
 
 ## <a name="train-the-model"></a>모델 학습
 
-로드되고 변환된 데이터 집합을 기반으로 <xref:Microsoft.ML.Runtime.Data.TransformerChain%601> 모델을 학습시킵니다. 추정기가 정의된 후, 이미 로드된 학습 데이터를 제공하는 동시에 <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit%2A>을 사용하여 모델을 학습시킵니다. 그러면 예측에 사용할 모델이 반환됩니다. `pipeline.Fit()`은 파이프라인을 학습시키고, 전달된 `DataView`에 따라 `Transformer`를 반환합니다. 이 문제가 발생할 때까지 실험이 실행되지 않습니다.
+로드되고 변환된 데이터 집합을 기반으로 <xref:Microsoft.ML.Data.TransformerChain%601> 모델을 학습시킵니다. 추정기가 정의된 후, 이미 로드된 학습 데이터를 제공하는 동시에 <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit%2A>을 사용하여 모델을 학습시킵니다. 그러면 예측에 사용할 모델이 반환됩니다. `pipeline.Fit()`은 파이프라인을 학습시키고, 전달된 `DataView`에 따라 `Transformer`를 반환합니다. 이 문제가 발생할 때까지 실험이 실행되지 않습니다.
 
 `Train` 메서드에 다음 코드를 추가합니다.
 

@@ -2,29 +2,28 @@
 title: 사용자 지정 .NET Core 런타임 호스트 작성
 description: .NET Core 런타임의 작동 방식을 제어해야 하는 고급 시나리오를 지원하기 위해 네이티브 코드에서 .NET Core 런타임을 호스트하는 방법을 알아봅니다.
 author: mjrousos
-ms.author: mairaw
 ms.date: 02/03/2017
 ms.custom: seodec18
-ms.openlocfilehash: 7e30536a27408c529743ef623aa1bb837c327f96
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 861a02d2e409637d11c874f16ecd56a1a0fcd92a
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53146958"
+ms.locfileid: "53169640"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>사용자 지정 .NET Core 호스트를 작성하여 네이티브 코드에서 .NET 런타임 제어
 
-모든 관리 코드와 같이 .NET Core 응용 프로그램은 호스트에서 실행됩니다. 호스트는 런타임(가비지 수집기 및 JIT와 같은 구성 요소 포함)을 시작하고 AppDomain을 만들고 관리 진입점을 호출합니다.
+모든 관리 코드와 같이 .NET Core 애플리케이션은 호스트에서 실행됩니다. 호스트는 런타임(가비지 수집기 및 JIT와 같은 구성 요소 포함)을 시작하고 AppDomain을 만들고 관리 진입점을 호출합니다.
 
-.NET Core 런타임 호스트는 고급 시나리오이며, .NET Core 빌드 프로세스는 .NET Core 응용 프로그램을 실행하는 기본 호스트를 제공하므로 대부분의 경우 .NET Core 개발자는 호스트에 대해 걱정할 필요가 없습니다. 그러나 일부 특수한 경우, 네이티브 프로세스에서 관리 코드를 호출하는 수단으로나 런타임 작동 방식에 대해 더 많은 제어 권한을 얻기 위해 .NET Core 런타임을 명시적으로 호스트한 것이 유용할 수 있습니다.
+.NET Core 런타임 호스트는 고급 시나리오이며, .NET Core 빌드 프로세스는 .NET Core 애플리케이션을 실행하는 기본 호스트를 제공하므로 대부분의 경우 .NET Core 개발자는 호스트에 대해 걱정할 필요가 없습니다. 그러나 일부 특수한 경우, 네이티브 프로세스에서 관리 코드를 호출하는 수단으로나 런타임 작동 방식에 대해 더 많은 제어 권한을 얻기 위해 .NET Core 런타임을 명시적으로 호스트한 것이 유용할 수 있습니다.
 
-이 문서에서는 네이티브 코드에서 .NET Core 런타임을 시작하고 초기 응용 프로그램 도메인(<xref:System.AppDomain>)을 만들고 관리 코드를 실행하는 데 필요한 단계에 대한 개요를 제공합니다.
+이 문서에서는 네이티브 코드에서 .NET Core 런타임을 시작하고 초기 애플리케이션 도메인(<xref:System.AppDomain>)을 만들고 관리 코드를 실행하는 데 필요한 단계에 대한 개요를 제공합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-호스트는 네이티브 응용 프로그램이기 때문에 이 자습서에서는 .NET Core를 호스트하는 C++ 응용 프로그램을 생성을 다룹니다. [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)에서 제공하는 C++ 개발 환경 같은 C++ 개발 환경이 필요합니다.
+호스트는 네이티브 애플리케이션이기 때문에 이 자습서에서는 .NET Core를 호스트하는 C++ 애플리케이션을 생성을 다룹니다. [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)에서 제공하는 C++ 개발 환경 같은 C++ 개발 환경이 필요합니다.
 
-또한 호스트를 테스트할 간단한 .NET Core 응용 프로그램이 필요하므로 [.NET Core SDK](https://www.microsoft.com/net/core)를 설치하고 [소규모 .NET Core 테스트 앱](../../core/tutorials/with-visual-studio.md)(예: 'Hello World' 앱)을 빌드해야 합니다. 새로운 .NET Core 콘솔 프로젝트 템플릿으로 만든 'Hello World' 앱으로 충분합니다.
+또한 호스트를 테스트할 간단한 .NET Core 애플리케이션이 필요하므로 [.NET Core SDK](https://www.microsoft.com/net/core)를 설치하고 [소규모 .NET Core 테스트 앱](../../core/tutorials/with-visual-studio.md)(예: 'Hello World' 앱)을 빌드해야 합니다. 새로운 .NET Core 콘솔 프로젝트 템플릿으로 만든 'Hello World' 앱으로 충분합니다.
 
 이 자습서 및 관련 샘플에서는 Windows 호스트를 빌드합니다. Unix에서 호스트하는 방법에 대해서는 이 문서의 끝에 있는 참고를 참조하세요.
 
@@ -118,7 +117,7 @@ hr = runtimeHost->CreateDelegate(
 [!code-cpp[NetCoreHost#9](../../../samples/core/hosting/host.cpp#9)]
 
 ## <a name="about-hosting-net-core-on-unix"></a>Unix에서.NET Core 호스트에 대한 정보
-.NET Core는 Windows, Linux 및 Mac 운영 체제에서 실행되는 플랫폼 간 제품입니다. 그러나 네이티브 응용 프로그램으로서, 여러 플랫폼의 호스트에는 서로 몇 가지 차이점이 있습니다. 위에서 설명한 `ICLRRuntimeHost2`를 사용하여 런타임을 시작하고 AppDomain을 만들며 관리 코드를 실행하는 프로세스는 지원되는 운영 체제에서 작동되어야 합니다. 그러나 mscoree.h에 정의된 인터페이스는 mscoree가 많은 Win32 가정을 만들기 때문에 Unix 플랫폼에서 사용하기 힘들 수 있습니다.
+.NET Core는 Windows, Linux 및 Mac 운영 체제에서 실행되는 플랫폼 간 제품입니다. 그러나 네이티브 애플리케이션으로서, 여러 플랫폼의 호스트에는 서로 몇 가지 차이점이 있습니다. 위에서 설명한 `ICLRRuntimeHost2`를 사용하여 런타임을 시작하고 AppDomain을 만들며 관리 코드를 실행하는 프로세스는 지원되는 운영 체제에서 작동되어야 합니다. 그러나 mscoree.h에 정의된 인터페이스는 mscoree가 많은 Win32 가정을 만들기 때문에 Unix 플랫폼에서 사용하기 힘들 수 있습니다.
 
 Unix 플랫폼에서 더 간단하게 호스트하기 위해 [coreclrhost.h](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)에서 더 많은 플랫폼 중립적인 호스팅 API 래퍼 집합을 제공합니다.
 
@@ -136,7 +135,7 @@ coreclrhost.h를 사용(mscoree.h 대신 직접적으로)하는 예는 [UnixCore
 7. `coreclr_shutdown`을 사용하여 AppDomain을 언로드하고 런타임을 종료합니다. 
 
 ## <a name="conclusion"></a>결론
-호스트가 빌드되면 명령줄에서 실행하고 호스트에서 예상하는 인수(예: 실행할 관리 앱)를 전달하여 테스트할 수 있습니다. 실행할 호스트에 대해 .NET Core 앱을 지정할 때 `dotnet build`로 생성된 .dll을 사용하세요. 자체 포함된 응용 프로그램에 대해 `dotnet publish`로 생성된 실행 파일이 실제로 기본 .NET Core 호스트이며(앱이 주 시나리오의 명령줄에서 직접 실행될 수 있음), 사용자 코드는 동일한 이름의 DLL로 컴파일됩니다. 
+호스트가 빌드되면 명령줄에서 실행하고 호스트에서 예상하는 인수(예: 실행할 관리 앱)를 전달하여 테스트할 수 있습니다. 실행할 호스트에 대해 .NET Core 앱을 지정할 때 `dotnet build`로 생성된 .dll을 사용하세요. 자체 포함된 애플리케이션에 대해 `dotnet publish`로 생성된 실행 파일이 실제로 기본 .NET Core 호스트이며(앱이 주 시나리오의 명령줄에서 직접 실행될 수 있음), 사용자 코드는 동일한 이름의 DLL로 컴파일됩니다. 
 
 처음에 작동되지 않으면, 호스트가 예상한 위치에서 *coreclr.dll*을 사용할 수 있고, 필요한 프레임워크 라이브러리가 모두 TPA 목록에 있으며 CoreCLR의 비트 수(32비트 또는 64비트)가 호스트가 빌드된 방식과 일치하는지 다시 확인합니다.
 

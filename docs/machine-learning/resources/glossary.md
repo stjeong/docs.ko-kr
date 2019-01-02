@@ -2,13 +2,13 @@
 title: 기계 학습 용어집 - ML.NET
 description: ML.NET에서 사용자 지정 모델을 빌드할 때 유용한 중요한 기계 학습 용어 모음입니다.
 ms.custom: seodec18
-ms.date: 12/06/2018
-ms.openlocfilehash: 4db28a62fccca2e8bedc9f48485a61b6f4ab1801
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 12/20/2018
+ms.openlocfilehash: ac0671bbecda93c411d3be82c789f53beb10fbca
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150578"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53760395"
 ---
 # <a name="machine-learning-glossary-of-important-terms"></a>중요한 용어가 포함된 기계 학습 용어집
 
@@ -24,8 +24,6 @@ ms.locfileid: "53150578"
 
 [이진 분류](#binary-classification)에서 거짓 긍정 비율(x축)을 기준으로 참 긍정 비율(y축)을 표시하는 곡선 아래의 영역 값을 나타내는 평가 메트릭입니다. 범위는 0.5(최악)에서 1(최상)까지입니다. ROC 곡선(수신기 운용 특성 곡선) 아래 영역이라고도 합니다. 자세한 내용은 Wikipedia에서 [Receiver operating characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)(수신기 운영 특성) 문서를 참조하세요.
 
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.Auc?displayProperty=nameWithType>.
-
 ## <a name="binary-classification"></a>이진 분류
 
 [레이블](#label)이 두 클래스 중 하나에만 해당하는 [분류](#classification) 사례입니다. 자세한 내용은 [기계 학습 작업](tasks.md) 항목의 [이진 분류](tasks.md#binary-classification) 섹션을 참조하세요.
@@ -37,8 +35,6 @@ ms.locfileid: "53150578"
 ## <a name="coefficient-of-determination"></a>결정 계수
 
 [회귀](#regression)에서 데이터가 모델에 얼마나 잘 맞는지를 나타내는 평가 메트릭입니다. 범위는 0에서 1까지입니다. 값 0은 데이터가 무작위이거나 모델에 맞지 않음을 의미합니다. 값 1은 모델이 데이터와 정확히 일치함을 의미합니다. 이를 r<sup>2</sup>, R<sup> 2</sup> 또는 r 제곱이라고 합니다.
-
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.RSquared?displayProperty=nameWithType>.
 
 ## <a name="feature"></a>기능
 
@@ -52,8 +48,6 @@ ms.locfileid: "53150578"
 
 [분류](#classification)에서 [정밀도](#precision) 및 [재현율](#recall)을 균형을 맞추는 평가 메트릭입니다.
 
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.F1Score?displayProperty=nameWithType>.
-
 ## <a name="hyperparameter"></a>하이퍼 매개 변수
 
 기계 학습 알고리즘의 매개 변수입니다. 예로는 의사 결정 포리스트에서 학습할 트리 수 또는 그라데이션 하강 알고리즘의 단계 크기가 있습니다. ‘하이퍼 매개 변수’의 값은 모델 학습 전에 설정되고 예측 함수의 매개 변수(예: 의사 결정 트리의 비교 지점 또는 선형 회귀 모델의 가중치)를 찾는 프로세스를 관리합니다. 자세한 내용은 Wikipedia에서 [Hyperparameter](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning))(하이퍼 매개 변수) 문서를 참조하세요.
@@ -66,13 +60,9 @@ ms.locfileid: "53150578"
 
 [분류](#classification)에서 분류자의 정확도를 분류하는 평가 메트릭입니다. 로그 손실이 작을수록 분류자의 정확도가 높아집니다.
 
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.LogLoss?displayProperty=nameWithType>.
-
 ## <a name="mean-absolute-error-mae"></a>MAE(절대 평균 오차)
 
 [회귀](#regression)에서 모든 모델 오차의 평균을 나타내는 평가 메트릭입니다. 여기서 모델 오차는 예측된 [레이블](#label) 값과 올바른 레이블 값 사이의 거리입니다.
-
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.L1?displayProperty=nameWithType>.
 
 ## <a name="model"></a>모델
 
@@ -104,8 +94,6 @@ ms.locfileid: "53150578"
 
 [분류](#classification)에서 클래스의 재현율은 해당 클래스에 속하는 것으로 올바르게 예측된 항목 수를 실제로 클래스에 속하는 총 항목 수로 나눈 값입니다.
 
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.NegativeRecall?displayProperty=nameWithType>, <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.PositiveRecall?displayProperty=nameWithType>.
-
 ## <a name="regression"></a>재발
 
 출력이 실제 값(예: double)인 [감독된 기계 학습](#supervised-machine-learning) 작업입니다. 예로는 재고 가격 예측이 있습니다. 자세한 내용은 [다중 클래스 작업](tasks.md) 항목의 [회귀](tasks.md#regression) 섹션을 참조하세요.
@@ -121,8 +109,6 @@ ms.locfileid: "53150578"
 ## <a name="root-of-mean-squared-error-rmse"></a>RMSE(평균 제곱 오차의 제곱근)
 
 [회귀](#regression)에서 오차 제곱 평균의 제곱근인 평가 메트릭입니다.
-
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.Rms?displayProperty=nameWithType>.
 
 ## <a name="supervised-machine-learning"></a>감독된 기계 학습
 

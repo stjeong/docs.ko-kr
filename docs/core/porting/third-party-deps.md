@@ -2,15 +2,14 @@
 title: .NET Core로 코드를 포팅하기 위해 종속성 분석
 description: .NET Framework에서 .NET Core로 프로젝트를 포팅하기 위해 외부 종속성을 분석하는 방법을 알아봅니다.
 author: cartermp
-ms.author: mairaw
 ms.date: 12/04/2018
 ms.custom: seodec18
-ms.openlocfilehash: 7d18d4c52a37878e160f71aeea4cfd00045fe6b4
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: dce8e6cd4986b15cf926154b378964db4beef398
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53146877"
+ms.locfileid: "53170327"
 ---
 # <a name="analyze-your-dependencies-to-port-code-to-net-core"></a>.NET Core로 코드를 포팅하기 위해 종속성 분석
 
@@ -118,7 +117,7 @@ Visual Studio에서 컴파일러 경고를 제거하는 방법에 대한 자세�
 
 ## <a name="analyze-dependencies-that-arent-nuget-packages"></a>NuGet 패키지가 아닌 종속성 분석
 
-파일 시스템의 DLL처럼, NuGet 패키지가 아닌 종속성이 있을 수 있습니다. 해당 종속성의 이식 가능성을 확인하는 유일한 방법은 [.NET 이식성 분석기](https://github.com/Microsoft/dotnet-apiport)를 실행하는 것입니다. 도구는 .NET Framework를 대상으로 하는 어셈블리를 분석하고 .NET Core와 같은 다른 .NET 플랫폼으로 이식할 수 없는 API를 식별할 수 있습니다. 콘솔 응용 프로그램 또는 [Visual Studio 확장](../../standard/analyzers/portability-analyzer.md)으로 도구를 실행할 수 있습니다.
+파일 시스템의 DLL처럼, NuGet 패키지가 아닌 종속성이 있을 수 있습니다. 해당 종속성의 이식 가능성을 확인하는 유일한 방법은 [.NET 이식성 분석기](https://github.com/Microsoft/dotnet-apiport)를 실행하는 것입니다. 도구는 .NET Framework를 대상으로 하는 어셈블리를 분석하고 .NET Core와 같은 다른 .NET 플랫폼으로 이식할 수 없는 API를 식별할 수 있습니다. 콘솔 애플리케이션 또는 [Visual Studio 확장](../../standard/analyzers/portability-analyzer.md)으로 도구를 실행할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

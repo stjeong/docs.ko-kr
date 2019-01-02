@@ -2,15 +2,15 @@
 title: CLI를 사용하여 .NET Core 시작
 description: .NET Core CLI(명령줄 인터페이스)를 사용하여 Windows, Linux 또는 macOS에서 .NET Core를 시작하는 방법을 보여 주는 단계별 자습서입니다.
 author: cartermp
-ms.author: mairaw
 ms.date: 09/10/2018
 ms.technology: dotnet-cli
-ms.openlocfilehash: 89839596509e1ffabd28b8903600a431b5a0ed9c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: 11d8a4d1841a1d161c4aed233a025813374556d6
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143222"
+ms.locfileid: "53169991"
 ---
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>명령줄을 사용하여 Windows/Linux/macOS에서 .NET Core 시작
 
@@ -38,7 +38,7 @@ $ dotnet run
 
 1. `$ dotnet new console`
 
-   [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  응용 프로그램에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
+   [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  애플리케이션에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
 
    `Hello.csproj`:
 
@@ -46,7 +46,7 @@ $ dotnet run
 
    프로젝트 파일은 종속성을 복원하고 프로그램을 빌드하는 데 필요한 모든 항목을 지정합니다.
 
-   * `OutputType` 태그에서는 실행 파일, 즉 콘솔 응용 프로그램을 빌드하고 있음을 지정합니다.
+   * `OutputType` 태그에서는 실행 파일, 즉 콘솔 애플리케이션을 빌드하고 있음을 지정합니다.
    * `TargetFramework` 태그에서는 대상으로 하는 .NET 구현을 지정합니다. 고급 시나리오에서는 여러 대상 프레임워크를 지정하고 이 모든 프레임워크를 단일 작업으로 빌드할 수 있습니다. 이 자습서에서는 .NET Core 2.1에 대해서만 빌드합니다.
 
    `Program.cs`:
@@ -66,20 +66,20 @@ $ dotnet run
 
 2. `$ dotnet run`
 
-   [`dotnet run`](../tools/dotnet-run.md)은 [`dotnet build`](../tools/dotnet-build.md)를 호출하여 빌드 대상이 빌드되었는지를 확인하고 `dotnet <assembly.dll>`을 호출하여 대상 응용 프로그램을 실행합니다.
+   [`dotnet run`](../tools/dotnet-run.md)은 [`dotnet build`](../tools/dotnet-build.md)를 호출하여 빌드 대상이 빌드되었는지를 확인하고 `dotnet <assembly.dll>`을 호출하여 대상 애플리케이션을 실행합니다.
 
     ```console
     $ dotnet run
     Hello World!
     ```
 
-    또한 [`dotnet build`](../tools/dotnet-build.md)를 실행하여 빌드 콘솔 응용 프로그램을 실행하지 않고 코드를 컴파일할 수도 있습니다. 이로 인해 Windows에서는 `dotnet bin\Debug\netcoreapp2.1\Hello.dll`로, 다른 시스템에서는 `/`로 실행할 수 있는 컴파일된 응용 프로그램이 DLL 파일로 만들어집니다. 이 항목의 뒷부분에서 살펴보겠지만, 응용 프로그램에 인수를 지정할 수도 있습니다.
+    또한 [`dotnet build`](../tools/dotnet-build.md)를 실행하여 빌드 콘솔 애플리케이션을 실행하지 않고 코드를 컴파일할 수도 있습니다. 이로 인해 Windows에서는 `dotnet bin\Debug\netcoreapp2.1\Hello.dll`로, 다른 시스템에서는 `/`로 실행할 수 있는 컴파일된 애플리케이션이 DLL 파일로 만들어집니다. 이 항목의 뒷부분에서 살펴보겠지만, 애플리케이션에 인수를 지정할 수도 있습니다.
     ```console
     $ dotnet bin\Debug\netcoreapp2.1\Hello.dll
     Hello World!
     ```
 
-    고급 시나리오에서는 .NET Core를 설치하지 않아도 되는 컴퓨터에 배포하고 실행할 수 있는 자체 포함된 플랫폼별 파일로 응용 프로그램을 빌드할 수 있습니다. 자세한 내용은 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요.
+    고급 시나리오에서는 .NET Core를 설치하지 않아도 되는 컴퓨터에 배포하고 실행할 수 있는 자체 포함된 플랫폼별 파일로 애플리케이션을 빌드할 수 있습니다. 자세한 내용은 [.NET Core 애플리케이션 배포](../deploying/index.md)를 참조하세요.
 
 ### <a name="augmenting-the-program"></a>프로그램 보강
 
@@ -153,7 +153,7 @@ $ dotnet run
 
 됐습니다! 이제 여기에서 배운 기본 개념을 활용하여 고유의 프로그램을 만들 수 있습니다.
 
-이 자습서에 나와 있는 응용 프로그램 실행을 위한 명령과 단계는 개발하는 동안에만 사용됩니다. 앱을 배포할 준비가 되면 .NET Core 앱에 대한 여러 [배포 전략](../deploying/index.md) 및 [ `dotnet publish` ](../tools/dotnet-publish.md) 명령을 살펴볼 수 있습니다.
+이 자습서에 나와 있는 애플리케이션 실행을 위한 명령과 단계는 개발하는 동안에만 사용됩니다. 앱을 배포할 준비가 되면 .NET Core 앱에 대한 여러 [배포 전략](../deploying/index.md) 및 [ `dotnet publish` ](../tools/dotnet-publish.md) 명령을 살펴볼 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

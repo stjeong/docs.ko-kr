@@ -2,15 +2,14 @@
 title: Windows 호환성 팩을 사용하여 코드를 .NET Core로 포팅
 description: Windows 호환 기능 팩 및 이를 사용하여 기존 .NET Framework 코드를 .NET Core로 이식하는 방법에 대해 알아보기
 author: terrajobst
-ms.author: mairaw
 ms.date: 11/13/2017
 ms.custom: seodec18
-ms.openlocfilehash: 42c2c2a0b9b00436fa5c17d3825c720561b3f122
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 0a409c953ce38ed4c2959adaf4de9d3730ce37f4
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144613"
+ms.locfileid: "53169939"
 ---
 # <a name="use-the-windows-compatibility-pack-to-port-code-to-net-core"></a>Windows 호환성 팩을 사용하여 코드를 .NET Core로 포팅
 
@@ -54,7 +53,7 @@ Windows 전용을 포함하는 약 20,000 개의 API와 다음과 같은 기술 
 
 3. Windows에서 유지하려는 경우 모두 준비되었습니다.
 
-4. Linux 또는 macOS에서 .NET Core 응용 프로그램 또는 .NET Standard 라이브러리를 실행하려는 경우 [API 분석기](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)를 사용하여 플랫폼 간에 작동하지 않는 API의 사용량을 찾습니다.
+4. Linux 또는 macOS에서 .NET Core 애플리케이션 또는 .NET Standard 라이브러리를 실행하려는 경우 [API 분석기](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)를 사용하여 플랫폼 간에 작동하지 않는 API의 사용량을 찾습니다.
 
 5. 이러한 API의 사용량을 제거하거나 플랫폼 간 대체 방법으로 바꾸거나 다음과 같은 플랫폼 검사를 사용하여 보호합니다.
 

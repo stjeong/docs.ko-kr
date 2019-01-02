@@ -2,7 +2,7 @@
 
 |   |   |
 |---|---|
-|설명|.NET Framework 4.6부터 <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=name> 또는 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=name>가 누락된 '알려진 형식'으로 인해 직렬화 또는 역직렬화에 실패하는 경우 지정된 예외 메시지는 명확해졌습니다.|
+|세부 정보|.NET Framework 4.6부터 <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=name> 또는 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=name>가 누락된 '알려진 형식'으로 인해 직렬화 또는 역직렬화에 실패하는 경우 지정된 예외 메시지는 명확해졌습니다.|
 |제안 해결 방법|앱은 특정 예외 메시지를 사용하지 않아야 합니다. 앱이 이 메시지를 사용하는 경우 새 메시지를 사용하도록 업데이트하거나 예외 형식에서만 사용하도록 변경하는 것이 좋습니다.|
 |범위|Microsoft Edge|
 |버전|4.6|

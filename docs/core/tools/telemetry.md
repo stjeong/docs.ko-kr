@@ -2,14 +2,14 @@
 title: .NET Core SDK 원격 분석
 description: 어떤 데이터가 수집되고 수집 기능을 사용하지 않도록 설정하는 방법에 대한 분석을 위해 사용 정보를 수집하는 .NET Core SDK 원격 분석 기능을 살펴봅니다.
 author: richlander
-ms.author: mairaw
 ms.date: 06/20/2018
-ms.openlocfilehash: c8c6688b7b29c7e65c723e1f1ff31b3bd4c8c1ff
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: 8b0b546d70eab837c2e075f839990870ae9ea6b1
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129144"
+ms.locfileid: "53168847"
 ---
 # <a name="net-core-sdk-telemetry"></a>.NET Core SDK 원격 분석
 
@@ -81,7 +81,7 @@ ms.locfileid: "53129144"
 
 &#8225;일반적으로 *지리* 열에는 국가 이름이 표시됩니다. 경우에 따라 연구원이 남극에서 .NET Core를 사용하거나 위치 데이터가 정확하지 않아 남극 대륙이 이 열에 표시됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 | 타임스탬프      | 발생 | 명령 | 지리 | OSFamily | RuntimeID     | OSVersion | SDKVersion |
 | -------------- | ----------- | ------- | --------- | -------- | ------------- | --------- | ---------- |

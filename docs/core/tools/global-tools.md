@@ -2,20 +2,20 @@
 title: .NET Core Global Tool
 description: .NET Core Global Tool의 개요와 사용 가능한 .NET Core CLI 명령입니다.
 author: KathleenDollard
-ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 077ffd53f1ba2988c80a637aaa109a66139736b0
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.custom: seodec18
+ms.openlocfilehash: 3bbf1e7953482dc07f05570443cf640a9fab6258
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34697094"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53170852"
 ---
 # <a name="net-core-global-tools-overview"></a>.NET Core Global Tool 개요
 
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
-.NET Core Global Tool은 콘솔 응용 프로그램을 포함하는 특별한 NuGet 패키지입니다. Global Tool은 컴퓨터에서 PATH 환경 변수 또는 사용자 지정 위치에 포함된 기본 위치에 설치할 수 있습니다.
+.NET Core Global Tool은 콘솔 애플리케이션을 포함하는 특별한 NuGet 패키지입니다. Global Tool은 컴퓨터에서 PATH 환경 변수 또는 사용자 지정 위치에 포함된 기본 위치에 설치할 수 있습니다.
 
 .NET Core Global Tool을 사용하려는 경우:
 
@@ -109,14 +109,14 @@ dotnet <command> --help
 
 ### <a name="what-could-go-wrong"></a>발생 가능한 문제
 
-Global Tool은 [프레임워크 종속 응용 프로그램](../deploying/index.md#framework-dependent-deployments-fdd)입니다. 즉, 컴퓨터에 설치된 .NET Core 런타임에 의존합니다. 예상된 런타임을 찾을 수 없으면 다음과 같은 일반적인 .NET Core 런타임 롤포워드 규칙을 따릅니다.
+Global Tool은 [프레임워크 종속 애플리케이션](../deploying/index.md#framework-dependent-deployments-fdd)입니다. 즉, 컴퓨터에 설치된 .NET Core 런타임에 의존합니다. 예상된 런타임을 찾을 수 없으면 다음과 같은 일반적인 .NET Core 런타임 롤포워드 규칙을 따릅니다.
 
-* 응용 프로그램은 지정된 주 및 부 버전의 가장 높은 패치 릴리스로 롤포워드합니다.
+* 애플리케이션은 지정된 주 및 부 버전의 가장 높은 패치 릴리스로 롤포워드합니다.
 * 일치하는 주 및 부 버전 번호와 일치하는 런타임이 없으면 다음으로 높은 부 버전이 사용됩니다.
 * 런타임의 미리 보기 버전 간 또는 미리 보기 버전과 릴리스 버전 간에는 롤포워드가 발생하지 않습니다. 따라서 미리 보기 버전을 사용하여 만든 Global Tool은 작성자가 다시 빌드하여 다시 게시하고 다시 설치해야 합니다.
 * .NET Core 2.1 미리 보기 1에서 만든 Global Tool에서 추가 문제가 발생할 수 있습니다. 자세한 내용은 [.NET Core 2.1 미리 보기 2 알려진 문제](https://github.com/dotnet/core/blob/master/release-notes/2.1/Preview/2.1.0-preview2-known-issues.md)를 참조하세요.
 
-응용 프로그램이 적절한 런타임을 찾을 수 없으면 실행에 실패하고 오류를 보고합니다.
+애플리케이션이 적절한 런타임을 찾을 수 없으면 실행에 실패하고 오류를 보고합니다.
 
 발생할 수 있는 또 다른 문제는 이전 미리 보기에서 만들어진 Global Tool이 현재 설치된 .NET Core 런타임으로 실행되지 않는 경우입니다. 다음 명령을 사용하여 컴퓨터에 설치된 런타임을 확인할 수 있습니다.
 
