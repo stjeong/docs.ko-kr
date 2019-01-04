@@ -1,15 +1,14 @@
 ---
-title: dotnet vstest 명령 - .NET Core CLI
+title: dotnet vstest 명령
 description: dotnet vtest 명령은 프로젝트와 모든 종속성을 빌드합니다.
 author: guardrex
-ms.author: mairaw
 ms.date: 05/30/2018
-ms.openlocfilehash: 84b9d9eebfbf20fefe8153dd3ae9bec0f34986c8
-ms.sourcegitcommit: bbf70abe6b46073148f78cbf0619de6092b5800c
+ms.openlocfilehash: cafd862f6107be9173aad6d610cf6f8fd62e1489
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34696340"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169030"
 ---
 # <a name="dotnet-vstest"></a>dotnet vstest
 
@@ -44,7 +43,7 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 ## <a name="description"></a>설명
 
-`dotnet-vstest` 명령은 `VSTest.Console` 명령줄 응용 프로그램을 실행하여 자동화된 단위 및 코딩된 UI 응용 프로그램 테스트를 실행합니다.
+`dotnet-vstest` 명령은 `VSTest.Console` 명령줄 애플리케이션을 실행하여 자동화된 단위 및 코딩된 UI 애플리케이션 테스트를 실행합니다.
 
 ## <a name="arguments"></a>인수
 

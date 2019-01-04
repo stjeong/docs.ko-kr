@@ -1,16 +1,15 @@
 ---
-title: WCF svcutil 도구 개요 - .NET Core
+title: WCF svcutil 도구 개요
 description: .NET Framework 프로젝트용 WCF svcutil 도구와 유사하게, .NET Core 및 ASP.NET Core 프로젝트 기능을 추가하는 Microsoft WCF dotnet-svcutil 도구에 대한 개요입니다.
 author: mlacouture
-ms.author: jralexander
 ms.date: 08/20/2018
 ms.custom: seodec18
-ms.openlocfilehash: 7372d88a9c1d77ec0b77e9d82fe5b24ebc357a74
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e42ec0d4072c56456c824a814f1b383ea70a9307
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126018"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53237261"
 ---
 # <a name="wcf-dotnet-svcutil-tool-for-net-core"></a>.NET Core용 WCF dotnet-svcutil 도구
 
@@ -30,7 +29,7 @@ WCF(Windows Communication Foundation) **dotnet-svcutil** 도구는 네트워크 
 
 ## <a name="getting-started"></a>시작
 
-다음 예제에서는 .NET Core 콘솔 프로젝트에 웹 서비스 참조를 추가하고 서비스를 호출하는 데 필요한 단계를 안내합니다. _HelloSvcutil_이라는 .NET Core 콘솔 응용 프로그램을 만들고 다음 계약을 구현하는 웹 서비스에 대한 참조를 추가합니다.
+다음 예제에서는 .NET Core 콘솔 프로젝트에 웹 서비스 참조를 추가하고 서비스를 호출하는 데 필요한 단계를 안내합니다. _HelloSvcutil_이라는 .NET Core 콘솔 애플리케이션을 만들고 다음 계약을 구현하는 웹 서비스에 대한 참조를 추가합니다.
 
 ```csharp
 [ServiceContract]
@@ -95,12 +94,12 @@ static void Main(string[] args)
 }
 ```
 
-8. 다음과 같이 [`dotnet run`](../tools/dotnet-run.md) 명령을 사용하여 응용 프로그램을 실행합니다.
+8. 다음과 같이 [`dotnet run`](../tools/dotnet-run.md) 명령을 사용하여 애플리케이션을 실행합니다.
 
 ```console
 dotnet run
 ```
-“Hello dotnet-svcutil!” 출력이 표시됩니다.
+다음과 같은 내용이 출력됩니다. "Hello dotnet-svcutil!"
 
 `dotnet-svcutil` 도구 매개 변수에 대한 자세한 설명을 보려면 다음과 같이 help 매개 변수를 전달하는 도구를 호출합니다.
 

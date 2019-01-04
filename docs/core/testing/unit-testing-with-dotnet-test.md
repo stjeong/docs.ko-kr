@@ -4,12 +4,13 @@ description: dotnet test 및 xUnit을 사용하여 샘플 솔루션을 단계별
 author: ardalis
 ms.author: wiwagn
 ms.date: 11/29/2017
-ms.openlocfilehash: 560ba58076fedbb1174da2cfe93796030aa9d46f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.custom: seodec18
+ms.openlocfilehash: af2ae5e1b0f9e6146975c6838cca8b22837bb012
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507832"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168990"
 ---
 # <a name="unit-testing-c-in-net-core-using-dotnet-test-and-xunit"></a>dotnet 테스트 및 xUnit을 사용하여 .NET Core에서 C# 단위 테스트
 
@@ -151,7 +152,7 @@ public bool IsPrime(int candidate)
 
 ## <a name="adding-more-features"></a>더 많은 기능 추가
 
-이제 하나의 테스트를 통과했으므로 더 작성할 수 있습니다. 소수에 대한 몇 가지 다른 간단한 사례가 있습니다(0, -1). 이러한 사례를 `[Fact]` 특성과 함께 새 테스트로 추가할 수도 있지만, 이렇게 하면 금방 지루해질 수 있습니다. 유사한 테스트 모음을 작성하는 데 사용할 수 있는 다른 xUnit 특성이 있습니다.
+이제 하나의 테스트를 통과했으므로 더 작성할 수 있습니다. 소수에 대한 몇 가지 다른 간단한 사례가 있습니다 (0, -1). 이러한 사례를 `[Fact]` 특성과 함께 새 테스트로 추가할 수도 있지만, 이렇게 하면 금방 지루해질 수 있습니다. 유사한 테스트 모음을 작성하는 데 사용할 수 있는 다른 xUnit 특성이 있습니다.
 
 - `[Theory]`는 같은 코드를 실행하지만, 다른 입력 인수가 포함된 테스트 모음을 나타냅니다.
 

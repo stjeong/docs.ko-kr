@@ -1,15 +1,13 @@
 ---
-title: dotnet publish 명령 - .NET Core CLI
+title: dotnet publish 명령
 description: dotnet publish 명령은 .NET Core 프로젝트를 디렉터리에 게시합니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 17bacc92eea90072b95b2d42a87cb57e9fa0be67
-ms.sourcegitcommit: 3b1cb8467bd73dee854b604e306c0e7e3882d91a
+ms.openlocfilehash: 353adfcbb0479e4a951b900f06327e23a3414225
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "43511426"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169783"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -17,7 +15,7 @@ ms.locfileid: "43511426"
 
 ## <a name="name"></a>name
 
-`dotnet publish` - 호스팅 시스템에 배포하기 위해 응용 프로그램 및 해당 종속성을 폴더에 압축합니다.
+`dotnet publish` - 호스팅 시스템에 배포하기 위해 애플리케이션 및 해당 종속성을 폴더에 압축합니다.
 
 ## <a name="synopsis"></a>개요
 
@@ -43,14 +41,14 @@ dotnet publish [-h|--help]
 
 ## <a name="description"></a>설명
 
-`dotnet publish`는 응용 프로그램을 컴파일하고 프로젝트 파일에 지정된 종속성을 읽은 다음 결과 파일 집합을 디렉터리에 게시합니다. 출력에는 다음과 같은 자산이 포함됩니다.
+`dotnet publish`는 애플리케이션을 컴파일하고 프로젝트 파일에 지정된 종속성을 읽은 다음 결과 파일 집합을 디렉터리에 게시합니다. 출력에는 다음과 같은 자산이 포함됩니다.
 
 * *dll* 확장과 함께 어셈블리의 IL(중간 언어) 코드
 * 프로젝트의 종속성을 모두 포함하는 *.deps.json* 파일
-* 런타임에 대한 기타 구성 옵션(예: 가비지 수집 유형)뿐만 아니라 응용 프로그램에서 예상하는 공유 런타임을 지정하는 *.runtime.config.json* 파일
-* 응용 프로그램의 종속성은 NuGet 캐시에서 출력 폴더로 복사됩니다.
+* 런타임에 대한 기타 구성 옵션(예: 가비지 수집 유형)뿐만 아니라 애플리케이션에서 예상하는 공유 런타임을 지정하는 *.runtime.config.json* 파일
+* 애플리케이션의 종속성은 NuGet 캐시에서 출력 폴더로 복사됩니다.
 
-`dotnet publish` 명령의 출력이 실행을 위해 호스팅 시스템(예: 서버, PC, Mac, 랩톱)에 배포할 준비가 되었습니다. 이는 배포를 위해 응용 프로그램을 준비하는 데 공식적으로 지원되는 유일한 방법입니다. 프로젝트에서 지정하는 배포 유형에 따라 호스팅 시스템에 .NET Core 공유 런타임이 설치되어 있을 수도 있고 그렇지 않을 수도 있습니다. 자세한 내용은 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요. 게시된 응용 프로그램의 디렉터리 구조에 대해서는 [디렉터리 구조](/aspnet/core/hosting/directory-structure)를 참조하세요.
+`dotnet publish` 명령의 출력이 실행을 위해 호스팅 시스템(예: 서버, PC, Mac, 랩톱)에 배포할 준비가 되었습니다. 이는 배포를 위해 애플리케이션을 준비하는 데 공식적으로 지원되는 유일한 방법입니다. 프로젝트에서 지정하는 배포 유형에 따라 호스팅 시스템에 .NET Core 공유 런타임이 설치되어 있을 수도 있고 그렇지 않을 수도 있습니다. 자세한 내용은 [.NET Core 애플리케이션 배포](../deploying/index.md)를 참조하세요. 게시된 애플리케이션의 디렉터리 구조에 대해서는 [디렉터리 구조](/aspnet/core/hosting/directory-structure)를 참조하세요.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
@@ -70,7 +68,7 @@ dotnet publish [-h|--help]
 
 `-f|--framework <FRAMEWORK>`
 
-지정한 [대상 프레임워크](../../standard/frameworks.md)에 대한 응용 프로그램을 게시합니다. 프로젝트 파일에 대상 프레임워크를 지정해야 합니다.
+지정한 [대상 프레임워크](../../standard/frameworks.md)에 대한 애플리케이션을 게시합니다. 프로젝트 파일에 대상 프레임워크를 지정해야 합니다.
 
 `--force`
 
@@ -103,11 +101,11 @@ dotnet publish [-h|--help]
 
 `--self-contained`
 
-대상 컴퓨터에 런타임을 설치할 필요가 없도록 응용 프로그램을 통해 .NET Core 런타임을 게시합니다. 런타임 식별자를 지정할 경우 기본값은 `true`입니다. 다른 배포 형식에 대한 자세한 내용은 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요.
+대상 컴퓨터에 런타임을 설치할 필요가 없도록 애플리케이션을 통해 .NET Core 런타임을 게시합니다. 런타임 식별자를 지정할 경우 기본값은 `true`입니다. 다른 배포 형식에 대한 자세한 내용은 [.NET Core 애플리케이션 배포](../deploying/index.md)를 참조하세요.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-지정된 런타임에 대한 응용 프로그램을 게시합니다. [SCD(자체 포함 배포_](../deploying/index.md#self-contained-deployments-scd)를 만들 때 사용됩니다. RID(런타임 식별자) 목록은 [RID 카탈로그](../rid-catalog.md)를 참조하세요. 기본값은 [FDD(프레임워크 종속 배포)](../deploying/index.md#framework-dependent-deployments-fdd)를 게시하는 것입니다.
+지정된 런타임에 대한 애플리케이션을 게시합니다. [SCD(자체 포함 배포_](../deploying/index.md#self-contained-deployments-scd)를 만들 때 사용됩니다. RID(런타임 식별자) 목록은 [RID 카탈로그](../rid-catalog.md)를 참조하세요. 기본값은 [FDD(프레임워크 종속 배포)](../deploying/index.md#framework-dependent-deployments-fdd)를 게시하는 것입니다.
 
 `-v|--verbosity <LEVEL>`
 
@@ -125,7 +123,7 @@ dotnet publish [-h|--help]
 
 `-f|--framework <FRAMEWORK>`
 
-지정한 [대상 프레임워크](../../standard/frameworks.md)에 대한 응용 프로그램을 게시합니다. 프로젝트 파일에 대상 프레임워크를 지정해야 합니다.
+지정한 [대상 프레임워크](../../standard/frameworks.md)에 대한 애플리케이션을 게시합니다. 프로젝트 파일에 대상 프레임워크를 지정해야 합니다.
 
 `--force`
 
@@ -154,11 +152,11 @@ dotnet publish [-h|--help]
 
 `--self-contained`
 
-대상 컴퓨터에 런타임을 설치할 필요가 없도록 응용 프로그램을 통해 .NET Core 런타임을 게시합니다. 런타임 식별자를 지정할 경우 기본값은 `true`입니다. 다른 배포 형식에 대한 자세한 내용은 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요.
+대상 컴퓨터에 런타임을 설치할 필요가 없도록 애플리케이션을 통해 .NET Core 런타임을 게시합니다. 런타임 식별자를 지정할 경우 기본값은 `true`입니다. 다른 배포 형식에 대한 자세한 내용은 [.NET Core 애플리케이션 배포](../deploying/index.md)를 참조하세요.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-지정된 런타임에 대한 응용 프로그램을 게시합니다. [SCD(자체 포함 배포_](../deploying/index.md#self-contained-deployments-scd)를 만들 때 사용됩니다. RID(런타임 식별자) 목록은 [RID 카탈로그](../rid-catalog.md)를 참조하세요. 기본값은 [FDD(프레임워크 종속 배포)](../deploying/index.md#framework-dependent-deployments-fdd)를 게시하는 것입니다.
+지정된 런타임에 대한 애플리케이션을 게시합니다. [SCD(자체 포함 배포_](../deploying/index.md#self-contained-deployments-scd)를 만들 때 사용됩니다. RID(런타임 식별자) 목록은 [RID 카탈로그](../rid-catalog.md)를 참조하세요. 기본값은 [FDD(프레임워크 종속 배포)](../deploying/index.md#framework-dependent-deployments-fdd)를 게시하는 것입니다.
 
 `-v|--verbosity <LEVEL>`
 
@@ -176,7 +174,7 @@ dotnet publish [-h|--help]
 
 `-f|--framework <FRAMEWORK>`
 
-지정한 [대상 프레임워크](../../standard/frameworks.md)에 대한 응용 프로그램을 게시합니다. 프로젝트 파일에 대상 프레임워크를 지정해야 합니다.
+지정한 [대상 프레임워크](../../standard/frameworks.md)에 대한 애플리케이션을 게시합니다. 프로젝트 파일에 대상 프레임워크를 지정해야 합니다.
 
 `-h|--help`
 
@@ -193,7 +191,7 @@ dotnet publish [-h|--help]
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-지정된 런타임에 대한 응용 프로그램을 게시합니다. [SCD(자체 포함 배포_](../deploying/index.md#self-contained-deployments-scd)를 만들 때 사용됩니다. RID(런타임 식별자) 목록은 [RID 카탈로그](../rid-catalog.md)를 참조하세요. 기본값은 [FDD(프레임워크 종속 배포)](../deploying/index.md#framework-dependent-deployments-fdd)를 게시하는 것입니다.
+지정된 런타임에 대한 애플리케이션을 게시합니다. [SCD(자체 포함 배포_](../deploying/index.md#self-contained-deployments-scd)를 만들 때 사용됩니다. RID(런타임 식별자) 목록은 [RID 카탈로그](../rid-catalog.md)를 참조하세요. 기본값은 [FDD(프레임워크 종속 배포)](../deploying/index.md#framework-dependent-deployments-fdd)를 게시하는 것입니다.
 
 `-v|--verbosity <LEVEL>`
 
@@ -211,7 +209,7 @@ dotnet publish [-h|--help]
 
 `dotnet publish`
 
-지정된 프로젝트 파일을 사용하여 응용 프로그램을 게시합니다.
+지정된 프로젝트 파일을 사용하여 애플리케이션을 게시합니다.
 
 `dotnet publish ~/projects/app1/app1.csproj`
 
@@ -219,11 +217,11 @@ dotnet publish [-h|--help]
 
 `dotnet publish --framework netcoreapp1.1`
 
-`netcoreapp1.1` 프레임워크 및 `OS X 10.10`에 대한 런타임을 사용하여 현재 응용 프로그램을 게시합니다. 프로젝트 파일에서 이 RID를 나열해야 합니다.
+`netcoreapp1.1` 프레임워크 및 `OS X 10.10`에 대한 런타임을 사용하여 현재 애플리케이션을 게시합니다. 프로젝트 파일에서 이 RID를 나열해야 합니다.
 
 `dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`
 
-현재 응용 프로그램을 게시하지만 프로젝트 간(P2P) 참조를 복원하지 않습니다. 복원 작업 중 루트 프로젝트만 복원합니다(.NET Core SDK 2.0 이상 버전).
+현재 애플리케이션을 게시하지만 프로젝트 간(P2P) 참조를 복원하지 않습니다. 복원 작업 중 루트 프로젝트만 복원합니다(.NET Core SDK 2.0 이상 버전).
 
 `dotnet publish --no-dependencies`
 

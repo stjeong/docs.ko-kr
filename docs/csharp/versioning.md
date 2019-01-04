@@ -3,12 +3,12 @@ title: C# 버전 관리 - C# 가이드
 description: C# 및 .NET에서 버전 관리의 작동 방식 이해
 ms.date: 01/08/2017
 ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
-ms.openlocfilehash: af81e5a8ad3165ce99a823f8b263cc798d5b6d2c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a0c75e2f1397f43fadf91d145e8b63de1d4d90eb
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183232"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53243493"
 ---
 # <a name="versioning-in-c"></a>C#으로 버전 관리 #
 
@@ -34,7 +34,7 @@ SemVer에 대한 가장 기본적인 접근법은 3개 구성 요소 형식 `MAJ
 ### <a name="backwards-compatibility"></a>이전 버전과의 호환성
 
 라이브러리의 새 버전을 릴리스하면 이전 버전과의 호환성이 주요 관심사 중 하나가 될 것입니다.
-이전 버전에 종속된 코드가 다시 컴파일할 때 새 버전과 작동하는 경우, 라이브러리의 새 버전은 이전 버전과 소스가 호환됩니다. 이전 버전을 사용하는 응용 프로그램이 다시 컴파일하지 않고도 새 버전과 작동하는 경우 라이브러리의 새 버전은 이진 호환됩니다.
+이전 버전에 종속된 코드가 다시 컴파일할 때 새 버전과 작동하는 경우, 라이브러리의 새 버전은 이전 버전과 소스가 호환됩니다. 이전 버전을 사용하는 애플리케이션이 다시 컴파일하지 않고도 새 버전과 작동하는 경우 라이브러리의 새 버전은 이진 호환됩니다.
 
 라이브러리 이전 버전과의 호환성을 유지하고자 할 경우 다음 사항을 고려해야 합니다.
 
@@ -49,7 +49,7 @@ SemVer에 대한 가장 기본적인 접근법은 3개 구성 요소 형식 `MAJ
 
 라이브러리의 새 버전으로 업그레이드하는 방법이 쉬울수록 사용자가 더 빨리 업그레이드할 가능성이 높아집니다.
 
-### <a name="application-configuration-file"></a>응용 프로그램 구성 파일
+### <a name="application-configuration-file"></a>애플리케이션 구성 파일
 
 .NET 개발자는 대부분의 프로젝트 형식에서 [`app.config` 파일](../framework/configure-apps/file-schema/index.md)을 발견할 가능성이 매우 높습니다.
 이 간단한 구성 파일은 새로운 업데이트 출시를 개선하는 데 큰 도움이 될 수 있습니다. 일반적으로 라이브러리를 설계할 때 정기적으로 변경될 가능성이 있는 정보를 `app.config` 파일에 저장하도록 해야 합니다. 이렇게 하면 해당 정보가 업데이트될 때 라이브러리를 다시 컴파일하지 않고 이전 버전의 구성 파일을 새로운 파일로 바꾸기만 하면 됩니다.

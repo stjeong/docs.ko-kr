@@ -1,15 +1,13 @@
 ---
-title: dotnet new 명령 - .NET Core CLI
+title: dotnet new 명령
 description: dotnet new 명령은 지정된 템플릿을 기반으로 새 .NET Core 프로젝트를 만듭니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 10/24/2018
-ms.openlocfilehash: a8d486f569f31d68d5659ac6a80d615474ef2506
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3a10aaa93af57e7beb86771e7d3b00b06fca14b2
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53131484"
+ms.locfileid: "53169691"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -67,7 +65,7 @@ dotnet new [-h|--help]
 
 |템플릿 설명                          | 템플릿 이름    | 언어     |
 |----------------------------------------------|------------------|---------------|
-| 콘솔 응용 프로그램                          | `console`        | [C#], F#, VB  |
+| 콘솔 애플리케이션                          | `console`        | [C#], F#, VB  |
 | 클래스 라이브러리                                | `classlib`       | [C#], F#, VB  |
 | 단위 테스트 프로젝트                            | `mstest`         | [C#], F#, VB  |
 | xUnit 테스트 프로젝트                           | `xunit`          | [C#], F#, VB  |
@@ -94,7 +92,7 @@ dotnet new [-h|--help]
 
 |템플릿 설명                          | 템플릿 이름 | 언어     |
 |----------------------------------------------|---------------|---------------|
-| 콘솔 응용 프로그램                          | `console`     | [C#], F#, VB  |
+| 콘솔 애플리케이션                          | `console`     | [C#], F#, VB  |
 | 클래스 라이브러리                                | `classlib`    | [C#], F#, VB  |
 | 단위 테스트 프로젝트                            | `mstest`      | [C#], F#, VB  |
 | xUnit 테스트 프로젝트                           | `xunit`       | [C#], F#, VB  |
@@ -119,7 +117,7 @@ dotnet new [-h|--help]
 
 |템플릿 설명  | 템플릿 이름 | 언어 |
 |----------------------|---------------|-----------|
-| 콘솔 응용 프로그램  | `console`     | [C#], F#  |
+| 콘솔 애플리케이션  | `console`     | [C#], F#  |
 | 클래스 라이브러리        | `classlib`    | [C#], F#  |
 | 단위 테스트 프로젝트    | `mstest`      | [C#], F#  |
 | xUnit 테스트 프로젝트   | `xunit`       | [C#], F#  |
@@ -319,7 +317,7 @@ dotnet new [-h|--help]
 
 `--tenant-id <ID>` - 연결할 디렉터리의 TenantId ID입니다. `SingleOrg` 인증과 함께 사용합니다. 기본값은 `22222222-2222-2222-2222-222222222222`입니다.
 
-`-r|--org-read-access` - 디렉터리에 대한 이 응용 프로그램 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
+`-r|--org-read-access` - 디렉터리에 대한 이 애플리케이션 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
 
 `--exclude-launch-settings` - 생성된 템플릿에서 *launchSettings.json*을 제외합니다.
 
@@ -356,9 +354,9 @@ dotnet new [-h|--help]
 
 `--tenant-id <ID>` - 연결할 디렉터리의 TenantId ID입니다. `SingleOrg` 인증과 함께 사용합니다. 기본값은 `22222222-2222-2222-2222-222222222222`입니다.
 
-`--callback-path <PATH>` - 리디렉션 URI의 응용 프로그램 기본 경로 내 요청 경로입니다. `SingleOrg` 또는 `IndividualB2C` 인증과 함께 사용합니다. 기본값은 `/signin-oidc`입니다.
+`--callback-path <PATH>` - 리디렉션 URI의 애플리케이션 기본 경로 내 요청 경로입니다. `SingleOrg` 또는 `IndividualB2C` 인증과 함께 사용합니다. 기본값은 `/signin-oidc`입니다.
 
-`-r|--org-read-access` - 디렉터리에 대한 이 응용 프로그램 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
+`-r|--org-read-access` - 디렉터리에 대한 이 애플리케이션 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
 
 `--exclude-launch-settings` - 생성된 템플릿에서 *launchSettings.json*을 제외합니다.
 
@@ -429,7 +427,7 @@ dotnet new [-h|--help]
 
 `--tenant-id <ID>` - 연결할 디렉터리의 TenantId ID입니다. `SingleOrg` 인증과 함께 사용합니다. 기본값은 `22222222-2222-2222-2222-222222222222`입니다.
 
-`-r|--org-read-access` - 디렉터리에 대한 이 응용 프로그램 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
+`-r|--org-read-access` - 디렉터리에 대한 이 애플리케이션 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
 
 `--use-launch-settings` - 생성된 템플릿 출력에 *launchSettings.json*을 포함합니다.
 
@@ -464,9 +462,9 @@ dotnet new [-h|--help]
 
 `--tenant-id <ID>` - 연결할 디렉터리의 TenantId ID입니다. `SingleOrg` 인증과 함께 사용합니다. 기본값은 `22222222-2222-2222-2222-222222222222`입니다.
 
-`--callback-path <PATH>` - 리디렉션 URI의 응용 프로그램 기본 경로 내 요청 경로입니다. `SingleOrg` 또는 `IndividualB2C` 인증과 함께 사용합니다. 기본값은 `/signin-oidc`입니다.
+`--callback-path <PATH>` - 리디렉션 URI의 애플리케이션 기본 경로 내 요청 경로입니다. `SingleOrg` 또는 `IndividualB2C` 인증과 함께 사용합니다. 기본값은 `/signin-oidc`입니다.
 
-`-r|--org-read-access` - 디렉터리에 대한 이 응용 프로그램 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
+`-r|--org-read-access` - 디렉터리에 대한 이 애플리케이션 읽기 액세스를 허용합니다. `SingleOrg` 또는 `MultiOrg` 인증에만 적용됩니다.
 
 `--use-launch-settings` - 생성된 템플릿 출력에 *launchSettings.json*을 포함합니다.
 
@@ -508,7 +506,7 @@ dotnet new [-h|--help]
 
 ## <a name="examples"></a>예제
 
-현재 디렉터리에 F# 콘솔 응용 프로그램 프로젝트를 만듭니다.
+현재 디렉터리에 F# 콘솔 애플리케이션 프로젝트를 만듭니다.
 
 `dotnet new console -lang F#`
 
@@ -516,11 +514,11 @@ dotnet new [-h|--help]
 
 `dotnet new classlib -lang VB -o MyLibrary`
 
-인증 없이 현재 디렉터리에 새 ASP.NET Core C# MVC 응용 프로그램 프로젝트를 만듭니다.
+인증 없이 현재 디렉터리에 새 ASP.NET Core C# MVC 애플리케이션 프로젝트를 만듭니다.
 
 `dotnet new mvc -au None`
 
-새 xUnit 응용 프로그램을 만듭니다.
+새 xUnit 애플리케이션을 만듭니다.
 
 `dotnet new xunit`
 
@@ -528,7 +526,7 @@ MVC에 대해 사용할 수 있는 모든 템플릿을 나열합니다.
 
 `dotnet new mvc -l`
 
-ASP.NET Core용 단일 페이지 응용 프로그램 템플릿 버전 2.0을 설치합니다(.NET Core SDK 1.1 및 이후 버전에서만 사용할 수 있는 명령 옵션).
+ASP.NET Core용 단일 페이지 애플리케이션 템플릿 버전 2.0을 설치합니다(.NET Core SDK 1.1 및 이후 버전에서만 사용할 수 있는 명령 옵션).
 
 `dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0`
 

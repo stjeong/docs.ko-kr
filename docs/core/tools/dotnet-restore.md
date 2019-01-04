@@ -1,15 +1,13 @@
 ---
-title: dotnet restore 명령 - .NET Core CLI
+title: dotnet restore 명령
 description: dotnet restore 명령을 사용하여 종속성 및 프로젝트 관련 도구를 복원하는 방법을 알아봅니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 504a0621beb8aea961133d2cc6d287ce17051c1c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6f54671fcd1c17d2466d5a38027e02da5e7494e9
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127331"
+ms.locfileid: "53170784"
 ---
 # <a name="dotnet-restore"></a>dotnet restore
 
@@ -164,6 +162,8 @@ dotnet restore [-h|--help]
 `--verbosity <LEVEL>`
 
 명령의 세부 정보 표시 수준을 설정합니다. 허용되는 값은 `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, `diag[nostic]`입니다.
+
+---
 
 ## <a name="examples"></a>예제
 

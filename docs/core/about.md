@@ -2,14 +2,13 @@
 title: .NET Core 정보
 description: .NET Core에 대한 자세히 알아봅니다.
 author: richlander
-ms.author: mairaw
 ms.date: 08/01/2018
-ms.openlocfilehash: 93619fce58a3b3aa94e6c14fc7cfeb1b0bf48272
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 39381a44332cbd920fdd2cb5f6707be4fcb6bcfd
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126980"
+ms.locfileid: "53170407"
 ---
 # <a name="about-net-core"></a>.NET Core 정보
 
@@ -17,15 +16,15 @@ ms.locfileid: "53126980"
 
 - **플랫폼 간:** Windows, macOS 및 Linux [운영 체제](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md)에서 실행됩니다.
 - **아키텍처 간에 일관됨:** x64, x86 및 ARM을 비롯한 여러 아키텍처에서 동일한 동작을 사용하여 코드를 실행합니다.
-- **명령줄 도구:** 로컬 개발 및 연속 통합 시나리오에서 사용할 수 있는 편리한 명령줄 도구를 포함합니다.
-- **유연한 배포:** 앱이나 설치된 side-by-side사용자 또는 시스템 수준에 포함할 수 있습니다. [Docker 컨테이너](docker/index.md)에서 사용될 수 있습니다.
+- **명령줄 도구:**  로컬 개발 및 연속 통합 시나리오에서 사용할 수 있는 편리한 명령줄 도구를 포함합니다.
+- **유연한 배포:** 앱이나 설치된 side-by-side 사용자 또는 머신 수준에 포함할 수 있습니다. [Docker 컨테이너](docker/index.md)에서 사용될 수 있습니다.
 - **호환 가능:** .NET Core는 [.NET Standard](../standard/net-standard.md)를 통해 .NET Framework, Xamarin 및 Mono와 호환됩니다.
 - **오픈 소스:** .NET Core 플랫폼은 MIT 및 Apache 2 라이선스를 사용하는 오픈 소스입니다. .NET Core는 [.NET Foundation](https://dotnetfoundation.org/) 프로젝트입니다.
 - **Microsoft에서 지원됨:** .NET Core는 [.NET Core 지원](https://www.microsoft.com/net/core/support/)에 따라 Microsoft에서 지원됩니다.
 
 ## <a name="languages"></a>언어
 
-C#, Visual Basic 및 F# 언어를 사용하여 .NET Core에 대한 응용 프로그램 및 라이브러리를 작성할 수 있습니다. 이러한 언어는 [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text 및 Vim을 비롯한 즐겨찾는 텍스트 편집기 및 IDE에 통합될 수 있습니다. 이 통합은 [OmniSharp](https://www.omnisharp.net/) 및 [Ionide](http://ionide.io) 프로젝트의 적합한 담당자에 의해 부분적으로 제공됩니다.
+C#, Visual Basic 및 F# 언어를 사용하여 .NET Core에 대한 애플리케이션 및 라이브러리를 작성할 수 있습니다. 이러한 언어는 [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text 및 Vim을 비롯한 즐겨찾는 텍스트 편집기 및 IDE에 통합될 수 있습니다. 이 통합은 [OmniSharp](https://www.omnisharp.net/) 및 [Ionide](http://ionide.io) 프로젝트의 적합한 담당자에 의해 부분적으로 제공됩니다.
 
 ## <a name="apis"></a>API
 
@@ -52,7 +51,7 @@ C#, Visual Basic 및 F# 언어를 사용하여 .NET Core에 대한 응용 프로
 .NET Core는 다음과 같은 부분으로 구성됩니다.
 
 - [.NET Core 런타임](https://github.com/dotnet/coreclr)은 형식 시스템, 어셈블리 로드, 가비지 수집기, 네이티브 interop 및 기타 기본 서비스를 제공합니다. [.NET Core 프레임워크 라이브러리](https://github.com/dotnet/corefx)는 기본 데이터 형식, 앱 구성 형식 및 기본 유틸리티를 제공합니다.
-- [ASP.NET 런타임](https://github.com/aspnet/home)은 웹앱, IoT 앱 및 모바일 백 엔드와 같이 최신 클라우드 기반 인터넷 연결 응용 프로그램을 빌드하는 프레임워크를 제공합니다.
+- [ASP.NET 런타임](https://github.com/aspnet/home)은 웹앱, IoT 앱 및 모바일 백 엔드와 같이 최신 클라우드 기반 인터넷 연결 애플리케이션을 빌드하는 프레임워크를 제공합니다.
 - .NET Core 개발자 환경을 사용할 수 있도록 하는 [.NET Core CLI 도구](https://github.com/dotnet/cli) 및 언어 컴파일러([Roslyn](https://github.com/dotnet/roslyn) 및 [F#](https://github.com/microsoft/visualfsharp))입니다.
 - [dotnet 도구](https://github.com/dotnet/core-setup)는 .NET Core 앱 및 CLI 도구를 시작하는 데 사용됩니다. 이 호스트는 런타임을 선택하고 런타임을 호스트하며 어셈블리 로드 정책을 제공하고 앱 및 도구를 시작합니다.
 

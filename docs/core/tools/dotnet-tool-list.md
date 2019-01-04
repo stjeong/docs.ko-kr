@@ -1,15 +1,13 @@
 ---
-title: dotnet tool list 명령 - .NET Core CLI
+title: dotnet tool list 명령
 description: dotnet tool list 명령은 컴퓨터에서 지정한 .NET Core Global Tool을 나열합니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: e2bea974207d3098ed67b69ed16a72a03c44cd8b
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 0c17534beb80ed87a8f260342b0f82882a9e17b6
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841244"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169765"
 ---
 # <a name="dotnet-tool-list"></a>dotnet tool list
 

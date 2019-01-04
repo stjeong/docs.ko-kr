@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1c6e1db7d1edacfd0ce8770b9cc7b7f3f9c8ca2a
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 7bfa35b8361f154fcbaa2ea7d7f8ddff5321003d
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025323"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610438"
 ---
 # <a name="asynchronous-file-io"></a>비동기 파일 I/O
 
@@ -40,7 +40,7 @@ C# 및 Visual Basic에는 각각 비동기 프로그래밍을 위한 다음 두 
 
 - 비동기 메서드의 결과에 적용되는`Await` (Visual Basic) 또는 `await` (C#) 연산자.
 
-비동기 I/O 작업을 구현하려면 다음 예제와 같이 이러한 키워드를 비동기 메서드와 함께 사용합니다. 자세한 내용은 [Async 및 Await를 사용한 비동기 프로그래밍](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7)을 참조하세요.
+비동기 I/O 작업을 구현하려면 다음 예제와 같이 이러한 키워드를 비동기 메서드와 함께 사용합니다. 자세한 내용은 [async 및 await를 사용한 비동기 프로그래밍(C#)](../../csharp/programming-guide/concepts/async/index.md) 또는 [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md)을 참조하세요.
 
 다음 예제에서는 두 가지 <xref:System.IO.FileStream> 개체를 사용하여 한 디렉터리에서 다른 디렉터리로 파일을 비동기적으로 복사하는 방법을 보여 줍니다. <xref:System.Web.UI.WebControls.Button.Click> 컨트롤에 대한 <xref:System.Windows.Controls.Button> 이벤트 처리기는 비동기 메서드를 호출하므로 `async` 한정자로 표시됩니다.
 
@@ -62,5 +62,6 @@ C# 및 Visual Basic에는 각각 비동기 프로그래밍을 위한 다음 두 
 ## <a name="see-also"></a>참고 항목
 
 - <xref:System.IO.Stream>
-- [파일 및 스트림 I/O](../../../docs/standard/io/index.md)
-- [Async 및 Await를 사용한 비동기 프로그래밍](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7)
+- [파일 및 스트림 I/O](index.md)
+- [async 및 await를 사용한 비동기 프로그래밍(C#)](../../csharp/programming-guide/concepts/async/index.md)
+- [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3f6ad77f93236b524e1cd22bf895312920ca4eec
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 72cf3e2e60f27ed4faac12882fcc17974601f6e6
+ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453478"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53396996"
 ---
 # <a name="net-framework-deployment-guide-for-developers"></a>개발자를 위한 .NET Framework 배포 가이드
 이 항목에서는 앱과 함께 .NET Framework 4.5에서 [!INCLUDE[net_current](../../../includes/net-current-version.md)]까지의 모든 .NET Framework 버전을 설치하려는 개발자를 위한 정보를 제공합니다.
@@ -150,7 +150,7 @@ InstallAware는 단일 소스에서 Windows 앱(APPX), Windows Installer(MSI), �
 
 4.  설치 및 배포 프로젝트를 처음으로 만들 경우 **InstallShield로 이동** 또는 **InstallShield Limited Edition 사용**을 선택하여 사용 중인 Microsoft Visual Studio 버전의 InstallShield Limited Edition을 다운로드합니다. Visual Studio를 다시 시작합니다.
 
-5.  **프로젝트 도우미** 마법사로 이동한 다음 **응용 프로그램 파일** 을 선택하여 프로젝트 출력을 추가합니다. 이 마법사를 사용하여 다른 프로젝트 특성을 구성할 수 있습니다.
+5.  **프로젝트 도우미** 마법사로 이동한 다음 **애플리케이션 파일** 을 선택하여 프로젝트 출력을 추가합니다. 이 마법사를 사용하여 다른 프로젝트 특성을 구성할 수 있습니다.
 
 6.  **설치 요구 사항** 으로 이동한 다음 운영 체제 및 설치할 .NET Framework의 버전을 선택합니다.
 
@@ -230,7 +230,7 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 - 언어 팩이 사용자 컴퓨터에 이미 설치되어 있는지 여부를[감지](#detecting-the-language-packs) 합니다.
 
-- 배포를 제어하려면 .NET Framework 설치 프로세스를 자동으로 시작하고 추적합니다( [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)참조).
+- 배포를 제어하려면 .NET Framework 설치 프로세스를 자동으로 시작하고 추적합니다([방법: .NET Framework 4.5 설치 관리자에서 진행률 가져오기](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md) 참조).
 
 - 오프라인 설치 관리자를 배포 중인 경우 [언어 팩을 별도로 연결](#chain_langpack)합니다.
 
@@ -247,9 +247,8 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |버전|릴리스 DWORD의 값|
 |-------------|--------------------------------|
-|.NET Framework 4.7.2가 Windows 10 2018년 10월 업데이트에 설치됨|461814|
 |Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803에 설치된 .NET Framework 4.7.2|461808|
-|.NET Framework 4.7.2가 Windows 10 2018년 10월 업데이트, Windows 10 2018년 4월 업데이트 및 Windows Server 버전 1803 이외의 모든 OS 버전에 설치됨|461814|
+|Windows 10 2018년 4월 업데이트 및 Windows Server, 버전 1803 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.2. 여기에는 Windows 10 2018년 10월 업데이트가 포함됩니다. |461814|
 |Windows 10 Fall Creators Update 및 Windows Server, 버전 1709에 설치된 .NET Framework 4.7.1|461308|
 |Windows 10 Fall Creators Update 및 Windows Server, 버전 1709 이외의 모든 OS 버전에 설치된 .NET Framework 4.7.1|461310|
 |.NET Framework 4.7이 Windows 10 크리에이터 업데이트에 설치됨|460798|
@@ -360,7 +359,7 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 |------------|-----------------|
 |**/CEIPConsent**|기본 동작을 덮어쓰고 향후 배포 환경을 개선하기 위해 Microsoft에 익명으로 피드백을 보냅니다. 이 옵션은 설치 프로그램에서 사용자에게 동의를 요청하고 Microsoft로 익명 피드백을 보낼 수 있는 권한을 사용자가 부여한 경우에만 사용될 수 있습니다.|
 |**/chainingpackage** `packageName`|연결을 수행하는 실행 파일의 이름을 지정합니다. 이 정보는 향후 배포 환경 개선을 지원하기 위해 익명 피드백으로 Microsoft에 보내집니다.<br /><br /> 패키지 이름에 공백이 포함되어 있으면 **/chainingpackage "Lucerne Publishing"** 과 같이 큰따옴표를 구분자로 사용합니다. 연결 패키지의 예는 MSDN 라이브러리의 [설치 패키지에서 진행 정보 가져오기](https://go.microsoft.com/fwlink/?LinkId=181926) 를 참조하세요.|
-|**/LCID**  `LCID`<br /><br /> 여기서 `LCID` 는 로캘 식별자를 지정합니다( [지원되는 언어](#supported-languages)참조).|`LCID` 로 지정된 언어 팩을 설치하고 표시된 UI가 해당 언어로 표시되도록 합니다(자동 모드가 설정되어 있지 않은 경우).<br /><br /> 웹 설치 관리자에 대해 이 옵션을 사용하면 웹을 통해 언어 팩도 함께 설치됩니다. **참고:** 웹 설치 관리자에서만 이 옵션을 사용합니다.|
+|**/LCID**  `LCID`<br /><br /> 여기서 `LCID` 는 로캘 식별자를 지정합니다( [지원되는 언어](#supported-languages)참조).|`LCID` 로 지정된 언어 팩을 설치하고 표시된 UI가 해당 언어로 표시되도록 합니다(자동 모드가 설정되어 있지 않은 경우).<br /><br /> 웹 설치 관리자에 대해 이 옵션을 사용하면 웹을 통해 언어 팩도 함께 설치됩니다. **참고:**  웹 설치 관리자에서만 이 옵션을 사용합니다.|
 |**/log** `file` &#124; `folder`|로그 파일의 위치를 지정합니다. 기본값은 프로세스에 대한 임시 폴더이며 기본 파일 이름은 패키지를 기반으로 합니다. 파일 확장명이 .txt인 경우 텍스트 로그가 생성됩니다. 다른 확장명을 지정하거나 확장명을 지정하지 않는 경우 HTML 로그가 만들어집니다.|
 |**/msioptions**|.msi 및 .msp 항목에 대해 전달될 옵션을 지정합니다(예: `/msioptions "PROPERTY1='Value'"`).|
 |**/norestart**|설치 프로그램이 자동으로 재부팅하지 않도록 합니다. 이 옵션을 사용하는 경우 연결 응용 프로그램은 반환 코드를 캡처하고 재부팅을 처리해야 합니다. MSDN 라이브러리의 [설치 패키지에서 프로세스 진행 정보 가져오기](https://go.microsoft.com/fwlink/?LinkId=179606) 를 참조하세요.|
@@ -393,7 +392,7 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 |1041|일본어|ja|
 |1042|한국어|ko|
 |1043|네덜란드어 - 네덜란드|nl|
-|1044|노르웨이어(복말)|아니요|
+|1044|노르웨이어(복말)|no|
 |1045|폴란드어|pl|
 |1046|포르투갈어 – 브라질|pt-BR|
 |1049|러시아어|ru|

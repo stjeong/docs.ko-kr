@@ -1,15 +1,13 @@
 ---
-title: dotnet tool install 명령 - .NET Core CLI
+title: dotnet tool install 명령
 description: dotnet tool install 명령은 컴퓨터에 지정한 .NET Core Global 도구를 설치합니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: aad5a3e815936749d90f40975a8b13d34e89386c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 251e7b04be96ac2340727fa03dbaa2d548110fa9
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43512197"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168717"
 ---
 # <a name="dotnet-tool-install"></a>dotnet tool install
 

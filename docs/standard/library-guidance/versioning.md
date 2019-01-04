@@ -3,13 +3,13 @@ title: 버전 관리 및 .NET 라이브러리
 description: .NET 라이브러리의 버전을 관리하는 모범 사례 권장 사항입니다.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
-ms.openlocfilehash: bacd3891c2fc15a1084f952ca913cf99b6d087dc
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 12/10/2018
+ms.openlocfilehash: e47b8a5ccad7c57d125e16f6e1d37fb91de31161
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144561"
+ms.locfileid: "53169601"
 ---
 # <a name="versioning"></a>버전 관리
 
@@ -51,7 +51,7 @@ NuGet 패키지 버전은 개발자가 가장 보기 쉬운 버전이므로 [Sem
 <AssemblyVersion>1.0.0.0</AssemblyVersion>
 ```
 
-Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 어셈블리를 로드할 수 있습니다. 예를 들어 `Libary1, Version=1.0.0.0`은 `Newtonsoft.Json, Version=11.0.0.0`을 참조하여 컴파일되었습니다. .NET Framework는 정확한 버전인 `11.0.0.0`만 로드합니다. 런타임 시 다른 버전을 로드하려면 .NET 응용 프로그램의 구성 파일에 바인딩 리디렉션을 추가해야 합니다.
+Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 어셈블리를 로드할 수 있습니다. 예를 들어 `Libary1, Version=1.0.0.0`은 `Newtonsoft.Json, Version=11.0.0.0`을 참조하여 컴파일되었습니다. .NET Framework는 정확한 버전인 `11.0.0.0`만 로드합니다. 런타임 시 다른 버전을 로드하려면 .NET 애플리케이션의 구성 파일에 바인딩 리디렉션을 추가해야 합니다.
 
 강력한 이름 지정과 어셈블리 버전을 결합하면 [엄격한 어셈블리 버전 로드](../../framework/app-domains/assembly-versioning.md)를 사용할 수 있습니다. 라이브러리에 강력한 이름을 지정하면 여러 가지 혜택이 있지만, 어셈블리를 찾을 수 없는 런타임 예외가 자주 발생하며 `app.config`/`web.config`의 [바인딩 리디렉션](../../framework/configure-apps/redirect-assembly-versions.md)을 수정해야 합니다. .NET Core 어셈블리 로드가 완화되었으며, .NET Core CLR이 런타임에 상위 버전의 어셈블리를 자동으로 로드합니다.
 
@@ -65,7 +65,7 @@ Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 �
 
 **❌** 고정된 AssemblyVersion을 사용하지 않습니다.
 
-> AssemblyVersion이 변경되지 않는 경우 바인딩 리디렉션이 필요하지 않지만, 단일 어셈블리 버전만 GAC(전역 어셈블리 캐시)에 설치할 수 있습니다. 또한 다른 응용 프로그램이 GAC 어셈블리를 호환성이 손상되는 변경으로 업데이트하는 경우 GAC에 있는 어셈블리를 참조하는 응용 프로그램이 손상됩니다.
+> AssemblyVersion이 변경되지 않는 경우 바인딩 리디렉션이 필요하지 않지만, 단일 어셈블리 버전만 GAC(전역 어셈블리 캐시)에 설치할 수 있습니다. 또한 다른 애플리케이션이 GAC 어셈블리를 호환성이 손상되는 변경으로 업데이트하는 경우 GAC에 있는 어셈블리를 참조하는 애플리케이션이 손상됩니다.
 
 ### <a name="assembly-file-version"></a>어셈블리 파일 버전
 
@@ -77,12 +77,13 @@ Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 �
 
 ![Windows 탐색기](./media/versioning/win-properties.png "Windows 탐색기")
 
-> [!NOTE]
-> 이 버전이 `Major.Minor.Build.Revision` 형식을 따르지 않는 경우 무해한 빌드 경고가 발생합니다. 경고는 무시해도 됩니다.
-
 **✔️** 연속 통합 빌드 번호를 AssemblyFileVersion 수정으로 포함합니다.
 
 > 예를 들어 프로젝트 버전 1.0.0을 빌드 중이며 연속 통합 빌드 번호가 99인 경우 AssemblyFileVersion은 1.0.0.99입니다.
+
+**✔️ DO(수행하세요)** 는 파일 버전에 대해 `Major.Minor.Build.Revision` 형식을 사용합니다.
+
+> .NET에서는 파일 버전을 사용하지 않지만 [Windows에서는 파일 버전](/windows/desktop/menurc/versioninfo-resource)이 `Major.Minor.Build.Revision` 형식이어야 합니다. 버전이 이 형식을 따르지 않으면 경고가 발생합니다.
 
 ### <a name="assembly-informational-version"></a>어셈블리 정보 버전
 
@@ -91,6 +92,9 @@ Windows .NET Framework CLR에서는 정확히 일치해야 강력한 이름의 �
 ```xml
 <AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>
 ```
+
+> [!NOTE]
+> 이 버전이 `Major.Minor.Build.Revision` 형식을 따르지 않으면 이전 버전의 Visual Studio에서는 빌드 경고가 발생합니다. 경고는 무시해도 됩니다.
 
 **❌** 어셈블리 정보 버전을 직접 설정하지 않습니다.
 

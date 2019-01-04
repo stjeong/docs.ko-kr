@@ -6,12 +6,12 @@ ms.author: mairaw
 ms.date: 07/19/2018
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.openlocfilehash: bdaaa22f20f21e823459914a900997050a6624a6
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: cfc830f50f2e77b85e46ebaf91e3c8658aa86c48
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50186072"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53613598"
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -35,7 +35,7 @@ ms.locfileid: "50186072"
 
 1. 실행할 .NET 구현을 나타내는 행을 찾습니다.
 2. 해당 행의 오른쪽에서 왼쪽으로 사용 중인 버전을 나타내는 열을 찾습니다.
-3. 열 헤더는 대상에서 지원하는 .NET 표준 버전을 나타냅니다(더 낮은 .NET 표준 버전도 모두 대상을 지원함).
+3. 열 헤더는 대상에서 지원하는 .NET 표준 버전을 나타냅니다. 더 낮은 .NET 표준 버전을 대상으로 할 수도 있습니다. 더 높은 .NET 표준 버전은 구현도 지원합니다.
 4. 대상으로 지정할 각 플랫폼에 대해 이 프로세스를 반복합니다. 대상 플랫폼이 두 개 이상 있으면 더 낮은 버전을 선택해야 합니다. 예를 들어 .NET Framework 4.5 및 .NET Core 1.0에서 실행하려는 경우 사용할 수 있는 가장 높은 .NET 표준 버전은 .NET 표준 1.1입니다.
 
 ### <a name="which-net-standard-version-to-target"></a>대상으로 지정할 .NET 표준 버전
@@ -57,7 +57,7 @@ ms.locfileid: "50186072"
 두 가지 기본 버전 관리 규칙이 있습니다.
 
 - 추가: .NET 표준 버전은 논리적으로 동심원입니다. 더 높은 버전이 이전 버전의 모든 API를 통합합니다. 버전 간에 큰 차이는 없습니다.
-- 변경 불가능: 제공되고 나면 .NET Standard 버전은 고정됩니다. 새 API는 먼저 특정 .NET 구현(예: .NET Core)에서 제공됩니다. .NET Standard 심사 위원회에서 새 API가 모든 곳에서 사용 가능하다고 판단하면 새 .NET Standard 버전에 추가됩니다.
+- 변경할 수 없음: 제공되고 나면 .NET 표준 버전은 고정됩니다. 새 API는 먼저 특정 .NET 구현(예: .NET Core)에서 제공됩니다. .NET Standard 심사 위원회에서 새 API가 모든 곳에서 사용 가능하다고 판단하면 새 .NET Standard 버전에 추가됩니다.
 
 ## <a name="specification"></a>사양
 

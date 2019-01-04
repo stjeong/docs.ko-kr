@@ -1,14 +1,14 @@
 ---
-title: dotnet nuget delete 명령 - .NET Core CLI
+title: dotnet nuget delete 명령
 description: dotnet-nuget-delete 명령은 서버에서 패키지를 삭제하거나 목록에서 제거합니다.
 author: karann-msft
 ms.date: 12/04/2018
-ms.openlocfilehash: 451352ea652b77e44dcaf731d5b6cce230d1ef78
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 827d295d7a52b6c9c82adbcf3d25281bd1cc98fd
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126837"
+ms.locfileid: "53168314"
 ---
 # <a name="dotnet-nuget-delete"></a>dotnet nuget delete
 
@@ -54,7 +54,7 @@ dotnet nuget delete [-h|--help]
 
 * **`--force-english-output`**
 
-  고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
+  고정 영어 기반 문화권을 사용하여 애플리케이션을 강제로 실행합니다.
 
 * **`-h|--help`**
 
@@ -84,7 +84,7 @@ dotnet nuget delete [-h|--help]
 
 * **`--force-english-output`**
 
-  고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
+  고정 영어 기반 문화권을 사용하여 애플리케이션을 강제로 실행합니다.
 
 * **`-h|--help`**
 

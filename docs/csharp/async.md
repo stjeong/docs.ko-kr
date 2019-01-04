@@ -1,15 +1,16 @@
 ---
-title: 비동기 프로그래밍
+title: 비동기 프로그래밍 - C#
 description: .NET Core에서 제공하는 C# 언어 수준 비동기 프로그래밍 모델에 대해 알아봅니다.
 author: cartermp
 ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-ms.openlocfilehash: 12ecadb3fa3c6760af4884626f68b47ead2754d5
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: 231cbbde7c908c3d63d3ff0f59cf3d797e8b9543
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126499"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612129"
 ---
 # <a name="asynchronous-programming"></a>비동기 프로그래밍
 
@@ -264,5 +265,5 @@ LINQ의 람다 식은 연기된 실행을 사용합니다. 즉, 예상치 않은
 ## <a name="other-resources"></a>기타 리소스
 
 * [세부 비동기](../standard/async-in-depth.md)에서는 작업이 어떻게 작동하는지 자세히 설명합니다.
-* [async 및 await를 사용한 비동기 프로그래밍(C#)](../csharp/programming-guide/concepts/async/index.md)
+* [async 및 await를 사용한 비동기 프로그래밍(C#)](./programming-guide/concepts/async/index.md)
 * Lucian Wischik의 [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async)(비동기에 대한 6가지 필수 팁)는 비동기 프로그래밍에 대한 훌륭한 리소스입니다.

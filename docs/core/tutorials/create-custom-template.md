@@ -2,14 +2,14 @@
 title: dotnet new에 대한 사용자 지정 템플릿 만들기
 description: 이 재미있는 자습서에서 dotnet new 명령에 대한 사용자 지정 템플릿을 만드는 방법을 알아봅니다.
 author: guardrex
-ms.author: mairaw
 ms.date: 08/12/2017
-ms.openlocfilehash: 2377d894bcbf54a9c96eae1093d891080e6d11c5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.custom: seodec18
+ms.openlocfilehash: 63f8c8a4d029285a02255637c8a79358e5ef0095
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43516655"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169738"
 ---
 # <a name="create-a-custom-template-for-dotnet-new"></a>dotnet new에 대한 사용자 지정 템플릿 만들기
 
@@ -64,7 +64,7 @@ ms.locfileid: "43516655"
 1. 프로젝트 폴더의 콘텐츠와 함께 *.template.config/template.json* 파일을 직접 만든 *content* 폴더로 복사합니다.
 1. *콘텐츠* 폴더 옆에 [*nuspec* 파일](/nuget/create-packages/creating-a-package)을 추가합니다. 패키지 콘텐츠를 설명하고 NuGet 패키지를 만드는 프로세스를 적용하는 XML 매니페스트 파일입니다.
 
-   ![NuGet 패키지의 레이아웃을 보여 주는 디렉터리 구조](./media/create-custom-template/nugetdirectorylayout.png)
+   ![NuGet 패키지의 레이아웃을 보여 주는 디렉터리 구조](./media/create-custom-template/nuget-directory-layout.png)
 
 1. *nuspec* 파일의 **\<packageTypes>** 요소 내부에는 **\<packageType>** 요소와 `Template`의 `name` 특성 값이 포함됩니다. *content* 폴더와 *nuspec* 파일은 동일한 디렉터리에 있어야 합니다. 표에서는 템플릿을 NuGet 패키지로 생성하는 데 필요한 최소 *nuspec* 파일 요소를 보여 줍니다.
 
@@ -136,7 +136,7 @@ dotnet new -i NUnit3.DotNetNew.Template
 
 `dotnet new -l`을 사용하여 템플릿을 나열하면 템플릿 목록에서 *nunit*의 짧은 이름을 가진 *NUnit 3 테스트 프로젝트*가 표시됩니다. 다음 섹션에서 템플릿을 사용할 준비가 되었습니다.
 
-![다른 설치된 템플릿과 함께 NUnit 템플릿을 보여 주는 콘솔 창](./media/create-custom-template/nunit1.png)
+![다른 템플릿과 함께 NUnit 템플릿을 보여 주는 콘솔 창](./media/create-custom-template/nunit-template-console-window.png)
 
 ### <a name="create-a-project-from-the-template"></a>템플릿에서 프로젝트 만들기
 
@@ -148,7 +148,7 @@ dotnet new nunit
 
 콘솔에서는 프로젝트가 만들어지고 프로젝트의 패키지가 복원되는 것을 보여 줍니다. 명령이 실행된 후 프로젝트를 사용할 준비가 되었습니다.
 
-![NUnit 프로젝트를 만들고 프로젝트 종속성을 복원할 때 dotnet new 명령의 출력을 보여 주는 콘솔 창](./media/create-custom-template/nunit2.png)
+![콘솔 창은 프로젝트 종속성 복원을 포함하여 dotnet new nunit의 출력을 보여 줍니다.](./media/create-custom-template/dotnet-new-nunit-console-output.png)
 
 ### <a name="to-uninstall-a-template-from-a-nuget-package-stored-at-nugetorg"></a>nuget.org에 저장된 NuGet 패키지에서 템플릿을 제거하려면
 

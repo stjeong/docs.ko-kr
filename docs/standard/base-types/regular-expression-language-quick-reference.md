@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 53f0f0d82ee751b66168fff68c31d952f480be2e
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 77a9863b4fb44bbe8142175a032bb052ee99cdae
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041618"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53779388"
 ---
 # <a name="regular-expression-language---quick-reference"></a>정규식 언어 - 빠른 참조
 <a name="top"></a> 정규식은 정규식 엔진이 입력 텍스트에서 찾으려고 하는 패턴입니다. 패턴은 하나 이상의 문자 리터럴, 연산자 또는 구문으로 구성됩니다.  간략하게 살펴보려면 [.NET 정규식](../../../docs/standard/base-types/regular-expressions.md)을 참조하세요.  
@@ -30,7 +30,7 @@ ms.locfileid: "44041618"
   
  [문자 이스케이프](#character_escapes)  
  [문자 클래스](#character_classes)  
- [앵커](#atomic_zerowidth_assertions)  
+ [앵커](#anchors)  
  [그룹화 구문](#grouping_constructs)  
  [수량자](#quantifiers)  
  [역참조 구문](#backreference_constructs)  
@@ -48,7 +48,7 @@ ms.locfileid: "44041618"
 ## <a name="character-escapes"></a>문자 이스케이프  
  정규식의 백슬래시 문자(\\)는 뒤에 오는 문자가 다음 표에 나와 있는 것과 같은 특수 문자이거나 리터럴로 해석되어야 함을 나타냅니다. 자세한 내용은 [문자 이스케이프](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md)를 참조하세요.  
   
-|이스케이프된 문자|설명|무늬|일치 항목|  
+|이스케이프된 문자|설명|무늬|요청 내용|  
 |-----------------------|-----------------|-------------|-------------|  
 |`\a`|벨 문자인 \u0007을 찾습니다.|`\a`|"Error!" + '\u0007'의 "\u0007"|  
 |`\b`|문자 클래스에서 백스페이스 문자인 \u0008을 찾습니다.|`[\b]{3,}`|"\b\b\b\b"의 "\b\b\b\b"|  
@@ -70,11 +70,11 @@ ms.locfileid: "44041618"
 ## <a name="character-classes"></a>문자 클래스  
  문자 클래스는 문자 집합 중 하나를 찾습니다. 문자 클래스에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [Character Classes](../../../docs/standard/base-types/character-classes-in-regular-expressions.md)을 참조하세요.  
   
-|문자 클래스|설명|무늬|일치 항목|  
+|문자 클래스|설명|무늬|요청 내용|  
 |---------------------|-----------------|-------------|-------------|  
 |`[` *character_group* `]`|*character_group*에서 단일 문자를 찾습니다. 기본적으로 일치 항목 찾기에서는 대/소문자를 구분합니다.|`[ae]`|"gray"의 "a"<br /><br /> "lane"의 "a", "e"|  
 |`[^` *character_group* `]`|부정: *character_group*에 없는 모든 단일 문자를 찾습니다. 기본적으로 *character_group* 의 문자는 대/소문자를 구분합니다.|`[^aei]`|"reign"의 "r", "g", "n"|  
-|`[` *첫 번째* `-` *last* `]`|문자 범위: *first* 에서 *last*사이에 있는 모든 단일 문자를 찾습니다.|`[A-Z]`|"AB123"의 "A", "B"|  
+|`[` *첫 번째* `-` *last* `]`|문자 범위: *first*에서 *last* 사이에 있는 모든 단일 문자를 찾습니다.|`[A-Z]`|"AB123"의 "A", "B"|  
 |`.`|와일드카드: \n 이외의 모든 단일 문자를 찾습니다.<br /><br /> 리터럴 마침표 문자(. 또는 `\u002E`)를 찾으려면 마침표 문자 앞에 이스케이프 문자를 추가해야 합니다(`\.`).|`a.e`|"nave"의 "ave"<br /><br /> "water"의 "ate"|  
 |`\p{` *name* `}`|유니코드 일반 범주나 *name*으로 지정된 명명된 블록에 있는 모든 단일 문자를 찾습니다.|`\p{Lu}`<br /><br /> `\p{IsCyrillic}`|"City Lights"의 "C", "L"<br /><br /> "ДЖem"의 "Д", "Ж"|  
 |`\P{` *name* `}`|유니코드 일반 범주나 *name*으로 지정된 명명된 블록에 없는 모든 단일 문자를 찾습니다.|`\P{Lu}`<br /><br /> `\P{IsCyrillic}`|"City"의 "i", "t", "y"<br /><br /> "ДЖem"의 "e", "m"|  
@@ -87,11 +87,10 @@ ms.locfileid: "44041618"
   
  [맨 위로 이동](#top)  
   
-<a name="atomic_zerowidth_assertions"></a>   
 ## <a name="anchors"></a>앵커  
  앵커 또는 너비가 0인 원자적 어설션은 문자열에서 일치 항목의 현재 위치에 따라 일치의 성공 또는 실패 여부를 결정하지만 엔진에서 문자열을 따라 가거나 문자를 소비하도록 하지는 않습니다. 다음 표에 나와 있는 메타문자는 앵커입니다. 자세한 내용은 [앵커](../../../docs/standard/base-types/anchors-in-regular-expressions.md)을 참조하세요.  
   
-|어설션|설명|무늬|일치 항목|  
+|어설션|설명|무늬|요청 내용|  
 |---------------|-----------------|-------------|-------------|  
 |`^`|기본적으로 일치 항목은 문자열의 시작 부분에서 시작되어야 합니다. 다중 선에서는 줄의 시작 부분에서 시작되어야 합니다.|`^\d{3}`|"901-"의<br /><br /> "901"|  
 |`$`|기본적으로 일치 항목은 문자열의 끝부분 또는 문자열의 끝부분 `\n` 앞에서 발생해야 합니다. 다중 선에서는 줄의 끝부분 또는 줄의 끝 `\n` 앞에서 발생해야 합니다.|`-\d{3}$`|"-333"의<br /><br /> "-333"|  
@@ -108,7 +107,7 @@ ms.locfileid: "44041618"
 ## <a name="grouping-constructs"></a>그룹화 구문  
  그룹화 구문은 정규식의 하위 식을 나타내며 대개 입력 문자열의 부분 문자열을 캡처합니다. 그룹화 구문에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [Grouping Constructs](grouping-constructs-in-regular-expressions.md)을 참조하세요.  
   
-|그룹화 구문|설명|무늬|일치 항목|  
+|그룹화 구문|설명|무늬|요청 내용|  
 |------------------------|-----------------|-------------|-------------|  
 |`(` *subexpression* `)`|일치하는 하위 식을 캡처하고 서수(1부터 시작)를 할당합니다.|`(\w)\1`|"deep"의 "ee"|  
 |`(?<` *name* `>` *subexpression* `)`|일치하는 하위 식을 명령된 그룹에 캡처합니다.|`(?<double>\w)\k<double>`|"deep"의 "ee"|  
@@ -127,7 +126,7 @@ ms.locfileid: "44041618"
 ## <a name="quantifiers"></a>수량자  
  수량자는 이전 요소(문자, 그룹 또는 문자 클래스)의 인스턴스가 입력 문자열에 몇 개 있어야 일치 항목으로 간주되는지를 지정합니다. 수량자에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [Quantifiers](quantifiers-in-regular-expressions.md)을 참조하세요.  
   
-|수량자|설명|무늬|일치 항목|  
+|수량자|설명|무늬|요청 내용|  
 |----------------|-----------------|-------------|-------------|  
 |`*`|이전 요소를 0개 이상 찾습니다.|`\d*\.\d`|".0", "19.9", "219.9"|  
 |`+`|이전 요소를 1개 이상 찾습니다.|`"be+"`|"been"의 "bee" 및 "bent"의 "be"|  
@@ -148,7 +147,7 @@ ms.locfileid: "44041618"
 ## <a name="backreference-constructs"></a>역참조 구문  
  역참조를 사용하면 이전에 찾은 하위 식을 이후에 동일한 정규식에서 식별할 수 있습니다. 다음 표에서는 .NET의 정규식에서 지원하는 역참조 구문을 보여줍니다. 자세한 내용은 [Backreference Constructs](backreference-constructs-in-regular-expressions.md)을 참조하세요.  
   
-|역참조 구문|설명|무늬|일치 항목|  
+|역참조 구문|설명|무늬|요청 내용|  
 |-----------------------------|-----------------|-------------|-------------|  
 |`\` *number*|역참조입니다. 번호가 매겨진 하위 식의 값을 찾습니다.|`(\w)\1`|"seek"의 "ee"|  
 |`\k<` *name* `>`|명명된 역참조입니다. 명명된 식의 값을 찾습니다.|`(?<char>\w)\k<char>`|"seek"의 "ee"|  
@@ -159,11 +158,11 @@ ms.locfileid: "44041618"
 ## <a name="alternation-constructs"></a>교체 구문  
  교체 구문은 일치를 허용하도록 정규식을 수정합니다. 이러한 구문에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [Alternation Constructs](alternation-constructs-in-regular-expressions.md)을 참조하세요.  
   
-|교체 구문|설명|무늬|일치 항목|  
+|교체 구문|설명|무늬|요청 내용|  
 |---------------------------|-----------------|-------------|-------------|  
 |<code>&#124;</code>|세로 막대(&#124;)로 구분된 단일 요소를 찾습니다.|<code>th(e&#124;is&#124;at)</code>|"this is the day"에서 "the", "this" "|  
-|`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`|*expression* 으로 지정한 정규식 패턴이 일치하면 *yes* 와 일치합니다. 그렇지 않으면 선택 사항 *no* 부분과 일치합니다. *expression* 은 너비가 0인 어설션으로 해석됩니다.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|"A10 C103 910"의 "A10", "910"|  
-|`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`|명명되거나 번호가 매겨진 캡처링 그룹인 *name* 에 일치하는 항목이 있으면 *yes*와 일치합니다. 그렇지 않으면 선택 사항 *no*와 일치합니다.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|"Dogs.jpg "Yiska playing.jpg""의 Dogs.jpg, "Yiska playing.jpg"|  
+|`(?(` *식* `)` *예* <code>&#124;</code> *no* `)`|*expression* 으로 지정한 정규식 패턴이 일치하면 *yes* 와 일치합니다. 그렇지 않으면 선택 사항 *no* 부분과 일치합니다. *expression* 은 너비가 0인 어설션으로 해석됩니다.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|"A10 C103 910"의 "A10", "910"|  
+|`(?(` *name* `)` *예* <code>&#124;</code> *no* `)`|명명되거나 번호가 매겨진 캡처링 그룹인 *name* 에 일치하는 항목이 있으면 *yes*와 일치합니다. 그렇지 않으면 선택 사항 *no*와 일치합니다.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|"Dogs.jpg "Yiska playing.jpg""의 Dogs.jpg, "Yiska playing.jpg"|  
   
  [맨 위로 이동](#top)  
   
@@ -179,7 +178,7 @@ ms.locfileid: "44041618"
 |`$&`|일치하는 전체 문자열의 복사본을 대체합니다.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"\*\*$1.30\*\*"|  
 |<code>$`</code>|일치하는 문자열 앞에 있는 입력 문자열의 모든 텍스트를 대체합니다.|`B+`|<code>$`</code>|"AABBCC"|"AAAACC"|  
 |`$'`|일치하는 문자열 뒤에 있는 입력 문자열의 모든 텍스트를 대체합니다.|`B+`|`$'`|"AABBCC"|"AACCCC"|  
-|`$+`|캡처된 마지막 그룹을 대체합니다.|`B+(C+)`|`$+`|"AABBCCDD"|AACCDD|  
+|`$+`|캡처된 마지막 그룹을 대체합니다.|`B+(C+)`|`$+`|"AABBCCDD"|"AACCDD"|  
 |`$_`|전체 입력 문자열을 대체합니다.|`B+`|`$_`|"AABBCC"|"AAAABBCCCC"|  
   
  [맨 위로 이동](#top)  
@@ -196,7 +195,7 @@ ms.locfileid: "44041618"
   
  .NET 정규식 엔진은 다음 인라인 옵션을 지원합니다.  
   
-|옵션|설명|무늬|일치 항목|  
+|옵션|설명|무늬|요청 내용|  
 |------------|-----------------|-------------|-------------|  
 |`i`|대/소문자를 구분하지 않는 일치를 사용합니다.|`\b(?i)a(?-i)a\w+\b`|"aardvark AAAuto aaaAuto Adam breakfast"의 "aardvark", "aaaAuto"|  
 |`m`|여러 줄 모드를 사용합니다. `^` 및 `$` 는 각 줄의 시작 및 끝과 일치합니다(문자열의 시작 및 끝이 아님).|예제를 보려면 [Regular Expression Options](regular-expression-options.md)에서 "여러 줄 모드" 섹션을 참조하세요.||  
@@ -210,7 +209,7 @@ ms.locfileid: "44041618"
 ## <a name="miscellaneous-constructs"></a>기타 구문  
  기타 구문은 정규식 패턴을 수정하거나 정규식 패턴에 대한 정보를 제공합니다. 다음 표에서는 .NET에서 지원하는 기타 구문을 보여줍니다. 자세한 내용은 [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md)을 참조하세요.  
   
-|구문|정의|예|  
+|구문|정의|예제|  
 |---------------|----------------|-------------|  
 |`(?imnsx-imnsx)`|패턴 중간에 대/소문자 구분하지 않음과 같은 옵션을 설정하거나 해제합니다. 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.|`\bA(?i)b\w+\b` 는 "ABA Able Act"에서 "ABA", "Able"을 찾습니다.|  
 |`(?#` *주석* `)`|인라인 주석입니다. 주석이 첫 번째 닫는 괄호 문자에서 끝납니다.|`\bA(?#Matches words starting with A)\w+\b`|  

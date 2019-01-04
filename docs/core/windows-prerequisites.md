@@ -1,13 +1,13 @@
 ---
 title: Windows에서 .NET Core의 필수 구성 요소
-description: Windows 컴퓨터에서 .NET Core 응용프로그램을 개발 및 실행하기 위해 필요한 종속성이 무엇인지 살펴보세요.
-ms.date: 12/05/2018
-ms.openlocfilehash: 8f9a823ab3eea15d7e33da6ff00992057c8c4e38
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+description: Windows 컴퓨터에서 .NET Core 애플리케이션을 개발 및 실행하기 위해 필요한 종속성이 무엇인지 살펴보세요.
+ms.date: 12/14/2018
+ms.openlocfilehash: 2209c6e74413204c38ba54ffc538846f27d0bdf6
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130918"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656117"
 ---
 # <a name="prerequisites-for-net-core-on-windows"></a>Windows에서 .NET Core의 필수 구성 요소
 
@@ -35,12 +35,12 @@ ms.locfileid: "53130918"
 
 다음 문서에는 버전별 .NET Core 지원 운영 체제의 전체 목록이 있습니다.
 
+* [.NET Core 3.0(미리 보기)](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)
 * [.NET Core 2.2](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
 * [.NET Core 2.1](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
-* [.NET Core 1.1](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1-supported-os.md)
 * [.NET Core 1.0](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)
 
-다운로드 링크 및 자세한 내용은 최신 버전 다운로드의 경우 [.NET 다운로드](https://www.microsoft.com/net/download)를 참조하고, 이전 버전의 경우 [.NET 다운로드 보관](https://dotnet.microsoft.com/download/archives#dotnet-core)를 참조하세요.
+다운로드 링크 및 자세한 내용은 최신 버전 다운로드의 경우 [.NET 다운로드](https://dotnet.microsoft.com/download)를 참조하고, 이전 버전의 경우 [.NET 다운로드 보관](https://dotnet.microsoft.com/download/archives#dotnet-core)를 참조하세요.
 
 ## <a name="net-core-dependencies"></a>.NET Core 종속성
 
@@ -49,22 +49,26 @@ ms.locfileid: "53130918"
 다음과 같은 경우에는 [Microsoft Visual C++ 2015 재배포 가능 패키지 업데이트 3](https://www.microsoft.com/download/details.aspx?id=52685)을 수동으로 설치해야 합니다.
 
 * [설치 관리자 스크립트](./tools/dotnet-install-script.md)를 사용하여 .NET Core 설치.
-* 자체 포함된 .NET Core 응용 프로그램 배포.
+* 자체 포함된 .NET Core 애플리케이션 배포.
 * 원본에서 제품 빌드.
 * *.zip* 파일을 통해 .NET Core 설치. 여기에는 빌드/CI/CD 서버가 포함될 수 있습니다.
 
 > [!NOTE]
 > **Windows 8.1 이전 버전 또는 Windows Server 2012 R2 이전 버전의 경우:**
 >
-> 설치된 Windows가 최신 버전이며 Windows 업데이트를 통해 설치할 수 있는 [KB2999226](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)이 포함되어 있는지 확인하세요. 이 업데이트를 설치하지 않는 경우 .NET Core 응용 프로그램을 시작할 때 `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`과 같은 오류가 표시됩니다.
+> 설치된 Windows가 최신 버전이며 Windows 업데이트를 통해 설치할 수 있는 [KB2999226](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)이 포함되어 있는지 확인하세요. 이 업데이트를 설치하지 않는 경우 .NET Core 애플리케이션을 시작할 때 `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`과 같은 오류가 표시됩니다.
 >
 > **Windows 7 또는 Windows Server 2008 R2의 경우:**
 >
-> KB2999226 외에 [KB2533623](https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)도 설치되어 있는지 확인하세요. 이 업데이트를 설치하지 않는 경우 .NET Core 응용 프로그램을 시작할 때 `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`와 같은 오류가 표시됩니다.
+> KB2999226 외에 [KB2533623](https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)도 설치되어 있는지 확인하세요. 이 업데이트를 설치하지 않는 경우 .NET Core 애플리케이션을 시작할 때 `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`와 같은 오류가 표시됩니다.
+
+## <a name="prerequisites-for-net-core-30-preview-1"></a>NET Core 3.0 Preview 1의 필수 구성 요소
+
+NET Core 3.0 Preview 1에는 다른 버전의 .NET Core와 같은 필수 구성 요소가 있습니다. 그러나 Visual Studio를 사용하여 .NET Core 3.0 프로젝트를 만들려는 경우 [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/)를 사용해야 합니다. Visual Studio 2019 Preview는 충돌 없이 다른 버전의 Visual Studio와 함께 설치될 수 있습니다.
 
 ## <a name="prerequisites-with-visual-studio-2017"></a>Visual Studio 2017 필수 구성 요소
-
-.NET Core SDK를 사용하여 .NET Core 응용 프로그램을 개발하기 위해 원하는 편집기를 사용할 수 있습니다. Visual Studio 2017에서는 Windows 기반 .NET Core 앱에 대한 통합 개발 환경을 제공합니다.
+    
+.NET Core SDK를 사용하여 .NET Core 애플리케이션을 개발하기 위해 원하는 편집기를 사용할 수 있습니다. Visual Studio 2017에서는 Windows 기반 .NET Core 앱에 대한 통합 개발 환경을 제공합니다.
 
 [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes)에서 Visual Studio 2017의 변경 내용에 대해 자세히 알아볼 수 있습니다.
 

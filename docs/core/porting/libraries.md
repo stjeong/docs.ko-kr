@@ -2,15 +2,14 @@
 title: .NET Core로 라이브러리 포팅
 description: .NET Framework에서 .NET Core로 라이브러리 프로젝트를 이식하는 방법에 관해 알아봅니다.
 author: cartermp
-ms.author: mairaw
 ms.date: 07/14/2017
 ms.custom: seodec18
-ms.openlocfilehash: 2701027ce606c215ca9c2bd4bc665bc0600342dc
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4002f7d0f98398163df1c4d02ff0e157584c2655
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143586"
+ms.locfileid: "53169697"
 ---
 # <a name="port-net-framework-libraries-to-net-core"></a>.NET Core로 .NET Framework 라이브러리 포팅
 
@@ -64,7 +63,7 @@ AppDomain은 앱을 서로 분리합니다. AppDomain에는 런타임 지원이 
 
 ### <a name="code-access-security-cas"></a>CAS(코드 액세스 보안)
 
-관리되는 응용 프로그램 또는 라이브러리에서 사용하거나 실행하는 리소스를 제한하기 위해 런타임 또는 프레임워크에 의존하는 샌드박싱은 [.NET Framework에서 지원되지 않으므로](~/docs/framework/misc/code-access-security.md) .NET Core에서도 지원되지 않습니다. CAS를 보안 경계로 계속 처리하기 위해 권한 상승이 발생하는 .NET Framework 및 런타임에는 사례가 너무 많이 있습니다. 또한 CAS는 구현을 더욱 복잡하게 만들고 이를 사용하지 않을 응용 프로그램의 정확성-성능에 종종 영향을 미칩니다.
+관리되는 애플리케이션 또는 라이브러리에서 사용하거나 실행하는 리소스를 제한하기 위해 런타임 또는 프레임워크에 의존하는 샌드박싱은 [.NET Framework에서 지원되지 않으므로](~/docs/framework/misc/code-access-security.md) .NET Core에서도 지원되지 않습니다. CAS를 보안 경계로 계속 처리하기 위해 권한 상승이 발생하는 .NET Framework 및 런타임에는 사례가 너무 많이 있습니다. 또한 CAS는 구현을 더욱 복잡하게 만들고 이를 사용하지 않을 애플리케이션의 정확성-성능에 종종 영향을 미칩니다.
 
 최소한의 권한으로 프로세스를 실행하려면 가상화, 컨테이너 또는 사용자 계정과 같은 운영 체제에서 제공하는 보안 경계를 사용할 수 있습니다.
 

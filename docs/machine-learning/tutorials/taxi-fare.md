@@ -6,12 +6,12 @@ ms.author: johalex
 ms.date: 11/06/2018
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: a142ab98174182adf6f50cf6eedff27c82993f5e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 36da24f0cd2d2b9c4884101d97026307174f4130
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130509"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53236351"
 ---
 # <a name="tutorial-predict-new-york-taxi-fares-using-a-regression-learner-with-mlnet"></a>자습서: ML.NET와 함께 회귀 학습자를 사용하여 뉴욕 택시 요금 예측
 
@@ -44,7 +44,7 @@ ms.locfileid: "53130509"
 
 데이터 집합의 기타 요인에 따라 실제 값인 가격 값을 예측하려고 합니다. 이렇게 하려면 [회귀](../resources/glossary.md#regression) 기계 학습 작업을 선택합니다.
 
-## <a name="create-a-console-application"></a>콘솔 응용 프로그램 만들기
+## <a name="create-a-console-application"></a>콘솔 애플리케이션 만들기
 
 1. Visual Studio 2017을 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드와 **.NET Core** 노드를 차례로 선택합니다. 그런 다음 **콘솔 앱(.NET Core)** 프로젝트 템플릿을 선택합니다. **이름** 텍스트 상자에 “TaxiFarePrediction”을 입력하고 **확인** 단추를 선택합니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "53130509"
 * **vendor_id:** 택시 공급업체의 ID가 기능입니다.
 * **rate_code:** 택시 이동의 요금 유형이 기능입니다.
 * **passenger_count:** 이동하는 승객 수가 기능입니다.
-* **trip_time_in_secs**: 이동에 걸린 시간입니다. 이동을 완료하기 전에 이동 요금을 예측하려고 합니다. 해당 시간에는 이동이 얼마나 길지 알지 못합니다. 따라서 이동 시간은 기능이 아니며 모델에서 이 열을 제외합니다.
+* **trip_time_in_secs:** 이동에 걸린 시간입니다. 이동을 완료하기 전에 이동 요금을 예측하려고 합니다. 해당 시간에는 이동이 얼마나 길지 알지 못합니다. 따라서 이동 시간은 기능이 아니며 모델에서 이 열을 제외합니다.
 * **trip_distance:** 이동 거리가 기능입니다.
 * **payment_type:** 결제 방법(현금 또는 신용 카드)이 기능입니다.
 * **fare_amount:** 지급한 총 택시 요금이 레이블입니다.
@@ -103,7 +103,7 @@ ms.locfileid: "53130509"
 
 데이터 세트가 있는 파일의 경로, 모델을 저장할 파일 및 `TextLoader`에 대한 전역 변수가 포함될 세 개의 필드를 만들어야 합니다.
 
-* `_trainDataPath`에는 모델을 학습시키는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
+* `_trainDataPath`에는 모델을 학습하는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
 * `_testDataPath`에는 모델을 평가하는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
 * `_modelPath`에는 학습된 모델이 저장되는 파일에 대한 경로가 포함됩니다.
 * `_textLoader`는 데이터 세트를 로드하고 변환하는 데 사용되는 <xref:Microsoft.ML.Runtime.Data.TextLoader>입니다.
@@ -112,7 +112,7 @@ ms.locfileid: "53130509"
 
 [!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define variables to store the data file paths")]
 
-ML .NET를 사용하여 모델을 작성하는 경우 먼저 ML 컨텍스트를 만듭니다. 이는 Entity Framework에서 `DbContext`를 사용하는 것과 개념이 비슷합니다. 환경은 예외 추적 및 로깅에 사용할 수 있는 기계 학습 작업의 컨텍스트를 제공합니다.
+ML.NET을 사용하여 모델을 작성하는 경우 먼저 ML 컨텍스트를 만듭니다. 이는 Entity Framework에서 `DbContext`를 사용하는 것과 개념이 비슷합니다. 환경은 예외 추적 및 로깅에 사용할 수 있는 기계 학습 작업의 컨텍스트를 제공합니다.
 
 ### <a name="initialize-variables-in-main"></a>Main에서 변수 초기화
 

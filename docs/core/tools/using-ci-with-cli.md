@@ -1,15 +1,15 @@
 ---
-title: CI(연속 통합)에서 .NET Core SDK 및 도구 사용 - .NET Core CLI
+title: .NET Core SDK 및 CI(연속 통합)의 도구 사용
 description: .NET Core SDK 및 빌드 서버의 도구를 사용하는 방법에 대한 정보입니다.
 author: guardrex
 ms.date: 05/18/2017
 ms.custom: seodec18
-ms.openlocfilehash: 7891430654b416a2b55fa837f276d991b56370cc
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4c651983bb900d000de37a0e413ef9ab0f7893c9
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53131393"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611557"
 ---
 # <a name="using-net-core-sdk-and-tools-in-continuous-integration-ci"></a>.NET Core SDK 및 CI(연속 통합)의 도구 사용
 
@@ -124,7 +124,7 @@ LOCALDOTNET="$INSTALLDIR/dotnet"
 
 `csharp` 언어와 `dotnet` 키를 사용하여 .NET Core SDK를 설치하도록 [Travis CI](https://travis-ci.org/)를 구성할 수 있습니다. 자세한 내용은 [Building a C#, F#, or Visual Basic Project](https://docs.travis-ci.com/user/languages/csharp/)(C#, F# 또는 Visual Basic 프로젝트 빌드)에서 공식 Travis CI 문서를 참조하세요. Travis CI 정보에 액세스할 때 커뮤니티에서 유지 관리되는 `language: csharp` 언어 식별자가 F# 및 Mono를 포함한 모든 .NET 언어에 적용된다는 것에 유의하세요.
 
-Travis CI는 앱에 대한 빌드 조합을 설명하기 위해 런타임, 환경 및 제외/포함의 조합을 지정하는 *빌드 행렬*에서 macOS 및 Linux 작업을 둘 다 실행합니다. 자세한 내용은 [.travis.yml example](https://github.com/dotnet/docs/blob/master/.travis.yml) 파일 및 Travis CI 문서의 [Customizing the Build](https://docs.travis-ci.com/user/customizing-the-build)(빌드 사용자 지정)를 참조하세요. MSBuild 기반 도구의 경우 LTS(1.0.x) 및 Current(1.1.x) 런타임이 패키지에 포함되므로 SDK를 설치하면 빌드에 필요한 모든 것이 제공됩니다.
+Travis CI는 앱에 대한 빌드 조합을 설명하기 위해 런타임, 환경 및 제외/포함의 조합을 지정하는 *빌드 행렬*에서 macOS 및 Linux 작업을 둘 다 실행합니다. 자세한 내용은 Travis CI 설명서의 [빌드 사용자 지정](https://docs.travis-ci.com/user/customizing-the-build) 문서를 참조하세요. MSBuild 기반 도구의 경우 LTS(1.0.x) 및 Current(1.1.x) 런타임이 패키지에 포함되므로 SDK를 설치하면 빌드에 필요한 모든 것이 제공됩니다.
 
 ### <a name="appveyor"></a>AppVeyor
 

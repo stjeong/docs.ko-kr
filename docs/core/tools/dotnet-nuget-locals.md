@@ -1,14 +1,14 @@
 ---
-title: dotnet nuget locals 명령 - .NET Core CLI
+title: dotnet nuget locals 명령
 description: dotnet nuget locals 명령은 http-request 캐시, 임시 캐시 또는 컴퓨터 전체의 글로벌 패키지 폴더와 같은 로컬 NuGet 리소스를 지우거나 목록에 포함합니다.
 author: karann-msft
 ms.date: 12/04/2018
-ms.openlocfilehash: f9a5073fb065d85b76afedad31255ad758c67ee6
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d0f1c7c2e0b233c214cc48d026c19755fc047bfa
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130779"
+ms.locfileid: "53170758"
 ---
 # <a name="dotnet-nuget-locals"></a>dotnet nuget locals
 
@@ -44,7 +44,7 @@ dotnet nuget locals [-h|--help]
 
 * **`--force-english-output`**
 
-  고정 영어 기반 문화권을 사용하여 응용 프로그램을 강제로 실행합니다.
+  고정 영어 기반 문화권을 사용하여 애플리케이션을 강제로 실행합니다.
 
 * **`-h|--help`**
 

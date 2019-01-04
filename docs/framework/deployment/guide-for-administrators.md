@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 844e9e53c752be0c993255fc356ade1723109b39
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a94f9c650927aee0f120ee3c0b1199b6c977ef0e
+ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129820"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "53776736"
 ---
 # <a name="net-framework-deployment-guide-for-administrators"></a>관리자를 위한 .NET Framework 배포 가이드
 이 단계별 문서에서는 시스템 관리자가 Microsoft System Center Configuration Manager를 사용하여 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 시스템 종속성을 네트워크 전체에 배포할 수 있는 방법에 대해 설명합니다. 이 문서에서는 .NET Framework 4의 최소 요구 사항이 모든 대상 클라이언트 컴퓨터에서 충족되는 것으로 가정합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 위한 소프트웨어와 하드웨어 요구 사항 목록은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
@@ -39,7 +39,7 @@ ms.locfileid: "53129820"
   
 -   **컬렉션**은 .NET Framework가 배포되는 대상인 사용자, 사용자 그룹 또는 컴퓨터와 같은 Configuration Manager 리소스 그룹입니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [System Center Configuration Manager의 컬렉션 소개](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.  
   
--   **패키지 및 프로그램**은 보통 클라이언트 컴퓨터에 설치할 소프트웨어 응용 프로그램을 나타내지만, 개별 파일, 업데이트 또는 개별 명령까지도 들어 있을 수 있습니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [System Center Configuration Manager의 패키지와 프로그램](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)을 참조하세요.  
+-   **패키지 및 프로그램**은 보통 클라이언트 컴퓨터에 설치할 소프트웨어 애플리케이션을 나타내지만, 개별 파일, 업데이트 또는 개별 명령까지도 들어 있을 수 있습니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [System Center Configuration Manager의 패키지와 프로그램](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)을 참조하세요.  
   
 -   **배포 지점**은 클라이언트 컴퓨터에서 실행할 소프트웨어에 필요한 파일을 저장하는 Configuration Manager 사이트 시스템 역할입니다. Configuration Manager 클라이언트가 소프트웨어 배포를 수신하고 처리할 때, 이 클라이언트는 배포 지점에 연결하여 소프트웨어와 연결된 콘텐츠를 다운로드하고 설치 프로세스를 시작합니다. 자세한 내용은 Configuration Manager 문서 라이브러리에서 [Configuration Manager의 콘텐츠 관리 기초 개념](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management)을 참조하세요.  
   
@@ -68,11 +68,11 @@ ms.locfileid: "53129820"
   
 1.  Configuration Manager 콘솔에서 **자산 및 준수**를 선택합니다.  
   
-2.  **자산 및 준수** 작업 영역에서 **장치 컬렉션**을 선택합니다.  
+2.  **자산 및 준수** 작업 영역에서 **디바이스 컬렉션**을 선택합니다.  
   
-3.  **만들기** 그룹의 **홈** 탭에서 **장치 컬렉션 만들기**를 선택합니다.  
+3.  **만들기** 그룹의 **홈** 탭에서 **디바이스 컬렉션 만들기**를 선택합니다.  
   
-4.  **장치 컬렉션 만들기 마법사**의 **일반** 페이지에서 컬렉션 이름을 입력합니다.  
+4.  **디바이스 컬렉션 만들기 마법사**의 **일반** 페이지에서 컬렉션 이름을 입력합니다.  
   
 5.  **찾아보기**를 선택하여 제한 컬렉션을 지정합니다.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "53129820"
   
 8.  **리소스 선택** 페이지에서 .NET Framework를 배포할 각 컴퓨터에 대한 확인란을 선택합니다. **다음**을 선택한 후 마법사를 완료합니다.  
   
-9. **장치 컬렉션 만들기 마법사**의 **멤버 자격 규칙** 페이지에서 **다음**을 선택한 후 마법사를 완료합니다.  
+9. **디바이스 컬렉션 만들기 마법사**의 **멤버 자격 규칙** 페이지에서 **다음**을 선택한 후 마법사를 완료합니다.  
   
 <a name="creating_a_package"></a>   
 ### <a name="create-a-package-and-program-for-the-net-framework-redistributable-package"></a>.NET Framework 재배포 가능 패키지에 대한 프로그램과 패키지를 만듭니다.  
@@ -92,7 +92,7 @@ ms.locfileid: "53129820"
   
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 선택합니다.  
   
-2.  **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 후 **패키지**를 선택합니다.  
+2.  **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 후 **패키지**를 선택합니다.  
   
 3.  **홈** 탭의 **만들기** 그룹에서 **패키지 만들기**를 선택합니다.  
   
@@ -128,7 +128,7 @@ ms.locfileid: "53129820"
 |**/norestart**|설치 프로그램이 자동으로 재부팅하지 않도록 합니다. 이 옵션을 사용하는 경우 Configuration Manager는 컴퓨터 다시 시작을 처리해야 합니다.|  
 |**/chainingpackage** *PackageName*|연결을 수행하는 패키지의 이름을 지정합니다. 이 정보는 [Microsoft CEIP(사용자 환경 개선 프로그램)](https://go.microsoft.com/fwlink/p/?LinkId=248244)에 등록한 사용자에 대한 다른 설치 세션 정보와 함께 보고됩니다. 패키지 이름에 공백이 포함되어 있으면 **/chainingpackage "Chaining Product"** 와 같이 큰따옴표를 구분 기호로 사용합니다.|  
   
- 위 단계를 통해 .NET Framework 4.5라는 이름의 패키지가 만들어집니다. 이 프로그램은 .NET Framework 4.5 자동 설치 프로그램을 배포합니다. 자동 설치에서 사용자는 설치 프로세스와 상호 작용하지 않으며 연결 응용 프로그램은 반환 코드를 캡처하고 재부팅을 처리해야 합니다. [설치 패키지에서 프로세스 진행 정보 가져오기](https://go.microsoft.com/fwlink/?LinkId=179606)를 참조하세요.  
+ 위 단계를 통해 .NET Framework 4.5라는 이름의 패키지가 만들어집니다. 이 프로그램은 .NET Framework 4.5 자동 설치 프로그램을 배포합니다. 자동 설치에서 사용자는 설치 프로세스와 상호 작용하지 않으며 연결 애플리케이션은 반환 코드를 캡처하고 재부팅을 처리해야 합니다. [설치 패키지에서 프로세스 진행 정보 가져오기](https://go.microsoft.com/fwlink/?LinkId=179606)를 참조하세요.  
  
 <a name="select_dist_point"></a>   
 ### <a name="select-a-distribution-point"></a>배포 지점 선택  
@@ -138,7 +138,7 @@ ms.locfileid: "53129820"
   
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 선택합니다.  
   
-2.  **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 후 **패키지**를 선택합니다.  
+2.  **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 후 **패키지**를 선택합니다.  
   
 3.  패키지 목록에서 이전 섹션에서 만든 **.NET Framework 4.5** 패키지를 선택합니다.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "53129820"
   
 1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 선택합니다.  
   
-2.  **소프트웨어 라이브러리** 작업 영역에서 **응용 프로그램 관리**를 확장한 후 **패키지**를 선택합니다.  
+2.  **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장한 후 **패키지**를 선택합니다.  
   
 3.  패키지 목록에서 **.NET Framework 4.5**로 명명하여 만든 패키지를 선택합니다.  
   
@@ -177,7 +177,7 @@ ms.locfileid: "53129820"
 9. 마법사의 **사용자 경험** 페이지에서 기본값을 사용하고 **다음**을 선택합니다.  
   
 > [!WARNING]
-> 프로덕션 환경에는 배포 일정에 대해 다른 선택 항목을 요구하는 정책이 있을 수도 있습니다. 이러한 옵션에 대한 자세한 내용은 [Advertisement Name Properties: Schedule Tab](https://docs.microsoft.com/previous-versions/system-center/configuration-manager-2007/bb694016%28v=technet.10%29)(보급 알림 이름 속성: 일정 탭)을 참조하세요.
+> 프로덕션 환경에는 배포 일정에 대해 다른 선택 항목을 요구하는 정책이 있을 수도 있습니다. 이러한 옵션에 대한 자세한 내용은 [보급 알림 이름 속성: 일정 탭](https://docs.microsoft.com/previous-versions/system-center/configuration-manager-2007/bb694016%28v=technet.10%29)을 참조하세요.
   
 10. 마법사의 **배포 지점** 페이지에서 기본값을 사용하고 **다음**을 선택합니다.  
   

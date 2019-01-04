@@ -1,15 +1,13 @@
 ---
-title: dotnet run 명령 - .NET Core CLI
-description: dotnet run 명령은 소스 코드에서 응용 프로그램을 실행하는 편리한 옵션을 제공합니다.
-author: mairaw
-ms.author: mairaw
+title: dotnet run 명령
+description: dotnet run 명령은 소스 코드에서 애플리케이션을 실행하는 편리한 옵션을 제공합니다.
 ms.date: 05/29/2018
-ms.openlocfilehash: f560e6f795f00488818647a4b5c711dcf9d59dcd
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: effca44db19e512a01f858e7a149e3fc4fe076a2
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47235496"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53170251"
 ---
 # <a name="dotnet-run"></a>dotnet run
 
@@ -42,13 +40,13 @@ dotnet run [-h|--help]
 
 ## <a name="description"></a>설명
 
-`dotnet run` 명령은 하나의 명령을 사용하여 소스 코드에서 응용 프로그램을 실행하는 편리한 옵션을 제공합니다. 명령줄에서 빠른 반복 개발에 유용합니다. 이 명령은 코드 빌드 시 [`dotnet build`](dotnet-build.md) 명령에 의존합니다. 프로젝트를 먼저 복원해야 하는 등, 빌드에 대한 요구 사항은 `dotnet run`에도 적용됩니다.
+`dotnet run` 명령은 하나의 명령을 사용하여 소스 코드에서 애플리케이션을 실행하는 편리한 옵션을 제공합니다. 명령줄에서 빠른 반복 개발에 유용합니다. 이 명령은 코드 빌드 시 [`dotnet build`](dotnet-build.md) 명령에 의존합니다. 프로젝트를 먼저 복원해야 하는 등, 빌드에 대한 요구 사항은 `dotnet run`에도 적용됩니다.
 
-출력 파일은 기본 위치, 즉 `bin/<configuration>/<target>`에 기록됩니다. 예를 들어 `netcoreapp2.1` 응용 프로그램이 있고 `dotnet run`을 실행하는 경우 출력은 `bin/Debug/netcoreapp2.1`에 추가됩니다. 필요에 따라 파일을 덮어씁니다. 임시 파일은 `obj` 디렉터리에 놓입니다.
+출력 파일은 기본 위치, 즉 `bin/<configuration>/<target>`에 기록됩니다. 예를 들어 `netcoreapp2.1` 애플리케이션이 있고 `dotnet run`을 실행하는 경우 출력은 `bin/Debug/netcoreapp2.1`에 추가됩니다. 필요에 따라 파일을 덮어씁니다. 임시 파일은 `obj` 디렉터리에 놓입니다.
 
 프로젝트가 여러 프레임워크를 지정하는 경우 프레임워크를 지정하는 데 `-f|--framework <FRAMEWORK>` 옵션을 사용하지 않은 한, `dotnet run`을 실행하면 오류가 발생합니다.
 
-`dotnet run` 명령은 빌드된 어셈블리가 아닌 프로젝트의 컨텍스트에서 사용됩니다. 대신 프레임워크 종속 응용 프로그램 DLL을 실행하려고 하는 경우 명령 없이 [dotnet](dotnet.md)을 사용해야 합니다. 예를 들어 `myapp.dll`을 실행하려면 다음을 사용합니다.
+`dotnet run` 명령은 빌드된 어셈블리가 아닌 프로젝트의 컨텍스트에서 사용됩니다. 대신 프레임워크 종속 애플리케이션 DLL을 실행하려고 하는 경우 명령 없이 [dotnet](dotnet.md)을 사용해야 합니다. 예를 들어 `myapp.dll`을 실행하려면 다음을 사용합니다.
 
 ```console
 dotnet myapp.dll
@@ -56,7 +54,7 @@ dotnet myapp.dll
 
 `dotnet` 드라이버에 대한 자세한 내용은 [.NET Core 명령줄 도구(CLI)](index.md) 항목을 참조하세요.
 
-응용 프로그램을 실행하기 위해 `dotnet run` 명령은 NuGet 캐시에서 공유 런타임의 외부에 있는 응용 프로그램의 종속성을 확인합니다. 캐시된 종속성을 사용하기 때문에 프로덕션 환경에서 응용 프로그램을 실행하는 데 `dotnet run`을 사용하는 것은 바람직하지 않습니다. 대신, [`dotnet publish`](dotnet-publish.md) 명령을 사용하여 [배포를 만들고](../deploying/index.md) 게시된 출력을 배포합니다.
+애플리케이션을 실행하기 위해 `dotnet run` 명령은 NuGet 캐시에서 공유 런타임의 외부에 있는 애플리케이션의 종속성을 확인합니다. 캐시된 종속성을 사용하기 때문에 프로덕션 환경에서 애플리케이션을 실행하는 데 `dotnet run`을 사용하는 것은 바람직하지 않습니다. 대신, [`dotnet publish`](dotnet-publish.md) 명령을 사용하여 [배포를 만들고](../deploying/index.md) 게시된 출력을 배포합니다.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
@@ -66,7 +64,7 @@ dotnet myapp.dll
 
 `--`
 
-실행 중인 응용 프로그램에 대한 인수에서 `dotnet run`에 대한 인수를 구분합니다. 이 구분 기호 다음의 모든 인수가 실행 중인 응용 프로그램에 전달됩니다.
+실행 중인 애플리케이션에 대한 인수에서 `dotnet run`에 대한 인수를 구분합니다. 이 구분 기호 다음의 모든 인수가 실행 중인 애플리케이션에 전달됩니다.
 
 `-c|--configuration {Debug|Release}`
 
@@ -86,7 +84,7 @@ dotnet myapp.dll
 
 `--launch-profile <NAME>`
 
-응용 프로그램을 시작할 때 사용할 시작 프로필(있는 경우)의 이름입니다. 시작 프로필은 *launchSettings.json* 파일에서 정의되고 일반적으로 `Development`, `Staging` 및 `Production`이라고 합니다. 자세한 내용은 [여러 환경 사용](/aspnet/core/fundamentals/environments)을 참조하세요.
+애플리케이션을 시작할 때 사용할 시작 프로필(있는 경우)의 이름입니다. 시작 프로필은 *launchSettings.json* 파일에서 정의되고 일반적으로 `Development`, `Staging` 및 `Production`이라고 합니다. 자세한 내용은 [여러 환경 사용](/aspnet/core/fundamentals/environments)을 참조하세요.
 
 `--no-build`
 
@@ -98,7 +96,7 @@ dotnet myapp.dll
 
 `--no-launch-profile`
 
-응용 프로그램을 구성하는 데 *launchSettings.json*을 사용하지 않습니다.
+애플리케이션을 구성하는 데 *launchSettings.json*을 사용하지 않습니다.
 
 `--no-restore`
 
@@ -120,7 +118,7 @@ dotnet myapp.dll
 
 `--`
 
-실행 중인 응용 프로그램에 대한 인수에서 `dotnet run`에 대한 인수를 구분합니다. 이 구분 기호 다음의 모든 인수가 실행 중인 응용 프로그램에 전달됩니다.
+실행 중인 애플리케이션에 대한 인수에서 `dotnet run`에 대한 인수를 구분합니다. 이 구분 기호 다음의 모든 인수가 실행 중인 애플리케이션에 전달됩니다.
 
 `-c|--configuration {Debug|Release}`
 
@@ -140,7 +138,7 @@ dotnet myapp.dll
 
 `--launch-profile <NAME>`
 
-응용 프로그램을 시작할 때 사용할 시작 프로필(있는 경우)의 이름입니다. 시작 프로필은 *launchSettings.json* 파일에서 정의되고 일반적으로 `Development`, `Staging` 및 `Production`이라고 합니다. 자세한 내용은 [여러 환경 사용](/aspnet/core/fundamentals/environments)을 참조하세요.
+애플리케이션을 시작할 때 사용할 시작 프로필(있는 경우)의 이름입니다. 시작 프로필은 *launchSettings.json* 파일에서 정의되고 일반적으로 `Development`, `Staging` 및 `Production`이라고 합니다. 자세한 내용은 [여러 환경 사용](/aspnet/core/fundamentals/environments)을 참조하세요.
 
 `--no-build`
 
@@ -152,7 +150,7 @@ dotnet myapp.dll
 
 `--no-launch-profile`
 
-응용 프로그램을 구성하는 데 *launchSettings.json*을 사용하지 않습니다.
+애플리케이션을 구성하는 데 *launchSettings.json*을 사용하지 않습니다.
 
 `--no-restore`
 
@@ -170,7 +168,7 @@ dotnet myapp.dll
 
 `--`
 
-실행 중인 응용 프로그램에 대한 인수에서 `dotnet run`에 대한 인수를 구분합니다. 이 구분 기호 다음의 모든 인수가 실행 중인 응용 프로그램에 전달됩니다.
+실행 중인 애플리케이션에 대한 인수에서 `dotnet run`에 대한 인수를 구분합니다. 이 구분 기호 다음의 모든 인수가 실행 중인 애플리케이션에 전달됩니다.
 
 `-c|--configuration {Debug|Release}`
 
@@ -203,7 +201,7 @@ dotnet myapp.dll
 
 `dotnet run --project ./projects/proj1/proj1.csproj`
 
-현재 디렉터리에 있는 프로젝트를 실행합니다. 비어 있는 `--` 옵션을 사용하므로 이 예제의 `--help` 인수는 응용 프로그램에 전달됩니다.
+현재 디렉터리에 있는 프로젝트를 실행합니다. 비어 있는 `--` 옵션을 사용하므로 이 예제의 `--help` 인수는 애플리케이션에 전달됩니다.
 
 `dotnet run --configuration Release -- --help`
 

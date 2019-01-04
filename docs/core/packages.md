@@ -1,15 +1,15 @@
 ---
-title: 패키지, 메타패키지 및 프레임워크
+title: 패키지, 메타패키지 및 프레임워크 - .NET Core
 description: 패키지, 메타패키지 및 프레임워크 용어에 관해 알아봅니다.
 author: richlander
-ms.author: mairaw
 ms.date: 06/20/2016
-ms.openlocfilehash: e69e9707d3984f37ebc2c1103f9d89f3cbdf5cbd
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.custom: seodec18
+ms.openlocfilehash: 25247972346fb181279414a762d73d2f3218f0e0
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195283"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168821"
 ---
 # <a name="packages-metapackages-and-frameworks"></a>패키지, 메타패키지 및 프레임워크
 
@@ -137,9 +137,9 @@ ms.locfileid: "50195283"
 
 `NETStandard.Library`의 1.3.0 버전으로 `netstandard1.6`를 대상으로 하는 반대의 경우는 유효하지 않습니다. 더 낮은 메타패키지로 더 높은 프레임워크를 대상으로 할 수 없습니다. 더 낮은 버전의 메타패키지는 더 높은 프레임워크의 자산을 노출하지 않기 때문입니다. 메타패키지의 버전 관리 체계는 메타패키지가 프레임워크의 최고 버전과 일치해야 한다고 주장합니다. 버전 관리 체계 덕분에, `netstandard1.6` 자산을 포함하는 경우 `NETStandard.Library`의 첫 번째 버전은 v1.6.0입니다. 위의 예제에는 v1.3.0이 사용되지만(위 예제와 대칭을 위해), 실제로 존재하지는 않습니다.
 
-### <a name="net-core-application"></a>.NET Core 응용 프로그램
+### <a name="net-core-application"></a>.NET Core 애플리케이션
 
-.NET Core([대상 프레임워크 모니커](../standard/frameworks.md): `netcoreapp`) 프레임워크는 .NET Core 배포와 함께 제공되는 패키지 및 관련 API, 그리고 콘솔 응용 프로그램 모델을 나타냅니다. .NET Core 앱은 콘솔 응용 프로그램 모델을 대상으로 하기 때문에 이 프레임워크를 사용해야 하며, .NET Core에서만 실행되도록 만들어진 라이브러리도 마찬가지입니다. 이 프레임워크를 사용하면 앱과 라이브러리의 실행이 .NET Core로만 제한됩니다. 
+.NET Core([대상 프레임워크 모니커](../standard/frameworks.md): `netcoreapp`) 프레임워크는 .NET Core 배포와 함께 제공되는 패키지 및 관련 API, 그리고 콘솔 애플리케이션 모델을 나타냅니다. .NET Core 앱은 콘솔 애플리케이션 모델을 대상으로 하기 때문에 이 프레임워크를 사용해야 하며, .NET Core에서만 실행되도록 만들어진 라이브러리도 마찬가지입니다. 이 프레임워크를 사용하면 앱과 라이브러리의 실행이 .NET Core로만 제한됩니다. 
 
 `Microsoft.NETCore.App` 메타패키지는 `netcoreapp` 프레임워크를 대상으로 합니다. 최대 60개 라이브러리, `NETStandard.Library` 패키지에서 제공하는 최대 40개 및 추가 20개에 대한 액세스를 제공합니다. 추가 API에 대한 액세스 권한을 얻기 위해 `netcoreapp` 또는 호환 프레임워크(예: `netstandard`)를 대상으로 하는 추가 라이브러리를 참조할 수 있습니다. 
 

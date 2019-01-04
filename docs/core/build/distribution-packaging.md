@@ -2,14 +2,14 @@
 title: .NET Core 배포 패키징
 description: 배포를 위해 .NET Core를 패키지하고 이름과 버전을 지정하는 방법에 관해 알아봅니다.
 author: bleroy
-ms.author: mairaw
 ms.date: 06/28/2017
-ms.openlocfilehash: 41e8729d3058c2e3e1ea1cab9a8f28b3062bb93c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.custom: seodec18
+ms.openlocfilehash: be5767351ad1cdac15c73f718f67a0d120cf65b0
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145649"
+ms.locfileid: "53170420"
 ---
 # <a name="net-core-distribution-packaging"></a>.NET Core 배포 패키징
 
@@ -44,17 +44,17 @@ ms.locfileid: "53145649"
         └── dotnet               (10)
 ```
 
-- (1) **dotnet** 호스트("muxer"라고도 함)는 런타임을 활성화하여 응용 프로그램을 시작하고 SDK를 활성화하여 명령을 보내는 두 가지의 고유한 역할을 가지고 있습니다. 호스트는 네이티브 실행 파일(`dotnet.exe`)입니다.
+- (1) **dotnet** 호스트("muxer"라고도 함)는 런타임을 활성화하여 애플리케이션을 시작하고 SDK를 활성화하여 명령을 보내는 두 가지의 고유한 역할을 가지고 있습니다. 호스트는 네이티브 실행 파일(`dotnet.exe`)입니다.
 
 단일 호스트가 있지만 다른 구성 요소는 대부분 버전이 지정된 디렉터리(2,3,5,6)에 있습니다. 여러 버전이 나란히 설치되므로 시스템에 여러 버전이 표시될 수 있습니다.
 
-- (2) **host/fxr/\<fxr 버전>** 에는 호스트에서 사용하는 프레임워크 확인 논리가 포함됩니다. 호스트는 설치된 최신 hostfxr을 사용합니다. hostfxr는 .NET Core 응용 프로그램을 실행할 때 적합한 런타임을 선택하는 일을 담당합니다. 예를 들어 .NET Core 2.0.0에 대해 빌드된 응용 프로그램을 사용할 수 있는 경우 2.0.5 런타임을 사용합니다. 마찬가지로 hostfxr은 개발 중에 적절한 SDK를 선택합니다.
+- (2) **host/fxr/\<fxr 버전>** 에는 호스트에서 사용하는 프레임워크 확인 논리가 포함됩니다. 호스트는 설치된 최신 hostfxr을 사용합니다. hostfxr는 .NET Core 애플리케이션을 실행할 때 적합한 런타임을 선택하는 일을 담당합니다. 예를 들어 .NET Core 2.0.0에 대해 빌드된 애플리케이션을 사용할 수 있는 경우 2.0.5 런타임을 사용합니다. 마찬가지로 hostfxr은 개발 중에 적절한 SDK를 선택합니다.
 
-- (3) **sdk/\<sdk version>** SDK("도구"라고도 함)는 .NET Core 라이브러리 및 응용 프로그램을 작성하고 빌드하는 데 사용할 수 있는 관리되는 도구 집합입니다. SDK에는 CLI, Roslyn 컴파일러, MSBuild, 관련 빌드 작업 및 대상, NuGet, 새 프로젝트 템플릿 등이 포함됩니다.
+- (3) **sdk/\<sdk version&gt;** SDK("도구"라고도 함)는 .NET Core 라이브러리 및 애플리케이션을 작성하고 빌드하는 데 사용할 수 있는 관리되는 도구 집합입니다. SDK에는 CLI, Roslyn 컴파일러, MSBuild, 관련 빌드 작업 및 대상, NuGet, 새 프로젝트 템플릿 등이 포함됩니다.
 
 - (4) **sdk/NuGetFallbackFolder**에는 `dotnet restore` 단계 동안 SDK에서 사용하는 NuGet 패키지의 캐시가 포함됩니다.
 
-**공유** 폴더에는 프레임워크가 포함됩니다. 공유 프레임워크는 다른 응용 프로그램에서 사용할 수 있도록 중앙 위치에 라이브러리의 집합을 제공합니다.
+**공유** 폴더에는 프레임워크가 포함됩니다. 공유 프레임워크는 다른 애플리케이션에서 사용할 수 있도록 중앙 위치에 라이브러리의 집합을 제공합니다.
 
 - (5) **shared/Microsoft.NETCore.App/\<runtime 버전>** 이 프레임워크에는 지원되는 .NET Core 런타임 및 관리 라이브러리가 포함됩니다.
 
@@ -68,14 +68,14 @@ ms.locfileid: "53145649"
 
 .NET Core 버전 관리는 런타임 구성 요소 `[major].[minor]` 버전 번호에 기반합니다.
 SDK 버전은 동일한 `[major].[minor]`를 사용하고, SDK의 기능 및 패치 의미 체계를 결합한 독립 `[patch]`를 포함합니다.
-예를 들어, SDK 버전 2.2.302는 2.2 런타임을 지원하는 SDK의 세 번째 기능 릴리스의 두 번째 패치 릴리스입니다.
+예: SDK 버전 2.2.302는 2.2 런타임을 지원하는 SDK의 세 번째 기능 릴리스의 두 번째 패치 릴리스입니다.
 
 일부 패키지에는 해당 이름의 버전 번호 일부가 포함됩니다. 그러면 최종 사용자가 특정 버전을 설치할 수 있습니다.
 버전의 나머지 부분은 버전 이름에 포함되지 않습니다. 그러면 OS 패키지 관리자가 패키지를 업데이트할 수 있습니다(예: 보안 해결을 자동으로 설치).
 
 다음 표에서는 권장되는 패키지를 보여줍니다.
 
-| name                                    | 예제                | 사용 사례: 설치 중...           | 포함           | 종속성                                   | 버전            |
+| name                                    | 예제                | 사용 사례: 설치 ...           | 포함           | 종속성                                   | 버전            |
 |-----------------------------------------|------------------------|---------------------------------|--------------------|------------------------------------------------|--------------------|
 | dotnet-sdk-[major]                      | dotnet-sdk-2           | 주요 런타임의 최신 sdk    |                    | dotnet-sdk-[major].[latestminor]               | \<sdk version>     |
 | dotnet-sdk-[major].[minor]              | dotnet-sdk-2.1         | 특정 런타임의 최신 sdk |                    | dotnet-sdk-[major].[minor].[latest sdk feat]xx | \<sdk version>     |
@@ -116,7 +116,7 @@ SDK 버전은 동일한 `[major].[minor]`를 사용하고, SDK의 기능 및 패
 | dotnet-host-fxr                                | dotnet-host-fxr          | (2)              | host:\<runtime 버전>+                                  |
 | dotnet-host                                    | dotnet-host              | (1),(8),(9),(10) |                                                           |
 
-패치 패키지를 사용하는 대신 패키지 관리자를 사용하여 특정 버전에 패키지를 _고정_합니다. 다른 응용 프로그램/사용자에 영향을 주지 않으려면 컨테이너에서 이러한 응용 프로그램을 빌드하고 배포합니다.
+패치 패키지를 사용하는 대신 패키지 관리자를 사용하여 특정 버전에 패키지를 _고정_합니다. 다른 애플리케이션/사용자에 영향을 주지 않으려면 컨테이너에서 이러한 애플리케이션을 빌드하고 배포합니다.
 
 ## <a name="building-packages"></a>패키지 빌드
 

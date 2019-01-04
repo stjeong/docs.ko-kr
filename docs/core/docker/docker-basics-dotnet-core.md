@@ -1,19 +1,19 @@
 ---
-title: Docker를 사용하여 앱 컨테이너화 - .NET Core
+title: Docker를 사용하여 앱 컨테이너화
 description: 이 자습서에서는 기본 .NET Core 애플리케이션을 만들고 Docker를 사용하여 컨테이너화하는 방법을 설명합니다.
 ms.date: 10/11/2018
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 8f08936142b0cc44baf268f100e228f68920b69d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: eed72553576f4154fe63b2e5cf035a781afe4b7c
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126370"
+ms.locfileid: "53169588"
 ---
 # <a name="how-to-containerize-a-net-core-application"></a>.NET Core 애플리케이션을 컨테이너화하는 방법
 
-이 자습서에서는 Docker 컨테이너 빌드 및 .NET Core 응용 프로그램에 대한 배포 작업을 설명합니다. [Docker 플랫폼](https://docs.docker.com/engine/docker-overview/#the-docker-platform)은 [Docker 엔진](https://docs.docker.com/engine/docker-overview/#docker-engine)을 사용하여 [Docker 이미지](https://docs.docker.com/glossary/?term=image)로 앱을 신속하게 빌드하고 패키지합니다. 이러한 이미지는 [계층화된 컨테이너](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers)에서 배포되고 실행되도록 [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) 형식으로 작성됩니다.
+이 자습서에서는 Docker 컨테이너 빌드 및 .NET Core 애플리케이션에 대한 배포 작업을 설명합니다. [Docker 플랫폼](https://docs.docker.com/engine/docker-overview/#the-docker-platform)은 [Docker 엔진](https://docs.docker.com/engine/docker-overview/#docker-engine)을 사용하여 [Docker 이미지](https://docs.docker.com/glossary/?term=image)로 앱을 신속하게 빌드하고 패키지합니다. 이러한 이미지는 [계층화된 컨테이너](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers)에서 배포되고 실행되도록 [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) 형식으로 작성됩니다.
 
 이 자습서를 진행하면서 다음을 익히게 됩니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "53126370"
 
 ## <a name="net-core-easiest-way-to-get-started"></a>.NET Core: 시작하는 가장 쉬운 방법
 
-Docker 이미지를 만들기 전에 컨테이너화할 응용 프로그램이 필요합니다. Linux, MacOS 또는 Windows에서 만들 수 있습니다. 작업을 수행하는 가장 빠르고 쉬운 방법은 .NET Core를 사용하는 것입니다.
+Docker 이미지를 만들기 전에 컨테이너화할 애플리케이션이 필요합니다. Linux, MacOS 또는 Windows에서 만들 수 있습니다. 작업을 수행하는 가장 빠르고 쉬운 방법은 .NET Core를 사용하는 것입니다.
 
 .NET Core CLI 도구 집합에 익숙하지 않은 경우 [.NET Core SDK 개요](../tools/index.md)를 읽어 보세요.
 
@@ -80,13 +80,13 @@ dotnet run
 
 1. `$ dotnet new console`
 
-   [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  응용 프로그램에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
+   [`dotnet new`](../tools/dotnet-new.md)는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 `Hello.csproj` 프로젝트 파일입니다.  애플리케이션에 대한 진입점을 포함하는 기본 파일인 `Program.cs`도 만듭니다.
 
    `Hello.csproj`:
 
    프로젝트 파일은 종속성을 복원하고 프로그램을 빌드하는 데 필요한 모든 항목을 지정합니다.
 
-   * `OutputType` 태그에서는 실행 파일, 즉 콘솔 응용 프로그램을 빌드하고 있음을 지정합니다.
+   * `OutputType` 태그에서는 실행 파일, 즉 콘솔 애플리케이션을 빌드하고 있음을 지정합니다.
    * `TargetFramework` 태그에서는 대상으로 하는 .NET 구현을 지정합니다. 고급 시나리오에서는 여러 대상 프레임워크를 지정하고 단일 작업에서 지정된 프레임워크로 빌드할 수 있습니다. 이 자습서에서는 .NET Core 2.1용으로 빌드합니다.
 
    `Program.cs`:
@@ -105,7 +105,7 @@ dotnet run
 
 2. `$ dotnet run`
 
-   [`dotnet run`](../tools/dotnet-run.md)는 성공적인 필드를 확인하기 위해 [`dotnet build`](../tools/dotnet-build.md)를 호출한 다음 응용 프로그램을 실행하기 위해 `dotnet <assembly.dll>`을 호출합니다.
+   [`dotnet run`](../tools/dotnet-run.md)는 성공적인 필드를 확인하기 위해 [`dotnet build`](../tools/dotnet-build.md)를 호출한 다음 애플리케이션을 실행하기 위해 `dotnet <assembly.dll>`을 호출합니다.
 
     ```console
     $ dotnet run
@@ -113,9 +113,9 @@ dotnet run
     Hello World!
     ```
 
-    고급 시나리오의 경우 자세한 내용은 [.NET Core 응용 프로그램 배포](../deploying/index.md)를 참조하세요.
+    고급 시나리오의 경우 자세한 내용은 [.NET Core 애플리케이션 배포](../deploying/index.md)를 참조하세요.
 
-## <a name="dockerize-the-net-core-application"></a>.NET Core 응용 프로그램 Docker화
+## <a name="dockerize-the-net-core-application"></a>.NET Core 애플리케이션 Docker화
 
 Hello .NET Core 콘솔 앱은 성공적으로 로컬로 실행됩니다. 이제 한 단계 나아가서 Docker에서 앱을 빌드하고 실행해 보겠습니다.
 
@@ -171,7 +171,7 @@ RUN dotnet restore
 COPY . ./
 ```
 
-이 **RUN** 명령으로 앱을 게시하는 중입니다. [**dotnet publish**](../tools/dotnet-publish.md) 명령은 응용 프로그램을 컴파일하고, 프로젝트 파일에 지정된 종속성을 읽은 다음 결과 파일 집합을 디렉터리에 게시합니다. 앱은 **릴리스** 구성과 함께 게시되며 기본 디렉터리에 출력됩니다.
+이 **RUN** 명령으로 앱을 게시하는 중입니다. [**dotnet publish**](../tools/dotnet-publish.md) 명령은 애플리케이션을 컴파일하고, 프로젝트 파일에 지정된 종속성을 읽은 다음 결과 파일 집합을 디렉터리에 게시합니다. 앱은 **릴리스** 구성과 함께 게시되며 기본 디렉터리에 출력됩니다.
 
 ```Dockerfile
 RUN dotnet publish -c Release -o out
@@ -278,6 +278,6 @@ Hello World!
 * [Windows 컨테이너의 Dockerfile](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 * [.NET Framework Docker 샘플](https://github.com/Microsoft/dotnet-framework-docker-samples)
 * [DockerHub의 ASP.NET Core](https://hub.docker.com/r/microsoft/aspnetcore/)
-* [.NET Core 응용 프로그램 Docker화 - Docker 자습서](https://docs.docker.com/engine/examples/dotnetcore/)
+* [.NET Core 애플리케이션 Docker화 - Docker 자습서](https://docs.docker.com/engine/examples/dotnetcore/)
 * [Visual Studio Docker 도구로 작업](https://docs.microsoft.com/aspnet/core/publishing/visual-studio-tools-for-docker)
 * [Azure Container Registry의 Docker 이미지를 Azure Container Instances에 배포](https://blogs.msdn.microsoft.com/stevelasker/2017/07/28/deploying-docker-images-from-the-azure-container-registry-to-azure-container-instances/)

@@ -1,15 +1,13 @@
 ---
-title: dotnet sln 명령 - .NET Core CLI
+title: dotnet sln 명령
 description: dotnet-sln 명령은 솔루션 파일의 프로젝트를 추가, 제거 및 나열하는 간편한 옵션을 제공합니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 06/13/2018
-ms.openlocfilehash: 2651e8e14ad43f41354b8165179f95f65e732f4c
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: a88e22c68f639f2a42e59f9a271e431f04e24a2b
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121223"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169146"
 ---
 # <a name="dotnet-sln"></a>dotnet sln
 

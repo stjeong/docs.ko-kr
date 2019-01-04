@@ -1,15 +1,13 @@
 ---
-title: dotnet tool update 명령 - .NET Core CLI
+title: dotnet tool update 명령
 description: dotnet tool update 명령은 컴퓨터에 지정된 .NET Core Global Tool을 업데이트합니다.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
-ms.openlocfilehash: 90b0dc91f74d890420dc7185642aa89100cadba8
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 2716f7f88ffe364bebacf970d7152f5509edc888
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44069395"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53169744"
 ---
 # <a name="dotnet-tool-update"></a>dotnet tool update
 

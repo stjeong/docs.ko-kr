@@ -1,25 +1,25 @@
 ---
 title: Linux에서 .NET Core의 필수 구성 요소
-description: Linux 컴퓨터에서 .NET Core 응용 프로그램을 개발, 배포 및 실행하기 위해 지원되는 Linux 버전 및 .NET Core 종속성입니다.
+description: Linux 컴퓨터에서 .NET Core 애플리케이션을 개발, 배포 및 실행하기 위해 지원되는 Linux 버전 및 .NET Core 종속성입니다.
 author: thraka
 ms.author: adegeo
-ms.date: 12/03/2018
-ms.openlocfilehash: e250158d10c6a03535f4e693e74954747f860a3c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 12/14/2018
+ms.openlocfilehash: 7a2b0b3af97500ab0988e5de7a44713a8c05ccb9
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148336"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656052"
 ---
 # <a name="prerequisites-for-net-core-on-linux"></a>Linux에서 .NET Core의 필수 구성 요소
 
-이 문서에서는 Linux에서 .NET Core 응용 프로그램을 개발하는 데 필요한 종속성을 보여 줍니다. 다음에 나오는 지원되는 Linux 배포/버전 및 종속성은 Linux에서 .NET Core 앱을 개발하기 위한 두 가지 방법에 적용됩니다.
+이 문서에서는 Linux에서 .NET Core 애플리케이션을 개발하는 데 필요한 종속성을 보여 줍니다. 다음에 나오는 지원되는 Linux 배포/버전 및 종속성은 Linux에서 .NET Core 앱을 개발하기 위한 두 가지 방법에 적용됩니다.
 
 * [즐겨 찾는 편집기를 사용하는 명령줄](tutorials/using-with-xplat-cli.md)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 > [!NOTE]
-> .NET Core SDK 패키지는 프로덕션 서버/환경에서 필요하지 않습니다. .NET Core 런타임 패키지만 프로덕션 환경에 배포된 앱에 필요합니다. NET Core 런타임은 자체 포함된 배포의 일부로 앱으로 배포되지만 프레임워크 종속 배포된 앱에 대해 별도로 배포되어야 합니다. 프레임워크 종속 및 자체 포함된 배포 형식에 대한 자세한 내용은 [.NET Core 응용 프로그램 배포](./deploying/index.md)를 참조하세요. 또한 특정 지침은 [자체 포함된 Linux 응용 프로그램](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.
+> .NET Core SDK 패키지는 프로덕션 서버/환경에서 필요하지 않습니다. .NET Core 런타임 패키지만 프로덕션 환경에 배포된 앱에 필요합니다. NET Core 런타임은 자체 포함된 배포의 일부로 앱으로 배포되지만 프레임워크 종속 배포된 앱에 대해 별도로 배포되어야 합니다. 프레임워크 종속 및 자체 포함된 배포 형식에 대한 자세한 내용은 [.NET Core 애플리케이션 배포](./deploying/index.md)를 참조하세요. 또한 특정 지침은 [자체 포함된 Linux 애플리케이션](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.
 
 ## <a name="supported-linux-versions"></a>지원되는 Linux 버전
 
@@ -60,6 +60,34 @@ ms.locfileid: "53148336"
 * openSUSE 42.3 이상 버전(.NET Core 1.1)
 
 지원 OS 버전 중 .NET Core 1.x를 지원하는 운영 체제 및 수명 주기 정책 링크는 [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)(.NET Core 1.x가 지원되는 OS 버전)를 참조하세요.
+
+# <a name="net-core-30-preview-1tabnetcore30"></a>[.NET Core 3.0 Preview 1](#tab/netcore30)
+
+.NET Core 3.0 Preview 1은 단일 운영 체제로 Linux를 처리합니다. 지원되는 Linux 배포에 대한 단일 Linux 빌드(칩 아키텍처당)가 있습니다. 
+
+다운로드 링크 및 자세한 내용은 [.NET Core 3.0 다운로드](https://dotnet.microsoft.com/download/dotnet-core/3.0)를 참조하세요.
+
+.NET Core 3.0 Preview 1은 다음 Linux 배포/버전에서 지원됩니다. 
+
+OS                            | 버전               | 아키텍처  
+------------------------------|-----------------------|----------------
+Red Hat Enterprise Linux      | 6                     | X64
+Red Hat Enterprise Linux<br>CentOS<br>Oracle Linux  | 7                     | X64
+Fedora                        | 28                    | X64
+Debian                        | 10                     | x64, ARM32\*, ARM64\*
+Ubuntu                        | 16.04+, 18.04+        | x64, ARM32\*, ARM64\*
+Linux Mint                    | 18                    | X64
+openSUSE                      | 42.3+                 | X64
+SLES(SUSE Enterprise Linux)  | 12 SP2+               | X64
+Alpine Linux                  | 3.8+                  | x64, ARM64
+
+\* ARM32 및 ARM64 지원은 Debian 9 및 Ubuntu 16.04에서 시작합니다. 해당 배포판의 이전 버전은 ARM 칩에서 지원되지 않습니다.
+
+지원 OS 버전 중 .NET Core 3.0이 지원되는 운영 체제, 배포 및 버전, 수명 주기 정책 링크의 전체 목록은 [.NET Core 3.0이 지원되는 OS 버전](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)을 참조하세요.
+
+ARM64에 .NET Core 3.0을 설치하는 방법에 대한 자세한 내용은 [Linux ARM64에 .NET Core 3.0 설치](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213)를 참조하세요.
+
+
 
 ---
 
@@ -104,7 +132,7 @@ Fedora 사용자: openssl 버전 >= 1.1인 경우 compat-openssl10을 설치해�
 * libunwind
 * libuuid
 
-종속성에 대한 자세한 내용은 [자체 포함 Linux 응용 프로그램](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.
+종속성에 대한 자세한 내용은 [자체 포함 Linux 애플리케이션](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.
 
 ## <a name="installing-net-core-dependencies-with-the-native-installers"></a>기본 설치 관리자를 사용하여 .NET Core 종속성 설치
 

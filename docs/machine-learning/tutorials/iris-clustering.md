@@ -3,17 +3,17 @@ title: 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터�
 description: 클러스터링 시나리오에서 ML.NET을 사용하는 방법 알아보기
 author: pkulikov
 ms.author: johalex
-ms.date: 07/02/2018
+ms.date: 12/17/2018
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 5bd73c774f60466daaf52215c34e7e17b5f5cc9c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 012cea471c69f66ad9a61db858b4575606b31f74
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145633"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656325"
 ---
-# <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>자습서: ML.NET를 통해 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링
+# <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>자습서: ML.NET을 통해 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링
 
 > [!NOTE]
 > 이 항목은 현재 미리 보기로 제공되는 ML.NET을 참조하며, 자료는 변경될 수 있습니다. 자세한 내용은 [ML.NET 소개](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)를 참조하세요.
@@ -42,9 +42,9 @@ ms.locfileid: "53145633"
 
 각 꽃이 속한 그룹을 모르기 때문에 [감독되지 않는 기계 학습](../resources/glossary.md#unsupervised-machine-learning) 작업을 선택합니다. 같은 그룹의 요소를 다른 그룹의 요소보다 더 서로 유사한 방식으로 그룹의 데이터 집합을 나누려면 [클러스터링](../resources/tasks.md#clustering) 기계 학습 작업을 사용합니다.
 
-## <a name="create-a-console-application"></a>콘솔 응용 프로그램 만들기
+## <a name="create-a-console-application"></a>콘솔 애플리케이션 만들기
 
-1. Visual Studio 2017을 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드와 **.NET Core** 노드를 차례로 선택합니다. 그런 다음 **콘솔 앱(.NET Core)** 프로젝트 템플릿을 선택합니다. **이름** 텍스트 상자에 "IrisClustering"을 입력한 다음, **확인** 단추를 선택합니다.
+1. Visual Studio 2017을 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 **Visual C#** 노드와 **.NET Core** 노드를 차례로 선택합니다. 그런 다음 **콘솔 앱(.NET Core)** 프로젝트 템플릿을 선택합니다. **이름** 텍스트 상자에 "IrisFlowerClustering"을 입력한 다음, **확인** 단추를 선택합니다.
 
 1. 프로젝트에서 *Data* 디렉터리를 만들어 데이터 집합과 모델 파일을 저장합니다.
 
@@ -78,11 +78,11 @@ ms.locfileid: "53145633"
 1. **새 항목 추가** 대화 상자에서 **클래스**를 선택하고 **이름** 필드를 *IrisData.cs*로 변경합니다. 그런 다음, **추가** 단추를 선택합니다.
 1. 새 파일에 다음 `using` 지시문을 추가합니다.
 
-   [!code-csharp[Add necessary usings](../../../samples/machine-learning/tutorials/IrisClustering/IrisData.cs#1)]
+   [!code-csharp[Add necessary usings](~/samples/machine-learning/tutorials/IrisFlowerClustering/IrisData.cs#Usings)]
 
 기존 클래스 정의를 제거하고 `IrisData` 및 `ClusterPrediction` 클래스를 정의하는 다음 코드를 *IrisData.cs* 파일에 추가합니다.
 
-[!code-csharp[Define data classes](../../../samples/machine-learning/tutorials/IrisClustering/IrisData.cs#2)]
+[!code-csharp[Define data classes](~/samples/machine-learning/tutorials/IrisFlowerClustering/IrisData.cs#ClassDefinitions)]
 
 `IrisData`는 입력 데이터 클래스이며 각 데이터 집합의 각 특징에 대한 정의를 포함합니다. [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) 특성을 사용하여 데이터 집합 파일에서 소스 열의 인덱스를 지정합니다.
 
@@ -98,83 +98,71 @@ ms.locfileid: "53145633"
 
 *Program.cs* 파일로 돌아가서 두 개의 필드를 추가하여 데이터 집합 파일에 대한 경로와 모델을 저장할 파일에 대한 경로를 저장합니다.
 
-- `_dataPath`에는 모델을 학습시키는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
+- `_dataPath`에는 모델을 학습하는 데 사용되는 데이터 집합이 있는 파일에 대한 경로가 포함됩니다.
 - `_modelPath`에는 학습된 모델이 저장되는 파일에 대한 경로가 포함됩니다.
 
 `Main` 메서드 바로 위에 다음 코드를 추가하여 해당 경로를 지정합니다.
 
-[!code-csharp[Initialize paths](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#1)]
+[!code-csharp[Initialize paths](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#Paths)]
 
 위의 코드를 컴파일하려면 *Program.cs* 파일의 맨 위에 있는 다음 `using` 지시문을 추가합니다.
 
-[!code-csharp[Add usings for paths](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#2)]
+[!code-csharp[Add usings for paths](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#UsingsForPaths)]
 
-## <a name="create-a-learning-pipeline"></a>학습 파이프라인 만들기
+## <a name="create-ml-context"></a>ML 컨텍스트 만들기
 
 *Program.cs* 파일 맨 위에 다음 추가 `using` 지시문을 추가합니다.
 
-[!code-csharp[Add Microsoft.ML usings](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#3)]
+[!code-csharp[Add Microsoft.ML usings](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#MLUsings)]
 
-`Main` 메서드에서 `Console.WriteLine("Hello World!")`을 다음 코드로 바꿉니다.
+`Main` 메서드에서 `Console.WriteLine("Hello World!");` 줄을 다음 코드로 바꿉니다.
 
-[!code-csharp[Call the Train method](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#4)]
+[!code-csharp[Create ML context](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateContext)]
 
-`Train` 메서드는 모델을 학습시킵니다. 다음 코드를 사용하여 `Main` 메서드 바로 아래에 해당 메서드를 만듭니다.
+<xref:Microsoft.ML.MLContext?displayProperty=nameWithType> 클래스는 기계 학습 환경 연결을 나타내며 데이터 로드, 모델 학습, 예측 및 기타 작업에 대한 로깅 및 진입점에 대한 메커니즘을 제공합니다. 이는 Entity Framework에서 `DbContext`를 사용하는 것과 개념이 비슷합니다.
 
-```csharp
-private static PredictionModel<IrisData, ClusterPrediction> Train()
-{
+## <a name="setup-data-loading"></a>데이터 로드 설정
 
-}
-```
+`Main` 메서드에 다음 코드를 추가하여 데이터를 로드하는 방법을 설정합니다.
 
-학습 파이프라인은 모델을 학습시키는 데 필요한 모든 데이터 및 알고리즘을 로드합니다. `Train` 메서드에 다음 코드를 추가합니다.
+[!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-[!code-csharp[Initialize pipeline](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#5)]
+열 이름 및 인덱스는 `IrisData` 클래스에서 정의된 스키마와 일치합니다. <xref:Microsoft.ML.Runtime.Data.DataKind.R4?displayProperty=nameWithType> 값은 `float` 형식을 지정합니다.
 
-## <a name="load-and-transform-data"></a>데이터 로드 및 변환
+인스턴스화된 <xref:Microsoft.ML.Runtime.Data.TextLoader> 인스턴스를 사용하여 학습 데이터 세트에 대한 데이터 원본을 나타내는 <xref:Microsoft.ML.Runtime.Data.IDataView> 인스턴스를 만듭니다.
 
-수행할 첫 번째 단계는 학습 데이터 집합을 로드하는 것입니다. 이 경우 학습 데이터 집합은 `_dataPath` 필드로 정의된 경로로 텍스트 파일에 저장됩니다. 파일의 열은 쉼표(“,”)로 구분됩니다. `Train` 메서드에 다음 코드를 추가합니다.
+[!code-csharp[Create IDataView](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 
-[!code-csharp[Add step to load data](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#6)]
+## <a name="create-a-learning-pipeline"></a>학습 파이프라인 만들기
 
-다음 단계에서는 <xref:Microsoft.ML.Legacy.Transforms.ColumnConcatenator> 변환 클래스를 사용하여 모든 기능 열을 **Features** 열에 결합합니다. 기본적으로, 학습 알고리즘은 **Features** 열의 기능만 처리합니다. 다음 코드를 추가합니다.
+이 자습서의 경우 클러스터링 작업의 학습 파이프라인은 다음 두 단계로 구성됩니다.
 
-[!code-csharp[Add step to concatenate columns](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#7)]
+- 로드된 열을 클러스터링 교육 담당자가 사용하는 하나의 **기능** 열로 연결합니다.
+- <xref:Microsoft.ML.Trainers.KMeans.KMeansPlusPlusTrainer> 교육 담당자를 사용하여 k-means++ 클러스터링 알고리즘을 사용하는 모델을 학습합니다.
 
-## <a name="choose-a-learning-algorithm"></a>학습 알고리즘 선택
+`Main` 메서드에 다음 코드를 추가합니다.
 
-파이프라인에 데이터를 추가하고 데이터를 올바른 입력 형식으로 변환한 후 학습 알고리즘(**학습자**)을 선택합니다. 학습자는 모델을 학습시킵니다. ML.NET은 [k-means 알고리즘](https://en.wikipedia.org/wiki/K-means_clustering)을 구현하는 <xref:Microsoft.ML.Legacy.Trainers.KMeansPlusPlusClusterer> 학습자에게 초기 클러스터 중심을 선택하는 향상된 방법을 제공합니다.
+[!code-csharp[Create pipeline](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreatePipeline)]
 
-이전 단계에서 추가된 데이터 처리 코드 다음에 오는 `Train` 메서드에 다음 코드를 추가합니다.
-
-[!code-csharp[Add a learner step](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#8)]
-
-<xref:Microsoft.ML.Legacy.Trainers.KMeansPlusPlusClusterer.K?displayProperty=nameWithType> 속성을 사용하여 클러스터 수를 지정합니다. 위의 코드는 데이터 집합을 3개의 클러스터로 분할해야 함을 지정합니다.
+코드는 데이터 세트를 3개의 클러스터로 분할해야 함을 지정합니다.
 
 ## <a name="train-the-model"></a>모델 학습
 
-이전 섹션에서 추가된 단계는 교육을 위한 파이프라인을 준비했지만 아무 것도 실행되지 않았습니다. `pipeline.Train<TInput, TOutput>` 메서드는 `TInput` 형식의 인스턴스를 가져와 `TOutput` 형식의 인스턴스를 출력하는 모델을 생성합니다. `Train` 메서드에 다음 코드를 추가합니다.
+이전 섹션에서 추가된 단계는 교육을 위한 파이프라인을 준비했지만 아무 것도 실행되지 않았습니다. 다음 줄을 `Main` 메서드에 추가하여 데이터 로드 및 모델 학습을 수행합니다.
 
-[!code-csharp[Train the model and return](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#9)]
+[!code-csharp[Train the model](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#TrainModel)]
 
 ### <a name="save-the-model"></a>모델 저장
 
-이 시점에 기존 또는 새 .NET 응용 프로그램에 통합할 수 있는 모델이 있습니다. 모델을 .zip 파일로 저장하려면 `Train` 메서드 호출 아래의 `Main` 메서드에 다음 코드를 추가합니다.
+이 시점에 기존 또는 새 .NET 애플리케이션에 통합할 수 있는 모델이 있습니다. 모델을 .zip 파일로 저장하려면 `Main` 메서드에 다음 코드를 추가합니다.
 
-[!code-csharp[Save the model](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#10)]
-
-`Main` 메서드에 `await`를 사용하면 `Main` 메서드는 `async` 한정자를 포함하고 `Task`를 반환해야 합니다.
-
-[!code-csharp[Make the Main method async](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#11)]
-
-또한 *Program.cs* 파일의 맨 위에 있는 다음 `using` 지시문도 추가해야 합니다.
-
-[!code-csharp[Add System.Threading.Tasks using](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#12)]
-
-`async Main` 메서드는 C# 7.1의 기능이고 프로젝트의 기본 언어 버전은 C# 7.0이므로 언어 버전을 C# 7.1 이상으로 변경해야 합니다. 이 작업을 하려면 **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **빌드** 탭을 선택하고 **고급** 단추를 선택합니다. 드롭다운에서 **C# 7.1**(또는 이상 버전)을 선택합니다. **확인** 단추를 선택합니다.
+[!code-csharp[Save the model](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SaveModel)]
 
 ## <a name="use-the-model-for-predictions"></a>예측에 모델 사용
+
+예측을 수행하려면 변환기 파이프라인을 통해 입력 형식의 인스턴스를 사용하고 출력 형식의 인스턴스를 생성하는 <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> 클래스를 사용합니다. 다음 줄을 `Main` 메서드에 추가하여 해당 클래스의 인스턴스를 만듭니다.
+
+[!code-csharp[Create predictor](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#Predictor)]
 
 테스트 데이터 인스턴스를 수용할 수 있도록 `TestIrisData` 클래스를 만듭니다.
 
@@ -182,24 +170,24 @@ private static PredictionModel<IrisData, ClusterPrediction> Train()
 1. **새 항목 추가** 대화 상자에서 **클래스**를 선택하고 **이름** 필드를 *TestIrisData.cs*로 변경합니다. 그런 다음, **추가** 단추를 선택합니다.
 1. 다음 예제처럼 클래스를 static으로 수정합니다.
 
-   [!code-csharp[Make class static](../../../samples/machine-learning/tutorials/IrisClustering/TestIrisData.cs#1)]
+   [!code-csharp[Make class static](~/samples/machine-learning/tutorials/IrisFlowerClustering/TestIrisData.cs#Static)]
 
 이 자습서에서는 이 클래스 내에 하나의 아이리스 데이터 인스턴스를 소개합니다. 이 모델로 실험할 다른 시나리오를 추가할 수 있습니다. 다음 코드를 `TestIrisData` 클래스에 추가합니다.
 
-[!code-csharp[Test data](../../../samples/machine-learning/tutorials/IrisClustering/TestIrisData.cs#2)]
+[!code-csharp[Test data](~/samples/machine-learning/tutorials/IrisFlowerClustering/TestIrisData.cs#TestData)]
 
 지정된 항목이 속한 클러스터를 찾으려면 *Program.cs* 파일로 돌아가 다음 코드를 `Main` 메서드에 추가합니다.
 
-[!code-csharp[Predict and output results](../../../samples/machine-learning/tutorials/IrisClustering/Program.cs#13)]
+[!code-csharp[Predict and output results](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#PredictionExample)]
 
-프로그램을 실행하여 지정된 데이터 인스턴스가 포함된 클러스터와 해당 인스턴스에서 클러스터 중심까지 제곱 거리를 확인합니다. 다음과 같은 결과가 나타나야 합니다. 파이프라인에서 처리되면서 경고 또는 처리 메시지가 표시될 수 있습니다. 이해하기 쉽도록 이러한 결과는 다음 출력에서 제거되었습니다.
+프로그램을 실행하여 지정된 데이터 인스턴스가 포함된 클러스터와 해당 인스턴스에서 클러스터 중심까지 제곱 거리를 확인합니다. 다음과 같은 결과가 나타나야 합니다.
 
 ```text
 Cluster: 2
-Distances: 0.4192338 0.0008847713 0.9660053
+Distances: 11.69127 0.02159119 25.59896
 ```
 
-지금까지 이제 아이리스 클러스터링을 위한 기계 학습 모델을 성공적으로 구축하고 예측을 위해 사용했습니다. [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/IrisClustering) GitHub 리포지토리에서 이 자습서의 소스 코드를 찾을 수 있습니다.
+지금까지 이제 아이리스 클러스터링을 위한 기계 학습 모델을 성공적으로 구축하고 예측을 위해 사용했습니다. [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/IrisFlowerClustering) GitHub 리포지토리에서 이 자습서의 소스 코드를 찾을 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

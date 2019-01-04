@@ -2,18 +2,18 @@
 title: .NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트
 description: 이 자습서에서는 명령줄에서 .NET Core 프로젝트를 구성하고 테스트하는 방법을 설명합니다.
 author: cartermp
-ms.author: mairaw
 ms.date: 09/10/2018
-ms.openlocfilehash: 9984b4f43ca8c09cc0948cad7e6c176127384361
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.custom: seodec18
+ms.openlocfilehash: 9ca9cd1b392912b01ed5ac37d0617d582b993ae8
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49415226"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53242724"
 ---
 # <a name="organizing-and-testing-projects-with-the-net-core-command-line"></a>.NET Core 명령줄을 사용하여 프로젝트 구성 및 테스트
 
-이 자습서에서는 [명령줄을 사용하여 Windows/Linux/macOS에서 .NET Core 시작](using-with-xplat-cli.md)에 따라 간단한 콘솔 앱 이상의 잘 구성된 고급 응용 프로그램을 개발하는 과정을 안내합니다. 이 자습서에서는 폴더를 사용하여 코드를 구성하는 방법을 보여 준 후에 [xUnit](https://xunit.github.io/) 테스트 프레임워크를 사용하여 콘솔 응용 프로그램을 확장하는 방법을 보여 줍니다.
+이 자습서에서는 [명령줄을 사용하여 Windows/Linux/macOS에서 .NET Core 시작](using-with-xplat-cli.md)에 따라 간단한 콘솔 앱 이상의 잘 구성된 고급 애플리케이션을 개발하는 과정을 안내합니다. 이 자습서에서는 폴더를 사용하여 코드를 구성하는 방법을 보여 준 후에 [xUnit](https://xunit.github.io/) 테스트 프레임워크를 사용하여 콘솔 애플리케이션을 확장하는 방법을 보여 줍니다.
 
 ## <a name="using-folders-to-organize-code"></a>폴더를 사용하여 코드 구성
 
@@ -103,19 +103,19 @@ Meow!
 
 `NewTypes` 프로젝트가 구현되었으며, 애완 동물 관련 유형을 폴더에 보관하여 구성했습니다. 다음으로, 테스트 프로젝트를 만들고 [xUnit](https://xunit.github.io/) 테스트 프레임워크를 사용하여 테스트 작성을 시작합니다. 유닛 테스트를 사용하면 애완동물 유형의 동작을 자동으로 검사하여 제대로 작동하는지 확인할 수 있습니다.
 
-*test* 폴더를 만들고, 이 폴더 안에 *NewTypesTests* 폴더를 만듭니다. *NewTypesTests* 폴더의 명령 프롬프트에서 `dotnet new xunit`를 실행합니다. 그러면 *NewTypesTests.csproj* 및 *UnitTest1.cs*라는 두 파일이 생성됩니다.
+*src* 폴더를 다시 탐색하고 *test* 폴더를 만들며, 이 폴더 안에 *NewTypesTests* 폴더를 만듭니다. *NewTypesTests* 폴더의 명령 프롬프트에서 `dotnet new xunit`를 실행합니다. 이로 인해 *NewTypesTests.csproj* 및 *UnitTest1.cs*라는 두 파일이 생성됩니다.
 
 테스트 프로젝트는 현재 `NewTypes`의 형식을 테스트할 수 없으며, `NewTypes` 프로젝트에 대한 프로젝트 참조가 필요합니다. 프로젝트 참조를 추가하려면 [`dotnet add reference`](../tools/dotnet-add-reference.md) 명령을 사용합니다.
 
 ```
-dotnet add reference ../../src/NewTypes/NewTypes.csproj
+dotnet add reference ../../NewTypes/NewTypes.csproj
 ```
 
-*NewTypesTests.csproj* 파일에 `<ItemGroup>` 노드를 추가하여 수동으로 프로젝트 참조를 추가할 수도 있습니다.
+또는 *NewTypesTests.csproj* 파일에 `<ItemGroup>` 노드를 추가하여 수동으로 프로젝트 참조를 추가할 수도 있습니다.
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="../../src/NewTypes/NewTypes.csproj" />
+  <ProjectReference Include="../../NewTypes/NewTypes.csproj" />
 </ItemGroup>
 ```
 

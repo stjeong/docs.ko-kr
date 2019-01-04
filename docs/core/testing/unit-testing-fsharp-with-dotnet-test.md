@@ -1,17 +1,18 @@
 ---
-title: dotnet test 및 xUnit을 사용하여 .NET Core에서 F# 라이브러리 유닛 테스트
+title: dotnet 테스트 및 xUnit을 사용하여 .NET Core에서 F# 단위 테스트
 description: dotnet test 및 xUnit을 사용하여 샘플 솔루션을 단계별로 빌드하는 대화형 환경을 통해 .NET Core의 F#에 대한 단위 테스트 개념을 알아봅니다.
 author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
 dev_langs:
 - fsharp
-ms.openlocfilehash: 1989c82680cd0824780fa3c127318dc3b656476e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.custom: seodec18
+ms.openlocfilehash: 08ebe39fd6e992fdcdc10e19d87d565e76d909a2
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33214505"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53239201"
 ---
 # <a name="unit-testing-f-libraries-in-net-core-using-dotnet-test-and-xunit"></a>dotnet test 및 xUnit을 사용하여 .NET Core에서 F# 라이브러리 유닛 테스트
 
@@ -164,4 +165,4 @@ let squaresOfOdds xs =
     |> Seq.map square
 ```
 
-작은 라이브러리 및 이 라이브러리에 대한 단위 테스트 집합을 작성했습니다. 새 패키지 및 테스트 추가가 정상 워크플로에 포함되도록 솔루션을 구조화했습니다. 응용 프로그램의 목표를 해결하는 데 대부분의 시간과 노력을 들였습니다.
+작은 라이브러리 및 이 라이브러리에 대한 단위 테스트 집합을 작성했습니다. 새 패키지 및 테스트 추가가 정상 워크플로에 포함되도록 솔루션을 구조화했습니다. 애플리케이션의 목표를 해결하는 데 대부분의 시간과 노력을 들였습니다.

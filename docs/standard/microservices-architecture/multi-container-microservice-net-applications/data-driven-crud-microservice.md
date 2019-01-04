@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
-ms.openlocfilehash: c6316717f78dffb672afdf79e919fd1bd7874b52
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 32a0e55b17c51a9aa5b7c1fd70a42456c03c186d
+ms.sourcegitcommit: 5b831a3200f835cb9a69f8aae99129bdda8b2ca1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149577"
+ms.lasthandoff: 12/26/2018
+ms.locfileid: "53786220"
 ---
 # <a name="creating-a-simple-data-driven-crud-microservice"></a>단순 데이터 기반 CRUD 마이크로 서비스 만들기
 
@@ -23,7 +23,7 @@ ms.locfileid: "53149577"
 
 **그림 6-4** 간단한 CRUD 마이크로 서비스를 위한 내부 설계
 
-이러한 종류의 단순 데이터 중심 서비스 예로 eShopOnContainers 응용 프로그램 샘플의 카탈로그 마이크로 서비스가 있습니다. 이런 종류의 서비스는 모든 기능을 데이터 모델, 비즈니스 논리, 데이터 액세스 코드에 대한 클래스를 포함한 단일 ASP.NET Core Web API 프로젝트에서 구현합니다. 또한 관련 데이터를 SQL Server를 실행하는 데이터베이스에 개발/테스트용 다른 컨테이너로 저장하지만 그림 6-5에서처럼 일반 SQL Server 호스트가 될 수도 있습니다.
+이러한 종류의 단순 데이터 중심 서비스 예로 eShopOnContainers 애플리케이션 샘플의 카탈로그 마이크로 서비스가 있습니다. 이런 종류의 서비스는 모든 기능을 데이터 모델, 비즈니스 논리, 데이터 액세스 코드에 대한 클래스를 포함한 단일 ASP.NET Core Web API 프로젝트에서 구현합니다. 또한 관련 데이터를 SQL Server를 실행하는 데이터베이스에 개발/테스트용 다른 컨테이너로 저장하지만 그림 6-5에서처럼 일반 SQL Server 호스트가 될 수도 있습니다.
 
 ![논리 카탈로그 마이크로 서비스에는 카탈로그 데이터베이스가 포함되어 있으며 동일한 Docker 호스트에 위치하거나 위치하지 않을 수 있습니다. 프로덕션이 아닌 개발의 경우에 동일한 Docker 호스트에 데이터베이스를 포함하는 것이 좋습니다.](./media/image5.png)
 
@@ -257,7 +257,7 @@ Azure DevOps Services Docker 배포 작업처럼 배포 도구에서 설정한 �
 
 마지막으로 이전 코드 예제의 ConfigureServices 메소드에서처럼 Configuration\["ConnectionString"\]을 사용하여 코드에서 값을 가져올 수 있습니다.
 
-그러나 프로덕션 환경의 경우 연결 문자열처럼 비밀을 저장하는 다른 방법을 모색하고자 할 수 있습니다. 애플리케이션 비밀을 관리하는 가장 좋은 방법은 [Azure Key Vault}(https://azure.microsoft.com/services/key-vault/)를 사용하는 것입니다.
+그러나 프로덕션 환경의 경우 연결 문자열처럼 비밀을 저장하는 다른 방법을 모색하고자 할 수 있습니다. 애플리케이션 비밀을 관리하는 가장 좋은 방법은 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)를 사용하는 것입니다.
 
 Azure Key Vault를 통해 클라우드 애플리케이션 및 서비스에서 사용되는 암호화 키와 비밀을 저장하고 보호할 수 있습니다. 비밀은 API 키, 연결 문자열, 암호 등의 엄격한 제어를 유지하려는 모든 항목이며, 엄격한 제어는 사용 현황 로깅, 만료 설정, 액세스 관리, <span class="underline">기타</span>를 포함합니다.
 
@@ -269,9 +269,9 @@ Azure Key Vault를 사용하면 누군가에게 알리지 않고 애플리케이
 
 ### <a name="implementing-versioning-in-aspnet-web-apis"></a>ASP.NET Web API의 버전 관리 구현
 
-비즈니스 요구 사항 변화에 따라 새 리소스 컬렉션이 추가되고 리소스 사이의 관계가 변화하며 리소스 내 데이터 구조가 변경될 수 있습니다. 새 요구 사항을 처리하기 위한 Web API 업데이트는 상대적으로 간단한 프로세스이나 이러한 변경이 Web API를 사용하는 클라이언트 응용 프로그램에 미치는 영향을 고려해야 합니다. Web API의 개발자 설계 및 구현은 API를 완전히 제어할 수 있으나 타 조직에서 원격으로 운영하는 클라이언트 응용 프로그램에 대해서는 개발자가 그 수준 만큼 제어할 수 없습니다.
+비즈니스 요구 사항 변화에 따라 새 리소스 컬렉션이 추가되고 리소스 사이의 관계가 변화하며 리소스 내 데이터 구조가 변경될 수 있습니다. 새 요구 사항을 처리하기 위한 Web API 업데이트는 상대적으로 간단한 프로세스이나 이러한 변경이 Web API를 사용하는 클라이언트 애플리케이션에 미치는 영향을 고려해야 합니다. Web API의 개발자 설계 및 구현은 API를 완전히 제어할 수 있으나 타 조직에서 원격으로 운영하는 클라이언트 애플리케이션에 대해서는 개발자가 그 수준 만큼 제어할 수 없습니다.
 
-버전 관리를 통해 Web API가 자신이 노출하는 기능 및 리소스를 표시하게 할 수 있습니다. 그러면 클라이언트 응용 프로그램이 특정 버전의 기능이나 리소스에 대해 요청을 제출할 수 있습니다. 버전 관리를 구현하는 방법에는 몇 가지가 있습니다.
+버전 관리를 통해 Web API가 자신이 노출하는 기능 및 리소스를 표시하게 할 수 있습니다. 그러면 클라이언트 애플리케이션이 특정 버전의 기능이나 리소스에 대해 요청을 제출할 수 있습니다. 버전 관리를 구현하는 방법에는 몇 가지가 있습니다.
 
 - URI 버전 관리
 
@@ -279,9 +279,9 @@ Azure Key Vault를 사용하면 누군가에게 알리지 않고 애플리케이
 
 - 헤더 버전 관리
 
-쿼리 문자열과 URI 버전 관리가 가장 구현이 간단합니다. 헤더 버전 관리는 좋은 방법입니다. 그러나 헤더 버전 관리는 URI 버전 관리 만큼 명시적이거나 간단하지 않습니다. URL 버전 관리가 가장 간단하고 명시적이므로 eShopOnContainers 응용 프로그램 예제에서는 URI 버전 관리를 사용합니다.
+쿼리 문자열과 URI 버전 관리가 가장 구현이 간단합니다. 헤더 버전 관리는 좋은 방법입니다. 그러나 헤더 버전 관리는 URI 버전 관리 만큼 명시적이거나 간단하지 않습니다. URL 버전 관리가 가장 간단하고 명시적이므로 eShopOnContainers 애플리케이션 예제에서는 URI 버전 관리를 사용합니다.
 
-EShopOnContainers 응용 프로그램 예제에서처럼 URI 버전 관리를 사용하면 Web API를 수정할 때나 리소스 스키마를 변경할 때마다 버전 번호를 각 리소스의 URI에 추가합니다. 기존 URI는 전처럼 작동하고 요청된 버전에 부합하는 스키마에 따른 리소스를 반환하게 됩니다.
+EShopOnContainers 애플리케이션 예제에서처럼 URI 버전 관리를 사용하면 Web API를 수정할 때나 리소스 스키마를 변경할 때마다 버전 번호를 각 리소스의 URI에 추가합니다. 기존 URI는 전처럼 작동하고 요청된 버전에 부합하는 스키마에 따른 리소스를 반환하게 됩니다.
 
 다음 코드 예제와 같이 버전은 Web API 컨트롤러의 Route 속성을 사용하여 설정할 수 있고 이렇게 하면 URI에서 버전이 명확해집니다(이 경우 v1).
 
@@ -329,7 +329,7 @@ API에 대해 Swagger 메타데이터를 생성하는 주된 이유는 다음과
 
 - [Azure App Service Logic Apps](https://docs.microsoft.com/azure/app-service-logic/app-service-logic-what-are-logic-apps). 자동으로 API를 사용하고 [Azure App Service Logic App](https://docs.microsoft.com/azure/app-service-logic/app-service-logic-custom-hosted-api)에 통합할 수 있으며 프로그래밍 기술이 필요하지 않습니다.
 
-**API 문서를 자동으로 생성하는 기능**. 복잡한 마이크로 서비스 기반 응용 프로그램처럼 대규모 RESTful API를 만들 때는 요청과 응답 페이로드에서 사용되는 다양한 데이터 모델에서 많은 엔드포인트를 처리해야 합니다. Swagger를 통해 얻을 수 있는 적절한 문서와 견고한 API 탐색기는 API 및 개발자의 채택 성공을 위한 핵심입니다.
+**API 문서를 자동으로 생성하는 기능**. 복잡한 마이크로 서비스 기반 애플리케이션처럼 대규모 RESTful API를 만들 때는 요청과 응답 페이로드에서 사용되는 다양한 데이터 모델에서 많은 엔드포인트를 처리해야 합니다. Swagger를 통해 얻을 수 있는 적절한 문서와 견고한 API 탐색기는 API 및 개발자의 채택 성공을 위한 핵심입니다.
 
 Swagger의 메타데이터는 Microsoft Flow, PowerApps 및 Azure Logic Apps에서 API 사용 방법을 이해하고 API를 연결하는 데 사용합니다.
 
@@ -341,7 +341,7 @@ Swagger의 메타데이터는 Microsoft Flow, PowerApps 및 Azure Logic Apps에�
 
 수동으로 Swagger 메타데이터를 생성하는 작업(JSON 또는 YAML 파일로)은 지루할 수 있습니다. 그렇지만 [Swashbuckle NuGet 패키지](https://aka.ms/swashbuckledotnetcore)를 사용하여 동적으로 Swagger API 메타 데이터를 생성함으로써 ASP.NET Web API 서비스의 API 검색을 자동화할 수 있습니다.
 
-Swashbuckle은 ASP.NET Web API 프로젝트에 대한 Swagger 메타 데이터를 자동으로 생성합니다. ASP.NET Core Web API 프로젝트 및 기존의 ASP.NET Web API와, ASP.NET 기반의 Azure API 앱, Azure Mobile App, Azure Service Fabric 마이크로 서비스 등의 다른 항목을 지원 합니다. 또한 참조 응용 프로그램에서와 같이 컨테이너에 배포된 일반 Web API도 지원합니다.
+Swashbuckle은 ASP.NET Web API 프로젝트에 대한 Swagger 메타 데이터를 자동으로 생성합니다. ASP.NET Core Web API 프로젝트 및 기존의 ASP.NET Web API와, ASP.NET 기반의 Azure API 앱, Azure Mobile App, Azure Service Fabric 마이크로 서비스 등의 다른 항목을 지원 합니다. 또한 참조 애플리케이션에서와 같이 컨테이너에 배포된 일반 Web API도 지원합니다.
 
 Swashbuckle은 API Explorer 및 Swagger 또는 [swagger-ui](https://github.com/swagger-api/swagger-ui)를 결합하여 API 사용자를 위한 풍부한 검색 및 문서 환경을 제공합니다. Swashbuckle에는 Swagger 메타 데이터 생성기 엔진 외에도 Swashbuckle 설치 후 자동으로 서비스를 시작하는 swagger-ui의 임베디드 버전이 포함되어 있습니다.
 
@@ -398,7 +398,7 @@ public class Startup
 }
 ```
 
-이 작업이 완료되면 응용 프로그램을 시작하고 다음과 같이 URL을 사용하여 다음 Swagger JSON 및 UI 엔드포인트를 탐색할 수 있습니다.
+이 작업이 완료되면 애플리케이션을 시작하고 다음과 같이 URL을 사용하여 다음 Swagger JSON 및 UI 엔드포인트를 탐색할 수 있습니다.
 
 ```url
   http://<your-root-url>/swagger/v1/swagger.json

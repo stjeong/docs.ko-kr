@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
-ms.openlocfilehash: 3fb926683de90516bcf67d99026a0134d82cb683
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3d4aa5e60ab9bb134716bddcf90b6fc6b07c2ea0
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152203"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656156"
 ---
 # <a name="delegates-and-lambdas"></a>대리자 및 람다 식
 
@@ -154,6 +154,8 @@ public MainWindow()
     };
 }
 ```
+
+이 컨텍스트의 `+=` 연산자는 [이벤트](../../docs/csharp/language-reference/keywords/event.md)를 구독하는 데 사용됩니다. 자세한 내용은 [방법: 이벤트 구독 및 구독 취소](../../docs/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)를 참조하세요.
 
 ## <a name="further-reading-and-resources"></a>추가 정보 및 리소스
 

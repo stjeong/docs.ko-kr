@@ -1,16 +1,15 @@
 ---
-title: WCF Web Service Reference 추가 - .NET Core
+title: WCF Web Service 참조 추가
 description: .NET Framework 프로젝트용 서비스 참조 추가와 유사하게, .NET Core 및 ASP.NET Core 프로젝트 기능을 추가하는 Microsoft WCF Web Service Reference Provider 도구에 대한 개요입니다.
 author: mlacouture
-ms.author: johalex
 ms.date: 04/19/2018
 ms.custom: mvc, seodec18
-ms.openlocfilehash: a1c5f389a5928a34ce1cbf13b2ef27a95b18d031
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3566a92e05c03cc77e59a14e3b2521a1d6d0758a
+ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148784"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245576"
 ---
 # <a name="use-the-wcf-web-service-reference-provider-tool"></a>WCF Web Service Reference Provider 도구 사용
 
@@ -31,7 +30,7 @@ ms.locfileid: "53148784"
 > * **Visual C#** > **.NET Standard**
 > * **Visual C#** > **Web** > **ASP.NET Core Web Application**
 
-이 문서에서는 **ASP.NET Core 웹 응용 프로그램** 프로젝트 템플릿을 예로 사용하여 WCF 서비스 참조를 프로젝트에 추가하는 과정을 안내합니다.
+이 문서에서는 **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿을 예로 사용하여 WCF 서비스 참조를 프로젝트에 추가하는 과정을 안내합니다.
 
 1. 솔루션 탐색기에서 프로젝트의 **연결된 서비스** 노드를 두 번 클릭합니다(.NET Core 또는 .NET Standard 프로젝트의 경우 이 옵션은 솔루션 탐색기에서 프로젝트의 **종속성** 노드를 마우스 오른쪽 단추로 클릭할 때 사용 가능함).
 

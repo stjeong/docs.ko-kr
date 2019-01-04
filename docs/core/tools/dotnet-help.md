@@ -1,13 +1,13 @@
 ---
-title: dotnet help 명령 - .NET Core CLI
+title: dotnet help 명령
 description: dotnet help 명령은 지정된 명령에 대한 자세한 온라인 설명서를 표시합니다.
 ms.date: 12/04/2018
-ms.openlocfilehash: 60d1cc706ca5c78fa3be877bd679888181213e88
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 44274b698ed83bd3cdb58787f433eeb5c555bc6d
+ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152177"
+ms.locfileid: "53168958"
 ---
 # <a name="dotnet-help-reference"></a>dotnet help reference
 
