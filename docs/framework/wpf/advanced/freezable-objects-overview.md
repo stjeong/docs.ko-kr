@@ -9,12 +9,12 @@ helpviewer_keywords:
 - unfreezing Freezable objects [WPF]
 - classes [WPF], Freezable
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
-ms.openlocfilehash: a1006816168e405d0d79786b8430b802f1ec0928
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: a4c0a137da74b276b1238d500057ce96756a1ae1
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45999444"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030375"
 ---
 # <a name="freezable-objects-overview"></a>Freezable 개체 개요
 이 항목에서는 효과적으로 사용 하 고 만드는 방법을 설명 <xref:System.Windows.Freezable> 응용 프로그램 성능을 개선 하는 데 도움이 되는 특별 한 기능을 제공 하는 개체입니다. Freezable 개체의 예로 브러시, 펜, 변환, 기 하 도형 및 애니메이션을 들 수 있습니다.  
@@ -154,7 +154,7 @@ mc:Ignorable="PresentationOptions"
   
 -   호출 된 <xref:System.Windows.Freezable.WritePostscript%2A> 비 종속성 속성 데이터 멤버에 쓰는 메서드를 종료 하기 전에 메서드.  
   
- 클래스는 종속성 속성이 아닌 데이터 멤버를 포함 하는 경우 <xref:System.Windows.DependencyObject> 개체를 호출 해야 합니다 <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> 컨트롤 멤버를 설정 하는 경우에 해당 값의에서 변경할 때마다 메서드 `null`합니다.  
+ 클래스는 종속성 속성이 아닌 데이터 멤버를 포함 하는 경우 <xref:System.Windows.DependencyObject> 개체를 호출 해야 합니다 <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> 을 변경할 때마다 해당 값 중 하나 멤버를 설정 하는 경우에 메서드 `null`합니다.  
   
 > [!NOTE]
 >  각각 시작 하는 것이 중요 <xref:System.Windows.Freezable> 메서드가 기본 구현에 대 한 호출을 사용 하 여 재정의 합니다.  

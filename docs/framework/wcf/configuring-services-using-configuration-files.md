@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - configuring services [WCF]
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
-ms.openlocfilehash: 11d24bec46cfb190fe1a7c2a7b9ac78ac4d5e799
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a38b4202ba3402c2dff3884c1560752d0353e0ba
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200864"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029673"
 ---
 # <a name="configuring-services-using-configuration-files"></a>구성 파일을 사용하여 서비스 구성
 디자인 타임에 대신 배포 지점에서 서비스 동작 데이터 및 끝점을 제공 하는 유연성을 제공 구성 파일을 사용 하 여 Windows Communication Foundation (WCF) 서비스를 구성 합니다. 이 항목에서는 사용할 수 있는 기본 기술에 대해 간략하게 설명합니다.  
@@ -26,9 +26,9 @@ ms.locfileid: "50200864"
   
  Visual Studio에서 서비스를 구성할 때 설정을 지정 하는 web.config 또는 App.config 파일을 사용 합니다. 구성 파일 이름은 서비스에 대해 선택한 호스팅 환경에 따라 결정됩니다. IIS를 사용하여 서비스를 호스트하는 경우에는 Web.config 파일을 사용합니다. 다른 호스팅 환경을 사용하는 경우에는 App.config 파일을 사용합니다.  
   
- Visual Studio에서 App.config 라는 파일은 최종 구성 파일을 만드는 사용 됩니다. 구성에 사용되는 최종 이름은 어셈블리 이름에 따라 달라집니다. 예를 들어, "Cohowinery.exe"라는 어셈블리에는 "Cohowinery.exe.config"의 최종 구성 파일 이름이 포함됩니다. 그러나 App.config 파일만 수정하면 됩니다. 이 파일의 변경 내용은 컴파일 타임에 최종 응용 프로그램 구성 파일에 자동으로 적용됩니다.  
+ Visual Studio에서 App.config 라는 파일은 최종 구성 파일을 만드는 사용 됩니다. 구성에 사용되는 최종 이름은 어셈블리 이름에 따라 달라집니다. 예를 들어, "Cohowinery.exe"라는 어셈블리에는 "Cohowinery.exe.config"의 최종 구성 파일 이름이 포함됩니다. 그러나 App.config 파일만 수정하면 됩니다. 이 파일의 변경 내용은 컴파일 타임에 최종 애플리케이션 구성 파일에 자동으로 적용됩니다.  
   
- App.config 파일 사용 시 응용 프로그램이 시작되고 구성이 적용되면 구성 시스템에서는 App.config 파일을 Machine.config 파일의 내용과 병합합니다. 이 메커니즘을 통해 시스템 수준의 설정이 Machine.config 파일에 정의됩니다. App.config 파일을 사용하여 Machine.config 파일의 설정을 재정의할 수 있습니다. 또한 Machine.config 파일의 설정이 사용되도록 해당 설정을 잠글 수 있습니다. Web.config의 경우 구성 시스템에서는 응용 프로그램 디렉터리에 이르는 모든 디렉터리의 Web.config 파일을 적용된 구성에 병합합니다. 구성과 설정의 우선 순위에 대 한 자세한 내용은 항목을 참조 합니다 <xref:System.Configuration> 네임 스페이스입니다.  
+ App.config 파일 사용 시 애플리케이션이 시작되고 구성이 적용되면 구성 시스템에서는 App.config 파일을 Machine.config 파일의 내용과 병합합니다. 이 메커니즘을 통해 시스템 수준의 설정이 Machine.config 파일에 정의됩니다. App.config 파일을 사용하여 Machine.config 파일의 설정을 재정의할 수 있습니다. 또한 Machine.config 파일의 설정이 사용되도록 해당 설정을 잠글 수 있습니다. Web.config의 경우 구성 시스템에서는 애플리케이션 디렉터리에 이르는 모든 디렉터리의 Web.config 파일을 적용된 구성에 병합합니다. 구성과 설정의 우선 순위에 대 한 자세한 내용은 항목을 참조 합니다 <xref:System.Configuration> 네임 스페이스입니다.  
   
 ## <a name="major-sections-of-the-configuration-file"></a>구성 파일의 주요 섹션  
  구성 파일의 주요 섹션에는 다음 요소가 포함됩니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "50200864"
 <system.ServiceModel>  
   
    <services>  
-   <!—- Define the service endpoints. This section is optional in the new  
+   <!-- Define the service endpoints. This section is optional in the new  
     default configuration model in .NET Framework 4. -->  
       <service>  
          <endpoint/>  
@@ -126,7 +126,7 @@ ms.locfileid: "50200864"
     <basicHttpBinding>  
      <binding name="myBindingConfiguration1" closeTimeout="00:01:00" />  
      <binding name="myBindingConfiguration2" closeTimeout="00:02:00" />  
-     <binding closeTimeout="00:03:00" />  <!—- Default binding for basicHttpBinding -->  
+     <binding closeTimeout="00:03:00" />  <!-- Default binding for basicHttpBinding -->  
     </basicHttpBinding>  
      </bindings>  
      <services>  
@@ -256,7 +256,7 @@ ms.locfileid: "50200864"
   
  동작 병합은 위에 나와 있는 것처럼 이름 없는 동작 컬렉션뿐만 아니라 명명된 동작 컬렉션에도 수행됩니다.  
   
- 동작 병합은 IIS 호스팅 환경에서 수행되며 이 환경에서 Web.config 파일은 루트 Web.config 파일 및 machine.config와 계층적으로 병합됩니다. 그러나 응용 프로그램 환경에서도 동작 병합이 수행되며 이 환경에서는 machine.config가 App.config 파일과 병합될 수 있습니다.  
+ 동작 병합은 IIS 호스팅 환경에서 수행되며 이 환경에서 Web.config 파일은 루트 Web.config 파일 및 machine.config와 계층적으로 병합됩니다. 그러나 애플리케이션 환경에서도 동작 병합이 수행되며 이 환경에서는 machine.config가 App.config 파일과 병합될 수 있습니다.  
   
  동작 병합은 구성의 엔드포인트 동작과 서비스 동작에 모두 적용됩니다.  
   

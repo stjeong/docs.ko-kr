@@ -2,12 +2,12 @@
 title: Net.TCP Port Sharing Service 구성
 ms.date: 03/30/2017
 ms.assetid: b6dd81fa-68b7-4e1b-868e-88e5901b7ea0
-ms.openlocfilehash: 7232fc587aa7f63167034f7474d6c5e7476048ed
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3afc4cf50ac0dda0198ca8986177fd3028f9837e
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153477"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029361"
 ---
 # <a name="configuring-the-nettcp-port-sharing-service"></a>Net.TCP Port Sharing Service 구성
 Net.TCP 전송을 사용하는 자체 호스팅 서비스는 네트워크 통신에 사용되는 기본 TCP 소켓의 동작을 제어하는 `ListenBacklog` 및 `MaxPendingAccepts` 등 여러 고급 설정을 제어할 수 있습니다. 그러나 전송 바인딩이 기본적으로 활성화되는 포트 공유를 사용할 수 없도록 설정한 경우 각 소켓에 대한 이러한 설정은 바인딩 수준에서만 적용됩니다.  
@@ -27,10 +27,10 @@ Net.TCP 전송을 사용하는 자체 호스팅 서비스는 네트워크 통신
 ```xml  
 <configuration>  
    <system.serviceModel.activation>  
-       <net.tcp listenBacklog="16" <!—16 * # of processors -->  
-          maxPendingAccepts="4"<!— 4 * # of processors -->  
+       <net.tcp listenBacklog="16" <!--16 * # of processors -->  
+          maxPendingAccepts="4"<!-- 4 * # of processors -->  
           maxPendingConnections="100"  
-          receiveTimeout="00:00:30" <!—30 seconds -->  
+          receiveTimeout="00:00:30" <!--30 seconds -->  
           teredoEnabled="false">  
           <allowAccounts>  
              <!-- LocalSystem account -->  

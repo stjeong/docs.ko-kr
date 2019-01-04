@@ -2,12 +2,12 @@
 title: F#스타일 가이드
 description: 좋음이 다섯 가지 원칙에 알아봅니다 F# 코드입니다.
 ms.date: 12/10/2018
-ms.openlocfilehash: 7718df596bde9004fb9ba6143146f1f475d25683
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 9f47257626e04b09b546de2ae315d48d791678be
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168963"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030271"
 ---
 # <a name="f-style-guide"></a>F#스타일 가이드
 
@@ -21,7 +21,7 @@ ms.locfileid: "53168963"
 
 1. **좋은 F# 코드는 간결 하 고 인상적 이며 구성 가능**
 
-    F#에 더 적은 줄의 코드로 작업 express 및 일반 기능을 다시 사용할 수 있도록 하는 많은 기능이 있습니다. F# 핵심 라이브러리도 많은 유용한 형식 및 일반적인 데이터 컬렉션을 사용 하 여 작업에 대 한 함수를 포함 합니다. 사용자 고유의 함수 및에 결합 하는 F# 핵심 라이브러리 (또는 다른 라이브러리)는 자연 스러운 루틴의 일환 F# 프로그래밍 합니다. 일반적으로 더 적은 줄 코드의 문제에 솔루션을 표현할 수 있으면 다른 개발자 (또는 이후 자신) 됩니다 감사의. 또한 좋습니다 FSharp.Core의 같은 라이브러리를 사용 하는 합니다 [방대한.NET 라이브러리](https://docs.microsoft.com/dotnet/api/) 는 F# 실행 또는 타사 패키지에 [NuGet](https://www.nuget.org/) 중요 한 작업을 수행 해야 하는 경우.
+    F#에 더 적은 줄의 코드로 작업 express 및 일반 기능을 다시 사용할 수 있도록 하는 많은 기능이 있습니다. F# 핵심 라이브러리도 많은 유용한 형식 및 일반적인 데이터 컬렉션을 사용 하 여 작업에 대 한 함수를 포함 합니다. 사용자 고유의 함수 및에 결합 하는 F# 핵심 라이브러리 (또는 다른 라이브러리)는 자연 스러운 루틴의 일환 F# 프로그래밍 합니다. 일반적으로 더 적은 줄 코드의 문제에 솔루션을 표현할 수 있으면 다른 개발자 (또는 이후 자신) 됩니다 감사의. 또한 좋습니다 FSharp.Core의 같은 라이브러리를 사용 하는 합니다 [방대한.NET 라이브러리](../../../api/index.md) 는 F# 실행 또는 타사 패키지에 [NuGet](https://www.nuget.org/) 중요 한 작업을 수행 해야 하는 경우.
 
 2. **좋은 F# 코드는 상호 운용이 가능**
 

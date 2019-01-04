@@ -29,12 +29,12 @@ helpviewer_keywords:
 - attribute syntax [XAML]
 - XAML [WPF], property element syntax
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
-ms.openlocfilehash: eabb9c84824a4604319a346612e84563abaf2b76
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 31f9e31d7cd91f9f89e131a7b506cf1a53fce7e4
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43485731"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030297"
 ---
 # <a name="xaml-syntax-in-detail"></a>XAML 구문 정보
 이 항목에서는 XAML 구문 요소에 설명 하는 데 사용 되는 용어를 정의 합니다. 이러한 용어는 특히 및 XAML 또는 System.Xaml 수준에서 XAML 언어 지원을 사용 하도록 설정 하는 기본 XAML 개념을 사용 하는 다른 프레임 워크에 대 한 WPF 설명서에 대 한 모두이 문서의 나머지 부분에서 자주 사용 됩니다. 이 항목에서는 확장 항목에 도입 하는 기본 용어 [XAML 개요 (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)합니다.  
@@ -288,7 +288,7 @@ ms.locfileid: "43485731"
   
 <a name="optional_and_nonrecommended_xaml_usages"></a>   
 ## <a name="optional-and-nonrecommended-xaml-usages"></a>선택 사항이 며 권장 되지 않는 XAML 사용  
- 다음 섹션에서는 XAML 프로세서에서 지 원하는 기술적 세부 정보 표시 또는 경우 사람이 읽을 수 있는 남은 XAML 파일을 방해 하는 기타 미적 문제를 생성 하는 하지만 XAML 사용에 XAML 소스를 포함 하는 응용 프로그램 개발 .  
+ 다음 섹션에서는 XAML 프로세서에서 지 원하는 기술적 하지만 세부 정보 표시 하거나 XAML 파일이 XAML 소스를 포함 하는 응용 프로그램을 개발할 때 이해 하기 쉬운 남아 방해 하는 미관상 문제를 생성 하는 XAML 용도 설명 합니다.  
   
 ### <a name="optional-property-element-usages"></a>선택적 속성 요소 사용  
  선택적은 명시적으로 XAML 프로세서에서는 암시적 간주 한다는 요소 콘텐츠 속성 작성을 포함 합니다. 콘텐츠를 선언할 경우에 예를 들어,를 <xref:System.Windows.Controls.Menu>, 명시적으로 선언 하도록 선택할 수 있습니다를 <xref:System.Windows.Controls.ItemsControl.Items%2A> 의 컬렉션을 <xref:System.Windows.Controls.Menu> 으로 `<Menu.Items>` 속성 요소 태그 및 위치는 각 <xref:System.Windows.Controls.MenuItem> 내에서 `<Menu.Items>`아닌 암시적 XAML 프로세서 동작을 사용 하 여 보다는 모든 자식 요소를 <xref:System.Windows.Controls.Menu> 이어야 합니다는 <xref:System.Windows.Controls.MenuItem> 에 배치 됩니다는 <xref:System.Windows.Controls.ItemsControl.Items%2A> 컬렉션입니다. 경우에 따라 선택적 사용법 태그에 표시 된 대로 개체 구조를 시각적으로 명확 하 게 도움이 됩니다. 또는 경우에 따라 명시적 속성 요소 사용을 기술적으로 작동 하지만 특성 값 내에서 중첩된 태그 확장과 같은 시각적으로 혼동 하는 태그를 방지할 수 있습니다.  
@@ -317,7 +317,7 @@ ms.locfileid: "43485731"
   
 ## <a name="see-also"></a>참고 항목  
  [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [XAML 네임스페이스(x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
+ [XAML Namespace (x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
  [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
  [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [TypeConverter 및 XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)  

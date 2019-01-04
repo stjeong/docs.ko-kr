@@ -2,12 +2,12 @@
 title: '&lt;netHttpBinding&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
-ms.openlocfilehash: 092072df2b88c59c7744a694175ce5ddf39cf79b
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 3a35be198a4e60922861c49e911bd498d44c974f
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842647"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030323"
 ---
 # <a name="lttransportgt-of-ltnethttpbindinggt"></a>&lt;netHttpBinding&gt;의 &lt;transport&gt;
 HTTP 전송의 인증 매개 변수를 제어하는 속성을 정의합니다.  
@@ -65,8 +65,8 @@ HTTP 전송의 인증 매개 변수를 제어하는 속성을 정의합니다.
 |값|설명|  
 |-----------|-----------------|  
 |없음|-메시지 전송 하는 동안 보안이 유지 되지 됩니다.|  
-|Basic|RFC 2617 – HTTP 인증: 기본 및 다이제스트 인증에 정의된 대로 기본 인증을 지정합니다.|  
-|Digest|RFC 2617 – HTTP 인증: 기본 및 다이제스트 인증에 정의된 대로 다이제스트 인증을 지정합니다.|  
+|Basic|RFC 2617 – HTTP 인증에 정의 된 대로 기본 인증을 지정 합니다. 기본 및 다이제스트 인증 합니다.|  
+|Digest|RFC 2617 – HTTP 인증에 정의 된 대로 다이제스트 인증을 지정 합니다. 기본 및 다이제스트 인증 합니다.|  
 |Ntlm|Windows 인증이 실패할 경우 가능하면 NTLM 인증을 지정합니다.|  
 |Windows|Windows 통합 인증을 지정합니다.|  
 |인증서|인증서를 사용하여 클라이언트 인증을 수행합니다. 이 옵션은 부모 `Mode` 요소의 `security` 특성이 Transport로 설정되어 있을 때만 작동하며 TransportCredentialOnly로 설정된 경우에는 작동하지 않습니다.|  
@@ -96,8 +96,8 @@ HTTP 전송의 인증 매개 변수를 제어하는 속성을 정의합니다.
   </services>  
   <bindings>  
     <netHttpBinding>  
-      <!-- Configure basicHttpBinding with Transport security -- >  
-      <!-- mode and clientCredentialType set to None.-->  
+      <!-- Configure basicHttpBinding with Transport security -->  
+      <!-- mode and clientCredentialType set to None. -->  
       <binding name="Binding1">  
         <security mode="Transport">  
           <transport clientCredentialType="None"  

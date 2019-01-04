@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Security
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
-ms.openlocfilehash: 5121b5076d867c57c97e637045aced8a00e24c84
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e5bb27980f38237f69f77721578f30df3830ade2
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185549"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029647"
 ---
 # <a name="message-security-windows"></a>Message Security Windows
 이 샘플에서는 Windows 인증과 함께 메시지 수준 보안을 사용하도록 <xref:System.ServiceModel.WSHttpBinding> 바인딩을 구성하는 방법을 보여 줍니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다. 이 샘플에서 서비스는 IIS(인터넷 정보 서비스)에서 호스트되고 클라이언트는 콘솔 응용 프로그램(.exe)입니다.  
@@ -45,12 +45,11 @@ ms.locfileid: "50185549"
   
   <bindings>  
     <wsHttpBinding>  
-      <!--   
-      <!--The default security for the WSHttpBinding is-->  
-      <!--Message security using Windows authentication. -->  
-      <!--This configuration explicitly defines the security mode -->  
-      <!--as Message and the clientCredentialType as Windows  -->  
-      <!--for demonstration purposes. -->  
+      <!-- The default security for the WSHttpBinding is -->  
+      <!-- Message security using Windows authentication. -->  
+      <!-- This configuration explicitly defines the security mode -->  
+      <!-- as Message and the clientCredentialType as Windows -->  
+      <!-- for demonstration purposes. -->  
       <binding name="Binding1">  
         <security mode="Message">  
           <message clientCredentialType="Windows"/>  

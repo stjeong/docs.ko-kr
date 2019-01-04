@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Microsoft Annotations Framework [WPF]
 - documents [WPF], annotations
 ms.assetid: a893442b-e220-4603-bf6a-b01fefcb4b37
-ms.openlocfilehash: e463a087516dc45cb4bd879c77aef6fbeba2b546
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d2f3fa70673c7ae5819346ab152b74acf93a164c
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33542017"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029842"
 ---
 # <a name="annotations-schema"></a>주석 스키마
 이 항목에서는 사용자 주석 데이터를 저장하고 검색하기 위해 Microsoft Annotations Framework에서 사용하는 XSD(XML 스키마 정의)에 대해 설명합니다.  
   
- [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)]에서는 내부 표현의 주석 데이터를 XML 형식으로 직렬화합니다.  이 변환에 사용되는 XML 형식은 [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)] XSD 스키마로 설명됩니다.  스키마는 응용 프로그램 간에 주석 데이터를 교환하는 데 사용할 수 있는 구현에 독립인적 XML 형식을 정의합니다.  
+ [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)]에서는 내부 표현의 주석 데이터를 XML 형식으로 직렬화합니다.  이 변환에 사용되는 XML 형식은 [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)] XSD 스키마로 설명됩니다.  스키마는 애플리케이션 간에 주석 데이터를 교환하는 데 사용할 수 있는 구현에 독립인적 XML 형식을 정의합니다.  
   
  [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)] XML 스키마 정의는 다음 두 개의 하위 스키마로 구성됩니다.  
   
@@ -24,13 +24,13 @@ ms.locfileid: "33542017"
   
 -   주석 XML 기본 스키마(기본 스키마)  
   
- 기본 XML 구조를 정의 하는 Core 스키마는 <xref:System.Windows.Annotations.Annotation>합니다.  형식에 해당 하는 대부분의 핵심 스키마에 정의 된 XML 요소는 <xref:System.Windows.Annotations> 네임 스페이스입니다.  코어 스키마는 응용 프로그램이 자체 XML 데이터를 추가할 수 있는 세 개의 확장 지점을 제공합니다.  이러한 확장 지점에 포함 된 <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, "콘텐츠" 및 합니다.  (의 형태로 제공 요소의 콘텐츠는 <xref:System.Xml.XmlElement> 목록입니다.)  
+ 기본 XML 구조를 정의 하는 코어 스키마는 <xref:System.Windows.Annotations.Annotation>합니다.  코어 스키마에 정의 된 XML 요소의 대부분의 형식에 해당 하는 <xref:System.Windows.Annotations> 네임 스페이스입니다.  코어 스키마는 애플리케이션이 자체 XML 데이터를 추가할 수 있는 세 개의 확장 지점을 제공합니다.  이러한 확장 지점을 포함 합니다 <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, 및 "콘텐츠"입니다.  (요소 형식으로 제공 됩니다 콘텐츠는 <xref:System.Xml.XmlElement> 목록입니다.)  
   
- 이 항목에서 설명 하는 기본 스키마에 대 한 확장을 정의 <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, 및 콘텐츠 초기 Windows Presentation Foundation (WPF) 릴리스에 포함 된 형식입니다.  
+ 이 항목에서 설명 하는 기본 스키마에 대 한 확장을 정의 합니다 <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, 및 Content 초기 Windows Presentation Foundation (WPF) 릴리스에 포함 된 형식입니다.  
   
 <a name="CoreSchema"></a>   
 ## <a name="annotations-xml-core-schema"></a>주석 XML 코어 스키마  
- XML 주석 핵심 스키마를 저장 하는 데 사용 되는 XML 구조를 정의 <xref:System.Windows.Annotations.Annotation> 개체입니다.  
+ 주석 XML 코어 스키마를 저장 하는 데 사용 되는 XML 구조를 정의 <xref:System.Windows.Annotations.Annotation> 개체입니다.  
   
 ```xml  
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"  
@@ -182,7 +182,7 @@ ms.locfileid: "33542017"
   
 <a name="BaseSchema"></a>   
 ## <a name="annotations-xml-base-schema"></a>주석 XML 기본 스키마  
- 기본 스키마는 핵심 스키마에 정의 된 세 가지 추상 요소에 대 한 XML 구조를 정의 <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, 및 <xref:System.Windows.Annotations.AnnotationResource.Contents%2A>합니다.  
+ 기본 스키마는 코어 스키마에 정의 된 세 가지 추상 요소에 대 한 XML 구조를 정의 <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, 및 <xref:System.Windows.Annotations.AnnotationResource.Contents%2A>합니다.  
   
 ```xml  
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"  
@@ -429,11 +429,11 @@ ms.locfileid: "33542017"
     </xsd:complexContent>  
   </xsd:complexType>  
   
-  <-- PageNumber element substitutes ContentLocatorPart and is used to locate a  
-  *  page in a FixedDocument.  PageNumber ContentLocatorPart is used in  
-  *   conjunction with the FixedTextRange ContentLocatorPart and it shows on with  
-  *   page are the coordinates defined in the FixedTextRange.  
-  *   Example of a PageNumber ContentLocatorPart:  
+  <!-- PageNumber element substitutes ContentLocatorPart and is used to locate a  
+  *    page in a FixedDocument.  PageNumber ContentLocatorPart is used in  
+  *    conjunction with the FixedTextRange ContentLocatorPart and it shows on with  
+  *    page are the coordinates defined in the FixedTextRange.  
+  *    Example of a PageNumber ContentLocatorPart:  
   *     
   *       <anb:PageNumber>  
   *         <anc:Item Name="Value" Value="1" />  
@@ -464,8 +464,8 @@ ms.locfileid: "33542017"
   <xsd:element name="Text" type="anb:TextContentType"  
                substitutionGroup="anc:Content"/>  
   
-  <-- Ink – contains XAML representing Sticky Note ink.  
-  *   Used in annotations of type InkStickyNote. -->  
+  <!-- Ink – contains XAML representing Sticky Note ink.  
+  *    Used in annotations of type InkStickyNote. -->  
   <xsd:complexType name="InkContentType">  
     <!-- See XAML schema for Ink content -->  
   </xsd:complexType>  
@@ -493,7 +493,7 @@ ms.locfileid: "33542017"
   
 <a name="SampleXML"></a>   
 ## <a name="sample-xml-produced-by-annotations-xmlstreamstore"></a>주석 XmlStreamStore에서 생성된 샘플 XML  
- 뒤에 나오는 XML 주석 출력이 나와 <xref:System.Windows.Annotations.Storage.XmlStreamStore> 세 개의 주석-는 강조 표시는 텍스트 스티커 메모 및 잉크 스티커 메모를 포함 하는 샘플 파일의 구성 합니다.  
+ 뒤에 오는 XML 주석의 출력을 보여 줍니다. <xref:System.Windows.Annotations.Storage.XmlStreamStore> 세 개의 주석 기능을 강조 표시는 텍스트 스티커 메모 및 잉크 스티커 메모를 포함 하는 샘플 파일의 구성 합니다.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

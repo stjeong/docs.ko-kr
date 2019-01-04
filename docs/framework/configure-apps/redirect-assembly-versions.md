@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: c4c96b874456297ede61c96e46fee8d90ebcafb6
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 67c94eeaa295b19e99f870780f555baff936889f
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123620"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030129"
 ---
 # <a name="redirecting-assembly-versions"></a>어셈블리 버전 리디렉션
 
@@ -67,7 +67,7 @@ ms.locfileid: "49123620"
 
 `<bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />`
 
-앱이 이전 버전.NET Framework의 대상으로 하는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다. 모든 어셈블리에 대 한 app.config 파일에서 바인딩 리디렉션 정보를 제공 하거나 바인딩 리디렉션 기능을 해제 하 여이 기본 동작을 재정의할 수 있습니다. 이 기능을 설정 하거나 해제 하는 방법에 대 한 정보를 참조 하세요 [방법: 자동 바인딩 리디렉션 사용 안 함 및 사용](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)합니다.
+앱이 이전 버전.NET Framework의 대상으로 하는 경우 자동 바인딩 리디렉션을 사용할 수 있습니다. 모든 어셈블리에 대 한 app.config 파일에서 바인딩 리디렉션 정보를 제공 하거나 바인딩 리디렉션 기능을 해제 하 여이 기본 동작을 재정의할 수 있습니다. 이 기능을 설정 하거나 해제 하는 방법에 대 한 정보를 참조 하세요. [방법: 사용 하도록 설정 하 고 자동 바인딩 리디렉션 사용 안 함](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)합니다.
 
 <a name="bypass_PP"></a>
 ### <a name="bypassing-publisher-policy"></a>게시자 정책 무시
@@ -142,11 +142,11 @@ ms.locfileid: "49123620"
 
 ```xml
 <assemblyBinding xmlns="..." appliesTo="v3.5 ">
-  <!—.NET Framework version 3.5 redirects here -->
+  <!--.NET Framework version 3.5 redirects here -->
 </assemblyBinding>
 
 <assemblyBinding xmlns="..." appliesTo="v4.0.30319">
-  <!—.NET Framework version 4.0 redirects here -->
+  <!--.NET Framework version 4.0 redirects here -->
 </assemblyBinding>
 
 <assemblyBinding xmlns="...">
@@ -156,7 +156,7 @@ ms.locfileid: "49123620"
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+- [방법: 사용 하도록 설정 하 고 자동 바인딩 리디렉션 사용 안 함](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
 - [\<bindingRedirect > 요소](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)
 - [어셈블리 바인딩 리디렉션 보안 권한](../../../docs/framework/configure-apps/assembly-binding-redirection-security-permission.md)
 - [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

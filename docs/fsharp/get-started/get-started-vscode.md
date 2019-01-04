@@ -1,13 +1,13 @@
 ---
 title: 시작 F# Visual Studio Code에서
 description: 사용 하는 방법을 알아봅니다 F# Visual Studio Code 및 Ionide 플러그 인 도구 모음을 사용 하 여 합니다.
-ms.date: 05/28/2018
-ms.openlocfilehash: 2db587b5614c5a7ca9285cad9b719970d53afd55
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 12/23/2018
+ms.openlocfilehash: 34802551bf4e34abb5aa0130643f32dbce68f1b2
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129794"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029556"
 ---
 # <a name="get-started-with-f-in-visual-studio-code"></a>시작 F# Visual Studio Code에서
 
@@ -150,8 +150,7 @@ REPL 기반 개발의 다음 단계를 작업 코드를 이동 하는 것을 F# 
 #load "ClassLibraryDemo.fs"
 open ClassLibraryDemo
 ```
-
-첫 번째 줄은 로드할 스크립팅 FSI 필요 `ClassLibraryDemo.fs`합니다. 두 번째 줄은 편의 위해: 생략 하는 것은 선택 사항 이지만 입력 해야 합니다 `open ClassLibraryDemo` FSI 창 표시 하려는 경우에 `ToPigLatin` 범위로 모듈입니다.
+텍스트 줄이 모두를 선택 하 고 FSI에서 다음이 줄을 실행 하려면 Alt + Enter 키를 누릅니다. Pig Latin 라이브러리의 내용을 FSI 프로세스로 로드 됩니다 이러한 및 `open` 는 `ClassLibraryDemo` 네임 스페이스 기능에 액세스할 수 있도록 합니다.
 
 그런 다음 FSI 창에서 사용 하 여 함수를 호출 합니다 `PigLatin` 이전에 정의한 모듈:
 
