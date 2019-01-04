@@ -1,138 +1,166 @@
 ---
 title: Linux에서 .NET Core의 필수 구성 요소
-description: Linux 컴퓨터에서 .NET Core 응용 프로그램을 개발, 배포 및 실행하기 위해 지원되는 Linux 버전 및 .NET Core 종속성입니다.
+description: Linux 컴퓨터에서 .NET Core 애플리케이션을 개발, 배포 및 실행하기 위해 지원되는 Linux 버전 및 .NET Core 종속성입니다.
 author: thraka
 ms.author: adegeo
-ms.date: 12/03/2018
-ms.openlocfilehash: e250158d10c6a03535f4e693e74954747f860a3c
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 12/14/2018
+ms.openlocfilehash: 7a2b0b3af97500ab0988e5de7a44713a8c05ccb9
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148336"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656052"
 ---
-# <a name="prerequisites-for-net-core-on-linux"></a><span data-ttu-id="5fdeb-103">Linux에서 .NET Core의 필수 구성 요소</span><span class="sxs-lookup"><span data-stu-id="5fdeb-103">Prerequisites for .NET Core on Linux</span></span>
+# <a name="prerequisites-for-net-core-on-linux"></a><span data-ttu-id="eb4ae-103">Linux에서 .NET Core의 필수 구성 요소</span><span class="sxs-lookup"><span data-stu-id="eb4ae-103">Prerequisites for .NET Core on Linux</span></span>
 
-<span data-ttu-id="5fdeb-104">이 문서에서는 Linux에서 .NET Core 응용 프로그램을 개발하는 데 필요한 종속성을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-104">This article shows the dependencies needed to develop .NET Core applications on Linux.</span></span> <span data-ttu-id="5fdeb-105">다음에 나오는 지원되는 Linux 배포/버전 및 종속성은 Linux에서 .NET Core 앱을 개발하기 위한 두 가지 방법에 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-105">The supported Linux distributions/versions, and dependencies that follow apply to the two ways of developing .NET Core apps on Linux:</span></span>
+<span data-ttu-id="eb4ae-104">이 문서에서는 Linux에서 .NET Core 애플리케이션을 개발하는 데 필요한 종속성을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-104">This article shows the dependencies needed to develop .NET Core applications on Linux.</span></span> <span data-ttu-id="eb4ae-105">다음에 나오는 지원되는 Linux 배포/버전 및 종속성은 Linux에서 .NET Core 앱을 개발하기 위한 두 가지 방법에 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-105">The supported Linux distributions/versions, and dependencies that follow apply to the two ways of developing .NET Core apps on Linux:</span></span>
 
-* [<span data-ttu-id="5fdeb-106">즐겨 찾는 편집기를 사용하는 명령줄</span><span class="sxs-lookup"><span data-stu-id="5fdeb-106">Command-line with your favorite editor</span></span>](tutorials/using-with-xplat-cli.md)
-* [<span data-ttu-id="5fdeb-107">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="5fdeb-107">Visual Studio Code</span></span>](https://code.visualstudio.com/)
+* [<span data-ttu-id="eb4ae-106">즐겨 찾는 편집기를 사용하는 명령줄</span><span class="sxs-lookup"><span data-stu-id="eb4ae-106">Command-line with your favorite editor</span></span>](tutorials/using-with-xplat-cli.md)
+* [<span data-ttu-id="eb4ae-107">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="eb4ae-107">Visual Studio Code</span></span>](https://code.visualstudio.com/)
 
 > [!NOTE]
-> <span data-ttu-id="5fdeb-108">.NET Core SDK 패키지는 프로덕션 서버/환경에서 필요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-108">The .NET Core SDK package is not required for production servers/environments.</span></span> <span data-ttu-id="5fdeb-109">.NET Core 런타임 패키지만 프로덕션 환경에 배포된 앱에 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-109">Only the .NET Core runtime package is needed for apps deployed to production environments.</span></span> <span data-ttu-id="5fdeb-110">NET Core 런타임은 자체 포함된 배포의 일부로 앱으로 배포되지만 프레임워크 종속 배포된 앱에 대해 별도로 배포되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-110">The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps separately.</span></span> <span data-ttu-id="5fdeb-111">프레임워크 종속 및 자체 포함된 배포 형식에 대한 자세한 내용은 [.NET Core 응용 프로그램 배포](./deploying/index.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-111">For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](./deploying/index.md).</span></span> <span data-ttu-id="5fdeb-112">또한 특정 지침은 [자체 포함된 Linux 응용 프로그램](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-112">Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.</span></span>
+> <span data-ttu-id="eb4ae-108">.NET Core SDK 패키지는 프로덕션 서버/환경에서 필요하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-108">The .NET Core SDK package is not required for production servers/environments.</span></span> <span data-ttu-id="eb4ae-109">.NET Core 런타임 패키지만 프로덕션 환경에 배포된 앱에 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-109">Only the .NET Core runtime package is needed for apps deployed to production environments.</span></span> <span data-ttu-id="eb4ae-110">NET Core 런타임은 자체 포함된 배포의 일부로 앱으로 배포되지만 프레임워크 종속 배포된 앱에 대해 별도로 배포되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-110">The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps separately.</span></span> <span data-ttu-id="eb4ae-111">프레임워크 종속 및 자체 포함된 배포 형식에 대한 자세한 내용은 [.NET Core 애플리케이션 배포](./deploying/index.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-111">For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](./deploying/index.md).</span></span> <span data-ttu-id="eb4ae-112">또한 특정 지침은 [자체 포함된 Linux 애플리케이션](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-112">Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.</span></span>
 
-## <a name="supported-linux-versions"></a><span data-ttu-id="5fdeb-113">지원되는 Linux 버전</span><span class="sxs-lookup"><span data-stu-id="5fdeb-113">Supported Linux versions</span></span>
+## <a name="supported-linux-versions"></a><span data-ttu-id="eb4ae-113">지원되는 Linux 버전</span><span class="sxs-lookup"><span data-stu-id="eb4ae-113">Supported Linux versions</span></span>
 
-# <a name="net-core-2xtabnetcore2x"></a>[<span data-ttu-id="5fdeb-114">.NET Core 2.x</span><span class="sxs-lookup"><span data-stu-id="5fdeb-114">.NET Core 2.x</span></span>](#tab/netcore2x)
+# <a name="net-core-2xtabnetcore2x"></a>[<span data-ttu-id="eb4ae-114">.NET Core 2.x</span><span class="sxs-lookup"><span data-stu-id="eb4ae-114">.NET Core 2.x</span></span>](#tab/netcore2x)
 
-<span data-ttu-id="5fdeb-115">.NET Core 2.x는 단일 운영 체제로 Linux를 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-115">.NET Core 2.x treats Linux as a single operating system.</span></span> <span data-ttu-id="5fdeb-116">지원되는 Linux 배포에 대한 단일 Linux 빌드(칩 아키텍처당)가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-116">There is a single Linux build (per chip architecture) for supported Linux distributions.</span></span> 
+<span data-ttu-id="eb4ae-115">.NET Core 2.x는 단일 운영 체제로 Linux를 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-115">.NET Core 2.x treats Linux as a single operating system.</span></span> <span data-ttu-id="eb4ae-116">지원되는 Linux 배포에 대한 단일 Linux 빌드(칩 아키텍처당)가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-116">There is a single Linux build (per chip architecture) for supported Linux distributions.</span></span> 
 
-<span data-ttu-id="5fdeb-117">다운로드 링크 및 자세한 내용은 [.NET Core 2.2 다운로드](https://www.microsoft.com/net/download/dotnet-core/2.2) 또는 [.NET Core 2.1 다운로드](https://www.microsoft.com/net/download/dotnet-core/2.1)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-117">For download links and more information, see [.NET Core 2.2 downloads](https://www.microsoft.com/net/download/dotnet-core/2.2) or [.NET Core 2.1 downloads](https://www.microsoft.com/net/download/dotnet-core/2.1).</span></span>
+<span data-ttu-id="eb4ae-117">다운로드 링크 및 자세한 내용은 [.NET Core 2.2 다운로드](https://www.microsoft.com/net/download/dotnet-core/2.2) 또는 [.NET Core 2.1 다운로드](https://www.microsoft.com/net/download/dotnet-core/2.1)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-117">For download links and more information, see [.NET Core 2.2 downloads](https://www.microsoft.com/net/download/dotnet-core/2.2) or [.NET Core 2.1 downloads](https://www.microsoft.com/net/download/dotnet-core/2.1).</span></span>
 
-<span data-ttu-id="5fdeb-118">.NET Core 2.x는 다음 Linux 배포/버전에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-118">.NET Core 2.x is supported on the following Linux distributions/versions:</span></span>
+<span data-ttu-id="eb4ae-118">.NET Core 2.x는 다음 Linux 배포/버전에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-118">.NET Core 2.x is supported on the following Linux distributions/versions:</span></span>
 
-* <span data-ttu-id="5fdeb-119">Red Hat Enterprise Linux 7, 6 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-119">Red Hat Enterprise Linux 7, 6 - 64-bit (`x86_64` or `amd64`)</span></span>
-* <span data-ttu-id="5fdeb-120">CentOS 7 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-120">CentOS 7  - 64-bit (`x86_64` or `amd64`)</span></span> 
-* <span data-ttu-id="5fdeb-121">Oracle Linux 7 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-121">Oracle Linux 7 - 64-bit (`x86_64` or `amd64`)</span></span> 
-* <span data-ttu-id="5fdeb-122">Fedora 28, 27 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-122">Fedora 28, 27 - 64-bit (`x86_64` or `amd64`)</span></span> 
-* <span data-ttu-id="5fdeb-123">Debian 9(64비트, `arm32`), 8.7 이상 버전 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-123">Debian 9 (64-bit, `arm32`), 8.7 or later versions - 64-bit (`x86_64` or `amd64`)</span></span>
-* <span data-ttu-id="5fdeb-124">Ubuntu 18.04(64비트, `arm32`), 16.04, 14.04, 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-124">Ubuntu 18.04 (64-bit, `arm32`), 16.04, 14.04 - 64-bit (`x86_64` or `amd64`)</span></span>
-* <span data-ttu-id="5fdeb-125">Linux Mint 18, 17 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-125">Linux Mint 18, 17 - 64-bit (`x86_64` or `amd64`)</span></span>
-* <span data-ttu-id="5fdeb-126">openSUSE 42.3 이상 버전 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-126">openSUSE 42.3 or later versions - 64-bit (`x86_64` or `amd64`)</span></span>
-* <span data-ttu-id="5fdeb-127">SUSE Enterprise Linux(SLES) 12 서비스 팩 2 이상 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-127">SUSE Enterprise Linux (SLES) 12 Service Pack 2 or later - 64-bit (`x86_64` or `amd64`)</span></span>
-* <span data-ttu-id="5fdeb-128">Alpine Linux 3.7 이상 버전 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-128">Alpine Linux 3.7 or later versions - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-119">Red Hat Enterprise Linux 7, 6 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-119">Red Hat Enterprise Linux 7, 6 - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-120">CentOS 7 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-120">CentOS 7  - 64-bit (`x86_64` or `amd64`)</span></span> 
+* <span data-ttu-id="eb4ae-121">Oracle Linux 7 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-121">Oracle Linux 7 - 64-bit (`x86_64` or `amd64`)</span></span> 
+* <span data-ttu-id="eb4ae-122">Fedora 28, 27 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-122">Fedora 28, 27 - 64-bit (`x86_64` or `amd64`)</span></span> 
+* <span data-ttu-id="eb4ae-123">Debian 9(64비트, `arm32`), 8.7 이상 버전 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-123">Debian 9 (64-bit, `arm32`), 8.7 or later versions - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-124">Ubuntu 18.04(64비트, `arm32`), 16.04, 14.04, 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-124">Ubuntu 18.04 (64-bit, `arm32`), 16.04, 14.04 - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-125">Linux Mint 18, 17 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-125">Linux Mint 18, 17 - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-126">openSUSE 42.3 이상 버전 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-126">openSUSE 42.3 or later versions - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-127">SUSE Enterprise Linux(SLES) 12 서비스 팩 2 이상 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-127">SUSE Enterprise Linux (SLES) 12 Service Pack 2 or later - 64-bit (`x86_64` or `amd64`)</span></span>
+* <span data-ttu-id="eb4ae-128">Alpine Linux 3.7 이상 버전 - 64비트(`x86_64` 또는 `amd64`)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-128">Alpine Linux 3.7 or later versions - 64-bit (`x86_64` or `amd64`)</span></span>
 
-<span data-ttu-id="5fdeb-129">.NET Core 2.1 및 .NET Core 2.2가 지원되는 운영 체제, 배포 및 버전, 지원되지 않는 OS 버전, 수명 주기 정책 링크의 전체 목록은 [.NET Core 2.1이 지원되는 OS 버전](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) 및 [.NET Core 2.2가 지원되는 OS 버전](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-129">See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) and [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.1 and .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.</span></span>
+<span data-ttu-id="eb4ae-129">.NET Core 2.1 및 .NET Core 2.2가 지원되는 운영 체제, 배포 및 버전, 지원되지 않는 OS 버전, 수명 주기 정책 링크의 전체 목록은 [.NET Core 2.1이 지원되는 OS 버전](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) 및 [.NET Core 2.2가 지원되는 OS 버전](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-129">See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) and [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.1 and .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.</span></span>
 
-# <a name="net-core-1xtabnetcore1x"></a>[<span data-ttu-id="5fdeb-130">.NET Core 1.x</span><span class="sxs-lookup"><span data-stu-id="5fdeb-130">.NET Core 1.x</span></span>](#tab/netcore1x)
+# <a name="net-core-1xtabnetcore1x"></a>[<span data-ttu-id="eb4ae-130">.NET Core 1.x</span><span class="sxs-lookup"><span data-stu-id="eb4ae-130">.NET Core 1.x</span></span>](#tab/netcore1x)
 
-<span data-ttu-id="5fdeb-131">다운로드 링크 및 자세한 내용은 [.NET Core 1.1 다운로드](https://www.microsoft.com/net/download/dotnet-core/1.1) 또는 [.NET Core 1.0 다운로드](https://www.microsoft.com/net/download/dotnet-core/1.0)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-131">For download links and more information, see [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).</span></span>
+<span data-ttu-id="eb4ae-131">다운로드 링크 및 자세한 내용은 [.NET Core 1.1 다운로드](https://www.microsoft.com/net/download/dotnet-core/1.1) 또는 [.NET Core 1.0 다운로드](https://www.microsoft.com/net/download/dotnet-core/1.0)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-131">For download links and more information, see [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).</span></span>
 
-<span data-ttu-id="5fdeb-132">.NET Core 1.x는 다음 Linux 64비트(`x86_64` 또는 `amd64`) 배포/버전에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-132">.NET Core 1.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:</span></span>
+<span data-ttu-id="eb4ae-132">.NET Core 1.x는 다음 Linux 64비트(`x86_64` 또는 `amd64`) 배포/버전에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-132">.NET Core 1.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:</span></span>
 
-* <span data-ttu-id="5fdeb-133">Red Hat Enterprise Linux 7</span><span class="sxs-lookup"><span data-stu-id="5fdeb-133">Red Hat Enterprise Linux 7</span></span>
-* <span data-ttu-id="5fdeb-134">CentOS 7</span><span class="sxs-lookup"><span data-stu-id="5fdeb-134">CentOS 7</span></span>
-* <span data-ttu-id="5fdeb-135">Oracle Linux 7</span><span class="sxs-lookup"><span data-stu-id="5fdeb-135">Oracle Linux 7</span></span>
-* <span data-ttu-id="5fdeb-136">Fedora 28(.NET Core 1.1), 27</span><span class="sxs-lookup"><span data-stu-id="5fdeb-136">Fedora 28 (.NET Core 1.1), 27</span></span>
-* <span data-ttu-id="5fdeb-137">Debian 8.2 이상 버전</span><span class="sxs-lookup"><span data-stu-id="5fdeb-137">Debian 8.2 or later versions</span></span>
-* <span data-ttu-id="5fdeb-138">Ubuntu 18.04(.NET Core 1.1), 16.04, 14.04</span><span class="sxs-lookup"><span data-stu-id="5fdeb-138">Ubuntu 18.04 (.NET Core 1.1), 16.04, 14.04</span></span>
-* <span data-ttu-id="5fdeb-139">Linux Mint 17</span><span class="sxs-lookup"><span data-stu-id="5fdeb-139">Linux Mint 17</span></span>
-* <span data-ttu-id="5fdeb-140">openSUSE 42.3 이상 버전(.NET Core 1.1)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-140">openSUSE 42.3 or later versions (.NET Core 1.1)</span></span>
+* <span data-ttu-id="eb4ae-133">Red Hat Enterprise Linux 7</span><span class="sxs-lookup"><span data-stu-id="eb4ae-133">Red Hat Enterprise Linux 7</span></span>
+* <span data-ttu-id="eb4ae-134">CentOS 7</span><span class="sxs-lookup"><span data-stu-id="eb4ae-134">CentOS 7</span></span>
+* <span data-ttu-id="eb4ae-135">Oracle Linux 7</span><span class="sxs-lookup"><span data-stu-id="eb4ae-135">Oracle Linux 7</span></span>
+* <span data-ttu-id="eb4ae-136">Fedora 28(.NET Core 1.1), 27</span><span class="sxs-lookup"><span data-stu-id="eb4ae-136">Fedora 28 (.NET Core 1.1), 27</span></span>
+* <span data-ttu-id="eb4ae-137">Debian 8.2 이상 버전</span><span class="sxs-lookup"><span data-stu-id="eb4ae-137">Debian 8.2 or later versions</span></span>
+* <span data-ttu-id="eb4ae-138">Ubuntu 18.04(.NET Core 1.1), 16.04, 14.04</span><span class="sxs-lookup"><span data-stu-id="eb4ae-138">Ubuntu 18.04 (.NET Core 1.1), 16.04, 14.04</span></span>
+* <span data-ttu-id="eb4ae-139">Linux Mint 17</span><span class="sxs-lookup"><span data-stu-id="eb4ae-139">Linux Mint 17</span></span>
+* <span data-ttu-id="eb4ae-140">openSUSE 42.3 이상 버전(.NET Core 1.1)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-140">openSUSE 42.3 or later versions (.NET Core 1.1)</span></span>
 
-<span data-ttu-id="5fdeb-141">지원 OS 버전 중 .NET Core 1.x를 지원하는 운영 체제 및 수명 주기 정책 링크는 [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)(.NET Core 1.x가 지원되는 OS 버전)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-141">See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.</span></span>
+<span data-ttu-id="eb4ae-141">지원 OS 버전 중 .NET Core 1.x를 지원하는 운영 체제 및 수명 주기 정책 링크는 [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)(.NET Core 1.x가 지원되는 OS 버전)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-141">See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.</span></span>
+
+# <a name="net-core-30-preview-1tabnetcore30"></a>[<span data-ttu-id="eb4ae-142">.NET Core 3.0 Preview 1</span><span class="sxs-lookup"><span data-stu-id="eb4ae-142">.NET Core 3.0 Preview 1</span></span>](#tab/netcore30)
+
+<span data-ttu-id="eb4ae-143">.NET Core 3.0 Preview 1은 단일 운영 체제로 Linux를 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-143">.NET Core 3.0 Preview 1 treats Linux as a single operating system.</span></span> <span data-ttu-id="eb4ae-144">지원되는 Linux 배포에 대한 단일 Linux 빌드(칩 아키텍처당)가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-144">There is a single Linux build (per chip architecture) for supported Linux distributions.</span></span> 
+
+<span data-ttu-id="eb4ae-145">다운로드 링크 및 자세한 내용은 [.NET Core 3.0 다운로드](https://dotnet.microsoft.com/download/dotnet-core/3.0)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-145">For download links and more information, see [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).</span></span>
+
+<span data-ttu-id="eb4ae-146">.NET Core 3.0 Preview 1은 다음 Linux 배포/버전에서 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-146">.NET Core 3.0 Preview 1 is supported on the following Linux distributions/versions.</span></span> 
+
+<span data-ttu-id="eb4ae-147">OS</span><span class="sxs-lookup"><span data-stu-id="eb4ae-147">OS</span></span>                            | <span data-ttu-id="eb4ae-148">버전</span><span class="sxs-lookup"><span data-stu-id="eb4ae-148">Version</span></span>               | <span data-ttu-id="eb4ae-149">아키텍처</span><span class="sxs-lookup"><span data-stu-id="eb4ae-149">Architectures</span></span>  
+------------------------------|-----------------------|----------------
+<span data-ttu-id="eb4ae-150">Red Hat Enterprise Linux</span><span class="sxs-lookup"><span data-stu-id="eb4ae-150">Red Hat Enterprise Linux</span></span>      | <span data-ttu-id="eb4ae-151">6</span><span class="sxs-lookup"><span data-stu-id="eb4ae-151">6</span></span>                     | <span data-ttu-id="eb4ae-152">X64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-152">x64</span></span>
+<span data-ttu-id="eb4ae-153">Red Hat Enterprise Linux</span><span class="sxs-lookup"><span data-stu-id="eb4ae-153">Red Hat Enterprise Linux</span></span><br><span data-ttu-id="eb4ae-154">CentOS</span><span class="sxs-lookup"><span data-stu-id="eb4ae-154">CentOS</span></span><br><span data-ttu-id="eb4ae-155">Oracle Linux</span><span class="sxs-lookup"><span data-stu-id="eb4ae-155">Oracle Linux</span></span>  | <span data-ttu-id="eb4ae-156">7</span><span class="sxs-lookup"><span data-stu-id="eb4ae-156">7</span></span>                     | <span data-ttu-id="eb4ae-157">X64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-157">x64</span></span>
+<span data-ttu-id="eb4ae-158">Fedora</span><span class="sxs-lookup"><span data-stu-id="eb4ae-158">Fedora</span></span>                        | <span data-ttu-id="eb4ae-159">28</span><span class="sxs-lookup"><span data-stu-id="eb4ae-159">28</span></span>                    | <span data-ttu-id="eb4ae-160">X64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-160">x64</span></span>
+<span data-ttu-id="eb4ae-161">Debian</span><span class="sxs-lookup"><span data-stu-id="eb4ae-161">Debian</span></span>                        | <span data-ttu-id="eb4ae-162">10</span><span class="sxs-lookup"><span data-stu-id="eb4ae-162">9</span></span>                     | <span data-ttu-id="eb4ae-163">x64, ARM32\*, ARM64\*</span><span class="sxs-lookup"><span data-stu-id="eb4ae-163">x64, ARM32\*, ARM64\*</span></span>
+<span data-ttu-id="eb4ae-164">Ubuntu</span><span class="sxs-lookup"><span data-stu-id="eb4ae-164">Ubuntu</span></span>                        | <span data-ttu-id="eb4ae-165">16.04+, 18.04+</span><span class="sxs-lookup"><span data-stu-id="eb4ae-165">16.04+, 18.04+</span></span>        | <span data-ttu-id="eb4ae-166">x64, ARM32\*, ARM64\*</span><span class="sxs-lookup"><span data-stu-id="eb4ae-166">x64, ARM32\*, ARM64\*</span></span>
+<span data-ttu-id="eb4ae-167">Linux Mint</span><span class="sxs-lookup"><span data-stu-id="eb4ae-167">Linux Mint</span></span>                    | <span data-ttu-id="eb4ae-168">18</span><span class="sxs-lookup"><span data-stu-id="eb4ae-168">18</span></span>                    | <span data-ttu-id="eb4ae-169">X64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-169">x64</span></span>
+<span data-ttu-id="eb4ae-170">openSUSE</span><span class="sxs-lookup"><span data-stu-id="eb4ae-170">openSUSE</span></span>                      | <span data-ttu-id="eb4ae-171">42.3+</span><span class="sxs-lookup"><span data-stu-id="eb4ae-171">42.3+</span></span>                 | <span data-ttu-id="eb4ae-172">X64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-172">x64</span></span>
+<span data-ttu-id="eb4ae-173">SLES(SUSE Enterprise Linux)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-173">SUSE Enterprise Linux (SLES)</span></span>  | <span data-ttu-id="eb4ae-174">12 SP2+</span><span class="sxs-lookup"><span data-stu-id="eb4ae-174">12 SP2+</span></span>               | <span data-ttu-id="eb4ae-175">X64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-175">x64</span></span>
+<span data-ttu-id="eb4ae-176">Alpine Linux</span><span class="sxs-lookup"><span data-stu-id="eb4ae-176">Alpine Linux</span></span>                  | <span data-ttu-id="eb4ae-177">3.8+</span><span class="sxs-lookup"><span data-stu-id="eb4ae-177">3.8+</span></span>                  | <span data-ttu-id="eb4ae-178">x64, ARM64</span><span class="sxs-lookup"><span data-stu-id="eb4ae-178">x64, ARM64</span></span>
+
+<span data-ttu-id="eb4ae-179">\* ARM32 및 ARM64 지원은 Debian 9 및 Ubuntu 16.04에서 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-179">\* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04.</span></span> <span data-ttu-id="eb4ae-180">해당 배포판의 이전 버전은 ARM 칩에서 지원되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-180">Earlier versions of those distros are not supported on ARM chips.</span></span>
+
+<span data-ttu-id="eb4ae-181">지원 OS 버전 중 .NET Core 3.0이 지원되는 운영 체제, 배포 및 버전, 수명 주기 정책 링크의 전체 목록은 [.NET Core 3.0이 지원되는 OS 버전](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-181">See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.</span></span>
+
+<span data-ttu-id="eb4ae-182">ARM64에 .NET Core 3.0을 설치하는 방법에 대한 자세한 내용은 [Linux ARM64에 .NET Core 3.0 설치](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-182">For more information about how to install .NET Core 3.0 on ARM64, see [Installing .NET Core 3.0 on Linux ARM64](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213).</span></span>
+
+
 
 ---
 
-## <a name="linux-distribution-dependencies"></a><span data-ttu-id="5fdeb-142">Linux 배포 종속성</span><span class="sxs-lookup"><span data-stu-id="5fdeb-142">Linux distribution dependencies</span></span>
+## <a name="linux-distribution-dependencies"></a><span data-ttu-id="eb4ae-183">Linux 배포 종속성</span><span class="sxs-lookup"><span data-stu-id="eb4ae-183">Linux distribution dependencies</span></span>
 
-<span data-ttu-id="5fdeb-143">다음은 예제로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-143">The following are intended to be examples.</span></span> <span data-ttu-id="5fdeb-144">정확한 버전 및 이름은 선택한 Linux 배포에 따라 약간 다를 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-144">The exact versions and names may vary slightly on your Linux distribution of choice.</span></span>
+<span data-ttu-id="eb4ae-184">다음은 예제로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-184">The following are intended to be examples.</span></span> <span data-ttu-id="eb4ae-185">정확한 버전 및 이름은 선택한 Linux 배포에 따라 약간 다를 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-185">The exact versions and names may vary slightly on your Linux distribution of choice.</span></span>
 
-### <a name="ubuntu"></a><span data-ttu-id="5fdeb-145">Ubuntu</span><span class="sxs-lookup"><span data-stu-id="5fdeb-145">Ubuntu</span></span>
+### <a name="ubuntu"></a><span data-ttu-id="eb4ae-186">Ubuntu</span><span class="sxs-lookup"><span data-stu-id="eb4ae-186">Ubuntu</span></span>
 
-<span data-ttu-id="5fdeb-146">Ubuntu 배포에는 다음과 같은 라이브러리 설치가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-146">Ubuntu distributions require the following libraries installed:</span></span>
+<span data-ttu-id="eb4ae-187">Ubuntu 배포에는 다음과 같은 라이브러리 설치가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-187">Ubuntu distributions require the following libraries installed:</span></span>
 
-* <span data-ttu-id="5fdeb-147">liblttng-ust0</span><span class="sxs-lookup"><span data-stu-id="5fdeb-147">liblttng-ust0</span></span>
-* <span data-ttu-id="5fdeb-148">libcurl3</span><span class="sxs-lookup"><span data-stu-id="5fdeb-148">libcurl3</span></span>
-* <span data-ttu-id="5fdeb-149">libssl1.0.0</span><span class="sxs-lookup"><span data-stu-id="5fdeb-149">libssl1.0.0</span></span>
-* <span data-ttu-id="5fdeb-150">libkrb5-3</span><span class="sxs-lookup"><span data-stu-id="5fdeb-150">libkrb5-3</span></span>
-* <span data-ttu-id="5fdeb-151">zlib1g</span><span class="sxs-lookup"><span data-stu-id="5fdeb-151">zlib1g</span></span>
-* <span data-ttu-id="5fdeb-152">libicu52(14.x용)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-152">libicu52 (for 14.x)</span></span>
-* <span data-ttu-id="5fdeb-153">libicu55(16.x용)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-153">libicu55 (for 16.x)</span></span>
-* <span data-ttu-id="5fdeb-154">libicu57(17.x용)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-154">libicu57 (for 17.x)</span></span>
-* <span data-ttu-id="5fdeb-155">libicu60(18.x용)</span><span class="sxs-lookup"><span data-stu-id="5fdeb-155">libicu60 (for 18.x)</span></span>
+* <span data-ttu-id="eb4ae-188">liblttng-ust0</span><span class="sxs-lookup"><span data-stu-id="eb4ae-188">liblttng-ust0</span></span>
+* <span data-ttu-id="eb4ae-189">libcurl3</span><span class="sxs-lookup"><span data-stu-id="eb4ae-189">libcurl3</span></span>
+* <span data-ttu-id="eb4ae-190">libssl1.0.0</span><span class="sxs-lookup"><span data-stu-id="eb4ae-190">libssl1.0.0</span></span>
+* <span data-ttu-id="eb4ae-191">libkrb5-3</span><span class="sxs-lookup"><span data-stu-id="eb4ae-191">libkrb5-3</span></span>
+* <span data-ttu-id="eb4ae-192">zlib1g</span><span class="sxs-lookup"><span data-stu-id="eb4ae-192">zlib1g</span></span>
+* <span data-ttu-id="eb4ae-193">libicu52(14.x용)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-193">libicu52 (for 14.x)</span></span>
+* <span data-ttu-id="eb4ae-194">libicu55(16.x용)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-194">libicu55 (for 16.x)</span></span>
+* <span data-ttu-id="eb4ae-195">libicu57(17.x용)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-195">libicu57 (for 17.x)</span></span>
+* <span data-ttu-id="eb4ae-196">libicu60(18.x용)</span><span class="sxs-lookup"><span data-stu-id="eb4ae-196">libicu60 (for 18.x)</span></span>
 
-<span data-ttu-id="5fdeb-156">.NET Core 2.1 이전 버전의 경우 다음 종속성도 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-156">For versions earlier than .NET Core 2.1, following dependencies are also required:</span></span>
+<span data-ttu-id="eb4ae-197">.NET Core 2.1 이전 버전의 경우 다음 종속성도 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-197">For versions earlier than .NET Core 2.1, following dependencies are also required:</span></span>
 
-* <span data-ttu-id="5fdeb-157">libunwind8</span><span class="sxs-lookup"><span data-stu-id="5fdeb-157">libunwind8</span></span>
-* <span data-ttu-id="5fdeb-158">libuuid1</span><span class="sxs-lookup"><span data-stu-id="5fdeb-158">libuuid1</span></span>
+* <span data-ttu-id="eb4ae-198">libunwind8</span><span class="sxs-lookup"><span data-stu-id="eb4ae-198">libunwind8</span></span>
+* <span data-ttu-id="eb4ae-199">libuuid1</span><span class="sxs-lookup"><span data-stu-id="eb4ae-199">libuuid1</span></span>
 
-### <a name="centos-and-fedora"></a><span data-ttu-id="5fdeb-159">CentOS 및 Fedora</span><span class="sxs-lookup"><span data-stu-id="5fdeb-159">CentOS and Fedora</span></span>
+### <a name="centos-and-fedora"></a><span data-ttu-id="eb4ae-200">CentOS 및 Fedora</span><span class="sxs-lookup"><span data-stu-id="eb4ae-200">CentOS and Fedora</span></span>
 
-<span data-ttu-id="5fdeb-160">CentOS 배포에는 다음과 같은 라이브러리 설치가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-160">CentOS distributions require the following libraries installed:</span></span>
+<span data-ttu-id="eb4ae-201">CentOS 배포에는 다음과 같은 라이브러리 설치가 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-201">CentOS distributions require the following libraries installed:</span></span>
 
-* <span data-ttu-id="5fdeb-161">lttng-ust</span><span class="sxs-lookup"><span data-stu-id="5fdeb-161">lttng-ust</span></span>
-* <span data-ttu-id="5fdeb-162">libcurl</span><span class="sxs-lookup"><span data-stu-id="5fdeb-162">libcurl</span></span>
-* <span data-ttu-id="5fdeb-163">openssl-libs</span><span class="sxs-lookup"><span data-stu-id="5fdeb-163">openssl-libs</span></span>
-* <span data-ttu-id="5fdeb-164">krb5-libs</span><span class="sxs-lookup"><span data-stu-id="5fdeb-164">krb5-libs</span></span>
-* <span data-ttu-id="5fdeb-165">libicu</span><span class="sxs-lookup"><span data-stu-id="5fdeb-165">libicu</span></span>
-* <span data-ttu-id="5fdeb-166">zlib</span><span class="sxs-lookup"><span data-stu-id="5fdeb-166">zlib</span></span>
+* <span data-ttu-id="eb4ae-202">lttng-ust</span><span class="sxs-lookup"><span data-stu-id="eb4ae-202">lttng-ust</span></span>
+* <span data-ttu-id="eb4ae-203">libcurl</span><span class="sxs-lookup"><span data-stu-id="eb4ae-203">libcurl</span></span>
+* <span data-ttu-id="eb4ae-204">openssl-libs</span><span class="sxs-lookup"><span data-stu-id="eb4ae-204">openssl-libs</span></span>
+* <span data-ttu-id="eb4ae-205">krb5-libs</span><span class="sxs-lookup"><span data-stu-id="eb4ae-205">krb5-libs</span></span>
+* <span data-ttu-id="eb4ae-206">libicu</span><span class="sxs-lookup"><span data-stu-id="eb4ae-206">libicu</span></span>
+* <span data-ttu-id="eb4ae-207">zlib</span><span class="sxs-lookup"><span data-stu-id="eb4ae-207">zlib</span></span>
 
-<span data-ttu-id="5fdeb-167">Fedora 사용자: openssl 버전 >= 1.1인 경우 compat-openssl10을 설치해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-167">Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.</span></span>
+<span data-ttu-id="eb4ae-208">Fedora 사용자: openssl 버전 >= 1.1인 경우 compat-openssl10을 설치해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-208">Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.</span></span>
 
-<span data-ttu-id="5fdeb-168">.NET Core 2.1 이전 버전의 경우 다음 종속성도 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-168">For versions earlier than .NET Core 2.1, following dependencies are also required:</span></span>
+<span data-ttu-id="eb4ae-209">.NET Core 2.1 이전 버전의 경우 다음 종속성도 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-209">For versions earlier than .NET Core 2.1, following dependencies are also required:</span></span>
 
-* <span data-ttu-id="5fdeb-169">libunwind</span><span class="sxs-lookup"><span data-stu-id="5fdeb-169">libunwind</span></span>
-* <span data-ttu-id="5fdeb-170">libuuid</span><span class="sxs-lookup"><span data-stu-id="5fdeb-170">libuuid</span></span>
+* <span data-ttu-id="eb4ae-210">libunwind</span><span class="sxs-lookup"><span data-stu-id="eb4ae-210">libunwind</span></span>
+* <span data-ttu-id="eb4ae-211">libuuid</span><span class="sxs-lookup"><span data-stu-id="eb4ae-211">libuuid</span></span>
 
-<span data-ttu-id="5fdeb-171">종속성에 대한 자세한 내용은 [자체 포함 Linux 응용 프로그램](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-171">For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).</span></span>
+<span data-ttu-id="eb4ae-212">종속성에 대한 자세한 내용은 [자체 포함 Linux 애플리케이션](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-212">For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).</span></span>
 
-## <a name="installing-net-core-dependencies-with-the-native-installers"></a><span data-ttu-id="5fdeb-172">기본 설치 관리자를 사용하여 .NET Core 종속성 설치</span><span class="sxs-lookup"><span data-stu-id="5fdeb-172">Installing .NET Core dependencies with the native installers</span></span>
+## <a name="installing-net-core-dependencies-with-the-native-installers"></a><span data-ttu-id="eb4ae-213">기본 설치 관리자를 사용하여 .NET Core 종속성 설치</span><span class="sxs-lookup"><span data-stu-id="eb4ae-213">Installing .NET Core dependencies with the native installers</span></span>
 
-<span data-ttu-id="5fdeb-173">.NET Core 기본 설치 관리자는 지원되는 Linux 배포/버전에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-173">.NET Core native installers are available for supported Linux distributions/versions.</span></span> <span data-ttu-id="5fdeb-174">기본 설치 관리자를 사용하려면 서버에 대한 관리자(sudo) 권한이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-174">The native installers require admin (sudo) access to the server.</span></span> <span data-ttu-id="5fdeb-175">기본 설치 관리자를 사용하는 장점은 모든 .NET Core 기본 종속성을 설치한다는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-175">The advantage of using a native installer is that all of the .NET Core native dependencies are installed.</span></span> <span data-ttu-id="5fdeb-176">기본 설치 관리자는 .NET Core SDK 시스템 차원을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-176">Native installers also install the .NET Core SDK system-wide.</span></span>
+<span data-ttu-id="eb4ae-214">.NET Core 기본 설치 관리자는 지원되는 Linux 배포/버전에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-214">.NET Core native installers are available for supported Linux distributions/versions.</span></span> <span data-ttu-id="eb4ae-215">기본 설치 관리자를 사용하려면 서버에 대한 관리자(sudo) 권한이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-215">The native installers require admin (sudo) access to the server.</span></span> <span data-ttu-id="eb4ae-216">기본 설치 관리자를 사용하는 장점은 모든 .NET Core 기본 종속성을 설치한다는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-216">The advantage of using a native installer is that all of the .NET Core native dependencies are installed.</span></span> <span data-ttu-id="eb4ae-217">기본 설치 관리자는 .NET Core SDK 시스템 차원을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-217">Native installers also install the .NET Core SDK system-wide.</span></span>
 
-<span data-ttu-id="5fdeb-177">Linux에는 두 가지 패키지 선택 항목이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-177">On Linux, there are two installer package choices:</span></span>
+<span data-ttu-id="eb4ae-218">Linux에는 두 가지 패키지 선택 항목이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-218">On Linux, there are two installer package choices:</span></span>
 
-* <span data-ttu-id="5fdeb-178">피드 기반 패키지 관리자 사용(예: Ubuntu의 경우 apt-get, CentOS/RHEL의 경우 yum).</span><span class="sxs-lookup"><span data-stu-id="5fdeb-178">Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.</span></span>
-* <span data-ttu-id="5fdeb-179">패키지 자체 사용(DEB 또는 RPM).</span><span class="sxs-lookup"><span data-stu-id="5fdeb-179">Using the packages themselves, DEB or RPM.</span></span>
+* <span data-ttu-id="eb4ae-219">피드 기반 패키지 관리자 사용(예: Ubuntu의 경우 apt-get, CentOS/RHEL의 경우 yum).</span><span class="sxs-lookup"><span data-stu-id="eb4ae-219">Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.</span></span>
+* <span data-ttu-id="eb4ae-220">패키지 자체 사용(DEB 또는 RPM).</span><span class="sxs-lookup"><span data-stu-id="eb4ae-220">Using the packages themselves, DEB or RPM.</span></span>
 
-### <a name="scripting-installs-with-the-net-core-installer-script"></a><span data-ttu-id="5fdeb-180">.NET Core 설치 관리자 스크립트를 사용하여 설치 스크립팅</span><span class="sxs-lookup"><span data-stu-id="5fdeb-180">Scripting Installs with the .NET Core installer script</span></span>
+### <a name="scripting-installs-with-the-net-core-installer-script"></a><span data-ttu-id="eb4ae-221">.NET Core 설치 관리자 스크립트를 사용하여 설치 스크립팅</span><span class="sxs-lookup"><span data-stu-id="eb4ae-221">Scripting Installs with the .NET Core installer script</span></span>
 
-<span data-ttu-id="5fdeb-181">[dotnet-install 스크립트](./tools/dotnet-install-script.md)는 CLI 도구 체인 및 공유 런타임의 관리자가 아닌 일반 설치를 수행하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-181">The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perform a non-admin install of the CLI toolchain and the shared runtime.</span></span> <span data-ttu-id="5fdeb-182">[https://dot.net/v1/dotnet-install.sh](https://dot.net/v1/dotnet-install.sh)에서 스크립트를 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-182">You can download the script from [https://dot.net/v1/dotnet-install.sh](https://dot.net/v1/dotnet-install.sh).</span></span>
+<span data-ttu-id="eb4ae-222">[dotnet-install 스크립트](./tools/dotnet-install-script.md)는 CLI 도구 체인 및 공유 런타임의 관리자가 아닌 일반 설치를 수행하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-222">The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perform a non-admin install of the CLI toolchain and the shared runtime.</span></span> <span data-ttu-id="eb4ae-223">[https://dot.net/v1/dotnet-install.sh](https://dot.net/v1/dotnet-install.sh)에서 스크립트를 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-223">You can download the script from [https://dot.net/v1/dotnet-install.sh](https://dot.net/v1/dotnet-install.sh).</span></span>
 
-<span data-ttu-id="5fdeb-183">스크립트는 기본적으로 현재 .NET Core 1.1인 최신 "LTS" 버전을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-183">The script defaults to installing the latest "LTS" version, which is currently .NET Core 1.1.</span></span> <span data-ttu-id="5fdeb-184">.NET Core 2.1을 설치하려면 다음 스위치를 사용하여 스크립트를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-184">To install .NET Core 2.1, run the script with the following switch:</span></span>
+<span data-ttu-id="eb4ae-224">스크립트는 기본적으로 현재 .NET Core 1.1인 최신 "LTS" 버전을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-224">The script defaults to installing the latest "LTS" version, which is currently .NET Core 1.1.</span></span> <span data-ttu-id="eb4ae-225">.NET Core 2.1을 설치하려면 다음 스위치를 사용하여 스크립트를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-225">To install .NET Core 2.1, run the script with the following switch:</span></span>
 
 ```console
 ./dotnet-install.sh -c Current
 ```
 
-<span data-ttu-id="5fdeb-185">설치 관리자 bash 스크립트는 자동화 시나리오 및 비관리자 설치에 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-185">The installer bash script is used in automation scenarios and non-admin installations.</span></span> <span data-ttu-id="5fdeb-186">또한 이 스크립트는 PowerShell 스위치를 읽으므로 Linux/OS X 시스템에서 스크립트와 함께 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-186">This script also reads PowerShell switches, so they can be used with the script on Linux/OS X systems.</span></span>
+<span data-ttu-id="eb4ae-226">설치 관리자 bash 스크립트는 자동화 시나리오 및 비관리자 설치에 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-226">The installer bash script is used in automation scenarios and non-admin installations.</span></span> <span data-ttu-id="eb4ae-227">또한 이 스크립트는 PowerShell 스위치를 읽으므로 Linux/OS X 시스템에서 스크립트와 함께 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-227">This script also reads PowerShell switches, so they can be used with the script on Linux/OS X systems.</span></span>
 
-## <a name="troubleshoot"></a><span data-ttu-id="5fdeb-187">문제 해결</span><span class="sxs-lookup"><span data-stu-id="5fdeb-187">Troubleshoot</span></span>
+## <a name="troubleshoot"></a><span data-ttu-id="eb4ae-228">문제 해결</span><span class="sxs-lookup"><span data-stu-id="eb4ae-228">Troubleshoot</span></span>
 
-<span data-ttu-id="5fdeb-188">지원되는 Linux 배포/버전에 .NET Core 설치에 문제가 있는 경우 설치된 배포/버전에 대한 다음 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="5fdeb-188">If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:</span></span>
+<span data-ttu-id="eb4ae-229">지원되는 Linux 배포/버전에 .NET Core 설치에 문제가 있는 경우 설치된 배포/버전에 대한 다음 항목을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="eb4ae-229">If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:</span></span>
 
-* [<span data-ttu-id="5fdeb-189">.NET Core 3.0 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="5fdeb-189">.NET Core 3.0 known issues</span></span>](https://github.com/dotnet/core/tree/master/release-notes/3.0)
-* [<span data-ttu-id="5fdeb-190">.NET Core 2.2 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="5fdeb-190">.NET Core 2.2 known issues</span></span>](https://github.com/dotnet/core/tree/master/release-notes/2.2)
-* [<span data-ttu-id="5fdeb-191">.NET Core 2.1 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="5fdeb-191">.NET Core 2.1 known issues</span></span>](https://github.com/dotnet/core/tree/master/release-notes/2.1)
-* [<span data-ttu-id="5fdeb-192">.NET Core 1.1 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="5fdeb-192">.NET Core 1.1 known issues</span></span>](https://github.com/dotnet/core/blob/master/release-notes/1.1)
-* [<span data-ttu-id="5fdeb-193">.NET Core 1.0 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="5fdeb-193">.NET Core 1.0 known issues</span></span>](https://github.com/dotnet/core/blob/master/release-notes/1.0)
+* [<span data-ttu-id="eb4ae-230">.NET Core 3.0 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="eb4ae-230">.NET Core 3.0 known issues</span></span>](https://github.com/dotnet/core/tree/master/release-notes/3.0)
+* [<span data-ttu-id="eb4ae-231">.NET Core 2.2 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="eb4ae-231">.NET Core 2.2 known issues</span></span>](https://github.com/dotnet/core/tree/master/release-notes/2.2)
+* [<span data-ttu-id="eb4ae-232">.NET Core 2.1 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="eb4ae-232">.NET Core 2.1 known issues</span></span>](https://github.com/dotnet/core/tree/master/release-notes/2.1)
+* [<span data-ttu-id="eb4ae-233">.NET Core 1.1 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="eb4ae-233">.NET Core 1.1 known issues</span></span>](https://github.com/dotnet/core/blob/master/release-notes/1.1)
+* [<span data-ttu-id="eb4ae-234">.NET Core 1.0 알려진 문제</span><span class="sxs-lookup"><span data-stu-id="eb4ae-234">.NET Core 1.0 known issues</span></span>](https://github.com/dotnet/core/blob/master/release-notes/1.0)
