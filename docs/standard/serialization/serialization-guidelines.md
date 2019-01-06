@@ -8,12 +8,12 @@ helpviewer_keywords:
 - serialization, guidelines
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-ms.openlocfilehash: b47be45f00ee03d400383dd45dc6776cff3f816d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 2a372ba995f409fc3dd12492e21af80b93d20b8c
+ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45742501"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54058596"
 ---
 # <a name="serialization-guidelines"></a>Serialization 지침
 이 문서에서는 serialize될 API를 디자인할 때 고려해야 할 지침을 보여 줍니다.  
@@ -99,7 +99,7 @@ ms.locfileid: "45742501"
   
 1.  생성된 XML의 모양을 제어해야 하는 확실한 이유가 있지 않으면 XML Serialization에 맞게 형식을 디자인하지 마십시오. 이 serialization 기술은 앞의 섹션에서 설명한 데이터 계약 Serialization으로 대체되었습니다.  
   
-     즉, 형식이 XML Serialization과 함께 사용될 것이라는 사실을 알고 있지 않으면 <xref:System.Runtime.Serialization> 네임스페이스의 특성을 새 형식에 적용하지 마십시오. 다음 예제에서는 생성된 XML의 모양을 제어하는 데 **System.Xml.Serialization**을 사용하는 방법을 보여 줍니다.  
+     즉, 형식이 XML Serialization과 함께 사용될 것이라는 사실을 알고 있지 않으면 <xref:System.Xml.Serialization> 네임스페이스의 특성을 새 형식에 적용하지 마십시오. 다음 예제에서는 생성된 XML의 모양을 제어하는 데 **System.Xml.Serialization**을 사용하는 방법을 보여 줍니다.  
   
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
@@ -138,7 +138,7 @@ ms.locfileid: "45742501"
      [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
      [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [데이터 계약 사용](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
 - [데이터 계약 직렬 변환기](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
