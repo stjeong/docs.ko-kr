@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 20050bee696f9d47324f1b095b0b3c1120f78255
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 51e22407bd20cc6aa17b242948a83d698167590e
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47087332"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030160"
 ---
 # <a name="substitutions-in-regular-expressions"></a>정규식의 대체
 <a name="Top"></a> 대체는 바꾸기 패턴에서만 인식되는 언어 요소입니다. 정규식 패턴을 사용하여 입력 문자열에서 일치하는 텍스트를 바꿀 텍스트의 전부 또는 일부를 정의합니다. 바꾸기 패턴은 리터럴 문자와 하나 이상의 대체로 구성될 수 있습니다. <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> 매개 변수가 포함된 `replacement` 메서드의 오버로드와 <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> 메서드에 대해 바꾸기 패턴이 제공됩니다. 해당 메서드는 일치하는 패턴을 `replacement` 매개 변수에 정의된 패턴으로 바꿉니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "47087332"
 |`${` *name* `}`|`(?<`*name*`> )` 에서 지정한 명명된 그룹과 일치하는 마지막 부분 문자열을 바꾸기 문자열에 포함합니다. 자세한 내용은 [명명된 그룹 대체](#Named)를 참조하십시오.|  
 |`$$`|대체 문자열에 한 개의 "$" 리터럴을 포함합니다. 자세한 내용은 ["$" 기호 대체](#DollarSign)를 참조하십시오.|  
 |`$&`|대체 문자열에 일치하는 전체 문자열의 복사본을 포함합니다. 자세한 내용은 [일치하는 전체 문자열 대체](#EntireMatch)를 참조하십시오.|  
-|<code>$\`</code>|대체 문자열에서 일치하는 문자열 앞에 입력 문자열의 모든 텍스트를 포함합니다. 자세한 내용은 [일치하는 문자열 앞에 있는 텍스트 대체](#BeforeMatch)를 참조하십시오.|  
+|``$` ``|대체 문자열에서 일치하는 문자열 앞에 입력 문자열의 모든 텍스트를 포함합니다. 자세한 내용은 [일치하는 문자열 앞에 있는 텍스트 대체](#BeforeMatch)를 참조하십시오.|  
 |`$'`|대체 문자열에서 일치하는 문자열 뒤에 입력 문자열의 모든 텍스트를 포함합니다. 자세한 내용은 [일치하는 문자열 뒤에 있는 텍스트 대체](#AfterMatch)를 참조하십시오.|  
 |`$+`|대체 문자열에 캡처된 마지막 그룹을 포함합니다. 자세한 내용은 [캡처된 마지막 그룹 대체](#LastGroup)를 참조하십시오.|  
 |`$_`|대체 문자열에 전체 입력 문자열을 포함합니다. 자세한 내용은 [전체 입력 문자열 대체](#EntireString)를 참조하십시오.|  
@@ -142,14 +142,14 @@ ms.locfileid: "47087332"
   
 <a name="BeforeMatch"></a>   
 ## <a name="substituting-the-text-before-the-match"></a>일치하는 문자열 앞에 있는 텍스트 대체  
- <code>$\`</code> 대체는 일치하는 문자열을 일치하는 문자열 앞의 전체 입력 문자열로 바꿉니다. 즉, 일치하는 텍스트를 제거하는 동안 일치하는 문자열까지의 입력 문자열을 복제합니다. 일치하는 텍스트 뒤에 나오는 텍스트는 결과 문자열에서 변경되지 않습니다. 입력 문자열에 일치하는 문자열이 여러 개이면 이전 일치 문자열로 텍스트가 바뀐 문자열이 아닌 원본 입력 문자열에서 바꾸기 텍스트가 파생됩니다. \(예제에서 그림을 제공합니다.\) 일치하는 부분이 없으면 <code>$\`</code> 대체가 아무 효과가 없습니다.  
+ ``$` `` 대체는 일치하는 문자열을 일치하는 문자열 앞의 전체 입력 문자열로 바꿉니다. 즉, 일치하는 텍스트를 제거하는 동안 일치하는 문자열까지의 입력 문자열을 복제합니다. 일치하는 텍스트 뒤에 나오는 텍스트는 결과 문자열에서 변경되지 않습니다. 입력 문자열에 일치하는 문자열이 여러 개이면 이전 일치 문자열로 텍스트가 바뀐 문자열이 아닌 원본 입력 문자열에서 바꾸기 텍스트가 파생됩니다. \(예제에서 그림을 제공합니다.\) 일치하는 부분이 없으면 ``$` `` 대체가 아무 효과가 없습니다.  
   
- 다음 예제에서는 `\d+` 정규식 패턴을 사용하여 입력 문자열에서 하나 이상의 숫자가 연속적으로 표시된 부분을 찾습니다. 바꾸기 문자열 <code>$`</code>는 이 숫자를 일치하는 문자열 앞의 텍스트로 바꿉니다.  
+ 다음 예제에서는 `\d+` 정규식 패턴을 사용하여 입력 문자열에서 하나 이상의 숫자가 연속적으로 표시된 부분을 찾습니다. 바꾸기 문자열 ``$` ``는 이 숫자를 일치하는 문자열 앞의 텍스트로 바꿉니다.  
   
  [!code-csharp[Conceptual.Regex.Language.Substitutions#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.substitutions/cs/before1.cs#4)]
  [!code-vb[Conceptual.Regex.Language.Substitutions#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.substitutions/vb/before1.vb#4)]  
   
- 이 예제에서는 입력 문자열 `"aa1bb2cc3dd4ee5"` 에 다섯 개의 일치 항목이 포함되어 있습니다. 다음 표에서는 <code>$`</code> 대체를 사용할 경우 정규식 엔진이 입력 문자열에서 일치하는 부분을 어떻게 바꾸는지 보여줍니다. 삽입된 텍스트는 결과 열에서 굵게 표시됩니다.  
+ 이 예제에서는 입력 문자열 `"aa1bb2cc3dd4ee5"` 에 다섯 개의 일치 항목이 포함되어 있습니다. 다음 표에서는 ``$` `` 대체를 사용할 경우 정규식 엔진이 입력 문자열에서 일치하는 부분을 어떻게 바꾸는지 보여줍니다. 삽입된 텍스트는 결과 열에서 굵게 표시됩니다.  
   
 |일치|위치|일치하는 문자열 앞에 있는 문자열|결과 문자열|  
 |-----------|--------------|-------------------------|-------------------|  

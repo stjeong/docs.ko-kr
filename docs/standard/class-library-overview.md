@@ -39,18 +39,18 @@ helpviewer_keywords:
 ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: acc51287a8c670da63d0ec421aa232864ea91c2b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: b00d08f43874518e117739d4a9502bf9463db5c1
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50185851"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029881"
 ---
 # <a name="net-class-library-overview"></a>.NET 클래스 라이브러리 개요
 
 .NET 구현에는 개발 과정을 지원 및 최적화하고 시스템 기능에 대한 액세스를 제공하는 클래스, 인터페이스, 대리자 및 값 형식이 포함되어 있습니다. 언어 간의 원활한 상호 운용성을 위해 대부분의 .NET 형식은 CLS(공용 언어 사양) 규격을 따르므로 CLS 규격 컴파일러를 사용하는 모든 프로그래밍 언어에서 사용될 수 있습니다.  
   
- .NET 형식은 .NET 응용 프로그램, 구성 요소 및 컨트롤 빌드의 기초가 됩니다. .NET 구현에는 다음과 같은 기능을 수행하는 형식이 포함되어 있습니다.  
+ .NET 형식은 .NET 애플리케이션, 구성 요소 및 컨트롤 빌드의 기초가 됩니다. .NET 구현에는 다음과 같은 기능을 수행하는 형식이 포함되어 있습니다.  
   
 -   기본 데이터 형식 및 예외를 나타냅니다.  
   
@@ -113,5 +113,5 @@ ms.locfileid: "50185851"
 ## <a name="see-also"></a>참고 항목
 
 - [공용 형식 시스템](../../docs/standard/base-types/common-type-system.md)  
-- [.NET API 브라우저](https://docs.microsoft.com/dotnet/api)  
+- [.NET API 브라우저](../../api/index.md)  
 - [개요](../../docs/framework/get-started/overview.md)

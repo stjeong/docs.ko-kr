@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 31f4807c956a8b4fb9381145f8e9b5eaffafe698
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 72a3e7ef8043e0016cefb45a4182b5c2e3061753
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149499"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029712"
 ---
 # <a name="use-enumeration-classes-instead-of-enum-types"></a>열거형 형식 대신 열거형 클래스 사용하기
 
@@ -17,7 +17,7 @@ ms.locfileid: "53149499"
 
 대신 개체 지향 언어의 모든 풍부한 기능을 활성화하는 열거형 클래스를 만들 수 있습니다.
 
-그러나 중요한 항목은 아니며 대부분의 경우에 간단한 설명을 위해 기본 설정된 기본 [열거형 형식](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/enum)을 계속 사용할 수 있습니다. 그래도 열거형 클래스의 사용은 업무와 연관된 개념과 더 관련되어 있습니다.
+그러나 중요한 항목은 아니며 대부분의 경우에 간단한 설명을 위해 기본 설정된 기본 [열거형 형식](../../../csharp/language-reference/keywords/enum.md)을 계속 사용할 수 있습니다. 그래도 열거형 클래스의 사용은 업무와 연관된 개념과 더 관련되어 있습니다.
 
 ## <a name="implement-an-enumeration-base-class"></a>열거형 기본 클래스 구현하기
 

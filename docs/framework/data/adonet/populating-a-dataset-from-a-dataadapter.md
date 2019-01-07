@@ -1,5 +1,5 @@
 ---
-title: DataAdapter에서 데이터 집합 채우기
+title: DataAdapter에서 DataSet 채우기
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,7 +12,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/05/2018
 ms.locfileid: "43740518"
 ---
-# <a name="populating-a-dataset-from-a-dataadapter"></a>DataAdapter에서 데이터 집합 채우기
+# <a name="populating-a-dataset-from-a-dataadapter"></a>DataAdapter에서 DataSet 채우기
 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] <xref:System.Data.DataSet>은 데이터 소스에 독립적으로 일관성 있는 관계형 프로그래밍 모델을 제공하는 데이터의 메모리 상주 표현입니다. `DataSet` 은 테이블 및 제약 조건과 테이블 간의 관계를 포함하는 완전한 데이터 집합을 나타냅니다. `DataSet` 은 데이터 소스에 독립적입니다. 따라서 `DataSet` 은 응용 프로그램에 대해 로컬인 데이터뿐 아니라 여러 데이터 소스의 데이터도 포함할 수 있습니다. 기존 데이터 소스와의 상호 작용은 `DataAdapter`를 통해 제어됩니다.  
   
  `SelectCommand` 의 `DataAdapter` 속성은 데이터 소스에서 데이터를 검색하는 `Command` 개체입니다. `InsertCommand`의 `UpdateCommand`, `DeleteCommand` 및 `DataAdapter` 속성은 `Command` 의 데이터에 대한 수정 내용에 따라 데이터 소스의 데이터에 대한 업데이트를 관리하는 `DataSet`개체입니다. 이러한 속성에 자세히 나와 [Dataadapter 사용 하 여 데이터 원본 업데이트](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)합니다.  
@@ -53,7 +53,7 @@ adapter.Fill(customers, "Customers");
 ```  
   
 > [!NOTE]
->  이 예제의 코드에서는 `Connection`을 명시적으로 열거나 닫지 않습니다. `Fill` 메서드는 연결이 아직 열려 있지 않으면 `Connection` 에서 사용하고 있는 `DataAdapter` 을 암시적으로 엽니다. `Fill` 에서 연결을 연 경우 `Fill` 이 완료되면 연결도 닫힙니다. `Fill` 또는 `Update`와 같은 단일 작업을 처리할 경우 이렇게 하면 코드가 간단해집니다. 그러나 연결이 열려 있어야 하는 여러 작업을 수행 중인 경우에는 `Open` 의 `Connection`메서드를 명시적으로 호출하고 데이터 소스에 대한 작업을 수행한 다음 `Close` 의 `Connection`메서드를 호출하여 응용 프로그램의 성능을 향상시킬 수 있습니다. 다른 클라이언트 응용 프로그램에서 사용할 리소스를 사용 가능한 상태로 만들려면 데이터 소스에 연결되어 있는 시간을 가능한 한 짧게 유지하도록 해야 합니다.  
+>  이 예제의 코드에서는 `Connection`을 명시적으로 열거나 닫지 않습니다. `Fill` 메서드는 연결이 아직 열려 있지 않으면 `Connection` 에서 사용하고 있는 `DataAdapter` 을 암시적으로 엽니다. `Fill` 에서 연결을 연 경우 `Fill` 이 완료되면 연결도 닫힙니다. `Fill` 또는 `Update`와 같은 단일 작업을 처리할 경우 이렇게 하면 코드가 간단해집니다. 그러나 연결이 열려 있어야 하는 여러 작업을 수행 중인 경우에는 `Open` 의 `Connection`메서드를 명시적으로 호출하고 데이터 소스에 대한 작업을 수행한 다음 `Close` 의 `Connection`메서드를 호출하여 애플리케이션의 성능을 향상시킬 수 있습니다. 다른 클라이언트 애플리케이션에서 사용할 리소스를 사용 가능한 상태로 만들려면 데이터 소스에 연결되어 있는 시간을 가능한 한 짧게 유지하도록 해야 합니다.  
   
 ## <a name="multiple-result-sets"></a>여러 결과 집합  
  `DataAdapter` 는 여러 결과 집합을 발견하면 `DataSet`에 여러 테이블을 만듭니다. 테이블에는 Table0부터 시작하는 증분 기본 이름인 Table*N*이 지정됩니다. 테이블 이름이 인수로 `Fill` 메서드에 전달되면 테이블에는 TableName0부터 시작하는 증분 기본 이름인 TableName*N*이 지정됩니다.  
@@ -118,9 +118,9 @@ foreach (DataRow pRow in customerOrders.Tables["Customers"].Rows)
 ```  
   
 ## <a name="sql-server-decimal-type"></a>SQL Server Decimal 형식  
- 기본적으로 `DataSet` 에서는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 데이터 형식을 사용하여 데이터를 저장합니다. 대부분의 응용 프로그램에서 이 형식을 사용하면 데이터 소스 정보를 간편하게 나타낼 수 있습니다. 그러나 이 표현은 데이터 소스의 데이터 형식이 SQL Server decimal 또는 숫자 데이터 형식인 경우 문제를 일으킬 수 있습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] `decimal` 데이터 형식은 최대 28개의 유효 숫자를 허용하는 반면 SQL Server `decimal` 데이터 형식은 38개의 유효 숫자를 허용합니다. `SqlDataAdapter` 작업 중에 `Fill` 에서 SQL Server `decimal` 필드의 정밀도가 28자보다 크다고 판단하면 현재 행은 `DataTable`에 추가되지 않습니다. 대신 `FillError` 이벤트가 발생하므로 정밀도가 손실되는지 여부를 확인하여 적절하게 대응할 수 있습니다. 에 대 한 자세한 내용은 합니다 `FillError` 이벤트를 참조 하세요 [DataAdapter 이벤트 처리](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)합니다. `decimal` 개체를 사용하고 <xref:System.Data.SqlClient.SqlDataReader> 메서드를 호출하여 SQL Server <xref:System.Data.SqlClient.SqlDataReader.GetSqlDecimal%2A> 값을 확인할 수도 있습니다.  
+ 기본적으로 `DataSet` 에서는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 데이터 형식을 사용하여 데이터를 저장합니다. 대부분의 애플리케이션에서 이 형식을 사용하면 데이터 소스 정보를 간편하게 나타낼 수 있습니다. 그러나 이 표현은 데이터 소스의 데이터 형식이 SQL Server decimal 또는 숫자 데이터 형식인 경우 문제를 일으킬 수 있습니다. [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] `decimal` 데이터 형식은 최대 28개의 유효 숫자를 허용하는 반면 SQL Server `decimal` 데이터 형식은 38개의 유효 숫자를 허용합니다. `SqlDataAdapter` 작업 중에 `Fill` 에서 SQL Server `decimal` 필드의 정밀도가 28자보다 크다고 판단하면 현재 행은 `DataTable`에 추가되지 않습니다. 대신 `FillError` 이벤트가 발생하므로 정밀도가 손실되는지 여부를 확인하여 적절하게 대응할 수 있습니다. 에 대 한 자세한 내용은 합니다 `FillError` 이벤트를 참조 하세요 [DataAdapter 이벤트 처리](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)합니다. `decimal` 개체를 사용하고 <xref:System.Data.SqlClient.SqlDataReader> 메서드를 호출하여 SQL Server <xref:System.Data.SqlClient.SqlDataReader.GetSqlDecimal%2A> 값을 확인할 수도 있습니다.  
   
- [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 2.0에서는 <xref:System.Data.SqlTypes> 의 `DataSet`에 대한 지원이 향상되었습니다. 자세한 내용은 [SqlTypes and the DataSet](../../../../docs/framework/data/adonet/sql/sqltypes-and-the-dataset.md)을 참조하십시오.  
+ [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 2.0에서는 <xref:System.Data.SqlTypes> 의 `DataSet`에 대한 지원이 향상되었습니다. 자세한 내용은 [SqlTypes and the DataSet](../../../../docs/framework/data/adonet/sql/sqltypes-and-the-dataset.md)을 참조하세요.  
   
 ## <a name="ole-db-chapters"></a>OLE DB 장  
  계층적 행 집합 또는 장(OLE DB 형식 `DBTYPE_HCHAPTER`, ADO 형식 `adChapter`)을 사용하여 `DataSet`의 내용을 채울 수 있습니다. <xref:System.Data.OleDb.OleDbDataAdapter> 에서 `Fill` 작업 중에 장으로 나뉜 열을 발견하면 해당 열에 대해 `DataTable` 이 만들어지고 테이블은 그 장의 열과 행으로 채워집니다. 장으로 나뉜 열에 대해 만들어진 테이블은 부모 테이블 이름과 장으로 나뉜 열 이름을 모두 사용하여 "*ParentTableNameChapteredColumnName*" 형식으로 이름이 지정됩니다. 장으로 나뉜 열 이름과 일치하는 테이블이 이미 `DataSet` 에 있으면 현재 테이블이 장 데이터로 채워집니다. 장에 있는 열과 일치하는 열이 기존 테이블에 없으면 새 열이 추가됩니다.  
