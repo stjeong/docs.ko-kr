@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 이벤트 처리
+title: 데이터 세트 이벤트 처리
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,7 +12,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/06/2018
 ms.locfileid: "43857773"
 ---
-# <a name="handling-dataset-events"></a>데이터 집합 이벤트 처리
+# <a name="handling-dataset-events"></a>데이터 세트 이벤트 처리
 <xref:System.Data.DataSet> 개체는 <xref:System.ComponentModel.MarshalByValueComponent.Disposed>, <xref:System.Data.DataSet.Initialized>및 <xref:System.Data.DataSet.MergeFailed>의 세 가지 이벤트를 제공합니다.  
   
 ## <a name="the-mergefailed-event"></a>MergeFailed 이벤트  

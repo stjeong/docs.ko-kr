@@ -14,7 +14,7 @@ LINQ(Language-Integrated Query)는 개체 환경과 데이터 환경 간의 간�
   
  일반적으로 데이터에 대한 쿼리는 컴파일 시간의 형식 검사나 IntelliSense 지원 없이 간단한 문자열로 표현됩니다. 또한 SQL 데이터베이스, XML 문서, 다양한 웹 서비스 등의 각 데이터 소스 형식에 대해 서로 다른 쿼리 언어를 배워야 합니다. LINQ를 사용하면 *쿼리*가 C#의 첫 번째 언어 구문이 됩니다. 언어 키워드 및 친숙한 연산자를 사용하여 강력한 형식의 개체 컬렉션에 대해 쿼리를 작성합니다.  
   
- SQL Server 데이터베이스, XML 문서, ADO.NET 데이터 집합 및 <xref:System.Collections.IEnumerable> 또는 제네릭 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스를 지원하는 모든 개체 컬렉션에 대해 C#으로 LINQ 쿼리를 작성할 수 있습니다. LINQ는 많은 웹 서비스 및 기타 데이터베이스 구현을 위해 타사에서도 지원됩니다.  
+ SQL Server 데이터베이스, XML 문서, ADO.NET 데이터 세트 및 <xref:System.Collections.IEnumerable> 또는 제네릭 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스를 지원하는 모든 개체 컬렉션에 대해 C#으로 LINQ 쿼리를 작성할 수 있습니다. LINQ는 많은 웹 서비스 및 기타 데이터베이스 구현을 위해 타사에서도 지원됩니다.  
   
  LINQ 쿼리는 새 프로젝트에서 사용하거나 기존 프로젝트에서 LINQ가 아닌 쿼리와 함께 사용할 수 있습니다. 프로젝트가 .NET Framework 3.5 이상을 대상으로 하기만 하면 됩니다.  
   
@@ -29,7 +29,7 @@ LINQ(Language-Integrated Query)는 개체 환경과 데이터 환경 간의 간�
   
 -   XML 문서: [LINQ to XML(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
   
--   ADO.NET 데이터 집합: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
+-   ADO.NET 데이터 세트: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
 -   .NET 컬렉션, 파일, 문자열 등: [LINQ to Objects(C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
   

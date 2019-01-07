@@ -15,7 +15,7 @@ ms.lasthandoff: 09/04/2018
 ms.locfileid: "43505157"
 ---
 # <a name="introduction-to-linq-queries-c"></a>LINQ 쿼리 소개(C#)
-*쿼리*는 데이터 소스에서 데이터를 검색하는 식입니다. 쿼리는 일반적으로 특수화된 쿼리 언어로 표현됩니다. 관계형 데이터베이스에는 SQL이 사용되고 XML에는 XQuery가 사용되는 것처럼 시간에 따라 다양한 형식의 데이터 소스에 대해 서로 다른 언어가 개발되었습니다. 따라서 개발자는 지원해야 하는 데이터 소스의 형식이나 데이터 형식에 따라 새로운 쿼리 언어를 배워야 했습니다. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]는 다양한 데이터 소스 및 형식에 사용할 수 있는 일관된 모델을 제공함으로써 이러한 상황을 간단하게 합니다. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리에서는 항상 개체를 사용하고 있습니다. XML 문서, SQL 데이터베이스, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] 데이터 집합, .NET 컬렉션 및 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자를 사용할 수 있는 다른 모든 형식에서 데이터를 쿼리하고 변환하는 데 동일한 기본 코딩 패턴을 사용합니다.  
+*쿼리*는 데이터 소스에서 데이터를 검색하는 식입니다. 쿼리는 일반적으로 특수화된 쿼리 언어로 표현됩니다. 관계형 데이터베이스에는 SQL이 사용되고 XML에는 XQuery가 사용되는 것처럼 시간에 따라 다양한 형식의 데이터 소스에 대해 서로 다른 언어가 개발되었습니다. 따라서 개발자는 지원해야 하는 데이터 소스의 형식이나 데이터 형식에 따라 새로운 쿼리 언어를 배워야 했습니다. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]는 다양한 데이터 소스 및 형식에 사용할 수 있는 일관된 모델을 제공함으로써 이러한 상황을 간단하게 합니다. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리에서는 항상 개체를 사용하고 있습니다. XML 문서, SQL 데이터베이스, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] 데이터 세트, .NET 컬렉션 및 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자를 사용할 수 있는 다른 모든 형식에서 데이터를 쿼리하고 변환하는 데 동일한 기본 코딩 패턴을 사용합니다.  
   
 ## <a name="three-parts-of-a-query-operation"></a>쿼리 작업의 세 부분  
  모든 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 쿼리 작업은 다음과 같은 세 가지 고유한 작업으로 구성됩니다.  
@@ -75,7 +75,7 @@ IQueryable<Customer> custQuery =
   
  `foreach` 문은 쿼리 결과가 검색되는 위치이기도 합니다. 예를 들어 이전 쿼리에서 반복 변수 `num`은 반환된 시퀀스에서 각 값을 한 번에 하나씩 저장합니다.  
   
- 쿼리 변수 자체는 쿼리 결과를 저장하지 않으므로 원하는 만큼 자주 실행할 수 있습니다. 예를 들어 별도의 응용 프로그램에서 지속적으로 업데이트되는 데이터베이스가 있을 수 있습니다. 이 응용 프로그램에서 최근 데이터를 검색하는 쿼리를 작성하고 이를 일정 간격을 두고 반복적으로 실행하여 매번 다른 결과를 검색할 수 있습니다.  
+ 쿼리 변수 자체는 쿼리 결과를 저장하지 않으므로 원하는 만큼 자주 실행할 수 있습니다. 예를 들어 별도의 애플리케이션에서 지속적으로 업데이트되는 데이터베이스가 있을 수 있습니다. 이 애플리케이션에서 최근 데이터를 검색하는 쿼리를 작성하고 이를 일정 간격을 두고 반복적으로 실행하여 매번 다른 결과를 검색할 수 있습니다.  
   
 ### <a name="forcing-immediate-execution"></a>즉시 실행 강제 적용  
  소스 요소 범위에 대해 집계 함수를 수행하는 쿼리는 먼저 해당 요소를 반복해야 합니다. 이러한 쿼리의 예로 `Count`, `Max`, `Average` 및 `First`가 있습니다. 이러한 쿼리는 쿼리 자체에서 결과를 반환하려면 `foreach`를 사용해야 하기 때문에 명시적 `foreach` 문 없이 실행됩니다. 또한 이러한 유형의 쿼리는 `IEnumerable` 컬렉션이 아니라 단일 값을 반환합니다. 다음 쿼리는 소스 배열에서 짝수의 개수를 반환합니다.  

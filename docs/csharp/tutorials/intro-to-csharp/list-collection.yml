@@ -9,12 +9,12 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
-  ms.openlocfilehash: 1d4ae646dfc4c96db77bee69d0b7fe0876cce85d
-  ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+  ms.openlocfilehash: 0de2cc0434087797b9411075a98cc11dd598ed81
+  ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 12/10/2018
-  ms.locfileid: "53129014"
+  ms.lasthandoff: 01/04/2019
+  ms.locfileid: "54029491"
 items:
 - durationInMinutes: 1
   content: >
@@ -112,7 +112,7 @@ items:
 - title: 목록 검색 및 정렬
   durationInMinutes: 5
   content: >
-    샘플에서는 상대적으로 작은 목록을 사용하지만 응용 프로그램에서는 수천에 달하는 많은 요소가 포함된 목록을 작성할 수 있습니다. 이러한 큰 컬렉션에서 요소를 찾으려면 여러 항목의 목록을 검색해야 합니다. <xref:System.Collections.Generic.List%601.IndexOf%2A> 메서드는 항목을 검색하고 항목의 인덱스를 반환합니다. 다음을 시도하여 작동 방식을 확인하세요.  지금까지 작성한 코드 아래에 다음 코드를 추가합니다.
+    샘플에서는 상대적으로 작은 목록을 사용하지만 애플리케이션에서는 수천에 달하는 많은 요소가 포함된 목록을 작성할 수 있습니다. 이러한 큰 컬렉션에서 요소를 찾으려면 여러 항목의 목록을 검색해야 합니다. <xref:System.Collections.Generic.List%601.IndexOf%2A> 메서드는 항목을 검색하고 항목의 인덱스를 반환합니다. 다음을 시도하여 작동 방식을 확인하세요.  지금까지 작성한 코드 아래에 다음 코드를 추가합니다.
 
 
     ```csharp
@@ -197,7 +197,35 @@ items:
     > 이 온라인 코딩 환경은 미리 보기 모드로 제공됩니다. 문제가 발생하면 [dotnet/try 리포지토리](https://github.com/dotnet/try/issues)에 보고하세요.
 - title: 과제 완료
   durationInMinutes: 3
-  content: "다음과 같은 답을 제시했나요?\n\n```csharp\nvar fibonacciNumbers = new List<int> {1, 1};\n\nwhile (fibonacciNumbers.Count < 20)\n{\n    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];\n    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];\n    \n    fibonacciNumbers.Add(previous + previous2);\n}\nforeach(var item in fibonacciNumbers)\n    Console.WriteLine(item);\n```\n\n루프의 각 반복을 통해 목록의 마지막 두 정수를 사용하고, 더하고, 해당 값을 목록에 추가합니다. 목록에 20개의 항목이 추가될 때까지 루프가 반복됩니다.\n\n> [!NOTE]\n> 이 온라인 코딩 환경은 미리 보기 모드로 제공됩니다. 문제가 발생하면 [dotnet/try 리포지토리](https://github.com/dotnet/try/issues)에 보고하세요.\n"
+  content: >
+    다음과 같은 답을 제시했나요?
+
+
+    ```csharp
+
+    var fibonacciNumbers = new List<int> {1, 1};
+
+
+    while (fibonacciNumbers.Count < 20)
+
+    {
+        var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+        var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+        fibonacciNumbers.Add(previous + previous2);
+    }
+
+    foreach(var item in fibonacciNumbers)
+        Console.WriteLine(item);
+    ```
+
+
+    루프의 각 반복을 통해 목록의 마지막 두 정수를 사용하고, 더하고, 해당 값을 목록에 추가합니다. 목록에 20개의 항목이 추가될 때까지 루프가 반복됩니다.
+
+
+    > [!NOTE]
+
+    > 이 온라인 코딩 환경은 미리 보기 모드로 제공됩니다. 문제가 발생하면 [dotnet/try 리포지토리](https://github.com/dotnet/try/issues)에 보고하세요.
 - content: >-
     목록 대화형 자습서를 완료했습니다. 이는 C# 대화형 자습서의 최종 소개입니다. [.NET 사이트](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial)를 방문하여 .NET Core SDK를 다운로드하고, 머신에 프로젝트를 만들고, 계속해서 코딩할 수 있습니다. “계속 학습” 단계에서 이러한 자습서로 돌아와 머신에 프로젝트를 빌드합니다.
 

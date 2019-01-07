@@ -29,7 +29,7 @@ LINQ(Language-Integrated Query)는 개체 환경과 데이터 환경 간의 간�
   
 -   XML 문서: [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)  
   
--   ADO.NET 데이터 집합: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
+-   ADO.NET 데이터 세트: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
 -   .NET 컬렉션, 파일, 문자열 등: [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
   

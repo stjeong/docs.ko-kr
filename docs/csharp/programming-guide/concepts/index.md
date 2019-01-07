@@ -24,7 +24,7 @@ ms.locfileid: "53143196"
 |[공변성(Covariance) 및 반공변성(Contravariance)(C#)](../../../csharp/programming-guide/concepts/covariance-contravariance/index.md)|인터페이스 및 대리자에서 제네릭 형식 매개 변수의 암시적 변환을 사용하도록 설정하는 방법을 보여 줍니다.|  
 |[식 트리(C#)](../../../csharp/programming-guide/concepts/expression-trees/index.md)|식 트리를 사용하여 실행 코드의 동적 수정을 허용하는 방법을 설명합니다.|  
 |[반복기(C#)](../../../csharp/programming-guide/concepts/iterators.md)|컬렉션을 단계별로 실행하면서 한 번에 하나씩 요소를 반환하는 데 사용되는 반복기에 대해 설명합니다.|  
-|[LINQ(Language-Integrated Query)(C#)](../../../csharp/programming-guide/concepts/linq/index.md)|C#의 언어 구문의 강력한 쿼리 기능과 관계형 데이터베이스, XML 문서, 데이터 집합 및 메모리 내 컬렉션을 쿼리하기 위한 모델에 대해 설명합니다.|  
+|[LINQ(Language-Integrated Query)(C#)](../../../csharp/programming-guide/concepts/linq/index.md)|C#의 언어 구문의 강력한 쿼리 기능과 관계형 데이터베이스, XML 문서, 데이터 세트 및 메모리 내 컬렉션을 쿼리하기 위한 모델에 대해 설명합니다.|  
 |[개체 지향 프로그래밍(C#)](../../../csharp/programming-guide/concepts/object-oriented-programming.md)|캡슐화, 상속, 다형성 등의 일반적인 개체 지향 개념에 대해 설명합니다.|  
 |[리플렉션(C#)](../../../csharp/programming-guide/concepts/reflection.md)|리플렉션을 사용하면 동적으로 형식 인스턴스를 만들거나, 형식을 기존 개체에 바인딩하거나, 기존 개체에서 형식을 가져와 해당 메서드를 호출하거나, 필드 및 속성에 액세스하는 방법을 설명합니다.|  
 |[Serialization(C#)](../../../csharp/programming-guide/concepts/serialization/index.md)|이진, XML 및 SOAP serialization의 주요 개념에 대해 설명합니다.|  
@@ -33,4 +33,4 @@ ms.locfileid: "53143196"
   
 |||  
 |---|---|  
-|[성능 팁](../../../../docs/framework/performance/performance-tips.md) | 응용 프로그램의 성능을 향상시키는 데 도움이 되는 여러 가지 기본 규칙에 대해 설명합니다.|
+|[성능 팁](../../../../docs/framework/performance/performance-tips.md) | 애플리케이션의 성능을 향상시키는 데 도움이 되는 여러 가지 기본 규칙에 대해 설명합니다.|

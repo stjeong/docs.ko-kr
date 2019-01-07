@@ -13,7 +13,7 @@ ms.locfileid: "48582098"
 제공한 파일 이름이 유효한 XML 파일이 아닙니다. XML 문서의 허용된 구조와 내용을 지정하려면 DTD(문서 종류 정의), Microsoft XDR(XML-Data Reduced) 스키마 또는 XSD(XML 스키마 정의 언어) 스키마를 사용하면 됩니다. XSD 스키마는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]에서 XML 문법을 지정하는 기본 방법입니다.
 
 > [!NOTE]
->  일부 이전 버전의 Visual Studio에서 **XML 디자이너** 는 입력된 데이터 집합 및 XML 스키마용 디자이너입니다. **XML 디자이너** 는 XML 스키마 파일을 만들고 편집하는 데 계속 사용할 수 있습니다. 그러나 Visual Studio 2012에서는 만들고 형식화 된 데이터 집합 편집을 합니다 **데이터 집합 디자이너**합니다. 자세한 내용은 [만들기 및 형식화 된 데이터 집합 편집](/visualstudio/data-tools/creating-and-editing-typed-datasets)합니다.
+>  일부 이전 버전의 Visual Studio에서 **XML 디자이너**는 입력된 데이터 세트 및 XML 스키마용 디자이너입니다. **XML 디자이너** 는 XML 스키마 파일을 만들고 편집하는 데 계속 사용할 수 있습니다. 그러나 Visual Studio 2012에서는 만들고 형식화 된 데이터 집합 편집을 합니다 **데이터 집합 디자이너**합니다. 자세한 내용은 [만들기 및 형식화 된 데이터 집합 편집](/visualstudio/data-tools/creating-and-editing-typed-datasets)합니다.
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 

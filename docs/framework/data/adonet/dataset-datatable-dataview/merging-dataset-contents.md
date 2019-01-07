@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 콘텐츠 병합
+title: 데이터 세트 콘텐츠 병합
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,7 +12,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/15/2018
 ms.locfileid: "45658797"
 ---
-# <a name="merging-dataset-contents"></a>데이터 집합 콘텐츠 병합
+# <a name="merging-dataset-contents"></a>데이터 세트 콘텐츠 병합
 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용하여 <xref:System.Data.DataSet>, <xref:System.Data.DataTable> 또는 <xref:System.Data.DataRow> 배열의 내용을 기존 `DataSet`으로 병합할 수 있습니다. 새 데이터가 기존 `DataSet`으로 병합되는 방법은 몇 가지 요소 및 옵션에 따라 달라집니다.  
   
 ## <a name="primary-keys"></a>기본 키  

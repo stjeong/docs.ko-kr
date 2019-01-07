@@ -145,7 +145,7 @@ ms.locfileid: "53451094"
 
 | 변형 | 정의 |
 | --- | --- |
-| <xref:Microsoft.ML.Transforms.ColumnCopyingTransformer> | 데이터 집합에서 열을 복제합니다.|
+| <xref:Microsoft.ML.Transforms.ColumnCopyingTransformer> | 데이터 세트에서 열을 복제합니다.|
 | <xref:Microsoft.ML.Transforms.ColumnSelectingTransformer> | 지정된 입력에서 삭제 또는 유지할 열 집합을 선택합니다. |
 | <xref:Microsoft.ML.Transforms.FeatureSelection.SlotsDroppingTransformer> | 열에서 슬롯을 삭제합니다.|
 | <xref:Microsoft.ML.Legacy.Transforms.KeyToTextConverter> | KeyToValueTransform은 KeyValues 메타데이터를 활용하여 키 인덱스를 KeyValues 메타데이터의 해당 값으로 매핑합니다. |

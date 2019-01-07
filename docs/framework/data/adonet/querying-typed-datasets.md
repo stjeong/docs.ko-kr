@@ -1,5 +1,5 @@
 ---
-title: 형식화된 데이터 집합 쿼리
+title: 형식화된 데이터 세트 쿼리
 ms.date: 08/15/2018
 dev_langs:
 - csharp

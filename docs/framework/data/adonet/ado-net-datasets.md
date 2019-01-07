@@ -17,7 +17,7 @@ DataSet 개체 모델
   
  메서드 및 개체에는 **데이터 집합** 관계형 데이터베이스 모델에 있는 것과 일치 합니다.  
   
- 합니다 **데이터 집합** 유지 될 수 있으며 해당 내용을 XML로 및 XML 스키마 정의 언어 (XSD)로 스키마를 다시 로드 합니다. 자세한 내용은 [데이터 집합에서 XML 사용](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)을 참조하세요.  
+ 합니다 **데이터 집합** 유지 될 수 있으며 해당 내용을 XML로 및 XML 스키마 정의 언어 (XSD)로 스키마를 다시 로드 합니다. 자세한 내용은 [데이터 세트에서 XML 사용](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)을 참조하세요.  
   
 ## <a name="the-datatablecollection"></a>DataTableCollection  
  [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] **데이터 집합** 으로 표시 하는 0 개 이상의 테이블의 컬렉션을 포함 <xref:System.Data.DataTable> 개체입니다. 합니다 <xref:System.Data.DataTableCollection> 모두 포함 합니다 **DataTable** 개체를 **데이터 집합**합니다.  
@@ -35,7 +35,7 @@ DataSet 개체 모델
  자세한 내용은 [Datarelation 추가](../../../../docs/framework/data/adonet/dataset-datatable-dataview/adding-datarelations.md)합니다.  
   
 ## <a name="xml"></a>XML  
- 채울 수 있습니다는 **데이터 집합** XML 스트림이나 문서에서 합니다. 에 제공 하는 XML 스트림이나 문서를 사용할 수 있습니다 합니다 **데이터 집합** 데이터, 스키마 정보 또는 둘 다. XML 스트림이나 문서에서 제공 되는 정보를 기존 데이터 나 스키마 정보와에 이미 있는와 결합할 수는 **데이터 집합**합니다. 자세한 내용은 [데이터 집합에서 XML 사용](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)을 참조하세요.  
+ 채울 수 있습니다는 **데이터 집합** XML 스트림이나 문서에서 합니다. 에 제공 하는 XML 스트림이나 문서를 사용할 수 있습니다 합니다 **데이터 집합** 데이터, 스키마 정보 또는 둘 다. XML 스트림이나 문서에서 제공 되는 정보를 기존 데이터 나 스키마 정보와에 이미 있는와 결합할 수는 **데이터 집합**합니다. 자세한 내용은 [데이터 세트에서 XML 사용](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)을 참조하세요.  
   
 ## <a name="extendedproperties"></a>ExtendedProperties  
  합니다 **데이터 집합**를 **DataTable**, 및 **DataColumn** 모두를 **ExtendedProperties** 속성입니다. **ExtendedProperties** 되는 **PropertyCollection** 결과 집합을 생성 하는 SELECT 문이나 데이터가 생성 된 시간 등의 사용자 지정 정보를 배치할 수 있습니다. 합니다 **ExtendedProperties** 컬렉션에 대 한 스키마 정보를 함께 유지 되는 **데이터 집합**합니다.  
@@ -43,7 +43,7 @@ DataSet 개체 모델
 ## <a name="linq-to-dataset"></a>LINQ to DataSet  
  [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에서는 데이터 집합에 저장되어 있는 연결되지 않은 데이터에 대한 통합 언어 쿼리 기능을 제공합니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] standard를 사용 하 여 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 구문을 Visual Studio IDE를 사용 하는 경우 컴파일 타임 구문 검사, 정적 입력 및 IntelliSense 지원을 제공 합니다.  
   
- 자세한 내용은 [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)를 참조하세요.  
+ 자세한 내용은 [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)  

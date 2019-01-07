@@ -1,5 +1,5 @@
 ---
-title: 강력한 형식의 데이터 집합 생성
+title: 강력한 형식의 데이터 세트 생성
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,7 +12,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/04/2018
 ms.locfileid: "43526490"
 ---
-# <a name="generating-strongly-typed-datasets"></a>강력한 형식의 데이터 집합 생성
+# <a name="generating-strongly-typed-datasets"></a>강력한 형식의 데이터 세트 생성
 XSD(XML 스키마 정의 언어) 표준과 호환되는 XML 스키마가 있으면 <xref:System.Data.DataSet>에 제공된 XSD.exe 도구를 사용하여 강력한 형식의 [!INCLUDE[winsdklong](../../../../../includes/winsdklong-md.md)]을 생성할 수 있습니다.  
   
  (데이터베이스 테이블에서 xsd를 만들려면, 참조 <xref:System.Data.DataSet.WriteXmlSchema%2A> 나 [Visual Studio에서 데이터 집합 작업](https://msdn.microsoft.com/library/8bw9ksd6.aspx)).  

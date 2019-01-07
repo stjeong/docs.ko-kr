@@ -56,7 +56,7 @@ ms.locfileid: "44041150"
  바로 가기 메뉴를 나타냅니다. 하지만 <xref:System.Windows.Forms.ContextMenuStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ContextMenu> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ContextMenu> 하므로 원하는 경우 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [DataGrid 컨트롤](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- 데이터 집합에서 표 형식 데이터를 표시하고 데이터 원본에 대한 업데이트를 허용합니다.  
+ 데이터 세트에서 표 형식 데이터를 표시하고 데이터 원본에 대한 업데이트를 허용합니다.  
   
  [DataGridView 컨트롤](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  표 형식 데이터 표시 및 편집에 유연하고 확장 가능한 시스템을 제공합니다.  
@@ -65,7 +65,7 @@ ms.locfileid: "44041150"
  사용자가 날짜 또는 시간 목록에서 단일 항목을 선택할 수 있게 합니다.  
   
  [대화 상자 컨트롤 및 구성 요소](../../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)  
- 사용자가 응용 프로그램이나 시스템에서 표준 조작을 수행할 수 있도록 하는 컨트롤 집합에 대해 설명합니다.  
+ 사용자가 애플리케이션이나 시스템에서 표준 조작을 수행할 수 있도록 하는 컨트롤 집합에 대해 설명합니다.  
   
  [DomainUpDown 컨트롤](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)  
  사용자가 탐색하고 선택할 수 있는 텍스트 문자열을 표시합니다.  
@@ -88,10 +88,10 @@ ms.locfileid: "44041150"
  다른 컨트롤에 대한 식별 가능한 그룹화를 제공합니다.  
   
  [HelpProvider 구성 요소](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md)  
- HTML 도움말 파일을 Windows 기반 응용 프로그램에 연결합니다.  
+ HTML 도움말 파일을 Windows 기반 애플리케이션에 연결합니다.  
   
  [HScrollBar 및 VScrollBar 컨트롤](../../../../docs/framework/winforms/controls/hscrollbar-and-vscrollbar-controls-windows-forms.md)  
- 응용 프로그램 또는 컨트롤 내에서 가로로 또는 세로로 스크롤하여 항목 목록이나 대용량 정보를 탐색할 수 있습니다.  
+ 애플리케이션 또는 컨트롤 내에서 가로로 또는 세로로 스크롤하여 항목 목록이나 대용량 정보를 탐색할 수 있습니다.  
   
  [ImageList 구성 요소](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)  
  다른 컨트롤에서 이미지를 표시합니다.  
@@ -100,7 +100,7 @@ ms.locfileid: "44041150"
  사용자가 편집할 수 없는 텍스트를 표시합니다.  
   
  [LinkLabel 컨트롤](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)  
- Windows Forms 응용 프로그램에 웹 스타일 링크를 추가할 수 있습니다.  
+ Windows Forms 애플리케이션에 웹 스타일 링크를 추가할 수 있습니다.  
   
  [ListBox 컨트롤](../../../../docs/framework/winforms/controls/listbox-control-windows-forms.md)  
  사용자는 미리 정의된 목록에서 하나 이상의 항목을 선택할 수 있습니다.  
@@ -142,7 +142,7 @@ ms.locfileid: "44041150"
  프린터 및 인쇄할 페이지를 선택하고 다른 인쇄 관련 설정을 결정합니다.  
   
  [PrintDocument 구성 요소](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)  
- 인쇄 대상을 설명하는 속성을 설정하고 Windows 기반 응용 프로그램에서 문서를 인쇄합니다.  
+ 인쇄 대상을 설명하는 속성을 설정하고 Windows 기반 애플리케이션에서 문서를 인쇄합니다.  
   
  [PrintPreviewControl 컨트롤](../../../../docs/framework/winforms/controls/printpreviewcontrol-control-windows-forms.md)  
  미리 구성된 버전을 사용하지 않고 사용자 자신의 `PrintPreview` 구성 요소 또는 대화 상자를 만들 수 있습니다.  
@@ -192,7 +192,7 @@ ms.locfileid: "44041150"
  명령을 활성화하는 메뉴 및 비트맵 단추가 표시됩니다. 컨트롤의 기능을 확장하고 해당 모양 및 동작을 수정할 수 있습니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ToolBar> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ToolBar> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
- Windows Forms 응용 프로그램에 사용자 지정 툴바와 메뉴를 만듭니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ToolBar> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ToolBar> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
+ Windows Forms 애플리케이션에 사용자 지정 툴바와 메뉴를 만듭니다. 하지만 <xref:System.Windows.Forms.ToolStrip> 대체 하 고 기능을 추가 합니다 <xref:System.Windows.Forms.ToolBar> 이전 버전의 컨트롤 <xref:System.Windows.Forms.ToolBar> 선택 하면 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다.  
   
  [ToolStripContainer 컨트롤](../../../../docs/framework/winforms/controls/toolstripcontainer-control.md)  
  고정, 래프팅 및 정렬을 위한 폼의 양쪽 패널을 제공 <xref:System.Windows.Forms.ToolStrip> 컨트롤 및 중앙 <xref:System.Windows.Forms.ToolStripContentPanel> 기존 컨트롤에 대 한 합니다.  
@@ -216,7 +216,7 @@ ms.locfileid: "44041150"
  확장하거나 축소할 수 있는 노드 계층 구조를 표시합니다.  
   
  [WebBrowser 컨트롤](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)  
- 웹 페이지를 호스트하고 인터넷 웹 검색 기능을 응용 프로그램에 제공합니다.  
+ 웹 페이지를 호스트하고 인터넷 웹 검색 기능을 애플리케이션에 제공합니다.  
   
  [옵션 목록 표시에 사용된 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)  
  선택할 옵션 목록을 사용자에게 제공하는 데 사용되는 컨트롤에 대해 설명합니다.  

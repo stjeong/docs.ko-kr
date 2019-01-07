@@ -87,7 +87,7 @@ ms.locfileid: "53168847"
 | -------------- | ----------- | ------- | --------- | -------- | ------------- | --------- | ---------- |
 | 4/16/2017 0:00 | 8           | 실행     | 우간다    | Darwin   | osx.10.12-x64 | 10.12     | 1.0.1      |
 
-### <a name="datasets"></a>데이터 집합
+### <a name="datasets"></a>데이터 세트
 
 [2016 - Q3](https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-2016-q3.tsv)  
 [2016 - Q4](https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-2016-q4.tsv)  
@@ -96,7 +96,7 @@ ms.locfileid: "53168847"
 [2017 - Q3](https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-2017-q3.tsv)  
 [2017 - Q4](https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-2017-q4.tsv)  
 
-표준 URL 형식을 사용하여 추가 데이터 집합이 게시됩니다. `<YEAR>`를 연도로 바꾸고 `<QUARTER>`를 해당 연도의 분기로 바꿉니다(`1`, `2`, `3` 또는 `4` 사용). 파일은 *TSV*(탭으로 구분된 값) 형식입니다.
+표준 URL 형식을 사용하여 추가 데이터 세트가 게시됩니다. `<YEAR>`를 연도로 바꾸고 `<QUARTER>`를 해당 연도의 분기로 바꿉니다(`1`, `2`, `3` 또는 `4` 사용). 파일은 *TSV*(탭으로 구분된 값) 형식입니다.
 
 `https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-<YEAR>-q<QUARTER>.tsv`
 

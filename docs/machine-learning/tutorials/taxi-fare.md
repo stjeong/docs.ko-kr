@@ -6,12 +6,12 @@ ms.author: johalex
 ms.date: 11/06/2018
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 36da24f0cd2d2b9c4884101d97026307174f4130
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 630cbcac954b9fcda67eef38f54241a81b831fc3
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236351"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030258"
 ---
 # <a name="tutorial-predict-new-york-taxi-fares-using-a-regression-learner-with-mlnet"></a>자습서: ML.NET와 함께 회귀 학습자를 사용하여 뉴욕 택시 요금 예측
 
@@ -99,7 +99,9 @@ ms.locfileid: "53236351"
 
 ## <a name="define-data-and-model-paths"></a>데이터 및 모델 경로 정의
 
-*Program.cs* 파일 맨 위에 다음 추가 `using` 문을 추가합니다. [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
+*Program.cs* 파일 맨 위에 다음 추가 `using` 문을 추가합니다.
+
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
 데이터 세트가 있는 파일의 경로, 모델을 저장할 파일 및 `TextLoader`에 대한 전역 변수가 포함될 세 개의 필드를 만들어야 합니다.
 
@@ -124,7 +126,7 @@ ML.NET을 사용하여 모델을 작성하는 경우 먼저 ML 컨텍스트를 �
 
 `TextReader` 클래스는 완전히 초기화된 <xref:Microsoft.ML.Runtime.Data.TextLoader>를 반환합니다.  
 
-필요한 데이터 세트에 다시 사용하기 위해 `_textLoader` 전역 변수를 초기화하려면 `mlContext` 초기화 뒤에 다음 코드를 추가합니다.
+필요한 데이터 세트에 다시 사용하기 위해 `_textLoader` 글로벌 변수를 초기화하려면 `mlContext` 초기화 뒤에 다음 코드를 추가합니다.
 
 [!code-csharp[initTextLoader](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#4 "Initialize the TextLoader")]
 
@@ -238,7 +240,7 @@ private static void Evaluate(MLContext mlContext, ITransformer model)
 ```
 `Evaluate` 메서드는 다음 작업을 실행합니다.
 
-* 테스트 데이터 집합을 로드합니다.
+* 테스트 데이터 세트를 로드합니다.
 * 회귀 평가자를 만듭니다.
 * 모델을 평가하고 메트릭을 만듭니다.
 * 메트릭을 표시합니다.
@@ -247,7 +249,7 @@ private static void Evaluate(MLContext mlContext, ITransformer model)
 
 [!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#14 "Call the Evaluate method")]
 
-이전에 초기화한 `_textLoader` 전역 변수를 `_testDataPath` 전역 필드에 사용하여 테스트 데이터 세트를 로드합니다. 이 데이터 집합을 품질 검사로 사용하여 모델을 평가할 수 있습니다. `Evaluate` 메서드에 다음 코드를 추가합니다.
+이전에 초기화한 `_textLoader` 글로벌 변수를 `_testDataPath` 글로벌 필드에 사용하여 테스트 데이터 세트를 로드합니다. 이 데이터 세트를 품질 검사로 사용하여 모델을 평가할 수 있습니다. `Evaluate` 메서드에 다음 코드를 추가합니다.
 
 [!code-csharp[LoadTestDataset](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#15 "Load the test dataset")]
 

@@ -45,7 +45,7 @@ ms.locfileid: "44183147"
   
  필요한 **DataSet** 주소에서 직접 XML을 로드하거나 해당 주소에 직접 XML을 쓰는 경우 [XML로부터 DataSet 로드](../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) 및 [DataSet을 XML 데이터로 작성](../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md)을 참조하세요.  
   
- 필요한 **XmlDataDocument** 주소에서 **DataSet**을 로드하는 경우 [DataSet을 XML 문서와 동기화](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)를 참조하세요.  
+ 필요한 **XmlDataDocument** 주소에서 **DataSet**을 로드하는 경우 [데이터 세트를 XML 문서와 동기화](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목
 

@@ -44,7 +44,7 @@ XML 문서 구조
 -   전체 노드 검색과 요소 노드의 텍스트와 같이 노드가 포함하는 정보 검색  
   
     > [!NOTE]
-    >  응용 프로그램에 DOM이 제공하는 구조나 편집 기능이 필요하지 않은 경우 **XmlReader** 및 **XmlWriter** 클래스에서는 XML에 대한 캐시되지 않은 정방향 전용 스트림 액세스를 제공합니다. 자세한 내용은 <xref:System.Xml.XmlReader> 및 <xref:System.Xml.XmlWriter>를 참조하세요.  
+    >  애플리케이션에 DOM이 제공하는 구조나 편집 기능이 필요하지 않은 경우 **XmlReader** 및 **XmlWriter** 클래스에서는 XML에 대한 캐시되지 않은 정방향 전용 스트림 액세스를 제공합니다. 자세한 내용은 <xref:System.Xml.XmlReader> 및 <xref:System.Xml.XmlWriter>를 참조하세요.  
   
  **Node** 개체에는 일련의 메서드 및 속성뿐만 아니라 잘 정의된 기본적인 특성도 들어 있습니다. 특성에는 다음이 포함됩니다.  
   
@@ -72,7 +72,7 @@ XML 문서 구조
   
  메모리에 생성되는 노드 형식에 대한 자세한 내용은 [XML 노드 형식](../../../../docs/standard/data/xml/types-of-xml-nodes.md)을 참조하세요. 노드 트리에 생성되는 개체에 대한 자세한 내용은 [XML 데이터에 개체 계층 구조 매핑](../../../../docs/standard/data/xml/mapping-the-object-hierarchy-to-xml-data.md)을 참조하세요.  
   
- Microsoft는 XML 문서 작업을 손쉽게 수행할 수 있도록 W3C(World Wide Web 컨소시엄) DOM Level 1 및 Level 2에서 사용할 수 있는 API를 확장했습니다. W3C 표준을 완전하게 지원하는 동시에 추가 클래스, 메서드 및 속성으로 W3C XML DOM을 사용하여 수행할 수 있는 것 이상의 기능을 제공합니다. 새 클래스를 사용하면 관계형 데이터에 액세스할 수 있어 ADO.NET 데이터와 동기화하는 동시에 데이터를 XML로 표현하는 메서드가 제공됩니다. 자세한 내용은 [XmlDataDocument로 데이터 집합 동기화](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)를 참조하세요.  
+ Microsoft는 XML 문서 작업을 손쉽게 수행할 수 있도록 W3C(World Wide Web 컨소시엄) DOM Level 1 및 Level 2에서 사용할 수 있는 API를 확장했습니다. W3C 표준을 완전하게 지원하는 동시에 추가 클래스, 메서드 및 속성으로 W3C XML DOM을 사용하여 수행할 수 있는 것 이상의 기능을 제공합니다. 새 클래스를 사용하면 관계형 데이터에 액세스할 수 있어 ADO.NET 데이터와 동기화하는 동시에 데이터를 XML로 표현하는 메서드가 제공됩니다. 자세한 내용은 [XmlDataDocument로 데이터 세트 동기화](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)를 참조하세요.  
   
  DOM은 XML 데이터를 메모리로 읽어와 구조를 변경하고, 노드를 추가하거나 제거하며, 요소에 들어 있는 텍스트에 포함된 노드의 데이터를 수정할 경우에 매우 유용합니다. 그러나 그 밖의 상황에서는 DOM보다 더 빠른 다른 클래스를 사용할 수 있습니다. XML에 대한 캐시되지 않은 정방향 전용 고속 스트림 액세스의 경우 **XmlReader** 및 **XmlWriter**를 사용하세요. 커서 모델 및 **XPath**를 사용한 임의 액세스가 필요한 경우에는 **XPathNavigator** 클래스를 사용하세요.  
   

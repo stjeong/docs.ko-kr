@@ -27,7 +27,7 @@ ms.locfileid: "43485692"
  다음 단원에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)], [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] 및 [!INCLUDE[linq_entities](../../../../includes/linq-entities-md.md)]에 대한 자세한 정보를 제공합니다.  
   
 ## <a name="linq-to-dataset"></a>LINQ to DataSet  
- The <xref:System.Data.DataSet>은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]의 기반이 되는 연결되지 않은 프로그래밍 모델의 핵심 요소이며 널리 사용되고 있습니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에서는 다른 많은 데이터 소스에 사용할 수 있는 것과 동일한 쿼리 구성 메커니즘을 사용하여 다양한 쿼리 기능을 <xref:System.Data.DataSet>에 구현할 수 있습니다. 자세한 내용은 [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)를 참조하세요.  
+ The <xref:System.Data.DataSet>은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]의 기반이 되는 연결되지 않은 프로그래밍 모델의 핵심 요소이며 널리 사용되고 있습니다. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]에서는 다른 많은 데이터 소스에 사용할 수 있는 것과 동일한 쿼리 구성 메커니즘을 사용하여 다양한 쿼리 기능을 <xref:System.Data.DataSet>에 구현할 수 있습니다. 자세한 내용은 [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)을 참조하세요.  
   
 ## <a name="linq-to-sql"></a>LINQ to SQL  
  [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)]은 개념적 모델에 매핑할 필요가 없는 개발자에게 유용한 도구입니다. [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)]을 사용하면 기존 데이터베이스 스키마에 대해 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 프로그래밍 모델을 직접 사용할 수 있습니다. [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)]에서는 데이터를 나타내는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 클래스를 생성할 수 있습니다. 이렇게 생성된 클래스는 개념적 데이터 모델에 매핑되는 대신 데이터베이스 테이블, 뷰, 저장 프로시저 및 사용자 정의 함수에 직접 매핑됩니다.  

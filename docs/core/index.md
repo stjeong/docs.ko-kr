@@ -4,34 +4,34 @@ description: .NET Core는 Windows, Linux 및 Mac 앱을 만들기 위한 모듈�
 author: richlander
 ms.date: 08/01/2018
 ms.custom: updateeachrelease
-ms.openlocfilehash: ffa58600bea1f5514b25c18aa00e6d36679f2fd9
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 62019c5414857ed5eee99a6a60f5b0b183fe25e8
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170279"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030284"
 ---
 # <a name="net-core-guide"></a>.NET Core 가이드
 
-[.NET Core](about.md)는 Microsoft 및 [GitHub](https://github.com/dotnet/core)의 .NET 커뮤니티에서 유지 관리하는 [오픈 소스](https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT) 범용 개발 플랫폼입니다. 플랫폼 간으로 Windows, macOS 및 Linux를 지원하며 디바이스, 클라우드 및 IoT 응용 프로그램을 빌드하는 데 사용할 수 있습니다.
+[.NET Core](about.md)는 Microsoft 및 [GitHub](https://github.com/dotnet/core)의 .NET 커뮤니티에서 유지 관리하는 [오픈 소스](https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT) 범용 개발 플랫폼입니다. 플랫폼 간으로 Windows, macOS 및 Linux를 지원하며 장치, 클라우드 및 IoT 애플리케이션을 빌드하는 데 사용할 수 있습니다.
 
 특성, 지원되는 언어 및 프레임워크, 키 API를 비롯한 .NET Core에 대한 자세한 내용은 [.NET Core 정보](about.md)를 참조하세요.
 
-.NET Core 응용 프로그램을 만드는 방법은 [.NET Core 자습서](tutorials/index.md)를 참조하세요. 첫 번째 앱을 만들고 실행하는 데 몇 분밖에 걸리지 않습니다. 브라우저에서 .NET Core를 사용하려면 [C#의 숫자](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml) 온라인 자습서를 확인하세요.
+.NET Core 애플리케이션을 만드는 방법은 [.NET Core 자습서](tutorials/index.md)를 참조하세요. 첫 번째 앱을 만들고 실행하는 데 몇 분밖에 걸리지 않습니다. 브라우저에서 .NET Core를 사용하려면 [C#의 숫자](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml) 온라인 자습서를 확인하세요.
 
-## <a name="download-net-core-21"></a>.NET Core 2.1 다운로드
+## <a name="download-net-core-22"></a>.NET Core 2.2 다운로드
 
-[.NET Core 2.1 SDK](https://www.microsoft.com/net/download)를 다운로드하여 Windows, macOS 또는 Linux 머신에서 .NET Core를 사용해 보세요. Docker 컨테이너를 사용하려면 [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)을 방문하세요.
+[.NET Core 2.2 SDK](https://www.microsoft.com/net/download)를 다운로드하여 Windows, macOS 또는 Linux 머신에서 .NET Core를 사용해 보세요. Docker 컨테이너를 사용하려면 [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)을 방문하세요.
 
 다른 .NET Core 버전을 찾는 경우 [.NET Core 다운로드](https://www.microsoft.com/net/download/archives)에서 모든 .NET Core 버전을 사용할 수 있습니다.
 
-## <a name="net-core-21"></a>.NET Core 2.1
+## <a name="net-core-22"></a>.NET Core 2.2
 
-최신 버전은 [.NET Core 2.1](whats-new/dotnet-core-2-1.md)입니다. 새로운 기능에는 전역 도구, 고성능 API(예: <xref:System.Span%601?displayProperty=nameWithType>), 계층형 JIT 컴파일, [빌드](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1/) 및 [런타임 성능 개선](https://blogs.msdn.microsoft.com/dotnet/2018/04/18/performance-improvements-in-net-core-2-1/), Alpine 및 ARM32 지원이 포함됩니다.
+최신 버전은 [.NET Core 2.2](whats-new/dotnet-core-2-2.md)입니다. 새 기능으로는 프레임워크 종속 배포, 시작 후크, Azure SQL에서 AAD 인증, Windows ARM32에 대한 지원 등이 있습니다.
 
-## <a name="create-your-first-application"></a>첫 응용 프로그램 만들기
+## <a name="create-your-first-application"></a>첫 애플리케이션 만들기
 
-.NET Core SDK를 설치한 후 명령 프롬프트를 엽니다. 다음 `dotnet` 명령을 입력하여 C# 응용 프로그램을 만들고 실행합니다.
+.NET Core SDK를 설치한 후 명령 프롬프트를 엽니다. 다음 `dotnet` 명령을 입력하여 C# 애플리케이션을 만들고 실행합니다.
 
 ```console
 dotnet new console

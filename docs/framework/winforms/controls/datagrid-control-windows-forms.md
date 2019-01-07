@@ -19,7 +19,7 @@ ms.locfileid: "33529953"
 > [!NOTE]
 >  <xref:System.Windows.Forms.DataGridView> 컨트롤은 `DataGrid` 컨트롤을 대체하고 여기에 다른 기능을 추가하여 새로 도입된 컨트롤이지만 이전 버전과의 호환성 및 이후 사용 가능성을 고려하여 `DataGrid` 컨트롤을 계속 유지하도록 선택할 수 있습니다. 자세한 내용은 [Windows Forms DataGridView 및 DataGrid 컨트롤의 차이점](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)을 참조하십시오.  
   
- Windows Forms `DataGrid` 컨트롤은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 데이터 집합에 대한 사용자 인터페이스를 제공하고, 표 형식 데이터를 표시하며, 데이터 소스에 대한 업데이트를 사용하도록 설정합니다.  
+ Windows Forms `DataGrid` 컨트롤은 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 데이터 세트에 대한 사용자 인터페이스를 제공하고, 표 형식 데이터를 표시하며, 데이터 원본에 대한 업데이트를 사용하도록 설정합니다.  
   
  `DataGrid` 컨트롤이 유효한 데이터 소스로 설정되면 컨트롤에 데이터를 자동으로 채우고 데이터의 모양에 기반하여 열과 행을 만듭니다. `DataGrid` 컨트롤은 단일 테이블 또는 테이블 집합 간의 계층 관계를 표시하는 데 사용할 수 있습니다.  
   
@@ -34,7 +34,7 @@ ms.locfileid: "33529953"
  프로그래밍 방식으로 `DataGrid` 컨트롤에 테이블과 열을 추가하는 방법을 설명합니다.  
   
  [방법: 디자이너를 사용하여 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/bind-wf-datagrid-control-to-a-data-source-using-the-designer.md)  
- 디자이너를 사용하여 `DataGrid` 컨트롤에 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 데이터 집합을 바인딩하는 방법을 설명합니다.  
+ 디자이너를 사용하여 `DataGrid` 컨트롤에 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 데이터 세트를 바인딩하는 방법을 설명합니다.  
   
  [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
  `DataGrid` 컨트롤에 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 데이터 집합을 바인딩하는 방법을 설명합니다.  

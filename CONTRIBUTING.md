@@ -39,7 +39,7 @@
 
 [열린 문제](https://github.com/dotnet/docs/issues) 목록을 살펴보고 관심 있는 문제에 대한 작업을 자원할 수도 있습니다. [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) 레이블을 사용하여 기여와 관련해서 열린 문제에 태그를 지정합니다. 
 
-**2단계:** 필요에 따라 `/dotnet/docs`, `dotnet/samples` 또는 `dotnet/dotnet-api-docs` 리포지토리를 포크하고 변경 내용에 대한 분기를 만듭니다.
+**2단계:** 필요에 따라 `dotnet/docs`, `dotnet/samples` 또는 `dotnet/dotnet-api-docs` 리포지토리를 포크하고 변경 내용에 대한 분기를 만듭니다.
 
 사소한 변경의 경우 GitHub 웹 인터페이스를 사용할 수 있습니다. 변경하려는 파일에서 **이 프로젝트의 포크에 있는 파일 편집**을 클릭하기만 하면 됩니다. 변경 내용을 제출하면 GitHub에서 자동으로 새 분기를 만듭니다.
 
@@ -101,7 +101,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 docs 리포지토리에서 새 콘텐츠를 추가함에 따라 이러한 디렉터리가 확장될 수 있습니다. 예를 들어 `xamarin-ios` 및 `xamarin-android` 디렉터리와 같은 Xamarin 디렉터리가 추가됩니다.
 
 만드는 전체 샘플마다 *readme.md* 파일이 포함되어야 합니다. 이 파일에는 샘플에 대한 간단한 설명(한두 개 단락)이 포함되어야 합니다. *readme.md*는 이 샘플을 탐색하여 배울 수 있는 점을 독자에게 설명해야 합니다. *readme.md* 파일에는 [.NET 문서 사이트](https://docs.microsoft.com/dotnet/welcome)의 라이브 문서에 대한 링크도 포함되어야 합니다.
-리포지토리의 지정된 파일이 해당 사이트에 매핑되는 위치를 확인하려면 리포지토리 경로의 `/docs`를 `http://docs.microsoft.com/dotnet/articles`로 바꿉니다.
+리포지토리의 지정된 파일이 해당 사이트에 매핑되는 위치를 확인하려면 리포지토리 경로의 `/docs`를 `https://docs.microsoft.com/dotnet`로 바꿉니다.
 
 항목에는 샘플에 대한 링크도 포함됩니다. GitHub의 샘플 폴더에 바로 연결됩니다.
 

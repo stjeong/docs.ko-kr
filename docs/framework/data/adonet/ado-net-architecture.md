@@ -40,7 +40,7 @@ ADO.NET 아키텍처
  `DataSet`에서 제공하는 기능이 필요하지 않은 경우에는 `DataReader`로 데이터를 정방향 읽기 전용 방식으로 반환하여 응용 프로그램의 성능을 향상시킬 수 있습니다. 있지만 `DataAdapter` 사용 하 여는 `DataReader` 의 내용에 맞게를 `DataSet` (참조 [DataAdapter에서 DataSet 채우기](../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md))를 사용 하 여는 `DataReader`, 메모리 저장 하기 때문에 성능을 향상 시킬 수 있습니다 사용할 수 있는 합니다 `DataSet`를 만들고 내용을 채우는 데 필요한 처리를 방지 하 고는 `DataSet`합니다.  
   
 ## <a name="linq-to-dataset"></a>LINQ to DataSet  
- LINQ to DataSet은 DataSet 개체에 캐시된 데이터에 대해 쿼리 기능과 컴파일 타임 형식 검사 기능을 제공합니다. LINQ to DataSet을 사용하면 C#이나 Visual Basic 같은 .NET Framework 개발 언어 중 하나로 쿼리를 작성할 수 있습니다. 자세한 내용은 [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)를 참조하세요.  
+ LINQ to DataSet은 DataSet 개체에 캐시된 데이터에 대해 쿼리 기능과 컴파일 타임 형식 검사 기능을 제공합니다. LINQ to DataSet을 사용하면 C#이나 Visual Basic 같은 .NET Framework 개발 언어 중 하나로 쿼리를 작성할 수 있습니다. 자세한 내용은 [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)을 참조하세요.  
   
 ## <a name="linq-to-sql"></a>LINQ to SQL  
  LINQ to SQL은 중간 개념 모델을 사용하지 않고 관계형 데이터베이스의 데이터 구조에 매핑되는 개체 모델을 직접 쿼리할 수 있도록 지원합니다. 각 테이블은 개체 모델을 관계형 데이터베이스 스키마와 긴밀하게 연결하는 별도의 클래스로 나타납니다. LINQ to SQL은 개체 모델의 통합 언어 쿼리를 Transact-SQL로 변환한 후 실행을 위해 데이터베이스로 보냅니다. 데이터베이스에서 결과를 반환하면 LINQ to SQL이 결과를 다시 개체로 변환합니다. 자세한 내용은 [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)을 참조하세요.  

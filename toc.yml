@@ -17,7 +17,7 @@ items:
       - name: 오픈 소스 라이브러리 지침
         tocHref: /dotnet/standard/library-guidance/
         topicHref: /dotnet/standard/library-guidance/index
-      - name: 현대식 ASP.NET 웹 응용 프로그램 전자책
+      - name: 현대식 ASP.NET 웹 애플리케이션 전자책
         tocHref: /dotnet/standard/modern-web-apps-azure-architecture/
         topicHref: /dotnet/standard/modern-web-apps-azure-architecture/index
       - name: .NET 마이크로 서비스 - 아키텍처 전자책
@@ -107,7 +107,7 @@ items:
       - name: 추가 클래스 라이브러리 및 API
         tocHref: /dotnet/framework/additional-steps/
         topicHref: /dotnet/framework/additional-steps/index
-      - name: 응용 프로그램 도메인 및 어셈블리
+      - name: 애플리케이션 도메인 및 어셈블리
         tocHref: /dotnet/framework/app-domains/
         topicHref: /dotnet/framework/app-domains/index
       - name: 일반 클라이언트 기술
@@ -172,7 +172,7 @@ items:
             tocHref: /dotnet/framework/data/adonet/ef/
             topicHref: /dotnet/framework/data/adonet/ef/index
             items:
-            - name: '@FSHO2@Entity SQL 언어 참조'
+            - name: Entity SQL 언어 참조
               tocHref: /dotnet/framework/data/adonet/ef/language-reference/
               topicHref: /dotnet/framework/data/adonet/ef/language-reference/index
           - name: SQL Server 및 ADO.NET
@@ -194,7 +194,7 @@ items:
       - name: .NET Framework 배포
         tocHref: /dotnet/framework/deployment/
         topicHref: /dotnet/framework/deployment/index
-      - name: Docker를 통해 .NET Framework 응용 프로그램 배포
+      - name: Docker를 통해 .NET Framework 애플리케이션 배포
         tocHref: /dotnet/framework/docker/
         topicHref: /dotnet/framework/docker/index
       - name: 시작
@@ -308,7 +308,7 @@ items:
       - name: .NET Framework의 새로운 기능
         tocHref: /dotnet/framework/whats-new/
         topicHref: /dotnet/framework/whats-new/index
-      - name: Windows 서비스 응용 프로그램 개발
+      - name: Windows 서비스 애플리케이션 개발
         tocHref: /dotnet/framework/windows-services/
         topicHref: /dotnet/framework/windows-services/index
       - name: Windows Workflow Foundation
@@ -322,7 +322,7 @@ items:
         tocHref: /dotnet/framework/winforms/
         topicHref: /dotnet/framework/winforms/index
         items:
-        - name: Windows Forms 응용 프로그램 강화
+        - name: Windows Forms 애플리케이션 강화
           tocHref: /dotnet/framework/winforms/advanced/
           topicHref: /dotnet/framework/winforms/advanced/index
         - name: Windows Forms 컨트롤
@@ -335,7 +335,7 @@ items:
         - name: 고급(Windows Presentation Foundation)
           tocHref: /dotnet/framework/wpf/advanced/
           topicHref: /dotnet/framework/wpf/advanced/index
-        - name: 응용 프로그램 개발
+        - name: 애플리케이션 개발
           tocHref: /dotnet/framework/wpf/app-development/
           topicHref: /dotnet/framework/wpf/app-development/index
         - name: 컨트롤
@@ -508,7 +508,7 @@ items:
       - name: 시작
         tocHref: /dotnet/visual-basic/getting-started/
         topicHref: /dotnet/visual-basic/getting-started/index
-      - name: 응용 프로그램 개발
+      - name: 애플리케이션 개발
         tocHref: /dotnet/visual-basic/developing-apps/
         topicHref: /dotnet/visual-basic/developing-apps/index
       - name: 프로그래밍 개념
@@ -613,9 +613,9 @@ items:
       - name: 자습서
         tocHref: /dotnet/machine-learning/tutorials/
         topicHref: /dotnet/machine-learning/tutorials/index
-ms.openlocfilehash: 01df0256243fde388a7037e8efe7402eca049b44
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 59b58c95a40b2db2a5cb9da50ad4bec96e9f782c
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144158"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54030037"

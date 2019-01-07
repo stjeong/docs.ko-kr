@@ -64,7 +64,7 @@ ms.locfileid: "48837497"
  DataSets 사용  
  [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 다양 한 메모리 내 지 속성을 포함 하 여 데이터 집합에서 제공 하는 동일한 기능 변경 내용 추적, 데이터 바인딩 및 XML 데이터로 개체를 직렬화 하는 작업을 제공 합니다. 자세한 내용은 [개체를 사용 하 여 작업](../../../../../docs/framework/data/adonet/ef/working-with-objects.md)합니다.  
   
- 경우는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 기능을 제공 하지 않는 응용 프로그램에 필요한 데이터 집합, 있습니다 수 활용할 LINQ 쿼리의 이점을 사용 하 여 [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]입니다. 자세한 내용은 [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md)를 참조하세요.  
+ 경우는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 기능을 제공 하지 않는 응용 프로그램에 필요한 데이터 집합, 있습니다 수 활용할 LINQ 쿼리의 이점을 사용 하 여 [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]입니다. 자세한 내용은 [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md)을 참조하세요.  
   
 ## <a name="considerations-for-applications-that-bind-data-to-controls"></a>데이터를 컨트롤에 바인딩하는 응용 프로그램에 대한 고려 사항  
  합니다 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 데이터 집합 또는와 같은 데이터 원본에서 데이터를 캡슐화 할 수 있습니다 [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] 데이터 소스 컨트롤과 및 다음 이러한 데이터 컨트롤에 사용자 인터페이스 요소를 바인딩합니다. 다음 목록에서는 컨트롤을 Entity Framework 데이터에 바인딩할 때 고려할 사항에 대해 설명합니다.  
@@ -83,7 +83,7 @@ ms.locfileid: "48837497"
  특정 종류의 응용 프로그램을 Entity Framework로 마이그레이션할 때 다음 사항을 고려해야 할 수도 있습니다.  
   
  데이터 서비스를 노출하는 응용 프로그램  
- WCF(Windows Communication Foundation)를 기반으로 하는 웹 서비스와 응용 프로그램은 XML 요청/응답 메시징 형식을 사용하여 기본 데이터 소스의 데이터를 노출합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 이진, XML 또는 WCF 데이터 계약 serialization을 사용하여 엔터티 개체의 serialization을 지원합니다. 이진 및 WCF serialization은 모두 개체 그래프의 전체 serialization을 지원합니다. 자세한 내용은 [N 계층 응용 프로그램 빌드](https://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb)합니다.  
+ WCF(Windows Communication Foundation)를 기반으로 하는 웹 서비스와 응용 프로그램은 XML 요청/응답 메시징 형식을 사용하여 기본 데이터 소스의 데이터를 노출합니다. [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 이진, XML 또는 WCF 데이터 계약 serialization을 사용하여 엔터티 개체의 serialization을 지원합니다. 이진 및 WCF serialization은 모두 개체 그래프의 전체 serialization을 지원합니다. 자세한 내용은 [N 계층 애플리케이션 빌드](https://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb)합니다.  
   
  XML 데이터를 사용하는 응용 프로그램  
  개체 serialization을 사용하여 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 데이터 서비스를 만들 수 있습니다. 이러한 서비스는 AJAX 기반 인터넷 응용 프로그램과 같이 XML 데이터를 사용하는 응용 프로그램에 데이터를 제공합니다. 이런 경우 [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]를 사용하는 것이 좋습니다. 이러한 데이터 서비스 엔터티 데이터 모델에 기반한 표준 REST Representational State Transfer () HTTP 동작을 사용 하 여 엔터티 데이터에 대 한 동적 액세스를 제공와 같은 GET, PUT 및 게시 합니다. 자세한 내용은 [WCF Data Services 4.5](../../../../../docs/framework/data/wcf/index.md)합니다.  

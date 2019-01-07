@@ -9,12 +9,12 @@ helpviewer_keywords:
 - types [C#], value types
 - C# language, value types
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
-ms.openlocfilehash: 9fe75cf9524f6280bc649fb3784c21e4dd88adea
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 77aed78e7822e06b3b1e6c48b07790d93e09559c
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235791"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53612727"
 ---
 # <a name="value-types-c-reference"></a>값 형식(C# 참조)
 
@@ -28,14 +28,14 @@ ms.locfileid: "53235791"
 
 값 형식의 변수에는 형식의 값이 포함되어 있습니다. 예를 들어 `int` 형식의 변수에는 `42` 값이 포함될 수 있습니다. 이는 개체라고도 하는 형식 인스턴스에 대한 참조를 포함하는 참조 형식의 변수와 다릅니다. 값 형식의 변수에 새 값을 할당하면 해당 값이 복사됩니다. 참조 형식의 변수에 새 값을 할당하면 개체 자체가 아니라 참조가 복사됩니다.
 
-모든 값 형식은 <xref:System.ValueType?displayProperty=nameWithType>에서 암시적으로 파생됩니다.  
-  
-참조 형식과 달리 값 형식에서는 새 형식을 파생할 수 없습니다. 그러나 참조 형식과 마찬가지로 구조체가 인터페이스를 구현할 수 있습니다.  
-  
+모든 값 형식은 <xref:System.ValueType?displayProperty=nameWithType>에서 암시적으로 파생됩니다.
+
+참조 형식과 달리 값 형식에서는 새 형식을 파생할 수 없습니다. 그러나 참조 형식과 마찬가지로 구조체가 인터페이스를 구현할 수 있습니다.
+
 값 형식 변수는 기본적으로 `null`일 수 없습니다. 그러나 해당 [nullable 형식](../../../csharp/programming-guide/nullable-types/index.md)의 변수는 `null`일 수 있습니다.
-  
-각 값 형식에는 해당 형식의 기본값을 초기화하는 암시적 기본 생성자가 있습니다. 값 형식의 기본값에 대한 자세한 내용은 [기본값 표](default-values-table.md)를 참조하세요.  
-  
+
+각 값 형식에는 해당 형식의 기본값을 초기화하는 암시적 기본 생성자가 있습니다. 값 형식의 기본값에 대한 자세한 내용은 [기본값 표](default-values-table.md)를 참조하세요.
+
 ## <a name="simple-types"></a>단순 형식
 
 *단순 형식*은 C#에서 제공하는 미리 정의된 구조체 형식 세트이며, 다음과 같은 형식으로 구성됩니다.
@@ -55,59 +55,59 @@ ms.locfileid: "53235791"
 - 해당 피연산자가 모두 단순 형식 상수인 상수 식은 컴파일 시간에 계산됩니다.
 
 자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [단순 형식](~/_csharplang/spec/types.md#simple-types) 섹션을 참조하세요.
-  
+
 ## <a name="initializing-value-types"></a>값 형식 초기화
 
- C#의 지역 변수는 사용하기 전에 초기화해야 합니다. 예를 들어 다음 예제와 같이 초기화하지 않고 지역 변수를 선언할 수 있습니다.  
-  
-```csharp  
-int myInt;  
-```  
-  
- 초기화하기 전에는 사용할 수 없습니다. 다음 문을 사용하여 초기화할 수 있습니다.  
-  
-```csharp  
-myInt = new int();  // Invoke default constructor for int type.  
-```  
-  
- 이 문은 다음 문과 같습니다.  
-  
-```csharp  
-myInt = 0;         // Assign an initial value, 0 in this example.  
-```  
-  
- 물론, 다음 예제와 같이 선언과 초기화를 동일한 문에 포함할 수 있습니다.  
-  
-```csharp  
-int myInt = new int();  
-```  
-  
- – 또는 –  
-  
-```csharp  
-int myInt = 0;  
-```  
-  
- [new](new.md) 연산자를 사용하면 특정 형식의 기본 생성자가 호출되고 변수에 기본값이 할당됩니다. 앞의 예제에서는 기본 생성자가 `0` 값을 `myInt`에 할당했습니다. 기본 생성자를 호출하여 할당된 값에 대한 자세한 내용은 [기본값 표](default-values-table.md)를 참조하세요.  
-  
- 사용자 정의 형식의 경우 [new](new.md)를 사용하여 기본 생성자를 호출합니다. 예를 들어 다음 문은 `Point` 구조체의 기본 생성자를 호출합니다.  
-  
-```csharp  
-Point p = new Point(); // Invoke default constructor for the struct.  
-```  
-  
- 이 호출 후에는 구조체가 한정적으로 할당된 것으로 간주됩니다. 즉, 모든 멤버가 기본값으로 초기화됩니다.  
-  
- `new` 연산자에 대한 자세한 내용은 [new](new.md)를 참조하세요.  
-  
- 숫자 형식의 출력에 서식을 지정하는 방법에 대한 자세한 내용은 [숫자 결과 형식 지정 표](formatting-numeric-results-table.md)를 참조하세요.  
-  
+C#의 지역 변수는 사용하기 전에 초기화해야 합니다. 예를 들어 다음 예제와 같이 초기화하지 않고 지역 변수를 선언할 수 있습니다.
+
+```csharp
+int myInt;
+```
+
+초기화하기 전에는 사용할 수 없습니다. 다음 문을 사용하여 초기화할 수 있습니다.
+
+```csharp
+myInt = new int();  // Invoke default constructor for int type.
+```
+
+이 문은 다음 문과 같습니다.
+
+```csharp
+myInt = 0;         // Assign an initial value, 0 in this example.
+```
+
+물론, 다음 예제와 같이 선언과 초기화를 동일한 문에 포함할 수 있습니다.
+
+```csharp
+int myInt = new int();
+```
+
+– 또는 –
+
+```csharp
+int myInt = 0;
+```
+
+[new](new.md) 연산자를 사용하면 특정 형식의 기본 생성자가 호출되고 변수에 기본값이 할당됩니다. 앞의 예제에서는 기본 생성자가 `0` 값을 `myInt`에 할당했습니다. 기본 생성자를 호출하여 할당된 값에 대한 자세한 내용은 [기본값 표](default-values-table.md)를 참조하세요.
+
+사용자 정의 형식의 경우 [new](new.md)를 사용하여 기본 생성자를 호출합니다. 예를 들어 다음 문은 `Point` 구조체의 기본 생성자를 호출합니다.
+
+```csharp
+Point p = new Point(); // Invoke default constructor for the struct.
+```
+
+이 호출 후에는 구조체가 한정적으로 할당된 것으로 간주됩니다. 즉, 모든 멤버가 기본값으로 초기화됩니다.
+
+`new` 연산자에 대한 자세한 내용은 [new](new.md)를 참조하세요.
+
+숫자 형식의 출력에 서식을 지정하는 방법에 대한 자세한 내용은 [숫자 결과 형식 지정 표](formatting-numeric-results-table.md)를 참조하세요.
+
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../index.md)  
-- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
-- [C# 키워드](index.md)  
-- [유형](types.md)  
-- [형식 참조 테이블](reference-tables-for-types.md)  
-- [참조 형식](reference-types.md)  
-- [Nullable 형식](../../programming-guide/nullable-types/index.md)  
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 키워드](index.md)
+- [유형](types.md)
+- [형식 참조 테이블](reference-tables-for-types.md)
+- [참조 형식](reference-types.md)
+- [Nullable 형식](../../programming-guide/nullable-types/index.md)

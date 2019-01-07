@@ -52,7 +52,7 @@ ms.locfileid: "48850689"
 ## <a name="binding-data-to-the-control"></a>컨트롤에 데이터 바인딩  
  <xref:System.Windows.Forms.DataGrid> 컨트롤이 작동하려면 디자인 타임에 <xref:System.Windows.Forms.DataGrid.DataSource%2A> 및 <xref:System.Windows.Forms.DataGrid.DataMember%2A> 속성을 사용하거나 런타임에 <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> 메서드를 사용하여 데이터 소스에 바인딩되어야 합니다. 이 바인딩을 통해 <xref:System.Windows.Forms.DataGrid>는 인스턴스화된 데이터 소스 개체(예: <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable>)를 가리킵니다. <xref:System.Windows.Forms.DataGrid> 컨트롤은 데이터에 대해 수행된 작업의 결과를 보여 줍니다. 대부분의 데이터 관련 작업은 <xref:System.Windows.Forms.DataGrid>가 아니라 데이터 소스를 통해 수행됩니다.  
   
- 바인딩된 데이터 집합의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:System.Windows.Forms.DataGrid> 컨트롤이 변경 내용을 반영합니다. 데이터 그리드 및 해당 표 스타일과 열 스타일 경우는 `ReadOnly` 속성이로 설정 `false`를 통해 데이터 집합의 데이터를 업데이트할 수 있습니다는 <xref:System.Windows.Forms.DataGrid> 컨트롤입니다.  
+ 바인딩된 데이터 세트의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:System.Windows.Forms.DataGrid> 컨트롤이 변경 내용을 반영합니다. 데이터 그리드 및 해당 표 스타일과 열 스타일 경우는 `ReadOnly` 속성이로 설정 `false`를 통해 데이터 집합의 데이터를 업데이트할 수 있습니다는 <xref:System.Windows.Forms.DataGrid> 컨트롤입니다.  
   
  한 번에 하나의 테이블만 <xref:System.Windows.Forms.DataGrid>에 표시될 수 있습니다. 테이블 간에 부모-자식 관계가 정의된 경우 사용자가 관련 테이블 간에 이동하여 <xref:System.Windows.Forms.DataGrid> 컨트롤에 표시할 테이블을 선택할 수 있습니다. 바인딩에 대 한 정보에 대 한는 <xref:System.Windows.Forms.DataGrid> 컨트롤을 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 디자인 타임 또는 런타임 중 데이터 원본 참조 [방법: 데이터 소스에 Windows Forms DataGrid 컨트롤 바인딩](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)합니다.  
   
@@ -66,7 +66,7 @@ ms.locfileid: "48850689"
   
 -   <xref:System.Data.DataViewManager> 클래스  
   
- 소스가 데이터 집합인 경우 데이터 집합은 폼의 개체이거나 XML Web services에 의해 폼에 전달된 개체일 수 있습니다. 형식화된 데이터 집합이나 형식화되지 않은 데이터 집합에 바인딩할 수 있습니다.  
+ 소스가 데이터 세트인 경우 데이터 세트는 폼의 개체이거나 XML Web services에 의해 폼에 전달된 개체일 수 있습니다. 형식화된 데이터 세트나 형식화되지 않은 데이터 세트에 바인딩할 수 있습니다.  
   
  배열의 요소와 같은 구조체의 개체가 public 속성을 노출하는 경우 <xref:System.Windows.Forms.DataGrid> 컨트롤을 추가 구조체에 바인딩할 수도 있습니다. 구조체에 있는 요소의 모든 public 속성이 표 형태 창에 표시됩니다. 예를 들어 <xref:System.Windows.Forms.DataGrid> 컨트롤을 고객 개체 배열에 바인딩하는 경우 해당 고객 개체의 모든 public 속성이 표 형태 창에 표시됩니다. 이는 일부 인스턴스에서 구조체에 바인딩할 수는 있지만 결과로 바인딩된 구조체가 실용적이지 않을 수 있음을 의미합니다. 예를 들어 정수 배열에 바인딩할 수는 있지만 `Integer` 데이터 형식이 public 속성을 지원하지 않으므로 표 형태 창에서 데이터를 표시할 수 없습니다.  
   
@@ -122,16 +122,16 @@ ms.locfileid: "48850689"
   
  경우에 따라 특정 열을 특정 데이터 테이블의 나머지 열과 다르게 표시할 수 있습니다. <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> 속성을 사용하여 열 스타일의 사용자 지정 집합을 만들 수 있습니다.  
   
- 테이블 스타일이 데이터 테이블과 관련이 있는 것처럼 열 스타일은 데이터 집합의 열과 관련이 있습니다. 각 테이블에 대해 한 번에 하나의 테이블 스타일만 정의될 수 있는 것처럼 특정 테이블 스타일에서 각 열에 대해 하나의 열 스타일만 정의될 수 있습니다. 이 관계는 열의 <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> 속성에서 정의됩니다.  
+ 테이블 스타일이 데이터 테이블과 관련이 있는 것처럼 열 스타일은 데이터 세트의 열과 관련이 있습니다. 각 테이블에 대해 한 번에 하나의 테이블 스타일만 정의될 수 있는 것처럼 특정 테이블 스타일에서 각 열에 대해 하나의 열 스타일만 정의될 수 있습니다. 이 관계는 열의 <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> 속성에서 정의됩니다.  
   
  열 스타일을 추가 하지 않고 테이블 스타일을 만든 경우 런타임에 폼과 표를 만들 때 Visual Studio에서 기본 열 스타일을 추가 합니다. 그러나 테이블 스타일을 만들 때 열 스타일을 추가한 경우에 Visual Studio는 열 스타일을 만들지 않습니다. 또한 열 스타일을 정의하고 표 형태 창에 표시할 열을 포함하는 매핑 이름으로 할당해야 합니다.  
   
- 열 스타일을 할당하여 데이터 표에 포함할 열을 지정하며 열 스타일이 열에 할당되지 않았기 때문에 표 형태 창에 표시되지 않는 데이터 열을 데이터 집합에 포함할 수 있습니다. 그러나 데이터 열이 데이터 집합에 포함되었기 때문에 표시되지 않는 데이터를 프로그래밍 방식으로 편집할 수 있습니다.  
+ 열 스타일을 할당하여 데이터 표에 포함할 열을 지정하며 열 스타일이 열에 할당되지 않았기 때문에 표 형태 창에 표시되지 않는 데이터 열을 데이터 세트에 포함할 수 있습니다. 그러나 데이터 열이 데이터 세트에 포함되었기 때문에 표시되지 않는 데이터를 프로그래밍 방식으로 편집할 수 있습니다.  
   
 > [!NOTE]
 >  일반적으로 테이블 스타일 컬렉션에 테이블 스타일을 추가하기 전에 열 스타일을 만들고 열 스타일 컬렉션에 추가합니다. 컬렉션에 빈 테이블 스타일을 추가하는 경우 열 스타일이 자동으로 생성됩니다. 따라서 중복된 <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> 값을 가진 새로운 열 스타일을 열 스타일 컬렉션에 추가하려고 하면 예외가 발생합니다.  
 >   
->  많은 열 중에서 하나의 열만 조정하려는 경우도 있습니다. 예를 들어 데이터 집합은 50개의 열을 포함하지만 이 중에서 49개만 조정하려고 합니다. 이 경우 50개 열을 모두 가져오고 프로그래밍 방식으로 하나를 제거하는 것이 원하는 49개의 개별 열을 프로그래밍 방식으로 각각 추가하는 것보다 더 쉽습니다.  
+>  많은 열 중에서 하나의 열만 조정하려는 경우도 있습니다. 예를 들어 데이터 세트는 50개의 열을 포함하지만 이 중에서 49개만 조정하려고 합니다. 이 경우 50개 열을 모두 가져오고 프로그래밍 방식으로 하나를 제거하는 것이 원하는 49개의 개별 열을 프로그래밍 방식으로 각각 추가하는 것보다 더 쉽습니다.  
   
 ## <a name="formatting"></a>서식  
  <xref:System.Windows.Forms.DataGrid> 컨트롤에 적용할 수 있는 형식 지정에는 테두리 스타일, 모눈선 스타일, 글꼴, 캡션 속성, 데이터 맞춤 및 교대로 반복되는 행의 배경색이 포함됩니다. 자세한 내용은 [방법: Windows Forms DataGrid 컨트롤 서식 지정](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)을 참조하십시오.  
