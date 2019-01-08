@@ -2,18 +2,18 @@
 title: WCF Discovery 개요
 ms.date: 03/30/2017
 ms.assetid: 84fad0e4-23b1-45b5-a2d4-c9cdf90bbb22
-ms.openlocfilehash: 24d758502e360a8368be25c506b8648b12a3eb20
-ms.sourcegitcommit: 8c2ece71e54f46aef9a2153540d0bda7e74b19a9
+ms.openlocfilehash: 8f89a3b52728f10a0d0e0544f3663c9af13488c9
+ms.sourcegitcommit: d09c77414e9e4fc72c79b04deee7a756a120674e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44494254"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54084942"
 ---
 # <a name="wcf-discovery-overview"></a>WCF Discovery 개요
 Discovery API는 WS-Discovery 프로토콜을 사용한 웹 서비스의 동적 게시 및 검색을 위한 통합 프로그래밍 모델을 제공합니다. 이러한 API를 통해 서비스는 스스로를 게시할 수 있고 클라이언트는 게시된 서비스를 찾을 수 있습니다. 서비스가 검색 가능하게 되면 해당 서비스는 검색 요청을 수신하고 이에 대해 응답하는 것 외에 알림 메시지를 보낼 수도 있습니다. 검색 가능한 서비스는 Hello 메시지를 보내 네트워크에서 서비스의 도착을 알리며, Bye 메시지를 보내 네트워크에서 서비스의 출발을 알립니다. 클라이언트는 서비스를 찾기 위해 서비스 계약 형식, 키워드 및 네트워크 범위와 같은 특정 조건이 포함된 `Probe` 요청을 보냅니다. 서비스는 `Probe` 요청을 받고 자신이 이 조건에 일치하는지 여부를 확인합니다. 일치할 경우 서비스는 서비스에 연결하는 데 필요한 정보와 함께 `ProbeMatch` 메시지를 클라이언트로 돌려보내 응답합니다. 또한 클라이언트는 엔드포인트 주소가 변경된 경우에도 서비스를 찾을 수 있는 `Resolve` 요청을 보낼 수도 있습니다. 일치하는 서비스는 `Resolve` 메시지를 클라이언트로 돌려보내 `ResolveMatch` 요청에 응답합니다.  
   
 ## <a name="ad-hoc-and-managed-modes"></a>애드혹 및 관리 모드  
- Discovery API가 지원하는 모드는 관리 모드와 애드혹 모드, 두 가지입니다. 관리 모드에는 사용 가능한 서비스에 대한 정보를 유지 관리하는 검색 프록시라는 중앙 서버가 있습니다. 검색 프록시는 다양한 방법을 통해 서비스에 대한 정보로 채워집니다. 예를 들어 서비스가 시작 시에 검색 프록시로 알림 메시지를 보낼 수도 있고, 프록시가 데이터베이스 또는 구성 파일에서 데이터를 읽어 사용 가능한 서비스를 확인할 수도 있습니다. 검색 프록시를 채우는 방법은 전적으로 개발자의 재량에 따라 결정됩니다. 클라이언트는 검색 프록시를 통해 사용 가능한 서비스에 대한 정보를 검색합니다. 클라이언트는 서비스를 검색할 때 검색 프록시로 `Probe` 메시지를 보내며, 프록시는 자신이 아는 서비스 중에 클라이언트가 검색하는 서비스와 일치하는 서비스가 있는지 여부를 확인합니다. 일치하는 서비스가 있으면 검색 프록시는 클라이언트로 `ProbeMatch` 응답을 돌려보냅니다. 그러면 클라이언트는 프록시에서 반환된 서비스 정보를 사용하여 서비스에 직접 연결합니다. 관리 모드의 기반이 되는 핵심 원칙은 검색 요청이 하나의 기관, 즉 검색 프록시로 유니캐스트 방식으로 전송된다는 것입니다. .NET Framework에는 사용자가 직접 프록시를 빌드할 수 있도록 하는 주요 구성 요소가 포함되어 있습니다. 클라이언트와 서비스는 다음과 같은 여러 방법으로 프록시를 찾을 수 있습니다.  
+ Discovery API는 두 가지 모드를 지원합니다. 관리 및 특별 합니다. 관리 모드에는 사용 가능한 서비스에 대한 정보를 유지 관리하는 검색 프록시라는 중앙 서버가 있습니다. 검색 프록시는 다양한 방법을 통해 서비스에 대한 정보로 채워집니다. 예를 들어 서비스가 시작 시에 검색 프록시로 알림 메시지를 보낼 수도 있고, 프록시가 데이터베이스 또는 구성 파일에서 데이터를 읽어 사용 가능한 서비스를 확인할 수도 있습니다. 검색 프록시를 채우는 방법은 전적으로 개발자의 재량에 따라 결정됩니다. 클라이언트는 검색 프록시를 통해 사용 가능한 서비스에 대한 정보를 검색합니다. 클라이언트는 서비스를 검색할 때 검색 프록시로 `Probe` 메시지를 보내며, 프록시는 자신이 아는 서비스 중에 클라이언트가 검색하는 서비스와 일치하는 서비스가 있는지 여부를 확인합니다. 일치하는 서비스가 있으면 검색 프록시는 클라이언트로 `ProbeMatch` 응답을 돌려보냅니다. 그러면 클라이언트는 프록시에서 반환된 서비스 정보를 사용하여 서비스에 직접 연결합니다. 관리 모드의 기반이 되는 핵심 원칙은 검색 요청이 하나의 기관, 즉 검색 프록시로 유니캐스트 방식으로 전송된다는 것입니다. .NET Framework에는 사용자가 직접 프록시를 빌드할 수 있도록 하는 주요 구성 요소가 포함되어 있습니다. 클라이언트와 서비스는 다음과 같은 여러 방법으로 프록시를 찾을 수 있습니다.  
   
 -   프록시는 애드혹 메시지에 응답할 수 있습니다.  
   
@@ -74,7 +74,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
     // ** DISCOVERY ** //
     // Make the service discoverable by adding the discovery behavior
     ServiceDiscoveryBehavior discoveryBehavior = new ServiceDiscoveryBehavior();
-    serviceHost.Description.Behaviors.Add(new ServiceDiscoveryBehavior());
+    serviceHost.Description.Behaviors.Add(discoveryBehavior);
 
     // Send announcements on UDP multicast transport
     discoveryBehavior.AnnouncementEndpoints.Add(
@@ -155,7 +155,7 @@ class Client
   
 2.  서비스 대신 통신할 검색 프록시 사용  
   
- Windows Server AppFabric에는 메시지를 받기 전에 서비스가 시작될 수 있도록 하는 자동 시작 기능이 있습니다. 이 자동 시작 집합을 사용하여 IIS/WAS에서 호스팅된 서비스가 검색 가능하도록 구성할 수 있습니다. 자동 시작 기능 참조에 대 한 자세한 내용은 [Windows Server AppFabric 자동 시작 기능](https://go.microsoft.com/fwlink/?LinkId=205545)합니다. 자동 시작 기능을 설정하는 것과 함께 검색에 대해 서비스를 구성해야 합니다. 자세한 내용은 [방법: WCF 서비스 및 클라이언트에 검색 기능 프로그래밍 방식으로 추가](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[구성 파일에서 Configuring Discovery](../../../../docs/framework/wcf/feature-details/configuring-discovery-in-a-configuration-file.md)합니다.  
+ Windows Server AppFabric에는 메시지를 받기 전에 서비스가 시작될 수 있도록 하는 자동 시작 기능이 있습니다. 이 자동 시작 집합을 사용하여 IIS/WAS에서 호스팅된 서비스가 검색 가능하도록 구성할 수 있습니다. 자동 시작 기능 참조에 대 한 자세한 내용은 [Windows Server AppFabric 자동 시작 기능](https://go.microsoft.com/fwlink/?LinkId=205545)합니다. 자동 시작 기능을 설정하는 것과 함께 검색에 대해 서비스를 구성해야 합니다. 자세한 내용은 [방법: 프로그래밍 방식으로 WCF 서비스 및 클라이언트에 검색 기능을 추가할](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[구성 파일에서 검색 구성](../../../../docs/framework/wcf/feature-details/configuring-discovery-in-a-configuration-file.md)합니다.  
   
  WCF 서비스가 실행되지 않을 때 검색 프록시를 사용하여 WCF 서비스 대신 통신할 수 있습니다. 프록시는 프로브 또는 확인 메시지를 수신하고 클라이언트에 응답할 수 있습니다. 그러면 클랑이언트에서 서비스에 직접 메시지를 보낼 수 있습니다. 클라이언트에서 서비스에 메시지를 보낼 때 서비스가 메시지에 응답하기 위해 인스턴스화됩니다. 검색 프록시 참조를 구현 하는 방법에 대 한 자세한 내용은 [검색 프록시 구현](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md)합니다.  
   
