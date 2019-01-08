@@ -3,12 +3,12 @@ title: .NET Core 정보
 description: .NET Core에 대한 자세히 알아봅니다.
 author: richlander
 ms.date: 08/01/2018
-ms.openlocfilehash: 39381a44332cbd920fdd2cb5f6707be4fcb6bcfd
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: c9247a33d59571c10dc59e91968c2b1c60006a50
+ms.sourcegitcommit: deb9225a55485a5a6e6c7914deb30ccfceb69d3f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170407"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54058557"
 ---
 # <a name="about-net-core"></a>.NET Core 정보
 
@@ -95,7 +95,7 @@ Windows 및 Unix 구현은 크기가 비슷합니다. CoreFX는 [Microsoft.Win32
 
 .NET Core와 .NET Framework 간의 주요 차이점은 다음과 같습니다.
 
-- **앱 모델** - .NET Core는 일부 .NET Framework 앱 모델을 지원하지 않습니다. 특히, ASP.NET Web Forms 및 MVC를 지원하지 않습니다. [.NET Core 3이 WPF 및 Windows Forms를 지원한다](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/)고 발표했습니다.
+- **앱 모델** - .NET Core는 일부 .NET Framework 앱 모델을 지원하지 않습니다. 특히, ASP.NET Web Forms 및 ASP.NET MVC는 지원하지 않지만 ASP.NET Core MVC는 지원합니다. [.NET Core 3이 WPF 및 Windows Forms를 지원한다](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/)고 발표했습니다.
 - **API** - .NET Core에는 팩터링이 다른 .NET Framework 기본 클래스 라이브러리의 대량 하위 집합이 포함됩니다(핵심 사례에서 어셈블리 이름이 다르고, 형식에서 노출된 멤버가 다름). 이러한 차이로 인해 어떤 경우 .NET Core에 대한 포트 원본을 변경해야 합니다([microsoft/dotnet-apiport](https://github.com/microsoft/dotnet-apiport) 참조). .NET Core는 [.NET Standard](../standard/net-standard.md) API 사양을 구현합니다.
 - **하위 시스템** -- .Net Core는 더 간단한 구현 및 프로그래밍 모델 구축을 위해 .NET Framework에 하위 시스템의 하위 집합을 구현합니다. 예를 들어 CAS(코드 액세스 보안)는 지원되지 않지만 리플렉션은 지원됩니다.
 - **플랫폼** -- .NET Framework는 Windows와 Windows Server를 지원하는 반면 .NET Core는 macOS 및 Linux도 지원합니다.

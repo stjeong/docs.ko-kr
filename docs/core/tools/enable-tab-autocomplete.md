@@ -4,14 +4,14 @@ description: 이 문서에서는 PowerShell, Bash 및 zsh용 .NET Core CLI에 �
 author: thraka
 ms.author: adegeo
 ms.date: 12/17/2018
-ms.openlocfilehash: 10b2e13aad9821295efc5c36d1cad04f1a95477c
-ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
+ms.openlocfilehash: 783868fb8300dd4a25c62a108c1c0f7a485721df
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "53784399"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029608"
 ---
-# <a name="how-to-enable-tab-completion-for-the-net-core-cli"></a>.NET Core CLI에 대한 탭 완성 기능을 사용하는 방법
+# <a name="how-to-enable-tab-completion-for-net-core-cli"></a>.NET Core CLI에 대한 TAB 완성 기능을 사용하는 방법
 
 .NET Core 2.0 SDK부터 .NET Core CLI는 탭 완성 기능을 지원합니다. 이 문서에서는 세 개의 셸, PowerShell, Bash 및 zsh에 대한 탭 완성 기능을 구성하는 방법을 설명합니다. 다른 셸에는 자동 완성에 대한 지원이 있을 수 있습니다. 자동 완성을 구성하는 방법에 대해 해당 설명서를 참조하세요. 단계는 이 문서에 설명된 단계와 유사해야 합니다.
 
@@ -28,7 +28,7 @@ migrate
 pack
 ```
 
-해당 명령이 작동하지 않는 경우 .NET Core 2.0 SDK 이상이 설치되었는지 확인합니다. 설치되었지만 해당 명령이 여전히 작동하지 않는 경우 `dotnet` 명령이 .NET Core 2.0 이상 버전으로 확인하는지 확인합니다. `dotnet --version` 명령을 사용하여 현재 경로가 확인되는 `dotnet`의 버전을 확인합니다. 자세한 내용은 [사용할 .NET Core 버전 선택](../versions/selection.md)을 참조하세요.
+해당 명령이 작동하지 않는 경우 .NET Core 2.0 SDK 이상이 설치되었는지 확인합니다. 설치되었지만 해당 명령이 여전히 작동하지 않는 경우 `dotnet` 명령이 .NET Core 2.0 SDK 이상 버전으로 확인되는지 확인합니다. `dotnet --version` 명령을 사용하여 현재 경로가 확인되는 `dotnet`의 버전을 확인합니다. 자세한 내용은 [사용할 .NET Core 버전 선택](../versions/selection.md)을 참조하세요.
 
 ### <a name="examples"></a>예제
 
