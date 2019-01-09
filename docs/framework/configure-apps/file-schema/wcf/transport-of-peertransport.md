@@ -2,12 +2,12 @@
 title: '&lt;peerTransport&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
-ms.openlocfilehash: aeadf23b4ae6b4b0be18755c43585cbfea418567
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c82e91543920522f0ed6232036ec1b5a94189fa8
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32756425"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148945"
 ---
 # <a name="lttransportgt-of-ltpeertransportgt"></a>&lt;peerTransport&gt;의 &lt;transport&gt;
 이 바인딩으로 구성된 피어에서 보낸 보안 메시지의 전송 형식을 지정합니다.  
@@ -16,16 +16,16 @@ ms.locfileid: "32756425"
 \<바인딩 >  
 \<customBinding>  
 \<바인딩 >  
-\<r t >  
+\<peerTransport >  
 \<security>  
 \<transport>  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<security>  
-   <transport credentialType="Certificate/Password" />  
-</security>         
+<security>
+  <transport credentialType="Certificate/Password" />
+</security>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -54,7 +54,7 @@ ms.locfileid: "32756425"
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md)|피어 전송의 보안 설정을 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- 경우에이 요소는 설정의 모드 특성과 [ \<보안 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md) 로 설정 된 `Transport` 또는 `TransportWithMessageCredential`합니다.  
+ 경우에이 요소는 설정의 mode 특성이 [ \<보안 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md) 로 설정 되어 `Transport` 또는 `TransportWithMessageCredential`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>  

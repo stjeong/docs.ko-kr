@@ -2,12 +2,12 @@
 title: '&lt;serviceCertificate&gt; 요소의 &lt;authentication&gt;'
 ms.date: 03/30/2017
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
-ms.openlocfilehash: 811d54b49d8cd4fddbf196dbb524c5d303805c4f
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: 556310846f8ac307ff9c92c06784eae16937c92c
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316456"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54147956"
 ---
 # <a name="ltauthenticationgt-of-ltservicecertificategt-element"></a>&lt;serviceCertificate&gt; 요소의 &lt;authentication&gt;
 SSL/TLS 협상을 사용하여 가져온 서비스 인증서를 인증하기 위해 클라이언트 프록시에서 사용하는 설정을 지정합니다.  
@@ -23,9 +23,10 @@ endpointBehaviors 섹션
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<authentication customCertificateValidatorType="String" certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"   
-trustedStoreLocation="LocalMachine/CurrentUser" />  
+<authentication customCertificateValidatorType="String"
+                certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"
+                revocationMode="NoCheck/Online/Offline"
+                trustedStoreLocation="LocalMachine/CurrentUser" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -50,19 +51,19 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
   
 |값|설명|  
 |-----------|-----------------|  
-|열거형|None, PeerTrust, ChainTrust, PeerOrChainTrust, Custom 값 중 하나입니다.<br /><br /> 자세한 내용은 [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.|  
+|열거형|다음 값 중 하나입니다. None, PeerTrust, ChainTrust, PeerOrChainTrust, 사용자 지정 합니다.<br /><br /> 자세한 내용은 [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.|  
   
 ## <a name="revocationmode-attribute"></a>revocationMode 특성  
   
 |값|설명|  
 |-----------|-----------------|  
-|열거형|NoCheck, Online, Offline 값 중 하나입니다.<br /><br /> 자세한 내용은 [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.|  
+|열거형|다음 값 중 하나입니다. NoCheck, Online, 오프 라인입니다.<br /><br /> 자세한 내용은 [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.|  
   
 ## <a name="trustedstorelocation-attribute"></a>trustedStoreLocation 특성  
   
 |값|설명|  
 |-----------|-----------------|  
-|열거형|LocalMachine 또는 CurrentUser 값 중 하나입니다. 기본값은 CurrentUser입니다. 시스템 계정으로 클라이언트 응용 프로그램을 실행하는 경우 인증서는 대개 LocalMachine에 있습니다. 사용자 계정으로 클라이언트 응용 프로그램을 실행하는 경우 인증서는 대개 CurrentUser에 있습니다.|  
+|열거형|다음 값 중 하나입니다. LocalMachine 또는 CurrentUser입니다. 기본값은 CurrentUser입니다. 시스템 계정으로 클라이언트 응용 프로그램을 실행하는 경우 인증서는 대개 LocalMachine에 있습니다. 사용자 계정으로 클라이언트 응용 프로그램을 실행하는 경우 인증서는 대개 CurrentUser에 있습니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -82,19 +83,21 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
  다음 예제에서는 두 작업을 수행합니다. 도메인 이름이 끝점과 통신할 때 사용 하도록 클라이언트에 대 한 서비스 인증서를 먼저 지정 `www.contoso.com` HTTP 프로토콜을 통해. 그런 다음 인증 중에 사용되는 해지 모드 및 저장소 위치를 지정합니다.  
   
 ```xml  
-<serviceCertificate>  
-  <defaultCertificate findValue="www.contoso.com"   
-                      storeLocation="LocalMachine"  
-                      storeName="TrustedPeople"   
-                      x509FindType="FindByIssuerDistinguishedName" />  
-  <scopedCertificates>  
-     <add targetUri="http://www.contoso.com"   
-          findValue="www.contoso.com" storeLocation="LocalMachine"  
-                  storeName="Root" x509FindType="FindByIssuerName" />  
-  </scopedCertificates>  
-  <authentication revocationMode="Online"   
-   trustedStoreLocation="LocalMachine" />  
-</serviceCertificate>  
+<serviceCertificate>
+  <defaultCertificate findValue="www.contoso.com"
+                      storeLocation="LocalMachine"
+                      storeName="TrustedPeople"
+                      x509FindType="FindByIssuerDistinguishedName" />
+  <scopedCertificates>
+     <add targetUri="http://www.contoso.com"
+          findValue="www.contoso.com"
+          storeLocation="LocalMachine"
+          storeName="Root"
+          x509FindType="FindByIssuerName" />
+  </scopedCertificates>
+  <authentication revocationMode="Online"
+                  trustedStoreLocation="LocalMachine" />
+</serviceCertificate>
 ```  
   
 ## <a name="see-also"></a>참고 항목  
@@ -104,7 +107,7 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
  <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>  
  [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [방법: 사용자 지정 인증서 유효성 검사기를 사용하는 서비스 만들기](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
+ [방법: 사용자 지정 인증서 유효성 검사기를 사용 하는 서비스 만들기](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
  [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)  
  [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
  [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

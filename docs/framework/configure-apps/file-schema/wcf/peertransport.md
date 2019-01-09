@@ -1,34 +1,33 @@
 ---
-title: '&lt;r t&gt;'
+title: '&lt;peerTransport&gt;'
 ms.date: 03/30/2017
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177
-ms.openlocfilehash: df192c6a602aa073f48fab4229b4be3fbeb2349d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 76c100c0ec793d6dc4e7e5385f9dcf4521d0039e
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748622"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151945"
 ---
-# <a name="ltpeertransportgt"></a>&lt;r t&gt;
+# <a name="ltpeertransportgt"></a>&lt;peerTransport&gt;
 사용자 지정 바인딩에 대한 피어 전송을 정의합니다.  
   
  \<system.serviceModel>  
 \<바인딩 >  
 \<customBinding>  
 \<바인딩 >  
-\<r t >  
+\<peerTransport >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<peerTransport   
-    listenIpAddress="String"  
-    maxBufferPoolSize="Integer"  
-    maxReceivedMessageSize="Integer"  
-    port="Integer"  
-        <security>  
-    </security>  
-/>  
+<peerTransport listenIpAddress="String"
+               maxBufferPoolSize="Integer"
+               maxReceivedMessageSize="Integer"
+               port="Integer">
+  <security>
+  </security>
+</peerTransport>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

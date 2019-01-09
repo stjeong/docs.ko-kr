@@ -1,15 +1,15 @@
 ---
-title: '&lt;channelPoolSettings&gt;'
+title: '&lt;ChannelPoolSettings&gt;'
 ms.date: 03/30/2017
 ms.assetid: 4755f3d3-4213-4c68-ae7f-45b67d744459
-ms.openlocfilehash: ad722fbc34617ef7f424d5f1c4418e1e1cb45344
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e55d3a989ae35d6e29062337cc79114a204608bb
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747238"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149100"
 ---
-# <a name="ltchannelpoolsettingsgt"></a>&lt;channelPoolSettings&gt;
+# <a name="ltchannelpoolsettingsgt"></a>&lt;ChannelPoolSettings&gt;
 사용자 지정 바인딩의 채널 풀 설정을 지정합니다.  
   
  \<system.serviceModel>  
@@ -22,10 +22,9 @@ ms.locfileid: "32747238"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<channelPoolSettings  
-    idleTimeout"TimeSpan"  
-        leaseTimeout"TimeSpan"  
-    maxOutboundConnectionsPerEndpopint="Integer" />  
+<channelPoolSettings idleTimeout="TimeSpan"
+                     leaseTimeout="TimeSpan"
+                     maxOutboundConnectionsPerEndpopint="Integer" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -37,7 +36,7 @@ ms.locfileid: "32747238"
 |---------------|-----------------|  
 |`idleTimeout`|연결이 끊어지기 전에 풀의 채널이 유휴 상태를 유지할 수 있는 최대 시간을 지정하는 <xref:System.TimeSpan>(양수)입니다. 기본값은 00:02:00입니다.|  
 |`leaseTimeout`|채널이 풀에 반환될 때 해당 기간이 경과하면 채널이 닫히는 시간 간격을 지정하는 <xref:System.TimeSpan>입니다. 기본값은 00:10:00입니다.|  
-|`maxOutboundChannelsPerEndpoint`|각 원격 끝점에 대해 풀에 저장할 수 있는 최대 채널 수를 지정하는 양의 정수입니다. 기본값은 10입니다.|  
+|`maxOutboundChannelsPerEndpoint`|각 원격 엔드포인트에 대해 풀에 저장할 수 있는 최대 채널 수를 지정하는 양의 정수입니다. 기본값은 10입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

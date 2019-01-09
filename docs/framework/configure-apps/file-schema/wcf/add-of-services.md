@@ -2,12 +2,12 @@
 title: '&lt;services&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: 6bdc4590-aa9c-4ec8-9345-879d780cd141
-ms.openlocfilehash: 6aa903d4188d108940c76ac50eb0a706fbea8f8b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9a86b7549e0efef10cbeb16dcc427d04065e43d3
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530252"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145538"
 ---
 # <a name="ltaddgt-of-ltservicesgt"></a>&lt;services&gt;의 &lt;add&gt;
 인스턴스에 대 한 설정을 지정 <xref:System.Workflow.Runtime.WorkflowRuntime> 호스팅 워크플로 기반 Windows Communication Foundation (WCF) 서비스에 대 한 합니다. 이 요소는 <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> 형식입니다.  
@@ -22,11 +22,11 @@ ms.locfileid: "43530252"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<workflowRuntime>  
-   <services>  
-      <add type="String"/>  
-   </services>  
-</workflowRuntime>  
+<workflowRuntime>
+  <services>
+    <add type="String" />
+  </services>
+</workflowRuntime>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -53,17 +53,17 @@ ms.locfileid: "43530252"
 ## <a name="example"></a>예제  
   
 ```xml  
-<serviceBehaviors>  
-   <behavior name="ServiceBehavior">  
-      <workflowRuntime name="WorkflowServiceHostRuntime"  
-                       validateOnCreate="true"  
-                       enablePerformanceCounters="true">  
-         <services>  
-             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>  
-         </services>  
-      </workflowRuntime>  
-   </behavior>  
-</serviceBehaviors>  
+<serviceBehaviors>
+  <behavior name="ServiceBehavior">
+    <workflowRuntime name="WorkflowServiceHostRuntime"
+                     validateOnCreate="true"
+                     enablePerformanceCounters="true">
+      <services>
+        <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common" />
+      </services>
+    </workflowRuntime>
+  </behavior>
+</serviceBehaviors>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

@@ -2,12 +2,12 @@
 title: WCF의 &lt;faultPropagationQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: d85f66a7-e7b0-4dbb-83cc-89fa06fc9161
-ms.openlocfilehash: 1db99a8d80fad5c0eca93777d87047b43371d048
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 77a38f8474b5e2ac8634d6ea91bc80c6044ff3ed
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50202122"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54144966"
 ---
 # <a name="ltfaultpropagationqueriesgt-of-wcf"></a>WCF의 &lt;faultPropagationQueries&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "50202122"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -36,9 +36,9 @@ ms.locfileid: "50202122"
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
-
+</tracking>
+```  
+  
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "50202122"
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.FaultPropagationQuery?displayProperty=nameWithType>

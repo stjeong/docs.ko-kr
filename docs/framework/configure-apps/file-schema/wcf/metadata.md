@@ -2,12 +2,12 @@
 title: '&lt;메타 데이터&gt;'
 ms.date: 03/30/2017
 ms.assetid: d09653eb-e355-4c73-b87b-28f93d56480d
-ms.openlocfilehash: 7e314ae56ed7a1b532bb8946fbb28802e72d3e20
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 119cd4d5b63f8d957bc6db9dd6aabdf9e2beeb64
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747855"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54147371"
 ---
 # <a name="ltmetadatagt"></a>&lt;메타 데이터&gt;
 서비스 메타데이터를 처리할 수 있는 방법을 지정합니다.  
@@ -18,18 +18,18 @@ ms.locfileid: "32747855"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<system.serviceModel>  
-    <client>  
-        <metadata>  
-                   <policyImporters>  
-                          <policyImporter type="string" />  
-                   </policyImporters  
-                 <wsdlImporters>  
-                      <wsdlImporter type="string" />  
-                 </wsdlImporters>  
-        </metadata>  
-    </client>  
-</system.serviceModel>  
+<system.serviceModel>
+  <client>
+    <metadata>
+      <policyImporters>
+        <policyImporter type="string" />
+      </policyImporters>
+      <wsdlImporters>
+        <wsdlImporter type="string" />
+      </wsdlImporters>
+    </metadata>
+  </client>
+</system.serviceModel>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -49,7 +49,7 @@ ms.locfileid: "32747855"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<클라이언트 >](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|클라이언트 섹션은 클라이언트가 연결할 수 있는 끝점 목록을 정의합니다.|  
+|[\<클라이언트 >](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|클라이언트 섹션은 클라이언트가 연결할 수 있는 엔드포인트 목록을 정의합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.MetadataElement>  

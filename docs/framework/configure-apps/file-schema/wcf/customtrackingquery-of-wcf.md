@@ -2,12 +2,12 @@
 title: WCF의 &lt;customTrackingQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: 164446ae-8440-4b67-b217-6786cfae1e01
-ms.openlocfilehash: e13064afbd9f5dbc8d7216eb384001e1e005785c
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: 234703e677f838dcdccdf857ba38b8729d25a488
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316235"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146383"
 ---
 # <a name="ltcustomtrackingquerygt-of-wcf"></a>WCF의 &lt;customTrackingQuery&gt;
 
@@ -25,7 +25,7 @@ ms.locfileid: "49316235"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -38,8 +38,8 @@ ms.locfileid: "49316235"
     </trackingProfile>
   </profiles>
 </tracking>
-```
-
+```  
+  
 ## <a name="attributes-and-elements"></a>특성 및 요소  
 
 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "49316235"
 |-------------|-----------------|  
 |[\<customTrackingQueries>](customtrackingqueries-of-wcf.md)|코드 활동에서 정의하는 이벤트를 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다.|
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>

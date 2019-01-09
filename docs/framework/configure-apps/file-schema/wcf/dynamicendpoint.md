@@ -1,44 +1,45 @@
 ---
-title: '&lt;dynamicEndpoint&gt;'
+title: '&lt;DynamicEndpoint&gt;'
 ms.date: 03/30/2017
 ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
-ms.openlocfilehash: 215bc9d8540b2d782a0c63f2f5be96f6fcde6812
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 78ec2d4639161f8e10105f205576f052c8a5567c
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746763"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146838"
 ---
-# <a name="ltdynamicendpointgt"></a>&lt;dynamicEndpoint&gt;
-이 구성 요소는 응용 프로그램이 런타임에 끝점 주소를 동적으로 찾을 수 있는 클라이언트 프로그램으로 기능하도록 설정하기 위한 정보를 포함하는 표준 끝점을 정의합니다.  
+# <a name="ltdynamicendpointgt"></a>&lt;DynamicEndpoint&gt;
+이 구성 요소는 응용 프로그램이 런타임에 엔드포인트 주소를 동적으로 찾을 수 있는 클라이언트 프로그램으로 기능하도록 설정하기 위한 정보를 포함하는 표준 엔드포인트를 정의합니다.  
   
 \<system.ServiceModel>  
-\<d a r d >  
+\<standardEndpoints >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
-      <discoveryClientSettings discoveryEndpoint="String">
-        <findCriteria duration="TimeSpan" 
-                      maxResults="Integer" 
-                      scopeMatchBy="Uri">
-          <contractTypeNames>
-            <add name="String" namespace="String" />
-          <contractTypeNames>
-          <extensions />
-          <scopes>
-            <add scope="URI" />
-          </scopes>
-        </findCriteria>
-      </discoveryClientSettings>
+        <discoveryClientSettings discoveryEndpoint="String">
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
+                        scopeMatchBy="Uri">
+            <contractTypeNames>
+              <add name="String"
+                   namespace="String" />
+            <contractTypeNames>
+            <extensions />
+            <scopes>
+              <add scope="URI" />
+            </scopes>
+          </findCriteria>
+        </discoveryClientSettings>
       <standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -57,7 +58,7 @@ ms.locfileid: "32746763"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<d a r d >](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|하나 이상의 속성(주소, 바인딩, 계약)이 고정된 미리 정의된 끝점인 표준 끝점의 컬렉션입니다.|  
+|[\<standardEndpoints >](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|하나 이상의 속성(주소, 바인딩, 계약)이 고정된 미리 정의된 엔드포인트인 표준 엔드포인트의 컬렉션입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Discovery.DynamicEndpoint>  

@@ -2,12 +2,12 @@
 title: WCF의 &lt;cancelRequestedQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: b690d870-02eb-4c56-8bc3-e5ca99d7097b
-ms.openlocfilehash: 3943d604b586eec37a1d153f10ac049fc9bd5747
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: 6b41721dcc0c489377c59bfccdd0b1a617f551b0
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347571"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149074"
 ---
 # <a name="ltcancelrequestedquerygt-of-wcf"></a>WCF의 &lt;cancelRequestedQuery&gt;
 
@@ -25,21 +25,21 @@ ms.locfileid: "49347571"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
       <workflow>
         <cancelRequestedQueries>
           <cancelRequestedQuery activityName="String"
-                              childActivityName="String"/>
+                                childActivityName="String" />
         </cancelRequestedQueries>
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
-
+</tracking>
+```  
+  
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "49347571"
 |-------------|-----------------|  
 |[\<cancelRequestedQueries>](cancelrequestedqueries-of-wcf.md)|부모 활동에 의한 자식 활동 취소 요청을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>

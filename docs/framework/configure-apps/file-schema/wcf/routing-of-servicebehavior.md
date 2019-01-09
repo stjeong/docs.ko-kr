@@ -2,12 +2,12 @@
 title: '&lt;serviceBehavior&gt;의 &lt;routing&gt;'
 ms.date: 03/30/2017
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
-ms.openlocfilehash: 5fb7febe365f73acf09ba74b07215fe9cc659efb
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0a007eb33063f8f44098a8c63708255b884b5fdc
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32750754"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146851"
 ---
 # <a name="ltroutinggt-of-ltservicebehaviorgt"></a>&lt;serviceBehavior&gt;의 &lt;routing&gt;
 라우팅 서비스에 대한 런타임 액세스를 제공하여 라우팅 구성의 동적 수정을 허용합니다.  
@@ -24,12 +24,12 @@ ms.locfileid: "32750754"
 <behaviors>
   <serviceBehaviors>
     <behavior name="String">
-      <routing filterTable="String" 
-               routeOnHeadersOnly="Boolean" 
+      <routing filterTable="String"
+               routeOnHeadersOnly="Boolean"
                SoapProcessingEnabled="Boolean" />
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -39,7 +39,7 @@ ms.locfileid: "32750754"
   
 |특성|설명|  
 |---------------|-----------------|  
-|filterTable|라우팅 서비스에서 평가할 필터를 포함하는 라우팅 테이블의 이름을 지정하는 문자열입니다. 이 값과 일치 해야는 `name` 특성에는 [ \<filterTable >](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertable.md) 요소에는 [ \<filterTables >](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertables.md) 섹션.|  
+|filterTable|라우팅 서비스에서 평가할 필터를 포함하는 라우팅 테이블의 이름을 지정하는 문자열입니다. 이 값과 일치 해야 합니다는 `name` 특성을 [ \<filterTable >](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertable.md) 요소에는 [ \<filterTables >](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertables.md) 섹션.|  
 |routeOnHeaderOnly|필터를 사용하여 메시지 본문과 헤더를 모두 검사할지 또는 헤더만 검사할지를 지정하는 부울 값입니다. 기본값은 `true`입니다.|  
 |soapProcessingEnabled|SOAP 처리가 발생해야 하는지 여부를 지정하는 부울 값입니다.|  
   

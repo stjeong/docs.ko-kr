@@ -2,12 +2,12 @@
 title: '&lt;XmlElement&gt;'
 ms.date: 03/30/2017
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
-ms.openlocfilehash: 70ff9b93bcd59331c5fa5e66bb51dc4cd1e043ff
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6a197f7aa29645a08a581bcee103eb94c0e20179
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767650"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54147020"
 ---
 # <a name="ltxmlelementgt"></a>&lt;XmlElement&gt;
 토큰을 요청할 때 메시지 본문에서 보안 토큰 서비스로 보낼 XML 요소를 지정합니다.  
@@ -23,9 +23,9 @@ ms.locfileid: "32767650"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<tokenRequestParameters>  
-      <xmlElement xmlElement="String" />  
-</tokenRequestParameters>  
+<tokenRequestParameters>
+  <xmlElement xmlElement="String" />
+</tokenRequestParameters>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

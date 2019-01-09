@@ -1,15 +1,15 @@
 ---
-title: '&lt;clientCredentials&gt;'
+title: '&lt;ClientCredentials&gt;'
 ms.date: 03/30/2017
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d
-ms.openlocfilehash: 5e2dc6c2737b06d76bad6cfc51531b9ca9e02ca5
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 3f70a4e6e27507c3820e1b67f49664e538ac736f
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32753243"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145751"
 ---
-# <a name="ltclientcredentialsgt"></a>&lt;clientCredentials&gt;
+# <a name="ltclientcredentialsgt"></a>&lt;ClientCredentials&gt;
 클라이언트를 서비스에 인증하는 데 사용되는 자격 증명을 지정합니다.  
   
  \<system.ServiceModel>  
@@ -21,21 +21,21 @@ ms.locfileid: "32753243"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<clientCredentials type="String"  
-      supportInteractive="Boolean" >  
-   <clientCertificate>  
-   </clientCertificate>  
-   <digest>  
-   </digest>  
-   <isuedToken>  
-   </isuedToken>  
-   <peer>  
-   </peer>  
-   <serviceCertificate>  
-   </serviceCertificate>  
-   <windowsAuthentication>  
-   </windowsAuthentication>  
-</clientCredentials>  
+<clientCredentials type="String"
+                   supportInteractive="Boolean" >
+  <clientCertificate>
+  </clientCertificate>
+  <digest>
+  </digest>
+  <isuedToken>
+  </isuedToken>
+  <peer>
+  </peer>
+  <serviceCertificate>
+  </serviceCertificate>
+  <windowsAuthentication>
+  </windowsAuthentication>
+</clientCredentials>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -63,7 +63,7 @@ ms.locfileid: "32753243"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|끝점 동작을 지정합니다.|  
+|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|엔드포인트 동작을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  클라이언트 자격 증명은 상호 인증이 필요한 경우 서비스에 대해 클라이언트를 인증하는 데 사용됩니다. 또한 이 구성 섹션은 클라이언트가 서비스 인증서를 사용하여 서비스에 대한 메시지 보안을 유지해야 하는 경우 서비스 인증서를 지정하는 데 사용할 수 있습니다.  

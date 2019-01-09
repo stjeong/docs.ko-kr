@@ -2,12 +2,12 @@
 title: '&lt;userDefinedType&gt;'
 ms.date: 03/30/2017
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
-ms.openlocfilehash: ffa9480312c278097ae110c686fb507209c117e1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 7c8b8e0403fe108f4e8d25dd1de274acc40c9fcc
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32755281"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148736"
 ---
 # <a name="ltuserdefinedtypegt"></a>&lt;userDefinedType&gt;
 서비스 계약에 포함될 UDT(사용자 정의 형식)를 나타냅니다.  
@@ -20,17 +20,17 @@ ms.locfileid: "32755281"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<comContracts>  
-  <comContract>  
-      <userDefinedTypes>  
-         <userDefinedType name="string"  
-            typeLibID="string"  
-            typeLibVersion="string"  
-            typeDefID="string">  
-         </userDefinedType>  
-      </userDefinedTypes>  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract>
+    <userDefinedTypes>
+      <userDefinedType name="String"
+                       typeLibID="String"
+                       typeLibVersion="String"
+                       typeDefID="String">
+      </userDefinedType>
+    </userDefinedTypes>
+  </comContract>
+</comContracts>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -62,31 +62,30 @@ ms.locfileid: "32755281"
  다음 예제에서는 이러한 목적으로 구성 파일의 <`userDefinedTypes`> 섹션에 특정 UDT 두 개를 추가하는 것을 보여 줍니다.  
   
 ```xml  
-<comContracts>  
-  <comContract  
-      contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
-      namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
-      name="_Broker"  
-      requireSession="true">  
-      <userDefinedTypes>  
-         <userDefinedType name="CustomerType"  
-            typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"  
-            typeLibVersion="1.0"  
-            typeDefID="{D129765C-F211-434e-825A-9A63198C41F2}">  
-         </userDefinedType>  
-         <userDefinedType name="AddressType"  
-            typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"  
-            typeLibVersion="1.0"  
-            typeDefID="{4616AE0D-687A-43B7-BC63-141AE3DFD099}">  
-         </userDefinedType>  
-      </userDefinedTypes>  
-      <exposedMethods>  
-         <exposedMethod name="BuyStock" />  
-         <exposedMethod name="SellStock" />  
-         <exposedMethod name="ExecuteTransaction" />  
-      </exposedMethods>  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"
+               namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"
+               name="_Broker"
+               requireSession="true">
+    <userDefinedTypes>
+      <userDefinedType name="CustomerType"
+                       typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"
+                       typeLibVersion="1.0"
+                       typeDefID="{D129765C-F211-434e-825A-9A63198C41F2}">
+      </userDefinedType>
+      <userDefinedType name="AddressType"
+                       typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"
+                       typeLibVersion="1.0"
+                       typeDefID="{4616AE0D-687A-43B7-BC63-141AE3DFD099}">
+      </userDefinedType>
+    </userDefinedTypes>
+    <exposedMethods>
+      <exposedMethod name="BuyStock" />
+      <exposedMethod name="SellStock" />
+      <exposedMethod name="ExecuteTransaction" />
+    </exposedMethods>
+  </comContract>
+</comContracts>
 ```  
   
  서비스가 초기화될 때 통합 런타임에서는 지정된 형식을 찾아 지정된 계약의 알려진 형식 컬렉션에 이를 추가합니다.  
@@ -96,5 +95,5 @@ ms.locfileid: "32755281"
  <xref:System.ServiceModel.Configuration.ComUdtElementCollection>  
  <xref:System.ServiceModel.Configuration.ComUdtElement>  
  [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)  
- [COM+ 응용 프로그램과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [방법: COM+ 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+ [COM+ 애플리케이션과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
+ [방법: COM + 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)

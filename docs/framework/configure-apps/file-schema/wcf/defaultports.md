@@ -1,16 +1,16 @@
 ---
-title: '&lt;a d d&gt;'
+title: '&lt;defaultPorts&gt;'
 ms.date: 03/30/2017
 ms.assetid: 725d4ee5-bd46-4f0e-9c20-30ba75d6eb2c
-ms.openlocfilehash: 2f7de066a1b91e9fa22fbe0213e221c6f4bbe617
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 7ddfddaa13778ce98bd93b6d8029438377fc7e94
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747176"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145187"
 ---
-# <a name="ltdefaultportsgt"></a>&lt;a d d&gt;
-클라이언트 응용 프로그램에서 수신하는 기본 통신 끝점을 나열하는 기본 포트의 컬렉션입니다.  
+# <a name="ltdefaultportsgt"></a>&lt;defaultPorts&gt;
+클라이언트 응용 프로그램에서 수신하는 기본 통신 엔드포인트를 나열하는 기본 포트의 컬렉션입니다.  
   
 \<system.ServiceModel>  
 \<동작 >  
@@ -24,9 +24,10 @@ ms.locfileid: "32747176"
 ```xml  
 <useRequestHeadersForMetadataAddress>
   <defaultPorts>
-    <add scheme="http" port="integer" />
+    <add scheme="http"
+         port="integer" />
   </defaultPorts>
-</useRequestHeadersForMetadataAddress>  
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -39,7 +40,7 @@ ms.locfileid: "32747176"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<추가 >의 \<a d d >](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-defaultports.md)|클라이언트 응용 프로그램에서 수신하는 기본 통신 끝점입니다.|  
+|[\<추가 >의 \<a d d >](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-defaultports.md)|클라이언트 응용 프로그램에서 수신하는 기본 통신 엔드포인트입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   

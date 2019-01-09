@@ -4,16 +4,16 @@ description: Azure Event Grid는 안정적인 이벤트 배달 및 이벤트별 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 240542014a34235aea9fd0f8162748749f23eacf
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: a10fc6a47322de5db40870b1b727edc5559a27f6
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143664"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145891"
 ---
 # <a name="event-grid"></a>Event Grid
 
-[Azure Event Grid](/azure-event-grid/overview) 이벤트 기반 응용 프로그램에 대 한 서버 리스 인프라를 제공 합니다. 모든 원본에서 Event Grid에 게시 하 고 모든 플랫폼에서 메시지를 사용할 수 있습니다. 또한 event Grid는 응용 프로그램 통합을 간소화 하는 Azure 리소스에서 이벤트에 대 한 기본 제공 지원 합니다. 예를 들어 파일이 업로드 되는 경우 앱에 알리기 위해 blob 저장소 이벤트를 구독할 수 있습니다. 응용 프로그램 수 되는 다른 클라우드 또는 온-프레미스 응용 프로그램을 사용자 지정 이벤트 그리드 메시지를 게시 합니다. Event Grid는 안정적으로 대규모를 처리 하도록 구축 되었습니다. 게시 및 구독 하는 데 필요한 인프라를 설정 하는 오버 헤드 없이 메시지는 이점을 얻을 수 있습니다.
+[Azure Event Grid](/azure/event-grid/overview) 이벤트 기반 응용 프로그램에 대 한 서버 리스 인프라를 제공 합니다. 모든 원본에서 Event Grid에 게시 하 고 모든 플랫폼에서 메시지를 사용할 수 있습니다. 또한 event Grid는 응용 프로그램 통합을 간소화 하는 Azure 리소스에서 이벤트에 대 한 기본 제공 지원 합니다. 예를 들어 파일이 업로드 되는 경우 앱에 알리기 위해 blob 저장소 이벤트를 구독할 수 있습니다. 응용 프로그램 수 되는 다른 클라우드 또는 온-프레미스 응용 프로그램을 사용자 지정 이벤트 그리드 메시지를 게시 합니다. Event Grid는 안정적으로 대규모를 처리 하도록 구축 되었습니다. 게시 및 구독 하는 데 필요한 인프라를 설정 하는 오버 헤드 없이 메시지는 이점을 얻을 수 있습니다.
 
 ![Event Grid 로고](./media/event-grid-logo.png)
 

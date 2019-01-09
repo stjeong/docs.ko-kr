@@ -1,16 +1,16 @@
 ---
-title: F#을 사용 하 여 Azure Table storage 시작
+title: 사용 하 여 Azure Table storage 시작F#
 description: Azure Table storage 또는 Azure Cosmos DB를 사용 하 여 클라우드에 구조화 된 데이터를 저장 합니다.
 author: sylvanc
 ms.date: 03/26/2018
-ms.openlocfilehash: 2d793ba8653833ff384f1824e303b08e05aba69b
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: 45a5d845dcedb5c3ea07cc4540f66bad23338a88
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "43519537"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152075"
 ---
-# <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>Azure Table storage 및 Azure Cosmos DB Table API를 사용 하 여 F# 시작 # 
+# <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>Azure Table storage 및 Azure Cosmos DB Table API를 통해 시작F# # 
 
 Azure Table storage는 클라우드에 구조화 된 NoSQL 데이터를 저장 하는 서비스입니다. Table storage는 스키마 없이 디자인을 사용 하 여 키/특성 저장소입니다. 테이블 저장소는 스키마 때문에 응용 프로그램 진화에 필요에 따라 데이터에 맞게 쉽습니다. 데이터 액세스가 빠르고 비용 효율적으로 모든 종류의 응용 프로그램입니다. 테이블 저장소는 일반적으로 전통적인 SQL 비슷한 양의 데이터에 비해 비용이 매우 낮습니다.
 
@@ -30,16 +30,16 @@ Azure Table storage 용으로 작성 된 응용 프로그램 코드 변경 없�
 
 ## <a name="about-this-tutorial"></a>이 자습서 정보
 
-이 자습서에서는 Azure Table storage 또는 Azure Cosmos DB 테이블 API를, 만들기 및 테이블을 삭제 및 삽입, 업데이트, 삭제 및 테이블 데이터 쿼리를 포함 하 여 사용 하 여 몇 가지 일반적인 작업을 위해 F# 코드를 작성 하는 방법을 보여줍니다.
+이 자습서에서는 작성 하는 방법을 보여 줍니다. F# Azure Table storage 또는 Azure Cosmos DB 테이블 API를, 만들기 및 테이블을 삭제 및 삽입, 업데이트, 삭제 및 테이블 데이터 쿼리를 포함 하 여 사용 하 여 몇 가지 일반적인 작업을 수행 하는 코드입니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 이 가이드를 사용 하려면 먼저 [Azure storage 계정 만들기](/azure/storage/storage-create-storage-account) 하거나 [Azure Cosmos DB 계정](https://azure.microsoft.com/try/cosmosdb/)합니다.
 
 
-## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F# 스크립트와 시작 F# 대화형
+## <a name="create-an-f-script-and-start-f-interactive"></a>만들기는 F# 스크립트 및 시작 F# 대화형
 
-이 문서의 샘플에에서는 F# 응용 프로그램 또는 F# 스크립트에서 사용할 수 있습니다. F# 스크립트를 만들려면 사용 하 여 파일을 만듭니다는 `.fsx` 확장명을 예를 들어 `tables.fsx`, F# 개발 환경에서.
+이 문서의 샘플에서 사용할 수는 F# 응용 프로그램 또는 F# 스크립트입니다. 만들려는 F# 스크립트를 사용 하 여 파일을 만듭니다는 `.fsx` 예를 들어 확장 `tables.fsx`에서 F# 개발 환경입니다.
 
 다음을 사용 하 여는 [패키지 관리자](package-management.md) 와 같은 [Paket](https://fsprojects.github.io/Paket/) 또는 [NuGet](https://www.nuget.org/) 설치 하는 `WindowsAzure.Storage` 패키지 및 참조 `WindowsAzure.Storage.dll` 를사용하여스크립트에서`#r`지시문입니다. 에 대해 다시 수행 `Microsoft.WindowsAzure.ConfigurationManager` Microsoft.Azure 네임 스페이스를 가져오기 위해.
 
@@ -196,7 +196,7 @@ Azure 구성 관리자를 사용 하는 것은 선택 사항입니다. .NET Fram
 
 - [Azure Cosmos DB Table API 소개](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
 - [.NET 용 storage 클라이언트 라이브러리](https://docs.microsoft.com/dotnet/api/overview/azure/storage?view=azure-dotnet)
-- [Azure Storage 형식 공급자](http://fsprojects.github.io/AzureStorageTypeProvider/)
+- [Azure Storage 형식 공급자](https://fsprojects.github.io/AzureStorageTypeProvider/)
 - [Azure Storage 팀 블로그](https://blogs.msdn.com/b/windowsazurestorage/)
 - [연결 문자열 구성](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 - [.NET에서 Azure Table Storage 시작](https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/)

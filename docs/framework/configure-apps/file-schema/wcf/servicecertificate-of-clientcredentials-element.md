@@ -2,12 +2,12 @@
 title: '&lt;clientCredentials&gt; 요소의 &lt;serviceCertificate&gt;'
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 1d54c39fd681e0686e419b7b73243703e9184d1f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 82fb39f15ea0dbf38d9c9b41d7fbdd50daebb823
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32750247"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151984"
 ---
 # <a name="ltservicecertificategt-of-ltclientcredentialsgt-element"></a>&lt;clientCredentials&gt; 요소의 &lt;serviceCertificate&gt;
 클라이언트에 대해 서비스를 인증할 때 사용할 인증서를 지정합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "32750247"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<serviceCertificate />  
+<serviceCertificate />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -48,7 +48,7 @@ ms.locfileid: "32750247"
 ## <a name="remarks"></a>설명  
  이 구성 요소는 SSL 인증을 사용하여 서비스에서 표시한 인증서의 유효성을 검사하기 위해 클라이언트에서 사용되는 설정을 지정합니다. 여기에는 메시지 보안을 사용하여 서비스에 보내는 메시지를 암호화하는 데 사용하기 위해 클라이언트에서 명시적으로 구성되는 서비스에 대한 인증서도 포함됩니다.  
   
- 특성은 `serviceCertificate` 요소는 동일의 특성에는 [ \<clientCertificate >](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md)합니다.  
+ 특성을 `serviceCertificate` 요소의 특성과 동일 합니다 [ \<clientCertificate >](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  

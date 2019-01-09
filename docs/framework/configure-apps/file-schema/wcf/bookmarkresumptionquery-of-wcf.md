@@ -2,12 +2,12 @@
 title: WCF의 &lt;bookmarkResumptionQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: 755a34f0-87c9-4a1e-ae4d-0fb8a6fbdc0e
-ms.openlocfilehash: f0721e7e14d543b1ff212fe59ed6a2de0a8a9968
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 6463404e17edff8eb1efe3f96e44b5b9997ffca3
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "49308436"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54147813"
 ---
 # <a name="ltbookmarkresumptionquerygt-of-wcf"></a>WCF의 &lt;bookmarkResumptionQuery&gt;
 
@@ -25,7 +25,7 @@ ms.locfileid: "49308436"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -36,9 +36,9 @@ ms.locfileid: "49308436"
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
-
+</tracking>
+```  
+  
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "49308436"
 |-------------|-----------------|  
 |[\<bookmarkResumptionQueries>](bookmarkresumptionqueries-of-wcf.md)|워크플로 인스턴스 내의 책갈피 다시 시작을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다.|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>

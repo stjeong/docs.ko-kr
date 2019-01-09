@@ -2,12 +2,12 @@
 title: '&lt;호스트&gt;'
 ms.date: 03/30/2017
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
-ms.openlocfilehash: ec53568e9d1df9ebb04bc299f491e80674950c63
-ms.sourcegitcommit: 22c3c8f74eaa138dbbbb02eb7d720fce87fc30a9
+ms.openlocfilehash: afa9d65223ab3a7730a55bc41ed98458707b32db
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34233732"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145231"
 ---
 # <a name="lthostgt"></a>&lt;호스트&gt;
 서비스 호스트의 설정을 지정합니다.  
@@ -21,11 +21,12 @@ ms.locfileid: "34233732"
   
 ```xml  
 <host>
-    <baseAddresses>  
-        <add baseAddress="string" />  
-    </baseAddresses>  
-    <timeOuts closeTimeout="TimeSpan" openTimeout="TimeSpan">  
-</host>  
+  <baseAddresses>
+    <add baseAddress="string" />
+  </baseAddresses>
+  <timeOuts closeTimeout="TimeSpan"
+            openTimeout="TimeSpan" />
+</host>
 ```  
   
 ## <a name="type"></a>형식  
@@ -42,7 +43,7 @@ ms.locfileid: "34233732"
 |요소|설명|  
 |-------------|-----------------|  
 |[\<baseAddresses >](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md)|서비스 호스트에서 사용하는 기본 주소를 지정하는 `baseAddress` 요소 컬렉션입니다.|  
-|[\<제한 시간 >](../../../../../docs/framework/configure-apps/file-schema/wcf/timeouts.md)|서비스 호스트가 열리거나 닫히는 데 허용되는 시간 간격을 지정하는 구성 요소입니다.|  
+|[\<시간 >](../../../../../docs/framework/configure-apps/file-schema/wcf/timeouts.md)|서비스 호스트가 열리거나 닫히는 데 허용되는 시간 간격을 지정하는 구성 요소입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   

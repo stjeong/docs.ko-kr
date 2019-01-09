@@ -2,12 +2,12 @@
 title: '&lt;netPeerTcpBinding&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
-ms.openlocfilehash: 62ba3b27b10afe182623f3be0f6738940e194579
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 9793f3ce101129b1eea8202d41104555e2b16536
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836617"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149386"
 ---
 # <a name="lttransportgt-of-ltnetpeertcpbindinggt"></a>&lt;netPeerTcpBinding&gt;의 &lt;transport&gt;
 전송 수준 보안에 대 한 설정을 사용 하는 경우 지정 된 [ \<netPeerTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md)합니다.  
@@ -22,13 +22,13 @@ ms.locfileid: "48836617"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<netPeerTcpBinding>  
-    <binding>  
-        <security>  
-            <transport credentialType="Certificate/Password" />  
-        </security>         
-    </binding>  
-</netPeerTcpBinding>  
+<netPeerTcpBinding>
+  <binding>
+    <security>
+      <transport credentialType="Certificate/Password" />
+    </security>
+  </binding>
+</netPeerTcpBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

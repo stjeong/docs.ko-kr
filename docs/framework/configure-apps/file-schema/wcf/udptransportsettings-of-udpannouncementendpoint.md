@@ -2,40 +2,40 @@
 title: '&lt;udpAnnouncementEndpoint&gt;의 &lt;udpTransportSettings&gt;'
 ms.date: 03/30/2017
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
-ms.openlocfilehash: 624dbada56a609452310218d26c5c6ff0ca49d64
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: ae640f2e2035f89cb33aecf7e5225cf4fbe3fb20
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767078"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54147501"
 ---
 # <a name="ltudptransportsettingsgt-of-ltudpannouncementendpointgt"></a>&lt;udpAnnouncementEndpoint&gt;의 &lt;udpTransportSettings&gt;
 이 구성 요소에 대 한 UDP 전송 설정을 노출 [ \<udpAnnoucementEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)합니다.  
   
 \<system.ServiceModel>  
-\<d a r d >  
+\<standardEndpoints >  
 \<udpAnnouncementEndpoint >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <udpAnnouncementEndpoint>
       <standardEndpoint>
-        <updTransportSettings duplicateMessageHistoryLength="Integer" 
-                              maxBufferPoolSize="Integer" 
-                              maxMulticastRetransmitCount="Integer" 
-                              maxPendingMessageCount="Integer" 
-                              maxReceivedMessageSize="Integer" 
-                              maxUnicastRetransmitCount="Integer" 
-                              multicastInterfaceId="String" 
-                              socketReceiveBufferSize="Integer" 
+        <updTransportSettings duplicateMessageHistoryLength="Integer"
+                              maxBufferPoolSize="Integer"
+                              maxMulticastRetransmitCount="Integer"
+                              maxPendingMessageCount="Integer"
+                              maxReceivedMessageSize="Integer"
+                              maxUnicastRetransmitCount="Integer"
+                              multicastInterfaceId="String"
+                              socketReceiveBufferSize="Integer"
                               timeToLive="Integer" />
       </standardEndpoint>
     </udpAnnouncementEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -62,7 +62,7 @@ ms.locfileid: "32767078"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<udpAnnoucementEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)|고정 알림 계약 및 UDP 전송 바인딩이 있는 표준 끝점입니다.|  
+|[\<udpAnnoucementEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)|고정 알림 계약 및 UDP 전송 바인딩이 있는 표준 엔드포인트입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Discovery.UdpTransportSettings>

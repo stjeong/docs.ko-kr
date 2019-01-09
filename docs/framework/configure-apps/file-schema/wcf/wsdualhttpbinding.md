@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wsDualHttpBinding Element
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
-ms.openlocfilehash: 1c03dd0a38264b75b31c9638cf5985a4375aea67
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 7a6059a5ebf1ae05fee8e49235f31808909adc6f
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48846021"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146019"
 ---
 # <a name="ltwsdualhttpbindinggt"></a>&lt;wsDualHttpBinding&gt;
 이중 서비스 계약 또는 SOAP 중간 매개자를 통한 통신에 사용할 수 있도록 보안이 유지되고 신뢰할 수 있으며 상호 운용할 수 있는 바인딩을 정의합니다.  
@@ -21,32 +21,36 @@ ms.locfileid: "48846021"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<wsDualHttpBinding>  
-        <binding name="string"  
-        closeTimeout="TimeSpan"  
-        openTimeout="TimeSpan"   
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-        bypassProxyOnLocal="Boolean"  
-        clientBaseAddress="URI"  
-        transactionFlow="Boolean"   
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        messageEncoding="Text/Mtom"   
-        proxyAddress="URI"  
-  
-textEncoding="Unicode/BigEndianUnicode/UTF8"  
-        useDefaultWebProxy="Boolean">  
-        <reliableSession ordered="Boolean"  
-            inactivityTimeout="TimeSpan" />  
-        <security mode="None/Message">  
-           <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-                negotiateServiceCredential="Boolean"  
-                    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />  
-                </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</wsDualHttpBinding>  
+<wsDualHttpBinding>
+  <binding name="String"
+          closeTimeout="TimeSpan"
+          openTimeout="TimeSpan"
+          receiveTimeout="TimeSpan"
+          sendTimeout="TimeSpan"
+          bypassProxyOnLocal="Boolean"
+          clientBaseAddress="URI"
+          transactionFlow="Boolean"
+          hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+          maxBufferPoolSize="integer"
+          maxReceivedMessageSize="Integer"
+          messageEncoding="Text/Mtom"
+          proxyAddress="URI"
+          textEncoding="Unicode/BigEndianUnicode/UTF8"
+          useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan" />
+    <security mode="None/Message">
+      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+               negotiateServiceCredential="Boolean"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</wsDualHttpBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -68,7 +72,7 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
 |proxyAddress|HTTP 프록시의 주소를 지정하는 URI입니다. `useDefaultWebProxy`가 `true`일 경우 이 설정은 `null`이어야 합니다. 기본값은 `null`입니다.|  
 |receiveTimeout|받기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
 |sendTimeout|보내기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
-|textEncoding|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />-Unicode: 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|textEncoding|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />유니코드를 지원 합니다. 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
 |transactionFlow|바인딩에서 WS-Transactions 이동을 지원할지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.|  
 |useDefaultWebProxy|시스템의 자동 구성된 HTTP 프록시 사용 여부를 지정하는 부울 값입니다. 이 특성이 `null`이면 프록시 주소는 `true`이어야 합니다(설정되지 않음). 기본값은 `true`입니다.|  
   
@@ -96,36 +100,35 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
 ## <a name="example"></a>예제  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<wsDualHttpBinding>  
-    <binding   
-        closeTimeout="00:00:10"  
-        openTimeout="00:00:20"   
-        receiveTimeout="00:00:30"  
-        sendTimeout="00:00:40"  
-        bypassProxyOnLocal="false"   
-        clientBaseAddress="http://localhost:8001/client/"  
-        transactionFlow="true"   
-        hostNameComparisonMode="WeakWildcard"  
-        maxReceivedMessageSize="1000"  
-        messageEncoding="Mtom"   
-        proxyAddress="http://foo/bar"   
-        textEncoding="utf-16"  
-        useDefaultWebProxy="false">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00" />  
-        <security mode="None">  
-            <message clientCredentialType="None"  
-                negotiateServiceCredential="false"  
-                algorithmSuite="Aes128" />  
-        </security>  
-    </binding>  
-</wsDualHttpBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <wsDualHttpBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 bypassProxyOnLocal="false"
+                 clientBaseAddress="http://localhost:8001/client/"
+                 transactionFlow="true"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://foo/bar"
+                 textEncoding="utf-16"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00" />
+          <security mode="None">
+            <message clientCredentialType="None"
+                     negotiateServiceCredential="false"
+                     algorithmSuite="Aes128" />
+          </security>
+        </binding>
+      </wsDualHttpBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

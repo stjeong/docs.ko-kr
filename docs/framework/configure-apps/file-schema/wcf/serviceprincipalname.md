@@ -1,18 +1,18 @@
 ---
-title: '&lt;서비스 사용자 이름&gt;'
+title: '&lt;servicePrincipalName&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
-ms.openlocfilehash: e5c1f5a6986d57d20180560b12f5c7c5540a590d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: a22a905744980d0b370023e6236734a9bb0d6357
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32750728"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150645"
 ---
-# <a name="ltserviceprincipalnamegt"></a>&lt;서비스 사용자 이름&gt;
+# <a name="ltserviceprincipalnamegt"></a>&lt;servicePrincipalName&gt;
 SPN(서비스 사용자 이름)으로 서비스 ID를 지정합니다.  
   
- SPN을 설정 하는 방법에 대 한 자세한 내용은 참조 [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
+ SPN을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
   
  \<identity>  
 \<서비스 사용자 이름 >  
@@ -20,7 +20,7 @@ SPN(서비스 사용자 이름)으로 서비스 ID를 지정합니다.
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<servicePrincipalName value = "String" />  
+<servicePrincipalName value="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -42,7 +42,7 @@ SPN(서비스 사용자 이름)으로 서비스 ID를 지정합니다.
 |[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|클라이언트에서 인증할 서비스의 ID를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 id 가진 끝점과 연결 하는 보안 Windows Communication Foundation (WCF) 클라이언트 끝점과 SSPI 인증을 수행할 때 SPN을 사용 합니다.  
+ 이 id 가진 끝점과 연결 하는 안전한 Windows Communication Foundation (WCF) 클라이언트 끝점과 SSPI 인증을 수행할 때 SPN을 사용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.IdentityElement>  

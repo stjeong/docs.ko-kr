@@ -2,12 +2,12 @@
 title: '&lt;localClientSettings&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae
-ms.openlocfilehash: a960a18c472bed64609947220dffedf9ec90945c
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6ed73cc2a74efbba356b71f7941cb8b1113b22b8
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32750949"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146149"
 ---
 # <a name="ltlocalclientsettingsgt-element"></a>&lt;localClientSettings&gt; 요소
 이 바인딩에 대한 로컬 클라이언트의 보안 설정을 지정합니다.  
@@ -21,19 +21,19 @@ ms.locfileid: "32750949"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<security>  
-   <localClientSettings cacheCookies="Boolean"  
-      cookieRenewalThresholdPercentage="Integer"  
-      detectReplays="Boolean"  
-      maxClockSkew="TimeSpan"  
-      maxCookieCachingTime="TimeSpan"  
-      reconnectTransportOnFailure="Boolean"  
-      replayCacheSize="Integer"  
-      replayWindow="TimeSpan"  
-      sessionKeyRenewalInterval="TimeSpan"  
-      sessionKeyRolloverInterval="TimeSpan"  
-      timestampValidityDuration="TimeSpan" />  
-</security>  
+<security>
+   <localClientSettings cacheCookies="Boolean"
+                        cookieRenewalThresholdPercentage="Integer"
+                        detectReplays="Boolean"
+                        maxClockSkew="TimeSpan"
+                        maxCookieCachingTime="TimeSpan"
+                        reconnectTransportOnFailure="Boolean"
+                        replayCacheSize="Integer"
+                        replayWindow="TimeSpan"
+                        sessionKeyRenewalInterval="TimeSpan"
+                        sessionKeyRolloverInterval="TimeSpan"
+                        timestampValidityDuration="TimeSpan" />
+</security>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -78,5 +78,5 @@ ms.locfileid: "32750949"
  [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
  [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [방법: SecurityBindingElement를 사용하여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
+ [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [사용자 지정 바인딩 보안](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

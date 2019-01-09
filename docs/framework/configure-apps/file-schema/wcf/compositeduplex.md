@@ -2,15 +2,15 @@
 title: '&lt;compositeDuplex&gt;'
 ms.date: 03/30/2017
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
-ms.openlocfilehash: ce04eb96868da9760412e37d2335d020cc768ac9
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 4b84b4f2816dc68b7dcee784d957189728e5a4b2
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748349"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149052"
 ---
 # <a name="ltcompositeduplexgt"></a>&lt;compositeDuplex&gt;
-서비스에서 클라이언트에 메시지를 돌려 보낼 수 있도록 클라이언트가 서비스에 대한 끝점을 공개해야 할 때 사용되는 바인딩 요소를 정의합니다.  
+서비스에서 클라이언트에 메시지를 돌려 보낼 수 있도록 클라이언트가 서비스에 대한 엔드포인트를 공개해야 할 때 사용되는 바인딩 요소를 정의합니다.  
   
  \<system.serviceModel>  
 \<바인딩 >  
@@ -21,7 +21,7 @@ ms.locfileid: "32748349"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<compositeDuplex clientBaseAddress="URI" />  
+<compositeDuplex clientBaseAddress="URI" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -31,7 +31,7 @@ ms.locfileid: "32748349"
   
 |특성|설명|  
 |---------------|-----------------|  
-|clientBaseAddress|이중 모드에서 백 채널의 주소를 설정하는 URI입니다. 서비스에서는 이 주소를 사용하여 접속한 후 클라이언트와의 연결을 설정합니다.<br /><br /> 이 특성이 설정 되지 않은 경우, 기본 주소를 "`full qualified name+default port\TemporaryIndigoAddress\guid`" 생성 됩니다. 기본값은 `null`입니다.|  
+|clientBaseAddress|이중 모드에서 백 채널의 주소를 설정하는 URI입니다. 서비스에서는 이 주소를 사용하여 접속한 후 클라이언트와의 연결을 설정합니다.<br /><br /> 하는 경우이 특성은 설정 되지 않으면는 기본 주소 "`full qualified name+default port\TemporaryIndigoAddress\guid`" 생성 됩니다. 기본값은 `null`입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -50,7 +50,7 @@ ms.locfileid: "32748349"
 ## <a name="example"></a>예제  
   
 ```xml  
-<compositeDuplex clientBaseAddress="http://www.contoso.com" />  
+<compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
 ## <a name="see-also"></a>참고 항목  

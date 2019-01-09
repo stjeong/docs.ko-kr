@@ -2,12 +2,12 @@
 title: '&lt;udpBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
-ms.openlocfilehash: 62752ca74c7e5332c025a42d87608bb4c7f725ae
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 4b5fca2fbcece8c5a1641d4cea7700f12de11782
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48846203"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145837"
 ---
 # <a name="ltudpbindinggt"></a>&lt;udpBinding&gt;
 <xref:System.ServiceModel.UdpBinding> 바인딩을 구성하는 데 사용되는 구성 요소입니다.  
@@ -19,26 +19,28 @@ ms.locfileid: "48846203"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<udpBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       duplicateMessageHistoryLength="Integer"  
-       maxBufferPoolSize="Integer"  
-       maxBufferSize="Integer"       maxPendingMessagesTotalSize="Integer"  
-       maxReceivedMessageSize="Integer"       maxRetransmitCount="Integer"  
-       multicastInterfaceId="Integer"  
-              name="string"   
-       openTimeout="TimeSpan"   
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan"  
-       textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-       timeToLive="TimeSpan">  
-       <readerQuotas   
-            maxArrayLength="Integer"  
-            maxBytesPerRead="Integer"  
-            maxDepth="Integer"             maxNameTableCharCount="Integer"                maxStringContentLength="Integer" />  
-   </binding>  
-</basicHttpBinding>  
+<udpBinding>
+  <binding closeTimeout="TimeSpan"
+           duplicateMessageHistoryLength="Integer"
+           maxBufferPoolSize="Integer"
+           maxBufferSize="Integer"
+           maxPendingMessagesTotalSize="Integer"
+           maxReceivedMessageSize="Integer"
+           maxRetransmitCount="Integer"
+           multicastInterfaceId="Integer"
+           name="String"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           timeToLive="TimeSpan">
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</basicHttpBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -60,7 +62,7 @@ ms.locfileid: "48846203"
 |`openTimeout`|열기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
 |`receiveTimeout`|받기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:10:00입니다.|  
 |`sendTimeout`|보내기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
-|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />-Unicode: 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />유니코드를 지원 합니다. 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
 |`timeToLive`|바인딩에 대한 TTL(Time To Live)을 지정하는 Timespan 값입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -82,23 +84,23 @@ ms.locfileid: "48846203"
  다음 예제에서는 <<xref:System.ServiceModel.UdpBinding>> 요소를 사용하여 `udpBinding`을 구성하는 방법을 보여 줍니다.  
   
 ```xml  
-<udpBinding>  
-        <binding  closeTimeout="00:10:00"  
-                   duplicateMessageHistoryLength="100"  
-                   maxBufferPoolSize="100"  
-                   maxPendingMessagesTotalSize="100000"  
-                   maxReceivedMessageSize="65536"  
-                    maxRetransmitCount="10"  
-                   multicastInterfaceId="00000"  
-                   name="myUdpBinding"  
-                   openTimeout="00:10:00"  
-                   receiveTimeout="00:10:00"  
-                   sendTimeout="00:10:00"  
-                   textEncoding="utf-8"  
-                   timeToLive="00:10:00"  
-          <readerQuotas/>   
-        </binding>  
-      </udpBinding>  
+<udpBinding>
+  <binding  closeTimeout="00:10:00"
+            duplicateMessageHistoryLength="100"
+            maxBufferPoolSize="100"
+            maxPendingMessagesTotalSize="100000"
+            maxReceivedMessageSize="65536"
+            maxRetransmitCount="10"
+            multicastInterfaceId="00000"
+            name="myUdpBinding"
+            openTimeout="00:10:00"
+            receiveTimeout="00:10:00"
+            sendTimeout="00:10:00"
+            textEncoding="utf-8"
+            timeToLive="00:10:00">
+    <readerQuotas />
+  </binding>
+</udpBinding>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

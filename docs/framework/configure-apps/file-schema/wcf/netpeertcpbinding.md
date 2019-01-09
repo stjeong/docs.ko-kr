@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - netPeerBinding element
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
-ms.openlocfilehash: 082d72250f147ebcdc83ec941ce4b1019b1bc4af
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 5250edc5ddfc0d381227f619752a8f3826ee2a44
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841432"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149256"
 ---
 # <a name="ltnetpeertcpbindinggt"></a>&lt;netPeerTcpBinding&gt;
 피어 채널 전용 TCP 메시징의 바인딩을 정의합니다.  
@@ -21,21 +21,21 @@ ms.locfileid: "48841432"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<netPeerBinding>  
-    <binding name="string"  
-         closeTimeout="TimeSpan"  
-         openTimeout="TimeSpan"   
-         receiveTimeout="TimeSpan"  
-         sendTimeout="TimeSpan"  
-         listenIPAddress="String"  
-          maxBufferPoolSize="integer"  
-         maxReceiveMessageSize="Integer"   
-         port="Integer"  
-         <security mode="None/Transport/Message/TransportWithMessageCredential">  
-            <transport credentialType="Certificate/Password" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
+<netPeerBinding>
+  <binding name="string"
+           closeTimeout="TimeSpan"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           listenIPAddress="String"
+           maxBufferPoolSize="integer"
+           maxReceiveMessageSize="Integer"
+           port="Integer">
+    <security mode="None/Transport/Message/TransportWithMessageCredential">
+      <transport credentialType="Certificate/Password" />
+    </security>
+  </binding>
+</netPeerBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -76,29 +76,28 @@ ms.locfileid: "48841432"
  다음 예제에서는 피어 채널을 사용하여 여러 상대방과의 통신을 제공하는 NetPeerTcpBinding binding 바인딩 사용을 보여 줍니다. 이 바인딩을 사용 하 여 자세한 시나리오는를 참조 하세요 [Net 피어 TCP](https://msdn.microsoft.com/library/31f4db66-edb2-40a6-b92a-14098e92acae)합니다.  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<netPeerBinding>  
-    <binding   
-         closeTimeout="00:00:10"  
-         openTimeout="00:00:20"   
-         receiveTimeout="00:00:30"  
-         sendTimeout="00:00:40"  
-         maxBufferSize="1001"  
-         maxConnections="123"   
-         maxReceiveMessageSize="1000">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00"  
-            enabled="true" />  
-        <security mode="TransportWithMessageCredential">  
-            <message clientCredentialType="CardSpace" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <netPeerBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 maxBufferSize="1001"
+                 maxConnections="123"
+                 maxReceiveMessageSize="1000">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="TransportWithMessageCredential">
+            <message clientCredentialType="CardSpace" />
+          </security>
+        </binding>
+      </netPeerBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

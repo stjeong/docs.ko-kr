@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 67c94eeaa295b19e99f870780f555baff936889f
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: f6e139a4e10ca10fac45510715110d156ddf82ff
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030129"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145970"
 ---
 # <a name="redirecting-assembly-versions"></a>어셈블리 버전 리디렉션
 
@@ -156,14 +156,13 @@ ms.locfileid: "54030129"
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 사용 하도록 설정 하 고 자동 바인딩 리디렉션 사용 안 함](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+- [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
 - [\<bindingRedirect > 요소](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)
 - [어셈블리 바인딩 리디렉션 보안 권한](../../../docs/framework/configure-apps/assembly-binding-redirection-security-permission.md)
 - [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)
-- [.NET Framework 앱 구성](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
 - [런타임 설정 스키마](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)
 - [방법: 게시자 정책 만들기](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)

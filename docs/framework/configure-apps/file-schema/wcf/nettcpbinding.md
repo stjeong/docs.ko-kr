@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - netTcpBinding Element
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
-ms.openlocfilehash: d8e001e6c39549b35eee332d0874e6f347b53509
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: 0849120edf7d4b8948b3632cfe2fc81f1bdff1eb
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "49314899"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148190"
 ---
 # <a name="ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;
 
@@ -23,37 +23,37 @@ ms.locfileid: "49314899"
   
 ```xml  
 <netTcpBinding>
-  <binding closeTimeout="TimeSpan"  
+  <binding closeTimeout="TimeSpan"
            hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
-           listenBacklog="Integer"  
-           maxBufferPoolSize="integer"  
-           maxBufferSize="Integer"  
-           maxConnections="Integer"   
-           maxReceivedMessageSize="Integer"  
-           name="string"  
-           openTimeout="TimeSpan"  
-           portSharingEnabled="Boolean"  
-           receiveTimeout="TimeSpan"  
-           sendTimeout="TimeSpan"  
-           transactionFlow="Boolean"   
-           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"   
+           listenBacklog="Integer"
+           maxBufferPoolSize="integer"
+           maxBufferSize="Integer"
+           maxConnections="Integer"
+           maxReceivedMessageSize="Integer"
+           name="string"
+           openTimeout="TimeSpan"
+           portSharingEnabled="Boolean"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           transactionFlow="Boolean"
+           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"
            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
-    <reliableSession ordered="Boolean"  
-                     inactivityTimeout="TimeSpan"  
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
                      enabled="Boolean" />
     <security mode="None/Transport/Message/Both">
-      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
+      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
                algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
-      <transport clientCredentialType="None/Windows/Certificate"  
+      <transport clientCredentialType="None/Windows/Certificate"
                  protectionLevel="None/Sign/EncryptAndSign" />
     </security>
-    <readerQuotas maxArrayLength="Integer"     
-                  maxBytesPerRead="Integer"      
-                  maxDepth="Integer" 
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
                   maxNameTableCharCount="Integer"
                   maxStringContentLength="Integer" />
   </binding>
-</netTcpBinding> 
+</netTcpBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -67,7 +67,7 @@ ms.locfileid: "49314899"
 |`closeTimeout`|닫기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
 |`hostnameComparisonMode`|URI 구문 분석에 사용되는 HTTP 호스트 이름 비교 모드를 지정합니다. 이 특성은 `System.ServiceModel.HostnameComparisonMode` 형식이며 URI에 대해 비교할 때 호스트 이름이 서비스에 연결하는 데 사용되는지 여부를 나타냅니다. 기본값은 `StrongWildcard`이며 이 값은 비교 시 호스트 이름을 무시합니다.|  
 |`listenBacklog`|수신기에서 수락하기까지 대기할 수 있는 최대 채널 수를 지정하는 양의 정수입니다. 이 한도를 초과하는 연결은 채널 수가 한도 아래로 내려갈 때까지 큐에 대기됩니다. `connectionTimeout` 특성은 연결 예외가 throw되기 전에 클라이언트가 연결을 대기하는 시간을 제한합니다. 기본값은 10입니다.|  
-|`maxBufferPoolSize`|이 바인딩의 최대 버퍼 풀 크기를 지정하는 정수입니다. 기본값은 512 * 1024바이트입니다. WCF(Windows Communication Foundation)의 많은 부분에서 버퍼를 사용합니다. 버퍼를 사용할 때마다 만들고 삭제하면 비용이 많이 들며, 버퍼에 대한 가비지 수집 역시 비용이 많이 듭니다. 버퍼 풀이 있으면 이 풀로부터 버퍼를 가져와 사용한 다음 다시 풀로 반환할 수 있습니다. 따라서 버퍼를 만들고 제거하는 데 오버헤드를 피할 수 있습니다.|  
+|`maxBufferPoolSize`|이 바인딩의 최대 버퍼 풀 크기를 지정하는 정수입니다. 기본값은 512 * 1024바이트입니다. WCF(Windows Communication Foundation)의 많은 부분에서 버퍼를 사용합니다. 버퍼를 사용할 때마다 만들고 삭제하면 비용이 많이 들며, 버퍼에 대한 가비지 수집 역시 비용이 많이 듭니다. 버퍼 풀이 있으면 이 풀로부터 버퍼를 가져와 사용한 다음 다시 풀로 반환할 수 있습니다. 따라서 버퍼를 만들고 삭제하는 데 오버헤드를 피할 수 있습니다.|  
 |`maxBufferSize`|메시지를 메모리에 저장하는 데 사용되는 버퍼의 최대 크기(바이트)를 지정하는 양의 정수입니다.<br /><br /> `transferMode` 특성이 `Buffered`와 같은 경우 이 특성은 `maxReceivedMessageSize` 특성 값과 같아야 합니다.<br /><br /> `transferMode` 특성이 `Streamed`와 같은 경우 이 특성은 `maxReceivedMessageSize` 특성 값보다 클 수 없으며 적어도 헤더 크기 이상이어야 합니다.<br /><br /> 기본값은 65536입니다. 자세한 내용은 <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferSize%2A>을 참조하세요.|  
 |`maxConnections`|서비스에서 생성하고 수락하는 최대 아웃바운드 및 인바운드 연결 수를 지정하는 정수입니다. 들어오는 연결과 나가는 연결 수는 이 특성에서 지정한 별도의 제한에 따라 계산됩니다.<br /><br /> 이 제한을 초과하는 인바운드 연결은 연결 수가 제한 아래로 내려갈 때까지 큐에 대기됩니다.<br /><br /> 이 한도를 초과하는 아웃바운드 연결은 연결 수가 한도 아래로 내려갈 때까지 큐에 대기됩니다.<br /><br /> 기본값은 10입니다.|  
 |`maxReceivedMessageSize`|헤더를 비롯하여 이 바인딩으로 구성된 채널에서 받을 수 있는 최대 메시지 크기(바이트)를 지정하는 양의 정수입니다. 이 한도를 초과하는 메시지를 보낸 사람은 SOAP 오류를 받습니다. 수신자는 메시지를 삭제하고 추적 로그에 이벤트 항목을 만듭니다. 기본값은 65536입니다.|  
@@ -105,50 +105,48 @@ ms.locfileid: "49314899"
 클라이언트 및 서비스 구성 파일에 바인딩이 지정됩니다. 바인딩 형식은 `binding` 요소의 `<endpoint>` 특성에서 지정합니다. netTcpBinding 바인딩을 구성하고 일부 설정을 변경하려면 바인딩 구성을 정의해야 합니다. 끝점은 `bindingConfiguration` 특성을 사용하여 바인딩 구성을 참조해야 합니다. 다음 예제에서는 바인딩 구성을 정의합니다.  
   
 ```xml  
-<services>  
-  <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-    ...  
-    <endpoint address=""  
-              binding="netTcpBinding"  
-              contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-    ...  
-  </service>  
-</services>  
-  
-<bindings>  
-  <netTcpBinding>  
-    <binding   
-             closeTimeout="00:01:00"  
-             openTimeout="00:01:00"   
-             receiveTimeout="00:10:00"   
-             sendTimeout="00:01:00"  
-             transactionFlow="false"   
-             transferMode="Buffered"   
-             transactionProtocol="OleTransactions"  
-             hostNameComparisonMode="StrongWildcard"   
-             listenBacklog="10"  
-             maxBufferPoolSize="524288"   
-             maxBufferSize="65536"   
-             maxConnections="10"  
-             maxReceivedMessageSize="65536">  
-      <readerQuotas maxDepth="32"   
-                    maxStringContentLength="8192"   
-                    maxArrayLength="16384"  
-                    maxBytesPerRead="4096"   
-                    maxNameTableCharCount="16384" />  
-      <reliableSession ordered="true"   
-                       inactivityTimeout="00:10:00"  
-                       enabled="false" />  
-      <security mode="Transport">  
-        <transport clientCredentialType="Windows" protectionLevel="EncryptAndSign" />  
-      </security>  
-    </binding>  
-  </netTcpBinding>  
-</bindings>  
+<services>
+  <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    ...
+    <endpoint address=""
+              binding="netTcpBinding"
+              contract="Microsoft.ServiceModel.Samples.ICalculator" />
+    ...
+  </service>
+</services>
+<bindings>
+  <netTcpBinding>
+    <binding closeTimeout="00:01:00"
+             openTimeout="00:01:00"
+             receiveTimeout="00:10:00"
+             sendTimeout="00:01:00"
+             transactionFlow="false"
+             transferMode="Buffered"
+             transactionProtocol="OleTransactions"
+             hostNameComparisonMode="StrongWildcard"
+             listenBacklog="10"
+             maxBufferPoolSize="524288"
+             maxBufferSize="65536"
+             maxConnections="10"
+             maxReceivedMessageSize="65536">
+      <readerQuotas maxDepth="32"
+                    maxStringContentLength="8192"
+                    maxArrayLength="16384"
+                    maxBytesPerRead="4096"
+                    maxNameTableCharCount="16384" />
+      <reliableSession ordered="true"
+                       inactivityTimeout="00:10:00"
+                       enabled="false" />
+      <security mode="Transport">
+        <transport clientCredentialType="Windows" protectionLevel="EncryptAndSign" />
+      </security>
+    </binding>
+  </netTcpBinding>
+</bindings>
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 
 - <xref:System.ServiceModel.NetTcpBinding>  
 - <xref:System.ServiceModel.Configuration.NetTcpBindingElement>  

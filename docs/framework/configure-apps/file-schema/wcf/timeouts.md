@@ -2,12 +2,12 @@
 title: '&lt;시간 제한&gt;'
 ms.date: 03/30/2017
 ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
-ms.openlocfilehash: 1f0638f85177d2acb6f61e3246a1a5ee9a4e2f5c
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e39deeb251865b87eb7734e4447088ca2f221d1d
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32753003"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148333"
 ---
 # <a name="lttimeoutsgt"></a>&lt;시간 제한&gt;
 서비스 호스트가 열리거나 닫히는 데 허용되는 시간 간격을 지정하는 구성 요소를 나타냅니다.  
@@ -16,13 +16,13 @@ ms.locfileid: "32753003"
 \<client>  
 \<endpoint>  
 \<호스트 >  
-\<제한 시간 >  
+\<시간 >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<timeOuts closeTimeout="TimeSpan"  
-   openTimeout="TimeSpan" >  
+<timeOuts closeTimeout="TimeSpan"
+          openTimeout="TimeSpan" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

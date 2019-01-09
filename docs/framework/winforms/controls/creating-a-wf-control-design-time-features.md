@@ -1,5 +1,5 @@
 ---
-title: '연습: Visual Studio의 디자인 타임 기능을 사용하는 Windows Forms 컨트롤 만들기'
+title: '연습: Visual Studio 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - DocumentDesigner class [Windows Forms]
 - walkthroughs [Windows Forms], controls
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
-ms.openlocfilehash: aa30842ca72bb50767513cf387f59e29e40574e8
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: cb102ec9b3a7eb4673f42c2ca5ad876e049ff59c
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43865867"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146279"
 ---
-# <a name="walkthrough-creating-a-windows-forms-control-that-takes-advantage-of-visual-studio-design-time-features"></a>연습: Visual Studio의 디자인 타임 기능을 사용하는 Windows Forms 컨트롤 만들기
+# <a name="walkthrough-creating-a-windows-forms-control-that-takes-advantage-of-visual-studio-design-time-features"></a>연습: Visual Studio 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기
 연결 된 사용자 지정 디자이너를 작성 하 여 사용자 지정 컨트롤에 대 한 디자인 타임 환경을 향상 시킬 수 있습니다.  
   
  이 연습에서는 사용자 지정 컨트롤에 대 한 사용자 지정 디자이너를 만드는 방법을 보여 줍니다. 구현 합니다는 `MarqueeControl` 형식 및 호출 하는 연결 된 디자이너 클래스는 `MarqueeControlRootDesigner`합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "43865867"
   
  ![가능한 MarqueeControl 배치](../../../../docs/framework/winforms/controls/media/demomarqueecontrol.gif "항목")  
   
- 전체 코드 목록은 참조 하세요. [방법: 만들기는 Windows Forms 컨트롤 하는 디자인 타임 기능 활용](https://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)합니다.  
+ 전체 코드 목록은 참조 하세요. [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))합니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
@@ -84,18 +84,18 @@ ms.locfileid: "43865867"
   
 1.  Windows Forms 컨트롤 라이브러리 프로젝트를 솔루션에 추가 합니다. "MarqueeControlLibrary." 프로젝트 이름을  
   
-2.  사용 하 여 **솔루션 탐색기**, 선택한 언어에 따라 "UserControl1.cs" 또는 "UserControl1.vb" 라는 소스 파일을 삭제 하 여 프로젝트의 기본 컨트롤을 삭제 합니다. 자세한 내용은 [NIB: 방법: 제거, 삭제 및 항목 제외](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73)합니다.  
+2.  사용 하 여 **솔루션 탐색기**, 선택한 언어에 따라 "UserControl1.cs" 또는 "UserControl1.vb" 라는 소스 파일을 삭제 하 여 프로젝트의 기본 컨트롤을 삭제 합니다. 자세한 내용은 [방법: 제거, 삭제 및 항목을 제외](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0ebzhwsk(v=vs.100))합니다.  
   
 3.  새 <xref:System.Windows.Forms.UserControl> 항목을 `MarqueeControlLibrary` 프로젝트입니다. 새 소스 파일 "MarqueeControl."의 기본 이름 지정  
   
-4.  사용 하 여 **솔루션 탐색기**에서 새 폴더 만들기를 `MarqueeControlLibrary` 프로젝트입니다. 자세한 내용은 [NIB: 방법: 새 프로젝트 항목 추가](https://msdn.microsoft.com/library/63d3e16b-de6e-4bb5-a0e3-ecec762201ce)합니다. 새 폴더의 이름을 "디자인"을 선택 합니다.  
+4.  사용 하 여 **솔루션 탐색기**에서 새 폴더 만들기를 `MarqueeControlLibrary` 프로젝트입니다. 자세한 내용은 [방법: 새 프로젝트 항목 추가](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))합니다. 새 폴더의 이름을 "디자인"을 선택 합니다.  
   
 5.  마우스 오른쪽 단추로 클릭 합니다 **디자인** 폴더 및 새 클래스를 추가 합니다. 소스 파일 "MarqueeControlRootDesigner."의 기본 이름 지정  
   
 6.  System.Design 어셈블리의 형식을 사용 하 여,이 참조를 추가 해야 합니다는 `MarqueeControlLibrary` 프로젝트입니다.  
   
     > [!NOTE]
-    >  System.Design 어셈블리를 사용 하려면 프로젝트가 정식 버전의.NET Framework,.NET Framework 4 클라이언트 프로필 아님를 대상으로 해야 합니다. 대상 프레임 워크를 변경 하려면을 참조 하세요 [방법:.NET Framework의 버전을 대상](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)합니다.  
+    >  System.Design 어셈블리를 사용 하려면 프로젝트가 정식 버전의.NET Framework,.NET Framework 4 클라이언트 프로필 아님를 대상으로 해야 합니다. 대상 프레임 워크를 변경 하려면 참조 [방법: 한 버전의 .NET Framework를 대상으로 지정](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).  
   
 ## <a name="referencing-the-custom-control-project"></a>사용자 지정 컨트롤 프로젝트 참조  
  사용 하 여는 `MarqueeControlTest` 프로젝트를 사용자 지정 컨트롤을 테스트 합니다. 에 대 한 프로젝트 참조를 추가 하면 테스트 프로젝트 사용자 지정 컨트롤을 인식 될는 `MarqueeControlLibrary` 어셈블리입니다.  
@@ -168,7 +168,7 @@ using MarqueeControlLibrary;
 5.  프로젝트를 빌드합니다.  
   
 ## <a name="setting-up-the-project-for-design-time-debugging"></a>디자인 타임 디버깅에 대 한 프로젝트 설정  
- 사용자 지정 디자인 타임 환경을 개발 하는 경우 디버그 하 여 컨트롤 및 구성 해야 합니다. 디자인 타임에 디버깅을 허용 하도록 프로젝트를 설정 하는 간단한 방법이 있습니다. 자세한 내용은 [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버깅](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)합니다.  
+ 사용자 지정 디자인 타임 환경을 개발 하는 경우 디버그 하 여 컨트롤 및 구성 해야 합니다. 디자인 타임에 디버깅을 허용 하도록 프로젝트를 설정 하는 간단한 방법이 있습니다. 자세한 내용은 [연습: 디자인 타임에 디버깅 사용자 지정 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)합니다.  
   
 #### <a name="to-set-up-the-project-for-design-time-debugging"></a>디자인 타임 디버깅을 위해 프로젝트를 설정 하려면  
   
@@ -219,9 +219,9 @@ using MarqueeControlLibrary;
 ## <a name="creating-a-child-control-for-your-custom-control"></a>사용자 지정 컨트롤의 자식 컨트롤 만들기  
  `MarqueeControl` 두 가지 유형의 자식 컨트롤을 호스트 하는: 합니다 `MarqueeBorder` 컨트롤 및 `MarqueeText` 컨트롤입니다.  
   
--   `MarqueeBorder`:이 컨트롤에는 가장자리 주위 "lights"의 테두리를 그립니다. 표시등 순서 대로 나타나도록 테두리 이동할 것입니다. 표시등는 속도 라는 속성에 의해 제어 됩니다 `UpdatePeriod`합니다. 다른 사용자 지정 속성을 여러 컨트롤의 모양의 다른 측면을 확인합니다. 두 가지 메서드를 호출 `StartMarquee` 고 `StopMarquee`, 애니메이션의 시작 및 중지 시기를 제어 합니다.  
+-   `MarqueeBorder`: 이 컨트롤에는 가장자리 주위 "lights"의 테두리를 그립니다. 표시등 순서 대로 나타나도록 테두리 이동할 것입니다. 표시등는 속도 라는 속성에 의해 제어 됩니다 `UpdatePeriod`합니다. 다른 사용자 지정 속성을 여러 컨트롤의 모양의 다른 측면을 확인합니다. 두 가지 메서드를 호출 `StartMarquee` 고 `StopMarquee`, 애니메이션의 시작 및 중지 시기를 제어 합니다.  
   
--   `MarqueeText`:이 컨트롤은 깜박이 문자열을 그립니다. 같은 합니다 `MarqueeBorder` 컨트롤에 텍스트를 깜박이 속도 의해 제어 됩니다는 `UpdatePeriod` 속성입니다. `MarqueeText` 컨트롤을 `StartMarquee` 및 `StopMarquee` 공통 된 메서드는 `MarqueeBorder` 컨트롤.  
+-   `MarqueeText`: 이 컨트롤은 깜박이 문자열을 그립니다. 같은 합니다 `MarqueeBorder` 컨트롤에 텍스트를 깜박이 속도 의해 제어 됩니다는 `UpdatePeriod` 속성입니다. `MarqueeText` 컨트롤을 `StartMarquee` 및 `StopMarquee` 공통 된 메서드는 `MarqueeBorder` 컨트롤.  
   
  디자인 타임에 `MarqueeControlRootDesigner` 이러한 두 가지 컨트롤 형식에 추가할 수 있습니다는 `MarqueeControl` 의 조합입니다.  
   
@@ -476,7 +476,7 @@ using MarqueeControlLibrary;
      [!code-vb[System.Windows.Forms.Design.DocumentDesigner#590](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/VB/marqueecontrolrootdesigner.vb#590)]  
   
 ## <a name="creating-a-custom-uitypeeditor"></a>사용자 지정 UITypeEditor 만들기  
- 사용자에 대 한 사용자 지정 디자인 타임 환경을 만들 때 속성 창 사용 하 여 사용자 지정 상호 작용을 만드는 것이 좋은 경우가 있습니다. 만들어이 수행할 수 있습니다는 <xref:System.Drawing.Design.UITypeEditor>합니다. 자세한 내용은 [방법: UI 형식 편집기 만들기](https://msdn.microsoft.com/library/292c6e33-8d85-4012-9b51-05835a6f6dfd)합니다.  
+ 사용자에 대 한 사용자 지정 디자인 타임 환경을 만들 때 속성 창 사용 하 여 사용자 지정 상호 작용을 만드는 것이 좋은 경우가 있습니다. 만들어이 수행할 수 있습니다는 <xref:System.Drawing.Design.UITypeEditor>합니다. 자세한 내용은 [방법: UI 형식 편집기 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fd3kt7d5(v=vs.120))합니다.  
   
  `MarqueeBorder` 컨트롤 속성 창의 여러 속성을 노출 합니다. 이러한 속성 중 두 가지 `MarqueeSpinDirection` 고 `MarqueeLightShape` 열거형으로 표시 됩니다. UI 형식 편집기를 사용에 설명 하는 `MarqueeLightShape` 속성을 연결 해야 합니다. <xref:System.Drawing.Design.UITypeEditor> 클래스.  
   
@@ -628,19 +628,19 @@ private void stopButton_Click(object sender, System.EventArgs e)
   
 -   추가 디자인 타임 환경을 사용자 지정 합니다. 보다 더 많은 속성을 숨기기를 시도할 수 있습니다 <xref:System.Windows.Forms.Control.Enabled%2A> 고 <xref:System.Windows.Forms.Control.Visible%2A>, 및 새 속성을 추가할 수 있습니다. 자식 컨트롤을 도킹 등의 일반적인 작업을 간소화 하기 위해 새 디자이너 동사를 추가 합니다.  
   
--   라이선스는 `MarqueeControl`합니다. 자세한 내용은 [방법: 라이선스 구성 요소 및 컨트롤](https://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57)합니다.  
+-   라이선스는 `MarqueeControl`합니다. 자세한 내용은 [방법: 구성 요소 및 컨트롤 라이선스](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fe8b1eh9(v=vs.120))합니다.  
   
 -   컨트롤은 직렬화 하는 방법 및 코드에 생성 되는 방식을 제어 합니다. 자세한 내용은 [동적 소스 코드 생성 및 컴파일](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.UserControl>  
- <xref:System.Windows.Forms.Design.ParentControlDesigner>  
- <xref:System.Windows.Forms.Design.DocumentDesigner>  
- <xref:System.ComponentModel.Design.IRootDesigner>  
- <xref:System.ComponentModel.Design.DesignerVerb>  
- <xref:System.Drawing.Design.UITypeEditor>  
- <xref:System.ComponentModel.BackgroundWorker>  
- [방법: 디자인 타임 기능을 활용하는 Windows Forms 컨트롤 만들기](https://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)  
- [디자인 타임 지원 확장](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
- [사용자 지정 디자이너](https://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)  
- [샘플 디자이너를.NET 셰이프 라이브러리:](http://windowsforms.net/articles/shapedesigner.aspx)
+## <a name="see-also"></a>참고 항목
+
+- <xref:System.Windows.Forms.UserControl>
+- <xref:System.Windows.Forms.Design.ParentControlDesigner>
+- <xref:System.Windows.Forms.Design.DocumentDesigner>
+- <xref:System.ComponentModel.Design.IRootDesigner>
+- <xref:System.ComponentModel.Design.DesignerVerb> 
+- <xref:System.Drawing.Design.UITypeEditor>
+- <xref:System.ComponentModel.BackgroundWorker>
+- [방법: 디자인 타임 기능을 활용 하는 Windows Forms 컨트롤 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))
+- [디자인 타임 지원 확장](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) 
+- [사용자 지정 디자이너](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h51z5c0x(v=vs.120))

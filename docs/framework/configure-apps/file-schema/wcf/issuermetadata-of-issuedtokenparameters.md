@@ -2,12 +2,12 @@
 title: '&lt;issuedTokenParameters&gt;의 &lt;issuerMetadata&gt;'
 ms.date: 03/30/2017
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
-ms.openlocfilehash: 82c04fe71ec67b2c539dae9c41eb35350c72d923
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 76956c54739219bbde78f378a12d59563ab785c4
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746516"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148749"
 ---
 # <a name="ltissuermetadatagt-of-ltissuedtokenparametersgt"></a>&lt;issuedTokenParameters&gt;의 &lt;issuerMetadata&gt;
 \<system.serviceModel>  
@@ -15,13 +15,13 @@ ms.locfileid: "32746516"
 \<customBinding>  
 \<바인딩 >  
 \<security>  
-\<r s >  
+\<issuedTokenParameters >  
 \<issuerMetadata >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<issuerMetaData address=String"/>  
+<issuerMetaData address="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -31,14 +31,14 @@ ms.locfileid: "32746516"
   
 |특성|설명|  
 |---------------|-----------------|  
-|address|필수 요소. 끝점의 주소를 지정하는 문자열입니다. 주소는 절대 URI이어야 합니다. 기본값은 빈 문자열입니다.|  
+|address|필수 요소. 엔드포인트의 주소를 지정하는 문자열입니다. 주소는 절대 URI이어야 합니다. 기본값은 빈 문자열입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
 |[\<headers>](../../../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md)|주소 헤더 컬렉션입니다.|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|한 끝점에서 다른 끝점과 메시지를 교환할 때 상대 끝점을 인증할 수 있도록 하는 ID입니다.|  
+|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|한 엔드포인트에서 다른 엔드포인트와 메시지를 교환할 때 상대 엔드포인트를 인증할 수 있도록 하는 ID입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -58,5 +58,5 @@ ms.locfileid: "32746516"
  [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
  [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [방법: SecurityBindingElement를 사용하여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
+ [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [사용자 지정 바인딩 보안](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

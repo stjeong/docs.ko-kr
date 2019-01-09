@@ -2,12 +2,12 @@
 title: '&lt;필터&gt;'
 ms.date: 03/30/2017
 ms.assetid: 37a87222-ec78-4728-8105-9ca1bd961f0c
-ms.openlocfilehash: af0821d6477ed7f3525cd0fe8d46f3699c48acb0
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: aae70fbe873eee10fcf95dcdd443dfa9ae6efb57
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32749191"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148970"
 ---
 # <a name="ltfiltersgt"></a>&lt;필터&gt;
 
@@ -20,21 +20,28 @@ ms.locfileid: "32749191"
 필터는 모든 XPath 구문을 지원하며, 구성 파일에 표시되는 순서대로 적용됩니다. 필터 구문에 오류가 있으면 구성 예외가 발생합니다.
 
 다음은 SOAP 헤더 섹션이 있는 메시지만 기록하는 필터 구성 방법에 대한 예제입니다.
-
-```xml
+  
+```xml  
 <messageLogging logEntireMessage="true"
                 logMalformedMessages="true"
                 logMessagesAtServiceLevel="true"
                 logMessagesAtTransportLevel="true"
-                maxMessagesToLog="420">  
-  <filters>  
-    <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">  
-      /soap:Envelope/soap:Headers  
-    </add>  
-  </filters>  
+                maxMessagesToLog="420">
+  <filters>
+    <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+      /soap:Envelope/soap:Headers
+    </add>
+  </filters>
 </messageLogging>
-```
+```  
+  
+## <a name="see-also"></a>참고 항목
 
-## <a name="see-also"></a>참고자료
-
- <xref:System.ServiceModel.Configuration.DiagnosticSection> <xref:System.ServiceModel.Diagnostics> <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> <xref:System.ServiceModel.Configuration.MessageLoggingElement> <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A> <xref:System.ServiceModel.Configuration.XPathMessageFilterElementCollection> <xref:System.ServiceModel.Configuration.XPathMessageFilterElement> <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> [메시지 로깅을 구성](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md) [ \<메시지 로깅 >](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
+ <xref:System.ServiceModel.Configuration.DiagnosticSection> <xref:System.ServiceModel.Diagnostics>
+ <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
+ <xref:System.ServiceModel.Configuration.MessageLoggingElement>
+ <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>
+ <xref:System.ServiceModel.Configuration.XPathMessageFilterElementCollection>
+ <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>
+ <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>
+ [메시지 로깅 구성](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md) [ \<messageLogging >](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)

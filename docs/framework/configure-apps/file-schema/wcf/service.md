@@ -2,15 +2,15 @@
 title: '&lt;서비스&gt;'
 ms.date: 03/30/2017
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
-ms.openlocfilehash: 6e83e988920d24c6fe7615e40334919caf21652e
-ms.sourcegitcommit: ff1d40507b3eb6e2185478e37c66c66be6de46f1
+ms.openlocfilehash: ef0ae70440323c1ede5deca60e88f29861760e68
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34059032"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145512"
 ---
 # <a name="ltservicegt"></a>&lt;서비스&gt;
-`service` 요소에는 WCF(Windows Communication Foundation) 서비스 설정이 포함되어 있습니다. 이 요소에는 서비스를 공개하는 끝점도 포함되어 있습니다.  
+`service` 요소에는 WCF(Windows Communication Foundation) 서비스 설정이 포함되어 있습니다. 이 요소에는 서비스를 공개하는 엔드포인트도 포함되어 있습니다.  
   
  \<system.ServiceModel>  
 \<services>  
@@ -19,9 +19,9 @@ ms.locfileid: "34059032"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<service behaviorConfiguration=String"  
-        name="String">  
-</service>  
+<service behaviorConfiguration="String"
+         name="String">
+</service>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -52,21 +52,20 @@ ms.locfileid: "34059032"
   
  `behaviorConfiguration` 요소도 선택적 항목입니다. 서비스가 사용하는 동작을 식별합니다. 이 특성에 지정된 동작은 동일한 구성 파일의 범위에 있는 동작에 연결되어야 합니다.  
   
- 각 서비스는 하나 이상의 끝점을 노출하는데, 여기에는 자체 주소 및 바인딩이 있습니다. 구성 파일 내에서 사용되는 모든 바인딩은 파일 범위 내에서 정의되어야 합니다. 바인딩은 `name` 및 `bindingConfiguration` 특성 조합을 통해 끝점에 연결됩니다. `name` 특성은 바인딩이 정의된 섹션에 대해 설명합니다. `bindingConfiguration` 특성은 바인딩 섹션 내에서 사용되는 구성을 정의합니다. 바인딩 섹션에서는 여러 개의 구성을 정의할 수 있습니다.  
+ 각 서비스는 하나 이상의 끝점을 노출하는데, 여기에는 자체 주소 및 바인딩이 있습니다. 구성 파일 내에서 사용되는 모든 바인딩은 파일 범위 내에서 정의되어야 합니다. 바인딩은 `name` 및 `bindingConfiguration` 특성 조합을 통해 엔드포인트에 연결됩니다. `name` 특성은 바인딩이 정의된 섹션에 대해 설명합니다. `bindingConfiguration` 특성은 바인딩 섹션 내에서 사용되는 구성을 정의합니다. 바인딩 섹션에서는 여러 개의 구성을 정의할 수 있습니다.  
   
 ## <a name="example"></a>예제  
  서비스 구성의 예제입니다.  
   
 ```xml  
-<service behaviorConfiguration="testChannelBehavior"   
-     name="HelloWorld">  
-     <endpoint   
-        address="/HelloWorld2/"  
-        name="test"  
-        bindingNamespace="http://www.cohowinery.com/"  
-        binding="basicHttpBinding"  
-        contract="IHelloWorld" />  
-</service>  
+<service behaviorConfiguration="testChannelBehavior"
+         name="HelloWorld">
+  <endpoint address="/HelloWorld2/"
+            name="test"
+            bindingNamespace="http://www.cohowinery.com/"
+            binding="basicHttpBinding"
+            contract="IHelloWorld" />
+</service>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

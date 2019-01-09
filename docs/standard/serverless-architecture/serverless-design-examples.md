@@ -4,18 +4,18 @@ description: 다양 한 일정 및 이벤트 기반 처리 파일 트리거를 �
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: cf46c601ac6aa401c7c37bd64c1f8981589ebd2e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d165746ff2f03b0edc59a9284052323a0c1fd05b
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53146714"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149679"
 ---
 # <a name="serverless-design-examples"></a>서버 리스 디자인 예제
 
 에 대 한 많은 디자인 패턴은 서버 리스 합니다. 이 섹션에서는 서버 리스를 사용 하는 몇 가지 일반적인 시나리오를 캡처합니다. 새로운 모든 예제에서는 서로 공통 되는 이벤트 트리거 및 비즈니스 논리의 기본 조합입니다.
 
-## <a name="scheduling"></a>예약
+## <a name="scheduling"></a>일정 예약
 
 작업을 예약 하는 것은 일반적인 함수입니다. 다음 다이어그램에는 적절 한 무결성 검사 되지 않은 레거시 데이터베이스를 보여 줍니다. 데이터베이스를 주기적으로 삭제 해야 합니다. 서버 리스 함수 잘못 된 데이터를 찾아서이 정리 합니다. 트리거 타이머 일정에 따라 코드를 실행 하는 경우
 
@@ -65,7 +65,7 @@ API 요청을 처리할 HTTP 호출에 의해 트리거되는 서버 리스 끝�
 
 ## <a name="stream-processing"></a>Stream 처리
 
-장치 및 센서를 실시간으로 종종 처리 해야 하는 데이터 스트림을 생성 합니다. 메시지 및 스트림에서 캡처할 수 있는 기술의 여러 가지 [Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs) 하 고 [IoT Hub](https://docs.microsoft.com/azure/iot-hub) 하 [Service Bus](/service-bus)합니다. 전송에 관계 없이 서버 리스는 이상적인 메커니즘이 들어오는 메시지 및 데이터 스트림을 처리 합니다. 서버는 대용량 데이터의 요구 사항에 맞게 신속 하 게 확장할 수 있습니다. 서버 리스 코드 데이터 및 구조화 된 형식으로 작업 및 분석에 대 한 출력을 구문 분석에 비즈니스 논리를 적용할 수 있습니다.
+장치 및 센서를 실시간으로 종종 처리 해야 하는 데이터 스트림을 생성 합니다. 메시지 및 스트림에서 캡처할 수 있는 기술의 여러 가지 [Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs) 하 고 [IoT Hub](https://docs.microsoft.com/azure/iot-hub) 하 [Service Bus](https://docs.microsoft.com/azure/service-bus)합니다. 전송에 관계 없이 서버 리스는 이상적인 메커니즘이 들어오는 메시지 및 데이터 스트림을 처리 합니다. 서버는 대용량 데이터의 요구 사항에 맞게 신속 하 게 확장할 수 있습니다. 서버 리스 코드 데이터 및 구조화 된 형식으로 작업 및 분석에 대 한 출력을 구문 분석에 비즈니스 논리를 적용할 수 있습니다.
 
 ![서버 리스 스트림 처리](./media/serverless-stream-processing.png)
 

@@ -2,12 +2,12 @@
 title: '&lt;localIssuer&gt;'
 ms.date: 03/30/2017
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-ms.openlocfilehash: cb5afb0e73ad0a07ea43f06915f4e477d7f8f985
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 7a48cbb3a1e17ac1fc9fa9f43301ef153cdb866c
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841555"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151885"
 ---
 # <a name="ltlocalissuergt"></a>&lt;localIssuer&gt;
 보안 토큰을 가져오는 데 사용할 로컬 발급자의 주소 및 바인딩을 지정합니다.  
@@ -23,9 +23,9 @@ endpointBehaviors 섹션
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<localIssuer address="string"  
-      binding="string"  
-      bindingConfiguration="string" />  
+<localIssuer address="String"
+             binding="String"
+             bindingConfiguration="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -59,22 +59,22 @@ endpointBehaviors 섹션
  다음 예제에서는 `address`, `binding` 및 `bindingConfiguration` 요소의 `localIssuer` 특성을 설정합니다.  
   
 ```xml  
-<system.serviceModel>  
- <behaviors>  
- <endpointBehaviors>  
-  <behavior name="MyEndpointBehavior">  
-   <clientCredentials>  
-    <issuedToken cacheIssuedTokens="false"   
-                 defaultKeyEntropyMode="ClientEntropy">  
-     <localIssuer address="net.tcp://cohowinery/tokens"   
-                  binding="netTcpBinding"  
-                  bindingConfiguration="myTcpBindingConfig" />  
-    </issuedToken>  
-   </clientCredentials>  
-  </behavior>  
-  </endpointBehaviors>  
-  </behaviors>  
-</system.serviceModel>  
+<system.serviceModel>
+  <behaviors>
+    <endpointBehaviors>
+      <behavior name="MyEndpointBehavior">
+        <clientCredentials>
+          <issuedToken cacheIssuedTokens="false"
+                       defaultKeyEntropyMode="ClientEntropy">
+            <localIssuer address="net.tcp://cohowinery/tokens"
+                         binding="netTcpBinding"
+                         bindingConfiguration="myTcpBindingConfig" />
+          </issuedToken>
+        </clientCredentials>
+      </behavior>
+    </endpointBehaviors>
+  </behaviors>
+</system.serviceModel>
 ```  
   
 ## <a name="see-also"></a>참고 항목  
@@ -88,5 +88,5 @@ endpointBehaviors 섹션
  [페더레이션 및 발급된 토큰](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
  [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
- [방법: 페더레이션 클라이언트 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
+ [방법: 페더레이션된 클라이언트 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
  [페더레이션 및 발급된 토큰](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
