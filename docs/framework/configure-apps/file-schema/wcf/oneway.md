@@ -2,12 +2,12 @@
 title: '&lt;oneWay&gt;'
 ms.date: 03/30/2017
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
-ms.openlocfilehash: f9a5631501b3879463606f526485314efd5eff2b
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5f3d534ee98100347acaa485e60a3c74f82ee0b9
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746724"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150580"
 ---
 # <a name="ltonewaygt"></a>&lt;oneWay&gt;
 사용자 지정 바인딩에 대한 패킷 라우팅 및 단방향 메서드를 사용하도록 설정합니다.  
@@ -21,15 +21,11 @@ ms.locfileid: "32746724"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<oneWay packetRoutable="Boolean">  
-        <channelPoolSettings  
-           idleTimeout"TimeSpan"  
-          leaseTimeout"TimeSpan"  
-          maxOutboundConnectionsPerEndpopint="Integer" />  
-```  
-  
-```xml  
-</oneWay>  
+<oneWay packetRoutable="Boolean">
+  <channelPoolSettings idleTimeout="TimeSpan"
+                       leaseTimeout="TimeSpan"
+                       maxOutboundConnectionsPerEndpopint="Integer" />
+</oneWay>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

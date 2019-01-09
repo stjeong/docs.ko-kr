@@ -2,12 +2,12 @@
 title: '&lt;comContracts&gt;'
 ms.date: 03/30/2017
 ms.assetid: 42e74148-223d-4888-a8ed-1d928527eb09
-ms.openlocfilehash: 297a28181de8ce6ed658afad950f25cced9f9cb7
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 26f17a331d69c38d720fcafe65c76f50c67def09
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47402791"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150788"
 ---
 # <a name="ltcomcontractsgt"></a>&lt;comContracts&gt;
 `comContracts` 구성 섹션에는 COM+ 통합 서비스 계약의 다양한 속성을 지정할 수 있게 해 주는 요소가 포함되어 있습니다.  
@@ -18,14 +18,13 @@ ms.locfileid: "47402791"
  예를 들어 다음 구성을 사용하여 서비스 계약의 네임스페이스 및 계약 이름과 세션 바인딩에 사용법을 적용할 옵션을 지정할 수 있습니다.  
   
 ```xml  
-<comContracts>  
-  <comContract  
-      contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
-      namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
-      name="_Broker"  
-      requireSession="true">  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"
+               namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"
+               name="_Broker"
+               requireSession="true">
+  </comContract>
+</comContracts>
 ```  
   
  지정된 네임스페이스와 계약 이름은 서비스가 초기화될 때 생성된 서비스 설명에 적용됩니다.  
@@ -41,5 +40,5 @@ ms.locfileid: "47402791"
  [\<persistableTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/persistabletypes.md)  
  [\<userDefinedType>](../../../../../docs/framework/configure-apps/file-schema/wcf/userdefinedtype.md)  
  [\<comContract>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontract.md)  
- [COM+ 응용 프로그램과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [방법: COM+ 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+ [COM+ 애플리케이션과 통합](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
+ [방법: COM + 서비스 설정 구성](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)

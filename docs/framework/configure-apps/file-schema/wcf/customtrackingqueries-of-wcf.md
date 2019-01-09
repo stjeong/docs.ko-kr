@@ -2,12 +2,12 @@
 title: WCF의 &lt;customTrackingQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: 14cfe47e-9935-4120-84f1-8f38de8ca4c1
-ms.openlocfilehash: 060e2b5c8efd51f6245a39bd9562a69f0111fd41
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f75c6bf50d30da5a136137c858a5cd96ce0783ff
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50202226"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150086"
 ---
 # <a name="ltcustomtrackingqueriesgt-of-wcf"></a>WCF의 &lt;customTrackingQueries&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "50202226"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -36,7 +36,7 @@ ms.locfileid: "50202226"
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
+</tracking>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -59,7 +59,7 @@ ms.locfileid: "50202226"
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>       
 - <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>       

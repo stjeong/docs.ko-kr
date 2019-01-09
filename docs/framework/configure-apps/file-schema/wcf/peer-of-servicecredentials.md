@@ -2,12 +2,12 @@
 title: '&lt;serviceCredentials&gt;의 &lt;peer&gt;'
 ms.date: 03/30/2017
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
-ms.openlocfilehash: 94f93a7955af3bff1c17e59a11af3fad85c9134d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: df2570a94e7d0c11228d0a72c938d871503d17ac
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514741"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152049"
 ---
 # <a name="ltpeergt-of-ltservicecredentialsgt"></a>&lt;serviceCredentials&gt;의 &lt;peer&gt;
 피어 노드에 대한 현재 자격 증명을 지정합니다.  
@@ -22,11 +22,11 @@ ms.locfileid: "43514741"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<peer>  
-  <certificate/>  
-  <peerAuthentication/>  
-  <messageSenderAuthentication/>  
-</peer>  
+<peer>
+  <certificate />
+  <peerAuthentication />
+  <messageSenderAuthentication />
+</peer>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -57,5 +57,5 @@ ms.locfileid: "43514741"
  [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
  [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
  [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [피어 채널 응용 프로그램 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)  
+ [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)  
  [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

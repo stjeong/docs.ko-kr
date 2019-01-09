@@ -2,12 +2,12 @@
 title: '&lt;httpDigest&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
-ms.openlocfilehash: 4f3edb4a525429bfc55c4e4cfaffbfc5726dcef8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2211c593090d697ae07350fcf7ac491b9d23e2d0
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43521989"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150143"
 ---
 # <a name="lthttpdigestgt-element"></a>&lt;httpDigest&gt; 요소
 서비스에게 클라이언트를 인증하는 데 사용되는 다이제스트 형식 자격 증명을 지정합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "43521989"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<digest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />  
+<digest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -32,7 +32,7 @@ ms.locfileid: "43521989"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`impersonationLevel`|클라이언트가 서버에 전달하는 가장 기본 설정을 지정합니다. 클라이언트에서 선택하는 가장 모드는 서버에 적용되지 않습니다. 유효한 값은 다음과 같습니다.<br /><br /> 식별: 서버 id 및 클라이언트의 권한을 가져올 수 있지만 클라이언트를 가장할 수 없습니다.<br />-Impersonation: 서버는 로컬 시스템에서 클라이언트의 보안 컨텍스트를 가장할 수 있습니다.<br />-Delegation: 서버 원격 시스템에서 클라이언트의 보안 컨텍스트를 가장할 수 있습니다.<br />-Anonymous: 서버 가장 없거나 클라이언트를 식별 합니다.<br />-None: 가장 수준이 할당 되지 않습니다.<br /><br /> 기본값은 Identification입니다. 이 특성은 <xref:System.Security.Principal.TokenImpersonationLevel> 형식입니다.|  
+|`impersonationLevel`|클라이언트가 서버에 전달하는 가장 기본 설정을 지정합니다. 클라이언트에서 선택하는 가장 모드는 서버에 적용되지 않습니다. 유효한 값은 다음과 같습니다.<br /><br /> 식별: 서버 id 및 클라이언트의 권한을 가져올 수는 있지만 클라이언트를 가장할 수 없습니다.<br />가장 합니다. 서버는 로컬 시스템에서 클라이언트의 보안 컨텍스트를 가장할 수 있습니다.<br />-위임 합니다. 서버는 원격 시스템에서 클라이언트의 보안 컨텍스트를 가장할 수 있습니다.<br />익명: 서버를 가장 하거나 클라이언트를 식별할 수 없습니다.<br />-None. 가장 수준이 지정되지 않습니다.<br /><br /> 기본값은 Identification입니다. 이 특성은 <xref:System.Security.Principal.TokenImpersonationLevel> 형식입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

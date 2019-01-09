@@ -2,15 +2,15 @@
 title: '&lt;rsa&gt;'
 ms.date: 03/30/2017
 ms.assetid: ae1f2267-e40d-42ff-8abf-06ab7067bdb9
-ms.openlocfilehash: dbeb08e6475d4825ad442b0b264e9003bb6fc53d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 8005fd67b92cb14d82b525e7c990f9d58aef7b58
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32749932"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145343"
 ---
 # <a name="ltrsagt"></a>&lt;rsa&gt;
-이 ID를 가진 끝점과 연결되는 보안 WCF 클라이언트는 서버가 나타내는 클레임 중에 이 ID 생성에 사용된 RSA 공개 키가 포함된 클레임이 있음을 확인합니다.  
+이 ID를 가진 엔드포인트와 연결되는 보안 WCF 클라이언트는 서버가 나타내는 클레임 중에 이 ID 생성에 사용된 RSA 공개 키가 포함된 클레임이 있음을 확인합니다.  
   
  \<identity>  
 \<rsa >  
@@ -18,7 +18,7 @@ ms.locfileid: "32749932"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<rsa value = "String" />  
+<rsa value="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -42,15 +42,15 @@ ms.locfileid: "32749932"
 ## <a name="remarks"></a>설명  
  RSA 검사를 사용하면 RSA 키 또는 생성된 고유 RSA 키 값에 따라 하나의 인증서만 사용하도록 제한할 수 있습니다. 이렇게 하면 RSA 키 값이 변경된 경우 기존 클라이언트와 작동하지 않는 서비스 대신 특정 RSA 키에 대한 인증을 강화할 수 있습니다.  
   
- 유효성을 검사할 서비스를 클라이언트 id를 사용 하는 방법에 대 한 자세한 내용은 참조 [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
+ Id를 사용 하 여 서비스 클라이언트를 유효성을 검사 하는 방법에 대 한 자세한 내용은 참조 하세요. [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
   
 ## <a name="example"></a>예제  
  다음 구성 코드에서는 서버를 인증하는 데 사용되는 X.509 인증서의 공개 키 값을 지정합니다.  
   
 ```xml  
-<identity>  
-  <rsa value = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>  
-</identity>  
+<identity>
+  <rsa value="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+</identity>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

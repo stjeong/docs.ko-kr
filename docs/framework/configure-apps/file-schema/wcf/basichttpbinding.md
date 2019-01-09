@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - basicHttpBinding Element
 ms.assetid: 85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3
-ms.openlocfilehash: c20271fd5b053d82786adec8dd5a7d4fd4c5ad5a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ac88a2dcb8a47876b7b8a54abc4615c851172a90
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53131055"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149956"
 ---
 # <a name="ltbasichttpbindinggt"></a>&lt;basicHttpBinding&gt;
 WCF(Windows Communication Foundation) 서비스가 ASMX 기반 웹 서비스 및 클라이언트, 그리고 WS-I Basic Profile 1.1을 따르는 기타 서비스와 통신할 수 있는 엔드포인트를 구성 및 노출하는 데 사용할 수 있는 바인딩을 나타냅니다.  
@@ -21,38 +21,38 @@ WCF(Windows Communication Foundation) 서비스가 ASMX 기반 웹 서비스 및
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<basicHttpBinding>  
-   <binding allowCookies="Boolean"  
-            bypassProxyOnLocal="Boolean"  
-            closeTimeout="TimeSpan"   
-            envelopeVersion="None/Soap11/Soap12"  
-            hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-            maxBufferPoolSize="Integer"  
-            maxBufferSize="Integer"  
-            maxReceivedMessageSize="Integer"  
-            messageEncoding="Text/Mtom"  
-            name="string"   
-            openTimeout="TimeSpan"   
-            proxyAddress="URI"  
-            receiveTimeout="TimeSpan"  
-            sendTimeout="TimeSpan"  
-            textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-            useDefaultWebProxy="Boolean">
-       <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">  
-           <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"  
-                      proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
-                      realm="string" />  
-           <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                     clientCredentialType="UserName/Certificate"/>  
-       </security>  
-       <readerQuotas maxArrayLength="Integer"  
-                     maxBytesPerRead="Integer"  
-                     maxDepth="Integer"
-                     maxNameTableCharCount="Integer"
-                     maxStringContentLength="Integer" />  
-   </binding>  
-</basicHttpBinding>  
+<basicHttpBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           envelopeVersion="None/Soap11/Soap12"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="Integer"
+           maxBufferSize="Integer"
+           maxReceivedMessageSize="Integer"
+           messageEncoding="Text/Mtom"
+           name="String"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
+           useDefaultWebProxy="Boolean">
+    <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">
+      <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"
+                 proxyCredentialType="None/Basic/Digest/Ntlm/Windows"
+                 realm="String" />
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               clientCredentialType="UserName/Certificate" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</basicHttpBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -103,75 +103,72 @@ WCF(Windows Communication Foundation) 서비스가 ASMX 기반 웹 서비스 및
  다음 예제에서는 첫 번째 및 두 번째 세대 웹 서비스와의 HTTP 통신 및 최대 상호 운용성을 제공하는 <xref:System.ServiceModel.BasicHttpBinding>의 사용 방법을 보여 줍니다. 클라이언트 및 서비스 구성 파일에 바인딩이 지정됩니다. 바인딩 형식은 `binding` 요소의 `<endpoint>` 특성을 사용하여 지정합니다. 기본 바인딩을 구성하고 일부 설정을 변경하려면 바인딩 구성을 정의해야 합니다. 엔드포인트는 서비스에 대한 다음 구성 코드에 표시된 것처럼 `bindingConfiguration` 요소의 `<endpoint>` 특성을 사용하여 이름으로 바인딩 구성을 참조해야 합니다.  
   
 ```xml  
-<system.serviceModel>   
-  <services>  
-    <service   
-        type="Microsoft.ServiceModel.Samples.CalculatorService"  
-        behaviorConfiguration="CalculatorServiceBehavior">  
-       <endpoint address=""  
-             binding="basicHttpBinding"  
-             bindingConfiguration="Binding1"   
-             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-    </service>  
-  </services>  
-  <bindings>  
-     <basicHttpBinding>  
-        <binding name="Binding1"   
-               hostNameComparisonMode="StrongWildcard"   
-               receiveTimeout="00:10:00"  
-               sendTimeout="00:10:00"  
-               openTimeout="00:10:00"  
-               closeTimeout="00:10:00"  
-               maxReceivedMessageSize="65536"   
-               maxBufferSize="65536"   
-               maxBufferPoolSize="524288"   
-               transferMode="Buffered"   
-               messageEncoding="Text"   
-               textEncoding="utf-8"  
-               bypassProxyOnLocal="false"  
-               useDefaultWebProxy="true" >  
-              <security mode="None" />  
-         </binding>  
-     </basicHttpBinding>  
-  </bindings>  
-</system.serviceModel>  
+<system.serviceModel>
+  <services>
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"
+             behaviorConfiguration="CalculatorServiceBehavior">
+      <endpoint address=""
+                binding="basicHttpBinding"
+                bindingConfiguration="Binding1"
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />
+    </service>
+  </services>
+  <bindings>
+    <basicHttpBinding>
+      <binding name="Binding1"
+               hostNameComparisonMode="StrongWildcard"
+               receiveTimeout="00:10:00"
+               sendTimeout="00:10:00"
+               openTimeout="00:10:00"
+               closeTimeout="00:10:00"
+               maxReceivedMessageSize="65536"
+               maxBufferSize="65536"
+               maxBufferPoolSize="524288"
+               transferMode="Buffered"
+               messageEncoding="Text"
+               textEncoding="utf-8"
+               bypassProxyOnLocal="false"
+               useDefaultWebProxy="true">
+        <security mode="None" />
+      </binding>
+    </basicHttpBinding>
+  </bindings>
+</system.serviceModel>
 ```  
   
 ## <a name="example"></a>예제  
  [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)]부터는 바인딩 및 동작에 이름이 필요하지 않습니다. 바인딩의 이름과 끝점 주소에서 bindingConfiguration을 제거 하 여 이전 예제의 기능을 수행할 수 있습니다.  
   
 ```xml  
-<system.serviceModel>   
-  <services>  
-    <service   
-        type="Microsoft.ServiceModel.Samples.CalculatorService"  
-        behaviorConfiguration="CalculatorServiceBehavior">  
-       <endpoint address=""  
-             binding="basicHttpBinding"  
-             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-    </service>  
-  </services>  
-  <bindings>  
-     <basicHttpBinding>  
-        <binding   
-               hostNameComparisonMode="StrongWildcard"   
-               receiveTimeout="00:10:00"  
-               sendTimeout="00:10:00"  
-               openTimeout="00:10:00"  
-               closeTimeout="00:10:00"  
-               maxReceivedMessageSize="65536"   
-               maxBufferSize="65536"   
-               maxBufferPoolSize="524288"   
-               transferMode="Buffered"   
-               messageEncoding="Text"   
-               textEncoding="utf-8"  
-               bypassProxyOnLocal="false"  
-               useDefaultWebProxy="true" >  
-              <security mode="None" />  
-         </binding>  
-     </basicHttpBinding>  
-  </bindings>  
-</system.serviceModel>  
+<system.serviceModel>
+  <services>
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"
+             behaviorConfiguration="CalculatorServiceBehavior">
+      <endpoint address=""
+                binding="basicHttpBinding"
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />
+    </service>
+  </services>
+  <bindings>
+    <basicHttpBinding>
+      <binding hostNameComparisonMode="StrongWildcard"
+               receiveTimeout="00:10:00"
+               sendTimeout="00:10:00"
+               openTimeout="00:10:00"
+               closeTimeout="00:10:00"
+               maxReceivedMessageSize="65536"
+               maxBufferSize="65536"
+               maxBufferPoolSize="524288"
+               transferMode="Buffered"
+               messageEncoding="Text"
+               textEncoding="utf-8"
+               bypassProxyOnLocal="false"
+               useDefaultWebProxy="true">
+        <security mode="None" />
+      </binding>
+    </basicHttpBinding>
+  </bindings>
+</system.serviceModel>
 ```  
   
  기본 구성 및 이름 없는 바인딩 및 동작에 대 한 자세한 내용은 참조 하세요. [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) 하 고 [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)합니다.  

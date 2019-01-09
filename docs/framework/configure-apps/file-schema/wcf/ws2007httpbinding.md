@@ -2,12 +2,12 @@
 title: '&lt;ws2007HttpBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
-ms.openlocfilehash: 95af699592492d4abfdf7867e8a207db7490ccdf
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 62a330eb2e8b71234d2ee683f3354834e3946bff
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086832"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150762"
 ---
 # <a name="ltws2007httpbindinggt"></a>&lt;ws2007HttpBinding&gt;
 올바른 버전의 <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession> 및 <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> 바인딩 요소를 지원하는 상호 운용 가능한 바인딩을 정의합니다.  
@@ -19,40 +19,42 @@ ms.locfileid: "49086832"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<ws2007HttpBinding>  
-    <binding   
-        allowCookies="Boolean"  
-        bypassProxyOnLocal="Boolean"  
-        closeTimeout="TimeSpan"  
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        messageEncoding="Text/Mtom"   
-                name="string"  
-        openTimeout="TimeSpan"   
-        proxyAddress="URI"  
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-  
-textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-        transactionFlow="Boolean"  
-        useDefaultWebProxy="Boolean">  
-        <reliableSession ordered="Boolean"  
-           inactivityTimeout="TimeSpan"  
-           enabled="Boolean" />  
-        <security mode="Message/None/Transport/TransportWithCredential">  
-           <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                realm="string"   
-                                />  
-          <message clientCredentialType ="Certificate/IssuedToken/None/UserName/Windows"  
-           negotiateServiceCredential="Boolean"  
-           algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-           establishSecurityContext="Boolean"   
-           negotiateServiceCredential="Boolean"/>  
-        </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</ws2007HttpBinding>  
+<ws2007HttpBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxReceivedMessageSize="Integer"
+           messageEncoding="Text/Mtom"
+           name="string"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transactionFlow="Boolean"
+           useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <security mode="Message/None/Transport/TransportWithCredential">
+      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 realm="string" />
+        <message clientCredentialType ="Certificate/IssuedToken/None/UserName/Windows"
+                 negotiateServiceCredential="Boolean"
+                 algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+                 establishSecurityContext="Boolean"
+                 negotiateServiceCredential="Boolean" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</ws2007HttpBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -74,7 +76,7 @@ textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
 |`proxyAddress`|HTTP 프록시의 주소를 지정하는 URI입니다. `useSystemWebProxy`가 `true`일 경우 이 설정은 `null`이어야 합니다. 기본값은 `null`입니다.|  
 |`receiveTimeout`|받기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
 |`sendTimeout`|보내기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
-|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용할 문자 집합 인코딩을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `UnicodeFffeTextEncoding`: 유니코드 Big Endian 인코딩.<br />-   `Utf16TextEncoding`: 16 비트 인코딩입니다.<br />-   `Utf8TextEncoding`: 8 비트 인코딩입니다.<br /><br /> 기본값은 `Utf8TextEncoding`입니다.<br /><br /> 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|`textEncoding`|바인딩에서 메시지를 내보내는 데 사용할 문자 집합 인코딩을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   `UnicodeFffeTextEncoding`: 유니코드 Big Endian 인코딩<br />-   `Utf16TextEncoding`: 16 비트 인코딩입니다.<br />-   `Utf8TextEncoding`: 8 비트 인코딩입니다.<br /><br /> 기본값은 `Utf8TextEncoding`입니다.<br /><br /> 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
 |`transactionFlow`|바인딩에서 WS-트랜잭션 이동을 지원할지 여부를 지정하는 값입니다. 기본값은 `false`입니다.|  
 |`useDefaultWebProxy`|시스템의 자동 구성된 HTTP 프록시 사용 여부를 지정하는 값입니다. 기본값은 `true`입니다.|  
   
@@ -98,40 +100,39 @@ textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
 ## <a name="example"></a>예제  
   
 ```xml  
-<configuration>  
-    <system.ServiceModel>  
-        <bindings>  
-            <ws2007HttpBinding>  
-                <binding   
-                    closeTimeout="00:00:10"  
-                    openTimeout="00:00:20"   
-                    receiveTimeout="00:00:30"  
-                    sendTimeout="00:00:40"  
-                    bypassProxyOnLocal="false"  
-                    transactionFlow="false"   
-                    hostNameComparisonMode="WeakWildcard"  
-                    maxReceivedMessageSize="1000"  
-                    messageEncoding="Mtom"   
-                    proxyAddress="http://www.contoso.com"  
-                    textEncoding="utf-16"  
-                    useDefaultWebProxy="false">  
-                    <reliableSession ordered="false"  
-                         inactivityTimeout="00:02:00"  
-                         enabled="true" />  
-                    <security mode="Transport">  
-                         <transport clientCredentialType="Digest"  
-                            proxyCredentialType="None"  
-                            realm="someRealm" />  
-                         <message clientCredentialType="Windows"  
-                            negotiateServiceCredential="false"  
-                            algorithmSuite="Aes128"   
-                            defaultProtectionLevel="None" />  
-                    </security>  
-                </binding>  
-           </ws2007HttpBinding>  
-        </bindings>  
-    </system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <ws2007HttpBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 bypassProxyOnLocal="false"
+                 transactionFlow="false"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://www.contoso.com"
+                 textEncoding="utf-16"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="Transport">
+            <transport clientCredentialType="Digest"
+                       proxyCredentialType="None"
+                       realm="someRealm" />
+            <message clientCredentialType="Windows"
+                     negotiateServiceCredential="false"
+                     algorithmSuite="Aes128"
+                     defaultProtectionLevel="None" />
+          </security>
+        </binding>
+      </ws2007HttpBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

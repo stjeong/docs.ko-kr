@@ -2,12 +2,12 @@
 title: '&lt;endToEndTracing&gt;'
 ms.date: 03/30/2017
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-ms.openlocfilehash: 855f579241dfd495e7f8603ce3bd57aa2556ca2d
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 78a69256a391e97ff1962eea923f09115c4ebadd
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32753471"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150112"
 ---
 # <a name="ltendtoendtracinggt"></a>&lt;endToEndTracing&gt;
 서비스 응용 프로그램 실행 중에 종단 간 추적의 다양한 측면을 사용하거나 사용하지 않도록 설정할 수 있는 구성 요소입니다.  
@@ -19,13 +19,13 @@ ms.locfileid: "32753471"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<system.serviceModel>  
-   <diagnostics>  
-       <endToEndTracing activityTracing="Boolean"  
-          messageFlowTracing="Boolean"  
-          propagateActivity="Boolean" />  
-   </diagnostics>  
-</system.serviceModel>  
+<system.serviceModel>
+  <diagnostics>
+    <endToEndTracing activityTracing="Boolean"
+                     messageFlowTracing="Boolean"
+                     propagateActivity="Boolean" />
+  </diagnostics>
+</system.serviceModel>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

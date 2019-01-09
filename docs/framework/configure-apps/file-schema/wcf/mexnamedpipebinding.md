@@ -2,12 +2,12 @@
 title: '&lt;mexNamedPipeBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
-ms.openlocfilehash: 85b92fc193d66a97c75eae096117f32a36d413a9
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: a5dac6c5b4409f71e8360c174061d4d12ffac5d2
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837575"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151516"
 ---
 # <a name="ltmexnamedpipebindinggt"></a>&lt;mexNamedPipeBinding&gt;
 명명된 파이프를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바인딩의 설정을 지정합니다.  
@@ -19,15 +19,14 @@ ms.locfileid: "48837575"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<mexNamedPipeBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       name="string"   
-       openTimeout="TimeSpan"   
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan">  
-   </binding>  
-</mexNamedPipeBinding>  
+<mexNamedPipeBinding>
+  <binding closeTimeout="TimeSpan"
+           name="string"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan">
+  </binding>
+</mexNamedPipeBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -55,7 +54,7 @@ ms.locfileid: "48837575"
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexNamedPipeBinding%2A>  
  <xref:System.ServiceModel.Configuration.MexNamedPipeBindingElement>  
- [방법: 구성 파일을 사용하여 서비스의 메타데이터 게시](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
+ [방법: 구성 파일을 사용 하는 서비스의 메타 데이터 게시](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
  [사용자 지정 바인딩을 통해 메타데이터 게시 및 검색](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)  
  [메타데이터](../../../../../docs/framework/wcf/feature-details/metadata.md)  
  [바인딩](../../../../../docs/framework/wcf/bindings.md)  

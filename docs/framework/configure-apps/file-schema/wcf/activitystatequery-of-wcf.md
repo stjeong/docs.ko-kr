@@ -2,12 +2,12 @@
 title: WCF의 &lt;activityStateQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: d6cdc04b-6f3a-4097-a623-ee4a1be3b5c4
-ms.openlocfilehash: a0dae6b90659bd3f53386459513abf92f25b005b
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 6d55a53a6344922cee0d42c26102d5f0bbf46f67
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "49308319"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151791"
 ---
 # <a name="ltactivitystatequerygt-of-wcf"></a>WCF의 &lt;activityStateQuery&gt;
 
@@ -31,20 +31,20 @@ ms.locfileid: "49308319"
         <activityStateQueries>
           <activityStateQuery activityName="String">
             <arguments>
-              <argument name="String"/>
+              <argument name="String" />
             </arguments>
             <states>
-              <state name="String"/>
+              <state name="String" />
             </states>
             <variables>
-              <variable name="String"/>
+              <variable name="String" />
             </variables>
           </activityStateQuery>
         </activityStateQueries>
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
+</tracking>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -76,20 +76,20 @@ ms.locfileid: "49308319"
 ActivityStateQuery의 한 가지 고유한 특징은 워크플로 실행을 추적할 때 데이터를 추출하는 기능입니다. 이 기능은 추적 레코드 사후 실행에 액세스할 때 추가 컨텍스트를 제공합니다. 사용할 수는 [ \<인수 >](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/arguments.md)를 [ \<상태 >](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md) 고 [ \<상태 >](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md) 변수 또는 인수를 추출 하는 요소 워크플로의 모든 활동입니다. 다음 예제에서는 변수 및 인수를 추출 하는 활동 상태 쿼리를 때 활동의 `Closed` 추적 레코드를 내보냅니다. ActivityStateRecord 사용해 서만 추출할 수 있으므로 구독 하는 추적 내에서 변수 및 인수를 사용 하 여 프로 파일링 [ \<activityStateQuery >](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/activitystatequery.md)합니다.  
   
 ```xml  
-<activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <variables>  
-    <variable name="FromAddress"/>  
-  </variables>  
-  <arguments>  
-    <argument name="Result"/>  
-  </arguments>  
-</activityStateQuery>  
+<activityStateQuery activityName="SendEmailActivity">
+  <states>
+    <state name="Closed" />
+  </states>
+  <variables>
+    <variable name="FromAddress" />
+  </variables>
+  <arguments>
+    <argument name="Result" />
+  </arguments>
+</activityStateQuery>
 ```  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement>
 - <xref:System.Activities.Tracking.ActivityStateQuery>

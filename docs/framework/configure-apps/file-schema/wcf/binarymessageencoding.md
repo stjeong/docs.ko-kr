@@ -2,12 +2,12 @@
 title: '&lt;binaryMessageEncoding&gt;'
 ms.date: 03/30/2017
 ms.assetid: e4ae3cd4-6b67-4ce1-af4b-9400e0a38dba
-ms.openlocfilehash: b3b359c9d3e80186e0296e6fbb0ba5683210f2a6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2e29721104400c8a0352ebf5cd292689de0d6b14
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510248"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150127"
 ---
 # <a name="ltbinarymessageencodinggt"></a>&lt;binaryMessageEncoding&gt;
 통신 중에 WCF(Windows Communication Foundation) 메시지를 이진 형식으로 인코딩하는 이진 메시지 인코더를 정의합니다.  
@@ -21,10 +21,10 @@ ms.locfileid: "43510248"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<binaryMessageEncoding   
-      maxReadPoolSize="Integer"  
-   maxSessionSize="Integer"   
-   maxWritePoolSize="Integer"   messageVersion="Soap11Addressing10/Soap12Addressing10" />  
+<binaryMessageEncoding maxReadPoolSize="Integer"
+                       maxSessionSize="Integer"
+                       maxWritePoolSize="Integer"
+                       messageVersion="Soap11Addressing10/Soap12Addressing10" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -52,16 +52,16 @@ ms.locfileid: "43510248"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|사용자 지정 바인딩의 모든 바인딩 기능을 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- 인코딩은 메시지를 바이트 시퀀스로 변형하는 프로세스입니다. 디코딩은 역프로세스입니다. WCF(Windows Communication Foundation)에서는 SOAP 메시지에 대해 텍스트, 이진 및 MTOM(Message Transmission Optimization Mechanism)이라는 세 가지 형식의 인코딩을 제공합니다.  
+ 인코딩은 메시지를 바이트 시퀀스로 변형하는 프로세스입니다. 디코딩은 역프로세스입니다. Windows Communication Foundation (WCF)에 세 가지 유형의 SOAP 메시지에 대 한 인코딩을 포함 됩니다. 텍스트, 이진 및 (MTOM) Message Transmission Optimization Mechanism 합니다.  
   
  `binaryMessageEncoding` 요소는 XML에 대한 .NET 이진 형식을 지정하며, 사용할 SOAP 및 WS-Addressing 버전과 문자 인코딩을 지정하는 옵션을 제공합니다. 이진 메시지 인코더는 통신 중에 WCF(Windows Communication Foundation) 메시지를 이진 형식으로 인코딩합니다. 이 인코딩은 전송 속도가 매우 빠르지만 WS-* 표준과 호환되지 않습니다.  
   
 ## <a name="example"></a>예제  
   
 ```xml  
-<binaryMessageEncoding maxReadPoolSize="211"  
-   maxWritePoolSize="2132"  
-   maxSessionSize="3141" />  
+<binaryMessageEncoding maxReadPoolSize="211"
+                       maxWritePoolSize="2132"
+                       maxSessionSize="3141" />
 ```  
   
 ## <a name="see-also"></a>참고 항목  

@@ -2,12 +2,12 @@
 title: '&lt;persistenceProvider&gt;'
 ms.date: 03/30/2017
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
-ms.openlocfilehash: 3c7fd74a84184ddbf8cc8db90141174ed84e5774
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: ba02977a7df44931ae195040949e9a8eb0c141b5
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32746659"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152023"
 ---
 # <a name="ltpersistenceprovidergt"></a>&lt;persistenceProvider&gt;
 사용할 지속성 공급자 구현 형식 및 지속성 작업에 사용할 제한 시간을 지정합니다.  
@@ -21,8 +21,8 @@ ms.locfileid: "32746659"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<persistenceProvider persistenceOperationTimeout="TimeSpan"  
-   type="String" />  
+<persistenceProvider persistenceOperationTimeout="TimeSpan"
+                     type="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -33,7 +33,7 @@ ms.locfileid: "32746659"
 |특성|설명|  
 |---------------|-----------------|  
 |persistenceOperationTimeout|지속성 작업에 사용되는 제한 시간을 지정하는 <xref:System.TimeSpan> 값입니다. 기본값은 "00: 00:30"입니다.|  
-|type|사용할 지속성 공급자 팩터리의 형식을 지정하는 문자열입니다.|  
+|형식|사용할 지속성 공급자 팩터리의 형식을 지정하는 문자열입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

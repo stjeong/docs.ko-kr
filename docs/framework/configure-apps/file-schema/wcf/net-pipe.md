@@ -1,43 +1,43 @@
 ---
-title: '&lt;net.pipe&gt;'
+title: '&lt;net. pipe&gt;'
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: 71291b1163ffb4e5fe13ff18d88d47f7d2193497
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 8a525f0684902841a2be75823932935e7533ba8b
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359366"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151152"
 ---
-# <a name="ltnetpipegt"></a>&lt;net.pipe&gt;
+# <a name="ltnetpipegt"></a>&lt;net. pipe&gt;
 명명된 파이프 연결의 수명을 관리하고 명명된 파이프을 통해 수신되는 활성화 요청을 처리하는 Named Pipe Activation Service의 구성 설정을 지정합니다.  
   
  \<system.serviceModel.activation>  
-\<net.pipe >  
+\<net. pipe >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<configuration>  
-   <system.serviceModel.activation>  
-       <net.pipe maxPendingAccepts="Integer"  
-                    maxPendingConnections="Integer"  
-          receiveTimeout="TimeSpan">  
-          <allowAccounts>  
-             // LocalSystem account  
-             <add securityIdentifier="S-1-5-18"/>  
-             // LocalService account  
-             <add securityIdentifier="S-1-5-19"/>  
-             // Administrators account  
-             <add securityIdentifier="S-1-5-20"/>  
-             // Network Service account  
-             <add securityIdentifier="S-1-5-32-544" />  
-             // IIS_IUSRS account (Vista only)  
-             <add securityIdentifier="S-1-5-32-568"/>  
-           </allowAccounts>  
-       </net.pipe>  
-   </system.serviceModel.activation>  
-</configuration>  
+<configuration>
+  <system.serviceModel.activation>
+    <net.pipe maxPendingAccepts="Integer"
+              maxPendingConnections="Integer"
+              receiveTimeout="TimeSpan">
+      <allowAccounts>
+        <!-- LocalSystem account -->
+        <add securityIdentifier="S-1-5-18" />
+        <!-- LocalService account -->
+        <add securityIdentifier="S-1-5-19" />
+        <!-- Administrators account -->
+        <add securityIdentifier="S-1-5-20" />
+        <!-- Network Service account -->
+        <add securityIdentifier="S-1-5-32-544" />
+        <!-- IIS_IUSRS account (Vista only) -->
+        <add securityIdentifier="S-1-5-32-568" />
+      </allowAccounts>
+    </net.pipe>
+  </system.serviceModel.activation>
+</configuration>
 ```  
   
 ## <a name="type"></a>형식  
@@ -58,7 +58,7 @@ ms.locfileid: "33359366"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|포함 하는 구성 요소의 컬렉션을 `securityIdentifier` 는 WCF 서비스를 호스팅하고 공유 서비스에 대 한 연결 액세스가 부여 된 프로세스에 대 한 사용자 계정을 지정 하는 특성입니다.|  
+|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|포함 된 구성 요소의 컬렉션을 `securityIdentifier` WCF 서비스를 호스팅하고 공유 서비스에 대 한 연결 액세스 권한이 부여 된 프로세스에 대 한 사용자 계정을 지정 하는 특성입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   

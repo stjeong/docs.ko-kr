@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1b612c7e-2381-4a7c-b07a-77030415f2a3
-ms.openlocfilehash: 74c0e8ac025d69f0fd1ee7d451033165a1c8e615
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 4afa3f46532e365760c0dd5a9e1880a82e5ae82b
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611857"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150637"
 ---
 # <a name="how-to-create-a-custom-tracking-participant"></a>방법: 사용자 지정 추적 참가자 만들기
 워크플로 추적을 통해 워크플로 실행 상태를 볼 수 있습니다. 워크플로 런타임은 워크플로 수명 주기 이벤트, 활동 수명 주기 이벤트, 책갈피 다시 시작 및 오류를 설명하는 추적 레코드를 내보냅니다. 이러한 추적 레코드는 추적 참가자에서 사용됩니다. Windows WF (Workflow Foundation) 추적 레코드 이벤트 추적에 대 한 Windows (ETW) 이벤트로 기록 하는 표준 추적 참가자를 포함 합니다. 표준 참가자가 요구 사항에 맞지 않는 경우 사용자 지정 추적 참가자를 작성할 수도 있습니다. 이 자습서 단계에서는 `WriteLine` 활동의 출력을 캡처하여 사용자에게 표시될 수 있도록 하는 추적 프로필 및 사용자 지정 추적 참가자를 만드는 방법에 대해 설명합니다.  
@@ -92,7 +92,7 @@ ms.locfileid: "53611857"
     }  
     ```  
   
-     추적 프로필이 지정되어 있지 않은 경우 기본 추적 프로필이 사용됩니다. 기본 추적 프로필이 사용될 경우 모든 `ActivityStates`에 대해 추적 레코드가 내보내집니다. 여기서는 `WriteLine` 활동의 수명 주기 동안 텍스트를 한 번만 캡처하면 되므로 `ActivityStates.Executing` 상태의 텍스트만 추출합니다. [추적 프로필을 만들고 추적 참가자를 등록 하](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_TrackingProfile)를 지정 하는 추적 프로필 생성 됩니다 `WriteLine` `ActivityStates.Executing` 추적 레코드가 내보내집니다.  
+     추적 프로필이 지정되어 있지 않은 경우 기본 추적 프로필이 사용됩니다. 기본 추적 프로필이 사용될 경우 모든 `ActivityStates`에 대해 추적 레코드가 내보내집니다. 여기서는 `WriteLine` 활동의 수명 주기 동안 텍스트를 한 번만 캡처하면 되므로 `ActivityStates.Executing` 상태의 텍스트만 추출합니다. [추적 프로필을 만들고 추적 참가자를 등록 하](#to-create-the-tracking-profile-and-register-the-tracking-participant)를 지정 하는 추적 프로필 생성 됩니다 `WriteLine` `ActivityStates.Executing` 추적 레코드가 내보내집니다.  
   
 ## <a name="to-create-the-tracking-profile-and-register-the-tracking-participant"></a>추적 프로필을 만들고 추적 참가자를 등록하려면  
   
@@ -310,7 +310,7 @@ ms.locfileid: "53611857"
     }  
     ```  
   
-## <a name="to-build-and-run-the-application"></a>응용 프로그램을 빌드하고 실행하려면  
+## <a name="to-build-and-run-the-application"></a>애플리케이션을 빌드하고 실행하려면  
   
 1.  Ctrl+Shift+B를 눌러 응용 프로그램을 빌드합니다.  
   

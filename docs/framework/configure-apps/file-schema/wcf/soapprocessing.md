@@ -2,12 +2,12 @@
 title: '&lt;soapProcessing&gt;'
 ms.date: 03/30/2017
 ms.assetid: e8707027-e6b8-4539-893d-3cd7c13fbc18
-ms.openlocfilehash: 296993f1a91a6da93f01610357f35dac4cfab9e6
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 1eef89290b4fda08dd7145c0615edde2fa56676c
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47210149"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152010"
 ---
 # <a name="ltsoapprocessinggt"></a>&lt;soapProcessing&gt;
 
@@ -18,19 +18,19 @@ ms.locfileid: "47210149"
 &nbsp;&nbsp;&nbsp;&nbsp;**\<endpointBehaviors >**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<동작 >**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<soapProcessing >**
-
-## <a name="syntax"></a>구문
-
-```xml
+  
+## <a name="syntax"></a>구문  
+  
+```xml  
 <soapProcessing processMessages="true|false" />
-```
-
-## <a name="attributes-and-elements"></a>특성 및 요소
-
-다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
-
-### <a name="attributes"></a>특성
-
+```  
+  
+## <a name="attributes-and-elements"></a>특성 및 요소  
+  
+다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+  
+### <a name="attributes"></a>특성  
+  
 |                   | 설명 |
 | ----------------- | ----------- |
 | `processMessages` | SOAP 메시지 버전 간에 메시지가 마샬링되어야 하는지 여부를 지정하는 부울 값입니다. |

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DataContractSerializer
 - KnownTypes
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-ms.openlocfilehash: 5f2a05fdf2e38923205092b232995a70a87f7e87
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c79c8e8db2a4ea4526000bcbe336d1e664f9c4c2
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752769"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150957"
 ---
 # <a name="ltdatacontractserializergt"></a>&lt;DataContractSerializer&gt;
 <xref:System.Runtime.Serialization.DataContractSerializer>에 대한 구성 데이터를 포함합니다. 이 요소는 서로 다른 두 가지 계층 구조에서 발생합니다. 하나는 다음 스키마 계층 구조 부분에 나열되고 다른 하나는 설명 부분에 나열됩니다.  
@@ -26,8 +26,8 @@ ms.locfileid: "32752769"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<dataContractSerializer ignoreExtensionDataObject="Boolean"  
-   maxItemsInObjectGraph="Integer" />  
+<dataContractSerializer ignoreExtensionDataObject="Boolean"
+                        maxItemsInObjectGraph="Integer" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -51,7 +51,7 @@ ms.locfileid: "32752769"
 |[\<system.runtime.serialization>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-runtime-serialization.md)|<xref:System.Runtime.Serialization> 네임스페이스 섹션의 루트 요소를 나타내며 <xref:System.Runtime.Serialization.DataContractSerializer>의 옵션을 설정하기 위한 요소를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이는 두 번째 계층 구조는이 항목의 소개 부분에서 설명 했 듯이 \<X509Extension > 요소가 발생 합니다.  
+ 이는 두 번째 계층 구조는이 항목의 소개에서 설명 했 듯이 \<X509Extension > 요소가 발생 합니다.  
   
  [\<system.runtime.serialization>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-runtime-serialization.md)  
   

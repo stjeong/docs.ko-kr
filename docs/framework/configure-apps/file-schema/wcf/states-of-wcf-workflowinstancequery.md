@@ -2,12 +2,12 @@
 title: WCF의 &lt;states&gt;, &lt;workflowInstanceQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: d17f7525-8035-4e9e-85a0-4cddae59f85d
-ms.openlocfilehash: a6c54f0903f30b5a7c3147cf4b874516a766c2b8
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: d67f4143619b72826f8fef4adbf66ff8782e4a34
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121946"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151442"
 ---
 # <a name="ltstatesgt-of-wcf-ltworkflowinstancequerygt"></a>WCF의 &lt;states&gt;, &lt;workflowInstanceQuery&gt;
 
@@ -25,7 +25,7 @@ ms.locfileid: "49121946"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -33,7 +33,7 @@ ms.locfileid: "49121946"
         <workflowInstanceQueries>
           <workflowInstanceQuery>
             <states>
-              <state name="Name"/>
+              <state name="Name" />
             </states>
           </workflowInstanceQuery>
         </workflowInstanceQueries>
@@ -41,7 +41,7 @@ ms.locfileid: "49121946"
     </trackingProfile>
   </profiles>
 </tracking>
-```
+```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
@@ -77,11 +77,11 @@ ms.locfileid: "49121946"
 |Idle|워크플로 인스턴스가 유휴 상태입니다.|  
 |Persisted|워크플로 인스턴스가 지속되었습니다.|  
 |Resumed|워크플로 인스턴스가 다시 시작되었습니다.|  
-|Started|워크플로 인스턴스가 시작되었습니다.|  
+|시작됨|워크플로 인스턴스가 시작되었습니다.|  
 |UnhandledException|워크플로 인스턴스에서 처리되지 않은 예외가 발생했습니다.|  
 |Unloaded|워크플로 인스턴스가 언로드되었습니다.|  
 |Canceled|워크플로 인스턴스가 취소되었습니다.|  
-|Suspended|워크플로 인스턴스가 일시 중단된 경우|  
+|일시 중단됨|워크플로 인스턴스가 일시 중단된 경우|  
 |Terminated|워크플로 인스턴스가 종료됩니다.|  
 |Unsuspended|워크플로 인스턴스의 일시 중단이 해제됩니다.|  
   
@@ -90,13 +90,13 @@ ms.locfileid: "49121946"
 다음 구성은 이 쿼리를 사용하여 `Started` 인스턴스 상태에 대한 워크플로 인스턴스 수준 추적 레코드를 구독합니다.  
   
 ```xml  
-<workflowInstanceQueries>  
-    <workflowInstanceQuery>  
-      <states>  
-        <state name="Started"/>  
-      </states>  
-    </workflowInstanceQuery>  
-</workflowInstanceQueries>  
+<workflowInstanceQueries>
+  <workflowInstanceQuery>
+    <states>
+      <state name="Started" />
+    </states>
+  </workflowInstanceQuery>
+</workflowInstanceQueries>
 ```  
   
 ## <a name="see-also"></a>참고자료  

@@ -2,12 +2,12 @@
 title: '&lt;system.runtime.serialization&gt;'
 ms.date: 03/30/2017
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
-ms.openlocfilehash: 6ffd4057028adcd123086173a05164eb5d2622f3
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 7cda0918ec14f9065ab1aea2479a14c8d224fcf8
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748502"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150554"
 ---
 # <a name="ltsystemruntimeserializationgt"></a>&lt;system.runtime.serialization&gt;
 <xref:System.Runtime.Serialization> 네임스페이스 섹션의 루트 요소를 나타내며 <xref:System.Runtime.Serialization.DataContractSerializer>의 옵션을 설정하기 위한 요소를 포함합니다.  
@@ -17,20 +17,20 @@ ms.locfileid: "32748502"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<configuration>  
-  <system.runtime.serialization>  
-    <dataContractSerializer ignoreExtensionDataObject="Boolean"  
-      maxItemsInObjectGraph="Integer">  
-      <declaredTypes>  
-        <add type="String ">  
-          <knownType type="String">  
-             <parameter index="Integer"/>  
-          </knownType>  
-        </add>  
-      </declaredTypes>  
-    <dataContractSerializer>  
-  </system.runtime.serialization>  
-</configuration>  
+<configuration>
+  <system.runtime.serialization>
+    <dataContractSerializer ignoreExtensionDataObject="Boolean"
+                            maxItemsInObjectGraph="Integer">
+      <declaredTypes>
+        <add type="String">
+          <knownType type="String">
+            <parameter index="Integer" />
+          </knownType>
+        </add>
+      </declaredTypes>
+    <dataContractSerializer>
+  </system.runtime.serialization>
+</configuration>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  

@@ -1,15 +1,15 @@
 ---
-title: '&lt;discoveryClient&gt;'
+title: '&lt;DiscoveryClient&gt;'
 ms.date: 03/30/2017
 ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb
-ms.openlocfilehash: 8c69104b9eb1097ef5dc94c9aae7352d4949668f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 9aef599ebf8068a383fd093b126a6bde1670b291
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32753169"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151400"
 ---
-# <a name="ltdiscoveryclientgt"></a>&lt;discoveryClient&gt;
+# <a name="ltdiscoveryclientgt"></a>&lt;DiscoveryClient&gt;
 클라이언트 응용 프로그램에서 런타임에 검색 가능 서비스를 자동으로 검색하고 해당 주소를 찾을 수 있도록 하는 사용자 지정 바인딩을 만들기 위한 구성 요소입니다.  
   
 \<system.serviceModel>  
@@ -21,17 +21,20 @@ ms.locfileid: "32753169"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<discoveryClient discoveryEndpoint="String" >
-  <findCriteria duration="TimeSpan" maxResults="Integer" scopeMatchBy="Uri">
+<discoveryClient discoveryEndpoint="String">
+  <findCriteria duration="TimeSpan"
+                maxResults="Integer"
+                scopeMatchBy="Uri">
     <contractTypeNames>
-      <add name="String" namespace="String" />
-    <contractTypeNames>
+      <add name="String"
+           namespace="String" />
+    </contractTypeNames>
     <extensions />
     <scopes>
       <add scope="URI"/>
     </scopes>
   </findCriteria>
-</discoveryClient>  
+</discoveryClient>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -41,13 +44,13 @@ ms.locfileid: "32753169"
   
 |특성|설명|  
 |---------------|-----------------|  
-|discoveryEndpoint|클라이언트 응용 프로그램에서 런타임에 검색 가능한 서비스를 자동으로 검색하고 해당 주소를 찾을 수 있도록 하는 검색 끝점의 이름을 포함하는 문자열입니다.|  
+|discoveryEndpoint|클라이언트 응용 프로그램에서 런타임에 검색 가능한 서비스를 자동으로 검색하고 해당 주소를 찾을 수 있도록 하는 검색 엔드포인트의 이름을 포함하는 문자열입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<d a r d >](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|클라이언트 응용 프로그램에서 검색 서비스를 찾기 위해 사용하는 조건 집합을 제공하는 구성 요소입니다. 기준을 검색 조건 (찾으려는 서비스 지정)으로 그룹화 할 수 및 찾기 종료 조건 (검색 지속 기간).|  
+|[\<standardEndpoints >](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|클라이언트 응용 프로그램에서 검색 서비스를 찾기 위해 사용하는 조건 집합을 제공하는 구성 요소입니다. 조건 (찾으려는 서비스 지정) 하는 검색 조건으로 그룹화 할 수 있습니다 및 찾기 종료 조건 (검색 지속 기간).|  
   
 ### <a name="parent-elements"></a>부모 요소  
   

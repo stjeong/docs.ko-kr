@@ -2,12 +2,12 @@
 title: '&lt;filters&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
-ms.openlocfilehash: 2a26a94c01fdb04b8a9e2d381a28cc909bbdac8f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: fe9ce8bc2a0efb9e20800189cd9f948d5e6a2232
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32754612"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150749"
 ---
 # <a name="ltaddgt-of-ltfiltersgt"></a>&lt;filters&gt;의 &lt;add&gt;
 로깅할 메시지 종류를 지정하는 XPath 필터입니다.  
@@ -21,9 +21,9 @@ ms.locfileid: "32754612"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<filters>  
-   <add filter="String"/>  
-</filters>  
+<filters>
+  <add filter="String" />
+</filters>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -42,7 +42,7 @@ ms.locfileid: "32754612"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<필터 >](../../../../../docs/framework/configure-apps/file-schema/wcf/filters.md)|로깅할 메시지 종류를 제어하는 데 사용되는 XPath 필터 컬렉션을 포함합니다.|  
+|[\<필터>](../../../../../docs/framework/configure-apps/file-schema/wcf/filters.md)|로깅할 메시지 종류를 제어하는 데 사용되는 XPath 필터 컬렉션을 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
  필터는 전송 계층에서만 적용됩니다(`logMessagesAtTransportLevel` = `true`). 서비스 수준 및 잘못된 형식의 메시지 로깅은 필터의 영향을 받지 않습니다.  
@@ -57,15 +57,17 @@ ms.locfileid: "32754612"
  다음은 SOAP 헤더 섹션이 있는 메시지만 기록하는 필터 구성 방법에 대한 예제입니다.  
   
 ```xml  
-<messageLogging logEntireMessage="true"  
-     logMalformedMessages="true" logMessagesAtServiceLevel="true"  
-     logMessagesAtTransportLevel="true" maxMessagesToLog="420">  
-     <filters>  
-        <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">  
-                        /soap:Envelope/soap:Headers  
-        </add>  
-     </filters>  
-</messageLogging>  
+<messageLogging logEntireMessage="true"
+                logMalformedMessages="true"
+                logMessagesAtServiceLevel="true"
+                logMessagesAtTransportLevel="true"
+                maxMessagesToLog="420">
+  <filters>
+    <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+      /soap:Envelope/soap:Headers
+    </add>
+  </filters>
+</messageLogging>
 ```  
   
 ## <a name="see-also"></a>참고 항목  
