@@ -2,12 +2,12 @@
 title: '&lt;serviceThrottling&gt;'
 ms.date: 03/30/2017
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
-ms.openlocfilehash: b0f5197bf4e9017007f29f86048756b43e3b15fb
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 000124c8d0dda81f99668cd330f7cc97c2520464
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32750169"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145265"
 ---
 # <a name="ltservicethrottlinggt"></a>&lt;serviceThrottling&gt;
 WCF(Windows Communication Foundation) 서비스의 스로틀 메커니즘을 지정합니다.  
@@ -21,9 +21,9 @@ WCF(Windows Communication Foundation) 서비스의 스로틀 메커니즘을 지
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<serviceThrottling maxConcurrentCalls="Integer"  
-    maxConcurrentInstances="Integer"  
-    maxConcurrentSessions="Integer" />  
+<serviceThrottling maxConcurrentCalls="Integer"
+                   maxConcurrentInstances="Integer"
+                   maxConcurrentSessions="Integer" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -52,20 +52,20 @@ WCF(Windows Communication Foundation) 서비스의 스로틀 메커니즘을 지
  특성 값에 도달할 때마다 추적이 기록되며 첫 번째 추적이 경고로 기록됩니다.  
   
 ## <a name="example"></a>예제  
- 다음 구성 예제에서는 서비스가 최대 동시 호출 수를 2로 제한하고 최대 동시 인스턴스 수를 10으로 제한하도록 지정합니다. 이 예제를 실행 하는의 자세한 예제를 보려면 [제한](../../../../../docs/framework/wcf/samples/throttling.md)합니다.  
+ 다음 구성 예제에서는 서비스가 최대 동시 호출 수를 2로 제한하고 최대 동시 인스턴스 수를 10으로 제한하도록 지정합니다. 이 예제를 실행 하는 자세한 예제를 보려면 [제한](../../../../../docs/framework/wcf/samples/throttling.md)합니다.  
   
 ```xml  
-<behaviors>   
-  <serviceBehaviors>   
-    <behavior name="CalculatorServiceBehavior">   
-      <serviceDebug includeExceptionDetailInFaults="False" />   
-      <serviceMetadata httpGetEnabled="True"/>   
-      <!-- Specify throttling behavior -->  
-      <serviceThrottling maxConcurrentCalls="2"   
-           maxConcurrentInstances="10"/>   
-    </behavior>  
-  </serviceBehaviors>  
-</behaviors>  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorServiceBehavior">
+      <serviceDebug includeExceptionDetailInFaults="False" />
+      <serviceMetadata httpGetEnabled="True" />
+      <!-- Specify throttling behavior -->
+      <serviceThrottling maxConcurrentCalls="2"
+                         maxConcurrentInstances="10" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

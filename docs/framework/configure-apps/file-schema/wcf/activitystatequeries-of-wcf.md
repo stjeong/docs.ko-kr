@@ -2,12 +2,12 @@
 title: WCF의 &lt;activityStateQueries&gt;
 ms.date: 10/08/2018
 ms.assetid: 9e45db49-ed85-4fdf-bd65-0d5477e31823
-ms.openlocfilehash: 081dc297912ed5735dd51111936b85b61f463d2d
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 2dabfdd248006de60b5e84e739f78e03f364dde3
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123243"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146188"
 ---
 # <a name="ltactivitystatequeriesgt-of-wcf"></a>WCF의 &lt;activityStateQueries&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "49123243"
 
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -32,13 +32,13 @@ ms.locfileid: "49123243"
         <activityStateQueries>
           <activityStateQuery activityName="String">
             <arguments>
-              <argument name="String"/>
+              <argument name="String" />
             </arguments>
             <states>
-              <state name="String"/>
+              <state name="String" />
             </states>
             <variables>
-              <variable name="String"/>
+              <variable name="String" />
             </variables>
           </activityStateQuery>
         </activityStateQueries>
@@ -68,7 +68,7 @@ ms.locfileid: "49123243"
 |-------------|-----------------|
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection>    
 - <xref:System.Activities.Tracking.ActivityStateQuery>    

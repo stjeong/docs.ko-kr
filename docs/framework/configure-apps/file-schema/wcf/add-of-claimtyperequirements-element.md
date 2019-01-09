@@ -2,12 +2,12 @@
 title: '&lt;claimTypeRequirements&gt; 요소의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3234cd45-1478-468e-8b19-5c50815c4786
-ms.openlocfilehash: 88e78db824d969c303fc5d494d4884c4d00284e1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 7f86073d0ecce353c63f31fd28c4bfeffb2411ed
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745411"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145551"
 ---
 # <a name="ltaddgt-of-ltclaimtyperequirementsgt-element"></a>&lt;claimTypeRequirements&gt; 요소의 &lt;add&gt;
 페더레이션 자격 증명에 표시되어야 하는 필수 클레임 및 선택적 클레임의 형식을 지정합니다. 예를 들어, 서비스는 특정 집합의 클레임 형식이어야 하는 들어오는 자격 증명에 대한 요구 사항을 기술합니다.  
@@ -23,10 +23,10 @@ ms.locfileid: "32745411"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<claimTypeRequirements>  
-      <add claimType="URI"  
-        isOptional="Boolean" />  
-</claimTypeRequirements>  
+<claimTypeRequirements>
+  <add claimType="URI"
+       isOptional="Boolean" />
+</claimTypeRequirements>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -55,23 +55,21 @@ ms.locfileid: "32745411"
  다음 구성은 두 개의 클레임 형식 요구 사항을 보안 바인딩에 추가합니다.  
   
 ```xml  
-<bindings>  
-    <wsFederationHttpBinding>  
-      <binding name="myFederatedBinding">  
-        <security mode="Message">  
-          <message issuedTokenType="urn:oasis:names:tc:SAML:1.0:assertion">  
-            <claimTypeRequirements>  
-              <add claimType=  
-"http://schemas.microsoft.com/ws/2005/05/identity/claims/EmailAddress"/>  
-              <add claimType=  
-"http://schemas.microsoft.com/ws/2005/05/identity/claims/UserName"    
-optional="true" />  
-            </claims>  
-          </message>  
-        </security>  
-      </binding>  
-    </wsFederationHttpBinding>  
-</bindings>  
+<bindings>
+  <wsFederationHttpBinding>
+    <binding name="myFederatedBinding">
+      <security mode="Message">
+        <message issuedTokenType="urn:oasis:names:tc:SAML:1.0:assertion">
+          <claimTypeRequirements>
+            <add claimType="http://schemas.microsoft.com/ws/2005/05/identity/claims/EmailAddress" />
+            <add claimType="http://schemas.microsoft.com/ws/2005/05/identity/claims/UserName"
+                 optional="true" />
+          </claimTypeRequirements>
+        </message>
+      </security>
+    </binding>
+  </wsFederationHttpBinding>
+</bindings>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

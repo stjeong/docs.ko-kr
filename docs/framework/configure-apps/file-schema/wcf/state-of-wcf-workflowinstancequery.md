@@ -2,12 +2,12 @@
 title: WCF의 &lt;state&gt;, &lt;workflowInstanceQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-ms.openlocfilehash: 427cba7a51bfb908171e476cd703c6a40fd6e144
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 168a6980e955f602ee60bff26461f06cb16c836a
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49123217"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145928"
 ---
 # <a name="ltstategt-of-wcf-ltworkflowinstancequerygt"></a>WCF의 &lt;state&gt;, &lt;workflowInstanceQuery&gt;
 추적 레코드가 만들어질 때 추적된 워크플로 인스턴스에서 구독된 상태의 컬렉션을 나타냅니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "49123217"
   
 ## <a name="syntax"></a>구문  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -34,15 +34,15 @@ ms.locfileid: "49123217"
         <workflowInstanceQueries>
           <workflowInstanceQuery>
             <states>
-              <state name="Name"/>
+              <state name="Name" />
             </states>
           </workflowInstanceQuery>
         </workflowInstanceQueries>
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
+</tracking>
+```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
@@ -70,7 +70,7 @@ ms.locfileid: "49123217"
   
 가능한 상태 값은 다음 표에 설명 되어 있습니다.
   
-|시스템 상태|설명|  
+|상태|설명|  
 |-----------|-----------------|  
 |Aborted|워크플로 인스턴스가 중단되었습니다.|  
 |Completed|워크플로 인스턴스가 완료되었습니다.|  
@@ -78,11 +78,11 @@ ms.locfileid: "49123217"
 |Idle|워크플로 인스턴스가 유휴 상태입니다.|  
 |Persisted|워크플로 인스턴스가 지속되었습니다.|  
 |Resumed|워크플로 인스턴스가 다시 시작되었습니다.|  
-|Started|워크플로 인스턴스가 시작되었습니다.|  
+|시작됨|워크플로 인스턴스가 시작되었습니다.|  
 |UnhandledException|워크플로 인스턴스에서 처리되지 않은 예외가 발생했습니다.|  
 |Unloaded|워크플로 인스턴스가 언로드되었습니다.|  
 |Canceled|워크플로 인스턴스가 취소되었습니다.|  
-|Suspended|워크플로 인스턴스가 일시 중단된 경우|  
+|일시 중단됨|워크플로 인스턴스가 일시 중단된 경우|  
 |Terminated|워크플로 인스턴스가 종료됩니다.|  
 |Unsuspended|워크플로 인스턴스의 일시 중단이 해제됩니다.|  
   
@@ -90,17 +90,17 @@ ms.locfileid: "49123217"
 
 다음 구성은 이 쿼리를 사용하여 `Started` 인스턴스 상태에 대한 워크플로 인스턴스 수준 추적 레코드를 구독합니다.  
   
-```xml
+```xml  
 <workflowInstanceQueries>
-  <workflowInstanceQuery>  
-    <states>  
-      <state name="Started"/>  
-    </states>  
-  </workflowInstanceQuery>  
+  <workflowInstanceQuery>
+    <states>
+      <state name="Started" />
+    </states>
+  </workflowInstanceQuery>
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>

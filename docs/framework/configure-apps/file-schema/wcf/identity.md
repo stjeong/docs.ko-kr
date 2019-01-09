@@ -2,12 +2,12 @@
 title: '&lt;identity&gt;'
 ms.date: 03/30/2017
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.openlocfilehash: 74c88df867efa82d48693a3df86b4c7813c40eba
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8d4074319a10abc1ce4aafe15e3b51381398c39c
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200048"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146513"
 ---
 # <a name="ltidentitygt"></a>&lt;identity&gt;
 ID 요소를 사용하면 클라이언트 개발자가 서비스에 필요한 ID를 디자인 타임에 지정할 수 있습니다. 클라이언트와 서비스 간의 핸드셰이크 프로세스에서 Windows Communication Foundation (WCF) 인프라는 되도록 예상 되는 서비스가이 요소의 값과 일치의 id 및 인증 될 수 있습니다. 자세한 내용은 [서비스 Id 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)합니다.  
@@ -19,18 +19,18 @@ ID 요소를 사용하면 클라이언트 개발자가 서비스에 필요한 ID
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<identity>  
-    <certificate encodedValue="String"/>  
-    <certificateReference findValue="String"   
-       isChainIncluded="Boolean"  
-       storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-       storeLocation="LocalMachine/CurrentUser"  
-       X509FindType= Enumeration./>  
-    <dns value="String"/>  
-    <rsa value="String"/>  
-    <servicePrincipalName value="String"/>  
-    <usePrincipalName value="String"/>  
-</identity>  
+<identity>
+  <certificate encodedValue="String" />
+  <certificateReference findValue="String"
+                        isChainIncluded="Boolean"
+                        storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                        storeLocation="LocalMachine/CurrentUser"
+                        X509FindType="Enumeration" />
+  <dns value="String" />
+  <rsa value="String" />
+  <servicePrincipalName value="String" />
+  <usePrincipalName value="String" />
+</identity>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -66,4 +66,4 @@ ID 요소를 사용하면 클라이언트 개발자가 서비스에 필요한 ID
  <xref:System.ServiceModel.EndpointAddress>  
  <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
  [서비스 ID 및 인증](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [엔드포인트: 주소, 바인딩 및 계약](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+ [끝점: 주소, 바인딩 및 계약](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

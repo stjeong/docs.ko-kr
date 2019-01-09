@@ -2,15 +2,15 @@
 title: 활성화를 위한 &lt;diagnostics&gt;
 ms.date: 03/30/2017
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
-ms.openlocfilehash: 4e5332eed87ded51cebcd614f45cbc8e80e570fb
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 28f051a7ab06dbc1b40f804c56071818eb37e88b
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32747933"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54144979"
 ---
 # <a name="ltdiagnosticsgt-for-activation"></a>활성화를 위한 &lt;diagnostics&gt;
-Windows Communication Foundation (WCF) 리스너의 진단 기능을 구성합니다.  
+Windows Communication Foundation (WCF) 수신기의 진단 기능을 구성합니다.  
   
  \<system.serviceModel.activation>  
 \<진단 >  
@@ -18,11 +18,11 @@ Windows Communication Foundation (WCF) 리스너의 진단 기능을 구성합�
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<configuration>  
-   <system.serviceModel.activation>  
-       <diagnostics performanceCountersEnabled="Boolean" />  
-   </system.serviceModel.activation>  
-</configuration>  
+<configuration>
+  <system.serviceModel.activation>
+    <diagnostics performanceCountersEnabled="Boolean" />
+  </system.serviceModel.activation>
+</configuration>
 ```  
   
 ## <a name="type"></a>형식  

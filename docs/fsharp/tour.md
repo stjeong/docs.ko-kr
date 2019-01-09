@@ -2,12 +2,12 @@
 title: F# 둘러보기
 description: F# 코드 샘플을 사용 하 여이 자습서에서 언어 프로그래밍의 주요 기능 중 일부를 검토 합니다.
 ms.date: 11/06/2018
-ms.openlocfilehash: 32bf892e97b29fcaf426791ef9ada15c9c35b5ae
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 72ecb9e71e5d039f5a62f74ad594fac82269f304
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143750"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145525"
 ---
 # <a name="tour-of-f"></a>F# 둘러보기 #
 
@@ -17,7 +17,7 @@ F#에 두 가지 기본 개념이 있습니다: 함수 및 형식입니다.  이
 
 ## <a name="executing-the-code-online"></a>온라인에서 코드를 실행합니다.
 
-없는 경우 F# 컴퓨터에 설치를 실행할 수 있습니다 사용 하 여 온라인 샘플의 모든 합니다 [페이블 REPL](http://fable.io/repl/)합니다. 페이블 언어는 F# 브라우저에서 직접 실행 합니다. REPL에서 나오는 예제를 보려는 체크 아웃 **샘플 > 알아보기 > 둘러보기 F#**  페이블 REPL.의 왼쪽 메뉴 모음에서
+없는 경우 F# 컴퓨터에 설치를 실행할 수 있습니다 사용 하 여 온라인 샘플의 모든 합니다 [페이블 REPL](https://fable.io/repl/)합니다. 페이블 언어는 F# 브라우저에서 직접 실행 합니다. REPL에서 나오는 예제를 보려는 체크 아웃 **샘플 > 알아보기 > 둘러보기 F#**  페이블 REPL.의 왼쪽 메뉴 모음에서
 
 ## <a name="functions-and-modules"></a>함수 및 모듈
 

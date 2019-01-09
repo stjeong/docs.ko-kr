@@ -2,28 +2,28 @@
 title: '&lt;serviceActivations&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
-ms.openlocfilehash: 1a25ad517e26e037c588bb14844e38147e251d96
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b40127d531926f103f3e367c8721e8f5ff8e1a99
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32745827"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151542"
 ---
 # <a name="ltaddgt-of-ltserviceactivationsgt"></a>&lt;serviceActivations&gt;의 &lt;add&gt;
-Windows Communication Foundation (WCF) 서비스 형식에 매핑되 가상 서비스 활성화 설정을 정의할 수 있도록 하는 구성 요소입니다. .svc 파일 없이도 WAS/IIS에서 호스트되는 서비스를 활성화할 수 있습니다.  
+Windows Communication Foundation (WCF) 서비스 형식에 매핑되는 가상 서비스 활성화 설정을 정의할 수 있는 구성 요소입니다. .svc 파일 없이도 WAS/IIS에서 호스트되는 서비스를 활성화할 수 있습니다.  
   
  \<system.ServiceModel>  
-\<ServiceHostingEnvironment >  
+\<serviceHostingEnvironment >  
   
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <serviceActivations>  
-      <add factory="String"  
-           service="String"/>  
-   </serviceActivations>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+    <serviceActivations>
+      <add factory="String"
+           service="String" />
+  </serviceActivations>
+</serviceHostingEnvironment>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -44,21 +44,21 @@ Windows Communication Foundation (WCF) 서비스 형식에 매핑되 가상 서�
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<ServiceHostingEnvironment >](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|활성화 설정을 설명하는 구성 섹션입니다.|  
+|[\<serviceHostingEnvironment >](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|활성화 설정을 설명하는 구성 섹션입니다.|  
   
 ## <a name="remarks"></a>설명  
  다음 예제에서는 web.config 파일 내에서 활성화 설정을 구성하는 방법을 보여 줍니다.  
   
 ```xml  
-<configuration>  
-  <system.serviceModel>  
-    <serviceHostingEnvironment>  
-      <serviceActivations>  
-        <add service="GreetingService"/>  
-      </serviceActivations>  
-    </serviceHostingEnvironment>  
-  </system.serviceModel>  
-</configuration>  
+<configuration>
+  <system.serviceModel>
+    <serviceHostingEnvironment>
+      <serviceActivations>
+        <add service="GreetingService" />
+      </serviceActivations>
+    </serviceHostingEnvironment>
+  </system.serviceModel>
+</configuration>
 ```  
   
  이 구성을 사용하여 .svc 파일을 사용하지 않고도 GreetingService를 활성화할 수 있습니다.  

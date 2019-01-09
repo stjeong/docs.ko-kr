@@ -2,12 +2,12 @@
 title: '&lt;transactionFlow&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
-ms.openlocfilehash: c708098676e5634281e29c17639304a1a9cf5afe
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 6f0660ce94fdfbe1ab636aa4197ef31526c21348
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32748713"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145798"
 ---
 # <a name="lttransactionflowgt"></a>&lt;transactionFlow&gt;
 사용자 지정 바인딩에 대한 트랜잭션 흐름 지원을 지정합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "32748713"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<transactionFlow transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"/>  
+<transactionFlow transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -43,10 +43,10 @@ ms.locfileid: "32748713"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|사용자 지정 바인딩의 모든 바인딩 기능을 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소를 사용하면 끝점의 바인딩 설정에 들어오는 트랜잭션 흐름을 사용하거나 사용하지 않도록 설정할 수 있을 뿐 아니라 들어오는 트랜잭션에 대해 원하는 프로토콜 형식을 지정할 수 있습니다. 이 구성 요소를 사용 하 여에 대 한 자세한 내용은 참조 하십시오. [ServiceModel 트랜잭션 구성](../../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md) 및 [트랜잭션 흐름을 사용 하도록 설정](../../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md)합니다.  
+ 이 요소를 사용하면 엔드포인트의 바인딩 설정에 들어오는 트랜잭션 흐름을 사용하거나 사용하지 않도록 설정할 수 있을 뿐 아니라 들어오는 트랜잭션에 대해 원하는 프로토콜 형식을 지정할 수 있습니다. 이 구성 요소 사용에 대 한 자세한 내용은 참조 하세요. [ServiceModel 트랜잭션 구성](../../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md) 하 고 [트랜잭션 흐름 사용](../../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md)합니다.  
   
 > [!CAUTION]
->  `OleTransactions` 프로토콜을 사용하여 끝점 간에 트랜잭션을 전달할 경우 대상 끝점에서 `OleTransactions` 이외의 프로토콜을 사용하여 트랜잭션을 다시 전달하려고 하면 트랜잭션 시간 제한이 상실될 수 있습니다. 따라서 OleTransactions 홉 뒤의 모든 하위 수준 노드가 예상보다 늦게 시간이 초과될 수 있습니다.  
+>  `OleTransactions` 프로토콜을 사용하여 엔드포인트 간에 트랜잭션을 전달할 경우 대상 엔드포인트에서 `OleTransactions` 이외의 프로토콜을 사용하여 트랜잭션을 다시 전달하려고 하면 트랜잭션 시간 제한이 상실될 수 있습니다. 따라서 OleTransactions 홉 뒤의 모든 하위 수준 노드가 예상보다 늦게 시간이 초과될 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Configuration.TransactionFlowElement>  

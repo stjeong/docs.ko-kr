@@ -2,12 +2,12 @@
 title: '&lt;dns&gt;'
 ms.date: 03/30/2017
 ms.assetid: 81819dae-4825-43b7-bccd-f16d2d3d2f06
-ms.openlocfilehash: 2f5b9d5e1bc57230adbb32664e9ae15d3c71d46f
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 10fe4c63b08459914a16b2c736c1a454c6914a0b
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862480"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145304"
 ---
 # <a name="ltdnsgt"></a>&lt;dns&gt;
 서버에서 사용할 ID를 지정합니다. 서버의 인증서에 같은 값이 있는 DNS가 포함된 경우 이 ID를 X509 인증서 인증 모드에 사용할 수 있습니다. SPN에 같은 값이 있는 경우 Windows 인증 모드에도 해당 ID를 사용할 수 있습니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "43862480"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<dns value = "String" />  
+<dns value = "String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -45,9 +45,9 @@ ms.locfileid: "43862480"
  다음 구성 코드에서는 서버를 인증하는 데 사용되는 X.509 인증서의 DNS를 지정합니다.  
   
 ```xml  
-<identity>  
-  <dns value = "www.cohowinery.com" />  
-</identity>  
+<identity>
+  <dns value = "www.cohowinery.com" />
+</identity>
 ```  
   
 ## <a name="see-also"></a>참고 항목  

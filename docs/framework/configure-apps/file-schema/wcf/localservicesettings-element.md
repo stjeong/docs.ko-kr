@@ -2,12 +2,12 @@
 title: '&lt;localServiceSettings&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
-ms.openlocfilehash: 1257b151f75d05b610fe3463f8bef5f78d2b2fcd
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 5d5150590bc0a8a0d21662eadc7dda67aad872ef
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32751157"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54150281"
 ---
 # <a name="ltlocalservicesettingsgt-element"></a>&lt;localServiceSettings&gt; 요소
 이 바인딩에 대한 로컬 서비스의 보안 설정을 지정합니다.  
@@ -21,22 +21,22 @@ ms.locfileid: "32751157"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<security>  
-   <localServiceSettings detectReplays="Boolean"  
-      inactivityTimeout="TimeSpan"  
-      issuedCookieLifeTime="TimeSpan"  
-      maxCachedCookies="Integer"   
-      maxClockSkew="TimeSpan"   
-      maxPendingSessions="Integer"  
-      maxStatefulNegotiations="Integer"  
-      negotiationTimeout="TimeSpan"  
-      reconnectTransportOnFailure="Boolean"  
-            replayCacheSize="Integer"  
-      replayWindow="TimeSpan"  
-      sessionKeyRenewalInterval="TimeSpan"  
-      sessionKeyRolloverInterval="TimeSpan"  
-      timestampValidityDuration="TimeSpan" />  
-</security>  
+<security>
+  <localServiceSettings detectReplays="Boolean"
+                        inactivityTimeout="TimeSpan"
+                        issuedCookieLifeTime="TimeSpan"
+                        maxCachedCookies="Integer"
+                        maxClockSkew="TimeSpan"
+                        maxPendingSessions="Integer"
+                        maxStatefulNegotiations="Integer"
+                        negotiationTimeout="TimeSpan"
+                        reconnectTransportOnFailure="Boolean"
+                        replayCacheSize="Integer"
+                        replayWindow="TimeSpan"
+                        sessionKeyRenewalInterval="TimeSpan"
+                        sessionKeyRolloverInterval="TimeSpan"
+                        timestampValidityDuration="TimeSpan" />
+</security>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -82,7 +82,7 @@ ms.locfileid: "32751157"
   
 -   `maxPendingSessions`: 서버에서 설정되었지만 응용 프로그램 메시지가 처리되지 않은 보안 대화의 최대 개수를 제어합니다. 이 할당량은 클라이언트가 서비스에서 보안 대화를 설정할 수 없도록 하고 서비스에서 각 클라이언트의 상태를 유지 관리하게 하지만 사용하지는 않습니다.  
   
--   `inactivityTimeout`: 응용 프로그램 메시지가 수신되지 않을 때 서비스에서 보안 대화를 활성 상태로 유지하는 최대 시간을 제어합니다. 이 할당량은 클라이언트가 서비스에서 보안 대화를 설정할 수 없도록 하고 서비스에서 각 클라이언트의 상태를 유지 관리하게 하지만 사용하지는 않습니다.  
+-   `inactivityTimeout`: 애플리케이션 메시지가 수신되지 않을 때 서비스에서 보안 대화를 활성 상태로 유지하는 최대 시간을 제어합니다. 이 할당량은 클라이언트가 서비스에서 보안 대화를 설정할 수 없도록 하고 서비스에서 각 클라이언트의 상태를 유지 관리하게 하지만 사용하지는 않습니다.  
   
  보안 대화 세션에서 바인딩의 `inactivityTimeout` 및 `receiveTimeout` 특성은 모두 세션 시간 제한에 영향을 줍니다. 제한 시간은 두 속성 값 중 짧은 시간으로 결정됩니다.  
   
@@ -96,5 +96,5 @@ ms.locfileid: "32751157"
  [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
  [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [방법: SecurityBindingElement를 사용하여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
+ [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
  [사용자 지정 바인딩 보안](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

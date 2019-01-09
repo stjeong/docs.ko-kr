@@ -2,12 +2,12 @@
 title: '&lt;msmqIntegrationBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
-ms.openlocfilehash: 574c0d7cba88f724143e642da13cace8c329dea6
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a0c6e016980b5a40d74b9bd94dab96a0aa9fb243
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199996"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145278"
 ---
 # <a name="ltsecuritygt-of-ltmsmqintegrationbindinggt"></a>&lt;msmqIntegrationBinding&gt;의 &lt;security&gt;
 MSMQ(메시지 큐) 통합 채널을 위한 전송 보안 설정을 정의합니다.  
@@ -21,19 +21,19 @@ msmqIntegrationBinding
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<msmqIntegrationBinding>  
-   <binding>   
-       <security mode="None/Transport">  
-         <transport msmqAuthenticationMode="None/Windows/Certificate"  
-            msmqEncryptionAlgorithm="RC4Stream/AES"  
-            msmqProtectionLevel="None/Sign/EncryptAndSign"  
-            msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-          <message  algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
-                        clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-            defaultProtectionLevel="None/Sign/EncryptAndSign" />  
-       </security>  
-   </binding>  
-</msmqIntegrationBinding>   
+<msmqIntegrationBinding>
+  <binding>
+    <security mode="None/Transport">
+      <transport msmqAuthenticationMode="None/Windows/Certificate"
+                 msmqEncryptionAlgorithm="RC4Stream/AES"
+                 msmqProtectionLevel="None/Sign/EncryptAndSign"
+                 msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+      <message algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"
+               clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+               defaultProtectionLevel="None/Sign/EncryptAndSign" />
+    </security>
+  </binding>
+</msmqIntegrationBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -43,7 +43,7 @@ msmqIntegrationBinding
   
 |특성|설명|  
 |---------------|-----------------|  
-|모드|메시지 큐 통합 채널로 무결성, 기밀성 및 인증을 제어하는 보안 형식을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -None: 이렇게 하면 보안이 해제 합니다.<br />-Transport: 보호 및 인증이 전송에 의해 제공 됩니다. 이는 두 큐 관리자 간의 메시지 보안에 적용됩니다. 응용 프로그램 및 큐 관리자 간에는 제공되는 보안이 없습니다. 기존 Msmq 응용 프로그램이 이러한 보안 모드 형식과 동일한 기능입니다.<br /><br /> 기본값은 `Transport`입니다. 이 특성은 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> 형식입니다.|  
+|모드|메시지 큐 통합 채널로 무결성, 기밀성 및 인증을 제어하는 보안 형식을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -None. 이렇게 하면 보안이 해제 합니다.<br />-전송 합니다. 보호 및 인증이 전송에 의해 제공 됩니다. 이는 두 큐 관리자 간의 메시지 보안에 적용됩니다. 응용 프로그램 및 큐 관리자 간에는 제공되는 보안이 없습니다. 기존 Msmq 응용 프로그램이 이러한 보안 모드 형식과 동일한 기능입니다.<br /><br /> 기본값은 `Transport`입니다. 이 특성은 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> 형식입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   

@@ -2,12 +2,12 @@
 title: '&lt;messageSenderAuthentication&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.openlocfilehash: cb727df7b8d7605cbe984a8f6737c89bf1bfb2be
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: d543e5ac436e181c76e2954db7a3eaa8e1b8d6a3
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44216121"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145907"
 ---
 # <a name="ltmessagesenderauthenticationgt-element"></a>&lt;messageSenderAuthentication&gt; 요소
 피어 투 피어 메시지 발신자에 대한 인증 옵션을 지정합니다.  
@@ -25,12 +25,10 @@ ms.locfileid: "44216121"
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<messageSenderAuthentication  
-customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"  
-trustedStoreLocation="CurrentUser/LocalMachine"   
-/>  
+<messageSenderAuthentication customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                             certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                             revocationMode="NoCheck/Online/Offline"
+                             trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -85,21 +83,21 @@ trustedStoreLocation="CurrentUser/LocalMachine"
  다음 코드에서는 메시지 발신자 유효성 검사 모드를 `PeerOrChainTrust`로 설정합니다.  
   
 ```xml  
-<behaviors>  
- <endpointBehaviors>  
-  <behavior name="MyEndpointBehavior">  
-   <clientCredentials>  
-    <peer>  
-      <certificate findValue="www.contoso.com"   
-                   storeLocation="LocalMachine"  
-                   x509FindType="FindByIssuerName" />  
-        <messageSenderAuthentication   
-          certificateValidationMode="PeerOrChainTrust" />  
-       <messageSenderAuthentication certificateValidationMode="None" />  
-    </peer>  
-   </clientCredentials>  
-  </behavior>  
- </endpointBehaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="MyEndpointBehavior">
+      <clientCredentials>
+        <peer>
+          <certificate findValue="www.contoso.com"
+                       storeLocation="LocalMachine"
+                       x509FindType="FindByIssuerName" />
+          <messageSenderAuthentication certificateValidationMode="PeerOrChainTrust" />
+          <messageSenderAuthentication certificateValidationMode="None" />
+        </peer>
+      </clientCredentials>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
 ## <a name="see-also"></a>참고 항목  
@@ -111,4 +109,4 @@ trustedStoreLocation="CurrentUser/LocalMachine"
  [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
  [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
  [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [피어 채널 응용 프로그램 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+ [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
