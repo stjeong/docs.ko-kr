@@ -2,52 +2,52 @@
 title: '&lt;extensions&gt; 섹션'
 ms.date: 03/30/2017
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
-ms.openlocfilehash: 09cabfc6c03602c3b6de343a29b5b25755f2cf0f
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 92dd3c528290344d9537c51fccf7c13c74c1984a
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32750140"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145317"
 ---
-# <a name="ltextensionsgt-section"></a><span data-ttu-id="cb2d1-102">&lt;extensions&gt; 섹션</span><span class="sxs-lookup"><span data-stu-id="cb2d1-102">&lt;extensions&gt; section</span></span>
-<span data-ttu-id="cb2d1-103">이 구성 섹션에는 사용자 정의 바인딩, 동작 및 확장의 기타 측면을 만들 수 있도록 하는 확장명 컬렉션이 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-103">This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.</span></span>  
+# <a name="ltextensionsgt-section"></a><span data-ttu-id="e05b8-102">&lt;extensions&gt; 섹션</span><span class="sxs-lookup"><span data-stu-id="e05b8-102">&lt;extensions&gt; section</span></span>
+<span data-ttu-id="e05b8-103">이 구성 섹션에는 사용자 정의 바인딩, 동작 및 확장의 기타 측면을 만들 수 있도록 하는 확장명 컬렉션이 들어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-103">This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.</span></span>  
   
-<span data-ttu-id="cb2d1-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="cb2d1-104">\<system.ServiceModel></span></span>  
+<span data-ttu-id="e05b8-104">\<system.ServiceModel></span><span class="sxs-lookup"><span data-stu-id="e05b8-104">\<system.ServiceModel></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="cb2d1-105">구문</span><span class="sxs-lookup"><span data-stu-id="cb2d1-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e05b8-105">구문</span><span class="sxs-lookup"><span data-stu-id="e05b8-105">Syntax</span></span>  
   
 ```xml  
-<system.serviceModel>  
-  <extensions>  
-    <bindingExtensions>  
-    </bindingExtensions>  
-    <behaviorExtensions>  
-    </behaviorExtensions>  
-    <bindingElementExtensions>  
+<system.serviceModel>
+  <extensions>
+    <bindingExtensions>
+    </bindingExtensions>
+    <behaviorExtensions>
+    </behaviorExtensions>
+    <bindingElementExtensions>
     </bindingElementExtensions>
     <endpointExtensions>
     </endpointExtensions>
-  </extensions>  
-</system.serviceModel>  
+  </extensions>
+</system.serviceModel>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="cb2d1-106">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="cb2d1-106">Attributes and Elements</span></span>  
- <span data-ttu-id="cb2d1-107">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="e05b8-106">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="e05b8-106">Attributes and Elements</span></span>  
+ <span data-ttu-id="e05b8-107">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="cb2d1-108">특성</span><span class="sxs-lookup"><span data-stu-id="cb2d1-108">Attributes</span></span>  
- <span data-ttu-id="cb2d1-109">없음</span><span class="sxs-lookup"><span data-stu-id="cb2d1-109">None.</span></span>  
+### <a name="attributes"></a><span data-ttu-id="e05b8-108">특성</span><span class="sxs-lookup"><span data-stu-id="e05b8-108">Attributes</span></span>  
+ <span data-ttu-id="e05b8-109">없음</span><span class="sxs-lookup"><span data-stu-id="e05b8-109">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="cb2d1-110">자식 요소</span><span class="sxs-lookup"><span data-stu-id="cb2d1-110">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="e05b8-110">자식 요소</span><span class="sxs-lookup"><span data-stu-id="e05b8-110">Child Elements</span></span>  
   
-|<span data-ttu-id="cb2d1-111">요소</span><span class="sxs-lookup"><span data-stu-id="cb2d1-111">Element</span></span>|<span data-ttu-id="cb2d1-112">설명</span><span class="sxs-lookup"><span data-stu-id="cb2d1-112">Description</span></span>|  
+|<span data-ttu-id="e05b8-111">요소</span><span class="sxs-lookup"><span data-stu-id="e05b8-111">Element</span></span>|<span data-ttu-id="e05b8-112">설명</span><span class="sxs-lookup"><span data-stu-id="e05b8-112">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="cb2d1-113">\<behaviorExtensions ></span><span class="sxs-lookup"><span data-stu-id="cb2d1-113">\<behaviorExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md)|<span data-ttu-id="cb2d1-114">이 섹션에는 서비스 또는 끝점 동작을 사용자 지정할 수 있도록 하는 동작 확장을 지정하는 자식 요소가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-114">This section contains child elements that specify behavior extensions, which enable the user to customize service or endpoint behaviors.</span></span>|  
-|[<span data-ttu-id="cb2d1-115">\<t e x ></span><span class="sxs-lookup"><span data-stu-id="cb2d1-115">\<bindingElementExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindingelementextensions.md)|<span data-ttu-id="cb2d1-116">이 섹션은 시스템 또는 응용 프로그램 구성 파일의 사용자 지정 요소를 사용할 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-116">This section enables the use of a custom binding element from a machine or application configuration file.</span></span>|  
-|[<span data-ttu-id="cb2d1-117">\<bindingExtensions ></span><span class="sxs-lookup"><span data-stu-id="cb2d1-117">\<bindingExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindingextensions.md)|<span data-ttu-id="cb2d1-118">이 섹션에는 바인딩을 사용자 지정할 수 있도록 하는 바인딩 확장을 지정하는 자식 요소가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-118">This section contains child elements that specify binding extensions, which enable the user to customize bindings.</span></span>|  
-|[<span data-ttu-id="cb2d1-119">\<endpointExtensions ></span><span class="sxs-lookup"><span data-stu-id="cb2d1-119">\<endpointExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpointextensions.md)|<span data-ttu-id="cb2d1-120">이 섹션에는 표준 끝점을 등록하는 자식 요소가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-120">This section contains child elements that registers standard endpoints.</span></span>|  
+|[<span data-ttu-id="e05b8-113">\<behaviorExtensions ></span><span class="sxs-lookup"><span data-stu-id="e05b8-113">\<behaviorExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md)|<span data-ttu-id="e05b8-114">이 섹션에는 서비스 또는 엔드포인트 동작을 사용자 지정할 수 있도록 하는 동작 확장을 지정하는 자식 요소가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-114">This section contains child elements that specify behavior extensions, which enable the user to customize service or endpoint behaviors.</span></span>|  
+|[<span data-ttu-id="e05b8-115">\<bindingElementExtensions ></span><span class="sxs-lookup"><span data-stu-id="e05b8-115">\<bindingElementExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindingelementextensions.md)|<span data-ttu-id="e05b8-116">이 섹션은 시스템 또는 응용 프로그램 구성 파일의 사용자 지정 요소를 사용할 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-116">This section enables the use of a custom binding element from a machine or application configuration file.</span></span>|  
+|[<span data-ttu-id="e05b8-117">\<bindingExtensions ></span><span class="sxs-lookup"><span data-stu-id="e05b8-117">\<bindingExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindingextensions.md)|<span data-ttu-id="e05b8-118">이 섹션에는 바인딩을 사용자 지정할 수 있도록 하는 바인딩 확장을 지정하는 자식 요소가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-118">This section contains child elements that specify binding extensions, which enable the user to customize bindings.</span></span>|  
+|[<span data-ttu-id="e05b8-119">\<endpointExtensions ></span><span class="sxs-lookup"><span data-stu-id="e05b8-119">\<endpointExtensions></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpointextensions.md)|<span data-ttu-id="e05b8-120">이 섹션에는 표준 엔드포인트를 등록하는 자식 요소가 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-120">This section contains child elements that registers standard endpoints.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="cb2d1-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="cb2d1-121">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="e05b8-121">부모 요소</span><span class="sxs-lookup"><span data-stu-id="e05b8-121">Parent Elements</span></span>  
   
-|<span data-ttu-id="cb2d1-122">요소</span><span class="sxs-lookup"><span data-stu-id="cb2d1-122">Element</span></span>|<span data-ttu-id="cb2d1-123">설명</span><span class="sxs-lookup"><span data-stu-id="cb2d1-123">Description</span></span>|  
+|<span data-ttu-id="e05b8-122">요소</span><span class="sxs-lookup"><span data-stu-id="e05b8-122">Element</span></span>|<span data-ttu-id="e05b8-123">설명</span><span class="sxs-lookup"><span data-stu-id="e05b8-123">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="cb2d1-124">system.ServiceModel</span><span class="sxs-lookup"><span data-stu-id="cb2d1-124">system.ServiceModel</span></span>|<span data-ttu-id="cb2d1-125">모든 WCF 구성 요소의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="cb2d1-125">The root element of all WCF configuration elements.</span></span>|
+|<span data-ttu-id="e05b8-124">system.ServiceModel</span><span class="sxs-lookup"><span data-stu-id="e05b8-124">system.ServiceModel</span></span>|<span data-ttu-id="e05b8-125">모든 WCF 구성 요소의 루트 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="e05b8-125">The root element of all WCF configuration elements.</span></span>|
