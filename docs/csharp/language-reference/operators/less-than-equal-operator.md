@@ -1,32 +1,44 @@
 ---
 title: '&lt;= 연산자 - C# 참조'
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 12/18/2018
 f1_keywords:
 - <=_CSharpKeyword
 helpviewer_keywords:
 - less than or equal to operator (<=) [C#]
 - <= operator [C#]
 ms.assetid: bb0caec9-d253-4105-b8bc-5252233251e4
-ms.openlocfilehash: 950ba3fc02e015f2574d123d1fd9adc116aae045
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 30f42de68667756a8233fef4241bfd74ed4eff2a
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53243454"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656091"
 ---
-# <a name="lt-operator-c-reference"></a><span data-ttu-id="b149e-102">&lt;= 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="b149e-102">&lt;= Operator (C# Reference)</span></span>
-<span data-ttu-id="b149e-103">모든 숫자 형식과 열거형은 첫 번째 피연산자가 두 번째 피연산자보다 작거나 같을 경우에 `true`를 반환하고 그렇지 않으면 `false`를 반환하는 “작거나 같음” 관계 연산자(`<=`)를 정의합니다.</span><span class="sxs-lookup"><span data-stu-id="b149e-103">All numeric and enumeration types define a "less than or equal" relational operator (`<=`) that returns `true` if the first operand is less than or equal to the second, `false` otherwise.</span></span>  
-  
-## <a name="remarks"></a><span data-ttu-id="b149e-104">설명</span><span class="sxs-lookup"><span data-stu-id="b149e-104">Remarks</span></span>  
- <span data-ttu-id="b149e-105">사용자 정의 형식은 `<=` 연산자를 오버로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b149e-105">User-defined types can overload the `<=` operator.</span></span> <span data-ttu-id="b149e-106">자세한 내용은 [operator](../../../csharp/language-reference/keywords/operator.md)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="b149e-106">For more information, see [operator](../../../csharp/language-reference/keywords/operator.md).</span></span> <span data-ttu-id="b149e-107">`<=` 연산자가 오버로드되면 [>=](../../../csharp/language-reference/operators/greater-than-equal-operator.md) 또한 오버로드되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="b149e-107">If `<=` is overloaded, [>=](../../../csharp/language-reference/operators/greater-than-equal-operator.md) must also be overloaded.</span></span> <span data-ttu-id="b149e-108">정수 계열 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="b149e-108">Operations on integral types are generally allowed on enumeration.</span></span>  
-  
-## <a name="example"></a><span data-ttu-id="b149e-109">예제</span><span class="sxs-lookup"><span data-stu-id="b149e-109">Example</span></span>  
- [!code-csharp[csRefOperators#32](../../../csharp/language-reference/operators/codesnippet/CSharp/less-than-equal-operator_1.cs)]  
-  
-## <a name="see-also"></a><span data-ttu-id="b149e-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="b149e-110">See Also</span></span>
+# <a name="lt-operator-c-reference"></a><span data-ttu-id="0f208-102">&lt;= 연산자(C# 참조)</span><span class="sxs-lookup"><span data-stu-id="0f208-102">&lt;= Operator (C# Reference)</span></span>
 
-- [<span data-ttu-id="b149e-111">C# 참조</span><span class="sxs-lookup"><span data-stu-id="b149e-111">C# Reference</span></span>](../../../csharp/language-reference/index.md)  
-- [<span data-ttu-id="b149e-112">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="b149e-112">C# Programming Guide</span></span>](../../../csharp/programming-guide/index.md)  
-- [<span data-ttu-id="b149e-113">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="b149e-113">C# Operators</span></span>](../../../csharp/language-reference/operators/index.md)  
-- [<span data-ttu-id="b149e-114">explicit</span><span class="sxs-lookup"><span data-stu-id="b149e-114">explicit</span></span>](../../../csharp/language-reference/keywords/explicit.md)
+<span data-ttu-id="0f208-103">"작거나 같음" 관계 연산자 `<=`은 첫 번째 피연산자가 두 번째 피연산자 보다 작거나 같으면 `true`를 반환하고, 그렇지 않으면 `false`를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-103">The "less than or equal" relational operator `<=` returns `true` if its first operand is less than or equal to its second operand, `false` otherwise.</span></span> <span data-ttu-id="0f208-104">모든 숫자 및 열거형 형식은 `<=` 연산자를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-104">All numeric and enumeration types support the `<=` operator.</span></span> <span data-ttu-id="0f208-105">동일한 [열거형](../keywords/enum.md) 형식의 피연산자의 경우 기본 정수 형식의 해당 값이 비교됩니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-105">For operands of the same [enum](../keywords/enum.md) type, the corresponding values of the underlying integral type are compared.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="0f208-106">관계형 연산자 `==`, `>`, `<`, `>=` 및 `<=`의 경우 피연산자 중 하나가 숫자(<xref:System.Double.NaN?displayProperty=nameWithType> 또는 <xref:System.Single.NaN?displayProperty=nameWithType>)가 아니s며 연산의 결과는 `false`입니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-106">For relational operators `==`, `>`, `<`, `>=`, and `<=`, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>) the result of operation is `false`.</span></span> <span data-ttu-id="0f208-107">이는 `NaN` 값이 다른 `double`(또는 `float`) 값보다 크거나, 작거나, 같지 않음을 의미합니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-107">That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value.</span></span> <span data-ttu-id="0f208-108">자세한 내용과 예제는 <xref:System.Double.NaN?displayProperty=nameWithType> 또는 <xref:System.Single.NaN?displayProperty=nameWithType> 참조 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0f208-108">For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.</span></span>
+
+<span data-ttu-id="0f208-109">다음 예제에서는 `<=` 연산자의 사용법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-109">The following example demonstrates the usage of the `<=` operator:</span></span>
+
+[!code-csharp-interactive[less than or equal example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#LessOrEqual)]
+
+## <a name="operator-overloadability"></a><span data-ttu-id="0f208-110">연산자 오버로드 가능성</span><span class="sxs-lookup"><span data-stu-id="0f208-110">Operator overloadability</span></span>
+
+<span data-ttu-id="0f208-111">사용자 정의 형식은 `<=` 연산자를 [오버로드](../keywords/operator.md)할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-111">User-defined types can [overload](../keywords/operator.md) the `<=` operator.</span></span> <span data-ttu-id="0f208-112">형식이 "작거나 같음" 연산자 `<=`을 오버로드하는 경우 ["크거나 같음" 연산자](greater-than-equal-operator.md) `>=`도 오버로드해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0f208-112">If a type overloads the "less than or equal" operator `<=`, it must also overload the ["greater than or equal" operator](greater-than-equal-operator.md) `>=`.</span></span>
+
+## <a name="c-language-specification"></a><span data-ttu-id="0f208-113">C# 언어 사양</span><span class="sxs-lookup"><span data-stu-id="0f208-113">C# language specification</span></span>
+
+<span data-ttu-id="0f208-114">자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [관계형 및 형식 테스트 연산자](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) 섹션을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="0f208-114">For more information, see the [Relational and type-testing operators](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) section of the [C# language specification](../language-specification/index.md).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="0f208-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="0f208-115">See also</span></span>
+
+- [<span data-ttu-id="0f208-116">C# 참조</span><span class="sxs-lookup"><span data-stu-id="0f208-116">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="0f208-117">C# 프로그래밍 가이드</span><span class="sxs-lookup"><span data-stu-id="0f208-117">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="0f208-118">C# 연산자</span><span class="sxs-lookup"><span data-stu-id="0f208-118">C# Operators</span></span>](index.md)
+- [<span data-ttu-id="0f208-119">< 연산자</span><span class="sxs-lookup"><span data-stu-id="0f208-119">< Operator</span></span>](less-than-operator.md)
+- [<span data-ttu-id="0f208-120">== 연산자</span><span class="sxs-lookup"><span data-stu-id="0f208-120">== Operator</span></span>](equality-comparison-operator.md)
+- <xref:System.IComparable%601?displayProperty=nameWithType>
