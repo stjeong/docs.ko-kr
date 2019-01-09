@@ -1,7 +1,7 @@
 ---
 title: '!= 연산자 - C# 참조'
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 12/14/2018
 f1_keywords:
 - '!=_CSharpKeyword'
 helpviewer_keywords:
@@ -9,26 +9,32 @@ helpviewer_keywords:
 - not equals operator (!=) [C#]
 - '!= operator [C#]'
 ms.assetid: eeff7a4e-ad6f-462d-9f8d-49e9b91c6c97
-ms.openlocfilehash: 15f1b5930117e608644a58343fb855562f36b21c
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 939b5664dba4345e62a43fb2f8d4d5379659d6aa
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237820"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53610179"
 ---
 # <a name="-operator-c-reference"></a>!= 연산자(C# 참조)
-같지 않음 연산자(`!=`)는 피연산자가 같으면 false, 다르면 true를 반환합니다. 문자열과 개체를 포함하여 모든 형식에 대해 같지 않음 연산자가 미리 정의되어 있습니다. 사용자 정의 형식은 `!=` 연산자를 오버로드할 수 있습니다.  
-  
-## <a name="remarks"></a>설명  
- 미리 정의된 값 형식의 경우 같지 않음 연산자(`!=`)는 피연산자의 값이 다르면 true, 같으면 false를 반환합니다. `string`를 제외한 참조 형식의 경우 `!=`은 두 피연산자가 서로 다른 개체를 참조하면 true를 반환합니다. `string` 형식의 경우 `!=`은 문자열의 값을 비교합니다.  
-  
- 사용자 정의 값 형식은 `!=` 연산자를 오버로드할 수 있습니다([operator](../../../csharp/language-reference/keywords/operator.md) 참조). 사용자 정의 참조 형식의 경우도 마찬가지입니다. 하지만 기본적으로 `!=`은 미리 정의된 참조 형식과 사용자 정의 참조 형식 모두에 대해 위에서 설명한 대로 동작합니다. `!=` 연산자가 오버로드되면 [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) 또한 오버로드되어야 합니다. 정수 계열 형식에 대한 연산은 일반적으로 열거형에서 허용됩니다.  
-  
-## <a name="example"></a>예제  
- [!code-csharp[csRefOperators#33](../../../csharp/language-reference/operators/codesnippet/CSharp/not-equal-operator_1.cs)]  
-  
+
+같지 않음 연산자 `!=`는 피연산자가 같지 않으면 `true`를 반환하고, 그렇지 않으면 `false`를 반환합니다. [기본 제공 형식](../keywords/built-in-types-table.md)의 피연산자의 경우 식 `x != y`는 식 `!(x == y)`와 동일한 결과를 생성합니다. 자세한 내용은 [== 연산자](equality-comparison-operator.md) 문서를 참조하세요.
+
+다음 예제에서는 `!=` 연산자의 사용법을 보여 줍니다.
+
+[!code-csharp-interactive[non-equality examples](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#NonEquality)]
+
+## <a name="operator-overloadability"></a>연산자 오버로드 가능성
+
+사용자 정의 형식은 `!=` 연산자를 [오버로드](../keywords/operator.md)할 수 있습니다. 형식이 같지 않음 연산자 `!=`를 오버로드하는 경우 [같음 연산자](equality-comparison-operator.md) `==`도 오버로드해야 합니다.
+
+## <a name="c-language-specification"></a>C# 언어 사양
+
+자세한 내용은 [C# 언어 사양](../language-specification/index.md)의 [관계형 및 형식 테스트 연산자](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) 섹션을 참조하세요.
+
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 연산자](../../../csharp/language-reference/operators/index.md)
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 연산자](index.md)
+- [같음 비교](../../programming-guide/statements-expressions-operators/equality-comparisons.md)

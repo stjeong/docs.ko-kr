@@ -4,12 +4,12 @@ description: C#에서 특성이 작동하는 방식을 알아봅니다.
 author: mgroves
 ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
-ms.openlocfilehash: db6db50ac59e804225bdc11c435fef3d53fa685e
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 38d22e707dd8c9877183feb8446407c20a21b416
+ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43390521"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54029829"
 ---
 # <a name="using-attributes-in-c"></a>C#에서 특성 사용 #
 
@@ -21,11 +21,11 @@ ms.locfileid: "43390521"
 
 ## <a name="prerequisites"></a>전제 조건
 .NET Core를 실행하도록 컴퓨터에 설정해야 합니다. [.NET Core](https://www.microsoft.com/net/core) 페이지에서 설치 지침을 확인할 수 있습니다.
-Windows, Ubuntu Linux, macOS 또는 Docker 컨테이너에서 이 응용 프로그램을 실행할 수 있습니다. 선호하는 코드 편집기를 설치해야 합니다. 아래 설명에서는 오픈 소스 플랫폼 간 편집기인 [Visual Studio Code](https://code.visualstudio.com/)를 사용합니다. 그러나 익숙한 어떤 도구도 사용 가능합니다.
+Windows, Ubuntu Linux, macOS 또는 Docker 컨테이너에서 이 애플리케이션을 실행할 수 있습니다. 선호하는 코드 편집기를 설치해야 합니다. 아래 설명에서는 오픈 소스 플랫폼 간 편집기인 [Visual Studio Code](https://code.visualstudio.com/)를 사용합니다. 그러나 익숙한 어떤 도구도 사용 가능합니다.
 
-## <a name="create-the-application"></a>응용 프로그램 만들기
+## <a name="create-the-application"></a>애플리케이션 만들기
 
-이제 모든 도구를 설치했으므로 새로운 .NET Core 응용 프로그램을 만들어 보겠습니다. 명령줄 생성기를 사용하려면 즐겨 사용하는 셸에서 다음 명령을 실행합니다.
+이제 모든 도구를 설치했으므로 새로운 .NET Core 애플리케이션을 만들어 보겠습니다. 명령줄 생성기를 사용하려면 즐겨 사용하는 셸에서 다음 명령을 실행합니다.
 
 `dotnet new console`
 
@@ -85,7 +85,7 @@ C#에서 특성은 `Attribute` 기본 클래스에서 상속되는 클래스입�
 * 생성자
 * 대리자
 * Enum
-* 이벤트(event)
+* 이벤트
 * 필드
 * GenericParameter
 * 인터페이스
@@ -110,7 +110,7 @@ C#에서 특성은 `Attribute` 기본 클래스에서 상속되는 클래스입�
 
 특성을 찾아 작업을 수행하려면 일반적으로 [리플렉션](../programming-guide/concepts/reflection.md)이 필요합니다. 이 자습서에서는 리플렉션을 자세히 다루지 않겠지만, 기본 개념은 리플렉션을 사용하면 다른 코드를 검사하는 코드를 C#에서 작성할 수 있다는 것입니다.
 
-예를 들어 리플렉션을 사용하여 클래스에 대한 정보를 가져올 수 있습니다. 
+예를 들어 리플렉션을 사용하여 클래스에 대한 정보(코드 헤드에 `using System.Reflection;` 추가)를 가져올 수 있습니다. 
 
 [!code-csharp[Getting type information with Reflection](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ReflectionExample1)]
 

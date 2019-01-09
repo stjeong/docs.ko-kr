@@ -1,18 +1,18 @@
 ---
 title: AttributeUsage(C#)
 ms.date: 04/25/2018
-ms.openlocfilehash: 37657a0611180d5b4c48b3e1778d33861afa5a74
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 081a8f6edcddd5e87d3d9750b91ff42a72b92886
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500574"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656351"
 ---
 # <a name="attributeusage-c"></a>AttributeUsage(C#)
 
 사용자 지정 특성 클래스를 사용하는 방법을 결정합니다. <xref:System.AttributeUsageAttribute>는 사용자 지정 특성 정의에 적용되는 특성입니다. `AttributeUsage` 특성을 사용하면 다음을 제어할 수 있습니다.
 
-- 적용할 수 있는 프로그램 요소 특성 사용을 제한하지 않으면 다음과 같은 프로그램 요소 중 하나에 특성이 적용될 수 있습니다.
+- 적용할 수 있는 프로그램 요소 특성 사용을 제한하지 않는 한, 다음과 같은 프로그램 요소 중 하나에 특성이 적용될 수 있습니다.
   - 어셈블리
   - name
   - 필드(field)
@@ -21,7 +21,7 @@ ms.locfileid: "43500574"
   - param
   - 속성
   - return
-  - type
+  - 형식
 - 특성을 단일 프로그램 요소에 여러 번 적용할 수 있는지 여부
 - 특성이 파생 클래스에 의해 상속되는지 여부
 
@@ -55,13 +55,13 @@ C# 7.3부터 특성은 속성 또는 자동 구현 속성의 지원 필드에 �
 
 이 경우에 `NonInheritedAttribute`은 상속을 통해 `DClass`에 적용되지 않습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `AttributeUsage` 특성은 단일 사용 특성입니다. 같은 클래스에 두 번 이상 적용될 수 없습니다. `AttributeUsage`는 <xref:System.AttributeUsageAttribute>의 별칭입니다.
 
 자세한 내용은 [리플렉션을 사용하여 특성 액세스(C#)](accessing-attributes-by-using-reflection.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 <xref:System.AttributeUsageAttribute> 특성에 대한 <xref:System.AttributeUsageAttribute.Inherited> 및 <xref:System.AttributeUsageAttribute.AllowMultiple>의 영향과 클래스에 적용되는 사용자 지정 특성을 열거하는 방법을 보여 줍니다.
 

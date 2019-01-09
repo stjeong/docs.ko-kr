@@ -1,16 +1,16 @@
 ---
 title: C#의 상속
-description: C# 라이브러리 및 응용 프로그램에서 상속 사용 방법 알아보기
+description: C# 라이브러리 및 애플리케이션에서 상속 사용 방법 알아보기
 author: rpetrusha
 ms.author: ronpet
 ms.date: 07/05/2018
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
-ms.openlocfilehash: 15e2ddd7e103857054973d6c4ed7401d6f91af0d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1938876bcf72fccd7582ede332d052fb3d759395
+ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502166"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53656195"
 ---
 # <a name="inheritance-in-c-and-net"></a>C# 및 .NET의 상속
 
@@ -33,7 +33,7 @@ ms.locfileid: "43502166"
 
 1. [dotnet run](../../core/tools/dotnet-run.md) 명령을 입력하여 예제를 컴파일하고 실행합니다.
 
-## <a name="background-what-is-inheritance"></a>배경 지식: 상속이란?
+## <a name="background-what-is-inheritance"></a>배경: 상속이란?
 
 *상속*은 개체 지향 프로그래밍의 기본적인 특성 중 하나입니다. 부모 클래스의 동작을 다시 사용(상속), 확장 또는 수정하는 자식 클래스를 정의할 수 있습니다. 멤버가 상속되는 클래스를 *기본 클래스*라고 합니다. 기본 클래스의 멤버를 상속하는 클래스를 *파생 클래스*라고 합니다.
 
@@ -98,7 +98,7 @@ public class B : A // Generates CS0534.
 }
 ```
 
-상속은 클래스 및 인터페이스에만 적용됩니다. 다른 형식 범주(구조체, 대리자 및 열거형)은 상속을 지원하지 않습니다. 이러한 규칙 때문에 다음 예제와 같은 코드를 컴파일하려고 하면 컴파일러 오류 CS0527: "인터페이스 목록에 있는 'ValueType' 형식이 인터페이스가 아닙니다."가 표시됩니다. 이 오류 메시지는 구조체가 구현하는 인터페이스를 정의할 수 있지만 상속은 지원되지 않음을 나타냅니다.
+상속은 클래스 및 인터페이스에만 적용됩니다. 다른 형식 범주(구조체, 대리자 및 열거형)은 상속을 지원하지 않습니다. 이러한 규칙 때문에 다음 예제와 같은 코드를 컴파일하려고 하면 컴파일러 오류 CS0527이 발생합니다. "인터페이스 목록에 있는 'ValueType' 형식이 인터페이스가 아닙니다." 이 오류 메시지는 구조체가 구현하는 인터페이스를 정의할 수 있지만 상속은 지원되지 않음을 나타냅니다.
 
 ```csharp
 using System;
@@ -249,7 +249,7 @@ public struct ValueStructure : ValueType // Generates CS0527.
 
 - 2개의 생성자
 
-  두 `Book` 생성자는 3가지 공용 매개 변수를 공유합니다. 두 *title* 및 *publisher*는 `Publication` 생성자의 매개 변수에 해당합니다. 세 번째는 private `authorName` 필드에 저장되는 *author*입니다. 한 생성자에는 `ISBN` auto 속성에 저장되는 *isbn* 매개 변수가 포함됩니다.
+  두 `Book` 생성자는 3가지 공용 매개 변수를 공유합니다. 두 *title* 및 *publisher*는 `Publication` 생성자의 매개 변수에 해당합니다. 세 번째는 변경할 수 없는 공용 `Author` 속성에 저장되는 *author*입니다. 한 생성자에는 `ISBN` auto 속성에 저장되는 *isbn* 매개 변수가 포함됩니다.
 
   첫 번째 생성자는 [this](../language-reference/keywords/this.md) 키워드를 사용하여 다른 생성자를 호출합니다. 생성자 연결(chaining)은 생성자를 정의하는 일반적인 패턴입니다. 가장 많은 수의 매개 변수를 사용하여 생성자를 호출하면 더 적은 수의 매개 변수를 사용하는 생성자가 기본값을 제공합니다.
 
@@ -257,11 +257,11 @@ public struct ValueStructure : ValueType // Generates CS0527.
 
 - 읽기 전용 `ISBN` 속성: 고유한 10 또는 13자리 숫자인 `Book` 개체의 국제 표준 도서 번호를 반환합니다. ISBN은 `Book` 생성자 중 하나에 인수로 제공됩니다. ISBN은 컴파일러에서 자동 생성되는 private 지원 필드에 저장됩니다.
 
-- 읽기 전용 `Author` 속성. 저자 이름은 두 `Book` 생성자에 인수로 제공되고 private `authorName` 필드에 저장됩니다.
+- 읽기 전용 `Author` 속성. 저자 이름은 두 `Book` 생성자의 인수로 제공되고 속성에 저장됩니다.
 
-- 두 개의 읽기 전용 가격 관련 속성 `Price` 및 `Currency`. 해당 값은 `SetPrice` 메서드 호출에 인수로 제공됩니다. 가격은 private 필드 `bookPrice`에 저장됩니다. `Currency` 속성은 3자리 ISO 통화 기호(예: 미국 달러의 경우 USD)이며 private `ISOCurrencySymbol` 필드에 저장됩니다. ISO 통화 기호는 <xref:System.Globalization.RegionInfo.ISOCurrencySymbol%2A> 속성에서 검색할 수 있습니다.
+- 두 개의 읽기 전용 가격 관련 속성 `Price` 및 `Currency`. 해당 값은 `SetPrice` 메서드 호출에 인수로 제공됩니다. `Currency` 속성은 세 자리 ISO 통화 기호입니다(예: 미국 달러의 경우 USD). ISO 통화 기호는 <xref:System.Globalization.RegionInfo.ISOCurrencySymbol%2A> 속성에서 검색할 수 있습니다. 이러한 두 속성은 모두 외부적으로 읽기 전용이지만 둘 다 `Book` 클래스의 코드로 설정할 수 있습니다.
 
-- `SetPrice` 메서드: `bookPrice` 및 `ISOCurrencySymbol` 필드의 값을 설정합니다. 이러한 값은 `Price` 및 `Currency` 속성에서 반환됩니다.
+- `SetPrice` 메서드는 `Price` 및 `Currency` 속성의 값을 설정합니다. 이러한 값은 동일한 해당 속성으로 반환됩니다.
 
 - `ToString` 메서드(`Publication`에서 상속), <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> 및 <xref:System.Object.GetHashCode%2A> 메서드(<xref:System.Object>에서 상속)에 대해 재정의합니다.
 

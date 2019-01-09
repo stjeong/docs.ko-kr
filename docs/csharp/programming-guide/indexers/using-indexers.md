@@ -5,16 +5,16 @@ ms.date: 10/03/2018
 helpviewer_keywords:
 - indexers [C#], about indexers
 ms.assetid: df70e1a2-3ce3-4aba-ad80-4b2f3538699f
-ms.openlocfilehash: ad5c6f68f5eb2f62d7c6f389e374e1b2db5417c6
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 8c0d145fab69e60a12ebb8b28f087ab643e508b9
+ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53241920"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53397061"
 ---
 # <a name="using-indexers-c-programming-guide"></a>인덱서 사용(C# 프로그래밍 가이드)
 
-인덱서는 클라이언트 응용 프로그램이 배열처럼 액세스할 수 있는 [class](../../../csharp/language-reference/keywords/class.md), [struct](../../../csharp/language-reference/keywords/struct.md), [interface](../../../csharp/language-reference/keywords/interface.md)를 만들 수 있게 해주는 편리한 구문입니다. 인덱서는 내부 컬렉션 또는 배열을 캡슐화하는 데 주로 사용되는 형식에서 자주 구현됩니다. 예를 들어 24시간 동안 10회 기록된 화씨온도를 나타내는 `TempRecord`라는 클래스가 있다고 가정합니다. 클래스에는 온도 값을 저장할 `float[]` 형식의 배열 `temps`가 포함됩니다. 이 클래스에서 인덱서를 구현하면 클라이언트가 `TempRecord` 인스턴스의 온도에 `float temp = tr.temps[4]` 대신 `float temp = tr[4]`로 액세스할 수 있습니다. 인덱서 표기법은 클라이언트 응용 프로그램에 대한 구문을 간소화할 뿐 아니라 클래스와 해당 용도를 다른 개발자가 이해하기 쉽게 만듭니다.  
+인덱서는 클라이언트 애플리케이션이 배열처럼 액세스할 수 있는 [class](../../../csharp/language-reference/keywords/class.md), [struct](../../../csharp/language-reference/keywords/struct.md), [interface](../../../csharp/language-reference/keywords/interface.md)를 만들 수 있게 해주는 편리한 구문입니다. 인덱서는 내부 컬렉션 또는 배열을 캡슐화하는 데 주로 사용되는 형식에서 자주 구현됩니다. 예를 들어 24시간 동안 10회 기록된 화씨온도를 나타내는 `TempRecord`라는 클래스가 있다고 가정합니다. 클래스에는 온도 값을 저장할 `float[]` 형식의 배열 `temps`가 포함됩니다. 이 클래스에서 인덱서를 구현하면 클라이언트가 `TempRecord` 인스턴스의 온도에 `float temp = tr.temps[4]` 대신 `float temp = tr[4]`로 액세스할 수 있습니다. 인덱서 표기법은 클라이언트 애플리케이션에 대한 구문을 간소화할 뿐 아니라 클래스와 해당 용도를 다른 개발자가 이해하기 쉽게 만듭니다.  
   
 클래스 또는 구조체에서 인덱서를 선언하려면 다음 예제에 표시된 대로 [this](../../../csharp/language-reference/keywords/this.md) 키워드를 사용합니다.
 
@@ -25,7 +25,7 @@ public int this[int index]    // Indexer declaration
 }  
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 인덱서의 형식과 해당 매개 변수의 형식은 최소한 인덱서 자체만큼 액세스 가능해야 합니다. 접근성 수준에 대한 자세한 내용은 [액세스 한정자](../../../csharp/language-reference/keywords/access-modifiers.md)를 참조하세요.  
   
@@ -57,7 +57,7 @@ public int this[int index]   // Indexer declaration
   
 ## <a name="indexing-using-other-values"></a>다른 값을 사용하여 인덱싱
 
-C#에서는 인덱스 형식이 정수로 제한되지 않습니다. 예를 들어 인덱서와 함께 문자열을 사용하면 유용할 수 있습니다. 이러한 인덱서는 컬렉션에서 문자열을 검색하고 적절한 값을 반환하여 구현할 수 있습니다. 접근자를 오버로드할 수 있기 때문에 문자열 및 정수 버전이 공존할 수 있습니다.  
+C#은 인덱스 매개 변수 형식을 정수로 제한되지 않습니다. 예를 들어 인덱서와 함께 문자열을 사용하면 유용할 수 있습니다. 이러한 인덱서는 컬렉션에서 문자열을 검색하고 적절한 값을 반환하여 구현할 수 있습니다. 접근자를 오버로드할 수 있기 때문에 문자열 및 정수 버전이 공존할 수 있습니다.  
   
 ## <a name="example-2"></a>예제 2  
   

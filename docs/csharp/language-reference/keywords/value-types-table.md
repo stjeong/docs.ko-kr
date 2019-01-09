@@ -7,36 +7,36 @@ helpviewer_keywords:
 - types [C#], value types
 - types [C#], suffixes
 ms.assetid: 67d8f631-b6e3-4d83-9910-5ec497f8c5f3
-ms.openlocfilehash: d651350f46c0ec1947be9f4f586c341514356fd2
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 2475f63099e47beedc610b8815a8e39e1f7be77e
+ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53244156"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53611219"
 ---
 # <a name="value-types-table-c-reference"></a>값 형식 표(C# 참조)
 
-다음 표에서는 C# 값 형식을 보여 줍니다.  
-  
-|값 형식|범주|형식 접미사|  
-|----------------|--------------|-----------------|  
-|[bool](bool.md)|부울||  
-|[byte](byte.md)|부호 없음, 숫자, [정수](integral-types-table.md)||  
-|[char](char.md)|부호 없음, 숫자, [정수](integral-types-table.md)||  
-|[decimal](decimal.md)|숫자, [부동 소수점](floating-point-types-table.md)|M 또는 m|  
-|[double](double.md)|숫자, [부동 소수점](floating-point-types-table.md)|D 또는 d|  
-|[enum](enum.md)|열거형||  
-|[float](float.md)|숫자, [부동 소수점](floating-point-types-table.md)|F 또는 f|  
-|[int](int.md)|부호 있음, 숫자, [정수](integral-types-table.md)||  
-|[long](long.md)|부호 있음, 숫자, [정수](integral-types-table.md)|L 또는 l|  
-|[sbyte](sbyte.md)|부호 있음, 숫자, [정수](integral-types-table.md)||  
-|[short](short.md)|부호 있음, 숫자, [정수](integral-types-table.md)||  
-|[struct](struct.md)|사용자 정의 구조||  
-|[uint](uint.md)|부호 없음, 숫자, [정수](integral-types-table.md)|U 또는 u|  
-|[ulong](ulong.md)|부호 없음, 숫자, [정수](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU 또는 lu|  
-|[ushort](ushort.md)|부호 없음, 숫자, [정수](integral-types-table.md)||  
+다음 표에서는 C# 값 형식을 보여줍니다.
 
-## <a name="remarks"></a>설명
+|값 형식|범주|형식 접미사|
+|----------------|--------------|-----------------|
+|[bool](bool.md)|부울||
+|[byte](byte.md)|부호 없음, 숫자, [정수](integral-types-table.md)||
+|[char](char.md)|부호 없음, 숫자, [정수](integral-types-table.md)||
+|[decimal](decimal.md)|숫자, [부동 소수점](floating-point-types-table.md)|M 또는 m|
+|[double](double.md)|숫자, [부동 소수점](floating-point-types-table.md)|D 또는 d|
+|[enum](enum.md)|열거형||
+|[float](float.md)|숫자, [부동 소수점](floating-point-types-table.md)|F 또는 f|
+|[int](int.md)|부호 있음, 숫자, [정수](integral-types-table.md)||
+|[long](long.md)|부호 있음, 숫자, [정수](integral-types-table.md)|L 또는 l|
+|[sbyte](sbyte.md)|부호 있음, 숫자, [정수](integral-types-table.md)||
+|[short](short.md)|부호 있음, 숫자, [정수](integral-types-table.md)||
+|[struct](struct.md)|사용자 정의 구조||
+|[uint](uint.md)|부호 없음, 숫자, [정수](integral-types-table.md)|U 또는 u|
+|[ulong](ulong.md)|부호 없음, 숫자, [정수](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU 또는 lu|
+|[ushort](ushort.md)|부호 없음, 숫자, [정수](integral-types-table.md)||
+
+## <a name="remarks"></a>주의
 
 형식 접미사를 사용하여 숫자 리터럴의 형식을 지정합니다. 예:
 
