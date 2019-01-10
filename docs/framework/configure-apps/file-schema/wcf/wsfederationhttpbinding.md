@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wsFederationBinding element
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-ms.openlocfilehash: c9cf6e42aa9811a15e3b787599fe9d1def2c7efe
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 0101f9c06c5461c0008ba72c67fc5a49c1f09b4d
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48847741"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54151873"
 ---
 # <a name="ltwsfederationhttpbindinggt"></a>&lt;wsFederationHttpBinding&gt;
 WS-Federation을 지원하는 바인딩을 정의합니다.  
@@ -21,81 +21,84 @@ wsFederationBinding 요소
 ## <a name="syntax"></a>구문  
   
 ```xml  
-<wsFederationHttpBinding>  
-    <binding   
-        bypassProxyOnLocal="Boolean"  
-        closeTimeout="TimeSpan"   
-        hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="integer"  
-        messageEncoding="Text/Mtom"   
-                name="string"  
-        openTimeout="TimeSpan"   
-        privacyNoticeAt="Uri"  
-        privacyNoticeVersion="Integer"  
-        proxyAddress="Uri"   
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-        textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/ Utf8TextEncoding"  
-        transactionFlow="Boolean"  
-        useDefaultWebProxy="Boolean">  
-        <security mode="None/Message/TransportWithMessageCredential">  
-         <message   
-            algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-            issuedTokenType="string"   
-            issuedKeyType="SymmetricKey/PublicKey"  
-            negotiateServiceCredential="Boolean" >  
-            <claimTypeRequirements>  
-               <add claimType="URI"  
-                    isOptional="Boolean" />  
-            </claimTypeRequirements>  
-                        <issuer address="Uri" >  
-               <headers>  
-                  <add name="String"  
-                       namespace="String" />  
-                          </headers>  
-                              <identity>  
-                                 <certificate encodedValue="String"/>  
-                                <certificateReference findValue="String"   
-                                 isChainIncluded="Boolean"  
-                            storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-                                  storeLocation="LocalMachine/CurrentUser"  
-                                   X509FindType=System.Security.Cryptography.X509certificates.X509findtype/>  
-                                   <dns value="String"/>  
-                                <rsa value="String"/>  
-                                <servicePrincipalName value="String"/>  
-                                <usePrincipalName value="String"/>  
-                              </identity>  
-                        </issuer>  
-                        <issuerMetadata address=String" >  
-               <headers>  
-                  <add name="String"  
-                       namespace="String" />  
-               </headers>  
-               <identity>  
-                  <certificate encodedValue="String"/>  
-                  <certificateReference findValue="String"   
-                     isChainIncluded="Boolean"  
-                     storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-                     storeLocation="LocalMachine/CurrentUser"  
-                     x509FindType=System.Security.Cryptography.X509certificates.X509findtype/>  
-                  <dns value="String"/>  
-                  <rsa value="String"/>  
-                  <servicePrincipalName value="String"/>  
-                  <usePrincipalName value="String"/>  
-               </identity>  
-                        </issuerMetadata>  
-            <tokenRequestParameters>  
-               <xmlElement>  
-               </xmlElement>  
-            </tokenRequestParameters>  
-           </message>  
-        </security>  
-        <reliableSession ordered="Boolean"  
-           inactivityTimeout="TimeSpan"  
-           enabled="Boolean" />  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</wsFederationBinding>  
+<wsFederationHttpBinding>
+  <binding bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxReceivedMessageSize="integer"
+           messageEncoding="Text/Mtom"
+           name="string"
+           openTimeout="TimeSpan"
+           privacyNoticeAt="Uri"
+           privacyNoticeVersion="Integer"
+           proxyAddress="Uri"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/ Utf8TextEncoding"
+           transactionFlow="Boolean"
+           useDefaultWebProxy="Boolean">
+    <security mode="None/Message/TransportWithMessageCredential">
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               issuedTokenType="string"
+               issuedKeyType="SymmetricKey/PublicKey"
+               negotiateServiceCredential="Boolean">
+        <claimTypeRequirements>
+          <add claimType="URI"
+               isOptional="Boolean" />
+        </claimTypeRequirements>
+        <issuer address="Uri" >
+          <headers>
+            <add name="String"
+                 namespace="String" />
+          </headers>
+          <identity>
+            <certificate encodedValue="String" />
+            <certificateReference findValue="String"
+                                  isChainIncluded="Boolean"
+                                  storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                                  storeLocation="LocalMachine/CurrentUser"
+                                  X509FindType="System.Security.Cryptography.X509certificates.X509findtype" />
+            <dns value="String" />
+            <rsa value="String" />
+            <servicePrincipalName value="String" />
+            <usePrincipalName value="String" />
+          </identity>
+        </issuer>
+        <issuerMetadata address="String">
+          <headers>
+            <add name="String"
+                 namespace="String" />
+          </headers>
+          <identity>
+            <certificate encodedValue="String" />
+            <certificateReference findValue="String"
+                                  isChainIncluded="Boolean"
+                                  storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                                  storeLocation="LocalMachine/CurrentUser"
+                                  x509FindType="System.Security.Cryptography.X509certificates.X509findtype" />
+            <dns value="String" />
+            <rsa value="String" />
+            <servicePrincipalName value="String" />
+            <usePrincipalName value="String" />
+          </identity>
+        </issuerMetadata>
+        <tokenRequestParameters>
+          <xmlElement>
+          </xmlElement>
+        </tokenRequestParameters>
+      </message>
+    </security>
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</wsFederationBinding>
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
@@ -118,7 +121,7 @@ wsFederationBinding 요소
 |proxyAddress|HTTP 프록시의 주소를 지정하는 URI입니다. `useDefaultWebProxy`가 `true`일 경우 이 설정은 `null`이어야 합니다. 기본값은 `null`입니다.|  
 |receiveTimeout|받기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:10:00입니다.|  
 |sendTimeout|보내기 작업을 완료하기 위해 제공된 시간 간격을 지정하는 <xref:System.TimeSpan> 값입니다. 이 값은 <xref:System.TimeSpan.Zero>보다 크거나 같아야 합니다. 기본값은 00:01:00입니다.|  
-|textEncoding|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />-Unicode: 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
+|textEncoding|바인딩에서 메시지를 내보내는 데 사용되는 문자 집합 인코딩을 설정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -BigEndianUnicode: 유니코드 BigEndian 인코딩<br />유니코드를 지원 합니다. 16 비트 인코딩입니다.<br />UTF8: 8 비트 인코딩<br /><br /> 기본값은 UTF8입니다. 이 특성은 <xref:System.Text.Encoding> 형식입니다.|  
 |transactionFlow|바인딩에서 WS-Transactions 이동을 지원할지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.|  
 |useDefaultWebProxy|시스템의 자동 구성된 HTTP 프록시 사용 여부를 지정하는 부울 값입니다. 이 특성이 `null`이면 프록시 주소는 `true`이어야 합니다(설정되지 않음). 기본값은 `true`입니다.|  
   
@@ -139,7 +142,7 @@ wsFederationBinding 요소
 ## <a name="remarks"></a>설명  
  페더레이션은 인증 및 권한 부여를 위해 여러 시스템에서 ID를 공유하는 기능입니다. 이러한 ID는 사용자나 시스템을 가리킬 수 있습니다. 페더레이션 HTTP는 SOAP 보안과 혼합 모드 보안을 모두 지원하지만 전송 보안만을 사용하여 지원하지는 않습니다. 이 바인딩은 WS-페더레이션 프로토콜 Windows Communication Foundation (WCF) 지원을 제공합니다. 이 바인딩으로 구성된 서비스는 HTTP 전송을 사용해야 합니다.  
   
- 바인딩은 바인딩 요소의 스택으로 구성됩니다.  가 기본값인 로 설정된 경우  
+ 바인딩은 바인딩 요소의 스택으로 구성됩니다.   가 기본값인 로 설정된 경우  
   
  `wsFederationHttpBinding`에 있는 바인딩 요소의 스택은`wsHttpBinding`  
   
@@ -158,34 +161,34 @@ wsFederationBinding 요소
 ## <a name="example"></a>예제  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<wsFederationHttpBinding>  
-    <binding   
-        bypassProxyOnLocal="false"  
-        transactionFlow="false"  
-        hostNameComparisonMode="WeakWildcard"  
-        maxReceivedMessageSize="1000"  
-        messageEncoding="Mtom"   
-        proxyAddress="http://foo/bar"   
-        textEncoding="Utf16TextEncoding"  
-        useDefaultWebProxy="false">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00" enabled="true" />  
-        <security mode="None">  
-           <message negotiateServiceCredential="false"  
-                algorithmSuite="Aes128"  
-                issuedTokenType="saml"   
-                issuedKeyType="PublicKey">  
-               <issuer address="http://localhost/Sts" />  
-           </message>  
-        </security>  
-    </binding>  
-</wsFederationBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <wsFederationHttpBinding>
+        <binding bypassProxyOnLocal="false"
+                 transactionFlow="false"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://foo/bar"
+                 textEncoding="Utf16TextEncoding"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="None">
+            <message negotiateServiceCredential="false"
+                     algorithmSuite="Aes128"
+                     issuedTokenType="saml"
+                     issuedKeyType="PublicKey">
+              <issuer address="http://localhost/Sts" />
+            </message>
+          </security>
+        </binding>
+      </wsFederationBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## <a name="see-also"></a>참고 항목  
