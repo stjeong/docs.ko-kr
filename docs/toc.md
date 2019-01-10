@@ -245,6 +245,7 @@
 ##### [문자열 보간](csharp/tutorials/intro-to-csharp/interpolated-strings-local.md)
 ##### [목록 컬렉션](csharp/tutorials/intro-to-csharp/arrays-and-collections.md)
 ##### [클래스 소개](csharp/tutorials/intro-to-csharp/introduction-to-classes.md)
+### [C# 6 탐색](csharp/tutorials/exploration/csharp-6.yml)
 ### [nullable 참조 형식 작업](csharp/tutorials/nullable-reference-types.md)
 ### [콘솔 애플리케이션](csharp/tutorials/console-teleprompter.md)
 ### [REST 클라이언트](csharp/tutorials/console-webapiclient.md)
