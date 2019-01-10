@@ -2,12 +2,12 @@
 title: C# 자습서
 description: C# 자습서를 탐색하여 C# 프로그램을 빌드하는 방법과 C# 언어 기능에 관해 학습합니다.
 ms.date: 10/25/2018
-ms.openlocfilehash: 2e7981c0b958e6ff4682dc502b83766f56d6c528
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f49754a9d6fa7523d88fa5ce3a7f57501f434878
+ms.sourcegitcommit: d09c77414e9e4fc72c79b04deee7a756a120674e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195127"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54084669"
 ---
 # <a name="c-tutorials"></a>C# 자습서
 
@@ -47,20 +47,18 @@ C# 자습서를 시작합니다. 브라우저에서 실행할 수 있는 대화�
 
 Hello World 단원 다음에 나오는 모든 소개 자습서는 자체 로컬 개발 환경에서 볼 수 있습니다. 각 자습서가 끝날 때 다음 단원을 온라인으로 진행할지, 사용자 머신에서 진행할지 결정합니다. 환경을 설정하고 사용자 머신에서 다음 자습서를 진행하는 데 유용한 링크가 있습니다.
 
+## <a name="explore-new-features-in-c"></a>C#의 새 기능 살펴보기 #
+
+이 [대화형 탐색](exploration/csharp-6.yml)에서 [C# 6](../whats-new/csharp-6.md)의 새 기능을 사용해 보세요.
+
 ## <a name="general-tutorials"></a>일반 자습서
 
 다음 자습서를 사용하면 [.NET Core](../../core/index.md)를 사용하여 C# 프로그램을 빌드할 수 있습니다.
 
-* [콘솔 응용 프로그램](console-teleprompter.md): 콘솔 I/O, 콘솔 응용 프로그램의 구조 및 태스크 기반 비동기 프로그래밍 모델의 기본 사항에 대해 설명합니다.
-
+* [콘솔 애플리케이션](console-teleprompter.md): 콘솔 I/O, 콘솔 애플리케이션의 구조 및 태스크 기반 비동기 프로그래밍 모델의 기본 사항에 대해 설명합니다.
 * [REST 클라이언트](console-webapiclient.md): C# 언어의 웹 통신, JSON serialization 및 개체 지향 기능에 대해 설명합니다.
-
 * [C# 및 .NET의 상속](inheritance.md): 상속을 사용하여 기본 클래스, 추상 기본 클래스 및 파생 클래스를 정의하는 방법을 비롯하여 C#의 상속에 대해 설명합니다.
-
 * [LINQ 작업](working-with-linq.md): LINQ의 다양한 기능과 LINQ를 지원하는 언어 요소를 보여 줍니다.
-
-* [Docker에서 호스트되는 마이크로 서비스](microservices.md): ASP.NET Core 마이크로 서비스를 빌드하고 Docker에서 호스트하는 과정을 보여 줍니다.
-
 * [문자열 보간](string-interpolation.md): C#에서 형식이 지정된 문자열을 만들기 위해 문자열 보간을 사용하는 방법을 설명합니다.
-
 * [특성 사용](attributes.md): C#에서 특성을 만들고 사용하는 방법을 설명합니다.
+* [Nullable 참조 형식](nullable-reference-types.md): nullable 참조 형식을 사용하여 null 참조에 대한 의도를 나타내는 방법을 설명합니다.
