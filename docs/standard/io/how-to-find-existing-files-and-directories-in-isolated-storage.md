@@ -1,5 +1,5 @@
 ---
-title: '방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기'
+title: '방법: 격리된 스토리지의 기존 파일 및 디렉터리 찾기'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -26,7 +26,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/28/2018
 ms.locfileid: "50202096"
 ---
-# <a name="how-to-find-existing-files-and-directories-in-isolated-storage"></a>방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기
+# <a name="how-to-find-existing-files-and-directories-in-isolated-storage"></a>방법: 격리된 스토리지의 기존 파일 및 디렉터리 찾기
 
 격리된 저장소에서 디렉터리를 검색하려면 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A?displayProperty=nameWithType> 메서드를 사용합니다. 이 메서드는 검색 패턴을 나타내는 문자열을 사용합니다. 검색 패턴에서 단일 문자(?) 및 여러 문자(\*) 와일드카드 문자를 모두 사용할 수 있지만, 와일드카드 문자는 이름의 마지막 부분에 표시되어야 합니다. 예를 들어, `directory1/*ect*`는 올바른 검색 문자열이지만 `*ect*/directory2`는 잘못된 검색 문자열입니다.  
   

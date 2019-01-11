@@ -65,7 +65,7 @@ ms.locfileid: "50201020"
 - [WPF](#wpf472)
 - [ClickOnce](#clickonce)
 
-.NET Framework 4.7.2는 내게 필요한 옵션 기능을 개선하는 데 주력하여 응용 프로그램이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.2에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요.
+.NET Framework 4.7.2는 내게 필요한 옵션 기능을 개선하는 데 주력하여 애플리케이션이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.2에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요.
 
 <a name="core-472" />
 
@@ -195,7 +195,7 @@ Dim cStream = New CryptoStream(stream, transform, mode, leaveOpen:=true)
 
 .NET Framework 4.7.2부터 <xref:System.IO.Compression.DeflateStream> 클래스에서 압축 풀기 작업의 구현은 기본적으로 네이티브 Windows API를 사용하는 것으로 변경되었습니다. 일반적으로 이로 인해 성능이 크게 향상됩니다.
 
-Windows API를 사용한 압축 풀기에 대한 지원은 .NET Framework 4.7.2를 대상으로 하는 응용 프로그램에 기본적으로 사용할 수 있습니다. 이전 버전의 .NET Framework를 대상으로 하지만 .NET Framework 4.7.2에서 실행되는 응용 프로그램은 응용 프로그램 구성 파일에 다음 [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md)를 추가하여 이 동작을 옵트인(opt in)할 수 있습니다.
+Windows API를 사용한 압축 풀기에 대한 지원은 .NET Framework 4.7.2를 대상으로 하는 애플리케이션에 기본적으로 사용할 수 있습니다. 이전 버전의 .NET Framework를 대상으로 하지만 .NET Framework 4.7.2에서 실행되는 애플리케이션은 애플리케이션 구성 파일에 다음 [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md)를 추가하여 이 동작을 옵트인(opt in)할 수 있습니다.
 
 ```xml
 <AppContextSwitchOverrides value="Switch.System.IO.Compression.DoNotUseNativeZipLibraryForDecompression=false" />
@@ -240,9 +240,9 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 
 **Web Forms에서 종속성 주입을 위한 지원**
 
-[DI(종속성 주입)](/aspnet/core/fundamentals/dependency-injection#overview-of-dependency-injection)는 개체와 해당 종속성을 분리하여 종속성이 변경으로 인해 개체의 코드를 더 이상 분리할 필요가 없도록 합니다. .NET Framework 4.7.2를 대상으로 하는 ASP.NET 응용 프로그램을 개발하는 경우 다음 작업을 수행할 수 있습니다.
+[DI(종속성 주입)](/aspnet/core/fundamentals/dependency-injection#overview-of-dependency-injection)는 개체와 해당 종속성을 분리하여 종속성이 변경으로 인해 개체의 코드를 더 이상 분리할 필요가 없도록 합니다. .NET Framework 4.7.2를 대상으로 하는 ASP.NET 애플리케이션을 개발하는 경우 다음 작업을 수행할 수 있습니다.
 
-- ASP.NET 웹 응용 프로그램 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반, 인터페이스 기반 및 생성자 기반 주입을 사용합니다.
+- ASP.NET 웹 애플리케이션 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반, 인터페이스 기반 및 생성자 기반 주입을 사용합니다.
 
 - ASP.NET 웹 사이트 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반 및 인터페이스 기반 주입을 사용합니다.
 
@@ -262,7 +262,7 @@ c.SameSite = SameSiteMode.Lax;
 Dim c As New HttpCookie("secureCookie", "same origin")
 c.SameSite = SameSiteMode.Lax
 ```
-또한 web.config 파일을 수정하여 응용 프로그램 수준에서 SameSite 쿠키를 구성할 수 있습니다.
+또한 web.config 파일을 수정하여 애플리케이션 수준에서 SameSite 쿠키를 구성할 수 있습니다.
 
 ```xml
 <system.web>
@@ -317,7 +317,7 @@ c.SameSite = SameSiteMode.Lax
 
 - <xref:System.Data.SqlClient.SqlEnclaveAttestationParameters> - 특정 증명 프로토콜을 실행하는 데 필요한 정보를 얻기 위해 SQL Server에서 사용하는 증명 매개 변수를 제공합니다.
 
-그런 다음, 응용 프로그램 구성 파일에서 enclave 공급자에 대한 기능을 제공하는 추상 <xref:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider?displayProperty=nameWithType> 클래스의 구체적인 구현을 지정합니다. 예:
+그런 다음, 애플리케이션 구성 파일에서 enclave 공급자에 대한 기능을 제공하는 추상 <xref:System.Data.SqlClient.SqlColumnEncryptionEnclaveProvider?displayProperty=nameWithType> 클래스의 구체적인 구현을 지정합니다. 예:
 
 ```xml
 <configuration>
@@ -347,7 +347,7 @@ enclave 기반 Always Encrypted의 기본 흐름은 다음과 같습니다.
 
 **원본 제공 ResourceDictionaries 찾기**
 
-.NET Framework 4.7.2부터 진단 도우미는 지정된 소스 URI에서 만든  <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.ResourceDictionaries>를 찾을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) 사용자는 Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미를 사용하면 변경 사항이 실행 중인 응용 프로그램에 적용될 수 있도록 ResourceDictionary를 편집할 수 있습니다. 이를 수행하기 위한 한 단계는 실행 중인 응용 프로그램이 편집 중인 사전에서 만든 모든 ResourceDictionaries를 찾는 것입니다. 예를 들어 응용 프로그램이 지정된 원본 URI에서 해당 콘텐츠가 복사된 ResourceDictionary를 선언할 수 있습니다.
+.NET Framework 4.7.2부터 진단 도우미는 지정된 소스 URI에서 만든  <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.ResourceDictionaries>를 찾을 수 있습니다. (이는 프로덕션 애플리케이션이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) 사용자는 Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미를 사용하면 변경 사항이 실행 중인 애플리케이션에 적용될 수 있도록 ResourceDictionary를 편집할 수 있습니다. 이를 수행하기 위한 한 단계는 실행 중인 애플리케이션이 편집 중인 사전에서 만든 모든 ResourceDictionaries를 찾는 것입니다. 예를 들어 애플리케이션이 지정된 원본 URI에서 해당 콘텐츠가 복사된 ResourceDictionary를 선언할 수 있습니다.
 
 ```xml
 <ResourceDictionary Source="MyRD.xaml">
@@ -366,7 +366,7 @@ Dim dictionaries As IEnumerable(Of ResourceDictionary) = ResourceDictionaryDiagn
 
 **ResourceDictionary 소유자 찾기**
 
-.NET Framework 4.7.2부터 진단 도우미는 지정된 <xref:Windows.UI.Xaml.ResourceDictionary>의 소유자를 찾을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) <xref:Windows.UI.Xaml.ResourceDictionary>를 변경할 때마다 WPF는 변경 사항의 영향을 받을 수도 있는 모든 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조를 자동으로 찾습니다.
+.NET Framework 4.7.2부터 진단 도우미는 지정된 <xref:Windows.UI.Xaml.ResourceDictionary>의 소유자를 찾을 수 있습니다. (이는 프로덕션 애플리케이션이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) <xref:Windows.UI.Xaml.ResourceDictionary>를 변경할 때마다 WPF는 변경 사항의 영향을 받을 수도 있는 모든 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조를 자동으로 찾습니다.
 
 Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미는 [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조를 처리하기 위해 이를 확장할 수 있습니다. 이 프로세스의 첫 번째 단계는 사전의 소유자를 찾는 것입니다. 즉, `Resources` 속성이 사전을 참조하는 모든 개체를 찾습니다(<xref:System.Windows.ResourceDictionary.MergedDictionaries?displayProperty=nameWithType> 속성을 통해 직접 또는 간접적). `Resources` 속성이 있는 각 기본 형식을 위한 <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics?displayProperty=nameWithType> 클래스에서 구현된 세 개의 새로운 정적 메서드는 이 단계를 지원합니다.
 
@@ -380,7 +380,7 @@ Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우�
 
 **StaticResource 참조 찾기**
 
-이제 진단 도우미는 [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조가 확인될 때마다 알림을 받을 수 있습니다. (이는 프로덕션 응용 프로그램이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미는 해당 값이 <xref:Windows.UI.Xaml.ResourceDictionary> 변경 내용에 포함된 경우 리소스의 모든 사용을 업데이트해야 할 수도 있습니다. WPF는 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조에 대해 이를 자동으로 수행하지만, [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조에 대해서는 의도적으로 수행하지 않습니다. .NET Framework 4.7.2부터 진단 도우미는 이러한 알림을 사용하여 정적 리소스의 해당 사용을 찾을 수 있습니다.
+이제 진단 도우미는 [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조가 확인될 때마다 알림을 받을 수 있습니다. (이는 프로덕션 애플리케이션이 아닌 진단 도우미에서 사용하기 위한 기능입니다.) Visual Studio의 “편집하며 계속하기” 기능과 같은 진단 도우미는 해당 값이 <xref:Windows.UI.Xaml.ResourceDictionary> 변경 내용에 포함된 경우 리소스의 모든 사용을 업데이트해야 할 수도 있습니다. WPF는 [DynamicResource](../wpf/advanced/dynamicresource-markup-extension.md) 참조에 대해 이를 자동으로 수행하지만, [StaticResource](../wpf/advanced/staticresource-markup-extension.md) 참조에 대해서는 의도적으로 수행하지 않습니다. .NET Framework 4.7.2부터 진단 도우미는 이러한 알림을 사용하여 정적 리소스의 해당 사용을 찾을 수 있습니다.
 
 알림은 새로운 <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.StaticResourceResolved?displayProperty=nameWithType> 이벤트에 의해 구현됩니다.
 
@@ -411,7 +411,7 @@ public class StaticResourceResolvedEventArgs : EventArgs
 
 #### <a name="clickonce"></a>ClickOnce
 
-Windows Forms, WPF(Windows Presentation Foundation) 및 VSTO(Visual Studio Tools for Office)에 대한 HDPI 인식 응용 프로그램은 모두 ClickOnce를 사용하여 배포할 수 있습니다. 다음 항목이 응용 프로그램 매니페스트에 있으면 .NET Framework 4.7.2에서 배포에 성공합니다.
+Windows Forms, WPF(Windows Presentation Foundation) 및 VSTO(Visual Studio Tools for Office)에 대한 HDPI 인식 애플리케이션은 모두 ClickOnce를 사용하여 배포할 수 있습니다. 다음 항목이 애플리케이션 매니페스트에 있으면 .NET Framework 4.7.2에서 배포에 성공합니다.
 
 ```xml
 <windowsSettings>
@@ -419,7 +419,7 @@ Windows Forms, WPF(Windows Presentation Foundation) 및 VSTO(Visual Studio Tools
 </windowsSettings>
 ```
 
-Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트가 아닌 응용 프로그램 구성 파일에서 DPI 인식을 설정하는 이전 해결책은 성공적인 ClickOnce 배포에 더 이상 필요하지 않습니다.
+Windows Forms 애플리케이션의 경우 애플리케이션 매니페스트가 아닌 애플리케이션 구성 파일에서 DPI 인식을 설정하는 이전 해결책은 성공적인 ClickOnce 배포에 더 이상 필요하지 않습니다.
 
 <a name="v471" />
 
@@ -432,7 +432,7 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 - [네트워킹](#net471)
 - [ASP.NET](#asp-net471)
 
-또한 .NET Framework 4.7.1은 내게 필요한 옵션 기능을 개선하는 데 주력하여 응용 프로그램이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.1에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요.
+또한 .NET Framework 4.7.1은 내게 필요한 옵션 기능을 개선하는 데 주력하여 애플리케이션이 보조 기술 사용자에게 적절한 환경을 제공할 수 있도록 했습니다. .NET Framework 4.7.1에서 내게 필요한 옵션의 기능 향상에 대한 자세한 내용은 [.NET Framework의 내게 필요한 옵션의 새로운 기능](whats-new-in-accessibility.md)을 참조하세요.
 
 <a name="core471" />
 
@@ -444,13 +444,13 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 
 **구성 작성기에 대한 지원**
 
-구성 작성기를 사용하여 런타임 시 동적으로 응용 프로그램에 대한 구성 설정을 삽입하고 작성할 수 있습니다. 사용자 지정 구성 작성기를 사용하여 구성 섹션에 있는 기존 데이터를 수정하거나 구성 섹션을 처음부터 새로 작성할 수 있습니다. 구성 작성기를 사용하지 않으면 .config 파일이 정적이며, 응용 프로그램이 시작되기 얼마 전에 해당 파일의 설정이 정의됩니다.
+구성 작성기를 사용하여 런타임 시 동적으로 애플리케이션에 대한 구성 설정을 삽입하고 작성할 수 있습니다. 사용자 지정 구성 작성기를 사용하여 구성 섹션에 있는 기존 데이터를 수정하거나 구성 섹션을 처음부터 새로 작성할 수 있습니다. 구성 작성기를 사용하지 않으면 .config 파일이 정적이며, 애플리케이션이 시작되기 얼마 전에 해당 파일의 설정이 정의됩니다.
 
 사용자 지정 구성 작성기를 만들려면 추상 클래스 <xref:System.Configuration.ConfigurationBuilder>에서 작성기를 파생시켜 <xref:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection%2A?displayProperty=nameWithType> 및 <xref:System.Configuration.ConfigurationBuilder.ProcessRawXml%2A?displayProperty=nameWithType>을 재정의합니다. 또한 .config 파일에 작성기를 정의할 수도 있습니다. 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "Configuration Builders"(구성 작성기) 섹션을 참조하세요.
 
 **런타임 기능 검색**
 
-<xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=nameWithType> 클래스는 컴파일 시간이나 런타임에 미리 정의된 기능이 지정된 .NET 구현에서 지원되는지 확인하는 메커니즘을 제공합니다. 컴파일 시간에 컴파일러는 지정된 필드가 존재하는지 확인하여 기능의 지원 여부를 파악합니다. 존재할 경우 해당 기능을 활용하는 코드를 내보낼 수 있습니다. 런타임 시 응용 프로그램은 <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported%2A?displayProperty=nameWithType> 메서드를 호출한 후 런타임에 코드를 내보낼 수 있습니다. 자세한 내용은 [런타임에서 지원하는 기능을 설명하는 도우미 메서드 추가](https://github.com/dotnet/corefx/issues/17116)를 참조하세요.
+<xref:System.Runtime.CompilerServices.RuntimeFeature?displayProperty=nameWithType> 클래스는 컴파일 시간이나 런타임에 미리 정의된 기능이 지정된 .NET 구현에서 지원되는지 확인하는 메커니즘을 제공합니다. 컴파일 시간에 컴파일러는 지정된 필드가 존재하는지 확인하여 기능의 지원 여부를 파악합니다. 존재할 경우 해당 기능을 활용하는 코드를 내보낼 수 있습니다. 런타임 시 애플리케이션은 <xref:System.Runtime.CompilerServices.RuntimeFeature.IsSupported%2A?displayProperty=nameWithType> 메서드를 호출한 후 런타임에 코드를 내보낼 수 있습니다. 자세한 내용은 [런타임에서 지원하는 기능을 설명하는 도우미 메서드 추가](https://github.com/dotnet/corefx/issues/17116)를 참조하세요.
 
 **값 튜플 형식 serialize 가능**
 
@@ -466,7 +466,7 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 
 **가비지 수집 성능 향상**
 
-.NET Framework 4.7.1의 GC(가비지 수집) 기능이 변경되어 전반적인 성능이 개선되었으며, LOH(큰 개체 힙) 할당 성능이 특히 개선되었습니다. .NET Framework 4.7.1에서는 SOH(작은 개체 힙) 및 LOH 할당에 별도의 잠금이 사용되므로 BGC(백그라운드 GC)가 SOH를 비울 때 LOH 할당이 발생할 수 있습니다. 따라서 다수의 LOH 할당을 수행하는 응용 프로그램은 할당 잠금 경합 감소와 성능 향상 효과를 볼 수 있습니다. 자세한 내용은 [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/)(.NET Framework 4.7.1 런타임 및 컴파일러 기능) 블로그 게시물의 "Runtime -- GC Performance Improvements"(런타임 -- GC 성능 및 개선 사항) 섹션을 참조하세요.
+.NET Framework 4.7.1의 GC(가비지 수집) 기능이 변경되어 전반적인 성능이 개선되었으며, LOH(큰 개체 힙) 할당 성능이 특히 개선되었습니다. .NET Framework 4.7.1에서는 SOH(작은 개체 힙) 및 LOH 할당에 별도의 잠금이 사용되므로 BGC(백그라운드 GC)가 SOH를 비울 때 LOH 할당이 발생할 수 있습니다. 따라서 다수의 LOH 할당을 수행하는 애플리케이션은 할당 잠금 경합 감소와 성능 향상 효과를 볼 수 있습니다. 자세한 내용은 [.NET Framework 4.7.1 Runtime and Compiler Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/28/net-framework-4-7-1-runtime-and-compiler-features/)(.NET Framework 4.7.1 런타임 및 컴파일러 기능) 블로그 게시물의 "Runtime -- GC Performance Improvements"(런타임 -- GC 성능 및 개선 사항) 섹션을 참조하세요.
 
 <a name="net471"/>
 
@@ -482,7 +482,7 @@ Windows Forms 응용 프로그램의 경우 응용 프로그램 매니페스트�
 
 **ASP.NET 응용 프로그램의 실행 단계**
 
-ASP.NET은 23개 이벤트가 포함된 미리 정의된 파이프라인의 요청을 처리합니다. ASP.NET은 실행 단계로 각 이벤트 처리기를 실행합니다. .NET Framework 4.7 이하의 ASP.NET 버전에서는 전용 및 관리 스레드 간의 전환으로 인해 실행 컨텍스트를 진행할 수 없습니다. 대신, ASP.NET이 선택적으로 <xref:System.Web.HttpContext>만 진행합니다. .NET Framework 4.7.1부터는 <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> 메서드가 모듈의 앰비언트 데이터 복원도 허용합니다. 이 기능은 추적, 프로파일링, 진단 또는 트랜잭션과 관련된 라이브러리를 대상으로 합니다(예: 응용 프로그램의 실행 흐름 관리). 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET Execution Step Feature"(ASP.NET 실행 단계 기능)를 참조하세요.
+ASP.NET은 23개 이벤트가 포함된 미리 정의된 파이프라인의 요청을 처리합니다. ASP.NET은 실행 단계로 각 이벤트 처리기를 실행합니다. .NET Framework 4.7 이하의 ASP.NET 버전에서는 전용 및 관리 스레드 간의 전환으로 인해 실행 컨텍스트를 진행할 수 없습니다. 대신, ASP.NET이 선택적으로 <xref:System.Web.HttpContext>만 진행합니다. .NET Framework 4.7.1부터는 <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> 메서드가 모듈의 앰비언트 데이터 복원도 허용합니다. 이 기능은 추적, 프로파일링, 진단 또는 트랜잭션과 관련된 라이브러리를 대상으로 합니다(예: 애플리케이션의 실행 흐름 관리). 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET Execution Step Feature"(ASP.NET 실행 단계 기능)를 참조하세요.
 
 **ASP.NET HttpCookie 구문 분석**
 
@@ -535,7 +535,7 @@ GitHub에서 [.NET Framework 4.7 암호화 개선 예제](https://gist.github.co
 
 **DataContractJsonSerializer를 통한 보다 나은 제어 문자 지원**
 
-.NET Framework 4.7에서 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>는 ECMAScript 6 표준에 따라 제어 문자를 serialize합니다. 이 동작은 .NET Framework 4.7을 대상으로 하는 응용 프로그램에 대해 기본적으로 사용되도록 설정되며, .NET Framework 4.7에서 실행되지만 이전 버전의 .NET Framework를 대상으로 하는 응용 프로그램에 대한 옵트인 기능입니다. 자세한 내용은 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
+.NET Framework 4.7에서 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>는 ECMAScript 6 표준에 따라 제어 문자를 serialize합니다. 이 동작은 .NET Framework 4.7을 대상으로 하는 애플리케이션에 대해 기본적으로 사용되도록 설정되며, .NET Framework 4.7에서 실행되지만 이전 버전의 .NET Framework를 대상으로 하는 애플리케이션에 대한 옵트인 기능입니다. 자세한 내용은 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
 
 <a name="net47" />
 
@@ -557,11 +557,11 @@ NET Framework 4.7에서 ASP.NET에는 다음과 같은 새 기능이 포함됩�
 
 .NET Framework 4.7부터 ASP.NET에서는 개발자가 메모리 내 개체 캐싱 및 메모리 모니터링을 위한 기본 ASP.NET 구현을 대체할 수 있도록 하는 새로운 API 집합을 추가적으로 제공합니다. 개발자는 이제 ASP.NET 구현이 적절하지 않은 경우 다음 세 가지 구성 요소 중 하나를 바꿀 수 있습니다.
 
-- **개체 캐시 저장소**. 개발자는 새 캐시 공급자 구성 섹션에서 새 **ICacheStoreProvider** 인터페이스를 사용하여 ASP.NET 응용 프로그램의 새로운 개체 캐시 구현을 연결할 수 있습니다.
+- **개체 캐시 저장소**. 개발자는 새 캐시 공급자 구성 섹션에서 새 **ICacheStoreProvider** 인터페이스를 사용하여 ASP.NET 애플리케이션의 새로운 개체 캐시 구현을 연결할 수 있습니다.
 
-- **메모리 모니터링**. ASP.NET의 기본 메모리 모니터는 프로세스에 대해 구성된 전용 바이트 제한에 가까워지거나 컴퓨터의 사용 가능한 총 실제 RAM이 부족할 때 응용 프로그램에 알립니다. 이러한 제한에 가까워지면 알림이 발생합니다. 일부 응용 프로그램의 경우 알림이 구성된 제한에 너무 가까운 상태에서 발생하여 제대로 대응하지 못하게 됩니다. 개발자는 <xref:System.Web.Hosting.ApplicationMonitors.MemoryMonitor%2A?displayProperty=nameWithType> 속성으로 메모리 모니터를 직접 작성해 기본 모니터를 대체할 수 있습니다.
+- **메모리 모니터링**. ASP.NET의 기본 메모리 모니터는 프로세스에 대해 구성된 전용 바이트 제한에 가까워지거나 컴퓨터의 사용 가능한 총 실제 RAM이 부족할 때 애플리케이션에 알립니다. 이러한 제한에 가까워지면 알림이 발생합니다. 일부 애플리케이션의 경우 알림이 구성된 제한에 너무 가까운 상태에서 발생하여 제대로 대응하지 못하게 됩니다. 개발자는 <xref:System.Web.Hosting.ApplicationMonitors.MemoryMonitor%2A?displayProperty=nameWithType> 속성으로 메모리 모니터를 직접 작성해 기본 모니터를 대체할 수 있습니다.
 
-- **메모리 제한 반응**. 기본적으로 ASP.NET은 전용 바이트 제한에 가까워지면 개체 캐시를 트리밍하고 주기적으로 <xref:System.GC.Collect%2A?displayProperty=nameWithType>를 호출합니다. 일부 응용 프로그램의 경우 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 호출 빈도 또는 트리밍되는 캐시 양이 효율적이지 않습니다. 이제 개발자는 **IObserver** 구현을 응용 프로그램의 메모리 모니터에 구독하여 기본 동작을 바꾸거나 보완할 수 있습니다.
+- **메모리 제한 반응**. 기본적으로 ASP.NET은 전용 바이트 제한에 가까워지면 개체 캐시를 트리밍하고 주기적으로 <xref:System.GC.Collect%2A?displayProperty=nameWithType>를 호출합니다. 일부 애플리케이션의 경우 <xref:System.GC.Collect%2A?displayProperty=nameWithType> 호출 빈도 또는 트리밍되는 캐시 양이 효율적이지 않습니다. 이제 개발자는 **IObserver** 구현을 애플리케이션의 메모리 모니터에 구독하여 기본 동작을 바꾸거나 보완할 수 있습니다.
 
 <a name="wcf47" />
 
@@ -571,7 +571,7 @@ WCF(Windows Communication Foundation)는 다음과 같은 기능 및 변경 내�
 
 **TLS1.1.1 또는 TLS1.2에 대한 기본 메시지 보안 설정 구성 가능**
 
-.NET Framework 4.7부터 WCF에서 SSL 3.0 및 TSL 1.0 외에도 TSL 1.1 또는 TLS 1.2를 기본 메시지 보안 프로토콜로 구성할 수 있습니다. 이것은 옵트인 설정으로 이 기능을 사용하려면 응용 프로그램 구성 파일에 다음 항목을 추가해야 합니다.
+.NET Framework 4.7부터 WCF에서 SSL 3.0 및 TSL 1.0 외에도 TSL 1.1 또는 TLS 1.2를 기본 메시지 보안 프로토콜로 구성할 수 있습니다. 이것은 옵트인 설정으로 이 기능을 사용하려면 애플리케이션 구성 파일에 다음 항목을 추가해야 합니다.
 
 ```xml
 <runtime>
@@ -596,9 +596,9 @@ WCF에는 경합 상태를 제거하는 다양한 코드 변경 내용이 포함
 
 **높은 DPI 지원**
 
-.NET Framework 4.7을 대상으로 하는 응용 프로그램부터, .NET Framework는 Windows Forms 응용 프로그램에 대한 높은 DPI 및 동적 DPI 지원을 제공합니다. 높은 DPI 지원은 높은 DPI 모니터에는 폼 및 컨트롤의 모양과 레이아웃을 개선합니다. 동적 DPI는 사용자가 실행 중인 응용 프로그램의 DPI 또는 디스플레이 배율을 변경할 때 폼 및 컨트롤의 모양과 레이아웃을 변경합니다.
+.NET Framework 4.7을 대상으로 하는 애플리케이션부터, .NET Framework는 Windows Forms 애플리케이션에 대한 높은 DPI 및 동적 DPI 지원을 제공합니다. 높은 DPI 지원은 높은 DPI 모니터에는 폼 및 컨트롤의 모양과 레이아웃을 개선합니다. 동적 DPI는 사용자가 실행 중인 애플리케이션의 DPI 또는 디스플레이 배율을 변경할 때 폼 및 컨트롤의 모양과 레이아웃을 변경합니다.
 
-높은 DPI 지원은 응용 프로그램 구성 파일의 [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) 섹션을 정의하여 구성하는 옵트인 기능입니다. Windows Forms 응용 프로그램에 높은 DPI 지원 및 동적 DPI 지원을 추가하는 방법에 대한 자세한 내용은 [Windows Forms의 높은 DPI 지원](../winforms/high-dpi-support-in-windows-forms.md)을 참조하세요.
+높은 DPI 지원은 응용 프로그램 구성 파일의 [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) 섹션을 정의하여 구성하는 옵트인 기능입니다. Windows Forms 애플리케이션에 높은 DPI 지원 및 동적 DPI 지원을 추가하는 방법에 대한 자세한 내용은 [Windows Forms의 높은 DPI 지원](../winforms/high-dpi-support-in-windows-forms.md)을 참조하세요.
 
 <a name="WPF47" />
 
@@ -612,7 +612,7 @@ WISP(Windows 잉크 서비스 플랫폼) 대신 [WM_POINTER 메시지](https://d
 
 **WPF 인쇄 API에 대한 새로운 구현**
 
-<xref:System.Printing.PrintQueue?displayProperty=nameWithType> 클래스의 WPF 인쇄 API는 사용되지 않는 [XPS 인쇄 API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx) 대신, Windows [인쇄 문서 패키지 API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx)를 호출합니다. 이러한 변경 내용이 응용 프로그램 호환성에 미치는 영향에 대해서는 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
+<xref:System.Printing.PrintQueue?displayProperty=nameWithType> 클래스의 WPF 인쇄 API는 사용되지 않는 [XPS 인쇄 API](https://msdn.microsoft.com/library/windows/desktop/ff686814(v=vs.85).aspx) 대신, Windows [인쇄 문서 패키지 API](https://msdn.microsoft.com/library/windows/desktop/hh448418(v=vs.85).aspx)를 호출합니다. 이러한 변경 내용이 애플리케이션 호환성에 미치는 영향에 대해서는 [.NET Framework 4.7의 대상 다시 지정 변경 내용](../migration-guide/retargeting-changes-in-the-net-framework-4-7.md)을 참조하세요.
 
 <a name="v462" />
 
@@ -869,7 +869,7 @@ End Function
 
 `Auto`
 
-Azure SQL Database에 연결하는 응용 프로그램에 대한 연결 풀 차단 기간은 비활성화되고, 다른 SQL Server 인스턴스에 연결하는 응용 프로그램에 대한 연결 풀 차단 기간은 활성화됩니다. 기본값입니다. 서버 엔드포인트 이름이 다음 중 하나로 끝나는 경우 Azure SQL Database로 간주됩니다.
+Azure SQL Database에 연결하는 애플리케이션에 대한 연결 풀 차단 기간은 비활성화되고, 다른 SQL Server 인스턴스에 연결하는 애플리케이션에 대한 연결 풀 차단 기간은 활성화됩니다. 기본값입니다. 서버 엔드포인트 이름이 다음 중 하나로 끝나는 경우 Azure SQL Database로 간주됩니다.
 
 - .database.windows.net
 
@@ -902,7 +902,7 @@ Azure SQL Database에 연결하는 응용 프로그램에 대한 연결 풀 차�
 
  **CNG를 사용하여 저장한 인증서에 대한 WCF 전송 보안 지원**
 
- WCF 전송 보안에서 Windows 암호화 라이브러리(CNG)를 사용하여 저장한 인증서를 지원합니다. [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서 이 지원은 지수 길이가 32비트 이하인 공개 키로 인증서를 사용하도록 제한됩니다. 응용 프로그램이 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]를 대상으로 하는 경우 이 기능은 기본적으로 켜집니다.
+ WCF 전송 보안에서 Windows 암호화 라이브러리(CNG)를 사용하여 저장한 인증서를 지원합니다. [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서 이 지원은 지수 길이가 32비트 이하인 공개 키로 인증서를 사용하도록 제한됩니다. 애플리케이션이 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]를 대상으로 하는 경우 이 기능은 기본적으로 켜집니다.
 
  [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 및 이전 버전을 대상으로 하지만 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서 실행 중인 응용 프로그램의 경우 app.config 또는 web.config 파일의 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음 줄을 추가하여 이 기능을 사용하도록 설정할 수 있습니다.
 
@@ -940,14 +940,14 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
 **NetNamedPipeBinding 가장 일치하는 항목**
 
- WCF에는 클라이언트 응용 프로그램에서 요청한 항목과 가장 일치하는 URI를 수신하는 서비스에 항상 연결하도록 설정 가능한 새 앱 설정이 있습니다. 이 앱 설정을 `false`(기본값)로 지정한 경우 클라이언트에서 <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하여 요청한 URI의 부분 문자열인 URI를 수신하는 서비스에 연결하려고 시도할 수 있습니다.
+ WCF에는 클라이언트 애플리케이션에서 요청한 항목과 가장 일치하는 URI를 수신하는 서비스에 항상 연결하도록 설정 가능한 새 앱 설정이 있습니다. 이 앱 설정을 `false`(기본값)로 지정한 경우 클라이언트에서 <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하여 요청한 URI의 부분 문자열인 URI를 수신하는 서비스에 연결하려고 시도할 수 있습니다.
 
  예를 들어 클라이언트가 `net.pipe://localhost/Service1`에서 수신하는 서비스에 연결하려고 하지만, 관리자 권한으로 실행 중인 컴퓨터의 다른 서비스에서 `net.pipe://localhost`를 수신하고 있습니다. 이 앱 설정을 `false`로 지정한 경우 클라이언트에서 잘못된 서비스에 연결하려고 시도합니다. 앱 설정을 `true`로 설정하면 클라이언트에서는 항상 가장 일치하는 서비스에 연결합니다.
 
 > [!NOTE]
 > <xref:System.ServiceModel.NetNamedPipeBinding>을 사용하는 클라이언트는 전체 엔드포인트 주소 대신 서비스의 기준 주소(있는 경우)를 기반으로 서비스를 찾습니다. 이 설정을 항상 작동하게 하려면 서비스에서 고유 기준 주소를 사용해야 합니다.
 
- 이 변경을 사용하려면 클라이언트 응용 프로그램의 App.config 또는 Web.config 파일에 다음 앱 설정을 추가합니다.
+ 이 변경을 사용하려면 클라이언트 애플리케이션의 App.config 또는 Web.config 파일에 다음 앱 설정을 추가합니다.
 
 ```xml
 <configuration>
@@ -1000,15 +1000,15 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
  **소프트 키보드 지원**
 
- 소프트 키보드 지원을 사용하면 텍스트 입력을 수행할 수 있는 컨트롤을 통해 터치 입력을 수신할 때 Windows 10의 새로운 소프트 키보드를 자동으로 호출하거나 해제하여 WPF 응용 프로그램에서 포커스를 추적할 수 있습니다.
+ 소프트 키보드 지원을 사용하면 텍스트 입력을 수행할 수 있는 컨트롤을 통해 터치 입력을 수신할 때 Windows 10의 새로운 소프트 키보드를 자동으로 호출하거나 해제하여 WPF 애플리케이션에서 포커스를 추적할 수 있습니다.
 
- 이전 버전 .NET Framework의 WPF 응용 프로그램에서는 포커스 추적을 사용하려면 WPF 펜/터치 제스처 지원을 사용하지 않도록 설정해야 합니다.  따라서 WPF 응용 프로그램에서는 전체 WPF 터치 지원을 선택하거나 Windows 마우스 승격을 사용해야 합니다.
+ 이전 버전 .NET Framework의 WPF 애플리케이션에서는 포커스 추적을 사용하려면 WPF 펜/터치 제스처 지원을 사용하지 않도록 설정해야 합니다.  따라서 WPF 애플리케이션에서는 전체 WPF 터치 지원을 선택하거나 Windows 마우스 승격을 사용해야 합니다.
 
  **모니터별 DPI**
 
  WPF 앱에 대해 최근에 확산되는 높은 DPI 및 하이브리드 DPI 환경을 지원하기 위해 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]의 WPF에서는 모니터별 인식을 사용하도록 지정합니다. 모니터별 DPI를 인식하도록 WPF 앱을 설정하는 방법에 대한 자세한 내용은 GitHub의 [samples and developer guide](https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI)(샘플 및 개발자 가이드)를 참조하십시오.
 
- 이전 버전의.NET Framework에서는 WPF 앱은 시스템 DPI를 인식합니다. 즉, 응용 프로그램의 UI는 앱이 렌더링되는 모니터의 DPI에 따라 OS에 의해 적절하게 확장됩니다. ,
+ 이전 버전의.NET Framework에서는 WPF 앱은 시스템 DPI를 인식합니다. 즉, 애플리케이션의 UI는 앱이 렌더링되는 모니터의 DPI에 따라 OS에 의해 적절하게 확장됩니다. ,
 
  [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 아래에서 실행 중인 앱의 경우 다음과 같이 응용 프로그램 구성 파일의 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 구성 문을 추가하여 WPF 앱에서 모니터별 DPI 변경을 사용하지 않도록 설정할 수 있습니다.
 
@@ -1025,19 +1025,19 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
  **다시 호스트된 WF 디자이너에서 C# 식 및 IntelliSense 지원**
 
- [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 이상에서 WF는 Visual Studio 디자이너와 코드 워크플로 모두에서 C# 식을 지원합니다. 다시 호스트된 워크플로 디자이너는 Visual Studio 외부 응용 프로그램(예: WPF)에서 워크플로 디자이너가 위치할 수 있도록 해주는 WF의 주요 기능입니다.  Windows Workflow Foundation을 사용하면 다시 호스트된 워크플로 디자이너에서 C# 식 및 IntelliSense를 지원할 수 있습니다. 자세한 내용은 [Windows Workflow Foundation 블로그](https://go.microsoft.com/fwlink/?LinkID=809042&clcid=0x409)를 참조하십시오.
+ [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 이상에서 WF는 Visual Studio 디자이너와 코드 워크플로 모두에서 C# 식을 지원합니다. 다시 호스트된 워크플로 디자이너는 Visual Studio 외부 애플리케이션(예: WPF)에서 워크플로 디자이너가 위치할 수 있도록 해주는 WF의 주요 기능입니다.  Windows Workflow Foundation을 사용하면 다시 호스트된 워크플로 디자이너에서 C# 식 및 IntelliSense를 지원할 수 있습니다. 자세한 내용은 [Windows Workflow Foundation 블로그](https://go.microsoft.com/fwlink/?LinkID=809042&clcid=0x409)를 참조하십시오.
 
  `Availability of IntelliSense when a customer rebuilds a workflow project from Visual Studio`[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 이전 버전의 .NET Framework에서는 고객이 Visual Studio에서 워크플로 프로젝트를 다시 작성할 때 WF Designer IntelliSense가 중단됩니다. 프로젝트가 빌드되면 워크플로 형식을 디자이너에서 찾을 수 없으므로 IntelliSense의 누락된 워크플로 형식에 대한 경고가 **오류 목록** 창에 표시됩니다. [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서는 이 문제를 해결하고 IntelliSense를 사용할 수 있도록 해줍니다.
 
   **워크플로 추적 기능이 설정된 Workflow V1 응용 프로그램을 이제 FIPS 모드로 실행 가능**
 
- 이제 FIPS 호환성 모드를 사용하는 컴퓨터에서 워크플로 추적이 설정된 워크플로 버전 1 스타일 응용 프로그램을 실행할 수 있습니다. 이 시나리오를 사용하려면 app.config 파일을 다음과 같이 변경해야 합니다.
+ 이제 FIPS 호환성 모드를 사용하는 컴퓨터에서 워크플로 추적이 설정된 워크플로 버전 1 스타일 애플리케이션을 실행할 수 있습니다. 이 시나리오를 사용하려면 app.config 파일을 다음과 같이 변경해야 합니다.
 
 ```xml
 <add key="microsoft:WorkflowRuntime:FIPSRequired" value="true" />
 ```
 
- 이 시나리오를 사용하지 않도록 설정한 경우 응용 프로그램을 실행하면 계속해서 예외가 발생하고 “이 구현은 Windows Platform FIPS 유효성을 검사한 암호화 알고리즘의 일부가 아닙니다.”라는 메시지가 표시됩니다.
+ 이 시나리오를 사용하지 않도록 설정한 경우 애플리케이션을 실행하면 계속해서 예외가 발생하고 “이 구현은 Windows Platform FIPS 유효성을 검사한 암호화 알고리즘의 일부가 아닙니다.”라는 메시지가 표시됩니다.
 
  **Visual Studio Workflow Designer에서 동적 업데이트를 사용할 때 워크플로 기능 향상**
 
@@ -1050,7 +1050,7 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
 ### <a name="clickonce"></a>ClickOnce
 
-ClickOnce는 이미 지원되는 1.0 프로토콜 외에 TLS 1.1 및 TLS 1.2를 지원하도록 업데이트되었습니다. ClickOnce는 필요한 프로토콜을 자동으로 검색하므로, TLS 1.1 및 1.2 지원하기 위해 ClickOnce 응용 프로그램에서 별도의 단계를 수행할 필요가 없습니다.
+ClickOnce는 이미 지원되는 1.0 프로토콜 외에 TLS 1.1 및 TLS 1.2를 지원하도록 업데이트되었습니다. ClickOnce는 필요한 프로토콜을 자동으로 검색하므로, TLS 1.1 및 1.2 지원하기 위해 ClickOnce 애플리케이션에서 별도의 단계를 수행할 필요가 없습니다.
 
 <a name="UWPConvert" />
 
@@ -1118,13 +1118,13 @@ ClickOnce는 이미 지원되는 1.0 프로토콜 외에 TLS 1.1 및 TLS 1.2를 
 
 **하드웨어로 보호된 키에 대해 Always Encrypted 지원**
 
- ADO.NET은 이제 상시 암호화 열 마스터 키를 HSM(하드웨어 보안 모듈)에 고유하게 저장할 수 있습니다. 이 지원을 통해 고객은 사용자 지정 열 마스터 키 저장소 공급자를 작성하고 응용 프로그램에 등록하지 않고도 HSM에 저장된 비동기 키를 활용할 수 있습니다.
+ ADO.NET은 이제 상시 암호화 열 마스터 키를 HSM(하드웨어 보안 모듈)에 고유하게 저장할 수 있습니다. 이 지원을 통해 고객은 사용자 지정 열 마스터 키 저장소 공급자를 작성하고 애플리케이션에 등록하지 않고도 HSM에 저장된 비동기 키를 활용할 수 있습니다.
 
  HSM에 저장된 열 마스터 키로 보호된 상시 암호화 데이터에 액세스하려면 고객이 HSM 공급업체에서 제공한 CSP 공급자 또는 CNG 키 저장소 공급자를 앱 서버 또는 클라이언트 컴퓨터에 설치해야 합니다.
 
  **AlwaysOn의 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A> 연결 동작 개선**
 
-SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠른 연결을 제공합니다. 응용 프로그램이 다른 서브넷의 AlwaysOn AG(가용성 그룹)에 연결되었는지 투명하게 감지하고 현재 활성 서버를 신속하게 검색하여 서버에 대한 연결을 제공합니다. 이 릴리스 전에는 AlwaysOn 가용성 그룹에 연결되었음을 나타내기 위해 응용 프로그램에서 `"MultisubnetFailover=true"`를 포함하도록 연결 문자열을 설정해야 했습니다. 연결 키워드를 `true`로 설정하지 않은 경우 응용 프로그램에서 AlwaysOn 가용성 그룹에 연결하는 동안 시간 초과가 발생할 수 있습니다. 이 릴리스에서는 더 이상 응용 프로그램에서 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>를 `true`로 설정할 필요가 *없습니다*. Always On 가용성 그룹의 SqlClient 지원에 대한 자세한 내용은 [고가용성 및 재해 복구에 대한 SqlClient 지원](../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md)을 참조하십시오.
+SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠른 연결을 제공합니다. 애플리케이션이 다른 서브넷의 AlwaysOn AG(가용성 그룹)에 연결되었는지 투명하게 감지하고 현재 활성 서버를 신속하게 검색하여 서버에 대한 연결을 제공합니다. 이 릴리스 전에는 AlwaysOn 가용성 그룹에 연결되었음을 나타내기 위해 애플리케이션에서 `"MultisubnetFailover=true"`를 포함하도록 연결 문자열을 설정해야 했습니다. 연결 키워드를 `true`로 설정하지 않은 경우 애플리케이션에서 AlwaysOn 가용성 그룹에 연결하는 동안 시간 초과가 발생할 수 있습니다. 이 릴리스에서는 더 이상 애플리케이션에서 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>를 `true`로 설정할 필요가 *없습니다*. Always On 가용성 그룹의 SqlClient 지원에 대한 자세한 내용은 [고가용성 및 재해 복구에 대한 SqlClient 지원](../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md)을 참조하십시오.
 
 <a name="WPF461" />
 
@@ -1164,7 +1164,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 - 이러한 파일은 읽기 전용으로 간주되며 시스템에 의해 수정되지 않습니다.
 
 > [!NOTE]
-> 이러한 새 파일 형식은 WPF 맞춤법 검사 API에 의해 직접 지원되지 않으며 응용 프로그램에서 WPF에 제공된 사용자 지정 사전은 계속 .lex 파일을 사용해야 합니다.
+> 이러한 새 파일 형식은 WPF 맞춤법 검사 API에 의해 직접 지원되지 않으며 애플리케이션에서 WPF에 제공된 사용자 지정 사전은 계속 .lex 파일을 사용해야 합니다.
 
 **샘플**
 
@@ -1187,7 +1187,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - <xref:System.Transactions.TransactionInterop.GetTransmitterPropagationToken%2A?displayProperty=nameWithType>
 
- 비 MSDTC 트랜잭션 프로모터가 등록된 경우 향후 정의된 프로토콜을 사용하여 지속적인 인리스트먼트에 사용되어야 합니다. 트랜잭션 프로모터의 <xref:System.Guid>는 <xref:System.Transactions.Transaction.PromoterType%2A> 속성을 사용하여 가져올 수 있습니다. 트랜잭션이 승격될 때 트랜잭션 프로모터는 승격된 토큰을 나타내는 <xref:System.Byte> 배열을 제공합니다. 응용 프로그램에서는 <xref:System.Transactions.Transaction.GetPromotedToken%2A> 메서드를 사용하여 비 MSDTC 승격된 트랜잭션에 대한 승격된 토큰을 가져올 수 있습니다.
+ 비 MSDTC 트랜잭션 프로모터가 등록된 경우 향후 정의된 프로토콜을 사용하여 지속적인 인리스트먼트에 사용되어야 합니다. 트랜잭션 프로모터의 <xref:System.Guid>는 <xref:System.Transactions.Transaction.PromoterType%2A> 속성을 사용하여 가져올 수 있습니다. 트랜잭션이 승격될 때 트랜잭션 프로모터는 승격된 토큰을 나타내는 <xref:System.Byte> 배열을 제공합니다. 애플리케이션에서는 <xref:System.Transactions.Transaction.GetPromotedToken%2A> 메서드를 사용하여 비 MSDTC 승격된 트랜잭션에 대한 승격된 토큰을 가져올 수 있습니다.
 
  승격 작업을 완료하려면 새 <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%28System.Transactions.IPromotableSinglePhaseNotification%2CSystem.Guid%29?displayProperty=nameWithType> 오버로드 사용자가 특정 호출 시퀀스를 따라야 합니다. 이러한 규칙은 메서드 설명서에 나와 있습니다.
 
@@ -1208,7 +1208,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 <a name="NGEN461" />
 
 ### <a name="native-image-generator-ngen-pdbs"></a>NGEN(네이티브 이미지 생성기) PDB
- 컴퓨터 간 이벤트 추적을 사용하면 고객이 시스템 A에서 프로그램을 프로파일링하고 소스 줄 매핑을 사용하여 시스템 B에서 프로파일링 데이터를 확인할 수 있습니다. 이전 버전의 .NET Framework에서는 사용자가 프로파일링된 시스템의 모든 모듈 및 네이티브 이미지를 IL PDB가 포함된 분석 시스템으로 복사하여 원본-네이티브 매핑을 만들었습니다. 이 프로세스는 휴대폰 응용 프로그램 등 비교적 파일이 작은 경우에는 잘 작동하지만 데스크톱 시스템에서는 파일이 매우 커질 수 있으며 복사하는 데 많은 시간이 필요합니다.
+ 컴퓨터 간 이벤트 추적을 사용하면 고객이 시스템 A에서 프로그램을 프로파일링하고 소스 줄 매핑을 사용하여 시스템 B에서 프로파일링 데이터를 확인할 수 있습니다. 이전 버전의 .NET Framework에서는 사용자가 프로파일링된 시스템의 모든 모듈 및 네이티브 이미지를 IL PDB가 포함된 분석 시스템으로 복사하여 원본-네이티브 매핑을 만들었습니다. 이 프로세스는 휴대폰 애플리케이션 등 비교적 파일이 작은 경우에는 잘 작동하지만 데스크톱 시스템에서는 파일이 매우 커질 수 있으며 복사하는 데 많은 시간이 필요합니다.
 
  Ngen PDB를 사용하면 NGen이 IL PDB에 대한 종속성 없이 IL-네이티브 매핑이 포함된 PDB를 만들 수 있습니다. 시스템 간 이벤트 추적 시나리오에서는 시스템 A에서 생성된 네이티브 이미지 PDB를 시스템 B로 복사하고 [Debug Interface Access API](/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk-reference)를 사용하여 IL PDB의 소스-IL 매핑 및 네이티브 이미지 PDB의 IL-네이티브 매핑을 읽기만 하면 됩니다. 두 매핑을 함께 사용하면 소스-네이티브 매핑이 생성됩니다. 네이티브 이미지 PDB는 모든 모듈 및 네이티브 이미지보다 훨씬 작으므로 시스템 A에서 시스템 B로 복사하는 프로세스가 훨씬 빨라집니다.
 
@@ -1219,9 +1219,9 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - **ASP.NET Core**
 
-     .NET 2015에는 최신 클라우드 기반 앱을 빌드하기 위한 린(lean) .NET 구현인 ASP.NET Core가 포함되어 있습니다. ASP.NET Core는 모듈식이므로 응용 프로그램에 필요한 기능만 포함할 수 있습니다. IIS에서 호스트되거나 사용자 지정 프로세스에서 자체 호스트될 수 있으며 동일한 서버에서 다양한 .NET Framework 버전으로 앱을 실행할 수 있습니다. 클라우드 배포용으로 설계된 새 환경 구성 시스템도 포함됩니다.
+     .NET 2015에는 최신 클라우드 기반 앱을 빌드하기 위한 린(lean) .NET 구현인 ASP.NET Core가 포함되어 있습니다. ASP.NET Core는 모듈식이므로 애플리케이션에 필요한 기능만 포함할 수 있습니다. IIS에서 호스트되거나 사용자 지정 프로세스에서 자체 호스트될 수 있으며 동일한 서버에서 다양한 .NET Framework 버전으로 앱을 실행할 수 있습니다. 클라우드 배포용으로 설계된 새 환경 구성 시스템도 포함됩니다.
 
-     MVC, Web API 및 웹 페이지가 MVC 6이라는 단일 프레임워크로 통합됩니다. Visual Studio 2015 이상의 도구를 통해 ASP.NET Core 앱을 빌드합니다. 기존 응용 프로그램도 새로운 .NET Framework에서 작동하지만 MVC 6 또는 SignalR 3을 사용하는 앱을 빌드하려면 Visual Studio 2015 이상의 프로젝트 시스템을 사용해야 합니다.
+     MVC, Web API 및 웹 페이지가 MVC 6이라는 단일 프레임워크로 통합됩니다. Visual Studio 2015 이상의 도구를 통해 ASP.NET Core 앱을 빌드합니다. 기존 애플리케이션도 새로운 .NET Framework에서 작동하지만 MVC 6 또는 SignalR 3을 사용하는 앱을 빌드하려면 Visual Studio 2015 이상의 프로젝트 시스템을 사용해야 합니다.
 
      자세한 내용은 [ASP.NET Core](/aspnet/core/)를 참조하세요.
 
@@ -1251,7 +1251,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
          또한 HTTP/2는 <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> API를 사용하는 Windows 10 UWP(유니버설 Windows 플랫폼) 앱에서 지원되며 기본적으로 설정되어 있습니다.
 
-         ASP.NET 응용 프로그램의 [PUSH_PROMISE](https://http2.github.io/http2-spec/#PUSH_PROMISE) 기능 사용 방법을 제공하기 위해 두 개의 오버로드(<xref:System.Web.HttpResponse.PushPromise%28System.String%29> 및 <xref:System.Web.HttpResponse.PushPromise%28System.String%2CSystem.String%2CSystem.Collections.Specialized.NameValueCollection%29>)와 함께 새 메서드가 <xref:System.Web.HttpResponse> 클래스에 추가되었습니다.
+         ASP.NET 애플리케이션의 [PUSH_PROMISE](https://http2.github.io/http2-spec/#PUSH_PROMISE) 기능 사용 방법을 제공하기 위해 두 개의 오버로드(<xref:System.Web.HttpResponse.PushPromise%28System.String%29> 및 <xref:System.Web.HttpResponse.PushPromise%28System.String%2CSystem.String%2CSystem.Collections.Specialized.NameValueCollection%29>)와 함께 새 메서드가 <xref:System.Web.HttpResponse> 클래스에 추가되었습니다.
 
         > [!NOTE]
         > ASP.NET Core는 HTTP/2를 지원하는 반면 PUSH PROMISE 기능에 대한 지원은 아직 추가되지 않았습니다.
@@ -1278,7 +1278,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - **ADO.NET**
 
-     ADO .NET은 이제 SQL Server 2016 CTP2(Community Technology Preview 2)에서 제공되는 상시 암호화 기능을 지원합니다. 항상 암호화 기능을 사용하면 SQL Server는 암호화된 데이터에 대해 작업을 수행할 수 있으며 무엇보다도, 암호화 키는 서버가 아니라 고객의 신뢰할 수 있는 환경 내에서 응용 프로그램과 함께 상주합니다. 항상 암호화 기능은 DBA가 일반 텍스트 데이터에 액세스할 수 없도록 고객 데이터를 보호합니다. 데이터 암호화 및 암호 해독은 드라이버 수준에서 투명하게 이루어지며 기존 응용 프로그램에 대한 변경을 최소화합니다. 자세한 내용은 [상시 암호화(데이터베이스 엔진)](/sql/relational-databases/security/encryption/always-encrypted-database-engine) 및 [상시 암호화(클라이언트 개발)](/sql/relational-databases/security/encryption/always-encrypted-client-development)를 참조하십시오.
+     ADO .NET은 이제 SQL Server 2016 CTP2(Community Technology Preview 2)에서 제공되는 상시 암호화 기능을 지원합니다. 항상 암호화 기능을 사용하면 SQL Server는 암호화된 데이터에 대해 작업을 수행할 수 있으며 무엇보다도, 암호화 키는 서버가 아니라 고객의 신뢰할 수 있는 환경 내에서 애플리케이션과 함께 상주합니다. 항상 암호화 기능은 DBA가 일반 텍스트 데이터에 액세스할 수 없도록 고객 데이터를 보호합니다. 데이터 암호화 및 암호 해독은 드라이버 수준에서 투명하게 이루어지며 기존 애플리케이션에 대한 변경을 최소화합니다. 자세한 내용은 [상시 암호화(데이터베이스 엔진)](/sql/relational-databases/security/encryption/always-encrypted-database-engine) 및 [상시 암호화(클라이언트 개발)](/sql/relational-databases/security/encryption/always-encrypted-client-development)를 참조하십시오.
 
 - **관리 코드에 대한 64비트 JIT 컴파일러**
 
@@ -1352,7 +1352,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
          <xref:System.AppContext>에서는 라이브러리가 호환성 스위치를 정의 및 노출하는 반면, 라이브러리에 종속된 코드가 해당 스위치를 설정하여 라이브러리 동작에 영향을 줄 수 있습니다. 기본적으로 라이브러리는 새로운 기능을 제공하며 스위치가 설정된 경우에만 변경합니다(즉, 이전 기능 제공).
 
-         응용 프로그램(또는 라이브러리)은 종속 라이브러리가 정의하는 스위치 값(항상 <xref:System.Boolean> 값)을 선언할 수 있습니다. 스위치는 암시적으로 항상 `false`입니다. 스위치를 `true`로 설정하면 사용할 수 있습니다. 스위치를 명시적으로 `false`로 설정하면 새 동작이 제공됩니다.
+         애플리케이션(또는 라이브러리)은 종속 라이브러리가 정의하는 스위치 값(항상 <xref:System.Boolean> 값)을 선언할 수 있습니다. 스위치는 암시적으로 항상 `false`입니다. 스위치를 `true`로 설정하면 사용할 수 있습니다. 스위치를 명시적으로 `false`로 설정하면 새 동작이 제공됩니다.
 
         ```csharp
         AppContext.SetSwitch("Switch.AmazingLib.ThrowOnException", true);
@@ -1438,7 +1438,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
     - **터치 기능 향상**
 
-         고객이 터치 시 예기치 않은 동작이 발생한다고 [Connect](https://connect.microsoft.com/VisualStudio/feedback/details/903760/)에 신고한 문제가 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서 해결되었습니다. 이제 Windows 스토어 응용 프로그램 및 WPF 응용 프로그램에 대한 두 번 탭하기 임계값이 Windows 8.1 이상 버전에서 같습니다.
+         고객이 터치 시 예기치 않은 동작이 발생한다고 [Connect](https://connect.microsoft.com/VisualStudio/feedback/details/903760/)에 신고한 문제가 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서 해결되었습니다. 이제 Windows 스토어 애플리케이션 및 WPF 애플리케이션에 대한 두 번 탭하기 임계값이 Windows 8.1 이상 버전에서 같습니다.
 
     - **투명한 자식 창 지원**
 
@@ -1523,7 +1523,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
          기본적으로 `HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319` 레지스트리 키의 `HWRPortReuseOnSocketBind` 값이 0x1로 설정되지 않는 한 <xref:System.Net.ServicePointManager.ReusePort%2A?displayProperty=nameWithType> 속성은 `false`입니다. HTTP 연결에 로컬 포트를 재사용하려면 <xref:System.Net.ServicePointManager.ReusePort%2A?displayProperty=nameWithType> 속성을 `true`로 설정합니다. 이렇게 하면 <xref:System.Net.Http.HttpClient> 및 <xref:System.Net.HttpWebRequest>에서 나가는 모든 TCP 소켓 연결이 새 Windows 10 소켓 옵션인 [SO_REUSE_UNICASTPORT](/windows/desktop/WinSock/sol-socket-socket-options)를 사용하여 로컬 포트를 재사용할 수 있습니다.
 
-         소켓 전용 응용 프로그램을 작성하는 개발자가 <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType>과 같은 메서드를 호출할 때 <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType> 옵션을 지정하면 아웃바운드 소켓이 바인딩하는 동안 로컬 포트를 재사용합니다.
+         소켓 전용 애플리케이션을 작성하는 개발자가 <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType>과 같은 메서드를 호출할 때 <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType> 옵션을 지정하면 아웃바운드 소켓이 바인딩하는 동안 로컬 포트를 재사용합니다.
 
     - **국제 도메인 이름 및 PunyCode 지원**
 
@@ -1533,7 +1533,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
      [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서는 이 기능이 <xref:System.Windows.Forms.DomainUpDown>, <xref:System.Windows.Forms.NumericUpDown>, <xref:System.Windows.Forms.DataGridViewComboBoxColumn>, <xref:System.Windows.Forms.DataGridViewColumn> 및 <xref:System.Windows.Forms.ToolStripSplitButton> 형식과 <xref:System.Drawing.Design.PaintValueEventArgs.Bounds%2A>를 그릴 때 사용되는 <xref:System.Drawing.Design.UITypeEditor> 속성으로 지정된 사각형을 포함하도록 확장되었습니다.
 
-     이 기능은 옵트인 기능입니다. 이 기능을 사용하려면 아래와 같이 응용 프로그램 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
+     이 기능은 옵트인 기능입니다. 이 기능을 사용하려면 아래와 같이 애플리케이션 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
 
     ```xml
     <appSettings>
@@ -1578,7 +1578,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
     - <xref:System.Windows.Forms.DataGridView>
     - <xref:System.Windows.Forms.DataGridViewComboBoxColumn>
 
-     이 기능은 옵트인(opt-in) 기능입니다. 이 기능을 사용하려면 아래와 같이 응용 프로그램 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
+     이 기능은 옵트인(opt-in) 기능입니다. 이 기능을 사용하려면 아래와 같이 애플리케이션 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
 
     ```xml
     <appSettings>
@@ -1657,7 +1657,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - 어셈블리에 대한 자동 바인딩 리디렉션. Visual Studio 2013부터는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]을 대상으로 하는 앱을 컴파일할 때 앱 또는 해당 구성 요소가 동일한 어셈블리의 여러 버전을 참조할 경우 앱 구성 파일에 바인딩 리디렉션을 추가할 수 있습니다. 또한 이전 버전의 .NET Framework를 대상으로 하는 프로젝트에 대해 이 기능을 사용하도록 설정할 수 있습니다. 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)를 참조하십시오.
 
-- 진단 정보를 수집하여 개발자가 서버 및 클라우드 응용 프로그램의 성능을 향상시키는 기능. 자세한 내용은 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> 클래스의 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> 및 <xref:System.Diagnostics.Tracing.EventSource> 메서드를 참조하세요.
+- 진단 정보를 수집하여 개발자가 서버 및 클라우드 애플리케이션의 성능을 향상시키는 기능. 자세한 내용은 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> 클래스의 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> 및 <xref:System.Diagnostics.Tracing.EventSource> 메서드를 참조하세요.
 
 - 가비지 수집 동안 LOH(대형 개체 힙)를 명시적으로 압축하는 기능. 자세한 내용은 <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> 속성을 참조하세요.
 
@@ -1665,7 +1665,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
  Windows Forms의 향상된 기능은 다음과 같습니다.
 
-- Windows Forms 컨트롤 크기 조정. 앱의 응용 프로그램 구성 파일(app.config)의 항목을 선택하여 시스템 DPI 설정으로 컨트롤 구성 요소(예: 속성 표에 표시되는 아이콘)의 크기를 조정할 수 있습니다. 이 기능은 현재 다음과 같은 Windows Forms 컨트롤에서 지원됩니다.
+- Windows Forms 컨트롤 크기 조정. 앱의 애플리케이션 구성 파일(app.config)의 항목을 선택하여 시스템 DPI 설정으로 컨트롤 구성 요소(예: 속성 표에 표시되는 아이콘)의 크기를 조정할 수 있습니다. 이 기능은 현재 다음과 같은 Windows Forms 컨트롤에서 지원됩니다.
 
     - <xref:System.Windows.Forms.PropertyGrid>
     - <xref:System.Windows.Forms.TreeView>
@@ -1701,17 +1701,17 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 ### <a name="core-new-features-and-improvements"></a>주요 새로운 기능 및 향상된 기능
 
-- 배포 시 .NET Framework 4 응용 프로그램을 감지하고 닫아 시스템 다시 시작 횟수를 줄이는 기능. [.NET Framework 4.5를 설치하는 동안 시스템 다시 시작 줄이기](../../../docs/framework/deployment/reducing-system-restarts.md)를 참조하십시오.
+- 배포 시 .NET Framework 4 애플리케이션을 감지하고 닫아 시스템 다시 시작 횟수를 줄이는 기능. [.NET Framework 4.5를 설치하는 동안 시스템 다시 시작 줄이기](../../../docs/framework/deployment/reducing-system-restarts.md)를 참조하십시오.
 
-- 64비트 플랫폼에서 2GB보다 큰 배열 지원. 응용 프로그램 구성 파일에서 이 기능을 사용하도록 설정할 수 있습니다. 개체 크기와 배열 크기에 대한 기타 제한을 나열하는 [\<gcAllowVeryLargeObjects> 요소](../../../docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md)를 참조하십시오.
+- 64비트 플랫폼에서 2GB보다 큰 배열 지원. 애플리케이션 구성 파일에서 이 기능을 사용하도록 설정할 수 있습니다. 개체 크기와 배열 크기에 대한 기타 제한을 나열하는 [\<gcAllowVeryLargeObjects> 요소](../../../docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md)를 참조하십시오.
 
 - 서버에 대한 백그라운드 가비지 수집을 통해 성능 향상. 사용자가 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 서버 가비지 수집을 사용하면 백그라운드 가비지 수집을 사용하도록 자동으로 설정됩니다. [가비지 컬렉션 기본 사항](../../../docs/standard/garbage-collection/fundamentals.md) 항목의 백그라운드 서버 가비지 컬렉션 섹션을 참조하십시오.
 
-- 응용 프로그램 성능 개선을 위해 다중 코어 프로세서에서 선택적으로 사용 가능한 백그라운드 JIT(Just-In-Time) 컴파일. <xref:System.Runtime.ProfileOptimization>을 참조하세요.
+- 애플리케이션 성능 개선을 위해 다중 코어 프로세서에서 선택적으로 사용 가능한 백그라운드 JIT(Just-In-Time) 컴파일. <xref:System.Runtime.ProfileOptimization>을 참조하세요.
 
 - 정규식 엔진이 시간 초과되기 전에 정규식 해결을 시도하는 시간을 제한하는 기능. <xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A?displayProperty=nameWithType> 속성을 참조하세요.
 
-- 응용 프로그램 도메인에 대한 기본 문화권을 정의하는 기능. <xref:System.Globalization.CultureInfo> 클래스를 참조하세요.
+- 애플리케이션 도메인에 대한 기본 문화권을 정의하는 기능. <xref:System.Globalization.CultureInfo> 클래스를 참조하세요.
 
 - 콘솔에서 유니코드(UTF-16) 인코딩 지원. <xref:System.Console> 클래스를 참조하세요.
 
@@ -1727,7 +1727,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
 - .NET Framework가 [!INCLUDE[win8](../../../includes/win8-md.md)]에서 사용되면 유니코드 6.0을 구현하는 문자열 비교가 운영 체제에 위임됨. 다른 플랫폼에서 실행되는 경우 유니코드 5.x를 구현하는 자체 문자열 비교 데이터가 .NET Framework에 포함됩니다. <xref:System.String> 클래스 및 <xref:System.Globalization.SortVersion> 클래스의 설명 섹션을 참조하세요.
 
-- 응용 프로그램 도메인 단위로 문자열에 대한 해시 코드를 계산하는 기능. [\<<UseRandomizedStringHashAlgorithm> 요소](../../../docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md)를 참조하십시오.
+- 애플리케이션 도메인 단위로 문자열에 대한 해시 코드를 계산하는 기능. [\<<UseRandomizedStringHashAlgorithm> 요소](../../../docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md)를 참조하십시오.
 
 - 형식 리플렉션이 <xref:System.Type> 및 <xref:System.Reflection.TypeInfo> 클래스 사이의 분할 지원. [Windows 스토어 앱에 대한 .NET Framework의 리플렉션](../../../docs/framework/reflection-and-codedom/reflection-for-windows-store-apps.md)을 참조하십시오.
 
@@ -1752,7 +1752,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 ### <a name="tools"></a>도구
  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 리소스 파일 생성기(Resgen.exe)를 사용하면 .NET Framework 어셈블리에 포함된 .resources 파일에서 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에 사용할 .resw 파일을 만들 수 있습니다. 자세한 내용은 [Resgen.exe(리소스 파일 생성기)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)를 참조하십시오.
 
- 관리되는 프로필 기반 최적화(Mpgo.exe)를 사용하면 네이티브 이미지 어셈블리를 최적화하여 응용 프로그램 시작 시간, 메모리 사용률(작업 집합 크기) 및 처리량을 개선할 수 있습니다. 명령줄 도구는 네이티브 이미지 응용 프로그램 어셈블리에 대한 프로필 데이터를 생성합니다. [Mpgo.exe(관리되는 프로필 기반 최적화 도구)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)를 참조하십시오. Visual Studio 2013부터는 Mpgo.exe를 사용하여 데스크톱 앱뿐만 아니라 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 최적화할 수 있습니다.
+ 관리되는 프로필 기반 최적화(Mpgo.exe)를 사용하면 네이티브 이미지 어셈블리를 최적화하여 애플리케이션 시작 시간, 메모리 사용률(작업 집합 크기) 및 처리량을 개선할 수 있습니다. 명령줄 도구는 네이티브 이미지 애플리케이션 어셈블리에 대한 프로필 데이터를 생성합니다. [Mpgo.exe(관리되는 프로필 기반 최적화 도구)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)를 참조하십시오. Visual Studio 2013부터는 Mpgo.exe를 사용하여 데스크톱 앱뿐만 아니라 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 앱을 최적화할 수 있습니다.
 
 <a name="parallel" />
 
@@ -1792,7 +1792,7 @@ ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성�
 ### <a name="windows-presentation-foundation-wpf"></a>WPF(Windows Presentation Foundation)
  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]의 WPF(Windows Presentation Foundation)에서 변경되고 개선된 영역은 다음과 같습니다.
 
-- 빠른 실행 도구 모음, 응용 프로그램 메뉴 및 탭을 호스팅하는 리본 사용자 인터페이스 구현에 사용할 수 있는 새로운 <xref:System.Windows.Controls.Ribbon.Ribbon> 컨트롤
+- 빠른 실행 도구 모음, 애플리케이션 메뉴 및 탭을 호스팅하는 리본 사용자 인터페이스 구현에 사용할 수 있는 새로운 <xref:System.Windows.Controls.Ribbon.Ribbon> 컨트롤
 
 - 동기 및 비동기 데이터 유효성 검사를 지원하는 새로운 <xref:System.ComponentModel.INotifyDataErrorInfo> 인터페이스
 
@@ -1825,7 +1825,7 @@ ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성�
 
 - <xref:System.Xml.XmlDictionaryReaderQuotas> 클래스를 업데이트하여 XML 사전 판독기에 대해 수동으로 할당량을 구성해야 할 가능성을 줄임
 
-- Visual Studio에서 빌드 프로세스의 일부로 WCF 구성 파일의 유효성 검사를 실시하여 응용 프로그램 실행 전에 구성 오류를 검색할 수 있도록 함
+- Visual Studio에서 빌드 프로세스의 일부로 WCF 구성 파일의 유효성 검사를 실시하여 애플리케이션 실행 전에 구성 오류를 검색할 수 있도록 함
 
 - 새로운 비동기 스트리밍 지원
 
@@ -1882,7 +1882,7 @@ ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성�
 
     - 상태 시스템과 순서도 워크플로에서 활동 및 전환의 자동 연결 및 자동 삽입
 
-- XAML 파일의 단일 요소에 워크플로의 뷰 상태 정보가 저장되므로 뷰 상태 정보를 쉽게 찾아 편집할 수 있음
+- XAML 파일의 단일 요소에 워크플로의 뷰 상태 정보가 저장되므로 뷰 상태 정보를 쉽게 찾아 편집할 수 있습니다.
 
 - 자식 활동이 지속되지 않도록 하는 NoPersistScope 컨테이너 활동
 
