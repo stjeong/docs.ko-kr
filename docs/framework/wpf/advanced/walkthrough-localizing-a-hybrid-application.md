@@ -1,18 +1,18 @@
 ---
-title: '연습: 혼합 응용 프로그램 지역화'
+title: '연습: 하이브리드 응용 프로그램 지역화'
 ms.date: 08/18/2018
 helpviewer_keywords:
 - localization [WPF interoperability]
 - hybrid applications [WPF interoperability]
 ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
-ms.openlocfilehash: e1d06085b4edb5c1e102eaab766ec7636194b991
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 6b7db8182b5764e3df65ccbdef3b54330c1ee64a
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47402700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223009"
 ---
-# <a name="walkthrough-localizing-a-hybrid-application"></a>연습: 혼합 응용 프로그램 지역화
+# <a name="walkthrough-localizing-a-hybrid-application"></a>연습: 하이브리드 응용 프로그램 지역화
 
 이 연습에서는 지역화 하는 방법을 보여 줍니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 의 요소를 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]-기반 하이브리드 응용 프로그램입니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "47402700"
 
 이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [하이브리드 응용 프로그램 샘플을 지역화](https://go.microsoft.com/fwlink/?LinkID=160015)합니다.
 
-위의 작업을 완료하면 지역화된 하이브리드 응용 프로그램이 구현됩니다.
+위의 작업을 완료하면 지역화된 하이브리드 애플리케이션이 구현됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -118,7 +118,7 @@ Windows Forms 디자이너에서는 위성 어셈블리에서 지역화를 사�
 
 ### <a name="to-assign-resource-identifiers"></a>리소스 식별자를 할당하려면
 
-1.  시작 메뉴에서 Visual Studio 명령 프롬프트를 엽니다.
+1.  시작 메뉴에서 Visual Studio 용 개발자 명령 프롬프트를 엽니다.
 
 2.  다음 명령을 사용하여 지역화 가능한 콘텐츠에 리소스 식별자를 할당합니다.
 
@@ -168,9 +168,9 @@ Windows Forms 디자이너에서는 위성 어셈블리에서 지역화를 사�
 
 7.  LocalizingWpfInWf.resources.dll 파일을 프로젝트의 bin\Debug\es-ES 폴더에 복사합니다. 기존 파일을 바꿉니다.
 
-8.  프로젝트의 bin\Debug 폴더에 있는 LocalizingWpfInWf.exe를 실행합니다. 응용 프로그램을 다시 빌드하지 마세요. 다시 빌드하면 위성 어셈블리가 덮어 쓰입니다.
+8.  프로젝트의 bin\Debug 폴더에 있는 LocalizingWpfInWf.exe를 실행합니다. 애플리케이션을 다시 빌드하지 마세요. 다시 빌드하면 위성 어셈블리가 덮어 쓰입니다.
 
-     응용 프로그램에서 영어 문자열 대신 지역화된 문자열을 표시합니다.
+     애플리케이션에서 영어 문자열 대신 지역화된 문자열을 표시합니다.
 
 ## <a name="see-also"></a>참고 항목
 

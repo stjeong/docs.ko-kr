@@ -2,12 +2,12 @@
 title: WS 2007 페더레이션 HTTP 바인딩
 ms.date: 03/30/2017
 ms.assetid: 91c1b477-a96e-4bf5-9330-5e9312113371
-ms.openlocfilehash: 53f2cb893476cdfa0517bd6586f38951dff1f2af
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7dffe56cf5593f1cd59cccd7ea9b6b0e173e0c2c
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221286"
 ---
 # <a name="ws-2007-federation-http-binding"></a>WS 2007 페더레이션 HTTP 바인딩
 이 샘플에서는 버전 1.3의 WS-Trust 사양을 지원하는 페더레이션 시나리오를 작성하는 데 사용할 수 있는 표준 바인딩인 <xref:System.ServiceModel.WS2007FederationHttpBinding>을 보여 줍니다.  
@@ -112,7 +112,7 @@ Press <ENTER> to terminate client.
   
 1.  수행 했는지 확인 합니다 [Windows Communication Foundation 샘플에 대 한 일회성 설치 절차](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)합니다.  
   
-2.  관리자 권한으로 Visual Studio 명령 프롬프트를 열고 Setup.bat 파일을 실행하여 필요한 인증서를 만듭니다.  
+2.  관리자 권한으로 Visual Studio 용 개발자 명령 프롬프트를 열고 하 고 필요한 인증서를 만들려면 Setup.bat 파일을 실행 합니다.  
   
  이 배치 파일은 Windows SDK와 함께 배포되는 Certmgr.exe 및 Makecert.exe를 사용합니다. 그러나 스크립트에서 이러한 도구를 찾을 수 있게 하려면 Visual Studio 명령 프롬프트 내에서 Setup.bat를 실행해야 합니다.  
   

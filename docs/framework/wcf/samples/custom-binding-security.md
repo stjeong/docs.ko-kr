@@ -2,12 +2,12 @@
 title: Custom Binding Security
 ms.date: 03/30/2017
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
-ms.openlocfilehash: 72812c23bca5cd5c61f906cfd98f1929b0edee1a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 56c3ed4be894a265635c747373e0b79599ce129d
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221702"
 ---
 # <a name="custom-binding-security"></a>Custom Binding Security
 이 샘플에서는 사용자 지정 바인딩을 사용하여 보안을 구성하는 방법을 보여 줍니다. 여기서는 사용자 지정 바인딩을 사용하여 메시지를 안전하게 전송하고 메시지 수준 보안을 가능하게 하는 방법을 보여 줍니다. 이러한 방법은 클라이언트와 서비스 간에 메시지를 전송하는 데 보안 전송이 요구되면서 동시에 메시지가 메시지 수준에서 보호되어야 하는 경우에 유용합니다. 이 구성은 시스템 제공 바인딩에서는 지원되지 않습니다.
@@ -113,14 +113,14 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
 ### <a name="to-run-the-sample-on-the-same-computer"></a>단일 컴퓨터 구성에서 샘플을 실행하려면
 
-1.  관리자 권한으로 Visual Studio 명령 프롬프트 창을 열고 샘플 설치 폴더의 Setup.bat를 실행합니다. 이 작업은 샘플 실행에 필요한 모든 인증서를 설치합니다.
+1.  관리자 권한으로 Visual Studio 창에 대 한 개발자 명령 프롬프트를 열고 샘플 설치 폴더에서 Setup.bat를 실행 합니다. 이 작업은 샘플 실행에 필요한 모든 인증서를 설치합니다.
 
     > [!NOTE]
     >  Setup.bat 배치 파일은 Visual Studio 2012 명령 프롬프트에서 실행 되도록 설계 되었습니다. 경로 환경 변수 집합을 Visual Studio 2012 명령 프롬프트 내에서 Setup.bat 스크립트에 필요한 실행 파일이 포함 된 디렉터리를 가리킵니다.  
   
 2.  \service\bin에서 Service.exe를 실행합니다.  
   
-3.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 응용 프로그램에 클라이언트 동작이 표시됩니다.  
+3.  \client\bin에서 Client.exe를 실행합니다. 클라이언트 콘솔 애플리케이션에 클라이언트 동작이 표시됩니다.  
   
 4.  클라이언트와 서비스가 통신할 수 없는 경우 [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)을 참조하세요.  
   
@@ -134,7 +134,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
     3.  Setup.bat 및 Cleanup.bat 파일을 서비스 컴퓨터로 복사합니다.  
   
-    4.  관리자 권한으로 연 Visual Studio 명령 프롬프트에서 다음 명령을 실행: `Setup.bat service`합니다. 이렇게 하면 배치 파일이 실행된 컴퓨터의 이름과 일치하는 주체 이름을 가진 서비스 인증서가 만들어집니다.  
+    4.  관리자 권한으로 연 Visual Studio에 대 한 개발자 명령 프롬프트에서 다음 명령을 실행: `Setup.bat service`합니다. 이렇게 하면 배치 파일이 실행된 컴퓨터의 이름과 일치하는 주체 이름을 가진 서비스 인증서가 만들어집니다.  
   
         > [!NOTE]
         >  Setup.bat 배치 파일은 Visual Studio 2010 명령 프롬프트에서 실행되도록 디자인되었습니다. PATH 환경 변수는 SDK가 설치되는 디렉터리를 가리켜야 합니다. 이 환경 변수는 Visual Studio 2010 명령 프롬프트 내에서 자동으로 설정됩니다.
@@ -149,7 +149,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
     2.  Cleanup.bat를 실행하여 이전 샘플에서 이전의 모든 인증서를 제거합니다.
 
-    3.  관리자 권한으로 Visual Studio 명령 프롬프트를 열고 서비스 컴퓨터에서 다음 명령을 실행하여 서비스의 인증서를 내보냅니다. `%SERVER_NAME%`은 서비스가 실행되고 있는 컴퓨터의 정규화된 이름으로 바꿉니다.
+    3.  관리자 권한으로 Visual Studio 용 개발자 명령 프롬프트를 열고 서비스 컴퓨터에서 다음 명령을 실행 하는 서비스의 인증서를 내보냅니다 (대체 `%SERVER_NAME%` 컴퓨터의 정규화 된 이름을 사용 하 여 위치 서비스가 실행 되는):
 
         ```
         certmgr -put -r LocalMachine -s My -c -n %SERVER_NAME% %SERVER_NAME%.cer
@@ -157,7 +157,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
     4.  %SERVER_NAME%.cer을 클라이언트 컴퓨터에 복사합니다. %SERVER_NAME%은 서비스가 실행되고 있는 컴퓨터의 정규화된 이름으로 바꿉니다.
 
-    5.  관리자 권한으로 Visual Studio 명령 프롬프트를 열고 클라이언트 컴퓨터에서 다음 명령을 실행하여 서비스의 인증서를 가져옵니다. %SERVER_NAME%은 서비스가 실행되고 있는 컴퓨터의 정규화된 이름으로 바꿉니다.
+    5.  관리자 권한으로 Visual Studio 용 개발자 명령 프롬프트를 열고 클라이언트 컴퓨터에서 다음 명령을 실행 하는 서비스의 인증서를 가져옵니다 (컴퓨터의 정규화 된 이름 사용 하 여 % SERVER_NAME % 대체 위치는 서비스가 실행 되 고):
 
         ```
         certmgr.exe -add -c %SERVER_NAME%.cer -s -r CurrentUser TrustedPeople

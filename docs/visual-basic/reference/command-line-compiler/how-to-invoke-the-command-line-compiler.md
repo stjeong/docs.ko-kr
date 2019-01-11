@@ -1,5 +1,5 @@
 ---
-title: '방법: 명령줄 컴파일러 호출(Visual Basic)'
+title: '방법: 명령줄 컴파일러 (Visual Basic) 호출'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - command-line arguments
@@ -7,25 +7,25 @@ helpviewer_keywords:
 - Visual Basic compiler, starting
 - command line [Visual Basic], arguments
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
-ms.openlocfilehash: 0b835bb5654574a5aa6f32eede1e942b11e7dcb0
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: d2d193f8c3d483ff87fe719919982e8c3473ec0b
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221845"
 ---
-# <a name="how-to-invoke-the-command-line-compiler-visual-basic"></a>방법: 명령줄 컴파일러 호출(Visual Basic)
-MS-DOS 프롬프트 라고도 하는 명령줄에 실행 파일의 이름을 입력 하 여 명령줄 컴파일러를 호출할 수 있습니다. 기본 Windows 명령 프롬프트에서에서 컴파일하는 경우에 실행 파일에 정규화 된 경로 입력 해야 합니다. 이 기본 동작을 재정의 하려면 Visual Studio 명령 프롬프트를 사용 하거나 경로 환경 변수를 수정 합니다. 둘 다 컴파일러 이름을 입력 하 여 모든 디렉터리에서 컴파일할 수 있습니다.  
+# <a name="how-to-invoke-the-command-line-compiler-visual-basic"></a>방법: 명령줄 컴파일러 (Visual Basic) 호출
+MS-DOS 프롬프트 라고도 하는 명령줄에 실행 파일의 이름을 입력 하 여 명령줄 컴파일러를 호출할 수 있습니다. 기본 Windows 명령 프롬프트에서에서 컴파일하는 경우에 실행 파일에 정규화 된 경로 입력 해야 합니다. 이 기본 동작을 재정의 하려면 Visual Studio 용 개발자 명령 프롬프트를 사용 하거나 경로 환경 변수를 수정 합니다. 둘 다 컴파일러 이름을 입력 하 여 모든 디렉터리에서 컴파일할 수 있습니다.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-### <a name="to-invoke-the-compiler-using-the-visual-studio-command-prompt"></a>Visual Studio 명령 프롬프트를 사용 하 여 컴파일러를 호출 하려면  
+### <a name="to-invoke-the-compiler-using-the-developer-command-prompt-for-visual-studio"></a>Visual Studio 용 개발자 명령 프롬프트를 사용 하 여 컴파일러를 호출  
   
 1.  Microsoft Visual Studio 프로그램 그룹 내에서 Visual Studio Tools 프로그램 폴더를 엽니다.  
   
-2.  Visual Studio를 설치한 경우 컴퓨터에 모든 디렉터리에서 컴파일러에 액세스할 Visual Studio 명령 프롬프트를 사용할 수 있습니다.  
+2.  Visual Studio를 설치한 경우 컴퓨터에 모든 디렉터리에서 컴파일러에 액세스할 Visual Studio 용 개발자 명령 프롬프트를 사용할 수 있습니다.  
   
-3.  Visual Studio 명령 프롬프트를 호출 합니다.  
+3.  Visual Studio 용 개발자 명령 프롬프트를 호출 합니다.  
   
 4.  명령줄에서 입력 `vbc.exe` *sourceFileName* 한 다음 ENTER를 누릅니다.  
   

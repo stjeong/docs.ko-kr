@@ -2,18 +2,18 @@
 title: '자습서: 형식 공급자 만들기'
 description: 나만의 사이트 생성 하는 방법을 알아봅니다 F# 형식 공급자에서 F# 기본 개념을 보여 주는 몇 가지 간단한 형식 공급자를 검사 하 여 3.0.
 ms.date: 05/16/2016
-ms.openlocfilehash: c5a68df5f0b89fe9496ad86ab88208e0ec4bcdc9
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: b16981b70db0896805754c60afa96a07623a1263
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53614534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223210"
 ---
 # <a name="tutorial-create-a-type-provider"></a>자습서: 형식 공급자 만들기
 
 형식 공급자 메커니즘은 F# 정보가 풍부한 프로그래밍에 대 한 지원의 중요 한 부분입니다. 이 자습서에서는 기본 개념을 보여 주는 몇 가지 간단한 형식 공급자의 개발을 안내 하 여 사용자 고유의 형식 공급자를 만드는 방법을 설명 합니다. 형식 공급자 메커니즘에 대 한 자세한 내용은 F#를 참조 하세요 [형식 공급자](index.md)합니다.
 
-F# 에코 시스템 자주 사용 되는 인터넷 및 엔터프라이즈 데이터 서비스에 대 한 형식 공급자의 범위를 포함 합니다. 예를 들면 다음과 같습니다.
+F# 에코 시스템 자주 사용 되는 인터넷 및 엔터프라이즈 데이터 서비스에 대 한 형식 공급자의 범위를 포함 합니다. 예를 들어:
 
 - [FSharp.Data](https://fsharp.github.io/FSharp.Data/) JSON, XML, CSV 및 HTML 문서 형식에 대 한 형식 공급자를 포함 합니다.
 
@@ -156,7 +156,7 @@ let data1 = Samples.HelloWorldTypeProvider.Type1.NestedType.StaticProperty35
 fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
-Visual Studio를 사용 하 여이 공급자를 디버깅 하려면 관리자 자격 증명을 사용 하 여 Visual Studio 명령 프롬프트를 열고 다음 명령을 실행:
+Visual Studio를 사용 하 여이 공급자를 디버깅 하려면 관리자 자격 증명을 사용 하 여 Visual Studio 용 개발자 명령 프롬프트를 열고 하 고 다음 명령을 실행:
 
 ```fsharp
 devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
@@ -1134,7 +1134,7 @@ type Service = ODataService<"http://services.odata.org/Northwind/Northwind.svc/"
 
   인쇄-stdout 로깅을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [형식 공급자](index.md)
 - [형식 공급자 SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

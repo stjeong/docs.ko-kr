@@ -2,12 +2,12 @@
 title: Discovery Security 샘플
 ms.date: 03/30/2017
 ms.assetid: b8db01f4-b4a1-43fe-8e31-26d4e9304a65
-ms.openlocfilehash: 09b7bad2e0b6b68a00d5ad2ed18e6ec831b04416
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 9435afa7324ad9e0f2bf994b2f3ed5e54e5e2e7e
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223106"
 ---
 # <a name="discovery-security-sample"></a>Discovery Security 샘플
 검색 사양에서는 검색 프로세스에 참여하는 엔드포인트를 보호하도록 요구하지 않습니다. 그러나 검색 메시지의 보안을 강화하면 메시지 변경, 서비스 거부, 재생, 스푸핑 같은 다양한 형식의 공격을 완화할 수 있습니다. 이 샘플에서는 WS-Discovery 사양의 8.2단원에 설명된 압축 서명 형식을 사용하여 메시지 서명을 계산 및 확인하는 사용자 지정 채널을 구현합니다. 샘플 모두 지원 합니다 [2005 검색 사양](https://go.microsoft.com/fwlink/?LinkId=177912) 하며 [1.1 버전](https://go.microsoft.com/fwlink/?LinkId=179677)합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "53129352"
   
 #### <a name="to-use-this-sample"></a>이 샘플을 사용하려면  
   
-1.  Visual Studio 명령 프롬프트에서 Setup.bat 스크립트를 실행합니다. 이 샘플에서는 인증서를 사용하여 메시지를 서명하고 확인합니다. 이 스크립트에서는 Makecert.exe를 사용하여 인증서를 만든 다음 Certmgr.exe를 사용하여 인증서를 설치합니다. 이 스크립트는 관리자 권한으로 실행해야 합니다.  
+1.  Visual Studio 용 개발자 명령 프롬프트에서 Setup.bat 스크립트를 실행 합니다. 이 샘플에서는 인증서를 사용하여 메시지를 서명하고 확인합니다. 이 스크립트에서는 Makecert.exe를 사용하여 인증서를 만든 다음 Certmgr.exe를 사용하여 인증서를 설치합니다. 이 스크립트는 관리자 권한으로 실행해야 합니다.  
   
 2.  을 빌드하고 샘플을 실행 하려면 Visual Studio에서 Security.sln 파일을 열고 선택한 **모두 다시 빌드**합니다. 여러 프로젝트를 시작 하도록 솔루션 속성을 업데이트 합니다: 선택 **시작** DiscoverySecureChannels 제외한 모든 프로젝트에 대 한 합니다. 솔루션을 정상적으로 실행합니다.  
   

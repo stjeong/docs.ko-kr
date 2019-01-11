@@ -2,12 +2,12 @@
 title: 채용 프로세스
 ms.date: 03/30/2017
 ms.assetid: d5fcacbb-c884-4b37-a5d6-02b1b8eec7b4
-ms.openlocfilehash: 41f5508ea5805581282389e0731a00dde7796bc0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0420a174705c12384509bf1d8022d664d7cb354e
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223223"
 ---
 # <a name="hiring-process"></a>채용 프로세스
 이 샘플에서는 워크플로 서비스로 호스트되는 두 개의 워크플로와 메시징 활동을 사용하여 비즈니스 프로세스를 구현하는 방법을 보여 줍니다. 이 워크플로는 Contoso, Inc라는 가상 회사의 IT 인프라 중 일부입니다.  
@@ -114,7 +114,7 @@ ms.locfileid: "43520640"
 |워크플로 서비스|프로세스 정의가 포함된 순서도는 서비스에서 호스트됩니다. 이 예에서는 서비스가 콘솔 응용 프로그램에서 호스트됩니다.|HiringRequestService|  
 |메시징 활동|순서도는 다음 두 가지 방식으로 메시징 활동을 사용합니다.<br /><br /> 사용자 (각 승인 단계에서의 결정과 관련된 정보를 수신)에 게에서 정보를 가져옵니다 간.<br />-하려면 (InboxService 및 OrgDataService, 서비스 참조를 통해 사용) 다른 기존 서비스와 상호 작용 합니다.|HiringRequestService|  
 |내용 기반 상관 관계|승인 메시지는 채용 요청의 ID 속성과 상관 관계가 있습니다.<br /><br /> -프로세스가 시작 될 때 상관 관계 핸들이 요청 ID를 사용 하 여 초기화 됩니다.<br />-해당 id (각 승인 메시지의 첫 번째 매개 변수는 요청의 ID) 들어오는 승인 메시지 상호 연결 합니다.|HiringRequestService/ResumeRequestService|  
-|사용자 지정 활동(선언적 및 코드 기반)|이 샘플에는 다음과 같은 몇 가지 사용자 지정 활동이 있습니다.<br /><br /> -   `SaveActionTracking`:이 활동에서 사용자 지정 <xref:System.Activities.Tracking.TrackingRecord> (사용 하 여 <xref:System.Activities.NativeActivityContext.Track%2A>). 이 활동은 <xref:System.Activities.NativeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.<br />-   `GetEmployeesByPositionTypes`:이 활동의 직무 종류 Id 목록을 받고 Contoso에서 해당 직무를가지고 있는 직원의 목록을 반환 합니다. 이 활동은 활동 디자이너를 사용하여 선언적으로 작성되었습니다.<br />-   `SaveHiringRequestInfo`:이 활동의 정보를 저장 한 `HiringRequest` (사용 하 여 `HiringRequestRepository.Save`). 이 활동은 <xref:System.Activities.CodeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.|HiringRequestService|  
+|사용자 지정 활동(선언적 및 코드 기반)|이 샘플에는 다음과 같은 몇 가지 사용자 지정 활동이 있습니다.<br /><br /> -   `SaveActionTracking`: 이 활동에서 사용자 지정 <xref:System.Activities.Tracking.TrackingRecord> (사용 하 여 <xref:System.Activities.NativeActivityContext.Track%2A>). 이 활동은 <xref:System.Activities.NativeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.<br />-   `GetEmployeesByPositionTypes`: 이 작업의 직무 종류 Id 목록을 받고 Contoso에서 해당 직무를가지고 있는 직원의 목록을 반환 합니다. 이 활동은 활동 디자이너를 사용하여 선언적으로 작성되었습니다.<br />-   `SaveHiringRequestInfo`: 이 작업의 정보를 저장 한 `HiringRequest` (사용 하 여 `HiringRequestRepository.Save`). 이 활동은 <xref:System.Activities.CodeActivity>를 확장하는 명령적 코드를 사용하여 작성되었습니다.|HiringRequestService|  
 |시스템 제공 SQL Server 지속성|순서도 프로세스 정의를 호스트하는 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 인스턴스는 시스템 제공 SQL Server 지속성을 사용하도록 구성됩니다.|HiringRequestService/ResumeRequestService|  
 |사용자 지정 추적|샘플에는 `HiringRequestProcess`의 기록을 저장하는 사용자 지정 추적 참가자가 포함되어 있으며, 이 참가자는 어떤 조치가 취해졌는지와 조치를 취한 사람 및 시기를 기록합니다. 소스 코드는 HiringRequestService의 Tracking 폴더에 있습니다.|HiringRequestService|  
 |ETW 추적|시스템 제공 ETW 추적은 HiringRequestService 서비스의 App.config 파일에 구성되어 있습니다.|HiringRequestService|  
@@ -131,13 +131,13 @@ ms.locfileid: "43520640"
 ## <a name="data-storage"></a>데이터 저장소  
  데이터는 `ContosoHR`이라는 SQL Server 데이터베이스에 저장되며, 이 데이터베이스를 만드는 데 사용되는 스크립트는 `DbSetup` 폴더에 있습니다. 워크플로 인스턴스는 `InstanceStore`라는 SQL Server 데이터베이스에 저장되며, 인스턴스 저장소를 만드는 데 사용되는 스크립트는 [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] 배포의 일부입니다.  
   
- Visual Studio 명령 프롬프트에서 Setup.cmd 스크립트를 실행 하 여 두 데이터베이스가 만들어집니다.  
+ Visual Studio 용 개발자 명령 프롬프트에서 Setup.cmd 스크립트를 실행 하 여 두 데이터베이스가 만들어집니다.  
   
 ## <a name="running-the-sample"></a>샘플 실행  
   
 #### <a name="to-create-the-databases"></a>데이터베이스를 만들려면  
   
-1.  Visual Studio 명령 프롬프트를 엽니다.  
+1.  Visual Studio 용 개발자 명령 프롬프트를 엽니다.  
   
 2.  샘플 폴더로 이동합니다.  
   
