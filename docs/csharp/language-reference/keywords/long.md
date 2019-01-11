@@ -73,7 +73,7 @@ SampleMethod(5L);   // Calls the method with the long parameter
 3. `long`
 4. [ulong](../../../csharp/language-reference/keywords/ulong.md) 
 
-앞의 예제에서 리터럴 4294967296은 [uint](../../../csharp/language-reference/keywords/uint.md)의 범위를 초과하기 때문에 `long` 형식입니다(정수 형식의 저장소 크기는 [정수 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md) 참조).  
+앞의 예제에서 리터럴 4294967296은 [uint](../../../csharp/language-reference/keywords/uint.md)의 범위를 초과하기 때문에 `long` 형식입니다(정수 형식의 스토리지 크기는 [정수 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md) 참조).  
   
  같은 식에서 다른 정수 형식과 함께 `long` 형식을 사용하는 경우에는 식이 `long`(또는 관계형 또는 부울 식의 경우 [bool](../../../csharp/language-reference/keywords/bool.md))으로 평가됩니다. 예를 들어 다음 식은 `long`으로 계산됩니다.  
   

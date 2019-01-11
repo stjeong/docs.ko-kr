@@ -50,7 +50,7 @@ ms.locfileid: "54058323"
 |[BlockingCollection 개요](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)|<xref:System.Collections.Concurrent.BlockingCollection%601> 형식에서 제공하는 기능에 대해 설명합니다.|  
 |[방법: ConcurrentDictionary에서 항목 추가 및 제거](../../../../docs/standard/collections/thread-safe/how-to-add-and-remove-items.md)|<xref:System.Collections.Concurrent.ConcurrentDictionary%602>에서 요소를 추가하고 제거하는 방법에 관해 설명합니다.|  
 |[방법: BlockingCollection에서 개별적으로 항목 추가 및 가져오기](../../../../docs/standard/collections/thread-safe/how-to-add-and-take-items.md)|읽기 전용 열거자를 사용하지 않고 차단 컬렉션에서 항목을 추가하고 검색하는 방법에 대해 설명합니다.|  
-|[방법: 컬렉션에 한계 지정 및 차단 기능 추가](../../../../docs/standard/collections/thread-safe/how-to-add-bounding-and-blocking.md)|컬렉션 클래스를 <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> 컬렉션에 대한 기본 저장소 메커니즘으로 사용하는 방법에 대해 설명합니다.|  
+|[방법: 컬렉션에 한계 지정 및 차단 기능 추가](../../../../docs/standard/collections/thread-safe/how-to-add-bounding-and-blocking.md)|컬렉션 클래스를 <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> 컬렉션에 대한 기본 스토리지 메커니즘으로 사용하는 방법을 설명합니다.|  
 |[방법: ForEach를 사용하여 BlockingCollection의 항목 제거](../../../../docs/standard/collections/thread-safe/how-to-use-foreach-to-remove.md)|`foreach`(Visual Basic의 `For Each`)를 사용하여 차단 컬렉션에서 모든 항목을 제거하는 방법에 대해 설명합니다.|  
 |[방법: 파이프라인에서 차단 컬렉션 배열 사용](../../../../docs/standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md)|파이프라인을 구현하는 동시에 여러 차단 컬렉션을 사용하는 방법에 대해 설명합니다.|  
 |[방법: ConcurrentBag을 사용하여 개체 풀 만들기](../../../../docs/standard/collections/thread-safe/how-to-create-an-object-pool.md)|개체를 끊임없이 새로 만드는 대신 다시 사용할 수 있는 시나리오에서 동시 모음을 사용하고 성능을 향상시키는 방법을 보여 줍니다.|  

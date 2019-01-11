@@ -16,7 +16,7 @@ C#은 강력한 형식의 언어입니다. 모든 변수 및 상수에는 값으
   
 형식에 저장된 정보에는 다음이 포함될 수 있습니다.  
   
-- 형식 변수에 필요한 저장소 공간.  
+- 형식 변수에 필요한 스토리지 공간.  
   
 - 형식이 나타낼 수 있는 최대값 및 최소값.  
   
@@ -57,7 +57,7 @@ C#에서는 정수, 부동 소수점 값, 부울 식, 텍스트 문자, 10진수
   
 ## <a name="custom-types"></a>사용자 지정 형식
 
-[struct](language-reference/keywords/class.md), [class](language-reference/keywords/class.md), [interface](language-reference/keywords/interface.md) 및 [enum](language-reference/keywords/enum.md) 구문을 사용하여 자체 사용자 지정 형식을 만듭니다. .NET Framework 클래스 라이브러리 자체는 자체 응용 프로그램에서 사용할 수 있는 Microsoft에서 제공되는 사용자 지정 형식의 컬렉션입니다. 기본적으로 클래스 라이브러리의 가장 자주 사용되는 형식을 모든 C# 프로그램에서 사용할 수 있습니다. 기타 형식은 정의되어 있는 어셈블리에 대한 프로젝트 참조를 명시적으로 추가할 경우에만 사용할 수 있습니다. 컴파일러에 어셈블리에 대한 참조가 포함된 후에는 소스 코드에서 해당 어셈블리에 선언된 형식의 변수(및 상수)를 선언할 수 있습니다.
+[struct](language-reference/keywords/class.md), [class](language-reference/keywords/class.md), [interface](language-reference/keywords/interface.md) 및 [enum](language-reference/keywords/enum.md) 구문을 사용하여 자체 사용자 지정 형식을 만듭니다. .NET Framework 클래스 라이브러리 자체는 자체 애플리케이션에서 사용할 수 있는 Microsoft에서 제공되는 사용자 지정 형식의 컬렉션입니다. 기본적으로 클래스 라이브러리의 가장 자주 사용되는 형식을 모든 C# 프로그램에서 사용할 수 있습니다. 기타 형식은 정의되어 있는 어셈블리에 대한 프로젝트 참조를 명시적으로 추가할 경우에만 사용할 수 있습니다. 컴파일러에 어셈블리에 대한 참조가 포함된 후에는 소스 코드에서 해당 어셈블리에 선언된 형식의 변수(및 상수)를 선언할 수 있습니다.
   
 ## <a name="generic-types"></a>제네릭 형식
 

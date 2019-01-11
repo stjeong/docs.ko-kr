@@ -67,7 +67,7 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 
 [!code-csharp[readonly struct example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyStruct)]
 
-앞의 예제는 [읽기 전용 자동 속성](../../properties.md#read-only)을 사용하여 저장소를 선언합니다. 이는 컴파일러가 해당 속성의 `readonly` 백킹 필드를 만들도록 지시합니다. `readonly` 필드를 직접 선언할 수도 있습니다.
+앞의 예제는 [읽기 전용 자동 속성](../../properties.md#read-only)을 사용하여 스토리지를 선언합니다. 이는 컴파일러가 해당 속성의 `readonly` 백킹 필드를 만들도록 지시합니다. `readonly` 필드를 직접 선언할 수도 있습니다.
 
 ```csharp
 public readonly struct Point

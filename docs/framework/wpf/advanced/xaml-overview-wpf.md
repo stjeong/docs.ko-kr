@@ -27,13 +27,13 @@ ms.lasthandoff: 07/24/2018
 ms.locfileid: "39220778"
 ---
 # <a name="xaml-overview-wpf"></a>XAML 개요 (WPF)
-이 항목에서는 XAML 언어의 기능을 설명하고 XAML을 사용하여 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램을 작성하는 방법을 보여 줍니다. 이 항목에서는 특히 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 구현된 XAML에 대해 자세히 설명합니다. XAML 자체는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]보다 큰 언어 개념입니다.  
+이 항목에서는 XAML 언어의 기능을 설명하고 XAML을 사용하여 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 애플리케이션을 작성하는 방법을 보여 줍니다. 이 항목에서는 특히 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 구현된 XAML에 대해 자세히 설명합니다. XAML 자체는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]보다 큰 언어 개념입니다.  
   
   
   
 <a name="what_is_xaml"></a>   
 ## <a name="what-is-xaml"></a>XAML이란?  
- XAML은 선언적 태그 언어입니다. XAML 만들기를 간소화는.NET Framework 프로그래밍 모델에 적용 된 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] .NET Framework 응용 프로그램입니다. 선언적 XAML 태그에 표시되는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 요소를 만든 다음 코드 숨김 파일을 사용하여 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 정의를 런타임 논리와 구분할 수 있습니다. 이 정의는 partial 클래스 정의를 통해 태그에 연결됩니다. XAML은 어셈블리에 정의된 특정 지원 형식 집합으로 개체의 인스턴스화를 직접 나타냅니다. 이는 지원 형식 시스템에 직접 연결되지 않고 해석되는 언어인 대부분의 다른 태그 언어와의 차이점입니다. XAML은 개별 대상이 잠재적으로 서로 다른 도구를 사용하여 응용 프로그램의 논리와 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]에 대해 작업할 수 있는 워크플로를 가능하게 합니다.  
+ XAML은 선언적 태그 언어입니다. XAML 만들기를 간소화는.NET Framework 프로그래밍 모델에 적용 된 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] .NET Framework 응용 프로그램입니다. 선언적 XAML 태그에 표시되는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 요소를 만든 다음 코드 숨김 파일을 사용하여 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 정의를 런타임 논리와 구분할 수 있습니다. 이 정의는 partial 클래스 정의를 통해 태그에 연결됩니다. XAML은 어셈블리에 정의된 특정 지원 형식 집합으로 개체의 인스턴스화를 직접 나타냅니다. 이는 지원 형식 시스템에 직접 연결되지 않고 해석되는 언어인 대부분의 다른 태그 언어와의 차이점입니다. XAML은 개별 대상이 잠재적으로 서로 다른 도구를 사용하여 애플리케이션의 논리와 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]에 대해 작업할 수 있는 워크플로를 가능하게 합니다.  
   
  텍스트로 나타내는 경우 XAML 파일은 일반적으로 확장명이 `.xaml`인 XML 파일입니다. 이 파일은 모든 XML 인코딩 방식으로 인코딩될 수 있지만 일반적으로 UTF-8로 인코딩됩니다.  
   
@@ -201,7 +201,7 @@ ms.locfileid: "39220778"
  [!code-xaml[XAMLOvwSupport#RootOnly](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#rootonly)]  
 [!code-xaml[XAMLOvwSupport#RootOnly2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#rootonly2)]  
   
- 루트 요소에는 `xmlns`와 `xmlns:x` 특성도 포함됩니다. 이러한 특성은 태그가 요소로 참조할 요소의 지원 형식에 대한 형식 정의가 포함된 XAML 네임스페이스를 XAML 프로세서에 나타냅니다. `xmlns` 특성은 특히 기본 XAML 네임스페이스를 나타냅니다. 기본 XAML 네임스페이스 안에서는 태그의 개체 요소를 접두사 없이 지정할 수 있습니다. 대부분의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램 시나리오 및 [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)]의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 섹션에 나오는 거의 모든 예제의 경우 기본 XAML 네임스페이스는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 네임스페이스 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)]에 매핑됩니다. `xmlns:x` 특성은 XAML 언어 네임스페이스[!INCLUDE[TLA#tla_xamlxmlnsv1](../../../../includes/tlasharptla-xamlxmlnsv1-md.md)]를 매핑하는 추가적인 XAML 네임스페이스를 나타냅니다.  
+ 루트 요소에는 `xmlns`와 `xmlns:x` 특성도 포함됩니다. 이러한 특성은 태그가 요소로 참조할 요소의 지원 형식에 대한 형식 정의가 포함된 XAML 네임스페이스를 XAML 프로세서에 나타냅니다. `xmlns` 특성은 특히 기본 XAML 네임스페이스를 나타냅니다. 기본 XAML 네임스페이스 안에서는 태그의 개체 요소를 접두사 없이 지정할 수 있습니다. 대부분의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션 시나리오 및 [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)]의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 섹션에 나오는 거의 모든 예제의 경우 기본 XAML 네임스페이스는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 네임스페이스 [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)]에 매핑됩니다. `xmlns:x` 특성은 XAML 언어 네임스페이스[!INCLUDE[TLA#tla_xamlxmlnsv1](../../../../includes/tlasharptla-xamlxmlnsv1-md.md)]를 매핑하는 추가적인 XAML 네임스페이스를 나타냅니다.  
   
  `xmlns`를 사용하여 이름 범위의 사용 및 매핑 범위를 정의하는 방식은 XML 1.0 사양과 일치합니다. XAML 이름 범위는 형식 확인 및 XAML 구문 분석에 적용할 경우 형식이 이름 범위의 요소를 지원하는 방법도 암시한다는 점에서 XML 이름 범위와는 다릅니다.  
   
@@ -216,7 +216,7 @@ ms.locfileid: "39220778"
   
 -   [x:Class](../../../../docs/framework/xaml-services/x-class-directive.md): [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 네임스페이스 및 XAML 페이지에 대한 코드 숨김을 제공하는 클래스의 클래스 이름을 지정합니다. 이러한 클래스가 WPF 프로그래밍 모델에 대해 코드 숨김을 지원하도록 해야 하므로 리소스가 없는 경우에도 `x:`가 매핑된 것을 자주 보게 됩니다.  
   
--   [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md): 개체 요소가 처리된 후 런타임 코드에 있는 인스턴스에 대한 런타임 개체 이름을 지정합니다. 일반적으로는 [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md)에 대응하여 WPF에 정의된 속성을 자주 사용하게 됩니다. 이러한 속성은 특히 CLR 지원 속성에 매핑되므로 초기화된 XAML에서 명명된 요소를 찾기 위해 런타임 코드를 자주 사용하는 응용 프로그램 작성에 보다 편리합니다. 이러한 속성에는 가장 일반적인 <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>합니다. 여전히 사용할 수 있습니다 [X:name](../../../../docs/framework/xaml-services/x-name-directive.md) 경우는 해당 하는 WPF 프레임 워크 수준 <xref:System.Windows.FrameworkElement.Name%2A> 속성이 특정 형식에서 지원 되지 않습니다. 이는 특정 애니메이션 시나리오에서 볼 수 있는 상황입니다.  
+-   [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md): 개체 요소가 처리된 후 런타임 코드에 있는 인스턴스에 대한 런타임 개체 이름을 지정합니다. 일반적으로는 [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md)에 대응하여 WPF에 정의된 속성을 자주 사용하게 됩니다. 이러한 속성은 특히 CLR 지원 속성에 매핑되므로 초기화된 XAML에서 명명된 요소를 찾기 위해 런타임 코드를 자주 사용하는 애플리케이션 작성에 보다 편리합니다. 이러한 속성에는 가장 일반적인 <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>합니다. 여전히 사용할 수 있습니다 [X:name](../../../../docs/framework/xaml-services/x-name-directive.md) 경우는 해당 하는 WPF 프레임 워크 수준 <xref:System.Windows.FrameworkElement.Name%2A> 속성이 특정 형식에서 지원 되지 않습니다. 이는 특정 애니메이션 시나리오에서 볼 수 있는 상황입니다.  
   
 -   [x:Static](../../../../docs/framework/xaml-services/x-static-markup-extension.md): XAML 호환 속성이 아닌 정적 값을 반환하는 참조를 사용할 수 있게 합니다.  
   
@@ -228,7 +228,7 @@ ms.locfileid: "39220778"
 ## <a name="custom-prefixes-and-custom-types-in-xaml"></a>사용자 지정 접두사와 XAML의 사용자 지정 형식  
  사용자 지정 어셈블리 또는 PresentationCore, PresentationFramework 및 WindowsBase의 WPF 핵심 이외의 어셈블리에 대해 사용자 지정 `xmlns` 매핑의 일부로 어셈블리를 지정할 수 있습니다. 현재 시도 중인 XAML 사용을 지원하도록 해당 형식이 제대로 구현되어 있으면 XAML에서 해당 어셈블리의 형식을 참조할 수 있습니다.  
   
- 다음은 사용자 지정 접두사가 XAML 태그에서 작동하는 방식을 보여 주는 기본 예제입니다. 접두사 `custom`은 루트 요소 태그에 정의되고, 응용 프로그램과 함께 패키지되고 사용 가능한 특정 어셈블리에 매핑됩니다. 이 어셈블리에는 일반적인 XAML 사용뿐 아니라 WPF XAML 콘텐츠 모델의 이 특정 시점에 삽입될 수 있는 클래스 상속 사용을 지원하도록 구현된 `NumericUpDown` 형식이 들어 있습니다. 이 `NumericUpDown` 컨트롤 인스턴스는 접두사를 사용하여 개체 요소로 선언되므로 XAML 파서에서 형식이 포함된 XAML 네임스페이스 및 형식 정의가 들어 있는 지원 어셈블리가 있는 위치를 알 수 있습니다.  
+ 다음은 사용자 지정 접두사가 XAML 태그에서 작동하는 방식을 보여 주는 기본 예제입니다. 접두사 `custom`은 루트 요소 태그에 정의되고, 애플리케이션과 함께 패키지되고 사용 가능한 특정 어셈블리에 매핑됩니다. 이 어셈블리에는 일반적인 XAML 사용뿐 아니라 WPF XAML 콘텐츠 모델의 이 특정 시점에 삽입될 수 있는 클래스 상속 사용을 지원하도록 구현된 `NumericUpDown` 형식이 들어 있습니다. 이 `NumericUpDown` 컨트롤 인스턴스는 접두사를 사용하여 개체 요소로 선언되므로 XAML 파서에서 형식이 포함된 XAML 네임스페이스 및 형식 정의가 들어 있는 지원 어셈블리가 있는 위치를 알 수 있습니다.  
   
 ```  
 <Page  
@@ -249,16 +249,16 @@ ms.locfileid: "39220778"
   
 <a name="events_and_xaml_codebehind"></a>   
 ## <a name="events-and-xaml-code-behind"></a>이벤트 및 XAML 코드 숨김  
- 대부분의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램은 XAML 태그와 코드 숨김으로 구성됩니다. 프로젝트 내에서 XAML로 작성 됩니다는 `.xaml` 파일 및 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] Microsoft Visual Basic 또는 C#과 같은 언어 코드 숨김 파일을 작성 하는 합니다. XAML 파일이 WPF 프로그래밍 및 응용 프로그램 모델의 일부로 태그 컴파일될 때 XAML 파일에 대한 XAML 코드 숨김 파일의 위치는 네임스페이스와 클래스를 XAML 루트 요소의 `x:Class` 특성으로 지정하여 식별합니다.  
+ 대부분의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션은 XAML 태그와 코드 숨김으로 구성됩니다. 프로젝트 내에서 XAML로 작성 됩니다는 `.xaml` 파일 및 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] Microsoft Visual Basic 또는 C#과 같은 언어 코드 숨김 파일을 작성 하는 합니다. XAML 파일이 WPF 프로그래밍 및 애플리케이션 모델의 일부로 태그 컴파일될 때 XAML 파일에 대한 XAML 코드 숨김 파일의 위치는 네임스페이스와 클래스를 XAML 루트 요소의 `x:Class` 특성으로 지정하여 식별합니다.  
   
- 지금까지의 예제에서 몇 개의 단추를 살펴보았지만 아직 논리적 동작이 연결된 단추는 없었습니다. 개체 요소에 대한 동작을 추가하는 기본 응용 프로그램 수준 메커니즘은, 요소 클래스의 기존 이벤트를 사용하고 런타임에서 해당 이벤트가 발생할 때 호출되는 해당 이벤트에 대한 특정 처리기를 작성하는 것입니다. 사용할 이벤트 이름과 처리기 이름은 태그에서 지정하고 처리기를 구현하는 코드는 코드 숨김에서 정의합니다.  
+ 지금까지의 예제에서 몇 개의 단추를 살펴보았지만 아직 논리적 동작이 연결된 단추는 없었습니다. 개체 요소에 대한 동작을 추가하는 기본 애플리케이션 수준 메커니즘은, 요소 클래스의 기존 이벤트를 사용하고 런타임에서 해당 이벤트가 발생할 때 호출되는 해당 이벤트에 대한 특정 처리기를 작성하는 것입니다. 사용할 이벤트 이름과 처리기 이름은 태그에서 지정하고 처리기를 구현하는 코드는 코드 숨김에서 정의합니다.  
   
  [!code-xaml[XAMLOvwSupport#ButtonWithCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml#buttonwithcodebehind)]  
   
  [!code-csharp[XAMLOvwSupport#ButtonWithCodeBehindHandler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml.cs#buttonwithcodebehindhandler)]
  [!code-vb[XAMLOvwSupport#ButtonWithCodeBehindHandler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic/Page1.xaml.vb#buttonwithcodebehindhandler)]  
   
- 코드 숨김 파일은 CLR 네임스페이스 `ExampleNamespace`를 사용하며 `ExamplePage`를 해당 네임스페이스 안에서 partial 클래스로 선언합니다. 이는 태그 루트에 제공되는 `ExampleNamespace`.`ExamplePage`의 `x:Class` 특성 값과 유사합니다. WPF 태그 컴파일러는 루트 요소 형식에서 클래스를 파생하여 모든 컴파일된 XAML 파일에 대한 partial 클래스를 만듭니다. 같은 partial 클래스를 정의하는 코드 숨김을 제공하는 경우, 결과 코드는 컴파일된 응용 프로그램의 동일한 네임스페이스와 클래스 안에서 결합됩니다.  
+ 코드 숨김 파일은 CLR 네임스페이스 `ExampleNamespace`를 사용하며 `ExamplePage`를 해당 네임스페이스 안에서 partial 클래스로 선언합니다. 이는 태그 루트에 제공되는 `ExampleNamespace`.`ExamplePage`의 `x:Class` 특성 값과 유사합니다. WPF 태그 컴파일러는 루트 요소 형식에서 클래스를 파생하여 모든 컴파일된 XAML 파일에 대한 partial 클래스를 만듭니다. 같은 partial 클래스를 정의하는 코드 숨김을 제공하는 경우, 결과 코드는 컴파일된 애플리케이션의 동일한 네임스페이스와 클래스 안에서 결합됩니다.  
   
  WPF에서의 코드 숨김 프로그래밍 요구 사항에 대한 자세한 내용은 [WPF의 코드 숨김 및 XAML](../../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)의 "코드 숨김, 이벤트 처리기 및 partial 클래스 요구 사항" 섹션을 참조하세요.  
   
@@ -269,7 +269,7 @@ ms.locfileid: "39220778"
   
 <a name="x_name_and_xaml_named_elements"></a>   
 ## <a name="xaml-named-elements"></a>XAML 명명 된 요소  
- 기본적으로 XAML 개체 요소 처리를 통해 개체 그래프에서 만들어진 개체 인스턴스는 고유한 식별자 또는 개체 참조를 가지지 않습니다. 이와 달리 코드에서 생성자를 호출할 때는 나중에 코드에서 인스턴스를 참조할 수 있도록 대개는 생성자 결과를 사용하여 변수를 생성된 인스턴스로 설정합니다. 태그 정의를 통해 만들어진 개체에 대한 표준화된 액세스를 제공하기 위해 XAML은 [x:Name 특성](../../../../docs/framework/xaml-services/x-name-directive.md)을 정의합니다. 모든 개체 요소에 대해 `x:Name` 특성의 값을 설정할 수 있습니다. 코드 숨김에서 선택한 식별자는 구성된 인스턴스를 참조하는 인스턴스 변수와 같습니다. 명명된 요소는 모든 측면에서 개체 인스턴스인 것처럼 작동하며(이름은 해당 인스턴스를 참조함) 코드 숨김은 명명된 요소를 참조하여 응용 프로그램 안에서 런타임 상호 작용을 처리할 수 있습니다. 인스턴스와 변수 간의이 연결은 WPF XAML 태그 컴파일러에 의해 수행 됩니다 및 더 구체적으로 기능 및 패턴이 관련 같은 <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> 이 항목에서 자세히 설명 하지는입니다.  
+ 기본적으로 XAML 개체 요소 처리를 통해 개체 그래프에서 만들어진 개체 인스턴스는 고유한 식별자 또는 개체 참조를 가지지 않습니다. 이와 달리 코드에서 생성자를 호출할 때는 나중에 코드에서 인스턴스를 참조할 수 있도록 대개는 생성자 결과를 사용하여 변수를 생성된 인스턴스로 설정합니다. 태그 정의를 통해 만들어진 개체에 대한 표준화된 액세스를 제공하기 위해 XAML은 [x:Name 특성](../../../../docs/framework/xaml-services/x-name-directive.md)을 정의합니다. 모든 개체 요소에 대해 `x:Name` 특성의 값을 설정할 수 있습니다. 코드 숨김에서 선택한 식별자는 구성된 인스턴스를 참조하는 인스턴스 변수와 같습니다. 명명된 요소는 모든 측면에서 개체 인스턴스인 것처럼 작동하며(이름은 해당 인스턴스를 참조함) 코드 숨김은 명명된 요소를 참조하여 애플리케이션 안에서 런타임 상호 작용을 처리할 수 있습니다. 인스턴스와 변수 간의이 연결은 WPF XAML 태그 컴파일러에 의해 수행 됩니다 및 더 구체적으로 기능 및 패턴이 관련 같은 <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> 이 항목에서 자세히 설명 하지는입니다.  
   
  상속 하는 WPF 프레임 워크 수준 XAML 요소를 <xref:System.Windows.FrameworkElement.Name%2A> 속성을 정의 하는 XAML은 `x:Name` 특성입니다. 다른 특정 클래스에서도 `x:Name`에 해당하는 속성 수준 속성을 제공하며 이것은 일반적으로 `Name` 속성으로도 정의됩니다. 일반적으로, 멤버 테이블에서 선택한 요소/형식의 `Name` 속성을 찾을 수 없는 경우 `x:Name`을 대신 사용합니다. 합니다 `x:Name` 값은 사용할 수 있는 런타임 시 특정 하위 시스템 또는 유틸리티 메서드에서 같은 XAML 요소에 식별자를 제공 하는 <xref:System.Windows.FrameworkElement.FindName%2A>합니다.  
   
@@ -309,19 +309,19 @@ ms.locfileid: "39220778"
 ## <a name="xaml-security"></a>XAML 보안  
  XAML은 개체 인스턴스화 및 실행을 직접적으로 나타내는 태그 언어입니다. 따라서 XAML에서 만든 요소에는 생성된 해당 코드가 수행하는 것과 마찬가지로 시스템 리소스(예: 네트워크 액세스, 파일 시스템 IO)와 상호 작용하는 동일한 기능이 있습니다.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] 보안 프레임워크인 [!INCLUDE[TLA#tla_cas](../../../../includes/tlasharptla-cas-md.md)]를 지원합니다. 즉, 인터넷 영역에서 실행되는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠는 실행 권한이 줄어듭니다. 이때 "느슨한 XAML"(컴파일되지 않은 XAML의 페이지가 로드 시 XAML 뷰어에 의해 해석됨) 및 [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)]는 일반적으로 이 인터넷 영역에서 실행되며 같은 권한 집합을 사용합니다.  하지만 완전히 신뢰할 수 있는 응용 프로그램으로 로드된 XAML은 시스템 리소스에 대해 호스팅 응용 프로그램과 동일한 액세스 권한을 가집니다. 자세한 내용은 [WPF 부분 신뢰 보안](../../../../docs/framework/wpf/wpf-partial-trust-security.md)을 참조하세요.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] 보안 프레임워크인 [!INCLUDE[TLA#tla_cas](../../../../includes/tlasharptla-cas-md.md)]를 지원합니다. 즉, 인터넷 영역에서 실행되는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 콘텐츠는 실행 권한이 줄어듭니다. 이때 "느슨한 XAML"(컴파일되지 않은 XAML의 페이지가 로드 시 XAML 뷰어에 의해 해석됨) 및 [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)]는 일반적으로 이 인터넷 영역에서 실행되며 같은 권한 집합을 사용합니다.  하지만 완전히 신뢰할 수 있는 애플리케이션으로 로드된 XAML은 시스템 리소스에 대해 호스팅 애플리케이션과 동일한 액세스 권한을 가집니다. 자세한 내용은 [WPF 부분 신뢰 보안](../../../../docs/framework/wpf/wpf-partial-trust-security.md)을 참조하세요.  
   
 <a name="loading_xaml_from_code"></a>   
 ## <a name="loading-xaml-from-code"></a>코드에서 XAML 로드  
- XAML을 사용하여 전체 UI를 정의할 수 있지만 XAML에서 UI의 일부만 정의하는 것이 적합할 때도 있습니다. 이 기능을 통해 부분 사용자 지정, 정보의 로컬 저장, XAML을 사용한 비즈니스 개체 제공을 비롯한 가능한 다양한 시나리오를 지원할 수 있습니다. 이러한 시나리오의 핵심은는 <xref:System.Windows.Markup.XamlReader> 클래스 및 해당 <xref:System.Windows.Markup.XamlReader.Load%2A> 메서드. 입력은 XAML 파일이며 출력은 해당 태그에서 만들어진 개체의 전체 런타임 트리를 나타내는 개체입니다. 그런 다음 응용 프로그램에 이미 존재하는 다른 개체의 속성으로 개체를 삽입할 수 있습니다. 속성이 표시 기능을 가지고 있으며 응용 프로그램에 새 콘텐츠가 추가되었음을 실행 엔진에 알리는 콘텐츠 모델의 적절한 속성인 경우에는 XAML에 로드하여 실행 중인 응용 프로그램의 콘텐츠를 쉽게 수정할 수 있습니다. 하지만 이 기능은 실행되는 응용 프로그램에 파일을 로드함으로써 보안에 가져올 수 있는 영향을 감안하여 일반적으로 완전히 신뢰할 수 있는 응용 프로그램에서만 사용할 수 있게 되어 있습니다.  
+ XAML을 사용하여 전체 UI를 정의할 수 있지만 XAML에서 UI의 일부만 정의하는 것이 적합할 때도 있습니다. 이 기능을 통해 부분 사용자 지정, 정보의 로컬 스토리지, XAML을 사용한 비즈니스 개체 제공을 비롯한 가능한 다양한 시나리오를 지원할 수 있습니다. 이러한 시나리오의 핵심은는 <xref:System.Windows.Markup.XamlReader> 클래스 및 해당 <xref:System.Windows.Markup.XamlReader.Load%2A> 메서드. 입력은 XAML 파일이며 출력은 해당 태그에서 만들어진 개체의 전체 런타임 트리를 나타내는 개체입니다. 그런 다음 애플리케이션에 이미 존재하는 다른 개체의 속성으로 개체를 삽입할 수 있습니다. 속성이 표시 기능을 가지고 있으며 애플리케이션에 새 콘텐츠가 추가되었음을 실행 엔진에 알리는 콘텐츠 모델의 적절한 속성인 경우에는 XAML에 로드하여 실행 중인 애플리케이션의 콘텐츠를 쉽게 수정할 수 있습니다. 하지만 이 기능은 실행되는 애플리케이션에 파일을 로드함으로써 보안에 가져올 수 있는 영향을 감안하여 일반적으로 완전히 신뢰할 수 있는 애플리케이션에서만 사용할 수 있게 되어 있습니다.  
   
 <a name="whats_next"></a>   
 ## <a name="whats-next"></a>새로운 기능  
  이 항목에서는 WPF에 적용되는 XAML 구문 개념과 용어에 대한 기본적인 내용을 소개했습니다. 이 항목에서 사용된 용어에 대한 자세한 내용은 [XAML 구문 정보](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)를 참조하세요.  
   
- 이미 않았다면이, 그래도 자습서 항목의 연습 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다. 자습서에서 설명하는 태그 중심 응용 프로그램을 만들어보면 이 항목에서 설명하는 많은 개념을 더 확실하게 이해할 수 있을 것입니다.  
+ 이미 않았다면이, 그래도 자습서 항목의 연습 [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)합니다. 자습서에서 설명하는 태그 중심 애플리케이션을 만들어보면 이 항목에서 설명하는 많은 개념을 더 확실하게 이해할 수 있을 것입니다.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 기반이 되는 특정 응용 프로그램 모델을 사용 하 여 <xref:System.Windows.Application> 클래스입니다. 자세한 내용은 [응용 프로그램 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md)를 참조하세요.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 기반이 되는 특정 응용 프로그램 모델을 사용 하 여 <xref:System.Windows.Application> 클래스입니다. 자세한 내용은 [애플리케이션 관리 개요](../../../../docs/framework/wpf/app-development/application-management-overview.md)를 참조하세요.  
   
  [WPF 응용 프로그램 빌드](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md) 에서는 명령줄에서 [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)]를 사용하여 XAML 포함 응용 프로그램을 만드는 방법에 대해 더 자세하게 설명합니다.  
   

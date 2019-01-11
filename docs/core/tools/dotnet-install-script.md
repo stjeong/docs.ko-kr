@@ -115,7 +115,7 @@ macOS/Linux:
 
 * **`-FeedCredential`**
 
-  Azure 피드에 추가할 쿼리 문자열로 사용됩니다. public이 아닌 Blob Storage 계정을 사용하도록 URL을 변경할 수 있습니다.
+  Azure 피드에 추가할 쿼리 문자열로 사용됩니다. public이 아닌 Blob 스토리지 계정을 사용하도록 URL을 변경할 수 있습니다.
 
 * **`-ProxyAddress`**
 

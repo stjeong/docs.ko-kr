@@ -83,7 +83,7 @@ ushort z = x + y;   // Error: conversion from int to ushort
 ushort z = (ushort)(x + y);   // OK: explicit conversion
 ```
 
-그러나 대상 변수에 동일한 저장소 크기 또는 더 큰 저장소 크기가 있는 다음 문을 사용할 수 있습니다.
+그러나 대상 변수에 동일한 스토리지 크기 또는 더 큰 스토리지 크기가 있는 다음 명령문을 사용할 수 있습니다.
 
 ```csharp
 int m = x + y;

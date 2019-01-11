@@ -48,9 +48,9 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33397769"
 ---
 # <a name="reliability-best-practices"></a>최선의 안정성 구현 방법
-다음 안정성 규칙은 SQL Server 중심이지만, 호스트 기반 서버 응용 프로그램에도 적용됩니다. SQL Server와 같은 서버에서 리소스가 누출되지 않고 중단되지 않는 것이 매우 중요합니다.  그러나 이 작업은 개체의 상태를 변경하는 모든 메서드에 대해 취소 코드를 작성하여 수행할 수 없습니다.  취소 코드를 사용하여 모든 위치에서 모든 오류로부터 복구되는 100% 신뢰할 수 있는 관리 코드를 작성하는 것이 목표가 아닙니다.  성공 가능성이 희박한 매우 까다로운 작업입니다.  CLR(공용 언어 런타임)에서는 완벽한 코드를 작성할 수 있는 관리 코드가 제공된다고 확실히 보장할 수 없습니다.  ASP.NET과 달리 SQL Server에서는 허용할 수 없을 정도로 오랜 기간 동안 데이터베이스를 작동 중지하지 않고는 재활용할 수 없는 단 하나의 프로세스만 사용합니다.  
+다음 안정성 규칙은 SQL Server 중심이지만, 호스트 기반 서버 애플리케이션에도 적용됩니다. SQL Server와 같은 서버에서 리소스가 누출되지 않고 중단되지 않는 것이 매우 중요합니다.  그러나 이 작업은 개체의 상태를 변경하는 모든 메서드에 대해 취소 코드를 작성하여 수행할 수 없습니다.  취소 코드를 사용하여 모든 위치에서 모든 오류로부터 복구되는 100% 신뢰할 수 있는 관리 코드를 작성하는 것이 목표가 아닙니다.  성공 가능성이 희박한 매우 까다로운 작업입니다.  CLR(공용 언어 런타임)에서는 완벽한 코드를 작성할 수 있는 관리 코드가 제공된다고 확실히 보장할 수 없습니다.  ASP.NET과 달리 SQL Server에서는 허용할 수 없을 정도로 오랜 기간 동안 데이터베이스를 작동 중지하지 않고는 재활용할 수 없는 단 하나의 프로세스만 사용합니다.  
   
- 이와 같이 희박하게 보장되며 단일 프로세스에서 실행되는 조건에서, 필요할 때 스레드를 종료하거나 응용 프로그램을 재활용하며 핸들이나 메모리와 같은 운영 체제 리소스가 누출되지 않도록 주의하는 것만이 안정성을 보장합니다.  이와 같이 안정성 제약 조건은 단순해도 안정성 요구 사항은 여전히 상당합니다.  
+ 이와 같이 희박하게 보장되며 단일 프로세스에서 실행되는 조건에서, 필요할 때 스레드를 종료하거나 애플리케이션을 재활용하며 핸들이나 메모리와 같은 운영 체제 리소스가 누출되지 않도록 주의하는 것만이 안정성을 보장합니다.  이와 같이 안정성 제약 조건은 단순해도 안정성 요구 사항은 여전히 상당합니다.  
   
 -   운영 체제 리소스가 누출되지 않습니다.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "33397769"
   
  메모리 부족 조건은 SQL Server에서 자주 발생합니다.  
   
- SQL Server에서 호스팅되는 라이브러리가 공유 상태를 올바르게 업데이트하지 않아도 데이터베이스를 다시 시작할 때까지 코드가 복구되지 않을 가능성이 높습니다.  또한 극단적인 경우에는 SQL Server 프로세스가 실패되는 원인이 되므로 데이터베이스를 다시 부팅해야 할 수도 있습니다.  데이터베이스를 다시 부팅하면 웹 사이트를 종료시키거나 회사 업무에 영향을 미쳐 가용성이 손상될 수 있습니다.  메모리 또는 핸들과 같은 운영 체제 리소스가 서서히 누출되면 서버에서 복구 가능성이 없이 핸들을 할당하는 데 실패하거나 서버의 성능이 서서히 저하되거나 고객의 응용 프로그램 가용성이 줄어듭니다.  이러한 시나리오는 확실히 방지해야 합니다.  
+ SQL Server에서 호스팅되는 라이브러리가 공유 상태를 올바르게 업데이트하지 않아도 데이터베이스를 다시 시작할 때까지 코드가 복구되지 않을 가능성이 높습니다.  또한 극단적인 경우에는 SQL Server 프로세스가 실패되는 원인이 되므로 데이터베이스를 다시 부팅해야 할 수도 있습니다.  데이터베이스를 다시 부팅하면 웹 사이트를 종료시키거나 회사 업무에 영향을 미쳐 가용성이 손상될 수 있습니다.  메모리 또는 핸들과 같은 운영 체제 리소스가 서서히 누출되면 서버에서 복구 가능성이 없이 핸들을 할당하는 데 실패하거나 서버의 성능이 서서히 저하되거나 고객의 애플리케이션 가용성이 줄어듭니다.  이러한 시나리오는 확실히 방지해야 합니다.  
   
 ## <a name="best-practice-rules"></a>모범 사례 규칙  
  이 소개에서는 프레임워크의 안정성과 신뢰성을 높이기 위해 서버에서 실행되는 관리 코드의 코드 검토에서 파악해야 하는 사항에 중점을 둡니다. 이러한 검사를 수행하는 것은 일반적으로 좋은 방법이며 서버에서는 절대적으로 수행되어야 합니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "33397769"
  <xref:System.Runtime.InteropServices.SafeHandle>을 사용하여 운영 체제 리소스를 캡슐화합니다. <xref:System.Runtime.InteropServices.HandleRef> 또는 <xref:System.IntPtr> 형식의 필드를 사용하지 마세요.  
   
 ### <a name="ensure-finalizers-do-not-have-to-run-to-prevent-leaking-operating-system-resources"></a>종료자를 실행하지 않아도 되게 하여 운영 체제 리소스의 누출 방지  
- 종료자를 실행하지 않아도 중요한 운영 체제 리소스가 누출되지 않게 종료자를 신중하게 검토합니다.  응용 프로그램이 안정된 상태로 실행되거나 SQL Server와 같은 서버가 종료될 때 수행되는 정상 <xref:System.AppDomain> 언로드와 달리, 갑작스러운 <xref:System.AppDomain> 언로드 중에는 개체가 종료되지 않습니다.  응용 프로그램의 정확도는 보장할 수 없지만, 서버의 무결성은 누출되지 않는 리소스를 통해 유지 관리해야 하므로, 갑작스러운 언로드 시 리소스가 누출되지 않게 해야 합니다.  <xref:System.Runtime.InteropServices.SafeHandle>을 사용하여 운영 체제 리소스를 해제합니다.  
+ 종료자를 실행하지 않아도 중요한 운영 체제 리소스가 누출되지 않게 종료자를 신중하게 검토합니다.  애플리케이션이 안정된 상태로 실행되거나 SQL Server와 같은 서버가 종료될 때 수행되는 정상 <xref:System.AppDomain> 언로드와 달리, 갑작스러운 <xref:System.AppDomain> 언로드 중에는 개체가 종료되지 않습니다.  애플리케이션의 정확도는 보장할 수 없지만, 서버의 무결성은 누출되지 않는 리소스를 통해 유지 관리해야 하므로, 갑작스러운 언로드 시 리소스가 누출되지 않게 해야 합니다.  <xref:System.Runtime.InteropServices.SafeHandle>을 사용하여 운영 체제 리소스를 해제합니다.  
   
 ### <a name="ensure-that-finally-clauses-do-not-have-to-run-to-prevent-leaking-operating-system-resources"></a>finally 절을 실행하지 않아도 되게 하여 운영 체제 리소스의 누출 방지  
  `finally` 절은 CER 외부에서는 실행되지 않을 수도 있으므로, 라이브러리 개발자가 관리되지 않는 리소스를 해제하는 데 `finally` 블록 내의 코드에 의존하지 않아야 합니다.  <xref:System.Runtime.InteropServices.SafeHandle>을 사용하는 것이 좋은 솔루션입니다.  
@@ -124,18 +124,18 @@ ms.locfileid: "33397769"
 #### <a name="code-analysis-rule"></a>코드 분석 규칙  
  `catch` 다음에 있는 정리 코드는 `finally` 블록에 있어야 합니다. 삭제할 호출을 finally 블록에 둡니다.  `catch` 블록은 throw 또는 rethrow로 종료되어야 합니다.  네트워크 연결 설정 여부를 감지하며 다수의 예외가 발생할 수 있는 코드에서와 같이 예외가 발생할 수 있지만, 정상 상황에서 다수의 예외를 catch해야 하는 코드에서는 성공 여부를 확인하기 위해 코드를 테스트해야 한다고 표시해야 합니다.  
   
-### <a name="process-wide-mutable-shared-state-between-application-domains-should-be-eliminated-or-use-a-constrained-execution-region"></a>응용 프로그램 도메인 간의 프로세스 전체 변경 가능 공유 상태는 제거되거나 제약이 있는 실행 지역을 사용해야 함  
- 소개에 설명된 것처럼 응용 프로그램 도메인 간에 프로세스 전체 공유 상태를 안정되게 모니터하는 관리 코드를 작성하기는 매우 어려울 수 있습니다.  프로세스 전체 공유 상태는 Win32 코드, CLR 내부 또는 원격을 사용하여 관리 코드 내에서 응용 프로그램 도메인 간에 공유하는 일종의 데이터 구조체입니다.  변경할 수 있는 공유 상태는 관리 코드에서 올바르게 작성하기가 매우 어려우며, 정적 공유 상태를 작성할 때는 상당한 주의를 기울여야 합니다.  프로세스 전체 또는 컴퓨터 전체 공유 상태가 있으면 제거 방법을 찾거나 제약이 있는 실행 지역(CER)을 사용하여 공유 상태를 보호합니다.  공유 상태의 라이브러리를 식별하여 정정하지 않으면 정리 <xref:System.AppDomain> 언로드가 필요한 호스트(예: SQL Server)를 중단시킬 수 있습니다.  
+### <a name="process-wide-mutable-shared-state-between-application-domains-should-be-eliminated-or-use-a-constrained-execution-region"></a>애플리케이션 도메인 간의 프로세스 전체 변경 가능 공유 상태는 제거되거나 제약이 있는 실행 지역을 사용해야 함  
+ 소개에 설명된 것처럼 애플리케이션 도메인 간에 프로세스 전체 공유 상태를 안정되게 모니터하는 관리 코드를 작성하기는 매우 어려울 수 있습니다.  프로세스 전체 공유 상태는 Win32 코드, CLR 내부 또는 원격을 사용하여 관리 코드 내에서 애플리케이션 도메인 간에 공유하는 일종의 데이터 구조체입니다.  변경할 수 있는 공유 상태는 관리 코드에서 올바르게 작성하기가 매우 어려우며, 정적 공유 상태를 작성할 때는 상당한 주의를 기울여야 합니다.  프로세스 전체 또는 컴퓨터 전체 공유 상태가 있으면 제거 방법을 찾거나 제약이 있는 실행 지역(CER)을 사용하여 공유 상태를 보호합니다.  공유 상태의 라이브러리를 식별하여 정정하지 않으면 정리 <xref:System.AppDomain> 언로드가 필요한 호스트(예: SQL Server)를 중단시킬 수 있습니다.  
   
- 코드에서 COM 개체를 사용하는 경우 응용 프로그램 도메인 간에 COM 개체를 공유하지 않게 하세요.  
+ 코드에서 COM 개체를 사용하는 경우 애플리케이션 도메인 간에 COM 개체를 공유하지 않게 하세요.  
   
-### <a name="locks-do-not-work-process-wide-or-between-application-domains"></a>프로세스 전체 또는 응용 프로그램 도메인 간에는 잠금이 작동하지 않습니다.  
- 이전에는 <xref:System.Threading.Monitor.Enter%2A> 및 [lock 문](~/docs/csharp/language-reference/keywords/lock-statement.md)을 사용하여 전역 프로세스 잠금을 만들었습니다.  예를 들어, 이 동작은 <xref:System.AppDomain> agile 클래스에서 잠글 때 발생합니다(예: 비공유 어셈블리의 <xref:System.Type> 인스턴스, <xref:System.Threading.Thread> 개체, 인턴 지정 문자열 및 원격을 사용하여 응용 프로그램 도메인 간에 공유하는 문자열).  이러한 잠금은 더 이상 프로세스 전체에 적용되지 않습니다.  프로세스 전체 응용 프로그램 도메인 간 잠금의 현재 상태를 파악하려면 잠금 내의 코드에서 디스크의 파일 또는 데이터베이스와 같은 외부 영구 리소스를 사용하는지 확인합니다.  
+### <a name="locks-do-not-work-process-wide-or-between-application-domains"></a>프로세스 전체 또는 애플리케이션 도메인 간에는 잠금이 작동하지 않습니다.  
+ 이전에는 <xref:System.Threading.Monitor.Enter%2A> 및 [lock 문](~/docs/csharp/language-reference/keywords/lock-statement.md)을 사용하여 전역 프로세스 잠금을 만들었습니다.  예를 들어, 이 동작은 <xref:System.AppDomain> agile 클래스에서 잠글 때 발생합니다(예: 비공유 어셈블리의 <xref:System.Type> 인스턴스, <xref:System.Threading.Thread> 개체, 인턴 지정 문자열 및 원격을 사용하여 애플리케이션 도메인 간에 공유하는 문자열).  이러한 잠금은 더 이상 프로세스 전체에 적용되지 않습니다.  프로세스 전체 응용 프로그램 도메인 간 잠금의 현재 상태를 파악하려면 잠금 내의 코드에서 디스크의 파일 또는 데이터베이스와 같은 외부 영구 리소스를 사용하는지 확인합니다.  
   
- <xref:System.AppDomain>에서 잠금을 사용하면 보호된 코드에서 외부 리소스를 사용하는 경우 문제가 발생할 수 있습니다. 해당 코드가 여러 응용 프로그램 도메인에서 동시에 실행될 수 있기 때문입니다.  그러면 한 로그 파일에 쓰거나 전체 프로세스를 위해 소켓에 바인딩할 때 문제가 될 수 있습니다.  이러한 변경은 명명된 <xref:System.Threading.Mutex> 또는 <xref:System.Threading.Semaphore> 인스턴스를 사용하는 방법 외에 관리 코드를 사용하여 프로세스-전역 잠금을 얻기가 쉽지 않다는 것을 나타냅니다.  두 응용 프로그램 도메인에서 동시에 실행되지 않는 코드를 만들거나 <xref:System.Threading.Mutex> 또는 <xref:System.Threading.Semaphore> 클래스를 사용합니다.  기존 코드를 변경할 수 없으면 이 동기화를 달성하는 데 Win32 명명된 뮤텍스를 사용하지 마세요. 파이버 모드에서 실행하면 동일한 운영 체제 스레드가 뮤텍스를 확보하고 해제하지 못할 수도 있기 때문입니다.  비관리 코드를 사용하여 잠금을 동기화하는 대신 CLR에서 알고 있는 방식으로 코드 잠금을 동기화하려면 관리되는 <xref:System.Threading.Mutex> 클래스 또는 명명된 <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent> 또는 <xref:System.Threading.Semaphore>를 사용해야 합니다.  
+ <xref:System.AppDomain>에서 잠금을 사용하면 보호된 코드에서 외부 리소스를 사용하는 경우 문제가 발생할 수 있습니다. 해당 코드가 여러 응용 프로그램 도메인에서 동시에 실행될 수 있기 때문입니다.  그러면 한 로그 파일에 쓰거나 전체 프로세스를 위해 소켓에 바인딩할 때 문제가 될 수 있습니다.  이러한 변경은 명명된 <xref:System.Threading.Mutex> 또는 <xref:System.Threading.Semaphore> 인스턴스를 사용하는 방법 외에 관리 코드를 사용하여 프로세스-전역 잠금을 얻기가 쉽지 않다는 것을 나타냅니다.  두 애플리케이션 도메인에서 동시에 실행되지 않는 코드를 만들거나 <xref:System.Threading.Mutex> 또는 <xref:System.Threading.Semaphore> 클래스를 사용합니다.  기존 코드를 변경할 수 없으면 이 동기화를 달성하는 데 Win32 명명된 뮤텍스를 사용하지 마세요. 파이버 모드에서 실행하면 동일한 운영 체제 스레드가 뮤텍스를 확보하고 해제하지 못할 수도 있기 때문입니다.  비관리 코드를 사용하여 잠금을 동기화하는 대신 CLR에서 알고 있는 방식으로 코드 잠금을 동기화하려면 관리되는 <xref:System.Threading.Mutex> 클래스 또는 명명된 <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent> 또는 <xref:System.Threading.Semaphore>를 사용해야 합니다.  
   
 #### <a name="avoid-locktypeofmytype"></a>lock(typeof(MyType)) 방지  
- 모든 응용 프로그램 도메인 간에 공유되는 코드 복사본이 하나뿐인 공유 어셈블리의 개인 및 공용 <xref:System.Type> 개체도 문제를 초래합니다.  공유 어셈블리의 경우 <xref:System.Type> 인스턴스는 프로세스당 하나뿐입니다. 즉, 여러 응용 프로그램 도메인에서 똑같은 <xref:System.Type> 인스턴스를 공유합니다.  <xref:System.Type> 인스턴스에서 잠금을 사용하면 단지 <xref:System.AppDomain>만이 아니라 전체 프로세스에 영향을 미치는 잠금을 사용합니다.  하나의 <xref:System.AppDomain>이 <xref:System.Type> 개체에서 잠금을 사용하면 해당 스레드가 갑자기 중단되고 잠금을 릴리스하지 않습니다.  그러면 이 잠금으로 인해 다른 응용 프로그램 도메인이 교착 상태가 될 수 있습니다.  
+ 모든 애플리케이션 도메인 간에 공유되는 코드 복사본이 하나뿐인 공유 어셈블리의 개인 및 공용 <xref:System.Type> 개체도 문제를 초래합니다.  공유 어셈블리의 경우 <xref:System.Type> 인스턴스는 프로세스당 하나뿐입니다. 즉, 여러 애플리케이션 도메인에서 똑같은 <xref:System.Type> 인스턴스를 공유합니다.  <xref:System.Type> 인스턴스에서 잠금을 사용하면 단지 <xref:System.AppDomain>만이 아니라 전체 프로세스에 영향을 미치는 잠금을 사용합니다.  하나의 <xref:System.AppDomain>이 <xref:System.Type> 개체에서 잠금을 사용하면 해당 스레드가 갑자기 중단되고 잠금을 릴리스하지 않습니다.  그러면 이 잠금으로 인해 다른 애플리케이션 도메인이 교착 상태가 될 수 있습니다.  
   
  정적 메서드에서 잠금을 사용하려면 정적 내부 동기화 개체를 코드에 추가하는 것이 좋은 방법입니다.  개체가 하나 있으면 클래스 생성자에서 초기화할 수 있지만, 없으면 다음과 같이 초기화할 수 있습니다.  
   
@@ -185,7 +185,7 @@ public static MyClass SingletonProperty
  공개적으로 액세스할 수 있는 개별 개체에서는 일반적으로 잠금을 사용할 수 있습니다.  그러나 개체가 전체 하위 시스템에서 교착 상태를 초래할 수 있는 단일 개체인 경우에는 추가로 위의 디자인 패턴을 사용해 보세요.  예를 들어, 한 <xref:System.Security.SecurityManager> 개체의 잠금으로 인해 <xref:System.AppDomain>에 교착 상태가 발생할 수 있으므로, 전체 <xref:System.AppDomain>을 사용할 수 없게 됩니다. 공개적으로 액세스할 수 있는 이 형식의 개체에서 잠금을 사용하지 않는 것이 좋은 방법입니다.  그러나 개별 컬렉션 또는 배열의 잠금은 일반적으로 문제를 초래하지 않아야 합니다.  
   
 #### <a name="code-analysis-rule"></a>코드 분석 규칙  
- 응용 프로그램 도메인 간에 사용할 수 있거나 엄격한 ID 규칙이 없는 형식에서는 잠금을 사용하지 마세요. <xref:System.Type>, <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.PropertyInfo>, <xref:System.String>, <xref:System.ValueType>, <xref:System.Threading.Thread> 또는 <xref:System.MarshalByRefObject>에서 파생된 개체에서는 <xref:System.Threading.Monitor.Enter%2A>를 호출하지 마세요.  
+ 애플리케이션 도메인 간에 사용할 수 있거나 엄격한 ID 규칙이 없는 형식에서는 잠금을 사용하지 마세요. <xref:System.Type>, <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.PropertyInfo>, <xref:System.String>, <xref:System.ValueType>, <xref:System.Threading.Thread> 또는 <xref:System.MarshalByRefObject>에서 파생된 개체에서는 <xref:System.Threading.Monitor.Enter%2A>를 호출하지 마세요.  
   
 ### <a name="remove-gckeepalive-calls"></a>GC.KeepAlive 호출 제거  
  상당한 양의 기존 코드에서<xref:System.GC.KeepAlive%2A>를 사용해야 하지만 그렇지 않거나, 사용이 적절하지 않을 때 사용합니다.  <xref:System.Runtime.InteropServices.SafeHandle>로 변환한 후에는 클래스에서 <xref:System.GC.KeepAlive%2A>를 호출하지 않아도 되며, 종료자가 없지만 <xref:System.Runtime.InteropServices.SafeHandle>을 사용하여 운영 체제 핸들을 종료한다고 가정합니다.  <xref:System.GC.KeepAlive%2A>에 대한 호출을 유지하는 데 따른 성능 저하는 무시할 수 있지만, <xref:System.GC.KeepAlive%2A>에 대한 호출이 필요하거나 더 이상 존재하지 않는 수명 문제를 해결하는 데 충분하다는 인식 때문에 코드를 유지하기가 더 어려워집니다.  그러나 COM interop CLR 호출 가능 래퍼(RCW)를 사용할 때 <xref:System.GC.KeepAlive%2A>가 여전히 코드에 필요합니다.  
@@ -196,7 +196,7 @@ public static MyClass SingletonProperty
 ### <a name="use-the-host-protection-attribute"></a>호스트 보호 특성 사용  
  <xref:System.Security.Permissions.HostProtectionAttribute>(HPA)에서는 호스트 보호 요구 사항을 판별하기 위해 선언적 보호 작업 사용을 제공하므로, 호스트가 완전히 신뢰할 수 있는 코드에서도 SQL Server용 <xref:System.Environment.Exit%2A> 또는 <xref:System.Windows.Forms.MessageBox.Show%2A>와 같이 지정된 호스트에 적합하지 않은 특정 호스트를 호출하지 못하게 방지할 수 있습니다.  
   
- HPA는 공용 언어 런타임을 호스트하고 SQL Server와 같은 호스트 보호를 구현하는 관리되지 않는 응용 프로그램에서만 적용됩니다. 적용되면 보안 작업에서 클래스 또는 메서드가 노출하는 호스트 리소스를 기반으로 링크 요구 사항을 만듭니다. 호스트에서 보호되지 않는 서버나 클라이언트 응용 프로그램에서 코드가 실행되면 “evaporates” 특성이 감지되지 않으므로 적용되지 않습니다.  
+ HPA는 공용 언어 런타임을 호스트하고 SQL Server와 같은 호스트 보호를 구현하는 관리되지 않는 애플리케이션에서만 적용됩니다. 적용되면 보안 작업에서 클래스 또는 메서드가 노출하는 호스트 리소스를 기반으로 링크 요구 사항을 만듭니다. 호스트에서 보호되지 않는 서버나 클라이언트 애플리케이션에서 코드가 실행되면 “evaporates” 특성이 감지되지 않으므로 적용되지 않습니다.  
   
 > [!IMPORTANT]
 >  이 특성은 보안 동작이 아니라 호스트별 프로그래밍 모델 지침을 적용하는 데 사용합니다.  링크 요구 사항을 사용하여 프로그래밍 모델 요구 사항을 만족하는지 확인하지만 <xref:System.Security.Permissions.HostProtectionAttribute>는 보안 권한이 아닙니다.  
@@ -212,7 +212,7 @@ public static MyClass SingletonProperty
 -   호스트 프로그래밍 모델에 적합하지 않으며 서버 프로세스 자체를 불안정하게 만드는 메서드 또는 클래스.  
   
 > [!NOTE]
->  호스트 보호 환경에서 실행할 수 있는 응용 프로그램에서 호출할 클래스 라이브러리를 만드는 경우 <xref:System.Security.Permissions.HostProtectionResource> 리소스 범주를 노출하는 멤버에 이 특성을 적용해야 합니다. 이 특성과 함께 .NET Framework 클래스 라이브러리 멤버를 사용하면 즉각적인 호출자만 검사하게 됩니다.  사용자의 라이브러리 멤버도 이와 동일한 방식으로 즉각적인 호출자 검사만 수행해야 합니다.  
+>  호스트 보호 환경에서 실행할 수 있는 애플리케이션에서 호출할 클래스 라이브러리를 만드는 경우 <xref:System.Security.Permissions.HostProtectionResource> 리소스 범주를 노출하는 멤버에 이 특성을 적용해야 합니다. 이 특성과 함께 .NET Framework 클래스 라이브러리 멤버를 사용하면 즉각적인 호출자만 검사하게 됩니다.  사용자의 라이브러리 멤버도 이와 동일한 방식으로 즉각적인 호출자 검사만 수행해야 합니다.  
   
  <xref:System.Security.Permissions.HostProtectionAttribute>에 HPA에 대한 자세한 내용이 있습니다.  
   
@@ -233,7 +233,7 @@ public static MyClass SingletonProperty
  COM STA(단일 스레드 아파트)를 사용하는 코드를 식별합니다.  STA는 SQL Server 프로세스에서 비활성화됩니다.  성능 카운터 또는 클립보드와 같이 `CoInitialize`를 사용하는 기능은 SQL Server에서 비활성화되어야 합니다.  
   
 ### <a name="ensure-finalizers-are-free-of-synchronization-problems"></a>종료자에 동기화 문제가 없는지 확인  
- 향후 버전의 .NET Framework에 여러 종료자 스레드가 있을 수 있습니다. 즉, 동일한 형식의 여러 다른 인스턴스에 대해 종료자가 동시에 실행됩니다.  스레드로부터 완전히 안전하지 않아도 됩니다. 가비지 수집기에서는 하나의 스레드만 지정된 개체 인스턴스에 대해 종료자를 실행하도록 보장합니다.  그러나 여러 다른 개체 인스턴스에서 동시에 실행될 때 경합 상태와 교착 상태를 방지하도록 종료자를 코딩해야 합니다.  종료자에서 로그 파일에 쓰기와 같이 외부 상태를 사용하는 경우 스레딩 문제를 처리해야 합니다.  종료에서 스레드 보안을 제공할 것으로 의존하지 마세요. 스레드 로컬 저장소, 관리 또는 네이티브를 사용하여 종료자 스레드에 상태를 저장하지 마세요.  
+ 향후 버전의 .NET Framework에 여러 종료자 스레드가 있을 수 있습니다. 즉, 동일한 형식의 여러 다른 인스턴스에 대해 종료자가 동시에 실행됩니다.  스레드로부터 완전히 안전하지 않아도 됩니다. 가비지 수집기에서는 하나의 스레드만 지정된 개체 인스턴스에 대해 종료자를 실행하도록 보장합니다.  그러나 여러 다른 개체 인스턴스에서 동시에 실행될 때 경합 상태와 교착 상태를 방지하도록 종료자를 코딩해야 합니다.  종료자에서 로그 파일에 쓰기와 같이 외부 상태를 사용하는 경우 스레딩 문제를 처리해야 합니다.  종료에서 스레드 보안을 제공할 것으로 의존하지 마세요. 스레드 로컬 스토리지, 관리 또는 네이티브를 사용하여 종료자 스레드에 상태를 저장하지 마세요.  
   
 #### <a name="code-analysis-rule"></a>코드 분석 규칙  
  종료자에 동기화 문제가 없어야 합니다. 종료자에서 정적 변경 가능 상태를 사용하지 마세요.  
@@ -252,12 +252,12 @@ public static MyClass SingletonProperty
  관리 코드에서 모든 개체를 catch하거나 모든 예외를 catch하는 모든 catch 블록을 검토합니다.  C#의 경우, 즉, 둘 다에 플래그를 지정 `catch` {} 및 `catch(Exception)` {}합니다.  예외 형식을 매우 구체적으로 만들거나 코드를 검토하여 예기치 않은 예외 형식을 catch하는 경우 잘못된 방식으로 작동하지 않게 합니다.  
   
 ### <a name="do-not-assume-a-managed-thread-is-a-win32-thread--it-is-a-fiber"></a>관리되는 스레드가 Win32 스레드라고 가정하지 않음 - 파이버임  
- 관리되는 스레드 로컬 저장소를 사용하는 것은 가능하지만, 관리되지 않는 스레드 로컬 저장소를 사용하지 않거나 코드가 현재 운영 체제 스레드에서 다시 실행된다고 가정할 수 있습니다.  스레드 로캘과 같은 설정은 변경하지 않습니다.  플랫폼 호출을 통해 `InitializeCriticalSection` 또는 `CreateMutex`를 호출하지 마세요. 잠금을 시작하는 운영 체제 스레드가 잠금을 종료해야 하기 때문입니다.  파이버를 사용할 때는 해당되지 않으므로, Win32 중요 섹션과 뮤텍스를 SQL에서 직접 사용할 수 없습니다.  관리되는 <xref:System.Threading.Mutex> 클래스에서는 이러한 스레드 선호도 문제를 처리하지 않습니다.  
+ 관리되는 스레드 로컬 스토리지를 사용하는 것은 가능하지만, 관리되지 않는 스레드 로컬 스토리지를 사용하지 않거나 코드가 현재 운영 체제 스레드에서 다시 실행된다고 가정할 수 있습니다.  스레드 로캘과 같은 설정은 변경하지 않습니다.  플랫폼 호출을 통해 `InitializeCriticalSection` 또는 `CreateMutex`를 호출하지 마세요. 잠금을 시작하는 운영 체제 스레드가 잠금을 종료해야 하기 때문입니다.  파이버를 사용할 때는 해당되지 않으므로, Win32 중요 섹션과 뮤텍스를 SQL에서 직접 사용할 수 없습니다.  관리되는 <xref:System.Threading.Mutex> 클래스에서는 이러한 스레드 선호도 문제를 처리하지 않습니다.  
   
- 관리되는 스레드 로컬 저장소 및 스레드의 현재 UI 문화권을 포함하여 대부분의 상태를 관리되는 <xref:System.Threading.Thread> 개체에서 안전하게 사용할 수 있습니다.  <xref:System.ThreadStaticAttribute>도 사용할 수 있습니다. 그러면 현재 관리되는 스레드에서만 기존 정적 변수의 값에 액세스할 수 있습니다(CLR에서 파이버 로컬 저장을 수행하는 또 다른 방법임).  프로그래밍 모델 때문에 SQL에서 실행할 때 현재 스레드의 문화권을 변경할 수 없습니다.  
+ 관리되는 스레드 로컬 스토리지 및 스레드의 현재 UI 문화권을 포함하여 대부분의 상태를 관리되는 <xref:System.Threading.Thread> 개체에서 안전하게 사용할 수 있습니다.  <xref:System.ThreadStaticAttribute>도 사용할 수 있습니다. 그러면 현재 관리되는 스레드에서만 기존 정적 변수의 값에 액세스할 수 있습니다(CLR에서 파이버 로컬 저장을 수행하는 또 다른 방법임).  프로그래밍 모델 때문에 SQL에서 실행할 때 현재 스레드의 문화권을 변경할 수 없습니다.  
   
 #### <a name="code-analysis-rule"></a>코드 분석 규칙  
- SQL Server는 파이버 모드로 실행됩니다. 스레드 로컬 저장소를 사용하지 마세요. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue.`에 대한 플랫폼 호출을 수행하지 마세요.  
+ SQL Server는 파이버 모드로 실행됩니다. 스레드 로컬 스토리지를 사용하지 마세요. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue.`에 대한 플랫폼 호출을 수행하지 마세요.  
   
 ### <a name="let-sql-server-handle-impersonation"></a>SQL Server 핸들 가장 허용  
  가장은 스레드 수준에서 작동하고 SQL은 파이버 모드에서 실행될 수 있으므로 관리 코드에서는 사용자를 가장하지 않아야 하며 `RevertToSelf`를 호출하지 않아야 합니다.  

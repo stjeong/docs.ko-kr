@@ -54,12 +54,12 @@ NoSQL 데이터베이스를 사용하는 경우 이점은 엔터티가 더욱 �
 
 ## <a name="introduction-to-azure-cosmos-db-and-the-native-cosmos-db-api"></a>Azure Cosmos DB 및 네이티브 Cosmos DB API 소개
 
-[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)는 중요 응용 프로그램에 대한 Microsoft의 전 세계적으로 분산된 데이터베이스 서비스입니다. Azure Cosmos DB는 [업계 최고의 SLA](https://azure.microsoft.com/support/legal/sla/cosmos-db/)로 지원되는 [턴키 방식으로 전역 배포](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally), 전 세계적인 [처리량 및 저장소의 탄력적인 확장](https://docs.microsoft.com/azure/cosmos-db/partition-data), 한 자릿수 밀리초 대기 시간(99번째 백분위수), [5개의 잘 정의된 일관성 수준](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) 및 보장되는 높은 가용성을 제공합니다. Azure Cosmos DB는 스키마 및 인덱스 관리를 처리할 필요 없이 [데이터를 자동으로 인덱싱합니다](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf). 다중 모델이며 문서, 키-값, 그래프 및 열 형식 데이터 모델을 지원합니다.
+[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)는 중요 응용 프로그램에 대한 Microsoft의 전 세계적으로 분산된 데이터베이스 서비스입니다. Azure Cosmos DB는 [업계 최고의 SLA](https://azure.microsoft.com/support/legal/sla/cosmos-db/)로 지원되는 [턴키 방식으로 글로벌 배포](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally), 전 세계적인 [처리량 및 스토리지의 탄력적인 확장](https://docs.microsoft.com/azure/cosmos-db/partition-data), 한 자릿수 밀리초 대기 시간(99번째 백분위수), [5개의 잘 정의된 일관성 수준](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) 및 보장되는 높은 가용성을 제공합니다. Azure Cosmos DB는 스키마 및 인덱스 관리를 처리할 필요 없이 [데이터를 자동으로 인덱싱합니다](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf). 다중 모델이며 문서, 키-값, 그래프 및 열 형식 데이터 모델을 지원합니다.
 
 ![Azure Cosmos DB는 4개의 API 프로토콜로 액세스할 수 있는 전역적으로 분산된 낮은 대기 시간이 보장된 데이터베이스입니다. ](./media/image19.1.png)
 **그림 7-19**. Azure Cosmos DB 전역 배포
 
-C\# 모델을 사용하여 Azure Cosmos DB API에서 사용될 집계를 구현하는 경우 집계는 EF Core와 함께 사용되는 C\# POCO 클래스와 유사할 수 있습니다. 차이점은 다음 코드에서처럼 응용 프로그램 및 인프라 계층에서 사용하는 방법에 있습니다.
+C\# 모델을 사용하여 Azure Cosmos DB API에서 사용될 집계를 구현하는 경우 집계는 EF Core와 함께 사용되는 C\# POCO 클래스와 유사할 수 있습니다. 차이점은 다음 코드에서처럼 애플리케이션 및 인프라 계층에서 사용하는 방법에 있습니다.
 
 ```csharp
 // C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH AZURE COSMOS DB API
@@ -121,11 +121,11 @@ await client.CreateDocumentAsync(collectionUri, newOrder);
 
 ### <a name="use-azure-cosmos-db-from-net-containers"></a>.NET 컨테이너에서 Azure Cosmos DB 사용
 
-다른 .NET 응용 프로그램에서와 같이 컨테이너에서 실행되는 .NET 코드에서 Azure Cosmos DB 데이터베이스에 액세스할 수 있습니다. 예를 들어 eShopOnContainers의 Locations.API 및 Marketing.API 마이크로 서비스는 Azure Cosmos DB 데이터베이스를 사용할 수 있도록 구현됩니다.
+다른 .NET 애플리케이션에서와 같이 컨테이너에서 실행되는 .NET 코드에서 Azure Cosmos DB 데이터베이스에 액세스할 수 있습니다. 예를 들어 eShopOnContainers의 Locations.API 및 Marketing.API 마이크로 서비스는 Azure Cosmos DB 데이터베이스를 사용할 수 있도록 구현됩니다.
 
 그러나 Docker 개발 환경 관점에서 Azure Cosmos DB에 제한이 있습니다. 2017년 말을 기준으로, 로컬 개발 컴퓨터(예: PC)에서 실행할 수 있는 온-프레미스 [Azure Cosmos DB 에뮬레이터](https://docs.microsoft.com/azure/cosmos-db/local-emulator)가 있는 경우에도 Linux가 아닌 Windows만 지원합니다. 
 
-Docker에서 이 에뮬레이터를 실행할 가능성도 있지만 Linux 컨테이너가 아닌 Windows 컨테이너에서만 실행합니다. 현재 Windows의 경우 Docker에 Linux 및 Windows 컨테이너를 동시에 배포할 수 없으므로 응용 프로그램이 Linux 컨테이너로 배포되는 경우 개발 환경에 대한 초기 핸디캡이 있습니다. 배포되는 모든 컨테이너는 Linux 또는 Windows용이어야 합니다.
+Docker에서 이 에뮬레이터를 실행할 가능성도 있지만 Linux 컨테이너가 아닌 Windows 컨테이너에서만 실행합니다. 현재 Windows의 경우 Docker에 Linux 및 Windows 컨테이너를 동시에 배포할 수 없으므로 애플리케이션이 Linux 컨테이너로 배포되는 경우 개발 환경에 대한 초기 핸디캡이 있습니다. 배포되는 모든 컨테이너는 Linux 또는 Windows용이어야 합니다.
 
 개발/테스트 솔루션에 대한 이상적이고 더욱 간단한 배포는 개발/테스트 환경이 항상 일치하도록 사용자 지정 컨테이너와 함께 컨테이너로 데이터베이스 시스템을 배포할 수 있어야 합니다.
 
@@ -151,15 +151,15 @@ MongoDB API를 사용하는 명백한 이점은 솔루션이 두 데이터베이
 
 클라우드에서 단순히 MongoDB와 Cosmos DB 사용 간의 자세한 비교는 [이 페이지에서 Azure Cosmos DB 사용의 이점](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)을 참조하세요. 
 
-### <a name="analyze-your-approach-for-production-applications-mongodb-api-vs-cosmos-db-api"></a>프로덕션 응용 프로그램에 대한 접근 방식 분석: MongoDB API와 Cosmos DB API 비교
+### <a name="analyze-your-approach-for-production-applications-mongodb-api-vs-cosmos-db-api"></a>프로덕션 애플리케이션에 대한 접근 방식 분석: MongoDB API와 Cosmos DB API 비교
 
 eShopOnContainers에서 우선 순위는 근본적으로 Azure Cosmos DB를 함께 사용할 수 있는 NoSQL 데이터베이스를 사용하여 일관성 있는 개발/테스트 환경을 갖는 것이었으므로 MongoDB API를 사용합니다.
 
-그러나 MongoDB API를 사용하여 프로덕션 응용 프로그램에 대해 Azure에서 Azure Cosmos DB에 액세스하려는 경우 네이티브 Azure Cosmos DB API를 사용하는 것과 비교하여 MongoDB API를 사용하여 Azure Cosmos DB 데이터베이스에 액세스할 때 기능 및 성능에서의 차이점을 분석해야 합니다. 유사한 경우 MongoDB API를 사용할 수 있으며, 동시에 두 개의 NoSQL 데이터베이스 엔진을 지원하는 이점을 얻을 수 있습니다.
+그러나 MongoDB API를 사용하여 프로덕션 애플리케이션에 대해 Azure에서 Azure Cosmos DB에 액세스하려는 경우 네이티브 Azure Cosmos DB API를 사용하는 것과 비교하여 MongoDB API를 사용하여 Azure Cosmos DB 데이터베이스에 액세스할 때 기능 및 성능에서의 차이점을 분석해야 합니다. 유사한 경우 MongoDB API를 사용할 수 있으며, 동시에 두 개의 NoSQL 데이터베이스 엔진을 지원하는 이점을 얻을 수 있습니다.
 
 또한 [MongoDB Azure 서비스](https://www.mongodb.com/scale/mongodb-azure-service)와 함께 Azure의 클라우드에서 프로덕션 데이터베이스로 MongoDB 클러스터를 사용할 수도 있습니다. 그러나 Microsoft에서 제공하는 PaaS 서비스가 아닙니다. 이 경우 Azure는 MongoDB에서 오는 해당 솔루션만 호스팅합니다.
 
-기본적으로 Linux 컨테이너에 대한 편리한 선택이므로 eShopOnContainers에서 수행한 것처럼 Azure Cosmos DB에 대해 항상 MongoDB API를 사용해서는 안 된다는 고지 사항입니다. 결정은 프로덕션 응용 프로그램에 대해 수행해야 하는 특정 요구 사항 및 테스트를 기준으로 해야 합니다.
+기본적으로 Linux 컨테이너에 대한 편리한 선택이므로 eShopOnContainers에서 수행한 것처럼 Azure Cosmos DB에 대해 항상 MongoDB API를 사용해서는 안 된다는 고지 사항입니다. 결정은 프로덕션 애플리케이션에 대해 수행해야 하는 특정 요구 사항 및 테스트를 기준으로 해야 합니다.
 
 ### <a name="the-code-use-mongodb-api-in-net-core-applications"></a>코드: .NET Core 애플리케이션에서 MongoDB API 사용
 
@@ -173,7 +173,7 @@ eShopOnContainers에서 우선 순위는 근본적으로 Azure Cosmos DB를 함�
 
 #### <a name="a-model-used-by-mongodb-api"></a>MongoDB API에서 사용하는 모델
 
-먼저 응용 프로그램의 메모리 공간에 데이터베이스에서 가져온 데이터를 보유하는 모델을 정의해야 합니다. eShopOnContainers에서 Locations에 대해 사용되는 모델의 예는 다음과 같습니다.
+먼저 애플리케이션의 메모리 공간에 데이터베이스에서 가져온 데이터를 보유하는 모델을 정의해야 합니다. eShopOnContainers에서 Locations에 대해 사용되는 모델의 예는 다음과 같습니다.
 
 ```csharp
 using MongoDB.Bson;

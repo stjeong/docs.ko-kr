@@ -20,7 +20,7 @@ ms.lasthandoff: 12/10/2018
 ms.locfileid: "53127929"
 ---
 # <a name="handling-and-raising-events"></a>이벤트 처리 및 발생
-.NET Framework에서 이벤트는 대리자 모델을 기반으로 합니다. 대리자 모델은 구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 관찰자 디자인 패턴을 따릅니다. 이벤트 전송자는 이벤트가 발생했음을 알리고, 이벤트 수신자는 해당 알림을 수신하고 그에 대한 응답을 정의합니다. 이 문서에서는 대리자 모델의 주요 구성 요소, 응용 프로그램에서 이벤트를 사용하는 방법 및 코드에서 이벤트를 구현하는 방법에 대해 설명합니다.  
+.NET Framework에서 이벤트는 대리자 모델을 기반으로 합니다. 대리자 모델은 구독자가 공급자를 등록하고 공급자로부터 알림을 수신하는 데 사용할 수 있는 관찰자 디자인 패턴을 따릅니다. 이벤트 전송자는 이벤트가 발생했음을 알리고, 이벤트 수신자는 해당 알림을 수신하고 그에 대한 응답을 정의합니다. 이 문서에서는 대리자 모델의 주요 구성 요소, 애플리케이션에서 이벤트를 사용하는 방법 및 코드에서 이벤트를 구현하는 방법에 대해 설명합니다.  
   
  Windows 8.x Store 앱에서의 이벤트 처리에 대한 자세한 내용은 [이벤트 및 라우트된 이벤트 개요](https://docs.microsoft.com/previous-versions/windows/apps/hh758286(v=win.10))를 참조하세요.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53127929"
  [!code-vb[EventsOverview#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
   
 ## <a name="event-data"></a>이벤트 데이터  
- 이벤트와 관련된 데이터는 이벤트 데이터 클래스를 통해 제공할 수 있습니다. .NET Framework는 응용 프로그램에서 사용할 수 있는 여러 이벤트 데이터 클래스를 제공합니다. 예를 들어, <xref:System.IO.Ports.SerialDataReceivedEventArgs> 클래스는 <xref:System.IO.Ports.SerialPort.DataReceived?displayProperty=nameWithType> 이벤트에 대한 이벤트 데이터 클래스에 해당합니다. .NET Framework는 모든 이벤트 데이터 클래스의 끝을 `EventArgs`로 하는 명명 패턴을 따릅니다. 이벤트에 대한 대리자를 보는 것만으로 어떠한 이벤트 데이터 클래스가 이벤트에 연결되어 있는지 확인할 수 있습니다. 예를 들어, <xref:System.IO.Ports.SerialDataReceivedEventHandler> 대리자는 매개 변수 중 하나로 <xref:System.IO.Ports.SerialDataReceivedEventArgs> 클래스를 가집니다.  
+ 이벤트와 관련된 데이터는 이벤트 데이터 클래스를 통해 제공할 수 있습니다. .NET Framework는 애플리케이션에서 사용할 수 있는 여러 이벤트 데이터 클래스를 제공합니다. 예를 들어, <xref:System.IO.Ports.SerialDataReceivedEventArgs> 클래스는 <xref:System.IO.Ports.SerialPort.DataReceived?displayProperty=nameWithType> 이벤트에 대한 이벤트 데이터 클래스에 해당합니다. .NET Framework는 모든 이벤트 데이터 클래스의 끝을 `EventArgs`로 하는 명명 패턴을 따릅니다. 이벤트에 대한 대리자를 보는 것만으로 어떠한 이벤트 데이터 클래스가 이벤트에 연결되어 있는지 확인할 수 있습니다. 예를 들어, <xref:System.IO.Ports.SerialDataReceivedEventHandler> 대리자는 매개 변수 중 하나로 <xref:System.IO.Ports.SerialDataReceivedEventArgs> 클래스를 가집니다.  
   
  <xref:System.EventArgs> 클래스는 모든 이벤트 데이터 클래스의 기본 형식입니다. <xref:System.EventArgs>는 이벤트에 연결된 데이터가 없을 때 사용하는 클래스이기도 합니다. 다른 클래스에게 어떤 일이 발생했으며 어떠한 데이터도 전달할 필요가 없다는 것을 알리기만 하는 이벤트를 만들려면 대리자에서 두 번째 매개 변수로 <xref:System.EventArgs> 클래스를 포함합니다. 어떠한 데이터도 제공되지 않은 경우 <xref:System.EventArgs.Empty?displayProperty=nameWithType> 값을 전달할 수 있습니다. <xref:System.EventHandler> 대리자는 매개 변수로 <xref:System.EventArgs> 클래스를 포함합니다.  
   
@@ -71,12 +71,12 @@ ms.locfileid: "53127929"
  [!code-vb[EventsOverview#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#2)]  
   
 ## <a name="static-and-dynamic-event-handlers"></a>정적 및 동적 이벤트 처리기  
- .NET Framework에서는 구독자가 정적이나 동적으로 이벤트 알림을 등록할 수 있습니다. 고정 이벤트 처리기는 해당 이벤트가 처리되는 클래스의 전체 수명 동안 적용됩니다. 동적 이벤트 처리기는 특정 조건부 프로그램 논리에 대한 응답에서 일반적으로 프로그램을 실행하는 동안 명시적으로 활성화되고 비활성화됩니다. 예를 들어 이벤트 알림이 특정 조건 하에서만 필요하거나 응용 프로그램이 여러 이벤트 처리기를 제공하고 런타임 조건에서 사용할 적절한 이벤트 처리기를 정의하는 경우에 사용될 수 있습니다. 이전 섹션의 예제에서는 이벤트 처리기를 동적으로 추가하는 방법을 보여 줍니다. 자세한 내용은 [이벤트](../../visual-basic/programming-guide/language-features/events/index.md) 및 [이벤트](../../csharp/programming-guide/events/index.md)를 참조하세요.  
+ .NET Framework에서는 구독자가 정적이나 동적으로 이벤트 알림을 등록할 수 있습니다. 고정 이벤트 처리기는 해당 이벤트가 처리되는 클래스의 전체 수명 동안 적용됩니다. 동적 이벤트 처리기는 특정 조건부 프로그램 논리에 대한 응답에서 일반적으로 프로그램을 실행하는 동안 명시적으로 활성화되고 비활성화됩니다. 예를 들어 이벤트 알림이 특정 조건 하에서만 필요하거나 애플리케이션이 여러 이벤트 처리기를 제공하고 런타임 조건에서 사용할 적절한 이벤트 처리기를 정의하는 경우에 사용될 수 있습니다. 이전 섹션의 예제에서는 이벤트 처리기를 동적으로 추가하는 방법을 보여 줍니다. 자세한 내용은 [이벤트](../../visual-basic/programming-guide/language-features/events/index.md) 및 [이벤트](../../csharp/programming-guide/events/index.md)를 참조하세요.  
   
 ## <a name="raising-multiple-events"></a>여러 이벤트 발생  
- 클래스에서 여러 이벤트를 발생시키는 경우, 컴파일러가 각 이벤트 대리자 인스턴스에 대해 하나의 필드를 생성합니다. 이벤트 수가 큰 경우 대리자당 하나의 필드의 저장 공간은 허용되지 않습니다. 이러한 경우 .NET Framework에서는 사용자가 이벤트 대리자를 저장하기 위해 선택한 다른 데이터 구조체와 함께 사용할 수 있는 이벤트 속성을 제공합니다.  
+ 클래스에서 여러 이벤트를 발생시키는 경우, 컴파일러가 각 이벤트 대리자 인스턴스에 대해 하나의 필드를 생성합니다. 이벤트 수가 큰 경우 대리자당 하나의 필드의 스토리지 공간은 허용되지 않습니다. 이러한 경우 .NET Framework에서는 사용자가 이벤트 대리자를 저장하기 위해 선택한 다른 데이터 구조체와 함께 사용할 수 있는 이벤트 속성을 제공합니다.  
   
- 이벤트 속성은 이벤트 접근자와 함께 이벤트 선언으로 구성됩니다. 이벤트 접근자는 사용자가 정의하는 메서드로서, 저장 데이터 구조에서 이벤트 대리자 인스턴스를 추가하거나 제거할 수 있게 합니다. 각 이벤트 대리자는 호출되기 전에 검색되어야 하기 때문에 이벤트 속성은 이벤트 필드보다 속도가 느립니다. 메모리와 속도 간의 균형을 조정합니다. 클래스가 자주 발생하는 많은 이벤트를 정의하는 경우 이벤트 속성을 구현합니다. 자세한 내용은 [방법: 이벤트 속성을 사용하여 여러 이벤트 처리](../../../docs/standard/events/how-to-handle-multiple-events-using-event-properties.md)를 참조하세요.  
+ 이벤트 속성은 이벤트 접근자와 함께 이벤트 선언으로 구성됩니다. 이벤트 접근자는 사용자가 정의하는 메서드로서, 스토리지 데이터 구조에서 이벤트 대리자 인스턴스를 추가하거나 제거할 수 있게 합니다. 각 이벤트 대리자는 호출되기 전에 검색되어야 하기 때문에 이벤트 속성은 이벤트 필드보다 속도가 느립니다. 메모리와 속도 간의 균형을 조정합니다. 클래스가 자주 발생하는 많은 이벤트를 정의하는 경우 이벤트 속성을 구현합니다. 자세한 내용은 [방법: 이벤트 속성을 사용하여 여러 이벤트 처리](../../../docs/standard/events/how-to-handle-multiple-events-using-event-properties.md)를 참조하세요.  
   
 ## <a name="related-topics"></a>관련 항목  
   

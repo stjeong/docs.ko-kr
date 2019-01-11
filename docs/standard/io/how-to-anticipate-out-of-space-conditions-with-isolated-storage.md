@@ -1,5 +1,5 @@
 ---
-title: '방법: 격리된 저장소의 공간 부족 상태 예상'
+title: '방법: 격리된 스토리지의 공간 부족 상태 예상'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -31,8 +31,8 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/16/2018
 ms.locfileid: "45649386"
 ---
-# <a name="how-to-anticipate-out-of-space-conditions-with-isolated-storage"></a>방법: 격리된 저장소의 공간 부족 상태 예상
-격리된 저장소를 사용하는 코드는 격리된 저장소 파일 및 디렉터리가 있는 데이터 구획의 최대 크기를 지정하는 [할당량](../../../docs/standard/io/isolated-storage.md#quotas)에 의해 제한됩니다. 이 할당 한도는 보안 정책에서 정의하고 관리자가 구성할 수 있습니다. 데이터를 쓸 때 최대 허용 크기를 초과하면 <xref:System.IO.IsolatedStorage.IsolatedStorageException> 예외가 throw되고 작업이 실패합니다. 이를 통해 데이터 저장소가 가득 차서 응용 프로그램이 요청을 거부하는 문제를 발생시킬 수 있는 악성 서비스 거부 공격을 방지할 수 있습니다.  
+# <a name="how-to-anticipate-out-of-space-conditions-with-isolated-storage"></a>방법: 격리된 스토리지의 공간 부족 상태 예상
+격리된 스토리지를 사용하는 코드는 격리된 스토리지 파일 및 디렉터리가 있는 데이터 구획의 최대 크기를 지정하는 [할당량](../../../docs/standard/io/isolated-storage.md#quotas)에 의해 제한됩니다. 이 할당 한도는 보안 정책에서 정의하고 관리자가 구성할 수 있습니다. 데이터를 쓸 때 최대 허용 크기를 초과하면 <xref:System.IO.IsolatedStorage.IsolatedStorageException> 예외가 throw되고 작업이 실패합니다. 이를 통해 데이터 저장소가 가득 차서 애플리케이션이 요청을 거부하는 문제를 발생시킬 수 있는 악성 서비스 거부 공격을 방지할 수 있습니다.  
   
  지정된 쓰기 시도가 이러한 이유로 실패할 가능성이 있는지 확인할 수 있도록 <xref:System.IO.IsolatedStorage.IsolatedStorage> 클래스는 세 가지 읽기 전용 속성 즉, <xref:System.IO.IsolatedStorage.IsolatedStorage.AvailableFreeSpace%2A>, <xref:System.IO.IsolatedStorage.IsolatedStorage.UsedSize%2A> 및 <xref:System.IO.IsolatedStorage.IsolatedStorage.Quota%2A>를 제공합니다. 이러한 속성을 사용하여 저장소에 쓰는 작업으로 인해 저장소의 최대 허용 크기가 초과되는지 여부를 판단할 수 있습니다. 격리된 저장소에 동시에 액세스할 수 있음을 명심하십시오. 따라서 남은 저장소 크기를 계산하는 경우 저장소에 쓰는 시간에 따라 저장소 공간이 사용될 수 있습니다. 그러나 사용 가능한 저장소의 상한값에 도달하는지 여부를 판단하기 위해 저장소의 최대 크기를 사용할 수는 있습니다.  
   

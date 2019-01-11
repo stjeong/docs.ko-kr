@@ -1,6 +1,6 @@
 ---
 title: 컨테이너 화 된 응용 프로그램 서비스를 모니터링 합니다.
-description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 응용 프로그램 수명 주기
+description: Microsoft 플랫폼 및 도구를 사용하여 컨테이너화된 Docker 애플리케이션 수명 주기
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
@@ -56,7 +56,7 @@ Application Insights 리소스를 만들려면 다음에 나오는 목록에 표
 
 ### <a name="operations-management-suitehttpsmicrosoftcomoms-container-solution-for-docker"></a>[Operations Management Suite](https://microsoft.com/oms) Docker 용 컨테이너 솔루션
 
-자체적으로 중요 한 서비스를 제공 하는 것 외에도 Operations Management Suite 컨테이너 솔루션 관리 및 모니터링할 수 Docker 호스트 및 컨테이너에 대 한 정보는 사용자 컨테이너 및 컨테이너 호스트를 표시 하 여 실행 중인 컨테이너는 실패 또는 Docker 디먼 및 컨테이너 로그를 전송 하 고 *stdout* 하 고 *stderr*합니다. 또한 CPU, 메모리, 네트워크 및 저장소 등 컨테이너 및 호스트에 대한 성능 메트릭을 표시하여 문제를 해결하고, 노이지 네이버(noisy neighbor) 컨테이너를 찾을 수 있게 해줍니다.
+자체적으로 중요 한 서비스를 제공 하는 것 외에도 Operations Management Suite 컨테이너 솔루션 관리 및 모니터링할 수 Docker 호스트 및 컨테이너에 대 한 정보는 사용자 컨테이너 및 컨테이너 호스트를 표시 하 여 실행 중인 컨테이너는 실패 또는 Docker 디먼 및 컨테이너 로그를 전송 하 고 *stdout* 하 고 *stderr*합니다. 또한 CPU, 메모리, 네트워크 및 스토리지 등 컨테이너 및 호스트에 대한 성능 메트릭을 표시하여 문제를 해결하고, 노이지 네이버(noisy neighbor) 컨테이너를 찾을 수 있게 해줍니다.
 
 ![](./media/image2.png)
 

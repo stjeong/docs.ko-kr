@@ -53,7 +53,7 @@ C#의 6.0 릴리스에는 개발자의 생산성을 개선하는 많은 기능�
 
 하지만 이 간단한 구문은 auto 속성 사용을 지원할 수 있는 디자인 종류를 제한했습니다. C# 6에서는 더 많은 시나리오에서 사용할 수 있도록 auto 속성 기능이 향상되었습니다. 지원 필드를 직접 자주 선언하고 조작하는 더 자세한 구문을 대신 사용할 필요가 없습니다.
 
-새 구문은 읽기 전용 속성에 대한 시나리오와 auto 속성 뒤에서 변수 저장소를 초기화하는 시나리오를 처리합니다.
+새 구문은 읽기 전용 속성에 대한 시나리오와 auto 속성 뒤에서 변수 스토리지를 초기화하는 시나리오를 처리합니다.
 
 ### <a name="read-only-auto-properties"></a>읽기 전용 auto 속성
 
@@ -92,17 +92,17 @@ public class Student
 
 ### <a name="auto-property-initializers"></a>Auto 속성 이니셜라이저
 
-‘Auto 속성 이니셜라이저’를 통해 속성 선언의 일부로 auto 속성의 초기 값을 선언할 수 있습니다.  이전 버전에서는 이러한 속성에 setter를 포함해야 하고, 지원 필드에서 사용되는 데이터 저장소를 초기화하려면 해당 setter를 사용해야 합니다. 이름이 포함된 학생 및 학생의 성적 목록에 이 클래스를 사용하는 것이 좋습니다.
+‘Auto 속성 이니셜라이저’를 통해 속성 선언의 일부로 auto 속성의 초기 값을 선언할 수 있습니다.  이전 버전에서는 이러한 속성에 setter를 포함해야 하고, 지원 필드에서 사용되는 데이터 스토리지를 초기화하려면 해당 setter를 사용해야 합니다. 이름이 포함된 학생 및 학생의 성적 목록에 이 클래스를 사용하는 것이 좋습니다.
 
 [!code-csharp[Student](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Student)]
  
 이 클래스가 커지면 다른 생성자를 포함할 수 있습니다. 각 생성자는 Grades 속성을 초기화해야 합니다. 초기화하지 않으면 오류가 발생합니다.
 
-C# 6에서는 auto 속성 선언에서 auto 속성에 사용되는 저장소의 초기 값을 할당할 수 있습니다.
+C# 6에서는 auto 속성 선언에서 auto 속성에 사용되는 스토리지의 초기 값을 할당할 수 있습니다.
 
 [!code-csharp[Initialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#Initialization)]
 
-`Grades` 멤버는 선언된 위치에서 초기화됩니다. 따라서 더 쉽게 정확히 한 번 초기화를 수행할 수 있습니다. 초기화가 속성 선언의 일부이므로 `Student` 개체에 대한 public 인터페이스를 통해 저장소를 균등하게 할당하기 쉽습니다.
+`Grades` 멤버는 선언된 위치에서 초기화됩니다. 따라서 더 쉽게 정확히 한 번 초기화를 수행할 수 있습니다. 초기화가 속성 선언의 일부이므로 `Student` 개체에 대한 public 인터페이스를 통해 스토리지를 균등하게 할당하기 쉽습니다.
 
 속성 이니셜라이저는 위와 같이 읽기 전용 속성과 함께 사용할 수 있으며, 다음과 같이 읽기/쓰기 속성과 함께 사용할 수도 있습니다.
 
@@ -304,7 +304,7 @@ C# 6의 또 다른 새로운 기능은 *예외 필터*입니다. 예외 필터�
 
 [!code-csharp[HandleNotChanged](../../../samples/snippets/csharp/new-in-6/NetworkClient.cs#HandleNotChanged)]
 
-또 다른 권장 패턴을 사용하면 디버거가 연결될 때 catch 절이 예외를 처리할 수 없습니다. 이 방법을 사용하여 디버거를 통해 응용 프로그램을 실행하고 예외가 throw될 때 실행을 중지할 수 있습니다.
+또 다른 권장 패턴을 사용하면 디버거가 연결될 때 catch 절이 예외를 처리할 수 없습니다. 이 방법을 사용하여 디버거를 통해 애플리케이션을 실행하고 예외가 throw될 때 실행을 중지할 수 있습니다.
 
 코드에서 디버거가 연결되지 않을 때만 복구 코드가 실행되도록 예외 필터를 추가합니다.
 
@@ -321,7 +321,7 @@ false 반환 예외 필터로 인해 catch 절이 실행되지 않으므로 디�
 
 [!code-csharp[nameof](../../../samples/snippets/csharp/new-in-6/NewCode.cs#UsingStaticString)]
 
-또 다른 사용 예는 `INotifyPropertyChanged` 인터페이스를 구현하는 XAML 기반 응용 프로그램에서 사용하는 것입니다.
+또 다른 사용 예는 `INotifyPropertyChanged` 인터페이스를 구현하는 XAML 기반 애플리케이션에서 사용하는 것입니다.
 
 [!code-csharp[nameofNotify](../../../samples/snippets/csharp/new-in-6/viewmodel.cs#nameofNotify)]
 

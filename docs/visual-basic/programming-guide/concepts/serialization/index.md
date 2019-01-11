@@ -20,7 +20,7 @@ Serialization은 개체를 저장하거나 메모리, 데이터베이스 또는 
  개체는 스트림으로 serialize되어 데이터 뿐만 아니라 버전, 문화권 및 어셈블리 이름과 같은 개체 형식에 대한 정보를 운반합니다. 해당 스트림에서 데이터베이스, 파일 또는 메모리에 저장될 수 있습니다.  
   
 ### <a name="uses-for-serialization"></a>serialization의 용도  
- Serialization을 사용하여 개발자는 개체의 상태를 저장하고 필요할 때 다시 만들어 개체 교환 뿐 아니라 개체의 저장 기능도 제공할 수 있습니다. Serialization을 통해 개발자는 웹 서비스를 통해 원격 응용 프로그램에 개체를 전송하거나, 한 도메인에서 다른 도메인으로 개체를 전달하거나, 방화벽을 통해 XML 문자열로 개체를 전달하거나, 응용 프로그램 간에 보안 또는 사용자별 정보를 유지 관리하는 등의 작업을 수행할 수 있습니다.  
+ Serialization을 사용하여 개발자는 개체의 상태를 저장하고 필요할 때 다시 만들어 개체 교환 뿐 아니라 개체의 스토리지 기능도 제공할 수 있습니다. Serialization을 통해 개발자는 웹 서비스를 통해 원격 애플리케이션에 개체를 전송하거나, 한 도메인에서 다른 도메인으로 개체를 전달하거나, 방화벽을 통해 XML 문자열로 개체를 전달하거나, 애플리케이션 간에 보안 또는 사용자별 정보를 유지 관리하는 등의 작업을 수행할 수 있습니다.  
   
 ### <a name="making-an-object-serializable"></a>개체를 Serialize 가능하게 만들기  
  개체를 직렬화하려면 직렬화할 개체, 직렬화된 개체를 포함할 스트림 및 <xref:System.Runtime.Serialization.Formatter>가 필요합니다. <xref:System.Runtime.Serialization>은 개체를 직렬화하거나 deserialize하는 데 사용할 수 있는 클래스를 포함합니다.  
@@ -35,7 +35,7 @@ Serialization은 개체를 저장하거나 메모리, 데이터베이스 또는 
  이진 또는 XML serialization을 사용할 수 있습니다. 이진 serialization에서는 읽기 전용이더라도 모든 멤버가 serialize되고 성능이 향상됩니다. XML serialization은 상호 운용성을 위한 보다 유연한 개체 공유 및 사용 뿐만 아니라 보다 읽기 쉬운 코드를 제공합니다.  
   
 ### <a name="binary-serialization"></a>이진 Serialization  
- 이진 serialization은 이진 인코딩을 사용하여 저장소 또는 스트림 기반 네트워크 스트림과 같은 용도로 사용할 수 있는 압축 serialization을 생성합니다.  
+ 이진 serialization은 이진 인코딩을 사용하여 스토리지 또는 스트림 기반 네트워크 스트림과 같은 용도로 사용할 수 있는 압축 serialization을 생성합니다.  
   
 ### <a name="xml-serialization"></a>XML Serialization  
  XML serialization은 개체의 public 필드와 속성 또는 메서드의 매개 변수와 반환 값을 특정 XSD(XML 스키마 정의 언어) 문서와 일치하는 XML 스트림으로 serialize합니다. XML serialization을 사용하면 XML로 변환되는 public 속성 및 필드가 있는 강력한 형식의 클래스가 만들어집니다. <xref:System.Xml.Serialization>은 XML을 직렬화하거나 deserialize하는 데 사용할 수 있는 클래스를 포함합니다.  

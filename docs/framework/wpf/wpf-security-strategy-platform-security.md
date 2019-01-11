@@ -62,21 +62,21 @@ ms.locfileid: "49121404"
  [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)]의 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 사용자는 "최소 권한 사용자 액세스", 코드 무결성 검사 및 권한 격리를 비롯한 운영 체제의 향상된 추가 보안 기능을 활용합니다.  
   
 #### <a name="user-account-control-uac"></a>UAC(사용자 계정 컨트롤)  
- 현재 Windows 사용자 대부분의 응용 프로그램 설치 또는 실행 또는 둘 다 필요 하기 때문에 관리자 권한으로 실행 하려는 경향이 있습니다. 한 가지 예로 기본 응용 프로그램 설정을 레지스트리에 쓸 수 있습니다.  
+ 현재 Windows 사용자 대부분의 응용 프로그램 설치 또는 실행 또는 둘 다 필요 하기 때문에 관리자 권한으로 실행 하려는 경향이 있습니다. 한 가지 예로 기본 애플리케이션 설정을 레지스트리에 쓸 수 있습니다.  
   
- 관리자 권한으로 실행은 실제로 관리자 권한이 부여된 프로세스에서 응용 프로그램이 실행됨을 의미합니다. 이 경우 보안에 미치는 영향은 관리자 권한으로 실행되는 프로세스를 가로챈 악성 코드가 중요한 시스템 리소스에 대한 액세스를 포함하여 해당 권한을 자동으로 상속하게 된다는 것입니다.  
+ 관리자 권한으로 실행은 실제로 관리자 권한이 부여된 프로세스에서 애플리케이션이 실행됨을 의미합니다. 이 경우 보안에 미치는 영향은 관리자 권한으로 실행되는 프로세스를 가로챈 악성 코드가 중요한 시스템 리소스에 대한 액세스를 포함하여 해당 권한을 자동으로 상속하게 된다는 것입니다.  
   
- 이 보안 위협으로부터 보호하는 한 가지 방법은 필요한 최소한의 권한으로 응용 프로그램을 실행하는 것입니다. 이를 최소 권한의 원칙이라고 하며 [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] 운영 체제의 핵심 기능입니다. 이 기능은 UAC(사용자 계정 컨트롤)라고 하며 [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] UAC에서 다음 두 가지 주요 방식으로 사용됩니다.  
+ 이 보안 위협으로부터 보호하는 한 가지 방법은 필요한 최소한의 권한으로 애플리케이션을 실행하는 것입니다. 이를 최소 권한의 원칙이라고 하며 [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] 운영 체제의 핵심 기능입니다. 이 기능은 UAC(사용자 계정 컨트롤)라고 하며 [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] UAC에서 다음 두 가지 주요 방식으로 사용됩니다.  
   
--   사용자가 관리자인 경우에도 기본적으로 대부분의 응용 프로그램을 UAC 권한으로 실행합니다. 관리자 권한이 필요한 응용 프로그램만 관리자 권한으로 실행됩니다. 관리자 권한으로 실행하려면 응용 프로그램 매니페스트에서 또는 보안 정책의 항목으로 응용 프로그램에 명시적으로 표시해야 합니다.  
+-   사용자가 관리자인 경우에도 기본적으로 대부분의 애플리케이션을 UAC 권한으로 실행합니다. 관리자 권한이 필요한 애플리케이션만 관리자 권한으로 실행됩니다. 관리자 권한으로 실행하려면 애플리케이션 매니페스트에서 또는 보안 정책의 항목으로 애플리케이션에 명시적으로 표시해야 합니다.  
   
--   가상화와 같은 호환성 솔루션을 제공합니다. 예를 들어 많은 응용 프로그램이 C:\Program Files와 같은 제한된 위치에 쓰려고 합니다. UAC로 실행되는 응용 프로그램의 경우 쓰는 데 관리자 권한이 필요하지 않은 사용자별 대체 위치가 있습니다. UAC로 실행되는 응용 프로그램의 경우 해당 위치에 쓰고 있다고 생각하는 응용 프로그램이 실제로는 사용자별 대체 위치에 쓰도록 UAC에서 C:\Program Files를 가상화합니다. 이러한 종류의 호환성 작업을 통해 운영 체제가 UAC에서 이전에 실행할 수 없었던 많은 응용 프로그램을 실행할 수 있습니다.  
+-   가상화와 같은 호환성 솔루션을 제공합니다. 예를 들어 많은 애플리케이션이 C:\Program Files와 같은 제한된 위치에 쓰려고 합니다. UAC로 실행되는 애플리케이션의 경우 쓰는 데 관리자 권한이 필요하지 않은 사용자별 대체 위치가 있습니다. UAC로 실행되는 애플리케이션의 경우 해당 위치에 쓰고 있다고 생각하는 애플리케이션이 실제로는 사용자별 대체 위치에 쓰도록 UAC에서 C:\Program Files를 가상화합니다. 이러한 종류의 호환성 작업을 통해 운영 체제가 UAC에서 이전에 실행할 수 없었던 많은 애플리케이션을 실행할 수 있습니다.  
   
 #### <a name="code-integrity-checks"></a>코드 무결성 검사  
  [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)]에서는 로드/실행 시 악성 코드가 시스템 파일이나 커널에 삽입되는 것을 방지하기 위해 더욱 강력한 코드 무결성 검사가 통합되었습니다. 이는 시스템 파일 보호 수준을 벗어납니다.  
   
 <a name="Limited_Rights_Process_for_Browser_Hosted_Applications"></a>   
-### <a name="limited-rights-process-for-browser-hosted-applications"></a>브라우저에서 호스트된 응용 프로그램에 대한 제한된 권한 프로세스  
+### <a name="limited-rights-process-for-browser-hosted-applications"></a>브라우저에서 호스트된 애플리케이션에 대한 제한된 권한 프로세스  
  브라우저에서 호스트된 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램은 인터넷 영역 샌드박스 내에서 실행됩니다. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 및 [!INCLUDE[TLA#tla_ie](../../../includes/tlasharptla-ie-md.md)] 통합은 추가 지원으로 이 보호를 확장합니다.  
   
 #### <a name="internet-explorer-6-service-pack-2-and-internet-explorer-7-for-xp"></a>Internet Explorer 6 서비스 팩 2 및 XP용 Internet Explorer 7  
@@ -86,7 +86,7 @@ ms.locfileid: "49121404"
  [!INCLUDE[TLA#tla_ie7](../../../includes/tlasharptla-ie7-md.md)]에서는 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램이 보호 모드로 실행됩니다. 특히, [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)]는 중간 수준의 무결성으로 실행됩니다.  
   
 #### <a name="defense-in-depth-layer"></a>심층 방어 계층  
- [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]은 일반적으로 인터넷 영역 권한 집합을 통해 샌드박싱되므로 이러한 권한을 제거해도 호환성 관점에서 [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]에 나쁜 영향을 주지 않습니다. 대신, 추가 심층 방어 계층이 만들어집니다. 샌드박스 응용 프로그램이 다른 계층을 악용하고 프로세스를 가로챌 수 있는 경우 프로세스에 여전히 제한된 권한만 포함됩니다.  
+ [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]은 일반적으로 인터넷 영역 권한 집합을 통해 샌드박싱되므로 이러한 권한을 제거해도 호환성 관점에서 [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]에 나쁜 영향을 주지 않습니다. 대신, 추가 심층 방어 계층이 만들어집니다. 샌드박스 애플리케이션이 다른 계층을 악용하고 프로세스를 가로챌 수 있는 경우 프로세스에 여전히 제한된 권한만 포함됩니다.  
   
  참조 [최소 권한 사용자 계정을 사용 하 여](https://docs.microsoft.com/previous-versions/tn-archive/cc700846%28v=technet.10%29)입니다.  
   
@@ -100,7 +100,7 @@ ms.locfileid: "49121404"
   
  형식 안전성을 위해, 일반적인 보안 문제를 방지 하기 위해 (예: 버퍼 오버런) 하위 프로세스 격리를 통해 샌드 박싱을 사용 하도록 설정 하 고 [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] 보안 확인의 개념을 사용 합니다.  
   
- 관리되는 응용 프로그램은 MSIL(Microsoft Intermediate Language)로 컴파일됩니다. 관리되는 응용 프로그램의 메서드를 실행하면 해당 MSIL이 JIT(Just-In-Time) 컴파일을 통해 네이티브 코드로 컴파일됩니다. JIT 컴파일에는 코드에서 다음이 발생하지 않도록 하는 다양한 안정성 및 견고성 규칙을 적용하는 검증 프로세스가 포함됩니다.  
+ 관리되는 애플리케이션은 MSIL(Microsoft Intermediate Language)로 컴파일됩니다. 관리되는 애플리케이션의 메서드를 실행하면 해당 MSIL이 JIT(Just-In-Time) 컴파일을 통해 네이티브 코드로 컴파일됩니다. JIT 컴파일에는 코드에서 다음이 발생하지 않도록 하는 다양한 안정성 및 견고성 규칙을 적용하는 검증 프로세스가 포함됩니다.  
   
 -   형식 계약 위반  
   
@@ -114,27 +114,27 @@ ms.locfileid: "49121404"
   
 <a name="Code_Access_Security"></a>   
 ### <a name="code-access-security"></a>코드 액세스 보안  
- 클라이언트 컴퓨터는 파일 시스템, 레지스트리, 인쇄 서비스, 사용자 인터페이스, 리플렉션 및 환경 변수를 포함하여 관리되는 응용 프로그램이 액세스할 수 있는 다양한 리소스를 노출합니다. 관리 되는 응용 프로그램을 클라이언트 컴퓨터에서 리소스에 액세스 하기 전에.NET Framework 권한이 있어야 합니다. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]의 권한은 <xref:System.Security.CodeAccessPermission>의 서브클래스입니다. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]는 관리되는 응용 프로그램이 액세스할 수 있는 각 리소스에 대해 하나의 서브클래스를 구현합니다.  
+ 클라이언트 컴퓨터는 파일 시스템, 레지스트리, 인쇄 서비스, 사용자 인터페이스, 리플렉션 및 환경 변수를 포함하여 관리되는 애플리케이션이 액세스할 수 있는 다양한 리소스를 노출합니다. 관리 되는 응용 프로그램을 클라이언트 컴퓨터에서 리소스에 액세스 하기 전에.NET Framework 권한이 있어야 합니다. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]의 권한은 <xref:System.Security.CodeAccessPermission>의 서브클래스입니다. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]는 관리되는 응용 프로그램이 액세스할 수 있는 각 리소스에 대해 하나의 서브클래스를 구현합니다.  
   
  실행을 시작할 때 [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]에서 관리되는 응용 프로그램에 부여하는 권한 집합을 권한 집합이라고 하며 응용 프로그램에서 제공하는 증거로 결정됩니다. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램의 경우 제공되는 증거는 응용 프로그램이 시작되는 위치 또는 영역입니다. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]는 다음과 같은 영역을 식별합니다.  
   
--   **내 컴퓨터** 클라이언트 컴퓨터에서 시작된 응용 프로그램입니다(완전 신뢰).  
+-   **내 컴퓨터** 클라이언트 컴퓨터에서 시작된 애플리케이션입니다(완전 신뢰).  
   
--   **로컬 인트라넷** 인트라넷에서 시작된 응용 프로그램입니다. (다소 신뢰).  
+-   **로컬 인트라넷** 인트라넷에서 시작된 애플리케이션입니다. (다소 신뢰).  
   
--   **인터넷** 인터넷에서 시작된 응용 프로그램입니다. (최소 신뢰).  
+-   **인터넷** 인터넷에서 시작된 애플리케이션입니다. (최소 신뢰).  
   
--   **신뢰할 수 있는 사이트** 사용자가 신뢰할 수 있는 것으로 식별한 응용 프로그램입니다. (최소 신뢰).  
+-   **신뢰할 수 있는 사이트** 사용자가 신뢰할 수 있는 것으로 식별한 애플리케이션입니다. (최소 신뢰).  
   
--   **신뢰할 수 없는 사이트** 사용자가 신뢰할 수 없는 것으로 식별한 응용 프로그램입니다. (신뢰할 수 없음).  
+-   **신뢰할 수 없는 사이트** 사용자가 신뢰할 수 없는 것으로 식별한 애플리케이션입니다. (신뢰할 수 없음).  
   
  이러한 각 영역에 대해 [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]는 각각 연결된 신뢰 수준과 일치하는 권한을 포함하는 미리 정의된 권한 집합을 제공합니다. 여기에는 다음이 포함됩니다.  
   
 -   **FullTrust** 응용 프로그램에서 시작 합니다 **내 컴퓨터** 영역입니다. 가능한 모든 권한은 부여됩니다.  
   
--   **LocalIntranet** 응용 프로그램에서 시작 합니다 **로컬 인트라넷** 영역입니다. 격리된 저장소, 무제한 UI 액세스, 무제한 파일 대화 상자, 제한된 리플렉션, 환경 변수에 대한 제한된 액세스를 포함하여 클라이언트 컴퓨터의 리소스에 대해 보통 액세스 권한을 제공하도록 권한 하위 집합이 부여됩니다. 레지스트리와 같은 중요한 리소스에 대한 권한은 제공되지 않습니다.  
+-   **LocalIntranet** 응용 프로그램에서 시작 합니다 **로컬 인트라넷** 영역입니다. 격리된 스토리지, 무제한 UI 액세스, 무제한 파일 대화 상자, 제한된 리플렉션, 환경 변수에 대한 제한된 액세스를 포함하여 클라이언트 머신의 리소스에 대해 보통 액세스 권한을 제공하도록 권한 하위 집합이 부여됩니다. 레지스트리와 같은 중요한 리소스에 대한 권한은 제공되지 않습니다.  
   
--   **인터넷** 시작 된 응용 프로그램을 **인터넷** 하거나 **신뢰할 수 있는 사이트** 영역입니다. 격리된 저장소, 파일 열기 전용 및 제한된 UI를 포함하여 클라이언트 컴퓨터의 리소스에 대해 제한된 액세스 권한을 제공하도록 권한 하위 집합이 부여됩니다. 기본적으로 이 권한 집합은 클라이언트 컴퓨터에서 응용 프로그램을 격리시킵니다.  
+-   **인터넷** 시작 된 응용 프로그램을 **인터넷** 하거나 **신뢰할 수 있는 사이트** 영역입니다. 격리된 스토리지, 파일 열기 전용 및 제한된 UI를 포함하여 클라이언트 머신의 리소스에 대해 제한된 액세스 권한을 제공하도록 권한 하위 집합이 부여됩니다. 기본적으로 이 권한 집합은 클라이언트 컴퓨터에서 애플리케이션을 격리시킵니다.  
   
  응용 프로그램을 식별 합니다 **신뢰할 수 없는 사이트** 영역 없습니다 권한도 부여 하지 않습니다 [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] 전혀 합니다. 따라서 미리 정의된 해당 권한 집합이 없습니다.  
   
@@ -157,7 +157,7 @@ ms.locfileid: "49121404"
   
 -   Tahoma 글꼴 로드  
   
- 샌드박스 응용 프로그램에서 이러한 작업에 직접 액세스할 수 있도록 허용하면 보안상 치명적일 수 있습니다.  
+ 샌드박스 애플리케이션에서 이러한 작업에 직접 액세스할 수 있도록 허용하면 보안상 치명적일 수 있습니다.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]는 샌드박스 응용 프로그램 대신 높은 권한으로 이러한 작업을 실행할 수 있도록 허용하여 이 상황에 대응합니다. 모든 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 작업은 [!INCLUDE[TLA2#tla_winfxwebapp](../../../includes/tla2sharptla-winfxwebapp-md.md)] 응용 프로그램 도메인의 제한된 인터넷 영역 보안 권한을 기준으로 검사되지만 다른 시스템 라이브러리와 마찬가지로 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]에 가능한 모든 권한을 포함하는 권한 집합이 부여됩니다.  
   
@@ -176,7 +176,7 @@ ms.locfileid: "49121404"
 ### <a name="clickonce-deployment"></a>ClickOnce 배포  
  [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] .NET Framework에 포함 되 고 통합 하는 포괄적인 배포 기술 [!INCLUDE[TLA#tla_visualstu](../../../includes/tlasharptla-visualstu-md.md)] (참조 [ClickOnce 배포 개요](https://msdn.microsoft.com/library/142dbbz4.aspx) 자세한). 브라우저에서 호스트된 응용 프로그램은 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]로 배포해야 하지만 독립 실행형 [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] 응용 프로그램은 [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]로 배포할 수 있습니다.  
   
- [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]로 배포된 응용 프로그램에는 [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)]보다 높은 추가 보안 계층이 제공됩니다. 기본적으로 [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)]로 배포된 응용 프로그램이 필요한 권한을 요청합니다. 응용 프로그램이 배포된 소스 영역에 대한 권한 집합을 초과하지 않는 경우에만 해당 권한이 부여됩니다. 시작 영역의 권한 집합에서 제공하는 것보다 작아도 권한 집합을 필요한 권한으로만 줄이면 응용 프로그램이 액세스할 수 있는 리소스 수가 최소한으로 줄어듭니다. 따라서 응용 프로그램을 가로채는 경우 클라이언트 컴퓨터의 손상 가능성이 줄어듭니다.  
+ [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]로 배포된 응용 프로그램에는 [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)]보다 높은 추가 보안 계층이 제공됩니다. 기본적으로 [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)]로 배포된 응용 프로그램이 필요한 권한을 요청합니다. 애플리케이션이 배포된 소스 영역에 대한 권한 집합을 초과하지 않는 경우에만 해당 권한이 부여됩니다. 시작 영역의 권한 집합에서 제공하는 것보다 작아도 권한 집합을 필요한 권한으로만 줄이면 애플리케이션이 액세스할 수 있는 리소스 수가 최소한으로 줄어듭니다. 따라서 애플리케이션을 가로채는 경우 클라이언트 컴퓨터의 손상 가능성이 줄어듭니다.  
   
 <a name="Security_Critical_Methodology"></a>   
 ### <a name="security-critical-methodology"></a>보안에 중요한 방법론  
@@ -198,7 +198,7 @@ ms.locfileid: "49121404"
   
 -   일부 웹 사이트의 수많은 보안 대화 상자  
   
- 경우에 따라 신뢰할 수 없는 웹 사이트가 설치 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]를 스푸핑하거나 사용자가 취소해도 [!INCLUDE[TLA#tla_actx](../../../includes/tlasharptla-actx-md.md)] 설치 대화 상자를 반복적으로 표시하여 사용자를 속이려고 합니다. 이러한 기술을 사용하면 다수의 사용자가 속아서 잘못된 결정을 내리고 스파이웨어 응용 프로그램을 설치할 수 있습니다.  
+ 경우에 따라 신뢰할 수 없는 웹 사이트가 설치 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]를 스푸핑하거나 사용자가 취소해도 [!INCLUDE[TLA#tla_actx](../../../includes/tlasharptla-actx-md.md)] 설치 대화 상자를 반복적으로 표시하여 사용자를 속이려고 합니다. 이러한 기술을 사용하면 다수의 사용자가 속아서 잘못된 결정을 내리고 스파이웨어 애플리케이션을 설치할 수 있습니다.  
   
  [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)]에는 사용자 시작의 개념을 중심으로 이러한 유형의 문제를 완화하는 여러 가지 기능이 포함되어있습니다. [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)] 라고 하는 동작 전에 링크 또는 페이지 요소에 사용자가 클릭 하는 경우를 검색 *사용자 시작*, 스크립트를 페이지에 의해 트리거되는 비슷한 동작이 처리 합니다. 예를 들어 [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)] 통합을 **팝업 차단** 팝업을 만드는 페이지 전에 단추를 클릭할 경우를 검색 합니다. 이 기능을 통해 [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)]에서는 사용자가 요청하거나 원하지 않는 팝업을 차단하는 동시에 무해한 팝업을 대부분 허용할 수 있습니다. 차단 된 팝업은 새로운 아래에 트래핑 **알림 표시줄**, 사용자를 수동으로 차단을 무시 하 여 팝업을 볼 수 있습니다.  
   

@@ -18,7 +18,7 @@ ms.locfileid: "33956240"
 
 ## <a name="property-syntax"></a>속성 구문
 
-속성 구문은 필드에 대한 자연 확장입니다. 필드는 저장소 위치를 정의합니다.
+속성 구문은 필드에 대한 자연 확장입니다. 필드는 스토리지 위치를 정의합니다.
 
 [!code-csharp[Person class with public fields](../../samples/snippets/csharp/properties/Person.cs#1)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "33956240"
 
 [!code-csharp[Person class with public properties](../../samples/snippets/csharp/properties/Person.cs#2)]
 
-위에 표시된 구문은 *자동 속성* 구문입니다. 컴파일러는 속성을 백업하는 필드의 저장소 위치를 생성합니다. 또한 컴파일러는 `get` 및 `set` 접근자의 본문을 구현합니다.
+위에 표시된 구문은 *자동 속성* 구문입니다. 컴파일러는 속성을 백업하는 필드의 스토리지 위치를 생성합니다. 또한 컴파일러는 `get` 및 `set` 접근자의 본문을 구현합니다.
 
 때로는 해당 형식의 기본값이 아닌 값으로 속성을 초기화해야 합니다.  이 작업을 위해 C#에서는 닫는 중괄호 뒤에 속성의 값을 설정합니다. `FirstName` 속성의 초기 값을 `null` 대신 빈 문자열로 설정할 수도 있습니다. 아래와 같이 지정하면 됩니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "33956240"
 
 이 아티클의 뒷부분에서 살펴보겠지만 특정 초기화는 읽기 전용 속성에 가장 유용합니다.
 
-아래 표시된 대로 저장소를 직접 정의할 수도 있습니다.
+아래 표시된 대로 스토리지를 직접 정의할 수도 있습니다.
 
 [!code-csharp[Person class with properties and backing field](../../samples/snippets/csharp/properties/Person.cs#4)]
 
@@ -114,7 +114,7 @@ public class Measurements
 
 ### <a name="cached-evaluated-properties"></a>캐시된 평가 속성
 
-계산된 속성의 개념과 저장소를 혼합하고 *캐시된 평가 속성*을 만들 수 있습니다.  예를 들어 처음 액세스할 때만 문자열 형식이 지정되도록 `FullName` 속성을 업데이트할 수 있습니다.
+계산된 속성의 개념과 스토리지를 혼합하고 *캐시된 평가 속성*을 만들 수 있습니다.  예를 들어 처음 액세스할 때만 문자열 형식이 지정되도록 `FullName` 속성을 업데이트할 수 있습니다.
 
 [!code-csharp[Caching the value of a computed property](../../samples/snippets/csharp/properties/Person.cs#12)]
 

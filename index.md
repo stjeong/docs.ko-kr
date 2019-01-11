@@ -3,7 +3,7 @@ layout: HubPage
 ms.topic: hub-page
 hide_bc: true
 title: .NET 설명서
-description: C#, Visual Basic 및 F#을 사용하는 모든 플랫폼에서 .NET을 사용하여 다양한 응용 프로그램을 만드는 방법을 알아보세요. API 참조, 샘플 코드, 자습서 등을 찾아보세요.
+description: C#, Visual Basic 및 F#을 사용하는 모든 플랫폼에서 .NET을 사용하여 다양한 애플리케이션을 만드는 방법을 알아보세요. API 참조, 샘플 코드, 자습서 등을 찾아보세요.
 ms.custom: updateeachrelease
 ms.date: 12/04/2018
 ms.openlocfilehash: 1eb9f263c26dd86873df1320f77c3944e9bfd7d2
@@ -281,7 +281,7 @@ ms.locfileid: "53286509"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>ASP.NET Core 자습서</h3>
-                                                    <p>ASP.NET Core 응용 프로그램을 개발하는 방법을 알아보기 위해 사용할 수 있는 다른 단계별 가이드를 검색합니다.</p>
+                                                    <p>ASP.NET Core 애플리케이션을 개발하는 방법을 알아보기 위해 사용할 수 있는 다른 단계별 가이드를 검색합니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -300,7 +300,7 @@ ms.locfileid: "53286509"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>ASP.NET이란?</h3>
-                                                    <p>ASP.NET 웹 응용 프로그램을 빌드하는 방법을 알아봅니다.</p>
+                                                    <p>ASP.NET 웹 애플리케이션을 빌드하는 방법을 알아봅니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -401,8 +401,8 @@ ms.locfileid: "53286509"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure 저장소</h3>
-                                                    <p>Azure Storage에 대해 알아보고 Azure Blob, 테이블, 큐 및 파일을 사용하여 응용 프로그램을 만드는 방법을 알아봅니다.
+                                                    <h3>Azure Storage</h3>
+                                                    <p>Azure Storage에 대해 알아보고 Azure Blob, 테이블, 큐 및 파일을 사용하여 애플리케이션을 만드는 방법을 알아봅니다.
                                                     </p>
                                                 </div>
                                             </div>
@@ -529,7 +529,7 @@ ms.locfileid: "53286509"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>WPF(Windows Presentation Foundation)</h3>
-                                                    <p>WPF는 Windows에서 데스크톱 응용 프로그램을 빌드하기 위한 XAML 기반 모델을 개발자에 게 제공합니다.
+                                                    <p>WPF는 Windows에서 데스크톱 애플리케이션을 빌드하기 위한 XAML 기반 모델을 개발자에 게 제공합니다.
                                                     </p>
                                                 </div>
                                             </div>
@@ -676,7 +676,7 @@ ms.locfileid: "53286509"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>ML.NET</h3>
-                                                    <p>사용자 지정 AI 솔루션을 빌드하고 .NET 응용 프로그램에 통합합니다.</p>
+                                                    <p>사용자 지정 AI 솔루션을 빌드하고 .NET 애플리케이션에 통합합니다.</p>
                                                 </div>
                                             </div>
                                         </div>

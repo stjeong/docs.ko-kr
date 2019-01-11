@@ -233,7 +233,7 @@ C#에서는 디자인 의도를 설명하는 데 사용되는 클래스 및 구�
 
 변경할 매트릭스의 요소에 대한 *참조*를 반환하는 메서드를 작성하는 것이 좋습니다. 이 작업을 수행하려면 안전하지 않은 코드를 사용하고 이전 버전의 `int`로 포인터를 반환해야 합니다.
 
-ref local 기능을 보여 주고 내부 저장소에 대한 참조를 반환하는 메서드를 만드는 방법을 보여 주는 일련의 변경을 살펴보겠습니다.
+ref local 기능을 보여 주고 내부 스토리지에 대한 참조를 반환하는 메서드를 만드는 방법을 보여 주는 일련의 변경을 살펴보겠습니다.
 계속해서 실수로 잘못 사용하는 경우를 방지하는 ref return 및 ref local 기능의 규칙을 알아봅니다.
 
 먼저 튜플 대신 `ref int`를 반환하도록 `Find` 메서드 선언을 수정합니다. 그런 다음 두 개의 인덱스 대신 매트릭스에 저장된 값을 반환하도록 return 문을 수정합니다.
@@ -266,7 +266,7 @@ public static ref int Find2(int[,] matrix, Func<int, bool> predicate)
 
 [!code-csharp[AssignRefReturn](../../../samples/snippets/csharp/new-in-7/program.cs#24_AssignRefReturn "Assign ref return")]
 
-이제 위 예제의 두 번째 `WriteLine` 문은 매트릭스의 저장소가 수정되었음을 나타내는 `24` 값을 출력합니다. 지역 변수는 `ref` 한정자로 선언되었고 `ref` return을 사용합니다. `ref` 변수는 선언될 때 초기화해야 합니다. 선언과 초기화를 분할할 수 없습니다.
+이제 위 예제의 두 번째 `WriteLine` 문은 매트릭스의 스토리지가 수정되었음을 나타내는 `24` 값을 출력합니다. 지역 변수는 `ref` 한정자로 선언되었고 `ref` return을 사용합니다. `ref` 변수는 선언될 때 초기화해야 합니다. 선언과 초기화를 분할할 수 없습니다.
 
 C# 언어에는 `ref` local 및 return을 잘못 사용하는 경우를 방지하는 세 가지 다른 규칙이 있습니다.
 
@@ -279,7 +279,7 @@ C# 언어에는 `ref` local 및 return을 잘못 사용하는 경우를 방지�
 
 ref 지역 및 ref 반환을 추가하면 값을 복사하거나 역참조 작업을 여러 번 수행하는 경우를 방지하여 더 효율적인 알고리즘이 가능해집니다.
 
-`ref`를 반환 값에 추가하는 것은 [소스 호환 가능 변경](version-update-considerations.md#source-compatible-changes)입니다. 기존 코드는 컴파일되지만, 참조 반환 값은 할당 시 복사됩니다. 호출자는 반환 값 저장소를 `ref` 지역 변수로 업데이트하여 반환을 참조로 저장해야 합니다.
+`ref`를 반환 값에 추가하는 것은 [소스 호환 가능 변경](version-update-considerations.md#source-compatible-changes)입니다. 기존 코드는 컴파일되지만, 참조 반환 값은 할당 시 복사됩니다. 호출자는 반환 값 스토리지를 `ref` 지역 변수로 업데이트하여 반환을 참조로 저장해야 합니다.
 
 자세한 내용은 [ref 키워드](../language-reference/keywords/ref.md) 문서를 참조하세요.
 

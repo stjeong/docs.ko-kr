@@ -1,5 +1,5 @@
 ---
-title: '방법: 격리된 저장소의 저장소 열거'
+title: '방법: 격리된 스토리지의 저장소 열거'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -22,7 +22,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/06/2018
 ms.locfileid: "43875891"
 ---
-# <a name="how-to-enumerate-stores-for-isolated-storage"></a>방법: 격리된 저장소의 저장소 열거
+# <a name="how-to-enumerate-stores-for-isolated-storage"></a>방법: 격리된 스토리지의 저장소 열거
 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> 정적 메서드를 사용하여 현재 사용자에 대한 모든 격리된 저장소를 열거할 수 있습니다. 이 메서드는 <xref:System.IO.IsolatedStorage.IsolatedStorageScope> 값을 사용하여 <xref:System.IO.IsolatedStorage.IsolatedStorageFile> 열거자를 반환합니다. 저장소를 열거하려면 <xref:System.Security.Permissions.IsolatedStorageFilePermission> 값을 지정하는 <xref:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser> 권한이 있어야 합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> 값을 사용하여 <xref:System.IO.IsolatedStorage.IsolatedStorageScope.User> 메서드를 호출하면 현재 사용자에 대해 정의된 <xref:System.IO.IsolatedStorage.IsolatedStorageFile> 개체의 배열을 반환합니다.  
   
 ## <a name="example"></a>예  

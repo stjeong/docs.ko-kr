@@ -30,7 +30,7 @@ ms.locfileid: "33586515"
  다중 스레드의 장단점에 대해 설명하고 스레드를 만들거나 스레드 풀 스레드를 사용할 수 있는 시나리오를 간략하게 설명합니다.  
   
  [관리되는 스레드의 예외](../../../docs/standard/threading/exceptions-in-managed-threads.md)  
- .NET Framework의 여러 버전에 대해 스레드의 처리되지 않은 예외의 동작(특히 응용 프로그램 종료를 발생시키는 상황에서)에 대해 설명합니다.  
+ .NET Framework의 여러 버전에 대해 스레드의 처리되지 않은 예외의 동작(특히 애플리케이션 종료를 발생시키는 상황에서)에 대해 설명합니다.  
   
  [다중 스레딩을 위한 데이터 동기화](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
  다중 스레드에서 사용할 클래스의 데이터를 동기화하기 위한 전략에 대해 설명합니다.  
@@ -48,14 +48,14 @@ ms.locfileid: "33586515"
  스레드 일시중단 및 가비지 수집에 대해 설명합니다.  
   
  [스레드 로컬 저장소: 스레드 상대 정적 필드 및 데이터 슬롯](../../../docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md)  
- 스레드 관련 저장소 메커니즘을 설명합니다.  
+ 스레드 관련 스토리지 메커니즘을 설명합니다.  
   
  [관리되는 스레드의 취소](../../../docs/standard/threading/cancellation-in-managed-threads.md)  
  취소 토큰을 사용하여 비동기 또는 장기 실행 동기 작업을 취소할 수 있는 방법에 대해 설명합니다.  
   
 ## <a name="reference"></a>참조  
  <xref:System.Threading.Thread>  
- 비관리 코드에서 가져왔는지 또는 관리되는 응용 프로그램에서 만들어졌는지에 관계없이 관리되는 스레드를 나타내는 **Thread** 클래스에 대한 참조 설명서를 제공합니다.  
+ 비관리 코드에서 가져왔는지 또는 관리되는 애플리케이션에서 만들어졌는지에 관계없이 관리되는 스레드를 나타내는 **Thread** 클래스에 대한 참조 설명서를 제공합니다.  
   
  <xref:System.ComponentModel.BackgroundWorker>  
  사용자 인터페이스 개체와 함께 다중 스레딩을 구현할 수 있는 안전한 방법을 제공합니다.  
@@ -68,4 +68,4 @@ ms.locfileid: "33586515"
  문제를 피할 수 있도록 다중 스레딩 및 전략에 대한 일반적인 문제를 설명합니다.  
   
  [병렬 프로그래밍](../../../docs/standard/parallel-programming/index.md)  
- 비동기 및 다중 스레드 .NET Framework 응용 프로그램을 만드는 작업을 크게 간소화하는 작업 병렬 라이브러리 및 PLINQ에 대해 설명합니다.
+ 비동기 및 다중 스레드 .NET Framework 애플리케이션을 만드는 작업을 크게 간소화하는 작업 병렬 라이브러리 및 PLINQ에 대해 설명합니다.

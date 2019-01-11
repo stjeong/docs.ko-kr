@@ -17,7 +17,7 @@ ms.lasthandoff: 09/06/2018
 ms.locfileid: "44041488"
 ---
 # <a name="net-framework-tools"></a>.NET Framework 도구
-.NET Framework 도구를 사용하면 .NET Framework를 대상으로 하는 응용 프로그램 및 구성 요소를 보다 쉽게 만들고 배포하고 관리할 수 있습니다.  
+.NET Framework 도구를 사용하면 .NET Framework를 대상으로 하는 애플리케이션 및 구성 요소를 보다 쉽게 만들고 배포하고 관리할 수 있습니다.  
   
 이 단원에서 설명하는 대부분의 .NET Framework 도구는 Visual Studio와 함께 자동으로 설치됩니다. Visual Studio를 다운로드하려면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지를 방문하세요.
   
@@ -69,22 +69,22 @@ ms.locfileid: "44041488"
  라이선스 정보가 들어 있는 텍스트 파일을 읽고, 공용 언어 런타임 실행 파일에 리소스로 포함할 수 있는 .licenses 파일을 생성합니다. 라이선스 정보가 들어 있는 텍스트 파일을 읽고, 공용 언어 런타임 실행 파일에 리소스로 포함할 수 있는 .licenses 파일을 생성합니다.  
   
  [Mage.exe(매니페스트 생성 및 편집 도구)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)  
- 응용 프로그램 및 배포 매니페스트를 만들고, 편집하고, 서명할 수 있도록 합니다. Mage.exe는 명령줄 도구로서 일괄 처리 스크립트뿐 아니라 ASP.NET 응용 프로그램을 비롯한 Windows 기반 응용 프로그램에서도 실행할 수 있습니다.  
+ 애플리케이션 및 배포 매니페스트를 만들고, 편집하고, 서명할 수 있도록 합니다. Mage.exe는 명령줄 도구로서 일괄 처리 스크립트뿐 아니라 ASP.NET 애플리케이션을 비롯한 Windows 기반 애플리케이션에서도 실행할 수 있습니다.  
   
  [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)  
  명령줄 도구인 Mage.exe와 동일한 기능을 지원하지만 Windows 기반 UI(사용자 인터페이스)를 사용합니다. 명령줄 도구인 Mage.exe와 동일한 기능을 지원하지만 Windows 기반 UI(사용자 인터페이스)를 사용합니다.  
   
  [MDbg.exe(.NET Framework 명령줄 디버거)](../../../docs/framework/tools/mdbg-exe.md)  
- 도구 공급업체 및 응용 프로그램 개발자가 .NET Framework 공용 언어 런타임을 대상으로 하는 프로그램에서 버그를 쉽게 찾아서 수정할 수 있도록 도와줍니다. 이 도구에는 디버깅 서비스를 제공하기 위해 런타임 디버깅 API가 사용됩니다.  
+ 도구 공급업체 및 애플리케이션 개발자가 .NET Framework 공용 언어 런타임을 대상으로 하는 프로그램에서 버그를 쉽게 찾아서 수정할 수 있도록 도와줍니다. 이 도구에는 디버깅 서비스를 제공하기 위해 런타임 디버깅 API가 사용됩니다.  
   
  [Mgmtclassgen.exe(강력하게 형식화된 관리 클래스 생성기)](../../../docs/framework/tools/mgmtclassgen-exe.md)  
  지정된 WMI(Windows Management Instrumentation) 클래스에 대한 초기 바인딩 관리되는 클래스를 생성할 수 있도록 합니다.  
   
  [Mpgo.exe(관리되는 프로필 기반 최적화 도구)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md)  
- 일반 최종 사용자 시나리오를 사용하여 네이티브 이미지 어셈블리를 조정하도록 설정합니다. Mpgo.exe는 응용 프로그램 개발자가 선택한 교육 시나리오를 사용하여 네이티브 이미지 응용 프로그램 어셈블리(.NET Framework 어셈블리는 아님)에 대한 프로필 데이터를 생성하고 사용할 수 있도록 허용합니다.  
+ 일반 최종 사용자 시나리오를 사용하여 네이티브 이미지 어셈블리를 조정하도록 설정합니다. Mpgo.exe는 애플리케이션 개발자가 선택한 교육 시나리오를 사용하여 네이티브 이미지 애플리케이션 어셈블리(.NET Framework 어셈블리는 아님)에 대한 프로필 데이터를 생성하고 사용할 수 있도록 허용합니다.  
   
  [Ngen.exe(네이티브 이미지 생성기)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)  
- 컴파일된 프로세서별 컴퓨터 코드가 포함된 파일인 네이티브 이미지를 사용하여 관리되는 응용 프로그램의 성능을 향상시킵니다. 런타임은 JIT(Just-In-Time) 컴파일러를 사용하지 않고 캐시의 네이티브 이미지를 사용하여 원본 어셈블리를 컴파일할 수 있습니다.  
+ 컴파일된 프로세서별 컴퓨터 코드가 포함된 파일인 네이티브 이미지를 사용하여 관리되는 애플리케이션의 성능을 향상시킵니다. 런타임은 JIT(Just-In-Time) 컴파일러를 사용하지 않고 캐시의 네이티브 이미지를 사용하여 원본 어셈블리를 컴파일할 수 있습니다.  
   
  [Peverify.exe(PEVerify 도구)](../../../docs/framework/tools/peverify-exe-peverify-tool.md)  
  MSIL(Microsoft Intermediate Language) 코드 및 관련 메타데이터가 형식 안전성 요구 사항을 충족하는지 여부를 쉽게 확인할 수 있도록 합니다. MSIL(Microsoft Intermediate Language) 코드 및 관련 메타데이터가 형식 안전성 요구 사항을 충족하는지 여부를 쉽게 확인할 수 있도록 합니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "44041488"
  어셈블리 내의 메타데이터를 읽고 레지스트리에 필요한 항목을 추가합니다. 이렇게 하면 COM 클라이언트를 .NET Framework 클래스로 표시할 수 있습니다.  
   
  [Regsvcs.exe(.NET 서비스 설치 도구)](../../../docs/framework/tools/regsvcs-exe-net-services-installation-tool.md)  
- 어셈블리를 로드 및 등록하고, 형식 라이브러리를 생성하여 지정된 COM+ 버전 1.0 응용 프로그램에 설치하며, 프로그래밍 방식으로 클래스에 추가한 서비스를 구성합니다.  
+ 어셈블리를 로드 및 등록하고, 형식 라이브러리를 생성하여 지정된 COM+ 버전 1.0 애플리케이션에 설치하며, 프로그래밍 방식으로 클래스에 추가한 서비스를 구성합니다.  
   
  [Resgen.exe(리소스 파일 생성기)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)  
  텍스트 파일(.txt 또는 .restext)과 XML 기반 리소스 형식 파일(.resx)을 런타임 이진 실행 파일에 포함시키거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 파일(.resources)로 변환합니다.  
@@ -114,7 +114,7 @@ ms.locfileid: "44041488"
  .NET Framework의 LINQ to SQL 구성 요소에 대한 코드와 매핑을 생성합니다.  
   
  [Storeadm.exe(격리된 저장소 도구)](../../../docs/framework/tools/storeadm-exe-isolated-storage-tool.md)  
- 사용자의 저장소를 나열하고 삭제할 수 있는 옵션을 제공함으로써 격리된 저장소를 관리합니다.  
+ 사용자의 저장소를 나열하고 삭제할 수 있는 옵션을 제공함으로써 격리된 스토리지를 관리합니다.  
   
  [Tlbexp.exe(형식 라이브러리 내보내기)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)  
  공용 언어 런타임 어셈블리에 정의된 형식을 설명하는 형식 라이브러리를 생성합니다.  
@@ -133,4 +133,4 @@ ms.locfileid: "44041488"
  isXPS 규칙 도구(isXPS.exe) 및 성능 프로파일링 도구와 같은 도구가 포함되어 있습니다.  
   
  [Windows Communication Foundation 도구](../../../docs/framework/wcf/tools.md)  
- WCF(Windows Communication Foundation) 응용 프로그램을 보다 쉽게 만들고 배포하고 관리할 수 있도록 지원하는 도구가 포함되어 있습니다.
+ WCF(Windows Communication Foundation) 애플리케이션을 보다 쉽게 만들고 배포하고 관리할 수 있도록 지원하는 도구가 포함되어 있습니다.

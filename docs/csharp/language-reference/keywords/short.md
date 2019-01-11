@@ -63,7 +63,7 @@ SampleMethod((short)5);  // Calling the method with the short parameter
 
 `short`에서 [int](int.md), [long](long.md), [float](float.md), [double](double.md) 또는 [decimal](decimal.md)로 미리 정의된 암시적 변환이 있습니다.
 
-더 큰 저장소 크기의 비리터럴 숫자 형식을 `short`로 암시적으로 변환할 수는 없습니다(정수 형식의 저장소 크기는 [정수 형식 표](integral-types-table.md) 참조). 예를 들어 다음 두 가지 `short` 변수 `x` 및 `y`를 고려해 보세요.
+더 큰 스토리지 크기의 비리터럴 숫자 형식을 `short`로 암시적으로 변환할 수는 없습니다(정수 형식의 스토리지 크기는 [정수 형식 표](integral-types-table.md) 참조). 예를 들어 다음 두 가지 `short` 변수 `x` 및 `y`를 고려해 보세요.
 
 ```csharp
 short x = 5, y = 12;
@@ -81,7 +81,7 @@ short z  = x + y;        // Compiler error CS0266: no conversion from int to sho
 short z  = (short)(x + y);   // Explicit conversion
 ```
 
-대상 변수에 동일한 저장소 크기 또는 더 큰 저장소 크기가 있는 다음 문을 사용할 수도 있습니다.
+대상 변수에 동일한 스토리지 크기 또는 더 큰 스토리지 크기가 있는 다음 명령문을 사용할 수도 있습니다.
 
 ```csharp
 int m = x + y;

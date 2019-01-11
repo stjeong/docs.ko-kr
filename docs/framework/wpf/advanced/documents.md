@@ -14,7 +14,7 @@ ms.lasthandoff: 10/19/2018
 ms.locfileid: "49415213"
 ---
 # <a name="documents"></a>문서
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 개발자가 고급 문서 기능 및 향상된 읽기 환경을 사용하여 응용 프로그램을 빌드할 수 있는 다양한 구성 요소 집합을 제공합니다. 고급 기능 및 품질 외에도 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 문서 패키징, 보안 및 저장을 위해 간소화된 관리 서비스도 제공합니다.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 개발자가 고급 문서 기능 및 향상된 읽기 환경을 사용하여 응용 프로그램을 빌드할 수 있는 다양한 구성 요소 집합을 제공합니다. 고급 기능 및 품질 외에도 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 문서 패키징, 보안 및 스토리지를 위해 간소화된 관리 서비스도 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [WPF의 문서](documents-in-wpf.md)  

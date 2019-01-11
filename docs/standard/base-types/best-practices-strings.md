@@ -29,9 +29,9 @@ ms.lasthandoff: 12/10/2018
 ms.locfileid: "53150981"
 ---
 # <a name="best-practices-for-using-strings-in-net"></a>.NET에서 문자열 사용에 대한 모범 사례
-<a name="top"></a> .NET에서는 지역화된 응용 프로그램과 전역화된 응용 프로그램을 개발하기 위한 광범위한 지원을 제공하고 문자열 정렬 및 표시와 같은 일반적인 작업을 수행할 때 현재 문화권이나 특정 문화권의 규칙을 쉽게 적용할 수 있습니다. 그러나 문자열 정렬 및 비교가 항상 문화권이 구분되는 작업은 아닙니다. 예를 들어 응용 프로그램에서 내부적으로 사용되는 문자열은 대기 모든 문화권에서 동일하게 처리해야 합니다. XML 태그, HTML 태그, 사용자 이름, 파일 경로 및 시스템 개체 이름과 같이 문화권을 구분하지 않는 문자열 데이터가 문화권이 구분되는 것처럼 해석되면 응용 프로그램 코드에는 감지하기 어려운 버그, 성능 저하 및 경우에 따라 보안 문제가 발생할 수 있습니다.  
+<a name="top"></a> .NET에서는 지역화된 응용 프로그램과 전역화된 응용 프로그램을 개발하기 위한 광범위한 지원을 제공하고 문자열 정렬 및 표시와 같은 일반적인 작업을 수행할 때 현재 문화권이나 특정 문화권의 규칙을 쉽게 적용할 수 있습니다. 그러나 문자열 정렬 및 비교가 항상 문화권이 구분되는 작업은 아닙니다. 예를 들어 애플리케이션에서 내부적으로 사용되는 문자열은 대기 모든 문화권에서 동일하게 처리해야 합니다. XML 태그, HTML 태그, 사용자 이름, 파일 경로 및 시스템 개체 이름과 같이 문화권을 구분하지 않는 문자열 데이터가 문화권이 구분되는 것처럼 해석되면 애플리케이션 코드에는 감지하기 어려운 버그, 성능 저하 및 경우에 따라 보안 문제가 발생할 수 있습니다.  
   
- 이 항목에서는 .NET의 문자열 정렬, 비교 및 대/소문자 구분 방법을 살펴보고, 적절한 문자열 처리 방법 선택을 위한 권장 사항을 제공하고, 문자열 처리 방법에 대한 추가 정보를 제공합니다. 또한 숫자 데이터 및 날짜/시간 데이터와 같은 형식이 지정된 데이터를 표시 및 저장을 위해 처리하는 방법을 살펴봅니다.  
+ 이 항목에서는 .NET의 문자열 정렬, 비교 및 대/소문자 구분 방법을 살펴보고, 적절한 문자열 처리 방법 선택을 위한 권장 사항을 제공하고, 문자열 처리 방법에 대한 추가 정보를 제공합니다. 또한 숫자 데이터 및 날짜/시간 데이터와 같은 형식이 지정된 데이터를 표시 및 스토리지를 위해 처리하는 방법을 살펴봅니다.  
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  
   
@@ -135,7 +135,7 @@ ms.locfileid: "53150981"
 ### <a name="string-comparisons-that-use-the-current-culture"></a>현재 문화권을 사용하는 문자열 비교  
  문자열 비교 시 현재 문화권의 규칙을 사용하는 한 가기 기준이 포함됩니다. 현재 문화권을 기준으로 한 비교에는 스레드의 현재 문화권 또는 로캘이 사용됩니다. 사용자가 문화권을 설정하지 않으면 문화권은 기본적으로 제어판, **국가별 옵션** 창의 설정으로 지정됩니다. 데이터가 언어적으로 관련되는 경우와 문화권이 구분되는 사용자 조작을 반영하는 경우에는 항상 현재 문화권을 기준으로 한 비교를 사용해야 합니다.  
   
- 그러나 문화권이 변경되면 .NET의 비교 및 대/소문자 지정 동작도 바뀝니다. 응용 프로그램이 개발된 컴퓨터와 다른 문화권을 포함하는 컴퓨터에서 응용 프로그램을 실행하거나 실행 스레드가 문화권을 변경할 경우 이 동작이 수행됩니다. 이 동작은 의도적이지만 대부분 개발자가 이해하기가 분명하지는 않습니다. 다음 예제에서는 미국 영어("en-US") 및 스웨덴어("sv-SE") 문화권의 정렬 순서 차이를 보여 줍니다. 정렬된 문자열 배열에서 단어 "ångström", "Windows" 및 "Visual Studio"가 다른 위치에 나타남을 알 수 있습니다.  
+ 그러나 문화권이 변경되면 .NET의 비교 및 대/소문자 지정 동작도 바뀝니다. 애플리케이션이 개발된 컴퓨터와 다른 문화권을 포함하는 컴퓨터에서 애플리케이션을 실행하거나 실행 스레드가 문화권을 변경할 경우 이 동작이 수행됩니다. 이 동작은 의도적이지만 대부분 개발자가 이해하기가 분명하지는 않습니다. 다음 예제에서는 미국 영어("en-US") 및 스웨덴어("sv-SE") 문화권의 정렬 순서 차이를 보여 줍니다. 정렬된 문자열 배열에서 단어 "ångström", "Windows" 및 "Visual Studio"가 다른 위치에 나타남을 알 수 있습니다.  
   
  [!code-csharp[Conceptual.Strings.BestPractices#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison1.cs#3)]
  [!code-vb[Conceptual.Strings.BestPractices#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison1.vb#3)]  
@@ -232,7 +232,7 @@ ms.locfileid: "53150981"
   
  파일 이름, 쿠키 또는 "å"와 같은 조합이 나타날 수 있는 다른 항목을 해석할 때 서수 비교는 가장 투명하고 적합한 동작을 제공합니다.  
   
- 모든 것을 고려해 보면 고정 문화권에는 비교에 유용할 수 있는 속성이 거의 없습니다. 고정 문화권은 완전한 기호 동일성을 보장하지 못하게 하는 언어 관련 방식으로 비교를 수행하지만 모든 문화권에서 표시하기에 적합하지 않습니다. 비교에 <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType>를 사용하는 몇 가지 이유의 하나는 서로 다른 문화에서 동일하게 표시되도록 순서가 지정된 데이터를 유지하는 것입니다. 예를 들어 표시하기 위한 정렬된 식별자 목록을 포함하는 큰 데이터 파일이 응용 프로그램과 함께 제공될 경우 이 목록에 추가하려면 고정 스타일 정렬을 사용한 삽입이 필요합니다.  
+ 모든 것을 고려해 보면 고정 문화권에는 비교에 유용할 수 있는 속성이 거의 없습니다. 고정 문화권은 완전한 기호 동일성을 보장하지 못하게 하는 언어 관련 방식으로 비교를 수행하지만 모든 문화권에서 표시하기에 적합하지 않습니다. 비교에 <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType>를 사용하는 몇 가지 이유의 하나는 서로 다른 문화에서 동일하게 표시되도록 순서가 지정된 데이터를 유지하는 것입니다. 예를 들어 표시하기 위한 정렬된 식별자 목록을 포함하는 큰 데이터 파일이 애플리케이션과 함께 제공될 경우 이 목록에 추가하려면 고정 스타일 정렬을 사용한 삽입이 필요합니다.  
   
  [맨 위로 이동](#top)  
   
@@ -322,7 +322,7 @@ ms.locfileid: "53150981"
 ### <a name="arraysort-and-arraybinarysearch"></a>Array.Sort 및 Array.BinarySearch  
  기본 해석: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.  
   
- 컬렉션에 데이터를 저장하거나 영구 데이터를 파일이나 데이터베이스에서 컬렉션으로 읽을 때 현재 문화권을 전환하면 컬렉션에서 고정이 무효화될 수 있습니다. <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> 메서드는 검색할 배열의 요소가 이미 정렬되었다고 가정합니다. 배열에서 문자열 요소를 정렬하려고 <xref:System.Array.Sort%2A?displayProperty=nameWithType> 메서드는 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 호출하여 개별 요소의 순서를 지정합니다. 배열이 정렬된 시간과 콘텐츠가 검색된 시간 사이에 문화권이 변경될 경우 문화권 구분 비교자 사용이 위험할 수 있습니다. 예를 들어 다음 코드에서 저장 및 검색은 `Thread.CurrentThread.CurrentCulture` 속성이 사용됩니다. `StoreNames` 및 `DoesNameExist`에 대한 호출 사이에 문화권이 변경되고 특히 배열 콘텐츠가 두 메서드 호출 사이에 지속되면 이진 검색이 실패할 수 있습니다.  
+ 컬렉션에 데이터를 저장하거나 영구 데이터를 파일이나 데이터베이스에서 컬렉션으로 읽을 때 현재 문화권을 전환하면 컬렉션에서 고정이 무효화될 수 있습니다. <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> 메서드는 검색할 배열의 요소가 이미 정렬되었다고 가정합니다. 배열에서 문자열 요소를 정렬하려고 <xref:System.Array.Sort%2A?displayProperty=nameWithType> 메서드는 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 호출하여 개별 요소의 순서를 지정합니다. 배열이 정렬된 시간과 콘텐츠가 검색된 시간 사이에 문화권이 변경될 경우 문화권 구분 비교자 사용이 위험할 수 있습니다. 예를 들어 다음 코드에서 저장 및 검색은 `Thread.CurrentThread.CurrentCulture` 속성에 의해 암시적으로 제공되는 비교자에서 작동합니다. `StoreNames` 및 `DoesNameExist`에 대한 호출 사이에 문화권이 변경되고 특히 배열 콘텐츠가 두 메서드 호출 사이에 지속되면 이진 검색이 실패할 수 있습니다.  
   
  [!code-csharp[Conceptual.Strings.BestPractices#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect1.cs#7)]
  [!code-vb[Conceptual.Strings.BestPractices#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect1.vb#7)]  
@@ -359,7 +359,7 @@ ms.locfileid: "53150981"
   
 -   숫자 또는 날짜/시간의 형식 지정을 관리하는 국제, 지역 또는 국가 표준은 시간에 지나면서 변경되고 이들 변경은 Windows 운영 체제 업데이트에 통합됩니다. 형식 지정 규칙이 변경될 때 이전 규칙을 사용하여 형식이 지정된 데이터를 읽지 못하게 될 수 있습니다.  
   
- 다음 예제에서는 문화권 구분 형식 지정을 사용하여 데이터를 유지함으로 인해 제한된 이식성을 보여 줍니다. 예제에서는 날짜 및 시간 값 배열을 파일에 저장합니다. 이들 값은 영어(미국) 문화권의 규칙을 사용하여 형식이 지정됩니다. 응용 프로그램이 현재 스레드 문화권을 프랑스어(스위스)로 변경하고 나면 현재 문화권의 형식 지정 규칙을 사용하여 저장된 값을 읽으려고 합니다. 두 데이터 항목을 읽으려는 시도로 인해 <xref:System.FormatException> 예외가 throw되고 날짜 배열에는 <xref:System.DateTime.MinValue>와 같은 잘못된 두 가지 요소가 포함됩니다.  
+ 다음 예제에서는 문화권 구분 형식 지정을 사용하여 데이터를 유지함으로 인해 제한된 이식성을 보여 줍니다. 예제에서는 날짜 및 시간 값 배열을 파일에 저장합니다. 이들 값은 영어(미국) 문화권의 규칙을 사용하여 형식이 지정됩니다. 애플리케이션이 현재 스레드 문화권을 프랑스어(스위스)로 변경하고 나면 현재 문화권의 형식 지정 규칙을 사용하여 저장된 값을 읽으려고 합니다. 두 데이터 항목을 읽으려는 시도로 인해 <xref:System.FormatException> 예외가 throw되고 날짜 배열에는 <xref:System.DateTime.MinValue>와 같은 잘못된 두 가지 요소가 포함됩니다.  
   
  [!code-csharp[Conceptual.Strings.BestPractices#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/persistence.cs#21)]
  [!code-vb[Conceptual.Strings.BestPractices#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/persistence.vb#21)]  

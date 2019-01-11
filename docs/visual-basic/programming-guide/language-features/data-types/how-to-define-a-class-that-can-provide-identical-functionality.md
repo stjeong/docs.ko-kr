@@ -58,7 +58,7 @@ ms.locfileid: "33650350"
   
      제약 조건을 지정하지 않으면 [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)에서 지원되는 작업 및 멤버만 코드에서 사용할 수 있습니다. 자세한 내용은 [Type List](../../../../visual-basic/language-reference/statements/type-list.md)을 참조하세요.  
   
-5.  제공된 형식으로 선언될 모든 클래스 멤버를 식별하고 이를 `As` `typeparameter`로 선언합니다. 이는 내부 저장소, 프로시저 매개 변수 및 반환 값에 적용됩니다.  
+5.  제공된 형식으로 선언될 모든 클래스 멤버를 식별하고 이를 `As` `typeparameter`로 선언합니다. 이는 내부 스토리지, 프로시저 매개 변수 및 반환 값에 적용됩니다.  
   
 6.  `itemType`에 제공할 수 있는 모든 데이터 형식이 지원하는 작업 및 메서드만 코드에서 사용해야 합니다.  
   
@@ -68,7 +68,7 @@ ms.locfileid: "33650350"
   
      `simpleList` 값 목록을 저장할 클래스, `Integer` 값 목록을 저장할 클래스, `String` 값을 저장할 클래스를 `Date` 로부터 선언할 수 있습니다. 목록 요소의 데이터 형식을 제외하고 이러한 모든 클래스에서 만들어진 개체는 동일하게 동작합니다.  
   
-     코드에서 `itemType` 에 제공하는 형식 인수는 `Boolean` 또는 `Double`, 구조체, 열거형 또는 응용 프로그램이 정의하는 형식을 포함한 모든 클래스 형식과 같은 내부 형식일 수 있습니다.  
+     코드에서 `itemType` 에 제공하는 형식 인수는 `Boolean` 또는 `Double`, 구조체, 열거형 또는 애플리케이션이 정의하는 형식을 포함한 모든 클래스 형식과 같은 내부 형식일 수 있습니다.  
   
      다음 코드로 클래스 `simpleList` 를 테스트할 수 있습니다.  
   

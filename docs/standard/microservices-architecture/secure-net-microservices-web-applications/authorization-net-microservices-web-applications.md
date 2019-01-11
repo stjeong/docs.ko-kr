@@ -1,6 +1,6 @@
 ---
-title: .NET 마이크로 서비스 및 웹 응용 프로그램의 권한 부여 정보
-description: 컨테이너화된 .NET 응용 프로그램용 .NET 마이크로 서비스 아키텍처 | .NET 마이크로 서비스 및 웹 응용 프로그램의 권한 부여 정보
+title: .NET 마이크로 서비스 및 웹 애플리케이션의 권한 부여 정보
+description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서비스 아키텍처 | .NET 마이크로 서비스 및 웹 애플리케이션의 권한 부여 정보
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
 ms.locfileid: "53149568"
 ---
-# <a name="about-authorization-in-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 응용 프로그램의 권한 부여 정보
+# <a name="about-authorization-in-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 애플리케이션의 권한 부여 정보
 
 인증 후에는 ASP.NET Core Web API에서 액세스 권한을 부여해야 합니다. 이 프로세스를 사용하면 서비스에서 일부 인증된 사용자는 API를 사용할 수 있지만, 모든 사용자가 사용할 수는 없습니다. [권한 부여](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)는 사용자의 역할 또는 사용자 지정 정책에 따라 수행될 수 있습니다. 이 경우 클레임 또는 다른 추론 검사가 포함될 수 있습니다.
 
@@ -35,7 +35,7 @@ public class AccountController : Controller
 
 ## <a name="implementing-role-based-authorization"></a>역할 기반 인증 구현
 
-ASP.NET Core ID에는 기본 제공되는 역할에 대한 개념이 있습니다. ASP.NET Core ID는 사용자 외에도 응용 프로그램에서 사용하는 여러 역할에 대한 정보를 저장하고, 해당 역할에 할당된 사용자를 추적합니다. 이러한 할당은 RoleManager 유형(지속형 저장소에서 역할을 업데이트함) 및 UserManager 유형(역할에서 사용자를 할당 또는 할당 취소할 수 있음)을 사용하여 프로그래밍 방식으로 변경할 수 있습니다.
+ASP.NET Core ID에는 기본 제공되는 역할에 대한 개념이 있습니다. ASP.NET Core ID는 사용자 외에도 애플리케이션에서 사용하는 여러 역할에 대한 정보를 저장하고, 해당 역할에 할당된 사용자를 추적합니다. 이러한 할당은 RoleManager 유형(지속형 스토리지에서 역할을 업데이트함) 및 UserManager 유형(역할에서 사용자를 할당 또는 할당 취소할 수 있음)을 사용하여 프로그래밍 방식으로 변경할 수 있습니다.
 
 JWT 전달자 토큰으로 인증하는 경우 ASP.NET Core JWT 전달자 인증 미들웨어는 토큰에 있는 역할 클레임에 따라 사용자의 역할을 채웁니다. 특정 역할의 사용자에게 MVC 작업 또는 컨트롤러에 대한 액세스를 제한하려면 다음 예제와 같이 Authorize 헤더에 Roles 매개 변수를 포함하면 됩니다.
 

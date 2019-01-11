@@ -25,7 +25,7 @@ ms.locfileid: "53237223"
   
  형식에 저장된 정보에는 다음이 포함될 수 있습니다.  
   
--   형식 변수에 필요한 저장소 공간.  
+-   형식 변수에 필요한 스토리지 공간.  
   
 -   형식이 나타낼 수 있는 최대값 및 최소값.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "53237223"
  C#에서는 정수, 부동 소수점 값, 부울 식, 텍스트 문자, 10진수 값 및 기타 데이터 형식을 표현하는 기본 제공 숫자 형식의 표준 집합을 제공합니다. 이 밖에도 기본 제공 `string` 및 `object` 형식이 있습니다. 이러한 형식을 모든 C# 프로그램에서 사용할 수 있습니다. 기본 제공 형식에 대한 자세한 내용은 [형식 참조 테이블](../../../csharp/language-reference/keywords/reference-tables-for-types.md)을 참조하세요.  
   
 ## <a name="custom-types"></a>사용자 지정 형식  
- [struct](../../../csharp/language-reference/keywords/struct.md), [class](../../../csharp/language-reference/keywords/class.md), [interface](../../../csharp/language-reference/keywords/interface.md) 및 [enum](../../../csharp/language-reference/keywords/enum.md) 구문을 사용하여 자체 사용자 지정 형식을 만듭니다. .NET 클래스 라이브러리 자체는 자체 응용 프로그램에서 사용할 수 있는 Microsoft에서 제공되는 사용자 지정 형식의 컬렉션입니다. 기본적으로 클래스 라이브러리의 가장 자주 사용되는 형식을 모든 C# 프로그램에서 사용할 수 있습니다. 기타 형식은 정의되어 있는 어셈블리에 대한 프로젝트 참조를 명시적으로 추가할 경우에만 사용할 수 있습니다. 컴파일러에 어셈블리에 대한 참조가 포함된 후에는 소스 코드에서 해당 어셈블리에 선언된 형식의 변수(및 상수)를 선언할 수 있습니다. 자세한 내용은 [.NET 클래스 라이브러리](../../../standard/class-library-overview.md)를 참조하세요.  
+ [struct](../../../csharp/language-reference/keywords/struct.md), [class](../../../csharp/language-reference/keywords/class.md), [interface](../../../csharp/language-reference/keywords/interface.md) 및 [enum](../../../csharp/language-reference/keywords/enum.md) 구문을 사용하여 자체 사용자 지정 형식을 만듭니다. .NET 클래스 라이브러리 자체는 자체 애플리케이션에서 사용할 수 있는 Microsoft에서 제공되는 사용자 지정 형식의 컬렉션입니다. 기본적으로 클래스 라이브러리의 가장 자주 사용되는 형식을 모든 C# 프로그램에서 사용할 수 있습니다. 기타 형식은 정의되어 있는 어셈블리에 대한 프로젝트 참조를 명시적으로 추가할 경우에만 사용할 수 있습니다. 컴파일러에 어셈블리에 대한 참조가 포함된 후에는 소스 코드에서 해당 어셈블리에 선언된 형식의 변수(및 상수)를 선언할 수 있습니다. 자세한 내용은 [.NET 클래스 라이브러리](../../../standard/class-library-overview.md)를 참조하세요.  
   
 ## <a name="the-common-type-system"></a>공용 형식 시스템.  
  .NET의 형식 시스템에 대한 다음과 같은 두 가지 기초 사항을 이해해야 합니다.  

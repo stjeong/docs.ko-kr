@@ -92,7 +92,7 @@ GeometryDrawing
  오디오 또는 비디오 파일을 재생 하려면 사용 하는 <xref:System.Windows.Media.VideoDrawing> 및 <xref:System.Windows.Media.MediaPlayer>합니다. 미디어를 로드하고 재생하는 방법에는 다음 두 가지가 있습니다. 첫 번째 사용 하는 것을 <xref:System.Windows.Media.MediaPlayer> 및 <xref:System.Windows.Media.VideoDrawing> 고 두 번째 방법은 직접 만들어보십시오 <xref:System.Windows.Media.MediaTimeline> 를 사용 하는 <xref:System.Windows.Media.MediaPlayer> 및 <xref:System.Windows.Media.VideoDrawing>합니다.  
   
 > [!NOTE]
->  응용 프로그램을 사용하여 미디어를 배포하는 경우 이미지의 경우처럼 미디어 파일을 프로젝트 리소스로 사용할 수 없습니다. 대신 프로젝트 파일에서 미디어 형식을 `Content`로 설정하고 `CopyToOutputDirectory`를 `PreserveNewest` 또는 `Always`로 설정해야 합니다.  
+>  애플리케이션을 사용하여 미디어를 배포하는 경우 이미지의 경우처럼 미디어 파일을 프로젝트 리소스로 사용할 수 없습니다. 대신 프로젝트 파일에서 미디어 형식을 `Content`로 설정하고 `CopyToOutputDirectory`를 `PreserveNewest` 또는 `Always`로 설정해야 합니다.  
   
  직접 만들지 않고 미디어를 재생 하려면 <xref:System.Windows.Media.MediaTimeline>, 다음 단계를 수행 합니다.  
   
@@ -221,7 +221,7 @@ DrawingBrush에 GeometryDrawing 사용
 ## <a name="drawingcontext-objects"></a>DrawingContext 개체  
  <xref:System.Windows.Media.DrawingContext> 클래스를 사용 하면를 채울 수는 <xref:System.Windows.Media.Visual> 또는 <xref:System.Windows.Media.Drawing> 시각적 콘텐츠를 사용 하 여 합니다. 이러한 많은 하위 수준 그래픽 개체 사용을 <xref:System.Windows.Media.DrawingContext> 그래픽 콘텐츠 매우 효율적으로 설명 하므로 합니다.  
   
- 하지만 합니다 <xref:System.Windows.Media.DrawingContext> 그리기 메서드 그리기 메서드와 유사는 <xref:System.Drawing.Graphics?displayProperty=nameWithType> 실제로 매우 다른 지는 형식입니다. <xref:System.Windows.Media.DrawingContext> 유지 모드 그래픽 시스템을 사용 하 여 사용 된 <xref:System.Drawing.Graphics?displayProperty=nameWithType> 은 직접 실행 모드 그래픽 시스템 형식이 사용 되었습니다. 사용 하는 경우는 <xref:System.Windows.Media.DrawingContext> 개체의 그리기 명령을, 실제로 렌더링 명령 집합을 저장 하는 (정확한 저장소 메커니즘을 제공 하는 개체의 유형에 따라 다르지만 <xref:System.Windows.Media.DrawingContext>) 그래픽에서 나중에 사용 되는 시스템; 실시간으로 화면에 그릴 됩니다. Windows Presentation Foundation (WPF) 그래픽 시스템의 작동 방식에 대 한 자세한 내용은 참조는 [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)합니다.  
+ 하지만 합니다 <xref:System.Windows.Media.DrawingContext> 그리기 메서드 그리기 메서드와 유사는 <xref:System.Drawing.Graphics?displayProperty=nameWithType> 실제로 매우 다른 지는 형식입니다. <xref:System.Windows.Media.DrawingContext> 유지 모드 그래픽 시스템을 사용 하 여 사용 된 <xref:System.Drawing.Graphics?displayProperty=nameWithType> 은 직접 실행 모드 그래픽 시스템 형식이 사용 되었습니다. <xref:System.Windows.Media.DrawingContext> 개체의 그리기 명령을 사용하는 경우 실제로 나중에 그래픽 시스템에서 사용될 렌더링 명령 집합을 저장하게 되며 (정확한 스토리지 메커니즘은 <xref:System.Windows.Media.DrawingContext>를 제공하는 개체의 형식에 따라 다름) 실시간으로 화면에 그리지 않습니다. Windows Presentation Foundation (WPF) 그래픽 시스템의 작동 방식에 대 한 자세한 내용은 참조는 [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)합니다.  
   
  절대 직접 인스턴스화하지를 <xref:System.Windows.Media.DrawingContext>; 얻을 수 있습니다, 있지만 특정 메서드에서 그리기 컨텍스트 등 <xref:System.Windows.Media.DrawingGroup.Open%2A?displayProperty=nameWithType> 고 <xref:System.Windows.Media.DrawingVisual.RenderOpen%2A?displayProperty=nameWithType>입니다.  
   

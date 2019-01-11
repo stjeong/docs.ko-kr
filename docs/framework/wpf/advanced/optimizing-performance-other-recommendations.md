@@ -48,9 +48,9 @@ ms.locfileid: "33547237"
   
  각 <xref:System.Windows.Navigation.NavigationWindow> 개체에 해당 창에서 사용자의 탐색 기록을 기록 하는 저널 합니다. 저널의 목적 중 하나는 사용자가 단계를 다시 수행할 수 있도록 하는 것입니다.  
   
- [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)]를 사용하여 탐색하면 저널에서는 [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] 참조만 저장합니다. 이는 페이지를 다시 방문할 때마다 동적으로 다시 구성하기 때문에 페이지가 복잡할 경우 많은 시간이 걸릴 수도 있습니다. 이 경우 저널 저장 비용은 낮지만 페이지를 다시 구성하는 시간이 오래 걸릴 수 있습니다.  
+ [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)]를 사용하여 탐색하면 저널에서는 [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] 참조만 저장합니다. 이는 페이지를 다시 방문할 때마다 동적으로 다시 구성하기 때문에 페이지가 복잡할 경우 많은 시간이 걸릴 수도 있습니다. 이 경우 저널 스토리지 비용은 낮지만 페이지를 다시 구성하는 시간이 오래 걸릴 수 있습니다.  
   
- 개체를 사용하여 탐색하면 저널에서 개체의 전체 시각적 트리를 저장합니다. 즉, 페이지를 다시 방문할 때마다 페이지를 다시 구성하지 않고 바로 렌더링합니다. 이 경우 저널 저장 비용은 높지만 페이지를 다시 구성하는 시간이 줄어듭니다.  
+ 개체를 사용하여 탐색하면 저널에서 개체의 전체 시각적 트리를 저장합니다. 즉, 페이지를 다시 방문할 때마다 페이지를 다시 구성하지 않고 바로 렌더링합니다. 이 경우 저널 스토리지 비용은 높지만 페이지를 다시 구성하는 시간이 줄어듭니다.  
   
  사용 하는 경우는 <xref:System.Windows.Navigation.NavigationWindow> 개체 저널링 지원 응용 프로그램의 성능에 미치는 영향에 점을 명심 해야 합니다. 자세한 내용은 [탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)를 참조하세요.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "33547237"
   
 <a name="FontCache"></a>   
 ## <a name="configure-font-cache-service-to-reduce-start-up-time"></a>시작 시간을 줄이도록 글꼴 캐시 서비스 구성  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 글꼴 캐시 서비스는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램 간에 글꼴 데이터를 공유합니다. 서비스가 실행되고 있지 않은 경우 처음 실행하는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에서 이 서비스가 시작됩니다. 사용 중인 경우 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)]를 설정할 수 있습니다 "Windows Presentation Foundation (WPF) 글꼴 캐시 3.0.0.0" 서비스 "수동" (기본값)에서 "자동 (지연 된 시작)"의 초기 시작 시간을 줄이기 위해 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램입니다.  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 글꼴 캐시 서비스는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램 간에 글꼴 데이터를 공유합니다. 서비스가 실행되고 있지 않은 경우 처음 실행하는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 애플리케이션에서 이 서비스가 시작됩니다. 사용 중인 경우 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)]를 설정할 수 있습니다 "Windows Presentation Foundation (WPF) 글꼴 캐시 3.0.0.0" 서비스 "수동" (기본값)에서 "자동 (지연 된 시작)"의 초기 시작 시간을 줄이기 위해 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [응용 프로그램 성능 계획](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  

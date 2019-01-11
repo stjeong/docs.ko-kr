@@ -1,6 +1,6 @@
 ---
-title: .NET 마이크로 서비스 및 웹 응용 프로그램 보안
-description: 컨테이너화된 .NET 응용 프로그램을 위한 .NET 마이크로 서비스 아키텍처 | .NET 마이크로 서비스 및 웹 응용 프로그램 보안
+title: .NET 마이크로 서비스 및 웹 애플리케이션 보안
+description: 컨테이너화된 .NET 애플리케이션을 위한 .NET 마이크로 서비스 아키텍처 | .NET 마이크로 서비스 및 웹 애플리케이션 보안
 author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
 ms.locfileid: "53126473"
 ---
-# <a name="securing-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 응용 프로그램 보안
+# <a name="securing-net-microservices-and-web-applications"></a>.NET 마이크로 서비스 및 웹 애플리케이션 보안
 
 서비스에 의해 노출된 리소스 및 API는 종종 특정 신뢰할 수 있는 사용자 또는 클라이언트로 제한되어야 합니다. 이러한 API 수준 신뢰 결정을 만드는 첫 번째 단계는 인증입니다. 인증은 사용자의 ID를 안정적으로 확인하는 프로세스입니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "53126473"
 
 **그림 11-1**. API 게이트웨이를 통한 중앙 집중식 인증
 
-서비스에 직접 액세스할 수 있는 경우 Azure Active Directory 또는 STS(보안 토큰 서비스)로 작동하는 전용 인증 마이크로 서비스와 같은 인증 서비스를 사용하여 사용자를 인증할 수 있습니다. 신뢰 결정은 보안 토큰 또는 쿠키를 통해 서비스 간에 공유됩니다. (필요한 경우 [데이터 보호 서비스](https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)를 통해 ASP.NET에서 응용 프로그램 간에 공유할 수 있습니다.) 그림 11-2에서는 이 패턴을 보여 줍니다.
+서비스에 직접 액세스할 수 있는 경우 Azure Active Directory 또는 STS(보안 토큰 서비스)로 작동하는 전용 인증 마이크로 서비스와 같은 인증 서비스를 사용하여 사용자를 인증할 수 있습니다. 신뢰 결정은 보안 토큰 또는 쿠키를 통해 서비스 간에 공유됩니다. (필요한 경우 [데이터 보호 서비스](https://docs.microsoft.com/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications)를 통해 ASP.NET에서 애플리케이션 간에 공유할 수 있습니다.) 그림 11-2에서는 이 패턴을 보여 줍니다.
 
 ![](./media/image2.png)
 
@@ -29,9 +29,9 @@ ms.locfileid: "53126473"
 
 ## <a name="authenticating-using-aspnet-core-identity"></a>ASP.NET Core ID를 사용한 인증
 
-응용 프로그램의 사용자를 식별하기 위한 ASP.NET Core의 기본 메커니즘은 [ASP.NET Core ID](https://docs.microsoft.com/aspnet/core/security/authentication/identity) 멤버 자격 시스템입니다. ASP.NET ID는 사용자 정보(로그인 정보, 역할 및 클레임 포함)를 개발자가 구성한 데이터 저장소에 저장합니다. 일반적으로 ASP.NET Core ID 데이터 저장소는 Microsoft.AspNetCore.Identity.EntityFrameworkCore 패키지에서 제공된 Entity Framework 저장소입니다. 그러나 사용자 지정 저장소 또는 타사 패키지를 사용하여 Azure Table Storage, DocumentDB 또는 다른 위치에 ID 정보를 저장할 수 있습니다.
+애플리케이션의 사용자를 식별하기 위한 ASP.NET Core의 기본 메커니즘은 [ASP.NET Core ID](https://docs.microsoft.com/aspnet/core/security/authentication/identity) 멤버 자격 시스템입니다. ASP.NET ID는 사용자 정보(로그인 정보, 역할 및 클레임 포함)를 개발자가 구성한 데이터 저장소에 저장합니다. 일반적으로 ASP.NET Core ID 데이터 저장소는 Microsoft.AspNetCore.Identity.EntityFrameworkCore 패키지에서 제공된 Entity Framework 저장소입니다. 그러나 사용자 지정 저장소 또는 타사 패키지를 사용하여 Azure Table Storage, DocumentDB 또는 다른 위치에 ID 정보를 저장할 수 있습니다.
 
-다음은 선택된 개별 사용자 계정 인증을 사용하여 ASP.NET Core 웹 응용 프로그램 프로젝트 템플릿에서 가져온 코드입니다. Startup.ConfigureServices 메서드에서 EntityFramework.Core를 사용하여 ASP.NET Core ID를 구성하는 방법을 보여 줍니다.
+다음은 선택된 개별 사용자 계정 인증을 사용하여 ASP.NET Core 웹 애플리케이션 프로젝트 템플릿에서 가져온 코드입니다. Startup.ConfigureServices 메서드에서 EntityFramework.Core를 사용하여 ASP.NET Core ID를 구성하는 방법을 보여 줍니다.
 
 ```csharp
 services.AddDbContext<ApplicationDbContext>(options =>
@@ -53,13 +53,13 @@ ASP.NET Core ID를 통해 다음과 같은 몇 가지 시나리오를 사용할 
 
 ASP.NET Core ID도 [2단계 인증](https://docs.microsoft.com/aspnet/core/security/authentication/2fa)을 지원합니다.
 
-ASP.NET Core ID는 로컬 사용자 데이터 저장소를 사용하며 (MVC 웹 응용 프로그램에서는 전형적인 방식인) 쿠키를 사용하여 요청 사이의 ID를 유지하는 인증 시나리오를 위해 권장되는 솔루션입니다.
+ASP.NET Core ID는 로컬 사용자 데이터 저장소를 사용하며 (MVC 웹 애플리케이션에서는 전형적인 방식인) 쿠키를 사용하여 요청 사이의 ID를 유지하는 인증 시나리오를 위해 권장되는 솔루션입니다.
 
 ## <a name="authenticating-using-external-providers"></a>외부 공급자를 사용한 인증
 
-ASP.NET Core는 [외부 인증 공급자](https://docs.microsoft.com/aspnet/core/security/authentication/social/)를 사용하여 사용자가 [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) 흐름을 통해 로그인할 수 있도록 지원합니다. 즉, 사용자가 Microsoft, Google, Facebook 또는 Twitter와 같은 공급자의 기존 인증 프로세스를 사용하여 로그인하고 응용 프로그램에서 ASP.NET Core ID와 공급자 ID를 연결할 수 있습니다.
+ASP.NET Core는 [외부 인증 공급자](https://docs.microsoft.com/aspnet/core/security/authentication/social/)를 사용하여 사용자가 [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) 흐름을 통해 로그인할 수 있도록 지원합니다. 즉, 사용자가 Microsoft, Google, Facebook 또는 Twitter와 같은 공급자의 기존 인증 프로세스를 사용하여 로그인하고 애플리케이션에서 ASP.NET Core ID와 공급자 ID를 연결할 수 있습니다.
 
-외부 인증을 사용하려면 응용 프로그램의 HTTP 요청 처리 파이프라인에서 적절한 인증 미들웨어를 포함합니다. 이 미들웨어는 인증 공급자의 URI 경로 반환 요청 처리, ID 정보 캡처, SignInManager.GetExternalLoginInfo 메서드를 통해 사용 가능하도록 설정하는 작업을 담당합니다.
+외부 인증을 사용하려면 애플리케이션의 HTTP 요청 처리 파이프라인에서 적절한 인증 미들웨어를 포함합니다. 이 미들웨어는 인증 공급자의 URI 경로 반환 요청 처리, ID 정보 캡처, SignInManager.GetExternalLoginInfo 메서드를 통해 사용 가능하도록 설정하는 작업을 담당합니다.
 
 인기 있는 외부 인증 공급자 및 해당 공급자와 연결된 NuGet 패키지는 다음과 같습니다.
 
@@ -71,7 +71,7 @@ ASP.NET Core는 [외부 인증 공급자](https://docs.microsoft.com/aspnet/core
 
 **Twitter:** Microsoft.AspNetCore.Authentication.Twitter
 
-모든 경우에 미들웨어는 호출을 통해 Startup.Configure의 app.Use{ExternalProvider}Authentication과 유사한 등록 메서드에 등록됩니다. 이러한 등록 메서드에서는 공급자의 필요에 따라 응용 프로그램 ID 및 비밀 정보(예: 암호)가 포함된 옵션 개체를 사용합니다. 외부 인증 공급자는 사용자 ID에 액세스하는 데 필요한 응용 프로그램을 사용자에게 안내하기 위해 ([ASP.NET Core 설명서](https://docs.microsoft.com/aspnet/core/security/authentication/social/)에서 설명한 것처럼) 등록할 응용 프로그램을 요청합니다.
+모든 경우에 미들웨어는 호출을 통해 Startup.Configure의 app.Use{ExternalProvider}Authentication과 유사한 등록 메서드에 등록됩니다. 이러한 등록 메서드에서는 공급자의 필요에 따라 애플리케이션 ID 및 비밀 정보(예: 암호)가 포함된 옵션 개체를 사용합니다. 외부 인증 공급자는 사용자 ID에 액세스하는 데 필요한 애플리케이션을 사용자에게 안내하기 위해 ([ASP.NET Core 설명서](https://docs.microsoft.com/aspnet/core/security/authentication/social/)에서 설명한 것처럼) 등록할 애플리케이션을 요청합니다.
 
 미들웨어가 Startup.Configure에 등록되면 모든 컨트롤러 작업에서 사용자에게 로그인을 요청할 수 있습니다. 이 작업을 수행하려면 인증 공급자의 이름 및 리디렉션 URL을 포함하는 AuthenticationProperties 개체를 만듭니다. 그런 다음 AuthenticationProperties 개체를 전달하는 챌린지 응답을 반환합니다. 다음 코드에서는 예제를 보여 줍니다.
 
@@ -116,11 +116,11 @@ else
 }
 ```
 
-Visual Studio에서 ASP.NET Core 웹 응용 프로그램 프로젝트를 만들 때 **개별 사용자 계정** 인증 옵션을 선택한 경우 그림 11-3에 표시된 것처럼 외부 공급자를 통해 로그인하는 데 필요한 모든 코드는 이미 프로젝트에 존재합니다.
+Visual Studio에서 ASP.NET Core 웹 애플리케이션 프로젝트를 만들 때 **개별 사용자 계정** 인증 옵션을 선택한 경우 그림 11-3에 표시된 것처럼 외부 공급자를 통해 로그인하는 데 필요한 모든 코드는 이미 프로젝트에 존재합니다.
 
 ![https://msdnshared.blob.core.windows.net/media/2016/10/new-web-app.png](./media/image3.png)
 
-**그림 11-3**. 웹 응용 프로그램 프로젝트를 만들 경우 외부 인증 사용 옵션 선택
+**그림 11-3**. 웹 애플리케이션 프로젝트를 만들 경우 외부 인증 사용 옵션 선택
 
 이전에 나열된 외부 인증 공급자뿐만 아니라 더욱 많은 외부 인증 공급자 사용에 대한 미들웨어를 제공하는 타사 패키지도 사용할 수 있습니다. 자세한 목록은 GitHub에서 [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) 리포지토리를 확인하세요.
 
@@ -128,13 +128,13 @@ Visual Studio에서 ASP.NET Core 웹 응용 프로그램 프로젝트를 만들 
 
 ## <a name="authenticating-with-bearer-tokens"></a>전달자 토큰을 사용한 인증
 
-ASP.NET Core ID(또는 ID 및 외부 인증 공급자)를 사용한 인증은 사용자 정보를 쿠키에 저장하는 것이 적합한 다수의 웹 응용 프로그램 시나리오에 대해 효과적으로 작동합니다. 그러나 다른 시나리오의 경우 쿠키는 데이터를 유지하고 전송하는 자연스러운 방법이 아닙니다.
+ASP.NET Core ID(또는 ID 및 외부 인증 공급자)를 사용한 인증은 사용자 정보를 쿠키에 저장하는 것이 적합한 다수의 웹 애플리케이션 시나리오에 대해 효과적으로 작동합니다. 그러나 다른 시나리오의 경우 쿠키는 데이터를 유지하고 전송하는 자연스러운 방법이 아닙니다.
 
-예를 들어 SPA(단일 페이지 응용 프로그램), 네이티브 클라이언트 또는 다른 웹 API에서 액세스할 수 있는 RESTful 엔드포인트를 노출하는 ASP.NET Core 웹 API에서는 쿠키 대신 일반적으로 전달자 토큰 인증을 사용하는 것이 좋습니다. 이러한 유형의 응용 프로그램은 쿠키와는 작동하지 않지만 간편하게 전달자 토큰을 검색하여 후속 요청의 인증 헤더에 포함합니다. 토큰 인증을 사용하기 위해 ASP.NET Core는 [OAuth 2.0](https://oauth.net/2/) 및 [OpenID Connect](https://openid.net/connect/) 사용에 대한 몇 가지 옵션을 지원합니다.
+예를 들어 SPA(단일 페이지 애플리케이션), 네이티브 클라이언트 또는 다른 웹 API에서 액세스할 수 있는 RESTful 엔드포인트를 노출하는 ASP.NET Core 웹 API에서는 쿠키 대신 일반적으로 전달자 토큰 인증을 사용하는 것이 좋습니다. 이러한 유형의 애플리케이션은 쿠키와는 작동하지 않지만 간편하게 전달자 토큰을 검색하여 후속 요청의 인증 헤더에 포함합니다. 토큰 인증을 사용하기 위해 ASP.NET Core는 [OAuth 2.0](https://oauth.net/2/) 및 [OpenID Connect](https://openid.net/connect/) 사용에 대한 몇 가지 옵션을 지원합니다.
 
 ## <a name="authenticating-with-an-openid-connect-or-oauth-20-identity-provider"></a>OpenID Connect 또는 OAuth 2.0 ID 공급자를 사용한 인증
 
-사용자 정보가 Azure Active Directory 또는 OpenID Connect 또는 OAuth 2.0을 지원하는 다른 ID 솔루션에 저장되는 경우 Microsoft.AspNetCore.Authentication.OpenIdConnect 패키지를 사용하여 OpenID Connect 워크플로를 통해 인증할 수 있습니다. 예를 들어 [Azure Active Directory에 대해 인증](https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/)하기 위해 ASP.NET Core 웹 응용 프로그램에서는 다음 예제에 표시된 것처럼 해당 패키지의 미들웨어를 사용할 수 있습니다.
+사용자 정보가 Azure Active Directory 또는 OpenID Connect 또는 OAuth 2.0을 지원하는 다른 ID 솔루션에 저장되는 경우 Microsoft.AspNetCore.Authentication.OpenIdConnect 패키지를 사용하여 OpenID Connect 워크플로를 통해 인증할 수 있습니다. 예를 들어 [Azure Active Directory에 대해 인증](https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/)하기 위해 ASP.NET Core 웹 애플리케이션에서는 다음 예제에 표시된 것처럼 해당 패키지의 미들웨어를 사용할 수 있습니다.
 
 ```csharp
 // Configure the OWIN pipeline to use OpenID Connect auth
@@ -148,9 +148,9 @@ app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
 });
 ```
 
-구성 값은 응용 프로그램이 [Azure AD 클라이언트로 등록](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#basics-of-registering-an-application-in-azure-ad)될 때 생성되는 Azure Active Directory 값입니다. Azure Active Directory를 통해 인증된 사용자를 모두 인증해야 하는 경우 응용 프로그램에서 여러 마이크로 서비스 간에 단일 클라이언트 ID를 공유할 수 있습니다.
+구성 값은 애플리케이션이 [Azure AD 클라이언트로 등록](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#basics-of-registering-an-application-in-azure-ad)될 때 생성되는 Azure Active Directory 값입니다. Azure Active Directory를 통해 인증된 사용자를 모두 인증해야 하는 경우 애플리케이션에서 여러 마이크로 서비스 간에 단일 클라이언트 ID를 공유할 수 있습니다.
 
-이 워크플로를 사용하면 모든 사용자 정보 저장소 및 인증이 Azure Active Directory에서 처리되므로 ASP.NET Core ID 미들웨어가 필요하지 않습니다.
+이 워크플로를 사용하면 모든 사용자 정보 스토리지 및 인증이 Azure Active Directory에서 처리되므로 ASP.NET Core ID 미들웨어가 필요하지 않습니다.
 
 ## <a name="issuing-security-tokens-from-an-aspnet-core-service"></a>ASP.NET Core 서비스에서 보안 토큰 발급
 
@@ -158,7 +158,7 @@ app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
 
 [IdentityServer4](https://github.com/IdentityServer/IdentityServer4) 및 [OpenIddict](https://github.com/openiddict/openiddict-core)는 ASP.NET Core ID와 쉽게 통합하여 ASP.NET Core 서비스에서 보안 토큰을 발급할 수 있도록 허용하는 OpenID Connect 공급자입니다. [IdentityServer4 설명서](https://identityserver4.readthedocs.io/en/release/)에는 라이브러리 사용에 대한 자세한 지침이 있습니다. 그러나 IdentityServer4를 사용하여 토큰을 발급하는 기본 단계는 다음과 같습니다.
 
-1.  Startup.Configure 메서드에서 app.UseIdentityServer를 호출하여 IdentityServer4를 응용 프로그램의 HTTP 요청 처리 파이프라인에 추가합니다. 이렇게 하면 라이브러리 서버에서 /connect/token과 같은 OpenID Connect 및 OAuth2 엔드포인트에 요청할 수 있습니다.
+1.  Startup.Configure 메서드에서 app.UseIdentityServer를 호출하여 IdentityServer4를 애플리케이션의 HTTP 요청 처리 파이프라인에 추가합니다. 이렇게 하면 라이브러리 서버에서 /connect/token과 같은 OpenID Connect 및 OAuth2 엔드포인트에 요청할 수 있습니다.
 
 2.  services.AddIdentityServer를 호출하여 Startup.ConfigureServices에서 IdentityServer4를 구성합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Storeadm.exe(격리된 저장소 도구)
+title: Storeadm.exe(격리된 스토리지 도구)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Storeadm.exe
@@ -17,8 +17,8 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
 ms.locfileid: "33410269"
 ---
-# <a name="storeadmexe-isolated-storage-tool"></a>Storeadm.exe(격리된 저장소 도구)
-격리된 저장소 도구를 사용하면 현재 사용자의 기존 저장소를 모두 표시하거나 제거할 수 있습니다.  
+# <a name="storeadmexe-isolated-storage-tool"></a>Storeadm.exe(격리된 스토리지 도구)
+격리된 스토리지 도구를 사용하면 현재 사용자의 기존 저장소를 모두 표시하거나 제거할 수 있습니다.  
   
  이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
   
@@ -35,7 +35,7 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
 |옵션|설명|  
 |------------|-----------------|  
 |**/h**[**elp**]|이 도구의 명령 구문 및 옵션을 표시합니다.|  
-|**/list**|현재 사용자의 기존 저장소를 모두 표시합니다. 여기에는 해당 사용자가 실행한 모든 응용 프로그램 또는 어셈블리의 저장소가 포함됩니다.|  
+|**/list**|현재 사용자의 기존 저장소를 모두 표시합니다. 여기에는 해당 사용자가 실행한 모든 애플리케이션 또는 어셈블리의 저장소가 포함됩니다.|  
 |**/machine**|컴퓨터 저장소를 선택합니다. 이 옵션을 **/list** 또는 **/remove** 옵션과 함께 사용하면 해당 작업이 컴퓨터 저장소에 적용되도록 지정할 수 있습니다.<br /><br /> .NET Framework 2.0에 새로 추가된 옵션입니다.|  
 |**/quiet**|자동 모드를 지정합니다. 오류 메시지만 표시되도록 자세한 정보는 출력하지 않습니다.|  
 |**/remove**|현재 사용자의 기존 저장소를 모두 영구 제거합니다.|  
@@ -47,7 +47,7 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
   
  **/list** 옵션 및 **/remove** 옵션은 일반적으로 한 번에 하나만 사용되지만 둘 이상의 옵션을 지정한 경우에는 명령줄에 표시된 순서대로 수행됩니다.  
   
- 응용 프로그램에서는 두 개의 사용자용 저장소 중 하나 또는 컴퓨터 저장소를 선택하여 저장할 수 있습니다.  
+ 애플리케이션에서는 두 개의 사용자용 저장소 중 하나 또는 컴퓨터 저장소를 선택하여 저장할 수 있습니다.  
   
 -   로컬 저장소는 해당 사용자에 대해 사용자 데이터 로밍이 사용되는 경우에도 로밍되지 않는 위치에 있습니다(Windows 2000 이상의 경우).  
   

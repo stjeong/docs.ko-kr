@@ -37,7 +37,7 @@ datTyp = Type.GetTypeCode(myObject.GetType())
   
  `Object` 데이터 형식은 참조 형식입니다. 그러나 Visual Basic 처리는 `Object` 값 형식의 데이터를 참조할 때 값 형식으로 변수입니다.  
   
-## <a name="storage"></a>저장소  
+## <a name="storage"></a>스토리지  
  참조 하는 데이터 형식에 관계 없이 `Object` 자체 이지만 값에 대 한 포인터 대신 변수 데이터 값이 포함 되지 않습니다. 항상 컴퓨터 메모리에 4 바이트를 사용 하지만이 변수의 값을 나타내는 데이터 저장소를 다루지 않습니다. 데이터를 찾는 데 포인터를 사용 하는 코드로 인해 `Object` 값 형식을 있는 변수는 형식화 된 변수 보다 명시적으로 액세스 하려면 다소 느립니다.  
   
 ## <a name="programming-tips"></a>프로그래밍 팁  

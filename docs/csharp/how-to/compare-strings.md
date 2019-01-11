@@ -116,7 +116,7 @@ Windows에서 언어 비교를 서수 비교로 변경하면 "cop", "coop" 및 "
 
 ## <a name="reference-equality-and-string-interning"></a>참조 동일성과 문자열 인터닝
 
-샘플 중에 <xref:System.Object.ReferenceEquals%2A>를 사용한 것은 없습니다. 이 메서드는 두 문자열이 동일한 개체인지 확인합니다. 이로 인해 문자열 비교 시 일관성 없는 결과가 발생할 수 있습니다. 다음 예에서는 C#의 *문자열 인터닝* 기능을 보여줍니다. 프로그램이 두 개 이상의 동일 문자열 변수를 선언할 경우 컴파일러는 변수를 모두 같은 위치에 저장합니다. <xref:System.Object.ReferenceEquals%2A> 메서드를 호출하여 두 문자열이 실제로 메모리에서 같은 개체를 참조하는지 확인할 수 있습니다. 인터닝을 방지하려면 <xref:System.String.Copy%2A?displayProperty=nameWithType> 메서드를 사용합니다. 복사본이 생성된 후 두 개의 문자열은 동일한 값을 가지더라도 다른 위치에 저장됩니다. `a`와 `b`가 *인터닝*되었음을, 즉 동일한 저장소를 공유한다는 것을 보여주는 다음 샘플을 실행합니다. 문자열 `a`와 `c`는 그렇지 않습니다.
+샘플 중에 <xref:System.Object.ReferenceEquals%2A>를 사용한 것은 없습니다. 이 메서드는 두 문자열이 동일한 개체인지 확인합니다. 이로 인해 문자열 비교 시 일관성 없는 결과가 발생할 수 있습니다. 다음 예에서는 C#의 *문자열 인터닝* 기능을 보여줍니다. 프로그램이 두 개 이상의 동일 문자열 변수를 선언할 경우 컴파일러는 변수를 모두 같은 위치에 저장합니다. <xref:System.Object.ReferenceEquals%2A> 메서드를 호출하여 두 문자열이 실제로 메모리에서 같은 개체를 참조하는지 확인할 수 있습니다. 인터닝을 방지하려면 <xref:System.String.Copy%2A?displayProperty=nameWithType> 메서드를 사용합니다. 복사본이 생성된 후 두 개의 문자열은 동일한 값을 가지더라도 스토리지 위치가 다릅니다. `a`와 `b`가 *인터닝*되었음을, 즉 동일한 저장소를 공유한다는 것을 보여주는 다음 샘플을 실행합니다. 문자열 `a`와 `c`는 그렇지 않습니다.
 
 [!code-csharp-interactive[Demonstrating string interning](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#9)]
 

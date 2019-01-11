@@ -1,5 +1,5 @@
 ---
-title: '방법: 격리된 저장소의 파일 및 디렉터리 삭제'
+title: '방법: 격리된 스토리지의 파일 및 디렉터리 삭제'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -26,12 +26,12 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/09/2018
 ms.locfileid: "44214565"
 ---
-# <a name="how-to-delete-files-and-directories-in-isolated-storage"></a>방법: 격리된 저장소의 파일 및 디렉터리 삭제
-격리된 저장소 파일 내에서 디렉터리 및 파일을 삭제할 수 있습니다. 저장소 내에서 파일 및 디렉터리 이름은 운영 체제에 종속적이며 가상 파일 시스템의 루트와 관련하여 지정됩니다. Windows 운영 체제에서는 대/소문자를 구분하지 않습니다.  
+# <a name="how-to-delete-files-and-directories-in-isolated-storage"></a>방법: 격리된 스토리지의 파일 및 디렉터리 삭제
+격리된 스토리지 파일 내에서 디렉터리 및 파일을 삭제할 수 있습니다. 저장소 내에서 파일 및 디렉터리 이름은 운영 체제에 종속적이며 가상 파일 시스템의 루트와 관련하여 지정됩니다. Windows 운영 체제에서는 대/소문자를 구분하지 않습니다.  
   
  <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType> 클래스는 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> 및 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A>이라는 두 가지 메서드를 제공하여 디렉터리와 파일을 삭제합니다. 존재하지 않는 파일 또는 디렉터리를 삭제하려고 하면 <xref:System.IO.IsolatedStorage.IsolatedStorageException> 예외가 throw됩니다. 이름에 와일드 카드 문자를 포함하는 경우 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A>는 <xref:System.IO.IsolatedStorage.IsolatedStorageException> 예외를 throw하고, <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A>은 <xref:System.ArgumentException> 예외를 throw합니다.  
   
- 디렉터리에 파일 또는 하위 디렉터리가 포함된 경우에는 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> 메서드가 실패합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> 및 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> 메서드를 사용하여 기존 파일 및 디렉터리를 검색할 수 있습니다. 저장소의 가상 파일 시스템을 검색하는 방법에 대한 자세한 내용은 [방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)를 참조하세요.  
+ 디렉터리에 파일 또는 하위 디렉터리가 포함된 경우에는 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> 메서드가 실패합니다. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> 및 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> 메서드를 사용하여 기존 파일 및 디렉터리를 검색할 수 있습니다. 저장소의 가상 파일 시스템을 검색하는 방법에 대한 자세한 내용은 [방법: 격리된 스토리지의 기존 파일 및 디렉터리 찾기](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 코드 예제에서는 여러 디렉터리 및 파일을 생성한 후 삭제합니다.  

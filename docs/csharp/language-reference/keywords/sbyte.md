@@ -65,7 +65,7 @@ SampleMethod((sbyte)5);
 ## <a name="conversions"></a>변환  
  `sbyte`에서 [short](../../../csharp/language-reference/keywords/short.md), [int](../../../csharp/language-reference/keywords/int.md), [long](../../../csharp/language-reference/keywords/long.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md) 또는 [decimal](../../../csharp/language-reference/keywords/decimal.md)로 미리 정의된 암시적 변환이 있습니다.  
   
- 더 큰 저장소 크기의 비리터럴 숫자 형식을 `sbyte`로 암시적으로 변환할 수는 없습니다(정수 형식의 저장소 크기는 [정수 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md) 참조). 예를 들어 다음 두 가지 `sbyte` 변수 `x` 및 `y`를 고려해 보세요.  
+ 더 큰 스토리지 크기의 비리터럴 숫자 형식을 `sbyte`로 암시적으로 변환할 수는 없습니다(정수 형식의 스토리지 크기는 [정수 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md) 참조). 예를 들어 다음 두 가지 `sbyte` 변수 `x` 및 `y`를 고려해 보세요.  
   
 ```csharp  
 sbyte x = 10, y = 20;  
@@ -83,7 +83,7 @@ sbyte z = x + y;   // Error: conversion from int to sbyte
 sbyte z = (sbyte)(x + y);   // OK: explicit conversion  
 ```  
   
- 그러나 대상 변수에 동일한 저장소 크기 또는 더 큰 저장소 크기가 있는 다음 문을 사용할 수 있습니다.  
+ 그러나 대상 변수에 동일한 스토리지 크기 또는 더 큰 스토리지 크기가 있는 다음 명령문을 사용할 수 있습니다.  
   
 ```csharp
 sbyte x = 10, y = 20;  

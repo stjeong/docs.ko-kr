@@ -23,7 +23,7 @@ ms.locfileid: "33587533"
  텍스트 파일로 작업할 때 발생하는 가장 일반적인 문제에는 보안 예외, 파일 인코딩, 잘못된 경로 등이 있습니다.  
   
 ### <a name="security-exceptions"></a>보안 예외  
- 보안 오류가 발생하면 <xref:System.Security.SecurityException>이 throw됩니다. 이 예외는 사용자에게 필요한 사용 권한이 없어서 발생하는 경우가 많으며, 격리된 저장소의 파일로 작업하거나 사용 권한을 추가하면 해결할 수 있습니다.  
+ 보안 오류가 발생하면 <xref:System.Security.SecurityException>이 throw됩니다. 이 예외는 사용자에게 필요한 사용 권한이 없어서 발생하는 경우가 많으며, 격리된 스토리지의 파일로 작업하거나 사용 권한을 추가하면 해결할 수 있습니다.  
   
 ### <a name="file-encodings"></a>파일 인코딩  
  문자 인코딩이라고도 하는 파일 인코딩은 텍스트 처리 시 문자를 나타내는 방법을 지정합니다. 텍스트 파일의 예기치 않은 문자는 잘못된 인코딩에서 발생할 수 있습니다. 처리할 수 있거나 없는 언어 문자를 기준으로 대부분의 파일에서 특정 인코딩이 다른 인코딩보다 선호될 수 있지만, 일반적으로 유니코드가 선호됩니다. 자세한 내용은 [파일 인코딩](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md) 및 <xref:System.Text.Encoding>을 참조하세요.  

@@ -60,7 +60,7 @@ ms.locfileid: "33592433"
   
 -   [관련 항목](#related_topics)  
   
- Microsoft 서비스, 구성 요소 및 응용 프로그램에 암호화 보안을 추가할 수 있도록 하는 도구 및 암호화에 대한 자세한 내용은 이 설명서의 Win32 및 COM 개발, 보안 섹션을 참조하세요.  
+ Microsoft 서비스, 구성 요소 및 애플리케이션에 암호화 보안을 추가할 수 있도록 하는 도구 및 암호화에 대한 자세한 내용은 이 설명서의 Win32 및 COM 개발, 보안 섹션을 참조하세요.  
   
 <a name="primitives"></a>   
 ## <a name="cryptographic-primitives"></a>암호화 기본  
@@ -291,7 +291,7 @@ ms.locfileid: "33592433"
   
 <a name="cng"></a>   
 ## <a name="cryptography-next-generation-cng-classes"></a>CNG(Cryptography Next Generation) 클래스  
- CNG(Cryptography Next Generation) 클래스는 네이티브 CNG 함수 관련 관리 래퍼를 제공합니다. CNG는 CryptoAPI를 대체합니다. 이러한 클래스의 이름에는 "Cng"가 포함되어 있습니다. CNG 래퍼 클래스의 핵심은 CNG 키의 저장 및 사용을 추상화하는 <xref:System.Security.Cryptography.CngKey> 키 컨테이너 클래스입니다. 이 클래스를 통해 키 쌍 또는 공개 키를 안전하게 저장하고 간단한 문자열 이름을 사용하여 참조할 수 있습니다. 타원 곡선 기반 <xref:System.Security.Cryptography.ECDsaCng> 서명 클래스 및 <xref:System.Security.Cryptography.ECDiffieHellmanCng> 암호화 클래스는 <xref:System.Security.Cryptography.CngKey> 개체를 사용할 수 있습니다.  
+ CNG(Cryptography Next Generation) 클래스는 네이티브 CNG 함수 관련 관리 래퍼를 제공합니다. CNG는 CryptoAPI를 대체합니다. 이러한 클래스의 이름에는 "Cng"가 포함되어 있습니다. CNG 래퍼 클래스의 핵심은 CNG 키의 스토리지 및 사용을 추상화하는 <xref:System.Security.Cryptography.CngKey> 키 컨테이너 클래스입니다. 이 클래스를 통해 키 쌍 또는 공개 키를 안전하게 저장하고 간단한 문자열 이름을 사용하여 참조할 수 있습니다. 타원 곡선 기반 <xref:System.Security.Cryptography.ECDsaCng> 서명 클래스 및 <xref:System.Security.Cryptography.ECDiffieHellmanCng> 암호화 클래스는 <xref:System.Security.Cryptography.CngKey> 개체를 사용할 수 있습니다.  
   
  <xref:System.Security.Cryptography.CngKey> 클래스는 키 열기, 생성, 삭제, 내보내기 등의 다양한 추가 작업에 사용됩니다. 또한 네이티브 함수를 직접 호출할 때 사용할 기본 키 핸들에 대한 액세스를 제공합니다.  
   

@@ -20,9 +20,9 @@ ms.lasthandoff: 10/27/2018
 ms.locfileid: "50188302"
 ---
 # <a name="file-and-stream-io"></a>파일 및 스트림 I/O
-파일 및 스트림 I/O(입/출력)는 저장 매체로 데이터를 전송하거나 저장 매체로부터 데이터를 전송 받습니다. .NET Framework에서 `System.IO` 네임스페이스는 데이터 스트림과 파일에서 읽기 및 쓰기를 동기적 및 비동기적으로 사용하는 형식을 포함합니다. 이러한 네임스페이스는 파일의 압축 및 압축 풀기 기능을 수행하는 형식 및 파이프 및 직렬 포트를 통한 통신을 가능하도록 하는 형식을 포함합니다.  
+파일 및 스트림 I/O(입/출력)는 스토리지 매체로 데이터를 전송하거나 스토리지 매체로부터 데이터를 전송 받습니다. .NET Framework에서 `System.IO` 네임스페이스는 데이터 스트림과 파일에서 읽기 및 쓰기를 동기적 및 비동기적으로 사용하는 형식을 포함합니다. 이러한 네임스페이스는 파일의 압축 및 압축 풀기 기능을 수행하는 형식 및 파이프 및 직렬 포트를 통한 통신을 가능하도록 하는 형식을 포함합니다.  
   
- 파일은 정돈되고 이름이 지정된 컬렉션의 바이트이며, 이 컬렉션에는 영구 저장소가 있습니다. 사용자가 파일을 사용할 때, 디렉터리 경로, 디스크 저장소 및 파일과 디렉터리 이름을 다룹니다. 반대로, 스트림은 여러 가지 저장 매체 중 하나인 백업 저장소(예를 들어, 디스크 또는 메모리)에서 읽고 사용할 수 있는 바이트 시퀀스입니다. 디스크 외에 여러 백업 저장소가 존재하듯이, 파이프 스트림 외에 여러 종류의 스트림, 예를 들어 네트워크, 메모리, 파일 스트림도 존재합니다.  
+ 파일은 정돈되고 이름이 지정된 컬렉션의 바이트이며, 이 컬렉션에는 영구 스토리지가 있습니다. 사용자가 파일을 사용할 때, 디렉터리 경로, 디스크 스토리지 및 파일과 디렉터리 이름을 다룹니다. 반대로, 스트림은 여러 가지 스토리지 매체 중 하나인 백업 저장소(예를 들어, 디스크 또는 메모리)에서 읽고 쓸 수 있는 바이트 시퀀스입니다. 디스크 외에 여러 백업 저장소가 존재하듯이, 파이프 스트림 외에 여러 종류의 스트림, 예를 들어 네트워크, 메모리, 파일 스트림도 존재합니다.  
   
 ## <a name="files-and-directories"></a>파일 및 디렉터리  
  사용자는 이 형식들을 <xref:System.IO?displayProperty=nameWithType> 네임스페이스에서 파일 및 디렉터리와 상호 작용하기 위해 사용할 수 있습니다. 예를 들어, 파일 및 디렉터리에 대한 속성을 가져오고 설정할 수 있고, 검색 조건에 따라 파일 및 디렉터리의 컬렉션을 검색할 수 있습니다.  
@@ -94,14 +94,14 @@ ms.locfileid: "50188302"
  [방법: 파일의 텍스트 읽기](../../../docs/standard/io/how-to-read-text-from-a-file.md), [방법: 파일에 텍스트 쓰기](../../../docs/standard/io/how-to-write-text-to-a-file.md), [방법: 문자열에서 문자 읽기](../../../docs/standard/io/how-to-read-characters-from-a-string.md) 및 [방법: 문자열에 문자 쓰기](../../../docs/standard/io/how-to-write-characters-to-a-string.md)를 참조하세요.  
   
 ## <a name="asynchronous-io-operations"></a>비동기 I/O 작업  
- 많은 양의 데이터를 읽거나 쓸 때 리소스가 많이 사용될 수 있습니다. 이러한 작업은 응용 프로그램 사용자에게 응답을 유지해야 하는 경우 비동기적으로 수행해야 합니다. 동기 I/O 작업에서 UI 스레드는 리소스 집약적인 작업이 완료될 때까지 차단됩니다.  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 개발할 때 비동기 I/O 작업을 사용하여 응용 프로그램이 작동을 멈춘 것처럼 보이지 않게 해줍니다.  
+ 많은 양의 데이터를 읽거나 쓸 때 리소스가 많이 사용될 수 있습니다. 이러한 작업은 애플리케이션 사용자에게 응답을 유지해야 하는 경우 비동기적으로 수행해야 합니다. 동기 I/O 작업에서 UI 스레드는 리소스 집약적인 작업이 완료될 때까지 차단됩니다.  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 개발할 때 비동기 I/O 작업을 사용하여 응용 프로그램이 작동을 멈춘 것처럼 보이지 않게 해줍니다.  
   
  비동기 멤버의 이름에는 `Async`가 포함됩니다(예: <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.FlushAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A> 및 <xref:System.IO.Stream.WriteAsync%2A> 메서드). 이러한 메서드는 `async` 및 `await` 키워드와 함께 사용합니다.  
   
  자세한 내용은 [비동기 파일 I/O](../../../docs/standard/io/asynchronous-file-i-o.md)를 참조하세요.  
   
 ## <a name="compression"></a>압축  
- 압축은 저장소에 맞춰 파일 크기를 줄이는 프로세스를 가리킵니다. 압축 해제는 압축된 파일의 내용을 사용 가능한 형식으로 추출하는 프로세스입니다. <xref:System.IO.Compression?displayProperty=nameWithType> 네임스페이스는 파일 및 스트림을 압축하고 압축을 푸는 형식을 포함합니다.  
+ 압축은 스토리지에 맞춰 파일 크기를 줄이는 프로세스를 가리킵니다. 압축 해제는 압축된 파일의 내용을 사용 가능한 형식으로 추출하는 프로세스입니다. <xref:System.IO.Compression?displayProperty=nameWithType> 네임스페이스는 파일 및 스트림을 압축하고 압축을 푸는 형식을 포함합니다.  
   
  다음 클래스는 파일과 스트림을 압축하고 압축 해제할 때 자주 사용됩니다.  
   
@@ -119,12 +119,12 @@ ms.locfileid: "50188302"
   
  [방법: 파일 압축 및 추출](../../../docs/standard/io/how-to-compress-and-extract-files.md)을 참조하세요.  
   
-## <a name="isolated-storage"></a>격리된 저장소  
- 격리된 저장소는 코드와 저장된 데이터를 연결하는 표준화된 방법을 정의하여 격리와 안전을 제공하는 데이터 저장소 메커니즘입니다. 저장소는 사용자, 어셈블리 및 도메인(옵션)에 의해 격리된 가상 파일 시스템을 제공합니다. 격리된 저장소는 응용 프로그램에 사용자 파일을 액세스할 수 있는 권한이 없는 경우 특히 유용합니다. 컴퓨터의 보안 정책에 의해 제어되는 방식으로 응용 프로그램에 대한 설정이나 파일을 저장할 수 있습니다.  
+## <a name="isolated-storage"></a>격리된 스토리지  
+ 격리된 스토리지는 코드와 저장된 데이터를 연결하는 표준화된 방법을 정의하여 격리와 안전을 제공하는 데이터 스토리지 메커니즘입니다. 스토리지는 사용자, 어셈블리 및 도메인(옵션)에 의해 격리된 가상 파일 시스템을 제공합니다. 격리된 저장소는 애플리케이션에 사용자 파일을 액세스할 수 있는 권한이 없는 경우 특히 유용합니다. 컴퓨터의 보안 정책에 의해 제어되는 방식으로 애플리케이션에 대한 설정이나 파일을 저장할 수 있습니다.  
   
- 격리된 저장소는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)]앱에 사용할 수 없습니다. 대신 <xref:Windows.Storage?displayProperty=nameWithType>네임스페이스의 응용 프로그램 데이터 클래스를 사용합니다. 자세한 내용은 [응용 프로그램 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917%28v=win.10%29)를 참조하세요.  
+ 격리된 저장소는 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)]앱에 사용할 수 없습니다. 대신 <xref:Windows.Storage?displayProperty=nameWithType>네임스페이스의 애플리케이션 데이터 클래스를 사용합니다. 자세한 내용은 [애플리케이션 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917%28v=win.10%29)를 참조하세요.  
   
- 다음의 클래스는 격리된 저장소를 구현할 때 자주 사용됩니다.  
+ 다음의 클래스는 격리된 스토리지를 구현할 때 자주 사용됩니다.  
   
 -   <xref:System.IO.IsolatedStorage.IsolatedStorage> – 격리된 저장소 구현을 위한 기본 클래스를 제공합니다.  
   
@@ -141,7 +141,7 @@ ms.locfileid: "50188302"
   
 -   특히 파일 작업에 관련된 형식(예: <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> 및 <xref:System.IO.DirectoryInfo>)은 [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]에 포함되지 않습니다. 대신 <xref:Windows.Storage.StorageFile> 및 <xref:Windows.Storage.StorageFolder> 등 [!INCLUDE[wrt](../../../includes/wrt-md.md)]의 <xref:Windows.Storage?displayProperty=nameWithType> 네임스페이스에 있는 유형을 사용합니다.  
   
--   격리된 저장소는 사용할 수 없습니다. 대신에 [응용 프로그램 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 사용합니다.  
+-   격리된 저장소는 사용할 수 없습니다. 대신에 [애플리케이션 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 사용합니다.  
   
 -   비동기 메서드(예: <xref:System.IO.Stream.ReadAsync%2A> 및 <xref:System.IO.Stream.WriteAsync%2A>)를 사용하여 UI 스레드를 차단하지 못하게 합니다.  
   
@@ -154,9 +154,9 @@ ms.locfileid: "50188302"
 ## <a name="io-and-security"></a>I/O와 보안  
  <xref:System.IO?displayProperty=nameWithType> 네임스페이스에서 클래스를 사용할 때, 파일 및 디렉터리에 대한 액세스를 제어하기 위해 액세스 제어 목록(ACL)과 같은 운영 체제 보안 요구 사항을 따라야 합니다. <xref:System.Security.Permissions.FileIOPermission> 요구 사항에 이 요구 사항이 추가됩니다. ACL은 프로그래밍 방식으로 관리할 수 있습니다. 자세한 내용은 [방법: Access Control 목록 항목 추가 또는 제거](../../../docs/standard/io/how-to-add-or-remove-access-control-list-entries.md)를 참조하세요.  
   
- 기본 보안 정책은 인터넷 또는 인트라넷 응용 프로그램에서 사용자의 컴퓨터에 있는 파일의 액세스를 방지합니다. 따라서 실제 파일의 경로를 인터넷이나 인트라넷을 통해 다운로드되는 코드를 작성할 때 필요한 I/O 클래스를 사용하지 마세요. 대신에 기존의 .NET Framework 응용 프로그램의 경우 [격리된 저장소](../../../docs/standard/io/isolated-storage.md)를 사용하거나 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램의 경우 [응용 프로그램 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 사용합니다.  
+ 기본 보안 정책은 인터넷 또는 인트라넷 애플리케이션에서 사용자의 컴퓨터에 있는 파일의 액세스를 방지합니다. 따라서 실제 파일의 경로를 인터넷이나 인트라넷을 통해 다운로드되는 코드를 작성할 때 필요한 I/O 클래스를 사용하지 마세요. 대신에 기존의 .NET Framework 애플리케이션의 경우 [격리된 저장소](../../../docs/standard/io/isolated-storage.md)를 사용하거나 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 애플리케이션의 경우 [애플리케이션 데이터](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10))를 사용합니다.  
   
- 스트림이 생성될 때만 보안 검사가 수행됩니다. 따라서 스트림을 열지 말고, 이것을 신뢰할 수 없는 코드 또는 응용 프로그램 도메인으로 전달합니다.  
+ 스트림이 생성될 때만 보안 검사가 수행됩니다. 따라서 스트림을 열지 말고, 이것을 신뢰할 수 없는 코드 또는 애플리케이션 도메인으로 전달합니다.  
   
 ## <a name="related-topics"></a>관련 항목  
   
@@ -170,7 +170,7 @@ ms.locfileid: "50188302"
   
 -   [격리된 저장소](../../../docs/standard/io/isolated-storage.md)  
   
- 코드와 저장된 데이터를 연결하는 표준화된 방법을 정의하여 격리와 안전을 제공하는 데이터 저장소 메커니즘에 대해 설명합니다.  
+ 코드와 저장된 데이터를 연결하는 표준화된 방법을 정의하여 격리와 안전을 제공하는 데이터 스토리지 메커니즘에 대해 설명합니다.  
   
 -   [파이프](../../../docs/standard/io/pipe-operations.md)  
   

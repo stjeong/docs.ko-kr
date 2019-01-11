@@ -45,9 +45,9 @@ C#에서는 많은 연산자를 제공하며, 이러한 연산자는 식에서 �
   
  [a&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md) – 집계 개체 인덱싱  
    
- [x++](../../../csharp/language-reference/operators/increment-operator.md) – 후위 증가. x의 값을 반환하고 1 더 큰 x 값(일반적으로 정수 1을 더함)으로 저장소 위치를 업데이트합니다.  
+ [x++](../../../csharp/language-reference/operators/increment-operator.md) – 후위 증가. x의 값을 반환하고 1보다 큰 x 값(일반적으로 정수 1을 더함)으로 스토리지 위치를 업데이트합니다.  
   
- [x--](../../../csharp/language-reference/operators/decrement-operator.md) –  후위 감소. x의 값을 반환하고 1 더 작은 x 값(일반적으로 정수 1을 뺌)으로 저장소 위치를 업데이트합니다.  
+ [x--](../../../csharp/language-reference/operators/decrement-operator.md) –  후위 감소. x의 값을 반환하고 1보다 작은 x 값(일반적으로 정수 1을 뺌)으로 스토리지 위치를 업데이트합니다.  
   
  [new](../../../csharp/language-reference/keywords/new-operator.md) – 형식 인스턴스화.  
   
@@ -76,9 +76,9 @@ C#에서는 많은 연산자를 제공하며, 이러한 연산자는 식에서 �
   
  [~x](../../../csharp/language-reference/operators/bitwise-complement-operator.md) – 비트 보수  
   
- [++x](../../../csharp/language-reference/operators/increment-operator.md) – 전위 증가 1 더 큰 x 값(일반적으로 정수 1을 더함)으로 저장소 위치를 업데이트한 후 x의 값을 반환합니다.  
+ [++x](../../../csharp/language-reference/operators/increment-operator.md) – 전위 증가 1보다 큰 x 값(일반적으로 정수 1을 더함)으로 스토리지 위치를 업데이트한 후 x의 값을 반환합니다.  
   
- [--x](../../../csharp/language-reference/operators/decrement-operator.md) – 전위 감소 1보다 작은 x 값(일반적으로 정수 1을 뺌)으로 저장소 위치를 업데이트한 후 x의 값을 반환합니다.  
+ [--x](../../../csharp/language-reference/operators/decrement-operator.md) – 전위 감소 1보다 작은 x 값(일반적으로 정수 1을 뺌)으로 스토리지 위치를 업데이트한 후 x의 값을 반환합니다.  
   
  [(T)x](../../../csharp/language-reference/operators/invocation-operator.md) – 형식 캐스팅  
   

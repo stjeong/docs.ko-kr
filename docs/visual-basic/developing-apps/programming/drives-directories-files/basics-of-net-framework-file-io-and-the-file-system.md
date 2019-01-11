@@ -43,7 +43,7 @@ ms.locfileid: "53155027"
 ## <a name="types-of-streams"></a>스트림의 형식  
  [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]에서 스트림은 <xref:System.IO.Stream> 클래스로 표시되며, 이는 다른 모든 스트림에 대한 추상 클래스를 형성합니다. <xref:System.IO.Stream> 클래스의 인스턴스를 직접 만들 수는 없지만, 이 인스턴스가 구현하는 클래스 중 하나를 사용해야 합니다.  
   
- 많은 유형의 스트림이 있지만, 파일 I/O(입출력) 작업을 위해 가장 중요한 형식은 <xref:System.IO.FileStream> 클래스(파일 읽기 및 쓰기 방법 제공) 및 <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> 클래스(격리된 저장소에 파일과 디렉터리를 만드는 방법 제공)입니다. 파일 I/O 작업 시 사용할 수 있는 기타 스트림은 다음과 같습니다.  
+ 많은 유형의 스트림이 있지만, 파일 I/O(입출력) 작업을 위해 가장 중요한 형식은 <xref:System.IO.FileStream> 클래스(파일 읽기 및 쓰기 방법 제공) 및 <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> 클래스(격리된 스토리지에 파일과 디렉터리를 만드는 방법 제공)입니다. 파일 I/O 작업 시 사용할 수 있는 기타 스트림은 다음과 같습니다.  
   
 -   <xref:System.IO.BufferedStream>  
   
@@ -78,22 +78,22 @@ ms.locfileid: "53155027"
 |파일의 특성 확인|<xref:System.IO.FileAttributes>|  
   
 ## <a name="file-permissions"></a>파일 사용 권한  
- 파일 및 디렉터리에 대한 액세스 제어는 <xref:System.Security.Permissions.FileIOPermission> 클래스로 수행할 수 있습니다. 이는 기본적으로 ASPNET([!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] 및 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 설치 과정에서 생성됨)이라는 이름의 특수한 로컬 사용자 계정 컨텍스트 내에서 실행되는 Web Forms로 작업하는 개발자에게 특히 중요할 수 있습니다. 그러한 응용 프로그램 요청이 리소스에 액세스할 경우 ASPNET 사용자 계정은 제한된 권한을 갖게 되며, 따라서 웹 응용 프로그램에서 파일에 쓰기 등의 작업을 수행하지 못할 수 있습니다. 자세한 내용은 <xref:System.Security.Permissions.FileIOPermission>을 참조하세요.  
+ 파일 및 디렉터리에 대한 액세스 제어는 <xref:System.Security.Permissions.FileIOPermission> 클래스로 수행할 수 있습니다. 이는 기본적으로 ASPNET([!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] 및 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 설치 과정에서 생성됨)이라는 이름의 특수한 로컬 사용자 계정 컨텍스트 내에서 실행되는 Web Forms로 작업하는 개발자에게 특히 중요할 수 있습니다. 그러한 애플리케이션 요청이 리소스에 액세스할 경우 ASPNET 사용자 계정은 제한된 권한을 갖게 되며, 따라서 웹 애플리케이션에서 파일에 쓰기 등의 작업을 수행하지 못할 수 있습니다. 자세한 내용은 <xref:System.Security.Permissions.FileIOPermission>을 참조하세요.  
   
-## <a name="isolated-file-storage"></a>격리된 파일 저장소  
- 격리된 저장소는 사용자 또는 코드에 권한이 부족한 상태에서 파일로 작업할 때 발생하는 문제를 해결하기 위한 시도입니다. 격리된 저장소는 하나 이상의 저장소를 유지할 수 있는 데이터 구획을 각 사용자에게 할당합니다. 사용자 및 어셈블리를 기준으로 저장소를 서로 격리할 수 있습니다. 저장소를 만든 사용자 및 어셈블리만이 저장소에 액세스할 수 있습니다. 저장소는 완전한 가상 파일 시스템 역할을 합니다. 한 저장소 내에서 디렉터리와 파일을 만들고 조작할 수 있습니다.  
+## <a name="isolated-file-storage"></a>격리된 파일 스토리지  
+ 격리된 스토리지는 사용자 또는 코드에 권한이 부족한 상태에서 파일로 작업할 때 발생하는 문제를 해결하기 위한 시도입니다. 격리된 스토리지는 하나 이상의 스토리지를 유지할 수 있는 데이터 구획을 각 사용자에게 할당합니다. 사용자 및 어셈블리를 기준으로 저장소를 서로 격리할 수 있습니다. 저장소를 만든 사용자 및 어셈블리만이 저장소에 액세스할 수 있습니다. 저장소는 완전한 가상 파일 시스템 역할을 합니다. 한 저장소 내에서 디렉터리와 파일을 만들고 조작할 수 있습니다.  
   
- 다음 표에서는 격리된 파일 저장소와 일반적으로 관련된 작업을 보여 줍니다.  
+ 다음 표에서는 격리된 파일 스토리지와 일반적으로 관련된 작업을 보여 줍니다.  
   
 |대상|참조|
 |---|---|  
 |격리된 저장소 만들기|[방법: 격리된 저장소의 저장소 가져오기](../../../../standard/io/how-to-obtain-stores-for-isolated-storage.md)|  
 |격리된 저장소 열거|[방법: 격리된 저장소의 저장소 열거](../../../../standard/io/how-to-enumerate-stores-for-isolated-storage.md)|  
 |격리된 저장소 삭제|[방법: 격리된 저장소에서 저장소 삭제](../../../../standard/io/how-to-delete-stores-in-isolated-storage.md)|  
-|격리된 저장소에서 파일 또는 디렉터리 만들기|[방법: 격리된 저장소에 파일 및 디렉터리 만들기](../../../../standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|  
-|격리된 저장소에서 파일 찾기|[방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기](../../../../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|  
-|격리된 저장소에서 파일 읽기 또는 쓰기|[방법: 격리된 저장소의 파일 읽기 및 쓰기](../../../../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|  
-|격리된 저장소에서 파일 또는 디렉터리 삭제|[방법: 격리된 저장소의 파일 및 디렉터리 삭제](../../../../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 또는 디렉터리 만들기|[방법: 격리된 저장소에 파일 및 디렉터리 만들기](../../../../standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 찾기|[방법: 격리된 저장소의 기존 파일 및 디렉터리 찾기](../../../../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 읽기 또는 쓰기|[방법: 격리된 저장소의 파일 읽기 및 쓰기](../../../../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|  
+|격리된 스토리지에서 파일 또는 디렉터리 삭제|[방법: 격리된 저장소의 파일 및 디렉터리 삭제](../../../../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|  
   
 ## <a name="file-events"></a>파일 이벤트  
  <xref:System.IO.FileSystemWatcher> 구성 요소를 사용하면 네트워크 액세스 권한이 있는 컴퓨터나 시스템의 파일 및 디렉터리에서 변경 내용을 관찰할 수 있습니다. 예를 들어 파일이 수정되는 경우 변경이 발생했다는 경고를 사용자에게 보낼 수 있습니다. 변경이 일어나는 경우 하나 이상의 이벤트가 발생하고, 버퍼에 저장되고, 처리를 위해 <xref:System.IO.FileSystemWatcher> 구성 요소로 전달됩니다.  

@@ -22,7 +22,7 @@ Serialization은 개체를 저장하거나 메모리, 데이터베이스 또는 
 
 ### <a name="uses-for-serialization"></a>Serialization 용도
 
-Serialization을 사용하여 개발자는 개체의 상태를 저장하고 필요할 때 다시 만들어 개체 교환 뿐 아니라 개체의 저장 기능도 제공할 수 있습니다. Serialization을 통해 개발자는 웹 서비스를 통해 원격 응용 프로그램에 개체를 전송하거나, 한 도메인에서 다른 도메인으로 개체를 전달하거나, 방화벽을 통해 XML 문자열로 개체를 전달하거나, 응용 프로그램 간에 보안 또는 사용자별 정보를 유지 관리하는 등의 작업을 수행할 수 있습니다.
+Serialization을 사용하여 개발자는 개체의 상태를 저장하고 필요할 때 다시 만들어 개체 교환 뿐 아니라 개체의 스토리지 기능도 제공할 수 있습니다. Serialization을 통해 개발자는 웹 서비스를 통해 원격 애플리케이션에 개체를 전송하거나, 한 도메인에서 다른 도메인으로 개체를 전달하거나, 방화벽을 통해 XML 문자열로 개체를 전달하거나, 애플리케이션 간에 보안 또는 사용자별 정보를 유지 관리하는 등의 작업을 수행할 수 있습니다.
 
 ### <a name="making-an-object-serializable"></a>개체를 Serialize 가능하게 만들기
 
@@ -40,7 +40,7 @@ Serialization을 사용하여 개발자는 개체의 상태를 저장하고 필�
 
 ### <a name="binary-serialization"></a>이진 Serialization
 
-이진 serialization은 이진 인코딩을 사용하여 저장소 또는 스트림 기반 네트워크 스트림과 같은 용도로 사용할 수 있는 압축 serialization을 생성합니다.
+이진 serialization은 이진 인코딩을 사용하여 스토리지 또는 스트림 기반 네트워크 스트림과 같은 용도로 사용할 수 있는 압축 serialization을 생성합니다.
 
 ### <a name="xml-serialization"></a>XML serialization
 

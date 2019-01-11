@@ -32,7 +32,7 @@ Windows Presentation Foundation (WPF)을 강력한 제공 [!INCLUDE[TLA#tla_api#
   
 <a name="section1"></a>   
 ## <a name="advanced-text-formatting"></a>고급 텍스트 서식 지정  
- 텍스트 레이아웃 및 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 컨트롤 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에 서식 있는 텍스트를 쉽게 포함할 수 있도록 하는 서식 속성을 제공 합니다. 이러한 컨트롤은 텍스트의 표현을 처리하는 다양한 속성을 표시하며 서체, 크기 및 색을 포함합니다. 일반적인 상황에서 이러한 컨트롤은 응용 프로그램에서 대부분의 텍스트 표현을 처리할 수 있습니다. 그러나 일부 고급 시나리오는 텍스트 표현 뿐만 아니라 텍스트 저장소 컨트롤이 필요합니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]는 이러한 목적으로 확장 가능한 텍스트 서식 지정 엔진을 제공합니다.  
+ 텍스트 레이아웃 및 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 컨트롤 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에 서식 있는 텍스트를 쉽게 포함할 수 있도록 하는 서식 속성을 제공 합니다. 이러한 컨트롤은 텍스트의 표현을 처리하는 다양한 속성을 표시하며 서체, 크기 및 색을 포함합니다. 일반적인 상황에서 이러한 컨트롤은 애플리케이션에서 대부분의 텍스트 표현을 처리할 수 있습니다. 그러나 일부 고급 시나리오는 텍스트 표현 뿐만 아니라 텍스트 스토리지 컨트롤이 필요합니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]는 이러한 목적으로 확장 가능한 텍스트 서식 지정 엔진을 제공합니다.  
   
  고급 텍스트 서식 지정 기능은 있는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 텍스트 서식 엔진, 텍스트 저장소는 텍스트 실행 및 서식 속성으로 구성 됩니다. 텍스트 서식 지정 엔진, <xref:System.Windows.Media.TextFormatting.TextFormatter>, 줄의 텍스트 표현에 사용 될를 만듭니다. 선 서식 지정 프로세스를 시작 하 고 텍스트 포맷터를 호출 하 여 이렇게 <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A>합니다. 텍스트 포맷터는 저장소를 호출 하 여 텍스트 저장소에서 텍스트 실행을 검색 <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> 메서드. <xref:System.Windows.Media.TextFormatting.TextRun> 개체는 다음으로 구성 된 <xref:System.Windows.Media.TextFormatting.TextLine> 텍스트 포맷터가 개체 검사 나 표시에 대 한 응용 프로그램에 제공 합니다.  
   
@@ -43,7 +43,7 @@ Windows Presentation Foundation (WPF)을 강력한 제공 [!INCLUDE[TLA#tla_api#
  기존의 텍스트와 달리 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], <xref:System.Windows.Media.TextFormatting.TextFormatter> 콜백 메서드 집합을 통해 텍스트 레이아웃 클라이언트와 상호 작용 합니다. 구현에서 이러한 메서드를 제공 하기 위해 클라이언트 필요는 <xref:System.Windows.Media.TextFormatting.TextSource> 클래스입니다. 다음 다이어그램에서는 클라이언트 응용 프로그램 간의 텍스트 레이아웃 상호 작용 및 <xref:System.Windows.Media.TextFormatting.TextFormatter>합니다.  
   
  ![텍스트 레이아웃 클라이언트 및 TextFormatter의 다이어그램](../../../../docs/framework/wpf/advanced/media/textformatter01.png "TextFormatter01")  
-응용 프로그램과 TextFormatter 간의 상호 작용  
+애플리케이션과 TextFormatter 간의 상호 작용  
   
  텍스트 포맷터는 텍스트 저장소에서 서식 있는 텍스트 줄을 검색 하는 데 사용 되는 구현의 <xref:System.Windows.Media.TextFormatting.TextSource>합니다. 사용 하 여 첫 번째 텍스트 포맷터의 인스턴스를 만들고 이렇게는 <xref:System.Windows.Media.TextFormatting.TextFormatter.Create%2A> 메서드. 이 메서드는 텍스트 포맷터의 인스턴스를 생성하고 최대 선 높이 및 너비 값을 설정합니다. 호출 하 여 줄 만들기 프로세스가 시작 되는 텍스트 포맷터의 인스턴스를 만들 되는 즉시는 <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> 메서드. <xref:System.Windows.Media.TextFormatting.TextFormatter> 다시 호출 텍스트와 텍스트 실행에 대 한 형식 지정 매개 변수를 검색할 텍스트 소스를 구성 하는 줄.  
   

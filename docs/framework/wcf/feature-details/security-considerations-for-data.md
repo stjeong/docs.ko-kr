@@ -166,7 +166,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
  <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A>, `MaxStringContentLength`및 `MaxArrayLength` 속성은 메모리 소비만 제한합니다. 보통은 메모리 사용이 이미 `MaxReceivedMessageSize`에 의해 제한되기 때문에 스트리밍을 사용하지 않는 경우 따로 위협을 완화할 필요가 없습니다. 그러나 `MaxReceivedMessageSize` 에서는 확장 전의 바이트 수를 계산합니다. 이진 인코딩을 사용할 때 메모리 소비는 `MaxReceivedMessageSize`를 초과할 수 있으며 <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize%2A>비율로만 제한됩니다. 따라서 이진 인코딩을 사용하는 경우에는 항상 모든 판독기 할당량(특히 <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A>)을 설정하는 것이 중요합니다.  
   
- 이진 인코딩을 <xref:System.Runtime.Serialization.DataContractSerializer>와 함께 사용할 때 `IExtensibleDataObject` 인터페이스를 사전 확장 공격에 악용할 수 있습니다. 이 인터페이스는 기본적으로 계약에 속해 있지 않은 임의의 데이터에 무제한의 저장소를 제공합니다. `MaxSessionSize` 와 `MaxReceivedMessageSize` 를 곱한 값이 문제를 야기하지 않을 정도로 낮은 할당량을 설정한 경우에는 이진 인코딩을 사용할 때 `IExtensibleDataObject` 기능을 비활성화합니다. `IgnoreExtensionDataObject` 특성에서 `true` 속성을 `ServiceBehaviorAttribute` 로 설정합니다. 또는 `IExtensibleDataObject` 인터페이스를 구현하지 않습니다. 자세한 내용은 [호환 가능한 데이터 계약](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)을 참조하세요.  
+ 이진 인코딩을 <xref:System.Runtime.Serialization.DataContractSerializer>와 함께 사용할 때 `IExtensibleDataObject` 인터페이스를 사전 확장 공격에 악용할 수 있습니다. 이 인터페이스는 기본적으로 계약에 속해 있지 않은 임의의 데이터에 무제한의 스토리지를 제공합니다. `MaxSessionSize` 와 `MaxReceivedMessageSize` 를 곱한 값이 문제를 야기하지 않을 정도로 낮은 할당량을 설정한 경우에는 이진 인코딩을 사용할 때 `IExtensibleDataObject` 기능을 비활성화합니다. `IgnoreExtensionDataObject` 특성에서 `true` 속성을 `ServiceBehaviorAttribute` 로 설정합니다. 또는 `IExtensibleDataObject` 인터페이스를 구현하지 않습니다. 자세한 내용은 [호환 가능한 데이터 계약](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)을 참조하세요.  
   
 ### <a name="quotas-summary"></a>할당량 요약  
  다음 표에는 할당량에 대한 지침이 요약되어 있습니다.  
@@ -225,7 +225,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
  구성에 알려진 형식을 지정하는 경우에는 구성 파일이 안전한지 확인해야 합니다. 구성에는 항상 강력한 이름을 사용하되(형식이 상주하는 서명된 어셈블리의 공개 키 지정) 로드할 형식의 버전은 지정하지 마십시오. 가능한 경우에는 형식 로더에서 자동으로 최신 버전을 선택합니다. 구성에서 특정 버전을 지정하면, 형식에 이후 버전에서 수정이 가능한 보안 취약성이 있지만 버전이 구성에 명시적으로 지정되어 있기 때문에 여전히 취약한 버전을 로드할 위험성이 있습니다.  
   
- 알려진 형식이 너무 많으면 또 다른 결과가 발생할 수 있습니다. <xref:System.Runtime.Serialization.DataContractSerializer> 가 serialize 또는 deserialize해야 하는 각 형식의 항목과 함께 serialization/deserialization 코드의 캐시를 응용 프로그램 도메인에 만들기 때문입니다. 응용 프로그램 도메인이 실행되고 있는 동안에는 이 캐시를 결코 지울 수 없습니다. 따라서 응용 프로그램에 사용되는 알려진 형식이 많다는 것을 알고 있는 공격자는 이 모든 형식을 deserialize하여 캐시에 과도한 메모리가 사용되게 만들 수 있습니다.  
+ 알려진 형식이 너무 많으면 또 다른 결과가 발생할 수 있습니다. <xref:System.Runtime.Serialization.DataContractSerializer> 가 serialize 또는 deserialize해야 하는 각 형식의 항목과 함께 serialization/deserialization 코드의 캐시를 애플리케이션 도메인에 만들기 때문입니다. 애플리케이션 도메인이 실행되고 있는 동안에는 이 캐시를 결코 지울 수 없습니다. 따라서 애플리케이션에 사용되는 알려진 형식이 많다는 것을 알고 있는 공격자는 이 모든 형식을 deserialize하여 캐시에 과도한 메모리가 사용되게 만들 수 있습니다.  
   
 ### <a name="preventing-types-from-being-in-an-unintended-state"></a>형식이 의도하지 않은 상태가 되는 것을 방지  
  형식에 적용해야 할 내부 일관성 제약 조건이 있을 수 있습니다. deserialization 중에 이러한 제약 조건을 무시하지 않도록 주의해야 합니다.  
@@ -263,7 +263,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
  메시지 자체에서 로드할 형식을 지정할 수 있기 때문에 <xref:System.Runtime.Serialization.NetDataContractSerializer> 메커니즘은 본질적으로 안전하지 않으며 신뢰할 수 있는 데이터에만 사용해야 합니다. 형식을 제한하는 안전한 형식 바인더를 작성하여 안전한 형식만 로드할 수도 있습니다( <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder%2A> 속성 사용).  
   
- 신뢰할 수 있는 데이터와 함께 사용하는 경우라도, 들어오는 데이터에서 로드할 형식을 불충분하게 지정할 수가 있습니다. 특히 <xref:System.Runtime.Serialization.NetDataContractSerializer.AssemblyFormat%2A> 속성이 <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple>로 설정되어 있으면 더욱 그렇습니다. 응용 프로그램의 디렉터리나 전역 어셈블리 캐시에 액세스할 수 있는 사람은 로드할 형식을 악의적인 형식으로 대체할 수 있습니다. 사용 권한을 올바르게 설정하여 항상 응용 프로그램 디렉터리와 전역 어셈블리 캐시의 보안을 보장해야 합니다.  
+ 신뢰할 수 있는 데이터와 함께 사용하는 경우라도, 들어오는 데이터에서 로드할 형식을 불충분하게 지정할 수가 있습니다. 특히 <xref:System.Runtime.Serialization.NetDataContractSerializer.AssemblyFormat%2A> 속성이 <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple>로 설정되어 있으면 더욱 그렇습니다. 애플리케이션의 디렉터리나 전역 어셈블리 캐시에 액세스할 수 있는 사람은 로드할 형식을 악의적인 형식으로 대체할 수 있습니다. 사용 권한을 올바르게 설정하여 항상 애플리케이션 디렉터리와 전역 어셈블리 캐시의 보안을 보장해야 합니다.  
   
  일반적으로 부분적으로 신뢰할 수 있는 코드에서 `NetDataContractSerializer` 인스턴스에 액세스하거나 그 외의 방식으로 서로게이트 선택기(<xref:System.Runtime.Serialization.ISurrogateSelector>) 또는 serialization 바인더(<xref:System.Runtime.Serialization.SerializationBinder>)를 제어하는 경우 코드에서 serialization/deserialization 프로세스를 상당 부분 제어할 수 있습니다. 예를 들어 임의의 형식을 삽입하거나, 정보 노출을 일으키거나, 결과 개체 그래프 또는 serialize된 데이터를 변조하거나, 결과적으로 serialize된 스트림을 오버플로시킬 수 있습니다.  
   
@@ -274,7 +274,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
  <xref:System.Xml.Serialization.XmlSerializer> 에서는 런타임에 실제로 serialize 및 deserialize를 수행하는 *serialization 어셈블리* 를 생성하며 이러한 어셈블리는 임시 파일 디렉터리에 생성됩니다. 다른 프로세스 또는 사용자에게 해당 디렉터리에 대한 권한이 있는 경우에는 serialization/deserialization 코드를 임의의 코드로 덮어쓸 수도 있습니다. 그러면 <xref:System.Xml.Serialization.XmlSerializer> 에서 serialization/deserialization 코드 대신 보안 컨텍스트를 사용하여 이 코드를 실행합니다. 이 문제를 방지하려면 임시 파일 디렉터리에서 사용 권한이 올바르게 설정되었는지 확인해야 합니다.  
   
- <xref:System.Xml.Serialization.XmlSerializer> 에는 실행 시에 새로 생성하는 대신 미리 생성된 serialization 어셈블리를 사용하는 모드가 있습니다. 이 모드는 <xref:System.Xml.Serialization.XmlSerializer> 에서 적절한 serialization 어셈블리를 찾을 수 있을 때마다 트리거됩니다. <xref:System.Xml.Serialization.XmlSerializer> 에서는 serialize할 형식이 포함된 어셈블리에 사용된 것과 같은 키를 사용하여 serialization 어셈블리가 서명되었는지 확인합니다. 그러면 악의적인 어셈블리가 serialization 어셈블리로 위장하는 것을 방지할 수 있습니다. 그러나 serialize 가능 형식이 포함된 어셈블리가 서명되지 않은 경우에는 <xref:System.Xml.Serialization.XmlSerializer> 에서 이 확인을 수행할 수 없으며 이름만 정확하면 지정된 어셈블리를 그냥 사용합니다. 그러면 악의적인 코드를 실행할 수 있습니다. serialize 가능한 형식이 포함된 어셈블리에 항상 서명을 하거나 응용 프로그램의 디렉터리 및 전역 어셈블리 캐시에 대한 액세스를 엄격하게 제어하여 악의적인 어셈블리가 들어오는 것을 막아야 합니다.  
+ <xref:System.Xml.Serialization.XmlSerializer> 에는 실행 시에 새로 생성하는 대신 미리 생성된 serialization 어셈블리를 사용하는 모드가 있습니다. 이 모드는 <xref:System.Xml.Serialization.XmlSerializer> 에서 적절한 serialization 어셈블리를 찾을 수 있을 때마다 트리거됩니다. <xref:System.Xml.Serialization.XmlSerializer> 에서는 serialize할 형식이 포함된 어셈블리에 사용된 것과 같은 키를 사용하여 serialization 어셈블리가 서명되었는지 확인합니다. 그러면 악의적인 어셈블리가 serialization 어셈블리로 위장하는 것을 방지할 수 있습니다. 그러나 serialize 가능 형식이 포함된 어셈블리가 서명되지 않은 경우에는 <xref:System.Xml.Serialization.XmlSerializer> 에서 이 확인을 수행할 수 없으며 이름만 정확하면 지정된 어셈블리를 그냥 사용합니다. 그러면 악의적인 코드를 실행할 수 있습니다. serialize 가능한 형식이 포함된 어셈블리에 항상 서명을 하거나 애플리케이션의 디렉터리 및 전역 어셈블리 캐시에 대한 액세스를 엄격하게 제어하여 악의적인 어셈블리가 들어오는 것을 막아야 합니다.  
   
  <xref:System.Xml.Serialization.XmlSerializer> 는 서비스 거부 공격을 받을 수 있습니다. <xref:System.Xml.Serialization.XmlSerializer> 에는 `MaxItemsInObjectGraph` 에서 사용할 수 있는 것과 같은 <xref:System.Runtime.Serialization.DataContractSerializer>할당량이 없습니다. 따라서 오로지 메시지 크기로만 제어되는 임의 개수의 개체를 deserialize합니다.  
   
@@ -289,7 +289,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
 -   <xref:System.Runtime.Serialization.DataContractAttribute> 특성이 형식(또는 `[Serializable]` 로 표시되어 있지만 `ISerializable`이 아닌 형식)에 적용되면 deserializer에서는 모든 생성자가 public이 아니거나 요청에 의해 보호되지 않더라도 이러한 형식의 인스턴스를 만들 수 있습니다.  
   
--   deserialize된 데이터가 신뢰되었고 알려진 모든 형식이 신뢰할 수 있는 형식인 것이 확실한 경우가 아니면 deserialization 결과를 신뢰하지 마십시오. 부분 신뢰에서 실행되는 경우에는 알려진 형식이 응용 프로그램 구성 파일에서 로드되지 않지만 컴퓨터 구성 파일에서는 로드됩니다.  
+-   deserialize된 데이터가 신뢰되었고 알려진 모든 형식이 신뢰할 수 있는 형식인 것이 확실한 경우가 아니면 deserialization 결과를 신뢰하지 마십시오. 부분 신뢰에서 실행되는 경우에는 알려진 형식이 애플리케이션 구성 파일에서 로드되지 않지만 컴퓨터 구성 파일에서는 로드됩니다.  
   
 -   서로게이트가 추가된 `DataContractSerializer` 인스턴스를 부분적으로 신뢰할 수 있는 코드에 전달하면 코드에서 서로게이트의 수정 가능한 설정을 변경할 수 있습니다.  
   
@@ -297,7 +297,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
 -   <xref:System.Runtime.Serialization.ExtensionDataObject> 형식에 공개 멤버가 없다고 해서 그 내부의 데이터가 안전한 것은 아닙니다. 예를 들어, 권한이 있는 데이터 소스에서 일부 데이터가 들어 있는 개체로 deserialize한 다음 해당 개체를 부분적으로 신뢰할 수 있는 코드로 전달하면 부분적으로 신뢰할 수 있는 코드에서 개체를 serialize하여 `ExtensionDataObject` 에서 데이터를 읽을 수 있습니다. 권한이 있는 데이터 소스에서 나중에 부분적으로 신뢰할 수 있는 코드로 전달할 개체로 deserialize하는 경우에는 <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> 를 `true` 로 설정하는 것이 좋습니다.  
   
--   <xref:System.Runtime.Serialization.DataContractSerializer> 및 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 는 완전 신뢰로 private, protected, internal 및 public 멤버의 serialization을 지원합니다. 그러나 부분 신뢰에서는 public 멤버만 serialize될 수 있습니다. 응용 프로그램에서 public 멤버가 아닌 멤버를 serialize하려고 하면 `SecurityException` 이 throw됩니다.  
+-   <xref:System.Runtime.Serialization.DataContractSerializer> 및 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 는 완전 신뢰로 private, protected, internal 및 public 멤버의 serialization을 지원합니다. 그러나 부분 신뢰에서는 public 멤버만 serialize될 수 있습니다. 애플리케이션에서 public 멤버가 아닌 멤버를 serialize하려고 하면 `SecurityException` 이 throw됩니다.  
   
      부분 신뢰에서 internal 또는 protected internal 멤버가 serialize될 수 있도록 허용하려면 `System.Runtime.CompilerServices.InternalsVisibleTo` 어셈블리 특성을 사용합니다. 이 특성을 사용하면 어셈블리에서 internal 멤버가 일부 다른 어셈블리에 표시되도록 선언할 수 있습니다. 이 경우 internal 멤버가 serialize되도록 하려는 어셈블리는 internal 멤버가 System.Runtime.Serialization.dll에 표시되도록 선언합니다.  
   
@@ -313,7 +313,7 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
      [!code-csharp[CDF_WCF_SecurityConsiderationsForData#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/cdf_wcf_securityconsiderationsfordata/cs/program.cs#1)]  
   
-     위의 예제에서 `PermissionsHelper.InternetZone` 은 부분 신뢰의 `PermissionSet` 에 해당합니다. 이제 `InternalsVisibleToAttribute`가 없으면 응용 프로그램이 실패하고 public 멤버가 아닌 멤버가 부분 신뢰로 serialize될 수 없음을 나타내는 `SecurityException` 을 throw합니다.  
+     위의 예제에서 `PermissionsHelper.InternetZone` 은 부분 신뢰의 `PermissionSet` 에 해당합니다. 이제 `InternalsVisibleToAttribute`가 없으면 애플리케이션이 실패하고 public 멤버가 아닌 멤버가 부분 신뢰로 serialize될 수 없음을 나타내는 `SecurityException` 을 throw합니다.  
   
      그러나 다음 줄을 소스 파일에 추가하면 프로그램이 성공적으로 실행됩니다.  
   

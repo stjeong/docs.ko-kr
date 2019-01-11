@@ -44,7 +44,7 @@ System.Type type = i.GetType();
 
 ## <a name="example"></a>예제
 
-이 샘플에서는 <xref:System.Object.GetType%2A> 메서드를 사용하여 숫자 계산의 결과를 포함하는 데 사용되는 형식을 결정합니다. 이 형식은 결과 숫자의 저장소 요구 사항에 따라 달라집니다.
+이 샘플에서는 <xref:System.Object.GetType%2A> 메서드를 사용하여 숫자 계산의 결과를 포함하는 데 사용되는 형식을 결정합니다. 이 형식은 결과 숫자의 스토리지 요구 사항에 따라 달라집니다.
 
 [!code-csharp[csrefKeywordsOperator#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#13)]
 
