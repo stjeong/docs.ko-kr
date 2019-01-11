@@ -14,56 +14,56 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33655363"
 ---
 # <a name="visual-basic-coding-conventions"></a>Visual Basic 코딩 규칙
-Microsoft 예제 및이 항목의 지침에 따라 설명서를 개발 합니다. 동일한 코딩 규칙을 따르는 경우는 다음과 같은 이점을 얻을 수 있습니다 수 있습니다.  
+Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니다. 사용자가 동일한 코딩 규칙을 따른다면, 다음과 같은 이점을 얻을 수 있습니다.  
   
--   코드는 판독기 레이아웃이 아닌 내용에 집중할 수 있도록 일관 된 모양을 갖습니다.  
+-   코드는 판독기 레이아웃이 아닌 내용에 집중할 수 있도록 일관된 모양을 갖습니다.  
   
--   읽는 사람이 이해 코드 보다 신속 하 게 이전 경험을 기반으로 예상할 수 때문에 있습니다.  
+-   읽는 사람이 이전 경험을 기반으로 예상할 수 있으므로 코드를 더 신속하게 이해합니다.  
   
--   복사, 변경 및 코드를 더 쉽게 유지 관리할 수 있습니다.  
+-   코드를 더 쉽게 복사, 변경 및  유지 관리할 수 있습니다.  
   
--   Visual basic 코드 "모범 사례" 보여 주는 확인할 수 있습니다.  
+-   코드가 Visual basic을 위한 "모범 사례"가 될 것입니다.  
   
 ## <a name="naming-conventions"></a>명명 규칙  
   
 -   이름 지정 지침에 대 한 정보를 참조 하십시오. [명명 지침](../../../standard/design-guidelines/naming-guidelines.md) 항목입니다.  
   
--   변수 이름의 일부로 "내" 또는 "my"를 사용 하지 마십시오. 이 연습와 혼동는 `My` 개체입니다.  
+-   변수 이름의 일부로 "My" 또는 "my"를 사용하지 마십시오. 이것은 `My`개체와 혼동을 일으킵니다.  
   
--   지침에 맞게 자동으로 생성 된 코드에서 개체의 이름을 변경할 필요가 없습니다.  
+-   지침에 맞게 자동으로 생성된 코드에서 개체의 이름을 변경할 필요가 없습니다.  
   
 ## <a name="layout-conventions"></a>레이아웃 규칙  
   
--   공백, 탭을 삽입 하 고 4 공간 들여쓰기와 스마트 들여쓰기를 사용 합니다.  
+-   공백으로 탭을 삽입하고, 4칸 들여쓰기하는 스마트 들여쓰기를 사용하십시오.  
   
--   사용 하 여 **(다시 포맷)의 코드를 나열 하는 매우** 코드 편집기에서 코드의 서식을 다시 지정 합니다. 자세한 내용은 참조 [옵션, 텍스트 편집기, 기본 (Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic)합니다.  
+-   코드 편집기에서 코드의 서식을 재조정하기 위해서는 **Pretty listing(reformatting)of code** 옵션을 이용하십시오. 자세한 내용은 [옵션, 텍스트 편집기, 기본(Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic)을 참조하십시오.  
   
--   줄 당 하나의 문을 사용 합니다. Visual Basic 줄 구분 기호 문자 (:)를 사용 하지 마십시오.  
+-   한 줄에 하나의 문을 사용하십시오. Visual Basic의 줄 구분 기호 문자(:)를 사용하지 마십시오.  
   
--   언어에서 허용 하는 경우 암시적 줄 연속 문자를 위해 명시적 줄 연속 문자 "_"를 사용 하지 마십시오.  
+-   언어에서 허용하더라도, 암시적 줄 연속 문자를 위해 명시적 줄 연속 문자 "_"를 사용하지 마십시오.  
   
--   줄 마다 선언은 하나씩만 사용 합니다.  
+-   한 줄에 하나의 선언만 사용하십시오.  
   
--   경우 **(다시 포맷)의 코드를 나열 하는 매우** 하지 않는 형식 연속 줄 자동으로, 수동으로 들여쓰기 연속 된 줄을 탭 정지 하나 있습니다. 그러나 항상 왼쪽 맞춤 목록의 항목입니다.  
+-   만약 **Pretty listing(reformatting)of code**가 연속 줄 형식을 자동으로 지정하지 않는다면, 수동으로 연속된 줄을 들여쓰기하십시오. 그러나 목록의 항목을 항상 왼쪽 맞춤으로 하십시오.  
   
     ```  
     a As Integer,  
     b As Integer  
     ```  
   
--   메서드 및 속성 정의 사이 하나 이상의 빈 줄을 추가 합니다.  
+-   메서드와 속성의 정의 사이에는 하나 이상의 빈 줄을 추가하십시오.  
   
 ## <a name="commenting-conventions"></a>주석 규칙  
   
--   코드 줄의 끝에 대신 별도 줄에 설명을 입력 합니다.  
+-   코드 줄의 끝이 아닌, 별도 줄에 주석을 작성하십시오.  
   
--   마침표로 종료 주석 텍스트 및 주석 텍스트는 대문자로 시작 합니다.  
+-   주석은 대문자로 시작하고, 주석의 끝에 마침표를 찍으십시오.  
   
--   주석 구분 기호 (') 및 메모 텍스트 사이 공백을 하나 삽입 합니다.  
+-   주석 구분 기호(')와 주석 내용 사이에 빈 칸을 하나 삽입하십시오.  
   
      [!code-vb[VbVbalrGuidelines#2](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_1.vb)]  
   
--   에 서식이 지정 된 별표 블록으로를 둘러싸고지 않습니다.  
+-   서식이 지정된 별표(*) 블록으로 주석을 둘러싸지 마십시오.  
   
 ## <a name="program-structure"></a>프로그램 구조  
   
@@ -83,7 +83,7 @@ Microsoft 예제 및이 항목의 지침에 따라 설명서를 개발 합니다
   
      [!code-vb[VbVbalrGuidelines#5](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_4.vb)]  
   
-### <a name="relaxed-delegates-in-event-handlers"></a>완화 된 대리자 이벤트 처리기  
+### <a name="relaxed-delegates-in-event-handlers"></a>완화된 대리자 이벤트 처리기  
  이벤트 처리기에 (개체 및 EventArgs) 인수를 명시적으로 적합 하지 않습니다. 이벤트 (예를 들어 보낸 사람 개체로, EventArgs e)에 전달 되는 이벤트 인수를 사용 하지 않는 경우에 완화 된 대리자를 사용 하 고 코드에서 이벤트 인수를:  
   
  [!code-vb[VbVbalrGuidelines#7](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_5.vb)]  
