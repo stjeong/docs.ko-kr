@@ -140,7 +140,7 @@ C# 대화형 환경은 샘플 작업 방법을 변경합니다. 방문자가 샘
 
 ## <a name="contributor-license-agreement"></a>기여자 라이선스 계약
 
-PR을 병합하기 전에 [.NET Foundation CLA(기여 라이선스 계약)](https://cla.dotnetfoundation.org)에 서명해야 합니다. .NET Foundation의 프로젝트에 대한 일회성 요구 사항입니다. Wikipedia에서 [CLA(기여 라이선스 계약)](http://en.wikipedia.org/wiki/Contributor_License_Agreement)에 대해 참고할 수 있습니다.
+PR을 병합하기 전에 [.NET Foundation CLA(기여 라이선스 계약)](https://cla.dotnetfoundation.org)에 서명해야 합니다. .NET Foundation의 프로젝트에 대한 일회성 요구 사항입니다. Wikipedia에서 [CLA(기여 라이선스 계약)](https://en.wikipedia.org/wiki/Contributor_License_Agreement)에 대해 참고할 수 있습니다.
 
 계약: [net-foundation-contribution-license-agreement.pdf](https://github.com/dotnet/home/blob/master/guidance/net-foundation-contribution-license-agreement.pdf)
 

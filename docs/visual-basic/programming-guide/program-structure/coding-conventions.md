@@ -26,7 +26,7 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
 ## <a name="naming-conventions"></a>명명 규칙  
   
--   이름 지정 지침에 대 한 정보를 참조 하십시오. [명명 지침](../../../standard/design-guidelines/naming-guidelines.md) 항목입니다.  
+-   명명 지침에 대한 정보를 더 보려면, [명명 지침](../../../standard/design-guidelines/naming-guidelines.md) 항목을 참조하십시오.  
   
 -   변수 이름의 일부로 "My" 또는 "my"를 사용하지 마십시오. 이것은 `My`개체와 혼동을 일으킵니다.  
   
@@ -75,7 +75,7 @@ Microsoft는 이 항목의 지침에 따라 예제와 설명서를 개발합니�
   
 ### <a name="string-data-type"></a>String 데이터 형식  
   
--   문자열을 연결 하려면 앰퍼샌드를 사용 (&).  
+-   문자열을 연결하려면 앰퍼샌드(&)를 사용하십시오.  
   
      [!code-vb[VbVbalrGuidelines#4](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_3.vb)]  
   

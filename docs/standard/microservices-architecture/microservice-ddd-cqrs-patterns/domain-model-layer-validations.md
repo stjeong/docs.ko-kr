@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: f348e1dbb65f37f625c1dec243364af683c99b8a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d48c78e6ea63ea1a2f3dbfea6b9fec646493c751
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153685"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54148073"
 ---
 # <a name="design-validations-in-the-domain-model-layer"></a>도메인 모델 레이어에서 유효성 검사 디자인
 
@@ -67,7 +67,7 @@ DbContext의 SaveChanges 메서드를 재정의하여 데이터 주석 및 `IVal
 
 그러나 DDD의 관점에서 도메인 모델은 엔터티의 동작 메서드에서 예외를 사용하거나 유효성 검사 규칙을 적용하도록 사양 및 알림 패턴을 구현하여 가장 잘 유지됩니다.
 
-UI 계층 내에서 모델 유효성 검사를 허용하도록 입력을 허용하는 ViewModel 클래스(도메인 엔터티 대신)의 응용 프로그램 계층에서 데이터 주석을 사용하는 것이 가능합니다. 그러나 도메인 모델 내의 유효성 검사를 제외하고 수행되어서는 안 됩니다.
+UI 계층 내에서 모델 유효성 검사를 허용하도록 입력을 허용하는 ViewModel 클래스(도메인 엔터티 대신)의 애플리케이션 계층에서 데이터 주석을 사용하는 것이 가능합니다. 그러나 도메인 모델 내의 유효성 검사를 제외하고 수행되어서는 안 됩니다.
 
 ### <a name="validate-entities-by-implementing-the-specification-pattern-and-the-notification-pattern"></a>사양 패턴 및 알림 패턴을 구현하여 엔터티의 유효성 검사
 
@@ -103,7 +103,7 @@ UI 계층 내에서 모델 유효성 검사를 허용하도록 입력을 허용�
   [*http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/*](http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/)
 
 - **Colin Jack. 도메인 모델 유효성 검사** \
-  [*http://colinjack.blogspot.com/2008/03/domain-model-validation.html*](http://colinjack.blogspot.com/2008/03/domain-model-validation.html)
+  [*https://colinjack.blogspot.com/2008/03/domain-model-validation.html*](https://colinjack.blogspot.com/2008/03/domain-model-validation.html)
 
 - **Jimmy Bogard. DDD 세계에서 유효성 검사** \
   [*https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/*](https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/)

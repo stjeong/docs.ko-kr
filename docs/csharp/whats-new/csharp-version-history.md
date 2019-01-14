@@ -3,12 +3,12 @@ title: C#의 역사 - C# 가이드
 description: 이 언어의 초창기 버전은 어떤 모습이었으며 이후 어떻게 변했는가?
 author: erikdietrich
 ms.date: 09/20/2017
-ms.openlocfilehash: ad05e803000393800764a4b3aa1bf6288f765fd4
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: f5bf9a7de7c8681fa2ebb49ba1cf6991b9b137c9
+ms.sourcegitcommit: 90775b20343b6ad831af6f5380f8ab7553abb16b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245602"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54186230"
 ---
 # <a name="the-history-of-c"></a>C#의 역사 #
 
@@ -28,7 +28,7 @@ C# 빌드 도구는 최신 주요 언어 릴리스가 기본 언어 버전으로
 
 ## <a name="c-version-10"></a>C# 버전 1.0
 
-시간을 거슬러 올라가 보면 C# 버전 1.0은 Java와 매우 흡사했습니다. [ECMA에 대해 명시된 설계 목표의 일부](http://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html)로 "단순하고 현대적인 범용 개체 지향 언어"를 추구했습니다.  당시에 Java와 같은 형태는 이러한 초기 설계 목표를 달성한 것을 의미했습니다.
+시간을 거슬러 올라가 보면 C# 버전 1.0은 Java와 매우 흡사했습니다. [ECMA에 대해 명시된 설계 목표의 일부](https://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html)로 "단순하고 현대적인 범용 개체 지향 언어"를 추구했습니다.  당시에 Java와 같은 형태는 이러한 초기 설계 목표를 달성한 것을 의미했습니다.
 
 그러나 지금 다시 C# 1.0을 돌이켜보면 조금 어지러워질 것입니다. 기본 제공 비동기 기능과 당연한 것으로 여겨지는 제네릭과 관련된 멋진 기능 중 일부가 부족했습니다. 사실, 제네릭이 아예 없었습니다.  그리고 [LINQ](../linq/index.md)는 아직 사용할 수 없습니다. 그러한 추가 사항은 나올 때까지 몇 년이 걸릴 것입니다.
 
@@ -142,7 +142,7 @@ C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한
 - [Null 전파자](./csharp-6.md#null-conditional-operators)
 - [문자열 보간](./csharp-6.md#string-interpolation)
 - [nameof 연산자](./csharp-6.md#the-nameof-expression)
-- [인덱스 이니셜라이저](csharp-6.md#index-initializers)
+- [인덱스 이니셜라이저](csharp-6.md#extension-add-methods-in-collection-initializers)
 
 기타 새로운 기능은 다음과 같습니다.
 
@@ -168,7 +168,6 @@ C# 버전 5.0은 집중된 버전의 언어였습니다. 해당 버전에 대한
 
 - [삭제](./csharp-7.md#discards)
 - [이진 리터럴 및 자릿수 구분 기호](./csharp-7.md#numeric-literal-syntax-improvements)
-- [ref 반환 및 지역](./csharp-7.md#ref-locals-and-returns)
 - [Throw 식](./csharp-7.md#throw-expressions)
 
 이러한 모든 기능은 개발자에게 멋진 새 기능과 이전보다 훨씬 깔끔한 코드를 작성할 수 있는 기회를 제공합니다. 하이라이트는 `out` 키워드와 함께 사용할 변수의 선언을 압축하고 튜플을 통해 여러 개의 반환 값을 허용하는 것입니다.

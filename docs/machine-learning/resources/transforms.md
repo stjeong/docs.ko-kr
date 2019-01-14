@@ -4,12 +4,12 @@ description: ML.NET에서 지원되는 기능 엔지니어링 구성 요소를 �
 author: JRAlexander
 ms.custom: seodec18
 ms.date: 12/14/2018
-ms.openlocfilehash: 72e4077151d35b9bff661c28c9a20626098a5c69
-ms.sourcegitcommit: 882a2f56bf6afdcb40d468e4ae9371296822b68c
+ms.openlocfilehash: c311aa59426b716ffcd2c53e890d2e3e380360a7
+ms.sourcegitcommit: 81bd16c7435a8c9183d2a7e878a2a5eff7d04584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451094"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54249127"
 ---
 # <a name="machine-learning-data-transforms---mlnet"></a>기계 학습 데이터 변환 - ML.NET
 
@@ -103,7 +103,6 @@ ms.locfileid: "53451094"
 | <xref:Microsoft.ML.Transforms.MissingValueDroppingTransformer> | 열에서 누락 값을 삭제합니다. |
 | <xref:Microsoft.ML.Transforms.MissingValueIndicatorTransform> | 입력 열과 동일한 수의 슬롯을 사용하여 부울 출력 열을 만듭니다. 여기서 출력 값은 입력 열의 값이 누락된 경우 true입니다. |
 | <xref:Microsoft.ML.Transforms.MissingValueReplacingTransformer> | 기본값 또는 평균값/최솟값/최댓값으로 대체하여 누락 값을 처리합니다(텍스트가 아닌 열에만 해당). |
-| <xref:Microsoft.ML.Transforms.MissingValueIndicatorTransform> | 입력 열과 동일한 수의 슬롯을 사용하여 부울 출력 열을 만듭니다. 여기서 출력 값은 입력 열의 값이 누락된 경우 true입니다. |
 
 ## <a name="normalization"></a>표준화
 

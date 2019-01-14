@@ -3,15 +3,15 @@ title: 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터�
 description: 클러스터링 시나리오에서 ML.NET을 사용하는 방법 알아보기
 author: pkulikov
 ms.author: johalex
-ms.date: 12/17/2018
+ms.date: 01/11/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 012cea471c69f66ad9a61db858b4575606b31f74
-ms.sourcegitcommit: 3d0c29b878f00caec288dfecb3a5c959de5aa629
+ms.openlocfilehash: ab888a2cd9469d5ce0131ba2b17f7c134cf2855c
+ms.sourcegitcommit: 81bd16c7435a8c9183d2a7e878a2a5eff7d04584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53656325"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54249075"
 ---
 # <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>자습서: ML.NET을 통해 클러스터링 학습자를 사용하여 아이리스 꽃 클러스터링
 
@@ -56,7 +56,7 @@ ms.locfileid: "53656325"
 
 ## <a name="prepare-the-data"></a>데이터 준비
 
-1. [iris.data](https://github.com/dotnet/machinelearning/blob/master/test/data/iris.data) 데이터 집합을 다운로드하고 이전 단계에서 만든 *Data* 폴더에 저장합니다. 아이리스 데이터 집합에 대한 자세한 내용은 [아이리스 꽃 데이터 집합](https://en.wikipedia.org/wiki/Iris_flower_data_set) Wikipedia 페이지와 데이터 집합의 출처인 [아이리스 데이터 집합](http://archive.ics.uci.edu/ml/datasets/Iris) 페이지를 참조하세요.
+1. [iris.data](https://github.com/dotnet/machinelearning/blob/master/test/data/iris.data) 데이터 집합을 다운로드하고 이전 단계에서 만든 *Data* 폴더에 저장합니다. 아이리스 데이터 집합에 대한 자세한 내용은 [아이리스 꽃 데이터 집합](https://en.wikipedia.org/wiki/Iris_flower_data_set) Wikipedia 페이지와 데이터 집합의 출처인 [아이리스 데이터 집합](https://archive.ics.uci.edu/ml/datasets/Iris) 페이지를 참조하세요.
 
 1. **솔루션 탐색기**에서 *iris.data* 파일을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **고급** 아래에서 **출력 디렉터리에 복사** 값을 **변경된 내용만 복사**로 변경합니다.
 
@@ -84,9 +84,9 @@ ms.locfileid: "53656325"
 
 [!code-csharp[Define data classes](~/samples/machine-learning/tutorials/IrisFlowerClustering/IrisData.cs#ClassDefinitions)]
 
-`IrisData`는 입력 데이터 클래스이며 각 데이터 집합의 각 특징에 대한 정의를 포함합니다. [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) 특성을 사용하여 데이터 집합 파일에서 소스 열의 인덱스를 지정합니다.
+`IrisData`는 입력 데이터 클래스이며 각 데이터 집합의 각 특징에 대한 정의를 포함합니다. [Column](xref:Microsoft.ML.Data.ColumnAttribute) 특성을 사용하여 데이터 집합 파일에서 소스 열의 인덱스를 지정합니다.
 
-`ClusterPrediction` 클래스는 `IrisData` 인스턴스에 적용된 클러스터링 모델의 출력을 나타냅니다. [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) 속성을 사용하여 `PredictedClusterId` 및 `Distances` 필드를 각각 **PredictedLabel** 및 **Score** 열에 바인딩합니다. 클러스터링 작업의 경우 이들 열의 의미는 다음과 같습니다.
+`ClusterPrediction` 클래스는 `IrisData` 인스턴스에 적용된 클러스터링 모델의 출력을 나타냅니다. [ColumnName](xref:Microsoft.ML.Data.ColumnNameAttribute) 속성을 사용하여 `PredictedClusterId` 및 `Distances` 필드를 각각 **PredictedLabel** 및 **Score** 열에 바인딩합니다. 클러스터링 작업의 경우 이들 열의 의미는 다음과 같습니다.
 
 - **PredictedLabel**열에는 예측된 클러스터의 ID가 있습니다.
 - **Score** 열에는 클러스터 중심까지 제곱 유클리드 거리가 있는 배열이 포함됩니다. 배열 길이는 클러스터와 같습니다.
@@ -127,9 +127,9 @@ ms.locfileid: "53656325"
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-열 이름 및 인덱스는 `IrisData` 클래스에서 정의된 스키마와 일치합니다. <xref:Microsoft.ML.Runtime.Data.DataKind.R4?displayProperty=nameWithType> 값은 `float` 형식을 지정합니다.
+열 이름 및 인덱스는 `IrisData` 클래스에서 정의된 스키마와 일치합니다. <xref:Microsoft.ML.Data.DataKind.R4?displayProperty=nameWithType> 값은 `float` 형식을 지정합니다.
 
-인스턴스화된 <xref:Microsoft.ML.Runtime.Data.TextLoader> 인스턴스를 사용하여 학습 데이터 세트에 대한 데이터 원본을 나타내는 <xref:Microsoft.ML.Runtime.Data.IDataView> 인스턴스를 만듭니다.
+인스턴스화된 <xref:Microsoft.ML.Data.TextLoader> 인스턴스를 사용하여 학습 데이터 세트에 대한 데이터 원본을 나타내는 <xref:Microsoft.ML.Data.IDataView> 인스턴스를 만듭니다.
 
 [!code-csharp[Create IDataView](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 
@@ -160,7 +160,7 @@ ms.locfileid: "53656325"
 
 ## <a name="use-the-model-for-predictions"></a>예측에 모델 사용
 
-예측을 수행하려면 변환기 파이프라인을 통해 입력 형식의 인스턴스를 사용하고 출력 형식의 인스턴스를 생성하는 <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> 클래스를 사용합니다. 다음 줄을 `Main` 메서드에 추가하여 해당 클래스의 인스턴스를 만듭니다.
+예측을 수행하려면 변환기 파이프라인을 통해 입력 형식의 인스턴스를 사용하고 출력 형식의 인스턴스를 생성하는 <xref:Microsoft.ML.PredictionEngine%602> 클래스를 사용합니다. 다음 줄을 `Main` 메서드에 추가하여 해당 클래스의 인스턴스를 만듭니다.
 
 [!code-csharp[Create predictor](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#Predictor)]
 

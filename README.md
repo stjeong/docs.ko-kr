@@ -10,7 +10,7 @@
 
 .NET 문서를 개선하고 완성하는 데 도움이 되는 기여를 환영합니다. 기여하려면 [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35)를 참조하여 아이디어를 얻어보세요. [기여 가이드](CONTRIBUTING.md)에는 우리가 사용하는 프로시저에 대한 지침이 있습니다. 또는 관심 있는 작업이 있는지 [문제 목록](https://github.com/dotnet/docs/issues)을 확인하세요.
 
-[Xamarin](https://docs.microsoft.com/xamarin), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) 및 [Unity](http://docs.unity3d.com/Manual/index.html)도 이 설명서를 사용할 것으로 예상됩니다.
+[Xamarin](https://docs.microsoft.com/xamarin), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) 및 [Unity](https://docs.unity3d.com/Manual/index.html)도 이 설명서를 사용할 것으로 예상됩니다.
 
 이 프로젝트는 커뮤니티에서 예상되는 행동을 명확히 하기 위해 기여자 규약에서 정의된 행동 수칙을 채택했습니다.
 자세한 내용은 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)를 참조하세요.

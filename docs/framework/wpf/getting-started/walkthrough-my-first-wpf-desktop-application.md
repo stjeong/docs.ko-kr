@@ -130,7 +130,7 @@ ms.locfileid: "53150747"
 
 ## <a name="add-files-to-the-application"></a>응용 프로그램에 파일 추가
 
-이 섹션에서는 응용 프로그램에 두 페이지와 이미지를 추가합니다.
+이 섹션에서는 애플리케이션에 두 페이지와 이미지를 추가합니다.
 
 1. 프로젝트에 새 WPF 페이지를 추가 하 고 이름을 *`ExpenseItHome.xaml`*:
 
@@ -262,7 +262,7 @@ ms.locfileid: "53150747"
 
 ## <a name="add-controls"></a>컨트롤 추가
 
-이 섹션에서는 홈 페이지 UI 사용자에 대 한 경비 보고서를 표시 하도록 선택할 수 있는 사람의 목록을 표시 하려면를 업데이트 합니다. 컨트롤은 사용자가 응용 프로그램과 상호 작용할 수 있게 하는 UI 개체입니다. 자세한 내용은 [컨트롤](../../../../docs/framework/wpf/controls/index.md)을 참조하세요.
+이 섹션에서는 홈 페이지 UI 사용자에 대 한 경비 보고서를 표시 하도록 선택할 수 있는 사람의 목록을 표시 하려면를 업데이트 합니다. 컨트롤은 사용자가 애플리케이션과 상호 작용할 수 있게 하는 UI 개체입니다. 자세한 내용은 [컨트롤](../../../../docs/framework/wpf/controls/index.md)을 참조하세요.
 
 이 UI를 만들려면 다음 요소를 추가할 *`ExpenseItHome.xaml`*:
 
@@ -281,7 +281,7 @@ ms.locfileid: "53150747"
    > [!TIP]
    > 끌어서 컨트롤을 만들 수도 있습니다는 **도구 상자** 창에서 디자인 창 및 다음에서 해당 속성을 설정 합니다 **속성** 창입니다.
 
-3. 응용 프로그램을 빌드 및 실행합니다.
+3. 애플리케이션을 빌드 및 실행합니다.
 
 다음 그림에서는 방금 만든 컨트롤을 보여 줍니다.
 
@@ -317,7 +317,7 @@ ms.locfileid: "53150747"
 
     [!code-xaml[ExpenseIt#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#13)]
 
-8. 응용 프로그램을 빌드 및 실행합니다.
+8. 애플리케이션을 빌드 및 실행합니다.
 
 다음 그림에서는 방금 추가한 새로운 결과 보여 줍니다.
 
@@ -350,7 +350,7 @@ ms.locfileid: "53150747"
 
     이 UI는 비슷합니다 *`ExpenseItHome.xaml`* 에서 보고서 데이터는 제외 하 고는 <xref:System.Windows.Controls.DataGrid>합니다.
 
-3. 응용 프로그램을 빌드 및 실행합니다.
+3. 애플리케이션을 빌드 및 실행합니다.
 
     > [!NOTE]
     > 오류가 발생 하는 경우는 <xref:System.Windows.Controls.DataGrid> 찾을 수 없습니다 또는 존재 하지 않거나, 프로젝트가.NET Framework 4 이상을 대상으로 하는지 확인 합니다. 자세한 내용은 [방법: .NET Framework의 버전을 대상](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)합니다.
@@ -387,7 +387,7 @@ ms.locfileid: "53150747"
 
     - `buttonStyle`: 형식을 지정 하는 <xref:System.Windows.Controls.Button> 에서 `ExpenseItHome.xaml`합니다.
 
-    스타일의 자식 이며 리소스는는 <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> 속성 요소입니다. 이 위치에서 스타일은 응용 프로그램의 모든 요소에 적용됩니다. .NET Framework 응용 프로그램에서 리소스를 사용 하 여 예제를 참조 하세요 [사용 하 여 응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md)합니다.
+    스타일의 자식 이며 리소스는는 <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> 속성 요소입니다. 이 위치에서 스타일은 애플리케이션의 모든 요소에 적용됩니다. .NET Framework 응용 프로그램에서 리소스를 사용 하 여 예제를 참조 하세요 [사용 하 여 응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md)합니다.
 
 3. 오픈 *`ExpenseItHome.xaml`* 합니다.
 
@@ -469,7 +469,7 @@ ms.locfileid: "53150747"
 
     [!code-xaml[ExpenseIt#32](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#32)]
 
-5. 응용 프로그램을 빌드 및 실행합니다.
+5. 애플리케이션을 빌드 및 실행합니다.
 
 6. 사용자를 선택 하 고 다음을 선택 합니다 **보기** 단추입니다.
 
@@ -497,7 +497,7 @@ ms.locfileid: "53150747"
 - [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
 - [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)
 
-응용 프로그램을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
+애플리케이션을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
 - [응용 프로그램 개발](../../../../docs/framework/wpf/app-development/index.md)
 - [컨트롤](../../../../docs/framework/wpf/controls/index.md)

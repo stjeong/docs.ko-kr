@@ -4,16 +4,16 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 72a3e7ef8043e0016cefb45a4182b5c2e3061753
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: b8f19fc55437d3a3b89c8a131c47813751b4d8bc
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029712"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54147839"
 ---
 # <a name="use-enumeration-classes-instead-of-enum-types"></a>열거형 형식 대신 열거형 클래스 사용하기
 
-[열거형](../../../../docs/csharp/language-reference/keywords/enum.md)(또는 줄여서 *열거형 형식*)은 정수 형식에 대한 씬 언어 래퍼입니다. 닫힌 값 집합에서 값을 저장하는 경우 해당 사용을 제한해야 할 수도 있습니다. 크기(소규모, 중간 규모, 대규모)를 기반으로 하는 분류가 좋은 예입니다. 제어 흐름 또는 추가 추상화에 열거형을 사용하는 것은 [코드 스멜](http://deviq.com/code-smells/)일 수 있습니다. 이 형식으로 사용하면 열거형의 값을 확인하는 여러 제어 흐름 문을 사용하여 취약한 코드가 발생합니다.
+[열거형](../../../../docs/csharp/language-reference/keywords/enum.md)(또는 줄여서 *열거형 형식*)은 정수 형식에 대한 씬 언어 래퍼입니다. 닫힌 값 집합에서 값을 저장하는 경우 해당 사용을 제한해야 할 수도 있습니다. 크기(소규모, 중간 규모, 대규모)를 기반으로 하는 분류가 좋은 예입니다. 제어 흐름 또는 추가 추상화에 열거형을 사용하는 것은 [코드 스멜](https://deviq.com/code-smells/)일 수 있습니다. 이 형식으로 사용하면 열거형의 값을 확인하는 여러 제어 흐름 문을 사용하여 취약한 코드가 발생합니다.
 
 대신 개체 지향 언어의 모든 풍부한 기능을 활성화하는 열거형 클래스를 만들 수 있습니다.
 

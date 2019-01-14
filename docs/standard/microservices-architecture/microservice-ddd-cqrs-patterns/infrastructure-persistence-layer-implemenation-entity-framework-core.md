@@ -4,12 +4,12 @@ description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 5e0e7adad7ad2d679ccff2f1c6a421922ce2523d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 01e326b049ab8bb8d9c7f8c78acfc272d1d57ae9
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151020"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54146136"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>Entity Framework Core를 사용하여 인프라 지속성 레이어 구현
 
@@ -112,7 +112,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 }
 ```
 
-속성 대신 필드를 사용하면 `OrderItem` 엔터티는 마치 `List<OrderItem>` 속성이 있는 것처럼 유지됩니다. 그러나 주문에 새 항목을 추가하기 위한 단일 접근자인 `AddOrderItem` 메서드를 노출합니다. 결과적으로 동작 및 데이터는 서로 연결되고 도메인 모델을 사용하는 응용 프로그램 코드 전체에서 일관적으로 유지됩니다.
+속성 대신 필드를 사용하면 `OrderItem` 엔터티는 마치 `List<OrderItem>` 속성이 있는 것처럼 유지됩니다. 그러나 주문에 새 항목을 추가하기 위한 단일 접근자인 `AddOrderItem` 메서드를 노출합니다. 결과적으로 동작 및 데이터는 서로 연결되고 도메인 모델을 사용하는 애플리케이션 코드 전체에서 일관적으로 유지됩니다.
 
 ## <a name="implement-custom-repositories-with-entity-framework-core"></a>Entity Framework Core를 사용하여 사용자 지정 리포지토리 구현
 
@@ -164,7 +164,7 @@ EF DbContext는 종속성 주입을 통해 생성자를 거쳐 가져옵니다. 
 
 각 리포지토리 클래스 내에서, 관련 집계에 의해 포함되는 엔터티 상태를 업데이트하는 지속성 메서드를 배치해야 합니다. 집계와 집계 관련 리포지토리 사이에는 일대일 관계가 성립합니다. 집계 루트 엔터티 개체가 EF 그래프 내에 자식 엔터티를 포함할 수 있다는 점을 고려합니다. 예를 들어 구매자가 관련 자식 엔터티로 여러 지불 방법을 보유할 수 있습니다.
 
-eShopOnContainers에서 마이크로 서비스를 주문하는 방식도 CQS/CQRS 기반이므로 대부분의 쿼리가 사용자 지정 리포지토리에서 구현되지 않습니다. 개발자는 집계, 집계별 사용자 지정 리포지토리 그리고 일반적으로 DDD에서 부과하는 제한 없이 프레젠테이션 레이어에 필요한 쿼리 및 조인을 자유롭게 만들 수 있습니다. 이 가이드에서 권장하는 대부분의 사용자 지정 리포지토리는 여러 업데이트 또는 트랜잭션 메서드를 갖고 있지만 데이터를 가져오는 데 필요한 쿼리 메서드만 업데이트해야 합니다. 예를 들어 BuyerRepository 리포지토리는 FindAsync 메서드를 구현합니다. 응용 프로그램에서 특정 구매자의 존재 여부를 알아야만 주문과 관련된 새 구매자를 만들 수 있기 때문입니다.
+eShopOnContainers에서 마이크로 서비스를 주문하는 방식도 CQS/CQRS 기반이므로 대부분의 쿼리가 사용자 지정 리포지토리에서 구현되지 않습니다. 개발자는 집계, 집계별 사용자 지정 리포지토리 그리고 일반적으로 DDD에서 부과하는 제한 없이 프레젠테이션 레이어에 필요한 쿼리 및 조인을 자유롭게 만들 수 있습니다. 이 가이드에서 권장하는 대부분의 사용자 지정 리포지토리는 여러 업데이트 또는 트랜잭션 메서드를 갖고 있지만 데이터를 가져오는 데 필요한 쿼리 메서드만 업데이트해야 합니다. 예를 들어 BuyerRepository 리포지토리는 FindAsync 메서드를 구현합니다. 애플리케이션에서 특정 구매자의 존재 여부를 알아야만 주문과 관련된 새 구매자를 만들 수 있기 때문입니다.
 
 그러나 프레젠테이션 레이어 또는 클라이언트 앱으로 보낼 데이터를 가져오는 실제 쿼리 메서드는 앞서 언급했듯이 Dapper를 사용하여 유연한 쿼리를 기반으로 CQRS 쿼리로 구현됩니다.
 
@@ -172,7 +172,7 @@ eShopOnContainers에서 마이크로 서비스를 주문하는 방식도 CQS/CQR
 
 Entity Framework DbContext 클래스는 작업 단위 및 리포지토리 패턴을 기반으로 하며, ASP.NET Core MVC 컨트롤러처럼 코드에서 직접 사용할 수 있습니다. eShopOnContainers의 CRUD 카탈로그 마이크로 서비스에서 하듯이, 이 방법으로 가장 간단한 코드를 만들 수 있습니다. 최대한 간단한 코드를 원하는 경우 여러 개발자들이 하는 것처럼 DbContext 클래스를 직접 사용할 수 있습니다.
 
-그러나 사용자 지정 리포지토리를 구현하면 보다 복잡한 마이크로 서비스 또는 응용 프로그램을 구현할 때 여러 가지 이점이 있습니다. 작업 단위 및 리포지토리 패턴은 응용 프로그램 및 도메인 모델 레이어에서 분리되는 인프라 지속성 레이어를 캡슐화하는 데 사용됩니다. 이러한 패턴을 구현하면 모의 리포지토리를 사용하여 데이터베이스에 대한 액세스를 시뮬레이션할 수 있습니다.
+그러나 사용자 지정 리포지토리를 구현하면 보다 복잡한 마이크로 서비스 또는 애플리케이션을 구현할 때 여러 가지 이점이 있습니다. 작업 단위 및 리포지토리 패턴은 애플리케이션 및 도메인 모델 레이어에서 분리되는 인프라 지속성 레이어를 캡슐화하는 데 사용됩니다. 이러한 패턴을 구현하면 모의 리포지토리를 사용하여 데이터베이스에 대한 액세스를 시뮬레이션할 수 있습니다.
 
 그림 7-18에서는 리포지토리를 사용하지 않을 때와(EF DbContext를 직접 사용) 리포지토리를 사용하여 좀 더 쉽게 리포지토리 모형을 만들 때의 차이를 볼 수 있습니다.
 
@@ -182,7 +182,7 @@ Entity Framework DbContext 클래스는 작업 단위 및 리포지토리 패턴
 
 모형을 만들 때 여러 가지 대안이 있습니다. 리포지토리 모형만 만들 수도 있고 작업 단위 전체의 모형을 만들 수도 있습니다. 일반적으로 리포지토리 모형만 만들면 충분하며, 복잡하게 작업 단위 전체를 추상화하고 모형을 만들 필요는 없습니다.
 
-뒤에서 응용 프로그램 계층을 살펴볼 때, ASP.NET Core에서 종속성 주입의 작동 원리와 리포지토리를 사용할 때 구현 방식을 볼 수 있습니다.
+뒤에서 애플리케이션 계층을 살펴볼 때, ASP.NET Core에서 종속성 주입의 작동 원리와 리포지토리를 사용할 때 구현 방식을 볼 수 있습니다.
 
 요약하자면, 사용자 지정 리포지토리를 사용하면 데이터 계층 상태의 영향을 받지 않는 단위 테스트로 코드를 보다 쉽게 테스트할 수 있습니다. Entity Framework를 통해 실제 데이터베이스에 액세스하는 테스트를 실행하는 경우 통합 테스트가 아닌 단위 테스트이며, 속도가 훨씬 느립니다.
 
@@ -454,7 +454,7 @@ public IEnumerable<T> List(ISpecification<T> spec)
   [*https://docs.microsoft.com/ef/core/modeling/relational/tables*](https://docs.microsoft.com/ef/core/modeling/relational/tables)
 
 - **Entity Framework Core를 사용하여 키를 생성하도록 HiLo 사용** \
-  [*http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/*](http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
+  [*https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/*](https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
 
 - **지원 필드** \
   [*https://docs.microsoft.com/ef/core/modeling/backing-field*](https://docs.microsoft.com/ef/core/modeling/backing-field)

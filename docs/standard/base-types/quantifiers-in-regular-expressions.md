@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a982082611760e4f901c427af25a0a49a4e243a1
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 4718dadddb2ad88ece05312b2f2b7232271d5b0e
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221390"
 ---
 # <a name="quantifiers-in-regular-expressions"></a>정규식의 수량자
 수량자는 찾을 일치 항목의 입력에 있어야 하는 문자, 그룹 또는 문자 클래스의 인스턴스 수를 지정합니다.  다음 테이블에서는 .NET에서 지원하는 수량자를 보여 줍니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "48580467"
 ### <a name="match-zero-or-more-times-"></a>0번 이상 일치: *  
  `*` 수량자는 이전 요소를 0번 이상 일치시킵니다. 이는 `{0,}` 수량자와 같습니다. `*`는 게으른 수량자가 `*?`인 탐욕적 수량자입니다.  
   
- 다음 예제에서는 이 정규식을 설명합니다. 입력 문자열에서 9자리 숫자 중에 5개는 패턴과 일치하고 4개(`95`, `929`, `9129` 및 `9919`)는 일치하지 않습니다.  
+ 다음 예제에서는 이 정규식을 설명합니다. 입력 문자열에서 9자리 숫자 중에 5개는 패턴과 일치하고 4개(`95`, `929`, `9219` 및 `9919`)는 일치하지 않습니다.  
   
  [!code-csharp[RegularExpressions.Quantifiers#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#1)]
  [!code-vb[RegularExpressions.Quantifiers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#1)]  
@@ -260,7 +260,7 @@ ms.locfileid: "48580467"
   
  캡처의 최소 및 최대 수를 정의하는 캡처링 그룹과 캡처의 고정 수를 정의하는 그룹 사이의 실질적인 차이를 확인하려면 정규식 패턴 `(a\1|(?(1)\1)){0,2}` 및 `(a\1|(?(1)\1)){2}`를 사용하는 것이 좋습니다. 두 정규식은 단일 캡처링 그룹으로 구성되며 다음 테이블과 같이 정의됩니다.  
   
-|패턴|설명|  
+|무늬|설명|  
 |-------------|-----------------|  
 |`(a\1`|첫 번째 캡처된 그룹의 값과 함께 "a"를 찾거나…|  
 |<code>&#124;(?(1)</code>|… 또는 첫 번째 캡처된 그룹이 정의되어 있는지 여부를 테스트합니다. `(?(1)` 구문은 캡처링 그룹을 정의하지 않습니다.|  

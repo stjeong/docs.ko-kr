@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - while keyword [C#]
 ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59
-ms.openlocfilehash: d360db7b9b740bef997327dda9b628c1edab0f35
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 6e485bc80a213be6a5d0da8a00c8ca718f867efb
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54222938"
 ---
 # <a name="while-c-reference"></a>while(C# 참조)
 
@@ -25,7 +25,7 @@ ms.locfileid: "53242570"
 
 [goto](goto.md), [return](return.md) 또는 [throw](throw.md) 문으로 `while` 루프를 종료할 수도 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `while` 문의 사용법을 보여 줍니다. **Run**을 선택하여 예제 코드를 실행합니다. 그런 다음, 코드를 수정하고 다시 실행할 수 있습니다.
 
@@ -37,8 +37,8 @@ ms.locfileid: "53242570"
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../index.md)  
-- [C# 프로그래밍 가이드](../../programming-guide/index.md)  
-- [C# 키워드](index.md)  
-- [반복 문](iteration-statements.md)  
-- [do 문](do.md)  
+- [C# 참조](../index.md)
+- [C# 프로그래밍 가이드](../../programming-guide/index.md)
+- [C# 키워드](index.md)
+- [반복 문](iteration-statements.md)
+- [do 문](do.md)

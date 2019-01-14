@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a94f9c650927aee0f120ee3c0b1199b6c977ef0e
-ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
+ms.openlocfilehash: 50ea2b1fefe5c41f0c67ab8c12362f19ea125b5b
+ms.sourcegitcommit: 90775b20343b6ad831af6f5380f8ab7553abb16b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "53776736"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54186217"
 ---
 # <a name="net-framework-deployment-guide-for-administrators"></a>관리자를 위한 .NET Framework 배포 가이드
 이 단계별 문서에서는 시스템 관리자가 Microsoft System Center Configuration Manager를 사용하여 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 및 해당 시스템 종속성을 네트워크 전체에 배포할 수 있는 방법에 대해 설명합니다. 이 문서에서는 .NET Framework 4의 최소 요구 사항이 모든 대상 클라이언트 컴퓨터에서 충족되는 것으로 가정합니다. [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 설치를 위한 소프트웨어와 하드웨어 요구 사항 목록은 [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
@@ -254,10 +254,11 @@ ms.locfileid: "53776736"
   
  기타 오류 코드  
   
--   [Windows Installer 오류 코드](/windows/desktop/msi/error-codes)  
-  
--   [Windows 업데이트 에이전트 결과 코드](/security-updates/WindowsUpdateServices/18127055)  
-  
-## <a name="see-also"></a>참고 항목  
-- [개발자를 위한 배포 가이드](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
+-   [Windows Installer 오류 코드](/windows/desktop/msi/error-codes)
+
+-   [Windows 업데이트 에이전트 결과 코드](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
+
+## <a name="see-also"></a>참고 항목
+
+- [개발자를 위한 배포 가이드](../../../docs/framework/deployment/deployment-guide-for-developers.md)
 - [시스템 요구 사항](../../../docs/framework/get-started/system-requirements.md)
