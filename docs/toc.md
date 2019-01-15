@@ -205,7 +205,6 @@
 ### [액세스 가능성](framework/ui-automation/)
 ### [데이터 및 모델링](framework/data/)
 ### [클라이언트 애플리케이션](framework/develop-client-apps.md)
-#### [일반 클라이언트 기술](framework/common-client-technologies/)
 #### [Windows Presentation Foundation](framework/wpf/)
 #### [Windows Forms](framework/winforms/)
 ### [WCF를 사용하여 개발한 서비스 기반 애플리케이션](framework/wcf/)
@@ -452,9 +451,9 @@
 ### [F# 구성 요소 디자인 지침](fsharp/style-guide/component-design-guidelines.md)
 
 ## [Azure에서 F# 사용](fsharp/using-fsharp-on-azure/index.md)
-### [F#을 사용하여 Azure Blob Storage 시작](fsharp/using-fsharp-on-azure/blob-storage.md)
-### [F#을 사용하여 Azure File Storage 시작](fsharp/using-fsharp-on-azure/file-storage.md)
-### [F#을 사용하여 Azure Queue Storage 시작](fsharp/using-fsharp-on-azure/queue-storage.md)
+### [F#을 사용하여 Azure Blob 스토리지 시작](fsharp/using-fsharp-on-azure/blob-storage.md)
+### [F#을 사용하여 Azure File 스토리지 시작](fsharp/using-fsharp-on-azure/file-storage.md)
+### [F#을 사용하여 Azure Queue 스토리지 시작](fsharp/using-fsharp-on-azure/queue-storage.md)
 ### [F#을 사용하여 Azure Table Storage 시작](fsharp/using-fsharp-on-azure/table-storage.md)
 ### [F# Azure 종속성에 대한 패키지 관리](fsharp/using-fsharp-on-azure/package-management.md)
 <!-- End F# Content -->
