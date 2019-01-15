@@ -1,5 +1,5 @@
 ---
-title: '&lt;제거&gt; 요소에 대 한 &lt;configSections&gt;'
+title: '&lt;제거할&gt; 요소에 대 한 &lt;configSections&gt;'
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/remove
@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 6555981edeb6f7f088fb12c710d0146cf58d5be1
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 11a930120c375616d73faae68a6d6807c2f633cb
+ms.sourcegitcommit: 75567a3cb437009db55949c6092f4e77ed1a9da4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752418"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54307229"
 ---
 # <a name="remove-element-for-configsections"></a>\<제거 > 요소에 대 한 \<configSections >
 
 미리 정의 된 섹션 또는 섹션 그룹을 제거합니다.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections >**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;**\<제거 >**
+&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
+&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## <a name="syntax"></a>구문
 
@@ -42,19 +42,19 @@ ms.locfileid: "32752418"
 | --- | ----------- |
 | [**\<configSections >** 요소](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | 구성 섹션 및 네임 스페이스 선언을 포함합니다. |
 
-# <a name="child-elements"></a>자식 요소
+## <a name="child-elements"></a>자식 요소
 
 없음
 
 ## <a name="remarks"></a>설명
 
-사용할 수는  **\<제거 >** 구성 파일 계층 구조에서 더 높은 수준에서 정의 된 응용 프로그램에서 섹션 및 섹션 그룹을 제거할 요소입니다.
+사용할 수는  **\<제거 >** 구성 파일 계층 구조의 상위 수준에 정의 된 응용 프로그램에서 섹션 및 섹션 그룹을 제거할 요소입니다.
 
 ## <a name="example"></a>예제
 
-사용 하는 방법을 보여 주는 다음 예제는  **\<제거 >** 컴퓨터 구성 파일에 이전에 정의 된 섹션을 제거할 응용 프로그램 구성 파일의 요소입니다.
+다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다  **\<제거 >** 컴퓨터 구성 파일에서 이전에 정의 된 섹션을 제거할 응용 프로그램 구성 파일의 요소입니다.
 
-다음 컴퓨터 구성 파일 코드 선언 섹션  **\<sampleSection >**:
+다음 컴퓨터 구성 파일 코드 섹션을 선언  **\<sampleSection >**:
 
 ```xml
 <!-- Machine.config file -->
@@ -69,7 +69,7 @@ ms.locfileid: "32752418"
 </configuration>
 ```
 
-다음 응용 프로그램 구성 파일 코드 제거는  **\<sampleSection >** 섹션. 제거 하면 응용 프로그램의 설정을 검색할 수 없습니다  **\<sampleSection >** 합니다.
+다음 응용 프로그램 구성 파일 코드를 제거 합니다  **\<sampleSection >** 섹션입니다. 제거한 후 응용 프로그램의 설정을 검색할 수 없습니다  **\<sampleSection >** 합니다.
 
 ```xml
 <!-- Application configuration file -->
@@ -82,8 +82,8 @@ ms.locfileid: "32752418"
 
 ## <a name="configuration-file"></a>구성 파일
 
-이 요소는 응용 프로그램 구성 파일을 컴퓨터 구성 파일에 사용할 수 있습니다 (*Machine.config*), 및 *Web.config* 응용 프로그램 디렉터리 수준에서 포함 되지 않은 파일입니다.
+응용 프로그램 구성 파일을 컴퓨터 구성 파일에서이 요소를 사용할 수 있습니다 (*Machine.config*), 및 *Web.config* 응용 프로그램 디렉터리 수준에서 포함 되지 않은 파일입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+[.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
