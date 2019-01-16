@@ -68,7 +68,7 @@ ms.locfileid: "54030401"
   
 <a name="character_classes"></a>   
 ## <a name="character-classes"></a>문자 클래스  
- 문자 클래스는 문자 집합 중 하나를 찾습니다. 문자 클래스에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [문자 클래스](../../../docs/standard/base-types/character-classes-in-regular-expressions.md)을 참조하세요.  
+ 문자 클래스는 문자 집합 중 하나를 찾습니다. 문자 클래스에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [문자 클래스](../../../docs/standard/base-types/character-classes-in-regular-expressions.md)를 참조하세요. 
   
 |문자 클래스|설명|무늬|요청 내용|  
 |---------------------|-----------------|-------------|-------------|  
@@ -113,7 +113,7 @@ ms.locfileid: "54030401"
 |`(?<` *name* `>` *subexpression* `)`|일치하는 하위 식을 명령된 그룹에 캡처합니다.|`(?<double>\w)\k<double>`|"deep"의 "ee"|  
 |`(?<` *이름1* `-` *이름2* `>` *subexpression* `)`|균형 조정 그룹 정의를 정의합니다. 자세한 내용은 [그룹화 구문](grouping-constructs-in-regular-expressions.md)의 "균형 조정 그룹 정의" 섹션을 참조하세요.|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"3+2^((1-3)\*(3-1))"의 "((1-3)\*(3-1))"|  
 |`(?:` *subexpression* `)`|비캡처 그룹을 정의합니다.|`Write(?:Line)?`|"Console.WriteLine()"의 "WriteLine"<br /><br /> "Console.Write(값)"의 "Write"|  
-|`(?imnsx-imnsx:` *subexpression* `)`|*subexpression*내에서 지정된 옵션을 적용하거나 사용하지 않도록 설정합니다. 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.|`A\d{2}(?i:\w+)\b`|"A12xl A12XL a12xl"의 "A12xl", "A12XL"|  
+|`(?imnsx-imnsx:` *subexpression* `)`|*subexpression* 내에서 지정된 옵션을 적용하거나 사용하지 않도록 설정합니다. 자세한 내용은 [정규식 옵션](regular-expression-options.md)을 참조하세요.|`A\d{2}(?i:\w+)\b`|"A12xl A12XL a12xl"의 "A12xl", "A12XL"| 
 |`(?=` *subexpression* `)`|너비가 0인 긍정 우측 어설션입니다.|`\w+(?=\.)`|"He is. The dog ran. The sun is out."의 "is", "ran" 및 "out"|  
 |`(?!` *subexpression* `)`|너비가 0인 부정 우측 어설션입니다.|`\b(?!un)\w+\b`|"unsure sure unity used"의 "sure", "used"|  
 |`(?<=` *subexpression* `)`|너비가 0인 긍정 좌측 어설션입니다.|`(?<=19)\d{2}\b`|"1851 1999 1950 1905 2003"의 "99", "50", "05"|  
@@ -124,7 +124,7 @@ ms.locfileid: "54030401"
   
 <a name="quantifiers"></a>   
 ## <a name="quantifiers"></a>수량자  
- 수량자는 이전 요소(문자, 그룹 또는 문자 클래스)의 인스턴스가 입력 문자열에 몇 개 있어야 일치 항목으로 간주되는지를 지정합니다. 수량자에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [수량자](quantifiers-in-regular-expressions.md)을 참조하세요.  
+ 수량자는 이전 요소(문자, 그룹 또는 문자 클래스)의 인스턴스가 입력 문자열에 몇 개 있어야 일치 항목으로 간주되는지를 지정합니다. 수량자에는 다음 표에 나와 있는 언어 요소가 포함됩니다. 자세한 내용은 [수량자](quantifiers-in-regular-expressions.md)를 참조하세요. 
   
 |수량자|설명|무늬|요청 내용|  
 |----------------|-----------------|-------------|-------------|  
