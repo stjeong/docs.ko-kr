@@ -9,12 +9,12 @@ helpviewer_keywords:
 - LINQ to SQL, DBML files
 - LINQ to SQL, SQLMetal
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-ms.openlocfilehash: 94ed6328857f6e77cea150d69719322d3aaaea69
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 9bdffe76aaf9f41bfbba99bae9d2d3fa9b329d4a
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46002894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221832"
 ---
 # <a name="sqlmetalexe-code-generation-tool"></a>SqlMetal.exe(코드 생성 도구)
 SqlMetal 명령줄 도구는 [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] 의 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]구성 요소에 사용할 코드 및 매핑을 생성합니다. 이 항목의 뒷부분에 나오는 옵션을 적용하면 SqlMetal을 통해 다음을 포함하는 다양한 작업을 수행할 수 있습니다.  
@@ -30,7 +30,7 @@ SqlMetal 명령줄 도구는 [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-
 > [!NOTE]
 >  [!INCLUDE[vs_ordesigner_long](../../../includes/vs-ordesigner-long-md.md)] 를 사용하는 개발자는 Visual Studio를 사용하여 엔터티 클래스를 생성할 수도 있습니다. 명령줄 방식을 사용하면 대규모 데이터베이스에 대해 효율적으로 크기를 조정할 수 있습니다. SqlMetal은 명령줄 도구이므로 빌드 프로세스에서 사용할 수 있습니다.  
   
- 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요. 명령 프롬프트에 다음을 입력합니다.  
+ 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요. 명령 프롬프트에 다음을 입력합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,10 +47,10 @@ sqlmetal [options] [<input file>]
 |------------|-----------------|  
 |**/server:** *\<name>*|데이터베이스 서버 이름을 지정합니다.|  
 |**/database:** *\<name>*|서버의 데이터베이스 카탈로그를 지정합니다.|  
-|**/user:** *\<name>*|로그온 사용자 ID를 지정합니다. 기본적으로는 Windows 인증이 사용됩니다.|  
-|**/password:** *\<password>*|로그온 암호를 지정합니다. 기본적으로는 Windows 인증이 사용됩니다.|  
+|**/user:** *\<name>*|로그온 사용자 ID를 지정합니다. 기본값: Windows 인증 사용.|  
+|**/password:** *\<password>*|로그온 암호를 지정합니다. 기본값: Windows 인증 사용.|  
 |**/conn:** *\<connection string>*|데이터베이스 연결 문자열을 지정합니다. **/server**, **/database**, **/user**또는 **/password** 옵션과 함께 사용할 수 없습니다.<br /><br /> 연결 문자열에 파일 이름을 포함하지 마세요. 대신 파일 이름을 명령줄에 입력 파일로 추가합니다. 예를 들어 **sqlmetal /code:"c:\northwind.cs" /language:csharp "c:\northwnd.mdf"** 에서는 "c:\northwnd.mdf"를 입력 파일로 지정합니다.|  
-|**/timeout:** *\<seconds>*|SqlMetal이 데이터베이스에 액세스할 때의 시간 제한 값을 지정합니다. 기본값은 0(시간 제한 없음)입니다.|  
+|**/timeout:** *\<seconds>*|SqlMetal이 데이터베이스에 액세스할 때의 시간 제한 값을 지정합니다. 기본값: 0(시간 제한 없음).|  
   
  **추출 옵션**  
   
@@ -72,12 +72,12 @@ sqlmetal [options] [<input file>]
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/language:** *\<language>*|소스 코드 언어를 지정합니다.<br /><br /> 유효한 *\<language>*: vb, csharp.<br /><br /> 기본적으로 이 언어는 코드 파일 이름의 확장명에서 파생됩니다.|  
+|**/language:** *\<language>*|소스 코드 언어를 지정합니다.<br /><br /> 유효한 *\<language>*: vb, csharp.<br /><br /> 기본값: 코드 파일 이름의 확장명에서 파생됩니다.|  
 |**/namespace:** *\<name>*|생성된 코드의 네임스페이스를 지정합니다. 기본적으로는 네임스페이스가 없습니다.|  
-|**/context:** *\<type>*|데이터 컨텍스트 클래스의 이름을 지정합니다. 기본적으로 이 이름은 데이터베이스 이름에서 파생됩니다.|  
-|**/entitybase:** *\<type>*|생성된 코드에서 엔터티 클래스의 기본 클래스를 지정합니다. 기본적으로 엔터티에는 기본 클래스가 없습니다.|  
+|**/context:** *\<type>*|데이터 컨텍스트 클래스의 이름을 지정합니다. 기본값: 데이터베이스 이름에서 파생됩니다.|  
+|**/entitybase:** *\<type>*|생성된 코드에서 엔터티 클래스의 기본 클래스를 지정합니다. 기본값: 엔터티에 기본 클래스가 없습니다.|  
 |**/pluralize**|클래스 및 멤버 이름을 자동으로 복수 및 단수로 지정합니다.<br /><br /> 이 옵션은 미국에서만 사용할 수 있습니다. 영어 버전입니다.|  
-|**/serialization:** *\<option>*|serialize 가능한 클래스를 생성합니다.<br /><br /> 유효한 *\<option>*: None, Unidirectional. 기본값은 None입니다.<br /><br /> 자세한 내용은 [Serialization](../../../docs/framework/data/adonet/sql/linq/serialization.md)을 참조하세요.|  
+|**/serialization:** *\<option>*|serialize 가능한 클래스를 생성합니다.<br /><br /> Valid *\<option>*: None, Unidirectional. 기본값: 없음<br /><br /> 자세한 내용은 [Serialization](../../../docs/framework/data/adonet/sql/linq/serialization.md)을 참조하세요.|  
   
  **입력 파일**  
   
@@ -85,7 +85,7 @@ sqlmetal [options] [<input file>]
 |------------|-----------------|  
 |**\<input file>**|SQL Server Express .mdf 파일, [!INCLUDE[ssEW](../../../includes/ssew-md.md)] .sdf 파일 또는 .dbml 중간 파일을 지정합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  실제로 SqlMetal 기능에는 다음과 같은 두 단계가 포함됩니다.  
   
 -   데이터베이스의 메타데이터를 .dbml 파일에 추출  

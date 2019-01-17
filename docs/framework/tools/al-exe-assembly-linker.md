@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: b5382965-0053-47cf-b92f-862860275a01
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b4fe4c4f89056ae57c3516149a41a5a3bea4fcd2
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: d5fe3d3b913724729bb7cc8582450dfb6f50ee53
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48848020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223197"
 ---
 # <a name="alexe-assembly-linker"></a>Al.exe(어셈블리 링커)
 
@@ -23,7 +23,7 @@ ms.locfileid: "48848020"
 > [!NOTE]
 > Visual Studio 2008부터 C# 및 Visual Basic 컴파일러가 모두 Win32 매니페스트를 어셈블리에 자동으로 포함합니다. 자세한 내용은 [/win32manifest(C# 컴파일러 옵션)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md)을 참조하세요.
 
-이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
+이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
 
 명령 프롬프트에 다음을 입력합니다.
 
@@ -48,17 +48,17 @@ al sources options
 | 옵션 | 설명 |
 | ------ | ----------- |
 |**/algid:** `id`|어셈블리 매니페스트가 포함된 파일을 제외하고 다중 파일 어셈블리에 있는 모든 파일을 해시하는 알고리즘을 지정합니다. 기본 알고리즘은 CALG_SHA1입니다. 다른 알고리즘에 대해서는 Platform SDK 설명서의 ALG_ID를 참조하세요. .NET Framework의 첫 릴리스에서는 CALG_SHA1과 CALG_MD5만 유효합니다.<br /><br /> 해시 값은 어셈블리 매니페스트의 파일 테이블에 저장됩니다. 설치 및 로드할 때 어셈블리의 파일을 해시와 비교하여 확인합니다.<br /><br /> 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyAlgorithmIdAttribute>)으로 지정할 수도 있습니다.|
-|**/base[address]:** `addr`|런타임에 DLL이 사용자의 컴퓨터에 로드되는 주소를 지정합니다. 운영 체제가 프로세스 공간에서 DLL을 재배치하게 하지 않고 DLL의 기본 주소를 직접 지정하면 응용 프로그램의 로드 속도가 빨라집니다.|
+|**/base[address]:** `addr`|런타임에 DLL이 사용자의 컴퓨터에 로드되는 주소를 지정합니다. 운영 체제가 프로세스 공간에서 DLL을 재배치하게 하지 않고 DLL의 기본 주소를 직접 지정하면 애플리케이션의 로드 속도가 빨라집니다.|
 |**/bugreport**: `filename`|버그를 보고하기 위한 정보가 포함된 파일(`filename`)을 만듭니다.|
 |**/comp[any]:** `text`|어셈블리의 Company 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 `text`가 파일의 `Company` 속성으로 나타납니다. **/win32res**를 지정하면 파일 탐색기에서 리소스 파일의 회사 정보가 `Company` 속성으로 파일 탐색기에 나타납니다.<br /><br /> 텍스트가 빈 문자열("")이면 Win32 `Company` 리소스가 단일 공백으로 표시됩니다.<br /><br /> **/win32res**를 지정하면 **/company**는 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyCompanyAttribute>)으로 지정할 수도 있습니다.|
 |**/config[uration]:** `text`|어셈블리의 Configuration 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 Configuration 리소스가 단일 공백으로 표시됩니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyConfigurationAttribute>)으로 지정할 수도 있습니다.|
 |**/copy[right]:** `text`|어셈블리의 Copyright 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 **/copyright**가 Win32 Copyright(저작권) 리소스로 나타납니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 Copyright 리소스가 단일 공백으로 표시됩니다.<br /><br /> **/win32res**를 지정하면 **/copyright**는 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyCopyrightAttribute>)으로 지정할 수도 있습니다.|
 |**/c[ulture]:** `text`|어셈블리에 연결할 문화권 문자열을 지정합니다. "Tags for the Identification of Languages"라는 제목의 인터넷 RFC(Requests for Comments) 문서 1766에서 정의하는 값이 문화권의 유효한 값입니다.<br /><br /> `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 기본 문화권 문자열은 없습니다. 이 문자열을 리플렉션과 함께 볼 수 있습니다.<br /><br /> 유효한 `text` 문자열에 대한 자세한 내용은 <xref:System.Globalization.CultureInfo>를 참조하세요.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyCultureAttribute>)으로 지정할 수도 있습니다.|
-|**/delay[sign][+&#124;-]**|어셈블리를 완전히 서명할지, 아니면 부분적으로 서명할지를 지정합니다. 완전히 서명된 어셈블리가 필요하면 **/delaysign-** 를 사용합니다. 어셈블리에 공개 키만 포함하려면 **/delaysign+** 를 사용합니다.<br /><br /> 완전히 서명된 어셈블리를 요청할 경우 *Al.exe*는 매니페스트(어셈블리 메타데이터)가 포함된 파일을 해시하고 공개 키로 해당 해시에 서명합니다. 결과로 생성되는 디지털 서명은 매니페스트가 포함된 파일에 저장됩니다. 어셈블리 서명이 연기된 경우 *Al.exe*는 시그니처를 계산하거나 저장하지 않고 나중에 시그니처를 추가할 수 있도록 파일에 공간을 예약합니다.<br /><br /> 기본값은 **/delaysign-** 입니다.<br /><br /> **/delaysign** 옵션은 **/keyfile** 또는 **/keyname**과 함께 사용하지 않으면 효과가 없습니다.<br /><br /> 예를 들어 **/delaysign+** 를 사용하면 테스터를 통해 전역 캐시에 어셈블리를 넣을 수 있습니다. 테스트를 마친 후 어셈블리에 개인 키를 포함하여 어셈블리에 완전히 서명할 수 있습니다.<br /><br /> 참고: [*Gacutil.exe*(전역 어셈블리 캐시 도구)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)를 사용하여 전역 캐시에 서명이 연기된 어셈블리를 넣으려면, 먼저 [*Sn.exe*(강력한 이름 도구)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)를 사용하여 확인을 건너뛰는 어셈블리를 등록합니다. 예를 들어, `Sn.exe –Vr delaySignedAssembly`을 입력합니다. 개발에서만 이 기능을 사용하세요.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyDelaySignAttribute>)으로 지정할 수도 있습니다.|
+|**/delay[sign][+&#124;-]**|어셈블리를 완전히 서명할지, 아니면 부분적으로 서명할지를 지정합니다. 완전히 서명된 어셈블리가 필요하면 **/delaysign-** 를 사용합니다. 어셈블리에 공개 키만 포함하려면 **/delaysign+** 를 사용합니다.<br /><br /> 완전히 서명된 어셈블리를 요청할 경우 *Al.exe*는 매니페스트(어셈블리 메타데이터)가 포함된 파일을 해시하고 공개 키로 해당 해시에 서명합니다. 결과로 생성되는 디지털 서명은 매니페스트가 포함된 파일에 저장됩니다. 어셈블리 서명이 연기된 경우 *Al.exe*는 시그니처를 계산하거나 저장하지 않고 나중에 시그니처를 추가할 수 있도록 파일에 공간을 예약합니다.<br /><br /> 기본값은 **/delaysign-** 입니다.<br /><br /> **/delaysign** 옵션은 **/keyfile** 또는 **/keyname**과 함께 사용하지 않으면 효과가 없습니다.<br /><br /> 예를 들어 **/delaysign+** 를 사용하면 테스터를 통해 전역 캐시에 어셈블리를 넣을 수 있습니다. 테스트를 마친 후 어셈블리에 개인 키를 포함하여 어셈블리에 완전히 서명할 수 있습니다.<br /><br /> 참고: [*Gacutil.exe*(전역 어셈블리 캐시 도구)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)를 사용하여 전역 캐시에 서명이 연기된 어셈블리를 넣으려면, 먼저 [*Sn.exe*(강력한 이름 도구)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)를 사용하여 확인을 건너뛰는 어셈블리를 등록합니다. 예를 들어 `Sn.exe –Vr delaySignedAssembly`과 같은 형식입니다. 개발에서만 이 기능을 사용하세요.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyDelaySignAttribute>)으로 지정할 수도 있습니다.|
 |**/descr[iption]:** `text`|어셈블리의 <xref:System.Reflection.AssemblyDescriptionAttribute.Description%2A> 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 **/description**이 Win32 **Comments**(설명) 리소스로 나타납니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 **Comments** 리소스가 단일 공백으로 나타납니다.<br /><br /> **/win32res**를 지정하면 **/description**은 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyDescriptionAttribute.Description%2A>)으로 지정할 수도 있습니다.|
 |**/e[vidence]:** `file`|어셈블리에 `file`을 Security.Evidence라는 리소스 이름으로 포함시킵니다.<br /><br /> 기본 리소스에는 Security.Evidence를 사용할 수 없습니다.|
 |**/fileversion:** `version`|어셈블리의 **File Version**(파일 버전) 필드에 대한 문자열을 지정합니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 **/fileversion**이 Win32 **File Version** 리소스로 사용됩니다. **/fileversion**을 지정하지 않으면 Win32 **File Version** 리소스가 Win32 **Assembly Version**(어셈블리 버전) 리소스로 채워집니다.<br /><br /> **/win32res**를 지정하면 **/fileversion**은 Win32 리소스에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(AssemblyFileVersionAttribute)으로 지정할 수도 있습니다.|
-|**/flags:** `flags`|어셈블리의 `Flags` 필드에 대한 값을 지정합니다. `flags`에 사용할 수 있는 값은 다음과 같습니다.<br /><br /> 0x0000<br /> 어셈블리가 side-by-side로 호환됩니다.<br /><br /> 0x0010<br /> 어셈블리는 같은 응용 프로그램 도메인에서 실행할 경우 다른 버전과 함께 실행할 수 없습니다.<br /><br /> 0x0020<br /> 어셈블리는 같은 프로세스에서 실행할 경우 다른 버전과 함께 실행할 수 없습니다.<br /><br /> 0x0030<br /> 같은 컴퓨터에서 실행되는 경우에는 어셈블리를 다른 버전과 함께 실행할 수 없습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyFlagsAttribute>)으로 지정할 수도 있습니다.|
+|**/flags:** `flags`|어셈블리의 `Flags` 필드에 대한 값을 지정합니다. `flags`에 사용할 수 있는 값은 다음과 같습니다.<br /><br /> 0x0000<br /> 어셈블리가 side-by-side로 호환됩니다.<br /><br /> 0x0010<br /> 어셈블리는 같은 애플리케이션 도메인에서 실행할 경우 다른 버전과 함께 실행할 수 없습니다.<br /><br /> 0x0020<br /> 어셈블리는 같은 프로세스에서 실행할 경우 다른 버전과 함께 실행할 수 없습니다.<br /><br /> 0x0030<br /> 같은 컴퓨터에서 실행되는 경우에는 어셈블리를 다른 버전과 함께 실행할 수 없습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyFlagsAttribute>)으로 지정할 수도 있습니다.|
 |**/fullpaths**|오류 메시지에 보고되는 파일에 대해 *Al.exe*가 절대 경로를 사용합니다.|
 |**/help**|이 도구의 명령 구문 및 옵션을 표시합니다.|
 |**/keyf[ile]:** `filename`|어셈블리에 서명하기 위한 키 쌍 또는 공개 키를 포함하는 파일(`filename`)을 지정합니다. 컴파일러는 공개 키를 어셈블리 매니페스트에 삽입한 다음 개인 키를 사용하여 최종 어셈블리에 서명합니다. 키 파일을 생성하고 키 쌍을 키 컨테이너에 설치하는 방법에 대한 자세한 내용은 [Strong Name Tool (*Sn.exe*)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)(Sn.exe(강력한 이름 도구))을 참조하세요.<br /><br /> 연기된 서명을 사용할 경우 이 파일에는 일반적으로 공개 키가 있으며 개인 키는 없습니다.<br /><br /> 키 쌍의 공개 키 정보는 어셈블리의 .publickey 필드에 나타납니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyKeyFileAttribute>)으로 지정할 수도 있습니다.<br /><br /> **/keyfile** 및 **/keyname**이 모두 동일한 컴파일에서 명령줄 옵션이나 사용자 지정 특성으로 지정되면 *Al.exe*에서 먼저 **/keyname**으로 지정된 컨테이너를 찾으려고 합니다. 이 시도에 성공하면 키 컨테이너의 정보를 사용하여 어셈블리가 서명됩니다. *Al.exe*에서 키 컨테이너를 찾지 못하면 **/keyfile**로 지정된 파일을 찾으려고 합니다. 해당 파일을 찾으면 어셈블리가 키 파일의 정보로 서명되고 키 정보가 키 컨테이너에 설치됩니다([*Sn.exe*](../../../docs/framework/tools/sn-exe-strong-name-tool.md)의 -i 옵션과 비슷함). 이에 따라 다음에 컴파일할 때 **/keyname** 옵션이 유효하게 됩니다.|
@@ -69,9 +69,9 @@ al sources options
 |**/platform:** `text`|이 코드를 실행할 수 있는 플랫폼은 x86, Itanium, x64, anycpu(기본값) 또는 anycpu32bitpreferred로 제한됩니다.|
 |**/prod[uct]:** `text`|어셈블리의 **Product**(제품) 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 **/product**가 Win32 **Product Name**(제품 이름) 리소스로 나타납니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 **Product Name** 리소스가 단일 공백으로 나타납니다.<br /><br /> **/win32res**를 지정하면 **/product**는 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyProductAttribute>)으로 지정할 수도 있습니다.|
 |**/productv[ersion]:** `text`|어셈블리의 **Product Version**(제품 버전) 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 **/productversion**이 Win32 **Product Version** 리소스로 사용됩니다. **/productversion**을 지정하지 않으면 Win32 **Product Version** 리소스가 Win32 **File Version** 리소스로 채워집니다.<br /><br /> **/win32res**를 지정하면 **/productversion**은 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyInformationalVersionAttribute>)으로 지정할 수도 있습니다.|
-|**/t[arget]:** `lib[rary]` &#124; `exe` &#124; `win[exe]`|출력 파일의 파일 형식 즉, `lib[rary]`(코드 라이브러리), `exe`(콘솔 응용 프로그램) 또는 `win[exe]`(Windows 기반 응용 프로그램)을 지정합니다. 기본값은 `lib[rary]`입니다.|
+|**/t[arget]:** `lib[rary]` &#124; `exe` &#124; `win[exe]`|출력 파일의 파일 형식 즉, `lib[rary]`(코드 라이브러리), `exe`(콘솔 애플리케이션) 또는 `win[exe]`(Windows 기반 애플리케이션)을 지정합니다. 기본값은 `lib[rary]`입니다.|
 |**/template:** `filename`|culture 필드를 제외한 모든 어셈블리 메타데이터를 상속받을 상위 어셈블리, `filename`을 지정합니다.<br /><br /> **/template**으로 만든 어셈블리는 위성 어셈블리가 됩니다.|
-|**/title:** `text`|어셈블리의 **Title**(제목) 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 **/title**이 셸에서 응용 프로그램의 이름으로 사용되는 Win32 **Description**(설명) 리소스로 나타납니다. 또한 여러 응용 프로그램이 지원하는 파일 형식에 대한 바로 가기 메뉴의 **연결 프로그램** 하위 메뉴에도 표시됩니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 **Description** 리소스가 단일 공백으로 나타납니다.<br /><br /> **/win32res**를 지정하면 **/title**은 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyTitleAttribute>)으로 지정할 수도 있습니다.|
+|**/title:** `text`|어셈블리의 **Title**(제목) 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 **/title**이 셸에서 애플리케이션의 이름으로 사용되는 Win32 **Description**(설명) 리소스로 나타납니다. 또한 여러 애플리케이션이 지원하는 파일 형식에 대한 바로 가기 메뉴의 **연결 프로그램** 하위 메뉴에도 표시됩니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 **Description** 리소스가 단일 공백으로 나타납니다.<br /><br /> **/win32res**를 지정하면 **/title**은 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyTitleAttribute>)으로 지정할 수도 있습니다.|
 |**/trade[mark]:** `text`|어셈블리의 **Trademark**(상표) 필드에 대한 문자열을 지정합니다. `text`에 공백이 있으면 문자열을 큰따옴표(" ")로 묶습니다. 이 문자열은 어셈블리의 사용자 지정 속성이며 리플렉션과 함께 볼 수 있습니다.<br /><br /> **/win32res**를 지정하지 않으면 파일 탐색기에서 **/trademark**가 Win32 **Trademark** 리소스로 나타납니다.<br /><br /> 텍스트가 빈 문자열이면 Win32 **Trademark** 리소스가 단일 공백으로 나타납니다.<br /><br /> **/win32res**를 지정하면 **/trademark**는 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyTrademarkAttribute>)으로 지정할 수도 있습니다.|
 |**/v[ersion]:** `version`|이 어셈블리의 버전 정보를 지정합니다. 버전 문자열의 형식은 `major`.`minor`.`build`.`revision`입니다. 기본값은 0입니다.<br /><br /> **/version**을 지정하면 `major`도 지정해야 합니다. `major` 및 `minor`를 지정하면 `build`에 별표(\*)를 지정할 수 있습니다. 이 경우 `build`는 현지 시간 2000년 1월 1일부터 경과된 일수와 일치하며, `revision`은 현재 날짜, 현지 시간, 자정부터 경과된 초 수를 2로 나눈 값과 일치합니다.<br /><br /> `major`, `minor` 및 `build`를 지정하면 `revision`에 대해 별표를 지정할 수 있습니다. 이 경우 `revision`은 현재 날짜, 현지 시간, 자정부터 경과된 초 수를 2로 나눈 값과 일치합니다.<br /><br /> 유효한 버전 문자열을 요약하면 다음과 같습니다.<br /><br /> X<br /><br /> X.X<br /><br /> X.X.\*<br /><br /> X.X.X<br /><br /> X.X.X.\*<br /><br /> X.X.X.X<br /><br /> 여기서 X는 65535를 제외한 부호 없는 short 상수(0-65534)입니다.<br /><br /> **/win32res**를 지정하지 않으면 **/version**이 Win32 **Assembly Version**(어셈블리 버전) 리소스로 사용됩니다.<br /><br /> **/win32res**, **/productversion** 및 **/fileversion**을 지정하지 않으면 **/version**이 Win32 **Assembly Version**, File Version 및 **Product Version** 리소스에 사용됩니다.<br /><br /> **/win32res**를 지정하면 **/version**은 Win32 리소스 정보에 영향을 주지 않습니다.<br /><br /> MSIL 모듈의 소스 코드에서 이 옵션을 사용자 지정 특성(<xref:System.Reflection.AssemblyVersionAttribute>)으로 지정할 수도 있습니다.|
 |**/win32icon:** `filename`|.ico 파일을 어셈블리에 삽입합니다. .ico 파일을 사용하면 파일 탐색기에서 출력 파일을 원하는 모양으로 나타납니다.|
@@ -79,7 +79,7 @@ al sources options
 |`@filename`|*Al.exe* 명령을 포함하는 지시 파일을 지정합니다.<br /><br /> 지시 파일의 명령은 한 줄에 하나씩 나타나거나 하나 이상의 공백으로 분리되어 같은 줄에 나타날 수 있습니다.|
 |**/?**|이 도구의 명령 구문 및 옵션을 표시합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 모든 Visual Studio 컴파일러는 어셈블리를 만듭니다. 그러나 모듈(매니페스트 없는 메타데이터)이 하나 이상 있으면 *Al.exe*를 사용하여 별도의 파일에 매니페스트가 있는 어셈블리를 만들 수 있습니다.
 
@@ -100,7 +100,7 @@ al sources options
 |al1007|'file' 지시 파일을 여는 동안 오류가 발생했습니다. 'reason'<br /><br /> *Al.exe*에서 지정된 이유로 지정된 지시 파일을 열 수 없습니다.|
 |al1008|'option' 명령줄 옵션에 대한 파일 사양이 없습니다.<br /><br /> *Al.exe*에서 명령줄 옵션에 파일이 전달될 것으로 예상했습니다. 예를 들어 **/out** 옵션을 지정하는 경우 파일을 지정해야 합니다.|
 |al1009|'file'을 쓰기용으로 열 수 없습니다.<br /><br /> *Al.exe*에서 출력 어셈블리 파일과 같은 파일에 쓸 수 없습니다. 디스크가 꽉 찼거나, 파일이 읽기 전용이거나, 파일에 대한 권한이 없을 수 있습니다.|
-|al1010|명령줄 구문 오류: 'option' 옵션에 대한 ':text'가 없습니다.<br /><br /> *Al.exe*에서 명령줄 옵션에 인수가 전달될 것으로 예상했습니다. 예를 들어 **/title** 옵션을 지정하는 경우 문자열을 전달해야 합니다.|
+|al1010|명령줄 구문 오류: 'option' 옵션에 ':text' 누락<br /><br /> *Al.exe*에서 명령줄 옵션에 인수가 전달될 것으로 예상했습니다. 예를 들어 **/title** 옵션을 지정하는 경우 문자열을 전달해야 합니다.|
 |al1011|'file' 파일은 실행 파일이며 텍스트 파일로 열 수 없습니다.<br /><br /> 텍스트 파일이 필요한 위치에 이진 파일이 지정되었습니다. 예를 들어 명령줄에서 이진 파일이 지시 파일로 전달되면 이 오류가 발생합니다.|
 |al1012|'value'가 'option' 옵션에 유효한 설정이 아닙니다.<br /><br /> 예기치 않은 값이 명령줄 옵션에 전달되었습니다. 예를 들어 **/target** 옵션에 잘못된 값을 지정하는 경우 이 오류가 발생합니다.|
 |al1013|인식할 수 없는 명령줄 옵션: 'option'<br /><br /> 잘못된 명령줄 옵션을 지정했습니다.|
@@ -124,7 +124,7 @@ al sources options
 |al1033|어셈블리 사용자 지정 특성 'attribute'가 서로 다른 값으로 여러 번 지정되었습니다.<br /><br /> *Al.exe*에 대한 입력으로 지정된 소스 모듈의 동일한 사용자 지정 특성 발생 두 개에 서로 다른 값이 전달되었습니다.|
 |al1034|'file' 어셈블리를 복사하거나 이름을 바꿀 수 없습니다.<br /><br /> 입력 파일을 지정하고 복사할 수 있게 해주는 *Al.exe* 구문을 사용하는 동안 이름 충돌이 발생하여 컴파일러가 중지되었습니다. 예를 들어 이 오류는 `input.dll,somename.dll /out:somename.dll`을 지정하는 경우 발생합니다.|
 |al1035|라이브러리는 진입점을 포함할 수 없습니다.<br /><br /> **/target:lib** 옵션(기본값) 및 **/main** 옵션을 모두 지정할 수 없습니다.|
-|al1036|실행 가능한 응용 프로그램에는 진입점이 필요합니다.<br /><br /> **/target:exe** 또는 **/target:win** 옵션을 사용할 때는 **/main** 옵션도 지정해야 합니다.|
+|al1036|실행 가능한 애플리케이션에는 진입점이 필요합니다.<br /><br /> **/target:exe** 또는 **/target:win** 옵션을 사용할 때는 **/main** 옵션도 지정해야 합니다.|
 |al1037|'main' 진입점 메서드를 찾을 수 없습니다.<br /><br /> *Al.exe*가 **/main** 옵션으로 지정된 위치에서 `Main` 메서드를 찾을 수 없습니다.|
 |al1039|전역 어셈블리 캐시 관리자 초기화 실패 - reason<br /><br /> Visual Studio 또는 [!INCLUDE[winsdkshort](../../../includes/winsdkshort-md.md)]를 다시 설치합니다.|
 |al1040|캐시에 어셈블리를 설치하지 못했습니다. reason<br /><br /> 서명된 어셈블리만 캐시에 설치할 수 있습니다. 자세한 내용은 [전역 어셈블리 캐시](../../../docs/framework/app-domains/gac.md)를 참조하세요.|
@@ -165,7 +165,7 @@ al sources options
 |al1076|'type' 형식이 여러 어셈블리에 전달되었습니다. 'assembly' 및 'assembly'.<br /><br /> 각 형식을 하나의 어셈블리에만 전달할 수 있습니다.|
 |al1077|'type' public 형식이 'assembly'에서 정의되고 'assembly'로 전달됩니다.<br /><br /> 생성되는 어셈블리에 중복된 public 형식이 있습니다. 하나는 유효한 형식 정의이고 다른 하나는 형식 전달자입니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 명령은 `t2.netmodule` 모듈의 어셈블리를 사용하여 실행 파일 *t2a.exe*를 만듭니다. 진입점은 `Main`의 `MyClass` 메서드입니다.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cded8ce271ea0f3d1dbb8fc3d9a072ee4a23d1ee
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6e648cdadb567919d320ea8a12d30b7be306e67a
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53149174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221234"
 ---
 # <a name="developer-command-prompt-for-visual-studio"></a>Visual Studio용 개발자 명령 프롬프트
 
@@ -34,7 +34,7 @@ Visual Studio에 대한 개발자 명령 프롬프트를 통해 .NET Framework �
 
 1. 작업 표시줄의 검색 상자에 `dev` 또는 `developer command prompt`와 같은 도구 이름을 입력합니다. 그러면 검색 패턴과 일치하는 설치된 앱의 목록이 표시됩니다. 다른 명령 프롬프트를 찾으려면 `prompt`와 같은 다른 검색어를 입력해 봅니다.
 
-2. **개발자 명령 프롬프트**(또는 사용할 명령 프롬프트)를 선택합니다.
+2. **Visual Studio용 개발자 명령 프롬프트**(또는 사용할 명령 프롬프트)를 선택합니다.
 
 ### <a name="in-windows-81"></a>Windows 8.1에서
 

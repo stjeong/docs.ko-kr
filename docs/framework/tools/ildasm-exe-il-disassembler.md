@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b8b69544b2d8041a3aa4cb566867b6c14b29f0f8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 9ee829893d251b536448ba2ee78ea13e0d22ae41
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409112"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221741"
 ---
 # <a name="ildasmexe-il-disassembler"></a>Ildasm.exe(IL 디스어셈블러)
 
 IL 디스어셈블러는 IL 어셈블러(*Ilasm.exe*)의 자매 도구입니다. *Ildasm.exe*는 IL(intermediate language) 코드가 포함된 PE(이식 가능한 실행) 파일을 가져와서 *Ildasm.exe*에 입력하기에 적합한 텍스트 파일을 만듭니다.
 
-이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
+이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
 
 명령 프롬프트에 다음을 입력합니다.
 
@@ -91,7 +91,7 @@ ildasm [options] [PEfilename] [options]
 > [!NOTE]
 > *Ildasm.exe*의 모든 옵션은 대/소문자가 구분되지 않으며 처음 세 문자로 인식됩니다. 예를 들어 **/quo**는 **/quoteallnames**와 같습니다. 인수를 지정하는 옵션에는 옵션과 인수 사이의 구분 기호로 콜론(:) 또는 등호(=) 중 하나만 사용할 수 있습니다. 예를 들어 **/output:** *filename*은 **/output=** *filename*과 같습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 *Ildasm.exe*는 디스크의 PE 파일에 대해서만 작동하며, 전역 어셈블리 캐시에 설치된 파일에 대해서는 작동하지 않습니다.
 
@@ -155,7 +155,7 @@ ildasm MyFile.exe /output:MyFile.il
 ildasm MyFile.exe /text
 ```
 
-`MyApp.exe` 파일에 관리되는 포함 리소스와 관리되지 않은 포함 리소스가 들어 있는 경우 다음 명령을 사용하여 *MyApp.il*, *MyApp.res*, *Icons.resources*, *Message.resources* 등 네 개의 파일을 생성합니다.
+`MyApp.exe` 파일에 관리되는 포함 리소스와 관리되지 않는 포함 리소스가 들어 있는 경우, 다음 명령을 사용하여 다음과 같은 4개 파일을 생성합니다. *MyApp.il*, *MyApp.res*, *Icons.resources* 및 *Message.resources*.
 
 ```console
 ildasm MyApp.exe /output:MyApp.il

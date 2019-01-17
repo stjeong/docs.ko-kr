@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d28c5e817e415e08c3a58c840e52cdfcbe286997
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dfb73f6637be96d7994a808b8d9a2c77c2896838
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221728"
 ---
 # <a name="tlbimpexe-type-library-importer"></a>Tlbimp.exe(형식 라이브러리 가져오기)
 형식 라이브러리 가져오기 도구는 COM 형식 라이브러리에 있는 형식 정의를 공용 언어 런타임 어셈블리의 동등한 정의로 변환합니다. Tlbimp.exe의 출력은 원본 형식 라이브러리에 정의된 형식의 런타임 메타데이터를 포함하는 이진 파일(어셈블리)입니다. [Ildasm.exe](ildasm-exe-il-disassembler.md)와 같은 도구를 사용하여 이 파일을 검토할 수 있습니다.  
   
- 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](developer-command-prompt-for-vs.md)를 참조하세요.  
+ 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](developer-command-prompt-for-vs.md)를 참조하세요.  
   
  명령 프롬프트에 다음을 입력합니다.  
   
@@ -43,7 +43,7 @@ tlbimp tlbFile [options]
 |**/asmversion:** *versionnumber*|만들 어셈블리의 버전 번호를 지정합니다. *versionnumber*를 *major.minor.build.revision* 형식으로 지정합니다.|  
 |**/company:** `companyinformation`|출력 어셈블리에 회사 정보를 추가합니다.|  
 |**/copyright:** `copyrightinformation`|출력 어셈블리에 저작권 정보를 추가합니다. 이 정보는 어셈블리에 대한 **파일 속성** 대화 상자에서 볼 수 있습니다.|  
-|**/delaysign**|Tlbimp.exe에서 지연 서명을 사용하여 강력한 이름의 결과 어셈블리에 서명하도록 지정합니다. 이 옵션은 **/keycontainer:**, **/keyfile:** 또는 **/publickey:** 옵션과 함께 지정해야 합니다. 지연 서명 프로세스에 대한 자세한 내용은 [어셈블리 서명 연기](../app-domains/delay-sign-assembly.md)를 참조하세요.|  
+|**T:System.Reflection.AssemblyDelaySignAttribute**|Tlbimp.exe에서 지연 서명을 사용하여 강력한 이름의 결과 어셈블리에 서명하도록 지정합니다. 이 옵션은 **/keycontainer:**, **/keyfile:** 또는 **/publickey:** 옵션과 함께 지정해야 합니다. 지연 서명 프로세스에 대한 자세한 내용은 [어셈블리 서명 연기](../app-domains/delay-sign-assembly.md)를 참조하세요.|  
 |**/help**|이 도구의 명령 구문 및 옵션을 표시합니다.|  
 |**/keycontainer:** *containername*|*containername*에서 지정된 키 컨테이너에 있는 공개/개인 키 쌍을 사용하여 강력한 이름으로 결과 어셈블리를 서명합니다.|  
 |**/keyfile:** *filename*|*filename*에 있는 게시자의 공식 공개/개인 키 쌍을 사용하여 강력한 이름으로 결과 어셈블리를 서명합니다.|  
@@ -73,7 +73,7 @@ tlbimp tlbFile [options]
 > [!NOTE]
 >  Tlbimp.exe의 명령줄 옵션은 대/소문자를 구분하지 않으며 순서에 관계없이 지정할 수 있습니다. 또한, 고유하게 식별할 수 있을 정도로만 옵션을 지정하면 됩니다. 따라서 **/n**은 **/nologo**와 같고, **/ou:** *outfile.dll*은 **/out:** *outfile.dll*과 같습니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  Tlbimp.exe는 한 번에 전체 형식 라이브러리 변환을 수행합니다. 이 도구를 사용하여 단일 형식 라이브러리 내에 정의된 형식의 하위 집합에 대한 형식 정보를 생성할 수는 없습니다.  
   
  어셈블리에 [강력한 이름](../app-domains/strong-named-assemblies.md)을 할당하는 것이 종종 유용하거나 필요합니다. 따라서 Tlbimp.exe는 강력한 이름의 어셈블리를 생성하는 데 필요한 정보를 제공하는 옵션을 포함합니다. **/keyfile:** 및 **/keycontainer:** 옵션은 둘 다 강력한 이름으로 어셈블리를 서명합니다. 그러므로 한 번에 한 옵션만 지정하면 됩니다.  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 890ce1e9a23d57121cd714252444e5ff1caa6b19
-ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
+ms.openlocfilehash: d1a0ee772618b89d3b8cf6efc9400e3dcf4804da
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53396879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223184"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>방법: 설치된 .NET Framework 버전 확인
 
@@ -197,7 +197,7 @@ ms.locfileid: "53396879"
 
 - CLR 버전 도구(Clrver.exe)를 사용하여 컴퓨터에 설치된 공용 언어 런타임의 버전을 확인합니다.
 
-     Visual Studio 명령 프롬프트에서 `clrver`을 입력합니다. 이 명령은 다음과 유사한 출력 결과를 표시합니다.
+     Visual Studio용 개발자 명령 프롬프트에서 `clrver`을 입력합니다. 이 명령은 다음과 유사한 출력 결과를 표시합니다.
 
     ```
     Versions installed on the machine:

@@ -13,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4009fe4910af81c685ee015c7801b040a90c25aa
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0b149f21a2cb51740f0027f6b01984c628723939
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221762"
 ---
 # <a name="ilasmexe-il-assembler"></a>Ilasm.exe(IL 어셈블러)
 
 IL 어셈블러는 IL(Intermediate Language)로 PE(이식 가능한 실행) 파일을 생성합니다. IL에 대한 자세한 내용은 [관리되는 실행 프로세스](../../../docs/standard/managed-execution-process.md)를 참조하세요. 이렇게 생성된 실행 파일에는 IL 및 필요한 메타데이터가 들어 있으며, 이 파일을 실행하면 IL이 예상대로 실행되는지 여부를 확인할 수 있습니다.
 
-이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
+이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.
 
 명령 프롬프트에 다음을 입력합니다.
 
@@ -47,7 +47,7 @@ ilasm [options] filename [[options]filename...]
 |**/appcontainer**|Windows 앱 컨테이너에서 출력으로 실행되는 *.dll* 또는 *.exe* 파일을 만듭니다.|
 |**/arm**|Advanced RISC Machine(ARM)을 대상 프로세서로 지정합니다.<br /><br /> 이미지 비트가 지정되지 않은 경우 기본값은 **/32bitpreferred**입니다.|
 |**/base:** `integer`|ImageBase를 NT 선택적 헤더의 `integer`에서 지정한 값으로 설정합니다. .imagebase IL 지시문이 파일에 지정된 경우 이 옵션을 사용하면 재정의됩니다.|
-|**/clock**|지정된 .il 소스 파일에 대해 다음 컴파일 타임을 밀리초 단위로 측정하여 보고합니다.<br /><br /> **Total Run**: 다음의 특정 작업을 모두 수행하는 데 걸린 총 시간<br /><br /> **Startup**: 파일 로드 및 열기<br /><br /> **Emitting MD**: 메타데이터 내보내기<br /><br /> **Ref to Def Resolution**: 파일의 참조를 정의로 확인<br /><br /> **CEE File Generation**: 메모리에 파일 이미지 생성<br /><br /> **PE File Writing**: PE 파일에 이미지 작성|
+|**/clock**|지정된 .il 소스 파일에 대해 다음 컴파일 타임을 밀리초 단위로 측정하여 보고합니다.<br /><br /> **Total Run**: 다음의 특정 작업을 모두 수행하는 데 걸린 총 시간.<br /><br /> **Startup**: 파일 로드 및 열기.<br /><br /> **Emitting MD**: 메타데이터 내보내기.<br /><br /> **Ref to Def Resolution**: 파일의 참조를 정의로 확인.<br /><br /> **CEE File Generation**: 메모리에 파일 이미지 생성.<br /><br /> **PE File Writing**: PE 파일에 이미지 작성.|
 |**/debug**[:**IMPL**&#124;**OPT**]|지역 변수 및 인수 이름과 줄 번호 등의 디버깅 정보를 포함합니다. PDB 파일을 만듭니다.<br /><br /> **/debug** 에 추가 값을 지정하지 않으면 JIT 최적화를 사용할 수 없고 PDB 파일의 시퀀스 위치를 사용합니다.<br /><br /> **IMPL** 은 JIT 최적화를 사용할 수 없도록 하고 암시적 시퀀스 위치를 사용합니다.<br /><br /> **OPT** 는 JIT 최적화를 사용할 수 있도록 하고 암시적 시퀀스 위치를 사용합니다.|
 |**/dll**|*.dll* 파일을 출력 파일로 생성합니다.|
 |**/enc:** `file`|지정한 소스 파일에서 편집하며 계속하기 델타를 만듭니다.<br /><br /> 이 인수는 교육용 버전에서만 사용되며, 상업용 버전에서는 지원되지 않습니다.|
@@ -81,7 +81,7 @@ ilasm [options] filename [[options]filename...]
 > [!NOTE]
 > *Ilasm.exe*의 모든 옵션은 대/소문자가 구분되지 않으며 처음 세 문자로 인식됩니다. 예를 들어 **/lis**는 **/listing**과 같고, **/res:** myresfile.res는 **/resource:** myresfile.res와 같습니다. 인수를 지정하는 옵션에는 옵션과 인수 사이의 구분 기호로 콜론(:) 또는 등호(=) 중 하나만 사용할 수 있습니다. 예를 들어, **/output**:*file.ext*는 **/output**=*file.ext*와 같습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 IL 어셈블러를 사용하면 도구 공급업체는 IL 생성기를 쉽게 디자인하여 구현할 수 있으며, *Ilasm.exe*를 사용하면 도구 및 컴파일러 개발자는 IL을 PE 파일 형식으로 내보내는 것에 신경 쓰지 않고 IL 및 메타데이터 생성에만 몰두할 수 있습니다.
 
@@ -159,7 +159,7 @@ ilasm myTestFile /dll
 ilasm myTestFile /dll /output:myNewTestFile.dll
 ```
 
-다음 코드 예제에서는 "Hello World!"를 콘솔에 표시하는 매우 간단한 응용 프로그램을 표시합니다. 이 코드를 컴파일한 다음 [*Ildasm.exe*](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) 도구를 사용하여 IL 파일을 생성할 수 있습니다.
+다음 코드 예제에서는 "Hello World!"를 콘솔에 표시하는 매우 간단한 애플리케이션을 표시합니다. 이 코드를 컴파일한 다음 [*Ildasm.exe*](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) 도구를 사용하여 IL 파일을 생성할 수 있습니다.
 
 ```csharp
 using System;

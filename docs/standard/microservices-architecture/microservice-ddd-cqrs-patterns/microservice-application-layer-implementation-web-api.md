@@ -1,29 +1,29 @@
 ---
-title: Web API를 사용하여 마이크로 서비스 응용 프로그램 계층 구현
+title: Web API를 사용하여 마이크로 서비스 애플리케이션 계층 구현
 description: 컨테이너화된 .NET 애플리케이션용 .NET 마이크로 서비스 아키텍처 | Web API 애플리케이션 계층에서 종속성 주입 및 중재자 패턴과 해당 구현 정보를 이해합니다.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 332829d30f10dde49727c63e9e80a91f24e1123a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d37660d3e2a7640383347071adfe969325ddd77b
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151189"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54152114"
 ---
 # <a name="implement-the-microservice-application-layer-using-the-web-api"></a>Web API를 사용하여 마이크로 서비스 에플리케이션 계층 구현
 
 ## <a name="use-dependency-injection-to-inject-infrastructure-objects-into-your-application-layer"></a>종속성 주입을 사용하여 애플리케이션 계층에 인프라 개체 주입
 
-앞에서 언급했듯이 애플리케이션 계층은 Web API 프로젝트 또는 MVC 웹앱 프로젝트와 같이 빌드하고 있는 아티팩트(어셈블리)의 일부로 구현될 수 있습니다. ASP.NET Core로 구축된 마이크로 서비스의 경우 응용 프로그램 계층은 일반적으로 Web API 라이브러리입니다. ASP.NET Core(인프라와 컨트롤러)를 사용자 지정 응용 프로그램 계층 코드에서 분리하려는 경우 응용 프로그램 계층을 별도의 클래스 라이브러리에 배치할 수도 있지만 이것은 선택 사항입니다.
+앞에서 언급했듯이 애플리케이션 계층은 Web API 프로젝트 또는 MVC 웹앱 프로젝트와 같이 빌드하고 있는 아티팩트(어셈블리)의 일부로 구현될 수 있습니다. ASP.NET Core로 구축된 마이크로 서비스의 경우 애플리케이션 계층은 일반적으로 Web API 라이브러리입니다. ASP.NET Core(인프라와 컨트롤러)를 사용자 지정 애플리케이션 계층 코드에서 분리하려는 경우 애플리케이션 계층을 별도의 클래스 라이브러리에 배치할 수도 있지만 이것은 선택 사항입니다.
 
 예를 들어 Ordering(주문) 마이크로 서비스의 애플리케이션 계층 코드는 그림 7-23과 같이 **Ordering.API** 프로젝트(ASP.NET Core Web API 프로젝트)의 일부로 직접 구현됩니다.
 
-![애플리케이션 폴더 아래의 하위 폴더(동작, 명령, DomainEventHandlers, IntegrationEvents, 모델, 쿼리 및 유효성 검사)를 표시하는 Ordering.API 마이크로 서비스의 솔루션 탐색기 보기입니다.](./media/image20.png)
+![Application 폴더의 하위 폴더를 보여주는 Ordering.API 마이크로 서비스의 솔루션 탐색기 보기: Behaviors, Commands, DomainEventHandlers, IntegrationEvents, Models, Queries 및 Validations.](./media/image20.png)
 
-**그림 7-23**. Ordering.API ASP.NET Core Web API 프로젝트의 응용 프로그램 계층
+**그림 7-23**. Ordering.API ASP.NET Core Web API 프로젝트의 애플리케이션 계층
 
-ASP.NET Core에는 생성자 주입을 기본으로 지원하는 간단한 [내장 IoC 컨테이너](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)(IServiceProvider 인터페이스로 표시됨)가 포함되며, ASP.NET은 DI를 통해 특정 서비스를 사용할 수 있도록 합니다. ASP.NET Core는 DI를 통해 주입될 사용자가 등록하는 모든 형식에 *서비스*라는 용어를 사용합니다. 내장 컨테이너의 서비스는 응용 프로그램의 Startup 클래스에 있는 ConfigureServices 메서드에 구성합니다. 종속성은 형식에 필요하며 IoC 컨테이너에 등록하는 서비스에 구현됩니다.
+ASP.NET Core에는 생성자 주입을 기본으로 지원하는 간단한 [내장 IoC 컨테이너](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)(IServiceProvider 인터페이스로 표시됨)가 포함되며, ASP.NET은 DI를 통해 특정 서비스를 사용할 수 있도록 합니다. ASP.NET Core는 DI를 통해 주입될 사용자가 등록하는 모든 형식에 *서비스*라는 용어를 사용합니다. 내장 컨테이너의 서비스는 애플리케이션의 Startup 클래스에 있는 ConfigureServices 메서드에 구성합니다. 종속성은 형식에 필요하며 IoC 컨테이너에 등록하는 서비스에 구현됩니다.
 
 일반적으로 인프라 개체를 구현하는 종속성을 주입하려고 합니다. 매우 일반적으로 주입하는 종속성은 리포지토리입니다. 하지만 다른 인프라 종속성을 주입할 수도 있습니다. 간단한 구현을 위해 작업 단위 패턴 개체(EF DbContext 개체)를 직접 주입할 수 있는데, DBContext 역시 인프라 지속성 개체의 구현이기 때문입니다.
 
@@ -76,11 +76,11 @@ public class CreateOrderCommandHandler
 }
 ```
 
-클래스는 삽입된 리포지토리를 사용하여 트랜잭션을 실행하고 상태 변경 내용을 유지합니다. 클래스가 명령 처리기이든, .NET Core Web API 컨트롤러 메서드이든 [DDD 응용 프로그램 서비스](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/)이든 상관없습니다. 궁극적으로 리포지토리, 도메인 엔터티 및 기타 응용 프로그램 조합을 명령 처리기와 비슷한 방식으로 사용하는 간단한 클래스입니다. 종속성 주입은 생성자를 기반으로 DI를 사용하는 예제처럼 언급된 모든 클래스에 대해 동일한 방식으로 작동합니다.
+클래스는 삽입된 리포지토리를 사용하여 트랜잭션을 실행하고 상태 변경 내용을 유지합니다. 클래스가 명령 처리기이든, .NET Core Web API 컨트롤러 메서드이든 [DDD 애플리케이션 서비스](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/)이든 상관없습니다. 궁극적으로 리포지토리, 도메인 엔터티 및 기타 애플리케이션 조합을 명령 처리기와 비슷한 방식으로 사용하는 간단한 클래스입니다. 종속성 주입은 생성자를 기반으로 DI를 사용하는 예제처럼 언급된 모든 클래스에 대해 동일한 방식으로 작동합니다.
 
 ### <a name="register-the-dependency-implementation-types-and-interfaces-or-abstractions"></a>종속성 구현 형식 및 인터페이스 또는 추상화 등록
 
-생성자를 통해 주입된 개체를 사용하기 전에 DI를 통해 응용 프로그램 클래스에 삽입되는 개체를 생성하는 인터페이스와 클래스를 어디에 등록해야 하는지 알아야 합니다. (이전에 표시된 생성자에 기반한 DI와 유사합니다.)
+생성자를 통해 주입된 개체를 사용하기 전에 DI를 통해 애플리케이션 클래스에 삽입되는 개체를 생성하는 인터페이스와 클래스를 어디에 등록해야 하는지 알아야 합니다. (이전에 표시된 생성자에 기반한 DI와 유사합니다.)
 
 #### <a name="use-the-built-in-ioc-container-provided-by-aspnet-core"></a>ASP.NET Core에 제공되는 기본 제공 IoC 컨테이너 사용
 
@@ -114,14 +114,14 @@ IoC 컨테이너에 형식을 등록할 때 가장 일반적인 패턴은 한 �
 - **Matthew King. Scrutor에 서비스 등록** \
   [*https://www.mking.net/blog/registering-services-with-scrutor*](https://www.mking.net/blog/registering-services-with-scrutor)
 
-- **Kristian Hellang. Scrutor.** GitHub 리포지토리 \
+- **Kristian Hellang. Scrutor.** GitHub 리포지토리. \
   [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
 
 #### <a name="use-autofac-as-an-ioc-container"></a>IoC 컨테이너로 Autofac 사용
 
-또한 추가 IoC 컨테이너를 사용하고 이것을 ASP.NET Core 파이프라인에 연결할 수도 있습니다. 이것은 [Autofac](https://autofac.org/)을 사용하는 eShopOnContainers의 Ordering(주문) 마이크로 서비스와 유사합니다. Autofac을 사용할 때 일반적으로 모듈을 통해 형식을 등록하기 때문에, 응용 프로그램 형식을 여러 클래스 라이브러리에 분산할 수 있듯이, 형식의 위치에 따라 여러 파일 간에 등록 형식을 분할할 수 있습니다.
+또한 추가 IoC 컨테이너를 사용하고 이것을 ASP.NET Core 파이프라인에 연결할 수도 있습니다. 이것은 [Autofac](https://autofac.org/)을 사용하는 eShopOnContainers의 Ordering(주문) 마이크로 서비스와 유사합니다. Autofac을 사용할 때 일반적으로 모듈을 통해 형식을 등록하기 때문에, 애플리케이션 형식을 여러 클래스 라이브러리에 분산할 수 있듯이, 형식의 위치에 따라 여러 파일 간에 등록 형식을 분할할 수 있습니다.
 
-예를 들어 다음은 삽입하려는 형식이 있는 [Ordering.API Web API](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering/Ordering.API) 프로젝트의 [Autofac 응용프로그램 모듈](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/ApplicationModule.cs)입니다.
+예를 들어 다음은 삽입하려는 형식이 있는 [Ordering.API Web API](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering/Ordering.API) 프로젝트의 [Autofac 애플리케이션 모듈](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/ApplicationModule.cs)입니다.
 
 ```csharp
 public class ApplicationModule : Autofac.Module
@@ -195,7 +195,7 @@ Autofac에는 [이름 규칙에 따라 어셈블리 및 등록 형식 검사](ht
 
 명령은 사용자가 요청을 시작한 결과로 UI로부터 생성되거나 프로세스 관리자가 동작을 수행하기 위해 집계를 지시할 때 프로세스 관리자로부터 생성될 수 있습니다.
 
-명령의 중요한 특징은 단일 수신자에 의해 한 번만 처리되어야 한다는 점입니다. 명령은 응용 프로그램에서 수행하려는 단일 동작 또는 트랜잭션이기 때문입니다. 예를 들어, 동일한 주문 생성 명령이 두 번 이상 처리되지 말아야 합니다. 이 점이 명령과 이벤트의 중요한 차이점입니다. 이벤트는 여러 번 처리될 수 있으며, 이것은 다수의 시스템 또는 마이크로 서비스가 이벤트에 관심을 가질 수 있기 때문입니다.
+명령의 중요한 특징은 단일 수신자에 의해 한 번만 처리되어야 한다는 점입니다. 명령은 애플리케이션에서 수행하려는 단일 동작 또는 트랜잭션이기 때문입니다. 예를 들어, 동일한 주문 생성 명령이 두 번 이상 처리되지 말아야 합니다. 이 점이 명령과 이벤트의 중요한 차이점입니다. 이벤트는 여러 번 처리될 수 있으며, 이것은 다수의 시스템 또는 마이크로 서비스가 이벤트에 관심을 가질 수 있기 때문입니다.
 
 또한 명령이 idempotent가 아닌 경우 명령은 한 번만 처리되는 것이 중요합니다. 명령의 특성으로 인해 또는 시스템에서 명령을 처리하는 방식으로 인해 결과를 변경하지 않고 여러 번 실행할 수 있는 명령은 idempotent 입니다.
 
@@ -313,7 +313,7 @@ public class UpdateOrderStatusCommand
 
 ### <a name="the-command-handler-class"></a>명령 처리기 클래스
 
-각 명령에 대해 특정 명령 처리기 클래스를 구현해야 합니다. 이런 식으로 패턴이 작동하며 여기에 명령 개체, 도메인 개체 및 인프라 리포지토리 개체를 사용합니다. 명령 처리기는 실제로 CQRS와 DDD 측면에서 응용 프로그램 계층의 핵심입니다. 하지만 모든 도메인 논리는 도메인 클래스 내에 포함되어야 합니다. 집계 루트(루트 엔터티), 자식 엔터티 또는 [도메인 서비스](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/) 내에 포함되어야 하지만 응용 프로그램 계층의 클래스인 명령 처리기 내에 포함되지 말아야 합니다.
+각 명령에 대해 특정 명령 처리기 클래스를 구현해야 합니다. 이런 식으로 패턴이 작동하며 여기에 명령 개체, 도메인 개체 및 인프라 리포지토리 개체를 사용합니다. 명령 처리기는 실제로 CQRS와 DDD 측면에서 애플리케이션 계층의 핵심입니다. 하지만 모든 도메인 논리는 도메인 클래스 내에 포함되어야 합니다. 집계 루트(루트 엔터티), 자식 엔터티 또는 [도메인 서비스](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/) 내에 포함되어야 하지만 애플리케이션 계층의 클래스인 명령 처리기 내에 포함되지 말아야 합니다.
 
 명령 처리기 클래스는 이전 섹션에서 언급한 SRP(Single Resposibility Principle)를 달성하기 위한 강력한 발판을 제공합니다.
 
@@ -333,7 +333,7 @@ public class UpdateOrderStatusCommand
 
 일반적으로 명령 처리기는 집계 루트(루트 엔터티)에서 발생한 단일 집계를 처리합니다. 단일 명령을 수신하여 여러 집합체가 영향을 받는 경우에는 도메인 이벤트를 사용하여 여러 집합체에 상태나 동작을 전파할 수 있습니다.
 
-여기서 중요한 점은, 명령이 처리될 때 모든 도메인 논리는 완전히 캡슐화되고 유닛 테스트 준비가 된 도메인 모델(집합체) 내에 있어야 한다는 점입니다. 명령 처리기는 데이터베이스로부터 도메인 모델을 가져오는 방법으로만 사용되며, 마지막 단계에서는 모델이 변경될 때 인프라 계층(리포지토리)에 변경 내용을 유지하도록 알려주는 방법으로 사용됩니다. 이런 방식의 장점은 배관 수준(명령 처리가, Web API, 리포지토리 등)인 응용 프로그램이나 인프라 계층의 코드를 변경하지 않고도 격리되고 완전히 캡슐화된 풍부한 동작 도메인 모델에서 도메인 논리를 리팩터링할 수 있다는 점입니다.
+여기서 중요한 점은, 명령이 처리될 때 모든 도메인 논리는 완전히 캡슐화되고 유닛 테스트 준비가 된 도메인 모델(집합체) 내에 있어야 한다는 점입니다. 명령 처리기는 데이터베이스로부터 도메인 모델을 가져오는 방법으로만 사용되며, 마지막 단계에서는 모델이 변경될 때 인프라 계층(리포지토리)에 변경 내용을 유지하도록 알려주는 방법으로 사용됩니다. 이런 방식의 장점은 배관 수준(명령 처리가, Web API, 리포지토리 등)인 애플리케이션이나 인프라 계층의 코드를 변경하지 않고도 격리되고 완전히 캡슐화된 풍부한 동작 도메인 모델에서 도메인 논리를 리팩터링할 수 있다는 점입니다.
 
 논리가 너무 많아져서 명령 처리기가 너무 복잡해지면 코드 냄새가 될 수 있습니다. 검토 후 도메인 논리를 찾으면 코드를 리팩터링하여 해당 도메인 동작을 도메인 개체의 메서드(집계 루트 및 자식 엔터티)로 이동합니다.
 
@@ -397,7 +397,7 @@ public class CreateOrderCommandHandler
 #### <a name="additional-resources"></a>추가 자료
 
 - **Mark Seemann. 경계에서 애플리케이션은 개체 지향적이지 않음** \
-  [*http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](http://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
+  [*https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
 
 - **명령 및 이벤트** \
   [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
@@ -429,7 +429,7 @@ public class CreateOrderCommandHandler
 
 **그림 7-25**. 단일 CQRS 마이크로 서비스의 프로세스에 중재자(Mediator) 패턴 사용
 
-중재자(Mediator) 패턴을 사용하는 것이 타당한 이유는 엔터프라이즈 응용 프로그램에서 처리 요청이 복잡해질 수 있기 때문입니다. 로깅, 유효성 검사, 감사 및 보안과 같은 여러 가지 교차 편집 문제를 추가하는 것이 필요할 수 있습니다. 이런 경우 중재자(mediator) 파이프라인([중재자(Mediator) 패턴](https://en.wikipedia.org/wiki/Mediator_pattern) 참조)에 의존하여 이러한 추가 동작이나 교차 편집 문제를 위한 수단을 제공할 수 있습니다.
+중재자(Mediator) 패턴을 사용하는 것이 타당한 이유는 엔터프라이즈 애플리케이션에서 처리 요청이 복잡해질 수 있기 때문입니다. 로깅, 유효성 검사, 감사 및 보안과 같은 여러 가지 교차 편집 문제를 추가하는 것이 필요할 수 있습니다. 이런 경우 중재자(mediator) 파이프라인([중재자(Mediator) 패턴](https://en.wikipedia.org/wiki/Mediator_pattern) 참조)에 의존하여 이러한 추가 동작이나 교차 편집 문제를 위한 수단을 제공할 수 있습니다.
 
 중재자(mediator)는 프로세스의 “방식(how)”을 캡슐화하는 개체입니다. 상태, 명령 처리기가 호출되는 방식 또는 처리기에 제공하는 페이로드를 기반으로 실행을 조정합니다. 중재자(mediator) 구성 요소를 사용하면 데코레이터(또는 [MediatR 3](https://www.nuget.org/packages/MediatR/3.0.0) 이후의 [파이프라인 동작](https://github.com/jbogard/MediatR/wiki/Behaviors))를 적용하여 중앙 집중식으로 투명하게 교차 편집 문제를 적용할 수 있습니다. 자세한 내용은 [데코레이터(decorator) 패턴](https://en.wikipedia.org/wiki/Decorator_pattern)을 참조하세요.
 
@@ -447,13 +447,13 @@ public class CreateOrderCommandHandler
 
 메시지 큐를 사용하여 명령을 수락하면 명령의 파이프라인이 복잡해질 수 있습니다. 파이프라인을 외부 메시지 큐를 통해 연결된 두 개의 프로세스로 분할하는 것이 필요할 수 있기 때문입니다. 하지만 비동기 메시지를 기반으로 확장성과 성능을 향상시키려면 사용해야 합니다. 그림 7-26의 경우 컨트롤러는 명령 메시지를 큐에 게시만 하고 반환합니다. 그런 다음, 명령 처리기는 원하는 속도로 메시지를 처리합니다. 이것이 큐의 커다란 장점입니다. 주식 또는 송신 데이터가 대규모인 그 밖의 시나리오와 같이 엄청난 확장성이 필요한 경우에, 메시지 큐는 버퍼로 작동할 수 있습니다.
 
-하지만 메시지 큐의 비동기적인 특성으로 인해, 명령 프로세스의 성공 또는 실패에 대해 클라이언트 응용 프로그램과 통신할 방법을 알아내야 합니다. 원칙적으로 “fire and forget”명령은 절대 사용하지 말아야 합니다. 모든 비즈니스 응용 프로그램은 명령이 성공적으로 처리되었는지 아니면 최소한 유효성이 검사되고 수락되었는지를 알아야 합니다.
+하지만 메시지 큐의 비동기적인 특성으로 인해, 명령 프로세스의 성공 또는 실패에 대해 클라이언트 애플리케이션과 통신할 방법을 알아내야 합니다. 원칙적으로 “fire and forget”명령은 절대 사용하지 말아야 합니다. 모든 비즈니스 애플리케이션은 명령이 성공적으로 처리되었는지 아니면 최소한 유효성이 검사되고 수락되었는지를 알아야 합니다.
 
 따라서 비동기 큐에 제출된 명령 메시지의 유효성을 검사한 후 클라이언트에 응답할 수 있으려면 트랜잭션을 실행 한 후 작업 결과를 반환하는 in-process 명령 프로세스에 비해 시스템이 더 복잡해집니다. 큐를 사용하면 명령 프로세스의 결과를 다른 작업 결과 메시지를 통해 반환해야 할 수 있으며 이렇게 하려면 시스템에 추가 구성 요소 및 사용자 지정 통신이 필요합니다.
 
 또한 비동기 명령은 단방향 명령이기 때문에 많은 경우에 필요하지 않으며, 이 내용은 [온라인 대화](https://groups.google.com/forum/#!msg/dddcqrs/xhJHVxDx2pM/WP9qP8ifYCwJ)에 있는 Burtsev Alexey와 Greg Young 사이의 다음과 같은 흥미로운 대화에 설명되어 있습니다.
 
-> \[Burtsev Alexey\] 많은 코드에서 아무 이유 없이 비동기 코드 처리 또는 단방향 명령 메시지를 사용하는 경우를 봤습니다. (긴 작업을 수행하는 경우도, 외부 비동기 코드를 실행하는 경우도, 심지어 메시지 버스를 사용하기 위해 응용 프로그램 경계를 넘는 경우도 아닙니다.) 이런 불필요한 복잡성을 적용하는 이유가 무엇인가요? 그리고 실제로 명령 처리기를 차단하는 CQRS 코드를 여태까지 본 적이 없습니다. 대부분의 경우 제대로 작동할 텐데도 말입니다.
+> \[Burtsev Alexey\] 많은 코드에서 아무 이유 없이 비동기 코드 처리 또는 단방향 명령 메시지를 사용하는 경우를 봤습니다. (긴 작업을 수행하는 경우도, 외부 비동기 코드를 실행하는 경우도, 심지어 메시지 버스를 사용하기 위해 애플리케이션 경계를 넘는 경우도 아닙니다.) 이런 불필요한 복잡성을 적용하는 이유가 무엇인가요? 그리고 실제로 명령 처리기를 차단하는 CQRS 코드를 여태까지 본 적이 없습니다. 대부분의 경우 제대로 작동할 텐데도 말입니다.
 >
 > \[Greg Young\] \[...\] 비동기 명령은 존재하지 않으며 실제로는 또 다른 이벤트입니다. 상대방이 내게 보낸 것을 받아들이고 동의하지 않는 경우 이벤트를 발생시켜야 한다면, 더 이상 내게 무언가를 수행하라고 알려주는 것이 아닙니다. \[ 즉, 명령이 아닙니다\]. 수행이 완료되었다는 것을 알려 주는 것입니다. 처음엔 약간의 차이처럼 보이지만 여기에는 많은 내용이 함축되어 있습니다.
 
@@ -461,7 +461,7 @@ public class CreateOrderCommandHandler
 
 eShopOnContainers의 초기 버전에서, HTTP 요청으로 시작하여 중재자(Mediator) 패턴에 의해 구동되는 동기 명령 처리를 사용하기로 결정했습니다. 이를 통해 프로세스의 성공 또는 실패를 [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) 구현에서처럼 쉽게 반환할 수 있습니다.
 
-어떤 경우에서든, 이러한 결정은 응용 프로그램 또는 마이크로 서비스의 비즈니스 요구 사항에 기반하여 내려져야 합니다.
+어떤 경우에서든, 이러한 결정은 애플리케이션 또는 마이크로 서비스의 비즈니스 요구 사항에 기반하여 내려져야 합니다.
 
 ## <a name="implement-the-command-process-pipeline-with-a-mediator-pattern-mediatr"></a>중재자 패턴(MediatR)으로 명령 프로세스 파이프라인 구현
 
@@ -806,7 +806,7 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
 
 ##### <a name="mediatr-jimmy-bogard"></a>MediatR(Jimmy Bogard)
 
-- **MediatR.** GitHub 리포지토리 \
+- **MediatR.** GitHub 리포지토리. \
   [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
 
 - **MediatR 및 AutoMapper를 포함한 CQRS** \
@@ -832,7 +832,7 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
 
 ##### <a name="fluent-validation"></a>Fluent validation
 
-- **Jeremy Skinner. FluentValidation.** GitHub 리포지토리 \
+- **Jeremy Skinner. FluentValidation.** GitHub 리포지토리. \
   [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
 >[!div class="step-by-step"]

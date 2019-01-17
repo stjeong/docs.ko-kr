@@ -2,17 +2,17 @@
 title: '자습서: WordprocessingML 문서에서 내용 조작(C#)'
 ms.date: 07/20/2015
 ms.assetid: bc9815f8-13d2-4f50-a4d1-b1c0d50d37b3
-ms.openlocfilehash: 64749bfda88b3bf9473fef08d5aef6490d2c37c7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2d906bb2310d4dd6c0ccd865a52ede441556dfda
+ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514784"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54145161"
 ---
 # <a name="tutorial-manipulating-content-in-a-wordprocessingml-document-c"></a>자습서: WordprocessingML 문서에서 내용 조작(C#)
 이 자습서에서는 함수 변환 방법과 LINQ to XML을 적용하여 XML 문서를 조작하는 방법을 보여 줍니다. C# 예제에서는 Microsoft Word에서 저장한 Office Open XML WordprocessingML 문서의 정보를 쿼리하고 조작합니다.  
   
- 자세한 내용은 [WordprocessingML 소개](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)를 참조하세요.  
+ 자세한 내용은 [WordprocessingML 소개](https://ericwhite.com/blog/introduction-to-wordprocessingml-series/)를 참조하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
   

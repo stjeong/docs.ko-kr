@@ -11,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: fc2585dc-965e-4632-ace7-73dd02684ed3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dd5963fee985633d843cc60f521b66000b84e55e
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 369559feca4edab6de587a3494588973e0c2e1b7
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44217193"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221065"
 ---
 # <a name="how-to-perform-action-when-a-dataflow-block-receives-data"></a>방법: 데이터 흐름 블록에서 데이터를 받을 경우 작업 수행
 *실행 데이터 흐름 블록* 형식은 데이터를 받을 때 사용자가 제공한 대리자를 호출합니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602?displayProperty=nameWithType> 및 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602?displayProperty=nameWithType> 클래스는 실행 데이터 흐름 블록 형식입니다. 실행 데이터 흐름 블록에 작업 함수를 제공할 때 `delegate`(Visual Basic에서는 `Sub`) 키워드, <xref:System.Action%601>, <xref:System.Func%602> 또는 람다 식을 사용할 수 있습니다. 이 문서에서는 <xref:System.Func%602> 및 람다 식을 사용하여 실행 블록에서 작업을 수행하는 방법을 설명합니다.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 데이터 흐름을 사용하여 디스크에서 파일을 읽고 파일에서 0인 바이트 수를 계산합니다. 이 예제에서는 <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>을 사용하여 파일을 읽고 0바이트의 수를 계산하고, <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>을 사용하여 콘솔에 0바이트의 수를 출력합니다. <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 개체는 블록이 데이터를 받을 때 작업을 수행할 <xref:System.Func%602> 개체를 지정합니다. <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 개체는 람다 식을 사용하여 콘솔에 읽은 0바이트의 수를 출력합니다.  
   
  [!code-csharp[TPLDataflow_ExecutionBlocks#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_executionblocks/cs/dataflowexecutionblocks.cs#1)]
@@ -34,7 +34,7 @@ ms.locfileid: "44217193"
  [데이터 흐름](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) 문서의 대리자 형식 요약 섹션에서는 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> 및 <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> 개체에 제공할 수 있는 대리자 형식을 요약합니다. 또한 대리자 형식이 동기적으로 작동하는지, 아니면 비동기적으로 작동하는지를 지정합니다.  
   
 ## <a name="compiling-the-code"></a>코드 컴파일  
- 예제 코드를 복사하여 Visual Studio 프로젝트에 붙여넣거나, `DataflowExecutionBlocks.cs`(Visual Basic의 경우 `DataflowExecutionBlocks.vb`) 파일에 붙여넣은 후 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.  
+ 예제 코드를 복사하여 Visual Studio 프로젝트에 붙여넣거나, `DataflowExecutionBlocks.cs`(Visual Basic의 경우 `DataflowExecutionBlocks.vb`) 파일에 붙여넣은 후 Visual Studio용 개발자 명령 프롬프트 창에서 다음 명령을 실행합니다.  
   
  Visual C#  
   

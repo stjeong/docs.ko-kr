@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 8ef159de-b660-4bec-9213-c3fbc4d1c6f4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4f4f73ec60283e1ddf0fee0beaa76bdb68124698
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 7b3d28b7af96dde30117ec952355958ca75ae559
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49122781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54223171"
 ---
 # <a name="resgenexe-resource-file-generator"></a>Resgen.exe(리소스 파일 생성기)
 리소스 파일 생성기(Resgen.exe)를 사용하면 텍스트 파일(.txt 또는 .restext)과 XML 기반 리소스 형식 파일(.resx)을 런타임 이진 실행 파일에 포함하거나 위성 어셈블리에 포함할 수 있는 공용 언어 런타임의 이진 파일(.resources)로 변환할 수 있습니다. [리소스 파일 만들기](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)를 참조하세요.  
@@ -55,7 +55,7 @@ resgen /?
   
  Resgen.exe를 사용하여 이진 .resources 파일을 만드는 경우 언어 컴파일러를 사용하여 이진 파일을 실행 가능 어셈블리에 포함하거나 [어셈블리 링커(Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)를 사용하여 위성 어셈블리에 컴파일할 수 있습니다.  
   
- 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
+ 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
   
  명령 프롬프트에 다음을 입력합니다.  
   
@@ -87,7 +87,7 @@ resgen filename.extension [outputDirectory]
  Resgen.exe를 통해 리소스를 성공적으로 변환하기 위해 텍스트 및 .resx 파일은 올바른 형식을 따라야 합니다.  
   
 ### <a name="text-txt-and-restext-files"></a>텍스트(.txt 및 .restext) 파일  
- 텍스트 파일(.txt 또는 .restext)은 문자열 리소스만 포함할 수 있습니다. 문자열을 여러 가지 언어로 번역해야 하는 응용 프로그램을 작성하는 경우에는 문자열 리소스를 사용하는 것이 좋습니다. 예를 들어, 해당 문자열 리소스를 사용하면 메뉴 문자열을 쉽게 지역화할 수 있습니다. Resgen.exe를 사용하여 이름/값 쌍이 들어 있는 텍스트 파일을 읽습니다. 여기에서 이름은 해당 리소스를 설명하는 문자열이고, 값은 리소스 문자열 자체입니다.  
+ 텍스트 파일(.txt 또는 .restext)은 문자열 리소스만 포함할 수 있습니다. 문자열을 여러 가지 언어로 번역해야 하는 애플리케이션을 작성하는 경우에는 문자열 리소스를 사용하는 것이 좋습니다. 예를 들어, 해당 문자열 리소스를 사용하면 메뉴 문자열을 쉽게 지역화할 수 있습니다. Resgen.exe를 사용하여 이름/값 쌍이 들어 있는 텍스트 파일을 읽습니다. 여기에서 이름은 해당 리소스를 설명하는 문자열이고, 값은 리소스 문자열 자체입니다.  
   
 > [!NOTE]
 >  .txt 및 .restext 파일 형식에 대한 자세한 내용은 [리소스 파일 만들기](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)에서 "텍스트 파일의 리소스" 섹션을 참조하세요.  
@@ -217,7 +217,7 @@ resgen /compile StringResources.txt TableResources.resx ImageResources.resx
   
 <a name="Exporting"></a>   
 ### <a name="exporting-resources-to-a-resw-file"></a>.resw 파일에 리소스 내보내기  
- [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 개발하는 경우, 기존 데스크톱 응용 프로그램의 리소스를 사용하려는 경우가 있습니다. 하지만 두 종류의 응용 프로그램은 다른 파일 형식을 지원합니다. 데스크톱 응용 프로그램에서 텍스트(.txt 또는.restext) 또는.resx 파일의 리소스는 이진 .resources 파일로 컴파일됩니다. [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에서 .resw 파일은 이진 패키지 리소스 인덱스(PRI) 파일로 컴파일됩니다. 실행 가능한 또는 위성 어셈블리에서 리소스를 추출하거나 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램 개발 시 사용할 수 있는 하나 이상의 .resw 파일을 작성하여 이 간격을 연결하는 데 Resgen.exe을 사용할 수 있습니다.  
+ [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 개발하는 경우, 기존 데스크톱 응용 프로그램의 리소스를 사용하려는 경우가 있습니다. 하지만 두 종류의 애플리케이션은 다른 파일 형식을 지원합니다. 데스크톱 응용 프로그램에서 텍스트(.txt 또는.restext) 또는.resx 파일의 리소스는 이진 .resources 파일로 컴파일됩니다. [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에서 .resw 파일은 이진 패키지 리소스 인덱스(PRI) 파일로 컴파일됩니다. 실행 가능한 또는 위성 어셈블리에서 리소스를 추출하거나 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램 개발 시 사용할 수 있는 하나 이상의 .resw 파일을 작성하여 이 간격을 연결하는 데 Resgen.exe을 사용할 수 있습니다.  
   
 > [!IMPORTANT]
 >  Visual Studio는 휴대용 라이브러리에서 리소스를 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램에 통합시키는 데 필요한 모든 변환을 자동으로 처리합니다. 어셈블리에서 리소스를 .resw 파일 형식으로 변환하기 위해 .Resgen.exe를 직접 사용하는 것은 Visual Studio 외부에서 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 응용 프로그램을 개발하려고 하는 개발자에게만 필요합니다.  

@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b4cece1227b5210cf839aff0658267ae480b23b6
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: f0827634278f248089b105844dadf8959f953595
+ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54221598"
 ---
 # <a name="signtoolexe-sign-tool"></a>SignTool.exe(서명 도구)
 서명 도구는 파일에 디지털 서명을 하고, 파일의 서명을 확인하고, 파일에 타임스탬프를 기록하는 명령줄 도구입니다.  
   
- 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
+ 이 도구는 자동으로 Visual Studio와 함께 설치됩니다. 이 도구를 실행하려면 Visual Studio용 개발자 명령 프롬프트(또는 Windows 7의 Visual Studio 명령 프롬프트)를 사용합니다. 자세한 내용은 [명령 프롬프트](../../../docs/framework/tools/developer-command-prompt-for-vs.md)를 참조하세요.  
   
  명령 프롬프트에 다음을 입력합니다.  
   
@@ -129,7 +129,7 @@ signtool [command] [options] [file_name | ...]
 |`/hash` (`SHA1`&#124;`SHA256`)|카탈로그에서 파일을 검색할 때 사용할 선택적 해시 알고리즘을 지정합니다.|  
 |`/kp`|커널 모드 드라이버 서명 정책을 이용하여 검증을 수행하도록 지정합니다.|  
 |`/ms`|여러 확인 의미 체계를 사용합니다. 이는 [!INCLUDE[win8](../../../includes/win8-md.md)] 이상에 대한 [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) 호출의 기본 동작입니다.|  
-|`/o` *Version*|운영 체제 버전별로 파일을 확인합니다. *Version*의 형식은 *PlatformID*:*VerMajor*.*VerMinor*.*BuildNumber*입니다. *PlatformID*는 <xref:System.PlatformID> 열거형 멤버의 내부 값을 나타냅니다. **중요:** `/o` 스위치를 사용하는 것이 좋습니다. `/o`가 지정되지 않으면 SignTool.exe가 예기치 않은 결과를 반환할 수 있습니다. 예를 들어 `/o` 스위치가 포함되지 않는 경우 이전 운영 체계에서 유효성이 제대로 입증된 시스템 카탈로그가 새로운 운영 체계에서는 유효성이 제대로 입증되지 않을지 모릅니다.|  
+|`/o` *Version*|운영 체제 버전별로 파일을 확인합니다. *Version*의 형식은 다음과 같습니다. *PlatformID*:*VerMajor*.*VerMinor*.*BuildNumber*. *PlatformID*는 <xref:System.PlatformID> 열거형 멤버의 내부 값을 나타냅니다. **중요:**  `/o` 스위치를 사용하는 것이 좋습니다. `/o`가 지정되지 않으면 SignTool.exe가 예기치 않은 결과를 반환할 수 있습니다. 예를 들어 `/o` 스위치가 포함되지 않는 경우 이전 운영 체계에서 유효성이 제대로 입증된 시스템 카탈로그가 새로운 운영 체계에서는 유효성이 제대로 입증되지 않을지 모릅니다.|  
 |`/p7`|PKCS #7 파일을 확인합니다. PKCS #7 유효성 검사에 기존 정책이 사용되지 않습니다. 서명이 확인되고 서명 인증서에 대한 체인이 빌드됩니다.|  
 |`/pa`|기본 Authenticode 확인 정책이 사용되도록 지정합니다. `/pa` 옵션을 지정하지 않으면 서명 도구는 Windows 드라이버 확인 정책을 사용합니다. 이 옵션은 `catdb` 옵션과 함께 사용할 수 없습니다.|  
 |`/pg` *PolicyGUID*|GUID를 기준으로 확인 정책을 지정합니다. *PolicyGUID*는 확인 정책의 ActionID에 해당합니다. 이 옵션은 `catdb` 옵션과 함께 사용할 수 없습니다.|  
