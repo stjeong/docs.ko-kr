@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Basic 코딩 규칙
 ms.date: 07/20/2015
 helpviewer_keywords:
