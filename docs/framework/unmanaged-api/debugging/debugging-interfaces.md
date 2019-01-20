@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 991e333c53101a2be2a8a19d3960c3d0879619be
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 8b6d00d17615769a5d03d58e0eda5af62ca58368
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33409934"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415964"
 ---
 # <a name="debugging-interfaces"></a>디버깅 인터페이스
 이 단원에서는 CLR(공용 언어 런타임)에서 실행되는 프로그램의 디버깅을 처리하는 관리되지 않는 인터페이스에 대해 설명합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "33409934"
  디버깅을 위해 모듈을 로드 및 언로드하는 작업을 처리하는 메서드를 제공합니다.  
   
  [ICLRDebuggingLibraryProvider 인터페이스](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md)  
- 에 포함 되어는 [ProvideLibrary 메서드](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-providelibrary-method.md) 메서드 라이브러리 공급자 콜백 인터페이스 공용 언어 런타임 버전별 디버깅 라이브러리를 찾아서에 로드할 요청 수를 가져옵니다.  
+ 포함 된 [ProvideLibrary 메서드](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-providelibrary-method.md) 메서드 라이브러리 공급자 콜백 인터페이스 공용 언어 런타임 버전별 디버깅 라이브러리 있고에 로드 된 요청 수를 가져옵니다.  
   
  [ICLRMetadataLocator 인터페이스](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)  
  데이터 액세스 서비스 계층에서 대상 프로세스의 어셈블리 메타데이터를 찾는 데 사용되는 인터페이스입니다.  
@@ -56,7 +56,7 @@ ms.locfileid: "33409934"
  응용 프로그램 도메인에서 [!INCLUDE[wrt](../../../../includes/wrt-md.md)] 형식으로 작동하기 위한 메서드를 제공합니다. 이 인터페이스는 `ICorDebugAppDomain` 및 `ICorDebugAppDomain2` 인터페이스의 확장입니다.  
   
  [ICorDebugAppDomain4 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain4-interface.md)  
- 논리적으로 확장 된 [ICorDebugAppDomain](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-interface.md) 인터페이스를 COM 호출 가능 래퍼에서 관리 되는 개체를 가져옵니다.  
+ 논리적으로 확장 합니다 [ICorDebugAppDomain](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-interface.md) 인터페이스를 COM 호출 가능 래퍼를에서 관리 되는 개체를 가져옵니다.  
   
  [ICorDebugAppDomainEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomainenum-interface.md)  
  열거형의 다음 위치에서 시작하여 지정된 수만큼 `ICorDebugAppDomain` 값을 반환하는 메서드를 제공합니다.  
@@ -71,7 +71,7 @@ ms.locfileid: "33409934"
  어셈블리를 나타냅니다. 이 인터페이스는 `ICorDebugAssembly` 인터페이스의 확장입니다.  
   
  [ICorDebugAssembly3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)  
- 논리적으로 확장 된 [ICorDebugAssembly](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-interface.md) 컨테이너 어셈블리 및 해당 포함 된에 대 한 지원을 제공 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
+ 논리적으로 확장 합니다 [ICorDebugAssembly](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-interface.md) 컨테이너 어셈블리 및 포함 된 어셈블리에 대 한 지원을 제공 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
  [ICorDebugAssemblyEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugassemblyenum-interface.md)  
  `ICorDebugEnum` 메서드를 구현하고 `ICorDebugAssembly` 배열을 열거합니다.  
@@ -107,10 +107,10 @@ ms.locfileid: "33409934"
  `ICorDebugCode`의 기능을 확장하는 메서드를 제공합니다.  
   
  [ICorDebugCode3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)  
- 확장 하는 메서드를 제공 [ICorDebugCode](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md) 및 [ICorDebugCode2](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-interface.md) 관리 되는 반환 값에 대 한 정보를 제공 합니다.  
+ 확장 하는 메서드를 제공 [ICorDebugCode](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md) 하 고 [ICorDebugCode2](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-interface.md) 관리 되는 반환 값에 대 한 정보를 제공 합니다.  
   
  [ICorDebugCode4 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md)  
- 디버거를 지역 변수 및 함수에 인수를 열거 하는 메서드를 제공 합니다.  
+ 지역 변수 및 함수에 인수를 열거 하는 디버거를 사용 하도록 설정 하는 메서드를 제공 합니다.  
   
  [ICorDebugCodeEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugcodeenum-interface.md)  
  `ICorDebugEnum` 메서드를 구현하고 `ICorDebugCode` 배열을 열거합니다.  
@@ -128,10 +128,10 @@ ms.locfileid: "33409934"
  특정 대상 프로세스에 대한 액세스를 제공하는 콜백 인터페이스를 제공합니다.  
   
  [ICorDebugDataTarget2 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)  
- 논리적으로 확장 된 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
+ 논리적으로 확장 합니다 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
  [ICorDebugDataTarget3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget3-interface.md)  
- 논리적으로 확장 된 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 로드 된 모듈에 대 한 정보를 제공 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
+ 논리적으로 확장 합니다 [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) 로드 된 모듈에 대 한 정보를 제공 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
  [ICorDebugDebugEvent 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md)  
  모든 `ICorDebug` 디버그 이벤트가 파생되는 기본 인터페이스를 정의합니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
@@ -161,7 +161,7 @@ ms.locfileid: "33409934"
  예외 개체에 포함된 호출 스택 정보에 대한 열거자를 제공합니다.  
   
  [ICorDebugExceptionObjectValue 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)  
- 확장 된 [ICorDebugObjectValue](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-interface.md) 인터페이스는 관리 되는 예외 개체에서 스택 추적 정보를 제공 합니다.  
+ 확장 된 [ICorDebugObjectValue](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-interface.md) 관리 되는 예외 개체에서 스택 추적 정보를 제공 하는 인터페이스입니다.  
   
  [ICorDebugFrame Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-interface.md)  
  현재 스택의 프레임을 나타냅니다.  
@@ -176,7 +176,7 @@ ms.locfileid: "33409934"
  `ICorDebugFunction`의 기능을 논리적으로 확장하여 "내 코드만" 단계별 실행 디버깅을 지원합니다.  
   
  [ICorDebugFunction3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-interface.md)  
- 논리적으로 확장 된 [ICorDebugFunction](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction-interface1.md) ReJIT 요청의 코드에 대 한 액세스를 제공 하는 인터페이스입니다.  
+ 논리적으로 확장 합니다 [ICorDebugFunction](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction-interface1.md) ReJIT 요청의 코드에 대 한 액세스를 제공 하는 인터페이스입니다.  
   
  [ICorDebugFunctionBreakpoint Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugfunctionbreakpoint-interface.md)  
  함수에서 중단점을 지원하기 위해 `ICorDebugBreakpoint`를 확장합니다.  
@@ -191,7 +191,7 @@ ms.locfileid: "33409934"
  GUID를 매핑하는 개체와 그에 해당하는 `ICorDebugType` 개체에 대한 열거자를 제공합니다.  
   
  [ICorDebugHandleValue Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-interface.md)  
- 디버거에서 가비지 수집을 위해 핸들을 만든 대상 참조 값을 나타내는 `ICorDebugReferenceValue`의 서브클래스입니다.  
+ 디버거에서 가비지 컬렉션을 위해 핸들을 만든 대상 참조 값을 나타내는 `ICorDebugReferenceValue`의 서브클래스입니다.  
   
  [ICorDebugHeapEnum 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
  관리되는 힙의 개체에 대한 열거자를 제공합니다.  
@@ -212,7 +212,7 @@ ms.locfileid: "33409934"
  IL(중간 언어) 코드 세그먼트를 나타냅니다.  
   
  [ICorDebugILCode2 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)  
- 논리적으로 확장 된 [ICorDebugILCode](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md) 함수의 로컬 변수 서명에 대해 토큰을 반환 하 고 프로파일러의 계측 된 IL (중간 언어)를 매핑하는 메서드를 제공 하는 인터페이스 원래 메서드 IL 오프셋 오프셋 합니다.  
+ 논리적으로 확장 합니다 [ICorDebugILCode](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md) 인터페이스 함수의 로컬 변수 서명에 대 한 토큰을 반환 하 고 프로파일러의 계측 된 IL (중간 언어)을 매핑하는 방법을 제공 하기 위해 원래 메서드 IL 오프셋 오프셋 합니다.  
   
  [ICorDebugILFrame Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-interface.md)  
  MSIL 코드의 스택 프레임을 나타냅니다.  
@@ -233,7 +233,7 @@ ms.locfileid: "33409934"
  디버거의 프레임 형식을 식별합니다.  
   
  [ICorDebugInternalFrame2 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md)  
- 스택 주소 및 위치와 관련 하 여 내부 프레임에 대 한 정보를 제공 [ICorDebugFrame](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-interface.md) 개체입니다.  
+ 스택 주소에 상대적인 위치를 포함 하 여 내부 프레임에 대 한 정보를 제공 [ICorDebugFrame](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-interface.md) 개체입니다.  
   
  [ICorDebugLoadedModule 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)  
  로드된 모듈에 대한 정보를 제공합니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
@@ -305,16 +305,16 @@ ms.locfileid: "33409934"
  사용자 지정 디버거 알림을 제어합니다.  
   
  [ICorDebugProcess5 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)  
- 확장 된 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 관리 되는 개체의 가비지 수집에 대 한 정보를 제공 하 고 디버거가 응용 프로그램에서 이미지를 로드 하는지 여부를 결정 하는 관리 되는 힙에 대 한 액세스를 지원 하기 위해 인터페이스의 로컬 네이티브 이미지 캐시 합니다.  
+ 확장 된 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 관리 되는 개체의 가비지 수집에 대 한 정보를 제공 하 고 디버거가 응용 프로그램에서 이미지를 로드 하는지 여부를 확인 하려면 관리 되는 힙에 대 한 액세스를 지 원하는 인터페이스의 로컬 네이티브 이미지 캐시 합니다.  
   
  [ICorDebugProcess6 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)  
- 논리적으로 확장 된 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 가상 모듈 분할 및 네이티브 예외 디버그 이벤트에서 인코딩 되는 관리 되는 디버그 이벤트 디코딩 등의 기능을 활성화 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
+ 논리적으로 확장 합니다 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 인터페이스 네이티브 예외 디버그 이벤트, 가상 모듈 분할에서 인코딩 되는 관리 되는 디버그 이벤트 디코딩 등의 기능을 사용 하도록 설정 합니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
  [ICorDebugProcess7 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-interface.md)  
  대상 프로세스에서 디버거가 메모리 내 메타데이터 업데이트를 처리하도록 구성하는 메서드를 제공합니다.  
   
  [ICorDebugProcess8 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess8-interface.md)  
- 논리적으로 확장 된 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 인터페이스를 특정 유형의 사용할지 [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) 예외 콜백을 합니다.  
+ 논리적으로 확장 합니다 [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) 인터페이스를 사용 하도록 설정 하거나 특정 유형의 사용 하지 않도록 [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) 예외 콜백을 합니다.  
   
  [ICorDebugProcessEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugprocessenum-interface.md)  
  `ICorDebugEnum` 메서드를 구현하고 `ICorDebugProcess` 배열을 열거합니다.  
@@ -359,7 +359,7 @@ ms.locfileid: "33409934"
  디버그 기호 정보를 검색하는 데 사용할 수 있는 메서드를 제공합니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
  [ICorDebugSymbolProvider2 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider2-interface.md)  
- 논리적으로 확장 된 [ICorDebugSymbolProvider](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md) 추가 디버그 기호 정보를 검색 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
+ 논리적으로 확장 합니다 [ICorDebugSymbolProvider](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md) 추가 디버그 기호 정보를 검색 하는 인터페이스입니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
   
  [ICorDebugThread Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugthread-interface.md)  
  프로세스의 스레드를 나타냅니다. `ICorDebugThread` 인스턴스의 수명은 이 인스턴스가 나타내는 스레드의 수명과 같습니다.  
@@ -368,7 +368,7 @@ ms.locfileid: "33409934"
  `ICorDebugThread`에서 논리적으로 확장된 버전입니다.  
   
  [ICorDebugThread3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugthread3-interface.md)  
- 진입점을 제공 된 [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) 및 해당 인터페이스입니다.  
+ 진입점을 제공 합니다 [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) 및 해당 인터페이스입니다.  
   
  [ICorDebugThread4 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)  
  스레드 차단 정보를 제공합니다.  
@@ -380,7 +380,7 @@ ms.locfileid: "33409934"
  기본 또는 복합(즉, 사용자 정의) 형식을 나타냅니다. 형식이 제네릭이면 `ICorDebugType`는 인스턴스화된 제네릭 형식을 나타냅니다.  
   
  [ICorDebugType2 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)  
- 확장 된 [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) 기본 형식 또는 복합 (사용자 정의) 형식을의 형식 식별자를 검색 하는 인터페이스입니다.  
+ 확장 된 [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) 기본 형식 또는 복합 (사용자 정의 됨) 형식의 형식 식별자를 검색 하는 인터페이스입니다.  
   
  [ICorDebugTypeEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugtypeenum-interface.md)  
  `ICorDebugEnum` 메서드를 구현하고 `ICorDebugType` 배열을 열거합니다.  
@@ -395,7 +395,7 @@ ms.locfileid: "33409934"
  `ICorDebugValue`을 지원하기 위해 `ICorDebugType`에서 확장된 버전입니다.  
   
  [ICorDebugValue3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)  
- 2GB 보다 큰 배열에 대 한 지원을 제공 하는 "ICorDebugValue" 및 "ICorDebugValue2" 인터페이스를 확장 합니다.  
+ 2GB 보다 큰 배열 지원 하기 위해 "ICorDebugValue" 및 "ICorDebugValue2" 인터페이스를 확장 합니다.  
   
  "ICorDebugValueBreakpoint"  
  특정 값에 액세스할 수 있도록 `ICorDebugBreakpoint`를 확장합니다.  
@@ -404,10 +404,10 @@ ms.locfileid: "33409934"
  `ICorDebugEnum` 메서드를 구현하고 `ICorDebugValue` 배열을 열거합니다.  
   
  [ICorDebugVariableHome 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)  
- 지역 변수 또는 함수 '의 인수를 나타냅니다.  
+ 지역 변수 또는 함수의 인수를 나타냅니다.  
   
  [ICorDebugVariableHomeEnum 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
- 지역 변수 및 함수에 인수에는 열거자를 제공 합니다.  
+ 지역 변수 및 함수에 인수 하는 열거자를 제공합니다.  
   
  [ICorDebugVariableSymbol 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)  
  변수에 대한 디버그 기호 정보를 검색합니다. **.NET 네이티브 에서만 사용할 수 있습니다.**  
@@ -432,6 +432,16 @@ ms.locfileid: "33409934"
   
  [ICorPublishProcessEnum 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)  
  `ICorPublishProcess` 개체의 컬렉션을 이동하는 메서드를 제공합니다.  
+
+ [ISOSDacInterface 인터페이스](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md) 에서 데이터에 액세스할 도우미 메서드를 제공 `SOS`합니다.
+
+ [IXCLRDataMethodDefinition 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md) 메서드 정의 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.
+ 
+ [IXCLRDataMethodInstance 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md) 메서드 인스턴스에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.
+ 
+ [IXCLRDataModule 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md) 로드 된 모듈에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.
+ 
+ [IXCLRDataProcess 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md) 프로세스에 대 한 정보를 쿼리 하기 위한 메서드를 제공 합니다.
   
 ## <a name="related-sections"></a>관련 단원  
  [디버깅 Coclass](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  

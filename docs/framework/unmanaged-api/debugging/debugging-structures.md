@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6c7415920d34fc231bf82dd00199c7e01eec7a73
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 23aa619d666f2e0b9eb67ab4cf8d4f92761865d3
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33408114"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415327"
 ---
 # <a name="debugging-structures"></a>디버깅 구조체
 이 섹션에서는 디버깅 API에서 사용하는 관리되지 않는 구조체에 대해 설명합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "33408114"
  예외 개체의 스택 프레임 정보를 나타냅니다.  
   
  [CorDebugExceptionObjectStackFrame 구조체](../../../../docs/framework/unmanaged-api/debugging/cordebugexceptionobjectstackframe-structure.md)  
- 지도 [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID를 해당 [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) 개체입니다.  
+ Maps는 [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID를 해당 [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) 개체입니다.  
   
  COR_ACTIVE_FUNCTION  
  스레드 프레임에서 현재 활성 상태인 함수에 대한 정보를 포함합니다.  
@@ -77,7 +77,14 @@ ms.locfileid: "33408114"
  공용 언어 런타임의 4부분으로 구성된 표준 버전 번호를 저장합니다.  
   
  [StackTrace_SimpleContext 구조체](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md)  
- 전체 `CONTEXT` 구조체 대신 사용할 수 있는 단순 컨텍스트를 제공합니다.  
+ 전체 `CONTEXT` 구조체 대신 사용할 수 있는 단순 컨텍스트를 제공합니다.
+
+ [CLRDATA_ADDRESS_RANGE 구조](../../../../docs/framework/unmanaged-api/debugging/clrdata-address-range-structure.md) 주소 범위를 정의 합니다.
+ 
+ [CLRDATA_IL_ADDRESS_MAP 구조](../../../../docs/framework/unmanaged-api/debugging/clrdata-il-address-map-structure.md) IL 주소 매핑 정의
+ 
+ [DacpGetModuleAddress 구조](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md) 모듈 주소 요청에 대 한 컨테이너를 정의 합니다.
+
   
 ## <a name="related-sections"></a>관련 단원  
  [디버깅 Coclass](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  

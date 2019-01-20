@@ -5,21 +5,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 185d7aea-68a6-4bd8-adde-45050f33170a
-ms.openlocfilehash: 185d46d041ee342962c624ad6a3592e5a426cc6e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e508a29e3c3dffce467eb60f2f702ea06fa4992a
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502153"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415249"
 ---
 # <a name="how-to-create-a-flowchart-workflow"></a>방법: 순서도 워크플로 만들기
-기본 제공 활동뿐 아니라 사용자 지정 활동에서도 워크플로를 구성할 수 있습니다. 이 항목에서는 같은 모두 기본 제공 활동을 사용 하는 워크플로 만드는 방법을 단계별로 합니다 <xref:System.Activities.Statements.Flowchart> 활동 및 이전 사용자 지정 활동 [방법: 활동 만들기](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) 항목입니다. 이 워크플로는 숫자 추측 게임을 모델링합니다.  
+기본 제공 활동뿐 아니라 사용자 지정 활동에서도 워크플로를 구성할 수 있습니다. 이 항목에서는 같은 모두 기본 제공 활동을 사용 하는 워크플로 만드는 방법을 단계별로 합니다 <xref:System.Activities.Statements.Flowchart> 활동 및 사용자 지정 활동을 이전 [방법: 활동 만들기](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) 항목입니다. 이 워크플로는 숫자 추측 게임을 모델링합니다.  
   
 > [!NOTE]
 >  초보자를 위한 자습서의 각 항목은 이전 항목을 바탕으로 합니다. 이 항목을 완료 하려면 먼저 마쳐야 [방법: 활동 만들기](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)합니다.  
   
 > [!NOTE]
->  이 자습서의 전체 버전을 다운로드 하려면 [Windows Workflow Foundation(wf45 ()-초보자를 위한 자습서](https://go.microsoft.com/fwlink/?LinkID=248976)합니다.  
+>  자습서의 전체 버전을 다운로드하려면 [Windows Workflow Foundation(WF45) - 초보자를 위한 자습서](https://go.microsoft.com/fwlink/?LinkID=248976)를 참조하세요.  
   
 ### <a name="to-create-the-workflow"></a>워크플로를 만들려면  
   
@@ -67,7 +67,7 @@ ms.locfileid: "43502153"
 1.  끌어서를 **할당** 활동에서는 **기본** 부분을 **도구 상자** 위로 가져갑니다를 **시작** 노드 맨 위에 있는 순서도입니다. 경우는 **할당** 를 통해 작업이 **시작** 노드 주위에 삼각형 세 개가 표시 됩니다는 **시작** 노드. 삭제 합니다 **할당** 활동 바로 아래에 있는 삼각형을 **시작** 노드. 이 두 항목을 함께 연결 하 고 지정 된 **할당** 순서도의 첫 번째 활동으로 작업 합니다.  
   
     > [!NOTE]
-    >  시작 노드에 활동을 직접 연결하여 워크플로에서 해당 활동을 시작 활동으로 나타낼 수도 있습니다. 이 위해 위로 마우스를 이동 합니다 **시작** 노드를 마우스를 위로 가져갈 때 나타나는 사각형 중 하나를 클릭 합니다 **시작** 노드와 끌어서 원하는 활동 아래로 줄 연결 및 중 하나에 놓습니다 표시 되는 사각형입니다. 지정할 수 있습니다 및 it를 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 시작 활동으로 활동 **시작 노드로 설정**합니다.  
+    >  시작 노드에 활동을 직접 연결하여 워크플로에서 해당 활동을 시작 활동으로 나타낼 수도 있습니다. 이 위해 위로 마우스를 이동 합니다 **시작** 노드를 마우스를 위로 가져갈 때 나타나는 사각형 중 하나를 클릭 합니다 **시작** 노드와 끌어서 원하는 활동 아래로 줄 연결 및 중 하나에 놓습니다 표시 되는 사각형입니다. It를 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 시작 활동으로 활동을 지정할 수도 있습니다 **시작 노드로 설정**합니다.  
   
 2.  형식 `Target` 에 **에** 상자 및에 다음 식을 합니다 **C# 식 입력** 또는 **VB 식 입력** 상자입니다.  
   
@@ -148,7 +148,7 @@ ms.locfileid: "43502153"
   
 1.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
-     워크플로 실행 하는 방법에 대 한 지침은 다음 항목을 참조 하세요 [방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)합니다. 이미 완료 하는 경우는 [방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) 이 단계에서 순서도 워크플로 사용 하 여 실행 하려는 워크플로의 다른 스타일을 사용 하 여 단계를 건너 뛰 세요는 [빌드하고응용프로그램을실행하려면](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md#BKMK_ToRunTheApplication)부분 [방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)합니다.  
+     워크플로 실행 하는 방법에 대 한 지침은 다음 항목을 참조 하십시오 [방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)합니다. 이미 완료 하는 경우는 [방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) 이 단계에서 순서도 워크플로 사용 하 여 실행 하려는 워크플로의 다른 스타일을 사용 하 여 단계를 건너 뛰 세요 합니다 [빌드 및 응용 프로그램을 실행 하려면](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md#BKMK_ToRunTheApplication) 부분 [하는 방법: 워크플로 실행](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Activities.Statements.Flowchart>  

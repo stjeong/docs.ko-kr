@@ -2,12 +2,12 @@
 title: .NET Remoting에서 WCF로 마이그레이션
 ms.date: 03/30/2017
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
-ms.openlocfilehash: cca303cf9b906fd395e594111fae808ae4ab6435
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 1ebab76d63ae3328b158f1c03a61d2e2b3cbd8f9
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245680"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415977"
 ---
 # <a name="migrating-from-net-remoting-to-wcf"></a>.NET Remoting에서 WCF로 마이그레이션
 이 문서에서는 WCF(Windows Communication Foundation)를 사용하기 위해 .NET Remoting을 사용하는 응용 프로그램을 마이그레이션하는 방법을 설명합니다. 이러한 제품 간의 비슷한 개념을 비교한 다음 WCF의 몇 가지 일반적인 Remoting 시나리오를 수행하는 방법을 설명합니다.  
@@ -307,9 +307,9 @@ catch (FaultException<CustomerServiceFault> fault)
   
  Remoting 응용 프로그램이 WCF로 마이그레이션된 후에도 .NET Remoting에서 종속성을 제거하는 것이 중요합니다. 그러면 응용 프로그램에서 Remoting의 취약성이 제거됩니다. 이 단계에는 다음이 포함됩니다.  
   
--   **MarshalByRefObject 사용을 중단 합니다.** MarshalByRefObject 형식은 Remoting용으로만 제공되며 WCF에서는 사용하지 않습니다. MarshalByRefObject를 하위 클래스로 분류하는 모든 응용 프로그램 형식은 제거하거나 변경해야 합니다. MarshalByRefObject 형식은 Remoting용으로만 제공되며 WCF에서는 사용하지 않습니다. MarshalByRefObject를 하위 클래스로 분류하는 모든 응용 프로그램 형식은 제거하거나 변경해야 합니다.  
+-   **MarshalByRefObject 사용을 중단 합니다.** MarshalByRefObject 형식은 Remoting용으로만 제공되며 WCF에서는 사용하지 않습니다. MarshalByRefObject를 하위 클래스로 분류하는 모든 응용 프로그램 형식은 제거하거나 변경해야 합니다.  
   
--   **[Serializable] 및 ISerializable을 중단 합니다.** [Serializable] 특성과 ISerializable 인터페이스는 원래 신뢰할 수 있는 환경에서 형식을 직렬화하도록 설계되었으며 Remoting에서 사용됩니다. WCF 직렬화를 수행하려면 [DataContract]와 [DataMember]가 표시된 형식이 필요합니다. 응용 프로그램에서 사용하는 데이터 형식은 [DataContract]를 사용하고 ISerializable이나 [Serializable]은 사용하지 않도록 수정해야 합니다. [Serializable] 특성과 ISerializable 인터페이스는 원래 신뢰할 수 있는 환경에서 형식을 직렬화하도록 설계되었으며 Remoting에서 사용됩니다. WCF 직렬화를 수행하려면 [DataContract]와 [DataMember]가 표시된 형식이 필요합니다. 응용 프로그램에서 사용하는 데이터 형식은 [DataContract]를 사용하고 ISerializable이나 [Serializable]은 사용하지 않도록 수정해야 합니다.  
+-   **[Serializable] 및 ISerializable을 중단 합니다.** [Serializable] 특성과 ISerializable 인터페이스는 원래 신뢰할 수 있는 환경에서 형식을 직렬화하도록 설계되었으며 Remoting에서 사용됩니다. WCF 직렬화를 수행하려면 [DataContract]와 [DataMember]가 표시된 형식이 필요합니다. 응용 프로그램에서 사용하는 데이터 형식은 [DataContract]를 사용하고 ISerializable이나 [Serializable]은 사용하지 않도록 수정해야 합니다.  
   
 ### <a name="migration-scenarios"></a>마이그레이션 시나리오  
  이제 WCF에서 다음과 같은 일반적인 Remoting 시나리오를 수행하는 방법을 살펴보겠습니다.  

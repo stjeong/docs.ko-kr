@@ -2,12 +2,12 @@
 title: F#구성 요소 디자인 지침
 description: 쓰기에 대 한 지침을 알아보려면 F# 다른 호출자가 사용 하기 위한 구성 요소입니다.
 ms.date: 05/14/2018
-ms.openlocfilehash: bc8d4908912c4630f649ba30593d43a557278efa
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d72bfac1de5a57d5cce86f996f144af4bc181463
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145675"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415639"
 ---
 # <a name="f-component-design-guidelines"></a>F#구성 요소 디자인 지침
 
@@ -47,7 +47,7 @@ ms.locfileid: "53145675"
 type Point =
 
     /// Computes the distance between this point and another
-    member DistanceTo : otherPoint:Point -> float
+    member DistanceTo: otherPoint:Point -> float
 ```
 
 약식 XML 주석을 사용할 수 있습니다 (`/// comment`), 또는 표준 XML 주석 (`///<summary>comment</summary>`).
@@ -75,14 +75,14 @@ type Point =
 | 구체적인 형식 | PascalCase | 명사 adjective / | 목록, Double, 복잡 한 | 구체적인 형식은 구조체, 클래스, 열거형, 대리자, 레코드 및 공용 구조체입니다. 형식 이름은 일반적으로 OCaml에서 소문자 있지만 F# 는 형식에 대 한.NET 명명 체계를 채택 했습니다.
 | DLL           | PascalCase |                 | Fabrikam.Core.dll |  |
 | 공용 구조체 태그     | PascalCase | 명사 | 일부 추가, 성공 | 공용 Api에서 접두사를 사용 하지 마세요. 필요에 따라 내부와 같은 경우에 접두사를 사용 하 여 `팀 입력 TAlpha = | TBeta | 생성 합니다` |
-| 이벤트          | PascalCase | 동사 | ValueChanged / ValueChanging |  |
+| 이벤트(event)          | PascalCase | 동사 | ValueChanged / ValueChanging |  |
 | 예외     | PascalCase |      | WebException | 이름을 "Exception" 끝나야 합니다. |
 | 필드          | PascalCase | 명사 | CurrentName  | |
 | 인터페이스 형식 |  PascalCase | 명사 adjective / | IDisposable | 이름 "I"로 시작 해야 합니다. |
 | 메서드 |  PascalCase |  동사 | ToString | |
 | 네임스페이스 | PascalCase | | Microsoft.FSharp.Core | 일반적으로 사용 하 여 `<Organization>.<Technology>[.<Subnamespace>]`, 하지만 기술을 조직 으로부터 독립적인 경우 조직은 삭제 합니다. |
 | 매개 변수 | camelCase | 명사 |  typeName, 변환, 범위 | |
-| 값 (내부) 수 | camelCase 또는 PascalCase | 명사 / 동사 |  getValue를 myTable |
+| 값 (내부) 수 | camelCase 또는 PascalCase | 명사 / 동사 |  getValue, myTable |
 | 값 (외부)를 사용 합니다. | camelCase 또는 PascalCase | 명사/동사  | List.map Dates.Today | let 바인딩 값 기존의 함수형 디자인 패턴을 따를 경우 공용 많습니다. 그러나 일반적으로 사용 하 여 PascalCase 때 식별자는 다른.NET 언어에서 사용할 수 있습니다. |
 | 속성  | PascalCase  | 명사 adjective /  | IsEndOfFile, BackColor  | 부울 속성 일반적으로 사용할 수 있으며 긍정적인 IsEndOfFile, 없습니다 IsNotEndOfFile 같이 해야 합니다.
 
@@ -191,16 +191,16 @@ type Counter() =
 
 ```fsharp
 type Serializer =
-    abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
-    abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
+    abstract Serialize<'T>: preserveRefEq: bool -> value: 'T -> string
+    abstract Deserialize<'T>: preserveRefEq: bool -> pickle: string -> 'T
 ```
 
 우선적으로:
 
 ```fsharp
 type Serializer<'T> = {
-    Serialize : bool -> 'T -> string
-    Deserialize : bool -> string -> 'T
+    Serialize: bool -> 'T -> string
+    Deserialize: bool -> string -> 'T
 }
 ```
 
@@ -243,13 +243,13 @@ module CollectionType =
 경우에 따라 클래스 벡터와 같은 수학적 구문을 모델링 하는 데 사용 됩니다. 도메인 모델링 되는 잘 알려진 연산자에 있는 경우 유용 내장 함수를 클래스 멤버로 정의 합니다.
 
 ```fsharp
-type Vector(x:float) =
+type Vector(x: float) =
 
     member v.X = x
 
-    static member (*) (vector:Vector, scalar:float) = Vector(vector.X * scalar)
+    static member (*) (vector: Vector, scalar: float) = Vector(vector.X * scalar)
 
-    static member (+) (vector1:Vector, vector2:Vector) = Vector(vector1.X + vector2.X)
+    static member (+) (vector1: Vector, vector2: Vector) = Vector(vector1.X + vector2.X)
 
 let v = Vector(5.0)
 
@@ -306,7 +306,7 @@ F#를 구현 상속은 거의 사용 되지 않습니다. 또한 상속 계층 �
 반환 형식에 튜플을 사용의 좋은 예는 다음과 같습니다.
 
 ```fsharp
-val divrem : BigInteger -> BigInteger -> BigInteger * BigInteger
+val divrem: BigInteger -> BigInteger -> BigInteger * BigInteger
 ```
 
 에 대 한 많은 구성 요소가 포함 된 형식을 반환 하거나 구성 요소 식별이 가능한 단일 엔터티를 관련 된 경우 튜플을 대신 명명 된 형식을 사용 하 여 고려해 야 합니다.
@@ -317,9 +317,9 @@ val divrem : BigInteger -> BigInteger -> BigInteger * BigInteger
 
 ```fsharp
 type SomeType =
-    member this.Compute(x:int) : int =
+    member this.Compute(x:int): int =
         ...
-    member this.AsyncCompute(x:int) : Async<int> =
+    member this.AsyncCompute(x:int): Async<int> =
         ...
 
 type System.ServiceModel.Channels.IInputChannel with
@@ -508,8 +508,8 @@ F#:
 ```fsharp
 [<NoEquality; NoComparison>]
 type MyRecord =
-    { FirstThing : int
-        SecondThing : string }
+    { FirstThing: int
+        SecondThing: string }
 ```
 
 C#: 
@@ -574,7 +574,7 @@ type MyBadType() =
     [<CLIEvent>]
     member this.MyEvent = myEv.Publish
 
-type MyEventArgs(x:int) =
+type MyEventArgs(x: int) =
     inherit System.EventArgs()
     member this.X = x
 
@@ -596,7 +596,7 @@ type MyGoodType() =
 /// A type in a component designed for use from other .NET languages
 type MyType() =
 
-    let compute (x: int) : Async<int> = async { ... }
+    let compute (x: int): Async<int> = async { ... }
 
     member this.ComputeAsync(x) = compute x |> Async.StartAsTask
 ```
@@ -606,7 +606,7 @@ type MyType() =
 ```fsharp
 /// A type in a component designed for use from other .NET languages
 type MyType() =
-    let compute(x:int) : Async<int> = async { ... }
+    let compute(x: int): Async<int> = async { ... }
     member this.ComputeAsTask(x, cancellationToken) = Async.StartAsTask(compute x, cancellationToken)
 ```
 
@@ -617,14 +617,14 @@ type MyType() =
 다음과 같이 변경 하는 대신
 
 ```fsharp
-member this.Transform(f:int->int) =
+member this.Transform(f: int->int) =
     ...
 ```
 
 방법
 
 ```fsharp
-member this.Transform(f:Func<int,int>) =
+member this.Transform(f: Func<int,int>) =
     ...
 ```
 
@@ -639,18 +639,18 @@ F# 함수 형식으로 표시 됩니다 `class FSharpFunc<T,U>` 다른.NET 언�
 ```fsharp
 member this.ReturnOption() = Some 3
 
-member this.ReturnBoolAndOut(outVal : byref<int>) =
+member this.ReturnBoolAndOut(outVal: byref<int>) =
     outVal <- 3
     true
 
-member this.ParamOption(x : int, y : int option) =
+member this.ParamOption(x: int, y: int option) =
     match y with
     | Some y2 -> x + y2
     | None -> x
 
-member this.ParamOverload(x : int) = x
+member this.ParamOverload(x: int) = x
 
-member this.ParamOverload(x : int, y : int) = x + y
+member this.ParamOverload(x: int, y: int) = x + y
 ```
 
 #### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>.NET 컬렉션 인터페이스를 사용 하 여 형식을 IEnumerable\<T\> 및 IDictionary\<키, 값\> 매개 변수 및 반환 값
@@ -660,14 +660,14 @@ member this.ParamOverload(x : int, y : int) = x + y
 대신 F# 를 나열 합니다.
 
 ```fsharp
-member this.PrintNames(names : string list) =
+member this.PrintNames(names: string list) =
     ...
 ```
 
 사용 하 여 F# 시퀀스:
 
 ```fsharp
-member this.PrintNames(names : seq<string>) =
+member this.PrintNames(names: seq<string>) =
     ...
 ```
 
@@ -678,13 +678,13 @@ member this.PrintNames(names : seq<string>) =
 ```fsharp
 ✔ member this.NoArguments() = 3
 
-✔ member this.ReturnVoid(x : int) = ()
+✔ member this.ReturnVoid(x: int) = ()
 ```
 
 이 잘못 되었습니다.
 
 ```fsharp
-member this.WrongUnit( x:unit, z:int) = ((), ())
+member this.WrongUnit( x: unit, z: int) = ((), ())
 ```
 
 #### <a name="check-for-null-values-on-vanilla-net-api-boundaries"></a>바닐라.NET API 경계에 null 값에 대 한 확인
@@ -770,7 +770,7 @@ public class Point1
 }
 ```
 
-확인 방법에 대 한 중요 한 요소가 몇 가지 F# 나타냅니다 여기 생성 합니다. 예를 들어 다음과 같습니다.
+확인 방법에 대 한 중요 한 요소가 몇 가지 F# 나타냅니다 여기 생성 합니다. 예를 들어:
 
 * 인수 이름 같은 메타 데이터 유지 되었습니다.
 

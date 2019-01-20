@@ -2,12 +2,12 @@
 title: Visual Basic 언어 버전 선택
 description: 컴파일러가 특정 컴파일러 버전을 사용 하 여 구문 유효성 검사를 수행 하도록 구성 합니다.
 ms.date: 05/24/2018
-ms.openlocfilehash: 7628b5a7c27f5b26171d42e44a58598ef3d5d49f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 3b6d8055dbf64f2a5c38f46b6d66794fc48a1cea
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194724"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415106"
 ---
 # <a name="select-the-visual-basic-language-version"></a>Visual Basic 언어 버전 선택
 
@@ -60,7 +60,7 @@ Visual Basic 컴파일러 기본값은 해제 된 언어의 최신 주 버전입
 </Project>
 ```
 
-이제 해당 파일을 포함 하는 디렉터리의 모든 하위 디렉터리에 빌드는 Visual Basic 버전 15.5 구문을 사용 합니다. 자세한 내용은 [빌드 사용자 지정](/visualstudio/msbuild/customize-your-build.md)에 대한 문서를 참조하세요.
+이제 해당 파일을 포함 하는 디렉터리의 모든 하위 디렉터리에 빌드는 Visual Basic 버전 15.5 구문을 사용 합니다. 자세한 내용은 [빌드 사용자 지정](/visualstudio/msbuild/customize-your-build)에 대한 문서를 참조하세요.
 
 ## <a name="set-the-langversion-compiler-option"></a>langversion 컴파일러 옵션 설정
 
