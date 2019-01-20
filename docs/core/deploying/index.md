@@ -1,24 +1,24 @@
 ---
-title: .NET Core 응용 프로그램 배포
+title: .NET Core 애플리케이션 배포
 description: .NET Core 애플리케이션을 배포하는 방법을 알아봅니다.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 12/03/2018
 ms.custom: seodec18
-ms.openlocfilehash: bba4a76364f2951cabc3dde9866019459e9b3f06
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: bb520d852462b0bc12df46fd178d09da36b7ccfe
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144717"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415691"
 ---
-# <a name="net-core-application-deployment"></a>.NET Core 응용 프로그램 배포
+# <a name="net-core-application-deployment"></a>.NET Core 애플리케이션 배포
 
 .NET Core 애플리케이션에 대해 다음 세 가지 유형의 배포를 만들 수 있습니다.
 
-- 프레임워크 종속 배포. 이름에서 알 수 있듯이 FDD(프레임워크 종속 배포)에서는 대상 시스템에 .NET Core의 공유 시스템 차원 버전이 있어야 합니다. .NET Core가 이미 존재하기 때문에 .NET Core 설치 간에 앱을 이식할 수 있습니다. 앱은 고유한 코드와 .NET Core 라이브러리 외부에 있는 타사 종속성만 포함합니다. FDD는 명령줄에서 [dotnet 유틸리티](../tools/dotnet.md)를 사용하여 시작할 수 있는 *.dll* 파일을 포함합니다. 예를 들어 `dotnet app.dll`은 `app`이라는 응용 프로그램을 실행합니다.
+- 프레임워크 종속 배포. 이름에서 알 수 있듯이 FDD(프레임워크 종속 배포)에서는 대상 시스템에 .NET Core의 공유 시스템 차원 버전이 있어야 합니다. .NET Core가 이미 존재하기 때문에 .NET Core 설치 간에 앱을 이식할 수 있습니다. 앱은 고유한 코드와 .NET Core 라이브러리 외부에 있는 타사 종속성만 포함합니다. FDD는 명령줄에서 [dotnet 유틸리티](../tools/dotnet.md)를 사용하여 시작할 수 있는 *.dll* 파일을 포함합니다. 예를 들어 `dotnet app.dll`은 `app`이라는 애플리케이션을 실행합니다.
 
-- 자체 포함 배포. FDD와 달리 SCD(자체 포함 배포)에서는 대상 시스템에 공유 구성 요소가 없어도 됩니다. .NET Core 라이브러리 및 .NET Core 런타임을 비롯한 모든 구성 요소가 응용 프로그램에 포함되며 다른 .NET Core 응용 프로그램에서는 격리됩니다. SCD는 플랫폼별 .NET Core 호스트의 이름이 변경된 버전인 실행 파일(예: Windows 플랫폼에서 `app`이라는 애플리케이션에 대한 *app.exe*)과 실제 애플리케이션인 *.dll* 파일(예: *app.dll*)을 포함합니다.
+- 자체 포함 배포. FDD와 달리 SCD(자체 포함 배포)에서는 대상 시스템에 공유 구성 요소가 없어도 됩니다. .NET Core 라이브러리 및 .NET Core 런타임을 비롯한 모든 구성 요소가 애플리케이션에 포함되며 다른 .NET Core 애플리케이션에서는 격리됩니다. SCD는 플랫폼별 .NET Core 호스트의 이름이 변경된 버전인 실행 파일(예: Windows 플랫폼에서 `app`이라는 애플리케이션에 대한 *app.exe*)과 실제 애플리케이션인 *.dll* 파일(예: *app.dll*)을 포함합니다.
 
 - 프레임워크 종속 실행 파일. 대상 플랫폼에서 실행되는 실행 파일을 생성합니다. FDD와 마찬가지로, FDE(프레임워크 종속 실행 파일)는 플랫폼 특정 실행 파일이며 자체 포함이 아닙니다. 이러한 배포는 여전히 실행할 .NET Core 버전이 공유 시스템 수준에 있어야 합니다. SCD와 달리, 앱에는 사용자 코드와 .NET Core 라이브러리 외부에 있는 타사 종속성만 포함됩니다. FDE는 대상 플랫폼에서 실행되는 실행 파일을 생성합니다.
 
@@ -48,7 +48,7 @@ FDD 배포에는 다음과 같은 여러 가지 장점이 있습니다.
 
 자체 포함 배포에서는 앱과 필요한 타사 종속성 외에도 앱을 빌드하는 데 사용한 .NET Core 버전도 배포합니다. SCD를 만들 때 다양한 플랫폼의 [.NET Core에 대한 기본 종속성](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)을 포함하지 않으므로 앱을 실행하려면 이러한 종속성이 있어야 합니다. 런타임 시 버전 바인딩에 대한 자세한 내용은 [.NET Core의 버전 바인딩](../versions/selection.md)에 대한 문서를 참조하세요.
 
-NET Core 2.1 SDK(버전 2.1.300)부터 .NET Core는 ‘패치 버전 롤포워드’를 지원합니다. 자체 포함 배포를 만들 때 .NET Core 도구는 응용 프로그램에서 대상으로 하는 .NET Core 버전의 최신 서비스 런타임을 자동으로 포함합니다. (최근 서비스 런타임에는 보안 패치 및 기타 버그 수정이 포함됩니다.) 서비스 런타임은 빌드 시스템에 존재하지 않아도 됩니다. NuGet.org에서 자동으로 다운로드됩니다. 패치 버전 롤포워드를 옵트아웃하는 방법을 비롯하여 자세한 내용은 [자체 포함 배포 런타임 롤포워드](runtime-patch-selection.md)를 참조하세요.
+NET Core 2.1 SDK(버전 2.1.300)부터 .NET Core는 ‘패치 버전 롤포워드’를 지원합니다. 자체 포함 배포를 만들 때 .NET Core 도구는 애플리케이션에서 대상으로 하는 .NET Core 버전의 최신 서비스 런타임을 자동으로 포함합니다. (최근 서비스 런타임에는 보안 패치 및 기타 버그 수정이 포함됩니다.) 서비스 런타임은 빌드 시스템에 존재하지 않아도 됩니다. NuGet.org에서 자동으로 다운로드됩니다. 패치 버전 롤포워드를 옵트아웃하는 방법을 비롯하여 자세한 내용은 [자체 포함 배포 런타임 롤포워드](runtime-patch-selection.md)를 참조하세요.
 
 FDD 및 SCD 배포는 별도의 호스트 실행 파일을 사용하므로 게시자 서명이 있는 SCD에 대해 호스트 실행 파일에 서명할 수 있습니다.
 
@@ -94,12 +94,7 @@ FDE 배포에는 다음과 같은 여러 가지 장점이 있습니다.
 
 ## <a name="step-by-step-examples"></a>단계별 예제
 
-CLI 도구를 사용하여 .NET Core 앱을 배포하는 방법을 보여 주는 단계별 예제는 [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)(CLI 도구를 사용하여 .NET Core 앱 배포)를 참조하세요. Visual Studio를 사용하여 .NET Core 앱을 배포하는 방법을 보여 주는 단계별 예제는 [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)(Visual Studio를 사용하여 .NET Core 앱 배포)를 참조하세요. 각 문서에는 다음 배포에 대한 예제가 포함되어 있습니다.
-
-- 프레임워크 종속 배포
-- 타사 종속성이 있는 프레임워크 종속 배포
-- 자체 포함 배포
-- 타사 종속성이 있는 자체 포함 배포
+CLI 도구를 사용하여 .NET Core 앱을 배포하는 방법을 보여 주는 단계별 예제는 [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)(CLI 도구를 사용하여 .NET Core 앱 배포)를 참조하세요. Visual Studio를 사용하여 .NET Core 앱을 배포하는 방법을 보여 주는 단계별 예제는 [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)(Visual Studio를 사용하여 .NET Core 앱 배포)를 참조하세요. 
 
 ## <a name="see-also"></a>참고 항목
 

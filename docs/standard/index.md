@@ -6,12 +6,12 @@ ms.author: ronpet
 ms.date: 05/02/2017
 ms.technology: dotnet-standard
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.openlocfilehash: cbe08d87e90d319c074e85d0157e62fe023cce8c
-ms.sourcegitcommit: 979597cd8055534b63d2c6ee8322938a27d0c87b
+ms.openlocfilehash: 2db6d713d699a733f5c65d2170620eaccd8f0691
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37105174"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415405"
 ---
 # <a name="net-guide"></a>.NET 가이드
 
@@ -37,7 +37,7 @@ ms.locfileid: "37105174"
 
 ## <a name="porting-net-framework-code-to-net-core"></a>.NET Core로 .NET Framework 코드 이식
 
-응용 프로그램, 서비스 또는 시스템의 일부 구성 요소를 .NET Core로 이식하려는 경우 [.NET Framework에서.NET Core로 이식](../core/porting/index.md)을 확인하세요.
+애플리케이션, 서비스 또는 시스템의 일부 구성 요소를 .NET Core로 이식하려는 경우 [.NET Framework에서.NET Core로 이식](../core/porting/index.md)을 확인하세요.
 
 ## <a name="porting-a-nuget-package-from-net-framework-to-net-standard-or-net-core"></a>.NET Framework에서 .NET Standard 또는 .NET Core로 NuGet 패키지 이식
 
@@ -49,7 +49,7 @@ ms.locfileid: "37105174"
 
 * [.NET 아키텍처 구성 요소](components.md)
 * [.NET Standard](net-standard.md)
-* [기본 상호 운용성](native-interop.md)
+* [기본 상호 운용성](native-interop/index.md)
 * [가비지 수집](garbagecollection/index.md)
 * [.NET의 기본 형식](base-types/index.md)
 * [컬렉션](collections/index.md)
