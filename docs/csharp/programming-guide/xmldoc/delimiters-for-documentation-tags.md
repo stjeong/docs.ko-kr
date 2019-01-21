@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /** */ delimiters for C# documentation tags
 - /// delimiter for C# documentation
 ms.assetid: 9b2bdd18-4f5c-4c0b-988e-fb992e0d233e
-ms.openlocfilehash: ce6b23edb10733de3134b5233413de8b535c11ac
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: c14b0470f7ea488fcb813b68174b5d1cb0d95786
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53235295"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415587"
 ---
 # <a name="delimiters-for-documentation-tags-c-programming-guide"></a>문서 태그에 대한 구분 기호(C# 프로그래밍 가이드)
 XML 문서 주석을 사용하려면 문서 주석이 시작되고 끝나는 위치를 컴파일러에 알리는 구분 기호가 필요합니다. XML 문서 태그에 다음과 같은 종류의 구분 기호를 사용할 수 있습니다.  
@@ -38,7 +38,7 @@ XML 문서 주석을 사용하려면 문서 주석이 시작되고 끝나는 위
   
 -   다음 주석에서 유일하게 처리되는 부분은 `<summary>`로 시작하는 줄입니다. 세 가지 태그 서식이 동일한 주석을 생성합니다.  
   
-    ```  
+    ```csharp  
     /** <summary>text</summary> */   
   
     /**   
@@ -52,7 +52,7 @@ XML 문서 주석을 사용하려면 문서 주석이 시작되고 끝나는 위
   
 -   컴파일러는 두 번째 및 세 번째 줄의 시작 부분에서 " * "의 일반적인 패턴을 식별합니다. 이 패턴은 출력에 포함되지 않습니다.  
   
-    ```  
+    ```csharp  
     /**   
      * <summary>   
      * text </summary>*/   
@@ -60,7 +60,7 @@ XML 문서 주석을 사용하려면 문서 주석이 시작되고 끝나는 위
   
 -   다음 주석에서는 세 번째 줄의 두 번째 문자가 별표가 아니기 때문에 컴파일러가 일반적인 패턴을 찾을 수 없습니다. 따라서 두 번째 및 세 번째 줄의 모든 텍스트가 주석의 일부로 처리됩니다.  
   
-    ```  
+    ```csharp  
     /**   
      * <summary>   
        text </summary>  
@@ -69,7 +69,7 @@ XML 문서 주석을 사용하려면 문서 주석이 시작되고 끝나는 위
   
 -   다음 주석에서는 두 가지로 이유로 컴파일러가 패턴을 찾을 수 없습니다. 첫째, 별표 앞의 공백 수가 일치하지 않습니다. 둘째, 다섯 번째 줄이 공백과 일치하지 않는 탭으로 시작합니다. 따라서 두 번째 줄부터 다섯 번째 줄까지 모든 텍스트가 주석의 일부로 처리됩니다.  
   
-    ```  
+    ```csharp  
     /**   
       * <summary>   
       * text   

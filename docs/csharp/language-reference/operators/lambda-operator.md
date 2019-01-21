@@ -8,18 +8,18 @@ helpviewer_keywords:
 - lambda operator [C#]
 - => operator [C#]
 - lambda expressions [C#], => operator
-ms.openlocfilehash: c193a91eaffe2e56a5df2afa8d66989981123a48
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: 8641757d9252c88cf30595cec06d27b964e4d95c
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238795"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415288"
 ---
 # <a name="gt-operator-c-reference"></a>=&gt; 연산자(C# 참조)
 
 `=>` 연산자는 C#에서 두 가지 방법으로 사용할 수 있습니다.
 
-- [람다 식](../../lambda-expressions.md)에서 [람다 연산자](#lamba-operator)로, 람다 본문에서 입력 변수를 구분합니다.
+- [람다 식](../../lambda-expressions.md)에서 [람다 연산자](#lambda-operator)로, 람다 본문에서 입력 변수를 구분합니다.
  
 - [식 본문 정의](#expression-body-definition)에서는 멤버 구현에서 멤버 이름을 구분합니다. 
 
@@ -50,7 +50,7 @@ Console.WriteLine(shortestWordLength2);
 // 5  
 ```  
   
-### <a name="remarks"></a>설명  
+### <a name="remarks"></a>주의  
  `=>` 연산자는 할당 연산자(`=`)와 우선 순위가 같으며 오른쪽 결합성이 있습니다.  
   
  입력 변수의 형식을 명시적으로 지정하거나 컴파일러에서 유추하도록 할 수 있습니다. 두 경우 모두 변수는 컴파일 시간에 강력한 형식이어야 합니다. 다음 예제와 같이 형식을 지정할 때 형식 이름과 변수 이름을 괄호로 묶어야 합니다.  
@@ -59,7 +59,7 @@ Console.WriteLine(shortestWordLength2);
 int shortestWordLength = words.Min((string w) => w.Length);  
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 두 개의 인수를 사용하는 표준 쿼리 연산자 <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType>의 오버로드에 대한 람다 식을 작성하는 방법을 보여 줍니다. 람다 식에는 둘 이상의 매개 변수가 사용되므로 매개 변수를 괄호로 묶어야 합니다. 두 번째 매개 변수 `index`는 컬렉션에서 현재 요소의 인덱스를 나타냅니다. `Where` 식은 길이가 배열의 해당 인덱스 위치보다 작은 모든 문자열을 반환합니다.  
   
 ```csharp  

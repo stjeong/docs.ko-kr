@@ -6,12 +6,12 @@ ms.author: mairaw
 ms.date: 07/19/2018
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.openlocfilehash: cfc830f50f2e77b85e46ebaf91e3c8658aa86c48
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: bf8b73d5785ad39180b47963130105b905f955c1
+ms.sourcegitcommit: 75567a3cb437009db55949c6092f4e77ed1a9da4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613598"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54307541"
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -65,7 +65,7 @@ ms.locfileid: "53613598"
 
 ### <a name="official-artifacts"></a>공식 아티팩트
 
-공식 사양은 표준의 일부인 API를 정의하는 .cs 파일 집합입니다. [dotnet/standard repository](https://github.com/dotnet/standard)(dotnet/표준 리포지토리)의 [ref directory](https://github.com/dotnet/standard/tree/master/netstandard/ref)(ref 디렉터리)는 .NET Standard API를 정의합니다.
+공식 사양은 표준의 일부인 API를 정의하는 .cs 파일 집합입니다. [dotnet/standard repository](https://github.com/dotnet/standard)(dotnet/표준 리포지토리)의 [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref)(ref 디렉터리)는 .NET Standard API를 정의합니다.
 
 [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) 메타패키지([소스](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props))는 하나 이상의 .NET Standard 버전을 부분적으로 정의하는 라이브러리 집합에 대해 설명합니다.
 
