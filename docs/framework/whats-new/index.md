@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e9c40b68a67219cd8f24874780281023974886e4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: de919789c369c66c52a137bde811c56bf07a6ec9
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201020"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54416029"
 ---
 # .NET Framework의 새로운 기능<a name="introduction"></a>
 
@@ -242,9 +242,9 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 
 [DI(종속성 주입)](/aspnet/core/fundamentals/dependency-injection#overview-of-dependency-injection)는 개체와 해당 종속성을 분리하여 종속성이 변경으로 인해 개체의 코드를 더 이상 분리할 필요가 없도록 합니다. .NET Framework 4.7.2를 대상으로 하는 ASP.NET 애플리케이션을 개발하는 경우 다음 작업을 수행할 수 있습니다.
 
-- ASP.NET 웹 애플리케이션 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반, 인터페이스 기반 및 생성자 기반 주입을 사용합니다.
+- ASP.NET 웹 애플리케이션 프로젝트의 [처리기 및 모듈](https://docs.microsoft.com/previous-versions/aspnet/bb398986(v=vs.100)), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://docs.microsoft.com/previous-versions/aspnet/y6wb1a0e(v=vs.100))에서 setter 기반, 인터페이스 기반 및 생성자 기반 주입을 사용합니다.
 
-- ASP.NET 웹 사이트 프로젝트의 [처리기 및 모듈](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx)에서 setter 기반 및 인터페이스 기반 주입을 사용합니다.
+- ASP.NET 웹 사이트 프로젝트의 [처리기 및 모듈](https://docs.microsoft.com/previous-versions/aspnet/bb398986(v=vs.100)), [페이지 인스턴스](xref:System.Web.UI.Page) 및 [사용자 정의 컨트롤](https://docs.microsoft.com/previous-versions/aspnet/y6wb1a0e(v=vs.100))에서 setter 기반 및 인터페이스 기반 주입을 사용합니다.
 
 - 다른 종속성 주입 프레임워크에 연결합니다.
 
@@ -480,7 +480,7 @@ Windows Forms 애플리케이션의 경우 애플리케이션 매니페스트가
 
 #### <a name="aspnet"></a>ASP.NET
 
-**ASP.NET 응용 프로그램의 실행 단계**
+**ASP.NET 애플리케이션의 실행 단계**
 
 ASP.NET은 23개 이벤트가 포함된 미리 정의된 파이프라인의 요청을 처리합니다. ASP.NET은 실행 단계로 각 이벤트 처리기를 실행합니다. .NET Framework 4.7 이하의 ASP.NET 버전에서는 전용 및 관리 스레드 간의 전환으로 인해 실행 컨텍스트를 진행할 수 없습니다. 대신, ASP.NET이 선택적으로 <xref:System.Web.HttpContext>만 진행합니다. .NET Framework 4.7.1부터는 <xref:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})?displayProperty=nameWithType> 메서드가 모듈의 앰비언트 데이터 복원도 허용합니다. 이 기능은 추적, 프로파일링, 진단 또는 트랜잭션과 관련된 라이브러리를 대상으로 합니다(예: 애플리케이션의 실행 흐름 관리). 자세한 내용은 [.NET Framework 4.7.1 ASP.NET and Configuration Features](https://blogs.msdn.microsoft.com/dotnet/2017/09/13/net-framework-4-7-1-asp-net-and-configuration-features)(.NET Framework 4.7.1 ASP.NET 및 구성 기능) 블로그 게시물의 "ASP.NET Execution Step Feature"(ASP.NET 실행 단계 기능)를 참조하세요.
 
@@ -579,7 +579,7 @@ WCF(Windows Communication Foundation)는 다음과 같은 기능 및 변경 내�
 </runtime>
 ```
 
-**WCF 응용 프로그램 및 WCF serialization의 향상된 안정성**
+**WCF 애플리케이션 및 WCF serialization의 향상된 안정성**
 
 WCF에는 경합 상태를 제거하는 다양한 코드 변경 내용이 포함되어 있으므로 serialization 옵션의 성능과 안정성이 향상됩니다. 여기에는 다음이 포함됩니다.
 
@@ -598,7 +598,7 @@ WCF에는 경합 상태를 제거하는 다양한 코드 변경 내용이 포함
 
 .NET Framework 4.7을 대상으로 하는 애플리케이션부터, .NET Framework는 Windows Forms 애플리케이션에 대한 높은 DPI 및 동적 DPI 지원을 제공합니다. 높은 DPI 지원은 높은 DPI 모니터에는 폼 및 컨트롤의 모양과 레이아웃을 개선합니다. 동적 DPI는 사용자가 실행 중인 애플리케이션의 DPI 또는 디스플레이 배율을 변경할 때 폼 및 컨트롤의 모양과 레이아웃을 변경합니다.
 
-높은 DPI 지원은 응용 프로그램 구성 파일의 [\<System.Windows.Forms.ConfigurationSection>](../configure-apps/file-schema/winforms/index.md) 섹션을 정의하여 구성하는 옵트인 기능입니다. Windows Forms 애플리케이션에 높은 DPI 지원 및 동적 DPI 지원을 추가하는 방법에 대한 자세한 내용은 [Windows Forms의 높은 DPI 지원](../winforms/high-dpi-support-in-windows-forms.md)을 참조하세요.
+높은 DPI 지원은 애플리케이션 구성 파일의 [\<System.Windows.Forms.ConfigurationSection&gt;](../configure-apps/file-schema/winforms/index.md) 섹션을 정의하여 구성하는 옵트인 기능입니다. Windows Forms 애플리케이션에 높은 DPI 지원 및 동적 DPI 지원을 추가하는 방법에 대한 자세한 내용은 [Windows Forms의 높은 DPI 지원](../winforms/high-dpi-support-in-windows-forms.md)을 참조하세요.
 
 <a name="WPF47" />
 
@@ -904,7 +904,7 @@ Azure SQL Database에 연결하는 애플리케이션에 대한 연결 풀 차�
 
  WCF 전송 보안에서 Windows 암호화 라이브러리(CNG)를 사용하여 저장한 인증서를 지원합니다. [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서 이 지원은 지수 길이가 32비트 이하인 공개 키로 인증서를 사용하도록 제한됩니다. 애플리케이션이 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]를 대상으로 하는 경우 이 기능은 기본적으로 켜집니다.
 
- [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 및 이전 버전을 대상으로 하지만 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서 실행 중인 응용 프로그램의 경우 app.config 또는 web.config 파일의 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음 줄을 추가하여 이 기능을 사용하도록 설정할 수 있습니다.
+ [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 및 이전 버전을 대상으로 하지만 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)]에서 실행 중인 애플리케이션의 경우 app.config 또는 web.config 파일의 [\<runtime&gt;](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음 줄을 추가하여 이 기능을 사용하도록 설정할 수 있습니다.
 
 ```xml
 <AppContextSwitchOverrides
@@ -926,7 +926,7 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
  **DataContractJsonSerializer 클래스에 의한 여러 일광 절약 시간 조정 규칙에 대한 지원 개선**
 
- 고객이 응용 프로그램 구성 설정을 사용하여 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 클래스에서 단일 표준 시간대에 대해 여러 조정 규칙을 지원하는지 여부를 결정할 수 있습니다. 이 기능은 옵트인(opt-in) 기능입니다. 이 기능을 사용하려면 app.config 파일에 다음 설정을 추가합니다.
+ 고객이 응용 프로그램 구성 설정을 사용하여 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 클래스에서 단일 표준 시간대에 대해 여러 조정 규칙을 지원하는지 여부를 결정할 수 있습니다. 이 기능은 옵트인 기능입니다. 이 기능을 사용하려면 app.config 파일에 다음 설정을 추가합니다.
 
 ```xml
 <runtime>
@@ -1010,7 +1010,7 @@ AppContext.SetSwitch(disableCngCertificates, False)
 
  이전 버전의.NET Framework에서는 WPF 앱은 시스템 DPI를 인식합니다. 즉, 애플리케이션의 UI는 앱이 렌더링되는 모니터의 DPI에 따라 OS에 의해 적절하게 확장됩니다. ,
 
- [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 아래에서 실행 중인 앱의 경우 다음과 같이 응용 프로그램 구성 파일의 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 구성 문을 추가하여 WPF 앱에서 모니터별 DPI 변경을 사용하지 않도록 설정할 수 있습니다.
+ [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 아래에서 실행 중인 앱의 경우 다음과 같이 애플리케이션 구성 파일의 [\<runtime&gt;](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 구성 문을 추가하여 WPF 앱에서 모니터별 DPI 변경을 사용하지 않도록 설정할 수 있습니다.
 
 ```xml
 <runtime>
@@ -1090,18 +1090,18 @@ ClickOnce는 이미 지원되는 1.0 프로토콜 외에 TLS 1.1 및 TLS 1.2를 
 
 - [.NET Framework 4.6.1 변경 내용 목록](https://go.microsoft.com/fwlink/?LinkId=622964)
 
-- [4.6.1의 응용 프로그램 호환성](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)
+- [4.6.1의 애플리케이션 호환성](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)
 
 - [.NET Framework API 차이점](https://go.microsoft.com/fwlink/?LinkId=622989)(GitHub에서)
 
 <a name="Crypto" />
 
-### <a name="cryptography-support-for-x509-certificates-containing-ecdsa"></a>암호화: ECDSA를 포함하는 X509 인증서 지원
+### <a name="cryptography-support-for-x509-certificates-containing-ecdsa"></a>암호화: ECDSA를 포함하는 X509 인증서에 대한 지원
  .NET Framework 4.6에는 x509 인증서를 위한 RSACng 지원이 추가되었습니다. [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에는 ECDSA(타원 곡선 디지털 시그니처 알고리즘) X509 인증서에 대한 지원이 추가되었습니다.
 
  ECDSA는 RSA보다 더 향상된 성능과 더 안전한 암호화 알고리즘을 제공하므로 TLS(전송 계층 보안) 성능 및 확장성 면에서 최고의 선택이 될 것입니다. .NET Framework 구현은 기존 Windows 기능으로 호출을 래핑합니다.
 
- 다음 예제 코드에서는 [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에 포함된 ECDSA  X509 인증서에 대한 새 지원을 사용하여 바이트 스트림을 위한 서명을 쉽게 생성하는 방법을 보여 줍니다.
+ 다음 예제 코드에서는 [!INCLUDE[net_v461](../../../includes/net-v461-md.md)]에 포함된 ECDSA  X509 인증서에 대한 새 지원을 사용하여 바이트 스트림을 위한 시그니처를 쉽게 생성하는 방법을 보여 줍니다.
 
  [!code-csharp[whatsnew.461.crypto#1](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs/Code46.cs#1)]
  [!code-vb[whatsnew.461.crypto#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.461.crypto/vb/Code461.vb#1)]
@@ -1420,7 +1420,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
     - **HDPI 기능 향상**
 
-         이제 WPF의 HDPI 지원이 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서 보다 향상되었습니다. 테두리가 있는 컨트롤에 클리핑 인스턴스를 줄이기 위해 레이아웃 반올림을 변경했습니다. 기본적으로 이 기능은 <xref:System.Runtime.Versioning.TargetFrameworkAttribute>가 .NET 4.6으로 설정될 때에만 사용됩니다.  이전 버전의 프레임워크를 대상으로 하지만 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서 실행되는 응용 프로그램은 app.config 파일의 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음 줄을 추가하여 새 동작을 옵트인(opt in)할 수 있습니다.
+         이제 WPF의 HDPI 지원이 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서 보다 향상되었습니다. 테두리가 있는 컨트롤에 클리핑 인스턴스를 줄이기 위해 레이아웃 반올림을 변경했습니다. 기본적으로 이 기능은 <xref:System.Runtime.Versioning.TargetFrameworkAttribute>가 .NET 4.6으로 설정될 때에만 사용됩니다.  이전 버전의 프레임워크를 대상으로 하지만 [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]에서 실행되는 애플리케이션은 app.config 파일의 [\<runtime&gt;](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 섹션에 다음 줄을 추가하여 새 동작을 옵트인(opt in)할 수 있습니다.
 
         ```xml
         <AppContextSwitchOverrides
@@ -1578,7 +1578,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
     - <xref:System.Windows.Forms.DataGridView>
     - <xref:System.Windows.Forms.DataGridViewComboBoxColumn>
 
-     이 기능은 옵트인(opt-in) 기능입니다. 이 기능을 사용하려면 아래와 같이 애플리케이션 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
+     이 기능은 옵트인 기능입니다. 이 기능을 사용하려면 아래와 같이 애플리케이션 구성 파일(app.config)에서 `EnableWindowsFormsHighDpiAutoResizing` 요소를 `true`로 설정해야 합니다.
 
     ```xml
     <appSettings>
@@ -1641,7 +1641,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
     - Windows 8.1, Windows Phone 8.1 및 Windows Phone Silverlight 8.1을 대상으로 하는 이식 가능한 라이브러리에서 Windows 런타임 API를 사용할 수 있습니다.
 
-    - Windows 8.1 또는 Windows Phone 8.1을 대상으로 하는 경우 XAML(Windows.UI.XAML 형식)을 이식 가능한 라이브러리에 포함할 수 있습니다. XAML 템플릿(빈 페이지, 리소스 사전, 템플릿 컨트롤 및 사용자 정의 컨트롤)이 지원됩니다.
+    - Windows 8.1 또는 Windows Phone 8.1을 대상으로 하는 경우 XAML(Windows.UI.XAML 형식)을 이식 가능한 라이브러리에 포함할 수 있습니다. 다음과 같은 XAML 템플릿이 지원됩니다.  빈 페이지, 리소스 사전, 템플릿 컨트롤 및 사용자 정의 컨트롤
 
     - Windows 8.1 및 Windows Phone 8.1 대상의 스토어 앱에서 사용할 이식 가능한 Windows 런타임 구성 요소(.winmd 파일)를 만들 수 있습니다.
 
@@ -1655,7 +1655,7 @@ SqlClient는 이제 자동으로 AlwaysOn AG(가용성 그룹)에 대한 더 빠
 
  .NET Framework 4.5.1의 주요 새로운 기능 및 향상된 기능은 다음과 같습니다.
 
-- 어셈블리에 대한 자동 바인딩 리디렉션. Visual Studio 2013부터는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]을 대상으로 하는 앱을 컴파일할 때 앱 또는 해당 구성 요소가 동일한 어셈블리의 여러 버전을 참조할 경우 앱 구성 파일에 바인딩 리디렉션을 추가할 수 있습니다. 또한 이전 버전의 .NET Framework를 대상으로 하는 프로젝트에 대해 이 기능을 사용하도록 설정할 수 있습니다. 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)를 참조하십시오.
+- 어셈블리에 대한 자동 바인딩 리디렉션. Visual Studio 2013부터는 [!INCLUDE[net_v451](../../../includes/net-v451-md.md)]을 대상으로 하는 앱을 컴파일할 때 앱 또는 해당 구성 요소가 동일한 어셈블리의 여러 버전을 참조할 경우 앱 구성 파일에 바인딩 리디렉션을 추가할 수 있습니다. 또한 이전 버전의 .NET Framework를 대상으로 하는 프로젝트에 대해 이 기능을 사용하도록 설정할 수 있습니다. 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)를 참조하세요.
 
 - 진단 정보를 수집하여 개발자가 서버 및 클라우드 애플리케이션의 성능을 향상시키는 기능. 자세한 내용은 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> 클래스의 <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> 및 <xref:System.Diagnostics.Tracing.EventSource> 메서드를 참조하세요.
 
@@ -1771,7 +1771,7 @@ ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성�
 
 ### <a name="networking-a-namenetworking-"></a>네트워킹<a name="networking" />
 
-[!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서는 HTTP 응용 프로그램의 새로운 프로그래밍 인터페이스를 제공합니다. 자세한 내용은 새로운 <xref:System.Net.Http?displayProperty=nameWithType> 및 <xref:System.Net.Http.Headers?displayProperty=nameWithType> 네임스페이스를 참조하세요.
+[!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서는 HTTP 애플리케이션의 새로운 프로그래밍 인터페이스를 제공합니다. 자세한 내용은 새로운 <xref:System.Net.Http?displayProperty=nameWithType> 및 <xref:System.Net.Http.Headers?displayProperty=nameWithType> 네임스페이스를 참조하세요.
 
 기존의 <xref:System.Net.HttpListener> 및 관련 클래스를 사용하여 WebSocket 연결을 허용하고 이와 상호 작용하는 새로운 프로그래밍 인터페이스 지원도 포함되어 있습니다. 자세한 내용은 새로운 <xref:System.Net.WebSockets> 네임스페이스 및 <xref:System.Net.HttpListener> 클래스를 참조하세요.
 
@@ -1813,7 +1813,7 @@ ASP.NET 4.5 및 4.5.1은 Web Forms, WebSocket 지원, 비동기 처리기, 성�
 <a name="windows_communication_foundation" />
 
 ### <a name="windows-communication-foundation-wcf"></a>WCF(Windows Communication Foundation)
- [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 WCF(Windows Communication Foundation) 응용 프로그램을 더 쉽게 작성하고 유지 관리할 수 있도록 다음 기능이 추가되었습니다.
+ [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]에서 WCF(Windows Communication Foundation) 애플리케이션을 더 쉽게 작성하고 유지 관리할 수 있도록 다음 기능이 추가되었습니다.
 
 - 생성된 구성 파일의 단순화
 
