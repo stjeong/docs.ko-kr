@@ -4,16 +4,16 @@ description: .NET Framework에서 .NET Core로 프로젝트를 포팅하기 위�
 author: cartermp
 ms.date: 12/04/2018
 ms.custom: seodec18
-ms.openlocfilehash: dce8e6cd4986b15cf926154b378964db4beef398
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 6451099bfc7f3afa5c9c1585862403a0a9fb2186
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170327"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415223"
 ---
 # <a name="analyze-your-dependencies-to-port-code-to-net-core"></a>.NET Core로 코드를 포팅하기 위해 종속성 분석
 
-코드를 .NET Core 또는 .NET Standard로 포팅하려면 종속성을 파악해야 합니다. 외부 종속성은 프로젝트에서 참조하지만 빌드하지 않는 [NuGet 패키지](#analyze-referenced-nuget-packages-on-your-project) 또는 [DLL](#analyze-dependencies-that-arent-nuget-packages)입니다. 각 종속성을 평가하고 .NET Core와 호환되지 않는 종속성에 대한 대체 계획을 개발합니다. 종속성이 .NET Core와 호환되는지 확인하는 방법은 다음과 같습니다.
+코드를 .NET Core 또는 .NET Standard로 포팅하려면 종속성을 파악해야 합니다. 외부 종속성은 프로젝트에서 참조하지만 빌드하지 않는 [NuGet 패키지](#analyze-referenced-nuget-packages-in-your-projects) 또는 [DLL](#analyze-dependencies-that-arent-nuget-packages)입니다. 각 종속성을 평가하고 .NET Core와 호환되지 않는 종속성에 대한 대체 계획을 개발합니다. 종속성이 .NET Core와 호환되는지 확인하는 방법은 다음과 같습니다.
 
 ## <a name="analyze-referenced-nuget-packages-in-your-projects"></a>프로젝트에서 참조된 NuGet 패키지 분석
 
@@ -77,7 +77,7 @@ NuGet 패키지를 분석한 후 대부분의 NuGet 패키지와 마찬가지로
 
 .NET Standard 2.0부터 .NET Framework 호환성 모드가 도입되었습니다. 이 호환 모드에서는 .NET Standard 및 .NET Core 프로젝트에서 .NET Framework 라이브러리를 참조할 수 있습니다. .NET Framework 라이브러리 참조는 라이브러리가 WPF(Windows Presentation Foundation) API를 사용하는 것처럼 모든 프로젝트에 대해 작동하지 않지만 많은 이식 시나리오를 차단 해제합니다.
 
-프로젝트에서 .NET Framework를 대상으로 하는 NuGet 패키지를 참조하는 경우(예:[Huitian.PowerCollections](https://www.nuget.org/packages/Huitian.PowerCollections)) 다음 예제와 유사한 패키지 대체 경고([NU1701](/nuget/reference/errors-and-warnings#nu1701))를 받습니다.
+프로젝트에서 .NET Framework를 대상으로 하는 NuGet 패키지를 참조하는 경우(예:[Huitian.PowerCollections](https://www.nuget.org/packages/Huitian.PowerCollections)) 다음 예제와 유사한 패키지 대체 경고([NU1701](/nuget/reference/errors-and-warnings/nu1701))를 받습니다.
 
 `NU1701: Package ‘Huitian.PowerCollections 1.0.0’ was restored using ‘.NETFramework,Version=v4.6.1’ instead of the project target framework ‘.NETStandard,Version=v2.0’. This package may not be fully compatible with your project.`
 
@@ -91,7 +91,7 @@ NuGet 패키지를 분석한 후 대부분의 NuGet 패키지와 마찬가지로
 </ItemGroup>
 ```
 
-Visual Studio에서 컴파일러 경고를 제거하는 방법에 대한 자세한 내용은 [NuGet 패키지에 대한 경고 표시 안 함](/visualstudio/ide/how-to-suppress-compiler-warnings#suppressing-warnings-for-nuget-packages)을 참조하세요.
+Visual Studio에서 컴파일러 경고를 제거하는 방법에 대한 자세한 내용은 [NuGet 패키지에 대한 경고 표시 안 함](/visualstudio/ide/how-to-suppress-compiler-warnings#suppress-warnings-for-nuget-packages)을 참조하세요.
 
 ### <a name="port-your-packages-to-packagereference"></a>`PackageReference`로 패키지 포팅
 

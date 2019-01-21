@@ -3,12 +3,12 @@ title: ML.NET에서 순열 기능 중요도를 사용하여 모델의 기능 중
 description: ML.NET에서 순열 기능 중요도를 사용하여 모델의 기능 중요도 파악
 ms.date: 12/04/2018
 ms.custom: mvc,how-to
-ms.openlocfilehash: 4b93e085dbb99e7f6f5a0a839b863aad1c69c7ba
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ebad89aaee1155d7c116b8536307756227dced31
+ms.sourcegitcommit: 75567a3cb437009db55949c6092f4e77ed1a9da4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53156571"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54307112"
 ---
 # <a name="determine-the-feature-importance-of-models-with-permutation-feature-importance-in-mlnet"></a>ML.NET에서 순열 기능 중요도를 사용하여 모델의 기능 중요도 판별
 
@@ -33,6 +33,6 @@ for (int i = 0; i < featureNames.Length; i++)
   Console.WriteLine($"{featureNames[i]}\t{permutationMetrics[i].rSquared:G4}");
 ```
 
-PFI를 사용하여 모델의 기능 중요도를 분석하는 샘플은 [dotnet/machinelearning GitHub 리포지토리](https://github.com/dotnet/machinelearning/blob/master/docs/samples/Microsoft.ML.Samples/Dynamic/PermutationFeatureImportance.cs)를 참조하세요.
+PFI를 사용하여 모델의 기능 중요도를 분석하는 샘플은 [dotnet/machinelearning GitHub 리포지토리](https://github.com/dotnet/machinelearning/tree/master/docs/samples/Microsoft.ML.Samples/Dynamic/PermutationFeatureImportance)를 참조하세요.
 
 /* 정확히 임의는 아니지만 예제 세트에서 순열로 치환됩니다.

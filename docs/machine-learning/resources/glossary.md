@@ -3,12 +3,12 @@ title: 기계 학습 용어집 - ML.NET
 description: ML.NET에서 사용자 지정 모델을 빌드할 때 유용한 중요한 기계 학습 용어 모음입니다.
 ms.custom: seodec18
 ms.date: 12/20/2018
-ms.openlocfilehash: ac0671bbecda93c411d3be82c789f53beb10fbca
-ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
+ms.openlocfilehash: d21b551389778a9f301fcfea0b5302d32ebba18f
+ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "53760395"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54415379"
 ---
 # <a name="machine-learning-glossary-of-important-terms"></a>중요한 용어가 포함된 기계 학습 용어집
 
@@ -17,8 +17,6 @@ ms.locfileid: "53760395"
 ## <a name="accuracy"></a>정확도
 
 [분류](#classification)에서 정확도는 올바르게 분류된 항목 수를 테스트 집합의 총 항목 수로 나눈 값입니다. 범위는 0(가장 덜 정확함)에서 -1(가장 정확함)까지입니다. 정확도는 모델 성능에 대한 평가 메트릭 중 하나입니다. [정밀도](#precision), [재현율](#recall) 및 [F 점수](#f-score)와 함께 고려합니다.
-
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.Accuracy?displayProperty=nameWithType>.
 
 ## <a name="area-under-the-curve-auc"></a>AUC(Area Under the Curve)
 
@@ -87,8 +85,6 @@ ms.locfileid: "53760395"
 ## <a name="precision"></a>전체 자릿수
 
 [분류](#classification)에서 클래스의 정밀도는 해당 클래스에 속하는 것으로 올바르게 예측된 항목 수를 클래스에 속하는 것으로 예측된 총 항목 수로 나눈 값입니다.
-
-관련 ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.NegativePrecision?displayProperty=nameWithType>, <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.PositivePrecision?displayProperty=nameWithType>.
 
 ## <a name="recall"></a>재현율
 

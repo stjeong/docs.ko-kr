@@ -1,13 +1,13 @@
 ---
 title: dotnet 설치 스크립트
 description: .NET Core CLI 도구 및 공유 런타임을 설치하는 dotnet-install 스크립트에 대해 알아봅니다.
-ms.date: 11/15/2018
-ms.openlocfilehash: 0f565fee3e4ff4bec65bd196f635e9e9601485c2
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.date: 01/16/2019
+ms.openlocfilehash: 5b266d484aae482d79674660417a834f03d53e4c
+ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148330"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54362833"
 ---
 # <a name="dotnet-install-scripts-reference"></a>dotnet-install 스크립트 참조
 
@@ -73,7 +73,7 @@ macOS/Linux:
 
 * **`-Architecture <ARCHITECTURE>`**
 
-  설치할 .NET Core 바이너리의 아키텍처입니다. 가능한 값은 `auto`, `x64` 및 `x86`입니다. 기본값은 현재 실행 중인 OS 아키텍처를 나타내는 `auto`입니다.
+  설치할 .NET Core 바이너리의 아키텍처입니다. 가능한 값은 `<auto>`, `amd64`, `x64`, `x86`, `arm64` 및 `arm`입니다. 기본값은 현재 실행 중인 OS 아키텍처를 나타내는 `<auto>`입니다.
 
 * **`-SharedRuntime`**
 
