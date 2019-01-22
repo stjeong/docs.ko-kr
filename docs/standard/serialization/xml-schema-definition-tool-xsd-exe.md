@@ -2,12 +2,12 @@
 title: XML Schema Definition Tool (Xsd.exe)
 ms.date: 03/30/2017
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
-ms.openlocfilehash: ebbbe763ecfc4aeac338d0eb88ee785a4f637456
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: a7824f0f39820b186b654aa4369dc068134d6a0d
+ms.sourcegitcommit: 42522983167b52852e1a20c87d57a1f63215f9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148606"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443657"
 ---
 # <a name="xml-schema-definition-tool-xsdexe"></a>XML Schema Definition Tool (Xsd.exe)
 XML 스키마 정의 도구(Xsd.exe)를 사용하면 XDR, XML 및 XSD 파일 또는 런타임 어셈블리의 클래스에서 XML 스키마 또는 공용 언어 런타임 클래스를 생성할 수 있습니다.  
@@ -35,38 +35,38 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
 |옵션|설명|  
 |------------|-----------------|  
 |**/h\[elp\]**|이 도구의 명령 구문 및 옵션을 표시합니다.|  
-|**/o\[utputdir\]:**_디렉터리_|출력 파일의 디렉터리를 지정합니다. 이 인수는 한 번만 나타날 수 있으며, 기본값은 현재 디렉터리입니다.|  
+|**/o\[utputdir\]:**_directory_|출력 파일의 디렉터리를 지정합니다. 이 인수는 한 번만 나타날 수 있으며, 기본값은 현재 디렉터리입니다.|  
 |**/?**|이 도구의 명령 구문 및 옵션을 표시합니다.|  
-|**/ p\[arameters\]:**_file.xml_|지정한 .xml 파일의 여러 가지 작동 모드에 대한 읽기 옵션입니다. 약식 표현은 `/p:`입니다. 자세한 내용은 참조는 [주의](#remarks) 섹션입니다.|  
+|**/p\[arameters\]:**_file.xml_|지정한 .xml 파일의 여러 가지 작동 모드에 대한 읽기 옵션입니다. 약식 표현은 `/p:`입니다. 자세한 내용은 참조는 [주의](#remarks) 섹션입니다.|  
   
 ## <a name="xsd-file-options"></a>XSD 파일 옵션  
  .xsd 파일에는 다음 옵션 중 하나만 지정해야 합니다.  
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/c\[꼬이는\]**|지정된 스키마에 해당하는 클래스를 생성합니다. XML 데이터를 개체로 읽어오려면 <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A?displayProperty=nameWithType> 메서드를 사용합니다.|  
-|**/d**[**ataset**]|지정된 스키마에 해당하는 <xref:System.Data.DataSet>에서 파생된 클래스를 생성합니다. XML 데이터를 파생 클래스로 읽어오려면 <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> 메서드를 사용합니다.|  
+|**/c\[lasses\]**|지정된 스키마에 해당하는 클래스를 생성합니다. XML 데이터를 개체로 읽어오려면 <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A?displayProperty=nameWithType> 메서드를 사용합니다.|  
+|**/d[ataset]**|지정된 스키마에 해당하는 <xref:System.Data.DataSet>에서 파생된 클래스를 생성합니다. XML 데이터를 파생 클래스로 읽어오려면 <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> 메서드를 사용합니다.|  
   
  .xsd 파일에는 다음 옵션을 지정할 수도 있습니다.  
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/e\[lement\]:**_요소_|코드를 생성할 대상 스키마 요소를 지정합니다. 기본적으로 모든 요소가 입력되며, 이 인수는 한 번 이상 지정될 수 있습니다.|  
+|**/e\[lement\]:**_element_|코드를 생성할 대상 스키마 요소를 지정합니다. 기본적으로 모든 요소가 입력되며, 이 인수는 한 번 이상 지정될 수 있습니다.|  
 |**/enableDataBinding**|생성된 모든 형식에 <xref:System.ComponentModel.INotifyPropertyChanged> 인터페이스를 구현하여 데이터 바인딩을 사용할 수 있습니다. 약식 표현은 `/edb`입니다.|  
 |**/enableLinqDataSet**|약식: `/eld`. 생성된 DataSet을 LINQ to DataSet을 사용하여 쿼리할 수 있도록 지정합니다. 이 옵션은 /dataset 옵션이 지정된 경우 사용됩니다. 자세한 내용은 [LINQ to DataSet 개요](../../../docs/framework/data/adonet/linq-to-dataset-overview.md) 및 [형식화된 데이터 세트 쿼리](../../../docs/framework/data/adonet/querying-typed-datasets.md)를 참조하세요. LINQ 사용 방법에 대한 자세한 내용은 [LINQ(Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)를 참조하세요.|  
 |**/f\[ields\]**|속성 대신 필드를 생성합니다. 기본적으로 속성이 생성됩니다.|  
-|**/l\[anguage\]:**_언어_|사용할 프로그래밍 언어를 지정합니다. `CS`(C#, 기본값), `VB`(Visual Basic), `JS`(JScript) 또는 `VJS`(Visual J#) 중에서 선택합니다. <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>를 구현하는 클래스의 정규화된 이름을 지정할 수도 있습니다.|  
-|**/n\[amespace\]:**_네임 스페이스_|생성된 형식에 대한 런타임 네임스페이스를 지정합니다. 기본 네임스페이스는 `Schemas`입니다.|  
+|**/l\[anguage\]:**_language_|사용할 프로그래밍 언어를 지정합니다. `CS`(C#, 기본값), `VB`(Visual Basic), `JS`(JScript) 또는 `VJS`(Visual J#) 중에서 선택합니다. <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>를 구현하는 클래스의 정규화된 이름을 지정할 수도 있습니다.|  
+|**/n\[amespace\]:**_namespace_|생성된 형식에 대한 런타임 네임스페이스를 지정합니다. 기본 네임스페이스는 `Schemas`입니다.|  
 |**/nologo**|배너를 표시하지 않습니다.|  
 |**/order**|모든 파티클 멤버에 대해 명시적인 순서 식별자를 생성합니다.|  
-|**/o\[ut\]:**_디렉터리 이름_|파일을 배치할 출력 디렉터리를 지정합니다. 기본값은 현재 디렉터리입니다.|  
+|**/o\[ut\]:**_directoryName_|파일을 배치할 출력 디렉터리를 지정합니다. 기본값은 현재 디렉터리입니다.|  
 |**/u\[ri\]:**_uri_|코드를 생성할 대상 스키마 요소의 URI를 지정합니다. 이 URI가 존재하는 경우 `/element` 옵션을 사용하여 지정된 모든 요소에 적용됩니다.|  
   
 ## <a name="dll-and-exe-file-options"></a>DLL 및 EXE 파일 옵션  
   
 |옵션|설명|  
 |------------|-----------------|  
-|**/t\[형식\]:**_typename_|스키마를 생성할 대상 형식의 이름을 지정합니다. 여러 개의 형식 인수를 지정할 수도 있습니다. *typename*에서 네임스페이스를 지정하지 않으면 Xsd.exe는 해당 어셈블리의 모든 형식과 지정된 형식을 일치시킵니다. *typename*에서 네임스페이스를 지정하면 지정한 형식만 일치됩니다. *typename*이 별표(\*)로 끝나는 경우에는 \* 앞의 문자열로 시작하는 모든 형식이 일치됩니다. `/type` 옵션을 생략하면 Xsd.exe는 해당 어셈블리의 모든 형식에 대해 스키마가 생성됩니다.|  
+|**/t\[ype\]:**_typename_|스키마를 생성할 대상 형식의 이름을 지정합니다. 여러 개의 형식 인수를 지정할 수도 있습니다. *typename*에서 네임스페이스를 지정하지 않으면 Xsd.exe는 해당 어셈블리의 모든 형식과 지정된 형식을 일치시킵니다. *typename*에서 네임스페이스를 지정하면 지정한 형식만 일치됩니다. *typename*이 별표(\*)로 끝나는 경우에는 \* 앞의 문자열로 시작하는 모든 형식이 일치됩니다. `/type` 옵션을 생략하면 Xsd.exe는 해당 어셈블리의 모든 형식에 대해 스키마가 생성됩니다.|  
   
 ## <a name="remarks"></a>설명  
  다음 표에서는 Xsd.exe에서 수행되는 작업을 보여 줍니다.  
