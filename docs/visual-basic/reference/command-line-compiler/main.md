@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /main compiler option [Visual Basic]
 - -main compiler option [Visual Basic]
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
-ms.openlocfilehash: eb9d38a7d6f74e5d8636f862c663c0ba0990baa5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 355267331eda73ab4c32ec27dbba1d82d729420f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50180234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54638784"
 ---
 # <a name="-main"></a>-기본
 `Sub Main` 프로시저가 포함된 클래스 또는 모듈을 지정합니다.  
@@ -24,7 +24,7 @@ ms.locfileid: "50180234"
   
 ## <a name="arguments"></a>인수  
  `location`  
- 필수. 클래스 또는 포함 된 모듈의 이름을 합니다 `Sub Main` 프로그램이 시작 될 때 호출 되는 프로시저입니다. 형태로 때문일 **-기본: module** 또는 **-main:namespace.module**합니다.  
+ 필수 요소. 클래스 또는 포함 된 모듈의 이름을 합니다 `Sub Main` 프로그램이 시작 될 때 호출 되는 프로시저입니다. 형태로 때문일 **-기본: module** 또는 **-main:namespace.module**합니다.  
   
 ## <a name="remarks"></a>설명  
  실행 파일 또는 프로그램을 실행 하는 Windows 만들 때이 옵션을 사용 합니다. 경우는 **-주** 옵션을 생략 하면, 컴파일러는 유효한 공유에 대 한 검색 `Sub Main` 모든 공용 클래스 및 모듈입니다.  
@@ -52,8 +52,8 @@ ms.locfileid: "50180234"
 vbc t2.vb t3.vb -main:Test2  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Visual Basic의 main 프로시저](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic의 main 프로시저](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
