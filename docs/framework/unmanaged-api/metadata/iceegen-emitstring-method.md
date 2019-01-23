@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1dccb2a3a3f3aaf0f209c8f3543056ab81c562dd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f51ce9a4b45bd674f53cf7b4c4d6cedb8d46858d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33443901"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54586425"
 ---
 # <a name="iceegenemitstring-method"></a>ICeeGen::EmitString 메서드
-코드 베이스에 지정 된 문자열을 내보냅니다.  
+코드 베이스에 지정된 된 문자열을 내보냅니다.  
   
- 이 메서드는 사용 되지 않으며 사용할 수 없습니다.  
+ 이 메서드는 사용 되지 않습니다 및 사용할 수 없습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,19 +40,19 @@ HRESULT EmitString (
   
 #### <a name="parameters"></a>매개 변수  
  `lpString`  
- [in] 내보내는 데 사용 되는 문자열입니다.  
+ [in] 내보낼 문자열입니다.  
   
  `RVA`  
  [out] 내보낸된 문자열의 상대 가상 주소입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에서 리소스로 사용  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICeeGen 인터페이스](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICeeGen 인터페이스](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

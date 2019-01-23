@@ -1,16 +1,16 @@
 ---
-title: 이어야 합니다. (멤버 액세스)(Entity SQL)
+title: . (멤버 액세스)(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 4733e3b2-3efa-4b96-b591-ac31350e96ad
-ms.openlocfilehash: fdcd026d245b3f6d6ecaccc0f828f3d77fd6ce1a
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: e2874e5bff8d8c34f700a81bf52c6729df49aca5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764634"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626672"
 ---
-# <a name="-member-access-entity-sql"></a>이어야 합니다. (멤버 액세스)(Entity SQL)
-점 (.) 연산자는는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 멤버 액세스 연산자입니다. 멤버 액세스 연산자를 사용하여 구조 개념적 모델 형식 인스턴스의 속성 또는 필드 값을 구합니다.  
+# <a name="-member-access-entity-sql"></a>. (멤버 액세스)(Entity SQL)
+점 연산자 (.)가는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 멤버 액세스 연산자입니다. 멤버 액세스 연산자를 사용하여 구조 개념적 모델 형식 인스턴스의 속성 또는 필드 값을 구합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -30,5 +30,5 @@ expression.identifier
   
  `select p.Name.FirstName from LOB.Person as p`  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
