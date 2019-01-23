@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 7ecce51f-db5f-4bd4-9321-cceb6fcb2a77
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b583df2eb6098fa28dd8999a6796e5053d13cab4
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 7ecdfff9d309a2e751d5f989760c42d6fa84fe99
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47114959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54562520"
 ---
 # <a name="encrypting-data"></a>데이터 암호화
 대칭 암호화와 비대칭 암호화는 서로 다른 프로세스를 사용하여 수행됩니다. 대칭 암호화는 스트림에서 수행되므로 많은 양의 데이터를 암호화하는 데 유용합니다. 비대칭 암호화는 적은 수의 바이트에서 수행되므로 적은 양의 데이터에만 유용합니다.  
@@ -173,7 +173,7 @@ The connection failed.
 ## <a name="asymmetric-encryption"></a>비대칭 암호화  
  비대칭 알고리즘은 일반적으로 대칭 키 및 IV의 암호화와 같은 적은 양의 데이터를 암호화하는 데 사용됩니다. 일반적으로 비대칭 암호화를 수행하는 개인은 다른 당사자가 생성한 공개 키를 사용합니다. <xref:System.Security.Cryptography.RSACryptoServiceProvider> 클래스는 이 목적을 위해 .NET Framework에서 제공됩니다.  
   
- 다음 예제에서는 공개 키 정보를 사용하여 대칭 키 및 IV를 암호화합니다. 타사의 공개 키를 나타내는 2바이트 배열이 초기화됩니다. <xref:System.Security.Cryptography.RSAParameters> 개체는 이러한 값으로 초기화됩니다. 다음으로 **RSAParameters** 개체를 나타내는 공개 키 포함) (함께 가져오면는 **RSACryptoServiceProvider** 사용 하 여를 <xref:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters%2A?displayProperty=nameWithType> 메서드. 끝으로, <xref:System.Security.Cryptography.RijndaelManaged> 클래스에서 만든 개인 키 및 IV가 암호화됩니다. 이 예제에서는 시스템에 128비트 암호화가 설치되어 있어야 합니다.  
+ 다음 예제에서는 공개 키 정보를 사용하여 대칭 키 및 IV를 암호화합니다. 타사의 공개 키를 나타내는 2바이트 배열이 초기화됩니다. <xref:System.Security.Cryptography.RSAParameters> 개체는 이러한 값으로 초기화됩니다. 다음에는 **메서드를 사용하여** RSAParameters **개체(이 개체가 나타내는 공개 키 포함)를** RSACryptoServiceProvider <xref:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters%2A?displayProperty=nameWithType> 로 가져옵니다. 끝으로, <xref:System.Security.Cryptography.RijndaelManaged> 클래스에서 만든 개인 키 및 IV가 암호화됩니다. 이 예제에서는 시스템에 128비트 암호화가 설치되어 있어야 합니다.  
   
 ```vb  
 Imports System  
@@ -264,6 +264,6 @@ class Class1
   
 ## <a name="see-also"></a>참고자료
 
-- [암호화 및 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)  
-- [데이터 해독](../../../docs/standard/security/decrypting-data.md)  
+- [암호화 및 해독용 키 생성](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)
+- [데이터 해독](../../../docs/standard/security/decrypting-data.md)
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

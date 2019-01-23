@@ -11,12 +11,12 @@ api_type:
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9aa690378a32ffee2def672f02dc8b5582647a5e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: ae6183f33b784a0ff79d11310b952949cf13bf58
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33455816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54556196"
 ---
 # <a name="icorprofilercallback7moduleinmemorysymbolsupdated-method"></a>ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method
 [.NET Framework 4.6.1 이상 버전에서 지원됨]  
@@ -33,18 +33,18 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `moduleId`  
- 메모리 내 모듈과 된 기호 스트림이 업데이트의 식별자입니다.  
+ 해당 기호 스트림이 업데이트는 메모리 내 모듈의 식별자입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 콜백을 설정 하 여 제어는 [COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED](../../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) 이벤트 마스크 플래그를 호출할 때는 [ICorProfilerCallback5::SetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) 메서드.  
+ 이 콜백을 설정 하 여 제어 합니다 [COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED](../../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) 이벤트 마스크 플래그를 호출할 때 합니다 [ICorProfilerCallback5::SetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) 메서드.  
   
 > [!NOTE]
->  이 이벤트는 암시적으로 만들거나 수정한 통해 기호에 대 한 현재 발생 되지 <xref:System.Reflection.Emit> Api입니다.  
+>  이 이벤트는 암시적으로 생성 되거나를 통해 수정 기호에 대 한 현재 발생 하지 <xref:System.Reflection.Emit> Api.  
   
- 도 경우 기호에에서 제공 된 들겠지만 관리 되는 오버 로드 중 하나에 대 한 호출 <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> 메서드를 포함 하는 `rawSymbolStore` 런타임 어셈블리에 대 한 기호를 지정 하려면 인수 기호 데이터 모듈과 함께 실제로 연결 하지 않을 수 있습니다 될 때까지 후의 [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) 콜백이 발생 했습니다. 이 이벤트는 이러한 모듈에 대 한 기호를 수집 하는 이후 기회를 제공 합니다.  
+ 도 때 기호에에서 제공 된 사전 관리 되는 오버 로드 중 하나를 호출 하 <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> 포함 하는 메서드를 `rawSymbolStore` 런타임 어셈블리에 대 한 기호를 지정 하는 인수 기호 데이터 모듈을 사용 하 여 실제로 연결 하지 않을 수 있습니다 될 때까지 후 합니다 [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) 콜백 발생 했습니다. 이 이벤트는 이러한 모듈에 대 한 기호를 수집 하는 이후 기회를 제공 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
@@ -52,7 +52,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ModuleLoadFinished 메서드](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)  
- [SetEventMask2 메서드](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)  
- [ICorProfilerCallback7 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-interface.md)
+## <a name="see-also"></a>참고자료
+- [ModuleLoadFinished 메서드](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)
+- [SetEventMask2 메서드](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)
+- [ICorProfilerCallback7 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-interface.md)

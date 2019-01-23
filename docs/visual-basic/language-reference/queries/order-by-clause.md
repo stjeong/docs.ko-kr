@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Order By clause [Visual Basic]
 - Order By statement [Visual Basic]
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
-ms.openlocfilehash: d4abb5f0b75ae4069c1dbe695a5c810b1f7aa6e1
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: c467b46347539a3cc6c4abfabc368ce494985b95
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46004284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54560940"
 ---
 # <a name="order-by-clause-visual-basic"></a>Order By 절(Visual Basic)
 쿼리 결과 대 한 정렬 순서를 지정합니다.  
@@ -28,7 +28,7 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
   
 ## <a name="parts"></a>요소  
  `orderExp1`  
- 필수. 하나 이상의 필드는 현재 쿼리 결과에서 반환 된 값을 정렬 하는 방법을 식별 하는입니다. 필드 이름은 쉼표 (,)로 구분 되어야 합니다. 오름차순 또는 내림차순으로 사용 하 여 정렬 된 것으로 각 필드를 식별할 수 있습니다 합니다 `Ascending` 또는 `Descending` 키워드입니다. 없으면 `Ascending` 또는 `Descending` 키워드를 지정한 경우 기본 정렬 순서는 오름차순입니다. 정렬 순서 필드에는 우선 순위가 왼쪽에서 오른쪽으로 제공 됩니다.  
+ 필수 요소. 하나 이상의 필드는 현재 쿼리 결과에서 반환 된 값을 정렬 하는 방법을 식별 하는입니다. 필드 이름은 쉼표 (,)로 구분 되어야 합니다. 오름차순 또는 내림차순으로 사용 하 여 정렬 된 것으로 각 필드를 식별할 수 있습니다 합니다 `Ascending` 또는 `Descending` 키워드입니다. 없으면 `Ascending` 또는 `Descending` 키워드를 지정한 경우 기본 정렬 순서는 오름차순입니다. 정렬 순서 필드에는 우선 순위가 왼쪽에서 오른쪽으로 제공 됩니다.  
   
 ## <a name="remarks"></a>설명  
  사용할 수는 `Order By` 절을 쿼리의 결과 정렬 합니다. `Order By` 절 에서만 현재 범위에 대 한 범위 변수를 기반으로 결과 정렬할 수 있습니다. 예를 들어를 `Select` 절에서는 해당 범위에 대 한 새 반복 변수를 사용 하 여 쿼리 식에 새 범위를 제공 합니다. 범위 변수 앞에 정의 `Select` 쿼리의 절 뒤에 사용할 수 없는 `Select` 절. 따라서에서 사용할 수 없는 필드를 기준으로 결과 정렬 하려는 경우는 `Select` 두어야 절을 `Order By` 하기 전에 절은 `Select` 절. 하나의 쿼리 결과의 일부로 반환 되지 않습니다 필드로 정렬 하려는 경우이 작업을 수행 해야 하는 경우의 예입니다.  
@@ -50,8 +50,8 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
   
  [!code-vb[VbSimpleQuerySamples#26](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_3.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)

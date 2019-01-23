@@ -9,15 +9,15 @@ helpviewer_keywords:
 - DataFormats class [WPF], storing multiple formats
 - drag-and-drop [WPF], storing multiple formats
 ms.assetid: 941ace29-29c4-4c26-b75b-ea7d06aa0d69
-ms.openlocfilehash: e47d0aa2fe1c573314551ad91a2199ca97fd61a0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 33415dd3cb1a05263cf9fb9ecafcbc857d364d57
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33543470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555676"
 ---
 # <a name="how-to-store-multiple-data-formats-in-a-data-object"></a>방법: 데이터 개체에 여러 데이터 형식 저장
-사용 하는 방법을 보여 주는 다음 예제는 <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%29> 메서드 데이터를 여러 형식 데이터 개체를 추가 합니다.  
+다음 예제에서는 사용 하는 방법의 <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%29> 여러 형식의 데이터 개체에 데이터를 추가 하는 방법입니다.  
   
 ## <a name="example"></a>예제  
   
@@ -27,6 +27,6 @@ ms.locfileid: "33543470"
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_StoreMultipleFormats](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_storemultipleformats)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_StoreMultipleFormats](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_storemultipleformats)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.IDataObject>  
- [끌어서 놓기 개요](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.IDataObject>
+- [끌어서 놓기 개요](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
