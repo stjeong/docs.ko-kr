@@ -1,5 +1,5 @@
 ---
-title: '방법: 디자인 타임에 ElementHost 컨트롤 복사하여 붙여넣기'
+title: '방법: 복사 하 고 디자인 타임에 ElementHost 컨트롤을 붙여 넣습니다.'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Forms, content copying and pasting
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - ElementHost control [Windows Forms], copying and pasting at design time
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: e570375d-2a68-44ba-b4f7-c781af2d20e8
-ms.openlocfilehash: a61a8538fb9b4245e3f3705c5d5cbb1b45ed0b72
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 6ff1ccc5e8f188bdec2e09048974fdc20a785920
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48872926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572633"
 ---
-# <a name="how-to-copy-and-paste-an-elementhost-control-at-design-time"></a>방법: 디자인 타임에 ElementHost 컨트롤 복사하여 붙여넣기
+# <a name="how-to-copy-and-paste-an-elementhost-control-at-design-time"></a>방법: 복사 하 고 디자인 타임에 ElementHost 컨트롤을 붙여 넣습니다.
 이 절차에서는 Windows Form에 Windows Presentation Foundation (WPF) 컨트롤을 복사 하는 방법을 보여 줍니다.  
   
 > [!NOTE]
@@ -22,7 +22,7 @@ ms.locfileid: "48872926"
   
 ### <a name="to-copy-and-paste-an-elementhost-control-at-design-time"></a>복사 하 여 디자인 타임에 ElementHost 컨트롤을 붙여 넣습니다.  
   
-1.  새 WPF 추가 <xref:System.Windows.Controls.UserControl> Windows Forms 프로젝트에 있습니다. 컨트롤 형식의 기본 이름인 `UserControl1.xaml`을 사용합니다. 자세한 내용은 [연습: 만드는 새 WPF 콘텐츠 디자인 타임에 Windows Forms에서](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)합니다.  
+1.  새 WPF 추가 <xref:System.Windows.Controls.UserControl> Windows Forms 프로젝트에 있습니다. 컨트롤 형식의 기본 이름인 `UserControl1.xaml`을 사용합니다. 자세한 내용은 [연습: 디자인 타임에 Windows Forms에서 새 WPF 콘텐츠 만들기](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)합니다.  
   
 2.  에 **속성** 창에서 값을 설정 합니다 <xref:System.Windows.FrameworkElement.Width%2A> 및 <xref:System.Windows.FrameworkElement.Height%2A> 의 속성 `UserControl1` 를 `200`합니다.  
   
@@ -42,10 +42,10 @@ ms.locfileid: "48872926"
   
      새 <xref:System.Windows.Forms.Integration.ElementHost> 제어 라는 `elementHost2` 폼에 만들어집니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 
-- <xref:System.Windows.Forms.Integration.ElementHost>  
-- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
-- [마이그레이션 및 상호 운용성](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
-- [WPF 컨트롤 사용](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [마이그레이션 및 상호 운용성](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
+- [WPF 컨트롤 사용](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
 - [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)

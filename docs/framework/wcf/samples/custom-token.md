@@ -2,12 +2,12 @@
 title: Custom Token
 ms.date: 03/30/2017
 ms.assetid: e7fd8b38-c370-454f-ba3e-19759019f03d
-ms.openlocfilehash: 6e743be961de2c6d7b09805e6f91d7710efe227e
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 93de9ae8d1d0604efbbc07fae61463599a8b9acf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54223093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572710"
 ---
 # <a name="custom-token"></a>Custom Token
 이 샘플에는 Windows Communication Foundation (WCF) 응용 프로그램에 사용자 지정 토큰 구현을 추가 하는 방법을 보여 줍니다. 이 예제에서는 클라이언트 신용 카드에 대한 정보를 서비스에 안전하게 전달하기 위해 `CreditCardToken`을 사용합니다. 이 토큰은 WS-Security 메시지 헤더로 전달되고 메시지 본문 및 다른 메시지 헤더와 함께 대칭 보안 바인딩 요소를 사용하여 서명 및 암호화됩니다. 이 방법은 기본 제공 토큰이 충분하지 않은 경우 유용합니다. 이 샘플에서는 기본 제공 토큰 중 하나를 사용하는 대신 사용자 지정 보안 토큰을 서비스에 제공하는 방법을 보여 줍니다. 이 서비스는 요청-회신 통신 패턴을 정의하는 계약을 구현합니다.
@@ -629,4 +629,4 @@ string GetCallerCreditCardNumber()
   
 1.  샘플 실행을 완료했으면 샘플 폴더에서 Cleanup.bat를 실행합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

@@ -2,12 +2,12 @@
 title: 사용자 지정 WSDL 게시
 ms.date: 03/30/2017
 ms.assetid: 3b3e8103-2c95-4db3-a05b-46aa8e9d4d29
-ms.openlocfilehash: 725b62a26d640e242010a01ff810ea90d5cc53bc
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e09e79725b0a9e4ee34e4062c1434415cfc25d03
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43508422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572927"
 ---
 # <a name="custom-wsdl-publication"></a>사용자 지정 WSDL 게시
 이 샘플을 통해 다음을 수행하는 방법을 알 수 있습니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "43508422"
   
 -   <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType>을 구현하여 사용자 지정 WSDL 주석 가져오기.  
   
--   사용자 지정 계약 동작과 사용자 지정 작업 동작에 각각 <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> 및 <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType>을 구현하여 가져온 주석을 가져온 계약 및 작업의 CodeDom에 주석으로 씁니다.  
+-   사용자 지정 계약 동작과 사용자 지정 작업 동작에 각각 <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> 및 <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType>을 구현하여 가져온 주석을 가져온 계약 및 작업의 CodeDOM에 주석으로 씁니다.  
   
 -   사용 하 여는 <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> WSDL을 다운로드 하는 <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> 사용자 지정 WSDL 가져오기를 사용 하 여 WSDL을 가져오려면 및 <xref:System.ServiceModel.Description.ServiceContractGenerator?displayProperty=nameWithType> / / /으로 WSDL 주석 사용 하 여 Windows Communication Foundation (WCF) 클라이언트 코드를 생성 및 ' ' 주석 C# 및 Visual 기본입니다.  
   
@@ -304,4 +304,4 @@ public interface ICalculator
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Metadata\WsdlDocumentation`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

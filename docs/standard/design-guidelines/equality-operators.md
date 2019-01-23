@@ -10,12 +10,12 @@ helpviewer_keywords:
 - == operator (equality) [.NET Framework]
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
 author: KrzysztofCwalina
-ms.openlocfilehash: ae188fc7cd55dd843e93afccbe1ea05575a9c36d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: ef1a0aff1ac59434d9d9a6f0371bf236f637050e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572684"
 ---
 # <a name="equality-operators"></a>같음 연산자
 이 섹션에서는 같음 연산자를 오버 로드에 대해 설명 하 고 가리킵니다 `operator==` 고 `operator!=` 같음 연산자입니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "53129079"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)
 - [사용 지침](../../../docs/standard/design-guidelines/usage-guidelines.md)
