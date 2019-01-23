@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: caf7faeea4bcec9b73f3c43f0923d308baebf6d0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e43485caa0c1dbf989ae12de77ee4e160652942e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33447622"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54502678"
 ---
-# <a name="imetadatatablesgetnextblob-method"></a><span data-ttu-id="08f97-102">IMetaDataTables::GetNextBlob 메서드</span><span class="sxs-lookup"><span data-stu-id="08f97-102">IMetaDataTables::GetNextBlob Method</span></span>
-<span data-ttu-id="08f97-103">테이블에 다음 이진 대형 개체 (BLOB)의 인덱스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="08f97-103">Gets the index of the next binary large object (BLOB) in the table.</span></span>  
+# <a name="imetadatatablesgetnextblob-method"></a><span data-ttu-id="d0e3f-102">IMetaDataTables::GetNextBlob 메서드</span><span class="sxs-lookup"><span data-stu-id="d0e3f-102">IMetaDataTables::GetNextBlob Method</span></span>
+<span data-ttu-id="d0e3f-103">테이블의 다음 binary large object (BLOB)의 인덱스를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="d0e3f-103">Gets the index of the next binary large object (BLOB) in the table.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="08f97-104">구문</span><span class="sxs-lookup"><span data-stu-id="08f97-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d0e3f-104">구문</span><span class="sxs-lookup"><span data-stu-id="d0e3f-104">Syntax</span></span>  
   
 ```  
 HRESULT GetNextBlob (  
@@ -36,22 +36,22 @@ HRESULT GetNextBlob (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="08f97-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="08f97-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="d0e3f-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="d0e3f-105">Parameters</span></span>  
  `ixBlob`  
- <span data-ttu-id="08f97-106">[in] Blob의 열에서 반환 된 인덱스입니다.</span><span class="sxs-lookup"><span data-stu-id="08f97-106">[in] The index, as returned from a column of BLOBs.</span></span>  
+ <span data-ttu-id="d0e3f-106">[in] Blob 열에서 반환 된 인덱스입니다.</span><span class="sxs-lookup"><span data-stu-id="d0e3f-106">[in] The index, as returned from a column of BLOBs.</span></span>  
   
  `pNext`  
- <span data-ttu-id="08f97-107">[out] 추가 BLOB의 인덱스에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="08f97-107">[out] A pointer to the index of the next BLOB.</span></span>  
+ <span data-ttu-id="d0e3f-107">[out] 다음 BLOB의 인덱스에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="d0e3f-107">[out] A pointer to the index of the next BLOB.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="08f97-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="08f97-108">Requirements</span></span>  
- <span data-ttu-id="08f97-109">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="08f97-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="d0e3f-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="d0e3f-108">Requirements</span></span>  
+ <span data-ttu-id="d0e3f-109">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="d0e3f-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="08f97-110">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="08f97-110">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="d0e3f-110">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="d0e3f-110">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="08f97-111">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="08f97-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="d0e3f-111">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="d0e3f-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="08f97-112">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="08f97-112">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="d0e3f-112">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d0e3f-112">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="08f97-113">참고 항목</span><span class="sxs-lookup"><span data-stu-id="08f97-113">See Also</span></span>  
- [<span data-ttu-id="08f97-114">IMetaDataTables 인터페이스</span><span class="sxs-lookup"><span data-stu-id="08f97-114">IMetaDataTables Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [<span data-ttu-id="08f97-115">IMetaDataTables2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="08f97-115">IMetaDataTables2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## <a name="see-also"></a><span data-ttu-id="d0e3f-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="d0e3f-113">See also</span></span>
+- [<span data-ttu-id="d0e3f-114">IMetaDataTables 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d0e3f-114">IMetaDataTables Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
+- [<span data-ttu-id="d0e3f-115">IMetaDataTables2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="d0e3f-115">IMetaDataTables2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
