@@ -2,12 +2,12 @@
 title: 트랜잭션 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 2e4f464d88a63a0aad17982d0329971de4fc5a07
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 559b7ec1539a43ec27010031320be144d6f5e24b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43788677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54533769"
 ---
 # <a name="transaction-protocols"></a>트랜잭션 프로토콜
 Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination 프로토콜을 구현 합니다.  
@@ -23,7 +23,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
  다음 그림에서는 두 개의 트랜잭션 관리자(트랜잭션 관리자 1, 트랜잭션 관리자 2)와 두 개의 응용 프로그램(응용 프로그램 1, 응용 프로그램 2) 간의 상호 운용성에 대해 설명합니다.  
   
- ![트랜잭션 프로토콜](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
+ ![Transaction Protocols](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
   
  한 명의 개시자(I)와 한 명의 참가자(P)가 있는 일반적인 WS-Coordination/WS-Atomic Transaction 시나리오를 예로 들어 봅니다. 개시자와 참가자는 둘 다 트랜잭션 관리자(각각 ITM과 PTM)를 가집니다. 이 항목에서는 2단계 커밋을 2PC라고 합니다.  
   
@@ -60,7 +60,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 |접두사|버전|네임스페이스 URI|  
 |------------|-------------|-------------------|  
 |s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|이전 버전 1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
+|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
 |wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
 |wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
 |t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
@@ -68,9 +68,9 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 |xsd||[https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)|  
   
 ## <a name="transaction-manager-bindings"></a>트랜잭션 관리자 바인딩  
- R1001: 트랜잭션 관리자는 WS-AT 1.0 트랜잭션에 참여 하 고 사용 해야 SOAP 1.1과 Ws-addressing 2004/08 Ws-atomic Transaction 및 Ws-coordination 메시지 교환을 위해.  
+ R1001: WS-AT 1.0 트랜잭션에 참여 하는 트랜잭션 관리자는 Ws-atomic Transaction 및 Ws-coordination 메시지 교환을 위해 SOAP 1.1과 Ws-addressing 2004/08 사용 해야 합니다.  
   
- R1002: WS-AT 1.1 트랜잭션에 참여 중인 트랜잭션 관리자는 WS-Atomic Transaction 및 WS-Coordination 메시지 교환을 위해 SOAP 1.1과 WS-Addressing 2005/08을 사용해야 합니다.  
+ R1002: WS-AT 1.1 트랜잭션에 참여 하는 트랜잭션 관리자는 Ws-atomic Transaction 및 Ws-coordination 메시지 교환을 위해 SOAP 1.1과 Ws-addressing 2005/08를 사용 해야 합니다.  
   
  응용 프로그램 메시지는 이러한 바인딩에 제한되지 않으며, 이에 대해서는 나중에 설명합니다.  
   
@@ -80,9 +80,9 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 #### <a name="https-transport-configuration"></a>HTTPS 전송 구성  
  X.509 인증서는 트랜잭션 관리자 ID를 설정하는 데 사용합니다. 클라이언트/서버 인증이 필요하며, 클라이언트/서버 권한 부여는 구현 정보로 유지됩니다.  
   
--   R1111: 연결을 통해 표시되는 X.509 인증서에는 원래 컴퓨터의 FQDN(정규화된 도메인 이름)과 일치하는 주체 이름이 있어야 합니다.  
+-   R1111: 네트워크를 통해 표시 되는 X.509 인증서는 원래 컴퓨터의 정규화 된 도메인 이름 (FQDN)과 일치 하는 주체 이름이 있어야 합니다.  
   
--   B1112: DNS는 X.509 주체 이름을 확인한 시스템에서 각 발신자-수신자 쌍 간에 작동해야 합니다.  
+-   B1112: DNS 되려면 X.509 주체 이름 확인에 대 한 시스템에서 각 발신자-수신자 쌍 간에 작동 해야 합니다.  
   
 #### <a name="activation-and-registration-binding-configuration"></a>바인딩 구성 활성화 및 등록  
  WCF는 HTTPS를 통해 상관 관계를 사용 하 여 요청/회신 이중 바인딩이 필요합니다. 요청/회신 메시지 교환 패턴의 상관 관계 및 설명에 대한 자세한 내용은 8단원 WS-Atomic Transaction을 참조하십시오.  
@@ -103,11 +103,11 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
  B1221: WCF에서는 이중 HTTPS 바인딩 (에서 설명한 [메시징 프로토콜](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) 활성화 메시지에 대 한 합니다. 요청 및 회신 메시지는 WS-AT 1.0용 WS-Addressing 2004/08 및 WS-AT 1.1용 WS-Addressing 2005/08을 사용하여 상호 관련됩니다.  
   
- 8단원 WS-Atomic Transaction 사양에서는 상관 관계 및 메시지 교환 패턴에 대해 좀 더 자세히 설명합니다.  
+ 8단원 WS-Atomic 트랜잭션 사양에서는 상관 관계 및 메시지 교환 패턴에 대해 좀 더 자세히 설명합니다.  
   
--   R1222: 코디네이터는 `CreateCoordinationContext`를 수신하는 즉시 연관된 비밀 `SecurityContextToken`로 `STx`을 발급해야 합니다. 이 토큰은 WS-Trust 사양을 따르는 `t:IssuedTokens` 헤더의 내부로 반환됩니다.  
+-   R1222: 수신 시를 `CreateCoordinationContext`, 코디네이터가 실행 해야 합니다는 `SecurityContextToken` 연관 된 비밀을 사용 하 여 `STx`입니다. 이 토큰은 WS-Trust 사양을 따르는 `t:IssuedTokens` 헤더의 내부로 반환됩니다.  
   
--   R1223: 기존 코디네이션 컨텍스트 내에서 활성화가 수행되면 기존 컨텍스트와 연관된 `t:IssuedTokens`과 함께 `SecurityContextToken` 헤더가 `CreateCoordinationContext` 메시지에서 이동해야 합니다.  
+-   R1223: 활성화는 기존 코디 네이션 컨텍스트 내에서 발생 하는 경우는 `t:IssuedTokens` 헤더를 `SecurityContextToken` 기존 연결에서 상황에 맞는 이동 해야 합니다는 `CreateCoordinationContext` 메시지입니다.  
   
  새 `t:IssuedTokens` 나가는 연결에 대 한 헤더를 생성 해야 `wscoor:CreateCoordinationContextResponse` 메시지입니다.  
   
@@ -116,7 +116,7 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
   
  8단원 WS-AtomicTransaction에서는 메시지 교환 패턴의 상관 관계 및 설명에 대해 좀 더 자세히 설명합니다.  
   
- R1232: 보내는 `wscoor:Register` 메시지를 사용 해야 합니다 `IssuedTokenOverTransport` 에 설명 된 인증 모드 [보안 프로토콜](../../../../docs/framework/wcf/feature-details/security-protocols.md)합니다.  
+ R1232: 나가는 `wscoor:Register` 메시지를 사용 해야 합니다 `IssuedTokenOverTransport` 에 설명 된 인증 모드 [보안 프로토콜](../../../../docs/framework/wcf/feature-details/security-protocols.md)합니다.  
   
  합니다 `wsse:Timestamp` 요소를 사용 하 여 서명 해야 합니다는 `SecurityContextToken``STx` 발급 합니다. 이 서명은 특정 트랜잭션과 연관된 토큰을 소유했음을 나타내며, 트랜잭션에 등록된 참가자를 인증하는 데 사용합니다. RegistrationResponse 메시지는 HTTPS를 통해 다시 보내집니다.  
   
@@ -128,13 +128,13 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 ## <a name="application-message-exchange"></a>응용 프로그램 메시지 교환  
  바인딩이 다음 보안 요구 사항을 만족하는 경우, 응용 프로그램에서는 응용 프로그램 간 메시지에 대해 특정 바인딩을 자유롭게 사용할 수 있습니다.  
   
--   R2001: 응용 프로그램 간 메시지는 메시지의 헤더에서 `t:IssuedTokens`와 함께 `CoordinationContext` 헤더를 이동시켜야 합니다.  
+-   R2001: 응용 프로그램 간 메시지 전달 해야 합니다 `t:IssuedTokens` 헤더와 함께 `CoordinationContext` 메시지의 헤더에 합니다.  
   
--   R2002: `t:IssuedToken`의 무결성 및 기밀성이 제공되어야 합니다.  
+-   R2002: 무결성 및 기밀성 `t:IssuedToken` 제공 해야 합니다.  
   
  `CoordinationContext` 헤더에는 `wscoor:Identifier`가 포함됩니다. 정의 하는 동안 `xsd:AnyURI` 절대 및 상대 Uri 사용할 수 있도록 WCF 지원 `wscoor:Identifiers`는 절대 Uri입니다.  
   
- B2003: 경우 합니다 `wscoor:Identifier` 의 `wscoor:CoordinationContext` 가 상대 URI 인 트랜잭션 WCF 서비스에서 오류가 반환 됩니다.  
+ B2003: 경우는 `wscoor:Identifier` 의 `wscoor:CoordinationContext` 가 상대 URI 인 트랜잭션 WCF 서비스에서 오류가 반환 됩니다.  
   
 ## <a name="message-examples"></a>메시지 예제  
   
@@ -287,9 +287,9 @@ Windows Communication Foundation (WCF) Ws-atomic Transaction 및 Ws-coordination
 <t:IssuedTokens>   
 <wst:RequestSecurityTokenResponse   
 xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"   
-xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-     wssecurity-utility-1.0.xsd"   
-xmlns:wst=http://docs.oasis-open.org/ws-sx/ws-trust/200512  
-xmlns:wsc=http://schemas.xmlsoap.org/ws/2005/02/sc  
+xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"   
+xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"  
+xmlns:wsc="http://schemas.xmlsoap.org/ws/2005/02/sc"  
 xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">  
 <wst:TokenType>http://schemas.xmlsoap.org/ws/2005/02/sc/sct</wst:TokenType>  
 <wst:RequestedSecurityToken>   
@@ -302,14 +302,14 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 <wst:RequestedAttachedReference>   
 <wsse:SecurityTokenReference >   
 <wsse:Reference  
-  ValueType=http://schemas.xmlsoap.org/ws/2005/02/sc/sct  
+  ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"  
   URI="http://fabrikam123.com/SCTi"/>  
 </wsse:SecurityTokenReference>   
 </wst:RequestedAttachedReference>   
 <wst:RequestedUnattachedReference>   
 <wsse:SecurityTokenReference>   
 <wsse:Reference  
- ValueType=http://schemas.xmlsoap.org/ws/2005/02/sc/sct  
+ ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"  
  URI="http://fabrikam123.com/SCTi"/>  
 </wsse:SecurityTokenReference>   
 </wst:RequestedUnattachedReference>   

@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 19f76a163fae4a1390a2e0fcb85299f8ce78180c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 19bd34f95e17094a89e4929a5b6ae936afe39885
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33435892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54531917"
 ---
 # <a name="icorpublishprocess-interface"></a>ICorPublishProcess 인터페이스
 액세스 하는 프로세스에 대 한 정보를 표시 하는 메서드를 제공 합니다.  
@@ -30,20 +30,20 @@ ms.locfileid: "33435892"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[EnumAppDomains 메서드](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-enumappdomains-method.md)|가져옵니다는 [ICorPublishAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md) 이 참조 하는 프로세스의 응용 프로그램 도메인을 포함 하는 인스턴스 `ICorPublishProcess`합니다.|  
+|[EnumAppDomains 메서드](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-enumappdomains-method.md)|가져옵니다는 [ICorPublishAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md) 이 참조 하는 프로세스에서 응용 프로그램 도메인을 포함 하는 인스턴스 `ICorPublishProcess`합니다.|  
 |[GetDisplayName 메서드](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-getdisplayname-method.md)|이 참조 하는 프로세스에 대 한 실행 파일의 전체 경로 가져옵니다 `ICorPublishProcess`합니다.|  
 |[GetProcessID 메서드](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-getprocessid-method.md)|이 참조 하는 프로세스에 대 한 운영 체제 식별자를 가져옵니다 `ICorPublishProcess`합니다.|  
-|[IsManaged 메서드](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-ismanaged-method.md)|이 프로세스를 참조 하는지 여부를 나타내는 값을 가져옵니다 `ICorPublishProcess` 관리 되는 코드가 실행 될 것으로 알려져 있습니다.|  
+|[IsManaged 메서드](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-ismanaged-method.md)|이 프로세스를 참조 하는지 여부를 나타내는 값을 가져옵니다 `ICorPublishProcess` 실행 관리 코드 라고 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorPub.idl, CorPub.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)

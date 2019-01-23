@@ -8,19 +8,19 @@ helpviewer_keywords:
 - authenticationModules element
 - <authenticationModules> element
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
-ms.openlocfilehash: 074f2f0cd2c3ac6c6287db08b22ead07afa58fc5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d143f91d31951f218631519a3182f5de6c4eca60
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50190816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54532122"
 ---
 # <a name="ltauthenticationmodulesgt-element-network-settings"></a>&lt;authenticationModules&gt; 요소 (네트워크 설정)
 네트워크 요청을 인증 하는 데 사용 되는 모듈을 지정 합니다.  
   
  \<configuration>  
 \<system.net>  
-\<authenticationModules >  
+\<authenticationModules>  
   
 ## <a name="syntax"></a>구문  
   
@@ -69,7 +69,7 @@ ms.locfileid: "50190816"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.IAuthenticationModule>  
-- <xref:System.Net.AuthenticationManager>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

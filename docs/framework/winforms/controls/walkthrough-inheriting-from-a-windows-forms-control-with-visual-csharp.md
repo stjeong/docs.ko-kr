@@ -8,12 +8,12 @@ helpviewer_keywords:
 - inheritance [Windows Forms], walkthroughs
 - custom controls [Windows Forms], inheritance
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
-ms.openlocfilehash: cad15b8fb89ec17e45b0f6cfed22f3109551fc2c
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 392f0e98c3401ca5ae5e01fefbf35462462b3a4a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45595726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54531254"
 ---
 # <a name="walkthrough-inheriting-from-a-windows-forms-control-with-visual-c"></a>연습: Visual C#을 사용하여 Windows Forms 컨트롤에서 상속 #
 [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)]에서는 *상속*을 통해 강력한 사용자 지정 컨트롤을 만들 수 있습니다. 상속을 통해 표준 Windows Forms 컨트롤의 모든 고유 기능을 유지하면서 사용자 지정 기능을 통합하는 컨트롤을 만들 수 있습니다. 이 연습에서는 `ValueButton`이라는 간단한 상속된 컨트롤을 만듭니다. 이 단추는 표준 Windows Forms에서 기능을 상속 <xref:System.Windows.Forms.Button> 컨트롤을 호출 하는 사용자 지정 속성을 노출 합니다 `ButtonValue`합니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "45595726"
   
 1.  **파일** 메뉴에서 **추가**를 가리킨 후 **새 프로젝트**를 클릭하여 **새 프로젝트 추가** 대화 상자를 엽니다.  
   
-2.  **Windows** 노드를 선택하고 **Visual C#** 노드 아래에서 **Windows Forms 응용 프로그램**을 클릭합니다.  
+2.  **Windows** 노드를 선택하고 **Visual C#** 노드 아래에서 **Windows Forms 애플리케이션**을 클릭합니다.  
   
 3.  **이름** 상자에 `Test`을 입력합니다.  
   
@@ -141,8 +141,8 @@ ms.locfileid: "45595726"
   
      숫자 '5'가 `label1`에 표시되며 상속된 컨트롤의 `ButtonValue` 속성이 `valueButton1_Click` 메서드를 통해 `label1`에 전달되었음을 보여 줍니다. 따라서 `ValueButton` 컨트롤은 표준 Windows Forms 단추의 모든 기능을 상속하지만 추가 사용자 지정 속성을 노출합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [구성 요소를 사용한 프로그래밍](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)  
- [구성 요소 제작 연습](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)  
- [방법: 도구 상자 항목 선택 대화 상자에 컨트롤 표시](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)  
- [연습: Visual C#에서 합성 컨트롤 작성](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+## <a name="see-also"></a>참고자료
+- [구성 요소를 사용한 프로그래밍](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)
+- [구성 요소 제작 연습](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)
+- [방법: 컨트롤에 표시 된 도구 상자 항목 선택 대화 상자](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
+- [연습: 시각적 개체를 사용 하 여 복합 컨트롤 제작C#](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)

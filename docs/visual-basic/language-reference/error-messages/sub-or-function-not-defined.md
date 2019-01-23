@@ -4,19 +4,19 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID35
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
-ms.openlocfilehash: 58e90d769d5a7f2d88b5c27d1ec7d0d28c8d7b03
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4627f8ddb979780481feadbef06225baf6a7c0ca
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33593703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54532177"
 ---
 # <a name="sub-or-function-not-defined-visual-basic"></a>Sub 또는 Function이 정의되지 않았습니다(Visual Basic).
-A `Sub` 또는 `Function` 호출 되려면 정의 되어야 합니다. 이 오류가 발생하는 원인은 다음과 같습니다.  
+A `Sub` 또는 `Function` 호출 수를 정의 해야 합니다. 이 오류가 발생하는 원인은 다음과 같습니다.  
   
 -   프로시저 이름의 철자가 틀린 경우입니다.  
   
--   다른 프로젝트에서 명시적으로 해당 프로젝트에 대 한 참조를 추가 하지 않고 프로시저를 호출 하는 **참조** 대화 상자.  
+-   다른 프로젝트에서 명시적으로 해당 프로젝트에 대 한 참조를 추가 하지 않고 프로시저를 호출 하려고 합니다 **참조가** 대화 상자.  
   
 -   호출 하는 프로시저로 표시 되지 않는 프로시저를 지정 합니다.  
   
@@ -24,14 +24,14 @@ A `Sub` 또는 `Function` 호출 되려면 정의 되어야 합니다. 이 오�
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-1.  프로시저 이름을 제대로 입력 했는지 확인 합니다.  
+1.  프로시저 이름의 철자가 올바른지 확인 합니다.  
   
-2.  호출 하려는 프로시저를 포함 하는 프로젝트의 이름 찾기는 **참조** 대화 상자. 표시 되지 않으면 클릭는 **찾아보기** 단추를 검색 합니다. 프로젝트 이름의 왼쪽에 있는 확인란을 선택 하 고 클릭 한 다음 **확인**합니다.  
+2.  호출할 프로시저를 포함 하는 프로젝트의 이름을 찾으려면 합니다 **참조** 대화 상자. 표시 되지 않으면 클릭 합니다 **찾아보기** 단추에 대 한 검색 합니다. 프로젝트 이름의 왼쪽에 있는 확인란을 선택한 다음 클릭 **확인**합니다.  
   
-3.  루틴의 이름을 확인 하십시오.  
+3.  루틴의 이름을 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [오류 형식](../../../visual-basic/programming-guide/language-features/error-types.md)  
- [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)  
- [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)
+## <a name="see-also"></a>참고자료
+- [오류 형식](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)
+- [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)

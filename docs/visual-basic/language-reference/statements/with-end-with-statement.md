@@ -15,12 +15,12 @@ helpviewer_keywords:
 - With block
 - End keyword [Visual Basic], With...End With statements
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
-ms.openlocfilehash: 9c50d03454860979e3475cb381fefc2acc07cece
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a3762e3bf0978feeb1155f8cc8249a77f0a497df
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33604668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535271"
 ---
 # <a name="withend-with-statement-visual-basic"></a>With...End With 문(Visual Basic)
 개체 또는 구문의 멤버에 액세스할 때 문에서 단순화된 구문을 사용할 수 있도록 단일 개체를 반복적으로 참조하는 일련의 문을 실행합니다.  구조체를 사용하면 멤버 또는 호출 메서드의 값을 읽을 수만 있으며, `With...End With` 문에서 사용된 구조체의 멤버에 값을 할당하도록 시도하는 경우 오류가 발생합니다.  
@@ -37,9 +37,9 @@ End With
   
 |용어|정의|  
 |---|---|  
-|`objectExpression`|필수. 개체를 평가하는 식입니다. 식은 임의적으로 복잡할 수 있으며, 한 번만 계산됩니다. 식이 기본 형식을 포함하여 모든 데이터 형식으로 계산될 수 있습니다.|  
+|`objectExpression`|필수 요소. 개체를 평가하는 식입니다. 식은 임의적으로 복잡할 수 있으며, 한 번만 계산됩니다. 식이 기본 형식을 포함하여 모든 데이터 형식으로 계산될 수 있습니다.|  
 |`statements`|선택 사항입니다. `With`의 평가를 통해 생성된 개체의 멤버를 참조할 수 있는 `End With`와 `objectExpression` 사이의 하나 이상의 문입니다.|  
-|`End With`|필수. `With` 블록의 정의를 종료합니다.|  
+|`End With`|필수 요소. `With` 블록의 정의를 종료합니다.|  
   
 ## <a name="remarks"></a>설명  
  `With...End With`를 사용하여 개체의 이름을 여러 번 지정하지 않고 지정된 개체에 일련의 문을 수행할 수 있습니다. `With` 문 블록 내에서 `With` 문 개체가 앞에 오는 것처럼 기간으로 시작하는 개체의 멤버를 지정할 수 있습니다.  
@@ -62,10 +62,10 @@ End With
   
  블록 외부에서 `With` 문 블록으로 분기할 수 없습니다.  
   
- 블록에 루프가 없으면 문이 한 번만 실행됩니다. 다른 종류의 제어 구조를 중첩할 수 있습니다. 자세한 내용은 참조 [중첩 제어 구조](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)합니다.  
+ 블록에 루프가 없으면 문이 한 번만 실행됩니다. 다른 종류의 제어 구조를 중첩할 수 있습니다. 자세한 내용은 [중첩 제어 구조](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)합니다.  
   
 > [!NOTE]
->  개체 이니셜라이저에서도 `With` 키워드를 사용할 수 있습니다. 자세한 내용 및 예제에 대 한 참조 [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) 및 [익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)합니다.  
+>  개체 이니셜라이저에서도 `With` 키워드를 사용할 수 있습니다. 자세한 내용 및 예제를 참조 하세요. [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) 하 고 [무명 형식을](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)합니다.  
 >   
 >  인스턴스화한 개체의 필드 또는 속성을 초기화하기 위해서만 `With` 블록을 사용하는 경우 대신 개체 이니셜라이저를 사용할 것을 고려하십시오.  
   
@@ -79,8 +79,8 @@ End With
   
  [!code-vb[VbVbalrWithStatement#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/with-end-with-statement_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Collections.Generic.List%601>  
- [중첩 제어 구조](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [개체 이니셜라이저: 명명된 형식과 익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Collections.Generic.List%601>
+- [중첩 제어 구조](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

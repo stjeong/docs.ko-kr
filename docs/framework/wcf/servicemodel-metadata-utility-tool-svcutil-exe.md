@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Svcutil.exe
 - clients [WCF], consuming services
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
-ms.openlocfilehash: 10a5be16ef27aedf86f391b661750a953262d29b
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 9682d79a912ac24e549093e0713cf65fb61bb4d6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54533210"
 ---
 # <a name="servicemodel-metadata-utility-tool-svcutilexe"></a>ServiceModel Metadata 유틸리티 도구(Svcutil.exe)
 
@@ -29,10 +29,10 @@ Windows SDK 설치 위치에 특히 ServiceModel Metadata 유틸리티 도구를
 |작업|항목|
 |----------|-----------|
 |실행 중인 서비스나 정적 메타데이터 문서에서 코드를 생성합니다.|[서비스 메타데이터에서 WCF 클라이언트 생성](../../../docs/framework/wcf/feature-details/generating-a-wcf-client-from-service-metadata.md)|
-|컴파일된 코드에서 메타데이터 문서를 내보냅니다.|[어떻게: Svcutil.exe를 사용 하 여 컴파일된 서비스 코드에서 메타 데이터를 내보내려면](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)|
-|컴파일된 서비스 코드의 유효성을 검사합니다.|[어떻게: Svcutil.exe를 사용 하 여 컴파일된 서비스 코드 유효성 검사](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-validate-compiled-service-code.md)|
-|실행 중인 서비스에서 메타데이터 문서를 다운로드합니다.|[어떻게: Svcutil.exe를 사용 하 여 메타 데이터 문서 다운로드](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)|
-|serialization 코드를 생성합니다.|[어떻게: 시작 시간의 WCF 클라이언트 응용 프로그램 개선 XmlSerializer를 사용 하 여](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)|
+|컴파일된 코드에서 메타데이터 문서를 내보냅니다.|[방법: Svcutil.exe를 사용 하 여 컴파일된 서비스 코드에서 메타 데이터를 내보내려면](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)|
+|컴파일된 서비스 코드의 유효성을 검사합니다.|[방법: Svcutil.exe를 사용 하 여 컴파일된 서비스 코드 유효성 검사](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-validate-compiled-service-code.md)|
+|실행 중인 서비스에서 메타데이터 문서를 다운로드합니다.|[방법: Svcutil.exe를 사용 하 여 메타 데이터 문서 다운로드](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)|
+|serialization 코드를 생성합니다.|[방법: 시작 시간의 WCF 클라이언트 응용 프로그램 개선 XmlSerializer를 사용 하 여](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)|
 
 > [!CAUTION]
 > Svcutil 매개 변수로 입력 한 이름이 동일한 경우 디스크에 기존 파일을 덮어씁니다. 이 코드 파일, 구성 또는 메타 데이터 파일에 포함할 수 있습니다. 이 방지 하려면 코드 및 구성 파일을 생성할 때 사용 된 `/mergeConfig` 전환 합니다.
@@ -276,8 +276,8 @@ svcutil.exe.config 파일을 새로 만들고 XML 예제 코드를 파일 안에
 
 마지막으로 응용 프로그램의 중간 계층에서 이 도구를 사용하면 현재 프로세스에 서비스 거부가 발생할 수 있으므로 사용하면 안 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
-- [어떻게: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [방법: 클라이언트 만들기](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
