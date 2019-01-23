@@ -9,12 +9,12 @@ helpviewer_keywords:
 - typography [WPF], OpenType font technology
 - OpenType font technology [WPF]
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
-ms.openlocfilehash: f3d1dd9f7ef8122ac5573121e4f779fade776c8c
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 5751efe0c6621425b8b54c642d51127118c0b6bf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54529788"
 ---
 # <a name="opentype-font-features"></a>OpenType 글꼴 기능
 이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에 있는 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴 기술의 주요 기능 일부에 대한 개요를 제공합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "43862146"
 -   고급 입력 체계 컨트롤을 위한 폭넓은 지원  
   
 > [!NOTE]
->  Windows SDK에는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램과 함께 사용할 수 있는 샘플 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴 집합이 포함되어 있습니다. 이 글꼴에서는 이 항목의 나머지 부분에서 보여 주는 대부분의 기능이 제공됩니다. 자세한 내용은 [샘플 OpenType 글꼴 팩](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)을 참조하세요.  
+>  Windows SDK에는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 애플리케이션과 함께 사용할 수 있는 샘플 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴 집합이 포함되어 있습니다. 이 글꼴에서는 이 항목의 나머지 부분에서 보여 주는 대부분의 기능이 제공됩니다. 자세한 내용은 [샘플 OpenType 글꼴 팩](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)을 참조하세요.  
   
  [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 글꼴 서식에 대한 자세한 내용은 [OpenType 사양](https://go.microsoft.com/fwlink/?LinkId=96731)을 참조하세요.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "43862146"
   
 -   2차원 위치 지정 및 문자 모양 첨부 지원  
   
--   명시적인 스크립트 및 언어 정보가 글꼴에 포함되어 텍스트 처리 응용 프로그램에서 동작을 조정할 수 있습니다.  
+-   명시적인 스크립트 및 언어 정보가 글꼴에 포함되어 텍스트 처리 애플리케이션에서 동작을 조정할 수 있습니다.  
   
  [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 사양의 [“글꼴 파일 표”](https://www.microsoft.com/typography/otspec/otff.htm) 섹션에서 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 레이아웃 표에 대해 자세히 설명합니다.  
   
@@ -360,9 +360,9 @@ OpenType 대문자를 사용하는 텍스트
 |<xref:System.Windows.Documents.Typography.StylisticSet20%2A>|<xref:System.Boolean>|`false`|  
 |<xref:System.Windows.Documents.Typography.Variants%2A>|<xref:System.Windows.FontVariants.Inferior> &#124; <xref:System.Windows.FontVariants.Normal> &#124; <xref:System.Windows.FontVariants.Ordinal> &#124; <xref:System.Windows.FontVariants.Ruby> &#124; <xref:System.Windows.FontVariants.Subscript> &#124; <xref:System.Windows.FontVariants.Superscript>|<xref:System.Windows.FontVariants.Normal?displayProperty=nameWithType>|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Documents.Typography>  
- [OpenType 사양](https://go.microsoft.com/fwlink/?LinkId=96731)  
- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [샘플 OpenType 글꼴 팩](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
- [응용 프로그램과 함께 글꼴 패키징](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Documents.Typography>
+- [OpenType 사양](https://go.microsoft.com/fwlink/?LinkId=96731)
+- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [샘플 OpenType 글꼴 팩](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)
+- [응용 프로그램과 함께 글꼴 패키징](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)

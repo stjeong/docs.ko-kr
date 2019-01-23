@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d73c299231a588a5ae0b252dd2b5a0a834685f2d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: cd4d1be3ec3c64c7c6669a2c85ba6bf68db6da68
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53150669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54536765"
 ---
 # <a name="jitcompilationstart-mda"></a>jitCompilationStart MDA
 JIT(Just-In-Time) 컴파일러에서 함수 컴파일을 시작하는 시기를 보고하기 위해 `jitCompilationStart` MDA(관리 디버깅 도우미)가 활성화됩니다.  
@@ -38,7 +38,7 @@ JIT(Just-In-Time) 컴파일러에서 함수 컴파일을 시작하는 시기를 
 method name="Test!ns2.C0::m"  
 ```  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
  다음 구성 파일은 처음 JIT 컴파일될 때 보고되는 메서드를 필터링하기 위해 사용할 수 있는 다양한 필터를 보여 줍니다. 이름 특성의 값을 설정 하 여 모든 메서드를 보고 하는 수를 지정할 수 있습니다 \*합니다.  
   
 ```xml  
@@ -157,7 +157,7 @@ namespace ns2
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)

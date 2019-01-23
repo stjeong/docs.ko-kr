@@ -1,5 +1,5 @@
 ---
-title: '&lt;relativeBindForResources&gt; 요소'
+title: '&lt;relativeBindForResources&gt; Element'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - RelativeBindForResources element
@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1933fad8ea87351a56fcc7dd4a4fd67e890b58f5
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 3aa3ca9c9d0e64b2290b503f09b83140b4d029b4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534798"
 ---
-# <a name="ltrelativebindforresourcesgt-element"></a>&lt;relativeBindForResources&gt; 요소
+# <a name="ltrelativebindforresourcesgt-element"></a>&lt;relativeBindForResources&gt; Element
 위성 어셈블리에 대한 프로브를 최적화합니다.  
   
  \<구성 > 요소  
@@ -51,7 +51,7 @@ ms.locfileid: "53613897"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -71,7 +71,7 @@ ms.locfileid: "53613897"
   
 -   발생 하지 않습니다는 <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> 이벤트입니다.  
   
-## <a name="see-also"></a>참고 항목  
-- [리소스 패키징 및 배포](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- [리소스 패키징 및 배포](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

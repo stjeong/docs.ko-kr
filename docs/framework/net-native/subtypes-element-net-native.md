@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f850ec24530dd9a7d80f826461cacd9c249dd0de
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a5503e89006411887de9b0def929ac1155df5aa4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54537259"
 ---
 # <a name="ltsubtypesgt-element-net-native"></a>&lt;하위 형식&gt; 요소(.NET 네이티브)
 포함 형식에서 상속된 모든 클래스에 런타임 정책을 적용합니다.  
@@ -89,8 +89,8 @@ ms.locfileid: "33397990"
   
  [!code-csharp[ProjectN_Reflection#5](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/subtypes.cs#5)]  
   
-## <a name="see-also"></a>참고 항목  
- [\<형식 > 요소](../../../docs/framework/net-native/type-element-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## <a name="see-also"></a>참고자료
+- [\<형식 > 요소](../../../docs/framework/net-native/type-element-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

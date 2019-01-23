@@ -2,19 +2,19 @@
 title: '&lt;서비스&gt;'
 ms.date: 03/30/2017
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
-ms.openlocfilehash: ef0ae70440323c1ede5deca60e88f29861760e68
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: e91e04c602fd867e329477015fc0a8354ae26a05
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535010"
 ---
 # <a name="ltservicegt"></a>&lt;서비스&gt;
 `service` 요소에는 WCF(Windows Communication Foundation) 서비스 설정이 포함되어 있습니다. 이 요소에는 서비스를 공개하는 엔드포인트도 포함되어 있습니다.  
   
  \<system.ServiceModel>  
 \<services>  
-\<서비스 >  
+\<service>  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ ms.locfileid: "54145512"
 |요소|설명|  
 |-------------|-----------------|  
 |[\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md)|이 서비스를 공개하는 `endpoint` 요소의 컬렉션입니다.|  
-|[\<호스트 >](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|이 서비스 인스턴스의 호스트를 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.HostElement> 형식입니다.|  
+|[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|이 서비스 인스턴스의 호스트를 지정합니다. 이 요소는 <xref:System.ServiceModel.Configuration.HostElement> 형식입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -68,6 +68,6 @@ ms.locfileid: "54145512"
 </service>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ServiceElement>  
- [서비스 구성](../../../../../docs/framework/wcf/configuring-services.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ServiceElement>
+- [서비스 구성](../../../../../docs/framework/wcf/configuring-services.md)

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - custom controls [Windows Forms], exposing properties
 - constituent controls
 ms.assetid: 5c1ec98b-aa48-4823-986e-4712551cfdf1
-ms.openlocfilehash: 8f7b5c44a5cb20b5da10df5fd630b371cc959fa8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f3ad37032ee2bb85f37a0eb754277cc9bc040a38
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532635"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54532164"
 ---
 # <a name="how-to-expose-properties-of-constituent-controls"></a>방법: 구성 요소 컨트롤의 속성 노출
-복합 컨트롤을 구성 하는 컨트롤 이라고 *구성 요소 컨트롤*합니다. 이러한 컨트롤은 일반적으로 전용으로 선언 및 따라서 개발자가 액세스할 수 없습니다. 향후 사용자에 게 이러한 컨트롤의 속성을 제공 하려는 경우 사용자에 게 노출 해야 합니다. 사용자 정의 컨트롤에서 속성을 만들고 사용 하 여 구성 요소 컨트롤의 속성을 노출 된 `get` 및 `set` 의 구성 요소 컨트롤 전용 속성의 변경 내용을 적용 하려면 해당 속성의 접근자입니다.  
+복합 컨트롤을 구성 하는 컨트롤 이라고 *구성 요소 컨트롤*합니다. 이러한 컨트롤은 일반적으로 전용으로 선언 및 하므로 개발자가 액세스할 수 없습니다. 미래의 사용자에 게 이러한 컨트롤의 속성을 제공 하려는 경우에 사용자에 게 노출 해야 있습니다. 사용자 컨트롤에서 속성을 만들고 사용 하 여 구성 요소 컨트롤의 속성을 노출 합니다 `get` 및 `set` 구성 요소 컨트롤의 개인 속성에 변경 내용을 적용 하려면 해당 속성의 접근자입니다.  
   
- 가상의 사용자 정의 컨트롤 이라는 구성 요소 단추 있다고 가정 `MyButton`합니다. 이 예제에서는 사용자가 요청할 때는 `ConstituentButtonBackColor` 속성에 저장 된 값의 <xref:System.Windows.Forms.Control.BackColor%2A> 속성 `MyButton` 배달 됩니다. 이 속성에 값을 할당 하는 사용자, 해당 값을 자동으로 전달 되는 <xref:System.Windows.Forms.Control.BackColor%2A> 속성 `MyButton` 및 `set` 코드는 실행의 색을 변경 `MyButton`합니다.  
+ 구성 요소 라는 단추를 사용 하 여 가상의 사용자 컨트롤을 가정 `MyButton`합니다. 이 예제에서는 사용자가 요청할 때를 `ConstituentButtonBackColor` 속성에 저장 된 값을 <xref:System.Windows.Forms.Control.BackColor%2A> 속성을 `MyButton` 전달 됩니다. 사용자 값이이 속성에 할당 하는 경우 해당 값이 자동으로 전달 합니다 <xref:System.Windows.Forms.Control.BackColor%2A> 속성을 `MyButton` 및 `set` 코드는 실행의 색을 변경 `MyButton`합니다.  
   
- 다음 예제에서는 노출 하는 방법을 보여 줍니다.는 <xref:System.Windows.Forms.Control.BackColor%2A> 구성 단추의 속성:  
+ 다음 예제에서는 노출 하는 방법을 보여 줍니다는 <xref:System.Windows.Forms.Control.BackColor%2A> 속성을 구성 합니다.  
   
 ```vb  
 Public Property ButtonColor() as System.Drawing.Color  
@@ -55,9 +55,9 @@ public Color ButtonColor
   
 2.  에 `get` 섹션의 속성을 노출 하려는 속성의 값을 검색 하는 코드를 작성 합니다.  
   
-3.  에 `set` 섹션 속성의 구성 요소 컨트롤 노출 된 속성을 속성의 값을 전달 하는 코드를 작성 합니다.  
+3.  에 `set` 섹션 속성의 구성 요소 컨트롤 노출 된 속성에 속성의 값을 전달 하는 코드를 작성 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.UserControl>  
- [Windows Forms 컨트롤의 속성](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
- [사용자 지정 컨트롤의 종류](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.UserControl>
+- [Windows Forms 컨트롤의 속성](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)
+- [사용자 지정 컨트롤의 종류](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)

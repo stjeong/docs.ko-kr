@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <ipv6> element
 - ipv6 element
 ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
-ms.openlocfilehash: 5e1afdd372c2198c00bf8c02939d2167261b5d5c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 1ca1bb6a0b1a9c3deab9cb3ba15e9b3b2c29f1f7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50205141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54531891"
 ---
 # <a name="ltipv6gt-element-network-settings"></a>&lt;ipv6&gt; 요소 (네트워크 설정)
 인터넷 프로토콜 버전 6(ipv6)을 사용 하도록 설정의 사용 되지 않는 멤버의 응답을 <xref:System.Net.Dns> 클래스입니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "50205141"
  \<configuration>  
 \<system.net>  
 \<settings>  
-\<ipv6 >  
+\<ipv6>  
   
 ## <a name="syntax"></a>구문  
   
@@ -68,8 +68,8 @@ ms.locfileid: "50205141"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net?displayProperty=nameWithType>  
-- <xref:System.Net.Dns?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net?displayProperty=nameWithType>
+- <xref:System.Net.Dns?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

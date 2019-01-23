@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 8046bc5d-2fa9-4277-8a5e-6dcc96c281d9
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: e7cac3c7e6c588a82e9dfff169ba7b7aa72c35f8
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 3969f066c0a17424d2c4527d2b4661b30f5bb6d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48838476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54530527"
 ---
 # <a name="how-to-create-a-publisher-policy"></a>방법: 게시자 정책 만들기
 어셈블리 공급 업체는 응용 프로그램 업그레이드 된 어셈블리를 사용 하 여 게시자 정책 파일을 포함 하 여 최신 버전의 어셈블리를 사용할지는 상태 수입니다. 게시자 정책 파일 어셈블리 리디렉션 및 코드 베이스 설정을 지정 하 고 응용 프로그램 구성 파일로 동일한 형식을 사용 합니다. 게시자 정책 파일을 어셈블리로 컴파일되고 전역 어셈블리 캐시에 배치 됩니다.  
@@ -102,11 +102,11 @@ ms.locfileid: "48838476"
     > [!IMPORTANT]
     >  원래 게시자 정책 파일이 어셈블리와 동일한 디렉터리에 위치한 하지 않는 한 게시자 정책 어셈블리를 전역 어셈블리 캐시에 추가할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)  
- [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
- [런타임 설정 스키마](../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)  
- [어셈블리 버전 리디렉션](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+## <a name="see-also"></a>참고자료
+- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [응용 프로그램 구성](../../../docs/framework/configure-apps/index.md)
+- [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+- [런타임 설정 스키마](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../docs/framework/configure-apps/file-schema/index.md)
+- [어셈블리 버전 리디렉션](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

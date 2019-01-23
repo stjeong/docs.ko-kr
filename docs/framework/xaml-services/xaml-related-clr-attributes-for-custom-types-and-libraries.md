@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - CLR attributes for custom types [XAML Services]
 ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
-ms.openlocfilehash: 13cc4d85a1a4b5c9b1ff61afbf7980a54e3d22d0
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: e194dbef0f18657646161a3f5cc4812b3ab78f7e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47424443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54530104"
 ---
 # <a name="xaml-related-clr-attributes-for-custom-types-and-libraries"></a>사용자 지정 형식 및 라이브러리에 대한 XAML 관련 CLR 특성
 이 항목에서는.NET Framework XAML 서비스에 정의 된 공용 언어 런타임 (CLR) 특성을 설명 합니다. 또한 응용 프로그램 어셈블리 또는 형식에 대 한 XAML 관련 시나리오는.NET Framework에 정의 된 CLR 특성 다른 설명 합니다. 이러한 CLR 특성을 사용 하 여 어셈블리, 형식 또는 멤버를 설정 하면 해당 형식과 관련 된 XAML 형식 시스템 정보를 제공 합니다. 정보는 XAML 노드 스트림에서 직접 처리 하거나 전용된 XAML 판독기 및 XAML 작성기를 통해.NET Framework XAML 서비스를 사용 하는 모든 XAML 소비자에 게 제공 됩니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "47424443"
 ### <a name="ambientattribute"></a>AmbientAttribute  
  **참조 설명서:**  <xref:System.Windows.Markup.AmbientAttribute>  
   
- **적용 대상:** 클래스, 속성 또는 `get` 연결 가능한 속성을 지 원하는 접근자 멤버가.  
+ **적용 대상:** 클래스, 속성 또는 `get` 접근자 멤버 연결 가능한 속성을 지원 합니다.  
   
  **인수:** 없음  
   
@@ -57,7 +57,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스, 특히 컬렉션 형식입니다.  
   
- **인수:** 는 <xref:System.Type> 외래 콘텐츠에 대 한 콘텐츠 래퍼 형식으로 사용할 형식을 지정 하는 합니다.  
+ **인수:** <xref:System.Type> 외래 콘텐츠에 대 한 콘텐츠 래퍼 형식으로 사용할 형식을 지정 하는 합니다.  
   
  <xref:System.Windows.Markup.ContentWrapperAttribute> 외부 콘텐츠를 래핑할 사용 될 연결 된 컬렉션 형식에 하나 이상의 형식을 지정 합니다. 외부 콘텐츠를 콘텐츠 속성의 형식에 형식 시스템 제약 조건이 캡처하지 않으면 소유 하는 형식에 대 한 XAML 사용은 지원 가능한 콘텐츠 사례의 모든 사례를 가리킵니다. 특정 유형의 콘텐츠를 강력한 형식의 일반에서 문자열을 지원할 수 있습니다에 대 한이 XAML이 지원 되는 예를 들어 <xref:System.Collections.ObjectModel.Collection%601>합니다. 콘텐츠 래퍼는 할당 가능한 값 컬렉션의 경우 텍스트 관련 콘텐츠 모델을 마이그레이션하는 등의 XAML의 개념에 기존의 태그 규칙을 마이그레이션에 유용 합니다.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 되도록 예상 되는 클래스는 <xref:System.Windows.Markup.MarkupExtension> 파생 형식입니다.  
   
- **인수:** A <xref:System.Type> 로 예상 가장 정확한 형식을 지정 하는 합니다 `ProvideValue` 특성 사용의 결과 <xref:System.Windows.Markup.MarkupExtension>합니다.  
+ **인수:** <xref:System.Type> 로 예상 가장 정확한 형식을 지정 하는 `ProvideValue` 특성 사용의 결과 <xref:System.Windows.Markup.MarkupExtension>합니다.  
   
  자세한 내용은 [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)합니다.  
   
@@ -88,7 +88,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스  
   
- **인수:** 두 가지 형태의 attribution 지원:  
+ **인수:** 두 가지 형태의 attribution 지원합니다.  
   
 -   특성 사용된 형식이 속성의 이름을 지정 하는 문자열입니다.  
   
@@ -101,7 +101,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스  
   
- **인수:** 특성 사용된 형식에 런타임 이름 속성의 이름을 지정 하는 문자열입니다.  
+ **인수:** 특성 사용된 형식이 런타임 이름 속성의 이름을 지정 하는 문자열입니다.  
   
  <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> XAML에 매핑되는 특성이 지정 된 형식의 속성을 보고 [X:name 지시문](../../../docs/framework/xaml-services/x-name-directive.md)합니다. 속성 형식 이어야 합니다 <xref:System.String> 읽기/쓰기 여야 합니다.  
   
@@ -110,18 +110,18 @@ ms.locfileid: "47424443"
 ### <a name="trimsurroundingwhitespaceattribute"></a>TrimSurroundingWhitespaceAttribute  
  **참조 설명서:**  <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute>  
   
- **적용 대상:** 형식  
+ **적용 대상:** 유형  
   
- **인수:** 없음.  
+ **인수:** 없음  
   
  <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> 공백이 중요 한 콘텐츠 내에서 자식 요소로 표시 될 수 있는 특정 형식에 적용 됩니다 (포함 된 컬렉션에 포함 된 콘텐츠 <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> 저장에 주로 관련이, 하지만 사용할 수 있는 경로가 로드 경로에서 XAML 형식 시스템에서 검사 하 여 <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>입니다. 자세한 내용은 [공백 XAML 처리](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)합니다.  
   
 ### <a name="typeconverterattribute"></a>TypeConverterAttribute  
  **참조 설명서:**  <xref:System.ComponentModel.TypeConverterAttribute>  
   
- **에 적용 됩니다:** 클래스, 속성, 메서드 (경우에 유효한 XAML 메서드 사례는는 `get` 연결 가능한 멤버를 지 원하는 접근자).  
+ **적용 대상:** 클래스, 속성, 메서드 (경우에 유효한 XAML 메서드 사례는는 `get` 연결 가능한 멤버를 지 원하는 접근자).  
   
- **인수:** 는 <xref:System.Type> 의 <xref:System.ComponentModel.TypeConverter>합니다.  
+ **인수:** <xref:System.Type>의 <xref:System.ComponentModel.TypeConverter>입니다.  
   
  <xref:System.ComponentModel.TypeConverterAttribute> XAML 상황에 맞는 사용자 지정 참조 <xref:System.ComponentModel.TypeConverter>합니다. 이 <xref:System.ComponentModel.TypeConverter> 사용자 지정 형식 또는 해당 형식의 멤버에 대 한 형식 변환 동작을 제공 합니다.  
   
@@ -149,16 +149,16 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스  
   
- **인수:** 부울입니다. 특성의 용도 사용 하는 경우 항상 지정 해야으로 `true`입니다.  
+ **인수:** 부울 값입니다. 특성의 용도 사용 하는 경우 항상 지정 해야으로 `true`입니다.  
   
  이 형식이 XAML 개체 그래프를 만드는 동안 하향식으로 빌드되는지 여부를 나타냅니다. 고급 개념, 프로그래밍 모델의 정의 아마도 밀접 한 관련이 있는 경우 자세한 내용은 <xref:System.Windows.Markup.UsableDuringInitializationAttribute>을 참조하세요.  
   
 ### <a name="valueserializerattribute"></a>ValueSerializerAttribute  
  **참조 설명서:**  <xref:System.Windows.Markup.ValueSerializerAttribute>  
   
- **에 적용 됩니다:** 클래스, 속성, 메서드 (경우에 유효한 XAML 메서드 사례는는 `get` 연결 가능한 멤버를 지 원하는 접근자).  
+ **적용 대상:** 클래스, 속성, 메서드 (경우에 유효한 XAML 메서드 사례는는 `get` 연결 가능한 멤버를 지 원하는 접근자).  
   
- **인수:** 는 <xref:System.Type> 특성이 지정 된 형식의 모든 속성을 직렬화 할 때 사용 하는 값 serializer 지원 클래스를 지정 하는 또는 특정 특성 속성을 사용 합니다.  
+ **인수:** <xref:System.Type> 특성이 지정 된 형식의 모든 속성을 직렬화 할 때 사용 하는 값 serializer 지원 클래스를 지정 하는 또는 특정 특성 속성을 사용 합니다.  
   
  <xref:System.Windows.Markup.ValueSerializer> 자세한 상태 및 컨텍스트를 필요로 하는 값 serialization 클래스 지정을 <xref:System.ComponentModel.TypeConverter> 않습니다. <xref:System.Windows.Markup.ValueSerializer> 적용 하 여 연결 가능한 멤버를 사용 하 여 연결할 수는 <xref:System.Windows.Markup.ValueSerializerAttribute> 정적 특성 `get` 연결 가능한 멤버에 대 한 접근자 메서드. 값 serialization도 적용 됩니다. 대리자 아니라 열거형, 인터페이스 및 구조체에 대 한 합니다.  
   
@@ -167,7 +167,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스, 특히 개체 요소 주위의 공백을 UI 표현에 중요할 수 있는 혼합된 콘텐츠를 호스트에 예상 되는 컬렉션 형식입니다.  
   
- **인수:** 없음.  
+ **인수:** 없음  
   
  <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> 컬렉션 형식을 컬렉션 내에서 XAML 노드 스트림의 값 노드 생성에 영향을 줍니다는 XAML 프로세서에서 중요 한 흰 공간으로 처리 되어야 한다는 것을 나타냅니다. 자세한 내용은 [공백 XAML 처리](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)합니다.  
   
@@ -178,14 +178,14 @@ ms.locfileid: "47424443"
   
  **인수:** 지 원하는 두 가지 특성 형식을 문자열로, forms 또는 형식을로 <xref:System.Type>합니다. <xref:System.Windows.Markup.XamlDeferLoadAttribute>을 참조하세요.  
   
- 클래스 또는 속성에 XAML에 대 한 지연 된 로드 사용법 (예: 템플릿 동작의 경우) 및 지연 동작 및 해당 대상/콘텐츠 형식을 지 원하는 클래스를 보고를 나타냅니다.  
+ 클래스 또는 속성에 XAML에 대한 지연된 로드 사용(예: 템플릿 동작)이 있음을 나타내고 지연 동작 및 해당 대상/콘텐츠 형식을 사용하도록 설정하는 클래스를 보고합니다.  
   
 ### <a name="xamlsetmarkupextensionattribute"></a>XamlSetMarkupExtensionAttribute  
  **참조 설명서:**  <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute>  
   
  **적용 대상:** 클래스  
   
- **인수:** 콜백의 이름을 지정 합니다.  
+ **인수:** 콜백을 이름을 지정 합니다.  
   
  클래스 속성을 하나 이상에 대 한 값을 제공 하는 태그 확장을 사용할 수 있음을 나타내고 XAML 작성기 클래스의 모든 속성에 태그 확장 설정 작업을 수행 하기 전에 호출 해야 하는 처리기를 참조 합니다.  
   
@@ -194,7 +194,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스  
   
- **인수:** 콜백의 이름을 지정 합니다.  
+ **인수:** 콜백을 이름을 지정 합니다.  
   
  클래스 속성을 하나 이상에 대 한 값을 제공 하는 형식 변환기를 사용할 수 있음을 나타내고 XAML 작성기 클래스의 모든 속성에 형식 변환기 설정 작업을 수행 하기 전에 호출 해야 하는 처리기를 참조 합니다.  
   
@@ -203,7 +203,7 @@ ms.locfileid: "47424443"
   
  **적용 대상:** 클래스  
   
- **인수:** 별칭 속성의 이름을 지정 하는 문자열 `xml:lang` 특성 사용된 형식에 있습니다.  
+ **인수:** 속성 별칭의 이름을 지정 하는 문자열 `xml:lang` 특성 사용된 형식에 있습니다.  
   
  <xref:System.Windows.Markup.XmlLangPropertyAttribute> XML에 매핑되는 특성이 지정 된 형식의 속성을 보고 `lang` 지시문입니다. 속성은 반드시 형식이 아닙니다 <xref:System.String>, 있지만 (가능 특정 속성 또는 속성의 형식과 형식 변환기를 연결 하 여) 문자열에서 할당 되어야 합니다. 속성은 읽기/쓰기 여야 합니다.  
   
@@ -223,7 +223,7 @@ ms.locfileid: "47424443"
   
 -   이전 인수에서 XAML 네임 스페이스를 포함할 수 있는 XAML 네임 스페이스의 식별자를 지정 하는 문자열입니다.  
   
- <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> 다른 XAML 네임 스페이스는 XAML 네임 스페이스 포함 될 수 있는지를 지정 합니다. 포함 하는 XAML 네임 스페이스를 표시 하는 일반적으로 미리 정의 된에서 <xref:System.Windows.Markup.XmlnsDefinitionAttribute>합니다. 이 기술은 라이브러리 및 이전 버전의 어휘에 대해 이전에 정의 된 태그와 호환 되도록 XAML 어휘 버전 관리에 사용 합니다.  
+ <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> 다른 XAML 네임 스페이스는 XAML 네임 스페이스 포함 될 수 있는지를 지정 합니다. 일반적으로 포함하는 XAML 네임스페이스는 미리 정의된 <xref:System.Windows.Markup.XmlnsDefinitionAttribute>에 표시됩니다. 이 기술은 라이브러리 및 이전 버전의 어휘에 대해 이전에 정의 된 태그와 호환 되도록 XAML 어휘 버전 관리에 사용 합니다.  
   
 ### <a name="xmlnsdefinitionattribute"></a>XmlnsDefinitionAttribute  
  **참조 설명서:**  <xref:System.Windows.Markup.XmlnsDefinitionAttribute>  
@@ -268,6 +268,6 @@ ms.locfileid: "47424443"
 > [!NOTE]
 >  .NET framework XAML 서비스 XAML 관련 특성 정의 <xref:System.Windows.Markup.RootNamespaceAttribute>합니다. 이 특성은 프로젝트 시스템 지원에 대 한 어셈블리 수준 특성 및 관련이 없는 XAML 사용자 지정 형식에 대 한 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Attribute>  
- [.NET Framework XAML 서비스에서 사용할 사용자 지정 형식 정의](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Attribute>
+- [.NET Framework XAML 서비스에서 사용할 사용자 지정 형식 정의](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)

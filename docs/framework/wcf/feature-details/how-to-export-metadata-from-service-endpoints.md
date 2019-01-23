@@ -1,19 +1,19 @@
 ---
-title: '방법: 서비스 끝점에서 메타데이터 내보내기'
+title: '방법: 서비스 끝점에서 메타 데이터 내보내기'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b6c4dfd0-f270-43ec-961a-e16eb6af2f2c
-ms.openlocfilehash: 9235498956f53d69b3024d1db023f3eb0908d2aa
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 86ad062f7b7ee3dd2927f8b5b103adfd719a963d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33491545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54529996"
 ---
-# <a name="how-to-export-metadata-from-service-endpoints"></a>방법: 서비스 끝점에서 메타데이터 내보내기
-이 항목에서는 서비스 끝점으로부터 메타데이터를 내보내는 방법에 대해 설명합니다.  
+# <a name="how-to-export-metadata-from-service-endpoints"></a>방법: 서비스 끝점에서 메타 데이터 내보내기
+이 항목에서는 서비스 엔드포인트로부터 메타데이터를 내보내는 방법에 대해 설명합니다.  
   
 ### <a name="to-export-metadata-from-service-endpoints"></a>서비스 끝점에서 메타데이터를 내보내려면  
   
@@ -34,7 +34,7 @@ ms.locfileid: "33491545"
      [!code-csharp[S_UEWsdlExporter#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_uewsdlexporter/cs/program.cs#3)]
      [!code-vb[S_UEWsdlExporter#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdlexporter/vb/program.vb#3)]  
   
-5.  각 서비스 끝점의 메타데이터를 내보냅니다.  
+5.  각 서비스 엔드포인트의 메타데이터를 내보냅니다.  
   
      [!code-csharp[S_UEWsdlExporter#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_uewsdlexporter/cs/program.cs#4)]
      [!code-vb[S_UEWsdlExporter#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdlexporter/vb/program.vb#4)]  
@@ -55,7 +55,7 @@ ms.locfileid: "33491545"
 ## <a name="compiling-the-code"></a>코드 컴파일  
  Program.cs를 컴파일할 때에는 System.ServiceModel.dll을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 아키텍처 개요](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)  
- [메타데이터 사용](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [끝점: 주소, 바인딩 및 계약](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 아키텍처 개요](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)
+- [메타데이터 사용](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [끝점: 주소, 바인딩 및 계약](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

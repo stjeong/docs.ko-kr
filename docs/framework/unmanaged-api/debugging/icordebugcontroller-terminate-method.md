@@ -17,18 +17,18 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c7a95f09d1baebed65bae994550431d88ba0dfc9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 362ae813846ab31f170ae49288735996eb1e9555
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33412473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54531761"
 ---
 # <a name="icordebugcontrollerterminate-method"></a>ICorDebugController::Terminate 메서드
-지정된 된 종료 코드가 사용 하 여 프로세스를 종료합니다.  
+지정된 된 종료 코드를 사용 하 여 프로세스를 종료합니다.  
   
 > [!NOTE]
->  이 메서드는 Win32에 대 한 래퍼 `TerminateProcess` 함수입니다. 따라서 `Terminate` 종료 코드를 사용 하 여 동일한 방식으로 Win32 `TerminateProcess` 함수를 사용 합니다.  
+>  이 메서드는 Win32에 대 한 래퍼 `TerminateProcess` 함수입니다. 따라서 `Terminate` 종료 코드를 사용 하 여 동일한 방식으로 Win32 `TerminateProcess` 함수 사용 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,22 +40,22 @@ HRESULT Terminate (
   
 #### <a name="parameters"></a>매개 변수  
  `exitCode`  
- [in] 종료 코드는 숫자 값입니다. 유효한 숫자 값은 Winbase.h에 정의 됩니다.  
+ [in] 종료 코드는 숫자 값입니다. 유효한 숫자 값 Winbase.h에 정의 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 프로세스가 시기를 중지 하는 경우 `Terminate` 는 호출 프로세스는 계속 진행 해야를 사용 하 여는 [icordebugcontroller:: Continue](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md) 메서드 디버거를 통해 종료에 대 한 확인을 받을 수 있도록는 [ Icordebugmanagedcallback:: Exitprocess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitprocess-method.md) 또는 [icordebugmanagedcallback:: Exitappdomain](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitappdomain-method.md) 콜백 합니다.  
+ 프로세스를 중지 될 때 `Terminate` 는 호출 프로세스는 계속 사용 하 여는 [icordebugcontroller:: Continue](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md) 메서드 디버거를 통해 종료에 대 한 확인을 받을 수 있도록는 [ Icordebugmanagedcallback:: Exitprocess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitprocess-method.md) 나 [icordebugmanagedcallback:: Exitappdomain](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitappdomain-method.md) 콜백 합니다.  
   
 > [!NOTE]
->  이 메서드는 응용 프로그램 도메인에서 구현 되지 않았습니다. 즉,에서 구현 되지 않음는 <xref:System.AppDomain> 수준입니다.  
+>  이 메서드는 응용 프로그램 도메인 별로 구현 되지 않았습니다. 즉,에서 구현 되지 않습니다는 <xref:System.AppDomain> 수준입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- 
+## <a name="see-also"></a>참고자료
+

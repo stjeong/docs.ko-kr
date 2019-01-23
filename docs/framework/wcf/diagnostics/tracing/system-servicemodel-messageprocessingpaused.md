@@ -2,12 +2,12 @@
 title: System.ServiceModel.MessageProcessingPaused
 ms.date: 03/30/2017
 ms.assetid: 36b5302a-93cc-478a-9bb2-8a1601fba1df
-ms.openlocfilehash: 6fb1463b811d985f54b9a99e59d1280eaa040256
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ba067303d861bbd7d88c67f6fd868bd808e07dfd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33482816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54528682"
 ---
 # <a name="systemservicemodelmessageprocessingpaused"></a>System.ServiceModel.MessageProcessingPaused
 System.ServiceModel.MessageProcessingPaused  
@@ -23,7 +23,7 @@ System.ServiceModel.MessageProcessingPaused
   
 -   현재 동기화 컨텍스트가 아닙니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [추적을 사용하여 응용 프로그램 문제 해결](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)
+## <a name="see-also"></a>참고자료
+- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [추적을 사용하여 애플리케이션 문제 해결](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)

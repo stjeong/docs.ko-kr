@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b6a217e2212bb900d7ba83ccdd9cb00d30454baf
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 9086cff38e0232d6054d6b1f590be6d8d76ed1af
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45749650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54527374"
 ---
 # <a name="loadtypelibwithresolver-function"></a>LoadTypeLibWithResolver 함수
 형식 라이브러리를 로드 하 고 제공 된 사용 [ITypeLibResolver 인터페이스](../../../../docs/framework/unmanaged-api/tlbexp/itypelibresolver-interface.md) 내부적으로 참조 된 형식 라이브러리를 해결 하려면.  
@@ -45,9 +45,9 @@ HRESULT LoadTypeLibWithResolver(
   
 -   `REGKIND_DEFAULT`: 기본 등록 동작을 사용 합니다.  
   
--   `REGKIND_REGISTER`:이 형식 라이브러리를 등록 합니다.  
+-   `REGKIND_REGISTER`: 이 형식 라이브러리를 등록 합니다.  
   
--   `REGKIND_NONE`:이 형식 라이브러리를 등록 하지 마십시오.  
+-   `REGKIND_NONE`: 이 형식 라이브러리를 등록 하지 마십시오.  
   
  `pTlbResolver`  
  [in] 구현에 대 한 포인터를 [ITypeLibResolver 인터페이스](../../../../docs/framework/unmanaged-api/tlbexp/itypelibresolver-interface.md)합니다.  
@@ -63,7 +63,7 @@ HRESULT LoadTypeLibWithResolver(
 |`S_OK`|명령 실행 성공|  
 |`E_OUTOFMEMORY`|메모리가 부족합니다.|  
 |`E_POINTER`|포인터 중 하나 이상이 올바르지 않습니다.|  
-|`E_INVALIDARG`|인수 중 하나 이상이 올바르지 않습니다.|  
+|`E_INVALIDARG`|하나 이상의 인수가 잘못되었습니다.|  
 |`TYPE_E_IOERROR`|함수는 파일에 쓰지 못했습니다.|  
 |`TYPE_E_REGISTRYACCESS`|시스템 등록 데이터베이스를 열 수 없습니다.|  
 |`TYPE_E_INVALIDSTATE`|형식 라이브러리를 열 수 없습니다.|  
@@ -85,7 +85,7 @@ HRESULT LoadTypeLibWithResolver(
  호출 하는 경우 `LoadTypeLibWithResolver` 를 직접 제공 해야 사용자 고유의 [ITypeLibResolver 인터페이스](../../../../docs/framework/unmanaged-api/tlbexp/itypelibresolver-interface.md) 구현 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** TlbRef.h  
   
@@ -93,6 +93,6 @@ HRESULT LoadTypeLibWithResolver(
   
  **.NET framework 버전:** 3.5, 3.0, 2.0  
   
-## <a name="see-also"></a>참고 항목  
- [Tlbexp 도우미 함수](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx 함수](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+## <a name="see-also"></a>참고자료
+- [Tlbexp 도우미 함수](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [LoadTypeLibEx 함수](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

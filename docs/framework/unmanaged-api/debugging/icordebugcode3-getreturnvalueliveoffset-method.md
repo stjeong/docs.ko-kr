@@ -19,15 +19,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7c75db784a404298b86ed42692573a509ea56cf9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: df50a4f5b0bdd0c1e70d7c47fe115f4a28b9bbc2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33415531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54526446"
 ---
 # <a name="icordebugcode3getreturnvalueliveoffset-method"></a>ICorDebugCode3::GetReturnValueLiveOffset 메서드
-지정된 된 IL 오프셋에 대 한 디버거 함수에서 반환 값을 가져올 수 있도록 중단점을 배치할 위치 네이티브 오프셋을 가져옵니다.  
+지정된 된 IL 오프셋에 대 한 디버거 함수에서 반환 값을 얻을 수 있도록 중단점을 배치할 위치 네이티브 오프셋을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,42 +42,42 @@ HRESULT GetReturnValueLiveOffset(
   
 #### <a name="parameters"></a>매개 변수  
  `ILoffset`  
- IL 오프셋입니다. 함수 호출 사이트 여야 합니다. 또는 함수 호출에 실패 합니다.  
+ IL 오프셋입니다. 함수 호출 사이트 여야 합니다 또는 함수 호출이 실패 합니다.  
   
  `bufferSize`  
  저장할 수 있는 바이트 수가 `pOffsets`합니다.  
   
  `pFetched`  
- 실제로 반환 된 오프셋의 수에 대 한 포인터입니다. 일반적으로 해당 값은 1이 있지만 단일 IL 명령 배수로 매핑할 수 `CALL` 어셈블리 명령입니다.  
+ 실제로 반환 된 오프셋 수에 대 한 포인터입니다. 일반적으로 해당 값은 1 이지만 단일 IL 지침은 여러 매핑할 수 있습니다 `CALL` 어셈블리 명령입니다.  
   
  `pOffsets`  
- 배열 네이티브 오프셋입니다. 일반적으로 `pOffsets` 단일 IL 명령 배수로 여러 지도에 매핑할 수 있지만 단일 오프셋을 포함 `CALL` 어셈블리 명령입니다.  
+ 네이티브 오프셋의 배열입니다. 일반적으로 `pOffsets` 단일 IL 지침은 여러 여러 맵을 매핑할 수 있지만 단일 오프셋이 포함 `CALL` 어셈블리 명령입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는와 함께 사용 되는 [icordebugilframe3:: Getreturnvalueforiloffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) 참조 형식을 반환 하는 메서드의 반환 값을 가져오는 메서드를 합니다. 이 메서드를 함수 호출 사이트에 대 한 오프셋 IL 전달 하나 이상의 네이티브 오프셋을 반환 합니다. 다음 디버거 함수에서 네이티브 이러한 오프셋에서 중단점을 설정할 수 있습니다. 디버거는 중단점에 도달 하는 경우에 전달할 수 있습니다를이 메서드에 전달 된 IL 오프셋은 동일는 [icordebugilframe3:: Getreturnvalueforiloffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) 메서드 반환 값을 가져옵니다. 디버거는 모든 중단점을 설정 하는 것을 선택을 취소 한 다음 됩니다.  
+ 이 메서드는 함께 사용 합니다 [ICorDebugILFrame3::GetReturnValueForILOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) 참조 형식을 반환 하는 메서드의 반환 값을 가져오는 방법입니다. 이 메서드는 함수 호출 사이트에 대 한 오프셋 IL 전달 하나 이상의 네이티브 오프셋을 반환 합니다. 디버거는 함수의 이러한 네이티브 오프셋에서 중단점을 설정할 수 있습니다. 디버거가 중단점 중 하나에 도달 하면 전달 하면이 메서드를 전달 하는 동일한 IL 오프셋 합니다 [ICorDebugILFrame3::GetReturnValueForILOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) 반환 값을 가져오는 방법입니다. 디버거가 모든 중단점을 설정 하는 것을 지워야 합니다.  
   
 > [!WARNING]
->  `ICorDebugCode3::GetReturnValueLiveOffset` 및 [icordebugilframe3:: Getreturnvalueforiloffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) 방법을 사용 하는 참조 형식만 대 한 반환 값 정보를 얻을 수 있습니다. 값 형식에서의 반환 값 정보 검색 (에서 파생 되는 모든 형식 즉, <xref:System.ValueType>) 지원 되지 않습니다.  
+>  합니다 `ICorDebugCode3::GetReturnValueLiveOffset` 및 [ICorDebugILFrame3::GetReturnValueForILOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) 메서드 참조 형식만 대 한 반환 값 정보를 가져올 수 있습니다. 값 형식에서 반환 값 정보 검색 (에서 파생 되는 모든 형식 즉, <xref:System.ValueType>) 지원 되지 않습니다.  
   
- 함수 반환은 `HRESULT` 다음 표에 표시 된 값입니다.  
+ 반환 된 `HRESULT` 다음 표에 나와 있는 값입니다.  
   
 |`HRESULT` 값|설명|  
 |---------------------|-----------------|  
 |`S_OK`|명령 실행 성공|  
-|`CORDBG_E_INVALID_OPCODE`|지정된 된 IL 오프셋된 사이트 호출 명령을 이거나 함수 반환 `void`합니다.|  
-|`CORDBG_E_UNSUPPORTED`|지정된 된 IL 오프셋은 적절 한 호출 하지만 반환 형식을 반환 값을 가져오기 위한 지원 되지 않습니다.|  
+|`CORDBG_E_INVALID_OPCODE`|지정된 된 IL 오프셋된 사이트 호출 명령이 아니거나 함수가 반환 `void`합니다.|  
+|`CORDBG_E_UNSUPPORTED`|지정된 된 IL 오프셋은 적절 한 호출 이지만 반환 형식은 반환 값 가져오기에 대 한 지원 되지 않습니다.|  
   
- `ICorDebugCode3::GetReturnValueLiveOffset` 메서드는 x86 기반에 대해서만 사용할 수 및 AMD64 시스템.  
+ `ICorDebugCode3::GetReturnValueLiveOffset` 메서드는 x86 기반 및 AMD64 시스템입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [GetReturnValueForILOffset 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md)  
- [ICorDebugCode3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
+## <a name="see-also"></a>참고자료
+- [GetReturnValueForILOffset 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md)
+- [ICorDebugCode3 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)

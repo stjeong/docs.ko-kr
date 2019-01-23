@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID430
 ms.assetid: d985bb7e-e48e-443e-86f2-ddb86758757c
-ms.openlocfilehash: 860c472794495ef2be37aea7c7d8305c237dfd13
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d5b47b39742a995be6076ddc0edc17f1ec94dade
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33585676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534170"
 ---
 # <a name="class-does-not-support-automation-or-does-not-support-expected-interface"></a>클래스가 자동화를 지원하지 않거나 필요한 인터페이스를 지원하지 않습니다.
 `GetObject` 또는 `CreateObject` 함수 호출에서 지정한 클래스가 프로그래밍 기능 인터페이스를 표시하지 않았거나 프로젝트를 .dll과 .exe 간에 변경했습니다.  
@@ -20,6 +20,6 @@ ms.locfileid: "33585676"
   
 2.  프로젝트를 .dll과 .exe 간에 변경한 경우에는 이전 .dll 또는 .exe의 등록을 수동으로 취소해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [오류 형식](../../../visual-basic/programming-guide/language-features/error-types.md)  
- [의견 보내기](/visualstudio/ide/talk-to-us)
+## <a name="see-also"></a>참고자료
+- [오류 형식](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [의견 보내기](/visualstudio/ide/talk-to-us)

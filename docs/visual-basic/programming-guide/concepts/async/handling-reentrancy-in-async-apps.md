@@ -2,12 +2,12 @@
 title: Async (Visual Basic) 앱에서 재입력 처리
 ms.date: 07/20/2015
 ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe
-ms.openlocfilehash: 3cbdd5ddc6f742846542e508d1dc0165cd6fde22
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6187b3a519da2930136aab8df9451f757079c2a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535621"
 ---
 # <a name="handling-reentrancy-in-async-apps-visual-basic"></a>Async (Visual Basic) 앱에서 재입력 처리
 앱에 비동기 코드를 포함하는 경우 완료되기 전에 비동기 작업을 다시 입력하는 것을 나타내는 재입력을 고려하고 방지할 수 있어야 합니다. 재입력 가능성을 식별하고 처리하지 못하면 예기치 않은 결과가 발생할 수 있습니다.  
@@ -104,7 +104,7 @@ TOTAL bytes returned:  890591
 ###  <a name="BKMK_DisableTheStartButton"></a> 시작 단추 사용 안 함  
  `StartButton_Click` 이벤트 처리기의 위쪽에 있는 단추를 사용하지 않도록 설정하여 작업이 실행되는 동안 **시작** 단추를 차단할 수 있습니다. 그런 다음 작업이 완료되면 `Finally` 블록 내에서 단추를 다시 사용하도록 설정하여 사용자가 앱을 다시 실행하도록 할 수 있습니다.  
   
- 다음 코드에서는 이러한 변경 내용을 보여 주며, 별표로 표시되어 있습니다. 변경 내용을 이 항목의 끝에 있는 코드에 추가하거나 완성된 앱을 [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06)(비동기 샘플: .NET 데스크톱 앱의 재입력)에서 다운로드할 수 있습니다. 프로젝트 이름은 DisableStartButton입니다.  
+ 다음 코드에서는 이러한 변경 내용을 보여 주며, 별표로 표시되어 있습니다. 이 항목의 끝에 있는 코드에 변경 내용을 추가 하거나에서 완성된 된 앱을 다운로드할 수 있습니다 [Async 샘플: .NET 데스크톱 앱의 재입력](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06)합니다. 프로젝트 이름은 DisableStartButton입니다.  
   
 ```vb  
 Private Async Sub StartButton_Click(sender As Object, e As RoutedEventArgs)  
@@ -134,7 +134,7 @@ End Sub
   
  취소에 대 한 자세한 내용은 참조 하세요. [미세 조정 Your 비동기 응용 프로그램 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)합니다.  
   
- 이 시나리오를 설정하려면 [예제 앱 검토 및 실행](#BKMD_SettingUpTheExample)에서 제공하는 기본 코드를 다음과 같이 변경합니다. [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06)(비동기 샘플: .NET 데스크톱 앱의 재입력)에서 완성된 앱을 다운로드할 수도 있습니다. 이 프로젝트의 이름은 CancelAndRestart입니다.  
+ 이 시나리오를 설정하려면 [예제 앱 검토 및 실행](#BKMD_SettingUpTheExample)에서 제공하는 기본 코드를 다음과 같이 변경합니다. 완성된 된 앱에서 다운로드할 수 있습니다 [Async 샘플: .NET 데스크톱 앱의 재입력](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06)합니다. 이 프로젝트의 이름은 CancelAndRestart입니다.  
   
 1.  모든 메서드에 대한 범위 내에 있는 <xref:System.Threading.CancellationTokenSource> 변수 `cts`를 선언합니다.  
   
@@ -311,7 +311,7 @@ TOTAL bytes returned:  918876
 #Group A is complete.  
 ```  
   
- 사용자가 **시작** 단추를 세 번 선택하면 앱이 다음 줄과 유사한 출력을 생성합니다. 파운드 기호(#)로 시작하는 정보 줄은 응용 프로그램의 진행률을 추적합니다.  
+ 사용자가 **시작** 단추를 세 번 선택하면 앱이 다음 줄과 유사한 출력을 생성합니다. 파운드 기호(#)로 시작하는 정보 줄은 애플리케이션의 진행률을 추적합니다.  
   
 ```  
 #Starting group A.  
@@ -535,7 +535,7 @@ End Function
   
 ###  <a name="BKMK_DownloadingTheApp"></a> 앱 다운로드  
   
-1.  [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06)(비동기 샘플: .NET 데스크톱 앱의 재입력)에서 압축 파일을 다운로드합니다.  
+1.  압축 된 파일을 다운로드 [Async 샘플: .NET 데스크톱 앱의 재입력](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06)합니다.  
   
 2.  다운로드한 파일의 압축을 푼 다음 Visual Studio를 시작합니다.  
   
@@ -560,7 +560,7 @@ End Function
   
 3.  에 **설치 된 템플릿** 창 확장 **Visual Basic**를 차례로 확장 **Windows**합니다.  
   
-4.  프로젝트 형식 목록에서 **WPF 응용 프로그램**을 선택합니다.  
+4.  프로젝트 형식 목록에서 **WPF 애플리케이션**을 선택합니다.  
   
 5.  프로젝트 이름을 `WebsiteDownloadWPF`로 지정한 다음 **확인** 단추를 선택합니다.  
   
@@ -678,5 +678,5 @@ End Function
   
 ## <a name="see-also"></a>참고자료
 
-- [연습: Async 및 Await를 사용하여 웹에 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
+- [연습: 비동기를 사용 하 여 웹 서비스에 액세스 하 고 Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Async 및 Await를 사용한 비동기 프로그래밍(Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)

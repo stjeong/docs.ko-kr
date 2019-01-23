@@ -2,12 +2,12 @@
 title: Null 리터럴 및 형식 유추(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: edd56afb-af1b-4e7d-b210-cb8998143426
-ms.openlocfilehash: 74ff2b459488f896c5ea6af4f7d1e045da5a7983
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 2499579237155ff3f7291f795bd1ce9e8a84163c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54529111"
 ---
 # <a name="null-literals-and-type-inference-entity-sql"></a>Null 리터럴 및 형식 유추(Entity SQL)
 null 리터럴은 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 형식 시스템의 모든 형식과 호환됩니다. 하지만 null 리터럴의 형식을 올바르게 유추할 수 있도록 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 null 리터럴을 사용할 수 있는 위치에 대한 특정 제약 조건을 설정합니다.  
@@ -40,5 +40,5 @@ null 리터럴은 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 형식
   
  다른 시나리오에서는 자유 부동 null 리터럴을 사용할 수 없습니다. 예를 들어, 자유 부동 null 리터럴을 행 생성자의 인수로서 사용할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## <a name="see-also"></a>참고자료
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

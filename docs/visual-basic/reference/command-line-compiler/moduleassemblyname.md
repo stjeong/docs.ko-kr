@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /moduleassemblyname compiler option [Visual Basic]
 - -moduleassemblyname compiler option [Visual Basic]
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
-ms.openlocfilehash: 92fd068ef0ff892c8b76396edbf1d532a36e338c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 35519be6ddaed64b3e5e2129efb611e0a812ebc3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50189513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535180"
 ---
 # <a name="-moduleassemblyname"></a>-moduleassemblyname
 이 모듈이 속할 어셈블리의 이름을 지정합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "50189513"
   
 |용어|정의|  
 |---|---|  
-|`assembly_name`|이 모듈에 포함 될 어셈블리의 이름입니다.|  
+|`assembly_name`|이 모듈이 속하게 될 어셈블리의 이름입니다.|  
   
 ## <a name="remarks"></a>설명  
  컴파일러 프로세스를 `-moduleassemblyname` 경우에만 옵션을 `-target:module` 옵션이 지정 되었습니다. 이렇게 하면 컴파일러는 모듈을 만듭니다. 컴파일러에서 생성 된 모듈은 지정 된 어셈블리에만 유효 합니다 `-moduleassemblyname` 옵션입니다. 다른 어셈블리에 모듈을 배치 하는 경우 런타임 오류가 발생 합니다.  
@@ -42,13 +42,13 @@ ms.locfileid: "50189513"
 > [!NOTE]
 >  `-moduleassemblyname` 옵션은 Visual Studio 개발 환경 내에서 사용할 수 없는 경우 즉, 사용할 수 있는 명령 프롬프트에서 컴파일할 때만 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 다중 파일 어셈블리 빌드](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [-main](../../../visual-basic/reference/command-line-compiler/main.md)  
- [-참조 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Friend 어셈블리](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+## <a name="see-also"></a>참고자료
+- [방법: 다중 파일 어셈블리 빌드](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [-main](../../../visual-basic/reference/command-line-compiler/main.md)
+- [-참조 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)
+- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Friend 어셈블리](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)

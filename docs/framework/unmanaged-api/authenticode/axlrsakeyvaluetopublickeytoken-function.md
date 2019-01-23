@@ -10,12 +10,12 @@ api_type:
 ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e09391af9b5d71cfa423b3bf1a2b307117d0dee1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2a340af9ba196dbcd8618afdd83bcf7e56124bf7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517600"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54529910"
 ---
 # <a name="axlrsakeyvaluetopublickeytoken-function"></a>\_AxlRSAKeyValueToPublicKeyToken 함수
 
@@ -44,5 +44,5 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 ## <a name="return-value"></a>반환 값  
  함수가 정상적으로 실행되는 경우 `S_OK`입니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## <a name="see-also"></a>참고자료
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

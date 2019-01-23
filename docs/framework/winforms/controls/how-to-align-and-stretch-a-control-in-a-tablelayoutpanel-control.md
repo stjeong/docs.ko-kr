@@ -1,5 +1,5 @@
 ---
-title: '방법: TableLayoutPanel 컨트롤의 컨트롤 맞춤 및 늘이기'
+title: '방법: 에서 맞춤 및 늘이기 컨트롤을 TableLayoutPanel 컨트롤'
 ms.date: 03/30/2017
 f1_keywords:
 - net.ComponentModel.StyleCollectionEditor.TLP.AlignStretchCtrl
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - controls [Windows Forms], stretching
 - controls [Windows Forms], aligning
 ms.assetid: 7dc1a157-6fee-4995-8ebc-b65bdc0909a8
-ms.openlocfilehash: 06e152058337955164bd526e20e023d759340f01
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 91464108a6ac4600c14a06b4a7dcea200d7f0254
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54535933"
 ---
-# <a name="how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control"></a>방법: TableLayoutPanel 컨트롤의 컨트롤 맞춤 및 늘이기
+# <a name="how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control"></a>방법: 에서 맞춤 및 늘이기 컨트롤을 TableLayoutPanel 컨트롤
 정렬 하는 컨트롤에서 stretch를 <xref:System.Windows.Forms.TableLayoutPanel> 사용 하 여를 <xref:System.Windows.Forms.Control.Anchor%2A> 및 <xref:System.Windows.Forms.Control.Dock%2A> 속성.  
   
 > [!NOTE]
@@ -23,7 +23,7 @@ ms.locfileid: "43504155"
   
 ### <a name="to-align-and-stretch-a-control"></a>맞춤 및 늘이기를 제어 하려면  
   
-1.  끌어서를 <xref:System.Windows.Forms.TableLayoutPanel> 에서 제어 합니다 **도구 상자** 폼입니다.  
+1.  <xref:System.Windows.Forms.TableLayoutPanel> 도구 상자 **에서** 컨트롤을 폼으로 끌어다 놓습니다.  
   
 2.  끌어서를 <xref:System.Windows.Forms.Button> 에서 제어 합니다 **도구 상자** 의 왼쪽 위 셀에는 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤입니다. <xref:System.Windows.Forms.Button> 중앙 제어 셀에 배치 됩니다.  
   
@@ -39,5 +39,5 @@ ms.locfileid: "43504155"
   
 8.  값을 설정 합니다 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성을 <xref:System.Windows.Forms.AnchorStyles.None>입니다. <xref:System.Windows.Forms.Button> 셀의 가운데에 컨트롤은 이동 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [TableLayoutPanel 컨트롤](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- [TableLayoutPanel 컨트롤](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-windows-forms.md)

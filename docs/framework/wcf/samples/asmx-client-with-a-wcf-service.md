@@ -2,12 +2,12 @@
 title: WCF 서비스를 사용한 ASMX 클라이언트
 ms.date: 03/30/2017
 ms.assetid: 3ea381ee-ac7d-4d62-8c6c-12dc3650879f
-ms.openlocfilehash: 8b8ebebbcb2c95555605ebd1d8e164b8babb7e3e
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: d526bc01d7809aa2672dcfcf194ad9c7d2e7baa5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54527514"
 ---
 # <a name="asmx-client-with-a-wcf-service"></a>WCF 서비스를 사용한 ASMX 클라이언트
 이 샘플에는 Windows Communication Foundation (WCF)를 사용 하는 서비스를 만들고 다음 ASMX 클라이언트와 같은 비 WCF 클라이언트에서 서비스에 액세스 하는 방법을 보여 줍니다.  
@@ -138,7 +138,7 @@ Press <ENTER> to terminate client.
 3.  단일 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
 > [!NOTE]
->  전달 하 고 복잡 한 데이터를 반환 하는 방법에 대 한 자세한 내용은 참조: [Windows Forms 클라이언트의 데이터 바인딩](../../../../docs/framework/wcf/samples/data-binding-in-a-windows-forms-client.md)하십시오 [Windows Presentation Foundation 클라이언트에서 데이터 바인딩](../../../../docs/framework/wcf/samples/data-binding-in-a-wpf-client.md), 및 [데이터 ASP.NET 클라이언트에서 바인딩](../../../../docs/framework/wcf/samples/data-binding-in-an-aspnet-client.md)  
+>  형식 전달 하 고 복잡 한 데이터를 반환 하는 방법에 대 한 자세한 내용은 다음을 참조 하세요. [데이터 바인딩을 Windows Forms 클라이언트](../../../../docs/framework/wcf/samples/data-binding-in-a-windows-forms-client.md), [Windows Presentation Foundation 클라이언트에서 데이터 바인딩을](../../../../docs/framework/wcf/samples/data-binding-in-a-wpf-client.md), 및 [ASP.NET 클라이언트에서 데이터 바인딩](../../../../docs/framework/wcf/samples/data-binding-in-an-aspnet-client.md)  
   
 > [!IMPORTANT]
 >  컴퓨터에 이 샘플이 이미 설치되어 있을 수도 있습니다. 계속하기 전에 다음(기본) 디렉터리를 확인하세요.  
@@ -149,4 +149,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\ASMX`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

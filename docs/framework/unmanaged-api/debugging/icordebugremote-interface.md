@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ab8ed5c4fa3dc0ed77c1948aa6c1b940ecc25c14
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5cb7a3100e1f0839b50e0430c16a02879f1b8988
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33421453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54553479"
 ---
 # <a name="icordebugremote-interface"></a>ICorDebugRemote 인터페이스
 시작할 수 있거나 원격 대상 프로세스에 관리되는 디버거를 연결할 수 있는 기능을 제공합니다.  
@@ -63,13 +63,13 @@ interface ICorDebugRemote : IUnknown
 |메서드|설명|  
 |------------|-----------------|  
 |[ICorDebugRemote::CreateProcessEx 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-createprocessex-method.md)|관리 되는 디버깅에 대 한 원격 컴퓨터에서 프로세스를 만듭니다.|  
-|[ICorDebugRemote::DebugActiveProcessEx 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-debugactiveprocessex-method.md)|디버거에서 원격 컴퓨터에서 프로세스를 시작합니다.|  
+|[ICorDebugRemote::DebugActiveProcessEx 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-debugactiveprocessex-method.md)|디버거에서 원격 컴퓨터의 프로세스를 시작합니다.|  
   
 ## <a name="remarks"></a>설명  
- 현재이 기능은 원격 Macintosh 컴퓨터에서 실행 되는 Silverlight 기반 응용 프로그램 대상 디버깅에 대해서만 지원 됩니다.  
+ 현재,이 기능은 원격 Macintosh 컴퓨터에서 실행 되는 Silverlight 기반 응용 프로그램 대상 디버깅에 대해서만 지원 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
@@ -77,8 +77,8 @@ interface ICorDebugRemote : IUnknown
   
  **.NET framework 버전:** 4.5, 4, 3.5 SP1  
   
-## <a name="see-also"></a>참고 항목  
- [ICorDebugRemoteTarget 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)  
- [ICorDebug 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
-    
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [ICorDebugRemoteTarget 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
+- [ICorDebug 인터페이스](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

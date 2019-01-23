@@ -2,12 +2,12 @@
 title: SqlClient 스트리밍 지원
 ms.date: 03/30/2017
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-ms.openlocfilehash: eeec8f2a88894762fd8dab93bf0b3b11941ba17a
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 5d376a29646ce7ca391637522de7878853e7d5a8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555429"
 ---
 # <a name="sqlclient-streaming-support"></a>SqlClient 스트리밍 지원
 SQL Server 및 응용 프로그램 간의 스트리밍 지원 (새로운 기능 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]) 서버 (문서, 이미지 및 미디어 파일)에서 구조화 되지 않은 데이터를 지원 합니다. SQL Server 데이터베이스를 binary large object (Blob)를 저장할 수 있지만 BLOB를 검색 하는 많은 양의 메모리를 사용할 수 있습니다.  
@@ -516,5 +516,5 @@ namespace StreamingFromServerToAnother {
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+## <a name="see-also"></a>참고자료
+- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)

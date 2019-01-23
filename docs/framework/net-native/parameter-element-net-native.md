@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a5c72919327c1186f5758f03680ff68037da3632
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e1c2cb79948f5bd762a0cd1b9fd83fd420a5821e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54537181"
 ---
 # <a name="ltparametergt-element-net-native"></a>&lt;매개 변수&gt; 요소(.NET 네이티브)
 메서드에 전달된 인수의 형식에 리플렉션 정책을 적용합니다.  
@@ -73,8 +73,8 @@ ms.locfileid: "33395247"
 ## <a name="remarks"></a>설명  
  `<Parameter>` 요소는 [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) 요소의 자식이며 특정 메서드 매개 변수에 정책을 적용하는 데 사용됩니다. 특정 메서드 매개 변수는 형식이 아닌 이름으로 지정됩니다. 정책 형식을 나타내는 `Activate` 또는 `Dynamic`과 같은 특성이 하나 이상 있어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [\<Method> 요소](../../../docs/framework/net-native/method-element-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+## <a name="see-also"></a>참고자료
+- [\<Method> 요소](../../../docs/framework/net-native/method-element-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)

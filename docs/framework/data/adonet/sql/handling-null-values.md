@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
-ms.openlocfilehash: 039a6f5aab2f1b857f98803f8b3d6425cc549877
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: cd3a9cd8cf7862bfa3128b81f5ecf6d380e20c32
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554688"
 ---
 # <a name="handling-null-values"></a>Null 값 처리
 관계형 데이터베이스에서 null 값은 열의 값이 없거나 알 수 없을 때 사용됩니다. null은 빈 문자열(문자 또는 datetime 데이터 형식의 경우)도 아니고 0 값(숫자 데이터 형식의 경우)도 아닙니다. ANSI SQL-92 사양에서는 모든 null이 일관성 있게 처리되도록 모든 데이터 형식에 대해 null이 동일해야 함을 규정하고 있습니다. <xref:System.Data.SqlTypes> 네임스페이스에서는 <xref:System.Data.SqlTypes.INullable> 인터페이스를 구현함으로써 null 의미 체계를 제공합니다. <xref:System.Data.SqlTypes>의 각 데이터 형식마다 해당 데이터 형식의 인스턴스에 할당할 수 있는 고유의 `IsNull` 속성과 `Null` 값이 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "43486043"
 ## <a name="nulls-and-sqlboolean"></a>Null과 SqlBoolean  
  모든 <xref:System.Data.SqlTypes> 간의 비교는 <xref:System.Data.SqlTypes.SqlBoolean>을 반환합니다. 각 `IsNull`의 `SqlType` 함수는 <xref:System.Data.SqlTypes.SqlBoolean>을 반환하며 null 값을 검사하는 데 사용할 수 있습니다. 다음 진위표는 AND, OR 및 NOT 연산자가 null 값이 있을 때 어떻게 작용하는지 보여 줍니다. (T=true, F=false, U=unknown 또는 null)  
   
- ![진리표](../../../../../docs/framework/data/adonet/sql/media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
+ ![Truth Table](../../../../../docs/framework/data/adonet/sql/media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
   
 ### <a name="understanding-the-ansinulls-option"></a>ANSI_NULLS 옵션 이해  
  <xref:System.Data.SqlTypes>는 SQL Server에서 ANSI_NULLS 옵션이 설정되어 있을 때와 동일한 의미 체계를 제공합니다. 모든 산술 연산자 (+,-, *, /, %), 비트 연산자 (~, &, &#124;), 대부분의 함수는 피연산자 또는 인수 중 하나라도 null 인 속성을 제외 하 고 null을 반환할 `IsNull`합니다.  
@@ -141,6 +141,6 @@ String.Equals instance method:
   Two empty strings=True   
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 데이터 형식 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server 데이터 형식 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

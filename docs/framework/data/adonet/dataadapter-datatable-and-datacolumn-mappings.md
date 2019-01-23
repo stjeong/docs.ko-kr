@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d023260a-a66a-4c39-b8f4-090cd130e730
-ms.openlocfilehash: 9f33ae085bef2b611d1ce95bed1b26f9101a10b9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6aaaa126a0b19300abc2c10b88b0e4ff39a3ad66
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43505244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54530435"
 ---
 # <a name="dataadapter-datatable-and-datacolumn-mappings"></a>DataAdapter DataTable 및 DataColumn 매핑
 A **DataAdapter** 0 개 이상의 컬렉션을 포함 <xref:System.Data.Common.DataTableMapping> 개체에 해당 **TableMappings** 속성입니다. A **DataTableMapping** 데이터 원본에 대해 쿼리에서 반환 된 데이터 간의 마스터 매핑을 제공 및 <xref:System.Data.DataTable>합니다. **DataTableMapping** 이름 자리에 전달 될 수 있습니다를 **DataTable** 이름를 **채우기** 메서드를 **DataAdapter**합니다. 다음 예에서는 **DataTableMapping** 라는 **AuthorsMapping** 에 대 한 합니다 **작성자** 테이블입니다.  
@@ -90,14 +90,14 @@ adapter.Fill(custDS, "Customers");
 adapter.Fill(customersDataSet, "Customers")  
 ```  
   
- 두 개의 테이블이 만들어집니다 합니다 **데이터 집합**: **고객** 하 고 **Customers1**합니다. 테이블 매핑을 사용 하 여 두 번째 테이블은 이름이 되도록 **주문을** of **Customers1**합니다. 이 작업을 수행 하려면 원본 테이블의를 매핑합니다 **Customers1** 에 **데이터 집합** 테이블 **주문**다음 예제에서와 같이 합니다.  
+ 만들어진 두 개의 테이블을 **데이터 집합**: **고객이** 하 고 **Customers1**합니다. 테이블 매핑을 사용 하 여 두 번째 테이블은 이름이 되도록 **주문을** of **Customers1**합니다. 이 작업을 수행 하려면 원본 테이블의를 매핑합니다 **Customers1** 에 **데이터 집합** 테이블 **주문**다음 예제에서와 같이 합니다.  
   
 ```  
 adapter.TableMappings.Add("Customers1", "Orders")  
 adapter.Fill(customersDataSet, "Customers")  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [DataAdapter 및 DataReader](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [DataAdapter 및 DataReader](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

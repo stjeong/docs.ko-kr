@@ -2,12 +2,12 @@
 title: 사용자 지정 특성 (Visual Basic) 만들기
 ms.date: 07/20/2015
 ms.assetid: 5c9ef584-6c7c-496b-92a9-6e42f8d9ca28
-ms.openlocfilehash: 9af0832e04308bf1942fc955afe5a67161096465
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 4bc60e20d163c6aec231152940f548fcb58442f2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33642892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54526355"
 ---
 # <a name="creating-custom-attributes-visual-basic"></a>사용자 지정 특성 (Visual Basic) 만들기
 메타데이터에서 특성 정의를 빠르고 쉽게 식별할 수 있도록 하는 <xref:System.Attribute>에서 직접 또는 간접적으로 파생되는 특성 클래스를 정의하여 자체 사용자 지정 특성을 만들 수 있습니다. 형식을 작성한 프로그래머의 이름을 형식에 태그로 지정한다고 가정합니다. 사용자 지정 `Author` 특성 클래스를 정의할 수 있습니다.  
@@ -62,11 +62,11 @@ End Class
 > [!NOTE]
 >  특성 클래스에 속성이 포함되면 해당 속성은 읽기-쓰기여야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Reflection>  
- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)  
- [사용자 지정 특성 작성](../../../../standard/attributes/writing-custom-attributes.md)  
- [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
- [특성(Visual Basic)](../../../../visual-basic/language-reference/attributes.md)  
- [리플렉션을 사용하여 특성 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
- [AttributeUsage (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Reflection>
+- [Visual Basic 프로그래밍 가이드](../../../../visual-basic/programming-guide/index.md)
+- [사용자 지정 특성 작성](../../../../standard/attributes/writing-custom-attributes.md)
+- [리플렉션(Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
+- [특성(Visual Basic)](../../../../visual-basic/language-reference/attributes.md)
+- [리플렉션을 사용하여 특성 액세스(Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+- [AttributeUsage (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)

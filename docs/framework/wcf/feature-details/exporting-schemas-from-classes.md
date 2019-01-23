@@ -8,12 +8,12 @@ helpviewer_keywords:
 - XsdDataContractExporter class
 - XsdDataContractImporter class
 ms.assetid: bb57b962-70c1-45a9-93d5-e721e340a13f
-ms.openlocfilehash: 9fa123e5532e4c721af5f3ece4feeea92356d1fe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 320d0ab4f90c446632225f3d3aabbfc2767f19a8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33494545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54526966"
 ---
 # <a name="exporting-schemas-from-classes"></a>클래스에서 스키마 내보내기
 데이터 계약 모델에 사용되는 클래스에서 XSD(XML 스키마 정의 언어) 스키마를 생성하려면 <xref:System.Runtime.Serialization.XsdDataContractExporter> 클래스를 사용합니다. 이 항목에서는 스키마를 만드는 프로세스에 대해 설명합니다.  
@@ -43,9 +43,9 @@ ms.locfileid: "33494545"
 ## <a name="export-options"></a>내보내기 옵션  
  <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> 의 <xref:System.Runtime.Serialization.XsdDataContractExporter> 속성을 <xref:System.Runtime.Serialization.ExportOptions> 클래스로 설정하여 내보내기 프로세스의 다양한 측면을 제어할 수 있습니다. 특히 다음 옵션을 설정할 수 있습니다.  
   
--   <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. 이 `Type` 컬렉션은 내보내는 형식의 알려진 형식을 나타냅니다. (자세한 내용은 참조 [데이터 계약 알려진 형식을](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) `Export` 메서드에 전달된 형식 외에도 이러한 알려진 형식이 모든 `Export` 호출 시 내보내집니다.  
+-   <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. 이 `Type` 컬렉션은 내보내는 형식의 알려진 형식을 나타냅니다. (자세한 내용은 [데이터 계약 알려진 형식을](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) `Export` 메서드에 전달된 형식 외에도 이러한 알려진 형식이 모든 `Export` 호출 시 내보내집니다.  
   
--   <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. 이 속성을 통해 내보내기 프로세스를 사용자 지정하는 <xref:System.Runtime.Serialization.IDataContractSurrogate> 를 제공할 수 있습니다. 자세한 내용은 참조 [데이터 계약 서로게이트](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)합니다. 기본적으로 서로게이트는 사용되지 않습니다.  
+-   <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. 이 속성을 통해 내보내기 프로세스를 사용자 지정하는 <xref:System.Runtime.Serialization.IDataContractSurrogate> 를 제공할 수 있습니다. 자세한 내용은 [데이터 계약 서로게이트](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)합니다. 기본적으로 서로게이트는 사용되지 않습니다.  
   
 ## <a name="helper-methods"></a>도우미 메서드  
  스키마를 내보내는 기본 역할 외에도 `XsdDataContractExporter` 는 형식에 대한 정보를 제공하는 몇 가지 유용한 도우미 메서드를 제공합니다. 여기에는 다음이 포함됩니다.  
@@ -58,9 +58,9 @@ ms.locfileid: "33494545"
   
  내보내기 옵션은 이러한 모든 메서드에 영향을 줍니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- <xref:System.Runtime.Serialization.XsdDataContractExporter>  
- [스키마 가져오기 및 내보내기](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- [스키마를 가져와 클래스 생성](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- <xref:System.Runtime.Serialization.XsdDataContractExporter>
+- [스키마 가져오기 및 내보내기](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
+- [스키마를 가져와 클래스 생성](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)

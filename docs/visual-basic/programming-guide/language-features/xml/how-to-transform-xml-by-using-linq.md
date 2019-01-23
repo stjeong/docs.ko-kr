@@ -1,18 +1,18 @@
 ---
-title: '방법: LINQ를 사용하여 XML 변형(Visual Basic)'
+title: '방법: LINQ (Visual Basic)를 사용 하 여 XML 변환'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML [Visual Basic], transforming
 - LINQ to XML [Visual Basic], transforming XML
 ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
-ms.openlocfilehash: 94ad5180c7921a5ace09f9161de5f275475e46d4
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 628af13a4cdea41ade943b69e326ec2d9abcbf1c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42924911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54536349"
 ---
-# <a name="how-to-transform-xml-by-using-linq-visual-basic"></a>방법: LINQ를 사용하여 XML 변형(Visual Basic)
+# <a name="how-to-transform-xml-by-using-linq-visual-basic"></a>방법: LINQ (Visual Basic)를 사용 하 여 XML 변환
 [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md) 쉽게 한 소스에서 XML을 읽고 새 XML 형식으로 변환 합니다. 를 변환 하려면 콘텐츠를 검색 하는 LINQ 쿼리를 활용 하거나 새 XML 형식으로 기존 문서에서 콘텐츠를 변경할 수 있습니다.  
   
  이 항목의 예제 XML 소스 문서에서 콘텐츠를 브라우저에서 볼 수 있도록 HTML로 변환 합니다.  
@@ -155,10 +155,10 @@ ms.locfileid: "42924911"
     </html>  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md)  
- [Visual Basic에서 XML 조작](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)  
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
- [방법: 파일, 문자열 또는 스트림에서 XML 로드](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+## <a name="see-also"></a>참고자료
+- [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md)
+- [Visual Basic에서 XML 조작](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)
+- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [방법: 파일, 문자열 또는 Stream에서 XML 로드](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

@@ -2,12 +2,12 @@
 title: 설치 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
-ms.openlocfilehash: 13828bee07dd455cd2b94d20d4afa7ea416ce186
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 69cc6bce08f3d98d3d63570005582bc6f50240bf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54532554"
 ---
 # <a name="troubleshooting-setup-issues"></a>설치 문제 해결
 이 항목에서는 Windows Communication Foundation (WCF)가 설치 문제를 해결 하는 방법을 설명 합니다.  
@@ -38,17 +38,17 @@ ms.locfileid: "48840549"
   
 4.  다음과 같은 예외가 이벤트 로그나 설치 추적 로그 파일에 표시됩니다.  
   
-     ServiceModelReg [11:09:59:046]: System.ApplicationException: "E:\WINDOWS\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\ServiceModel.mof"을(를) 통해 E:\WINDOWS\system32\wbem\mofcomp.exe을(를) 실행하는 동안 예기치 않은 3 결과가 나타났습니다.  
+     ServiceModelReg [11:09:59:046]: System.ApplicationException: Unexpected result 3 executing E:\WINDOWS\system32\wbem\mofcomp.exe with "E:\WINDOWS\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\ServiceModel.mof"  
   
      또는  
   
-     ServiceModelReg [07:19:33:843]: System.TypeInitializationException: 'System.Management.ManagementPath'의 형식 이니셜라이저에서 예외를 throw했습니다. ---> System.Runtime.InteropServices.COMException (0x80040154): 80040154 오류로 인해 CLSID가 {CF4CC405-E2C5-4DDD-B3CE-5E7582D8C9FA}인 구성 요소의 COM 클래스 팩터리를 검색하지 못했습니다.  
+     ServiceModelReg [07:19:33:843]: System.TypeInitializationException: 형식 이니셜라이저 'System.Management.ManagementPath'에 대 한 예외가 발생 했습니다. System.Runtime.InteropServices.COMException (0x80040154)--->: 다음 오류로 인해 실패 한 구성 요소의 CLSID {CF4CC405-E2C5-4DDD-B3CE-5E7582D8C9FA}를 사용 하 여 COM 클래스 팩터리를 검색 합니다. 80040154.  
   
      또는  
   
-     ServiceModelReg [07:19:32:750]: System.IO.FileNotFoundException: 파일이나 어셈블리 'C:\WINDOWS\system32\wbem\mofcomp.exe' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.  
+     ServiceModelReg [07:19:32:750]: System.IO.FileNotFoundException: 파일이 나 어셈블리 'C:\WINDOWS\system32\wbem\mofcomp.exe' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.  
   
-     파일 이름: 'C:\WINDOWS\system32\wbem\mofcomp.exe  
+     파일 이름 'C:\WINDOWS\system32\wbem\mofcomp.exe  
   
  위에 설명한 문제를 해결하려면 다음 단계를 수행해야 합니다.  
   
@@ -73,5 +73,5 @@ ms.locfileid: "48840549"
 aspnet_regiis.exe -i -enable  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [설치 지침](../../../docs/framework/wcf/samples/set-up-instructions.md)
+## <a name="see-also"></a>참고자료
+- [설치 지침](../../../docs/framework/wcf/samples/set-up-instructions.md)

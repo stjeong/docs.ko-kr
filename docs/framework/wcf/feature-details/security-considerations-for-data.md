@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
-ms.openlocfilehash: 6471a8a8e257ea3bb6f26a8041694ef25151ad1a
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 5c7451e5e914c372c8631922001cfec5e84a586c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54527954"
 ---
 # <a name="security-considerations-for-data"></a>데이터에 대한 보안 고려 사항
 Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 범주 개수를 고려해 야 합니다. 다음 표에는 데이터 처리와 관련하여 가장 중요한 위협 클래스가 나열되어 있습니다. WCF는 이러한 위협을 완화 하는 도구를 제공 합니다.  
@@ -223,9 +223,9 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
  알려진 형식 목록을 반환하는 메서드를 쓰거나 <xref:System.Runtime.Serialization.DataContractSerializer> 생성자에 직접 목록을 전달할 때는 목록을 준비하는 코드가 안전하며 신뢰할 수 있는 데이터만 다루는지 확인해야 합니다.  
   
- 구성에 알려진 형식을 지정하는 경우에는 구성 파일이 안전한지 확인해야 합니다. 구성에는 항상 강력한 이름을 사용하되(형식이 상주하는 서명된 어셈블리의 공개 키 지정) 로드할 형식의 버전은 지정하지 마십시오. 가능한 경우에는 형식 로더에서 자동으로 최신 버전을 선택합니다. 구성에서 특정 버전을 지정하면, 형식에 이후 버전에서 수정이 가능한 보안 취약성이 있지만 버전이 구성에 명시적으로 지정되어 있기 때문에 여전히 취약한 버전을 로드할 위험성이 있습니다.  
+ 구성에 알려진 형식을 지정하는 경우에는 구성 파일이 안전한지 확인해야 합니다. 구성에는 항상 강력한 이름을 사용하되(형식이 상주하는 서명된 어셈블리의 공개 키 지정) 로드할 형식의 버전은 지정하지 마십시오. 가능한 경우에는 형식 로더에서 자동으로 최신 버전을 선택합니다. 구성에서 특정 버전을 지정 하는 경우 다음 위험이 실행 합니다. 형식 수 이후 버전에서 해결 될 수 있는 보안 취약점이 있지만 구성에서 명시적으로 지정 되어 있으므로 여전히 취약 한 버전 로드 합니다.  
   
- 알려진 형식이 너무 많으면 또 다른 결과가 발생할 수 있습니다. <xref:System.Runtime.Serialization.DataContractSerializer> 가 serialize 또는 deserialize해야 하는 각 형식의 항목과 함께 serialization/deserialization 코드의 캐시를 애플리케이션 도메인에 만들기 때문입니다. 애플리케이션 도메인이 실행되고 있는 동안에는 이 캐시를 결코 지울 수 없습니다. 따라서 애플리케이션에 사용되는 알려진 형식이 많다는 것을 알고 있는 공격자는 이 모든 형식을 deserialize하여 캐시에 과도한 메모리가 사용되게 만들 수 있습니다.  
+ 알려진 형식이 너무 많은 다른 결과 있습니다. <xref:System.Runtime.Serialization.DataContractSerializer> serialize 하며 deserialize 각 형식에 대 한 진입점을 사용 하 여 응용 프로그램 도메인에서 serialization/deserialization 코드의 캐시를 만듭니다. 애플리케이션 도메인이 실행되고 있는 동안에는 이 캐시를 결코 지울 수 없습니다. 따라서 애플리케이션에 사용되는 알려진 형식이 많다는 것을 알고 있는 공격자는 이 모든 형식을 deserialize하여 캐시에 과도한 메모리가 사용되게 만들 수 있습니다.  
   
 ### <a name="preventing-types-from-being-in-an-unintended-state"></a>형식이 의도하지 않은 상태가 되는 것을 방지  
  형식에 적용해야 할 내부 일관성 제약 조건이 있을 수 있습니다. deserialization 중에 이러한 제약 조건을 무시하지 않도록 주의해야 합니다.  
@@ -353,8 +353,8 @@ Windows Communication Foundation (WCF)에서 데이터를 처리할 때 위협 �
   
 -   일반적으로 할당량을 수락하는 구성 요소를 사용하는 경우에는 보안상의 영향을 이해하고 안전한 값으로 설정해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Xml.XmlDictionaryReader>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- [데이터 계약 알려진 형식](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Xml.XmlDictionaryReader>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [데이터 계약 알려진 형식](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

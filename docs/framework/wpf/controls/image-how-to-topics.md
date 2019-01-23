@@ -7,15 +7,15 @@ helpviewer_keywords:
 - controls [WPF], Image
 - Image control [WPF]
 ms.assetid: e6e51cf9-8fa1-457e-856b-a5e513bc5caf
-ms.openlocfilehash: 7d944eb2c09314be5b2e1c5c6ff69beec4888a16
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a4fe896214a4513bf5c7e38fcc1fcbd001933481
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33555551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54530790"
 ---
 # <a name="image-how-to-topics"></a>Image 방법 항목
-이 섹션의 항목 사용 하는 방법에 설명 된 <xref:System.Windows.Controls.Image> 요소입니다.  
+이 섹션의에서 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Controls.Image> 요소입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Image 요소 사용](../../../../docs/framework/wpf/controls/how-to-use-the-image-element.md)  
@@ -30,6 +30,6 @@ ms.locfileid: "33555551"
   
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
-## <a name="see-also"></a>참고 항목  
- [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)

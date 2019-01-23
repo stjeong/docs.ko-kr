@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
-ms.openlocfilehash: c6810009e4cda0b493a5f215d966cb37fc6fb090
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8c0807a7b811cf2cb3a13576018373d135e3e5cd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43511996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554467"
 ---
 # <a name="overriding-the-identity-of-a-service-for-authentication"></a>인증을 위해 서비스 ID 재정의
 일반적으로 선택한 클라이언트 자격 증명 형식에 따라 서비스 메타데이터에 노출되는 ID 형식이 결정되므로 서비스에 ID를 설정할 필요가 없습니다. 예를 들어 다음 구성 코드에서는 합니다 [ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) 요소 집합과 `clientCredentialType` Windows 특성.  
@@ -26,7 +26,7 @@ ms.locfileid: "43511996"
 ## <a name="kerberos-authentication-and-identity"></a>Kerberos 인증 및 ID  
  기본적으로 서비스는 Windows 자격 증명을 사용 하도록 구성 된 경우는 [ \<identity >](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md) 포함 하는 요소는 [ \<userPrincipalName >](../../../../docs/framework/configure-apps/file-schema/wcf/userprincipalname.md) 또는 [ \<servicePrincipalName >](../../../../docs/framework/configure-apps/file-schema/wcf/serviceprincipalname.md) 요소가 WSDL에서 생성 됩니다. 서비스를 실행 하는 경우는 `LocalSystem`, `LocalService`, 또는 `NetworkService` 계정, 서비스 사용자 이름 (SPN)의 형태로 기본적으로 생성 됩니다 `host/` \< *hostname*> 때문에 이러한 계정이 컴퓨터의 SPN 데이터에 액세스할을 수 있습니다. Windows Communication Foundation (WCF)의 형태로 UPN을 생성 서비스를 다른 계정으로 실행 하는 경우 \< *사용자 이름*>@<*domainName* `>` . Kerberos 인증에서 서비스를 인증하려면 UPN 또는 SPN을 클라이언트에 제공해야 하므로 이 작업이 수행됩니다.  
   
- Setspn.exe 도구를 사용하여 도메인의 서비스 계정으로 추가 SPN을 등록할 수도 있습니다. 그런 다음 SPN을 서비스 ID로 사용할 수 있습니다. 이 도구를 다운로드 하려면 [Windows 2000 Resource Kit Tool: Setspn.exe](https://go.microsoft.com/fwlink/?LinkId=91752)합니다. 도구에 대 한 자세한 내용은 참조 하세요. [Setspn 개요](https://go.microsoft.com/fwlink/?LinkId=61374)합니다.  
+ Setspn.exe 도구를 사용하여 도메인의 서비스 계정으로 추가 SPN을 등록할 수도 있습니다. 그런 다음 SPN을 서비스 ID로 사용할 수 있습니다. 이 도구를 다운로드 하려면 참조 [Windows 2000 Resource Kit Tool: Setspn.exe](https://go.microsoft.com/fwlink/?LinkId=91752). 도구에 대 한 자세한 내용은 참조 하세요. [Setspn 개요](https://go.microsoft.com/fwlink/?LinkId=61374)합니다.  
   
 > [!NOTE]
 >  Windows 자격 증명 형식을 협상 없이 사용하려면 서비스의 사용자 계정이 Active Directory 도메인에 등록된 SPN에 대한 액세스 권한이 있어야 합니다. 다음과 같은 방법으로 이 작업을 수행할 수 있습니다.  
@@ -65,6 +65,6 @@ ms.locfileid: "43511996"
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 사용자 지정 클라이언트 ID 검증 도구 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)  
- [서비스 ID 및 인증](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+## <a name="see-also"></a>참고자료
+- [방법: 사용자 지정 클라이언트 Id 검증 도구 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)
+- [서비스 ID 및 인증](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
