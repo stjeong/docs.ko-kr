@@ -6,12 +6,12 @@ helpviewer_keywords:
 - controls [Windows Forms], accessibility
 - accessibility [Windows Forms], Windows Forms controls
 ms.assetid: 887dee6f-5059-4d57-957d-7c6fcd4acb10
-ms.openlocfilehash: ffeecc1dfe52f1703fc201ef196644afbcc4708c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 976aff327a5212c181d455bab1cdc84f98d75a2a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33536838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540919"
 ---
 # <a name="providing-accessibility-information-for-controls-on-a-windows-form"></a>Windows Form의 컨트롤에 내게 필요한 옵션 정보 제공
 접근성 보조 기능은 장애가 있는 사용자가 컴퓨터를 보다 효율적으로 사용하도록 돕는 특수 프로그램 및 디바이스입니다. 시력 장애가 있는 사용자를 위한 화면 판독기와 마우스나 키보드를 사용하지 않고 구두 명령을 제공하는 사용자를 위한 음성 입력 유틸리티를 예로 들 수 있습니다. 이러한 접근성 보조 기능은 Windows Forms 컨트롤에서 노출하는 접근성 속성을 조작합니다. 이러한 속성은 다음과 같습니다.  
@@ -75,7 +75,7 @@ button1->AccessibleName = "Order";
 ```  
   
 ## <a name="accessiblerole-property"></a>AccessibleRole 속성  
- 이 속성을 포함 하는 <xref:System.Windows.Forms.AccessibleRole> 열거형 컨트롤의 사용자 인터페이스 역할을 설명 합니다. 새 컨트롤에는 이 값이 `Default`로 설정됩니다. 이것은 기본적으로 **Button** 컨트롤이 **Button**으로 동작함을 의미합니다. 컨트롤이 다른 역할을 수행할 경우에는 이 속성을 다시 설정할 수 있습니다. 예를 들어 **PictureBox** 컨트롤을 **Chart**로 사용할 수 있으며 이때 접근성 보조 기능에서 **PictureBox**가 아닌 **Chart**로 역할을 보고하도록 할 수 있습니다. 또한 직접 개발한 사용자 지정 컨트롤에 이 속성을 지정할 수도 있습니다. 이 속성은 속성 창에서 설정하거나 다음과 같이 코드로 설정할 수 있습니다.  
+ 이 속성을 포함 하는 <xref:System.Windows.Forms.AccessibleRole> 컨트롤의 사용자 인터페이스 역할을 설명 하는 열거형입니다. 새 컨트롤에는 이 값이 `Default`로 설정됩니다. 이것은 기본적으로 **Button** 컨트롤이 **Button**으로 동작함을 의미합니다. 컨트롤이 다른 역할을 수행할 경우에는 이 속성을 다시 설정할 수 있습니다. 예를 들어 **PictureBox** 컨트롤을 **Chart**로 사용할 수 있으며 이때 접근성 보조 기능에서 **PictureBox**가 아닌 **Chart**로 역할을 보고하도록 할 수 있습니다. 또한 직접 개발한 사용자 지정 컨트롤에 이 속성을 지정할 수도 있습니다. 이 속성은 속성 창에서 설정하거나 다음과 같이 코드로 설정할 수 있습니다.  
   
 ```  
 ' Visual Basic  
@@ -88,11 +88,11 @@ PictureBox1.AccessibleRole = AccessibleRole.Chart;
 pictureBox1->AccessibleRole = AccessibleRole::Chart;  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.AccessibleObject>  
- <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.AccessibleRole>
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.AccessibleObject>
+- <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.AccessibleRole>

@@ -3,12 +3,12 @@ title: WIF 및 웹 팜
 ms.date: 03/30/2017
 ms.assetid: fc3cd7fa-2b45-4614-a44f-8fa9b9d15284
 author: BrucePerlerMS
-ms.openlocfilehash: 8d1d3d67dd578957b5d7f4dc70cd2710143b699d
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 85fbebcd210e7df17212d39b8e3aca9bf76bfb67
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54029465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543057"
 ---
 # <a name="wif-and-web-farms"></a>WIF 및 웹 팜
 WIF(Windows Identity Foundation)를 사용하여 웹 팜에 배포된 RP(신뢰 당사자) 애플리케이션의 리소스를 보호하는 경우 특정 단계를 수행하여 WIF가 팜의 여러 컴퓨터에서 실행되는 RP 애플리케이션 인스턴스의 토큰을 처리할 수 있도록 해야 합니다. 이 처리에는 세션 토큰 시그니처의 유효성 검사, 세션 토큰 암호화 및 암호 해독, 세션 토큰 캐싱 및 재생된 보안 토큰 검색이 포함됩니다.  
@@ -250,8 +250,8 @@ namespace CacheLibrary
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>  
- <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>  
- [WIF 세션 관리](../../../docs/framework/security/wif-session-management.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>
+- <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>
+- [WIF 세션 관리](../../../docs/framework/security/wif-session-management.md)

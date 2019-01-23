@@ -1,5 +1,5 @@
 ---
-title: '연습: 백그라운드 작업을 사용하는 폼 구현'
+title: '연습: 백그라운드 작업을 사용 하는 폼 구현'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -15,21 +15,21 @@ helpviewer_keywords:
 - threading [Windows Forms], background operations
 - background operations
 ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
-ms.openlocfilehash: 81c7f21e7e331b60d41330c8239893332dbea5a1
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: fa9f35fd5ecd1c6761f363ea2a1e1a67996ecb77
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543528"
 ---
-# <a name="walkthrough-implementing-a-form-that-uses-a-background-operation"></a>연습: 백그라운드 작업을 사용하는 폼 구현
+# <a name="walkthrough-implementing-a-form-that-uses-a-background-operation"></a>연습: 백그라운드 작업을 사용 하는 폼 구현
 를 완료 하려면 시간이 오래 걸리는 작업을 해야 하 고 원하지 않는 사용자 인터페이스 (UI) 응답을 중지 하거나 사용할 수 있습니다 "중단" 하는 경우는 <xref:System.ComponentModel.BackgroundWorker> 다른 스레드에서 작업을 실행 하는 클래스입니다.  
   
- 이 연습에 사용 하는 방법을 보여 줍니다는 <xref:System.ComponentModel.BackgroundWorker> "백그라운드"에서 시간이 오래 걸리는 계산을 수행 하는 클래스 사용자 인터페이스의 응답성을 유지 하는 동안.  완료하면 피보나치 수를 비동기적으로 계산하는 응용 프로그램이 생깁니다. 큰 피보나치 수를 계산하는 데는 상당한 시간이 걸릴 수도 있지만 이 지연으로 주 UI 스레드가 중단되지 않으며 계산 중에도 폼이 응답하게 됩니다.  
+ 이 연습에 사용 하는 방법을 보여 줍니다는 <xref:System.ComponentModel.BackgroundWorker> "백그라운드"에서 시간이 오래 걸리는 계산을 수행 하는 클래스 사용자 인터페이스의 응답성을 유지 하는 동안.  완료하면 피보나치 수를 비동기적으로 계산하는 애플리케이션이 생깁니다. 큰 피보나치 수를 계산하는 데는 상당한 시간이 걸릴 수도 있지만 이 지연으로 주 UI 스레드가 중단되지 않으며 계산 중에도 폼이 응답하게 됩니다.  
   
  이 연습에서 설명하는 작업은 다음과 같습니다.  
   
--   Windows 기반 응용 프로그램 만들기  
+-   Windows 기반 애플리케이션 만들기  
   
 -   만들기는 <xref:System.ComponentModel.BackgroundWorker> 폼에서  
   
@@ -37,7 +37,7 @@ ms.locfileid: "44253132"
   
 -   진행률 보고 및 취소에 대한 지원 추가  
   
- 이 예제에 사용된 전체 코드 목록은 [방법: 백그라운드 작업을 사용하는 폼 구현](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)을 참조하세요.  
+ 이 예제에서 사용 되는 코드의 전체 목록은 참조 하세요. [방법: 백그라운드 작업을 사용 하는 폼 구현](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)합니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
@@ -57,7 +57,7 @@ ms.locfileid: "44253132"
   
 5.  첫 번째 이름 바꾸기 <xref:System.Windows.Forms.Button> 제어 `startAsyncButton` 설정 된 <xref:System.Windows.Forms.Control.Text%2A> 속성을 `Start Async`입니다. 두 번째 이름을 바꿀 <xref:System.Windows.Forms.Button> 컨트롤 `cancelAsyncButton`를 설정 합니다 <xref:System.Windows.Forms.Control.Text%2A> 속성을 `Cancel Async`합니다. 설정 해당 <xref:System.Windows.Forms.Control.Enabled%2A> 속성을 `false`입니다.  
   
-6.  둘 다에 대해 이벤트 처리기를 만들고 합니다 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Click> 이벤트입니다. 자세한 내용은 [방법: 디자이너를 사용하여 이벤트 처리기 만들기](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)를 참조하세요.  
+6.  둘 다에 대해 이벤트 처리기를 만들고 합니다 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Click> 이벤트입니다. 세부 정보를 참조 하세요. [방법: 디자이너를 사용 하 여 이벤트 처리기를 만들](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)합니다.  
   
 7.  끌어서를 <xref:System.Windows.Forms.Label> 에서 제어 합니다 **도구 상자** 폼 하 고 이름을 `resultLabel`입니다.  
   
@@ -75,9 +75,9 @@ ms.locfileid: "44253132"
   
 #### <a name="to-implement-asynchronous-event-handlers"></a>비동기 이벤트 처리기를 구현하려면  
   
-1.  에 **속성** 창 사용 하 여를 <xref:System.ComponentModel.BackgroundWorker> 구성 요소가 여전히 선택를 클릭 합니다 **이벤트** 단추. 두 번 클릭 합니다 <xref:System.ComponentModel.BackgroundWorker.DoWork> 및 <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> 이벤트를 이벤트 처리기를 만듭니다. 이벤트 처리기를 사용하는 방법에 대한 자세한 내용은 [방법: 디자이너를 사용하여 이벤트 처리기 만들기](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)를 참조하세요.  
+1.  에 **속성** 창 사용 하 여를 <xref:System.ComponentModel.BackgroundWorker> 구성 요소가 여전히 선택를 클릭 합니다 **이벤트** 단추. 두 번 클릭 합니다 <xref:System.ComponentModel.BackgroundWorker.DoWork> 및 <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> 이벤트를 이벤트 처리기를 만듭니다. 이벤트 처리기를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 디자이너를 사용 하 여 이벤트 처리기를 만들](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)합니다.  
   
-2.  사용자 폼에서 `ComputeFibonacci`라는 새 메서드를 만듭니다. 이 메서드는 실제 작업을 수행하며 백그라운드에서 실행됩니다. 이 코드는 피보나치 알고리즘의 재귀적 구현을 보여 줍니다. 이는 매우 비효율적이며, 큰 숫자를 완성하는 데 기하급수적으로 긴 시간이 소요됩니다. 여기서는 응용 프로그램에서 오랜 지연을 유발할 수 있는 작업을 보여 주기 위해 설명 용도로 사용됩니다.  
+2.  사용자 폼에서 `ComputeFibonacci`라는 새 메서드를 만듭니다. 이 메서드는 실제 작업을 수행하며 백그라운드에서 실행됩니다. 이 코드는 피보나치 알고리즘의 재귀적 구현을 보여 줍니다. 이는 매우 비효율적이며, 큰 숫자를 완성하는 데 기하급수적으로 긴 시간이 소요됩니다. 여기서는 애플리케이션에서 오랜 지연을 유발할 수 있는 작업을 보여 주기 위해 설명 용도로 사용됩니다.  
   
      [!code-cpp[System.ComponentModel.BackgroundWorker#10](../../../../samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#10)]
      [!code-csharp[System.ComponentModel.BackgroundWorker#10](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#10)]
@@ -141,11 +141,11 @@ ms.locfileid: "44253132"
     [!code-vb[System.ComponentModel.BackgroundWorker#12](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#12)]  
   
 ## <a name="checkpoint"></a>검사점  
- 이 시점에서 피보나치 계산기 응용 프로그램을 컴파일하여 실행할 수 있습니다.  
+ 이 시점에서 피보나치 계산기 애플리케이션을 컴파일하여 실행할 수 있습니다.  
   
 #### <a name="to-test-your-project"></a>프로젝트를 테스트하려면  
   
--   F5 키를 눌러 응용 프로그램을 컴파일하고 실행합니다.  
+-   F5 키를 눌러 애플리케이션을 컴파일하고 실행합니다.  
   
      계산 백그라운드에서 실행 되는 동안 표시 됩니다는 <xref:System.Windows.Forms.ProgressBar> 완료 될 때까지 계산 진행률이 표시 됩니다. 보류 중인 작업도 취소할 수 있습니다.  
   
@@ -156,7 +156,7 @@ ms.locfileid: "44253132"
   
 -   사용 하 여 <xref:System.ComponentModel.BackgroundWorker> 여러 동시 작업에 대 한 개체입니다.  
   
--   다중 스레드 응용 프로그램을 디버깅하려면 [방법: 스레드 창 사용](/visualstudio/debugger/how-to-use-the-threads-window)을 참조하세요.  
+-   다중 스레드 응용 프로그램을 디버깅 하려면 참조 [방법: 스레드 창 사용](/visualstudio/debugger/how-to-use-the-threads-window)합니다.  
   
 -   비동기 프로그래밍 모델을 지원하는 사용자 고유의 구성 요소를 구현합니다. 자세한 내용은 [이벤트 기반 비동기 패턴 개요](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)를 참조하세요.  
   
@@ -169,6 +169,6 @@ ms.locfileid: "44253132"
 - [관리되는 스레딩](../../../../docs/standard/threading/index.md)
 - [관리되는 스레딩을 구현하는 최선의 방법](../../../../docs/standard/threading/managed-threading-best-practices.md)
 - [이벤트 기반 비동기 패턴 개요](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
-- [방법: 배경 작업을 사용하는 양식 구현](how-to-implement-a-form-that-uses-a-background-operation.md)  
+- [방법: 백그라운드 작업을 사용 하는 폼 구현](how-to-implement-a-form-that-uses-a-background-operation.md)
 - [연습: 백그라운드에서 작업 실행](walkthrough-running-an-operation-in-the-background.md)
 - [BackgroundWorker 구성 요소](backgroundworker-component.md)
