@@ -3,15 +3,15 @@ title: Windows Identity Foundation 4.5의 새로운 기능
 ms.date: 03/30/2017
 ms.assetid: 3b381f04-593b-471f-bd33-0362be1aade5
 author: BrucePerlerMS
-ms.openlocfilehash: 673294ccdb76e6016169a4e2b4e7713ba63fa1e7
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: deb75494b2813aac3182270b027391b87fdeb0f7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836818"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619612"
 ---
 # <a name="what39s-new-in-windows-identity-foundation-45"></a>Windows Identity Foundation 4.5의 새로운 기능
-독립 실행형 다운로드로 제공되는 WIF(Windows Identity Foundation)의 첫 번째 버전은 .NET 3.5 SP1 기간에 도입되었기 때문에 WIF 3.5로 알려져 있습니다. .NET 4.5부터는 WIF가 .NET Framework의 일부로 제공됩니다. WIF 클래스를 프레임워크에서 직접 사용할 수 있도록 하면 .NET에 클레임 기반 ID를 더욱 심층적으로 통합하여 클레임을 더욱 쉽게 사용하도록 할 수 있습니다. 새 모델을 이용하기 위해 WIF 3.5용으로 작성된 응용 프로그램을 수정할 필요가 있습니다. 자세한 내용은 [WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)을 참조하세요.  
+독립 실행형 다운로드로 제공되는 WIF(Windows Identity Foundation)의 첫 번째 버전은 .NET 3.5 SP1 기간에 도입되었기 때문에 WIF 3.5로 알려져 있습니다. .NET 4.5부터는 WIF가 .NET Framework의 일부로 제공됩니다. WIF 클래스를 프레임워크에서 직접 사용할 수 있도록 하면 .NET에 클레임 기반 ID를 더욱 심층적으로 통합하여 클레임을 더욱 쉽게 사용하도록 할 수 있습니다. 새 모델을 이용하기 위해 WIF 3.5용으로 작성된 애플리케이션을 수정할 필요가 있습니다. 자세한 내용은 [WIF 3.5를 사용하여 빌드된 애플리케이션을 WIF 4.5로 마이그레이션하는 지침](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)을 참조하세요.  
   
  아래에서 몇 가지 주요 변경 사항에 대한 정보를 확인할 수 있습니다.  
   
@@ -56,8 +56,8 @@ ms.locfileid: "48836818"
   
      **Visual Studio 2012용 ID 및 액세스 도구**(위의 **Visual Studio 환경의 변경 사항** 참조)를 사용할 때, 이 도구는 `useIdentityConfiguration` 특성 집합을 포함한 `<serviceCredentials>` 요소를 자동으로 구성 파일에 추가합니다. 또한, WIF 구성 설정을 포함한 해당 [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) 요소를 추가하고 선택한 STS에 대한 인증을 아웃소싱하는 데 필요한 다른 설정과 바인딩을 추가합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)  
- [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)  
- [WIF API 참조](../../../docs/framework/security/wif-api-reference.md)  
- [WIF 구성 참조](../../../docs/framework/security/wif-configuration-reference.md)
+## <a name="see-also"></a>참고자료
+- [WIF 3.5를 사용하여 빌드된 응용 프로그램을 WIF 4.5로 마이그레이션하는 지침](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)
+- [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)
+- [WIF API 참조](../../../docs/framework/security/wif-api-reference.md)
+- [WIF 구성 참조](../../../docs/framework/security/wif-configuration-reference.md)

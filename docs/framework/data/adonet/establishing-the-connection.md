@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3af512f3-87d9-4005-9e2f-abb1060ff43f
-ms.openlocfilehash: 29db884a88f5150cd93571ba8fa7bf72be2b8c69
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6e3a88f7b34c64480d69df1a06a113e392d8fe53
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619385"
 ---
 # <a name="establishing-the-connection"></a>연결 설정
 Microsoft SQL Server에 연결하려면 .NET Framework Data Provider for SQL Server의 <xref:System.Data.SqlClient.SqlConnection> 개체를 사용합니다. OLE DB 데이터 소스에 연결하려면 .NET Framework Data Provider for OLE DB의 <xref:System.Data.OleDb.OleDbConnection> 개체를 사용합니다. ODBC 데이터 소스에 연결하려면 .NET Framework Data Provider for ODBC의 <xref:System.Data.Odbc.OdbcConnection> 개체를 사용합니다. Oracle 데이터 소스에 연결하려면 .NET Framework Data Provider for Oracle의 <xref:System.Data.OracleClient.OracleConnection> 개체를 사용합니다. 안전 하 게 저장 하 고 연결 문자열 검색을 참조 하세요 [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)합니다.  
@@ -51,7 +51,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 ### <a name="integrated-security-and-aspnet"></a>통합 보안 및 ASP.NET  
  트러스트된 연결이라고도 하는 SQL Server 통합 보안은 연결 문자열에 사용자 ID와 암호를 노출하지 않아 안전하게 SQL Server에 연결할 수 있으므로 연결 인증에 권장되는 방식입니다. 통합 보안에서는 실행 중인 프로세스의 현재 보안 ID, 즉 토큰을 사용합니다. 데스크톱 응용 프로그램의 경우에는 일반적으로 현재 로그온한 사용자의 ID입니다.  
   
- ASP.NET 응용 프로그램의 보안 ID는 여러 가지 서로 다른 옵션 중 하나로 설정할 수 있습니다. ASP.NET 응용 프로그램에 SQL Server에 연결할 때 사용 하는 보안 id를 더 잘 이해 하려면 참조 [ASP.NET 가장](https://msdn.microsoft.com/library/a0cb3024-562f-4184-9d3c-095504787d3d)를 [ASP.NET 인증](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1), 및 [방법: Access SQL Windows를 사용 하 여 서버 통합 보안](https://msdn.microsoft.com/library/683f9c9f-4375-4de6-8111-943c4423fde5)합니다.  
+ ASP.NET 응용 프로그램의 보안 ID는 여러 가지 서로 다른 옵션 중 하나로 설정할 수 있습니다. ASP.NET 응용 프로그램에 SQL Server에 연결할 때 사용 하는 보안 id를 더 잘 이해 하려면 참조 [ASP.NET 가장](https://msdn.microsoft.com/library/a0cb3024-562f-4184-9d3c-095504787d3d)를 [ASP.NET 인증](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1), 및 [방법: Windows를 사용 하 여 액세스 SQL Server의 통합 보안](https://msdn.microsoft.com/library/683f9c9f-4375-4de6-8111-943c4423fde5)합니다.  
   
 ## <a name="connecting-to-an-ole-db-data-source"></a>OLE DB 데이터 소스 연결  
  (SQLOLEDB 통해 OLE DB Provider for SQL Server), OLE DB를 사용 하 여 노출 하는 데이터 원본에 연결을 제공 하는.NET Framework Data Provider for OLE DB를 사용 하 여 **OleDbConnection** 개체입니다.  
@@ -88,7 +88,7 @@ using (OleDbConnection connection =
 ```  
   
 ## <a name="do-not-use-universal-data-link-files"></a>유니버설 데이터 링크 파일 사용 안 함  
- 에 대 한 연결 정보를 제공할 수는 **OleDbConnection** 유니버설 데이터 링크 (UDL) 파일입니다; 그러나 하면 안 이렇게 합니다. UDL 파일은 암호화되지 않으므로 연결 문자열 정보를 일반 텍스트로 노출시킵니다. UDL 파일은 응용 프로그램에 대해 외부 파일 기반 리소스이므로 .NET Framework를 사용하여 보호할 수 없습니다.  
+ 에 대 한 연결 정보를 제공할 수는 **OleDbConnection** 유니버설 데이터 링크 (UDL) 파일입니다; 그러나 하면 안 이렇게 합니다. UDL 파일은 암호화되지 않으므로 연결 문자열 정보를 일반 텍스트로 노출시킵니다. UDL 파일은 애플리케이션에 대해 외부 파일 기반 리소스이므로 .NET Framework를 사용하여 보호할 수 없습니다.  
   
 ## <a name="connecting-to-an-odbc-data-source"></a>ODBC 데이터 소스 연결  
  .NET Framework Data Provider for ODBC는 ODBC를 사용 하 여 노출 하는 데이터 원본에 연결을 제공 합니다 **OdbcConnection** 개체입니다.  
@@ -142,8 +142,8 @@ OracleConnection nwindConn = new OracleConnection("Data Source=MyOracleServer;In
 nwindConn.Open();  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [연결 문자열](../../../../docs/framework/data/adonet/connection-strings.md)  
- [OLE DB, ODBC 및 Oracle 연결 풀링](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [연결 문자열](../../../../docs/framework/data/adonet/connection-strings.md)
+- [OLE DB, ODBC 및 Oracle 연결 풀링](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

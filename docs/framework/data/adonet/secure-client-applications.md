@@ -2,12 +2,12 @@
 title: 안전한 클라이언트 응용 프로그램
 ms.date: 03/30/2017
 ms.assetid: 6239592e-fa7d-4dea-9f00-d296d0048b01
-ms.openlocfilehash: a3b035d59a39ca20f6a81fbd40d39069a7cc43c2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 4233ce4edc788f3129043c5a1ef1acb26dd1d899
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54599616"
 ---
 # <a name="secure-client-applications"></a>안전한 클라이언트 응용 프로그램
 일반적으로 응용 프로그램은 데이터 손실을 야기하거나 시스템을 손상시킬 수 있는 취약성으로부터 보호되어야 하는 다양한 부분으로 구성됩니다. 안전한 사용자 인터페이스를 만들면 공격자가 데이터나 시스템 리소스에 액세스하기 전에 이를 차단함으로써 여러 가지 문제를 예방할 수 있습니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "47397896"
  [.NET Framework 정규식](../../../../docs/standard/base-types/regular-expressions.md)  
  <xref:System.Text.RegularExpressions.Regex> 클래스를 사용하여 사용자 입력의 유효성을 검사하는 방법에 대해 설명합니다.  
   
-## <a name="windows-applications"></a>Windows 응용 프로그램  
+## <a name="windows-applications"></a>Windows 애플리케이션  
  예전에는 일반적으로 Windows 응용 프로그램이 모든 권한으로 실행되었습니다. .NET Framework에서는 CAS(코드 액세스 보안)를 사용하여 Windows 응용 프로그램에서의 코드 실행을 제한하는 인프라를 제공합니다. 하지만 CAS만으로는 응용 프로그램을 보호하기에 부족합니다.  
   
  [Windows Forms 보안](../../../../docs/framework/winforms/windows-forms-security.md)  
@@ -65,9 +65,9 @@ ms.locfileid: "47397896"
 |[원격 서비스의 보안](https://msdn.microsoft.com/library/9574262c-d4b1-41c5-8600-24ff147c0add)|인증 및 암호화에 대해 설명하고 원격 통신과 관련한 추가 보안 항목을 제공합니다.|  
 |[보안 및 원격 서비스 고려 사항](../../../../docs/framework/misc/security-and-remoting-considerations.md)|보호되는 개체 및 응용 프로그램 도메인 간의 보안 문제에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
- [응용 프로그램 보안](/visualstudio/ide/securing-applications)  
- [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [데이터 액세스 전략에 대 한 권장 사항](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)
+- [응용 프로그램 보안](/visualstudio/ide/securing-applications)
+- [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

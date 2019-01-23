@@ -3,12 +3,12 @@ title: '&lt;RoleClaimType&gt;'
 ms.date: 03/30/2017
 ms.assetid: 69a49deb-6369-41ba-806b-ae8d21fac64b
 author: BrucePerlerMS
-ms.openlocfilehash: 565bf30d334c62c8132c60f411e89f7b260c54f1
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 6114a95f3942c367849785ce981858f276c0b8fc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48841517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54599948"
 ---
 # <a name="ltroleclaimtypegt"></a>&lt;RoleClaimType&gt;
 컬렉션의 역할 유형 클레임을 정의 하는 클레임 유형을 <xref:System.Security.Claims.ClaimsIdentity> 반환한 개체는 <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> 토큰 처리기의 메서드.  
@@ -17,8 +17,8 @@ ms.locfileid: "48841517"
 \<identityConfiguration>  
 \<securityTokenHandlers>  
 \<add>  
-\<samlSecurityTokenRequirement >  
-\<roleClaimType >  
+\<samlSecurityTokenRequirement>  
+\<roleClaimType>  
   
 ## <a name="syntax"></a>구문  
   
@@ -68,5 +68,5 @@ ms.locfileid: "48841517"
 </add>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType%2A>
+## <a name="see-also"></a>참고자료
+- <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType%2A>

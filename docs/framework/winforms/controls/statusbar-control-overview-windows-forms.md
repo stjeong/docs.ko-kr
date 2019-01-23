@@ -7,25 +7,25 @@ helpviewer_keywords:
 - StatusBar control [Windows Forms], about StatusBar control
 - status bars
 ms.assetid: b7b9852c-633d-4416-bb2e-94852b989c6c
-ms.openlocfilehash: 6dd5b45b38ec4fb04d9a53a1648cfe6e5a5b9f20
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c3e52a91a31eb898d0176bc35a97cda7de9a8368
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33535131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54491352"
 ---
 # <a name="statusbar-control-overview-windows-forms"></a>StatusBar 컨트롤 개요(Windows Forms)
 > [!IMPORTANT]
->  <xref:System.Windows.Forms.StatusStrip> 및 <xref:System.Windows.Forms.ToolStripStatusLabel> 컨트롤 교체 및 기능을 추가 <xref:System.Windows.Forms.StatusBar> 및 <xref:System.Windows.Forms.StatusBarPanel> 제어; 그러나는 <xref:System.Windows.Forms.StatusBar> 및 <xref:System.Windows.Forms.StatusBarPanel> 버전과 호환성 및 이후 사용에 대 한 컨트롤이 유지 되는 경우 있습니다 이 옵션을 선택 합니다.  
+>  <xref:System.Windows.Forms.StatusStrip> 및 <xref:System.Windows.Forms.ToolStripStatusLabel> 대체 컨트롤과 기능을 추가 합니다 <xref:System.Windows.Forms.StatusBar> 및 <xref:System.Windows.Forms.StatusBarPanel> 제어; 그러나를 <xref:System.Windows.Forms.StatusBar> 및 <xref:System.Windows.Forms.StatusBarPanel> 컨트롤 하는 경우 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다 있습니다 이 옵션을 선택 합니다.  
   
- Windows Forms [StatusBar 컨트롤](../../../../docs/framework/winforms/controls/statusbar-control-windows-forms.md) 폼에서 일반적으로 응용 프로그램이 다양 한 종류의 상태 정보를 표시할 수는 창의 맨 아래에 표시 되는 영역으로 사용 됩니다. <xref:System.Windows.Forms.StatusBar> 컨트롤에 텍스트 또는 아이콘을 나타내는 상태 또는 일련의 프로세스; 진행 중임 애니메이션 아이콘을 표시 하는 상태 표시줄 패널에 있을 수 있습니다. 예를 들어 [!INCLUDE[ofprword](../../../../includes/ofprword-md.md)] 나타내는 문서를 저장 하는 중입니다.  
+ Windows Forms [StatusBar 컨트롤](../../../../docs/framework/winforms/controls/statusbar-control-windows-forms.md) 폼에서 일반적으로 응용 프로그램에는 다양 한 종류의 상태 정보를 표시할 수는 창의 맨 아래에 표시 하는 영역으로 사용 됩니다. <xref:System.Windows.Forms.StatusBar> 컨트롤에 텍스트 또는 상태 또는 애니메이션에서 프로세스 중인; 나타내는 아이콘이 나타내는 아이콘을 표시 하는 상태 표시줄 패널에 있을 수 있습니다. 예를 들어 [!INCLUDE[ofprword](../../../../includes/ofprword-md.md)] 나타내는 문서를 저장 하는 중입니다.  
   
-## <a name="using-the-statusbar-control"></a>StatusBar 컨트롤을 사용 하 여  
- Internet Explorer에서 상태 표시줄을 사용 하 여 하이퍼링크; 위로 마우스를 가져가면 페이지의 URL이 표시를 [!INCLUDE[ofprword](../../../../includes/ofprword-md.md)] 페이지 위치, 섹션 위치 및 겹쳐쓰기 및 수정 버전을 추적; 및 Visual Studio 상태 표시줄을 사용 하 여 도킹 가능한 창을 조작 하는 방법을 알려 주는 등의 상황에 맞는 정보를 제공 하는 등의 편집 모드에 대 한 정보 제공 으로 또는 이동 합니다.  
+## <a name="using-the-statusbar-control"></a>StatusBar 컨트롤 사용  
+ Internet Explorer는 하이퍼링크; 위로 마우스를 가져가면 페이지의 URL을 표시 하는 상태 표시줄 사용 [!INCLUDE[ofprword](../../../../includes/ofprword-md.md)] 페이지 위치, 섹션 위치 및 overtype 및 수정 버전을 추적 합니다; Visual Studio 상태 표시줄을 사용 하 여 도킹 가능한 창을 조작 하는 방법 등의 상황에 맞는 정보를 제공 하려면 같은 편집 모드에 대 한 정보 제공 으로 또는 이동 합니다.  
   
- 설정 하 여 상태 표시줄에 단일 메시지를 표시할 수는 <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> 속성을 `false` (기본값) 설정의 <xref:System.Windows.Forms.StatusBar.Text%2A> 상태 표시줄에 표시할 텍스트 상태 표시줄의 속성입니다. 상태 표시줄 패널을 설정 하 여 둘 이상의 유형의 정보를 표시할 여러 개로 나눌 수는 <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> 속성을 `true` 를 사용 하 고는 <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> 방식의 <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>합니다.  
+ 설정 하 여 상태 표시줄에 단일 메시지를 표시할 수 있습니다는 <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> 속성을 `false` (기본값) 설정 하는 <xref:System.Windows.Forms.StatusBar.Text%2A> 상태 표시줄에 표시할 텍스트는 상태 표시줄의 속성입니다. 나눌 수 있습니다 상태 표시줄 패널을 설정 하 여 둘 이상의 유형의 정보를 표시 하는 <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> 속성을 `true` 하 고 사용 하는 <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> 메서드의 <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.StatusBar>  
- <xref:System.Windows.Forms.ToolStripStatusLabel>  
- [방법: Windows Forms StatusBar 컨트롤에서 클릭한 패널 확인](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.StatusBar>
+- <xref:System.Windows.Forms.ToolStripStatusLabel>
+- [방법: Windows Forms StatusBar 컨트롤에서 패널 클릭 확인](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)

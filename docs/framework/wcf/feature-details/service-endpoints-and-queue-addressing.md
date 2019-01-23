@@ -2,12 +2,12 @@
 title: 서비스 엔드포인트 및 큐 주소 지정
 ms.date: 03/30/2017
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
-ms.openlocfilehash: 71ebf29e51118a7f555f3e79598e49ffd65e0c63
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b513dbf5bfde812c551335826813967272bfd708
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54613924"
 ---
 # <a name="service-endpoints-and-queue-addressing"></a>서비스 엔드포인트 및 큐 주소 지정
 이 항목에서는 클라이언트가 큐에서 읽는 서비스에 주소를 지정하는 방법 및 서비스 엔드포인트가 큐에 매핑되는 방법을 설명합니다. 참고로, 다음 그림과 클래식 Windows Communication Foundation (WCF) 응용 프로그램 배포를 대기 합니다.  
@@ -38,11 +38,11 @@ ms.locfileid: "47196306"
   
 -   [private]는 선택 사항입니다. 개인 큐인 대상 큐에 주소를 지정할 때 사용됩니다. 공개 큐에 주소를 지정하려면 private를 지정하지 않아야 합니다. MSMQ 경로 달리 있습니다는 "$" WCF URI 형태로 note 합니다.  
   
--   \<*큐 이름*> 큐의 이름입니다. 큐 이름은 하위 큐를 참조할 수도 있습니다. 따라서 \< *큐 이름*> = \< *큐 이름*> [; *하위 큐 이름*].  
+-   \<*큐 이름*> 큐의 이름입니다. 큐 이름은 하위 큐를 참조할 수도 있습니다. Thus, \<*queue-name*> = \<*name-of-queue*>[;*sub-queue-name*].  
   
- 예제 1: abc atadatum.com 컴퓨터에서 호스팅된 개인 큐 PurchaseOrders에 주소를 지정하는 경우 URI는 net.msmq://abc.adatum.com/private/PurchaseOrders입니다.  
+ 예 1: 개인 큐 PurchaseOrders abc atadatum.com 컴퓨터에서 호스트를 해결 하기 위해 URI net.msmq://abc.adatum.com/private/PurchaseOrders 것입니다.  
   
- 예제 2: def atadatum.com 컴퓨터에서 호스팅된 공개 큐 AccountsPayable에 주소를 지정하는 경우 URI는 net.msmq://def.adatum.com/AccountsPayable입니다.  
+ Example2: 공개 큐 AccountsPayable def atadatum.com 컴퓨터에서 호스트를 해결 하기 위해 URI net.msmq://def.adatum.com/AccountsPayable 것입니다.  
   
  큐 주소는 메시지를 읽을 수신기에 의해 수신 대기 URI로 사용됩니다. 즉, 큐 주소는 TCP 소켓의 수신 대기 포트에 해당합니다.  
   
@@ -73,13 +73,13 @@ ms.locfileid: "47196306"
 |WCF URI 기반 큐 주소|Active Directory 속성 사용|큐 전송 프로토콜 속성|결과 MSMQ 형식 이름|  
 |----------------------------------|-----------------------------------|--------------------------------------|---------------------------------|  
 |Net.msmq://\<machine-name>/private/abc|False(기본값)|Native(기본값)|DIRECT=OS:machine-name\private$\abc|  
-|Net.msmq://\<machine-name>/private/abc|False|SRMP|DIRECT =http://machine/msmq/private$/ abc|  
+|Net.msmq://\<machine-name>/private/abc|False|SRMP|DIRECT=http://machine/msmq/private$/abc|  
 |Net.msmq://\<machine-name>/private/abc|True|네이티브|PUBLIC=some-guid(큐의 GUID)|  
   
 ### <a name="reading-messages-from-the-dead-letter-queue-or-the-poison-message-queue"></a>배달 못 한 편지 큐 또는 포이즌 메시지 큐에서 메시지 읽기  
  대상 큐의 하위 큐인 포이즌 메시지 큐에서 메시지를 읽으려면 하위 큐의 주소가 있는 `ServiceHost`를 엽니다.  
   
- 예제: 로컬 컴퓨터에 있는 개인 큐 PurchaseOrders의 포이즌 메시지 큐에서 읽는 서비스는 net.msmq://localhost/private/PurchaseOrders;poison 주소를 지정합니다.  
+ 예제: 로컬 컴퓨터에서 개인 큐 PurchaseOrders의 포이즌 메시지 큐에서 읽는 서비스는 //localhost/private/purchaseorders; poison 주소입니다.  
   
  시스템 트랜잭션 배달 못 한 편지 큐에서 메시지를 읽으려면 URI가 net.msmq://localhost/system$;DeadXact 형식이어야 합니다.  
   
@@ -100,9 +100,9 @@ ms.locfileid: "47196306"
   
  `MsmqIntegrationBinding`을 사용하여 큐에서 메시지를 받을 때 직접 형식 이름, 공개 및 개인 형식 이름만 사용할 수 있습니다(Active Directory 통합 필요). 그러나 직접 형식 이름을 사용하는 것이 좋습니다. 예를 들어 [!INCLUDE[wv](../../../../includes/wv-md.md)]에서 다른 형식 이름을 사용하면 시스템이 직접 형식 이름으로만 열 수 있는 하위 큐를 열려고 하므로 오류가 발생합니다.  
   
- `MsmqIntegrationBinding`을 사용하여 SRMP에 주소를 지정할 때 IIS(인터넷 정보 서비스)가 디스패치할 수 있도록 직접 형식 이름에 /msmq/를 추가하지 않아도 됩니다. 예를 들어: abc는 SRMP를 사용 하 여 프로토콜을 직접 대신 큐 주소를 지정할 때 =http://adatum.com/msmq/private$/abc를 사용 해야 DIRECT =http://adatum.com/private$입니다.  
+ `MsmqIntegrationBinding`을 사용하여 SRMP에 주소를 지정할 때 IIS(인터넷 정보 서비스)가 디스패치할 수 있도록 직접 형식 이름에 /msmq/를 추가하지 않아도 됩니다. 예를 들어: Abc는 SRMP를 사용 하 여 프로토콜을 직접 대신 큐 주소를 지정할 때 =http://adatum.com/msmq/private$/abc를 사용 해야 DIRECT =http://adatum.com/private$입니다.  
   
  `MsmqIntegrationBinding`과 함께 net.msmq:// 주소 지정을 사용할 수 없습니다. 때문에 `MsmqIntegrationBinding` 자유 형식의 MSMQ 형식 이름 주소 지정을 지원 합니다.이 바인딩을 사용 하 여 MSMQ의 멀티 캐스트 및 메일 그룹 기능을 사용 하는 WCF 서비스를 사용할 수 있습니다. 한 가지 예외의 경우는 `CustomDeadLetterQueue`을 사용할 때 `MsmqIntegrationBinding`를 지정하는 것입니다. 이 경우 net.msmq:// 형식이어야 하며, `NetMsmqBinding`을 사용하여 지정하는 방법과 비슷합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [대기 중인 응용 프로그램 웹 호스팅](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)
+## <a name="see-also"></a>참고자료
+- [대기 중인 애플리케이션 웹 호스팅](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)

@@ -1,18 +1,18 @@
 ---
-title: '방법: 관리되는 Windows 서비스에서 WCF 서비스 호스팅'
+title: '방법: Host a WCF Service in a Managed Windows Service'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8e37363b-4dad-4fb6-907f-73c30fac1d9a
-ms.openlocfilehash: edbc67ddf20eee6ebbe9091faa43bc1de91809d2
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: b4cb2ae3b2db8cdfab962c61ead387baf1bb7158
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46000767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54613829"
 ---
-# <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>방법: 관리되는 Windows 서비스에서 WCF 서비스 호스팅
+# <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>방법: Host a WCF Service in a Managed Windows Service
 
 이 항목에서는 Windows 서비스에서 호스트 되는 Windows Communication Foundation (WCF) 서비스를 만드는 데 필요한 기본 단계를 간략하게 설명 합니다. 시나리오는 관리 되는 Windows 서비스 호스팅 옵션에는 메시지가 활성화 되지 않은 보안 환경에서 인터넷 정보 서비스 (IIS) 외부에서 호스팅되는 장기 실행 WCF 서비스에서 사용 됩니다. 서비스 수명은 대신 운영 체제에 의해 제어됩니다. 모든 버전의 Windows에서 이 호스팅 옵션을 사용할 수 있습니다.
 
@@ -133,9 +133,9 @@ Windows 서비스는 MMC(Microsoft Management Console)의 Microsoft.ManagementCo
 
 "자체 호스팅" 옵션과 같이 Windows 서비스 호스팅 환경에서는 일부 호스팅 코드를 응용 프로그램의 일부로 작성해야 합니다. 서비스는 콘솔 응용 프로그램으로 구현되고 자체 호스팅 코드가 포함됩니다. 다른 호스팅 환경의 경우 IIS(인터넷 정보 서비스)의 WAS(Windows Process Activation Service) 호스팅과 같이 개발자가 호스팅 코드를 작성할 필요가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [단순화된 구성](../../../../docs/framework/wcf/simplified-configuration.md)
-- [관리되는 응용 프로그램에서의 호스팅](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)
+- [관리되는 애플리케이션에서의 호스팅](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)
 - [서비스 호스팅](../../../../docs/framework/wcf/hosting-services.md)
 - [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -2,12 +2,12 @@
 title: 호출자 정보 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
-ms.openlocfilehash: 0074ad5bfa5907fb1d02cc92b8b5717897a36b3e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7b0776425b41c8fef975355f3547a64c33fd96b4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33644214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619015"
 ---
 # <a name="caller-information-visual-basic"></a>호출자 정보 (Visual Basic)
 호출자 정보 특성을 사용하여 메서드 호출자에 대한 정보를 얻을 수 있습니다. 소스 코드 파일 경로, 소스 코드 줄 번호 및 호출자의 멤버 이름을 얻을 수 있습니다. 이 정보는 추적, 디버깅 및 진단 도구를 만드는 데 도움이 됩니다.  
@@ -74,8 +74,8 @@ End Sub
 |특성 생성자|특성이 적용되는 멤버의 이름입니다. 특성이 멤버 내에 있는 어떤 요소인 경우(예: 매개 변수, 반환 값 또는 제네릭 형식 매개 변수) 이 결과는 그 요소와 관련된 멤버의 이름입니다.|  
 |포함하는 멤버가 없음(예: 어셈블리 수준 또는 형식에 적용되는 특성)|선택적 매개 변수의 기본값입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [특성(Visual Basic)](../../../visual-basic/language-reference/attributes.md)  
- [일반 특성(Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)  
- [선택적 매개 변수](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
- [프로그래밍 개념(Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+## <a name="see-also"></a>참고자료
+- [특성(Visual Basic)](../../../visual-basic/language-reference/attributes.md)
+- [일반 특성(Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)
+- [선택적 매개 변수](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [프로그래밍 개념(Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)

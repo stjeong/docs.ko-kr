@@ -16,17 +16,17 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - namespaces
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
-ms.openlocfilehash: 6b320d21c33fa798ca2fd3ef5a04363d141f99f2
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: b56644cdf44ac5bd9c755d1ee7ba7013c0245293
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492314"
 ---
 # <a name="namespaces-in-visual-basic"></a>Visual Basic의 네임스페이스
 네임스페이스는 어셈블리에 정의된 개체를 구성합니다. 어셈블리는 여러 네임스페이스를 포함할 수 있으며, 이러한 각 네임스페이스는 다른 네임스페이스를 포함할 수 있습니다. 클래스 라이브러리와 같은 대규모 개체 그룹을 사용할 때 네임스페이스는 모호성을 방지하고 참조를 단순화합니다.  
   
- 예를 들어 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]는 <xref:System.Windows.Forms?displayProperty=nameWithType> 네임스페이스에서 <xref:System.Windows.Forms.ListBox> 클래스를 정의합니다. 다음 코드 조각은 이 클래스의 정규화된 이름을 사용하여 변수를 선언하는 방법을 보여 줍니다.  
+ 예를 들어 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 는 <xref:System.Windows.Forms.ListBox> 네임스페이스에서 <xref:System.Windows.Forms?displayProperty=nameWithType> 클래스를 정의합니다. 다음 코드 조각은 이 클래스의 정규화된 이름을 사용하여 변수를 선언하는 방법을 보여 줍니다.  
   
  [!code-vb[VbVbalrApplication#6](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_1.vb)]  
   
@@ -81,7 +81,7 @@ Namespace SpecialSpace
 End Namespace  
 ```  
   
- 그 결과 Visual Basic 컴파일러는 <xref:System.Int32?displayProperty=nameWithType>에 대한 참조를 성공적으로 해결할 수 없습니다. `SpecialSpace.System`이 `Int32`를 정의하지 않기 때문입니다. .NET Framework 클래스 라이브러리의 가장 바깥쪽 수준에서 검증 체인을 시작하려면 `Global` 키워드를 사용할 수 있습니다. 이렇게 하면 <xref:System?displayProperty=nameWithType> 네임스페이스 또는 클래스 라이브러리의 다른 네임스페이스를 지정할 수 있습니다. 다음은 이에 대한 예입니다.  
+ 그 결과 Visual Basic 컴파일러는 <xref:System.Int32?displayProperty=nameWithType>에 대한 참조를 성공적으로 해결할 수 없습니다. `SpecialSpace.System` 이 `Int32`를 정의하지 않기 때문입니다. .NET Framework 클래스 라이브러리의 가장 바깥쪽 수준에서 검증 체인을 시작하려면 `Global` 키워드를 사용할 수 있습니다. 이렇게 하면 <xref:System?displayProperty=nameWithType> 네임스페이스 또는 클래스 라이브러리의 다른 네임스페이스를 지정할 수 있습니다. 다음은 이에 대한 예입니다.  
   
 ```vb  
 Namespace SpecialSpace  
@@ -96,7 +96,7 @@ Namespace SpecialSpace
 End Namespace  
 ```  
   
- `Global`을 사용하면 <xref:Microsoft.VisualBasic?displayProperty=nameWithType> 같은 다른 루트 수준 네임스페이스 및 프로젝트와 관련된 네임스페이스에 액세스할 수 있습니다.  
+ `Global` 을 사용하면 <xref:Microsoft.VisualBasic?displayProperty=nameWithType>같은 다른 루트 수준 네임스페이스 및 프로젝트와 관련된 네임스페이스에 액세스할 수 있습니다.  
   
 ## <a name="global-keyword-in-namespace-statements"></a>네임스페이스 문의 Global 키워드  
  사용할 수도 있습니다는 `Global` 키워드를 [Namespace 문](../../../visual-basic/language-reference/statements/namespace-statement.md)합니다. 이렇게 하면 프로젝트의 루트 네임스페이스에서 네임스페이스를 정의할 수 있습니다.  
@@ -109,7 +109,7 @@ End Namespace
   
  네임스페이스 선언에서 `Global` 은 다른 네임스페이스에 중첩할 수 없습니다.  
   
- 사용할 수는 [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic) 보기 및 수정 하는 **루트 Namespace** 프로젝트의 합니다.  새 프로젝트에서 **루트 네임스페이스** 는 기본적으로 프로젝트 이름입니다. `Global` 이 최상위 네임스페이스가 되도록 하려면 **루트 네임스페이스** 항목을 지워 상자를 비울 수 있습니다. **루트 네임스페이스** 를 지우면 네임스페이스 선언에서 `Global` 키워드가 필요하지 않습니다.  
+ [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic) 를 사용하여 프로젝트의 **루트 네임스페이스** 를 보고 수정할 수 있습니다.  새 프로젝트에서 **루트 네임스페이스** 는 기본적으로 프로젝트 이름입니다. `Global` 이 최상위 네임스페이스가 되도록 하려면 **루트 네임스페이스** 항목을 지워 상자를 비울 수 있습니다. **루트 네임스페이스** 를 지우면 네임스페이스 선언에서 `Global` 키워드가 필요하지 않습니다.  
   
  `Namespace` 문이 .NET Framework에서 역시 네임스페이스인 이름을 선언하면, `Global` 키워드가 정규화된 이름으로 사용되지 않는 경우 .NET Framework 네임스페이스를 사용할 수 없게 됩니다. `Global` 키워드를 사용하지 않은 채 해당 .NET Framework 네임스페이스에 액세스하려면 `Global` 문에 `Namespace` 키워드를 포함할 수 있습니다.  
   
@@ -121,10 +121,10 @@ End Namespace
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Windows.Forms.ListBox>  
-- <xref:System.Windows.Forms?displayProperty=nameWithType>  
-- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
-- [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)  
-- [참조 및 Imports 문](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
-- [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
-- [Office 솔루션에서 코드 작성](/visualstudio/vsto/writing-code-in-office-solutions)
+- <xref:System.Windows.Forms.ListBox>
+- <xref:System.Windows.Forms?displayProperty=nameWithType>
+- [어셈블리 및 전역 어셈블리 캐시](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [방법: 명령줄을 사용하여 어셈블리 만들기 및 사용](../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)
+- [참조 및 Imports 문](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [Writing Code in Office Solutions](/visualstudio/vsto/writing-code-in-office-solutions)

@@ -2,15 +2,15 @@
 title: 외부 매핑
 ms.date: 03/30/2017
 ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
-ms.openlocfilehash: 640dff5555ab346782825c44ded758a681226648
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5cc72c360a2dfbb7446a5157cde898be93d29171
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54614616"
 ---
 # <a name="external-mapping"></a>외부 매핑
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 지원 *외부 매핑*을 사용 하 여 별도 XML 파일을 데이터베이스의 데이터 모델 및 개체 모델 사이의 매핑을 지정 하는 프로세스입니다. 외부 매핑 파일을 사용하면 다음과 같은 장점이 있습니다.  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 지원 *외부 매핑*, 있습니다 사용 하 여 별도 XML 파일을 데이터베이스의 데이터 모델과 개체 모델 간의 매핑을 지정 하는 프로세스입니다. 외부 매핑 파일을 사용하면 다음과 같은 장점이 있습니다.  
   
 -   매핑 코드를 응용 프로그램 코드와 따로 유지할 수 있어 응용 프로그램 코드를 간단하게 표시할 수 있습니다.  
   
@@ -23,7 +23,7 @@ ms.locfileid: "33365217"
   
 -   매핑 파일은 XML 파일이어야 합니다.  
   
--   XML 매핑 파일은 XML 스키마 정의 파일에 대해 유효해야 합니다. 자세한 내용은 참조 [하는 방법: DBML 유효성 검사 및 외부 매핑 파일](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md)합니다.  
+-   XML 매핑 파일은 XML 스키마 정의 파일에 대해 유효해야 합니다. 자세한 내용은 [방법: DBML 및 외부 매핑 파일 유효성 검사](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md)합니다.  
   
 -   외부 매핑은 특성 기반 매핑을 재정의합니다. 즉, 외부 매핑 소스를 사용하여 <xref:System.Data.Linq.DataContext>를 만들면 <xref:System.Data.Linq.DataContext>에서는 사용자가 클래스에 만든 모든 매핑 특성을 무시합니다. 이 동작은 외부 매핑 파일에 클래스가 포함되었는지 여부에 관계없이 항상 적용됩니다.  
   
@@ -32,10 +32,10 @@ ms.locfileid: "33365217"
 ## <a name="xml-schema-definition-file"></a>XML 스키마 정의 파일  
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 외부 매핑은 다음 XML 스키마 정의에 대해 유효해야 합니다.  
   
- 이 스키마 정의 파일은 DBML 파일의 유효성을 검사하는 데 사용하는 스키마 정의 파일과 다릅니다. 자세한 내용은 참조 [LINQ to SQL에서에서 코드 생성](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)).  
+ 이 스키마 정의 파일은 DBML 파일의 유효성을 검사하는 데 사용하는 스키마 정의 파일과 다릅니다. 자세한 내용은 [LINQ to SQL에서에서 코드 생성](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)).  
   
 > [!NOTE]
->  Visual Studio 사용자에 게 XML 스키마 대화 상자에서이 XSD 파일 "LinqToSqlMapping.xsd"로 찾을 됩니다. 외부 매핑 파일 유효성 검사를 위해이 파일을 올바르게 사용 하려면 참조 [하는 방법: DBML 유효성 검사 및 외부 매핑 파일](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md)합니다.  
+>  Visual Studio 사용자에 게 XML 스키마 대화 상자에서이 XSD 파일 "LinqToSqlMapping.xsd"로 찾을 수 있습니다. 이 파일을 사용 하려면 올바르게 외부 매핑 파일 유효성 검사에 대 한 참조 [방법: DBML 및 외부 매핑 파일 유효성 검사](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md)합니다.  
   
 ```  
 ?<?xml version="1.0" encoding="utf-16"?>  
@@ -141,7 +141,7 @@ elementFormDefault="qualified" >
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to SQL에서 코드 생성](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
- [참조](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
- [방법: 외부 파일로 개체 모델 생성](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to SQL에서 코드 생성](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+- [참조](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [방법: 외부 파일로 개체 모델 생성](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)

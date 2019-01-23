@@ -2,19 +2,19 @@
 title: '&lt;udpAnnouncementEndpoint&gt;의 &lt;udpTransportSettings&gt;'
 ms.date: 03/30/2017
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
-ms.openlocfilehash: ae640f2e2035f89cb33aecf7e5225cf4fbe3fb20
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 5b1cb23e589847dc54d16ecda1747c9e78e45e11
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54613781"
 ---
 # <a name="ltudptransportsettingsgt-of-ltudpannouncementendpointgt"></a>&lt;udpAnnouncementEndpoint&gt;의 &lt;udpTransportSettings&gt;
 이 구성 요소에 대 한 UDP 전송 설정을 노출 [ \<udpAnnoucementEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)합니다.  
   
 \<system.ServiceModel>  
-\<standardEndpoints >  
-\<udpAnnouncementEndpoint >  
+\<standardEndpoints>  
+\<udpAnnouncementEndpoint>  
   
 ## <a name="syntax"></a>구문  
   
@@ -62,7 +62,7 @@ ms.locfileid: "54147501"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<udpAnnoucementEndpoint >](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)|고정 알림 계약 및 UDP 전송 바인딩이 있는 표준 엔드포인트입니다.|  
+|[\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)|고정 알림 계약 및 UDP 전송 바인딩이 있는 표준 엔드포인트입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Discovery.UdpTransportSettings>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Discovery.UdpTransportSettings>

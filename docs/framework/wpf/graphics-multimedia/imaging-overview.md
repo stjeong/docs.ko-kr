@@ -21,12 +21,12 @@ helpviewer_keywords:
 - decoding image formats [WPF]
 - rotating images [WPF]
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
-ms.openlocfilehash: 10cdf5b8cf475c95e086b447b36a569da2173fa9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: fa23595359bc210edfd1d55486158a71420699c9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44195677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54615074"
 ---
 # <a name="imaging-overview"></a>이미징 개요
 이 항목에서는 [!INCLUDE[TLA#tla_wic](../../../../includes/tlasharptla-wic-md.md)]를 소개합니다. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)]를 사용하여 개발자는 이미지를 표시 및 변환하고 서식을 지정할 수 있습니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "44195677"
   
 <a name="_imageformats"></a>   
 ## <a name="wpf-image-formats"></a>WPF 이미지 형식  
- 코덱은 특정 미디어 형식을 인코딩하거나 디코딩하는 데 사용됩니다. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)]는 [!INCLUDE[TLA2#tla_bmp](../../../../includes/tla2sharptla-bmp-md.md)], [!INCLUDE[TLA2#tla_jpeg](../../../../includes/tla2sharptla-jpeg-md.md)], [!INCLUDE[TLA2#tla_png](../../../../includes/tla2sharptla-png-md.md)], [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)], [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], [!INCLUDE[TLA2#tla_gif](../../../../includes/tla2sharptla-gif-md.md)] 및 ICON 이미지 형식에 대한 코덱을 포함합니다. 이러한 각 코덱을 사용하여 응용 프로그램은 ICON을 제외한 해당 이미지 형식을 디코딩 및 인코딩할 수 있습니다.  
+ 코덱은 특정 미디어 형식을 인코딩하거나 디코딩하는 데 사용됩니다. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)]는 [!INCLUDE[TLA2#tla_bmp](../../../../includes/tla2sharptla-bmp-md.md)], [!INCLUDE[TLA2#tla_jpeg](../../../../includes/tla2sharptla-jpeg-md.md)], [!INCLUDE[TLA2#tla_png](../../../../includes/tla2sharptla-png-md.md)], [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)], [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], [!INCLUDE[TLA2#tla_gif](../../../../includes/tla2sharptla-gif-md.md)] 및 ICON 이미지 형식에 대한 코덱을 포함합니다. 이러한 각 코덱을 사용하여 애플리케이션은 ICON을 제외한 해당 이미지 형식을 디코딩 및 인코딩할 수 있습니다.  
   
  <xref:System.Windows.Media.Imaging.BitmapSource> 디코딩 및 인코딩 이미지에 중요 한 클래스 사용 됩니다. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] 파이프라인의 기본 구성 요소이며 픽셀의 단일 상수 집합을 특정 크기 및 해상도로 나타냅니다. A <xref:System.Windows.Media.Imaging.BitmapSource> 여러 프레임 이미지의 개별 프레임 이거나에서 수행 된 변환의 결과 수는 <xref:System.Windows.Media.Imaging.BitmapSource>합니다. 에 사용 되는 기본 클래스는 대부분의 부모인 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 와 같은 이미징 <xref:System.Windows.Media.Imaging.BitmapFrame>합니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "44195677"
  [!code-vb[BitmapFrameExample#10](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
   
 ### <a name="image-format-decoding"></a>이미지 형식 디코딩  
- 이미지 디코딩은 이미지 형식을 시스템에서 사용할 수 있는 이미지 데이터로 변환하는 것입니다. 그런 후 이미지 데이터를 다른 형식으로 표시, 처리 또는 인코딩할 수 있습니다. 디코더를 선택할 때는 이미지 형식을 고려해야 합니다. 특정 디코더를 지정하지 않으면 코덱이 자동으로 선택됩니다. [WPF로 이미지 표시](#_displayingimages) 섹션의 예제는 자동 디코딩을 보여 줍니다. 관리되지 않는 [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] 인터페이스를 사용하여 개발하고 시스템에 등록된 사용자 지정 형식 디코더는 디코더 선택 항목에 자동으로 포함됩니다. 이를 통해 사용자 지정 형식이 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에 자동으로 표시될 수 있습니다.  
+ 이미지 디코딩은 이미지 형식을 시스템에서 사용할 수 있는 이미지 데이터로 변환하는 것입니다. 그런 후 이미지 데이터를 다른 형식으로 표시, 처리 또는 인코딩할 수 있습니다. 디코더를 선택할 때는 이미지 형식을 고려해야 합니다. 특정 디코더를 지정하지 않으면 코덱이 자동으로 선택됩니다. [WPF로 이미지 표시](#_displayingimages) 섹션의 예제는 자동 디코딩을 보여 줍니다. 관리되지 않는 [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] 인터페이스를 사용하여 개발하고 시스템에 등록된 사용자 지정 형식 디코더는 디코더 선택 항목에 자동으로 포함됩니다. 이를 통해 사용자 지정 형식이 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 애플리케이션에 자동으로 표시될 수 있습니다.  
   
  다음 예제에서는 비트맵 디코더를 사용하여 [!INCLUDE[TLA2#tla_bmp](../../../../includes/tla2sharptla-bmp-md.md)] 형식 이미지를 디코딩하는 방법을 보여 줍니다.  
   
@@ -133,13 +133,13 @@ ms.locfileid: "44195677"
 #### <a name="stretching-images"></a>이미지 늘이기  
  <xref:System.Windows.Controls.Image.Stretch%2A> 속성 이미지는 해당 컨테이너를 채우도록 확장 하는 방법을 제어 합니다. 합니다 <xref:System.Windows.Controls.Image.Stretch%2A> 속성으로 정의 하는 다음 값을 허용 합니다 <xref:System.Windows.Media.Stretch> 열거형:  
   
--   <xref:System.Windows.Media.Stretch.None>: 이미지가 출력 영역을 채우도록 늘어나지는지 않습니다. 이미지가 출력 영역보다 큰 경우 이미지가 출력 영역으로 그려지고 맞지 않는 부분은 클리핑됩니다.  
+-   <xref:System.Windows.Media.Stretch.None>: 이미지가 출력 영역을 채우도록 늘어나지 않습니다. 이미지가 출력 영역보다 큰 경우 이미지가 출력 영역으로 그려지고 맞지 않는 부분은 클리핑됩니다.  
   
 -   <xref:System.Windows.Media.Stretch.Fill>: 이미지가 출력 영역에 맞게 크기가 조정 됩니다. 이미지의 높이 및 너비가 독립적으로 조정되므로 이미지의 원래 가로 세로 비율이 유지되지 않을 수 있습니다. 즉, 출력 컨테이너를 완전히 채우도록 이미지를 이동해야 할 수 있습니다.  
   
 -   <xref:System.Windows.Media.Stretch.Uniform>: 이미지가 출력 영역 내에 완전히 맞도록 크기가 조정 됩니다. 이미지의 가로 세로 비율이 유지됩니다.  
   
--   <xref:System.Windows.Media.Stretch.UniformToFill>: 이미지에는 이미지의 원래 가로 세로 비율을 유지 하는 동안 출력 영역을 완전히 채우도록 크기가 조정 됩니다.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: 이미지의 원래 가로 세로 비율을 유지 하는 동안 출력 영역을 완전히 채우도록 확장 됩니다.  
   
  다음 예제에서는 사용 가능한 각 적용 <xref:System.Windows.Media.Stretch> 열거형에는 <xref:System.Windows.Controls.Image>합니다.  
   
@@ -182,17 +182,17 @@ ms.locfileid: "44195677"
   
 <a name="_extensibility"></a>   
 ## <a name="codec-extensibility"></a>코덱 확장성  
- [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)]의 핵심 기능은 새로운 이미지 코덱에 대한 확장성 모델입니다. 이러한 관리되지 않는 인터페이스를 통해 코덱 개발자들은 코덱을 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]에 통합할 수 있으므로 새로운 이미지 형식이 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에서 자동으로 사용될 수 있습니다.  
+ [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)]의 핵심 기능은 새로운 이미지 코덱에 대한 확장성 모델입니다. 이러한 관리되지 않는 인터페이스를 통해 코덱 개발자들은 코덱을 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]에 통합할 수 있으므로 새로운 이미지 형식이 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 애플리케이션에서 자동으로 사용될 수 있습니다.  
   
  확장성 [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)]의 샘플을 보려면 [Win32 샘플 코덱](https://go.microsoft.com/fwlink/?LinkID=160052)을 참조하세요. 이 샘플에는 사용자 지정 이미지 형식용 디코더 및 인코더를 만드는 방법을 보여 줍니다.  
   
 > [!NOTE]
 >  시스템이 코덱을 인식하려면 디지털로 서명되어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Imaging.BitmapSource>  
- <xref:System.Windows.Media.Imaging.BitmapImage>  
- <xref:System.Windows.Controls.Image>  
- <xref:System.Windows.Media.Imaging.BitmapMetadata>  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Win32 샘플 코덱](https://go.microsoft.com/fwlink/?LinkID=160052)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Imaging.BitmapSource>
+- <xref:System.Windows.Media.Imaging.BitmapImage>
+- <xref:System.Windows.Controls.Image>
+- <xref:System.Windows.Media.Imaging.BitmapMetadata>
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Win32 샘플 코덱](https://go.microsoft.com/fwlink/?LinkID=160052)

@@ -1,18 +1,18 @@
 ---
-title: '방법: 파일, 문자열 또는 스트림에서 XML 로드(Visual Basic)'
+title: '방법: 파일, 문자열 또는 Stream (Visual Basic)에서 XML 로드'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML [Visual Basic], loading
 - LINQ to XML [Visual Basic], loading XML from files
 ms.assetid: 2b02dcec-4cca-4575-b4ad-89ceb87b984c
-ms.openlocfilehash: 241f6552e46d7689b42a409ba44bc747984773ca
-ms.sourcegitcommit: fe02afbc39e78afd78cc6050e4a9c12a75f579f8
+ms.openlocfilehash: b660900c1ac29e40eeed36b1e07326dfbcf69ec8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43258406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492743"
 ---
-# <a name="how-to-load-xml-from-a-file-string-or-stream-visual-basic"></a>방법: 파일, 문자열 또는 스트림에서 XML 로드(Visual Basic)
+# <a name="how-to-load-xml-from-a-file-string-or-stream-visual-basic"></a>방법: 파일, 문자열 또는 Stream (Visual Basic)에서 XML 로드
 만들 수 있습니다 [XML 리터럴을](../../../../visual-basic/language-reference/xml-literals/index.md) 몇 가지 메서드를 사용 하 여 파일, 문자열 또는 스트림에 같은 외부 원본에서 콘텐츠를 사용 하 여 채웁니다. 이러한 메서드는 다음 예제에 표시 됩니다.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
@@ -41,12 +41,12 @@ ms.locfileid: "43258406"
   
  [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_3.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType>  
- [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md)  
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
- [Visual Basic에서 XML 조작](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType>
+- [XML 리터럴](../../../../visual-basic/language-reference/xml-literals/index.md)
+- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [Visual Basic에서 XML 조작](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)

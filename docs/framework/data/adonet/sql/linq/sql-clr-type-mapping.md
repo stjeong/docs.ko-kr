@@ -2,12 +2,12 @@
 title: SQL-CLR 형식 매핑
 ms.date: 07/23/2018
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
-ms.openlocfilehash: d5c0072d8561efa1211de191a1f2b6f3a1e55b7b
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 5c8c6456d108975ec927e28ac80c8dcca1567b46
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837338"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54617345"
 ---
 # <a name="sql-clr-type-mapping"></a>SQL-CLR 형식 매핑
 LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자가 선택한 프로그래밍 언어로 표현되는 개체 모델에 매핑됩니다. 응용 프로그램을 실행하면 LINQ to SQL에서는 개체 모델의 통합 언어 쿼리를 SQL로 변환하여 실행을 위해 데이터베이스로 전송합니다. 데이터베이스에서 결과가 반환되면 LINQ to SQL에서는 해당 결과를 사용자의 프로그래밍 언어로 작업할 수 있는 개체로 다시 변환합니다.  
@@ -256,8 +256,8 @@ LINQ to SQL에서 관계형 데이터베이스의 데이터 모델은 사용자�
   
  LINQ to SQL에서는 이러한 기타 형식에 대해 여기에 나와 있는 것 이외의 형식 매핑은 지원하지 않습니다.  자세한 내용은 참조는 [형식 매핑 런타임 동작 매트릭스](#BehaviorMatrix)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [특성 기반 매핑](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)  
- [외부 매핑](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
- [데이터 형식 및 함수](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)  
- [SQL-CLR 형식 불일치](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
+## <a name="see-also"></a>참고자료
+- [특성 기반 매핑](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)
+- [외부 매핑](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [데이터 형식 및 함수](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+- [SQL-CLR 형식 불일치](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
