@@ -73,7 +73,7 @@ ms.locfileid: "50202161"
  런타임 지시문 (XML 구성) 파일을 동적으로 메서드를 실행 하기 위한 구현 코드와 메타 데이터를 사용할 수 있는지를 앱에 런타임 시 정의한 \*. rd.xml 합니다. 앱에서 이 예외가 throw되지 않도록 하려면 형식 또는 형식 멤버에 필요한 메타데이터가 런타임에 제공되도록 \*.rd.xml을 수정해야 합니다. \*.rd.xml 파일의 형식에 대한 자세한 내용은 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 확인하세요.  
   
 > [!IMPORTANT]
->  이 예외는 응용 프로그램에 필요한 구현 코드를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 적절 한을 지정 하 여이 예외를 제거 하는 일반적으로 `Activate` 나 `Dynamic` 런타임 지시문 파일에서 프로그램 요소에 대 한 정책 (\*..rd.xml 파일). 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
+>  이 예외는 애플리케이션에 필요한 구현 코드를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 적절 한을 지정 하 여이 예외를 제거 하는 일반적으로 `Activate` 나 `Dynamic` 런타임 지시문 파일에서 프로그램 요소에 대 한 정책 (\*..rd.xml 파일). 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
 >   
 > - 형식의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
 > - 메서드의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
