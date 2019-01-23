@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms BindingNavigator 컨트롤을 사용하여 데이터 탐색'
+title: '방법: Windows Forms BindingNavigator 컨트롤을 사용 하 여 데이터를 이동 합니다.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data navigation
 - examples [Windows Forms], BindingNavigator control
 ms.assetid: 0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb
-ms.openlocfilehash: 14f845e33b38da39b900b32c07297a350326350d
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 8fb95eb3640783f25890d08a1d6e01839020724c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539690"
 ---
-# <a name="how-to-navigate-data-with-the-windows-forms-bindingnavigator-control"></a>방법: Windows Forms BindingNavigator 컨트롤을 사용하여 데이터 탐색
+# <a name="how-to-navigate-data-with-the-windows-forms-bindingnavigator-control"></a>방법: Windows Forms BindingNavigator 컨트롤을 사용 하 여 데이터를 이동 합니다.
 Windows Forms의 <xref:System.Windows.Forms.BindingNavigator> 컨트롤을 통해 개발자는 자신이 만든 폼에서 간단한 데이터 탐색 및 조작 사용자 인터페이스를 최종 사용자에게 제공할 수 있습니다.  
   
- <xref:System.Windows.Forms.BindingNavigator> 컨트롤은 데이터 집합의 첫 번째 레코드, 마지막 레코드, 다음 레코드 및 이전 레코드를 탐색하도록 미리 구성된 단추와 레코드 추가 및 삭제 단추가 있는 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다. <xref:System.Windows.Forms.BindingNavigator> 컨트롤은 <xref:System.Windows.Forms.ToolStrip> 컨트롤이므로 쉽게 단추를 추가할 수 있습니다.  [방법: Windows Forms BindingNavigator 컨트롤에 로드, 저장 및 취소 단추 추가](https://msdn.microsoft.com/library/safa4957\(v=vs.110\))도 참조하세요.  
+ <xref:System.Windows.Forms.BindingNavigator> 컨트롤은 데이터 집합의 첫 번째 레코드, 마지막 레코드, 다음 레코드 및 이전 레코드를 탐색하도록 미리 구성된 단추와 레코드 추가 및 삭제 단추가 있는 <xref:System.Windows.Forms.ToolStrip> 컨트롤입니다. <xref:System.Windows.Forms.BindingNavigator> 컨트롤은 <xref:System.Windows.Forms.ToolStrip> 컨트롤이므로 쉽게 단추를 추가할 수 있습니다.  또한 참조 [방법: 저장, 로드를 추가 하 고 취소 단추는 Windows Forms BindingNavigator 컨트롤](https://msdn.microsoft.com/library/safa4957\(v=vs.110\))합니다.  
   
  <xref:System.Windows.Forms.BindingNavigator> 컨트롤의 각 단추에 대해 프로그래밍 방식으로 동일한 기능을 허용하는 <xref:System.Windows.Forms.BindingSource> 구성 요소의 해당 멤버가 있습니다. 예를 들어 <xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A> 단추는 <xref:System.Windows.Forms.BindingSource> 구성 요소의 <xref:System.Windows.Forms.BindingSource.MoveFirst%2A> 메서드에 해당하고 <xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A> 단추는 <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> 메서드에 해당합니다. 따라서 <xref:System.Windows.Forms.BindingNavigator> 컨트롤이 데이터 레코드를 탐색할 수 있게 하려는 경우 해당 <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> 속성을 폼의 적절한 <xref:System.Windows.Forms.BindingSource> 구성 요소로 설정하면 됩니다.  
   
@@ -51,9 +51,9 @@ Windows Forms의 <xref:System.Windows.Forms.BindingNavigator> 컨트롤을 통�
   
 -   System, System.Data, System.Drawing, System.Windows.Forms and System.Xml 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.  
+ Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.BindingNavigator>  
- [BindingNavigator 컨트롤](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.BindingNavigator>
+- [BindingNavigator 컨트롤](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

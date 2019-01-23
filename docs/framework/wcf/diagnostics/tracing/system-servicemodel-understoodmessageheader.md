@@ -2,12 +2,12 @@
 title: System.ServiceModel.UnderstoodMessageHeader
 ms.date: 03/30/2017
 ms.assetid: 8a8560bf-d13b-452d-bfb5-a5221cb191bd
-ms.openlocfilehash: 9c6e3d381574abd152870f2a866bf18ea21450ae
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fb5c22262b5dfc4f43bdf72a89d2b0765255aeb8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33485523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539537"
 ---
 # <a name="systemservicemodelunderstoodmessageheader"></a>System.ServiceModel.UnderstoodMessageHeader
 System.ServiceModel.UnderstoodMessageHeader  
@@ -15,7 +15,7 @@ System.ServiceModel.UnderstoodMessageHeader
 ## <a name="description"></a>설명  
  메시지 헤더를 인식했습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [추적을 사용하여 응용 프로그램 문제 해결](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)
+## <a name="see-also"></a>참고자료
+- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [추적을 사용하여 애플리케이션 문제 해결](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [관리 및 진단](../../../../../docs/framework/wcf/diagnostics/index.md)

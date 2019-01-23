@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 9f98d85e5fd01a631352f5db7bba6ed309449d68
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 03c2620913aff2ef2934e7c07574c130923c7139
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613520"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540665"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>대형 응답성 .NET Framework 응용 프로그램 작성
 이 문서에서는 규모가 큰 .NET Framework 앱이나 파일 또는 데이터베이스와 같이 많은 양의 데이터를 처리하는 앱의 성능을 향상시키기 위한 팁을 제공합니다. 이러한 팁은 C# 및 Visual Basic 컴파일러를 관리 코드로 다시 작성하면서 수집되었으며, C# 컴파일러의 실제 몇 가지 예를 포함하고 있습니다. 
@@ -461,14 +461,14 @@ class Compilation { /*...*/
   
 -   결국은 모두 할당에 관련된 문제임 – 이 부분이 바로 컴파일러 플랫폼 팀이 새 컴파일러의 성능을 향상시키기 위해 대부분의 시간을 사용하는 부분입니다. 
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [이 항목의 프레젠테이션 비디오](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
-- [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
-- [성능](../../../docs/framework/performance/index.md)  
-- [.NET 성능 팁](https://msdn.microsoft.com/library/ms973839.aspx)  
-- [Windows Phone 성능 분석 도구](https://msdn.microsoft.com/magazine/hh781024.aspx)  
-- [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)  
-- [채널 9 PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial)  
+- [이 항목의 프레젠테이션 비디오](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)
+- [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [성능](../../../docs/framework/performance/index.md)
+- [.NET 성능 팁](https://msdn.microsoft.com/library/ms973839.aspx)
+- [Windows Phone 성능 분석 도구](https://msdn.microsoft.com/magazine/hh781024.aspx)
+- [Visual Studio Profiler 사용 하 여 응용 프로그램 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [채널 9 PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
-- [GitHub의 dotnet/roslyn 리포지토리](https://github.com/dotnet/roslyn)
+- [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)
