@@ -1,16 +1,16 @@
 ---
-title: '&lt;바인딩&gt;'
+title: '&lt;binding&gt;'
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 666183d6-4d1f-45c7-ac64-bdf93ee8f36f
-ms.openlocfilehash: d72b3a34e0696df944b2338c89f167c8bfa06400
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: fb4fafda31205e2ce5efd01ab265fcacfa70bdf6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392254"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539196"
 ---
-# <a name="ltbindinggt"></a>&lt;바인딩&gt;
+# <a name="ltbindinggt"></a>&lt;binding&gt;
 `binding` 요소를 사용하여 WCF(Windows Communication Foundation)에서 제공하는 미리 정의된 다양한 바인딩 형식을 구성할 수 있습니다.  
   
 ## <a name="system-provided-binding"></a>시스템 제공 바인딩  
@@ -37,10 +37,10 @@ ms.locfileid: "33392254"
   
  사용자 지정 바인딩은 `name` 특성으로 식별됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.BindingsSection>  
- <xref:System.ServiceModel.Channels.Binding>  
- <xref:System.ServiceModel.Channels.BindingElement>  
- [바인딩](../../../docs/framework/wcf/bindings.md)  
- [사용자 지정 바인딩](../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.BindingsSection>
+- <xref:System.ServiceModel.Channels.Binding>
+- <xref:System.ServiceModel.Channels.BindingElement>
+- [바인딩](../../../docs/framework/wcf/bindings.md)
+- [사용자 지정 바인딩](../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -1,15 +1,15 @@
 ---
-title: '방법: 지원하는 자격 증명 만들기'
+title: '방법: 지원 자격 증명 만들기'
 ms.date: 03/30/2017
 ms.assetid: d0952919-8bb4-4978-926c-9cc108f89806
-ms.openlocfilehash: ef4d9a406e6fc929e4ad59911d587e462c9b2b65
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 1e56d595b389f2217f4c50db1242f418742a5d56
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43499993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54539807"
 ---
-# <a name="how-to-create-a-supporting-credential"></a>방법: 지원하는 자격 증명 만들기
+# <a name="how-to-create-a-supporting-credential"></a>방법: 지원 자격 증명 만들기
 둘 이상의 자격 증명이 필요한 사용자 지정 보안 체계를 사용할 수 있습니다. 예를 들어 서비스는 클라이언트로부터 사용자 이름과 암호뿐 아니라 클라이언트가 18세 이상임을 입증하는 자격 증명을 요구할 수 있습니다. 두 번째 자격 증명은는 *자격 증명을 지 원하는*합니다. 이 항목에서는 Windows Communication Foundation (WCF) 클라이언트에서 이러한 자격 증명을 구현 하는 방법에 설명 합니다.  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "43499993"
 |서명 및 암호화|서명 및 암호화된 지원 토큰은 `wsse:SecurityHeader`에 나타날 때 암호화되는 서명된 지원 토큰입니다.|  
   
 ## <a name="programming-supporting-credentials"></a>지원 자격 증명 프로그래밍  
- 지원 토큰을 만들어야 합니다를 사용 하는 서비스를 만들려면를 [ \<customBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)합니다. (자세한 내용은 [방법: SecurityBindingElement를 사용자 지정 바인딩을 사용 하 여 만들](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).)  
+ 지원 토큰을 만들어야 합니다를 사용 하는 서비스를 만들려면를 [ \<customBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)합니다. (자세한 내용은 참조 하세요. [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩을 만들려면](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).)  
   
  사용자 지정 바인딩을 만들 때의 첫 단계는 다음 세 가지 형식 중 하나일 수 있는 보안 바인딩 요소를 만드는 작업입니다.  
   
@@ -80,5 +80,5 @@ ms.locfileid: "43499993"
 ### <a name="code"></a>코드  
  [!code-csharp[c_SupportingCredential#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_supportingcredential/cs/source.cs#1)]  
   
-## <a name="see-also"></a>참고 항목  
- [방법: SecurityBindingElement를 사용하여 사용자 지정 바인딩 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+## <a name="see-also"></a>참고자료
+- [방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

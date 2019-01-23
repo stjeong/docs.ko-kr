@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1883365f-9d6c-4ccb-9187-df309f47706d
-ms.openlocfilehash: 2f7d5cc5689914db2107febadf60bee6da1c2b72
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 0dfc21264353ac3aa1e20c7fa7b6b8381d47480d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32767013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54562156"
 ---
 # <a name="generic-field-and-setfield-methods-linq-to-dataset"></a>제네릭 Field 및 SetField 메서드(LINQ to DataSet)
 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)]은 열 값에 액세스할 수 있도록 확장 메서드인 <xref:System.Data.DataRow> 및 <xref:System.Data.DataRowExtensions.Field%2A> 메서드를 <xref:System.Data.DataRowExtensions.SetField%2A> 클래스에 제공합니다. 개발자는 이러한 메서드를 사용하여 열 값에 쉽게 액세스할 수 있으며, 특히 null 값과 관련된 작업을 쉽게 수행할 수 있습니다. <xref:System.Data.DataSet>은 <xref:System.DBNull.Value>를 사용하여 null 값을 나타내는 반면 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)]에서는 [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)]에서 도입된 nullable 형식 지원을 사용합니다. <xref:System.Data.DataRow>의 기존 열 접근자를 사용하려면 반환 개체를 적절한 형식으로 캐스팅해야 합니다. 반환된 <xref:System.Data.DataRow>가 암시적으로 다른 형식으로 캐스팅되면 <xref:System.DBNull.Value>이 throw되므로 <xref:System.InvalidCastException>의 특정 필드가 null일 가능성이 있는 경우 명시적으로 null 값을 확인해야 합니다. 다음 예제에서 <xref:System.Data.DataRow.IsNull%2A> 메서드를 사용하여 null 값을 확인하지 않으면 인덱서에서 <xref:System.DBNull.Value>를 반환하면서 <xref:System.String>으로 캐스팅할 때 예외가 throw됩니다.  
@@ -29,5 +29,5 @@ ms.locfileid: "32767013"
   
  <xref:System.Data.DataRowExtensions.SetField%2A> 메서드 자체에서는 형식 변환이 수행되지 않습니다. 그렇다고 해서 형식 변환이 발생하지 않는다는 것은 아닙니다. <xref:System.Data.DataRowExtensions.SetField%2A> 메서드는 [!INCLUDE[ado_whidbey_long](../../../../includes/ado-whidbey-long-md.md)] 클래스의 <xref:System.Data.DataRow> 동작을 노출합니다. <xref:System.Data.DataRow> 개체에서 형식 변환을 수행하면 변환된 값은 <xref:System.Data.DataRow> 개체에 저장됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Data.DataRowExtensions>
+## <a name="see-also"></a>참고자료
+- <xref:System.Data.DataRowExtensions>

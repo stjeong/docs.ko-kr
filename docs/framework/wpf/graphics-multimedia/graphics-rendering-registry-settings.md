@@ -8,21 +8,21 @@ helpviewer_keywords:
 - troubleshooting graphics rendering [WPF]
 - graphics [WPF], rendering
 ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
-ms.openlocfilehash: acaa8f2ff6611f2f0beb07b74193341edfa2a428
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 020570c66401661f55b82a0c7111b4ac53f9c884
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44259849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54556157"
 ---
 # <a name="graphics-rendering-registry-settings"></a>그래픽 렌더링 레지스트리 설정
-이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램에 영향을 미치는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 렌더링 레지스트리 설정에 대해 간략하게 설명합니다.  
+이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션에 영향을 미치는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 그래픽 렌더링 레지스트리 설정에 대해 간략하게 설명합니다.  
   
 
   
 <a name="overview"></a>   
 ## <a name="when-to-use-graphics-rendering-registry-settings"></a>그래픽 렌더링 레지스트리 설정을 사용하는 경우  
- 이러한 레지스트리 설정은 문제 해결, 디버깅 및 제품 지원 목적으로 제공됩니다. 레지스트리를 변경하면 모든 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램에 영향을 주기 때문에 응용 프로그램은 자동으로 또는 설치 중에 이러한 레지스트리 키를 변경하면 안 됩니다.  
+ 이러한 레지스트리 설정은 문제 해결, 디버깅 및 제품 지원 목적으로 제공됩니다. 레지스트리를 변경하면 모든 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션에 영향을 주기 때문에 애플리케이션은 자동으로 또는 설치 중에 이러한 레지스트리 키를 변경하면 안 됩니다.  
   
 <a name="xpdmandwddm"></a>   
 ## <a name="what-are-xpdm-and-wddm"></a>XPDM 및 WDDM이란?  
@@ -48,7 +48,7 @@ ms.locfileid: "44259849"
 |------------------|----------------|  
 |`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics\DisableHWAcceleration`|DWORD|  
   
- **하드웨어 가속 옵션 사용 안 함**을 사용하여 디버깅 및 테스트 목적으로 하드웨어 가속을 해제할 수 있습니다. 응용 프로그램에서 렌더링 아티팩트를 표시되면 하드웨어 가속을 해제하세요. 아티팩트가 사라지면 비디오 드라이버에 문제가 있는 것일 수 있습니다.  
+ **하드웨어 가속 옵션 사용 안 함**을 사용하여 디버깅 및 테스트 목적으로 하드웨어 가속을 해제할 수 있습니다. 애플리케이션에서 렌더링 아티팩트를 표시되면 하드웨어 가속을 해제하세요. 아티팩트가 사라지면 비디오 드라이버에 문제가 있는 것일 수 있습니다.  
   
  **하드웨어 가속 옵션 사용 안 함**은 0 또는 1의 DWORD 값입니다. 이 값이 1이면 하드웨어 가속이 사용되지 않습니다. 이 값이 0이면 시스템이 하드웨어 가속 요구를 충족할 경우 하드웨어 가속이 사용됩니다. 자세한 내용은 [그래픽 렌더링 계층](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)을 참조하세요.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "44259849"
   
  **최대 다중 샘플 값**을 사용하여 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 콘텐츠의 앤티앨리어싱 최대 크기를 조정할 수 있습니다. 이 수준을 사용하여 [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)]에서 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 앤티앨리어싱을 사용하지 않도록 설정하거나 [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)]에서 사용하도록 설정할 수 있습니다.  
   
- **최대 다중 샘플 값**은 0~16 사이의 DWORD 값입니다. 값 0은 3차원 콘텐츠의 다중 샘플 앤티앨리어싱을 사용 안 함으로 설정하도록 지정하고, 값 16은 비디오 카드에서 지원할 경우 최대 16배의 다중 샘플 앤티앨리어싱을 사용하려고 합니다. XPDM 드라이버를 사용하는 컴퓨터에서 이 레지스트리 키 값을 설정하면 응용 프로그램이 많은 양의 추가 비디오 메모리를 사용하고, [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 렌더링 성능이 저하되고, 렌더링 오류 및 안정성 문제가 발생할 가능성이 있습니다.  
+ **최대 다중 샘플 값**은 0~16 사이의 DWORD 값입니다. 값 0은 3차원 콘텐츠의 다중 샘플 앤티앨리어싱을 사용 안 함으로 설정하도록 지정하고, 값 16은 비디오 카드에서 지원할 경우 최대 16배의 다중 샘플 앤티앨리어싱을 사용하려고 합니다. XPDM 드라이버를 사용하는 컴퓨터에서 이 레지스트리 키 값을 설정하면 애플리케이션이 많은 양의 추가 비디오 메모리를 사용하고, [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 렌더링 성능이 저하되고, 렌더링 오류 및 안정성 문제가 발생할 가능성이 있습니다.  
   
  이 레지스트리 키가 설정되지 않았으면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 기본값은 XPDM 드라이버의 경우 0, WDDM 드라이버의 경우 4입니다.  
   
@@ -93,10 +93,10 @@ ms.locfileid: "44259849"
   
  **참조 래스터라이저 옵션 사용**을 사용하여 강제로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 디버깅을 위한 시뮬레이트된 하드웨어 렌더링 모드로 전환할 수 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]는 하드웨어 모드로 전환되지만 실제 하드웨어 장치 대신 [!INCLUDE[TLA#tla_d3d](../../../../includes/tlasharptla-d3d-md.md)] 참조 소프트웨어 래스터라이저인 d3dref9.dll을 사용합니다.  
   
- 참조 래스터라이저는 매우 느리지만 비디오 드라이버를 우회하여 드라이버 문제로 인한 렌더링 문제를 방지합니다. 이러한 이유로 참조 래스터라이저를 사용하여 렌더링 문제가 비디오 드라이버로 인한 것인지 확인할 수 있습니다. d3dref9.dll 파일은 시스템 경로의 위치나 응용 프로그램의 로컬 디렉터리 같이 응용 프로그램이 액세스할 수 있는 위치에 있어야 합니다.  
+ 참조 래스터라이저는 매우 느리지만 비디오 드라이버를 우회하여 드라이버 문제로 인한 렌더링 문제를 방지합니다. 이러한 이유로 참조 래스터라이저를 사용하여 렌더링 문제가 비디오 드라이버로 인한 것인지 확인할 수 있습니다. d3dref9.dll 파일은 시스템 경로의 위치나 애플리케이션의 로컬 디렉터리 같이 애플리케이션이 액세스할 수 있는 위치에 있어야 합니다.  
   
  **참조 래스터라이저 옵션 사용**은 DWORD 값을 사용합니다. 값이 0이면 참조 래스터라이저가 사용되지 않는 것입니다. 0이 아닌 값을 지정하면 강제로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]가 참조 래스터라이저를 사용하게 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [그래픽 렌더링 계층](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## <a name="see-also"></a>참고자료
+- [그래픽 렌더링 계층](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
