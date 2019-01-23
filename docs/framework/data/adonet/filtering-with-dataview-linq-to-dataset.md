@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5632d74a-ff53-4ea7-9fe7-4a148eeb1c68
-ms.openlocfilehash: b457eb925f636656455ef8f3f02f9d2a78558325
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: c4c6c01839294e134b0961059a4c165a67c1ecf9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516735"
 ---
 # <a name="filtering-with-dataview-linq-to-dataset"></a>DataView로 필터링(LINQ to DataSet)
-특정 조건을 사용하여 데이터를 필터링한 다음 UI 컨트롤을 통해 클라이언트에 데이터를 제공하는 기능은 데이터 바인딩의 중요한 기능입니다. <xref:System.Data.DataView>에서는 데이터를 필터링하여 특정 필터 조건을 충족하는 데이터 행의 하위 집합을 반환하는 여러 가지 방법을 제공합니다. 문자열 기반 하는 것 외에도 필터링 기능 <xref:System.Data.DataView> 사용 하는 기능도 제공 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 필터링 조건에 대 한 식입니다. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 문자열 기반 필터링 보다 훨씬 더 복잡 하 고 강력한 필터링 작업에 대 한 식을 사용 합니다.  
+특정 조건을 사용하여 데이터를 필터링한 다음 UI 컨트롤을 통해 클라이언트에 데이터를 제공하는 기능은 데이터 바인딩의 중요한 기능입니다. <xref:System.Data.DataView>에서는 데이터를 필터링하여 특정 필터 조건을 충족하는 데이터 행의 하위 집합을 반환하는 여러 가지 방법을 제공합니다. 문자열 기반 하는 것 외에도 필터링 기능도 <xref:System.Data.DataView> 사용 하는 기능도 제공 [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 식을 필터링 조건에 대 한 합니다. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 식은 문자열 기반 필터링에 비해 훨씬 더 복잡 하 고 강력한 필터링 작업을 허용 합니다.  
   
  <xref:System.Data.DataView>를 사용하여 데이터를 필터링하는 방법에는 두 가지가 있습니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "32766103"
  [!code-vb[DP DataView Samples#SoundEx](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#soundex)]  
   
 ## <a name="using-the-rowfilter-property"></a>RowFilter 속성 사용  
- <xref:System.Data.DataView>의 기존 문자열 기반 필터링 기능은 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 컨텍스트에서 계속 사용할 수 있습니다. 문자열 기반 하는 방법에 대 한 자세한 내용은 <xref:System.Data.DataView.RowFilter%2A> 참조 필터링 [정렬 및 필터링 데이터](../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)합니다.  
+ <xref:System.Data.DataView>의 기존 문자열 기반 필터링 기능은 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 컨텍스트에서 계속 사용할 수 있습니다. 문자열 기반 하는 방법에 대 한 자세한 내용은 <xref:System.Data.DataView.RowFilter%2A> 필터링을 참조 하세요 [정렬 및 필터링 데이터](../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)입니다.  
   
  다음 예제에서는 Contact 테이블에서 <xref:System.Data.DataView>를 만든 다음 연락처의 성이 "Zhu"인 행을 반환하도록 <xref:System.Data.DataView.RowFilter%2A> 속성을 설정합니다.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "32766103"
  [!code-csharp[DP DataView Samples#LDVFromQueryWhereSetRowFilter](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvfromquerywheresetrowfilter)]
  [!code-vb[DP DataView Samples#LDVFromQueryWhereSetRowFilter](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvfromquerywheresetrowfilter)]  
   
- 데이터의 하위 집합에 대한 동적 뷰를 제공하는 것과는 반대로 데이터에 대한 특정 쿼리 결과를 반환하려는 경우 <xref:System.Data.DataView.Find%2A> 속성을 설정하는 대신 <xref:System.Data.DataView.FindRows%2A>의 <xref:System.Data.DataView> 또는 <xref:System.Data.DataView.RowFilter%2A> 메서드를 사용할 수 있습니다. <xref:System.Data.DataView.RowFilter%2A> 속성은 바인딩된 컨트롤이 필터링된 결과를 표시하는 데이터 바인딩된 응용 프로그램에 가장 적합합니다. <xref:System.Data.DataView.RowFilter%2A> 속성을 설정하면 데이터의 인덱스가 다시 작성되므로 응용 프로그램에 오버헤드가 발생하여 성능이 저하됩니다. <xref:System.Data.DataView.Find%2A> 및 <xref:System.Data.DataView.FindRows%2A> 메서드는 인덱스를 다시 작성하지 않고 현재 인덱스를 사용합니다. <xref:System.Data.DataView.Find%2A> 또는 <xref:System.Data.DataView.FindRows%2A>를 한 번만 호출할 경우에는 기존 <xref:System.Data.DataView>를 사용해야 합니다. <xref:System.Data.DataView.Find%2A> 또는 <xref:System.Data.DataView.FindRows%2A>를 여러 번 호출할 경우에는 새 <xref:System.Data.DataView>를 만들어서 검색하려는 열의 인덱스를 다시 작성한 다음 <xref:System.Data.DataView.Find%2A> 또는 <xref:System.Data.DataView.FindRows%2A> 메서드를 호출해야 합니다. 에 대 한 자세한 내용은 <xref:System.Data.DataView.Find%2A> 및 <xref:System.Data.DataView.FindRows%2A> 메서드 참조 [행 찾기](../../../../docs/framework/data/adonet/dataset-datatable-dataview/finding-rows.md) 및 [DataView 성능](../../../../docs/framework/data/adonet/dataview-performance.md)합니다.  
+ 데이터의 하위 집합에 대한 동적 뷰를 제공하는 것과는 반대로 데이터에 대한 특정 쿼리 결과를 반환하려는 경우 <xref:System.Data.DataView.Find%2A> 속성을 설정하는 대신 <xref:System.Data.DataView.FindRows%2A>의 <xref:System.Data.DataView> 또는 <xref:System.Data.DataView.RowFilter%2A> 메서드를 사용할 수 있습니다. <xref:System.Data.DataView.RowFilter%2A> 속성은 바인딩된 컨트롤이 필터링된 결과를 표시하는 데이터 바인딩된 응용 프로그램에 가장 적합합니다. <xref:System.Data.DataView.RowFilter%2A> 속성을 설정하면 데이터의 인덱스가 다시 작성되므로 응용 프로그램에 오버헤드가 발생하여 성능이 저하됩니다. <xref:System.Data.DataView.Find%2A> 및 <xref:System.Data.DataView.FindRows%2A> 메서드는 인덱스를 다시 작성하지 않고 현재 인덱스를 사용합니다. <xref:System.Data.DataView.Find%2A> 또는 <xref:System.Data.DataView.FindRows%2A>를 한 번만 호출할 경우에는 기존 <xref:System.Data.DataView>를 사용해야 합니다. <xref:System.Data.DataView.Find%2A> 또는 <xref:System.Data.DataView.FindRows%2A>를 여러 번 호출할 경우에는 새 <xref:System.Data.DataView>를 만들어서 검색하려는 열의 인덱스를 다시 작성한 다음 <xref:System.Data.DataView.Find%2A> 또는 <xref:System.Data.DataView.FindRows%2A> 메서드를 호출해야 합니다. 에 대 한 자세한 내용은 합니다 <xref:System.Data.DataView.Find%2A> 하 고 <xref:System.Data.DataView.FindRows%2A> 메서드를 참조 하세요 [행 찾기](../../../../docs/framework/data/adonet/dataset-datatable-dataview/finding-rows.md) 및 [DataView 성능](../../../../docs/framework/data/adonet/dataview-performance.md).  
   
 ## <a name="clearing-the-filter"></a>필터 지우기  
  필터링이 설정된 후 <xref:System.Data.DataView> 속성을 사용하여 <xref:System.Data.DataView.RowFilter%2A>의 필터를 지울 수 있습니다. <xref:System.Data.DataView>의 필터는 두 가지 방법으로 지울 수 있습니다.  
@@ -92,6 +92,6 @@ ms.locfileid: "32766103"
  [!code-csharp[DP DataView Samples#LDVClearRowFilter](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvclearrowfilter)]
  [!code-vb[DP DataView Samples#LDVClearRowFilter](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvclearrowfilter)]  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 바인딩 및 LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)  
- [DataView로 정렬](../../../../docs/framework/data/adonet/sorting-with-dataview-linq-to-dataset.md)
+## <a name="see-also"></a>참고자료
+- [데이터 바인딩 및 LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)
+- [DataView로 정렬](../../../../docs/framework/data/adonet/sorting-with-dataview-linq-to-dataset.md)

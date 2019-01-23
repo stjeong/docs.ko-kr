@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], hosting workflows
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
-ms.openlocfilehash: f392c8d632b3c43058090afce99cba992e2bee4b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b6eeced2f7707ac69595cacc1c4a1301b1d2bfef
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33514545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523201"
 ---
 # <a name="hosting-workflows"></a>워크플로 호스팅
 이 단원의 항목에서는 워크플로 호스팅에 대해 설명합니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "33514545"
  [WorkflowIdentity 및 버전 관리 사용](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md)  
  `WorkflowIdentity`를 사용하여 여러 버전의 워크플로를 함께 호스트하는 방법에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Workflow Foundation 프로그래밍](../../../docs/framework/windows-workflow-foundation/programming.md)  
- [워크플로 디자인](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)  
- [Windows Workflow Foundation 데이터 모델](../../../docs/framework/windows-workflow-foundation/data-model.md)
+## <a name="see-also"></a>참고자료
+- [Windows Workflow Foundation 프로그래밍](../../../docs/framework/windows-workflow-foundation/programming.md)
+- [워크플로 디자인](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)
+- [Windows Workflow Foundation 데이터 모델](../../../docs/framework/windows-workflow-foundation/data-model.md)

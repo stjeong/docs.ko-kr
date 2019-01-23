@@ -9,12 +9,12 @@ helpviewer_keywords:
 - literals [Visual Basic], coercing data type
 - declarations [Visual Basic], data types
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
-ms.openlocfilehash: 1d030f8058cd497212c20bca8f064f2bedc99fce
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d85ff343587e8689a4859a09c8dc80932374a82e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507819"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498650"
 ---
 # <a name="constant-and-literal-data-types-visual-basic"></a>상수 및 리터럴 데이터 형식(Visual Basic)
 리터럴 값인 변수의 값 또는 숫자 3 또는 문자열 "Hello"와 같은 식의 결과가 아니라 자체적으로 표현 됩니다. 상수는 리터럴 대신 해당 값이 달라질 변수와 달리 프로그램 전체에서이 동일한 값을 유지 하는 의미 있는 이름입니다.  
@@ -61,14 +61,14 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
 |`Single`|(없음)|F 또는!|  
 |`String`|"|(없음)|  
   
-## <a name="see-also"></a>참고 항목  
- [사용자 정의 상수](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)  
- [방법: 상수 선언](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)  
- [상수 개요](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)  
- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Option Explicit 문](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [열거형 개요](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)  
- [방법: 열거형 선언](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)  
- [열거형 및 이름 한정](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
- [상수 및 열거형](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [사용자 정의 상수](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)
+- [방법: 상수 선언](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)
+- [상수 개요](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
+- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Option Explicit 문](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [열거형 개요](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
+- [방법: 열거형 선언](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
+- [열거형 및 이름 한정](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)
+- [상수 및 열거형](../../../../visual-basic/language-reference/constants-and-enumerations.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42358
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
-ms.openlocfilehash: fe820b9d2157c09428903a36427d3ff5e4c0045b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 5c8767db154c79d9e3b37a22410ac1e4705b7a44
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45619177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609800"
 ---
 # <a name="because-this-call-is-not-awaited-the-current-method-continues-to-run-before-the-call-is-completed"></a>이 호출이 대기되지 않으므로 호출이 완료되기 전에 현재 메서드가 계속 실행됩니다.
 이 호출이 대기되지 않으므로 호출이 완료되기 전에 현재 메서드가 계속 실행됩니다. 'Await' 연산자는 호출 결과에 적용하는 것이 좋습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "45619177"
   
  가장 좋은 방법은 항상 호출을 기다리는 것입니다.  
   
- 이 메시지는 기본적으로 경고입니다. 경고를 숨기 거 나 경고를 오류로 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)합니다.  
+ 이 메시지는 기본적으로 경고입니다. 경고를 숨기거나 오류로 처리하는 방법에 대한 자세한 내용은 [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)을 참조하세요.  
   
  **오류 ID:** BC42358  
   
@@ -93,9 +93,9 @@ ms.locfileid: "45619177"
     ```  
   
 ## <a name="example"></a>예제  
- 다음 Windows Presentation Foundation(WPF) 응용 프로그램은 이전 예제의 메서드를 포함합니다. 다음 단계는 응용 프로그램을 설정합니다.  
+ 다음 Windows Presentation Foundation(WPF) 애플리케이션은 이전 예제의 메서드를 포함합니다. 다음 단계는 애플리케이션을 설정합니다.  
   
-1.  WPF 응용 프로그램을 만들고 이름을 `AsyncWarning`으로 지정합니다.  
+1.  WPF 애플리케이션을 만들고 이름을 `AsyncWarning`으로 지정합니다.  
   
 2.  Visual Studio 코드 편집기에서 **MainWindow.xaml** 탭을 선택합니다.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "45619177"
   
      단추와 텍스트 상자가 포함된 간단한 창이 MainWindow.xaml의 **디자인** 뷰에 나타납니다.  
   
-     XAML 디자이너에 대한 자세한 내용은 [Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)를 참조하세요. 간단한 UI를 직접 빌드하는 방법에 대한 자세한 내용은 [연습: Async 및 Await를 사용하여 웹에 액세스(C# 및 Visual Basic)](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)의 "To create a WPF application"(WPF 응용 프로그램을 만들려면) 섹션과 "To design a simple WPF MainWindow"(간단한 WPF MainWindow를 디자인하려면) 섹션을 참조하세요.  
+     XAML 디자이너에 대한 자세한 내용은 [Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)를 참조하세요. 간단한 UI를 직접 빌드하는 방법에 대 한 내용은 참조는 "WPF 응용 프로그램을 만들려면" 및 "간단한 WPF MainWindow를 디자인"을 부분 [연습: Async 및 Await를 사용하여 웹에 액세스](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)를 참조하세요.  
   
 4.  MainWindow.xaml.vb의 코드를 다음 코드로 바꿉니다.  
   
@@ -205,5 +205,5 @@ ms.locfileid: "45619177"
   
 ## <a name="see-also"></a>참고자료
 
-- [Await 연산자](../../../visual-basic/language-reference/operators/await-operator.md)  
+- [Await 연산자](../../../visual-basic/language-reference/operators/await-operator.md)
 - [Async 및 Await를 사용한 비동기 프로그래밍](../../../visual-basic/programming-guide/concepts/async/index.md)

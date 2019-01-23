@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Visual Basic, LINQ features
 - LINQ [Visual Basic], features supporting LINQ
 ms.assetid: c821bb50-b6f6-4cf9-8aba-2717e465bd3a
-ms.openlocfilehash: db2eff2f7c19a3c510e7b212f5bb406d7a885439
-ms.sourcegitcommit: 2d8b7488d94101b534ca3e9780b1c1e840233405
+ms.openlocfilehash: 557e3607443066a863946ff08958197a14662a88
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39199149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54519391"
 ---
 # <a name="visual-basic-features-that-support-linq"></a>LINQ를 지원하는 Visual Basic 기능
 이름을 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 쿼리 구문을 지원 하 고 다른 언어 구문이 도입 되면서 언어로 직접 Visual Basic의 기술을 나타냅니다. 사용 하 여 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], 외부 데이터 원본에 대 한 쿼리는 새 언어를 배울 필요가 없습니다. Visual Basic을 사용 하 여 데이터 관계형 데이터베이스, XML 저장소 또는 개체에 대해 쿼리할 수 있습니다. 언어에 대 한 쿼리 기능이 통합이 컴파일 타임 구문 오류 및 형식 안전성 확인 수 있습니다. 이 통합은 또한 Visual Basic의 다양 한 기능의 다양 한 쿼리를 작성할 수 있는 새로운 대부분이 이미 알고 있다고 보장 합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "39199149"
   
  [!code-vb[VbLINQVbFeatures#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/features-that-support-linq_4.vb)]  
   
- 자세한 내용은 [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)합니다.  
+ 자세한 내용은 참조 하세요. [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)합니다.  
   
 ## <a name="anonymous-types"></a>익명 형식  
  익명 형식은 일시적으로 쿼리 결과에 포함 하려는 요소로 속성 집합을 그룹화 하는 편리한 방법을 제공 합니다. 이 요소에 대 한 명명 된 데이터 형식을 정의 하지 않고 순서에 관계 없이 쿼리에서 사용할 수 있는 필드의 조합을 선택할 수 있습니다.  
@@ -93,9 +93,9 @@ ms.locfileid: "39199149"
   
  자세한 내용은 [람다 식](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ(Language-Integrated Query)(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
- [Visual Basic에서 LINQ 시작](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [LINQ 및 문자열 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)  
- [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)  
- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## <a name="see-also"></a>참고자료
+- [LINQ(Language-Integrated Query)(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Visual Basic에서 LINQ 시작](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [LINQ 및 문자열 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
+- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - denial of service [WCF]
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
-ms.openlocfilehash: d4f7ebf784ab02ecdd0203423157da5bef968a87
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: bc209d184ac330b112d17c34f0bf1c479a8b5f7e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516163"
 ---
 # <a name="denial-of-service"></a>서비스 거부
 서비스 거부는 시스템을 가득 채워 메시지를 처리할 수 없거나 메시지가 매우 느리게 처리되는 경우에 발생합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "47198708"
 ## <a name="malicious-client-sends-excessive-license-requests-to-service"></a>악의적인 클라이언트가 과도한 라이선스 요청을 서비스로 전송  
  악의적인 클라이언트가 과도한 라이선스 요청으로 서비스를 채우면 서버가 메모리를 지나치게 많이 사용할 수 있습니다.  
   
- 완화 방법: <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> 클래스의 다음 속성을 사용합니다.  
+ 완화: 다음 속성을 사용 합니다 <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> 클래스:  
   
 -   <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxCachedCookies%2A>: `SecurityContextToken` 또는 `SPNego` 협상 후에 서버에서 캐시하는 시간이 제한된 `SSL`의 최대 개수를 제어합니다.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "47198708"
 ## <a name="invalid-implementations-of-iauthorizationpolicy-can-cause-service-hangs"></a>IAuthorizationPolicy의 잘못된 구현으로 인해 서비스가 중단될 수 있음  
  <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> 인터페이스의 잘못된 구현에서 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 메서드를 호출하면 서비스가 중단될 수 있습니다.  
   
- 완화 방법: 신뢰할 수 있는 코드만 사용하세요. 즉, 직접 작성하고 테스트한 코드나 신뢰할 수 있는 공급자가 제공한 코드만 사용합니다. 신뢰할 수 없는 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 확장이 적절한 고려 없이 코드에 연결할 수 없도록 합니다. 이 내용은 서비스 구현에 사용되는 모든 확장에 적용됩니다. WCF는 확장성 지점을 사용 하 여 응용 프로그램 코드와 연결 된 외부 코드 구분을 만들지 않습니다.  
+ 완화: 신뢰할 수 있는 코드만 사용 합니다. 즉, 직접 작성하고 테스트한 코드나 신뢰할 수 있는 공급자가 제공한 코드만 사용합니다. 신뢰할 수 없는 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 확장이 적절한 고려 없이 코드에 연결할 수 없도록 합니다. 이 내용은 서비스 구현에 사용되는 모든 확장에 적용됩니다. WCF는 확장성 지점을 사용 하 여 응용 프로그램 코드와 연결 된 외부 코드 구분을 만들지 않습니다.  
   
 ## <a name="kerberos-maximum-token-size-may-need-resizing"></a>Kerberos 최대 토큰 크기를 조정해야 할 수 있음  
  클라이언트는 다수의 그룹(실제 개수는 그룹에 따라 다를 수 있지만 대략 900개)에 속해 있지만 메시지 헤더의 블록이 64KB를 초과할 때 문제가 발생할 수 있습니다. 이런 경우 Microsoft 지원 문서에 설명 된 대로 최대 Kerberos 토큰 크기를 늘릴 수 있습니다 "[IIS에 연결할 버퍼가 부족 하 여 Internet Explorer Kerberos 인증이 작동 하지 않습니다](https://go.microsoft.com/fwlink/?LinkId=89176)." 보다 큰 Kerberos 토큰을 수용 하기 위해 최대 WCF 메시지 크기를 늘리려면도 해야 합니다.  
@@ -69,21 +69,21 @@ ms.locfileid: "47198708"
 ## <a name="protect-configuration-files-with-acls"></a>ACL을 사용하여 구성 파일 보호  
  [!INCLUDE[infocard](../../../../includes/infocard-md.md)]에서 발급된 토큰에 대해 코드와 구성 파일에서 필수 및 선택적 클레임을 지정할 수 있습니다. 이로 인해 보안 토큰 서비스로 전송되는 `RequestSecurityToken` 메시지에 해당 요소가 내보내집니다. 공격자는 코드나 구성을 수정하여 필수 또는 선택적 클레임을 제거하고 보안 토큰 서비스가 대상 서비스에 대한 액세스를 허용하지 않는 토큰을 발급하게 할 수 있습니다.  
   
- 완화 방법: 구성 파일을 수정하려면 컴퓨터에 대한 액세스 권한이 필요합니다. 파일 ACL(액세스 제어 목록)을 사용하여 구성 파일에 보안을 설정합니다. WCF 구성에서 로드 되도록 이러한 코드는 허용 됩니다 전에 응용 프로그램 디렉터리나 전역 어셈블리 캐시에서 코드는 필요 합니다. 디렉터리 ACL을 사용하여 디렉터리에 보안을 설정합니다.  
+ 완화: 구성 파일을 수정 하 여 컴퓨터에 액세스를 해야 합니다. 파일 ACL(액세스 제어 목록)을 사용하여 구성 파일에 보안을 설정합니다. WCF 구성에서 로드 되도록 이러한 코드는 허용 됩니다 전에 응용 프로그램 디렉터리나 전역 어셈블리 캐시에서 코드는 필요 합니다. 디렉터리 ACL을 사용하여 디렉터리에 보안을 설정합니다.  
   
 ## <a name="maximum-number-of-secure-sessions-for-a-service-is-reached"></a>서비스에 허용되는 보안 세션의 최대 개수  
  서비스에서 성공적으로 클라이언트를 인증하고 서비스와의 보안 세션이 설정된 경우 서비스는 클라이언트가 세션을 취소하거나 세션이 만료될 때까지 세션을 추적합니다. 설정된 각 세션은 서비스에 대해 허용되는 동시 활성 세션의 최대 개수 제한에 계산됩니다. 이 제한에 도달하면 하나 이상의 활성 세션이 만료되거나 클라이언트에 의해 취소될 때까지 해당 서비스와 새 세션을 만들려고 시도하는 클라이언트가 거부됩니다. 클라이언트는 서비스와 여러 세션을 만들 수 있으며, 이러한 세션의 각각이 제한에 계산됩니다.  
   
 > [!NOTE]
->  상태 저장 세션을 사용하는 경우 이전 단락의 내용이 적용되지 않습니다. 상태 저장 세션에 대 한 자세한 내용은 참조 하세요. [방법: 보안 세션에 대 한 보안 컨텍스트 토큰 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)합니다.  
+>  상태 저장 세션을 사용하는 경우 이전 단락의 내용이 적용되지 않습니다. 상태 저장 세션에 대 한 자세한 내용은 참조 하세요. [방법: 보안 컨텍스트를 만들 보안 세션에 대 한 토큰](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)합니다.  
   
  이 문제를 완화하려면 <xref:System.ServiceModel.Channels.SecurityBindingElement> 클래스의 <xref:System.ServiceModel.Channels.SecurityBindingElement> 속성을 설정하여 활성 세션의 최대 개수와 세션의 최대 수명에 대해 제한을 설정합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [정보 공개](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
- [권한 상승](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
- [서비스 거부](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
- [재생 공격](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
- [변조](../../../../docs/framework/wcf/feature-details/tampering.md)  
- [지원되지 않는 시나리오](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+## <a name="see-also"></a>참고자료
+- [보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [정보 공개](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [권한 상승](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
+- [서비스 거부](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
+- [재생 공격](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [변조](../../../../docs/framework/wcf/feature-details/tampering.md)
+- [지원되지 않는 시나리오](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

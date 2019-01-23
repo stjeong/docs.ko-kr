@@ -18,12 +18,12 @@ helpviewer_keywords:
 - nested message processing [WPF]
 - reentrancy [WPF]
 ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
-ms.openlocfilehash: 9e8bcd4503ec840e46022a55cc08dc0610eaa60b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: c86ab6c7d5113f95b0fd93d194465c4af701f78a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43512468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54513655"
 ---
 # <a name="threading-model"></a>스레딩 모델
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]는 개발자가 스레딩의 어려움을 해결하도록 디자인되어 있습니다. 결과적으로 대부분의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 개발자가 둘 이상의 스레드를 사용 하는 인터페이스를 작성할 필요가 없습니다. 다중 스레드 프로그램은 복잡하고 디버그하기 어려우므로 단일 스레드 솔루션이 있을 경우 피해야 합니다.  
@@ -54,17 +54,17 @@ ms.locfileid: "43512468"
  <xref:System.Windows.Threading.Dispatcher> 우선 순위별로 큐에 있는 요소를 정렬 합니다. 에 요소를 추가 하는 경우 지정 될 수 있는 10 개의 수준이 있습니다를 <xref:System.Windows.Threading.Dispatcher> 큐입니다. 이러한 우선 순위에서 유지 관리는 <xref:System.Windows.Threading.DispatcherPriority> 열거형입니다. 에 대 한 자세한 정보 <xref:System.Windows.Threading.DispatcherPriority> 수준에서 찾을 수 있습니다는 [!INCLUDE[TLA2#tla_winfxsdk](../../../../includes/tla2sharptla-winfxsdk-md.md)] 설명서.  
   
 <a name="samples"></a>   
-## <a name="threads-in-action-the-samples"></a>사용 중인 스레드: 샘플  
+## <a name="threads-in-action-the-samples"></a>실행 중인 스레드: 샘플  
   
 <a name="prime_number"></a>   
-### <a name="a-single-threaded-application-with-a-long-running-calculation"></a>장기 실행 계산이 포함된 단일 스레드 응용 프로그램  
+### <a name="a-single-threaded-application-with-a-long-running-calculation"></a>장기 실행 계산이 포함된 단일 스레드 애플리케이션  
  대부분의 [!INCLUDE[TLA#tla_gui#plural](../../../../includes/tlasharptla-guisharpplural-md.md)] 사용자 상호 작용에 대 한 응답으로 생성 된 이벤트를 기다리는 동안 유휴 시간 중 많은 부분을 소비 합니다. 신중 하 게 프로그래밍이 유휴 시간 없이 사용할 수 있습니다을 생산적으로의 응답성에 영향을 주지는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]합니다. 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 스레딩 모델에서 발생 하는 작업을 중단에 대 한 입력을 허용 하지 않습니다는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 스레드입니다. 즉, 반환 해야 합니다 <xref:System.Windows.Threading.Dispatcher> 입력된 이벤트 쓸모가 없어지기 전에 보류 중인 프로세스를 주기적으로 합니다.  
   
  다음 예제를 참조하세요.  
   
  ![소수 스크린 샷](../../../../docs/framework/wpf/advanced/media/threadingprimenumberscreenshot.PNG "ThreadingPrimeNumberScreenShot")  
   
- 이 간단한 응용 프로그램은 3부터 위쪽으로 계산하여 소수를 검색합니다. 클릭할 때 합니다 **시작** 단추 검색이 시작 됩니다. 프로그램이 소수를 찾으면 검색 결과로 사용자 인터페이스를 업데이트합니다. 이때 사용자가 검색을 중지할 수 있습니다.  
+ 이 간단한 애플리케이션은 3부터 위쪽으로 계산하여 소수를 검색합니다. 클릭할 때 합니다 **시작** 단추 검색이 시작 됩니다. 프로그램이 소수를 찾으면 검색 결과로 사용자 인터페이스를 업데이트합니다. 이때 사용자가 검색을 중지할 수 있습니다.  
   
  간단한 방법이지만 소수 검색이 영원히 계속될 수 있는 문제가 있습니다.  제공 되지 않습니다 단추의 click 이벤트 처리기 내에서 전체 검색을 처리 한 경우는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 다른 이벤트를 처리 하는 스레드입니다. [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 입력 또는 프로세스에 응답할 수는 메시지입니다. 다시 표시되지 않으며 단추 클릭에 응답하지 않습니다.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "43512468"
   
 <a name="weather_sim"></a>   
 ### <a name="handling-a-blocking-operation-with-a-background-thread"></a>백그라운드 스레드를 사용하여 차단 작업 처리  
- 그래픽 응용 프로그램에서 차단 작업을 처리하는 것은 어려울 수 있습니다. 응용 프로그램이 고정된 것처럼 보이므로 이벤트 처리기에서 차단 메서드를 호출하려고 하지 않습니다. 이러한 작업을 처리 하는 별도 스레드에서 사용할 수 있지만를 동기화 해야 작업을 완료 했습니다 합니다 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 직접 수정할 수 없습니다. 스레드를 [!INCLUDE[TLA2#tla_gui](../../../../includes/tla2sharptla-gui-md.md)] 작업자 스레드에서 합니다. 사용할 수 있습니다 <xref:System.Windows.Threading.Dispatcher.Invoke%2A> 또는 <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> 대리자에 삽입 하는 <xref:System.Windows.Threading.Dispatcher> 의 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 스레드입니다. 결국 이러한 대리자는 수정할 수 있는 권한이 있는 실행 됩니다 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 요소입니다.  
+ 그래픽 애플리케이션에서 차단 작업을 처리하는 것은 어려울 수 있습니다. 애플리케이션이 고정된 것처럼 보이므로 이벤트 처리기에서 차단 메서드를 호출하려고 하지 않습니다. 이러한 작업을 처리 하는 별도 스레드에서 사용할 수 있지만를 동기화 해야 작업을 완료 했습니다 합니다 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 직접 수정할 수 없습니다. 스레드를 [!INCLUDE[TLA2#tla_gui](../../../../includes/tla2sharptla-gui-md.md)] 작업자 스레드에서 합니다. 사용할 수 있습니다 <xref:System.Windows.Threading.Dispatcher.Invoke%2A> 또는 <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> 대리자에 삽입 하는 <xref:System.Windows.Threading.Dispatcher> 의 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 스레드입니다. 결국 이러한 대리자는 수정할 수 있는 권한이 있는 실행 됩니다 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 요소입니다.  
   
  이 예제에서는 날씨 예보를 검색하는 원격 프로시저 호출을 모방합니다. 별도 작업자 스레드가이 호출을 실행 하는를 사용 하 여 및에서 업데이트 메서드를 예약 합니다 <xref:System.Windows.Threading.Dispatcher> 의 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 완료 되 면 스레드입니다.  
   
@@ -187,7 +187,7 @@ ms.locfileid: "43512468"
  [!code-vb[CommandingOverviewSnippets#ThreadingArticleWeatherComponent2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#threadingarticleweathercomponent2)]  
   
 ### <a name="nested-pumping"></a>중첩 펌핑  
- 완전히 잠글 수 없는 경우에 따라는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 스레드입니다. 살펴보겠습니다 합니다 <xref:System.Windows.MessageBox.Show%2A> 메서드는 <xref:System.Windows.MessageBox> 클래스입니다. <xref:System.Windows.MessageBox.Show%2A> 확인 단추를 클릭할 때까지 반환 하지 않습니다. 하지만 상호 작용하기 위해 메시지 루프를 포함해야 하는 창을 만듭니다. 사용자가 [확인]을 클릭할 때까지 기다리고 있는 동안 원래 응용 프로그램 창은 사용자 입력에 반응하지 않습니다. 하지만 이 창은 그리기 메시지를 계속 처리합니다. 원래 창은 숨겨졌다 표시될 때 자동으로 재배치됩니다.  
+ 완전히 잠글 수 없는 경우에 따라는 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 스레드입니다. 살펴보겠습니다 합니다 <xref:System.Windows.MessageBox.Show%2A> 메서드는 <xref:System.Windows.MessageBox> 클래스입니다. <xref:System.Windows.MessageBox.Show%2A> 확인 단추를 클릭할 때까지 반환 하지 않습니다. 하지만 상호 작용하기 위해 메시지 루프를 포함해야 하는 창을 만듭니다. 사용자가 [확인]을 클릭할 때까지 기다리고 있는 동안 원래 애플리케이션 창은 사용자 입력에 반응하지 않습니다. 하지만 이 창은 그리기 메시지를 계속 처리합니다. 원래 창은 숨겨졌다 표시될 때 자동으로 재배치됩니다.  
   
  !["확인" 단추가 있는 MessageBox](../../../../docs/framework/wpf/advanced/media/threadingnestedpumping.png "ThreadingNestedPumping")  
   
@@ -217,5 +217,5 @@ ms.locfileid: "43512468"
   
  에 대 한 작업 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 다시 everywhere 재입력을 차단 하지는 메모리 누수를 초래 하지 않고 예기치 않은 재입력을 방지 하는 것입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [장기 실행 계산이 포함된 단일 스레드 응용 프로그램 샘플](https://go.microsoft.com/fwlink/?LinkID=160038)
+## <a name="see-also"></a>참고자료
+- [장기 실행 계산이 포함된 단일 스레드 응용 프로그램 샘플](https://go.microsoft.com/fwlink/?LinkID=160038)

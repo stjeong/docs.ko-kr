@@ -1,5 +1,5 @@
 ---
-title: '방법: SSL 인증서를 사용하여 포트 구성'
+title: '방법: SSL 인증서로 포트 구성'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: 0a2ac22bfb5f84235d34a554df8cc1ad43ddc489
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 3aa32e54643ffb8e2e4e40f730ab3f5c084b8cd9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "49308438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54521718"
 ---
-# <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>방법: SSL 인증서를 사용하여 포트 구성
+# <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>방법: SSL 인증서로 포트 구성
 사용 하 여 자체 호스팅된 Windows Communication Foundation (WCF) 서비스를 만들 때의 <xref:System.ServiceModel.WSHttpBinding> 클래스를 사용 하 여 전송 보안, X.509 인증서로 포트를 구성 해야 합니다. 자체 호스트된 서비스를 만들지 않는 경우에는 IIS(인터넷 정보 서비스)에서 서비스를 호스트할 수 있습니다. 자세한 내용은 [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)합니다.  
   
  포트를 구성하려면 컴퓨터에서 실행하는 운영 체제에 따라 다른 도구를 사용해야 합니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "49308438"
   
 ### <a name="to-get-a-certificates-thumbprint"></a>인증서의 지문을 가져오려면  
   
-1.  인증서 MMC 스냅인을 사용하여 클라이언트 인증 용도의 X.509 인증서를 찾습니다. 자세한 내용은 [방법: MMC 스냅인을 사용하여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)를 참조하세요.  
+1.  인증서 MMC 스냅인을 사용하여 클라이언트 인증 용도의 X.509 인증서를 찾습니다. 자세한 내용은 [방법: MMC 스냅인을 사용 하 여 인증서 보기](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md)합니다.  
   
 2.  인증서의 지문에 액세스합니다. 자세한 내용은 [방법: 인증서의 지문 검색](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)합니다.  
   
@@ -129,5 +129,5 @@ ms.locfileid: "49308438"
  [!code-csharp[c_WsHttpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wshttpservice/cs/source.cs#3)]
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
-## <a name="see-also"></a>참고 항목  
-* [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+## <a name="see-also"></a>참고자료
+- [HTTP 전송 보안](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

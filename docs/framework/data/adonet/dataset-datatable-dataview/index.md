@@ -1,13 +1,7 @@
 ---
-title: DataSets, DataTables 및 DataViews
+title: 'DataSets, DataTables 및 DataViews'
 ms.date: 03/30/2017
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
-ms.openlocfilehash: 0f537ad8ff468de54adc8bc820a060eaca357be9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43506251"
 ---
 # <a name="datasets-datatables-and-dataviews"></a>DataSets, DataTables 및 DataViews
 ADO.NET <xref:System.Data.DataSet>은 포함된 데이터 소스에 관계없이 일관성 있는 관계형 프로그래밍 모델을 제공하는 데이터의 메모리 상주 표현입니다. <xref:System.Data.DataSet>은 데이터를 포함하고 제약하며 데이터의 순서를 지정하는 테이블과 각 테이블 간의 관계를 포함하는 데이터의 완전한 집합을 나타냅니다.  
@@ -78,6 +72,6 @@ ADO.NET <xref:System.Data.DataSet>은 포함된 데이터 소스에 관계없이
  [데이터 집합에 기존 제약 조건 추가](../../../../../docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md)  
  데이터 원본의 기본 키 정보로 **데이터 세트**를 채우는 방법에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

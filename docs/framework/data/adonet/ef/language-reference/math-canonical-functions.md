@@ -2,12 +2,12 @@
 title: 수학 정식 함수
 ms.date: 03/30/2017
 ms.assetid: 6f6cddc6-b561-4ebe-84b6-841ef5b4113b
-ms.openlocfilehash: 0fc9f4942c3f76f139ab7e4400005f0bfe80204e
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 3e8122806e31fc72b3d390e5e8671fada7f3a47d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492705"
 ---
 # <a name="math-canonical-functions"></a>수학 정식 함수
 
@@ -71,7 +71,7 @@ A `Single`, `Double`, 및 `Decimal`합니다.
 
 |  |  |
 |--|--|
-|`value` | `Int32, Int64, Double`, 또는 `Decimal`합니다. |
+|`value` | `Int32, Int64, Double` 또는 `Decimal`입니다. |
 |`exponent` | `Int64`하십시오 `Double`, 또는 `Decimal`합니다. |
 
 **반환 값**
@@ -140,5 +140,5 @@ A `Single`, `Double`, 및 `Decimal`합니다.
   
  동일한 기능을 Microsoft SQL 클라이언트 관리 공급자에서 사용할 수 있습니다. 자세한 내용은 [Entity Framework 함수에 대 한 SqlClient](../../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [정식 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)
+## <a name="see-also"></a>참고자료
+- [정식 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)

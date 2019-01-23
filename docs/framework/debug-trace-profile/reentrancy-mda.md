@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cc2e725ecb2208256f6d0e025d4cc79339f385cd
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 18189ace97238bede9ed18d1dcbae2490956fad8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498598"
 ---
 # <a name="reentrancy-mda"></a>reentrancy MDA
 이전에 수행된 관리 코드에서 네이티브 코드로의 전환이 순서대로 수행되지 않은 경우 네이티브 코드에서 관리 코드로 전환하려고 하면 `reentrancy` MDA(관리 디버깅 도우미)가 활성화됩니다.  
@@ -31,12 +31,12 @@ ms.locfileid: "53130119"
  네이티브 코드와 관리 코드 사이에서 임의 방향으로 전환되는 스레드는 순차적 전환을 수행해야 합니다. 그러나 벡터화된 예외 처리기와 같이 운영 체제의 특정한 하위 수준 확장 지점을 사용하면, 순차적 전환을 수행하지 않고도 관리 코드에서 네이티브 코드로 전환할 수 있습니다.  이러한 전환은 CLR(공용 언어 런타임) 제어가 아니라 운영 체제의 제어에 따라 수행됩니다.  이러한 확장 지점 내에서 실행되는 모든 네이티브 코드는 관리 코드로 다시 호출되지 않아야 합니다.  
   
 ## <a name="cause"></a>원인  
- 관리 코드를 실행하는 중에 벡터화된 예외 처리기와 같은 하위 수준 운영 체제 확장 지점이 활성화되었습니다.  확장 지점을 통해 호출된 응용 프로그램 코드에서 관리 코드를 다시 호출하려고 합니다.  
+ 관리 코드를 실행하는 중에 벡터화된 예외 처리기와 같은 하위 수준 운영 체제 확장 지점이 활성화되었습니다.  확장 지점을 통해 호출된 애플리케이션 코드에서 관리 코드를 다시 호출하려고 합니다.  
   
- 이 문제는 항상 응용 프로그램 코드 때문에 발생합니다.  
+ 이 문제는 항상 애플리케이션 코드 때문에 발생합니다.  
   
 ## <a name="resolution"></a>해결  
- 이 MDA가 활성화된 스레드의 스택 추적을 검사합니다.  스레드에서 관리 코드를 올바르지 않게 호출하려고 합니다.  스택 추적은 이 확장 지점, 이 확장 지점을 제공하는 운영 체제 코드 및 확장 지점으로 인해 중단된 관리 코드를 사용하여 응용 프로그램 코드를 표시해야 합니다.  
+ 이 MDA가 활성화된 스레드의 스택 추적을 검사합니다.  스레드에서 관리 코드를 올바르지 않게 호출하려고 합니다.  스택 추적은 이 확장 지점, 이 확장 지점을 제공하는 운영 체제 코드 및 확장 지점으로 인해 중단된 관리 코드를 사용하여 애플리케이션 코드를 표시해야 합니다.  
   
  예를 들어 벡터화된 예외 처리기에서 관리 코드를 호출하려고 시도할 때 MDA가 활성화됩니다.  스택에 운영 체제 예외 처리 코드와 <xref:System.DivideByZeroException> 또는 <xref:System.AccessViolationException> 등의 예외를 트리거하는 관리 코드가 일부 표시됩니다.  
   
@@ -104,5 +104,5 @@ public class Reenter
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## <a name="see-also"></a>참고자료
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
