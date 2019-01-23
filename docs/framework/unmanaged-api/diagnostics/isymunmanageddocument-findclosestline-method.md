@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f31dad53f42fdd8f7ac3a0cb995b507ecc3590d5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 96ad0e34bf638c378f37e317f790696c2ac7cb25
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54519699"
 ---
 # <a name="isymunmanageddocumentfindclosestline-method"></a>ISymUnmanagedDocument::FindClosestLine 메서드
-시퀀스 포인트가 아닐 수 있는이 문서의 줄이 제공 된 시퀀스 위치가 되는 가장 가까운 줄을 반환 합니다.  
+줄 시퀀스 위치가 될 수 있고이 문서에 지정 된 시퀀스 위치가 되는 가장 가까운 줄을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,13 +37,13 @@ HRESULT FindClosestLine(
   
 #### <a name="parameters"></a>매개 변수  
  `line`  
- [in] 이 문서에는 선입니다.  
+ [in] 이 문서의 줄입니다.  
   
  `pRetVal`  
- [out] 포인터 줄을 수신 하는 변수입니다.  
+ [out] 줄을 수신 하는 변수에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 오류 코드가 있습니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 오류 코드입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

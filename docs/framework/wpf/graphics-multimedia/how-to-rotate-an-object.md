@@ -8,12 +8,12 @@ helpviewer_keywords:
 - graphics [WPF], rotating objects [WPF]
 - rotating objects [WPF]
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390
-ms.openlocfilehash: b5a954158388e8b85589042e9d1f3b82c1747e30
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: b44ce71f91962806704eb05a9cbec53638856b3e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45591505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54525432"
 ---
 # <a name="how-to-rotate-an-object"></a>방법: 개체 회전
 이 예제에서는 개체를 회전하는 방법을 보여 줍니다. 이 예에서는 먼저 만듭니다는 <xref:System.Windows.Media.RotateTransform> 만든 다음 해당 <xref:System.Windows.Media.RotateTransform.Angle%2A> 각도 (도).  
@@ -44,7 +44,7 @@ ms.locfileid: "45591505"
   
  전체 샘플을 보려면 [2차원 변환 샘플](https://go.microsoft.com/fwlink/?LinkID=158252)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Transform>  
- [Transform 개요](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Transform>
+- [Transform 개요](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)

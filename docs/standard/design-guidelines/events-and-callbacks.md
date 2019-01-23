@@ -9,12 +9,12 @@ helpviewer_keywords:
 - callbacks
 ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
 author: KrzysztofCwalina
-ms.openlocfilehash: c9ed52c5a313676baeba66f5cb79c7a56927babb
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3609d6ac4847cb081740fd698869df4976f83f8f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54525484"
 ---
 # <a name="events-and-callbacks"></a>이벤트 및 콜백
 콜백을 대리자를 통해 사용자 코드를 다시 호출 하는 프레임 워크를 사용할 수 있는 확장성 지점입니다. 이러한 대리자는 일반적으로 메서드의 매개 변수를 통해 프레임 워크에 전달 됩니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "53154426"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [확장성을 위한 디자인](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
+- [확장성을 위한 디자인](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - deferred execution
 - iteration variables [Visual Basic]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-ms.openlocfilehash: 0b163ac4af4e487ccab4c18b7907eba5a31e5779
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0642a67a6550109ffe1068e6c6ce4605b14c25af
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43509054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54524055"
 ---
 # <a name="introduction-to-linq-in-visual-basic"></a>Visual Basic의 LINQ 소개
 언어 통합 쿼리 (LINQ)는 Visual basic 쿼리 기능을 추가 하 고 모든 종류의 데이터를 사용 하 여 작업할 때 간단 하 고 강력한 기능을 제공 합니다. 쿼리 처리 될 때 데이터베이스에 보내거나 검색 하는 데이터의 각 형식에 대 한 다른 쿼리 구문을 사용 하 여 작업을 하는 대신 LINQ에서는 Visual Basic 언어의 일부로 쿼리를 소개 합니다. LINQ는 데이터의 형식에 관계없이 통합된 구문을 사용합니다.  
@@ -177,7 +177,7 @@ LINQ에서 제공하는 열거 가능 형식과 쿼리 가능 형식의 멤버�
   
  SQL Server 데이터베이스에 연결이 유효한 경우 추가할 수 있습니다는 **LINQ to SQL 클래스** 항목 템플릿을 프로젝트입니다. 이렇게 하면 O/R 디자이너(개체 관계형 디자이너)가 표시됩니다. O/R 디자이너를 사용 하면 코드에서 액세스 하려는 항목을 끌어 놓을 수 있습니다 합니다 **서버 탐색기**/**데이터베이스 탐색기** 디자이너 화면입니다. LINQ to SQL 파일은 <xref:System.Data.Linq.DataContext> 개체를 프로젝트에 추가합니다. 이 개체에는 액세스하려는 테이블과 뷰의 속성 및 컬렉션과 호출하려는 저장 프로시저의 메서드가 포함되어 있습니다. 변경 내용을 LINQ to SQL(.dbml) 파일에 저장한 후 O/R 디자이너에서 정의된 <xref:System.Data.Linq.DataContext> 개체를 참조하여 코드에서 이러한 개체에 액세스할 수 있습니다. 프로젝트의 <xref:System.Data.Linq.DataContext> 개체는 LINQ to SQL 파일의 이름에 따라 명명됩니다. 예를 들어 Northwind.dbml이라는 LINQ to SQL 파일은 `NorthwindDataContext`라는 <xref:System.Data.Linq.DataContext> 개체를 만듭니다.  
   
- 단계별 지침이 포함 된 예제를 보려면 [방법: 데이터베이스 쿼리](how-to-query-a-database-by-using-linq.md) 및 [방법: 저장 프로시저를 호출](how-to-call-a-stored-procedure-by-using-linq.md)합니다.  
+ 단계별 지침이 포함 된 예제를 보려면 [방법: 데이터베이스 쿼리](how-to-query-a-database-by-using-linq.md) 고 [방법: 저장된 프로시저를 호출](how-to-call-a-stored-procedure-by-using-linq.md)합니다.  
   
 ## <a name="visual-basic-features-that-support-linq"></a>LINQ를 지 원하는 Visual Basic 기능  
  Visual Basic LINQ 쿼리를 수행 하기 위해 작성 해야 하는 코드의 양을 줄이고 linq를 사용 하 여 간단 하 게 하는 다른 주목할 만한 기능이 포함 되어 있습니다. 이러한 요구 사항은 다음과 같습니다.  
@@ -226,17 +226,17 @@ LINQ에서 제공하는 열거 가능 형식과 쿼리 가능 형식의 멤버�
 ## <a name="how-to-and-walkthrough-topics"></a>방법 및 연습 항목
  [방법: 데이터베이스 쿼리](how-to-query-a-database-by-using-linq.md)  
   
- [방법: 저장 프로시저 호출](how-to-call-a-stored-procedure-by-using-linq.md)  
+ [방법: 저장된 프로시저를 호출 합니다.](how-to-call-a-stored-procedure-by-using-linq.md)  
   
- [방법: 데이터베이스의 데이터 수정](how-to-modify-data-in-a-database-by-using-linq.md)  
+ [방법: 데이터베이스의 데이터를 수정 합니다.](how-to-modify-data-in-a-database-by-using-linq.md)  
   
- [방법: 조인을 사용하여 데이터 결합](how-to-combine-data-with-linq-by-using-joins.md)  
+ [방법: 조인 사용 하 여 데이터를 결합 합니다.](how-to-combine-data-with-linq-by-using-joins.md)  
   
  [방법: 쿼리 결과 정렬](how-to-sort-query-results-by-using-linq.md)  
   
  [방법: 쿼리 결과 필터링](how-to-filter-query-results-by-using-linq.md)  
   
- [방법: 데이터 개수, 합 또는 평균 계산](how-to-count-sum-or-average-data-by-using-linq.md)  
+ [방법: 개수, 합 또는 평균 데이터](how-to-count-sum-or-average-data-by-using-linq.md)  
   
  [방법: 쿼리 결과의 최소값 또는 최대값 찾기](how-to-find-the-minimum-or-maximum-value-in-a-query-result.md)  
   
@@ -247,9 +247,9 @@ LINQ에서 제공하는 열거 가능 형식과 쿼리 가능 형식의 멤버�
   
 ## <a name="see-also"></a>참고자료
 
-- [LINQ(Language-Integrated Query)](../../concepts/linq/index.md)  
-- [Visual Basic의 LINQ to XML 개요](../../language-features/xml/overview-of-linq-to-xml.md)  
-- [LINQ to DataSet 개요](~/docs/framework/data/adonet/linq-to-dataset-overview.md)  
-- [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)  
-- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)(Visual Studio의 LINQ to SQL 도구)  
+- [LINQ(Language-Integrated Query)](../../concepts/linq/index.md)
+- [Visual Basic의 LINQ to XML 개요](../../language-features/xml/overview-of-linq-to-xml.md)
+- [LINQ to DataSet 개요](~/docs/framework/data/adonet/linq-to-dataset-overview.md)
+- [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)(Visual Studio의 LINQ to SQL 도구)
 - [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

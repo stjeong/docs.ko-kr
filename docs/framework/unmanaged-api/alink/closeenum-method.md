@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e5c3185dc6d488223d5882f543f0c690d82261b5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 009f7d20dfd6efc279b3187af8f5c95132ae51e7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33402446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54525237"
 ---
 # <a name="closeenum-method"></a>CloseEnum 메서드
 표시 된 열거형을 닫고 연결 된 리소스를 해제 합니다.  
@@ -37,7 +37,7 @@ HRESULT CloseEnum(
   
 #### <a name="parameters"></a>매개 변수  
  `hEnum`  
- 닫을 열거형의 핸들입니다.  
+ 핸들을 닫아야 하는 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK를 반환 합니다.  
@@ -45,7 +45,7 @@ HRESULT CloseEnum(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
