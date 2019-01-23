@@ -17,19 +17,19 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d46881b76685fd04f8bc5e3a67830e58f85cd774
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 8897eda39a0ff5f1a11a95aeea4e2887912592ec
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33436678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54519257"
 ---
-# <a name="icorruntimehostlocksheldbylogicalthread-method"></a><span data-ttu-id="a9912-102">ICorRuntimeHost::LocksHeldByLogicalThread 메서드</span><span class="sxs-lookup"><span data-stu-id="a9912-102">ICorRuntimeHost::LocksHeldByLogicalThread Method</span></span>
-<span data-ttu-id="a9912-103">현재 스레드에 있는 잠금 수를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="a9912-103">Retrieves the number of locks that current thread holds.</span></span>  
+# <a name="icorruntimehostlocksheldbylogicalthread-method"></a><span data-ttu-id="9c505-102">ICorRuntimeHost::LocksHeldByLogicalThread 메서드</span><span class="sxs-lookup"><span data-stu-id="9c505-102">ICorRuntimeHost::LocksHeldByLogicalThread Method</span></span>
+<span data-ttu-id="9c505-103">현재 스레드에 있는 잠금 수를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="9c505-103">Retrieves the number of locks that current thread holds.</span></span>  
   
- <span data-ttu-id="a9912-104">이 메서드는 .NET Framework 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a9912-104">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
+ <span data-ttu-id="9c505-104">이 메서드는 .NET Framework 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="9c505-104">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a9912-105">구문</span><span class="sxs-lookup"><span data-stu-id="a9912-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9c505-105">구문</span><span class="sxs-lookup"><span data-stu-id="9c505-105">Syntax</span></span>  
   
 ```  
 HRESULT LocksHeldByLogicalThread(  
@@ -37,18 +37,18 @@ HRESULT LocksHeldByLogicalThread(
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="a9912-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="a9912-106">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="9c505-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="9c505-106">Parameters</span></span>  
  `pCount`  
- <span data-ttu-id="a9912-107">[out] 현재 스레드에 있는 잠금 수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="a9912-107">[out] A pointer to the number of locks that the current thread holds.</span></span>  
+ <span data-ttu-id="9c505-107">[out] 현재 스레드에 있는 잠금 수에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="9c505-107">[out] A pointer to the number of locks that the current thread holds.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a9912-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="a9912-108">Requirements</span></span>  
- <span data-ttu-id="a9912-109">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="a9912-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="9c505-108">요구 사항</span><span class="sxs-lookup"><span data-stu-id="9c505-108">Requirements</span></span>  
+ <span data-ttu-id="9c505-109">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="9c505-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a9912-110">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="a9912-110">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="9c505-110">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="9c505-110">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="a9912-111">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="a9912-111">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="9c505-111">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="9c505-111">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="a9912-112">**.NET framework 버전:** 1.0, 1.1</span><span class="sxs-lookup"><span data-stu-id="a9912-112">**.NET Framework Versions:** 1.0, 1.1</span></span>  
+ <span data-ttu-id="9c505-112">**.NET framework 버전:** 1.0, 1.1</span><span class="sxs-lookup"><span data-stu-id="9c505-112">**.NET Framework Versions:** 1.0, 1.1</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a9912-113">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a9912-113">See Also</span></span>  
- [<span data-ttu-id="a9912-114">ICorRuntimeHost 인터페이스</span><span class="sxs-lookup"><span data-stu-id="a9912-114">ICorRuntimeHost Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## <a name="see-also"></a><span data-ttu-id="9c505-113">참고자료</span><span class="sxs-lookup"><span data-stu-id="9c505-113">See also</span></span>
+- [<span data-ttu-id="9c505-114">ICorRuntimeHost 인터페이스</span><span class="sxs-lookup"><span data-stu-id="9c505-114">ICorRuntimeHost Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
