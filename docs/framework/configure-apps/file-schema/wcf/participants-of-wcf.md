@@ -2,12 +2,12 @@
 title: WCF의 &lt;participants&gt;
 ms.date: 03/30/2017
 ms.assetid: d99dbddc-0057-4e18-8e42-f91411d39970
-ms.openlocfilehash: 341e5492f7a45ca89c18d478766b8ebd369dbdf2
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 892392454b9969e0c63e0ad7eb15f788466ad963
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54630972"
 ---
 # <a name="ltparticipantsgt-of-wcf"></a>WCF의 &lt;participants&gt;
 런타임에서 내보내지는 추적 레코드를 수신하는 추적 참가자의 목록을 직접 구성하고 구성된 방식대로 처리합니다. 여기에는 특정 출력(예: 파일, 콘솔, ETW)에 쓰기, 레코드 처리/집계 또는 필요한 기타 조합이 포함됩니다.  
@@ -16,7 +16,7 @@ ms.locfileid: "54151857"
   
  \<system.serviceModel>  
 \<tracking>  
-\<참가자 >  
+\<participants>  
   
 ## <a name="syntax"></a>구문  
   
@@ -85,8 +85,8 @@ ms.locfileid: "54151857"
 </configuration>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>  
- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
+- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
+- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)

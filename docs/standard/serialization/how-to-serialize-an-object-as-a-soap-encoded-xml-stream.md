@@ -1,5 +1,5 @@
 ---
-title: '방법: 개체를 SOAP 인코딩된 XML 스트림으로 Serialize'
+title: '방법: SOAP 인코딩된 XML Stream으로 개체를 serialize 합니다.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - XML serialization, SOAP
 - serialization, SOAP
 ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
-ms.openlocfilehash: cdfa2c8c7a27806873217495ac09f7f20e82b6bc
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: dc5c4a68c1fba303937ae126cd5b5d4f7f8107ce
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631388"
 ---
-# <a name="how-to-serialize-an-object-as-a-soap-encoded-xml-stream"></a>방법: 개체를 SOAP 인코딩된 XML 스트림으로 Serialize
+# <a name="how-to-serialize-an-object-as-a-soap-encoded-xml-stream"></a>방법: SOAP 인코딩된 XML Stream으로 개체를 serialize 합니다.
   
  SOAP 메시지는 XML을 사용하여 생성되므로 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용하여 클래스를 직렬화하고 인코딩된 SOAP 메시지를 생성할 수 있습니다. 결과 XML은 [World Wide Web 컨소시엄 문서의 5단원 “SOAP(Simple Object Access Protocol) 1.1”](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383512)을 따릅니다. SOAP 메시지를 통해 통신하는 XML Web services를 만들 때는 특별한 SOAP 특성 집합을 클래스와 클래스 멤버에 적용하여 XML 스트림을 사용자 지정할 수 있습니다. 특성 목록을 보려면 [인코딩된 SOAP serialization을 제어하는 특성](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)을 참조하세요.  
   
@@ -72,9 +72,9 @@ XmlSerializer mySerializer = new XmlSerializer(myTypeMapping);
   
 ## <a name="see-also"></a>참고자료
 
-- [XML 및 SOAP serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
-- [인코딩된 SOAP serialization을 제어하는 특성](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
-- [XML Web Services의 XML serialization](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
-- [방법: 개체 직렬화](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
-- [방법: 개체 deserialize](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
-- [방법: 인코딩된 SOAP XML serialization 재정의](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)
+- [XML 및 SOAP serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [인코딩된 SOAP serialization을 제어하는 특성](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)
+- [XML Web Services의 XML serialization](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)
+- [방법: 개체 serialize](../../../docs/standard/serialization/how-to-serialize-an-object.md)
+- [방법: 개체 deserialize](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [방법: 인코딩된 SOAP XML Serialization 재정의](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)

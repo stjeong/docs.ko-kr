@@ -1,16 +1,16 @@
 ---
-title: (Visual Basic) 대리자의 가변성
+title: 대리자의 가변성 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 38e9353f-74f8-4211-a8f0-7a495414df4a
-ms.openlocfilehash: d857f120be0fe810489ba69edb55af9cc0dd6940
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 350f8d6b317f6a82d5b5a718a3d49a4b9ee3e4b2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631544"
 ---
-# <a name="variance-in-delegates-visual-basic"></a>(Visual Basic) 대리자의 가변성
-.NET framework 3.5를 C# 및 Visual Basic에서 모든 대리자의 대리자 형식과 일치 하는 메서드 서명이 대 한 분산 지원을 기능이 도입 되었습니다. 즉, 일치하는 시그니처가 있는 메서드만이 아니라 더 많은 파생된 형식(공변성(covariance))을 반환하는 메서드 또는 대리자 형식에 지정된 것보다 더 적은 수의 파생된 형식(반공변성(contravariance))을 가지고 있는 매개 변수를 수락하는 메서드도 대리자에 할당할 수 있습니다. 여기에는 제네릭 및 비 제네릭 대리자가 모두 포함됩니다.  
+# <a name="variance-in-delegates-visual-basic"></a>대리자의 가변성 (Visual Basic)
+.NET framework 3.5에는 모든 대리자의 대리자 형식과 메서드 시그니처를 일치 시키는 가변성 지원이 추가 되었습니다 C# 및 Visual Basic입니다. 즉, 일치하는 시그니처가 있는 메서드만이 아니라 더 많은 파생된 형식(공변성(covariance))을 반환하는 메서드 또는 대리자 형식에 지정된 것보다 더 적은 수의 파생된 형식(반공변성(contravariance))을 가지고 있는 매개 변수를 수락하는 메서드도 대리자에 할당할 수 있습니다. 여기에는 제네릭 및 비 제네릭 대리자가 모두 포함됩니다.  
   
  다음과 같이 두 개의 클래스 및 두 개의 대리자(제네릭 및 비 제네릭)를 가지고 있는 코드를 예로 들어보겠습니다.  
   
@@ -75,10 +75,10 @@ Dim dGeneric As SampleGenericDelegate(Of Second, First) = AddressOf ASecondRFirs
 Dim dGenericConversion As SampleGenericDelegate(Of Second, First) = AddressOf AFirstRSecond  
 ```  
   
- 더 많은 예제를 참조 하십시오. [(Visual Basic의 경우) 대리자의 가변성 사용 하 여](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md) 및 [Func 및 Action 제네릭 대리자 (Visual Basic)에 대 한 분산을 사용 하 여](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)합니다.  
+ 더 많은 예제를 참조 하세요 [를 사용 하 여 대리자의 가변성 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md) 하 고 [Func 및 Action 제네릭 대리자 (Visual Basic)를 사용 하 여 분산](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)합니다.  
   
 ## <a name="variance-in-generic-type-parameters"></a>제네릭 형식 매개 변수에서의 가변성  
- 제네릭 형식 매개 변수로 지정 하는 다른 형식이 있는 제네릭 대리자 형식 요구에 따라 서로에서 상속 된 경우, 할당할 수 수 있도록 대리자 사이의 암시적 변환을.NET Framework 4에서와 이후 활성화할 수 있습니다. 분산입니다.  
+ 제네릭 형식 매개 변수로 지정 된 다른 형식을 있는 제네릭 대리자에서 필요에 따라 서로 상속 된 경우 서로 할당 될 수 있도록, 대리자 간 암시적 변환을.NET Framework 4에서 이상 설정할 수 있습니다. 분산입니다.  
   
  암시적 변환을 사용하도록 설정하려면 `in` 및 `out` 키워드를 사용하여 대리자에서 제네릭 매개 변수를 공변(covariant) 또는 반공변(contravariant)으로 선언해야 합니다.  
   
@@ -97,7 +97,7 @@ End Sub
   
  메서드 시그니처를 대리자 형식과 일치시키는 용도로만 가변성 지원을 사용하고 `in` 및 `out` 키워드를 사용하지 않는 경우, 대리자를 동일한 람다 식 또는 메서드로 인스턴스화할 수는 있지만 한 대리자를 다른 대리자에 할당할 수는 없는 경우가 더러 있습니다.  
   
- 다음 코드 예에서 `SampleGenericDelegate(Of String)` 로 명시적으로 변환할 수 없는 `SampleGenericDelegate(Of Object)`하지만, `String` 상속 `Object`합니다. `T` 제네릭 매개 변수를 `out` 키워드로 표시하면 이 문제를 수정할 수 있습니다.  
+ 다음 코드 예에서 `SampleGenericDelegate(Of String)` 명시적으로 변환 될 수 없습니다 `SampleGenericDelegate(Of Object)`이지만 `String` 상속 `Object`합니다. `T` 제네릭 매개 변수를 `out` 키워드로 표시하면 이 문제를 수정할 수 있습니다.  
   
 ```vb  
 Public Delegate Function SampleGenericDelegate(Of T)() As T  
@@ -130,7 +130,7 @@ End Sub
   
 -   <xref:System.Converter%602> 대리자  
   
- 자세한 내용 및 예제에 대 한 참조 [Func 및 Action 제네릭 대리자 (Visual Basic)에 대 한 분산을 사용 하 여](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)합니다.  
+ 자세한 내용 및 예제를 참조 하세요 [Func 및 Action 제네릭 대리자 (Visual Basic)를 사용 하 여 분산](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)합니다.  
   
 ### <a name="declaring-variant-type-parameters-in-generic-delegates"></a>제네릭 대리자에서 Variant 형식 매개 변수 선언  
  제네릭 대리자가 공변(covariant) 또는 반공변(contravariant) 제네릭 형식 매개 변수를 가지고 있는 경우 이를 *variant 제네릭 대리자*라고 할 수 있습니다.  
@@ -165,7 +165,7 @@ dvariant("test")
 ```  
   
 ### <a name="combining-variant-generic-delegates"></a>Variant 제네릭 대리자 결합  
- Variant 대리자는 결합할 수 없습니다. <xref:System.Delegate.Combine%2A> 메서드는 variant 대리자 변환을 지원하지 않으며 대리자가 정확히 동일한 형식일 것으로 예상합니다. 사용 하 여 대리자를 결합 하는 경우 런타임 예외가 발생할 수 있습니다는 <xref:System.Delegate.Combine%2A> 메서드 (C# 및 Visual Basic) 또는 사용 하 여는 `+` 연산자 (C#), 다음 코드 예제에서와 같이 합니다.  
+ Variant 대리자는 결합할 수 없습니다. <xref:System.Delegate.Combine%2A> 메서드는 variant 대리자 변환을 지원하지 않으며 대리자가 정확히 동일한 형식일 것으로 예상합니다. 사용 하 여 대리자를 결합 하면이 런타임 예외가 발생할 수 있습니다 합니다 <xref:System.Delegate.Combine%2A> 메서드 (에서 C# 및 Visual Basic) 또는 사용 하 여는 `+` 연산자 (에서 C#) 다음 코드 예제에 나와 있는 것 처럼 합니다.  
   
 ```vb  
 Dim actObj As Action(Of Object) = Sub(x) Console.WriteLine("object: {0}", x)  
@@ -176,7 +176,7 @@ Dim actStr As Action(Of String) = Sub(x) Console.WriteLine("string: {0}", x)
 ```  
   
 ## <a name="variance-in-generic-type-parameters-for-value-and-reference-types"></a>값 및 참조 형식에 대한 제네릭 형식 매개 변수에서의 가변성  
- 제네릭 형식 매개 변수에 대한 가변성은 참조 형식에 대해서만 지원됩니다. 예를 들어 `DVariant(Of Int)`로 암시적으로 변환할 수 없는 `DVariant(Of Object)` 또는 `DVariant(Of Long)`정수는 값 형식, 합니다.  
+ 제네릭 형식 매개 변수에 대한 가변성은 참조 형식에 대해서만 지원됩니다. 예를 들어 `DVariant(Of Int)`로 암시적으로 변환할 수 없습니다 `DVariant(Of Object)` 또는 `DVariant(Of Long)`이므로 정수는 값 형식입니다.  
   
  다음 예제에서는 제네릭 형식 매개 변수에서의 가변성이 값 형식에 대해 지원되지 않음을 보여 줍니다.  
   
@@ -201,8 +201,8 @@ End Sub
 ```  
   
 ## <a name="relaxed-delegate-conversion-in-visual-basic"></a>Visual Basic의 완화 된 대리자 변환  
- 완화 된 대리자 변환 메서드 시그니처를 일치 하는 대리자 형식에서 더 많은 융통성을 합니다. 예를 들어, 매개 변수 사양 생략 하 고 메서드를 대리자에 할당할 때 함수 반환 값을 생략할 수 있습니다. 자세한 내용은 참조 [완화 된 대리자 변환](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)합니다.  
+ 완화 된 대리자 변환 보다 유연 하 게를를 대리자 형식과 메서드 시그니처를 일치 시킬 수 있습니다. 예를 들어, 매개 변수 사양을 생략 하 고 대리자에 메서드를 할당 하는 경우 함수 반환 값을 생략할 수 있습니다. 자세한 내용은 [완화 된 대리자 변환](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [제네릭](~/docs/standard/generics/index.md)  
- [Func 및 Action 제네릭 대리자에 가변성 사용(Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+## <a name="see-also"></a>참고자료
+- [제네릭](~/docs/standard/generics/index.md)
+- [Func 및 Action 제네릭 대리자에 가변성 사용(Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

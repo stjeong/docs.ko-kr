@@ -2,12 +2,12 @@
 title: JSON 및 XML 샘플을 포함한 AJAX 서비스
 ms.date: 03/30/2017
 ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
-ms.openlocfilehash: 17b0fd362ac84c7fbc0c9e88fb3d318966356bc6
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: ed337b7e2717083f5b951d9c204b90ebcddf2d3d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54632298"
 ---
 # <a name="ajax-service-with-json-and-xml-sample"></a>JSON 및 XML 샘플을 포함한 AJAX 서비스
 이 샘플에는 Windows Communication Foundation (WCF)를 사용 하 여 개체 JSON (JavaScript Notation) 또는 XML 데이터를 반환 하는 Asynchronous JavaScript and XML (AJAX) 서비스를 만드는 방법을 보여 줍니다. 웹 브라우저 클라이언트에서 JavaScript 코드를 사용하여 AJAX 서비스에 액세스할 수 있습니다. 이 샘플을 기반으로 합니다 [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md) 샘플입니다.  
@@ -111,5 +111,5 @@ xmlHttp.onreadystatechange=function(){
   
 3.  이동할 `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` (브라우저의 프로젝트 디렉터리에서 XmlAjaxClientPage.htm를 열고 수행).  
   
-## <a name="see-also"></a>참고 항목  
- [HTTP POST를 사용하는 AJAX 서비스](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md)
+## <a name="see-also"></a>참고자료
+- [HTTP POST를 사용하는 AJAX 서비스](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md)

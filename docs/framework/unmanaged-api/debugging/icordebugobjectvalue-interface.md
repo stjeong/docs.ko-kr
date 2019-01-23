@@ -16,27 +16,27 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7ddf3b60ed595aff8bc81d0bb59675fd1db12f7e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5cd991049c159b96a0f0717b31d6a2834b250f70
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33422415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631993"
 ---
 # <a name="icordebugobjectvalue-interface1"></a>ICorDebugObjectValue Interface1
-개체를 포함 하는 값을 나타내는 "ICorDebugValue"의 하위 클래스입니다.  
+개체를 포함 하는 값을 나타내는 "ICorDebugValue"의 하위 클래스.  
   
 ## <a name="methods"></a>메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getclass-method.md)|공용 언어 런타임 (CLR)에 대 한 인터페이스 포인터를 가져옵니다 <xref:System.Type> 개체의이 `ICorDebugObjectValue` 참조 합니다.|  
+|[GetClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getclass-method.md)|CLR (공용 언어 런타임)에 인터페이스 포인터를 가져옵니다 <xref:System.Type> 개체의이 `ICorDebugObjectValue` 참조 합니다.|  
 |[GetContext 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getcontext-method.md)|구현되지 않았습니다.|  
 |[GetFieldValue 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getfieldvalue-method.md)|한 인터페이스 포인터를 가져옵니다는 [ICorDebugValue](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue-interface.md) 지정된 된 클래스의 지정된 된 필드의 값을 나타내는입니다.|  
-|[GetManagedCopy 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getmanagedcopy-method.md)|사용되지 않습니다. 이 메서드를 호출 하지 마십시오.|  
+|[GetManagedCopy 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getmanagedcopy-method.md)|사용되지 않습니다. 이 메서드를 호출 하지 마세요.|  
 |[GetVirtualMethod 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getvirtualmethod-method.md)|구현되지 않았습니다.|  
-|[IsValueClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-isvalueclass-method.md)|이 참조 하는 개체가 있는지 여부를 나타내는 값을 가져옵니다 `ICorDebugObjectValue` 값 형식이 있습니다.|  
-|[SetFromManagedCopy 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-setfrommanagedcopy-method.md)|사용되지 않습니다. 이 메서드를 호출 하지 마십시오.|  
+|[IsValueClass 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-isvalueclass-method.md)|이 개체를 참조 하는지 여부를 나타내는 값을 가져옵니다 `ICorDebugObjectValue` 값 형식입니다.|  
+|[SetFromManagedCopy 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-setfrommanagedcopy-method.md)|사용되지 않습니다. 이 메서드를 호출 하지 마세요.|  
   
 ## <a name="remarks"></a>설명  
  `ICorDebugObjectValue` 디버깅 중인 프로세스가 계속 될 때까지 유효 합니다.  
@@ -45,14 +45,14 @@ ms.locfileid: "33422415"
 >  이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- 
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+

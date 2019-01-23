@@ -2,12 +2,12 @@
 title: 사용자 코드 추적 내보내기
 ms.date: 03/30/2017
 ms.assetid: fa54186a-8ffa-4332-b0e7-63867126fd49
-ms.openlocfilehash: 0664c11d8020ee5e712ce6d4843c85a1f30b11a3
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 5ecc0c2110362f715275729b5e4c4c7e1ec03496
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492666"
 ---
 # <a name="emitting-user-code-traces"></a>사용자 코드 추적 내보내기
 Windows Communication Foundation (WCF)에서 생성 하는 계측 데이터를 수집 하는 구성에서 추적을 사용 하는 것 외에도 사용자 코드에서 프로그래밍 방식으로 추적을 내보낼 수도 있습니다. 이런 방식으로 계측 데이터를 사전에 작성하여 나중에 진단을 위해 확인할 수 있습니다. 이 항목에서는 이 작업을 수행하는 방법에 대해 설명합니다.  
@@ -123,7 +123,7 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
   
  다음 다이어그램에서는 계산기 동작에서 보내거나 받은 Transfer 추적을 표시하고 요청 동작별로 두 개의 Start 및 Stop 추적 쌍을 표시합니다. 이 추적 쌍은 클라이언트와 서비스별로 각각 하나씩(추적 소스별로 하나) 표시됩니다.  
   
- ![추적 뷰어: 사용자를 내보내는&#45;추적 코드](../../../../../docs/framework/wcf/diagnostics/tracing/media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd")  
+ ![추적 뷰어: 사용자 내보내기&#45;추적 코드](../../../../../docs/framework/wcf/diagnostics/tracing/media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd")  
 생성 시간별 동작 목록(왼쪽 패널) 및 중첩된 동작 목록(오른쪽 위 패널)  
   
  서비스 코드가 예외를 throw하여 클라이언트에서도 예외가 throw되면(예: 클라이언트가 요청에 대한 응답을 가져오지 않은 경우), 서비스 및 클라이언트 경고 또는 오류 메시지가 직접 상관 관계에 대해 동일한 동작에서 표시됩니다. 다음 다이어그램에서 서비스는 "서비스가 사용자 코드에서이 요청의 처리를 거부 합니다." 라는 예외를 throw 클라이언트는 또한 "서버에서 내부 오류로 인해 요청을 처리할 수 없습니다." 라는 예외를 throw  
@@ -140,5 +140,5 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
   
  동작을 정의하고 동작 ID를 전파하면 엔드포인트를 통해 오류 상관 관계를 직접 수행할 수 있습니다. 그러면 오류에 대한 근본 원인을 신속하게 찾을 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추적 확장](../../../../../docs/framework/wcf/samples/extending-tracing.md)
+## <a name="see-also"></a>참고자료
+- [추적 확장](../../../../../docs/framework/wcf/samples/extending-tracing.md)

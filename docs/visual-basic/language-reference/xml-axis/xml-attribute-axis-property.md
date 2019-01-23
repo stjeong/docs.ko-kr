@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], attribute
 - XML [Visual Basic], accessing
 ms.assetid: 7a4777e1-0618-4de9-9510-fb9ace2bf4db
-ms.openlocfilehash: 9107b946394ab70980e4865364fc1ba9683e2025
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: cfc18df4487488bd90d7b0250a9053f55305d8a8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43785162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631501"
 ---
 # <a name="xml-attribute-axis-property-visual-basic"></a>XML 특성 축 속성(Visual Basic)
 에 대 한 특성의 값에 액세스할 수는 <xref:System.Xml.Linq.XElement> 개체 컬렉션의 첫 번째 요소 또는 <xref:System.Xml.Linq.XElement> 개체입니다.  
@@ -30,7 +30,7 @@ object.@<attribute>
   
 ## <a name="parts"></a>요소  
  `object`  
- 필수. <xref:System.Xml.Linq.XElement> 개체 또는 컬렉션 <xref:System.Xml.Linq.XElement> 개체입니다.  
+ 필수 요소. <xref:System.Xml.Linq.XElement> 개체 또는 컬렉션 <xref:System.Xml.Linq.XElement> 개체입니다.  
   
  .@  
  필수 요소. 특성 축 속성의 시작을 나타냅니다.  
@@ -39,12 +39,12 @@ object.@<attribute>
  선택 사항입니다. 특성의 이름의 시작 부분을 나타내는 경우 `attribute` Visual Basic의 올바른 식별자가 아닙니다.  
   
  `attribute`  
- 필수. 폼에 액세스 하려면 특성의 이름을 [`prefix`:]`name`합니다.  
+ 필수 요소. 폼에 액세스 하려면 특성의 이름을 [`prefix`:]`name`합니다.  
   
 |파트|설명|  
 |----------|-----------------|  
 |`prefix`|선택 사항입니다. 특성에 대 한 XML 네임 스페이스 접두사입니다. `Imports` 문으로 정의되는 전역 XML 네임스페이스여야 합니다.|  
-|`name`|필수. 로컬 특성 이름입니다. 참조 [선언 된 XML 요소 및 특성의 이름을](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)입니다.|  
+|`name`|필수 요소. 로컬 특성 이름입니다. 참조 [선언 된 XML 요소 및 특성의 이름을](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)입니다.|  
   
  \>  
  선택 사항입니다. 특성의 이름의 끝을 나타냅니다 때 `attribute` Visual Basic의 올바른 식별자가 아닙니다.  
@@ -106,9 +106,9 @@ object.@<attribute>
   
  `Phone type: home`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement>  
- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Xml.Linq.XElement>
+- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [선언된 XML 요소 및 특성의 이름](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

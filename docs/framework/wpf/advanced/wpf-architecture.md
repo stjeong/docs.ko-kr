@@ -16,12 +16,12 @@ helpviewer_keywords:
 - data templates [WPF]
 - thread [WPF], affinity
 ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
-ms.openlocfilehash: 50a7e1b08c31b5d0fb779dabf617a08bbb4c6cf4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 7214304d8575fb6ef8774d55eaf29ad714235123
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54634586"
 ---
 # <a name="wpf-architecture"></a>WPF 아키텍처
 이 항목에서는 Windows Presentation Foundation (WPF) 클래스 계층의 둘러보기를 제공합니다. 이 항목은 대부분의 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 주요 하위 시스템을 다루며 이들이 어떻게 상호 작용하는지를 설명하고, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]의 설계자가 선택한 몇 가지 사항에 대해서 자세히 설명합니다.  
@@ -141,14 +141,14 @@ ms.locfileid: "50195920"
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 기반 응용 프로그램의 개발을 시작하면 매우 친숙하다는 느낌을 받을 것입니다. [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 또는 [!INCLUDE[TLA#tla_aspnet](../../../../includes/tlasharptla-aspnet-md.md)] 을 사용하는 것과 거의 똑같은 방법으로 속성을 설정하고, 개체를 사용하고, 데이터를 바인딩할 수 있습니다. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]의 아키텍처를 보다 자세히 살펴 보면 근본적으로 데이터를 응용 프로그램의 핵심 요소로 처리하는 보다 다양한 응용 프로그램을 만들 수 있는 가능성이 있다는 사실을 발견하게 될 것입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Visual>  
- <xref:System.Windows.UIElement>  
- <xref:System.Windows.Input.ICommand>  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.Threading.DispatcherObject>  
- <xref:System.Windows.Input.CommandBinding>  
- <xref:System.Windows.Controls.Control>  
- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Visual>
+- <xref:System.Windows.UIElement>
+- <xref:System.Windows.Input.ICommand>
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.Threading.DispatcherObject>
+- <xref:System.Windows.Input.CommandBinding>
+- <xref:System.Windows.Controls.Control>
+- [데이터 바인딩 개요](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
