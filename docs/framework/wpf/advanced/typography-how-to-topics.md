@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - typography [WPF], how-to topics
 ms.assetid: 82d50325-7cb2-4975-aea3-027c00e6bbfc
-ms.openlocfilehash: af5bd998840e87a4e13f5865c26aea57dcd24426
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0f7fdea1aa399e6f967bdfad1cd19067a7f5761b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33546317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543580"
 ---
 # <a name="typography-how-to-topics"></a>입력 체계 방법 항목
-이 섹션의 항목을 사용 하는 방법을 설명 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 풍부한 응용 프로그램에서 텍스트 표시를 지원 합니다.  
+이 섹션의에서 항목에서는 사용 하는 방법에 설명 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 풍부한 기능의 프레젠테이션 응용 프로그램의 텍스트에 대 한 지원.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [텍스트 장식 만들기](../../../../docs/framework/wpf/advanced/how-to-create-a-text-decoration.md)  
@@ -27,7 +27,7 @@ ms.locfileid: "33546317"
  [시각적 요소에 텍스트 그리기](../../../../docs/framework/wpf/advanced/how-to-draw-text-to-a-visual.md)  
  [XAML에서 특수 문자 사용](../../../../docs/framework/wpf/advanced/how-to-use-special-characters-in-xaml.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Documents.Typography>  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [OpenType 글꼴 기능](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Documents.Typography>
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [OpenType 글꼴 기능](../../../../docs/framework/wpf/advanced/opentype-font-features.md)

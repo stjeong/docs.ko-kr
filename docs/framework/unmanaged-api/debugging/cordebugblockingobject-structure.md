@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ed7db321b32657087b791758096c692f25f3d7f5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 49521e4b4ff5f8c364827b233759e163aca43e39
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33407838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54542657"
 ---
 # <a name="cordebugblockingobject-structure"></a>CorDebugBlockingObject 구조체
-스레드가 차단 되는 특별 한 이유가 스레드가 차단 되는 개체를 정의 합니다.  
+스레드가 차단 되는 특정 이유와 스레드를 차단 하는 개체를 정의 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,21 +41,21 @@ CorDebugBlockingReason blockingReason;
   
 |멤버|설명|  
 |------------|-----------------|  
-|`pBlockingObject`|스레드가 차단 되어 개체입니다. 이 개체는 현재 동기화 된 상태의 기간에만 유효 합니다. 스레드가 각각 두를 동일한 동기화 된 상태에서 동일한 개체에 차단 하는 경우 예상 된 [icordebugvalue:: Getaddress](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue-getaddress-method.md) 메서드를 같은 값을 반환 합니다. 그러나 인터페이스 수 또는 포인터에 해당 되지 않을 수 있습니다.|  
-|`dwTimeout`|작업을 차단 하기 전에 시간을 밀리초 단위로 시간 제한 또는 제한 시간이 초과 되지 않음을 나타내는 INFINITE 값 됩니다. 시간 제한 값은 남아 있는 시간이 아닌 차단 작업에 대 한 시간의 총 길이 지정 합니다.|  
-|`blockingReason`|이 개체에서 스레드가 차단 되는 이유입니다.|  
+|`pBlockingObject`|스레드를 차단 하는 개체입니다. 이 개체는 현재 동기화 된 상태의 기간에만 유효 합니다. 예상할 수 있는 경우 두 스레드가 동일한 동기화 된 상태 내에서 동일한 개체에서 차단 되는 [icordebugvalue:: Getaddress](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue-getaddress-method.md) 동일한 값을 반환 하는 방법입니다. 그러나 인터페이스 수도 있고 해당 포인터 되지 않을 수 있습니다.|  
+|`dwTimeout`|차단 작업 전에 시간을 밀리초 단위로 시간 초과 또는 무한 시간 초과 되지 않음을 나타내는 값을 됩니다. 시간 제한 값은 남아 있는 시간이 아닌 차단 작업에 대 한 총 기간을 지정 합니다.|  
+|`blockingReason`|이 개체에 스레드가 차단 되는 이유입니다.|  
   
 ## <a name="remarks"></a>설명  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 구조체](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 구조체](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)

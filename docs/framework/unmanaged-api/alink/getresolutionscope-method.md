@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e67a71c25c0ae8ee7c54fae2e38d1116a5d92eff
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f8d230d5396c5a088fa76a7ca145b4a22d1e1d07
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33402591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543359"
 ---
 # <a name="getresolutionscope-method"></a>GetResolutionScope 메서드
 지정 된 형식의 범위를 검색합니다.  
@@ -45,7 +45,7 @@ HRESULT GetResolutionScope(
  참조를 수행 해야 하는 파일입니다.  
   
  `TargetFile`  
- 파일의 토큰 해당 형식이 정의 일반적으로 사용 하 여 검색 [ImportFile 메서드](../../../../docs/framework/unmanaged-api/alink/importfile-method.md)합니다.  
+ 파일의 토큰 형식임을 사용 하 여 검색에서 일반적으로 정의 됩니다 [ImportFile 메서드](../../../../docs/framework/unmanaged-api/alink/importfile-method.md)합니다.  
   
  `pScope`  
  어셈블리 또는 모듈 참조를 받습니다.  
@@ -56,7 +56,7 @@ HRESULT GetResolutionScope(
 ## <a name="requirements"></a>요구 사항  
  Alink.h가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

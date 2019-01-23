@@ -5,12 +5,12 @@ helpviewer_keywords:
 - locale [Visual Basic], effect on strings
 - strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-ms.openlocfilehash: 41fd612695fbeacbc7b53cb9e5dbf67939e73482
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 9f796583e1e38c31960868b1e6f20288587fa076
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543450"
 ---
 # <a name="how-culture-affects-strings-in-visual-basic"></a>Visual Basic에서 문화권이 문자열에 영향을 주는 방식
 이 도움말 페이지는 Visual Basic 문자열 변환과 비교를 수행 하려면 문화권 정보를 사용 하는 방법을 설명 합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "39332602"
  자세한 내용은 <xref:Microsoft.VisualBasic.Conversion.Str%2A> 및 <xref:Microsoft.VisualBasic.Conversion.Val%2A>를 참조하세요.  
   
 ## <a name="using-a-specific-culture"></a>특정 문화권을 사용 하 여  
- 웹 서비스 (문자열로 서식이 지정 된) 날짜를 전송 하는 응용 프로그램을 개발 하는 경우를 가정해 보겠습니다. 이 경우 응용 프로그램에서는 문자열 변환에 대 한 특정 문화권을 사용 해야 합니다. 이유를 보여 주기 위해 날짜의를 사용 하 여 결과 고려해 보십시오. <xref:System.DateTime.ToString> 메서드: 응용 프로그램에서 해당 메서드를 사용 하 여 2005 년 7 월 4 일 날짜를 반환 합니다 "2005 년 7 월 4 일 오전 12시: 00" 미국 영어 (EN-US) 문화권을 사용 하 여 실행 하는 경우 반환 되지만 " 04.07.2005 00시: 00 "독일어 (DE-DE) 문화권을 사용 하 여 실행 하는 경우.  
+ 웹 서비스 (문자열로 서식이 지정 된) 날짜를 전송 하는 응용 프로그램을 개발 하는 경우를 가정해 보겠습니다. 이 경우 응용 프로그램에서는 문자열 변환에 대 한 특정 문화권을 사용 해야 합니다. 이유를 보여 주기 위해 날짜의를 사용 하 여 결과 고려해 보십시오. <xref:System.DateTime.ToString> 메서드: 응용 프로그램에서 2005 년 7 월 4 일 날짜를 해당 메서드를 사용 하는 경우 반환 "2005 년 7 월 4 일 오전 12시: 00" 미국 영어 (EN-US) 문화권을 사용 하 여 실행 하는 경우 반환 되지만 "04.07.2005 00시: 00" 독일어 (DE-DE) 문화권을 사용 하 여 실행 하는 경우.  
   
  특정 문화권 형태로 문자열 변환을 수행 해야 하는 경우 사용 해야 합니다 `CultureInfo` 클래스에 기본 제공 되는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]합니다. 새로 만들 수 있습니다 `CultureInfo` 문화권의 이름을 전달 하 여 특정 문화권에 대 한 개체는 <xref:System.Globalization.CultureInfo.%23ctor%2A> 생성자입니다. 지원 되는 문화권 이름에 나열 됩니다는 <xref:System.Globalization.CultureInfo> 클래스 도움말 페이지입니다.  
   
@@ -76,9 +76,9 @@ ms.locfileid: "39332602"
 |`InvariantCulture` 또는 `InvariantCultureIgnoreCase`|고정 문화권에서 문자열 해석에 따라 비교 합니다.<br /><br /> 이 다른 합니다 `Ordinal` 및 `OrdinalIgnoreCase`고정 문화권은 허용 된 범위를 벗어나는 문자가 해당 고정 문자로 취급 하므로, 합니다.|고정된 정렬 순서가 필요한 비교 데이터를 유지 하거나 언어적으로 관련 된 데이터를 표시 하는 경우에 이러한 값을 사용 합니다.|  
   
 ### <a name="security-considerations"></a>보안 고려 사항  
- 응용 프로그램에서 비교 또는 대/소문자 변경 작업의 결과에 따라 보안 결정 다음 작업을 사용 해야 합니다 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 통과 `Ordinal` 또는 `OrdinalIgnoreCase` 에 대 한는 `comparisonType` 인수입니다.  
+ 애플리케이션에서 비교 또는 대/소문자 변경 작업의 결과에 따라 보안 결정 다음 작업을 사용 해야 합니다 <xref:System.String.Compare%2A?displayProperty=nameWithType> 메서드를 통과 `Ordinal` 또는 `OrdinalIgnoreCase` 에 대 한는 `comparisonType` 인수입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Globalization.CultureInfo>  
- [Visual Basic의 문자열 소개](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
- [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Globalization.CultureInfo>
+- [Visual Basic의 문자열 소개](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
