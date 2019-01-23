@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8283139566050b1858a003316dc46581822a9bbb
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 15bd3ed8f1642e44ecf9c4df49feebd72eeac8c2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33450156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590135"
 ---
 # <a name="corprfgcgeneration-enumeration"></a>COR_PRF_GC_GENERATION 열거형
-가비지 수집 생성을 식별 합니다.  
+가비지 수집 세대를 식별합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,25 +42,25 @@ typedef enum {
 |멤버|설명|  
 |------------|-----------------|  
 |`COR_PRF_GC_GEN_0`|개체는 세대 0으로 저장 됩니다.|  
-|`COR_PRF_GC_GEN_1`|개체는 세대 1로 저장 됩니다.|  
+|`COR_PRF_GC_GEN_1`|개체는 1 세대도 저장 됩니다.|  
 |`COR_PRF_GC_GEN_2`|개체는 2 세대도 저장 됩니다.|  
-|`COR_PRF_GC_LARGE_OBJECT_HEAP`|개체는 큰 개체 힙에 저장 됩니다.|  
+|`COR_PRF_GC_LARGE_OBJECT_HEAP`|개체는 대형 개체 힙에 저장 됩니다.|  
   
 ## <a name="remarks"></a>설명  
- 가비지 수집기 나가에 따른 세대로 나눈 개체에서 메모리 관리 성능을 향상 시킵니다. 가비지 수집기는 현재 0, 1, 2, 및 큰 개체에 사용 되는 특별 한 힙에 세그먼트 번호가 지정 된 세 가지 세대를 사용 합니다. 특정 값 보다 큰 개체는 큰 개체 힙에 저장 됩니다. 0 세대에 속하는 다른 할당 된 개체를 시작 합니다. 0 세대의 가비지 수집이 수행 된 후 존재 하는 모든 개체는 세대 1로 승격 됩니다. 1 세대에서 가비지 수집이 수행 된 후에 있는 개체는 2 세대를 이동 합니다.  
+ 가비지 수집기 기준 세대를 나눠 개체에서 메모리 관리 성능을 향상 시킵니다. 가비지 수집기는 현재 세 가지 세대와 0, 1, 2 및 큰 개체에 사용 되는 특수 힙 세그먼트를 번호 매기기를 사용 합니다. 특정 값 보다 큰 개체는 대형 개체 힙에 저장 됩니다. 0 세대에 속하는 다른 할당 된 개체를 시작 합니다. 가비지 컬렉션이 0 세대에서 발생 한 후에 있는 모든 개체는 1 세대로 승격 됩니다. 1 세대에서 가비지 수집이 수행 된 후 존재 하는 개체 세대 2로 이동 합니다.  
   
- 사용 되는 세대의 가비지 수집기는 한 번에 할당 된 개체의 하위 집합만 사용 하는 것을 의미 합니다.  
+ 사용 세대의 가비지 수집기는 한 번에 할당 된 개체의 하위 집합만 사용 하는 것을 의미 합니다.  
   
- `COR_PRF_GC_GENERATION` 열거형에서 사용 되는 [COR_PRF_GC_GENERATION_RANGE](../../../../docs/framework/unmanaged-api/profiling/cor-prf-gc-generation-range-structure.md) 구조입니다.  
+ 합니다 `COR_PRF_GC_GENERATION` 열거형에서 사용 되는 [COR_PRF_GC_GENERATION_RANGE](../../../../docs/framework/unmanaged-api/profiling/cor-prf-gc-generation-range-structure.md) 구조입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [프로파일링 열거형](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [프로파일링 열거형](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

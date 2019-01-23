@@ -2,12 +2,12 @@
 title: 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 8cd4401c-b12c-4116-a421-f3dcffa65670
-ms.openlocfilehash: 6fe4f789ca64c0646b77fdb66b0c6e2b73763293
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 62cc7a0567b9eb82c24c329a7ae8fb3e52f0f0c8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47108353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54586412"
 ---
 # <a name="troubleshooting"></a>문제 해결
 다음은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 응용 프로그램에서 발생할 수 있는 문제와 이러한 문제를 방지하거나 문제의 영향을 줄일 수 있는 방법에 대한 설명입니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "47108353"
   
  <xref:System.Data.SqlClient.SqlException> 예외가 throw됩니다.  
   
- 자세한 내용은 [방법: the 데이터베이스에서 행 삭제](../../../../../../docs/framework/data/adonet/sql/linq/how-to-delete-rows-from-the-database.md)합니다.  
+ 자세한 내용은 [방법: 데이터베이스에서 행을 삭제할](../../../../../../docs/framework/data/adonet/sql/linq/how-to-delete-rows-from-the-database.md)합니다.  
   
 ## <a name="expression-not-queryable"></a>쿼리할 수 없는 식  
  "Expression [expression] 형식의 식은 쿼리할 수 없습니다. 어셈블리 참조가 있는지 확인하십시오." 오류가 나타나면 다음 사항을 확인하십시오.  
@@ -69,6 +69,6 @@ ms.locfileid: "47108353"
 ## <a name="oncreated-partial-method"></a>OnCreated() 부분 메서드  
  생성된 `OnCreated()` 메서드는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 원래 값의 복사본을 만들기 위해 생성자를 호출하는 시나리오를 포함하여, 개체 생성자가 호출될 때마다 호출됩니다. 고유한 부분 클래스에 `OnCreated()` 메서드를 구현할 때 이 동작을 고려하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 지원](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)  
- [질문과 대답](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 지원](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+- [질문과 대답](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

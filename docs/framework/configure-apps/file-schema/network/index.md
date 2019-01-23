@@ -2,22 +2,16 @@
 title: 네트워크 설정 스키마
 ms.date: 03/30/2017
 helpviewer_keywords:
-- elements [.NET Framework], network configuration elements
-- sending data, network configuration elements
-- receiving data, network configuration elements
-- configuration settings [.NET Framework], networks
-- Internet, network configuration elements
-- network configuration elements
-- network settings
-- connections [.NET Framework], network configuration elements
-- network resources, network configuration elements
+  - 'elements [.NET Framework], network configuration elements'
+  - 'sending data, network configuration elements'
+  - 'receiving data, network configuration elements'
+  - 'configuration settings [.NET Framework], networks'
+  - 'Internet, network configuration elements'
+  - network configuration elements
+  - network settings
+  - 'connections [.NET Framework], network configuration elements'
+  - 'network resources, network configuration elements'
 ms.assetid: f1de5a0f-76c5-4833-819f-5222b8146340
-ms.openlocfilehash: 93248823284389a865111f9ab47cdac026be55b4
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53143209"
 ---
 # <a name="network-settings-schema"></a>네트워크 설정 스키마
 네트워크 설정으로 .NET Framework의 인터넷 연결 방법을 지정합니다. 다음 표에서는 [\<system.Net> 요소(네트워크 설정)](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)의 각 자식 구성 요소의 기능을 설명합니다.  
@@ -39,6 +33,6 @@ ms.locfileid: "53143209"
 |[\<iriParsing> 요소(URI 설정)](../../../../../docs/framework/configure-apps/file-schema/network/iriparsing-element-uri-settings.md)|IRI(International Resource Identifier) 구문 분석이 <xref:System.Uri>에 적용되는지와 IRI 구문 분석 규칙을 적용해야 하는지 지정합니다.|  
 |[\<schemeSettings> 요소 (URI 설정)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|특정 체계에 대해 <xref:System.Uri>가 구문 분석되는 방법을 지정합니다.|  
   
-## <a name="see-also"></a>참고 항목  
-- [인터넷 응용 프로그램 구성](../../../../../docs/framework/network-programming/configuring-internet-applications.md)  
+## <a name="see-also"></a>참고자료
+- [인터넷 애플리케이션 구성](../../../../../docs/framework/network-programming/configuring-internet-applications.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
