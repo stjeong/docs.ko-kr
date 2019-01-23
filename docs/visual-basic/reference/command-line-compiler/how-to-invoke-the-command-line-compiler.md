@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic compiler, starting
 - command line [Visual Basic], arguments
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
-ms.openlocfilehash: d2d193f8c3d483ff87fe719919982e8c3473ec0b
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: dd5fadb9c9f248b5fb4f289bb2d24f1b085a79a8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54503731"
 ---
 # <a name="how-to-invoke-the-command-line-compiler-visual-basic"></a>방법: 명령줄 컴파일러 (Visual Basic) 호출
 MS-DOS 프롬프트 라고도 하는 명령줄에 실행 파일의 이름을 입력 하 여 명령줄 컴파일러를 호출할 수 있습니다. 기본 Windows 명령 프롬프트에서에서 컴파일하는 경우에 실행 파일에 정규화 된 경로 입력 해야 합니다. 이 기본 동작을 재정의 하려면 Visual Studio 용 개발자 명령 프롬프트를 사용 하거나 경로 환경 변수를 수정 합니다. 둘 다 컴파일러 이름을 입력 하 여 모든 디렉터리에서 컴파일할 수 있습니다.  
@@ -57,6 +57,6 @@ MS-DOS 프롬프트 라고도 하는 명령줄에 실행 파일의 이름을 입
   
      예를 들어 라는 디렉터리에 소스 코드를 저장 하는 경우 `SourceFiles`, 하는 명령 프롬프트를 열고 입력 `cd SourceFiles` 해당 디렉터리로 변경 합니다. 디렉터리 라는 원본 파일을 포함 하는 경우 `Source.vb`를 입력 하 여 컴파일할 수 있습니다 `vbc.exe Source.vb`합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [조건부 컴파일](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [조건부 컴파일](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

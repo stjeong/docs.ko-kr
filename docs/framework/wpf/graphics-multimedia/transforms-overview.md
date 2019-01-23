@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Transforms [WPF], about Transforms
 - FrameworkElement objects [WPF], scaling
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
-ms.openlocfilehash: 4fd846502fd348222bc1da1c8746f037e9f237fe
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 9e28f95b58481a5cb7b2fbf92fd20545a3f0fdc5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54503121"
 ---
 # <a name="transforms-overview"></a>Transform 개요
 이 항목에서는 사용 하는 방법을 설명 합니다 [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] <xref:System.Windows.Media.Transform> 회전, 크기 조정, 이동 하는 클래스 (변환) 및 기울이기 <xref:System.Windows.FrameworkElement> 개체입니다.  
@@ -80,7 +80,7 @@ ms.locfileid: "43864578"
   
 <a name="transformcenter"></a>   
 ## <a name="transformations-and-coordinate-systems"></a>변환 및 좌표계  
- 개체를 변환하는 경우 개체만 단지 변환하는 것이 아니라 개체가 있는 좌표 공간을 변환하게 됩니다. 기본적으로 변환은 대상 개체의 좌표계 원점 (0,0)을 중심으로 합니다. 유일한 예외는 <xref:System.Windows.Media.TranslateTransform>는 <xref:System.Windows.Media.TranslateTransform> 번역 효과 가운데 위치에 관계 없이 동일 하기 때문에 설정할 중심 속성이 없습니다.  
+ 개체를 변환하는 경우 개체만 단지 변환하는 것이 아니라 개체가 있는 좌표 공간을 변환하게 됩니다. 기본적으로 변환은 대상 개체의 좌표계의 원점을 중심이: (0,0). 유일한 예외는 <xref:System.Windows.Media.TranslateTransform>는 <xref:System.Windows.Media.TranslateTransform> 번역 효과 가운데 위치에 관계 없이 동일 하기 때문에 설정할 중심 속성이 없습니다.  
   
  다음 예제에서는 <xref:System.Windows.Media.RotateTransform> 회전 하는 <xref:System.Windows.Shapes.Rectangle> 요소, 형식의 <xref:System.Windows.FrameworkElement>를 기본 중심에서 45도 각도로 (0, 0). 다음 그림에서는 회전의 결과를 보여 줍니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "43864578"
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]의 레이아웃에 대한 추가 정보를 보려면 [레이아웃](../../../../docs/framework/wpf/advanced/layout.md) 개요를 참조하세요.  
   
 <a name="exampleRotateAnElement45degSection"></a>   
-## <a name="example-rotate-a-frameworkelement-45-degrees"></a>예제: FrameworkElement를 45도로 회전  
+## <a name="example-rotate-a-frameworkelement-45-degrees"></a>예제: FrameworkElement 회전 45도  
  다음 예제에서는 <xref:System.Windows.Media.RotateTransform> 단추를 시계 방향으로 45도 회전 합니다. 단추에 포함 된를 <xref:System.Windows.Controls.StackPanel> 는 2 개의 다른 단추가 있습니다.  
   
  기본적으로 <xref:System.Windows.Media.RotateTransform> 점 (0, 0)으로 회전 합니다. 이 예제에서는 중심 값을 지정하지 않으므로 단추는 왼쪽 위 구석에 해당하는 점 (0,0)에 대해 회전합니다. 합니다 <xref:System.Windows.Media.RotateTransform> 에 적용 되는 <xref:System.Windows.UIElement.RenderTransform%2A> 속성입니다. 다음 그림에서는 변환의 결과를 보여 줍니다.  
@@ -149,8 +149,8 @@ ms.locfileid: "43864578"
 ## <a name="freezable-features"></a>Freezable 기능  
  상속 하므로 합니다 <xref:System.Windows.Freezable> 클래스를 <xref:System.Windows.Media.Transform> 몇 가지 특별 한 기능을 제공 하는 클래스: <xref:System.Windows.Media.Transform> 로 개체를 선언할 수 있습니다 [리소스](../../../../docs/framework/wpf/advanced/xaml-resources.md)개선 하기 위해 읽기 전용으로, 여러 개체 간에 공유 성능, 복제 하 고 스레드로부터 안전 합니다. 제공 하는 다양 한 기능에 대 한 자세한 내용은 <xref:System.Windows.Freezable> 개체를 참조 합니다 [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Transform>  
- <xref:System.Windows.Media.Matrix>  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)  
- [2차원 변환 샘플](https://go.microsoft.com/fwlink/?LinkID=158252)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Transform>
+- <xref:System.Windows.Media.Matrix>
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
+- [2차원 변환 샘플](https://go.microsoft.com/fwlink/?LinkID=158252)

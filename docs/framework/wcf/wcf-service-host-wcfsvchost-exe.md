@@ -2,12 +2,12 @@
 title: WCF 서비스 호스트(WcfSvcHost.exe)
 ms.date: 03/30/2017
 ms.assetid: 8643a63d-a357-4c39-bd6c-cdfdf71e370e
-ms.openlocfilehash: 6f719756688af066a42c3f73a860038dad1e5a53
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 6a8ed677ceaf9b86b67ec2558eb4e31c23d4c57e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43857221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54505642"
 ---
 # <a name="wcf-service-host-wcfsvchostexe"></a>WCF 서비스 호스트(WcfSvcHost.exe)
 Windows Communication Foundation (WCF) 서비스 호스트 (WcfSvcHost.exe)를 사용 하면 Visual Studio 디버거 (F5) 자동으로 호스팅하고 테스트할 구현한 서비스를 시작할 수 있습니다. 다음 찾기 및 잠재적인 오류를 해결 하려면 WCF 테스트 클라이언트 (WcfTestClient.exe) 또는 사용자 고유의 클라이언트를 사용 하는 서비스를 테스트할 수 있습니다.  
@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) 서비스 호스트 (WcfSvcHost.exe)를 �
 >  WCF 서비스 호스트는 부분 신뢰를 지원 하지 않습니다. 부분 신뢰에서 WCF 서비스를 사용 하려는 경우 사용 하지 마십시오 WCF 서비스 라이브러리 프로젝트 템플릿을 Visual Studio에서 서비스를 빌드하기 위해. WCF 부분 신뢰가 지원 되는 WebServer에서 서비스를 호스트할 수 있는 WCF 서비스 웹 사이트 템플릿을 선택 하 여 Visual Studio에서 새 웹 사이트를 대신 만듭니다.  
   
 ## <a name="project-types-hosted-by-wcf-service-host"></a>WCF 서비스 호스트에서 호스팅하는 프로젝트 형식  
- WCF 서비스 호스트에는 다음 WCF 서비스 라이브러리 프로젝트 형식을 호스팅할 수 있습니다: WCF 서비스 라이브러리, 순차 워크플로 서비스 라이브러리, 상태 시스템 워크플로 서비스 라이브러리 및 배포 서비스 라이브러리입니다. WCF 서비스 호스트 사용 하 여 서비스 라이브러리 프로젝트에 추가할 수 있는 해당 서비스를 호스트할 수도 합니다 **항목 추가** 기능입니다. WCF 서비스, WF 상태 시스템 서비스, WF 순차 서비스, XAML WF 상태 시스템 서비스 및 XAML WF 순차 서비스가 포함 됩니다.  
+ WCF 서비스 호스트에는 다음 WCF 서비스 라이브러리 프로젝트 형식을 호스팅할 수 있습니다. WCF 서비스 라이브러리, 순차 워크플로 서비스 라이브러리, 상태 시스템 워크플로 서비스 라이브러리 및 배포 서비스 라이브러리를 선택 합니다. WCF 서비스 호스트 사용 하 여 서비스 라이브러리 프로젝트에 추가할 수 있는 해당 서비스를 호스트할 수도 합니다 **항목 추가** 기능입니다. WCF 서비스, WF 상태 시스템 서비스, WF 순차 서비스, XAML WF 상태 시스템 서비스 및 XAML WF 순차 서비스가 포함 됩니다.  
   
  그러나 이 도구를 사용하여 호스트를 구성할 수는 없습니다. 이 작업의 경우 App.config 파일을 수동으로 편집해야 합니다. 또한 이 도구는 사용자 정의 구성 파일의 유효성을 검사하지 않습니다.  
   
@@ -74,7 +74,7 @@ Windows Communication Foundation (WCF) 서비스 호스트 (WcfSvcHost.exe)를 �
   
 -   **파일**: 포함 된 **닫기** 및 **종료** 명령입니다. 클릭 하면 **닫습니다**, **WCF 서비스 호스트** 대화 상자가 닫히지만 서비스 계속 호스팅되고 있습니다. 클릭 하면 **종료**, WCF 서비스 호스트도 종료 됩니다. 또한 호스팅되는 서비스가 모두 중지됩니다.  
   
--   **도움말**: 포함 된 **에 대 한** 버전 정보를 포함 하는 명령. 도 포함 되어는 **도움말** 도움말 파일을 열 수 있는 명령입니다.  
+-   **도움말**: 포함 된 **에 대 한** 버전 정보를 포함 하는 명령입니다. 도 포함 되어는 **도움말** 도움말 파일을 열 수 있는 명령입니다.  
   
  주 **WCF 서비스 호스트** 창에 두 영역이 포함 되어 있습니다.  
   
@@ -82,9 +82,9 @@ Windows Communication Foundation (WCF) 서비스 호스트 (WcfSvcHost.exe)를 �
   
     -   **서비스**: 모든 서비스를 나열 합니다.  
   
-    -   **상태**: 서비스의 상태를 나열 합니다. 유효한 값은 "시작됨", "중지됨" 및 "오류"입니다.  
+    -   **상태**: 서비스의 상태를 나열합니다. 유효한 값은 "시작됨", "중지됨" 및 "오류"입니다.  
   
-    -   **메타 데이터 주소**: 서비스의 메타 데이터 주소를 표시 합니다.  
+    -   **메타 데이터 주소**: 서비스의 메타 데이터 주소를 표시합니다.  
   
 -   두 번째 영역은 **자세한 내용은**합니다. 특정 서비스 줄을 선택한 경우에 서비스의 상태에 대 한 자세한 설명은 표시 합니다 **서비스** 영역입니다. 상태가 Error인 경우 화면에서 전체 오류 메시지를 볼 수 있습니다.  
   
@@ -110,5 +110,5 @@ netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
   
  Netsh.exe에 대 한 자세한 내용은 참조 하세요. "[Netsh.exe 도구 및 명령줄 스위치를 사용 하는 방법을](https://go.microsoft.com/fwlink/?LinkId=97877)"입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF 테스트 클라이언트(WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+## <a name="see-also"></a>참고자료
+- [WCF 테스트 클라이언트(WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

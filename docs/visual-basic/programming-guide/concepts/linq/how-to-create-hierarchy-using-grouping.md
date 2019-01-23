@@ -1,21 +1,21 @@
 ---
-title: '방법: 그룹화 (Visual Basic)를 사용 하 여 계층 만들기'
+title: '방법: 그룹화 (Visual Basic)를 사용 하 여 계층을 만들려면'
 ms.date: 07/20/2015
 ms.assetid: 4eb3ca6b-1aed-43de-b8b9-41c769c993f8
-ms.openlocfilehash: 9df85a52d63c4d7dbffb99a47378d3a1efc10cca
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d7c77d0e6b67f21d9d6e0ca270874641011e5924
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33639326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54520999"
 ---
-# <a name="how-to-create-hierarchy-using-grouping-visual-basic"></a>방법: 그룹화 (Visual Basic)를 사용 하 여 계층 만들기
+# <a name="how-to-create-hierarchy-using-grouping-visual-basic"></a>방법: 그룹화 (Visual Basic)를 사용 하 여 계층을 만들려면
 이 예제에서는 데이터를 그룹화한 다음 그룹화에 따라 XML을 생성하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 먼저 범주를 기준으로 데이터를 그룹화한 다음 XML 계층 구조가 그룹화를 반영하는 XML 파일을 새로 생성합니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 숫자 데이터(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md)를 사용합니다.  
+ 이 예제에서는 XML 문서로 을 사용합니다. [샘플 XML 파일: 숫자 데이터 (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md)합니다.  
   
 ```vb  
 Dim doc As XElement = XElement.Load("Data.xml")  
@@ -79,5 +79,5 @@ Console.WriteLine(newData)
 </Root>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [고급 쿼리 기술 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## <a name="see-also"></a>참고자료
+- [고급 쿼리 기술 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

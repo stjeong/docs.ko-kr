@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 5172a2be163e178b9c7115825fa5dba4ff073a96
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 3de58fa9df1f856a6612d01d3ec9748c37e4a13e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48027090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54501323"
 ---
 # <a name="ltfiltergt-element-for-ltaddgt-for-ltsharedlistenersgt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;sharedListeners&gt;
 `sharedListeners` 컬렉션에 있는 수신기에 필터를 추가합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
+\<system.diagnostics>  
 \<sharedListeners > 요소  
 \<add>  
-\<필터 >  
+\<filter>  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,7 +52,7 @@ ms.locfileid: "48027090"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
 |`sharedListeners`|모든 소스 또는 추적 요소가 참조할 수 있는 수신기의 컬렉션입니다.|  
 |`add`|수신기를 추가 합니다 **sharedListeners** 컬렉션입니다.|  
@@ -87,8 +87,8 @@ ms.locfileid: "48027090"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TraceFilter>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.TraceSource>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TraceFilter>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.TraceSource>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

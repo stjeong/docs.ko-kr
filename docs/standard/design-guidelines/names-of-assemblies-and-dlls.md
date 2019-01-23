@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DLLs, names
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
 author: KrzysztofCwalina
-ms.openlocfilehash: 8e20d77c20be8dc74723117f3b0910ecc2090ef7
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 1aeef9e1be6e5fe747f440a8cb7f21095cb22f49
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516439"
 ---
 # <a name="names-of-assemblies-and-dlls"></a>어셈블리 및 DLL의 이름
 어셈블리는 단위 배포 및 관리 코드 프로그램에 대 한 id입니다. 어셈블리는 하나 이상의 파일에 걸쳐 수 있지만 일반적으로 어셈블리 일대일로 매핑되는 DLL입니다. 따라서 다음 어셈블리 명명 규칙에 매핑할 수 있는 유일한 DLL 명명 규칙을 설명이 합니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "53130977"
   
  `<Company>.<Component>.dll`  
   
- 여기서 `<Component>` -점으로 구분 된 하나 이상의 절을 포함 합니다. 예를 들어 다음과 같습니다.  
+ 여기서 `<Component>` -점으로 구분 된 하나 이상의 절을 포함 합니다. 예를 들어:  
   
  `Litware.Controls.dll`.  
   
@@ -35,7 +35,7 @@ ms.locfileid: "53130977"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)  
+- [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)
 - [명명 지침](../../../docs/standard/design-guidelines/naming-guidelines.md)

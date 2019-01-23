@@ -1,5 +1,5 @@
 ---
-title: '&lt;etwEnable&gt; 요소'
+title: '&lt;etwEnable&gt; Element'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - etwEnable element
@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b6ea2f8a32a18dfce6be54ce52ce8fef4abf92ce
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 788eee71c718c003110ad8242505f2d7868e836c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53610777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506929"
 ---
-# <a name="ltetwenablegt-element"></a>&lt;etwEnable&gt; 요소
+# <a name="ltetwenablegt-element"></a>&lt;etwEnable&gt; Element
 공용 언어 런타임 이벤트에 대해 ETW(Windows용 이벤트 추적)를 사용하도록 설정할지를 지정합니다.  
   
  \<구성 > 요소  
 \<런타임 > 요소  
-\<etwEnabled >  
+\<etwEnabled>  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,7 +50,7 @@ ms.locfileid: "53610777"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -70,7 +70,7 @@ ms.locfileid: "53610777"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [.NET Framework 로깅 제어](../../../../../docs/framework/performance/controlling-logging.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: 4c04c00c5392d8ba363346b06c806ec79041c439
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: b49475bf7aea8d28ce057c7d4376cf7ad8285a0a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47109094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506253"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>LINQ 쿼리 처음 작성(Visual Basic)
 *쿼리*는 데이터 소스에서 데이터를 검색하는 식입니다. 쿼리는 전용된 쿼리 언어로 표현 됩니다. 시간이 지남에 따라 다른 언어가 개발 되었습니다 다양 한 유형의 데이터 원본에 대 한 예를 들어, 관계형 데이터베이스에 대 한 SQL 및 XML에 대 한 XQuery입니다. 이렇게 하면 응용 프로그램 개발자가 각 유형의 데이터 원본 또는 지원 되는 데이터 형식에 대 한 새 쿼리 언어를 배울 필요 합니다.  
@@ -60,7 +60,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
  특정 형식의 데이터 소스를 만드는 방법에 대한 자세한 내용은 다양한 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 공급자에 대한 설명서를 참조하세요. (이러한 공급자 목록은 참조 하세요 [LINQ (Language-Integrated Query)](../../../../visual-basic/programming-guide/concepts/linq/index.md).) 기본 규칙은 간단 합니다:는 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 소스는 제네릭을 지 원하는 모든 개체 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 인터페이스에서 상속 된 합니다.  
   
 > [!NOTE]
->  같은 형식의 <xref:System.Collections.ArrayList> 제네릭이 아닌 지 <xref:System.Collections.IEnumerable> 인터페이스를 사용할 수도 있습니다 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 원본입니다. 사용 하는 예는 <xref:System.Collections.ArrayList>를 참조 하세요 [하는 방법: LINQ (Visual Basic)를 사용 하 여 ArrayList 쿼리](how-to-query-an-arraylist-with-linq.md).  
+>  같은 형식의 <xref:System.Collections.ArrayList> 제네릭이 아닌 지 <xref:System.Collections.IEnumerable> 인터페이스를 사용할 수도 있습니다 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 데이터 원본입니다. 사용 하는 예는 <xref:System.Collections.ArrayList>를 참조 하세요 [방법: LINQ (Visual Basic)를 사용 하 여 ArrayList 쿼리](how-to-query-an-arraylist-with-linq.md)합니다.  
   
 ## <a name="the-query"></a>쿼리  
  쿼리에서 데이터 소스 또는 소스에서 검색 하려는 정보를 지정 합니다. 방법 정보 정렬, 그룹화 이거나 반환 되기 전에 구조적 지정할 수가 있습니다. 쿼리 생성을 사용 하려면 Visual Basic 언어에 새로운 쿼리 구문이 통합 했습니다.  
@@ -120,9 +120,9 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
 ## <a name="see-also"></a>참고자료
 
-- [Visual Basic에서 LINQ 시작](getting-started-with-linq.md)  
-- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
-- [표준 쿼리 연산자 개요(Visual Basic)](standard-query-operators-overview.md)  
-- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
+- [Visual Basic에서 LINQ 시작](getting-started-with-linq.md)
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [표준 쿼리 연산자 개요(Visual Basic)](standard-query-operators-overview.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [쿼리](../../../../visual-basic/language-reference/queries/index.md)

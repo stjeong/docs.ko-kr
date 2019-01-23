@@ -9,12 +9,12 @@ helpviewer_keywords:
 - unfreezing Freezable objects [WPF]
 - classes [WPF], Freezable
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
-ms.openlocfilehash: a4c0a137da74b276b1238d500057ce96756a1ae1
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 281c1c9556773446808f7bd4b4ef558805503cea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54499316"
 ---
 # <a name="freezable-objects-overview"></a>Freezable 개체 개요
 이 항목에서는 효과적으로 사용 하 고 만드는 방법을 설명 <xref:System.Windows.Freezable> 응용 프로그램 성능을 개선 하는 데 도움이 되는 특별 한 기능을 제공 하는 개체입니다. Freezable 개체의 예로 브러시, 펜, 변환, 기 하 도형 및 애니메이션을 들 수 있습니다.  
@@ -161,8 +161,8 @@ mc:Ignorable="PresentationOptions"
   
  사용자 지정의 예 <xref:System.Windows.Freezable> 클래스를 참조 합니다 [사용자 지정 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=159981)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Freezable>  
- [사용자 지정 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=159981)  
- [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [사용자 지정 종속성 속성](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Freezable>
+- [사용자 지정 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=159981)
+- [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [사용자 지정 종속성 속성](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

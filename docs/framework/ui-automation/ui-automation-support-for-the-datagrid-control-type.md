@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 88ef124176642137e363a36563a236d6c6029398
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 89ab623da3fc26234eaab8c6d8d087ce0df9561b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506955"
 ---
 # <a name="ui-automation-support-for-the-datagrid-control-type"></a>DataGrid 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "48030735"
   
 |속성|값|노트|  
 |--------------|-----------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|전체 컨트롤이 포함된 가장 바깥쪽 사각형입니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|메모를 참조하세요.|경계 사각형이 없는 경우 지원됩니다. 경계 사각형 내의 일부 지점이 클릭 가능하지 않으며 특수화된 적중 테스트를 수행하는 경우 클릭 가능한 지점을 재정의하고 제공하세요.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|DataGrid|이 값은 모든 UI 프레임워크에 대해 동일합니다.|  
@@ -48,7 +48,7 @@ ms.locfileid: "48030735"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|메모를 참조하세요.|컨트롤이 키보드 포커스를 받을 수 있으면 해당 컨트롤은 이 속성을 지원해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|메모를 참조하세요.|정적 텍스트 레이블이 있는 경우 이 속성은 해당 컨트롤에 대한 참조를 노출해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"data grid"|DataGrid 컨트롤 형식에 해당하는 지역화된 문자열입니다.|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|메모를 참조하세요.|데이터 표 컨트롤은 일반적으로 정적 텍스트 레이블에서 `Name` 속성의 값을 가져옵니다. 정적 텍스트 레이블이 없는 경우 응용 프로그램 개발자가 `Name` 속성의 값을 할당해야 합니다. `Name` 속성 값은 편집 컨트롤의 텍스트 내용이 포함되지 않아야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|메모를 참조하세요.|데이터 표 컨트롤은 일반적으로 정적 텍스트 레이블에서 `Name` 속성의 값을 가져옵니다. 정적 텍스트 레이블이 없는 경우 애플리케이션 개발자가 `Name` 속성의 값을 할당해야 합니다. `Name` 속성 값은 편집 컨트롤의 텍스트 내용이 포함되지 않아야 합니다.|  
   
 <a name="Required_UI_Automation_Control_Patterns"></a>   
 ## <a name="required-ui-automation-control-patterns"></a>필요한 UI 자동화 컨트롤 패턴  
@@ -102,11 +102,11 @@ ms.locfileid: "48030735"
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 - 컨트롤 뷰|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리-콘텐츠 뷰|  
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|  
-|<ul><li>DataGrid(Table, Grid, Selection)</li><li>헤더<br /><br /> <ul><li>HeaderItem "Name" (Invoke)</li><li>HeaderItem "Date Modified" (Invoke)</li><li>HeaderItem "Size" (Invoke)</li></ul></li><li>"Contoso" 그룹 (TableItem GridItem, SelectionItem, 테이블 *, 그리드\*)<br /><br /> <ul><li>DataItem "계정 Receivable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li><li>DataItem "계정 Payable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li></ul></li></ul>|<ul><li>DataGrid(Table, Grid, Selection)</li><li>"Contoso" 그룹 (TableItem GridItem, SelectionItem, 테이블 *, 그리드\*)<br /><br /> <ul><li>DataItem "계정 Receivable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li><li>DataItem "계정 Payable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li></ul></li></ul>|  
+|<ul><li>DataGrid(Table, Grid, Selection)</li><li>헤더<br /><br /> <ul><li>HeaderItem "Name" (Invoke)</li><li>HeaderItem "Date Modified" (Invoke)</li><li>HeaderItem "Size" (Invoke)</li></ul></li><li>Group "Contoso" (TableItem, GridItem, SelectionItem, Table*, Grid\*)<br /><br /> <ul><li>DataItem "계정 Receivable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li><li>DataItem "계정 Payable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li></ul></li></ul>|<ul><li>DataGrid(Table, Grid, Selection)</li><li>Group "Contoso" (TableItem, GridItem, SelectionItem, Table*, Grid\*)<br /><br /> <ul><li>DataItem "계정 Receivable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li><li>DataItem "계정 Payable.doc" (SelectionItem, 호출, TableItem\*, GridItem\*)</li></ul></li></ul>|  
   
  *위 예제에서는 여러 가지 수준의 컨트롤이 포함된 DataGrid를 보여줍니다. Group ("Contoso") 컨트롤에는 두 개의 DataItem 컨트롤("Accounts Receivable.doc" 및 "Accounts Payable.doc")이 있습니다. DataGrid/GridItem 쌍은 다른 수준의 쌍과 관계가 없습니다. Group 아래의 DataItem 컨트롤은 ListItem 컨트롤 형식으로도 노출될 수 있으므로, 단순한 데이터 요소가 아닌 선택 가능한 개체로서 보다 명확하게 표시될 수 있습니다. 이 예제에서는 그룹화된 데이터 항목의 하위 요소는 포함되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.DataGrid>  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.DataGrid>
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

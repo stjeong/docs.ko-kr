@@ -1,5 +1,5 @@
 ---
-title: '방법: 대칭 키를 사용하여 XML 요소 해독'
+title: '방법: 대칭 키로 XML 요소 해독'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 6038aff0-f92c-4e29-a618-d793410410d8
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 38bb22de14ecef618d45f54cced32af57542d3df
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 19ee0e3244d9a9bf7d7eddc9be4eb7c50b467cf5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43866847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54502626"
 ---
-# <a name="how-to-decrypt-xml-elements-with-symmetric-keys"></a>방법: 대칭 키를 사용하여 XML 요소 해독
+# <a name="how-to-decrypt-xml-elements-with-symmetric-keys"></a>방법: 대칭 키로 XML 요소 해독
 <xref:System.Security.Cryptography.Xml> 네임스페이스의 클래스를 사용하여 XML 문서 내의 요소를 암호화할 수 있습니다.  XML 암호화를 사용하면 데이터가 쉽게 읽혀질 염려 없이 중요한 XML을 저장하거나 전송할 수 있습니다.  이 코드 예제에서는 Rijndael이라고도 하는 AES(고급 암호화 표준) 알고리즘을 사용하여 XML 요소를 암호 해독합니다.  
   
- 이 절차를 사용 하 여 XML 요소를 암호화 하는 방법에 대 한 정보를 참조 하세요 [방법: 대칭 키를 사용 하 여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)합니다.  
+ 이 절차를 사용 하 여 XML 요소를 암호화 하는 방법에 대 한 정보를 참조 하세요. [방법: 대칭 키를 사용 하 여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)합니다.  
   
  AES와 같은 대칭 알고리즘을 사용하여 XML 데이터를 암호화하는 경우 동일한 키를 사용하여 XML 데이터를 암호화하고 암호 해독해야 합니다.  이 절차의 예제에서는 동일한 키를 사용하여 암호화된 XML이 암호화되었으며 암호화 및 암호 해독하는 당사자가 알고리즘 및 사용할 키에 대해 동의한다고 가정합니다.  이 예제에서는 암호화된 XML 내의 AES 키를 저장하거나 암호화하지 않습니다.  
   
@@ -83,5 +83,5 @@ ms.locfileid: "43866847"
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Security.Cryptography.Xml>  
-- [방법: 대칭 키를 사용하여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)
+- <xref:System.Security.Cryptography.Xml>
+- [방법: 대칭 키를 사용 하 여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)

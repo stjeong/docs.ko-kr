@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d74ce08197ac76a601202da8e35ca6f619207076
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: e39e9b3cf83be03d9bb3a55e3741915588e755a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45614738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54499579"
 ---
 # <a name="net-framework-cryptography-model"></a>.NET Framework 암호화 모델
 .NET Framework에서는 많은 표준 암호화 알고리즘의 구현을 제공합니다. 이러한 알고리즘은 사용하기 쉽고 가능한 가장 안전한 기본 속성을 포함합니다. 또한 개체 상속, 스트림 디자인 및 구성의 .NET Framework 암호화 모델은 크게 확장할 수 있습니다.  
@@ -89,4 +89,4 @@ ms.locfileid: "45614738"
   
 ## <a name="see-also"></a>참고자료
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

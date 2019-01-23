@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - bindings [WCF]
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
-ms.openlocfilehash: 9cd180c5e1bd8afff462c380ad3389a78027eb48
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 5ec801e1e20fdb495537505a71ddaef6218ad5fb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54521376"
 ---
 # <a name="bindings-and-security"></a>바인딩 및 보안
 Windows Communication Foundation (WCF)를 사용 하 여 포함 된 시스템 제공 바인딩 WCF 응용 프로그램을 프로그래밍 하는 빠른 방법을 제공 합니다. 한 가지 예외를 통해 모든 바인딩의 기본 보안 스키마가 활성화됩니다. 이 항목은 보안 요구 사항에 적합한 바인딩을 선택하는 데 도움을 줍니다.  
@@ -161,7 +161,7 @@ Windows Communication Foundation (WCF)를 사용 하 여 포함 된 시스템 �
   
 -   동시 전송 및 메시지 보안입니다(Both).  
   
--   지원되는 클라이언트 자격 증명 형식: None, Windows, UserName, Certificate, IssuedToken  
+-   클라이언트 자격 증명 형식을 지원 합니다. None, Windows, UserName, Certificate, IssuedToken 합니다.  
   
  <xref:System.ServiceModel.MessageCredentialType.Certificate> 자격 증명은 보안 모드를 <xref:System.ServiceModel.NetMsmqSecurityMode.Both> 또는 <xref:System.ServiceModel.NetMsmqSecurityMode.Message> 중 하나로 설정하는 경우에만 지원됩니다.  
   
@@ -205,8 +205,8 @@ Windows Communication Foundation (WCF)를 사용 하 여 포함 된 시스템 �
 |형식|설명|  
 |----------|-----------------|  
 |없음|클라이언트가 자격 증명을 제공할 필요가 없음을 지정합니다. 익명 클라이언트로 변환됩니다.|  
-|기본|기본 인증입니다. 자세한 내용은 참조 RFC 2617 – HTTP Authentication: Basic and Digest Authentication을에서 사용할 수 있습니다 [ https://go.microsoft.com/fwlink/?LinkId=84023 ](https://go.microsoft.com/fwlink/?LinkId=84023)합니다.|  
-|Digest|다이제스트 인증입니다. 자세한 내용은 참조 RFC 2617 – HTTP Authentication: Basic and Digest Authentication을에서 사용할 수 있습니다 [ https://go.microsoft.com/fwlink/?LinkId=84023 ](https://go.microsoft.com/fwlink/?LinkId=84023)합니다.|  
+|Basic|기본 인증입니다. 자세한 내용은 RFC 2617 – HTTP 인증 참조: 기본 및 다이제스트 인증에 사용할 수 있습니다 [ https://go.microsoft.com/fwlink/?LinkId=84023 ](https://go.microsoft.com/fwlink/?LinkId=84023)합니다.|  
+|Digest|다이제스트 인증입니다. 자세한 내용은 RFC 2617 – HTTP 인증 참조: 기본 및 다이제스트 인증에 사용할 수 있습니다 [ https://go.microsoft.com/fwlink/?LinkId=84023 ](https://go.microsoft.com/fwlink/?LinkId=84023)합니다.|  
 |NTLM|NTLM(NT LAN Manager) 인증입니다.|  
 |Windows|Windows 인증입니다.|  
 |인증서|인증서를 사용하여 수행되는 인증입니다.|  
@@ -223,10 +223,10 @@ Windows Communication Foundation (WCF)를 사용 하 여 포함 된 시스템 �
 |인증서|서비스에서 인증서를 사용하여 클라이언트를 인증하도록 요구할 수 있습니다.|  
 |IssuedToken|서비스가 보안 토큰 서비스를 사용하여 사용자 지정 토큰을 제공할 수 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [자격 증명 형식 선택](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [사용자 지정 바인딩을 사용하는 보안 기능](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
- [보안 동작](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [자격 증명 형식 선택](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [사용자 지정 바인딩을 사용하는 보안 기능](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [보안 동작](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

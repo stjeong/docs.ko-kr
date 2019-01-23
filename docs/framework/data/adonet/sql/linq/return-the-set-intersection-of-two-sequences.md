@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d09c344e-3548-4944-a3ed-051880e3f5b8
-ms.openlocfilehash: 9fd2a5dc435829d08594ea3c2f1c129328386250
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bb1785b12df2e8a835ba49ae59d0448fbebf794c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506825"
 ---
 # <a name="return-the-set-intersection-of-two-sequences"></a>두 시퀀스의 교집합 반환
 <xref:System.Linq.Queryable.Intersect%2A> 연산자를 사용하여 두 시퀀스의 교집합을 반환합니다.  
@@ -23,6 +23,6 @@ ms.locfileid: "33358786"
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 <xref:System.Linq.Queryable.Intersect%2A> 작업은 집합에 대해서만 적절하게 정의되어 있습니다. 다중 집합에 대한 의미 체계는 정의되어 있지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [쿼리 예제](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [표준 쿼리 연산자 변환](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+## <a name="see-also"></a>참고자료
+- [쿼리 예제](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [표준 쿼리 연산자 변환](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

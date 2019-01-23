@@ -1,15 +1,15 @@
 ---
-title: '방법: 요소 (Visual Basic)의 단순 값 검색'
+title: '방법: (Visual Basic) 요소의 단순 값 검색'
 ms.date: 07/20/2015
 ms.assetid: 730a6670-fb8c-41fc-8a1b-eb97a837e432
-ms.openlocfilehash: 228afa6cd4bf0599bf7bd63afff17014799ef1b4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a861acafe3b9561b1237e6b6449374374c723805
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33642896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54505800"
 ---
-# <a name="how-to-retrieve-the-shallow-value-of-an-element-visual-basic"></a>방법: 요소 (Visual Basic)의 단순 값 검색
+# <a name="how-to-retrieve-the-shallow-value-of-an-element-visual-basic"></a>방법: (Visual Basic) 요소의 단순 값 검색
 이 항목에서는 요소의 부분 값을 가져오는 방법을 보여 줍니다. 단일 문자열로 연결된 모든 하위 요소의 값을 포함하는 상세 값과 달리 부분 값은 특정 요소의 값입니다.  
   
  캐스팅을 사용하거나 <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> 속성을 사용하여 요소 값을 검색하는 경우에는 상세 값이 검색됩니다. 부분 값을 검색하려면 다음 예제와 같이 `ShallowValue` 확장 메서드를 사용합니다. 요소의 내용을 기준으로 요소를 선택하려는 경우에는 부분 값을 검색하는 것이 유용합니다.  
@@ -74,5 +74,5 @@ Column  Name="CustomerId"   =Customer.CustomerId
 Column  Name="Name"         =Customer.Name  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to XML 축(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to XML 축(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
