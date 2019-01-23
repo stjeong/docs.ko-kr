@@ -2,20 +2,20 @@
 title: '&lt;basicHttpBinding&gt;의 &lt;message&gt;'
 ms.date: 03/30/2017
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
-ms.openlocfilehash: 8c3519e2db12e34d9f2bd03689e0e9684c5792ae
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: f4f50f0cf3010259677af2c8675cb2551c29ae42
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54497057"
 ---
 # <a name="ltmessagegt-of-ltbasichttpbindinggt"></a>&lt;basicHttpBinding&gt;의 &lt;message&gt;
 메시지 수준 보안 설정을 정의 합니다 [ \<basicHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<basicHttpBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
 \<message>  
   
@@ -119,13 +119,13 @@ ms.locfileid: "54151282"
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.BasicHttpMessageSecurity>  
- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement>  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.BasicHttpMessageSecurity>
+- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement>
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

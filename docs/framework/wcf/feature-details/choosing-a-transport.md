@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - choosing transports [WCF]
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
-ms.openlocfilehash: e42e6f17a395edd8c765950832f2829a1aea1fe5
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 30585263b4c7c9e1f5e593dde15b19e37d5da6a0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50199668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494446"
 ---
 # <a name="choosing-a-transport"></a>전송 선택
-이 항목에서는 Windows Communication Foundation (WCF)에 포함 된 세 개의 주요 전송 사이의 선택 기준에 설명 합니다: HTTP, TCP 및 명명 된 파이프 합니다. 또한 WCF는 메시지 큐 (MSMQ 라고도 함) 전송 하지만이 문서는 메시지 큐를 다루지 않습니다.  
+이 항목에서는 Windows Communication Foundation (WCF)에 포함 된 세 개의 주요 전송 사이의 선택 기준을에 설명 합니다. HTTP, TCP 및 명명 된 파이프 합니다. 또한 WCF는 메시지 큐 (MSMQ 라고도 함) 전송 하지만이 문서는 메시지 큐를 다루지 않습니다.  
   
  WCF 프로그래밍 모델을 구분 끝점 작업 (서비스 계약에 표현 된) 하는 대로 두 끝점을 연결 하는 전송 메커니즘에서 합니다. 그 결과 네트워크에 서비스를 노출시키는 방법을 결정할 수 있는 유연성이 보장됩니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "50199668"
  통신은 단일 컴퓨터에서 다른 WCF 응용 프로그램 간에 필요한 경우 다른 컴퓨터에서 통신을 방지 하려면 명명된 된 파이프 전송을 사용 하 여. 추가 제한으로는 따로 권한을 부여하지 않은 한 Windows 원격 데스크톱에서 실행하는 프로세스가 같은 Windows 원격 데스크톱으로 제한될 수 있다는 것이 있습니다.  
   
 > [!WARNING]
->  IIS에서 호스팅되는 여러 사이트에서 약한 와일드 카드 URL 예약을 사용 하 여 명명된 된 파이프 전송을 사용 하는 경우 다음 오류가 발생할 수 있습니다. '2', 사이트에 대 한 수신 대기 하는 동안 'NetPipeActivator' 프로토콜 'net.pipe'의 Activation Service에서 오류가 발생 했습니다 따라서 프로토콜을 임시로 사용할 수는 사이트에 대 한 합니다. 자세한 내용은 예외 메시지를 참조 하십시오. URL: weakwildcard: Net.pipe\<컴퓨터 이름 > / 상태: ConflictingRegistration 예외: 프로세스 이름: SMSvcHost 프로세스 ID: 1076 \  
+>  IIS에서 호스팅되는 여러 사이트에서 약한 와일드 카드 URL 예약을 사용 하 여 명명된 된 파이프 전송을 사용 하는 경우 다음 오류가 발생할 수 있습니다. '2' 사이트에 대 한 수신 대기 하는 동안 'NetPipeActivator' 프로토콜 'net.pipe'의 Activation Service에서 오류가 발생 했습니다, 그리고 따라서 프로토콜을 임시로 사용할 수는 사이트에 대 한 합니다. 자세한 내용은 예외 메시지를 참조 하십시오. URL: Weakwildcard: Net.pipe\<컴퓨터 이름 > / 상태: ConflictingRegistration 예외:  프로세스 이름: SMSvcHost Process ID: 1076\  
   
 ## <a name="decision-points-for-choosing-a-transport"></a>전송을 선택할 때의 의사 결정 요점  
  다음 표에서는 전송을 선택할 때 흔히 사용되는 의사 결정 요점에 대해 설명합니다. 응용 프로그램에 적용되는 추가 특성과 전송을 모두 고려해야 합니다. 응용 프로그램에서 중요한 특성을 확인하고 각 특성과 잘 연결되는 전송을 확인한 다음 특성 집합에 가장 적합한 전송을 선택해야 합니다.  
@@ -61,16 +61,16 @@ ms.locfileid: "50199668"
 |처리량|처리량은 지정된 기간 내에 전송 및 처리할 수 있는 데이터의 양을 나타냅니다. 대기 시간과 마찬가지로 선택한 전송에 따라 서비스 작업의 처리량이 달라질 수 있습니다. 전송의 처리량을 최대화하려면 전송 콘텐츠의 오버헤드를 최소화하고 메시지 교환이 완료될 때까지 기다리는 시간을 최소화해야 합니다. TCP 및 명명된 파이프 전송 모두에서 메시지 본문에 약간의 오버헤드를 추가하며 메시지 응답의 대기 시간을 줄여 주는 네이티브 이중 셰이프를 지원합니다.|TCP, 명명된 파이프|  
 |도구|도구는 개발, 진단, 호스팅 및 기타 작업의 프로토콜에 대한 타사 응용 프로그램 지원을 나타냅니다. HTTP 프로토콜에 사용되는 도구 및 소프트웨어를 개발하는 일에는 특히 큰 투자가 필요합니다.|HTTP|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.BasicHttpBinding>  
- <xref:System.ServiceModel.WSHttpBinding>  
- <xref:System.ServiceModel.WSDualHttpBinding>  
- <xref:System.ServiceModel.WSFederationHttpBinding>  
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
- <xref:System.ServiceModel.NetTcpBinding>  
- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
- <xref:System.ServiceModel.NetNamedPipeBinding>  
- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>  
- [바인딩](../../../../docs/framework/wcf/feature-details/bindings.md)  
- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [사용자 정의 바인딩 만들기](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.BasicHttpBinding>
+- <xref:System.ServiceModel.WSHttpBinding>
+- <xref:System.ServiceModel.WSDualHttpBinding>
+- <xref:System.ServiceModel.WSFederationHttpBinding>
+- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
+- <xref:System.ServiceModel.NetNamedPipeBinding>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
+- [바인딩](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [사용자 정의 바인딩 만들기](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)

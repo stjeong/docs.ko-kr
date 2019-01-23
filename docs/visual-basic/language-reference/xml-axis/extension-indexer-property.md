@@ -9,12 +9,12 @@ helpviewer_keywords:
 - extension indexer [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
-ms.openlocfilehash: ab9eacc3fb3796139d8ed8382146a4a6c2b28a97
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 25a868afded83f28f5f56a9f19e050bbd32b24c0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44189503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54490832"
 ---
 # <a name="extension-indexer-property-visual-basic"></a>확장명 인덱서 속성(Visual Basic)
 컬렉션의 개별 요소에 액세스할 수 있도록 합니다.  
@@ -29,10 +29,10 @@ object(index)
   
 |용어|정의|  
 |---|---|  
-|`object`|필수. 쿼리 가능 컬렉션입니다. 즉, 구현 하는 컬렉션 <xref:System.Collections.Generic.IEnumerable%601> 또는 <xref:System.Linq.IQueryable%601>합니다.|  
-|(|필수. 인덱서 속성의 시작을 나타냅니다.|  
-|`index`|필수. 컬렉션에 있는 요소의 0부터 시작 위치를 지정 하는 정수 식입니다.|  
-|)|필수. 인덱서 속성의 끝을 나타냅니다.|  
+|`object`|필수 요소. 쿼리 가능 컬렉션입니다. 즉, 구현 하는 컬렉션 <xref:System.Collections.Generic.IEnumerable%601> 또는 <xref:System.Linq.IQueryable%601>합니다.|  
+|(|필수 요소. 인덱서 속성의 시작을 나타냅니다.|  
+|`index`|필수 요소. 컬렉션에 있는 요소의 0부터 시작 위치를 지정 하는 정수 식입니다.|  
+|)|필수 요소. 인덱서 속성의 끝을 나타냅니다.|  
   
 ## <a name="return-value"></a>반환 값  
  컬렉션에서 지정된 된 위치에서 개체 또는 `Nothing` 인덱스 범위를 벗어난 경우.  
@@ -55,9 +55,9 @@ object(index)
   
  `Second phone number: 425-555-0145`  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Xml.Linq.XElement>  
- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [XML 값 속성](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Xml.Linq.XElement>
+- [XML 축 속성](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML 리터럴](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Visual Basic에서 XML 만들기](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML 값 속성](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)

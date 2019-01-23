@@ -9,12 +9,12 @@ helpviewer_keywords:
 - hit tests [WPF], for 3-D visuals
 - Viewport3D [WPF]
 ms.assetid: 42bfbd99-c7c6-43f1-940b-90448faa412e
-ms.openlocfilehash: 297fe17b8844f7542255afcfe442fbf9b7a0d59d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 0906fc0da363f9b4022eea863ec1140c8eeb2da2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494242"
 ---
 # <a name="how-to-hit-test-in-a-viewport3d"></a>방법: Viewport3D의 적중 테스트
 적중 횟수의 3D 시각적 개체에 대 한 테스트 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Viewport3D>합니다.  
@@ -29,5 +29,5 @@ ms.locfileid: "46003921"
  [!code-csharp[HitTest3D#HitTest3D3DN5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn5)]
  [!code-vb[HitTest3D#HitTest3D3DN5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn5)]  
   
-## <a name="see-also"></a>참고 항목  
- [3 차원 적중 테스트 샘플](https://go.microsoft.com/fwlink/?LinkID=159959)
+## <a name="see-also"></a>참고자료
+- [3 차원 적중 테스트 샘플](https://go.microsoft.com/fwlink/?LinkID=159959)

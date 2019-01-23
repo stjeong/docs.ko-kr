@@ -2,12 +2,12 @@
 title: Entity SQL 언어
 ms.date: 03/30/2017
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
-ms.openlocfilehash: f12a20f85a0449778614d3098f69d3da90902c95
-ms.sourcegitcommit: 9bd8f213b50f0e1a73e03bd1e840c917fbd6d20a
+ms.openlocfilehash: 0c698f04c3b95ffb204a20d41e91ef3f6210c5d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50048445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494100"
 ---
 # <a name="entity-sql-language"></a>Entity SQL 언어
 Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다. Entity SQL을 사용하면 엔터티 데이터를 개체 또는 테이블 형식으로 쿼리할 수 있습니다. Entity SQL은 다음의 경우에 사용해야 합니다.  
@@ -27,23 +27,23 @@ Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다. Entit
   
  [방법: EntityConnection 연결 문자열 작성](../../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
   
- [방법: PrimitiveType 결과를 반환하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)  
+ [방법: PrimitiveType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)  
   
- [방법: StructuralType 결과를 반환하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)  
+ [방법: StructuralType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)  
   
- [방법: RefType 결과를 반환하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md)  
+ [방법: RefType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md)  
   
- [방법: 복합 형식을 반환하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md)  
+ [방법: 복합 형식을 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md)  
   
- [방법: 중첩된 컬렉션을 반환하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md)  
+ [방법: 중첩된 컬렉션을 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md)  
   
- [방법: EntityCommand를 사용하여 매개 변수가 있는 Entity SQL 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md)  
+ [방법: EntityCommand를 사용 하 여 매개 변수가 있는 Entity SQL 쿼리를 실행 합니다.](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md)  
   
- [방법: EntityCommand를 사용하여 매개 변수가 있는 저장 프로시저 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md)  
+ [방법: EntityCommand를 사용 하 여 매개 변수가 있는 저장된 프로시저를 실행 합니다.](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md)  
   
- [방법: 다형 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-polymorphic-query.md)  
+ [방법: 다형성 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-polymorphic-query.md)  
   
- [방법: Navigate 연산자로 관계 탐색](../../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
+ [방법: 와 관계 탐색을 연산자 이동](../../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
 ## <a name="using-entity-sql-with-object-queries"></a>개체 쿼리와 함께 Entity SQL 사용  
  개체 쿼리와 함께 Entity SQL을 사용하려는 경우 자세한 내용은 다음 항목을 참조하세요.  
@@ -62,13 +62,13 @@ Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다. Entit
   
  [방법: 데이터 그룹화](https://msdn.microsoft.com/library/df801d9d-9a8a-4157-97a6-5016b18998e1)  
   
- [방법: 데이터 집계](https://msdn.microsoft.com/library/4cf04ce8-3c0f-4f88-9d97-8fac8622598d)  
+ [방법: 집계 데이터](https://msdn.microsoft.com/library/4cf04ce8-3c0f-4f88-9d97-8fac8622598d)  
   
  [방법: 익명 형식 개체를 반환 하는 쿼리 실행](https://msdn.microsoft.com/library/3b264025-e911-4d73-90ce-992d2b9d189d)  
   
  [방법: 기본 형식의 컬렉션을 반환 하는 쿼리 실행](https://msdn.microsoft.com/library/115b52c0-4f27-4253-8991-284b450000b5)  
   
- [방법: EntityCollection에서 관련된 개체 쿼리](https://msdn.microsoft.com/library/11ce946f-16f8-4c1d-9d80-f740853807ba)  
+ [방법: EntityCollection의 쿼리 관련된 개체](https://msdn.microsoft.com/library/11ce946f-16f8-4c1d-9d80-f740853807ba)  
   
  [방법: 두 개의 쿼리의 공용 구조체 정렬](https://msdn.microsoft.com/library/853c583a-eaba-4400-830d-be974e735313)  
   
@@ -79,6 +79,6 @@ Entity SQL은 SQL과 유사한 저장소 독립적 쿼리 언어입니다. Entit
   
  [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)  
- [언어 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
+## <a name="see-also"></a>참고자료
+- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
+- [언어 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

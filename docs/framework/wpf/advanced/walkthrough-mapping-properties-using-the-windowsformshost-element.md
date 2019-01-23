@@ -1,5 +1,5 @@
 ---
-title: '연습: WindowsFormsHost 요소를 사용하여 속성 매핑'
+title: '연습: WindowsFormsHost 요소를 사용 하 여 속성 매핑'
 ms.date: 08/18/2018
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - mapping properties [WPF]
 - WindowsFormsHost element property mapping [WPF]
 ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
-ms.openlocfilehash: 4841ce260adfb5d0c0d4b0f359ac9998521d584b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 943137017dcc1f8b347441669add13c3ab056f7d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54493653"
 ---
-# <a name="walkthrough-mapping-properties-using-the-windowsformshost-element"></a>연습: WindowsFormsHost 요소를 사용하여 속성 매핑
+# <a name="walkthrough-mapping-properties-using-the-windowsformshost-element"></a>연습: WindowsFormsHost 요소를 사용 하 여 속성 매핑
 
 이 연습에서는 사용 하는 방법을 보여 줍니다.는 <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> 매핑할 속성을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 속성이 해당 속성에 호스트 된 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 제어 합니다.
 
@@ -23,7 +23,7 @@ ms.locfileid: "43529649"
 
 -   프로젝트 만들기.
 
--   응용 프로그램 레이아웃 정의.
+-   애플리케이션 레이아웃 정의.
 
 -   새 속성 매핑 정의.
 
@@ -51,11 +51,11 @@ ms.locfileid: "43529649"
 
 3.  **솔루션 탐색기**, System.Drawing 및 System.Windows.Forms 어셈블리에 대 한 참조를 추가 합니다.
 
-## <a name="defining-the-application-layout"></a>응용 프로그램 레이아웃 정의
+## <a name="defining-the-application-layout"></a>애플리케이션 레이아웃 정의
 
 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-기반 응용 프로그램을 <xref:System.Windows.Forms.Integration.WindowsFormsHost> 요소 호스트를를 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 컨트롤입니다.
 
-### <a name="to-define-the-application-layout"></a>응용 프로그램 레이아웃을 정의하려면
+### <a name="to-define-the-application-layout"></a>애플리케이션 레이아웃을 정의하려면
 
 1.  Window1.xaml을 엽니다는 [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)]합니다.
 
@@ -153,7 +153,7 @@ ms.locfileid: "43529649"
 
 2.  **F5** 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 효과 확인 하려면이 확인란을 클릭 합니다 <xref:System.Windows.FrameworkElement.FlowDirection%2A> 매핑. 확인란을 클릭하면 레이아웃이 왼쪽에서 오른쪽으로의 방향을 반대로 바꿉니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>

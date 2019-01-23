@@ -2,12 +2,12 @@
 title: WCF의 &lt;bookmarkResumptionQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: ed086712-1dc7-4932-a592-d1116a0155f3
-ms.openlocfilehash: ba8c98557a859f4bd37b9aaca80a44c393429da4
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 80d1c1e4bc61972d44c27bcbdd0eba14d97c2d6c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54493952"
 ---
 # <a name="ltbookmarkresumptionqueriesgt-of-wcf"></a>WCF의 &lt;bookmarkResumptionQueries&gt;
   
@@ -17,11 +17,11 @@ ms.locfileid: "54146084"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<bookmarkResumptionQueries >  
-\<bookmarkResumptionQuery >  
+\<bookmarkResumptionQueries>  
+\<bookmarkResumptionQuery>  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ ms.locfileid: "54146084"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<bookmarkResumptionQuery >](bookmarkresumptionquery-of-wcf.md)|워크플로 인스턴스 내의 책갈피 다시 시작을 추적하는 데 사용되는 쿼리입니다. 추적 참가자가 책갈피 다시 시작 레코드를 구독하려면 쿼리가 필요합니다.|  
+|[\<bookmarkResumptionQuery>](bookmarkresumptionquery-of-wcf.md)|워크플로 인스턴스 내의 책갈피 다시 시작을 추적하는 데 사용되는 쿼리입니다. 추적 참가자가 책갈피 다시 시작 레코드를 구독하려면 쿼리가 필요합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -59,9 +59,9 @@ ms.locfileid: "54146084"
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType> 
-- <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>       
-- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>
+- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

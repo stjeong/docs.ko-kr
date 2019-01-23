@@ -4,12 +4,12 @@ ms.date: 03/13/2018
 helpviewer_keywords:
 - '@ (Specify Response File) compiler option [Visual Basic]'
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca
-ms.openlocfilehash: 54a4cee0b779c0784eec169a15ab1594c56cede9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d790e66e04cc62011550e894eec4000a43783765
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494784"
 ---
 # <a name="-specify-response-file-visual-basic"></a>@(지시 파일 지정)(Visual Basic)
 컴파일러 옵션을 포함 하는 파일 및 컴파일할 소스 코드 파일을 지정 합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "50194685"
   
 ## <a name="arguments"></a>인수  
  `response_file`  
- 필수. 컴파일러 옵션이 나 컴파일할 소스 코드 파일을 나열 하는 파일입니다. 파일 이름을 따옴표로 묶습니다 ("")에 공백이 있는 경우.  
+ 필수 요소. 컴파일러 옵션이 나 컴파일할 소스 코드 파일을 나열 하는 파일입니다. 파일 이름을 따옴표로 묶습니다 ("")에 공백이 있는 경우.  
   
 ## <a name="remarks"></a>설명  
  컴파일러는 컴파일러 옵션 및 명령줄에서 지정 된 것 처럼 응답 파일에 지정 된 소스 코드 파일을 처리 합니다.  
@@ -60,7 +60,7 @@ source2.vb
 vbc @file1.rsp  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

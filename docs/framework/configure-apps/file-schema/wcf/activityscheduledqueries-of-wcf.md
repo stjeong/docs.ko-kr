@@ -2,12 +2,12 @@
 title: WCF의 &lt;activityScheduledQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
-ms.openlocfilehash: d6bc2360ccdeebe291de495e6ee5c7e22f26590a
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 5430058049e8a09c1e2a289e1f997338c23b9d94
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492158"
 ---
 # <a name="ltactivityscheduledqueriesgt-of-wcf"></a>WCF의 &lt;activityScheduledQueries&gt;
 부모 활동에 의해 실행이 예약된 활동을 추적하는 데 사용되는 쿼리의 컬렉션을 나타냅니다. 추적 참가자가 활동 예약 레코드를 구독하려면 쿼리가 필요합니다.  
@@ -16,10 +16,10 @@ ms.locfileid: "54145577"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<activityScheduledQueries >  
+\<activityScheduledQueries>  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,7 +50,7 @@ ms.locfileid: "54145577"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<activityScheduledQuery >](activityscheduledquery-of-wcf.md)|부모 활동에 의해 실행이 예약된 활동을 추적하는 데 사용되는 쿼리입니다.|  
+|[\<activityScheduledQuery>](activityscheduledquery-of-wcf.md)|부모 활동에 의해 실행이 예약된 활동을 추적하는 데 사용되는 쿼리입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -58,7 +58,7 @@ ms.locfileid: "54145577"
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection>
 - <xref:System.Activities.Tracking.ActivityScheduledQuery>

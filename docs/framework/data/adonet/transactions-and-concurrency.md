@@ -2,12 +2,12 @@
 title: 트랜잭션 및 동시성
 ms.date: 03/30/2017
 ms.assetid: f46570de-9e50-4fe6-8710-a8c31fa8569b
-ms.openlocfilehash: bd47c5e0e2b2086e5fd0482bf4319ebab5674a54
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: f5efa8f25e3cd4dedec9e5a9c99db28320a4d93e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43777459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494056"
 ---
 # <a name="transactions-and-concurrency"></a>트랜잭션 및 동시성
 트랜잭션은 패키지로 실행되는 하나의 명령 또는 명령 그룹으로 구성됩니다. 트랜잭션을 사용하여 여러 작업을 하나의 작업 단위로 통합할 수 있습니다. 또한 트랜잭션의 한 지점에서 오류가 발생하는 경우 모든 업데이트를 이전 트랜잭션 상태로 롤백할 수 있습니다.  
@@ -34,10 +34,10 @@ ms.locfileid: "43777459"
  [낙관적 동시성](../../../../docs/framework/data/adonet/optimistic-concurrency.md)  
  낙관적 및 비관적 동시성에 대해 설명하고 동시성 위반을 테스트하는 방법에 대해 살펴봅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [트랜잭션 기본 사항](../../../../docs/framework/data/transactions/transaction-fundamentals.md)  
- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [DataAdapter 및 DataReader](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [DbProviderFactory](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [트랜잭션 기본 사항](../../../../docs/framework/data/transactions/transaction-fundamentals.md)
+- [데이터 소스에 연결](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [명령 및 매개 변수](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [DataAdapter 및 DataReader](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [DbProviderFactory](../../../../docs/framework/data/adonet/dbproviderfactories.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

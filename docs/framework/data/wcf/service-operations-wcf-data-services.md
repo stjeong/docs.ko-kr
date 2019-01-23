@@ -8,15 +8,15 @@ helpviewer_keywords:
 - service operations [WCF Data Services]
 - WCF Data Services, service operations
 ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
-ms.openlocfilehash: da8d482fbf506749f9805edcbbaad3c893ad56b3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 38e9553d77612635f0403a8dc34c368379116e8c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33365854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54497120"
 ---
 # <a name="service-operations-wcf-data-services"></a>서비스 작업(WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 사용하면 데이터 서비스에 서버의 메서드를 노출하는 서비스 작업을 정의할 수 있습니다. 다른 데이터 서비스 리소스와 마찬가지로 서비스 작업도 URI로 주소가 지정됩니다. 서비스 작업을 사용하면 유효성 검사 논리 구현, 역할 기반 보안 적용 또는 특수 쿼리 기능 노출 등을 위해 데이터 서비스에 비즈니스 논리를 노출할 수 있습니다. 서비스 작업은 <xref:System.Data.Services.DataService%601>에서 파생되는 데이터 서비스 클래스에 추가된 메서드입니다. 다른 모든 데이터 서비스 리소스와 마찬가지로 서비스 작업 메서드에 매개 변수를 제공할 수 있습니다. 예를 들어, 다음 서비스 작업 URI (기반는 [퀵 스타트](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) 데이터 서비스) 값을 전달 `London` 에 `city` 매개 변수:  
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 사용하면 데이터 서비스에 서버의 메서드를 노출하는 서비스 작업을 정의할 수 있습니다. 다른 데이터 서비스 리소스와 마찬가지로 서비스 작업도 URI로 주소가 지정됩니다. 서비스 작업을 사용하면 유효성 검사 논리 구현, 역할 기반 보안 적용 또는 특수 쿼리 기능 노출 등을 위해 데이터 서비스에 비즈니스 논리를 노출할 수 있습니다. 서비스 작업은 <xref:System.Data.Services.DataService%601>에서 파생되는 데이터 서비스 클래스에 추가된 메서드입니다. 다른 모든 데이터 서비스 리소스와 마찬가지로 서비스 작업 메서드에 매개 변수를 제공할 수 있습니다. 예를 들어, 다음 서비스 작업 URI (기반 합니다 [퀵 스타트](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) 데이터 서비스) 값을 전달 `London` 에 `city` 매개 변수:  
   
 ```  
 http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'  
@@ -27,9 +27,9 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
  [!code-csharp[Astoria Northwind Service#ServiceOperationDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#serviceoperationdef)]
  [!code-vb[Astoria Northwind Service#ServiceOperationDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#serviceoperationdef)]  
   
- <xref:System.Data.Services.DataService%601.CurrentDataSource%2A>의 <xref:System.Data.Services.DataService%601>를 사용하여 데이터 서비스에서 사용하는 데이터 소스에 직접 액세스할 수 있습니다. 자세한 내용은 참조 [하는 방법: 서비스 작업 정의](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md)합니다.  
+ <xref:System.Data.Services.DataService%601.CurrentDataSource%2A>의 <xref:System.Data.Services.DataService%601>를 사용하여 데이터 서비스에서 사용하는 데이터 소스에 직접 액세스할 수 있습니다. 자세한 내용은 [방법: 서비스 작업 정의](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md)합니다.  
   
- .NET Framework 클라이언트 응용 프로그램에서 서비스 작업을 호출 하는 방법에 대 한 정보를 참조 하십시오. [서비스 작업 호출](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md)합니다.  
+ .NET Framework 클라이언트 응용 프로그램에서 서비스 작업을 호출 하는 방법에 대 한 자세한 내용은 [서비스 작업 호출](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md)합니다.  
   
 ## <a name="service-operation-requirements"></a>서비스 작업 요구 사항  
  데이터 서비스에 서비스 작업을 정의할 때 적용되는 요구 사항은 다음과 같습니다. 이러한 요구 사항을 충족하지 않는 메서드는 데이터 서비스의 서비스 작업으로 노출되지 않습니다.  
@@ -96,7 +96,7 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order
 > [!NOTE]
 >  서비스 작업의 반환 형식이 기본 엔터티 집합에 대한 액세스를 제한하여 숨겨진 경우에는 클라이언트 응용 프로그램에서 서비스 작업을 사용할 수 없습니다.  
   
- 자세한 내용은 참조 [하는 방법: 서비스 작업 정의](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md)합니다.  
+ 자세한 내용은 [방법: 서비스 작업 정의](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md)합니다.  
   
 ## <a name="raising-exceptions"></a>예외 발생  
  데이터 서비스 실행에서 예외를 발생시킬 때마다 <xref:System.Data.Services.DataServiceException> 클래스를 사용하는 것이 좋습니다. 그 이유는 데이터 서비스 런타임이 이 예외 개체의 속성을 HTTP 응답 메시지에 올바르게 매핑하는 방법을 알기 때문입니다. 서비스 작업에서 <xref:System.Data.Services.DataServiceException>을 발생시키면 반환된 예외가 <xref:System.Reflection.TargetInvocationException>으로 래핑됩니다. <xref:System.Data.Services.DataServiceException>을 묶지 않고 기본 <xref:System.Reflection.TargetInvocationException>을 반환하려면 다음 예제와 같이 <xref:System.Data.Services.DataService%601.HandleException%2A>에 <xref:System.Data.Services.DataService%601> 메서드를 재정의하고 <xref:System.Data.Services.DataServiceException>에서 <xref:System.Reflection.TargetInvocationException>을 추출해서 최상위 오류로 반환해야 합니다.  
@@ -104,5 +104,5 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order
  [!code-csharp[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#handleexceptions)]
  [!code-vb[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#handleexceptions)]  
   
-## <a name="see-also"></a>참고 항목  
- [인터셉터](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [인터셉터](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md)

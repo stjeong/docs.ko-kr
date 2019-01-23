@@ -2,12 +2,12 @@
 title: 라우팅 서비스
 ms.date: 03/30/2017
 ms.assetid: ca7c216a-5141-4132-8193-102c181d2eba
-ms.openlocfilehash: 139607614934aedbad9f76172b8e31fb02394d80
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b0d58e70d482532e3f148d3f4f92741f46221982
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43522172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54495307"
 ---
 # <a name="routing-service"></a>라우팅 서비스
 라우팅 서비스는 메시지 라우터 역할을 하는 제네릭 SOAP 매개자입니다. 라우팅 서비스의 핵심 기능은 메시지 내용을 기반으로 메시지를 라우트할 수 있는, 즉 메시지 헤더나 메시지 본문 같은 메시지 자체에 포함된 값을 기반으로 메시지를 클라이언트 엔드포인트에 전달할 수 있는 기능입니다.  
@@ -105,7 +105,7 @@ ms.locfileid: "43522172"
   
 -   동적 구성  
   
-## <a name="see-also"></a>참고 항목  
- [라우팅 소개](../../../../docs/framework/wcf/feature-details/routing-introduction.md)  
- [라우팅 계약](../../../../docs/framework/wcf/feature-details/routing-contracts.md)  
- [메시지 필터](../../../../docs/framework/wcf/feature-details/message-filters.md)
+## <a name="see-also"></a>참고자료
+- [라우팅 소개](../../../../docs/framework/wcf/feature-details/routing-introduction.md)
+- [라우팅 계약](../../../../docs/framework/wcf/feature-details/routing-contracts.md)
+- [메시지 필터](../../../../docs/framework/wcf/feature-details/message-filters.md)
