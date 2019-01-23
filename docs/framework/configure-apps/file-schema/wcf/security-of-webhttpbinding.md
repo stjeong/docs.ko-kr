@@ -2,20 +2,20 @@
 title: '&lt;webHttpBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
-ms.openlocfilehash: 12477c36c2771621e5f8b88ce245746c6f5ec120
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 966dcba7c70419cfb7ca62016b4ee1d24df29827
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54502028"
 ---
 # <a name="ltsecuritygt-of-ltwebhttpbindinggt"></a>&lt;webHttpBinding&gt;의 &lt;security&gt;
 구성 된 끝점에 대 한 보안 요구 사항을 지정 된 [ \<wsHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<webHttpBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
   
 ## <a name="syntax"></a>구문  
@@ -65,16 +65,16 @@ ms.locfileid: "54145408"
 |-------------|-----------------|  
 |[\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)|Windows Communication Foundation (WCF) 웹 서비스 SOAP 메시지 대신 HTTP 요청에 응답 하는 끝점을 구성 하는 데 사용 되는 바인딩 요소입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>  
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>  
- <xref:System.ServiceModel.WebHttpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>  
- <xref:System.ServiceModel.WebHttpSecurity>  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [자격 증명 형식 선택](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
+- <xref:System.ServiceModel.WebHttpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.WebHttpSecurity>
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [자격 증명 형식 선택](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

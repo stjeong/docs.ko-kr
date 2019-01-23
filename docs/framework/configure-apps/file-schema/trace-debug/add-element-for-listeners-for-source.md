@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: c0ab15f6eca8b20653530583016eb849273c4ce1
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: c22263fd51b80e7bd99ada8452696debdcc44140
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47216868"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54507398"
 ---
 # <a name="ltaddgt-element-for-ltlistenersgt-for-ltsourcegt"></a>&lt;추가&gt; 요소에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;
 추적 소스의 `Listeners` 컬렉션에 수신기를 추가합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<원본 >  
-\<원본 >  
-\<수신기 >  
+\<system.diagnostics>  
+\<sources>  
+\<source>  
+\<listeners>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -58,7 +58,7 @@ ms.locfileid: "47216868"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
 |`sources`|추적 메시지를 시작하는 추적 소스가 포함되어 있습니다.|  
 |`source`|추적 메시지를 시작하는 추적 소스를 지정합니다.|  
@@ -82,8 +82,8 @@ ms.locfileid: "47216868"
 |추적 수신기 클래스|initializeData 특성 값|  
 |--------------------------|------------------------------------|  
 |<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType>|합니다 `useErrorStream` 에 대 한 값을 <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> 생성자입니다.  설정 된 `initializeData` 특성을 "`true`"쓸 추적 및 디버그 출력을 표준 오류 스트림에;로 설정"`false`" 표준 출력 스트림에 쓸입니다.|  
-|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType>|파일의 이름을 합니다 <xref:System.Diagnostics.DelimitedListTraceListener> 를 씁니다.|  
-|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|기존 이벤트 로그 원본의 이름입니다.|  
+|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType>|<xref:System.Diagnostics.DelimitedListTraceListener>가 쓸 파일 이름입니다.|  
+|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|기존 이벤트 로그 소스의 이름입니다.|  
 |<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|파일의 이름을는 <xref:System.Diagnostics.EventSchemaTraceListener> 를 씁니다.|  
 |<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|파일의 이름을는 <xref:System.Diagnostics.TextWriterTraceListener> 를 씁니다.|  
 |<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|파일의 이름을는 <xref:System.Diagnostics.XmlWriterTraceListener> 를 씁니다.|  
@@ -120,8 +120,8 @@ ms.locfileid: "47216868"
 </configuration>   
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [추적 수신기](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [추적 수신기](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

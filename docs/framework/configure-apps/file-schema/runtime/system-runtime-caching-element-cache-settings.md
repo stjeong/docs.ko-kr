@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: daa08bb8a92a13941093a77f580318558dc14e9c
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 4e5dba0269a5a368e40965b40e502c0627c76930
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53610374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590671"
 ---
 # <a name="ltsystemruntimecachinggt-element-cache-settings"></a>&lt;system.runtime.caching&gt; 요소 (캐시 설정)
 구성 파일의 <xref:System.Runtime.Caching.ObjectCache> 항목을 통해 기본 메모리 내 `memoryCache` 구현을 위한 구성을 제공합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "53610374"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소를 지정합니다.|  
+|[\<구성>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  이 네임스페이스의 클래스는 ASP.NET에 있는 것 같은 캐싱 기능을 사용하는(그러나 `System.Web` 어셈블리에 의존하지 않음) 방법을 제공합니다. 자세한 내용은 [Caching in .NET Framework Applications](../../../../../docs/framework/performance/caching-in-net-framework-applications.md)을 참조하십시오.  
@@ -73,5 +73,5 @@ ms.locfileid: "53610374"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 - [\<memoryCache > 요소 (캐시 설정)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

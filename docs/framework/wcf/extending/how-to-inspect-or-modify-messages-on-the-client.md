@@ -2,12 +2,12 @@
 title: '방법: 클라이언트에서 메시지 검사 또는 수정'
 ms.date: 03/30/2017
 ms.assetid: b8256335-f1c2-419f-b862-9f220ccad84c
-ms.openlocfilehash: 06a5cae9abd77e45b0590ea7b87a24fc7bb314ff
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4cb4560aa9edf9b9de30ab387f24f2f5300f1097
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54508099"
 ---
 # <a name="how-to-inspect-or-modify-messages-on-the-client"></a>방법: 클라이언트에서 메시지 검사 또는 수정
 검사 하거나 구현 하 여 WCF 클라이언트에서 들어오는 메시지나 나가는 메시지를 수정할 수는 <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> 클라이언트 런타임에 삽입 하 고 있습니다. 자세한 내용은 [확장 클라이언트](../../../../docs/framework/wcf/extending/extending-clients.md)합니다. 서비스의 해당 기능은 <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>입니다. 전체 코드 예제에 대 한 참조를 [메시지 검사자](../../../../docs/framework/wcf/samples/message-inspectors.md) 샘플입니다.  
@@ -126,7 +126,7 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>  
- [동작을 사용하여 런타임 구성 및 확장](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>
+- [동작을 사용하여 런타임 구성 및 확장](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

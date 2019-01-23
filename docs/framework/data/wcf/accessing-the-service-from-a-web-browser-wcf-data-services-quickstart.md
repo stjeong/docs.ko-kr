@@ -2,12 +2,12 @@
 title: 웹 브라우저에서 서비스 액세스(WCF Data Services 빠른 시작)
 ms.date: 03/30/2017
 ms.assetid: 5a6fa180-3094-4e6e-ba2b-8c80975d18d1
-ms.openlocfilehash: 01184969b7bfcc0f68351db7c8daeebe79be583c
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 15a74e47774c532e75eca8a60a1af3a3e4f03f58
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54591645"
 ---
 # <a name="accessing-the-service-from-a-web-browser-wcf-data-services-quickstart"></a>웹 브라우저에서 서비스 액세스(WCF Data Services 빠른 시작)
 
@@ -74,8 +74,8 @@ WCF Data Services 빠른 시작의 두 번째 작업입니다. 이 작업에서�
 WCF Data Services는 브라우저가 HTTP GET 요청을 보냅니다 지정 된 리소스를 사용 하 여 웹 브라우저에서 성공적으로 액세스 한 합니다. 웹 브라우저를 사용하면 간편하게 요청의 주소 지정 구문을 실행해 보고 그 결과를 볼 수 있습니다. 그러나 프로덕션 데이터 서비스는 대개 이 방법으로 액세스되지 않습니다. 응용 프로그램은 일반적으로 응용 프로그램 코드나 스크립트 언어를 통해 데이터 서비스와 상호 작용합니다. 다음에는 클라이언트 라이브러리를 사용하여 CLR(공용 언어 런타임) 개체인 것처럼 데이터 서비스 리소스에 액세스하는 클라이언트 응용 프로그램을 만듭니다.
 
 > [!div class="nextstepaction"]
-> [.NET Framework 클라이언트 응용 프로그램 만들기](../../../../docs/framework/data/wcf/creating-the-dotnet-client-application-wcf-data-services-quickstart.md)
+> [.NET Framework 클라이언트 애플리케이션 만들기](../../../../docs/framework/data/wcf/creating-the-dotnet-client-application-wcf-data-services-quickstart.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [데이터 서비스 리소스에 액세스](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)

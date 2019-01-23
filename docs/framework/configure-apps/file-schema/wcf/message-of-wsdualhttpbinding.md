@@ -2,20 +2,20 @@
 title: '&lt;wsDualHttpBinding&gt;의 &lt;message&gt;'
 ms.date: 03/30/2017
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
-ms.openlocfilehash: 4aec0bf3c88bcbb634c1b6ab44cbb0bcdf2f24e5
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: cdba592f5d85e6475921692deebda574a2a3f601
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509651"
 ---
 # <a name="ltmessagegt-of-ltwsdualhttpbindinggt"></a>&lt;wsDualHttpBinding&gt;의 &lt;message&gt;
 에 대 한 메시지 수준 보안을 정의 합니다 [ \<wsDualHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<wsDualHttpBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
 \<message>  
   
@@ -82,13 +82,13 @@ ms.locfileid: "54147514"
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md)|보안 기능을 정의 합니다 [ \<wsDualHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>  
- <xref:System.ServiceModel.MessageSecurityOverHttp>  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>
+- <xref:System.ServiceModel.MessageSecurityOverHttp>
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

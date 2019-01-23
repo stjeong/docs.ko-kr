@@ -10,12 +10,12 @@ helpviewer_keywords:
 - x:ClassModifier attribute [XAML Services]
 - ClassModifier attribute in XAML [XAML Services]
 ms.assetid: ef30ab78-d334-4668-917d-c9f66c3b6aea
-ms.openlocfilehash: 5a3bbd1d4d75c84dda741d382c8dd7568dbb474b
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: ef55549b43ecbef539d7e84a7281fa704a328938
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45749935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54507592"
 ---
 # <a name="xclassmodifier-directive"></a>x:ClassModifier 지시문
 XAML 컴파일 동작을 수정 하는 경우 `x:Class` 도 제공 됩니다. 특히 부분을 만드는 대신 `class` 있는 `Public` 액세스 수준 (기본값), 제공 된 `x:Class` 만들어집니다는 `NotPublic` 액세스 수준입니다. 이 동작에는 생성된 된 어셈블리의 클래스에 대 한 액세스 수준에 적용 됩니다.  
@@ -32,7 +32,7 @@ XAML 컴파일 동작을 수정 하는 경우 `x:Class` 도 제공 됩니다. �
   
 |||  
 |-|-|  
-|*NotPublic*|정확한 문자열을 지정 하기 위해 전달 <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> 비교 <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> 사용 하는 코드 숨김 프로그래밍 언어에 따라 달라 집니다. 설명 부분을 참조하십시오.|  
+|*NotPublic*|정확한 문자열을 지정 하기 위해 전달 <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> 비교 <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> 사용 하는 코드 숨김 프로그래밍 언어에 따라 달라 집니다. 설명 부분을 참조하세요.|  
   
 ## <a name="dependencies"></a>종속성  
  [X:class](../../../docs/framework/xaml-services/x-class-directive.md) 동일한 요소에도 제공 해야 하며 해당 요소는 페이지의 루트 요소 이어야 합니다. 자세한 내용은 [ \[MS XAML\] 4.3.1.8 섹션](https://go.microsoft.com/fwlink/?LinkId=114525)합니다.  
@@ -53,9 +53,9 @@ XAML 컴파일 동작을 수정 하는 경우 `x:Class` 도 제공 됩니다. �
 ## <a name="security-notes"></a>보안 정보  
  에 선언 된 액세스 수준을 `x:ClassModifier` 특정 프레임 워크와 해당 기능에서 여전히 해석 됩니다. WPF에 로드 하 고 형식을 인스턴스화하는 기능이 포함 되어 있습니다. 여기서 `x:ClassModifier` 는 `internal`pack URI 참조를 통해 WPF 리소스에서 해당 클래스를 참조 하는 경우. 이 경우를 잠재적으로 다른 프레임 워크에 의해 구현 된와 같은 다른 결과로 수행에 의존 하지 `x:ClassModifier` 가능한 모든 인스턴스화를 차단 하도록 시도 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [x:Class 지시문](../../../docs/framework/xaml-services/x-class-directive.md)  
- [WPF의 코드 숨김 및 XAML](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)  
- [x:FieldModifier 지시문](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)  
- [보안 (WPF)](../../../docs/framework/wpf/security-wpf.md)  
- [WPF에서 System.Xaml로 마이그레이션된 형식](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+## <a name="see-also"></a>참고자료
+- [x:Class 지시문](../../../docs/framework/xaml-services/x-class-directive.md)
+- [WPF의 코드 숨김 및 XAML](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [x:FieldModifier 지시문](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)
+- [보안 (WPF)](../../../docs/framework/wpf/security-wpf.md)
+- [WPF에서 System.Xaml로 마이그레이션된 형식](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
