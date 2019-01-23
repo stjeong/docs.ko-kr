@@ -2,27 +2,27 @@
 title: MARS(Multiple Active Result Sets)
 ms.date: 03/30/2017
 ms.assetid: c90ef863-bac7-44cf-adc1-f05c36fcf57d
-ms.openlocfilehash: 67df210fa48c1b72323177b627b17e537f9fb180
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: da75cee8faff667f60ca376d835fd39d117e743b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43744412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54605554"
 ---
-# <a name="multiple-active-result-sets-mars"></a><span data-ttu-id="67022-102">MARS(Multiple Active Result Sets)</span><span class="sxs-lookup"><span data-stu-id="67022-102">Multiple Active Result Sets (MARS)</span></span>
-<span data-ttu-id="67022-103">MARS(Multiple Active Result Sets)는 단일 연결에서 여러 배치를 실행할 수 있도록 하는 기능입니다.</span><span class="sxs-lookup"><span data-stu-id="67022-103">Multiple Active Result Sets (MARS) is a feature that allows the execution of multiple batches on a single connection.</span></span> <span data-ttu-id="67022-104">이전 버전에서는 단일 연결에 대해 한 번에 하나의 배치만 실행할 수 있었습니다.</span><span class="sxs-lookup"><span data-stu-id="67022-104">In previous versions, only one batch could be executed at a time against a single connection.</span></span> <span data-ttu-id="67022-105">MARS로 여러 배치를 실행한다고 해서 여러 작업을 동시에 실행할 수 있는 것은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="67022-105">Executing multiple batches with MARS does not imply simultaneous execution of operations.</span></span>  
+# <a name="multiple-active-result-sets-mars"></a><span data-ttu-id="6fe70-102">MARS(Multiple Active Result Sets)</span><span class="sxs-lookup"><span data-stu-id="6fe70-102">Multiple Active Result Sets (MARS)</span></span>
+<span data-ttu-id="6fe70-103">MARS(Multiple Active Result Sets)는 단일 연결에서 여러 배치를 실행할 수 있도록 하는 기능입니다.</span><span class="sxs-lookup"><span data-stu-id="6fe70-103">Multiple Active Result Sets (MARS) is a feature that allows the execution of multiple batches on a single connection.</span></span> <span data-ttu-id="6fe70-104">이전 버전에서는 단일 연결에 대해 한 번에 하나의 배치만 실행할 수 있었습니다.</span><span class="sxs-lookup"><span data-stu-id="6fe70-104">In previous versions, only one batch could be executed at a time against a single connection.</span></span> <span data-ttu-id="6fe70-105">MARS로 여러 배치를 실행한다고 해서 여러 작업을 동시에 실행할 수 있는 것은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="6fe70-105">Executing multiple batches with MARS does not imply simultaneous execution of operations.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="67022-106">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="67022-106">In This Section</span></span>  
- [<span data-ttu-id="67022-107">MARS(Multiple Active Result Sets) 사용</span><span class="sxs-lookup"><span data-stu-id="67022-107">Enabling Multiple Active Result Sets</span></span>](../../../../../docs/framework/data/adonet/sql/enabling-multiple-active-result-sets.md)  
- <span data-ttu-id="67022-108">SQL Server에서 MARS를 사용하는 방법에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="67022-108">Discusses how to use MARS with SQL Server.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="6fe70-106">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="6fe70-106">In This Section</span></span>  
+ [<span data-ttu-id="6fe70-107">MARS(Multiple Active Result Sets) 사용</span><span class="sxs-lookup"><span data-stu-id="6fe70-107">Enabling Multiple Active Result Sets</span></span>](../../../../../docs/framework/data/adonet/sql/enabling-multiple-active-result-sets.md)  
+ <span data-ttu-id="6fe70-108">SQL Server에서 MARS를 사용하는 방법에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe70-108">Discusses how to use MARS with SQL Server.</span></span>  
   
- [<span data-ttu-id="67022-109">데이터 조작</span><span class="sxs-lookup"><span data-stu-id="67022-109">Manipulating Data</span></span>](../../../../../docs/framework/data/adonet/sql/manipulating-data.md)  
- <span data-ttu-id="67022-110">MARS 응용 프로그램의 코딩 예제를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="67022-110">Provides examples of coding MARS applications.</span></span>  
+ [<span data-ttu-id="6fe70-109">데이터 조작</span><span class="sxs-lookup"><span data-stu-id="6fe70-109">Manipulating Data</span></span>](../../../../../docs/framework/data/adonet/sql/manipulating-data.md)  
+ <span data-ttu-id="6fe70-110">MARS 응용 프로그램의 코딩 예제를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe70-110">Provides examples of coding MARS applications.</span></span>  
   
-## <a name="related-sections"></a><span data-ttu-id="67022-111">관련 단원</span><span class="sxs-lookup"><span data-stu-id="67022-111">Related Sections</span></span>  
- [<span data-ttu-id="67022-112">비동기 작업</span><span class="sxs-lookup"><span data-stu-id="67022-112">Asynchronous Operations</span></span>](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)  
- <span data-ttu-id="67022-113">ADO.NET의 새로운 비동기 기능을 사용하는 방법에 대해 자세히 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="67022-113">Provides details on using the new asynchronous features in ADO.NET.</span></span>  
+## <a name="related-sections"></a><span data-ttu-id="6fe70-111">관련 단원</span><span class="sxs-lookup"><span data-stu-id="6fe70-111">Related Sections</span></span>  
+ [<span data-ttu-id="6fe70-112">비동기 작업</span><span class="sxs-lookup"><span data-stu-id="6fe70-112">Asynchronous Operations</span></span>](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)  
+ <span data-ttu-id="6fe70-113">ADO.NET의 새로운 비동기 기능을 사용하는 방법에 대해 자세히 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="6fe70-113">Provides details on using the new asynchronous features in ADO.NET.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="67022-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="67022-114">See Also</span></span>  
- [<span data-ttu-id="67022-115">SQL Server 및 ADO.NET</span><span class="sxs-lookup"><span data-stu-id="67022-115">SQL Server and ADO.NET</span></span>](../../../../../docs/framework/data/adonet/sql/index.md)  
- [<span data-ttu-id="67022-116">ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터</span><span class="sxs-lookup"><span data-stu-id="67022-116">ADO.NET Managed Providers and DataSet Developer Center</span></span>](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a><span data-ttu-id="6fe70-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="6fe70-114">See also</span></span>
+- [<span data-ttu-id="6fe70-115">SQL Server 및 ADO.NET</span><span class="sxs-lookup"><span data-stu-id="6fe70-115">SQL Server and ADO.NET</span></span>](../../../../../docs/framework/data/adonet/sql/index.md)
+- [<span data-ttu-id="6fe70-116">ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터</span><span class="sxs-lookup"><span data-stu-id="6fe70-116">ADO.NET Managed Providers and DataSet Developer Center</span></span>](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1173091a5f2d8814747c93f827150afe39b8b309
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 20e718d425d0300aed8cc7ccf064126ee8384704
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33399123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54608299"
 ---
-# <a name="icordebugcodecreatebreakpoint-method"></a><span data-ttu-id="14529-102">ICorDebugCode::CreateBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="14529-102">ICorDebugCode::CreateBreakpoint Method</span></span>
-<span data-ttu-id="14529-103">지정된 된 오프셋에이 코드 세그먼트에 중단점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="14529-103">Creates a breakpoint in this code segment at the specified offset.</span></span>  
+# <a name="icordebugcodecreatebreakpoint-method"></a><span data-ttu-id="04be5-102">ICorDebugCode::CreateBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="04be5-102">ICorDebugCode::CreateBreakpoint Method</span></span>
+<span data-ttu-id="04be5-103">이 코드 세그먼트의 지정 된 오프셋 위치에서 중단점을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="04be5-103">Creates a breakpoint in this code segment at the specified offset.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="14529-104">구문</span><span class="sxs-lookup"><span data-stu-id="14529-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="04be5-104">구문</span><span class="sxs-lookup"><span data-stu-id="04be5-104">Syntax</span></span>  
   
 ```  
 HRESULT CreateBreakpoint (  
@@ -36,26 +36,26 @@ HRESULT CreateBreakpoint (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="14529-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="14529-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="04be5-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="04be5-105">Parameters</span></span>  
  `offset`  
- <span data-ttu-id="14529-106">[in] 중단점을 만드는 데 사용할 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="14529-106">[in] The offset at which to create the breakpoint.</span></span>  
+ <span data-ttu-id="04be5-106">[in] 중단점을 만들려는 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="04be5-106">[in] The offset at which to create the breakpoint.</span></span>  
   
  `ppBreakpoint`  
- <span data-ttu-id="14529-107">[out] 중단점을 나타내는 "ICorDebugFunctionBreakpoint" 개체의 주소에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="14529-107">[out] A pointer to the address of an "ICorDebugFunctionBreakpoint" object that represents the breakpoint.</span></span>  
+ <span data-ttu-id="04be5-107">[out] 중단점을 나타내는 "ICorDebugFunctionBreakpoint" 개체의 주소에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="04be5-107">[out] A pointer to the address of an "ICorDebugFunctionBreakpoint" object that represents the breakpoint.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="14529-108">설명</span><span class="sxs-lookup"><span data-stu-id="14529-108">Remarks</span></span>  
- <span data-ttu-id="14529-109">중단점 활성 상태 이면 먼저 프로세스 개체에 추가 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="14529-109">Before the breakpoint is active, it must be added to the process object.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="04be5-108">설명</span><span class="sxs-lookup"><span data-stu-id="04be5-108">Remarks</span></span>  
+ <span data-ttu-id="04be5-109">중단점 활성화 되려면 프로세스 개체에 추가 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="04be5-109">Before the breakpoint is active, it must be added to the process object.</span></span>  
   
- <span data-ttu-id="14529-110">이 코드는 Microsoft MSIL (intermediate language) 코드 되 고는-just-in-time (JIT)-컴파일된 네이티브 버전 중단점이 코드의 JIT 컴파일된 코드도에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="14529-110">If this code is Microsoft intermediate language (MSIL) code, and there is a just-in-time (JIT)-compiled, native version of the code, the breakpoint will be applied in the JIT-compiled code as well.</span></span> <span data-ttu-id="14529-111">(동일한는 코드를 JIT 컴파일된 나중에 있으면 true입니다.)</span><span class="sxs-lookup"><span data-stu-id="14529-111">(The same is true if the code is JIT-compiled later.)</span></span>  
+ <span data-ttu-id="04be5-110">이 코드는 Microsoft intermediate language (MSIL) 코드 했으며 경우는-just-in-time (JIT)-네이티브 컴파일된 버전의 코드에서 중단점 JIT 컴파일 코드 에서도 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="04be5-110">If this code is Microsoft intermediate language (MSIL) code, and there is a just-in-time (JIT)-compiled, native version of the code, the breakpoint will be applied in the JIT-compiled code as well.</span></span> <span data-ttu-id="04be5-111">(마찬가지 코드가 있는 경우 JIT 컴파일된 나중.)</span><span class="sxs-lookup"><span data-stu-id="04be5-111">(The same is true if the code is JIT-compiled later.)</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="14529-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="14529-112">Requirements</span></span>  
- <span data-ttu-id="14529-113">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="14529-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="04be5-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="04be5-112">Requirements</span></span>  
+ <span data-ttu-id="04be5-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="04be5-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="14529-114">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="14529-114">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="04be5-114">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="04be5-114">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="14529-115">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="14529-115">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="04be5-115">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="04be5-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="14529-116">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="14529-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="04be5-116">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="04be5-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="14529-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="14529-117">See Also</span></span>  
- 
+## <a name="see-also"></a><span data-ttu-id="04be5-117">참고자료</span><span class="sxs-lookup"><span data-stu-id="04be5-117">See also</span></span>
+

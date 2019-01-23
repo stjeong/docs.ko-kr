@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 755c64aa00b82bf2d8213217787f4dc1916c0898
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d92129bd7c51ba2fa574f8337ba2b3727ab7b172
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33443302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54599051"
 ---
-# <a name="imetadataassemblyemitsetmanifestresourceprops-method"></a><span data-ttu-id="f5827-102">IMetaDataAssemblyEmit::SetManifestResourceProps 메서드</span><span class="sxs-lookup"><span data-stu-id="f5827-102">IMetaDataAssemblyEmit::SetManifestResourceProps Method</span></span>
-<span data-ttu-id="f5827-103">지정된 `ManifestResource` 메타데이터 구조를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="f5827-103">Modifies the specified `ManifestResource` metadata structure.</span></span>  
+# <a name="imetadataassemblyemitsetmanifestresourceprops-method"></a><span data-ttu-id="7f978-102">IMetaDataAssemblyEmit::SetManifestResourceProps 메서드</span><span class="sxs-lookup"><span data-stu-id="7f978-102">IMetaDataAssemblyEmit::SetManifestResourceProps Method</span></span>
+<span data-ttu-id="7f978-103">지정된 `ManifestResource` 메타데이터 구조를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="7f978-103">Modifies the specified `ManifestResource` metadata structure.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f5827-104">구문</span><span class="sxs-lookup"><span data-stu-id="f5827-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7f978-104">구문</span><span class="sxs-lookup"><span data-stu-id="7f978-104">Syntax</span></span>  
   
 ```  
 HRESULT SetManifestResourceProps (  
@@ -38,30 +38,30 @@ HRESULT SetManifestResourceProps (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="f5827-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="f5827-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="7f978-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="7f978-105">Parameters</span></span>  
  `mr`  
- <span data-ttu-id="f5827-106">[in] 토큰을 지정 하는 `ManifestResource` 메타 데이터 구조를 수정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5827-106">[in] The token that specifies the `ManifestResource` metadata structure to be modified.</span></span>  
+ <span data-ttu-id="7f978-106">[in] 지정 하는 토큰을 `ManifestResource` 수정할 메타 데이터 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="7f978-106">[in] The token that specifies the `ManifestResource` metadata structure to be modified.</span></span>  
   
  `tkImplementation`  
- <span data-ttu-id="f5827-107">[in] 형식의 토큰 `File` 또는 `AssemblyRef`, 리소스 공급자에 매핑되는 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5827-107">[in] The token, of type `File` or `AssemblyRef`, that maps to the resource provider.</span></span>  
+ <span data-ttu-id="7f978-107">[in] 형식의 토큰 `File` 또는 `AssemblyRef`, 리소스 공급자에 매핑되는 합니다.</span><span class="sxs-lookup"><span data-stu-id="7f978-107">[in] The token, of type `File` or `AssemblyRef`, that maps to the resource provider.</span></span>  
   
  `dwOffset`  
- <span data-ttu-id="f5827-108">[in] 파일 내에서 리소스의 시작 부분에 대 한 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="f5827-108">[in] The offset to the beginning of the resource within the file.</span></span>  
+ <span data-ttu-id="7f978-108">[in] 파일 내에서 리소스의 시작 오프셋입니다.</span><span class="sxs-lookup"><span data-stu-id="7f978-108">[in] The offset to the beginning of the resource within the file.</span></span>  
   
  `dwResourceFlags`  
- <span data-ttu-id="f5827-109">[in] 리소스의 특성을 지정 하는 플래그 값의 비트 조합입니다.</span><span class="sxs-lookup"><span data-stu-id="f5827-109">[in] A bitwise combination of flag values that specify the attributes of the resource.</span></span>  
+ <span data-ttu-id="7f978-109">[in] 리소스의 특성을 지정 하는 플래그 값의 비트 조합입니다.</span><span class="sxs-lookup"><span data-stu-id="7f978-109">[in] A bitwise combination of flag values that specify the attributes of the resource.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="f5827-110">설명</span><span class="sxs-lookup"><span data-stu-id="f5827-110">Remarks</span></span>  
- <span data-ttu-id="f5827-111">만들려는 `ManifestResource` 메타 데이터 구조를 사용 하 여는 [imetadataassemblyemit:: Definemanifestresource](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definemanifestresource-method.md) 메서드.</span><span class="sxs-lookup"><span data-stu-id="f5827-111">To create a `ManifestResource` metadata structure, use the [IMetaDataAssemblyEmit::DefineManifestResource](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definemanifestresource-method.md) method.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="7f978-110">설명</span><span class="sxs-lookup"><span data-stu-id="7f978-110">Remarks</span></span>  
+ <span data-ttu-id="7f978-111">만들려는 `ManifestResource` 메타 데이터 구조를 사용 합니다 [imetadataassemblyemit:: Definemanifestresource](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definemanifestresource-method.md) 메서드.</span><span class="sxs-lookup"><span data-stu-id="7f978-111">To create a `ManifestResource` metadata structure, use the [IMetaDataAssemblyEmit::DefineManifestResource](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definemanifestresource-method.md) method.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="f5827-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="f5827-112">Requirements</span></span>  
- <span data-ttu-id="f5827-113">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="f5827-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="7f978-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="7f978-112">Requirements</span></span>  
+ <span data-ttu-id="7f978-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="7f978-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="f5827-114">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="f5827-114">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="7f978-114">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="7f978-114">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="f5827-115">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="f5827-115">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="7f978-115">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="7f978-115">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="f5827-116">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="f5827-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="7f978-116">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7f978-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f5827-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f5827-117">See Also</span></span>  
- [<span data-ttu-id="f5827-118">IMetaDataAssemblyEmit 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f5827-118">IMetaDataAssemblyEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## <a name="see-also"></a><span data-ttu-id="7f978-117">참고자료</span><span class="sxs-lookup"><span data-stu-id="7f978-117">See also</span></span>
+- [<span data-ttu-id="7f978-118">IMetaDataAssemblyEmit 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7f978-118">IMetaDataAssemblyEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
