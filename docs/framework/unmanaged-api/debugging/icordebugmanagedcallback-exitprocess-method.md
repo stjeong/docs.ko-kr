@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 42330296defe90980dd431ce39765a549057b82a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: b4e7b62b7eb038d553b28fbd6422175d511df88d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33416883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540548"
 ---
-# <a name="icordebugmanagedcallbackexitprocess-method"></a><span data-ttu-id="aa4a3-102">ICorDebugManagedCallback::ExitProcess 메서드</span><span class="sxs-lookup"><span data-stu-id="aa4a3-102">ICorDebugManagedCallback::ExitProcess Method</span></span>
-<span data-ttu-id="aa4a3-103">프로세스가 종료 되었는지 디버거에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-103">Notifies the debugger that a process has exited.</span></span>  
+# <a name="icordebugmanagedcallbackexitprocess-method"></a><span data-ttu-id="6fe28-102">ICorDebugManagedCallback::ExitProcess 메서드</span><span class="sxs-lookup"><span data-stu-id="6fe28-102">ICorDebugManagedCallback::ExitProcess Method</span></span>
+<span data-ttu-id="6fe28-103">프로세스가 종료 되었는지 디버거에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-103">Notifies the debugger that a process has exited.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="aa4a3-104">구문</span><span class="sxs-lookup"><span data-stu-id="aa4a3-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6fe28-104">구문</span><span class="sxs-lookup"><span data-stu-id="6fe28-104">Syntax</span></span>  
   
 ```  
 HRESULT ExitProcess (  
@@ -35,25 +35,25 @@ HRESULT ExitProcess (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="aa4a3-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="aa4a3-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="6fe28-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="6fe28-105">Parameters</span></span>  
  `pProcess`  
- <span data-ttu-id="aa4a3-106">[in] 프로세스를 나타내는 ICorDebugProcess 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-106">[in] A pointer to an ICorDebugProcess object that represents the process.</span></span>  
+ <span data-ttu-id="6fe28-106">[in] 프로세스를 나타내는 ICorDebugProcess 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-106">[in] A pointer to an ICorDebugProcess object that represents the process.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="aa4a3-107">설명</span><span class="sxs-lookup"><span data-stu-id="aa4a3-107">Remarks</span></span>  
- <span data-ttu-id="aa4a3-108">계속할 수 없습니다는 `ExitProcess` 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-108">You cannot continue from an `ExitProcess` event.</span></span> <span data-ttu-id="aa4a3-109">이 이벤트는 프로세스를 중지할 표시 하는 동안 다른 이벤트에 비동기적으로 실행 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-109">This event may fire asynchronously to other events while the process appears to be stopped.</span></span> <span data-ttu-id="aa4a3-110">프로세스가 종료 일반적으로 외부 요인으로 인해 중지 하는 동안 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-110">This can occur if the process terminates while stopped, usually due to some external force.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="6fe28-107">설명</span><span class="sxs-lookup"><span data-stu-id="6fe28-107">Remarks</span></span>  
+ <span data-ttu-id="6fe28-108">계속할 수 없습니다는 `ExitProcess` 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-108">You cannot continue from an `ExitProcess` event.</span></span> <span data-ttu-id="6fe28-109">이 이벤트는 프로세스를 중지할 표시 되는 반면 다른 이벤트를 비동기적으로 발생 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-109">This event may fire asynchronously to other events while the process appears to be stopped.</span></span> <span data-ttu-id="6fe28-110">일반적으로 외부 요인으로 인해 중지 하는 동안 프로세스를 종료 하는 경우 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-110">This can occur if the process terminates while stopped, usually due to some external force.</span></span>  
   
- <span data-ttu-id="aa4a3-111">공용 언어 런타임 (CLR)을 이미 관리 되는 콜백을 전달 하 고, 해당 콜백이 반환 후이 이벤트까지 지연 됩니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-111">If the common language runtime (CLR) is already dispatching a managed callback, this event will be delayed until after that callback has returned.</span></span>  
+ <span data-ttu-id="6fe28-111">CLR (공용 언어 런타임)을 이미 관리 되는 콜백을 전달 하 고, 경우이 이벤트 후 해당 콜백이 반환 될 때까지 지연 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-111">If the common language runtime (CLR) is already dispatching a managed callback, this event will be delayed until after that callback has returned.</span></span>  
   
- <span data-ttu-id="aa4a3-112">`ExitProcess` 이벤트는 종료 시 호출 될 수만 종료/언로드 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-112">The `ExitProcess` event is the only exit/unload event that is guaranteed to get called on shutdown.</span></span>  
+ <span data-ttu-id="6fe28-112">`ExitProcess` 이벤트는 종료 시 호출 보장 되는 유일한 종료/언로드 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="6fe28-112">The `ExitProcess` event is the only exit/unload event that is guaranteed to get called on shutdown.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="aa4a3-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="aa4a3-113">Requirements</span></span>  
- <span data-ttu-id="aa4a3-114">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="aa4a3-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="6fe28-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="6fe28-113">Requirements</span></span>  
+ <span data-ttu-id="6fe28-114">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="6fe28-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="aa4a3-115">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="aa4a3-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="6fe28-115">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="6fe28-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="aa4a3-116">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="aa4a3-116">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="6fe28-116">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="6fe28-116">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="aa4a3-117">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="aa4a3-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="6fe28-117">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6fe28-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="aa4a3-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="aa4a3-118">See Also</span></span>  
- [<span data-ttu-id="aa4a3-119">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="aa4a3-119">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## <a name="see-also"></a><span data-ttu-id="6fe28-118">참고자료</span><span class="sxs-lookup"><span data-stu-id="6fe28-118">See also</span></span>
+- [<span data-ttu-id="6fe28-119">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="6fe28-119">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
