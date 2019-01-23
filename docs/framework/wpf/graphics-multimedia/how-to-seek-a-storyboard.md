@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Storyboards [WPF], seeking
 - seeking Storyboards [WPF]
 ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc
-ms.openlocfilehash: 656a5cb38461f71698a312e6382a3a9c29158cc5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 440b2dd157b56a1616f7137b1e311cb981b33861
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33560287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54604459"
 ---
 # <a name="how-to-seek-a-storyboard"></a>방법: Storyboard 검색
-사용 하는 방법을 보여 주는 다음 예제는 <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> 의 메서드는 <xref:System.Windows.Media.Animation.Storyboard> 스토리 보드 애니메이션에서 모든 위치로 이동할 수 있습니다.  
+다음 예제에서는 사용 하는 방법을 보여 줍니다는 <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> 메서드를 <xref:System.Windows.Media.Animation.Storyboard> storyboard 애니메이션에서 임의 위치로 이동 합니다.  
   
 ## <a name="example"></a>예제  
  다음은 샘플에 대한 XAML 태그입니다.  
@@ -29,5 +29,5 @@ ms.locfileid: "33560287"
  [!code-csharp[SeekStoryboard_snip#SeekStoryboardCodeBehindExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SeekStoryboard_snip/CSharp/SeekStoryboardExample.xaml.cs#seekstoryboardcodebehindexamplewholepage)]
  [!code-vb[SeekStoryboard_snip#SeekStoryboardCodeBehindExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SeekStoryboard_snip/VisualBasic/SeekStoryboardExample.xaml.vb#seekstoryboardcodebehindexamplewholepage)]  
   
-## <a name="see-also"></a>참고 항목  
- [동기적으로 Storyboard 검색](../../../../docs/framework/wpf/graphics-multimedia/how-to-seek-a-storyboard-synchronously.md)
+## <a name="see-also"></a>참고자료
+- [동기적으로 Storyboard 검색](../../../../docs/framework/wpf/graphics-multimedia/how-to-seek-a-storyboard-synchronously.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;supportedRuntime&gt; 요소'
+title: '&lt;supportedRuntime&gt; Element'
 ms.date: 04/10/2018
 ms.custom: updateeachrelease
 f1_keywords:
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: b6303f765d1cc4a17fe19261c7326d8961ac1080
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 93084b34e5795ef35e8c433f50646e5da088adfd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600520"
 ---
-# <a name="ltsupportedruntimegt-element"></a>&lt;supportedRuntime&gt; 요소
+# <a name="ltsupportedruntimegt-element"></a>&lt;supportedRuntime&gt; Element
 
 응용 프로그램이 지원하는 공용 언어 런타임 버전을 지정합니다. 이 요소는 .NET Framework 1.1 이상 버전으로 작성된 모든 응용 프로그램에서 사용되어야 합니다.  
   
@@ -66,7 +66,7 @@ ms.locfileid: "53129249"
 |2.0|"v2.0.50727"|  
 |3.0|"v2.0.50727"|  
 |3.5|"v2.0.50727"|  
-|4.0 4.7.2|"v4.0"|  
+|4.0-4.7.2|"v4.0"|  
 
 <a name="sku"></a>   
 ## <a name="sku-id-values"></a>"sku id" 값
@@ -77,12 +77,12 @@ ms.locfileid: "53129249"
 |----------------------------|---------------------|  
 |4.0|".NETFramework,Version=v4.0"|  
 |4.0, Client Profile|".NETFramework,Version=v4.0,Profile=Client"|  
-|4.0, 플랫폼 업데이트 1|". NETFramework, 버전 = v4.0.1 "|  
-|4.0, Client Profile, 업데이트 1|". NETFramework, 버전 = v4.0.1, 프로필 = Client "|  
-|4.0, 플랫폼 업데이트 2|". NETFramework, 버전 = v4.0.2 "|  
-|4.0, Client Profile, 업데이트 2|". NETFramework, 버전 = v4.0.2, 프로필 = Client "|  
-|4.0, 플랫폼 업데이트 3|". NETFramework, 버전 = v4.0.3 "|  
-|4.0, Client Profile, 업데이트 3|". NETFramework, 버전 = v4.0.3, 프로필 = Client "|  
+|4.0, 플랫폼 업데이트 1|".NETFramework,Version=v4.0.1"|  
+|4.0, Client Profile, 업데이트 1|".NETFramework,Version=v4.0.1,Profile=Client"|  
+|4.0, 플랫폼 업데이트 2|".NETFramework,Version=v4.0.2"|  
+|4.0, Client Profile, 업데이트 2|".NETFramework,Version=v4.0.2,Profile=Client"|  
+|4.0, 플랫폼 업데이트 3|".NETFramework,Version=v4.0.3"|  
+|4.0, Client Profile, 업데이트 3|".NETFramework,Version=v4.0.3,Profile=Client"|  
 |4.5|".NETFramework,Version=v4.5"|  
 |4.5.1|".NETFramework,Version=v4.5.1"|  
 |4.5.2|".NETFramework,Version=v4.5.2"|  
@@ -91,7 +91,7 @@ ms.locfileid: "53129249"
 |4.6.2|".NETFramework,Version=v4.6.2"|  
 |4.7|".NETFramework,Version=v4.7"|
 |4.7.1|".NETFramework,Version=v4.7.1"|
-|4.7.2|". NETFramework, 버전 = v4.7.2 "|
+|4.7.2|".NETFramework,Version=v4.7.2"|
 
 ## <a name="example"></a>예제  
  다음 예제에서는 구성 파일에 지원되는 런타임 버전을 지정하는 방법을 보여줍니다. 구성 파일을 앱에.NET Framework 4.7 대상으로 지정 함을 나타냅니다.  
@@ -108,8 +108,8 @@ ms.locfileid: "53129249"
 
 이 요소는 응용 프로그램 구성 파일에 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
- [시작 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [In-Process Side-by-Side 실행](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)  
+- [시작 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [In-Process Side-by-Side 실행](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)

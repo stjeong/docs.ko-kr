@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1dc983f1f0b2405f207d69c62b800ee854fcd409
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 9d783f9e0d098e472dcf67aea394804d6eef2662
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44081770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569464"
 ---
 # <a name="saving-and-restoring-time-zones"></a>저장 및 표준 시간대 복원
 
@@ -72,8 +72,8 @@ ms.locfileid: "44081770"
 
 응용 프로그램 자체에서 표준 시간대 생성 루틴을 구분도이 방식으로 직렬화 된 표준 시간대 문자열을 저장 합니다. 예를 들어, 표준 시간대 생성 루틴을 실행 하 고 응용 프로그램에서 사용할 수 있는 기록 표준 시간대 정보를 포함 하는 데이터 파일을 만들 수 있습니다. 데이터 파일 수를 응용 프로그램을 함께 설치할 수 열 수 있습니다 및 응용 프로그램을 사용 해야 하는 경우 하나 이상의 해당 표준 시간대를 deserialize 할 수 있습니다.
 
-Serialize 된 표준 시간대 데이터를 저장 하는 포함된 리소스를 사용 하는 예제를 참조 하세요 [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) 및 [방법: 포함된 리소스에서 표준 시간대 복원](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)합니다.
+Serialize 된 표준 시간대 데이터를 저장 하는 포함된 리소스를 사용 하는 예제를 참조 하세요. [방법: 포함된 리소스에 표준 시간대 저장](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) 고 [방법: 포함된 리소스에서 표준 시간대 복원](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)

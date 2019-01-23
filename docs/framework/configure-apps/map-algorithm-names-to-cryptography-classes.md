@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: cd57cc7bbe39b042e11d0dad3fd54373bcaae98b
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 87b428fffac98b4490a67e4713b56ec6e8fdcfe9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569195"
 ---
 # <a name="mapping-algorithm-names-to-cryptography-classes"></a>알고리즘 이름을 암호화 클래스에 매핑
 네 가지 방법으로 개발자는 암호화 하 여 개체를 만들 수는 [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  
@@ -69,6 +69,6 @@ ms.locfileid: "47196241"
   
  기본 이름 및 매핑할 클래스의 목록을 참조 하세요. <xref:System.Security.Cryptography.CryptoConfig>합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- [암호화 클래스 구성](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+## <a name="see-also"></a>참고자료
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [암호화 클래스 구성](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

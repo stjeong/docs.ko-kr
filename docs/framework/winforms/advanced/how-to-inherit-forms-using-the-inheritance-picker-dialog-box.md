@@ -1,19 +1,19 @@
 ---
-title: '방법: 상속 선택 대화 상자를 사용하여 폼 상속'
+title: '방법: 상속 선택 대화 상자를 사용 하 여 폼 상속'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - inheritance [Windows Forms], forms
 - Inheritance Picker dialog box
 - inherited forms [Windows Forms], creating
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
-ms.openlocfilehash: 7a6de60ec7621792b4f19857a2743f64cbdc686c
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 94fe3d551e8f846d8deec6f2b6ab9e96d91e8335
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601833"
 ---
-# <a name="how-to-inherit-forms-using-the-inheritance-picker-dialog-box"></a>방법: 상속 선택 대화 상자를 사용하여 폼 상속
+# <a name="how-to-inherit-forms-using-the-inheritance-picker-dialog-box"></a>방법: 상속 선택 대화 상자를 사용 하 여 폼 상속
 양식이나 다른 개체를 상속하는 가장 쉬운 방법은 **상속 선택** 대화 상자를 사용하는 것입니다. 이 대화 상자에서는 다른 솔루션에서 이미 만든 코드 또는 UI(사용자 인터페이스)를 활용할 수 있습니다.  
   
 > [!NOTE]
@@ -54,10 +54,10 @@ ms.locfileid: "48837299"
      기본 양식의 모양을 변경하는 방법에 대한 자세한 내용은 [기본 양식의 모양 수정 효과](../../../../docs/framework/winforms/advanced/effects-of-modifying-base-form-appearance.md)를 참조하세요.  
   
     > [!NOTE]
-    >  Windows Forms의 표준 컨트롤 및 구성 요소와 상속된 컨트롤 및 구성 요소를 결합하는 경우 z 순서와 충돌이 발생할 수 있습니다. z 순서를 수정하여 이 문제를 해결할 수 있습니다. 이렇게 하려면 **형식** 메뉴를 클릭하고 **순서**를 가리킨 다음 **맨 앞으로 가져오기** 또는 **맨 뒤로 보내기**를 클릭합니다. 컨트롤의 z 순서에 대한 자세한 내용은 [방법: Windows Forms에서 개체 계층화](../../../../docs/framework/winforms/controls/how-to-layer-objects-on-windows-forms.md)를 참조하세요.  
+    >  Windows Forms의 표준 컨트롤 및 구성 요소와 상속된 컨트롤 및 구성 요소를 결합하는 경우 z 순서와 충돌이 발생할 수 있습니다. z 순서를 수정하여 이 문제를 해결할 수 있습니다. 이렇게 하려면 **형식** 메뉴를 클릭하고 **순서**를 가리킨 다음 **맨 앞으로 가져오기** 또는 **맨 뒤로 보내기**를 클릭합니다. 컨트롤의 z 순서에 대 한 자세한 내용은 참조 하세요. [방법: Windows Forms에서 개체 계층화](../../../../docs/framework/winforms/controls/how-to-layer-objects-on-windows-forms.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Inherits 문](~/docs/visual-basic/language-reference/statements/inherits-statement.md)  
- [using](~/docs/csharp/language-reference/keywords/using.md)  
- [기본 폼의 모양 수정 효과](../../../../docs/framework/winforms/advanced/effects-of-modifying-base-form-appearance.md)  
- [Windows Forms 시각적 개체 상속](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
+## <a name="see-also"></a>참고자료
+- [Inherits 문](~/docs/visual-basic/language-reference/statements/inherits-statement.md)
+- [using](~/docs/csharp/language-reference/keywords/using.md)
+- [기본 폼의 모양 수정 효과](../../../../docs/framework/winforms/advanced/effects-of-modifying-base-form-appearance.md)
+- [Windows Forms 시각적 개체 상속](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)

@@ -2,12 +2,12 @@
 title: 보안 개요 2
 ms.date: 03/30/2017
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
-ms.openlocfilehash: db7b45fef28b0b28e7da550c24d510da73c02aa9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 24da83af6876e9bbb23c7978db6b9413ec00d8ba
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54570488"
 ---
 # <a name="security-overview"></a>보안 개요
 응용 프로그램 보안은 지속적인 프로세스입니다. 새로운 기술로 인해 앞으로 어떠한 공격이 가해질지 예측할 수 없기 때문에 개발자가 응용 프로그램이 모든 공격으로부터 안전하다고 장담하는 것은 불가능합니다. 반대로, 아직까지 아무도 시스템의 보안 허점을 발견(또는 발표)하지 않았더라도 허점이 없다고 할 수는 없습니다. 보안 계획은 프로젝트 디자인 단계에서 수립해야 하며 아울러 응용 프로그램의 수명이 다할 때까지 이러한 보안을 어떻게 유지할지도 계획해야 합니다.  
@@ -101,8 +101,8 @@ ms.locfileid: "50183531"
 |[NIB: 보안 정책 관리](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)|보안 정책을 만들고 관리하는 작업에 대한 정보를 제공합니다.|  
 |[NIB: 보안 정책에 대 한 유용한 정보](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)|보안 정책을 관리하는 방법에 대해 설명하는 링크를 제공합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- [SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [네이티브 및 .NET Framework 코드의 PAVE 보안](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)
+- [SQL Server 보안](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

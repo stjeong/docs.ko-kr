@@ -2,12 +2,12 @@
 title: 메시지 로그 보기
 ms.date: 03/30/2017
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
-ms.openlocfilehash: 5d007efc9667ee5380b69349d6a960554ab0d4fe
-ms.sourcegitcommit: db8b83057d052c1f9f249d128b08d4423af0f7c2
+ms.openlocfilehash: f368d4f8f2a214feaa24b732513a99edf2e28296
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50757415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603578"
 ---
 # <a name="viewing-message-logs"></a>메시지 로그 보기
 이 항목에서는 메시지 로그를 볼 수 있는 방법에 대해 설명합니다.  
@@ -60,7 +60,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 -   UTF-8로 변환하기 위해 인코딩을 사용하도록 설정합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Service Trace Viewer 도구(SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
- [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [메시지 로깅](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+## <a name="see-also"></a>참고자료
+- [Service Trace Viewer 도구(SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [메시지 로깅](../../../../docs/framework/wcf/diagnostics/message-logging.md)

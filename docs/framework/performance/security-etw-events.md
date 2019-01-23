@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 0ed69f73-5c01-4514-bd63-979c6e38d41d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e02274b63ddf7df42d26621791de0286df9655b8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5cd5e660778b852cfee84359bb4d7253ca8f118d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54608078"
 ---
 # <a name="security-etw-events"></a>보안 ETW 이벤트
 <a name="top"></a> 보안 이벤트는 강력한 이름 확인 및 Authenticode 확인 중에 발생합니다.  
@@ -73,5 +73,5 @@ ms.locfileid: "33395514"
 |ModulePath|win:UnicodeString|모듈 경로입니다.|  
 |ClrInstanceID|win:UInt16|CLR 또는 CoreCLR 인스턴스에 대한 고유 ID입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)
+## <a name="see-also"></a>참고자료
+- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)

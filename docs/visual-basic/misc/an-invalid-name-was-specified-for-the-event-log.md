@@ -2,12 +2,12 @@
 title: 이벤트 로그에 대해 잘못된 이름을 지정했습니다.
 ms.date: 07/20/2015
 ms.assetid: b1b158bd-f13f-4371-a8af-31c0e86ae6be
-ms.openlocfilehash: 8b6df077f15744cd2c34fb9e7e148b02ea27d5bf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 242c5394011fd018a03f81b9b56bcfd7015682dd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33598065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54604397"
 ---
 # <a name="an-invalid-name-was-specified-for-the-event-log"></a>이벤트 로그에 대해 잘못된 이름을 지정했습니다.
 이벤트 로그에 대해 잘못된 이름을 지정했습니다. 일반적으로 이름, 빈 파일 이름 또는 너무 긴 파일 이름에 잘못된 문자가 포함되어 발생합니다.  
@@ -20,7 +20,7 @@ ms.locfileid: "33598065"
   
 -   이름에 잘못된 문자가 없는지 확인합니다. `<`, `>`, `:`, `"`, `/`, `\`및 `|`는 파일 이름에 사용할 수 없는 문자입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 파일 경로의 구문 분석](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
- [방법: 파일 이름 바꾸기](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)  
- 
+## <a name="see-also"></a>참고자료
+- [방법: 파일 경로의 구문 분석](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [방법: 파일 이름 바꾸기](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)
+

@@ -1,5 +1,5 @@
 ---
-title: '방법: 디자이너를 사용하여 표준 항목을 포함하는 기본 Windows Forms ToolStrip 만들기'
+title: '방법: 디자이너를 사용 하 여 표준 항목을 사용 하 여 기본 Windows Forms ToolStrip 만들기'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - ToolStrip control [Windows Forms], creating
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - toolbars [Windows Forms], adding items
 - ToolStrip control [Windows Forms], adding standard items
 ms.assetid: 028deb1a-acf8-4911-979a-ba8431cd9d82
-ms.openlocfilehash: 05ca122f425f929264669ca4914f87e850154246
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: f36df117ee7bb7bcdb79ccb134c914288ec6903d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43778362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54602678"
 ---
-# <a name="how-to-create-a-basic-windows-forms-toolstrip-with-standard-items-using-the-designer"></a>방법: 디자이너를 사용하여 표준 항목을 포함하는 기본 Windows Forms ToolStrip 만들기
+# <a name="how-to-create-a-basic-windows-forms-toolstrip-with-standard-items-using-the-designer"></a>방법: 디자이너를 사용 하 여 표준 항목을 사용 하 여 기본 Windows Forms ToolStrip 만들기
 다음 절차를 만드는 방법을 보여는 <xref:System.Windows.Forms.ToolStrip> 7 추가 <xref:System.Windows.Forms.ToolStripButton> 일반적인 작업을 나타내는 컨트롤입니다.  
   
 > [!NOTE]
@@ -28,9 +28,9 @@ ms.locfileid: "43778362"
   
 3.  에 **ToolStrip 작업** 창 선택 **표준 항목 삽입**합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.ToolStrip>  
- [ToolStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
- [ToolStrip 컨트롤 아키텍처](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
- [ToolStrip 기술 요약](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.ToolStrip>
+- [ToolStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [ToolStrip 컨트롤 아키텍처](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
+- [ToolStrip 기술 요약](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Forms, layout
 - Margin property [Windows Forms]
 ms.assetid: 3781b5a1-3085-4072-bed0-44670c23ffdc
-ms.openlocfilehash: 7f0469a879bab7aac8e572cc666dfa9d168103ea
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: be5d1ae308b9412f914f1cde91d1cc5834212df8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43488341"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54570553"
 ---
 # <a name="margin-and-padding-in-windows-forms-controls"></a>Windows Forms 컨트롤의 여백 및 안쪽 여백
 폼의 정확한 컨트롤 배치는 많은 응용 프로그램에서 우선 순위가 높습니다. <xref:System.Windows.Forms?displayProperty=nameWithType> 네임스페이스는 이 목적을 위한 다양한 레이아웃 기능을 제공합니다. 가장 중요한 두 가지 기능은 <xref:System.Windows.Forms.Control.Margin%2A> 및 <xref:System.Windows.Forms.Control.Padding%2A> 속성입니다.  
@@ -25,12 +25,12 @@ ms.locfileid: "43488341"
   
  ![안쪽 여백 및 여백을 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/media/vs-winformpadmargin.gif "VS_WinFormPadMargin")  
   
- Visual Studio에서는 디자인 타임에 이 기능을 지원합니다.  도 참조 하세요 [연습: 레이아웃 아웃 Windows Forms 컨트롤 Padding, Margins 및 AutoSize 속성을 사용 하 여](https://msdn.microsoft.com/library/3z3f9e8b\(v=vs.110\))입니다.  
+ Visual Studio에서는 디자인 타임에 이 기능을 지원합니다.  또한 참조 [연습: 레이아웃 Windows Forms 컨트롤 Padding, Margins 및 AutoSize 속성을 사용 하 여](https://msdn.microsoft.com/library/3z3f9e8b\(v=vs.110\))입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.Control.AutoSize%2A>  
- <xref:System.Windows.Forms.Control.Margin%2A>  
- <xref:System.Windows.Forms.Control.Padding%2A>  
- <xref:System.Windows.Forms.Control.LayoutEngine%2A>  
- <xref:System.Windows.Forms.TableLayoutPanel>  
- <xref:System.Windows.Forms.FlowLayoutPanel>
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.Control.AutoSize%2A>
+- <xref:System.Windows.Forms.Control.Margin%2A>
+- <xref:System.Windows.Forms.Control.Padding%2A>
+- <xref:System.Windows.Forms.Control.LayoutEngine%2A>
+- <xref:System.Windows.Forms.TableLayoutPanel>
+- <xref:System.Windows.Forms.FlowLayoutPanel>

@@ -2,12 +2,12 @@
 title: DataTableReader
 ms.date: 03/30/2017
 ms.assetid: 97546ae2-0e42-4d26-961d-e0b244d81ded
-ms.openlocfilehash: b3881ecfd895bd22a476bdac7dd0b7c1b112092e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9984dc9c215a34ab35524560e4dcbcd6bd12596d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54602847"
 ---
 # <a name="datatablereaders"></a>DataTableReader
 <xref:System.Data.DataTableReader>는 <xref:System.Data.DataTable> 또는 <xref:System.Data.DataSet>의 내용을 하나 이상의 정방향 읽기 전용 결과 집합 형태로 제공합니다.  
@@ -23,6 +23,6 @@ ms.locfileid: "43526380"
  [DataTable 탐색](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/navigating-datatables.md)  
  사용 방법을 설명 합니다는 **읽기** 의 콘텐츠를 이동 하는 메서드를 **DataTableReader**합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

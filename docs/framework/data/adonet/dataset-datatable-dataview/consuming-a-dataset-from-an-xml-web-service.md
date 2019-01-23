@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
-ms.openlocfilehash: 7e43d423109ea39a725a4bfa8b9d2b22a25cfb5c
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 69eb1490c61cc7187d11c776fe95c659271750b5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087338"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54608484"
 ---
 # <a name="consuming-a-dataset-from-an-xml-web-service"></a>XML Web Service에서 데이터 집합 사용
 <xref:System.Data.DataSet>은 인터넷에서 데이터 전송을 쉽게 할 수 있도록 비연결 디자인으로 설계되었습니다. 합니다 **데이터 집합** 는 "직렬화"에 대 한 입력으로 지정할 수도 있고 추가 코딩 없이 XML Web services에서 출력의 콘텐츠를 스트리밍하는 데 필요한 합니다 **데이터 집합** XML 웹 서비스에서 클라이언트 및 백 합니다. **데이터 집합** DiffGram 형식을 사용 하 여 XML 스트림을로 암시적으로 변환, 네트워크를 통해 보내고 다음으로 XML 스트림에서 재구성을 **데이터 집합** 수신측에 합니다. 이렇게 하여 간단하고 융통성 있는 방법으로 XML Web services를 사용하여 관계형 데이터를 전송하고 반환할 수 있습니다. DiffGram 형식에 대 한 자세한 내용은 참조 하세요. [Diffgram](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md)합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "49087338"
   
      예제에서는 XML 웹 서비스를 만들어집니다의 고객 목록을이 경우 데이터를 반환 하는 합니다 **Northwind** 받고 데이터베이스에 **데이터 집합** 데이터에 대 한 업데이트를 사용 하 여는 XML 웹 서비스 데이터 원본에 다시 확인합니다.  
   
-     두 메서드를 노출 하는 XML 웹 서비스: **GetCustomers**, 고객의 목록을 반환 하 고 **UpdateCustomers**, 데이터 원본에 다시 업데이트를 해결 하려면. XML Web services는 웹 서버에 있는 DataSetSample.asmx라는 파일로 저장됩니다. 다음 코드는 DataSetSample.asmx의 내용을 요약한 것입니다.  
+     XML 웹 서비스는 두 가지 방법을 제공합니다. **GetCustomers**, 고객의 목록을 반환 하 고 **UpdateCustomers**, 데이터 원본에 다시 업데이트를 해결 하려면. XML Web services는 웹 서버에 있는 DataSetSample.asmx라는 파일로 저장됩니다. 다음 코드는 DataSetSample.asmx의 내용을 요약한 것입니다.  
   
     ```vb  
     <% @ WebService Language = "vb" Class = "Sample" %>  
@@ -259,12 +259,12 @@ ms.locfileid: "49087338"
     csc client.cs -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [DataAdapter에서 데이터 집합 채우기](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)  
- [DataAdapter로 데이터 원본 업데이트](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
- [DataAdapter 매개 변수](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
- [웹 서비스 기술 언어 도구 (Wsdl.exe)](https://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
+- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [DataAdapter에서 데이터 집합 채우기](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)
+- [DataAdapter로 데이터 원본 업데이트](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
+- [DataAdapter 매개 변수](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)
+- [웹 서비스 기술 언어 도구 (Wsdl.exe)](https://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

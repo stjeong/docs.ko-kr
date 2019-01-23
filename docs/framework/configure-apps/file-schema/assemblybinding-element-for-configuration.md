@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 5693b92ac35a357ff1f8643d0eb9ec2105acecb4
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 64985d4ed2c6a82c54a7623df4b13d7ec54bff33
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54599350"
 ---
 # <a name="assemblybinding-element-for-configuration"></a>\<assemblyBinding > 요소에 대 한 \<구성 >
 
 구성 수준에서 어셈블리 바인딩 정책을 지정합니다.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;**\<assemblyBinding >**
+&nbsp;&nbsp;**\<assemblyBinding>**
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ ms.locfileid: "47193358"
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | 공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다. |
+| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | 공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다. |
 
 ## <a name="child-element"></a>자식 요소
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<linkedConfiguration >**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | 포함할 구성 파일을 지정합니다. |
+| [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | 포함할 구성 파일을 지정합니다. |
 
 ## <a name="remarks"></a>설명
 
@@ -70,4 +70,4 @@ ms.locfileid: "47193358"
 
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+- [.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

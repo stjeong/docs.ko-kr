@@ -1,5 +1,5 @@
 ---
-title: '&lt;oidEntry&gt; 요소'
+title: '&lt;oidEntry&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/oidMap/oidEntry
@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 1729ad4d07fdc0d3dbb31c2bfc29edce647373d4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c891b5d67c7f2ef46682233ad555a1276f8e027d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54606902"
 ---
-# <a name="ltoidentrygt-element"></a>&lt;oidEntry&gt; 요소
+# <a name="ltoidentrygt-element"></a>&lt;oidEntry&gt; Element
 ASN.1 OID(개체 식별자)를 이름에 매핑합니다.  
   
  \<configuration>  
-\<mscorlib >  
-\<cryptographySettings >  
-\<oidMap >  
-\<oidEntry >  
+\<mscorlib>  
+\<cryptographySettings>  
+\<oidMap>  
+\<oidEntry>  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ ASN.1 OID(개체 식별자)를 이름에 매핑합니다.
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`cryptographySettings`|암호화 설정이 포함되어 있습니다.|  
 |`mscorlib`|포함 된 `cryptographySettings` 요소입니다.|  
 |`oidMap`|ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.|  
@@ -80,9 +80,9 @@ ASN.1 OID(개체 식별자)를 이름에 매핑합니다.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
-- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
+## <a name="see-also"></a>참고자료
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
 - [개체 식별자를 암호화 알고리즘에 매핑](../../../../../docs/framework/configure-apps/map-object-identifiers-to-cryptography-algorithms.md)

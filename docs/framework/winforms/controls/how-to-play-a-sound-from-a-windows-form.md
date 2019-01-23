@@ -11,12 +11,12 @@ helpviewer_keywords:
 - My.Computer.Audio object [Windows Forms], playing sounds
 - examples [Windows Forms], sounds
 ms.assetid: 3d3350b7-1ebd-4e05-a738-48ca1160a19d
-ms.openlocfilehash: 853d0f78b4f6dba2dc84109270f79f4b010c27b4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 02b0cb2952e11946f994819bb09a55167781137c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33533522"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607253"
 ---
 # <a name="how-to-play-a-sound-from-a-windows-form"></a>방법: Windows Form에서 소리 재생
 이 예제에서는 런타임에 지정된 경로에서 소리를 재생합니다.  
@@ -42,7 +42,7 @@ private void playSimpleSound()
   
 -   파일 이름 `"c:\Windows\Media\chimes.wav"`를 유효한 파일 이름으로 바꿉니다.  
   
--   (C#) 에 대 한 참조는 <xref:System.Media?displayProperty=nameWithType> 네임 스페이스입니다.  
+-   (C#)에 대 한 참조를 <xref:System.Media?displayProperty=nameWithType> 네임 스페이스입니다.  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  파일 작업은 적절한 구조적 예외 처리 블록 내에 묶어야 합니다.  
@@ -62,9 +62,9 @@ private void playSimpleSound()
 -   경로가 콜론 ":" (<xref:System.NotSupportedException> 클래스).  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
- 파일 이름을 바탕으로 파일 내용을 판단하면 안 됩니다. 예를 들어 `Form1.vb` 파일이 Visual Basic 소스 파일이 아닐 수도 있습니다. 응용 프로그램에서 데이터를 사용하기 전에 모든 입력을 확인해야 합니다.  
+ 파일 이름을 바탕으로 파일 내용을 판단하면 안 됩니다. 예를 들어 `Form1.vb` 파일이 Visual Basic 소스 파일이 아닐 수도 있습니다. 애플리케이션에서 데이터를 사용하기 전에 모든 입력을 확인해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Media.SoundPlayer>  
- [방법: Windows Form에서 비동기적으로 소리 로드](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)  
- 
+## <a name="see-also"></a>참고자료
+- <xref:System.Media.SoundPlayer>
+- [방법: Windows Form에서 비동기적으로 소리 로드](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)
+

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - graphics [WPF], rendering
 - rendering graphics [WPF]
 ms.assetid: 6dec9657-4d8c-4e46-8c54-40fb80008265
-ms.openlocfilehash: cbbaba8cbdaf6dfd7b7c18447d425298b4911e94
-ms.sourcegitcommit: 4b6490b2529707627ad77c3a43fbe64120397175
+ms.openlocfilehash: 6323d27158855e5ded1698401835b35632bedebe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44260132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603840"
 ---
 # <a name="wpf-graphics-rendering-overview"></a>WPF 그래픽 렌더링 개요
 이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 시각적 계층에 대해 간략하게 설명합니다. 역할에 중점을 둡니다 합니다 <xref:System.Windows.Media.Visual> 의 렌더링 지원을 위한 클래스를 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 모델입니다.  
@@ -21,19 +21,19 @@ ms.locfileid: "44260132"
   
 <a name="role_of_visual_object"></a>   
 ## <a name="role-of-the-visual-object"></a>시각적 개체의 역할  
- 합니다 <xref:System.Windows.Media.Visual> 클래스는 기본 추상화는 모든 <xref:System.Windows.FrameworkElement> 개체에서 파생 됩니다. 또한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 새 컨트롤을 작성하기 위한 진입점으로도 사용되며, Win32 응용 프로그램 모델에서는 여러 가지 측면에서 창 핸들(HWND)로도 간주될 수 있습니다.  
+ 합니다 <xref:System.Windows.Media.Visual> 클래스는 기본 추상화는 모든 <xref:System.Windows.FrameworkElement> 개체에서 파생 됩니다. 또한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 새 컨트롤을 작성하기 위한 진입점으로도 사용되며, Win32 애플리케이션 모델에서는 여러 가지 측면에서 창 핸들(HWND)로도 간주될 수 있습니다.  
   
  합니다 <xref:System.Windows.Media.Visual> 개체는 핵심 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 개체를 렌더링 지원을 제공 하는 역할입니다. 와 같은 사용자 인터페이스 컨트롤 <xref:System.Windows.Controls.Button> 및 <xref:System.Windows.Controls.TextBox>에서 파생 되는 <xref:System.Windows.Media.Visual> 클래스 및 해당 렌더링 데이터를 유지 하는 데 사용 합니다. <xref:System.Windows.Media.Visual> 개체에 대 한 지원을 제공 합니다.  
   
--   출력 표시: 시각적 개체의 serialize된 지속형 그리기 콘텐츠 렌더링  
+-   출력 표시: 시각적 요소의 그리기 콘텐츠를 직렬화 지속형를 렌더링 합니다.  
   
--   변환: 시각적 개체에 대해 변환 수행  
+-   변환: 시각적 개체에서 변환을 수행 합니다.  
   
--   클리핑: 시각적 개체에 대해 클리핑 영역 지원 제공  
+-   클리핑: 시각적 개체에 대 한 클리핑 영역 지원을 제공 합니다.  
   
--   적중 테스트: 좌표 또는 기하 도형이 시각적 개체의 범위 내에 포함되어 있는지 여부 확인  
+-   적중 테스트: 좌표 또는 기 하 도형이 시각적 개체의 경계 내에 포함 되는지 여부를 결정 합니다.  
   
--   경계 상자 계산: 시각적 개체의 경계 사각형 결정  
+-   경계 상자 계산: 시각적 개체의 경계 사각형을 결정합니다.  
   
  그러나는 <xref:System.Windows.Media.Visual> 개체 비 렌더링 기능에 대 한 지원 등 포함 되지 않습니다.  
   
@@ -141,7 +141,7 @@ DrawingGroup 작업의 순서
   
 <a name="visual_tree"></a>   
 ## <a name="visual-tree"></a>표시 트리  
- 시각적 트리에는 응용 프로그램의 사용자 인터페이스에서 사용되는 모든 시각적 요소가 포함됩니다. 시각적 요소에는 지속형 그리기 정보가 포함되어 있으므로 시각적 트리를 디스플레이 디바이스에 대한 출력을 작성하는 데 필요한 모든 렌더링 정보를 포함하는 장면 그래프로 간주할 수 있습니다. 이 트리는 코드 또는 태그를 통해 응용 프로그램에서 직접 만든 모든 시각적 요소가 누적된 것입니다. 또한 시각적 트리는 컨트롤 및 데이터 개체와 같은 요소의 템플릿 확장을 통해 만들어진 모든 시각적 요소도 포함합니다.  
+ 시각적 트리에는 애플리케이션의 사용자 인터페이스에서 사용되는 모든 시각적 요소가 포함됩니다. 시각적 요소에는 지속형 그리기 정보가 포함되어 있으므로 시각적 트리를 디스플레이 디바이스에 대한 출력을 작성하는 데 필요한 모든 렌더링 정보를 포함하는 장면 그래프로 간주할 수 있습니다. 이 트리는 코드 또는 태그를 통해 애플리케이션에서 직접 만든 모든 시각적 요소가 누적된 것입니다. 또한 시각적 트리는 컨트롤 및 데이터 개체와 같은 요소의 템플릿 확장을 통해 만들어진 모든 시각적 요소도 포함합니다.  
   
  다음 코드에서는 <xref:System.Windows.Controls.StackPanel> 태그에 정의 된 요소입니다.  
   
@@ -159,10 +159,10 @@ DrawingGroup 작업의 순서
 시각적 트리 렌더링 순서의 다이어그램  
   
 ### <a name="root-visual"></a>루트 시각적 개체  
- **루트 시각적 개체**는 시각적 트리 계층의 최상위 요소입니다. 대부분의 응용 프로그램 루트 시각적 개체의 기본 클래스는 <xref:System.Windows.Window> 또는 <xref:System.Windows.Navigation.NavigationWindow>합니다. 그러나 Win32 응용 프로그램에서 시각적 개체를 호스트한다면 루트 시각적 개체가 Win32 창에서 호스트한 최상위 시각적 개체가 될 것입니다. 자세한 내용은 [자습서: Win32 응용 프로그램에서 시각적 개체 호스팅](../../../../docs/framework/wpf/graphics-multimedia/tutorial-hosting-visual-objects-in-a-win32-application.md)을 참조하세요.  
+ **루트 시각적 개체**는 시각적 트리 계층의 최상위 요소입니다. 대부분의 응용 프로그램 루트 시각적 개체의 기본 클래스는 <xref:System.Windows.Window> 또는 <xref:System.Windows.Navigation.NavigationWindow>합니다. 그러나 Win32 애플리케이션에서 시각적 개체를 호스트한다면 루트 시각적 개체가 Win32 창에서 호스트한 최상위 시각적 개체가 될 것입니다. 자세한 내용은 [자습서: Win32 응용 프로그램에서 시각적 개체 호스팅](../../../../docs/framework/wpf/graphics-multimedia/tutorial-hosting-visual-objects-in-a-win32-application.md)합니다.  
   
 ### <a name="relationship-to-the-logical-tree"></a>논리적 트리와의 관계  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 논리적 트리는 런타임의 응용 프로그램 요소를 나타냅니다. 이 트리를 직접 조작하지는 않지만 응용 프로그램의 이 보기는 속성 상속 및 이벤트 라우팅을 이해하는 데 유용합니다. 시각적 트리와 달리, 논리적 트리 나타낼 수 있습니다 비시각적 데이터 개체와 같은 <xref:System.Windows.Documents.ListItem>합니다. 대부분의 경우 논리적 트리는 응용 프로그램의 태그 정의에 매우 밀접하게 매핑됩니다. 다음 코드에서는 <xref:System.Windows.Controls.DockPanel> 태그에 정의 된 요소입니다.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 논리적 트리는 런타임의 응용 프로그램 요소를 나타냅니다. 이 트리를 직접 조작하지는 않지만 애플리케이션의 이 보기는 속성 상속 및 이벤트 라우팅을 이해하는 데 유용합니다. 시각적 트리와 달리, 논리적 트리 나타낼 수 있습니다 비시각적 데이터 개체와 같은 <xref:System.Windows.Documents.ListItem>합니다. 대부분의 경우 논리적 트리는 애플리케이션의 태그 정의에 매우 밀접하게 매핑됩니다. 다음 코드에서는 <xref:System.Windows.Controls.DockPanel> 태그에 정의 된 요소입니다.  
   
  [!code-xaml[VisualsOverview#VisualsOverviewSnippet5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml#visualsoverviewsnippet5)]  
   
@@ -171,7 +171,7 @@ DrawingGroup 작업의 순서
  ![트리 다이어그램](../../../../docs/framework/wpf/graphics-multimedia/media/tree1-wcp.gif "Tree1_wcp")  
 논리적 트리 다이어그램  
   
- 시각적 트리와 논리적 트리 둘 다 현재의 응용 프로그램 요소 집합과 동기화되므로 요소의 모든 추가, 삭제 또는 수정이 반영됩니다. 그러나 트리는 응용 프로그램의 여러 다른 보기를 나타냅니다. 시각적 트리와 달리, 논리적 트리 컨트롤의 확장 하지는 않습니다 <xref:System.Windows.Controls.ContentPresenter> 요소입니다. 즉, 동일한 집합에 대한 논리적 트리와 시각적 트리 간에 직접적인 일대일 대응은 없습니다. 사실, 호출 된 **LogicalTreeHelper** 개체의 <xref:System.Windows.LogicalTreeHelper.GetChildren%2A> 메서드 및 **VisualTreeHelper** 개체의 <xref:System.Windows.Media.VisualTreeHelper.GetChild%2A> 매개 변수는 서로 다른 결과 생성 하는 대로 동일한 요소를 사용 하 여 메서드 .  
+ 시각적 트리와 논리적 트리 둘 다 현재의 애플리케이션 요소 집합과 동기화되므로 요소의 모든 추가, 삭제 또는 수정이 반영됩니다. 그러나 트리는 애플리케이션의 여러 다른 보기를 나타냅니다. 시각적 트리와 달리, 논리적 트리 컨트롤의 확장 하지는 않습니다 <xref:System.Windows.Controls.ContentPresenter> 요소입니다. 즉, 동일한 집합에 대한 논리적 트리와 시각적 트리 간에 직접적인 일대일 대응은 없습니다. 사실, 호출 된 **LogicalTreeHelper** 개체의 <xref:System.Windows.LogicalTreeHelper.GetChildren%2A> 메서드 및 **VisualTreeHelper** 개체의 <xref:System.Windows.Media.VisualTreeHelper.GetChild%2A> 매개 변수는 서로 다른 결과 생성 하는 대로 동일한 요소를 사용 하 여 메서드 .  
   
  논리적 트리에 대한 자세한 내용은 [WPF의 트리](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)를 참조하세요.  
   
@@ -184,7 +184,7 @@ XamlPad의 시각적 트리 탐색기 패널
  통지 하는 방법을 <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, 및 <xref:System.Windows.Controls.Button> 컨트롤 각각 별도 시각적 개체 계층에 표시 합니다 **시각적 트리 탐색기** XamlPad의 패널입니다. 왜냐하면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 컨트롤을 <xref:System.Windows.Controls.ControlTemplate> 해당 컨트롤의 시각적 트리를 포함 하는 합니다. 컨트롤을 명시적으로 참조할 때는 해당 시각적 개체 계층 구조를 암시적으로 참조하게 됩니다.  
   
 ### <a name="profiling-visual-performance"></a>시각적 성능 프로파일링  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 응용 프로그램의 런타임 동작을 분석할 수 있고 적용할 수 있는 성능 최적화 형식을 판별하는 성능 프로파일링 도구 제품군을 제공합니다. Visual Profiler 도구는 응용 프로그램의 시각적 트리에 직접 매핑하여 성능 데이터의 다양한 그래픽 보기를 제공합니다. 이 스크린 샷에서 Visual Profiler의 **CPU 사용량** 섹션에서는 렌더링 및 레이아웃과 같은 개체의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 서비스 사용을 정확히 분석할 수 있습니다.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 응용 프로그램의 런타임 동작을 분석할 수 있고 적용할 수 있는 성능 최적화 형식을 판별하는 성능 프로파일링 도구 제품군을 제공합니다. Visual Profiler 도구는 애플리케이션의 시각적 트리에 직접 매핑하여 성능 데이터의 다양한 그래픽 보기를 제공합니다. 이 스크린 샷에서 Visual Profiler의 **CPU 사용량** 섹션에서는 렌더링 및 레이아웃과 같은 개체의 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 서비스 사용을 정확히 분석할 수 있습니다.  
   
  ![Visual Profiler 표시 출력](../../../../docs/framework/wpf/graphics-multimedia/media/wpfperf-visualprofiler-04.png "WPFPerf_VisualProfiler_04")  
 Visual Profiler 표시 출력  
@@ -194,18 +194,18 @@ Visual Profiler 표시 출력
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 시각적 개체의 렌더링 동작에 영향을 주는 여러 기능이 도입되었습니다. 여기에는 유지 모드 그래픽, 벡터 그래픽 및 장치 독립적 그래픽이 포함됩니다.  
   
 ### <a name="retained-mode-graphics"></a>유지 모드 그래픽  
- 시각적 개체의 역할을 이해하기 위해서는 **직접 실행 모드**와 **유지 모드** 그래픽 시스템 간 차이를 이해하는 것이 중요합니다. GDI 또는 GDI+를 기준으로 하는 표준 Win32 응용 프로그램은 직접 실행 모드 그래픽 시스템을 사용합니다. 즉, 이 응용 프로그램은 창의 크기 조정이나 개체의 시각적 모양 변경과 같은 동작으로 인해 무효화되는 클라이언트 영역의 부분을 다시 그립니다.  
+ 시각적 개체의 역할을 이해하기 위해서는 **직접 실행 모드**와 **유지 모드** 그래픽 시스템 간 차이를 이해하는 것이 중요합니다. GDI 또는 GDI+를 기준으로 하는 표준 Win32 애플리케이션은 직접 실행 모드 그래픽 시스템을 사용합니다. 즉, 이 애플리케이션은 창의 크기 조정이나 개체의 시각적 모양 변경과 같은 동작으로 인해 무효화되는 클라이언트 영역의 부분을 다시 그립니다.  
   
  ![Win32 렌더링 시퀀스의 다이어그램](../../../../docs/framework/wpf/graphics-multimedia/media/visuallayeroverview01.png "VisualLayerOverview01")  
 Win32 렌더링 시퀀스의 다이어그램  
   
- 반면, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 유지 모드 시스템을 사용합니다. 즉, 시각적 모양을 갖는 응용 프로그램 개체는 serialize된 그리기 데이터 집합을 정의합니다. 그리기 데이터가 정의되면 시스템은 응용 프로그램 개체 렌더링을 위한 모든 다시 그리기 요청에 응답합니다. 런타임에도 응용 프로그램 개체를 수정하거나 만들 수 있으며 그리기 요청에 응답하기 위해 해당 시스템에 의존할 수 있습니다. 유지 모드 그래픽 시스템의 강점은 그리기 정보가 항상 응용 프로그램에서 serialize된 상태로 지속되지만 렌더링 책임은 시스템에 남아 있다는 것입니다. 다음 다이어그램에서는 응용 프로그램이 그리기 요청에 응답하기 위해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에 의존하는 방식을 보여 줍니다.  
+ 반면, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 유지 모드 시스템을 사용합니다. 즉, 시각적 모양을 갖는 애플리케이션 개체는 serialize된 그리기 데이터 집합을 정의합니다. 그리기 데이터가 정의되면 시스템은 애플리케이션 개체 렌더링을 위한 모든 다시 그리기 요청에 응답합니다. 런타임에도 애플리케이션 개체를 수정하거나 만들 수 있으며 그리기 요청에 응답하기 위해 해당 시스템에 의존할 수 있습니다. 유지 모드 그래픽 시스템의 강점은 그리기 정보가 항상 애플리케이션에서 serialize된 상태로 지속되지만 렌더링 책임은 시스템에 남아 있다는 것입니다. 다음 다이어그램에서는 애플리케이션이 그리기 요청에 응답하기 위해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에 의존하는 방식을 보여 줍니다.  
   
  ![WPF 렌더링 시퀀스의 다이어그램](../../../../docs/framework/wpf/graphics-multimedia/media/visuallayeroverview02.png "VisualLayerOverview02")  
 WPF 렌더링 시퀀스의 다이어그램  
   
 #### <a name="intelligent-redrawing"></a>지능형 다시 그리기  
- 유지 모드 그래픽을 사용할 때는 가장 큰 장점 중 하나는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]가 응용 프로그램에서 다시 그려야 하는 항목을 효율적으로 최적화할 수 있다는 것입니다. 다양한 수준의 불투명도를 갖는 복잡한 장면이 있더라도 다시 그리기를 최적화하기 위해 특수한 용도의 코드를 작성할 필요가 없습니다. 이러한 특성을 업데이트 영역의 다시 그리기 작업량을 최소화하여 적은 노력으로 응용 프로그램을 최적화할 수 있는 Win32 프로그래밍 작업과 비교해 보세요. Win32 응용 프로그램의 다시 그리기 최적화와 관련된 복잡성 형식의 예제를 보려면 [업데이트 영역의 다시 그리기](/windows/desktop/gdi/redrawing-in-the-update-region)를 참조하세요.  
+ 유지 모드 그래픽을 사용할 때는 가장 큰 장점 중 하나는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]가 애플리케이션에서 다시 그려야 하는 항목을 효율적으로 최적화할 수 있다는 것입니다. 다양한 수준의 불투명도를 갖는 복잡한 장면이 있더라도 다시 그리기를 최적화하기 위해 특수한 용도의 코드를 작성할 필요가 없습니다. 이러한 특성을 업데이트 영역의 다시 그리기 작업량을 최소화하여 적은 노력으로 애플리케이션을 최적화할 수 있는 Win32 프로그래밍 작업과 비교해 보세요. Win32 애플리케이션의 다시 그리기 최적화와 관련된 복잡성 형식의 예제를 보려면 [업데이트 영역의 다시 그리기](/windows/desktop/gdi/redrawing-in-the-update-region)를 참조하세요.  
   
 ### <a name="vector-graphics"></a>벡터 그래픽  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 **벡터 그래픽**을 해당 렌더링 데이터 형식으로 사용합니다. SVG(Scalable Vector Graphics), Windows 메타파일(.wmf) 및 트루타입 글꼴을 포함하는 벡터 그래픽은 렌더링 데이터를 저장하고 그래픽 기본형을 사용하여 이미지를 다시 만드는 방법을 설명하는 명령 목록으로 전송합니다. 예를 들어 트루타입 글꼴은 픽셀 배열이 아니라, 선, 곡선 및 명령 집합을 설명하는 윤곽선 글꼴입니다. 벡터 그래픽의 주요 이점 중 하나는 어떤 크기 및 해상도로도 조정이 가능하다는 것입니다.  
@@ -226,7 +226,7 @@ WPF 렌더링 시퀀스의 다이어그램
   
  다른 시스템 설정인 DPI는 화면 인치 크기(픽셀)를 설명합니다. 대부분의 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] 시스템은 DPI가 96입니다. 이것은 화면 인치가 96픽셀임을 나타냅니다. DPI 설정을 늘리면 화면 인치가 더 커지고 DPI를 줄이면 화면 인치가 더 작아집니다. 즉, 화면 인치가 실제 인치와 같지 않음을 의미합니다. 대부분의 시스템에서 같지 않을 수 있습니다. DPI를 늘리면 화면 인치 크기도 늘어났을 것이므로 DPI 인식 그래픽 및 텍스트가 더 커집니다. 특히 고해상도에서 DPI를 늘리면 텍스트 읽기가 훨씬 더 쉬워집니다.  
   
- 모든 응용 프로그램이 DPI를 인식하는 것은 아닙니다. 일부에서는 하드웨어 픽셀을 측정의 기본 단위로 사용합니다. 시스템 DPI를 변경해도 이러한 응용 프로그램에는 영향이 없습니다. 많은 다른 응용 프로그램에서 DPI 인식 단위를 사용하여 글꼴 크기를 설명하지만 다른 요소를 설명할 때는 픽셀을 사용합니다. 이러한 응용 프로그램의 텍스트는 시스템의 DPI 설정에 따라 확장되지만 UI는 그렇지 않으므로 DPI를 너무 작거나 너무 크게 지정하면 이러한 응용 프로그램에서 레이아웃 문제가 발생할 수 있습니다. 이 문제는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 사용하여 개발된 응용 프로그램에서는 해결되었습니다.  
+ 모든 애플리케이션이 DPI를 인식하는 것은 아닙니다. 일부에서는 하드웨어 픽셀을 측정의 기본 단위로 사용합니다. 시스템 DPI를 변경해도 이러한 애플리케이션에는 영향이 없습니다. 많은 다른 애플리케이션에서 DPI 인식 단위를 사용하여 글꼴 크기를 설명하지만 다른 요소를 설명할 때는 픽셀을 사용합니다. 이러한 애플리케이션의 텍스트는 시스템의 DPI 설정에 따라 확장되지만 UI는 그렇지 않으므로 DPI를 너무 작거나 너무 크게 지정하면 이러한 애플리케이션에서 레이아웃 문제가 발생할 수 있습니다. 이 문제는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 사용하여 개발된 애플리케이션에서는 해결되었습니다.  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서는 하드웨어 픽셀이 아닌 장치 독립적 픽셀을 기본 측정 단위로 사용하여 자동 크기 조정을 지원합니다. 그래픽 및 텍스트는 응용 프로그램 개발자의 추가 작업 없이 적절히 확장됩니다. 다음 그림에는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 텍스트와 그래픽이 다른 DPI 설정으로 표시되는 방식의 예가 나와 있습니다.  
   
@@ -250,19 +250,19 @@ WPF 렌더링 시퀀스의 다이어그램
  [!code-csharp[VisualsOverview#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#101)]
  [!code-vb[VisualsOverview#101](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#101)]  
   
- 대부분의 경우에서 논리적 트리는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램의 요소를 좀 더 유용하게 나타낸 것입니다. 논리적 트리를 직접 수정하지는 않지만 응용 프로그램의 이 보기는 속성 상속 및 이벤트 라우팅을 이해하는 데 유용합니다. 시각적 트리와 달리, 논리적 트리 나타낼 수 있습니다 비시각적 데이터 개체와 같은 <xref:System.Windows.Documents.ListItem>합니다. 논리적 트리에 대한 자세한 내용은 [WPF의 트리](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)를 참조하세요.  
+ 대부분의 경우에서 논리적 트리는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션의 요소를 좀 더 유용하게 나타낸 것입니다. 논리적 트리를 직접 수정하지는 않지만 애플리케이션의 이 보기는 속성 상속 및 이벤트 라우팅을 이해하는 데 유용합니다. 시각적 트리와 달리, 논리적 트리 나타낼 수 있습니다 비시각적 데이터 개체와 같은 <xref:System.Windows.Documents.ListItem>합니다. 논리적 트리에 대한 자세한 내용은 [WPF의 트리](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)를 참조하세요.  
   
  <xref:System.Windows.Media.VisualTreeHelper> 클래스는 시각적 개체의 경계 사각형을 반환 하기 위한 메서드를 제공 합니다. 호출 하 여 시각적 개체의 경계 사각형을 반환할 수 있습니다 <xref:System.Windows.Media.VisualTreeHelper.GetContentBounds%2A>합니다. 시각적 개체 자체를 포함 하 여 호출 하 여 시각적 개체의 모든 하위 항목의 경계 사각형을 반환할 수 있습니다 <xref:System.Windows.Media.VisualTreeHelper.GetDescendantBounds%2A>합니다. 다음 코드에서는 시각적 개체 및 모든 하위 개체의 경계 사각형을 계산하는 방법을 보여 줍니다.  
   
  [!code-csharp[VisualsOverview#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#102)]
  [!code-vb[VisualsOverview#102](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#102)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Visual>  
- <xref:System.Windows.Media.VisualTreeHelper>  
- <xref:System.Windows.Media.DrawingVisual>  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [시각적 계층에서 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)  
- [DrawingVisual 개체 사용](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)  
- [자습서: Win32 응용 프로그램에서 시각적 개체 호스팅](../../../../docs/framework/wpf/graphics-multimedia/tutorial-hosting-visual-objects-in-a-win32-application.md)  
- [WPF 응용 프로그램 성능 최적화](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Visual>
+- <xref:System.Windows.Media.VisualTreeHelper>
+- <xref:System.Windows.Media.DrawingVisual>
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [시각적 계층에서 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)
+- [DrawingVisual 개체 사용](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)
+- [자습서: Win32 응용 프로그램에서 시각적 개체 호스팅](../../../../docs/framework/wpf/graphics-multimedia/tutorial-hosting-visual-objects-in-a-win32-application.md)
+- [WPF 응용 프로그램 성능 최적화](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)

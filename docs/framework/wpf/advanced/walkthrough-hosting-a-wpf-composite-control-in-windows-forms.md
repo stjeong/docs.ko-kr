@@ -4,17 +4,17 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting WPF content in Windows Forms [WPF]
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
-ms.openlocfilehash: b49d09ce81c0605ecd82b67ec4c0b24973ac293c
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: f0fad58d269c89079237969fc03cf5edb6cf0358
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54569666"
 ---
 # <a name="walkthrough-hosting-a-wpf-composite-control-in-windows-forms"></a>연습: Windows Forms에서 WPF 복합 컨트롤 호스팅
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 응용 프로그램을 만들기 위한 다양한 환경을 제공합니다. 그러나 상당한 투자 경우 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 코드 수 기존 확장 하는 것이 효과적인 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 응용 프로그램으로 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 처음부터 다시 작성 하는 대신 합니다. 일반적인 시나리오는 하나를 포함 하거나 더 많은 컨트롤이 구현 하는 경우 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Windows Forms 응용 프로그램 내에서. WPF 컨트롤 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하십시오 [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)합니다.  
   
- 이 연습에서는 안내 응용 프로그램을 호스팅하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤에 Windows Forms 응용 프로그램에서 데이터 입력을 수행 합니다. 복합 컨트롤은 DLL로 패키지됩니다. 이 일반적인 절차는 더 복잡한 응용 프로그램 및 컨트롤로 확장할 수 있습니다. 이 연습은 모양과 기능이 거의 동일 되도록 설계 되었습니다 [연습: WPF에서 Windows Forms 복합 컨트롤 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)합니다. 주요 차이점은 호스팅 시나리오가 반대라는 점입니다.  
+ 이 연습에서는 안내 응용 프로그램을 호스팅하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤에 Windows Forms 응용 프로그램에서 데이터 입력을 수행 합니다. 복합 컨트롤은 DLL로 패키지됩니다. 이 일반적인 절차는 더 복잡한 애플리케이션 및 컨트롤로 확장할 수 있습니다. 이 연습에서 모양과 기능이 거의 동일 하 게 [연습: WPF에서 호스팅하는 Windows Forms 복합 컨트롤](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)합니다. 주요 차이점은 호스팅 시나리오가 반대라는 점입니다.  
   
  이 연습은 두 개의 섹션으로 구분됩니다. 첫 번째 섹션은 구현에 간략하게 설명 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤입니다. 두 번째 섹션에서는 Windows Forms 응용 프로그램에서 복합 컨트롤을 호스트 컨트롤에서 이벤트를 수신 하 고 컨트롤의 속성 중 일부에 액세스 하는 방법을 자세히 설명 합니다.  
   
@@ -22,13 +22,13 @@ ms.locfileid: "48582816"
   
 -   WPF 복합 컨트롤 구현  
   
--   Windows Forms 호스트 응용 프로그램 구현  
+-   Windows Forms 호스트 애플리케이션 구현  
   
  이 연습에 설명 된 작업의 전체 코드 목록은 참조 하세요 [Windows Forms 샘플에서 WPF 복합 컨트롤 호스팅](https://go.microsoft.com/fwlink/?LinkID=159996)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
 
-Visual Studio의이 연습을 완료 해야 합니다.  
+이 연습을 완료하려면 Visual Studio가 필요합니다.  
   
 ## <a name="implementing-the-wpf-composite-control"></a>WPF 복합 컨트롤 구현  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 이 예제에서 사용 하는 복합 컨트롤은 사용자의 이름 및 주소를 사용 하는 간단한 데이터 입력 폼입니다. 사용자가 작업이 완료되었음을 나타내는 두 개의 단추 중 하나를 클릭하면 컨트롤에서 사용자 지정 이벤트가 발생하여 해당 정보가 호스트에 반환됩니다. 다음 그림에서는 렌더링된 컨트롤을 보여 줍니다.  
@@ -45,7 +45,7 @@ WPF 복합 컨트롤
   
 3.  새 프로젝트의 이름을 `MyControls`로 지정합니다.  
   
-4.  위치 지정 편리 하 게 명명된 된 최상위 폴더와 같은 `WindowsFormsHostingWpfControl`합니다. 나중에 이 폴더에 호스트 응용 프로그램을 넣습니다.  
+4.  위치 지정 편리 하 게 명명된 된 최상위 폴더와 같은 `WindowsFormsHostingWpfControl`합니다. 나중에 이 폴더에 호스트 애플리케이션을 넣습니다.  
   
 5.  **확인**을 클릭해 프로젝트를 만듭니다. 기본 프로젝트 포함 이라는 단일 컨트롤이 `UserControl1`합니다.  
   
@@ -178,11 +178,11 @@ namespace MyControls
  솔루션을 빌드합니다. 빌드하면 MyControls.dll이라는 DLL이 생성됩니다.  
   
 <a name="winforms_host_section"></a>   
-## <a name="implementing-the-windows-forms-host-application"></a>Windows Forms 호스트 응용 프로그램 구현  
- Windows Forms 호스트 응용 프로그램 사용을 <xref:System.Windows.Forms.Integration.ElementHost> 호스트 개체를 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤입니다. 응용 프로그램 처리를 `OnButtonClick` 복합 컨트롤에서 데이터를 수신 하는 이벤트입니다. 또한 응용 프로그램은 컨트롤 모양을 수정하는 데 사용할 수 있는 옵션 단추 집합도 포함합니다. 다음 그림에서는 응용 프로그램을 보여 줍니다.  
+## <a name="implementing-the-windows-forms-host-application"></a>Windows Forms 호스트 애플리케이션 구현  
+ Windows Forms 호스트 응용 프로그램 사용을 <xref:System.Windows.Forms.Integration.ElementHost> 호스트 개체를 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤입니다. 응용 프로그램 처리를 `OnButtonClick` 복합 컨트롤에서 데이터를 수신 하는 이벤트입니다. 또한 애플리케이션은 컨트롤 모양을 수정하는 데 사용할 수 있는 옵션 단추 집합도 포함합니다. 다음 그림에서는 애플리케이션을 보여 줍니다.  
   
  ![Windows Form Hosting Avalon 컨트롤](../../../../docs/framework/wpf/advanced/media/wfhost.png "WFHost")  
-Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤  
+Windows Forms 애플리케이션에서 호스트되는 WPF 복합 컨트롤  
   
 ### <a name="creating-the-project"></a>프로젝트 만들기  
  프로젝트를 시작하려면  
@@ -217,8 +217,8 @@ Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤
   
     -   WindowsFormsIntegration  
   
-### <a name="implementing-the-user-interface-for-the-application"></a>응용 프로그램에 대한 사용자 인터페이스 구현  
- Windows Form 응용 프로그램의 UI에는 WPF 복합 컨트롤과 상호 작용하는 여러 컨트롤이 포함되어 있습니다.  
+### <a name="implementing-the-user-interface-for-the-application"></a>애플리케이션에 대한 사용자 인터페이스 구현  
+ Windows Form 애플리케이션의 UI에는 WPF 복합 컨트롤과 상호 작용하는 여러 컨트롤이 포함되어 있습니다.  
   
 1.  Windows Form 디자이너에서 Form1을 엽니다.  
   
@@ -309,7 +309,7 @@ Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤
   
  [!code-csharp[WindowsFormsHostingWpfControl#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#3)]  
   
- 응용 프로그램을 빌드 및 실행합니다. WPF 복합 컨트롤에 텍스트를 추가 하 고 클릭 **확인**합니다. 텍스트가 레이블에 나타납니다. 현재는 라디오 단추를 처리하는 코드가 추가되지 않았습니다.  
+ 애플리케이션을 빌드 및 실행합니다. WPF 복합 컨트롤에 텍스트를 추가 하 고 클릭 **확인**합니다. 텍스트가 레이블에 나타납니다. 현재는 라디오 단추를 처리하는 코드가 추가되지 않았습니다.  
   
 ### <a name="modifying-the-appearance-of-the-control"></a>컨트롤의 모양 수정  
  합니다 <xref:System.Windows.Forms.RadioButton> 폼의 컨트롤을 변경 하려면 사용자를 통해를 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 복합 컨트롤의 전경색과 배경색 및 여러 글꼴 속성 색입니다. 배경색에 의해 노출 되는 <xref:System.Windows.Forms.Integration.ElementHost> 개체입니다. 나머지 속성은 컨트롤의 사용자 지정 속성으로 노출됩니다.  
@@ -318,11 +318,11 @@ Windows Forms 응용 프로그램에서 호스트되는 WPF 복합 컨트롤
   
  [!code-csharp[WindowsFormsHostingWpfControl#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#4)]  
   
- 응용 프로그램을 빌드 및 실행합니다. WPF 복합 컨트롤에 대한 효과를 확인하려면 다른 라디오 단추를 클릭합니다.  
+ 애플리케이션을 빌드 및 실행합니다. WPF 복합 컨트롤에 대한 효과를 확인하려면 다른 라디오 단추를 클릭합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)  
- [연습: WPF에서 Windows Forms 복합 컨트롤 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
- [연습: Windows Forms에서 3-D WPF 복합 컨트롤 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [연습: WPF에서 Windows Forms 복합 컨트롤 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
+- [연습: Windows Forms에서 3-D WPF 복합 컨트롤 호스팅](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md)

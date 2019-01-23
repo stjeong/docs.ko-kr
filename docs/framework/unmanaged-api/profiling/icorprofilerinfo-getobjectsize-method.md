@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 7ed27602dfa9090b46b842e4e65af8af373cc207
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e03a618144ca322d51337e84486a8f5051a3d2a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33453911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54568883"
 ---
 # <a name="icorprofilerinfogetobjectsize-method"></a>ICorProfilerInfo::GetObjectSize 메서드
 지정된 된 개체의 크기를 가져옵니다.  
@@ -45,24 +45,24 @@ HRESULT GetObjectSize(
 ## <a name="remarks"></a>설명  
   
 > [!IMPORTANT]
->  이 메서드는 사용되지 않습니다. 반환 COR_E_OVERFLOW 개체에 대 한 4GB 이상의 64 비트 플랫폼에서 합니다. 사용 하 여 [icorprofilerinfo4:: Getobjectsize2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getobjectsize2-method.md) 메서드 대신 합니다.  
+>  이 메서드는 사용되지 않습니다. 반환 COR_E_OVERFLOW 개체에 대 한 4GB 보다 큰 64 비트 플랫폼에서 합니다. 사용 된 [ICorProfilerInfo4::GetObjectSize2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getobjectsize2-method.md) 메서드 대신 합니다.  
   
- 동일한 형식의 다른 개체에는 크기가 있는 경우가 많습니다. 그러나 배열 또는 문자열 등의 일부 형식에는 각 개체에 대해 다른 크기가 있을 수 있습니다.  
+ 동일한 유형의 다른 개체에는 동일한 크기가 있는 경우가 많습니다. 그러나 배열 또는 문자열 같은 일부 유형의 경우에 각 개체에 대해 다른 크기가 있을 수 있습니다.  
   
- 반환 되는 크기는 `GetObjectSize` 메서드는 개체가 가비지 컬렉션 힙에 된 후에 나타날 수 있는 맞춤 채움을 포함 되지 않습니다. 사용 하는 경우는 `GetObjectSize` 가비지 컬렉션 힙에 개체에서 개체를 이동 하는 메서드 맞춤 수동으로 필요에 따라 안쪽 여백을 추가 합니다.  
+ 반환 되는 크기는 `GetObjectSize` 메서드는 개체가 가비지 컬렉션 힙에 후 나타날 수 있는 맞춤 안쪽 여백을 포함 되지 않습니다. 사용 하는 경우는 `GetObjectSize` 메서드 가비지 컬렉션 힙에 개체에서 개체를 수동으로 필요에 따라 패딩 맞춤을 추가 합니다.  
   
 -   32 비트 Windows에서 COR_PRF_GC_GEN_0, COR_PRF_GC_GEN_1, 및 COR_PRF_GC_GEN_2 4 바이트 맞춤을 사용 하 고 COR_PRF_GC_LARGE_OBJECT_HEAP 8 바이트 정렬을 사용 합니다.  
   
--   64 비트 Windows의 맞춤은 항상 8 바이트입니다.  
+-   64 비트 Windows에 맞춤은 항상 8 바이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorProf.idl, CorProf.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICorProfilerInfo 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICorProfilerInfo 인터페이스](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

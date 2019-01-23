@@ -2,12 +2,12 @@
 title: Contract1
 ms.date: 03/30/2017
 ms.assetid: aa00f6b3-7e1f-4213-841a-206463fca20b
-ms.openlocfilehash: 12e9cbf5232ebbad33ccc4fdca33233997d27357
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c602ea2b708fced37c5b309596fe2312be21e741
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54603562"
 ---
 # <a name="contract"></a>계약
 계약  
@@ -43,7 +43,7 @@ class Contract
  계약을 호스팅하는 appdomain의 appdomain ID입니다.  
   
 ### <a name="behaviors"></a>동작  
- 데이터 형식: Behavior array  
+ 데이터 형식: 동작 배열  
   
  액세스 형식: 읽기 전용  
   
@@ -64,7 +64,7 @@ class Contract
  WSDL에 있는 `portType` 요소의 네임스페이스입니다.  
   
 ### <a name="operations"></a>작업  
- 데이터 형식: Operation array  
+ 데이터 형식: 작업 배열  
   
  액세스 형식: 읽기 전용  
   
@@ -78,7 +78,7 @@ class Contract
  계약을 호스팅하는 프로세스의 프로세스 ID입니다.  
   
 ### <a name="ref"></a>ref  
- 데이터 형식: Contract  
+ 데이터 형식: 계약  
   
  액세스 형식: 읽기 전용  
   
@@ -104,5 +104,5 @@ class Contract
 |---------|-----------------------------------|  
 |네임스페이스|root\ServiceModel에 정의되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Description.ContractDescription>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Description.ContractDescription>

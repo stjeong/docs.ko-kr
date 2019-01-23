@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 4bad1d15bc8e2fd40d42581220888f035e515162
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0d1dfe5cadf59122994f1a751f985e186c6cf5b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54602509"
 ---
 # <a name="ltcryptographysettingsgt-element"></a>&lt;cryptographySettings&gt; 요소
 암호화 설정이 포함되어 있습니다.  
   
  \<configuration>  
-\<mscorlib >  
-\<cryptographySettings >  
+\<mscorlib>  
+\<cryptographySettings>  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,14 +41,14 @@ ms.locfileid: "50181383"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<cryptoNameMapping >](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptonamemapping-element.md)|이름에 대한 클래스의 매핑이 포함되어 있습니다.|  
-|[\<oidMap >](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.|  
+|[\<cryptoNameMapping>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptonamemapping-element.md)|이름에 대한 클래스의 매핑이 포함되어 있습니다.|  
+|[\<oidMap>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|ASN.1 클래스 개체 식별자 (OID) 매핑이 들어 있습니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`mscorlib`|포함 된 `cryptographySettings` 요소입니다.|  
   
 ## <a name="example"></a>예제  
@@ -78,7 +78,7 @@ ms.locfileid: "50181383"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+## <a name="see-also"></a>참고자료
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

@@ -1,15 +1,15 @@
 ---
-title: '방법: 두 개의 폴더 (Visual Basic) (LINQ)의 내용 비교'
+title: '방법: 두 개의 폴더 (LINQ) (Visual Basic)의 내용 비교'
 ms.date: 07/20/2015
 ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
-ms.openlocfilehash: 02f05f540afb9dcb398cc63a16f0fbbb80a7f4cf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 11bd7d7b4984a52ae807c5bce38d62cf4a9978d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600611"
 ---
-# <a name="how-to-compare-the-contents-of-two-folders-linq-visual-basic"></a>방법: 두 개의 폴더 (Visual Basic) (LINQ)의 내용 비교
+# <a name="how-to-compare-the-contents-of-two-folders-linq-visual-basic"></a>방법: 두 개의 폴더 (LINQ) (Visual Basic)의 내용 비교
 이 예제에서는 두 파일 목록을 비교하는 세 가지 방법을 보여 줍니다.  
   
 -   두 파일 목록이 똑같은지 여부를 지정하는 부울 값 쿼리.  
@@ -116,6 +116,6 @@ End Module
 ## <a name="compiling-the-code"></a>코드 컴파일  
  System.Core.dll에 대한 참조와 System.Linq 네임스페이스에 대한 `Imports` 문을 사용하여 .NET Framework 버전 3.5 이상을 대상으로 하는 프로젝트를 만듭니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to Objects(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to Objects(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ 및 파일 디렉터리(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

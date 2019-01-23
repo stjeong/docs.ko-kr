@@ -1,5 +1,5 @@
 ---
-title: '연습: 사용자 정의 컨트롤에서 끌어서 놓기 사용'
+title: '연습: 끌어서 놓기 사용자 컨트롤에서 사용'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - walkthrough [WPF], drag-and-drop
 - drag-and-drop [WPF], walkthrough
 ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
-ms.openlocfilehash: 7ca4987da8422c00e3fc34ff4605ddd13e4091b6
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9ffaab4115edec1fc0115b27b8904970854f79d9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47193738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600676"
 ---
-# <a name="walkthrough-enabling-drag-and-drop-on-a-user-control"></a>연습: 사용자 정의 컨트롤에서 끌어서 놓기 사용
+# <a name="walkthrough-enabling-drag-and-drop-on-a-user-control"></a>연습: 끌어서 놓기 사용자 컨트롤에서 사용
 
 이 연습에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서 끌어서 놓기 데이터 전송에 참가할 수 있는 사용자 지정 사용자 정의 컨트롤을 만드는 방법을 보여 줍니다.
 
@@ -33,18 +33,18 @@ ms.locfileid: "47193738"
 
 ## <a name="prerequisites"></a>전제 조건
 
-Visual Studio의이 연습을 완료 해야 합니다.
+이 연습을 완료하려면 Visual Studio가 필요합니다.
 
 ## <a name="create-the-application-project"></a>응용 프로그램 프로젝트 만들기
  이 섹션에서는 두 개의 패널을 사용 하 여 기본 페이지를 포함 하는 응용 프로그램 인프라를 만들게 됩니다 및 <xref:System.Windows.Controls.TextBox>합니다.
 
-1.  Visual Basic 또는 Visual C#에서 `DragDropExample`이라는 새 WPF 응용 프로그램 프로젝트를 만듭니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)를 참조하세요.
+1.  Visual Basic 또는 Visual C#에서 `DragDropExample`이라는 새 WPF 애플리케이션 프로젝트를 만듭니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)합니다.
 
 2.  MainWindow.xaml을 엽니다.
 
 3.  태그와 닫는 사이 다음 태그를 추가 <xref:System.Windows.Controls.Grid> 태그입니다.
 
-     이 태그는 테스트 응용 프로그램에 대한 사용자 인터페이스를 만듭니다.
+     이 태그는 테스트 애플리케이션에 대한 사용자 인터페이스를 만듭니다.
 
      [!code-xaml[DragDropWalkthrough#PanelsStep1XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DragDropWalkthrough/CS/SnippetWindow.xaml#panelsstep1xaml)]
 
@@ -331,6 +331,6 @@ Visual Studio의이 연습을 완료 해야 합니다.
 
      ![Ctrl 키를 누른 채 원 끌기](../../../../docs/framework/wpf/advanced/media/dragdrop-paneldrop.png "DragDrop_PanelDrop")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [끌어서 놓기 개요](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
