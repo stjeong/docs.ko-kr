@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0529dee17469018e872951740a5899ef8664300a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 643bfd9f17474241a9291734eb52910f97f9ad2d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33421004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54495645"
 ---
-# <a name="icordebugthread4getcurrentcustomdebuggernotification-method"></a><span data-ttu-id="3e262-102">ICorDebugThread4::GetCurrentCustomDebuggerNotification 메서드</span><span class="sxs-lookup"><span data-stu-id="3e262-102">ICorDebugThread4::GetCurrentCustomDebuggerNotification Method</span></span>
-<span data-ttu-id="3e262-103">현재 가져옵니다 [icordebugmanagedcallback3:: Customnotification](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-customnotification-method.md) 현재 스레드에서 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="3e262-103">Gets the current [ICorDebugManagedCallback3::CustomNotification](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-customnotification-method.md) object on the current thread.</span></span>  
+# <a name="icordebugthread4getcurrentcustomdebuggernotification-method"></a><span data-ttu-id="4e83c-102">ICorDebugThread4::GetCurrentCustomDebuggerNotification 메서드</span><span class="sxs-lookup"><span data-stu-id="4e83c-102">ICorDebugThread4::GetCurrentCustomDebuggerNotification Method</span></span>
+<span data-ttu-id="4e83c-103">현재 가져옵니다 [ICorDebugManagedCallback3::CustomNotification](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-customnotification-method.md) 현재 스레드에서 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="4e83c-103">Gets the current [ICorDebugManagedCallback3::CustomNotification](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-customnotification-method.md) object on the current thread.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3e262-104">구문</span><span class="sxs-lookup"><span data-stu-id="3e262-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="4e83c-104">구문</span><span class="sxs-lookup"><span data-stu-id="4e83c-104">Syntax</span></span>  
   
 ```  
 HRESULT GetCurrentCustomDebuggerNotification(  
@@ -35,23 +35,23 @@ HRESULT GetCurrentCustomDebuggerNotification(
     );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="3e262-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e262-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="4e83c-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="4e83c-105">Parameters</span></span>  
  `ppNOtificationObject`  
- <span data-ttu-id="3e262-106">[out] 현재에 대 한 포인터 `ICorDebugManagedCallback3::CustomNotification` 현재 스레드에서 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="3e262-106">[out] A pointer to the current `ICorDebugManagedCallback3::CustomNotification` object on the current thread.</span></span>  
+ <span data-ttu-id="4e83c-106">[out] 현재 포인터 `ICorDebugManagedCallback3::CustomNotification` 현재 스레드에서 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="4e83c-106">[out] A pointer to the current `ICorDebugManagedCallback3::CustomNotification` object on the current thread.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="3e262-107">설명</span><span class="sxs-lookup"><span data-stu-id="3e262-107">Remarks</span></span>  
- <span data-ttu-id="3e262-108">값 `ppNotificationObject` 메서드 내에서 호출 되지 않으면 null을 `ICorDebugManagedCallback3::CustomNotification` 콜백을 현재 알림 개체가 없는 경우 또는 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e262-108">The value of `ppNotificationObject` is null if the method is not called from within a `ICorDebugManagedCallback3::CustomNotification` callback, or if no current notification object exists.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="4e83c-107">설명</span><span class="sxs-lookup"><span data-stu-id="4e83c-107">Remarks</span></span>  
+ <span data-ttu-id="4e83c-108">값 `ppNotificationObject` 메서드 내에서 호출 하지 않으면 null을 `ICorDebugManagedCallback3::CustomNotification` 콜백 현재 알림 개체가 없는 경우 또는.</span><span class="sxs-lookup"><span data-stu-id="4e83c-108">The value of `ppNotificationObject` is null if the method is not called from within a `ICorDebugManagedCallback3::CustomNotification` callback, or if no current notification object exists.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="3e262-109">요구 사항</span><span class="sxs-lookup"><span data-stu-id="3e262-109">Requirements</span></span>  
- <span data-ttu-id="3e262-110">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="3e262-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="4e83c-109">요구 사항</span><span class="sxs-lookup"><span data-stu-id="4e83c-109">Requirements</span></span>  
+ <span data-ttu-id="4e83c-110">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="4e83c-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3e262-111">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3e262-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="4e83c-111">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="4e83c-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="3e262-112">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3e262-112">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="4e83c-112">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="4e83c-112">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="3e262-113">**.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3e262-113">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="4e83c-113">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4e83c-113">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3e262-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3e262-114">See Also</span></span>  
- [<span data-ttu-id="3e262-115">ICorDebugThread4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="3e262-115">ICorDebugThread4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)  
- [<span data-ttu-id="3e262-116">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="3e262-116">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [<span data-ttu-id="3e262-117">디버깅</span><span class="sxs-lookup"><span data-stu-id="3e262-117">Debugging</span></span>](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## <a name="see-also"></a><span data-ttu-id="4e83c-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="4e83c-114">See also</span></span>
+- [<span data-ttu-id="4e83c-115">ICorDebugThread4 인터페이스</span><span class="sxs-lookup"><span data-stu-id="4e83c-115">ICorDebugThread4 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)
+- [<span data-ttu-id="4e83c-116">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="4e83c-116">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [<span data-ttu-id="4e83c-117">디버깅</span><span class="sxs-lookup"><span data-stu-id="4e83c-117">Debugging</span></span>](../../../../docs/framework/unmanaged-api/debugging/index.md)

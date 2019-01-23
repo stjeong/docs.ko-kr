@@ -17,19 +17,19 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a1239546072192d6ff9497013ad7b7140ea13085
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 496082bbf89ceb93ba3dceef9a9222425db71784
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33443244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54522416"
 ---
-# <a name="iceegencomputepointer-method"></a><span data-ttu-id="df9fa-102">ICeeGen::ComputePointer 메서드</span><span class="sxs-lookup"><span data-stu-id="df9fa-102">ICeeGen::ComputePointer Method</span></span>
-<span data-ttu-id="df9fa-103">지정 된 코드 섹션에 대 한 버퍼를 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="df9fa-103">Determines the buffer for the specified code section.</span></span>  
+# <a name="iceegencomputepointer-method"></a><span data-ttu-id="08591-102">ICeeGen::ComputePointer 메서드</span><span class="sxs-lookup"><span data-stu-id="08591-102">ICeeGen::ComputePointer Method</span></span>
+<span data-ttu-id="08591-103">지정 된 코드 섹션에 대 한 버퍼를 결정합니다.</span><span class="sxs-lookup"><span data-stu-id="08591-103">Determines the buffer for the specified code section.</span></span>  
   
- <span data-ttu-id="df9fa-104">이 메서드는 사용 되지 않으며 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="df9fa-104">This method is obsolete and should not be used.</span></span>  
+ <span data-ttu-id="08591-104">이 메서드는 사용 되지 않습니다 및 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="08591-104">This method is obsolete and should not be used.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="df9fa-105">구문</span><span class="sxs-lookup"><span data-stu-id="df9fa-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="08591-105">구문</span><span class="sxs-lookup"><span data-stu-id="08591-105">Syntax</span></span>  
   
 ```  
 HRESULT ComputePointer (  
@@ -39,24 +39,24 @@ HRESULT ComputePointer (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="df9fa-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="df9fa-106">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="08591-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="08591-106">Parameters</span></span>  
  `section`  
- <span data-ttu-id="df9fa-107">[in] 반환할 버퍼에 대 한 코드 섹션입니다.</span><span class="sxs-lookup"><span data-stu-id="df9fa-107">[in] The code section for which to return a buffer.</span></span>  
+ <span data-ttu-id="08591-107">[in] 버퍼를 반환 하는 코드 섹션입니다.</span><span class="sxs-lookup"><span data-stu-id="08591-107">[in] The code section for which to return a buffer.</span></span>  
   
  `RVA`  
- <span data-ttu-id="df9fa-108">[in] 포인터를 얻으려면 메서드 상대 가상 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="df9fa-108">[in] The relative virtual address of the method for which to get a pointer.</span></span>  
+ <span data-ttu-id="08591-108">[in] 에 대 한 포인터를 가져올 메서드의 상대 가상 주소입니다.</span><span class="sxs-lookup"><span data-stu-id="08591-108">[in] The relative virtual address of the method for which to get a pointer.</span></span>  
   
  `lpBuffer`  
- <span data-ttu-id="df9fa-109">[out] 반환된 된 버퍼에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="df9fa-109">[out] A pointer to the returned buffer.</span></span>  
+ <span data-ttu-id="08591-109">[out] 반환 된 버퍼에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="08591-109">[out] A pointer to the returned buffer.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="df9fa-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="df9fa-110">Requirements</span></span>  
- <span data-ttu-id="df9fa-111">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="df9fa-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="08591-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="08591-110">Requirements</span></span>  
+ <span data-ttu-id="08591-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="08591-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="df9fa-112">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="df9fa-112">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="08591-112">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="08591-112">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="df9fa-113">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="df9fa-113">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="08591-113">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="08591-113">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="df9fa-114">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="df9fa-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="08591-114">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="08591-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="df9fa-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="df9fa-115">See Also</span></span>  
- [<span data-ttu-id="df9fa-116">ICeeGen 인터페이스</span><span class="sxs-lookup"><span data-stu-id="df9fa-116">ICeeGen Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## <a name="see-also"></a><span data-ttu-id="08591-115">참고자료</span><span class="sxs-lookup"><span data-stu-id="08591-115">See also</span></span>
+- [<span data-ttu-id="08591-116">ICeeGen 인터페이스</span><span class="sxs-lookup"><span data-stu-id="08591-116">ICeeGen Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
