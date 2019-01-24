@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9e4c0ff05a587d17a793fc92eca88274a43e4090
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 218105d00eb3369a5768577b2be0854cf67585eb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33418707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573599"
 ---
-# <a name="icordebugvaluecreatebreakpoint-method"></a><span data-ttu-id="ff4d3-102">ICorDebugValue::CreateBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="ff4d3-102">ICorDebugValue::CreateBreakpoint Method</span></span>
-<span data-ttu-id="ff4d3-103">`CreateBreakpoint` 메서드가 현재 구현 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="ff4d3-103">The `CreateBreakpoint` method is currently not implemented.</span></span>  
+# <a name="icordebugvaluecreatebreakpoint-method"></a><span data-ttu-id="18a7a-102">ICorDebugValue::CreateBreakpoint 메서드</span><span class="sxs-lookup"><span data-stu-id="18a7a-102">ICorDebugValue::CreateBreakpoint Method</span></span>
+<span data-ttu-id="18a7a-103">`CreateBreakpoint` 메서드가 현재 구현 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="18a7a-103">The `CreateBreakpoint` method is currently not implemented.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ff4d3-104">구문</span><span class="sxs-lookup"><span data-stu-id="ff4d3-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="18a7a-104">구문</span><span class="sxs-lookup"><span data-stu-id="18a7a-104">Syntax</span></span>  
   
 ```  
 HRESULT CreateBreakpoint (  
@@ -35,14 +35,14 @@ HRESULT CreateBreakpoint (
 );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="ff4d3-105">요구 사항</span><span class="sxs-lookup"><span data-stu-id="ff4d3-105">Requirements</span></span>  
- <span data-ttu-id="ff4d3-106">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="ff4d3-106">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="18a7a-105">요구 사항</span><span class="sxs-lookup"><span data-stu-id="18a7a-105">Requirements</span></span>  
+ <span data-ttu-id="18a7a-106">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="18a7a-106">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="ff4d3-107">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="ff4d3-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="18a7a-107">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="18a7a-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="ff4d3-108">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="ff4d3-108">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="18a7a-108">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="18a7a-108">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="ff4d3-109">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ff4d3-109">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="18a7a-109">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="18a7a-109">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ff4d3-110">참고 항목</span><span class="sxs-lookup"><span data-stu-id="ff4d3-110">See Also</span></span>  
- 
+## <a name="see-also"></a><span data-ttu-id="18a7a-110">참고자료</span><span class="sxs-lookup"><span data-stu-id="18a7a-110">See also</span></span>
+
