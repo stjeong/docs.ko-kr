@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e69625184aca7d1ebd4bb0b7dc7c4958596b906a
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: b682904a8e7f2eafa8833d784febe7b3b2a1e5f4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43773935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54611087"
 ---
 # <a name="beginenumeration-function"></a>BeginEnumeration 함수
 개체에 대해 사용할 수 있는 방법의 열거형을 시작합니다.  
@@ -60,7 +60,7 @@ HRESULT BeginMethodEnumeration (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | `lEnnumFlags` 0이 아닌 값 이며 지정된 된 플래그 중 하나가 아닙니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lEnnumFlags` 0이 아닌 값 이며 지정된 된 플래그 중 하나가 아닙니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -70,11 +70,11 @@ HRESULT BeginMethodEnumeration (
 이 메서드 호출은 현재 개체가 클래스 정의 하는 경우에 지원 됩니다. 조작 메서드를 사용할 수 없기 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스를 가리키는 포인터입니다. 지정된 된 인스턴스에 대 한 변형 되지 메서드를 열거 순서는 보장 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)합니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
