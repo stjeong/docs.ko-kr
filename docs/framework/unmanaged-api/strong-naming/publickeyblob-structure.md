@@ -16,17 +16,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fd7a4b19613ea771a055af7dd91ec368859ee191
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 245d9dc6147f4140e823b79c3816b9bc567ad712
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54732689"
 ---
-# <a name="publickeyblob-structure"></a><span data-ttu-id="3118e-102">PublicKeyBlob 구조체</span><span class="sxs-lookup"><span data-stu-id="3118e-102">PublicKeyBlob Structure</span></span>
-<span data-ttu-id="3118e-103">공개/개인 키 쌍의 공개 키를 이진 형식으로 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3118e-103">Represents, in binary format, the public key of a public/private key pair.</span></span>  
+# <a name="publickeyblob-structure"></a><span data-ttu-id="80a78-102">PublicKeyBlob 구조체</span><span class="sxs-lookup"><span data-stu-id="80a78-102">PublicKeyBlob Structure</span></span>
+<span data-ttu-id="80a78-103">공개/개인 키 쌍의 공개 키를 이진 형식으로 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="80a78-103">Represents, in binary format, the public key of a public/private key pair.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3118e-104">구문</span><span class="sxs-lookup"><span data-stu-id="3118e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="80a78-104">구문</span><span class="sxs-lookup"><span data-stu-id="80a78-104">Syntax</span></span>  
   
 ```  
 typedef struct {  
@@ -37,28 +37,28 @@ typedef struct {
 } PublicKeyBlob;   
 ```  
   
-## <a name="members"></a><span data-ttu-id="3118e-105">멤버</span><span class="sxs-lookup"><span data-stu-id="3118e-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="80a78-105">멤버</span><span class="sxs-lookup"><span data-stu-id="80a78-105">Members</span></span>  
   
-|<span data-ttu-id="3118e-106">멤버</span><span class="sxs-lookup"><span data-stu-id="3118e-106">Member</span></span>|<span data-ttu-id="3118e-107">설명</span><span class="sxs-lookup"><span data-stu-id="3118e-107">Description</span></span>|  
+|<span data-ttu-id="80a78-106">멤버</span><span class="sxs-lookup"><span data-stu-id="80a78-106">Member</span></span>|<span data-ttu-id="80a78-107">설명</span><span class="sxs-lookup"><span data-stu-id="80a78-107">Description</span></span>|  
 |------------|-----------------|  
-|`SigAlgId`|<span data-ttu-id="3118e-108">서명 알고리즘에 대 한 식별자 (형식 `ALG_ID`WinCrypt.h에 정의 된 대로) 공개 키입니다.</span><span class="sxs-lookup"><span data-stu-id="3118e-108">The identifier for the signature algorithm (of type `ALG_ID`, as defined in WinCrypt.h) of the public key.</span></span>|  
-|`HashAlgId`|<span data-ttu-id="3118e-109">해시 알고리즘에 대 한 식별자 (형식의 `ALG_ID`WinCrypt.h에 정의 된 대로) 공개 키입니다.</span><span class="sxs-lookup"><span data-stu-id="3118e-109">The identifier for the hash algorithm (of type `ALG_ID`, as defined in WinCrypt.h) of the public key.</span></span>|  
-|`cbPublicKey`|<span data-ttu-id="3118e-110">바이트의 키 길이입니다.</span><span class="sxs-lookup"><span data-stu-id="3118e-110">The length of the key in bytes.</span></span>|  
-|`PublicKey`|<span data-ttu-id="3118e-111">CryptoAPI에 의해 반환 된 형식으로 키 값을 포함 하는 가변 길이 바이트 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="3118e-111">A variable-length byte array that contains the key value in the format returned by the CryptoAPI.</span></span>|  
+|`SigAlgId`|<span data-ttu-id="80a78-108">서명 알고리즘에 대 한 식별자 (형식 `ALG_ID`WinCrypt.h에 정의 된 대로) 공개 키입니다.</span><span class="sxs-lookup"><span data-stu-id="80a78-108">The identifier for the signature algorithm (of type `ALG_ID`, as defined in WinCrypt.h) of the public key.</span></span>|  
+|`HashAlgId`|<span data-ttu-id="80a78-109">해시 알고리즘에 대 한 식별자 (형식의 `ALG_ID`WinCrypt.h에 정의 된 대로) 공개 키입니다.</span><span class="sxs-lookup"><span data-stu-id="80a78-109">The identifier for the hash algorithm (of type `ALG_ID`, as defined in WinCrypt.h) of the public key.</span></span>|  
+|`cbPublicKey`|<span data-ttu-id="80a78-110">바이트의 키 길이입니다.</span><span class="sxs-lookup"><span data-stu-id="80a78-110">The length of the key in bytes.</span></span>|  
+|`PublicKey`|<span data-ttu-id="80a78-111">CryptoAPI에 의해 반환 된 형식으로 키 값을 포함 하는 가변 길이 바이트 배열입니다.</span><span class="sxs-lookup"><span data-stu-id="80a78-111">A variable-length byte array that contains the key value in the format returned by the CryptoAPI.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="3118e-112">설명</span><span class="sxs-lookup"><span data-stu-id="3118e-112">Remarks</span></span>  
- <span data-ttu-id="3118e-113">합니다 `PublicKeyBlob` 구조체를 사용 [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)를 [StrongNameSignatureGeneration](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md), 함수와 다른 강력한 이름 공개/개인 키 쌍의 공개 키를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3118e-113">The `PublicKeyBlob` structure is used by [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md), [StrongNameSignatureGeneration](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md), and other strong name functions to represent the public key of a public/private key pair.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="80a78-112">설명</span><span class="sxs-lookup"><span data-stu-id="80a78-112">Remarks</span></span>  
+ <span data-ttu-id="80a78-113">합니다 `PublicKeyBlob` 구조체를 사용 [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)를 [StrongNameSignatureGeneration](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md), 함수와 다른 강력한 이름 공개/개인 키 쌍의 공개 키를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="80a78-113">The `PublicKeyBlob` structure is used by [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md), [StrongNameSignatureGeneration](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md), and other strong name functions to represent the public key of a public/private key pair.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="3118e-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="3118e-114">Requirements</span></span>  
- <span data-ttu-id="3118e-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3118e-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="80a78-114">요구 사항</span><span class="sxs-lookup"><span data-stu-id="80a78-114">Requirements</span></span>  
+ <span data-ttu-id="80a78-115">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="80a78-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3118e-116">**헤더:** StrongName.h</span><span class="sxs-lookup"><span data-stu-id="3118e-116">**Header:** StrongName.h</span></span>  
+ <span data-ttu-id="80a78-116">**헤더:** StrongName.h</span><span class="sxs-lookup"><span data-stu-id="80a78-116">**Header:** StrongName.h</span></span>  
   
- <span data-ttu-id="3118e-117">**라이브러리:** MsCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="3118e-117">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="80a78-117">**라이브러리:** MsCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="80a78-117">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="3118e-118">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3118e-118">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="80a78-118">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="80a78-118">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3118e-119">참고 항목</span><span class="sxs-lookup"><span data-stu-id="3118e-119">See Also</span></span>  
- [<span data-ttu-id="3118e-120">StrongNameGetPublicKey 함수</span><span class="sxs-lookup"><span data-stu-id="3118e-120">StrongNameGetPublicKey Function</span></span>](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)  
- [<span data-ttu-id="3118e-121">StrongNameSignatureGeneration 함수</span><span class="sxs-lookup"><span data-stu-id="3118e-121">StrongNameSignatureGeneration Function</span></span>](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)  
- [<span data-ttu-id="3118e-122">강력한 이름 지정 구조체</span><span class="sxs-lookup"><span data-stu-id="3118e-122">Strong Naming Structures</span></span>](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)
+## <a name="see-also"></a><span data-ttu-id="80a78-119">참고자료</span><span class="sxs-lookup"><span data-stu-id="80a78-119">See also</span></span>
+- [<span data-ttu-id="80a78-120">StrongNameGetPublicKey 함수</span><span class="sxs-lookup"><span data-stu-id="80a78-120">StrongNameGetPublicKey Function</span></span>](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)
+- [<span data-ttu-id="80a78-121">StrongNameSignatureGeneration 함수</span><span class="sxs-lookup"><span data-stu-id="80a78-121">StrongNameSignatureGeneration Function</span></span>](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)
+- [<span data-ttu-id="80a78-122">강력한 이름 지정 구조체</span><span class="sxs-lookup"><span data-stu-id="80a78-122">Strong Naming Structures</span></span>](https://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)
