@@ -3,16 +3,10 @@ title: .NET Core CLI(명령줄 인터페이스) 도구
 description: .NET Core CLI(명령줄 인터페이스) 도구 및 기능에 대한 개요입니다.
 ms.date: 08/14/2017
 ms.custom: seodec18
-ms.openlocfilehash: 698e6188d2cc73c30a7003f53199065d1eff2ec0
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170200"
 ---
 # <a name="net-core-command-line-interface-cli-tools"></a>.NET Core CLI(명령줄 인터페이스) 도구
 
-.NET Core CLI(명령줄 인터페이스)는 .NET 응용 프로그램 개발에 사용되는 새로운 플랫폼 간 도구 체인입니다. 이 CLI는 IDE(통합 개발 환경), 편집기 및 빌드 Orchestrator와 같은 기타 상위 수준 도구의 기반이 됩니다.
+.NET Core CLI(명령줄 인터페이스)는 .NET 애플리케이션 개발에 사용되는 새로운 플랫폼 간 도구 체인입니다. 이 CLI는 IDE(통합 개발 환경), 편집기 및 빌드 Orchestrator와 같은 기타 상위 수준 도구의 기반이 됩니다.
 
 ## <a name="installation"></a>설치
 
@@ -122,7 +116,7 @@ dotnet /build_output/my_app.dll
 
 ### <a name="driver"></a>드라이버
 
-이 드라이버는 [dotnet](dotnet.md)으로 이름이 지정되며 [프레임워크 종속 앱](../deploying/index.md)을 실행하거나 명령을 실행합니다. `dotnet`이 명령 없이 사용되는 유일한 경우는 응용 프로그램을 시작할 때 사용되는 경우입니다.
+이 드라이버는 [dotnet](dotnet.md)으로 이름이 지정되며 [프레임워크 종속 앱](../deploying/index.md)을 실행하거나 명령을 실행합니다. `dotnet`이 명령 없이 사용되는 유일한 경우는 애플리케이션을 시작할 때 사용되는 경우입니다.
 
 예를 들어 프레임워크 종속 앱을 실행하려면 드라이버 다음에 앱을 지정합니다(예: `dotnet /path/to/my_app.dll`). 앱의 DLL이 있는 폴더에서 명령을 실행할 때는 `dotnet my_app.dll`을 실행하기만 하면 됩니다.
 
@@ -130,7 +124,7 @@ dotnet /build_output/my_app.dll
 
 ### <a name="command-verb"></a>명령("동사")
 
-명령("동사")은 작업을 수행하는 명령일 뿐입니다. 예를 들어 `dotnet build`는 코드를 빌드합니다. `dotnet publish`는 코드를 게시합니다. 명령은 `dotnet {verb}` 규칙을 사용하여 콘솔 응용 프로그램으로 구현됩니다.
+명령("동사")은 작업을 수행하는 명령일 뿐입니다. 예를 들어 `dotnet build`는 코드를 빌드합니다. `dotnet publish`는 코드를 게시합니다. 명령은 `dotnet {verb}` 규칙을 사용하여 콘솔 애플리케이션으로 구현됩니다.
 
 ### <a name="arguments"></a>인수
 
@@ -146,5 +140,5 @@ Preview 2 도구를 사용하여 *project.json* 기반 프로젝트를 생성하
 
 ## <a name="see-also"></a>참고 항목
 
-* [dotnet/CLI GitHub 리포지토리](https://github.com/dotnet/cli/)  
-* [.NET Core 설치 가이드](https://aka.ms/dotnetcoregs)  
+- [dotnet/CLI GitHub 리포지토리](https://github.com/dotnet/cli/)
+- [.NET Core 설치 가이드](https://aka.ms/dotnetcoregs)

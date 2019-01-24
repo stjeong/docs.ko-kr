@@ -1,5 +1,5 @@
 ---
-title: '연습: Visual C#에서 합성 컨트롤 제작'
+title: '연습: Visual C#에서 복합 컨트롤 제작'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - custom controls [C#]
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - user controls [C#]
 - custom controls [Windows Forms], creating
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f
-ms.openlocfilehash: 5f8384140b813400e106ad959684264304541c93
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 6205bea2ccb75078cba507c09f1a4d65571e3418
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580825"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54631700"
 ---
-# <a name="walkthrough-authoring-a-composite-control-with-visual-c"></a>연습: Visual C#에서 합성 컨트롤 제작 #
+# <a name="walkthrough-authoring-a-composite-control-with-visual-c"></a>연습: Visual C#에서 복합 컨트롤 제작 #
 복합 컨트롤은 사용자 지정 그래픽 인터페이스를 만들고 재사용할 수 있는 방법을 제공합니다. 복합 컨트롤은 기본적으로 시각적 표현이 있는 구성 요소입니다. 따라서 사용자 입력의 유효성을 검사하고 표시 속성을 수정하거나 작성자가 요구하는 다른 작업을 수행하여 기능을 확장할 수 있는 하나 이상의 Windows Forms 컨트롤, 구성 요소 또는 코드 블록으로 구성할 수 있습니다. 복합 컨트롤은 다른 컨트롤과 동일한 방식으로 Windows Forms에 배치할 수 있습니다. 이 연습의 첫 번째 부분에서는 `ctlClock`이라는 간단한 복합 컨트롤을 만듭니다. 두 번째 부분에서는 상속을 통해 `ctlClock`의 기능을 확장합니다.  
   
 > [!NOTE]
@@ -146,7 +146,7 @@ ms.locfileid: "48580825"
 4.  **파일** 메뉴에서 **모두 저장**을 클릭하여 프로젝트를 저장합니다.  
   
 ## <a name="testing-the-control"></a>컨트롤 테스트  
- 컨트롤은 독립 실행형 응용 프로그램이 아니며 컨테이너에서 호스팅해야 합니다. 컨트롤의 런타임 동작을 테스트하고 **UserControl 테스트 컨테이너**로 해당 속성을 실행합니다. 자세한 내용은 [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)를 참조하세요.  
+ 컨트롤은 독립 실행형 애플리케이션이 아니며 컨테이너에서 호스팅해야 합니다. 컨트롤의 런타임 동작을 테스트하고 **UserControl 테스트 컨테이너**로 해당 속성을 실행합니다. 자세한 내용은 [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)합니다.  
   
 #### <a name="to-test-your-control"></a>컨트롤을 테스트하려면  
   
@@ -341,7 +341,7 @@ ms.locfileid: "48580825"
 5.  **파일** 메뉴에서 **모두 저장**을 클릭하여 프로젝트를 저장합니다.  
   
 ### <a name="using-the-inherited-control-on-a-form"></a>폼에서 상속된 컨트롤 사용  
- 기본 클래스 컨트롤 `ctlClock`을 테스트했던 것과 같은 방법으로 상속된 컨트롤을 테스트할 수 있습니다. F5 키를 눌러 프로젝트를 빌드하고 **UserControl 테스트 컨테이너**에서 컨트롤을 실행합니다. 자세한 내용은 [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)를 참조하세요.  
+ 상속 된 컨트롤의 기본 클래스 컨트롤을 테스트 동일한 방식으로 테스트할 수 있습니다 `ctlClock`: F5 키를 눌러 프로젝트를 빌드하고 **UserControl 테스트 컨테이너**에서 컨트롤을 실행합니다. 자세한 내용은 [방법: UserControl의 런타임 동작 테스트](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)합니다.  
   
  사용할 컨트롤을 배치하려면 폼에서 컨트롤을 호스트해야 합니다. 표준 복합 컨트롤과 마찬가지로 상속된 복합 컨트롤은 독립 실행형으로 사용할 수 없으며 폼 또는 다른 컨테이너에서 호스트해야 합니다. `ctlAlarmClock`은 보다 심도 있는 기능을 포함하므로 테스트하려면 추가 코드가 필요합니다. 이 프로시저에서는 `ctlAlarmClock`의 기능을 테스트하는 간단한 프로그램을 작성합니다. `ctlAlarmClock`의 `AlarmTime` 속성을 설정하고 표시하는 코드를 작성하고 고유한 기능을 테스트합니다.  
   
@@ -349,7 +349,7 @@ ms.locfileid: "48580825"
   
 1.  솔루션 탐색기에서 **ctlClockLib**를 마우스 오른쪽 단추로 클릭한 후 **빌드**를 클릭합니다.  
   
-2.  솔루션에 새 **Windows 응용 프로그램** 프로젝트를 추가하고 이름을 `Test`로 지정합니다.  
+2.  솔루션에 새 **Windows 애플리케이션** 프로젝트를 추가하고 이름을 `Test`로 지정합니다.  
   
 3.  솔루션 탐색기에서 테스트 프로젝트에 대한 **참조** 노드를 마우스 오른쪽 단추로 클릭합니다. **참조 추가** 대화 상자를 표시하려면 **참조 추가**를 클릭합니다. **프로젝트**로 레이블이 지정된 탭을 클릭합니다. `ctlClockLib` 프로젝트가 **프로젝트 이름** 아래에 나열됩니다. 프로젝트를 두 번 클릭하여 테스트 프로젝트에 참조를 추가합니다.  
   
@@ -404,9 +404,9 @@ ms.locfileid: "48580825"
   
      이 연습에서 여러 가지 주요 개념을 살펴보았습니다. 컨트롤 및 구성 요소를 복합 컨트롤 컨테이너에 결합하여 복합 컨트롤을 만드는 방법을 배웠습니다. 컨트롤에 속성을 추가하고 사용자 지정 기능을 작성하는 코드를 작성하는 방법도 알아봤습니다. 마지막 섹션에서는 상속성을 통해 지정된 복합 컨트롤의 기능을 확장하고 해당 메서드를 재정의하여 호스트 메서드의 기능을 수정해보았습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [사용자 지정 컨트롤의 종류](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)  
- [구성 요소를 사용한 프로그래밍](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)  
- [구성 요소 제작 연습](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)  
- [방법: 도구 상자 항목 선택 대화 상자에 컨트롤 표시](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)  
- [연습: Visual C#을 사용하여 Windows Forms 컨트롤에서 상속](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+## <a name="see-also"></a>참고자료
+- [사용자 지정 컨트롤의 종류](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+- [구성 요소를 사용한 프로그래밍](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)
+- [구성 요소 제작 연습](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)
+- [방법: 컨트롤에 표시 된 도구 상자 항목 선택 대화 상자](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
+- [연습: 시각적 개체를 사용 하 여 Windows Forms 컨트롤에서 상속C#](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

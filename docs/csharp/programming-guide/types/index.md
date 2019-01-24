@@ -1,23 +1,17 @@
 ---
-title: 형식 - C# 프로그래밍 가이드
+title: '형식 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-- value types [C#]
-- reference types [C#]
-- types [C#]
-- C# language, data types
-- common type system [C#]
-- data types [C#]
-- C# language, types
-- strong typing [C#]
+  - 'value types [C#]'
+  - 'reference types [C#]'
+  - 'types [C#]'
+  - 'C# language, data types'
+  - 'common type system [C#]'
+  - 'data types [C#]'
+  - 'C# language, types'
+  - 'strong typing [C#]'
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: 74362642a57bcdffc51a447ef044dc899cc83b71
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237223"
 ---
 # <a name="types-c-programming-guide"></a>형식(C# 프로그래밍 가이드)
 ## <a name="types-variables-and-values"></a>형식, 변수 및 값  
@@ -186,7 +180,7 @@ stringList.Add(4);
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [XML 데이터 형식 변환](../../../standard/data/xml/conversion-of-xml-data-types.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [XML 데이터 형식 변환](../../../standard/data/xml/conversion-of-xml-data-types.md)
 - [정수 계열 형식 표](../../../csharp/language-reference/keywords/integral-types-table.md)

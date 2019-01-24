@@ -1,22 +1,16 @@
 ---
-title: 시작 - C# 가이드
-description: '기초 C # 개념을 빨리 배우고 .NET Core 응용 프로그램을 작성할 수 있는 짧고 간단한 자습서를 찾아보세요.'
+title: '시작 - C# 가이드'
+description: '기초 C # 개념을 빨리 배우고 .NET Core 애플리케이션을 작성할 수 있는 짧고 간단한 자습서를 찾아보세요.'
 helpviewer_keywords:
-- Visual C#, getting started
-- getting started, Visual C#
+  - 'Visual C#, getting started'
+  - 'getting started, Visual C#'
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
-ms.openlocfilehash: 73bf7ca1f05bd388239d970fcc6e33bf30810111
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48837895"
 ---
 # <a name="get-started-with-c"></a>C\# 시작
 
-이 섹션에서는 C# 및 .NET Core를 사용하여 응용 프로그램을 빠르게 빌드할 수 있는 짧고 간단한 자습서를 제공합니다. Visual Studio 2017 및 Visual Studio Code에 대한 시작 항목이 제공됩니다. 간단한 Hello World 응용 프로그램을 빌드할 수도 있고, Visual Studio 2017을 사용하는 경우에는 다른 응용 프로그램에서 사용할 수 있는 간단한 클래스 라이브러리를 빌드할 수 있습니다.
+이 섹션에서는 C# 및 .NET Core를 사용하여 애플리케이션을 빠르게 빌드할 수 있는 짧고 간단한 자습서를 제공합니다. Visual Studio 2017 및 Visual Studio Code에 대한 시작 항목이 제공됩니다. 간단한 Hello World 애플리케이션을 빌드할 수도 있고, Visual Studio 2017을 사용하는 경우에는 다른 애플리케이션에서 사용할 수 있는 간단한 클래스 라이브러리를 빌드할 수 있습니다.
 
 다음 항목을 사용할 수 있습니다.
 
@@ -24,21 +18,21 @@ ms.locfileid: "48837895"
 
      C# 언어 및 .NET에 대해 간략히 설명합니다.
 
-* [Visual Studio 2017 RC에서 .NET Core를 사용하여 C# Hello World 응용 프로그램 빌드](../../core/tutorials/with-visual-studio.md)
+* [Visual Studio 2017 RC에서 .NET Core를 사용하여 C# Hello World 애플리케이션 빌드](../../core/tutorials/with-visual-studio.md)
 
-   Visual Studio의 최신 릴리스인 Visual Studio 2017을 사용하면 Windows용 통합 개발 환경에서 응용 프로그램을 코딩, 컴파일, 실행, 디버그, 프로파일링 및 게시할 수 있습니다.
+   Visual Studio의 최신 릴리스인 Visual Studio 2017을 사용하면 Windows용 통합 개발 환경에서 애플리케이션을 코딩, 컴파일, 실행, 디버그, 프로파일링 및 게시할 수 있습니다.
 
-   이 항목에서는 간단한 Hello World 응용 프로그램을 만들어 실행한 다음, 좀 더 대화형 기능이 강화된 Hello World 응용 프로그램을 실행하도록 수정할 수 있습니다. 응용 프로그램의 빌드 및 실행이 끝나면 .NET Core에서 지원하는 모든 플랫폼에서 실행할 수 있도록 [디버그](../../core/tutorials/debugging-with-visual-studio.md)하는 방법과 [게시](../../core/tutorials/publishing-with-visual-studio.md)하는 방법을 익힙니다.
+   이 항목에서는 간단한 Hello World 애플리케이션을 만들어 실행한 다음, 좀 더 대화형 기능이 강화된 Hello World 애플리케이션을 실행하도록 수정할 수 있습니다. 애플리케이션의 빌드 및 실행이 끝나면 .NET Core에서 지원하는 모든 플랫폼에서 실행할 수 있도록 [디버그](../../core/tutorials/debugging-with-visual-studio.md)하는 방법과 [게시](../../core/tutorials/publishing-with-visual-studio.md)하는 방법을 익힙니다.
 
 * [Visual Studio 2017에서 C# 및 .NET Core로 클래스 라이브러리 빌드](../../core/tutorials/library-with-visual-studio.md)
 
-   클래스 라이브러리를 사용하면 다른 응용 프로그램에서 호출할 수 있는 형식 및 형식 멤버를 정의할 수 있습니다. 이 항목에서는 문자열이 대문자로 시작되는지 여부를 결정하는 단일 메서드로 클래스 라이브러리를 만들 수 있습니다. 라이브러리 빌드를 마친 후에는 [단위 테스트](../../core/tutorials/testing-library-with-visual-studio.md)를 개발하여 라이브러리가 예상대로 작동하는지 확인하고 [사용하려는 응용 프로그램](../../core/tutorials/consuming-library-with-visual-studio.md)에서 사용 가능하게 만들 수 있습니다.
+   클래스 라이브러리를 사용하면 다른 애플리케이션에서 호출할 수 있는 형식 및 형식 멤버를 정의할 수 있습니다. 이 항목에서는 문자열이 대문자로 시작되는지 여부를 결정하는 단일 메서드로 클래스 라이브러리를 만들 수 있습니다. 라이브러리 빌드를 마친 후에는 [단위 테스트](../../core/tutorials/testing-library-with-visual-studio.md)를 개발하여 라이브러리가 예상대로 작동하는지 확인하고 [사용하려는 애플리케이션](../../core/tutorials/consuming-library-with-visual-studio.md)에서 사용 가능하게 만들 수 있습니다.
 
 * [C# 및 Visual Studio Code 시작](../../core/tutorials/with-visual-studio-code.md)
 
-   Visual Studio Code는 현대적인 웹 및 클라우드 응용 프로그램을 빌드 및 디버깅하기 위해 최적화된 강력한 코드 편집기입니다. IntelliSense를 지원하고 Windows, macOS, Linux에 사용할 수 있습니다.
+   Visual Studio Code는 현대적인 웹 및 클라우드 애플리케이션을 빌드 및 디버깅하기 위해 최적화된 강력한 코드 편집기입니다. IntelliSense를 지원하고 Windows, macOS, Linux에 사용할 수 있습니다.
 
-   이 항목에서는 Visual Studio Code 및 .NET Core를 사용하여 간단한 Hello World 응용 프로그램을 만들고 실행하는 방법을 보여 줍니다.
+   이 항목에서는 Visual Studio Code 및 .NET Core를 사용하여 간단한 Hello World 애플리케이션을 만들고 실행하는 방법을 보여 줍니다.
 
 ## <a name="related-sections"></a>관련 단원
 
@@ -64,4 +58,4 @@ ms.locfileid: "48837895"
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio를 사용하여 Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+- [Visual Studio를 사용하여 Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

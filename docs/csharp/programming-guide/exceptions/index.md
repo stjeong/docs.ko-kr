@@ -1,21 +1,15 @@
 ---
-title: 예외 및 예외 처리 - C# 프로그래밍 가이드
+title: '예외 및 예외 처리 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-- exception handling [C#]
-- exceptions [C#]
-- C# language, exceptions
+  - 'exception handling [C#]'
+  - 'exceptions [C#]'
+  - 'C# language, exceptions'
 ms.assetid: 0001887f-4fa2-47e2-8034-2819477e2344
-ms.openlocfilehash: a617e8921bed3bb4513ecce738064d502af7995b
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236845"
 ---
 # <a name="exceptions-and-exception-handling-c-programming-guide"></a>예외 및 예외 처리(C# 프로그래밍 가이드)
-C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하는 예기치 않은 문제나 예외 상황을 처리하는 데 도움이 됩니다. 예외 처리는 `try`, `catch` 및 `finally` 키워드를 사용하여 실패했을 수 있는 작업을 시도하고, 실패를 처리하는 것이 적절하다고 판단될 때 처리하고, 리소스를 정리합니다. 예외는 CLR(공용 언어 런타임), .NET Framework, 타사 라이브러리 또는 응용 프로그램 코드에서 생성될 수 있습니다. 예외는 `throw` 키워드를 사용하여 생성됩니다.  
+C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하는 예기치 않은 문제나 예외 상황을 처리하는 데 도움이 됩니다. 예외 처리는 `try`, `catch` 및 `finally` 키워드를 사용하여 실패했을 수 있는 작업을 시도하고, 실패를 처리하는 것이 적절하다고 판단될 때 처리하고, 리소스를 정리합니다. 예외는 CLR(공용 언어 런타임), .NET Framework, 타사 라이브러리 또는 애플리케이션 코드에서 생성될 수 있습니다. 예외는 `throw` 키워드를 사용하여 생성됩니다.  
   
  대부분의 경우 코드에서 직접 호출한 메서드가 아니라 호출 스택에서 추가로 작동 중단된 다른 메서드에 의해 예외가 throw될 수 있습니다. 이 경우 CLR에서는 스택을 해제하고 특정 예외 형식에 대해 `catch` 블록이 있는 메서드를 찾은 다음 이러한 `catch` 블록을 먼저 실행합니다. 호출 스택에서 적절한 `catch` 블록을 찾지 못하면 프로세스를 종료하고 사용자에게 메시지를 표시합니다.  
   
@@ -34,7 +28,7 @@ C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하
   
 -   지정된 예외에 대한 예외 처리기가 없으면 프로그램은 오류 메시지를 나타내며 실행을 중지합니다.  
   
--   예외를 처리하고 응용 프로그램을 알려진 상태로 둘 수 없으면 예외를 catch하지 마세요. `System.Exception`을 catch하는 경우 `catch` 블록 끝에서 `throw` 키워드를 사용하여 다시 throw하세요.  
+-   예외를 처리하고 애플리케이션을 알려진 상태로 둘 수 없으면 예외를 catch하지 마세요. `System.Exception`을 catch하는 경우 `catch` 블록 끝에서 `throw` 키워드를 사용하여 다시 throw하세요.  
   
 -   `catch` 블록이 예외 변수를 정의하는 경우 이 변수를 사용하여 발생한 예외 형식에 대한 추가 정보를 얻을 수 있습니다.  
   
@@ -67,11 +61,11 @@ C# 언어의 예외 처리 기능은 프로그램이 실행 중일 때 발생하
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.SystemException>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [C# 키워드](../../../csharp/language-reference/keywords/index.md)  
-- [throw](../../../csharp/language-reference/keywords/throw.md)  
-- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
-- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
-- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
-- [예외](../../../standard/exceptions/index.md)  
+- <xref:System.SystemException>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [C# 키워드](../../../csharp/language-reference/keywords/index.md)
+- [throw](../../../csharp/language-reference/keywords/throw.md)
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+- [예외](../../../standard/exceptions/index.md)

@@ -5,12 +5,6 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 12/03/2018
 ms.custom: seodec18
-ms.openlocfilehash: bb520d852462b0bc12df46fd178d09da36b7ccfe
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54415691"
 ---
 # <a name="net-core-application-deployment"></a>.NET Core 애플리케이션 배포
 
@@ -98,7 +92,7 @@ CLI 도구를 사용하여 .NET Core 앱을 배포하는 방법을 보여 주는
 
 ## <a name="see-also"></a>참고 항목
 
-* [CLI 도구를 사용하여 .NET Core 앱 배포](deploy-with-cli.md)
-* [Visual Studio를 사용하여 .NET Core 앱 배포](deploy-with-vs.md)
-* [패키지, 메타패키지 및 프레임워크](../packages.md)
-* [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)
+- [CLI 도구를 사용하여 .NET Core 앱 배포](deploy-with-cli.md)
+- [Visual Studio를 사용하여 .NET Core 앱 배포](deploy-with-vs.md)
+- [패키지, 메타패키지 및 프레임워크](../packages.md)
+- [.NET Core RID(런타임 식별자) 카탈로그](../rid-catalog.md)

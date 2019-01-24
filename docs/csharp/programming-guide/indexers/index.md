@@ -1,19 +1,13 @@
 ---
-title: 인덱서 - C# 프로그래밍 가이드
+title: '인덱서 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 03/10/2017
 f1_keywords:
-- cs.indexers
+  - cs.indexers
 helpviewer_keywords:
-- indexers [C#]
-- C# language, indexers
+  - 'indexers [C#]'
+  - 'C# language, indexers'
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
-ms.openlocfilehash: 1b3dd16cf4c12dca0bc155c478c187047caf4c25
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236585"
 ---
 # <a name="indexers-c-programming-guide"></a>인덱서(C# 프로그래밍 가이드)
 
@@ -70,5 +64,5 @@ C# 7.0부터 get 및 set 접근자 모두를 식 본문 멤버로 구현할 수 
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [속성](../../../csharp/programming-guide/classes-and-structs/properties.md)

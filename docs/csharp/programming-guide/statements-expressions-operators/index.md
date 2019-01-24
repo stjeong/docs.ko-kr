@@ -1,24 +1,18 @@
 ---
-title: 문, 식, 연산자 - C# 프로그래밍 가이드
+title: '문, 식, 연산자 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-- expressions [C#]
-- operators [C#]
-- C# language, statements
-- C# language, operators
-- C# language, expressions
-- statements [C#]
+  - 'expressions [C#]'
+  - 'operators [C#]'
+  - 'C# language, statements'
+  - 'C# language, operators'
+  - 'C# language, expressions'
+  - 'statements [C#]'
 ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
-ms.openlocfilehash: 1bb710637922e8fee09fd9424cddd1170cb495c4
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53237209"
 ---
 # <a name="statements-expressions-and-operators-c-programming-guide"></a>문, 식, 연산자(C# 프로그래밍 가이드)
-응용 프로그램을 구성하는 C# 코드는 키워드, 식, 연산자가 포함된 문으로 구성됩니다. 이 섹션에서는 C# 프로그램의 이러한 기본 요소에 대한 정보를 소개합니다.  
+애플리케이션을 구성하는 C# 코드는 키워드, 식, 연산자가 포함된 문으로 구성됩니다. 이 섹션에서는 C# 프로그램의 이러한 기본 요소에 대한 정보를 소개합니다.  
   
  자세한 내용은 다음을 참조하세요.  
   
@@ -47,5 +41,5 @@ ms.locfileid: "53237209"
   
 ## <a name="see-also"></a>참고 항목
 
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
 - [캐스팅 및 형식 변환](../../../csharp/programming-guide/types/casting-and-type-conversions.md)

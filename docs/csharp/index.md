@@ -1,19 +1,13 @@
 ---
-title: C# 가이드
-description: 새 개발자이든 숙련된 전문가이든, C# 가이드를 통해 C#에 관한 폭넓은 지식을 얻는 방법을 알아봅니다.
+title: 'C# 가이드'
+description: '새 개발자이든 숙련된 전문가이든, C# 가이드를 통해 C#에 관한 폭넓은 지식을 얻는 방법을 알아봅니다.'
 ms.date: 01/30/2018
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 helpviewer_keywords:
-- documentation [C#]
-- Help, Visual C# documentation
-- C# language
-- Visual C#
-ms.openlocfilehash: 5b0f3cc4a090e3479489285631a8d13b8b134c56
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145662"
+  - 'documentation [C#]'
+  - 'Help, Visual C# documentation'
+  - 'C# language'
+  - 'Visual C#'
 ---
 # <a name="c-guide"></a>C# 가이드
 
@@ -66,6 +60,6 @@ C# 가이드에는 여러 섹션이 있습니다. 순서대로 읽거나 가장 
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
-* [.NET 가이드](../standard/index.md)  
-* [C# 샘플](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)  
+- [Visual C# 및 Visual Basic 시작](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+- [.NET 가이드](../standard/index.md)
+- [C# 샘플](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)

@@ -1,18 +1,12 @@
 ---
-title: C# 전처리기 지시문
+title: 'C# 전처리기 지시문'
 ms.date: 07/20/2015
 f1_keywords:
-- cs.preprocessor
+  - cs.preprocessor
 helpviewer_keywords:
-- preprocessor directives [C#]
-- keywords [C#], preprocessor directives
+  - 'preprocessor directives [C#]'
+  - 'keywords [C#], preprocessor directives'
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
-ms.openlocfilehash: 1c0a97cabce347be0bc9367f3d090a1fc699db19
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48036099"
 ---
 # <a name="c-preprocessor-directives"></a>C# 전처리기 지시문
 이 단원에서는 다음 C# 전처리기 지시문에 대한 정보를 제공합니다.
@@ -40,5 +34,5 @@ ms.locfileid: "48036099"
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 참조](../../../csharp/language-reference/index.md)  
+- [C# 참조](../../../csharp/language-reference/index.md)
 - [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)

@@ -4,16 +4,11 @@ description: 이 문서에서는 .NET Core SDK 및 런타임의 버전 관리 �
 author: bleroy
 ms.date: 07/26/2018
 ms.custom: seodec18
-ms.openlocfilehash: e4ab5e3a6dd487437e267aec042639c70fdc61ad
-ms.sourcegitcommit: 8598d446303b545eed2d520a6ccd061c1a7d00cb
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53334810"
 ---
+
 # <a name="overview-of-how-net-core-is-versioned"></a>.NET Core의 버전 관리 방법 개요
 
-.NET core는 응용 프로그램을 개발하는 데 필요한 도구를 포함하는 .NET Core 런타임 및 .NET Core SDK를 가리킵니다. .NET Core SDK는 이전 버전의 .NET Core 런타임에서 작동하도록 설계되었습니다. 이 문서에서는 런타임 및 SDK 버전 전략을 설명합니다. .NET Standard의 버전 번호에 대한 설명은 [.NET Standard](../../standard/net-standard.md#net-implementation-support)를 소개하는 문서에 있습니다.
+.NET core는 애플리케이션을 개발하는 데 필요한 도구를 포함하는 .NET Core 런타임 및 .NET Core SDK를 가리킵니다. .NET Core SDK는 이전 버전의 .NET Core 런타임에서 작동하도록 설계되었습니다. 이 문서에서는 런타임 및 SDK 버전 전략을 설명합니다. .NET Standard의 버전 번호에 대한 설명은 [.NET Standard](../../standard/net-standard.md#net-implementation-support)를 소개하는 문서에 있습니다.
 
 .NET Core 런타임 및.NET Core SDK는 다른 속도로 새 기능을 추가합니다. 일반적으로 .NET Core SDK는 .NET Core 런타임이 프로덕션 환경에서 사용하는 런타임을 변경하는 것보다 신속하게 업데이트된 도구를 제공합니다.
 
@@ -21,7 +16,7 @@ ms.locfileid: "53334810"
 
 ".NET Core 2.1"은 .NET Core 런타임 버전 번호를 가리킵니다. .NET Core 런타임에는 [유의적 버전](#semantic-versioning)을 따르는 버전 관리에 대한 주/부/패치 접근 방식이 있습니다.
 
-.NET Core SDK는 유의적 버전을 따르지 않습니다. .NET Core SDK는 더 빠르게 릴리스되며 해당 버전은 정렬된 런타임과 SDK의 자체 보조 및 패치 릴리스 모두를 전달해야 합니다. .NET Core SDK 버전의 처음 두 위치는 릴리스된 .NET Core 런타임에 고정되어 있습니다. SDK의 각 버전은 이 런타임 또는 다른 하위 버전에 대한 응용 프로그램을 만들 수 있습니다.
+.NET Core SDK는 유의적 버전을 따르지 않습니다. .NET Core SDK는 더 빠르게 릴리스되며 해당 버전은 정렬된 런타임과 SDK의 자체 보조 및 패치 릴리스 모두를 전달해야 합니다. .NET Core SDK 버전의 처음 두 위치는 릴리스된 .NET Core 런타임에 고정되어 있습니다. SDK의 각 버전은 이 런타임 또는 다른 하위 버전에 대한 애플리케이션을 만들 수 있습니다.
 
 SDK 버전 번호의 세 번째 위치는 보조 및 패치 번호를 모두 전달합니다. 부 버전에는 100이 곱해집니다. 부 버전 1, 패치 버전 2는 102로 표시됩니다. 마지막 두 자리는 패치 번호를 나타냅니다. 예를 들어 .NET Core 2.2의 릴리스에서는 다음 표와 같은 릴리스를 만들 수 있습니다.
 
@@ -106,8 +101,8 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 ## <a name="see-also"></a>참고 항목
 
-* [대상 프레임워크](../../standard/frameworks.md)  
-* [.NET Core 배포 패키징](../build/distribution-packaging.md)  
-* [.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)(.NET Core 지원 수명 주기 팩트 시트)  
-* [.NET Core 2+ 버전 바인딩](https://github.com/dotnet/designs/issues/3)  
-* [.NET Core용 Docker 이미지](https://hub.docker.com/r/microsoft/dotnet/)
+- [대상 프레임워크](../../standard/frameworks.md)
+- [.NET Core 배포 패키징](../build/distribution-packaging.md)
+- [.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)(.NET Core 지원 수명 주기 팩트 시트)
+- [.NET Core 2+ 버전 바인딩](https://github.com/dotnet/designs/issues/3)
+- [.NET Core용 Docker 이미지](https://hub.docker.com/r/microsoft/dotnet/)

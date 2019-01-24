@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TileBrush [WPF]
 - brushes [WPF], TileBrush
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
-ms.openlocfilehash: e590732419396660221aa781e3c333311b6e88b4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9058c6c3256efad15e0811fcc1f21f440e13edbf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43505141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54683023"
 ---
 # <a name="tilebrush-overview"></a>TileBrush 개요
 <xref:System.Windows.Media.TileBrush> 개체를 사용 하면 다양 한 이미지를 사용 하 여 영역을 그리는 방법에 대 한 제어를 사용 하 여 얻게 <xref:System.Windows.Media.Drawing>, 또는 <xref:System.Windows.Media.Visual>합니다. 이 항목에서는 사용 하는 방법에 설명 합니다 <xref:System.Windows.Media.TileBrush> 더 잘 제어 하는 방법에 대 한 기능을 <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, 또는 <xref:System.Windows.Media.VisualBrush> 영역을 그립니다.  
@@ -104,11 +104,11 @@ TileMode가 Tile인 TileBrush의 구성 요소
   
 -   <xref:System.Windows.Media.TileMode.Tile>: 기본 타일이 그려지고 나머지 영역은 반복 하 여 기본 타일 한 타일의 오른쪽 가장자리는 다음의 왼쪽된 가장자리에 인접 한 마찬가지로 아래 및 위의 채워집니다.  
   
--   <xref:System.Windows.Media.TileMode.FlipX>와 동일: <xref:System.Windows.Media.TileMode.Tile>, 타일의 대체 열이 좌우로 있지만.  
+-   <xref:System.Windows.Media.TileMode.FlipX>: 동일 <xref:System.Windows.Media.TileMode.Tile>, 타일의 대체 열이 좌우로 있지만.  
   
--   <xref:System.Windows.Media.TileMode.FlipY>와 동일: <xref:System.Windows.Media.TileMode.Tile>, 타일의 대체 행이 상하로 있지만.  
+-   <xref:System.Windows.Media.TileMode.FlipY>: 동일 <xref:System.Windows.Media.TileMode.Tile>, 타일의 대체 행이 상하로 있지만.  
   
--   <xref:System.Windows.Media.TileMode.FlipXY>: 조합을 <xref:System.Windows.Media.TileMode.FlipX> 고 <xref:System.Windows.Media.TileMode.FlipY>입니다.  
+-   <xref:System.Windows.Media.TileMode.FlipXY>: <xref:System.Windows.Media.TileMode.FlipX> 및 <xref:System.Windows.Media.TileMode.FlipY>의 조합입니다.  
   
  다음 이미지는 여러 다른 바둑판식 배열 모드를 보여 줍니다.  
   
@@ -121,13 +121,13 @@ TileMode가 Tile인 TileBrush의 구성 요소
  [!code-csharp[BrushOverviewExamples_procedural_snip#GraphicsMMFlipXYExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/CSharp/TilingExample.cs#graphicsmmflipxyexample)]
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMFlipXYExample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/tilingexample.vb#graphicsmmflipxyexample)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.ImageBrush>  
- <xref:System.Windows.Media.DrawingBrush>  
- <xref:System.Windows.Media.VisualBrush>  
- <xref:System.Windows.Media.TileBrush>  
- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)  
- [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [ImageBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160005)  
- [VisualBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160049)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.ImageBrush>
+- <xref:System.Windows.Media.DrawingBrush>
+- <xref:System.Windows.Media.VisualBrush>
+- <xref:System.Windows.Media.TileBrush>
+- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)
+- [Freezable 개체 개요](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [ImageBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160005)
+- [VisualBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160049)

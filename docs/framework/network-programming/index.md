@@ -2,20 +2,14 @@
 title: .NET Framework의 네트워크 프로그래밍
 ms.date: 03/30/2017
 helpviewer_keywords:
-- Networking
-- Internet
-- Internet, .NET Framework Internet services
-- Network Resources
+  - Networking
+  - Internet
+  - 'Internet, .NET Framework Internet services'
+  - Network Resources
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
-ms.openlocfilehash: 1d35951aef3692d82bdfa648df48eb8c1bca88ff
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188081"
 ---
 # <a name="network-programming-in-the-net-framework"></a>.NET Framework의 네트워크 프로그래밍
-Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합할 수 있는 계층적이고 확장 가능하며 관리되는 인터넷 서비스 구현을 제공합니다. 네트워크 응용 프로그램은 플러그 가능한 프로토콜을 바탕으로 빌드하여 새 인터넷 프로토콜을 자동으로 이용하거나, Windows 소켓 인터페이스의 관리되는 구현을 사용하여 소켓 수준에서 네트워크 작업을 수행할 수 있습니다.  
+Microsoft .NET Framework는 더 빠르고 쉽게 애플리케이션에 통합할 수 있는 계층적이고 확장 가능하며 관리되는 인터넷 서비스 구현을 제공합니다. 네트워크 애플리케이션은 플러그 가능한 프로토콜을 바탕으로 빌드하여 새 인터넷 프로토콜을 자동으로 이용하거나, Windows 소켓 인터페이스의 관리되는 구현을 사용하여 소켓 수준에서 네트워크 작업을 수행할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
 
@@ -28,26 +22,26 @@ Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합�
  [플러그형 프로토콜 프로그래밍](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
  플러그 가능한 프로토콜을 구현하기 위한 프로토콜별 클래스를 파생하는 방법을 설명합니다.  
   
- [응용 프로그램 프로토콜 사용](../../../docs/framework/network-programming/using-application-protocols.md)  
- TCP, UDP, HTTP와 같은 네트워크 프로토콜을 이용하는 프로그래밍 응용 프로그램을 설명합니다.  
+ [애플리케이션 프로토콜 사용](../../../docs/framework/network-programming/using-application-protocols.md)  
+ TCP, UDP, HTTP와 같은 네트워크 프로토콜을 이용하는 프로그래밍 애플리케이션을 설명합니다.  
   
  [인터넷 프로토콜 버전 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
  현재 버전의 인터넷 프로토콜 모음(IPv4)에 비해 인터넷 프로토콜 버전 6(IPv6)이 지닌 장점을 설명하고, IPv6 주소 지정, 라우팅 및 자동 구성, IPv6을 사용하거나 사용하지 않는 방법을 설명합니다.  
   
- [인터넷 응용 프로그램 구성](../../../docs/framework/network-programming/configuring-internet-applications.md)  
- .NET Framework 구성 파일을 사용하여 인터넷 응용 프로그램을 구성하는 방법을 설명합니다.  
+ [인터넷 애플리케이션 구성](../../../docs/framework/network-programming/configuring-internet-applications.md)  
+ .NET Framework 구성 파일을 사용하여 인터넷 애플리케이션을 구성하는 방법을 설명합니다.  
   
  [.NET Framework의 네트워크 추적](../../../docs/framework/network-programming/network-tracing.md)  
- 네트워크 추적을 사용하여 메서드 호출과 관리되는 응용 프로그램에서 생성되는 네트워크 트래픽에 대한 정보를 얻는 방법을 설명합니다.  
+ 네트워크 추적을 사용하여 메서드 호출과 관리되는 애플리케이션에서 생성되는 네트워크 트래픽에 대한 정보를 얻는 방법을 설명합니다.  
   
- [네트워크 응용 프로그램에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
- <xref:System.Net.WebClient?displayProperty=nameWithType>, <xref:System.Net.WebRequest?displayProperty=nameWithType>및 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> 클래스를 사용하는 응용 프로그램에 대한 캐싱을 사용하는 방법을 설명합니다.  
+ [네트워크 애플리케이션에 대한 캐시 관리](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
+ <xref:System.Net.WebClient?displayProperty=nameWithType>, <xref:System.Net.WebRequest?displayProperty=nameWithType>및 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> 클래스를 사용하는 애플리케이션에 대한 캐싱을 사용하는 방법을 설명합니다.  
   
  [네트워크 프로그래밍의 보안](../../../docs/framework/network-programming/security-in-network-programming.md)  
  표준 인터넷 보안 및 인증 기술을 사용하는 방법을 설명합니다.  
   
  [System.Net 클래스에 대한 모범 사례](../../../docs/framework/network-programming/best-practices-for-system-net-classes.md)  
- 인터넷 응용 프로그램을 최대한 활용하기 위한 팁과 트릭을 제공합니다.  
+ 인터넷 애플리케이션을 최대한 활용하기 위한 팁과 트릭을 제공합니다.  
   
  [프록시를 통해 인터넷 액세스](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
  프록시를 구성하는 방법을 설명합니다.  
@@ -62,7 +56,7 @@ Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합�
  IRI(International Resource Identifier) 및 IDN(Internationalized Domain Name) 지원을 위해 버전 3.5, 3.0 SP1 및 2.0 SP1에서 <xref:System.Uri?displayProperty=nameWithType> 클래스에 대해 강화된 기능을 설명합니다.  
   
  [버전 3.5의 소켓 성능 향상](../../../docs/framework/network-programming/socket-performance-enhancements-in-version-3-5.md)  
- 버전 3.5, 3.0 SP1 및 2.0 SP1에서 <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> 클래스에 대해 강화된 여러 가지 기능을 설명하며, 이런 기능에서는 특수화된 고성능 소켓 응용 프로그램에서 사용할 수 있는 대체 비동기 패턴을 제공합니다.  
+ 버전 3.5, 3.0 SP1 및 2.0 SP1에서 <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> 클래스에 대해 강화된 여러 가지 기능을 설명하며, 이런 기능에서는 특수화된 고성능 소켓 애플리케이션에서 사용할 수 있는 대체 비동기 패턴을 제공합니다.  
   
  [피어 이름 확인 프로토콜](../../../docs/framework/network-programming/peer-name-resolution-protocol.md)  
  버전 3.5에서 PNRP(Peer Name Resolution Protocol), 서버가 없는 동적 이름 등록 및 이름 확인 프로토콜을 지원하기 위해 추가된 지원 기능을 설명합니다. 이런 새로운 기능은 <xref:System.Net.PeerToPeer?displayProperty=nameWithType> 네임스페이스에 의해 지원됩니다.  
@@ -93,10 +87,10 @@ Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합�
  <xref:System.Net.WebRequest?displayProperty=nameWithType> 및 <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> 클래스를 사용하여 얻은 리소스에 대한 캐시 정책을 정의하는 데 사용되는 형식과 열거형을 정의합니다.  
   
  <xref:System.Net.Configuration?displayProperty=nameWithType>  
- 응용 프로그램에서 System.Net 네임스페이스에 대한 구성 설정을 프로그래밍 방식으로 액세스 및 업데이트하는 데 사용하는 클래스입니다.  
+ 애플리케이션에서 System.Net 네임스페이스에 대한 구성 설정을 프로그래밍 방식으로 액세스 및 업데이트하는 데 사용하는 클래스입니다.  
   
  <xref:System.Net.Http?displayProperty=nameWithType>  
- 최신 HTTP 응용 프로그램의 프로그래밍 인터페이스를 제공하는 클래스입니다.  
+ 최신 HTTP 애플리케이션의 프로그래밍 인터페이스를 제공하는 클래스입니다.  
   
  <xref:System.Net.Http.Headers?displayProperty=nameWithType>  
  <xref:System.Net.Http?displayProperty=nameWithType> 네임스페이스에서 사용되는 HTTP 헤더의 컬렉션 지원을 제공합니다.  
@@ -129,15 +123,15 @@ Microsoft .NET Framework는 더 빠르고 쉽게 응용 프로그램에 통합�
  URI(Uniform Resource Indentifier)의 개체 표현을 제공하며 URI 부분에 쉽게 액세스할 수 있도록 합니다.  
   
  <xref:System.Security.Authentication.ExtendedProtection?displayProperty=nameWithType>  
- 응용 프로그램의 확장된 보호를 사용하여 인증을 지원합니다.  
+ 애플리케이션의 확장된 보호를 사용하여 인증을 지원합니다.  
   
  <xref:System.Security.Authentication.ExtendedProtection.Configuration?displayProperty=nameWithType>  
- 응용 프로그램의 확장된 보호를 사용하여 인증 구성을 지원합니다.  
+ 애플리케이션의 확장된 보호를 사용하여 인증 구성을 지원합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
- [.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례](../../../docs/framework/network-programming/tls.md)  
- [네트워크 프로그래밍 방법 항목](../../../docs/framework/network-programming/network-programming-how-to-topics.md)  
- [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)  
- [MSDN 코드 갤러리의 .NET용 네트워킹 샘플](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)  
- [HttpClient 샘플](https://go.microsoft.com/fwlink/?LinkId=242550)
+- [.NET Framework를 사용한 TLS(전송 계층 보안) 모범 사례](../../../docs/framework/network-programming/tls.md)
+- [네트워크 프로그래밍 방법 항목](../../../docs/framework/network-programming/network-programming-how-to-topics.md)
+- [네트워크 프로그래밍 샘플](../../../docs/framework/network-programming/network-programming-samples.md)
+- [MSDN 코드 갤러리의 .NET용 네트워킹 샘플](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)
+- [HttpClient 샘플](https://go.microsoft.com/fwlink/?LinkId=242550)

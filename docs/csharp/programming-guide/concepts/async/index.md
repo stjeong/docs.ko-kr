@@ -1,36 +1,30 @@
 ---
-title: async 및 await를 사용한 비동기 프로그래밍(C#)
+title: 'async 및 await를 사용한 비동기 프로그래밍(C#)'
 ms.date: 05/22/2017
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
-ms.openlocfilehash: d46e499abb14964407773eca176ba0de7b43ffe2
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53236338"
 ---
 # <a name="asynchronous-programming-with-async-and-await-c"></a>async 및 await를 사용한 비동기 프로그래밍(C#)
-비동기 프로그래밍을 사용하여 성능 병목 현상을 방지하고 응용 프로그램의 전체적인 응답성을 향상할 수 있습니다. 그러나 비동기 응용 프로그램을 쓰는 일반적인 기술이 복잡하여 해당 응용 프로그램을 쓰고, 디버깅하고, 유지 관리하기 어려울 수 있습니다.  
+비동기 프로그래밍을 사용하여 성능 병목 현상을 방지하고 애플리케이션의 전체적인 응답성을 향상할 수 있습니다. 그러나 비동기 애플리케이션을 쓰는 일반적인 기술이 복잡하여 해당 애플리케이션을 쓰고, 디버깅하고, 유지 관리하기 어려울 수 있습니다.  
   
-[C# 5](../../../whats-new/csharp-version-history.md#c-version-50)에는 .NET Framework 4.5 이상, .NET Core 및 Windows 런타임의 비동기 지원을 활용하는 간단한 비동기 프로그래밍 접근 방법이 도입되었습니다. 컴파일러는 개발자가 하던 어려운 작업을 수행하고, 응용 프로그램은 동기 코드와 비슷한 논리 구조를 유지합니다. 따라서 약간의 노력만으로도 비동기 프로그래밍의 모든 장점을 누릴 수 있습니다.  
+[C# 5](../../../whats-new/csharp-version-history.md#c-version-50)에는 .NET Framework 4.5 이상, .NET Core 및 Windows 런타임의 비동기 지원을 활용하는 간단한 비동기 프로그래밍 접근 방법이 도입되었습니다. 컴파일러는 개발자가 하던 어려운 작업을 수행하고, 애플리케이션은 동기 코드와 비슷한 논리 구조를 유지합니다. 따라서 약간의 노력만으로도 비동기 프로그래밍의 모든 장점을 누릴 수 있습니다.  
   
 이 항목에서는 비동기 프로그래밍을 사용하는 시기 및 방법에 대한 개요를 제공하고 특정 세부 정보 및 예제가 포함된 지원 항목에 대한 링크가 포함되어 있습니다.  
   
 ##  <a name="BKMK_WhentoUseAsynchrony"></a> 반응성을 향상시키는 비동기  
- 비동기는 웹 액세스와 같이 차단 가능성이 있는 작업에 반드시 필요합니다. 웹 리소스에 대한 액세스 속도가 느리거나 지연됩니다. 동기 프로세스 안에서 이러한 활동이 차단되면 전체 응용 프로그램이 기다려야 합니다. 비동기 프로세스에서 응용 프로그램은 잠재적인 차단 작업이 완료될 때까지 웹 리소스에 의존하지 않는 다른 작업을 계속 수행할 수 있습니다.  
+ 비동기는 웹 액세스와 같이 차단 가능성이 있는 작업에 반드시 필요합니다. 웹 리소스에 대한 액세스 속도가 느리거나 지연됩니다. 동기 프로세스 안에서 이러한 활동이 차단되면 전체 애플리케이션이 기다려야 합니다. 비동기 프로세스에서 애플리케이션은 잠재적인 차단 작업이 완료될 때까지 웹 리소스에 의존하지 않는 다른 작업을 계속 수행할 수 있습니다.  
   
  다음 표에는 비동기 프로그래밍으로 응답성이 향상되는 일반적인 영역이 나와 있습니다. .NET 및 Windows 런타임에서 나열된 API에는 비동기 프로그래밍을 지원하는 메서드가 포함되어 있습니다.  
   
-| 응용 프로그램 영역    | 비동기 메서드가 있는 .NET 형식     | 비동기 메서드가 있는 Windows 런타임 형식  |
+| 애플리케이션 영역    | 비동기 메서드가 있는 .NET 형식     | 비동기 메서드가 있는 Windows 런타임 형식  |
 |---------------------|-----------------------------------|-------------------------------------------|
 |웹 액세스|<xref:System.Net.Http.HttpClient>|<xref:Windows.Web.Syndication.SyndicationClient>|
 |파일 작업|<xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|<xref:Windows.Storage.StorageFile>|  
 |이미지 작업||<xref:Windows.Media.Capture.MediaCapture>, <xref:Windows.Graphics.Imaging.BitmapEncoder>, <xref:Windows.Graphics.Imaging.BitmapDecoder>|  
 |WCF 프로그래밍|[동기 및 비동기 작업](../../../../framework/wcf/synchronous-and-asynchronous-operations.md)||  
   
-모든 UI 관련 작업이 대체로 스레드 한 개를 공유하므로 비동기는 특히 UI 스레드에 액세스하는 응용 프로그램의 변수를 증명합니다. 동기 응용 프로그램에서 임의의 프로세스가 차단되면 모든 프로세스가 차단됩니다. 응용 프로그램이 응답을 중지하면 기다리지 않고 응용 프로그램이 실패한 것으로 결론을 내릴 것입니다.  
+모든 UI 관련 작업이 대체로 스레드 한 개를 공유하므로 비동기는 특히 UI 스레드에 액세스하는 애플리케이션의 변수를 증명합니다. 동기 애플리케이션에서 임의의 프로세스가 차단되면 모든 프로세스가 차단됩니다. 애플리케이션이 응답을 중지하면 기다리지 않고 애플리케이션이 실패한 것으로 결론을 내릴 것입니다.  
   
- 비동기 메서드를 사용하면 응용 프로그램이 UI에 계속 응답합니다. 예를 들어 창의 크기를 조정하거나 최소화할 수 있습니다. 또는 응용 프로그램이 완료될 때까지 기다리지 않으려면 응용 프로그램을 종료할 수 있습니다.  
+ 비동기 메서드를 사용하면 애플리케이션이 UI에 계속 응답합니다. 예를 들어 창의 크기를 조정하거나 최소화할 수 있습니다. 또는 애플리케이션이 완료될 때까지 기다리지 않으려면 애플리케이션을 종료할 수 있습니다.  
   
  비동기 기반 접근 방식을 사용하면 비동기 작업을 디자인할 때 선택할 수 있는 옵션 목록에 자동 전송과 동일한 기능을 추가할 수 있습니다. 즉, 기존 비동기 프로그래밍의 이점을 모두 활용할 수 있지만 개발자의 활동이 크게 줄어듭니다.  
   
@@ -237,12 +231,12 @@ Windows 런타임 프로그래밍의 비동기 API에는 작업과 유사한 다
   
 |제목|설명|샘플|  
 |-----------|-----------------|------------|  
-|[연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)|동기 WPF 솔루션을 비동기 WPF 솔루션으로 변환하는 방법을 보여줍니다. 이 응용 프로그램은 일련의 웹 사이트를 다운로드합니다.|[비동기 샘플: 웹 연습에 액세스](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)|  
+|[연습: async 및 await를 사용하여 웹에 액세스(C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)|동기 WPF 솔루션을 비동기 WPF 솔루션으로 변환하는 방법을 보여줍니다. 이 애플리케이션은 일련의 웹 사이트를 다운로드합니다.|[비동기 샘플: 웹 연습에 액세스](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)|  
 |[방법: Task.WhenAll을 사용하여 비동기 연습 확장(C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)|이전 연습에 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>을 추가합니다. `WhenAll`을 사용하면 모든 다운로드가 동시에 시작됩니다.||  
 |[방법: async 및 await를 사용하여 병렬로 여러 웹 요청 만들기(C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)|동시에 여러 작업을 시작하는 방법을 보여줍니다.|[비동기 샘플: 병렬로 여러 웹 요청 만들기](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)|  
 |[비동기 반환 형식(C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)|비동기 메서드에서 반환할 수 있는 형식을 설명하고 각 형식이 언제 적절한가를 설명합니다.||  
 |[비동기 프로그램의 제어 흐름(C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)|비동기 프로그램에서 연속적 await 표현을 통한 컨트롤의 흐름을 자세히 추적합니다.|[비동기 샘플: 비동기 프로그램의 제어 흐름](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)|  
-|[Async 응용 프로그램 미세 조정(C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)|비동기 솔루션에 다음과 같은 기능을 추가하는 방법을 보여줍니다.<br /><br /> -   [비동기 작업 또는 작업 목록 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)<br />-   [일정 기간 이후 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md)<br />-   [비동기 작업 하나가 완료되면 남은 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)<br />-   [비동기 작업을 여러 개 시작하고 완료될 때마다 처리(C#)](../../../../csharp/programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md)|[비동기 샘플: 애플리케이션 미세 조정](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|  
+|[Async 애플리케이션 미세 조정(C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)|비동기 솔루션에 다음과 같은 기능을 추가하는 방법을 보여줍니다.<br /><br /> -   [비동기 작업 또는 작업 목록 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)<br />-   [일정 기간 이후 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md)<br />-   [비동기 작업 하나가 완료되면 남은 비동기 작업 취소(C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)<br />-   [비동기 작업을 여러 개 시작하고 완료될 때마다 처리(C#)](../../../../csharp/programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md)|[비동기 샘플: 애플리케이션 미세 조정](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|  
 |[비동기 앱에서 재진입 처리(C#)](../../../../csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)|비동기 작업이 실행되는 동안 현재 비동기 작업을 다시 시작하는 경우 처리 방법을 보여줍니다.||  
 |[WhenAny: .NET Framework와 Windows 런타임 간 브리징](https://msdn.microsoft.com/library/jj635140(v=vs.120).aspx)|[!INCLUDE[wrt](~/includes/wrt-md.md)] 메서드에 <xref:System.Threading.Tasks.Task.WhenAny%2A>를 사용할 수 있도록 .NET Framework의 작업 형식과 [!INCLUDE[wrt](~/includes/wrt-md.md)]의 IAsyncOperations 사이의 연결 방법을 보여 줍니다.|[비동기 샘플: .NET 및 Windows 런타임 간 연결(AsTask 및 WhenAny)](https://code.msdn.microsoft.com/Async-Sample-Bridging-d6a2f739)|  
 |비동기 취소: .NET Framework와 Windows 런타임 간 브리징|[!INCLUDE[wrt](~/includes/wrt-md.md)] 메서드에 <xref:System.Threading.CancellationTokenSource>를 사용할 수 있도록 .NET Framework의 작업 형식과 [!INCLUDE[wrt](~/includes/wrt-md.md)]의 IAsyncOperations 사이의 연결 방법을 보여 줍니다.|[비동기 샘플: .NET 및 Windows 런타임 간 연결(AsTask & 취소)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|  
@@ -251,7 +245,7 @@ Windows 런타임 프로그래밍의 비동기 API에는 작업과 유사한 다
 |[비동기 Channel 9 비디오](https://channel9.msdn.com/search?term=async%20&type=All#pubDate=year&ch9Search&lang-en=en)|비동기 프로그래밍에 대한 다양한 비디오로 연결되는 링크를 제공합니다.||  
   
 ##  <a name="BKMK_CompleteExample"></a> 전체 예제  
- 다음 코드는 이 항목에서 설명하는 WPF(Windows Presentation Foundation) 응용 프로그램의 MainWindow.xaml.cs 파일입니다. [비동기 샘플: "Async 및 Await를 사용하는 비동기 프로그래밍"의 예제](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c)에서 샘플을 다운로드할 수 있습니다.  
+ 다음 코드는 이 항목에서 설명하는 WPF(Windows Presentation Foundation) 애플리케이션의 MainWindow.xaml.cs 파일입니다. [비동기 샘플: "Async 및 Await를 사용하는 비동기 프로그래밍"의 예제](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c)에서 샘플을 다운로드할 수 있습니다.  
   
 ```csharp  
 using System;  
@@ -335,7 +329,7 @@ namespace AsyncFirstExample
   
 ## <a name="see-also"></a>참고 항목
 
-- [async](../../../../csharp/language-reference/keywords/async.md)  
-- [await](../../../../csharp/language-reference/keywords/await.md)  
-- [비동기 프로그래밍](../../../../csharp/async.md)  
-- [비동기 개요](../../../../standard/async.md)  
+- [async](../../../../csharp/language-reference/keywords/async.md)
+- [await](../../../../csharp/language-reference/keywords/await.md)
+- [비동기 프로그래밍](../../../../csharp/async.md)
+- [비동기 개요](../../../../standard/async.md)

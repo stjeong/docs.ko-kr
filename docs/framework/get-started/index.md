@@ -3,18 +3,13 @@ title: .NET Framework 시작
 ms.custom: updateeachrelease
 ms.date: 04/10/2018
 helpviewer_keywords:
-- .NET Framework, getting started
-- getting started [.NET Framework]
+  - '.NET Framework, getting started'
+  - 'getting started [.NET Framework]'
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6d241f0f0c10be4a73c7ac55930e5dd24ef0b1e2
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453137"
 ---
+
 # <a name="get-started-with-the-net-framework"></a>.NET Framework 시작
 
 .NET Framework는 .NET Framework를 대상으로 하는 앱을 관리하는 런타임 실행 환경입니다. .NET Framework는 메모리 관리 및 기타 시스템 서비스를 제공하는 공용 언어 런타임과 프로그래머가 모든 주요 앱 개발 영역에서 강력하고 신뢰할 수 있는 코드를 활용할 수 있게 하는 광범위한 클래스 라이브러리로 구성됩니다.
@@ -89,7 +84,7 @@ Windows 8 이전 버전에서 .NET Framework를 제거하려는 경우에는 항
 
 ## <a name="see-also"></a>참고 항목
 
-- [.NET Framework 가이드](../../../docs/framework/index.md)   
-- [새로운 기능](../../../docs/framework/whats-new/index.md)   
-- [.NET API 브라우저](/dotnet/api/)   
+- [.NET Framework 가이드](../../../docs/framework/index.md)
+- [새로운 기능](../../../docs/framework/whats-new/index.md)
+- [.NET API 브라우저](/dotnet/api/)
 - [개발 가이드](../../../docs/framework/development-guide.md)

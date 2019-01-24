@@ -1,22 +1,16 @@
 ---
-title: 클래스 및 구조체 - C# 프로그래밍 가이드
+title: '클래스 및 구조체 - C# 프로그래밍 가이드'
 ms.custom: seodec18
-description: C#의 클래스 및 구조(구조체) 사용에 대해 설명합니다.
+description: 'C#의 클래스 및 구조(구조체) 사용에 대해 설명합니다.'
 ms.date: 01/17/2016
 helpviewer_keywords:
-- structs [C#], about structs
-- classes [C#], overview
-- C# language, structs
-- C# language, objects
-- objects [C#]
-- C# language, classes
+  - 'structs [C#], about structs'
+  - 'classes [C#], overview'
+  - 'C# language, structs'
+  - 'C# language, objects'
+  - 'objects [C#]'
+  - 'C# language, classes'
 ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
-ms.openlocfilehash: 9380a06b733546cdf5af959868fcdfdcc7189ded
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53242557"
 ---
 # <a name="classes-and-structs-c-programming-guide"></a>클래스 및 구조체(C# 프로그래밍 가이드)
 클래스와 구조체는 .NET Framework의 공용 형식 시스템의 기본 구문 중 두 가지입니다. 각각은 기본적으로 하나의 논리 단위에 속하는 데이터 및 동작 집합을 캡슐화하는 데이터 구조입니다. 데이터 및 동작은 클래스 또는 구조체의 *멤버*로, 이 항목의 뒷부분에 나오는 것처럼 메서드, 속성 및 이벤트 등을 포함합니다.  
@@ -31,7 +25,7 @@ ms.locfileid: "53242557"
   
  자세한 내용은 [클래스](../../../csharp/programming-guide/classes-and-structs/classes.md), [개체](../../../csharp/programming-guide/classes-and-structs/objects.md) 및 [구조체](../../../csharp/programming-guide/classes-and-structs/structs.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 `ProgrammingGuide` 네임스페이스의 `CustomClass`에는 세 개의 멤버, 즉 인스턴스 생성자, `Number`라는 속성 및 `Multiply`이라는 메서드가 있습니다. `Program` 클래스의 `Main` 메서드는 `CustomClass`의 인스턴스(개체)를 만들고 개체의 메서드 및 속성은 점 표기법을 사용하여 액세스됩니다.
   
  [!code-csharp[csProgGuideObjects#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/class1.cs#1)]  

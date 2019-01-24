@@ -1,19 +1,13 @@
 ---
-title: nullable 형식 - C# 프로그래밍 가이드
+title: 'nullable 형식 - C# 프로그래밍 가이드'
 ms.custom: seodec18
-description: C# nullable 형식 및 사용 방법 알아보기
+description: 'C# nullable 형식 및 사용 방법 알아보기'
 ms.date: 07/30/2018
 helpviewer_keywords:
-- nullable types [C#]
-- C# language, nullable types
-- types [C#], nullable
+  - 'nullable types [C#]'
+  - 'C# language, nullable types'
+  - 'types [C#], nullable'
 ms.assetid: e473cb01-28ca-42be-9cea-f717055d72c6
-ms.openlocfilehash: cd5ac40ca73f7c528a903d5863f3cf5880738f11
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245132"
 ---
 # <a name="nullable-types-c-programming-guide"></a>nullable 형식(C# 프로그래밍 가이드)
 
@@ -21,7 +15,7 @@ Nullable 형식은 <xref:System.Nullable%601?displayProperty=nameWithType> 구�
 
 예를 들어 <xref:System.Int32.MinValue?displayProperty=nameWithType>부터 <xref:System.Int32.MaxValue?displayProperty=nameWithType>까지의 `null` 또는 정수 값을 `Nullable<int>`에 할당하고, [true](../../language-reference/keywords/true-literal.md), [false](../../language-reference/keywords/false-literal.md) 또는 `null`을 `Nullable<bool>`에 할당할 수 있습니다
 
-기본 형식의 정의되지 않은 값을 표시해야 하는 경우 nullable 형식을 사용합니다. 부울 변수에는 true와 false라는 두 개의 값만 있을 수 있습니다. "정의되지 않은" 값이 없습니다. 많은 프로그래밍 응용 프로그램(특히, 데이터베이스 상호 작용)에서 변수는 정의되지 않거나 누락될 수 있습니다. 예를 들어 데이터베이스의 필드는 true 또는 false 값을 포함하거나 값을 전혀 포함하지 않을 수 있습니다. 해당 경우에 `Nullable<bool>` 형식을 사용합니다.
+기본 형식의 정의되지 않은 값을 표시해야 하는 경우 nullable 형식을 사용합니다. 부울 변수에는 true와 false라는 두 개의 값만 있을 수 있습니다. "정의되지 않은" 값이 없습니다. 많은 프로그래밍 애플리케이션(특히, 데이터베이스 상호 작용)에서 변수는 정의되지 않거나 누락될 수 있습니다. 예를 들어 데이터베이스의 필드는 true 또는 false 값을 포함하거나 값을 전혀 포함하지 않을 수 있습니다. 해당 경우에 `Nullable<bool>` 형식을 사용합니다.
 
 null 허용 형식은 다음 특성을 갖습니다.
   
@@ -57,10 +51,10 @@ null 허용 형식은 다음 특성을 갖습니다.
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.Nullable%601?displayProperty=nameWithType>  
-- <xref:System.Nullable?displayProperty=nameWithType>  
-- [?? 연산자](../../language-reference/operators/null-coalescing-operator.md)  
-- [C# 프로그래밍 가이드](../index.md)  
-- [C# 가이드](../../index.md)  
-- [C# 참조](../../language-reference/index.md)  
-- [Nullable 값 형식(Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
+- <xref:System.Nullable%601?displayProperty=nameWithType>
+- <xref:System.Nullable?displayProperty=nameWithType>
+- [?? 연산자](../../language-reference/operators/null-coalescing-operator.md)
+- [C# 프로그래밍 가이드](../index.md)
+- [C# 가이드](../../index.md)
+- [C# 참조](../../language-reference/index.md)
+- [Nullable 값 형식(Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

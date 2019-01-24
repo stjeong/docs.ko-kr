@@ -26,12 +26,12 @@ helpviewer_keywords:
 - declaration statements [Visual Basic]
 - scalar variables [Visual Basic]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
-ms.openlocfilehash: 9536ea8a6274e0b4a2589caf5aefa271a3567d32
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1252c9a93d9c37923b1fd2940a42f1a33b575b8a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33605396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54617318"
 ---
 # <a name="redim-statement-visual-basic"></a>ReDim 문(Visual Basic)
 배열 변수의 저장 공간을 다시 할당합니다.  
@@ -47,15 +47,15 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 |용어|정의|  
 |----------|----------------|  
 |`Preserve`|선택 사항입니다. 마지막 차원의 크기만 변경한 경우 기존 배열의 데이터를 유지하기 위해 사용되는 한정자입니다.|  
-|`name`|필수. 배열 변수의 이름입니다. 참조 [선언 된 요소 이름](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.|  
-|`boundlist`|필수. 다시 정의된 배열의 각 차원에 대한 범위 목록입니다.|  
+|`name`|필수 요소. 배열 변수의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.|  
+|`boundlist`|필수 요소. 다시 정의된 배열의 각 차원에 대한 범위 목록입니다.|  
   
 ## <a name="remarks"></a>설명  
  `ReDim` 문을 사용하여 이미 선언된 배열의 차원 중 하나 이상의 크기를 변경할 수 있습니다. 큰 배열이 있고 요소가 더 이상 필요하지 않은 경우 `ReDim`은 배열 크기를 줄여서 메모리를 확보할 수 있습니다. 반면에 배열에 요소가 더 필요한 경우 `ReDim`은 요소를 추가할 수 있습니다.  
   
  `ReDim` 문은 배열에만 사용할 수 있으며 스칼라(단일 값만 포함된 변수), 컬렉션 또는 구조체에서는 유효하지 않습니다. 변수를 `Array` 형식으로 선언하는 경우 `ReDim` 문에는 새 배열을 만들 수 있는 충분한 형식 정보가 없습니다.  
   
- `ReDim`은 프로시저 수준에서만 사용할 수 있습니다. 따라서 변수의 선언 컨텍스트는 프로시저여야 하며, 소스 파일, 네임스페이스, 인터페이스, 클래스, 구조체, 모듈 또는 블록일 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
+ `ReDim` 은 프로시저 수준에서만 사용할 수 있습니다. 따라서 변수의 선언 컨텍스트는 프로시저여야 하며, 소스 파일, 네임스페이스, 인터페이스, 클래스, 구조체, 모듈 또는 블록일 수 없습니다. 자세한 내용은 [선언 컨텍스트 및 기본 액세스 수준](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)을 참조하세요.  
   
 ## <a name="rules"></a>규칙  
   
@@ -71,7 +71,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 -   **순위를 지정 합니다.** `ReDim` 문은 배열의 차수(차원 수)를 변경할 수 없습니다.  
   
--   **Preserve를 사용한 크기 조정.** `Preserve`를 사용하는 경우 배열의 마지막 차원만 크기를 조정할 수 있습니다. 다른 모든 차원의 경우에는 기존 배열의 범위를 지정해야 합니다.  
+-   **Preserve를 사용 하 여 크기를 조정 합니다.** `Preserve`를 사용하는 경우 배열의 마지막 차원만 크기를 조정할 수 있습니다. 다른 모든 차원의 경우에는 기존 배열의 범위를 지정해야 합니다.  
   
      예를 들어 배열에 차원이 하나만 있는 경우 해당 차원의 크기를 조정해도 배열의 모든 내용을 보존할 수 있습니다. 마지막이자 유일한 차원을 변경하기 때문입니다. 그러나 배열에 둘 이상의 차원이 있는 경우에는 `Preserve`를 사용하여 마지막 차원의 크기만 변경할 수 있습니다.  
   
@@ -79,9 +79,9 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 ## <a name="behavior"></a>동작  
   
--   **배열 대체입니다.** `ReDim` 기존 배열을 해제 하 고 고 동일한 차수로 새 배열을 만듭니다. 새 배열은 배열 변수에서 해제된 배열을 대체합니다.  
+-   **배열 대체입니다.** `ReDim` 기존 배열을 해제 하 고 같은 차수의 새 배열을 만듭니다. 새 배열은 배열 변수에서 해제된 배열을 대체합니다.  
   
--   **Preserve 사용 하지 않는 초기화 합니다.** `Preserve`를 지정하지 않는 경우 `ReDim`은 데이터 형식의 기본값을 사용하여 새 배열의 요소를 초기화합니다.  
+-   **유지 하지 않고 초기화 합니다.** `Preserve`를 지정하지 않는 경우 `ReDim`은 데이터 형식의 기본값을 사용하여 새 배열의 요소를 초기화합니다.  
   
 -   **Preserve 사용 하 여 초기화 합니다.** `Preserve`를 지정하는 경우 Visual Basic에서는 기존 배열의 요소를 새 배열에 복사합니다.  
   
@@ -98,12 +98,12 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  세 번째 `ReDim`은 새 배열을 하나 더 만들고 각 계층에 있는 각 행의 끝에서 5개의 열을 제거합니다. 이번에는 기존 요소를 복사하지 않습니다. 이 문은 배열을 원래 크기로 되돌립니다. 이 문은 `Preserve` 한정자를 포함하지 않기 때문에 모든 배열 요소를 원래 기본값으로 설정합니다.  
   
- 추가 예제를 참조 하십시오. [배열](../../../visual-basic/programming-guide/language-features/arrays/index.md)합니다.  
+ 추가 예제를 보려면 [배열](../../../visual-basic/programming-guide/language-features/arrays/index.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IndexOutOfRangeException>  
- [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Erase 문](../../../visual-basic/language-reference/statements/erase-statement.md)  
- [Nothing](../../../visual-basic/language-reference/nothing.md)  
- [배열](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.IndexOutOfRangeException>
+- [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Dim 문](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Erase 문](../../../visual-basic/language-reference/statements/erase-statement.md)
+- [Nothing](../../../visual-basic/language-reference/nothing.md)
+- [배열](../../../visual-basic/programming-guide/language-features/arrays/index.md)
