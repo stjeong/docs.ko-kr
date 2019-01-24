@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0922a27dff8d7958d60b4cf225143a96f1a6c351
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d50aa8a5cc98ff966cdd42061cbead22611becfe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33411754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680287"
 ---
-# <a name="icordebugeditandcontinueerrorinfo-interface"></a><span data-ttu-id="e8c5c-102">ICorDebugEditAndContinueErrorInfo 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e8c5c-102">ICorDebugEditAndContinueErrorInfo Interface</span></span>
-<span data-ttu-id="e8c5c-103">`ICorDebugEditAndContinueErrorInfo`는 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e8c5c-103">`ICorDebugEditAndContinueErrorInfo` is obsolete.</span></span> <span data-ttu-id="e8c5c-104">이 인터페이스를 사용하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="e8c5c-104">Do not use this interface.</span></span>  
+# <a name="icordebugeditandcontinueerrorinfo-interface"></a><span data-ttu-id="c3623-102">ICorDebugEditAndContinueErrorInfo 인터페이스</span><span class="sxs-lookup"><span data-stu-id="c3623-102">ICorDebugEditAndContinueErrorInfo Interface</span></span>
+<span data-ttu-id="c3623-103">`ICorDebugEditAndContinueErrorInfo`는 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c3623-103">`ICorDebugEditAndContinueErrorInfo` is obsolete.</span></span> <span data-ttu-id="c3623-104">이 인터페이스를 사용하지 마세요.</span><span class="sxs-lookup"><span data-stu-id="c3623-104">Do not use this interface.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e8c5c-105">참고 항목</span><span class="sxs-lookup"><span data-stu-id="e8c5c-105">See Also</span></span>  
- [<span data-ttu-id="e8c5c-106">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e8c5c-106">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a><span data-ttu-id="c3623-105">참고자료</span><span class="sxs-lookup"><span data-stu-id="c3623-105">See also</span></span>
+- [<span data-ttu-id="c3623-106">디버깅 인터페이스</span><span class="sxs-lookup"><span data-stu-id="c3623-106">Debugging Interfaces</span></span>](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

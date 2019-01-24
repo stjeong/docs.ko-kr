@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2515eb0e33a033e78843d68754d3175e91165dff
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: e55a94cc5a877efa0ddc8e2a5e554f5d5791e53f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087341"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54676122"
 ---
-# <a name="iclrstrongnamestrongnamekeydelete-method"></a><span data-ttu-id="60f63-102">ICLRStrongName::StrongNameKeyDelete 메서드</span><span class="sxs-lookup"><span data-stu-id="60f63-102">ICLRStrongName::StrongNameKeyDelete Method</span></span>
-<span data-ttu-id="60f63-103">지정된 키 컨테이너를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-103">Deletes the specified key container.</span></span>  
+# <a name="iclrstrongnamestrongnamekeydelete-method"></a><span data-ttu-id="201dd-102">ICLRStrongName::StrongNameKeyDelete 메서드</span><span class="sxs-lookup"><span data-stu-id="201dd-102">ICLRStrongName::StrongNameKeyDelete Method</span></span>
+<span data-ttu-id="201dd-103">지정된 키 컨테이너를 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="201dd-103">Deletes the specified key container.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="60f63-104">구문</span><span class="sxs-lookup"><span data-stu-id="60f63-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="201dd-104">구문</span><span class="sxs-lookup"><span data-stu-id="201dd-104">Syntax</span></span>  
   
 ```  
 HRESULT StrongNameKeyDelete (  
@@ -35,25 +35,25 @@ HRESULT StrongNameKeyDelete (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="60f63-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="60f63-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="201dd-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="201dd-105">Parameters</span></span>  
  `wszKeyContainer`  
- <span data-ttu-id="60f63-106">[in] 삭제할 키 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-106">[in] The name of the key container to delete.</span></span>  
+ <span data-ttu-id="201dd-106">[in] 삭제할 키 컨테이너의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="201dd-106">[in] The name of the key container to delete.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="60f63-107">반환 값</span><span class="sxs-lookup"><span data-stu-id="60f63-107">Return Value</span></span>  
- <span data-ttu-id="60f63-108">`S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).</span><span class="sxs-lookup"><span data-stu-id="60f63-108">`S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).</span></span>  
+## <a name="return-value"></a><span data-ttu-id="201dd-107">반환 값</span><span class="sxs-lookup"><span data-stu-id="201dd-107">Return Value</span></span>  
+ <span data-ttu-id="201dd-108">`S_OK` 메서드가 성공적으로 완료 하는 경우 그렇지 않으면 실패를 나타내는 HRESULT 값을 (참조 [일반적인 HRESULT 값](https://go.microsoft.com/fwlink/?LinkId=213878) 목록에 대 한).</span><span class="sxs-lookup"><span data-stu-id="201dd-108">`S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="60f63-109">설명</span><span class="sxs-lookup"><span data-stu-id="60f63-109">Remarks</span></span>  
- <span data-ttu-id="60f63-110">사용 된 [iclrstrongname:: Strongnamekeyinstall](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md) 컨테이너로 공개/개인 키 쌍을 가져오는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="60f63-110">Use the [ICLRStrongName::StrongNameKeyInstall](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md) method to import a public/private key pair into a container.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="201dd-109">설명</span><span class="sxs-lookup"><span data-stu-id="201dd-109">Remarks</span></span>  
+ <span data-ttu-id="201dd-110">사용 된 [iclrstrongname:: Strongnamekeyinstall](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md) 컨테이너로 공개/개인 키 쌍을 가져오는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="201dd-110">Use the [ICLRStrongName::StrongNameKeyInstall](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md) method to import a public/private key pair into a container.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="60f63-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="60f63-111">Requirements</span></span>  
- <span data-ttu-id="60f63-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="60f63-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="201dd-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="201dd-111">Requirements</span></span>  
+ <span data-ttu-id="201dd-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="201dd-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="60f63-113">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="60f63-113">**Header:** MetaHost.h</span></span>  
+ <span data-ttu-id="201dd-113">**헤더:** MetaHost.h</span><span class="sxs-lookup"><span data-stu-id="201dd-113">**Header:** MetaHost.h</span></span>  
   
- <span data-ttu-id="60f63-114">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="60f63-114">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="201dd-114">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="201dd-114">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="60f63-115">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="60f63-115">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="201dd-115">**.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="201dd-115">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="60f63-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="60f63-116">See Also</span></span>  
- [<span data-ttu-id="60f63-117">StrongNameKeyInstall 메서드</span><span class="sxs-lookup"><span data-stu-id="60f63-117">StrongNameKeyInstall Method</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)  
- [<span data-ttu-id="60f63-118">ICLRStrongName 인터페이스</span><span class="sxs-lookup"><span data-stu-id="60f63-118">ICLRStrongName Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## <a name="see-also"></a><span data-ttu-id="201dd-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="201dd-116">See also</span></span>
+- [<span data-ttu-id="201dd-117">StrongNameKeyInstall 메서드</span><span class="sxs-lookup"><span data-stu-id="201dd-117">StrongNameKeyInstall Method</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)
+- [<span data-ttu-id="201dd-118">ICLRStrongName 인터페이스</span><span class="sxs-lookup"><span data-stu-id="201dd-118">ICLRStrongName Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

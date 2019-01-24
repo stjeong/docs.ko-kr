@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8017f816632cffc42676761a367e980d1cafe088
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 203c31129218be585960e771b1d7e669defd8cde
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33443618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743298"
 ---
-# <a name="imetadataassemblyemitsetfileprops-method"></a><span data-ttu-id="59ec2-102">IMetaDataAssemblyEmit::SetFileProps 메서드</span><span class="sxs-lookup"><span data-stu-id="59ec2-102">IMetaDataAssemblyEmit::SetFileProps Method</span></span>
-<span data-ttu-id="59ec2-103">지정된 `File` 메타데이터 구조를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="59ec2-103">Modifies the specified `File` metadata structure.</span></span>  
+# <a name="imetadataassemblyemitsetfileprops-method"></a><span data-ttu-id="22f96-102">IMetaDataAssemblyEmit::SetFileProps 메서드</span><span class="sxs-lookup"><span data-stu-id="22f96-102">IMetaDataAssemblyEmit::SetFileProps Method</span></span>
+<span data-ttu-id="22f96-103">지정된 `File` 메타데이터 구조를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="22f96-103">Modifies the specified `File` metadata structure.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="59ec2-104">구문</span><span class="sxs-lookup"><span data-stu-id="59ec2-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="22f96-104">구문</span><span class="sxs-lookup"><span data-stu-id="22f96-104">Syntax</span></span>  
   
 ```  
 HRESULT SetFileProps (  
@@ -38,30 +38,30 @@ HRESULT SetFileProps (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="59ec2-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="59ec2-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="22f96-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="22f96-105">Parameters</span></span>  
  `file`  
- <span data-ttu-id="59ec2-106">[in] 메타 데이터 토큰을 지정 하는 `File` 메타 데이터 구조를 수정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="59ec2-106">[in] The metadata token that specifies the `File` metadata structure to be modified.</span></span>  
+ <span data-ttu-id="22f96-106">[in] 지정 된 메타 데이터 토큰을 `File` 수정할 메타 데이터 구조입니다.</span><span class="sxs-lookup"><span data-stu-id="22f96-106">[in] The metadata token that specifies the `File` metadata structure to be modified.</span></span>  
   
  `pbHashValue`  
- <span data-ttu-id="59ec2-107">[in] 파일에 연결 된 데이터 해시에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="59ec2-107">[in] A pointer to the hash data associated with the file.</span></span>  
+ <span data-ttu-id="22f96-107">[in] 파일에 연결 된 데이터 해시에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="22f96-107">[in] A pointer to the hash data associated with the file.</span></span>  
   
  `cbHashValue`  
- <span data-ttu-id="59ec2-108">[in] 바이트 크기 `pbHashValue`합니다.</span><span class="sxs-lookup"><span data-stu-id="59ec2-108">[in] The size in bytes of `pbHashValue`.</span></span>  
+ <span data-ttu-id="22f96-108">[in] 크기 (바이트) `pbHashValue`합니다.</span><span class="sxs-lookup"><span data-stu-id="22f96-108">[in] The size in bytes of `pbHashValue`.</span></span>  
   
  `dwFileFlags`  
- <span data-ttu-id="59ec2-109">[in] 비트 조합 [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) 파일의 다양 한 특성을 지정 하는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="59ec2-109">[in] A bitwise combination of [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) values that specify various attributes of the file.</span></span>  
+ <span data-ttu-id="22f96-109">[in] 비트 조합 [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) 파일의 다양 한 특성을 지정 하는 값입니다.</span><span class="sxs-lookup"><span data-stu-id="22f96-109">[in] A bitwise combination of [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) values that specify various attributes of the file.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="59ec2-110">설명</span><span class="sxs-lookup"><span data-stu-id="59ec2-110">Remarks</span></span>  
- <span data-ttu-id="59ec2-111">만들려는 `File` 메타 데이터 구조를 사용 하 여는 [imetadataassemblyemit:: Definefile](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md) 메서드.</span><span class="sxs-lookup"><span data-stu-id="59ec2-111">To create a `File` metadata structure, use the [IMetaDataAssemblyEmit::DefineFile](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md) method.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="22f96-110">설명</span><span class="sxs-lookup"><span data-stu-id="22f96-110">Remarks</span></span>  
+ <span data-ttu-id="22f96-111">만들려는 `File` 메타 데이터 구조를 사용 합니다 [imetadataassemblyemit:: Definefile](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md) 메서드.</span><span class="sxs-lookup"><span data-stu-id="22f96-111">To create a `File` metadata structure, use the [IMetaDataAssemblyEmit::DefineFile](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md) method.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="59ec2-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="59ec2-112">Requirements</span></span>  
- <span data-ttu-id="59ec2-113">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="59ec2-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="22f96-112">요구 사항</span><span class="sxs-lookup"><span data-stu-id="22f96-112">Requirements</span></span>  
+ <span data-ttu-id="22f96-113">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="22f96-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="59ec2-114">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="59ec2-114">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="22f96-114">**헤더:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="22f96-114">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="59ec2-115">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="59ec2-115">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="22f96-115">**라이브러리:** MsCorEE.dll에서 리소스로 사용</span><span class="sxs-lookup"><span data-stu-id="22f96-115">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="59ec2-116">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="59ec2-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="22f96-116">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="22f96-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="59ec2-117">참고 항목</span><span class="sxs-lookup"><span data-stu-id="59ec2-117">See Also</span></span>  
- [<span data-ttu-id="59ec2-118">IMetaDataAssemblyEmit 인터페이스</span><span class="sxs-lookup"><span data-stu-id="59ec2-118">IMetaDataAssemblyEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## <a name="see-also"></a><span data-ttu-id="22f96-117">참고자료</span><span class="sxs-lookup"><span data-stu-id="22f96-117">See also</span></span>
+- [<span data-ttu-id="22f96-118">IMetaDataAssemblyEmit 인터페이스</span><span class="sxs-lookup"><span data-stu-id="22f96-118">IMetaDataAssemblyEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
