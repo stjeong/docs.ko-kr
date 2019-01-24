@@ -2,21 +2,21 @@
 title: '&lt;serviceAuthorization&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca
-ms.openlocfilehash: 6c69d10eb2f6cdf4546dd5895d196723417f5494
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 49b89c17f9858c111791276fe15e4a418845c8e8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54622574"
 ---
 # <a name="ltserviceauthorizationgt-element"></a>&lt;serviceAuthorization&gt; 요소
 서비스 작업에 대한 액세스 권한을 부여하는 설정을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
-\<serviceAuthorization >  
+\<behavior>  
+\<serviceAuthorization>  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ ms.locfileid: "54146006"
 |특성|설명|  
 |---------------|-----------------|  
 |impersonateCallerForAllOperations|서비스의 모든 작업이 호출자를 가장하는지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.<br /><br /> 특정 서비스 작업이 호출자를 가장하면 지정된 서비스를 실행하기 전에 스레드 컨텍스트가 호출자 컨텍스트로 전환됩니다.|  
-|principalPermissionMode|서버에서 작업을 수행할 때 사용되는 사용자를 설정합니다. 여기에는 다음 값이 포함됩니다.<br /><br /> -None<br />-UseWindowsGroups<br />-하도록 UseAspNetRoles<br />사용자 지정<br /><br /> 기본값은 UseWindowsGroups입니다. 값은 <xref:System.ServiceModel.Description.PrincipalPermissionMode> 형식입니다. 이 특성을 사용 하는 방법은 참조 하세요. [방법: PrincipalPermissionAttribute 클래스를 사용 하 여 액세스 제한](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)합니다.|  
+|principalPermissionMode|서버에서 작업을 수행할 때 사용되는 사용자를 설정합니다. 여기에는 다음 값이 포함됩니다.<br /><br /> -None<br />-   UseWindowsGroups<br />-   UseAspNetRoles<br />사용자 지정<br /><br /> 기본값은 UseWindowsGroups입니다. 값은 <xref:System.ServiceModel.Description.PrincipalPermissionMode> 형식입니다. 이 특성을 사용 하는 방법은 참조 하세요. [방법: PrincipalPermissionAttribute 클래스를 사용 하 여 액세스 제한](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)합니다.|  
 |roleProviderName|역할 공급자의 이름을 지정하는 문자열로, WCF(Windows Communication Foundation) 응용 프로그램에 대한 역할 정보를 제공합니다. 기본값은 빈 문자열입니다.|  
 |ServiceAuthorizationManagerType|서비스 인증 관리자의 형식을 포함하는 문자열입니다. 자세한 내용은 <xref:System.ServiceModel.ServiceAuthorizationManager>을 참조하세요.|  
   
@@ -53,7 +53,7 @@ ms.locfileid: "54146006"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|서비스의 동작에 대한 설정 컬렉션을 포함합니다.|  
+|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|서비스의 동작에 대한 설정 컬렉션을 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
  이 섹션에는 권한 부여, 사용자 지정 역할 공급자 및 가장에 영향을 주는 요소가 포함되어 있습니다.  
@@ -95,11 +95,11 @@ ms.locfileid: "54146006"
   
  이 구성 요소를 사용 하 여 자세한 예제를 참조 하세요 [서비스 작업에 대 한 액세스 권한 부여](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md) 하 고 [권한 부여 정책](../../../../../docs/framework/wcf/samples/authorization-policy.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>  
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>  
- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [서비스 작업에 대한 액세스 승인](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)  
- [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](../../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
- [방법: PrincipalPermissionAttribute 클래스를 사용 하 여 액세스 제한](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- [권한 부여 정책](../../../../../docs/framework/wcf/samples/authorization-policy.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
+- [보안 동작](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [서비스 작업에 대한 액세스 승인](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)
+- [방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기](../../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [방법: PrincipalPermissionAttribute 클래스를 사용 하 여 액세스 제한](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [권한 부여 정책](../../../../../docs/framework/wcf/samples/authorization-policy.md)
