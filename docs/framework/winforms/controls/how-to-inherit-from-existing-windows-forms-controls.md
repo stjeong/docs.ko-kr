@@ -1,5 +1,5 @@
 ---
-title: '방법: 기존 Windows Forms 컨트롤에서 상속'
+title: '방법: 에서 상속 하는 기존 Windows Forms 컨트롤'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - inheritance [Windows Forms], Windows Forms custom controls
 - custom controls [Windows Forms], inheritance
 ms.assetid: 1e1fc8ea-c615-4cf0-a356-16d6df7444ab
-ms.openlocfilehash: f19b207c840994ffa3aa364135583b5daeb26827
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: dea9b1f870230daff92ac86d00dfda5774309a97
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43890462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54727783"
 ---
-# <a name="how-to-inherit-from-existing-windows-forms-controls"></a>방법: 기존 Windows Forms 컨트롤에서 상속
+# <a name="how-to-inherit-from-existing-windows-forms-controls"></a>방법: 에서 상속 하는 기존 Windows Forms 컨트롤
 기존 컨트롤의 기능을 확장하려는 경우 상속을 통해 기존 컨트롤에서 파생된 컨트롤을 만들 수 있습니다. 기존 컨트롤에서 상속하는 경우 해당 컨트롤의 모든 기능 및 시각적 속성을 상속합니다. 예를 들어에서 상속 된 컨트롤을 만들려는 <xref:System.Windows.Forms.Button>, 새 컨트롤 모양 및 act에는 정확히 표준 같은 <xref:System.Windows.Forms.Button> 제어 합니다. 그런 다음 사용자 지정 메서드 및 속성의 구현을 통해 새 컨트롤의 기능을 확장하거나 수정할 수 있습니다. 일부 컨트롤에서는 변경할 수 있습니다도 상속 된 컨트롤의 시각적 모양을 재정의 하 여 해당 <xref:System.Windows.Forms.Control.OnPaint%2A> 메서드.  
   
 > [!NOTE]
@@ -23,7 +23,7 @@ ms.locfileid: "43890462"
   
 ### <a name="to-create-an-inherited-control"></a>상속된 컨트롤을 만들려면  
   
-1.  새 **Windows Forms 응용 프로그램** 프로젝트를 만듭니다.  
+1.  새 **Windows Forms 애플리케이션** 프로젝트를 만듭니다.  
   
 2.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.  
   
@@ -83,11 +83,11 @@ ms.locfileid: "43890462"
   
 11. 컨트롤을 저장하고 테스트합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [사용자 지정 컨트롤의 종류](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)  
- [방법: Control 클래스에서 상속](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-control-class.md)  
- [방법: UserControl 클래스에서 상속](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)  
- [방법: Windows Forms 컨트롤 작성](../../../../docs/framework/winforms/controls/how-to-author-controls-for-windows-forms.md)  
- [Visual Basic에서 상속된 이벤트 처리기 관련 문제 해결](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)  
- [연습: Visual Basic을 사용하여 Windows Forms 컨트롤에서 상속](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)  
- [연습: Visual C#을 사용하여 Windows Forms 컨트롤에서 상속](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+## <a name="see-also"></a>참고자료
+- [사용자 지정 컨트롤의 종류](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+- [방법: Control 클래스에서 상속](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-control-class.md)
+- [방법: UserControl 클래스에서 상속](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)
+- [방법: Windows forms 컨트롤 작성](../../../../docs/framework/winforms/controls/how-to-author-controls-for-windows-forms.md)
+- [Visual Basic에서 상속된 이벤트 처리기 관련 문제 해결](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+- [연습: Visual Basic을 사용한 Windows Forms 컨트롤에서 상속](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
+- [연습: 시각적 개체를 사용 하 여 Windows Forms 컨트롤에서 상속C#](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

@@ -2,21 +2,21 @@
 title: '&lt;entries&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
-ms.openlocfilehash: 5a61aefd92390eefb95d1f3e39236e53fa264990
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 082b19cd4515deb19ee7190dfeb8ae04ab834830
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645368"
 ---
 # <a name="ltaddgt-of-ltentriesgt"></a>&lt;entries&gt;의 &lt;add&gt;
 이전에 정의된 클라이언트 엔드포인트에 필터를 매핑하는 라우팅 항목을 나타냅니다. 이 필터와 일치하는 메시지가 해당 대상으로 전송됩니다.  
   
  \<system.serviceModel>  
 \<라우팅 >  
-\<filterTables >  
-\<filterTable >  
-\<항목 >  
+\<filterTables>  
+\<filterTable>  
+\<entries>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -58,8 +58,8 @@ ms.locfileid: "54151506"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<라우팅 >](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|라우팅 매핑 항목을 포함하는 구성 섹션입니다.|  
+|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|라우팅 매핑 항목을 포함하는 구성 섹션입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>      
- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType> 
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

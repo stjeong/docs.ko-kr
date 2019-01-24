@@ -1,18 +1,18 @@
 ---
-title: '방법: 사용자 지정 WS-Metadata Exchange 바인딩 구성'
+title: '방법: 구성 사용자 지정 Ws-metadata Exchange 바인딩'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-Metadata Exchange [WCF]
 - WS-Metadata Exchange [WCF], configuring a custom binding
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
-ms.openlocfilehash: 3d6f74d88dc9db775718c0098eccced4750d3b75
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4328306a6b67d2eac498ec48d1769bdf4bd5f81e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50184506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642466"
 ---
-# <a name="how-to-configure-a-custom-ws-metadata-exchange-binding"></a>방법: 사용자 지정 WS-Metadata Exchange 바인딩 구성
+# <a name="how-to-configure-a-custom-ws-metadata-exchange-binding"></a>방법: 구성 사용자 지정 Ws-metadata Exchange 바인딩
 이 항목에서는 사용자 지정 WS-Metadata 교환 바인딩을 구성하는 방법에 대해 설명합니다. Windows Communication Foundation (WCF) 시스템 정의 메타 데이터 바인딩이 포함 되어 있지만 원하는 모든 바인딩을 사용 하 여 메타 데이터를 게시할 수 있습니다. 이 항목에서는 `wsHttpBinding`을 사용하여 메타데이터를 게시하는 방법을 보여 줍니다. 이 바인딩은 메타데이터를 보안 방법으로 노출하는 옵션을 제공합니다. 이 문서의 코드를 기반으로 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)합니다.  
   
 ### <a name="using-a-configuration-file"></a>구성 파일 사용  
@@ -113,9 +113,9 @@ ms.locfileid: "50184506"
     Console.WriteLine("Metadata section: " + section.Dialect.ToString());  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 게시 동작](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)  
- [메타데이터 검색](../../../../docs/framework/wcf/samples/retrieve-metadata.md)  
- [메타데이터](../../../../docs/framework/wcf/feature-details/metadata.md)  
- [메타데이터 게시](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
- [메타데이터 엔드포인트 게시](../../../../docs/framework/wcf/publishing-metadata-endpoints.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 게시 동작](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)
+- [메타데이터 검색](../../../../docs/framework/wcf/samples/retrieve-metadata.md)
+- [메타데이터](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [메타데이터 게시](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)
+- [메타데이터 엔드포인트 게시](../../../../docs/framework/wcf/publishing-metadata-endpoints.md)

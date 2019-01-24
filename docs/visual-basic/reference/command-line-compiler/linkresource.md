@@ -9,12 +9,12 @@ helpviewer_keywords:
 - linkres compiler option [Visual Basic]
 - -linkres compiler option [Visual Basic]
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
-ms.openlocfilehash: 97e0ccd46f413cc05b659731436bb141ee178419
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 5555f83107a40b40c7f05c7cc5729f721727f67c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48849921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54729998"
 ---
 # <a name="-linkresource-visual-basic"></a>-linkresource (Visual Basic)
 관리되는 리소스에 대한 링크를 만듭니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "48849921"
   
 ## <a name="arguments"></a>인수  
  `filename`  
- 필수. 어셈블리에 연결할 리소스 파일입니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").  
+ 필수 요소. 어셈블리에 연결할 리소스 파일입니다. 파일 이름에 공백이 있으면 이름을 따옴표로 묶습니다 ("").  
   
  `identifier`  
  선택 사항입니다. 리소스의 논리적 이름입니다. 리소스를 로드 하는 데 사용 되는 이름입니다. 기본값은 파일 이름입니다. 파일 인지 공용 또는 개인 어셈블리 매니페스트에서 예를 들어 지정할 수 있습니다: `-linkres:filename.res,myname.res,public`합니다. 기본적으로 `filename` 어셈블리에 공개 합니다.  
@@ -57,7 +57,7 @@ vbc -linkresource:rf.resource in.vb
   
 ## <a name="see-also"></a>참고자료
 
-- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
-- [-리소스 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md)  
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [-리소스 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md)
 - [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

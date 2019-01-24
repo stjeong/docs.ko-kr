@@ -2,20 +2,20 @@
 title: '&lt;webHttpBinding&gt;의 &lt;transport&gt;'
 ms.date: 03/30/2017
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
-ms.openlocfilehash: 70145678048b3e7843d9d458f80d3d149544447a
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 657de92129d27e70834cb401cde42d24b633f7ed
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54677019"
 ---
 # <a name="lttransportgt-of-ltwebhttpbindinggt"></a>&lt;webHttpBinding&gt;의 &lt;transport&gt;
 HTTP 요청을 수신하도록 구성된 서비스 엔드포인트의 전송 수준 보안 설정을 정의합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<webHttpBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
 \<transport>  
   
@@ -84,14 +84,14 @@ HTTP 요청을 수신하도록 구성된 서비스 엔드포인트의 전송 수
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md)|보안 기능을 나타내는 합니다 [ \<wsHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) 요소입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.HttpTransportSecurity>  
- <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>  
- <xref:System.ServiceModel.WebHttpSecurity.Transport%2A>  
- <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.HttpTransportSecurity>
+- <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.WebHttpSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

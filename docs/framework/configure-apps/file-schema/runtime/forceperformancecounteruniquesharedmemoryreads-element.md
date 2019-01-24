@@ -1,5 +1,5 @@
 ---
-title: '&lt;forcePerformanceCounterUniqueSharedMemoryReads&gt; 요소'
+title: '&lt;forcePerformanceCounterUniqueSharedMemoryReads&gt; Element'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - forcePerformanceCounterUniqueSharedMemoryReads element
@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 91149858-4810-4f65-9b48-468488172c9b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5b53debd8f71bddb353ff7709decf0142c339e5d
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: b8ae2c87a135c8ef9a43b6d11a62b833ef43c9a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681003"
 ---
-# <a name="ltforceperformancecounteruniquesharedmemoryreadsgt-element"></a>&lt;forcePerformanceCounterUniqueSharedMemoryReads&gt; 요소
-PerfCounter.dll이 .NET Framework 버전 1.1 응용 프로그램에서 CategoryOptions 레지스트리 설정을 사용하여 성능 카운터 데이터를 범주별 공유 메모리에서 로드할지 또는 전역 메모리에서 로드할지를 결정하도록 지정합니다.  
+# <a name="ltforceperformancecounteruniquesharedmemoryreadsgt-element"></a>&lt;forcePerformanceCounterUniqueSharedMemoryReads&gt; Element
+PerfCounter.dll이 .NET Framework 버전 1.1 애플리케이션에서 CategoryOptions 레지스트리 설정을 사용하여 성능 카운터 데이터를 범주별 공유 메모리에서 로드할지 또는 전역 메모리에서 로드할지를 결정하도록 지정합니다.  
   
  \<configuration>  
 \<runtime>  
-\<forcePerformanceCounterUniqueSharedMemoryReads >  
+\<forcePerformanceCounterUniqueSharedMemoryReads>  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ enabled="true|false"/>
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -79,6 +79,6 @@ enabled="true|false"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

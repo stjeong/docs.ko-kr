@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c3fd130759ab11b54b597d5c099c33dab93070ae
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 3e231c4fa51e6e66cba6227233cf73dd1cd4ebbe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33429252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54733924"
 ---
 # <a name="isframeworkassembly-function"></a>IsFrameworkAssembly 함수
 지정된 된 어셈블리 관리 되는지 여부를 나타내는 값을 가져옵니다.  
@@ -51,14 +51,14 @@ HRESULT IsFrameworkAssembly (
  [in] `pwzFrameworkAssemblyIdentity`의 크기입니다.  
   
 ## <a name="remarks"></a>설명  
- `pwzAssemblyReference` 매개 변수는 어셈블리의 이름이 포함 된 문자열에 대 한 포인터입니다.  
+ `pwzAssemblyReference` 매개 변수는 어셈블리의 이름이 들어 있는 문자열에 대 한 포인터입니다.  
   
- 이 어셈블리는.NET Framework의 일부인 경우는 `pbIsFrameworkAssembly` 매개 변수는 부울 값을 포함 됩니다 `true`합니다.  
+ 이 어셈블리가.NET Framework의 일부인 경우 합니다 `pbIsFrameworkAssembly` 매개 변수는 부울 값을 포함 하는 `true`합니다.  
   
  명명된 된 어셈블리는.NET Framework의 일부가 아닌 경우 또는 경우는 `pwzAssemblyReference` 매개 변수는 어셈블리 이름을 지정 하지 않습니다 `pbIsFrameworkAssembly` 의 부울 값이 포함 됩니다 `false`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
-## <a name="see-also"></a>참고 항목  
- [Fusion 전역 정적 함수](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## <a name="see-also"></a>참고자료
+- [Fusion 전역 정적 함수](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

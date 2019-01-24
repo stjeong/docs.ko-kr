@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0d154985e9c1614e6b8f13a55410ead0cb5e861b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 0a072e124343641c9f75fb9f924a6409efc8e1d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33441057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54719939"
 ---
 # <a name="corlinkeroptions-enumeration"></a>CorLinkerOptions 열거형
 메타데이터 링커 옵션을 선택하는 플래그를 지정합니다.  
@@ -40,14 +40,14 @@ typedef enum CorLinkerOptions {
 |멤버|설명|  
 |------------|-----------------|  
 |`MDAssembly`|전용 형식 및 전역 함수 유지 되지 않습니다.|  
-|`MDNetModule`|개인 형식 및 전역 함수는 유지 됩니다.|  
+|`MDNetModule`|전용 형식 및 전역 함수 유지 됩니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorHdr.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

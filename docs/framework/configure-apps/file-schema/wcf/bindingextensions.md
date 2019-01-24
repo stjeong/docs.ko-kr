@@ -2,12 +2,12 @@
 title: '&lt;bindingExtensions&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8373f94d-d095-486f-8f1e-4ac2f72b58c7
-ms.openlocfilehash: c2b097926ac21dda6a86e1e21958e15c9b63b1c4
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2b0e3fe417d76a08b7dd3295b68a179c3d9acefc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672897"
 ---
 # <a name="ltbindingextensionsgt"></a>&lt;bindingExtensions&gt;
 이 섹션은 시스템 또는 응용 프로그램 구성 파일의 사용자 정의 바인딩을 사용할 수 있도록 합니다. `add` 키워드를 사용하고 요소의 `type` 특성을 사용자 정의 바인딩으로 설정하고 `name` 특성을 사용자 정의 바인딩의 이름으로 설정하여 사용자 정의 바인딩을 이 컬렉션에 추가할 수 있습니다.  
@@ -41,5 +41,5 @@ ms.locfileid: "54148437"
 </services>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+## <a name="see-also"></a>참고자료
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)

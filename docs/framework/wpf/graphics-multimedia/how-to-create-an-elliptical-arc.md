@@ -6,12 +6,12 @@ helpviewer_keywords:
 - elliptical arcs [WPF], creating
 - arcs [WPF], elliptical
 ms.assetid: 3dcfe502-3485-45de-99fb-d53a1367c484
-ms.openlocfilehash: 7ca7d06aa25f8dfae648d8c54c8b95cc277ffbf9
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 4f4461f778e2c86adb3932edf8435ca75b3b5e98
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54679567"
 ---
 # <a name="how-to-create-an-elliptical-arc"></a>방법: 타원형 원호 만들기
 이 예제에서는 타원형 호를 그리는 방법을 보여 줍니다. 타원형 호를 만들려면 사용 합니다 <xref:System.Windows.Media.PathGeometry>, <xref:System.Windows.Media.PathFigure>, 및 <xref:System.Windows.Media.ArcSegment> 클래스입니다.  
@@ -35,6 +35,6 @@ ms.locfileid: "44087439"
   
  이 예제는 더 큰 샘플의 일부입니다. 전체 샘플을 참조 하세요. 합니다 [기 하 도형 샘플](https://go.microsoft.com/fwlink/?LinkID=159989)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [정방형 3차원 곡선 만들기](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-quadratic-bezier-curve.md)  
- [입방형 3차원 곡선 만들기](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-cubic-bezier-curve.md)
+## <a name="see-also"></a>참고자료
+- [정방형 3차원 곡선 만들기](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-quadratic-bezier-curve.md)
+- [입방형 3차원 곡선 만들기](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-cubic-bezier-curve.md)

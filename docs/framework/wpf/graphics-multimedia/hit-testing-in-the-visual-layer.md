@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hit testing functionality [WPF]
 - visual layer [WPF], hit testing functionality
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
-ms.openlocfilehash: fe54578407e881ec7d6782ec21100b29eded07a3
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 27e5e8c939cf95b6406c810c25940cc04420b22c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45988584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54692417"
 ---
 # <a name="hit-testing-in-the-visual-layer"></a>시각적 계층에서 적중 테스트
 이 항목에서는 시각적 계층에서 제공하는 적중 테스트 기능의 개요를 제공합니다. 적중된 테스트 지원을 사용 하는 기 하 도형 또는 점 값의 렌더링된 된 콘텐츠에 속하는지 여부를 결정할 수는 <xref:System.Windows.Media.Visual>, 여러 개체를 선택할 선택 직사각형과 같은 사용자 인터페이스 동작을 구현할 수 있습니다.  
@@ -24,13 +24,13 @@ ms.locfileid: "45988584"
 ## <a name="hit-testing-scenarios"></a>적중 테스트 시나리오  
  합니다 <xref:System.Windows.UIElement> 클래스를 제공 합니다 <xref:System.Windows.UIElement.InputHitTest%2A> 메서드를 사용 하면 지정된 된 좌표 값을 사용 하 여 요소에 대해 적중 테스트 합니다. 대부분의 경우에 <xref:System.Windows.UIElement.InputHitTest%2A> 메서드 구현 적중 요소 테스트에 대 한 원하는 기능을 제공 합니다. 그러나 시각적 계층에서 적중 테스트를 구현해야 하는 몇 가지 시나리오가 있습니다.  
   
--   이외에 대 한 테스트 적중<xref:System.Windows.UIElement> 개체:은 적중 테스트 하 고 아닌 경우이 적용 됩니다<xref:System.Windows.UIElement> 같은 개체 <xref:System.Windows.Media.DrawingVisual> 또는 그래픽 개체입니다.  
+-   적중 테스트 이외의<xref:System.Windows.UIElement> 개체: 이 적중 테스트 이외의 경우 적용 됩니다<xref:System.Windows.UIElement> 같은 개체 <xref:System.Windows.Media.DrawingVisual> 또는 그래픽 개체입니다.  
   
--   기하 도형을 사용하는 적중 테스트: 점의 좌표 값이 아닌 기하 도형 개체를 사용하여 적중 테스트를 수행해야 하는 경우에 적용됩니다.  
+-   적중 횟수 테스트 기 하 도형을 사용 하 여: 점의 좌표 값이 아닌 기 하 도형 개체를 사용 하 여 테스트를 적중 해야 할 경우이 적용 됩니다.  
   
--   여러 개체에 대한 적중 테스트: 겹치는 개체와 같은 여러 개체에 대해 적중 테스트를 수행해야 하는 경우에 적용됩니다. 단지 첫 번째 개체만이 아니라 기하 도형 또는 점을 교차하는 모든 시각적 개체에 대한 결과를 얻을 수 있습니다.  
+-   적중 테스트를 여러 개체에 대 한 합니다. 겹치는 개체와 같은 여러 개체에 대해 적중 테스트 해야 하는 경우에 적용 됩니다. 단지 첫 번째 개체만이 아니라 기하 도형 또는 점을 교차하는 모든 시각적 개체에 대한 결과를 얻을 수 있습니다.  
   
--   무시 <xref:System.Windows.UIElement> 적중 테스트 정책을: 무시 해야 하는 경우에 적용 됩니다는 <xref:System.Windows.UIElement> 적중 횟수를 요소가 해제 되어 있는지 여부 또는 보이지 않는 등의 요인을 고려 하는 정책을 테스트 합니다.  
+-   무시 <xref:System.Windows.UIElement> 적중 테스트 정책: 무시 해야 하는 경우에 적용 됩니다는 <xref:System.Windows.UIElement> 적중 횟수를 요소가 해제 되어 있는지 여부 또는 보이지 않는 등의 요인을 고려 하는 정책을 테스트 합니다.  
   
 > [!NOTE]
 >  시각적 계층의 적중 테스트를 보여 주는 전체 코드 샘플에 대해서는 [DrawingVisuals를 사용하는 적중 테스트 샘플](https://go.microsoft.com/fwlink/?LinkID=159994) 및 [Win32 상호 운용성을 사용하는 적중 테스트 샘플](https://go.microsoft.com/fwlink/?LinkID=159995)을 참조하세요.  
@@ -138,13 +138,13 @@ ms.locfileid: "45988584"
  [!code-csharp[HitTestingOverview#108](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#108)]
  [!code-vb[HitTestingOverview#108](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#108)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>  
- <xref:System.Windows.Media.HitTestResult>  
- <xref:System.Windows.Media.HitTestResultCallback>  
- <xref:System.Windows.Media.HitTestFilterCallback>  
- <xref:System.Windows.UIElement.IsHitTestVisible%2A>  
- [적중 테스트 DrawingVisuals 샘플을 사용 하 여](https://go.microsoft.com/fwlink/?LinkID=159994)  
- [적중 테스트 Win32 상호 운용성 샘플](https://go.microsoft.com/fwlink/?LinkID=159995)  
- [시각적 요소의 기하 도형 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)  
- [Win32 호스트 컨테이너를 사용하여 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>
+- <xref:System.Windows.Media.HitTestResult>
+- <xref:System.Windows.Media.HitTestResultCallback>
+- <xref:System.Windows.Media.HitTestFilterCallback>
+- <xref:System.Windows.UIElement.IsHitTestVisible%2A>
+- [적중 테스트 DrawingVisuals 샘플을 사용 하 여](https://go.microsoft.com/fwlink/?LinkID=159994)
+- [적중 테스트 Win32 상호 운용성 샘플](https://go.microsoft.com/fwlink/?LinkID=159995)
+- [시각적 요소의 기하 도형 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)
+- [Win32 호스트 컨테이너를 사용하여 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)

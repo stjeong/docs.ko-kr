@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 55a7eb431432b67b3252853d14bf93be304ee883
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 86cd4e7db5aa79ff85e5079813844d2af1598f4f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48845439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642807"
 ---
 # <a name="lttracegt-element"></a>&lt;추적&gt; 요소
 추적 메시지를 수집하고 저장하고 라우팅하는 수신기가 포함되어 있습니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<추적 >  
+\<system.diagnostics>  
+\<trace>  
   
 ## <a name="syntax"></a>구문  
   
@@ -69,7 +69,7 @@ ms.locfileid: "48845439"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
   
 ## <a name="example"></a>예제  
@@ -87,9 +87,9 @@ ms.locfileid: "48845439"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

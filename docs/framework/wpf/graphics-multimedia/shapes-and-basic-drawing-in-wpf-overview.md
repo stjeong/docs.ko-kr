@@ -12,12 +12,12 @@ helpviewer_keywords:
 - vectors [WPF], drawing
 - Shape objects [WPF]
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
-ms.openlocfilehash: 47df352c3b001f088f34ea057b34698efc4f4b53
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: e3a18d1cf788dfa8f2a9b05077b30af7eeabe584
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086806"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54665905"
 ---
 # <a name="shapes-and-basic-drawing-in-wpf-overview"></a>WPF에서 Shape 및 기본 그리기 개요
 이 항목에서는 사용 하 여 그리는 방법에 대해 간략히 설명 <xref:System.Windows.Shapes.Shape> 개체입니다. A <xref:System.Windows.Shapes.Shape> 유형의 <xref:System.Windows.UIElement> 화면에 도형을 그릴 수 있도록 합니다. UI 요소 이므로 <xref:System.Windows.Shapes.Shape> 내에서 개체를 사용할 수 있습니다 <xref:System.Windows.Controls.Panel> 요소 및 대부분의 컨트롤입니다.  
@@ -214,9 +214,9 @@ myPolygon.StrokeThickness = 2;
   
  이전 예제에서는 각 도형 개체에 단일 변환이 적용되었습니다. 여러 변환 셰이프 (또는 다른 UI 요소)를 적용 하려면 사용을 <xref:System.Windows.Media.TransformGroup>입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [단색 및 그라데이션을 사용한 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [연습: 내 첫 WPF 데스크톱 응용 프로그램](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+## <a name="see-also"></a>참고자료
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [단색 및 그라데이션을 사용한 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [연습: 내 첫 WPF 데스크톱 애플리케이션](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

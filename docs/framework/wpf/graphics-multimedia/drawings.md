@@ -13,23 +13,23 @@ helpviewer_keywords:
 - Drawing objects [WPF]
 - DrawingGroup objects [WPF]
 ms.assetid: 6ab1fe6b-3eed-4432-a248-b487e7234e5b
-ms.openlocfilehash: 8b142cfc65e39e48502cde263fea51378c47f43e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: e70367d199ece207589d67ee38cb71f0cdda5b11
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33556040"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684117"
 ---
 # <a name="drawings"></a>Drawing
-<xref:System.Windows.Media.Drawing> 개체는 효율적으로 도형, 이미지 또는 텍스트를 그리는 데 사용 됩니다. 드로잉으로 그릴 때 사용 되는 <xref:System.Windows.Media.DrawingBrush> 프로그래밍할 <xref:System.Windows.Media.Visual> 개체입니다.  
+<xref:System.Windows.Media.Drawing> 개체는 도형, 이미지 또는 텍스트를 효율적으로 그리는 데 사용 됩니다. 사용 하 여 그릴 때 사용 되는 그리기를 <xref:System.Windows.Media.DrawingBrush> 프로그래밍할 <xref:System.Windows.Media.Visual> 개체입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Drawing 개체 개요](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
   [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Drawing>  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Drawing>
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)

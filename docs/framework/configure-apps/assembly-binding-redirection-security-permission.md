@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 24a5cdff-7ed9-4195-93f3-edf6899019fc
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: e6690a4f11bb1a88e2d77c67ccb29056c8e03f96
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: d4483d11903d61135585a2b6c2c33eff48300151
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47088663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54616016"
 ---
 # <a name="assembly-binding-redirection-security-permission"></a>어셈블리 바인딩 리디렉션 보안 권한
 응용 프로그램 구성 파일에서 어셈블리 바인딩을 명시적으로 리디렉션하려면 보안 권한이 필요합니다. 이는 .NET Framework 어셈블리와 타사 어셈블리의 리디렉션 모두에 적용됩니다. 설정 하 여 사용 권한을 부여 합니다 <xref:System.Security.Permissions.SecurityPermissionFlag> 플래그를 <xref:System.Security.Permissions.SecurityPermission>. 관리 되는 어셈블리 기본적으로 권한이 없습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "47088663"
   
  관리자 지원 하거나 지정된 된 컴퓨터에서 특정 시나리오를 제한 하려면 이러한 보안 설정을 변경할 수 있습니다. 변경 하기 위한 도구가 합니다 **BindingRedirects** 기본값과; 설정 플래그 관리자로 수동으로 편집 해야 사용자의 컴퓨터 Security.config 파일.  
   
-## <a name="see-also"></a>참고 항목  
- [게시자 정책 파일 및 Side-by-side-실행](https://msdn.microsoft.com/library/97a042be-4d72-40c3-91c0-76fd36bdf133)  
- [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)  
- [Side-by-Side 실행](../../../docs/framework/deployment/side-by-side-execution.md)
+## <a name="see-also"></a>참고자료
+- [게시자 정책 파일 및 Side-by-side-실행](https://msdn.microsoft.com/library/97a042be-4d72-40c3-91c0-76fd36bdf133)
+- [방법: 자동 바인딩 리디렉션 사용 설정 및 해제](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+- [Side-by-Side 실행](../../../docs/framework/deployment/side-by-side-execution.md)

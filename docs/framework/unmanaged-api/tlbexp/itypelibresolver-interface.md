@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: baff7dac7f1ddc8546bcb52627eeee992921a395
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: bbd8e15b7f708df628f75dc9812eca0f84f36434
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925885"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672996"
 ---
 # <a name="itypelibresolver-interface"></a>ITypeLibResolver 인터페이스
 제공 된 [ResolveTypeLib 메서드](../../../../docs/framework/unmanaged-api/tlbexp/resolvetypelib-method.md), 형식 라이브러리의 파일 경로 확인 하는 합니다.  
@@ -33,14 +33,14 @@ ms.locfileid: "42925885"
 |[ResolveTypeLib 메서드](../../../../docs/framework/unmanaged-api/tlbexp/resolvetypelib-method.md)|해당 정규화 된 경로 반환 하 여 형식 라이브러리의 단순한 이름을 확인 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** TlbRef.idl, TlbRef.h  
   
  **라이브러리:** TlbRef.lib  
   
- **.NET framework 버전:** 2.0, 3.0, 3.5, 4  
+ **.NET framework 버전:** 4, 3.5, 3.0, 2.0  
   
-## <a name="see-also"></a>참고 항목  
- [Tlbexp 도우미 함수](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx 함수](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+## <a name="see-also"></a>참고자료
+- [Tlbexp 도우미 함수](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [LoadTypeLibEx 함수](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

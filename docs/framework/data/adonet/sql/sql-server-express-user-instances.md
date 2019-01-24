@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
-ms.openlocfilehash: 31c0efbe953b56304c264444082185b9a9227d60
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: d7ab6694ec467f957228bfde0a044c577bc2f923
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43745100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54664085"
 ---
 # <a name="sql-server-express-user-instances"></a>SQL Server Express 사용자 인스턴스
 Microsoft SQL Server Express Edition(SQL Server Express)은 .NET Framework Data Provider for SQL Server(`SqlClient`)를 사용하는 경우에만 사용 가능한 기능인 사용자 인스턴스를 지원합니다. 사용자 인스턴스는 부모 인스턴스에서 생성된 별도의 SQL Server Express 데이터베이스 엔진 인스턴스입니다. 로컬 컴퓨터에서 관리자가 아닌 사용자는 사용자 인스턴스를 사용하여 SQL Server Express 데이터베이스에 연결할 수 있습니다. 각 인스턴스는 사용자당 하나의 인스턴스를 기준으로 개인 사용자의 보안 컨텍스트 내에서 실행됩니다.  
@@ -150,8 +150,8 @@ private static void OpenSqlConnection()
   
 -   Windows 인증을 사용하는 전용 ASP.NET 호스팅. 단일 SQL Server Express 인스턴스를 인트라넷에 호스트할 수 있습니다. 응용 프로그램에서는 가장이 아닌 ASPNET Windows 계정을 사용하여 연결합니다. 모든 응용 프로그램이 동일한 사용자 인스턴스를 공유하여 각 사용자에 대해 격리되지 않는 타사 또는 공유 호스팅 시나리오에서는 사용자 인스턴스를 사용하면 안 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [연결 문자열](../../../../../docs/framework/data/adonet/connection-strings.md)  
- [데이터 소스에 연결](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [연결 문자열](../../../../../docs/framework/data/adonet/connection-strings.md)
+- [데이터 소스에 연결](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

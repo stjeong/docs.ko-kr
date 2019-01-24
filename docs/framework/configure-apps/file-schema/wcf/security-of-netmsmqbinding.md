@@ -2,20 +2,20 @@
 title: '&lt;netMsmqBinding&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-ms.openlocfilehash: ec164fa8830321f90f824f85841a379d577ab5af
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 71f0c10c336a9682971bc774141cb0c3bd37c092
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54696388"
 ---
 # <a name="ltsecuritygt-of-ltnetmsmqbindinggt"></a>&lt;netMsmqBinding&gt;의 &lt;security&gt;
 MSMQ 바인딩에 대한 보안 설정을 정의합니다. 이 클래스는 전송 또는 SOAP 보안의 사용 여부 그리고 보안이 사용된다면 어떤 인증 모드 및 보호 수준을 사용하는지를 지정합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<netMsmqBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
   
 ## <a name="syntax"></a>구문  
@@ -53,14 +53,14 @@ MSMQ 바인딩에 대한 보안 설정을 정의합니다. 이 클래스는 전�
 |-------------|-----------------|  
 |바인딩|바인딩 요소를 [ \<netMsmqBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>  
- <xref:System.ServiceModel.NetMsmqBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>  
- <xref:System.ServiceModel.NetMsmqSecurity>  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>
+- <xref:System.ServiceModel.NetMsmqBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>
+- <xref:System.ServiceModel.NetMsmqSecurity>
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [WCF의 큐](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - animation [WPF], color of GradientStop objects
 - GradientStop objects [WPF], animating position of
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
-ms.openlocfilehash: fcbb546b64810416d3f7dbe052da77b7bc941e7a
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 48f10d418c4f584fd9d24f9292efbca5a941643c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44083987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54711142"
 ---
 # <a name="how-to-animate-the-position-or-color-of-a-gradient-stop"></a>방법: 그라데이션 중지점의 위치 또는 색에 애니메이션 효과 적용
 애니메이션을 적용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.GradientStop.Color%2A> 하 고 <xref:System.Windows.Media.GradientStop.Offset%2A> 의 <xref:System.Windows.Media.GradientStop> 개체입니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "44083987"
   
  추가 예제를 보려면 합니다 [브러시 샘플](https://go.microsoft.com/fwlink/?LinkID=159973)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.GradientStop>  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.GradientStop>
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Storyboard 개요](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

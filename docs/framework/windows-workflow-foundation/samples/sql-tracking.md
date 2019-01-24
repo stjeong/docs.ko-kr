@@ -2,12 +2,12 @@
 title: SQL 추적
 ms.date: 03/30/2017
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
-ms.openlocfilehash: 741df337187b2a5fffe63052c9fafbd430f7c2fc
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 240e6ab750b4ef82d2afcf1c2ab26c08369926d6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690607"
 ---
 # <a name="sql-tracking"></a>SQL 추적
 이 샘플에서는 SQL 데이터베이스에 추적 레코드를 기록하는 사용자 지정 SQL 추적 참가자를 작성하는 방법을 보여 줍니다. Windows WF (Workflow Foundation) 워크플로 인스턴스 실행에 대 한 가시성을 얻을 수를 추적 하는 워크플로 제공 합니다. 추적 런타임에서는 워크플로를 실행하는 동안 워크플로 추적 레코드를 내보냅니다. 워크플로 추적에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)합니다.
@@ -25,7 +25,7 @@ ms.locfileid: "48836383"
   
 4.  Ctrl+Shift+B를 눌러 솔루션을 빌드합니다.  
   
-5.  F5 키를 눌러 응용 프로그램을 실행합니다.  
+5.  F5 키를 눌러 애플리케이션을 실행합니다.  
   
      브라우저 창이 열리고 응용 프로그램의 디렉터리 목록이 표시됩니다.  
   
@@ -59,5 +59,5 @@ ms.locfileid: "48836383"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking`  
   
-## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)
+## <a name="see-also"></a>참고자료
+- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

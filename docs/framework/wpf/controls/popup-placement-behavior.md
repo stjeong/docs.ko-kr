@@ -7,12 +7,12 @@ helpviewer_keywords:
 - placing popups [WPF]
 - positioning popups [WPF]
 ms.assetid: fbf642e9-f670-4efd-a7af-a67468a1c8e1
-ms.openlocfilehash: 99875de320d6728fdacb55c153064c5c1267efdf
-ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
+ms.openlocfilehash: 924d099a17390eeac61bd87a0c3ca0e05b1c8172
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672086"
 ---
 # <a name="popup-placement-behavior"></a>Popup 배치 동작
 <xref:System.Windows.Controls.Primitives.Popup> 컨트롤 응용 프로그램 위에 떠 있는 별도 창에서 콘텐츠를 표시 합니다. 위치를 지정할 수 있습니다는 <xref:System.Windows.Controls.Primitives.Popup> 컨트롤, 마우스를 또는 사용 하 여 화면을 기준으로 합니다 <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, 및 <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> 속성입니다.  이러한 속성의 위치를 지정 하는 유연성을 제공 하기 위해 함께 작동 합니다 <xref:System.Windows.Controls.Primitives.Popup>합니다.  
@@ -227,5 +227,5 @@ Placement가 Mouse이고 Popup이 화면의 아래쪽 가장자리와 만남
 ### <a name="customizing-popup-placement"></a>Popup 배치 사용자 지정  
  대상 원점 및 popup 맞춤 지점을 설정 하 여 사용자 지정할 수 있습니다 합니다 <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> 속성을 <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>입니다. 그런 다음 정의 <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> 에 대 한 가능한 배치 지점 및 기본 축을 (기본 설정의 순서로)의 집합을 반환 하는 대리자는 <xref:System.Windows.Controls.Primitives.Popup>합니다. 가장 큰 부분을 표시 하는 지점이 <xref:System.Windows.Controls.Primitives.Popup> 을 선택 합니다.  위치를 <xref:System.Windows.Controls.Primitives.Popup> 하는 경우 자동으로 조정 됩니다는 <xref:System.Windows.Controls.Primitives.Popup> 화면의 가장자리에 의해 숨겨집니다. 예제를 보려면 [사용자 지정 팝업 위치 지정](../../../../docs/framework/wpf/controls/how-to-specify-a-custom-popup-position.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [Popup Placement Sample](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS)(Popup 배치 샘플)
+## <a name="see-also"></a>참고자료
+- [Popup Placement Sample](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS)(Popup 배치 샘플)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 상수 선언(Visual Basic)'
+title: '방법: (Visual Basic) 상수 선언'
 ms.date: 07/20/2015
 f1_keywords:
 - vb.constant
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - module-level constants and variables
 - Object data type [Visual Basic], declaring constants
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
-ms.openlocfilehash: ce45e4df7f74cd68bde0fb2adba10197a11edb1b
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: e45ca7eeca9ce178abf3ab5cab6d791f799f1d09
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43394316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54678839"
 ---
-# <a name="how-to-declare-a-constant-visual-basic"></a>방법: 상수 선언(Visual Basic)
+# <a name="how-to-declare-a-constant-visual-basic"></a>방법: (Visual Basic) 상수 선언
 사용 된 `Const` 상수를 선언 하 고 해당 값을 설정 하는 문. 상수를 선언 하 여 값으로 의미 있는 이름을 할당 합니다. 상수 선언 되 면 수정 하거나 새 값을 지정할 수 없습니다.  
   
  프로시저 내에서 또는 선언 부분 모듈, 클래스 또는 구조체에서에서 상수를 선언합니다. 클래스 또는 구조 수준 상수 `Private` 기본적으로 선언할 수도 있지만 `Public`, `Friend`, `Protected`, 또는 `Protected Friend` 적절 한 수준의 코드 액세스에 대 한 합니다.  
@@ -65,14 +65,25 @@ ms.locfileid: "43394316"
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [Const 문](../../../../visual-basic/language-reference/statements/const-statement.md)  
- [상수 및 리터럴 데이터 형식](constant-and-literal-data-types.md)  
- [상수 개요](constants-overview.md) [방법: 상수 선언](how-to-declare-a-constant.md) [사용자 정의 상수](user-defined-constants.md) [상수 및 리터럴 데이터 형식](constant-and-literal-data-types.md) [방법: 그룹 관련 상수 값 그룹화](how-to-group-related-constant-values-together.md) [열거형 개요](enumerations-overview.md) [방법: 열거형 선언](how-to-declare-enumerations.md) [방법: 열거형 멤버 참조](how-to-refer-to-an-enumeration-member.md) [열거형 및 이름 한정](enumerations-and-name-qualification.md) [방법: 열거형 반복](how-to-iterate-through-an-enumeration.md) [하는 방법: 열거형 값과 연결 된 문자열 확인](how-to-determine-the-string-associated-with-an-enumeration-value.md) [열거형을 사용 하는 경우](when-to-use-an-enumeration.md)
+## <a name="see-also"></a>참고자료
+- [Const 문](../../../../visual-basic/language-reference/statements/const-statement.md)
+- [상수 및 리터럴 데이터 형식](constant-and-literal-data-types.md)
+- [상수 개요](constants-overview.md)
+- [방법: 상수 선언](how-to-declare-a-constant.md)
+- [사용자 정의 상수](user-defined-constants.md)
+- [상수 및 리터럴 데이터 형식](constant-and-literal-data-types.md)
+- [방법: 관련 상수 값 그룹화](how-to-group-related-constant-values-together.md)
+- [열거형 개요](enumerations-overview.md)
+- [방법: 열거형 선언](how-to-declare-enumerations.md)
+- [방법: 열거형 멤버 참조](how-to-refer-to-an-enumeration-member.md)
+- [열거형 및 이름 한정](enumerations-and-name-qualification.md)
+- [방법: 열거형 반복](how-to-iterate-through-an-enumeration.md)
+- [방법: 열거형 값과 연결 된 문자열 확인](how-to-determine-the-string-associated-with-an-enumeration-value.md)
+- [열거형을 사용하는 경우](when-to-use-an-enumeration.md)
 
- [열거형 개요](enumerations-overview.md)  
- [상수 개요](constants-overview.md)  
- [방법: 열거형 선언](how-to-declare-enumerations.md)  
- [열거형 및 이름 한정](enumerations-and-name-qualification.md)  
- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [상수 및 열거형](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [열거형 개요](enumerations-overview.md)
+- [상수 개요](constants-overview.md)
+- [방법: 열거형 선언](how-to-declare-enumerations.md)
+- [열거형 및 이름 한정](enumerations-and-name-qualification.md)
+- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [상수 및 열거형](../../../../visual-basic/language-reference/constants-and-enumerations.md)

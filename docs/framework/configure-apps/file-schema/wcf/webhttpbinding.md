@@ -2,18 +2,18 @@
 title: '&lt;webHttpBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
-ms.openlocfilehash: 6299100a5dd29bed8d4a30bcb4fbc9631d7bf967
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: b75762fdef4f0c71c58542be9f674da291fcf23f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54656572"
 ---
 # <a name="ltwebhttpbindinggt"></a>&lt;webHttpBinding&gt;
 SOAP 메시지 대신 HTTP 요청에 응답 하는 Windows Communication Foundation (WCF) 웹 서비스에 대 한 끝점을 구성 하는 데 사용 되는 바인딩 요소를 정의 합니다.  
   
 \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<webHttpBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -90,11 +90,11 @@ SOAP 메시지 대신 HTTP 요청에 응답 하는 Windows Communication Foundat
   
  WCF의 배포 및 ASP에 대 한 지원. AJAX 통합 둘 다 웹 프로그래밍 모델 위에 구축 됩니다. 모델에 대 한 자세한 내용은 참조 하세요. [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.WebHttpBinding>  
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>  
- [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.WebHttpBinding>
+- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
+- [WCF 웹 HTTP 프로그래밍 모델](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

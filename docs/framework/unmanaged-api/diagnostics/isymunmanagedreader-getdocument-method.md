@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 45548fcd85e58086c2a43ac33e739c8ccb0e833f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: ecd11b57d1901c4618ee0d27442753559b85c509
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33428083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54738107"
 ---
 # <a name="isymunmanagedreadergetdocument-method"></a>ISymUnmanagedReader::GetDocument 메서드
 문서를 찾습니다. 문서 언어, 공급 업체 및 형식에 대해서는 선택적입니다.  
@@ -46,19 +46,19 @@ HRESULT GetDocument (
  [in] 문서 언어입니다. 이 매개 변수는 선택적 요소입니다.  
   
  `languageVendor`  
- [in] 문서 언어의 공급 업체의 id입니다. 이 매개 변수는 선택적 요소입니다.  
+ [in] 문서 언어에 대 한 공급 업체의 id입니다. 이 매개 변수는 선택적 요소입니다.  
   
  `documentType`  
  [in] 문서의 형식입니다. 이 매개 변수는 선택적 요소입니다.  
   
  `pRetVal`  
- [out] 반환 되는 인터페이스에 대 한 포인터입니다.  
+ [out] 반환 되는 인터페이스 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedReader 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedReader 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 401c23e44cc473d0a27a82a00343852693cb0f2e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: fb97c545d2d57ef589b5a7a5b3618eaa2b6f364f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33429347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687000"
 ---
 # <a name="idefinitionidentity-interface"></a>IDefinitionIdentity 인터페이스
 현재 범위에서 응용 프로그램을 정의 하는 코드의 고유한 시그니처를 나타냅니다.  
@@ -31,16 +31,16 @@ ms.locfileid: "33429347"
 |메서드|설명|  
 |------------|-----------------|  
 |`IDefinitionIdentity::Clone`|새 인터페이스 포인터를 가져옵니다 `IDefinitionIdentity` 이 동일한 개체 `IDefinitionIdentity`, 지정 된 특성 변경을 제외 하 고 있습니다.|  
-|`IDefinitionIdentity::EnumAttributes`|한 인터페이스 포인터를 가져옵니다는 [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) 이 연관 된 특성을 포함 하는 개체 `IDefinitionIdentity`합니다.|  
+|`IDefinitionIdentity::EnumAttributes`|한 인터페이스 포인터를 가져옵니다는 [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) 개체와 연결 된 특성이 포함 된 `IDefinitionIdentity`합니다.|  
 |`IDefinitionIdentity::GetAttribute`|지정된 된 네임 스페이스에서 지정한 이름 가진 특성의 값을 가져옵니다.|  
-|`IDefinitionIdentity::SetAttribute`|지정된 된 값으로 지정된 된 네임 스페이스에서 지정된 된 이름을 가진 특성을 설정 합니다.|  
+|`IDefinitionIdentity::SetAttribute`|지정된 된 값으로 지정된 된 네임 스페이스에서 지정 된 이름이 있는 특성을 설정 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Isolation.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [Fusion 인터페이스](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [Fusion 인터페이스](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)

@@ -2,12 +2,6 @@
 title: SQL Server 및 ADO.NET
 ms.date: 03/30/2017
 ms.assetid: c18b1fb1-2af1-4de7-80a4-95e56fd976cb
-ms.openlocfilehash: 32fc946f46ddac63d87b7e5a3d8f7120799f7223
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44178589"
 ---
 # <a name="sql-server-and-adonet"></a>SQL Server 및 ADO.NET
 이 단원에서는 .NET Framework Data Provider for SQL Server(<xref:System.Data.SqlClient>)와 관련된 기능 및 동작에 대해 설명합니다.  
@@ -40,9 +34,9 @@ ms.locfileid: "44178589"
   
  [SQL Server 온라인 설명서](/sql/sql-server/sql-server-technical-documentation)  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [ADO.NET에서 데이터 형식 매핑](../../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [ADO.NET에서 데이터 형식 매핑](../../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)
+- [DataSets, DataTables 및 DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET에서 데이터 검색 및 수정](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

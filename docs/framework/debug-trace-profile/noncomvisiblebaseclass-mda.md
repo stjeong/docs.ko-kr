@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 9ec1af27-604b-477e-9ee2-e833eb10d3ce
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 707dad3c5286fc9c8d5aa3735418607fb0a769a7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a26863f2a1880cffba5eb3ea51573f45323be72d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700860"
 ---
 # <a name="noncomvisiblebaseclass-mda"></a>nonComVisibleBaseClass MDA
 `nonComVisibleBaseClass` MDA(관리 디버깅 도우미)는 COM 노출이 아닌 기본 클래스에서 파생된 COM 노출 관리되는 클래스의 COM CCW(호출 가능 래퍼)에서 네이티브 코드 또는 비관리 코드에 의해 `QueryInterface` 호출이 수행될 때 활성화됩니다.  `QueryInterface` 호출은 호출에서 클래스 인터페이스 또는 COM 노출 관리되는 클래스의 기본 `IDispatch`를 요청하는 경우에만 MDA가 활성화되게 합니다.  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성이 적용되고 COM 노출 클래스에 의해 명시적으로 구현된 명시적 인터페이스에 대한 `QueryInterface`인 경우에는 MDA가 활성화되지 않습니다.  
@@ -44,7 +44,7 @@ is done to prevent the non COM visible base class from being
 constrained by the COM versioning rules.   
 ```  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -54,7 +54,7 @@ constrained by the COM versioning rules.
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)

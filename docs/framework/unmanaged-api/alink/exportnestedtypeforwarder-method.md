@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4dfb31a2fad8a07b3821ac85bbb43b25693f11d8
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 25b7a708bb2f16433d9de9b5fc1c178cb48874a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33404108"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54658470"
 ---
 # <a name="exportnestedtypeforwarder-method"></a>ExportNestedTypeForwarder 메서드
-지정된 된 어셈블리의 형식 테이블에 중첩 된 형식에 대 한 형식 전달자를 추가합니다.  
+중첩 된 형식에 대 한 형식 전달 자가 지정된 된 어셈블리의 type 테이블에 추가합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,7 +42,7 @@ HRESULT ExportNestedTypeForwarder(
   
 #### <a name="parameters"></a>매개 변수  
  `AssemblyID`  
- 내보낼 어셈블리의 ID입니다.  
+ 내보내는 어셈블리의 ID입니다.  
   
  `FileToken`  
  파일 형식을 정의 하는 파일의 토큰 또는 어셈블리 ID입니다.  
@@ -51,7 +51,7 @@ HRESULT ExportNestedTypeForwarder(
  토큰 형식입니다.  
   
  `ParentType`  
- 부모 유형의 토큰입니다.  
+ 부모 형식의 토큰입니다.  
   
  `pszTypename`  
  내보낼 정규화 된 형식 이름입니다.  
@@ -68,7 +68,7 @@ HRESULT ExportNestedTypeForwarder(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

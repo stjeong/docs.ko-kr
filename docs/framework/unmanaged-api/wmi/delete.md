@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 791e75aa60fd651dde1555339e31664a3523e1eb
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 0590c639e7cc6622c2283bfa609ccb31d7ce7e2b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46578920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720576"
 ---
 # <a name="delete-function"></a>함수 삭제
 CIM 클래스 정의에서 지정된 된 속성 및 모든 해당 한정자를 삭제합니다.
@@ -57,9 +57,9 @@ HRESULT Delete (
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | 지정 되지 않은 오류가 발생 했습니다. |
 | `WBEM_E_INVALID_OPERATION` | 0x80041016 | 속성을 삭제할 수 없습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | `wszzName`이 잘못되었습니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `wszzName`이 잘못되었습니다. |
 | `WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 속성이 존재 하지 않습니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 | `WBEM_E_PROPAGATED_PROPERTY` | 0x8004101c | 속성은 기본 클래스에서 상속 됩니다. |
 | `WBEM_E_SYSTEM_PROPERTY` | | 속성은 시스템 속성이입니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
@@ -70,11 +70,11 @@ HRESULT Delete (
 이 함수에 대 한 호출을 래핑하는 [IWbemClassObject::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-delete) 메서드.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

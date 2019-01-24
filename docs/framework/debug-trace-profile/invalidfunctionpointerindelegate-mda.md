@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 99ae44f1-783e-49a9-9009-24f54bbd0f09
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 847ec4d861136b46383ce7d3801764f3d962049e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ff026ddd9f9dc7c1556c55b285958dad7139e8eb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33390876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54699313"
 ---
 # <a name="invalidfunctionpointerindelegate-mda"></a>invalidFunctionPointerInDelegate MDA
 `invalidFunctionPointerInDelegate` MDA(관리 디버깅 도우미)는 잘못된 함수 포인터가 네이티브 함수 포인터를 통해 대리자를 생성하도록 전달되면 활성화됩니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "33390876"
 ## <a name="output"></a>출력  
  잘못된 함수 포인터입니다.  
   
-## <a name="configuration"></a>구성  
+## <a name="configuration"></a>구성하기  
   
 ```xml  
 <mdaConfig>  
@@ -48,7 +48,7 @@ ms.locfileid: "33390876"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [interop 마샬링](../../../docs/framework/interop/interop-marshaling.md)

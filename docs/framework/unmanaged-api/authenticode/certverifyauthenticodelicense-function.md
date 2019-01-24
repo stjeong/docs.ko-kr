@@ -10,12 +10,12 @@ api_type:
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1c10d5f363d454a64f9052315514e896f90f7081
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: c6e9a10dabc778b91fc738d28e9f841538d7c3f8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44208850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701809"
 ---
 # <a name="certverifyauthenticodelicense-function"></a>CertVerifyAuthenticodeLicense 함수
 Authenticode XrML 라이선스의 유효성을 확인합니다.  
@@ -65,7 +65,7 @@ HRESULT CertVerifyAuthenticodeLicense (
 ## <a name="return-value"></a>반환 값  
  성공하는 경우 `S_OK`가 반환됩니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)  
- [GetHashFromHandle 메서드](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)  
- [ICLRStrongName 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## <a name="see-also"></a>참고자료
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [GetHashFromHandle 메서드](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)
+- [ICLRStrongName 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 74d6852d14eec234b787ca0e852c333391a7b329
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 4f1ceae32445fb350f6fcc98f3a1eec044fa7885
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53614287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655506"
 ---
 # <a name="ltsupportportabilitygt-element"></a>&lt;supportPortability&gt; 요소
-응용 프로그램 이식성을 위해 어셈블리를 동일하게 간주하는 기본 동작을 사용하지 않도록 설정함으로써, 응용 프로그램이 .NET Framework의 서로 다른 두 구현에서 같은 어셈블리를 참조할 수 있도록 지정합니다.  
+애플리케이션 이식성을 위해 어셈블리를 동일하게 간주하는 기본 동작을 사용하지 않도록 설정함으로써, 애플리케이션이 .NET Framework의 서로 다른 두 구현에서 같은 어셈블리를 참조할 수 있도록 지정합니다.  
   
  \<구성 > 요소  
 \<런타임 > 요소  
@@ -52,7 +52,7 @@ ms.locfileid: "53614287"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
 |`assemblyBinding`|어셈블리 버전 리디렉션 및 어셈블리 위치에 대한 정보를 포함합니다.|  
   
@@ -78,6 +78,6 @@ ms.locfileid: "53614287"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [/appconfig (C# 컴파일러 옵션)](../../../../../docs/csharp/language-reference/compiler-options/appconfig-compiler-option.md)  
+## <a name="see-also"></a>참고자료
+- [/appconfig (C# 컴파일러 옵션)](../../../../../docs/csharp/language-reference/compiler-options/appconfig-compiler-option.md)
 - [.NET framework 어셈블리 통합 개요](https://msdn.microsoft.com/library/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ToolTip control [WPF], about ToolTip control
 - controls [WPF], ToolTip
 ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7
-ms.openlocfilehash: a11dcfc9030944365adda3656a8895912b0ef0d4
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 9db511579e273a19c18800f2e0861ef4e9c00ab0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43805223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700574"
 ---
 # <a name="tooltip-overview"></a>도구 설명 개요
 도구 설명이 같은 요소를 위로 마우스 포인터를 놓을 때 표시 되는 작은 팝업 창에 <xref:System.Windows.Controls.Button>입니다. 이 항목에서는 도구 설명을 소개하고 도구 설명 콘텐츠를 만들고 사용자 지정하는 방법을 설명합니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "43805223"
 ## <a name="using-the-time-interval-properties-of-tooltipservice"></a>ToolTipService의 시간 간격 속성 사용  
  합니다 <xref:System.Windows.Controls.ToolTipService> 클래스는 시간을 표시 하는 도구 설명을 설정 하는 데에 대 한 다음 속성을 제공: <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A>를 <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A>, 및 <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A>합니다.  
   
- 사용 하 여는 <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> 및 <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> 지연 시간을 지정 하는 속성 짧은 전에 <xref:System.Windows.Controls.ToolTip> 나타납니다 및 시간을 지정 하는 <xref:System.Windows.Controls.ToolTip> 계속 표시 됩니다. 자세한 내용은 [How to: Delay the Display of a ToolTip](https://msdn.microsoft.com/library/618e05ef-f2bf-4a53-a0f4-aacb49918bd7)(방법: ToolTip 표시 지연)을 참조하세요.  
+ 사용 하 여는 <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> 및 <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> 지연 시간을 지정 하는 속성 짧은 전에 <xref:System.Windows.Controls.ToolTip> 나타납니다 및 시간을 지정 하는 <xref:System.Windows.Controls.ToolTip> 계속 표시 됩니다. 자세한 내용은 [방법: 도구 설명이 표시 지연](https://msdn.microsoft.com/library/618e05ef-f2bf-4a53-a0f4-aacb49918bd7)합니다.  
   
  <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> 속성 마우스 포인터를 신속 하 게 이동 하면 서로 다른 컨트롤에 대 한 도구 설명을 초기 지연 없이 표시할지 여부를 결정 합니다. 에 대 한 자세한 내용은 합니다 <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> 속성을 참조 하세요 [BetweenShowDelay 속성 사용](../../../../docs/framework/wpf/controls/how-to-use-the-betweenshowdelay-property.md)합니다.  
   
@@ -75,9 +75,9 @@ ms.locfileid: "43805223"
   
  [!code-xaml[ToolTipService#ToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.ToolTipService>  
- <xref:System.Windows.Controls.ToolTip>  
- <xref:System.Windows.Controls.ToolTipEventArgs>  
- <xref:System.Windows.Controls.ToolTipEventHandler>  
- [방법 항목](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.ToolTipService>
+- <xref:System.Windows.Controls.ToolTip>
+- <xref:System.Windows.Controls.ToolTipEventArgs>
+- <xref:System.Windows.Controls.ToolTipEventHandler>
+- [방법 항목](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)

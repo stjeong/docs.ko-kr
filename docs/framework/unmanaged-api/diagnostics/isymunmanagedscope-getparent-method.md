@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 7ddf13eb87bd046a2ae7aad39f23112e3ae80c97
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 606b9b496380a00ab9615ab7fe7febdc749b3ee2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33427961"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54663533"
 ---
 # <a name="isymunmanagedscopegetparent-method"></a>ISymUnmanagedScope::GetParent 메서드
 이 범위의 상위 범위를 가져옵니다.  
@@ -36,14 +36,14 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 된에 대 한 포인터 [ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md) 인터페이스입니다.  
+ [out] 반환 된 포인터 [ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md) 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedScope 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)  
- [GetChildren 메서드](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getchildren-method.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedScope 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [GetChildren 메서드](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getchildren-method.md)

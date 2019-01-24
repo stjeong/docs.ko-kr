@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Await operator [Visual Basic]
 - Await [Visual Basic]
 ms.assetid: 6b1ce283-e92b-4ba7-b081-7be7b3d37af9
-ms.openlocfilehash: 2094ba308ba384feb8542e896cb1eafcf645947c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: eb6e2c0e59ae0c29937fb5542e3b4638dd2b7b8d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43524468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671449"
 ---
 # <a name="await-operator-visual-basic"></a>Await 연산자(Visual Basic)
 대기 중인 작업이 완료될 때까지 메서드 실행을 일시 중단하려면 비동기 메서드 또는 람다 식의 피연산자에 `Await` 연산자를 적용합니다. 작업은 진행 중인 작업을 나타냅니다.  
@@ -43,7 +43,7 @@ End Function
 ```  
   
 > [!IMPORTANT]
->  전체 예제는 [연습: Async 및 Await를 사용하여 웹에 액세스](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)를 참조하세요. 샘플은 Microsoft 웹 사이트의 [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)(비동기 샘플: 웹 액세스 연습(C# 및 Visual Basic))에서 다운로드할 수 있습니다. 예제는 AsyncWalkthrough_HttpClient 프로젝트에 있습니다.  
+>  전체 예제를 보려면 [연습: Async 및 Await를 사용하여 웹에 액세스](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)를 참조하세요. 샘플은 Microsoft 웹 사이트의 [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)(비동기 샘플: 웹 액세스 연습(C# 및 Visual Basic))에서 다운로드할 수 있습니다. 예제는 AsyncWalkthrough_HttpClient 프로젝트에 있습니다.  
   
  `Await`가 `Task(Of TResult)`를 반환하는 메서드 호출의 결과에 적용되는 경우, `Await`식의 형식은 TResult입니다. `Await`가 `Task`를 반환하는 메서드 호출의 결과에 적용되는 경우, `Await`식은 값을 반환하지 않습니다. 다음 예제에서 차이점을 보여 줍니다.  
   
@@ -103,7 +103,7 @@ Public Async Function WaitSynchronously() As Task(Of String)
 End Function  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Async 및 Await를 사용한 비동기 프로그래밍](../../../visual-basic/programming-guide/concepts/async/index.md)  
- [연습: Async 및 Await를 사용하여 웹에 액세스](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [비동기](../../../visual-basic/language-reference/modifiers/async.md)
+## <a name="see-also"></a>참고자료
+- [Async 및 Await를 사용한 비동기 프로그래밍](../../../visual-basic/programming-guide/concepts/async/index.md)
+- [연습: Async 및 Await를 사용하여 웹에 액세스](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [비동기](../../../visual-basic/language-reference/modifiers/async.md)
