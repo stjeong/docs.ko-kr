@@ -2,24 +2,24 @@
 title: '&lt;entries&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
-ms.openlocfilehash: 5a61aefd92390eefb95d1f3e39236e53fa264990
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 082b19cd4515deb19ee7190dfeb8ae04ab834830
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645368"
 ---
-# <a name="ltaddgt-of-ltentriesgt"></a><span data-ttu-id="04161-102">&lt;entries&gt;의 &lt;add&gt;</span><span class="sxs-lookup"><span data-stu-id="04161-102">&lt;add&gt; of &lt;entries&gt;</span></span>
-<span data-ttu-id="04161-103">이전에 정의된 클라이언트 엔드포인트에 필터를 매핑하는 라우팅 항목을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="04161-103">Represents a routing entry that maps a filter to a client endpoint that was previously defined.</span></span> <span data-ttu-id="04161-104">이 필터와 일치하는 메시지가 해당 대상으로 전송됩니다.</span><span class="sxs-lookup"><span data-stu-id="04161-104">Messages matching this filter will be sent to this destination.</span></span>  
+# <a name="ltaddgt-of-ltentriesgt"></a><span data-ttu-id="dac8b-102">&lt;entries&gt;의 &lt;add&gt;</span><span class="sxs-lookup"><span data-stu-id="dac8b-102">&lt;add&gt; of &lt;entries&gt;</span></span>
+<span data-ttu-id="dac8b-103">이전에 정의된 클라이언트 엔드포인트에 필터를 매핑하는 라우팅 항목을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-103">Represents a routing entry that maps a filter to a client endpoint that was previously defined.</span></span> <span data-ttu-id="dac8b-104">이 필터와 일치하는 메시지가 해당 대상으로 전송됩니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-104">Messages matching this filter will be sent to this destination.</span></span>  
   
- <span data-ttu-id="04161-105">\<system.serviceModel></span><span class="sxs-lookup"><span data-stu-id="04161-105">\<system.serviceModel></span></span>  
-<span data-ttu-id="04161-106">\<라우팅 ></span><span class="sxs-lookup"><span data-stu-id="04161-106">\<routing></span></span>  
-<span data-ttu-id="04161-107">\<filterTables ></span><span class="sxs-lookup"><span data-stu-id="04161-107">\<filterTables></span></span>  
-<span data-ttu-id="04161-108">\<filterTable ></span><span class="sxs-lookup"><span data-stu-id="04161-108">\<filterTable></span></span>  
-<span data-ttu-id="04161-109">\<항목 ></span><span class="sxs-lookup"><span data-stu-id="04161-109">\<entries></span></span>  
-<span data-ttu-id="04161-110">\<add></span><span class="sxs-lookup"><span data-stu-id="04161-110">\<add></span></span>  
+ <span data-ttu-id="dac8b-105">\<system.serviceModel></span><span class="sxs-lookup"><span data-stu-id="dac8b-105">\<system.serviceModel></span></span>  
+<span data-ttu-id="dac8b-106">\<라우팅 ></span><span class="sxs-lookup"><span data-stu-id="dac8b-106">\<routing></span></span>  
+<span data-ttu-id="dac8b-107">\<filterTables></span><span class="sxs-lookup"><span data-stu-id="dac8b-107">\<filterTables></span></span>  
+<span data-ttu-id="dac8b-108">\<filterTable></span><span class="sxs-lookup"><span data-stu-id="dac8b-108">\<filterTable></span></span>  
+<span data-ttu-id="dac8b-109">\<entries></span><span class="sxs-lookup"><span data-stu-id="dac8b-109">\<entries></span></span>  
+<span data-ttu-id="dac8b-110">\<add></span><span class="sxs-lookup"><span data-stu-id="dac8b-110">\<add></span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="04161-111">구문</span><span class="sxs-lookup"><span data-stu-id="04161-111">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="dac8b-111">구문</span><span class="sxs-lookup"><span data-stu-id="dac8b-111">Syntax</span></span>  
   
 ```xml  
 <routing>
@@ -39,27 +39,27 @@ ms.locfileid: "54151506"
 ```csharp  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="04161-112">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="04161-112">Attributes and Elements</span></span>  
- <span data-ttu-id="04161-113">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="04161-113">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="dac8b-112">특성 및 요소</span><span class="sxs-lookup"><span data-stu-id="dac8b-112">Attributes and Elements</span></span>  
+ <span data-ttu-id="dac8b-113">다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-113">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="04161-114">특성</span><span class="sxs-lookup"><span data-stu-id="04161-114">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="dac8b-114">특성</span><span class="sxs-lookup"><span data-stu-id="dac8b-114">Attributes</span></span>  
   
-|<span data-ttu-id="04161-115">특성</span><span class="sxs-lookup"><span data-stu-id="04161-115">Attribute</span></span>|<span data-ttu-id="04161-116">설명</span><span class="sxs-lookup"><span data-stu-id="04161-116">Description</span></span>|  
+|<span data-ttu-id="dac8b-115">특성</span><span class="sxs-lookup"><span data-stu-id="dac8b-115">Attribute</span></span>|<span data-ttu-id="dac8b-116">설명</span><span class="sxs-lookup"><span data-stu-id="dac8b-116">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="04161-117">backupList</span><span class="sxs-lookup"><span data-stu-id="04161-117">backupList</span></span>|<span data-ttu-id="04161-118">엔드포인트의 백업 목록에 대한 참조를 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-118">A string that specifies a reference to a backup list of endpoints.</span></span>|  
-|<span data-ttu-id="04161-119">끝점(endpoint)</span><span class="sxs-lookup"><span data-stu-id="04161-119">endpoint</span></span>|<span data-ttu-id="04161-120">`filterName` 특성에 의해 지정된 필터와 일치하는 메시지를 수신할 클라이언트 끝점에 대한 참조를 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-120">A string that specifies a reference to a client endpoint that will receive messages that match the filter specified by the `filterName` attribute.</span></span>|  
-|<span data-ttu-id="04161-121">filterName</span><span class="sxs-lookup"><span data-stu-id="04161-121">filterName</span></span>|<span data-ttu-id="04161-122">필터 요소에 대한 참조를 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-122">A string that specifies a reference to a filter element.</span></span>|  
-|<span data-ttu-id="04161-123">priority</span><span class="sxs-lookup"><span data-stu-id="04161-123">priority</span></span>|<span data-ttu-id="04161-124">이 항목의 우선 순위를 지정하는 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-124">An integer that specifies the priority of this entry.</span></span><br /><br /> <span data-ttu-id="04161-125">라우팅 테이블의 항목은 우선 순위를 기준으로 평가되며 0이 가장 낮은 우선 순위입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-125">Entries in the routing table will be evaluated based on priority, with 0 being the lowest priority.</span></span> <span data-ttu-id="04161-126">특정 우선 순위를 갖는 모든 항목은 동시에 평가되며 현재 우선 순위에 대해 일치하는 항목이 없는 경우 다음 우선 순위가 평가됩니다.</span><span class="sxs-lookup"><span data-stu-id="04161-126">All entries for a specific priority are evaluated simultaneously, if no matching entry is found for the current priority, the next priority level will be evaluated.</span></span><br /><br /> <span data-ttu-id="04161-127">이 값은 선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-127">This value is optional.</span></span>|  
+|<span data-ttu-id="dac8b-117">backupList</span><span class="sxs-lookup"><span data-stu-id="dac8b-117">backupList</span></span>|<span data-ttu-id="dac8b-118">엔드포인트의 백업 목록에 대한 참조를 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-118">A string that specifies a reference to a backup list of endpoints.</span></span>|  
+|<span data-ttu-id="dac8b-119">끝점(endpoint)</span><span class="sxs-lookup"><span data-stu-id="dac8b-119">endpoint</span></span>|<span data-ttu-id="dac8b-120">`filterName` 특성에 의해 지정된 필터와 일치하는 메시지를 수신할 클라이언트 끝점에 대한 참조를 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-120">A string that specifies a reference to a client endpoint that will receive messages that match the filter specified by the `filterName` attribute.</span></span>|  
+|<span data-ttu-id="dac8b-121">filterName</span><span class="sxs-lookup"><span data-stu-id="dac8b-121">filterName</span></span>|<span data-ttu-id="dac8b-122">필터 요소에 대한 참조를 지정하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-122">A string that specifies a reference to a filter element.</span></span>|  
+|<span data-ttu-id="dac8b-123">priority</span><span class="sxs-lookup"><span data-stu-id="dac8b-123">priority</span></span>|<span data-ttu-id="dac8b-124">이 항목의 우선 순위를 지정하는 정수입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-124">An integer that specifies the priority of this entry.</span></span><br /><br /> <span data-ttu-id="dac8b-125">라우팅 테이블의 항목은 우선 순위를 기준으로 평가되며 0이 가장 낮은 우선 순위입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-125">Entries in the routing table will be evaluated based on priority, with 0 being the lowest priority.</span></span> <span data-ttu-id="dac8b-126">특정 우선 순위를 갖는 모든 항목은 동시에 평가되며 현재 우선 순위에 대해 일치하는 항목이 없는 경우 다음 우선 순위가 평가됩니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-126">All entries for a specific priority are evaluated simultaneously, if no matching entry is found for the current priority, the next priority level will be evaluated.</span></span><br /><br /> <span data-ttu-id="dac8b-127">이 값은 선택 사항입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-127">This value is optional.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="04161-128">자식 요소</span><span class="sxs-lookup"><span data-stu-id="04161-128">Child Elements</span></span>  
- <span data-ttu-id="04161-129">없음</span><span class="sxs-lookup"><span data-stu-id="04161-129">None.</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="dac8b-128">자식 요소</span><span class="sxs-lookup"><span data-stu-id="dac8b-128">Child Elements</span></span>  
+ <span data-ttu-id="dac8b-129">없음</span><span class="sxs-lookup"><span data-stu-id="dac8b-129">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="04161-130">부모 요소</span><span class="sxs-lookup"><span data-stu-id="04161-130">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="dac8b-130">부모 요소</span><span class="sxs-lookup"><span data-stu-id="dac8b-130">Parent Elements</span></span>  
   
-|<span data-ttu-id="04161-131">요소</span><span class="sxs-lookup"><span data-stu-id="04161-131">Element</span></span>|<span data-ttu-id="04161-132">설명</span><span class="sxs-lookup"><span data-stu-id="04161-132">Description</span></span>|  
+|<span data-ttu-id="dac8b-131">요소</span><span class="sxs-lookup"><span data-stu-id="dac8b-131">Element</span></span>|<span data-ttu-id="dac8b-132">설명</span><span class="sxs-lookup"><span data-stu-id="dac8b-132">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="04161-133">\<라우팅 ></span><span class="sxs-lookup"><span data-stu-id="04161-133">\<routing></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|<span data-ttu-id="04161-134">라우팅 매핑 항목을 포함하는 구성 섹션입니다.</span><span class="sxs-lookup"><span data-stu-id="04161-134">A configuration section that contains routing mapping entries.</span></span>|  
+|[<span data-ttu-id="dac8b-133">\<routing></span><span class="sxs-lookup"><span data-stu-id="dac8b-133">\<routing></span></span>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|<span data-ttu-id="dac8b-134">라우팅 매핑 항목을 포함하는 구성 섹션입니다.</span><span class="sxs-lookup"><span data-stu-id="dac8b-134">A configuration section that contains routing mapping entries.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="04161-135">참고 항목</span><span class="sxs-lookup"><span data-stu-id="04161-135">See Also</span></span>  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>      
- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType> 
+## <a name="see-also"></a><span data-ttu-id="dac8b-135">참고자료</span><span class="sxs-lookup"><span data-stu-id="dac8b-135">See also</span></span>
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

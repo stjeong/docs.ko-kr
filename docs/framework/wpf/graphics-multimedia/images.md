@@ -9,27 +9,27 @@ helpviewer_keywords:
 - images [WPF]
 - graphics [WPF], images
 ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
-ms.openlocfilehash: dbb8b9511b05c5df228a463d82efb17b7cd6f23a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 64d5ede4dcbe50beeec22ca7782d1dc8c24a27f5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33561701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687221"
 ---
-# <a name="images"></a><span data-ttu-id="80b2e-102">이미지</span><span class="sxs-lookup"><span data-stu-id="80b2e-102">Images</span></span>
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="80b2e-103">에서는 여러 이미지 형식, 고화질 이미지 렌더링 및 코덱 확장성에 대한 기본 제공 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="80b2e-103"> provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.</span></span>  
+# <a name="images"></a><span data-ttu-id="2c984-102">이미지</span><span class="sxs-lookup"><span data-stu-id="2c984-102">Images</span></span>
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="2c984-103">에서는 여러 이미지 형식, 고화질 이미지 렌더링 및 코덱 확장성에 대한 기본 제공 지원을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="2c984-103">provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="80b2e-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="80b2e-104">In This Section</span></span>  
- [<span data-ttu-id="80b2e-105">이미징 개요</span><span class="sxs-lookup"><span data-stu-id="80b2e-105">Imaging Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [<span data-ttu-id="80b2e-106">방법 항목</span><span class="sxs-lookup"><span data-stu-id="80b2e-106">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)  
+## <a name="in-this-section"></a><span data-ttu-id="2c984-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="2c984-104">In This Section</span></span>  
+ [<span data-ttu-id="2c984-105">이미징 개요</span><span class="sxs-lookup"><span data-stu-id="2c984-105">Imaging Overview</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
+ [<span data-ttu-id="2c984-106">방법 항목</span><span class="sxs-lookup"><span data-stu-id="2c984-106">How-to Topics</span></span>](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)  
   
-## <a name="reference"></a><span data-ttu-id="80b2e-107">참조</span><span class="sxs-lookup"><span data-stu-id="80b2e-107">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="2c984-107">참조</span><span class="sxs-lookup"><span data-stu-id="2c984-107">Reference</span></span>  
  <xref:System.Windows.Controls.Image>  
   
  <xref:System.Windows.Media.Imaging.BitmapImage>  
   
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
-## <a name="see-also"></a><span data-ttu-id="80b2e-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="80b2e-108">See Also</span></span>  
- [<span data-ttu-id="80b2e-109">2차원 그래픽 및 이미징</span><span class="sxs-lookup"><span data-stu-id="80b2e-109">2D Graphics and Imaging</span></span>](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [<span data-ttu-id="80b2e-110">그래픽 및 멀티미디어</span><span class="sxs-lookup"><span data-stu-id="80b2e-110">Graphics and Multimedia</span></span>](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## <a name="see-also"></a><span data-ttu-id="2c984-108">참고자료</span><span class="sxs-lookup"><span data-stu-id="2c984-108">See also</span></span>
+- [<span data-ttu-id="2c984-109">2차원 그래픽 및 이미징</span><span class="sxs-lookup"><span data-stu-id="2c984-109">2D Graphics and Imaging</span></span>](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [<span data-ttu-id="2c984-110">그래픽 및 멀티미디어</span><span class="sxs-lookup"><span data-stu-id="2c984-110">Graphics and Multimedia</span></span>](../../../../docs/framework/wpf/graphics-multimedia/index.md)
