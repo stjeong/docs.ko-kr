@@ -28,12 +28,12 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Function statements
 - Handles keyword [Visual Basic], Function statements
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-ms.openlocfilehash: b370e92aaab88a7f0d49f1de60b50fa6bbf1e161
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 5018aebb0401ce5a1c46ecf04a7c65ca676271e7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39323016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565906"
 ---
 # <a name="function-statement-visual-basic"></a>Function 문(Visual Basic)
 선언 하 고 이름, 매개 변수를 정의 하는 코드는 `Function` 프로시저입니다.  
@@ -71,7 +71,7 @@ End Function
 
     - [Private Protected](../../language-reference/modifiers/private-protected.md)  
   
-     참조 [액세스 수준을 Visual Basic의](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.  
+     [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.  
   
 -   `proceduremodifiers`  
   
@@ -109,7 +109,7 @@ End Function
   
 -   `name`  
   
-     필수. 프로시저의 이름입니다. 참조 [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.  
+     필수 요소. 프로시저의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.  
   
 -   `typeparamlist`  
   
@@ -139,8 +139,8 @@ End Function
   
     |파트|설명|  
     |---|---|  
-    |`interface`|필수. 이 프로시저에 의해 구현 된 인터페이스의 이름을 클래스 또는 구조체를 포함 합니다.|  
-    |`definedname`|필수. 프로시저가 `interface`에 정의되는 이름입니다.|  
+    |`interface`|필수 요소. 이 프로시저에 의해 구현 된 인터페이스의 이름을 클래스 또는 구조체를 포함 합니다.|  
+    |`definedname`|필수 요소. 프로시저가 `interface`에 정의되는 이름입니다.|  
   
 -   `Handles`  
   
@@ -158,8 +158,8 @@ End Function
   
     |파트|설명|  
     |---|---|  
-    |`eventvariable`|필수. 클래스 또는 구조의 이벤트를 발생 시키는 데이터 형식으로 선언 하는 개체 변수입니다.|  
-    |`event`|필수. 이 프로시저에서 처리 하는 이벤트의 이름입니다.|  
+    |`eventvariable`|필수 요소. 클래스 또는 구조의 이벤트를 발생 시키는 데이터 형식으로 선언 하는 개체 변수입니다.|  
+    |`event`|필수 요소. 이 프로시저에서 처리 하는 이벤트의 이름입니다.|  
   
 -   `statements`  
   
@@ -237,32 +237,32 @@ End Function
   
  자세한 내용은 [반복기](../../programming-guide/concepts/iterators.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Function` 이름, 매개 변수 및 코드의 본문을 형성 하는 declare 문을 `Function` 프로시저입니다. `ParamArray` 한정자를 사용 하면 가변 개수의 인수를 수락 하는 함수입니다.  
   
  [!code-vb[VbVbalrStatements#25](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_3.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 앞의 예제에서 선언 된 함수를 호출 합니다.  
   
  [!code-vb[VbVbalrStatements#26](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_4.vb)]  
   
-## <a name="example"></a>예  
- 다음 예에서 `DelayAsync` 되는 `Async` `Function` 반환 형식이 있는 <xref:System.Threading.Tasks.Task%601>합니다. `DelayAsync`에는 정수를 반환하는 `Return` 문이 포함됩니다. 따라서 함수 선언의 `DelayAsync` 의 반환 형식이 있어야 `Task(Of Integer)`합니다. 반환 형식 이므로 `Task(Of Integer)`를 평가 합니다 `Await` 식 `DoSomethingAsync` 정수가 생성 합니다. 본이 방침에 설명 되어이: `Dim result As Integer = Await delayTask`합니다.  
+## <a name="example"></a>예제  
+ 다음 예에서 `DelayAsync` 되는 `Async` `Function` 반환 형식이 있는 <xref:System.Threading.Tasks.Task%601>합니다. `DelayAsync` 에는 정수를 반환하는 `Return` 문이 포함됩니다. 따라서 함수 선언의 `DelayAsync` 의 반환 형식이 있어야 `Task(Of Integer)`합니다. 반환 형식 이므로 `Task(Of Integer)`를 평가 합니다 `Await` 식 `DoSomethingAsync` 정수가 생성 합니다. 본이 방침에 설명 되어이: `Dim result As Integer = Await delayTask`합니다.  
   
  `startButton_Click` 절차는의 예는 `Async Sub` 프로시저입니다. 때문에 `DoSomethingAsync` 되는 `Async` 함수에 대 한 호출에 대 한 작업 `DoSomethingAsync` 다음 문을 보여 주듯이 대기할 수 있어야 합니다: `Await DoSomethingAsync()`합니다. 합니다 `startButton_Click` `Sub` 프로시저를 사용 하 여 정의 되어야 합니다는 `Async` 한정자 있기 때문에 `Await` 식입니다.  
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Sub 문](sub-statement.md)  
- [Function 프로시저](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)  
- [매개 변수 목록](parameter-list.md)  
- [Dim 문](dim-statement.md)  
- [Call 문](call-statement.md)  
- [Of](of-clause.md)  
- [매개 변수 배열](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
- [방법: 제네릭 클래스 사용](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [프로시저 문제 해결](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
- [람다 식](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [함수 식](../../../visual-basic/language-reference/operators/function-expression.md)
+## <a name="see-also"></a>참고자료
+- [Sub 문](sub-statement.md)
+- [Function 프로시저](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)
+- [매개 변수 목록](parameter-list.md)
+- [Dim 문](dim-statement.md)
+- [Call 문](call-statement.md)
+- [Of](of-clause.md)
+- [매개 변수 배열](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
+- [방법: 제네릭 클래스 사용](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [프로시저 문제 해결](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [람다 식](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [함수 식](../../../visual-basic/language-reference/operators/function-expression.md)

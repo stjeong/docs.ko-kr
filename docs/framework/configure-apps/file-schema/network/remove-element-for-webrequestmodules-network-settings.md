@@ -10,12 +10,12 @@ helpviewer_keywords:
 - <remove> element, webRequestModules
 - <webRequestModules>, remove element
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
-ms.openlocfilehash: 2f787206c503c047a34383e12c5676296e39c1fe
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 380438bbc6e0c93b26d2afb77ff6b04308c61caf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50190751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54547068"
 ---
 # <a name="ltremovegt-element-for-webrequestmodules-network-settings"></a>&lt;제거&gt; webRequestModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 사용자 지정 웹 요청 모듈을 제거합니다.  
@@ -77,6 +77,6 @@ ms.locfileid: "50190751"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.WebRequest>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.WebRequest>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

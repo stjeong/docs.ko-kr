@@ -19,17 +19,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a375ea586bacc2d3dafe53d493a7467730fae889
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 40a278945dc1a6c84a72221fd55e32f44a146662
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54564398"
 ---
 # <a name="clrcreatemanagedinstance-function"></a>ClrCreateManagedInstance 함수
 지정 된 관리 되는 형식의 인스턴스를 만듭니다.  
   
- 이 함수에 더 이상 사용 되지는 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]합니다. 관리 되는 형식의 인스턴스를 만드는 COM 정품 인증을 사용 하거나 호스팅을 사용 (참조 [CLR 호스팅 인터페이스에 추가 된.NET Framework 4 및 4.5](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)).  
+ 이 함수에서 사용 중단에 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]합니다. 관리 되는 형식의 인스턴스를 만드는 COM 정품 인증을 사용 하거나 호스팅을 사용 (참조 [인터페이스는.NET Framework 4 및 4.5에 추가 호스트 된 CLR](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)).  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,26 +43,26 @@ STDAPI ClrCreateManagedInstance (
   
 #### <a name="parameters"></a>매개 변수  
  `pTypeName`  
- [in] 요청 되는 인스턴스 형식 이름에 대 한 포인터입니다.  
+ [in] 요청 된 인스턴스의 형식 이름에 대 한 포인터입니다.  
   
  `riid`  
- [in] `IID` 요청 되는 인스턴스 형식입니다.  
+ [in] `IID` 요청 중인 인스턴스의 형식입니다.  
   
  `ppObject`  
- [out] 호출자에 의해 요청 된 관리 되는 형식의 인스턴스로에 대 한 포인터에 대 한 포인터입니다.  
+ [out] 호출자가 요청 된 관리 되는 형식 인스턴스에 대 한 포인터에 대 한 포인터입니다.  
   
 ## <a name="remarks"></a>설명  
- 공용 언어 런타임 프로세스에 이미 로드 해야 합니다. 예를 들어에 대 한 호출을 사용 하 여 로드할 수 있습니다는 [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) 하기 전에 함수는 `ClrCreateManagedInstance` 함수를 호출 합니다. 런타임이 로드 되지 않은 경우 `ClrCreateManagedInstance` 먼저 런타임 v 1.0.3705를 로드 하려고 합니다. 실패할 경우 최신 버전의 런타임 로드를 시도 합니다.  
+ 공용 언어 런타임 프로세스를 이미 로드 해야 합니다. 예를 들어,에 대 한 호출을 사용 하 여 로드할 수는 [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) 하기 전에 함수를 `ClrCreateManagedInstance` 함수를 호출 합니다. 런타임이 로드 되지 않은 경우 `ClrCreateManagedInstance` 먼저 런타임의 v1.0.3705를 로드 하려고 합니다. 실패 하는 경우 런타임의 최신 버전을 로드 하려고 시도 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MSCorEE.h  
   
  **라이브러리:** MSCorEE.dll  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [사용되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
- [호스팅](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## <a name="see-also"></a>참고자료
+- [사용되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [호스팅](../../../../docs/framework/unmanaged-api/hosting/index.md)

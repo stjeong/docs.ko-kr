@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF [WCF], documentation
 - Windows Communication Foundation [WCF], documentation
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
-ms.openlocfilehash: f77864d827ce12d40971dd7f7159e985ab4096ae
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: b6c509bd150ec2443762134079427ebd2de8ba09
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552627"
 ---
 # <a name="guide-to-the-documentation"></a>설명서에 대한 안내
 제공한 Windows Communication Foundation (WCF) 설명서에 대 한 지침은 다음과 같습니다. 구체적인 관심사와 지식 수준에 따라 그룹화된 링크 문서부터 보시는 것이 좋습니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "43520976"
   
 ## <a name="using-windows-communication-foundation-with-other-technologies"></a>다른 기술과 함께 Windows Communication Foundation 사용  
   
--   ASP.NET 클라이언트와 통신 하는 서비스를 만들려면, 참조 [방법: ASP.NET 웹 서비스 클라이언트와 상호 운용 하도록 WCF 서비스 구성](../../../docs/framework/wcf/feature-details/config-wcf-service-with-aspnet-web-service.md)합니다.  
+-   ASP.NET 클라이언트와 통신 하는 서비스를 만들려면 참조 [방법: ASP.NET 웹 서비스 클라이언트와 상호 운용 하도록 WCF 서비스 구성](../../../docs/framework/wcf/feature-details/config-wcf-service-with-aspnet-web-service.md)합니다.  
   
 -   와 통합 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] remoting 방법은 [마이그레이션.NET Remoting 응용 프로그램을 WCF](../../../docs/framework/wcf/feature-details/migrating-net-remoting-applications-to-wcf.md)합니다.  
   
@@ -52,17 +52,17 @@ ms.locfileid: "43520976"
   
 -   WCF 서비스 또는 클라이언트를 사용 하 여 기존 COM 응용 프로그램 통합을 참조 하세요 [COM 응용 프로그램과 통합](../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)합니다.  
   
--   WCF 서비스 또는 클라이언트를 사용 하 여 기존 MSMQ 응용 프로그램 통합을 참조 하세요. [방법: WCF 끝점을 사용 하 여 대기 중인 메시지 교환](../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md) 및 [방법: WCF 끝점 및 메시지 큐 응용 프로그램과사용하여메시지를교환](../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md).  
+-   WCF 서비스 또는 클라이언트를 사용 하 여 기존 MSMQ 응용 프로그램에 통합 하려면 참조 [방법: 대기 중인 메시지와 WCF 끝점 교환](../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md) 고 [방법: WCF 끝점을 사용 하 여 메시지를 교환 및 메시지 큐 응용](../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)합니다.  
   
 -   인터넷 정보 서비스 (IIS)를 사용 하 여 서비스를 호스트 하려면를 참조 하세요 [호스팅 서비스](../../../docs/framework/wcf/hosting-services.md)합니다.  
   
--   WCF를 사용 하 여 확장 WSE (Web Services) 3.0 서비스를 참조 하세요 [방법: WSE 3.0 서비스 액세스](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)합니다.  
+-   WCF 웹 서비스 확장 (WSE) 3.0 서비스를 사용 하를 사용 하려면 참조 [방법: WSE 3.0 액세스 서비스](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)합니다.  
   
 ## <a name="ws--protocols-supported-in-windows-communication-foundation"></a>Windows Communication Foundation에서 지원되는 WS-* 프로토콜  
  시스템 제공 바인딩에서 지원 되는 프로토콜의 목록을 참조 하세요 [웹 서비스 프로토콜에서 지 원하는 시스템 제공 상호 운용성 바인딩에서](../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)합니다. 시스템 제공 바인딩 목록을 참조 하세요 [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Communication Foundation 샘플](../../../docs/framework/wcf/samples/index.md)  
- [개념적 개요](../../../docs/framework/wcf/conceptual-overview.md)  
- [지침 및 모범 사례](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
- [클라이언트 빌드](../../../docs/framework/wcf/building-clients.md)
+## <a name="see-also"></a>참고자료
+- [Windows Communication Foundation 샘플](../../../docs/framework/wcf/samples/index.md)
+- [개념적 개요](../../../docs/framework/wcf/conceptual-overview.md)
+- [지침 및 모범 사례](../../../docs/framework/wcf/guidelines-and-best-practices.md)
+- [클라이언트 빌드](../../../docs/framework/wcf/building-clients.md)

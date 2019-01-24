@@ -2,12 +2,12 @@
 title: ADO.NET에서 Side-by-Side 실행
 ms.date: 03/30/2017
 ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
-ms.openlocfilehash: f69a269e5f6370cf7c5a60920b3d5a47ce1079cb
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 122cb33f4cca203f09104c5a40a1ad5d13326c57
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126616"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54538637"
 ---
 # <a name="side-by-side-execution-in-adonet"></a>ADO.NET에서 Side-by-Side 실행
 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]에서의 side-by-side 실행은 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 여러 버전이 설치되어 있는 컴퓨터에서 응용 프로그램을 컴파일한 버전만 사용하여 응용 프로그램을 실행하는 기능입니다. Side-by-side-실행을 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [Side-by-side-실행](../../../../docs/framework/deployment/side-by-side-execution.md)합니다.  
@@ -56,7 +56,7 @@ SELECT * FROM dbo.Customers;
   
  <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>의 두 버전 각각에 대한 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 동작에 의존하는 경우 이 변경 내용은 응용 프로그램의 다음 버전 및 이전 버전과의 호환성에 모두 영향을 줄 수 있습니다.  
   
- [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 이전 버전 및 다음 버전 모두에서 실행되는 응용 프로그램의 경우에는 실행 버전에 관계없이 동일하게 동작하도록 코드를 작성해야 합니다. 명령을 통해 모든 후속 명령에 대한 연결 상태가 수정되도록 하려면 <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>를 사용하여 명령을 실행하는 것이 좋습니다. 명령을 통해 모든 후속 명령에 대한 연결이 수정되지 않도록 하려면 명령에 연결 상태를 다시 설정하는 명령을 포함하는 것이 좋습니다. 예를 들어 다음과 같습니다.  
+ [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]의 이전 버전 및 다음 버전 모두에서 실행되는 응용 프로그램의 경우에는 실행 버전에 관계없이 동일하게 동작하도록 코드를 작성해야 합니다. 명령을 통해 모든 후속 명령에 대한 연결 상태가 수정되도록 하려면 <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>를 사용하여 명령을 실행하는 것이 좋습니다. 명령을 통해 모든 후속 명령에 대한 연결이 수정되지 않도록 하려면 명령에 연결 상태를 다시 설정하는 명령을 포함하는 것이 좋습니다. 예를 들어:  
   
 ```sql
 SET NOCOUNT ON;  
@@ -64,7 +64,7 @@ SELECT * FROM dbo.Customers;
 SET NOCOUNT OFF;  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 개요](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - technology overview [WCF]
 - WCF [WCF], technology overview
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
-ms.openlocfilehash: 5744184d224fa97e57055b5a110d830e8809647f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a2d0ef1e70c88133d5f9c3d2ffe8dafa4983cfd9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552023"
 ---
 # <a name="what-is-windows-communication-foundation"></a>Windows Communication Foundation 정의
-Windows Communication Foundation (WCF)은 서비스 지향 응용 프로그램을 빌드하기 위한 프레임 워크입니다. WCF를 사용 하 여 보낼 수 있습니다 데이터 비동기 메시지로 서비스 끝점에서 간에. 서비스 엔드포인트는 IIS에서 호스팅하는 계속 사용 가능한 서비스의 일부분일 수도 있고 응용 프로그램에서 호스팅되는 서비스일 수도 있습니다. 또한 엔드포인트는 서비스 엔드포인트에서 데이터를 요청하는 서비스의 클라이언트일 수 있습니다. 메시지는 XML로 전송되는 한 문자나 단어처럼 간단할 수도 있고 이진 데이터 스트림처럼 복잡할 수도 있습니다. 다음은 몇 가지 샘플 시나리오입니다.
+Windows Communication Foundation (WCF)은 서비스 지향 응용 프로그램을 빌드하기 위한 프레임 워크입니다. WCF를 사용 하 여 보낼 수 있습니다 데이터 비동기 메시지로 서비스 끝점에서 간에. 서비스 엔드포인트는 IIS에서 호스팅하는 계속 사용 가능한 서비스의 일부분일 수도 있고 애플리케이션에서 호스팅되는 서비스일 수도 있습니다. 또한 엔드포인트는 서비스 엔드포인트에서 데이터를 요청하는 서비스의 클라이언트일 수 있습니다. 메시지는 XML로 전송되는 한 문자나 단어처럼 간단할 수도 있고 이진 데이터 스트림처럼 복잡할 수도 있습니다. 다음은 몇 가지 샘플 시나리오입니다.
 
 -   비즈니스 트랜잭션을 처리하는 보안 서비스
 
@@ -22,11 +22,11 @@ Windows Communication Foundation (WCF)은 서비스 지향 응용 프로그램�
 
 -   두 사람이 실시간으로 통신하거나 데이터를 교환할 수 있도록 하는 채팅 서비스
 
--   하나 이상의 서비스를 폴링해 데이터를 가져와서 논리적 프레젠테이션으로 표시하는 대시보드 응용 프로그램
+-   하나 이상의 서비스를 폴링해 데이터를 가져와서 논리적 프레젠테이션으로 표시하는 대시보드 애플리케이션
 
 -   Windows Workflow Foundation을 사용하여 구현되는 워크플로를 WCF 서비스로 노출
 
--   서비스를 폴링해 최신 데이터 피드를 가져오는 Silverlight 응용 프로그램
+-   서비스를 폴링해 최신 데이터 피드를 가져오는 Silverlight 애플리케이션
 
 WCF의 존재 하기 전 가능한를 이러한 응용 프로그램을 만드는 동안 WCF에서는 끝점의 개발 이전 보다 쉬워졌습니다. 요약 하자면, WCF 웹 서비스를 만들고 웹 서비스 클라이언트를 관리 하기 쉬운 접근 방법을 제공 하도록 설계 되었습니다.
 
@@ -36,7 +36,7 @@ WCF에는 다음과 같은 기능 집합이 포함 되어 있습니다. 자세�
 
 -   **서비스 지향성**
 
-     WS 표준을 사용 하 여 결과 WCF 만들 수 있습니다 *서비스 지향* 응용 프로그램입니다. SOA(서비스 지향 아키텍처) 방식에서는 웹 서비스를 사용하여 데이터를 보내고 받습니다. 이러한 서비스에서는 응용 프로그램이 서로 하드 코드되지 않고 느슨하게 결합된다는 장점이 있습니다. 느슨하게 결합된 관계란 필수 계약이 충족되는 한 모든 플랫폼에서 만들어지는 모든 클라이언트가 어떤 서비스에나 연결할 수 있는 관계입니다.
+     WS 표준을 사용 하 여 결과 WCF 만들 수 있습니다 *서비스 지향* 응용 프로그램입니다. SOA(서비스 지향 아키텍처) 방식에서는 웹 서비스를 사용하여 데이터를 보내고 받습니다. 이러한 서비스에서는 애플리케이션이 서로 하드 코드되지 않고 느슨하게 결합된다는 장점이 있습니다. 느슨하게 결합된 관계란 필수 계약이 충족되는 한 모든 플랫폼에서 만들어지는 모든 클라이언트가 어떤 서비스에나 연결할 수 있는 관계입니다.
 
 -   **상호 운용성**
 
@@ -72,7 +72,7 @@ WCF에는 다음과 같은 기능 집합이 포함 되어 있습니다. 자세�
 
 -   **트랜잭션**
 
-     WCF는 WS-AtomicTtransactions, <xref:System.Transactions> 네임스페이스의 API 및 Microsoft Distributed Transaction Coordinator의 세 가지 트랜잭션 모델 중 하나를 사용하는 트랜잭션도 지원합니다. WCF에서 지원 한 트랜잭션에 대 한 자세한 내용은 참조 [트랜잭션을](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md)합니다.
+     또한 WCF에는 세 가지 트랜잭션 모델 중 하나를 사용 하 여 트랜잭션을 지원 합니다. Ws-atomicttransactions의 Api는 <xref:System.Transactions> 네임 스페이스 및 Microsoft Distributed Transaction Coordinator 합니다. WCF에서 지원 한 트랜잭션에 대 한 자세한 내용은 참조 [트랜잭션을](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md)합니다.
 
 -   **AJAX 및 REST 지원**
 
@@ -90,11 +90,11 @@ Wcf는 최초의 기술은 Windows Workflow Foundation (WF) 했습니다. 워크
 
 Microsoft BizTalk Server R2 에서도 통신 기술로 WCF를 활용합니다. BizTalk는 표준화된 형식 간에 데이터를 전송 및 수신하도록 디자인되었습니다. 메시지는 중앙의 메시지 상자로 배달되어야 하며, 여기서 엄격한 매핑을 사용하거나 워크플로 엔진과 같은 BizTalk 기능 중 하나를 사용하여 메시지를 변환할 수 있습니다. 이제 BizTalk messagebox에 메시지를 전달할 WCF 줄의 lob (기간 업무) 어댑터를 사용할 수 있습니다.
 
-Microsoft Silverlight는 상호 운용 가능하며 다양한 기능을 제공하는 웹 응용 프로그램을 만들기 위한 플랫폼입니다. 개발자는 이러한 웹 응용 프로그램을 통해 스트리밍 비디오 등의 다양한 미디어를 사용하는 웹 사이트를 만들 수 있습니다. 버전 2부터 Silverlight는 WCF Silverlight 응용 프로그램의 WCF 끝점을 연결 하는 통신 기술로 통합 되었습니다.
+Microsoft Silverlight는 상호 운용 가능하며 다양한 기능을 제공하는 웹 애플리케이션을 만들기 위한 플랫폼입니다. 개발자는 이러한 웹 애플리케이션을 통해 스트리밍 비디오 등의 다양한 미디어를 사용하는 웹 사이트를 만들 수 있습니다. 버전 2부터 Silverlight는 WCF Silverlight 응용 프로그램의 WCF 끝점을 연결 하는 통신 기술로 통합 되었습니다.
 
 [!INCLUDE[dublin](../../../includes/dublin-md.md)] 응용 프로그램 서버 통신에 대 한 WCF를 사용 하는 응용 프로그램 관리 및 배포에 포함 됩니다. [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] WCF 지원 응용 프로그램을 위해 특별히 설계 된 다양 한 도구 및 구성 옵션이 포함 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel>
 - [기본적인 Windows Communication Foundation 개념](../../../docs/framework/wcf/fundamental-concepts.md)

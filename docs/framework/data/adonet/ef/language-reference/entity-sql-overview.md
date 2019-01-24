@@ -2,19 +2,19 @@
 title: Entity SQL 개요
 ms.date: 03/30/2017
 ms.assetid: f0bb8120-e709-40a3-ac1e-5520dc47477d
-ms.openlocfilehash: e7cadbd357ab96d67c6d1f1e49ba0d8b3883bf3e
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 54a3832cffbf3376e6b3ab0826b280b676ccc1a0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32760741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534646"
 ---
 # <a name="entity-sql-overview"></a>Entity SQL 개요
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)]은 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]에서 개념적 모델을 쿼리하는 데 사용할 수 있는 SQL 유사 언어입니다. 개념적 모델 엔터티 및 관계로, 데이터를 표시 하 고 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 이러한 엔터티 및 관계 SQL을 사용한 사용자에 게 친숙 되는 형식으로 쿼리할 수 있습니다.  
+[!INCLUDE[esql](../../../../../../includes/esql-md.md)]은 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]에서 개념적 모델을 쿼리하는 데 사용할 수 있는 SQL 유사 언어입니다. 개념적 모델 엔터티 및 관계 데이터를 표시 하 고 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 이러한 엔터티 및 관계는 친숙 한 SQL을 사용한 적이 있는 형식으로 쿼리할 수 있습니다.  
   
  [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]는 저장소별 데이터 공급자와 함께 작업하여 일반 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]을 저장소별 쿼리로 변환합니다. EntityClient 공급자는 엔터티 모델에 대해 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 명령을 실행하고 스칼라 결과, 결과 집합, 개체 그래프를 포함한 다양한 데이터 형식을 반환하는 방법을 제공합니다. <xref:System.Data.EntityClient.EntityCommand> 개체를 생성할 때 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리 문자열을 해당 <xref:System.Data.EntityClient.EntityCommand.CommandText%2A?displayProperty=nameWithType> 속성에 할당하여 저장 프로시저 이름 또는 쿼리 텍스트를 지정할 수 있습니다. <xref:System.Data.EntityClient.EntityDataReader>는 EDM에 대한 <xref:System.Data.EntityClient.EntityCommand> 실행 결과를 노출합니다. <xref:System.Data.EntityClient.EntityDataReader>를 반환하는 명령을 실행하려면 <xref:System.Data.EntityClient.EntityCommand.ExecuteReader%2A>를 호출합니다.  
   
- EntityClient 공급자 외에도 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]에서 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]을 사용하여 개념적 모델에 대해 쿼리를 실행하고 엔터티 형식의 인스턴스인 강력한 형식의 CLR 개체로 데이터를 반환할 수 있습니다. 자세한 내용은 참조 [개체 작업](../../../../../../docs/framework/data/adonet/ef/working-with-objects.md)합니다.  
+ EntityClient 공급자 외에도 [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]에서 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]을 사용하여 개념적 모델에 대해 쿼리를 실행하고 엔터티 형식의 인스턴스인 강력한 형식의 CLR 개체로 데이터를 반환할 수 있습니다. 자세한 내용은 [개체를 사용 하 여 작업](../../../../../../docs/framework/data/adonet/ef/working-with-objects.md)합니다.  
   
  이 단원에서는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에 대한 개념 정보를 제공합니다.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "32760741"
   
  [null 허용 구조적 형식](../../../../../../docs/framework/data/adonet/ef/language-reference/nullable-structured-types-entity-sql.md)  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [Entity SQL 언어](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)  
- [CSDL, SSDL 및 MSL 사양](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL 언어](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [CSDL, SSDL 및 MSL 사양](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

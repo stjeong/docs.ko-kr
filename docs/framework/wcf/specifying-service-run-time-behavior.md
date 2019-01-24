@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5c5450ea-6af1-4b75-a267-613d0ac54707
-ms.openlocfilehash: 0dbf0a61e1d1183b3f4491002b04156ccf6da0ce
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 759a5dd4cecbaf804d1ccf29fa504c2f5e1ad7f8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54566741"
 ---
 # <a name="specifying-service-run-time-behavior"></a>서비스 런타임 동작 지정
-서비스 계약을 디자인([Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)) 서비스 계약을 구현([Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md))했으면 서비스 런타임의 작업 동작을 구성할 수 있습니다. 이 항목에서는 시스템 제공 서비스와 작업 동작에 대해 설명하고, 새 동작을 만들기 위해 추가 정보를 찾을 수 있는 위치에 대해 설명합니다. 일부 동작은 특성으로 적용되지만 대부분은 응용 프로그램 구성 파일을 사용하여 적용되거나 프로그래밍 방식으로 적용됩니다. 서비스 응용 프로그램을 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [서비스 구성](../../../docs/framework/wcf/configuring-services.md)합니다.  
+서비스 계약을 디자인([Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)) 서비스 계약을 구현([Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md))했으면 서비스 런타임의 작업 동작을 구성할 수 있습니다. 이 항목에서는 시스템 제공 서비스와 작업 동작에 대해 설명하고, 새 동작을 만들기 위해 추가 정보를 찾을 수 있는 위치에 대해 설명합니다. 일부 동작은 특성으로 적용되지만 대부분은 애플리케이션 구성 파일을 사용하여 적용되거나 프로그래밍 방식으로 적용됩니다. 서비스 응용 프로그램을 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [서비스 구성](../../../docs/framework/wcf/configuring-services.md)합니다.  
   
 ## <a name="overview"></a>개요  
  계약은 해당 형식의 서비스 입력, 출력, 데이터 형식 및 기능을 정의합니다. 서비스 계약을 구현하면 주소에서 바인딩으로 구성된 경우 구현한 계약을 이행하는 클래스가 만들어집니다. 클라이언트에서는 계약, 바인딩 및 주소 정보를 모두 알고 있습니다. 이러한 정보가 없으면 클라이언트는 서비스를 사용할 수 없습니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "50183739"
   
  이러한 동작은 대부분 특성에서 구현되므로 <xref:System.ServiceModel.ServiceBehaviorAttribute> 및 <xref:System.ServiceModel.OperationBehaviorAttribute> 특성을 사용할 때 이러한 동작을 사용합니다. 이렇게 하려면 적합한 서비스 클래스 또는 작업 구현에 해당 동작을 적용하면 됩니다. <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 또는 <xref:System.ServiceModel.Description.ServiceDebugBehavior> 개체 등의 다른 동작은 프로그래밍 방식으로 사용될 수 있긴 하지만 일반적으로 응용 프로그램 구성 파일을 사용하여 적용됩니다.  
   
- 예를 들어 메타데이터 게시는 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 개체를 사용하여 구성됩니다. 다음 응용 프로그램 구성 파일은 가장 일반적인 사용 방법을 보여 줍니다.  
+ 예를 들어 메타데이터 게시는 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 개체를 사용하여 구성됩니다. 다음 애플리케이션 구성 파일은 가장 일반적인 사용 방법을 보여 줍니다.  
   
  [!code-xml[ServiceMetadataBehavior#1](../../../samples/snippets/csharp/VS_Snippets_CFX/servicemetadatabehavior/cs/hostapplication.exe.config#1)]  
   
@@ -92,9 +92,9 @@ ms.locfileid: "50183739"
 -   <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>. 서비스 성능을 조정할 수 있는 런타임 처리량 설정을 구성합니다.  
   
 ### <a name="endpoint-behaviors"></a>엔드포인트 동작  
- 다음 동작은 엔드포인트에서 작동합니다. 이러한 동작은 대부분 클라이언트 응용 프로그램에서 사용됩니다.  
+ 다음 동작은 엔드포인트에서 작동합니다. 이러한 동작은 대부분 클라이언트 애플리케이션에서 사용됩니다.  
   
--   <xref:System.ServiceModel.CallbackBehaviorAttribute>. 이중 클라이언트 응용 프로그램에서 콜백 서비스 구현을 구성합니다.  
+-   <xref:System.ServiceModel.CallbackBehaviorAttribute>. 이중 클라이언트 애플리케이션에서 콜백 서비스 구현을 구성합니다.  
   
 -   <xref:System.ServiceModel.Description.CallbackDebugBehavior>. WCF 콜백 개체에 대 한 서비스를 디버깅할 수 있습니다.  
   
@@ -120,6 +120,6 @@ ms.locfileid: "50183739"
   
 -   <xref:System.ServiceModel.TransactionFlowAttribute>. 서비스 작업에서 트랜잭션 헤더를 허용하는 수준을 지정합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서비스 구성](../../../docs/framework/wcf/configuring-services.md)  
- [방법: 서비스 인스턴스 만들기 제어](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
+## <a name="see-also"></a>참고자료
+- [서비스 구성](../../../docs/framework/wcf/configuring-services.md)
+- [방법: 서비스 인스턴스 만들기 제어](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)

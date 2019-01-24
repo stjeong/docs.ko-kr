@@ -1,5 +1,5 @@
 ---
-title: '방법: LINQ를 사용하여 저장 프로시저 호출(Visual Basic)'
+title: '방법: LINQ (Visual Basic)를 사용 하 여 저장된 프로시저를 호출 합니다.'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - queries [LINQ in Visual Basic], stored procedure calls
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - stored procedures [LINQ to SQL]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 6436d384-d1e0-40aa-8afd-451007477260
-ms.openlocfilehash: 50a4dff90dc1ce02869978f1da147e530cefc3e1
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: bd1a3b0b163d3ab0fcc7eb9616e88c11381ff189
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49122671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552049"
 ---
-# <a name="how-to-call-a-stored-procedure-by-using-linq-visual-basic"></a>방법: LINQ를 사용하여 저장 프로시저 호출(Visual Basic)
+# <a name="how-to-call-a-stored-procedure-by-using-linq-visual-basic"></a>방법: LINQ (Visual Basic)를 사용 하 여 저장된 프로시저를 호출 합니다.
 언어 통합 쿼리 (LINQ) 쉽게 데이터베이스 개체와 같은 저장 프로시저를 포함 하 여 데이터베이스 정보에 액세스할 수 있습니다.  
   
  다음 예제에는 SQL Server 데이터베이스에서 저장된 프로시저를 호출 하는 응용 프로그램을 만드는 방법을 보여 줍니다. 샘플은 데이터베이스에 두 개의 다른 저장된 프로시저를 호출 하는 방법을 보여 줍니다. 각 프로시저의 쿼리 결과 반환합니다. 하나의 프로시저는 입력된 매개 변수를 사용 하 고 다른 프로시저 매개 변수를 사용 하지 않습니다.  
@@ -68,9 +68,9 @@ ms.locfileid: "49122671"
   
 4.  F5 키를 눌러 프로젝트를 실행 하 고 결과 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)  
- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](https://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)
+## <a name="see-also"></a>참고자료
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](https://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)

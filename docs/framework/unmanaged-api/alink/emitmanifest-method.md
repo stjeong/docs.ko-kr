@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6df28cd3eaadfe62cd34e20e6e03d5a89e6bb425
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 9217a045a8ddf6ad41adcc71a9568a05fe3fb334
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33401211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54565545"
 ---
 # <a name="emitmanifest-method"></a>EmitManifest 메서드
-최종 매니페스트를 내보냅니다. 다른 모든 파일을 가져오면 모든 옵션을 설정한 후이 메서드를 호출 합니다. 바인딩되지 않은 모듈에 대 한이 메서드를 호출 하지 마십시오.  
+최종 매니페스트를 내보냅니다. 기타 모든 파일을 가져오는 모든 옵션을 설정한 후이 메서드를 호출 합니다. 바인딩되지 않은 모듈에 대 한이 메서드를 호출 하지 마세요.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,7 +42,7 @@ HRESULT EmitManifest(
  어셈블리의 ID입니다.  
   
  `pdwReserveSize`  
- 검색 된 어셈블리 파일에 예약 하 고 크기를 받는 [StrongNameSignatureSize 함수](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturesize-function.md)합니다.  
+ 검색 된 어셈블리 파일에서 예약 크기를 받는 [StrongNameSignatureSize 함수](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturesize-function.md)합니다.  
   
  `ptkManifest`  
  필요에 따라 어셈블리 매니페스트 토큰을 받습니다.  
@@ -53,7 +53,7 @@ HRESULT EmitManifest(
 ## <a name="requirements"></a>요구 사항  
  Alink.h가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

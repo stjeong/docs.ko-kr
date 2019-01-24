@@ -2,12 +2,12 @@
 title: 개발 및 배포 고려 사항
 ms.date: 03/30/2017
 ms.assetid: 535e6611-02de-484c-b5ff-6ffeed04d740
-ms.openlocfilehash: d516877d1fc3a064f5275e226379b7e5011fbcdf
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bc9501ba49594a769db64d69ac93157b734c9eb9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43507333"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540886"
 ---
 # <a name="development-and-deployment-considerations"></a>개발 및 배포 고려 사항
 이 단원의 항목에서는 ADO.NET Entity Framework를 기반으로 하는 응용 프로그램을 개발하거나 배포할 때 고려해야 할 문제를 다룹니다.  
@@ -21,8 +21,8 @@ ms.locfileid: "43507333"
   
  [배포 고려 사항](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
- [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)  
- [시작](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+## <a name="see-also"></a>참고자료
+- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
+- [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)
+- [시작](../../../../../docs/framework/data/adonet/ef/getting-started.md)
+- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)

@@ -2,12 +2,12 @@
 title: 인덱싱된 속성
 description: 인덱싱된 속성에 대해 알아봅니다 F#를 정렬 된 데이터에 대 한 배열 유사 액세스를 허용 합니다.
 ms.date: 10/17/2018
-ms.openlocfilehash: 3817290505339803814e981cd5408cd4df6bd283
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: a092da753acacf80807d145051a719df2d3e1520
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54550970"
 ---
 # <a name="indexed-properties"></a>인덱싱된 속성
 
@@ -58,14 +58,30 @@ ONE first two second three third four fourth five fifth six 6th
 seven seventh eight eighth nine ninth ten tenth
 ```
 
-## <a name="indexed-properties-with-multiple-index-variables"></a>여러 인덱스 변수를 사용 하 여 인덱싱된 속성
+## <a name="indexed-properties-with-multiple-index-values"></a>여러 인덱스 값을 사용 하 여 인덱싱된 속성
 
-인덱싱된 속성 둘 이상의 인덱스 변수를 가질 수 있습니다. 이 경우 변수 속성을 사용 하는 경우 쉼표로 구분 됩니다. 이러한 속성의 set 메서드에 두 개의 커리 된 인수는 첫 번째 키가 포함 된 튜플을 이며 두 번째는 설정 된 값에 있어야 합니다.
+인덱싱된 속성 둘 이상의 인덱스 값을 가질 수 있습니다. 이 경우 값 속성을 사용 하는 경우 쉼표로 구분 됩니다. 이러한 속성의 set 메서드에 두 개의 커리 된 인수는 첫 번째는 키가 포함 된 튜플 및는 두 번째 값을 설정 하는 있어야 합니다.
 
-다음 코드는 여러 인덱스 변수를 사용 하 여 인덱싱된 속성의 사용을 보여 줍니다.
+다음 코드는 여러 인덱스 값을 사용 하 여 인덱싱된 속성의 사용을 보여 줍니다.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3302.fs)]
+```fsharp
+open System.Collections.Generic
 
-## <a name="see-also"></a>참고 항목
+/// Basic implementation of a sparse matrix basedon a dictionary
+type SparseMatrix() =
+    let table = new Dictionary<(int * int), float>()
+    member __.Item
+        // Because the key is comprised of two values, 'get' has two index values
+        with get(key1, key2) = table.[(key1, key2)]
+
+        // 'set' has two index values and a new value to place in the key's position
+        and set (key1, key2) value = table.[(key1, key2)] <- value
+
+let sm = new SparseMatrix()
+for i in 1..1000 do
+    sm.[i, i] <- float i * float i
+```
+
+## <a name="see-also"></a>참고자료
 
 - [멤버](index.md)

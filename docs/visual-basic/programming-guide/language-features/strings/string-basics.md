@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [Visual Basic], Visual Basic
 - strings [Visual Basic], regular expressions
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.openlocfilehash: 7d2477070dce558aa932c822852ac8ac9c6721e4
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 2a7dd80d141ff5945bcce71fead1bb5bc24ad737
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552386"
 ---
 # <a name="string-basics-in-visual-basic"></a>Visual Basic의 문자열 기본
 `String` 데이터 형식은 일련의 문자를 나타내며, 각각은 차례로 `Char` 데이터 형식의 인스턴스를 나타냅니다. 이 항목에서는 Visual Basic에서 문자열의 기본 개념을 소개 합니다.  
@@ -71,8 +71,8 @@ World]]></xml>.Value
   
  다른 내장 데이터 형식과 달리 `String`은 참조 형식입니다. 참조 형식의 변수가 인수로 함수 또는 서브루틴에 전달되면 데이터가 저장되는 메모리 주소에 대한 참조가 문자열의 실제 값 대신 전달됩니다. 따라서 이전 예제에서 변수의 이름은 동일하게 유지되지만 새 값을 보유하는 `String` 클래스의 다른 새 인스턴스를 가리킵니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 문자열 소개](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
- [String 데이터 형식](../../../../visual-basic/language-reference/data-types/string-data-type.md)  
- [Char 데이터 형식](../../../../visual-basic/language-reference/data-types/char-data-type.md)  
- [기본적인 문자열 작업](../../../../standard/base-types/basic-string-operations.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 문자열 소개](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [String 데이터 형식](../../../../visual-basic/language-reference/data-types/string-data-type.md)
+- [Char 데이터 형식](../../../../visual-basic/language-reference/data-types/char-data-type.md)
+- [기본적인 문자열 작업](../../../../standard/base-types/basic-string-operations.md)

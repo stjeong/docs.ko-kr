@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -recurse compiler option [Visual Basic]
 - recurse compiler option [Visual Basic]
 ms.assetid: 84a0b670-33ae-44c4-a46a-b90388809317
-ms.openlocfilehash: 1edb648ec574c0052b7b8314f4ada710c8b0fe01
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: b108a99c799523f3eb50c075a5dc67f0648403fa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183336"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54552335"
 ---
 # <a name="-recurse"></a>-recurse
 지정된 된 디렉터리 또는 프로젝트 디렉터리의 모든 자식 디렉터리에 있는 소스 코드 파일을 컴파일합니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "50183336"
  선택 사항입니다. 검색을 시작하려는 디렉터리입니다. 지정 하지 않으면 프로젝트 디렉터리에서 검색을 시작 합니다.  
   
  `file`  
- 필수. 검색할 파일입니다. 와일드카드 문자가 허용됩니다.  
+ 필수 요소. 검색할 파일입니다. 와일드카드 문자가 허용됩니다.  
   
 ## <a name="remarks"></a>설명  
  사용 하지 않고 프로젝트 디렉터리에서 일치 하는 모든 파일을 컴파일할 파일 이름에 와일드 카드를 사용할 수 있습니다 `-recurse`합니다. 출력 파일 이름은 없으므로 지정 하는 경우 컴파일러 처리 하는 첫 번째 입력된 파일에서 출력 파일 이름으로 계산 됩니다. 이 일반적으로 사전순으로 볼 때 컴파일된 파일 목록에서 첫 번째 파일입니다. 이러한 이유로 사용 하 여 출력 파일을 지정 하는 가장 좋은 것은 `-out` 옵션입니다.  
@@ -48,7 +48,7 @@ vbc *.vb
 vbc -target:library -out:Test.ABC.dll -recurse:Test\ABC\*.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

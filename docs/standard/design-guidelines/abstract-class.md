@@ -11,12 +11,12 @@ helpviewer_keywords:
 - type design guidelines, classes
 ms.assetid: d3646e6d-5c1f-4922-8fb0-ec5effb30d60
 author: KrzysztofCwalina
-ms.openlocfilehash: 1982c7c97802dedd1d49c770be5a7ac00944cbfc
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6eec3bb4575b89c6476e6c3410050c705141777f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54550415"
 ---
 # <a name="abstract-class-design"></a>추상 클래스 디자인
 **X DO NOT** 추상 형식에 public 또는 protected 내부 생성자를 정의 합니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "53130913"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [형식 디자인 지침](../../../docs/standard/design-guidelines/type.md)  
+- [형식 디자인 지침](../../../docs/standard/design-guidelines/type.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

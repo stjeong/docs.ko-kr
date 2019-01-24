@@ -2,12 +2,12 @@
 title: PeerSecuritySettings
 ms.date: 03/30/2017
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
-ms.openlocfilehash: 92aca4c790607de91314aacf6414d0dfacea9a9f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 761ed0e30c6acca8c910c5dc97dfbae46c1f89bb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54564840"
 ---
 # <a name="peersecuritysettings"></a>PeerSecuritySettings
 PeerSecuritySettings  
@@ -48,5 +48,5 @@ class PeerSecuritySettings
 |---------|-----------------------------------|  
 |네임스페이스|root\ServiceModel에 정의되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.PeerSecuritySettings>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.PeerSecuritySettings>

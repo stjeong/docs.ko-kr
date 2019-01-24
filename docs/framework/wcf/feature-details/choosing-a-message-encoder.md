@@ -2,12 +2,12 @@
 title: 메시지 인코더 선택
 ms.date: 03/30/2017
 ms.assetid: 2204d82d-d962-4922-a79e-c9a231604f19
-ms.openlocfilehash: 061869704674206739d81be24e105fc87ce0f129
-ms.sourcegitcommit: b5cd9d5d3b75a5537fc9ad8a3f085f0bb1845ee0
+ms.openlocfilehash: 027c9e460e15b4b038147cd79c04bd082bc3356d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "44248932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54538429"
 ---
 # <a name="choosing-a-message-encoder"></a>메시지 인코더 선택
 이 항목에서는 Windows Communication Foundation (WCF)에 포함 된 메시지 인코더 선택 기준에 설명 합니다: 이진, 텍스트 및 전송 최적화 메커니즘 MTOM (Message).  
@@ -41,7 +41,7 @@ ms.locfileid: "44248932"
 |타사 도구 지원|인코딩에 대한 지원 영역에는 개발 및 진단이 포함됩니다. 타사 개발자는 POX 형식으로 인코딩된 메시지를 처리하기 위해 라이브러리 및 도구 키트에 대규모 투자를 해왔습니다.|텍스트(POX)|  
 |상호 운용성|이 요소는 비 WCF 서비스와 상호 운용 하도록 WCF 인코더의 기능을 참조 합니다.|텍스트<br /><br /> MTOM(부분)|  
   
-참고: 이진 인코더를 사용할 경우 XMLReader를 만들 때 IgnoreWhitespace 설정을 사용해도 아무 효과가 없습니다.  예를 들어, 서비스 작업 안에서 다음을 수행하는 경우를 가정해 봅니다.  
+참고: 이진 인코더를 사용할 경우 XMLReader를 만들 때 IgnoreWhitespace 설정을 사용 하는 효과가 없습니다.  예를 들어, 서비스 작업 안에서 다음을 수행하는 경우를 가정해 봅니다.  
 
 ```csharp
 public void OperationContract(XElement input)
@@ -82,6 +82,6 @@ WCF 4.5부터는 WCF 이진 인코더에서 압축을 추가 지원합니다. �
 
 클라이언트와 서비스 모두 압축된 메시지를 받고 보내는 데 동의 해야 하 고 따라서 compressionFormat 속성은 클라이언트와 서비스 둘 다의 binaryMessageEncoding 요소에 구성 되어야 합니다. 서비스 또는 클라이언트가 압축에 대해 구성되지 않은 경우 ProtocolException이 throw되지만 다른 측의 is.Enabling 압축은 주의하여 고려해야 합니다. 네트워크 대역폭이 병목인 경우 압축이 가장 유용합니다. CPU가 병목인 경우 압축을 수행하면 처리량이 감소합니다. 이렇게 하는 것이 응용 프로그램에 좋은지 알아 보려면 시뮬레이션 환경에서 적절한 테스트를 수행해야 합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[바인딩](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [바인딩](../../../../docs/framework/wcf/feature-details/bindings.md)

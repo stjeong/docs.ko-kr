@@ -12,12 +12,12 @@ helpviewer_keywords:
 - brushes [WPF], painting with images
 - brushes [WPF], painting with visuals
 ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
-ms.openlocfilehash: 0d860062814a447830e1237f4fc2c1ae0d223e9e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d226ecb6e168a044cd9802b4278c25084d8c84fc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54537753"
 ---
 # <a name="painting-with-images-drawings-and-visuals"></a>이미지, 그림 및 시각적 표시로 그리기
 이 항목에서는 사용 하는 방법을 설명 <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, 및 <xref:System.Windows.Media.VisualBrush> 이미지를 사용 하 여 영역을 그릴 개체를 <xref:System.Windows.Media.Drawing>, 또는 <xref:System.Windows.Media.Visual>합니다.  
@@ -90,9 +90,9 @@ DrawingBrush로 그린 개체
   
  두 가지 방법으로 지정할 수는 <xref:System.Windows.Media.VisualBrush.Visual%2A> 의 콘텐츠는 <xref:System.Windows.Media.VisualBrush>합니다.  
   
--   새 <xref:System.Windows.Media.Visual> 를 설정 하는 데 사용 합니다 <xref:System.Windows.Media.VisualBrush.Visual%2A> 의 속성을 <xref:System.Windows.Media.VisualBrush>합니다. 예제를 보려면 다음에 나오는 [예제: 시각적 개체로 개체 그리기](#examplevisualbrush1)를 참조하세요.  
+-   새 <xref:System.Windows.Media.Visual> 를 설정 하는 데 사용 합니다 <xref:System.Windows.Media.VisualBrush.Visual%2A> 의 속성을 <xref:System.Windows.Media.VisualBrush>합니다. 예를 들어 참조 된 [예제: 시각적 개체로 개체 그리기](#examplevisualbrush1) 에 나오는 섹션입니다.  
   
--   기존 항목 사용 <xref:System.Windows.Media.Visual>, 대상의 중복 이미지를 만드는 <xref:System.Windows.Media.Visual>합니다. 사용할 수 있습니다는 <xref:System.Windows.Media.VisualBrush> 리플렉션 및 확대와 같은 흥미로운 효과 만들 수 있습니다. 예제를 보려면 [예제: 리플렉션 만들기](#examplevisualbrush2) 섹션을 참조하세요.  
+-   기존 항목 사용 <xref:System.Windows.Media.Visual>, 대상의 중복 이미지를 만드는 <xref:System.Windows.Media.Visual>합니다. 사용할 수 있습니다는 <xref:System.Windows.Media.VisualBrush> 리플렉션 및 확대와 같은 흥미로운 효과 만들 수 있습니다. 예를 들어 참조 된 [예제: 리플렉션 만들기](#examplevisualbrush2) 섹션입니다.  
   
  정의 하는 경우 새 <xref:System.Windows.Media.VisualBrush.Visual%2A> 에 대 한는 <xref:System.Windows.Media.VisualBrush> 하 고 <xref:System.Windows.Media.Visual> 는 <xref:System.Windows.UIElement> (예: 패널 또는 컨트롤)에서 실행 되는 레이아웃 시스템을 <xref:System.Windows.UIElement> 와 해당 자식 요소 때를 <xref:System.Windows.Media.VisualBrush.AutoLayoutContent%2A> 속성이 `true`. 그러나 루트 <xref:System.Windows.UIElement> 기본적으로 시스템의 나머지 부분과에서 격리 됩니다: 스타일 및 외부 레이아웃에이 경계 낫다는 개념 수 없습니다. 루트의 크기를 명시적으로 지정 해야 하므로 <xref:System.Windows.UIElement>만 부모 이기 때문은 <xref:System.Windows.Media.VisualBrush> 하므로 해당 수 없습니다. 자동으로 크기가 조정 자체 그려지는 영역 및 합니다. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]의 레이아웃에 대한 자세한 내용은 [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)을 참조하세요.  
   
@@ -134,16 +134,16 @@ DrawingBrush로 그린 개체
   
  바둑판식 배열 기능에 대 한 자세한 내용은 <xref:System.Windows.Media.TileBrush> 개체를 참조 합니다 [TileBrush 개요](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.ImageBrush>  
- <xref:System.Windows.Media.DrawingBrush>  
- <xref:System.Windows.Media.VisualBrush>  
- <xref:System.Windows.Media.TileBrush>  
- [TileBrush 개요](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)  
- [WPF 브러시 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md)  
- [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [Drawing 개체 개요](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [불투명 마스크 개요](../../../../docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md)  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [ImageBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160005)  
- [VisualBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160049)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.ImageBrush>
+- <xref:System.Windows.Media.DrawingBrush>
+- <xref:System.Windows.Media.VisualBrush>
+- <xref:System.Windows.Media.TileBrush>
+- [TileBrush 개요](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)
+- [WPF 브러시 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md)
+- [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [Drawing 개체 개요](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [불투명 마스크 개요](../../../../docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md)
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [ImageBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160005)
+- [VisualBrush 샘플](https://go.microsoft.com/fwlink/?LinkID=160049)

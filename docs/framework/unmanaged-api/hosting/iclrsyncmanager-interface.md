@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ede896cdb93217fcfba9d66ed7102bcc1ba762e9
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4b949466c5557415ec06bac601380675beed7fd1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54549865"
 ---
 # <a name="iclrsyncmanager-interface"></a>ICLRSyncManager 인터페이스
 요청 된 작업에 대 한 정보를 가져오려면 호스트가 동기화 구현에서 교착 상태를 감지 하는 데 사용할 수 있는 메서드를 정의 합니다.  
@@ -44,8 +44,8 @@ ms.locfileid: "53129326"
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Threading.Thread>  
- [IHostSyncManager 인터페이스](ihostsyncmanager-interface.md)  
- [관리 되는 스레딩과 관리 되지 않는 스레딩](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
- [호스팅 인터페이스](hosting-interfaces.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Threading.Thread>
+- [IHostSyncManager 인터페이스](ihostsyncmanager-interface.md)
+- [관리 되는 스레딩과 관리 되지 않는 스레딩](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
+- [호스팅 인터페이스](hosting-interfaces.md)
