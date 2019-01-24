@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9e8aa71a79bee45d5a8e1f3448c781e6ba1ec605
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e1e97b8df2ad81f91cd7250afbe4c5cc544ca6be
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33414140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54702251"
 ---
-# <a name="icordebugmanagedcallbackeditandcontinueremap-method"></a><span data-ttu-id="39196-102">ICorDebugManagedCallback::EditAndContinueRemap 메서드</span><span class="sxs-lookup"><span data-stu-id="39196-102">ICorDebugManagedCallback::EditAndContinueRemap Method</span></span>
-<span data-ttu-id="39196-103">이 메서드는 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="39196-103">This method has been deprecated.</span></span> <span data-ttu-id="39196-104">통합된 개발 환경 (IDE)에 다시 매핑 이벤트 보냈음을 디버거에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="39196-104">It notifies the debugger that a remap event has been sent to the integrated development environment (IDE).</span></span>  
+# <a name="icordebugmanagedcallbackeditandcontinueremap-method"></a><span data-ttu-id="3535d-102">ICorDebugManagedCallback::EditAndContinueRemap 메서드</span><span class="sxs-lookup"><span data-stu-id="3535d-102">ICorDebugManagedCallback::EditAndContinueRemap Method</span></span>
+<span data-ttu-id="3535d-103">이 메서드는 사용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="3535d-103">This method has been deprecated.</span></span> <span data-ttu-id="3535d-104">통합된 개발 환경 (IDE) 매핑 변경 이벤트를 보냈음을 디버거에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="3535d-104">It notifies the debugger that a remap event has been sent to the integrated development environment (IDE).</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="39196-105">구문</span><span class="sxs-lookup"><span data-stu-id="39196-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3535d-105">구문</span><span class="sxs-lookup"><span data-stu-id="3535d-105">Syntax</span></span>  
   
 ```  
 HRESULT EditAndContinueRemap (  
@@ -38,17 +38,17 @@ HRESULT EditAndContinueRemap (
 );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="39196-106">설명</span><span class="sxs-lookup"><span data-stu-id="39196-106">Remarks</span></span>  
- <span data-ttu-id="39196-107">`EditAndContinueRemap` 메서드는 이전 버전의 업데이트 된 함수에서 코드를 실행 하려고 했습니다.</span><span class="sxs-lookup"><span data-stu-id="39196-107">The `EditAndContinueRemap` method is called when the execution of the code in an old version of an updated function has been attempted.</span></span> <span data-ttu-id="39196-108">공용 언어 런타임 호출은 `EditAndContinueRemap` IDE에 매핑 변경 이벤트를 전송 하는 메서드.</span><span class="sxs-lookup"><span data-stu-id="39196-108">The common language runtime calls the `EditAndContinueRemap` method to send a remap event to the IDE.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="3535d-106">설명</span><span class="sxs-lookup"><span data-stu-id="3535d-106">Remarks</span></span>  
+ <span data-ttu-id="3535d-107">`EditAndContinueRemap` 메서드 된 업데이트 된 함수의 이전 버전의 코드를 실행 하려는 경우 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3535d-107">The `EditAndContinueRemap` method is called when the execution of the code in an old version of an updated function has been attempted.</span></span> <span data-ttu-id="3535d-108">공용 언어 런타임 호출을 `EditAndContinueRemap` IDE에 다시 매핑 이벤트를 보내는 방법.</span><span class="sxs-lookup"><span data-stu-id="3535d-108">The common language runtime calls the `EditAndContinueRemap` method to send a remap event to the IDE.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="39196-109">요구 사항</span><span class="sxs-lookup"><span data-stu-id="39196-109">Requirements</span></span>  
- <span data-ttu-id="39196-110">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="39196-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="3535d-109">요구 사항</span><span class="sxs-lookup"><span data-stu-id="3535d-109">Requirements</span></span>  
+ <span data-ttu-id="3535d-110">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="3535d-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="39196-111">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="39196-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="3535d-111">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3535d-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="39196-112">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="39196-112">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="3535d-112">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3535d-112">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="39196-113">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="39196-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="3535d-113">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3535d-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="39196-114">참고 항목</span><span class="sxs-lookup"><span data-stu-id="39196-114">See Also</span></span>  
- [<span data-ttu-id="39196-115">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="39196-115">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## <a name="see-also"></a><span data-ttu-id="3535d-114">참고자료</span><span class="sxs-lookup"><span data-stu-id="3535d-114">See also</span></span>
+- [<span data-ttu-id="3535d-115">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="3535d-115">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

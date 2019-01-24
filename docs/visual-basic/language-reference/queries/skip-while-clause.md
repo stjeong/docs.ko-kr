@@ -8,45 +8,45 @@ helpviewer_keywords:
 - Skip While clause [Visual Basic]
 - queries [Visual Basic], Skip While
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
-ms.openlocfilehash: a3c0749560d8cea1e46d96298347ce54f0bf9185
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 7da5f50a9d0fa867244a569e03685cc637bf3ce6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54692521"
 ---
-# <a name="skip-while-clause-visual-basic"></a><span data-ttu-id="7a893-102">Skip While 절(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="7a893-102">Skip While Clause (Visual Basic)</span></span>
-<span data-ttu-id="7a893-103">지정된 조건이 `true`이면 컬렉션에 있는 요소를 무시하고 나머지 요소를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-103">Bypasses elements in a collection as long as a specified condition is `true` and then returns the remaining elements.</span></span>  
+# <a name="skip-while-clause-visual-basic"></a><span data-ttu-id="b52bf-102">Skip While 절(Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="b52bf-102">Skip While Clause (Visual Basic)</span></span>
+<span data-ttu-id="b52bf-103">지정된 조건이 `true`이면 컬렉션에 있는 요소를 무시하고 나머지 요소를 반환합니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-103">Bypasses elements in a collection as long as a specified condition is `true` and then returns the remaining elements.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7a893-104">구문</span><span class="sxs-lookup"><span data-stu-id="7a893-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="b52bf-104">구문</span><span class="sxs-lookup"><span data-stu-id="b52bf-104">Syntax</span></span>  
   
 ```  
 Skip While expression  
 ```  
   
-## <a name="parts"></a><span data-ttu-id="7a893-105">요소</span><span class="sxs-lookup"><span data-stu-id="7a893-105">Parts</span></span>  
+## <a name="parts"></a><span data-ttu-id="b52bf-105">요소</span><span class="sxs-lookup"><span data-stu-id="b52bf-105">Parts</span></span>  
   
-|<span data-ttu-id="7a893-106">용어</span><span class="sxs-lookup"><span data-stu-id="7a893-106">Term</span></span>|<span data-ttu-id="7a893-107">정의</span><span class="sxs-lookup"><span data-stu-id="7a893-107">Definition</span></span>|  
+|<span data-ttu-id="b52bf-106">용어</span><span class="sxs-lookup"><span data-stu-id="b52bf-106">Term</span></span>|<span data-ttu-id="b52bf-107">정의</span><span class="sxs-lookup"><span data-stu-id="b52bf-107">Definition</span></span>|  
 |---|---|  
-|`expression`|<span data-ttu-id="7a893-108">필수.</span><span class="sxs-lookup"><span data-stu-id="7a893-108">Required.</span></span> <span data-ttu-id="7a893-109">에 대 한 요소를 테스트 하는 조건을 나타내는 식입니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-109">An expression that represents a condition to test elements for.</span></span> <span data-ttu-id="7a893-110">식을 반환 해야 합니다는 `Boolean` 값 또는 이와 동일한 기능 같은 `Integer` 으로 계산 되는 `Boolean`합니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-110">The expression must return a `Boolean` value or a functional equivalent, such as an `Integer` to be evaluated as a `Boolean`.</span></span>|  
+|`expression`|<span data-ttu-id="b52bf-108">필수 요소.</span><span class="sxs-lookup"><span data-stu-id="b52bf-108">Required.</span></span> <span data-ttu-id="b52bf-109">에 대 한 요소를 테스트 하는 조건을 나타내는 식입니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-109">An expression that represents a condition to test elements for.</span></span> <span data-ttu-id="b52bf-110">식을 반환 해야 합니다는 `Boolean` 값 또는 이와 동일한 기능 같은 `Integer` 으로 계산 되는 `Boolean`합니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-110">The expression must return a `Boolean` value or a functional equivalent, such as an `Integer` to be evaluated as a `Boolean`.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="7a893-111">설명</span><span class="sxs-lookup"><span data-stu-id="7a893-111">Remarks</span></span>  
- <span data-ttu-id="7a893-112">합니다 `Skip While` 일까 지 제공 된 쿼리 결과의 시작 부분에서 요소를 무시 하는 절 `expression` 반환 `false`합니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-112">The `Skip While` clause bypasses elements from the beginning of a query result until the supplied `expression` returns `false`.</span></span> <span data-ttu-id="7a893-113">이후에 `expression` 반환 `false`, 나머지 모든 요소를 반환 하는 쿼리.</span><span class="sxs-lookup"><span data-stu-id="7a893-113">After `expression` returns `false`, the query returns all the remaining elements.</span></span> <span data-ttu-id="7a893-114">`expression` 나머지 결과 대해 무시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-114">The `expression` is ignored for the remaining results.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="b52bf-111">설명</span><span class="sxs-lookup"><span data-stu-id="b52bf-111">Remarks</span></span>  
+ <span data-ttu-id="b52bf-112">합니다 `Skip While` 일까 지 제공 된 쿼리 결과의 시작 부분에서 요소를 무시 하는 절 `expression` 반환 `false`합니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-112">The `Skip While` clause bypasses elements from the beginning of a query result until the supplied `expression` returns `false`.</span></span> <span data-ttu-id="b52bf-113">이후에 `expression` 반환 `false`, 나머지 모든 요소를 반환 하는 쿼리.</span><span class="sxs-lookup"><span data-stu-id="b52bf-113">After `expression` returns `false`, the query returns all the remaining elements.</span></span> <span data-ttu-id="b52bf-114">`expression` 나머지 결과 대해 무시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-114">The `expression` is ignored for the remaining results.</span></span>  
   
- <span data-ttu-id="7a893-115">`Skip While` 절에서 다른 합니다 `Where` 절에는 `Where` 특정 조건을 충족 하지 않는 쿼리에서 모든 요소를 제외 하려면 절을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-115">The `Skip While` clause differs from the `Where` clause in that the `Where` clause can be used to exclude all elements from a query that do not meet a particular condition.</span></span> <span data-ttu-id="7a893-116">`Skip While` 절 조건이 충족 되지 않은 첫 번째 시간 까지만 요소를 제외 합니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-116">The `Skip While` clause excludes elements only until the first time that the condition is not satisfied.</span></span> <span data-ttu-id="7a893-117">`Skip While` 절은 순서가 지정 된 쿼리 결과 사용 하 여 작업할 때 가장 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-117">The `Skip While` clause is most useful when you are working with an ordered query result.</span></span>  
+ <span data-ttu-id="b52bf-115">`Skip While` 절에서 다른 합니다 `Where` 절에는 `Where` 특정 조건을 충족 하지 않는 쿼리에서 모든 요소를 제외 하려면 절을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-115">The `Skip While` clause differs from the `Where` clause in that the `Where` clause can be used to exclude all elements from a query that do not meet a particular condition.</span></span> <span data-ttu-id="b52bf-116">`Skip While` 절 조건이 충족 되지 않은 첫 번째 시간 까지만 요소를 제외 합니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-116">The `Skip While` clause excludes elements only until the first time that the condition is not satisfied.</span></span> <span data-ttu-id="b52bf-117">`Skip While` 절은 순서가 지정 된 쿼리 결과 사용 하 여 작업할 때 가장 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-117">The `Skip While` clause is most useful when you are working with an ordered query result.</span></span>  
   
- <span data-ttu-id="7a893-118">특정 수의 쿼리 결과의 시작 부분에서 결과 사용 하 여 무시할 수 있습니다는 `Skip` 절.</span><span class="sxs-lookup"><span data-stu-id="7a893-118">You can bypass a specific number of results from the beginning of a query result by using the `Skip` clause.</span></span>  
+ <span data-ttu-id="b52bf-118">특정 수의 쿼리 결과의 시작 부분에서 결과 사용 하 여 무시할 수 있습니다는 `Skip` 절.</span><span class="sxs-lookup"><span data-stu-id="b52bf-118">You can bypass a specific number of results from the beginning of a query result by using the `Skip` clause.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="7a893-119">예제</span><span class="sxs-lookup"><span data-stu-id="7a893-119">Example</span></span>  
- <span data-ttu-id="7a893-120">다음 코드 예제에서는 `Skip While` 절 미국에서 첫 번째 고객을 찾을 때까지 결과를 건너뜁니다.</span><span class="sxs-lookup"><span data-stu-id="7a893-120">The following code example uses the `Skip While` clause to bypass results until the first customer from the United States is found.</span></span>  
+## <a name="example"></a><span data-ttu-id="b52bf-119">예제</span><span class="sxs-lookup"><span data-stu-id="b52bf-119">Example</span></span>  
+ <span data-ttu-id="b52bf-120">다음 코드 예제에서는 `Skip While` 절 미국에서 첫 번째 고객을 찾을 때까지 결과를 건너뜁니다.</span><span class="sxs-lookup"><span data-stu-id="b52bf-120">The following code example uses the `Skip While` clause to bypass results until the first customer from the United States is found.</span></span>  
   
  [!code-vb[VbSimpleQuerySamples#3](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/skip-while-clause_1.vb)]  
   
-## <a name="see-also"></a><span data-ttu-id="7a893-121">참고 항목</span><span class="sxs-lookup"><span data-stu-id="7a893-121">See Also</span></span>  
- [<span data-ttu-id="7a893-122">Visual Basic의 LINQ 소개</span><span class="sxs-lookup"><span data-stu-id="7a893-122">Introduction to LINQ in Visual Basic</span></span>](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [<span data-ttu-id="7a893-123">쿼리</span><span class="sxs-lookup"><span data-stu-id="7a893-123">Queries</span></span>](../../../visual-basic/language-reference/queries/index.md)  
- [<span data-ttu-id="7a893-124">Select 절</span><span class="sxs-lookup"><span data-stu-id="7a893-124">Select Clause</span></span>](../../../visual-basic/language-reference/queries/select-clause.md)  
- [<span data-ttu-id="7a893-125">From 절</span><span class="sxs-lookup"><span data-stu-id="7a893-125">From Clause</span></span>](../../../visual-basic/language-reference/queries/from-clause.md)  
- [<span data-ttu-id="7a893-126">Skip 절</span><span class="sxs-lookup"><span data-stu-id="7a893-126">Skip Clause</span></span>](../../../visual-basic/language-reference/queries/skip-clause.md)  
- [<span data-ttu-id="7a893-127">Take While 절</span><span class="sxs-lookup"><span data-stu-id="7a893-127">Take While Clause</span></span>](../../../visual-basic/language-reference/queries/take-while-clause.md)  
- [<span data-ttu-id="7a893-128">Where 절</span><span class="sxs-lookup"><span data-stu-id="7a893-128">Where Clause</span></span>](../../../visual-basic/language-reference/queries/where-clause.md)
+## <a name="see-also"></a><span data-ttu-id="b52bf-121">참고자료</span><span class="sxs-lookup"><span data-stu-id="b52bf-121">See also</span></span>
+- [<span data-ttu-id="b52bf-122">Visual Basic의 LINQ 소개</span><span class="sxs-lookup"><span data-stu-id="b52bf-122">Introduction to LINQ in Visual Basic</span></span>](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [<span data-ttu-id="b52bf-123">쿼리</span><span class="sxs-lookup"><span data-stu-id="b52bf-123">Queries</span></span>](../../../visual-basic/language-reference/queries/index.md)
+- [<span data-ttu-id="b52bf-124">Select 절</span><span class="sxs-lookup"><span data-stu-id="b52bf-124">Select Clause</span></span>](../../../visual-basic/language-reference/queries/select-clause.md)
+- [<span data-ttu-id="b52bf-125">From 절</span><span class="sxs-lookup"><span data-stu-id="b52bf-125">From Clause</span></span>](../../../visual-basic/language-reference/queries/from-clause.md)
+- [<span data-ttu-id="b52bf-126">Skip 절</span><span class="sxs-lookup"><span data-stu-id="b52bf-126">Skip Clause</span></span>](../../../visual-basic/language-reference/queries/skip-clause.md)
+- [<span data-ttu-id="b52bf-127">Take While 절</span><span class="sxs-lookup"><span data-stu-id="b52bf-127">Take While Clause</span></span>](../../../visual-basic/language-reference/queries/take-while-clause.md)
+- [<span data-ttu-id="b52bf-128">Where 절</span><span class="sxs-lookup"><span data-stu-id="b52bf-128">Where Clause</span></span>](../../../visual-basic/language-reference/queries/where-clause.md)

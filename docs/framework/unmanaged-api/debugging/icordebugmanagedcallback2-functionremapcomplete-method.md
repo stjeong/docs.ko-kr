@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4051c3f8300b02581c86642455954615d920c3ba
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: a1909b7123bde23058e42394db86af83d08e2354
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33415443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54685388"
 ---
-# <a name="icordebugmanagedcallback2functionremapcomplete-method"></a><span data-ttu-id="99409-102">ICorDebugManagedCallback2::FunctionRemapComplete 메서드</span><span class="sxs-lookup"><span data-stu-id="99409-102">ICorDebugManagedCallback2::FunctionRemapComplete Method</span></span>
-<span data-ttu-id="99409-103">편집 된 함수의 새 버전으로 코드 실행이 전환 디버거에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="99409-103">Notifies the debugger that code execution has switched to a new version of an edited function.</span></span>  
+# <a name="icordebugmanagedcallback2functionremapcomplete-method"></a><span data-ttu-id="7770a-102">ICorDebugManagedCallback2::FunctionRemapComplete 메서드</span><span class="sxs-lookup"><span data-stu-id="7770a-102">ICorDebugManagedCallback2::FunctionRemapComplete Method</span></span>
+<span data-ttu-id="7770a-103">편집 된 함수의 새 버전으로 코드 실행이 전환는 디버거에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="7770a-103">Notifies the debugger that code execution has switched to a new version of an edited function.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="99409-104">구문</span><span class="sxs-lookup"><span data-stu-id="99409-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7770a-104">구문</span><span class="sxs-lookup"><span data-stu-id="7770a-104">Syntax</span></span>  
   
 ```  
 HRESULT FunctionRemapComplete (  
@@ -37,28 +37,28 @@ HRESULT FunctionRemapComplete (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="99409-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="99409-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="7770a-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="7770a-105">Parameters</span></span>  
  `pAppDomain`  
- <span data-ttu-id="99409-106">[in] 편집 된 함수를 포함 하는 응용 프로그램 도메인을 나타내는 ICorDebugAppDomain 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="99409-106">[in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the edited function.</span></span>  
+ <span data-ttu-id="7770a-106">[in] 편집된 된 함수를 포함 하는 응용 프로그램 도메인을 나타내는 ICorDebugAppDomain 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="7770a-106">[in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the edited function.</span></span>  
   
  `pThread`  
- <span data-ttu-id="99409-107">[in] 다시 매핑 중단점 만났습니다 스레드를 나타내는 ICorDebugThread 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="99409-107">[in] A pointer to an ICorDebugThread object that represents the thread on which the remap breakpoint was encountered.</span></span>  
+ <span data-ttu-id="7770a-107">[in] 다시 매핑 중단점이 발생 하는 스레드를 나타내는 ICorDebugThread 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="7770a-107">[in] A pointer to an ICorDebugThread object that represents the thread on which the remap breakpoint was encountered.</span></span>  
   
  `pFunction`  
- <span data-ttu-id="99409-108">[in] 현재 스레드에서 실행 하는 함수의 버전을 나타내는 ICorDebugFunction 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="99409-108">[in] A pointer to an ICorDebugFunction object that represents the version of the function currently running on the thread.</span></span>  
+ <span data-ttu-id="7770a-108">[in] 현재 스레드에서 실행 중인 함수의 버전을 나타내는 ICorDebugFunction 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="7770a-108">[in] A pointer to an ICorDebugFunction object that represents the version of the function currently running on the thread.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="99409-109">설명</span><span class="sxs-lookup"><span data-stu-id="99409-109">Remarks</span></span>  
- <span data-ttu-id="99409-110">이 콜백은 스텝 이미 존재 하는 다시 만들 수 있는 디버거를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="99409-110">This callback gives the debugger an opportunity to recreate any steppers that previously existed.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="7770a-109">설명</span><span class="sxs-lookup"><span data-stu-id="7770a-109">Remarks</span></span>  
+ <span data-ttu-id="7770a-110">이 콜백은 디버거가 이미 존재 하는 스텝 다시 만들 수 있는 기회를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="7770a-110">This callback gives the debugger an opportunity to recreate any steppers that previously existed.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="99409-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="99409-111">Requirements</span></span>  
- <span data-ttu-id="99409-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="99409-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="7770a-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="7770a-111">Requirements</span></span>  
+ <span data-ttu-id="7770a-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="7770a-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="99409-113">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="99409-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="7770a-113">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="7770a-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="99409-114">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="99409-114">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="7770a-114">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="7770a-114">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="99409-115">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="99409-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="7770a-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7770a-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="99409-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="99409-116">See Also</span></span>  
- [<span data-ttu-id="99409-117">ICorDebugManagedCallback2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="99409-117">ICorDebugManagedCallback2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)  
- [<span data-ttu-id="99409-118">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="99409-118">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## <a name="see-also"></a><span data-ttu-id="7770a-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="7770a-116">See also</span></span>
+- [<span data-ttu-id="7770a-117">ICorDebugManagedCallback2 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7770a-117">ICorDebugManagedCallback2 Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
+- [<span data-ttu-id="7770a-118">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="7770a-118">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
