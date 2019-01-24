@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 75159ef8-bd43-4d13-acb7-1f1fe9253160
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: f59549d83e5662f236a44f112b473b2d233f4669
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 1e51d5347581ed0da77abb8ea8eec18915f41b83
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555455"
 ---
 # <a name="ui-automation-control-types-overview"></a>UI 자동화 컨트롤 형식 개요
 > [!NOTE]
@@ -114,5 +114,5 @@ ms.locfileid: "47197775"
   
 -   [Window 컨트롤 형식에 대한 UI 자동화 지원](../../../docs/framework/ui-automation/ui-automation-support-for-the-window-control-type.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType>
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType>

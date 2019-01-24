@@ -2,12 +2,12 @@
 title: Windows용 WCF 서비스 및 이벤트 추척
 ms.date: 03/30/2017
 ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
-ms.openlocfilehash: 100f9c0ce71eedaa4061fc894521597074b21b00
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d45e83919dae52ee3719fe52463711999ba48dd3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50198291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54555546"
 ---
 # <a name="wcf-services-and-event-tracing-for-windows"></a>Windows용 WCF 서비스 및 이벤트 추척
 이 샘플에서 이벤트 추적에 대 한 Windows (ETW) 이벤트를 내보내는 분석 추적을 Windows Communication Foundation (WCF)를 사용 하는 방법을 보여 줍니다. 분석 추적은 프로덕션 환경에서 WCF 서비스의 문제를 해결할 수 있는 WCF 스택의 주요 지점에서 내보내는 이벤트입니다.
@@ -36,7 +36,7 @@ ms.locfileid: "50198291"
 
      입력 상자에 엔드포인트 주소를 추가합니다. 기본값은 `http://localhost:1378/Calculator.svc`입니다.
 
-6.  이벤트 뷰어 응용 프로그램을 엽니다.
+6.  이벤트 뷰어 애플리케이션을 엽니다.
 
      서비스를 호출 하기 전에 이벤트 뷰어를 시작 하 고 WCF 서비스에서 내보낸 추적 이벤트에 대 한 이벤트 로그에서이 수신 대기 하는지 확인 합니다.
 
@@ -87,5 +87,5 @@ ms.locfileid: "50198291"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTracing`  
   
-## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)
+## <a name="see-also"></a>참고자료
+- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

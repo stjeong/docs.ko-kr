@@ -10,20 +10,20 @@ helpviewer_keywords:
 - <clear> element, authenticationModules
 - authenticationModules, clear element
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
-ms.openlocfilehash: 42fa6a44891e012300f61f1a11a47537c6739e2c
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: b2f5194cc6a4c7c0329edb2a1718a642781f79b9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50205193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563420"
 ---
 # <a name="ltcleargt-element-for-authenticationmodules-network-settings"></a>&lt;지우기&gt; authenticationModules (네트워크 설정)에 대 한 요소
 응용 프로그램에서 인증 모듈을 모두 지웁니다.  
   
  \<configuration>  
 \<system.net>  
-\<authenticationModules >  
-\<지우기 >  
+\<authenticationModules>  
+\<clear>  
   
 ## <a name="syntax"></a>구문  
   
@@ -65,7 +65,7 @@ ms.locfileid: "50205193"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.IAuthenticationModule>  
-- <xref:System.Net.AuthenticationManager>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

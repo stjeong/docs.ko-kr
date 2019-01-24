@@ -3,12 +3,12 @@ title: '&lt;trustedIssuers&gt;'
 ms.date: 03/30/2017
 ms.assetid: d818c917-07b4-40db-9801-8676561859fd
 author: BrucePerlerMS
-ms.openlocfilehash: c390cecc265b27dfa8d9d0a892f5930c982f7054
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: 1459027ae22344d5b1abc917c490b8e98fa0f2c3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48261009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54634001"
 ---
 # <a name="lttrustedissuersgt"></a>&lt;trustedIssuers&gt;
 구성 기반 발급자 이름 레지스트리에 사용 되는 신뢰할 수 있는 발급자 인증서의 목록 구성 (<xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>).  
@@ -16,9 +16,9 @@ ms.locfileid: "48261009"
  \<system.identityModel>  
 \<identityConfiguration>  
 \<securityTokenHandlers>  
-\<securityTokenHandlerConfiguration >  
-\<issuerNameRegistry >  
-\<trustedIssuers >  
+\<securityTokenHandlerConfiguration>  
+\<issuerNameRegistry>  
+\<trustedIssuers>  
   
 ## <a name="syntax"></a>구문  
   
@@ -58,7 +58,7 @@ ms.locfileid: "48261009"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<issuerNameRegistry >](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md)|발급자 이름 레지스트리를 구성합니다. **중요:** 를 `type` 특성을 `<issuerNameRegistry>` 요소를 참조 해야 합니다를 <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> 클래스를 `<trustedIssuers>` 유효한 요소.|  
+|[\<issuerNameRegistry>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md)|발급자 이름 레지스트리를 구성합니다. **중요:**  `type` 특성을 `<issuerNameRegistry>` 요소를 참조 해야 합니다를 <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> 클래스를 `<trustedIssuers>` 유효한 요소.|  
   
 ## <a name="remarks"></a>설명  
  Windows Identity Foundation (WIF)의 단일 구현을 제공 합니다 <xref:System.IdentityModel.Tokens.IssuerNameRegistry> 기본적으로 클래스는 <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> 클래스입니다. 구성 발급자 이름 레지스트리 구성에서 로드 되는 신뢰할 수 있는 발급자 목록을 유지 관리 합니다. 각 발급자 이름은 X.509 인증서 발급자가 생성 한 토큰의 서명을 확인 하는 데 필요한 연결 합니다. 신뢰할 수 있는 발급자 인증서 목록에서 지정 된 `<trustedIssuers>` 요소입니다. 목록의 각 요소는 해당 발급자가 생성 한 토큰의 서명을 확인 하는 데 필요한 X.509 인증서를 사용 하 여 니모닉 발급자 이름을 연결 합니다. 인증서의 인증서 지문 인코딩된 ASN.1를 사용 하 여 지정 되 고 사용 하 여 컬렉션을 추가 하는 신뢰할 수 있는 `<add>` 요소입니다. 지우거 나 목록에서 발급자 (인증서)를 사용 하 여 제거할 수 있습니다 합니다 `<clear>` 고 `<remove>` 요소입니다.  
@@ -76,6 +76,6 @@ ms.locfileid: "48261009"
 </issuerNameRegistry>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>  
- <xref:System.IdentityModel.Tokens.IssuerNameRegistry>
+## <a name="see-also"></a>참고자료
+- <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>
+- <xref:System.IdentityModel.Tokens.IssuerNameRegistry>

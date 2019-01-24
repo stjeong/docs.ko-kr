@@ -1,19 +1,19 @@
 ---
-title: '방법: 디자이너를 사용하여 Windows Forms 컨트롤에 BindingSource 구성 요소 바인딩'
+title: '방법: 디자이너를 사용 하는 BindingSource 구성 요소를 사용 하 여 Windows Forms 컨트롤 바인딩'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - controls [Windows Forms], binding
 - BindingSource component [Windows Forms], binding controls
 - data binding [Windows Forms], BindingSource component
 ms.assetid: 391ae170-de5c-40f8-8233-91cb2ee4683a
-ms.openlocfilehash: 95f375d8845c60441aa5eefdd37e32541ea2d5a7
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 1a9baa5a602edd0ef91ef7dff5cdc42832bd7532
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54633318"
 ---
-# <a name="how-to-bind-windows-forms-controls-with-the-bindingsource-component-using-the-designer"></a>방법: 디자이너를 사용하여 Windows Forms 컨트롤에 BindingSource 구성 요소 바인딩
+# <a name="how-to-bind-windows-forms-controls-with-the-bindingsource-component-using-the-designer"></a>방법: 디자이너를 사용 하는 BindingSource 구성 요소를 사용 하 여 Windows Forms 컨트롤 바인딩
 폼에 컨트롤을 추가 하 고 응용 프로그램에 대 한 사용자 인터페이스를 확인한 후 런타임 시 사용자가 변경 하 고 수 응용 프로그램과 관련 된 데이터를 저장 되도록 데이터 원본에 컨트롤을 바인딩할 수 있습니다.  
   
  사용 하 여 가장 쉽게 수행 됩니다 Windows Forms 컨트롤 또는 일련의 컨트롤 바인딩는 <xref:System.Windows.Forms.BindingSource> 폼에 컨트롤 및 데이터 원본 사이의 연결 고리로 제어 합니다.  
@@ -59,8 +59,8 @@ ms.locfileid: "44042311"
   
      합니다 **데이터 원본** UI 형식 편집기를 닫고 데이터 집합을 <xref:System.Windows.Forms.BindingSource> 및 관련 데이터 연결 폼에 추가 된 테이블 어댑터입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.BindingNavigator>  
- [새 데이터 소스 추가](/visualstudio/data-tools/add-new-data-sources)  
- [데이터 소스 창](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.BindingNavigator>
+- [새 데이터 소스 추가](/visualstudio/data-tools/add-new-data-sources)
+- [데이터 소스 창](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)
