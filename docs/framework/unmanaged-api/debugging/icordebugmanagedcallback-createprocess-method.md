@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 24efa08e9c4b2e242af95112b7f055e9173aaa7c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 7693111427f3181adcd2127ad5ecb2a317e30921
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33414679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54515617"
 ---
-# <a name="icordebugmanagedcallbackcreateprocess-method"></a><span data-ttu-id="eb662-102">ICorDebugManagedCallback::CreateProcess 메서드</span><span class="sxs-lookup"><span data-stu-id="eb662-102">ICorDebugManagedCallback::CreateProcess Method</span></span>
-<span data-ttu-id="eb662-103">프로세스 연결 되거나 처음으로 시작 하는 경우 디버거를 알립니다.</span><span class="sxs-lookup"><span data-stu-id="eb662-103">Notifies the debugger when a process has been attached or started for the first time.</span></span>  
+# <a name="icordebugmanagedcallbackcreateprocess-method"></a><span data-ttu-id="e7cb9-102">ICorDebugManagedCallback::CreateProcess 메서드</span><span class="sxs-lookup"><span data-stu-id="e7cb9-102">ICorDebugManagedCallback::CreateProcess Method</span></span>
+<span data-ttu-id="e7cb9-103">프로세스에 연결 되거나 처음으로 시작 하는 경우 디버거를에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="e7cb9-103">Notifies the debugger when a process has been attached or started for the first time.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="eb662-104">구문</span><span class="sxs-lookup"><span data-stu-id="eb662-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e7cb9-104">구문</span><span class="sxs-lookup"><span data-stu-id="e7cb9-104">Syntax</span></span>  
   
 ```  
 HRESULT CreateProcess (  
@@ -35,21 +35,21 @@ HRESULT CreateProcess (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="eb662-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="eb662-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="e7cb9-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="e7cb9-105">Parameters</span></span>  
  `pProcess`  
- <span data-ttu-id="eb662-106">[in] 연결 되거나 시작 된 프로세스를 나타내는 ICorDebugProcess 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="eb662-106">[in] A pointer to an ICorDebugProcess object that represents the process that has been attached or started.</span></span>  
+ <span data-ttu-id="e7cb9-106">[in] 연결 되거나 시작 된 프로세스를 나타내는 ICorDebugProcess 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="e7cb9-106">[in] A pointer to an ICorDebugProcess object that represents the process that has been attached or started.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="eb662-107">설명</span><span class="sxs-lookup"><span data-stu-id="eb662-107">Remarks</span></span>  
- <span data-ttu-id="eb662-108">공용 언어 런타임 초기화 될 때까지이 메서드가 호출 되지 됩니다.</span><span class="sxs-lookup"><span data-stu-id="eb662-108">This method is not called until the common language runtime is initialized.</span></span> <span data-ttu-id="eb662-109">대부분의 [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) 메서드 전에 CORDBG_E_NOTREADY 돌아갑니다는 `CreateProcess` 콜백 합니다.</span><span class="sxs-lookup"><span data-stu-id="eb662-109">Most of the [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="e7cb9-107">설명</span><span class="sxs-lookup"><span data-stu-id="e7cb9-107">Remarks</span></span>  
+ <span data-ttu-id="e7cb9-108">이 메서드는 공용 언어 런타임 초기화 될 때까지 호출 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7cb9-108">This method is not called until the common language runtime is initialized.</span></span> <span data-ttu-id="e7cb9-109">대부분의 합니다 [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) 메서드는 반환 하기 전에 CORDBG_E_NOTREADY는 `CreateProcess` 콜백 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7cb9-109">Most of the [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="eb662-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="eb662-110">Requirements</span></span>  
- <span data-ttu-id="eb662-111">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="eb662-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e7cb9-110">요구 사항</span><span class="sxs-lookup"><span data-stu-id="e7cb9-110">Requirements</span></span>  
+ <span data-ttu-id="e7cb9-111">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="e7cb9-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="eb662-112">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="eb662-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="e7cb9-112">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e7cb9-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="eb662-113">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="eb662-113">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="e7cb9-113">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e7cb9-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="eb662-114">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="eb662-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="e7cb9-114">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e7cb9-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="eb662-115">참고 항목</span><span class="sxs-lookup"><span data-stu-id="eb662-115">See Also</span></span>  
- [<span data-ttu-id="eb662-116">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="eb662-116">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## <a name="see-also"></a><span data-ttu-id="e7cb9-115">참고자료</span><span class="sxs-lookup"><span data-stu-id="e7cb9-115">See also</span></span>
+- [<span data-ttu-id="e7cb9-116">ICorDebugManagedCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="e7cb9-116">ICorDebugManagedCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

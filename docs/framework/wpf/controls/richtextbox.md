@@ -7,21 +7,21 @@ helpviewer_keywords:
 - controls [WPF], RichTextBox
 - RichTextBox control [WPF]
 ms.assetid: a177374d-ee54-4d00-aaae-c983481cae9b
-ms.openlocfilehash: 201dd8cfc76191fefb45ff01dd42f26fd8454f20
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c521c5c5d4ecb2b20954b5b6e303bbbda0a26418
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33554094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54508642"
 ---
-# <a name="richtextbox"></a><span data-ttu-id="56c13-102">RichTextBox</span><span class="sxs-lookup"><span data-stu-id="56c13-102">RichTextBox</span></span>
-<span data-ttu-id="56c13-103"><xref:System.Windows.Controls.RichTextBox> 요소 잘라내기 및 붙여넣기, 풍부한 문서 표시 및 콘텐츠 선택 등의 기능에 대 한 기본 제공 지원으로 편집 컨트롤을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="56c13-103">The <xref:System.Windows.Controls.RichTextBox> element defines an editing control with built-in support for features such as cut and paste, rich document presentation, and content selection.</span></span>  
+# <a name="richtextbox"></a><span data-ttu-id="db34b-102">RichTextBox</span><span class="sxs-lookup"><span data-stu-id="db34b-102">RichTextBox</span></span>
+<span data-ttu-id="db34b-103"><xref:System.Windows.Controls.RichTextBox> 요소 잘라내기 및 붙여넣기, 풍부한 문서 프레젠테이션 및 콘텐츠 선택 같은 기능에 대 한 기본 제공 지원을 통해 편집 컨트롤을 정의 합니다.</span><span class="sxs-lookup"><span data-stu-id="db34b-103">The <xref:System.Windows.Controls.RichTextBox> element defines an editing control with built-in support for features such as cut and paste, rich document presentation, and content selection.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="56c13-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="56c13-104">In This Section</span></span>  
- [<span data-ttu-id="56c13-105">RichTextBox 개요</span><span class="sxs-lookup"><span data-stu-id="56c13-105">RichTextBox Overview</span></span>](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
- [<span data-ttu-id="56c13-106">방법 항목</span><span class="sxs-lookup"><span data-stu-id="56c13-106">How-to Topics</span></span>](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)  
+## <a name="in-this-section"></a><span data-ttu-id="db34b-104">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="db34b-104">In This Section</span></span>  
+ [<span data-ttu-id="db34b-105">RichTextBox 개요</span><span class="sxs-lookup"><span data-stu-id="db34b-105">RichTextBox Overview</span></span>](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
+ [<span data-ttu-id="db34b-106">방법 항목</span><span class="sxs-lookup"><span data-stu-id="db34b-106">How-to Topics</span></span>](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)  
   
-## <a name="see-also"></a><span data-ttu-id="56c13-107">참고 항목</span><span class="sxs-lookup"><span data-stu-id="56c13-107">See Also</span></span>  
- <xref:System.Windows.Controls.TextBox>  
- [<span data-ttu-id="56c13-108">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="56c13-108">Documents in WPF</span></span>](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [<span data-ttu-id="56c13-109">유동 문서 개요</span><span class="sxs-lookup"><span data-stu-id="56c13-109">Flow Document Overview</span></span>](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+## <a name="see-also"></a><span data-ttu-id="db34b-107">참고자료</span><span class="sxs-lookup"><span data-stu-id="db34b-107">See also</span></span>
+- <xref:System.Windows.Controls.TextBox>
+- [<span data-ttu-id="db34b-108">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="db34b-108">Documents in WPF</span></span>](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [<span data-ttu-id="db34b-109">유동 문서 개요</span><span class="sxs-lookup"><span data-stu-id="db34b-109">Flow Document Overview</span></span>](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

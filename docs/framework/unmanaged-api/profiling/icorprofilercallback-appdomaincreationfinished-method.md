@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b0017cff43f7a1b1bdd90806f50abb374a96dadf
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 48d43d9107d010b12167b977acd2e500437c039f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33450426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54501714"
 ---
-# <a name="icorprofilercallbackappdomaincreationfinished-method"></a><span data-ttu-id="29fbb-102">ICorProfilerCallback::AppDomainCreationFinished 메서드</span><span class="sxs-lookup"><span data-stu-id="29fbb-102">ICorProfilerCallback::AppDomainCreationFinished Method</span></span>
-<span data-ttu-id="29fbb-103">응용 프로그램 도메인을 이미 만들었다고 프로파일러에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-103">Notifies the profiler that an application domain has been created.</span></span>  
+# <a name="icorprofilercallbackappdomaincreationfinished-method"></a><span data-ttu-id="6c300-102">ICorProfilerCallback::AppDomainCreationFinished 메서드</span><span class="sxs-lookup"><span data-stu-id="6c300-102">ICorProfilerCallback::AppDomainCreationFinished Method</span></span>
+<span data-ttu-id="6c300-103">응용 프로그램 도메인이 만들어졌는지 프로파일러에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-103">Notifies the profiler that an application domain has been created.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="29fbb-104">구문</span><span class="sxs-lookup"><span data-stu-id="29fbb-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6c300-104">구문</span><span class="sxs-lookup"><span data-stu-id="6c300-104">Syntax</span></span>  
   
 ```  
 HRESULT AppDomainCreationFinished(  
@@ -35,26 +35,26 @@ HRESULT AppDomainCreationFinished(
     [in] HRESULT     hrStatus);   
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="29fbb-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="29fbb-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="6c300-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="6c300-105">Parameters</span></span>  
  `appDomainId`  
- <span data-ttu-id="29fbb-106">[in] 작성 된 도메인을 식별 합니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-106">[in] Identifies the domain which has been created.</span></span>  
+ <span data-ttu-id="6c300-106">[in] 작성 된 도메인을 식별 합니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-106">[in] Identifies the domain which has been created.</span></span>  
   
  `hrStatus`  
- <span data-ttu-id="29fbb-107">[in] 응용 프로그램 도메인을 만드는 성공적으로 완료 되었는지 여부를 나타내는 HRESULT입니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-107">[in] An HRESULT that indicates whether creation of the application domain completed successfully.</span></span>  
+ <span data-ttu-id="6c300-107">[in] 응용 프로그램 도메인을 만드는 성공적으로 완료 되었는지 여부를 나타내는 HRESULT입니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-107">[in] An HRESULT that indicates whether creation of the application domain completed successfully.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="29fbb-108">설명</span><span class="sxs-lookup"><span data-stu-id="29fbb-108">Remarks</span></span>  
- <span data-ttu-id="29fbb-109">응용 프로그램 ID가 될 때까지 정보 요청에 잘못 된 `AppDomainCreationFinished` 메서드를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-109">The application ID is not valid for any information request until the `AppDomainCreationFinished` method is called.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="6c300-108">설명</span><span class="sxs-lookup"><span data-stu-id="6c300-108">Remarks</span></span>  
+ <span data-ttu-id="6c300-109">응용 프로그램 ID까지 정보 요청에 대해 올바르지 않습니다.는 `AppDomainCreationFinished` 메서드가 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-109">The application ID is not valid for any information request until the `AppDomainCreationFinished` method is called.</span></span>  
   
- <span data-ttu-id="29fbb-110">일부 응용 프로그램 도메인을 로드 한 후 계속 사용할 수는 `AppDomainCreationFinished` 콜백 합니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-110">Some parts of loading the application domain might continue after the `AppDomainCreationFinished` callback.</span></span> <span data-ttu-id="29fbb-111">실패 HRESULT에서 `hrStatus` 오류가 발생 했음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-111">A failure HRESULT in `hrStatus` indicates a failure.</span></span> <span data-ttu-id="29fbb-112">그러나 성공 HRESULT에서 `hrStatus` 응용 프로그램 도메인을 만드는 첫 번째 단계는 성공 했다는 것만 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-112">However, a success HRESULT in `hrStatus` indicates only that the first part of creating the application domain has succeeded.</span></span>  
+ <span data-ttu-id="6c300-110">일부 응용 프로그램 도메인을 로드 한 후 계속 사용할 수는 `AppDomainCreationFinished` 콜백 합니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-110">Some parts of loading the application domain might continue after the `AppDomainCreationFinished` callback.</span></span> <span data-ttu-id="6c300-111">오류 HRESULT에서 `hrStatus` 오류가 발생 했음을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-111">A failure HRESULT in `hrStatus` indicates a failure.</span></span> <span data-ttu-id="6c300-112">그러나 성공 HRESULT에서 `hrStatus` 응용 프로그램 도메인을 만드는 첫 번째 부분 성공 했다는 것만 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="6c300-112">However, a success HRESULT in `hrStatus` indicates only that the first part of creating the application domain has succeeded.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="29fbb-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="29fbb-113">Requirements</span></span>  
- <span data-ttu-id="29fbb-114">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="29fbb-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="6c300-113">요구 사항</span><span class="sxs-lookup"><span data-stu-id="6c300-113">Requirements</span></span>  
+ <span data-ttu-id="6c300-114">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="6c300-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="29fbb-115">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="29fbb-115">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="6c300-115">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="6c300-115">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="29fbb-116">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="29fbb-116">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="6c300-116">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="6c300-116">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="29fbb-117">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="29fbb-117">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="6c300-117">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6c300-117">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="29fbb-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="29fbb-118">See Also</span></span>  
- [<span data-ttu-id="29fbb-119">ICorProfilerCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="29fbb-119">ICorProfilerCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## <a name="see-also"></a><span data-ttu-id="6c300-118">참고자료</span><span class="sxs-lookup"><span data-stu-id="6c300-118">See also</span></span>
+- [<span data-ttu-id="6c300-119">ICorProfilerCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="6c300-119">ICorProfilerCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5cbb1aa9c81101eb818a9e7829c777efd3923b5f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: ce53137021fe9ccaf170bed28918b8f5fe87715b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33416155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54504993"
 ---
-# <a name="icordebugmodulebreakpointgetmodule-method"></a><span data-ttu-id="f0f24-102">ICorDebugModuleBreakpoint::GetModule 메서드</span><span class="sxs-lookup"><span data-stu-id="f0f24-102">ICorDebugModuleBreakpoint::GetModule Method</span></span>
-<span data-ttu-id="f0f24-103">"ICorDebugModule"이이 중단점이 설정 된 모듈을 참조 하는 인터페이스 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="f0f24-103">Gets an interface pointer to an "ICorDebugModule" that references the module in which this breakpoint is set.</span></span>  
+# <a name="icordebugmodulebreakpointgetmodule-method"></a><span data-ttu-id="fda6e-102">ICorDebugModuleBreakpoint::GetModule 메서드</span><span class="sxs-lookup"><span data-stu-id="fda6e-102">ICorDebugModuleBreakpoint::GetModule Method</span></span>
+<span data-ttu-id="fda6e-103">"ICorDebugModule"이이 중단점이 설정 된 모듈을 참조 하는 인터페이스 포인터를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="fda6e-103">Gets an interface pointer to an "ICorDebugModule" that references the module in which this breakpoint is set.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f0f24-104">구문</span><span class="sxs-lookup"><span data-stu-id="f0f24-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="fda6e-104">구문</span><span class="sxs-lookup"><span data-stu-id="fda6e-104">Syntax</span></span>  
   
 ```  
 HRESULT GetModule (  
@@ -35,18 +35,18 @@ HRESULT GetModule (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="f0f24-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="f0f24-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="fda6e-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="fda6e-105">Parameters</span></span>  
  `ppModule`  
- <span data-ttu-id="f0f24-106">[out] 주소에 대 한 포인터는 `ICorDebugModule` 중단점이 설정 되어 있는 모듈을 참조 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="f0f24-106">[out] A pointer to the address of an `ICorDebugModule` interface that references the module in which the breakpoint is set.</span></span>  
+ <span data-ttu-id="fda6e-106">[out] 주소에 대 한 포인터는 `ICorDebugModule` 중단점이 설정 된 모듈을 참조 하는 인터페이스입니다.</span><span class="sxs-lookup"><span data-stu-id="fda6e-106">[out] A pointer to the address of an `ICorDebugModule` interface that references the module in which the breakpoint is set.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="f0f24-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="f0f24-107">Requirements</span></span>  
- <span data-ttu-id="f0f24-108">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="f0f24-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="fda6e-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="fda6e-107">Requirements</span></span>  
+ <span data-ttu-id="fda6e-108">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="fda6e-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="f0f24-109">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="f0f24-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="fda6e-109">**헤더:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="fda6e-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="f0f24-110">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="f0f24-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="fda6e-110">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="fda6e-110">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="f0f24-111">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="f0f24-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="fda6e-111">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="fda6e-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f0f24-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f0f24-112">See Also</span></span>  
- 
+## <a name="see-also"></a><span data-ttu-id="fda6e-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="fda6e-112">See also</span></span>
+

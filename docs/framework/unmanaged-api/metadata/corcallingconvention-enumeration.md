@@ -16,17 +16,17 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 468ad1acf55c4d1b4fc2b53730f16ee8630cf19b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 4c27669c8473bd52d3b82a14d570340ac38d1e07
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33444017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523248"
 ---
-# <a name="corcallingconvention-enumeration"></a><span data-ttu-id="8c733-102">CorCallingConvention 열거형</span><span class="sxs-lookup"><span data-stu-id="8c733-102">CorCallingConvention Enumeration</span></span>
-<span data-ttu-id="8c733-103">관리 코드에서 수행된 호출 규칙의 형식을 설명하는 값을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-103">Contains values that describe the types of calling conventions that are made in managed code.</span></span>  
+# <a name="corcallingconvention-enumeration"></a><span data-ttu-id="744b0-102">CorCallingConvention 열거형</span><span class="sxs-lookup"><span data-stu-id="744b0-102">CorCallingConvention Enumeration</span></span>
+<span data-ttu-id="744b0-103">관리 코드에서 수행된 호출 규칙의 형식을 설명하는 값을 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-103">Contains values that describe the types of calling conventions that are made in managed code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8c733-104">구문</span><span class="sxs-lookup"><span data-stu-id="8c733-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="744b0-104">구문</span><span class="sxs-lookup"><span data-stu-id="744b0-104">Syntax</span></span>  
   
 ```  
 typedef enum CorCallingConvention  
@@ -50,30 +50,30 @@ typedef enum CorCallingConvention
 } CorCallingConvention;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="8c733-105">멤버</span><span class="sxs-lookup"><span data-stu-id="8c733-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="744b0-105">멤버</span><span class="sxs-lookup"><span data-stu-id="744b0-105">Members</span></span>  
   
-|<span data-ttu-id="8c733-106">멤버</span><span class="sxs-lookup"><span data-stu-id="8c733-106">Member</span></span>|<span data-ttu-id="8c733-107">설명</span><span class="sxs-lookup"><span data-stu-id="8c733-107">Description</span></span>|  
+|<span data-ttu-id="744b0-106">멤버</span><span class="sxs-lookup"><span data-stu-id="744b0-106">Member</span></span>|<span data-ttu-id="744b0-107">설명</span><span class="sxs-lookup"><span data-stu-id="744b0-107">Description</span></span>|  
 |------------|-----------------|  
-|`IMAGE_CEE_CS_CALLCONV_DEFAULT`|<span data-ttu-id="8c733-108">기본 호출 규칙을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-108">Indicates a default calling convention.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_VARARG`|<span data-ttu-id="8c733-109">메서드는 가변 개수의 매개 변수를 사용 하며 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-109">Indicates that the method takes a variable number of parameters.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_FIELD`|<span data-ttu-id="8c733-110">통화 필드 임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-110">Indicates that the call is to a field.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_LOCAL_SIG`|<span data-ttu-id="8c733-111">로컬 메서드를 호출 임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-111">Indicates that the call is to a local method.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_PROPERTY`|<span data-ttu-id="8c733-112">호출 되는 속성을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-112">Indicates that the call is to a property.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_UNMGD`|<span data-ttu-id="8c733-113">관리 되지 않는 호출을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-113">Indicates that the call is unmanaged.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_GENERICINST`|<span data-ttu-id="8c733-114">제네릭 메서드 인스턴스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-114">Indicates a generic method instantiation.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_NATIVEVARARG`|<span data-ttu-id="8c733-115">64 비트 PInvoke 호출에 가변 개수의 매개 변수를 사용 하는 메서드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-115">Indicates a 64-bit PInvoke call to a method that takes a variable number of parameters.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_MAX`|<span data-ttu-id="8c733-116">잘못 된 4 비트 값에 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-116">Describes an invalid 4-bit value.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_MASK`|<span data-ttu-id="8c733-117">호출 규칙으로 하위 4 비트 설명 되어 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-117">Indicates that the calling convention is described by the bottom four bits.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_HASTHIS`|<span data-ttu-id="8c733-118">최상위 비트를 설명 한다는 사실을 나타냅니다는 `this` 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-118">Indicates that the top bit describes a `this` parameter.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_EXPLICITTHIS`|<span data-ttu-id="8c733-119">나타냅니다는 `this` 서명을에서 명시적으로 설명 하는 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-119">Indicates that a `this` parameter is explicitly described in the signature.</span></span>|  
-|`IMAGE_CEE_CS_CALLCONV_GENERIC`|<span data-ttu-id="8c733-120">명시적 개수의 형식 인수를 사용 하 여 제네릭 메서드 시그니처를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-120">Indicates a generic method signature with an explicit number of type arguments.</span></span> <span data-ttu-id="8c733-121">이 표준 매개 변수 개수를 앞에 붙습니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-121">This precedes an ordinary parameter count.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_DEFAULT`|<span data-ttu-id="744b0-108">기본 호출 규칙을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-108">Indicates a default calling convention.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_VARARG`|<span data-ttu-id="744b0-109">메서드는 가변 개수의 매개 변수를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-109">Indicates that the method takes a variable number of parameters.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_FIELD`|<span data-ttu-id="744b0-110">필드에 호출 임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-110">Indicates that the call is to a field.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_LOCAL_SIG`|<span data-ttu-id="744b0-111">로컬 메서드 호출 임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-111">Indicates that the call is to a local method.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_PROPERTY`|<span data-ttu-id="744b0-112">속성 호출 임을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-112">Indicates that the call is to a property.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_UNMGD`|<span data-ttu-id="744b0-113">관리 되지 않는 호출을 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-113">Indicates that the call is unmanaged.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_GENERICINST`|<span data-ttu-id="744b0-114">제네릭 메서드 인스턴스를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-114">Indicates a generic method instantiation.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_NATIVEVARARG`|<span data-ttu-id="744b0-115">64 비트 PInvoke 호출에 가변 개수의 매개 변수를 사용 하는 메서드를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-115">Indicates a 64-bit PInvoke call to a method that takes a variable number of parameters.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_MAX`|<span data-ttu-id="744b0-116">잘못 된 4 비트 값을 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-116">Describes an invalid 4-bit value.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_MASK`|<span data-ttu-id="744b0-117">호출 규칙 하위 4 비트에서 설명한 있는지를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-117">Indicates that the calling convention is described by the bottom four bits.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_HASTHIS`|<span data-ttu-id="744b0-118">최상위 비트 설명 나타냅니다는 `this` 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-118">Indicates that the top bit describes a `this` parameter.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_EXPLICITTHIS`|<span data-ttu-id="744b0-119">나타내는 `this` 매개 변수는 서명에서 명시적으로 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-119">Indicates that a `this` parameter is explicitly described in the signature.</span></span>|  
+|`IMAGE_CEE_CS_CALLCONV_GENERIC`|<span data-ttu-id="744b0-120">명시적 개수의 형식 인수를 사용 하 여 제네릭 메서드 시그니처를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-120">Indicates a generic method signature with an explicit number of type arguments.</span></span> <span data-ttu-id="744b0-121">이 일반 매개 변수 개수를 앞에 옵니다.</span><span class="sxs-lookup"><span data-stu-id="744b0-121">This precedes an ordinary parameter count.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="8c733-122">요구 사항</span><span class="sxs-lookup"><span data-stu-id="8c733-122">Requirements</span></span>  
- <span data-ttu-id="8c733-123">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="8c733-123">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="744b0-122">요구 사항</span><span class="sxs-lookup"><span data-stu-id="744b0-122">Requirements</span></span>  
+ <span data-ttu-id="744b0-123">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="744b0-123">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="8c733-124">**헤더:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="8c733-124">**Header:** CorHdr.h</span></span>  
+ <span data-ttu-id="744b0-124">**헤더:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="744b0-124">**Header:** CorHdr.h</span></span>  
   
- <span data-ttu-id="8c733-125">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8c733-125">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="744b0-125">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="744b0-125">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8c733-126">참고 항목</span><span class="sxs-lookup"><span data-stu-id="8c733-126">See Also</span></span>  
- [<span data-ttu-id="8c733-127">메타데이터 열거형</span><span class="sxs-lookup"><span data-stu-id="8c733-127">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a><span data-ttu-id="744b0-126">참고자료</span><span class="sxs-lookup"><span data-stu-id="744b0-126">See also</span></span>
+- [<span data-ttu-id="744b0-127">메타데이터 열거형</span><span class="sxs-lookup"><span data-stu-id="744b0-127">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

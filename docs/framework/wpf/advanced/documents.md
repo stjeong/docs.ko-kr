@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - documents [WPF], features for
 ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
-ms.openlocfilehash: 145c28a2f36b2d53487004af214f3c6048f0687e
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 6dba276e88f4c3dd475e3d79de43a9fca7a35206
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49415213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54546977"
 ---
-# <a name="documents"></a><span data-ttu-id="88a8c-102">문서</span><span class="sxs-lookup"><span data-stu-id="88a8c-102">Documents</span></span>
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="88a8c-103">에서는 개발자가 고급 문서 기능 및 향상된 읽기 환경을 사용하여 응용 프로그램을 빌드할 수 있는 다양한 구성 요소 집합을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="88a8c-103">provides a versatile set of components that enable developers to build applications with advanced document features and an improved reading experience.</span></span> <span data-ttu-id="88a8c-104">고급 기능 및 품질 외에도 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 문서 패키징, 보안 및 스토리지를 위해 간소화된 관리 서비스도 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="88a8c-104">In addition to enhanced capabilities and quality, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] also provides simplified management services for document packaging, security, and storage.</span></span>  
+# <a name="documents"></a><span data-ttu-id="4f9c1-102">문서</span><span class="sxs-lookup"><span data-stu-id="4f9c1-102">Documents</span></span>
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="4f9c1-103">에서는 개발자가 고급 문서 기능 및 향상된 읽기 환경을 사용하여 응용 프로그램을 빌드할 수 있는 다양한 구성 요소 집합을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="4f9c1-103">provides a versatile set of components that enable developers to build applications with advanced document features and an improved reading experience.</span></span> <span data-ttu-id="4f9c1-104">고급 기능 및 품질 외에도 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서는 문서 패키징, 보안 및 스토리지를 위해 간소화된 관리 서비스도 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="4f9c1-104">In addition to enhanced capabilities and quality, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] also provides simplified management services for document packaging, security, and storage.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="88a8c-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="88a8c-105">In This Section</span></span>  
- [<span data-ttu-id="88a8c-106">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="88a8c-106">Documents in WPF</span></span>](documents-in-wpf.md)  
- [<span data-ttu-id="88a8c-107">문서 serialization 및 저장소</span><span class="sxs-lookup"><span data-stu-id="88a8c-107">Document Serialization and Storage</span></span>](document-serialization-and-storage.md)  
- [<span data-ttu-id="88a8c-108">주석</span><span class="sxs-lookup"><span data-stu-id="88a8c-108">Annotations</span></span>](annotations.md)  
- [<span data-ttu-id="88a8c-109">유동 콘텐츠</span><span class="sxs-lookup"><span data-stu-id="88a8c-109">Flow Content</span></span>](flow-content.md)  
- [<span data-ttu-id="88a8c-110">입력 체계</span><span class="sxs-lookup"><span data-stu-id="88a8c-110">Typography</span></span>](typography.md)  
- [<span data-ttu-id="88a8c-111">인쇄 및 인쇄 시스템 관리</span><span class="sxs-lookup"><span data-stu-id="88a8c-111">Printing and Print System Management</span></span>](printing-and-print-system-management.md)  
+## <a name="in-this-section"></a><span data-ttu-id="4f9c1-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="4f9c1-105">In This Section</span></span>  
+ [<span data-ttu-id="4f9c1-106">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="4f9c1-106">Documents in WPF</span></span>](documents-in-wpf.md)  
+ [<span data-ttu-id="4f9c1-107">문서 serialization 및 저장소</span><span class="sxs-lookup"><span data-stu-id="4f9c1-107">Document Serialization and Storage</span></span>](document-serialization-and-storage.md)  
+ [<span data-ttu-id="4f9c1-108">주석</span><span class="sxs-lookup"><span data-stu-id="4f9c1-108">Annotations</span></span>](annotations.md)  
+ [<span data-ttu-id="4f9c1-109">유동 콘텐츠</span><span class="sxs-lookup"><span data-stu-id="4f9c1-109">Flow Content</span></span>](flow-content.md)  
+ [<span data-ttu-id="4f9c1-110">입력 체계</span><span class="sxs-lookup"><span data-stu-id="4f9c1-110">Typography</span></span>](typography.md)  
+ [<span data-ttu-id="4f9c1-111">인쇄 및 인쇄 시스템 관리</span><span class="sxs-lookup"><span data-stu-id="4f9c1-111">Printing and Print System Management</span></span>](printing-and-print-system-management.md)  
   
-## <a name="see-also"></a><span data-ttu-id="88a8c-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="88a8c-112">See Also</span></span>  
- <xref:System.Windows.Controls.DocumentViewer>  
- <xref:System.Windows.Documents.FlowDocument>  
- <xref:System.Windows.Xps>  
- <span data-ttu-id="88a8c-113">[isXPS.exe(isXPS 규칙 도구)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="88a8c-113">[isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))</span></span>
+## <a name="see-also"></a><span data-ttu-id="4f9c1-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="4f9c1-112">See also</span></span>
+- <xref:System.Windows.Controls.DocumentViewer>
+- <xref:System.Windows.Documents.FlowDocument>
+- <xref:System.Windows.Xps>
+- <span data-ttu-id="4f9c1-113">[isXPS.exe(isXPS 규칙 도구)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="4f9c1-113">[isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))</span></span>

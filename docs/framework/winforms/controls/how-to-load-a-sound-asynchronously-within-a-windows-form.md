@@ -9,51 +9,51 @@ helpviewer_keywords:
 - sounds [Windows Forms], loading on separate threads
 - threading [Windows Forms], sounds
 ms.assetid: 3b6a9296-1d5e-4d52-a4ba-94366d6fe302
-ms.openlocfilehash: 2de2be478e81183201cc85e1a6dfd6f1a1833af6
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: ed1257a942eb990c9b0c6427d264013e3324326b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523677"
 ---
-# <a name="how-to-load-a-sound-asynchronously-within-a-windows-form"></a><span data-ttu-id="bf756-102">방법: Windows Form에서 비동기적으로 소리 로드</span><span class="sxs-lookup"><span data-stu-id="bf756-102">How to: Load a Sound Asynchronously within a Windows Form</span></span>
-<span data-ttu-id="bf756-103">다음 코드 예제는 URL에서 소리를 비동기적으로 로드한 다음 새 스레드에서 재생합니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-103">The following code example asynchronously loads a sound from an URL and then plays it on a new thread.</span></span>  
+# <a name="how-to-load-a-sound-asynchronously-within-a-windows-form"></a><span data-ttu-id="fb98e-102">방법: Windows Form에서 비동기적으로 소리 로드</span><span class="sxs-lookup"><span data-stu-id="fb98e-102">How to: Load a Sound Asynchronously within a Windows Form</span></span>
+<span data-ttu-id="fb98e-103">다음 코드 예제는 URL에서 소리를 비동기적으로 로드한 다음 새 스레드에서 재생합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-103">The following code example asynchronously loads a sound from an URL and then plays it on a new thread.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="bf756-104">예제</span><span class="sxs-lookup"><span data-stu-id="bf756-104">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="fb98e-104">예제</span><span class="sxs-lookup"><span data-stu-id="fb98e-104">Example</span></span>  
  [!code-csharp[System.Media.SoundPlayer.LoadAsync#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/CS/Form1.cs#1)]
  [!code-vb[System.Media.SoundPlayer.LoadAsync#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/VB/Form1.vb#1)]  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="bf756-105">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="bf756-105">Compiling the Code</span></span>  
- <span data-ttu-id="bf756-106">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-106">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="fb98e-105">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="fb98e-105">Compiling the Code</span></span>  
+ <span data-ttu-id="fb98e-106">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-106">This example requires:</span></span>  
   
--   <span data-ttu-id="bf756-107">System 및 System.Windows.Forms 어셈블리에 대한 참조</span><span class="sxs-lookup"><span data-stu-id="bf756-107">References to the System and System.Windows.Forms assemblies.</span></span>  
+-   <span data-ttu-id="fb98e-107">System 및 System.Windows.Forms 어셈블리에 대한 참조</span><span class="sxs-lookup"><span data-stu-id="fb98e-107">References to the System and System.Windows.Forms assemblies.</span></span>  
   
--   <span data-ttu-id="bf756-108">파일 이름 `"http://www.tailspintoys.com/sounds/stop.wav"`를 유효한 파일 이름으로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-108">That you replace the file name `"http://www.tailspintoys.com/sounds/stop.wav"` with a valid file name.</span></span>  
+-   <span data-ttu-id="fb98e-108">파일 이름 `"http://www.tailspintoys.com/sounds/stop.wav"`를 유효한 파일 이름으로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-108">That you replace the file name `"http://www.tailspintoys.com/sounds/stop.wav"` with a valid file name.</span></span>  
   
- <span data-ttu-id="bf756-109">Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-109">For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).</span></span> <span data-ttu-id="bf756-110">또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-110">You can also build this example in Visual Studio by pasting the code into a new project.</span></span>  <span data-ttu-id="bf756-111">[방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="bf756-111">Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).</span></span>  
+ <span data-ttu-id="fb98e-109">Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-109">For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).</span></span> <span data-ttu-id="fb98e-110">또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-110">You can also build this example in Visual Studio by pasting the code into a new project.</span></span>  <span data-ttu-id="fb98e-111">또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-111">Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).</span></span>  
   
-## <a name="robust-programming"></a><span data-ttu-id="bf756-112">강력한 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="bf756-112">Robust Programming</span></span>  
- <span data-ttu-id="bf756-113">파일 작업을 적절한 예외 처리 블록 내에 묶어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-113">File operations should be enclosed within appropriate exception-handling blocks.</span></span>  
+## <a name="robust-programming"></a><span data-ttu-id="fb98e-112">강력한 프로그래밍</span><span class="sxs-lookup"><span data-stu-id="fb98e-112">Robust Programming</span></span>  
+ <span data-ttu-id="fb98e-113">파일 작업을 적절한 예외 처리 블록 내에 묶어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-113">File operations should be enclosed within appropriate exception-handling blocks.</span></span>  
   
- <span data-ttu-id="bf756-114">다음 조건에서 예외가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-114">The following conditions may cause an exception:</span></span>  
+ <span data-ttu-id="fb98e-114">다음 조건에서 예외가 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-114">The following conditions may cause an exception:</span></span>  
   
--   <span data-ttu-id="bf756-115">경로 이름 형식이 잘못되었습니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-115">The path name is malformed.</span></span> <span data-ttu-id="bf756-116">예를 들어 잘못된 문자를 포함하거나 공백만 포함합니다(<xref:System.ArgumentException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="bf756-116">For example, it contains characters that are not valid or is only white space (<xref:System.ArgumentException> class).</span></span>  
+-   <span data-ttu-id="fb98e-115">경로 이름 형식이 잘못되었습니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-115">The path name is malformed.</span></span> <span data-ttu-id="fb98e-116">예를 들어 잘못된 문자를 포함하거나 공백만 포함합니다(<xref:System.ArgumentException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="fb98e-116">For example, it contains characters that are not valid or is only white space (<xref:System.ArgumentException> class).</span></span>  
   
--   <span data-ttu-id="bf756-117">경로가 읽기 전용입니다(<xref:System.IO.IOException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="bf756-117">The path is read-only (<xref:System.IO.IOException> class).</span></span>  
+-   <span data-ttu-id="fb98e-117">경로가 읽기 전용입니다(<xref:System.IO.IOException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="fb98e-117">The path is read-only (<xref:System.IO.IOException> class).</span></span>  
   
--   <span data-ttu-id="bf756-118">경로 이름이 `Nothing`입니다(<xref:System.ArgumentNullException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="bf756-118">The path name is `Nothing` (<xref:System.ArgumentNullException> class).</span></span>  
+-   <span data-ttu-id="fb98e-118">경로 이름이 `Nothing`입니다(<xref:System.ArgumentNullException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="fb98e-118">The path name is `Nothing` (<xref:System.ArgumentNullException> class).</span></span>  
   
--   <span data-ttu-id="bf756-119">경로 이름이 너무 깁니다(<xref:System.IO.PathTooLongException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="bf756-119">The path name is too long (<xref:System.IO.PathTooLongException> class).</span></span>  
+-   <span data-ttu-id="fb98e-119">경로 이름이 너무 깁니다(<xref:System.IO.PathTooLongException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="fb98e-119">The path name is too long (<xref:System.IO.PathTooLongException> class).</span></span>  
   
--   <span data-ttu-id="bf756-120">경로가 잘못되었습니다(<xref:System.IO.DirectoryNotFoundException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="bf756-120">The path is not valid (<xref:System.IO.DirectoryNotFoundException> class).</span></span>  
+-   <span data-ttu-id="fb98e-120">경로가 잘못되었습니다(<xref:System.IO.DirectoryNotFoundException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="fb98e-120">The path is not valid (<xref:System.IO.DirectoryNotFoundException> class).</span></span>  
   
--   <span data-ttu-id="bf756-121">경로가 콜론 “:”뿐입니다(<xref:System.NotSupportedException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="bf756-121">The path is only a colon ":" (<xref:System.NotSupportedException> class).</span></span>  
+-   <span data-ttu-id="fb98e-121">경로가 콜론 “:”뿐입니다(<xref:System.NotSupportedException> 클래스).</span><span class="sxs-lookup"><span data-stu-id="fb98e-121">The path is only a colon ":" (<xref:System.NotSupportedException> class).</span></span>  
   
-## <a name="net-framework-security"></a><span data-ttu-id="bf756-122">.NET Framework 보안</span><span class="sxs-lookup"><span data-stu-id="bf756-122">.NET Framework Security</span></span>  
- <span data-ttu-id="bf756-123">파일 이름을 바탕으로 파일 내용을 판단하면 안 됩니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-123">Do not make decisions about the contents of the file based on the name of the file.</span></span> <span data-ttu-id="bf756-124">예를 들어 `Form1.vb` 파일이 Visual Basic 소스 파일이 아닐 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-124">For example, the file `Form1.vb` may not be a Visual Basic source file.</span></span> <span data-ttu-id="bf756-125">응용 프로그램에서 데이터를 사용하기 전에 모든 입력을 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="bf756-125">Verify all inputs before using the data in your application.</span></span>  
+## <a name="net-framework-security"></a><span data-ttu-id="fb98e-122">.NET Framework 보안</span><span class="sxs-lookup"><span data-stu-id="fb98e-122">.NET Framework Security</span></span>  
+ <span data-ttu-id="fb98e-123">파일 이름을 바탕으로 파일 내용을 판단하면 안 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-123">Do not make decisions about the contents of the file based on the name of the file.</span></span> <span data-ttu-id="fb98e-124">예를 들어 `Form1.vb` 파일이 Visual Basic 소스 파일이 아닐 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-124">For example, the file `Form1.vb` may not be a Visual Basic source file.</span></span> <span data-ttu-id="fb98e-125">애플리케이션에서 데이터를 사용하기 전에 모든 입력을 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fb98e-125">Verify all inputs before using the data in your application.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="bf756-126">참고 항목</span><span class="sxs-lookup"><span data-stu-id="bf756-126">See Also</span></span>  
- <xref:System.Media.SoundPlayer.LoadAsync%2A>  
- <xref:System.Media.SoundPlayer.LoadCompleted>  
- <xref:System.Media.SoundPlayer.Play%2A>  
- [<span data-ttu-id="bf756-127">방법: Windows Form에서 소리 재생</span><span class="sxs-lookup"><span data-stu-id="bf756-127">How to: Play a Sound from a Windows Form</span></span>](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
+## <a name="see-also"></a><span data-ttu-id="fb98e-126">참고자료</span><span class="sxs-lookup"><span data-stu-id="fb98e-126">See also</span></span>
+- <xref:System.Media.SoundPlayer.LoadAsync%2A>
+- <xref:System.Media.SoundPlayer.LoadCompleted>
+- <xref:System.Media.SoundPlayer.Play%2A>
+- [<span data-ttu-id="fb98e-127">방법: Windows Form에서 소리 재생</span><span class="sxs-lookup"><span data-stu-id="fb98e-127">How to: Play a Sound from a Windows Form</span></span>](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
