@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bd1a55d4100d74b769b2bc1b8fe33d2042f5e739
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: ab637b33797ebc5b6d16873cb460c465405b6849
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33428303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645654"
 ---
 # <a name="isymunmanagedwritersetsymattribute-method"></a>ISymUnmanagedWriter::SetSymAttribute 메서드
-이름을 기반으로 사용자 지정 특성을 정의 합니다. 이러한 특성은 사용자 지정 특성 메타 데이터와 달리 기호 저장소에 보관 됩니다.  
+해당 이름을 기준으로 사용자 지정 특성을 정의 합니다. 이러한 특성은 사용자 지정 특성 메타 데이터와 달리 기호 저장소에 보관 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,22 +39,22 @@ HRESULT SetSymAttribute(
   
 #### <a name="parameters"></a>매개 변수  
  `parent`  
- [in] 특성은 정의 메타 데이터 토큰입니다.  
+ [in] 특성 정의 되는 메타 데이터 토큰입니다.  
   
  `name`  
- [in] 에 대 한 포인터는 `WCHAR` 특성 이름이 들어 있는입니다.  
+ [in] 에 대 한 포인터를 `WCHAR` 특성 이름을 포함 하는 합니다.  
   
  `cData`  
- [in] A `ULONG32` 크기를 표시 하는 `data` 배열입니다.  
+ [in] A `ULONG32` 의 크기를 나타내는 `data` 배열입니다.  
   
  `data`  
  [in] 특성 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedWriter 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedWriter 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

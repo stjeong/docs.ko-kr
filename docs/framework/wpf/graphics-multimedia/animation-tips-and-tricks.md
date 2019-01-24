@@ -14,12 +14,12 @@ helpviewer_keywords:
 - performance troubleshooting [WPF], animation
 - animations [WPF], use of system resources
 ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
-ms.openlocfilehash: df4aa7f3bf046ec871333f665ab77fa460c4095c
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 6d79d3330154fff33abe5a401a70c6b9a20aad72
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54660426"
 ---
 # <a name="animation-tips-and-tricks"></a>애니메이션에 대한 유용한 정보
 애니메이션을 사용할 때 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], 팁 가지 및 애니메이션을 만들 수 있는 트릭 더 잘 수행 줄이도록 하 합니다.  
@@ -105,7 +105,7 @@ ms.locfileid: "48842775"
   
  애니메이션을 제거하는 방법에는 여러 가지가 있습니다. 다음 기술에 속하는 애니메이션을 제거 하려면 사용할 수는 <xref:System.Windows.Media.Animation.Storyboard>합니다.  
   
--   제거 하는 <xref:System.Windows.Media.Animation.Storyboard> 이벤트 트리거를 사용 하 여 시작을 참조 하십시오 [방법: Storyboard 제거](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749412(v=vs.90))합니다.  
+-   제거 하는 <xref:System.Windows.Media.Animation.Storyboard> 이벤트 트리거를 시작, 참조 [방법: Storyboard 제거](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749412(v=vs.90))합니다.  
   
 -   코드를 사용 하 여 제거 하는 <xref:System.Windows.Media.Animation.Storyboard>, 참조는 <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> 메서드.  
   
@@ -128,5 +128,5 @@ ms.locfileid: "48842775"
   
  클록 개체에 대 한 자세한 내용은 참조 하세요. [애니메이션 및 타이밍 시스템 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+## <a name="see-also"></a>참고자료
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

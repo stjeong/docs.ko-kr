@@ -2,12 +2,12 @@
 title: WCF 서비스 게시
 ms.date: 03/30/2017
 ms.assetid: c806b253-cd47-4b96-b831-e73cbf08808f
-ms.openlocfilehash: 515885658612cf11ecff8e084c466a70ba698625
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: ca4a95b606f73800b11416627a27b8174e2bdda9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743002"
 ---
 # <a name="wcf-service-publishing"></a>WCF 서비스 게시
 
@@ -73,7 +73,7 @@ WCF 서비스 라이브러리 템플릿 및 다음을 포함 하는 해당 항�
 ## <a name="security"></a>보안
  IIS는 관리자 계정으로 실행해야 하므로 로컬 IIS에 게시하려면 관리자 권한이 필요합니다. 관리자 권한 없이 사용자가 WCF 서비스 게시를 하는 경우 IIS를 대상 위치로 사용할 수 없는 경우 게시 파일 시스템 또는 FTP 사이트에 관리자 권한 없이 작동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [WCF Visual Studio 템플릿](../../../docs/framework/wcf/wcf-vs-templates.md)
 - [WCF 서비스 호스트(WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

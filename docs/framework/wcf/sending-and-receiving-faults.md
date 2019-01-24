@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - handling faults [WCF], sending
 ms.assetid: 7be6fb96-ce2a-450b-aebe-f932c6a4bc5d
-ms.openlocfilehash: 0bcab736aad1df84713c7a111d23b82a54ec4334
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 63a761b4a79743b0d4a03392ced465c3105db9bd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54602535"
 ---
 # <a name="sending-and-receiving-faults"></a>오류 보내기 및 받기
 SOAP 오류는 오류 조건 정보를 서비스에서 클라이언트로 전달하고 이중 클라이언트의 경우에는 상호 운용 가능한 방식으로 클라이언트에서 서비스로 전달합니다. 일반적으로 서비스는 사용자 지정 오류 내용을 정의하고 이들을 반환할 수 있는 작업을 지정합니다. (자세한 내용은 [정 및 지정 오류](../../../docs/framework/wcf/defining-and-specifying-faults.md).) 이 항목에서는 해당 오류 조건이 발생한 경우 서비스 또는 이중 클라이언트가 그러한 오류를 보낼 수 있는 방법과 클라이언트 또는 서비스 응용 프로그램이 이러한 오류를 처리하는 방법에 대해 설명합니다. Windows Communication Foundation (WCF) 응용 프로그램의 오류 처리 개요를 참조 하세요 [지정 및 계약 및 서비스에서 오류 처리](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)합니다.  
@@ -35,9 +35,9 @@ SOAP 오류는 오류 조건 정보를 서비스에서 클라이언트로 전달
  선언 되지 않은 오류를 보내는 신속 하 게 진단 및 디버깅 도구는 제한 된 WCF 응용 프로그램 에서만 유용성 문제를 디버깅에 매우 유용할 수 있습니다. 일반적으로 디버깅할 때 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 속성을 사용하는 것이 좋습니다. 이 값을 true로 설정하면 클라이언트에 <xref:System.ServiceModel.FaultException%601> 형식의 <xref:System.ServiceModel.ExceptionDetail> 예외와 같은 오류가 발생합니다.  
   
 > [!IMPORTANT]
->  관리 되는 예외는 내부 응용 프로그램 정보를 노출할 수, 있으므로 설정 <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 나 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 에 `true` WCF 클라이언트에서는 개인적으로 포함 하 여 내부 서비스 작업 예외에 대 한 정보를 허용 하려면 식별할 수 있는 정보나 기타 중요 한 정보입니다.  
+>  관리 되는 예외는 내부 애플리케이션 정보를 노출할 수, 있으므로 설정 <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 나 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 에 `true` WCF 클라이언트에서는 개인적으로 포함 하 여 내부 서비스 작업 예외에 대 한 정보를 허용 하려면 식별할 수 있는 정보나 기타 중요 한 정보입니다.  
 >   
->  그러므로 임시로 서비스 응용 프로그램을 디버깅하려는 경우 권장되는 유일한 방법은 <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 또는 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType>를 `true`로 설정하는 것입니다. 또한 이 방법으로 처리되지 않은 관리되는 예외를 반환하는 메서드의 WSDL에는 <xref:System.ServiceModel.FaultException%601> 형식의 <xref:System.ServiceModel.ExceptionDetail>에 대한 계약이 포함되지 않습니다. 클라이언트는 알 수 없는 SOAP 오류의 가능성을 예상 해야 합니다 (WCF 클라이언트에 반환 <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> 개체) 디버깅 정보를 제대로 가져올 수 있습니다.  
+>  그러므로 임시로 서비스 애플리케이션을 디버깅하려는 경우 권장되는 유일한 방법은 <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> 또는 <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType>를 `true`로 설정하는 것입니다. 또한 이 방법으로 처리되지 않은 관리되는 예외를 반환하는 메서드의 WSDL에는 <xref:System.ServiceModel.FaultException%601> 형식의 <xref:System.ServiceModel.ExceptionDetail>에 대한 계약이 포함되지 않습니다. 클라이언트는 알 수 없는 SOAP 오류의 가능성을 예상 해야 합니다 (WCF 클라이언트에 반환 <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> 개체) 디버깅 정보를 제대로 가져올 수 있습니다.  
   
  선언되지 않은 SOAP 오류를 보내려면 <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> 개체(즉, 제네릭 형식 <xref:System.ServiceModel.FaultException%601>이 아님)를 throw하고 문자열을 생성자에게 전달합니다. Throw 된 WCF 클라이언트 응용 프로그램에 노출 됩니다 <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> 를 호출 하 여 문자열을 사용할 수 있는 예외를 <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType> 메서드.  
   
@@ -104,9 +104,9 @@ SOAP 오류는 오류 조건 정보를 서비스에서 클라이언트로 전달
  [!code-csharp[FaultContractAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
  [!code-vb[FaultContractAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.FaultException>  
- <xref:System.ServiceModel.FaultException%601>  
- <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>  
- [예상되는 예외](../../../docs/framework/wcf/samples/expected-exceptions.md)  
- [WCF 클라이언트 리소스를 해제 하려면 중단 및 닫기 사용](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.FaultException>
+- <xref:System.ServiceModel.FaultException%601>
+- <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>
+- [예상되는 예외](../../../docs/framework/wcf/samples/expected-exceptions.md)
+- [WCF 클라이언트 리소스를 해제 하려면 중단 및 닫기 사용](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)

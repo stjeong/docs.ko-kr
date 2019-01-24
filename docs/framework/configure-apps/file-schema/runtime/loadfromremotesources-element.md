@@ -1,5 +1,5 @@
 ---
-title: '&lt;loadFromRemoteSources&gt; 요소'
+title: '&lt;loadFromRemoteSources&gt; Element'
 ms.date: 05/24/2018
 helpviewer_keywords:
 - loadFromRemoteSources element
@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3070e293fc335bb24dd1234007307773d152ceee
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 2b2a5301defabde44c4f5a98e57bd302fe390d53
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671878"
 ---
-# <a name="ltloadfromremotesourcesgt-element"></a>&lt;loadFromRemoteSources&gt; 요소
+# <a name="ltloadfromremotesourcesgt-element"></a>&lt;loadFromRemoteSources&gt; element
 지정 여부를 원격 원본에서 로드 된 어셈블리의.NET Framework 4 이상 완전 신뢰를 부여 해야 합니다.
   
 > [!NOTE]
@@ -54,7 +54,7 @@ ms.locfileid: "53611401"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명
@@ -117,8 +117,8 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 
 ## <a name="see-also"></a>참고 항목
 
-- [CAS 정책의 암시적 사용: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
-- [방법: 샌드박스에서 부분적으로 신뢰할 수 있는 코드 실행](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
+- [CAS 정책의 암시적 사용: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)
+- [방법: 샌드박스에서 부분적으로 신뢰할 수 있는 코드 실행](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>

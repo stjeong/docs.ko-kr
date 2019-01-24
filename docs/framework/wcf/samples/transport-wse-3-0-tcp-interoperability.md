@@ -1,15 +1,15 @@
 ---
-title: 'Transport: WSE 3.0 TCP Interoperability'
+title: '전송: WSE 3.0 TCP 상호 운용성'
 ms.date: 03/30/2017
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
-ms.openlocfilehash: b727da998736944afd23f7dcfbf45a1f6049d1d0
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 870a0de493a4e60404d11115de58735e5fbb968f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44085968"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653010"
 ---
-# <a name="transport-wse-30-tcp-interoperability"></a>Transport: WSE 3.0 TCP Interoperability
+# <a name="transport-wse-30-tcp-interoperability"></a>전송: WSE 3.0 TCP 상호 운용성
 WSE 3.0 TCP Interoperability Transport 샘플에는 TCP 이중 세션을 사용자 지정 Windows Communication Foundation (WCF) 전송으로 구현 하는 방법을 보여 줍니다. 또한 채널 계층의 확장성을 사용하여 연결을 통해 기존에 배포된 시스템과 상호 작용할 수 있는 방법도 보여 줍니다. 다음 단계에는이 사용자 지정 WCF 전송을 작성 하는 방법을 보여 줍니다.  
   
 1.  TCP 소켓에서 시작하여 DIME 프레이밍을 사용하여 메시지 경계를 나타내는 <xref:System.ServiceModel.Channels.IDuplexSessionChannel>의 클라이언트 및 서버 구현을 만듭니다.  
@@ -23,7 +23,7 @@ WSE 3.0 TCP Interoperability Transport 샘플에는 TCP 이중 세션을 사용�
 5.  사용자 지정 전송을 채널 스택에 추가하는 바인딩 요소를 추가합니다. 자세한 내용은 [바인딩 요소 추가]를 참조 하세요.  
   
 ## <a name="creating-iduplexsessionchannel"></a>IDuplexSessionChannel 만들기  
- WSE 3.0 TCP 상호 운용성 전송을 작성하는 첫 번째 단계는 <xref:System.ServiceModel.Channels.IDuplexSessionChannel> 위에 <xref:System.Net.Sockets.Socket>의 구현을 만드는 것입니다. `WseTcpDuplexSessionChannel`은 <xref:System.ServiceModel.Channels.ChannelBase>로부터 파생됩니다. 메시지를 보내는 논리는 (1) 메시지를 바이트로 인코딩한 다음 (2) 이러한 바이트를 프레이밍하여 연결을 통해 보내는 두 가지 주요 작업으로 구성됩니다.  
+ WSE 3.0 TCP 상호 운용성 전송을 작성하는 첫 번째 단계는 <xref:System.ServiceModel.Channels.IDuplexSessionChannel> 위에 <xref:System.Net.Sockets.Socket>의 구현을 만드는 것입니다. `WseTcpDuplexSessionChannel`은 <xref:System.ServiceModel.Channels.ChannelBase>로부터 파생됩니다. 메시지를 보내는 논리는 두 가지 주요 작업으로 구성 됩니다. (1) (바이트) 및 (2) 이러한 바이트를 프레이밍 및 통신 중에 보내고 메시지를 인코딩입니다.  
   
  `ArraySegment<byte> encodedBytes = EncodeMessage(message);`  
   
@@ -195,4 +195,4 @@ Symbols:
   
     8.  TCP 전송 테스트 클라이언트가 새 콘솔에서 시작됩니다. 클라이언트는 서비스에서 스톡 할당량을 요청한 다음 콘솔 창에 결과를 표시합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

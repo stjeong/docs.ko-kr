@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4b985aeb97621e552e9e97581e67cae029d019ef
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5fe770ffc5a9c187e9069e8a66553976f9a53b2f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33405895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709886"
 ---
 # <a name="setpekind-method"></a>SetPEKind 메서드
-이식 가능한 실행 파일 유형 컴퓨터 관련 되지 않거나 알 수 없는 컴퓨터를 결정합니다.  
+이식 가능한 실행 파일 형식에 시스템별 또는 알 수 없는 컴퓨터를 결정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,13 +42,13 @@ HRESULT SetPEKind(
  어셈블리의 ID입니다.  
   
  `FileToken`  
- 토큰 PE 형식을 설정할 파일입니다. 경우 NULL이 될 수 `AssemblyID` 바인딩되지 않은 어셈블리를 나타내지 않습니다.  
+ PE 형식 설정 파일의 토큰입니다. NULL 일 수 `AssemblyID` 는 바인딩되지 않은 netmodule를 나타내지 않습니다.  
   
  `dwPEKind`  
- PE에 표시 된 대로 형식은 [CorPEKind 열거형](../../../../docs/framework/unmanaged-api/metadata/corpekind-enumeration.md)합니다.  
+ PE에 표시 된 대로 유형의 합니다 [CorPEKind 열거형](../../../../docs/framework/unmanaged-api/metadata/corpekind-enumeration.md)합니다.  
   
  `dwMachine`  
- 대상 컴퓨터 아키텍처를 NT 헤더에 표시 된 대로 합니다.  
+ 대상 컴퓨터 아키텍처, NT 헤더에 표시 된 대로입니다.  
   
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK를 반환 합니다.  
@@ -56,8 +56,8 @@ HRESULT SetPEKind(
 ## <a name="requirements"></a>요구 사항  
  Alink.h가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [GetPEKind 메서드](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [GetPEKind 메서드](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
