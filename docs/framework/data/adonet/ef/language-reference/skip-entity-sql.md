@@ -2,41 +2,41 @@
 title: SKIP(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-ms.openlocfilehash: 321f6c5ae62ce21249ae4c1081b8e98427bc3df2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 467329f74304b64c7fc7ada2920751aba744f76e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43500744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54637640"
 ---
-# <a name="skip-entity-sql"></a><span data-ttu-id="c012b-102">SKIP(Entity SQL)</span><span class="sxs-lookup"><span data-stu-id="c012b-102">SKIP (Entity SQL)</span></span>
-<span data-ttu-id="c012b-103">ORDER BY 절의 SKIP 하위 절을 사용하여 물리적 페이징을 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-103">You can perform physical paging by using the SKIP sub-clause in the ORDER BY clause.</span></span> <span data-ttu-id="c012b-104">SKIP 절은 ORDER BY 절과 별도로 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-104">SKIP cannot be used separately from the ORDER BY clause.</span></span>  
+# <a name="skip-entity-sql"></a><span data-ttu-id="0a39e-102">SKIP(Entity SQL)</span><span class="sxs-lookup"><span data-stu-id="0a39e-102">SKIP (Entity SQL)</span></span>
+<span data-ttu-id="0a39e-103">ORDER BY 절의 SKIP 하위 절을 사용하여 물리적 페이징을 수행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-103">You can perform physical paging by using the SKIP sub-clause in the ORDER BY clause.</span></span> <span data-ttu-id="0a39e-104">SKIP 절은 ORDER BY 절과 별도로 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-104">SKIP cannot be used separately from the ORDER BY clause.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c012b-105">구문</span><span class="sxs-lookup"><span data-stu-id="c012b-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="0a39e-105">구문</span><span class="sxs-lookup"><span data-stu-id="0a39e-105">Syntax</span></span>  
   
 ```  
 [ SKIP n ]  
 ```  
   
-## <a name="arguments"></a><span data-ttu-id="c012b-106">인수</span><span class="sxs-lookup"><span data-stu-id="c012b-106">Arguments</span></span>  
+## <a name="arguments"></a><span data-ttu-id="0a39e-106">인수</span><span class="sxs-lookup"><span data-stu-id="0a39e-106">Arguments</span></span>  
  `n`  
- <span data-ttu-id="c012b-107">건너뛸 항목의 개수입니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-107">The number of items to skip.</span></span>  
+ <span data-ttu-id="0a39e-107">건너뛸 항목의 개수입니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-107">The number of items to skip.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="c012b-108">설명</span><span class="sxs-lookup"><span data-stu-id="c012b-108">Remarks</span></span>  
- <span data-ttu-id="c012b-109">SKIP 식 하위 절이 ORDER BY 절에 있으면 결과는 정렬 지정에 따라 정렬되고 SKIP 식 바로 뒤에 있는 행에서 시작하는 행이 결과 집합에 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-109">If a SKIP expression sub-clause is present in an ORDER BY clause, the results will be sorted according the sort specification and the result set will include rows starting from the next row immediately after the SKIP expression.</span></span> <span data-ttu-id="c012b-110">예를 들어, SKIP 5를 사용하면 처음 다섯 개의 행을 건너뛰고 여섯 번째 행부터 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-110">For example, SKIP 5 will skip the first five rows and return from the sixth row forward.</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="c012b-111">TOP 한정자와 SKIP 하위 절이 모두 같은 쿼리 식에 있는 경우 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리는 유효하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-111">An [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query is invalid if both the TOP modifier and the SKIP sub-clause are present in the same query expression.</span></span> <span data-ttu-id="c012b-112">TOP 식을 변경하여 쿼리를 LIMIT 식에 다시 써야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-112">The query should be rewritten by changing the TOP expression to the LIMIT expression.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="0a39e-108">설명</span><span class="sxs-lookup"><span data-stu-id="0a39e-108">Remarks</span></span>  
+ <span data-ttu-id="0a39e-109">SKIP 식 하위 절이 ORDER BY 절에 있으면 결과는 정렬 지정에 따라 정렬되고 SKIP 식 바로 뒤에 있는 행에서 시작하는 행이 결과 집합에 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-109">If a SKIP expression sub-clause is present in an ORDER BY clause, the results will be sorted according the sort specification and the result set will include rows starting from the next row immediately after the SKIP expression.</span></span> <span data-ttu-id="0a39e-110">예를 들어, SKIP 5를 사용하면 처음 다섯 개의 행을 건너뛰고 여섯 번째 행부터 반환됩니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-110">For example, SKIP 5 will skip the first five rows and return from the sixth row forward.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c012b-113">[!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)]에서 키가 아닌 열에 ORDER BY와 함께 SKIP을 사용하면 잘못된 결과가 반환될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-113">In [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)], using SKIP with ORDER BY on non-key columns might return incorrect results.</span></span> <span data-ttu-id="c012b-114">키가 아닌 열에 중복 데이터가 있는 경우, 지정된 개수 이상의 행을 건너뛸 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-114">More than the specified number of rows might be skipped if the non-key column has duplicate data in it.</span></span> <span data-ttu-id="c012b-115">이런 현상은 SKIP이 [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)]에 맞게 변환되는 방식 때문에 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-115">This is due to how SKIP is translated for [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)].</span></span> <span data-ttu-id="c012b-116">예를 들어 다음 코드에서는 `E.NonKeyColumn` 에 중복 값이 있으면 5개가 넘는 행을 건너뛸 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-116">For example, in the following code more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:</span></span>  
+>  <span data-ttu-id="0a39e-111">TOP 한정자와 SKIP 하위 절이 모두 같은 쿼리 식에 있는 경우 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리는 유효하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-111">An [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query is invalid if both the TOP modifier and the SKIP sub-clause are present in the same query expression.</span></span> <span data-ttu-id="0a39e-112">TOP 식을 변경하여 쿼리를 LIMIT 식에 다시 써야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-112">The query should be rewritten by changing the TOP expression to the LIMIT expression.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="0a39e-113">[!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)]에서 키가 아닌 열에 ORDER BY와 함께 SKIP을 사용하면 잘못된 결과가 반환될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-113">In [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)], using SKIP with ORDER BY on non-key columns might return incorrect results.</span></span> <span data-ttu-id="0a39e-114">키가 아닌 열에 중복 데이터가 있는 경우, 지정된 개수 이상의 행을 건너뛸 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-114">More than the specified number of rows might be skipped if the non-key column has duplicate data in it.</span></span> <span data-ttu-id="0a39e-115">이런 현상은 SKIP이 [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)]에 맞게 변환되는 방식 때문에 발생합니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-115">This is due to how SKIP is translated for [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)].</span></span> <span data-ttu-id="0a39e-116">예를 들어 다음 코드에서는 `E.NonKeyColumn` 에 중복 값이 있으면 5개가 넘는 행을 건너뛸 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-116">For example, in the following code more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:</span></span>  
 >   
 >  `SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L`  
   
- <span data-ttu-id="c012b-117">[!INCLUDE[esql](../../../../../../includes/esql-md.md)] 이 [예제의](https://msdn.microsoft.com/library/bb738702\(v=vs.100\).aspx#_ESQL) 쿼리는 SKIP과 함께 ORDER BY 연산자를 사용하여 SELECT 문에서 반환되는 개체에 적용하는 정렬 순서를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="c012b-117">The  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [this](https://msdn.microsoft.com/library/bb738702\(v=vs.100\).aspx#_ESQL) example uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.</span></span>  
+ <span data-ttu-id="0a39e-117">[!INCLUDE[esql](../../../../../../includes/esql-md.md)] 이 [예제의](https://msdn.microsoft.com/library/bb738702\(v=vs.100\).aspx#_ESQL) 쿼리는 SKIP과 함께 ORDER BY 연산자를 사용하여 SELECT 문에서 반환되는 개체에 적용하는 정렬 순서를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="0a39e-117">The  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [this](https://msdn.microsoft.com/library/bb738702\(v=vs.100\).aspx#_ESQL) example uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c012b-118">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c012b-118">See Also</span></span>  
- [<span data-ttu-id="c012b-119">ORDER BY</span><span class="sxs-lookup"><span data-stu-id="c012b-119">ORDER BY</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)  
- [<span data-ttu-id="c012b-120">방법: 쿼리 결과 페이징</span><span class="sxs-lookup"><span data-stu-id="c012b-120">How to: Page Through Query Results</span></span>](https://msdn.microsoft.com/library/ffc0f920-e7de-42e0-9b12-ef356421d030)  
- [<span data-ttu-id="c012b-121">페이징</span><span class="sxs-lookup"><span data-stu-id="c012b-121">Paging</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)  
- [<span data-ttu-id="c012b-122">TOP</span><span class="sxs-lookup"><span data-stu-id="c012b-122">TOP</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)
+## <a name="see-also"></a><span data-ttu-id="0a39e-118">참고자료</span><span class="sxs-lookup"><span data-stu-id="0a39e-118">See also</span></span>
+- [<span data-ttu-id="0a39e-119">ORDER BY</span><span class="sxs-lookup"><span data-stu-id="0a39e-119">ORDER BY</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)
+- [<span data-ttu-id="0a39e-120">방법: 쿼리 결과 페이징</span><span class="sxs-lookup"><span data-stu-id="0a39e-120">How to: Page Through Query Results</span></span>](https://msdn.microsoft.com/library/ffc0f920-e7de-42e0-9b12-ef356421d030)
+- [<span data-ttu-id="0a39e-121">페이징</span><span class="sxs-lookup"><span data-stu-id="0a39e-121">Paging</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)
+- [<span data-ttu-id="0a39e-122">TOP</span><span class="sxs-lookup"><span data-stu-id="0a39e-122">TOP</span></span>](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)
