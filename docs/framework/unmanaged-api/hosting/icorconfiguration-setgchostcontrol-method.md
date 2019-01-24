@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 48c2a394126aca3a10b38ab2ba2df945f53e45d6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e7b9602f490900fd5c923abf195b3b0707959832
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33438274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554039"
 ---
-# <a name="icorconfigurationsetgchostcontrol-method"></a><span data-ttu-id="f7623-102">ICorConfiguration::SetGCHostControl 메서드</span><span class="sxs-lookup"><span data-stu-id="f7623-102">ICorConfiguration::SetGCHostControl Method</span></span>
-<span data-ttu-id="f7623-103">콜백 인터페이스를 호스트에 가상 메모리의 한계를 변경 하도록 요청 하는 가비지 수집기에서 사용할 수를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="f7623-103">Sets the callback interface to be used by the garbage collector to request the host to change the limits of virtual memory.</span></span>  
+# <a name="icorconfigurationsetgchostcontrol-method"></a><span data-ttu-id="8b674-102">ICorConfiguration::SetGCHostControl 메서드</span><span class="sxs-lookup"><span data-stu-id="8b674-102">ICorConfiguration::SetGCHostControl Method</span></span>
+<span data-ttu-id="8b674-103">가비지 수집기에 의해 가상 메모리의 한계를 변경 하도록 호스트에 요청에 사용할 콜백 인터페이스를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8b674-103">Sets the callback interface to be used by the garbage collector to request the host to change the limits of virtual memory.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f7623-104">구문</span><span class="sxs-lookup"><span data-stu-id="f7623-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8b674-104">구문</span><span class="sxs-lookup"><span data-stu-id="8b674-104">Syntax</span></span>  
   
 ```  
 HRESULT SetGCHostControl (  
@@ -35,18 +35,18 @@ HRESULT SetGCHostControl (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="f7623-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="f7623-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="8b674-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="8b674-105">Parameters</span></span>  
  `pGCHostControl`  
- <span data-ttu-id="f7623-106">[in] 에 대 한 포인터는 [IGCHostControl](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md) 호스트에 가상 메모리의 한계를 변경 하도록 요청 하기 위해 가비지 수집기를 사용할 수 있는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="f7623-106">[in] A pointer to an [IGCHostControl](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md) object that allows the garbage collector to request the host to change the limits of virtual memory.</span></span>  
+ <span data-ttu-id="8b674-106">[in] 에 대 한 포인터를 [IGCHostControl](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md) 가비지 수집기가 호스트의 가상 메모리 한계를 변경 하려면 요청할 수 있는 개체입니다.</span><span class="sxs-lookup"><span data-stu-id="8b674-106">[in] A pointer to an [IGCHostControl](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md) object that allows the garbage collector to request the host to change the limits of virtual memory.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="f7623-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="f7623-107">Requirements</span></span>  
- <span data-ttu-id="f7623-108">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="f7623-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8b674-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="8b674-107">Requirements</span></span>  
+ <span data-ttu-id="8b674-108">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="8b674-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="f7623-109">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="f7623-109">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="8b674-109">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="8b674-109">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="f7623-110">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="f7623-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="8b674-110">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="8b674-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="f7623-111">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="f7623-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="8b674-111">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8b674-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f7623-112">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f7623-112">See Also</span></span>  
- [<span data-ttu-id="f7623-113">ICorConfiguration 인터페이스</span><span class="sxs-lookup"><span data-stu-id="f7623-113">ICorConfiguration Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
+## <a name="see-also"></a><span data-ttu-id="8b674-112">참고자료</span><span class="sxs-lookup"><span data-stu-id="8b674-112">See also</span></span>
+- [<span data-ttu-id="8b674-113">ICorConfiguration 인터페이스</span><span class="sxs-lookup"><span data-stu-id="8b674-113">ICorConfiguration Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
