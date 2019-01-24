@@ -2,28 +2,22 @@
 title: 그래픽 및 멀티미디어
 ms.date: 03/30/2017
 dev_langs:
-- csharp
-- vb
+  - csharp
+  - vb
 helpviewer_keywords:
-- media [WPF], features
-- video effects [WPF]
-- sound effects [WPF]
-- animation [WPF], features
-- graphics features [WPF]
-- transition effects [WPF]
+  - 'media [WPF], features'
+  - 'video effects [WPF]'
+  - 'sound effects [WPF]'
+  - 'animation [WPF], features'
+  - 'graphics features [WPF]'
+  - 'transition effects [WPF]'
 ms.assetid: 1817d9dc-3d6c-46cb-afc8-63b0bae35e37
-ms.openlocfilehash: c7cae5be1d7e52186752d67354927084d118beb9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44198883"
 ---
 # <a name="graphics-and-multimedia"></a>그래픽 및 멀티미디어
 <a name="introduction"></a>
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 멀티미디어, 벡터 그래픽, 애니메이션 및 콘텐츠 컴퍼지션을, 쉽게 흥미로운 사용자 인터페이스 및 콘텐츠를 빌드하는 개발자를 위한 지원을 제공 합니다. [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)]를 사용하여 벡터 그래픽이나 복잡한 애니메이션을 만든 후 미디어를 응용 프로그램에 통합할 수 있습니다.  
   
- 이 항목에서는 그래픽, 전환 효과, 소리 및 비디오를 응용 프로그램에 추가할 수 있도록 하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 그래픽, 애니메이션 및 미디어 기능을 소개합니다.  
+ 이 항목에서는 그래픽, 전환 효과, 소리 및 비디오를 애플리케이션에 추가할 수 있도록 하는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 그래픽, 애니메이션 및 미디어 기능을 소개합니다.  
   
 > [!NOTE]
 >  Windows 서비스에서 WPF 유형을 사용해서는 안 됩니다. Windows 서비스에서 WPF 유형을 사용하려고 하면 서비스가 예상대로 작동하지 않을 수 있습니다.   
@@ -128,14 +122,14 @@ End Class
  이미지, 비디오 및 오디오는 미디어를 통해 정보 및 사용자 환경을 전달하는 방법입니다.  
   
 ### <a name="images"></a>이미지  
- 아이콘, 배경 및 애니메이션 일부를 포함하는 이미지는 대부분의 응용 프로그램에서 핵심적인 부분입니다. 이미지를 자주 사용해야 하므로 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]는 여러 가지 방법으로 이미지로 작업하는 기능을 제공합니다. 다음 그림에서는 해당 방법 중 하나만 보여 줍니다.  
+ 아이콘, 배경 및 애니메이션 일부를 포함하는 이미지는 대부분의 애플리케이션에서 핵심적인 부분입니다. 이미지를 자주 사용해야 하므로 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]는 여러 가지 방법으로 이미지로 작업하는 기능을 제공합니다. 다음 그림에서는 해당 방법 중 하나만 보여 줍니다.  
   
  ![스타일 샘플 스크린샷](../../../../docs/framework/wpf/controls/media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
   
  자세한 내용은 [이미징 개요](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)를 참조하세요.  
   
 ### <a name="video-and-audio"></a>비디오 및 오디오  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]에서 제공하는 그래픽 기능 중 핵심 기능은 비디오 및 오디오를 포함하는 멀티미디어로 작업할 수 있도록 지원하는 것입니다. 다음 예제에서는 미디어 플레이어를 응용 프로그램에 삽입하는 방법을 보여 줍니다.  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]에서 제공하는 그래픽 기능 중 핵심 기능은 비디오 및 오디오를 포함하는 멀티미디어로 작업할 수 있도록 지원하는 것입니다. 다음 예제에서는 미디어 플레이어를 애플리케이션에 삽입하는 방법을 보여 줍니다.  
   
 ```xaml  
 <MediaElement Source="media\numbers.wmv" Width="450" Height="250" />  
@@ -145,14 +139,14 @@ End Class
   
  자세한 내용은 [멀티미디어 개요](../../../../docs/framework/wpf/graphics-multimedia/multimedia-overview.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media>  
- <xref:System.Windows.Media.Animation>  
- <xref:System.Windows.Media.Media3D>  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [단색 및 그라데이션을 사용한 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [3 차원 그래픽](https://msdn.microsoft.com/library/565c1f3c-235b-47de-b05b-3b53ed63f1b8)  
- [멀티미디어](https://msdn.microsoft.com/library/44a8dcd0-80cb-4db0-a222-87cde68c2fac)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media>
+- <xref:System.Windows.Media.Animation>
+- <xref:System.Windows.Media.Media3D>
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [단색 및 그라데이션을 사용한 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [이미지, 그림 및 시각적 표시로 그리기](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
+- [3 차원 그래픽](https://msdn.microsoft.com/library/565c1f3c-235b-47de-b05b-3b53ed63f1b8)
+- [멀티미디어](https://msdn.microsoft.com/library/44a8dcd0-80cb-4db0-a222-87cde68c2fac)

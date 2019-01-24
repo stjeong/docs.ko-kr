@@ -5,12 +5,12 @@ helpviewer_keywords:
 - layout [WPF], automatic
 - automatic layout [WPF]
 ms.assetid: 6fed9264-18bb-4d05-8867-1fe356c6f687
-ms.openlocfilehash: d6ed0da9be32a4a4de4111acfb2d347b7bd5096d
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4cb351b0db83bd83c17aa4aca004b310dc957437
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609605"
 ---
 # <a name="use-automatic-layout-overview"></a>자동 레이아웃 사용 개요
 이 항목에서는 개발자가 작성 하는 방법에 대 한 지침을 소개 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램을 지역화할 수 있는 [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]합니다. 과거에는 UI의 지역화는 시간이 오래 걸리는 프로세스 였습니다. 에 대 한 UI를 조정 하는 각 언어는 픽셀 단위 조정이 필요 합니다. 적합 한 설계 및 코딩 표준을 사용 하 여 오늘 [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] 는 작은 크기 조정 및 위치 조정 작업을 생성할 수 있습니다. 보다 쉽게 크기 및 위치가 변경 될 수 있는 응용 프로그램을 작성 하는 방법을 자동 레이아웃 이라고 하며 사용 하 여 구현할 수 있습니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램 디자인.  
@@ -31,7 +31,7 @@ ms.locfileid: "50201558"
   
 <a name="autolayout_controls"></a>   
 ## <a name="automatic-layout-and-controls"></a>자동 레이아웃 및 컨트롤  
- 자동 레이아웃을 사용하면 응용 프로그램에서 컨트롤의 크기를 자동으로 조정할 수 있습니다. 예를 들어 컨트롤이 문자열의 길이 맞게 변경될 수 있습니다. 이 기능을 통해 로컬라이저는 문자열을 변환할 수 있으며, 더 이상 변환된 텍스트에 맞게 컨트롤의 크기를 조정할 필요가 없습니다. 다음 예제에서는 영어 콘텐츠가 있는 단추를 만듭니다.  
+ 자동 레이아웃을 사용하면 애플리케이션에서 컨트롤의 크기를 자동으로 조정할 수 있습니다. 예를 들어 컨트롤이 문자열의 길이 맞게 변경될 수 있습니다. 이 기능을 통해 로컬라이저는 문자열을 변환할 수 있으며, 더 이상 변환된 텍스트에 맞게 컨트롤의 크기를 조정할 필요가 없습니다. 다음 예제에서는 영어 콘텐츠가 있는 단추를 만듭니다.  
   
  [!code-xaml[LocalizationBtn_snip#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn_snip/CS/Pane1.xaml#1)]  
   
@@ -107,7 +107,7 @@ ms.locfileid: "50201558"
   
  **참고** 전체 코드 샘플을 보려면 [그리드 간 공유 크기 조정 속성](../../../../docs/framework/wpf/controls/how-to-share-sizing-properties-between-grids.md)  
   
-## <a name="see-also"></a>참고 항목  
- [WPF의 전역화](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)  
- [자동 레이아웃을 사용하여 단추 만들기](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)  
- [자동 레이아웃에 그리드 사용](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)
+## <a name="see-also"></a>참고자료
+- [WPF의 전역화](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
+- [자동 레이아웃을 사용하여 단추 만들기](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)
+- [자동 레이아웃에 그리드 사용](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)

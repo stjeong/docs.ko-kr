@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], auditing events
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
-ms.openlocfilehash: 90169aac0c0c2cac8860b2809467ffa3a27d0e91
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: f3d4ed8ea9a3c0f45185cd0f631cd983b0e364c5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50184740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54566829"
 ---
 # <a name="how-to-audit-windows-communication-foundation-security-events"></a>방법: Windows Communication Foundation 보안 이벤트 감사
 Windows Communication Foundation (WCF)를 사용 하면 Windows 이벤트 뷰어를 사용 하 여 볼 수 있는 Windows 이벤트 로그에 보안 이벤트를 기록할 수 있습니다. 이 항목에서는 보안 이벤트를 기록하도록 응용 프로그램을 설정하는 방법에 대해 설명합니다. WCF 감사 하는 방법에 대 한 자세한 내용은 참조 하세요. [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)합니다.  
@@ -87,8 +87,8 @@ Windows Communication Foundation (WCF)를 사용 하면 Windows 이벤트 뷰어
   
  경우는 <xref:System.ServiceModel.AuditLogLocation> 속성이 <xref:System.ServiceModel.AuditLogLocation.Security> 및 **개체 액세스 감사** 설정 하지 않으면 합니다 **로컬 보안 정책**, 감사 이벤트가 보안 로그에 기록 되지 것입니다. 오류가 반환되지는 않지만 감사 항목이 보안 로그에 기록되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
- <xref:System.ServiceModel.AuditLogLocation>  
- [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- <xref:System.ServiceModel.AuditLogLocation>
+- [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)

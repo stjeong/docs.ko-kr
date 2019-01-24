@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d0e922273a7d4e5b98c1321992e5e89e01adb437
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 0741e5773b946186a452e191cc3ae987e6067c44
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33431495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54606889"
 ---
 # <a name="getcorversion-function"></a>GetCORVersion 함수
 현재 프로세스에서 실행 중인 공용 언어 런타임 (CLR)의 버전 번호를 반환 합니다.  
   
- 이 함수에 더 이상 사용 되지는 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]합니다.  
+ 이 함수에서 사용 중단에 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,22 +41,22 @@ HRESULT GetCORVersion (
   
 #### <a name="parameters"></a>매개 변수  
  `pbuffer`  
- CLR에서 현재 프로세스에 로드 된 런타임 버전을 지정 하는 문자열을 반환 하는 버퍼에 대 한 포인터입니다. 반환 된 문자열은 동일한 형식 문자열에 전달 된 [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md), 예를 들어 "v1.0.1216"입니다. 런타임 프로세스에 아직 로드 되지 않았습니다 고 함수는 컴퓨터에 설치 된 런타임의 최신 버전에 대 한 적절 한 디렉터리 정보를 반환 합니다.  
+ CLR 프로세스에 현재 로드 된 런타임 버전을 지정 하는 문자열을 반환 하는 버퍼에 대 한 포인터입니다. 반환된 된 문자열의 형식은 동일한 문자열에 전달 된 [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md), 예를 들어, "v1.0.1216"입니다. 런타임 프로세스에 아직 로드 되지가 컴퓨터에 설치 된 런타임의 최신 버전에 대 한 적절 한 디렉터리 정보를 반환 합니다.  
   
  `cchBuffer`  
  문자 수 (`WCHAR`s)에 저장할 수 있는 `pbuffer`합니다.  
   
  `dwLength`  
- 에 실제로 반환 된 문자 수에 대 한 포인터 `pbuffer`합니다. 경우 `pbuffer` 가 null 포인터 이면 런타임은 E_POINTER를 반환 합니다. 문자 수가 큰 경우의 길이 `pbuffer` , 런타임은 ERROR_INSUFFICIENT_BUFFER를 반환 합니다.  
+ 에 실제로 반환 된 문자 수에 대 한 포인터 `pbuffer`합니다. 경우 `pbuffer` 가 null 포인터인 경우 런타임에서 E_POINTER를 반환 합니다. 문자 수가 큰 경우의 길이 보다 `pbuffer` , 런타임에서 ERROR_INSUFFICIENT_BUFFER를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MSCorEE.h  
   
  **라이브러리:** MSCorEE.dll  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [사용되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## <a name="see-also"></a>참고자료
+- [사용되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

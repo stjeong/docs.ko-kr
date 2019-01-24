@@ -6,12 +6,12 @@ helpviewer_keywords:
 - SplitContainer control [Windows Forms], Explorer-style interface
 - forms [Windows Forms], Windows Explorer type
 ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
-ms.openlocfilehash: 249210d2bcb7a9ef2c5bf1aed00bcfe138193aab
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 0b61961aff04a089ce12f4b96637e3f05023e929
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43785380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54511100"
 ---
 # <a name="how-to-create-a-windows-explorerstyle-interface-on-a-windows-form"></a>방법: Windows Form에 Windows 탐색기 스타일 인터페이스 만들기
 Windows 탐색기는 쉽게 사용할 수 있으므로 응용 프로그램에 대 한 공통 사용자 인터페이스 좋습니다.  
@@ -40,18 +40,18 @@ Windows 탐색기는 쉽게 사용할 수 있으므로 응용 프로그램에 �
     > [!NOTE]
     >  사용 하지 않는 합니다 **모두 선택** 명령을 합니다 **편집** 메뉴. 이렇게 하면 다음 단계에 필요한 속성에 표시 되지 것입니다 합니다 **속성** 창입니다.  
   
-4.  에 **속성** 창에서 설정 합니다 <xref:System.Windows.Forms.SplitContainer.Dock%2A> 속성을 <xref:System.Windows.Forms.DockStyle.Fill>합니다.  
+4.  **속성** 창에서 <xref:System.Windows.Forms.SplitContainer.Dock%2A> 속성을 <xref:System.Windows.Forms.DockStyle.Fill>로 설정합니다.  
   
-5.  F5 키를 눌러 응용 프로그램을 실행합니다.  
+5.  F5 키를 눌러 애플리케이션을 실행합니다.  
   
      Windows 탐색기와 비슷한 두 부분으로 구성 사용자 인터페이스를 표시 합니다.  
   
     > [!NOTE]
     >  분할자를 끌면 패널 자체 조정 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.SplitContainer>  
- [방법: Windows Forms으로 다중 창 사용자 인터페이스 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
- [방법: 분할 창에서 크기 조정 및 위치 지정 동작 정의](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)  
- [방법: 가로로 창 분할](../../../../docs/framework/winforms/controls/how-to-split-a-window-horizontally.md)  
- [SplitContainer 컨트롤](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.SplitContainer>
+- [방법: Windows Forms로 다중 창 사용자 인터페이스 만들기](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)
+- [방법: 크기 조정 및 분할 창에서 위치 지정 동작 정의](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)
+- [방법: 가로로 창 분합니다](../../../../docs/framework/winforms/controls/how-to-split-a-window-horizontally.md)
+- [SplitContainer 컨트롤](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)

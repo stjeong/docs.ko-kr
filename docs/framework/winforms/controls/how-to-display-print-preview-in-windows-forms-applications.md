@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms 응용 프로그램에서 인쇄 미리 보기 표시'
+title: '방법: Windows에서 인쇄 미리 보기 표시 Forms 응용 프로그램'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,30 +10,30 @@ helpviewer_keywords:
 - printing [Windows Forms], print preview
 - examples [Windows Forms], print preview
 ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5
-ms.openlocfilehash: 1c1291ea675d823fab3052b0fa365cb2d4c31088
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d348c89e3334543cf935e5faec29e546d848a984
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33532810"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54526732"
 ---
-# <a name="how-to-display-print-preview-in-windows-forms-applications"></a>방법: Windows Forms 응용 프로그램에서 인쇄 미리 보기 표시
-사용할 수는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤 사용자가 인쇄 하기 전에 자주 문서를 표시할 수 있도록 합니다.  
+# <a name="how-to-display-print-preview-in-windows-forms-applications"></a>방법: Windows에서 인쇄 미리 보기 표시 Forms 응용 프로그램
+사용할 수는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤 사용자가 인쇄 되기 전에 문서를 자주 표시할 수 있도록 합니다.  
   
- 이 작업을 수행 하려면 인스턴스를 지정 해야는 <xref:System.Drawing.Printing.PrintDocument> 클래스입니다;이 문서를 인쇄 합니다. 인쇄 미리 보기를 사용 하는 방법에 대 한 자세한 내용은 <xref:System.Drawing.Printing.PrintDocument> 구성 요소 참조 [하는 방법: Windows Forms를 사용 하 여 인쇄 미리 보기에서 인쇄](../../../../docs/framework/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md)합니다.  
+ 이 작업을 수행 하려면 인스턴스를 지정 해야 합니다 <xref:System.Drawing.Printing.PrintDocument> 클래스 인쇄할 문서입니다. 사용 하 여 인쇄 미리 보기를 사용 하는 방법에 대 한 자세한 내용은 합니다 <xref:System.Drawing.Printing.PrintDocument> 구성 요소 참조 [방법: 인쇄 미리 보기를 사용 하 여 Windows Forms의 인쇄](../../../../docs/framework/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md)합니다.  
   
 > [!NOTE]
->  사용 하는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤 런타임 시 사용자가 프린터가 있어야 로컬 또는 네트워크를 통해 자신의 컴퓨터에 설치 되어 방법을 <xref:System.Windows.Forms.PrintPreviewDialog> 구성 요소는 인쇄 된 문서의 모양을 결정 합니다.  
+>  사용 하는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤 런타임 시 사용자가 프린터가 있어야 로컬 또는 네트워크를 통해 해당 컴퓨터에 설치 되어 방법을 <xref:System.Windows.Forms.PrintPreviewDialog> 인쇄 된 문서 모양을 구성 요소를 결정 합니다.  
   
- <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤이 사용 하 여 <xref:System.Drawing.Printing.PrinterSettings> 클래스입니다. 또한는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤이 사용 하는 <xref:System.Drawing.Printing.PageSettings> 클래스인 것과 마찬가지로 <xref:System.Windows.Forms.PrintPreviewDialog> 구성 요소가 수행 합니다. 에 지정 된 인쇄 문서는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤의 <xref:System.Windows.Forms.PrintPreviewControl.Document%2A> 속성은 모두의 인스턴스를 참조는 <xref:System.Drawing.Printing.PrinterSettings> 및 <xref:System.Drawing.Printing.PageSettings> 클래스 및 이러한는 미리 보기 창에서 문서를 렌더링 하는 데 사용 합니다.  
+ 합니다 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤이 사용 하 여 <xref:System.Drawing.Printing.PrinterSettings> 클래스입니다. 또한 합니다 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤이 사용 하는 <xref:System.Drawing.Printing.PageSettings> 클래스 처럼는 <xref:System.Windows.Forms.PrintPreviewDialog> 구성 않습니다. 지정 된 인쇄 문서를 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤의 <xref:System.Windows.Forms.PrintPreviewControl.Document%2A> 속성은 모두의 인스턴스를 참조 합니다 <xref:System.Drawing.Printing.PrinterSettings> 및 <xref:System.Drawing.Printing.PageSettings> 클래스와 이러한 미리 보기 창에서 문서를 렌더링 하는 데 사용 됩니다.  
   
 ### <a name="to-view-pages-using-the-printpreviewdialog-control"></a>PrintPreviewDialog 컨트롤을 사용 하 여 페이지를 보려면  
   
 -   <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> 메서드를 사용하여 대화 상자를 표시하고, 사용할 <xref:System.Drawing.Printing.PrintDocument> 를 지정합니다.  
   
-     다음 코드 예제에서는 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Click> 이벤트 처리기의 인스턴스를 열고는 <xref:System.Windows.Forms.PrintPreviewDialog> 제어 합니다. 인쇄 문서에 지정 된는 <xref:System.Windows.Forms.PrintDialog.Document%2A> 속성입니다. 아래 예제에서는 인쇄 문서가 지정 됩니다.  
+     다음 코드 예제에서는 <xref:System.Windows.Forms.Button> 컨트롤의 <xref:System.Windows.Forms.Control.Click> 이벤트 처리기의 인스턴스를 열고는 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤입니다. 인쇄 문서에 지정 된 된 <xref:System.Windows.Forms.PrintDialog.Document%2A> 속성입니다. 아래 예제에서는 인쇄 문서가 지정 됩니다.  
   
-     이 예제에서는 폼에는 <xref:System.Windows.Forms.Button> 컨트롤은 <xref:System.Drawing.Printing.PrintDocument> 라는 구성 요소가 `myDocument`, 및 <xref:System.Windows.Forms.PrintPreviewDialog> 제어 합니다.  
+     예제에서는 폼에 필요는 <xref:System.Windows.Forms.Button> 컨트롤을 <xref:System.Drawing.Printing.PrintDocument> 라는 구성 요소 `myDocument`, 및 <xref:System.Windows.Forms.PrintPreviewDialog> 컨트롤입니다.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, _  
@@ -81,8 +81,8 @@ ms.locfileid: "33532810"
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [PrintDocument 구성 요소](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)  
- [PrintPreviewDialog 컨트롤](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)  
- [Windows Forms 인쇄 지원](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+## <a name="see-also"></a>참고자료
+- [PrintDocument 구성 요소](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)
+- [PrintPreviewDialog 컨트롤](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)
+- [Windows Forms 인쇄 지원](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms](../../../../docs/framework/winforms/index.md)

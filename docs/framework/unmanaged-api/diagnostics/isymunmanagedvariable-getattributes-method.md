@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: dc0f72168e076f661bfefc17c851d7d353e5e742
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d418a1088f9ee23a088ab4c8246810d2c9bee4fa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33426754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54574341"
 ---
 # <a name="isymunmanagedvariablegetattributes-method"></a>ISymUnmanagedVariable::GetAttributes 메서드
 이 변수에 대 한 특성 플래그를 가져옵니다.  
@@ -36,13 +36,13 @@ HRESULT GetAttributes(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `ULONG32` 받는 특성입니다. 반환 된 값에 정의 된 값 중 하나가 됩니다는 [CorSymVarFlag](../../../../docs/framework/unmanaged-api/diagnostics/corsymvarflag-enumeration.md) 열거 합니다.  
+ [out] 에 대 한 포인터를 `ULONG32` 특성을 받는입니다. 반환된 된 값에 정의 된 값 중 하나로 설정 됩니다는 [CorSymVarFlag](../../../../docs/framework/unmanaged-api/diagnostics/corsymvarflag-enumeration.md) 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedVariable 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedVariable 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)

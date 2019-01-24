@@ -2,21 +2,21 @@
 title: '&lt;pnrpPeerResolver&gt;'
 ms.date: 03/30/2017
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
-ms.openlocfilehash: 882974ea29804c7218d4c6c21da2b9ddd7551c54
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: cefd46d7810149264f9c431a212da0f3f51f8186
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577648"
 ---
 # <a name="ltpnrppeerresolvergt"></a>&lt;pnrpPeerResolver&gt;
 PNRP(피어 이름 확인 프로토콜)가 확인자로 사용되도록 지정합니다. PNRP가 기본 확인자이므로 이 요소는 선택적입니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<pnrpResolver >  
+\<binding>  
+\<pnrpResolver>  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,12 +48,12 @@ PNRP(피어 이름 확인 프로토콜)가 확인자로 사용되도록 지정�
 <pnrpResolver resolverType="String" />
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>  
- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [피어 확인자](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>
+- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [피어 확인자](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)

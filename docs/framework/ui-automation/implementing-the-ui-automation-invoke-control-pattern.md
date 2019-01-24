@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: f6afb850b16493bab79dd368ba1ff126305f96aa
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 23e8631fb19d3fd8fafe0ba2523e7c2dbc971ee3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592262"
 ---
 # <a name="implementing-the-ui-automation-invoke-control-pattern"></a>UI 자동화 Invoke 컨트롤 패턴 구현
 > [!NOTE]
@@ -68,10 +68,10 @@ ms.locfileid: "48033521"
 |--------------------|---------------|  
 |<xref:System.Windows.Automation.ElementNotEnabledException>|컨트롤이 사용 설정되지 않은 경우.|  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [UI 자동화를 사용하여 컨트롤 호출](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)  
- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI 자동화를 사용하여 컨트롤 호출](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)
+- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)

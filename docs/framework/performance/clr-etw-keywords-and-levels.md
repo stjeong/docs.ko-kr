@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8332eba909c3ebe475e3f364f81a676733e4e3d7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d45a8bdebb296a33862f018308a7ef876e0cd64c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572359"
 ---
 # <a name="clr-etw-keywords-and-levels"></a>CLR ETW 키워드 및 수준
 <a name="top"></a> 범주 및 수준별로 ETW(Windows용 이벤트 추적) 이벤트를 필터링할 수 있습니다. 이벤트 [CLR ETW 키워드](#keywords)를 통해 범주별로 이벤트를 필터링할 수 있습니다. 런타임 및 런다운 공급자를 위해 여러 키워드를 조합하여 사용할 수 있습니다. [이벤트 수준](#levels) 은 플래그로 식별됩니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "33397064"
 |`StartEnumerationKeyword`|0x00000040|런타임에서 모든 메서드를 열거할 수 있도록 합니다. `NGenKeyword`와 함께 사용됩니다.|  
 |`EndEnumerationKeyword`|0x00000080|런타임에서 소멸된 모든 메서드를 열거할 수 있도록 합니다. `JITKeyword` 및 `NGenKeyword`와 함께 사용됩니다.|  
 |`SecurityKeyword`|0x00000400|[보안 이벤트](../../../docs/framework/performance/security-etw-events.md)를 수집할 수 있도록 합니다.|  
-|`AppDomainResourceManagementKeyword`|0x00000800|응용 프로그램 도메인 수준에서 이벤트를 모니터링하는 리소스를 수집할 수 있도록 합니다.|  
+|`AppDomainResourceManagementKeyword`|0x00000800|애플리케이션 도메인 수준에서 이벤트를 모니터링하는 리소스를 수집할 수 있도록 합니다.|  
 |`JITTracingKeyword`|0x00001000|[JIT 추적 이벤트](../../../docs/framework/performance/jit-tracing-etw-events.md)를 수집할 수 있도록 합니다.|  
 |`InteropKeyword`|0x00002000|[interop 이벤트](../../../docs/framework/performance/interop-etw-events.md)를 수집할 수 있도록 합니다.|  
 |`ContentionKeyword`|0x00004000|[경합 이벤트](../../../docs/framework/performance/contention-etw-events.md)를 수집할 수 있도록 합니다.|  
@@ -79,7 +79,7 @@ ms.locfileid: "33397064"
 <a name="runtime_combo"></a>   
 ### <a name="keyword-combinations-for-symbol-resolution-for-the-runtime-provider"></a>런타임 공급자를 위한 기호 확인용 키워드 조합  
   
-|키워드 및 플래그|응용 프로그램 도메인, 어셈블리, 모듈 로드/언로드 이벤트|메서드 로드/언로드 이벤트(동적 이벤트 제외)|동적 메서드 로드/소멸 이벤트|  
+|키워드 및 플래그|애플리케이션 도메인, 어셈블리, 모듈 로드/언로드 이벤트|메서드 로드/언로드 이벤트(동적 이벤트 제외)|동적 메서드 로드/소멸 이벤트|  
 |------------------------|--------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------|  
 |`LoaderKeyword`|이벤트를 로드 및 언로드합니다.|없음|없음|  
 |`JITKeyword`<br /><br /> (+ `StartEnumerationKeyword` 는 아무것도 추가하지 않음)|없음.|이벤트를 로드합니다.|이벤트를 로드 및 언로드합니다.|  
@@ -93,7 +93,7 @@ ms.locfileid: "33397064"
 <a name="rundown_combo"></a>   
 ### <a name="keyword-combinations-for-symbol-resolution-for-the-rundown-provider"></a>런다운 공급자를 위한 기호 확인용 키워드 조합  
   
-|키워드 및 플래그|응용 프로그램 도메인, 어셈블리, 모듈 DCStart/DCEnd 이벤트|메서드 DCStart/DCEnd 이벤트(동적 메서드 이벤트 포함)|  
+|키워드 및 플래그|애플리케이션 도메인, 어셈블리, 모듈 DCStart/DCEnd 이벤트|메서드 DCStart/DCEnd 이벤트(동적 메서드 이벤트 포함)|  
 |------------------------|----------------------------------------------------------------|----------------------------------------------------------------------|  
 |`LoaderRundownKeyword` +<br /><br /> `StartRundownKeyword`|`DCStart` 이벤트|없음|  
 |`LoaderRundownKeyword` +<br /><br /> `EndRundownKeyword`|`DCEnd` 이벤트|없음|  
@@ -122,7 +122,7 @@ ms.locfileid: "33397064"
   
  0x0 - LogAlways  
   
-## <a name="see-also"></a>참고 항목  
- [CLR ETW 공급자](../../../docs/framework/performance/clr-etw-providers.md)  
- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)  
- [공용 언어 런타임의 ETW 이벤트](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+## <a name="see-also"></a>참고자료
+- [CLR ETW 공급자](../../../docs/framework/performance/clr-etw-providers.md)
+- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)
+- [공용 언어 런타임의 ETW 이벤트](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

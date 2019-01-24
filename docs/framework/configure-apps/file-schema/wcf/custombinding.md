@@ -2,18 +2,18 @@
 title: '&lt;customBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
-ms.openlocfilehash: a7743f790c1080b601c7e92236723dbc721a849b
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: c67161ddd0698a74f073b10e79674529b198e9f7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149904"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54500518"
 ---
 # <a name="ltcustombindinggt"></a>&lt;customBinding&gt;
 사용자에게 메시징 스택에 대한 모든 권한을 제공합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -290,16 +290,16 @@ ms.locfileid: "54149904"
  사용자 지정 시스템 제공 바인딩을 수정 하는 바인딩을 사용 하는 방법에 대 한 논의 참조 하세요. [방법: 시스템 제공 바인딩 사용자 지정](../../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)합니다.  
     
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.Binding>  
- <xref:System.ServiceModel.Channels.BindingElement>  
- <xref:System.ServiceModel.Configuration.BindingsSection>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [customBinding 요소](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.Binding>
+- <xref:System.ServiceModel.Channels.BindingElement>
+- <xref:System.ServiceModel.Configuration.BindingsSection>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [customBinding 요소](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

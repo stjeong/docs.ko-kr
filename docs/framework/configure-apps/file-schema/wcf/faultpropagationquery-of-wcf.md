@@ -2,12 +2,12 @@
 title: WCF의 &lt;faultPropagationQuery&gt;
 ms.date: 03/30/2017
 ms.assetid: fabafbc8-3e45-4feb-8321-0725e9f4079c
-ms.openlocfilehash: cf582fce4e899e62daa4f34f193a0232ec19a135
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1da2a95d27756296aab5a205a90fb028508c4b76
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601807"
 ---
 # <a name="ltfaultpropagationquerygt-of-wcf"></a>WCF의 &lt;faultPropagationQuery&gt;
 
@@ -17,11 +17,11 @@ ms.locfileid: "54149035"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<faultPropagationQueries >  
-\<faultPropagationQuery >  
+\<faultPropagationQueries>  
+\<faultPropagationQuery>  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,8 +61,8 @@ ms.locfileid: "54149035"
 |-------------|-----------------|  
 |[\<faultPropagationQueries>](faultpropagationqueries-of-wcf.md)|활동 내에서 발생하는 오류의 처리를 추적하는 데 사용되는 구성 요소 목록을 나타냅니다.  이 이벤트는 FaultHandler가 오류를 처리할 때마다 발생합니다.|
   
-## <a name="see-also"></a>참고자료  
- 
+## <a name="see-also"></a>참고자료
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.FaultPropagationQuery?displayProperty=nameWithType>
 - [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

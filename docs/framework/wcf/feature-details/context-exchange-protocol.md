@@ -2,17 +2,17 @@
 title: 컨텍스트 교환 프로토콜
 ms.date: 03/30/2017
 ms.assetid: 3dfd38e0-ae52-491c-94f4-7a862b9843d4
-ms.openlocfilehash: a682b94b1ab659515e618e79230d94f57f140717
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b1c2b293f8e23f9bc43fba32551233d92666793e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33493213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54494771"
 ---
 # <a name="context-exchange-protocol"></a>컨텍스트 교환 프로토콜
-이 섹션에서는.NET Framework 버전 3.5 Windows Communication Foundation (WCF) 릴리스에서 새로 도입 된 컨텍스트 교환 프로토콜에 설명 합니다. 클라이언트 채널에서는 이 프로토콜을 사용하여 서비스에서 제공되는 컨텍스트를 수락하고, 동일한 클라이언트 채널 인스턴스를 통해 보내는 해당 서비스에 대한 모든 후속 요청에 이 컨텍스트를 적용합니다. 컨텍스트 교환 프로토콜의 구현에서는 HTTP 쿠키 또는 SOAP 헤더 메커니즘 중 하나를 사용하여 서버와 클라이언트 간에 컨텍스트를 전파할 수 있습니다.  
+이 섹션에서는.NET Framework 버전 3.5 Windows Communication Foundation (WCF) 릴리스에서 새로 도입 된 컨텍스트 교환 프로토콜을 설명 합니다. 클라이언트 채널에서는 이 프로토콜을 사용하여 서비스에서 제공되는 컨텍스트를 수락하고, 동일한 클라이언트 채널 인스턴스를 통해 보내는 해당 서비스에 대한 모든 후속 요청에 이 컨텍스트를 적용합니다. 컨텍스트 교환 프로토콜 구현의 서버와 클라이언트 간에 컨텍스트를 전파 하는 데 다음 두 메커니즘 중 하나를 사용할 수 있습니다.: HTTP 쿠키 또는 SOAP 헤더입니다.  
   
- 컨텍스트 교환 프로토콜은 사용자 지정 채널 계층에서 구현됩니다. 채널은 <xref:System.ServiceModel.Channels.ContextMessageProperty> 속성을 사용하여 응용 프로그램 계층 간에 컨텍스트를 전달합니다. 끝점 간 전송을 위해 컨텍스트 값은 채널 계층에서 SOAP 헤더로 serialize되거나 HTTP 요청 및 응답을 나타내는 메시지 속성 간에 변환됩니다. 후자의 경우, 기존 채널 계층 중 하나가 HTTP 요청 및 응답 메시지 속성을 HTTP 쿠키로 변환하거나 HTTP 쿠키를 HTTP 요청 및 응답 메시지 속성으로 변환합니다. 컨텍스트 교환에 사용하는 메커니즘은 <xref:System.ServiceModel.Channels.ContextExchangeMechanism>에서 <xref:System.ServiceModel.Channels.ContextBindingElement> 속성을 사용하여 선택합니다. 유효한 값은 `HttpCookie` 또는 `SoapHeader`입니다.  
+ 컨텍스트 교환 프로토콜은 사용자 지정 채널 계층에서 구현됩니다. 채널은 <xref:System.ServiceModel.Channels.ContextMessageProperty> 속성을 사용하여 응용 프로그램 계층 간에 컨텍스트를 전달합니다. 엔드포인트 간 전송을 위해 컨텍스트 값은 채널 계층에서 SOAP 헤더로 serialize되거나 HTTP 요청 및 응답을 나타내는 메시지 속성 간에 변환됩니다. 후자의 경우, 기존 채널 계층 중 하나가 HTTP 요청 및 응답 메시지 속성을 HTTP 쿠키로 변환하거나 HTTP 쿠키를 HTTP 요청 및 응답 메시지 속성으로 변환합니다. 컨텍스트 교환에 사용하는 메커니즘은 <xref:System.ServiceModel.Channels.ContextExchangeMechanism>에서 <xref:System.ServiceModel.Channels.ContextBindingElement> 속성을 사용하여 선택합니다. 유효한 값은 `HttpCookie` 또는 `SoapHeader`입니다.  
   
  클라이언트에서 채널의 인스턴스는 채널 속성 <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A>의 설정에 따라 두 가지 모드에서 작동할 수 있습니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "33493213"
   
  WS-Addressing 헤더는 서비스에서 요청을 디스패치할 위치를 결정하는 데 사용되기 때문에 보호되어야 하며, 이와 동일한 이유로 컨텍스트 값도 전송 중에 수정되지 않도록 보호되어야 합니다. 따라서 `wsc:Context` 헤더는 바인딩이 메시지 보호 기능을 제공하는 경우 SOAP 또는 전송 수준에서 디지털 서명되거나 서명 후에 암호화되어야 합니다. 컨텍스트를 전파하는 데 사용되는 HTTP 쿠키는 전송 보안을 사용하여 보호해야 합니다.  
   
- 컨텍스트 교환 프로토콜을 지원해야 하는 서비스 끝점에서는 이를 게시된 정책에 명시할 수 있습니다. 클라이언트가 SOAP 수준에서 컨텍스트 교환 프로토콜을 지원하기 위한 요구 사항 또는 클라이언트가 HTTP 쿠키 지원을 사용하기 위한 요구 사항을 나타내기 위해 두 개의 새로운 정책 어설션이 도입되었습니다. 서비스 측의 정책에 대한 이러한 어설션의 생성은 다음과 같이 <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> 속성의 값으로 제어됩니다.  
+ 컨텍스트 교환 프로토콜을 지원해야 하는 서비스 엔드포인트에서는 이를 게시된 정책에 명시할 수 있습니다. 클라이언트가 SOAP 수준에서 컨텍스트 교환 프로토콜을 지원하기 위한 요구 사항 또는 클라이언트가 HTTP 쿠키 지원을 사용하기 위한 요구 사항을 나타내기 위해 두 개의 새로운 정책 어설션이 도입되었습니다. 서비스 측의 정책에 대한 이러한 어설션의 생성은 다음과 같이 <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> 속성의 값으로 제어됩니다.  
   
 -   <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader>의 경우 다음 어설션이 생성됩니다.  
   
@@ -67,5 +67,5 @@ ms.locfileid: "33493213"
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [웹 서비스 프로토콜 상호 운용성 가이드](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)
+## <a name="see-also"></a>참고자료
+- [웹 서비스 프로토콜 상호 운용성 가이드](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)

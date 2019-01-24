@@ -2,12 +2,12 @@
 title: '&lt;client&gt;의 &lt;endpoint&gt;'
 ms.date: 03/30/2017
 ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa
-ms.openlocfilehash: 47b3599ed2d0868fcbc4a04a28936bcfe1c9c3f1
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: a7d95ee819c911d80178e38a37aeaccc5b1f1764
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54598307"
 ---
 # <a name="ltendpointgt-of-ltclientgt"></a>&lt;client&gt;의 &lt;endpoint&gt;
 클라이언트에서 서버의 서비스 엔드포인트와 연결하는 데 사용하는 채널 엔드포인트의 contract, binding 및 address 속성을 지정합니다.  
@@ -57,7 +57,7 @@ ms.locfileid: "54147007"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<클라이언트 >](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|클라이언트가 연결할 수 있는 엔드포인트의 목록을 정의하는 구성 섹션입니다.|  
+|[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|클라이언트가 연결할 수 있는 엔드포인트의 목록을 정의하는 구성 섹션입니다.|  
   
 ## <a name="example"></a>예제  
  이것은 채널 엔드포인트 구성의 예제입니다.  
@@ -71,11 +71,11 @@ ms.locfileid: "54147007"
 </endpoint>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>  
- <xref:System.ServiceModel.Configuration.ClientSection>  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>  
- <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>  
- [WCF 클라이언트 구성](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [클라이언트](../../../../../docs/framework/wcf/feature-details/clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
+- <xref:System.ServiceModel.Configuration.ClientSection>
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>
+- <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
+- [WCF 클라이언트 구성](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [클라이언트](../../../../../docs/framework/wcf/feature-details/clients.md)

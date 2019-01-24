@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 0a1a2c9ec34c43eb1b9559d90a8da0d70193c19e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: b0ac45c9d2c5b7ff9630bbeaed4bfcee5ec46fcd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47209128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609994"
 ---
 # <a name="ltaddgt-element-for-ltswitchesgt"></a>&lt;추가&gt; 요소에 대 한 &lt;스위치&gt;
 추적 스위치를 설정하는 수준을 지정합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<스위치 >  
+\<system.diagnostics>  
+\<switches>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -48,7 +48,7 @@ ms.locfileid: "47209128"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`switches`|추적 스위치 및 추적 스위치가 설정된 수준이 포함되어 있습니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
   
@@ -69,8 +69,8 @@ ms.locfileid: "47209128"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.Switch>  
- <xref:System.Diagnostics.TraceSwitch>  
- <xref:System.Diagnostics.BooleanSwitch>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.Switch>
+- <xref:System.Diagnostics.TraceSwitch>
+- <xref:System.Diagnostics.BooleanSwitch>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

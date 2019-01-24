@@ -1,15 +1,15 @@
 ---
-title: '방법: EdmGen.exe를 사용하여 모델 생성 및 파일 매핑'
+title: '방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 생성'
 ms.date: 03/30/2017
 ms.assetid: 40db462d-2fd2-4cc1-ad86-d280403e63fa
-ms.openlocfilehash: 8eb7e0c19d775e516765b0e88f61789a9136e6e1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 340ef0b20c25ca76df51085592e53849c6bf7a12
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43530075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54610155"
 ---
-# <a name="how-to-use-edmgenexe-to-generate-the-model-and-mapping-files"></a>방법: EdmGen.exe를 사용하여 모델 생성 및 파일 매핑
+# <a name="how-to-use-edmgenexe-to-generate-the-model-and-mapping-files"></a>방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 생성
 이 항목에서는 EDM 생성기(EdmGen.exe) 도구를 사용하여 School 데이터베이스를 기반으로 하는 다음 파일을 생성하는 방법을 보여 줍니다.  
   
 -   개념적 모델(.csdl 파일)  
@@ -53,9 +53,9 @@ ms.locfileid: "43530075"
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:CSharp  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [모델링 및 매핑](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)  
- [방법: Entity Framework 프로젝트 수동 구성](https://msdn.microsoft.com/library/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e)  
- [방법: 쿼리 성능을 개선 하는 뷰를 미리 생성](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579)  
- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
- [방법: EdmGen.exe를 사용하여 모델 유효성 검사 및 파일 매핑](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)
+## <a name="see-also"></a>참고자료
+- [모델링 및 매핑](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)
+- [방법: Entity Framework 프로젝트 수동 구성](https://msdn.microsoft.com/library/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e)
+- [방법: 쿼리 성능을 개선 하는 뷰를 미리 생성](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579)
+- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+- [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 유효성을 검사 하려면](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)

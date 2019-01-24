@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Web services protocols
 - Windows Communication Foundation, Web service protocols
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
-ms.openlocfilehash: 0539f2144c85fe20a440f8b99425936025a186c0
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0aa75fe4812553ecbf00542da37f232aca32c1a0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50192917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54606623"
 ---
 # <a name="web-services-protocols-supported-by-system-provided-interoperability-bindings"></a>시스템 제공 상호 운용성 바인딩에서 지원하는 웹 서비스 프로토콜
 Windows Communication Foundation (WCF)는 일련의 웹 서비스 사양으로 알려진 사양 지 원하는 웹 서비스와 상호 운용 되도록 만들어졌습니다. 상호 운용성에 대 한 유용한 정보에 대 한 서비스 구성을 단순화 하기 위해 WCF에는 세 가지 상호 운용 가능한 시스템 제공 바인딩이 도입 되었습니다: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, 및 <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>합니다. WCF Advancement의 구조화 된 정보 표준 OASIS () 표준에 대 한 조직과 상호 운용성을 위해 하나의 상호 운용 가능한 시스템 제공 바인딩이 포함 됩니다. <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>합니다. WCF 메타 데이터 게시에 대 한 두 개의 상호 운용 가능한 시스템 제공 바인딩이 포함 됩니다. [ \<mexHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) 하 고 [ \<mexHttpsBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)합니다. 이 항목에서는 시스템에서 제공하는 상호 운용 가능한 바인딩이 지원하는 사양을 나열합니다.  
@@ -30,7 +30,7 @@ Windows Communication Foundation (WCF)는 일련의 웹 서비스 사양으로 �
 |메시징|MTOM|[MTOM](https://go.microsoft.com/fwlink/?LinkId=95326)<br /><br /> `basicHttpBinding`, `wsHttpBinding` 및 `ws2007HttpBinding`은 MTOM(Message-Transmission Optimization Mechanism)을 지원합니다. 기본적으로 사용되지 않으며 MTOM을 사용하려면 `messageEncoding` 특성을 `"Mtom"`으로 설정하십시오.<br /><br /> 예제:<br /><br /> `<wsHttpBinding> <binding messageEncoding="Mtom"/> </wsHttpBinding>`|  
 |메타데이터|WSDL 1.1|[WSDL 1.1](https://go.microsoft.com/fwlink/?LinkId=94859)<br /><br /> WCF 웹 서비스 설명 언어 (WSDL)를 사용 하 여 서비스 설명.|  
 |메타데이터|WS-Policy|[WS-Policy](https://go.microsoft.com/fwlink/?LinkId=94864)<br /><br /> WCF는 서비스 요구 사항 및 기능을 설명 하는 Ws-policy 사양을 도메인별 어설션과 함께 사용 합니다.|  
-|메타데이터|WS-Policy 1.5|[Ws-policy 1.5](https://go.microsoft.com/fwlink/?LinkId=95327)<br /><br /> WCF는 서비스 요구 사항 및 기능을 설명 하는 Ws-policy 사양을 도메인별 어설션과 함께 사용 합니다.|  
+|메타데이터|WS-Policy 1.5|[WS-Policy 1.5](https://go.microsoft.com/fwlink/?LinkId=95327)<br /><br /> WCF는 서비스 요구 사항 및 기능을 설명 하는 Ws-policy 사양을 도메인별 어설션과 함께 사용 합니다.|  
 |메타데이터|WS-PolicyAttachment|[WS-PolicyAttachment](https://go.microsoft.com/fwlink/?LinkId=95328)<br /><br /> WCF 웹 서비스 설명 언어 (WSDL)에서 다양 한 범위의 정책 식을 연결할 Ws-policyattachment를 구현 합니다.|  
 |메타데이터|WS-MetadataExchange|[WS-MetadataExchange](https://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> WCF는 XML 스키마, WSDL 및 Ws-policy를 검색 하려면 Ws-metadataexchange를 구현 합니다.|  
   
@@ -48,7 +48,7 @@ Windows Communication Foundation (WCF)는 일련의 웹 서비스 사양으로 �
 |범주|프로토콜|사양 및 사용|  
 |--------------|--------------|-----------------------------|  
 |메시징|SOAP 1.2|[입문서](https://go.microsoft.com/fwlink/?LinkId=48282)<br /><br /> [메시징 프레임 워크](https://go.microsoft.com/fwlink/?LinkId=94664)<br /><br /> [Adjuncts (HTTP 바인딩을 포함)](https://go.microsoft.com/fwlink/?LinkId=95329)|  
-|메시징|Ws-addressing 2005/08|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [웹 서비스 주소 지정 1.0-SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)<br /><br /> `wsHttpBinding`, `ws2007HttpBinding` 및 `wsDualHttpBinding`은 W3C(World Wide Web Consortium) WS-Addressing 권장 사항을 구현하여 비동기 메시징, 메시지 상관 관계 및 전송 중립적 주소 지정 메커니즘을 사용할 수 있습니다.<br /><br /> WS-* 규격에서 WS-Addressing 헤더의 암호화를 허용하지만 WCF는 이를 지원하지 않습니다.|  
+|메시징|WS-Addressing 2005/08|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [웹 서비스 주소 지정 1.0-SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)<br /><br /> `wsHttpBinding`, `ws2007HttpBinding` 및 `wsDualHttpBinding`은 W3C(World Wide Web Consortium) WS-Addressing 권장 사항을 구현하여 비동기 메시징, 메시지 상관 관계 및 전송 중립적 주소 지정 메커니즘을 사용할 수 있습니다.<br /><br /> WS-* 규격에서 WS-Addressing 헤더의 암호화를 허용하지만 WCF는 이를 지원하지 않습니다.|  
 |메시징|WS-Addressing 1.0 - Metadata|[Ws-addressing 1.0 Metadata](https://www.w3.org/2007/05/addressing/metadata) 이 프로토콜에 대 한 지원이 있습니다 (기본값) 1.2 ServiceMetadata 동작에서 정책 버전을 설정 하 여 설정 된 경우 wsdl 설명이 Ws-addressing wsdl과 호환 됩니다. 사용 하 여 1.5 있습니다, wsdl 설명이 ws-addressing 메타 데이터와 호환 됩니다.<br /><br /> WS-* 규격에서 WS-Addressing 헤더의 암호화를 허용하지만 WCF는 이를 지원하지 않습니다.|  
 |보안|WSS SOAP Message Security 1.0|[WSS SOAP Message Security 1.0](https://go.microsoft.com/fwlink/?LinkId=94684)<br /><br /> `securityMode` 특성이 "wsSecurityOverHttp"(기본값)로 설정되어 있고 매개 변수가 `wsSecurity` 자식 요소를 사용하여 구성되어 있을 경우 사용합니다.<br /><br /> `<wsHttpBinding>   <binding name="myBinding">      <security mode="Message" .../>   </binding> </wsHttpBinding>`|  
 |보안|WSS SOAP 메시지 보안 UsernameToken Profile 1.1|[WSS SOAP 메시지 Security UsernameToken Profile 1.0](https://go.microsoft.com/fwlink/?LinkId=95331)<br /><br /> `wsSecurity` 요소의 `authenticationMode` 특성이 "Username"으로 설정된 경우 사용합니다.<br /><br /> `<wsHttpBinding>   <binding name="MyBinding">     <security mode="Message>       <message           clientCredentialType="UserName        negotiateServiceCredential="false"        establishSecurityContext="false"/>     </security> </binding> </wsHttpBinding>`|  
@@ -95,7 +95,7 @@ Windows Communication Foundation (WCF)는 일련의 웹 서비스 사양으로 �
 |--------------|--------------|-----------------------------|  
 |전송|HTTP 1.1|[HTTP 1.1](https://go.microsoft.com/fwlink/?LinkId=84048)|  
 |메시징|SOAP 1.2|[입문서](https://go.microsoft.com/fwlink/?LinkId=48282)<br /><br /> [메시징 프레임 워크](https://go.microsoft.com/fwlink/?LinkId=94664)<br /><br /> [Adjuncts (HTTP 바인딩을 포함)](https://go.microsoft.com/fwlink/?LinkId=95329)|  
-|메시징|Ws-addressing 2005/08|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [웹 서비스 주소 지정 1.0-SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)|  
+|메시징|WS-Addressing 2005/08|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [웹 서비스 주소 지정 1.0-SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)|  
 |메타데이터|WS-MetadataExchange|[WS-MetadataExchange](https://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> WCF는 XML 스키마, WSDL 및 Ws-policy를 검색 하려면 Ws-metadataexchange를 구현 합니다.|  
   
 ### <a name="mexhttpsbinding"></a>mexHttpsBinding  
@@ -105,13 +105,13 @@ Windows Communication Foundation (WCF)는 일련의 웹 서비스 사양으로 �
 |--------------|--------------|-----------------------------|  
 |전송|HTTP 1.1|[HTTP 1.1](https://go.microsoft.com/fwlink/?LinkId=84048)<br /><br /> 전송 보안을 사용합니다.|  
 |메시징|SOAP 1.2|[입문서](https://go.microsoft.com/fwlink/?LinkId=48282)<br /><br /> [메시징 프레임 워크](https://go.microsoft.com/fwlink/?LinkId=94664)<br /><br /> [Adjuncts (HTTP 바인딩을 포함)](https://go.microsoft.com/fwlink/?LinkId=95329)|  
-|메시징|Ws-addressing 2005/08|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [웹 서비스 주소 지정 1.0-SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)|  
+|메시징|WS-Addressing 2005/08|[웹 서비스 주소 지정 1.0-Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [웹 서비스 주소 지정 1.0-SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)|  
 |메타데이터|WS-MetadataExchange|[WS-MetadataExchange](https://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> WCF는 XML 스키마, WSDL 및 Ws-policy를 검색 하려면 Ws-metadataexchange를 구현 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)  
- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)  
- [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)  
- [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)  
- [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md)
+## <a name="see-also"></a>참고자료
+- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)
+- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)
+- [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)
+- [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)
+- [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md)

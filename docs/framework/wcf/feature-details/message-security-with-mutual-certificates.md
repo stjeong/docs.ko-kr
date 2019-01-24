@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-ms.openlocfilehash: 7f8a8cd1d9d8524c4bfbf3a7f783a33eee972474
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 51795007b906a6eb71e5e03b4afef2fc83328b28
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183050"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54593344"
 ---
 # <a name="message-security-with-mutual-certificates"></a>상호 인증서를 사용하는 메시지 보안
 다음 시나리오에는 Windows Communication Foundation (WCF) 서비스 및 메시지 보안 모드를 사용 하 여 보호 하는 클라이언트를 보여 줍니다. 클라이언트 및 서비스는 인증서를 사용하여 인증됩니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "50183050"
  [!code-csharp[C_SecurityScenarios#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#13)]
  [!code-vb[C_SecurityScenarios#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#13)]  
   
-### <a name="configuration"></a>구성  
+### <a name="configuration"></a>구성하기  
  다음 구성은 동일한 서비스를 만드는 데 코드 대신 사용할 수 있습니다.  
   
 ```xml  
@@ -106,7 +106,7 @@ ms.locfileid: "50183050"
  [!code-csharp[C_SecurityScenarios#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#20)]
  [!code-vb[C_SecurityScenarios#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#20)]  
   
-### <a name="configuration"></a>구성  
+### <a name="configuration"></a>구성하기  
  다음과 같이 클라이언트를 구성합니다. 클라이언트 인증서를 사용 하 여 지정 해야 합니다 [ \<clientCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md)합니다. 또한 사용 하 여 서비스 인증서는 지정 된 [ \<defaultCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md)합니다.  
   
 ```xml  
@@ -158,7 +158,7 @@ ms.locfileid: "50183050"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)  
- [방법: 개발 중 전송 보안에 대 한 WCF에서 임시 인증서를 설치 및 만들기](https://go.microsoft.com/fwlink/?LinkId=244264)
+## <a name="see-also"></a>참고자료
+- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [방법: 만들기 및 개발 중 전송 보안에 대 한 WCF에서 임시 인증서 설치](https://go.microsoft.com/fwlink/?LinkId=244264)

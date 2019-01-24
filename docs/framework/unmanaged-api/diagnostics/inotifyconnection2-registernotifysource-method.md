@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 3b4731a9503ab29a7d90ddd28c7ac0a5a761c1e0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 5895dc3cb64b72380dead1e048c012b586c4f48e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54550723"
 ---
 # <a name="inotifyconnection2registernotifysource-method"></a>INotifyConnection2::RegisterNotifySource 메서드
 지정 된 알림 소스를 설치합니다.  
@@ -39,7 +39,7 @@ HRESULT RegisterNotifySource
   
 #### <a name="parameters"></a>매개 변수  
  `in_pNotifySource`  
- [in] 알림 원본으로 사용할 개체를 지정 합니다.  
+ [in] 알림 소스로 사용할 개체를 지정 합니다.  
   
  `out_ppNotifySink`  
  [out] 알림 싱크로 사용할 개체를 받습니다.  
@@ -50,8 +50,8 @@ HRESULT RegisterNotifySource
 ## <a name="requirements"></a>요구 사항  
  **헤더:** ProtocolNotify2.idl  
   
-## <a name="see-also"></a>참고 항목  
- [INotifyConnection2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)  
- [INotifySource2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
- [INotifySink2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
- [UnregisterNotifySource 메서드](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-unregisternotifysource-method.md)
+## <a name="see-also"></a>참고자료
+- [INotifyConnection2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
+- [INotifySource2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
+- [INotifySink2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
+- [UnregisterNotifySource 메서드](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-unregisternotifysource-method.md)

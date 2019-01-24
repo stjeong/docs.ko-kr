@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 6e10b0e38e80bad1f322e32324db862691432b8e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 82415524e60a1c9cf44cdccd9a1b2660f4b517a3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47236239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607737"
 ---
 # <a name="ui-automation-control-patterns-for-clients"></a>클라이언트용 UI 자동화 컨트롤 패턴
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "47236239"
   
 <a name="uiautomation_getting_control_patterns"></a>   
 ## <a name="getting-control-patterns"></a>컨트롤 패턴 가져오기  
- 클라이언트는 <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A?displayProperty=nameWithType> 또는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A?displayProperty=nameWithType>을 호출하여 <xref:System.Windows.Automation.AutomationElement>에서 컨트롤 패턴을 검색합니다.  
+ 클라이언트는 <xref:System.Windows.Automation.AutomationElement> 또는 <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A?displayProperty=nameWithType> 을 호출하여 <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A?displayProperty=nameWithType>에서 컨트롤 패턴을 검색합니다.  
   
  클라이언트는 <xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns%2A> 메서드 또는 개별 `IsPatternAvailable` 속성(예: <xref:System.Windows.Automation.AutomationElement.IsTextPatternAvailableProperty>)을 사용하여 패턴이나 패턴 그룹이 <xref:System.Windows.Automation.AutomationElement>에서 지원되는지 확인할 수 있습니다. 그러나 컨트롤 패턴을 가져오고 `null` 참조를 테스트하면 프로세스 간 호출을 줄일 수 있으므로 지원되는 속성을 확인하고 컨트롤 패턴을 검색하는 것보다 더 효율적입니다.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "47236239"
   
 <a name="uiautomation_properties_on_control_patterns"></a>   
 ## <a name="retrieving-properties-on-control-patterns"></a>컨트롤 패턴에 대한 속성 검색  
- 클라이언트는 <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> 또는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType>를 호출하고 적절한 형식으로 반환되는 개체를 캐스팅하여 컨트롤 패턴에 대한 속성 값을 검색할 수 있습니다. 에 대 한 자세한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성을 참조 하세요 [클라이언트용 UI 자동화 속성](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)합니다.  
+ 클라이언트는 <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> 또는 <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> 를 호출하고 적절한 형식으로 반환되는 개체를 캐스팅하여 컨트롤 패턴에 대한 속성 값을 검색할 수 있습니다. 에 대 한 자세한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성을 참조 하세요 [클라이언트용 UI 자동화 속성](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)합니다.  
   
  `GetPropertyValue` 접근자를 통해 [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] 메서드 외에 속성 값을 검색하여 패턴에 대한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성에 액세스할 수 있습니다.  
   
@@ -46,12 +46,12 @@ ms.locfileid: "47236239"
   
  사용자 지정 컨트롤 형식을 구현하는 컨트롤에는 해당 기능을 나타내는 데 필요한 컨트롤 패턴 집합이 있을 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)  
- [UI 자동화 텍스트 패턴](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)  
- [UI 자동화를 사용하여 컨트롤 호출](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)  
- [UI 자동화를 사용하여 확인란의 전환 상태 가져오기](../../../docs/framework/ui-automation/get-the-toggle-state-of-a-check-box-using-ui-automation.md)  
- [UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)  
- [TextPattern Insert 텍스트 샘플](https://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16)  
- [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)  
- [InvokePattern 및 ExpandCollapsePattern 메뉴 항목 샘플](https://msdn.microsoft.com/library/b7fa141c-e2d1-4da2-a27f-81a7d1172210)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)
+- [UI 자동화 텍스트 패턴](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)
+- [UI 자동화를 사용하여 컨트롤 호출](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)
+- [UI 자동화를 사용하여 확인란의 전환 상태 가져오기](../../../docs/framework/ui-automation/get-the-toggle-state-of-a-check-box-using-ui-automation.md)
+- [UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
+- [TextPattern Insert 텍스트 샘플](https://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16)
+- [TextPattern 검색 및 선택 샘플](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
+- [InvokePattern 및 ExpandCollapsePattern 메뉴 항목 샘플](https://msdn.microsoft.com/library/b7fa141c-e2d1-4da2-a27f-81a7d1172210)

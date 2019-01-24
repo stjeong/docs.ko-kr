@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d124ce5dd38bed7eb439a055ff9e30a75efe5891
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 6f7ffef0af68bee3e7184fe8bde9264f570230be
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573638"
 ---
 # <a name="freewin32resblob-method"></a>FreeWin32ResBlob 메서드
 Win32 리소스 blob와 연결 된 리소스를 해제합니다.  
@@ -36,7 +36,7 @@ HRESULT FreeWin32ResBlob(
   
 #### <a name="parameters"></a>매개 변수  
  `ppResBlob`  
- 릴리스될 리소스 blob입니다. 이 메서드는 NULL로 blob 파일에 대 한 포인터를 할당합니다.  
+ 출시 될 리소스 blob입니다. 이 메서드는 NULL로 blob 포인터를 할당합니다.  
   
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK를 반환 합니다.  
@@ -44,7 +44,7 @@ HRESULT FreeWin32ResBlob(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

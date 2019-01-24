@@ -1,5 +1,5 @@
 ---
-title: '방법: 서비스에 대한 사용자 지정 권한 부여 관리자 만들기'
+title: '방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Windows Communication Foundation, extending
 - OperationRequirement class
 ms.assetid: 6214afde-44c1-4bf5-ba07-5ad6493620ea
-ms.openlocfilehash: 7fe392b2fcd2f8ccb00bfd6ffd7e917649f8280c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 64eb44c948f669ea5364cc38c7416fdd12cdabd6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33490445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573951"
 ---
-# <a name="how-to-create-a-custom-authorization-manager-for-a-service"></a>방법: 서비스에 대한 사용자 지정 권한 부여 관리자 만들기
-Id 모델 인프라 Windows Communication Foundation (WCF)에서 확장 가능한 클레임 기반 권한 부여 모델을 지원 합니다. 클레임은 토큰에서 추출되어 사용자 지정 권한 부여 정책에 의해 선택적으로 처리된 다음,<xref:System.IdentityModel.Policy.AuthorizationContext>에 배치됩니다. 권한 부여 관리자는 <xref:System.IdentityModel.Policy.AuthorizationContext>에서 클레임을 검사하여 권한 부여 결정을 내립니다.  
+# <a name="how-to-create-a-custom-authorization-manager-for-a-service"></a>방법: 서비스에 대 한 사용자 지정 권한 부여 관리자 만들기
+Windows Communication Foundation (WCF)에서 Id 모델 인프라를 확장할 수 있는 클레임 기반 권한 부여 모델을 지원합니다. 클레임은 토큰에서 추출되어 사용자 지정 권한 부여 정책에 의해 선택적으로 처리된 다음,<xref:System.IdentityModel.Policy.AuthorizationContext>에 배치됩니다. 권한 부여 관리자는 <xref:System.IdentityModel.Policy.AuthorizationContext>에서 클레임을 검사하여 권한 부여 결정을 내립니다.  
   
  기본적으로 권한 부여는 <xref:System.ServiceModel.ServiceAuthorizationManager> 클래스에서 결정되지만, 사용자 지정 권한 부여 관리자를 만들어 이러한 결정을 재정의할 수 있습니다. 사용자 지정 권한 부여 관리자를 만들려면 <xref:System.ServiceModel.ServiceAuthorizationManager>에서 파생되는 클래스를 만든 다음 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> 메서드를 구현합니다. 권한 부여는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> 메서드에서 결정되며, 액세스가 허용되면 `true`를 반환하고 액세스가 거부되면 `false`를 반환합니다.  
   
  권한 부여 결정이 메시지 본문 내용에 따라 달라지는 경우 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccess%2A> 메서드를 사용합니다.  
   
- 성능 문제 때문에 가능하다면 권한 부여 결정 시 메시지 본문에 액세스하지 않아도 되도록 응용 프로그램을 다시 디자인해야 합니다.  
+ 성능 문제 때문에 가능하다면 권한 부여 결정 시 메시지 본문에 액세스하지 않아도 되도록 애플리케이션을 다시 디자인해야 합니다.  
   
  서비스에 대한 사용자 지정 권한 부여 관리자는 코드 또는 구성을 통해 등록할 수 있습니다.  
   
@@ -57,17 +57,17 @@ Id 모델 인프라 Windows Communication Foundation (WCF)에서 확장 가능�
   
 1.  서비스에 대한 구성 파일을 엽니다.  
   
-2.  추가 [ \<serviceAuthorization >](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) 에 [ \<동작 >](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)합니다.  
+2.  추가 된 [ \<serviceAuthorization >](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) 에 [ \<동작 >](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)합니다.  
   
-     에 [ \<serviceAuthorization >](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md), 추가 `serviceAuthorizationManagerType` 특성 및 사용자 지정 권한 부여 관리자를 나타내는 형식에 값을 설정 합니다.  
+     에 [ \<serviceAuthorization >](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md), 추가 `serviceAuthorizationManagerType` 특성 및 사용자 지정 권한 부여 관리자를 나타내는 형식에 해당 값을 설정 합니다.  
   
 3.  클라이언트와 서비스 간의 통신을 보안하는 바인딩을 추가합니다.  
   
-     이 통신에 대해 선택된 바인딩에 따라 <xref:System.IdentityModel.Policy.AuthorizationContext>에 추가되는 클레임이 결정되고, 사용자 지정 권한 부여 관리자는 이 클레임을 사용하여 권한 부여 결정을 내립니다. 시스템 제공 바인딩에 대 한 자세한 내용은 참조 하십시오. [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)합니다.  
+     이 통신에 대해 선택된 바인딩에 따라 <xref:System.IdentityModel.Policy.AuthorizationContext>에 추가되는 클레임이 결정되고, 사용자 지정 권한 부여 관리자는 이 클레임을 사용하여 권한 부여 결정을 내립니다. 시스템 제공 바인딩에 대 한 자세한 내용은 참조 하세요. [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)합니다.  
   
-4.  추가 하 여 서비스 끝점에 동작을 연결할는 [ \<서비스 >](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) 요소 값을 설정 하 고는 `behaviorConfiguration` 특성에 대 한 이름 특성의 값으로는 [ \<동작 >](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) 요소입니다.  
+4.  동작 서비스 끝점을 추가 하 여 연결을 [ \<서비스 >](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) 요소 값을 설정 하 고는 `behaviorConfiguration` 특성에 대 한 이름 특성의 값으로는 [ \<동작 >](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) 요소입니다.  
   
-     서비스 끝점을 구성 하는 방법에 대 한 자세한 내용은 참조 [하는 방법: 구성에서 서비스 끝점을 만드는](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)합니다.  
+     서비스 끝점을 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 구성에서 서비스 끝점을 만드는](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)합니다.  
   
      다음 코드 예제에서는 `Samples.MyServiceAuthorizationManager` 사용자 지정 권한 부여 관리자를 등록합니다.  
   
@@ -112,12 +112,12 @@ Id 모델 인프라 Windows Communication Foundation (WCF)에서 확장 가능�
     >  serviceAuthorizationManagerType을 지정할 경우 문자열에 정규화된 형식 이름이 포함되어야 합니다. 콤마 및 형식이 정의된 어셈블리의 이름입니다. 어셈블리 이름을 지정하지 않을 경우 WCF는 System.ServiceModel.dll에서 형식 로드를 시도합니다.  
   
 ## <a name="example"></a>예제  
- 다음 코드 예제에서는 <xref:System.ServiceModel.ServiceAuthorizationManager> 메서드 재정의를 포함하는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> 클래스의 기본 구현을 보여 줍니다. 예제 코드에서는 <xref:System.IdentityModel.Policy.AuthorizationContext>에서 사용자 지정 클레임을 검사하고 해당 사용자 지정 클레임의 리소스가 `true`의 동작 값과 일치하면 <xref:System.ServiceModel.OperationContext>를 반환합니다. 구현은 보다 완전 한 <xref:System.ServiceModel.ServiceAuthorizationManager> 클래스를 참조 하십시오 [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)합니다.  
+ 다음 코드 예제에서는 <xref:System.ServiceModel.ServiceAuthorizationManager> 메서드 재정의를 포함하는 <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> 클래스의 기본 구현을 보여 줍니다. 예제 코드에서는 <xref:System.IdentityModel.Policy.AuthorizationContext>에서 사용자 지정 클레임을 검사하고 해당 사용자 지정 클레임의 리소스가 `true`의 동작 값과 일치하면 <xref:System.ServiceModel.OperationContext>를 반환합니다. 전체 구현을 위한을 <xref:System.ServiceModel.ServiceAuthorizationManager> 클래스를 참조 하십시오 [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)합니다.  
   
  [!code-csharp[c_CustomAuthMgr#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthmgr/cs/c_customauthmgr.cs#2)]
  [!code-vb[c_CustomAuthMgr#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthmgr/vb/c_customauthmgr.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)  
- [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)
+- [권한 부여 정책](../../../../docs/framework/wcf/samples/authorization-policy.md)

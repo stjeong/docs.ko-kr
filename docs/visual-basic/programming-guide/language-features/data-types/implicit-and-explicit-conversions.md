@@ -20,12 +20,12 @@ helpviewer_keywords:
 - data type conversion [Visual Basic], implicit
 - implicit data type conversions [Visual Basic]
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
-ms.openlocfilehash: 09d96b304ba3bcf2a9de2812ce37ae69dba73a41
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 8e0ab9e3818ff4210dc6e349104ea0dcc4c8bfa7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44185352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596009"
 ---
 # <a name="implicit-and-explicit-conversions-visual-basic"></a>암시적 변환과 명시적 변환(Visual Basic)
 *암시적 변환* 소스 코드의 특수 구문이 필요 하지 않습니다. 다음 예제에서는 Visual Basic 암시적으로 변환 된 값 `k` 단 정밀도 부동 소수점 값에 할당 하기 전에 `q`입니다.  
@@ -117,7 +117,7 @@ End If
  자세한 내용 및 예제를 참조 하세요 [배열 변환](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)합니다.  
   
 ### <a name="types-defining-ctype"></a>CType 정의 형식  
- 정의할 수 있습니다 `CType` 클래스 또는 구조체 정의에 있습니다. 이 클래스 또는 구조체의 형식에서 값을 변환할 수 있습니다. 자세한 내용 및 예제를 참조 하세요 [방법: 변환 연산자 정의](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)합니다.  
+ 정의할 수 있습니다 `CType` 클래스 또는 구조체 정의에 있습니다. 이 클래스 또는 구조체의 형식에서 값을 변환할 수 있습니다. 자세한 내용 및 예제를 참조 하세요. [방법: 변환 연산자 정의](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)합니다.  
   
 > [!NOTE]
 >  변환 키워드를 사용 하 여 사용 되는 값은 대상 데이터 형식에 대해 유효 해야 합니다. 그렇지 않으면 오류가 발생 합니다. 예를 들어, 변환 하려는 경우는 `Long` 에 `Integer`의 값을 `Long` 의 유효한 범위 내에 있어야는 `Integer` 데이터 형식.  
@@ -125,15 +125,15 @@ End If
 > [!CAUTION]
 >  지정 `CType` 원본 유형을 대상 형식에서 파생 되지 않습니다 하는 경우 런타임 시 다른 실패 한 클래스 형식에서 변환할 수 있습니다. 이러한 오류를 throw 한 <xref:System.InvalidCastException> 예외입니다.  
   
- 그러나 형식 중 하나를 구조체 또는 클래스를 정의한 경우 및 정의 하는 경우 `CType` 해당 구조체 또는 클래스에는 변환의 요구 사항을 충족 하는 경우 성공할 수 여 `CType`합니다. 참조 [방법: 변환 연산자 정의](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)합니다.  
+ 그러나 형식 중 하나를 구조체 또는 클래스를 정의한 경우 및 정의 하는 경우 `CType` 해당 구조체 또는 클래스에는 변환의 요구 사항을 충족 하는 경우 성공할 수 여 `CType`합니다. [방법: 변환 연산자 정의](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)합니다.  
   
  명시적 변환을 수행 라고도 *캐스팅* 지정 된 데이터 형식 또는 개체 클래스에는 식입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [문자열과 다른 형식 사이의 변환](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
- [방법: Visual Basic에서 다른 형식으로 변환할 개체](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
- [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)  
- [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 형식 변환](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [문자열과 다른 형식 사이의 변환](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)
+- [방법: Visual Basic에서 다른 형식으로 변환할 개체](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)
+- [구조체](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [데이터 형식](../../../../visual-basic/language-reference/data-types/index.md)
+- [형식 변환 함수](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)

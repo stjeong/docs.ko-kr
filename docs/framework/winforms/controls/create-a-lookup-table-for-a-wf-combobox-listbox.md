@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms ComboBox, ListBox 또는 CheckedListBox 컨트롤의 조회 테이블 만들기'
+title: '방법: Windows Forms ComboBox, ListBox 또는 CheckedListBox 컨트롤에 대 한 조회 테이블 만들기'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - combo boxes [Windows Forms], lookup tables
 - ListBox control [Windows Forms], creating lookup tables
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
-ms.openlocfilehash: b719f2112aac1292b668fe199d48de4b0b60ed21
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 264a50cb2f9346ea164cedfbe5ced5e231e246ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43773093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516527"
 ---
-# <a name="how-to-create-a-lookup-table-for-a-windows-forms-combobox-listbox-or-checkedlistbox-control"></a>방법: Windows Forms ComboBox, ListBox 또는 CheckedListBox 컨트롤의 조회 테이블 만들기
+# <a name="how-to-create-a-lookup-table-for-a-windows-forms-combobox-listbox-or-checkedlistbox-control"></a>방법: Windows Forms ComboBox, ListBox 또는 CheckedListBox 컨트롤에 대 한 조회 테이블 만들기
 경우에 따라 Windows Form에서는 친숙한 형식으로 데이터를 표시하지만 프로그램에서는 더 의미 있는 형식으로 데이터를 저장하는 데 유용합니다. 예를 들어 음식 주문 양식의 목록 상자에는 메뉴 항목이 이름별로 표시될 수 있습니다. 그러나 주문을 기록하는 데이터 테이블에는 음식을 나타내는 고유 ID 번호가 포함됩니다. 다음 표에서는 음식에 대한 주문 양식 데이터를 저장 및 표시하는 방법의 예를 보여 줍니다.  
   
 ### <a name="orderdetailstable"></a>OrderDetailsTable  
@@ -70,9 +70,9 @@ ms.locfileid: "43773093"
     listBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID");  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 바인딩 및 Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
- [ListBox 컨트롤 개요](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)  
- [ComboBox 컨트롤 개요](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)  
- [CheckedListBox 컨트롤 개요](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)  
- [옵션 목록 표시에 사용된 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+## <a name="see-also"></a>참고자료
+- [데이터 바인딩 및 Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+- [ListBox 컨트롤 개요](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)
+- [ComboBox 컨트롤 개요](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)
+- [CheckedListBox 컨트롤 개요](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)
+- [옵션 목록 표시에 사용된 Windows Forms 컨트롤](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

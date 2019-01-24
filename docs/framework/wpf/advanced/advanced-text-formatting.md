@@ -9,12 +9,12 @@ helpviewer_keywords:
 - text [WPF]
 - typography [WPF], text formatting
 ms.assetid: f0a7986e-f5b2-485c-a27d-f8e922022212
-ms.openlocfilehash: e8347f1a82c70f1ce8aa7cc05841bc869abbcc33
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 03d0c5096876305f9a181cc28ff2158066e4d56f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43787672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577403"
 ---
 # <a name="advanced-text-formatting"></a>고급 텍스트 서식 지정
 Windows Presentation Foundation (WPF)을 강력한 제공 [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] 응용 프로그램에서 텍스트를 포함 합니다. 레이아웃 및 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]와 같은 <xref:System.Windows.Controls.TextBlock>자주 제공 하 고 일반 텍스트 표현에 대 한 요소를 사용 합니다. 그리기 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]와 같은 <xref:System.Windows.Media.GlyphRunDrawing> 고 <xref:System.Windows.Media.FormattedText>, 그리기에 서식 있는 텍스트를 포함 하는 방법을 제공 합니다. 고급 수준에서 가장 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 서식 지정 엔진 텍스트 저장소 관리, 텍스트 실행 서식 관리 및 포함 된 개체 관리와 같은 텍스트 표현의 모든 측면을 제어 하는 확장 가능한 텍스트를 제공 합니다.  
@@ -94,6 +94,6 @@ Windows Presentation Foundation (WPF)을 강력한 제공 [!INCLUDE[TLA#tla_api#
 ## <a name="specifying-formatting-properties"></a>서식 속성 지정  
  <xref:System.Windows.Media.TextFormatting.TextRun> 개체는 텍스트 저장소에서 제공 하는 속성을 사용 하 여 서식이 지정 됩니다. 이러한 속성은 두 가지 유형인 <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> 고 <xref:System.Windows.Media.TextFormatting.TextRunProperties>입니다. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> 와 같은 단락 포함 속성을 처리할 <xref:System.Windows.TextAlignment> 고 <xref:System.Windows.FlowDirection>입니다. <xref:System.Windows.Media.TextFormatting.TextRunProperties> 전경 브러시와 같은 단락 내에서 실행 하는 각 텍스트에 대 한 다른 될 수 있는 속성은 <xref:System.Windows.Media.Typeface>, 글꼴 및 글꼴 크기입니다. 사용자 지정 단락 및 사용자 지정 텍스트 속성 형식을 실행을 구현 하려면 응용 프로그램에서 파생 된 클래스를 만들어야 합니다 <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> 고 <xref:System.Windows.Media.TextFormatting.TextRunProperties> 각각.  
   
-## <a name="see-also"></a>참고 항목  
- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+## <a name="see-also"></a>참고자료
+- [WPF의 입력 체계](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)

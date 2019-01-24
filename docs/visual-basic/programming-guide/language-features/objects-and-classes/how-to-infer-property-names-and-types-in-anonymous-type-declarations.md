@@ -1,19 +1,19 @@
 ---
-title: '방법: 익명 형식 선언에서 속성 이름 및 형식 유추(Visual Basic)'
+title: '방법: 무명 형식 선언 (Visual Basic)에서 속성 이름 및 형식 유추'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - inferring property names [Visual Basic]
 - anonymous types [Visual Basic], inferring property names and types
 - inferring property types [Visual Basic]
 ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
-ms.openlocfilehash: 80127c05d56162397cfa421122ddd9698750b376
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 67cc9e85d249365a7b4b7636c99766087314622d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33653314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596863"
 ---
-# <a name="how-to-infer-property-names-and-types-in-anonymous-type-declarations-visual-basic"></a>방법: 익명 형식 선언에서 속성 이름 및 형식 유추(Visual Basic)
+# <a name="how-to-infer-property-names-and-types-in-anonymous-type-declarations-visual-basic"></a>방법: 무명 형식 선언 (Visual Basic)에서 속성 이름 및 형식 유추
 익명 형식은 속성의 데이터 형식을 직접 지정하는 메커니즘을 제공하지 않습니다. 모든 속성의 형식이 유추됩니다. 다음 예제에서 `Name` 및 `Price` 의 형식은 이를 초기화하는 데 사용되는 값에서 직접 유추됩니다.  
   
  [!code-vb[VbVbalrAnonymousTypes#1](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_1.vb)]  
@@ -120,8 +120,8 @@ ms.locfileid: "33653314"
   
      [!code-vb[VbVbalrAnonymousTypes#16](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_10.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [개체 이니셜라이저: 명명된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [키](../../../../visual-basic/language-reference/modifiers/key.md)
+## <a name="see-also"></a>참고자료
+- [개체 이니셜라이저: 명명 된 형식과 익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [지역 형식 유추](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [키](../../../../visual-basic/language-reference/modifiers/key.md)

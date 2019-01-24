@@ -10,12 +10,12 @@ helpviewer_keywords:
 - WSSecurityTokenSerializer class
 - SecurityToken class
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
-ms.openlocfilehash: fd168bf2e5233d9119872b267aea466a7af07041
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 20c462f811be86d52ec6f06700326f0e949a76d1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47199270"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54637913"
 ---
 # <a name="how-to-create-a-custom-token"></a>방법: 사용자 지정 토큰 만들기
 이 항목에서는 <xref:System.IdentityModel.Tokens.SecurityToken> 클래스를 사용하여 사용자 지정 보안 토큰을 만들고 사용자 지정 보안 토큰 공급자 및 인증자를 사용하여 통합하는 방법에 대해 설명합니다. 전체 코드 예제에 대 한 참조를 [사용자 지정 토큰](../../../../docs/framework/wcf/samples/custom-token.md) 샘플입니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "47199270"
   
  다음 절차에는 사용자 지정 보안 토큰을 만드는 방법 및 WCF 보안 인프라와 통합 하는 방법을 보여 줍니다. 이 항목에서는 클라이언트의 신용 카드 관련 정보를 서버에 전달하는 데 사용되는 신용 카드 토큰을 만듭니다.  
   
- 사용자 지정 자격 증명과 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 만들기 및 서비스 자격 증명](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
+ 사용자 지정 자격 증명과 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
   
  보안 토큰을 나타내는 클래스에 대한 자세한 내용은 <xref:System.IdentityModel.Tokens> 네임스페이스를 참조하십시오.  
   
@@ -121,7 +121,7 @@ ms.locfileid: "47199270"
   
 #### <a name="to-integrate-the-custom-security-token-with-a-security-token-manager"></a>사용자 지정 보안 토큰을 보안 토큰 관리자와 통합하려면  
   
-1.  보안 토큰 관리자는 적절한 토큰 공급자, 보안 인증자 및 토큰 serializer 인스턴스를 만듭니다. 사용자 지정 토큰 관리자를 만들려면 <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>에서 상속되는 클래스를 만듭니다. 클래스의 기본 메서드에서는 <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>를 사용하여 적절한 공급자와 클라이언트 또는 서비스 자격 증명을 만듭니다. 사용자 지정 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 만들기 및 서비스 자격 증명](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
+1.  보안 토큰 관리자는 적절한 토큰 공급자, 보안 인증자 및 토큰 serializer 인스턴스를 만듭니다. 사용자 지정 토큰 관리자를 만들려면 <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>에서 상속되는 클래스를 만듭니다. 클래스의 기본 메서드에서는 <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>를 사용하여 적절한 공급자와 클라이언트 또는 서비스 자격 증명을 만듭니다. 사용자 지정 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
   
      [!code-csharp[c_CustomToken#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#8)]
      [!code-vb[c_CustomToken#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#8)]  
@@ -131,7 +131,7 @@ ms.locfileid: "47199270"
   
 #### <a name="to-integrate-the-custom-security-token-with-custom-client-and-service-credentials"></a>사용자 지정 보안 토큰을 사용자 지정 클라이언트 및 서비스 자격 증명과 통합하려면  
   
-1.  응용 프로그램에서 사용자 지정 보안 토큰 내용을 제공 및 인증하기 위해 앞에서 만든 사용자 지정 보안 토큰 인프라에 사용되는 사용자 지정 토큰 정보를 지정할 수 있도록 API를 제공하려면 사용자 지정 클라이언트 및 서비스 자격 증명을 추가해야 합니다. 다음 샘플은 이 작업을 수행하는 방법을 보여 줍니다. 사용자 지정 클라이언트 및 서비스 자격 증명에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 만들기 및 서비스 자격 증명](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
+1.  응용 프로그램에서 사용자 지정 보안 토큰 내용을 제공 및 인증하기 위해 앞에서 만든 사용자 지정 보안 토큰 인프라에 사용되는 사용자 지정 토큰 정보를 지정할 수 있도록 API를 제공하려면 사용자 지정 클라이언트 및 서비스 자격 증명을 추가해야 합니다. 다음 샘플은 이 작업을 수행하는 방법을 보여 줍니다. 사용자 지정 클라이언트 및 서비스 자격 증명에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
   
      [!code-csharp[c_CustomToken#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#10)]
      [!code-vb[c_CustomToken#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#10)]  
@@ -150,19 +150,19 @@ ms.locfileid: "47199270"
   
  이 항목에서는 사용자 지정 토큰을 구현하고 사용하는 데 필요한 다양한 코드를 보여 줍니다. 하는 방법의 전체 예제를 보려면 이러한 모든 코드이 조각을 참조 하세요 연동 [사용자 지정 토큰](../../../../docs/framework/wcf/samples/custom-token.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IdentityModel.Tokens.SecurityToken>  
- <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters>  
- <xref:System.ServiceModel.Security.WSSecurityTokenSerializer>  
- <xref:System.IdentityModel.Selectors.SecurityTokenProvider>  
- <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator>  
- <xref:System.IdentityModel.Policy.IAuthorizationPolicy>  
- <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>  
- <xref:System.IdentityModel.Selectors.SecurityTokenManager>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>  
- [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
- [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
- [방법: 사용자 지정 보안 토큰 공급자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+## <a name="see-also"></a>참고자료
+- <xref:System.IdentityModel.Tokens.SecurityToken>
+- <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters>
+- <xref:System.ServiceModel.Security.WSSecurityTokenSerializer>
+- <xref:System.IdentityModel.Selectors.SecurityTokenProvider>
+- <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator>
+- <xref:System.IdentityModel.Policy.IAuthorizationPolicy>
+- <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>
+- <xref:System.IdentityModel.Selectors.SecurityTokenManager>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement>
+- [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
+- [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
+- [방법: 사용자 지정 보안 토큰 공급자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
+- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

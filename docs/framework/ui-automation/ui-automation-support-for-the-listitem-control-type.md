@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 34f533bf-fc14-4e78-8fee-fb7107345fab
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 95e0e44584a25543577628d1ff8a8b3dae87d34e
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: c256e0adf42099271d5e754a84f48c0d5268aae6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49122739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594007"
 ---
 # <a name="ui-automation-support-for-the-listitem-control-type"></a>ListItem 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
->  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 최신 정보는 [Windows 자동화 API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)를 참조하세요.  
+>  이 설명서는 <xref:System.Windows.Automation> 네임스페이스에 정의된 관리되는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 클래스를 사용하려는 .NET Framework 개발자를 위한 것입니다. 에 대 한 최신 정보에 대 한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]를 참조 하세요 [Windows Automation API: UI 자동화](https://go.microsoft.com/fwlink/?LinkID=156746)합니다.  
   
  이 항목에서는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 컨트롤 형식에 대한 <xref:System.Windows.Automation.ControlType.ListItem> 지원 정보를 제공합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]에서, 컨트롤 형식은 <xref:System.Windows.Automation.AutomationElement.ControlTypeProperty> 속성을 사용하기 위해 컨트롤이 충족해야 하는 조건 집합입니다. 이 조건에는 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 구조, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성 값, 컨트롤 패턴에 대한 특정 지침이 포함됩니다.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "49122739"
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성|값|노트|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|이 속성의 값은 목록 항목의 이미지 및 텍스트 내용의 영역에 포함되어야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|종속|목록 컨트롤에 클릭 가능한 지점(클릭하여 목록에서 포커스를 받을 수 있도록 하는 지점)이 있는 경우, 해당 지점은 이 속성을 통해 노출되어야 합니다. 목록 컨트롤이 하위 목록 항목에 의해 완전히 가려져 있는 경우 <xref:System.Windows.Automation.NoClickablePointException> 를 발생시켜 클라이언트가 목록 컨트롤 내에 항목이 포함되도록 요청해야 클릭 가능한 지점을 사용할 수 있음을 나타냅니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|메모를 참조하세요.|목록 항목 컨트롤의 이름 속성 값은 항목의 텍스트 내용에서 가져옵니다.|  
@@ -90,7 +90,7 @@ ms.locfileid: "49122739"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|필수|없음|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|필수|없음|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.ListItem>  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.ListItem>
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

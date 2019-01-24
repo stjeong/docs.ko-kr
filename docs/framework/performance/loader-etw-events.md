@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: cb403cc6-56f8-4609-b467-cdfa09f07909
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d4746e9e7c8c83caf09ccf51749e9e3cbe69ec52
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3878821840adc272829f57fbac090e958619f3fb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579006"
 ---
 # <a name="loader-etw-events"></a>로더 ETW 이벤트
 <a name="top"></a> 이들 이벤트는 응용 프로그램 도메인, 어셈블리 및 모듈 로드 및 언로드와 관련된 정보를 수집합니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33397431"
 -   [모듈 범위 이벤트](#module_range_events)  
   
 <a name="application_domain_events"></a>   
-## <a name="application-domain-events"></a>응용 프로그램 도메인 이벤트  
+## <a name="application-domain-events"></a>애플리케이션 도메인 이벤트  
  다음 표에서는 키워드와 수준을 보여 줍니다.  
   
 |이벤트를 발생시키기 위한 키워드|이벤트(event)|수준|  
@@ -45,19 +45,19 @@ ms.locfileid: "33397431"
   
 |이벤트|이벤트 ID|설명|  
 |-----------|--------------|-----------------|  
-|`AppDomainLoad_V1` (모든 응용 프로그램 도메인에 대해 기록됨)|156|프로세스 수명 중에 응용 프로그램 도메인이 만들어질 때마다 발생합니다.|  
-|`AppDomainUnLoad_V1`|157|프로세스 수명 중에 응용 프로그램 도메인이 삭제될 때마다 발생합니다.|  
-|`AppDomainDCStart_V1`|157|시작 런다운 중에 응용 프로그램 도메인을 열거합니다.|  
-|`AppDomainDCEnd_V1`|158|끝 런다운 중에 응용 프로그램 도메인을 열거합니다.|  
+|`AppDomainLoad_V1` (모든 응용 프로그램 도메인에 대해 기록됨)|156|프로세스 수명 중에 애플리케이션 도메인이 만들어질 때마다 발생합니다.|  
+|`AppDomainUnLoad_V1`|157|프로세스 수명 중에 애플리케이션 도메인이 삭제될 때마다 발생합니다.|  
+|`AppDomainDCStart_V1`|157|시작 런다운 중에 애플리케이션 도메인을 열거합니다.|  
+|`AppDomainDCEnd_V1`|158|끝 런다운 중에 애플리케이션 도메인을 열거합니다.|  
   
  다음 표에서는 이벤트 데이터를 보여 줍니다.  
   
 |필드 이름|데이터 형식|설명|  
 |----------------|---------------|-----------------|  
-|AppDomainID|win:UInt64|응용 프로그램 도메인의 고유 식별자입니다.|  
-|AppDomainFlags|win:UInt32|0x1: 기본 도메인.<br /><br /> 0x2: 실행 파일.<br /><br /> 0x4: 응용 프로그램 도메인, 비트 28-31: 이 도메인의 정책 공유.<br /><br /> 0: 공유 도메인.|  
-|AppDomainName|win:UnicodeString|친숙한 응용 프로그램 도메인 이름입니다. 프로세스 수명 중에 변경될 수 있습니다.|  
-|AppDomainIndex|win:UInt32|이 응용 프로그램 도메인의 인덱스입니다.|  
+|AppDomainID|win:UInt64|애플리케이션 도메인의 고유 식별자입니다.|  
+|AppDomainFlags|win:UInt32|0x1: 기본 도메인입니다.<br /><br /> 0x2: 실행 파일입니다.<br /><br /> 0x4: 응용 프로그램 도메인, 비트 28-31: 이 도메인의 정책 공유.<br /><br /> 0: 공유 도메인입니다.|  
+|AppDomainName|win:UnicodeString|친숙한 애플리케이션 도메인 이름입니다. 프로세스 수명 중에 변경될 수 있습니다.|  
+|AppDomainIndex|win:UInt32|이 애플리케이션 도메인의 인덱스입니다.|  
 |ClrInstanceID|win:UInt16|CLR 또는 CoreCLR 인스턴스에 대한 고유 ID입니다.|  
   
  [맨 위로 이동](#top)  
@@ -88,7 +88,7 @@ ms.locfileid: "33397431"
 |AssemblyID|win:UInt64|어셈블리의 고유 ID입니다.|  
 |AppDomainID|win:UInt64|이 어셈블리의 도메인 ID입니다.|  
 |BindingID|win:UInt64|어셈블리 바인딩을 고유하게 식별하는 ID입니다.|  
-|AssemblyFlags|win:UInt32|0x1: 도메인 중립 어셈블리.<br /><br /> 0x2: 동적 어셈블리.<br /><br /> 0x4: 어셈블리에 네이티브 이미지 있음.<br /><br /> 0x8: 수집 가능한 어셈블리.|  
+|AssemblyFlags|win:UInt32|0x1: 도메인 중립 어셈블리입니다.<br /><br /> 0x2: 동적 어셈블리입니다.<br /><br /> 0x4: 어셈블리를 네이티브 이미지를 갖습니다.<br /><br /> 0x8: 수집 가능한 어셈블리입니다.|  
 |AssemblyName|win:UnicodeString|정규화된 어셈블리 이름입니다.|  
 |ClrInstanceID|win:UInt16|CLR 또는 CoreCLR 인스턴스에 대한 고유 ID입니다.|  
   
@@ -120,7 +120,7 @@ ms.locfileid: "33397431"
 |----------------|---------------|-----------------|  
 |ModuleID|win:UInt64|모듈의 고유 ID입니다.|  
 |AssemblyID|win:UInt64|이 모듈이 있는 어셈블리의 ID입니다.|  
-|ModuleFlags|win:UInt32|0x1: 도메인 중립 모듈.<br /><br /> 0x2: 모듈에 네이티브 이미지 있음.<br /><br /> 0x4: 동적 모듈.<br /><br /> 0x8: 매니페스트 모듈.|  
+|ModuleFlags|win:UInt32|0x1: 도메인 중립 모듈입니다.<br /><br /> 0x2: 모듈에는 네이티브 이미지를 있습니다.<br /><br /> 0x4: 동적 모듈입니다.<br /><br /> 0x8: 매니페스트 모듈입니다.|  
 |Reserved1|win:UInt32|예약된 필드입니다.|  
 |ModuleILPath|win:UnicodeString|모듈에 대한 MSIL(Microsoft intermediate language) 이미지의 경로 또는 동적 어셈블리인 경우 동적 모듈 이름(null로 종료됨)입니다.|  
 |ModuleNativePath|win:UnicodeString|있는 경우 모듈 네이티브 이미지의 경로입니다(null로 종료됨).|  
@@ -156,9 +156,9 @@ ms.locfileid: "33397431"
   
 |이벤트|이벤트 ID|설명|  
 |-----------|--------------|-----------------|  
-|`DomainModuleLoad_V1`|151|응용 프로그램 도메인에 대한 모듈이 로드될 때 발생합니다.|  
-|`DomainModuleDCStart_V1`|151|시작 런다운 중에 응용 프로그램 도메인에 대해 로드된 모듈을 열거하고 모든 응용 프로그램 도메인에 대해 기록됩니다.|  
-|`DomainModuleDCEnd_V1`|152|끝 런다운 중에 응용 프로그램 도메인에 대해 로드된 모듈을 열거하고 모든 응용 프로그램 도메인에 대해 기록됩니다.|  
+|`DomainModuleLoad_V1`|151|애플리케이션 도메인에 대한 모듈이 로드될 때 발생합니다.|  
+|`DomainModuleDCStart_V1`|151|시작 런다운 중에 애플리케이션 도메인에 대해 로드된 모듈을 열거하고 모든 애플리케이션 도메인에 대해 기록됩니다.|  
+|`DomainModuleDCEnd_V1`|152|끝 런다운 중에 애플리케이션 도메인에 대해 로드된 모듈을 열거하고 모든 애플리케이션 도메인에 대해 기록됩니다.|  
   
  다음 표에서는 이벤트 데이터를 보여 줍니다.  
   
@@ -166,8 +166,8 @@ ms.locfileid: "33397431"
 |----------------|---------------|-----------------|  
 |ModuleID|win:UInt64|이 모듈이 속한 어셈블리를 식별합니다.|  
 |AssemblyID|win:UInt64|이 모듈이 있는 어셈블리의 ID입니다.|  
-|AppDomainID|win:UInt64|이 모듈이 사용되는 응용 프로그램 도메인의 ID입니다.|  
-|ModuleFlags|win:UInt32|0x1: 도메인 중립 모듈.<br /><br /> 0x2: 모듈에 네이티브 이미지 있음.<br /><br /> 0x4: 동적 모듈.<br /><br /> 0x8: 매니페스트 모듈.|  
+|AppDomainID|win:UInt64|이 모듈이 사용되는 애플리케이션 도메인의 ID입니다.|  
+|ModuleFlags|win:UInt32|0x1: 도메인 중립 모듈입니다.<br /><br /> 0x2: 모듈에는 네이티브 이미지를 있습니다.<br /><br /> 0x4: 동적 모듈입니다.<br /><br /> 0x8: 매니페스트 모듈입니다.|  
 |Reserved1|win:UInt32|예약된 필드입니다.|  
 |ModuleILPath|win:UnicodeString|모듈에 대한 MSIL 이미지의 경로 또는 동적 어셈블리인 경우 동적 모듈 이름(null로 종료됨)입니다.|  
 |ModuleNativePath|win:UnicodeString|있는 경우 모듈 네이티브 이미지의 경로입니다(null로 종료됨).|  
@@ -212,5 +212,5 @@ ms.locfileid: "33397431"
   
  모듈 범위 이벤트는 ETW 수준이 4보다 크거나 같으면 발생하고 정보 제공 이벤트로 분류됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)
+## <a name="see-also"></a>참고자료
+- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)

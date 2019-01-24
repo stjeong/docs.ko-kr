@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 98daef1f-15d4-483e-985c-d78ea3abe8c8
-ms.openlocfilehash: 352bda826c3b872d06252e168abfb1129f178bf8
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: bbfa101452937bcb39ee41f25f5f862179ce2503
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32762210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506734"
 ---
 # <a name="initialization-expressions"></a>초기화 식
 초기화 식은 새 개체를 초기화합니다. 최신 C# 3.0 및 Visual Basic 9.0 초기화 식을 포함하여 대부분의 초기화 식이 지원됩니다. LINQ to Entities 쿼리를 통해 다음 형식을 초기화하고 반환할 수 있습니다.  
@@ -46,5 +46,5 @@ ms.locfileid: "32762210"
  [!code-csharp[DP L2E Conceptual Examples#TypeInitialization_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#typeinitialization_mq)]
  [!code-vb[DP L2E Conceptual Examples#TypeInitialization_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#typeinitialization_mq)]  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to Entities 쿼리의 식](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to Entities 쿼리의 식](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)

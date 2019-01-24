@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: fb7f23c4-4572-4c38-9898-a287807d070c
-ms.openlocfilehash: 122eb705838da00fedd77a01a5d8c4bd3b5f774e
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a73efb334fddc7e0bbfbaca53f0d5026105dd22c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54597036"
 ---
 # <a name="how-to-dynamically-create-a-database"></a>방법: 동적으로 데이터베이스 만들기
 LINQ to SQL에서 개체 모델은 관계형 데이터베이스에 매핑됩니다. 매핑은 특성 기반 매핑 또는 외부 매핑 파일을 사용하여 설정되며 이러한 매핑을 통해 관계형 데이터베이스의 구조를 설명할 수 있습니다. 두 경우 모두 관계형 데이터베이스에 대한 정보가 충분하므로 <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> 메서드를 사용하여 데이터베이스의 새 인스턴스를 만들 수 있습니다.  
@@ -48,9 +48,9 @@ LINQ to SQL에서 개체 모델은 관계형 데이터베이스에 매핑됩니�
  [!code-csharp[DLinqSubmittingChanges#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#7)]
  [!code-vb[DLinqSubmittingChanges#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#7)]  
   
-## <a name="see-also"></a>참고 항목  
- [특성 기반 매핑](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)  
- [외부 매핑](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
- [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [데이터 변경 및 변경 내용 전송](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)
+## <a name="see-also"></a>참고자료
+- [특성 기반 매핑](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)
+- [외부 매핑](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [SQL-CLR 형식 매핑](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [데이터 변경 및 변경 내용 전송](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)

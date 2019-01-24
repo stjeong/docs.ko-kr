@@ -7,12 +7,12 @@ helpviewer_keywords:
 - timers [Windows Forms], Windows-based
 - Timer component [Windows Forms], limitations of Interval property
 ms.assetid: 7e5fb513-77e7-4046-a8e8-aab94e61ca0f
-ms.openlocfilehash: 9710568c3c21878aa6aad626e3152168a2f0c2fe
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 86cfcce65998d19aea8592ae33c5baf58e1ff0fc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516956"
 ---
 # <a name="limitations-of-the-windows-forms-timer-component39s-interval-property"></a>Windows Forms Timer 구성 요소의 제한 사항 Interval 속성
 Windows Forms <xref:System.Windows.Forms.Timer> 구성 요소에는 <xref:System.Windows.Forms.Timer.Interval%2A> 타이머 이벤트 및 다음 간에 전달 하는 시간을 밀리초 단위로 지정 하는 속성입니다. 구성 요소를 사용 하지 않도록 설정 하지 않으면 타이머를 계속 수신 하는 <xref:System.Windows.Forms.Timer.Tick> 거의 같은 시간 간격으로 이벤트입니다.  
@@ -28,7 +28,7 @@ Windows Forms <xref:System.Windows.Forms.Timer> 구성 요소에는 <xref:System
   
 -   전체 자릿수는 <xref:System.Windows.Forms.Timer.Interval%2A> 속성이 밀리초에서입니다. 일부 컴퓨터에는 시간 (밀리초) 보다 더 높은 해상도 고해상도 카운터를 제공 합니다. 이러한 카운터 컴퓨터의 프로세서 하드웨어에 따라 달라 집니다.
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.Timer>  
- [Timer 구성 요소](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)  
- [Timer 구성 요소 개요](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.Timer>
+- [Timer 구성 요소](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)
+- [Timer 구성 요소 개요](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)

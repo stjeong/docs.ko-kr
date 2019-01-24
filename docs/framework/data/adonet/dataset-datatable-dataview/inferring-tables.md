@@ -2,12 +2,12 @@
 title: 테이블 유추
 ms.date: 03/30/2017
 ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
-ms.openlocfilehash: 38709f91e01c7f85d9e8482bdd49bc0892121f09
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: f777b225f9fbf4e8ce38778842d30a0a3054e22a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573498"
 ---
 # <a name="inferring-tables"></a>테이블 유추
 XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO.NET에서는 우선 테이블을 나타내는 XML 요소를 결정합니다. 다음 XML 구조에 대 한 테이블의 결과 **데이터 집합** 스키마:  
@@ -30,7 +30,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  위 유추 과정에서 "Element1"이라는 테이블이 생성됩니다.  
   
- **데이터 집합:** DocumentElement  
+ **DataSet:** DocumentElement  
   
  **테이블:** Element1  
   
@@ -52,7 +52,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  위 유추 과정에서 "Element1"이라는 테이블이 생성됩니다.  
   
- **데이터 집합:** DocumentElement  
+ **DataSet:** DocumentElement  
   
  **테이블:** Element1  
   
@@ -71,7 +71,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  위 유추 과정에서 "DocumentElement"라는 테이블이 생성됩니다.  
   
- **데이터 집합:** NewDataSet  
+ **DataSet:** NewDataSet  
   
  **테이블:** DocumentElement  
   
@@ -89,7 +89,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  유추 과정에서 생성 된 **데이터 집합** "Element1." 라는 테이블을 포함 하는 "DocumentElement" 라는  
   
- **데이터 집합:** DocumentElement  
+ **DataSet:** DocumentElement  
   
  **테이블:** Element1  
   
@@ -109,7 +109,7 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
   
  위 유추 과정에서 "Element1"이라는 테이블이 생성됩니다.  
   
- **데이터 집합:** DocumentElement  
+ **DataSet:** DocumentElement  
   
  **테이블:** Element1  
   
@@ -118,10 +118,10 @@ XML 문서로부터 <xref:System.Data.DataSet>의 스키마를 유추할 때 ADO
 |Text1|  
 |Text2|  
   
-## <a name="see-also"></a>참고 항목  
- [XML에서 데이터 집합 관계형 구조 유추](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)  
- [XML에서 데이터 집합 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)  
- [XML에서 데이터 집합 스키마 정보 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)  
- [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [XML에서 데이터 세트 관계형 구조 유추](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)
+- [XML에서 데이터 세트 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)
+- [XML에서 데이터 세트 스키마 정보 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)
+- [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
+- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

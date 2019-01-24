@@ -2,12 +2,12 @@
 title: SQL Server에서 가장으로 권한 사용자 지정
 ms.date: 03/30/2017
 ms.assetid: dc733d09-1d6d-4af0-9c4b-8d24504860f1
-ms.openlocfilehash: bfee153a1293ec89285dbeabd1ed64a89764a717
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 182eadecbd5330f06fc1cd45d2c768b570f12bf5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596971"
 ---
 # <a name="customizing-permissions-with-impersonation-in-sql-server"></a>SQL Server에서 가장으로 권한 사용자 지정
 많은 수의 응용 프로그램에서 저장 프로시저를 사용하여 데이터에 액세스하며, 이 경우 소유권 체인을 사용하여 액세스를 기본 테이블로 제한합니다. 저장 프로시저에 EXECUTE 권한을 부여하고 기본 테이블에 대한 권한을 취소하거나 거부할 수 있습니다. SQL Server에서는 저장 프로시저 및 테이블의 소유자가 동일한 경우 호출자의 권한을 확인하지 않습니다. 그러나 개체의 소유자가 다른 경우 또는 동적 SQL의 경우에는 소유권 체인이 작동하지 않습니다.  
@@ -65,12 +65,12 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
   
 -   SELF. SELF로 실행할 경우 저장 프로시저 작성자의 보안 컨텍스트에서 실행됩니다. 지정된 사용자로 실행하는 것과 같으며, 여기서 지정된 사용자는 프로시저를 만들거나 변경하는 사용자입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [SQL Server에서 저장 프로시저를 사용하여 권한 관리](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)  
- [SQL Server에서 동적 보안 SQL 작성](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
- [SQL Server에서 저장 프로시저에 서명](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)  
- [저장 프로시저로 데이터 수정](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [SQL Server 보안 개요](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [SQL Server의 응용 프로그램 보안 시나리오](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [SQL Server에서 저장 프로시저를 사용하여 권한 관리](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
+- [SQL Server에서 동적 보안 SQL 작성](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)
+- [SQL Server에서 저장 프로시저에 서명](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)
+- [저장 프로시저로 데이터 수정](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

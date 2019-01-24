@@ -2,12 +2,12 @@
 title: '방법: 검색 프록시 구현'
 ms.date: 03/30/2017
 ms.assetid: 78d70e0a-f6c3-4cfb-a7ca-f66ebddadde0
-ms.openlocfilehash: 2d76a2df0541dfd64058d61ca687a2749d745e8a
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 12adc7215e929bb56aafe104546eb6e58af52ddb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48839120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54608916"
 ---
 # <a name="how-to-implement-a-discovery-proxy"></a>방법: 검색 프록시 구현
 이 항목에서는 검색 프록시를 구현하는 방법을 설명합니다. Windows Communication Foundation (WCF)에서 검색 기능에 대 한 자세한 내용은 참조 하세요. [WCF 검색 개요](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)합니다. 검색 프록시는 <xref:System.ServiceModel.Discovery.DiscoveryProxy> 추상 클래스를 확장하는 클래스를 만들어 구현할 수 있습니다. 이 샘플에서는 많은 다른 지원 클래스가 정의되고 사용됩니다. `OnResolveAsyncResult`, `OnFindAsyncResult` 및 `AsyncResult` 이러한 클래스는 <xref:System.IAsyncResult> 인터페이스를 구현합니다. 에 대 한 자세한 내용은 <xref:System.IAsyncResult> 참조 [System.IAsyncResult 인터페이스](xref:System.IAsyncResult)합니다.
@@ -22,7 +22,7 @@ ms.locfileid: "48839120"
 
 ### <a name="to-create-a-new-console-application-project"></a>새 콘솔 응용 프로그램 프로젝트를 만들려면
 
-1.  Visual Studio 2012를 시작 합니다.
+1.  Start Visual Studio 2012.
 
 2.  콘솔 응용 프로그램 프로젝트를 새로 만듭니다. 프로젝트 이름을 `DiscoveryProxy`로 지정하고 솔루션 이름을 `DiscoveryProxyExample`로 지정합니다.
 
@@ -548,7 +548,7 @@ ms.locfileid: "48839120"
               }
     ```
 
- 검색 프록시의 구현을 완료했습니다. 계속 진행 [방법: 검색 프록시에 등록할 검색 가능한 서비스 구현](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)합니다.
+ 검색 프록시의 구현을 완료했습니다. 에 계속 [방법: 검색 프록시에 등록할 검색 가능한 서비스 구현](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)합니다.
 
 ## <a name="example"></a>예제
  다음은 이 항목에서 사용되는 전체 코드 목록입니다.
@@ -977,9 +977,9 @@ namespace Microsoft.Samples.Discovery
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [WCF 검색 개요](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [방법: 검색 프록시에 등록할 검색 가능한 서비스 구현](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)
-- [방법: 검색 프록시를 사용하여 서비스를 찾는 클라이언트 응용 프로그램 구현](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)
+- [방법: 검색 프록시에 등록할 검색 가능한 서비스를 구현 합니다.](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)
+- [방법: 검색 프록시를 사용 하 여 서비스를 검색 하는 클라이언트 응용 프로그램 구현](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)
 - [방법: 검색 프록시 테스트](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Thumb control [WPF]
 - Canvas control [WPF]
 ms.assetid: 7dc9f435-726c-4d4d-be41-eb24cfe17bef
-ms.openlocfilehash: be267e832180b49686079f426dfa5c30ffdd81b0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d0873656e71df928ac3bd5a767b5e15d2f2c7836
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54591460"
 ---
 # <a name="how-to-resize-a-canvas-by-using-a-thumb"></a>방법: Thumb을 사용하여 캔버스 크기 조정
 사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.Primitives.Thumb> 컨트롤의 크기를 조정 하는 <xref:System.Windows.Controls.Canvas> 컨트롤입니다.  
@@ -46,8 +46,8 @@ ms.locfileid: "43518065"
   
  전체 샘플을 참조 하세요 [Thumb 끌기 기능 샘플](https://go.microsoft.com/fwlink/?LinkID=160042)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.Primitives.Thumb>  
- <xref:System.Windows.Controls.Primitives.Thumb.DragStarted>  
- <xref:System.Windows.Controls.Primitives.Thumb.DragDelta>  
- <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted>
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.Primitives.Thumb>
+- <xref:System.Windows.Controls.Primitives.Thumb.DragStarted>
+- <xref:System.Windows.Controls.Primitives.Thumb.DragDelta>
+- <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted>

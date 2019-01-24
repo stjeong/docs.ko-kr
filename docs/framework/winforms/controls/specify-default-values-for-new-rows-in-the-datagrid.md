@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows Forms DataGridView 컨트롤에서 새 행에 기본값 지정'
+title: '방법: Windows Forms DataGridView 컨트롤에서 새 행에 기본값을 지정 합니다.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - rows [Windows Forms], specifying default values
 - DataGridView control [Windows Forms], default values for new rows
 ms.assetid: 8d127963-d9f8-4e4e-9f7f-beb66688f1f2
-ms.openlocfilehash: c28d969f9d4976c7432e7293afb13e7f340f7e97
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: dab9ba7ca16cf0c886601e3c8fea579e70b2f30d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33535235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596776"
 ---
-# <a name="how-to-specify-default-values-for-new-rows-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 새 행에 기본값 지정
-응용 프로그램 작성 기본 새로 추가 된 행에 대 한 값 경우 데이터 입력을 보다 편리 하 게 만들 수 있습니다. 와 <xref:System.Windows.Forms.DataGridView> 클래스를 채울 수 있습니다 기본 값과는 <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> 이벤트입니다. 이 이벤트는 사용자가 새 레코드에 대 한 행을 입력할 때 발생 합니다. 코드에서이 이벤트를 처리 하는 경우에 선택한 값이 포함 된 원하는 셀을 채울 수 있습니다.  
+# <a name="how-to-specify-default-values-for-new-rows-in-the-windows-forms-datagridview-control"></a>방법: Windows Forms DataGridView 컨트롤에서 새 행에 기본값을 지정 합니다.
+응용 프로그램 새로 추가 된 행에 대 한 값을 기본 차면 데이터 입력을 보다 편리 하 게 만들 수 있습니다. 사용 하 여 합니다 <xref:System.Windows.Forms.DataGridView> 클래스를 채울 수 있습니다 기본 값을 <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> 이벤트입니다. 이 이벤트는 사용자가 새 레코드에 대 한 행을 입력할 때 발생 합니다. 코드에서이 이벤트를 처리 하는 경우에 원하는 값이 선택한 셀을 채울 수 있습니다.  
   
- 다음 코드 예제를 사용 하 여 새 행에 대 한 기본값을 지정 하는 방법을 보여 줍니다는 <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> 이벤트입니다.  
+ 다음 코드 예제를 사용 하 여 새 행에 대 한 기본값을 지정 하는 방법에 설명 합니다 <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> 이벤트입니다.  
   
 ## <a name="example"></a>예제  
  [!code-csharp[System.Windows.Forms.DataGridViewMisc#120](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#120)]
@@ -31,12 +31,12 @@ ms.locfileid: "33535235"
   
 -   `dataGridView1`이라는 <xref:System.Windows.Forms.DataGridView> 컨트롤  
   
--   A `NewCustomerId` 고유 생성을 위한 함수 `CustomerID` 값입니다.  
+-   A `NewCustomerId` 고유 생성에 대 한 함수 `CustomerID` 값입니다.  
   
 -   <xref:System?displayProperty=nameWithType> 및 <xref:System.Windows.Forms?displayProperty=nameWithType> 어셈블리에 대한 참조  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>  
- [Windows Forms DataGridView 컨트롤의 데이터 입력](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)  
- [Windows Forms DataGridView 컨트롤에서 새 레코드에 행 사용](../../../../docs/framework/winforms/controls/using-the-row-for-new-records-in-the-windows-forms-datagridview-control.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>
+- [Windows Forms DataGridView 컨트롤의 데이터 입력](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)
+- [Windows Forms DataGridView 컨트롤에서 새 레코드에 행 사용](../../../../docs/framework/winforms/controls/using-the-row-for-new-records-in-the-windows-forms-datagridview-control.md)

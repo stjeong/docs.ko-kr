@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9d8e104b5d32c07c4730154ff3fc69b452a024b7
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: a7435d68635e2a1066b143c28b5662364326ac8a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607240"
 ---
 # <a name="measuring-startup-improvement-with-net-native"></a>.NET 네이티브로 시작 속도 개선 측정
 [!INCLUDE[net_native](../../../includes/net-native-md.md)]를 사용하는 경우 앱 시작 시간이 크게 단축됩니다. 이러한 속도 개선은 휴대용 저전력 장치와 복잡한 앱에서 특히 두드러지게 나타납니다. 이 항목에서는 이러한 시작 속도 개선을 측정하는 데 필요한 기본적인 계측을 시작하는 방법을 설명합니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "49347905"
   
 -   앱이 새 스토리 동기화를 완료할 때  
   
- 앱은 파생 클래스에 대해 적절한 메서드를 호출하는 것만으로 간편하게 계측할 수 있습니다. 이전 예제에서는 `AppEventSource`를 사용하면 다음과 같이 앱을 계측할 수 있습니다.  
+ 앱을 계측 하는 것은 간단 합니다. 파생된 클래스에서 적절 한 메서드를 호출 하기만 됩니다. 이전 예제에서는 `AppEventSource`를 사용하면 다음과 같이 앱을 계측할 수 있습니다.  
   
  [!code-csharp[ProjectN_ETW#2](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_etw/cs/etw2.cs#2)]  
   
@@ -97,5 +97,5 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인을 사용하여 원래 앱과 직접 빌드한 버전 둘 다에 대해 이 절차를 반복하면 성능 차이를 비교할 수 있습니다.   일반적으로는 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 앱의 시작 속도가 [!INCLUDE[net_native](../../../includes/net-native-md.md)]가 아닌 앱에 비해 빠릅니다. 관련 정보를 보다 자세하게 파악하려는 경우 PerfView를 통해 시간이 가장 많이 걸리는 코드 부분도 확인할 수 있습니다. 자세한 내용은 [PerfView 자습서](https://channel9.msdn.com/Series/PerfView-Tutorial)를 보거나 [Vance Morrison의 블로그 게시물](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx)을 읽으세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.Tracing.EventSource>
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.Tracing.EventSource>

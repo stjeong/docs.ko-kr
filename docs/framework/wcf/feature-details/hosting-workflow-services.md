@@ -2,12 +2,12 @@
 title: 워크플로 서비스 호스팅
 ms.date: 03/30/2017
 ms.assetid: 2d55217e-8697-4113-94ce-10b60863342e
-ms.openlocfilehash: d51157863984314583c5d225bc9d8d0b6cf74874
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c933fd2bd46588ccd5c6115fbc2efca72bfadca4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50186098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594514"
 ---
 # <a name="hosting-workflow-services"></a>워크플로 서비스 호스팅
 워크플로 서비스가 들어오는 메시지에 응답하기 위해서는 해당 워크플로 서비스를 호스팅해야 합니다. 워크플로 서비스는 WCF 메시징 인프라를 사용하기 때문에 WCF 서비스와 비슷한 방식으로 호스팅됩니다. WCF 서비스와 마찬가지로 워크플로 서비스는 모든 관리 되는 응용 프로그램에서 인터넷 정보 서비스 (IIS), 또는 Windows 프로세스 활성화 서비스 (WAS)에서 호스팅할 수 있습니다. 또한 Windows Server Appfabric에서 워크플로 서비스를 호스트할 수 있습니다. Windows Server Appfabric에 대 한 자세한 내용은 참조 하세요. [Windows Server App Fabric 설명서](https://go.microsoft.com/fwlink/?LinkId=193037)하십시오 [AppFabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=196494), 및 [AppFabric 호스팅 개념](https://go.microsoft.com/fwlink/?LinkId=196495)합니다. WCF 호스트는 다양 한 방법에 대 한 자세한 내용은 참조 서비스용 [호스팅 서비스](../../../../docs/framework/wcf/hosting-services.md)합니다.
@@ -53,7 +53,7 @@ ms.locfileid: "50186098"
 ## <a name="deployment"></a>배포
  웹 배포 도구는 배포 작업을 보다 쉽게 수행할 수 있도록 하기 위해 만들어졌습니다. 이 도구를 사용하면 IIS 6.0과 IIS 7.0 사이에서 응용 프로그램을 마이그레이션하고, 서버 팜을 동기화하고, 웹 응용 프로그램을 패키징, 보관 및 배포할 수 있습니다. 자세한 내용은 [MS 배포 도구](https://go.microsoft.com/fwlink/?LinkId=178690)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [워크플로 서비스 호스트 내부 기능](../../../../docs/framework/wcf/feature-details/workflow-service-host-internals.md)
 - [WorkflowServiceHost 구성](../../../../docs/framework/wcf/feature-details/configuring-workflowservicehost.md)

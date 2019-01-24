@@ -11,12 +11,12 @@ helpviewer_keywords:
 - shared [elements VB]
 - elements [Visual Basic], shared
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
-ms.openlocfilehash: b76d999bfe3f7ae5205cb9486e040c1d6191b78c
-ms.sourcegitcommit: dc02d7d95f1e3efcc7166eaf431b0ec0dc9d8dca
+ms.openlocfilehash: 001baa8d3cbd294772bef634825c67ea13b23458
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37143533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54597283"
 ---
 # <a name="shared-visual-basic"></a>Shared(Visual Basic)
 선언 된 프로그래밍 요소를 하나 이상의 클래스 또는 구조체의 특정 인스턴스에 없습니다 클래스 또는 구조체와 연결 되도록 지정 합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "37143533"
   
 ## <a name="behavior"></a>동작  
   
--   **저장소입니다.** 해당 클래스 또는 구조체의 만든 인스턴스의 수에 관계 없이 한 번만 공유 변수 또는 이벤트 메모리에 저장 됩니다. 마찬가지로, 공유 프로시저 또는 속성을 로컬 변수 집합을 하나만 보유합니다.  
+-   **Storage.** 해당 클래스 또는 구조체의 만든 인스턴스의 수에 관계 없이 한 번만 공유 변수 또는 이벤트 메모리에 저장 됩니다. 마찬가지로, 공유 프로시저 또는 속성을 로컬 변수 집합을 하나만 보유합니다.  
   
 -   **인스턴스 변수를 통해 액세스 합니다.** 해당 클래스 또는 구조체의 특정 인스턴스를 포함 하는 변수 이름으로 정규화 하 여 공유 요소에 액세스 하는 것이 가능 합니다. 이 문제는 일반적으로 예상 대로 작동, 있지만 컴파일러 경고 메시지를 생성 하 고 변수 대신 클래스 또는 구조체 이름을 통해 액세스 합니다.  
   
@@ -92,10 +92,10 @@ ms.locfileid: "37143533"
   
  [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## <a name="see-also"></a>참고 항목  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [정적](../../../visual-basic/language-reference/modifiers/static.md)  
- [Visual Basic의 수명](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [절차](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
- [구조체](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+## <a name="see-also"></a>참고자료
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [정적](../../../visual-basic/language-reference/modifiers/static.md)
+- [Visual Basic의 수명](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [절차](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [구조체](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

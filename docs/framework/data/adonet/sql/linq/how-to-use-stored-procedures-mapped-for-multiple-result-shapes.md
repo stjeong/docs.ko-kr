@@ -1,21 +1,21 @@
 ---
-title: '방법: 여러 결과 도형에 매핑된 저장 프로시저 사용'
+title: '방법: 여러 결과 도형에 매핑된 저장된 프로시저 사용'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c2b84dfe-7fec-489a-92de-45215cec4518
-ms.openlocfilehash: 03a003bd5b09ae19b01dcc9880137661ba6fccae
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6ea318e89cf91dcbf16747117b8000dfa3f9571d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573671"
 ---
-# <a name="how-to-use-stored-procedures-mapped-for-multiple-result-shapes"></a>방법: 여러 결과 도형에 매핑된 저장 프로시저 사용
+# <a name="how-to-use-stored-procedures-mapped-for-multiple-result-shapes"></a>방법: 여러 결과 도형에 매핑된 저장된 프로시저 사용
 저장 프로시저에서 여러 결과 도형을 반환할 수 있는 경우 반환 형식은 단일 프로젝션 도형에 대해 강력하게 형식화될 수 없습니다. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 모든 가능한 프로젝션 형식을 생성할 수 있더라도 해당 형식들이 반환되는 순서는 알 수는 없습니다.  
   
- 이 시나리오와 달리 순차적으로 여러 결과 도형을 생성하는 저장 프로시저에 대한 자세한 내용은 참조 [하는 방법: 프로시저 순차적 결과 도형에 매핑된 저장 하 사용](../../../../../../docs/framework/data/adonet/sql/linq/how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md)합니다.  
+ 이 시나리오와 달리 순차적으로 여러 결과 도형을 생성하는 저장 프로시저에 대한 자세한 내용은 [방법: 순차적 결과 도형에 매핑된 저장된 프로시저를 사용 하 여](../../../../../../docs/framework/data/adonet/sql/linq/how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md)입니다.  
   
  <xref:System.Data.Linq.Mapping.ResultTypeAttribute> 특성을 여러 결과 형식을 반환하는 저장 프로시저에 적용하여 프로시저에서 반환할 수 있는 형식 집합을 지정합니다.  
   
@@ -43,5 +43,5 @@ else if(@shape = 2)
  [!code-csharp[DLinqSprox#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/Program.cs#5)]
  [!code-vb[DLinqSprox#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/Module1.vb#5)]  
   
-## <a name="see-also"></a>참고 항목  
- [저장 프로시저](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+## <a name="see-also"></a>참고자료
+- [저장 프로시저](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

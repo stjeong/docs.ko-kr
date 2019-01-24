@@ -14,21 +14,21 @@ helpviewer_keywords:
 - wrappers [WPF], implementing
 - dependency properties [WPF], custom
 ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
-ms.openlocfilehash: f15490417d54121c750e2ea918820c5cb717002e
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 1401885db6faeec1d493e0279d8a5472e3128245
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43861518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594072"
 ---
 # <a name="custom-dependency-properties"></a>사용자 지정 종속성 속성
 
-이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 응용 프로그램 개발자와 구성 요소 작성자가 사용자 지정 종속성 속성을 만들려고 하는 이유와 구현 단계 및 속성의 성능, 유용성 또는 유연성을 향상시킬 수 있는 일부 구현 옵션에 대해 설명합니다.
+이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 애플리케이션 개발자와 구성 요소 작성자가 사용자 지정 종속성 속성을 만들려고 하는 이유와 구현 단계 및 속성의 성능, 유용성 또는 유연성을 향상시킬 수 있는 일부 구현 옵션에 대해 설명합니다.
 
 <a name="prerequisites"></a>
 ## <a name="prerequisites"></a>전제 조건
 
-이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 클래스에서 기존 종속성 속성의 소비자 관점에서 종속성 속성을 이해하고 [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md) 항목을 읽었다고 가정합니다. 이 항목의 예제를 따르려면 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]를 이해하고 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 작성하는 방법도 알아야 합니다.
+이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 클래스에서 기존 종속성 속성의 소비자 관점에서 종속성 속성을 이해하고 [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md) 항목을 읽었다고 가정합니다. 이 항목의 예제를 따르려면 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]를 이해하고 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션을 작성하는 방법도 알아야 합니다.
 
 <a name="whatis"></a>
 ## <a name="what-is-a-dependency-property"></a>종속성 속성이란?
@@ -145,7 +145,7 @@ ms.locfileid: "43861518"
 
 -   기본적으로 데이터 바인딩 <xref:System.Windows.Data.Binding.Mode%2A> 종속성 속성 기본값에 대 한 <xref:System.Windows.Data.BindingMode.OneWay>합니다. 가 되도록 바인딩을 항상 변경할 수 있습니다 <xref:System.Windows.Data.BindingMode.TwoWay> 바인딩 인스턴스마다; 세부 정보에 대 한 참조 [바인딩의 방향을 지정](../../../../docs/framework/wpf/data/how-to-specify-the-direction-of-the-binding.md)합니다. 종속성 속성 작성자를 사용 하 여 속성을 확인 하도록 선택할 수 있습니다 하지만 <xref:System.Windows.Data.BindingMode.TwoWay> 기본적으로 바인딩 모드입니다. 기존 종속성 속성의 예로 <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A?displayProperty=nameWithType>;는이 속성에 대 한 시나리오는 <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A> 설정 논리와의 합치기 <xref:System.Windows.Controls.MenuItem> 기본 테마 스타일을 사용 하 여 상호 작용 합니다. <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A> 속성 논리를 사용 하 여 데이터 바인딩을 고유 하 게 다른 상태 속성 및 메서드 호출에 따라에서 속성의 상태를 유지 합니다. 바인딩하는 또 다른 예제에서는 속성 <xref:System.Windows.Data.BindingMode.TwoWay> 기본적으로는 <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType>합니다.
 
--   설정 하 여 사용자 지정 종속성 속성에서 속성 상속을 사용할 수도 있습니다는 <xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits> 플래그입니다. 속성 상속은 부모 요소와 자식 요소가 공통된 속성을 갖는 시나리오에 유용하며 자식 요소가 해당 특정 속성 값을 부모가 설정한 값과 동일한 값으로 설정하는 것이 적합합니다. 예제에서는 상속 가능한 속성은 <xref:System.Windows.FrameworkElement.DataContext%2A>, 데이터 프레젠테이션에 중요 한 마스터-세부 시나리오를 사용 하는 바인딩 작업에 사용 됩니다. 만들어 <xref:System.Windows.FrameworkElement.DataContext%2A> , 상속 가능한 모든 자식 요소는 데이터 컨텍스트를 상속도 합니다. 속성 값 상속으로 인해 페이지 또는 응용 프로그램 루트에서 데이터 컨텍스트를 지정할 수 있으며 가능한 모든 하위 요소의 바인딩에 대해 다시 지정할 필요가 없습니다. <xref:System.Windows.FrameworkElement.DataContext%2A> 상속 기본값을 재정의 합니다. 하지만 항상 설정할 수 있습니다 로컬로 모든 특정 자식 요소에는 설명 하기 위해 좋은 예 이기도 자세한 내용은 참조 하세요 [계층적 데이터에 마스터-세부 패턴 사용](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md)합니다. 속성 값 상속을 사용하면 성능이 저하될 수 있으므로 꼭 필요할 때만 사용해야 합니다. 자세한 내용은 [속성 값 상속](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)을 참조하세요.
+-   설정 하 여 사용자 지정 종속성 속성에서 속성 상속을 사용할 수도 있습니다는 <xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits> 플래그입니다. 속성 상속은 부모 요소와 자식 요소가 공통된 속성을 갖는 시나리오에 유용하며 자식 요소가 해당 특정 속성 값을 부모가 설정한 값과 동일한 값으로 설정하는 것이 적합합니다. 예제에서는 상속 가능한 속성은 <xref:System.Windows.FrameworkElement.DataContext%2A>, 데이터 프레젠테이션에 중요 한 마스터-세부 시나리오를 사용 하는 바인딩 작업에 사용 됩니다. 만들어 <xref:System.Windows.FrameworkElement.DataContext%2A> , 상속 가능한 모든 자식 요소는 데이터 컨텍스트를 상속도 합니다. 속성 값 상속으로 인해 페이지 또는 애플리케이션 루트에서 데이터 컨텍스트를 지정할 수 있으며 가능한 모든 하위 요소의 바인딩에 대해 다시 지정할 필요가 없습니다. <xref:System.Windows.FrameworkElement.DataContext%2A> 상속 기본값을 재정의 합니다. 하지만 항상 설정할 수 있습니다 로컬로 모든 특정 자식 요소에는 설명 하기 위해 좋은 예 이기도 자세한 내용은 참조 하세요 [계층적 데이터에 마스터-세부 패턴 사용](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md)합니다. 속성 값 상속을 사용하면 성능이 저하될 수 있으므로 꼭 필요할 때만 사용해야 합니다. 자세한 내용은 [속성 값 상속](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)을 참조하세요.
 
 -   설정 된 <xref:System.Windows.FrameworkPropertyMetadataOptions.Journal> 종속성 속성을 검색 또는 탐색 저널링 서비스에서 사용 하는 경우를 나타내는 플래그입니다. 예로 <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> 속성; 선택에서 선택한 모든 항목은 저널링 기록을 탐색할 때 컨트롤을 유지 해야 합니다.
 
@@ -169,7 +169,7 @@ ms.locfileid: "43861518"
 
 클래스 생성자가 가상 ​​메서드를 호출해서는 안 되는 관리 코드 프로그래밍(종종 FxCop와 같은 코드 분석 도구로 시행)에 일반적인 원칙이 있습니다. 이는 생성자가 파생 클래스 생성자의 기본 초기화로 호출될 수 있고 생성자를 통한 가상 메서드 입력이 생성 중인 개체 인스턴스의 불완전 초기화 상태에서 발생할 수 있기 때문입니다. 이미 파생 된 클래스에서 파생 하는 경우 <xref:System.Windows.DependencyObject>, 속성 시스템 자체를 호출 하는 가상 메서드를 내부적으로 노출 알고 있어야 합니다. 이러한 가상 메서드는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 속성 시스템 서비스의 일부입니다. 메서드를 재정의하면 파생 클래스가 값 결정에 참여할 수 있습니다. 런타임 초기화 시 발생할 수 있는 문제를 방지하려면 매우 구체적인 생성자 패턴을 따라 클래스의 생성자 내에서 종속성 속성 값을 설정해야 합니다. 자세한 내용은 [DependencyObjects의 안전한 생성자 패턴](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
 - [종속성 속성 메타데이터](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)

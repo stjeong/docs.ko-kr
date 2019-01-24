@@ -1,5 +1,5 @@
 ---
-title: '방법: X.509 인증서에 대 한 암호화 공급자를 변경 개인 키'
+title: '방법: X.509 인증서에 대 한 암호화 공급자를 변경&#39;s 개인 키'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - cryptographic provider [WCF], changing
 - cryptographic provider [WCF]
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
-ms.openlocfilehash: bb345b3106895a75c00a0d80b8665a0e9239598f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 40c98d17a52643f451ec01bc8b97c60f2b011b36
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54498975"
 ---
-# <a name="how-to-change-the-cryptographic-provider-for-an-x509-certificate39s-private-key"></a>방법: X.509 인증서에 대 한 암호화 공급자를 변경 개인 키
+# <a name="how-to-change-the-cryptographic-provider-for-an-x509-certificate39s-private-key"></a>방법: X.509 인증서에 대 한 암호화 공급자를 변경&#39;s 개인 키
 이 항목에서는 X.509 인증서의 개인 키를 제공 하는 데 암호화 공급자를 변경 하는 방법 및 Windows Communication Foundation (WCF) 보안 프레임 워크에 공급자를 통합 하는 방법을 보여 줍니다. 인증서를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)합니다.  
   
  WCF 보안 프레임 워크에 설명 된 대로 새 보안 토큰 형식을 도입 하는 방법을 제공 [방법: 사용자 지정 토큰 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)합니다. 사용자 지정 토큰을 사용하여 시스템에서 제공되는 기존 형식을 대체할 수도 있습니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "43510481"
      [!code-csharp[c_CustomX509Token#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#3)]
      [!code-vb[c_CustomX509Token#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#3)]  
   
-3.  게시자 쪽에서 사용자 지정 보안 키를 사용해야 하는 경우에는 다음 예와 같이 사용자 지정 클라이언트 보안 토큰 관리자 및 사용자 지정 클라이언트 자격 증명 클래스를 만듭니다. 사용자 지정 클라이언트 자격 증명 및 클라이언트 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 만들기 및 서비스 자격 증명](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
+3.  게시자 쪽에서 사용자 지정 보안 키를 사용해야 하는 경우에는 다음 예와 같이 사용자 지정 클라이언트 보안 토큰 관리자 및 사용자 지정 클라이언트 자격 증명 클래스를 만듭니다. 사용자 지정 클라이언트 자격 증명 및 클라이언트 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
   
      [!code-csharp[c_CustomX509Token#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#4)]
      [!code-vb[c_CustomX509Token#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#4)]  
@@ -68,7 +68,7 @@ ms.locfileid: "43510481"
      [!code-csharp[c_CustomX509Token#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#6)]
      [!code-vb[c_CustomX509Token#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#6)]  
   
-4.  받는 사람 쪽에서 사용자 지정 보안 키를 사용해야 하는 경우에는 다음 예와 같이 사용자 지정 서비스 보안 토큰 관리자 및 사용자 지정 서비스 자격 증명 클래스를 만듭니다. 사용자 지정 서비스 자격 증명 및 서비스 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 만들기 및 서비스 자격 증명](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
+4.  받는 사람 쪽에서 사용자 지정 보안 키를 사용해야 하는 경우에는 다음 예와 같이 사용자 지정 서비스 보안 토큰 관리자 및 사용자 지정 서비스 자격 증명 클래스를 만듭니다. 사용자 지정 서비스 자격 증명 및 서비스 보안 토큰 관리자에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)합니다.  
   
      [!code-csharp[c_CustomX509Token#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#5)]
      [!code-vb[c_CustomX509Token#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#5)]  
@@ -76,15 +76,15 @@ ms.locfileid: "43510481"
      [!code-csharp[c_CustomX509Token#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#7)]
      [!code-vb[c_CustomX509Token#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#7)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>  
- <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>  
- <xref:System.IdentityModel.Tokens.SecurityKey>  
- <xref:System.Security.Cryptography.AsymmetricAlgorithm>  
- <xref:System.Security.Cryptography.HashAlgorithm>  
- <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>  
- [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
- [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
- [방법: 사용자 지정 보안 토큰 공급자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
- [방법: 사용자 지정 토큰 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)  
- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+## <a name="see-also"></a>참고자료
+- <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>
+- <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>
+- <xref:System.IdentityModel.Tokens.SecurityKey>
+- <xref:System.Security.Cryptography.AsymmetricAlgorithm>
+- <xref:System.Security.Cryptography.HashAlgorithm>
+- <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>
+- [연습: 사용자 지정 클라이언트 및 서비스 자격 증명 만들기](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
+- [방법: 사용자 지정 보안 토큰 인증자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
+- [방법: 사용자 지정 보안 토큰 공급자 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
+- [방법: 사용자 지정 토큰 만들기](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)
+- [보안 아키텍처](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

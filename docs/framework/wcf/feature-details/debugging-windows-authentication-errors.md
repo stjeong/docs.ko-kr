@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, authentication
 - WCF, Windows authentication
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.openlocfilehash: 92efda893d0d96b5d0f6de90364faec0b85c79aa
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a68a291b1974e86c9a4f16f9d90a879649076533
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54595138"
 ---
 # <a name="debugging-windows-authentication-errors"></a>Windows 인증 오류 디버깅
 Windows 인증을 보안 메커니즘으로 사용하면 SSPI(보안 지원 공급자 인터페이스)에서 보안 프로세스를 처리합니다. SSPI 계층에 보안 오류가 발생 하면 Windows Communication Foundation (WCF)으로 표시 됩니다. 이 항목에서는 오류 진단에 도움이 되는 프레임워크 및 일련의 질문을 제공합니다.  
@@ -45,13 +45,13 @@ Windows 인증을 보안 메커니즘으로 사용하면 SSPI(보안 지원 공�
   
  특히 네 가지 계정 형식에는 다음이 포함됩니다.  
   
--   로컬 사용자: 시스템 전용 사용자 프로필. 예를 들면 `MachineName\Administrator` 또는 `MachineName\ProfileName` 등입니다.  
+-   로컬 사용자: 시스템 전용 사용자 프로필입니다. 예를 들면 `MachineName\Administrator` 또는 `MachineName\ProfileName` 등입니다.  
   
--   로컬 시스템: 도메인에 연결되지 않은 컴퓨터의 기본 제공 계정인 SYSTEM.  
+-   로컬 시스템: 도메인에 가입 되지 않은 컴퓨터에서 기본 제공 계정인 SYSTEM.  
   
--   도메인 사용자: Windows 도메인의 사용자 계정. 예: `DomainName\ProfileName`  
+-   도메인 사용자: Windows 도메인 사용자 계정입니다. 예: `DomainName\ProfileName`  
   
--   도메인 컴퓨터: Windows 도메인에 연결된 컴퓨터에서 실행 중인 컴퓨터 ID가 있는 프로세스. 예: `MachineName\Network Service`  
+-   도메인 컴퓨터: Windows 도메인에 가입 된 컴퓨터에서 실행 중인 컴퓨터 id 사용 하 여 프로세스입니다. 예: `MachineName\Network Service`  
   
 > [!NOTE]
 >  서비스 자격 증명은 <xref:System.ServiceModel.ICommunicationObject.Open%2A> 클래스의 <xref:System.ServiceModel.ServiceHost> 메서드가 호출될 때 캡처됩니다. 클라이언트 자격 증명은 클라이언트가 메시지를 보낼 때마다 읽어 옵니다.  
@@ -139,15 +139,15 @@ Windows 인증을 보안 메커니즘으로 사용하면 SSPI(보안 지원 공�
  [!code-vb[C_DebuggingWindowsAuth#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_debuggingwindowsauth/vb/source.vb#3)]  
   
 #### <a name="sspi-is-not-available"></a>SSPI를 사용할 수 없음  
- 다음 운영 체제를 서버로 사용할 때 Windows 인증을 지원 하지 않습니다: [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Media Center Edition 및 [!INCLUDE[wv](../../../../includes/wv-md.md)]Home edition.  
+ 다음 운영 체제를 서버로 사용할 때 Windows 인증을 지원 하지 않습니다. [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Media Center Edition 및 [!INCLUDE[wv](../../../../includes/wv-md.md)]Home edition.  
   
 #### <a name="developing-and-deploying-with-different-identities"></a>다른 ID로 개발 및 배포  
  응용 프로그램을 한 컴퓨터에서 개발하여 다른 컴퓨터에 배포하고 서로 다른 계정 형식을 사용하여 각 컴퓨터에서 인증을 수행하면 동작이 동일하지 않을 수 있습니다. 예를 들어 `SSPI Negotiated` 인증 모드를 사용하여 Windows XP Pro 컴퓨터에서 응용 프로그램을 개발할 경우 로컬 사용자 계정을 사용하여 인증하면 NTLM 프로토콜이 사용됩니다. 응용 프로그램 개발을 마친 후 도메인 계정으로 실행되는 Windows Server 2003 컴퓨터에 해당 서비스를 배포하면 클라이언트에서는 Kerberos 및 도메인 컨트롤러를 사용할 것이므로 해당 서비스를 인증할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- <xref:System.ServiceModel.Security.WindowsServiceCredential>  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- <xref:System.ServiceModel.ClientBase%601>  
- [위임 및 가장](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
- [지원되지 않는 시나리오](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- <xref:System.ServiceModel.Security.WindowsServiceCredential>
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- <xref:System.ServiceModel.ClientBase%601>
+- [위임 및 가장](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+- [지원되지 않는 시나리오](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

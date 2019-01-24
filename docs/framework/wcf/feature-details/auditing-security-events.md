@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - auditing security events [WCF]
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
-ms.openlocfilehash: fd6852e5381a5e57bc911203b110d189d23a9e9d
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: a2349fa82b790182fa5d160bd29091c7524e2cea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54622600"
 ---
 # <a name="auditing-security-events"></a>보안 이벤트 감사
 Windows Communication Foundation (WCF)를 사용 하 여 만든 응용 프로그램 감사 기능을 사용 하 여 보안 이벤트 (성공, 실패 또는 둘 다)를 기록할 수 있습니다. 이벤트는 Windows의 시스템 이벤트 로그에 기록되며 이벤트 뷰어를 사용하여 검사할 수 있습니다.  
@@ -87,7 +87,7 @@ Windows Communication Foundation (WCF)를 사용 하 여 만든 응용 프로그
   
 |시스템|응용 프로그램 로그|보안 로그|  
 |------------|---------------------|------------------|  
-|[!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] 이상|지원함|지원 안 함|  
+|[!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] 이상|지원됨|지원 안 함|  
 |[!INCLUDE[ws2003sp1](../../../../includes/ws2003sp1-md.md)] 및 [!INCLUDE[wv](../../../../includes/wv-md.md)]|지원됨|스레드 컨텍스트에 `SeAuditPrivilege`가 있어야 합니다.|  
   
 #### <a name="other-factors"></a>기타 요소  
@@ -98,12 +98,12 @@ Windows Communication Foundation (WCF)를 사용 하 여 만든 응용 프로그
 |정책 관리 감사|해당 사항 없음.|구성과 함께 보안 로그는 LSA(로컬 보안 기관) 정책에 의해서도 제어됩니다. "개체 액세스 감사" 범주 또한 사용하도록 설정해야 합니다.|  
 |기본 사용자 경험|모든 인증된 사용자는 응용 프로그램 로그에 기록할 수 있으므로 응용 프로그램 프로세스를 위한 추가 권한 단계가 필요하지 않습니다.|응용 프로그램 프로세스(컨텍스트)에 `SeAuditPrivilege`가 있어야 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
- <xref:System.ServiceModel.AuditLogLocation>  
- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [기본 WCF 프로그래밍](../../../../docs/framework/wcf/basic-wcf-programming.md)  
- [방법: 보안 이벤트 감사](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
- [\<serviceSecurityAudit >](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)  
- [\<동작 >](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- <xref:System.ServiceModel.AuditLogLocation>
+- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [기본 WCF 프로그래밍](../../../../docs/framework/wcf/basic-wcf-programming.md)
+- [방법: 보안 이벤트 감사](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
+- [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)
+- [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

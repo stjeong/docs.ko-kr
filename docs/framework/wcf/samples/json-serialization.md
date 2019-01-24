@@ -2,12 +2,12 @@
 title: JSON serialization
 ms.date: 03/30/2017
 ms.assetid: 3c2c4747-7510-4bdf-b4fe-64f98428ef4a
-ms.openlocfilehash: 02e81fe8d75ae7b752641d1f9a650fcfe5873141
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7e46ef640215aee48bdebe892f161d403d1a3e73
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523313"
 ---
 # <a name="json-serialization"></a>JSON serialization
 이 샘플에서는 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>를 사용하여 JavaScript Object Notation(JSON) 형식으로 데이터를 serialize 및 deserialize하는 방법을 보여 줍니다. 이 serialization 엔진에서는 JSON 데이터를 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 형식의 인스턴스로 변환하고 다시 JSON 데이터로 변환합니다. <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>는 <xref:System.Runtime.Serialization.DataContractSerializer>와 동일한 형식을 지원합니다. JSON 데이터 형식은 AJAX(Asynchronous JavaScript and XML) 스타일 웹 응용 프로그램을 작성하는 경우에 특히 유용합니다. AJAX 지원 Windows Communication Foundation (WCF)에 ScriptManager 컨트롤을 통해 ASP.NET AJAX와 함께 사용 하기 위해 최적화 됩니다. ASP.NET AJAX와 함께 Windows Communication Foundation (WCF)를 사용 하는 방법의 예 참조는 [AJAX 샘플](https://msdn.microsoft.com/library/f3fa45b3-44d5-4926-8cc4-a13c30a3bf3e)합니다.  
@@ -68,4 +68,4 @@ Person p2 = (Person)ser.ReadObject(stream1);
   
 2.  결과 콘솔 응용 프로그램을 실행합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

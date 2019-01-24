@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 3909b9cd012ef47f5a191dbc1e7978a5852e62fe
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: ef916b0950e179f6782ce8d4d6fa380fd3804aa0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50184168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577169"
 ---
 # <a name="ltcryptonamemappinggt-element"></a>&lt;cryptoNameMapping&gt; 요소
 이름에 대한 클래스의 매핑이 포함되어 있습니다.  
   
  \<configuration>  
-\<mscorlib >  
-\<cryptographySettings >  
-\<cryptoNameMapping >  
+\<mscorlib>  
+\<cryptographySettings>  
+\<cryptoNameMapping>  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ ms.locfileid: "50184168"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`cryptographySettings`|암호화 설정이 포함되어 있습니다.|  
 |`cryptoNameMapping`|이름에 대한 클래스의 매핑이 포함되어 있습니다.|  
 |`mscorlib`|포함 된 \<cryptographySettings > 요소입니다.|  
@@ -76,8 +76,8 @@ ms.locfileid: "50184168"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+## <a name="see-also"></a>참고자료
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

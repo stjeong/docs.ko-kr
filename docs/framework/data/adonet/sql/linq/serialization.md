@@ -5,19 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
-ms.openlocfilehash: cc299e26316b1a3a6fd9b475dcdb8e3911bcf2e9
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 12d7dd8d47262f8eefe8f71f144c5648f089be45
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356330"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54593578"
 ---
 # <a name="serialization"></a>Serialization
 이 항목에서는 설명 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] serialization 기능입니다. 디자인 타임에 코드 생성 도중 serialization을 추가하는 방법과 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 클래스의 런타임 serialization 동작에 대한 정보가 제공됩니다.  
   
  다음 방법 중 하나로 디자인 타임에 serialization 코드를 추가할 수 있습니다.  
   
--   에 [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)], 변경 된 **Serialization 모드** 속성을 **Unidirectional**합니다.  
+-   에 [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]를 변경 합니다 **Serialization 모드** 속성을 **Unidirectional**합니다.  
   
 -   SQLMetal 명령줄에서 추가 된 **/serialization** 옵션입니다. 자세한 내용은 [SqlMetal.exe(코드 생성 도구)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)를 참조하세요.  
   
@@ -32,9 +32,9 @@ ms.locfileid: "33356330"
   
 ### <a name="definitions"></a>정의  
   
--   *DataContract serializer*: 기본.NET Framework 3.0 또는 이후 버전의 Windows Communication Framework (WCF) 구성 요소에서 사용 하는 serializer입니다.  
+-   *DataContract serializer*: .NET Framework 3.0 또는 이후 버전의 Windows Communication Framework (WCF) 구성 요소에서 사용 되는 serializer를 기본입니다.  
   
--   *단방향 serialization*: (순환을 방지 하기 위해) 단방향 연결 속성만 포함 하는 클래스의 serialize 된 버전입니다. 규칙에 따라 기본 및 외래 키 관계의 부모 쪽에 대한 속성이 serialization용으로 표시됩니다. 양방향 연결의 다른 쪽은 serialize되지 않습니다.  
+-   *단방향 serialization*: Serialize 된 버전 (주기 않으려면) 단방향 연결 속성만 포함 하는 클래스입니다. 규칙에 따라 기본 및 외래 키 관계의 부모 쪽에 대한 속성이 serialization용으로 표시됩니다. 양방향 연결의 다른 쪽은 serialize되지 않습니다.  
   
      단방향 serialization은 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서 지원되는 유일한 serialization 형식입니다.  
   
@@ -67,12 +67,12 @@ ms.locfileid: "33356330"
 ### <a name="self-recursive-relationships"></a>자체 재귀적 관계  
  자체 재귀적 관계는 동일한 패턴을 따릅니다. 외래 키에 해당하는 연결 속성에는 `DataMember` 특성이 없지만 부모 속성에는 이 특성이 있습니다.  
   
- 두 개의 자체 재귀적 관계인 Employee.Manager/Reports 및 Employee.Mentor/Mentees가 있는 다음 클래스를 살펴보세요.  
+ 다음 클래스에 두 개의 자체 재귀적 관계를 고려 합니다. / Reports 및 Employee.Mentor/Mentees 합니다.  
   
  [!code-csharp[DLinqSerialization#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#7)]
  [!code-vb[DLinqSerialization#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#7)]  
   
-## <a name="see-also"></a>참고 항목  
- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [SqlMetal.exe(코드 생성 도구)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)  
- [방법: 엔터티를 직렬화 가능하도록 만들기](../../../../../../docs/framework/data/adonet/sql/linq/how-to-make-entities-serializable.md)
+## <a name="see-also"></a>참고자료
+- [배경 정보](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [SqlMetal.exe(코드 생성 도구)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)
+- [방법: 엔터티를 직렬화 할 수 있도록 설정](../../../../../../docs/framework/data/adonet/sql/linq/how-to-make-entities-serializable.md)

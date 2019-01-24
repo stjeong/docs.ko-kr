@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 133e056663b208f2a0d12f05f31daaca95676dc5
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 5a405c5e245558e6b8d1b389bfc143faae4550a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53152320"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577596"
 ---
 # <a name="getmethod-function"></a>GetMethod 함수
 지정된 메서드에 대한 정보를 검색합니다.
@@ -68,7 +68,7 @@ HRESULT GetMethod (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 속성을 찾을 수 없습니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -86,5 +86,5 @@ Windows 관리를 설정할 수는 [IWbemClassObject](/windows/desktop/api/wbemc
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고 항목  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

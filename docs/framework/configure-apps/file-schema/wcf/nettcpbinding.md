@@ -4,19 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - netTcpBinding Element
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
-ms.openlocfilehash: 0849120edf7d4b8948b3632cfe2fc81f1bdff1eb
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 0dc07bfb7b26e433fd3ff2b004253d8d2d90bf62
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148190"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573437"
 ---
 # <a name="ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;
 
 시스템 간 통신에 적합한 안전하고, 신뢰할 수 있으며, 최적화된 바인딩을 지정합니다. 기본적으로 메시지 보안 및 인증을 위한 Windows 보안, 메시지 배달을 위한 TCP 및 이진 메시지 인코딩을 지원하는 런타임 통신 스택을 생성합니다.
 
 \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<netTcpBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -146,11 +146,11 @@ ms.locfileid: "54148190"
 </bindings>
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 
-- <xref:System.ServiceModel.NetTcpBinding>  
-- <xref:System.ServiceModel.Configuration.NetTcpBindingElement>  
-- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
-- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
-- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.Configuration.NetTcpBindingElement>
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
 - [\<binding>](../../../../../docs/framework/misc/binding.md)

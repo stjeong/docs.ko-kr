@@ -5,12 +5,12 @@ helpviewer_keywords:
 - COM [WCF], configure service monikers
 - COM [WCF], register service monikers
 ms.assetid: e5e16c80-8a8e-4eef-af53-564933b651ef
-ms.openlocfilehash: cd3b6bbb47dfd72bf70091c9ca4d6fc5e228d950
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 2f8f19e70b3345b61f1f5caba2fc6f764b58cc9b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44221547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54593799"
 ---
 # <a name="how-to-register-and-configure-a-service-moniker"></a>방법: 서비스 모니커 등록 및 구성
 형식화 된 계약을 사용 하 여 COM 응용 프로그램 내에서 Windows Communication Foundation (WCF) 서비스 모니커를 사용 하기 전에 필수 특성 사용된 형식이 COM에 등록 하며 필요한 바인딩을 사용 하 여 COM 응용 프로그램과 모니커를 구성 합니다. 구성입니다.  
@@ -87,7 +87,7 @@ ms.locfileid: "44221547"
     >  C#, C++ 또는 다른 모든 .NET 언어 응용 프로그램으로 유사한 코드를 사용할 수 있습니다.  
   
     > [!NOTE]
-    >  모니커가 잘못 작동하거나 서비스를 사용할 수 없는 경우 `GetObject`를 호출하면 "구문이 잘못되었습니다"라는 오류가 반환됩니다. 이 오류가 발생하면 사용하고 있는 모니커가 올바르고 서비스를 사용할 수 있는지 확인하세요.  
+    >  : 모니커 형식이 잘못 되었거나 서비스를 사용할 수 없는 경우에 대 한 호출 `GetObject` "구문이 잘못 되었습니다" 오류를 반환 합니다. 이 오류가 발생하면 사용하고 있는 모니커가 올바르고 서비스를 사용할 수 있는지 확인하세요.  
   
      이 항목에서는 VB 6.0 코드의 서비스 모니커 사용에 중점을 두지만 다른 언어에서 서비스 모니커를 사용할 수 있습니다. C++ 코드에서 모니커를 사용하는 경우 다음 코드와 같이 "no_namespace named_guids raw_interfaces_only"를 사용하여 Svcutil.exe에서 생성된 어셈블리를  가져와야 합니다.  
   
@@ -97,5 +97,5 @@ ms.locfileid: "44221547"
   
      모든 메서드에서 `HResult`를 반환하도록 가져온 인터페이스 정의를 수정합니다. 다른 모든 반환 값은 출력 매개 변수로 변환됩니다. 전체 메서드 실행은 동일하게 유지됩니다. 이 경우 프록시에서 메서드를 호출할 때 예외의 원인을 확인할 수 있습니다. 이 기능은 C++ 코드에서만 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+## <a name="see-also"></a>참고자료
+- [ServiceModel Metadata 유틸리티 도구(Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

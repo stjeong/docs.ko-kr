@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 43dfb23b-5cef-46f2-8d87-78f0fba1eb8c
-ms.openlocfilehash: a076dcbbe79a7ec0dfbd727e0d0c752bd4675eef
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bde264684eb4d36ae59e9ed966c88f379231ac73
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596101"
 ---
 # <a name="loading-dataset-schema-information-from-xml"></a>XML에서 데이터 집합 스키마 정보 로드
 스키마를 <xref:System.Data.DataSet> (해당 테이블, 열, 관계 및 제약 조건) 정의할 수 있습니다 프로그래밍 방식으로 만든 합니다 **채우기** 또는 **FillSchema** 의 메서드는 <xref:System.Data.Common.DataAdapter>에서 로드 또는 XML 문서입니다. 로드할 **데이터 집합** 스키마 정보 XML 문서에서 사용할 수 있습니다 합니다 **ReadXmlSchema** 또는 **InferXmlSchema** 메서드의 **데이터집합**. **ReadXmlSchema** 로드 하거나 유추할 수 있습니다 **데이터 집합** XML 스키마 정의 언어 (XSD), 또는 인라인 XML 스키마를 사용 하 여 XML 문서를 포함 하는 문서에서 스키마 정보입니다. **InferXmlSchema** 지정 하는 특정 XML 네임 스페이스를 무시 하는 동안 XML 문서에서 스키마를 유추할 수 있습니다.  
@@ -73,7 +73,7 @@ xmlStream.Close();
 </NewDataSet>  
 ```  
   
- 이전 XML 문서의 요소에 대 한 지정 된 특성으로 인해 모두를 **ReadXmlSchema** 메서드 및 **ReadXml** 메서드를 **XmlReadMode** 의 **InferSchema** 문서에서 모든 요소에 대 한 테이블을 만드는 것: **범주**하십시오 **CategoryID**, **CategoryName**, **설명을**, **제품**, **ProductID**를 **ReorderLevel**, 및 **중단**. (자세한 내용은 [유추에서 데이터 집합 관계형 구조 XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md).) 그러나 더 적절 한 구조를 만드는 것만 합니다 **범주** 및 **제품** 테이블을 만든 다음 **CategoryID**, **CategoryName** , 및 **설명을** 열에는 **범주** 테이블 및 **ProductID**를 **ReorderLevel**, 및 **Discontinued** 열에는 **제품** 테이블입니다. 유추 된 스키마는 XML 요소에 지정 된 특성을 무시 하도록 사용 합니다 **InferXmlSchema** 메서드 XML 네임 스페이스를 지정 하 고 **officedata** 에서처럼 무시할는 다음 예입니다.  
+ 이전 XML 문서의 요소에 대 한 지정 된 특성으로 인해 모두를 **ReadXmlSchema** 메서드 및 **ReadXml** 메서드를 **XmlReadMode** 의 **InferSchema** 문서의 모든 요소에 대 한 테이블을 만듭니다. **범주**, **CategoryID**를 **CategoryName**를 **설명을**를 **제품**, **ProductID**하십시오 **ReorderLevel**, 및 **지원 되지 않는**합니다. (자세한 내용은 [유추에서 데이터 집합 관계형 구조 XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md).) 그러나 더 적절 한 구조를 만드는 것만 합니다 **범주** 및 **제품** 테이블을 만든 다음 **CategoryID**, **CategoryName** , 및 **설명을** 열에는 **범주** 테이블 및 **ProductID**를 **ReorderLevel**, 및 **Discontinued** 열에는 **제품** 테이블입니다. 유추 된 스키마는 XML 요소에 지정 된 특성을 무시 하도록 사용 합니다 **InferXmlSchema** 메서드 XML 네임 스페이스를 지정 하 고 **officedata** 에서처럼 무시할는 다음 예입니다.  
   
 ```vb  
 Dim dataSet As DataSet = New DataSet  
@@ -85,10 +85,10 @@ DataSet dataSet = new DataSet();
 dataSet.InferXmlSchema("input_od.xml", new string[] "urn:schemas-microsoft-com:officedata");  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
- [XML 스키마에서 데이터 집합 관계형 구조 파생(XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
- [XML에서 데이터 집합 관계형 구조 유추](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)  
- [XML에서 데이터 집합 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)  
- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [데이터 집합에서 XML 사용](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
+- [XML 스키마에서 데이터 세트 관계형 구조 파생(XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)
+- [XML에서 데이터 세트 관계형 구조 유추](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)
+- [XML에서 데이터 세트 로드](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)
+- [DataSet, DataTable 및 DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

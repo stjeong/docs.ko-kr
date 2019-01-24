@@ -11,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 19b28c3391a10cc522f17c5353c9ec0726b0a2f8
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 044d446b97f0899b9575085a15c3faa399ce776e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48033430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54624615"
 ---
 # <a name="ltfiltergt-element-for-ltaddgt-for-ltlistenersgt-for-ltsourcegt"></a>&lt;필터&gt; 요소에 대 한 &lt;추가할&gt; 에 대 한 &lt;수신기&gt; 에 대 한 &lt;원본&gt;
 추적 소스의 `Listeners` 컬렉션에 있는 수신기에 필터를 추가합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
-\<원본 >  
-\<원본 >  
-\<수신기 >  
+\<system.diagnostics>  
+\<sources>  
+\<source>  
+\<listeners>  
 \<add>  
-\<필터 >  
+\<filter>  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,7 +54,7 @@ ms.locfileid: "48033430"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.|  
 |`sources`|추적 메시지를 시작하는 추적 소스가 포함되어 있습니다.|  
 |`source`|추적 메시지를 시작하는 추적 소스를 지정합니다.|  
@@ -92,9 +92,9 @@ ms.locfileid: "48033430"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.TraceFilter>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.TraceFilter>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

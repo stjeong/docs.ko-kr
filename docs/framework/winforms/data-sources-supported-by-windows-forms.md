@@ -15,12 +15,12 @@ helpviewer_keywords:
 - DataSet class [Windows Forms], binding and Windows Forms
 - data [Windows Forms], data providers
 ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
-ms.openlocfilehash: aee15d8d40ddd3f928c8bc5396d8bcbff17ba533
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 71013506bfe73907cd19c11b03d01d0c3e05e1d8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573977"
 ---
 # <a name="data-sources-supported-by-windows-forms"></a>Windows Forms에서 지원하는 데이터 소스
 일반적으로 데이터 바인딩은 데 사용 된 응용 프로그램 내에서 데이터베이스에 저장 된 데이터를 활용 합니다. Windows Forms 데이터 바인딩에 특정 최소 요구 사항이 충족 된다면 배열 및 컬렉션 등의 다른 구조에 있는 데이터 뿐만 아니라 데이터베이스에서 데이터를 액세스할 수 있습니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "43858914"
  Windows Forms를 사용 하 여 개체를 인스턴스에서 공용 속성에 데이터 바인딩 컨트롤 속성을 지원 합니다 <xref:System.Windows.Forms.Binding> 형식입니다. Windows Forms에서는 바인딩 목록 기반 컨트롤을 같은 <xref:System.Windows.Forms.ListControl> 때 개체 인스턴스는 <xref:System.Windows.Forms.BindingSource> 사용 됩니다.  
   
  배열 또는 컬렉션  
- 를 데이터 소스로 작동 하려면 목록을 구현 해야 합니다는 <xref:System.Collections.IList> 인터페이스; 하나 예로 배열을 인스턴스의 수는 <xref:System.Array> 클래스입니다. 배열에 대 한 자세한 내용은 참조 하세요. [방법: 배열의 개체 (Visual Basic)를 만드는](https://msdn.microsoft.com/library/6b64e069-0387-400c-9081-3bdc581020c3)합니다.  
+ 를 데이터 소스로 작동 하려면 목록을 구현 해야 합니다는 <xref:System.Collections.IList> 인터페이스; 하나 예로 배열을 인스턴스의 수는 <xref:System.Array> 클래스입니다. 배열에 대 한 자세한 내용은 참조 하세요. [방법: (Visual Basic) 개체의 배열을 만들어](https://msdn.microsoft.com/library/6b64e069-0387-400c-9081-3bdc581020c3)합니다.  
   
  일반적으로 사용 해야 <xref:System.ComponentModel.BindingList%601> 데이터 바인딩에 대 한 개체의 목록을 만들 때. <xref:System.ComponentModel.BindingList%601> 제네릭 버전이 <xref:System.ComponentModel.IBindingList> 인터페이스입니다. 합니다 <xref:System.ComponentModel.IBindingList> 인터페이스를 확장 합니다 <xref:System.Collections.IList> 속성, 메서드 및 양방향 데이터 바인딩을 위해 필요한 이벤트를 추가 하 여 인터페이스입니다.  
   
@@ -57,7 +57,7 @@ ms.locfileid: "43858914"
   
 -   <xref:System.Data.DataViewManager>. <xref:System.Data.DataViewManager> 전체 사용자 지정 뷰입니다 <xref:System.Data.DataSet>비슷합니다는 <xref:System.Data.DataView>, 비슷하지만 관계가 포함 합니다. 사용 하 여는 <xref:System.Data.DataViewManager.DataViewSettings%2A> 컬렉션을 설정할 수 있습니다 기본 필터 및 모든 보기에 대 한 정렬 옵션을 <xref:System.Data.DataViewManager> 에 지정된 된 테이블에 대 한 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Forms 데이터 바인딩의 변경 알림](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
- [데이터 바인딩 및 Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
- [Windows Forms 데이터 바인딩](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## <a name="see-also"></a>참고자료
+- [Windows Forms 데이터 바인딩의 변경 알림](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)
+- [데이터 바인딩 및 Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+- [Windows Forms 데이터 바인딩](../../../docs/framework/winforms/windows-forms-data-binding.md)

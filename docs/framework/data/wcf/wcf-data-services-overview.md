@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF Data Services
 - WCF Data Services, about
 ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
-ms.openlocfilehash: 0cbb3b3906ad83349f02cf6a345f2e3d5336a2e6
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3d5e02d092489e01975037c811fedb2727e2041f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54566660"
 ---
 # <a name="wcf-data-services-overview"></a>WCF Data Services 개요
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 사용 하 여 생성 및 웹 또는 인트라넷용 데이터 서비스를 사용 하도록 설정 된 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] Uri로 주소를 지정할 수 있는 리소스로 데이터를 노출할 수 있습니다. 이렇게 하면 REST(Representational State Transfer)의 의미 체계, 특히 GET, PUT, POST, DELETE 등의 표준 HTTP 동사를 사용하여 데이터에 액세스하고 변경할 수 있습니다. 이 항목에서는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]에서 정의된 패턴 및 유용한 정보와 .NET Framework 기반 응용 프로그램에서 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]를 활용하기 위해 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]에서 제공하는 기능에 대해 간략하게 설명합니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "43523139"
 ## <a name="interoperable-data-access"></a>상호 운용 가능한 데이터 액세스  
  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 데이터 서비스를.NET Framework를 사용 하지 않는 응용 프로그램 상호 운용할 수 있도록 하는 표준 인터넷 프로토콜 기반으로 합니다. 표준 Uri 데이터의 주소를 사용할 수 있으므로 응용 프로그램에 액세스할 수 있고 GET, PUT, POST 및 DELETE representational state transfer (REST)의 표준 HTTP 동사 특히의 의미 체계를 사용 하 여 변경 데이터. 이렇게 하면 표준 HTTP 프로토콜을 통해 전송되는 데이터를 구문 분석하고 액세스할 수 있는 모든 클라이언트에서 해당 서비스에 액세스할 수 있습니다.  
   
- [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]는 AtomPub(Atom Publishing Protocol)의 확장 집합을 정의합니다. 또한 다양한 클라이언트 응용 프로그램 및 플랫폼을 고려하여 HTTP 요청 및 응답에 대해 여러 데이터 형식을 지원합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드는 Atom, JSON(JavaScript Object Notation) 및 일반 XML로 데이터를 나타낼 수 있습니다. Atom이 기본 형식이지만 피드의 형식은 HTTP 요청의 헤더에서 지정됩니다. 자세한 내용은 [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkID=185794) 하 고 [OData: JSON 형식으로](https://go.microsoft.com/fwlink/?LinkID=185795)입니다.  
+ [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]는 AtomPub(Atom Publishing Protocol)의 확장 집합을 정의합니다. 또한 다양한 클라이언트 응용 프로그램 및 플랫폼을 고려하여 HTTP 요청 및 응답에 대해 여러 데이터 형식을 지원합니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드는 Atom, JSON(JavaScript Object Notation) 및 일반 XML로 데이터를 나타낼 수 있습니다. Atom이 기본 형식이지만 피드의 형식은 HTTP 요청의 헤더에서 지정됩니다. 자세한 내용은 참조 하세요. [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkID=185794) 고 [OData: JSON 형식으로](https://go.microsoft.com/fwlink/?LinkID=185795)입니다.  
   
  데이터를 게시 하는 경우는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드를 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 캐싱, 인증 등의 작업에 대 한 기존의 다른 인터넷 기능도 사용 합니다. 이를 위해 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 기존 호스팅 응용 프로그램 및 인터넷 정보 서비스 (IIS), ASP.NET 및 Windows Communication Foundation (WCF) 등의 서비스와 통합 됩니다.  
   
@@ -55,10 +55,10 @@ ms.locfileid: "43523139"
   
  ![WCF Data Services 아키텍처 다이어그램](../../../../docs/framework/data/wcf/media/astoriaservicearch.gif "AstoriaServiceArch")  
   
-## <a name="see-also"></a>참고 항목  
- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
- [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [데이터 서비스 (WCF Data Services)에 액세스](https://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)  
- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [REST(Representational State Transfer)](https://go.microsoft.com/fwlink/?LinkId=113919)
+## <a name="see-also"></a>참고자료
+- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
+- [시작](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [데이터 서비스 (WCF Data Services)에 액세스](https://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)
+- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [REST(Representational State Transfer)](https://go.microsoft.com/fwlink/?LinkId=113919)

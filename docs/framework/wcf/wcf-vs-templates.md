@@ -2,12 +2,12 @@
 title: WCF Visual Studio 템플릿
 ms.date: 03/30/2017
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f
-ms.openlocfilehash: 73d2645977381602ef028d091675a22fb933d60b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: a7529b14c3c83f0df7b41581ef18e5192209bc5d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43512711"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54624940"
 ---
 # <a name="wcf-visual-studio-templates"></a>WCF Visual Studio 템플릿
 Windows Communication Foundation (WCF) Visual Studio 템플릿은 미리 정의 된 프로젝트 및 항목 템플릿 신속 하 게 WCF 서비스와 관련 응용 프로그램을 빌드하려면 Visual Studio에서 사용할 수 있습니다.  
@@ -82,6 +82,6 @@ Windows Communication Foundation (WCF) Visual Studio 템플릿은 미리 정의 
 > [!NOTE]
 >  Silverlight 사용 WCF 서비스는 보안 설정을 사용하지 않고 `basicHttpBinding` 엔드포인트를 노출합니다. 따라서 이 서비스에 연결하는 모든 클라이언트가 서비스에 대한 정보를 얻을 수 있습니다. 서비스와 클라이언트 간에 교환되는 메시지도 서명되거나 암호화되지 않습니다. 엔드포인트를 올바르게 보안하려면 ASP.NET 인증, HTTPS 또는 기타 메커니즘을 사용해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF 서비스 호스트(WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)  
- [WCF 테스트 클라이언트(WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+## <a name="see-also"></a>참고자료
+- [WCF 서비스 호스트(WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
+- [WCF 테스트 클라이언트(WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

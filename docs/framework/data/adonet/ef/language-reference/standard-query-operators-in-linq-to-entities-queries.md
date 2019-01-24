@@ -2,12 +2,12 @@
 title: LINQ to Entities 쿼리에서 표준 쿼리 연산자
 ms.date: 08/21/2018
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
-ms.openlocfilehash: 302fa281767fc95e9a9a2192382034b3a519cd92
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: d055898a78d57da4dfc276b24d643e38046abd0e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577499"
 ---
 # <a name="standard-query-operators-in-linq-to-entities-queries"></a>LINQ to Entities 쿼리에서 표준 쿼리 연산자
 쿼리에는 데이터 소스에서 검색하려는 정보를 지정합니다. 또한 정보를 반환하기 전에 정보에 대한 정렬, 그룹화 및 구체화하는 방법을 쿼리에 지정할 수 있습니다. LINQ에서는 쿼리에서 사용할 수 있는 표준 쿼리 메서드 집합을 제공합니다. 이러한 메서드 중 대부분은 시퀀스;에서 작동 이 컨텍스트에서 시퀀스의 형식이 구현 하는 개체를 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 또는 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 표준 쿼리 연산자 쿼리 기능에는 필터링, 프로젝션, 집계, 정렬, 그룹화, 페이징 등이 포함됩니다. 자주 사용되는 표준 쿼리 연산자 중 일부는 전용 키워드 구문이 있어서 쿼리 식 구문을 사용하여 호출할 수 있습니다. 쿼리 식은 메서드 기반 방법과는 다른, 가독성이 더 우수한 쿼리 표현 방법입니다. 쿼리 식 절은 컴파일 시간에 쿼리 메서드 호출로 변환됩니다. 동등한 쿼리 식 절이 있는 표준 쿼리 연산자의 목록은 참조 하세요. [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)합니다.  
@@ -76,6 +76,6 @@ ms.locfileid: "47198705"
   
  중 데이터 원본 또는 데이터 원본에 집합이 암시적으로 정렬 되어 있지 않아 함수에 매핑할 수 없거나, 다양 한 페이징 메서드가 지원 되지 않습니다. 기본값을 반환하는 메서드는 null 기본값을 갖는 개념적 모델 기본 형식과 참조 형식으로 제한됩니다. 빈 시퀀스에서 페이징 메서드가 실행되면 null이 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [지원 및 미지원 LINQ 메서드 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)  
- [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)
+## <a name="see-also"></a>참고자료
+- [지원 및 미지원 LINQ 메서드 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)
+- [표준 쿼리 연산자 개요](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)

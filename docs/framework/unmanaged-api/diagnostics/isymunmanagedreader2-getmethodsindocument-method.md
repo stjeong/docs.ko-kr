@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 762649e260817c43291de416d2f1a92a8f03afb5
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 38cbea25c485ff517e3448c4de5245ff36fb5b21
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33427371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594553"
 ---
 # <a name="isymunmanagedreader2getmethodsindocument-method"></a>ISymUnmanagedReader2::GetMethodsInDocument 메서드
-줄 정보를 제공된 된 문서에 있는 모든 메서드를 가져옵니다.  
+제공 된 문서의 줄 정보가 있는 모든 메서드를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,19 +43,19 @@ HRESULT GetMethodsInDocument(
  [in] 문서에 대 한 포인터입니다.  
   
  `cMethod`  
- [in] A `ULONG32` 크기를 표시 하는 `pRetVal` 배열입니다.  
+ [in] A `ULONG32` 의 크기를 나타내는 `pRetVal` 배열입니다.  
   
  `pcMethod`  
- [out] 에 대 한 포인터는 `ULONG32` 메서드를 포함 하는 데 필요한 버퍼의 크기를 받는 합니다.  
+ [out] 에 대 한 포인터를 `ULONG32` 메서드를 포함 하는 데 필요한 버퍼의 크기를 받는 합니다.  
   
  `pRetVal`  
  [out] 메서드를 수신 하는 버퍼에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 기타 오류 코드입니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL 또는 일부 다른 오류 코드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedReader2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedReader2 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

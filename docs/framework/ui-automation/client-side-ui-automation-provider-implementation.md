@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 53773c51aef6b9530ed0b2cfaf0ef08cdb340ec2
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 922769d60d0ff8425b68a96d0272ee23c6d083ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579188"
 ---
 # <a name="client-side-ui-automation-provider-implementation"></a>클라이언트 쪽 UI 자동화 공급자 구현
 > [!NOTE]
@@ -25,11 +25,11 @@ ms.locfileid: "48842608"
   
  그러나 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 및 [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] 에 있는 컨트롤과 같은 이전의 컨트롤은 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]을 직접 지원하지 않습니다. 이러한 컨트롤은 클라이언트 프로세스에 존재하며 크로스 프로세스 통신을 사용하여(예: 컨트롤에서 창 메시지 모니터링) 컨트롤에 대한 정보를 얻는 공급자가 대신 제공합니다. 이러한 클라이언트쪽 공급자를 프록시라고도 합니다.  
   
- [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] 표준에 대 한 공급자 제공 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 및 Windows Forms 컨트롤입니다. 또한 대체(fallback) 공급자는 다른 서버쪽 공급자 또는 프록시가 제공하지는 않지만 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 구현이 있는 모든 컨트롤에 부분적 [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] 지원을 제공합니다. 이러한 공급자는 모두 자동으로 로드되며 클라이언트 응용 프로그램에 사용할 수 있습니다.  
+ [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] 표준에 대 한 공급자 제공 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 및 Windows Forms 컨트롤입니다. 또한 대체(fallback) 공급자는 다른 서버쪽 공급자 또는 프록시가 제공하지는 않지만 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 구현이 있는 모든 컨트롤에 부분적 [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] 지원을 제공합니다. 이러한 공급자는 모두 자동으로 로드되며 클라이언트 애플리케이션에 사용할 수 있습니다.  
   
  지원에 대 한 자세한 내용은 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] Windows Forms 컨트롤 살펴보고 [표준 컨트롤에 대 한 UI 자동화 지원](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md)합니다.  
   
- 응용 프로그램이 다른 클라이언트쪽 공급자를 등록할 수도 있습니다.  
+ 애플리케이션이 다른 클라이언트쪽 공급자를 등록할 수도 있습니다.  
   
 <a name="Distributing_Client-Side_Providers"></a>   
 ## <a name="distributing-client-side-providers"></a>클라이언트쪽 공급자 배포  
@@ -37,7 +37,7 @@ ms.locfileid: "48842608"
   
 <a name="Registering_and_Configuring_Client-Side_Providers"></a>   
 ## <a name="registering-and-configuring-client-side-providers"></a>클라이언트쪽 공급자 등록 및 구성  
- [!INCLUDE[TLA#tla_dll](../../../includes/tlasharptla-dll-md.md)] 의 클라이언트쪽 공급자는 <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>을 호출하여 로드됩니다. 공급자를 사용하기 위해 클라이언트 응용 프로그램에 추가적인 조치가 필요하지 않습니다.  
+ [!INCLUDE[TLA#tla_dll](../../../includes/tlasharptla-dll-md.md)] 의 클라이언트쪽 공급자는 <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>을 호출하여 로드됩니다. 공급자를 사용하기 위해 클라이언트 애플리케이션에 추가적인 조치가 필요하지 않습니다.  
   
  클라이언트의 자체 코드에 구현된 공급자가 <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviders%2A>을 사용하여 등록됩니다. 이 메서드는 <xref:System.Windows.Automation.ClientSideProviderDescription> 구조의 배열을 인수로 사용하고, 각각 다음과 같은 속성을 지정합니다.  
   
@@ -45,12 +45,12 @@ ms.locfileid: "48842608"
   
 -   공급자가 제공하는 컨트롤의 클래스 이름.  
   
--   공급자가 제공하는 응용 프로그램의 이미지 이름(일반적으로 실행 파일의 전체 이름).  
+-   공급자가 제공하는 애플리케이션의 이미지 이름(일반적으로 실행 파일의 전체 이름).  
   
--   대상 응용 프로그램에서 발견된 창 클래스에 대해 클래스 이름이 일치되는 방법을 제어하는 플래그.  
+-   대상 애플리케이션에서 발견된 창 클래스에 대해 클래스 이름이 일치되는 방법을 제어하는 플래그.  
   
- 마지막 두 매개 변수는 선택 사항입니다. 클라이언트가 여러 응용 프로그램에 다양한 공급자를 사용하려는 경우 대상 응용 프로그램의 이미지 이름을 지정할 수 있습니다. 예를 들어, 클라이언트는 Multiple View 패턴을 지원하는 알려진 응용 프로그램에서 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 목록 뷰 컨트롤에 특정 공급자를 사용하고, 이 패턴을 지원하지 않는 다른 알려진 응용 프로그램에서 비슷한 컨트롤에 다른 공급자를 사용할 수 있습니다.  
+ 마지막 두 매개 변수는 선택 사항입니다. 클라이언트가 여러 애플리케이션에 다양한 공급자를 사용하려는 경우 대상 애플리케이션의 이미지 이름을 지정할 수 있습니다. 예를 들어, 클라이언트는 Multiple View 패턴을 지원하는 알려진 애플리케이션에서 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 목록 뷰 컨트롤에 특정 공급자를 사용하고, 이 패턴을 지원하지 않는 다른 알려진 애플리케이션에서 비슷한 컨트롤에 다른 공급자를 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [클라이언트 쪽 UI 자동화 공급자 만들기](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)  
- [클라이언트 응용 프로그램에서 UI 자동화 공급자 구현](../../../docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md)
+## <a name="see-also"></a>참고자료
+- [클라이언트 쪽 UI 자동화 공급자 만들기](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
+- [클라이언트 응용 프로그램에서 UI 자동화 공급자 구현](../../../docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md)

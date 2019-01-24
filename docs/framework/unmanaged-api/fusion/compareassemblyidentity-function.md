@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1b48adcb8e9de49a312af77c8a9b80a07455ebfe
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: a523a58a137f8276df854da956b3ab0b75cbcec9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54571628"
 ---
 # <a name="compareassemblyidentity-function"></a>CompareAssemblyIdentity 함수
 동일한 지 여부를 확인 하려면 두 개의 어셈블리 id를 비교 합니다.  
@@ -42,48 +42,48 @@ STDAPI CompareAssemblyIdentity (
   
 #### <a name="parameters"></a>매개 변수  
  `pwzAssemblyIdentity1`  
- [in] 텍스트 비교에 사용 된 첫 번째 어셈블리의 id입니다.  
+ [in] 텍스트 비교에 첫 번째 어셈블리의 id입니다.  
   
  `fUnified1`  
  [in] 에 대 한 사용자 지정 통합을 나타내는 부울 플래그 `pwzAssemblyIdentity1`합니다.  
   
  `pwzAssemblyIdentity2`  
- [in] 텍스트 비교에 사용 된 두 번째 어셈블리의 id입니다.  
+ [in] 비교할에서 두 번째 어셈블리의 텍스트 id입니다.  
   
  `fUnified2`  
  [in] 에 대 한 사용자 지정 통합을 나타내는 부울 플래그 `pwzAssemblyIdentity2`합니다.  
   
  `pfEquivalent`  
- [out] 두 명의 어셈블리가 동일한 지 여부를 나타내는 부울 플래그입니다.  
+ [out] 두 어셈블리 같은지 여부를 나타내는 부울 플래그입니다.  
   
  `pResult`  
  [out] [AssemblyComparisonResult](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md) 비교에 대 한 자세한 정보를 포함 하는 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
- `pfEquivalent` 두 명의 어셈블리가 동일한 지 여부를 나타내는 부울 값을 반환 합니다. `pResult` 중 하나를 반환 된 `AssemblyComparisonResult` 값의 값에 대 한 보다 자세한 이유와 함께을 `pfEquivalent`합니다.  
+ `pfEquivalent` 두 어셈블리 같은지 여부를 나타내는 부울 값을 반환 합니다. `pResult` 중 하나를 반환 합니다 `AssemblyComparisonResult` 값을 값에 대 한 자세한 이유를 제공 `pfEquivalent`합니다.  
   
 ## <a name="remarks"></a>설명  
- `CompareAssemblyIdentity` 확인 여부 `pwzAssemblyIdentity1` 및 `pwzAssemblyIdentity2` 동일 합니다. `pfEquivalent` 로 설정 되어 `true` 다음 조건 중 하나 이상:  
+ `CompareAssemblyIdentity` 확인 여부 `pwzAssemblyIdentity1` 및 `pwzAssemblyIdentity2` 동일 합니다. `pfEquivalent` 로 설정 된 `true` 다음 조건 중 하나 이상:  
   
--   두 어셈블리 id는 동일 합니다. 강력한 이름의 어셈블리 어셈블리일 어셈블리 이름, 버전, 공개 키 토큰 및 culture 동일 하 게 됩니다. 간단한 이름의 어셈블리일 어셈블리 이름 및 문화권의 일치 내용이 해당 됩니다.  
+-   두 어셈블리 id는 동일 합니다. 강력한 이름의 어셈블리 어셈블리일 어셈블리 이름, 버전, 공개 키 토큰 및 문화권 동일 하 게 됩니다. 단순한 이름의 어셈블리에 대 한 어셈블리일 경우 어셈블리 이름 및 문화권입니다.  
   
--   두 어셈블리 id는.NET Framework에서 실행 되는 어셈블리를 참조 하십시오. 이 반환 `true` 경우 어셈블리 버전 번호가 일치 하지 않습니다.  
+-   두 어셈블리 id는.NET Framework에서 실행 되는 어셈블리를 참조 하십시오. 이 반환 `true` 어셈블리 버전 번호가 일치 하지 않는 경우에 합니다.  
   
--   두 어셈블리는 관리 되는 어셈블리 하지만 `fUnified1` 또는 `fUnified2` 로 설정 된 `true`합니다.  
+-   두 어셈블리는 관리 되는 어셈블리 하지만 `fUnified1` 나 `fUnified2` 로 설정 된 `true`합니다.  
   
- `fUnified` 플래그가 모든 버전 번호는 강력한 이름의 어셈블리의 버전 번호는 강력한 이름의 어셈블리에 해당 간주 됩니다. 예를 들어 경우의 값 `pwzAssemblyIndentity1` 은 "MyAssembly, 버전 3.0.0.0, culture = neutral, publicKeyToken = =...", 및의 값 `fUnified1` 은 `true`, 모든 버전의 버전 3.0.0.0를 0.0.0.0 MyAssembly 되어야 함을 나타냅니다 동등한 것으로 처리 합니다. 이 경우 경우 `pwzAssemblyIndentity2` 동일한 어셈블리를 참조 `pwzAssemblyIndentity1`낮은 버전 번호를 가진 것 이라는 점을 제외 하면 `pfEquivalent` 로 설정 된 `true`합니다. 경우 `pwzAssemblyIdentity2` 더 높은 버전 번호를 참조 `pfEquivalent` 로 설정 된 `true` 경우에만 값을 `fUnified2` 은 `true`합니다.  
+ `fUnified` 플래그는 강력한 이름의 어셈블리의 버전 번호까지 모든 버전 번호가 동일 하다 고 간주 강력한 이름의 어셈블리를 나타냅니다. 예를 들어 경우 값 `pwzAssemblyIndentity1` 가 "MyAssembly, 버전 3.0.0.0, culture = neutral, publicKeyToken = =...", 값 `fUnified1` 는 `true`, 모든 버전의 MyAssembly 버전 3.0.0.0에 0.0.0.0 함을 나타냅니다 동등한 것으로 처리 합니다. 이러한 경우의 경우 `pwzAssemblyIndentity2` 와 동일한 어셈블리를 가리킵니다 `pwzAssemblyIndentity1`낮은 버전 번호에 있는 점을 제외 하 고, `pfEquivalent` 로 설정 되어 `true`합니다. 하는 경우 `pwzAssemblyIdentity2` 더 높은 버전 번호를 가리킵니다 `pfEquivalent` 로 설정 된 `true` 경우에만 값 `fUnified2` 는 `true`합니다.  
   
- `pResult` 매개 변수 같은 두 명의 어셈블리가으로 간주 하는 이유는 방법에 대 한 특정 정보를 포함 합니다. 자세한 내용은 참조 [AssemblyComparisonResult 열거형](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)합니다.  
+ `pResult` 이유 두 어셈블리 것으로 간주 됩니다 동등 하거나 해당 하는 방법에 대 한 특정 정보를 포함 하는 매개 변수입니다. 자세한 내용은 [AssemblyComparisonResult 열거형](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Fusion.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [Fusion 전역 정적 함수](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)  
- [AssemblyComparisonResult 열거형](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)
+## <a name="see-also"></a>참고자료
+- [Fusion 전역 정적 함수](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [AssemblyComparisonResult 열거형](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)

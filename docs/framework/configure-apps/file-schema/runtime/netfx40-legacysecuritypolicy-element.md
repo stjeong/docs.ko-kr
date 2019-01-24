@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 07132b9c-4a72-4710-99d7-e702405e02d4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7045623872364160d76f4bc0c1522b0450a81bd2
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 44120491756d467da94ce1f8557d9f71f70b306e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54500329"
 ---
 # <a name="ltnetfx40legacysecuritypolicygt-element"></a>&lt;NetFx40_LegacySecurityPolicy&gt; 요소
 런타임이 레거시 CAS(코드 액세스 보안) 정책을 사용할지를 지정합니다.  
   
  \<configuration>  
 \<runtime>  
-< NetFx40_LegacySecurityPolicy >  
+<NetFx40_LegacySecurityPolicy>  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53611596"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -84,6 +84,6 @@ ms.locfileid: "53611596"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

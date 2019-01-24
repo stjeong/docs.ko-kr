@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 6beeec86ba8bf16be432bc2ae2de20aa08a0d2d9
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 7552db2b0d1f9063733ddac29612057e0475570e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47113123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54597201"
 ---
 # <a name="control-pattern-mapping-for-ui-automation-clients"></a>UI 자동화 클라이언트에 대한 컨트롤 패턴 매핑
 > [!NOTE]
@@ -67,7 +67,7 @@ ms.locfileid: "47113123"
 |Tab Item|Selection Item|없음|호출|  
 |표|Grid, Grid Item, Table, Table Item|없음|없음|  
 |텍스트|없음|Grid Item, Table Item, Text|값|  
-|Thumb|변형|없음|없음|  
+|Thumb|변환|없음|없음|  
 |제목 표시줄|없음|없음|없음|  
 |Tool Bar|없음|Dock, Expand Collapse, Transform|없음|  
 |Tool Tip|없음|Text, Window|없음|  
@@ -78,5 +78,5 @@ ms.locfileid: "47113123"
 > [!NOTE]
 >  컨트롤 형식에 지원되는 컨트롤 패턴이 없지만 조건부로 지원되는 하나 이상의 컨트롤 패턴이 있는 경우, 조건부 컨트롤 패턴 중 하나는 항상 지원됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

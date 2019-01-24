@@ -2,23 +2,23 @@
 title: WCF의 보안 동작
 ms.date: 03/30/2017
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
-ms.openlocfilehash: 221e9cb23e05378b68e4b53bc9d678c119738af5
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3040f2af2f9db030d8434e977167810ac83f09dd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592811"
 ---
 # <a name="security-behaviors-in-wcf"></a>WCF의 보안 동작
 Windows Communication Foundation (WCF), 동작 서비스 수준 또는 끝점 수준에서 런타임 동작을 수정합니다. (일반적으로 참조 동작에 대 한 자세한 내용은 [서비스 런타임 동작 지정](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *보안 동작* 감사 로그 및 자격 증명, 인증, 권한 부여에 대 한 제어를 허용 합니다. 프로그래밍 또는 구성을 통해 동작을 사용할 수 있습니다. 이 항목에서는 보안 기능과 관련된 다음 동작의 구성에 대해 중점적으로 설명합니다.  
   
--   [\<serviceCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)합니다.  
+-   [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
--   [\<clientCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)합니다.  
+-   [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md).  
   
--   [\<serviceAuthorization >](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md)합니다.  
+-   [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md).  
   
--   [\<serviceSecurityAudit >](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)합니다.  
+-   [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
   
 -   [\<serviceMetadata >](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md), 또한 클라이언트가 메타 데이터에 액세스할 수 있는 보안 끝점을 지정할 수 있습니다.  
   
@@ -117,16 +117,16 @@ Windows Communication Foundation (WCF), 동작 서비스 수준 또는 끝점 �
 #### <a name="clientcertifictate-element"></a>\<clientCertifictate > 요소  
  이 요소로 클라이언트를 인증하는 데 사용하는 인증서를 설정합니다. 자세한 내용은 [방법: 클라이언트 자격 증명 값 지정](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)합니다.  
   
-#### <a name="httpdigest"></a>\<httpDigest >  
+#### <a name="httpdigest"></a>\<httpDigest>  
  이 기능은 Windows 및 IIS(인터넷 정보 서비스)의 Active Directory를 통해 사용해야 합니다. 자세한 내용은 [IIS 6.0의 다이제스트 인증](https://go.microsoft.com/fwlink/?LinkId=88443)합니다.  
   
 #### <a name="issuedtoken-element"></a>\<issuedToken > 요소  
  합니다 [ \<issuedToken >](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) 토큰 또는 보안 토큰 서비스를 사용 하는 동작의 로컬 발급자를 구성 하는 데 필요한 요소를 포함 합니다. 로컬 발급자를 사용 하는 클라이언트를 구성 하는 방법에 지침을 참조 하세요. [방법: 로컬 발급자 구성](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)합니다.  
   
-#### <a name="localissueraddress"></a>\<localIssuerAddress >  
+#### <a name="localissueraddress"></a>\<localIssuerAddress>  
  기본 보안 토큰 서비스 주소를 지정합니다. 이 때를 <xref:System.ServiceModel.WSFederationHttpBinding> 페더레이션 바인딩의 발급자 주소가 때 또는 보안 토큰 서비스에 대 한 URL을 제공 하지 않습니다 `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` 또는 `null`합니다. 이러한 경우 로컬 발급자의 주소와 이 발급자와 통신하는 데 사용할 바인딩을 사용하여 <xref:System.ServiceModel.Description.ClientCredentials>를 구성해야 합니다.  
   
-#### <a name="issuerchannelbehaviors"></a>\<issuerChannelBehaviors >  
+#### <a name="issuerchannelbehaviors"></a>\<issuerChannelBehaviors>  
  사용 합니다 [ \<issuerChannelBehaviors >](../../../../docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md) 보안 토큰 서비스와 통신할 때 사용 되는 WCF 클라이언트 동작을 추가 합니다. 클라이언트 동작을 정의 합니다 [ \<endpointBehaviors >](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) 섹션입니다. 정의 된 동작을 사용 하려면 추가 <`add`> 요소는 `<issuerChannelBehaviors>` 두 특성을 가진 요소입니다. 다음 예제와 같이 `issuerAddress`를 보안 토큰 서비스의 URL로 설정하고 `behaviorConfiguration` 특성을 정의된 엔드포인트 동작 이름으로 설정합니다.  
   
 ```xml  
@@ -217,6 +217,6 @@ Windows Communication Foundation (WCF), 동작 서비스 수준 또는 끝점 �
 </behaviors>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

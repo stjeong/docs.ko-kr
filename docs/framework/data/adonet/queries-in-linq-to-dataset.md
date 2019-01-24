@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c1a78fa8-9f0c-40bc-a372-5575a48708fe
-ms.openlocfilehash: 2b2d487484f026be7637185ef759fb87db571b3a
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 8c5f94cb7f815e4aebef10d930843971219baef6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623120"
 ---
 # <a name="queries-in-linq-to-dataset"></a>LINQ to DataSet에서 쿼리
 쿼리는 데이터 소스에서 데이터를 검색하는 식입니다. 관계형 데이터베이스에는 SQL이 사용되고 XML에는 XQuery가 사용되는 것과 같이 쿼리는 일반적으로 특수화된 쿼리 언어로 표현됩니다. 따라서 개발자는 쿼리하는 데이터 소스나 데이터 형식에 따라 새로운 쿼리 언어를 배워야 했습니다. [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)]는 다양한 데이터 소스 및 형식에 사용할 수 있는 간단하고 일관된 모델을 제공합니다. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] 쿼리에서는 항상 프로그래밍 개체를 사용합니다.  
@@ -59,8 +59,8 @@ ms.locfileid: "53145808"
  [!code-csharp[DP LINQ to DataSet Examples#ToArray2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#toarray2)]
  [!code-vb[DP LINQ to DataSet Examples#ToArray2](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#toarray2)]  
   
-## <a name="see-also"></a>참고 항목  
- [프로그래밍 가이드](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)  
- [데이터 집합 쿼리](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)  
- [C#에서 LINQ 시작](~/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [Visual Basic에서 LINQ 시작](~/docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
+## <a name="see-also"></a>참고자료
+- [프로그래밍 가이드](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+- [데이터 집합 쿼리](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
+- [C#에서 LINQ 시작](~/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Visual Basic에서 LINQ 시작](~/docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

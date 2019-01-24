@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], creating custom bindings
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
-ms.openlocfilehash: df40d8dbd5af9acf9e9484ee7694df2bba7ad9f1
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 2c2aa5703e31b2529e0b98d909a763b8b4b23035
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53155251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54576159"
 ---
 # <a name="how-to-create-a-custom-binding-using-the-securitybindingelement"></a>방법: SecurityBindingElement를 사용 하 여 사용자 지정 바인딩 만들기
 Windows Communication Foundation (WCF)를 구성할 수 있지만 WCF 지 원하는 모든 보안 옵션을 구성할 때 완전 한 유연성을 제공 하지 않습니다는 여러 시스템 제공 바인딩이 포함 되어 있습니다. 이 항목에서는 개별 바인딩 요소에서 직접 사용자 지정 바인딩을 만드는 방법에 대해 설명하고, 이와 같은 바인딩을 만들 때 지정할 수 있는 일부 보안 설정에 대해 강조합니다. 사용자 지정 바인딩을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [바인딩 확장](../../../../docs/framework/wcf/extending/extending-bindings.md)합니다.  
@@ -106,10 +106,10 @@ Windows Communication Foundation (WCF)를 구성할 수 있지만 WCF 지 원하
  [!code-csharp[c_CustomBinding#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#20)]
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>  
- <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>  
- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [바인딩 확장](../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.SecurityBindingElement>
+- <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>
+- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [바인딩 확장](../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)

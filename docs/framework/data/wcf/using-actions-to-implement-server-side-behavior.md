@@ -2,12 +2,12 @@
 title: 동작을 사용하여 서버 쪽 동작 구현
 ms.date: 03/30/2017
 ms.assetid: 11a372db-7168-498b-80d2-9419ff557ba5
-ms.openlocfilehash: 515553540053ed0c16085fde06e2cc2d2dedda1e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: c478c09ada879bdb237cff1e3c914a5990aba765
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47204481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54622613"
 ---
 # <a name="using-actions-to-implement-server-side-behavior"></a>동작을 사용하여 서버 쪽 동작 구현
 
@@ -48,7 +48,7 @@ OData 동작을 통해 OData 서비스에서 검색한 리소스에 따른 동�
   
  매개 변수를 토큰으로 전달할 수 있습니다. 이는 실제 동작에 디스패치하기 전에 이러한 토큰을 실제 리소스로 변환(마샬링)해야 할 수 있는 경우 리소스를 나타내는 토큰과 함께 작동하는 데이터 서비스 공급자를 쓸 수 있기 때문입니다. 매개 변수를 마샬링한 후 동작이 호출될 때 발생하는 리소스에 대한 변경 내용을 디스크에 저장하고 쓸 수 있도록 매개 변수가 편집 가능한 상태여야 합니다.  
   
- 이 인터페이스에는 Invoke 및 GetResult의 두 가지 메서드가 필요합니다. Invoke는 동작의 동작을 구현하는 대리자를 호출하고 GetResult는 동작의 결과를 반환합니다.  
+ 이 인터페이스에는 두 메서드가 필요합니다. 호출 및 GetResult 합니다. Invoke는 동작의 동작을 구현하는 대리자를 호출하고 GetResult는 동작의 결과를 반환합니다.  
   
 ## <a name="invoking-a-wcf-data-service-action"></a>WCF Data Service 동작 호출  
  동작은 HTTP POST 요청을 사용하여 호출됩니다. URL은 뒤에 동작 이름이 오늘 리소스를 지정합니다. 요청 본문에서 매개 변수가 전달됩니다. 예를 들어 Rate라는 동작을 노출한 MovieService라는 서비스가 있는 경우입니다. 다음 URL을 사용하여 특정 영화에서 Rate 동작을 호출할 수 있습니다.  
@@ -80,8 +80,8 @@ context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "PO
   
  위의 코드 조각에서 `MoviesModel` 클래스는 Visual Studio를 사용하여 서비스 참조를 WCF Data Service에 추가하여 생성되었습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [WCF Data Services 개발 및 배포](../../../../docs/framework/data/wcf/developing-and-deploying-wcf-data-services.md)  
- [사용자 지정 데이터 서비스 공급자](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
+- [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [WCF Data Services 개발 및 배포](../../../../docs/framework/data/wcf/developing-and-deploying-wcf-data-services.md)
+- [사용자 지정 데이터 서비스 공급자](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)

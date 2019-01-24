@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-AT protocol [WCF], configuring WS-Atomic Transaction
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
-ms.openlocfilehash: 4d0e0a1bea32fe3be896b80e77de34e04cd9f2f4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bc21cba7889652a8b485d101205b15d6f189d12d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43525884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592434"
 ---
 # <a name="configuring-ws-atomic-transaction-support"></a>WS-Atomic Transaction 지원 구성
 이 항목에서는 WS-AT 구성 유틸리티를 사용하여 WS-AT(WS-AtomicTransaction) 지원을 구성하는 방법에 대해 설명합니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "43525884"
 ### <a name="creating-and-exporting-certificates"></a>인증서 만들기 및 내보내기  
  이 절차에는 MMC 인증서 스냅인이 필요합니다. 이 스냅인은 시작/실행 메뉴를 열고 입력 상자에 "mmc"를 입력한 다음 확인을 눌러 액세스할 수 있습니다. 그런 다음 합니다 **Console1** 창에서 이동할 **파일/추가 / 제거** 스냅인 추가 클릭 하 고 선택 **인증서** 에서 **사용할 수 있는 독립 실행형 스냅인** 목록입니다. 마지막으로 선택 **컴퓨터 계정** 관리 하 고 클릭 **확인**합니다. 합니다 **인증서** 노드가 스냅인 콘솔에 나타납니다.  
   
- 트러스트를 설정하려면 필요한 인증서가 이미 있어야 합니다. 다음 단계 전에 새 인증서 만들기 및 설치 하는 방법에 알아보려면 참조 [방법: 만들기 및 개발 중 WCF에서에서 임시 클라이언트 인증서 설치](https://go.microsoft.com/fwlink/?LinkId=158925)합니다.  
+ 트러스트를 설정하려면 필요한 인증서가 이미 있어야 합니다. 다음 단계 전에 새 인증서 만들기 및 설치 하는 방법에 알아보려면 참조 [방법: 만들기 및 개발 중 WCF에서 임시 클라이언트 인증서 설치](https://go.microsoft.com/fwlink/?LinkId=158925)합니다.  
   
 1.  컴퓨터 A에서 MMC 인증서 스냅인을 사용하여 기존 인증서(certA)를 LocalMachine\MY(개인 노드) 및 LocalMachine\ROOT 저장소(신뢰할 수 있는 루트 인증 기관 노드)로 가져옵니다. 인증서를 특정 노드로 가져오려면 노드를 마우스 오른쪽 단추로 클릭 및 선택 **All Tasks/Import**합니다.  
   
@@ -118,6 +118,6 @@ ms.locfileid: "43525884"
   
 -   31: 자세한 정보  
   
-## <a name="see-also"></a>참고 항목  
- [WS-AtomicTransaction 구성 유틸리티(wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)  
- [WS-AtomicTransaction 구성 MMC 스냅인](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md)
+## <a name="see-also"></a>참고자료
+- [WS-AtomicTransaction 구성 유틸리티(wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+- [WS-AtomicTransaction 구성 MMC 스냅인](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md)

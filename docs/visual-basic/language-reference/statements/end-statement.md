@@ -14,12 +14,12 @@ helpviewer_keywords:
 - End statement [Visual Basic]
 - execution [Visual Basic], stopping
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
-ms.openlocfilehash: 8fd489dc9f12f7e80ef2dd49c6e2dee6c28ae761
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: a2c211e5ebfd00a639644243312cbe25f71f4cde
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43395724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54593708"
 ---
 # <a name="end-statement"></a>End 문
 실행을 즉시 종료 됩니다.  
@@ -53,9 +53,9 @@ End
  [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/end-statement_1.vb)]  
   
 ## <a name="smart-device-developer-notes"></a>스마트 디바이스 개발자 노트  
- 이 문은 지원 되지 않습니다.  
+ 이 문은 지원되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Permissions.SecurityPermissionFlag>  
- [Stop 문](../../../visual-basic/language-reference/statements/stop-statement.md)  
- [최종 \<키워드 > 문](../../../visual-basic/language-reference/statements/end-keyword-statement.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Security.Permissions.SecurityPermissionFlag>
+- [Stop 문](../../../visual-basic/language-reference/statements/stop-statement.md)
+- [최종 \<키워드 > 문](../../../visual-basic/language-reference/statements/end-keyword-statement.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 3b7a4e13-0305-45d5-bc33-1f4133c50782
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: f200f2f2a739ac49b96b9294a50c06732000028a
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: 29cb2df149c484caca45bb63e173e375b5d97515
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48261326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607149"
 ---
 # <a name="ui-automation-support-for-the-titlebar-control-type"></a>TitleBar 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "48261326"
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 속성|값|노트|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|제목 표시줄의 경계 사각형은 사각형 내에 있는 모든 컨트롤을 포함해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|메모를 참조하세요.|경계 사각형이 없는 경우 지원됩니다. 경계 사각형 내의 일부 지점이 클릭 가능하지 않으며 특수화된 적중 테스트를 수행하는 경우 클릭 가능한 지점을 재정의하고 제공하세요.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|False|제목 표시줄에 키보드 포커스가 사용되지 않습니다.|  
@@ -69,7 +69,7 @@ ms.locfileid: "48261326"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Never|없음|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|필수|없음|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.TitleBar>  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.TitleBar>
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5594166081c36fbda1e5d1a62e017aaceb7a553d
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 9ecdfd708217f260b0c02383159fab88948029c6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42912116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512322"
 ---
 # <a name="pinvokestackimbalance-mda"></a>PInvokeStackImbalance MDA
 
@@ -50,7 +50,7 @@ MDA 메시지는 스택 불균형을 발생시키는 플랫폼 호출 메서드 
 
 **PInvoke '은 SampleMethod' 함수에 대 한 호출 스택 불안정 하 게 되었습니다. 관리 되는 PInvoke 서명이 관리 되지 않는 대상 서명이 일치 하지 않으므로 가능성이 있습니다. 호출 규칙 및 PInvoke 서명의 매개 변수를 대상 비관리 시그니처와 일치 하는지 확인 합니다.**
 
-## <a name="configuration"></a>구성
+## <a name="configuration"></a>구성하기
 
 ```xml
 <mdaConfig>
@@ -60,7 +60,7 @@ MDA 메시지는 스택 불균형을 발생시키는 플랫폼 호출 메서드 
 </mdaConfig>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

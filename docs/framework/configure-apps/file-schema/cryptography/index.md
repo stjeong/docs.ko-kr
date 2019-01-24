@@ -2,22 +2,16 @@
 title: 암호화 설정 스키마
 ms.date: 03/30/2017
 helpviewer_keywords:
-- configuration schema [.NET Framework], cryptography
-- elements [.NET Framework], cryptography
-- schema configuration settings
-- cryptography, settings schema
-- cryptography, mapping algorithm names
-- configuration sections [.NET Framework]
-- configuration settings [.NET Framework], cryptography
+  - 'configuration schema [.NET Framework], cryptography'
+  - 'elements [.NET Framework], cryptography'
+  - schema configuration settings
+  - 'cryptography, settings schema'
+  - 'cryptography, mapping algorithm names'
+  - 'configuration sections [.NET Framework]'
+  - 'configuration settings [.NET Framework], cryptography'
 ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 9bf94c28522d42e1a763726469cf9b1a03ccd86e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50196754"
 ---
 # <a name="cryptography-settings-schema"></a>암호화 설정 스키마
 암호 설정 스키마에는 암호화 알고리즘을 구현하는 클래스에 알고리즘 이름을 매핑하는 방법을 지정하는 요소가 포함되어 있습니다.  
@@ -51,6 +45,6 @@ ms.locfileid: "50196754"
 |[**\<oidEntry>**](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md)|ASN.1 OID(개체 식별자)를 이름에 매핑합니다.|  
 |[**\<oidMap>**](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|클래스에 대한 ASN.1 OID 매핑이 포함되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

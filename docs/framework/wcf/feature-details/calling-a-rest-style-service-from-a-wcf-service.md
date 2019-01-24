@@ -2,12 +2,12 @@
 title: WCF 서비스에서 REST 스타일 서비스 호출
 ms.date: 03/30/2017
 ms.assetid: 77df81d8-7f53-4daf-8d2d-bf7996e94d5a
-ms.openlocfilehash: be9f15d35ec00ba91a06abf5a0a413b59452270b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: df57433b01df9faf49eada8189ba8864fe7a9093
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50184246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596789"
 ---
 # <a name="calling-a-rest-style-service-from-a-wcf-service"></a>WCF 서비스에서 REST 스타일 서비스 호출
 일반(SOAP 기반) WCF 서비스에서 REST 스타일의 서비스를 호출할 때 서비스 메서드의 작업 컨텍스트(들어오는 요청에 대한 정보 포함)가 나가는 요청에 사용되는 컨텍스트를 재정의합니다. 따라서 HTTP GET 요청이 HTTP POST 요청으로 변경됩니다. WCF 서비스가 REST 스타일 서비스를 호출하는 데 올바른 컨텍스트를 사용하도록 적용하려면 새 <xref:System.ServiceModel.OperationContextScope>를 만들고 작업 컨텍스트 범위 내에서 REST 스타일 서비스를 호출합니다. 이 항목에서는 이러한 기술을 설명하는 간단한 예제를 만드는 방법에 대해 설명합니다.  
@@ -233,6 +233,6 @@ public class CallingRESTSample
 }
 ```
   
-## <a name="see-also"></a>참고 항목  
- [방법: 기본 WCF 웹 HTTP 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)  
- [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
+## <a name="see-also"></a>참고자료
+- [방법: 기본 WCF 웹 HTTP 서비스 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)
+- [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)

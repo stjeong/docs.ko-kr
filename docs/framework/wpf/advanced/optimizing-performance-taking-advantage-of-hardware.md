@@ -9,28 +9,28 @@ helpviewer_keywords:
 - graphics [WPF], rendering tiers
 - software rendering pipeline [WPF]
 ms.assetid: bfb89bae-7aab-4cac-a26c-a956eda8fce2
-ms.openlocfilehash: eb790da63b4636e3dd6c25ea118075304702acc0
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 5eb6fb8a7f65c19755a37239e36958daf33cc876
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33547256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54574003"
 ---
 # <a name="optimizing-performance-taking-advantage-of-hardware"></a>성능 최적화: 하드웨어 이용
-내부 아키텍처 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에 두 개의 렌더링 파이프라인, 하드웨어 및 소프트웨어. 이 항목에서는 응용 프로그램의 성능 최적화에 대 한 결정을 내릴 수 있도록 이러한 렌더링 파이프라인에 대 한 정보를 제공 합니다.  
+내부 아키텍처 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 두 렌더링 파이프라인, 하드웨어 및 소프트웨어를 포함 합니다. 이 항목에서는 응용 프로그램의 성능 최적화에 대 한 결정을 내릴 수 있도록 이러한 렌더링 파이프라인에 대 한 정보를 제공 합니다.  
   
 ## <a name="hardware-rendering-pipeline"></a>하드웨어 렌더링 파이프라인  
- 결정 하는 데 가장 중요 한 요소 중 하나 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 성능 렌더링 범위 된다는 점입니다-픽셀 수가 클수록 성능 비용을 렌더링 해야 합니다. 그러나에 있는 렌더링이 더를 오프 로드할 수는 [!INCLUDE[TLA#tla_gpu](../../../../includes/tlasharptla-gpu-md.md)], 성능 이점이 더를 얻을 수 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램 하드웨어 렌더링 파이프라인은 완전히 활용 [!INCLUDE[TLA#tla_dx](../../../../includes/tlasharptla-dx-md.md)] 기능을 지 원하는 최소 하드웨어에서 [!INCLUDE[TLA#tla_dx](../../../../includes/tlasharptla-dx-md.md)] 버전 7.0입니다. 추가 최적화가 지 원하는 하드웨어에 얻을 수 [!INCLUDE[TLA#tla_dx](../../../../includes/tlasharptla-dx-md.md)] 버전 7.0 및 PixelShader 2.0 + 기능입니다.  
+ 결정 하는 데 가장 중요 한 요인 중 하나 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 성능은 렌더링 범위는-픽셀 수가 클수록 성능 비용이 렌더링 해야 합니다. 그러나에 렌더링 하는 자세한 정보를 오프 로드할 수는 [!INCLUDE[TLA#tla_gpu](../../../../includes/tlasharptla-gpu-md.md)]얻을 수 있는 성능 이점이 더, 합니다. 합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램 하드웨어 렌더링 파이프라인 활용 [!INCLUDE[TLA#tla_dx](../../../../includes/tlasharptla-dx-md.md)] 최소를 지 원하는 하드웨어 기능 [!INCLUDE[TLA#tla_dx](../../../../includes/tlasharptla-dx-md.md)] 버전 7.0입니다. 추가 최적화를 지 원하는 하드웨어에서 얻을 수 있습니다 [!INCLUDE[TLA#tla_dx](../../../../includes/tlasharptla-dx-md.md)] PixelShader 2.0 + 기능과 버전 7.0입니다.  
   
 ## <a name="software-rendering-pipeline"></a>소프트웨어 렌더링 파이프라인  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 소프트웨어 렌더링 파이프라인은 전적으로 CPU 사용량이 합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] SSE 및 SSE2 명령 활용 최적화, 완전 한 기능의 소프트웨어 래스터를 구현 하는 CPU에 설정 합니다. 소프트웨어 대체 (fallback)은 언제 든 지 하드웨어 렌더링 파이프라인을 사용 하 여 응용 프로그램의 기능을 렌더링할 수 없으면 원활 합니다.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 소프트웨어 렌더링 파이프라인은 CPU 바인딩된 전적으로 합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] SSE 및 SSE2 명령 활용은 최적화 된을 갖춘 소프트웨어 래스터 라이저를 구현 하는 CPU에서 설정 합니다. 소프트웨어 대체 (fallback) 시간이 원활 하 게 모든 하드웨어 렌더링 파이프라인을 사용 하 여 응용 프로그램 기능을 렌더링할 수 없습니다.  
   
- 가장 큰 성능 문제 렌더링 소프트웨어 모드에서 렌더링 하는 픽셀 수로 정의 된 비율 채우기와 관련 된 경우 발생 합니다. 소프트웨어 렌더링 모드에서 성능에 대 한 관심이 경우 픽셀을 다시 그리면 시간 수를 최소화 하려고 합니다. 예를 들어 위에 약간 투명 한 이미지를 렌더링 합니다, 파란색 배경의 응용 프로그램이 있는 경우 응용 프로그램을 두 번의 픽셀의 모든 렌더링 됩니다. 결과적으로, 걸리는 두 번 파란색 배경만 갖는 경우 보다 이미지와 함께 응용 프로그램을 렌더링 하는 데 소요 되는입니다.  
+ 가장 큰 성능 문제를 렌더링 하는 픽셀 수로 정의 되는 속도 맞게 소프트웨어 모드에서 렌더링와 관련 된 경우 발생 합니다. 소프트웨어 렌더링 모드에서 성능에 대 한 관심이 경우 픽셀을 다시 그리면 횟수를 최소화 하려고 합니다. 예를 들어 올려 약간 투명 이미지를 렌더링 한 다음, 파란색 배경의 응용 프로그램이 있는 경우 모든 응용 프로그램을 두 번 픽셀 렌더링할가 있습니다. 결과적으로, 걸립니다 두 번 파란색 배경만 했다면 보다 이미지를 사용 하 여 응용 프로그램을 렌더링 하는 데 소요 되는.  
   
 ### <a name="graphics-rendering-tiers"></a>그래픽 렌더링 계층  
- 응용 프로그램에서 실행 하는 하드웨어 구성을 예측 하기가 매우 어려울 수 있습니다. 그러나 다음 고려 하면 응용 프로그램을 원활 하 게 기능을 전환할 다른 하드웨어에서 실행 하는 경우 각 다른 하드웨어 구성에 완전히 활용을 수행할 수 있도록 하는 디자인 하는 것이 좋습니다.  
+ 응용 프로그램에서 실행 되는 하드웨어 구성을 예측 하기가 매우 어려울 수 있습니다. 그러나 응용 프로그램을 원활 하 게 전환 기능 다른 하드웨어에서 실행 하는 경우 각 다른 하드웨어 구성의 활용을 취할 수 있도록 허용 하는 디자인을 고려해 야 할 수 있습니다.  
   
- 이 작업을 수행할 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 런타임에 시스템의 그래픽 기능을 확인 하는 기능을 제공 합니다. 세 개의 기능 계층을 렌더링 중 하나로 비디오 카드를 범주화 하 여 그래픽 기능이 결정 됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 노출 된 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] 렌더링 기능 계층을 쿼리 하는 응용 프로그램을 허용 하 합니다. 그러면 응용 프로그램 하드웨어에서 지 원하는 렌더링 계층에 따라 실행 시 서로 다른 코드 경로 수행할 수 있습니다.  
+ 이 위해 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 런타임 시 시스템의 그래픽 기능을 확인 하는 기능을 제공 합니다. 그래픽 기능 세 개의 기능 계층을 렌더링 중 하나로 비디오 카드를 범주화 하 여 결정 됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 표시는 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] 응용 프로그램의 렌더링 기능 계층을 쿼리할 수 있도록 합니다. 응용 프로그램 하드웨어에서 지 원하는 렌더링 계층에 따라 런타임 시 다른 코드 경로 취할 수 있습니다.  
   
  렌더링 계층 수준에 가장 큰 영향을 미치는 그래픽 하드웨어 기능은 다음과 같습니다.  
   
@@ -42,25 +42,25 @@ ms.locfileid: "33547256"
   
 -   **여러 질감 지원** 여러 질감 지원은 3D 그래픽 개체에서 혼합 작업 중에 두 개 이상의 개별 질감을 적용할 수 있는 기능을 나타냅니다. 여러 질감 지원 정도는 그래픽 하드웨어의 여러 질감 단위 수에 따라 결정됩니다.  
   
- 픽셀 셰이더, 꼭 짓 점 셰이더 및 질감 기능 하는 데 특정 정의 [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 에서 다양 한 렌더링 계층을 정의 하는 데 사용 되는 버전 수준이 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다.  
+ 픽셀 셰이더, 꼭 짓 점 셰이더 및 여러 질감 기능 하는 데 특정 정의할 [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 에서 다양 한 렌더링 계층을 정의 하는 데 사용 되는 버전 수준이 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]합니다.  
   
- 그래픽 하드웨어 기능에 따라 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램의 렌더링 기능이 결정됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 시스템에서는 다음 세 개의 렌더링 계층을 정의합니다.  
+ 그래픽 하드웨어 기능에 따라 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애플리케이션의 렌더링 기능이 결정됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 시스템에서는 다음 세 개의 렌더링 계층을 정의합니다.  
   
 -   **렌더링 계층 0** 그래픽 하드웨어 가속이 없습니다. [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전 7.0 보다 낮은 버전 수준입니다.  
   
--   **계층 1 렌더링** 부분 그래픽 하드웨어 가속이 적용 합니다. [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전 수준 보다 크거나 버전 7.0, 및 **미만** 버전 9.0 보다 합니다.  
+-   **렌더링 계층 1** 부분 그래픽 하드웨어 가속 됩니다. 합니다 [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전 수준은 버전 7.0 보다 크거나 및 **적을수록** 버전 9.0 보다 합니다.  
   
 -   **렌더링 계층 2** 대부분의 그래픽 기능에서는 그래픽 하드웨어 가속을 사용합니다. [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 버전 수준은 버전 9.0 이상입니다.  
   
- 대 한 자세한 내용은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 참조 계층을 렌더링, [그래픽 렌더링 계층](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)합니다.  
+ 에 대 한 자세한 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 렌더링 계층을 참조 하세요 [그래픽 렌더링 계층](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WPF 응용 프로그램 성능 최적화](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
- [응용 프로그램 성능 계획](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
- [레이아웃 및 디자인](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [개체 동작](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
- [응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [텍스트](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
- [데이터 바인딩](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [기타 성능 권장 사항](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
+## <a name="see-also"></a>참고자료
+- [WPF 응용 프로그램 성능 최적화](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+- [응용 프로그램 성능 계획](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)
+- [레이아웃 및 디자인](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+- [2차원 그래픽 및 이미징](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [개체 동작](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)
+- [응용 프로그램 리소스](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [텍스트](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
+- [데이터 바인딩](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [기타 성능 권장 사항](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)

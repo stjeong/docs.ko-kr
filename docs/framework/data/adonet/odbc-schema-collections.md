@@ -2,12 +2,12 @@
 title: ODBC 스키마 컬렉션
 ms.date: 03/30/2017
 ms.assetid: 1bb126a5-ceec-4649-a4bc-8aa19e801046
-ms.openlocfilehash: bdedbb11960f02b99dcca6388abf663635238f74
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 072a9cd365031cd5660d1824bc229d459abc5af8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43877533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54525835"
 ---
 # <a name="odbc-schema-collections"></a>ODBC 스키마 컬렉션
 이 단원에서는 Microsoft SQL Server, Oracle 및 Microsoft Jet용 ODBC 드라이버에서 지원하는 스키마 컬렉션에 대해 설명합니다.  
@@ -332,5 +332,5 @@ ms.locfileid: "43877533"
 |ORDINAL_POSITION|Int32|  
 |IS_NULLABLE|문자열|  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

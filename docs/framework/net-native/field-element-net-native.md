@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b713eefa4f23aec34b5f55c0c3457381f54ef931
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: de8569c55ef50e3f18d084f7d7ad60c733e58e50
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54623107"
 ---
 # <a name="ltfieldgt-element-net-native"></a>&lt;필드&gt; 요소(.NET 네이티브)
 런타임 리플렉션 정책을 필드에 적용합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "33394623"
 ## <a name="remarks"></a>설명  
  필드의 정책이 명시적으로 정의되어 있지 않으면 부모 요소의 런타임 정책을 상속합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## <a name="see-also"></a>참고자료
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

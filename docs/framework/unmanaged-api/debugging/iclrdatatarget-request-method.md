@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dc79277c75118b11766e66137284bd5655eed091
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 77bd3bc239d0101f02cd515b0ec2a8bec3372882
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33405374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54596906"
 ---
 # <a name="iclrdatatargetrequest-method"></a>ICLRDataTarget::Request 메서드
 구현에 의해 정의 된 대로 작업을 요청 하는 공용 언어 런타임 (CLR) 데이터 액세스 서비스에서 호출 됩니다.  
@@ -49,7 +49,7 @@ HRESULT Request (
  [in] 들어오는 요청에 사용 되는 입력된 버퍼의 크기입니다.  
   
  `inBuffer`  
- [in] 요청을 포함 하는 버퍼입니다.  
+ [in] 요청이 포함 된 버퍼입니다.  
   
  `outBufferSize`  
  [in] 응답에 사용 되는 출력 버퍼의 크기입니다.  
@@ -58,18 +58,18 @@ HRESULT Request (
  [out] 응답을 포함 하는 버퍼입니다.  
   
 ## <a name="remarks"></a>설명  
- `Request` 메서드 지정 되지 않은 사용자 지정 작업 추가 용이 하 게 합니다. 즉,이 메서드는 인터페이스 정의 수정할 필요 없이 확장성을 제공 합니다.  
+ `Request` 메서드를 용이 하 게 지정 되지 않은 사용자 지정 작업을 추가 합니다. 즉,이 메서드는 인터페이스 정의 수정할 필요 없이 확장성을 제공 합니다.  
   
  이 메서드는 디버깅 응용 프로그램의 작성자가 구현합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** ClrData.idl, ClrData.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICLRDataTarget 인터페이스](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## <a name="see-also"></a>참고자료
+- [ICLRDataTarget 인터페이스](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

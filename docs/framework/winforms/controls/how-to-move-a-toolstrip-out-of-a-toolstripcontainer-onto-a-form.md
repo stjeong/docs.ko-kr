@@ -1,18 +1,18 @@
 ---
-title: '방법: ToolStripContainer의 ToolStrip을 폼으로 이동'
+title: '방법: 폼에 ToolStripContainer의 ToolStrip 이동'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - ToolStrip control [Windows Forms], parenting to forms
 - Windows Forms, parenting ToolStrip controls
 ms.assetid: a1c94a7f-6fc5-4e4c-84cf-ff11dc573d33
-ms.openlocfilehash: a4b6e3bbc0750ba69607b5c0f96bdbb542aea1be
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 4e5c621b9738ce6b5f259425e63a2369556c4ded
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54597719"
 ---
-# <a name="how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form"></a>방법: ToolStripContainer의 ToolStrip을 폼으로 이동
+# <a name="how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form"></a>방법: 폼에 ToolStripContainer의 ToolStrip 이동
 이동 하려면 다음 절차는 <xref:System.Windows.Forms.ToolStrip> 개는 <xref:System.Windows.Forms.ToolStripContainer> 폼으로.  
   
 > [!NOTE]
@@ -30,7 +30,7 @@ ms.locfileid: "43529400"
   
 5.  설정를 <xref:System.Windows.Forms.ToolStrip.Dock%2A> 의 속성을 <xref:System.Windows.Forms.ToolStrip> 에 **위쪽**합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.ToolStripContainer>  
- [ToolStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.ToolStripContainer>
+- [ToolStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

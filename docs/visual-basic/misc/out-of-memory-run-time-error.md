@@ -4,19 +4,19 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID7
 ms.assetid: 96cc12e1-d40a-425f-b365-1ac39e5ddcb0
-ms.openlocfilehash: a6b9240a072fe88363ada41931566d39c702cc42
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 59d4a267653a4f1b46d24786d4f41e3385155ec3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33637480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54600507"
 ---
 # <a name="out-of-memory-visual-basic-run-time-error"></a>메모리가 부족합니다(Visual Basic 런타임 오류).
 사용 가능한 것보다 더 많은 메모리가 필요했습니다.  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-1.  열려 있는 불필요한 응용 프로그램, 문서 또는 소스 파일을 닫습니다.  
+1.  열려 있는 불필요한 애플리케이션, 문서 또는 소스 파일을 닫습니다.  
   
 2.  큰 모듈 또는 프로시저를 더 작은 모듈 또는 프로시저로 나눕니다.  
   
@@ -26,5 +26,5 @@ ms.locfileid: "33637480"
   
 5.  공용 변수 수를 줄입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [오류 형식](../../visual-basic/programming-guide/language-features/error-types.md)
+## <a name="see-also"></a>참고자료
+- [오류 형식](../../visual-basic/programming-guide/language-features/error-types.md)

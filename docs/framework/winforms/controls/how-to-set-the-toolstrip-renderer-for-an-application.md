@@ -1,5 +1,5 @@
 ---
-title: '방법: 응용 프로그램에 대한 ToolStrip 렌더러 설정'
+title: '방법: 응용 프로그램에 대 한 ToolStrip 렌더러 설정'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - MenuStrip control [Windows Forms]
 - toolbars [Windows Forms], customizing
 ms.assetid: 46acef3e-9844-4ae8-9a2e-3006fe99cadf
-ms.openlocfilehash: b86724bda83c701ad5c5872ae8d97bb490158e76
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 2eaa917ff903c1d9e1579ac9c9caa3f3db516afb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45698237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54577220"
 ---
-# <a name="how-to-set-the-toolstrip-renderer-for-an-application"></a>방법: 응용 프로그램에 대한 ToolStrip 렌더러 설정
+# <a name="how-to-set-the-toolstrip-renderer-for-an-application"></a>방법: 응용 프로그램에 대 한 ToolStrip 렌더러 설정
 <xref:System.Windows.Forms.ToolStrip> 컨트롤의 모양을 개별적으로 또는 응용 프로그램의 모든 <xref:System.Windows.Forms.ToolStrip> 컨트롤에 대해 사용자 지정할 수 있습니다.  
   
 ## <a name="example"></a>예제  
@@ -42,11 +42,11 @@ ms.locfileid: "45698237"
   
 -   System.Design, System.Drawing 및 System.Windows.Forms 어셈블리에 대한 참조  
   
- Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  [방법: Visual Studio를 사용하여 전체 Windows Forms 코드 예제 컴파일 및 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))을 참조하세요.  
+ Visual Basic 또는 Visual C#에 대 한 명령줄에서이 예제를 빌드하는 방법에 대 한 내용은 [명령줄에서 빌드](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) 하거나 [csc.exe를 사용한 명령줄 빌드](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)합니다. 또한 새 프로젝트에 코드를 붙여 넣어 Visual Studio에서이 예제를 빌드할 수 있습니다.  또한 참조 [방법: 컴파일 및 Visual Studio를 사용 하 여 전체 Windows Forms 코드 예제를 실행](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\))합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.ToolStripManager>  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.ToolStripProfessionalRenderer>  
- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.ToolStripManager>
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.ToolStripProfessionalRenderer>
+- [ToolStrip 컨트롤](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

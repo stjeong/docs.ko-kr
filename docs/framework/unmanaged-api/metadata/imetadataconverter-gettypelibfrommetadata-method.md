@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 9351738e979b49ec23b51a2fa554fc219e163541
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 0a6c39989a37f46d684c3a467d5e099ea7167185
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33444118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54624134"
 ---
 # <a name="imetadataconvertergettypelibfrommetadata-method"></a>IMetaDataConverter::GetTypeLibFromMetaData 메서드
-에 대 한 포인터를 가져옵니다는 `ITypeLib` 라이브러리 및 모듈 이름이 지정 된 형식 라이브러리를 나타내는 인스턴스입니다.  
+포인터를 가져는 `ITypeLib` 지정 된 라이브러리 및 모듈 이름에는 형식 라이브러리를 나타내는 인스턴스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,22 +39,22 @@ HRESULT GetTypeLibFromMetaData (
   
 #### <a name="parameters"></a>매개 변수  
  `strModule`  
- [in] 형식 라이브러리 모듈의 이름입니다.  
+ [in] 형식 라이브러리의 모듈의 이름입니다.  
   
  `strTlbName`  
  [in] 형식 라이브러리의 이름입니다.  
   
  `ppITL`  
- [out] 주소를 받는 위치에 대 한 포인터는 `ITypeLib` 형식 라이브러리를 나타내는 인스턴스입니다.  
+ [out] 주소를 수신 하는 위치에 대 한 포인터를 `ITypeLib` 형식 라이브러리를 나타내는 인스턴스입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에서 리소스로 사용  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IMetaDataConverter 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataconverter-interface.md)
+## <a name="see-also"></a>참고자료
+- [IMetaDataConverter 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataconverter-interface.md)

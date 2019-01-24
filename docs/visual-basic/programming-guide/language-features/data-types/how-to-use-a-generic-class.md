@@ -1,5 +1,5 @@
 ---
-title: '방법: 제네릭 클래스 사용(Visual Basic)'
+title: '방법: 제네릭 클래스 (Visual Basic)를 사용 합니다.'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - type parameters [Visual Basic], defining
@@ -21,14 +21,14 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
-ms.openlocfilehash: 108532e5b765fa918fa894199ef710a9f52db4e4
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: cd2e48ad9ee5e6266fff676cf109cdf6b0136f32
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46003713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573909"
 ---
-# <a name="how-to-use-a-generic-class-visual-basic"></a>방법: 제네릭 클래스 사용(Visual Basic)
+# <a name="how-to-use-a-generic-class-visual-basic"></a>방법: 제네릭 클래스 (Visual Basic)를 사용 합니다.
 *형식 매개 변수* 를 사용하는 클래스를 *제네릭 클래스*라고 합니다. 제네릭 클래스를 사용 중인 경우 이러한 각 매개 변수에 대해 *형식 인수* 를 제공하여, 여기에서 *생성된 클래스* 를 만들 수 있습니다. 그런 다음 생성된 클래스 형식의 변수를 선언하고, 생성된 클래스의 인스턴스를 만들어 해당 변수에 할당할 수 있습니다.  
   
  클래스 이외에도 제네릭 구조체, 인터페이스, 프로시저 및 대리자도 정의할 수 있습니다.  
@@ -47,10 +47,10 @@ ms.locfileid: "46003713"
   
 ## <a name="see-also"></a>참고자료
 
-- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
-- [Visual Basic의 제네릭 형식](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
-- [언어 독립성 및 언어 독립적 구성 요소](../../../../standard/language-independence-and-language-independent-components.md)  
-- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
-- [Imports 문(.NET 네임스페이스 및 형식)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
-- [방법: 다른 데이터 형식에 동일한 기능을 제공할 수 있는 클래스 정의](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)  
+- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Visual Basic의 제네릭 형식](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [언어 독립성 및 언어 독립적 구성 요소](../../../../standard/language-independence-and-language-independent-components.md)
+- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)
+- [Imports 문(.NET 네임스페이스 및 형식)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [방법: 다른 데이터 형식에 동일한 기능을 제공할 수 있는 클래스 정의](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)
 - [반복기](../../../../visual-basic/programming-guide/concepts/iterators.md)

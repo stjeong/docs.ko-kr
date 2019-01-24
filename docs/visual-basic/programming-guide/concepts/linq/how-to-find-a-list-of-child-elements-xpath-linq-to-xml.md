@@ -1,23 +1,23 @@
 ---
-title: '방법: 자식 요소 (XPath 및 LINQ to XML) 목록 찾기 (Visual Basic)'
+title: '방법: (XPath 및 LINQ to XML) 자식 요소 목록 찾기 (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 2868abfd-9f7b-412a-9cb5-f643f0fed146
-ms.openlocfilehash: 9b852e2a1129dfc9c54357b6c20769e16a992d80
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: 4ff9e5f1dc1d1b6c9ac1674434bcb2bc4c57ffde
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39296171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54625111"
 ---
-# <a name="how-to-find-a-list-of-child-elements-xpath-linq-to-xml-visual-basic"></a>방법: 자식 요소 (XPath 및 LINQ to XML) 목록 찾기 (Visual Basic)
+# <a name="how-to-find-a-list-of-child-elements-xpath-linq-to-xml-visual-basic"></a>방법: (XPath 및 LINQ to XML) 자식 요소 목록 찾기 (Visual Basic)
 이 항목에서는 XPath 자식 요소 축과 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> 축을 비교합니다.  
   
  XPath 식은 `./*`입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `Address` 요소의 모든 자식 요소를 찾습니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 여러 구매 주문(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md)을 사용합니다.  
+ 이 예제에서는 XML 문서로 을 사용합니다. [샘플 XML 파일: 여러 구매 주문 (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md)합니다.  
   
 ```vb  
 Dim cpo As XDocument = XDocument.Load("PurchaseOrders.xml")  
@@ -52,5 +52,5 @@ Results are identical
 <Country>USA</Country>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [XPath 사용자 (Visual Basic)를 위한 LINQ to XML](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## <a name="see-also"></a>참고자료
+- [XPath 사용자 (Visual Basic)를 위한 LINQ to XML](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

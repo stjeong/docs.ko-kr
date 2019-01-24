@@ -9,12 +9,12 @@ helpviewer_keywords:
 - mc:ProcessContent attribute
 - XAML [WPF], mc:ProcessContent attribute
 ms.assetid: acd9a6ef-b7ca-4146-abb6-60f3b366e9ec
-ms.openlocfilehash: e8fa4c084ae9c775a18de06c344b2c0b439c2b1b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 25f5fb254ec6f952d7cafa2cb893e35daa0e9029
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573938"
 ---
 # <a name="mcignorable-attribute"></a>mc:Ignorable 특성
 지정 [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] 여는 태그 파일에서 발생 하는 네임 스페이스 접두사를 무시할 수 있습니다는 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 프로세서. 합니다 `mc:Ignorable` 특성에 대 한 및 사용자 지정 네임 스페이스 매핑에 대 한 태그 호환성 지원 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 버전 관리 합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "43517363"
   
 |||  
 |-|-|  
-|*ignorablePrefix, ignorablePrefix1 등입니다.*|XML 1.0 사양에 따라 모든 유효한 접두사 문자열입니다.|  
+|*ignorablePrefix, ignorablePrefix1, etc.*|XML 1.0 사양에 따라 모든 유효한 접두사 문자열입니다.|  
 |*ignorableUri*|XML 1.0 사양에 따라 네임 스페이스를 지정 하는 것에 대 한 모든 유효한 URI입니다.|  
 |*ThisElementCanBeIgnored*|무시할 수 있는 요소 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 내부 형식을 확인할 수 없는 경우 프로세서 구현 합니다.|  
   
@@ -65,8 +65,8 @@ ms.locfileid: "43517363"
 
  합니다 [!INCLUDE[TLA#tla_mcxmlnsv1](../../../../includes/tlasharptla-mcxmlnsv1-md.md)] 다른 요소와의이 영역 내에서 다루지 않는 특성을 정의 하는 네임 스페이스는 [!INCLUDE[TLA#tla_sdk](../../../../includes/tlasharptla-sdk-md.md)]합니다. 자세한 내용은 [XML 태그 호환성 사양](/office/open-xml/introduction-to-markup-compatibility#markup-compatibility-in-the-open-xml-file-formats-specification)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Markup.XamlReader>  
- [PresentationOptions:Freeze 특성](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)  
- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Markup.XamlReader>
+- [PresentationOptions:Freeze 특성](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)
+- [XAML 개요(WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)

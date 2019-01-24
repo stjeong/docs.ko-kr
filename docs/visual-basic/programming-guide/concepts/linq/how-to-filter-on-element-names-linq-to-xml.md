@@ -1,21 +1,21 @@
 ---
-title: '방법: 요소 이름 (LINQ to XML)에 대 한 필터 (Visual Basic)'
+title: '방법: (LINQ to XML) 요소 이름 필터링 (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: b1437b4a-48aa-4546-834a-d6d3ab015fe1
-ms.openlocfilehash: 3c7ee9ceb2accef34e852396137107fb1f36350c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 6b685da79f149298df14db0d0793130325aa95d9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54578707"
 ---
-# <a name="how-to-filter-on-element-names-linq-to-xml-visual-basic"></a>방법: 요소 이름 (LINQ to XML)에 대 한 필터 (Visual Basic)
+# <a name="how-to-filter-on-element-names-linq-to-xml-visual-basic"></a>방법: (LINQ to XML) 요소 이름 필터링 (Visual Basic)
 <xref:System.Collections.Generic.IEnumerable%601>의 <xref:System.Xml.Linq.XElement>을 반환하는 메서드 중 하나를 호출하면 요소 이름을 기준으로 필터링할 수 있습니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 하위 요소의 컬렉션을 검색합니다. 하위 항목이 필터링되므로 컬렉션에는 지정된 이름을 가진 하위 항목만 포함됩니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 일반적인 구매 주문(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md)을 사용합니다.  
+ 이 예제에서는 XML 문서로 을 사용합니다. [샘플 XML 파일: 일반적인 구매 주문 (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md)합니다.  
   
 ```vb  
 Dim po As XElement = XElement.Load("PurchaseOrder.xml")  
@@ -51,9 +51,9 @@ ProductName:Baby Monitor
 -   <xref:System.Xml.Linq.XElement.DescendantsAndSelf%2A>  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 네임스페이스에 있는 XML에 대한 동일한 쿼리를 보여 줍니다. 자세한 내용은 참조 [XML 네임 스페이스 (Visual Basic) 작업](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)합니다.  
+ 다음 예제에서는 네임스페이스에 있는 XML에 대한 동일한 쿼리를 보여 줍니다. 자세한 내용은 [XML 네임 스페이스 (Visual Basic)를 사용 하 여 작업](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)합니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: 네임스페이스에서 일반적인 구매 주문](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md)을 사용합니다.  
+ 이 예제에서는 XML 문서로 을 사용합니다. [샘플 XML 파일: Namespace에서 일반적인 구매 주문](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md)합니다.  
   
 ```vb  
 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -78,5 +78,5 @@ End Module
 {http://www.adventure-works.com}ProductName:Baby Monitor  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to XML 축(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## <a name="see-also"></a>참고자료
+- [LINQ to XML 축(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)

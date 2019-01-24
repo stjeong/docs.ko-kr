@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 관리 개요
+title: 애플리케이션 관리 개요
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,29 +7,29 @@ dev_langs:
 helpviewer_keywords:
 - application management [WPF]
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
-ms.openlocfilehash: ba8d07a26b7e6abc511e5b24db26162b46a2b0a1
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 39e78be4806a58d8e274d1e6ce58a1f1ee46ce1a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44042259"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592035"
 ---
-# <a name="application-management-overview"></a>응용 프로그램 관리 개요
-모든 응용 프로그램은 응용 프로그램 구현 및 관리에 적용하는 일반적인 기능 집합을 공유하는 경향이 있습니다. 이 항목에서는의 기능 개요를 제공 합니다 <xref:System.Windows.Application> 만들고 응용 프로그램을 관리 하기 위한 클래스입니다.  
+# <a name="application-management-overview"></a>애플리케이션 관리 개요
+모든 애플리케이션은 애플리케이션 구현 및 관리에 적용하는 일반적인 기능 집합을 공유하는 경향이 있습니다. 이 항목에서는의 기능 개요를 제공 합니다 <xref:System.Windows.Application> 만들고 응용 프로그램을 관리 하기 위한 클래스입니다.  
    
   
 ## <a name="the-application-class"></a>Application 클래스  
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], 일반적인 응용 프로그램 범위 기능은에 캡슐화 되어를 <xref:System.Windows.Application> 클래스입니다. <xref:System.Windows.Application> 클래스에는 다음 기능이 포함 되어 있습니다.:  
   
--   응용 프로그램 수명 추적 및 상호 작용  
+-   애플리케이션 수명 추적 및 상호 작용  
   
 -   명령줄 매개 변수 검색 및 처리  
   
 -   처리되지 않은 예외의 검색 및 응답  
   
--   응용 프로그램 범위 속성 및 리소스 공유  
+-   애플리케이션 범위 속성 및 리소스 공유  
   
--   독립 실행형 응용 프로그램에서 창 관리  
+-   독립 실행형 애플리케이션에서 창 관리  
   
 -   탐색 추적 및 관리  
   
@@ -39,29 +39,29 @@ ms.locfileid: "44042259"
   
 |작업|방식|  
 |----------|--------------|  
-|현재 응용 프로그램을 나타내는 개체 가져오기|<xref:System.Windows.Application.Current%2A?displayProperty=nameWithType> 속성을 사용합니다.|  
-|응용 프로그램에 시작 화면 추가|참조 [WPF 응용 프로그램에 시작 화면 추가](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)합니다.|  
-|응용 프로그램 시작|<xref:System.Windows.Application.Run%2A?displayProperty=nameWithType> 메서드를 사용하세요.|  
-|응용 프로그램 중지|사용 된 <xref:System.Windows.Application.Shutdown%2A> 메서드를 <xref:System.Windows.Application.Current%2A?displayProperty=nameWithType> 개체.|  
+|현재 애플리케이션을 나타내는 개체 가져오기|<xref:System.Windows.Application.Current%2A?displayProperty=nameWithType> 속성을 사용합니다.|  
+|애플리케이션에 시작 화면 추가|참조 [WPF 응용 프로그램에 시작 화면 추가](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)합니다.|  
+|애플리케이션 시작|<xref:System.Windows.Application.Run%2A?displayProperty=nameWithType> 메서드를 사용하세요.|  
+|애플리케이션 중지|사용 된 <xref:System.Windows.Application.Shutdown%2A> 메서드를 <xref:System.Windows.Application.Current%2A?displayProperty=nameWithType> 개체.|  
 |명령줄에서 인수 가져오기|처리를 <xref:System.Windows.Application.Startup?displayProperty=nameWithType> 이벤트를 사용 하 여는 <xref:System.Windows.StartupEventArgs.Args%2A?displayProperty=nameWithType> 속성입니다. 예를 들어 참조 된 <xref:System.Windows.Application.Startup?displayProperty=nameWithType> 이벤트입니다.|  
-|응용 프로그램 종료 코드 가져오기 및 설정|설정 합니다 <xref:System.Windows.ExitEventArgs.ApplicationExitCode%2A?displayProperty=nameWithType> 속성에는 <xref:System.Windows.Application.Exit?displayProperty=nameWithType> 이벤트 처리기 또는 호출은 <xref:System.Windows.Application.Shutdown%2A> 메서드와 정수를 전달 합니다.|  
+|애플리케이션 종료 코드 가져오기 및 설정|설정 합니다 <xref:System.Windows.ExitEventArgs.ApplicationExitCode%2A?displayProperty=nameWithType> 속성에는 <xref:System.Windows.Application.Exit?displayProperty=nameWithType> 이벤트 처리기 또는 호출은 <xref:System.Windows.Application.Shutdown%2A> 메서드와 정수를 전달 합니다.|  
 |처리되지 않은 예외의 검색 및 응답|처리는 <xref:System.Windows.Application.DispatcherUnhandledException> 이벤트입니다.|  
-|응용 프로그램 범위 리소스 가져오기 및 설정|<xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> 속성을 사용합니다.|  
-|응용 프로그램 범위 리소스 사전 사용|참조 [는 응용 프로그램 범위 리소스 사전 사용](../../../../docs/framework/wpf/app-development/how-to-use-an-application-scope-resource-dictionary.md)합니다.|  
-|응용 프로그램 범위 속성 가져오기 및 설정|<xref:System.Windows.Application.Properties%2A?displayProperty=nameWithType> 속성을 사용합니다.|  
-|응용 프로그램 상태 가져오기 및 저장|참조 [유지 및 응용 프로그램 세션 간의 응용 프로그램 범위 속성 복원](../../../../docs/framework/wpf/app-development/persist-and-restore-application-scope-properties.md)합니다.|  
+|애플리케이션 범위 리소스 가져오기 및 설정|<xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> 속성을 사용합니다.|  
+|애플리케이션 범위 리소스 사전 사용|참조 [는 응용 프로그램 범위 리소스 사전 사용](../../../../docs/framework/wpf/app-development/how-to-use-an-application-scope-resource-dictionary.md)합니다.|  
+|애플리케이션 범위 속성 가져오기 및 설정|<xref:System.Windows.Application.Properties%2A?displayProperty=nameWithType> 속성을 사용합니다.|  
+|애플리케이션 상태 가져오기 및 저장|참조 [유지 및 응용 프로그램 세션 간의 응용 프로그램 범위 속성 복원](../../../../docs/framework/wpf/app-development/persist-and-restore-application-scope-properties.md)합니다.|  
 |리소스 파일, 콘텐츠 파일 및 원본 사이트 파일을 포함하여 비코드 데이터 파일 관리|참조 [WPF 응용 프로그램 리소스, 콘텐츠 및 데이터 파일](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)합니다.|  
-|독립 실행형 응용 프로그램의 창 관리|[WPF 창 개요](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md)를 참조하세요.|  
+|독립 실행형 애플리케이션의 창 관리|[WPF 창 개요](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md)를 참조하세요.|  
 |탐색 추적 및 관리|참조 [탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)합니다.|  
   
 <a name="The_Application_Definition"></a>   
-## <a name="the-application-definition"></a>응용 프로그램 정의  
+## <a name="the-application-definition"></a>애플리케이션 정의  
  기능을 활용 하 여 <xref:System.Windows.Application> 클래스를 응용 프로그램 정의 구현 해야 합니다. A [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램 정의에서 파생 된 클래스는 <xref:System.Windows.Application> 특별 한으로 구성 됩니다 [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)] 설정 합니다.  
   
-### <a name="implementing-an-application-definition"></a>응용 프로그램 정의 구현  
- 일반적인 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램 정의 태그와 코드 숨김을 모두 사용 하 여 구현 됩니다. 따라서 코드 숨김에서 응용 프로그램별 동작을 구현하고 이벤트를 처리하는 동시에 태그를 사용하여 응용 프로그램 속성과 리소스를 선언적으로 설정하고 이벤트를 등록할 수 있습니다.  
+### <a name="implementing-an-application-definition"></a>애플리케이션 정의 구현  
+ 일반적인 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램 정의 태그와 코드 숨김을 모두 사용 하 여 구현 됩니다. 따라서 코드 숨김에서 애플리케이션별 동작을 구현하고 이벤트를 처리하는 동시에 태그를 사용하여 애플리케이션 속성과 리소스를 선언적으로 설정하고 이벤트를 등록할 수 있습니다.  
   
- 다음 예제에서는 태그 및 코드 숨김을 모두 사용하여 응용 프로그램 정의를 구현하는 방법을 보여 줍니다.  
+ 다음 예제에서는 태그 및 코드 숨김을 모두 사용하여 애플리케이션 정의를 구현하는 방법을 보여 줍니다.  
   
  [!code-xaml[ApplicationSnippets#ApplicationXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSnippets/CSharp/App.xaml#applicationxaml)]  
   
@@ -77,10 +77,10 @@ ms.locfileid: "44042259"
 > [!NOTE]
 >  새 WPF 응용 프로그램 프로젝트나 WPF 브라우저 응용 프로그램 프로젝트를 사용 하 여 만들 때 [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], 응용 프로그램 정의 기본적으로 포함 되어 있으며 태그와 코드 숨김을 모두 사용 하 여 정의 됩니다.  
   
- 이 코드는 응용 프로그램 정의를 구현하는 데 필요한 최소한의 코드이지만, 그러나 추가 [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] 구축 하 고 응용 프로그램을 실행 하기 전에 응용 프로그램 정의에 대 한 구성을 설정 해야 합니다.  
+ 이 코드는 애플리케이션 정의를 구현하는 데 필요한 최소한의 코드이지만, 그러나 추가 [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] 구축 하 고 응용 프로그램을 실행 하기 전에 응용 프로그램 정의에 대 한 구성을 설정 해야 합니다.  
   
-### <a name="configuring-the-application-definition-for-msbuild"></a>MSBuild용 응용 프로그램 정의 구성  
- 독립 실행형 응용 프로그램 및 [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] 실행 되기 전에 특정 수준의 인프라 구현이 필요 합니다. 이 인프라의 가장 중요한 부분은 진입점입니다. 사용자가 응용 프로그램을 시작하면 운영 체제에서는 잘 알려진 응용 프로그램 시작 함수인 진입점을 호출합니다.  
+### <a name="configuring-the-application-definition-for-msbuild"></a>MSBuild용 애플리케이션 정의 구성  
+ 독립 실행형 응용 프로그램 및 [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] 실행 되기 전에 특정 수준의 인프라 구현이 필요 합니다. 이 인프라의 가장 중요한 부분은 진입점입니다. 사용자가 애플리케이션을 시작하면 운영 체제에서는 잘 알려진 애플리케이션 시작 함수인 진입점을 호출합니다.  
   
  일반적으로는 기술에 따라 개발자가 직접 이 코드 일부나 전체를 작성해야 합니다. 그러나 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램 정의의 태그 파일 구성 된 경우이 코드를 생성 한 [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] `ApplicationDefinition` 항목을 다음에 표시 된 대로 [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] 프로젝트 파일:  
   
@@ -107,7 +107,7 @@ ms.locfileid: "44042259"
  결과 코드 진입점 메서드를 포함 하는 추가 인프라 코드로 응용 프로그램 정의 보강 `Main`합니다. <xref:System.STAThreadAttribute> 특성이 적용 되는 `Main` 메서드를 나타내는 기본 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 스레드를 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에 필요한 STA 스레드는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램입니다. 를 호출 하면 `Main` 의 새 인스턴스를 만듭니다 `App` 호출 하기 전에 `InitializeComponent` 이벤트를 등록 하는 속성을 설정 하는 메서드는 태그에서 구현 됩니다. 때문에 `InitializeComponent` 생성을 명시적으로 호출할 필요가 없습니다 `InitializeComponent` 에 대 한 것 처럼 응용 프로그램 정의에서 <xref:System.Windows.Controls.Page> 및 <xref:System.Windows.Window> 구현 합니다. 마지막으로 <xref:System.Windows.Application.Run%2A> 메서드를 호출 하는 응용 프로그램을 시작 합니다.  
   
 <a name="Getting_the_Current_Application"></a>   
-## <a name="getting-the-current-application"></a>현재 응용 프로그램 가져오기  
+## <a name="getting-the-current-application"></a>현재 애플리케이션 가져오기  
  때문에 기능의 합니다 <xref:System.Windows.Application> 클래스는 응용 프로그램 간에 공유 되며, 하나의 인스턴스만 있을 수 있습니다 합니다 <xref:System.Windows.Application> 당 클래스 <xref:System.AppDomain>합니다. 이 적용 하는 <xref:System.Windows.Application> 클래스는 singleton 클래스로 구현 됩니다 (참조 [C#에서 Singleton 구현](https://go.microsoft.com/fwlink/?LinkId=100567))를 자체의 단일 인스턴스를 만들고 제공 하는 공유 액세스를 사용 하 여 합니다 `static` <xref:System.Windows.Application.Current%2A> 속성입니다.  
   
  다음 코드에 대 한 참조를 확보 하는 방법을 보여 줍니다 합니다 <xref:System.Windows.Application> 현재 <xref:System.AppDomain>합니다.  
@@ -125,7 +125,7 @@ ms.locfileid: "44042259"
  때 <xref:System.Windows.Application> 초기화 작업을 완료할 실제 수명이 시작 됩니다.  
   
 <a name="Application_Lifetime"></a>   
-## <a name="application-lifetime"></a>응용 프로그램 수명  
+## <a name="application-lifetime"></a>애플리케이션 수명  
  기간을 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에서 발생 하는 몇 가지 이벤트로 표시 됩니다 <xref:System.Windows.Application> 응용 프로그램이 시작 된 시기를 알 수 있도록 활성화 및 비활성화 및 종료 되었습니다.  
   
   
@@ -134,7 +134,7 @@ ms.locfileid: "44042259"
  시작 합니다 [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], 시작 창에서 사용할 이미지를 지정할 수 있습니다 또는 *시작 화면*합니다. <xref:System.Windows.SplashScreen> 클래스를 사용 하면 쉽게 응용 프로그램을 로드 하는 동안 시작 창을 표시할 수 있습니다. 합니다 <xref:System.Windows.SplashScreen> 창을 만들고 앞에서 나온 <xref:System.Windows.Application.Run%2A> 라고 합니다. 자세한 내용은 [응용 프로그램 시작 시간](../../../../docs/framework/wpf/advanced/application-startup-time.md) 하 고 [WPF 응용 프로그램 시작 화면에 추가](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)합니다.  
   
 <a name="Starting_an_Application"></a>   
-### <a name="starting-an-application"></a>응용 프로그램 시작  
+### <a name="starting-an-application"></a>애플리케이션 시작  
  후 <xref:System.Windows.Application.Run%2A> 라고 응용 프로그램이 초기화 되 고 응용 프로그램을 실행할 준비가 되었습니다. 이 현재는 때로 표시 됩니다는 <xref:System.Windows.Application.Startup> 이벤트가 발생 합니다.  
   
  [!code-csharp[ApplicationStartupSnippets#StartupCODEBEHIND1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml.cs#startupcodebehind1)]
@@ -182,7 +182,7 @@ ms.locfileid: "44042259"
   
 <a name="Processing_Command_Line_Arguments"></a>   
 ### <a name="processing-command-line-arguments"></a>명령줄 인수 처리  
- Windows에서 독립 실행형 응용 프로그램을 명령 프롬프트 또는 데스크톱에서 실행할 수 있습니다. 두 경우 모두 명령줄 인수를 응용 프로그램으로 전달할 수 있습니다. 다음 예제에서는 단일 명령줄 인수 "/StartMinimized"를 사용하여 시작되는 응용 프로그램을 보여 줍니다.  
+ Windows에서 독립 실행형 응용 프로그램을 명령 프롬프트 또는 데스크톱에서 실행할 수 있습니다. 두 경우 모두 명령줄 인수를 애플리케이션으로 전달할 수 있습니다. 다음 예제에서는 단일 명령줄 인수 "/StartMinimized"를 사용하여 시작되는 애플리케이션을 보여 줍니다.  
   
  `wpfapplication.exe /StartMinimized`  
   
@@ -198,8 +198,8 @@ ms.locfileid: "44042259"
  [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] 검색 및 사용 하 여 시작 되기 때문에 명령줄 인수를 처리할 수 없습니다 [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] 배포 (참조 [WPF 응용 프로그램 배포](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)). 그러나 XBAP를 시작하는 데 사용되는 URL에서 쿼리 문자열 매개 변수를 검색하고 처리할 수 있습니다.  
   
 <a name="Application_Activation_and_Deactivation"></a>   
-### <a name="application-activation-and-deactivation"></a>응용 프로그램 활성화 및 비활성화  
- Windows를 사용 하면 응용 프로그램 간에 전환할 수 있습니다. 가장 일반적인 방법은 ALT+TAB 키 조합을 사용하는 것입니다. 가 표시 되어 있는 경우 응용 프로그램을 전환할 수만 <xref:System.Windows.Window> 사용자가 선택할 수 있는 합니다. 현재 선택한 <xref:System.Windows.Window> 는 *활성 창* (라고도 합니다 *전경 창이*) 이며는 <xref:System.Windows.Window> 사용자 입력을 수신 하는. 활성 창 사용 하 여 응용 프로그램은는 *활성 응용 프로그램* (또는 *포그라운드 응용 프로그램이*). 다음과 같은 경우에 응용 프로그램이 활성 응용 프로그램이 됩니다.  
+### <a name="application-activation-and-deactivation"></a>애플리케이션 활성화 및 비활성화  
+ Windows를 사용 하면 응용 프로그램 간에 전환할 수 있습니다. 가장 일반적인 방법은 ALT+TAB 키 조합을 사용하는 것입니다. 가 표시 되어 있는 경우 응용 프로그램을 전환할 수만 <xref:System.Windows.Window> 사용자가 선택할 수 있는 합니다. 현재 선택한 <xref:System.Windows.Window> 는 *활성 창* (라고도 합니다 *전경 창이*) 이며는 <xref:System.Windows.Window> 사용자 입력을 수신 하는. 활성 창 사용 하 여 응용 프로그램은는 *활성 응용 프로그램* (또는 *포그라운드 응용 프로그램이*). 다음과 같은 경우에 애플리케이션이 활성 애플리케이션이 됩니다.  
   
 -   시작 되 고 표시를 <xref:System.Windows.Window>입니다.  
   
@@ -207,11 +207,11 @@ ms.locfileid: "44042259"
   
  처리 하 여 응용 프로그램이 활성화 될 때 감지할 수 있습니다는 <xref:System.Windows.Application.Activated?displayProperty=nameWithType> 이벤트입니다.  
   
- 마찬가지로 다음과 같은 경우에는 응용 프로그램이 비활성화됩니다.  
+ 마찬가지로 다음과 같은 경우에는 애플리케이션이 비활성화됩니다.  
   
--   사용자가 현재 응용 프로그램에서 다른 응용 프로그램으로 전환하는 경우  
+-   사용자가 현재 애플리케이션에서 다른 애플리케이션으로 전환하는 경우  
   
--   응용 프로그램이 종료되는 경우  
+-   애플리케이션이 종료되는 경우  
   
  처리 하 여 응용 프로그램 비활성화 될 때 감지할 수 있습니다는 <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> 이벤트입니다.  
   
@@ -228,8 +228,8 @@ ms.locfileid: "44042259"
 >  모두 <xref:System.Windows.Application.Activated?displayProperty=nameWithType> 나 <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> 에 대해 발생 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]합니다.  
   
 <a name="Application_Shutdown"></a>   
-### <a name="application-shutdown"></a>응용 프로그램 종료  
- 다음과 같은 이유로 응용 프로그램이 종료되면 응용 프로그램 수명이 끝납니다.  
+### <a name="application-shutdown"></a>애플리케이션 종료  
+ 다음과 같은 이유로 애플리케이션이 종료되면 애플리케이션 수명이 끝납니다.  
   
 -   사용자가 모든 <xref:System.Windows.Window>합니다.  
   
@@ -237,7 +237,7 @@ ms.locfileid: "44042259"
   
 -   사용자 로그 오프 하거나 종료 하 여 Windows 세션을 종료 합니다.  
   
--   응용 프로그램별 조건이 충족된 경우  
+-   애플리케이션별 조건이 충족된 경우  
   
  응용 프로그램 종료를 관리할 수 있도록 <xref:System.Windows.Application> 제공 합니다 <xref:System.Windows.Application.Shutdown%2A> 메서드는 <xref:System.Windows.Application.ShutdownMode%2A> 속성 및 <xref:System.Windows.Application.SessionEnding> 및 <xref:System.Windows.Application.Exit> 이벤트.  
   
@@ -245,7 +245,7 @@ ms.locfileid: "44042259"
 >  <xref:System.Windows.Application.Shutdown%2A> 이 있는 응용 프로그램에서 호출할 수만 <xref:System.Security.Permissions.UIPermission>합니다. 독립 실행형 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램에 항상이 권한이 있습니다. 그러나 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] 인터넷 영역 부분 신뢰 보안 샌드박스에서 실행 되지 않습니다.  
   
 #### <a name="shutdown-mode"></a>종료 모드  
- 대부분의 응용 프로그램은 모든 창을 닫거나 주 창을 닫으면 종료됩니다. 하지만 다른 응용 프로그램과 관련된 조건이 특정 응용 프로그램의 종료 시점을 결정하는 경우가 있습니다. 응용 프로그램을 설정 하 여 종료 됩니다 조건을 지정할 수 있습니다 <xref:System.Windows.Application.ShutdownMode%2A> 중 하나를 사용 하 여 <xref:System.Windows.ShutdownMode> 열거형 값:  
+ 대부분의 애플리케이션은 모든 창을 닫거나 주 창을 닫으면 종료됩니다. 하지만 다른 애플리케이션과 관련된 조건이 특정 애플리케이션의 종료 시점을 결정하는 경우가 있습니다. 응용 프로그램을 설정 하 여 종료 됩니다 조건을 지정할 수 있습니다 <xref:System.Windows.Application.ShutdownMode%2A> 중 하나를 사용 하 여 <xref:System.Windows.ShutdownMode> 열거형 값:  
   
 -   <xref:System.Windows.ShutdownMode.OnLastWindowClose>  
   
@@ -263,7 +263,7 @@ ms.locfileid: "44042259"
 >  <xref:System.Windows.Application.ShutdownMode%2A> 설정할 수 있습니다는 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]에 있지만 무시 됩니다입니다 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 가 항상 종료 브라우저 또는 브라우저를 호스팅하는 경우에서 탐색할 때를 [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] 닫혀. 자세한 내용은 [탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)를 참조하세요.  
   
 #### <a name="session-ending"></a>세션 종료  
- 설명 하는 종료 조건은 <xref:System.Windows.Application.ShutdownMode%2A> 속성 응용 프로그램에 따라 다릅니다. 하지만 외부 조건에 따라 응용 프로그램이 종료되는 경우도 있습니다. 가장 일반적인 외부 조건은는 다음 작업을 통해 Windows 세션을 종료할 때 발생 합니다.  
+ 설명 하는 종료 조건은 <xref:System.Windows.Application.ShutdownMode%2A> 속성 응용 프로그램에 따라 다릅니다. 하지만 외부 조건에 따라 애플리케이션이 종료되는 경우도 있습니다. 가장 일반적인 외부 조건은는 다음 작업을 통해 Windows 세션을 종료할 때 발생 합니다.  
   
 -   로그오프  
   
@@ -286,7 +286,7 @@ ms.locfileid: "44042259"
 >  <xref:System.Windows.Application.SessionEnding> 에 대 한 발생 하지 않습니다 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]합니다.  
   
 #### <a name="exit"></a>종료  
- 응용 프로그램이 종료될 때 응용 프로그램 상태 유지와 같은 몇 가지 최종 처리를 수행해야 할 경우가 있습니다. 이러한 상황을 처리할 수 있습니다는 <xref:System.Windows.Application.Exit> 이벤트입니다.  
+ 애플리케이션이 종료될 때 애플리케이션 상태 유지와 같은 몇 가지 최종 처리를 수행해야 할 경우가 있습니다. 이러한 상황을 처리할 수 있습니다는 <xref:System.Windows.Application.Exit> 이벤트입니다.  
   
  [!code-xaml[HOWTOApplicationModelSnippets#PersistRestoreAppScopePropertiesXAML1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/App.xaml#persistrestoreappscopepropertiesxaml1)]  
 [!code-xaml[HOWTOApplicationModelSnippets#PersistRestoreAppScopePropertiesXAML2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/App.xaml#persistrestoreappscopepropertiesxaml2)]  
@@ -307,7 +307,7 @@ ms.locfileid: "44042259"
 -   브라우저가 닫힌 경우  
   
 #### <a name="exit-code"></a>종료 코드  
- 대부분의 경우 응용 프로그램은 운영 체제에서 사용자 요청에 대한 응답으로 시작하게 됩니다. 하지만 다른 응용 프로그램에서 일부 특정 작업을 수행하기 위해 응용 프로그램을 시작할 수도 있습니다. 시작된 응용 프로그램이 종료될 경우 시작하는 응용 프로그램에서 시작된 응용 프로그램이 종료되는 조건을 알고 싶을 수 있습니다. 이러한 경우 Windows 응용 프로그램을 종료 시 응용 프로그램 종료 코드를 반환할 수 있습니다. 기본적으로 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램을 종료 코드 값은 0 반환 합니다.  
+ 대부분의 경우 애플리케이션은 운영 체제에서 사용자 요청에 대한 응답으로 시작하게 됩니다. 하지만 다른 애플리케이션에서 일부 특정 작업을 수행하기 위해 애플리케이션을 시작할 수도 있습니다. 시작된 애플리케이션이 종료될 경우 시작하는 애플리케이션에서 시작된 애플리케이션이 종료되는 조건을 알고 싶을 수 있습니다. 이러한 경우 Windows 응용 프로그램을 종료 시 응용 프로그램 종료 코드를 반환할 수 있습니다. 기본적으로 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램을 종료 코드 값은 0 반환 합니다.  
   
 > [!NOTE]
 >  디버그 하는 경우 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], 응용 프로그램 종료 코드에 표시 됩니다는 **출력** 창 종료 될 때 응용 프로그램에서 메시지는 다음과 같습니다.  
@@ -328,15 +328,15 @@ ms.locfileid: "44042259"
   
 <a name="Unhandled_Exceptions"></a>   
 ### <a name="unhandled-exceptions"></a>처리되지 않은 예외  
- 원하지 않는 예외를 throw하는 경우와 같이 응용 프로그램이 비정상적인 상황에서 종료되는 경우가 있습니다. 이런 경우에는 응용 프로그램에 예외를 검색하고 처리할 코드가 없을 수 있습니다. 이런 형식의 예외가 처리되지 않은 예외이며, 응용 프로그램이 닫히기 전에 다음 그림에 표시된 것과 비슷한 알림으로 표시됩니다.  
+ 원하지 않는 예외를 throw하는 경우와 같이 애플리케이션이 비정상적인 상황에서 종료되는 경우가 있습니다. 이런 경우에는 애플리케이션에 예외를 검색하고 처리할 코드가 없을 수 있습니다. 이런 형식의 예외가 처리되지 않은 예외이며, 애플리케이션이 닫히기 전에 다음 그림에 표시된 것과 비슷한 알림으로 표시됩니다.  
   
  ![처리되지 않은 예외 알림](../../../../docs/framework/wpf/app-development/media/applicationmanagementoverviewfigure2.png "ApplicationManagementOverviewFigure2")  
   
- 사용자 환경의 관점에서는 응용 프로그램에서 다음과 같은 작업의 일부 또는 전부를 수행하여 이러한 기본 동작을 방지하는 것이 바람직합니다.  
+ 사용자 환경의 관점에서는 애플리케이션에서 다음과 같은 작업의 일부 또는 전부를 수행하여 이러한 기본 동작을 방지하는 것이 바람직합니다.  
   
 -   사용자에게 친숙한 정보 표시  
   
--   응용 프로그램을 실행 상태로 유지  
+-   애플리케이션을 실행 상태로 유지  
   
 -   녹음/녹화를 자세한 개발자에 게 친숙 한 Windows 이벤트 로그에 예외 정보입니다.  
   
@@ -353,11 +353,11 @@ ms.locfileid: "44042259"
   
  처리 하는 경우 <xref:System.Windows.Application.DispatcherUnhandledException>를 설정 해야 합니다 <xref:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled%2A?displayProperty=nameWithType> 속성을 `true`이 고, 그렇지 않으면 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 여전히는 예외가 처리 되지 것으로 간주 하 고 앞에서 설명한 기본 동작으로 돌아갑니다. 처리 되지 않은 예외가 발생 하는 경우 및 합니다 <xref:System.Windows.Application.DispatcherUnhandledException> 이벤트가 처리 되지 않은 또는 이벤트를 처리 및 <xref:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled%2A> 로 설정 된 `false`, 응용 프로그램이 즉시 종료 합니다. 또한 다른 <xref:System.Windows.Application> 이벤트가 발생 합니다. 처리 해야 하는 결과적으로 <xref:System.Windows.Application.DispatcherUnhandledException> 응용 프로그램에 코드를 응용 프로그램 종료 전에 실행 해야 하는 경우.  
   
- 처리되지 않은 예외의 결과로 응용 프로그램이 종료될 수는 있지만 응용 프로그램은 대개 다음 섹션에서 설명하는 것처럼 사용자 요청에 대한 응답으로 종료됩니다.  
+ 처리되지 않은 예외의 결과로 애플리케이션이 종료될 수는 있지만 애플리케이션은 대개 다음 섹션에서 설명하는 것처럼 사용자 요청에 대한 응답으로 종료됩니다.  
   
 <a name="Application_Lifetime_Events"></a>   
-### <a name="application-lifetime-events"></a>응용 프로그램 수명 이벤트  
- 독립 실행형 응용 프로그램 및 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] 수명이 동일 필요는 없습니다. 다음 그림에서는 독립 실행형 응용 프로그램 수명에서의 주요 이벤트와 이러한 이벤트가 발생하는 순서를 보여 줍니다.  
+### <a name="application-lifetime-events"></a>애플리케이션 수명 이벤트  
+ 독립 실행형 응용 프로그램 및 [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] 수명이 동일 필요는 없습니다. 다음 그림에서는 독립 실행형 애플리케이션 수명에서의 주요 이벤트와 이러한 이벤트가 발생하는 순서를 보여 줍니다.  
   
  ![독립 실행형 응용 프로그램 &#45; 응용 프로그램 개체 이벤트](../../../../docs/framework/wpf/app-development/media/applicationmodeloverview-applicationobjectevents.png "ApplicationModelOverview_ApplicationObjectEvents")  
   
@@ -365,11 +365,11 @@ ms.locfileid: "44042259"
   
  ![XBAP &#45; 응용 프로그램 개체 이벤트](../../../../docs/framework/wpf/app-development/media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Application>  
- [WPF 창 개요](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md)  
- [탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)  
- [WPF 응용 프로그램 리소스, 콘텐츠 및 데이터 파일](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)  
- [WPF의 Pack URI](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [응용 프로그램 모델: 방법 도움말 항목](https://msdn.microsoft.com/library/76771b09-3688-4d1c-8818-9b3f4cf39a30)  
- [응용 프로그램 개발](../../../../docs/framework/wpf/app-development/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Application>
+- [WPF 창 개요](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md)
+- [탐색 개요](../../../../docs/framework/wpf/app-development/navigation-overview.md)
+- [WPF 응용 프로그램 리소스, 콘텐츠 및 데이터 파일](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
+- [WPF의 Pack URI](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+- [응용 프로그램 모델: 방법 도움말 항목](https://msdn.microsoft.com/library/76771b09-3688-4d1c-8818-9b3f4cf39a30)
+- [응용 프로그램 개발](../../../../docs/framework/wpf/app-development/index.md)

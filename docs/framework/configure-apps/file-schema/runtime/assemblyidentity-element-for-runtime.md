@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: b32e0da554622eb84b5569b5a1db04447fdc2940
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 939e10e0c06e98f98e0c468358f4296fd1061a79
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54593929"
 ---
 # <a name="ltassemblyidentitygt-element-for-ltruntimegt"></a>&lt;assemblyIdentity&gt; 요소에 대 한 &lt;런타임&gt;
 어셈블리에 대 한 식별 정보를 포함합니다.  
@@ -24,8 +24,8 @@ ms.locfileid: "53612558"
  \<configuration>  
 \<runtime>  
 \<assemblyBinding>  
-\<dependentAssembly >  
-\<assemblyIdentity >  
+\<dependentAssembly>  
+\<assemblyIdentity>  
   
 ## <a name="syntax"></a>구문  
   
@@ -65,7 +65,7 @@ culture="assembly culture"/>
 |요소|설명|  
 |-------------|-----------------|  
 |`assemblyBinding`|어셈블리 버전 리디렉션 및 어셈블리 위치에 대한 정보를 포함합니다.|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`dependentAssembly`|각 어셈블리에 대한 바인딩 정책 및 어셈블리 위치를 캡슐화합니다. 하나를 사용 하 여 `<dependentAssembly>` 각 어셈블리에 대 한 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
@@ -121,7 +121,7 @@ culture="assembly culture"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [어셈블리 버전 리디렉션](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

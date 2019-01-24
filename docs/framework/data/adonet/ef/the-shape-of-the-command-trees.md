@@ -2,12 +2,12 @@
 title: 명령 트리의 모양
 ms.date: 03/30/2017
 ms.assetid: 2215585e-ca47-45f8-98d4-8cb982f8c1d3
-ms.openlocfilehash: 9084e2616ac4ea540bdf755afd011d67a5c991fa
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: b859dfaa6350341b4b90753fd5dda3339e6bb584
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32766038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54573031"
 ---
 # <a name="the-shape-of-the-command-trees"></a>명령 트리의 모양
 SQL 생성 모듈은 지정된 입력 쿼리 명령 트리 식을 기반으로 특정 백엔드 SQL 쿼리를 생성하는 작업을 담당합니다. 이 단원에서는 쿼리 명령 트리의 특성, 속성 및 구조에 대해 설명합니다.  
@@ -23,7 +23,7 @@ SQL 생성 모듈은 지정된 입력 쿼리 명령 트리 식을 기반으로 �
   
  DBQueryCommandTree.Query 속성은 쿼리 논리를 설명하는 식 트리의 루트입니다. DBQueryCommandTree.Parameters 속성에는 쿼리에서 사용되는 매개 변수의 목록이 포함되어 있습니다. 식 트리는 DbExpression 개체로 구성됩니다.  
   
- DbExpression 개체는 특정 계산을 나타냅니다. 몇 가지 종류의 식이 상수, 변수, 함수, 생성자 및 표준 관계형 연산자(필터, 조인 등)를 포함하는 쿼리 식을 작성할 수 있도록 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 제공됩니다. 모든 DbExpression 개체에 해당 식에서 생성 되는 결과의 형식을 나타내는 ResultType 속성이 있습니다. 이 형식은 TypeUsage로 표현됩니다.  
+ DbExpression 개체는 특정 계산을 나타냅니다. 몇 가지 종류의 식이 상수, 변수, 함수, 생성자 및 표준 관계형 연산자(필터, 조인 등)를 포함하는 쿼리 식을 작성할 수 있도록 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 제공됩니다. 모든 DbExpression 개체에는 해당 식에서 생성 되는 결과의 형식을 나타내는 ResultType 속성이 있습니다. 이 형식은 TypeUsage로 표현됩니다.  
   
 ## <a name="shapes-of-the-output-query-command-tree"></a>출력 쿼리 명령 트리의 모양  
  출력 쿼리 명령 트리는 관계형(SQL) 쿼리를 유사하게 나타내며 쿼리 명령 트리에 적용되는 것보다 훨씬 엄격한 규칙을 따릅니다. 일반적으로 출력 쿼리 명령 트리에는 SQL로 쉽게 변환되는 구문이 포함되어 있습니다.  
@@ -69,7 +69,7 @@ SQL 생성 모듈은 지정된 입력 쿼리 명령 트리 식을 기반으로 �
   
 -   사용자 정의 함수  
   
- 정식 함수 (참조 [정식 함수](../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md) 자세한 내용은)의 일부로 지정는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], 공급자는 이러한 사양을 기반으로 하는 정식 함수에 대 한 구현을 제공 해야 합니다. 저장소 함수는 해당 공급자 매니페스트에 지정된 사항을 기반으로 합니다. 사용자 정의 함수는 SSDL에서 지정된 사항을 기반으로 합니다.  
+ 정식 함수 (참조 [정식 함수](../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md) 자세한 내용은)의 일부로 지정 된는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], 공급자는 이러한 사양을 기반으로 하는 정식 함수에 대 한 구현을 제공 해야 합니다. 저장소 함수는 해당 공급자 매니페스트에 지정된 사항을 기반으로 합니다. 사용자 정의 함수는 SSDL에서 지정된 사항을 기반으로 합니다.  
   
  또한 NiladicFunction 특성이 있는 함수에는 인수가 없으며 끝에 괄호 없이 변환되어야 합니다.  즉,  *\<functionName >* 대신  *\<functionName > ()* 합니다.  
   
@@ -96,14 +96,14 @@ SQL 생성 모듈은 지정된 입력 쿼리 명령 트리 식을 기반으로 �
 #### <a name="dbscanexpression"></a>DbScanExpression  
  출력 명령 트리에서 사용되는 경우 DbScanExpression은 EnitySetBase::Target이 나타내는 테이블, 뷰 또는 저장소 쿼리에 대한 검색을 효과적으로 나타냅니다.  
   
- 메타 데이터 속성 "정의 쿼리"는 대상의 이면 null이 아닌 쿼리 나타냅니다 쿼리 텍스트를 공급자의 특정 언어 (또는 언어)는 저장소 스키마 정의에 지정 된 대로 해당 메타 데이터 속성에 제공 됩니다.  
+ 이면 메타 데이터 속성 "정의 쿼리"는 대상의 null이 아닌 쿼리 나타냅니다는 쿼리 텍스트를 저장소 스키마 정의에 지정 된 공급자의 특정 언어 (또는 언어)에서 해당 메타 데이터 속성에 제공 됩니다.  
   
- 대상의 메타데이터 속성 “정의 쿼리”가 null이면 대상은 테이블 또는 뷰를 나타냅니다. 해당 스키마 접두사는 "스키마" 메타 데이터 속성에서 아니면 null로, 그렇지 않으면 엔터티 컨테이너 이름입니다.  테이블 또는 뷰 이름은 중 하나는 "Table" 메타 데이터 속성이 null이 아니면, 그렇지 않으면 집합 기반의 Name 속성은 엔터티의입니다.  
+ 대상의 메타데이터 속성 “정의 쿼리”가 null이면 대상은 테이블 또는 뷰를 나타냅니다. 해당 스키마 접두사는 "스키마" 메타 데이터 속성에서이 없는 경우 null이 고, 그렇지 엔터티 컨테이너 이름입니다.  테이블 또는 뷰 이름은 중 하나는 "Table" 메타 데이터 속성을 null이 아니면,이 고 그렇지 엔터티의 Name 속성을 기본 설정입니다.  
   
  이러한 모든 속성은 저장소 스키마 정의 파일(SSDL)에 있는 해당 EntitySet의 정의에서 제공됩니다.  
   
 ### <a name="using-primitive-types"></a>기본 형식 사용  
  기본 형식이 출력 명령 트리에서 참조되는 경우 일반적으로 개념적 모델의 기본 형식에서 참조됩니다. 그러나 특정 식의 경우 공급자에 해당 저장소 기본 형식이 필요합니다. 이러한 식에는 DbCastExpression, DbNullExpression(공급자가 null을 해당 형식으로 캐스팅해야 하는 경우) 등이 있습니다. 이러한 경우에 공급자는 기본 형식 종류와 해당 패싯에 따라 공급자 형식으로 매핑해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL 생성](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+## <a name="see-also"></a>참고자료
+- [SQL 생성](../../../../../docs/framework/data/adonet/ef/sql-generation.md)

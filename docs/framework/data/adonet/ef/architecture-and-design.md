@@ -2,12 +2,12 @@
 title: 아키텍처 및 디자인
 ms.date: 03/30/2017
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
-ms.openlocfilehash: 281f321e45b019178aa82946eb451e56f5c04841
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 8b3515fac9ae7f9302ba607fcf842719718f6c55
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53154270"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54576332"
 ---
 # <a name="architecture-and-design"></a>아키텍처 및 디자인
 SQL 생성 모듈은 [Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) 명령 트리를 나타내는 식 트리의 방문자로 구현 됩니다. 생성은 식 트리에 대한 단일 패스로 수행됩니다.  
@@ -52,7 +52,7 @@ internal sealed class SqlBuilder : ISqlFragment {
 ```  
   
 #### <a name="sqlselectstatement"></a>SqlSelectStatement  
- SqlSelectStatement "SELECT... 모양의 정식 SQL SELECT 문을 나타냅니다. 보낸 사람.. WHERE... 그룹화 기준... ORDER BY "입니다.  
+ SqlSelectStatement "SELECT... 모양의 정식 SQL SELECT 문을 나타냅니다. FROM  .. WHERE... 그룹화 기준... ORDER BY "입니다.  
   
  각 SQL 절은 StringBuilder에 의해 표현됩니다. 또한 Distinct가 지정되었는지 여부와 문이 맨 위에 있는지 여부를 추적합니다. 문이 맨 위에 없는 경우 문에 TOP 절이 없으면 ORDER BY 절이 생략됩니다.  
   
@@ -414,5 +414,5 @@ IsEmpty(inut) = Not Exists(input)
   
  익스텐트 별칭과 열에 고유한 이름을 생성하려면 <existing_name>_n을 사용합니다. 여기서 n은 아직 사용되지 않은 가장 작은 별칭입니다. 모든 별칭의 전역 목록을 사용하면 연속된 이름 바꾸기의 필요성이 증가합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [샘플 공급자의 SQL 생성](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)
+## <a name="see-also"></a>참고자료
+- [샘플 공급자의 SQL 생성](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)

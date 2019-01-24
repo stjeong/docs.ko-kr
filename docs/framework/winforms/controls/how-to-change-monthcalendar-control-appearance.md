@@ -9,12 +9,12 @@ helpviewer_keywords:
 - examples [Windows Forms], calendar controls
 - MonthCalendar control [Windows Forms], formatting display
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
-ms.openlocfilehash: 4f91363764099cabfa1a7939ff07e627aeb6c815
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 5afee81d3db9452be352c875dbba0f7885592c02
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43802017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54624351"
 ---
 # <a name="how-to-change-the-windows-forms-monthcalendar-control39s-appearance"></a>방법: Windows Forms MonthCalendar 컨트롤을 변경&#39;모양
 Windows Forms <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 사용 하면 여러 가지 방법으로 달력의 모양을 사용자 지정할 수 있습니다. 예를 들어, 색 구성표를 설정할 수 있으며 주 번호 및 현재 날짜를 표시 하거나 숨기려면 선택.  
@@ -42,7 +42,7 @@ Windows Forms <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 사용 하�
     ```  
   
     > [!NOTE]
-    >  Windows Vista와 테마에 따라부터 몇 가지 속성만 설정 변경할 수 없습니다 모양의 달력. 예를 들어 Windows Aero 테마를 사용 하도록 설정 되어를 설정 합니다 <xref:System.Windows.Forms.MonthCalendar.BackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A>, 또는 <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> 속성에 영향을 주지 않습니다. 즉, 런타임에 현재 운영 체제 테마에서 파생 되는 모양을 사용 하 여 달력의 업데이트 된 렌더링 됩니다. 이러한 속성을 사용 하 고 달력의 이전 버전을 사용 하려는 경우에 응용 프로그램에 대 한 비주얼 스타일을 비활성화할 수 있습니다. 비주얼 스타일을 사용 하지 않도록 설정 하면 응용 프로그램에서 다른 컨트롤의 동작과 모양을 달라질 수 있습니다. Visual Basic에서 비주얼 스타일을 사용 하지 않으려면 프로젝트 디자이너를 열고 선택 취소 합니다 **XP 비주얼 스타일 사용** 확인란 합니다. C#에서 비주얼 스타일을 사용 하지 않으려면 Program.cs를 열고 주석 `Application.EnableVisualStyles();`합니다. 비주얼 스타일에 대 한 자세한 내용은 참조 하세요. [방법: Windows XP 비주얼 스타일을 사용 하도록 설정](https://msdn.microsoft.com/library/0a038ade-31cf-4e56-9cfe-7a1e6b83b57f)합니다.  
+    >  Windows Vista와 테마에 따라부터 몇 가지 속성만 설정 변경할 수 없습니다 모양의 달력. 예를 들어 Windows Aero 테마를 사용 하도록 설정 되어를 설정 합니다 <xref:System.Windows.Forms.MonthCalendar.BackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A>, 또는 <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> 속성에 영향을 주지 않습니다. 즉, 런타임에 현재 운영 체제 테마에서 파생 되는 모양을 사용 하 여 달력의 업데이트 된 렌더링 됩니다. 이러한 속성을 사용 하 고 달력의 이전 버전을 사용 하려는 경우에 응용 프로그램에 대 한 비주얼 스타일을 비활성화할 수 있습니다. 비주얼 스타일을 사용 하지 않도록 설정 하면 애플리케이션에서 다른 컨트롤의 동작과 모양을 달라질 수 있습니다. Visual Basic에서 비주얼 스타일을 사용 하지 않으려면 프로젝트 디자이너를 열고 선택 취소 합니다 **XP 비주얼 스타일 사용** 확인란 합니다. C#에서 비주얼 스타일을 사용 하지 않으려면 Program.cs를 열고 주석 `Application.EnableVisualStyles();`합니다. 비주얼 스타일에 대 한 자세한 내용은 참조 하세요. [방법: Windows XP 비주얼 스타일 사용](https://msdn.microsoft.com/library/0a038ade-31cf-4e56-9cfe-7a1e6b83b57f)합니다.  
   
 ### <a name="to-display-the-current-date-at-the-bottom-of-the-control"></a>컨트롤의 맨 아래에 현재 날짜를 표시 하려면  
   
@@ -103,8 +103,8 @@ Windows Forms <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 사용 하�
     monthCalendar1->ShowWeekNumbers = true;  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [MonthCalendar 컨트롤](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)  
- [방법: Windows Forms MonthCalendar 컨트롤에서 날짜 범위 선택](../../../../docs/framework/winforms/controls/how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)  
- [방법: Windows Forms MonthCalendar 컨트롤을 사용하여 특정 날짜를 굵게 표시](../../../../docs/framework/winforms/controls/display-specific-days-in-bold-with-wf-monthcalendar-control.md)  
- [방법: Windows Forms MonthCalendar 컨트롤에서 여러 달 표시](../../../../docs/framework/winforms/controls/display-more-than-one-month-wf-monthcalendar-control.md)
+## <a name="see-also"></a>참고자료
+- [MonthCalendar 컨트롤](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)
+- [방법: Windows Forms MonthCalendar 컨트롤에서 날짜 범위 선택](../../../../docs/framework/winforms/controls/how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)
+- [방법: Forms MonthCalendar 컨트롤의 Windows를 사용 하 여 특정 날짜를 굵게 표시](../../../../docs/framework/winforms/controls/display-specific-days-in-bold-with-wf-monthcalendar-control.md)
+- [방법: Windows Forms MonthCalendar 컨트롤에서 여러 달 표시](../../../../docs/framework/winforms/controls/display-more-than-one-month-wf-monthcalendar-control.md)

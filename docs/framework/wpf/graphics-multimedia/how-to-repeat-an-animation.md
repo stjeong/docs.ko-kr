@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Timelines RepeatBehavior property [WPF]
 - animation [WPF], repeating
 ms.assetid: e6f3b068-eeeb-47fd-8d40-8848c31f1e1e
-ms.openlocfilehash: 176fc9c31f85361a243cd9357d79608e0ff6a4cd
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 213fca0796840ae87035be4f474cfdf4648460a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43855298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54609644"
 ---
 # <a name="how-to-repeat-an-animation"></a>방법: 애니메이션 반복
 사용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> 의 속성을 <xref:System.Windows.Media.Animation.Timeline> 애니메이션의 반복 동작을 제어 하기 위해.  
@@ -28,10 +28,10 @@ ms.locfileid: "43855298"
   
  전체 샘플을 참조 하세요 [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [주기가 반복되는 동안 애니메이션 값 누적](../../../../docs/framework/wpf/graphics-multimedia/how-to-accumulate-animation-values-during-repeat-cycles.md)  
- [타임라인을 자동으로 뒤집을지 여부 지정](../../../../docs/framework/wpf/graphics-multimedia/how-to-specify-whether-a-timeline-automatically-reverses.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)
+## <a name="see-also"></a>참고자료
+- [주기가 반복되는 동안 애니메이션 값 누적](../../../../docs/framework/wpf/graphics-multimedia/how-to-accumulate-animation-values-during-repeat-cycles.md)
+- [타임라인을 자동으로 뒤집을지 여부 지정](../../../../docs/framework/wpf/graphics-multimedia/how-to-specify-whether-a-timeline-automatically-reverses.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- [애니메이션 및 타이밍](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [애니메이션 타이밍 동작 샘플](https://go.microsoft.com/fwlink/?LinkID=159970)

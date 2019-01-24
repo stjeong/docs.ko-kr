@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 6933e753-2f2a-425b-ae84-42138c957d76
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 3487b67ea49cecfd0da2b5b3f993ea54d562145d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 90beb1487581ff4c031d6f10fb613430207dc026
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33397522"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54575569"
 ---
 # <a name="contention-etw-events"></a>경합 ETW 이벤트
 런타임에서 사용되는 <xref:System.Threading.Monitor?displayProperty=nameWithType> 잠금 또는 네이티브 잠금에 대한 경합이 있을 때마다 경합 이벤트가 발생합니다. 스레드가 잠금을 소유하는 동안 또 다른 스레드가 잠금을 기다리고 있으면 경합이 발생합니다.  
@@ -37,5 +37,5 @@ ms.locfileid: "33397522"
 |플래그|win:UInt8|0(관리), 1(네이티브).|  
 |ClrInstanceID|win:UInt16|CLR 인스턴스의 고유 ID.|  
   
-## <a name="see-also"></a>참고 항목  
- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)
+## <a name="see-also"></a>참고자료
+- [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)

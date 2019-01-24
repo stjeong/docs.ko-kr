@@ -2,18 +2,18 @@
 title: '&lt;netTcpContextBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
-ms.openlocfilehash: da769e57a44880d5050b06a8e2a3d317daff35d6
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 0f5e4df5a25062ba6454dfc845ba2999ddcc6ca8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572268"
 ---
 # <a name="ltnettcpcontextbindinggt"></a>&lt;netTcpContextBinding&gt;
 보호 수준을 서명해야 하는 <xref:System.ServiceModel.NetTcpBinding>의 컨텍스트를 지정합니다. NetTcpContextBinding의 contextExchangeMechanism은 SOAPHeader입니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<netTcpContextBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -98,13 +98,13 @@ ms.locfileid: "54146071"
 |-------------|-----------------|  
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|이 요소는 표준 및 사용자 지정 바인딩의 컬렉션을 보유합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.NetTcpBinding>  
- <xref:System.ServiceModel.NetTcpContextBinding>  
- <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>  
- <xref:System.ServiceModel.Channels.ContextBindingElement>  
- [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.NetTcpContextBinding>
+- <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>
+- <xref:System.ServiceModel.Channels.ContextBindingElement>
+- [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

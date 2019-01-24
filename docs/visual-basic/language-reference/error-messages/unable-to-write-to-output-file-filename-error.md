@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31019
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
-ms.openlocfilehash: e8fbfd54782e601595712035827ea346d1dbf500
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c82f1e6e4a01af87cc7dce49cfaa78f9be1631db
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33597512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572697"
 ---
 # <a name="unable-to-write-to-output-file-39ltfilenamegt39-lterrorgt"></a>출력 파일에 쓸 수 없습니다 &#39; &lt;filename&gt;&#39;: &lt;오류&gt;
 파일을 만드는 동안 문제가 발생했습니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "33597512"
   
 1.  프로그램을 다시 컴파일하여 오류가 다시 발생하는지 확인합니다.  
   
-2.  오류가 계속 발생 하는 경우 작업 내용을 저장 하 고 Visual Studio를 다시 시작 합니다.  
+2.  오류가 계속 되 면 작업을 저장 하 고 Visual Studio를 다시 시작 합니다.  
   
 3.  오류가 계속 발생하면 컴퓨터를 다시 시작합니다.  
   
@@ -45,17 +45,17 @@ ms.locfileid: "33597512"
   
 1.  원하는 폴더를 엽니다.  
   
-2.  클릭는 **뷰** 아이콘을 선택 하 고 **세부 정보**합니다.  
+2.  클릭 합니다 **뷰** 아이콘 선택 **세부 정보**합니다.  
   
-3.  열 머리글을 마우스 오른쪽 단추로 클릭 하 고 선택 **특성** 드롭 다운 목록에서 합니다.  
+3.  선택한 열 머리글을 마우스 오른쪽 단추로 클릭 **특성** 드롭 다운 목록에서.  
   
 ### <a name="to-change-the-attributes-of-a-file-or-folder"></a>파일이나 폴더의 특성을 변경하려면  
   
-1.  **파일 탐색기**파일이 나 폴더를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  
+1.  **파일 탐색기**파일 또는 폴더를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.  
   
-2.  에 **특성** 의 섹션은 **일반** 탭을 선택 취소는 **읽기 전용** 상자입니다.  
+2.  에 **특성** 섹션을 **일반** 탭을 선택 취소를 **읽기 전용** 상자.  
   
-3.  Press **OK**.  
+3.  **확인**을 누릅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [의견 보내기](/visualstudio/ide/talk-to-us)
+## <a name="see-also"></a>참고자료
+- [의견 보내기](/visualstudio/ide/talk-to-us)

@@ -2,12 +2,12 @@
 title: 워크플로 트랜잭션
 ms.date: 03/30/2017
 ms.assetid: 6081fb02-c0f2-483d-97b8-f3b7dc03011d
-ms.openlocfilehash: e2a0c301abac562904e976fe09e5a68697b191e5
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 061cebb6791ada9e3e64097a6490b1e2b4736839
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48838093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54624212"
 ---
 # <a name="workflow-transactions"></a>워크플로 트랜잭션
 
@@ -49,7 +49,7 @@ static Activity ScenarioOne()
   
 사용에 대 한 자세한 내용은 참조 하십시오 <xref:System.ServiceModel.Activities.TransactedReceiveScope>를 참조 하세요 [트랜잭션을 워크플로 서비스 내부 및 외부로 흐르는](../../../docs/framework/wcf/feature-details/flowing-transactions-into-and-out-of-workflow-services.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Activities.Statements.TransactionScope>  
- <xref:System.Transactions.TransactionScope>  
- <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType>
+## <a name="see-also"></a>참고자료
+- <xref:System.Activities.Statements.TransactionScope>
+- <xref:System.Transactions.TransactionScope>
+- <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType>

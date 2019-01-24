@@ -2,20 +2,20 @@
 title: '&lt;resolver&gt;'
 ms.date: 03/30/2017
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
-ms.openlocfilehash: 67afce36acc8e7c2ff1f176275f1d021a61cc603
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 2a3e0de2bb5d2ed022f53aa5e498f338eaf56ca8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54578601"
 ---
 # <a name="ltresolvergt"></a>&lt;resolver&gt;
 피어 메시 ID를 확인하는 데 사용되는 피어 확인자를 메시에 참여하는 몇 개의 노드를 나타내는 피어 노드 주소 집합에 지정합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<netPeerBinding>  
-\<바인딩 >  
+\<binding>  
 \<resolver>  
   
 ## <a name="syntax"></a>구문  
@@ -51,11 +51,11 @@ ms.locfileid: "54146266"
 ## <a name="remarks"></a>설명  
  피어 이름 확인자는 피어 메시에 참여하는 피어 노드를 찾기 위해 피어 채널에서 사용하는 검색 서비스입니다. 또한 이 확인자는 피어 노드가 알려지고 피어 메시에서 사용할 수 있게 되는 메커니즘인 피어 메시를 통해 노드를 "등록"하는 데에도 사용됩니다. 피어 확인자에 대 한 자세한 내용은 참조 하세요. [피어 확인 자의](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.PeerResolver>  
- <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>  
- <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A>  
- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>  
- <xref:System.ServiceModel.Configuration.PeerResolverElement>  
- [피어 확인자](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)  
- [PeerChannel 응용 프로그램에 사용자 지정 확인자 추가](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.PeerResolver>
+- <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>
+- <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A>
+- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>
+- <xref:System.ServiceModel.Configuration.PeerResolverElement>
+- [피어 확인자](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
+- [PeerChannel 응용 프로그램에 사용자 지정 확인자 추가](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419)

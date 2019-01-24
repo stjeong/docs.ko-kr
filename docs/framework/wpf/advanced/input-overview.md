@@ -24,12 +24,12 @@ helpviewer_keywords:
 - focus [WPF]
 - mouse position [WPF]
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
-ms.openlocfilehash: 4492b92268828943d222fbf624781bc0b9ce7901
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 481d19ca8a7222f26b8d22864c790031c14ffa8c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48842790"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54592590"
 ---
 # <a name="input-overview"></a>입력 개요
 <a name="introduction"></a> 합니다 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 하위 시스템은 강력한 제공 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] 다양 한 장치에서에서 입력을 가져오는, 마우스, 키보드, 터치 및 스타일러스를 포함 합니다. 이 항목에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]가 제공하는 서비스에 대해 설명하고 입력 시스템의 아키텍처를 살펴봅니다.
@@ -61,7 +61,7 @@ ms.locfileid: "48842790"
 ### <a name="stylus-input"></a>스타일러스 입력
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에 대 한 지원을 통합 합니다 <xref:System.Windows.Input.Stylus>합니다.  합니다 <xref:System.Windows.Input.Stylus> 에서 인기 있는 펜 입력을 [!INCLUDE[TLA#tla_tpc](../../../../includes/tlasharptla-tpc-md.md)]입니다.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램은 마우스 [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)]를 사용하여 스타일러스를 마우스로 처리할 수 있지만 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]는 키보드 및 마우스와 비슷한 모델을 사용하는 스타일러스 장치 추상화도 노출합니다.  스타일러스와 관련된 모든 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]에는 “Stylus”라는 단어가 포함됩니다.
 
- 스타일러스는 마우스처럼 동작할 수 있으므로 마우스 입력만 지원하는 응용 프로그램도 약간의 스타일러스 지원을 자동으로 받을 수 있습니다. 이러한 방식으로 스타일러스를 사용하는 경우 응용 프로그램은 알맞은 스타일러스 이벤트를 처리한 다음 해당 마우스 이벤트를 처리할 수 있게 됩니다. 뿐만 아니라 스타일러스 디바이스 추상화를 통해 잉크 입력과 같은 높은 수준의 서비스도 사용할 수 있습니다.  잉크 입력에 대한 자세한 내용은 [잉크 시작](../../../../docs/framework/wpf/advanced/getting-started-with-ink.md)을 참조하세요.
+ 스타일러스는 마우스처럼 동작할 수 있으므로 마우스 입력만 지원하는 애플리케이션도 약간의 스타일러스 지원을 자동으로 받을 수 있습니다. 이러한 방식으로 스타일러스를 사용하는 경우 애플리케이션은 알맞은 스타일러스 이벤트를 처리한 다음 해당 마우스 이벤트를 처리할 수 있게 됩니다. 뿐만 아니라 스타일러스 디바이스 추상화를 통해 잉크 입력과 같은 높은 수준의 서비스도 사용할 수 있습니다.  잉크 입력에 대한 자세한 내용은 [잉크 시작](../../../../docs/framework/wpf/advanced/getting-started-with-ink.md)을 참조하세요.
 
 <a name="event_routing"></a>
 ## <a name="event-routing"></a>이벤트 라우팅
@@ -138,12 +138,12 @@ ms.locfileid: "48842790"
 
 <a name="touch_and_manipulation"></a>
 ## <a name="touch-and-manipulation"></a>터치 및 조작
- Windows 7 운영 체제의 새로운 하드웨어 및 API를 사용하면 응용 프로그램이 여러 터치에서 동시에 입력을 수신할 수 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 사용하면 응용 프로그램에서 터치가 발생할 때 이벤트를 발생시킴으로써 마우스나 키보드와 같은 다른 입력에 응답하는 것과 유사한 방식으로 터치를 감지하고 이에 응답할 수 있습니다.
+ Windows 7 운영 체제의 새로운 하드웨어 및 API를 사용하면 애플리케이션이 여러 터치에서 동시에 입력을 수신할 수 있습니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]를 사용하면 응용 프로그램에서 터치가 발생할 때 이벤트를 발생시킴으로써 마우스나 키보드와 같은 다른 입력에 응답하는 것과 유사한 방식으로 터치를 감지하고 이에 응답할 수 있습니다.
 
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]는 터치가 발생할 때 두 가지 형식의 이벤트, 즉 터치 이벤트와 조작 이벤트를 노출합니다. 터치 이벤트는 터치 스크린의 각 손가락과 그 이동에 대한 원시 데이터를 제공합니다. 조작 이벤트는 특정 작업으로 입력을 해석합니다. 이 섹션에서는 두 가지 형식의 이벤트에 대해 모두 설명합니다.
 
 ### <a name="prerequisites"></a>전제 조건
- 터치에 응답하는 응용 프로그램을 개발하려면 다음 구성 요소가 필요합니다.
+ 터치에 응답하는 애플리케이션을 개발하려면 다음 구성 요소가 필요합니다.
 
 -   Visual Studio 2010
 
@@ -186,7 +186,7 @@ ms.locfileid: "48842790"
  합니다 <xref:System.Windows.Controls.ScrollViewer> 정의 <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=nameWithType> 여부 터치 패닝을 가로, 세로, 가로 및 세로 또는 둘 다 지정할 수 있는 연결 된 속성입니다. <xref:System.Windows.Controls.ScrollViewer.PanningDeceleration%2A?displayProperty=nameWithType> 얼마나 빨리 스크롤 속도가 사용자가 터치 스크린에서 손가락을 뗄 때 속성을 지정 합니다. <xref:System.Windows.Controls.ScrollViewer.PanningRatio%2A?displayProperty=nameWithType> 조작 오프셋을 변환할 스크롤 오프셋의 비율을 지정 하는 연결 된 속성입니다.
 
 ### <a name="touch-events"></a>터치 이벤트
- 기본 클래스인 <xref:System.Windows.UIElement>, <xref:System.Windows.UIElement3D>, 및 <xref:System.Windows.ContentElement>, 응용 프로그램이 터치에 응답 하도록 구독할 수 있는 이벤트를 정의 합니다. 터치 이벤트는 응용 프로그램이 터치를 개체 조작이 아닌 다른 것으로 해석할 때 유용합니다. 예를 들어 사용자가 하나 이상의 손가락으로 그릴 수 있는 응용 프로그램은 터치 이벤트를 구독합니다.
+ 기본 클래스인 <xref:System.Windows.UIElement>, <xref:System.Windows.UIElement3D>, 및 <xref:System.Windows.ContentElement>, 응용 프로그램이 터치에 응답 하도록 구독할 수 있는 이벤트를 정의 합니다. 터치 이벤트는 애플리케이션이 터치를 개체 조작이 아닌 다른 것으로 해석할 때 유용합니다. 예를 들어 사용자가 하나 이상의 손가락으로 그릴 수 있는 애플리케이션은 터치 이벤트를 구독합니다.
 
  세 클래스 모두 다음과 같은 이벤트를 정의합니다. 이 이벤트는 정의 클래스에 관계없이 유사하게 동작합니다.
 
@@ -243,7 +243,7 @@ ms.locfileid: "48842790"
 
  개체가 조작에 응답하게 하면 개체에 관성이 있는 것처럼 보일 수 있습니다. 그러면 개체가 실제 세계를 시뮬레이트하게 만들 수 있습니다. 예를 들어 테이블에서 책을 밀 때 충분히 세게 밀면 책을 놓은 후에도 책이 계속 움직입니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]을 사용하면 사용자가 손가락을 개체에서 뗀 후 조작 이벤트를 발생시켜 이 동작을 시뮬레이트할 수 있습니다.
 
- 사용자가 개체를 이동, 크기 조정 및 회전할 수 있게 하는 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [연습: 첫 번째 터치 응용 프로그램 만들기](../../../../docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md)를 참조하세요.
+ 사용자가 이동, 크기 조정 및 개체를 회전할 수 있는 응용 프로그램을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: 첫 번째 터치 응용 프로그램을 만들어](../../../../docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md)합니다.
 
  <xref:System.Windows.UIElement> 다음 조작 이벤트를 정의 합니다.
 
@@ -276,7 +276,7 @@ ms.locfileid: "48842790"
 
 3.  <xref:System.Windows.UIElement.ManipulationDelta> 이벤트는 사용자의 터치 스크린에서 손가락을 움직일 때마다 여러 번 발생 합니다. <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> 의 속성을 <xref:System.Windows.Input.ManipulationDeltaEventArgs> 클래스 조작이 이동, 확장 또는 변환으로 해석할지를 보고 합니다. 바로 여기서 개체 조작 작업의 대부분이 수행됩니다.
 
-4.  <xref:System.Windows.UIElement.ManipulationInertiaStarting> 이벤트 개체를 사용 하 여 사용자의 손가락 연결이 끊어질 때 발생 합니다. 이 이벤트를 사용하면 관성이 발생하는 동안 수행되는 조작의 감속을 지정할 수 있습니다. 따라서 사용자가 선택한 여러 가지 실제 공간 또는 특성을 개체가 에뮬레이트할 수 있습니다. 예를 들어 응용 프로그램에 실제 세계의 항목을 나타내는 개체가 두 개 있고 한 개체가 다른 개체보다 무거운 경우를 가정해 봅니다. 이 경우 무거운 개체가 가벼운 개체보다 더 빠르게 감속되도록 할 수 있습니다.
+4.  <xref:System.Windows.UIElement.ManipulationInertiaStarting> 이벤트 개체를 사용 하 여 사용자의 손가락 연결이 끊어질 때 발생 합니다. 이 이벤트를 사용하면 관성이 발생하는 동안 수행되는 조작의 감속을 지정할 수 있습니다. 따라서 사용자가 선택한 여러 가지 실제 공간 또는 특성을 개체가 에뮬레이트할 수 있습니다. 예를 들어 애플리케이션에 실제 세계의 항목을 나타내는 개체가 두 개 있고 한 개체가 다른 개체보다 무거운 경우를 가정해 봅니다. 이 경우 무거운 개체가 가벼운 개체보다 더 빠르게 감속되도록 할 수 있습니다.
 
 5.  <xref:System.Windows.UIElement.ManipulationDelta> 관성 이벤트에 여러 번 발생 합니다. 이 이벤트는 사용자가 터치 스크린에서 손가락을 이동하고 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 관성을 시뮬레이트하는 경우에 발생합니다. 다시 말해 <xref:System.Windows.UIElement.ManipulationDelta> 이전 및 이후에 발생 합니다 <xref:System.Windows.UIElement.ManipulationInertiaStarting> 이벤트입니다. 합니다 <xref:System.Windows.Input.ManipulationDeltaEventArgs.IsInertial%2A?displayProperty=nameWithType> 속성 보고서 여부를 <xref:System.Windows.UIElement.ManipulationDelta> 속성을 확인 하 고 해당 값에 따라 다른 작업을 수행할 수 있도록 관성 도중 이벤트 발생 합니다.
 
@@ -328,7 +328,7 @@ ms.locfileid: "48842790"
  키보드 포커스에 대한 자세한 내용은 [포커스 개요](../../../../docs/framework/wpf/advanced/focus-overview.md)를 참조하세요.
 
 ### <a name="logical-focus"></a>논리 포커스
- 논리 포커스 참조는 <xref:System.Windows.Input.FocusManager.FocusedElement%2A?displayProperty=nameWithType> 포커스 범위 내에서.  응용 프로그램에 논리 포커스가 있는 요소는 여러 개일 수 있지만, 특정 포커스 범위에 논리 포커스가 있는 요소는 하나뿐일 수 있습니다.
+ 논리 포커스 참조는 <xref:System.Windows.Input.FocusManager.FocusedElement%2A?displayProperty=nameWithType> 포커스 범위 내에서.  애플리케이션에 논리 포커스가 있는 요소는 여러 개일 수 있지만, 특정 포커스 범위에 논리 포커스가 있는 요소는 하나뿐일 수 있습니다.
 
  포커스 범위는 추적 하는 컨테이너 요소는 <xref:System.Windows.Input.FocusManager.FocusedElement%2A> 해당 범위 내에서.  포커스가 포커스 범위를 벗어나면 포커스가 있는 요소에서 키보드 포커스를 잃지만 논리 포커스는 유지합니다.  포커스가 포커스 범위로 돌아오면 포커스가 있는 요소가 키보드 포커스를 갖습니다.  이렇게 하면 여러 포커스 범위 사이에서 키보드 포커스가 변경되더라도 포커스 범위 내에서 포커스가 있는 요소는 포커스가 다시 돌아올 때 포커스가 있는 상태로 유지됩니다.
 
@@ -382,7 +382,7 @@ ms.locfileid: "48842790"
 
  각 이벤트는 <xref:System.Windows.Input.Mouse>, <xref:System.Windows.Input.Keyboard>, 및 <xref:System.Windows.Input.Stylus> 정의 연결된 된 이벤트 다시 기본 요소 클래스에 의해 노출 됩니다 <xref:System.Windows.UIElement> 고 <xref:System.Windows.ContentElement> 새 라우트된 이벤트로 합니다. 기본 요소의 라우트된 이벤트는 원래 연결된 이벤트를 처리하고 이벤트 데이터를 다시 사용하는 클래스를 통해 생성됩니다.
 
- 입력 이벤트가 해당 기본 요소 입력 이벤트 구현을 통해 특정 소스 요소와 연결되는 경우 이 입력 이벤트는 논리적 트리 개체 및 시각적 트리 개체의 조합을 기반으로 하는 이벤트 경로의 나머지 부분을 통해 전송할 수 있으며 응용 프로그램 코드에서 처리할 수 있습니다.  일반적으로 것에서 라우트된 이벤트를 사용 하 여 이러한 장치 관련 입력된 이벤트를 처리 하는 편리한 <xref:System.Windows.UIElement> 하 고 <xref:System.Windows.ContentElement>직관적인 이벤트 처리기 구문을 모두에서 사용할 수 있으므로, [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 및 코드. 대신 프로세스를 시작한 연결된 이벤트를 처리할 수도 있지만 이 경우 몇 가지 문제에 직면할 수 있습니다. 예를 들어 기본 요소 클래스 처리를 통해 연결된 이벤트가 처리된 것으로 표시될 수 있습니다. 또한 연결된 이벤트에 대한 처리기를 연결하기 위해 실제 이벤트 구문 대신 접근자 메서드를 사용해야 합니다.
+ 입력 이벤트가 해당 기본 요소 입력 이벤트 구현을 통해 특정 소스 요소와 연결되는 경우 이 입력 이벤트는 논리적 트리 개체 및 시각적 트리 개체의 조합을 기반으로 하는 이벤트 경로의 나머지 부분을 통해 전송할 수 있으며 애플리케이션 코드에서 처리할 수 있습니다.  일반적으로 것에서 라우트된 이벤트를 사용 하 여 이러한 장치 관련 입력된 이벤트를 처리 하는 편리한 <xref:System.Windows.UIElement> 하 고 <xref:System.Windows.ContentElement>직관적인 이벤트 처리기 구문을 모두에서 사용할 수 있으므로, [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 및 코드. 대신 프로세스를 시작한 연결된 이벤트를 처리할 수도 있지만 이 경우 몇 가지 문제에 직면할 수 있습니다. 예를 들어 기본 요소 클래스 처리를 통해 연결된 이벤트가 처리된 것으로 표시될 수 있습니다. 또한 연결된 이벤트에 대한 처리기를 연결하기 위해 실제 이벤트 구문 대신 접근자 메서드를 사용해야 합니다.
 
 <a name="whats_next"></a>
 ## <a name="whats-next"></a>새로운 기능
@@ -390,5 +390,9 @@ ms.locfileid: "48842790"
 
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 프레임워크 요소 및 이벤트 라우팅에 대해 보다 자세히 설명하는 추가 리소스가 있습니다. 자세한 내용은 [명령 개요](../../../../docs/framework/wpf/advanced/commanding-overview.md), [포커스 개요](../../../../docs/framework/wpf/advanced/focus-overview.md), [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md),[WPF의 트리](../../../../docs/framework/wpf/advanced/trees-in-wpf.md) 및 [라우트된 이벤트 개요](../../../../docs/framework/wpf/advanced/routed-events-overview.md)와 같은 개요를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [포커스 개요](../../../../docs/framework/wpf/advanced/focus-overview.md) [명령 개요](../../../../docs/framework/wpf/advanced/commanding-overview.md) [라우트된 이벤트 개요](../../../../docs/framework/wpf/advanced/routed-events-overview.md) [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md) [속성](../../../../docs/framework/wpf/advanced/properties-wpf.md)
+## <a name="see-also"></a>참고자료
+- [포커스 개요](../../../../docs/framework/wpf/advanced/focus-overview.md)
+- [명령 개요](../../../../docs/framework/wpf/advanced/commanding-overview.md)
+- [라우트된 이벤트 개요](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [속성](../../../../docs/framework/wpf/advanced/properties-wpf.md)

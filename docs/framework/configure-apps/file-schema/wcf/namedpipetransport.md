@@ -2,21 +2,21 @@
 title: '&lt;namedPipeTransport&gt;'
 ms.date: 03/30/2017
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
-ms.openlocfilehash: bf9229411143345847247f36de07b5c014d3f259
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: cdb2863ff376a92f7c4b679f4812b895ac3f2234
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54518841"
 ---
 # <a name="ltnamedpipetransportgt"></a>&lt;namedPipeTransport&gt;
 사용자 지정 바인딩에 포함될 때 채널에서 명명된 파이프를 사용하여 메시지를 전송하도록 정의합니다.  
   
 \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<namePipeTransport >  
+\<binding>  
+\<namePipeTransport>  
   
 ## <a name="syntax"></a>구문  
   
@@ -59,7 +59,7 @@ ms.locfileid: "54149602"
 |maxPendingConnections|서비스에서 디스패치를 대기하는 최대 연결 수를 가져오거나 설정합니다.|  
 |maxReceivedMessageSize|받을 수 있는 최대 메시지 크기(바이트)를 가져오고 설정합니다.|  
 |transferMode|메시지가 연결 지향 전송을 사용하여 버퍼링되는지 아니면 스트리밍되는지를 나타내는 값을 가져오거나 설정합니다.|  
-|[\<connectionPoolSettings >의 \<namedPipeTransport >](../../../../../docs/framework/configure-apps/file-schema/wcf/connectionpoolsettings.md)|명명된 파이프 바인딩의 추가 연결 풀 설정을 지정합니다.|  
+|[\<connectionPoolSettings> of \<namedPipeTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/connectionpoolsettings.md)|명명된 파이프 바인딩의 추가 연결 풀 설정을 지정합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -72,14 +72,14 @@ ms.locfileid: "54149602"
   
 `namedPipeTransport` 요소는 명명된 파이프 전송 프로토콜을 구현하는 사용자 지정 바인딩을 만들기 위한 시작점입니다. 이 전송은 WCF(Windows Communication Foundation)와 WCF 사이의 컴퓨터 통신에 사용됩니다.  
   
-## <a name="see-also"></a>참고 항목  
-<xref:System.ServiceModel.Configuration.NamedPipeTransportElement>   
-<xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>   
-<xref:System.ServiceModel.Channels.TransportBindingElement>   
-<xref:System.ServiceModel.Channels.CustomBinding>   
-[전송](../../../../../docs/framework/wcf/feature-details/transports.md)   
-[전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
-[바인딩](../../../../../docs/framework/wcf/bindings.md)   
-[바인딩 확장명](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
-[사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
-[\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.NamedPipeTransportElement>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

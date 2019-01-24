@@ -1,5 +1,5 @@
 ---
-title: '방법: LINQ를 사용하여 쿼리 결과의 최소값 또는 최대값 찾기(Visual Basic)'
+title: '방법: LINQ (Visual Basic)를 사용 하 여 쿼리 결과의 최소값 또는 최대값 찾기'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - max operator [LINQ in Visual Basic]
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], aggregate queries
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
-ms.openlocfilehash: 252601b12e21e122c316952f8e10ce04cbe3f78e
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: e4a7215afdfbfc7653247ad0286a36dd2ab50ba2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42924484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54514272"
 ---
-# <a name="how-to-find-the-minimum-or-maximum-value-in-a-query-result-by-using-linq-visual-basic"></a>방법: LINQ를 사용하여 쿼리 결과의 최소값 또는 최대값 찾기(Visual Basic)
+# <a name="how-to-find-the-minimum-or-maximum-value-in-a-query-result-by-using-linq-visual-basic"></a>방법: LINQ (Visual Basic)를 사용 하 여 쿼리 결과의 최소값 또는 최대값 찾기
 언어 통합 쿼리 (LINQ)를 사용 하면 쉽게 데이터베이스 정보에 액세스 하 고 쿼리를 실행 합니다.  
   
  다음 예제에는 SQL Server 데이터베이스에 대 한 쿼리를 수행 하는 새 응용 프로그램을 만드는 방법을 보여 줍니다. 샘플을 사용 하 여 결과 대 한 최소 및 최대 값을 결정 합니다 `Aggregate` 고 `Group By` 절. 자세한 내용은 [Aggregate 절](../../../../visual-basic/language-reference/queries/aggregate-clause.md) 하 고 [그룹 By 절](../../../../visual-basic/language-reference/queries/group-by-clause.md)합니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "42924484"
   
 ### <a name="to-add-tables-to-query-to-the-or-designer"></a>O/R 디자이너를 쿼리 하는 테이블을 추가 하려면  
   
-1.  **서버 탐색기**/**데이터베이스 탐색기**, Northwind 데이터베이스에 연결을 확장 합니다. 확장 된 **테이블** 폴더입니다.  
+1.  **서버 탐색기**/**데이터베이스 탐색기**, Northwind 데이터베이스에 연결을 확장 합니다. **테이블** 폴더를 확장합니다.  
   
      O/R 디자이너를 닫은 경우 이전에 추가한 northwind.dbml 파일을 두 번 클릭 하 여 다시 열 수 있습니다.  
   
@@ -76,8 +76,8 @@ ms.locfileid: "42924484"
   
 4.  F5 키를 눌러 프로젝트를 실행 하 고 결과 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+## <a name="see-also"></a>참고자료
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

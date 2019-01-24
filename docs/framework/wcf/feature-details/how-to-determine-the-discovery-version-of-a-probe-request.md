@@ -2,12 +2,12 @@
 title: '방법: 프로브 요청의 검색 버전 확인'
 ms.date: 03/30/2017
 ms.assetid: b3c4e2e2-2957-4074-ae6a-776a5ca84278
-ms.openlocfilehash: 98dfd5ec5d3c180b619e2f15d95037feae8ebbaf
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 356ddd76bdee0698fa446d830791f702af5742b9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54595125"
 ---
 # <a name="how-todetermine-the-discovery-version-of-a-probe-request"></a>방법: 프로브 요청의 검색 버전 확인
 검색 프록시는 여러 검색 버전을 사용하여 검색 엔드포인트를 노출할 수 있습니다. UDP 멀티캐스트 프로브 요청이 프록시에 도달하면 프록시는 멀티캐스트 비표시 오류(Suppression) 메시지로 응답해야 합니다. 이렇게 응답하려면 요청의 검색 버전을 알아야 합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "48582189"
     doce.DiscoveryVersion;  
     ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 
-- <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion%2A>  
-- [검색 프록시 구현](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md)  
+- <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion%2A>
+- [검색 프록시 구현](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md)

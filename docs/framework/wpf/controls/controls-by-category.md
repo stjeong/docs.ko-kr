@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - controls [WPF], listed by category
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb
-ms.openlocfilehash: 93512ab00fe05a4166125c5e319ce91a5cc04573
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: b056f52879c4309db0cbb33ecc789d25439a8c68
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33552001"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54576852"
 ---
 # <a name="controls-by-category"></a>컨트롤 범주
-Windows Presentation Foundation (wpf) 여러 범주로 논리적으로 그룹화 할 수 있습니다. 이러한 범주를 사용하면 유사한 사용 패턴 또는 기능이 있는 컨트롤을 볼 수 있으므로 시나리오에 적절한 컨트롤을 선택할 수 있습니다.  
+Windows Presentation Foundation (WPF) 컨트롤은 논리적으로 여러 범주로 그룹화 할 수 있습니다. 이러한 범주를 사용하면 유사한 사용 패턴 또는 기능이 있는 컨트롤을 볼 수 있으므로 시나리오에 적절한 컨트롤을 선택할 수 있습니다.  
   
 ## <a name="layout"></a>레이아웃  
  레이아웃 컨트롤은 자식 요소의 크기, 차원, 위치 및 정렬을 관리하는 데 사용됩니다.  
@@ -56,7 +56,7 @@ Windows Presentation Foundation (wpf) 여러 범주로 논리적으로 그룹화
 -   <xref:System.Windows.Controls.WrapPanel>  
   
 ## <a name="buttons"></a>단추  
- 단추는 가장 기본적인 사용자 인터페이스 컨트롤 중 하나입니다. 응용 프로그램은 일반적으로 몇 가지 작업을 수행는 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트에는 사용자가 클릭할 때입니다.  
+ 단추는 가장 기본적인 사용자 인터페이스 컨트롤 중 하나입니다. 일반적으로 응용 프로그램에서 일부 작업을 수행 합니다 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 에서도 사용자가 클릭할 때 이벤트입니다.  
   
 -   <xref:System.Windows.Controls.Button>  
   
@@ -101,7 +101,7 @@ Windows Presentation Foundation (wpf) 여러 범주로 논리적으로 그룹화
 -   <xref:System.Windows.Controls.Slider>  
   
 ## <a name="navigation"></a>탐색  
- 탐색 컨트롤은 대상 프레임 또는 탭 응용 프로그램 모양을 만들어 응용 프로그램 탐색 환경을 향상시키거나 확장합니다.  
+ 탐색 컨트롤은 대상 프레임 또는 탭 애플리케이션 모양을 만들어 애플리케이션 탐색 환경을 향상시키거나 확장합니다.  
   
 -   <xref:System.Windows.Controls.Frame>  
   
@@ -123,7 +123,7 @@ Windows Presentation Foundation (wpf) 여러 범주로 논리적으로 그룹화
 -   <xref:Microsoft.Win32.SaveFileDialog>  
   
 ## <a name="user-information"></a>사용자 정보  
- 사용자 정보 컨트롤은 상황별 피드백을 제공하거나 응용 프로그램의 사용자 인터페이스를 명확히 합니다. 사용자는 일반적으로 이러한 컨트롤과 상호 작용할 수 없습니다.  
+ 사용자 정보 컨트롤은 상황별 피드백을 제공하거나 애플리케이션의 사용자 인터페이스를 명확히 합니다. 사용자는 일반적으로 이러한 컨트롤과 상호 작용할 수 없습니다.  
   
 -   <xref:System.Windows.Controls.AccessText>  
   
@@ -177,5 +177,5 @@ Windows Presentation Foundation (wpf) 여러 범주로 논리적으로 그룹화
   
 -   <xref:System.Windows.Controls.InkPresenter>  
   
-## <a name="see-also"></a>참고 항목  
- [컨트롤 라이브러리](../../../../docs/framework/wpf/controls/control-library.md)
+## <a name="see-also"></a>참고자료
+- [컨트롤 라이브러리](../../../../docs/framework/wpf/controls/control-library.md)

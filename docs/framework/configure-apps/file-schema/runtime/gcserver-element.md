@@ -1,5 +1,5 @@
 ---
-title: '&lt;gcServer&gt; 요소'
+title: '&lt;gcServer&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcServer
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 80421a66a3ace4970324fb295e167b7d4875063f
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: dc54b8554d788cacf48aeeda31f8ed300c469b92
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53610686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54506851"
 ---
-# <a name="ltgcservergt-element"></a>&lt;gcServer&gt; 요소
+# <a name="ltgcservergt-element"></a>&lt;gcServer&gt; Element
 공용 언어 런타임이 서버 가비지 컬렉션을 실행하는지 여부를 지정합니다.  
   
  \<configuration>  
@@ -54,7 +54,7 @@ ms.locfileid: "53610686"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|어셈블리 바인딩 및 가비지 컬렉션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -78,8 +78,8 @@ ms.locfileid: "53610686"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [방법: 동시 가비지 수집을 사용 하지 않도록 설정](https://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)

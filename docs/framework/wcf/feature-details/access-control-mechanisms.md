@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF security
 - access control [WCF]
 ms.assetid: 9d576122-3f55-4425-9acf-b23d0781e966
-ms.openlocfilehash: 1de6731591e524080ac4ae7d5b2ec2a25a27f301
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 78d2bb3e49ae971b54d521585184a9565c4ff105
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44213240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512611"
 ---
 # <a name="access-control-mechanisms"></a>Access Control 메커니즘
 여러 가지 방식으로 Windows Communication Foundation (WCF)를 사용 하 여 액세스를 제어할 수 있습니다. 이 항목에서는 여러 메커니즘에 대해 간략하게 설명하고 올바른 메커니즘을 선택하여 사용하도록 각 메커니즘을 사용하는 시기에 대해 설명합니다. 액세스 기술은 복잡성 순서대로 나열되어 있습니다. <xref:System.Security.Permissions.PrincipalPermissionAttribute>가 가장 단순하며 ID 모델이 가장 복잡합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "44213240"
   
  또한 기존 AzMan 설치에 이미 액세스한 경우 AzMan/역할 공급자 조합의 기능을 사용하여 서비스 사용자에게 권한을 부여하려면 AzMan 및 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 역할 공급자를 사용할 수 있습니다.  
   
- AzMan에 대 한 자세한 내용은 및 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 역할 공급자를 참조 하세요 [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](https://go.microsoft.com/fwlink/?LinkId=88951)합니다. AzMan 및 역할 공급자를 사용 하 여 WCF 서비스에 대 한 자세한 내용은 참조 하세요. [방법: ASP.NET 권한 부여 관리자 역할 공급자를 사용 하 여 서비스를 사용 하 여](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)입니다.  
+ AzMan에 대 한 자세한 내용은 하며 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 역할 공급자 참조 [방법: Use Authorization Manager (AzMan) with ASP.NET 2.0](https://go.microsoft.com/fwlink/?LinkId=88951)합니다. AzMan 및 역할 공급자를 사용 하 여 WCF 서비스에 대 한 자세한 내용은 참조 하세요. [방법: ASP.NET 권한 부여 관리자 역할 공급자를 사용 하 여 서비스를 사용 하 여](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)입니다.  
   
 ## <a name="identity-model"></a>ID 모델  
  ID 모델은 클라이언트에 권한을 부여하는 클레임 및 정책을 관리할 수 있는 API의 집합입니다. ID 모델을 사용하면 호출자가 서비스에서 자신을 인증하고, 클레임을 서비스의 정책 집합과 비교하고, 비교를 바탕으로 액세스 권한을 부여하거나 거부하는 데 사용한 자격 증명에 포함된 모든 클레임을 조사할 수 있습니다.  
@@ -57,10 +57,10 @@ ms.locfileid: "44213240"
   
  Id 모델에 대 한 자세한 내용은 참조 하세요. [관리 클레임 및 권한 부여 Id 모델을 사용 하 여](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
- [방법: PrincipalPermissionAttribute 클래스를 사용하여 액세스 제한](../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- [방법: 서비스에서 ASP.NET 역할 공급자 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)  
- [방법: 서비스에서 ASP.NET 권한 부여 관리자 역할 공급자 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
- [ID 모델을 사용하여 클레임 및 권한 부여 관리](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
- [위임 및 가장](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Security.Permissions.PrincipalPermissionAttribute>
+- [방법: PrincipalPermissionAttribute 클래스를 사용 하 여 액세스 제한](../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [방법: 서비스에서 ASP.NET 역할 공급자 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)
+- [방법: 서비스에서 ASP.NET 권한 부여 관리자 역할 공급자 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)
+- [ID 모델을 사용하여 클레임 및 권한 부여 관리](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [위임 및 가장](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

@@ -3,21 +3,21 @@ title: '&lt;participants&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 3c730850-6f8e-4102-acb8-8effb4e09463
-ms.openlocfilehash: 6dbe8f6ca2bd797efc31e145ab1ca6cc82cee021
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: bc32b9b55ef8767be44cc69b9277c81d62a1944d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32757387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54575897"
 ---
 # <a name="ltaddgt-of-ltparticipantsgt"></a>&lt;participants&gt;의 &lt;add&gt;
 런타임에서 내보내지는 추적 레코드를 수신하는 추적 참가자를 직접 구성하고 구성된 방식대로 처리합니다. 여기에는 특정 출력(예: 파일, 콘솔, ETW)에 쓰기, 레코드 처리/집계 또는 필요한 기타 조합이 포함됩니다.  
   
- 워크플로 추적 및 추적 참가자에 대 한 자세한 내용은 참조 하십시오. [워크플로 추적 및 트레이싱](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 및 [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)합니다.  
+ 워크플로 추적 및 추적 참가자에 대 한 자세한 내용은 참조 하세요. [워크플로 추적 및 트레이싱](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) 하 고 [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)합니다.  
   
 \<system.serviceModel>  
 \<tracking>  
-\<참가자 >  
+\<participants>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -60,7 +60,7 @@ ms.locfileid: "32757387"
 ## <a name="example"></a>예제  
  다음 구성 예제에서는 Web.config 파일에서 구성되는 표준 ETW 추적 참가자를 보여 줍니다.  
   
- ETW 추적 참가자에서 ETW에 추적 레코드를 쓰기 위해 사용 하는 공급자 Id에 정의 된  **\<진단 >** 섹션. 추적 참가자에는 구독하는 추적 레코드를 지정하기 위해 연결된 프로필이 있습니다. 이 정의한는 **profileName** 특성에는  **\<추가 >** 요소입니다. 추적 참가자에 추가 되 고, 정의 되 면는  **\<etwTracking >** 서비스 동작입니다. 이렇게 하면 선택된 추적 참가자가 워크플로 인스턴스의 확장에 추가되어 추적 레코드를 받기 시작합니다.  
+ 에 정의 된 ETW 추적 참가자가 ETW에 추적 레코드를 쓰기 위해 사용 하는 공급자 Id를  **\<진단 >** 섹션입니다. 추적 참가자에는 구독하는 추적 레코드를 지정하기 위해 연결된 프로필이 있습니다. 이 정의한 합니다 **profileName** 특성을  **\<추가 >** 요소. 추적 참가자가 정의 되 면 추가할 합니다  **\<etwTracking >** 서비스 동작입니다. 이렇게 하면 선택된 추적 참가자가 워크플로 인스턴스의 확장에 추가되어 추적 레코드를 받기 시작합니다.  
   
 ```xml  
 <configuration>   
@@ -87,9 +87,9 @@ ms.locfileid: "32757387"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>  
- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>  
- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
+- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
+- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>
+- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [추적 참가자](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)

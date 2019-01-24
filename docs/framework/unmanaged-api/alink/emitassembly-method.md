@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1cd1c077a8f2a5fe3b2b46c2e1da2e92b5a797a6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d73c158fa9d7b5574e4f875b8d51e932e30041b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33402059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54572242"
 ---
 # <a name="emitassembly-method"></a>EmitAssembly 메서드
-어셈블리를 만듭니다. 어셈블리 파일을 제외한 다른 모든 파일이 닫혀 후이 메서드를 호출 합니다. 바인딩되지 않은 모듈을 만들 때이 메서드를 호출 하지 마십시오.  
+어셈블리를 만듭니다. 다른 모든 파일은 어셈블리 파일을 제외 하 고 닫은 후이 메서드를 호출 합니다. 바인딩되지 않은 모듈을 생성 하는 경우에이 메서드를 호출 하지 마세요.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,7 +45,7 @@ HRESULT EmitAssembly(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

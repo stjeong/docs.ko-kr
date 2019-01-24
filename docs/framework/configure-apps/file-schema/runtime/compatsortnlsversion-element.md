@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a9d505dd7433978e3a5908757a1d9569fe31f49b
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: a40a9e7ad5eb0b6e978054b5e7edcf35e53c42c7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53614415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54578509"
 ---
 # <a name="ltcompatsortnlsversiongt-element"></a>&lt;CompatSortNLSVersion&gt; 요소
 문자열 비교를 수행할 때 런타임에서 레거시 정렬 순서를 사용하도록 지정합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "53614415"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -93,6 +93,6 @@ sta equals a in the sort order.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)

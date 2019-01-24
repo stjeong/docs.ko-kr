@@ -10,12 +10,12 @@ api_type:
 ms.assetid: d468325a-21c5-43ce-8567-84e342b22308
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fd77a8a81718837d55f3018564d0f4ba8fdc95ee
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 9987640f988f2239a01d2dfdbcd6b1684579d8bc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47198906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54601509"
 ---
 # <a name="certtimestampauthenticodelicense-function"></a>CertTimestampAuthenticodeLicense 함수
 Authenticode XrML 라이선스에 타임스탬프를 적용합니다.  
@@ -46,5 +46,5 @@ HRESULT CertTimestampAuthenticodeLicense (
 ## <a name="return-value"></a>반환 값  
  함수가 정상적으로 실행되는 경우 `S_OK`입니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## <a name="see-also"></a>참고자료
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
