@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7ca4cc9fb65d1a4bd8713f969bbda5551ce5a2e2
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 860295a3d10acd67f5fb7665a7213dc90e4a4829
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48850624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54713169"
 ---
 # <a name="qualifiersetdelete-function"></a>QualifierSet_Delete 함수
 지정된 한정자를 이름으로 삭제합니다.  
@@ -55,7 +55,7 @@ HRESULT QualifierSet_Delete (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | `wszName` 매개 변수가 올바르지 않습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `wszName` 매개 변수가 잘못되었습니다. |
 |`WBEM_E_INVALID_OPERATION` | 0x80041016 | 이 한정자를 삭제 하는 중 잘못 되었습니다. |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 한정자를 찾을 수 없습니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
@@ -68,11 +68,11 @@ HRESULT QualifierSet_Delete (
 한정자 전파 규칙으로 인해 특정 한정자 수 다른 개체 로부터 상속 되었으며 단순히 인스턴스를 현재 클래스에서 재정의 된 합니다. 이 경우에 `QualifierSet_Delete` 메서드 다시 원래 상속 된 값으로 한정자를 설정 합니다. 함수에는 경우 상태 코드를 반환 합니다 `WBEM_S_RESET_TO_DEFAULT`합니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

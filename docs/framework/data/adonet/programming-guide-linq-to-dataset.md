@@ -2,12 +2,12 @@
 title: 프로그래밍 가이드(LINQ to DataSet)
 ms.date: 03/30/2017
 ms.assetid: 977aedd7-0084-46a0-b56f-345787a55da1
-ms.openlocfilehash: 0c6b026d86a898aa52d93833ac3e447d6f6cba11
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6f6ab1634769a54bd8dbafe8c9d41b11ff787d50
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54636484"
 ---
 # <a name="programming-guide-linq-to-dataset"></a>프로그래밍 가이드(LINQ to DataSet)
 이 단원에서는 [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] 프로그래밍에 대한 개념 정보와 예제를 제공합니다.  
@@ -54,5 +54,5 @@ ms.locfileid: "43513372"
   
 ## <a name="see-also"></a>참고자료
 
-- [LINQ 및 ADO.NET](linq-and-ado-net.md)  
+- [LINQ 및 ADO.NET](linq-and-ado-net.md)
 - [LINQ(Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)

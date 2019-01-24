@@ -2,19 +2,19 @@
 title: '&lt;baseAddressPrefixFilter&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: b226bede-8459-4de9-b2ac-3d39604ce2bc
-ms.openlocfilehash: ece3178c48c84c609ab959a5cfc426062de9255f
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: cc9ef6c8712ff764240c4c2f0322bd94b1aaccc8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54698442"
 ---
 # <a name="ltaddgt-of-ltbaseaddressprefixfiltergt"></a>&lt;baseAddressPrefixFilter&gt;의 &lt;add&gt;
 IIS에서 Windows Communication Foundation (WCF) 응용 프로그램을 호스팅하는 경우 적절 한 인터넷 정보 서비스 (IIS) 바인딩을 선택 하기 위한 메커니즘을 제공할 통과 필터를 지정 하는 구성 요소를 나타냅니다.  
   
  \<system.ServiceModel>  
-\<serviceHostingEnvironment >  
-\<baseAddressPrefixFilters >  
+\<ServiceHostingEnvironment>  
+\<baseAddressPrefixFilters>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -43,7 +43,7 @@ IIS에서 Windows Communication Foundation (WCF) 응용 프로그램을 호스�
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<baseAddressPrefixFilters >](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md)|IIS에서 Windows Communication Foundation (WCF) 응용 프로그램을 호스팅할 때 적합 한 IIS 바인딩을 선택 하기 위한 메커니즘을 제공할 통과 필터를 지정 하는 구성 요소의 컬렉션입니다.|  
+|[\<baseAddressPrefixFilters>](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md)|IIS에서 Windows Communication Foundation (WCF) 응용 프로그램을 호스팅할 때 적합 한 IIS 바인딩을 선택 하기 위한 메커니즘을 제공할 통과 필터를 지정 하는 구성 요소의 컬렉션입니다.|  
   
 ## <a name="remarks"></a>설명  
  접두사 필터는 공유 호스팅 공급자가 서비스에 사용될 URI를 지정하는 방법을 제공합니다. 이 방법을 사용하면 공유 호스트가 동일한 사이트의 동일한 체계에 대해 기본 주소가 다른 여러 응용 프로그램을 호스트할 수 있습니다.  
@@ -79,8 +79,8 @@ http://test2.fabrikam.com/Service.svc
 > [!NOTE]
 >  필터는 와일드카드를 지원하지 않습니다. 또한 IIS에서 제공하는 baseAddress는 `baseAddressPrefixFilters` 목록에 없는 다른 체계에 바인딩되는 주소를 가질 수 있습니다. 이러한 주소는 필터링되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement>  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [호스팅](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [호스팅](../../../../../docs/framework/wcf/feature-details/hosting.md)

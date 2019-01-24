@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 078fac7f21ac31b21e5ac442ef81a1c0f496db93
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e90f2b7b81bbf6401313209170ea65186c38d4e8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33430404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54711043"
 ---
 # <a name="icatalogservices-interface"></a>ICatalogServices 인터페이스
-카탈로그 서비스를 위한 메서드를 제공 합니다.  
+카탈로그 서비스에 대 한 메서드를 제공 합니다.  
   
  이 인터페이스는 .NET Framework 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.  
   
@@ -35,5 +35,5 @@ ms.locfileid: "33430404"
 |[Autodone 메서드](../../../../docs/framework/unmanaged-api/hosting/icatalogservices-autodone-method.md)|내부용으로 예약되어 있습니다.|  
 |[NotAutodone 메서드](../../../../docs/framework/unmanaged-api/hosting/icatalogservices-notautodone-method.md)|내부용으로 예약되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [호스팅 인터페이스](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [호스팅 인터페이스](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

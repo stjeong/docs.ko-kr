@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - attached properties [WPF Designer]
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
-ms.openlocfilehash: bcf218efeb7bff5f7457164411efed796314ba82
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e4f2b88b075a7806d2ca4c4a1e2cf3f027e71f51
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706234"
 ---
 # <a name="attached-properties-overview"></a>연결된 속성 개요
 
@@ -24,7 +24,7 @@ ms.locfileid: "53129482"
 
 ## 연결 된 속성을 사용 하는 이유 <a name="attached_properties_usage"></a>
 
-연결된 속성의 한 가지 목적은 다른 자식 요소가 부모 요소에서 실제로 정의되는 속성의 고유 값을 저장하도록 하는 것입니다. 이 시나리오의 특정 응용 프로그램에서 자식 요소는 부모 요소에 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]에서 표시되는 방법을 알립니다. 한 가지 예는 <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> 속성입니다. 합니다 <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> 요소 내에 포함 된 설정으로 설계 되었으므로 연결된 된 속성으로 속성이 만들어집니다를 <xref:System.Windows.Controls.DockPanel>, 대신에 <xref:System.Windows.Controls.DockPanel> 자체입니다. <xref:System.Windows.Controls.DockPanel> 클래스 정의 정적 <xref:System.Windows.DependencyProperty> 필드가 <xref:System.Windows.Controls.DockPanel.DockProperty>, 하 여 제공 합니다 <xref:System.Windows.Controls.DockPanel.GetDock%2A> 및 <xref:System.Windows.Controls.DockPanel.SetDock%2A> 연결된 된 속성에 대 한 공용 접근자 메서드.
+연결된 속성의 한 가지 목적은 다른 자식 요소가 부모 요소에서 실제로 정의되는 속성의 고유 값을 저장하도록 하는 것입니다. 이 시나리오의 특정 애플리케이션에서 자식 요소는 부모 요소에 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]에서 표시되는 방법을 알립니다. 한 가지 예는 <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> 속성입니다. 합니다 <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> 요소 내에 포함 된 설정으로 설계 되었으므로 연결된 된 속성으로 속성이 만들어집니다를 <xref:System.Windows.Controls.DockPanel>, 대신에 <xref:System.Windows.Controls.DockPanel> 자체입니다. <xref:System.Windows.Controls.DockPanel> 클래스 정의 정적 <xref:System.Windows.DependencyProperty> 필드가 <xref:System.Windows.Controls.DockPanel.DockProperty>, 하 여 제공 합니다 <xref:System.Windows.Controls.DockPanel.GetDock%2A> 및 <xref:System.Windows.Controls.DockPanel.SetDock%2A> 연결된 된 속성에 대 한 공용 접근자 메서드.
 
 ## XAML에서 연결 된 속성 <a name="attached_properties_xaml"></a>
 
@@ -141,7 +141,7 @@ WPF는 여러 정의 [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../inclu
 
 -   연결된 속성 및 종속성 속성으로 속성을 등록할 수도 있지만 "래퍼" 구현이 여전히 표시됩니다. 이 경우 속성은 해당 요소 또는 XAML 연결된 속성 구문을 통해 모든 요소에 설정될 수 있습니다. 표준 및 연결 된 사용에 대 한 적절 한 시나리오를 포함 하는 속성의 예로 <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType>합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.Windows.DependencyProperty>
 - [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)

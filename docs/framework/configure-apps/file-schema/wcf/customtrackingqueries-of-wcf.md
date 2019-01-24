@@ -2,12 +2,12 @@
 title: WCF의 &lt;customTrackingQueries&gt;
 ms.date: 03/30/2017
 ms.assetid: 14cfe47e-9935-4120-84f1-8f38de8ca4c1
-ms.openlocfilehash: f75c6bf50d30da5a136137c858a5cd96ce0783ff
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: f4f6186aa51ef1656f31fb0035f58a07e5c2447b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54700795"
 ---
 # <a name="ltcustomtrackingqueriesgt-of-wcf"></a>WCF의 &lt;customTrackingQueries&gt;
 
@@ -17,10 +17,10 @@ ms.locfileid: "54150086"
   
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<customTrackingQueries >  
+\<customTrackingQueries>  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ ms.locfileid: "54150086"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<customTrackingQuery >](customtrackingquery-of-wcf.md)|코드 활동에서 정의하는 이벤트를 추적하기 위해 사용되는 쿼리입니다.|  
+|[\<customTrackingQuery>](customtrackingquery-of-wcf.md)|코드 활동에서 정의하는 이벤트를 추적하기 위해 사용되는 쿼리입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -59,9 +59,9 @@ ms.locfileid: "54150086"
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>       
-- <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>       
-- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>
+- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

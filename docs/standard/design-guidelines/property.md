@@ -7,12 +7,12 @@ helpviewer_keywords:
 - properties [.NET Framework], design guidelines
 ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
 author: KrzysztofCwalina
-ms.openlocfilehash: 1d119b48f0524b3e997aa2cb9ea2cbbd855afdf0
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e4ed4fd39a9ebd63b9d5dbff38dc15647d65934f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53131458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54708989"
 ---
 # <a name="property-design"></a>속성 디자인
 속성 메서드 기술적으로 매우 유사 하지만, 사용 시나리오는 큰 차이가 됩니다. 스마트 필드로 보여야 합니다. 필드가 호출 구문 및 메서드의 유연성을가지고 있습니다.  
@@ -87,7 +87,7 @@ ms.locfileid: "53131458"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
+- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)

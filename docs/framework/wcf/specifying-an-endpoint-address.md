@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - endpoints [WCF], addressing
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
-ms.openlocfilehash: 718a0c086181546ba7b7fb3b31fce0732dd99382
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ff01c21481e2265a82cb9788beb8abd7b213af63
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54709223"
 ---
 # <a name="specifying-an-endpoint-address"></a>엔드포인트 주소 지정
 Windows Communication Foundation (WCF) 서비스와 모든 통신은 해당 끝점을 통해 발생합니다. 각 <xref:System.ServiceModel.Description.ServiceEndpoint>에는 <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>, <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A> 및 <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A>가 포함되어 있습니다. 계약은 사용할 수 있는 작업을 지정합니다. 바인딩은 서비스와 통신하는 방법을 지정하고 주소는 서비스를 찾을 위치를 지정합니다. 모든 엔드포인트에는 고유한 주소가 있어야 합니다. 엔드포인트 주소는 서비스 주소를 표시하는 URI(Uniform Resource Identifier)가 포함된 <xref:System.ServiceModel.EndpointAddress> 클래스, 서비스의 보안 ID를 표시하는 <xref:System.ServiceModel.EndpointAddress.Identity%2A> 및 선택적 <xref:System.ServiceModel.EndpointAddress.Headers%2A>의 컬렉션에 의해 표시됩니다. 선택적 헤더는 엔드포인트를 확인하거나 상호 작용하는 데 필요한 자세한 주소 지정 정보를 제공합니다. 예를 들어 헤더는 들어오는 메시지를 처리하는 방법, 엔드포인트가 회신 메시지를 보내야 하는 위치 또는 여러 인스턴스를 사용할 수 있는 경우 특정 사용자의 들어오는 메시지를 처리하는 데 사용할 서비스 인스턴스를 나타낼 수 있습니다.  
@@ -26,7 +26,7 @@ Windows Communication Foundation (WCF) 서비스와 모든 통신은 해당 끝�
   
 -   컴퓨터: `www.fabrikam.com`  
   
--   (선택적) 포트: 322  
+-   (선택 사항) 포트: 322  
   
 -   경로: /mathservice.svc/secureEndpoint  
   
@@ -45,7 +45,7 @@ Windows Communication Foundation (WCF) 서비스와 모든 통신은 해당 끝�
   
  경우는 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> 메서드가 호출 됩니다 (즉, 호스팅 응용 프로그램 서비스를 시작 하려고), 시스템은는 [ \<서비스 >](../../../docs/framework/configure-apps/file-schema/wcf/service.md) "UE 지정 하는 이름 특성을 가진 요소. Samples.HelloService "로 설정 합니다. 경우는 [ \<서비스 >](../../../docs/framework/configure-apps/file-schema/wcf/service.md) 요소를 찾을 때, 시스템 지정된 된 클래스를 로드 하 고 구성 파일에 제공 된 끝점 정의 사용 하 여 끝점을 만듭니다. 이 메커니즘을 통해 두 개의 코드 줄에서 서비스를 로드하고 시작하는 동시에 해당 코드의 바인딩 및 주소 지정 정보를 유지할 수 있습니다. 이 접근 방식의 이점은 응용 프로그램을 다시 컴파일하거나 다시 배포할 필요 없이 이러한 변경 작업을 수행할 수 있다는 점입니다.  
   
- 선택적 헤더에서 선언 되는 [ \<헤더 >](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md)합니다. 다음은 두 가지 헤더를 구분 하는 구성 파일에서 서비스에 대 한 끝점을 지정 하는 데 요소의 예: "Gold" 클라이언트 `http://tempuri1.org/` 및 "Standard" 클라이언트 `http://tempuri2.org/`합니다. 이 서비스를 호출 하는 클라이언트는 적절 한 있어야 [ \<헤더 >](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) 의 구성 파일에 있습니다.  
+ 선택적 헤더에서 선언 되는 [ \<헤더 >](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md)합니다. 다음은 두 가지 헤더를 구분 하는 구성 파일에서 서비스에 대 한 끝점을 지정 하는 데 요소의 예입니다. "Gold" 클라이언트 `http://tempuri1.org/` 및 "Standard" 클라이언트 `http://tempuri2.org/`합니다. 이 서비스를 호출 하는 클라이언트는 적절 한 있어야 [ \<헤더 >](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) 의 구성 파일에 있습니다.  
   
  [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]  
   
@@ -82,8 +82,8 @@ Windows Communication Foundation (WCF) 서비스와 모든 통신은 해당 끝�
   
  엔드포인트를 명시적으로 제공하는 경우에도 <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A>을 호출하기 전에 <xref:System.ServiceModel.ServiceHost>에서 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>를 호출하여 기본 엔드포인트를 추가할 수 있습니다. 기본 엔드포인트, 바인딩 및 동작에 대한 자세한 내용은 [단순화된 구성](../../../docs/framework/wcf/simplified-configuration.md) 및 [WCF 서비스를 위한 단순화된 구성](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.EndpointAddress>  
- [서비스 ID 및 인증](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [엔드포인트 만들기 개요](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [호스팅](../../../docs/framework/wcf/feature-details/hosting.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.EndpointAddress>
+- [서비스 ID 및 인증](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [엔드포인트 만들기 개요](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [호스팅](../../../docs/framework/wcf/feature-details/hosting.md)

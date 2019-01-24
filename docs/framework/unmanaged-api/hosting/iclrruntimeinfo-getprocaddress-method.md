@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e8e50a018016b885a3513cbd885b8e5115f18113
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f956ed33e0a168dca0c0e5de92d38ba32db3fb05
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33432923"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54703460"
 ---
 # <a name="iclrruntimeinfogetprocaddress-method"></a>ICLRRuntimeInfo::GetProcAddress 메서드
-이 인터페이스와 연결 된 공용 언어 런타임 (CLR)에서 내보낸 지정된 된 함수 주소를 가져옵니다.  
+이 인터페이스와 연결 된 공용 언어 런타임 (CLR)에서 내보낸 지정 된 함수의 주소를 가져옵니다.  
   
- 이 메서드를 대체는 [GetRealProcAddress](../../../../docs/framework/unmanaged-api/hosting/getrealprocaddress-function.md) 함수입니다.  
+ 이 메서드를 대체 합니다 [GetRealProcAddress](../../../../docs/framework/unmanaged-api/hosting/getrealprocaddress-function.md) 함수입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,21 +51,21 @@ HRESULT GetProcAddress(
 |-------------|-----------------|  
 |S_OK|메서드가 완료되었습니다.|  
 |E_POINTER|`pszProcName` 또는 `ppProc`이 null입니다.|  
-|CLR_E_SHIM_RUNTIMEEXPORT|지정된 된 함수는 내보낸된 함수가 않습니다.|  
+|CLR_E_SHIM_RUNTIMEEXPORT|지정된 된 함수는 내보낸된 함수가 아닙니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 사용 하면 CLR 로드 되지만 초기화 되지 않았습니다.  
+ 이 메서드를 사용 하면 CLR을 로드할 수는 있지만 초기화 되지 않았습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MetaHost.h  
   
  **라이브러리:** MSCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [ICLRRuntimeInfo 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
- [호스팅 인터페이스](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [호스팅](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## <a name="see-also"></a>참고자료
+- [ICLRRuntimeInfo 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
+- [호스팅 인터페이스](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [호스팅](../../../../docs/framework/unmanaged-api/hosting/index.md)

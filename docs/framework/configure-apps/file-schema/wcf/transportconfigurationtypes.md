@@ -2,19 +2,19 @@
 title: '&lt;transportConfigurationTypes&gt;'
 ms.date: 03/30/2017
 ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69
-ms.openlocfilehash: 5a51450d198ea395098f8a6a38d9104d0fe8538b
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 37ce20c5fb0791596264bb7b6c03d5d0f2cc2388
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54704919"
 ---
 # <a name="lttransportconfigurationtypesgt"></a>&lt;transportConfigurationTypes&gt;
 특정 전송의 형식을 식별하는 구성 요소 컬렉션을 나타냅니다. 사용자 지정 WAS 프로토콜을 추가하는 데 사용할 수 있습니다.  
   
  \<system.ServiceModel>  
-\<serviceHostingEnvironment >  
-\<transportConfigurationTypes >  
+\<ServiceHostingEnvironment>  
+\<transportConfigurationTypes>  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,10 +47,10 @@ ms.locfileid: "54145473"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<serviceHostingEnvironment >](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|특정 전송을 위해 서비스 호스팅 환경에서 인스턴스화하는 형식을 정의합니다.|  
+|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|특정 전송을 위해 서비스 호스팅 환경에서 인스턴스화하는 형식을 정의합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection>  
- [호스팅](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection>
+- [호스팅](../../../../../docs/framework/wcf/feature-details/hosting.md)

@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f4680187de7318a6438bf6a5e6bd7c5f3acd05c2
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: 6a4a9bda348ce4c0dfd1e41d4154cad88d4966a1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46702974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701757"
 ---
 # <a name="startupflags-enumeration"></a>STARTUP_FLAGS 열거형
 CLR (공용 언어 런타임)의 시작 동작을 나타내는 값을 포함 합니다. 기본적으로 가비지 수집은 비 동시 및 전용 기본 클래스 라이브러리는 도메인 중립적인 영역에 로드 됩니다.  
@@ -57,7 +57,7 @@ typedef enum {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`STARTUP_CONCURRENT_GC`|동시 가비지 수집을 사용 해야 함을 지정 합니다. 호출자를 묻는 메시지가 나타나면 서버 빌드 및 동시 가비지 컬렉션을 단일 프로세서 컴퓨터에서 워크스테이션 빌드 및 비 동시 가비지 수집 대신 실행 됩니다. **참고:** 동시 가비지 컬렉션은 WOW64를 실행 중인 응용 프로그램에서 지원 되지 않습니다 x86 에뮬레이터 (이전의 IA-64) Intel Itanium 아키텍처를 구현 하는 64 비트 시스템에서. 64 비트 Windows 시스템에서 WOW64를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [실행 중인 32 비트 응용 프로그램](/windows/desktop/WinProg64/running-32-bit-applications)합니다.|  
+|`STARTUP_CONCURRENT_GC`|동시 가비지 수집을 사용 해야 함을 지정 합니다. 호출자를 묻는 메시지가 나타나면 서버 빌드 및 동시 가비지 컬렉션을 단일 프로세서 컴퓨터에서 워크스테이션 빌드 및 비 동시 가비지 수집 대신 실행 됩니다. **참고:**  동시 가비지 컬렉션은 WOW64를 실행 중인 응용 프로그램에서 지원 되지 않습니다 x86 에뮬레이터 (이전의 IA-64) Intel Itanium 아키텍처를 구현 하는 64 비트 시스템에서. 64 비트 Windows 시스템에서 WOW64를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [실행 중인 32 비트 응용 프로그램](/windows/desktop/WinProg64/running-32-bit-applications)합니다.|  
 |`STARTUP_LOADER_OPTIMIZATION_MASK`|해당 로더 최적화가 실행을 지정 합니다.|  
 |`STARTUP_LOADER_OPTIMIZATION_SINGLE_DOMAIN`|어셈블리가 없는 도메인 중립적으로 로드 되도록 지정 합니다.|  
 |`STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN`|모든 어셈블리가 도메인 중립적으로 로드 되도록 지정 합니다.|  
@@ -75,7 +75,7 @@ typedef enum {
 |`STARTUP_ARM`|응용 프로그램 도메인 리소스 모니터링이 활성화 되었음을 지정 합니다. 참조 된 <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> 속성 및 [ \<appDomainResourceMonitoring > 요소](../../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MSCorEE.h  
   
@@ -83,5 +83,5 @@ typedef enum {
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [호스팅 열거형](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [호스팅 열거형](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

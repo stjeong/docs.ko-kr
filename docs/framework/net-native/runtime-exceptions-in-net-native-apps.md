@@ -4,18 +4,18 @@ ms.date: 03/30/2017
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: efb16c1e947cd832da88b53a3522a5928e77ae06
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: da30ae3f32ebbfabbdf35dd939c27b8d88e7e755
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43501713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54696869"
 ---
 # <a name="runtime-exceptions-in-net-native-apps"></a>.NET 네이티브 앱의 런타임 예외
 디버그 및 릴리스 구성이 완전히 다르므로 해당 대상 플랫폼에서 유니버설 Windows 플랫폼 앱의 릴리스 빌드를 테스트하는 것이 중요합니다. 기본적으로 디버그 구성에서는 .NET 핵심 런타임을 사용하여 앱을 컴파일하지만 릴리스 구성에서는 .NET 네이티브를 사용하여 앱을 네이티브 코드로 컴파일합니다.  
   
 > [!IMPORTANT]
->  앱의 릴리스 버전을 테스트할 때 발생할 수 있는 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) 및 [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 예외를 처리하는 방법에 대한 자세한 내용은 [시작](../../../docs/framework/net-native/getting-started-with-net-native.md) 항목의  “4단계: 수동으로 누락된 메타데이터 문제 해결”과 [리플렉션 및 .NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md) 및 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 참조하세요.  
+>  처리 하는 방법은 합니다 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)를 [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), 및 [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) 할 예외 앱의 릴리스 버전을 테스트할 때 발생할 내용은 "4 단계: 누락 된 메타 데이터를 수동으로 해결:에 [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md) 항목인 뿐만 [리플렉션 및.NET 네이티브](../../../docs/framework/net-native/reflection-and-net-native.md) 및 [런타임 지시문 (rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## <a name="debug-and-release-builds"></a>디버그 및 릴리스 빌드  
  디버그 빌드가 .NET 핵심 런타임에 대해 실행될 때 네이티브 코드로 컴파일되지 않았습니다. 그러므로 일반적으로 모든 서비스가 앱에서 사용 가능한 런타임에 의해 제공됩니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "43501713"
   
 <a name="Messages"></a>   
 ## <a name="runtime-exception-messages"></a>Runtime exception messages  
- 응용 프로그램 실행 파일 크기를 최소화하기 위해 .NET 네이티브에서는 예외 메시지의 전체 텍스트를 포함하지 않습니다. 결과적으로, 릴리스 빌드에서 런타임 예외가 throw될 경우 예외 메시지의 전체 텍스트가 표시되지 않을 수 있습니다. 대신 자세한 정보에 대한 링크와 하위 문자열로 구성될 수 있습니다. 예를 들어 예외 정보가 다음과 같이 나타날 수 있습니다.  
+ 애플리케이션 실행 파일 크기를 최소화하기 위해 .NET 네이티브에서는 예외 메시지의 전체 텍스트를 포함하지 않습니다. 결과적으로, 릴리스 빌드에서 런타임 예외가 throw될 경우 예외 메시지의 전체 텍스트가 표시되지 않을 수 있습니다. 대신 자세한 정보에 대한 링크와 하위 문자열로 구성될 수 있습니다. 예를 들어 예외 정보가 다음과 같이 나타날 수 있습니다.  
   
 ```  
 Exception thrown: '$16_System.AggregateException' in Unknown Module.  
@@ -59,6 +59,6 @@ Additional information: Value does not fall within the expected range.
   
  전체 스택을 얻으려면 디버그 빌드를 대신 실행합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [.NET 네이티브 Windows 유니버설 앱 디버깅](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/29/debugging-net-native-windows-universal-apps.aspx)  
- [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)
+## <a name="see-also"></a>참고자료
+- [.NET 네이티브 Windows 유니버설 앱 디버깅](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/29/debugging-net-native-windows-universal-apps.aspx)
+- [시작](../../../docs/framework/net-native/getting-started-with-net-native.md)

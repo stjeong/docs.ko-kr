@@ -2,20 +2,20 @@
 title: 재생 공격
 ms.date: 03/30/2017
 ms.assetid: 7a17e040-93cd-4432-81b9-9f62fec78c8f
-ms.openlocfilehash: 3139e0ea094f1f7483261ffd10026815e5d12f31
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: bceaa1bb723144ee4e3b534aa1537acdc7f65fc3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33494080"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712079"
 ---
 # <a name="replay-attacks"></a>재생 공격
-A *재생 공격* 는 공격자가 두 당사자 간에 메시지 스트림을 복사 하 고 하나 이상의 당사자에 게 스트림을 재생 하는 경우에 발생 합니다. 완화되지 않은 경우 공격을 받기 쉬운 컴퓨터는 스트림을 올바른 메시지로 처리하여 항목에 대한 중복 주문과 같은 잘못된 결과의 범위에 있게 됩니다.  
+A *재생 공격* 공격자가 두 당사자 간에 메시지 스트림을 복사 하 고 하나 이상의 당사자에 게 스트림을 재생 하는 경우 발생 합니다. 완화되지 않은 경우 공격을 받기 쉬운 컴퓨터는 스트림을 올바른 메시지로 처리하여 항목에 대한 중복 주문과 같은 잘못된 결과의 범위에 있게 됩니다.  
   
 ## <a name="bindings-may-be-subject-to-reflection-attacks"></a>바인딩이 반사 공격을 받기 쉬운 경우  
- *반사 공격* 회신으로 수신기에서 온 경우 메시지를 보낸 사람에 게 재생 됩니다. 표준 *재생 검색* Windows Communication Foundation (WCF)에서 메커니즘 처리 하지 않는 자동으로이 있습니다.  
+ *반사 공격* 회신으로 수신기에서 가져온 것 처럼 메시지를 보낸 사람에 게 재생 됩니다. 표준 *재생 검색* Windows Communication Foundation (WCF)의 메커니즘은 자동으로 처리 하지이 있습니다.  
   
- WCF 서비스 모델 요청 메시지에 서명된 된 메시지 ID를 추가 하 고 서명 된 예상 하므로 반사 공격은 기본적으로 완화 됩니다 `relates-to` 응답 메시지에 헤더입니다. 따라서 요청 메시지를 응답으로 재생할 수 없습니다. 보안 RM(신뢰할 수 있는 메시지) 시나리오에서 반사 공격은 다음과 같은 이유로 완화됩니다.  
+ WCF 서비스 모델을 요청 메시지에 서명된 된 메시지 ID를 추가 하며 로그인 하므로 반사 공격은 기본적으로 완화 됩니다 `relates-to` 응답 메시지의 헤더입니다. 따라서 요청 메시지를 응답으로 재생할 수 없습니다. 보안 RM(신뢰할 수 있는 메시지) 시나리오에서 반사 공격은 다음과 같은 이유로 완화됩니다.  
   
 -   시퀀스 만들기 및 시퀀스 만들기 응답 메시지 스키마는 다릅니다.  
   
@@ -32,14 +32,14 @@ A *재생 공격* 는 공격자가 두 당사자 간에 메시지 스트림을 �
   
  완화 방안은 다음과 같습니다.  
   
--   상태 저장 보안 컨텍스트 토큰(보안 대화 사용 또는 사용 안 함)과 함께 메시지 모드 보안을 사용합니다. 자세한 내용은 참조 [하는 방법: 보안 세션에 대 한 보안 컨텍스트 토큰 만들기](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)합니다.  
+-   상태 저장 보안 컨텍스트 토큰(보안 대화 사용 또는 사용 안 함)과 함께 메시지 모드 보안을 사용합니다. 자세한 내용은 [방법: 보안 컨텍스트를 만들 보안 세션에 대 한 토큰](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)합니다.  
   
 -   전송 수준 보안을 사용하도록 서비스를 구성합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [정보 공개](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
- [권한 상승](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
- [서비스 거부](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
- [변조](../../../../docs/framework/wcf/feature-details/tampering.md)  
- [지원되지 않는 시나리오](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+## <a name="see-also"></a>참고자료
+- [보안 고려 사항](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [정보 공개](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [권한 상승](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
+- [서비스 거부](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
+- [변조](../../../../docs/framework/wcf/feature-details/tampering.md)
+- [지원되지 않는 시나리오](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

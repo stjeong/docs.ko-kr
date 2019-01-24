@@ -2,12 +2,12 @@
 title: WCF의 &lt;activityStateQueries&gt;
 ms.date: 10/08/2018
 ms.assetid: 9e45db49-ed85-4fdf-bd65-0d5477e31823
-ms.openlocfilehash: 2dabfdd248006de60b5e84e739f78e03f364dde3
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 6b21ad3f5487a924309b8bee6b9ac972f23bdc66
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701939"
 ---
 # <a name="ltactivitystatequeriesgt-of-wcf"></a>WCF의 &lt;activityStateQueries&gt;
 
@@ -17,10 +17,10 @@ ms.locfileid: "54146188"
 
 \<system.serviceModel>  
 \<tracking>  
-\<프로필 >  
+\<profiles>  
 \<trackingProfile>  
 \<workflow>  
-\<activityStateQueries >  
+\<activityStateQueries>  
 
 ## <a name="syntax"></a>구문  
   
@@ -60,7 +60,7 @@ ms.locfileid: "54146188"
 
 |요소|설명|
 |-------------|-----------------|
-|[\<activityStateQuery >](activitystatequery-of-wcf.md)|활동 내에서 발생하는 오류의 처리를 추적하는 데 사용되는 쿼리입니다.  이 이벤트는 FaultHandler가 오류를 처리할 때마다 발생합니다.|
+|[\<activityStateQuery>](activitystatequery-of-wcf.md)|활동 내에서 발생하는 오류의 처리를 추적하는 데 사용되는 쿼리입니다.  이 이벤트는 FaultHandler가 오류를 처리할 때마다 발생합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
@@ -68,9 +68,9 @@ ms.locfileid: "54146188"
 |-------------|-----------------|
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|`activityDefinitionId` 속성에 의해 식별되는 특정 워크플로에 대한 모든 쿼리를 포함하는 구성 요소입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection>    
-- <xref:System.Activities.Tracking.ActivityStateQuery>    
-- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection>
+- <xref:System.Activities.Tracking.ActivityStateQuery>
+- [워크플로 추적](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [추적 프로필](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

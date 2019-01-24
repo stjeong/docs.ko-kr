@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: 7f4a5fada6c2c17563796ae634ee742285551160
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e8aa8d66e667036f09bd5670e779f14fa9401450
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54643808"
 ---
 # <a name="internet-unsecured-client-and-service"></a>보안이 설정되지 않은 인터넷 클라이언트 및 서비스
 다음 그림에는 공용, 보안 되지 않은 Windows Communication Foundation (WCF) 클라이언트 및 서비스의 예가 나와 있습니다.  
@@ -109,7 +109,7 @@ ms.locfileid: "50181487"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
+- [보안 개요](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

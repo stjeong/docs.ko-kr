@@ -4,19 +4,19 @@ ms.date: 03/30/2017
 ms.assetid: 408f25c4-6d60-475c-92b1-7b52b777c6db
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f68304b06c502672ae1aac9693a966ea546ee4dd
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: c0b882500b41080bc5998232b5afbce9d13157b4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54641554"
 ---
 # <a name="missingmetadataexception-class-net-native"></a>MissingMetadataException 클래스(.NET 네이티브)
 **Windows 10의 Windows 앱용 .NET, [!INCLUDE[net_native](../../../includes/net-native-md.md)]에만 해당**  
   
  리플렉션을 사용하여 존재하지 않는 메타데이터를 검색하면 throw되는 예외입니다.  
   
- **Namespace:** System.Reflection  
+ **네임스페이스:** System.Reflection  
   
 > [!IMPORTANT]
 >  `MissingMetadataException` 클래스는 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 도구 체인에서 내부용으로만 사용됩니다. 이 클래스는 타사 코드에서 사용하면 안 되고 응용 프로그램 코드에서 예외를 처리하면 안 됩니다. 대신, [런타임 지시문 파일](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)에 항목을 추가하여 예외를 제거합니다. 자세한 내용은 설명 섹션을 참조하세요.  
@@ -74,16 +74,16 @@ ms.locfileid: "53148335"
  런타임에 앱이 사용할 수 있는 메타데이터는 런타임 지시문(XML 구성) 파일인 *.rd.xml을 통해 정의됩니다. 앱에서 이 예외가 throw되지 않도록 하려면 런타임에 존재해야 하는 메타데이터를 정의하도록 \*.rd.xml을 수정해야 합니다. \*.rd.xml 파일의 형식에 대한 자세한 내용은 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 확인하세요.  
   
 > [!IMPORTANT]
->  이 예외는 응용 프로그램에 필요한 메타데이터를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
+>  이 예외는 애플리케이션에 필요한 메타데이터를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일을 사용하여 예외를 방지해야 합니다. 예외를 제거하는 런타임 지시문 파일에 추가할 수 있는 항목을 가져오려면 두 문제 해결사 중 하나를 사용할 수 있습니다.  
 >   
 >  -   형식의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/type.html) 입니다.  
 > -   메서드의 경우 [MissingMetadataException 문제 해결사](https://dotnet.github.io/native/troubleshooter/method.html) 입니다.  
   
  `MissingMetadataException` 클래스는 고유한 멤버를 포함하지 않으며 모든 멤버는 <xref:System.TypeAccessException>에서 상속됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Exception?displayProperty=nameWithType>  
- <xref:System.TypeAccessException>  
- [MissingInteropDataException 클래스](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)  
- [MissingRuntimeArtifactException 클래스](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Exception?displayProperty=nameWithType>
+- <xref:System.TypeAccessException>
+- [MissingInteropDataException 클래스](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)
+- [MissingRuntimeArtifactException 클래스](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

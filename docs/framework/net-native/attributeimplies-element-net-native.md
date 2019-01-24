@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 960ee5716b9760ab82628a8d21728cd6675e5215
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7f4e12f690d685f58b69483631aa0e93c9902636
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395442"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54696817"
 ---
 # <a name="ltattributeimpliesgt-element-net-native"></a>&lt;AttributeImplies&gt; 요소(.NET 네이티브)
 포함 특성이 적용되는 코드 요소에 대한 정책을 정의합니다.  
@@ -67,8 +67,8 @@ ms.locfileid: "33395442"
   
  리플렉션, serialization 및 interop 특성은 모두 선택적 항목이지만 하나 이상 있어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [\<형식 > 요소](../../../docs/framework/net-native/type-element-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## <a name="see-also"></a>참고자료
+- [\<형식 > 요소](../../../docs/framework/net-native/type-element-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 요소](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 51a7969821cb4c2367ac298c8452daf1f2a8ceab
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: d4b2bab09d9ac9f14ae9d1bf78254c9c6a376677
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54691478"
 ---
 # <a name="securing-method-access"></a>메서드 액세스 보안
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
- 몇몇 메서드는 임의의 신뢰할 수 없는 코드 호출을 허용하는 데 적합하지 않을 수 있습니다. 이러한 메서드는 위험을 가져옵니다. 메서드가 제한된 정보를 제공하거나, 전달된 임의 정보를 신뢰하거나, 매개 변수에서 오류 검사를 수행하지 않거나, 잘못된 매개 변수를 사용하여 오작동하거나 피해를 줄 수 있습니다. 이들 경우에 대해 알고 있어야 하고 메서드 보호를 도와주는 조치를 취해야 합니다.  
+ 몇몇 메서드는 임의의 신뢰할 수 없는 코드 호출을 허용하는 데 적합하지 않을 수 있습니다. 이러한 메서드는 위험을 가져옵니다. 메서드는 몇 가지 제한 된 정보를 제공할 수 있습니다. 적용 합니다. 전달 된 모든 정보를 생각할 수 있습니다. 매개 변수를;에서 오류 검사를 수행 하지 않을 수 있습니다. 또는 잘못 된 매개 변수를 사용 하 여 오작동 하거나 피해 합니다.  이들 경우에 대해 알고 있어야 하고 메서드 보호를 도와주는 조치를 취해야 합니다.  
   
  경우에 따라 공용으로 제공되지 않지만 공용으로 사용되어야 하는 메서드를 제한해야 할 수 있습니다. 예를 들어 자체 DLL에서 호출되어야 하고 공용으로도 사용되어야 하는 인터페이스를 포함하지만, 이 인터페이스를 고객이 사용하지 않도록 하고 악성 코드가 구성 요소에 대한 진입점으로 악용하지 못하도록 방지하기 위해 이 인터페이스를 공개적으로 노출하지 않고자 할 수 있습니다. 공용으로 제공되지 않은 메서드를 제한하는 또 다른 일반적인 이유는 완전히 내부적인 인터페이스일 수 있는 내용을 문서화하고 지원할 필요가 없도록 하려는 것입니다.  
   
@@ -240,5 +240,5 @@ class Implemented : ICanCastToMe
   
  언어 컴파일러에서 컴파일 오류 때문에 이 재정의가 차단되더라도 다른 컴파일러로 작성된 코드는 재정의될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)
+## <a name="see-also"></a>참고자료
+- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)

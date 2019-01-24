@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 08406f7d93671b406b3c7cd8719a7a0e5e423184
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 65e1ed604084fa61c8e47f0bb468b6a6d100778c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43523504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54695727"
 ---
 # <a name="beginenumeration-function"></a>BeginEnumeration 함수
 열거형의 시작 부분에 다시 열거자를 다시 설정합니다.  
@@ -54,9 +54,9 @@ HRESULT BeginEnumeration (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 플래그의 조합을 `lEnumFlags` 이 잘못 되었거나 잘못 된 인수가 지정 되었습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 플래그의 조합을 `lEnumFlags` 이 잘못 되었거나 잘못 된 인수가 지정 되었습니다. |
 |`WBEM_E_UNEXPECTED` | 0x8004101d | 두 번째 호출 `BeginEnumeration` 에 대 한 중간 호출 없이 만들어진 [ `EndEnumeration` ](endenumeration.md)합니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 새 열거형 시작에 사용할 있는 메모리가 충분 하지 않습니다. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 새 열거형 시작에 사용할 있는 메모리가 충분 하지 않습니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -98,11 +98,11 @@ HRESULT BeginEnumeration (
 
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

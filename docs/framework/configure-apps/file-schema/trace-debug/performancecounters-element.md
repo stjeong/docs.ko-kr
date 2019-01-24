@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 69d6deafb6aad88f5d379c7e8d4ac707e4c51815
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: a7b32f9cf797729aa0ca0d176b31732d06e73907
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48032467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701926"
 ---
 # <a name="ltperformancecountersgt-element"></a>&lt;performanceCounters&gt; 요소
 성능 카운터에서 공유하는 전역 메모리의 크기를 지정합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
+\<system.diagnostics>  
 \<performanceCounters>  
   
 ## <a name="syntax"></a>구문  
@@ -37,7 +37,7 @@ ms.locfileid: "48032467"
   
 |특성|설명|  
 |---------------|-----------------|  
-|filemappingsize|필수 특성입니다.<br /><br /> 성능 카운터에서 공유 하는 전역 메모리의 바이트에서 크기를 지정 합니다. 기본값은 524288입니다.|  
+|filemappingsize|필수 특성입니다.<br /><br /> 성능 카운터에서 공유하는 전역 메모리의 크기(바이트)를 지정합니다. 기본값은 524288입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -46,7 +46,7 @@ ms.locfileid: "48032467"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`Configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`Configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.diagnostics`|ASP.NET 구성 섹션의 루트 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -56,8 +56,8 @@ ms.locfileid: "48032467"
   
  별도 공유 메모리의 크기를 DWORD FileMappingSize 값을 레지스트리에서 키 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<범주 이름 >* \Performance 참조 먼저 구성 파일에서 전역 공유 메모리에 대 한 지정 된 값 뒤에 있습니다. FileMappingSize 값 존재 하지 않는 경우 별도 공유 메모리 크기가 1 4로 설정 됩니다 (1/4) 구성 파일에서 전역 설정입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.PerformanceCounter>  
- <xref:System.Diagnostics.PerformanceCounterCategory>  
- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A>  
- <xref:System.Diagnostics.PerformanceCounterInstanceLifetime>
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.PerformanceCounter>
+- <xref:System.Diagnostics.PerformanceCounterCategory>
+- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A>
+- <xref:System.Diagnostics.PerformanceCounterInstanceLifetime>

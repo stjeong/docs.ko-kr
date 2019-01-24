@@ -6,12 +6,12 @@ helpviewer_keywords:
 - asynchronous operations [WCF Data Services]
 - WCF Data Services, client library
 ms.assetid: 679644c7-e3fc-422c-b14a-b44b683900d0
-ms.openlocfilehash: 665e424ada24e5e2990eccde7193a91dc039b265
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 5db2d918dfddd1ee62dccbf43eadccf265a265e7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701497"
 ---
 # <a name="asynchronous-operations-wcf-data-services"></a>비동기 작업(WCF Data Services)
 웹 응용 프로그램의 경우 내부 네트워크 내에서 실행되는 응용 프로그램보다 클라이언트와 서버 간에 보다 긴 대기 시간을 허용해야 합니다. 응용 프로그램의 성능과 사용자 환경을 최적화하려면 웹을 통해 <xref:System.Data.Services.Client.DataServiceContext> 서버에 액세스할 때 <xref:System.Data.Services.Client.DataServiceQuery%601> 및 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 클래스의 비동기 메서드를 사용하는 것이 좋습니다.  
@@ -36,5 +36,5 @@ ms.locfileid: "47197983"
 ## <a name="threading-considerations-for-asynchronous-operations"></a>비동기 작업에 대한 스레딩 고려 사항  
  다중 스레드 응용 프로그램에서 비동기 작업의 콜백으로 등록 된 대리자가 호출 되지 않습니다 반드시는 호출 하는 데 사용 된 동일한 스레드에서 합니다 *시작* 메서드를 하면 초기 요청이 만들어집니다. 특정 스레드에서 콜백을 호출 해야 합니다는 응용 프로그램에서 명시적으로 마샬링해야 실행 합니다 *최종* 원하는 스레드에 응답을 처리 하는 메서드. 예를 들어, WPF(Windows Presentation Foundation) 기반 응용 프로그램과 Silverlight 기반 응용 프로그램에서는 <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> 개체의 <xref:System.Windows.Threading.Dispatcher> 메서드를 사용하여 응답을 UI 스레드로 다시 마샬링해야 합니다. 자세한 내용은 [데이터 서비스 (WCF Data Services/Silverlight) 쿼리](https://msdn.microsoft.com/library/3a7cdc07-c37e-4da2-b98b-c3763fd0970b)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+## <a name="see-also"></a>참고자료
+- [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

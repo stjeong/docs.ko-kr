@@ -10,12 +10,12 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 543d095c88670024a53fad7c865883ecaab1c6e0
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: b7a2cd6ec3be6d2a572e96e37032b3dec8a5a741
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45747059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54697350"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>스트리밍 공급자(WCF Data Services)
 데이터 서비스에서 BLOB(Binary Large Object) 데이터를 노출할 수 있습니다. 이 이진 데이터는 비디오 및 오디오 스트림, 이미지, 문서 파일 또는 다른 형식의 이진 미디어를 나타낼 수 있습니다. 데이터 모델의 엔터티에 이진 속성이 하나 이상 포함되어 있는 경우 데이터 서비스가 이 이진 데이터를 응답 피드의 항목 안에 base-64로 인코딩하여 반환합니다. 로드 하 고 이러한 방식으로 큰 이진 데이터를 직렬화 하는 작업 성능에 영향 때문에 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 이진 데이터가 속한 엔터티와 독립적으로 검색 하는 메커니즘을 정의 합니다. 이 작업은 엔터티의 이진 데이터를 하나 이상의 데이터 스트림으로 구분하여 수행됩니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "45747059"
   
  또한 데이터 모델을 정의하는 .edmx 또는 .csdl 파일의 루트나 엔터티에 `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` 네임스페이스를 추가해야 합니다.  
   
- 사용 하는 데이터 서비스의 예는 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] 공급자 미디어 리소스를 노출 하 고 게시물을 참조 하세요 [데이터 서비스 스트리밍 공급자 시리즈: 스트리밍 공급자 (1 부) 구현](https://go.microsoft.com/fwlink/?LinkID=198989)합니다.  
+ 사용 하는 데이터 서비스의 예는 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] 공급자 미디어 리소스를 노출 하 고 게시물을 참조 [데이터 서비스 스트리밍 공급자 시리즈: 스트리밍 공급자 (1 부) 구현](https://go.microsoft.com/fwlink/?LinkID=198989)합니다.  
   
  **리플렉션 공급자**  
  엔터티가 미디어 링크 항목임을 나타내려면 리플렉션 공급자에서 엔터티 형식을 정의하는 클래스에 <xref:System.Data.Services.Common.HasStreamAttribute>를 추가합니다.  
@@ -129,7 +129,7 @@ ms.locfileid: "45747059"
   
  자세한 내용은 [데이터 서비스 버전 관리](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Data Services 공급자](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
- [사용자 지정 데이터 서비스 공급자](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)  
- [이진 데이터 작업](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [Data Services 공급자](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
+- [사용자 지정 데이터 서비스 공급자](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
+- [이진 데이터 작업](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)

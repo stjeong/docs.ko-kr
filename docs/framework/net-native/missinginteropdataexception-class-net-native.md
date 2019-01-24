@@ -7,12 +7,12 @@ dev_langs:
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 189b50b4d35d061c511fbd06cc843296607062b7
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 1a6d5755507ca00de612677235912d86caf98553
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54698065"
 ---
 # <a name="missinginteropdataexception-class-net-native"></a>MissingInteropDataException 클래스(.NET 네이티브)
 **Windows 10의 Windows 앱용 .NET, [!INCLUDE[net_native](../../../includes/net-native-md.md)]에만 해당**  
@@ -65,7 +65,7 @@ ms.locfileid: "33392972"
   
 ## <a name="events"></a>이벤트  
   
-|Event|설명|  
+|이벤트(event)|설명|  
 |-----------|-----------------|  
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|예외에 대한 serialize된 데이터를 포함하는 예외 상태 개체를 만들기 위해 예외를 serialize할 때 발생합니다. <xref:System.Exception?displayProperty=nameWithType>에서 상속됩니다.|  
   
@@ -75,11 +75,11 @@ ms.locfileid: "33392972"
  런타임에 앱이 사용할 수 있는 메타데이터는 런타임 지시문(XML 구성) 파일인 *.rd.xml을 통해 정의됩니다. 앱에서 이 예외가 throw되지 않도록 하려면 런타임에 존재해야 하는 메타데이터를 정의하도록 이 파일을 수정해야 합니다. 런타임 지시문 파일에서 해당 프로그램 요소에 `MarshalObject`, `MarshalDelegate` 또는 `MarshalStructure` 특성을 추가하여 이 오류를 해결하는 방식이 가장 일반적으로 사용됩니다. 이 파일 형식에 대한 자세한 내용은 [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)를 확인하세요.  
   
 > [!IMPORTANT]
->  이 예외는 응용 프로그램에 필요한 메타데이터를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일에 적절한 항목을 추가하여 예외를 제거해야 합니다.  
+>  이 예외는 애플리케이션에 필요한 메타데이터를 런타임에 사용할 수 없음을 나타내므로 `try`/`catch` 블록에서 이 예외를 처리하면 안 됩니다. 대신 예외의 원인을 진단하고 런타임 지시문 파일에 적절한 항목을 추가하여 예외를 제거해야 합니다.  
   
  `MissingInteropDataException` 클래스는 메서드를 정상적으로 호출하려면 해당 메타데이터가 필요한 형식을 나타내는 고유한 멤버 하나(`MissingType` 속성)를 포함합니다. 나머지 모든 멤버는 기본 클래스인 <xref:System.Exception?displayProperty=nameWithType>에서 상속됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Exception?displayProperty=nameWithType>  
- [MissingMetadataException 클래스](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Exception?displayProperty=nameWithType>
+- [MissingMetadataException 클래스](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - line segments [WPF], creating
 - graphics [WPF], line segments
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
-ms.openlocfilehash: 61425a68d83c8078b8420be01e0e59d3cba6a4e2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9aa17a361e8e0ca5b43b2646c38926e0123818c1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712131"
 ---
 # <a name="how-to-create-a-linesegment-in-a-pathgeometry"></a>방법: PathGeometry에 LineSegment 만들기
 이 예제에서는 선분을 만드는 방법을 보여 줍니다. 선 세그먼트를 만들려면 사용 합니다 <xref:System.Windows.Media.PathGeometry>, <xref:System.Windows.Media.PathFigure>, 및 <xref:System.Windows.Media.LineSegment> 클래스입니다.  
@@ -101,9 +101,9 @@ Dim myPathFigure As New PathFigure()
   
  이 예제는 더 큰 샘플에 속합니다. 전체 샘플을 보려면 [기하 도형 샘플](https://go.microsoft.com/fwlink/?LinkID=159989)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.PathFigure>  
- <xref:System.Windows.Media.PathGeometry>  
- <xref:System.Windows.Media.GeometryDrawing>  
- <xref:System.Windows.Shapes.Path>  
- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.PathFigure>
+- <xref:System.Windows.Media.PathGeometry>
+- <xref:System.Windows.Media.GeometryDrawing>
+- <xref:System.Windows.Shapes.Path>
+- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)

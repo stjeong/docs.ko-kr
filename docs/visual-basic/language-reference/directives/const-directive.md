@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Const statement [Visual Basic], directive (#Const)
 - 'declaring constants [Visual Basic], #const directive'
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
-ms.openlocfilehash: 58d786c5e16b1e667f7c7c78b0f7857cd9711239
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 7e855f76a0fa8e6c06fd557a944c518641415f09
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46537802"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54710601"
 ---
 # <a name="const-directive"></a>#Const 지시문
 Visual Basic에 대 한 조건부 컴파일러 상수를 정의합니다.  
@@ -33,10 +33,10 @@ Visual Basic에 대 한 조건부 컴파일러 상수를 정의합니다.
   
 ## <a name="parts"></a>요소  
  `constname`  
- 필수. 정의 되는 상수의의 이름입니다.  
+ 필수 요소. 정의 되는 상수의의 이름입니다.  
   
  `expression`  
- 필수. 리터럴, 다른 조건부 컴파일러 상수를 제외한 모든 산술 또는 논리 연산자를 포함 하는 조합을 `Is`합니다.  
+ 필수 요소. 리터럴, 다른 조건부 컴파일러 상수를 제외한 모든 산술 또는 논리 연산자를 포함 하는 조합을 `Is`합니다.  
   
 ## <a name="remarks"></a>설명  
  조건부 컴파일러 상수는 항상 표시 되는 파일에 private입니다. 공용 컴파일러 상수를 사용 하 여 만들 수 없습니다는 `#Const` 지시문; 또는 사용자 인터페이스에만 만들 수 있습니다는 `/define` 컴파일러 옵션입니다.  
@@ -48,9 +48,9 @@ Visual Basic에 대 한 조건부 컴파일러 상수를 정의합니다.
   
  [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/const-directive_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)  
- [#If...Then...#Else 지시문](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)  
- [조건부 컴파일](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [If...Then...Else 문](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+## <a name="see-also"></a>참고자료
+- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [#If...Then...#Else 지시문](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Const 문](../../../visual-basic/language-reference/statements/const-statement.md)
+- [조건부 컴파일](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [If...Then...Else 문](../../../visual-basic/language-reference/statements/if-then-else-statement.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controls [WPF], ListView
 - ListView controls [WPF], about ListView control
 ms.assetid: 989e12b0-260e-4570-95c6-489284003ce2
-ms.openlocfilehash: 7b237d43cce9f17ea7e893188dac943bb996c752
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 42573304d6f3d6d145887fa7289f9b5ec019f521
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701549"
 ---
 # <a name="listview-overview"></a>ListView 개요
 <xref:System.Windows.Controls.ListView> 컨트롤은 데이터 항목 집합을 다른 레이아웃 보기에 표시 하기 위한 인프라를 제공 합니다. 예를 들어 사용자가 데이터 항목을 표에 표시하고 해당 열을 정렬해야 할 수도 있습니다.  
@@ -81,11 +81,11 @@ ms.locfileid: "53148914"
 ## <a name="creating-a-custom-view-mode"></a>사용자 지정 보기 모드 만들기  
  같은 뷰를 사용자 지정할 <xref:System.Windows.Controls.GridView> 에서 파생 되는 <xref:System.Windows.Controls.ViewBase> 표현 된 데이터 항목을 표시 하기 위한 도구를 제공 하는 클래스를 추상 <xref:System.Windows.Controls.ListViewItem> 개체입니다.    
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.GridView>  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.ListViewItem>  
- <xref:System.Windows.Data.Binding>  
- [GridView 개요](../../../../docs/framework/wpf/controls/gridview-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [컨트롤](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.GridView>
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.ListViewItem>
+- <xref:System.Windows.Data.Binding>
+- [GridView 개요](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+- [컨트롤](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

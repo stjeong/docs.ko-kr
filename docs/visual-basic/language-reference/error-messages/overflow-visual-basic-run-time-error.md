@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrERRID_Overflow
 ms.assetid: c6a23279-3086-412a-bcff-ff8ed2cb8c6f
-ms.openlocfilehash: 7546676b85465577b357b7ad0757b4db8d40dbe3
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: c45559042231b72ef1ba892cabbead03797df8e6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43863353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54642514"
 ---
 # <a name="overflow-visual-basic-run-time-error"></a>오버플로가 발생했습니다(Visual Basic 런타임 오류).
 할당 대상의 한계를 초과 하 여 할당 하려고 할 때 오버플로가 발생 했습니다.  
@@ -22,8 +22,8 @@ ms.locfileid: "43863353"
   
 3.  숫자는 정수를 강제 변환 되는 계산에 사용 되는 정수 보다 큰 결과 있지 않은 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Int32.MaxValue?displayProperty=nameWithType>  
- <xref:System.Double.MaxValue?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [오류 형식](../../../visual-basic/programming-guide/language-features/error-types.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Int32.MaxValue?displayProperty=nameWithType>
+- <xref:System.Double.MaxValue?displayProperty=nameWithType>
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [오류 형식](../../../visual-basic/programming-guide/language-features/error-types.md)

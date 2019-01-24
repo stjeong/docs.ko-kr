@@ -2,22 +2,22 @@
 title: '&lt;scopes&gt;의 &lt;add&gt;'
 ms.date: 03/30/2017
 ms.assetid: 0563a7d8-fc84-4c85-9066-af32665857c2
-ms.openlocfilehash: e2bf649259d6ccb0e55428ab3619fe561d051ff7
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 961fb3e388e3ae756bd7511ea6c65df6dd2a1486
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705575"
 ---
 # <a name="ltaddgt-of-ltscopesgt"></a>&lt;scopes&gt;의 &lt;add&gt;
 쿼리 중에 서비스 엔드포인트를 필터링하기 위해 사용할 수 있는 사용자 지정 범위 URI를 추가합니다.  
   
 \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<endpointBehaviors>  
-\<동작 >  
-\<endpointDiscovery >  
-\<범위 >  
+\<behavior>  
+\<endpointDiscovery>  
+\<scopes>  
 \<add>  
   
 ## <a name="syntax"></a>구문  
@@ -52,7 +52,7 @@ ms.locfileid: "54146240"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<범위 >](../../../../../docs/framework/configure-apps/file-schema/wcf/scopes.md)|쿼리 중에 서비스 엔드포인트를 필터링하기 위해 사용할 수 있는 사용자 지정 범위 URI를 지정하는 구성 요소의 컬렉션을 포함합니다.|  
+|[\<scopes>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopes.md)|쿼리 중에 서비스 엔드포인트를 필터링하기 위해 사용할 수 있는 사용자 지정 범위 URI를 지정하는 구성 요소의 컬렉션을 포함합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

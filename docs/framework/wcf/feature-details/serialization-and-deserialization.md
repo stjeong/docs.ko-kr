@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3d71814c-bda7-424b-85b7-15084ff9377a
-ms.openlocfilehash: be2cf6c550ab8778a42f33fa2cb1b109abeea5e9
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: 7ddad36c05d9972b9fc613403b68b7c793b6701d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48873828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54707575"
 ---
 # <a name="serialization-and-deserialization"></a>Serialization 및 Deserialization
 Windows Communication Foundation (WCF)는 새 serialization 엔진을 포함 합니다 <xref:System.Runtime.Serialization.DataContractSerializer>합니다. <xref:System.Runtime.Serialization.DataContractSerializer> 는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 개체를 XML로, XML을 .NET Framework 개체로 변환합니다. 이 항목에서는 serializer가 작동하는 방식에 대해 설명합니다.  
@@ -203,7 +203,7 @@ Windows Communication Foundation (WCF)는 새 serialization 엔진을 포함 합
 >  단계별 serialization을 사용하면 스키마에 유효하지 않은 XML이 생성될 수 있습니다.  
   
 ## <a name="deserialization"></a>Deserialization  
- 다음과 같은 정보는 <xref:System.Runtime.Serialization.XmlObjectSerializer> 및 <xref:System.Runtime.Serialization.DataContractSerializer> 클래스를 포함하여, <xref:System.Runtime.Serialization.NetDataContractSerializer>에서 상속되는 모든 클래스에 적용됩니다.  
+ 다음과 같은 정보는 <xref:System.Runtime.Serialization.XmlObjectSerializer>및 <xref:System.Runtime.Serialization.DataContractSerializer> 클래스를 포함하여, <xref:System.Runtime.Serialization.NetDataContractSerializer> 에서 상속되는 모든 클래스에 적용됩니다.  
   
  개체를 deserialize하는 가장 기본적인 방법은 <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> 메서드 오버로드 중 하나를 호출하는 것입니다. 그리고 세 개의 오버로드가 있는데, 이 각 오버로드는 <xref:System.Xml.XmlDictionaryReader>, `XmlReader`또는 `Stream`을 사용하여 읽기 위한 오버로드입니다. `Stream` 오버로드는 할당량으로 보호되지 않고 신뢰할 수 있는 데이터를 읽는 데만 사용해야 하는 텍스트 <xref:System.Xml.XmlDictionaryReader> 를 만듭니다.  
   
@@ -223,7 +223,7 @@ Windows Communication Foundation (WCF)는 새 serialization 엔진을 포함 합
   
  간단한 중 하나를 사용 하는 경우 `ReadObject` 오버 로드를 deserializer는 래퍼 요소에 네임 스페이스 확인 하 고 기본 이름 (이전 섹션인 "를 지정 하는 기본 루트 이름 및 Namespace" 참조) 알 수 없는 찾으면 예외를 throw 합니다. 요소입니다. 이전 예에서는 `<Person>` 래퍼 요소가 필요합니다. 판독기가 명명된 요소에 예상한 대로 배치되었는지 확인하기 위해 <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> 메서드가 호출됩니다.  
   
- 이 래퍼 요소 이름을 확인하지 않도록 설정하는 방법이 있습니다. `ReadObject` 메서드의 일부 오버로드는 기본적으로 `verifyObjectName`로 설정된 부울 매개 변수 `true`을 가져옵니다. `false`로 설정하면 래퍼 요소의 이름과 네임스페이스를 무시합니다. 이는 이전에 설명한 단계별 serialization 메커니즘을 사용하여 작성된 XML을 읽을 때 유용합니다.  
+ 이 래퍼 요소 이름을 확인하지 않도록 설정하는 방법이 있습니다. `ReadObject` 메서드의 일부 오버로드는 기본적으로 `verifyObjectName`로 설정된 부울 매개 변수 `true` 을 가져옵니다. `false`로 설정하면 래퍼 요소의 이름과 네임스페이스를 무시합니다. 이는 이전에 설명한 단계별 serialization 메커니즘을 사용하여 작성된 XML을 읽을 때 유용합니다.  
   
 ## <a name="using-the-netdatacontractserializer"></a>NetDataContractSerializer 사용  
  `DataContractSerializer` 와 <xref:System.Runtime.Serialization.NetDataContractSerializer> 의 주요 차이점은 `DataContractSerializer` 는 데이터 계약 이름을 사용하는 반면, `NetDataContractSerializer` 는 serialize된 XML로 전체 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 어셈블리와 형식 이름을 출력합니다. 즉, 정확히 동일한 형식은 serialization 엔드포인트와 deserialization 엔드포인트 간에 공유되어야 합니다. 다시 말하면 deserialize할 정확한 형식을 이미 알고 있으므로 알려진 형식 메커니즘은 `NetDataContractSerializer` 에 필요하지 않습니다.  
@@ -260,9 +260,9 @@ Windows Communication Foundation (WCF)는 새 serialization 엔진을 포함 합
   
  또한 `NetDataContractSerializer` 는 개체 그래프에 각 노드에 대한 전체 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 형식 및 어셈블리 이름을 출력하지 않습니다. 모호한 정보만을 출력하는데, 즉, 루트 개체 수준에서 다형적 경우에 대해 출력합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.NetDataContractSerializer>  
- <xref:System.Runtime.Serialization.XmlObjectSerializer>  
- [이진 serialization](../../../../docs/standard/serialization/binary-serialization.md)  
- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.NetDataContractSerializer>
+- <xref:System.Runtime.Serialization.XmlObjectSerializer>
+- [이진 serialization](../../../../docs/standard/serialization/binary-serialization.md)
+- [데이터 계약 직렬 변환기에서 지원하는 형식](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5a447de2bb01e7bbf838ef5443e3ae7951bf8226
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 9a93ef073d4dd2eaf58c057d4cdf25fa39082e14
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33431369"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706328"
 ---
 # <a name="isymunmanageddocumentgeturl-method"></a>ISymUnmanagedDocument::GetURL 메서드
-이 문서에 대 한 uniform resource locator (URL)를 반환합니다.  
+이 문서에 대 한 uniform resource locator (URL)을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,16 +38,16 @@ HRESULT GetURL(
   
 #### <a name="parameters"></a>매개 변수  
  `cchUrl`  
- [in] 크기 문자의는 `szURL` 버퍼입니다.  
+ [in] 문자에서 크기의는 `szURL` 버퍼입니다.  
   
  `pcchUrl`  
- [out] Null 종료를 포함 하는 URL의 크기를 받는 변수에 대 한 포인터입니다.  
+ [out] 변수는 null 종결을 포함 하 여 URL의 크기를 받는 포인터입니다.  
   
  `szUrl`  
- [out] URL을 포함 하는 버퍼입니다.  
+ [out] URL이 포함 된 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 오류 코드가 있습니다.  
+ 메서드가 성공 하면 s_ok이 고 그렇지 않으면 오류 코드입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedDocument 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

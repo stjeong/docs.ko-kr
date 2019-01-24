@@ -1,5 +1,5 @@
 ---
-title: 투명 효과 프레임을 WPF 응용 프로그램으로 확장
+title: 투명 효과 프레임을 WPF 애플리케이션으로 확장
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - extending glass frames into applications [WPF]
 - glass frames [WPF], extending into applications
 ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
-ms.openlocfilehash: 93eda6d6a13d6a510f2aeb06ab1c66d0cd40927f
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 9df6adbf9208ee58044b0ba6ef606d693c9dca7a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858332"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54705825"
 ---
-# <a name="extend-glass-frame-into-a-wpf-application"></a>투명 효과 프레임을 WPF 응용 프로그램으로 확장
+# <a name="extend-glass-frame-into-a-wpf-application"></a>투명 효과 프레임을 WPF 애플리케이션으로 확장
 이 항목을 확장 하는 방법에 설명 합니다 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] Windows Presentation Foundation (WPF) 응용 프로그램의 클라이언트 영역에 투명 효과 프레임입니다.  
   
 > [!NOTE]
@@ -143,13 +143,13 @@ void OnLoaded(object sender, RoutedEventArgs e)
 </Window>  
 ```  
   
- 다음 그림에서는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 응용 프로그램으로 확장되는 투명 효과 프레임을 보여 줍니다.  
+ 다음 그림에서는 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 애플리케이션으로 확장되는 투명 효과 프레임을 보여 줍니다.  
   
  **투명 효과 프레임이 확장 된는**[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]**응용 프로그램입니다.**  
   
  ![WPF 응용 프로그램으로 확장된 투명 효과 프레임](../../../../docs/framework/wpf/graphics-multimedia/media/wpfextendedglassintoclient.PNG "WPFextendedGlassIntoClient")  
   
-## <a name="see-also"></a>참고 항목  
- [바탕 화면 창 관리자 개요](/windows/desktop/dwm/dwm-overview)  
- [바탕 화면 창 관리자 흐림 효과 개요](/windows/desktop/dwm/blur-ovw)  
- [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea)
+## <a name="see-also"></a>참고자료
+- [바탕 화면 창 관리자 개요](/windows/desktop/dwm/dwm-overview)
+- [바탕 화면 창 관리자 흐림 효과 개요](/windows/desktop/dwm/blur-ovw)
+- [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea)

@@ -2,12 +2,12 @@
 title: 입력 문자 집합(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 13d291d3-e6bc-4719-b953-758b61a590b6
-ms.openlocfilehash: 5e7886215cac2d9363a9ed68cd03a0fce4374055
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: dce967ea8853f81fedaa53ea706fab4839b9f474
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32764699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54641202"
 ---
 # <a name="input-character-set-entity-sql"></a>입력 문자 집합(Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 UTF-16으로 인코딩된 UNICODE 문자를 사용합니다.  
@@ -28,5 +28,5 @@ ms.locfileid: "32764699"
   
  단일 식별자는 라틴 문자만 가능합니다. 이렇게 하면 원래 값만 비교되므로 비교하는 동안 모호성을 피할 수 있습니다. 예를 들어, ABC는 일본어와 라틴어에서 다를 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## <a name="see-also"></a>참고자료
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

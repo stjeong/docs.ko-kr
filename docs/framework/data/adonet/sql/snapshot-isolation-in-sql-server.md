@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
-ms.openlocfilehash: d2683ead92eb4e76494e3e23bff1c688578a316d
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 873ec2cfdf7e4b0c743a3bcf607abe8500ec4d3f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200994"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54643054"
 ---
 # <a name="snapshot-isolation-in-sql-server"></a>SQL Server의 스냅숏 격리
 스냅숏 격리를 통해 OLTP 응용 프로그램의 동시성이 향상됩니다.  
@@ -141,7 +141,7 @@ SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
   
  응용 프로그램에서 충돌이 자주 발생하는 경우 스냅샷 격리는 적합한 방법이 될 수 없습니다. 힌트는 꼭 필요한 경우에만 사용해야 합니다. 작동 시 잠금 힌트를 계속해서 사용하도록 응용 프로그램을 디자인해서는 안 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET 관리 되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)      
- [트랜잭션 잠금 및 행 버전 관리 지침](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide)
+## <a name="see-also"></a>참고자료
+- [SQL Server 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [트랜잭션 잠금 및 행 버전 관리 지침](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide)

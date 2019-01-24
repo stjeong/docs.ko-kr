@@ -8,12 +8,12 @@ helpviewer_keywords:
 - key frames [WPF], timing
 - timing key-fram animation
 ms.assetid: b059216f-7d4b-4ca8-a019-bc287ee7bf16
-ms.openlocfilehash: d65bf6f7643adf1d98d468853ae8017a4a6554ac
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 3a8e11ee8bfbbe87ca5a1c51b815dd21c124a951
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44086195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54712027"
 ---
 # <a name="how-to-control-key-frame-animation-timing"></a>방법: 키 프레임 애니메이션 타이밍 제어
 이 예제에서는 키 프레임 애니메이션 내의 키 프레임의 타이밍을 제어 하는 방법을 보여 줍니다. 다른 애니메이션과 마찬가지로 키 프레임 애니메이션에는 한 <xref:System.Windows.Media.Animation.Timeline.Duration%2A> 속성입니다. 애니메이션의 지속 시간을 지정 하는 것 외에도 각 키 프레임에 할당 된 해당 기간의 부분을 지정 해야 합니다. 지정 시간을 할당 하는 <xref:System.Windows.Media.Animation.KeyTime> 각 키 프레임 애니메이션에 대 한 합니다.  
@@ -65,7 +65,7 @@ ms.locfileid: "44086195"
   
  전체 샘플을 보려면 [키 프레임 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=160012)을 참조하세요. 키 프레임 애니메이션에 대 한 자세한 내용은 참조는 [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

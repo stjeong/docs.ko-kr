@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5498874661f36ee4e96e6d2d58e3076bb8abbcce
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: cc68ba1d87a6dcb638eae5bfa041baeaf0846800
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54699937"
 ---
 # <a name="ltappcontextswitchoverridesgt-element"></a>&lt;AppContextSwitchOverrides&gt; 요소
 <xref:System.AppContext> 클래스에 사용되는 스위치를 하나 이상 정의하여 새 기능의 옵트아웃 메커니즘을 제공합니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "53611492"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`runtime`|런타임 초기화 옵션에 대한 정보를 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -81,7 +81,7 @@ ms.locfileid: "53611492"
 |`Switch.System.IO.Ports.`<br/>`DoNotCatchSerialStreamThreadExceptions`|사용 하 여 만든 백그라운드 스레드에서 throw 되는 시스템 예외를 운영 하 고 있는지 여부를 제어 <xref:System.IO.Ports.SerialPort> 스트림을 프로세스를 종료 합니다.|.NET Framework 4.7.1| 
 |`Switch.System.IO.`<br/>`UseLegacyPathHandling`|레거시 경로 정규화 사용 되 고 URI 경로 지 여부를 제어 합니다 <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> 고 <xref:System.IO.Path.GetPathRoot%2A?displayProperty=nameWithType> 메서드. 자세한 내용은 참조 하세요. [완화 합니다. 경로 정규화](~/docs/framework/migration-guide/mitigation-path-normalization.md) 및 [완화 합니다. 경로 콜론 검사](~/docs/framework/migration-guide/mitigation-path-colon-checks.md)합니다.|.NET Framework 4.6.2|  
 |`Switch.System.`<br/>`MemberDescriptorEqualsReturnsFalseIfEquivalent`|같음 비교에 대 한 테스트가 있는지 여부를 제어 합니다 <xref:System.ComponentModel.MemberDescriptor.Category%2A?displayProperty=nameWithType> 개체의 속성을 <xref:System.ComponentModel.MemberDescriptor.Description%2A?displayProperty=nameWithType> 두 번째 개체의 속성입니다. 자세한 내용은 [MemberDescriptor.Equals의 잘못 된 구현](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#incorrect-implementation-of-memberdescriptorequals)합니다.|.NET Framework 4.6.2|  
- `Switch.System.Net.`<br/>`DontCheckCertificateEKUs`|사용 하지 않도록 설정 된 키 사용 (EKU) 개체 식별자 (OID) 유효성 검사를 인증서입니다. EKU(향상된 키 사용) 확장은 키를 사용하는 응용 프로그램을 나타내는 OID(개체 식별자)의 모음입니다.|.NET Framework 4.6|
+ `Switch.System.Net.`<br/>`DontCheckCertificateEKUs`|사용 하지 않도록 설정 된 키 사용 (EKU) 개체 식별자 (OID) 유효성 검사를 인증서입니다. EKU(향상된 키 사용) 확장은 키를 사용하는 애플리케이션을 나타내는 OID(개체 식별자)의 모음입니다.|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSchSendAuxRecord`|SCH_SEND_AUX_RECORD 사용을 사용 하지 않도록 설정 하 여 완화 방법은 TLS1.0 브라우저 악용에 대해 SSL/TLS (비스 트)를 사용 하지 않도록 설정 합니다.|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSchUseStrongCrypto`|컨트롤 여부는 <xref:System.Net.ServicePointManager?displayProperty=nameWithType> 및 <xref:System.Net.Security.SslStream?displayProperty=nameWithType> 클래스는 SSL 3.0 프로토콜을 사용할 수 있습니다. 자세한 내용은 참조 하세요. [완화 합니다. TLS 프로토콜](~/docs/framework/migration-guide/mitigation-tls-protocols.md)합니다.|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSystemDefaultTlsVersions`|Tls11, Tls12, Tls 기본값으로 다시 되돌리기 SystemDefault TLS 버전을 사용 하지 않도록 설정 합니다.|.NET Framework 4.7|
@@ -161,7 +161,7 @@ ms.locfileid: "53611492"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.AppContext?displayProperty=nameWithType>  
-- [\<런타임 > 요소](runtime-element.md)  
+## <a name="see-also"></a>참고자료
+- <xref:System.AppContext?displayProperty=nameWithType>
+- [\<런타임 > 요소](runtime-element.md)
 - [\<configuration> 요소](../configuration-element.md)

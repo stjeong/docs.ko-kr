@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0f5a70a01937c52197978db776b90028e1fcb7c6
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 78f25b657e6cb103797e13e98c3dd61a80003dc2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48580159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54701822"
 ---
 # <a name="converting-times-between-time-zones"></a>표준 시간대 간 시간 변환
 
-날짜 및 시간을 사용하는 응용 프로그램에서 표준 시간대 간의 차이를 처리하는 것이 더욱 중요해지고 있습니다. 응용 프로그램 현지 시간을 항상을 표현할 수 있는 것을 가정할 수 더 이상 시간에서 사용할 수 있는 <xref:System.DateTime> 구조입니다. 예를 들어 동아시아 지역 고객에게는 미국 동부 지역의 현재 시간을 표시하는 웹 페이지의 신뢰성이 떨어집니다. 이 항목에서는 변환 하는 방법 뿐만 아니라 다른 시간대의 시간을 변환 하는 방법 설명 <xref:System.DateTimeOffset> 표준 시간대 인식 제한 된 값입니다.
+날짜 및 시간을 사용하는 애플리케이션에서 표준 시간대 간의 차이를 처리하는 것이 더욱 중요해지고 있습니다. 응용 프로그램 현지 시간을 항상을 표현할 수 있는 것을 가정할 수 더 이상 시간에서 사용할 수 있는 <xref:System.DateTime> 구조입니다. 예를 들어 동아시아 지역 고객에게는 미국 동부 지역의 현재 시간을 표시하는 웹 페이지의 신뢰성이 떨어집니다. 이 항목에서는 변환 하는 방법 뿐만 아니라 다른 시간대의 시간을 변환 하는 방법 설명 <xref:System.DateTimeOffset> 표준 시간대 인식 제한 된 값입니다.
 
 ## <a name="converting-to-coordinated-universal-time"></a>UTC로 변환
 
@@ -106,7 +106,7 @@ UTC를 현지 시간으로 변환 하려면 호출을 <xref:System.DateTime.ToLo
 
 ## <a name="converting-datetimeoffset-values"></a>DateTimeOffset 값 변환
 
-날짜 및 시간 값을 나타내는 <xref:System.DateTimeOffset> 개체는 완전히 시간대 인스턴스화된 개체 시 해당 표준 시간대에서 분리 되므로 인식 합니다. 그러나 많은 경우에는 응용 프로그램에서 특정 표준 시간대의 시간이 아니라 단순히 서로 다른 UTC 오프셋 두 개를 기준으로 날짜 및 시간을 변환하면 됩니다. 이 변환을 수행 하려면 현재 인스턴스를 호출할 수 있습니다 <xref:System.DateTimeOffset.ToOffset%2A> 메서드. 메서드의 단일 매개 변수는 새 날짜 및 메서드를 반환 하는 시간 값의 오프셋입니다.
+날짜 및 시간 값을 나타내는 <xref:System.DateTimeOffset> 개체는 완전히 시간대 인스턴스화된 개체 시 해당 표준 시간대에서 분리 되므로 인식 합니다. 그러나 많은 경우에는 애플리케이션에서 특정 표준 시간대의 시간이 아니라 단순히 서로 다른 UTC 오프셋 두 개를 기준으로 날짜 및 시간을 변환하면 됩니다. 이 변환을 수행 하려면 현재 인스턴스를 호출할 수 있습니다 <xref:System.DateTimeOffset.ToOffset%2A> 메서드. 메서드의 단일 매개 변수는 새 날짜 및 메서드를 반환 하는 시간 값의 오프셋입니다.
 
 예를 들어 사용자가 웹 페이지에서 요청한 날짜 및 시간이 알려져 있고 이 값이 MM/dd/yyyy hh:mm:ss zzzz 형식의 문자열로 serialize된 경우 뒤따르는 `ReturnTimeOnServer` 메서드에서 이 날짜 및 시간 값을 웹 서버의 날짜 및 시간 값으로 변환합니다.
 
@@ -122,6 +122,6 @@ UTC보다 다섯 시간 빠른 표준 시간대의 날짜 및 시간을 나타�
 
 ## <a name="see-also"></a>참고자료
 
-* <xref:System.TimeZoneInfo>
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
-* [로컬 시스템에 정의된 표준 시간대 찾기](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
+- <xref:System.TimeZoneInfo>
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [로컬 시스템에 정의된 표준 시간대 찾기](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: b921bc94-bd3a-4c91-9ede-2c8d4f78ea9a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: a30e80b1b4a412405787c0c14ad58995a2d7fffc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 996231ae035e6518aaceac0ba75b3de3b52a0a22
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33394250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640175"
 ---
 # <a name="security-and-serialization"></a>보안 및 Serialization
 다른 방법으로는 액세스할 수 없는 개체 인스턴스 데이터를 직렬화를 통해 다른 코드에서 보거나 수정할 수 있으므로 <xref:System.Security.Permissions.SecurityPermission> 플래그가 지정된 <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> 의 직렬화를 수행하려면 코드에 특수 권한이 필요합니다. 기본 정책에 따라 이 권한은 인터넷에서 다운로드한 코드나 인트라넷 코드에는 부여되지 않고 로컬 컴퓨터에 있는 코드에만 부여됩니다.  
@@ -47,5 +47,5 @@ ms.locfileid: "33394250"
   
 -   직렬화에 사용되는 특수 생성자는 엄격한 입력 유효성 검사를 수행해야 하며 악성 코드가 악용할 수 없도록 보호하거나 비공개로 설정해야 합니다. 클래스를 명시적으로 만들거나 일종의 팩터리를 통해 간접적으로 만드는 경우와 같이 기타 모든 방법으로 이러한 클래스의 인스턴스를 가져오려면 이와 같은 보안 검사 및 권한을 적용해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)
+## <a name="see-also"></a>참고자료
+- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)

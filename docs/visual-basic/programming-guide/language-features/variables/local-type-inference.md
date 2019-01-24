@@ -12,12 +12,12 @@ helpviewer_keywords:
 - inference [Visual Basic]
 - type inference [Visual Basic]
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
-ms.openlocfilehash: b33b8b2d17c240e380377528d4f5d2f511381a7d
-ms.sourcegitcommit: 60645077dc4b62178403145f8ef691b13ffec28e
+ms.openlocfilehash: f4edc879af9539a40269336bed97fe206920992a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37959954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706750"
 ---
 # <a name="local-type-inference-visual-basic"></a>지역 형식 유추(Visual Basic)
 Visual Basic 컴파일러를 사용 하 여 *형식 유추* 없이 선언 된 지역 변수의 데이터 형식을 결정 하는 `As` 절. 컴파일러는 초기화 식의 형식에서 변수의 형식을 유추합니다. 그러면 다음 예제에서와 같이 형식을 명시적으로 지정 하지 않고 변수를 선언할 수 있습니다. 선언으로 인해 둘 다 `num1` 고 `num2` 정수로 강력한 형식입니다.  
@@ -71,11 +71,11 @@ Visual Basic 컴파일러를 사용 하 여 *형식 유추* 없이 선언 된 �
   
  자세한 내용은 [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md) 하 고 [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [초기 바인딩 및 런타임에 바인딩](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
- [For Each...Next 문](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [For...Next 문](../../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)  
- [/optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+## <a name="see-also"></a>참고자료
+- [익명 형식](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [초기 바인딩 및 런타임에 바인딩](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [For Each...Next 문](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [For...Next 문](../../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Option Infer 문](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
+- [/optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

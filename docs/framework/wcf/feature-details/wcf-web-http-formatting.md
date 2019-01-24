@@ -2,12 +2,12 @@
 title: WCF 웹 HTTP 형식 지정
 ms.date: 03/30/2017
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
-ms.openlocfilehash: 3a5164cb6271c8fd1d67b3c59fd35705d997f9fe
-ms.sourcegitcommit: bdd930b5df20a45c29483d905526a2a3e4d17c5b
+ms.openlocfilehash: e3db2be1a4f40bc0ae85c3d42faca20cef5308d4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53238444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54698741"
 ---
 # <a name="wcf-web-http-formatting"></a>WCF 웹 HTTP 형식 지정
 WCF 웹 HTTP 프로그래밍 모델을 사용하면 서비스 작업의 응답을 반환하는 데 사용할 수 있는 가장 적절한 형식을 동적으로 결정할 수 있습니다. 적절한 형식을 결정하는 데 지원되는 방법은 자동 형식 지정과 명시적 형식 지정, 두 가지가 있습니다.  
@@ -163,10 +163,10 @@ public class Service : IService
 }  
 ```  
   
-## <a name="see-also"></a>참고자료  
- <xref:System.UriTemplate>  
- <xref:System.UriTemplateMatch>  
- [WCF 웹 HTTP 프로그래밍 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
- [UriTemplate 및 UriTemplateTable](../../../../docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md)  
- [WCF 웹 HTTP 프로그래밍 모델 개요](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
- [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.UriTemplate>
+- <xref:System.UriTemplateMatch>
+- [WCF 웹 HTTP 프로그래밍 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [UriTemplate 및 UriTemplateTable](../../../../docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md)
+- [WCF 웹 HTTP 프로그래밍 모델 개요](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
+- [WCF 웹 HTTP 프로그래밍 개체 모델](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)

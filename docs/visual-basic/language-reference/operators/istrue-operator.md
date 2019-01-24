@@ -7,12 +7,12 @@ helpviewer_keywords:
 - IsTrue operator [Visual Basic]
 - OrElse operator [Visual Basic]
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
-ms.openlocfilehash: bf81384b0cecfd1ee3d438e4463949381279a181
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 780e67cf54c0bec230d5b052b877cf97a76d3f6d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43785194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54641124"
 ---
 # <a name="istrue-operator-visual-basic"></a>IsTrue 연산자(Visual Basic)
 식이 인지 결정 `True`합니다.  
@@ -37,14 +37,14 @@ ms.locfileid: "43785194"
  으로 변환이 정의 하지 않은 경우 `Boolean` 요소나 `IsTrue` 연산자, 컴파일러에서 오류를 알립니다.  
   
 > [!NOTE]
->  합니다 `IsTrue` 연산자 *오버 로드 된*, 클래스 또는 구조체 수 할 동작 피연산자에 해당 클래스 또는 구조체 형식의 경우. 이 연산자를 사용 하 여 이러한 클래스나 구조체에는 코드를 다시 정의 된 동작을 이해 해야 합니다. 자세한 내용은 [연산자 프로시저](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)합니다.  
+>  합니다 `IsTrue` 연산자 *오버 로드 된*, 클래스 또는 구조체 수 할 동작 피연산자에 해당 클래스 또는 구조체 형식의 경우. 이 연산자를 사용 하 여 이러한 클래스나 구조체에는 코드를 다시 정의 된 동작을 이해 해야 합니다. 자세한 내용은 [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)을 참조하세요.  
   
 ## <a name="example"></a>예제  
  다음 코드 예제에 대 한 정의 포함 하는 구조체의 윤곽선을 정의 합니다 `IsFalse` 고 `IsTrue` 연산자입니다.  
   
  [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [IsFalse 연산자](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
- [방법: 연산자 정의](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [OrElse 연산자](../../../visual-basic/language-reference/operators/orelse-operator.md)
+## <a name="see-also"></a>참고자료
+- [IsFalse 연산자](../../../visual-basic/language-reference/operators/isfalse-operator.md)
+- [방법: 연산자 정의](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [OrElse 연산자](../../../visual-basic/language-reference/operators/orelse-operator.md)
