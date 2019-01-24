@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 419884cfd4cbcbcdaa999c221b56ee9873a90241
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: c45da047d384e56440ca5f883a4cfd755a7d0299
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33429110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54719716"
 ---
-# <a name="getappidauthority-function"></a><span data-ttu-id="84f37-102">GetAppIdAuthority 함수</span><span class="sxs-lookup"><span data-stu-id="84f37-102">GetAppIdAuthority Function</span></span>
-<span data-ttu-id="84f37-103">에 대 한 포인터를 가져옵니다는 [IAppIdAuthority](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md) 응용 프로그램 id 및 참조에 대 한 키를 관리 하는 인스턴스입니다.</span><span class="sxs-lookup"><span data-stu-id="84f37-103">Gets a pointer to an [IAppIdAuthority](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md) instance that manages keys for application identities and references.</span></span>  
+# <a name="getappidauthority-function"></a><span data-ttu-id="344c0-102">GetAppIdAuthority 함수</span><span class="sxs-lookup"><span data-stu-id="344c0-102">GetAppIdAuthority Function</span></span>
+<span data-ttu-id="344c0-103">포인터를 가져는 [IAppIdAuthority](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md) 응용 프로그램 id 및 참조에 대 한 키를 관리 하는 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="344c0-103">Gets a pointer to an [IAppIdAuthority](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md) instance that manages keys for application identities and references.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="84f37-104">구문</span><span class="sxs-lookup"><span data-stu-id="84f37-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="344c0-104">구문</span><span class="sxs-lookup"><span data-stu-id="344c0-104">Syntax</span></span>  
   
 ```  
 HRESULT GetAppIdAuthority (  
@@ -35,17 +35,17 @@ HRESULT GetAppIdAuthority (
  );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="84f37-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="84f37-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="344c0-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="344c0-105">Parameters</span></span>  
  `ppIAppIdAuthority`  
- <span data-ttu-id="84f37-106">[out] 반환 된 `IAppIdAuthority` 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="84f37-106">[out] The returned `IAppIdAuthority` pointer.</span></span>  
+ <span data-ttu-id="344c0-106">[out] 반환 된 `IAppIdAuthority` 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="344c0-106">[out] The returned `IAppIdAuthority` pointer.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="84f37-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="84f37-107">Requirements</span></span>  
- <span data-ttu-id="84f37-108">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="84f37-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="344c0-107">요구 사항</span><span class="sxs-lookup"><span data-stu-id="344c0-107">Requirements</span></span>  
+ <span data-ttu-id="344c0-108">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="344c0-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="84f37-109">**헤더:** Isolation.h</span><span class="sxs-lookup"><span data-stu-id="84f37-109">**Header:** Isolation.h</span></span>  
+ <span data-ttu-id="344c0-109">**헤더:** Isolation.h</span><span class="sxs-lookup"><span data-stu-id="344c0-109">**Header:** Isolation.h</span></span>  
   
- <span data-ttu-id="84f37-110">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="84f37-110">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="344c0-110">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="344c0-110">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="84f37-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="84f37-111">See Also</span></span>  
- [<span data-ttu-id="84f37-112">IAppIdAuthority 인터페이스</span><span class="sxs-lookup"><span data-stu-id="84f37-112">IAppIdAuthority Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md)  
- [<span data-ttu-id="84f37-113">Fusion 전역 정적 함수</span><span class="sxs-lookup"><span data-stu-id="84f37-113">Fusion Global Static Functions</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## <a name="see-also"></a><span data-ttu-id="344c0-111">참고자료</span><span class="sxs-lookup"><span data-stu-id="344c0-111">See also</span></span>
+- [<span data-ttu-id="344c0-112">IAppIdAuthority 인터페이스</span><span class="sxs-lookup"><span data-stu-id="344c0-112">IAppIdAuthority Interface</span></span>](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md)
+- [<span data-ttu-id="344c0-113">Fusion 전역 정적 함수</span><span class="sxs-lookup"><span data-stu-id="344c0-113">Fusion Global Static Functions</span></span>](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4338619414c9c9ac8c5fe85479562410d1678698
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 7758e61635bf6611cf83d2d66d0b62a28fac97d0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33403860"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54647688"
 ---
-# <a name="iclrmetadatalocatorgetmetadata-method"></a><span data-ttu-id="31746-102">ICLRMetadataLocator::GetMetadata 메서드</span><span class="sxs-lookup"><span data-stu-id="31746-102">ICLRMetadataLocator::GetMetadata Method</span></span>
-<span data-ttu-id="31746-103">이미지의 메타 데이터를 검색 하는 공용 언어 런타임 (CLR) 데이터 액세스 서비스에서 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="31746-103">Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.</span></span>  
+# <a name="iclrmetadatalocatorgetmetadata-method"></a><span data-ttu-id="34608-102">ICLRMetadataLocator::GetMetadata 메서드</span><span class="sxs-lookup"><span data-stu-id="34608-102">ICLRMetadataLocator::GetMetadata Method</span></span>
+<span data-ttu-id="34608-103">이미지의 메타 데이터를 검색 하는 공용 언어 런타임 (CLR) 데이터 액세스 서비스에서 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="34608-103">Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="31746-104">구문</span><span class="sxs-lookup"><span data-stu-id="31746-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="34608-104">구문</span><span class="sxs-lookup"><span data-stu-id="34608-104">Syntax</span></span>  
   
 ```  
 HRESULT GetMetadata(  
@@ -44,45 +44,45 @@ HRESULT GetMetadata(
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="31746-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="31746-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="34608-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="34608-105">Parameters</span></span>  
  `imagePath`  
- <span data-ttu-id="31746-106">[in] 이미지 파일의 경로 지정 하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-106">[in] A string that specifies the path of the image file.</span></span>  
+ <span data-ttu-id="34608-106">[in] 이미지 파일의 경로 지정 하는 문자열입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-106">[in] A string that specifies the path of the image file.</span></span>  
   
  `imageTimestamp`  
- <span data-ttu-id="31746-107">[in] 이미지 파일의 타임 스탬프입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-107">[in] The time stamp of the image file.</span></span>  
+ <span data-ttu-id="34608-107">[in] 이미지 파일의 타임 스탬프입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-107">[in] The time stamp of the image file.</span></span>  
   
  `imageSize`  
- <span data-ttu-id="31746-108">[in] 이미지 파일의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-108">[in] The size of the image file.</span></span>  
+ <span data-ttu-id="34608-108">[in] 이미지 파일의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-108">[in] The size of the image file.</span></span>  
   
  `mvid`  
- <span data-ttu-id="31746-109">[in] 이미지의 전역 고유 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-109">[in] The globally unique identifier of the image.</span></span>  
+ <span data-ttu-id="34608-109">[in] 이미지의 전역 고유 식별자입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-109">[in] The globally unique identifier of the image.</span></span>  
   
  `mdRva`  
- <span data-ttu-id="31746-110">[in] 상대 가상 주소 (RVA) 메타 데이터의 합니다.</span><span class="sxs-lookup"><span data-stu-id="31746-110">[in] The relative virtual address (RVA) of the metadata.</span></span> <span data-ttu-id="31746-111">주소는 이미지 기준 주소에 상대적입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-111">The address is relative to the image base address.</span></span>  
+ <span data-ttu-id="34608-110">[in] 상대 가상 주소 (RVA) 메타 데이터입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-110">[in] The relative virtual address (RVA) of the metadata.</span></span> <span data-ttu-id="34608-111">주소는 이미지 기준 주소에 상대적입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-111">The address is relative to the image base address.</span></span>  
   
  `flags`  
- <span data-ttu-id="31746-112">[in] 나중에 사용할 수는 예약 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="31746-112">[in] Reserved for future use.</span></span>  
+ <span data-ttu-id="34608-112">[in] 사용 하도록 예약 합니다.</span><span class="sxs-lookup"><span data-stu-id="34608-112">[in] Reserved for future use.</span></span>  
   
  `bufferSize`  
- <span data-ttu-id="31746-113">[in] 메타 데이터를 배치할 수 있는 버퍼의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-113">[in] The size of the buffer in which to place the metadata.</span></span>  
+ <span data-ttu-id="34608-113">[in] 메타 데이터를 배치 하는 버퍼의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-113">[in] The size of the buffer in which to place the metadata.</span></span>  
   
  `buffer`  
- <span data-ttu-id="31746-114">[out] 메타 데이터를 저장할 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-114">[out] The buffer in which to place the metadata.</span></span>  
+ <span data-ttu-id="34608-114">[out] 메타 데이터를 배치 하는 버퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-114">[out] The buffer in which to place the metadata.</span></span>  
   
  `dataSize`  
- <span data-ttu-id="31746-115">[out] 반환 되는 메타 데이터의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="31746-115">[out] The size of the metadata that is returned.</span></span>  
+ <span data-ttu-id="34608-115">[out] 반환 되는 메타 데이터의 크기입니다.</span><span class="sxs-lookup"><span data-stu-id="34608-115">[out] The size of the metadata that is returned.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="31746-116">설명</span><span class="sxs-lookup"><span data-stu-id="31746-116">Remarks</span></span>  
- <span data-ttu-id="31746-117">이 메서드는 디버깅 응용 프로그램의 작성자가 구현합니다.</span><span class="sxs-lookup"><span data-stu-id="31746-117">This method is implemented by the writer of the debugging application.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="34608-116">설명</span><span class="sxs-lookup"><span data-stu-id="34608-116">Remarks</span></span>  
+ <span data-ttu-id="34608-117">이 메서드는 디버깅 응용 프로그램의 작성자가 구현합니다.</span><span class="sxs-lookup"><span data-stu-id="34608-117">This method is implemented by the writer of the debugging application.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="31746-118">요구 사항</span><span class="sxs-lookup"><span data-stu-id="31746-118">Requirements</span></span>  
- <span data-ttu-id="31746-119">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="31746-119">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="34608-118">요구 사항</span><span class="sxs-lookup"><span data-stu-id="34608-118">Requirements</span></span>  
+ <span data-ttu-id="34608-119">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="34608-119">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="31746-120">**헤더:** ClrData.idl, ClrData.h</span><span class="sxs-lookup"><span data-stu-id="31746-120">**Header:** ClrData.idl, ClrData.h</span></span>  
+ <span data-ttu-id="34608-120">**헤더:** ClrData.idl, ClrData.h</span><span class="sxs-lookup"><span data-stu-id="34608-120">**Header:** ClrData.idl, ClrData.h</span></span>  
   
- <span data-ttu-id="31746-121">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="31746-121">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="34608-121">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="34608-121">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="31746-122">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="31746-122">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="34608-122">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="34608-122">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="31746-123">참고 항목</span><span class="sxs-lookup"><span data-stu-id="31746-123">See Also</span></span>  
- [<span data-ttu-id="31746-124">ICLRMetadataLocator 인터페이스</span><span class="sxs-lookup"><span data-stu-id="31746-124">ICLRMetadataLocator Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)
+## <a name="see-also"></a><span data-ttu-id="34608-123">참고자료</span><span class="sxs-lookup"><span data-stu-id="34608-123">See also</span></span>
+- [<span data-ttu-id="34608-124">ICLRMetadataLocator 인터페이스</span><span class="sxs-lookup"><span data-stu-id="34608-124">ICLRMetadataLocator Interface</span></span>](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)
