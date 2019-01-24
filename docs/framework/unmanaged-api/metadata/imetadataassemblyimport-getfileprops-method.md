@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f147fef90d7a9033bdfd07b75e5c33efd2c6881f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 59dad67db9f9f9184a139f848020cf866a3a6771
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33444518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54716832"
 ---
 # <a name="imetadataassemblyimportgetfileprops-method"></a>IMetaDataAssemblyImport::GetFileProps 메서드
-지정한 메타 데이터 서명 사용 하 여 파일의 속성을 가져옵니다.  
+지정 된 메타 데이터 서명 사용 하 여 파일의 속성을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,7 +43,7 @@ HRESULT GetFileProps (
   
 #### <a name="parameters"></a>매개 변수  
  `mdf`  
- [in] `mdFile` 파일을 가져올 속성을 나타내는 메타 데이터 토큰입니다.  
+ [in] `mdFile` 속성을 가져올 파일을 나타내는 메타 데이터 토큰입니다.  
   
  `szName`  
  [out] 파일의 단순한 이름입니다.  
@@ -58,19 +58,19 @@ HRESULT GetFileProps (
  [out] 해시 값에 대 한 포인터입니다. 파일의 sha-1 알고리즘을 사용 하는 해시입니다.  
   
  `pcbHashValue`  
- [out] 반환 된 해시 값의 와이드 문자 수를 지정 합니다.  
+ [out] 반환 된 해시 값에 와이드 문자 수입니다.  
   
  `pdwFileFlags`  
  [out] 파일에 적용 하는 메타 데이터를 설명 하는 플래그에 대 한 포인터입니다. 플래그 값은 하나 이상의 조합 [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에서 리소스로 사용  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IMetaDataAssemblyImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## <a name="see-also"></a>참고자료
+- [IMetaDataAssemblyImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

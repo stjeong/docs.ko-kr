@@ -3,12 +3,12 @@ title: WIF API 참조
 ms.date: 03/30/2017
 ms.assetid: a027d902-9314-4bfd-b172-4e81847b1d68
 author: BrucePerlerMS
-ms.openlocfilehash: 0cd373ae3fd5acb1650f0d8614b34c5d19cf9016
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 21b294a58efcad6c3eb7c74e643a2ac3e0ea23fd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54663598"
 ---
 # <a name="wif-api-reference"></a>WIF API 참조
 WIF(Windows Identity Foundation) 클래스는 `mscorlib`(mscorlib.dll), `System.IdentityModel`(System.IdentityModel.dll), `System.IdentityModel.Services`(System.IdentityModel.Services.dll) 및 `System.ServiceModel`(System.ServiceModel.dll) 어셈블리에 분할됩니다. 이 항목에서는 WIF 네임스페이스에 대한 링크 및 각 네임스페이스에 포함된 클래스에 대한 간략한 설명을 제공합니다.  
@@ -20,7 +20,7 @@ WIF(Windows Identity Foundation) 클래스는 `mscorlib`(mscorlib.dll), `System.
  쿠키 변환, 보안 토큰 서비스 및 특수 XML 사전 판독기를 나타내는 클래스를 포함합니다.  
   
  <xref:System.IdentityModel.Configuration?displayProperty=nameWithType>  
- WIF(Windows Identity Foundation)를 사용하여 빌드된 응용 프로그램 및 서비스에 대한 구성을 제공하는 클래스를 포함합니다. 이 네임 스페이스의 클래스는 [\<identityConfiguration>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) 요소 아래에 있는 설정을 나타냅니다.  
+ WIF(Windows Identity Foundation)를 사용하여 빌드된 애플리케이션 및 서비스에 대한 구성을 제공하는 클래스를 포함합니다. 이 네임 스페이스의 클래스는 [\<identityConfiguration>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) 요소 아래에 있는 설정을 나타냅니다.  
   
  <xref:System.IdentityModel.Metadata?displayProperty=nameWithType>  
  페더레이션 메타데이터 문서에 있는 요소를 나타내는 클래스를 포함합니다.  
@@ -29,10 +29,10 @@ WIF(Windows Identity Foundation) 클래스는 `mscorlib`(mscorlib.dll), `System.
  WS-Trust 아티팩트를 나타내는 클래스를 포함합니다.  
   
  <xref:System.IdentityModel.Services?displayProperty=nameWithType>  
- 수동(WS-Federation) 시나리오에서 사용되는 클래스를 포함합니다. 또한 [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) 요소 아래에 있는 설정을 나타내는 일부 클래스도 포함합니다. 이 요소 아래에 있는 설정은 응용 프로그램에 대해 WS-Federation을 구성합니다. `System.IdentityModel.Services.Configuration` 네임스페이스에는 WS-Federation 구성에 사용되는 클래스가 대부분 포함됩니다.  
+ 수동(WS-Federation) 시나리오에서 사용되는 클래스를 포함합니다. 또한 [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) 요소 아래에 있는 설정을 나타내는 일부 클래스도 포함합니다. 이 요소 아래에 있는 설정은 애플리케이션에 대해 WS-Federation을 구성합니다. `System.IdentityModel.Services.Configuration` 네임스페이스에는 WS-Federation 구성에 사용되는 클래스가 대부분 포함됩니다.  
   
  <xref:System.IdentityModel.Services.Configuration?displayProperty=nameWithType>  
- WS-Federation 프로토콜을 사용하는 WIF 응용 프로그램에 대한 구성을 제공하는 클래스를 포함합니다. 이 네임스페이스의 클래스는 [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) 요소 아래에 있는 설정을 나타내는 일부 클래스를 포함합니다. `System.IdentityModel.Services` 네임스페이스에는 WS-Federation 구성에 사용되는 일부 클래스도 포함됩니다.  
+ WS-Federation 프로토콜을 사용하는 WIF 애플리케이션에 대한 구성을 제공하는 클래스를 포함합니다. 이 네임스페이스의 클래스는 [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) 요소 아래에 있는 설정을 나타내는 일부 클래스를 포함합니다. `System.IdentityModel.Services` 네임스페이스에는 WS-Federation 구성에 사용되는 일부 클래스도 포함됩니다.  
   
  <xref:System.IdentityModel.Services.Tokens?displayProperty=nameWithType>  
  웹 팜 시나리오에 대한 특수 보안 토큰 처리기를 포함합니다.  
@@ -46,6 +46,6 @@ WIF(Windows Identity Foundation) 클래스는 `mscorlib`(mscorlib.dll), `System.
  <xref:System.ServiceModel.Security?displayProperty=nameWithType>  
  활성(WS-Trust) 시나리오에서 사용되는 WCF 계약, 채널, 서비스 호스트 및 기타 아티팩트를 나타내는 클래스를 포함합니다. 이 네임스페이스에는 WCF(Windows Communication Foundation)에 관련이 있고 WIF에서 사용되지 않는 클래스도 포함됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [WIF 구성 참조](../../../docs/framework/security/wif-configuration-reference.md)  
- [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)
+## <a name="see-also"></a>참고자료
+- [WIF 구성 참조](../../../docs/framework/security/wif-configuration-reference.md)
+- [WIF 3.5와 WIF 4.5 간의 네임스페이스 매핑](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)

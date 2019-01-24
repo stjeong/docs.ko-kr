@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 830e3e6e98be2eaaff2af6c0bdac650732833ab7
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: d4bce84d26e8f498f065c887b583e18d8ea7c786
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54651203"
 ---
 # <a name="converting-between-datetime-and-datetimeoffset"></a>DateTime과 DateTimeOffset 간 변환
 
@@ -123,7 +123,7 @@ UTC 및 현지 <xref:System.DateTime> 값을 <xref:System.DateTimeOffset.Offset%
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#9](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#9)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#9)]
 
-이 코드에서는 다음 두 가지를 가정합니다. 이러한 가정은 응용 프로그램과 응용 프로그램에서 사용하는 날짜 및 시간 값의 소스에 따라 맞지 않을 수도 있습니다.
+이 코드에서는 다음 두 가지를 가정합니다. 이러한 가정은 애플리케이션과 애플리케이션에서 사용하는 날짜 및 시간 값의 소스에 따라 맞지 않을 수도 있습니다.
 
 * 날짜 및 시간 값 오프셋 되는 가정 <xref:System.TimeSpan.Zero?displayProperty=nameWithType> UTC를 나타냅니다. 실제로 UTC는 특정 표준 시간대의 시간이 아니라 표준화된 전세계 표준 시간대의 시간입니다. 표준 시간대 오프셋이 있을 수도 있습니다 <xref:System.TimeSpan.Zero>합니다.
 
@@ -131,4 +131,4 @@ UTC 및 현지 <xref:System.DateTime> 값을 <xref:System.DateTimeOffset.Offset%
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)

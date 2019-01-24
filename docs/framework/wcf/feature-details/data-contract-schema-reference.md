@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: c4e2939c0868bc452496c2b8c4435b5ef316e573
-ms.sourcegitcommit: 3b9b7ae6771712337d40374d2fef6b25b0d53df6
+ms.openlocfilehash: 48b151bb718cb05e171909d41ce4415a0988d1b2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54030531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54662584"
 ---
 # <a name="data-contract-schema-reference"></a>데이터 계약 스키마 참조
 이 항목에서는 XML serialization에 대한 CLR(공용 언어 런타임) 형식을 설명하기 위해 <xref:System.Runtime.Serialization.DataContractSerializer> 에서 사용하는 XSD(XML 스키마) 하위 집합에 대해 설명합니다.  
@@ -50,13 +50,13 @@ ms.locfileid: "54030531"
 |`targetNamespace`|지원되며 데이터 계약 네임스페이스에 매핑됩니다. 이 특성을 지정하지 않으면 빈 네임스페이스가 사용됩니다. 예약된 된 네임 스페이스를 사용할 수 없습니다. `http://schemas.microsoft.com/2003/10/Serialization/`합니다.|  
 |`version`|무시됩니다.|  
   
-### <a name="xsschema-contents"></a>\<xs: schema >: 콘텐츠  
+### <a name="xsschema-contents"></a>\<xs:schema>: contents  
   
 |목차|스키마|  
 |--------------|------------|  
 |`include`|지원됩니다. `DataContractSerializer` 는 xs:include 및 xs:import를 지원합니다. 그러나 Svcutil.exe는 로컬 파일에서 메타데이터를 로드할 때 다음 `xs:include/@schemaLocation` 및 `xs:import/@location` 참조를 제한합니다. 이러한 경우 스키마 파일 목록은 `include` 가 아닌 out-of-band 메커니즘을 통해 전달해야 합니다. `include`된 스키마 문서는 무시됩니다.|  
 |`redefine`|사용할 수 없습니다. 보안상의 이유로 `xs:redefine` 는 `DataContractSerializer` 을 사용할 수 없습니다. `x:redefine` 을 사용하려면 `schemaLocation` 을 따라야 합니다. 상황에 따라 DataContract를 사용하는 Svcutil.exe는 `schemaLocation`사용을 제한합니다.|  
-|`import`|지원됩니다. `DataContractSerializer` 는 `xs:include` 및 `xs:import`를 지원합니다. 그러나 Svcutil.exe는 로컬 파일에서 메타데이터를 로드할 때 다음 `xs:include/@schemaLocation` 및 `xs:import/@location` 참조를 제한합니다. 이러한 경우 스키마 파일 목록은 `include`가 아닌 out-of-band 메커니즘을 통해 전달해야 합니다. `include`된 스키마 문서는 무시됩니다.|  
+|`import`|지원됩니다. `DataContractSerializer` 는 `xs:include` 및 `xs:import`를 지원합니다. 그러나 Svcutil.exe는 로컬 파일에서 메타데이터를 로드할 때 다음 `xs:include/@schemaLocation` 및 `xs:import/@location` 참조를 제한합니다. 이러한 경우 스키마 파일 목록은 `include` 가 아닌 out-of-band 메커니즘을 통해 전달해야 합니다. `include`된 스키마 문서는 무시됩니다.|  
 |`simpleType`|지원됩니다. `xs:simpleType` 단원을 참조하십시오.|  
 |`complexType`|지원되며 데이터 계약으로 매핑됩니다. `xs:complexType` 단원을 참조하십시오.|  
 |`group`|무시됩니다. `DataContractSerializer` 는 `xs:group`, `xs:attributeGroup`및 `xs:attribute`사용을 지원하지 않습니다. 이러한 선언은 `xs:schema`의 자식으로 무시되며 `complexType` 또는 기타 지원되는 구문 내에서 참조할 수 없습니다.|  
@@ -81,7 +81,7 @@ ms.locfileid: "54030531"
 |`mixed`|false이어야 합니다(기본값).|  
 |`name`|지원되며 데이터 계약 이름에 매핑됩니다. 이름에 마침표가 있는 경우 형식을 내부 형식에 매핑하려 합니다. 예를 들어, `A.B` 라는 복합 형식은 `A`라는 데이터 계약 이름을 가진 형식의 내부 형식인 데이터 계약 형식으로 매핑되지만 이러한 데이터 계약 형식이 있는 경우에만 가능합니다. 둘 이상의 중첩 수준이 가능합니다. 예를 들어, `A.B.C` 가 내부 형식일 수 있지만 `A` 및 `A.B` 가 모두 있는 경우에만 가능합니다.|  
   
-### <a name="xscomplextype-contents"></a>\<xs:complexType >: 콘텐츠  
+### <a name="xscomplextype-contents"></a>\<xs:complexType>: contents  
   
 |목차|스키마|  
 |--------------|------------|  
@@ -338,7 +338,7 @@ public enum MyEnum
 |`itemType`|사용할 수 없습니다.|  
 |`id`|무시됩니다.|  
   
-### <a name="xslist-contents"></a>\<xs: list >: 콘텐츠  
+### <a name="xslist-contents"></a>\<xs:list>: contents  
   
 |목차|스키마|  
 |--------------|------------|  
@@ -674,16 +674,16 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
       <xs:sequence minOccurs="1" maxOccurs="1">  
          <xs:element name="DateTime" type="xs:dateTime"  
          minOccurs="1" maxOccurs="1" />  
-         <xs:elementname="OffsetMinutes" type="xs:short"  
+         <xs:element name="OffsetMinutes" type="xs:short"  
          minOccurs="1" maxOccurs="1" />  
       </xs:sequence>  
    </xs:complexType>  
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)

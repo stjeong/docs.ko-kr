@@ -10,12 +10,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], codes
 - errors [Visual Basic], simulating
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
-ms.openlocfilehash: 84fce92183228cbfa5554a3ba45770a86e83bff5
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: e819ba043dec2d5e8e792fdf57dc0c273a24e881
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47232939"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54654817"
 ---
 # <a name="error-statement"></a>Error 문
 오류의 발생을 시뮬레이션 합니다.  
@@ -28,7 +28,7 @@ Error errornumber
   
 ## <a name="parts"></a>요소  
  `errornumber`  
- 필수. 유효한 임의의 오류 번호를 수 있습니다.  
+ 필수 요소. 유효한 임의의 오류 번호를 수 있습니다.  
   
 ## <a name="remarks"></a>설명  
  `Error` 문은 이전 버전과 호환성을 위해 지원 됩니다. 새 코드에서는 개체를 만들 때 특히를 사용 합니다 `Err` 개체의 `Raise` 런타임 오류를 생성 하는 방법입니다.  
@@ -58,14 +58,14 @@ Error 11   ' Simulate the "Division by zero" error.
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- **: Namespace** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
+ **네임스페이스:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
   
- **어셈블리:** Visual Basic 런타임 라이브러리 (Microsoft.VisualBasic.dll)  
+ **어셈블리:** Visual Basic 런타임 라이브러리(Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>  
- <xref:Microsoft.VisualBasic.Information.Err%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>  
- [On Error 문](../../../visual-basic/language-reference/statements/on-error-statement.md)  
- [Resume 문](../../../visual-basic/language-reference/statements/resume-statement.md)  
- [오류 메시지](../../../visual-basic/language-reference/error-messages/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
+- <xref:Microsoft.VisualBasic.Information.Err%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>
+- [On Error 문](../../../visual-basic/language-reference/statements/on-error-statement.md)
+- [Resume 문](../../../visual-basic/language-reference/statements/resume-statement.md)
+- [오류 메시지](../../../visual-basic/language-reference/error-messages/index.md)

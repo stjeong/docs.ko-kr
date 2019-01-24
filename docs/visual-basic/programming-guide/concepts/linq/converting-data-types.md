@@ -1,18 +1,18 @@
 ---
-title: 데이터 형식 (Visual Basic)으로 변환
+title: 데이터 형식 변환 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 9b0cf1ab-de48-4c6e-9f00-05b40fade46e
-ms.openlocfilehash: 9821b2d6caad8feeac856185b92518c25de88da3
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3845c14bc7390d486668916fe7d5d5ad840b7990
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33643754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653738"
 ---
-# <a name="converting-data-types-visual-basic"></a>데이터 형식 (Visual Basic)으로 변환
+# <a name="converting-data-types-visual-basic"></a>데이터 형식 변환 (Visual Basic)
 변환 메서드는 입력 개체의 형식을 변경합니다.  
   
- LINQ 쿼리의 변환 작업은 다양한 응용 프로그램에서 유용합니다. 다음은 몇 가지 예제입니다.  
+ LINQ 쿼리의 변환 작업은 다양한 애플리케이션에서 유용합니다. 다음은 몇 가지 예제입니다.  
   
 -   <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> 메서드는 표준 쿼리 연산자의 형식 사용자 지정 구현을 숨기는 데 사용될 수 있습니다.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "33643754"
 |ToLookup|키 선택기 함수에 따라 <xref:System.Linq.Lookup%602>(일 대 다 사전)에 요소를 배치합니다. 이 메서드는 쿼리를 강제로 실행합니다.|해당 사항 없음.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|  
   
 ## <a name="query-expression-syntax-example"></a>쿼리 식 구문 예제  
- 다음 코드 예제에서는 `From As` 절 하위 형식에 대해서만 사용할 수 있는 멤버를 액세스 하기 전에 하위 형식에 형식 캐스팅 합니다.  
+ 다음 코드 예제에서는 `From As` 절 하위 형식 에서만 사용할 수 있는 멤버에 액세스 하기 전에 형식을 하위 형식에 캐스팅 합니다.  
   
 ```vb  
 Class Plant  
@@ -77,8 +77,8 @@ Sub Cast()
 End Sub  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq>  
- [표준 쿼리 연산자 개요(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [From 절](../../../../visual-basic/language-reference/queries/from-clause.md)  
- [방법: LINQ (Visual Basic)를 사용 하 여 ArrayList 쿼리](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Linq>
+- [표준 쿼리 연산자 개요(Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [From 절](../../../../visual-basic/language-reference/queries/from-clause.md)
+- [방법: LINQ (Visual Basic)를 사용 하 여 ArrayList 쿼리](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)

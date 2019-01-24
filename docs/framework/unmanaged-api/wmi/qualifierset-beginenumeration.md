@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2d20701237501834c611c4e498c39597cf275176
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3577c90af51886868d57796fb5bfae91dedcee16
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720121"
 ---
 # <a name="qualifiersetbeginenumeration-function"></a>QualifierSet_BeginEnumeration 함수
 개체 한정자의 열거자를 열거형 시작 부분으로 다시 설정합니다.  
@@ -55,9 +55,9 @@ HRESULT QualifierSet_BeginEnumeration (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | `lFlags` 매개 변수가 올바르지 않습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lFlags` 매개 변수가 잘못되었습니다. |
 |`WBEM_E_UNEXPECTED` | 0x8004101d | 두 번째 호출 `QualifierSet_BeginEnumeration` 에 대 한 중간 호출 없이 만들어진 [ `QualifierSet_EndEnumeration` ](qualifierset-endenumeration.md)합니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 새 열거형 시작에 사용할 있는 메모리가 충분 하지 않습니다. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 새 열거형 시작에 사용할 있는 메모리가 충분 하지 않습니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -71,15 +71,15 @@ HRESULT QualifierSet_BeginEnumeration (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |  | 0 | 모든 한정자의 이름을 반환 합니다. |
-| `WBEM_FLAG_LOCAL_ONLY` | 0x10 | 현재 속성 또는 개체에 특정 한정자의 이름만 반환 합니다. <br/> 속성: (재정의 포함), 속성에 특정 한정자만를 반환 하 고 클래스 정의에서 이러한 한정자가 없습니다 전파 합니다. <br/> 인스턴스에 대 한: 인스턴스별 한정자 이름만 반환 합니다. <br/> 클래스: 파생 된 클래스 beiong 특정 한정자만 반환 합니다.
-|`WBEM_FLAG_PROPAGATED_ONLY` | 0x20 | 반환이 한정자의 이름에만 전파 다른 개체에서입니다. <br/> 속성: 한정자만 전파이 속성에서 반환 클래스 정의와 속성 자체에서 해당 되지 않습니다. <br/> 인스턴스에 대 한: 클래스 정의에서 이러한 한정자만 전파를 반환 합니다. <br/> 클래스: 부모 클래스에서 상속 한정자 이름만 반환 합니다. |
+| `WBEM_FLAG_LOCAL_ONLY` | 0x10 | 현재 속성 또는 개체에 특정 한정자의 이름만 반환 합니다. <br/> 속성: (재정의 포함), 속성에 특정 한정자만 및 클래스 정의에서 전파 하는 한정자에 하지를 반환 합니다. <br/> 인스턴스: 인스턴스별 한정자 이름만 반환 합니다. <br/> 클래스: 파생 클래스 beiong를 특정 한정자만를 반환 합니다.
+|`WBEM_FLAG_PROPAGATED_ONLY` | 0x20 | 반환이 한정자의 이름에만 전파 다른 개체에서입니다. <br/> 속성: 한정자만 전파이 속성에서 반환 클래스 정의와 속성 자체에서 해당 되지 않습니다. <br/> 인스턴스: 클래스 정의에서 이러한 한정자만 전파 반환 이면입니다. <br/> 클래스: 부모 클래스에서 상속 한정자 이름만 반환 합니다. |
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

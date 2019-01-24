@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Object data type [Visual Basic], data types
 - data types [Visual Basic], choosing
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
-ms.openlocfilehash: 490a462859a916d21c816ff96c47d2deeb9312ee
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7e32bf158b91c23c32028eb6877bd0089a9019b2
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43517798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54655051"
 ---
 # <a name="miscellaneous-data-types-visual-basic"></a>기타 데이터 형식(Visual Basic)
 Visual Basic에는 숫자나 문자 분류 되지 않는 몇 가지 데이터 형식을 제공 합니다. 대신는 특수화 된 데이터 처리와 같은 예/아니요 값, 날짜/시간 값 및 개체 주소 합니다.  
@@ -30,10 +30,10 @@ Visual Basic에는 숫자나 문자 분류 되지 않는 몇 가지 데이터 �
   
  이점은 `Object` 는 모든 데이터 형식의 데이터를 저장 하는 데 사용할 수 있습니다 데이터 형식입니다. 단점은 실행 시간이 더 느리게 수행 하는 응용 프로그램에 추가 작업을 발생 하는 것입니다. 사용 하는 경우는 `Object` 발생 값 형식에 대 한 변수를 *boxing* 하 고 *unboxing*합니다. 참조 형식에 대해 사용 하는 경우 사용자가 발생 시킨 *런타임에 바인딩*합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [숫자 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)  
- [문자 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)  
- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [초기 바인딩 및 런타임에 바인딩](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+## <a name="see-also"></a>참고자료
+- [형식 문자](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [기본 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [숫자 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)
+- [문자 데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)
+- [데이터 형식 문제 해결](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [초기 바인딩 및 런타임에 바인딩](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)

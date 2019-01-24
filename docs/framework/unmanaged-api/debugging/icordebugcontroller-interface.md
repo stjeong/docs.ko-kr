@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 230488201b637c5a53f41dd4c3f204b37e8984fd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: c0651f8cd63f2ebdc6b81e92c0b55d94fe51316b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33411472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54645303"
 ---
 # <a name="icordebugcontroller-interface1"></a>ICorDebugController Interface1
 <xref:System.Diagnostics.Process>나 <xref:System.AppDomain> 같이 코드 실행 컨텍스트를 제어할 수 있는 범위를 나타냅니다.  
@@ -32,29 +32,29 @@ ms.locfileid: "33411472"
 |------------|-----------------|  
 |`ICorDebugController::CanCommitChanges`|이 메서드는 사용되지 않습니다.|  
 |`ICorDebugController::CommitChanges`|이 메서드는 사용되지 않습니다.|  
-|[Continue 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md)|관리 되는 스레드를 호출한 후 실행을 계속 [icordebugcontroller:: Stop](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)합니다.|  
-|[Detach 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-detach-method.md)|프로세스 또는 응용 프로그램 도메인에서 디버거를 분리 합니다.|  
+|[Continue 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md)|호출한 후 관리 되는 스레드의 실행을 다시 시작 [icordebugcontroller:: Stop](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)합니다.|  
+|[Detach 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-detach-method.md)|프로세스 또는 응용 프로그램 도메인에서 디버거를 분리합니다.|  
 |[EnumerateThreads 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-enumeratethreads-method.md)|프로세스에서 현재 관리 되는 스레드에 대 한 열거자를 가져옵니다.|  
-|[HasQueuedCallbacks 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-hasqueuedcallbacks-method.md)|지정 된 스레드에 대 한 모든 관리 되는 콜백이 현재 대기 중인 있는지 여부를 나타내는 값을 가져옵니다.|  
-|[IsRunning 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-isrunning-method.md)|프로세스의 스레드는 현재 실행에 자유롭게 수 있는지 여부를 나타내는 값을 가져옵니다.|  
-|[SetAllThreadsDebugState 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-setallthreadsdebugstate-method.md)|프로세스에서 모든 관리 되는 스레드의 디버그 상태를 설정합니다.|  
-|[Stop 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)|프로세스에서 관리 되는 코드를 실행 하는 모든 스레드에서 동시 중지를 수행 합니다.|  
-|[Terminate 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-terminate-method.md)|지정된 된 종료 코드가 사용 하 여 프로세스를 종료합니다.|  
+|[HasQueuedCallbacks 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-hasqueuedcallbacks-method.md)|모든 관리 되는 콜백을 지정 된 스레드에 대 한 현재 대기 중인 여부를 나타내는 값을 가져옵니다.|  
+|[IsRunning 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-isrunning-method.md)|프로세스의 스레드는 자유롭게 실행 현재 여부를 나타내는 값을 가져옵니다.|  
+|[SetAllThreadsDebugState 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-setallthreadsdebugstate-method.md)|프로세스의 모든 관리 되는 스레드의 디버그 상태를 설정합니다.|  
+|[Stop 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)|프로세스에서 관리 되는 코드를 실행 하는 모든 스레드에서 동시에 중지를 수행 합니다.|  
+|[Terminate 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-terminate-method.md)|지정된 된 종료 코드를 사용 하 여 프로세스를 종료합니다.|  
   
 ## <a name="remarks"></a>설명  
- 경우 `ICorDebugController` 는 프로세스를 제어 범위는 프로세스의 모든 스레드를 포함 합니다. 경우 `ICorDebugController` 되는 범위에 해당 특정 응용 프로그램 도메인의 스레드만 포함 응용 프로그램 도메인을 제어 합니다.  
+ 경우 `ICorDebugController` 는 프로세스를 제어 범위 프로세스의 모든 스레드를 포함 합니다. 경우 `ICorDebugController` 는 범위는 해당 특정 응용 프로그램 도메인의 스레드만 포함 응용 프로그램 도메인을 제어 합니다.  
   
 > [!NOTE]
 >  이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,15 +1,15 @@
 ---
-title: '클라이언트: 채널 팩터리 및 채널'
+title: 클라이언트 채널 팩터리 및 채널
 ms.date: 03/30/2017
 ms.assetid: ef245191-fdab-4468-a0da-7c6f25d2110f
-ms.openlocfilehash: 3f045f56f7b73c5416e7a21a3afde29d22212d68
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 71ed9f9cbef35d14597ce6452d65bfca994dc23e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50182439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54720316"
 ---
-# <a name="client-channel-factories-and-channels"></a>클라이언트: 채널 팩터리 및 채널
+# <a name="client-channel-factories-and-channels"></a>클라이언트 채널 팩터리 및 채널
 이 항목에서는 채널 팩터리 및 채널 만들기에 대해 설명합니다.  
   
 ## <a name="channel-factories-and-channels"></a>채널 팩터리 및 채널  
@@ -30,7 +30,7 @@ ms.locfileid: "50182439"
   
 -   <xref:System.ServiceModel.Channels.ChannelListenerBase> 클래스는 <xref:System.ServiceModel.Channels.IChannelListener>을 구현합니다. 이 클래스는 기본 상태 관리를 담당합니다. 
   
- 다음 논의 기반으로 합니다 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플입니다.  
+ 다음 논의 기반으로 합니다 [전송 합니다. UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플입니다.  
   
 ### <a name="creating-a-channel-factory"></a>채널 팩터리 만들기  
  `UdpChannelFactory`는 <xref:System.ServiceModel.Channels.ChannelFactoryBase>에서 파생됩니다. 샘플에서는 메시지 인코더의 메시지 버전에 액세스할 수 있도록 <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty%2A>를 재정의합니다. 또한 상태 시스템이 전환될 때 <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose%2A>의 인스턴스를 중지하도록 <xref:System.ServiceModel.Channels.BufferManager>를 재정의합니다.  
@@ -73,5 +73,5 @@ this.socket.SendTo(
 );  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [채널 개발](../../../../docs/framework/wcf/extending/developing-channels.md)
+## <a name="see-also"></a>참고자료
+- [채널 개발](../../../../docs/framework/wcf/extending/developing-channels.md)

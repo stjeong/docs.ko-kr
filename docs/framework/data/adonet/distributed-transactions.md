@@ -2,12 +2,12 @@
 title: 분산 트랜잭션
 ms.date: 03/30/2017
 ms.assetid: 718b257c-bcb2-408e-b004-a7b0adb1c176
-ms.openlocfilehash: 1f45f572b4336e52f7eee224ec80d9b7f423f991
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 002ed52b0f760376e813b15d0344a349da669f4b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43486329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54660335"
 ---
 # <a name="distributed-transactions"></a>분산 트랜잭션
 트랜잭션은 하나의 단위로 성공(커밋)하거나 실패(중단)한 관련 작업의 집합입니다. A *분산 트랜잭션을* 은 여러 리소스에 영향을 주는 트랜잭션입니다. 분산 트랜잭션을 커밋하는 경우 모든 참가자는 데이터의 모든 변경 내용이 영구적으로 유지된다는 것을 보증해야 합니다. 시스템 작동이 중단되거나 다른 예측할 수 없는 이벤트가 발생해도 변경 내용이 지속되어야 합니다. 참가자 중 하나라도 이러한 보증을 이행하지 못하면 전체 트랜잭션이 실패하게 되며 트랜잭션 범위 내의 모든 데이터 변경 내용이 롤백됩니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "43486329"
 ## <a name="configuring-distributed-transactions"></a>분산 트랜잭션 구성  
  분산 트랜잭션을 사용하기 위해 네트워크에서 MS DTC를 사용해야 할 수도 있습니다. Windows 방화벽이 활성화되어 있는 경우 MS DTC 서비스에서 네트워크를 사용하거나 MS DTC 포트를 열 수 있도록 허용해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [트랜잭션 및 동시성](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [SQL Server와의 System.Transactions 통합](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [트랜잭션 및 동시성](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [SQL Server와의 System.Transactions 통합](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

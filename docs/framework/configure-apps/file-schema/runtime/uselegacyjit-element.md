@@ -4,12 +4,12 @@ ms.date: 04/26/2017
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dd4f9728338ecc66f84fe42b9bdbda9938ed518b
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: ecf4d805feeb27a7c3fa08d2ab6dd05b6fff693a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54648182"
 ---
 # <a name="ltuselegacyjitgt-element"></a>&lt;useLegacyJit&gt; 요소
 
@@ -17,7 +17,7 @@ ms.locfileid: "53612194"
   
 \<configuration>  
 \<runtime>  
-\<useLegacyJit >
+\<useLegacyJit>
   
 ## <a name="syntax"></a>구문  
   
@@ -52,7 +52,7 @@ ms.locfileid: "53612194"
   
 | 요소         | 설명                                                                                                       |  
 | --------------- | ----------------------------------------------------------------------------------------------------------------- |  
-| `configuration` | 공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다. |  
+| `configuration` | 공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다. |  
 | `runtime`       | 런타임 초기화 옵션에 대한 정보를 포함합니다.                                                        |  
   
 ## <a name="remarks"></a>설명  
@@ -95,6 +95,6 @@ ms.locfileid: "53612194"
   
 ## <a name="see-also"></a>참고 항목
 
-- [\<런타임 > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)   
-- [\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)   
+- [\<런타임 > 요소](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
+- [\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)
 - [완화: 새로운 64 비트 JIT 컴파일러](../../../../../docs/framework/migration-guide/mitigation-new-64-bit-jit-compiler.md)

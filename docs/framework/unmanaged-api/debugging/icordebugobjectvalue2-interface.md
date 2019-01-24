@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 145b4d00f5ceac621274b010e8220a63319e1425
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 63fc2001f611bc4c199d2a8800af8e5210f37c38
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33420923"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653231"
 ---
 # <a name="icordebugobjectvalue2-interface1"></a>ICorDebugObjectValue2 Interface1
-상속을 지원 하기 위해 "ICorDebugObjectValue" 인터페이스를 확장 하 고 재정의 합니다.  
+상속을 지원 하기 위해 "ICorDebugObjectValue" 인터페이스를 확장 하 고 재정의 됩니다.  
   
 ## <a name="methods"></a>메서드  
   
@@ -38,7 +38,7 @@ ms.locfileid: "33420923"
 >  이 인터페이스는 크로스 시스템 또는 크로스 프로세스 원격 호출을 지원하지 않습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
@@ -46,6 +46,6 @@ ms.locfileid: "33420923"
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- 
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+

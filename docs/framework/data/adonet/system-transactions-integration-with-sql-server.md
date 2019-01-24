@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b555544e-7abb-4814-859b-ab9cdd7d8716
-ms.openlocfilehash: 31edbc8f4cbb09f8720b373780f1b0646a985b20
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 12b81d02e5db613c96d19a4aa3730b95e3477b7c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46001854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54558620"
 ---
 # <a name="systemtransactions-integration-with-sql-server"></a>SQL Server와의 System.Transactions 통합
 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 버전 2.0에는 <xref:System.Transactions> 네임스페이스를 통해 액세스할 수 있는 트랜잭션 프레임워크가 추가되었습니다. 이 프레임워크는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]을 포함하여 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]에 완전히 통합된 방식으로 트랜잭션을 노출시킵니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "46001854"
  승격 가능한 트랜잭션을 사용 하는 경우에 사용할 수는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (`SqlClient`) SQL Server를 사용 하 여 합니다.  
   
 ## <a name="creating-promotable-transactions"></a>승격 가능한 트랜잭션 만들기  
- [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Provider for SQL Server는 승격 가능한 트랜잭션을 지원합니다. 승격 가능한 트랜잭션은 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] <xref:System.Transactions> 네임스페이스에서 클래스를 통해 처리됩니다. 승격 가능한 트랜잭션은 필요할 때까지 분산 트랜잭션 만들기를 연기하여 분산 트랜잭션을 최적화합니다. 리소스 관리자만 필요할 경우 분산 트랜잭션은 발생하지 않습니다.  
+  [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Provider for SQL Server는 승격 가능한 트랜잭션을 지원합니다. 승격 가능한 트랜잭션은 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] <xref:System.Transactions> 네임스페이스에서 클래스를 통해 처리됩니다. 승격 가능한 트랜잭션은 필요할 때까지 분산 트랜잭션 만들기를 연기하여 분산 트랜잭션을 최적화합니다. 리소스 관리자만 필요할 경우 분산 트랜잭션은 발생하지 않습니다.  
   
 > [!NOTE]
 >  부분적으로 신뢰할 수 있는 시나리오에서 트랜잭션을 분산 트랜잭션으로 승격시키려면 <xref:System.Transactions.DistributedTransactionPermission> 이 필요합니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "46001854"
  <xref:System.Transactions.TransactionScope>에서 예외가 발생하면 트랜잭션이 일관성이 없는 것으로 표시되어 중단됩니다. 또한 <xref:System.Transactions.TransactionScope> 가 삭제되면 트랜잭션이 롤백됩니다. 예외가 발생하지 않으면 참여하는 트랜잭션이 커밋됩니다.  
   
 > [!NOTE]
->  기본적으로 `TransactionScope` 클래스는 <xref:System.Transactions.Transaction.IsolationLevel%2A> 이 `Serializable` 인 트랜잭션을 만듭니다. 응용 프로그램에 따라 응용 프로그램에서 경합을 줄이기 위해 격리 수준을 낮추는 방안을 고려해 볼 수 있습니다.  
+>  기본적으로 `TransactionScope` 클래스는 <xref:System.Transactions.Transaction.IsolationLevel%2A> 이 `Serializable` 인 트랜잭션을 만듭니다. 애플리케이션에 따라 애플리케이션에서 경합을 줄이기 위해 격리 수준을 낮추는 방안을 고려해 볼 수 있습니다.  
   
 > [!NOTE]
 >  업데이트, 삽입 및 삭제는 데이터베이스 리소스를 많이 사용하므로 분산 트랜잭션에서는 이러한 작업만 수행하는 것이 좋습니다. SELECT 문은 데이터베이스 리소스를 불필요하게 잠글 수 있으며, 경우에 따라서는 선택 시 트랜잭션을 사용해야 할 수도 있습니다. 다른 트랜잭트 리소스 관리자를 사용해야 하는 경우가 아니면 데이터베이스 작업이 아닌 다른 작업은 트랜잭션 범위 밖에서 수행해야 합니다. 트랜잭션 범위에서 예외를 통해 트랜잭션이 커밋되는 것을 금지하고 있지만, <xref:System.Transactions.TransactionScope> 클래스에는 트랜잭션 자체 범위를 벗어난 코드 변경을 롤백할 수 있는 규정이 없습니다. 트랜잭션이 롤백될 때 특별한 조치를 취해야 하는 경우에는 고유한 <xref:System.Transactions.IEnlistmentNotification> 인터페이스 구현을 작성한 후 트랜잭션에 명시적으로 인리스트먼트해야 합니다.  
@@ -228,6 +228,6 @@ Public Function CreateTransactionScope( _
 End Function  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [트랜잭션 및 동시성](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [트랜잭션 및 동시성](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

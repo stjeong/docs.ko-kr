@@ -9,12 +9,12 @@ helpviewer_keywords:
 - frames [Windows Forms], accessing
 - DOM [Windows Forms], accessing frames in managed HTML
 ms.assetid: cdeeaa22-0be4-4bbf-9a75-4ddc79199f8d
-ms.openlocfilehash: b1a858e88ff27de19e2ebbd69c14060813873c13
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: d90c2d7f8be2448e1d4f10410b27bc5132cdb16a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "49308489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54653829"
 ---
 # <a name="accessing-frames-in-the-managed-html-document-object-model"></a>관리되는 HTML 문서 개체 모델의 프레임에 액세스
 일부 HTML 문서도 구성 됩니다 *프레임*, 또는 자신의 고유 HTML 문서를 포함할 수 있는 창입니다. 프레임을 사용하면 탐색 모음과 같이 페이지 조각 하나 이상이 정적으로 유지되지만 다른 프레임의 콘텐츠가 지속적으로 바뀌는 HTML 페이지를 쉽게 만들 수 있습니다.  
@@ -40,6 +40,6 @@ ms.locfileid: "49308489"
   
  사이트 간 스크립팅 하는 방법에 대 한 자세한 내용은 참조 하세요. [에 대 한 프레임 간 스크립팅 및 보안](https://msdn.microsoft.com/library/ms533028.aspx)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [FRAME 요소 &#124; 개체를 프레임](https://msdn.microsoft.com/library/ms535250.aspx)  
- [관리되는 HTML 문서 개체 모델 사용](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)
+## <a name="see-also"></a>참고자료
+- [FRAME 요소 &#124; 개체를 프레임](https://msdn.microsoft.com/library/ms535250.aspx)
+- [관리되는 HTML 문서 개체 모델 사용](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)

@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 67abf017040b9e6bbe9b10e560c8d57c124ae84e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 5f2288e02c01a40877abbd6a5ce5b2696c0944ac
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54719978"
 ---
 # <a name="putinstancewmi-function"></a>PutInstanceWmi 함수
 기존 클래스의 인스턴스를 만들거나 업데이트합니다. 인스턴스가 WMI 리포지토리에 기록됩니다. 
@@ -71,11 +71,11 @@ HRESULT PutInstanceWmi (
 | `WBEM_E_FAILED` | 0x80041001 | 지정 되지 않은 오류가 발생 했습니다. |
 | `WBEM_E_INVALID_CLASS` | 0x80041010 | 이 인스턴스를 지 원하는 클래스가 잘못 되었습니다. |
 | `WBEM_E_ILLEGAL_NULL` | 0x80041028 | `null` 될 수 없는 속성에 대해 지정 된 `null`로 표시 되는 것과 같은 **인덱싱됨** 또는 **Not_Null** 한정자입니다. |
-| `WBEM_E_INVALID_OBJECT` | 0x8004100f | 지정 된 인스턴스가 올바르지 않습니다. (예를 들어 호출 `PutInstanceWmi` 클래스를 사용 하 여이 값을 반환 합니다.) |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_INVALID_OBJECT` | 0x8004100f | 지정된 인스턴스가 잘못된 경우 (예를 들어 호출 `PutInstanceWmi` 클래스를 사용 하 여이 값을 반환 합니다.) |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
 | `WBEM_E_ALREADY_EXISTS` | 0x80041019 | `WBEM_FLAG_CREATE_ONLY` 플래그 지정 했지만 인스턴스가 이미 존재 합니다. |
 | `WBEM_E_NOT_FOUND` | 0x80041002 | `WBEM_FLAG_UPDATE_ONLY` 에 지정 된 `lFlags`, 하는데 인스턴스에 존재 하지 않습니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 | `WBEM_E_SHUTTING_DOWN` | 0x80041033 | WMI는 아마도 중지 및 다시 시작 했습니다. 호출 [ConnectServerWmi](connectserverwmi.md) 다시 합니다. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | 현재 프로세스와 WMI 원격 프로시저 호출 (RPC) 연결 하지 못했습니다. |
 | `WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다. |
@@ -96,11 +96,11 @@ Windows 관리 인스턴스의 자식 클래스에 대 한 공급자를 호출 �
 함수 호출에 실패 하는 경우 호출 하 여 추가 오류 정보를 얻을 수 있습니다 합니다 [GetErrorInfo](geterrorinfo.md) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

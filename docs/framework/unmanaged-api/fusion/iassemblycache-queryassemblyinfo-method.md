@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6935a72bb99e636b3732958ee88ad224b401513b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e1c3d20b1b9470c744f6dca9ef638555b9322c1c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33430722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54658119"
 ---
 # <a name="iassemblycachequeryassemblyinfo-method"></a>IAssemblyCache::QueryAssemblyInfo 메서드
 지정된 된 어셈블리에 대 한 요청 된 데이터를 가져옵니다.  
@@ -39,24 +39,24 @@ HRESULT QueryAssemblyInfo (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFlags`  
- [in] 값에 정의 된 플래그입니다. 다음 값이 지원 됩니다.  
+ [in] 같은 값이 지원에 정의 된 플래그입니다. 다음 값이 지원 됩니다.  
   
--   QUERYASMINFO_FLAG_VALIDATE (0X00000001)  
+-   QUERYASMINFO_FLAG_VALIDATE (0x00000001)  
   
 -   QUERYASMINFO_FLAG_GETSIZE (0X00000002)  
   
  `pszAssemblyName`  
- [in] 데이터 검색 되는 어셈블리의 이름입니다.  
+ [in] 데이터를 검색 하는 어셈블리의 이름입니다.  
   
  `pAsmInfo`  
- [out에서] [ASSEMBLY_INFO](../../../../docs/framework/unmanaged-api/fusion/assembly-info-structure.md) 어셈블리에 대 한 데이터가 포함 된 구조입니다.  
+ [out에서] [ASSEMBLY_INFO](../../../../docs/framework/unmanaged-api/fusion/assembly-info-structure.md) 어셈블리에 대 한 데이터를 포함 하는 구조입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Fusion.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IAssemblyCache 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
+## <a name="see-also"></a>참고자료
+- [IAssemblyCache 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)

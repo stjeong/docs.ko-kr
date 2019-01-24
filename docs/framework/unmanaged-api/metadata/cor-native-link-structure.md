@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d0d9b8a9a1014d98c51f1471f8203be07f7ff49c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 08d27eb834c1a9a3a5d163bb2d3054f599ae1669
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33440959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54719562"
 ---
 # <a name="cornativelink-structure"></a>COR_NATIVE_LINK 구조체
 네이티브 코드를 연결하는 데 사용되는 정보를 포함합니다.  
@@ -41,20 +41,20 @@ typedef struct
   
 |멤버|설명|  
 |------------|-----------------|  
-|`m_linkType`|네이티브 코드에서 연결 형식입니다. 이 값은 중 하나는 [CorNativeLinkType](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md) 값입니다.|  
+|`m_linkType`|네이티브 코드에 연결 될 형식입니다. 이 값은 중 하나는 [CorNativeLinkType](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md) 값입니다.|  
 |`m_flags`|네이티브 코드를 연결할 때 링커에서 사용 하는 플래그입니다. 이 값은 중 하나는 [CorNativeLinkFlags](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md) 값입니다.|  
 |`m_entryPoint`|진입점을 나타내는 MemberRef 메타 데이터 토큰입니다. 형식은 `lib:entrypoint`합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에서 리소스로 사용  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 구조체](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
- [CorNativeLinkType 열거형](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md)  
- [CorNativeLinkFlags 열거형](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 구조체](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
+- [CorNativeLinkType 열거형](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md)
+- [CorNativeLinkFlags 열거형](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md)

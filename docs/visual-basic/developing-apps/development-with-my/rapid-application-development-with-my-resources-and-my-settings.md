@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Settings
 - My.Resources object [Visual Basic], developing applications
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
-ms.openlocfilehash: 7dbb15c43d044e21c9823c4a1652b0408006e5c3
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 4150d2f9634045351cb52e02c4f4807e55d118e6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44032769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54717906"
 ---
 # <a name="rapid-application-development-with-myresources-and-mysettings-visual-basic"></a>My.Resources 및 My.Settings를 사용한 신속한 응용 프로그램 개발(Visual Basic)
 `My.Resources` 개체 응용 프로그램의 리소스에 대 한 액세스를 제공 하며, 응용 프로그램에 대 한 리소스를 동적으로 검색할 수 있습니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "44032769"
   
  마찬가지로,는 `My.Settings` 개체 응용 프로그램의 설정에 대 한 액세스를 제공 하 고 동적으로 저장 하 고 속성 설정 및 응용 프로그램에 대 한 다른 정보를 검색할 수 있습니다. 자세한 내용은 [My.Resources 개체](../../../visual-basic/language-reference/objects/my-resources-object.md) 하 고 [My.Settings 개체](../../../visual-basic/language-reference/objects/my-settings-object.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [My.Resources 개체](../../../visual-basic/language-reference/objects/my-resources-object.md)  
- [My.Settings 개체](../../../visual-basic/language-reference/objects/my-settings-object.md)  
- [응용 프로그램 설정 액세스](../../../visual-basic/developing-apps/programming/app-settings/index.md)
+## <a name="see-also"></a>참고자료
+- [My.Resources 개체](../../../visual-basic/language-reference/objects/my-resources-object.md)
+- [My.Settings 개체](../../../visual-basic/language-reference/objects/my-settings-object.md)
+- [응용 프로그램 설정 액세스](../../../visual-basic/developing-apps/programming/app-settings/index.md)

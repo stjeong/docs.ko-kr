@@ -1,23 +1,23 @@
 ---
-title: '&lt;UserNameAuthentication&gt;'
+title: '&lt;userNameAuthentication&gt;'
 ms.date: 03/30/2017
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
-ms.openlocfilehash: 3ade257a81e218fa123a08624123af614df84956
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1b8a85a3b2699aa88db24d1f7afee3de67dbf39b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54150047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54656646"
 ---
-# <a name="ltusernameauthenticationgt"></a>&lt;UserNameAuthentication&gt;
+# <a name="ltusernameauthenticationgt"></a>&lt;userNameAuthentication&gt;
 사용자 이름 및 암호에 따라 서비스의 자격 증명을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
+\<behavior>  
 \<serviceCredentials>  
-\<userNameAuthentication >  
+\<userNameAuthentication>  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,7 +44,7 @@ ms.locfileid: "54150047"
 |`includeWindowsGroups`|Windows 그룹이 보안 컨텍스트에 포함되는지 여부를 지정하는 부울 값입니다. 기본값은 `true`입니다.<br /><br /> 이 특성을 `true`로 설정하면 전체 그룹이 확장되므로 성능에 영향을 줍니다. 사용자가 속한 그룹의 목록을 설정할 필요가 없으면 이 속성을 `false`로 설정합니다.|  
 |`maxCacheLogonTokens`|캐시할 로그온 토큰의 최대 수를 지정하는 정수입니다. 이 값은 0보다 커야 합니다. 기본값은 128입니다.|  
 |`membershipProviderName`|바인딩의 `clientCredentialType` 특성이 `username`으로 설정되면 사용자 이름이 Windows 계정에 매핑됩니다. 이 특성을 사용하여 이 동작을 재정의할 수 있습니다. 해당 특성은 관련 암호 유효성 검사 메커니즘을 제공하는 <xref:System.Web.Security.MembershipProvider> 값의 이름을 포함하는 문자열입니다.|  
-|`userNamePasswordValidationMode`|사용자 이름 암호의 유효성 검사 방식을 지정합니다. 올바른 값은 다음과 같습니다.<br /><br /> -Windows<br />-MembershipProvider<br />사용자 지정<br /><br /> 기본값은 Windows입니다. 이 특성은 <xref:System.ServiceModel.Security.UserNamePasswordValidationMode> 형식입니다.|  
+|`userNamePasswordValidationMode`|사용자 이름 암호의 유효성 검사 방식을 지정합니다. 올바른 값은 다음과 같습니다.<br /><br /> -   Windows<br />-MembershipProvider<br />사용자 지정<br /><br /> 기본값은 Windows입니다. 이 특성은 <xref:System.ServiceModel.Security.UserNamePasswordValidationMode> 형식입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -60,8 +60,8 @@ ms.locfileid: "54150047"
   
  사용자 이름/암호에 대한 Windows 인증을 사용하기 위해 구성된 서비스에서 사용하는 바인딩이 없으면 로그온 토큰의 캐싱과 관련된 설정이 무시됩니다. 이것에는 `cacheLogonTokenLifetime`, `cacheLogonTokens` 및 `maxCacheLogonTokens`가 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.UserNameServiceElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.UserNameAuthentication%2A>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.UserNameServiceElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.UserNameAuthentication%2A>

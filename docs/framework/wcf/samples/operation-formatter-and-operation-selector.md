@@ -2,12 +2,12 @@
 title: 작업 포맷터와 작업 선택기
 ms.date: 03/30/2017
 ms.assetid: 1c27e9fe-11f8-4377-8140-828207b98a0e
-ms.openlocfilehash: a814de7433f2d06491245dc1d6e6e637b514118a
-ms.sourcegitcommit: 213292dfbb0c37d83f62709959ff55c50af5560d
+ms.openlocfilehash: 5261c082f748877505701221668b61bf7097ef06
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47070898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54661258"
 ---
 # <a name="operation-formatter-and-operation-selector"></a>작업 포맷터와 작업 선택기
 이 샘플에서는 WCF에 필요한 것에서 다른 형식으로 메시지 데이터를 허용 하도록 Windows Communication Foundation (WCF) 확장성 요소를 사용할 수 있는 방법을 보여 줍니다. 기본적으로 WCF 포맷터는 메서드 매개 변수 아래에 포함 되도록 예상 합니다 `soap:body` 요소입니다. 이 샘플에서는 대신 HTTP GET 쿼리 문자열의 매개 변수 데이터를 구문 분석하고 이 데이터를 사용하여 메서드를 호출하는 사용자 지정 작업 포맷터를 구현하는 방법을 보여 줍니다.  
@@ -98,7 +98,7 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
 -   이 작업은 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>을 호출하기 전에 수행되어야 합니다. 이 샘플에서는 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>을 호출하기 전에 포맷터를 수동으로 수정하는 방법을 보여 줍니다. 같은 결과를 얻을 수 있는 다른 방법은 열기 전에 <xref:System.ServiceModel.ServiceHost>를 호출하는 `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior`에서 클래스를 파생하는 것입니다. 자세한 예는 호스팅 설명서와 샘플을 참조하십시오.  
   
-### <a name="user-experience"></a>사용자 경험  
+### <a name="user-experience"></a>사용자 환경  
  서버측:  
   
 -   서버 `ICalculator` 구현은 변경할 필요가 없습니다.  
@@ -178,4 +178,4 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
 3.  단일 또는 다중 컴퓨터 구성에서 샘플을 실행 하려면의 지침을 따릅니다 [Windows Communication Foundation 샘플 실행](../../../../docs/framework/wcf/samples/running-the-samples.md)합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

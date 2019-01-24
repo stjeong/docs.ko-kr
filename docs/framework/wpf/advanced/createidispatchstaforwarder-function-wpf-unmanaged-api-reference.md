@@ -1,5 +1,5 @@
 ---
-title: CreateIDispatchSTAForwarder 함수 (WPF 관리 되지 않는 API 참조)
+title: CreateIDispatchSTAForwarder 함수 (F 관리 되지 않는 API 참조)
 ms.date: 03/30/2017
 dev_langs:
 - cpp
@@ -8,17 +8,17 @@ api_name:
 api_location:
 - PresentationHost_v0400.dll
 ms.assetid: 57a02dfa-f091-4ace-9c06-1f4ab52b3527
-ms.openlocfilehash: f7e45d5cafa40ba147fe39888e74a67ac9f95c5b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 215f6ff727b814e7e7d7c708c29a8c5221f5797f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33536653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54575984"
 ---
-# <a name="createidispatchstaforwarder-function-wpf-unmanaged-api-reference"></a>CreateIDispatchSTAForwarder 함수 (WPF 관리 되지 않는 API 참조)
-이 API는 Windows Presentation Foundation (WPF) 인프라를 지원 하며 사용자 코드에서 직접 사용할 수 없습니다.  
+# <a name="createidispatchstaforwarder-function-wpf-unmanaged-api-reference"></a>CreateIDispatchSTAForwarder 함수 (F 관리 되지 않는 API 참조)
+이 API는 Windows Presentation Foundation (WPF) 인프라를 지원 하며 코드에서 직접 사용할 수 없습니다.  
   
- 스레드 및 창 관리를 위한 Windows Presentation Foundation (WPF) 인프라에서 사용 합니다.  
+ 스레드 및 windows 관리에 대 한 Windows Presentation Foundation (WPF) 인프라에서 사용 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,11 +43,11 @@ HRESULT CreateIDispatchSTAForwarder(
   
  **DLL:**  
   
- .NET framework 3.0 및 3.5: PresentationHostDLL.dll  
+ .NET framework 3.0 및 3.5. PresentationHostDLL.dll  
   
- .NET Framework 4 이상: PresentationHost_v0400.dll  
+ .NET framework 4 이상: PresentationHost_v0400.dll  
   
  **.NET framework 버전:** [!INCLUDE[net_current_v30plus](../../../../includes/net-current-v30plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [F 관리되지 않는 API 참조](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)
+## <a name="see-also"></a>참고자료
+- [F 관리되지 않는 API 참조](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)

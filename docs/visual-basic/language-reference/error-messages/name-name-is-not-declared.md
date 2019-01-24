@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30451
 ms.assetid: 765f099b-e21e-47c6-a906-a065444e56b3
-ms.openlocfilehash: 0b76b3001b01829ce0bd91cb692a6b518d97577e
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e52b93980cfc2d162d35b86bd93ce9eeb9875c9d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50189604"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54574822"
 ---
 # <a name="name-39ltnamegt39-is-not-declared"></a>이름 &#39; &lt;이름을&gt; &#39; 선언 되지 않았습니다
 문에서 프로그래밍 요소를 참조 하지만 컴파일러에서 정확한 해당 이름의 요소를 찾을 수 없습니다.  
@@ -41,9 +41,9 @@ ms.locfileid: "50189604"
 
    [!code-vb[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/vbruntime.vbproj?highlight=6)]
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고자료
 
-[선언 및 상수 요약](../../../visual-basic/language-reference/keywords/declarations-and-constants-summary.md)  
- [Visual Basic 명명 규칙](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
- [선언 요소 이름](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [선언된 요소 참조](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [선언 및 상수 요약](../../../visual-basic/language-reference/keywords/declarations-and-constants-summary.md)
+- [Visual Basic 명명 규칙](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+- [선언 요소 이름](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [선언된 요소 참조](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

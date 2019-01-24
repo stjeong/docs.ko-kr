@@ -1,19 +1,19 @@
 ---
-title: '방법: IIS에서의 WCF 서비스 호스팅'
+title: '방법: IIS에서 WCF 서비스 호스팅'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
-ms.openlocfilehash: 207010f594959708322aed2e630935252c873cf8
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 44c1b489897a25d293644c5a3ef7d446dd8d4a3b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43510757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54651125"
 ---
-# <a name="how-to-host-a-wcf-service-in-iis"></a>방법: IIS에서의 WCF 서비스 호스팅
-이 항목에서는 인터넷 정보 서비스 (IIS)에서 호스트 되는 Windows Communication Foundation (WCF) 서비스를 만드는 데 필요한 기본 단계를 간략하게 설명 합니다. 이 항목에서는 사용자가 IIS에 대해 잘 알고 있으며 IIS 관리 도구를 사용해 IIS 응용 프로그램을 만들고 관리하는 방법을 이해하고 있다고 가정합니다. IIS에 대 한 자세한 내용은 참조 하세요. [인터넷 정보 서비스](https://go.microsoft.com/fwlink/?LinkId=132449)합니다. IIS 환경에서 실행 되는 프로세스 재활용와 같은 IIS 기능을 최대한 활용 하는 WCF 서비스 종료, 프로세스 상태 모니터링 및 메시지 기반 활성화를 유휴입니다. 이 호스팅 옵션을 사용하려면 IIS를 적절히 구성해야 하지만 호스팅 코드를 응용 프로그램의 일부로 작성하지 않아도 됩니다. HTTP 전송을 사용하는 경우에만 IIS 호스팅을 사용할 수 있습니다.  
+# <a name="how-to-host-a-wcf-service-in-iis"></a>방법: IIS에서 WCF 서비스 호스팅
+이 항목에서는 인터넷 정보 서비스 (IIS)에서 호스트 되는 Windows Communication Foundation (WCF) 서비스를 만드는 데 필요한 기본 단계를 간략하게 설명 합니다. 이 항목에서는 사용자가 IIS에 대해 잘 알고 있으며 IIS 관리 도구를 사용해 IIS 응용 프로그램을 만들고 관리하는 방법을 이해하고 있다고 가정합니다. IIS에 대 한 자세한 내용은 참조 하세요. [인터넷 정보 서비스](https://go.microsoft.com/fwlink/?LinkId=132449)합니다. IIS 환경에서 실행 되는 프로세스 재활용와 같은 IIS 기능을 최대한 활용 하는 WCF 서비스 종료, 프로세스 상태 모니터링 및 메시지 기반 활성화를 유휴입니다. 이 호스팅 옵션을 사용하려면 IIS를 적절히 구성해야 하지만 호스팅 코드를 애플리케이션의 일부로 작성하지 않아도 됩니다. HTTP 전송을 사용하는 경우에만 IIS 호스팅을 사용할 수 있습니다.  
   
  방법에 대 한 자세한 내용은 WCF 및 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 상호 작용을 참조 하십시오 [WCF 서비스 및 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)합니다. 보안 구성에 대 한 자세한 내용은 참조 하세요. [보안](../../../../docs/framework/wcf/feature-details/security.md)합니다.  
   
@@ -75,9 +75,9 @@ ms.locfileid: "43510757"
  [!code-vb[C_HowTo_HostInIIS#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostiniis/vb/source.vb#1)] 
  [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]  
   
-## <a name="see-also"></a>참고 항목  
- [인터넷 정보 서비스에서 호스팅](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)  
- [서비스 호스팅](../../../../docs/framework/wcf/hosting-services.md)  
- [WCF 서비스 및 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)  
- [보안](../../../../docs/framework/wcf/feature-details/security.md)  
- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)
+## <a name="see-also"></a>참고자료
+- [인터넷 정보 서비스에서 호스팅](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
+- [서비스 호스팅](../../../../docs/framework/wcf/hosting-services.md)
+- [WCF 서비스 및 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
+- [보안](../../../../docs/framework/wcf/feature-details/security.md)
+- [Windows Server App Fabric 호스팅 기능](https://go.microsoft.com/fwlink/?LinkId=201276)

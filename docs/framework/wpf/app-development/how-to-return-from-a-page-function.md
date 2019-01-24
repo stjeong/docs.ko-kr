@@ -9,18 +9,18 @@ helpviewer_keywords:
 - page functions [WPF], returning from
 - functions [WPF], returning from
 ms.assetid: 87804905-7e8f-417b-b0e3-5622da686396
-ms.openlocfilehash: 3251b373b11dc7682235251b6d82e22705456737
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 85ca9632a6f5b5df08fa6ac042d56ebbc70d427d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33545514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54718548"
 ---
 # <a name="how-to-return-from-a-page-function"></a>방법: 페이지 함수에서 반환
 이 예제에서는 페이지 함수에서 결과를 반환하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
- 호출 해야 페이지 함수를 반환 하려면 <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> 의 인스턴스를 전달 하 고 <xref:System.Windows.Navigation.ReturnEventArgs%601>합니다.  
+ 페이지 함수에서 반환할 호출할 필요가 <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> 의 인스턴스를 전달 하 고 <xref:System.Windows.Navigation.ReturnEventArgs%601>입니다.  
   
  [!code-xaml[HOWTOPageFunctionSnippets#PageFunctionReturnAResultXAML1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/GetStringPageFunction.xaml#pagefunctionreturnaresultxaml1)]  
 [!code-xaml[HOWTOPageFunctionSnippets#PageFunctionReturnAResultXAML2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/GetStringPageFunction.xaml#pagefunctionreturnaresultxaml2)]  
@@ -28,5 +28,5 @@ ms.locfileid: "33545514"
  [!code-csharp[HOWTOPageFunctionSnippets#PageFunctionReturnAResultCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/GetStringPageFunction.xaml.cs#pagefunctionreturnaresultcodebehind)]
  [!code-vb[HOWTOPageFunctionSnippets#PageFunctionReturnAResultCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/VisualBasic/GetStringPageFunction.xaml.vb#pagefunctionreturnaresultcodebehind)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Navigation.PageFunction%601>
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Navigation.PageFunction%601>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - functions [Visual Basic], function expressions
 - lambda expressions [Visual Basic], function expression
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-ms.openlocfilehash: cfdd17f6f4ee6c4ddb3fa73ab3ec9c5ce46a162f
-ms.sourcegitcommit: ad99773e5e45068ce03b99518008397e1299e0d1
+ms.openlocfilehash: b83bee06a3a001fd362a217907e783cb7ad293ca
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2018
-ms.locfileid: "46703000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54648110"
 ---
 # <a name="function-expression-visual-basic"></a>함수 식(Visual Basic)
 매개 변수 및 함수가 람다 식을 정의 하는 코드를 선언 합니다.  
@@ -31,8 +31,8 @@ End Function
 |용어|정의|  
 |---|---|  
 |`parameterlist`|선택 사항입니다. 이 절차의 매개 변수를 나타내는 로컬 변수 이름의 목록입니다. 괄호는 목록이 비어 있는 경우에 있어야 합니다. 참조 [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md)합니다.|  
-|`expression`|필수. 단일 식입니다. 식의 형식이 함수 반환 형식입니다.|  
-|`statements`|필수. 사용 하 여 값을 반환 하는 문의 목록은 `Return` 문입니다. (참조 [Return 문](../../../visual-basic/language-reference/statements/return-statement.md).) 반환 값의 유형 함수의 반환 형식이입니다.|  
+|`expression`|필수 요소. 단일 식입니다. 식의 형식이 함수 반환 형식입니다.|  
+|`statements`|필수 요소. 사용 하 여 값을 반환 하는 문의 목록은 `Return` 문입니다. (참조 [Return 문](../../../visual-basic/language-reference/statements/return-statement.md).) 반환 값의 유형 함수의 반환 형식이입니다.|  
   
 ## <a name="remarks"></a>설명  
  A *람다 식* 계산한 값을 반환 하는 이름이 없는 함수입니다. 람다 식을 사용할 수 있습니다 어디서 나 사용할 수 대리자 형식을 제외 하 고 인수로 `RemoveHandler`합니다. 대리자 및 람다 식 대리자를 사용 하 여 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [대리자 문](../../../visual-basic/language-reference/statements/delegate-statement.md) 하 고 [완화 된 대리자 변환](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)합니다.  
@@ -87,12 +87,12 @@ Dim londonCusts = db.Customers.
   
  쿼리 메서드에 대 한 자세한 내용은 참조 하세요. [쿼리](../../../visual-basic/language-reference/queries/index.md)합니다. 표준 쿼리 연산자에 대 한 자세한 내용은 참조 하세요. [표준 쿼리 연산자 개요](../../programming-guide/concepts/linq/standard-query-operators-overview.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)  
- [람다 식](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [연산자 및 식](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [문](../../../visual-basic/programming-guide/language-features/statements.md)  
- [값 비교](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
- [부울 식](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)  
- [If 연산자](../../../visual-basic/language-reference/operators/if-operator.md)  
- [완화된 대리자 변환](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+## <a name="see-also"></a>참고자료
+- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)
+- [람다 식](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [연산자 및 식](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [문(C++)](../../../visual-basic/programming-guide/language-features/statements.md)
+- [값 비교](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
+- [부울 식](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
+- [If 연산자](../../../visual-basic/language-reference/operators/if-operator.md)
+- [완화된 대리자 변환](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

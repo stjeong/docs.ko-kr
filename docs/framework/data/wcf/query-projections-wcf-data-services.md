@@ -10,15 +10,15 @@ helpviewer_keywords:
 - query projection [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
-ms.openlocfilehash: d53892f9823474ea14640e352548b55432e7744b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2cd39355fec310bc33a3d02524a4d4cc060dba6a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646083"
 ---
 # <a name="query-projections-wcf-data-services"></a>쿼리 프로젝션(WCF Data Services)
-프로젝션에 메커니즘을 제공 합니다 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 엔터티의 특정 속성만 응답에서 반환 되는 지정 하 여 쿼리에서 반환 되는 피드의 데이터 양을 줄일 수 있습니다. 자세한 내용은 [OData: Select 시스템 쿼리 옵션 ($select)](https://go.microsoft.com/fwlink/?LinkId=186076)합니다.  
+프로젝션에 메커니즘을 제공 합니다 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 엔터티의 특정 속성만 응답에서 반환 되는 지정 하 여 쿼리에서 반환 되는 피드의 데이터 양을 줄일 수 있습니다. 자세한 내용은 참조 하세요. [OData: Select 시스템 쿼리 옵션 ($select)](https://go.microsoft.com/fwlink/?LinkId=186076)합니다.  
   
  이 항목에서는 쿼리 프로젝션을 정의하는 방법, 엔터티 및 비 엔터티 형식에 대한 요구 사항, 프로젝션된 결과 업데이트 및 프로젝션된 형식 만들기에 대해 설명하고 몇 가지 프로젝션 고려 사항을 제시합니다.  
   
@@ -65,9 +65,9 @@ ms.locfileid: "43526690"
    [!code-csharp[Astoria Northwind Client#ProjectWithInitializer](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithinitializer)]
    [!code-vb[Astoria Northwind Client#ProjectWithInitializer](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithinitializer)]
 
-- 엔터티 형식: 지원
+- 엔터티 유형: 지원됨
 
-- 비 엔터티 형식: 지원
+- 비 엔터티 형식: 지원됨
 
 **생성자를 사용 하 여 프로젝션 된 새 인스턴스 만들기**
 
@@ -76,9 +76,9 @@ ms.locfileid: "43526690"
    [!code-csharp[Astoria Northwind Client#ProjectWithConstructor](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithconstructor)]
    [!code-vb[Astoria Northwind Client#ProjectWithConstructor](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithconstructor)]
 
-- 엔터티 형식: A <xref:System.NotSupportedException> 발생 합니다.
+- 엔터티 유형: <xref:System.NotSupportedException>이 발생함
 
-- 비 엔터티 형식: 지원
+- 비 엔터티 형식: 지원됨
 
 **프로젝션을 사용 하 여 속성 값을 변환 하려면**
 
@@ -87,9 +87,9 @@ ms.locfileid: "43526690"
    [!code-csharp[Astoria Northwind Client#ProjectWithTransform](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#projectwithtransform)]
    [!code-vb[Astoria Northwind Client#ProjectWithTransform](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#projectwithtransform)]
    
-- 엔터티 형식: 혼동 및 다른 엔터티에 속한 데이터 소스의 데이터를 덮어쓸 가능성이 발생할 수 있으므로 엔터티 형식에 대 한이 변환은 지원 되지 않습니다. <xref:System.NotSupportedException>이 발생함
+- 엔터티 유형: 이 변형은 혼동을 일으킬 수 있고 다른 엔터티에 속한 데이터 소스의 데이터를 덮어쓸 가능성이 있으므로 엔터티 형식에는 지원되지 않습니다. <xref:System.NotSupportedException>이 발생함
 
-- 비 엔터티 형식: 지원  
+- 비 엔터티 형식: 지원됨  
   
 <a name="considerations"></a>   
 ## <a name="projection-considerations"></a>프로젝션 고려 사항  
@@ -107,7 +107,7 @@ ms.locfileid: "43526690"
   
 -   클라이언트의 쿼리 프로젝션 쿼리는 요청 URI에서 `$select` 쿼리 옵션을 사용하도록 변환됩니다. 프로젝션을 사용하는 쿼리가 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 쿼리 옵션을 지원하지 않는 이전 버전의 `$select`에 대해 실행되는 경우 오류가 반환됩니다. 이러한 문제는 데이터 서비스에 대한 <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A>의 <xref:System.Data.Services.DataServiceBehavior>이 <xref:System.Data.Services.Common.DataServiceProtocolVersion.V1> 값으로 설정된 경우에도 발생할 수 있습니다. 자세한 내용은 [데이터 서비스 버전 관리](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md)합니다.  
   
- 자세한 내용은 [방법: 프로젝트 쿼리 결과](../../../../docs/framework/data/wcf/how-to-project-query-results-wcf-data-services.md)합니다.  
+ 자세한 내용은 [방법: 쿼리 결과 프로젝션](../../../../docs/framework/data/wcf/how-to-project-query-results-wcf-data-services.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 서비스 쿼리](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [데이터 서비스 쿼리](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)

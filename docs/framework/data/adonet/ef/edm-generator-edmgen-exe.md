@@ -2,23 +2,23 @@
 title: EDM 생성기(EdmGen.exe)
 ms.date: 03/30/2017
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
-ms.openlocfilehash: edec83b187afc74f3ad93181c4737a4d6cec8d0e
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: cd43b6ca31eea2cc4265c7f2e1a045f0f12a256c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43516125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54722120"
 ---
 # <a name="edm-generator-edmgenexe"></a>EDM 생성기(EdmGen.exe)
 EdmGen.exe는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 모델 및 매핑 파일 작업에 사용되는 명령줄 도구입니다. EdmGen.exe 도구를 사용하여 다음을 수행할 수 있습니다.  
   
--   데이터 소스 관련 .NET Framework 데이터 공급자를 사용하여 데이터 소스에 연결하고 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 사용되는 개념적 모델(.csdl), 저장소 모델(.ssdl) 및 매핑(.msl) 파일을 생성합니다. 자세한 내용은 [방법: 모델 및 매핑 파일 생성을 사용 하 여 EdmGen.exe](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)합니다.  
+-   데이터 소스 관련 .NET Framework 데이터 공급자를 사용하여 데이터 소스에 연결하고 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서 사용되는 개념적 모델(.csdl), 저장소 모델(.ssdl) 및 매핑(.msl) 파일을 생성합니다. 자세한 내용은 [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 생성](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)합니다.  
   
--   기존 모델의 유효성을 검사합니다. 자세한 내용은 [방법: 모델 유효성 검사 및 매핑 파일을 사용 하 여 EdmGen.exe](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)합니다.  
+-   기존 모델의 유효성을 검사합니다. 자세한 내용은 [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 유효성을 검사 하려면](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)합니다.  
   
--   개념적 모델(.csdl) 파일에서 생성된 개체 클래스가 포함되는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: 개체 계층 코드 생성을 사용 하 여 EdmGen.exe](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)합니다.  
+-   개념적 모델(.csdl) 파일에서 생성된 개체 클래스가 포함되는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: EdmGen.exe를 사용 하 여 개체 계층 코드를 생성할](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)합니다.  
   
--   기존 모델에 대해 미리 생성된 뷰가 들어 있는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: 쿼리 성능 향상을 Pre-Generate 뷰](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579)합니다.  
+-   기존 모델에 대해 미리 생성된 뷰가 들어 있는 C# 또는 Visual Basic 코드 파일을 생성합니다. 자세한 내용은 [방법: 쿼리 성능을 개선 하는 뷰를 미리 생성](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579)합니다.  
   
  EdmGen.exe 도구는 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 디렉터리에 설치됩니다. 대체로 이 도구는 C:\windows\Microsoft.NET\Framework\v4.0에 있으며 64비트 시스템의 경우 C:\windows\Microsoft.NET\Framework64\v4.0에 있습니다. Visual Studio 명령 프롬프트에서 EdmGen.exe 도구에 액세스할 수도 있습니다 (클릭 **시작**, 가리킨 **모든 프로그램**를 가리키고 **Microsoft Visual Studio 2010**, 가리킵니다 **Visual Studio Tools**를 클릭 하 고 **Visual Studio 2010 명령 프롬프트**).  
   
@@ -65,13 +65,13 @@ EdmGen /mode:choice [options]
 |`/targetversion:` \<string>|생성된 코드를 컴파일하는 데 사용할 .NET Framework 버전입니다. 지원되는 버전은 4 및 4.5입니다. 기본값은 4입니다.|  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [방법: EdmGen.exe를 사용하여 모델 생성 및 파일 매핑](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)  
+ [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 생성](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)  
   
- [방법: EdmGen.exe를 사용하여 개체 계층 코드 생성](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)  
+ [방법: EdmGen.exe를 사용 하 여 개체 계층 코드 생성](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)  
   
- [방법: EdmGen.exe를 사용하여 모델 유효성 검사 및 파일 매핑](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)  
+ [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 유효성을 검사 하려면](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
- [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)  
- [CSDL, SSDL 및 MSL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+- [엔터티 데이터 모델](../../../../../docs/framework/data/adonet/entity-data-model.md)
+- [CSDL, SSDL 및 MSL 사양](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

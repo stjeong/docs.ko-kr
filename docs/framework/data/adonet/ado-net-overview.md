@@ -2,12 +2,12 @@
 title: ADO.NET 개요
 ms.date: 03/30/2017
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
-ms.openlocfilehash: 697911201171a540d6749d03c51f14efba945765
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 6769370396fc263f237a2884435630a2930b882b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529925"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54714388"
 ---
 # <a name="adonet-overview"></a>ADO.NET 개요
 ADO.NET은 OLE DB 및 ODBC를 통해 노출되는 데이터 소스, SQL Server 및 XML과 같은 데이터 소스에 대한 일관성 있는 액세스를 제공합니다. 데이터 공유 소비자 응용 프로그램은 ADO.NET을 통해 이러한 데이터 소스에 연결하여 포함된 데이터를 검색, 처리 및 업데이트할 수 있습니다.  
@@ -20,7 +20,7 @@ ADO.NET은 OLE DB 및 ODBC를 통해 노출되는 데이터 소스, SQL Server �
   
  ADO.NET은 .NET Framework 내에서 가장 직접적인 데이터 액세스 방법을 제공합니다. 응용 프로그램의 기본 저장소 모델 대신 개념적 모델에 대해 작동 하는 데는 더 높은 수준의 추상화에 대 한 참조를 [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md)합니다.  
   
- **개인정보취급방침**: System.Data.dll, System.Data.Design.dll, System.Data.OracleClient.dll, System.Data.SqlXml.dll, System.Data.Linq.dll, System.Data.SqlServerCe.dll 및 System.Data.DataSetExtensions.dll 어셈블리 하지 사용자의 개인 데이터 및 private이 아닌 데이터를 구분 합니다.  이러한 어셈블리는 사용자의 개인 데이터를 수집, 저장 및 전송하지 않습니다. 하지만 타사 응용 프로그램에서 이러한 어셈블리를 사용하여 사용자의 개인 데이터를 수집, 저장 및 전송할 수 있습니다.  
+ **개인정보취급방침**: 사용자의 System.Data.dll, System.Data.Design.dll, System.Data.OracleClient.dll, System.Data.SqlXml.dll, System.Data.Linq.dll, System.Data.SqlServerCe.dll 및 System.Data.DataSetExtensions.dll 어셈블리를 구분 하지 않습니다. 개인 데이터 및 private이 아닌 데이터입니다.  이러한 어셈블리는 사용자의 개인 데이터를 수집, 저장 및 전송하지 않습니다. 하지만 타사 응용 프로그램에서 이러한 어셈블리를 사용하여 사용자의 개인 데이터를 수집, 저장 및 전송할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [ADO.NET 아키텍처](../../../../docs/framework/data/adonet/ado-net-architecture.md)  
@@ -35,7 +35,7 @@ ADO.NET은 OLE DB 및 ODBC를 통해 노출되는 데이터 소스, SQL Server �
  [.NET Framework 데이터 공급자](../../../../docs/framework/data/adonet/data-providers.md)  
  ADO.NET에 포함된 하나 이상의 .NET Framework 데이터 공급자에 대한 디자인 개요를 제공합니다.  
   
- [ADO.NET 데이터 집합](../../../../docs/framework/data/adonet/ado-net-datasets.md)  
+ [ADO.NET 데이터 세트](../../../../docs/framework/data/adonet/ado-net-datasets.md)  
  `DataSet` 디자인 및 구성 요소의 개요를 제공합니다.  
   
  [ADO.NET에서 Side-by-Side 실행](../../../../docs/framework/data/adonet/side-by-side-execution.md)  
@@ -57,7 +57,7 @@ ADO.NET은 OLE DB 및 ODBC를 통해 노출되는 데이터 소스, SQL Server �
  [ADO.NET에서 데이터 검색 및 수정](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  데이터 소스에 연결하고, 데이터를 검색하고, 데이터를 수정하는 방법을 설명합니다. 여기에는 `DataReaders` 및 `DataAdapters`가 포함됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [Visual Studio에서 데이터 액세스](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [Visual Studio에서 데이터 액세스](/visualstudio/data-tools/accessing-data-in-visual-studio)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

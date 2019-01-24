@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 8fedec60b6152e77d6f99bf55cf11ec909fa8f80
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: f15111fbd65896cc42ab3d1462dc567133a7b4ea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54566348"
 ---
 # <a name="specifying-an-assembly39s-location"></a>어셈블리를 지정&#39;위치
 두 가지 방법으로 어셈블리의 위치를 지정할 수 있습니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "48848051"
 </configuration>  
 ```  
   
- 합니다 **버전** 특성 모든 강력한 이름의 어셈블리에 대 한 필요 하지만 강력한 이름이 아닌 어셈블리에 대 한 생략 해야 합니다. **\<코드 베이스 >** 요소에 필요 합니다 **href** 특성입니다. 에서는 버전 범위를 지정할 수 없습니다는  **\<codeBase >** 요소입니다.  
+ 합니다 **버전** 특성 모든 강력한 이름의 어셈블리에 대 한 필요 하지만 강력한 이름이 아닌 어셈블리에 대 한 생략 해야 합니다.  **\<코드 베이스 >** 요소에 필요 합니다 **href** 특성입니다. 에서는 버전 범위를 지정할 수 없습니다는  **\<codeBase >** 요소입니다.  
   
 > [!NOTE]
 >  강력한 이름이 없는 어셈블리에 대 한 코드 베이스 힌트를 제공 하는 경우 힌트는 응용 프로그램 기준 위치 또는 응용 프로그램 기본 디렉터리의 하위 디렉터리를 가리켜야 합니다.  
@@ -67,8 +67,8 @@ ms.locfileid: "48848051"
   
  합니다 **privatePath** 특성 런타임에서 어셈블리에 대 한 검색 해야 하는 디렉터리를 포함 합니다. 응용 프로그램이 C:\Program Files\MyApp에 있는 경우 런타임에서 C:\Program Files\MyApp\Bin, C:\Program Files\MyApp\Bin2\Subbin 및 C:\Program Files\MyApp\Bin3 코드 베이스를 지정 하지 않는 어셈블리를 찾습니다. 에 지정 된 디렉터리가 **privatePath** 응용 프로그램 기본 디렉터리의 하위 디렉터리 여야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)  
- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+## <a name="see-also"></a>참고자료
+- [공용 언어 런타임의 어셈블리](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [어셈블리를 사용한 프로그래밍](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [런타임에서 어셈블리를 찾는 방법](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [.NET Framework 앱 구성](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)

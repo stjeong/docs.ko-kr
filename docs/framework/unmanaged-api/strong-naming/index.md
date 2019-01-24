@@ -2,18 +2,12 @@
 title: 강력한 이름 지정(관리되지 않는 API 참조)
 ms.date: 03/30/2017
 helpviewer_keywords:
-- strong naming [.NET Framework], using the unmanaged API
-- native API reference [.NET Framework], strong naming
-- unmanaged API reference [.NET Framework], strong naming
+  - 'strong naming [.NET Framework], using the unmanaged API'
+  - 'native API reference [.NET Framework], strong naming'
+  - 'unmanaged API reference [.NET Framework], strong naming'
 ms.assetid: 428c68b6-a7b4-44be-b280-75905f46612c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5eb67e9b9f8f972075a98415de63d50585974823
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193957"
 ---
 # <a name="strong-naming-unmanaged-api-reference"></a>강력한 이름 지정(관리되지 않는 API 참조)
 강력한 이름 API를 통해 클라이언트는 어셈블리에 대한 강력한 이름 서명을 관리할 수 있습니다.  
@@ -111,6 +105,6 @@ ms.locfileid: "50193957"
  [PublicKeyBlob 구조체](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  
  공개/개인 키 쌍의 공개 키를 이진 형식으로 나타냅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ICLRStrongName 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)  
- [관리되지 않는 API 참조](../../../../docs/framework/unmanaged-api/index.md)
+## <a name="see-also"></a>참고 항목
+- [ICLRStrongName 인터페이스](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [관리되지 않는 API 참조](../../../../docs/framework/unmanaged-api/index.md)

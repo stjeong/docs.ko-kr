@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e2746073fbc6adfd7090aa9b3cc38e46c4411744
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 782697536f5e01fa29830a64e47d960a47fe4eae
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33400187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54663143"
 ---
 # <a name="getscope-method1"></a>GetScope Method1
 가져오기 범위를 가져옵니다.  
@@ -45,7 +45,7 @@ HRESULT GetScope(
  가져올 파일의 고유 ID입니다.  
   
  `dwScope`  
- 가져올 범위 0부터 시작 합니다.  
+ 가져오려는 0부터 시작 범위입니다.  
   
  `ppImportScope`  
  수신 [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) 범위에 대 한 인터페이스입니다.  
@@ -56,7 +56,7 @@ HRESULT GetScope(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

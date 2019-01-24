@@ -9,15 +9,15 @@ helpviewer_keywords:
 - versioning [WCF]
 - data contracts [WCF], versioning
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
-ms.openlocfilehash: 0e91bf597e344dd09e80bee5787e92383065b654
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e8a2f00458614367bbb661dd8ff74e88069d2dc0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43520200"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54646921"
 ---
 # <a name="data-contract-versioning"></a>데이터 계약 버전 관리
-응용 프로그램이 발전하면서 서비스가 사용하는 데이터 계약을 변경해야 할 수도 있습니다. 이 항목에서는 데이터 계약의 버전 관리 방법에 대해 설명합니다. 이 항목에서는 데이터 계약 버전 관리 메커니즘에 대해 설명합니다. 전체 개요 및 규정적 버전 관리 지침을 참조 하세요 [모범 사례: 데이터 계약 버전 관리](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)합니다.  
+응용 프로그램이 발전하면서 서비스가 사용하는 데이터 계약을 변경해야 할 수도 있습니다. 이 항목에서는 데이터 계약의 버전 관리 방법에 대해 설명합니다. 이 항목에서는 데이터 계약 버전 관리 메커니즘에 대해 설명합니다. 전체 개요 및 규정적 버전 관리 지침에 대 한 참조 [모범 사례: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)합니다.  
   
 ## <a name="breaking-vs-nonbreaking-changes"></a>주요 변경 내용 및 주요하지 않은 변경 내용 비교  
  데이터 계약에 대한 변경은 주요 변경 사항이거나 주요 변경 사항이 아닐 수 있습니다. 데이터 계약을 주요 변경 사항이 아닌 것으로 변경할 경우 이전 버전의 계약을 사용하는 응용 프로그램은 새 버전을 사용하는 응용 프로그램과 통신할 수 있으며, 새 버전의 계약을 사용하는 응용 프로그램은 이전 버전을 사용하는 응용 프로그램과 통신할 수 있습니다. 반면에 주요 변경 사항은 단방향 또는 양방향으로의 통신을 금지합니다.  
@@ -115,17 +115,17 @@ ms.locfileid: "43520200"
  대부분의 컬렉션 형식이 데이터 계약 모델에서 서로 간에 상호 변경이 가능하기 때문에 대부분의 컬렉션 변경은 주요 변경 사항이 아닙니다. 그러나 사용자 지정되지 않은 컬렉션을 사용자 지정하거나 그 반대로 할 경우 주요 변경 사항이 됩니다. 또한 컬렉션의 사용자 지정 설정 변경은 주요 변경 사항입니다. 즉, 데이터 계약 이름 및 네임스페이스 변경, 요소 이름, 주요 요소 이름 및 값 요소 이름 반복은 주요 변경 사항입니다. 컬렉션 사용자 지정에 대 한 자세한 내용은 참조 하세요. [데이터 계약의 컬렉션 형식](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md)합니다.  
 기본적으로 컬렉션 콘텐츠 중 데이터 계약 변경(예: 정수 목록에서 문자열 목록으로 변경)은 주요 변경 사항입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
- <xref:System.Runtime.Serialization.SerializationException>  
- <xref:System.Runtime.Serialization.IExtensibleDataObject>  
- [버전 독립적 Serialization 콜백](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)  
- [모범 사례: 데이터 계약 버전 관리](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)  
- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [데이터 계약 동등성](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [이후 버전과 호환되는 데이터 계약](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
+- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>
+- <xref:System.Runtime.Serialization.SerializationException>
+- <xref:System.Runtime.Serialization.IExtensibleDataObject>
+- [버전 독립적 Serialization 콜백](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- [모범 사례: 데이터 계약 버전 관리](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)
+- [데이터 계약 사용](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [데이터 계약 동등성](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [이후 버전과 호환되는 데이터 계약](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)

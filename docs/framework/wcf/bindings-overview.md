@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - bindings [WCF], overview
 ms.assetid: cfb5842f-e0f9-4c56-a015-f2b33f258232
-ms.openlocfilehash: f171a6380840fe2cb828ee06985317f002b353de
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 7d617400fe5c07e8c9754e322960f31a350f62e5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47397256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54657417"
 ---
 # <a name="windows-communication-foundation-bindings-overview"></a>Windows Communication Foundation 바인딩 개요
 바인딩에 Windows Communication Foundation (WCF) 서비스의 끝점에 연결 하는 데 필요한 통신 세부 정보를 지정 하는 데 사용 되는 개체입니다. WCF 서비스에서 각 끝점에 대해 바인딩을 올바로 지정 필요 합니다. 이 항목에서는 통신 세부 정보 바인딩을 정의 하는 바인딩, 바인딩 종류는 WCF에 포함 된 및 끝점에 대 한 바인딩을 지정할 수 있습니다 하는 방법의 요소 형식에 설명 합니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "47397256"
 ## <a name="system-provided-bindings"></a>시스템 제공 바인딩  
  바인딩의 정보는 복잡할 수 있으며 일부 설정이 다른 설정과 호환되지 않을 수 있습니다. 따라서 WCF에는 시스템 제공 바인딩 집합이 포함 됩니다. 이러한 바인딩은 대부분의 응용 프로그램 요구 사항을 처리합니다. 다음 클래스는 시스템 제공 바인딩의 몇 가지 예를 나타냅니다.  
   
--   <xref:System.ServiceModel.BasicHttpBinding>: ASP.NET 웹 서비스 기반 서비스 등 웹 서비스에 연결하는 데 적합한, WS-I Basic Profile 사양을 준수하는 HTTP 프로토콜 바인딩입니다.  
+-   <xref:System.ServiceModel.BasicHttpBinding>: 웹 서비스에 연결 하기 위한 적절 한 바인딩 WS 따르는 HTTP 프로토콜-Basic Profile 사양을 (예를 들어, ASP.NET 웹 서비스 기반 서비스).  
   
--   <xref:System.ServiceModel.WSHttpBinding>: 끝점에 연결하는 데 적합한, WS-* 프로토콜을 준수하는 상호 운용 가능한 바인딩입니다.  
+-   <xref:System.ServiceModel.WSHttpBinding>: WS-를 준수 하는 끝점에 연결 하는 데 적합 하는 상호 운용 가능한 바인딩을 * 프로토콜입니다.  
   
--   <xref:System.ServiceModel.NetNamedPipeBinding>: 사용 하는 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 다른 WCF 끝점을 동일한 컴퓨터에 연결 합니다.  
+-   <xref:System.ServiceModel.NetNamedPipeBinding>: 사용 하 여는 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 다른 WCF 끝점을 동일한 컴퓨터에 연결 합니다.  
   
 -   <xref:System.ServiceModel.NetMsmqBinding>: 사용 하 여 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 다른 WCF 끝점을 사용 하 여 대기 중인된 메시지 연결을 만들 합니다.  
 
-- <xref:System.ServiceModel.NetTcpBinding>:이 바인딩은 HTTP 바인딩 보다 더 높은 성능을 제공 하며 로컬 네트워크에서 사용 하기 위해 이상적입니다.
+- <xref:System.ServiceModel.NetTcpBinding>: 이 바인딩은 HTTP 바인딩 보다 더 높은 성능을 제공 하며 로컬 네트워크에서 사용 하기 위해 이상적입니다.
   
  모든 WCF에서 제공 바인딩 중 설명이 포함 된 전체 목록을 참조 하세요 [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)합니다.  
   
@@ -57,5 +57,5 @@ ms.locfileid: "47397256"
 ## <a name="code-and-configuration"></a>코드 및 구성  
  두 가지 방법, 즉 코드 또는 구성을 통해 바인딩을 정의할 수 있습니다. 이러한 두 접근 방법은 시스템 제공 바인딩을 사용하든 사용자 지정 바인딩을 사용하든 관계가 없습니다. 일반적으로 코드를 사용하면 디자인 타임에 바인딩 정의를 완전히 제어할 수 있습니다. 시스템 관리자 또는 WCF 서비스 또는 서비스 응용 프로그램을 다시 컴파일하지 않고도 바인딩의 매개 변수를 변경 하는 클라이언트의 사용자 허용 다른 한편으로 구성을 사용 합니다. WCF 응용 프로그램을 배포 하는 특정 컴퓨터 요구 사항을 예측할 방법이 없기 때문에이 유연성은 바람직한 경우가 많습니다. 바인딩(및 주소 지정) 정보를 코드와 구분하면 응용 프로그램을 다시 컴파일하거나 다시 배포하지 않고도 해당 정보를 변경할 수 있습니다. 코드에 정의된 바인딩은 구성에 지정된 바인딩 후에 만들어지므로 코드에 정의된 바인딩이 구성에 정의된 모든 바인딩을 덮어쓸 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bde25ae7455dd7fe35fe1a0a43bb2a6b560c0e3e
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: fa46cf1fde4306af562248b4c12b048e3d8e2a51
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47208444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54717651"
 ---
 # <a name="compareto-function"></a>CompareTo 함수
 개체를 다른 Windows 관리 개체와 비교합니다.  
@@ -61,7 +61,7 @@ HRESULT CompareTo (
 |상수  |값  |설명  |
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | 지정 되지 않은 오류가 발생 했습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못 되었습니다. |
 | `WBEM_E_UNEXPECTED` | 0x8004101d | 두 번째 호출 `BeginEnumeration` 에 대 한 중간 호출 없이 만들어진 [ `EndEnumeration` ](endenumeration.md)합니다. |
 | `WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
 | `WBEM_S_DIFFERENT` | 0x40003 | 개체가 서로 다릅니다. |
@@ -80,7 +80,7 @@ HRESULT CompareTo (
 | `WBEM_FLAG_IGNORE_DEFAULT_VALUES` | 4 | 속성의 기본값을 무시 합니다. 이 플래그는 클래스의 비교에만 적용 됩니다. |
 | `WBEM_FLAG_IGNORE_FLAVOR` | 0x20 | 한정자 특성을 무시 합니다. 이 플래그 여전히 한정자 고려 하지만 전파 규칙과 같은 특색의 차이 무시 및 제한 사항을 무시 합니다. |
 | `WBEM_FLAG_IGNORE_CASE` | 0x10 | 문자열 값 비교에서 대/소문자를 무시 합니다. 문자열과 한정자 값에 모두 적용 됩니다. 속성과 한정자 이름은의 비교는 항상이 플래그가 설정 되어 있는지 여부에 관계 없이 대/소문자 구분. |
-| `WBEM_FLAG_IGNORE_CLASS` | 0x8 | 비교 되는 개체는 동일한 클래스의 인스턴스를 가정 합니다. 따라서이 플래그는 인스턴스와 관련 된 정보만을 비교합니다. 성능을 최적화 하려면이 플래그를 사용 합니다. 동일한 클래스의 개체가 없으면 결과가 정의 되지 않습니다. |
+| `WBEM_FLAG_IGNORE_CLASS` | 0x8 | 비교 되는 개체는 동일한 클래스의 인스턴스를 가정 합니다. 따라서이 플래그는 인스턴스와 관련 된 정보만을 비교합니다. 성능을 최적화 하려면이 플래그를 사용 합니다. 같은 클래스의 개체가 아니면 결과는 정의되지 않습니다. |
 
 또는 다음과 같이 단일 복합 플래그를 지정할 수 있습니다.
 
@@ -89,11 +89,11 @@ HRESULT CompareTo (
 |`WBEM_COMPARISON_INCLUDE_ALL` | 0 | 비교의 모든 기능을 고려 합니다. |
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
