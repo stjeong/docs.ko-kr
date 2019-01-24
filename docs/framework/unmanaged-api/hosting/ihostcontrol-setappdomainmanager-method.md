@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bb63f1e9d2b30ce764521aa68fbafe0407cbe922
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1fd0cf4f47781afb397c1fdd4b42715c710982e1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33441876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580761"
 ---
-# <a name="ihostcontrolsetappdomainmanager-method"></a><span data-ttu-id="5ed56-102">IHostControl::SetAppDomainManager 메서드</span><span class="sxs-lookup"><span data-stu-id="5ed56-102">IHostControl::SetAppDomainManager Method</span></span>
-<span data-ttu-id="5ed56-103">응용 프로그램 도메인을 이미 만들었다고 호스트에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-103">Notifies the host that an application domain has been created.</span></span>  
+# <a name="ihostcontrolsetappdomainmanager-method"></a><span data-ttu-id="5cdf0-102">IHostControl::SetAppDomainManager 메서드</span><span class="sxs-lookup"><span data-stu-id="5cdf0-102">IHostControl::SetAppDomainManager Method</span></span>
+<span data-ttu-id="5cdf0-103">응용 프로그램 도메인이 만들어졌는지 호스트에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-103">Notifies the host that an application domain has been created.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5ed56-104">구문</span><span class="sxs-lookup"><span data-stu-id="5ed56-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="5cdf0-104">구문</span><span class="sxs-lookup"><span data-stu-id="5cdf0-104">Syntax</span></span>  
   
 ```  
 HRESULT SetAppDomainManager (  
@@ -36,39 +36,39 @@ HRESULT SetAppDomainManager (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="5ed56-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="5ed56-105">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="5cdf0-105">매개 변수</span><span class="sxs-lookup"><span data-stu-id="5cdf0-105">Parameters</span></span>  
  `dwAppDomainID`  
- <span data-ttu-id="5ed56-106">[in] 선택 된 숫자 식별자 <xref:System.AppDomain>합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-106">[in] The numeric identifier of the selected <xref:System.AppDomain>.</span></span>  
+ <span data-ttu-id="5cdf0-106">[in] 선택 된 숫자 식별자 <xref:System.AppDomain>합니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-106">[in] The numeric identifier of the selected <xref:System.AppDomain>.</span></span>  
   
  `pUnkAppDomainManager`  
- <span data-ttu-id="5ed56-107">[in] 에 대 한 포인터는 <xref:System.AppDomainManager> 으로 호스트를 구현 하는 개체 `IUnknown`합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-107">[in] A pointer to the <xref:System.AppDomainManager> object that the host implements as `IUnknown`.</span></span>  
+ <span data-ttu-id="5cdf0-107">[in] 에 대 한 포인터를 <xref:System.AppDomainManager> 로 호스트를 구현 하는 개체 `IUnknown`합니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-107">[in] A pointer to the <xref:System.AppDomainManager> object that the host implements as `IUnknown`.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="5ed56-108">반환 값</span><span class="sxs-lookup"><span data-stu-id="5ed56-108">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="5cdf0-108">반환 값</span><span class="sxs-lookup"><span data-stu-id="5cdf0-108">Return Value</span></span>  
   
-|<span data-ttu-id="5ed56-109">HRESULT</span><span class="sxs-lookup"><span data-stu-id="5ed56-109">HRESULT</span></span>|<span data-ttu-id="5ed56-110">설명</span><span class="sxs-lookup"><span data-stu-id="5ed56-110">Description</span></span>|  
+|<span data-ttu-id="5cdf0-109">HRESULT</span><span class="sxs-lookup"><span data-stu-id="5cdf0-109">HRESULT</span></span>|<span data-ttu-id="5cdf0-110">설명</span><span class="sxs-lookup"><span data-stu-id="5cdf0-110">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="5ed56-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="5ed56-111">S_OK</span></span>|<span data-ttu-id="5ed56-112">`SetAppDomainManager` 성공적으로 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-112">`SetAppDomainManager` returned successfully.</span></span>|  
-|<span data-ttu-id="5ed56-113">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="5ed56-113">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="5ed56-114">공용 언어 런타임 (CLR) 프로세스에 로드 되지 않았습니다 또는 CLR 중인 상태를 관리 코드를 실행 하거나 호출을 처리할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-114">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
-|<span data-ttu-id="5ed56-115">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="5ed56-115">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="5ed56-116">호출 시간이 초과 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-116">The call timed out.</span></span>|  
-|<span data-ttu-id="5ed56-117">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="5ed56-117">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="5ed56-118">호출자에 게 잠금을 소유 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-118">The caller does not own the lock.</span></span>|  
-|<span data-ttu-id="5ed56-119">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="5ed56-119">HOST_E_ABANDONED</span></span>|<span data-ttu-id="5ed56-120">차단 된 스레드 이벤트 취소 되었습니다 또는 파이버가 기다리던 합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-120">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
-|<span data-ttu-id="5ed56-121">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="5ed56-121">E_FAIL</span></span>|<span data-ttu-id="5ed56-122">알 수 없는 치명적인 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-122">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="5ed56-123">메서드가 E_FAIL을 반환 하는 경우 CLR을 하는 프로세스 내에서 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-123">When a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="5ed56-124">호스팅 방법에 대 한 후속 호출 HOST_E_CLRNOTAVAILABLE를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-124">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="5cdf0-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="5cdf0-111">S_OK</span></span>|<span data-ttu-id="5cdf0-112">`SetAppDomainManager` 성공적으로 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-112">`SetAppDomainManager` returned successfully.</span></span>|  
+|<span data-ttu-id="5cdf0-113">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="5cdf0-113">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="5cdf0-114">프로세스에는 CLR (공용 언어 런타임)에 로드 되지 또는 CLR 상태인는 관리 코드를 실행 하거나 호출을 처리할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-114">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
+|<span data-ttu-id="5cdf0-115">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="5cdf0-115">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="5cdf0-116">호출 시간이 초과 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-116">The call timed out.</span></span>|  
+|<span data-ttu-id="5cdf0-117">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="5cdf0-117">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="5cdf0-118">호출자가 잠금을 소유 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-118">The caller does not own the lock.</span></span>|  
+|<span data-ttu-id="5cdf0-119">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="5cdf0-119">HOST_E_ABANDONED</span></span>|<span data-ttu-id="5cdf0-120">이벤트가 차단 된 스레드가 취소 된 또는 파이버를 대기 하 고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-120">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
+|<span data-ttu-id="5cdf0-121">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="5cdf0-121">E_FAIL</span></span>|<span data-ttu-id="5cdf0-122">알 수 없는 치명적인 오류가 발생 했습니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-122">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="5cdf0-123">메서드 E_FAIL을 반환 하는 경우 CLR은 프로세스 내에서 사용할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-123">When a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="5cdf0-124">메서드를 호스트 하는 데 대 한 후속 호출 HOST_E_CLRNOTAVAILABLE를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-124">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="5ed56-125">설명</span><span class="sxs-lookup"><span data-stu-id="5ed56-125">Remarks</span></span>  
- <span data-ttu-id="5ed56-126"><xref:System.AppDomainManager> 호스트 관리 코드를 부트스트랩 하 고 만들기 및 각 설정을 제어 하는 메커니즘에 제공 <xref:System.AppDomain>합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-126">The <xref:System.AppDomainManager> provides the host with a mechanism to bootstrap into managed code and to control the creation and settings of each <xref:System.AppDomain>.</span></span> <span data-ttu-id="5ed56-127"><xref:System.AppDomainManager> 각각에 로드 되 <xref:System.AppDomain> 때 있는 <xref:System.AppDomain> 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-127">The <xref:System.AppDomainManager> is loaded into each <xref:System.AppDomain> when that <xref:System.AppDomain> is created.</span></span> <span data-ttu-id="5ed56-128">에서는 필요할 경우 CLR 호스트에 알립니다 하는 응용 프로그램 도메인의 값을 설정 하 여 생성 되었는지는 `pUnkAppDomainManager` 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-128">If it chooses, the CLR notifies the host that the application domain has been created by setting the value of the `pUnkAppDomainManager` parameter.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="5cdf0-125">설명</span><span class="sxs-lookup"><span data-stu-id="5cdf0-125">Remarks</span></span>  
+ <span data-ttu-id="5cdf0-126">합니다 <xref:System.AppDomainManager> 관리 코드를 부트스트랩 하 고 만들기 및 각 설정을 제어 하는 메커니즘을 사용 하 여 호스트 제공 <xref:System.AppDomain>합니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-126">The <xref:System.AppDomainManager> provides the host with a mechanism to bootstrap into managed code and to control the creation and settings of each <xref:System.AppDomain>.</span></span> <span data-ttu-id="5cdf0-127">합니다 <xref:System.AppDomainManager> 각각에 로드 됩니다 <xref:System.AppDomain> 경우는 <xref:System.AppDomain> 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-127">The <xref:System.AppDomainManager> is loaded into each <xref:System.AppDomain> when that <xref:System.AppDomain> is created.</span></span> <span data-ttu-id="5cdf0-128">CLR 호스트를 응용 프로그램 도메인의 값을 설정 하 여 만들어졌는지에 알립니다, 선택 하는 경우는 `pUnkAppDomainManager` 매개 변수입니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-128">If it chooses, the CLR notifies the host that the application domain has been created by setting the value of the `pUnkAppDomainManager` parameter.</span></span>  
   
- <span data-ttu-id="5ed56-129">구현에는 `SetAppDomainManager` 메서드, 호스트 설정할 수 있습니다 어셈블리 이름 및 형식을 응용 프로그램 도메인 관리자에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-129">In its implementation of the `SetAppDomainManager` method, the host can set the assembly name and type for the application domain manager.</span></span>  
+ <span data-ttu-id="5cdf0-129">구현에는 `SetAppDomainManager` 메서드를 호스트 수 설정 된 어셈블리 이름 및 형식을 응용 프로그램 도메인 관리자에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-129">In its implementation of the `SetAppDomainManager` method, the host can set the assembly name and type for the application domain manager.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="5ed56-130">요구 사항</span><span class="sxs-lookup"><span data-stu-id="5ed56-130">Requirements</span></span>  
- <span data-ttu-id="5ed56-131">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="5ed56-131">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="5cdf0-130">요구 사항</span><span class="sxs-lookup"><span data-stu-id="5cdf0-130">Requirements</span></span>  
+ <span data-ttu-id="5cdf0-131">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="5cdf0-131">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="5ed56-132">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="5ed56-132">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="5cdf0-132">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="5cdf0-132">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="5ed56-133">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="5ed56-133">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="5cdf0-133">**라이브러리:** MSCorEE.dll에 리소스로 포함</span><span class="sxs-lookup"><span data-stu-id="5cdf0-133">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="5ed56-134">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5ed56-134">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="5cdf0-134">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5cdf0-134">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5ed56-135">참고 항목</span><span class="sxs-lookup"><span data-stu-id="5ed56-135">See Also</span></span>  
- <xref:System.AppDomain>  
- <xref:System.AppDomainManager>  
- [<span data-ttu-id="5ed56-136">IHostControl 인터페이스</span><span class="sxs-lookup"><span data-stu-id="5ed56-136">IHostControl Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## <a name="see-also"></a><span data-ttu-id="5cdf0-135">참고자료</span><span class="sxs-lookup"><span data-stu-id="5cdf0-135">See also</span></span>
+- <xref:System.AppDomain>
+- <xref:System.AppDomainManager>
+- [<span data-ttu-id="5cdf0-136">IHostControl 인터페이스</span><span class="sxs-lookup"><span data-stu-id="5cdf0-136">IHostControl Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
