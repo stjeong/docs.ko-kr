@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: f2f7f6c1c03a96af0c114033aee2063e0c991401
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: e436a9505ea9ae770a748da244dd21ce63ad3464
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840819"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736983"
 ---
 # <a name="implementing-the-ui-automation-window-control-pattern"></a>UI 자동화 Window 컨트롤 패턴 구현
 > [!NOTE]
@@ -21,7 +21,7 @@ ms.locfileid: "48840819"
   
  이 항목에서는 <xref:System.Windows.Automation.Provider.IWindowProvider>속성, 메서드 및 이벤트에 대한 정보를 포함하여 <xref:System.Windows.Automation.WindowPattern> 를 구현하기 위한 지침 및 규칙을 제공합니다. 추가 참조에 대한 링크는 항목 끝에 나열되어 있습니다.  
   
- <xref:System.Windows.Automation.WindowPattern> 컨트롤 패턴은 기존의 [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)]내에서 창을 기반으로 하는 기본적인 기능을 제공하는 컨트롤을 제공하는 데 사용됩니다. 이 컨트롤 패턴을 구현해야 하는 컨트롤의 예로는 최상위 응용 프로그램 창, [!INCLUDE[TLA#tla_mdi](../../../includes/tlasharptla-mdi-md.md)] 자식 창, 컨트롤 크기 조정 가능한 분할 창 컨트롤, 모달 대화 상자 및 풍선 도움말 창이 있습니다.  
+ <xref:System.Windows.Automation.WindowPattern> 컨트롤 패턴은 기존의 [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)]내에서 창을 기반으로 하는 기본적인 기능을 제공하는 컨트롤을 제공하는 데 사용됩니다. 이 컨트롤 패턴을 구현해야 하는 컨트롤의 예로는 최상위 애플리케이션 창, [!INCLUDE[TLA#tla_mdi](../../../includes/tlasharptla-mdi-md.md)] 자식 창, 컨트롤 크기 조정 가능한 분할 창 컨트롤, 모달 대화 상자 및 풍선 도움말 창이 있습니다.  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>   
 ## <a name="implementation-guidelines-and-conventions"></a>구현 지침 및 규칙  
@@ -35,7 +35,7 @@ ms.locfileid: "48840819"
   
 -   창과 같이 닫기 단추를 제공하는 풍선 도움말 창은 기본적인 도구 설명 팝업과는 구별됩니다.  
   
--   전체 화면 모드는 응용 프로그램에서 기능별로 다르며 일반적인 창 동작이 아니므로 IWindowProvider에서 지원되지 않습니다.  
+-   전체 화면 모드는 애플리케이션에서 기능별로 다르며 일반적인 창 동작이 아니므로 IWindowProvider에서 지원되지 않습니다.  
   
 <a name="Required_Members_for_IWindowProvider"></a>   
 ## <a name="required-members-for-iwindowprovider"></a>IWindowProvider에 필요한 멤버  
@@ -54,7 +54,7 @@ ms.locfileid: "48840819"
 |<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A>|메서드|없음|  
 |<xref:System.Windows.Automation.WindowPattern.WindowClosedEvent>|이벤트(event)|없음|  
 |<xref:System.Windows.Automation.WindowPattern.WindowOpenedEvent>|이벤트(event)|없음|  
-|<xref:System.Windows.Automation.WindowInteractionState>|이벤트(event)|<xref:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction>|  
+|<xref:System.Windows.Automation.WindowInteractionState>|이벤트(event)| <xref:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction>|  
   
 <a name="Exceptions"></a>   
 ## <a name="exceptions"></a>예외  
@@ -65,9 +65,9 @@ ms.locfileid: "48840819"
 |<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState%2A><br /><br /> -컨트롤을 요청 된 동작을 지원 하지 않습니다.|  
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A><br /><br /> -매개 변수가 유효한 숫자가 아닙니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)

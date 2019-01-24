@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e4e4b9d9c7481bdc51aaf75b26b3805940875f8d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d34aa954126cc26519aaea963f99299e5557d2c8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33442308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743054"
 ---
 # <a name="coreventattr-enumeration"></a>CorEventAttr 열거형
 이벤트의 메타데이터를 설명하는 값을 포함합니다.  
@@ -43,16 +43,16 @@ typedef enum CorEventAttr {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`evSpecialName`|이벤트, 특별 한 이며 해당 이름을 설명 하 고 있음을 지정 방법입니다.|  
+|`evSpecialName`|이벤트는 특별 하 고 이름과 설명 하는지 지정 하는 방법입니다.|  
 |`evReservedMask`|공용 언어 런타임에서 내부 용도로 예약 되어 있습니다.|  
-|`evRTSpecialName`|공용 언어 런타임에서 이벤트 이름을 인코딩을 확인 하도록 지정 합니다.|  
+|`evRTSpecialName`|공용 언어 런타임 이벤트 이름 인코딩을 확인 하도록 지정 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorHdr.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터 열거형](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - WCF Data Services, getting started
 ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
-ms.openlocfilehash: 092f073a138a09fc25b96fbddde5b73992056981
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: db802e127cacec2243741310b8a885c7ffcd24e8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736996"
 ---
 # <a name="using-a-data-service-in-a-client-application-wcf-data-services"></a>클라이언트 응용 프로그램에서 데이터 서비스 사용(WCF Data Services)
 노출 하는 서비스에 액세스할 수 있습니다는 [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 웹 브라우저에 URI를 제공 하 여 피드 합니다. URI는 리소스의 주소를 제공하고 요청 메시지는 해당 리소스가 나타내는 기본 데이터에 액세스하거나 변경하기 위해 이러한 주소로 전송됩니다. 브라우저는 HTTP GET 명령을 실행하고 요청된 리소스를 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 피드로 반환합니다. 자세한 내용은 [웹 브라우저에서 서비스 액세스](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)합니다.  
@@ -31,18 +31,18 @@ ms.locfileid: "44087785"
   
 -   **HTTP PUT** -기존 엔터티 데이터를 요청된 된 리소스에서 요청 메시지의 페이로드에 제공 되는 새 데이터로 바꿉니다.  
   
--   **HTTP MERGE** -삭제 엔터티 데이터를 변경 하기 위해 데이터 소스에서 삽입 후 실행은 비효율적 이기 때문 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 새 HTTP MERGE 작업이 추가 되었습니다. 요청 메시지의 페이로드에는 주소가 지정된 엔터티 리소스에서 변경되어야 하는 속성이 포함되어 있습니다. HTTP MERGE는 HTTP 사양에 정의되어 있지 않으므로 비[!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 인식 서버를 통해 HTTP MERGE 요청을 라우트하려면 추가 처리가 필요할 수 있습니다.  
+-   **HTTP MERGE** -삭제 엔터티 데이터를 변경 하기 위해 데이터 소스에서 삽입 후 실행은 비효율적 이기 때문 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 새 HTTP MERGE 작업이 추가 되었습니다. 요청 메시지의 페이로드에는 주소가 지정된 엔터티 리소스에서 변경되어야 하는 속성이 포함되어 있습니다. HTTP 병합은 HTTP 사양에 정의되어 있지 않으므로 비[!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 인식 서버를 통해 HTTP 병합 요청을 라우트하려면 추가 처리가 필요할 수 있습니다.  
   
- 자세한 내용은 [OData: Operations](https://go.microsoft.com/fwlink/?LinkId=185792)합니다.  
+ 자세한 내용은 참조 하세요. [OData: 작업](https://go.microsoft.com/fwlink/?LinkId=185792)합니다.  
   
 ### <a name="payload-formats"></a>페이로드 형식  
  HTTP PUT, HTTP POST 또는 HTTP MERGE 요청의 경우 요청 메시지의 페이로드에 데이터 서비스로 보내는 엔터티 데이터가 포함되어 있습니다. 페이로드의 내용은 메시지의 데이터 형식에 따라 달라집니다. DELETE를 제외한 모든 작업에 대한 HTTP 응답에도 이러한 페이로드가 들어 있습니다. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 액세스 및 서비스를 사용 하 여 데이터 변경을 위해 다음 페이로드 형식을 지원 합니다.  
   
--   **Atom** -에서 정의 된 XML 기반 메시지 인코딩으로 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 웹 피드, 팟캐스트, wiki에 대 한 HTTP를 통해 데이터를 교환할 수 있도록 Atom Publishing Protocol (AtomPub) 및 XML 기반 인터넷 기능에 대 한 확장으로 합니다. 자세한 내용은 [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkId=185794)합니다.  
+-   **Atom** -에서 정의 된 XML 기반 메시지 인코딩으로 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 웹 피드, 팟캐스트, wiki에 대 한 HTTP를 통해 데이터를 교환할 수 있도록 Atom Publishing Protocol (AtomPub) 및 XML 기반 인터넷 기능에 대 한 확장으로 합니다. 자세한 내용은 참조 하세요. [OData: Atom 형식](https://go.microsoft.com/fwlink/?LinkId=185794)합니다.  
   
--   **JSON** -개체 JSON (JavaScript Notation)은 JavaScript 프로그래밍 언어의 하위 집합을 기반으로 하는 경량 데이터 교환 형식입니다. 자세한 내용은 [OData: JSON 형식으로](https://go.microsoft.com/fwlink/?LinkId=185795)입니다.  
+-   **JSON** -개체 JSON (JavaScript Notation)은 JavaScript 프로그래밍 언어의 하위 집합을 기반으로 하는 경량 데이터 교환 형식입니다. 자세한 내용은 참조 하세요. [OData: JSON 형식으로](https://go.microsoft.com/fwlink/?LinkId=185795)입니다.  
   
- 페이로드의 메시지 형식은 HTTP 요청 메시지의 헤더에서 요청됩니다. 자세한 내용은 [OData: Operations](https://go.microsoft.com/fwlink/?LinkID=185792)합니다.  
+ 페이로드의 메시지 형식은 HTTP 요청 메시지의 헤더에서 요청됩니다. 자세한 내용은 참조 하세요. [OData: 작업](https://go.microsoft.com/fwlink/?LinkID=185792)합니다.  
   
 ## <a name="accessing-and-changing-data-using-client-libraries"></a>클라이언트 라이브러리를 사용하여 데이터 액세스 및 변경  
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 보다 쉽게 사용할 수 있도록 하는 클라이언트 라이브러리가 포함 되어 있습니다를 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] .NET Framework 및 Silverlight 기반 클라이언트 응용 프로그램에서 피드 합니다. 이러한 라이브러리는 HTTP 메시지를 보내고 받는 작업을 단순화합니다. 또한 엔터티 데이터를 나타내는 CLR 개체로 메시지 페이로드를 변환합니다. 클라이언트 라이브러리는 두 가지 핵심 클래스인 <xref:System.Data.Services.Client.DataServiceContext> 및 <xref:System.Data.Services.Client.DataServiceQuery%601>를 제공합니다. 이러한 클래스를 사용하면 데이터 서비스를 쿼리한 다음 반환된 엔터티 데이터를 CLR 개체로 사용하여 작업할 수 있습니다. 자세한 내용은 [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md) 하 고 [WCF Data Services (Silverlight)](https://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)합니다.  
@@ -51,6 +51,6 @@ ms.locfileid: "44087785"
   
  프로그래밍 라이브러리를 사용 하는 데 사용할 수 있는 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 다른 종류의 클라이언트 응용 프로그램에서 피드 합니다. 자세한 내용은 참조는 [OData SDK](https://go.microsoft.com/fwlink/?LinkId=185796)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 서비스 리소스에 액세스](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)  
- [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+## <a name="see-also"></a>참고자료
+- [데이터 서비스 리소스에 액세스](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)
+- [빠른 시작](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

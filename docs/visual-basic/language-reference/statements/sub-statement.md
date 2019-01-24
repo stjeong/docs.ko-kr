@@ -29,12 +29,12 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], Sub statements
 - Visual Basic code, Sub procedures
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-ms.openlocfilehash: 7baa4e25bc876ebfbe03c316b2020e01aedbc88d
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: e7015474a0617b76ca537d2e84e8d7bfc72b6e12
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42924497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54737665"
 ---
 # <a name="sub-statement-visual-basic"></a>Sub 문(Visual Basic)
 선언 하 고 이름, 매개 변수를 정의 하는 코드는 `Sub` 프로시저입니다.  
@@ -76,7 +76,7 @@ End Sub
 
     - [Private Protected](../../language-reference/modifiers/private-protected.md)
   
-     참조 [액세스 수준을 Visual Basic의](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.  
+     [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.  
   
 -   `proceduremodifiers`  
   
@@ -110,7 +110,7 @@ End Sub
   
 -   `name`  
   
-     필수. 프로시저의 이름입니다. 참조 [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다. 생성자를 클래스에 대 한 프로시저를 만들려면의 이름을 설정를 `Sub` 하는 절차는 `New` 키워드입니다. 자세한 내용은 [개체 수명: 개체가 만들어지고 소멸 되는 하는 방법을](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)합니다.  
+     필수 요소. 프로시저의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요. 생성자를 클래스에 대 한 프로시저를 만들려면의 이름을 설정를 `Sub` 하는 절차는 `New` 키워드입니다. 자세한 내용은 참조 하세요. [개체 수명: 개체가 만들어지고 제거 하는 방법을](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)합니다.  
   
 -   `typeparamlist`  
   
@@ -136,8 +136,8 @@ End Sub
   
     |파트|설명|  
     |---|---|  
-    |`interface`|필수. 이 프로시저에 의해 구현 된 인터페이스의 이름을 클래스 또는 구조체를 포함 합니다.|  
-    |`definedname`|필수. 프로시저가 `interface`에 정의되는 이름입니다.|  
+    |`interface`|필수 요소. 이 프로시저에 의해 구현 된 인터페이스의 이름을 클래스 또는 구조체를 포함 합니다.|  
+    |`definedname`|필수 요소. 프로시저가 `interface`에 정의되는 이름입니다.|  
   
 -   `Handles`  
   
@@ -155,8 +155,8 @@ End Sub
   
     |파트|설명|  
     |---|---|  
-    |`eventvariable`|필수. 클래스 또는 구조의 이벤트를 발생 시키는 데이터 형식으로 선언 하는 개체 변수입니다.|  
-    |`event`|필수. 이 프로시저에서 처리 하는 이벤트의 이름입니다.|  
+    |`eventvariable`|필수 요소. 클래스 또는 구조의 이벤트를 발생 시키는 데이터 형식으로 선언 하는 개체 변수입니다.|  
+    |`event`|필수 요소. 이 프로시저에서 처리 하는 이벤트의 이름입니다.|  
   
 -   `statements`  
   
@@ -214,26 +214,26 @@ End Sub
   
  에 대 한 자세한 내용은 `Async` 절차를 참조 하세요 [Async 및 Await를 사용한 비동기 프로그래밍](../../../visual-basic/programming-guide/concepts/async/index.md)합니다 [비동기 프로그램의 제어 흐름](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), 및 [비동기 반환 형식](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 합니다 `Sub` 을 이름, 매개 변수 및 코드의 본문을 형성 하는 정의 `Sub` 프로시저입니다.  
   
  [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
   
-## <a name="example"></a>예  
- 다음 예에서 `DelayAsync` 되는 `Async` `Function` 반환 형식이 있는 <xref:System.Threading.Tasks.Task%601>합니다. `DelayAsync`에는 정수를 반환하는 `Return` 문이 포함됩니다. 따라서 함수 선언의 `DelayAsync` 의 반환 형식이 있어야 합니다. `Task(Of Integer)`합니다. 반환 형식 이므로 `Task(Of Integer)`를 평가 합니다 `Await` 식 `DoSomethingAsync` 문에 다음과 같이 정수가 생성: `Dim result As Integer = Await delayTask`합니다.  
+## <a name="example"></a>예제  
+ 다음 예에서 `DelayAsync` 되는 `Async` `Function` 반환 형식이 있는 <xref:System.Threading.Tasks.Task%601>합니다. `DelayAsync` 에는 정수를 반환하는 `Return` 문이 포함됩니다. 따라서 함수 선언의 `DelayAsync` 의 반환 형식이 있어야 합니다. `Task(Of Integer)`합니다. 반환 형식 이므로 `Task(Of Integer)`를 평가 합니다 `Await` 식 `DoSomethingAsync` 문에 다음과 같이 정수가 생성: `Dim result As Integer = Await delayTask`합니다.  
   
  `startButton_Click` 절차는의 예는 `Async Sub` 프로시저입니다. 때문에 `DoSomethingAsync` 되는 `Async` 함수에 대 한 호출에 대 한 작업 `DoSomethingAsync` 다음 문 에서처럼 대기 해야 합니다: `Await DoSomethingAsync()`합니다. 합니다 `startButton_Click` `Sub` 프로시저를 사용 하 여 정의 되어야 합니다는 `Async` 한정자 있기 때문에 `Await` 식입니다.  
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Implements 문](implements-statement.md)  
- [Function 문](function-statement.md)  
- [매개 변수 목록](parameter-list.md)  
- [Dim 문](dim-statement.md)  
- [Call 문](call-statement.md)  
- [Of](of-clause.md)  
- [매개 변수 배열](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
- [방법: 제네릭 클래스 사용](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [프로시저 문제 해결](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
- [부분 메서드](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+## <a name="see-also"></a>참고자료
+- [Implements 문](implements-statement.md)
+- [Function 문](function-statement.md)
+- [매개 변수 목록](parameter-list.md)
+- [Dim 문](dim-statement.md)
+- [Call 문](call-statement.md)
+- [Of](of-clause.md)
+- [매개 변수 배열](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
+- [방법: 제네릭 클래스 사용](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [프로시저 문제 해결](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [부분 메서드](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

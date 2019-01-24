@@ -15,15 +15,15 @@ helpviewer_keywords:
 - scaled text [WPF]
 - typography [WPF], skewed text
 ms.assetid: 0d61678a-4185-4f2a-85c6-c1d020f96fa0
-ms.openlocfilehash: 531537013ab3bbfba278ca63e14155341eefc826
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7737a2e01ddfe2a639426bbced643d8f78961207
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33544924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740546"
 ---
 # <a name="how-to-apply-transforms-to-text"></a>방법: 텍스트에 변환 적용
-변환을 통해 응용 프로그램에서 텍스트 표시를 변경할 수 있습니다. 다음 예에서는 다양 한 유형의 렌더링 변환의 텍스트 표시에 영향을 사용 하 여 한 <xref:System.Windows.Controls.TextBlock> 제어 합니다.  
+변환을 통해 애플리케이션에서 텍스트 표시를 변경할 수 있습니다. 다음 예제에서 텍스트 표시에 영향을 줄 다른 형식의 렌더링 변환 사용을 <xref:System.Windows.Controls.TextBlock> 제어 합니다.  
   
 ## <a name="example"></a>예제  
  다음 예에서는 2차원 x-y 평면에서 지정된 점을 기준으로 회전하는 텍스트를 보여줍니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "33544924"
  ![RotateTransform을 사용 하 여 회전 된 텍스트](../../../../docs/framework/wpf/advanced/media/transformedtext01.jpg "TransformedText01")  
 90도 회전된 텍스트 예  
   
- 다음 코드 예제에서는 한 <xref:System.Windows.Media.RotateTransform> 텍스트 회전 합니다. <xref:System.Windows.Media.RotateTransform.Angle%2A> 값이 90 요소를 시계 반대 방향으로 90도 회전 합니다.  
+ 다음 코드 예제에서는 한 <xref:System.Windows.Media.RotateTransform> 텍스트를 회전 합니다. <xref:System.Windows.Media.RotateTransform.Angle%2A> 값이 90 요소를 시계 방향으로 90도 회전 합니다.  
   
  [!code-xaml[TextTransformSample#TextTransformSample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextTransformSample/CS/Window1.xaml#texttransformsample1)]  
   
@@ -40,7 +40,7 @@ ms.locfileid: "33544924"
  ![ScaleTransform을 사용 하 여 배율 조정 된 텍스트](../../../../docs/framework/wpf/advanced/media/transformedtext02.jpg "TransformedText02")  
 배율 조정된 텍스트의 예  
   
- 다음 코드 예제에서는 한 <xref:System.Windows.Media.ScaleTransform> 원래 크기에서 텍스트 크기 조정 합니다.  
+ 다음 코드 예제에서는 <xref:System.Windows.Media.ScaleTransform> 를 원래 크기의 텍스트를 확장 합니다.  
   
  [!code-xaml[TextTransformSample#TextTransformSample2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextTransformSample/CS/Window1.xaml#texttransformsample2)]  
   
@@ -52,21 +52,21 @@ ms.locfileid: "33544924"
  ![SkewTransform을 사용 하 여 기울인 텍스트](../../../../docs/framework/wpf/advanced/media/transformedtext03.jpg "TransformedText03")  
 기울어진 텍스트의 예  
   
- 다음 코드 예제에서는 한 <xref:System.Windows.Media.SkewTransform> 를 텍스트를 기울입니다. 전단이라고도 하는 기울이기는 일관되지 않은 방식으로 좌표 공간을 늘리는 변환입니다. 이 예에서 두 텍스트 문자열은 x축을 따라 -30°와 30°를 기울입니다.  
+ 다음 코드 예제에서는 한 <xref:System.Windows.Media.SkewTransform> 텍스트입니다. 전단이라고도 하는 기울이기는 일관되지 않은 방식으로 좌표 공간을 늘리는 변환입니다. 이 예에서 두 텍스트 문자열은 x축을 따라 -30°와 30°를 기울입니다.  
   
  [!code-xaml[TextTransformSample#TextTransformSample3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextTransformSample/CS/Window1.xaml#texttransformsample3)]  
   
  다음 예에서는 x축과 y축을 따라 변환 또는 이동되는 텍스트를 보여줍니다.  
   
- ![Translatetransform을 사용한 텍스트 오프셋](../../../../docs/framework/wpf/advanced/media/transformedtext04.jpg "TransformedText04")  
+ ![TranslateTransform을 사용한 텍스트 오프셋](../../../../docs/framework/wpf/advanced/media/transformedtext04.jpg "TransformedText04")  
 변환된 텍스트의 예  
   
- 다음 코드 예제에서는 한 <xref:System.Windows.Media.TranslateTransform> 텍스트 오프셋 합니다. 이 예제에서 기본 텍스트 아래에 있는 약간 오프셋된 텍스트 복사본이 그림자 효과를 만듭니다.  
+ 다음 코드 예제에서는 한 <xref:System.Windows.Media.TranslateTransform> 텍스트를 오프셋 합니다. 이 예제에서 기본 텍스트 아래에 있는 약간 오프셋된 텍스트 복사본이 그림자 효과를 만듭니다.  
   
  [!code-xaml[TextTransformSample#TextTransformSample4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextTransformSample/CS/Window1.xaml#texttransformsample4)]  
   
 > [!NOTE]
->  <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> 그림자 효과 제공 하는 것에 대 한 다양 한 기능을 제공 합니다. 자세한 내용은 참조 [만들 텍스트 그림자가 적용 된](../../../../docs/framework/wpf/advanced/how-to-create-text-with-a-shadow.md)합니다.  
+>  <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> 그림자 효과 제공 하기 위한 다양 한 기능을 제공 합니다. 자세한 내용은 [그림자가 적용 된 텍스트 만들기](../../../../docs/framework/wpf/advanced/how-to-create-text-with-a-shadow.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [텍스트에 애니메이션 적용](../../../../docs/framework/wpf/advanced/how-to-apply-animations-to-text.md)
+## <a name="see-also"></a>참고자료
+- [텍스트에 애니메이션 적용](../../../../docs/framework/wpf/advanced/how-to-apply-animations-to-text.md)

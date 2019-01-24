@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: bf5113ee873b05490a0e20ffc09bf10def3d39d2
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 05937b946efe134942f49191f577e62fc17ec066
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54738419"
 ---
 # <a name="implementing-the-ui-automation-selectionitem-control-pattern"></a>UI 자동화 SelectionItem 컨트롤 패턴 구현
 > [!NOTE]
@@ -48,13 +48,13 @@ ms.locfileid: "47195955"
   
 |예외 형식|조건|  
 |--------------------|---------------|  
-|<xref:System.InvalidOperationException>|다음 중 하나가 시도되는 경우:<br /><br /> -   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> 단일 선택 컨테이너에 호출 되는 <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty>  =  `true` 요소가 이미 선택 됩니다.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> 이 <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` 이고 요소가 하나만 선택된 다중 선택 컨테이너에 호출되는 경우.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> 이 <xref:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty> = `false` 이고 다른 요소가 이미 선택된 단일 선택 컨테이너에 호출되는 경우.|  
+|<xref:System.InvalidOperationException>|다음 중 하나가 시도되는 경우:<br /><br /> -   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> 이 <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` 이고 요소가 이미 선택되어 있는 단일 선택 컨테이너에 호출되는 경우.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> 이 <xref:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty> = `true` 이고 요소가 하나만 선택된 다중 선택 컨테이너에 호출되는 경우.<br />-   <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> 이 <xref:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty> = `false` 이고 다른 요소가 이미 선택된 단일 선택 컨테이너에 호출되는 경우.|  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [UI 자동화 Selection 컨트롤 패턴 구현](../../../docs/framework/ui-automation/implementing-the-ui-automation-selection-control-pattern.md)  
- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [조각 공급자 샘플](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI 자동화 공급자의 컨트롤 패턴 지원](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [클라이언트용 UI 자동화 컨트롤 패턴](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI 자동화 Selection 컨트롤 패턴 구현](../../../docs/framework/ui-automation/implementing-the-ui-automation-selection-control-pattern.md)
+- [UI 자동화 트리 개요](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [UI 자동화의 캐싱 사용](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [조각 공급자 샘플](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)

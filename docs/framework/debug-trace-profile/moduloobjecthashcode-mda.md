@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: b45366ff-2a7a-4b8e-ab01-537b72e9de68
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: e3c51dcb5e19f5fac5485a317d1d26884106cf51
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0a53f433d1b6caca98b2b0d564774820239320f3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54739669"
 ---
 # <a name="moduloobjecthashcode-mda"></a>moduloObjectHashcode MDA
 `moduloObjectHashcode` MDA(관리 디버깅 도우미)가 <xref:System.Object> 클래스의 동작을 변경하여 <xref:System.Object.GetHashCode%2A> 메서드에서 반환한 해시 코드에서 모듈로 작업을 수행합니다. 이 MDA의 기본 모듈러스는 1이므로, <xref:System.Object.GetHashCode%2A>에서 모든 개체에 대해 0을 반환합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "33392946"
  해시 테이블에 있는 값 또는 키의 열거형 순서에 대한 종속성을 만들지 마세요.  
   
 ## <a name="effect-on-the-runtime"></a>런타임에 대한 영향  
- 이 MDA를 사용하면 응용 프로그램이 더 느리게 실행됩니다. 이 MDA에서는 반환된 해시 코드를 사용한 다음 모듈러스를 통해 나누는 경우 나머지를 대신 반환합니다.  
+ 이 MDA를 사용하면 애플리케이션이 더 느리게 실행됩니다. 이 MDA에서는 반환된 해시 코드를 사용한 다음 모듈러스를 통해 나누는 경우 나머지를 대신 반환합니다.  
   
 ## <a name="output"></a>출력  
  이 MDA에 대한 출력이 없습니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "33392946"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>  
- <xref:System.Object.Equals%2A?displayProperty=nameWithType>  
- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.Object.Equals%2A?displayProperty=nameWithType>
+- [관리 디버깅 도우미를 사용하여 오류 진단](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

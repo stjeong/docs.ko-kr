@@ -8,12 +8,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], embedded expressions
 - XML literals [Visual Basic], embedded expressions
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
-ms.openlocfilehash: f99735df2512fd4b1477bab9126e18f5afbbfa8c
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: c02b6ea0895d8b22ac71d0cb3ea6950861de47df
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42932931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54678761"
 ---
 # <a name="embedded-expressions-in-xml-visual-basic"></a>XML의 포함 식(Visual Basic)
 포함 식을 통해 식을 런타임에 계산 되는 식을 포함 하는 XML 리터럴을 만들 수 있습니다. 포함된 식에 대 한 구문은 `<%=` `expression` `%>`는 동일한 구문을 사용 하는 대로 [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)]입니다.  
@@ -80,10 +80,10 @@ ms.locfileid: "42932931"
 > [!NOTE]
 >  XML 네임 스페이스 접두사를 사용 하 여 선언 되는 경우는 `xmlns` 네임 스페이스 특성을 특성 값을 상수 문자열 이어야 합니다. 이런 점에서 사용 하 여는 `xmlns` 사용과 같은 특성은는 `Imports` XML 네임 스페이스를 선언 하는 문입니다. XML 네임 스페이스 값을 지정 하려면 포함 된 식을 사용할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [XML 문서 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
- [XML 요소 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Imports 문(.NET 네임스페이스 및 형식)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [XML 리터럴 개요](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-overview.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic에서 XML 만들기](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML 문서 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+- [XML 요소 리터럴](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [Option Strict 문](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Imports 문(.NET 네임스페이스 및 형식)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [XML 리터럴 개요](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-overview.md)

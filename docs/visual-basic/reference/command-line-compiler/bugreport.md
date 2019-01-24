@@ -6,12 +6,12 @@ helpviewer_keywords:
 - bugreport compiler option [Visual Basic]
 - /bugreport compiler option [Visual Basic]
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
-ms.openlocfilehash: e8366e1050217f3d993d510683252728aba0c3d9
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 7c393abe0e1ff9872de6bdf4d3bc3befa5cde0d5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43527353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54746184"
 ---
 # <a name="-bugreport"></a>-bugreport
 버그 보고서를 파일로 작성할 때는 사용할 수 있는 파일을 만듭니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "43527353"
   
 |용어|정의|  
 |---|---|  
-|`file`|필수. 버그 보고서를 포함 하는 파일의 이름입니다. 파일 이름을 따옴표로 묶습니다 ("") 이름에 공백이 있습니다.|  
+|`file`|필수 요소. 버그 보고서를 포함 하는 파일의 이름입니다. 파일 이름을 따옴표로 묶습니다 ("") 이름에 공백이 있습니다.|  
   
 ## <a name="remarks"></a>설명  
  다음 정보를 추가할 `file`:  
@@ -60,9 +60,9 @@ ms.locfileid: "43527353"
 vbc -bugreport:problem.txt t2.vb  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-디버그 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)  
- [-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [securityPolicy (ASP.NET 설정 스키마)에 대 한 trustLevel 요소](https://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-디버그 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)
+- [-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [securityPolicy (ASP.NET 설정 스키마)에 대 한 trustLevel 요소](https://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369)

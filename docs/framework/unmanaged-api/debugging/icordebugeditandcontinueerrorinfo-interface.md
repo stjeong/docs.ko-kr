@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0922a27dff8d7958d60b4cf225143a96f1a6c351
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: d50aa8a5cc98ff966cdd42061cbead22611becfe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33411754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680287"
 ---
 # <a name="icordebugeditandcontinueerrorinfo-interface"></a>ICorDebugEditAndContinueErrorInfo 인터페이스
 `ICorDebugEditAndContinueErrorInfo`는 사용되지 않습니다. 이 인터페이스를 사용하지 마세요.  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

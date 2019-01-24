@@ -7,12 +7,12 @@ helpviewer_keywords:
 - graphics [WPF], PathGeometry class
 - XAML [WPF], object element usage
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
-ms.openlocfilehash: d681cd15fa3daa3698edc5e0ad3d3c2669c1dfdf
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 03f9c4f8156c5f14ff127dd47c7ade6f6ee22e5e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45591934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671267"
 ---
 # <a name="path-markup-syntax"></a>경로 태그 구문
 그러나 경로에 대해서는 [에서 Shape 및 기본 그리기 개요 WPF](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md) 하며 [기 하 도형 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md),이 항목에서는 설명 세부 정보에서 경로 지정 하 여 강력 하 고 복잡 한 미니 언어 기 하 도형 보다 조밀 하 게 사용 하 여 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]입니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "45591934"
 ### <a name="a-note-about-white-space"></a>공백에 대한 참고 사항  
  간단히 말해서 이어지는 구문 섹션에는 단일 공백이 표시되지만 단일 공백이 표시되는 모든 위치에서 여러 개의 공백을 사용해도 됩니다.  
   
- 두 숫자 실제로 쉼표나 공백을 구분 없지만 이렇게 하면 결과 문자열이 모호 하지 않은 경우. 예를 들어 `2..3` 은 실제로: "2"을 선택 합니다. ".3"의 두 숫자입니다. 마찬가지로, `2-3` 은 "2"와 "-3". 명령 앞뒤에는 공백이 필요하지 않습니다.  
+ 두 숫자 실제로 쉼표나 공백을 구분 없지만 이렇게 하면 결과 문자열이 모호 하지 않은 경우. 예를 들어 `2..3` 은 실제로: "2." ".3"의 두 숫자입니다. 마찬가지로, `2-3` 은 "2"와 "-3". 명령 앞뒤에는 공백이 필요하지 않습니다.  
   
 ### <a name="syntax"></a>구문  
  합니다 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 사용 구문에 대 한 특성을 <xref:System.Windows.Media.StreamGeometry> 선택적으로 구성 됩니다 <xref:System.Windows.Media.FillRule> 값 및 하나 이상의 그림 설명 합니다.  
@@ -224,11 +224,11 @@ ms.locfileid: "45591934"
   
  과학적 표기법을 사용할 수도 있습니다. 예를 들어 `+1.e17` 은 유효한 값입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Shapes.Path>  
- <xref:System.Windows.Media.StreamGeometry>  
- <xref:System.Windows.Media.PathGeometry>  
- <xref:System.Windows.Media.PathFigureCollection>  
- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Shapes.Path>
+- <xref:System.Windows.Media.StreamGeometry>
+- <xref:System.Windows.Media.PathGeometry>
+- <xref:System.Windows.Media.PathFigureCollection>
+- [WPF에서 Shape 및 기본 그리기 개요](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Geometry 개요](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)

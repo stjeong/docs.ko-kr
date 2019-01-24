@@ -9,15 +9,15 @@ helpviewer_keywords:
 - content [WPF], ScrollViewer control
 - controls [WPF], ScrollViewer
 ms.assetid: 2163666e-04da-4036-841f-40947c9c034d
-ms.openlocfilehash: b5417632c50924200390d0ec01048d8df3d393ca
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 7e4bb04c3d339f01b97c09966e096ddd6de47fbe
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33556070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54671982"
 ---
 # <a name="scrollviewer"></a>ScrollViewer
-<xref:System.Windows.Controls.ScrollViewer> 컨트롤은 가로 또는 세로로 내용을 스크롤할 수에 스크롤 가능한 영역을 만듭니다.  
+<xref:System.Windows.Controls.ScrollViewer> 컨트롤 가로나 세로 방향으로 콘텐츠를 스크롤할 수 있는 여기서 스크롤 가능한 영역을 만듭니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [ScrollViewer 개요](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)  
@@ -28,6 +28,6 @@ ms.locfileid: "33556070"
   
  <xref:System.Windows.Controls.ScrollViewer>  
   
-## <a name="see-also"></a>참고 항목  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)
+## <a name="see-also"></a>참고자료
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [레이아웃](../../../../docs/framework/wpf/advanced/layout.md)

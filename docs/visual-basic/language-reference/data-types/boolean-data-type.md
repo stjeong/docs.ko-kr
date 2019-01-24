@@ -12,12 +12,12 @@ helpviewer_keywords:
 - True keyword [Visual Basic]
 - Boolean values [Visual Basic], True keyword
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
-ms.openlocfilehash: bbd914d8b4239bbae1de7031e68b2900cf5ad6a3
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 5e90d1dc5eb0beb3afd8fc69da32f89943e94c48
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54741914"
 ---
 # <a name="boolean-data-type-visual-basic"></a>Boolean 데이터 형식(Visual Basic)
 만 될 수 있는 값을 포함 `True` 또는 `False`합니다. 키워드 `True` 하 고 `False` 의 두 가지 상태에 해당 `Boolean` 변수입니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "43862385"
 ## <a name="remarks"></a>설명  
  사용 합니다 [Boolean 데이터 형식 (Visual Basic)](../../../visual-basic/language-reference/data-types/boolean-data-type.md) 예/아니요 또는 켜기/끄기 true/false와 같은 두 가지 상태 값을 포함 합니다.  
   
- `Boolean`의 기본값은 `False`입니다.  
+ `Boolean` 의 기본값은 `False`입니다.  
   
  `Boolean` 값은 숫자로 저장 되지 및 저장 된 값은 숫자에 해당 되지 않아야 합니다. 에 해당 하는 숫자 값을 사용 하는 코드를 작성 하지 말아야 `True` 고 `False`입니다. 사용을 제한 해야 가능 하면 `Boolean` 변수는 설계 하는 논리 값입니다.  
   
@@ -53,11 +53,11 @@ If scriptEngine = "VB" Then
 End If  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Boolean?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)  
- [데이터 형식 문제 해결](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [CType 함수](../../../visual-basic/language-reference/functions/ctype-function.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Boolean?displayProperty=nameWithType>
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [데이터 형식 문제 해결](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [CType 함수](../../../visual-basic/language-reference/functions/ctype-function.md)

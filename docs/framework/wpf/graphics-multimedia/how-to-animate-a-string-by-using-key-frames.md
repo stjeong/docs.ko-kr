@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [WPF], animating with key frames
 - key frames [WPF], animating strings with
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
-ms.openlocfilehash: 1b55afd5938073a326789e67b66fec9cfce12015
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 4cadc1e7e4b7ee70e3a71ddaf433327a7561125d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45596197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54670836"
 ---
 # <a name="how-to-animate-a-string-by-using-key-frames"></a>방법: 키 프레임을 사용하여 문자열에 애니메이션 효과 주기
 이 예제는 문자열에 애니메이션을 적용 하는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.ContentControl.Content%2A> 의 속성을 <xref:System.Windows.Controls.Button> 키 프레임을 사용 하 여 컨트롤을 합니다.  
@@ -25,10 +25,10 @@ ms.locfileid: "45596197"
   
  전체 샘플을 보려면 [키 프레임 애니메이션 샘플](https://go.microsoft.com/fwlink/?LinkID=160012)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames>  
- <xref:System.Windows.Controls.ContentControl.Content%2A>  
- <xref:System.Windows.Controls.Button>  
- <xref:System.Windows.Media.Animation.DiscreteStringKeyFrame>  
- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames>
+- <xref:System.Windows.Controls.ContentControl.Content%2A>
+- <xref:System.Windows.Controls.Button>
+- <xref:System.Windows.Media.Animation.DiscreteStringKeyFrame>
+- [키 프레임 애니메이션 개요](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [키 프레임 방법 항목](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

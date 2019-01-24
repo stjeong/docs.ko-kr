@@ -2,20 +2,20 @@
 title: '&lt;netTcpBinding&gt;의 &lt;message&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
-ms.openlocfilehash: 7af8cd9d36b56093eee2b53873c0fe0775a33430
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 018cd6797b730bc5469cc68dd23fcf8315716588
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54146162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54677395"
 ---
 # <a name="ltmessagegt-element-of-ltnettcpbindinggt"></a>&lt;netTcpBinding&gt;의 &lt;message&gt; 요소
 구성 된 끝점에 대 한 메시지 수준 보안 요구 사항 형식을 정의 합니다 [ \<netTcpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<netTcpBinding>  
-\<바인딩 >  
+\<binding>  
 \<security>  
 \<message>  
   
@@ -79,13 +79,13 @@ ms.locfileid: "54146162"
 ## <a name="remarks"></a>설명  
  Message는 SOAP 메시지 무결성 및 기밀성과 통신 피어의 상호 인증을 위해 메시지 수준 보안을 사용합니다. 바인딩에서 이 보안 모드를 선택하면 채널 스택이 메시지 보안 바인딩 요소로 구성되고 SOAP 메시지가 WS-Security* 표준에 따라 보안됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.MessageSecurityOverTcp>  
- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.NetTcpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.MessageSecurityOverTcp>
+- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.NetTcpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

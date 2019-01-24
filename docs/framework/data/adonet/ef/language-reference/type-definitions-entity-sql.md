@@ -2,18 +2,18 @@
 title: 형식 정의(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e
-ms.openlocfilehash: 7abbe5dfed005a10955a385cadf12725a9450512
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 7ac27c3dd43cb83272bff991dbd713e8269ccbb5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32761157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54743532"
 ---
 # <a name="type-definitions-entity-sql"></a>형식 정의(Entity SQL)
 형식 정의는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 인라인 함수의 선언문에 사용됩니다.  
   
 ## <a name="remarks"></a>설명  
- 인라인 함수의 선언문 이루어져는 [함수](../../../../../../docs/framework/data/adonet/ef/language-reference/function-entity-sql.md) 키워드 다음에 괄호 (의 매개 변수 정의 목록 다음에 함수 이름 (예: "MyAvg")를 나타내는 식별자입니다. 예제에서는 "Collection(Decimal)") 했어야 합니다.  
+ 인라인 함수에 대 한 선언문 구성 합니다 [함수](../../../../../../docs/framework/data/adonet/ef/language-reference/function-entity-sql.md) 키워드 뒤에 매개 변수 정의 목록 (괄호로 뒤에 함수 이름 (예: "MyAvg")를 나타내는 식별자 예: "dues Collection(Decimal)") 합니다.  
   
  매개 변수 정의 목록은 0개 이상의 매개 변수 정의로 구성됩니다. 각 매개 변수 정의는 식별자("dues"와 같은 함수에 대한 매개 변수 이름)와 뒤에 오는 형식 정의(예: "Collection(Decimal)")로 구성됩니다.  
   
@@ -23,7 +23,7 @@ ms.locfileid: "32761157"
   
 -   `COLLECTION` 키워드와 뒤에 오는 괄호로 묶은 다른 형식 정의(예: "Collection(AdventureWorks.Order)")  
   
--   ROW 키워드와 뒤에 오는 괄호로 묶은 속성 정의 목록(예: "Row(x AdventureWorks.Order)"). 속성 정의 형식이 같은 "`identifier type_definition`, `identifier type_definition`,...".  
+-   ROW 키워드와 뒤에 오는 괄호로 묶은 속성 정의 목록(예: "Row(x AdventureWorks.Order)"). 속성 정의 같은 형식이 "`identifier type_definition`, `identifier type_definition`,..."입니다.  
   
 -   REF 키워드와 뒤에 오는 괄호로 묶은 식별자 형식(예: "Ref(AdventureWorks.Order)"). REF 형식 정의 연산자의 경우 엔터티 형식을 인수로 사용해야 합니다. 기본 형식을 인수로 지정할 수 없습니다.  
   
@@ -86,6 +86,6 @@ Function UnReference(p1 Ref(AdventureWorks.Order)) AS (
 select Ref(x) from AdventureWorksEntities.SalesOrderHeaders as x  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## <a name="see-also"></a>참고자료
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f2a4eb444967390492be33b25866de8a93a1698c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e5a2588023309867694f344041f62be53cab9c37
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590122"
 ---
 # <a name="writepropertyvalue-function"></a>WritePropertyValue 함수
 지정된 수의 바이트를 속성 핸들로 식별되는 속성에 씁니다.
@@ -63,8 +63,8 @@ HRESULT WritePropertyValue (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
-|`WBEM_E_TYPE_MISMATCH` | 0x80041005가 나타나는 경우 | 형식 불일치가 발생 했습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
+|`WBEM_E_TYPE_MISMATCH` | 0x80041005 | 형식이 맞지 않는 경우 |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -76,11 +76,11 @@ HRESULT WritePropertyValue (
 문자열이 아닌 속성 값에 대 한 `lNumBytes` 지정 된 속성 형식의 올바른 데이터 크기 여야 합니다. 문자열 속성 값에 대 한 `lNumBytes` 길이 여야 합니다 (바이트) 지정된 된 문자열 및 문자열을도 길이 (바이트) 이어야 합니다 자체 및이 null 종결 문자를 사용 하 여 따라야 합니다.
 
 ## <a name="requirements"></a>요구 사항  
-**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

@@ -2,12 +2,12 @@
 title: 워크플로 디자이너 재호스트
 ms.date: 03/30/2017
 ms.assetid: bec1fc28-f902-4edb-86c5-436cec802c2b
-ms.openlocfilehash: f5964b5c150dbe2a4132d072672a621315270fd5
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 406120b3ab0f14284150e07693d0af428d2807da
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49452942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54740530"
 ---
 # <a name="rehosting-the-workflow-designer"></a>워크플로 디자이너 재호스트
 [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] 만들기, 수정 및 모니터링 워크플로에의 목적에 대 한 Visual Studio 2012 외부 환경에서 다시 호스트할 수 있습니다.
@@ -23,5 +23,5 @@ ms.locfileid: "49452942"
 
  [재호스트된 워크플로 디자이너에서 새 Workflow Foundation 4.5 기능에 대한 지원](../../../docs/framework/windows-workflow-foundation/wf-features-in-the-rehosted-workflow-designer.md)
 
-## <a name="see-also"></a>참고 항목
- [워크플로 디자인 환경 사용자 지정](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)
+## <a name="see-also"></a>참고자료
+- [워크플로 디자인 환경 사용자 지정](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)

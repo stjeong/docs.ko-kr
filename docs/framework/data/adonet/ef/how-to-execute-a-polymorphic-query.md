@@ -1,18 +1,18 @@
 ---
-title: '방법: 다형 쿼리 실행'
+title: '방법: 다형성 쿼리 실행'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2f05da1e-845b-4f14-83e4-c6353a850553
-ms.openlocfilehash: ae491d0eeda7f8703dca174bdf4c5c847f78e675
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 2b1493ffc2aaa4c3716cbd6d1ac0f350ed39a8f1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54746585"
 ---
-# <a name="how-to-execute-a-polymorphic-query"></a>방법: 다형 쿼리 실행
+# <a name="how-to-execute-a-polymorphic-query"></a>방법: 다형성 쿼리 실행
 이 항목에서는 다형성을 실행 하는 방법을 보여 줍니다 [!INCLUDE[esql](../../../../../includes/esql-md.md)] 사용 하 여 쿼리를 [OFTYPE](../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) 연산자입니다.  
   
 ### <a name="to-run-the-code-in-this-example"></a>이 예제의 코드를 실행하려면  
@@ -32,6 +32,6 @@ ms.locfileid: "43519084"
  [!code-csharp[DP EntityServices Concepts#PolymorphicQuery](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#polymorphicquery)]
  [!code-vb[DP EntityServices Concepts#PolymorphicQuery](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#polymorphicquery)]  
   
-## <a name="see-also"></a>참고 항목  
- [Entity Framework용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
- [Entity SQL 언어](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+## <a name="see-also"></a>참고자료
+- [Entity Framework용 EntityClient 공급자](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+- [Entity SQL 언어](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 추적 스위치 만들기, 초기화 및 구성'
+title: '방법: 만들기, 초기화 및 추적 스위치 구성'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 4088c74d0ea8e9f2ad70aff37d99870d34b168ba
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c42d7d13c630a0aef8a6ca65bd391fb232b48bfb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33392933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54739617"
 ---
-# <a name="how-to-create-initialize-and-configure-trace-switches"></a>방법: 추적 스위치 만들기, 초기화 및 구성
+# <a name="how-to-create-initialize-and-configure-trace-switches"></a>방법: 만들기, 초기화 및 추적 스위치 구성
 추적 스위치를 사용하여 추적 출력을 활성화, 비활성화 및 필터링할 수 있습니다.  
   
 <a name="create"></a>   
@@ -54,7 +54,7 @@ ms.locfileid: "33392933"
 ## <a name="configuring-trace-switches"></a>추적 스위치 구성  
  응용 프로그램이 배포된 후 응용 프로그램에서 추적 스위치를 구성하여 추적 출력을 사용하거나 사용하지 않도록 설정할 수도 있습니다. 스위치 구성은 스위치가 초기화된 후 외부 소스에서 해당 값을 변경하는 것을 의미합니다. 구성 파일을 사용하여 스위치 개체의 값을 변경할 수 있습니다. 추적 스위치를 구성하여 설정 및 해제하거나 해당 수준을 설정하고 수신기로 전달되는 메시지의 양과 형식을 결정합니다.  
   
- 스위치는 .config 파일을 사용하여 구성됩니다. 웹 응용 프로그램의 경우 프로젝트와 연결된 Web.config 파일입니다. Windows 응용 프로그램에서 이 파일의 이름은 (응용 프로그램 이름).exe.config입니다. 배포된 응용 프로그램에서 이 파일은 실행 파일과 동일한 폴더에 있어야 합니다.  
+ 스위치는 .config 파일을 사용하여 구성됩니다. 웹 애플리케이션의 경우 프로젝트와 연결된 Web.config 파일입니다. Windows 응용 프로그램에서 이 파일의 이름은 (응용 프로그램 이름).exe.config입니다. 배포된 응용 프로그램에서 이 파일은 실행 파일과 동일한 폴더에 있어야 합니다.  
   
  응용 프로그램은 스위치 인스턴스를 만드는 코드를 처음 실행할 때 명명된 스위치에 대한 추적 수준 정보를 구성 파일에서 확인합니다. 추적 시스템은 특정 스위치에 대해 한 번만, 즉 응용 프로그램이 스위치를 처음 만들 때만 구성 파일을 검사합니다.  
   
@@ -75,11 +75,11 @@ ms.locfileid: "33392933"
   
 2.  프로젝트에 구성 파일(app.config 또는 Web.config)이 없는 경우 **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.  
   
-    -   **Visual Basic:** **새 항목 추가** 대화 상자에서 **응용 프로그램 구성 파일**을 선택합니다.  
+    -   **Visual Basic:** 에 **새 항목 추가** 대화 상자에서 **응용 프로그램 구성 파일**합니다.  
   
          응용 프로그램 구성 파일이 만들어져 열립니다. 이 파일은 루트 요소가 `<configuration>.`인 XML 문서입니다.  
   
-    -   **Visual C#:** **새 항목 추가** 대화 상자에서 **XML 파일**을 선택합니다. 이 파일 이름을 **app.config**로 지정합니다. XML 편집기에서 XML 선언 뒤에 다음 XML을 추가합니다.  
+    -   **Visual C#:** 에 **새 항목 추가** 대화 상자에서 **XML 파일**합니다. 이 파일 이름을 **app.config**로 지정합니다. XML 편집기에서 XML 선언 뒤에 다음 XML을 추가합니다.  
   
         ```xml  
         <configuration>  
@@ -125,8 +125,8 @@ ms.locfileid: "33392933"
     </system.diagnostics>  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [응용 프로그램 추적 및 조율](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
- [방법: 응용 프로그램 코드에 Trace 문 추가](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
- [추적 스위치](../../../docs/framework/debug-trace-profile/trace-switches.md)  
- [추적 및 디버그 설정 스키마](../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- [응용 프로그램 추적 및 조율](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [방법: 응용 프로그램 코드에 Trace 문 추가](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
+- [추적 스위치](../../../docs/framework/debug-trace-profile/trace-switches.md)
+- [추적 및 디버그 설정 스키마](../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

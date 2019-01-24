@@ -2,12 +2,12 @@
 title: WCF 분석 추적
 ms.date: 03/30/2017
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
-ms.openlocfilehash: a5e4b82bd28cae18f393a4143325623634d4bbaf
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 6d4db9a8ec11e215ef18dcab6b7940526bc24927
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54748144"
 ---
 # <a name="wcf-analytic-tracing"></a>WCF 분석 추적
 이 샘플에는 Windows Communication Foundation (WCF) ETW에 기록 하는 분석 추적 스트림에 고유한 추적 이벤트를 추가 하는 방법을 보여 줍니다. [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]합니다. 분석 추적은 성능을 크게 저하시키지 않으면서 서비스를 쉽게 확인할 수 있도록 하기 위한 것입니다. 이 샘플에 사용 하는 방법을 보여 줍니다는 <xref:System.Diagnostics.Eventing?displayProperty=nameWithType> WCF 서비스와 통합 하는 쓰기 이벤트에는 Api입니다.  
@@ -24,11 +24,11 @@ ms.locfileid: "53147426"
   
 -   응용 프로그램이 루트에 없는 경우  
   
-     \<사이트 이름 >\<ApplicationVirtualPath >&#124;\<ServiceVirtualPath >&#124;\<ServiceName >  
+     \<SiteName>\<ApplicationVirtualPath>&#124;\<ServiceVirtualPath>&#124;\<ServiceName>  
   
 -   응용 프로그램이 루트에 있는 경우  
   
-     \<사이트 이름 >&#124;\<ServiceVirtualPath >&#124;\<ServiceName >  
+     \<SiteName>&#124;\<ServiceVirtualPath>&#124;\<ServiceName>  
   
  자체 호스팅된 서비스에 대 한 WCF의 분석 추적은 "HostReference" 필드를 채우지 않습니다. 이 샘플의 `WCFUserEventProvider` 클래스는 자체 호스팅 서비스에서 사용될 때 일관성 있게 동작합니다.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "53147426"
   
      ICalculator 서비스가 아래 왼쪽된 창에서 추가 된 **내 서비스 프로젝트**합니다.  
   
-7.  이벤트 뷰어 응용 프로그램을 엽니다.  
+7.  이벤트 뷰어 애플리케이션을 엽니다.  
   
      서비스를 호출 하기 전에 이벤트 뷰어를 시작 하 고 WCF 서비스에서 내보낸 추적 이벤트에 대 한 이벤트 로그에서이 수신 대기 하는지 확인 합니다.  
   
@@ -117,5 +117,5 @@ ms.locfileid: "53147426"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTrace`  
   
-## <a name="see-also"></a>참고 항목  
- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)
+## <a name="see-also"></a>참고자료
+- [AppFabric 모니터링 샘플](https://go.microsoft.com/fwlink/?LinkId=193959)

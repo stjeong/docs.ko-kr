@@ -11,18 +11,18 @@ helpviewer_keywords:
 - StatusBar control [Windows Forms], refreshing panels
 - panels [Windows Forms], refreshing status bar
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
-ms.openlocfilehash: 49722d5dadf694e8ee3037646652b921ddda3e91
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 3de554d4c8c3963948159bc6b8c2196f9ebc10ad
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45746037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745885"
 ---
 # <a name="walkthrough-updating-status-bar-information-at-run-time"></a>연습: 런타임에 상태 표시줄 정보 업데이트
 > [!IMPORTANT]
 >  <xref:System.Windows.Forms.StatusStrip> 및 <xref:System.Windows.Forms.ToolStripStatusLabel> 대체 컨트롤과 기능을 추가 합니다 <xref:System.Windows.Forms.StatusBar> 및 <xref:System.Windows.Forms.StatusBarPanel> 제어; 그러나를 <xref:System.Windows.Forms.StatusBar> 및 <xref:System.Windows.Forms.StatusBarPanel> 컨트롤 하는 경우 이전 버전과 호환성 및 향후 사용을 위해 유지 됩니다 있습니다 이 옵션을 선택 합니다.  
   
- 보통은, 프로그램이 응용 프로그램 상태나 다른 사용자 상호 작용에 대한 변경 내용을 기반으로, 런타임에 상태 표시줄 패널의 내용을 동적으로 업데이트합니다. 이것은 CAPS LOCK, NUM LOCK 또는 SCROLL LOC과 같은 키가 활성화되어 있음을 사용자에게 알리거나 날짜 또는 시간을 편리한 참조로 제공하는 일반적인 방법입니다.  
+ 보통은, 프로그램이 애플리케이션 상태나 다른 사용자 상호 작용에 대한 변경 내용을 기반으로, 런타임에 상태 표시줄 패널의 내용을 동적으로 업데이트합니다. 이것은 CAPS LOCK, NUM LOCK 또는 SCROLL LOC과 같은 키가 활성화되어 있음을 사용자에게 알리거나 날짜 또는 시간을 편리한 참조로 제공하는 일반적인 방법입니다.  
   
  다음 예에서 인스턴스를 사용 하 여 <xref:System.Windows.Forms.StatusBarPanel> 시계를 호스트 하는 클래스입니다.  
   
@@ -30,9 +30,9 @@ ms.locfileid: "45746037"
   
 1.  새 Windows Form을 만듭니다.  
   
-2.  폼에 <xref:System.Windows.Forms.StatusBar> 컨트롤을 추가합니다. 자세한 내용은 [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)를 참조하세요.  
+2.  폼에 <xref:System.Windows.Forms.StatusBar> 컨트롤을 추가합니다. 세부 정보를 참조 하세요. [방법: Windows Forms에 컨트롤 추가](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)합니다.  
   
-3.  상태 표시줄 패널을 추가 하면 <xref:System.Windows.Forms.StatusBar> 제어 합니다. 자세한 내용은 [방법: StatusBar 컨트롤에 패널 추가](../../../../docs/framework/winforms/controls/how-to-add-panels-to-a-statusbar-control.md)를 참조하세요.  
+3.  상태 표시줄 패널을 추가 하면 <xref:System.Windows.Forms.StatusBar> 제어 합니다. 세부 정보를 참조 하세요. [방법: StatusBar 컨트롤에 패널 추가](../../../../docs/framework/winforms/controls/how-to-add-panels-to-a-statusbar-control.md)합니다.  
   
 4.  에 대 한는 <xref:System.Windows.Forms.StatusBar> 폼에 추가 된 컨트롤을 설정 합니다 <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> 속성을 `true`입니다.  
   
@@ -75,18 +75,18 @@ ms.locfileid: "45746037"
       }  
     ```  
   
-     이제 응용 프로그램을 실행하고 상태 표시줄 패널에서 시계가 실행되는 것을 확인할 수 있습니다.  
+     이제 애플리케이션을 실행하고 상태 표시줄 패널에서 시계가 실행되는 것을 확인할 수 있습니다.  
   
-### <a name="to-test-the-application"></a>응용 프로그램을 테스트하려면  
+### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면  
   
-1.  응용 프로그램을 디버깅하고 F5 키를 눌러 실행합니다. 디버깅에 대한 자세한 내용은 [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)을 참조하세요.  
+1.  애플리케이션을 디버깅하고 F5 키를 눌러 실행합니다. 디버깅에 대한 자세한 내용은 [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)을 참조하세요.  
   
     > [!NOTE]
     >  상태 표시줄에 시계가 나타나는 데 약 30초가 소요됩니다. 가능한 가장 정확한 시간을 가져옵니다. 반대로 시계가 더 빨리 표시 되도록 줄일 수 있습니다의 값을 <xref:System.Windows.Forms.Timer.Interval%2A> 이전 절차의 7 단계에서 설정한 속성입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.StatusBar>  
- <xref:System.Windows.Forms.ToolStripStatusLabel>  
- [방법: StatusBar 컨트롤에 패널 추가](../../../../docs/framework/winforms/controls/how-to-add-panels-to-a-statusbar-control.md)  
- [방법: Windows Forms StatusBar 컨트롤에서 클릭한 패널 확인](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)  
- [StatusBar 컨트롤 개요](../../../../docs/framework/winforms/controls/statusbar-control-overview-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.StatusBar>
+- <xref:System.Windows.Forms.ToolStripStatusLabel>
+- [방법: StatusBar 컨트롤에 패널 추가](../../../../docs/framework/winforms/controls/how-to-add-panels-to-a-statusbar-control.md)
+- [방법: Windows Forms StatusBar 컨트롤에서 패널 클릭 확인](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)
+- [StatusBar 컨트롤 개요](../../../../docs/framework/winforms/controls/statusbar-control-overview-windows-forms.md)

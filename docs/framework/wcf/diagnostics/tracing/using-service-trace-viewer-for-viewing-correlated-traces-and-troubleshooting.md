@@ -2,12 +2,12 @@
 title: Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결
 ms.date: 03/30/2017
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-ms.openlocfilehash: b43c7f3d8018c119dbabf8f55ec115a00e1ac077
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c54585ab8e9d9fc039858b07ab75068e984b78db
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50188796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54594813"
 ---
 # <a name="using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting"></a>Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결
 이 항목에서는 추적 데이터 형식, 추적 데이터를 보는 방법 및 Service Trace Viewer를 사용하여 응용 프로그램 문제를 해결하는 방법에 대해 설명합니다.  
@@ -119,7 +119,7 @@ ms.locfileid: "50188796"
   
 -   작업 추가 처리  
   
--   보안 세션 설정(첫 번째 요청에서의 이 OCCURRED) 및 세 가지 보안 인프라 응답 메시지인 RST, RSTR, SCT(메시지 처리 1, 2, 3) 처리  
+-   응답 메시지를 보안 세션 (첫 번째 요청에서의이 OCCURRED) 및 처리 된 세 가지 보안 인프라를 설정 합니다. RST, RSTR, SCT (메시지 처리 1, 2, 3).  
   
 -   빼기, 곱하기 및 나누기 요청 처리  
   
@@ -138,7 +138,7 @@ ms.locfileid: "50188796"
  Process action Add 동작 왼쪽된 패널에서 두 번 클릭, 추가 관련 된 클라이언트 WCF 작업의 그래픽 표시를 보면 합니다. 왼쪽의 첫 번째 동작은 기본 동작인 루트 동작(0000)입니다. WCF는 앰비언트 동작 전송합니다. 이 정의 되어 있지 않으면 WCF는 0000에서 전송 합니다. 이때 두 번째 동작인 Process Action Add가 0에서 전송합니다. 그런 다음 Setup Secure Session이 표시됩니다.  
   
  ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace5.gif "e2eTrace5")  
-WCF 클라이언트 동작 그래프 보기: 앰비언트 동작(여기서 0), Process action 및 Set Up Secure Session  
+WCF 클라이언트 동작 그래프 보기: 앰비언트 동작 (여기서 0), Process action 및 Set Up Secure Session  
   
  오른쪽 위 패널에서 Process Action Add 동작과 관련된 추적이 모두 표시됩니다. 특히 같은 동작으로 요청 메시지("채널을 통해 메시지를 보냈습니다.")를 보내고 응답("채널을 통해 메시지를 받았습니다")을 받았습니다. 다음 그래프에서 이를 확인할 수 있습니다. 쉽게 구별할 수 있도록 Set up Secure Session 동작은 그래프에 축소되어 있습니다.  
   
@@ -198,7 +198,7 @@ WCF 클라이언트 및 서비스 동작 모두에 대한 그래프 보기
  ![추적 뷰어를 사용 하 여](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace11.gif "e2eTrace11")  
 문제 해결을 시작하려면 빨간색 또는 노란색 메시지 추적을 선택하고 두 번 클릭하여 문제의 근본 원인을 추적합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [종단 간 추적 시나리오](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
- [Service Trace Viewer 도구(SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+## <a name="see-also"></a>참고자료
+- [종단 간 추적 시나리오](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer 도구(SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

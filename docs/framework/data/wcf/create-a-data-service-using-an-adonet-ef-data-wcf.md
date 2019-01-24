@@ -1,22 +1,22 @@
 ---
-title: '방법: ADO.NET Entity Framework 데이터 원본을 사용하여 데이터 서비스 만들기(WCF Data Services)'
+title: '방법: ADO.NET Entity Framework 데이터 원본을 (WCF Data Services)를 사용 하 여 데이터 서비스 만들기'
 ms.date: 08/24/2018
 helpviewer_keywords:
 - WCF Data Services, providers
 - WCF Data Services, Entity Framework
 ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
-ms.openlocfilehash: 4bccd1e4655786ae24166cdc32619b420c4a54d3
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 294c579c366c1abf0b9a328f7480d1b29e2cb8e8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48839003"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54675603"
 ---
-# <a name="how-to-create-a-data-service-using-an-adonet-entity-framework-data-source-wcf-data-services"></a>방법: ADO.NET Entity Framework 데이터 원본을 사용하여 데이터 서비스 만들기(WCF Data Services)
+# <a name="how-to-create-a-data-service-using-an-adonet-entity-framework-data-source-wcf-data-services"></a>방법: ADO.NET Entity Framework 데이터 원본을 (WCF Data Services)를 사용 하 여 데이터 서비스 만들기
 
 WCF Data Services에서는 엔터티 데이터를 데이터 서비스로 노출 합니다. 이 엔터티 데이터를 제공 합니다 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] 경우 데이터 원본이 관계형 데이터베이스입니다. 이 항목에서는 만드는 방법을 보여 줍니다.는 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]-기존 데이터베이스를 기반으로 하며이 데이터 모델을 사용 하 여 새 데이터 서비스를 만들려면 Visual Studio 웹 응용 프로그램에서 데이터 모델을 기반으로 합니다.
 
-합니다 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] 생성할 수 있는 명령줄 도구도 제공는 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] Visual Studio 프로젝트 외부의 모델입니다. 자세한 내용은 [방법: 모델 및 매핑 파일 생성을 사용 하 여 EdmGen.exe](../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)합니다.
+합니다 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] 생성할 수 있는 명령줄 도구도 제공는 [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] Visual Studio 프로젝트 외부의 모델입니다. 자세한 내용은 [방법: EdmGen.exe를 사용 하 여 모델 및 매핑 파일 생성](../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)합니다.
 
 ## <a name="to-add-an-entity-framework-model-that-is-based-on-an-existing-database-to-an-existing-web-application"></a>기존 웹 응용 프로그램에 기존 데이터베이스를 기반으로 하는 Entity Framework 모델을 추가하려면
 
@@ -72,9 +72,9 @@ WCF Data Services에서는 엔터티 데이터를 데이터 서비스로 노출 
 
 8. 웹 브라우저를 사용 하 여 Northwind.svc 데이터 서비스를 테스트 하려면 항목의 지침을 따릅니다 [웹 브라우저에서 서비스 액세스](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [WCF Data Services 정의](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
 - [Data Services 공급자](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
-- [방법: 리플렉션 공급자 사용하여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)
-- [방법: LINQ to SQL 데이터 원본을 사용하여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)
+- [방법: 리플렉션 공급자를 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)
+- [방법: LINQ to SQL 데이터 원본을 사용 하 여 데이터 서비스 만들기](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: e8c5021b00de503783adb3f1b1dc11964639afbf
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 40bba9f89801a75ac8c9d15e67e060714d1a29d7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680769"
 ---
 # <a name="ltcompilergt-element"></a>&lt;컴파일러&gt; 요소
 
@@ -46,8 +46,8 @@ ms.locfileid: "50193542"
 |특성|설명|
 |---------------|-----------------|
 |`compilerOptions`|선택적 특성입니다.<br /><br /> 컴파일에 추가 컴파일러 별 인수를 지정합니다. 에 대 한 값을 `compilerOptions` 특성 일반적으로 컴파일러에 대 한 컴파일러 옵션 항목에 나와 있습니다.|
-|`extension`|필수 특성입니다.<br /><br /> 언어 공급자에 대 한 소스 파일에서 사용 하는 파일 이름 확장명의 세미콜론으로 구분 된 목록을 제공 합니다. 예를 들어, ".cs"가 있습니다.|
-|`language`|필수 특성입니다.<br /><br /> 언어 공급자에서 지 원하는 언어 이름의 세미콜론으로 구분 된 목록을 제공 합니다. 예를 들어, "c#; cs; csharp"입니다.|
+|`extension`|필수 특성입니다.<br /><br /> 언어 공급자에 대 한 소스 파일에서 사용 하는 파일 이름 확장명의 세미콜론으로 구분 된 목록을 제공 합니다. 예를 들어, ".cs"입니다.|
+|`language`|필수 특성입니다.<br /><br /> 언어 공급자에서 지 원하는 언어 이름의 세미콜론으로 구분 된 목록을 제공 합니다. 예를 들어, "c#;cs;csharp"입니다.|
 |`type`|필수 특성입니다.<br /><br /> 공급자 구현이 들어 있는 어셈블리의 이름을 포함 한 언어 공급자의 형식 이름을 지정 합니다. 형식 이름에 정의 된 요구 사항에 맞아야 [정규화 된 형식 이름 지정](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)합니다.|
 |`warningLevel`|선택적 특성입니다.<br /><br /> 기본 컴파일러 경고 수준을;를 지정합니다. 컴파일 경고를 오류로 언어 공급자는 처리 수준을 결정 합니다.|
 
@@ -61,7 +61,7 @@ ms.locfileid: "50193542"
 
 |요소|설명|
 |-------------|-----------------|
-|[\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|
+|[\<configuration> 요소](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|
 |[\<system.codedom > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|사용 가능한 언어 공급자에 대한 컴파일러 구성 설정을 지정합니다.|
 |[\<컴파일러 > 요소](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|컴파일러 구성 요소에 대 한 컨테이너 0 개 이상 포함 `<compiler>` 요소입니다.|
 
@@ -99,7 +99,7 @@ ms.locfileid: "50193542"
 </configuration>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>

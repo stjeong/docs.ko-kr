@@ -3,12 +3,12 @@ title: WCF 클라이언트 리소스를 해제 하려면 중단 및 닫기 사�
 description: Dispose는 실패 하 고 네트워크 실패 시 예외를 throw 수 있습니다. 원치 않는 동작이 될 수 있습니다. 대신, 닫기 사용 하 고 리소스를 해제 하려면 클라이언트 네트워크 실패 했을 때 중단 합니다.
 ms.date: 11/12/2018
 ms.assetid: aff82a8d-933d-4bdc-b0c2-c2f7527204fb
-ms.openlocfilehash: d37ad9d2277fea2656311a5a1f57d51343d10d89
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4996ccba955d7946bb76b8124b8b28d803b6f3e1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53147218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736431"
 ---
 # <a name="close-and-abort-release-resources-safely-when-network-connections-have-dropped"></a>닫기 및 네트워크 연결을 삭제 한 경우에 안전 하 게 중단 릴리스 리소스
 이 샘플에서는 합니다 `Close` 고 `Abort` 형식화 된 클라이언트를 사용 하는 경우에 리소스를 정리 하는 방법입니다. `using` 문을 네트워크 연결이 안정적이 지 않습니다 때 예외를 발생 합니다. 이 샘플은 기반 합니다 [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) 계산기 서비스를 구현 하는 합니다. 이 샘플에서 클라이언트는 콘솔 응용 프로그램(.exe)이고 서비스는 IIS(인터넷 정보 서비스)를 통해 호스트됩니다.  
@@ -119,4 +119,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\UsingUsing`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

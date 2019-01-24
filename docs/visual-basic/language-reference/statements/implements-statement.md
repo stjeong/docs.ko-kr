@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Implements statement [Visual Basic]
 - interface implementation [Visual Basic], Implements statement
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
-ms.openlocfilehash: 805813506b957afb326c71ee4bbb15837726e4e5
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: cdcbe20157b9647040e3610d0632bd8e3fb9df65
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681068"
 ---
 # <a name="implements-statement"></a>Implements 문
 인터페이스 또는 클래스에서 구현 해야 하는 인터페이스 멤버의 경우 또는 나타나는 구조 정의 하나 이상 지정 합니다.  
@@ -29,10 +29,10 @@ Implements interfacename.interfacemember [, ...]
   
 ## <a name="parts"></a>요소  
  `interfacename`  
- 필수. 해당 속성, 프로시저 및 이벤트 클래스 또는 구조체에서 해당 멤버에 의해 구현 되어야 하는 인터페이스입니다.  
+ 필수 요소. 해당 속성, 프로시저 및 이벤트 클래스 또는 구조체에서 해당 멤버에 의해 구현 되어야 하는 인터페이스입니다.  
   
  `interfacemember`  
- 필수. 구현 되는 인터페이스의 멤버입니다.  
+ 필수 요소. 구현 되는 인터페이스의 멤버입니다.  
   
 ## <a name="remarks"></a>설명  
  인터페이스는 컬렉션의 프로토타입 멤버 (속성, 프로시저 및 이벤트)를 나타내는 인터페이스를 캡슐화 합니다. 인터페이스 멤버;에 대 한 선언에만 포함 클래스와 구조체는 이러한 멤버를 구현합니다. 자세한 내용은 [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)를 참조하세요.  
@@ -55,7 +55,7 @@ Implements interfacename.interfacemember [, ...]
   
  [!code-vb[VbVbalrStatements#34](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)  
- [Interface 문](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## <a name="see-also"></a>참고자료
+- [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)
+- [Interface 문](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [인터페이스](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

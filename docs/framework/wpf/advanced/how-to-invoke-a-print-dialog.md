@@ -8,12 +8,12 @@ helpviewer_keywords:
 - invoking print dialogs [WPF]
 - print dialogs [WPF], invoking
 ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
-ms.openlocfilehash: 271652fe9e98f9a381da5655bd313e12f8ee917d
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 92a4cd6e29e37478981aad32286c181a412a6bfa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45988311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54735833"
 ---
 # <a name="how-to-invoke-a-print-dialog"></a>방법: 인쇄 대화 상자 호출
 응용 프로그램에서 인쇄 하는 기능을 제공 하려면 있습니다 단순히 만들고 열 수는 <xref:System.Windows.Controls.PrintDialog> 개체입니다.  
@@ -31,8 +31,8 @@ ms.locfileid: "45988311"
   
  엄격히 말해, 사용할 수 있습니다는 <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> 적이 대화 상자를 열지 않고 메서드. 이런 의미에서 컨트롤이 보이지 않는 인쇄 구성 요소로 사용할 수 있습니다. 하지만 성능상의 이유로 사용 하 여 더 나은 것은 <xref:System.Printing.PrintQueue.AddJob%2A> 메서드 또는 다양 한 <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> 및 <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> 의 메서드는 <xref:System.Windows.Xps.XpsDocumentWriter>합니다. 이 대 한 자세한 내용은 참조 하세요 [프로그래밍 방식으로 XPS 파일 인쇄](../../../../docs/framework/wpf/advanced/how-to-programmatically-print-xps-files.md) 및 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.PrintDialog>  
- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [인쇄 개요](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.PrintDialog>
+- [WPF의 문서](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [인쇄 개요](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319)

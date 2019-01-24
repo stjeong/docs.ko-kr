@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30722
 ms.assetid: 6f452da8-6ef8-41fd-9ab8-6f681cf7d433
-ms.openlocfilehash: adbea4a7062cbc5f8e0a5ad8d02acc775f8441b4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 91273b0812d1ca40cea76a8608a6c8e839ded840
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33586427"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54672320"
 ---
 # <a name="evaluation-of-expression-or-statement-timed-out"></a>식 또는 문 계산 시간이 초과되었습니다.
-식의 계산 적절 한 시간 내에 완료 되지 않았습니다.  
+식의 평가 적시에 완료 되지 않았습니다.  
   
  **오류 ID:** BC30722  
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-1.  입력 한 코드가 올바른지 확인 하십시오.  
+1.  입력 한 코드가 올바른지 확인 합니다.  
   
-2.  실행 시간이 줄어듭니다 하도록 식을 단순화 합니다.  
+2.  실행 시간이 적게 소요 되는 식을 간소화 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)
+## <a name="see-also"></a>참고자료
+- [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)

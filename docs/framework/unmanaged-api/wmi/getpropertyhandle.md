@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2383003012ce1f6adffe0ad78ab614323840496f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 902414ca96d9b4bf888608bd9ad267777da92e32
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54742317"
 ---
 # <a name="getpropertyhandle-function"></a>GetPropertyHandle 함수
 속성을 식별하는 고유한 핸들을 반환합니다.
@@ -64,7 +64,7 @@ HRESULT GetPropertyHandle (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 속성 이름을 찾을 수 없습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
 |`WBEM_E_NOT_SUPPORTED` | 0x8004100c | 요청 된 속성이 형식의 됩니다 `CIM_OBJECT` 또는 `CIM_ARRAY`합니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
@@ -77,11 +77,11 @@ HRESULT GetPropertyHandle (
 이외의 모든 데이터 형식의 속성에 대 한 검색할 수 핸들 `CIM_OBJECT` 고 `CIM_ARRAY`입니다. 클래스의 모든 인스턴스에서 처리 작업을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항  
-**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

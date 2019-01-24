@@ -2,12 +2,12 @@
 title: 채널 팩터리 및 캐싱
 ms.date: 03/30/2017
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
-ms.openlocfilehash: fa333d3ffa0063e226405eb8e715f9ee99f68432
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 055c9d1412338bb444ca33556f3c94b1ffc4c6a7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53151332"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54745342"
 ---
 # <a name="channel-factory-and-caching"></a>채널 팩터리 및 캐싱
 WCF 클라이언트 응용 프로그램에서는 <xref:System.ServiceModel.ChannelFactory%601> 클래스를 사용하여 WCF 서비스와의 통신 채널을 만듭니다.  <xref:System.ServiceModel.ChannelFactory%601> 인스턴스를 만들 때는 다음 작업이 필요하기 때문에 약간의 오버헤드가 발생합니다.  
@@ -111,9 +111,9 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
   
  위 예제에서 `TestClient`의 모든 인스턴스는 다른 채널 팩터리를 사용합니다. 이는 각 엔드포인트가 다른 보안 요구사항을 가지고 있고 캐시하는 의미가 없을 때 유용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.ClientBase%601>  
- [클라이언트 빌드](../../../../docs/framework/wcf/building-clients.md)  
- [클라이언트](../../../../docs/framework/wcf/feature-details/clients.md)  
- [WCF 클라이언트를 사용하여 서비스 액세스](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [어떻게: ChannelFactory 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.ClientBase%601>
+- [클라이언트 빌드](../../../../docs/framework/wcf/building-clients.md)
+- [클라이언트](../../../../docs/framework/wcf/feature-details/clients.md)
+- [WCF 클라이언트를 사용하여 서비스 액세스](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
+- [방법: ChannelFactory 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)

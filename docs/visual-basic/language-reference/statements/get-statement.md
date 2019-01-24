@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Get keyword [Visual Basic]
 - property procedures [Visual Basic], Get statements
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
-ms.openlocfilehash: 32b89caf56c010f9e6ed7b78309ef30b56b682ea
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: ade54b2f00c540a1bf4ede311e1631b2c5d7e3ef
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54742395"
 ---
 # <a name="get-statement"></a>Get 문
 선언 된 `Get` 속성 프로시저는 속성의 값을 검색 하는 데 사용 합니다.  
@@ -34,9 +34,9 @@ End Get
 |용어|정의|  
 |---|---|  
 |`attributelist`|선택 사항입니다. 참조 [특성 목록](../../../visual-basic/language-reference/statements/attribute-list.md)합니다.|  
-|`accessmodifier`|옵션 중 하나에 `Get` 및 `Set` 이 속성에는 문. 다음 중 하나일 수 있습니다.<br /><br /> -   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> 참조 [액세스 수준을 Visual Basic의](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.|  
+|`accessmodifier`|옵션 중 하나에 `Get` 및 `Set` 이 속성에는 문. 다음 중 하나일 수 있습니다.<br /><br /> -   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.|  
 |`statements`|선택 사항입니다. 될 때 실행 되는 하나 이상의 문을 `Get` 속성 프로시저를 호출 합니다.|  
-|`End Get`|필수. 정의 종료 합니다 `Get` 속성 프로시저입니다.|  
+|`End Get`|필수 요소. 정의 종료 합니다 `Get` 속성 프로시저입니다.|  
   
 ## <a name="remarks"></a>설명  
  모든 속성에 있어야 합니다는 `Get` 속성 프로시저 속성 표시 되어 있지 않으면 `WriteOnly`합니다. `Get` 프로시저는 속성의 현재 값을 반환 하는 데 사용 됩니다.  
@@ -77,14 +77,14 @@ End Get
   
      [!code-vb[VbVbalrStatements#29](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_3.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `Get` 문을 속성의 값을 반환 합니다.  
   
  [!code-vb[VbVbalrStatements#30](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_4.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Set 문](../../../visual-basic/language-reference/statements/set-statement.md)  
- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Exit 문](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [연습: 클래스 정의](../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)
+## <a name="see-also"></a>참고자료
+- [Set 문](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Exit 문](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [연습: 클래스 정의](../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)

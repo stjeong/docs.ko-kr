@@ -7,14 +7,14 @@ helpviewer_keywords:
 - interface implementation [Visual Basic], walkthrough
 - interfaces [Visual Basic], creating
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
-ms.openlocfilehash: af9305deb60637b642d091501e743f2c7a57ccad
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 7a5694826e0fff82aceb8ad18f75f96f308e724c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "43391083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680389"
 ---
-# <a name="walkthrough-creating-and-implementing-interfaces-visual-basic"></a>연습: 인터페이스 만들기 및 구현(Visual Basic)
+# <a name="walkthrough-creating-and-implementing-interfaces-visual-basic"></a>연습: 인터페이스 (Visual Basic) 만들기 및 구현
 
 인터페이스는 속성, 메서드 및 이벤트의 특징을 설명 하지만 구조체 또는 클래스까지 구현 세부 정보입니다.  
   
@@ -27,7 +27,7 @@ ms.locfileid: "43391083"
   
 ## <a name="to-define-an-interface"></a>인터페이스를 정의 하려면
   
-1.  새 Visual Basic Windows 응용 프로그램 프로젝트를 엽니다.  
+1.  새 Visual Basic Windows 애플리케이션 프로젝트를 엽니다.  
   
 2.  새 모듈을 클릭 하 여 프로젝트에 추가할 **모듈 추가** 에 **프로젝트** 메뉴.  
   
@@ -109,7 +109,7 @@ ms.locfileid: "43391083"
   
 ## <a name="see-also"></a>참고자료
 
- [Implements 문](../../../../visual-basic/language-reference/statements/implements-statement.md)  
- [인터페이스](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
- [Interface 문](../../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Event 문](../../../../visual-basic/language-reference/statements/event-statement.md)  
+- [Implements 문](../../../../visual-basic/language-reference/statements/implements-statement.md)
+- [인터페이스](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+- [Interface 문](../../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Event 문](../../../../visual-basic/language-reference/statements/event-statement.md)

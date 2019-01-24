@@ -7,12 +7,12 @@ helpviewer_keywords:
 - toolbars [Windows Forms], technology summary
 - menus [Windows Forms], technology summary
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
-ms.openlocfilehash: 26317fad5796989a58a48e4f26549805b279228a
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: a06b8831c862706f9607e95950b81a6bb6e8b7ea
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47201103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54736017"
 ---
 # <a name="toolstrip-technology-summary"></a>ToolStrip 기술 요약
 이 항목에서는 `ToolStrip` 제어 및 이를 사용하도록 지원하는 클래스에 대한 정보를 요약하여 설명합니다.  
@@ -87,7 +87,7 @@ ms.locfileid: "47201103"
 ## <a name="hosting-controls"></a>컨트롤 호스트  
  <xref:System.Windows.Forms.ToolStripControlHost> 클래스는 <xref:System.Windows.Forms.ToolStripComboBox>, <xref:System.Windows.Forms.ToolStripTextBox> 및 <xref:System.Windows.Forms.ToolStripProgressBar> 컨트롤에 대한 기본 제공 래퍼를 제공합니다. 다른 기존 컨트롤이나 COM 컨트롤을 <xref:System.Windows.Forms.ToolStripControlHost>에서 호스트할 수도 있습니다.  
   
- 컨트롤 호스팅의 예제를 보려면 [방법: ToolStripControlHost 사용 하 여 Windows Forms 컨트롤 래핑](../../../../docs/framework/winforms/controls/how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost.md)합니다.  
+ 컨트롤 호스팅의 예제를 참조 하세요. [방법: ToolStripControlHost 사용 하 여 Windows Forms 컨트롤 래핑](../../../../docs/framework/winforms/controls/how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost.md)합니다.  
   
 ## <a name="rendering"></a>렌더링  
  <xref:System.Windows.Forms.ToolStrip> 클래스는 기타 Windows Forms 컨트롤과 크게 다른 렌더링 체계를 구현합니다. 이 체계를 사용하여 스타일과 테마를 쉽게 적용할 수 있습니다.  
@@ -96,7 +96,7 @@ ms.locfileid: "47201103"
   
  <xref:System.Windows.Forms.ToolStrip.RenderMode%2A>를 <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>로 설정하거나 <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A> 또는 <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> 속성을 각각 원하는 <xref:System.Windows.Forms.ToolStripManagerRenderMode> 또는 <xref:System.Windows.Forms.ToolStripRenderer> 값으로 설정하여 같은 응용 프로그램의 여러 <xref:System.Windows.Forms.ToolStrip> 개체에 같은 스타일을 적용할 수 있습니다.  
   
- 렌더링의 예제를 참조 하세요 [방법: 만들기 및 Windows Forms의 ToolStrip 컨트롤에 대 한 사용자 지정 렌더러를 설정](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)합니다.  
+ 렌더링의 예 참조 [방법: 만들기 및 ToolStrip 컨트롤에 Windows Forms에 대 한 사용자 지정 렌더러를 설정](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)합니다.  
   
 ## <a name="styles-and-themes"></a>스타일 및 테마  
  <xref:System.Windows.Forms.ToolStrip> 및 연결된 클래스를 사용하면 각 항목에 대한 <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A> 메서드를 재정의할 필요 없이 시각적 스타일과 사용자 지정 모양을 쉽게 지원할 수 있습니다. <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A>과 <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> 및 <xref:System.Windows.Forms.ToolStrip.Renderer%2A> 속성을 사용합니다.  
@@ -106,18 +106,18 @@ ms.locfileid: "47201103"
   
  *래프팅* 기능은 도구 모음의 가로 또는 세로 공간을 공유 합니다. Windows 폼에는 <xref:System.Windows.Forms.ToolStripContainer>가 포함될 수 있고, 이 컨테이너에는 폼의 왼쪽, 오른쪽, 위쪽, 아래쪽에 <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip> 및 <xref:System.Windows.Forms.StatusStrip> 컨트롤을 배치 및 래프팅할 패널이 있습니다. 왼쪽 또는 오른쪽 <xref:System.Windows.Forms.ToolStripContainer>에 여러 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 배치하면 컨트롤이 세로로 쌓입니다. 위쪽 또는 아래쪽 <xref:System.Windows.Forms.ToolStripContainer>에 배치하면 가로로 쌓입니다. <xref:System.Windows.Forms.ToolStripContainer>의 가운데 <xref:System.Windows.Forms.ToolStripContentPanel>을 사용하여 기존 컨트롤을 폼에 배치할 수 있습니다.  
   
- 임의 또는 모든 <xref:System.Windows.Forms.ToolStripContainer> 컨트롤은 디자인 타임에 직접 선택할 수 있고 삭제할 수 있습니다. <xref:System.Windows.Forms.ToolStripContainer>는 확장 및 축소 가능하고 포함된 컨트롤을 사용하여 크기가 조정됩니다.  
+ 임의 또는 모든 <xref:System.Windows.Forms.ToolStripContainer> 컨트롤은 디자인 타임에 직접 선택할 수 있고 삭제할 수 있습니다. <xref:System.Windows.Forms.ToolStripContainer>는 확장명 및 축소 가능하고 포함된 컨트롤을 사용하여 크기가 조정됩니다.  
   
  *도킹* 폼의 왼쪽, 오른쪽, 위쪽 또는 아래쪽에는 컨트롤의 단순 위치 지정 됩니다.  
   
  도킹을 통해 래프팅하는 이점은 <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip> 및 <xref:System.Windows.Forms.StatusStrip> 컨트롤이 다른 컨트롤과 가로 또는 세로 공간을 공유할 수 있다는 점입니다.  
   
- 대부분 <xref:System.Windows.Forms.ToolStrip> 컨트롤은 래프팅을 사용하는 대신 다른 컨트롤 같이 폼에 도킹될 수 있습니다. <xref:System.Windows.Forms.ToolStrip> 컨트롤을 <xref:System.Windows.Forms.ToolStripContainer>에서 제거하고 해당 `Dock` 속성을 `None`으로 설정하여 해당 컨트롤이 폼에 자유롭게 배치되도록 지정하거나, 각 <xref:System.Windows.Forms.Control.Location%2A> 속성을 설정하여 절대 위치를 지정할 수 있습니다. 참조 [방법: 양식에 ToolStripContainer의 ToolStrip 이동](../../../../docs/framework/winforms/controls/how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)합니다.  
+ 대부분 <xref:System.Windows.Forms.ToolStrip> 컨트롤은 래프팅을 사용하는 대신 다른 컨트롤 같이 폼에 도킹될 수 있습니다. <xref:System.Windows.Forms.ToolStrip> 컨트롤을 <xref:System.Windows.Forms.ToolStripContainer>에서 제거하고 해당 `Dock` 속성을 `None`으로 설정하여 해당 컨트롤이 폼에 자유롭게 배치되도록 지정하거나, 각 <xref:System.Windows.Forms.Control.Location%2A> 속성을 설정하여 절대 위치를 지정할 수 있습니다. [방법: 폼에 ToolStripContainer의 ToolStrip 이동](../../../../docs/framework/winforms/controls/how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)합니다.  
   
  더 큰 유연성, 특히 MDI(다중 문서 인터페이스) 응용 프로그램을 위해 또는 <xref:System.Windows.Forms.ToolStripContainer>가 필요하지 않을 경우 <xref:System.Windows.Forms.ToolStripPanel> 컨트롤을 하나 이상 사용합니다. <xref:System.Windows.Forms.ToolStripPanel>에서는 <xref:System.Windows.Forms.ToolStrip> 컨트롤을 배치 및 래프팅할 도킹 가능한 공간을 제공하지만 기존 컨트롤에 사용할 공간을 제공하지 않습니다. 기본적으로 <xref:System.Windows.Forms.ToolStripPanel> 디자이너에 표시 되지 않습니다 **도구 상자**를 마우스 오른쪽 단추로 클릭 하 여 하를 전환할 수 있습니다 하지만 **도구 상자**, 클릭 하 고 **항목 선택**합니다. 다른 클래스처럼 <xref:System.Windows.Forms.ToolStripPanel>에 프로그래밍 방식으로 액세스할 수도 있습니다.  
   
  <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip> 및 <xref:System.Windows.Forms.StatusStrip>을 통해 항목이 오버플로될 수 있습니다. 이는 이들 항목이 Microsoft Office 도구 모음에서 동작하는 방식과 비슷합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ToolStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip 컨트롤 아키텍처](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
+## <a name="see-also"></a>참고자료
+- [ToolStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip 컨트롤 아키텍처](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)

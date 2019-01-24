@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - extending [WF], Workflow Designer
 ms.assetid: 98135077-0f5d-4d16-9337-01094e843537
-ms.openlocfilehash: ed4ccb45e4470eb03cec856e865d4b50220816e3
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 87b49b025cfb27812933511b76c5a024cde4995a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54680307"
 ---
 # <a name="customizing-the-workflow-design-experience"></a>워크플로 디자인 환경 사용자 지정
 
@@ -33,7 +33,7 @@ ms.locfileid: "48836461"
 
 <xref:System.Activities.Presentation.ActivityDesigner>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Windows Workflow Foundation 확장](../../../docs/framework/windows-workflow-foundation/extend.md)
 - [디자이너](../../../docs/framework/windows-workflow-foundation/samples/designer.md)
