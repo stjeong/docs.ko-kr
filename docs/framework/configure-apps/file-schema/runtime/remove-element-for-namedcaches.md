@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: d31caf88e1376025484ed6d65d5277c015e70b5e
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 7e183a624b95e207d34697c906cc3f278c967ae9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54499779"
 ---
 # <a name="ltremovegt-element-for-ltnamedcachesgt"></a>&lt;제거할&gt; 요소에 대 한 &lt;namedCaches&gt;
 메모리 캐시용으로 명명된 캐시 항목을 `namedCaches` 컬렉션에서 제거합니다.  
   
  \<system.runtime.caching>  
 \<memoryCache>  
-\<namedCaches >  
+\<namedCaches>  
 \<remove>  
   
 ## <a name="syntax"></a>구문  
@@ -52,5 +52,5 @@ ms.locfileid: "53613741"
 ## <a name="remarks"></a>설명  
  합니다 `remove` 요소를 제거는 `namedCache` 메모리 캐시에 대 한 명명 된 캐시 컬렉션에서 항목입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
 - [\<namedCaches > 요소 (캐시 설정)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)

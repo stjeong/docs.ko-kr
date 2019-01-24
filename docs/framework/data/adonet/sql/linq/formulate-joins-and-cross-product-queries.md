@@ -5,41 +5,41 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d8072ede-0521-4670-9bec-1778ceeb875b
-ms.openlocfilehash: 20b46ce37d93119330e336f583ac68b5c1dc4c4b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a06c7d451d9ad2856092910065f1195a86c737ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54548519"
 ---
 # <a name="formulate-joins-and-cross-product-queries"></a>방법: 조인 및 교차곱 쿼리 작성
 다음 예제에서는 여러 테이블의 결과를 결합하는 방법을 보여 줍니다.  
   
 ## <a name="example"></a>예제  
- 외래 키 탐색을 사용 하 여 다음 예제는 `From` Visual Basic의 절 (`from` 절에 C#) 런던에 고객에 대 한 모든 주문을 선택 하 합니다.  
+ 외래 키 탐색을 사용 하 여 다음 예제는 `From` Visual Basic의 절 (`from` 절 C#) London에 있는 고객에 대 한 모든 주문을 선택 합니다.  
   
  [!code-csharp[DLinqQueryExamples#47](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#47)]
  [!code-vb[DLinqQueryExamples#47](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#47)]  
   
 ## <a name="example"></a>예제  
- 외래 키 탐색을 사용 하 여 다음 예제는 `Where` Visual Basic의 절 (`where` 절에 C#) 재고 아웃에 대해 필터링 할 `Products` 인 `Supplier` 미국에 합니다.  
+ 외래 키 탐색을 사용 하 여 다음 예제에서는 합니다 `Where` Visual Basic의 절 (`where` 절 C#) 품절 아웃에 대해 필터링 할 `Products` 인 `Supplier` United States에.  
   
  [!code-csharp[DLinqQueryExamples#48](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#48)]
  [!code-vb[DLinqQueryExamples#48](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#48)]  
   
 ## <a name="example"></a>예제  
- 외래 키 탐색을 사용 하 여 다음 예제는 `From` Visual Basic의 절 (`from` 절에 C#) 시애틀의 직원에 대 한 필터링 하 고 그들의 지역을 나열 합니다.  
+ 다음 예제에서는에서 외래 키 탐색 합니다 `From` Visual Basic의 절 (`from` 절 C#) Seattle에 있는 직원과 그들의 지역을 나열 하 합니다.  
   
  [!code-csharp[DLinqQueryExamples#49](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#49)]  
   
 ## <a name="example"></a>예제  
- 외래 키 탐색을 사용 하 여 다음 예제는 `Select` Visual Basic의 절 (`select` 절에 C#) 직원이 한 명 다른 보고 하는 위치 및 동일한 직원이 있는의 직원 쌍을 필터링 할 `City`합니다.  
+ 외래 키 탐색을 사용 하 여 다음 예제는 `Select` Visual Basic의 절 (`select` 절 C#) 다른 직원을 보고 하는 위치와 같은 직원이 있는의 직원 쌍을 필터링 할 `City`합니다.  
   
  [!code-csharp[DLinqQueryExamples#50](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#50)]
  [!code-vb[DLinqQueryExamples#50](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#50)]  
   
 ## <a name="example"></a>예제  
- 다음 Visual Basic에서는 모든 고객과 주문에 대 한 조회 하 고, 고객에 게 주문을 일치 되는 해당 목록의 모든 고객에 대 한 연락처 이름이 제공 되도록 보장 합니다.  
+ 다음 Visual Basic 예제에서는 모든 고객과 주문에 대 한 조회 하 고, 고객에 게 주문을 일치 하면 해당 목록의 모든 고객에 대 한 연락처 이름이 제공 되도록 합니다.  
   
  [!code-vb[DLinqQueryExamples#50v](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#50v)]  
   
@@ -79,5 +79,5 @@ ms.locfileid: "33360263"
  [!code-csharp[DLinqQueryExamples#56](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#56)]
  [!code-vb[DLinqQueryExamples#56](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#56)]  
   
-## <a name="see-also"></a>참고 항목  
- [쿼리 예제](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+## <a name="see-also"></a>참고자료
+- [쿼리 예제](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)

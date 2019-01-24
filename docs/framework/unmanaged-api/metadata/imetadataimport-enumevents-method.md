@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 608b4a7d147124ede60e9d81f91600dfdaad0a65
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: f205615db29878bcfe936e88cab26c3d5a8e3562
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33446498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54514529"
 ---
 # <a name="imetadataimportenumevents-method"></a>IMetaDataImport::EnumEvents 메서드
 지정한 TypeDef 토큰에 대한 이벤트 정의 토큰을 열거합니다.  
@@ -44,7 +44,7 @@ HRESULT EnumEvents (
  [out에서] 열거자에 대 한 포인터입니다.  
   
  `td`  
- [in] 열거할 수 있는 이벤트 정의 TypeDef 토큰입니다.  
+ [in] 열거할 수는 이벤트 정의가 TypeDef 토큰입니다.  
   
  `rEvents`  
  [out] 반환 된 이벤트의 배열입니다.  
@@ -53,24 +53,24 @@ HRESULT EnumEvents (
  [in] `rEvents` 배열의 최대 크기입니다.  
   
  `pcEvents`  
- [out] 반환 되는 이벤트의 실제 수 `rEvents`합니다.  
+ [out] 반환 되는 이벤트 수가 실제 `rEvents`합니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 |HRESULT|설명|  
 |-------------|-----------------|  
 |`S_OK`|`EnumEvents` 성공적으로 반환 합니다.|  
-|`S_FALSE`|이벤트가 열거할 수 없습니다. 이 경우 `pcEvents` 은 0입니다.|  
+|`S_FALSE`|열거에 이벤트가 없습니다. 이런 경우 `pcEvents` 0입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Cor.h  
   
  **라이브러리:** MsCorEE.dll에 리소스로 포함  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## <a name="see-also"></a>참고자료
+- [IMetaDataImport 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 인터페이스](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

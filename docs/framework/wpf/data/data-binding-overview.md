@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data binding [WPF], about data binding
 - conversion for data binding [WPF]
 ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
-ms.openlocfilehash: 1b34b3369e5a045f45251d3285f10bf74b6f0d33
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 4cce0d56a629ca01e0174235b1e84291e9fa2f57
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45990078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54503211"
 ---
 # <a name="data-binding-overview"></a>데이터 바인딩 개요
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 데이터 바인딩은 응용 프로그램이 데이터를 제공하고 상호 작용할 수 있는 간단하고 일관된 방법을 제공합니다. 다양한 데이터 소스에서 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 개체 및 [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)]의 형태로 데이터에 요소를 바인딩할 수 있습니다. <xref:System.Windows.Controls.ContentControl>같은 <xref:System.Windows.Controls.Button> 하 고 <xref:System.Windows.Controls.ItemsControl>같은 <xref:System.Windows.Controls.ListBox> 고 <xref:System.Windows.Controls.ListView> 단일 데이터 항목의 유연한 스타일 또는 데이터 항목의 컬렉션을 사용 하도록 설정 하는 기본 제공 기능이 있습니다. 데이터를 기반으로 정렬, 필터 및 그룹 보기를 생성할 수 있습니다.  
@@ -27,15 +27,15 @@ ms.locfileid: "45990078"
   
 <a name="what_is_data_binding"></a>   
 ## <a name="what-is-data-binding"></a>데이터 바인딩이란?  
- 데이터 바인딩은 응용 프로그램 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]와 비즈니스 논리를 연결하는 프로세스입니다. 바인딩 설정이 올바르고 데이터가 적절한 알림을 제공하는 경우에는 데이터의 값이 변경될 때 데이터에 바인딩된 요소에 변경 내용이 자동으로 반영됩니다. 또한 요소에서 데이터의 외부 표현이 변경되면 내부 데이터가 자동으로 업데이트되어 변경 내용이 반영될 수 있습니다. 예를 들어, 사용자가 값을 편집 하는 경우는 <xref:System.Windows.Controls.TextBox> 요소를 기본 데이터 값이 해당 변경 내용을 반영 하도록 자동으로 업데이트 됩니다.  
+ 데이터 바인딩은 애플리케이션 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]와 비즈니스 논리를 연결하는 프로세스입니다. 바인딩 설정이 올바르고 데이터가 적절한 알림을 제공하는 경우에는 데이터의 값이 변경될 때 데이터에 바인딩된 요소에 변경 내용이 자동으로 반영됩니다. 또한 요소에서 데이터의 외부 표현이 변경되면 내부 데이터가 자동으로 업데이트되어 변경 내용이 반영될 수 있습니다. 예를 들어, 사용자가 값을 편집 하는 경우는 <xref:System.Windows.Controls.TextBox> 요소를 기본 데이터 값이 해당 변경 내용을 반영 하도록 자동으로 업데이트 됩니다.  
   
  데이터 바인딩은 일반적으로 서버 또는 로컬 구성 데이터를 폼이나 기타 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 컨트롤에 배치하는 데 사용됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 이 개념은 광범위한 속성을 다양한 데이터 소스에 바인딩하는 기능을 포함하도록 확장됩니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 요소의 종속성 속성은 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 개체([!INCLUDE[TLA#tla_adonet](../../../../includes/tlasharptla-adonet-md.md)] 개체 또는 웹 서비스와 웹 속성에 연결된 개체 포함) 및 [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] 데이터에 바인딩될 수 있습니다.  
   
- 데이터 바인딩의 예는 [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)(데이터 바인딩 데모)에서 다음 응용 프로그램 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 살펴보세요.  
+ 데이터 바인딩의 예는 [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)(데이터 바인딩 데모)에서 다음 애플리케이션 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 살펴보세요.  
   
  ![데이터 바인딩 샘플 스크린샷](../../../../docs/framework/wpf/data/media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
   
- 위 그림은 작업 항목 목록을 표시하는 응용 프로그램의 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]입니다. 응용 프로그램은 데이터 바인딩의 다음 기능을 보여 줍니다.  
+ 위 그림은 작업 항목 목록을 표시하는 애플리케이션의 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]입니다. 애플리케이션은 데이터 바인딩의 다음 기능을 보여 줍니다.  
   
 -   콘텐츠를 <xref:System.Windows.Controls.ListBox> 컬렉션에 바인딩된 *AuctionItem* 개체입니다. *AuctionItem* 개체에는 *Description*, *StartPrice*, *StartDate*, *Category*, *SpecialFeatures* 등의 속성이 있습니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "45990078"
   
 -   사용자가 항목을 선택 합니다 <xref:System.Windows.Controls.ContentControl> 선택한 항목의 세부 정보를 표시 합니다. 이를 *마스터-세부 시나리오*라고 합니다. [마스터-세부 시나리오Scenario](#master_detail_scenario) 섹션에서는 바인딩 시나리오 유형을 살펴봅니다.  
   
--   형식의 합니다 *StartDate* 속성이 <xref:System.DateTime>를 밀리초 단위로 시간을 포함 하는 날짜를 반환 하는 합니다. 이 응용 프로그램에는 더 짧은 날짜 문자열이 표시되도록 사용자 지정 변환기가 사용되었습니다. [데이터 변환](#data_conversion) 섹션에서는 변환기를 살펴봅니다.  
+-   형식의 합니다 *StartDate* 속성이 <xref:System.DateTime>를 밀리초 단위로 시간을 포함 하는 날짜를 반환 하는 합니다. 이 애플리케이션에는 더 짧은 날짜 문자열이 표시되도록 사용자 지정 변환기가 사용되었습니다. [데이터 변환](#data_conversion) 섹션에서는 변환기를 살펴봅니다.  
   
  사용자가 *Add Product* 단추를 클릭하면 다음과 같이 표시됩니다.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "45990078"
 ### <a name="direction-of-the-data-flow"></a>데이터 흐름 방향  
  앞서 언급 했 듯이 및 위의 그림에서 화살표에 표시 된 대로 바인딩의 데이터 흐름 이동할 수 바인딩 대상에서 바인딩 소스 (사용자의 값을 편집 하는 경우이 원본 값이 변경 되는 예를 들어 한 <xref:System.Windows.Controls.TextBox>) 및/또는 바인딩 소스에서 바인딩 대상 (예를 들어 프로그램 <xref:System.Windows.Controls.TextBox> 콘텐츠 바인딩 소스에서 변경 내용으로 업데이트) 바인딩 소스 적절 한 알림을 제공 하는 경우.  
   
- 응용 프로그램에서 사용자가 데이터를 변경하고 다시 소스 개체에 전파할 수 있도록 해야 할 수 있습니다. 또는 사용자가 소스 데이터를 업데이트할 수 없도록 해야 할 수 있습니다. 설정 하 여이 제어할 수 있습니다 합니다 <xref:System.Windows.Data.Binding.Mode%2A> 의 속성에 <xref:System.Windows.Data.Binding> 개체입니다. 다음 그림은 다양한 유형의 데이터 흐름을 보여 줍니다.  
+ 애플리케이션에서 사용자가 데이터를 변경하고 다시 소스 개체에 전파할 수 있도록 해야 할 수 있습니다. 또는 사용자가 소스 데이터를 업데이트할 수 없도록 해야 할 수 있습니다. 설정 하 여이 제어할 수 있습니다 합니다 <xref:System.Windows.Data.Binding.Mode%2A> 의 속성에 <xref:System.Windows.Data.Binding> 개체입니다. 다음 그림은 다양한 유형의 데이터 흐름을 보여 줍니다.  
   
  ![데이터 바인딩 데이터 흐름](../../../../docs/framework/wpf/data/media/databinding-dataflow.png "DataBinding_DataFlow")  
   
@@ -241,7 +241,7 @@ ms.locfileid: "45990078"
   
 <a name="how_to_create_a_view"></a>   
 #### <a name="how-to-create-a-view"></a>뷰를 만드는 방법  
- 뷰를 만들고 사용하는 한 가지 방법은 뷰 개체를 인스턴스화하고 이를 바인딩 소스로 사용하는 것입니다. 예를 들어 [데이터 바인딩이란?](#what_is_data_binding) 섹션에 나와 있는 [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)(데이터 바인딩 데모) 응용 프로그램을 살펴보겠습니다. 응용 프로그램은 구현 되도록는 <xref:System.Windows.Controls.ListBox> 직접 데이터 컬렉션 대신 데이터 컬렉션을 통해 뷰에 바인딩합니다. 다음 예제는 [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)(데이터 바인딩 데모) 응용 프로그램에서 추출됩니다. 합니다 <xref:System.Windows.Data.CollectionViewSource> 클래스를 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 에서 상속 되는 클래스의 프록시 <xref:System.Windows.Data.CollectionView>합니다. 이 특정 예제에서는 합니다 <xref:System.Windows.Data.CollectionViewSource.Source%2A> 뷰의 바인딩되는 *AuctionItems* 컬렉션 (형식의 <xref:System.Collections.ObjectModel.ObservableCollection%601>) 현재 응용 프로그램 개체.  
+ 뷰를 만들고 사용하는 한 가지 방법은 뷰 개체를 인스턴스화하고 이를 바인딩 소스로 사용하는 것입니다. 예를 들어 [데이터 바인딩이란?](#what_is_data_binding) 섹션에 나와 있는 [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)(데이터 바인딩 데모) 애플리케이션을 살펴보겠습니다. 응용 프로그램은 구현 되도록는 <xref:System.Windows.Controls.ListBox> 직접 데이터 컬렉션 대신 데이터 컬렉션을 통해 뷰에 바인딩합니다. 다음 예제는 [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)(데이터 바인딩 데모) 애플리케이션에서 추출됩니다. 합니다 <xref:System.Windows.Data.CollectionViewSource> 클래스를 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 에서 상속 되는 클래스의 프록시 <xref:System.Windows.Data.CollectionView>합니다. 이 특정 예제에서는 합니다 <xref:System.Windows.Data.CollectionViewSource.Source%2A> 뷰의 바인딩되는 *AuctionItems* 컬렉션 (형식의 <xref:System.Collections.ObjectModel.ObservableCollection%601>) 현재 응용 프로그램 개체.  
   
  [!code-xaml[DataBindingLab#WindowResources1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#windowresources1)]  
 [!code-xaml[DataBindingLab#CollectionViewSource](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#collectionviewsource)]  
@@ -322,7 +322,7 @@ ms.locfileid: "45990078"
   
 <a name="master_detail_scenario"></a>   
 #### <a name="master-detail-binding-scenario"></a>마스터-세부 바인딩 시나리오  
- 현재 항목의 개념은 컬렉션에서 항목을 탐색하는 경우뿐 아니라 마스터-세부 바인딩 시나리오에도 유용합니다. 다시 [데이터 바인딩이란?](#what_is_data_binding) 섹션의 응용 프로그램 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 살펴보겠습니다. 응용 프로그램 내에서 선택 합니다 <xref:System.Windows.Controls.ListBox> 에 표시 되는 콘텐츠를 결정는 <xref:System.Windows.Controls.ContentControl>. 다른 방식으로 적용할 때를 <xref:System.Windows.Controls.ListBox> 항목이 선택 되는 <xref:System.Windows.Controls.ContentControl> 선택한 항목의 세부 정보를 표시 합니다.  
+ 현재 항목의 개념은 컬렉션에서 항목을 탐색하는 경우뿐 아니라 마스터-세부 바인딩 시나리오에도 유용합니다. 다시 [데이터 바인딩이란?](#what_is_data_binding) 섹션의 애플리케이션 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]를 살펴보겠습니다. 응용 프로그램 내에서 선택 합니다 <xref:System.Windows.Controls.ListBox> 에 표시 되는 콘텐츠를 결정는 <xref:System.Windows.Controls.ContentControl>. 다른 방식으로 적용할 때를 <xref:System.Windows.Controls.ListBox> 항목이 선택 되는 <xref:System.Windows.Controls.ContentControl> 선택한 항목의 세부 정보를 표시 합니다.  
   
  간단히 두 개 이상의 컨트롤을 같은 뷰에 바인딩하여 마스터-세부 시나리오를 구현할 수 있습니다. 다음 예제는 [데이터 바인딩 데모](https://go.microsoft.com/fwlink/?LinkID=163703) 의 태그를 보여 줍니다는 <xref:System.Windows.Controls.ListBox> 및 <xref:System.Windows.Controls.ContentControl> 응용 프로그램에 표시 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 에 [데이터 바인딩이란?](#what_is_data_binding) 섹션:  
   
@@ -338,7 +338,7 @@ ms.locfileid: "45990078"
   
 <a name="data_templating"></a>   
 ## <a name="data-templating"></a>데이터 템플릿  
- 데이터 템플릿을 사용하지 않으면 [데이터 바인딩이란?](#what_is_data_binding) 섹션의 응용 프로그램 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]가 다음과 같이 표시됩니다.  
+ 데이터 템플릿을 사용하지 않으면 [데이터 바인딩이란?](#what_is_data_binding) 섹션의 애플리케이션 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]가 다음과 같이 표시됩니다.  
   
  ![데이터 템플릿을 사용하지 않는 데이터 바인딩 데모](../../../../docs/framework/wpf/data/media/databindingdemotemplates.png "DataBindingDemoTemplates")  
   
@@ -355,7 +355,7 @@ ms.locfileid: "45990078"
 <a name="data_validation"></a>   
 ## <a name="data-validation"></a>데이터 유효성 검사  
   
- 사용자 입력을 사용하는 대부분 응용 프로그램에는 사용자가 필요한 정보를 입력했는지 확인할 수 있는 유효성 검사 논리가 있어야 합니다. 유효성 검사는 형식, 범위, 서식 또는 기타 응용 프로그램별 요구 사항에 따라 달라질 수 있습니다. 이 섹션에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 데이터 유효성 검사를 사용하는 방법을 설명합니다.  
+ 사용자 입력을 사용하는 대부분 애플리케이션에는 사용자가 필요한 정보를 입력했는지 확인할 수 있는 유효성 검사 논리가 있어야 합니다. 유효성 검사는 형식, 범위, 서식 또는 기타 애플리케이션별 요구 사항에 따라 달라질 수 있습니다. 이 섹션에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 데이터 유효성 검사를 사용하는 방법을 설명합니다.  
   
 ### <a name="associating-validation-rules-with-a-binding"></a>유효성 검사 규칙과 바인딩 연결  
  합니다 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 데이터 바인딩 모델에 연결할 수 있습니다 <xref:System.Windows.Data.Binding.ValidationRules%2A> 사용 하 여 프로그램 <xref:System.Windows.Data.Binding> 개체입니다. 예를 들어, 다음 예제에서는 <xref:System.Windows.Controls.TextBox> 라는 속성으로 `StartPrice` 추가 <xref:System.Windows.Controls.ExceptionValidationRule> 개체는 <xref:System.Windows.Data.Binding.ValidationRules%2A?displayProperty=nameWithType> 속성입니다.  
@@ -381,7 +381,7 @@ ms.locfileid: "45990078"
   
 <a name="invalidation_feedback"></a>   
 ### <a name="providing-visual-feedback"></a>시각적 피드백 제공  
- 사용자가 잘못된 값을 입력할 경우 응용 프로그램 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]에 오류에 대한 피드백을 표시해야 할 수 있습니다. 사용자 의견 설정 하는 것을 제공 하는 한 가지 방법은 합니다 <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> 연결 된 속성을 사용자 지정 <xref:System.Windows.Controls.ControlTemplate>합니다. 이전 하위 섹션에 표시 된 대로 합니다 *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> 사용 하는 <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> 호출 *validationTemplate*. 다음 예제에서는 *validationTemplate*의 정의를 보여 줍니다.  
+ 사용자가 잘못된 값을 입력할 경우 애플리케이션 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]에 오류에 대한 피드백을 표시해야 할 수 있습니다. 사용자 의견 설정 하는 것을 제공 하는 한 가지 방법은 합니다 <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> 연결 된 속성을 사용자 지정 <xref:System.Windows.Controls.ControlTemplate>합니다. 이전 하위 섹션에 표시 된 대로 합니다 *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> 사용 하는 <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> 호출 *validationTemplate*. 다음 예제에서는 *validationTemplate*의 정의를 보여 줍니다.  
   
  [!code-xaml[DataBindingLab#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#1)]  
   
@@ -429,11 +429,11 @@ ms.locfileid: "45990078"
 ## <a name="debugging-mechanism"></a>디버깅 메커니즘  
  연결된 된 속성을 설정할 수 있습니다 <xref:System.Diagnostics.PresentationTraceSources.TraceLevel%2A?displayProperty=nameWithType> 바인딩 관련 개체는 특정 바인딩 상태에 대 한 정보를 받을 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.DataErrorValidationRule>  
- [WPF 버전 4.5의 새로운 기능](../../../../docs/framework/wpf/getting-started/whats-new.md)  
- [LINQ 쿼리 결과에 바인딩](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)  
- [데이터 바인딩](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [데이터 바인딩 데모](https://go.microsoft.com/fwlink/?LinkID=163703)  
- [방법 항목](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
- [ADO.NET 데이터 소스 바인딩](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.DataErrorValidationRule>
+- [WPF 버전 4.5의 새로운 기능](../../../../docs/framework/wpf/getting-started/whats-new.md)
+- [LINQ 쿼리 결과에 바인딩](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)
+- [데이터 바인딩](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [데이터 바인딩 데모](https://go.microsoft.com/fwlink/?LinkID=163703)
+- [방법 항목](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [ADO.NET 데이터 소스 바인딩](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)

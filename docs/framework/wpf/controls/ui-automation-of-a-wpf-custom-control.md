@@ -10,17 +10,17 @@ helpviewer_keywords:
 - custom controls [WPF], improving accessibility
 - UI Automation [WPF], using with custom controls
 ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
-ms.openlocfilehash: 0e77b26bdc7eaa038c69a6fb706ee066aa223a2e
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 96107c287003cc5fca2eb0eaa86f0f1f32b7d65e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44211954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54523699"
 ---
 # <a name="ui-automation-of-a-wpf-custom-control"></a>WPF 사용자 지정 컨트롤의 UI 자동화
 [!INCLUDE[TLA#tla_uiautomation](../../../../includes/tlasharptla-uiautomation-md.md)]에서는 자동화 클라이언트가 다양한 플랫폼 및 프레임워크의 사용자 인터페이스를 검사하거나 운영하는 데 사용할 수 있는 일반화된 단일 인터페이스를 제공합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)]를 통해 품질 보증(테스트) 코드 및 화면 읽기 프로그램과 같은 접근성 응용 프로그램은 사용자 인터페이스 요소를 검사하고 다른 코드에서 해당 요소에 대한 사용자 상호 작용을 시뮬레이트할 수 있습니다. 모든 플랫폼에서 [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)]에 대한 자세한 내용은 접근성을 참조하세요.  
   
- 이 항목에서는 WPF 응용 프로그램에서 실행되는 사용자 지정 컨트롤에 대한 서버 쪽 UI 자동화 공급자를 구현하는 방법을 설명합니다. WPF는 사용자 인터페이스 요소의 트리에 대응하는 피어 자동화 개체의 트리를 통해 [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)]를 지원합니다. 접근성 기능을 제공하는 응용 프로그램 및 테스트 코드는 자동화 피어 개체를 직접 사용(in-process 코드의 경우)하거나 [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)]에서 제공하는 일반화된 인터페이스를 통해 사용할 수 있습니다.  
+ 이 항목에서는 WPF 애플리케이션에서 실행되는 사용자 지정 컨트롤에 대한 서버 쪽 UI 자동화 공급자를 구현하는 방법을 설명합니다. WPF는 사용자 인터페이스 요소의 트리에 대응하는 피어 자동화 개체의 트리를 통해 [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)]를 지원합니다. 접근성 기능을 제공하는 애플리케이션 및 테스트 코드는 자동화 피어 개체를 직접 사용(in-process 코드의 경우)하거나 [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)]에서 제공하는 일반화된 인터페이스를 통해 사용할 수 있습니다.  
   
  
   
@@ -30,7 +30,7 @@ ms.locfileid: "44211954"
   
 <a name="BuiltInAutomationPeerClasses"></a>   
 ## <a name="built-in-automation-peer-classes"></a>기본 제공 자동화 피어 클래스  
- 요소는 사용자의 인터페이스 작업을 허용하는 경우 또는 화면 읽기 프로그램 응용 프로그램 사용자에게 필요한 정보를 포함하는 경우 자동화 피어 클래스를 구현합니다. 일부 WPF 시각적 요소에는 자동화 피어가 없습니다. 자동화 피어를 구현 하는 클래스의 예로 <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.TextBox>, 및 <xref:System.Windows.Controls.Label>합니다. 자동화 피어를 구현 하지 않는 클래스의 예로에서 파생 된 클래스 <xref:System.Windows.Controls.Decorator>와 같은 <xref:System.Windows.Controls.Border>, 및 클래스에 따라 <xref:System.Windows.Controls.Panel>와 같은 <xref:System.Windows.Controls.Grid> 및 <xref:System.Windows.Controls.Canvas>합니다.  
+ 요소는 사용자의 인터페이스 작업을 허용하는 경우 또는 화면 읽기 프로그램 애플리케이션 사용자에게 필요한 정보를 포함하는 경우 자동화 피어 클래스를 구현합니다. 일부 WPF 시각적 요소에는 자동화 피어가 없습니다. 자동화 피어를 구현 하는 클래스의 예로 <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.TextBox>, 및 <xref:System.Windows.Controls.Label>합니다. 자동화 피어를 구현 하지 않는 클래스의 예로에서 파생 된 클래스 <xref:System.Windows.Controls.Decorator>와 같은 <xref:System.Windows.Controls.Border>, 및 클래스에 따라 <xref:System.Windows.Controls.Panel>와 같은 <xref:System.Windows.Controls.Grid> 및 <xref:System.Windows.Controls.Canvas>합니다.  
   
  기본 <xref:System.Windows.Controls.Control> 클래스에는 해당 피어 클래스가 없습니다. 피어 클래스에서 파생 되는 사용자 지정 컨트롤에 해당 하는 경우 <xref:System.Windows.Controls.Control>, 사용자 지정 피어 클래스를 파생 해야 <xref:System.Windows.Automation.Peers.FrameworkElementAutomationPeer>합니다.  
   
@@ -154,7 +154,7 @@ End Class
  [!code-csharp[CustomControlNumericUpDown#RaiseEventFromControl](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#raiseeventfromcontrol)]
  [!code-vb[CustomControlNumericUpDown#RaiseEventFromControl](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#raiseeventfromcontrol)]  
   
-## <a name="see-also"></a>참고 항목  
- [UI 자동화 개요](../../../../docs/framework/ui-automation/ui-automation-overview.md)  
- [테마 및 UI 자동화 지원 샘플이 있는 NumericUpDown 사용자 지정 컨트롤](https://go.microsoft.com/fwlink/?LinkID=160025)  
- [서버 쪽 UI 자동화 공급자 구현](../../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## <a name="see-also"></a>참고자료
+- [UI 자동화 개요](../../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [테마 및 UI 자동화 지원 샘플이 있는 NumericUpDown 사용자 지정 컨트롤](https://go.microsoft.com/fwlink/?LinkID=160025)
+- [서버 쪽 UI 자동화 공급자 구현](../../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

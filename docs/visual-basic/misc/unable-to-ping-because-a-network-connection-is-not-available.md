@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrNetwork_NetworkNotAvailable
 ms.assetid: 8d2bac12-bc6a-42ae-b28b-80b026dfabce
-ms.openlocfilehash: f8659c1ef21dc61680d5de37f9de2b37732b06f9
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 25cf0acb6355d792f5ad286826a8603dc122449d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44193611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512479"
 ---
 # <a name="unable-to-ping-because-a-network-connection-is-not-available"></a>네트워크 연결을 사용할 수 없어 ping을 실행할 수 없습니다.
 네트워크 연결을 사용할 수 없으므로 작업을 수행할 수 없습니다.  
@@ -18,8 +18,8 @@ ms.locfileid: "44193611"
   
 -   네트워크에 연결하고 작업을 다시 시도합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [My.Computer.Network.Ping](xref:Microsoft.VisualBasic.Devices.Network.Ping%2A)  
- [My.Computer.Network.IsAvailable](xref:Microsoft.VisualBasic.Devices.Network.IsAvailable)  
- [Visual Basic을 사용한.NET Framework의 네트워크 작업](https://msdn.microsoft.com/library/c5379021-44ef-4d6a-acf5-e951fdcab6b2)  
- [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network)
+## <a name="see-also"></a>참고자료
+- [My.Computer.Network.Ping](xref:Microsoft.VisualBasic.Devices.Network.Ping%2A)
+- [My.Computer.Network.IsAvailable](xref:Microsoft.VisualBasic.Devices.Network.IsAvailable)
+- [Visual Basic을 사용한 .NET Framework의 네트워크 작업](https://msdn.microsoft.com/library/c5379021-44ef-4d6a-acf5-e951fdcab6b2)
+- [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network)

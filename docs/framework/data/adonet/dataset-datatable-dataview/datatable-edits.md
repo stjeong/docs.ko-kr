@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f08008a9-042e-4de9-94f3-4f0e502b1eb5
-ms.openlocfilehash: 1d9321a1db4f68195fb914f271fb98f904d2f963
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 473ea9963ce192f42e418bebc8e38971019350e3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43805808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54548562"
 ---
 # <a name="datatable-edits"></a>DataTable 편집
 <xref:System.Data.DataRow>에서 열 값을 변경하는 경우, 변경된 값은 현재 상태의 행에 바로 저장됩니다. <xref:System.Data.DataRowState> 로 설정 **Modified**, 및 변경 내용을 허용 또는 거부를 사용 하 여를 <xref:System.Data.DataRow.AcceptChanges%2A> 또는 <xref:System.Data.DataRow.RejectChanges%2A> 의 메서드는 **DataRow**합니다. 합니다 **DataRow** 편집 하는 동안 행의 상태를 일시 중단 하는 데 사용할 수 있는 세 가지 방법을 제공 합니다. 이러한 메서드에는 <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> 및 <xref:System.Data.DataRow.CancelEdit%2A>이 있습니다.  
   
- 열 값을 수정 하는 경우는 **DataRow** 를 직접를 **DataRow** 사용 하 여 열 값을 관리 하는 **현재**, **기본**, 및 **원래** 행 버전입니다. 이러한 행 버전 외에 **BeginEdit**를 **EndEdit**, 및 **CancelEdit** 메서드는 네 번째 행 버전을 사용: **Proposed**합니다. 행 버전에 대 한 자세한 내용은 참조 하세요. [행 상태 및 행 버전](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)합니다.  
+ 열 값을 수정 하는 경우는 **DataRow** 를 직접를 **DataRow** 사용 하 여 열 값을 관리 하는 **현재**, **기본**, 및 **원래** 행 버전입니다. 이러한 행 버전 외에도 **BeginEdit**, **EndEdit**, 및 **CancelEdit** 메서드는 네 번째 행 버전을 사용 합니다. **제안 된**합니다. 행 버전에 대 한 자세한 내용은 참조 하세요. [행 상태 및 행 버전](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)합니다.  
   
  **Proposed** 호출 하 여 시작 하는 편집 작업 중에 행 버전이 **BeginEdit** 를 사용 하 여 끝나는 **EndEdit** 또는 **CancelEdit**  또는 전화 800-659-3579 **AcceptChanges** 하거나 **RejectChanges**합니다.  
   
@@ -86,10 +86,10 @@ protected static void OnColumnChanged(
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Data.DataRow>  
- <xref:System.Data.DataTable>  
- <xref:System.Data.DataRowVersion>  
- [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [DataTable 이벤트 처리](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- <xref:System.Data.DataRow>
+- <xref:System.Data.DataTable>
+- <xref:System.Data.DataRowVersion>
+- [DataTable에서 데이터 조작](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
+- [DataTable 이벤트 처리](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

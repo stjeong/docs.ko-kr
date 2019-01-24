@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - user-defined bindings [WCF]
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
-ms.openlocfilehash: 7be7c156ec20a15cf8d1a12d8d1f429b6c2c33a9
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 6b3a5bbc93fa6465f70295cc6a3d7528039fb787
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50186059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54548796"
 ---
 # <a name="creating-user-defined-bindings"></a>사용자 정의 바인딩 만들기
 시스템에서 제공하지 않는 바인딩은 다음과 같은 여러 가지 방법으로 만들 수 있습니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "50186059"
 ## <a name="the-order-of-binding-elements"></a>바인딩 요소 순서  
  각 바인딩 요소는 메시지를 보내거나 받을 때의 처리 단계를 나타냅니다. 런타임에 바인딩 요소는 나가고 들어오는 채널 스택을 빌드하는 데 필요한 채널 및 수신기를 만듭니다.  
   
- 프로토콜 바인딩 요소, 인코딩 바인딩 요소 및 전송 바인딩 요소의 세 가지 주요 바인딩 요소 형식이 있습니다.  
+ 세 가지 주요 형식의 바인딩 요소는 프로토콜 바인딩 요소, 인코딩 바인딩 요소 및 전송 바인딩 요소입니다.  
   
  프로토콜 바인딩 요소 – 이 요소는 메시지에 대해 수행하는 높은 수준의 처리 단계를 나타냅니다. 이러한 바인딩 요소로 만들어진 채널 및 수신기는 메시지 내용을 추가, 제거 또는 수정할 수 있습니다. 제공된 바인딩에는 임의의 개수의 프로토콜 바인딩 요소가 포함될 수 있으며 각 요소는 <xref:System.ServiceModel.Channels.BindingElement>에서 상속됩니다. Windows Communication Foundation (WCF)를 비롯 한 여러 프로토콜 바인딩 요소가 포함 된 <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> 및 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>합니다.  
   
@@ -39,7 +39,7 @@ ms.locfileid: "50186059"
 |안정성|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType>|아니요|  
 |보안|<xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType>|아니요|  
 |복합 이중|<xref:System.ServiceModel.Channels.CompositeDuplexBindingElement?displayProperty=nameWithType>|아니요|  
-|Encoding|텍스트, 이진, MTOM, 사용자 지정|예*|  
+|인코딩|텍스트, 이진, MTOM, 사용자 지정|예*|  
 |전송|TCP, 명명된 파이프, HTTP, HTTPS, MSMQ, 사용자 지정|예|  
   
  * 인코딩은 이므로 각 바인딩의 필수적 요소는 인코딩이 지정 되지 않은 경우, WCF는 기본 인코딩을 추가 합니다. 기본값은 HTTP 및 HTTPS 전송의 경우 텍스트/XML이고 그렇지 않은 경우 이진입니다.  
@@ -56,7 +56,7 @@ Binding customBinding = new CustomBinding(
 );  
 ```  
   
- 새 바인딩 요소를 작성하는 방법은 정확한 기능에 따라 달라집니다. 샘플 중 하나 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md), 한 종류의 바인딩 요소를 구현 하는 방법에 대 한 자세한 설명을 제공 합니다.  
+ 새 바인딩 요소를 작성하는 방법은 정확한 기능에 따라 달라집니다. 샘플 중 [전송 합니다. UDP](../../../../docs/framework/wcf/samples/transport-udp.md), 한 종류의 바인딩 요소를 구현 하는 방법에 대 한 자세한 설명을 제공 합니다.  
   
 ## <a name="creating-a-new-binding"></a>새 바인딩 만들기  
  사용자가 만든 바인딩 요소는 두 가지 방법으로 사용할 수 있습니다. 이전 단원에서는 사용자 지정 바인딩을 통해 사용하는 첫 번째 방법을 보여 줍니다. 사용자 지정 바인딩에서는 사용자가 만든 바인딩을 비롯한 임의의 바인딩 요소 집합에 따라 직접 바인딩을 만들 수 있습니다.  
@@ -118,6 +118,6 @@ public override BindingElementCollection CreateBindingElements()
 ## <a name="deriving-from-a-standard-binding"></a>표준 바인딩에서 파생  
  완전히 새로운 바인딩 클래스를 만드는 대신 기존의 시스템 제공 바인딩 중 하나를 확장할 수 있습니다. 앞의 경우와 마찬가지로 <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> 메서드 및 <xref:System.ServiceModel.Channels.Binding.Scheme%2A> 속성을 재정의해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.Binding>  
- [사용자 지정 바인딩](../../../../docs/framework/wcf/extending/custom-bindings.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.Binding>
+- [사용자 지정 바인딩](../../../../docs/framework/wcf/extending/custom-bindings.md)

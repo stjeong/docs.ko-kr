@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9ed65181abab58117d539d23fcfeffe71ac19388
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: b69aa42fc2ebb9f59cbf699d83b521704805ea5f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33430572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54519751"
 ---
 # <a name="assemblyinfo-structure"></a>ASSEMBLY_INFO 구조체
-전역 어셈블리 캐시에 등록 되어 있는 어셈블리에 대 한 정보를 포함 합니다.  
+전역 어셈블리 캐시에 등록 된 어셈블리에 대 한 정보를 포함 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,19 +42,19 @@ typedef struct _ASSEMBLY_INFO {
   
 |멤버|설명|  
 |------------|-----------------|  
-|`cbAssemblyInfo`|구조체의 바이트 크기입니다. 이 필드는 다음 버전의 확장에 대 한 예약 되어 있습니다.|  
-|`dwAssemblyFlags`|어셈블리에 대 한 설치 세부 정보를 나타내는 플래그입니다. 다음 값이 지원 됩니다.<br /><br /> -ASSEMBLYINFO_FLAG_INSTALLED 나타내는 값을 어셈블리가 설치 됩니다. 현재 버전의.NET Framework 항상 설정 `dwAssemblyFlags` 이 값으로.<br />-ASSEMBLYINFO_FLAG_PAYLOADRESIDENT 값, 상주 페이로드 어셈블리 임을 나타냅니다. 현재 버전의.NET Framework를 설정 하지 `dwAssemblyFlags` 이 값으로.|  
-|`uliAssemblySizeInKB`|(킬로바이트) 어셈블리에 포함 되어 있는 파일의 총 크기입니다.|  
-|`pszCurrentAssemblyPathBuf`|매니페스트 파일에는 현재 경로 보유 하는 문자열 버퍼에 대 한 포인터입니다. 경로 null 문자로 종료 해야 합니다.|  
-|`cchBuf`|Null 종결자를 포함 하는 와이드 문자의 수를 `pszCurrentAssemblyPathBuf` 포함 합니다.|  
+|`cbAssemblyInfo`|구조체의 바이트 크기입니다. 이 필드는 향후 확장성을 위해 예약 되어 있습니다.|  
+|`dwAssemblyFlags`|어셈블리에 대 한 설치 세부 정보를 나타내는 플래그입니다. 다음 값이 지원 됩니다.<br /><br /> 어셈블리가 설치 되어 있는지 여부를 나타내는-ASSEMBLYINFO_FLAG_INSTALLED 값입니다. .NET Framework의 현재 버전을 항상 설정 `dwAssemblyFlags` 이 값으로.<br />어셈블리에 상주 하는 페이로드를 나타내는-ASSEMBLYINFO_FLAG_PAYLOADRESIDENT 값입니다. .NET Framework의 현재 버전을 설정 하지 `dwAssemblyFlags` 이 값으로.|  
+|`uliAssemblySizeInKB`|(킬로바이트) 어셈블리에 있는 파일의 총 크기입니다.|  
+|`pszCurrentAssemblyPathBuf`|매니페스트 파일에 대 한 현재 경로 포함 하는 문자열 버퍼에 대 한 포인터입니다. 경로 null 문자로 끝나야 합니다.|  
+|`cchBuf`|Null 종결자를 포함 하 여 와이드 문자 수는 `pszCurrentAssemblyPathBuf` 포함 되어 있습니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Fusion.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [Fusion 구조체](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)  
- [전역 어셈블리 캐시](../../../../docs/framework/app-domains/gac.md)
+## <a name="see-also"></a>참고자료
+- [Fusion 구조체](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+- [전역 어셈블리 캐시](../../../../docs/framework/app-domains/gac.md)

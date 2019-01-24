@@ -4,17 +4,17 @@ ms.date: 03/30/2017
 ms.assetid: 670a7653-dac6-4171-98ee-d669e3adf4b2
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3f5bf8252986ffa90ea5380d5342595cb91e5419
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 049f8e4d04498b70533134c01765af2d996d86dc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33424943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54499108"
 ---
 # <a name="isymunmanagedasyncmethodisasyncmethod-method"></a>ISymUnmanagedAsyncMethod::IsAsyncMethod 메서드
-여부는 메서드는 비동기 정보를 확인 합니다.  
+경우 메서드가 async 정보 여부를 확인 합니다.  
   
- 이 메서드가 반환 하는 경우 `FALSE` 이 인터페이스에서 다른 메서드를 호출 하는 데 유효한 되지 않습니다. 모든 return가 `E_UNEXPECTED` 이 경우.  
+ 이 메서드가 반환 하는 경우 `FALSE` 이 인터페이스에서 다른 메서드를 호출 하는 유효 하지 않습니다. 모든 반환 되며이 `E_UNEXPECTED` 이 경우.  
   
 ## <a name="syntax"></a>구문  
   
@@ -29,10 +29,10 @@ HRESULT IsAsyncMethod(    [out, retval] BOOL* pRetVal);
 |`pRetVal`||  
   
 ## <a name="return-value"></a>반환 값  
- `HRESULT`를 반환합니다.  
+ `HRESULT`을 반환합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedAsyncMethod 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedAsyncMethod 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)

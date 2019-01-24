@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e0b12b34-8004-443a-a46d-83a5c00f2601
-ms.openlocfilehash: b9e622903f871564495796b1690ab4e3a1f66fb7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3e1e0669b083e30db01c571c44830adfaff31d79
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54515311"
 ---
 # <a name="how-to-control-service-instancing"></a>방법: 서비스 인스턴스 만들기 제어
 서비스의 인스턴스 모드를 설정하면 <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType>(및 연결된 사용자 정의 서비스 개체)가 만들어지는 시기를 지정할 수 있습니다. 가능한 모드에 대해서는 <xref:System.ServiceModel.InstanceContextMode> 열거형을 참조하세요. 동작에 대 한 자세한 내용은 참조 하세요. [구성 및 동작을 사용 하 여 런타임 확장](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)합니다. 작업 예제를 보려면 [동작](../../../../docs/framework/wcf/samples/behaviors.md)합니다.  
@@ -30,8 +30,8 @@ ms.locfileid: "43514826"
  [!code-csharp[c_ControlServiceInstancing#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_controlserviceinstancing/cs/source.cs#2)]
  [!code-vb[c_ControlServiceInstancing#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb/source.vb#2)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.ServiceBehaviorAttribute>  
- <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>  
- <xref:System.ServiceModel.InstanceContextMode>  
- [서비스: 동작 샘플](https://msdn.microsoft.com/library/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.ServiceBehaviorAttribute>
+- <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>
+- <xref:System.ServiceModel.InstanceContextMode>
+- [서비스: 동작 샘플](https://msdn.microsoft.com/library/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7)

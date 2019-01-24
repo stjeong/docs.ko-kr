@@ -27,12 +27,12 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 343ee168809fc63ef63559eda0fd018abde684e7
-ms.sourcegitcommit: efff8f331fd9467f093f8ab8d23a203d6ecb5b60
+ms.openlocfilehash: 186238d8e823f028caaed2e2618d882d21e1358f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "43485744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54548952"
 ---
 # <a name="declare-statement"></a>Declare Statement
 외부 파일에 구현 된 프로시저에 대 한 참조를 선언 합니다.  
@@ -54,14 +54,14 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |용어|정의|  
 |---|---|  
 |`attributelist`|선택 사항입니다. 참조 [특성 목록](../../../visual-basic/language-reference/statements/attribute-list.md)합니다.|  
-|`accessmodifier`|선택 사항입니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [공용](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br />- [Private Protected](../../language-reference/modifiers/private-protected.md)<br /><br /> 참조 [액세스 수준을 Visual Basic의](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.|  
+|`accessmodifier`|선택 사항입니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [보호](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [개인](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br />- [Private Protected](../../language-reference/modifiers/private-protected.md)<br /><br /> [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.|  
 |`Shadows`|선택 사항입니다. 참조 [그림자](../../../visual-basic/language-reference/modifiers/shadows.md)합니다.|  
-|`charsetmodifier`|선택 사항입니다. 문자 집합과 파일 지정 정보를 검색 합니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) (기본값)<br />-   [유니코드](../../../visual-basic/language-reference/modifiers/unicode.md)<br />-   [자동](../../../visual-basic/language-reference/modifiers/auto.md)|  
+|`charsetmodifier`|선택 사항입니다. 문자 집합과 파일 지정 정보를 검색 합니다. 다음 중 하나일 수 있습니다.<br /><br /> -   [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) (기본값)<br />-   [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)<br />-   [Auto](../../../visual-basic/language-reference/modifiers/auto.md)|  
 |`Sub`|선택 사항 이지만 하나 `Sub` 또는 `Function` 나타나야 합니다. 외부 프로시저가 값을 반환 하지 않음을 나타냅니다.|  
 |`Function`|선택 사항 이지만 하나 `Sub` 또는 `Function` 나타나야 합니다. 외부 프로시저가 값을 반환 함을 나타냅니다.|  
-|`name`|필수. 이 외부 참조의 이름입니다. 자세한 내용은 [선언 요소 이름](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.|  
-|`Lib`|필수. 소개는 `Lib` 절 외부 프로시저를 포함 하는 외부 파일 (DLL 또는 코드 리소스)을 식별 합니다.|  
-|`libname`|필수. 선언 된 프로시저를 포함 하는 파일의 이름입니다.|  
+|`name`|필수 요소. 이 외부 참조의 이름입니다. 자세한 내용은 [선언 요소 이름](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.|  
+|`Lib`|필수 요소. 소개는 `Lib` 절 외부 프로시저를 포함 하는 외부 파일 (DLL 또는 코드 리소스)을 식별 합니다.|  
+|`libname`|필수 요소. 선언 된 프로시저를 포함 하는 파일의 이름입니다.|  
 |`Alias`|선택 사항입니다. 에 지정 된 이름으로 선언 되는 프로시저 파일 내에서 식별할 수 없음을 나타냅니다 `name`합니다. 해당 id를 지정할 `aliasname`합니다.|  
 |`aliasname`|사용 하는 경우 필요 합니다 `Alias` 키워드입니다. 두 가지 방법 중 하나에서 프로시저를 식별 하는 문자열:<br /><br /> 따옴표 안에 해당 파일 내에서 프로시저 진입점 (`""`)<br /><br /> 또는<br /><br /> 숫자 기호 (`#`) 뒤에 해당 파일 내에서 프로시저의 진입점의 서 수를 지정 하는 정수|  
 |`parameterlist`|프로시저 매개 변수를 사용 하는 경우 필요 합니다. 참조 [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md)합니다.|  
@@ -124,7 +124,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
   
     -   Windows NT, Windows 2000 또는 Windows XP와 같은 유니코드 플랫폼에서 먼저 이름 수정 하지 않을 외부 프로시저를 찾습니다. 실패 하는 경우 추가 "W" 끝에는 외부 프로시저의 이름을 지정 하 고 다시 조회 합니다.  
   
--   **메커니즘입니다.** .NET Framework를 사용 하는 Visual Basic *플랫폼 호출* (PInvoke)를 해결 하 고 외부 프로시저에 액세스 하는 메커니즘입니다. 합니다 `Declare` 문 및 <xref:System.Runtime.InteropServices.DllImportAttribute> 클래스에는 모두 자동으로이 메커니즘을 사용 하며 모든 지식이 PInvoke 필요가 없습니다. 자세한 내용은 [연습: Windows Api 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)합니다.  
+-   **Mechanism.** .NET Framework를 사용 하는 Visual Basic *플랫폼 호출* (PInvoke)를 해결 하 고 외부 프로시저에 액세스 하는 메커니즘입니다. 합니다 `Declare` 문 및 <xref:System.Runtime.InteropServices.DllImportAttribute> 클래스에는 모두 자동으로이 메커니즘을 사용 하며 모든 지식이 PInvoke 필요가 없습니다. 자세한 내용은 [연습: Windows Api 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)합니다.  
   
 > [!IMPORTANT]
 >  외부 프로시저를 CLR (공용 언어 런타임) 외부를 실행 하는 경우 *비관리 코드*합니다. 이러한 프로시저를 예를 들어 Win32 API 함수 또는 COM 메서드를 호출 하는 경우 보안 위험에 응용 프로그램을 노출할 수 있습니다. 자세한 내용은 [보안 코딩 지침 비관리 코드에 대 한](../../../framework/security/secure-coding-guidelines-for-unmanaged-code.md)합니다.  
@@ -141,12 +141,12 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
   
  [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
- [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [AddressOf 연산자](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Call 문](../../../visual-basic/language-reference/statements/call-statement.md)  
- [연습: Windows API 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+## <a name="see-also"></a>참고자료
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- [Imports 문(.NET 네임스페이스 및 형식)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [AddressOf 연산자](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Call 문](../../../visual-basic/language-reference/statements/call-statement.md)
+- [연습: Windows API 호출](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

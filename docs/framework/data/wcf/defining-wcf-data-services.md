@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, configuring
 ms.assetid: 05006ff3-02dc-410e-831e-54ec3e7e24ef
-ms.openlocfilehash: c0c9010a71877d2c9757a2c9cf2d5c1fec8aedf7
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: ac75f5fd91f68d9403dc7b42325bf8970f0c6794
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515539"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512297"
 ---
 # <a name="defining-wcf-data-services"></a>WCF Data Services 정의
 
@@ -57,7 +57,7 @@ ms.locfileid: "43515539"
 
  WCF Data Services에서 현재 구현 되지 않은 OData 프로토콜의 선택적 기능을 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [WCF Data Services 클라이언트 라이브러리](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
 - [데이터 서비스 리소스에 액세스](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)

@@ -4,18 +4,18 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - extensible objects [WCF]
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
-ms.openlocfilehash: 95bd354e3aed8e0968debcac160383eb9c26cd0a
-ms.sourcegitcommit: 15109844229ade1c6449f48f3834db1b26907824
+ms.openlocfilehash: f2738d6e3a5fc75ab2f5714dc6644267e4fa1e29
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33805199"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54495840"
 ---
 # <a name="extensible-objects"></a>확장 가능한 개체
 새 기능과 함께 기존 런타임 클래스를 확장하거나 새 상태를 개체에 추가하기 위해 확장명 가능한 개체 패턴이 사용됩니다. 확장명 가능한 개체 중 하나에 연결된 확장은 이 개체에서 액세스할 수 있는 확장명 가능한 일반 개체에 연결된 공유 상태 및 기능에 액세스하는 처리 시에 매우 다른 단계에서 동작을 활성화합니다.  
   
 ## <a name="the-iextensibleobjectt-pattern"></a>IExtensibleObject\<T > 패턴  
- 확장 가능한 개체 패턴에는 세 가지 인터페이스인 <xref:System.ServiceModel.IExtensibleObject%601>, <xref:System.ServiceModel.IExtension%601> 및 <xref:System.ServiceModel.IExtensionCollection%601>이 있습니다.  
+ 확장명 가능한 개체 패턴에는 세 가지 인터페이스인 <xref:System.ServiceModel.IExtensibleObject%601>, <xref:System.ServiceModel.IExtension%601> 및 <xref:System.ServiceModel.IExtensionCollection%601>이 있습니다.  
   
  <xref:System.ServiceModel.IExtensibleObject%601> 인터페이스는 <xref:System.ServiceModel.IExtension%601> 개체가 해당 기능을 사용자 지정할 수 있도록 하는 형식에 의해 구현됩니다.  
   
@@ -36,11 +36,11 @@ where T : IExtensibleObject<T>
   
  <xref:System.ServiceModel.IExtension%601>에서는 다른 관리되는 표준 인터페이스와의 상호 작용을 나타내지 않습니다. 특히 소유자 개체의 <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> 메서드는 일반적으로 확장을 분리하지 않습니다.  
   
- 확장 컬렉션에 추가 되 면 <xref:System.ServiceModel.IExtension%601.Attach%2A> 컬렉션에 진입 하기 전에 호출 됩니다. 확장 컬렉션에서 제거 되 면 <xref:System.ServiceModel.IExtension%601.Detach%2A> 제거 된 후 호출 됩니다. 수단 (적절 한 동기화 가정) 확장 신뢰할 수 있는 해당 하는 동안 컬렉션에서 발견 되 고이 범위에 속함 <xref:System.ServiceModel.IExtension%601.Attach%2A> 및 <xref:System.ServiceModel.IExtension%601.Detach%2A>합니다.  
+ 확장명 컬렉션에 추가 되 면 <xref:System.ServiceModel.IExtension%601.Attach%2A> 컬렉션으로 이동 하기 전에 호출 됩니다. 컬렉션에서 확장 제거 되 면 <xref:System.ServiceModel.IExtension%601.Detach%2A> 제거 된 후 호출 됩니다. (적절 한 동기화를 가정할 경우) 하는 방법을 확장 수만 해당 하는 동안 컬렉션에서 발견 되 고 이것이 간의 <xref:System.ServiceModel.IExtension%601.Attach%2A> 고 <xref:System.ServiceModel.IExtension%601.Detach%2A>입니다.  
   
  <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> 또는 <xref:System.ServiceModel.IExtensionCollection%601.Find%2A>에 전달된 개체가 <xref:System.ServiceModel.IExtension%601>일 필요는 없지만(예를 들어 아무 개체나 전달할 수 있음) 반환되는 확장은 <xref:System.ServiceModel.IExtension%601>입니다.  
   
- 컬렉션에 확장이 없는 경우는 <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> null을 반환 하 고 <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> 빈 컬렉션을 반환 합니다. 여러 확장을 구현 하는 경우 <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> 그 중 하나를 반환 합니다. <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A>에서 반환되는 값은 스냅숏입니다.
+ 확장명이 컬렉션에 없는 경우는 <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> null을 반환 하 고 <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> 빈 컬렉션을 반환 합니다. 여러 확장을 구현 하는 경우 <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> 그 중 하나를 반환 합니다. <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A>에서 반환되는 값은 스냅숏입니다.
   
  두 가지 주요 시나리오가 있습니다. 첫 번째 시나리오에서는 <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> 속성을 개체에 상태를 삽입하는 형식 기반 사전으로 사용하여 다른 구성 요소에서 해당 형식으로 개체를 조회할 수 있게 합니다.  
   
@@ -49,7 +49,7 @@ where T : IExtensibleObject<T>
  <xref:System.ServiceModel.IExtensionCollection%601> 인터페이스는 <xref:System.ServiceModel.IExtension%601>을 형식별로 검색할 수 있는 <xref:System.ServiceModel.IExtension%601> 개체의 컬렉션입니다. <xref:System.ServiceModel.IExtensionCollection%601.Find%2A?displayProperty=nameWithType>는 해당 형식의 <xref:System.ServiceModel.IExtension%601> 중에서 최근 추가된 개체만 반환합니다.  
   
 ### <a name="extensible-objects-in-windows-communication-foundation"></a>Windows Communication Foundation의 확장 가능한 개체  
- Windows Communication Foundation (WCF)에 4 개의 확장 가능한 개체:  
+ Windows Communication Foundation (WCF)에 네 개의 확장 가능한 개체:  
   
 -   <xref:System.ServiceModel.ServiceHostBase> – 서비스 호스트의 기본 클래스입니다.  이 클래스의 확장을 사용하여 <xref:System.ServiceModel.ServiceHostBase> 자체의 동작을 확장하거나 각 서비스의 상태를 저장할 수 있습니다.  
   
@@ -65,7 +65,7 @@ where T : IExtensibleObject<T>
   
  [!code-csharp[IInstanceContextInitializer#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/iinstancecontextinitializer/cs/initializer.cs#1)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.IExtensibleObject%601>  
- <xref:System.ServiceModel.IExtension%601>  
- <xref:System.ServiceModel.IExtensionCollection%601>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.IExtensibleObject%601>
+- <xref:System.ServiceModel.IExtension%601>
+- <xref:System.ServiceModel.IExtensionCollection%601>

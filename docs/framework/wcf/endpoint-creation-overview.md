@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - endpoints [WCF], overview
 ms.assetid: f4dce0fb-6f54-47e6-8054-86d7f574b91c
-ms.openlocfilehash: b72c3959b2a42c6a5abc8ef31975d5bdb9ce220e
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 0d7baacb9525e0c268ae53b0c3617324ecd0772f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54548991"
 ---
 # <a name="endpoint-creation-overview"></a>엔드포인트 만들기 개요
 Windows Communication Foundation (WCF) 서비스와 모든 통신을 통해 발생 합니다 *끝점* 서비스입니다. 끝점 클라이언트는 WCF 서비스를 제공 하는 기능에 대 한 액세스를 제공 합니다. 이 단원에서는 엔드포인트의 구조에 대해 설명하고 구성 및 코드에서 엔드포인트를 정의하는 방법을 간략하게 설명합니다.  
@@ -198,5 +198,5 @@ serviceHost.Open()
   
  엔드포인트를 명시적으로 제공하는 경우에도 <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A>을 호출하기 전에 <xref:System.ServiceModel.ServiceHost>에서 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>를 호출하여 기본 엔드포인트를 추가할 수 있습니다. 기본 끝점에 대 한 자세한 내용은 참조 하세요. [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) 하 고 [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [서비스 계약 구현](../../../docs/framework/wcf/implementing-service-contracts.md)
+## <a name="see-also"></a>참고자료
+- [서비스 계약 구현](../../../docs/framework/wcf/implementing-service-contracts.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - international user interface [WPF], XAML
 - globalization [WPF]
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
-ms.openlocfilehash: d2bb4c9a00f31cb87ad8890591aa190fac6384f9
-ms.sourcegitcommit: 700b9003ea6bdd83a53458bbc436c9b5778344f1
+ms.openlocfilehash: d7b544fcb308960ff86b83655d60cb1453b6571a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48261552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543817"
 ---
 # <a name="globalization-for-wpf"></a>WPF의 전역화
 이 항목에서는 소개를 작성할 때 알고 있어야 하는 문제 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 글로벌 시장 용 응용 프로그램입니다. 전역화 프로그래밍 요소에 정의 된 [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] 에서 `System.Globalization`합니다.
@@ -140,12 +140,12 @@ ms.locfileid: "48261552"
 -   *RightToLeft* - 아랍어, 히브리어 등을 위한 양방향.
 
 <a name="developing_localizable_apps"></a>
-## <a name="developing-localizable-applications"></a>지역화 가능 응용 프로그램 개발
- 글로벌 사용을 위해 응용 프로그램을 작성할 때 응용 프로그램을 지역화해야 한다는 점에 유의해야 합니다. 다음 항목에서는 고려할 사항을 제공합니다.
+## <a name="developing-localizable-applications"></a>지역화 가능 애플리케이션 개발
+ 글로벌 사용을 위해 애플리케이션을 작성할 때 애플리케이션을 지역화해야 한다는 점에 유의해야 합니다. 다음 항목에서는 고려할 사항을 제공합니다.
 
 <a name="mui"></a>
 ### <a name="multilingual-user-interface"></a>다국어 사용자 인터페이스
- 다국어 사용자 인터페이스 (MUI)는 한 [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] 전환에 대 한 지원 [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] 다른 언어에서입니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] MUI를 지원 하기 위해 어셈블리 모델을 사용 하는 응용 프로그램입니다. 한 응용 프로그램에는 언어 중립 어셈블리 외에도 언어별 위성 리소스 어셈블리도 포함됩니다. 진입점은 기본 어셈블리에서 관리되는 .EXE입니다.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 리소스 로더는 활용을 [!INCLUDE[TLA2#tla_netframewk](../../../../includes/tla2sharptla-netframewk-md.md)]의 resource manager 리소스 조회 및 대체 (fallback)를 지원 합니다. 여러 언어 위성 어셈블리는 동일한 기본 어셈블리와 작동합니다. 로드 되는 리소스 어셈블리가 종속 된 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> 현재 스레드의 합니다.
+ 다국어 사용자 인터페이스 (MUI)는 한 [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] 전환에 대 한 지원 [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] 다른 언어에서입니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] MUI를 지원 하기 위해 어셈블리 모델을 사용 하는 응용 프로그램입니다. 한 애플리케이션에는 언어 중립 어셈블리 외에도 언어별 위성 리소스 어셈블리도 포함됩니다. 진입점은 기본 어셈블리에서 관리되는 .EXE입니다.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 리소스 로더는 활용을 [!INCLUDE[TLA2#tla_netframewk](../../../../includes/tla2sharptla-netframewk-md.md)]의 resource manager 리소스 조회 및 대체 (fallback)를 지원 합니다. 여러 언어 위성 어셈블리는 동일한 기본 어셈블리와 작동합니다. 로드 되는 리소스 어셈블리가 종속 된 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> 현재 스레드의 합니다.
 
 <a name="localizable_ui"></a>
 ### <a name="localizable-user-interface"></a>지역화할 수 있는 사용자 인터페이스
@@ -157,8 +157,8 @@ ms.locfileid: "48261552"
 >  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램 일부를 지원 합니다 [!INCLUDE[TLA2#tla_netframewk](../../../../includes/tla2sharptla-netframewk-md.md)] [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 문자열 테이블, 이미지 등을 비롯 한 리소스입니다.
 
 <a name="building_localizable_apps"></a>
-### <a name="building-localizable-applications"></a>지역화 가능 응용 프로그램 빌드
- 지역화에 맞게 의미를 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 를 다른 문화권입니다. 확인을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 개발자가 지역화 가능한 리소스를 모두 리소스 어셈블리에 빌드해야 하는 데 필요한 지역화 합니다. 다른 언어로 지역화 된 리소스 어셈블리 및 코드 숨김에서는 리소스 관리 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] 를 로드 합니다. 에 필요한 파일 중 하나는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램은 프로젝트 파일 (.proj)입니다. 응용 프로그램에서 사용하는 모든 리소스는 프로젝트 파일에 포함되어야 합니다. .csprop 파일의 다음 예에서는 이 작업을 수행하는 방법을 보여줍니다.
+### <a name="building-localizable-applications"></a>지역화 가능 애플리케이션 빌드
+ 지역화에 맞게 의미를 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 를 다른 문화권입니다. 확인을 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램을 개발자가 지역화 가능한 리소스를 모두 리소스 어셈블리에 빌드해야 하는 데 필요한 지역화 합니다. 다른 언어로 지역화 된 리소스 어셈블리 및 코드 숨김에서는 리소스 관리 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] 를 로드 합니다. 에 필요한 파일 중 하나는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 응용 프로그램은 프로젝트 파일 (.proj)입니다. 애플리케이션에서 사용하는 모든 리소스는 프로젝트 파일에 포함되어야 합니다. .csprop 파일의 다음 예에서는 이 작업을 수행하는 방법을 보여줍니다.
 
 ```xml
 <Resource Include="data\picture1.jpg"/>
@@ -170,15 +170,15 @@ ms.locfileid: "48261552"
  [!code-csharp[LocalizationResources#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationResources/CSharp/page1.xaml.cs#2)]
 
 <a name="using_clickonce"></a>
-## <a name="using-clickonce-with-localized-applications"></a>지역화된 응용 프로그램에서 ClickOnce 사용
- ClickOnce는 Visual Studio 2005를 사용 하 여 제공 될 새 Windows Forms 배포 기술입니다. 응용 프로그램 설치 및 웹 응용 프로그램의 업그레이드를 수행할 수 있습니다. ClickOnce로 배포된 응용 프로그램이 지역화되면 지역화된 문화권에서만 볼 수 있습니다. 예를 들어 일본어로 지역화 된 응용 프로그램을 배포 하는 경우만 볼 수 있습니다 일본어 [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] 영어 Windows에 없습니다. 일본어 사용자가 Windows의 영어 버전에 대 한 일반적인 시나리오 이므로 문제가 초래 됩니다.
+## <a name="using-clickonce-with-localized-applications"></a>지역화된 애플리케이션에서 ClickOnce 사용
+ ClickOnce는 Visual Studio 2005를 사용 하 여 제공 될 새 Windows Forms 배포 기술입니다. 애플리케이션 설치 및 웹 애플리케이션의 업그레이드를 수행할 수 있습니다. ClickOnce로 배포된 애플리케이션이 지역화되면 지역화된 문화권에서만 볼 수 있습니다. 예를 들어 일본어로 지역화 된 응용 프로그램을 배포 하는 경우만 볼 수 있습니다 일본어 [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] 영어 Windows에 없습니다. 일본어 사용자가 Windows의 영어 버전에 대 한 일반적인 시나리오 이므로 문제가 초래 됩니다.
 
- 이 문제는 중립 언어 대체 특성을 설정하여 해결합니다. 응용 프로그램 개발자가 선택적으로 기본 어셈블리에서 리소스를 제거하고 특정 문화권에 해당하는 위성 어셈블리에서 해당 리소스를 찾을 수 있게 지정할 수 있습니다. 이 프로세스 사용을 제어 하는 <xref:System.Resources.NeutralResourcesLanguageAttribute>합니다. 생성자는 <xref:System.Resources.NeutralResourcesLanguageAttribute> 클래스에 사용 하는 두 개의 서명을 <xref:System.Resources.UltimateResourceFallbackLocation> 위치를 지정 하려면 매개 변수 위치는 <xref:System.Resources.ResourceManager> 대체 (fallback) 리소스를 추출 해야: 주 어셈블리 또는 위성 어셈블리입니다. 다음 예제에서는 이 특성을 사용하는 방법을 보여 줍니다. Ultimate 대체 (fallback) 위치에 대 한 코드는 다음과 같이 하면 됩니다.는 <xref:System.Resources.ResourceManager> 현재 실행 중인 어셈블리의 디렉터리의 "de" 하위 디렉터리에 있는 리소스를 찾도록 합니다.
+ 이 문제는 중립 언어 대체 특성을 설정하여 해결합니다. 애플리케이션 개발자가 선택적으로 기본 어셈블리에서 리소스를 제거하고 특정 문화권에 해당하는 위성 어셈블리에서 해당 리소스를 찾을 수 있게 지정할 수 있습니다. 이 프로세스 사용을 제어 하는 <xref:System.Resources.NeutralResourcesLanguageAttribute>합니다. 생성자는 <xref:System.Resources.NeutralResourcesLanguageAttribute> 클래스에 사용 하는 두 개의 서명을 <xref:System.Resources.UltimateResourceFallbackLocation> 위치를 지정 하려면 매개 변수 위치는 <xref:System.Resources.ResourceManager> 대체 (fallback) 리소스를 추출 해야: 주 어셈블리 또는 위성 어셈블리입니다. 다음 예제에서는 이 특성을 사용하는 방법을 보여 줍니다. Ultimate 대체 (fallback) 위치에 대 한 코드는 다음과 같이 하면 됩니다.는 <xref:System.Resources.ResourceManager> 현재 실행 중인 어셈블리의 디렉터리의 "de" 하위 디렉터리에 있는 리소스를 찾도록 합니다.
 
 ```
 [assembly: NeutralResourcesLanguageAttribute(
     "de" , UltimateResourceFallbackLocation.Satellite)]
 ```
 
-## <a name="see-also"></a>참고 항목
- [WPF 전역화 및 지역화 개요](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
+## <a name="see-also"></a>참고자료
+- [WPF 전역화 및 지역화 개요](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 444b0d33-67ea-4c36-9e94-79c50f839025
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 457310fbf12ef2d6143586116f76df1720b59a6f
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: cdccc0d60cb5f4bbee5da9b07072a9aa14a8fde9
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33391761"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54500737"
 ---
 # <a name="trace-listeners"></a>추적 수신기
 **Trace**, **Debug** 및 <xref:System.Diagnostics.TraceSource>를 사용하는 경우 전송된 메시지를 수집 및 기록하는 메커니즘이 있어야 합니다. *수신기*가 추적 메시지를 수신합니다. 수신기의 목적은 추적 메시지를 수집, 저장 및 라우팅하는 것입니다. 수신기는 추적 출력을 로그, 창 또는 텍스트 파일과 같은 적절한 대상에 보냅니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "33391761"
   
 -   <xref:System.Diagnostics.XmlWriterTraceListener>는 추적 및 디버깅 출력을 XML로 인코딩된 데이터로 <xref:System.IO.TextWriter> 또는 <xref:System.IO.Stream>(예: <xref:System.IO.FileStream>)에 전달합니다.  
   
- <xref:System.Diagnostics.DefaultTraceListener> 이외의 수신기가 **Debug**, **Trace** 및 <xref:System.Diagnostics.TraceSource> 출력을 수신하게 하려면 수신기를 `Listeners` 컬렉션에 추가해야 합니다. 자세한 내용은 [방법: 추적 수신기 만들기 및 초기화](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners.md) 및 [방법: 추적 수신기와 함께 TraceSource 및 필터 사용](../../../docs/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md)을 참조하세요. **Listeners** 컬렉션의 모든 수신기는 추적 출력 메서드에서 같은 메시지를 가져옵니다. 예를 들어 두 가지 수신기인 **TextWriterTraceListener** 및 **EventLogTraceListener**를 설정한다고 가정합니다. 각 수신기는 같은 메시지를 수신합니다. **TextWriterTraceListener**는 출력을 스트림에 전달하고 **EventLogTraceListener**는 출력을 이벤트 로그에 전달합니다.  
+ <xref:System.Diagnostics.DefaultTraceListener> 이외의 수신기가 **Debug**, **Trace** 및 <xref:System.Diagnostics.TraceSource> 출력을 수신하게 하려면 수신기를 `Listeners` 컬렉션에 추가해야 합니다. 자세한 내용은 [방법: 추적 수신기 만들기 및 초기화](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners.md) 고 [방법: 추적 수신기와 함께 TraceSource 및 필터를 사용 하 여](../../../docs/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md)입니다. **Listeners** 컬렉션의 모든 수신기는 추적 출력 메서드에서 같은 메시지를 가져옵니다. 예를 들어 두 가지 수신기인 **TextWriterTraceListener** 및 **EventLogTraceListener**를 설정한다고 가정합니다. 각 수신기는 같은 메시지를 수신합니다. **TextWriterTraceListener**는 출력을 스트림에 전달하고 **EventLogTraceListener**는 출력을 이벤트 로그에 전달합니다.  
   
  다음 예제에서는 출력을 **Listeners** 컬렉션에 보내는 방법을 보여 줍니다.  
   
@@ -58,7 +58,7 @@ System.Diagnostics.Debug.WriteLine("Error in Widget 42");
 System.Diagnostics.Trace.WriteLine("Error in Widget 42");  
 ```  
   
- Debug 및 Trace는 같은 **Listeners** 컬렉션을 공유하므로, 수신기 개체를 응용 프로그램의 **Debug.Listeners** 컬렉션에 추가하면 **Trace.Listeners** 컬렉션에도 추가됩니다.  
+ Debug 및 Trace는 같은 **Listeners** 컬렉션을 공유하므로, 수신기 개체를 애플리케이션의 **Debug.Listeners** 컬렉션에 추가하면 **Trace.Listeners** 컬렉션에도 추가됩니다.  
   
  다음 예제에서는 수신기를 사용하여 추적 정보를 콘솔에 보내는 방법을 보여 줍니다.  
   
@@ -76,10 +76,10 @@ System.Diagnostics.Trace.Listeners.Add(
 ## <a name="developer-defined-listeners"></a>개발자 정의 수신기  
  **TraceListener** 기본 클래스에서 상속하고 해당 메서드를 사용자 지정 메서드로 재정의하는 방식으로 고유한 수신기를 정의할 수 있습니다. 개발자 정의 수신기를 만드는 방법에 대한 자세한 내용은 .NET Framework 참조에서 <xref:System.Diagnostics.TraceListener>를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TraceListener>  
- [응용 프로그램 추적 및 조율](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
- [추적 스위치](../../../docs/framework/debug-trace-profile/trace-switches.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TraceListener>
+- [응용 프로그램 추적 및 조율](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [추적 스위치](../../../docs/framework/debug-trace-profile/trace-switches.md)

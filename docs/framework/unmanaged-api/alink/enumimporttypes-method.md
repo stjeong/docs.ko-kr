@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 90319886dfe149a3d2d76451c1a8526299cf5b89
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 4e437868138d7ae31d233853ecc0f709de3ee39d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33401650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512725"
 ---
 # <a name="enumimporttypes-method"></a>EnumImportTypes 메서드
-각 범위에서 각 유형을 열거합니다.  
+각 범위에서 각 종류를 열거합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,13 +43,13 @@ HRESULT EnumImportTypes(
  열거자에 대 한 핸들입니다.  
   
  `dwMax`  
- 검색할 형식의 최대 수입니다.  
+ 최대 검색 하는 형식입니다.  
   
  `aTypeDefs`  
  형식 토큰을 넘지 받습니다 `dwMax`합니다.  
   
  `pdwCount`  
- 형식의 실제 수를 받는 `aTypeDefs`합니다.  
+ 실제 수를 입력 받는 `aTypeDefs`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK를 반환 합니다.  
@@ -57,7 +57,7 @@ HRESULT EnumImportTypes(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

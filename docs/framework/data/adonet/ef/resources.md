@@ -2,12 +2,12 @@
 title: Entity Framework 리소스
 ms.date: 03/30/2017
 ms.assetid: 0bb04c18-4a14-42a4-baa9-a63d556c9f49
-ms.openlocfilehash: bc1a5b76ecc038d8059b04f4dc222126e796f03d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 24ee9225b8e19eac93554d2243aac0cafd5e9ef0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53128676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54522455"
 ---
 # <a name="entity-framework-resources"></a>Entity Framework 리소스
 다음 외부 리소스는 Entity Framework 응용 프로그램을 만들기 위한 정보와 지원을 제공합니다.  
@@ -27,8 +27,8 @@ ms.locfileid: "53128676"
  [Entity Framework FAQ](https://social.technet.microsoft.com/wiki/contents/articles/3737.entity-framework-faq.aspx)  
  Wiki 섹션 포함 된 자주 묻는 질문 Entity Framework에 대 한 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)  
- [시작](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- [Entity Framework 용어](../../../../../docs/framework/data/adonet/ef/terminology.md)  
- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+## <a name="see-also"></a>참고자료
+- [Entity Framework 개요](../../../../../docs/framework/data/adonet/ef/overview.md)
+- [시작](../../../../../docs/framework/data/adonet/ef/getting-started.md)
+- [Entity Framework 용어](../../../../../docs/framework/data/adonet/ef/terminology.md)
+- [ADO.NET 엔터티 데이터 모델 도구](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)

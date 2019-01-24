@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 529a65285203ac831e1bcab9dc1bea69ac28a282
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 115a998f8be233c38efac1a301b4b24b7d861662
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33412567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540184"
 ---
 # <a name="icordebugcontrollercontinue-method"></a>ICorDebugController::Continue 메서드
-관리 되는 스레드를 호출한 후 실행을 계속 [Stop 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)합니다.  
+호출한 후 관리 되는 스레드의 실행을 다시 시작 [Stop 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,25 +37,25 @@ HRESULT Continue (
   
 #### <a name="parameters"></a>매개 변수  
  `fIsOutOfBand`  
- [in] 로 설정 `true` 밴드의 범위를 벗어난 이벤트;에서 계속 실행 하는 경우 이렇게 하지 않으면으로 설정 `false`합니다.  
+ [in] 로 `true` 대역의 이벤트;에서 계속 실행 하는 경우이 고, 그렇지로 `false`합니다.  
   
 ## <a name="remarks"></a>설명  
- `Continue` 호출한 후 프로세스를 계속는 `ICorDebugController::Stop` 메서드.  
+ `Continue` 호출한 후 프로세스를 계속 합니다 `ICorDebugController::Stop` 메서드.  
   
- 혼합 모드 디버깅을 수행할 때 호출 하지 않으면 `Continue` Win32에 이벤트 스레드 대역의 이벤트에서 계속 실행 하는 경우가 아니면 합니다.  
+ 혼합 모드 디버깅을 수행 하는 경우 호출 하지 마십시오 `Continue` Win32에서 이벤트 스레드 대역의 이벤트에서 계속 실행 하는 경우가 아니면 합니다.  
   
- *대역 이벤트* 는 관리 되는 이벤트 또는 일반 관리 되지 않는 이벤트는 디버거 프로세스의 관리 되는 상태와의 상호 작용을 지원 합니다. 디버거 수신 하는 경우에 [icordebugunmanagedcallback:: Debugevent](../../../../docs/framework/unmanaged-api/debugging/icordebugunmanagedcallback-debugevent-method.md) 사용 콜백을 해당 `fOutOfBand` 매개 변수 설정 `false`합니다.  
+ *대역 내 이벤트* 는 관리 되는 이벤트 또는 디버거는 프로세스의 관리 되는 상태와의 상호 작용을 지 원하는 일반 관리 되지 않는 이벤트입니다. 이 경우 디버거가 수신 합니다 [icordebugunmanagedcallback:: Debugevent](../../../../docs/framework/unmanaged-api/debugging/icordebugunmanagedcallback-debugevent-method.md) 사용 하 여 콜백을 해당 `fOutOfBand` 매개 변수 설정 `false`합니다.  
   
- *밴드의 범위를 벗어난 이벤트* 는 프로세스의 관리 되는 상태와의 상호 작용 수 없는 이벤트로 인해 프로세스를 중지 하는 동안 관리 되지 않는 이벤트입니다. 디버거 수신 하는 경우에 `ICorDebugUnmanagedCallback::DebugEvent` 사용 콜백을 해당 `fOutOfBand` 매개 변수 설정 `true`합니다.  
+ *대역의 이벤트* 는 프로세스의 관리 되는 상태와의 상호 작용 가능 하지 않은 이벤트로 인해 프로세스를 중지 하는 동안 관리 되지 않는 이벤트입니다. 이 경우 디버거가 수신 합니다 `ICorDebugUnmanagedCallback::DebugEvent` 사용 하 여 콜백을 해당 `fOutOfBand` 매개 변수 설정 `true`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- 
+## <a name="see-also"></a>참고자료
+

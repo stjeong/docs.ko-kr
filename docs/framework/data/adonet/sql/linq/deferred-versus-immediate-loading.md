@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d1d7247f-a3b7-460b-b342-5c1a2365aa1a
-ms.openlocfilehash: 5955d7361658c825c120e62e531b72d402a12650
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: c78f608225d64a428b768fbc8d03f71a393d980d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54516969"
 ---
 # <a name="deferred-versus-immediate-loading"></a>지연된 로드 및 즉시 로드 비교
-개체를 쿼리하는 경우 실제로는 요청한 개체만 검색합니다. *관련* 개체는 동시에 자동으로 페치 되지 않습니다. (자세한 내용은 참조 [관계 간 쿼리](../../../../../../docs/framework/data/adonet/sql/linq/querying-across-relationships.md).) 관련 개체에 액세스할 때 검색 요청을 생성하기 때문에 관련 개체가 아직 로드되지 않았다는 사실을 확인할 수 없습니다.  
+개체를 쿼리하는 경우 실제로는 요청한 개체만 검색합니다. 합니다 *관련* 개체는 동시에 자동으로 페치 되지 않습니다. (자세한 내용은 [관계 간 쿼리](../../../../../../docs/framework/data/adonet/sql/linq/querying-across-relationships.md).) 관련 개체에 액세스할 때 검색 요청을 생성하기 때문에 관련 개체가 아직 로드되지 않았다는 사실을 확인할 수 없습니다.  
   
- 예를 들어 다음 주문의 특정 집합을 쿼리하고 다음 특정 고객에 게 전자 메일 알림을 가끔씩만 보냅니다는 것이 좋습니다. 처음부터 매 주문마다 모든 고객 데이터를 검색할 필요는 없습니다. 지연된 로드를 사용하여 반드시 검색해야 할 때까지 추가 정보의 검색을 연기할 수 있습니다. 다음 예제를 참조하세요.  
+ 예를 들어, 다음 주문의 특정 집합을 쿼리하고 다음 특정 고객에 게 전자 메일 알림을 가끔씩만 전송 하는 것이 좋습니다. 처음부터 매 주문마다 모든 고객 데이터를 검색할 필요는 없습니다. 지연된 로드를 사용하여 반드시 검색해야 할 때까지 추가 정보의 검색을 연기할 수 있습니다. 다음 예제를 참조하세요.  
   
  [!code-csharp[DLinqQueryConcepts#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#1)]
  [!code-vb[DLinqQueryConcepts#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#1)]  
@@ -25,7 +25,7 @@ ms.locfileid: "33360352"
  [!code-csharp[DLinqQueryConcepts#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#2)]
  [!code-vb[DLinqQueryConcepts#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#2)]  
   
- 또한 외적 쿼리를 생성하고 모든 관련 데이터를 하나의 큰 프로젝션으로 검색하여 쿼리에서 고객과 주문을 조인할 수 있습니다. 그러나 이 결과는 엔터티가 아닙니다. (자세한 내용은 참조 [LINQ to SQL 개체 모델](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)). 엔터티는 ID를 포함하며 사용자가 수정할 수 있는 개체이지만 이 결과는 변경할 수도 유지할 수도 없는 프로젝션입니다. 더욱 심각한 문제는 결합된 조인 출력에서 각 주문에 대해 각 고객이 반복되므로 많은 중복 데이터가 검색된다는 점입니다.  
+ 또한 외적 쿼리를 생성하고 모든 관련 데이터를 하나의 큰 프로젝션으로 검색하여 쿼리에서 고객과 주문을 조인할 수 있습니다. 그러나 이 결과는 엔터티가 아닙니다. (자세한 내용은 [LINQ to SQL 개체 모델](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)). 엔터티는 ID를 포함하며 사용자가 수정할 수 있는 개체이지만 이 결과는 변경할 수도 유지할 수도 없는 프로젝션입니다. 더욱 심각한 문제는 결합된 조인 출력에서 각 주문에 대해 각 고객이 반복되므로 많은 중복 데이터가 검색된다는 점입니다.  
   
  실제로 필요한 것은 관련 개체 집합을 동시에 검색하는 것입니다. 집합은 그래프의 구분된 섹션이므로 실제로 사용할 데이터보다 많거나 적게 검색하지는 않게 됩니다. 이를 위해 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 개체 모델 영역을 즉시 로드하기 위해 <xref:System.Data.Linq.DataLoadOptions>를 제공합니다. 메서드에는 다음이 포함됩니다.  
   
@@ -33,5 +33,5 @@ ms.locfileid: "33360352"
   
 -   <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> 메서드 - 특정 관계에 대해 검색한 개체를 필터링합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+## <a name="see-also"></a>참고자료
+- [쿼리 개념](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

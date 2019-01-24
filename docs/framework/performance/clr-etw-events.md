@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 983c38567667da911132217dcfda37c009dc833c
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 9d64ee6942d9397ceb45b812ef3c26179fac9b2b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43504131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54540301"
 ---
 # <a name="clr-etw-events"></a>CLR ETW 이벤트
 이 섹션의 항목은 ETW(Windows용 이벤트 추적) 이벤트를 설명합니다. 각 이벤트에는 연결된 키워드 및 수준이 있으며, [CLR ETW 키워드 및 수준](../../../docs/framework/performance/clr-etw-keywords-and-levels.md) 항목에서 설명합니다. CLR에는 이벤트에 대한 두 개의 공급자가 있습니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "43504131"
  작업자 스레드 풀 및 I/O 스레드 풀에 대한 정보를 캡처합니다.  
   
  [로더 이벤트](../../../docs/framework/performance/loader-etw-events.md)  
- 응용 프로그램 도메인, 어셈블리 및 모듈 로딩 및 언로딩에 대한 정보를 캡처합니다.  
+ 애플리케이션 도메인, 어셈블리 및 모듈 로딩 및 언로딩에 대한 정보를 캡처합니다.  
   
  [메서드 이벤트](../../../docs/framework/performance/method-etw-events.md)  
  기호 확인을 위한 CLR 메서드에 대한 정보를 캡처합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "43504131"
  MSIL(Microsoft intermediate language) 스텁 생성 및 캐싱에 대한 정보를 캡처합니다.  
   
  [ARM 이벤트](../../../docs/framework/performance/application-domain-resource-monitoring-arm-etw-events.md)  
- 응용 프로그램 도메인의 상태에 대한 세부적인 진단 정보를 캡처합니다.  
+ 애플리케이션 도메인의 상태에 대한 세부적인 진단 정보를 캡처합니다.  
   
  [보안 이벤트](../../../docs/framework/performance/security-etw-events.md)  
  강력한 이름 및 Authenticode 확인에 대한 정보를 캡처합니다.  
@@ -61,10 +61,10 @@ ms.locfileid: "43504131"
  [스택 이벤트](../../../docs/framework/performance/stack-etw-event.md)  
  이벤트가 발생한 이후 스택 추적을 생성하기 위해 다른 이벤트와 함께 사용되는 정보를 캡처합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅을 향상 시키기 및 ETW를 사용한 성능 조정](https://go.microsoft.com/fwlink/?LinkId=179696)  
- [Windows 성능 블로그](https://go.microsoft.com/fwlink/?LinkId=179509)  
- [.NET Framework 로깅 제어](../../../docs/framework/performance/controlling-logging.md)  
- [CLR ETW 공급자](../../../docs/framework/performance/clr-etw-providers.md)  
- [CLR ETW 키워드 및 수준](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)  
- [공용 언어 런타임의 ETW 이벤트](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+## <a name="see-also"></a>참고자료
+- [디버깅을 향상 시키기 및 ETW를 사용한 성능 조정](https://go.microsoft.com/fwlink/?LinkId=179696)
+- [Windows 성능 블로그](https://go.microsoft.com/fwlink/?LinkId=179509)
+- [.NET Framework 로깅 제어](../../../docs/framework/performance/controlling-logging.md)
+- [CLR ETW 공급자](../../../docs/framework/performance/clr-etw-providers.md)
+- [CLR ETW 키워드 및 수준](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)
+- [공용 언어 런타임의 ETW 이벤트](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

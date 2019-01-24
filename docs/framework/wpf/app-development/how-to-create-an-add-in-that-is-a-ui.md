@@ -9,12 +9,12 @@ helpviewer_keywords:
 - implementing UI add-ins [WPF]
 - pipeline segments [WPF], creating add-ins
 ms.assetid: 86375525-282b-4039-8352-8680051a10ea
-ms.openlocfilehash: 848e1b2064d89607a93f5ac20fede495e0c61c43
-ms.sourcegitcommit: 49af435bfdd41faf26d38c20c5b0cc07e87bea60
+ms.openlocfilehash: f3e1ba5fe58802e42bfaf60a98767591ec13e7c4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53396723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54510809"
 ---
 # <a name="how-to-create-an-add-in-that-is-a-ui"></a>방법: UI인 추가 기능 만들기
 이 예제에서는 WPF 독립 실행형 응용 프로그램에서 호스팅되는 Windows Presentation Foundation (WPF)는 추가 기능을 만드는 방법을 보여 줍니다.  
@@ -89,7 +89,7 @@ ms.locfileid: "53396723"
  이 예제에서는이 모델의 한 가지 흥미로운 이점을 볼 수 있습니다: 추가 기능 개발자는 추가 기능 (이므로 UI) 보다는 모두 추가 기능 클래스 및 추가 UI를 구현 해야 합니다.  
   
 <a name="HostApp"></a>   
-## <a name="implementing-the-host-application"></a>호스트 응용 프로그램 구현  
+## <a name="implementing-the-host-application"></a>호스트 애플리케이션 구현  
  호스트 쪽 어댑터와 호스트 뷰가 만들어지면 호스트 응용 프로그램이 사용할 수는 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 추가 기능 모델을 파이프라인을 열고 추가 기능의 호스트 뷰를 획득 합니다. 이러한 단계는 다음 코드에 나와 있습니다.  
   
   
@@ -102,8 +102,8 @@ ms.locfileid: "53396723"
   
 -   표시 된 <xref:System.Windows.MessageBox>합니다.  
   
- 이 작업은 호스트 응용 프로그램에서 완전히 격리됩니다.  
+ 이 작업은 호스트 애플리케이션에서 완전히 격리됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추가 기능 및 확장성](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))  
- [WPF 추가 기능 개요](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)
+## <a name="see-also"></a>참고자료
+- [추가 기능 및 확장성](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
+- [WPF 추가 기능 개요](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)

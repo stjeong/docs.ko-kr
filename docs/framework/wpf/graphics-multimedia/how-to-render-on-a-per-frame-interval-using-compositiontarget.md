@@ -8,15 +8,15 @@ helpviewer_keywords:
 - CompositionTarget objects [WPF], rendering per frame
 - rendering per frame using CompositionTarget objects [WPF]
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
-ms.openlocfilehash: cc043e6d225ad3dbe57a0924593fac0f68af7eb1
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: afbaf6652351e056fb0ce31ffd9e69cf98a90e85
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54511227"
 ---
 # <a name="how-to-render-on-a-per-frame-interval-using-compositiontarget"></a>방법: CompositionTarget을 사용하여 프레임별 간격에 렌더링
-[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애니메이션 엔진은 프레임 기반 애니메이션을 만들기 위한 다양한 기능을 제공합니다. 그러나 프레임당 렌더링을 좀 더 미세하게 제어해야 하는 응용 프로그램 시나리오도 있습니다. <xref:System.Windows.Media.CompositionTarget> 프레임당 콜백을 기준으로 사용자 지정 애니메이션을 만드는 기능을 제공 하는 개체입니다.  
+[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 애니메이션 엔진은 프레임 기반 애니메이션을 만들기 위한 다양한 기능을 제공합니다. 그러나 프레임당 렌더링을 좀 더 미세하게 제어해야 하는 애플리케이션 시나리오도 있습니다. <xref:System.Windows.Media.CompositionTarget> 프레임당 콜백을 기준으로 사용자 지정 애니메이션을 만드는 기능을 제공 하는 개체입니다.  
   
  <xref:System.Windows.Media.CompositionTarget> 응용 프로그램이 그려지는 표시 화면을 나타내는 정적 클래스가입니다. <xref:System.Windows.Media.CompositionTarget.Rendering> 응용 프로그램 장면이 그려질 때마다 이벤트가 발생 합니다. 렌더링 프레임 속도는 장면이 초당 그려지는 횟수입니다.  
   
@@ -40,6 +40,6 @@ ms.locfileid: "43526443"
   
  추가 또는 제거 렌더링 <xref:System.EventHandler> 대리자 이벤트가 발생 하는 동안 이벤트가 완료 된 후까지 지연 됩니다 발생 합니다. 이 일치 하는 방법 <xref:System.MulticastDelegate>-기반된 이벤트는 공용 언어 런타임 (CLR)에서 처리 됩니다. 또한 렌더링 이벤트가 반드시 특정 순서로 호출되는 것은 아닙니다. 여러 개인 경우 <xref:System.EventHandler> 대리자는 특정 순서에 의존 하는 단일 등록 해야 <xref:System.Windows.Media.CompositionTarget.Rendering> 올바른 대리자 주문 직접 이벤트를 반복 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.CompositionTarget>  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.CompositionTarget>
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

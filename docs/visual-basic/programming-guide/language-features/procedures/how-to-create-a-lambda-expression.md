@@ -1,18 +1,18 @@
 ---
-title: '방법: 람다 식 만들기(Visual Basic)'
+title: '방법: 람다 식 (Visual Basic) 만들기'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - lambda expressions [Visual Basic]
 - expressions [Visual Basic], lambda
 ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
-ms.openlocfilehash: f437166bc5206b4145d6508aa2131ec94d6eca95
-ms.sourcegitcommit: 70c76a12449439bac0f7a359866be5a0311ce960
+ms.openlocfilehash: e7302304fe6c44b0143d7f12ec272d597b313fdd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39244900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54492415"
 ---
-# <a name="how-to-create-a-lambda-expression-visual-basic"></a>방법: 람다 식 만들기(Visual Basic)
+# <a name="how-to-create-a-lambda-expression-visual-basic"></a>방법: 람다 식 (Visual Basic) 만들기
 A *람다 식* 은 함수 또는 서브루틴에 이름이 없습니다입니다. 람다 식은 대리자 형식이 유효한 모든 곳에서 사용할 수 있습니다.  
   
 ### <a name="to-create-a-single-line-lambda-expression-function"></a>한 줄 람다 식 함수를 만들려면  
@@ -95,7 +95,7 @@ A *람다 식* 은 함수 또는 서브루틴에 이름이 없습니다입니다
   
      [!code-vb[VbVbalrLambdas#22](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_9.vb)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  람다 식의 일반적인 용도 형식의 매개 변수에 대해 인수로 전달 될 수 있는 함수를 정의 하는 `Delegate`합니다. 다음 예제에서는 <xref:System.Diagnostics.Process.GetProcesses%2A> 로컬 컴퓨터에서 실행 중인 프로세스의 배열을 반환 합니다. <xref:System.Linq.Enumerable.Where%2A> 메서드를 <xref:System.Linq.Enumerable> 클래스에 필요한를 `Boolean` 인수로 대리자입니다. 예제에서 람다 식은 해당 용도로 사용 됩니다. 반환 `True` 에서 선택 됩니다 및 각 프로세스에 대해 스레드 한 개만 있는 `filteredList`합니다.  
   
  [!code-vb[VbVbalrLambdas#10](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_10.vb)]  
@@ -104,12 +104,12 @@ A *람다 식* 은 함수 또는 서브루틴에 이름이 없습니다입니다
   
  [!code-vb[VbVbalrLambdas#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_11.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Linq.Enumerable>  
- [람다 식](./lambda-expressions.md)  
- [Function 문](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub 문](../../../../visual-basic/language-reference/statements/sub-statement.md)  
- [대리자](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [방법: Visual Basic에서 프로시저에 다른 프로시저 전달](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)  
- [Delegate 문](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Linq.Enumerable>
+- [람다 식](./lambda-expressions.md)
+- [Function 문](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub 문](../../../../visual-basic/language-reference/statements/sub-statement.md)
+- [대리자](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [방법: 프로시저에 Visual Basic에서 다른 프로시저 전달](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)
+- [Delegate 문](../../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Visual Basic의 LINQ 소개](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

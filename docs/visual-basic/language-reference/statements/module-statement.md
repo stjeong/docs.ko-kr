@@ -13,12 +13,12 @@ helpviewer_keywords:
 - classes [Visual Basic], vs. modules
 - declarations [Visual Basic], modules
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
-ms.openlocfilehash: 5628224a08fe5f12cf2a81b179c4998001174354
-ms.sourcegitcommit: fd8d4587cc26e53f0e27e230d6e27d828ef4306b
+ms.openlocfilehash: 0503292dca81ef7b249b391f54c0aba2bba2cb10
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54524184"
 ---
 # <a name="module-statement"></a>Module 문
 모듈의 이름을 선언 하 고 변수, 속성, 이벤트 및 모듈을 구성 하는 프로시저의 정의 소개 합니다.  
@@ -45,7 +45,7 @@ End Module
  [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.  
   
  `name`  
- 필수. 이 모듈의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.  
+ 필수 요소. 이 모듈의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.  
   
  `statements`  
  선택 사항입니다. 변수, 속성, 이벤트, 프로시저 및이 모듈의 중첩 된 형식을 정의 하는 문입니다.  
@@ -96,10 +96,10 @@ End Module
 ## <a name="example"></a>예제  
  [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Class 문](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Namespace 문](../../../visual-basic/language-reference/statements/namespace-statement.md)  
- [Structure 문](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Interface 문](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)  
- [형식 승격](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)
+## <a name="see-also"></a>참고자료
+- [Class 문](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Namespace 문](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Structure 문](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Interface 문](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)
+- [형식 승격](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)

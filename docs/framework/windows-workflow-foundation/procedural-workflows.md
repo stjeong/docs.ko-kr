@@ -2,12 +2,12 @@
 title: 절차적 워크플로
 ms.date: 03/30/2017
 ms.assetid: 52401de9-9115-472d-8fd9-047af6a072b9
-ms.openlocfilehash: 5cd97c8ccaae74e4275f809502ac0a4d3c2f042a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 29fc6f5ebd6bf1984f287c3d407d2564249c65f5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33515231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54500540"
 ---
 # <a name="procedural-workflows"></a>절차적 워크플로
 절차적 워크플로에서는 절차적 언어에서 사용되는 것과 비슷한 흐름 제어 메서드를 사용합니다. 이러한 구조에는 `While` 및 `If`가 포함됩니다. <xref:System.Activities.Statements.Flowchart> 및 <xref:System.Activities.Statements.Sequence>와 같은 다른 흐름 제어 활동을 사용하여 이러한 워크플로를 자유롭게 구성할 수 있습니다.  
@@ -31,10 +31,10 @@ ms.locfileid: "33515231"
   
 -   <xref:System.Activities.Statements.Pick>  
   
- 흐름 제어 활동을 사용 하려면 끌어서 놓으십시오에서 **활동** 도구 상자 내에서 디자이너 창의 복합 활동으로 합니다.  
+ 흐름 제어 활동을 사용 하려면 끌어서 놓기까지 합니다 **활동** 디자이너 창 내의 복합 활동을 도구 상자입니다.  
   
 > [!NOTE]
 >  웹 팜에서 워크플로를 호스트하는 [!INCLUDE[dublin](../../../includes/dublin-md.md)]을 사용하면 AppFabric은 다른 AppFabric 서버 간 인스턴스를 이동합니다. 이 경우 모든 노드 간에 리소스가 공유될 수 있어야 합니다.  기본 NET 4 워크플로 활동 중 어떤 활동도 로컬 리소스에 액세스하는 작업을 포함하지 않습니다. AppFabric은 워크플로를 이동 불가능으로 표시하는 어떠한 메커니즘도 제공하지 않으므로 개발자는 워크플로가 이동할 때 실패할 수 있는 사용자 지정 활동을 만들지 않아야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [순서도 워크플로](../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)
+## <a name="see-also"></a>참고자료
+- [순서도 워크플로](../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)

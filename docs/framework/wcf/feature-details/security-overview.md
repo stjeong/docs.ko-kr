@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - WCF, security
 ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
-ms.openlocfilehash: c8918bce1d0e19e8f70be4ddbda892924a944e68
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 12eafa006e65527a70245c4332a34eb55f7d8af0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54525263"
 ---
 # <a name="security-overview"></a>보안 개요
 Windows Communication Foundation (WCF)는 SOAP 메시지 기반의 분산된 프로그래밍 플랫폼 이며 클라이언트와 서비스 간의 메시지 보안 데이터를 보호 하는 데 중요 합니다. WCF는 기존 보안 인프라와 SOAP 메시지에 대 한 보안 표준에 따라 보안 메시지를 교환 하기 위한 융통성과 상호 운용 가능한 플랫폼을 제공 합니다.  
@@ -68,7 +68,7 @@ Windows Communication Foundation (WCF)는 SOAP 메시지 기반의 분산된 프
 ### <a name="standards-and-interoperability"></a>표준 및 상호 운용성  
  기존의 대규모 배포에서는 동기종 환경을 유지하는 경우가 극히 드뭅니다. 분산 컴퓨팅/통신 플랫폼은 다른 공급업체에서 제공하는 기술과 상호 운용되어야 합니다. 마찬가지로 보안 역시 상호 운용 가능해야 합니다.  
   
- 상호 운용 가능한 보안 시스템을 지원하기 위해 웹 서비스 업계 기업들은 다양한 표준을 작성하고 있습니다. 특히 보안과 관련해서는 WS-Security: SOAP Message Security(OASIS 표준 기구에서 채택, 이전 명칭은 WS-Security), WS-Trust, WS-SecureConversation 및 WS-SecurityPolicy와 같은 몇몇 주요 표준이 제안되었습니다.  
+ 상호 운용 가능한 보안 시스템을 지원하기 위해 웹 서비스 업계 기업들은 다양한 표준을 작성하고 있습니다. 보안과 관련해 서 특히 몇몇 주요 표준이 제안 되었습니다. WS 보안: SOAP 메시지 보안 (OASIS 표준 기구에서 허용 하 고 Ws-security 이전의), Ws-trust, Ws-secureconversation, 및 Ws-securitypolicy 합니다.  
   
  WCF는 광범위 한 상호 운용성 시나리오를 지원합니다. <xref:System.ServiceModel.BasicHttpBinding> 클래스는 BSP(기본 보안 프로필)를 대상으로 하고 <xref:System.ServiceModel.WSHttpBinding> 클래스는 WS-Security 1.1 및 WS-SecureConversation과 같은 최신 보안 표준을 대상으로 합니다. 이러한 표준에 따르면 WCF 보안 상호 운용 하 고 운영 체제 및 Microsoft Windows 이외의 플랫폼에서 호스트 되는 웹 서비스와 통합할 수 있습니다.  
   
@@ -95,21 +95,21 @@ Windows Communication Foundation (WCF)는 SOAP 메시지 기반의 분산된 프
  Wcf에서 액세스 제어 기능을 CLR (공용 언어 런타임)와 통합을 통해 제공 됩니다 <xref:System.Security.Permissions.PrincipalPermissionAttribute> 라고 하는 Api 집합을 통해 합니다 *id 모델*합니다. 액세스 제어 및 클레임 기반 권한 부여에 대 한 자세한 내용은 참조 하세요 [보안 확장](../../../../docs/framework/wcf/extending/extending-security.md)합니다.  
   
 ### <a name="auditing"></a>감사  
- *감사* Windows 이벤트 로그에 보안 이벤트의 로깅입니다. 인증 실패 또는 성공과 같은 보안 관련 이벤트를 기록할 수 있습니다. 자세한 내용은 [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)합니다. 프로그래밍 세부 정보를 참조 하세요 [방법: 보안 이벤트 감사](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)합니다.  
+ *감사* Windows 이벤트 로그에 보안 이벤트의 로깅입니다. 인증 실패 또는 성공과 같은 보안 관련 이벤트를 기록할 수 있습니다. 자세한 내용은 [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)합니다. 프로그래밍 세부 정보를 참조 하세요. [방법: 보안 이벤트 감사](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
- [서비스에 보안 설정](../../../../docs/framework/wcf/securing-services.md)  
- [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
- [바인딩 및 보안](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [인증](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
- [권한 부여](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
- [페더레이션 및 발급된 토큰](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [보안 지침 및 최선의 방법](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
- [구성 파일을 사용하여 서비스 구성](../../../../docs/framework/wcf/configuring-services-using-configuration-files.md)  
- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [엔드포인트 만들기 개요](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [보안 확장](../../../../docs/framework/wcf/extending/extending-security.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- <xref:System.Security.Permissions.PrincipalPermissionAttribute>
+- [서비스에 보안 설정](../../../../docs/framework/wcf/securing-services.md)
+- [일반적인 보안 시나리오](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
+- [바인딩 및 보안](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [인증](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)
+- [권한 부여](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
+- [페더레이션 및 발급된 토큰](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [감사](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [보안 지침 및 최선의 방법](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)
+- [구성 파일을 사용하여 서비스 구성](../../../../docs/framework/wcf/configuring-services-using-configuration-files.md)
+- [시스템 제공 바인딩](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [엔드포인트 만들기 개요](../../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [보안 확장](../../../../docs/framework/wcf/extending/extending-security.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

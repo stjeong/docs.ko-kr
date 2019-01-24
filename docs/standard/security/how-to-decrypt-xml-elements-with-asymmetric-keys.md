@@ -1,5 +1,5 @@
 ---
-title: '방법: 비대칭 키를 사용하여 XML 요소 해독'
+title: '방법: 비대칭 키로 XML 요소 해독'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: dd5de491-dafe-4b94-966d-99714b2e754a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 96bee90c7cb3847f9c7059e1a0b1d737209b924f
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 647ac3898924810eb16cbeb8c67f00e6465c8d80
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44186004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54547771"
 ---
-# <a name="how-to-decrypt-xml-elements-with-asymmetric-keys"></a>방법: 비대칭 키를 사용하여 XML 요소 해독
+# <a name="how-to-decrypt-xml-elements-with-asymmetric-keys"></a>방법: 비대칭 키로 XML 요소 해독
 <xref:System.Security.Cryptography.Xml> 네임스페이스의 클래스를 사용하여 XML 문서 내의 요소를 암호화 및 암호 해독할 수 있습니다.  XML 암호화는 데이터가 쉽게 읽혀질 염려 없이 암호화된 XML 데이터를 교환하거나 저장하는 표준 방법입니다.  XML 암호화 표준에 대 한 자세한 내용은 World Wide Web Consortium (W3C) 권장 사항을 참조 하세요 [XML 서명 구문 및 처리](https://www.w3.org/TR/xmldsig-core/)합니다.  
   
- 이 절차의 예제에 설명 된 메서드를 사용 하 여 암호화 된 XML 요소를 암호 해독 [방법: 비대칭 키를 사용 하 여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)합니다.  <`EncryptedData`> 요소를 찾아 암호 해독한 다음 이 요소를 원래의 일반 텍스트 XML 요소로 바꿉니다.  
+ 이 절차의 예제에 설명 된 메서드를 사용 하 여 암호화 된 XML 요소를 암호 해독 [방법: 비대칭 키로 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)합니다.  <`EncryptedData`> 요소를 찾아 암호 해독한 다음 이 요소를 원래의 일반 텍스트 XML 요소로 바꿉니다.  
   
  이 예제에서는 두 키를 사용하여 XML 요소를 암호 해독합니다.  키 컨테이너에서 이전에 생성된 RSA 개인 키를 검색한 다음 RSA 키를 사용하여 <`EncryptedData`> 요소의 <`EncryptedKey`> 요소에 저장된 세션 키를 암호 해독합니다.  그런 다음 예제에서는 세션 키를 사용하여 XML 요소를 암호 해독합니다.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "44186004"
      [!code-vb[HowToDecryptXMLElementAsymmetric#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb/sample.vb#8)]  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 `test.xml`이라는 파일이 컴파일된 프로그램과 동일한 디렉터리에 있다고 가정합니다.  또한 있다고 가정 `test.xml` 에 설명 된 기술을 사용 하 여 암호화 된 XML 요소가 포함 되어 [방법: 비대칭 키를 사용 하 여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)합니다.  
+ 이 예제에서는 `test.xml`이라는 파일이 컴파일된 프로그램과 동일한 디렉터리에 있다고 가정합니다.  또한 가정 `test.xml` 에 설명 된 기술을 사용 하 여 암호화 된 XML 요소가 포함 되어 [방법: 비대칭 키로 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)합니다.  
   
  [!code-csharp[HowToDecryptXMLElementAsymmetric#1](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/cs/sample.cs#1)]
  [!code-vb[HowToDecryptXMLElementAsymmetric#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb/sample.vb#1)]  
@@ -83,5 +83,5 @@ ms.locfileid: "44186004"
   
 ## <a name="see-also"></a>참고자료
 
-- <xref:System.Security.Cryptography.Xml>  
-- [방법: 비대칭 키를 사용하여 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)
+- <xref:System.Security.Cryptography.Xml>
+- [방법: 비대칭 키로 XML 요소 암호화](../../../docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)

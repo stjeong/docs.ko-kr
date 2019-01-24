@@ -2,18 +2,18 @@
 title: '&lt;endpoint&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
-ms.openlocfilehash: ea95e2d16027869778e99cb217d5ea4f7ba7d21a
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: f0701f522874e9e77ba8cb8f013016dd66fbfa30
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54509703"
 ---
 # <a name="ltendpointgt-element"></a>&lt;endpoint&gt; 요소
 서비스 공개에 사용되는 서비스 엔드포인트에 대한 바인딩, 계약 및 주소 속성을 지정합니다.  
   
  \<system.ServiceModel>  
-\<서비스 >  
+\<service>  
 \<endpoint>  
   
 ## <a name="syntax"></a>구문  
@@ -51,7 +51,7 @@ ms.locfileid: "54147488"
 |endpointConfiguration|이 표준 엔드포인트의 추가 구성 정보를 참조하는 `kind` 특성에 의해 설정되는 표준 엔드포인트의 이름을 지정하는 문자열입니다. 이와 동일한 이름이 `<standardEndpoints>` 섹션에서 정의되어야 합니다.|  
 |isSystemEndpoint|끝점이 인프라 끝점인지 여부를 지정하는 부울 값입니다.|  
 |kind|적용되는 표준 엔드포인트의 형식을 지정하는 문자열입니다. 이 형식이 `<extensions>` 섹션 또는 machine.config에 등록되어야 합니다. 지정하지 않으면 일반 서비스 끝점이 만들어집니다.|  
-|listenUriMode|서비스에서 수신하도록 제공된 `ListenUri`를 전송에서 처리하는 방법을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> 명시적<br />고유<br /><br /> 기본값은 Explicit입니다.|  
+|listenUriMode|서비스에서 수신하도록 제공된 `ListenUri`를 전송에서 처리하는 방법을 지정합니다. 유효한 값은 다음과 같습니다.<br /><br /> -   Explicit<br />-   Unique<br /><br /> 기본값은 Explicit입니다.|  
 |listenUri|서비스 엔드포인트가 수신하는 URI를 지정하는 문자열입니다. 기본값은 빈 문자열입니다.|  
 |name|선택적 특성입니다. 서비스 엔드포인트의 이름을 지정하는 문자열입니다. 기본값은 바인딩 이름과 계약 설명 이름을 연결한 값입니다. 서비스에 엔드포인트가 여러 개일 수 있으므로 엔드포인트의 `name` 특성은 서비스 이름과 구분됩니다.|  
   
@@ -84,9 +84,9 @@ ms.locfileid: "54147488"
 </endpoint>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.ServiceEndpointElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.Description.ServiceEndpoint>  
- [끝점: 주소, 바인딩 및 계약](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
- [방법: 구성에서 서비스 끝점 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.Description.ServiceEndpoint>
+- [끝점: 주소, 바인딩 및 계약](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [방법: 구성에서 서비스 끝점 만들기](../../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)

@@ -2,12 +2,12 @@
 title: SQL 워크플로 인스턴스 저장소의 속성
 ms.date: 03/30/2017
 ms.assetid: 5bf75f3c-8f33-450d-967f-6ee862c14c67
-ms.openlocfilehash: 3707e4912628380e5e06eeae1a6d608a4b0d5555
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 202234c6447ec34295892e23482cc74ac8fc2024
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47195500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54543986"
 ---
 # <a name="properties-of-sql-workflow-instance-store"></a>SQL 워크플로 인스턴스 저장소의 속성
 이 단원의 항목에서는 SQL 워크플로 인스턴스 저장소의 속성에 대해 자세히 설명합니다.  
@@ -26,6 +26,6 @@ ms.locfileid: "47195500"
   
 -   [연결 문자열 및 연결 문자열 이름](../../../docs/framework/windows-workflow-foundation/connection-string-and-connection-string-name.md)  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Server App Fabric 인스턴스 스토어](https://go.microsoft.com/fwlink/?LinkId=201201)  
- [App Fabric SQL Server 지 속성 데이터베이스](https://go.microsoft.com/fwlink/?LinkId=201202)
+## <a name="see-also"></a>참고자료
+- [Windows Server App Fabric 인스턴스 스토어](https://go.microsoft.com/fwlink/?LinkId=201201)
+- [App Fabric SQL Server 지 속성 데이터베이스](https://go.microsoft.com/fwlink/?LinkId=201202)

@@ -2,12 +2,12 @@
 title: 활동
 ms.date: 03/30/2017
 ms.assetid: 70471705-f55f-4da1-919f-4b580f172665
-ms.openlocfilehash: 00115d51cff40be726ccf94c3cac09242c0bdab8
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 970f2978f65b2c1a2585a207d66e4b97fbe4af1a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49453348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54505590"
 ---
 # <a name="activity"></a>활동
 이 항목에서는 Windows Communication Foundation (WCF) 추적 모델의 동작 추적을 설명 합니다. 동작은 실패의 범위를 줄이도록 돕는 처리 단위입니다. 동일한 동작에서 발생하는 오류는 직접적으로 관련됩니다. 예를 들어 메시지 암호 해독이 실패하면 작업이 실패합니다. 작업 실패와 메시지 암호 해독 실패 둘 다에 대한 추적은 동일한 동작에서 나타나며, 암호 해독 오류와 요청 오류 사이의 직접적인 상관 관계를 보여 줍니다.  
@@ -64,13 +64,13 @@ traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");
 ## <a name="activity-lifetime"></a>동작 수명  
  매우 엄격한 의미에서 동작의 증명은 내보낸 추적에서 동작 ID를 처음 사용할 때 시작되고, 내보낸 추적에서 동작 ID를 마지막으로 사용할 때 끝납니다. <xref:System.Diagnostics>에서 미리 정의된 추적 형식(Start 및 Stop)을 제공하여 동작 수명 경계를 명시적으로 표시합니다.  
   
--   Start: 동작의 시작을 나타냅니다. "Start" 추적은 새 처리 중요 시점부터 레코드를 제공 합니다. 여기에는 지정된 프로세스의 지정된 추적 소스에 대한 새 동작 ID가 포함됩니다. 단, 동작 ID가 엔드포인트를 통해 전파되는 경우는 예외로, 이 경우에는 엔드포인트별로 하나의 "Start"가 표시됩니다. 새 동작의 시작에 대한 예제에는 처리에 대한 새 스레드 만들기 또는 새 public 메서드 입력이 포함됩니다.  
+-   시작: 작업의 시작을 나타냅니다. "Start" 추적은 새 처리 중요 시점부터 레코드를 제공 합니다. 여기에는 지정된 프로세스의 지정된 추적 소스에 대한 새 동작 ID가 포함됩니다. 단, 동작 ID가 엔드포인트를 통해 전파되는 경우는 예외로, 이 경우에는 엔드포인트별로 하나의 "Start"가 표시됩니다. 새 동작의 시작에 대한 예제에는 처리에 대한 새 스레드 만들기 또는 새 public 메서드 입력이 포함됩니다.  
   
--   Stop: 동작의 종료를 나타냅니다. "Stop" 추적은 기존 처리 이정표 종료에 대 한 기록을 제공 합니다. 여기에는 지정된 프로세스의 지정된 추적 소스에 대한 기존 동작 ID가 포함됩니다. 단, 동작 ID가 엔드포인트를 통해 전파되는 경우는 예외로, 이 경우에는 엔드포인트별로 하나의 "Stop"이 표시됩니다.  중지 작업의 예로 처리 스레드를 종료 또는 시작 "Start" 추적으로 표시 된 메서드를 종료를 들 수 있습니다.  
+-   중지: 활동의 끝을 나타냅니다. "Stop" 추적은 기존 처리 이정표 종료에 대 한 기록을 제공 합니다. 여기에는 지정된 프로세스의 지정된 추적 소스에 대한 기존 동작 ID가 포함됩니다. 단, 동작 ID가 엔드포인트를 통해 전파되는 경우는 예외로, 이 경우에는 엔드포인트별로 하나의 "Stop"이 표시됩니다.  중지 작업의 예로 처리 스레드를 종료 또는 시작 "Start" 추적으로 표시 된 메서드를 종료를 들 수 있습니다.  
   
--   Suspend: 동작 처리가 일시 중단됨을 나타냅니다. "Suspend" 추적에는 처리가 나중에 다시 시작 해야 하는 기존 동작 ID가 포함 되어 있습니다. 현재 추적 소스에서 Suspend 및 Resume 이벤트 사이에 이 동작 ID와 함께 내보낸 추적이 없습니다. 예제에는 외부 라이브러리 함수로 호출할 때나 I/O 완료 포트와 같은 리소스를 대기할 때 동작을 일시 중지하는 작업이 포함됩니다.  
+-   일시 중단 합니다. 활동의 처리가 일시 중단을 나타냅니다. "Suspend" 추적에는 처리가 나중에 다시 시작 해야 하는 기존 동작 ID가 포함 되어 있습니다. 현재 추적 소스에서 Suspend 및 Resume 이벤트 사이에 이 동작 ID와 함께 내보낸 추적이 없습니다. 예제에는 외부 라이브러리 함수로 호출할 때나 I/O 완료 포트와 같은 리소스를 대기할 때 동작을 일시 중지하는 작업이 포함됩니다.  
   
--   Resume: 동작을 다시 처리하기 시작함을 나타냅니다. "Resume" 추적 인 마지막으로 내보낸 현재 추적 소스에서 추적이 "Suspend" 추적 하는 기존 동작 id를 포함 합니다. 예제에는 호출로부터 외부 라이브러리 함수로 반환하는 경우 또는 I/O 완료 포트와 같은 리소스를 통해 처리를 다시 시작하기 위해 신호를 받는 경우가 포함됩니다.  
+-   다시 시작 합니다. 처리 작업의 다시 시작을 나타냅니다. "Resume" 추적 인 마지막으로 내보낸 현재 추적 소스에서 추적이 "Suspend" 추적 하는 기존 동작 id를 포함 합니다. 예제에는 호출로부터 외부 라이브러리 함수로 반환하는 경우 또는 I/O 완료 포트와 같은 리소스를 통해 처리를 다시 시작하기 위해 신호를 받는 경우가 포함됩니다.  
   
 -   전송: 일부 작업을 다른 사용자에 의해 발생 한 다른 사용자에 게 관련, 때문에 활동을 "양도" 추적을 통해 다른 작업에 연결할 수 있습니다. Transfer는 한 동작이 다른 동작으로 리디렉션된 관계를 기록합니다.  
   
@@ -97,9 +97,9 @@ traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");
   
 -   동작은 동작을 나타내며 반드시 개체를 나타내지는 않습니다. 활동으로 해석 되어야 "이 발생 된 경우. . . (의미 있는 추적 내보내기가 발생할 때) 발생했습니다."로 해석되어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추적 구성](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [종단 간 추적 시나리오](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
- [Service Trace Viewer 도구(SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
- [사용자 코드 추적 내보내기](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md)
+## <a name="see-also"></a>참고자료
+- [추적 구성](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [Service Trace Viewer를 사용하여 상호 관련된 추적 보기 및 문제 해결](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [종단 간 추적 시나리오](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer 도구(SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [사용자 코드 추적 내보내기](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md)

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - '@ identifier type character'
 - identifier type characters [Visual Basic], @
 ms.assetid: 1d855b45-afe2-45b0-a623-96b6f63a43d5
-ms.openlocfilehash: ffc1cd141ba624d2ce26e4b1c070431ff0ddd6fe
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 7a04f0a9862927f8588a895c7f0f099509aa4d8d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44180464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512894"
 ---
 # <a name="decimal-data-type-visual-basic"></a>Decimal 데이터 형식(Visual Basic)
 부호 있는 10의 거듭제곱으로 조정 된 96 비트 (12 바이트) 정수 숫자를 나타내는 128 비트 (16 바이트) 값을 저장 합니다. 배율은 소수점의 오른쪽에 자릿수를 지정합니다. 이 범위는 0에서 28입니다. 가장 큰 가능한 값은 소수 자릿수가 0 (소수 자릿수 없이)를 사용 하 여 + /-79228162514264337593543950335 (7 + /-.9228162514264337593543950335E + 28). 소수 자릿수가 28 + /-7.9228162514264337593543950335 사이, 가장 큰 값은와 0.0000000000000000000000000001 1E-28) (+ + /-0이 아닌 가장 작은 값입니다.  
@@ -57,7 +57,7 @@ ms.locfileid: "44180464"
   
      출력 `MsgBox` 앞의 예제에는 다음과 같습니다.  
   
-     d1 2.375, d2 = = 1.625, d3 4.000, d4 = = 4  
+     d1 = 2.375, d2 = 1.625, d3 = 4.000, d4 = 4  
   
 -   **형식 문자입니다.** 리터럴 형식 문자 `D`를 리터럴에 추가하면 `Decimal` 데이터 형식이 됩니다. 식별자 형식 문자 `@`를 식별자에 추가하면 `Decimal`가 됩니다.  
   
@@ -78,13 +78,13 @@ Dim bigDec3 As Decimal = 9223372036854775808D  ' No overflow.
   
  에 대 한 `bigDec3`, 리터럴 형식 문자 `D` 리터럴을 해석 하도록 컴파일러에 강제 적용 하 여 문제 해결을 `Decimal` 대신으로 `Long`.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Decimal?displayProperty=nameWithType>  
- <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>  
- <xref:System.Math.Round%2A?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [Single 데이터 형식](../../../visual-basic/language-reference/data-types/single-data-type.md)  
- [Double 데이터 형식](../../../visual-basic/language-reference/data-types/double-data-type.md)  
- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Math.Round%2A?displayProperty=nameWithType>
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [Single 데이터 형식](../../../visual-basic/language-reference/data-types/single-data-type.md)
+- [Double 데이터 형식](../../../visual-basic/language-reference/data-types/double-data-type.md)
+- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

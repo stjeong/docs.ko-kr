@@ -2,12 +2,12 @@
 title: wsatConfig.exe에서 반환된 오류 코드 해석
 ms.date: 03/30/2017
 ms.assetid: ab65f22b-0d69-4c21-9aaf-74acef0ca102
-ms.openlocfilehash: 9df059618b45ae65ffb3e6e31a87d5531c79d947
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 70a917446415794f8d500818bdeff5b945834598
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33507365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54510028"
 ---
 # <a name="interpreting-error-codes-returned-by-wsatconfigexe"></a>wsatConfig.exe에서 반환된 오류 코드 해석
 이 항목에서는 WS-AtomicTransaction 구성 유틸리티(wsatConfig.exe)에서 생성한 모든 오류 코드 및 수행할 동작을 나열합니다.  
@@ -22,7 +22,7 @@ ms.locfileid: "33507365"
 |3|WsatConfig.exe가 실행된 계정에는 네트워크 보안 설정을 읽을 수 있는 충분한 권한이 없습니다.|Administrator 사용자 계정으로 WsatConfig.exe를 실행합니다.|  
 |4|WS-AT를 지원하기 전에 MSDTC에 "네트워크 DTC 액세스"를 사용합니다.|MSDTC에 "네트워크 DTC 액세스"를 사용하고 유틸리티를 다시 실행합니다.|  
 |5|입력한 포트가 범위를 벗어났습니다. 값은 1에서 65535 사이의 범위 내에 있어야 합니다.|오류 메시지에 표시된 대로 `-port:<portNum>`<br /><br /> 명령줄 옵션을 수정합니다.|  
-|6|명령줄에 잘못된 끝점 인증서가 지정되었습니다.  인증서를 찾을 수 없거나 인증서가 확인 과정을 통과하지 못했습니다.|`-endpointCert` 명령줄 옵션을 수정합니다. 인증서에 개인 키가 있는지, 인증서를 ClientAuthentication 및 ServerAuthentication 모두에 사용할 수 있는지, 인증서가 LocalMachine\MY 인증서 저장소에 설치되어 있는지 그리고 인증서를 완전히 신뢰할 수 있는지 확인합니다.|  
+|6|명령줄에 잘못된 엔드포인트 인증서가 지정되었습니다.  인증서를 찾을 수 없거나 인증서가 확인 과정을 통과하지 못했습니다.|`-endpointCert` 명령줄 옵션을 수정합니다. 인증서에 개인 키가 있는지, 인증서를 ClientAuthentication 및 ServerAuthentication 모두에 사용할 수 있는지, 인증서가 LocalMachine\MY 인증서 저장소에 설치되어 있는지 그리고 인증서를 완전히 신뢰할 수 있는지 확인합니다.|  
 |7|명령줄에 잘못된 계정 인증서가 지정되었습니다.|`-accountsCerts` 명령줄 옵션을 수정합니다. 지정한 인증서가 잘못 지정되었거나 해당 인증서를 찾을 수 없습니다.|  
 |8|기본 시간 제한이 1초에서 3600초 사이의 범위를 벗어나 지정되었습니다.|표시된 대로 올바른 기본 시간 제한 값을 입력합니다.|  
 |10|레지스트리에 액세스하는 동안 예기치 않은 오류가 발생했습니다.|실행 가능한 항목에 대한 오류 메시지 및 오류 코드를 확인합니다.|  
@@ -44,7 +44,7 @@ ms.locfileid: "33507365"
 |28|`-network` 명령줄 옵션이 잘못되었습니다.|`-network` 명령줄 옵션을 수정하여 "사용" 또는 "사용 안 함"을 올바로 지정합니다.|  
 |29|`-maxTimeout` 명령줄 옵션이 잘못되었습니다.|표시된 대로 `-maxTimeout` 명령줄 옵션을 수정합니다.|  
 |30|`-timeout` 명령줄 옵션이 잘못되었습니다.|표시된 대로 `-timeout` 명령줄 옵션을 수정합니다.|  
-|31|`-traceLevel` 명령줄 옵션이 잘못되었습니다.|`-traceLevel` 명령줄 옵션을 수정하여 다음에서 유효한 값을 지정합니다.<br /><br /> 끄기<br />-오류<br />-   Critical<br />-경고<br />-정보<br />-Verbose<br />-모두|  
+|31|`-traceLevel` 명령줄 옵션이 잘못되었습니다.|`-traceLevel` 명령줄 옵션을 수정하여 다음에서 유효한 값을 지정합니다.<br /><br /> 백오프<br />-오류<br />-   Critical<br />-경고<br />정보<br />-Verbose<br />-   All|  
 |32|`-traceActivity` 명령줄 옵션이 잘못되었습니다.|"사용" 또는 "사용 안 함"을 지정하여 `-traceActivity` 명령줄 옵션을 수정합니다.|  
 |33|`-traceProp` 명령줄 옵션이 잘못되었습니다.|"사용" 또는 "사용 안 함"을 지정하여 `-traceProp` 명령줄 옵션을 수정합니다.|  
 |34|`-tracePII` 명령줄 옵션이 잘못되었습니다.|"사용" 또는 "사용 안 함"을 지정하여 `-tracePII` 명령줄 옵션을 수정합니다.|  
@@ -67,5 +67,5 @@ ms.locfileid: "33507365"
 |55|ETW 추적 세션을 시작하려는 동안 예기치 않은 오류가 발생했습니다.|Microsoft에 문의하십시오.|  
 |56|ETW 추적 세션을 시작하려는 동안 예기치 않은 오류가 발생했습니다.|Microsoft에 문의하십시오.|  
   
-## <a name="see-also"></a>참고 항목  
- [WS-AtomicTransaction 구성 유틸리티(wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+## <a name="see-also"></a>참고자료
+- [WS-AtomicTransaction 구성 유틸리티(wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

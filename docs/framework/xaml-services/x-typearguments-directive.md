@@ -10,12 +10,12 @@ helpviewer_keywords:
 - TypeArguments attribute in XAML [XAML Services]
 - XAML [XAML Services], x:TypeArguments attribute
 ms.assetid: 86561058-d393-4a44-b5c3-993a4513ea74
-ms.openlocfilehash: 28eda94914125f2c5849a471671c8e283475c82c
-ms.sourcegitcommit: 3ab9254890a52a50762995fa6d7d77a00348db7e
+ms.openlocfilehash: ef08a550ebd1784514bc47ae02089847c6f1b578
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46321394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54520180"
 ---
 # <a name="xtypearguments-directive"></a>x:TypeArguments 지시문
 전달 된 제네릭 형식의 생성자에 제네릭 인수를 입력 합니다.  
@@ -56,7 +56,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 ### <a name="dictionarystringstring"></a>사전\<문자열, 문자열 >  
  `<scg:Dictionary x:TypeArguments="sys:String,sys:String" ...>` 새 인스턴스화합니다 <xref:System.Collections.Generic.Dictionary%602> 두 개의 <xref:System.String> 인수를 입력 합니다.  
   
-### <a name="queuekeyvaluepairstringstring"></a>큐 < KeyValuePair\<String, String >>  
+### <a name="queuekeyvaluepairstringstring"></a>Queue<KeyValuePair\<String,String>>  
  `<scg:Queue x:TypeArguments="scg:KeyValuePair(sys:String,sys:String)" ...>` 새 인스턴스화합니다 <xref:System.Collections.Generic.Queue%601> 의 제약 조건이 있는 <xref:System.Collections.Generic.KeyValuePair%602> 내부 제약 조건 형식 인수를 사용 하 여 <xref:System.String> 고 <xref:System.String>입니다.  
   
 ## <a name="xaml-2006-and-wpf-generic-xaml-usages"></a>XAML 2006 및 WPF 일반 XAML 사용  
@@ -81,8 +81,8 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
   
  Wpf에서 및 대상으로 할 때 [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]와 함께 XAML 2009 기능을 사용할 수 있습니다 `x:TypeArguments` 느슨한 XAML (태그 컴파일되지 않은 XAML)에 대해서만 합니다. WPF에 대한 태그로 컴파일된 XAML 및 BAML 형식의 XAML은 현재 XAML 2009 키워드 및 기능을 지원하지 않습니다. 태그에는 XAML을 컴파일해야 하는 경우 "XAML 2006 및 WPF 일반 XAML 사용" 섹션에서 설명한 제한에서 작동 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [x:Class 지시문](../../../docs/framework/xaml-services/x-class-directive.md)  
- [x:Type 태그 확장](../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [공용 XAML 언어 기본 형식에 대한 기본 제공 형식](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md)  
- [XAML의 제네릭](../../../docs/framework/xaml-services/generics-in-xaml.md)
+## <a name="see-also"></a>참고자료
+- [x:Class 지시문](../../../docs/framework/xaml-services/x-class-directive.md)
+- [x:Type 태그 확장](../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [공용 XAML 언어 기본 형식에 대한 기본 제공 형식](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md)
+- [XAML의 제네릭](../../../docs/framework/xaml-services/generics-in-xaml.md)

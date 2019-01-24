@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Select clause [Visual Basic]
 - queries [Visual Basic], Select
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
-ms.openlocfilehash: 7d959c0717a3ef44dfc23c90d99ec7b83421efaa
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 0890068d192a137689d06eb081e1a0fc128aabcd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43529803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54519010"
 ---
 # <a name="select-clause-visual-basic"></a>Select 절(Visual Basic)
 쿼리 결과 정의합니다.  
@@ -29,7 +29,7 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
  선택 사항입니다. 열 식의 결과 참조 하는 별칭입니다.  
   
  `fieldName1`  
- 필수. 쿼리 결과에 반환할 필드의 이름입니다.  
+ 필수 요소. 쿼리 결과에 반환할 필드의 이름입니다.  
   
 ## <a name="remarks"></a>설명  
  사용할 수는 `Select` 쿼리에서 반환할 결과 정의 하는 절. 이렇게 하면 쿼리를 통해 만들어지는 새 익명 형식의 멤버를 정의 하거나 또는 쿼리에서 반환 되는 명명 된 형식의 멤버를 대상으로 합니다. `Select` 절을 쿼리에 대 한 필요 하지 않습니다. 없으면 `Select` 절을 지정 하면 쿼리는 현재 범위에 대 한 식별 된 범위 변수의 모든 멤버를 기준으로 형식을 반환 합니다. 자세한 내용은 [무명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)을 참조하세요. 쿼리는 명명 된 형식을 만들면 결과 유형이 반환 됩니다 <xref:System.Collections.Generic.IEnumerable%601> 여기서 `T` 만든된 형식입니다.  
@@ -51,10 +51,10 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
   
  [!code-vb[VbSimpleQuerySamples#30](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/select-clause_4.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)  
- [Order By 절](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Order By 절](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [익명 형식](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

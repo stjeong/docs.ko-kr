@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: b42939e8e64e75337478ace67a9a91c6a03a94e3
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: 825cb8ea94bee980f9e10b90cddf04db32c1a33f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54416683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54491911"
 ---
 # <a name="ixclrdataprocessenummethodinstancebyaddress-method"></a>IXCLRDataProcess::EnumMethodInstanceByAddress 메서드
 
@@ -54,7 +54,7 @@ HRESULT EnumMethodInstanceByAddress(
 **라이브러리:** 없음   
 **.NET Framework 버전:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]   
  
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 - [CLRDataSourceType 열거형](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [디버깅](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataProcess 인터페이스](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
