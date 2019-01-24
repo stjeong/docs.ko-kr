@@ -10,23 +10,23 @@ helpviewer_keywords:
 - GlyphRunDrawing objects [WPF]
 - glyphs [WPF]
 ms.assetid: d5d9274c-23b3-4859-8869-6e64403c9ca7
-ms.openlocfilehash: 744906d7dba8b9bc317d181738790b7647fe912c
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: a629d74c7b76e5daf2460c63b040fbe37a3a36d1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33543068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54499121"
 ---
-# <a name="glyphs"></a><span data-ttu-id="937da-102">문자 모양</span><span class="sxs-lookup"><span data-stu-id="937da-102">Glyphs</span></span>
-<span data-ttu-id="937da-103">문자는 문자를 화면에 그릴 하위 수준 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="937da-103">Glyphs are a low-level depiction of a character to be drawn on-screen.</span></span> [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="937da-104"> 차단 하 고 텍스트를 포맷 한 후 유지 하려는 고객에 대 한 문자 모양에 대 한 직접 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="937da-104"> provides direct access to glyphs for customers who want to intercept and persist text after formatting.</span></span>  
+# <a name="glyphs"></a><span data-ttu-id="215a5-102">문자 모양</span><span class="sxs-lookup"><span data-stu-id="215a5-102">Glyphs</span></span>
+<span data-ttu-id="215a5-103">문자 모양을 화면에 그릴 문자를 하위 수준 표현 됩니다.</span><span class="sxs-lookup"><span data-stu-id="215a5-103">Glyphs are a low-level depiction of a character to be drawn on-screen.</span></span> [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] <span data-ttu-id="215a5-104">가로채 고 텍스트 서식 지정 후 유지 하려는 고객에 대 한 문자 모양에 대 한 직접 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="215a5-104">provides direct access to glyphs for customers who want to intercept and persist text after formatting.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="937da-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="937da-105">In This Section</span></span>  
- [<span data-ttu-id="937da-106">GlyphRun 개체 및 Glyphs 요소 소개</span><span class="sxs-lookup"><span data-stu-id="937da-106">Introduction to the GlyphRun Object and Glyphs Element</span></span>](../../../../docs/framework/wpf/advanced/introduction-to-the-glyphrun-object-and-glyphs-element.md)  
-  [<span data-ttu-id="937da-107">문자 모양을 사용하여 텍스트 그리기</span><span class="sxs-lookup"><span data-stu-id="937da-107">How to: Draw Text Using Glyphs</span></span>](../../../../docs/framework/wpf/advanced/draw-text-using-glyphs.md)  
+## <a name="in-this-section"></a><span data-ttu-id="215a5-105">섹션 내용</span><span class="sxs-lookup"><span data-stu-id="215a5-105">In This Section</span></span>  
+ [<span data-ttu-id="215a5-106">GlyphRun 개체 및 Glyphs 요소 소개</span><span class="sxs-lookup"><span data-stu-id="215a5-106">Introduction to the GlyphRun Object and Glyphs Element</span></span>](../../../../docs/framework/wpf/advanced/introduction-to-the-glyphrun-object-and-glyphs-element.md)  
+  [<span data-ttu-id="215a5-107">방법: 문자 모양을 사용 하는 텍스트를 그립니다.</span><span class="sxs-lookup"><span data-stu-id="215a5-107">How to: Draw Text Using Glyphs</span></span>](../../../../docs/framework/wpf/advanced/draw-text-using-glyphs.md)  
   
-## <a name="see-also"></a><span data-ttu-id="937da-108">참고 항목</span><span class="sxs-lookup"><span data-stu-id="937da-108">See Also</span></span>  
- <xref:System.Windows.Media.GlyphRun>  
- <xref:System.Windows.Media.DrawingContext.DrawText%2A>  
- <xref:System.Windows.Documents.Glyphs>  
- [<span data-ttu-id="937da-109">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="937da-109">Documents in WPF</span></span>](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [<span data-ttu-id="937da-110">WPF의 입력 체계</span><span class="sxs-lookup"><span data-stu-id="937da-110">Typography in WPF</span></span>](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+## <a name="see-also"></a><span data-ttu-id="215a5-108">참고자료</span><span class="sxs-lookup"><span data-stu-id="215a5-108">See also</span></span>
+- <xref:System.Windows.Media.GlyphRun>
+- <xref:System.Windows.Media.DrawingContext.DrawText%2A>
+- <xref:System.Windows.Documents.Glyphs>
+- [<span data-ttu-id="215a5-109">WPF의 문서</span><span class="sxs-lookup"><span data-stu-id="215a5-109">Documents in WPF</span></span>](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [<span data-ttu-id="215a5-110">WPF의 입력 체계</span><span class="sxs-lookup"><span data-stu-id="215a5-110">Typography in WPF</span></span>](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)

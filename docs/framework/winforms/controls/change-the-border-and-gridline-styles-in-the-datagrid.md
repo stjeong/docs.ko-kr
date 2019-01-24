@@ -1,13 +1,6 @@
 ---
-title: "방법: Windows Forms DataGridView 컨트롤의 테두리 및 모눈선 스타일 변경"
-ms.custom: 
+title: '방법: 테두리 및 Windows Forms DataGridView 컨트롤의 모눈선 스타일 변경'
 ms.date: 03/30/2017
-ms.prod: .net-framework
-ms.reviewer: 
-ms.suite: 
-ms.technology: dotnet-winforms
-ms.tgt_pltfrm: 
-ms.topic: article
 dev_langs:
 - csharp
 - vb
@@ -18,62 +11,58 @@ helpviewer_keywords:
 - data grids [Windows Forms], changing border styles
 - DataGridView control [Windows Forms], gridline styles
 ms.assetid: 2f413c7a-4025-4171-8e3a-66ef908ea583
-caps.latest.revision: "15"
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: wpickett
-ms.workload: dotnet
-ms.openlocfilehash: a31bfc6fb3fa8a3c549a10fd0db017abde66539f
-ms.sourcegitcommit: 16186c34a957fdd52e5db7294f291f7530ac9d24
+ms.openlocfilehash: 052538f22c1da9836a61f66e3230e5e3e3cc72cf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590892"
 ---
-# <a name="how-to-change-the-border-and-gridline-styles-in-the-windows-forms-datagridview-control"></a><span data-ttu-id="c7617-102">방법: Windows Forms DataGridView 컨트롤의 테두리 및 모눈선 스타일 변경</span><span class="sxs-lookup"><span data-stu-id="c7617-102">How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control</span></span>
-<span data-ttu-id="c7617-103">와 <xref:System.Windows.Forms.DataGridView> 컨트롤을 컨트롤의 테두리 및 사용자 환경을 개선 하기 위해 눈금선의 모양을 사용자 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-103">With the <xref:System.Windows.Forms.DataGridView> control, you can customize the appearance of the control's border and gridlines to improve the user experience.</span></span> <span data-ttu-id="c7617-104">눈금선 색과 컨트롤에서 셀 테두리 스타일 이외에도 컨트롤의 테두리 스타일을 수정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-104">You can modify the gridline color and the control border style in addition to the border styles for the cells within the control.</span></span> <span data-ttu-id="c7617-105">일반 셀, 행 머리글 셀 및 열 머리글 셀에 대 한 다른 셀 테두리 스타일을 적용할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-105">You can also apply different cell border styles for ordinary cells, row header cells, and column header cells.</span></span>  
+# <a name="how-to-change-the-border-and-gridline-styles-in-the-windows-forms-datagridview-control"></a><span data-ttu-id="9b910-102">방법: 테두리 및 Windows Forms DataGridView 컨트롤의 모눈선 스타일 변경</span><span class="sxs-lookup"><span data-stu-id="9b910-102">How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control</span></span>
+<span data-ttu-id="9b910-103">사용 하 여는 <xref:System.Windows.Forms.DataGridView> 컨트롤, 컨트롤의 테두리 및 사용자 환경을 개선 하는 눈금선의 모양을 사용자 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-103">With the <xref:System.Windows.Forms.DataGridView> control, you can customize the appearance of the control's border and gridlines to improve the user experience.</span></span> <span data-ttu-id="9b910-104">모눈선 색과 컨트롤 내에 있는 셀의 테두리 스타일 외에도 컨트롤의 테두리 스타일을 수정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-104">You can modify the gridline color and the control border style in addition to the border styles for the cells within the control.</span></span> <span data-ttu-id="9b910-105">또한 일반 셀, 행 머리글 셀 및 열 머리글 셀에 대 한 다른 셀 테두리 스타일을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-105">You can also apply different cell border styles for ordinary cells, row header cells, and column header cells.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c7617-106">눈금선 색에만 사용 됩니다는 <xref:System.Windows.Forms.DataGridViewCellBorderStyle.Single>, <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal>, 및 <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical> 값의는 <xref:System.Windows.Forms.DataGridViewCellBorderStyle> 열거형 및 <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle.Single> 의 값은 <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle> 열거형입니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-106">The gridline color is used only with the <xref:System.Windows.Forms.DataGridViewCellBorderStyle.Single>, <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal>, and <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical> values of the <xref:System.Windows.Forms.DataGridViewCellBorderStyle> enumeration and the <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle.Single> value of the <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle> enumeration.</span></span> <span data-ttu-id="c7617-107">이러한 열거형의 다른 값은 운영 체제에서 지정 된 색을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-107">The other values of these enumerations use colors specified by the operating system.</span></span> <span data-ttu-id="c7617-108">또한 비주얼 스타일을 사용할 수 있는 경우 Windows XP 및 Windows Server 2003 제품군을 통해는 <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> 메서드는 <xref:System.Windows.Forms.DataGridView.GridColor%2A> 속성 값이 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-108">Additionally, when visual styles are enabled on Windows XP and the Windows Server 2003 family through the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method, the <xref:System.Windows.Forms.DataGridView.GridColor%2A> property value is not used.</span></span>  
+>  <span data-ttu-id="9b910-106">눈금선 색만 사용 됩니다는 <xref:System.Windows.Forms.DataGridViewCellBorderStyle.Single>, <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal>, 및 <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical> 의 값을 <xref:System.Windows.Forms.DataGridViewCellBorderStyle> 열거형 및 <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle.Single> 값은 <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle> 열거형.</span><span class="sxs-lookup"><span data-stu-id="9b910-106">The gridline color is used only with the <xref:System.Windows.Forms.DataGridViewCellBorderStyle.Single>, <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal>, and <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical> values of the <xref:System.Windows.Forms.DataGridViewCellBorderStyle> enumeration and the <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle.Single> value of the <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle> enumeration.</span></span> <span data-ttu-id="9b910-107">이러한 열거형의 다른 값을 사용 하 여 운영 체제에서 지정 된 색입니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-107">The other values of these enumerations use colors specified by the operating system.</span></span> <span data-ttu-id="9b910-108">비주얼 스타일이 Windows XP 및 Windows Server 2003 제품군을 통해 사용 되는 경우에 또한 합니다 <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> 메서드를는 <xref:System.Windows.Forms.DataGridView.GridColor%2A> 속성 값이 사용 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-108">Additionally, when visual styles are enabled on Windows XP and the Windows Server 2003 family through the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method, the <xref:System.Windows.Forms.DataGridView.GridColor%2A> property value is not used.</span></span>  
   
-### <a name="to-change-the-gridline-color-programmatically"></a><span data-ttu-id="c7617-109">프로그래밍 방식으로 눈금선 색을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="c7617-109">To change the gridline color programmatically</span></span>  
+### <a name="to-change-the-gridline-color-programmatically"></a><span data-ttu-id="9b910-109">프로그래밍 방식으로 눈금선 색을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="9b910-109">To change the gridline color programmatically</span></span>  
   
--   <span data-ttu-id="c7617-110"><xref:System.Windows.Forms.DataGridView.GridColor%2A> 속성을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-110">Set the <xref:System.Windows.Forms.DataGridView.GridColor%2A> property.</span></span>  
+-   <span data-ttu-id="9b910-110"><xref:System.Windows.Forms.DataGridView.GridColor%2A> 속성을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-110">Set the <xref:System.Windows.Forms.DataGridView.GridColor%2A> property.</span></span>  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#031](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#031)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#031](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#031)]  
   
-### <a name="to-change-the-border-style-of-the-entire-datagridview-control-programmatically"></a><span data-ttu-id="c7617-111">프로그래밍 방식으로 전체 DataGridView 컨트롤의 테두리 스타일을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="c7617-111">To change the border style of the entire DataGridView control programmatically</span></span>  
+### <a name="to-change-the-border-style-of-the-entire-datagridview-control-programmatically"></a><span data-ttu-id="9b910-111">프로그래밍 방식으로 전체 DataGridView 컨트롤의 테두리 스타일을 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="9b910-111">To change the border style of the entire DataGridView control programmatically</span></span>  
   
--   <span data-ttu-id="c7617-112"><xref:System.Windows.Forms.DataGridView.BorderStyle%2A> 속성을 <xref:System.Windows.Forms.BorderStyle> 열거형 값 중 하나로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-112">Set the <xref:System.Windows.Forms.DataGridView.BorderStyle%2A> property to one of the <xref:System.Windows.Forms.BorderStyle> enumeration values.</span></span>  
+-   <span data-ttu-id="9b910-112"><xref:System.Windows.Forms.DataGridView.BorderStyle%2A> 속성을 <xref:System.Windows.Forms.BorderStyle> 열거형 값 중 하나로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-112">Set the <xref:System.Windows.Forms.DataGridView.BorderStyle%2A> property to one of the <xref:System.Windows.Forms.BorderStyle> enumeration values.</span></span>  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#032](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#032)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#032](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#032)]  
   
-### <a name="to-change-the-border-styles-for-datagridview-cells-programmatically"></a><span data-ttu-id="c7617-113">DataGridView 셀의 테두리 스타일을 프로그래밍 방식으로 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="c7617-113">To change the border styles for DataGridView cells programmatically</span></span>  
+### <a name="to-change-the-border-styles-for-datagridview-cells-programmatically"></a><span data-ttu-id="9b910-113">DataGridView 셀의 테두리 스타일을 프로그래밍 방식으로 변경 하려면</span><span class="sxs-lookup"><span data-stu-id="9b910-113">To change the border styles for DataGridView cells programmatically</span></span>  
   
--   <span data-ttu-id="c7617-114">설정의 <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A>, 및 <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A> 속성입니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-114">Set the <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A>, and <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A> properties.</span></span>  
+-   <span data-ttu-id="9b910-114"><xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A>및 <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A> 속성을 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-114">Set the <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A>, and <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A> properties.</span></span>  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#033](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#033)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#033](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#033)]  
   
-## <a name="example"></a><span data-ttu-id="c7617-115">예</span><span class="sxs-lookup"><span data-stu-id="c7617-115">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="9b910-115">예제</span><span class="sxs-lookup"><span data-stu-id="9b910-115">Example</span></span>  
  [!code-csharp[System.Windows.Forms.DataGridViewMisc#030](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#030)]
  [!code-vb[System.Windows.Forms.DataGridViewMisc#030](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#030)]  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="c7617-116">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="c7617-116">Compiling the Code</span></span>  
- <span data-ttu-id="c7617-117">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="c7617-117">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="9b910-116">코드 컴파일</span><span class="sxs-lookup"><span data-stu-id="9b910-116">Compiling the Code</span></span>  
+ <span data-ttu-id="9b910-117">이 예제에는 다음 사항이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="9b910-117">This example requires:</span></span>  
   
--   <span data-ttu-id="c7617-118">`dataGridView1`이라는 <xref:System.Windows.Forms.DataGridView> 컨트롤</span><span class="sxs-lookup"><span data-stu-id="c7617-118">A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.</span></span>  
+-   <span data-ttu-id="9b910-118">`dataGridView1`이라는 <xref:System.Windows.Forms.DataGridView> 컨트롤</span><span class="sxs-lookup"><span data-stu-id="9b910-118">A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.</span></span>  
   
--   <span data-ttu-id="c7617-119"><xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType> 및 <xref:System.Drawing?displayProperty=nameWithType> 어셈블리에 대한 참조</span><span class="sxs-lookup"><span data-stu-id="c7617-119">References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.</span></span>  
+-   <span data-ttu-id="9b910-119"><xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType> 및 <xref:System.Drawing?displayProperty=nameWithType> 어셈블리에 대한 참조</span><span class="sxs-lookup"><span data-stu-id="9b910-119">References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c7617-120">참고 항목</span><span class="sxs-lookup"><span data-stu-id="c7617-120">See Also</span></span>  
- <xref:System.Windows.Forms.BorderStyle>  
- <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.GridColor%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridViewCellBorderStyle>  
- <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle>  
- [<span data-ttu-id="c7617-121">Windows Forms DataGridView 컨트롤의 기본 형식 및 스타일 지정</span><span class="sxs-lookup"><span data-stu-id="c7617-121">Basic Formatting and Styling in the Windows Forms DataGridView Control</span></span>](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)
+## <a name="see-also"></a><span data-ttu-id="9b910-120">참고자료</span><span class="sxs-lookup"><span data-stu-id="9b910-120">See also</span></span>
+- <xref:System.Windows.Forms.BorderStyle>
+- <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.GridColor%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridViewCellBorderStyle>
+- <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle>
+- [<span data-ttu-id="9b910-121">Windows Forms DataGridView 컨트롤의 기본 형식 및 스타일 지정</span><span class="sxs-lookup"><span data-stu-id="9b910-121">Basic Formatting and Styling in the Windows Forms DataGridView Control</span></span>](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)

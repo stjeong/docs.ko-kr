@@ -16,19 +16,19 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e1455ce7c3b07809d1dead8e98019c991475eb02
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 1d36ae3ef63c1324f77786ad55674bbdc257d984
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33442149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54607136"
 ---
-# <a name="waitortimercallback-function-pointer"></a><span data-ttu-id="a9109-102">WAITORTIMERCALLBACK 함수 포인터</span><span class="sxs-lookup"><span data-stu-id="a9109-102">WAITORTIMERCALLBACK Function Pointer</span></span>
-<span data-ttu-id="a9109-103">대기를 처리 하는 호스트를 알리는 함수를 가리키는 (<xref:System.Threading.WaitHandle>) 중 하나 신호 되었거나 시간이 초과 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="a9109-103">Points to a function that notifies the host that a wait handle (<xref:System.Threading.WaitHandle>) has either been signaled or timed out.</span></span>  
+# <a name="waitortimercallback-function-pointer"></a><span data-ttu-id="47d7f-102">WAITORTIMERCALLBACK 함수 포인터</span><span class="sxs-lookup"><span data-stu-id="47d7f-102">WAITORTIMERCALLBACK Function Pointer</span></span>
+<span data-ttu-id="47d7f-103">호스트는 대기 핸들에 알리는 함수를 가리키는 (<xref:System.Threading.WaitHandle>) 하거나 신호가 전달 되거나 시간이 초과 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="47d7f-103">Points to a function that notifies the host that a wait handle (<xref:System.Threading.WaitHandle>) has either been signaled or timed out.</span></span>  
   
- <span data-ttu-id="a9109-104">이 함수 포인터에서 더 이상 사용 되지는 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="a9109-104">This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].</span></span>  
+ <span data-ttu-id="47d7f-104">이 함수 포인터에서 사용 중단에 [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]합니다.</span><span class="sxs-lookup"><span data-stu-id="47d7f-104">This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a9109-105">구문</span><span class="sxs-lookup"><span data-stu-id="a9109-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="47d7f-105">구문</span><span class="sxs-lookup"><span data-stu-id="47d7f-105">Syntax</span></span>  
   
 ```  
 typedef VOID (__stdcall *WAITORTIMERCALLBACK) (  
@@ -37,24 +37,24 @@ typedef VOID (__stdcall *WAITORTIMERCALLBACK) (
 );  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="a9109-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="a9109-106">Parameters</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="47d7f-106">매개 변수</span><span class="sxs-lookup"><span data-stu-id="47d7f-106">Parameters</span></span>  
  `lpParameter`  
- <span data-ttu-id="a9109-107">[in] 호스트에 의해 정의 된 정보를 포함 하는 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="a9109-107">[in] A pointer to an object that contains information defined by the host.</span></span>  
+ <span data-ttu-id="47d7f-107">[in] 호스트에 의해 정의 된 정보를 포함 하는 개체에 대 한 포인터입니다.</span><span class="sxs-lookup"><span data-stu-id="47d7f-107">[in] A pointer to an object that contains information defined by the host.</span></span>  
   
  `TimerOrWaitFired`  
- <span data-ttu-id="a9109-108">[in] `true` 대기 핸들을 초과 하는 경우 또는 `false` 이 신호를 받은 경우.</span><span class="sxs-lookup"><span data-stu-id="a9109-108">[in] `true` if the wait handle timed out, or `false` if it was signaled.</span></span>  
+ <span data-ttu-id="47d7f-108">[in] `true` 대기 핸들을 초과 하는 경우 또는 `false` 된 신호를 받은 경우.</span><span class="sxs-lookup"><span data-stu-id="47d7f-108">[in] `true` if the wait handle timed out, or `false` if it was signaled.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="a9109-109">설명</span><span class="sxs-lookup"><span data-stu-id="a9109-109">Remarks</span></span>  
- <span data-ttu-id="a9109-110">함수를 `WAITORTIMERCALLBACK` 지점은 콜백 함수 및 호스팅 응용 프로그램의 작성자가 구현 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a9109-110">The function to which `WAITORTIMERCALLBACK` points is a callback function and must be implemented by the writer of the hosting application.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="47d7f-109">설명</span><span class="sxs-lookup"><span data-stu-id="47d7f-109">Remarks</span></span>  
+ <span data-ttu-id="47d7f-110">함수는 `WAITORTIMERCALLBACK` 지점은 콜백 함수 및 호스팅 응용 프로그램의 작성기에 의해 구현 되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="47d7f-110">The function to which `WAITORTIMERCALLBACK` points is a callback function and must be implemented by the writer of the hosting application.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a9109-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="a9109-111">Requirements</span></span>  
- <span data-ttu-id="a9109-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="a9109-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="47d7f-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="47d7f-111">Requirements</span></span>  
+ <span data-ttu-id="47d7f-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="47d7f-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a9109-113">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="a9109-113">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="47d7f-113">**헤더:** MSCorEE.h</span><span class="sxs-lookup"><span data-stu-id="47d7f-113">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="a9109-114">**라이브러리:** MSCorWks.dll</span><span class="sxs-lookup"><span data-stu-id="a9109-114">**Library:** MSCorWks.dll</span></span>  
+ <span data-ttu-id="47d7f-114">**라이브러리:** MSCorWks.dll</span><span class="sxs-lookup"><span data-stu-id="47d7f-114">**Library:** MSCorWks.dll</span></span>  
   
- <span data-ttu-id="a9109-115">**.NET framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a9109-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="47d7f-115">**.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="47d7f-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a9109-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a9109-116">See Also</span></span>  
- [<span data-ttu-id="a9109-117">사용되지 않는 CLR 호스팅 함수</span><span class="sxs-lookup"><span data-stu-id="a9109-117">Deprecated CLR Hosting Functions</span></span>](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## <a name="see-also"></a><span data-ttu-id="47d7f-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="47d7f-116">See also</span></span>
+- [<span data-ttu-id="47d7f-117">사용되지 않는 CLR 호스팅 함수</span><span class="sxs-lookup"><span data-stu-id="47d7f-117">Deprecated CLR Hosting Functions</span></span>](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
