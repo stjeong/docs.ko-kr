@@ -17,36 +17,36 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 0b243c507171a4d907ef4594ae0c715a074c965a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 6f69c39938384c7feca28ae40aba3e80a0ba28ed
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33452220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54706656"
 ---
-# <a name="icorprofilercallbackruntimesuspendfinished-method"></a><span data-ttu-id="26fb6-102">ICorProfilerCallback::RuntimeSuspendFinished 메서드</span><span class="sxs-lookup"><span data-stu-id="26fb6-102">ICorProfilerCallback::RuntimeSuspendFinished Method</span></span>
-<span data-ttu-id="26fb6-103">런타임에 모든 런타임 스레드의 일시 중단이 완료 되었음을 프로파일러에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-103">Notifies the profiler that the runtime has completed suspension of all runtime threads.</span></span>  
+# <a name="icorprofilercallbackruntimesuspendfinished-method"></a><span data-ttu-id="dc3c0-102">ICorProfilerCallback::RuntimeSuspendFinished 메서드</span><span class="sxs-lookup"><span data-stu-id="dc3c0-102">ICorProfilerCallback::RuntimeSuspendFinished Method</span></span>
+<span data-ttu-id="dc3c0-103">런타임에 모든 런타임 스레드 일시 중단 완료 되었음을 프로파일러에 알립니다.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-103">Notifies the profiler that the runtime has completed suspension of all runtime threads.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="26fb6-104">구문</span><span class="sxs-lookup"><span data-stu-id="26fb6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="dc3c0-104">구문</span><span class="sxs-lookup"><span data-stu-id="dc3c0-104">Syntax</span></span>  
   
 ```  
 HRESULT RuntimeSuspendFinished();  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="26fb6-105">설명</span><span class="sxs-lookup"><span data-stu-id="26fb6-105">Remarks</span></span>  
- <span data-ttu-id="26fb6-106">비관리 코드에 있는 모든 런타임 스레드 다시 런타임에 입력 하려고 시도할 때까지 실행을 계속 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-106">All runtime threads that are in unmanaged code are allowed to continue running until they try to re-enter the runtime.</span></span> <span data-ttu-id="26fb6-107">해당 시점 것도 일시 중단 됩니다 런타임 재개할 때까지 합니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-107">At that point they will also be suspended until the runtime resumes.</span></span> <span data-ttu-id="26fb6-108">런타임에 입력 하는 새 스레드에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-108">This also applies to new threads that enter the runtime.</span></span> <span data-ttu-id="26fb6-109">런타임에서 모든 스레드는 인터럽트 가능한 코드에 이미 또는 인터럽트 가능한 코드에 도달할 때 일시 중단 하 라는 메시지가 표시 되는 경우 즉시 하거나 일시 중단 됩니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-109">All threads in the runtime are either suspended immediately if they are already in interruptible code, or they are asked to suspend when they reach interruptible code.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="dc3c0-105">설명</span><span class="sxs-lookup"><span data-stu-id="dc3c0-105">Remarks</span></span>  
+ <span data-ttu-id="dc3c0-106">비관리 코드에 있는 모든 런타임 스레드 런타임을 다시 입력 하려고 할 때까지 계속 실행 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-106">All runtime threads that are in unmanaged code are allowed to continue running until they try to re-enter the runtime.</span></span> <span data-ttu-id="dc3c0-107">이때 이러한도 일시 중단 됩니다 런타임을 다시 시작 될 때까지.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-107">At that point they will also be suspended until the runtime resumes.</span></span> <span data-ttu-id="dc3c0-108">이 런타임에 입력 하는 새 스레드에도 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-108">This also applies to new threads that enter the runtime.</span></span> <span data-ttu-id="dc3c0-109">런타임의 모든 스레드는 즉시 일시 중단 되거나 인터럽트 가능한 코드에 포함 되어 있습니다 하거나 중단할 코드에 도달할 때 일시 중단 하 라는 메시지가 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-109">All threads in the runtime are either suspended immediately if they are already in interruptible code, or they are asked to suspend when they reach interruptible code.</span></span>  
   
- <span data-ttu-id="26fb6-110">`RuntimeSuspendFinished` callback은 동일한 스레드에서 발생 하는 [icorprofilercallback:: Runtimesuspendstarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendstarted-method.md) 콜백 합니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-110">The `RuntimeSuspendFinished` callback is guaranteed to occur on the same thread as the [ICorProfilerCallback::RuntimeSuspendStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendstarted-method.md) callback.</span></span>  
+ <span data-ttu-id="dc3c0-110">합니다 `RuntimeSuspendFinished` callback은 동일한 스레드에서 발생 합니다 [icorprofilercallback:: Runtimesuspendstarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendstarted-method.md) 콜백 합니다.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-110">The `RuntimeSuspendFinished` callback is guaranteed to occur on the same thread as the [ICorProfilerCallback::RuntimeSuspendStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendstarted-method.md) callback.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="26fb6-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="26fb6-111">Requirements</span></span>  
- <span data-ttu-id="26fb6-112">**플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.</span><span class="sxs-lookup"><span data-stu-id="26fb6-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="dc3c0-111">요구 사항</span><span class="sxs-lookup"><span data-stu-id="dc3c0-111">Requirements</span></span>  
+ <span data-ttu-id="dc3c0-112">**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="dc3c0-112">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="26fb6-113">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="26fb6-113">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="dc3c0-113">**헤더:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="dc3c0-113">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="26fb6-114">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="26fb6-114">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="dc3c0-114">**라이브러리:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="dc3c0-114">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="26fb6-115">**.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="26fb6-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="dc3c0-115">**.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="dc3c0-115">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="26fb6-116">참고 항목</span><span class="sxs-lookup"><span data-stu-id="26fb6-116">See Also</span></span>  
- [<span data-ttu-id="26fb6-117">ICorProfilerCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="26fb6-117">ICorProfilerCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [<span data-ttu-id="26fb6-118">RuntimeSuspendAborted 메서드</span><span class="sxs-lookup"><span data-stu-id="26fb6-118">RuntimeSuspendAborted Method</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendaborted-method.md)
+## <a name="see-also"></a><span data-ttu-id="dc3c0-116">참고자료</span><span class="sxs-lookup"><span data-stu-id="dc3c0-116">See also</span></span>
+- [<span data-ttu-id="dc3c0-117">ICorProfilerCallback 인터페이스</span><span class="sxs-lookup"><span data-stu-id="dc3c0-117">ICorProfilerCallback Interface</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [<span data-ttu-id="dc3c0-118">RuntimeSuspendAborted 메서드</span><span class="sxs-lookup"><span data-stu-id="dc3c0-118">RuntimeSuspendAborted Method</span></span>](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendaborted-method.md)
