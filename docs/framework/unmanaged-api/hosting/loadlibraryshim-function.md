@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5fe1ba15f8a9f8ee79582158209049c1e502a61d
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 3bad6c052ec90c8cd3e47c4ec822fc2d5ae944af
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47199872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54612166"
 ---
 # <a name="loadlibraryshim-function"></a>LoadLibraryShim 함수
 지정된 된 버전의.NET Framework 재배포 가능 패키지에 포함 된 DLL 로드 합니다.  
@@ -68,11 +68,11 @@ HRESULT LoadLibraryShim (
 >  .NET Framework 버전 2.0 부터는 로드할 CLR 하면 Fusion.dll를 로드 합니다. Fusion.dll 함수 구현을 런타임에서 제공 하는 래퍼 됩니다 때문입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** MSCorEE.h  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [사용되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## <a name="see-also"></a>참고자료
+- [사용되지 않는 CLR 호스팅 함수](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

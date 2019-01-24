@@ -2,12 +2,12 @@
 title: 날짜 및 시간 정식 함수
 ms.date: 03/30/2017
 ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
-ms.openlocfilehash: b79d11909c22208e0ea15b4083c230e920f1ad42
-ms.sourcegitcommit: 412bbc2e43c3b6ca25b358cdf394be97336f0c24
+ms.openlocfilehash: 46a4b595ccdfcb1a6576ee8cb1e080f0d4b48123
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2018
-ms.locfileid: "42925424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579994"
 ---
 # <a name="date-and-time-canonical-functions"></a>날짜 및 시간 정식 함수
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]은 날짜 및 시간 정식 함수를 포함합니다.  
@@ -34,16 +34,16 @@ ms.locfileid: "42925424"
 |`CurrentUtcDateTime()`|<xref:System.DateTime> 값을 UTS 시간대의 서버 현재 날짜 및 시간 형태로 반환합니다.<br /><br /> **반환 값**<br /><br /> `DateTime`|  
 |`Day(expression)`|`expression`의 일 부분을 1에서 31 사이의 `Int32`로 반환합니다.<br /><br /> **인수**<br /><br /> `DateTime` 및 `DateTimeOffset`입니다.<br /><br /> **반환 값**<br /><br /> `Int32`입니다.<br /><br /> **예제**<br /><br /> `-- The following example returns 12.`<br /><br /> `Day(cast('03/12/1998' as DateTime))`|  
 |`DayOfYear(expression)`|`expression`의 일 부분을 1에서 366 사이의 `Int32`로 반환합니다. 여기서 366은 윤년의 마지막 날에 대해 반환됩니다.<br /><br /> **인수**<br /><br /> `DateTime` 또는 `DateTimeOffset`입니다.<br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffNanoseconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(나노초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffMilliseconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(밀리초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffMicroseconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(마이크로초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffSeconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffMinutes(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(분)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffHours(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(시간)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffDays(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(일)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`: `endExpression`, `DateTime` 또는 `DateTimeOffset`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffMonths(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(월)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`: `endExpression`, `DateTime` 또는 `DateTimeOffset`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`DiffYears(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(연도)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`: `endExpression`, `DateTime` 또는 `DateTimeOffset`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다.   <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
-|`GetTotalOffsetMinutes(datetimeoffset)`|GMT에서 `datetimeoffset`을 차감한 시간(분)을 반환합니다. 이 값은 일반적으로 +780에서 -780(+13시간에서 -13시간) 사이입니다. **참고:** 이 함수가 SQL Server 2008 에서만 지원 됩니다. <br /><br /> **인수**<br /><br /> `DateTimeOffset`<br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffNanoseconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(나노초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffMilliseconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(밀리초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffMicroseconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(마이크로초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffSeconds(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(초)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffMinutes(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(분)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffHours(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(시간)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset` 또는 `Time`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffDays(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(일)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`: `endExpression`, `DateTime` 또는 `DateTimeOffset`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffMonths(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(월)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`: `endExpression`, `DateTime` 또는 `DateTimeOffset`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`DiffYears(startExpression,endExpression)`|`startExpression`과 `endExpression`의 차(연도)를 반환합니다.<br /><br /> **인수**<br /><br /> `startExpression`: `endExpression`, `DateTime` 또는 `DateTimeOffset`입니다. **참고:** `startExpression` 고 `endExpression` 동일한 형식 이어야 합니다. <br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
+|`GetTotalOffsetMinutes(datetimeoffset)`|GMT에서 `datetimeoffset`을 차감한 시간(분)을 반환합니다. 이 값은 일반적으로 +780에서 -780(+13시간에서 -13시간) 사이입니다. **참고:**  이 함수는 SQL Server 2008에서만 지원됩니다. <br /><br /> **인수**<br /><br /> `DateTimeOffset`<br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
 |`Hour(expression)`|`expression`의 시간 부분을 0에서 23 사이의 `Int32`로 반환합니다.<br /><br /> **인수**<br /><br /> `DateTime, Time` 및 `DateTimeOffset`입니다.<br /><br /> **예제**<br /><br /> `-- The following example returns 22.`<br /><br /> `Hour(cast('22:35:5' as DateTime))`|  
 |`Millisecond(expression)`|`expression`의 밀리초 부분을 0에서 999 사이의 `Int32`로 반환합니다.<br /><br /> **인수**<br /><br /> `DateTime, Time` 및 `DateTimeOffset`입니다.<br /><br /> **반환 값**<br /><br /> `Int32`입니다.|  
 |`Minute(expression)`|`expression`의 분 부분을 0에서 59 사이의 `Int32`로 반환합니다.<br /><br /> **인수**<br /><br /> `DateTime, Time` 또는 `DateTimeOffset`입니다.<br /><br /> **반환 값**<br /><br /> `Int32`입니다.<br /><br /> **예제**<br /><br /> `-- The following example returns 35`<br /><br /> `Minute(cast('22:35:5' as DateTime))`|  
@@ -56,5 +56,5 @@ ms.locfileid: "42925424"
   
  동일한 기능을 Microsoft SQL 클라이언트 관리 공급자에서 사용할 수 있습니다. 자세한 내용은 [Entity Framework 함수에 대 한 SqlClient](../../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [정식 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)
+## <a name="see-also"></a>참고자료
+- [정식 함수](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)

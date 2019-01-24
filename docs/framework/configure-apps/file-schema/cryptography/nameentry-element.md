@@ -1,5 +1,5 @@
 ---
-title: '&lt;nameEntry&gt; 요소'
+title: '&lt;nameEntry&gt; Element'
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#nameEntry
@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: f5d53debd746ba031e39215354c391d288016b6b
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: a4c29db3f84570d4d5e99a1deaf8beb3145c8ea1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50201361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626942"
 ---
-# <a name="ltnameentrygt-element"></a>&lt;nameEntry&gt; 요소
+# <a name="ltnameentrygt-element"></a>&lt;nameEntry&gt; Element
 클래스 이름을 알고리즘 이름에 매핑하며, 이를 통해 하나의 클래스가 여러 이름을 가질 수 있습니다.  
   
  \<configuration>  
-\<mscorlib >  
-\<cryptographySettings >  
-\<cryptoNameMapping >  
-\<m t r y >  
+\<mscorlib>  
+\<cryptographySettings>  
+\<cryptoNameMapping>  
+\<nameEntry>  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ ms.locfileid: "50201361"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`system.web`|ASP.NET 구성 섹션의 루트 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -77,8 +77,8 @@ ms.locfileid: "50201361"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+## <a name="see-also"></a>참고자료
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [암호화 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [암호화 클래스 구성](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

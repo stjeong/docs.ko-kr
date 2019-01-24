@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 24ba4b37cc8221df4e018d172996c0910ec07f7d
-ms.sourcegitcommit: a1e35d4e94edab384a63406c0a5438306873031b
+ms.openlocfilehash: e3a7d606f64dfe1a1abfd3da930fd00957da90a3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42754458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583587"
 ---
 # <a name="getobjecttext-function"></a>GetObjectText 함수
 관리 되는 개체 형식 (MOF) 구문에서 개체의 텍스트 렌더링을 반환합니다.
@@ -60,8 +60,8 @@ HRESULT GetObjectText (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -78,11 +78,11 @@ HRESULT GetObjectText (
 `pstrObjectText` 에 대 한 포인터 여야 합니다는 `null` 함수를 호출할 때는 하지 포인터를 취소할 수 없습니다 때문에 메서드 호출 하기 전에 잘못 된 문자열을 가리키도록 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항  
-**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

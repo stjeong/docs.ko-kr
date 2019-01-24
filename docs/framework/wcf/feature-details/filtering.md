@@ -2,12 +2,12 @@
 title: 필터링
 ms.date: 03/30/2017
 ms.assetid: 4002946c-e34a-4356-8cfb-e25912a4be63
-ms.openlocfilehash: 49813ac0f493d628a941b3060be93ef19bb1e802
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 735fd4252bb1740c149659f6c6fe81f18285914a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48836069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626110"
 ---
 # <a name="filtering"></a>필터링
 Windows Communication Foundation (WCF) 필터링 시스템 선언적 필터를 사용 메시지를 일치 시키고 운영 결정을 내릴 수 있습니다. 필터를 사용하여 메시지 일부를 검사하고 메시지를 통해 수행할 작업을 결정할 수 있습니다. 예를 들어, 큐 프로세스에서는 XPath 1.0 쿼리를 사용하여 알려진 헤더의 우선 순위 요소를 검사함으로써 메시지를 큐의 앞으로 이동할지 여부를 결정할 수 있습니다.  
@@ -47,7 +47,7 @@ Windows Communication Foundation (WCF) 필터링 시스템 선언적 필터를 �
 ### <a name="xpath-message-filters"></a>XPath 메시지 필터  
  <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>는 XPath 식을 사용하여 XML 문서에 특정 요소, 특성, 텍스트 또는 기타 XML 구문을 포함할지 여부를 결정합니다. 필터는 엄격한 XPath의 하위 집합에 대해 매우 효율적으로 최적화됩니다. XML 경로 언어에 설명 되어는 [W3C XML Path Language 1.0 사양](https://go.microsoft.com/fwlink/?LinkId=94779)합니다.  
   
- 일반적으로 응용 프로그램은 엔드포인트에서 <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>를 사용하여 SOAP 메시지의 내용을 퀴리한 다음 해당 쿼리의 결과를 기준으로 적절한 작업을 수행합니다. 예를 들어, 큐 프로세스에서는 XPath 쿼리를 사용하여 알려진 헤더의 우선 순위 요소를 검사함으로써 메시지를 큐 앞으로 이동할지 여부를 결정할 수 있습니다.  
+ 일반적으로 애플리케이션은 엔드포인트에서 <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>를 사용하여 SOAP 메시지의 내용을 퀴리한 다음 해당 쿼리의 결과를 기준으로 적절한 작업을 수행합니다. 예를 들어, 큐 프로세스에서는 XPath 쿼리를 사용하여 알려진 헤더의 우선 순위 요소를 검사함으로써 메시지를 큐 앞으로 이동할지 여부를 결정할 수 있습니다.  
   
 ## <a name="filter-tables"></a>필터 테이블  
  필터 테이블은 키-값 쌍을 저장하는 데 사용되며 여기서 필터는 키이고 일부 관련 데이터가 값입니다. 필터 데이터는 메시지가 필터와 일치하고 필터 데이터의 유형이 필터 테이블 클래스의 일반 매개 변수인 경우 수행할 작업을 표시하는 데 사용할 수 있습니다. 필터 데이터는 라우팅 규칙, 세션 보안 상태, 채널 상의 수신기 등으로 구성할 수 있습니다. 데이터는 데이터 흐름 제어가 필요한 경우 사용할 수 있습니다.  
@@ -83,5 +83,5 @@ Windows Communication Foundation (WCF) 필터링 시스템 선언적 필터를 �
   
 -   `EndpointAddress`에 지정된 대로 <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>의 나머지 엔드포인트 매개 변수.  
   
-## <a name="see-also"></a>참고 항목  
- [데이터 전송 및 Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+## <a name="see-also"></a>참고자료
+- [데이터 전송 및 Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)

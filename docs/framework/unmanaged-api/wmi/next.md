@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 15d470ccf9384695aa38a50c2c062c1b660fea96
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: aaebf06c63d7022c9798824097cd722a2ffadde5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43803030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54584612"
 ---
 # <a name="next-function"></a>Next 함수
 에 대 한 호출을 시작 하는 열거형의 다음 속성을 검색 [BeginEnumeration](beginenumeration.md)합니다.  
@@ -51,7 +51,7 @@ HRESULT Next (
 [in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.
 
 `lFlags`  
-[in] 예약 되어 있습니다. 이 매개 변수는 0 이어야 합니다.
+[in] 예약되어 있습니다. 이 매개 변수는 0 이어야 합니다.
 
 `pstrName`  
 [out] 새 `BSTR` 속성 이름을 포함 하는 합니다. 이 매개 변수를 설정할 수 있습니다 `null` 이름이 필요 하지 않은 경우.
@@ -72,9 +72,9 @@ HRESULT Next (
 |상수  |값  |설명  |
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
-| `WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못 되었습니다. |
 | `WBEM_E_UNEXPECTED` | 0x8004101d | 에 대 한 호출이 없습니다 합니다 [ `BeginEnumeration` ](beginenumeration.md) 함수입니다. |
-| `WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 새 열거형 시작에 사용할 있는 메모리가 충분 하지 않습니다. |
+| `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 새 열거형 시작에 사용할 있는 메모리가 충분 하지 않습니다. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | 원격 프로시저는 현재 프로세스와 실패 한 Windows 관리 간에 호출 합니다. |
 | `WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
 | `WBEM_S_NO_MORE_DATA` | 0x40005 | 열거형에 더 많은 속성이 있습니다. |
@@ -92,15 +92,15 @@ HRESULT Next (
 |상수  |값  |설명  |
 |---------|---------|---------|
 | `WBEM_FLAVOR_ORIGIN_SYSTEM` | 0x40 | 속성에는 표준 시스템 속성이입니다. |
-| `WBEM_FLAVOR_ORIGIN_PROPAGATED` | 0x20 | 클래스: 속성은 부모 클래스에서 상속 됩니다. </br> 인스턴스에 대 한: 속성을 부모 클래스에서 상속 하는 동안 수정 되지 않은 인스턴스가 있습니다.  |
-| `WBEM_FLAVOR_ORIGIN_LOCAL` | 0 | 클래스: 속성이 파생된 클래스에 속합니다. </br> 인스턴스에 대 한: 인스턴스에서; 속성이 수정 됩니다 즉, 값이 제공 된 또는 한정자를 추가 또는 수정 합니다. |
+| `WBEM_FLAVOR_ORIGIN_PROPAGATED` | 0x20 | 클래스: 속성은 부모 클래스에서 상속 됩니다. </br> 인스턴스: 속성을 부모 클래스에서 상속 하는 동안에 의해 수정 되지 인스턴스.  |
+| `WBEM_FLAVOR_ORIGIN_LOCAL` | 0 | 클래스: 속성은 파생된 클래스에 속합니다. </br> 인스턴스: 인스턴스에서; 속성이 수정 됩니다. 즉, 값이 제공 된 또는 한정자를 추가 또는 수정 합니다. |
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

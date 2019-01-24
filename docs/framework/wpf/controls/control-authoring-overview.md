@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controls [WPF], authoring overview
 - authoring overview for controls [WPF]
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
-ms.openlocfilehash: ca11a5787dfd3e5f3089d44689d96ec64c75e4f3
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 503e9cb0ea0fcfb34b326e80930f5ac829c3b4db
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43513173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585200"
 ---
 # <a name="control-authoring-overview"></a>컨트롤 제작 개요
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 컨트롤 모델의 확장성 덕분에 새 컨트롤을 만들 필요성이 상당히 줄어들었습니다. 그러나 어떤 경우에는 여전히 사용자 지정 컨트롤을 만들어야 할 수 있습니다. 이 항목에서는 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]에서 사용자 지정 컨트롤과 다양한 컨트롤 제작 모델을 만들 필요성을 최소화시키는 기능에 대해 설명합니다. 또한 새 컨트롤을 만드는 방법을 설명합니다.  
@@ -46,14 +46,14 @@ ms.locfileid: "43513173"
  풍부한 콘텐츠 모델, 스타일, 템플릿 및 트리거를 사용하면 새 컨트롤을 만들어야 하는 필요성이 최소화됩니다. 그러나 새 컨트롤을 만들어야 한다면 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 다양한 컨트롤 제작 모델을 이해하는 것이 중요합니다. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]는 컨트롤을 만들기 위해 세 가지 일반적인 모델을 제공하며 각 모델은 서로 다른 일련의 기능과 유연성 수준을 제공합니다. 세 가지 모델에 대 한 기본 클래스 <xref:System.Windows.Controls.UserControl>하십시오 <xref:System.Windows.Controls.Control>, 및 <xref:System.Windows.FrameworkElement>합니다.  
   
 ### <a name="deriving-from-usercontrol"></a>UserControl에서 파생  
- 컨트롤을 만드는 가장 간단한 방법은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 파생 하는 것 <xref:System.Windows.Controls.UserControl>입니다. 상속 하는 컨트롤을 빌드할 때 <xref:System.Windows.Controls.UserControl>, 기존 구성 요소를 추가 합니다 <xref:System.Windows.Controls.UserControl>구성 요소 이름을 지정 하 고 이벤트 처리기에서 참조, [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]합니다. 그런 다음 코드에서 명명된 요소를 참조하고 이벤트 처리기를 정의할 수 있습니다. 이 개발 모델은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 응용 프로그램 개발에 사용된 모델과 매우 유사합니다.  
+ 컨트롤을 만드는 가장 간단한 방법은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 에서 파생 하는 것 <xref:System.Windows.Controls.UserControl>입니다. 상속 하는 컨트롤을 빌드할 때 <xref:System.Windows.Controls.UserControl>, 기존 구성 요소를 추가 합니다 <xref:System.Windows.Controls.UserControl>구성 요소 이름을 지정 하 고 이벤트 처리기에서 참조, [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]합니다. 그런 다음 코드에서 명명된 요소를 참조하고 이벤트 처리기를 정의할 수 있습니다. 이 개발 모델은 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 애플리케이션 개발에 사용된 모델과 매우 유사합니다.  
   
  올바르게 빌드된 경우를 <xref:System.Windows.Controls.UserControl> 풍부한 콘텐츠, 스타일 및 트리거의 이점을 활용할 수 있습니다. 그러나 컨트롤에서 상속 하는 경우 <xref:System.Windows.Controls.UserControl>, 컨트롤을 사용 하는 사용자가 사용할 수는 <xref:System.Windows.DataTemplate> 또는 <xref:System.Windows.Controls.ControlTemplate> 모양을 사용자 지정할 수 있습니다.  파생 하는 데 필요한 것은 <xref:System.Windows.Controls.Control> 클래스 또는 해당 파생된 클래스 중 하나 (이외의 <xref:System.Windows.Controls.UserControl>) 템플릿을 지 원하는 사용자 지정 컨트롤을 만들려면.  
   
 #### <a name="benefits-of-deriving-from-usercontrol"></a>UserControl에서 파생하는 이점  
  파생 하는 것이 좋습니다. <xref:System.Windows.Controls.UserControl> 모두 적용 하는 경우:  
   
--   응용 프로그램을 빌드하는 방법과 유사하게 컨트롤을 빌드하려고 합니다.  
+-   애플리케이션을 빌드하는 방법과 유사하게 컨트롤을 빌드하려고 합니다.  
   
 -   컨트롤이 기존 구성 요소로만 구성됩니다.  
   
@@ -126,7 +126,7 @@ ms.locfileid: "43513173"
 ### <a name="use-routed-events"></a>라우트된 이벤트 사용  
  종속성 속성이 추가 기능으로 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 속성의 개념을 확장하는 것처럼 라우트된 이벤트가 표준 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 이벤트의 개념을 확장합니다. 라우트된 이벤트는 다음 동작을 지원하기 때문에 새로운 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 컨트롤을 만들 때 이벤트를 라우트된 이벤트로 구현하는 것도 좋습니다.  
   
--   이벤트는 여러 컨트롤의 부모에서 처리될 수 ​​있습니다. 이벤트가 버블링 이벤트인 경우 요소 트리의 단일 부모가 이벤트를 구독할 수 있습니다. 그런 다음 응용 프로그램 작성자는 하나의 처리기를 사용하여 여러 컨트롤의 이벤트에 응답할 수 있습니다. 예를 들어, 컨트롤의 각 항목의 일부인 경우는 <xref:System.Windows.Controls.ListBox> (에 포함 되어 있기 때문에 <xref:System.Windows.DataTemplate>), 응용 프로그램 개발자에 컨트롤의 이벤트에 대 한 이벤트 처리기를 정의할 수는 <xref:System.Windows.Controls.ListBox>합니다. 이벤트가 컨트롤 중 하나에서 발생할 때마다 이벤트 처리기가 호출됩니다.  
+-   이벤트는 여러 컨트롤의 부모에서 처리될 수 ​​있습니다. 이벤트가 버블링 이벤트인 경우 요소 트리의 단일 부모가 이벤트를 구독할 수 있습니다. 그런 다음 애플리케이션 작성자는 하나의 처리기를 사용하여 여러 컨트롤의 이벤트에 응답할 수 있습니다. 예를 들어, 컨트롤의 각 항목의 일부인 경우는 <xref:System.Windows.Controls.ListBox> (에 포함 되어 있기 때문에 <xref:System.Windows.DataTemplate>), 응용 프로그램 개발자에 컨트롤의 이벤트에 대 한 이벤트 처리기를 정의할 수는 <xref:System.Windows.Controls.ListBox>합니다. 이벤트가 컨트롤 중 하나에서 발생할 때마다 이벤트 처리기가 호출됩니다.  
   
 -   라우트된 이벤트에 사용할 수는 <xref:System.Windows.EventSetter>, 응용 프로그램 개발자가 스타일 내에서 이벤트 처리기를 지정할 수 있습니다.  
   
@@ -189,15 +189,15 @@ ms.locfileid: "43513173"
  연결된 속성에 대한 자세한 내용은 [연결된 속성 개요](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)를 참조하세요.  
   
 ### <a name="define-and-use-shared-resources"></a>공유 리소스 정의 및 사용  
- 응용 프로그램과 동일한 어셈블리에 컨트롤을 포함하거나 여러 응용 프로그램에서 사용할 수 있는 별도의 어셈블리에 컨트롤을 패키지화할 수 있습니다. 대부분, 이 항목에서 설명하는 정보는 사용하는 메서드에 관계없이 적용됩니다.  그러나 주목할 만한 차이점이 하나 있습니다.  응용 프로그램과 동일한 어셈블리에 컨트롤을 배치하면 App.xaml 파일에 전역 리소스를 자유롭게 추가할 수 있습니다. 컨트롤만 포함 되어 있는 어셈블리로 없는 <xref:System.Windows.Application> App.xaml 파일을 사용할 수 있도록 연결 된 개체입니다.  
+ 애플리케이션과 동일한 어셈블리에 컨트롤을 포함하거나 여러 애플리케이션에서 사용할 수 있는 별도의 어셈블리에 컨트롤을 패키지화할 수 있습니다. 대부분, 이 항목에서 설명하는 정보는 사용하는 메서드에 관계없이 적용됩니다.  그러나 주목할 만한 차이점이 하나 있습니다.  애플리케이션과 동일한 어셈블리에 컨트롤을 배치하면 App.xaml 파일에 전역 리소스를 자유롭게 추가할 수 있습니다. 컨트롤만 포함 되어 있는 어셈블리로 없는 <xref:System.Windows.Application> App.xaml 파일을 사용할 수 있도록 연결 된 개체입니다.  
   
- 응용 프로그램이 리소스를 찾을 때 다음 순서로 세 가지 수준을 조사합니다.  
+ 애플리케이션이 리소스를 찾을 때 다음 순서로 세 가지 수준을 조사합니다.  
   
 1.  요소 수준  
   
      시스템이 리소스를 참조하는 요소로 시작한 다음 루트 요소에 도달할 때까지 논리 부모 등의 리소스를 검색합니다.  
   
-2.  응용 프로그램 수준  
+2.  애플리케이션 수준  
   
      정의 된 리소스는 <xref:System.Windows.Application> 개체입니다.  
   
@@ -205,7 +205,7 @@ ms.locfileid: "43513173"
   
      테마 수준 사전은 Themes라는 하위 폴더에 저장됩니다.  Themes 폴더의 파일은 테마에 해당합니다.  예를 들어 Aero.NormalColor.xaml, Luna.NormalColor.xaml, Royale.NormalColor.xaml 등이 있을 수 있습니다.  generic.xaml이라는 파일이 있을 수도 있습니다.  시스템이 테마 수준에서 리소스를 찾으면 먼저 테마별 파일에서 찾은 다음 generic.xaml에서 찾습니다.  
   
- 컨트롤이 응용 프로그램과 별도의 어셈블리에 있을 때는 전역 리소스를 요소 수준이나 테마 수준에 배치해야 합니다. 두 가지 방법 모두 장점이 있습니다.  
+ 컨트롤이 애플리케이션과 별도의 어셈블리에 있을 때는 전역 리소스를 요소 수준이나 테마 수준에 배치해야 합니다. 두 가지 방법 모두 장점이 있습니다.  
   
 #### <a name="defining-resources-at-the-element-level"></a>요소 수준에서 리소스 정의  
  사용자 지정 리소스 사전을 만들어 컨트롤 리소스 사전과 병합하면 요소 수준에서 공유 리소스를 정의할 수 있습니다.  이 메서드를 사용하면 리소스 파일의 이름을 원하는 대로 지정할 수 있으며 컨트롤과 동일한 폴더에 배치할 수 있습니다. 요소 수준의 리소스는 간단한 문자열을 키로 사용할 수도 있습니다. 다음 예제에서는 <xref:System.Windows.Media.LinearGradientBrush> Dictionary1.xaml 라는 리소스 파일입니다.  
@@ -244,7 +244,7 @@ ms.locfileid: "43513173"
   
  모든 테마에 대해 리소스를 정의할 필요는 없습니다. 특정 테마에 대해 리소스가 정의되지 않은 경우 컨트롤이 리소스에 대해 `Classic.xaml`을 확인합니다. 현재 테마에 해당하는 파일 또는 `Classic.xaml`에 리소스가 정의되지 않은 경우 컨트롤이 `generic.xaml`이라는 리소스 사전 파일에 있는 제네릭 리소스를 사용합니다.  `generic.xaml` 파일은 테마별 리소스 사전 파일과 같은 폴더에 있습니다. `generic.xaml`은 특정 Windows 테마에 해당하지 않지만 여전히 테마 수준의 사전입니다.  
   
- [테마 및 UI 자동화 지원이 있는 NumericUpDown 사용자 지정 컨트롤 샘플](https://go.microsoft.com/fwlink/?LinkID=160025)에는 `NumericUpDown` 컨트롤에 대한 두 개의 리소스 사전이 있습니다. 하나는 generic.xaml에 있고 다른 하나는 Luna.NormalColor.xaml에 있습니다.  응용 프로그램을 실행하고 Windows XP의 은색 테마와 다른 테마 사이를 전환하여 두 컨트롤 템플릿의 차이점을 확인할 수 있습니다. (Windows Vista를 실행하는 경우 Luna.NormalColor.xaml의 이름을 Aero.NormalColor.xaml로 바꾸고 Windows 고전 및 Windows Vista의 기본 테마와 같은 두 테마 사이에서 전환할 수 있습니다.)  
+ [테마 및 UI 자동화 지원이 있는 NumericUpDown 사용자 지정 컨트롤 샘플](https://go.microsoft.com/fwlink/?LinkID=160025)에는 `NumericUpDown` 컨트롤에 대한 두 개의 리소스 사전이 있습니다. 하나는 generic.xaml에 있고 다른 하나는 Luna.NormalColor.xaml에 있습니다.  애플리케이션을 실행하고 Windows XP의 은색 테마와 다른 테마 사이를 전환하여 두 컨트롤 템플릿의 차이점을 확인할 수 있습니다. (Windows Vista를 실행하는 경우 Luna.NormalColor.xaml의 이름을 Aero.NormalColor.xaml로 바꾸고 Windows 고전 및 Windows Vista의 기본 테마와 같은 두 테마 사이에서 전환할 수 있습니다.)  
   
  삽입 했을 때를 <xref:System.Windows.Controls.ControlTemplate> 제어 및 호출에 대 한 정적 생성자는 테마별 리소스 사전 파일 중 하나를 만들어야 합니다 <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29> 메서드를는 <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>다음 예제에서와 같이 합니다.  
   
@@ -261,14 +261,14 @@ ms.locfileid: "43513173"
  [!code-xaml[ThemeResourcesControlLibrary#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThemeResourcesControlLibrary/CS/NumericUpDown.xaml#6)]  
   
 ##### <a name="specifying-the-location-of-theme-resources"></a>테마 리소스의 위치 지정  
- 컨트롤에 대한 리소스를 찾으려면 호스팅 응용 프로그램이 어셈블리에 컨트롤 관련 리소스가 있는지 알아야 합니다. 추가 하 여 수행할 수 있습니다는 <xref:System.Windows.ThemeInfoAttribute> 컨트롤이 포함 된 어셈블리에 있습니다. 합니다 <xref:System.Windows.ThemeInfoAttribute> 에 <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> 제네릭 리소스의 위치를 지정 하는 속성 및 <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> 테마별 리소스의 위치를 지정 하는 속성입니다.  
+ 컨트롤에 대한 리소스를 찾으려면 호스팅 애플리케이션이 어셈블리에 컨트롤 관련 리소스가 있는지 알아야 합니다. 추가 하 여 수행할 수 있습니다는 <xref:System.Windows.ThemeInfoAttribute> 컨트롤이 포함 된 어셈블리에 있습니다. 합니다 <xref:System.Windows.ThemeInfoAttribute> 에 <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> 제네릭 리소스의 위치를 지정 하는 속성 및 <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> 테마별 리소스의 위치를 지정 하는 속성입니다.  
   
  다음 예제에서는 합니다 <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> 하 고 <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> 속성을 <xref:System.Windows.ResourceDictionaryLocation.SourceAssembly>제네릭 및 테마별 리소스가 컨트롤과 동일한 어셈블리에는 지정 합니다.  
   
  [!code-csharp[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/Properties/AssemblyInfo.cs#themessection)]
  [!code-vb[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)  
- [WPF의 Pack URI](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)
+## <a name="see-also"></a>참고자료
+- [Visual Studio에서 XAML 디자인](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [WPF의 Pack URI](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+- [컨트롤 사용자 지정](../../../../docs/framework/wpf/controls/control-customization.md)

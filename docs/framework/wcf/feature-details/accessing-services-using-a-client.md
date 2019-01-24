@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c8329832-bf66-4064-9034-bf39f153fc2d
-ms.openlocfilehash: 1ac7acda0b9065fde4ab04c80e9d26a1ec23fa6e
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 03b37dae72be0ffa589159b2aedc2ac16e35139e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53130990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583209"
 ---
 # <a name="accessing-services-using-a-client"></a>클라이언트를 사용하여 서비스 액세스
 클라이언트 응용 프로그램 만들기, 구성 및 서비스와 통신 하려면 WCF 클라이언트 또는 채널 개체를 사용 해야 합니다. 합니다 [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md) 항목에서는 개체 및 기본 클라이언트 및 채널 개체를 만들고 사용 하는 단계를 간략하게 설명 합니다.  
@@ -70,7 +70,7 @@ ms.locfileid: "53130990"
   
  큰 데이터 청크는 메시지 교환 패턴에 관계없이 클라이언트 처리 속도를 저하시킬 수 있습니다. 이러한 문제를 처리 하는 방법을 알아보려면 [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md)합니다.  
   
- 응용 프로그램 작업을 완료 하는 동안 더 많은 작업을 수행 해야 하는 경우 WCF 클라이언트를 구현 하는 서비스 계약 인터페이스에 비동기 메서드 쌍을 만들어야 합니다. 이 작업을 수행 하는 가장 쉬운 방법은 사용 하는 것은 `/async` 스위치에 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 예를 들어 참조 [방법: 서비스 작업을 비동기적으로 호출](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)합니다.  
+ 응용 프로그램 작업을 완료 하는 동안 더 많은 작업을 수행 해야 하는 경우 WCF 클라이언트를 구현 하는 서비스 계약 인터페이스에 비동기 메서드 쌍을 만들어야 합니다. 이 작업을 수행 하는 가장 쉬운 방법은 사용 하는 것은 `/async` 스위치에 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)합니다. 예는 [방법: 서비스 작업을 비동기적으로 호출](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)합니다.  
   
  증가 클라이언트 성능에 대 한 자세한 내용은 참조 하세요. [중간 계층 클라이언트 응용 프로그램](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)합니다.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "53130990"
   
  암시적 방법을 사용하는 경우 응용 프로그램은 <xref:System.ServiceModel.ClientBase%601> 또는 <xref:System.ServiceModel.IClientChannel> 확장에서 첫 번째 작업을 호출해야 합니다. 다른 작업을 호출하면 예외가 throw됩니다.  
   
- 명시적 방법을 사용하는 경우 응용 프로그램은 다음 단계를 순서대로 수행해야 합니다.  
+ 명시적 방법을 사용하는 경우 애플리케이션은 다음 단계를 순서대로 수행해야 합니다.  
   
 1.  <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=nameWithType> 또는 <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=nameWithType>(또는 비동기 버전)를 호출합니다.  
   
@@ -91,13 +91,13 @@ ms.locfileid: "53130990"
   
  프로덕션 품질 응용 프로그램에서는 명시적 방법을 사용하여 사용자 인터페이스 프로세스를 제어하는 것이 좋습니다.  
   
- 암시적 방법을 사용하는 응용 프로그램은 사용자 인터페이스 이니셜라이저를 호출하지만, 응용 프로그램 사용자가 바인딩에 대한 전송 시간 제한 내에 응답하지 않을 경우 사용자 인터페이스가 반환될 때 예외가 throw됩니다.  
+ 암시적 방법을 사용하는 애플리케이션은 사용자 인터페이스 이니셜라이저를 호출하지만, 애플리케이션 사용자가 바인딩에 대한 전송 시간 제한 내에 응답하지 않을 경우 사용자 인터페이스가 반환될 때 예외가 throw됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [이중 서비스](../../../../docs/framework/wcf/feature-details/duplex-services.md)  
- [어떻게: 단방향를 사용 하 여 서비스에 액세스 및 요청-회신 계약](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)  
- [어떻게: 이중 계약을와 함께 access Services](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)  
- [어떻게: WSE 3.0 액세스 서비스](../../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)  
- [어떻게: ChannelFactory 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)  
- [어떻게: 서비스 작업을 비동기적으로 호출](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)  
- [중간 계층 클라이언트 응용 프로그램](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)
+## <a name="see-also"></a>참고자료
+- [이중 서비스](../../../../docs/framework/wcf/feature-details/duplex-services.md)
+- [방법: 단방향를 사용 하 여 서비스에 액세스 및 요청-회신 계약](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [방법: 이중 계약을와 함께 access Services](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [방법: WSE 3.0 액세스 서비스](../../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [방법: ChannelFactory 사용](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [방법: 서비스 작업을 비동기적으로 호출](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [중간 계층 클라이언트 응용 프로그램](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)

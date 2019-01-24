@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 5bb9b6a2-7b57-4aea-8809-32b28bc73e88
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d59416ea2d9a2d7b001421271b9907bb3e84c086
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 284b7f814f8a9355220f0da59e8fce7d79345609
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47396970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620242"
 ---
 # <a name="etw-events-in-the-common-language-runtime"></a>공용 언어 런타임의 ETW 이벤트
 CLR(공용 언어 런타임)은 다양한 디버깅 및 프로파일링 이벤트를 통해 ETW(Windows용 이벤트 추적) 진단 정보에 대한 유용한 이벤트 추적을 제공합니다. CLR ETW 이벤트는 Windows ETW 추적 시스템을 사용하여 공용 언어 런타임에서 제공되는 기존 프로파일링 및 디버깅 지원을 확장합니다.  
@@ -35,5 +35,5 @@ CLR(공용 언어 런타임)은 다양한 디버깅 및 프로파일링 이벤�
  [CLR ETW 이벤트](../../../docs/framework/performance/clr-etw-events.md)  
  CLR ETW 이벤트, 해당 키워드 및 이벤트 데이터를 자세히 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [.NET Framework의 ETW 이벤트](../../../docs/framework/performance/etw-events.md)
+## <a name="see-also"></a>참고자료
+- [.NET Framework의 ETW 이벤트](../../../docs/framework/performance/etw-events.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /baseaddress compiler option [Visual Basic]
 - baseaddress compiler option [Visual Basic]
 ms.assetid: c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47
-ms.openlocfilehash: 6331a55bb1d20b5804605db103dcfd2997e348d9
-ms.sourcegitcommit: e614e0f3b031293e4107f37f752be43652f3f253
+ms.openlocfilehash: 0fecc8e890f44512fe4ac2058f26fe54db7570a5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2018
-ms.locfileid: "42930444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54588615"
 ---
 # <a name="-baseaddress"></a>-baseaddress
 DLL을 만들 때 기본 기준 주소를 지정 합니다.  
@@ -29,7 +29,7 @@ DLL을 만들 때 기본 기준 주소를 지정 합니다.
   
 |용어|정의|  
 |---|---|  
-|`address`|필수. DLL의 기준 주소입니다. 이 주소는 16 진수 숫자로 지정 되어야 합니다.|  
+|`address`|필수 요소. DLL의 기준 주소입니다. 이 주소는 16 진수 숫자로 지정 되어야 합니다.|  
   
 ## <a name="remarks"></a>설명  
  DLL에 대 한 기본 기준 주소는이 설정한는 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]합니다.  
@@ -42,10 +42,10 @@ DLL을 만들 때 기본 기준 주소를 지정 합니다.
   
 |-Baseaddress Visual Studio IDE에서 설정 하려면|  
 |---|  
-|1.  **솔루션 탐색기**에서 프로젝트를 선택합니다. **프로젝트** 메뉴에서 **속성**을 클릭합니다. <br />2.  **컴파일** 탭을 클릭합니다.<br />3.  **고급**을 클릭합니다.<br />4.  값을 수정 합니다 **DLL 기준 주소:** 상자입니다. **참고:** 는 **DLL 기준 주소:** 상자는 읽기 전용 대상 DLL이 아니면 합니다.|  
+|1.  **솔루션 탐색기**에서 프로젝트를 선택합니다. **프로젝트** 메뉴에서 **속성**을 클릭합니다. <br />2.  **컴파일** 탭을 클릭합니다.<br />3.  **고급**을 클릭합니다.<br />4.  값을 수정 합니다 **DLL 기준 주소:** 상자입니다. **참고:**      합니다 **DLL 기준 주소:** 상자는 읽기 전용 대상 DLL이 아니면 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Sn.exe (강력한 이름 도구)] [Sn.exe (강력한 이름 도구)](../../../framework/tools/sn-exe-strong-name-tool.md))
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [샘플 컴파일 명령줄](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Sn.exe (강력한 이름 도구)] [Sn.exe (강력한 이름 도구)](../../../framework/tools/sn-exe-strong-name-tool.md))

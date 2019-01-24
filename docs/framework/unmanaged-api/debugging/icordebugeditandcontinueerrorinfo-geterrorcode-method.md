@@ -17,15 +17,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e1cd0753b1ebcda3de33953b96e9dcedd26a2cc4
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 026aab33207544e21a21f6c2374925d1d7923e55
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33411689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583550"
 ---
 # <a name="icordebugeditandcontinueerrorinfogeterrorcode-method"></a>ICorDebugEditAndContinueErrorInfo::GetErrorCode 메서드
-`GetErrorCode`는 사용되지 않습니다. 이 메서드를 호출 하지 마십시오.  
+`GetErrorCode`는 사용되지 않습니다. 이 메서드를 호출 하지 마세요.  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## <a name="see-also"></a>참고자료
+- [디버깅 인터페이스](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

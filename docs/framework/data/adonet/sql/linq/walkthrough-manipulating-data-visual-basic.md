@@ -1,17 +1,17 @@
 ---
-title: '연습: 데이터 조작(Visual Basic)'
+title: '연습: 데이터 조작 (Visual Basic)'
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: 1f6a54f6-ec33-452a-a37d-48122207bf14
-ms.openlocfilehash: e0bf8b32595f656d3bff424610f193bd84d0f5bd
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 0eab5fe5c9455badb7f538307cb827391b254a95
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33361655"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626929"
 ---
-# <a name="walkthrough-manipulating-data-visual-basic"></a>연습: 데이터 조작(Visual Basic)
+# <a name="walkthrough-manipulating-data-visual-basic"></a>연습: 데이터 조작 (Visual Basic)
 이 연습에서는 데이터베이스의 데이터를 추가, 수정 및 삭제하기 위한 기본 종단 간 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 시나리오를 제공합니다. Northwind 샘플 데이터베이스의 복사본을 사용하여 고객을 추가하고, 고객의 이름을 변경하고, 주문을 삭제합니다.  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
@@ -51,28 +51,28 @@ ms.locfileid: "33361655"
 -   이러한 변경 내용을 Northwind 데이터베이스로 전송  
   
 ## <a name="creating-a-linq-to-sql-solution"></a>LINQ to SQL 솔루션 만들기  
- 이 첫 번째 작업에서 빌드 및 실행 하는 데 필요한 참조가 포함 된 Visual Studio 솔루션을 만들는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트.  
+ 빌드 및 실행에 필요한 참조를 포함 하는 Visual Studio 솔루션을 만든이 첫 번째 태스크는 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 프로젝트입니다.  
   
 #### <a name="to-create-a-linq-to-sql-solution"></a>LINQ to SQL 솔루션을 만들려면  
   
 1.  Visual Studio의 **파일** 메뉴에서 **새 프로젝트**를 클릭합니다.  
   
-2.  에 **프로젝트 형식** 창에는 **새 프로젝트** 대화 상자를 클릭 **Visual Basic**합니다.  
+2.  에 **프로젝트 형식** 창에는 **새 프로젝트** 대화 상자에서 클릭 **Visual Basic**합니다.  
   
-3.  **템플릿** 창에서 **콘솔 응용 프로그램**을 클릭합니다.  
+3.  **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.  
   
-4.  에 **이름** 상자에서 입력 **LinqDataManipulationApp**합니다.  
+4.  에 **이름을** 상자에 입력 **LinqDataManipulationApp**합니다.  
   
 5.  **확인**을 클릭합니다.  
   
 ## <a name="adding-linq-references-and-directives"></a>LINQ 참조 및 지시문 추가  
- 이 연습에서는 프로젝트에 기본적으로 설치되어 있지 않을 수 있는 어셈블리를 사용합니다. 경우 `System.Data.Linq` 프로젝트에 대 한 참조로 나열 되지 않은 (클릭 **모든 파일 표시** 에 **솔루션 탐색기** 확장는 **참조** 노드)에 설명 된 대로 추가 다음 단계입니다.  
+ 이 연습에서는 프로젝트에 기본적으로 설치되어 있지 않을 수 있는 어셈블리를 사용합니다. 하는 경우 `System.Data.Linq` 프로젝트에 대 한 참조로 나열 되지 않은 (클릭 **모든 파일 표시** 에서 **솔루션 탐색기** 확장 합니다 **참조** 노드)를에 설명 된 대로 추가 다음 단계입니다.  
   
 #### <a name="to-add-systemdatalinq"></a>System.Data.Linq를 추가하려면  
   
-1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 **참조**, 클릭 하 고 **참조 추가**합니다.  
+1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 **참조**를 클릭 하 고 **참조 추가**합니다.  
   
-2.  에 **참조 추가** 대화 상자를 클릭 **.NET**System.Data.Linq 어셈블리를 클릭 한 다음 클릭, **확인**합니다.  
+2.  에 **참조 추가** 대화 상자, 클릭 **.NET**, 필자는 System.Data.Linq 어셈블리를 클릭 한 다음 클릭 **확인**합니다.  
   
      어셈블리가 프로젝트에 추가됩니다.  
   
@@ -85,9 +85,9 @@ ms.locfileid: "33361655"
   
 #### <a name="to-add-the-northwind-code-file-to-the-project"></a>northwind 코드 파일을 프로젝트에 추가하려면  
   
-1.  에 **프로젝트** 메뉴를 클릭 하 여 **기존 항목 추가**합니다.  
+1.  **프로젝트** 메뉴에서 **기존 항목 추가**를 클릭합니다.  
   
-2.  에 **기존 항목 추가** 대화 상자에서 c:\linqtest2\northwind.vb로 이동한 다음 **추가**합니다.  
+2.  에 **기존 항목 추가** 대화 상자에서 c:\linqtest2\northwind.vb로 이동 하 고 클릭 **추가**합니다.  
   
      northwind.vb 파일이 프로젝트에 추가됩니다.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "33361655"
   
      A **콘솔** 창이 열립니다.  
   
-     Enter 키를 눌러 응용 프로그램을 닫습니다는 **콘솔** 창을 클릭 하 여 **디버깅 중지** Visual Studio에서 **디버그** 메뉴.  
+     Enter 키를 눌러 응용 프로그램을 닫습니다 합니다 **콘솔** 창에서 클릭 하 여 **디버깅 중지** Visual studio **디버그** 메뉴.  
   
 ## <a name="creating-a-new-entity"></a>새 엔터티 만들기  
  새 엔터티를 만드는 과정은 단순합니다. `Customer` 키워드를 사용하여 개체(예: `New`)를 만들 수 있습니다.  
@@ -129,7 +129,7 @@ ms.locfileid: "33361655"
   
      새 행이 결과에 나타나지 않습니다. 새 데이터가 아직 데이터베이스로 전송되지 않았습니다.  
   
-3.  Enter 키를 **콘솔** 창 디버깅을 중지 합니다.  
+3.  Enter 키를 눌러 합니다 **콘솔** 디버깅을 중지 하는 창입니다.  
   
 ## <a name="updating-an-entity"></a>엔터티 업데이트  
  다음 단계에서는 `Customer` 개체를 검색하고 해당 속성 중 하나를 수정합니다.  
@@ -181,10 +181,10 @@ ms.locfileid: "33361655"
     Customer ID: RICAR  
     ```  
   
-4.  Enter 키를 **콘솔** 창 디버깅을 중지 합니다.  
+4.  Enter 키를 눌러 합니다 **콘솔** 디버깅을 중지 하는 창입니다.  
   
 > [!NOTE]
 >  변경 내용을 전송하여 새 고객을 추가한 후에는 동일한 고객을 있는 그대로 다시 추가할 수 없으므로 이 솔루션을 있는 그대로 다시 실행할 수 없습니다. 솔루션을 다시 실행하려면 추가할 고객 ID의 값을 변경합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+## <a name="see-also"></a>참고자료
+- [연습으로 학습](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

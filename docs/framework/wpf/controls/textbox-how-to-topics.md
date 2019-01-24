@@ -7,12 +7,12 @@ helpviewer_keywords:
 - controls [WPF], TextBox
 - TextBox control [WPF], how-to topics
 ms.assetid: 006aa461-fe37-4cd8-860a-d38d76e8b9f7
-ms.openlocfilehash: 2319ea8522a90705cf65006ffb368801921cda57
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: 1b3e0409c438fc5a6b69fea19cd55cbeb72d74b3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45742812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589944"
 ---
 # <a name="textbox-how-to-topics"></a>TextBox 방법 항목
 이 섹션에서는 사용 하 여 일반적인 작업을 수행 하는 방법을 보여 주는 예제를 제공 합니다 <xref:System.Windows.Controls.TextBox> 제어 합니다.  
@@ -41,6 +41,6 @@ ms.locfileid: "45742812"
   
  <xref:System.Windows.Controls.PasswordBox>  
   
-## <a name="see-also"></a>참고 항목  
- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)  
- [TextBox 스타일 및 템플릿](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)
+## <a name="see-also"></a>참고자료
+- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)
+- [TextBox 스타일 및 템플릿](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)

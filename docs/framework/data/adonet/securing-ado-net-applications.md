@@ -2,12 +2,12 @@
 title: ADO.NET 응용 프로그램 보안
 ms.date: 03/30/2017
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
-ms.openlocfilehash: e5b99621989e9f14c6c734a497f210780f3c7e57
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 935d963ed19175518191006c2cc367f88d69e2aa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43526971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585369"
 ---
 # <a name="securing-adonet-applications"></a>ADO.NET 응용 프로그램 보안
 보안 ADO.NET 응용 프로그램을 작성하려면 사용자 입력의 유효성을 확인하지 않는 것과 같은 일반적인 코딩 문제를 피하는 것 외에도 여러 부분을 고려해야 합니다. 데이터에 액세스하는 응용 프로그램에는 공격자가 중요한 데이터를 검색, 조작 또는 파괴하는 데 악용할 수 있는 여러 잠재적인 오류 지점이 있습니다. 따라서 응용 프로그램 디자인 단계의 위협 모델링 과정에서부터 최종 배포와 진행 중인 유지 관리에 이르기까지 보안의 모든 측면을 이해해야 합니다.  
@@ -23,7 +23,7 @@ ms.locfileid: "43526971"
  [보안 데이터 액세스](../../../../docs/framework/data/adonet/secure-data-access.md)  
  안전한 데이터 소스의 데이터로 작업하는 방법에 대해 설명합니다.  
   
- [안전한 클라이언트 응용 프로그램](../../../../docs/framework/data/adonet/secure-client-applications.md)  
+ [안전한 클라이언트 애플리케이션](../../../../docs/framework/data/adonet/secure-client-applications.md)  
  클라이언트 응용 프로그램 보안을 위한 고려 사항에 대해 설명합니다.  
   
  [코드 액세스 보안 및 ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md)  
@@ -45,12 +45,12 @@ ms.locfileid: "43526971"
  [보안 도구](https://msdn.microsoft.com/library/2a3eb98a-2de6-4fba-b41c-01a74d354c11)  
  보안 정책을 보호하고 관리하는 .NET Framework 도구입니다.  
   
- [보안 응용 프로그램을 만들기 위한 리소스](https://msdn.microsoft.com/library/0ebf5f69-76f2-498a-a2df-83cf3443e132)  
+ [보안 애플리케이션을 만들기 위한 리소스](https://msdn.microsoft.com/library/0ebf5f69-76f2-498a-a2df-83cf3443e132)  
  보안 응용 프로그램 만들기에 대한 항목의 링크를 제공합니다.  
   
  [보안 관련 참조 목록](/visualstudio/ide/security-bibliography)  
  온라인 및 인쇄 작업에서 사용 가능한 외부 리소스의 링크를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

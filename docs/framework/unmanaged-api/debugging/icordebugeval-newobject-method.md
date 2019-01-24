@@ -17,17 +17,17 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5ff378602fc7338263ef49aee6802d2138bab9d2
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 9ff4f86105fd1dfbd12360c01046492f3a6dbdcd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33413174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589910"
 ---
 # <a name="icordebugevalnewobject-method"></a>ICorDebugEval::NewObject 메서드
 새 개체 인스턴스를 할당 하 고 지정된 된 생성자 메서드를 호출 합니다.  
   
- 이 메서드는.NET Framework 버전 2.0에서에서 사용 되지 않습니다. 사용 하 여 [icordebugeval2:: Newparameterizedobject](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md) 대신 합니다.  
+ 이 메서드는.NET Framework 버전 2.0에서에서 사용 되지 않습니다. 사용 하 여 [ICorDebugEval2::NewParameterizedObject](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md) 대신 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,16 +47,16 @@ HRESULT NewObject (
  [in] `ppArgs` 배열의 크기입니다.  
   
  `ppArgs`  
- [in] ICorDebugValue 개체의 생성자에 전달 될 인수를 나타내는 각각의 배열입니다.  
+ [in] 생성자에 전달할 인수를 나타내는 각 ICorDebugValue 개체의 배열입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** CorDebug.idl, CorDebug.h  
   
  **라이브러리:** CorGuids.lib  
   
- **.NET framework 버전:** 1.0, 1.1  
+ **.NET framework 버전:** 1.1, 1.0  
   
-## <a name="see-also"></a>참고 항목  
- [NewParameterizedObject 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)
+## <a name="see-also"></a>참고자료
+- [NewParameterizedObject 메서드](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)

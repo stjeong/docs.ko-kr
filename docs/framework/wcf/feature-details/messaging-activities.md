@@ -2,12 +2,12 @@
 title: 메시징 활동
 ms.date: 03/30/2017
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
-ms.openlocfilehash: 3391f7442ef4922a847a58b6316eb177cbcfbd5e
-ms.sourcegitcommit: 2eb5ca4956231c1a0efd34b6a9cab6153a5438af
+ms.openlocfilehash: 839e9225db7b5d76cf05f148811634389e81502a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49086344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54617631"
 ---
 # <a name="messaging-activities"></a>메시징 활동
 메시징 작업을 사용하면 워크플로를 통해 WCF 메시지를 보내고 받을 수 있습니다. 워크플로에 메시징 작업을 추가하면 훨씬 더 복잡한 MEP(메시지 교환 패턴)를 모델링할 수 있습니다.
@@ -103,6 +103,6 @@ Request = rcv
 ## <a name="messaging-activities-and-transactions"></a>메시징 작업 및 트랜잭션
  워크플로 서비스가 호출되면 트랜잭션을 서비스 작업에 전달할 수 있습니다. 이 작업을 수행하려면 <xref:System.ServiceModel.Activities.Receive> 작업 안에 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 작업을 배치합니다. <xref:System.ServiceModel.Activities.TransactedReceiveScope> 작업은 `Receive` 작업과 본문을 포함합니다. 서비스에 전달된 트랜잭션은 <xref:System.ServiceModel.Activities.TransactedReceiveScope>의 본문이 실행되는 동안 앰비언트 상태로 유지됩니다. 본문이 실행을 마치면 트랜잭션이 완료됩니다. 워크플로 및 트랜잭션에 대 한 자세한 내용은 참조 하세요 [워크플로 트랜잭션을](../../../../docs/framework/windows-workflow-foundation/workflow-transactions.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 - [워크플로 서비스에서 오류를 수신 하는 방법](https://go.microsoft.com/fwlink/?LinkId=189151)
 - [장기 실행 워크플로 서비스 만들기](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)

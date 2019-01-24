@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -subsystemversion compiler option [Visual Basic]
 - subsystemversion compiler option [Visual Basic]
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
-ms.openlocfilehash: 9c4b4d66ba002e58af87ef39ea82a7a23caa15ca
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 7519bb648a92cab78b4e4594a9c68a85aa932863
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580918"
 ---
 # <a name="-subsystemversion-visual-basic"></a>-subsystemversion (Visual Basic)
 생성된 실행 파일을 실행할 수 있는 하위 시스템의 최소 버전을 지정하여 실행 파일을 실행할 수 있는 Windows 버전을 결정합니다. 가장 일반적으로, 이 옵션은 실행 파일이 이전 버전의 Windows에서 사용할 수 없는 특정 보안 기능을 활용할 수 있도록 합니다.  
@@ -27,7 +27,7 @@ ms.locfileid: "50185760"
   
 #### <a name="parameters"></a>매개 변수  
  `major.minor`  
- 주 버전과 부 버전의 점 표기법으로 표현된 필수 최소 버전의 하위 시스템입니다. 예를 들어 이 항목의 뒷부분에 나오는 표의 설명에 따라 이 옵션의 값을 6.01로 설정하는 경우 Windows 7 이전 운영 체제에서는 응용 프로그램을 실행할 수 없도록 지정할 수 있습니다. `major` 및 `minor`의 값을 정수로 지정해야 합니다.  
+ 주 버전과 부 버전의 점 표기법으로 표현된 필수 최소 버전의 하위 시스템입니다. 예를 들어 이 항목의 뒷부분에 나오는 표의 설명에 따라 이 옵션의 값을 6.01로 설정하는 경우 Windows 7 이전 운영 체제에서는 애플리케이션을 실행할 수 없도록 지정할 수 있습니다. `major` 및 `minor`의 값을 정수로 지정해야 합니다.  
   
  `minor` 버전에서 선행 0은 버전을 변경하지 않지만 후행 0은 버전을 변경합니다. 예를 들어 6.1과 6.01은 동일한 버전을 가리키지만 6.10은 다른 버전을 가리킵니다. 혼동을 피하기 위해 부 버전을 두 자리로 표현하는 것이 좋습니다.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "50185760"
   
 
   
-## <a name="see-also"></a>참고 항목  
-[Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 명령줄 컴파일러](../../../visual-basic/reference/command-line-compiler/index.md)
 
-[MSBuild 속성](/visualstudio/msbuild/msbuild-properties)
+- [MSBuild 속성](/visualstudio/msbuild/msbuild-properties)

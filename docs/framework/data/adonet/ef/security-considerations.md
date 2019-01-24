@@ -2,12 +2,12 @@
 title: 보안 고려 사항(Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
-ms.openlocfilehash: 25d313f9c6f71d946ed8d9cc5db2e99dc84983b3
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 41812dab1f92e20e3742661d13c9f0e4fb81b46e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45591954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54612829"
 ---
 # <a name="security-considerations-entity-framework"></a>보안 고려 사항(Entity Framework)
 이 항목에서는 [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] 응용 프로그램의 개발, 배포 및 실행과 관련된 보안 고려 사항에 대해 설명합니다. 또한 보안 [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] 응용 프로그램을 만들기 위한 권장 사항도 따라야 합니다. 자세한 내용은 [보안 개요](../../../../../docs/framework/data/adonet/security-overview.md)합니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "45591954"
   
 -   데이터베이스 연결을 열고 같은 데이터베이스에 대해 명령을 실행할 수 있는 권한 <xref:System.Data.SqlClient.SqlClientPermission> SQL Server 데이터베이스에 대 한 합니다.  
   
- 자세한 내용은 [코드 액세스 보안 및 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)을 참조하세요.  
+ 자세한 내용은 [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)을 참조하세요.  
   
 #### <a name="do-not-install-untrusted-applications"></a>신뢰할 수 없는 응용 프로그램을 설치하지 않습니다.  
  [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]에서는 보안 권한을 적용하지 않으며, 신뢰 여부에 관계없이 프로세스의 모든 사용자 제공 데이터 개체 코드를 호출합니다. 클라이언트 인증 및 권한 부여가 데이터 저장소 및 해당 응용 프로그램에서 수행되는지 확인합니다.  
@@ -161,7 +161,7 @@ ms.locfileid: "45591954"
 #### <a name="do-not-accept-metadataworkspace-objects-from-untrusted-sources"></a>신뢰할 수 없는 소스의 MetadataWorkspace 개체를 허용하지 않습니다.  
  응용 프로그램에서 신뢰할 수 없는 소스의 <xref:System.Data.Metadata.Edm.MetadataWorkspace> 클래스 인스턴스를 허용하면 안 됩니다. 대신, 명시적으로 작업 영역을 생성하고 해당 소스에서 채워야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [배포 고려 사항](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
- [마이그레이션 고려 사항](../../../../../docs/framework/data/adonet/ef/migration-considerations.md)
+## <a name="see-also"></a>참고자료
+- [ADO.NET 응용 프로그램 보안](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [배포 고려 사항](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
+- [마이그레이션 고려 사항](../../../../../docs/framework/data/adonet/ef/migration-considerations.md)

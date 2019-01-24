@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ToolStripContainer control [Windows Forms]
 - ToolStrip control [Windows Forms], ToolStripContainer
 ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
-ms.openlocfilehash: eb05627925534820544edc15e1fe06bf57f0ae84
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 260d79b7c6432c3dede5b593eaa3f1e52ed35c5e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44087179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54588303"
 ---
 # <a name="toolstripcontainer-control"></a>ToolStripContainer 컨트롤
 <xref:System.Windows.Forms.ToolStrip> 컨트롤은 <xref:System.Windows.Forms.ToolStripContainer>를 사용하여 기본 제공 래프팅(도킹된 경우 도구 영역 내에서 가로 또는 세로 공간 공유)을 지원합니다.  
@@ -41,5 +41,5 @@ ms.locfileid: "44087179"
  <xref:System.Windows.Forms.ToolStripPanel>  
  <xref:System.Windows.Forms.ToolStripPanel> 컨트롤에 대한 참조 설명서를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Windows Forms에서 사용할 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- [Windows Forms에 사용할 수 있는 컨트롤](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

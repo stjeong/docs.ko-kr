@@ -4,12 +4,12 @@ ms.date: 04/12/2018
 helpviewer_keywords:
 - Visual Basic compiler, options
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e
-ms.openlocfilehash: 98a9295f1a2158e28a699aa6dfb1403542e523b4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 8c16cf910546dcbe0a19efa13b552ffd4d9b6411
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50197303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580972"
 ---
 # <a name="visual-basic-compiler-options-listed-alphabetically"></a>Visual Basic 컴파일러 옵션 사전순 목록
 Visual Basic 명령줄 컴파일러는 Visual Studio 통합된 개발 환경 (IDE)에서 프로그램을 컴파일하는 대신 제공 됩니다. 다음은 사전순으로 정렬 하는 Visual Basic 명령줄 컴파일러 옵션의 목록입니다.  
@@ -25,7 +25,7 @@ Visual Basic 명령줄 컴파일러는 Visual Studio 통합된 개발 환경 (ID
 |`-analyzer`|이 어셈블리에서 분석기를 실행합니다(약식: -a).|  
 |[-baseaddress](../../../visual-basic/reference/command-line-compiler/baseaddress.md)|DLL의 기본 주소를 지정합니다.|  
 |[-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)|쉽게 버그를 보고할 수 있도록 정보가 포함된 파일을 만듭니다.|  
-|`-checksumalgorithm:<alg>`|PDB에 저장된 소스 파일 체크섬을 계산하기 위한 알고리즘을 지정합니다.  지원되는 값은 SHA1(기본값) 또는 SHA256입니다.|  
+|`-checksumalgorithm:<alg>`|PDB에 저장된 소스 파일 체크섬을 계산하기 위한 알고리즘을 지정합니다.  지원 되는 값은 SHA1 (기본값) 또는 SHA256입니다.|  
 |[-codepage](../../../visual-basic/reference/command-line-compiler/codepage.md)|컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다.|  
 |[-debug](../../../visual-basic/reference/command-line-compiler/debug.md)|디버깅 정보를 생성합니다.|  
 |[-define](../../../visual-basic/reference/command-line-compiler/define.md)|조건부 컴파일 기호를 정의합니다.|  
@@ -39,7 +39,7 @@ Visual Basic 명령줄 컴파일러는 Visual Studio 통합된 개발 환경 (ID
 |[-imports](../../../visual-basic/reference/command-line-compiler/imports.md)|지정된 어셈블리에서 네임스페이스를 가져옵니다.|  
 |[-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)|어셈블리에 강력한 이름을 지정하는 키 쌍의 키 컨테이너 이름을 지정합니다.|  
 |[-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)|어셈블리에 강력한 이름을 지정하는 키 또는 키 쌍이 포함된 파일을 지정합니다.|  
-|[-langversion](../../../visual-basic/reference/command-line-compiler/langversion.md)|언어 버전을 지정 합니다. 9&#124;9.0&#124;10&#124;10.0&#124;11&#124;11.0입니다.|  
+|[-langversion](../../../visual-basic/reference/command-line-compiler/langversion.md)|언어 버전을 지정 합니다. 9&#124;9.0&#124;10&#124;10.0&#124;11&#124;11.0.|  
 |[-libpath](../../../visual-basic/reference/command-line-compiler/libpath.md)|참조 되는 어셈블리의 위치를 지정 합니다 [-참조](../../../visual-basic/reference/command-line-compiler/reference.md) 옵션입니다.|  
 |[-linkresource](../../../visual-basic/reference/command-line-compiler/linkresource.md)|관리되는 리소스에 대한 링크를 만듭니다.|  
 |[-main](../../../visual-basic/reference/command-line-compiler/main.md)|포함 하는 클래스를 지정 합니다 `Sub Main` 프로시저를 시작할 때 사용 합니다.|  
@@ -80,8 +80,8 @@ Visual Basic 명령줄 컴파일러는 Visual Studio 통합된 개발 환경 (ID
 |[-win32manifest](../../../visual-basic/reference/command-line-compiler/win32manifest.md)|프로젝트의 PE(포팅 가능한 실행 파일) 파일에 포함할 사용자 정의 Win32 응용 프로그램 매니페스트 파일을 식별합니다.|  
 |[-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)|출력 파일에 Win32 리소스를 삽입합니다.|  
   
-## <a name="see-also"></a>참고자료  
- [Visual Basic 컴파일러 옵션 범주별 목록](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)  
- [프로젝트 디자이너 소개](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7)  
- [사전순 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
- [범주별 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-by-category.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic 컴파일러 옵션 범주별 목록](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
+- [프로젝트 디자이너 소개](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+- [사전순 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)
+- [범주별 C# 컴파일러 옵션 목록](../../../csharp/language-reference/compiler-options/listed-by-category.md)

@@ -1,5 +1,5 @@
 ---
-title: x:Static 태그 확장명
+title: x:Static 태그 확장
 ms.date: 03/30/2017
 f1_keywords:
 - StaticExtension
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - Static markup extension in XAML [XAML Services]
 - XAML [XAML Services], x:Static markup extension
 ms.assetid: 056aee79-7cdd-434f-8174-dfc856cad343
-ms.openlocfilehash: 8a14b00fe762d325028072cd0ea3eecf9b9206e3
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 5dd454cb323d4dc2ab9b4ebd8b233ffda3e77820
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50181279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619326"
 ---
-# <a name="xstatic-markup-extension"></a>x:Static 태그 확장명
+# <a name="xstatic-markup-extension"></a>x:Static 태그 확장
 에 정의 된 모든 값으로 정적 코드 엔터티 참조는 [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)]– 호환 방식으로 합니다. 참조 되는 정적 속성 XAML에서 속성 값을 제공 하기 사용할 수 있습니다.  
   
 ## <a name="xaml-attribute-usage"></a>XAML 특성 사용  
@@ -31,8 +31,8 @@ ms.locfileid: "50181279"
 | | |  
 |-|-|  
 |`prefix`|선택 사항입니다. 매핑된, 기본이 아닌 XAML 네임 스페이스를 참조 하는 접두사입니다. `prefix` 명시적으로 표시 사용의 기본 XAML 네임 스페이스에서 제공 하는 정적 속성을 거의 참조 하지 않기 때문입니다. 설명 부분을 참조하세요.|  
-|`typeName`|필수. 원하는 정적 멤버를 정의 하는 형식의 이름입니다.|  
-|`staticMemberName`|필수. 원하는 정적 값 멤버 (상수, 정적 속성, 필드 또는 열거형 값)의 이름입니다.|  
+|`typeName`|필수 요소. 원하는 정적 멤버를 정의 하는 형식의 이름입니다.|  
+|`staticMemberName`|필수 요소. 원하는 정적 값 멤버 (상수, 정적 속성, 필드 또는 열거형 값)의 이름입니다.|  
   
 ## <a name="remarks"></a>설명  
 
@@ -82,6 +82,6 @@ ms.locfileid: "50181279"
   
  WPF에 대 한 접두사와 XAML 네임 스페이스를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [XAML 네임 스페이스 및 WPF XAML에 대 한 매핑 Namespace](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [x:Type 태그 확장](../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [WPF에서 System.Xaml로 마이그레이션된 형식](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+## <a name="see-also"></a>참고자료
+- [x:Type 태그 확장](../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [WPF에서 System.Xaml로 마이그레이션된 형식](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

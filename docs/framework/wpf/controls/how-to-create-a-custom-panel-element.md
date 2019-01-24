@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Panel control [WPF]
 - custom Panel elements [WPF]
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
-ms.openlocfilehash: bca8900ccb3c31a78066a43709a5e9334bc09eab
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 93d9ebacda8c753ab5a4446999e1aa86828a2b9e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54621934"
 ---
 # <a name="how-to-create-a-custom-panel-element"></a>방법: 사용자 지정 패널 요소 만들기
 ## <a name="example"></a>예제  
@@ -28,7 +28,7 @@ ms.locfileid: "43776715"
  [!code-csharp[PlotPanel#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#1)]
  [!code-vb[PlotPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.Panel>  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [사용자 지정 콘텐츠 줄 바꿈 패널 샘플 만들기](https://go.microsoft.com/fwlink/?LinkID=159979)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.Panel>
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [사용자 지정 콘텐츠 줄 바꿈 패널 샘플 만들기](https://go.microsoft.com/fwlink/?LinkID=159979)

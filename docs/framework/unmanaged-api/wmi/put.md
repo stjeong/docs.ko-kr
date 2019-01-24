@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1ec8fe889885b555cbf9a95cd34b7330efff27f2
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3c37bae87f56745cf75031923db820ec2439fe04
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43518758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54625772"
 ---
 # <a name="put-function"></a>Put 함수
 명명된 속성을 새 값으로 설정합니다.
@@ -50,10 +50,10 @@ HRESULT Put (
 [in] 에 대 한 포인터를 [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) 인스턴스.
 
 `wszName`  
-[in] 속성의 이름입니다. 이 매개 변수 수 없습니다 `null`합니다.
+[in] 속성의 이름입니다. 이 매개 변수는 `null`일 수 없습니다.
 
 `lFlags`  
-[in] 예약 되어 있습니다. 이 매개 변수는 0 이어야 합니다.
+[in] 예약되어 있습니다. 이 매개 변수는 0 이어야 합니다.
 
 `pVal`   
 [in] 유효한 포인터 `VARIANT` 는 새 속성 값이 됩니다. 경우 `pVal` 됩니다 `null` 가리키는 또는 `VARIANT` 형식의 `VT_NULL`, 속성이 설정 되어 `null`입니다. 
@@ -69,10 +69,10 @@ HRESULT Put (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | 일반 오류가 발생이 했습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 하나 이상의 매개 변수가 올바르지 않습니다. |
-|`WBEM_E_INVALID_PROPERTY_TYPE` | 0x8004102a | 속성 형식이 인식 되지 않습니다. 클래스가 이미 존재 하는 경우 클래스 인스턴스를 만들 때이 값이 반환 됩니다. |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006(" | 메모리가 부족 하 여 작업을 완료할 수 없습니다. |
-| `WBEM_E_TYPE_MISMATCH` | 0x80041005가 나타나는 경우 | 에 대 한 인스턴스: 나타냅니다 `pVal` 가리키는 `VARIANT` 속성에 대 한 잘못 된 형식입니다. <br/> 클래스 정의: 속성이 부모 클래스에 이미 있습니다 하 고 새 COM 형식은 이전 COM 유형과 다릅니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 하나 이상의 매개 변수가 올바르지 않습니다. |
+|`WBEM_E_INVALID_PROPERTY_TYPE` | 0x8004102a | 속성 형식을 인식할 수 없는 경우 클래스가 이미 존재 하는 경우 클래스 인스턴스를 만들 때이 값이 반환 됩니다. |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 메모리가 부족하여 작업을 완료할 수 없는 경우 |
+| `WBEM_E_TYPE_MISMATCH` | 0x80041005 | 에 대 한 인스턴스: 함을 `pVal` 가리키는 `VARIANT` 속성에 대 한 잘못 된 형식입니다. <br/> 클래스 정의: 속성이 부모 클래스에 이미 있습니다. 및 새 COM 형식은 이전 COM 유형과 다릅니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다. |
   
 ## <a name="remarks"></a>설명
@@ -94,11 +94,11 @@ HRESULT Put (
 예를 들어 참조 된 [IWbemClassObject::Put](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-put) 메서드.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

@@ -2,12 +2,12 @@
 title: '방법: (XPath 및 LINQ to XML) 부모의 특성 찾기 (Visual Basic)'
 ms.date: 07/20/2015
 ms.assetid: 9d2572fd-27d4-426c-b079-16854cb9ec7d
-ms.openlocfilehash: af2b6fc3aaebe4ba45be405c587c549ea73b3289
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 15752805f35b145514d25208b6de44a7ed8ade47
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33639365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580540"
 ---
 # <a name="how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml-visual-basic"></a>방법: (XPath 및 LINQ to XML) 부모의 특성 찾기 (Visual Basic)
 이 항목에서는 부모 요소를 탐색하고 부모 요소의 특성을 찾는 방법을 보여 줍니다.  
@@ -19,7 +19,7 @@ ms.locfileid: "33639365"
 ## <a name="example"></a>예제  
  이 예제에서는 먼저 `Author` 요소를 찾은 다음 부모 요소의 `id` 특성을 찾습니다.  
   
- 이 예제에서는 XML 문서 [샘플 XML 파일: Books(LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md)를 사용합니다.  
+ 이 예제에서는 XML 문서로 을 사용합니다. [샘플 XML 파일: Books (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md)합니다.  
   
 ```vb  
 Dim books As XDocument = XDocument.Load("Books.xml")  
@@ -47,5 +47,5 @@ Results are identical
 id="bk101"  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ to XML에 대 한 XPath 사용자 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## <a name="see-also"></a>참고자료
+- [XPath 사용자 (Visual Basic)를 위한 LINQ to XML](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

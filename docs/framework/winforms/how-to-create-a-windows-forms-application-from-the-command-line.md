@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7cfd90c5d38be788125af3bafe1e9ba034e9b957
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: b37c57093662c94f5ad20bf9d01c63223b5901fb
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43804808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54581985"
 ---
 # <a name="how-to-create-a-windows-forms-application-from-the-command-line"></a>방법: 명령줄에서 Windows Forms 응용 프로그램 만들기
-다음 절차에서는 명령줄에서 Windows Forms 응용 프로그램을 만들고 실행하기 위해 완료해야 하는 기본 단계를 설명합니다. Visual Studio에서는 이러한 절차가 광범위하게 지원됩니다.  도 참조 하세요 [연습: 간단한 Windows Form 만들기](https://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\))합니다.  
+다음 절차에서는 명령줄에서 Windows Forms 응용 프로그램을 만들고 실행하기 위해 완료해야 하는 기본 단계를 설명합니다. Visual Studio에서는 이러한 절차가 광범위하게 지원됩니다.  또한 참조 [연습: 간단한 Windows Form 만들기](https://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\))합니다.  
   
 ## <a name="procedure"></a>프로시저  
   
@@ -113,9 +113,9 @@ ms.locfileid: "43804808"
   
 -   코드를 컴파일하려면 응용 프로그램을 컴파일 및 실행하는 방법을 설명하는 이전 절차의 지침을 따릅니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.Form>  
- <xref:System.Windows.Forms.Control>  
- [Windows Forms의 모양 변경](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
- [Windows Forms 응용 프로그램 강화](../../../docs/framework/winforms/advanced/index.md)  
- [Windows Forms 시작](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.Form>
+- <xref:System.Windows.Forms.Control>
+- [Windows Forms의 모양 변경](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)
+- [Windows Forms 응용 프로그램 강화](../../../docs/framework/winforms/advanced/index.md)
+- [Windows Forms 시작](../../../docs/framework/winforms/getting-started-with-windows-forms.md)

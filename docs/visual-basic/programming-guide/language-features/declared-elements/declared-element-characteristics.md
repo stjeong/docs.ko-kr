@@ -13,12 +13,12 @@ helpviewer_keywords:
 - data types [Visual Basic], declared elements
 - declared elements [Visual Basic], visibility
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
-ms.openlocfilehash: 27dad8b2fbfbc8d17090df201bf36eb080966f51
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: c34175a90c2c9c247a37ac186a415a585d1d7e97
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44076926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582260"
 ---
 # <a name="declared-element-characteristics-visual-basic"></a>선언된 요소 특성(Visual Basic)
 A *특징* 선언 된 요소의 요소 코드 상호 작용 하는 방법에 영향을 주는 기능입니다. 선언 된 모든 요소에 하나 이상의 연결 된 다음과 같은 특징이 있습니다.  
@@ -48,17 +48,17 @@ A *특징* 선언 된 요소의 요소 코드 상호 작용 하는 방법에 영
 |연산자|예|아니요|예|예|  
 |인터페이스|아니요|아니요|예|예|  
 |클래스|아니요|아니요|예|예|  
-|이벤트|아니요|아니요|예|예|  
+|이벤트(event)|아니요|아니요|예|예|  
 |대리자|아니요|아니요|예|예|  
   
  <sup>1</sup> 범위는 라고도 *가시성*합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [선언 요소](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
- [선언 요소 이름](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [선언된 요소 참조](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Visual Basic의 수명](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Visual Basic의 범위](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
- [Visual Basic의 액세스 수준](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [변수 선언](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+## <a name="see-also"></a>참고자료
+- [선언 요소](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)
+- [선언 요소 이름](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [선언된 요소 참조](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Visual Basic의 수명](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Visual Basic의 범위](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+- [Visual Basic의 액세스 수준](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [데이터 형식](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [변수 선언](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)

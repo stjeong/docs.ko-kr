@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6f5ff56a-a57e-49d7-8ae9-bbed697e42e3
-ms.openlocfilehash: 1b7d5aca6b2c992e4f1d6bdef2a687d1ff43bf71
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 34d49416bb7d0da60624a1f60e4dbd01a1dff9cd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43514005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54584547"
 ---
 # <a name="date-and-time-data"></a>날짜 및 시간 데이터
 SQL Server 2008에서는 날짜 및 시간 정보를 처리하기 위한 새로운 데이터 형식을 지원합니다. 새로운 데이터 형식에는 개별 날짜 형식과 시간 형식을 비롯하여 보다 큰 범위의 확장된 데이터 형식, 정밀도 및 표준 시간대 인식 기능이 포함됩니다. .NET Framework 버전 3.5 SP(서비스 팩) 1부터는 .NET Framework Data Provider for SQL Server(<xref:System.Data.SqlClient>)에 SQL Server 2008 데이터베이스 엔진의 새로운 모든 기능이 완벽하게 지원됩니다. SqlClient에서 이러한 새 기능을 사용하려면 .NET Framework 3.5 SP1 이상을 설치해야 합니다.  
@@ -88,7 +88,7 @@ SQL Server 2008에서는 날짜 및 시간 정보를 처리하기 위한 새로�
   
 |속성|설명|  
 |--------------|-----------------|  
-|<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|값이 nullable인지 여부를 가져오거나 설정합니다. 서버에 null 매개 변수 값을 보낼 때는 <xref:System.DBNull>(Visual Basic에서는 `null`)이 아니라 `Nothing`을 지정해야 합니다. 데이터베이스 null에 대 한 자세한 내용은 참조 하세요. [Handling Null Values](../../../../../docs/framework/data/adonet/sql/handling-null-values.md)합니다.|  
+|<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|값이 nullable인지 여부를 가져오거나 설정합니다. 서버에 null 매개 변수 값을 보낼 때는 <xref:System.DBNull>(Visual Basic에서는 `null`)이 아니라 `Nothing`을 지정해야 합니다. 데이터베이스 null에 대한 자세한 내용은 [Handling Null Values](../../../../../docs/framework/data/adonet/sql/handling-null-values.md)를 참조하세요.|  
 |<xref:System.Data.SqlClient.SqlParameter.Precision%2A>|값을 나타내는 데 사용되는 최대 자릿수를 가져오거나 설정합니다. 날짜 및 시간 데이터 형식에서는 이 설정이 무시됩니다.|  
 |<xref:System.Data.SqlClient.SqlParameter.Scale%2A>|값의 시간 부분에 대 한 확인 되는 소수 자릿수를 가져오거나 설정 합니다. `Time`하십시오 `DateTime2`, 및 `DateTimeOffset`합니다. 기본값은 0이며 이는 값에서 실제 자릿수가 유추되어 서버에 전송됨을 의미합니다.|  
 |<xref:System.Data.SqlClient.SqlParameter.Size%2A>|날짜 및 시간 데이터 형식에서 무시됩니다.|  
@@ -239,8 +239,8 @@ command.Parameters.AddWithValue( _
 |[날짜 및 시간 데이터 사용](https://go.microsoft.com/fwlink/?LinkId=98361)|날짜 및 시간 데이터 형식과 함수를 비롯하여 이러한 데이터 형식의 사용 방법에 대한 정보를 제공합니다.|  
 |[데이터 형식 (TRANSACT-SQL)](https://go.microsoft.com/fwlink/?LinkId=98362)|SQL Server 2008에 제공되는 시스템 데이터 형식에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [SQL Server 데이터 형식 매핑](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
- [매개 변수 및 매개 변수 데이터 형식 구성](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
- [SQL Server 데이터 형식 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [SQL Server 데이터 형식 매핑](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
+- [매개 변수 및 매개 변수 데이터 형식 구성](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
+- [SQL Server 데이터 형식 및 ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

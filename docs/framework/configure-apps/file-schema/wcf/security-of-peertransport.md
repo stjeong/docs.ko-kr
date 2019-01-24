@@ -2,21 +2,21 @@
 title: '&lt;peerTransport&gt;의 &lt;security&gt;'
 ms.date: 03/30/2017
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-ms.openlocfilehash: 901a1d0b29fa6ea7d9e520b379dc7c7ff1d1e522
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 8b0b8c5f230e8e93c07e13212201896010429af0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585382"
 ---
 # <a name="ltsecuritygt-of-ltpeertransportgt"></a>&lt;peerTransport&gt;의 &lt;security&gt;
 메시지 전송에 사용되는 인증 형식 및 보안을 비롯하여 피어 채널과 연결된 보안 설정을 포함합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<peerTransport >  
+\<binding>  
+\<peerTransport>  
 \<security>  
   
 ## <a name="syntax"></a>구문  
@@ -55,16 +55,16 @@ ms.locfileid: "54151958"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<peerTransport >](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|사용자 지정 바인딩에 대한 피어 전송을 정의합니다.|  
+|[\<peerTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|사용자 지정 바인딩에 대한 피어 전송을 정의합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.PeerSecurityElement>  
- <xref:System.ServiceModel.PeerSecuritySettings>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [전송 보안](../../../../../docs/framework/wcf/feature-details/transport-security.md)  
- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.PeerSecurityElement>
+- <xref:System.ServiceModel.PeerSecuritySettings>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [전송 보안](../../../../../docs/framework/wcf/feature-details/transport-security.md)
+- [전송](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [전송 선택](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

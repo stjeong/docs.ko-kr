@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Menu control [WPF]
 - controls [WPF], Menu
 ms.assetid: 67df6de5-db96-4c71-b752-af90729a6537
-ms.openlocfilehash: a1074d09c195a78dcc79df0841123672b716bcfe
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: b1f3889803ba681542349443276041d312293bcf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43858066"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626877"
 ---
 # <a name="menu-overview"></a>Menu 개요
 <xref:System.Windows.Controls.Menu> 클래스를 사용 하면 요소와 연결 된 명령 및 이벤트 처리기를 계층적 순서로 구성할 수 있습니다. 각 <xref:System.Windows.Controls.Menu> 의 컬렉션을 포함 하는 요소 <xref:System.Windows.Controls.MenuItem> 요소입니다.  
@@ -18,7 +18,7 @@ ms.locfileid: "43858066"
   
 <a name="menu_control"></a>   
 ## <a name="menu-control"></a>Menu 컨트롤  
- <xref:System.Windows.Controls.Menu> 컨트롤에 명령 또는 응용 프로그램에 대 한 옵션을 지정 하는 항목의 목록을 제공 합니다. 일반적으로 클릭 하는 <xref:System.Windows.Controls.MenuItem> 명령을 실행 하는 응용 프로그램 또는 하위 메뉴를 엽니다.  
+ <xref:System.Windows.Controls.Menu> 컨트롤에 명령 또는 애플리케이션에 대 한 옵션을 지정 하는 항목의 목록을 제공 합니다. 일반적으로 클릭 하는 <xref:System.Windows.Controls.MenuItem> 명령을 실행 하는 응용 프로그램 또는 하위 메뉴를 엽니다.  
   
 <a name="creating_menus"></a>   
 ## <a name="creating-menus"></a>메뉴 만들기  
@@ -35,7 +35,7 @@ ms.locfileid: "43858066"
   
 <a name="menus_inputgesturetext"></a>   
 ### <a name="inputgesturetext"></a>InputGestureText  
- 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 <xref:System.Windows.Controls.MenuItem.InputGestureText%2A> 키보드 바로 가기 텍스트를 할당 하는 속성 <xref:System.Windows.Controls.MenuItem> 컨트롤입니다. 이렇게 해야만 메뉴 항목에 바로 가기 키가 배치됩니다.  명령을 사용 하 여 연결 하지는 않습니다는 <xref:System.Windows.Controls.MenuItem>합니다. 응용 프로그램은 사용자 입력을 처리하여 작업을 수행해야 합니다.  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 <xref:System.Windows.Controls.MenuItem.InputGestureText%2A> 키보드 바로 가기 텍스트를 할당 하는 속성 <xref:System.Windows.Controls.MenuItem> 컨트롤입니다. 이렇게 해야만 메뉴 항목에 바로 가기 키가 배치됩니다.  명령을 사용 하 여 연결 하지는 않습니다는 <xref:System.Windows.Controls.MenuItem>합니다. 애플리케이션은 사용자 입력을 처리하여 작업을 수행해야 합니다.  
   
  [!code-xaml[MenuEvent#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#6)]  
   
@@ -59,5 +59,5 @@ ms.locfileid: "43858066"
   
  [!code-xaml[MenuStylesSnippet#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/app.xaml#2)]  
   
-## <a name="see-also"></a>참고 항목  
- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)
+## <a name="see-also"></a>참고자료
+- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)(WPF 컨트롤 갤러리 샘플)

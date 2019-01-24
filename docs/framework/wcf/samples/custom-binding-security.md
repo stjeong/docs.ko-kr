@@ -2,12 +2,12 @@
 title: Custom Binding Security
 ms.date: 03/30/2017
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
-ms.openlocfilehash: 56c3ed4be894a265635c747373e0b79599ce129d
-ms.sourcegitcommit: a36cfc9dbbfc04bd88971f96e8a3f8e283c15d42
+ms.openlocfilehash: 5ed4b124fb5150974bcbe334e3fec627e027498f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54221702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54584901"
 ---
 # <a name="custom-binding-security"></a>Custom Binding Security
 이 샘플에서는 사용자 지정 바인딩을 사용하여 보안을 구성하는 방법을 보여 줍니다. 여기서는 사용자 지정 바인딩을 사용하여 메시지를 안전하게 전송하고 메시지 수준 보안을 가능하게 하는 방법을 보여 줍니다. 이러한 방법은 클라이언트와 서비스 간에 메시지를 전송하는 데 보안 전송이 요구되면서 동시에 메시지가 메시지 수준에서 보호되어야 하는 경우에 유용합니다. 이 구성은 시스템 제공 바인딩에서는 지원되지 않습니다.
@@ -186,4 +186,4 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
 -   샘플 실행을 완료한 후 샘플 폴더에서 Cleanup.bat를 실행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

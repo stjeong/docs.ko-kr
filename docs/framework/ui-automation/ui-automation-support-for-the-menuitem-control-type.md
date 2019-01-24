@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 54bce311-3d23-40b9-ba90-1bdbdaf8fbba
 author: Xansky
 ms.author: mhopkins
-ms.openlocfilehash: 39eca896b8b2102d33c5747fe42664713cb4f0f5
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 070fb56503987ee5d11eb19f44c96f36e38b5e1b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54586356"
 ---
 # <a name="ui-automation-support-for-the-menuitem-control-type"></a>MenuItem 컨트롤 형식에 대한 UI 자동화 지원
 > [!NOTE]
@@ -21,7 +21,7 @@ ms.locfileid: "48584119"
   
  이 항목에서는 MenuItem 컨트롤 형식에 대한 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 지원 정보를 제공합니다. 컨트롤의 [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 트리 구조에 대해 설명하고 MenuItem 컨트롤 형식에 필요한 속성 및 컨트롤 패턴을 제공합니다.  
   
- 메뉴 컨트롤을 사용하면 명령 및 이벤트 처리기와 연관된 요소를 계층적으로 구성할 수 있습니다. 일반적인 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] 응용 프로그램에서는, 메뉴 모음에 몇 가지 메뉴 항목(예: **파일**, **편집**, **창**)이 있고 각 메뉴 항목에 메뉴가 표시됩니다. 메뉴 하나에 메뉴 항목 컬렉션(예: **새로 만들기**, **열기**, **닫기**)이 들어 있으며, 클릭하면 확장되어 추가 메뉴 항목이 표시되거나 특정 작업을 수행할 수 있습니다. 메뉴 항목은 메뉴, 메뉴 모음 또는 도구 모음에서 호스트될 수 있습니다.  
+ 메뉴 컨트롤을 사용하면 명령 및 이벤트 처리기와 연관된 요소를 계층적으로 구성할 수 있습니다. 일반적인 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] 애플리케이션에서는, 메뉴 모음에 몇 가지 메뉴 항목(예: **파일**, **편집**, **창**)이 있고 각 메뉴 항목에 메뉴가 표시됩니다. 메뉴 하나에 메뉴 항목 컬렉션(예: **새로 만들기**, **열기**, **닫기**)이 들어 있으며, 클릭하면 확장되어 추가 메뉴 항목이 표시되거나 특정 작업을 수행할 수 있습니다. 메뉴 항목은 메뉴, 메뉴 모음 또는 도구 모음에서 호스트될 수 있습니다.  
   
  다음 섹션에서는 MenuItem 컨트롤 형식에 필요한 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 트리 구조, 속성, 컨트롤 패턴, 이벤트를 정의합니다. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 요구 사항은 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)]또는 [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]의 모든 목록 컨트롤에 적용됩니다.  
   
@@ -43,7 +43,7 @@ ms.locfileid: "48584119"
   
 |속성|값|설명|  
 |--------------|-----------|-----------------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 응용 프로그램의 모든 컨트롤에서 고유해야 합니다.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|메모를 참조하세요.|이 속성의 값은 애플리케이션의 모든 컨트롤에서 고유해야 합니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|메모를 참조하세요.|전체 컨트롤이 포함된 가장 바깥쪽 사각형입니다.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|메모를 참조하세요.|경계 사각형이 없는 경우 지원됩니다. 경계 사각형 내의 일부 지점이 클릭 가능하지 않으며 특수화된 적중 테스트를 수행하는 경우 클릭 가능한 지점을 재정의하고 제공하세요.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|메모를 참조하세요.|컨트롤이 키보드 포커스를 받을 수 있으면 해당 컨트롤은 이 속성을 지원해야 합니다.|  
@@ -98,8 +98,8 @@ ms.locfileid: "48584119"
 ## <a name="legacy-issues"></a>레거시 문제  
  Toggle 패턴은 [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] 메뉴 항목이 선택되고 Toggle 패턴을 지원하는 데 필요하다고 프로그래밍 방식으로 판단할 수 있는 경우에만 지원됩니다. [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] 메뉴 항목은 선택될 수 있는지 여부를 노출하지 않기 때문에 메뉴 항목이 선택되지 않으면 Invoke 패턴이 지원됩니다. Toggle 패턴만 지원하는 메뉴 항목에 대해서도 Invoke 패턴이 항상 지원되도록 하는 예외가 적용됩니다. Invoke 패턴을 지원했던(메뉴 항목이 선택 취소되었을 때) 요소가 이 패턴이 선택된 후에는 더 이상 지원하지 않게 되므로 클라이언트에서 혼동되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Automation.ControlType.MenuItem>  
- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Automation.ControlType.MenuItem>
+- [UI 자동화 컨트롤 패턴 개요](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI 자동화 컨트롤 형식 개요](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI 자동화 개요](../../../docs/framework/ui-automation/ui-automation-overview.md)

@@ -2,12 +2,12 @@
 title: 피어 채널 응용 프로그램 보안
 ms.date: 03/30/2017
 ms.assetid: d4a0311d-3f78-4525-9c4b-5c93c4492f28
-ms.openlocfilehash: 725e629a187261a5bc50d880f75b942734df960b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: d6dd6d95fb151a4f06dc4f632465b38b07720a27
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33497557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54586685"
 ---
 # <a name="securing-peer-channel-applications"></a>피어 채널 응용 프로그램 보안
 [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)]의 다른 바인딩과 마찬가지로 `NetPeerTcpBinding`은 기본적으로 보안을 사용하며 전송 및 메시지 기반 보안(또는 둘 다)을 제공합니다. 이 항목에서는 이러한 두 가지 보안 형식에 대해 설명합니다. 보안 형식은 바인딩 사양의 보안 모드 태그(<xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>`Mode`)로 지정됩니다.  
@@ -41,6 +41,6 @@ ms.locfileid: "33497557"
 ## <a name="peer-channel-code-examples"></a>피어 채널 코드 예제  
  [피어 채널 시나리오](../../../../docs/framework/wcf/feature-details/peer-channel-scenarios.md)  
   
-## <a name="see-also"></a>참고 항목  
- [피어 채널 보안](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
- [피어 채널 응용 프로그램 빌드](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+## <a name="see-also"></a>참고자료
+- [피어 채널 보안](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
+- [피어 채널 응용 프로그램 빌드](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

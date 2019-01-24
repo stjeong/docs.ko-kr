@@ -2,18 +2,18 @@
 title: '&lt;mexHttpsBinding&gt;'
 ms.date: 03/30/2017
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
-ms.openlocfilehash: e39a4e1e6b1b2346f3a6e0ca36d91d3719009be1
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 27097580820615211d9aa3daccf55581b5e10175
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54151919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589414"
 ---
 # <a name="ltmexhttpsbindinggt"></a>&lt;mexHttpsBinding&gt;
 HTTPS를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바인딩의 설정을 지정합니다.  
   
  \<system.ServiceModel>  
-\<바인딩 >  
+\<bindings>  
 \<mexHttpsBinding>  
   
 ## <a name="syntax"></a>구문  
@@ -54,16 +54,16 @@ HTTPS를 통한 WS-MEX(WS-MetadataExchange) 메시지 교환에 사용되는 바
 ## <a name="remarks"></a>설명  
  이 바인딩은 기본적으로 인증서를 사용하여 전송 수준에서 보안을 지원할 수 있는 `WSHttpBinding` 바인딩입니다. 구성 및 메타 데이터 끝점을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 구성 사용자 지정 Ws-metadata Exchange 바인딩](../../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md), [방법: 가 아닌-MEX 바인딩을 통해 메타 데이터를 검색할](../../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md), 및 샘플 [사용자 지정 보안 메타 데이터 끝점](../../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A>  
- <xref:System.ServiceModel.Configuration.MexHttpsBindingElement>  
- [방법: 구성 파일을 사용 하는 서비스의 메타 데이터 게시](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
- [사용자 지정 바인딩을 통해 메타데이터 게시 및 검색](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)  
- [방법: 구성 사용자 지정 Ws-metadata Exchange 바인딩](../../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md)  
- [방법: 가 아닌-MEX 바인딩을 통해 메타 데이터를 검색 합니다.](../../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)  
- [사용자 지정 보안 메타 데이터 엔드포인트](../../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md)  
- [메타데이터](../../../../../docs/framework/wcf/feature-details/metadata.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A>
+- <xref:System.ServiceModel.Configuration.MexHttpsBindingElement>
+- [방법: 구성 파일을 사용 하는 서비스의 메타 데이터 게시](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
+- [사용자 지정 바인딩을 통해 메타데이터 게시 및 검색](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)
+- [방법: 구성 사용자 지정 Ws-metadata Exchange 바인딩](../../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md)
+- [방법: 가 아닌-MEX 바인딩을 통해 메타 데이터를 검색 합니다.](../../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)
+- [사용자 지정 보안 메타 데이터 엔드포인트](../../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md)
+- [메타데이터](../../../../../docs/framework/wcf/feature-details/metadata.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [시스템 제공 바인딩 구성](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [바인딩을 사용하여 서비스 및 클라이언트 구성](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

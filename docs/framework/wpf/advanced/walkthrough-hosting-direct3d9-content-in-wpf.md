@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Direct3D9 [WPF interoperability], hosting Direct3D9 content
 - WPF [WPF], hosting Direct3D9 content
 ms.assetid: 60983736-0ab5-42cc-8b16-e9fbde261a43
-ms.openlocfilehash: 1fa4c2347448e23bbf740093541ec2b834df6705
-ms.sourcegitcommit: 8c28ab17c26bf08abbd004cc37651985c68841b8
+ms.openlocfilehash: c8bee03cc3a72e1938cca182d59818f9bc2eabc4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48849883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626060"
 ---
 # <a name="walkthrough-hosting-direct3d9-content-in-wpf"></a>연습: WPF에서 Direct3D9 콘텐츠 호스팅
 이 연습에서는 Windows Presentation Foundation (WPF) 응용 프로그램에서 호스팅할 Direct3D9 콘텐츠를 호스트 하는 방법을 보여 줍니다.  
@@ -32,14 +32,14 @@ ms.locfileid: "48849883"
   
 -   DirectX SDK 9 이상입니다.  
   
--   WPF와 호환 가능한 형식에서 호스팅할 Direct3D9 콘텐츠를 포함 하는 DLL입니다. 자세한 내용은 [WPF 및 Direct3D9 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md) 하 고 [연습: WPF에서 호스팅에 대 한 Direct3D9 콘텐츠 만들기](../../../../docs/framework/wpf/advanced/walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md)합니다.  
+-   WPF와 호환 가능한 형식에서 호스팅할 Direct3D9 콘텐츠를 포함 하는 DLL입니다. 자세한 내용은 [WPF 및 Direct3D9 상호 운용성](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md) 고 [연습: WPF에서 호스팅할 Direct3D9 콘텐츠 만들기](../../../../docs/framework/wpf/advanced/walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md)합니다.  
   
 ## <a name="creating-the-wpf-project"></a>WPF 프로젝트 만들기  
  첫 번째 단계는 WPF 응용 프로그램에 대 한 프로젝트를 만드는 것입니다.  
   
 #### <a name="to-create-the-wpf-project"></a>WPF 프로젝트를 만들려면  
   
--   새 WPF 응용 프로그램 프로젝트 만들기의 Visual C# `D3DHost`합니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)를 참조하세요.  
+-   새 WPF 응용 프로그램 프로젝트 만들기의 Visual C# `D3DHost`합니다. 자세한 내용은 [방법: 새 WPF 응용 프로그램 프로젝트 만들기](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)합니다.  
   
      MainWindow.xaml 열립니다는 [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)]합니다.  
   
@@ -71,6 +71,6 @@ ms.locfileid: "48849883"
   
      WPF 응용 프로그램 내에서 호스팅할 Direct3D9 콘텐츠 표시 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Interop.D3DImage>  
- [Direct3D9 및 WPF 상호 운용성을 위한 성능 고려 사항](../../../../docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Interop.D3DImage>
+- [Direct3D9 및 WPF 상호 운용성을 위한 성능 고려 사항](../../../../docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md)

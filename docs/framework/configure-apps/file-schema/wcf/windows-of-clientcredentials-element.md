@@ -2,22 +2,22 @@
 title: '&lt;clientCredentials&gt; 요소의 &lt;windows&gt;'
 ms.date: 03/30/2017
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
-ms.openlocfilehash: 780d73b747feae5495ad08cb2324e7d8f8de0d7d
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 1331456f6defc24511064684181f615451be5b93
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54610749"
 ---
 # <a name="ltwindowsgt-of-ltclientcredentialsgt-element"></a>&lt;clientCredentials&gt; 요소의 &lt;windows&gt;
 클라이언트를 나타내는 데 사용되는 Windows 자격 증명의 설정을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<endpointBehaviors>  
-\<동작 >  
+\<behavior>  
 \<clientCredentials>  
-\<windows >  
+\<windows>  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,14 +45,14 @@ ms.locfileid: "54147475"
 |-------------|-----------------|  
 |[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|클라이언트를 서비스에 인증할 때 사용되는 자격 증명을 지정합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.WindowsClientElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Windows%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)  
- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.WindowsClientElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Windows%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- [클라이언트에 보안 설정](../../../../../docs/framework/wcf/securing-clients.md)
+- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [서비스 및 클라이언트에 보안 설정](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

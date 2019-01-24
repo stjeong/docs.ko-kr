@@ -2,23 +2,18 @@
 title: 앱 설정 스키마
 ms.date: 05/01/2017
 helpviewer_keywords:
-- schema app settings
-- app settings, schema [Windows Forms]
-- Windows Forms, app settings schema
-- configuration schema [.NET Framework], app settings
+  - schema app settings
+  - 'app settings, schema [Windows Forms]'
+  - 'Windows Forms, app settings schema'
+  - 'configuration schema [.NET Framework], app settings'
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 9bf2568c8c18f8f6d18c445e802cc72df18fb8c4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
-ms.translationtype: MT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50191150"
 ---
+
 # <a name="app-settings-schema"></a>앱 설정 스키마
 
-파일 경로, XML Web services URL 또는 응용 프로그램의 기타 사용자 지정 구성 정보와 같은 사용자 지정 응용 프로그램 설정이 포함되어 있습니다.
+파일 경로, XML Web services URL 또는 애플리케이션의 기타 사용자 지정 구성 정보와 같은 사용자 지정 애플리케이션 설정이 포함되어 있습니다.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;[**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md)   
@@ -39,7 +34,7 @@ ms.locfileid: "50191150"
 
 ## <a name="add-element"></a>\<add> 요소
 
-응용 프로그램 설정 컬렉션에 사용자 지정 응용 프로그램 설정을 이름/값 쌍으로 추가합니다. **키** 및 **값**에 대한 특성을 정의합니다.
+애플리케이션 설정 컬렉션에 사용자 지정 애플리케이션 설정을 이름/값 쌍으로 추가합니다. **키** 및 **값**에 대한 특성을 정의합니다.
 
 ## <a name="clear-element"></a>\<clear> 요소
 
@@ -47,11 +42,11 @@ ms.locfileid: "50191150"
 
 ## <a name="remove-element"></a>\<remove> 요소
 
-상속된 사용자 지정 응용 프로그램 설정에 대한 참조를 응용 프로그램 설정 컬렉션에서 제거합니다. **키**에 대한 특성을 정의합니다.
+상속된 사용자 지정 애플리케이션 설정에 대한 참조를 애플리케이션 설정 컬렉션에서 제거합니다. **키**에 대한 특성을 정의합니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 사용자 지정 응용 프로그램 설정을 정의하는 외부 응용 프로그램 설정 파일(*custom.config*)을 보여 줍니다.
+다음 예제에서는 사용자 지정 애플리케이션 설정을 정의하는 외부 애플리케이션 설정 파일(*custom.config*)을 보여 줍니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -60,7 +55,7 @@ ms.locfileid: "50191150"
 </appSettings>
 ```
 
-다음 예제에서는 외부 설정 파일의 설정을 사용하고 자체의 응용 프로그램 설정을 지정하는 응용 프로그램 구성 파일을 보여 줍니다.
+다음 예제에서는 외부 설정 파일의 설정을 사용하고 자체의 애플리케이션 설정을 지정하는 애플리케이션 구성 파일을 보여 줍니다.
 
 ```xml
 <configuration>
@@ -72,5 +67,5 @@ ms.locfileid: "50191150"
 
 ## <a name="see-also"></a>참고자료
 
-- [응용 프로그램 설정 개요](~/docs/framework/winforms/advanced/application-settings-overview.md)   
+- [응용 프로그램 설정 개요](~/docs/framework/winforms/advanced/application-settings-overview.md)
 - [응용 프로그램 설정 아키텍처](~/docs/framework/winforms/advanced/application-settings-architecture.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <httpWebRequest> element
 - httpWebRequest element
 ms.assetid: 52acd9d2-5bdc-4dc4-9c2a-f0a476ccbb31
-ms.openlocfilehash: 0d3feb168acbd623270a2038bf06a3c97126bd05
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 1a883b2e57d0f055237d68e4f69651ef496795ab
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50205154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54590031"
 ---
 # <a name="lthttpwebrequestgt-element-network-settings"></a>&lt;httpWebRequest&gt; 요소 (네트워크 설정)
 웹 요청 매개 변수를 지정합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "50205154"
  \<configuration>  
 \<system.net>  
 \<settings>  
-\<httpWebRequest >  
+\<httpWebRequest>  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,7 +43,7 @@ ms.locfileid: "50205154"
 |-------------------|---------------------|  
 |`maximumResponseHeadersLength`|(킬로바이트), 응답 헤더의 최대 길이 지정 합니다. 기본값은 64입니다. 값이-1 크기 제한이 응답 헤더에 적용 됩니다 나타냅니다.|  
 |`maximumErrorResponseLength`|(킬로바이트)는 오류 응답의 최대 길이 지정 합니다. 기본값은 64입니다. 값이-1은 오류 응답에 크기 제한이 적용을 나타냅니다.|  
-|`maximumUnauthorizedUploadLength`|권한이 없는 오류 코드, 바이트에서에 대 한 응답에서 업로드할 경우의 최대 길이 지정합니다. 기본값은 -1입니다. 값이-1은 업로드할 때 크기 제한이 적용을 나타냅니다.|  
+|`maximumUnauthorizedUploadLength`|권한이 없는 오류 코드, 바이트에서에 대 한 응답에서 업로드할 경우의 최대 길이 지정합니다. 기본값은 -1입니다. -1은 업로드할 때 크기 제한이 적용되지 않음을 나타냅니다.|  
 |`useUnsafeHeaderParsing`|안전 하지 않은 헤더를 구문 분석 사용 되는지 여부를 지정 합니다. 기본값은 `false`입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -76,6 +76,6 @@ ms.locfileid: "50205154"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

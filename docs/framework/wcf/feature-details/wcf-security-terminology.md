@@ -6,12 +6,12 @@ helpviewer_keywords:
 - security glossary [WCF]
 - security terms [WCF]
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
-ms.openlocfilehash: 8b8f92697181c76710e75d6e5a07296b1fcf9188
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 53b6abc41dda0ebbbe28afc5b631efcfc0a60668
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126824"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54620388"
 ---
 # <a name="wcf-security-terminology"></a>WCF 보안 용어
 보안을 설명할 때 사용되는 일부 용어는 생소할 수 있습니다. 이 항목에서는 일부 보안 용어에 대해 간략하게 설명하며, 모든 항목을 포괄적으로 설명하지는 않습니다.  
@@ -181,7 +181,7 @@ ms.locfileid: "53126824"
  X.509  
  필수 부분을 정의하는 인증서에 대한 국제 승인 표준입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [기본적인 Windows Communication Foundation 개념](../../../../docs/framework/wcf/fundamental-concepts.md)  
- [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## <a name="see-also"></a>참고자료
+- [기본적인 Windows Communication Foundation 개념](../../../../docs/framework/wcf/fundamental-concepts.md)
+- [보안 개념](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Windows Server appfabric 보안 모델](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

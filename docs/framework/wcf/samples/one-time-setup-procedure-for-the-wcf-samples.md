@@ -2,12 +2,12 @@
 title: Windows Communication Foundation 샘플의 일회 설치 절차
 ms.date: 03/30/2017
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
-ms.openlocfilehash: 5db72a6e5970a2c10e0dd1fb62339efd9b69138c
-ms.sourcegitcommit: 586dbdcaef9767642436b1e4efbe88fb15473d6f
+ms.openlocfilehash: 35eeab5daec6f63f4d3bed85442ffe6ca28dc38b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48840117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54583406"
 ---
 # <a name="one-time-setup-procedure-for-the-windows-communication-foundation-samples"></a>Windows Communication Foundation 샘플의 일회 설치 절차
 대부분의 Windows Communication Foundation (WCF) 샘플 인터넷 정보 서비스 (IIS)에서 호스팅되고 공용 가상 디렉터리에서 실행 됩니다. 이 일회 설치 절차에서는 디스크에 폴더를 만듭니다. 또한 이라는 iis 가상 디렉터리 추가 **ServiceModelSamples**합니다.
@@ -40,11 +40,11 @@ ms.locfileid: "48840117"
   
 5.  수행 합니다 [방화벽 지침](../../../../docs/framework/wcf/samples/firewall-instructions.md) 샘플에서 사용 된 포트를 사용 하도록 설정 합니다.  
   
-6.  다음 기본 디렉터리를 확인 합니다. \<InstallDrive >:**\WF_WCF_Samples**합니다. 샘플이 이전에 설치된 경우 이 디렉터리가 기본 디렉터리입니다.  
+6.  다음 기본 디렉터리를 확인 합니다. \<InstallDrive>:**\WF_WCF_Samples**. 샘플이 이전에 설치된 경우 이 디렉터리가 기본 디렉터리입니다.  
   
 7.  샘플 설치 되지 않은 경우에 대 한 샘플 다운로드 위치에서 설치할 [Visual C#](https://go.microsoft.com/fwlink/?LinkId=190939) 하거나 [Visual Basic](https://go.microsoft.com/fwlink/?LinkID=193373)합니다.  
   
-8.  샘플을 설치한 후로 이동 합니다. \<InstallDrive >:**\WF_WCF_Samples\WCF\Setup\\**  
+8.  샘플을 설치한 후로 이동 합니다. \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**  
   
 9. 실행 합니다 **Setupvroot.bat** 일괄 처리 파일. 다음 단계가 수행됩니다.  
   
@@ -86,4 +86,4 @@ ms.locfileid: "48840117"
 
 15. 일부 샘플에는 인증서가 필요합니다. 참조 [인터넷 정보 서비스 (IIS) 서버 인증서 설치 지침](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

@@ -2,21 +2,21 @@
 title: '&lt;transactionFlow&gt;'
 ms.date: 03/30/2017
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
-ms.openlocfilehash: 6f0660ce94fdfbe1ab636aa4197ef31526c21348
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: d8597a71a9b7afadba7565290085f491052e04d6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54622122"
 ---
 # <a name="lttransactionflowgt"></a>&lt;transactionFlow&gt;
 사용자 지정 바인딩에 대한 트랜잭션 흐름 지원을 지정합니다.  
   
  \<system.serviceModel>  
-\<바인딩 >  
+\<bindings>  
 \<customBinding>  
-\<바인딩 >  
-\<transactionFlow >  
+\<binding>  
+\<transactionFlow>  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,13 +48,13 @@ ms.locfileid: "54145798"
 > [!CAUTION]
 >  `OleTransactions` 프로토콜을 사용하여 엔드포인트 간에 트랜잭션을 전달할 경우 대상 엔드포인트에서 `OleTransactions` 이외의 프로토콜을 사용하여 트랜잭션을 다시 전달하려고 하면 트랜잭션 시간 제한이 상실될 수 있습니다. 따라서 OleTransactions 홉 뒤의 모든 하위 수준 노드가 예상보다 늦게 시간이 초과될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.TransactionFlowElement>  
- <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [ServiceModel 트랜잭션 구성](../../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md)  
- [트랜잭션 흐름 사용](../../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md)  
- [바인딩](../../../../../docs/framework/wcf/bindings.md)  
- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.TransactionFlowElement>
+- <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [ServiceModel 트랜잭션 구성](../../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md)
+- [트랜잭션 흐름 사용](../../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md)
+- [바인딩](../../../../../docs/framework/wcf/bindings.md)
+- [바인딩 확장](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [사용자 지정 바인딩](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1e557cc0da7bc684843ae3969242ffb84d811c44
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 006360203518f74adb964634af52505a71d51473
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33405348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54587101"
 ---
 # <a name="setassemblyfile-method"></a>SetAssemblyFile 메서드
-만들 어셈블리의 이름을 할당 합니다. 바인딩되지 않은 모듈을 만들 때 사용에 대 한 되지 않습니다.  
+만들려는 어셈블리의 이름을 할당 합니다. 바인딩되지 않은 모듈에 생성 때 사용할 수 없습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -56,7 +56,7 @@ HRESULT SetAssemblyFile(
 ## <a name="requirements"></a>요구 사항  
  Alink.h가 필요합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

@@ -2,12 +2,12 @@
 title: '&lt;messageSenderAuthentication&gt; 요소'
 ms.date: 03/30/2017
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.openlocfilehash: d543e5ac436e181c76e2954db7a3eaa8e1b8d6a3
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 9b5155e579973555db1fefb6b22bd6c1ff38ea70
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579903"
 ---
 # <a name="ltmessagesenderauthenticationgt-element"></a>&lt;messageSenderAuthentication&gt; 요소
 피어 투 피어 메시지 발신자에 대한 인증 옵션을 지정합니다.  
@@ -15,9 +15,9 @@ ms.locfileid: "54145907"
  피어 투 피어 프로그래밍에 대 한 자세한 내용은 참조 하세요. [피어-투-피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<endpointBehaviors>  
-\<동작 >  
+\<behavior>  
 \<clientCredentials>  
 \<peer>  
 \<messageSenderAuthentication>  
@@ -100,13 +100,13 @@ ms.locfileid: "54145907"
 </behaviors>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>  
- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
+- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
+- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)
+- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)
+- [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)

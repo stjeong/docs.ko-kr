@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Return statement [Visual Basic]
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
-ms.openlocfilehash: fe200add4e29fe4bbe0fdf335dcd94107b8ff1eb
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: fb75409a2c26ca966469624de781015db621a825
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47210177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54588397"
 ---
 # <a name="return-statement-visual-basic"></a>Return 문(Visual Basic)
 호출한 코드로 제어가 되돌아갑니다를 `Function`, `Sub`를 `Get`를 `Set`, 또는 `Operator` 프로시저입니다.  
@@ -46,12 +46,12 @@ Return expression
   
  [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Get 문](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Set 문](../../../visual-basic/language-reference/statements/set-statement.md)  
- [Operator 문](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Exit 문](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Try...Catch...Finally 문](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## <a name="see-also"></a>참고자료
+- [Function 문](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub 문](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Get 문](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Set 문](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Operator 문](../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Property 문](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Exit 문](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Try...Catch...Finally 문](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

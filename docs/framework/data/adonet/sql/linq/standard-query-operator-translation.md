@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a60c30fa-1e68-45fe-b984-f6abb9ede40e
-ms.openlocfilehash: fb4910e48af58463c5c851173f8e3caf4594cc3a
-ms.sourcegitcommit: 5bbfe34a9a14e4ccb22367e57b57585c208cf757
+ms.openlocfilehash: a94c2e2ffc3ae3fa5406daeae97e31cfc3fdd1bd
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46004434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54588576"
 ---
 # <a name="standard-query-operator-translation"></a>표준 쿼리 연산자 변환
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]에서는 표준 쿼리 연산자를 SQL 명령으로 변환합니다. 데이터베이스의 쿼리 프로세서는 SQL 변환에 대 한 실행 의미 체계를 결정합니다.  
@@ -225,10 +225,10 @@ ORDER BY [t0].[CustomerID]
   
     -   <xref:System.Linq.Enumerable.ToArray%2A>  
   
-## <a name="see-also"></a>참고 항목  
- [참조](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
- [시퀀스에서 요소 반환 또는 건너뛰기](../../../../../../docs/framework/data/adonet/sql/linq/return-or-skip-elements-in-a-sequence.md)  
- [두 시퀀스 연결](../../../../../../docs/framework/data/adonet/sql/linq/concatenate-two-sequences.md)  
- [두 시퀀스 간의 차집합 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-difference-between-two-sequences.md)  
- [두 시퀀스의 교집합 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-intersection-of-two-sequences.md)  
- [두 시퀀스의 합집합 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-union-of-two-sequences.md)
+## <a name="see-also"></a>참고자료
+- [참조](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [시퀀스에서 요소 반환 또는 건너뛰기](../../../../../../docs/framework/data/adonet/sql/linq/return-or-skip-elements-in-a-sequence.md)
+- [두 시퀀스 연결](../../../../../../docs/framework/data/adonet/sql/linq/concatenate-two-sequences.md)
+- [두 시퀀스 간의 차집합 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-difference-between-two-sequences.md)
+- [두 시퀀스의 교집합 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-intersection-of-two-sequences.md)
+- [두 시퀀스의 합집합 반환](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-union-of-two-sequences.md)

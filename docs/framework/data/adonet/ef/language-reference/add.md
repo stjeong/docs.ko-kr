@@ -2,12 +2,12 @@
 title: + (추가)
 ms.date: 03/30/2017
 ms.assetid: 51769b02-a8f7-4177-9e99-bbd10e77092c
-ms.openlocfilehash: a3c41ef8cf393a4d1b1deb362d6a3614558a34ba
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 1c525a1cd56d1d8b7ed0dad3a7cec686cb6b1ab3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47200947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580657"
 ---
 # <a name="-add"></a>+ (추가)
 두 숫자를 더합니다.  
@@ -31,12 +31,12 @@ expression + expression
 ## <a name="example"></a>예제  
  다음 Entity SQL 쿼리에서는 + 산술 연산자를 사용하여 두 숫자를 더합니다. 쿼리는 AdventureWorks Sales 모델을 기반으로 합니다. 이 쿼리를 컴파일하고 실행하려면 다음 단계를 수행하세요.  
   
-1.  [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)의 절차를 따릅니다.  
+1.  절차에 따라 [방법: StructuralType 결과 반환 하는 쿼리 실행](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)합니다.  
   
 2.  다음 쿼리를 `ExecuteStructuralTypeQuery` 메서드에 인수로 전달합니다.  
   
  [!code-csharp[DP EntityServices Concepts 2#ADD](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#add)]  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [개념적 모델 형식 (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [개념적 모델 형식(CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4)

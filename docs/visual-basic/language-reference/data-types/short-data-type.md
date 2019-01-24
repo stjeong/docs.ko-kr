@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Short data type
 - literal type characters [Visual Basic], S
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
-ms.openlocfilehash: dce345e049a1b89b85a340b8e9078f39882a45fb
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: d4dab1a72d1e240bc428b2c6b83a722584e35ecc
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53148517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54587663"
 ---
 # <a name="short-data-type-visual-basic"></a>Short 데이터 형식 (Visual Basic)
 부호 있는 16 비트 (2 바이트) 정수 값 범위에 있는-32,768부터 32,767 까지의 저장 합니다.  
@@ -46,7 +46,7 @@ Visual Basic 2017부터 사용할 수도 있습니다 밑줄 문자 `_`, 가독�
 
 [!code-vb[Short](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#ShortS)]
 
-Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어 다음과 같습니다.
+Visual Basic 15.5부터 사용할 수도 있습니다는 밑줄 문자 (`_`) 접두사 및 16 진수, 이진 또는 8 진수 숫자 사이의 선행 구분 기호로 합니다. 예를 들어:
 
 ```vb
 Dim number As Short = &H_3264
@@ -68,12 +68,12 @@ Dim number = &H_3264S
   
 -   **Framework 형식입니다.** .NET Framework에서 해당하는 형식은 <xref:System.Int16?displayProperty=nameWithType> 구조체입니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
- <xref:System.Int16?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)  
- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.Int16?displayProperty=nameWithType>
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Integer 데이터 형식](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [Long 데이터 형식](../../../visual-basic/language-reference/data-types/long-data-type.md)
+- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - smart tags
 - designer actions
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
-ms.openlocfilehash: d1c69d2e9e89e0a4fed767216e8743a0ac9ac81d
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: b17fbaea48660a47630dd310c74be9cd3cc78609
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44201805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54579318"
 ---
 # <a name="walkthrough-performing-common-tasks-using-smart-tags-on-windows-forms-controls"></a>연습: Windows Forms 컨트롤에서 스마트 태그를 사용하여 일반 작업 수행
 Windows Forms 응용 프로그램에 대 한 폼 및 컨트롤을 구성할 때에 반복적으로 수행 하는 많은 작업이 있습니다. 다음은 발생 하는 일반적으로 수행된 하는 작업의 일부입니다.  
@@ -57,17 +57,17 @@ Windows Forms 응용 프로그램에 대 한 폼 및 컨트롤을 구성할 때�
   
 2.  스마트 태그 문자 모양을 클릭 합니다. 문자 모양이 옆에 나타나는 바로 가기 메뉴에서 선택 합니다 **추가 탭** 항목입니다. 탭 페이지를 새로 추가할 관찰 된 <xref:System.Windows.Forms.TabControl>합니다.  
   
-3.  끌어서를 <xref:System.Windows.Forms.TableLayoutPanel> 에서 제어 합니다 **도구 상자** 폼입니다.  
+3.  <xref:System.Windows.Forms.TableLayoutPanel> 도구 상자 **에서** 컨트롤을 폼으로 끌어다 놓습니다.  
   
 4.  스마트 태그 문자 모양을 클릭 합니다. 문자 모양이 옆에 나타나는 바로 가기 메뉴에서 선택 합니다 **열 추가** 항목입니다. 새 열을 추가할 관찰 된 <xref:System.Windows.Forms.TableLayoutPanel> 제어 합니다.  
   
-5.  끌어서를 <xref:System.Windows.Forms.SplitContainer> 에서 제어 합니다 **도구 상자** 폼입니다.  
+5.  <xref:System.Windows.Forms.SplitContainer> 도구 상자 **에서** 컨트롤을 폼으로 끌어다 놓습니다.  
   
 6.  스마트 태그 문자 모양을 클릭 합니다. 문자 모양이 옆에 나타나는 바로 가기 메뉴에서 선택 합니다 **가로 분할자 방향** 항목입니다. 확인 된 <xref:System.Windows.Forms.SplitContainer> 컨트롤의 분할 막대는 이제 가로 방향입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.TextBox>  
- <xref:System.Windows.Forms.TabControl>  
- <xref:System.Windows.Forms.SplitContainer>  
- <xref:System.ComponentModel.Design.DesignerActionList>  
- [연습: Windows Forms 구성 요소에 스마트 태그 추가](https://msdn.microsoft.com/library/a6814169-fa7d-4527-808c-637ca5c95f63)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.TextBox>
+- <xref:System.Windows.Forms.TabControl>
+- <xref:System.Windows.Forms.SplitContainer>
+- <xref:System.ComponentModel.Design.DesignerActionList>
+- [연습: Windows Forms 구성 요소에 스마트 태그 추가](https://msdn.microsoft.com/library/a6814169-fa7d-4527-808c-637ca5c95f63)

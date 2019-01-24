@@ -19,12 +19,12 @@ helpviewer_keywords:
 - zeros, trailing
 - Double data type
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
-ms.openlocfilehash: 5d2d84f298b9cf6138e84ef287f6ea9212da2960
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 456383dd2f38e96a8ff18472ff44c65ba7b4a341
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44180230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54626487"
 ---
 # <a name="double-data-type-visual-basic"></a>Double 데이터 형식(Visual Basic)
 부호 있는 IEEE 64 비트 (8 바이트) 배정밀도 부동 소수점 숫자 값에서-1.79769313486231570 + 308에서-범위에 있는 저장 4.94065645841246544E-324 음수 값을 한 경우 4.94065645841246544 e에서-324 1.79769313486231570 e + 308에 대 한 양수 값입니다. 배정밀도 숫자는 실수의 근사값을 저장 합니다.  
@@ -55,13 +55,13 @@ ms.locfileid: "44180230"
   
 -   **Framework 형식입니다.** .NET Framework에서 해당하는 형식은 <xref:System.Double?displayProperty=nameWithType> 구조체입니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Double?displayProperty=nameWithType>  
- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)  
- [Decimal 데이터 형식](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  
- [Single 데이터 형식](../../../visual-basic/language-reference/data-types/single-data-type.md)  
- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)  
- [데이터 형식 문제 해결](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [형식 문자](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Double?displayProperty=nameWithType>
+- [데이터 형식](../../../visual-basic/language-reference/data-types/index.md)
+- [Decimal 데이터 형식](../../../visual-basic/language-reference/data-types/decimal-data-type.md)
+- [Single 데이터 형식](../../../visual-basic/language-reference/data-types/single-data-type.md)
+- [형식 변환 함수](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [변환 요약](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [데이터 형식의 효율적 사용](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [데이터 형식 문제 해결](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [형식 문자](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

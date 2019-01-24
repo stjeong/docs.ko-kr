@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d5728bac27ae7de649806a3e026bb16560fffefa
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: b33750e5792dcc83e261bc9bb8d1c5dbe35808aa
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54627228"
 ---
 # <a name="how-to-run-partially-trusted-code-in-a-sandbox"></a>방법: 샌드박스에서 부분적으로 신뢰할 수 있는 코드 실행
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -273,5 +273,5 @@ class Sandboxer : MarshalByRefObject
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)
+## <a name="see-also"></a>참고자료
+- [보안 코딩 지침](../../../docs/standard/security/secure-coding-guidelines.md)

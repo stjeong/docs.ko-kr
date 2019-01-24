@@ -2,12 +2,12 @@
 title: 보안 고려 사항 및 추적에 대한 유용한 정보
 ms.date: 03/30/2017
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-ms.openlocfilehash: 439484cf5df6311bef56be0e28e5949c79d9a8f4
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 0dadf89ecbd7623735debe37355761aea3d62db4
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50184848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580397"
 ---
 # <a name="security-concerns-and-useful-tips-for-tracing"></a>보안 고려 사항 및 추적에 대한 유용한 정보
 이 항목에서는 WebHost를 사용할 때의 유용한 팁뿐만 아니라 중요한 정보가 노출되지 않도록 보호할 수 있는 방법에 대해 설명합니다.  
@@ -90,5 +90,5 @@ ms.locfileid: "50184848"
   
  또한, 연결 지향 전송에 대한 연결마다 한 번, 그리고 그렇지 않게 전송된 메시지마다 한 번 메시지 발신자의 IP 주소가 기록됩니다. 이 작업은 발신자의 동의 없이 수행됩니다. 그러나 이 로깅은 Information 또는 Verbose 추적 수준에서만 발생하며 이러한 수준은 라이브 디버깅을 제외하고 프로덕션에서 기본 추적 수준 또는 권장 추적 수준이 아닙니다.  
   
-## <a name="see-also"></a>참고 항목  
- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+## <a name="see-also"></a>참고자료
+- [추적](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

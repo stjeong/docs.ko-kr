@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Group Join statement [Visual Basic]
 - queries [Visual Basic], Group Join
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
-ms.openlocfilehash: f4c0d7fa9f14868404cde6201692e26b919198be
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 19eba101e2a91d1b0549e9e3eb86d0af94f2d1b0
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43803667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54619746"
 ---
 # <a name="group-join-clause-visual-basic"></a>Group Join 절(Visual Basic)
 두 컬렉션을 단일 계층 구조 컬렉션으로 결합합니다. 조인 작업은 키를 일치 하는 기준으로 합니다.  
@@ -33,11 +33,11 @@ Group Join element [As type] In collection _
   
 |용어|정의|  
 |---|---|  
-|`element`|필수. 조인 중인 컬렉션에 대 한 제어 변수입니다.|  
+|`element`|필수 요소. 조인 중인 컬렉션에 대 한 제어 변수입니다.|  
 |`type`|선택 사항입니다. `element`의 형식입니다. 없으면 `type` 지정 된 형식의 `element` 에서 유추 됩니다 `collection`합니다.|  
-|`collection`|필수. 왼쪽에 있는 컬렉션과 결합할 컬렉션을 `Group Join` 연산자입니다. A `Group Join` 절에 중첩 될 수는 `Join` 절 또는 다른 `Group Join` 절.|  
-|`key1` `Equals` `key2`|필수. 조인 중인 컬렉션에 대 한 키를 식별 합니다. 사용 해야는 `Equals` 조인 중인 컬렉션에서 키를 비교 하는 연산자입니다. 조인 조건을 사용 하 여 결합할 수 있습니다는 `And` 여러 키를 식별 하는 연산자입니다. `key1` 의 왼쪽에 있는 컬렉션에서 매개 변수 여야 합니다 `Join` 연산자. `key2` 의 오른쪽에 있는 컬렉션에서 매개 변수 여야 합니다 `Join` 연산자.<br /><br /> 조인 조건에 사용 되는 키 컬렉션에서 둘 이상의 항목을 포함 하는 식을 수 있습니다. 그러나 각 키 식에는 해당 컬렉션의 항목만 포함할 수 있습니다.|  
-|`expressionList`|필수. 컬렉션에서 요소 그룹 집계 되는 방법을 식별 하는 하나 이상의 식입니다. 그룹화 된 결과의 멤버 이름을 식별 하려면 사용 합니다 `Group` 키워드 (`<alias> = Group`). 그룹에 적용할 집계 함수를 포함할 수도 있습니다.|  
+|`collection`|필수 요소. 왼쪽에 있는 컬렉션과 결합할 컬렉션을 `Group Join` 연산자입니다. A `Group Join` 절에 중첩 될 수는 `Join` 절 또는 다른 `Group Join` 절.|  
+|`key1` `Equals` `key2`|필수 요소. 조인 중인 컬렉션에 대 한 키를 식별 합니다. 사용 해야는 `Equals` 조인 중인 컬렉션에서 키를 비교 하는 연산자입니다. 조인 조건을 사용 하 여 결합할 수 있습니다는 `And` 여러 키를 식별 하는 연산자입니다. `key1` 의 왼쪽에 있는 컬렉션에서 매개 변수 여야 합니다 `Join` 연산자. `key2` 의 오른쪽에 있는 컬렉션에서 매개 변수 여야 합니다 `Join` 연산자.<br /><br /> 조인 조건에 사용 되는 키 컬렉션에서 둘 이상의 항목을 포함 하는 식을 수 있습니다. 그러나 각 키 식에는 해당 컬렉션의 항목만 포함할 수 있습니다.|  
+|`expressionList`|필수 요소. 컬렉션에서 요소 그룹 집계 되는 방법을 식별 하는 하나 이상의 식입니다. 그룹화 된 결과의 멤버 이름을 식별 하려면 사용 합니다 `Group` 키워드 (`<alias> = Group`). 그룹에 적용할 집계 함수를 포함할 수도 있습니다.|  
   
 ## <a name="remarks"></a>설명  
  `Group Join` 절 조인 중인 컬렉션에서 키 값을 일치를 기준으로 하는 두 개의 컬렉션을 결합 합니다. 결과 컬렉션을 첫 번째 컬렉션에서 키 값과 일치 하는 두 번째 컬렉션에서 요소의 컬렉션을 참조 하는 멤버를 포함할 수 있습니다. 또한 두 번째 컬렉션에서 그룹화 된 요소에 적용할 집계 함수를 지정할 수 있습니다. 집계 함수에 대 한 자세한 내용은 [Aggregate 절](../../../visual-basic/language-reference/queries/aggregate-clause.md)합니다.  
@@ -55,11 +55,11 @@ Group Join element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#14](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-join-clause_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [쿼리](../../../visual-basic/language-reference/queries/index.md)  
- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Join 절](../../../visual-basic/language-reference/queries/join-clause.md)  
- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)  
- [Group By 절](../../../visual-basic/language-reference/queries/group-by-clause.md)
+## <a name="see-also"></a>참고자료
+- [Visual Basic의 LINQ 소개](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [쿼리](../../../visual-basic/language-reference/queries/index.md)
+- [Select 절](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From 절](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Join 절](../../../visual-basic/language-reference/queries/join-clause.md)
+- [Where 절](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Group By 절](../../../visual-basic/language-reference/queries/group-by-clause.md)

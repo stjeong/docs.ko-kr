@@ -2,12 +2,12 @@
 title: 구성을 사용하지 않고 AJAX 서비스 만들기
 ms.date: 03/30/2017
 ms.assetid: e6db7acd-5679-45d4-b98a-8449c6873838
-ms.openlocfilehash: 60b61a26574764f0f2ea4ca834c5ba92b49a043d
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: f722eac27fadbd772b85a638c3c9171c2783a8b5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "49308422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582190"
 ---
 # <a name="ajax-service-without-configuration"></a>구성을 사용하지 않고 AJAX 서비스 만들기
 이 샘플에서는 구성을 사용 하지 않고 기본 ASP.NET Asynchronous JavaScript and XML (AJAX) 서비스 (웹 브라우저 클라이언트에서 JavaScript 코드를 사용 하 여 액세스할 수 있는 서비스)를 만들려면 Windows Communication Foundation (WCF)를 사용 하는 방법을 보여 줍니다. 설정. 이 서비스는 .svc 파일의 특수한 구문을 사용하여 AJAX 엔드포인트를 사용하도록 자동으로 설정합니다.  
@@ -50,5 +50,5 @@ ms.locfileid: "49308422"
 > [!NOTE]
 >  이 샘플을 실행할 때 IIS의 ServiceModelSamples 폴더에 대해 익명 인증 및 Windows 인증을 동시에 사용하도록 설정되지 않았는지 확인하세요. 두 인증이 동시에 사용하도록 설정되어 있는 경우에는 Windows 인증을 비활성화하세요. 샘플을 실행한 다음 Windows 인증을 사용하도록 설정하고 "iisreset"를 실행합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md)
+## <a name="see-also"></a>참고자료
+- [기본 AJAX 서비스](../../../../docs/framework/wcf/samples/basic-ajax-service.md)

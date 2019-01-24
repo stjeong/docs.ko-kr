@@ -13,12 +13,12 @@ helpviewer_keywords:
 - conditional statements [Visual Basic], GoTo statement
 - GoTo statement [Visual Basic], syntax
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
-ms.openlocfilehash: adb7668b6a818b2042a38f9458685a6f93085dc8
-ms.sourcegitcommit: 869b5832b667915ac4a5dd8c86b1109ed26b6c08
+ms.openlocfilehash: 729ff2a9cbeacaefdf0452a6c5868c229a8d05b7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "39332989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582528"
 ---
 # <a name="goto-statement"></a>GoTo 문
 프로시저에 지정된 된 줄으로 무조건 분기 합니다.  
@@ -31,10 +31,10 @@ GoTo line
   
 ## <a name="part"></a>파트  
  `line`  
- 필수. 모든 줄 레이블을 합니다.  
+ 필수 요소. 모든 줄 레이블을 합니다.  
   
 ## <a name="remarks"></a>설명  
- `GoTo` 문은 나타나는 프로시저의 줄에만 분기할 수 있습니다. 줄에 있는 줄 레이블이 있어야 `GoTo` 참조할 수 있습니다. 자세한 내용은 참조 하세요. [방법: Label 문](../../../visual-basic/programming-guide/program-structure/how-to-label-statements.md)합니다.  
+ `GoTo` 문은 나타나는 프로시저의 줄에만 분기할 수 있습니다. 줄에 있는 줄 레이블이 있어야 `GoTo` 참조할 수 있습니다. 자세한 내용은 [방법: Label 문](../../../visual-basic/programming-guide/program-structure/how-to-label-statements.md)합니다.  
   
 > [!NOTE]
 >  `GoTo` 문을 코드를 읽고 관리 하기 어려울 수 있습니다. 가능 하면 제어 구조를 대신 사용 합니다. 자세한 내용은 [제어 흐름](../../../visual-basic/programming-guide/language-features/control-flow/index.md)합니다.  
@@ -57,17 +57,17 @@ GoTo line
  ![Try 생성에서 분기의 그래픽 다이어그램](../../../visual-basic/language-reference/statements/media/trybranching.gif "TryBranching")  
 Try 생성에서 유효 하지 않은 분기  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `GoTo` 문을 프로시저의 줄 레이블로 분기 합니다.  
   
  [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [Do...Loop 문](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [For...Next 문](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [For Each...Next 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [If...Then...Else 문](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
- [Select...Case 문](../../../visual-basic/language-reference/statements/select-case-statement.md)  
- [Try...Catch...Finally 문](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [While...End While 문](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
- [With...End With 문](../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+## <a name="see-also"></a>참고자료
+- [Do...Loop 문](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [For...Next 문](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [For Each...Next 문](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [If...Then...Else 문](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [Select...Case 문](../../../visual-basic/language-reference/statements/select-case-statement.md)
+- [Try...Catch...Finally 문](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [While...End While 문](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+- [With...End With 문](../../../visual-basic/language-reference/statements/with-end-with-statement.md)

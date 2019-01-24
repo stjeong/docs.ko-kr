@@ -9,15 +9,15 @@ helpviewer_keywords:
 - rendering support with Visual objects [WPF]
 - visual layer [WPF]
 ms.assetid: d82c89db-077f-4c3c-a4f8-310ebfbe0fe2
-ms.openlocfilehash: 13957e60c92a90624882e126fe66aca789b6835a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 3bf3e718b1253348030c0ddf3ac52ed8aa79b37d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33561737"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54580787"
 ---
 # <a name="visual-layer-programming"></a>시각적 계층 프로그래밍
-<xref:System.Windows.Media.Visual> 개체는 핵심 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 주 역할이 렌더링 지원을 제공 하는 개체입니다. 와 같은 사용자 인터페이스 컨트롤 <xref:System.Windows.Controls.Button> 및 <xref:System.Windows.Controls.TextBox>에서 파생 되는 <xref:System.Windows.Media.Visual> 클래스를 사용 하 여 렌더링 데이터를 유지 하는 것에 대 한 합니다.  
+합니다 <xref:System.Windows.Media.Visual> 개체는 핵심 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 개체를 렌더링 지원을 제공 하는 역할입니다. 와 같은 사용자 인터페이스 컨트롤 <xref:System.Windows.Controls.Button> 및 <xref:System.Windows.Controls.TextBox>에서 파생 되는 <xref:System.Windows.Media.Visual> 클래스 및 해당 렌더링 데이터를 유지 하는 데 사용 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [시각적 계층에서 적중 테스트](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)  
@@ -25,9 +25,9 @@ ms.locfileid: "33561737"
  [자습서: Win32 응용 프로그램에서 시각적 개체 호스팅](../../../../docs/framework/wpf/graphics-multimedia/tutorial-hosting-visual-objects-in-a-win32-application.md)  
  [방법 항목](../../../../docs/framework/wpf/graphics-multimedia/visual-layer-programming-how-to-topics.md)  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Media.Visual>  
- <xref:System.Windows.Media.VisualTreeHelper>  
- <xref:System.Windows.Media.DrawingVisual>  
- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Media.Visual>
+- <xref:System.Windows.Media.VisualTreeHelper>
+- <xref:System.Windows.Media.DrawingVisual>
+- [WPF 그래픽 렌더링 개요](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [그래픽 및 멀티미디어](../../../../docs/framework/wpf/graphics-multimedia/index.md)

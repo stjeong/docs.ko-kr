@@ -10,20 +10,20 @@ helpviewer_keywords:
 - bypasslist, remove element
 - remove element, bypasslist
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
-ms.openlocfilehash: 83449aa2df2b0442f5ba5e1f152232b007bcdc15
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: c9db8cc2cf05987db97f28d7f97967f5bb52404e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50193710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54625668"
 ---
 # <a name="ltremovegt-element-for-bypasslist-network-settings"></a>&lt;제거&gt; bypasslist (네트워크 설정)에 대 한 요소
 프록시 무시 목록에서 IP 주소 또는 DNS 이름을 제거합니다.  
   
  \<configuration>  
 \<system.net>  
-\<defaultProxy >  
-\<bypasslist >  
+\<defaultProxy>  
+\<bypasslist>  
 \<remove>  
   
 ## <a name="syntax"></a>구문  
@@ -78,6 +78,6 @@ ms.locfileid: "50193710"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

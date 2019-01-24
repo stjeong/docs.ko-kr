@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d1cc754fcf7d1defa815bb0a74b7c2b4a6909478
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: 76f449e52168001a2aaac6cbc3707361cf7f809a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44085756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582466"
 ---
 # <a name="getmethodorigin-function"></a>GetMethodOrigin 함수
 메서드가 선언되는 클래스를 결정합니다.
@@ -60,7 +60,7 @@ HRESULT GetMethodOrigin (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 메서드를 찾을 수 없습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 하나 이상의 매개 변수가 올바르지 않습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 하나 이상의 매개 변수가 올바르지 않습니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -72,11 +72,11 @@ HRESULT GetMethodOrigin (
 `pstrClassName` 유효한 매개 변수를 가리키지 해야 `BSTR` 이기 때문에 함수를 호출 하기 전에 `out` 매개 변수;이 함수에서 반환 된 후 포인터 할당이 해제 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항  
-**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

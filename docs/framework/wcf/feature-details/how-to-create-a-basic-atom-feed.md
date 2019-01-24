@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6e0cacc1-9b11-4665-adb7-577a62626fd6
-ms.openlocfilehash: ac356ac9acd3f0b14fb3da902f1a9c3cfbdd9ef7
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 1229257cc8c15ea67bd4fdf3ff6ffa959a6bfe02
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49122627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54582502"
 ---
 # <a name="how-to-create-a-basic-atom-feed"></a>방법: 기본 Atom 피드 만들기
 Windows Communication Foundation (WCF)를 사용 하면 배포 피드를 노출 하는 서비스를 만들 수 있습니다. 이 항목에서는 Atom 배포 피드를 노출하는 배포 서비스를 만드는 방법에 대해 설명합니다.  
@@ -96,6 +96,6 @@ Windows Communication Foundation (WCF)를 사용 하면 배포 피드를 노출 
 ## <a name="compiling-the-code"></a>코드 컴파일  
  앞의 코드를 컴파일할 때 System.ServiceModel.dll 및 System.ServiceModel.Web.dll을 참조합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.WebHttpBinding>  
- <xref:System.ServiceModel.Web.WebGetAttribute>
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.WebHttpBinding>
+- <xref:System.ServiceModel.Web.WebGetAttribute>

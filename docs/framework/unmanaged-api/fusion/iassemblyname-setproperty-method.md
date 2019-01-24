@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bcfb584fc2380a7ae1567d3d4d6203b537676220
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: ca2d7fe73fc749296f76e18ecce75b7fdd0795d3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33429701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585593"
 ---
 # <a name="iassemblynamesetproperty-method"></a>IAssemblyName::SetProperty 메서드
 지정 된 속성 식별자가 참조 하는 속성의 값을 설정 합니다.  
@@ -45,14 +45,14 @@ HRESULT SetProperty (
  [in] 참조 하는 속성을 설정 하는 값 `PropertyId`합니다.  
   
  `cbProperty`  
- [in] 를 바이트 단위로 크기의 `pvProperty`합니다.  
+ [in] 크기 (바이트)의 `pvProperty`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** 참조 [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)합니다.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** Fusion.h  
   
- **.NET framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 버전:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>참고 항목  
- [IAssemblyName 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+## <a name="see-also"></a>참고자료
+- [IAssemblyName 인터페이스](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

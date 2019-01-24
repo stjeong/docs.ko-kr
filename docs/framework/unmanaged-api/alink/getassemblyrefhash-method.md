@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: ccf60d067af356dda1870a2fb1dcca21966f16a6
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: e5698e5555e82fd8f64fd029f78cda361a367ca7
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33401488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54585226"
 ---
 # <a name="getassemblyrefhash-method"></a>GetAssemblyRefHash 메서드
 지정된 된 어셈블리에 대 한 해시 blob를 검색합니다.  
@@ -41,10 +41,10 @@ HRESULT GetAssemblyRefHash(
  해시는 참조 어셈블리의 ID입니다.  
   
  `ppvHash`  
- 결과 해시 blob를 받습니다.  
+ 생성 되는 해시 blob을 받습니다.  
   
  `pcbHash`  
- 해시 blob의 바이트의 크기를 받습니다.  
+ 해시 blob의 바이트에서 크기를 받습니다.  
   
 ## <a name="return-value"></a>반환 값  
  메서드가 성공 하면 S_OK를 반환 합니다.  
@@ -52,7 +52,7 @@ HRESULT GetAssemblyRefHash(
 ## <a name="requirements"></a>요구 사항  
  Alink.h 필요  
   
-## <a name="see-also"></a>참고 항목  
- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## <a name="see-also"></a>참고자료
+- [IALink 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 인터페이스](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

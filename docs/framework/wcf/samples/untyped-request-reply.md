@@ -2,12 +2,12 @@
 title: 형식화 되지 않은 요청-회신
 ms.date: 03/30/2017
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
-ms.openlocfilehash: b6e93ad0782fcacbc4ce20c0e9bb407abdf2366f
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 2eb6a46d339c9277c1622c0cc16d057b186f1d79
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50195309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54612751"
 ---
 # <a name="untyped-requestreply"></a>형식없는 요청/회신
 이 샘플에서는 Message 클래스를 사용하는 작업 계약을 정의하는 방법을 보여 줍니다.  
@@ -89,4 +89,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Message\Untyped`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

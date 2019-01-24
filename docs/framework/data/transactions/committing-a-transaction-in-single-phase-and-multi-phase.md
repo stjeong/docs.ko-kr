@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 694ea153-e4db-41ae-96ac-9ac66dcb69a9
-ms.openlocfilehash: ad0b639aec60fc1dc9b594ff774232699001db5d
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e90a2f9c5681ffddb2a3ca0312bdd2f3f4078328
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53142926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54589521"
 ---
 # <a name="committing-a-transaction-in-single-phase-and-multi-phase"></a>단일 단계 및 다단계 트랜잭션 커밋
 트랜잭션에 사용되는 각 리소스는 RM(리소스 관리자)에 의해 관리되고, RM의 작업은 TM(트랜잭션 관리자)에 의해 조정됩니다. 합니다 [트랜잭션에 참가 요소로 등록 리소스](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md) 항목 리소스 (또는 여러 리소스) 트랜잭션에 참여할 수 있습니다 하는 방법에 대해 설명 합니다. 이 항목에서는 참여하는 리소스에서 트랜잭션 커밋을 조정하는 방법에 대해 설명합니다.  
@@ -109,6 +109,6 @@ public void InDoubt (Enlistment enlistment)
 ## <a name="single-phase-commit-optimization"></a>단일 단계 커밋 최적화  
  단일 단계 커밋 프로토콜은 모든 업데이트가 명시적 코디네이션 없이 수행되므로 런타임에 보다 효율적입니다. 이 프로토콜에 대 한 자세한 내용은 참조 하세요. [단일 단계 커밋 및 승격 가능한 단일 단계 알림을 사용한 최적화](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [단일 단계 커밋 및 승격 가능한 단일 단계 알림을 사용한 최적화](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)  
- [리소스를 트랜잭션에 참가 요소로 등록](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)
+## <a name="see-also"></a>참고자료
+- [단일 단계 커밋 및 승격 가능한 단일 단계 알림을 사용한 최적화](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)
+- [리소스를 트랜잭션에 참가 요소로 등록](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)

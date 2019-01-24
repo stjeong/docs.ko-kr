@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e8c10a680f1caffd583097b16c046729fe10b140
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 357182d6157b63f1bccf47cb43f0c78dec5875cf
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43804242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54625941"
 ---
 # <a name="qualifiersetget-function"></a>QualifierSet_Get 함수
 지정한 명명된 한정자를 가져옵니다.  
@@ -53,7 +53,7 @@ HRESULT QualifierSet_Get (
 [in] 해당 값이 요청 된 한정자의 이름입니다.
 
 `lFlags`   
-[in] 예약 되어 있습니다. 이 매개 변수는 0 이어야 합니다.
+[in] 예약되어 있습니다. 이 매개 변수는 0 이어야 합니다.
 
 `pVal`   
 [out] 성공 하면 올바른 형식 및 한정자 값입니다. 함수가 실패 한 경우는 `VARIANT` 가리키는 `pVal` 수정 되지 않습니다. 이 매개 변수가 `null`, 매개 변수는 무시 됩니다.
@@ -67,7 +67,7 @@ HRESULT QualifierSet_Get (
 
 |상수  |값  |설명  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수가 잘못 되었습니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수가 잘못된 경우 |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 한정자가 없습니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
@@ -76,11 +76,11 @@ HRESULT QualifierSet_Get (
 이 함수에 대 한 호출을 래핑하는 [IWbemQualifierSet::Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) 메서드.
 
 ## <a name="requirements"></a>요구 사항  
- **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+ **플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
