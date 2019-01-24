@@ -2,15 +2,15 @@
 title: UDP 활성화
 ms.date: 03/30/2017
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
-ms.openlocfilehash: c64540db555d7cac56dd46c6ffb63ec95ca81f91
-ms.sourcegitcommit: 2350a091ef6459f0fcfd894301242400374d8558
+ms.openlocfilehash: 09b208f88b456b6d98e45fc34db3857f8938cd6b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46562354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54715519"
 ---
 # <a name="udp-activation"></a>UDP 활성화
-이 샘플은 기반 합니다 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플입니다. 확장 된 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플 Windows 프로세스 활성화 서비스 (WAS)를 사용한 프로세스 활성화를 지원 하도록 합니다.  
+이 샘플은 기반는 [전송 합니다. UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플입니다. 확장 된 [전송 합니다. UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플 Windows 프로세스 활성화 서비스 (WAS)를 사용한 프로세스 활성화를 지원 하도록 합니다.  
   
  이 샘플은 크게 세 부분으로 구성됩니다.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "46562354"
   
     -   WAS(Windows Process Activation Service)  
   
-    -   IIS(Internet Information Services): W3SVC.  
+    -   인터넷 정보 서비스 (IIS): W3SVC.  
   
 2.  그런 다음 활성기인 WasNetActivator.exe를 시작합니다. 아래는 **활성화** 탭에서 하나뿐인 프로토콜인 **UDP**, 드롭다운 목록에서에서 선택 된 합니다. 클릭 합니다 **시작** 활성기를 시작 하는 단추입니다.  
   
@@ -162,4 +162,4 @@ ms.locfileid: "46562354"
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\UdpActivation`  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료

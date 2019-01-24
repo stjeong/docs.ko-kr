@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - Grid control [WPF], creating [WPF], grid instance
 ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837
-ms.openlocfilehash: b93bb859c4a0df50da2fa00587a28fda3776fd09
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: b5bb9572b6a34b21208a8d8c0583068873772aae
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50185786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54726600"
 ---
 # <a name="how-to-create-a-grid-element"></a>방법: Grid 요소 만들기
 ## <a name="example"></a>예제  
@@ -25,6 +25,6 @@ ms.locfileid: "50185786"
   어느 방법이 든 아래와 같이 동일한 훨씬 보이는 사용자 인터페이스를 생성 합니다.
 
   ![스크린샷 세 개의 열을 분할할 표를 포함 하는 WPF 사용자 인터페이스를 보여 줍니다.  ' 2018 제공 되는 제품은 ' 맨 위 행의 모든 열에 걸친 제목 되 게 하 고 판매 수치를 사용 하 여 세 열 특정 사분기에 합니다.  아래쪽 행에 텍스트 메시지를 사용 하 여 두 열에 걸친 ' 총 단위: 300,000'](./media/how-to-create-a-grid-element/how-to-create-a-grid-element.png)
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.Grid>  
- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.Grid>
+- [패널 개요](../../../../docs/framework/wpf/controls/panels-overview.md)

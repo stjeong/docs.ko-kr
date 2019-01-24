@@ -2,12 +2,12 @@
 title: 형식 시스템(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
-ms.openlocfilehash: 270b0981214e674d220025ad52c7c94ee3a66224
-ms.sourcegitcommit: c7f3e2e9d6ead6cc3acd0d66b10a251d0c66e59d
+ms.openlocfilehash: 1831028f9e659dab90ca3c8689d7ff2d5c0ee36a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44196935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54554337"
 ---
 # <a name="type-system-entity-sql"></a>형식 시스템(Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 형식의 수를 지원합니다.  
@@ -48,8 +48,8 @@ from (select ref(o) as r from LOB.Orders as o) as o2
   
  참조 값이 null이거나 참조 대상이 존재하지 않는 경우 결과는 null입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)  
- [CSDL, SSDL 및 MSL 사양](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+## <a name="see-also"></a>참고자료
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)
+- [CSDL, SSDL 및 MSL 사양](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

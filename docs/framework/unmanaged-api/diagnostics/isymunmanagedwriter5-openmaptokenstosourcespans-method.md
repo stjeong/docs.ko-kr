@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: 93ad2517-b0dc-464c-8688-a58a30eda18d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5d3bc8b00b568f96cd55b7811f310d34c1ff700d
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
-ms.translationtype: HT
+ms.openlocfilehash: 60c1984e6193481efdaaeb82a2bc025aef67a33f
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33428650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54534444"
 ---
 # <a name="isymunmanagedwriter5openmaptokenstosourcespans-method"></a>ISymUnmanagedWriter5::OpenMapTokensToSourceSpans 메서드
-토큰 소스 범위 매핑 정보를 내보내는 데 특별 한 사용자 지정 데이터 섹션이 열립니다. 가 이미 열려 메서드나 그 반대의 경우는 오류 시이 섹션을 열어 합니다.  
+토큰에서 소스로 범위 매핑 정보를 내보내는 데 특별 한 사용자 지정 데이터 섹션을 엽니다. 가 이미 열려 메서드나 그 반대의 경우 오류가 발생 하는 경우이 섹션을 엽니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -21,10 +21,10 @@ HRESULT OpenMapTokensToSourceSpans();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- `HRESULT`를 반환합니다.  
+ `HRESULT`을 반환합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **Header:** CorSym.idl, CorSym.h  
+ **헤더:** CorSym.idl, CorSym.h  
   
-## <a name="see-also"></a>참고 항목  
- [ISymUnmanagedWriter5 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter5-interface.md)
+## <a name="see-also"></a>참고자료
+- [ISymUnmanagedWriter5 인터페이스](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter5-interface.md)
