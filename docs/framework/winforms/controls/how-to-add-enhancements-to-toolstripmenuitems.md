@@ -1,5 +1,5 @@
 ---
-title: '방법: ToolStripMenuItems에 향상된 기능 추가'
+title: '방법: ToolStripMenuItems에 향상 된 기능 추가'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -24,14 +24,14 @@ helpviewer_keywords:
 - images [Windows Forms], adding to menus
 - ToolStripMenuItems [Windows Forms], showing separator bars
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
-ms.openlocfilehash: eb55796480bea896383da479fe23a5d8967a52e3
-ms.sourcegitcommit: 69229651598b427c550223d3c58aba82e47b3f82
+ms.openlocfilehash: 621b96805543abb92bc73f734f1a090d9cdb7319
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48582413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54685087"
 ---
-# <a name="how-to-add-enhancements-to-toolstripmenuitems"></a>방법: ToolStripMenuItems에 향상된 기능 추가
+# <a name="how-to-add-enhancements-to-toolstripmenuitems"></a>방법: ToolStripMenuItems에 향상 된 기능 추가
 사용 편의성을 향상 시킬 수 있습니다 <xref:System.Windows.Forms.MenuStrip> 및 <xref:System.Windows.Forms.ContextMenuStrip> 다음과 같은 방법으로 제어 합니다.  
   
 -   눈금자는 워드 프로세싱 응용 프로그램의 여백 표시 되는지 여부와 같은 기능을 켜 지거나 해제 여부를 지정 하거나 중임을 나타내는 파일 목록의 파일 표시 등에서 확인 표시를 추가 된 **창을** 메뉴입니다.  
@@ -113,7 +113,7 @@ ms.locfileid: "48582413"
     this.exitToolStripMenuItem});  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStripMenuItem>  
- [MenuStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStripMenuItem>
+- [MenuStrip 컨트롤 개요](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)

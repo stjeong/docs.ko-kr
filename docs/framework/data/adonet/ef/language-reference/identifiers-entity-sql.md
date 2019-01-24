@@ -2,12 +2,12 @@
 title: 식별자(Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: d58a5edd-7b5c-48e1-b5d7-a326ff426aa4
-ms.openlocfilehash: 390c69dec6caed1ffe6faccb5893174d2c211a6b
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 19c28eb4c883cc0d1cf18cba1751115277848208
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43528582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54686805"
 ---
 # <a name="identifiers-entity-sql"></a>식별자(Entity SQL)
 식별자는 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서 쿼리 식 별칭, 변수 참조, 개체 속성, 함수 등을 나타내는 데 사용됩니다. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 두 종류의 식별자를 제공 합니다: 단순 식별자와 따옴표 붙은 식별자입니다.  
@@ -67,9 +67,9 @@ ms.locfileid: "43528582"
 ### <a name="alias-generation"></a>별칭 생성  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 쿼리 식에서 별칭이 지정되지 않은 경우 [!INCLUDE[esql](../../../../../../includes/esql-md.md)]에서는 다음과 같은 간단한 규칙에 따라 별칭을 생성합니다.  
   
--   별칭이 지정되지 않은 쿼리 식이 단순 식별자 또는 따옴표 붙은 식별자인 경우, 해당 식별자가 별칭으로 사용됩니다. 예를 들어, `ROW(a, [b])`은 `ROW(a AS a, [b] AS [b])`이 됩니다.  
+-   별칭이 지정되지 않은 쿼리 식이 단순 식별자 또는 따옴표 붙은 식별자인 경우, 해당 식별자가 별칭으로 사용됩니다. 예를 들어, `ROW(a, [b])` 문자열은 `ROW(a AS a, [b] AS [b])`과 같이 연결됩니다.  
   
--   쿼리 식이 더 복잡한 식이지만 이 식의 마지막 구성 요소가 단순 식별자인 경우, 해당 식별자가 별칭으로 사용됩니다. 예를 들어, `ROW(a.a1, b.[b1])`은 `ROW(a.a1 AS a1, b.[b1] AS [b1])`이 됩니다.  
+-   쿼리 식이 더 복잡한 식이지만 이 식의 마지막 구성 요소가 단순 식별자인 경우, 해당 식별자가 별칭으로 사용됩니다. 예를 들어, `ROW(a.a1, b.[b1])` 문자열은 `ROW(a.a1 AS a1, b.[b1] AS [b1])`과 같이 연결됩니다.  
   
  나중에 별칭 이름을 사용하려는 경우 암시적 별칭을 사용하지 않는 것이 좋습니다. 동일한 범위에서 암시적 또는 명시적 별칭이 충돌하거나 반복될 때마다 컴파일 오류가 발생합니다. 같은 이름의 명시적 또는 암시적 별칭이 있더라도 암시적 별칭은 컴파일을 거칩니다.  
   
@@ -120,7 +120,7 @@ SELECT 1 AS X, 2 AS X …
   
  `AVG(t.c) becomes AVG(group..(t.c))`  
   
-## <a name="see-also"></a>참고 항목  
- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [입력 문자 집합](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md)
+## <a name="see-also"></a>참고자료
+- [엔터티 SQL 참조](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL 개요](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [입력 문자 집합](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md)

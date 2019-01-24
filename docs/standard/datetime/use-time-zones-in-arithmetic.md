@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 83dd898d-1338-415d-8cd6-445377ab7871
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9c9f7b2623b4ed766fb44b46c3f54caa962c07eb
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: 053ca2d10deadf58d5bb8b4628fb5dee815d82c8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44041524"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54682695"
 ---
 # <a name="how-to-use-time-zones-in-date-and-time-arithmetic"></a>방법: 날짜 및 시간 산술 연산의 표준 시간대 사용
 
@@ -45,7 +45,7 @@ ms.locfileid: "44041524"
 
 둘 다 <xref:System.DateTime> 고 <xref:System.DateTimeOffset> 값 속할 수 있는 표준 시간대에서 분리 됩니다. 자동으로 표준 시간대의 조정 규칙을 적용하는 방식으로 날짜 및 시간 산술 연산을 수행하려면 모든 날짜 및 시간 값이 속해 있는 표준 시간대를 즉시 식별할 수 있어야 합니다. 즉, 날짜 및 시간과 관련된 표준 시간대는 밀접하게 결합되어야 합니다. 여러 가지 방법을 통해 다음을 포함하는 작업을 수행할 수 있습니다.
 
-* 응용 프로그램에서 사용되는 모든 시간이 특정 표준 시간대에 속한다고 가정합니다. 일부 경우에는 적합하지만 이 방식은 제한된 유연성과 이식성을 제공합니다.
+* 애플리케이션에서 사용되는 모든 시간이 특정 표준 시간대에 속한다고 가정합니다. 일부 경우에는 적합하지만 이 방식은 제한된 유연성과 이식성을 제공합니다.
 
 * 모두 형식의 필드로 포함하여 관련된 표준 시간대와 날짜 및 시간을 밀접하게 결합하는 형식을 정의합니다. 이 방법은 코드 예제에 사용되며 여기서 두 개의 구성원 필드에 있는 날짜 및 시간과 표준 시간대를 저장하는 구조체를 정의합니다.
 
@@ -66,5 +66,5 @@ ms.locfileid: "44041524"
 
 ## <a name="see-also"></a>참고자료
 
-* [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
-* [날짜 및 시간에 대한 산술 연산 수행](../../../docs/standard/datetime/performing-arithmetic-operations.md)
+- [날짜, 시간 및 표준 시간대](../../../docs/standard/datetime/index.md)
+- [날짜 및 시간에 대한 산술 연산 수행](../../../docs/standard/datetime/performing-arithmetic-operations.md)

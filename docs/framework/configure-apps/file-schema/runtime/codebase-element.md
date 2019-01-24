@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 7e52899a953644fc3cf7189bf557f5ade2863161
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 295b2c5dd3eb17ca9ba19e52d9f8e51cf108162d
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54683153"
 ---
 # <a name="ltcodebasegt-element"></a>&lt;코드 베이스&gt; 요소
 공용 언어 런타임에서 어셈블리를 찾는 위치를 지정 합니다.  
@@ -24,8 +24,8 @@ ms.locfileid: "53613156"
  \<configuration>  
 \<runtime>  
 \<assemblyBinding>  
-\<dependentAssembly >  
-\<코드 베이스 >  
+\<dependentAssembly>  
+\<codeBase>  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,7 +60,7 @@ href="URL of assembly"/>
 |-------------|-----------------|  
 |`buildproviders`|사용자 지정 리소스 파일의 컴파일에 사용되는 빌드 공급자의 컬렉션을 정의합니다. 빌드 공급자 수에는 제한이 없습니다.|  
 |`compilation`|ASP.NET을 사용 하는 모든 컴파일 설정을 구성 합니다.|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
 |`System.web`|ASP.NET 구성 섹션의 루트 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -89,8 +89,8 @@ href="URL of assembly"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [어셈블리 위치 지정](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
+## <a name="see-also"></a>참고자료
+- [런타임 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [구성 파일 스키마](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [어셈블리 위치 지정](../../../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [런타임에서 어셈블리를 찾는 방법](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

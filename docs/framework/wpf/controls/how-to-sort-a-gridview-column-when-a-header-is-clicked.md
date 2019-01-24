@@ -10,18 +10,18 @@ helpviewer_keywords:
 - ListView controls [WPF], sorting GridView columns
 - GridView controls [WPF], ListView control
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
-ms.openlocfilehash: 30bcbd8b7cdd4c184560aaa4a2799137da51fc8a
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 2d0cca89d906a60a3f7072de27bc54b7a869a01e
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33554900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54694089"
 ---
 # <a name="how-to-sort-a-gridview-column-when-a-header-is-clicked"></a>방법: 머리글을 클릭할 때 GridView 열 정렬
-만드는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.ListView> 제어를 구현 하는 <xref:System.Windows.Controls.GridView> 보기 모드와 열 머리글을 클릭할 때 데이터 내용을 정렬 합니다.  
+만드는 방법을 보여 주는이 예제는 <xref:System.Windows.Controls.ListView> 구현 하는 컨트롤을 <xref:System.Windows.Controls.GridView> 모드 및 사용자가 열 머리글을 클릭할 때 데이터 콘텐츠 정렬 보기.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 정의 <xref:System.Windows.Controls.GridView> 에 바인딩하는 세 개의 열으로는 <xref:System.DateTime.Year%2A>, <xref:System.DateTime.Month%2A>, 및 <xref:System.DateTime.Day%2A>의 속성은 <xref:System.DateTime> 구조입니다.  
+ 다음 예제에서는 정의 <xref:System.Windows.Controls.GridView> 바인딩되는 세 개의 열으로는 <xref:System.DateTime.Year%2A>, <xref:System.DateTime.Month%2A>, 및 <xref:System.DateTime.Day%2A>의 속성을 <xref:System.DateTime> 구조.  
   
 ```xaml  
 <GridView>  
@@ -37,7 +37,7 @@ ms.locfileid: "33554900"
 </GridView>  
 ```  
   
- 다음 예제에서는로 정의 된 데이터 항목은 <xref:System.Collections.ArrayList> 의 <xref:System.DateTime> 개체입니다. <xref:System.Collections.ArrayList> 로 정의 <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> 에 대 한는 <xref:System.Windows.Controls.ListView> 제어 합니다.  
+ 다음 예제에서는으로 정의 된 데이터 항목을 <xref:System.Collections.ArrayList> 의 <xref:System.DateTime> 개체입니다. <xref:System.Collections.ArrayList> 으로 정의 됩니다 합니다 <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> 에 대 한는 <xref:System.Windows.Controls.ListView> 컨트롤입니다.  
   
 ```xaml  
 <ListView.ItemsSource>  
@@ -69,7 +69,7 @@ ms.locfileid: "33554900"
     xmlns:p="clr-namespace:System;assembly=mscorlib">  
 ```  
   
- 열 내용에 따라 데이터를 정렬 하려면이 예제에서는 정의를 처리할 이벤트 처리기는 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 열 머리글 단추를 누를 때 발생 하는 이벤트입니다. 다음 예제에 대 한 이벤트 처리기를 지정 하는 방법을 보여 줍니다는 <xref:System.Windows.Controls.GridViewColumnHeader> 제어 합니다.  
+ 예제에서는 열 콘텐츠에 따라 데이터를 정렬 하려면 처리할 이벤트 처리기를 정의 합니다 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 열 헤더 단추를 누를 때 발생 하는 이벤트입니다. 다음 예제에 대 한 이벤트 처리기를 지정 하는 방법을 보여 줍니다는 <xref:System.Windows.Controls.GridViewColumnHeader> 제어 합니다.  
   
 ```xaml  
 <ListView x:Name='lv' Height="150" HorizontalAlignment="Center"   
@@ -223,9 +223,9 @@ Private Sub Sort(ByVal sortBy As String, ByVal direction As ListSortDirection)
 End Sub  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.GridView>  
- [ListView 개요](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [GridView 개요](../../../../docs/framework/wpf/controls/gridview-overview.md)  
- [방법 항목](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.GridView>
+- [ListView 개요](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [GridView 개요](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [방법 항목](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)

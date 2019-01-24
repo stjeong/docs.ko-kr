@@ -1,20 +1,20 @@
 ---
-title: '방법: MEX가 아닌 바인딩을 통해 메타데이터 검색'
+title: '방법: 가 아닌-MEX 바인딩을 통해 메타 데이터를 검색 합니다.'
 ms.date: 03/30/2017
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
-ms.openlocfilehash: 198c343aa6f25d55e518990dc1dbd2667a8c17ad
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: ac0a7d979e6b86933c4acd88b1a2fa11ba5bc991
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33488090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689553"
 ---
-# <a name="how-to-retrieve-metadata-over-a-non-mex-binding"></a>방법: MEX가 아닌 바인딩을 통해 메타데이터 검색
-이 항목에서는 MEX가 아닌 바인딩을 통해 MEX 끝점으로부터 메타데이터를 검색하는 방법에 대해 설명합니다. 이 샘플의 코드 기반는 [메타 데이터 끝점을 보호 하는 사용자 지정](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) 샘플.  
+# <a name="how-to-retrieve-metadata-over-a-non-mex-binding"></a>방법: 가 아닌-MEX 바인딩을 통해 메타 데이터를 검색 합니다.
+이 항목에서는 MEX가 아닌 바인딩을 통해 MEX 엔드포인트로부터 메타데이터를 검색하는 방법에 대해 설명합니다. 이 샘플의 코드를 기반으로 합니다 [사용자 지정 보안 메타 데이터 끝점](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) 샘플입니다.  
   
 ### <a name="to-retrieve-metadata-over-a-non-mex-binding"></a>MEX가 아닌 바인딩을 통해 메타데이터를 검색하려면  
   
-1.  MEX 끝점에서 사용하는 바인딩을 결정합니다. Windows Communication Foundation (WCF) 서비스에 대 한 서비스의 구성 파일에 액세스 함으로써 MEX 바인딩을 확인할 수 있습니다. 이 경우에는 MEX 바인딩이 다음 서비스 구성에서 정의됩니다.  
+1.  MEX 엔드포인트에서 사용하는 바인딩을 결정합니다. Windows Communication Foundation (WCF) 서비스에 대 한 서비스의 구성 파일에 액세스 함으로써 MEX 바인딩을 결정할 수 있습니다. 이 경우에는 MEX 바인딩이 다음 서비스 구성에서 정의됩니다.  
   
     ```xml  
     <services>  
@@ -48,7 +48,7 @@ ms.locfileid: "33488090"
      </bindings>  
     ```  
   
-2.  클라이언트 구성 파일에서는 동일한 사용자 지정 바인딩을 구성합니다. 여기서는 클라이언트가 MEX 끝점으로부터 메타데이터를 요청할 때 인증에 사용할 인증서를 서비스에 제공하기 위해 `clientCredentials` 동작도 정의할 수 있습니다. 사용자 지정 바인딩을 통해 메타데이터를 요청하기 위해 Svcutil.exe를 사용할 경우 다음 코드와 같이 MEX 끝점 구성을 Svcutil.exe의 구성 파일(Svcutil.exe.config)에 추가해야 하며, 끝점 구성의 이름은 MEX 끝점 주소의 URI 체계와 일치해야 합니다.  
+2.  클라이언트 구성 파일에서는 동일한 사용자 지정 바인딩을 구성합니다. 여기서는 클라이언트가 MEX 엔드포인트로부터 메타데이터를 요청할 때 인증에 사용할 인증서를 서비스에 제공하기 위해 `clientCredentials` 동작도 정의할 수 있습니다. 사용자 지정 바인딩을 통해 메타데이터를 요청하기 위해 Svcutil.exe를 사용할 경우 다음 코드와 같이 MEX 엔드포인트 구성을 Svcutil.exe의 구성 파일(Svcutil.exe.config)에 추가해야 하며, 엔드포인트 구성의 이름은 MEX 엔드포인트 주소의 URI 체계와 일치해야 합니다.  
   
     ```xml  
     <system.serviceModel>  
@@ -121,7 +121,7 @@ ms.locfileid: "33488090"
     ServiceEndpointCollection endpoints = importer.ImportAllEndpoints();  
     ```  
   
-5.  이제 서비스 끝점의 컬렉션을 가지게 됩니다. 메타 데이터 가져오기에 대 한 자세한 내용은 참조 [하는 방법: 서비스 끝점으로 메타 데이터 가져오기](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md)합니다.  
+5.  이제 서비스 엔드포인트의 컬렉션을 가지게 됩니다. 메타 데이터를 가져오는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 서비스 끝점으로 메타 데이터를 가져오기](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [메타데이터](../../../../docs/framework/wcf/feature-details/metadata.md)
+## <a name="see-also"></a>참고자료
+- [메타데이터](../../../../docs/framework/wcf/feature-details/metadata.md)

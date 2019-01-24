@@ -2,20 +2,20 @@
 title: '&lt;serviceThrottling&gt;'
 ms.date: 03/30/2017
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
-ms.openlocfilehash: 000124c8d0dda81f99668cd330f7cc97c2520464
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: ebef29360f661c77f51557ae4c9ca0bdf8177b99
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54145265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689483"
 ---
 # <a name="ltservicethrottlinggt"></a>&lt;serviceThrottling&gt;
 WCF(Windows Communication Foundation) 서비스의 스로틀 메커니즘을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
+\<behavior>  
 \<serviceThrottling>  
   
 ## <a name="syntax"></a>구문  
@@ -44,7 +44,7 @@ WCF(Windows Communication Foundation) 서비스의 스로틀 메커니즘을 지
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<동작 >](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
+|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|동작 요소를 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  스로틀은 리소스가 과도하게 사용되는 것을 방지하기 위해 동시 호출, 인스턴스 또는 세션 수를 제한합니다.  
@@ -68,7 +68,7 @@ WCF(Windows Communication Foundation) 서비스의 스로틀 메커니즘을 지
 </behaviors>
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>  
- <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>  
- [ServiceThrottlingBehavior를 사용하여 WCF 서비스 성능 제어](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
+- <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>
+- [ServiceThrottlingBehavior를 사용하여 WCF 서비스 성능 제어](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)

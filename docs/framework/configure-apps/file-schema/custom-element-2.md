@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 3a16952c5cd3759873faeb0fce45b8aa5170b083
-ms.sourcegitcommit: 11f11ca6cefe555972b3a5c99729d1a7523d8f50
+ms.openlocfilehash: 74496726aa2fe5c88a273a22f096c585aa54de0c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32752051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54693800"
 ---
 # <a name="custom-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>NameValueSectionHandler 및 DictionarySectionHandler에 대 한 사용자 지정 요소
 
-설정을 사용 하는 사용자 지정 구성 섹션에 대 한 정의 <xref:System.Configuration.NameValueSectionHandler> 및 <xref:System.Configuration.DictionarySectionHandler> 클래스입니다.
+사용 하는 사용자 지정 구성 섹션에 대 한 설정을 정의 합니다 <xref:System.Configuration.NameValueSectionHandler> 고 <xref:System.Configuration.DictionarySectionHandler> 클래스입니다.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;**\<sectionName>**
@@ -30,7 +30,7 @@ ms.locfileid: "32752051"
 
 |     | 설명 |
 | --- | ----------- |
-| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | 공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다. |
+| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | 공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다. |
 
 ## <a name="child-elements"></a>자식 요소
 
@@ -42,9 +42,9 @@ ms.locfileid: "32752051"
 
 ## <a name="remarks"></a>설명
 
-**\<sectionName >** 정의한 사용자 지정 요소는  **\<섹션 >** 태그는  **\<configSections >** 요소입니다.
+합니다  **\<sectionName >** 정의한 사용자 지정 요소입니다를  **\<섹션 >** 태그를  **\<configSections >** 요소입니다.
 
-다음 표에서 각 구성 섹션 처리기에 대 한 반환 ConfigurationSettings.GetConfig 메서드가 개체의 형식을 보여 줍니다.
+다음 표에서 각 구성 섹션 처리기에 대 한 반환 ConfigurationSettings.GetConfig 메서드 개체의 형식을 보여 줍니다.
 
 | 구성 섹션 처리기                        | 반환 형식                                                |
 | ---------------------------------------------------- | ---------------------------------------------------------- |
@@ -53,9 +53,9 @@ ms.locfileid: "32752051"
 
 ## <a name="example"></a>예제
 
-다음 예제를 사용 하는 섹션을 선언 하는 방법을 보여 줍니다는 <xref:System.Configuration.DictionarySectionHandler> 및 <xref:System.Configuration.NameValueSectionHandler> 클래스입니다. 
+다음 예제를 사용 하는 섹션을 선언 하는 방법을 보여 줍니다 합니다 <xref:System.Configuration.DictionarySectionHandler> 고 <xref:System.Configuration.NameValueSectionHandler> 클래스입니다. 
 
-첫 번째 사용자 지정 요소는  **\<dictionarySample >**, 읽은 설정을 포함 하는 <xref:System.Configuration.DictionarySectionHandler> 클래스에 `System.dll` 어셈블리입니다. 두 번째 사용자 지정 요소는  **\<mySection >**, 읽은 설정을 포함 하는 <xref:System.Configuration.NameValueSectionHandler> 클래스에 `System.dll` 어셈블리입니다.
+첫 번째 사용자 지정 요소  **\<dictionarySample >**, 읽은 설정을 포함 하는 합니다 <xref:System.Configuration.DictionarySectionHandler> 클래스는 `System.dll` 어셈블리입니다. 두 번째 사용자 지정 요소는  **\<mySection >**, 읽은 설정을 포함 하는 합니다 <xref:System.Configuration.NameValueSectionHandler> 클래스는 `System.dll` 어셈블리입니다.
 
 ```xml
 <configuration>
@@ -78,8 +78,8 @@ ms.locfileid: "32752051"
 
 ## <a name="configuration-file"></a>구성 파일
 
-이 요소는 응용 프로그램 구성 파일을 컴퓨터 구성 파일에 사용할 수 있습니다 (*Machine.config*), 및 *Web.config* 응용 프로그램 디렉터리 수준에서 포함 되지 않은 파일입니다.
+응용 프로그램 구성 파일을 컴퓨터 구성 파일에서이 요소를 사용할 수 있습니다 (*Machine.config*), 및 *Web.config* 응용 프로그램 디렉터리 수준에서 포함 되지 않은 파일입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[.NET Framework에 대 한 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)
+- [.NET Framework의 구성 파일 스키마](~/docs/framework/configure-apps/file-schema/index.md)

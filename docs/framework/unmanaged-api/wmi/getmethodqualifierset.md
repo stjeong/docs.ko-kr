@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a363591f5db7a2dbcba1147df35d8c023c9b0707
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 7f197851d4d7d470c6c34e4f5607e1791e724770
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43800130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54681627"
 ---
 # <a name="getmethodqualifierset-function"></a>GetMethodQualifierSet 함수
 특정 메서드에 대한 한정자 집합을 검색합니다.
@@ -60,7 +60,7 @@ HRESULT GetMethodQualifierSet (
 |상수  |값  |설명  |
 |---------|---------|---------|
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 지정된 된 메서드가 존재 하지 않습니다. |
-|`WBEM_E_INVALID_PARAMETER` | '(0x80041008 | 매개 변수는 `null`합니다. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 매개 변수는 `null`합니다. |
 |`WBEM_S_NO_ERROR` | 0 | 함수 호출이 성공 했습니다.  |
   
 ## <a name="remarks"></a>설명
@@ -72,11 +72,11 @@ HRESULT GetMethodQualifierSet (
 각 메서드는 자체 한정자가 있을 수 있으므로 합니다 [IWbemQualifierSet 포인터](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) 호출자가 추가, 편집 또는 이러한 한정자를 삭제할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항  
-**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하세요.  
+**플랫폼:** [시스템 요구 사항](../../../../docs/framework/get-started/system-requirements.md)을 참조하십시오.  
   
  **헤더:** WMINet_Utils.idl  
   
  **.NET Framework 버전:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>참고자료  
-[WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)
+## <a name="see-also"></a>참고자료
+- [WMI 및 성능 카운터 (관리 되지 않는 API 참조)](index.md)

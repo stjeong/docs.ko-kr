@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5da300e2-74c0-4d13-9202-fc20ed8212d8
-ms.openlocfilehash: daa8097bc5dfee203f988915b1e4a8bdcd2c50e0
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: e5a48c5caf9239e0e7b7f2e7a3ad8ab5df168ba1
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43515414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684192"
 ---
 # <a name="finding-rows"></a>행 찾기
 <xref:System.Data.DataView.Find%2A>의 <xref:System.Data.DataView.FindRows%2A> 및 <xref:System.Data.DataView> 메서드를 사용하여 행의 정렬 키 값에 따라 행을 검색할 수 있습니다. 검색의 대/소문자 구분 값을 **찾을** 및 **FindRows** 메서드에 의해 결정 됩니다는 **CaseSensitive** 속성에 <xref:System.Data.DataTable>합니다. 검색 값이 기존 정렬 키 값 전체와 일치해야 결과를 반환할 수 있습니다.  
@@ -93,8 +93,8 @@ else
       myDRV["ContactName"].ToString());  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Data.DataTable>  
- <xref:System.Data.DataView>  
- [DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- <xref:System.Data.DataTable>
+- <xref:System.Data.DataView>
+- [DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
 author: mcleblanc
 ms.author: markl
-ms.openlocfilehash: 35fe167beb53c27aa511e08507415a26b1749ca2
-ms.sourcegitcommit: ea00c05e0995dae928d48ead99ddab6296097b4c
+ms.openlocfilehash: 54c20e56fa1729cb534821e263e316c26e01cde6
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48029440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687321"
 ---
 # <a name="ltsystemdiagnosticsgt-element"></a>&lt;system.diagnostics&gt; 요소
 메시지를 수집하고 저장하고 라우팅하는 추적 수신기를 지정하며, 추적 스위치가 설정되는 수준을 지정합니다.  
   
  \<configuration>  
-\<system.diagnostics >  
+\<system.diagnostics>  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ ms.locfileid: "48029440"
   
 |요소|설명|  
 |-------------|-----------------|  
-|`configuration`|공용 언어 런타임 및 .NET Framework 응용 프로그램에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
+|`configuration`|공용 언어 런타임 및 .NET Framework 애플리케이션에서 사용하는 모든 구성 파일의 루트 요소입니다.|  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 추적 스위치 및 내부 추적 수신기를 포함 하는  **\<system.diagnostics >** 요소입니다. 합니다 `General` 추적 스위치가 설정 된는 <xref:System.Diagnostics.TraceLevel> 수준입니다. 추적 수신기 `myListener` 라는 파일을 만들고 `MyListener.log` 출력 파일에 씁니다.  
@@ -74,7 +74,7 @@ ms.locfileid: "48029440"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.Debug>  
- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.Debug>
+- [추적 및 디버그 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

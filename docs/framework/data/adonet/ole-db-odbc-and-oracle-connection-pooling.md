@@ -2,12 +2,12 @@
 title: OLE DB, ODBC 및 Oracle 연결 풀링
 ms.date: 03/30/2017
 ms.assetid: 2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04
-ms.openlocfilehash: 3ce65036605b7693955c3a6064fca80263d3538f
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: bc07d4d33f2a568ef0fb4dd9806832222a13ca6a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43527378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54692745"
 ---
 # <a name="ole-db-odbc-and-oracle-connection-pooling"></a>OLE DB, ODBC 및 Oracle 연결 풀링
 연결 풀링을 사용하면 응용 프로그램의 성능 및 확장성을 대폭 향상시킬 수 있습니다. 이 단원에서는 OLE DB, ODBC 및 Oracle용 .NET Framework 데이터 공급자에 대한 연결 풀링에 대해 설명합니다.  
@@ -62,13 +62,13 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
   
 |이름|기본|설명|  
 |----------|-------------|-----------------|  
-|`Connection Lifetime`|0|연결이 풀로 반환되면 연결을 만든 시간을 현재 시간과 비교하여 이 시간 간격(초)이 `Connection Lifetime`에서 지정한 값을 초과하면 연결이 제거됩니다. 이는 클러스터링된 구성에서 실행 중인 서버와 방금 온라인 상태가 된 서버 사이에 로드 균형 조정을 강제로 조정하는 데 유용합니다.<br /><br /> 값 0은 풀링된 연결이 최대 시간 제한을 갖도록 합니다.|  
+|`Connection Lifetime`|0|연결이 풀로 반환되면 연결을 만든 시간을 현재 시간과 비교하여 이 시간 간격(초)이 `Connection Lifetime`에서 지정한 값을 초과하는 경우 연결이 제거됩니다. 이는 클러스터링된 구성에서 실행 중인 서버와 방금 온라인 상태가 된 서버 사이에 로드 균형 조정을 강제로 조정하는 데 유용합니다.<br /><br /> 값 0은 풀링된 연결이 최대 시간 제한을 갖도록 합니다.|  
 |`Enlist`|'true'|`true`이면 풀러는 트랜잭션 컨텍스트가 존재하는 경우 해당 연결을 만들기 스레드의 현재 트랜잭션 컨텍스트에 자동으로 인리스트먼트합니다.|  
 |`Max Pool Size`|100|풀에 허용되는 최대 연결 수입니다.|  
 |`Min Pool Size`|0|풀에서 유지되는 최소 연결 수입니다.|  
 |`Pooling`|'true'|`true`이면 연결이 적절한 풀에서 선택되거나 필요한 경우 연결이 만들어져 적절한 풀에 추가됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [연결 풀링](../../../../docs/framework/data/adonet/connection-pooling.md)  
- [성능 카운터](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [연결 풀링](../../../../docs/framework/data/adonet/connection-pooling.md)
+- [성능 카운터](../../../../docs/framework/data/adonet/performance-counters.md)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

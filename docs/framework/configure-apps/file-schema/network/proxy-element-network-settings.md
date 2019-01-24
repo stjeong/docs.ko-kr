@@ -8,20 +8,20 @@ helpviewer_keywords:
 - <proxy> element
 - proxy element
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
-ms.openlocfilehash: 3a6d5b080c74fbd3f6ebca9882c1667951cfcb91
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 4bec5422165a1795fd2442d95b2dd27ac1b4bc8b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50183675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54685986"
 ---
 # <a name="ltproxygt-element-network-settings"></a>&lt;프록시&gt; 요소 (네트워크 설정)
 프록시 서버를 정의합니다.  
   
  \<configuration>  
 \<system.net>  
-\<defaultProxy >  
-\<프록시 >  
+\<defaultProxy>  
+\<proxy>  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,8 +42,8 @@ ms.locfileid: "50183675"
   
 |**특성**|**설명**|  
 |-------------------|---------------------|  
-|`autoDetect`|프록시를 자동으로 검색 하는지 여부를 지정 합니다. 기본값은 `unspecified`입니다.|  
-|`bypassonlocal`|로컬 리소스에 대 한 프록시를 바이패스 하는지 여부를 지정 합니다. 로컬 서버를 포함 하는 로컬 리소스 (`http://localhost`, `http://loopback`, 또는 `http://127.0.0.1`) 및 마침표가 없는 URI (`http://webserver`). 기본값은 `unspecified`입니다.|  
+|`autoDetect`|프록시를 자동으로 검색할지 여부를 지정합니다. 기본값은 `unspecified`입니다.|  
+|`bypassonlocal`|로컬 리소스에 프록시가 사용되지 않는지 여부를 지정합니다. 로컬 서버를 포함 하는 로컬 리소스 (`http://localhost`, `http://loopback`, 또는 `http://127.0.0.1`) 및 마침표가 없는 URI (`http://webserver`). 기본값은 `unspecified`입니다.|  
 |`proxyaddress`|프록시를 사용 하는 URI를 지정 합니다.|  
 |`scriptLocation`|구성 스크립트의 위치를 지정 합니다. 사용 하지 마십시오는 `bypassonlocal` 이 특성을 사용 하 여 특성입니다. |  
 |`usesystemdefault`|Internet Explorer 프록시 설정을 사용할지 여부를 지정 합니다. 경우 설정 `true`, 후속 특성에는 Internet Explorer 프록시 설정이 무시 됩니다. 기본값은 `unspecified`입니다.|  
@@ -90,6 +90,6 @@ ms.locfileid: "50183675"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

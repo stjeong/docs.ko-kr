@@ -1,5 +1,5 @@
 ---
-title: '방법: LINQ를 사용하여 쿼리 결과 필터링(Visual Basic)'
+title: '방법: LINQ (Visual Basic)를 사용 하 여 쿼리 결과 필터링'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - filtering [Visual Basic]
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - filtering data [Visual Basic]
 ms.assetid: ef103092-9bed-4134-97f4-2db696e83c12
-ms.openlocfilehash: f9854650b1f89a2330cfa81910187e3fb01c54b4
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: d0260e53be421d36cdc8d351d30d7f8a4ac4fa84
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43519650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684173"
 ---
-# <a name="how-to-filter-query-results-by-using-linq-visual-basic"></a>방법: LINQ를 사용하여 쿼리 결과 필터링(Visual Basic)
+# <a name="how-to-filter-query-results-by-using-linq-visual-basic"></a>방법: LINQ (Visual Basic)를 사용 하 여 쿼리 결과 필터링
 언어 통합 쿼리 (LINQ)를 사용 하면 쉽게 데이터베이스 정보에 액세스 하 고 쿼리를 실행 합니다.  
   
  다음 예제에는 SQL Server 데이터베이스에 대 한 쿼리를 수행 하 고 특정 값으로 사용 하 여 결과 필터링 하는 새 응용 프로그램을 만드는 방법을 보여 줍니다는 `Where` 절. 자세한 내용은 [Where 절](../../../../visual-basic/language-reference/queries/where-clause.md)합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "43519650"
   
 ### <a name="to-add-tables-to-query-to-the-or-designer"></a>O/R 디자이너를 쿼리 하는 테이블을 추가 하려면  
   
-1.  **서버 탐색기**/**데이터베이스 탐색기**, Northwind 데이터베이스에 연결을 확장 합니다. 확장 된 **테이블** 폴더입니다.  
+1.  **서버 탐색기**/**데이터베이스 탐색기**, Northwind 데이터베이스에 연결을 확장 합니다. **테이블** 폴더를 확장합니다.  
   
      O/R 디자이너를 닫은 경우 이전에 추가한 northwind.dbml 파일을 두 번 클릭 하 여 다시 열 수 있습니다.  
   
@@ -77,8 +77,8 @@ ms.locfileid: "43519650"
   
      [!code-vb[VbLINQToSQLHowTos#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_2.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [쿼리](../../../../visual-basic/language-reference/queries/index.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+## <a name="see-also"></a>참고자료
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [쿼리](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext 메서드(O/R 디자이너)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

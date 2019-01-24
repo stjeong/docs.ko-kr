@@ -2,12 +2,12 @@
 title: BindingElement 만들기
 ms.date: 03/30/2017
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
-ms.openlocfilehash: 5b7fd3e88fa12a66e086906de6f0d7d6a7d1aa17
-ms.sourcegitcommit: b22705f1540b237c566721018f974822d5cd8758
+ms.openlocfilehash: 8c4f3b4b3f9a3e4694ece814de691c07ef88ec5b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49454462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54684881"
 ---
 # <a name="creating-a-bindingelement"></a>BindingElement 만들기
 바인딩 및 바인딩 요소 (확장 하는 개체 <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> 및 <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>각각)은 Windows Communication Foundation (WCF) 응용 프로그램 모델이 채널 팩터리 및 채널 수신기와 연결 되는 장소입니다. 바인딩 없이 사용자 지정 채널을 사용 하 여 필요한 채널 수준 프로그래밍에 설명 된 대로 [서비스 채널 수준 프로그래밍](../../../../docs/framework/wcf/extending/service-channel-level-programming.md) 하 고 [클라이언트 채널 수준 프로그래밍](../../../../docs/framework/wcf/extending/client-channel-level-programming.md)합니다. 이 항목에서는 wcf에서의 개발 채널을 사용 하도록 설정 하려면 최소 요구 사항을 설명 된 <xref:System.ServiceModel.Channels.BindingElement> 채널 및 4 단계에 설명 된 대로 응용 프로그램에서 사용 [개발 채널](../../../../docs/framework/wcf/extending/developing-channels.md)합니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "49454462"
   
  <xref:System.ServiceModel.Channels.BindingElement.BuildChannelListener%2A>에서도 `ChunkingChannelListener`를 만들어 내부 채널 수신기에 전달하는 구현 방법이 비슷합니다.  
   
- 전송 채널을 사용 하는 또 다른 예로 [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플에서는 다음 재정의 제공 합니다.  
+ 전송 채널을 사용 하는 또 다른 예로 [전송 합니다. UDP](../../../../docs/framework/wcf/samples/transport-udp.md) 샘플에서는 다음 재정의 제공 합니다.  
   
  이 샘플에서 바인딩 요소는 `UdpTransportBindingElement`에서 파생된 <xref:System.ServiceModel.Channels.TransportBindingElement>로, 채널과 연결되는 팩터리 작성을 위한 다음 메서드를 재정의합니다.  
   
@@ -71,7 +71,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
   
  채널에 대 한 바인딩 요소를 만든 후에 반환 된 [개발 채널](../../../../docs/framework/wcf/extending/developing-channels.md) 것인지에 바인딩 요소에 구성 파일 지원을 추가 하는 경우 및 메타 데이터 게시 지원을 추가 하는 방법 참조 항목 및 바인딩 요소를 사용 하는 사용자 정의 바인딩 생성 방법 및 여부.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Channels.BindingElement>  
- [채널 개발](../../../../docs/framework/wcf/extending/developing-channels.md)  
- [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Channels.BindingElement>
+- [채널 개발](../../../../docs/framework/wcf/extending/developing-channels.md)
+- [전송: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)

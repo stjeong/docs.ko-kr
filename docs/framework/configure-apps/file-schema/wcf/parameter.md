@@ -2,18 +2,18 @@
 title: '&lt;parameter&gt;'
 ms.date: 03/30/2017
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
-ms.openlocfilehash: 82a2f5c46c698508695fe5f13f67059860a50713
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: a68fdecaba6ad4e64e4d3a4161d9fef6c099d60a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54148294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690737"
 ---
 # <a name="ltparametergt"></a>&lt;parameter&gt;
 선언된 형식이 제네릭 형식이면 제네릭 매개 변수를 지정합니다.  
   
- \<system.runtime.serialization >  
-\<dataContractSerializer >  
+ \<system.runtime.serialization>  
+\<dataContractSerializer>  
 \<declaredTypes > 요소  
 \<추가 > 요소에 대 한 \<declaredTypes >  
 \<knownType > 요소  
@@ -50,7 +50,7 @@ ms.locfileid: "54148294"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[\<knownType >](../../../../../docs/framework/configure-apps/file-schema/wcf/knowntype.md)|선언된 형식의 필드 또는 속성에서 반환될 수 있는 알려진 형식을 지정합니다.|  
+|[\<knownType>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowntype.md)|선언된 형식의 필드 또는 속성에서 반환될 수 있는 알려진 형식을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  알려진된 형식에 대 한 자세한 내용은 참조 하세요. [데이터 계약 알려진 형식을](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md) 고 <xref:System.Runtime.Serialization.DataContractSerializer>입니다.  
@@ -59,8 +59,8 @@ ms.locfileid: "54148294"
   
  이 구성 요소는 두 가지 특성을 동시에 가질 수 없습니다. 두 가지 특성이 모두 설정되면 <xref:System.Configuration.ConfigurationErrorsException>이 발생합니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- [데이터 계약 알려진 형식](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [\<dataContractSerializer >](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)  
- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- [데이터 계약 알려진 형식](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)
+- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)

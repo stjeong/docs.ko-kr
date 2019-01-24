@@ -2,20 +2,20 @@
 title: '&lt;messageSenderAuthentication&gt;'
 ms.date: 03/30/2017
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
-ms.openlocfilehash: 2785eb9392a498447e6df4335897cdd310b2b9de
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 848c46e4a9144b4fa0827b40818c544f1e5d35ec
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54147350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54688846"
 ---
 # <a name="ltmessagesenderauthenticationgt"></a>&lt;messageSenderAuthentication&gt;
 메시지 발신자가 사용하는 피어 인증서에 대한 인증 설정을 지정합니다.  
   
  \<system.ServiceModel>  
-\<동작 >  
+\<behaviors>  
 \<serviceBehaviors>  
-\<동작 >  
+\<behavior>  
 \<serviceCredentials>  
 \<peer>  
 \<messageSenderAuthentication>  
@@ -53,13 +53,13 @@ ms.locfileid: "54147350"
 ## <a name="remarks"></a>설명  
  메시지 인증을 선택하면 이 요소를 구성해야 합니다. 제공한 인증서를 사용 하 여 각 메시지는 서명 하는 출력 채널의 경우 [ \<인증서 >](../../../../../docs/framework/configure-apps/file-schema/wcf/certificate-element.md)합니다. 모든 메시지는 응용 프로그램에 배달되기 전에 이 요소의 `customCertificateValidatorType` 특성에 지정된 유효성 검사기를 사용하여 메시지 자격 증명과 비교하여 검사됩니다. 유효성 검사기는 자격 증명을 수락하거나 거부할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>  
- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>  
- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+## <a name="see-also"></a>참고자료
+- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
+- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
+- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
+- [인증서 작업](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [피어 투 피어 네트워킹](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [피어 채널 메시지 인증](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)
+- [피어 채널 사용자 지정 인증](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)
+- [피어 채널 애플리케이션 보안](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)

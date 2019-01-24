@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c1fa27a713890f2988a2fcd7983630080dc21d05
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: e4dd7ef41cb935bf2b9808f730c288c29198720b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50202161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54687273"
 ---
 # <a name="missingruntimeartifactexception-class-net-native"></a>MissingRuntimeArtifactException 클래스(.NET 네이티브)
 **Windows 10의 Windows 앱용 .NET, [!INCLUDE[net_native](../../../includes/net-native-md.md)]에만 해당**  
@@ -80,6 +80,6 @@ ms.locfileid: "50202161"
   
  `MissingRuntimeArtifactException` 클래스는 고유한 멤버를 포함하지 않으며 모든 멤버는 <xref:System.MemberAccessException>에서 상속됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## <a name="see-also"></a>참고자료
+- [런타임 지시문(rd.xml) 구성 파일 참조](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [런타임 지시문 정책 설정](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

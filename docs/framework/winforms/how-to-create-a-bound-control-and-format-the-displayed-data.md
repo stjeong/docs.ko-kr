@@ -1,19 +1,19 @@
 ---
-title: '방법: 바인딩된 컨트롤 만들기 및 표시된 데이터 형식 지정'
+title: '방법: 바인딩된 컨트롤 만들기 및 표시 되는 데이터 형식'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data [Windows Forms], formatting
 - bound controls [Windows Forms], creating
 - bound controls [Windows Forms], formatting data
 ms.assetid: d5a56228-899d-41d9-8af8-87b3f4ec2f94
-ms.openlocfilehash: 8f4d3c4c738e31ab83d506dc7afb4e49b142765b
-ms.sourcegitcommit: 6eac9a01ff5d70c6d18460324c016a3612c5e268
+ms.openlocfilehash: 2e9dabe12e3f4eda590cec26a70c6becb0e2b7a3
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45615000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54689733"
 ---
-# <a name="how-to-create-a-bound-control-and-format-the-displayed-data"></a>방법: 바인딩된 컨트롤 만들기 및 표시된 데이터 형식 지정
+# <a name="how-to-create-a-bound-control-and-format-the-displayed-data"></a>방법: 바인딩된 컨트롤 만들기 및 표시 되는 데이터 형식
 Windows Forms 데이터 바인딩 데이터 바인딩된 컨트롤을 사용 하 여 표시 되는 데이터의 서식을 지정할 수 있습니다 합니다 **서식 지정 및 고급 바인딩** 대화 상자.  
   
 > [!NOTE]
@@ -50,11 +50,11 @@ Windows Forms 데이터 바인딩 데이터 바인딩된 컨트롤을 사용 하
     |통화|소수 자릿수를 사용 하 여 지정할 **소수 자릿수** up-down 컨트롤입니다.|  
     |날짜 시간|항목 중 하나를 선택 하 여 날짜 및 시간을 표시할 방법을 선택 합니다 **형식** 선택 상자입니다.|  
     |지수|소수 자릿수를 사용 하 여 지정할 **소수 자릿수** up-down 컨트롤입니다.|  
-    |사용자 지정|사용자 지정 서식 문자열 사용을 지정합니다.<br /><br /> 자세한 내용은 [서식 지정 형식](../../../docs/standard/base-types/formatting-types.md)을 참조하세요. **참고:** 사용자 지정 서식 문자열을 성공적으로 왕복 데이터 소스와 바인딩된 컨트롤 간에 보장 되지 않습니다. 대신에 바인딩에 대한 <xref:System.Windows.Forms.Binding.Parse> 또는 <xref:System.Windows.Forms.Binding.Format> 이벤트를 처리하고 이벤트 처리 코드에 사용자 지정 서식 지정을 적용합니다.|  
+    |사용자 지정|사용자 지정 서식 문자열 사용을 지정합니다.<br /><br /> 자세한 내용은 [서식 지정 형식](../../../docs/standard/base-types/formatting-types.md)을 참조하세요. **참고:**  사용자 지정 서식 문자열은 데이터 소스와 바인딩된 컨트롤 간에 성공적으로 왕복된다고 보장할 수 없습니다. 대신에 바인딩에 대한 <xref:System.Windows.Forms.Binding.Parse> 또는 <xref:System.Windows.Forms.Binding.Format> 이벤트를 처리하고 이벤트 처리 코드에 사용자 지정 서식 지정을 적용합니다.|  
   
 8.  클릭 **확인** 닫으려면 합니다 **서식 지정 및 고급 바인딩** 대화 상자 및 속성 창에 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: Windows Form에 단순 바인딩된 컨트롤 만들기](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)  
- [Windows Forms에서 사용자 입력 유효성 검사](../../../docs/framework/winforms/user-input-validation-in-windows-forms.md)  
- [Windows Forms 데이터 바인딩](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## <a name="see-also"></a>참고자료
+- [방법: Windows Form에 단순 바인딩된 컨트롤 만들기](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)
+- [Windows Forms에서 사용자 입력 유효성 검사](../../../docs/framework/winforms/user-input-validation-in-windows-forms.md)
+- [Windows Forms 데이터 바인딩](../../../docs/framework/winforms/windows-forms-data-binding.md)

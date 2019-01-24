@@ -8,12 +8,12 @@ helpviewer_keywords:
 - member design guidelines, fields
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
 author: KrzysztofCwalina
-ms.openlocfilehash: 34c5a163e545b78c188f37b2819962b4c7c56f80
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 3ab8fe279605c4795bb3a26557d0241b186b273a
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53144353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54690451"
 ---
 # <a name="field-design"></a>필드 디자인
 캡슐화의 원리는 개체 지향 디자인의 가장 중요 한 개념 중 하나를입니다. 개체 내에 저장 된 데이터 개체에만 액세스할 수 있는 되도록 하는 것이 원칙입니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "53144353"
   
  *사용 권한에서 교육, inc. 피어슨 재인쇄 [Framework 디자인 지침: 다시 사용할 수 있는.NET 라이브러리, 2nd Edition에 대 한 규칙, 관용구 패턴과](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) Krzysztof Cwalina를 Brad Abrams Addison Wesley Professional에서 2008 년 10 월 22 일 Microsoft Windows 개발 시리즈의 일부로 게시 합니다.*  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)  
+- [멤버 디자인 지침](../../../docs/standard/design-guidelines/member.md)
 - [프레임워크 디자인 지침](../../../docs/standard/design-guidelines/index.md)
