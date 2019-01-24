@@ -1,15 +1,15 @@
 ---
-title: '방법: 단방향 및 요청-회신 계약을 사용하여 WCF 서비스 액세스'
+title: '방법: 단방향를 사용 하 여 WCF 서비스에 액세스 및 요청-회신 계약'
 ms.date: 03/30/2017
 ms.assetid: 7e10d3a5-fcf4-4a4b-a8d6-92ee2c988b3b
-ms.openlocfilehash: 7a60d11432e95f56e8479d853e31895ba3fb266b
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: f74f874d43698955cce0ae14791a9d6b748ef919
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33494324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54639177"
 ---
-# <a name="how-to-access-wcf-services-with-one-way-and-request-reply-contracts"></a>방법: 단방향 및 요청-회신 계약을 사용하여 WCF 서비스 액세스
+# <a name="how-to-access-wcf-services-with-one-way-and-request-reply-contracts"></a>방법: 단방향를 사용 하 여 WCF 서비스에 액세스 및 요청-회신 계약
 다음 절차는 Windows Communication Foundation (WCF) 서비스에 액세스 하는 단방향 계약 및 요청-회신 계약을 정의 하 고 이중 통신 패턴을 사용 하지 않는 방법을 설명 합니다.  
   
 ### <a name="to-define-the-service"></a>서비스를 정의하려면  
@@ -109,7 +109,7 @@ ms.locfileid: "33494324"
   
 ### <a name="to-access-the-service"></a>서비스에 액세스하려면  
   
-1.  실행 된 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 메타 데이터 교환 끝점 주소를 사용 하 여 다음 명령줄을 사용 하 여 서비스에 대 한 클라이언트 클래스를 만들려면: `Svcutil http://localhost:8000/Service` 는 [ServiceModel 메타 데이터 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 다음 샘플 코드와 같이 인터페이스와 클래스 집합을 생성 합니다.  
+1.  실행 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 메타 데이터 교환 끝점 주소를 사용 하 여 다음 명령줄을 사용 하 여 서비스에 대 한 클라이언트 클래스를 만들려면: `Svcutil http://localhost:8000/Service` 합니다 [ServiceModel Metadata 유틸리티 도구 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) 다음 샘플 코드에 나와 있는 것 처럼 인터페이스 및 클래스 집합을 생성 합니다.  
   
     ```csharp  
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -400,5 +400,5 @@ namespace Microsoft.ServiceModel.Samples
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [단방향 서비스](../../../../docs/framework/wcf/feature-details/one-way-services.md)
+## <a name="see-also"></a>참고자료
+- [단방향 서비스](../../../../docs/framework/wcf/feature-details/one-way-services.md)

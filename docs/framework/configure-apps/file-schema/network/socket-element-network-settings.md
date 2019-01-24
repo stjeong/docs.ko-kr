@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <socket> element
 - socket element
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-ms.openlocfilehash: ff06fd6518e67020b4d67d4e081307b8e54bae85
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
+ms.openlocfilehash: 01e4b5ef4583d30114720ffe559a342b45fe2b98
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "50194698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54640019"
 ---
 # <a name="ltsocketgt-element-network-settings"></a>&lt;소켓&gt; 요소 (네트워크 설정)
 소켓 작업 완료 포트를 사용 하는지 여부를 지정 합니다.  
@@ -21,7 +21,7 @@ ms.locfileid: "50194698"
  \<configuration>  
 \<system.net>  
 \<settings>  
-\<소켓 >  
+\<socket>  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,7 +60,7 @@ ms.locfileid: "50194698"
   
  합니다 <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept%2A> 의 현재 값을 가져오는 데 사용할 수는 `alwaysUseCompletionPortsForAccept` 해당 구성 파일에서 특성입니다. 합니다 <xref:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect%2A> 의 현재 값을 가져오는 데 사용할 수는 `alwaysUseCompletionPortsForConnect` 해당 구성 파일에서 특성입니다.  
   
- 합니다 `ipProtectionLevel` 특성 기본값을 지정 <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> 소켓에 대해 사용 하도록 합니다. <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> 속성 주소 같은 링크 로컬 또는 사이트 로컬 접두사가 같은 지정된 된 범위에 IPv6 소켓에 대 한 제한 구성할 수 있도록 합니다. 이 옵션에는 응용 프로그램을으로 IPv6 소켓에 대 한 액세스 제한을 적용할 수 있습니다. 이러한 제한을 사용하면 사설 LAN에서 실행되는 응용 프로그램을 간단하고 강력하게 외부 공격으로부터 보호할 수 있습니다. 이 옵션의 공용 및 개인 사용자가 해당 하는 경우 필요에 따라 같은 사이트로 액세스를 제한 또는 무제한 액세스를 수신 대기 소켓의 범위를 넓히거나 설정.  
+ 합니다 `ipProtectionLevel` 특성 기본값을 지정 <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> 소켓에 대해 사용 하도록 합니다. <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> 속성 주소 같은 링크 로컬 또는 사이트 로컬 접두사가 같은 지정된 된 범위에 IPv6 소켓에 대 한 제한 구성할 수 있도록 합니다. 이 옵션에는 애플리케이션을으로 IPv6 소켓에 대 한 액세스 제한을 적용할 수 있습니다. 이러한 제한을 사용하면 사설 LAN에서 실행되는 애플리케이션을 간단하고 강력하게 외부 공격으로부터 보호할 수 있습니다. 이 옵션의 공용 및 개인 사용자가 해당 하는 경우 필요에 따라 같은 사이트로 액세스를 제한 또는 무제한 액세스를 수신 대기 소켓의 범위를 넓히거나 설정.  
   
  이 `ipProtectionLevel` 특성 설정은 초기 들어오는 트래픽만 영향을 줍니다.  
   
@@ -74,10 +74,10 @@ ms.locfileid: "50194698"
   
 |**특성 값**|**설명**|  
 |-|-|  
-|EdgeRestricted|IP 보호 수준이 경계 제한 됨입니다. 이 값은 인터넷을 통해 작동 하도록 디자인 된 응용 프로그램에서 사용 됩니다. 이 설정은 Windows Teredo 구현을 사용 하 여 네트워크 주소 변환 (NAT) 통과 허용 하지 않습니다. 열린 포트로 향하는 인터넷 공격에 대 한 응용 프로그램 보안을 강화 해야 하므로 이러한 응용 프로그램에서는 IPv4 방화벽이 무시 될 수 있습니다. Windows Server 2003 및 Windows XP에서는 소켓에 IP 보호 수준에 대 한 기본값인 경계 제한 합니다.|  
-|제한|IP 보호 수준이 제한 됩니다. 이 값은 인터넷 시나리오를 구현 하지 않는 인트라넷 응용 프로그램에서 사용 됩니다. 이러한 응용 프로그램은 일반적으로 테스트 않거나 인터넷 형 공격에 대 한 강화 합니다. 이 설정은 링크 로컬 에서만 트래픽이 받도록된 제한 합니다.|  
-|제한 없음|IP 보호 수준이 제한 되지 않습니다. 이 값은 기본 제공 되는 IPv6 NAT traversal 기능을 활용 하는 응용 프로그램을 포함 하 여 인터넷을 통해 작동 하도록 디자인 된 응용 프로그램에서 사용 됩니다 (예: Teredo) Windows에 있습니다. 열린 포트로 향하는 인터넷 공격에 대 한 응용 프로그램 보안을 강화 해야 하므로 이러한 응용 프로그램에서는 IPv4 방화벽이 무시 될 수 있습니다. Windows Server 2008 R2 및 Windows Vista에서는 소켓에 IP 보호 수준에 대 한 기본 값 제한 되지 않습니다.|  
-|지정되지 않음|IP 보호 수준이 지정 되지 않습니다. Windows 7 및 Windows Server 2008 R2에서는 소켓에 IP 보호 수준이 기본값이 지정 되지 않습니다.|  
+|EdgeRestricted|IP 보호 수준이 경계 제한됨입니다. 이 값은 인터넷을 통해 작동하도록 디자인된 애플리케이션에서 사용됩니다. 이 설정은 Windows Teredo 구현을 사용하는 NAT(Network Address Translation) 통과를 허용하지 않습니다. 이러한 애플리케이션에서는 IPv4 방화벽이 무시될 수 있으므로 열린 포트로 향하는 인터넷 공격을 막기 위해 애플리케이션의 보안 기능을 강화해야 합니다. Windows Server 2003 및 Windows XP에서는 소켓에 대한 IP 보호 수준이 기본적으로 경계 제한됨으로 설정됩니다.|  
+|제한|IP 보호 수준이 제한됨입니다. 이 값은 인터넷 시나리오를 구현하지 않는 인트라넷 애플리케이션에서 사용됩니다. 일반적으로 이러한 애플리케이션은 인터넷형 공격에 대해 테스트되거나 보안이 강화되어 있지 않습니다. 이 설정은 링크 로컬에서만 트래픽을 받도록 제한합니다.|  
+|제한 없음|IP 보호 수준이 제한하지 않음입니다. 이 값은 Windows에 구축된 IPv6 NAT 통과 기능(예: Teredo)을 이용하는 애플리케이션을 비롯하여 인터넷을 통해 작동하도록 디자인된 애플리케이션에서 사용됩니다. 이러한 애플리케이션에서는 IPv4 방화벽이 무시될 수 있으므로 열린 포트로 향하는 인터넷 공격을 막기 위해 애플리케이션의 보안 기능을 강화해야 합니다. Windows Server 2008 R2 및 Windows Vista에서는 소켓에 대한 IP 보호 수준이 기본적으로 제한되지 않음으로 설정됩니다.|  
+|지정되지 않음|IP 보호 수준이 지정되지 않음입니다. Windows 7 및 Windows Server 2008 R2에서는 소켓에 대한 IP 보호 수준이 기본적으로 지정되지 않음으로 설정됩니다.|  
   
  기본값은 `ipProtectionLevel` 특성은 **Unspecified**합니다.  
   
@@ -103,10 +103,10 @@ ms.locfileid: "50194698"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
-- <xref:System.Net?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>  
+## <a name="see-also"></a>참고자료
+- <xref:System.Net?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>
+- <xref:System.Net.Sockets?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>
 - [네트워크 설정 스키마](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

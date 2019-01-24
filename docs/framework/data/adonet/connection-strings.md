@@ -2,12 +2,12 @@
 title: ADO.NET의 연결 문자열
 ms.date: 10/10/2018
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
-ms.openlocfilehash: 078fdab257115296f9ff00330265cb14ff8674c8
-ms.sourcegitcommit: 5fd80619c760fa8c25d33a6f5661247cb65da465
+ms.openlocfilehash: c765eee661858499240344cb5059fe1fa9a58ab5
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50409459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54627566"
 ---
 # <a name="connection-strings-in-adonet"></a>ADO.NET의 연결 문자열
 
@@ -57,6 +57,6 @@ ms.locfileid: "50409459"
  [연결 정보 보호](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
  데이터 소스 연결에 사용되는 정보를 보호하는 기법을 보여 줍니다.
   
-## <a name="see-also"></a>참고 항목  
- [데이터 소스에 연결](/cpp/data/odbc/connecting-to-a-data-source)  
- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)
+## <a name="see-also"></a>참고자료
+- [데이터 소스에 연결](/cpp/data/odbc/connecting-to-a-data-source)
+- [ADO.NET 관리되는 공급자 및 데이터 집합 개발자 센터](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - base forms
 - inheritance [Windows Forms], forms
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
-ms.openlocfilehash: adaf9224fd340c6ea4342e2591806a7c877e83ff
-ms.sourcegitcommit: 64f4baed249341e5bf64d1385bf48e3f2e1a0211
+ms.openlocfilehash: b942c160d7c4f89b1aad97c2dfdef1d060c18e55
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44084411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54639226"
 ---
 # <a name="effects-of-modifying-a-base-form39s-appearance"></a>기본 양식의 모양 수정 효과
-응용 프로그램을 개발하는 동안 프로젝트(또는 다른 프로젝트)에 있는 다른 양식을 상속하는 기본 양식의 모양을 변경해야 합니다.  
+애플리케이션을 개발하는 동안 프로젝트(또는 다른 프로젝트)에 있는 다른 양식을 상속하는 기본 양식의 모양을 변경해야 합니다.  
   
  디자인 타임에서 기본 양식의 모양 변경(속성 설정 또는 컨트롤의 더하기와 빼기)은 기본 양식을 포함하는 프로젝트를 빌드할 때 상속된 양식에 반영됩니다. 단순히 기본 양식에 대한 변경 내용을 저장하기에는 충분하지 않습니다. 프로젝트를 빌드하려면 **빌드** 메뉴에서 **빌드**를 선택합니다.  
   
@@ -25,7 +25,7 @@ ms.locfileid: "44084411"
   
  런타임 시 기본 양식에 대한 수정은 이미 인스턴스화된 상속된 양식에 아무 영향도 미치지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [base](~/docs/csharp/language-reference/keywords/base.md)  
- [방법: Windows Forms 상속](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  
- [Windows Forms 시각적 개체 상속](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
+## <a name="see-also"></a>참고자료
+- [base](~/docs/csharp/language-reference/keywords/base.md)
+- [방법: Windows Forms 상속](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)
+- [Windows Forms 시각적 개체 상속](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
