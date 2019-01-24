@@ -1,18 +1,12 @@
 ---
-title: 이벤트 - C# 프로그래밍 가이드
+title: '이벤트 - C# 프로그래밍 가이드'
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-- classes [C#], events
-- C# language, events
-- events [C#]
+  - 'classes [C#], events'
+  - 'C# language, events'
+  - 'events [C#]'
 ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
-ms.openlocfilehash: 55fe0e8f94d9b350305b634cabb90011e173b572
-ms.sourcegitcommit: 882a2f56bf6afdcb40d468e4ae9371296822b68c
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451146"
 ---
 # <a name="events-c-programming-guide"></a>이벤트(C# 프로그래밍 가이드)
 [클래스](../../../csharp/language-reference/keywords/class.md) 나 개체에서는 특정 상황이 발생할 때 이벤트를 통해 다른 클래스나 개체에 이를 알려줄 수 있습니다. 이벤트를 보내거나 *발생시키는*클래스를 *게시자* 라고 하며 이벤트를 받거나 *처리하는*클래스를 *구독자*라고 합니다.  
@@ -54,13 +48,13 @@ ms.locfileid: "53451146"
 자세한 내용은 [C# 언어 사양](../../language-reference/language-specification/index.md)의 [이벤트](~/_csharplang/spec/classes.md#events)를 참조하세요. C# 언어 사양은 C# 구문 및 사용법에 대한 신뢰할 수 있는 소스입니다.
   
 ## <a name="featured-book-chapters"></a>중요 설명서 장  
- [C# 3.0 Cookbook, Third Edition: C# 3.0 프로그래머를 위한 250개가 넘는 솔루션](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)의 [대리자, 이벤트 및 Lambda 식](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29)  
+ [C# 3.0 Cookbook, Third Edition: C# 3.0 프로그래머를 위한 250개가 넘는 솔루션](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)의 대리자, 이벤트 및 Lambda 식  
   
- [Learning C# 3.0:의 [대리자 및 이벤트](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652490%28v=orm.10%29): C# 3.0의 기본 사항 마스터](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v=orm.10%29)  
+ Learning C# 3.0:의 [대리자 및 이벤트](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652490%28v=orm.10%29): [C# 3.0의 기본 사항 마스터](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v=orm.10%29)  
   
 ## <a name="see-also"></a>참고 항목
 
-- <xref:System.EventHandler>  
-- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)  
-- [대리자](../../../csharp/programming-guide/delegates/index.md)  
-- [Windows Forms에서 이벤트 처리기 만들기](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
+- <xref:System.EventHandler>
+- [C# 프로그래밍 가이드](../../../csharp/programming-guide/index.md)
+- [대리자](../../../csharp/programming-guide/delegates/index.md)
+- [Windows Forms에서 이벤트 처리기 만들기](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)
