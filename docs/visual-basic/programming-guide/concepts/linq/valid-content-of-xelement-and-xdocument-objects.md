@@ -2,12 +2,12 @@
 title: XElement 및 XDocument Objects2의 올바른 콘텐츠
 ms.date: 07/20/2015
 ms.assetid: 400bb692-478a-40b6-ac1b-4ccbb4cbbd02
-ms.openlocfilehash: 4b1d588f0ebbfec6d5cf7a58b63f92005db75acc
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 168c87f23d4545afe7b80579673c050068ee697b
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33649385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54502704"
 ---
 # <a name="valid-content-of-xelement-and-xdocument-objects"></a>XElement 및 XDocument 개체의 올바른 콘텐츠
 이 항목에서는 생성자에 전달될 수 있는 유효한 인수에 대해 설명하고 내용을 요소와 문서에 추가하는 데 사용하는 메서드에 대한 정보를 제공합니다.  
@@ -88,5 +88,5 @@ ms.locfileid: "33649385"
 |<xref:System.Xml.Linq.XContainer.ReplaceNodes%2A>|자식 노드를 새 내용으로 바꿉니다.|  
 |<xref:System.Xml.Linq.XNode.ReplaceWith%2A>|노드를 새 내용으로 바꿉니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [XML 트리 만들기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+## <a name="see-also"></a>참고자료
+- [XML 트리 만들기 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

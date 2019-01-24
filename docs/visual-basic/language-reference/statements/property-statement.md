@@ -11,12 +11,12 @@ helpviewer_keywords:
 - property procedures [Visual Basic], Property statements
 - Property keyword [Visual Basic]
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
-ms.openlocfilehash: 21ca15d6a6939d884c7e6abedc1f7919be079edd
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 4c92e7b3892fa35035935d5db317c72d74814ab8
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43738148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54512985"
 ---
 # <a name="property-statement"></a>Property Statement
 이름 속성 및 저장 하 고 속성의 값을 검색 하는 데 속성 프로시저를 선언 합니다.  
@@ -66,7 +66,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
     - [Private Protected](../../language-reference/modifiers/private-protected.md)
   
-     참조 [액세스 수준을 Visual Basic의](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)합니다.  
+     [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)을 참조하세요.  
   
 -   `propertymodifiers`  
   
@@ -108,7 +108,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   `name`  
   
-     필수. 속성의 이름입니다. 참조 [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)합니다.  
+     필수 요소. 속성의 이름입니다. [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)을 참조하세요.  
   
 -   `parameterlist`  
   
@@ -134,8 +134,8 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
     |파트|설명|  
     |---|---|  
-    |`interface`|필수. 이 속성에 의해 구현 된 인터페이스의 이름을 클래스 또는 구조체를 포함 합니다.|  
-    |`definedname`|필수. 속성에 정의 된 이름 `interface`합니다.|  
+    |`interface`|필수 요소. 이 속성에 의해 구현 된 인터페이스의 이름을 클래스 또는 구조체를 포함 합니다.|  
+    |`definedname`|필수 요소. 속성에 정의 된 이름 `interface`합니다.|  
   
 -   `Get`  
   
@@ -207,10 +207,10 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
  [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
   
-## <a name="see-also"></a>참고 항목  
- [자동으로 구현된 속성](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Get 문](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Set 문](../../../visual-basic/language-reference/statements/set-statement.md)  
- [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [기본](../../../visual-basic/language-reference/modifiers/default.md)
+## <a name="see-also"></a>참고자료
+- [자동으로 구현된 속성](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [개체 및 클래스](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Get 문](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Set 문](../../../visual-basic/language-reference/statements/set-statement.md)
+- [매개 변수 목록](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [기본](../../../visual-basic/language-reference/modifiers/default.md)

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - Extensible Application Markup Language (see XAML)
 - attribute syntax [XAML]
 ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
-ms.openlocfilehash: ec7072e7af15bdff373962f776abf0aad89361bb
-ms.sourcegitcommit: f6343b070f3c66877338a05c8bfb0be9985255e2
+ms.openlocfilehash: 784dcb88e92169ff8698234e59899cc4d58dd52c
+ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39220778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54563758"
 ---
 # <a name="xaml-overview-wpf"></a>XAML 개요 (WPF)
 이 항목에서는 XAML 언어의 기능을 설명하고 XAML을 사용하여 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 애플리케이션을 작성하는 방법을 보여 줍니다. 이 항목에서는 특히 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]에서 구현된 XAML에 대해 자세히 설명합니다. XAML 자체는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]보다 큰 언어 개념입니다.  
@@ -137,7 +137,7 @@ ms.locfileid: "39220778"
   
 -   **생략 된 StackPanel.Children 속성 요소:** <xref:System.Windows.Controls.StackPanel> 에서 파생 <xref:System.Windows.Controls.Panel>합니다. <xref:System.Windows.Controls.Panel> 정의 <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> 으로 해당 XAML 콘텐츠 속성입니다.  
   
--   **생략 된 UIElementCollection 개체 요소:** 는 <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> 속성은 형식 <xref:System.Windows.Controls.UIElementCollection>를 구현 하는 <xref:System.Collections.IList>합니다. 컬렉션의 요소 태그를 생략할 수와 같은 컬렉션을 처리 하는 것에 대 한 XAML 규칙에 따라 <xref:System.Collections.IList>합니다. (이 예에서 <xref:System.Windows.Controls.UIElementCollection> 실제로 인스턴스화할 수 없으며 기본 생성자를 노출 하지 이므로 이유는는 <xref:System.Windows.Controls.UIElementCollection> 개체 요소를 주석 처리 되어 표시 됩니다).  
+-   **생략 된 UIElementCollection 개체 요소:** 합니다 <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> 속성은 형식 <xref:System.Windows.Controls.UIElementCollection>를 구현 하는 <xref:System.Collections.IList>합니다. 컬렉션의 요소 태그를 생략할 수와 같은 컬렉션을 처리 하는 것에 대 한 XAML 규칙에 따라 <xref:System.Collections.IList>합니다. (이 예에서 <xref:System.Windows.Controls.UIElementCollection> 실제로 인스턴스화할 수 없으며 기본 생성자를 노출 하지 이므로 이유는는 <xref:System.Windows.Controls.UIElementCollection> 개체 요소를 주석 처리 되어 표시 됩니다).  
   
 ```xaml  
 <StackPanel>  
@@ -175,7 +175,7 @@ ms.locfileid: "39220778"
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources2)]  
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]  
   
- WPF에 구체적으로 구현된 XAML에 대한 모든 태그 확장의 참조 목록을 보려면 [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)을 참조하세요. System.Xaml에 정의되어 있고 .NET Framework XAML 구현에서 보다 광범위하게 사용 가능한 태그 확장의 참조 목록을 보려면 [XAML 네임스페이스(x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)을 참조하세요. 태그 확장 개념에 대한 자세한 내용은 [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)을 참조하세요.  
+ WPF에 구체적으로 구현된 XAML에 대한 모든 태그 확장의 참조 목록을 보려면 [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)을 참조하세요. .NET Framework XAML 구현에 대 한 보다 광범위 하 게 사용할 수 있으며 System.Xaml에 정의 된 태그 확장에 해당 하는 참조 항목을 참조 하세요. [XAML Namespace (x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)합니다. 태그 확장 개념에 대한 자세한 내용은 [태그 확장 및 WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)을 참조하세요.  
   
 <a name="type_converters"></a>   
 ## <a name="type-converters"></a>형식 변환기  
@@ -212,17 +212,17 @@ ms.locfileid: "39220778"
 ### <a name="the-x-prefix"></a>X: 접두사  
  앞의 루트 요소 예제에서는 접두사 `x:`를 사용하여 XAML 언어 구문을 지원하는 전용 XAML 네임스페이스인 XAML 네임스페이스 [!INCLUDE[TLA#tla_xamlxmlnsv1](../../../../includes/tlasharptla-xamlxmlnsv1-md.md)]를 매핑했습니다. 이 `x:` 접두사는 이 [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] 전체의 설명서, 예제 및 프로젝트 템플릿에서 이 XAML 네임스페이스를 매핑하는 데 사용됩니다. XAML 언어의 XAML 네임스페이스에는 XAML에서 자주 사용하게 될 몇 가지 프로그래밍 구문이 들어 있습니다. 다음은 가장 많이 사용하게 될 `x:` 접두사 네임스페이스 프로그래밍 구문의 목록입니다.  
   
--   [X:key](../../../../docs/framework/xaml-services/x-key-directive.md): 각 리소스에 대 한 고유 키를 설정 하는 <xref:System.Windows.ResourceDictionary> (또는 다른 프레임 워크에서 비슷한 사전 개념). `x:Key`는 일반적인 WPF 응용 프로그램 태그에서 보게 될 `x:` 사용의 90%를 차지할 것입니다.  
+-   [x:Key](../../../../docs/framework/xaml-services/x-key-directive.md): 각 리소스에 대 한 고유 키를 설정 하는 <xref:System.Windows.ResourceDictionary> (또는 다른 프레임 워크에서 비슷한 사전 개념). `x:Key`는 일반적인 WPF 응용 프로그램 태그에서 보게 될 `x:` 사용의 90%를 차지할 것입니다.  
   
--   [x:Class](../../../../docs/framework/xaml-services/x-class-directive.md): [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] 네임스페이스 및 XAML 페이지에 대한 코드 숨김을 제공하는 클래스의 클래스 이름을 지정합니다. 이러한 클래스가 WPF 프로그래밍 모델에 대해 코드 숨김을 지원하도록 해야 하므로 리소스가 없는 경우에도 `x:`가 매핑된 것을 자주 보게 됩니다.  
+-   [X:class](../../../../docs/framework/xaml-services/x-class-directive.md): 지정 된 [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] XAML 페이지에 대 한 코드 숨김을 제공 하는 클래스에 대 한 네임 스페이스 및 클래스 이름입니다. 이러한 클래스가 WPF 프로그래밍 모델에 대해 코드 숨김을 지원하도록 해야 하므로 리소스가 없는 경우에도 `x:`가 매핑된 것을 자주 보게 됩니다.  
   
--   [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md): 개체 요소가 처리된 후 런타임 코드에 있는 인스턴스에 대한 런타임 개체 이름을 지정합니다. 일반적으로는 [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md)에 대응하여 WPF에 정의된 속성을 자주 사용하게 됩니다. 이러한 속성은 특히 CLR 지원 속성에 매핑되므로 초기화된 XAML에서 명명된 요소를 찾기 위해 런타임 코드를 자주 사용하는 애플리케이션 작성에 보다 편리합니다. 이러한 속성에는 가장 일반적인 <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>합니다. 여전히 사용할 수 있습니다 [X:name](../../../../docs/framework/xaml-services/x-name-directive.md) 경우는 해당 하는 WPF 프레임 워크 수준 <xref:System.Windows.FrameworkElement.Name%2A> 속성이 특정 형식에서 지원 되지 않습니다. 이는 특정 애니메이션 시나리오에서 볼 수 있는 상황입니다.  
+-   [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md): 개체 요소 처리 된 후 런타임 코드에 있는 인스턴스에 대 한 런타임 개체 이름을 지정 합니다. 일반적으로는 [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md)에 대응하여 WPF에 정의된 속성을 자주 사용하게 됩니다. 이러한 속성은 특히 CLR 지원 속성에 매핑되므로 초기화된 XAML에서 명명된 요소를 찾기 위해 런타임 코드를 자주 사용하는 애플리케이션 작성에 보다 편리합니다. 이러한 속성에는 가장 일반적인 <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>합니다. 여전히 사용할 수 있습니다 [X:name](../../../../docs/framework/xaml-services/x-name-directive.md) 경우는 해당 하는 WPF 프레임 워크 수준 <xref:System.Windows.FrameworkElement.Name%2A> 속성이 특정 형식에서 지원 되지 않습니다. 이는 특정 애니메이션 시나리오에서 볼 수 있는 상황입니다.  
   
--   [x:Static](../../../../docs/framework/xaml-services/x-static-markup-extension.md): XAML 호환 속성이 아닌 정적 값을 반환하는 참조를 사용할 수 있게 합니다.  
+-   [x:Static](../../../../docs/framework/xaml-services/x-static-markup-extension.md): 없는 XAML 호환 속성이 정적 값을 반환 하는 참조를 사용 하도록 설정 합니다.  
   
--   [X:type](../../../../docs/framework/xaml-services/x-type-markup-extension.md): 생성 된 <xref:System.Type> 형식 이름을 기반으로 참조 합니다. 사용 하는 특성을 지정 하는이 <xref:System.Type>와 같은 <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>이지만 속성에 네이티브 문자열-에-<xref:System.Type> 방식으로 변환 하는 합니다 [X:type](../../../../docs/framework/xaml-services/x-type-markup-extension.md) 태그 확장 사용은 선택 사항입니다.  
+-   [x:Type](../../../../docs/framework/xaml-services/x-type-markup-extension.md): 생성 된 <xref:System.Type> 형식 이름을 기반으로 참조 합니다. 사용 하는 특성을 지정 하는이 <xref:System.Type>와 같은 <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>이지만 속성에 네이티브 문자열-에-<xref:System.Type> 방식으로 변환 하는 합니다 [X:type](../../../../docs/framework/xaml-services/x-type-markup-extension.md) 태그 확장 사용은 선택 사항입니다.  
   
- `x:` 접두사/XAML 네임스페이스에는 일반적으로는 사용되지 않는 추가적인 프로그래밍 구문이 있습니다. 자세한 내용은 [XAML 네임스페이스(x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)을 참조하세요.  
+ `x:` 접두사/XAML 네임스페이스에는 일반적으로는 사용되지 않는 추가적인 프로그래밍 구문이 있습니다. 세부 정보를 참조 하세요. [XAML Namespace (x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)합니다.  
   
 <a name="custom_prefixes_and_custom_types_in_xaml"></a>   
 ## <a name="custom-prefixes-and-custom-types-in-xaml"></a>사용자 지정 접두사와 XAML의 사용자 지정 형식  
@@ -327,10 +327,10 @@ ms.locfileid: "39220778"
   
  [종속성 속성 개요](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)에서는 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]의 다양한 속성에 대해 자세히 설명하고 종속성 속성의 개념을 소개합니다.  
   
-## <a name="see-also"></a>참고자료  
- [XAML 구문 정보](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)  
- [WPF에 대한 XAML 및 사용자 지정 클래스](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)  
- [XAML 네임스페이스(x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
- [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
- [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
- [WPF의 트리](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)
+## <a name="see-also"></a>참고자료
+- [XAML 구문 정보](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)
+- [WPF에 대한 XAML 및 사용자 지정 클래스](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML Namespace (x:) 언어 기능](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)
+- [WPF XAML 확장](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)
+- [기본 요소 개요](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [WPF의 트리](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)
